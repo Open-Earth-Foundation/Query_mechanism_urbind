@@ -456,7 +456,7 @@ Tabell 3 A-1.2: Emission factors applied
 |  (please specify for primary energy type and GHG emission factor according to methodology used)  |   |
 |  For calculation in t or MWh of primary energy  |   |
 |  (Please indicate method used, e.g. GPC, IPCC, CRF, national etc.) GPC - CRF
-Emission factors and emissions data includes, CO2, CH4, and N2O and when relevant also F-gases, SF6 and NF3.  |   |
+| Emission factors and emissions data includes, CO2, CH4, and N2O and when relevant also F-gases, SF6 and NF3.  |   |
 |   | Carbon Dioxide (CO2e)  |
 |  Electricity [g/kWh] (EEA) | 9  |
 |  District heating [g/kWh] | 50,1  |
@@ -2131,7 +2131,7 @@ RUS  |
 |  Transportation > Rail* | 0,0 | 0,2 |  | ME(Material Economics)  |
 |  Transportation > Waterborne navigation* | 6,0 | 0,0 |  | RUS  |
 |  Transportation > Aviation* | 4,7 | 0,0 | Domestic flight within Umeå
-Geographical area | RUS  |
+| Geographical area | RUS  |
 |  Transportation > Off-road* | 23,8 | 0,0 | Machinery/Construction machines | ME(Material Economics)  |
 |  Total Transport | 122,7 | 0,2 | 0,0 |   |
 |  Waste > Solid waste disposal* | 1,5 | 0,0 |  | RUS  |
@@ -3105,7 +3105,7 @@ Energi
 # Prioritering av omställningar
 
 |  Potential för koldioxidminskning
-LÄG | 4. Elektrifiering av personbilar | 3. Övergång till kollektiva och icke-motoriserade transporter  |
+| LÄG | 4. Elektrifiering av personbilar | 3. Övergång till kollektiva och icke-motoriserade transporter  |
 | --- | --- | --- |
 |   |  8. Elektrifiering av godstransporter | 12. Netto noll-krav på nya byggnader  |
 |   |  12. Renovering av byggnader (privat) | 12. Renovering av byggnader (offentliga)  |
@@ -3167,8 +3167,8 @@ Maximera investeringar i accelererad omställning
 · Fördröjningseffekt
 · Hur styra privata elinköp?  |
 |   |  · Lägre energianvändning i byggnader via smart teknik
-· Återvinning av spillvärme | · Begränsade beteendeförändringar
-· Ta tillvara värden | · Kräver investeringar  |
+| · Återvinning av spillvärme | · Begränsade beteendeförändringar |
+| · Ta tillvara värden | · Kräver investeringar  |
 |   |  · Incitament för elektrifiering av fordon | · Stor effekt på utsläpp
 · Liten beteendeförändring
 · Lägre driftskostnad | · Svårt med lokala lösningar
@@ -3176,9 +3176,9 @@ Maximera investeringar i accelererad omställning
 · Ev flaskhalsar (ex. Batterier)
 · Belastning på elnätet  |
 |   |  · Maskinell plastutsortering i värmeverk
-· Investeringar/incitament för förbättrad energieffektivitet i hushållsapparater | · Stor effekt på utsläpp (plast)
-· Stor rådighet (plast) | · Begränsad effekt (hushållsel)?
-· Begränsad rådighet (hushållsmsk.)  |
+| · Investeringar/incitament för förbättrad energieffektivitet i hushållsapparater | · Stor effekt på utsläpp (plast) |
+| · Stor rådighet (plast) | · Begränsad effekt (hushållsel)? |
+| · Begränsad rådighet (hushållsmsk.)  |
 |   |  · Lokal biobränsleproduktion (anläggning) från exempelvis jord- och skogsbruk
 · Maximera yta för solpaneler
 – Årstidsbatterier (t.ex., sandbatterier)
@@ -3206,8 +3206,8 @@ Beteendeförändringar
 – Gå, cykla eller elbil (lokal service, laddinfrastruktur) | • Lägre investerings- och driftskostnader pga kortare transporter och minskat bränslebehov
 • Mer motståndskraftigt vid befolkningstillväxt | • Betydande inverkan på människors dagliga liv  |
 |  • Smart energianvändning i hushållen genom medveten konsumtion av värme och el | • Låg investering
-• Minskade kostnader för hushållen | • Stor inverkan på människors liv
-• Kräver sannolikt omfattande information och incitament (tex höga priser alt subventioner)  |
+| • Minskade kostnader för hushållen | • Stor inverkan på människors liv |
+| • Kräver sannolikt omfattande information och incitament (tex höga priser alt subventioner)  |
 |  • Manuell (ut)sortering av plast | • Låg investering
 • Stor effekt på utsläpp (vid hög grad) | • Risk för låg varaktighet
 • Kräver information, incitament (tex 'pant'?) och minskade barriärer  |
@@ -3235,12 +3235,12 @@ Reaktiva tekniska åtgärder
 • Certifikat för förnybar el | Genom stärkta och ambitiösa kravställningar i upphandlingar kan Umeå både tydligt kommunicera sin ansträngning och proaktivt agera i omställningen. Det är även en åtgärd Umeå har stor rådighet över, speciellt då både trafik- och energibolag är kommunägda. Genom att till exempel ställa krav på maximal andel plast i avfall både från egna och andra kommuner kan Dåvas utsläpp minska. Genom att köpa certifikat för t.ex. grön el som produceras i Umeå kommun kan även utsläpp från el minska, här är dock en utmaning att även säkerställa att privatpersoner köper grön el. |
 | --- | --- | --- |
 | • Lägre energianvändning i byggnader via smart teknik
-• Återvinning av spillvärme | Umeå använder mer både el och värme jämfört med nationella referenser. Två tekniska åtgärder för detta är att minska energianvändningen genom smart teknik (t.ex automatiska termostater) samt återvinning av spillvärme från t.ex närliggande industrier för att öka fjärrvärmens verkningsgrad ytterligare |
+| • Återvinning av spillvärme | Umeå använder mer både el och värme jämfört med nationella referenser. Två tekniska åtgärder för detta är att minska energianvändningen genom smart teknik (t.ex automatiska termostater) samt återvinning av spillvärme från t.ex närliggande industrier för att öka fjärrvärmens verkningsgrad ytterligare |
 | • Incitament för elektrifiering av fordon | Umeå har hög rådighet över flera incitament för att elektrifiera fordon, t.ex. att utöka laddinfrastrukturen, eller att ställa krav på tjänstebilar att vara elektriska |
 | • Maskinell plastutsortering i Dåva
-• Förbättrad energieffektivitet i hushållsapparater | Maskinell plastutsortering i Dåva kan minska utsläppen från förbränning av fossil plast och öka möjligheterna till återvinning. Förbättrad energieffektivitet i hushållsapparater kan uppnås bl.a genom att ersätta gamla, ineffektiva apparater. |
+| • Förbättrad energieffektivitet i hushållsapparater | Maskinell plastutsortering i Dåva kan minska utsläppen från förbränning av fossil plast och öka möjligheterna till återvinning. Förbättrad energieffektivitet i hushållsapparater kan uppnås bl.a genom att ersätta gamla, ineffektiva apparater. |
 | • Lokalt biobränsle
-• Solpaneler och batterier | Avfall från jord- och skogsbruk kan ofta användas för att producera biobränsle. I en kommun med mycket yta som Umeå kan det dessutom finnas möjlighet att etablera förnybar elproduktion och batterier för nätet |
+| • Solpaneler och batterier | Avfall från jord- och skogsbruk kan ofta användas för att producera biobränsle. I en kommun med mycket yta som Umeå kan det dessutom finnas möjlighet att etablera förnybar elproduktion och batterier för nätet |
 | Beteende-förändringar | • Minimera användningen av bilar
 • Resa mindre
 • Gå, cykla eller elbil | Umeå har stor rådighet att skapa förutsättningar och motivation för en mer hållbar transportmix. Till exempel genom att prioritera cyklingiförstruktur, planera framtidens bostadsområden med närhet i åtanke, eller starta initiativ för att premiera cykling som t.ex. vintertramparna i Östersund och liknande. Även informationskampanjer och tävlingar samt att skapa bättre dataunderlag genom t.ex. Cykelmätare kan skapa förutsättningar för bättre planering och engagemang |
@@ -3998,8 +3998,8 @@ Fet stil = Förväntad högre möjlighet för Umeå att påverka
 # Översikt över modellerade omställningar*
 
 |  Sektor | Omställning | Beskrivning | Förändringens omfattning | Ambitiöst scenario
-Måldatum | Mycket ambitiöst scenario
-Måldatum  |
+| Måldatum | Mycket ambitiöst scenario |
+| Måldatum  |
 | --- | --- | --- | --- | --- | --- |
 |  TRANSPORT | 1. Mindre resande | Arbeta hemifrån, lokalsamhället får större vikt | 30% färre resor | 2040 | 2030  |
 |   |  2. Nyttjandegrad | Högre utnyttjande av bilar, tex via bilpooler | 15% ökning av genomsnittligt passagerant per bil | 2040 | 2030  |
@@ -4030,7 +4030,7 @@ Not: Alla nya fordon helt elektriska, antagande XX kommun kan kräva endast elfo
 |  Datagrupp | Antaganden  |
 | --- | --- |
 |  Electricitet | • 1,6m MWh, räknar användning (inte produktion) och antar 100% grid mix
-• Antar 100% låg effektivitet för hushållselektronik  |
+| • Antar 100% låg effektivitet för hushållselektronik  |
 |  Värme | • Matchar modellen till given produktion av fjärrvärme (0,9 miljoner MWh exl. industri). Se antagnade kring uppvärmning för olika byggnadstyper i s. 77  |
 |  Befolknings-ökning | • Använder Umeås egna prognos, +1300 personer per år  |
 |  Byggnader | • 1,9m kvm flerfamilj, 3m kvm familj, 1m kvm publik, 0,5m kvm kommersiella. Uppdaterat antagande ~20% med ~80% med dålig isolering för alla byggnadstyper för att kalibrera modellen  |
@@ -4172,8 +4172,8 @@ Per personkilometer
 Per personkilometer
 
 |  **Lokal trafik:**
-• Antar större inflytande över bussupphandling/förmåga att ställa krav på andel BEV och val av bränsle | **Genomfartstrafik:**
-• Antar mindre inflytande och allmän trend mot el och HVO  |
+| • Antar större inflytande över bussupphandling/förmåga att ställa krav på andel BEV och val av bränsle | **Genomfartstrafik:** |
+| • Antar mindre inflytande och allmän trend mot el och HVO  |
 | --- | --- |
 
 ## Uppvärmningsmix

@@ -49,7 +49,7 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |  B-1.1: Impact Pathways | 60 |   |
 |  B-1.2: Description of impact pathways – textual and visual elements | 75 |   |
@@ -86,7 +86,7 @@ Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |  Circular Economy Upgrade of Municipal Entities | 179 |   |
 |  Awareness raising campaign for Circular Economy & Waste | 183 |   |
@@ -123,7 +123,7 @@ Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |  Module C-3 Financing of Action Portfolio |  | 236  |
 |  Outlook and next steps |  | 240  |
@@ -153,7 +153,7 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  **ΔΗΜΟΣ ΚΟΖΑΝΗΣ**
-**Municipality of Kozani** | 2030 Climate Neutrality Action Plan |   |
+| **Municipality of Kozani** | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 
 A high penetration level of renewable energy sources in the local energy mix is planned driven by both public and private funding, which is expected to reduce and/or offset the electricity use in all sectors; and at the same time, it will provide the required power for sustainable mobility using electric vehicles. The climate neutrality plan also proposes measures that will optimise waste management and enhance the circular economy.
@@ -397,7 +397,7 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  **ΔΗΜΟΣ ΚΟΖΑΝΗΣ**
-**Municipality of Kozani** | 2030 Climate Neutrality Action Plan |   |
+| **Municipality of Kozani** | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 
 in order to accomplish the set climate neutrality targets. A quantification of the $\mathrm{CO}_{2}$ emissions that are mitigated through each particular action is carried out at an annual basis in combination with the level of the necessary financial investment is presented.
@@ -558,7 +558,7 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani |   | 2030 Climate Neutrality Action Plan |   |   |
+| Municipality of Kozani |   | 2030 Climate Neutrality Action Plan |   |   |
 | --- | --- | --- | --- | --- |
 |  Agricultural, Forestry and Land Use (AFOLU) |  |  |  |   |
 |  Electricity |  | x |  |   |
@@ -887,12 +887,12 @@ Module A-2 “Current Policies and Strategies” should list relevant policies, 
 A-2.1: List of relevant policies, strategies &amp; regulations
 
 |  Type
-(regulation/ policy/ strategy/ action plan | Level
-(local, regional, national, EU) | Name & Title
-(Name of policy/ strategy/ plans) | Description
-(Description of policy/ strategy/ plans) | Relevance
-(Describe relevance/ impact on climate neutrality ambition) | Need for action
-(list any suggested action in relation – to be further picked in Module C-1)  |
+| (regulation/ policy/ strategy/ action plan | Level |
+| (local, regional, national, EU) | Name & Title |
+| (Name of policy/ strategy/ plans) | Description |
+| (Description of policy/ strategy/ plans) | Relevance |
+| (Describe relevance/ impact on climate neutrality ambition) | Need for action |
+| (list any suggested action in relation – to be further picked in Module C-1)  |
 | --- | --- | --- | --- | --- | --- |
 |  Strategy | EU | European Green Deal | A strategy to transform the EU into a modern, resource-efficient and competitive economy by 2050 | Includes guidelines to effectively reduce GHG emissions by 2050, while ensuring economic growth decoupled from resource use |   |
 |  Strategy | EU | Biodiversity Strategy for 2030: Bringing nature back into our lives | The biodiversity strategy aims to put Europe’s biodiversity on the path to recovery by 2030 for the benefit of people, climate and the planet. | Through concrete commitments and actions, the plan is for EU countries to put in place effective restoration measures to restore degraded ecosystems, in particular those with the most potential to capture and store carbon and to prevent and reduce the impact of natural disasters. |   |
@@ -1001,7 +1001,7 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 
 and their digital transformation, while simultaneously recovering from the coronavirus pandemic.
@@ -1073,7 +1073,7 @@ Q
 |  System description | Stakeholders involved | Network | Influence | Interest  |
 | --- | --- | --- | --- | --- |
 |   | Hellenic Electricity Distribution Network Operator (HEDNO S.A.) | Energy Company | HEDNO as a manager of the complete electric network in Greece has the responsibility to examine and approve the proposed stations | transport thus it is strongly interested in developing a wide EV charging stations network to facilitate EV vehicle charging in Kozani
-HEDNO is interested in approving feasible solutions for charging EVs in order to avoid problems of an unstructured network development  |
+| HEDNO is interested in approving feasible solutions for charging EVs in order to avoid problems of an unstructured network development  |
 |  Public Lighting | Municipality of Kozani | Local Authorities | MoK plans the network extension and upgrade of the public lighting system | MoK pursues actions to reduce energy consumption and since public lighting is an electric energy consuming sector it is of high interest for MoK  |
 |  Educational network for upskilling and reskilling | Ministry of Education
 University of Western Macedonia
@@ -1404,7 +1404,7 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani |   | 2030 Climate Neutrality Action Plan |   |   |   |
+| Municipality of Kozani |   | 2030 Climate Neutrality Action Plan |   |   |   |
 | --- | --- | --- | --- | --- | --- |
 |   | Governance and policy - Change of governance of DH companies of Western Macedonia | A unified company will be created | The cost for the consumers will be reduced | - | A larger scale investment could be attracted  |
 |  Energy Efficient Buildings | Governance and policy
@@ -1422,7 +1422,7 @@ Cleaner environment.  |
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  **ΔΗΜΟΣ ΚΟΖΑΝΗΣ**
-**Municipality of Kozani** | 2030 Climate Neutrality Action Plan |   |   |   |
+| **Municipality of Kozani** | 2030 Climate Neutrality Action Plan |   |   |   |
 | --- | --- | --- | --- | --- |
 |   | Learning & capabilities - More people become aware of using smart technologies |  |  | Better health conditions for the citizens.  |
 |   |  Finance and funding - Smart energy systems can be funded in combination with other energy saving measures |  |  |   |
@@ -1531,7 +1531,7 @@ Climate Neutrality Action Plan
 8
 
 |  Infrastructures Upgrades & Mobility Measures | Governance and policy - The Municipality will use its vast experience in this type of actions | A number (600) signs will be installed that will reduce speed limit of vehicles
-Road network will be reorganized and the streets of the city will be characterized as a) "Free Avenue", b) "Main arterial road", c) "Secondary arterial road", d) "local distributor road" and e) "Local street" and the reorganization will take place based on this hierarchy. | Light traffic areas will be expanded to approximately 4,500m² | Reducing the risk of accidents  |
+| Road network will be reorganized and the streets of the city will be characterized as a) "Free Avenue", b) "Main arterial road", c) "Secondary arterial road", d) "local distributor road" and e) "Local street" and the reorganization will take place based on this hierarchy. | Light traffic areas will be expanded to approximately 4,500m² | Reducing the risk of accidents  |
 | --- | --- | --- | --- | --- |
 |  Infrastructure Upgrades & Mobility Measures | Finance and funding - Funding can be achieved via National and Regional programs | An area of approximately 105 km² will be characterized as light-traffic | Additional 10 nodes of intersections (formation of roundabouts) will be upgraded as well as 25 more spot nodes will be improved | Enhance accessibility for active transportation  |
 |   |  Governance and policy - There are already available studies for infrastructure upgrade | Formation of approximately 200m of one way street | Horizontal and vertical signalling will be installed at streets length of approximately 46,000m | Reducing of congestion and improvement of overall traffic management  |
@@ -1548,7 +1548,7 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  **ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani** | **2030 Climate Neutrality Action Plan** |   |   |   |
+| Municipality of Kozani** | **2030 Climate Neutrality Action Plan** |   |   |   |
 | --- | --- | --- | --- | --- |
 |   |  **Incentives and Citizen Engagement** |  |  |   |
 |  Incentives and Citizen Engagement | Learning and capabilities - Already existing training programs | Development of awareness raising strategy (education actions/events, seminars, speeches, presentations, etc.) for the following ages: a) 8 to 18, b) 18 to 25, c) 26 to 50 and d) 50+ will be provided twice per year | Awareness raising campaigns will continue for this period | Lower air pollutants  |
@@ -1639,7 +1639,7 @@ Q
 # GREEN INFRASTRUCTURE
 
 |  Green infrastructure & nature-based solutions | Technology/Infrastructure
-Agricultural industry's leading farm machinery manufacturers introduce new efficient vehicles and machinery | An irrigation smart management system will be installed and operating for one third of MoK's irrigated lands | An irrigation smart management system will be installed and operating for all of MoK's irrigated lands | The actions are estimated to reduce the CO₂ emissions by 1,323.68 tonnes | Irrigation management system will have a strong impact on water resources conservation  |
+| Agricultural industry's leading farm machinery manufacturers introduce new efficient vehicles and machinery | An irrigation smart management system will be installed and operating for one third of MoK's irrigated lands | An irrigation smart management system will be installed and operating for all of MoK's irrigated lands | The actions are estimated to reduce the CO₂ emissions by 1,323.68 tonnes | Irrigation management system will have a strong impact on water resources conservation  |
 | --- | --- | --- | --- | --- | --- |
 |   |  Learning and capabilities - Existing experience in using smart technologies and smart management systems | About 5% of new energy efficient machinery will be used in farming | About 15% of new energy efficient machinery will be used in farming | These CO₂ emissions account to an approximate primary energy reduction of 7,583.78MWh | Farmers' engagement  |
 |   |  Technology/Infrastructure
@@ -1651,7 +1651,7 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |  SMART CITY  |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- |
@@ -2115,7 +2115,7 @@ Module B-2 “Climate Neutrality Portfolio Design” should contain a project de
 |   |  Building integrated Renewable Energy Systems | The introduction of a large number of PV systems and thermal solar systems to existing buildings will lead to reduced emissions  |
 |  ‘Greening’ of District Heating | Covering District Heating Thermal Needs with Green Energy | Currently the DH system in Kozani is powered by heat produced by the lignite-fired power plant Agios Dimitrios of PPC and oil burners; in order to provide “clean” energy to the citizens the DH system power source will be replaced by a cleaner and more efficient one  |
 |  Energy Efficient Buildings | Deep energy retrofit of Residences | Energy upgrade of residences is expected to reduce energy demand, CO2 emissions and effectively reduce energy costs for the citizens.
-The adoption of bioclimatic principles on architectural design and regulations will be of major importance  |
+| The adoption of bioclimatic principles on architectural design and regulations will be of major importance  |
 |   |  Deep Energy Retrofit of Municipal Buildings | Energy upgrade of Municipal buildings is expected to reduce energy demand, CO2 emissions and reduce energy costs  |
 |   |  Deep Energy Retrofit of School Buildings | Energy upgrade of schools is expected to reduce energy demand, CO2 emissions, reduce energy costs and in conjunction with information actions it will have a major impact on citizens behaviour  |
 |   |  Deep Energy Retrofit of the Sports Facilities of the Municipality of Kozani | Energy upgrade of sports facilities is expected to reduce energy demand/costs and CO2 emissions  |
@@ -2149,13 +2149,13 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan  |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan  |   |
 | --- | --- | --- |
 |  technologies
-to Mobility |  | mobility systems have the potential to improve transportation efficiency, alleviate traffic congestion, and make substantial contributions to decarbonization efforts and the mitigation of CO2 emissions.  |
+| to Mobility |  | mobility systems have the potential to improve transportation efficiency, alleviate traffic congestion, and make substantial contributions to decarbonization efforts and the mitigation of CO2 emissions.  |
 |   |  Smart Mobility Systems for Citizens | The implementation of IT mobility systems represents a transformative step in reshaping the way citizens fulfill their daily travel requirements. These innovative solutions provide sustainable transportation options that play a vital role in decarbonization efforts and the reduction of CO2 emissions. By adopting a comprehensive approach that encompasses various actions tailored for citizens and pave the way towards a greener and more sustainable future.  |
 |  Infrastructures
-Enhancement | Infrastructure Upgrades & Mobility Measures | This field of actions concerns measures that can assist to traffic conditions. These include upgrading intersections to enhance road safety, eg. small roundabouts, creation of a peripheral ring road to prevent congestion, reduced vehicle traffic and replacement of road paving materials on selected streets of the Municipality.  |
+| Enhancement | Infrastructure Upgrades & Mobility Measures | This field of actions concerns measures that can assist to traffic conditions. These include upgrading intersections to enhance road safety, eg. small roundabouts, creation of a peripheral ring road to prevent congestion, reduced vehicle traffic and replacement of road paving materials on selected streets of the Municipality.  |
 |  Incentives
 and citizen
 engagement | Awareness raising strategy | Awareness raising concerns the organization of events in schools as well as to groups of entrepreneurs or relate professionals in order to learn about mobility actions for CO2 emissions mitigation. This can help citizens to adopt environmental behaviour concerning transportations.  |
@@ -2223,7 +2223,7 @@ Climate Neutrality Action Plan
 |  Action outline | Action name | 7MW Photovoltaic Power Plant by the Energy Community of the Municipality of Kozani  |
 |   |  Action type | Technical interventions  |
 |   |  Action description | The 7MW solar park of the Municipality of Kozani is under tendering procedure and is expected to produce 10,500 MWh/year of green energy and contributing to the CO_{2} emissions’ reduction by 2,704 tonnes annually.
-The park will cover 100% of Municipality’s electricity needs (public lighting, buildings etc) through the virtual net metering scheme.  |
+| The park will cover 100% of Municipality’s electricity needs (public lighting, buildings etc) through the virtual net metering scheme.  |
 |  Reference to impact pathway | Portfolio | Renewable Energy Generation  |
 |   |  Systemic lever | Technology/Infrastructure  |
 |   |  Outcome (according to module B-1.1) | Green energy generation that will completely cover the Municipality’s electricity needs will help to reach CO_{2} emissions’ reduction to 100%  |
@@ -2250,7 +2250,7 @@ Climate Neutrality Action Plan
 |  Reference to impact pathway | Portfolio | Renewable Energy Generation  |
 |   | Systemic lever | Technology/Infrastructure  |
 |   | Outcome (according to module B-1.1) | Reduction of CO2 emissions and energy consumption
-Reduced energy costs  |
+| Reduced energy costs  |
 |  Implementation | Responsible bodies/person for implementation | Municipality of Kozani  |
 |   | Action scale & addressed entities | Municipal Lighting  |
 |   | Involved stakeholders | Municipality of Kozani  |
@@ -2258,7 +2258,7 @@ Reduced energy costs  |
 
 Climate Neutrality Action Plan of the Municipality of Kozani
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 | --- | --- | --- |
@@ -2284,7 +2284,7 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 | --- | --- | --- |
 |   | Systemic lever | Technology/Infrastructure  |
 |   | Outcome (according to module B-1.1) | Green energy generation
-Will help to reach the 100% reduction of CO_{2} emissions  |
+| Will help to reach the 100% reduction of CO_{2} emissions  |
 |  Implementation | Responsible bodies/person for implementation | Municipality of Kozani, Association of Photovoltaic Investors of Western Macedonia Region, Citizens of Kozani  |
 |   | Action scale & addressed entities | All electric energy consuming sectors  |
 |   | Involved stakeholders | Association of Photovoltaic Investors of Western Macedonia Region, Municipality of Kozani, Citizens of Kozani  |
@@ -2305,10 +2305,10 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 |  Reference to impact pathway | Portfolio | Renewable Energy Generation  |
 |   | Systemic lever | Technology/Infrastructure, democracy/participation  |
 |   | Outcome (according to module B-1.1) | Green energy generation
-Will help to reach the target of CO_{2} emissions reduction  |
+| Will help to reach the target of CO_{2} emissions reduction  |
 |  Implementation | Responsible bodies/person for implementation | Citizens of Kozani, Municipality of Kozani  |
 |   | Action scale & addressed entities | Residential buildings
-Citizens of Kozani  |
+| Citizens of Kozani  |
 |   | Involved stakeholders | Citizens of Kozani, Municipality of Kozani, Property Owners Association of Kozani  |
 |   | Comments on implementation | It is assumed that with the appropriate motivation, policies and funding at least 32% of the residential buildings (5,846 buildings in total) will install RES  |
 |  Impact & cost | Generated renewable energy (if applicable) | 96,998.08 MWh/year  |
@@ -2396,7 +2396,7 @@ Reduced energy costs
 Upgraded buildings will improve indoor air quality and comfort  |
 |  Implementation | Responsible bodies/person for implementation | Citizens of Kozani, Municipality of Kozani  |
 |   | Action scale & addressed entities | Residential buildings
-Citizens of Kozani  |
+| Citizens of Kozani  |
 |   | Involved stakeholders | Citizens of Kozani, Municipality of Kozani, Property Owners Association of Kozani  |
 |   | Comments on implementation | It is assumed that with the appropriate motivation, policies and funding at least 20% of the residential buildings will be retrofitted  |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
@@ -2405,10 +2405,10 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |   | Removed/substituted
-energy, volume or fuel type | 122,575.47 MWh/year  |
+| energy, volume or fuel type | 122,575.47 MWh/year  |
 | --- | --- | --- |
 |   | GHG emissions reduction
 estimate (total) per emission
@@ -2467,7 +2467,7 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |   | Involved stakeholders | Municipality of Kozani, School Committees of Primary and Secondary Education  |
 | --- | --- | --- |
@@ -2584,13 +2584,13 @@ Reduced energy costs
 Upgraded buildings will improve indoor air quality and comfort  |
 |  Implementation | Responsible bodies/person for implementation | Municipality of Kozani  |
 |   | Action scale & addressed entities | Sports facilities
-Citizens of Kozani  |
+| Citizens of Kozani  |
 |   | Involved stakeholders | Municipality of Kozani, Municipal Organization of Sports  |
 |   | Comments on implementation |   |
 
 Climate Neutrality Action Plan of the Municipality of Kozani
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 | --- | --- | --- |
@@ -2611,7 +2611,7 @@ Climate Neutrality Action Plan
 |  Reference to impact pathway | Portfolio | Energy Efficient Buildings  |
 |   | Systemic lever | Technology/Infrastructure, governance & policy, democracy/participation, finance & funding, learning & capabilities  |
 |   | Outcome (according to module B-1.1) | Green energy generation
-Will help to reach the 100% reduction of CO_{2} emissions  |
+| Will help to reach the 100% reduction of CO_{2} emissions  |
 |  Implementation | Responsible bodies/person for implementation | SME’s owners, Municipality of Kozani  |
 |   | Action scale & addressed entities | Tertiary sector buildings  |
 |   | Involved stakeholders | SME’s owners, Municipality of Kozani, Property Owners Association of Kozani  |
@@ -2623,7 +2623,7 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |   | GHG emissions reduction estimate (total) per emission source sector | 7,476.65 tonnes CO₂  |
 | --- | --- | --- |
@@ -2675,10 +2675,8 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 |   | Removed/substituted energy, volume or fuel type | -  |
 |   | GHG emissions reduction estimate (total) per emission source sector | Energy efficiency delivers a number of environmental benefits. It notably reduces GHG emissions, both direct emissions from fossil fuel combustion or consumption, and indirect emissions reductions from electricity generation. Buildings’ energy consumption in the EU represents about 30% of total EU energy consumption and between 25 and 40% in OECD countries (OECD, 2003).  |
-
-8
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |   |  | Developing countries have a less efficient building stock where it is even more important to improve on building energy efficiency. In the EU-25, in 2003 total CO₂ emissions amounted to 3.8 Gtones of which 479 Mtones were household emissions (12%) (EU, 2005).  |
 | --- | --- | --- |
@@ -2721,7 +2719,7 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  **ΔΗΜΟΣ ΚΟΖΑΝΗΣ**
-**Municipality of Kozani** | 2030 Climate Neutrality Action Plan |   |
+| **Municipality of Kozani** | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 
 respiratory and cardiovascular health issues caused by air pollution.
@@ -2751,7 +2749,7 @@ O
 
 Climate Neutrality Action Plan of the Municipality of Kozani
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 | --- | --- | --- |
@@ -2943,7 +2941,7 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |   | Removed/substituted energy, volume or fuel type | 22,479.7 MWh  |
 | --- | --- | --- |
@@ -2981,10 +2979,8 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 |  Implementation | Responsible bodies/person for implementation | Private vehicle fleet owners, Municipality of Kozani  |
 |   | Action scale & addressed entities | Private vehicle fleet owners, Local Urban Transportation Enterprise (KTEL Astikon Grammon Kozanis A.E.)  |
 |   | Involved stakeholders | Regional Authority of Western Macedonia, Municipality of Kozani, Hellenic Ministry of Environment and Energy (YPEN), Just Development Transition Plan (JDTP),  |
-
-4
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |   |  | Kozani Local Urban Transportation Enterprise (KTEL Astikon Grammon Kozanis A.E.), Citizens of Kozani  |
 | --- | --- | --- |
@@ -3015,10 +3011,10 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani |   | 2030 Climate Neutrality Action Plan  |   |
+| Municipality of Kozani |   | 2030 Climate Neutrality Action Plan  |   |
 | --- | --- | --- | --- |
 |   |  | Municipality positions itself at the forefront of the clean transportation revolution.
-The Municipality of Kozani will proceed in the establishment of zones with low emissions of air pollutants and noise with priority on the use of electric vehicles. The introduction of low-emission zones bans all vehicles that do not meet an environmental standard (engine-related restrictions). The main environmental limitation measures are as follows: a) restrictions depending on the vehicle's engine, b) noise restrictions and c) low emission zones. This zone expands to 0.445 km². This actions will be finalized in mid 2026.  |   |
+| The Municipality of Kozani will proceed in the establishment of zones with low emissions of air pollutants and noise with priority on the use of electric vehicles. The introduction of low-emission zones bans all vehicles that do not meet an environmental standard (engine-related restrictions). The main environmental limitation measures are as follows: a) restrictions depending on the vehicle's engine, b) noise restrictions and c) low emission zones. This zone expands to 0.445 km². This actions will be finalized in mid 2026.  |   |
 |  Reference to impact pathway | Portfolio | Use of alternative fuel in transportation  |   |
 |   | Systemic lever | Technology / Infrastructure  |   |
 |   | Outcome (according to module B-1.1) | Lower air pollutants, Further promotion of RES usage  |   |
@@ -3028,10 +3024,8 @@ The Municipality of Kozani will proceed in the establishment of zones with low e
 |   | Comments on implementation | -  |   |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |   |
 |   | Removed/substituted energy, volume or fuel type | 2,850.6 MWh  |   |
-
-7
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |   | GHG emissions reduction estimate (total) per emission source sector | 712.9 tonnes CO₂  |
 | --- | --- | --- |
@@ -3051,8 +3045,7 @@ Climate Neutrality Action Plan
 |  Action outline | Action name | Upgrade of Public Transportation System  |
 |   | Action type | Upgrade of Public Transportation Systems and Urban Logistics  |
 |   | Action description | Upgrading the public transportation system by incorporating the following actions as park & ride, reorganizing of public transportation routes, introducing bus on demand system, and utilizing taxi systems for collective movements, presents a transformative opportunity. This action offers numerous benefits, with a key focus on decarbonisation and significant mitigation of CO2 emissions.
-
-**Park & Ride:** Implementing park & ride facilities provides commuters with an efficient and environmentally friendly alternative to driving their cars into congested urban areas. By establishing conveniently located parking facilities near public transportation hubs, individuals can park their vehicles and switch to buses, trains, or other modes of public transportation for the remainder of their journey. This reduces the number of private vehicles on the road, leading to reduced traffic congestion, improved air quality, and lower CO2 emissions. The Municipality will establish 4 stations, on each entrance of the city. The following graph presents a schedule the establishment of the aforementioned stations.  |
+| **Park & Ride:** Implementing park & ride facilities provides commuters with an efficient and environmentally friendly alternative to driving their cars into congested urban areas. By establishing conveniently located parking facilities near public transportation hubs, individuals can park their vehicles and switch to buses, trains, or other modes of public transportation for the remainder of their journey. This reduces the number of private vehicles on the road, leading to reduced traffic congestion, improved air quality, and lower CO2 emissions. The Municipality will establish 4 stations, on each entrance of the city. The following graph presents a schedule the establishment of the aforementioned stations.  |
 |   |   |  |
 
 Figure 39: Established stations for park &amp; ride
@@ -3072,10 +3065,10 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |   |  | dependence on the car. Its implementation will be realized in cooperation with the local taxi association. This action is based on the creation of platform that will help in managing collective moment.
-This action will be finalized by the first semester of 2026.  |
+| This action will be finalized by the first semester of 2026.  |
 |  Reference to impact pathway | Portfolio | Upgrade of Public Transportation & Urban Logistics  |
 |   | Systemic lever | Technology / Infrastructure - Governance & policy  |
 |   | Outcome (according to module B-1.1) | Introduction of smart systems to mobility, Familiarization of citizens will alternative and more environmental means of transportation, Decongestion of city traffic, Lower of air pollutants, Improved air quality, Enhanced accessibility to public transportation, Increased efficiency of transportations, Relief measure for economically vulnerable residents, Transportation of people or goods more efficient with less emissions  |
@@ -3090,7 +3083,7 @@ This action will be finalized by the first semester of 2026.  |
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |   | GHG emissions reduction estimate (total) per emission source sector | 4,225.15 tonnes CO₂  |
 | --- | --- | --- |
@@ -3133,7 +3126,7 @@ This action showcases a commitment to sustainability and inspire other stakehold
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |   |  | efficiency of transportations,
 Transportation of people or goods more
@@ -3169,7 +3162,7 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |   |  | creates a sense of place, connecting neighborhoods, business districts, and recreational areas. This connectivity enhances social interactions, supports local businesses, and stimulates economic activity. This action includes the creation of 19.1 km of cycling routes as well as the installation of 10 stations for bike sharing including facilities such as bike racks, charging stations, electric bikes, electronic platform (sharing system), etc. Stations will be installed from 2026 until 2030 and the routes will be realized from 2028-2030.  |
 |  Reference to impact pathway | Portfolio | Walkability & Cycling Strategy  |
@@ -3181,10 +3174,8 @@ Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 |   | Comments on implementation | -  |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 |   | Removed/substituted energy, volume or fuel type | 21,775.5 MWh  |
-
-7
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |   | GHG emissions reduction estimate (total) per emission source sector | 5,445.6 tonnes CO₂  |
 | --- | --- | --- |
@@ -3244,7 +3235,7 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |   |  | traffic mitigation provisions, c) change/reduce speed limits, d) improvement of infrastructure for the disabled, e) effective and comprehensive pedestrian information sign system, f) urban equipment upgrade (lighting, benches, etc.). The study is expected to be concluded by mid 2026 and the action will be finalized by 2030.  |
 |  Reference to impact pathway | Portfolio | Walkability & Cycling Strategy  |
@@ -3262,7 +3253,7 @@ Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |   | Total costs and costs by CO₂e unit | 4,448,415 €  |
 | --- | --- | --- |
@@ -3300,8 +3291,7 @@ Climate Neutrality Action Plan
 0
 
 |   |  | time and stop-and-go traffic, the system reduces fuel consumption and associated emissions. This will be developed by the end of 2027.
-
-**Installation of Smart Stops with Telematics System:** This enhances the user experience and promotes sustainable transportation. Real-time information about bus arrivals, routes, and delays is displayed at the smart stops, allowing passengers to plan their journeys more efficiently and reduce wait times. Furthermore, the telematics system enables operators to optimize bus schedules based on demand, ensuring more efficient service and reducing unnecessary trips. By improving the reliability and attractiveness of public transportation, this action package encourages modal shift from private vehicles to greener alternatives, resulting in reduced carbon emissions and a cleaner urban environment. The Municipality plans to install these stops to 25 stations/locations of the city progressively, starting from late 2025 until 2030.  |
+| **Installation of Smart Stops with Telematics System:** This enhances the user experience and promotes sustainable transportation. Real-time information about bus arrivals, routes, and delays is displayed at the smart stops, allowing passengers to plan their journeys more efficiently and reduce wait times. Furthermore, the telematics system enables operators to optimize bus schedules based on demand, ensuring more efficient service and reducing unnecessary trips. By improving the reliability and attractiveness of public transportation, this action package encourages modal shift from private vehicles to greener alternatives, resulting in reduced carbon emissions and a cleaner urban environment. The Municipality plans to install these stops to 25 stations/locations of the city progressively, starting from late 2025 until 2030.  |
 | --- | --- | --- |
 |  |   |   |
 |   |  | Figure 43: Total stations  |
@@ -3313,7 +3303,7 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |   |  | transportations, Seamless integration and coordination of various transportation modes, including public transit, cycling, walking, and shared mobility services, Improving accessibility and inclusivity in transportation systems, Citizen engagement  |
 |  Implementation | Responsible bodies/person for implementation | Municipality of Kozani  |
@@ -3353,7 +3343,7 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |   |  | municipalities can optimize transportation
 services, such as public transit routes and
@@ -3395,7 +3385,7 @@ citizens in order to provide a solution for car
 parking. This measure is planned by mid
 |
 |  Reference to
-impact pathway | Portfolio | Introduction of IT technologies to mobility  |
+| impact pathway | Portfolio | Introduction of IT technologies to mobility  |
 |   | Systemic lever | Technology / Infrastructure - Governance
 & policy/ Participation – Democracy -
 Social innovation  |
@@ -3412,7 +3402,7 @@ developing a new technology for car parking.  |
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |   |  | experience by providing personalized and real-time information, Data-Driven Decision Making and Planning, Improving accessibility and inclusivity in transportation systems, Citizen engagement  |
 |  Implementation | Responsible bodies/person for implementation | Municipality of Kozani  |
@@ -3478,7 +3468,7 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |   |  | 9. **Boxing of Legal Parking Spaces and Creation of Parklets:** By boxing legal parking spaces and repurposing them as parklets or green spaces, Kozani can reclaim valuable urban land while discouraging private vehicle use. This measure concerns 25 parklets which will be realized by late 2026.
 
@@ -3494,7 +3484,7 @@ The establishment of this comprehensive infrastructure package, encompassing spe
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Municipality of Kozani  |
 | --- | --- | --- |
@@ -3557,10 +3547,10 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |   |  | • Organizing events in schools to raise awareness among students
-These activities will take place throughout the whole plan.  |
+| These activities will take place throughout the whole plan.  |
 |  Reference to impact pathway | Portfolio | Incentives and citizen engagement  |
 |   | Systemic lever | Governance & policy/ Participation – democracy - Social innovation - Learning & Capabilities  |
 |   | Outcome (according to module B-1.1) | Lower air pollutants, Fostering environmental friendly behaviour, Raising public awareness against climate change, Fostering social interactions, Strengthened community engagement  |
@@ -3576,7 +3566,7 @@ These activities will take place throughout the whole plan.  |
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |   | Total costs and costs by CO2e unit | 7,000 €  |
 | --- | --- | --- |
@@ -3609,7 +3599,7 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani |   | 2030 Climate Neutrality Action Plan  |   |
+| Municipality of Kozani |   | 2030 Climate Neutrality Action Plan  |   |
 | --- | --- | --- | --- |
 |   |  | impact and set an example for other drivers in the community.
 (d) **Professional Drivers:** Eco-driving seminars targeting professional drivers, including those in delivery services and logistics, provide insights into sustainable driving practices. By promoting strategies such as efficient route planning, load optimization, and vehicle maintenance, these seminars help professional drivers reduce fuel consumption. Encouraging eco-friendly driving habits among professional drivers contributes to sustainable logistics operations.
@@ -3622,10 +3612,8 @@ These seminars will be held throughout the whole plan (until 2030).  |   |
 |   | Action scale & addressed entities | Citizens  |   |
 |   | Involved stakeholders | Municipality of Kozani, Local Urban Transportation Enterprise (KTEL Astikon Grammon Kozanis A.E.), TAXI Owners Association of Kozani, Citizens of Kozani  |   |
 |   | Comments on implementation | -  |   |
-
-9
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 | --- | --- | --- |
@@ -3650,7 +3638,7 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Municipality of Kozani  |
 | --- | --- | --- |
@@ -3746,7 +3734,7 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani |   | 2030 Climate Neutrality Action Plan  |   |
+| Municipality of Kozani |   | 2030 Climate Neutrality Action Plan  |   |
 | --- | --- | --- | --- |
 |   |  | materials, saving natural resources through recycling, Promotion of circular economy principles, Job creation, Promotion of prioritization in waste management and in particular the promotion of reuse and recycling with sorting at source, Recovery of higher purity materials as a result of separate collection, Promoting the initiatives of Social and Solidarity Economy in the field of the environment, Raising awareness among citizens with their direct participation and environmental education  |   |
 |  Implementation | Responsible bodies/person for implementation | DIADYMA, Municipality of Kozani  |   |
@@ -3790,7 +3778,7 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |   |  | durability and recyclability as well as ensuring the availability of spare parts in the context of an ecological design.
 • adoption of ecological design indicators
@@ -3805,7 +3793,7 @@ In addition, Kozani will proceed in training of the municipal employees on Green
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Municipality of Kozani  |
 | --- | --- | --- |
@@ -3854,10 +3842,10 @@ Workshops with restaurants, hotels and tourism businesses, chambers and sports  
 
 Climate Neutrality Action Plan of the Municipality of Kozani
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |   |  | clubs for circular economy and reduction of single-use plastics.
-The Municipality plans to proceed in 14 large scale campaigns, starting from 2024 until 2030. The campaigns will take place twice per year.  |
+| The Municipality plans to proceed in 14 large scale campaigns, starting from 2024 until 2030. The campaigns will take place twice per year.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Portfolio | Awareness raising  |
 |   | Systemic lever | Governance & policy/ Participation – democracy - Social innovation - Learning & Capabilities  |
@@ -3911,7 +3899,7 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani |   | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani |   | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- | --- |
 |   | Outcome | Water consumption management system for the municipality of Kozani will contribute to minimum water consumption and will eliminate possible water leakages and losses. Furthermore, the ability for remotely controlling and receiving metering information will reduce further technicians visits and thus CO_{2} emissions. |   |
 |  Implementation | Responsible bodies/person for implementation | DEYAK |   |
@@ -3948,7 +3936,7 @@ Agriculture/Forestry
 |  Reference to impact pathway | Portfolio | Green Infrastructure and nature-based solutions  |
 |   | Systemic lever | Technology/Infrastructure, learning & capabilities  |
 |   | Outcome (according to module B-1.1) | Reduction of CO2 emissions and energy consumption
-Reduced energy costs  |
+| Reduced energy costs  |
 |  Implementation | Responsible bodies/person for implementation | Municipality of Kozani, DEYAK  |
 |   | Action scale & addressed entities | Agriculture  |
 |   | Involved stakeholders | Municipality of Kozani, citizens of MoK  |
@@ -3983,7 +3971,7 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |   | Total costs and costs by CO₂e unit | 22.000€ – per bench  |
 | --- | --- | --- |
@@ -4034,10 +4022,8 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 |   | Outcome | The implementation of an internal management system for the Municipality will give further possibilities to improve the municipality – citizens interaction and reduce waiting time, requests pilling and in person visits. The possibility of fulfilling remotely the citizens request will contribute to minimize commuting and thus reducing CO2 emissions  |
 |  Implementation | Responsible bodies/person for implementation | Municipality of Kozani  |
 |   | Action scale & addressed entities | City wide – Citizens  |
-
-4
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |   | Involved stakeholders | Municipality of Kozani  |
 | --- | --- | --- |
@@ -4082,7 +4068,7 @@ Promotional actions:
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani |   | 2030 Climate Neutrality Action Plan  |   |
+| Municipality of Kozani |   | 2030 Climate Neutrality Action Plan  |   |
 | --- | --- | --- | --- |
 |   |  | • Sending offers through the loyalty application (web, mobile - push)
 • Section with store offers, in which each store will be able to post its offers
@@ -4109,7 +4095,7 @@ Supported languages:
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  **ΔΗΜΟΣ ΚΟΖΑΝΗΣ**
-**Municipality of Kozani** | 2030 Climate Neutrality Action Plan |   |
+| **Municipality of Kozani** | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |   |  | for 26% of global final energy use and
 % of CO_{2} emissions from fossil fuels
@@ -4156,7 +4142,7 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |   | GHG emissions reduction estimate (total) per emission source sector | 6.13GHG emissions could be saved per 10% reduction of commuting in order to interact with public services info points  |
 | --- | --- | --- |
@@ -4187,7 +4173,7 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 |   |  | measurable benefit for the citizens and businesses of the Municipality without an administrative burden on the executives of the Municipality.  |
 |  Implementation | Responsible bodies/person for implementation | Municipality of Kozani  |
@@ -4672,13 +4658,11 @@ Improvement of the quality of life and the creation of a measurable benefit for 
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani |   | 2030 Climate Neutrality Action Plan |   |   |   |
+| Municipality of Kozani |   | 2030 Climate Neutrality Action Plan |   |   |   |
 | --- | --- | --- | --- | --- | --- |
 |   |  |  |  | minimize commuting and thus reducing CO₂ emissions |   |
-
-2
 |  **ΔΗΜΟΣ ΚΟΖΑΝΗΣ**
-**Municipality of Kozani** | 2030 Climate Neutrality Action Plan |   |
+| **Municipality of Kozani** | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 
 C-1.2: Description of organisation and governance interventions – textual and visual elements
@@ -4774,7 +4758,7 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
+| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
 | --- | --- | --- |
 
 initiated its upgraded role in the management scheme from the very beginning of the Mission's announcement.
@@ -4836,7 +4820,7 @@ Better and more direct representation of citizen | Indirect CO₂ emissions redu
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani |   | 2030 Climate Neutrality Action Plan |   |   |   |
+| Municipality of Kozani |   | 2030 Climate Neutrality Action Plan |   |   |   |
 | --- | --- | --- | --- | --- | --- |
 |   | s, to directly
 communicate
@@ -4972,48 +4956,48 @@ Climate Neutrality Action Plan of the Municipality of Kozani
 Climate Neutrality Action Plan of the Municipality of Kozani
 
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani |   | 2030 Climate Neutrality Action Plan |   |   |
+| Municipality of Kozani |   | 2030 Climate Neutrality Action Plan |   |   |
 | --- | --- | --- | --- | --- |
 |   | Enterprise
 (KTEL Astikon
 Grammon
 Kozanis A.E.) |  |  |   |
 |  Enhancement of Urban logistics | Municipality of
-Kozani | 2024-
+| Kozani | 2024- |
 | Upgrade of Public
 Transportation System
 and Urban Logistics | 1,145,000  |
 |  Promotion of Walkability | Municipality of
-Kozani | 2024-
+| Kozani | 2024- |
 | Walkability and Cycling
-Strategy | 4,448,415  |
+| Strategy | 4,448,415  |
 |  Promotion of Cycling | Municipality of
-Kozani | 2024-
+| Kozani | 2024- |
 | Walkability and Cycling
-Strategy | 2,510,600  |
+| Strategy | 2,510,600  |
 |  Implementation of Smart Systems for Mobility | Municipality of
-Kozani | 2024-
+| Kozani | 2024- |
 | Introduction of IT
-technologies to Mobility | 475,000  |
+| technologies to Mobility | 475,000  |
 |  Smart Mobility Systems for Citizens | Municipality of
-Kozani | 2024-
+| Kozani | 2024- |
 | Introduction of IT
-technologies to Mobility | 40,000  |
+| technologies to Mobility | 40,000  |
 |  Infrastructure Upgrades to enhance Mobility | Municipality of
-Kozani | 2024-
+| Kozani | 2024- |
 | Incentives and citizen
-engagement | 30,237,139  |
+| engagement | 30,237,139  |
 |  Awareness raising strategy | CluBE | 2024-
 | Incentives and citizen
-engagement | 7,000  |
+| engagement | 7,000  |
 |  Education | Municipality of
-Kozani | 2024-
+| Kozani | 2024- |
 | Incentives and citizen
-engagement | 28,000  |
+| engagement | 28,000  |
 |  Incentives to citizens | Municipality of
-Kozani | 2024-
+| Kozani | 2024- |
 | Incentives and citizen
-engagement | 100,000  |
+| engagement | 100,000  |
 |  WASTE AND
 CIRCULAR
 ECONOMY | Creation of Green Spots | Municipality of
@@ -5022,7 +5006,7 @@ Kozani | 2024-
 enhancement and
 cycling  |
 |   |  Pay as you throw | Municipality of
-Kozani | 2024-
+| Kozani | 2024- |
 | Sorting at Source
 enhancement and
 recycling  |
@@ -5035,7 +5019,7 @@ recycling  |
 enhancement and
 recycling  |
 |   |  Certification | Municipality of
-Kozani | 2024-
+| Kozani | 2024- |
 | Certification and Green
 Procurements  |
 
@@ -5541,8 +5525,8 @@ The Municipality of Kozani will ensure that all stakeholders have access to info
 9
 
 |  **ΔΗΜΟΣ ΚΟΖΑΝΗΣ**
-**Municipality of Kozani** | 2030 Climate-Neutrality
-Commitments |   |
+| **Municipality of Kozani** | 2030 Climate-Neutrality |
+| Commitments |   |
 | --- | --- | --- |
 
 The Municipality of Kozani will ensure equal access for all, especially people who might otherwise be excluded or marginalized, because of physical or intellectual disabilities and will put special effort in engaging members of minority groups. The Municipality of Kozani will also include vulnerable groups, women, young professionals etc. All procedures undertaken for turning Kozani to a neutral city will be culturally appropriate.
@@ -5738,11 +5722,11 @@ b. The Declaration of Cooperation (DoC), which is a general declaration of the s
 
 c. The Memorandum of Understanding (MoU), which is a comprehensive document that describes in more detail the actions to be undertaken by the signatories in the forthcoming months. The stakeholders that signed this type of document are listed below and the documents can be found in the uploaded document "Commitments_Appendix I".
 |  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-Municipality of Kozani | 2030 Climate-Neutrality
-Commitments |   |
+| Municipality of Kozani | 2030 Climate-Neutrality |
+| Commitments |   |
 | --- | --- | --- |
 |  Name of the institution | Sector/Area | Legal form
-Name of the responsible person  |
+| Name of the responsible person  |
 |  The Local Urban Transportation Enterprise
 (KTEL Astikon Grammon Kozanis A.E.): | Mobility and Transport | MoU
 Theodoros Michailidis

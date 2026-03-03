@@ -1004,7 +1004,7 @@ stadtaachen
 • Utilisation of secondary raw materials | medium |
 | --- | --- | --- | --- | --- |
 | Strategy(09.11.2020) | Hydrogen roadmap NRW(English version available) | Energy | • Electrolysers on a gigawatt scale
-• Utilisation of the natural gas network | medium |
+| • Utilisation of the natural gas network | medium |
 | Agreement(08.10.2022) | Coal phase-out 2030 | Energy | • BMWK and MWIKE agree to end coal-fired power generation in NRW by 2030 | high |
 
 Note: Current laws, subsidies and strategies of the state of North Rhine-Westphalia with relevance for climate and emissions protection (no claim to completeness, as of 02/24). Source: https://www.klimaschutz.nrw.de/mediathek/medien-und-downloads
@@ -1206,10 +1206,10 @@ stadtaachen
 • It also regulates elements of fuel quality linked to air pollutant emissions and, together with the Renewable Energy Directive, the sustainability of biofuels. |
 | --- | --- | --- | --- |
 | Directive (2021) | European Industrial Strategy medium
-Support towards achieving a climate neutral and circular economy through the full mobilisation of industry and transformation of industrial sectors and all its value chains. | Industry | Highlights the importance of R&I in providing the technological foundation to transform and strengthen industrial value chains, helping to turn sustainability and digital challenges into business opportunities. Common industrial technology roadmaps are a key tool to achieve this objective. |
+| Support towards achieving a climate neutral and circular economy through the full mobilisation of industry and transformation of industrial sectors and all its value chains. | Industry | Highlights the importance of R&I in providing the technological foundation to transform and strengthen industrial value chains, helping to turn sustainability and digital challenges into business opportunities. Common industrial technology roadmaps are a key tool to achieve this objective. |
 | Directive (2019) | SUP Directive low
-Reducing plastic pollution has implications for climate mitigation | Industry | • EU rules on single-use plastic products aim to prevent and reduce the impact of certain plastic products on the environment, in particular the marine environment, and on human health.
-• They also aim to promote the transition to a circular economy with innovative and sustainable business models, products and materials, therefore also contributing to the efficient functioning of the internal market. |
+| Reducing plastic pollution has implications for climate mitigation | Industry | • EU rules on single-use plastic products aim to prevent and reduce the impact of certain plastic products on the environment, in particular the marine environment, and on human health. |
+| • They also aim to promote the transition to a circular economy with innovative and sustainable business models, products and materials, therefore also contributing to the efficient functioning of the internal market. |
 | Directive (1999) | Landfill Directive medium | Industry | The Landfill Directive aims to protect both human health and the environment. In particular, it aims to prevent, or reduce as much as possible, any negative impact from landfill on surface water, groundwater, soil, air and human health. It does this by introducing rigorous operational and technical requirements. |
 | Directive (2018) | Waste Framework Directive (WFD) | Industry | • The Waste Framework Directive lays down some basic waste management principles. It requires that waste be managed without endangering human health and harming the environment without risk to water, air, soil, plants or animals without causing a nuisance through noise or odours and without adversely affecting the countryside or places of special interest.
 The amendment from 2023
@@ -1732,7 +1732,7 @@ stadtaachen
 0
 
 | | - Training the intellectual elite of tomorrow
-Translation of the results into business | - different research focus | - Regular exchange in advisory boards/committees |
+| Translation of the results into business | - different research focus | - Regular exchange in advisory boards/committees |
 | --- | --- | --- | --- |
 | Retail/catering | - Attractive and lively (inner) city
 Good accessibility
@@ -1852,7 +1852,6 @@ Table 8 (B-1.1) Impact Pathways
 | B-1.1: Impact Pathways |                 |                           |                           |                                              |                                |
 | ---------------------- | --------------- | ------------------------- | ------------------------- | -------------------------------------------- | ------------------------------ |
 | Fields of action       | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions, ktCO2e) | Indirect impacts (co-benefits) |
-
 | Energy systems
 Electricity | Technology/Infrastructure
 Governance & Policy
@@ -2510,10 +2509,9 @@ Logistics companies, courier/express and parcel service providers (CEP), trade b
 | Time required          | Duration of the activity |
 | ---------------------- | ------------------------ |
 | 1 full-time equivalent | 6 years                  |
-
 | Material costs
-approx. €5,940,000 for the funding programme | Financing approach
-Budget funds, possibly electric mobility funding |
+| approx. €5,940,000 for the funding programme | Financing approach |
+| Budget funds, possibly electric mobility funding |
 | --- | --- |
 
 **GHG savings**
@@ -4210,7 +4208,6 @@ stadtaachen
 
 | Reduction of the annual emissions level (t/a): 500 tonnes CO2eq/a | Cumulative GHG savings (tonnes): 1,650 tonnes CO2eq (by 2030) |
 | ----------------------------------------------------------------- | ------------------------------------------------------------- |
-
 | Synergy effects
 Masterplan - integrated, comprehensive energy planning
 Energy in the hands of citizens
@@ -4254,7 +4251,6 @@ Building owners of residential and non-residential buildings
 | Time required          | Duration of the activity |
 | ---------------------- | ------------------------ |
 | 1 full-time equivalent | 2024 - 2026              |
-
 | Material costs
 € (150.000 €/a)
 for subsidising consultant costs and promoting
@@ -5627,7 +5623,7 @@ Commitments
 – Expansion of activities for education for sustainable development in schools
 – Unsealing of school and daycare centres |
 | 1: Politically decided and planned in the municipal budget, for a complete overview of measures, see IKSK 2020
-From the report The path to climate neutrality in 2030, subject to political decision and financing, for a complete overview of measures, see The Contribution to Climate City Yield Volume 4 - Activities | |
+| From the report The path to climate neutrality in 2030, subject to political decision and financing, for a complete overview of measures, see The Contribution to Climate City Yield Volume 4 - Activities | |
 | The far-reaching transformation processes require the participation of many stakeholders in the city and urban society. Politicians and the city administration must lead by example through clear decisions and consistent action. This is the only way to convince urban society of the city's determination to achieve the ambitious goal of climate neutrality by 2030 and motivate it to act. | |
 | The greatest potential for saving emissions lies in the energy, heating and mobility sectors. Local energy suppliers, grid operators and mobility providers are therefore essential partners on the road to climate neutrality. Business and trade also have great savings potential and leverage. But ultimately, the commitment of every citizen is necessary for the transformation of society as a whole and climate neutrality to succeed. | |
 | In view of the shortage of skilled labour in climate-related professions throughout Germany and the need for innovation in the energy and heating sector, the importance of schools and universities is clear. Aachen is ideally positioned here with the university RWTH Aachen and the FH Aachen (university of applied sciences), as well as committed secondary schools and educational institutions. The commitments of the universities and educational institutions can be found in the table in Chapter 5 and Appendix 2. | |
@@ -8122,7 +8118,6 @@ The municipal management task is not interpreted solely as classic project manag
 
 | Who acts with whom? | Strategic goals | What measures are required? | What activities support the implementation? |
 | ------------------- | --------------- | --------------------------- | ------------------------------------------- |
-
 | Dec. VII and FB 36 with:
 Agency for Climate, Energy and Sustainability, EU Mission
 Core administration, Dec. V, FB 13, FB 14, E26
@@ -8153,7 +8148,6 @@ Climate neutrality is a central goal of urban development in Aachen. The City of
 
 | Who acts with whom? | Strategic goals | What measures are required? | What activities support the implementation? |
 | ------------------- | --------------- | --------------------------- | ------------------------------------------- |
-
 | FB 61/100, statistics centre, FB 02/200 with core administration
 FB 61 with FB 56, FB 36 with citizens | Work intensively and interdisciplinarily on strategic interfaces between urban development and other areas of the municipal family in relation to climate protection
 Integration and binding anchoring of the goal of climate neutrality in informal and formal planning processes
@@ -9217,7 +9211,6 @@ Resource recovery from the construction industry reduces the amount of grey ener
 
 | Who acts with whom? | Strategic goals | What measures are required? | What activities support the implementation? |
 | ------------------- | --------------- | --------------------------- | ------------------------------------------- |
-
 | E 18 - Aachener Stadtbetrieb
 FB 36/700 | Improvement of post-consumer resources
 Improving recycling structures in the Aachen urban area
@@ -9562,7 +9555,6 @@ Ecologically sustainable settlement areas, open spaces adapted to climate change
 
 | Who acts with whom? | Strategic goals | What measures are required? | What activities support the implementation? |
 | ------------------- | --------------- | --------------------------- | ------------------------------------------- |
-
 | Dec. 7
 Department 36 - Climate and Environment E26 - Facility Management
 FB 13 - Communication and City Marketing | Citizens are aware of urban measures for a climate-friendly living environment | Integrating climate protection into the urban environment | Pilot projects for unsealing school and nursery grounds |
@@ -9603,7 +9595,6 @@ Culture and leisure activities can be used to create low-threshold points of con
 
 | Who acts with whom? | Strategic goals | What measures are required? | What activities support the implementation? |
 | ------------------- | --------------- | --------------------------- | ------------------------------------------- |
-
 | E 46/47 - Municipal theatre and music directorate
 E49- Cultural operations FB 52 - Sport Dec. 7
 FB 36 - Climate and environment
@@ -10550,8 +10541,6 @@ The strategic considerations of the ICSK result in activities as a contribution 
 | 2.4.1   | Measure: System and plant optimisation of the existing district heating system                                                     |               |
 | 2.4.2   | Measure: Expansion and decarbonisation of district heating                                                                         |               |
 | 2.4.3   | Measure: Promote efficient decentralised heating systems with renewable energies                                                   |               |
-
-6
 | 2.5 | Security of supply and sector coupling | 0 ICO2/a |
 | --- | --- | --- |
 | 2.5.1 | Measure: Making grids fit for sector coupling | |
@@ -10683,7 +10672,7 @@ The strategic considerations of the ICSK result in activities as a contribution 
 # 12.2. Overview of costs
 
 | | | Total
-total in € |
+| total in € |
 | --- | --- | --- |
 | 1 | Governance | 8.625.200 € |
 | 1. | 1City as a role model: transformation as a management task | 7.562.700 € |
@@ -10720,7 +10709,7 @@ total in € |
 | 1.6.1 | Measure: RWTH Health and Climate Research Co-operation | -€ |
 | 1.6.2 | Measure: Organisational unit for civil protection | -€ |
 | | | Total
-total in € |
+| total in € |
 | --- | --- | --- |
 | 2 | Energy supply | 1.480.000 € |
 | 2. | 1City as a role model: energy, energy and generation | 140.000 € |
@@ -10753,8 +10742,6 @@ total in € |
 | 2.5.5 | Measure: Production and distribution of hydrogen, synthetic gases and fuels, infrastructure development | -€ |
 | 2.5.6 | Measure: Increasing the speed of implementation | 400.000 € |
 | 2.5.6.1 | Establishment of a city-wide pool of tradespeople and a platform including training opportunities | 400.000 € |
-
-9
 | | | Total total in € |
 | --- | --- | --- |
 | 3 | Building | 3.480.000 € |
@@ -10946,8 +10933,6 @@ total in € |
 | 2.5.5   | Measure: Production and distribution of hydrogen, synthetic gases and fuels, infrastructure development                            |                         |
 | 2.5.6   | Measure: Increasing the speed of implementation                                                                                    | 0,50                    |
 | 2.5.6.1 | Development of a city-wide pool of tradespeople and a platform including training opportunities                                    | 0,50                    |
-
-2
 | | | Full-time equivalents/a |
 | --- | --- | --- |
 | 3 | Building | 11,50 |
@@ -11498,7 +11483,6 @@ Dashboard: Monitoring &amp; controlling with balance sheet
 
 | Thematic focus | Introduction | Development of effect | Sphere of influence |
 | -------------- | ------------ | --------------------- | ------------------- |
-
 | City as a role model:
 Transformation as
 Management task | 2024 | Medium-term | Regulate |
@@ -11629,16 +11613,13 @@ Parties involved: FB 36, Procurement Office | **Target group**
 City administration |
 | --- | --- |
 | **Time required**
-ill-time equivalents | **Duration of the activity**
-
-- 2030 (follow-up control) |
-  | **Material costs**
-  GHG savings | **Financing approach**
-  Budget funds, if applicable |
-  | Not quantifiable, as it depends on the type and scope of the measure to be implemented. | |
-  | **Synergy effects** | **Conflicting goals** |
-  3
-
+| ill-time equivalents | **Duration of the activity** |
+| - 2030 (follow-up control) |
+| **Material costs** |
+| GHG savings | **Financing approach** |
+| Budget funds, if applicable |
+| Not quantifiable, as it depends on the type and scope of the measure to be implemented. | |
+| **Synergy effects** | **Conflicting goals** |
 | 1.1.1.1 Introducing and anchoring multi-project management | None expected                                                                                           |
 | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
 | 1.1.3.1 Introduce climate coordinators in all departments  |                                                                                                         |
@@ -11650,7 +11631,6 @@ Introduction of climate fund
 
 | Thematic focus | Introduction | Development of effect | Sphere of influence |
 | -------------- | ------------ | --------------------- | ------------------- |
-
 | City as a role model:
 Transformation as
 Management task | 2024 | Medium-term | Taxes/Offering |
@@ -12655,7 +12635,6 @@ Quantification in line with the previous target of 32 GWh/a by 2030, of which 5 
 | Reduction of the annual emissions level (t/a): | Cumulative GHG savings (tonnes): |
 | ---------------------------------------------- | -------------------------------- |
 | 500 tonnes CO2eq/a                             | 1,650 tonnes CO2eq (by 2030)     |
-
 | **Synergy effects**
 Masterplan - integrated, comprehensive energy planning
 Energy in the hands of citizens
@@ -12953,7 +12932,6 @@ Solar offensive on all suitable roof surfaces
 
 | Thematic focus | Introduction | Development of effect | Sphere of influence |
 | -------------- | ------------ | --------------------- | ------------------- |
-
 | Local and renewable
 Electricity | 2024 | Short term | Advise/ motivate |
 
@@ -13043,7 +13021,6 @@ Concept development: Determination and utilisation of PV open space potentials
 
 | Thematic focus | Introduction | Development of effect | Sphere of influence |
 | -------------- | ------------ | --------------------- | ------------------- |
-
 | Local and renewable
 Electricity | 2024 | Short and medium term | Advise/ motivate |
 
@@ -13664,13 +13641,12 @@ Evaluation and, if necessary, adaptation of the offers
 
 | Actors | Target group |
 | ------ | ------------ |
-
 | In charge: Department 61/600 - Monument preservation and urban archaeology
-Participants: FB 36 - Environment and Climate, altbau plus e.V. | Municipality of the City of Aachen, Department of Urban Development, Planning and Mobility Infrastructure |
+| Participants: FB 36 - Environment and Climate, altbau plus e.V. | Municipality of the City of Aachen, Department of Urban Development, Planning and Mobility Infrastructure |
 | Time required | -time equivalent |
 | 2024 - 2030 | Financing approach |
 | 350,000 € or 50,000 €/a
-(Information material and public relations) | Budget funds |
+| (Information material and public relations) | Budget funds |
 | GHG savings | |
 | Not quantifiable | |
 | Synergy effects | Conflicting goals |
@@ -13727,9 +13703,6 @@ Writing to tenants and offering individual consultations
 | ---------------------- | ---------------------------- | --- |
 | **Time required**      | **Duration of the activity** |     |
 | 1 full-time equivalent | 2024 - 2026                  |     |
-
-8
-
 | Material costs  | Financing approach |
 | --------------- | ------------------ |
 | Iditional costs | -                  |
@@ -13805,8 +13778,8 @@ Full-time equivalents | **Duration of the activity**
 The savings result from the renovation of living space supported by initial consultations
 
 | Reduction of the annual emission level (t/a):
-,400 tonnes CO2eq/a | Cumulative GHG savings (tonnes):
-,500 tonnes CO2eq |
+| ,400 tonnes CO2eq/a | Cumulative GHG savings (tonnes): |
+| ,500 tonnes CO2eq |
 | --- | --- |
 
 # Synergy effects
@@ -13868,20 +13841,19 @@ Introduction of a funding pot
 |        |              |
 | ------ | ------------ |
 | Actors | Target group |
-
 | Lead: Department 61 - Urban development, planning and mobility infrastructure
-Appts: altbau plus e.V. | Citizens, local businesses, trade / commerce / service providers, building owners
-Communities of owners, administration |
+| Appts: altbau plus e.V. | Citizens, local businesses, trade / commerce / service providers, building owners |
+| Communities of owners, administration |
 | Time required | Duration of the activity |
 | time equivalents | 2024 - 2030 |
 | Material costs | Financing approach |
 | 2.100.000 €. (300.000 €/a)
-for public relations work; external consulting or concept development and funding | Budget funds |
+| for public relations work; external consulting or concept development and funding | Budget funds |
 | GHG savings | |
 | Not quantifiable | |
 | Synergy effects | Conflicting goals |
 | 2.3.3.1 Solar campaign on all suitable roof surfaces
-Establishment of a city-wide Tradesman pools and a platform including training opportunities | High personnel and financial expenditure, lack of skilled labour / resources, increased number of construction measures, acceptance of property / building owners |
+| Establishment of a city-wide Tradesman pools and a platform including training opportunities | High personnel and financial expenditure, lack of skilled labour / resources, increased number of construction measures, acceptance of property / building owners |
 | Success indicators/milestones | |
 | Completion of the inventory, finalisation of a refurbishment concept,
 Number of space purchases, number of Information and counselling activities, number of grants and total amount of grants distributed per year, initiated and accompanied
@@ -14041,15 +14013,15 @@ Parties involved: FB 32 (security concept for events) | **Target group**
 Citizens |
 | --- | --- |
 | **Time required**
-time equivalent | **Duration of the activity**
-years |
+| time equivalent | **Duration of the activity** |
+| years |
 | **Material costs**
-ox. 140,000 €/a | **Financing approach**
-Budget funds |
+| ox. 140,000 €/a | **Financing approach** |
+| Budget funds |
 | **GHG savings**
-Not quantifiable | |
+| Not quantifiable | |
 | **Synergy effects**
-us activities in the field of action | **Conflicting goals**
+| us activities in the field of action | **Conflicting goals** |
 |
 0
 
@@ -14214,17 +14186,16 @@ Realisation of projects and ongoing adaptation
 
 |     |     |     |
 | --- | --- | --- |
-
 | Time required
-uantifiable | Duration of the activity
-Establish in the long term | |
+| uantifiable | Duration of the activity |
+| Establish in the long term | |
 | Material costs
-uantifiable | Financing approach
+| uantifiable | Financing approach |
 | |
 | GHG savings
-Not quantifiable | | |
+| Not quantifiable | | |
 | Synergy effects
-us activities in the field of action | Conflicting goals
+| us activities in the field of action | Conflicting goals |
 | |
 | Success indicators/milestones
 Development of the modal split | | |
@@ -14262,11 +14233,11 @@ is involved: Legal depar | **Target group**
 City of Aachen, other pioneering cities and EU Commission |
 | --- | --- |
 | **Time required**
-ill-time equivalents | **Duration of the activity**
-Establish in the long term |
+| ill-time equivalents | **Duration of the activity** |
+| Establish in the long term |
 | **Material costs**
-quantifiable | **Financing approach**
-Budget funds |
+| quantifiable | **Financing approach** |
+| Budget funds |
 | **GHG savings**
 Currently not quantifiable. Estimation possible using the new balancing methodology (see activity 4.2.1.2.
 Balancing and impact assessment of mobility measures in the ICSK) | |
@@ -14585,13 +14556,13 @@ Participants: | **Target group**
 The company |
 | --- | --- |
 | **Time required**
-time equivalent | **Duration of the activity**
-years |
+| time equivalent | **Duration of the activity** |
+| years |
 | **Material costs**
-€ (100.000 €/a) | **Financing approach**
-Budget funds |
+| € (100.000 €/a) | **Financing approach** |
+| Budget funds |
 | **GHG savings**
-Savings through consulting and innovation support | |
+| Savings through consulting and innovation support | |
 | Reduction in the annual level of emissions (t/a):
 ,000 tonnes CO2eq/a | Cumulative GHG savings (tonnes):
 ,100 tonnes CO2eq/ |
@@ -14643,11 +14614,11 @@ Participants: STAWAG | **Target group**
 Manufacturing/industry |
 | --- | --- |
 | **Time required**
-time equivalent | **Duration of the activity**
-years |
+| time equivalent | **Duration of the activity** |
+| years |
 | **Material costs**
-€/a | **Financing approach**
-Budget funds |
+| €/a | **Financing approach** |
+| Budget funds |
 | **GHG savings** | |
 
 9
@@ -14690,9 +14661,8 @@ Ongoing planning and feasibility checks
 
 | Actors | Target group |
 | ------ | ------------ |
-
 | Lead: E 18, E2 6
-Parties involved: Dec. VII - FB 36 | Building trade, building materials industry |
+| Parties involved: Dec. VII - FB 36 | Building trade, building materials industry |
 | Time required | Duration of the activity |
 | •time equivalents | k. A. |
 | Material costs | Financing approach |
@@ -14700,10 +14670,8 @@ Parties involved: Dec. VII - FB 36 | Building trade, building materials industry
 | GHG savings | |
 | Not quantifiable | |
 | Synergy effects | Conflicting goals |
-2
-
 | 5.5.5.1. Component and resource warehouse
-Circular economy in the construction industry | The preservation of building fabric binds grey energy and is a contribution to Conservation of resources |
+| Circular economy in the construction industry | The preservation of building fabric binds grey energy and is a contribution to Conservation of resources |
 | --- | --- |
 | 5.5.5.3 Develop criteria for climate-neutral construction sites | |
 | Success indicators/milestones
@@ -14935,9 +14903,8 @@ Participants: Agriculture and forestry working group of the Climate Emergency Ro
 | -------------------- | ------------------------ |
 | ill-time equivalents | 2024 - 2030              |
 | Material costs       | Financing approach       |
-
 | Establishment and lease of a regional trading centre (hub): approx. 60,000 €/a; 2,000 €/a for communication and campaign work
-Total: €434,000 | Budget funds, funding programmes (possibly EAFRD funds) |
+| Total: €434,000 | Budget funds, funding programmes (possibly EAFRD funds) |
 | GHG savings | |
 | Assumption: By establishing the central trading location, transport emissions and long storage times for non-seasonal vegetables are avoided. | |
 | Reduction of the annual emission level (t/a): | Cumulative GHG savings (tonnes): |
@@ -15295,7 +15262,6 @@ Participatory campaign with volunteer climate trainers
 
 | Thematic focus | Introduction | Development of effect | Sphere of influence |
 | -------------- | ------------ | --------------------- | ------------------- |
-
 | Climate-friendly
 Behaviour in everyday life | 2024 | Short term | Offer and supply |
 
@@ -15634,7 +15600,7 @@ million for street trees
 million euros planned in the budget |
 | --- | --- | --- |
 | | GHG savings
-Not quantifiable, as it depends on the extent and health of the additional green infrastructure |
+| Not quantifiable, as it depends on the extent and health of the additional green infrastructure |
 | --- | --- |
 | | **Synergy effects** | Conflicting goals |
 | --- | --- | --- |
@@ -16957,9 +16923,6 @@ The existing concepts described above (chapters 3.2.2 and 4.1) include a wide ra
 | Expansion of solar energy                   | PV systems on comm. buildings etc | Expansion of rooftop PV and CHP                |                                             |                |                                          |
 | Aachen CHP Initiative                       |                                   |                                                |                                             |                |                                          |
 | Energy efficiency in the economy            | Ecoprofit                         |                                                |                                             |                |                                          |
-
-6
-
 | District heating supply for the city of Aachen | Update of FW expansion                |     |                                                      |                        |                                       |
 | ---------------------------------------------- | ------------------------------------- | --- | ---------------------------------------------------- | ---------------------- | ------------------------------------- |
 | Energy-efficient refurbishment of buildings    | Counselling and targeted approach     |     | Energy-efficient modernisation of the building stock |                        |                                       |
@@ -19792,9 +19755,6 @@ Overall summary of the IKSK action plan 2025 - City of Aachen
 | 1.7                              | Climate-neutral model housing estate                                                               | 50.000                    | 0                     | 50.000            | 0                                   | not quantifiable  | not quantifiable | not quantifiable                                                   |
 | 1.8                              | Establishment of a climate council                                                                 | 0                         | 0                     | 0                 | 0                                   | not quantifiable  | not quantifiable | not quantifiable                                                   |
 | TOTAL Urban development planning |                                                                                                    | 55.000                    | 160.000               | 215.000           | 0                                   | not quantifiable  | not quantifiable | not quantifiable                                                   |
-
-1
-
 |       | Field of action Municipal buildings                                                                      |            |           |                                 |                            |                  |                  |                  |
 | ----- | -------------------------------------------------------------------------------------------------------- | ---------- | --------- | ------------------------------- | -------------------------- | ---------------- | ---------------- | ---------------- |
 | 2.1   | Extend energy management to the entire city group                                                        | 0          | 0         | 0                               | 5.000                      | 180              | 28               | 0,2              |
@@ -19861,9 +19821,6 @@ Overall summary of the IKSK action plan 2025 - City of Aachen
 | 6.8   | Green" funding programme & campaign                                                                      | 100.000    | 80.000    | 180.000                         | 0                          | not quantifiable | not quantifiable | not quantifiable |
 | 6.9   | Municipality as a role model: cycling infrastructure                                                     |            |           | in the household                | 0                          | not quantifiable | not quantifiable | not quantifiable |
 |       | TOTAL Communication                                                                                      | 100.000    | 80.000    | 180.000                         | 0                          | not quantifiable | not quantifiable | not quantifiable |
-
-5
-
 | Field of action Economy |                                                          |                           |                       |                           |                                     |                   |                  |                                                                    |
 | ----------------------- | -------------------------------------------------------- | ------------------------- | --------------------- | ------------------------- | ----------------------------------- | ----------------- | ---------------- | ------------------------------------------------------------------ |
 | 7.1                     | Energy Network Aachen                                    | 10.000                    | 20.000                | 30.000                    | 0                                   | not quantifiable  | not quantifiable | not quantifiable                                                   |

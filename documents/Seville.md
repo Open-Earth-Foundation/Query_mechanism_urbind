@@ -927,7 +927,7 @@ This amounts to 1.990.878,9 t CO2 eq, leaving a total of 97.109,8 t CO2 eq (4.6%
 | --- | --- | --- | --- | --- | --- |
 |  Type | Level | Name and/or title | Description | Relevance | Necessary actions  |
 |  Action Plan | Local | Sustainable Energy and Climate Action Plan | The Sustainable Energy and Climate Action Plan (SECAP) is the document that replaces the SEAP and incorporates the emissions inventory, the analysis of risks and vulnerability to Climate Change and the package of measures to be implemented in the field of energy and adaptation to Climate Change.
-https://www.sevilla.org/transparencia/relaciones-con-los-ciudadanos/1-informacion-atencion-ciudadanos/paes-2013.pdf | It is the result of Seville's adherence to the European Covenant of Mayors (2009), in a first phase, and in its re-edition after the Paris Agreement (2015). Includes Adaptation Plan. | Preparation of the SECAP and biannual review of both the emissions inventory and the adaptation plan. The SECAP will be integrated into the Seville Climate Action Plan.  |
+| https://www.sevilla.org/transparencia/relaciones-con-los-ciudadanos/1-informacion-atencion-ciudadanos/paes-2013.pdf | It is the result of Seville's adherence to the European Covenant of Mayors (2009), in a first phase, and in its re-edition after the Paris Agreement (2015). Includes Adaptation Plan. | Preparation of the SECAP and biannual review of both the emissions inventory and the adaptation plan. The SECAP will be integrated into the Seville Climate Action Plan.  |
 |  General plan | Local | General Urban Development Plan (Plan General de Ordenación Urbana) | https://www.urbanismosevilla.org/areas/planeamiento-desarrollo-urbanistico/pgou-vigente-1 | It represents the urban planning of the city, both for new constructions and for urban restoration and rehabilitation interventions. | Integrate into the PGOU the necessary modifications, as a consequence of the Climate Action Plan, for both mitigation and adaptation.  |
 |  General plan | Local | Sustainable Urban Mobility Plan | Seville's Sustainable Urban Mobility Plan aims to bring about a change in travel modes that will enable a drastic reduction in GHG emissions by minimising travel times. | General objectives of the document:
 Mobility as a citizen's right: guaranteeing travel by a means of | Integrate SUMP forecasts into the Climate Action Plan, with indicators for monitoring and updating according to results.  |
@@ -1012,7 +1012,7 @@ Climate City Contract. Seville
 5
 
 |   |  |  |  | with applicable legislation, electricity consumption is minimised, maximum energy efficiency is guaranteed and light pollution is reduced in accordance with the best available technology.
-I) Temporal programming of the planned actions, their economic evaluation and execution. |   |
+| I) Temporal programming of the planned actions, their economic evaluation and execution. |   |
 | --- | --- | --- | --- | --- | --- |
 6
 
@@ -1156,7 +1156,7 @@ Climate City Contract. Seville
 3
 
 |   |  |  |  | adaptation) on
-consumers.  |
+| consumers.  |
 | --- | --- | --- | --- | --- |
 |  **Civil society** | Neighbourhood
 Associations | Citizenship | Defending the
@@ -1326,10 +1326,10 @@ Climate City Contract. Seville
 Climate City Contract. Seville
 
 |   | Expansion of the Compressed Natural Gas (CNG) bus fleet by 93 units. | Project to expand the CNG public bus fleet by 93 units.
-This is an alternative to traditional fuels in urban bus fleets. It is a measure already initiated in Seville and, thanks to the results obtained, the number of buses with this fuel, CNG, is expected to increase.  |
+| This is an alternative to traditional fuels in urban bus fleets. It is a measure already initiated in Seville and, thanks to the results obtained, the number of buses with this fuel, CNG, is expected to increase.  |
 | --- | --- | --- |
 |   |  Incorporation of LIPASAM's vehicle fleet management system. | The aim is to manage LIPASAM's vehicle fleets to improve efficiency and reduce unnecessary journeys, thus avoiding emissions into the atmosphere, while improving the effectiveness of route control and reducing fuel consumption.
-Management systems are essential to achieve operational excellence within a transport company and also reduce unnecessary costs.  |
+| Management systems are essential to achieve operational excellence within a transport company and also reduce unnecessary costs.  |
 |   |  Use of electric vehicles in LIPASAM's fleet of supervision vehicles. | The measure is based on its application to motorbikes and multi-purpose vehicles in the LIPASAM fleet.  |
 |   |  Education and awareness-raising programmes to promote the use of Public Transport in schools (TUSSAM). | Awareness-raising campaigns will be promoted in educational centres at the Compulsory Secondary Education (ESO) level, aimed at pupils to encourage the use of Public Transport. The aim of these campaigns is to encourage them to adopt behaviour in their daily lives that will lead to a better perception of Public Transport and a greater use of it, which will result in a future reduction in the use of private vehicles and a reduction in CO2 emissions. The campaign consists of organising visits throughout the school year for secondary school pupils to representative facilities, with an exhibition of the advantages of Public Transport, a visit to the Control Centre, the Workshops, the solar photovoltaic plant, the CNG refuelling plant and other facilities. Emphasising the recycling of batteries, tyres, used motor oil, coolant and separation of other waste according to type.  |
 |   |  Publicity campaigns to promote the use of public transport. | Between 5 and 7 publicity campaigns are carried out each year to promote the use of public transport and the reduction of private vehicle use. These campaigns aim to encourage the citizens of Seville in their daily lives to adopt behaviours that will lead to a better perception of Public Transport and a greater use of it, which will result in a future reduction in the use of private vehicles and a reduction in CO2 emissions. The campaigns are diverse in nature and emphasise both bus and tram use.  |
@@ -1556,7 +1556,7 @@ Climate City Contract. Seville
 |  Action plan | Name of the action | Implementation of the Green Belt  |
 |   |  Type of action | absorption SUPPORT MEASURES  |
 |   |  Description of the action | The development of the City's Green Belt is planned, through the creation and/or adaptation of a green infrastructure of some 42 km, which will serve as an ecological corridor and link a large number of existing green spaces and parks.
-Also, the recovery of areas of high ecological potential which, belonging to the H.P.D. on the left bank of the River Guadalquivir, currently lack access, or have not been stripped of the riparian vegetation that allows the development of diverse and enriching ecosystems. These sections would provide a connection to the rest of the paths that run along this bank of the river, which are of enormous scenic and environmental attraction, as well as being frequently used for cycling, equestrian, bird-watching and general enjoyment of nature.  |
+| Also, the recovery of areas of high ecological potential which, belonging to the H.P.D. on the left bank of the River Guadalquivir, currently lack access, or have not been stripped of the riparian vegetation that allows the development of diverse and enriching ecosystems. These sections would provide a connection to the rest of the paths that run along this bank of the river, which are of enormous scenic and environmental attraction, as well as being frequently used for cycling, equestrian, bird-watching and general enjoyment of nature.  |
 |   | Subsector |   |
 Climate City Contract. Seville
 7
@@ -1571,7 +1571,7 @@ Climate City Contract. Seville
 |  Impacts and costs | Renewable energy generated (if applicable) |   |
 |   | Energy removed/replaced, volume or fuel type |   |
 |   | Estimated GHG emission reductions (total) | Increased absorption capacity by 750 tCO2eq
-By shadow effect, reduction of 2% of emissions from electricity consumption (residential sector).  |
+| By shadow effect, reduction of 2% of emissions from electricity consumption (residential sector).  |
 |   | Total costs and costs per unit of CO2eq | 8,488 e/t  |
 #
 
@@ -1852,7 +1852,7 @@ Climate City Contract. Seville
 5
 
 |   | 4º. Four different operators will be established in order to guarantee free competition and better fares for citizens.
-º. It also favours the implementation in La Cartuja where the first Low Emission Zone of Seville will be developed in the coming months, which in 2025 will move to zero emissions and where electric mobility and its infrastructure will play an important role in achieving its objectives. |  |  |  |   |
+| º. It also favours the implementation in La Cartuja where the first Low Emission Zone of Seville will be developed in the coming months, which in 2025 will move to zero emissions and where electric mobility and its infrastructure will play an important role in achieving its objectives. |  |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 Climate City Contract. Seville
 6

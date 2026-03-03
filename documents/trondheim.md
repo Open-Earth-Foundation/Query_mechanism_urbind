@@ -576,16 +576,16 @@ Table A-1.3a shows GHG emissions by source sectors. Data from Trondheims invento
 |  Unit: tons CO₂e  |   |   |   |   |   |
 |   |   | Scope 1 | Scope 2 | Scope 3 | Total (%)  |
 |  I. Buildings (+ o-r machinery)
-Buildings / Electricity |   | 38 084 + 53 000
-998* | 195 835**
-535*** | 2775 | 289 694 (57)
-533 (40)  |
+| Buildings / Electricity |   | 38 084 + 53 000 |
+| 998* | 195 835** |
+| 535*** | 2775 | 289 694 (57) |
+| 533 (40)  |
 |  II. Transport + sea transport |   | 169 932 + 24 479
-859 | 1 268.5 | 104 | 195 783 (39)
-859 (33)  |
+| 859 | 1 268.5 | 104 | 195 783 (39) |
+| 859 (33)  |
 |  III. Waste |   | 36 634 | 0 | 0
-802 | 36 634
-802 (3)  |
+| 802 | 36 634 |
+| 802 (3)  |
 |  IV. Industrial Process and Product Use (IPPU) |   | 2546 | 0 | 0 | 2546 (0.5)  |
 |  V. Agricultural, Forestry and Land Use (AFOLU) | Sources (positive emissions) | 16 541 | 0 | 0 | 16 541 (3)  |
 |   |  Sinks (negative emissions) *** | / | / | / | /  |
@@ -633,13 +633,13 @@ Table A-1.4 shows GHG emissions categorised by activities in source sectors. Dat
 |  I.4 Energy industries | Incinerated waste amount | 217 584 |  |  |  | tons  |
 |  II. Transport  |   |   |   |   |   |   |
 |  II.1 On-road transportation*** | Passenger cars | 576 925
-000 | 236 792 |  | Distance driven | 1000 km  |
+| 000 | 236 792 |  | Distance driven | 1000 km  |
 |  II.1 On-road transportation*** | Light-duty vehicles | 118 728
-000 | 4434 |  | Distance driven | 1000 km  |
+| 000 | 4434 |  | Distance driven | 1000 km  |
 |  II.1 On-road transportation*** | Heavy-duty vehicles | 41 748
-000 | 84 |  | Distance driven | 1000 km  |
+| 000 | 84 |  | Distance driven | 1000 km  |
 |  II.1 On-road transportation*** | Buses | 35 266.47
-000 | 3531 |  | Distance driven | 1000 km  |
+| 000 | 3531 |  | Distance driven | 1000 km  |
 |  II.3 Waterborne navigation |  | 155 724 |  |  | Distance sailed | nm  |
 
 0
@@ -1616,8 +1616,8 @@ Action Plan
 7
 
 |   |  | countries.
-Involve the research and development community. | and transport sector.
-Implemented learning from other cities. |  | Students can get a better understanding of a zero emission lifestyle by using the city as a living lab.  |
+| Involve the research and development community. | and transport sector. |
+| Implemented learning from other cities. |  | Students can get a better understanding of a zero emission lifestyle by using the city as a living lab.  |
 | --- | --- | --- | --- | --- | --- |
 |  **Built environment** | Technology & infrastructure | Procurement continues: The municipality’s own building and construction projects must be emission-free by 2025. | Heading towards emission-free construction sites city-wide by 2030, including related transport.
 Better technology and lower cost on emission-free machinery. | Trondheim model: 53 500 tons CO2e.
@@ -1638,7 +1638,7 @@ Action Plan
 8
 
 |   | Finance & funding | Test different subsidy schemes for emission-free buildings and construction machinery | All public procurements require emission free construction sites.
-Emission free and circular construction sites are streamlined and cost effective. |  | By investing in emission-free machinery, businesses benefit from longer lifetime and lower operating costs of the machines.  |
+| Emission free and circular construction sites are streamlined and cost effective. |  | By investing in emission-free machinery, businesses benefit from longer lifetime and lower operating costs of the machines.  |
 | --- | --- | --- | --- | --- | --- |
 |   |  Learning and capabilities | Collaborate closely and actively with knowledge environments and the industry to drive forward new solutions. | Arenas for sharing experiences and knowledge in the industry. |   | Learning across sectors to find solutions that are flexible and sustainable.  |
 |  Waste & circular economy | Technology & infrastructure | The SESAM plant: Plan created for location, regulations and investments in a mixed waste sorting plant to increase material recovery.
@@ -1663,7 +1663,7 @@ Action Plan
 9
 
 |   |  | Avoid demolishing of buildings, and facilitate multi-use and reuse of buildings
-Achieved fossil fuel free waste transport by 2025. |  |  |   |
+| Achieved fossil fuel free waste transport by 2025. |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |   |  Governance & policy | Promote a green and fair framework for climate transition through the national cities mission platform.
 Household waste: Plan created for new or improved systems for source sorting and material recovery.
@@ -1747,7 +1747,7 @@ Action Plan
 C
 
 |   |  | Exchange best practices between municipalities.
-Reuse: National knowledge arena in place to exchange experience with other municipalities and building owners. |  |  | sustainability by implementing more democratic processes that link various actors and municipalities in becoming greener.  |
+| Reuse: National knowledge arena in place to exchange experience with other municipalities and building owners. |  |  | sustainability by implementing more democratic processes that link various actors and municipalities in becoming greener.  |
 | --- | --- | --- | --- | --- | --- |
 |  **Viable nature** | Technology & infrastructure | Map areas in Trondheim with restoration potential, as stated in the nature restoration plan.
 Nature-based solutions (NbS) are implemented in our land management. | Natural carbon stocks are mapped and estimated.
@@ -1779,8 +1779,8 @@ Awareness on climate change adaptation and preventive measures are increased (se
 Increased awareness and education about climate change adaptation may increase the population's resilience to shocks and disasters.  |
 | --- | --- | --- | --- | --- | --- |
 |   |  Democracy & participation | Increase cooperation with NGOs. | Inhabitants have gained more knowledge about the value of nature and use it to get involved in taking care of nature (see "Cross-sectoral actions").
-Inhabitants have gained more knowledge about their own food production and urban agriculture. |   | Increased food security.
-Improved public awareness on food production and security.  |
+| Inhabitants have gained more knowledge about their own food production and urban agriculture. |   | Increased food security. |
+| Improved public awareness on food production and security.  |
 |   |  Finance & funding | The municipality prioritises allocating funds to nature restoration and other nature-forward measures in their budget. | Funds are allocated for nature restoration, both from the public and business sector.
 Incentives have been implemented to restore more private land.
 The real cost of reducing nature and agricultural land is made visible in the early planning, and throughout, all projects. |   | Nature's resilience against climate change is strengthened, which also benefits climate adaptation and other ecosystem services.  |
@@ -1810,7 +1810,7 @@ Strategy for residual emissions summarises the planned actions and estimated imp
 • National and regional authorities, as well as other cities, through the national cities mission platform, which is currently developing.  |
 |  Energy systems | 0: Involve and engage | Information campaigns to engage citizens and businesses in the energy transition - communicating best practice on how to improve the energy efficiency and flexibility and/or install solar panels in homes. Includes households of different income levels, businesses of various sizes, etc. Address a just and climate-friendly energy transition in collaboration with regional and national authorities, through the national cities mission platform. See “Cross-sectoral actions”.  |
 |   |  1: Energy analysis
-★ Energy analysis | In order to integrate and develop our electric and thermal energy grids in an efficient and functional way, we will map our energy systems. Digital maps of the current situation will constitute the baseline for scenarios that will help decision making in urban planning, energy solutions in new and existing buildings, locations for charging stations, and more.  |
+| ★ Energy analysis | In order to integrate and develop our electric and thermal energy grids in an efficient and functional way, we will map our energy systems. Digital maps of the current situation will constitute the baseline for scenarios that will help decision making in urban planning, energy solutions in new and existing buildings, locations for charging stations, and more.  |
 |   |  2: Carbon capture and storage (CCS) from waste- incineration
 ★ Pilot City programme on CCS
 ★ E2.2: CCS from waste incineration | Capture and storage of CO₂ from incineration of waste from both fossil and biogenic origin, represents both an emission cut, and a carbon sink. Trondheim municipality cooperates with the plant-owner Statkraft Varme, to develop a feasible business model and plan for implementation and public acceptance.  |
@@ -1826,7 +1826,7 @@ Climate Neutrality Action Plan
 5
 
 |  Mobility & transport | (Miljøpakken)
-: Involve and engage | Miljøpakken is the action plan of the national-regional-local Byvekstavtalen (the “city-growth-agreement”), aiming to limit urban sprawl and car transport. This is an existing policy, but it will be strengthened with the Traffic plan for Trondheim autumn 2024. Thus, it is listed here as a portfolio, but no actions are included. Key indicators are provided in module B-3. Miljøpakken also includes campaigns and activities to engage citizens and businesses. These can be included in Trondheim Green Life, see “Cross-sectoral actions”.  |
+| : Involve and engage | Miljøpakken is the action plan of the national-regional-local Byvekstavtalen (the “city-growth-agreement”), aiming to limit urban sprawl and car transport. This is an existing policy, but it will be strengthened with the Traffic plan for Trondheim autumn 2024. Thus, it is listed here as a portfolio, but no actions are included. Key indicators are provided in module B-3. Miljøpakken also includes campaigns and activities to engage citizens and businesses. These can be included in Trondheim Green Life, see “Cross-sectoral actions”.  |
 | --- | --- | --- |
 |   |  1: Tool kit for green goods and utility transport (PS 76/23)
 ★ T2.1 / 2.2: Improved logistics for goods transport
@@ -1848,7 +1848,7 @@ The harbour aims to provide shore power for full scale cruise ships by 2030, and
 • Fossil fuel and emission-free construction sites in the Environment Package’s projects
 • Fossil fuel and emission-free construction sites for private actors.  |
 |   |  2: Climate footprint in land-use planning:
-★ Limit climate footprint of buildings and constructions in zoning plans | The study “Trondheim’s circular potential” contains a material flow analysis. The report concludes that the construction industry has the greatest potential to increase circularity and reduce indirect GHG emissions.  |
+| ★ Limit climate footprint of buildings and constructions in zoning plans | The study “Trondheim’s circular potential” contains a material flow analysis. The report concludes that the construction industry has the greatest potential to increase circularity and reduce indirect GHG emissions.  |
 |   |  Please note:
 Phasing out gas for heating in buildings and on construction sites are addressed in the impact pathway “energy systems”.
 Upgrades in building stock are addressed under “energy systems”.
@@ -2051,7 +2051,7 @@ Action Plan
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   |  Systemic lever | Technology and infrastructure / Finance and funding  |
 |   |  Outcome (according to module B-1.1) | Plans on how to phase out fossil fuel at small and medium sized industry facilities.
-Financial solution to phase out fossil fuel at Rockwool facility.  |
+| Financial solution to phase out fossil fuel at Rockwool facility.  |
 |   |  |   |
 |  Implementation | Responsible bodies/person for implementation | Rockwool facility  |
 |   |  Action scale & addressed entities | Rockwool facility  |
@@ -2068,7 +2068,7 @@ Expected increase in electricity demand: 31 GWh/year  |
 | --- | --- | --- |
 |  Action outline | Action name | I3.1: Energy transition in industry  |
 |   |  Action type | Governance intervention
-Technical intervention  |
+| Technical intervention  |
 |   |  Action description | All use of fossil fuels in industry must be replaced by renewable energy.  |
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   |  Systemic lever | Technology & infrastructure / Social innovation / Democracy and participation / Finance & funding  |
@@ -2085,7 +2085,7 @@ Action Plan
 3
 
 |   | Involved stakeholders | National authorities (Enova for financial support)
-Trondheim Municipality / local industry / Tensio (grid owner)  |
+| Trondheim Municipality / local industry / Tensio (grid owner)  |
 | --- | --- | --- |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | The municipality and the local coalition of enterprises invite small and medium sized industry into a network starting in 2024. National authorities should also (continue and strengthen) support the energy transition in the industry sector to cut all emissions by 2030.  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
@@ -2097,7 +2097,7 @@ Trondheim Municipality / local industry / Tensio (grid owner)  |
 | --- | --- | --- |
 |  Action outline | Action name | O2.1 / 2.2: Phase out gas for heating construction sites and buildings  |
 |   |  Action type | Governance intervention
-Technical intervention  |
+| Technical intervention  |
 |   |  Action description | Fossil fuel must be replaced by either electricity or district heating.  |
 |  Reference to impact pathway | Field of action | Energy  |
 |   |  Systemic lever | Technology & infrastructure / Governance and policy / Social innovation / Finance & funding  |
@@ -2111,7 +2111,7 @@ New business models are developed that promote local energy production, flexibil
 |  Implementation | Responsible bodies/person for implementation | Owners of buildings  |
 |   |  Action scale & addressed entities | City-wide  |
 |   |  Involved stakeholders | National authorities (Enova for financial support)
-Trondheim Municipality / local industry / Tensio (grid owner) / Statkraft - district heating company  |
+| Trondheim Municipality / local industry / Tensio (grid owner) / Statkraft - district heating company  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | The municipality and the local coalition of enterprises invite small and medium sized industry into a network starting in 2024. National authorities should also (continue and strengthen) support the energy transition in the building sector to cut all emissions by 2030.  |
 TRONDHEIM MUNICIPALITY
 Climate Neutrality Action Plan
@@ -2130,13 +2130,13 @@ Climate Neutrality Action Plan
 | --- | --- | --- |
 |  Action outline | Action name | Upgrades of hydropower plants  |
 |   |  Action type | Technical intervention
-Physical/spatial intervention  |
+| Physical/spatial intervention  |
 |   |  Action description | Actions to increase electric (energy and) power production towards 2030.
-New dam at Hyttfossen, construction of a new Svean power plant, upgrade of Fjæremfossen power plant and rehabilitation of the dams at Øvre and Nedre Leirfoss.  |
+| New dam at Hyttfossen, construction of a new Svean power plant, upgrade of Fjæremfossen power plant and rehabilitation of the dams at Øvre and Nedre Leirfoss.  |
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   |  Systemic lever | Technology and infrastructure / Finance and funding  |
 |   |  Outcome (according to module B-1.1) | Upgrades of hydropower plants are in progress.
-Citizens, neighbourhoods and businesses invest more in local energy production and smart energy use.  |
+| Citizens, neighbourhoods and businesses invest more in local energy production and smart energy use.  |
 |  Implementation | Responsible bodies/person for implementation | Statkraft (plant owner)  |
 |   |  Action scale & addressed entities | Hydropower plants as mentioned in the action description above.  |
 |   |  Involved stakeholders | National, regional and local authorities  |
@@ -2161,7 +2161,7 @@ Action Plan
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   |  Systemic lever | Technology and infrastructure / Finance and funding  |
 |   |  Outcome (according to module B-1.1) | Licence is granted for upgrading power lines and grid stations.
-Citizens, neighbourhoods and businesses invest more in local energy production and smart energy use.  |
+| Citizens, neighbourhoods and businesses invest more in local energy production and smart energy use.  |
 |  Implementation | Responsible bodies/person for implementation | Grid owners Statnett and Tensio  |
 |   |  Action scale & addressed entities | Transmission grid  |
 |   |  Involved stakeholders | National, regional and local authorities / neighbours  |
@@ -2216,7 +2216,7 @@ Decrease in biodiesel use: 3 GWh.  |
 | --- | --- | --- |
 |  Action outline | Action name | T2.3 / 2.4: Zero emission vans (procurement and infrastructure)  |
 |   |  Action type | Governance intervention
-Technical intervention  |
+| Technical intervention  |
 |   |  Action description | Establish infrastructure and ensure only emission free new light duty vans from 2025 and new heavy duty vans from 2030.  |
 |  Reference to impact pathway | Field of action | Mobility and transport  |
 |   |  Systemic lever | Technology and infrastructure / Governance and policy / Democracy and participation / Finance and funding / Learning and capabilities  |
@@ -2277,7 +2277,7 @@ Evaluate and apply new knowledge from the R&D to promote zero emission transport
 |   |  Action scale & addressed entities | All public roads in the municipality, except thoroughfares.  |
 |   |  Involved stakeholders | National and local authorities / car owners / Tensio (grid owner)  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | This intervention is on hold in lack of permission from national authorities. For car transport, there seems to be a general perception that all other means must be tried before ZEZ, since it represents a strong personal intervention.
-Still, electric cars entered the market properly from about 2011: There is a considerable network of charging infrastructure, and a large market for used electric cars. Thus, democratic and participatory actions building on our Pilot City programme on CCS (see “Energy systems”, portfolio 2) will be taken to explore how the energy transition of cars can gain even more traction, while still reducing overall car traffic.  |
+| Still, electric cars entered the market properly from about 2011: There is a considerable network of charging infrastructure, and a large market for used electric cars. Thus, democratic and participatory actions building on our Pilot City programme on CCS (see “Energy systems”, portfolio 2) will be taken to explore how the energy transition of cars can gain even more traction, while still reducing overall car traffic.  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   |  Removed/substituted energy, volume, or fuel type | See “T3.2 / 3.3 / 3.4: Zero emission zone for vans, heavy vehicles and buses” below.  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | See “T3.2 / 3.3 / 3.4: Zero emission zone for vans, heavy vehicles and buses” below.  |
@@ -2329,7 +2329,7 @@ Decrease in ethanol use: 3 GWh
 Action “T3.1: Zero emission zone for cars” included.  |
 | --- | --- | --- |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 79,300 tons CO2e
-Action “T3.1: Zero emission zone for cars” included.  |
+| Action “T3.1: Zero emission zone for cars” included.  |
 |   |  GHG emissions compensated (natural or technological sinks) | N/A  |
 |   |  Total costs and costs by CO2e unit | Not yet estimated  |
 
@@ -2369,7 +2369,7 @@ Climate Neutrality Action Plan
 |  Action outline | Action name | S3.2: Mandatory use of shore power and battery operation for all cruise ships, freighters and tankers  |
 | --- | --- | --- |
 |   |  Action type | Governance intervention
-Technical intervention  |
+| Technical intervention  |
 |   |  Action description | Establish shore power for cruise ships and make incentives for shore power in cruise ships, freighters and tankers. To maximise the emission cuts, a regulation should be implemented to make it obligatory to use shore power - and when available - battery operation.  |
 |  Reference to impact pathway | Field of action | Mobility and transport  |
 |   |  Systemic lever | Technology and infrastructure / Governance and policy  |
@@ -2406,7 +2406,7 @@ Action Plan
 2
 
 |  Reference to impact pathway | Procurement
-Technical intervention  |   |
+| Technical intervention  |   |
 | --- | --- | --- |
 |   |  Action description | Make all construction sites emission free by 2030.  |
 |  Reference to impact pathway | Field of action | Built environment  |
@@ -2431,8 +2431,7 @@ Arenas for sharing experiences and knowledge in the industry.  |
 |   |  Action scale & addressed entities | All construction sites city-wide  |
 |   |  Involved stakeholders | The Norwegian Public Roads Administration / Trøndelag County Authority / Trondheim Municipality / private actors  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Emission free machinery is a demand in the municipality’s procurement of buildings and infrastructure projects, since 2021. The goal is 100 % emission free machinery by 2025. *Miljøpakken* has also started using emission free machinery.
-
-To make all construction sites city-wide emission free by 2030, national authorities need to provide a framework to enable the private construction actors to make this shift swiftly. Local authorities must be allowed to demand emission-free construction sites.  |
+| To make all construction sites city-wide emission free by 2030, national authorities need to provide a framework to enable the private construction actors to make this shift swiftly. Local authorities must be allowed to demand emission-free construction sites.  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   |  Removed/substituted energy, volume, or fuel type | Increase in electricity use: 77 GWh
 Decrease in diesel use: 217 GWh
@@ -2450,10 +2449,10 @@ Climate Neutrality Action Plan
 | --- | --- | --- |
 |  Action outline | Action name | Limit climate footprint of buildings and constructions in zoning plans  |
 |   |  Action type | Governance intervention
-Physical/spatial intervention  |
+| Physical/spatial intervention  |
 |   |  Action description | Set a limit for climate footprint of new buildings and constructions in zoning plans by active use of climate budgets for expected lifespan compared to reference buildings and constructions.  |
 |  Reference to impact pathway | Field of action | Built environment
-Complementary actions under “waste and circular economy”  |
+| Complementary actions under “waste and circular economy”  |
 |   |  Systemic lever | Governance and policy  |
 |   |  Outcome (according to module B-1.1) | Limit climate footprint for expected lifespan in land-use planning  |
 |  Implementation | Responsible bodies/person for implementation | Trondheim Municipality  |
@@ -2494,7 +2493,7 @@ Initiated or joined new collaborations and further developed existing ones.  |
 |   |  Action scale & addressed entities | City-wide  |
 |   |  Involved stakeholders | Trondheim Municipality / Trondheim Renholdsverk (waste management) / recycling/reuse operator and organisations / Inhabitants  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | This action is a melting pot of piloting ideas and finding new markets for reuse of household waste - often in cooperation with private recycling/reuse operators and organisations to increase the sale of reusable household waste.
-End date 2030  |
+| End date 2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   |  Removed/substituted energy, volume, or fuel type | N/A  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | N/A  |
@@ -2524,7 +2523,7 @@ Develop, evaluate, learn and upscale new ideas.  |
 |   |  Action scale & addressed entities | Households in Trondheim  |
 |   |  Involved stakeholders | Trondheim Municipality / Trondheim Renholdsverk (waste management) / inhabitants  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Implement at-home collection of food waste, textiles, glass, and metal. This includes to project and rebuild buried waste solutions for at-home sorting and collection of food waste, glass and metals, and to develop new solutions for collecting textiles in 2025. The collection system in Midtbyen will also be upgraded.
-End date 2030  |
+| End date 2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   |  Removed/substituted energy, volume, or fuel type | N/A  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | N/A  |
@@ -2579,7 +2578,7 @@ Please note: These are a few examples of the actions that are and will be develo
 | --- | --- | --- |
 |  Action outline | Action name | Pilot on local recycling station  |
 |   |  Action type | Physical/spatial intervention
-Social intervention  |
+| Social intervention  |
 |   |  Action description | A pilot for a local recycling station will be established. The goal of this project is to reduce local waste, but the station should also offer a social aspect; as a meeting place, a space for local initiatives (repair-events, clothes exchange events etc.). The local recycling station will also have a reuse section, where residents can get free things other residents don't need anymore.  |
 TRONDHEIM MUNICIPALITY
 Climate Neutrality
@@ -2904,7 +2903,7 @@ Action Plan
 6
 
 |   | Outcome
-(according to module B-1.1) | Democracy and participation / Finance and funding  |
+| (according to module B-1.1) | Democracy and participation / Finance and funding  |
 | --- | --- | --- |
 |   |   |  Agriculture: Increasing self-sufficiency in both the municipality and the region through sustainable food production.
 
@@ -3055,20 +3054,20 @@ Action Plan
 |  Table B-3.1: Overview of indicators  |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |  Outcomes/ impacts addressed
-List early changes/ late outcomes and impacts to be evaluated by indicator | Action/ project
-List action/ pilot project if applicable | Indicator ID
-Indicate unique identifier | Indicator name | Target values
-List one value per indicator  |   |   |
+| List early changes/ late outcomes and impacts to be evaluated by indicator | Action/ project |
+| List action/ pilot project if applicable | Indicator ID |
+| Indicate unique identifier | Indicator name | Target values |
+| List one value per indicator  |   |   |
 |   |   |   |   | 2025 | 2027 | 2030  |
 |  Cross-sectoral indicators (CS)  |   |   |   |   |   |   |
 |  All outcomes that directly affect scope 1 GHG emissions. | Many - see indicator metadata. | CS1 | GHG emission inventory for Norwegian municipalities | 40 % GHG emission cuts since 2009 | 50 % GHG emission cuts since 2009 | 80 % GHG emission cuts since 2009
-See also table A-2.3  |
+| See also table A-2.3  |
 |  Increased nature and climate awareness, engagement and activity among citizens and business and research actors. | Trondheim Green Life | CS2 | Climate engagement | 80 % | 80 % | 80 %  |
 |  Indicators on energy systems (E)  |   |   |   |   |   |   |
 |  Smarter use of energy avoids a rise in peak demand of power through the day and year. | Engage civil society to scale up local renewable energy production, energy efficiency and consumer flexibility | E1 | Peak power electricity and district heating demand, controlled for outdoor temperature | 600 MW_el
-MW_DH | 600 MW_el
-MW_DH | 600 MW_el
-MW_DH  |
+| MW_DH | 600 MW_el |
+| MW_DH | 600 MW_el |
+| MW_DH  |
 |  Urban development at various scales aim to implement energy solutions that save energy and strengthen the energy system. | Energy analysis | E2 | No. of local energy analyses developed, in relation to area zoning plans | 5 | 25 | 50  |
 |  Investment decision on CCS at the waste incinerator | E2.2: CCS from waste incineration | E3 | Investment decision CCS | Preliminary | Final | ...  |
 |  Plans on how to phase out fossil fuel at small and medium sized industry facilities.
@@ -3091,8 +3090,8 @@ Action Plan
 |  Increased amount of children walk or bike or use public transport to school.* |  |  |  |  |  |   |
 |  Good progress reducing car traffic 20 % by 2030.* | (Miljøpakken) | MT2 | Car traffic reduction | 5 % | 10% | 20%  |
 |  Zero-emission city buses are getting implemented for 2029.*
-Emission free ferries are on track for 2029. | (Miljøpakken)
-S2.2 / 2.3 / 3.1: Emission free public ferries and speed ferries. | MT3 | Emission free public transport on sea and at land | Speed ferries, some city-buses | Investment decisions all buses and ferries | Buses and ferries implemented  |
+| Emission free ferries are on track for 2029. | (Miljøpakken) |
+| S2.2 / 2.3 / 3.1: Emission free public ferries and speed ferries. | MT3 | Emission free public transport on sea and at land | Speed ferries, some city-buses | Investment decisions all buses and ferries | Buses and ferries implemented  |
 |  Practically all vehicles are emission free. | T2.3 / 2.4: Zero emission vans (procurement and infrastructure)
 T3.1: Zero emission zone for passenger cars. | MT4 | Emission free vehicles | Cars: 45 %
 Vans: 30 %
@@ -3107,11 +3106,11 @@ Action Plan
 |   | T3.2 / 3.3 / 3.4: Zero emission zone for vans, heavy vehicles and buses. |  |  |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |  Restrictive policies on fossil fuel vehicles.
-We are allowed and ready to implement zero mission zones. | T3.1: Zero emission zone for passenger cars.
-T3.2 / 3.3 / 3.4: Zero emission zone for vans, heavy vehicles and buses. | MT5 | Zero emission zone | Local authority to implement | Announced for 2030 | Implemented  |
+| We are allowed and ready to implement zero mission zones. | T3.1: Zero emission zone for passenger cars. |
+| T3.2 / 3.3 / 3.4: Zero emission zone for vans, heavy vehicles and buses. | MT5 | Zero emission zone | Local authority to implement | Announced for 2030 | Implemented  |
 |  **Indicators on built environment**  |   |   |   |   |   |   |
 |  See CS1 - GHG emission inventory for Norwegian municipalities.
-See also “energy systems” and “waste and the circular economy”  |   |   |   |   |   |   |
+| See also “energy systems” and “waste and the circular economy”  |   |   |   |   |   |   |
 |  **Indicators on waste and circular economy (CE)**  |   |   |   |   |   |   |
 |  Increased collection of food waste, plastic packaging, glass and metals. | New or improved systems for waste sorting and material recovery | CE1 | Amount of sorted plastic packaging by source |  | 50 % in 2028 | 60 %  |
 |  Increased collection of food waste, plastic packaging, glass and metals. | New or improved systems for waste sorting and material recovery | CE2 | Amount of sorted food waste by source | 55 % |  | 60 %  |
@@ -3249,7 +3248,7 @@ Upgrades in the electricity grid.  |
 |  If yes, which co-benefit does it measure? | Lower energy costs if we share and utilise surplus energy, and increase local production.  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 |  If yes, which action and impact pathway is it relevant for? | - Governance and policy
-Learning and capabilities  |
+| Learning and capabilities  |
 |  Is the indicator captured by the existing CDP/ SCIS/ CoM platforms? | No  |
 |  Data requirements |   |
 |  Expected data source | Data from the municipal processing of private land use plans  |
@@ -3278,7 +3277,7 @@ Action Plan
 |  If yes, which co-benefit does it measure? | N/A  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 |  If yes, which action and impact pathway is it relevant for? | Energy systems:
-E2.2: CCS from waste incineration  |
+| E2.2: CCS from waste incineration  |
 |  Is the indicator captured by the existing CDP/ SCIS/ CoM platforms? | CDP 9.3  |
 |  Data requirements |   |
 |  Expected data source | Collaboration between the district heating company and the municipality  |
@@ -3301,7 +3300,7 @@ E2.2: CCS from waste incineration  |
 |  If yes, which co-benefit does it measure? | N/A  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 |  If yes, which action and impact pathway is it relevant for? | Energy systems:
-I2.1: Phase out fossil fuel from Rockwool facility  |
+| I2.1: Phase out fossil fuel from Rockwool facility  |
 |  Is the indicator captured by the existing CDP/ SCIS/ CoM platforms? | No  |
 |  Data requirements |   |
 |  Expected data source | The Rockwool facility in Trondheim  |
@@ -3330,7 +3329,7 @@ Action Plan
 |  If yes, which co-benefit does it measure? | N/A  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 |  If yes, which action and impact pathway is it relevant for? | Energy systems:
-Upgrades hydropower plants  |
+| Upgrades hydropower plants  |
 |  Is the indicator captured by the existing CDP/ SCIS/ CoM platforms? | No  |
 |  Data requirements |   |
 |  Expected data source | Statkraft  |
@@ -3353,7 +3352,7 @@ Upgrades hydropower plants  |
 |  If yes, which co-benefit does it measure? | N/A  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 |  If yes, which action and impact pathway is it relevant for? | Energy systems:
-Upgrades in the electricity grid  |
+| Upgrades in the electricity grid  |
 |  Is the indicator captured by the existing CDP/ SCIS/ CoM platforms? | No  |
 |  Data requirements |   |
 |  Expected data source | Statnett and Tensio  |
@@ -3508,16 +3507,16 @@ T3.2 / 3.3 / 3.4: Zero emission zone for vans, heavy vehicles and buses.  |
 |  Indicator Unit | Ton or percentage  |
 |  Definition | Amount collected and percentage of total amount  |
 |  Calculation | Weight of collected plastic packaging.
-Weight of collected plastic packaging/total amount of waste collected.  |
+| Weight of collected plastic packaging/total amount of waste collected.  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (reduction in GHG emissions?) | No  |
 |  If yes, which emission source sectors does it measure? | -  |
 |  Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes  |
 |  If yes, which co-benefit does it measure? | Less residual waste.
-Increased circularity/resource efficiency.  |
+| Increased circularity/resource efficiency.  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 |  If yes, which action and impact pathway is it relevant for? | Waste and circular economy:
-New or improved systems for waste sorting and material recovery  |
+| New or improved systems for waste sorting and material recovery  |
 |  Is the indicator captured by the existing CDP/ SCIS/ CoM platforms? | No  |
 |  Data requirements |   |
 |  Expected data source | Data on collected household waste  |
@@ -3533,23 +3532,23 @@ Action Plan
 |  References |   |
 |  Deliverables describing the indicator | -  |
 |  Other indicator systems using this indicator | The Norwegian fulfilment of EU regulations.
-KOSTRA/SSB: amount of food collected  |
+| KOSTRA/SSB: amount of food collected  |
 |  B-3.2-CE2: Indicator Metadata  |   |
 | --- | --- |
 |  Indicator Name | Amount of sorted food waste by source  |
 |  Indicator Unit | Ton or percentage  |
 |  Definition | Amount collected and percentage of total amount  |
 |  Calculation | Weight of collected food waste.
-Weight of collected food waste/total amount of waste collected.  |
+| Weight of collected food waste/total amount of waste collected.  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (reduction in GHG emissions?) | No  |
 |  If yes, which emission source sectors does it measure? | -  |
 |  Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes  |
 |  If yes, which co-benefit does it measure? | Less residual waste.
-Increased circularity/resource efficiency via production of biogas and biofertilizer from the food waste.  |
+| Increased circularity/resource efficiency via production of biogas and biofertilizer from the food waste.  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 |  If yes, which action and impact pathway is it relevant for? | Waste and circular economy:
-New or improved systems for waste sorting and material recovery  |
+| New or improved systems for waste sorting and material recovery  |
 |  Is the indicator captured by the existing CDP/ SCIS/ CoM platforms? | No  |
 |  Data requirements |   |
 |  Expected data source | Data on collected household waste  |
@@ -3559,14 +3558,14 @@ New or improved systems for waste sorting and material recovery  |
 |  References |   |
 |  Deliverables describing the indicator | -  |
 |  Other indicator systems using this indicator | The Norwegian fulfilment of EU regulations.
-KOSTRA/SSB: amount of food collected  |
+| KOSTRA/SSB: amount of food collected  |
 |  B-3.2-CE3: Indicator Metadata  |   |
 | --- | --- |
 |  Indicator Name | Amount of sorted glass and metal packaging by source  |
 |  Indicator Unit | Ton og percentage  |
 |  Definition | Increased collection of glass and metal packaging from household waste  |
 |  Calculation | Collected volume (tons) of glass and metal packaging from household waste.
-Collected volume (tons) of glass and metal packaging from household waste/ Total volume (tons) of household waste  |
+| Collected volume (tons) of glass and metal packaging from household waste/ Total volume (tons) of household waste  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (reduction in GHG emissions?) | No  |
 |  If yes, which emission source sectors does it measure? | -  |
@@ -3581,7 +3580,7 @@ Action Plan
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 | --- | --- |
 |  If yes, which action and impact pathway is it relevant for? | Waste and circular economy:
-New or improved systems for waste sorting and material recovery  |
+| New or improved systems for waste sorting and material recovery  |
 |  Is the indicator captured by the existing CDP/ SCIS/ CoM platforms? | No  |
 |  Data requirements |   |
 |  Expected data source | Data on collected household waste  |
@@ -3591,7 +3590,7 @@ New or improved systems for waste sorting and material recovery  |
 |  References |   |
 |  Deliverables describing the indicator | -  |
 |  Other indicator systems using this indicator | The Norwegian fulfilment of EU regulations.
-KOSTRA/SSB: amount of food collected  |
+| KOSTRA/SSB: amount of food collected  |
 |  B-3.2-CE4: Indicator Metadata  |   |
 | --- | --- |
 |  Indicator Name | Amount of collected household waste  |
@@ -3603,7 +3602,7 @@ KOSTRA/SSB: amount of food collected  |
 |  If yes, which emission source sectors does it measure? | N/A  |
 |  Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes  |
 |  If yes, which co-benefit does it measure? | Reduced consumption
-Less waste  |
+| Less waste  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 |  If yes, which action and impact pathway is it relevant for? | Waste and circular economy
 Citizen-directed activities for reduced consumption and increased reuse, repair and sharing.
@@ -3617,14 +3616,14 @@ Increased reuse of household waste  |
 |  References |   |
 |  Deliverables describing the indicator | -  |
 |  Other indicator systems using this indicator | The Norwegian fulfilment of EU regulations.
-KOSTRA/SSB: amount of food collected  |
+| KOSTRA/SSB: amount of food collected  |
 |  B-3.2-CE5: Indicator Metadata  |   |
 | --- | --- |
 |  Indicator Name | Amount of household waste for reuse  |
 |  Indicator Unit | Ton og percentage  |
 |  Definition | Amount of reused household waste  |
 |  Calculation | Total amount of reused household waste
-Total amount of reused household waste / Total amount of household waste collected  |
+| Total amount of reused household waste / Total amount of household waste collected  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (reduction in GHG emissions?) | No  |
 TRONDHEIM MUNICIPALITY
@@ -3650,7 +3649,7 @@ Increased circularity.  |
 |  References |   |
 |  Deliverables describing the indicator | -  |
 |  Other indicator systems using this indicator | The Norwegian fulfilment of EU regulations.
-KOSTRA/SSB: amount of food collected  |
+| KOSTRA/SSB: amount of food collected  |
 |  B-3.2-CE6: Indicator Metadata  |   |
 | --- | --- |
 |  Indicator Name | Reuse at reuse centre  |
@@ -3662,10 +3661,10 @@ KOSTRA/SSB: amount of food collected  |
 |  If yes, which emission source sectors does it measure? | NA  |
 |  Does the indicator measure indirect impacts (i.e., co- benefits)? | Yes  |
 |  If yes, which co-benefit does it measure? | Waste reduction
-Reuse of materials  |
+| Reuse of materials  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 |  If yes, which action and impact pathway is it relevant for? | Waste and circular economy:
-Reuse centre (portfolio 3)  |
+| Reuse centre (portfolio 3)  |
 |  Is the indicator captured by the existing CDP/ SCIS/ CoM platforms? | No  |
 |  Data requirements |   |
 |  Expected data source | Loopfront database.  |
@@ -3701,7 +3700,7 @@ Action Plan
 |  If yes, which co-benefit does it measure? | Reduced consumption and food waste.  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 |  If yes, which action and impact pathway is it relevant for? | Waste and circular economy
-Citizen-directed activities for reduced consumption and increased reuse, repair and sharing.  |
+| Citizen-directed activities for reduced consumption and increased reuse, repair and sharing.  |
 |  Is the indicator captured by the existing CDP/ SCIS/ CoM platforms? | CDP 4.7 relevant  |
 |  Data requirements |   |
 |  Expected data source | Data from waste analyses of a limited amount of waste from different parts of the city  |
@@ -3731,7 +3730,7 @@ Action Plan
 |  If yes, which co-benefit does it measure? | No  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 |  If yes, which action and impact pathway is it relevant for? | Waste and circular economy:
-E2.1: SESAM plant...  |
+| E2.1: SESAM plant...  |
 |  Is the indicator captured by the existing CDP/ SCIS/ CoM platforms? | No  |
 |  Data requirements |   |
 |  Expected data source | Life cycle analysis of SESAM sorting facility and its output, compared with incineration of waste.  |
@@ -3757,7 +3756,7 @@ Reduced usage of virgin, fossil plastics.
 Less plastic lowers the fossil share of CO2-emissions from incineration of waste.  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 |  If yes, which action and impact pathway is it relevant for? | Waste and circular economy:
-E2.1: SESAM plant...  |
+| E2.1: SESAM plant...  |
 |  Is the indicator captured by the existing CDP/ SCIS/ CoM platforms? | No  |
 |  Data requirements |   |
 |  Expected data source | The SESAM post-sorting waste facility  |
@@ -3788,7 +3787,7 @@ Increased amount of metals recovered.
 Reduced extraction of virgin metals.  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 |  If yes, which action and impact pathway is it relevant for? | Waste and circular economy:
-E2.1: SESAM plant...  |
+| E2.1: SESAM plant...  |
 |  Is the indicator captured by the existing CDP/ SCIS/ CoM platforms? | No  |
 |  Data requirements |   |
 |  Expected data source | The SESAM post-sorting waste facility  |
@@ -4401,44 +4400,44 @@ The table below enlists the signatories who signed a statement of support and ar
 |  Name of the signatory (organisation) | Level / Sector / Focus area | Name and position of the person who signed  |
 | --- | --- | --- |
 |  Ministry of Local Government and Regional Development | national / government / all | Erling Sande
-The Minister  |
+| The Minister  |
 |  Trøndelag County Authority | regional / government / all | Tomas Iver Hallem
-County Mayor  |
+| County Mayor  |
 |  Signatories in Trondheim  |   |   |
 |  Aneo | national / business / energy | Gunnar Hovland
-CEO  |
+| CEO  |
 |  AtB | regional / public / transport | Grete Fuglem Tennås
-Managing director  |
+| Managing director  |
 |  Besteforeldrenes klimaaksjon, Trondheim og omegn | local / NGO / all | Hans Kristian Solbu
-Leader  |
+| Leader  |
 |  EBA Trøndelag | regional / business / buildings | Audun Otterstad
-Regional director  |
+| Regional director  |
 |  Framtiden i våre hender | regional / NGO / circular | Marte Fordal Meland
-Regional leader  |
+| Regional leader  |
 |  Grønt kompetansesenter Møre-Skjetlein | regional / public / nature | Tove Irene Hatling Jystad
-Dept. leader  |
+| Dept. leader  |
 |  Naturvernforbundet i Trondheim | local / NGO / nature | Gaute Rolf Dahl
-Board leader  |
+| Board leader  |
 |  Næringsforeningen i Trondheimsregionen | regional / business / all | Berit Rian
-Managing director  |
+| Managing director  |
 |  NTNU (Norwegian University for Science and Technology) | national / R&I / all | Toril Hernes
-Pro-rector for innovation  |
+| Pro-rector for innovation  |
 |  NTNU Vitenskapsmuseet | national / R&I / all | Hans K. Stenøien
-Museum director  |
+| Museum director  |
 |  Renergy Cluster | national / business / energy | Ingrid Skjøtskift
-Communication director  |
+| Communication director  |
 |  SINTEF | national / R&I / all | Alexandra Bech Gjørv
-CEO  |
+| CEO  |
 |  Statens vegvesen | national / public / transport | Kjetil Strand
-Dept. director  |
+| Dept. director  |
 |  Statkraft varme | national / business / energy | Ove Berggård
-Managing director  |
+| Managing director  |
 |  Tensio | regional / business / energy | Audhild Kvam
-CEO  |
+| CEO  |
 |  Trondheim Havn IKS | local / public / transport | Knut Thomas Kusslid
-Harbour director  |
+| Harbour director  |
 |  Trondheim Tech Port | local / R&I / all | May Britt Hansen
-Managing director  |
+| Managing director  |
 |  Trondheim Renholdsverk | regional / public / circular | Henning N. Martinsen
 Managing director  |
 TRONDHEIM MUNICIPALITY

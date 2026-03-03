@@ -1572,7 +1572,7 @@ Climate Neutrality Action Plan
 C
 
 |  Private Sector
-Fuel of Citizens Vehicles | 410.218,364 | - | - | 410.218,364  |
+| Fuel of Citizens Vehicles | 410.218,364 | - | - | 410.218,364  |
 | --- | --- | --- | --- | --- |
 |  Private Sector Diesel (Intercity Bus) | 23,1 | - | - | 23,1  |
 |  Private Sector Diesel (City Bus) | 7,96 | - | - | 7,96  |
@@ -3124,7 +3124,7 @@ Public-private partnership for the upgrade of energy efficiency of road and urba
 This ongoing action, funded by the European Local Energy Assistance with 20.000.000 €, aims to reduce GHG emissions from buildings on the public sector, targeting a 65% reduction in electricity usage.
 The energy saved from this action is estimated at 3.715,25 MWh/year for electricity usage. The estimated GHG emissions reduction for electricity usage is 3.279,09 tn of CO2e/year.  |
 |   |  Action ES_10:
-Transition Team Support – Action/Investment Plan Monitoring | This action included the financing of the Transition team in order to keep monitoring and continue supporting the Ioannina city for new actions / investment plans  |
+| Transition Team Support – Action/Investment Plan Monitoring | This action included the financing of the Transition team in order to keep monitoring and continue supporting the Ioannina city for new actions / investment plans  |
 |  Mobility & transport | Action MT_1:
 Walking and cycling: a push towards a real sustainable modal shift | The action aims to increase active mobility infrastructure and boost walking and cycling as commuting modes. Increase of pedestrian streets in the CC and the neighborhoods, increase of the city's sidewalks in major roads, cycle lanes and traffic calmed streets shall be at the core of the city's new image. Reducing car travel by 20% will be achieved through investing in new active mobility infrastructure and policies, tightening car policies and freedoms etc.
 
@@ -3265,9 +3265,9 @@ Intelligent Garbage Truck Monitoring System
 Optimization of transport routes to reduce journeys and improve the waste collection service.
 This action is seeking funding for 2.610.820 €. The action aims to reduce GHG emissions from the Municipal Waste of the public sector, targeting a 11% reduction in waste disposal, emissions from transporting of municipal waste within the city's boundaries, aiming a 15% reduction in diesel usage and emissions from transporting municipal waste outside city's boundaries, targeting a 10% reduction in diesel usage. The estimated GHG emissions reduction is 496,31 tn CO2e.  |
 |   |  Action WCE_11 : Information and awareness programs for citizens and visitors (Prevention, reuse, repair, proper recycling) | Awareness campaigns on waste prevention, reuse, repair and proper recycling, information on recycling points and other informative campaigns.
-This action is seeking funding for 368.280 €. The action aims to reduce GHG emissions from the Municipal Waste of the public sector, targeting a 5,5% reduction in waste disposal. The estimated GHG emissions reduction is 496,31 tn CO2e.  |
+| This action is seeking funding for 368.280 €. The action aims to reduce GHG emissions from the Municipal Waste of the public sector, targeting a 5,5% reduction in waste disposal. The estimated GHG emissions reduction is 496,31 tn CO2e.  |
 |   |  Action WCE_12 : Green Public Procurement | Procurement of goods, services and projects with lower environmental impact throughout their life cycle in line with EU Policies & Legislation and the National, Action Plan on Green Public Procurement, training of the employees of the Municipality on the integration of environmental criteria in procurements.
-This action is seeking funding for 10.000 €. The action aims to reduce GHG emissions from the Municipal Waste of the public sector, targeting a 1,5% reduction in waste disposal. The estimated GHG emissions reduction is 135,36 tn CO2e.  |
+| This action is seeking funding for 10.000 €. The action aims to reduce GHG emissions from the Municipal Waste of the public sector, targeting a 1,5% reduction in waste disposal. The estimated GHG emissions reduction is 135,36 tn CO2e.  |
 |   | Action WCE_13 : Adoption of the circular economy in the sector of silver jewellery designers and makers | Training of the Silversmiths on adopting circular economy in their sector.
 This action is seeking funding for 50.000 €. The action aims to reduce GHG emissions from the Municipal Waste of the public sector, targeting a 0,05% reduction in waste disposal. The estimated GHG emissions reduction is 4,51 tn CO2e.  |
 
@@ -3284,14 +3284,14 @@ Incentives for inhabitants, visitors and businesses to reduce waste and to sort 
 This action is seeking funding for 400.000 €. The action aims to reduce GHG emissions from the Municipal Waste of the public sector, targeting a 0,3% reduction in waste disposal. The estimated GHG emissions reduction is 27,07 tn CO2e.  |
 | --- | --- | --- |
 |   |  Action WCE_15 :
-Utilisation and distribution of surplus food from supermarkets, cafes, restaurants | The actions refers to implementing a local food waste reduction program and/or creating an organisation of food distribution and leftover food notification sytem.
-This action is seeking funding for 100.000 €. The action aims to reduce GHG emissions from the Municipal Waste of the public sector, targeting a 0,15% reduction in waste disposal. The estimated GHG emissions reduction is 13,54 tn CO2e.  |
+| Utilisation and distribution of surplus food from supermarkets, cafes, restaurants | The actions refers to implementing a local food waste reduction program and/or creating an organisation of food distribution and leftover food notification sytem. |
+| This action is seeking funding for 100.000 €. The action aims to reduce GHG emissions from the Municipal Waste of the public sector, targeting a 0,15% reduction in waste disposal. The estimated GHG emissions reduction is 13,54 tn CO2e.  |
 |   |  Action WCE_16 :
-Support (inform, empower) private sector businesses to adopt circular production models | The actions involve supporting private entrepreneurship in adopting circular design, refurbishment, and remanufacturing practices.
-This action is seeking funding for 150.000 €. The action aims to reduce GHG emissions from the Municipal Waste of the public sector, targeting a 0,1% reduction in waste disposal. The estimated GHG emissions reduction is 9,02 tn CO2e.  |
+| Support (inform, empower) private sector businesses to adopt circular production models | The actions involve supporting private entrepreneurship in adopting circular design, refurbishment, and remanufacturing practices. |
+| This action is seeking funding for 150.000 €. The action aims to reduce GHG emissions from the Municipal Waste of the public sector, targeting a 0,1% reduction in waste disposal. The estimated GHG emissions reduction is 9,02 tn CO2e.  |
 |   |  Action WCE_17 :
-Industrial symbiosis | Development of a electronic platform in order to strengthen the utilisation of residues and by-products from industries and the agricultural, livestock and fishing sector in the wider area (e.g. cheese factories, poultry farms, olive mills, food industries) for animal feed, energy production, compost, raw materials and others.
-This action is seeking funding for 300.000 €. The action aims to reduce GHG emissions from the Municipal Waste of the public sector, targeting a 4,5% reduction in waste disposal. The estimated GHG emissions reduction is 406,07 tn CO2e.  |
+| Industrial symbiosis | Development of a electronic platform in order to strengthen the utilisation of residues and by-products from industries and the agricultural, livestock and fishing sector in the wider area (e.g. cheese factories, poultry farms, olive mills, food industries) for animal feed, energy production, compost, raw materials and others. |
+| This action is seeking funding for 300.000 €. The action aims to reduce GHG emissions from the Municipal Waste of the public sector, targeting a 4,5% reduction in waste disposal. The estimated GHG emissions reduction is 406,07 tn CO2e.  |
 |  |   |   |
 |  Green infrastructure & nature based solutions | Action GI_A_1 :
 Alternative use of forest areas as recreational areas | The action involves designating specific areas within the forest for recreational purposes, while adhering to the protection guidelines of each respective area.
@@ -3340,16 +3340,16 @@ C
 |   |  | both the private and public sectors within and outside city's boundaries. The estimated GHG emissions reduction is 3.059,64 tn CO2e.  |
 | --- | --- | --- |
 |   |  Action GI_B_4 : Ensuring Shared and Community spaces through programs and funding. | Strategic action plan for securing public and common spaces such (ESEKK).
-This ongoing project, aims to reduce GHG emissions by targeting a 2% reduction in fuel usage for private sector transport by citizens, a 2% reduction in diesel usage for the private sector's transportation by City bus, and a 2% reduction in fuel usage for general transport in both the private and public sectors within and outside city's boundaries. The generated renewable energy remains to be studied, while the estimated GHG emissions reduction is 3.059,64 tn CO2e.  |
+| This ongoing project, aims to reduce GHG emissions by targeting a 2% reduction in fuel usage for private sector transport by citizens, a 2% reduction in diesel usage for the private sector's transportation by City bus, and a 2% reduction in fuel usage for general transport in both the private and public sectors within and outside city's boundaries. The generated renewable energy remains to be studied, while the estimated GHG emissions reduction is 3.059,64 tn CO2e.  |
 |   |  Action GI_B_5 : Renovation-redesign and enhancement of specific mid-sized green areas | Renovation-redesign and enhancement of specific green areas of local importance in urban areas such as Kardamitsi, Bizani, Ioannina, Anatoli - Maglaraika area, K. Perivleptou, Pyrrou square)  |
 |   |  Action GI_B_6 : Reuse of small public spaces and upgrade them into pocket parks | Upgrading of small unused or misused public spaces into pocket parks.  |
 |   |  Action GI_B_7: Enhancement and upgrading of Schoolyards | Aesthetic interventions in schoolyards using bioclimatic materials, reinforcement of plantings, etc.
-The programme is seeking funding for 3.000.000 €.  |
+| The programme is seeking funding for 3.000.000 €.  |
 |  Green infrastructure & nature based solutions
-Theme C – Areas of Special Interest | Action GI_C_1 : Bioclimatic design and enhancement of the surrounding area | Study and implementation of the bioclimatic design and enhancement of the surrounding area of the University of Ioannina and University General Hospital of Ioannina
-The programme is seeking funding for 10.000.000 €.  |
+| Theme C – Areas of Special Interest | Action GI_C_1 : Bioclimatic design and enhancement of the surrounding area | Study and implementation of the bioclimatic design and enhancement of the surrounding area of the University of Ioannina and University General Hospital of Ioannina |
+| The programme is seeking funding for 10.000.000 €.  |
 |   |  Action GI_C_2 : Re-demarcation of Pamvotida lake | Re-demarcation of Lake Pamvotida including its periodically flooded areas based on orthophoto maps of the 1960s in the ongoing Special Environmental Study of the Lake.
-The programme is seeking funding for 2.500.000 €.  |
+| The programme is seeking funding for 2.500.000 €.  |
 |   |  Action GI_C_3 : Pamvotida lake restoration | Study and implementation that includes permanent biomonitoring of the population situation and their protection, bottom cleaning, etc.).  |
 |   |  Action GI_C_4 : | Creation of a database, monitoring with telescopic means using orthophoto maps or using a drone on a monthly basis  |
 
@@ -3399,8 +3399,8 @@ C
 |   |  | The program is seeking funding for 12.477.000 € and aims to reduce GHG emissions from the public building sector, targeting a 17% reduction in electricity usage and a 20% reduction in diesel usage. It also aims on reducing emissions from public school buildings by 20% in diesel usage. The saved energy from this action is estimated at 1.000 MWh/year, while the estimated GHG emissions reduction from electricity usage is 1.000 tn CO2e/year.  |
 | --- | --- | --- |
 |   |  **Action BE_5** :
-Installation of RES in existing municipal infrastructure | The introduction of a large number of PV systems and thermal solar systems to existing buildings will lead to reduced emissions.
-The program is seeking funding for 3.538.000 € and aims to reduce GHG emissions from the public building sector, targeting a 27% reduction in electricity usage and a 35% reduction in municipal lighting usage. It also aims on reducing emissions from private buildings by 2% in electricity usage. The generated renewable energy from this action is estimated at 6.920,4 MWh/year, while the estimated GHG emissions reduction is 5.128 tn CO2e/year.  |
+| Installation of RES in existing municipal infrastructure | The introduction of a large number of PV systems and thermal solar systems to existing buildings will lead to reduced emissions. |
+| The program is seeking funding for 3.538.000 € and aims to reduce GHG emissions from the public building sector, targeting a 27% reduction in electricity usage and a 35% reduction in municipal lighting usage. It also aims on reducing emissions from private buildings by 2% in electricity usage. The generated renewable energy from this action is estimated at 6.920,4 MWh/year, while the estimated GHG emissions reduction is 5.128 tn CO2e/year.  |
 |   |  **Action BE_6** :
 Organizing events and issuing guides, brochures and other forms in order to inform the citizens and visitors of the Municipality about the benefits and advantages of RES | The awareness of citizens for RES will help them to learn about actions for CO2 emissions mitigation.
 The program is seeking €30,000 in funding to support its mission of reducing GHG emissions. It aims to achieve this through various initiatives, including a 5% reduction in electricity, diesel, LPG, natural gas, and firewood/pellet usage in private sector buildings, a 2% reduction in diesel and gasoline usage in public sector transportation, a 2% reduction in fuel usage for citizens' vehicles in the private sector, a 2% reduction in diesel usage for city buses in the private sector, a 2% reduction in emissions from general transportation within and outside boundaries, a 1% reduction in municipal waste disposal, and a 5% reduction in diesel, LPG, CNG, and animal husbandry emissions within the agriculture and industry sectors.
@@ -3417,11 +3417,11 @@ C
 |   |  | public school buildings by 25% in diesel usage. The saved energy from this action is estimated at 1.250 MWh/year, while the estimated GHG emissions reduction is 752 tn CO2e/year.  |
 | --- | --- | --- |
 |   |  Action BE_8 :
-Home Energy Saving Program | Energy upgrade of residences will reduce energy demand, CO2 emissions and effectively reduce energy costs for the citizens.
-The program, funded with 30.000.000 € from the Recovery and Resilience Fund, aims to reduce GHG emissions in the private sector by targeting a 10% reduction in electricity usage, a 15% reduction in diesel usage, a 10% reduction in LPG usage, a 10% reduction in natural gas usage, and a 25% reduction in firewood/pellet usage in buildings. The saved energy from this action is estimated at 6.652,36 MWh/year. The estimated total GHG emissions reduction is 778,48 tn of CO2e/year for diesel, 28,45 tn of CO2e/year for LPG, 72,27 tn of CO2e/year for natural gas, and 1.076,08 tn of CO2e/year for electricity.  |
+| Home Energy Saving Program | Energy upgrade of residences will reduce energy demand, CO2 emissions and effectively reduce energy costs for the citizens. |
+| The program, funded with 30.000.000 € from the Recovery and Resilience Fund, aims to reduce GHG emissions in the private sector by targeting a 10% reduction in electricity usage, a 15% reduction in diesel usage, a 10% reduction in LPG usage, a 10% reduction in natural gas usage, and a 25% reduction in firewood/pellet usage in buildings. The saved energy from this action is estimated at 6.652,36 MWh/year. The estimated total GHG emissions reduction is 778,48 tn of CO2e/year for diesel, 28,45 tn of CO2e/year for LPG, 72,27 tn of CO2e/year for natural gas, and 1.076,08 tn of CO2e/year for electricity.  |
 |   |  Action BE_9 :
-Recycle-Change Water Heater | The change of water heater will also contribute to energy upgrade of residences and it is also expected to reduce energy demand, CO2 emissions and effectively reduce energy costs for the citizens.
-The program, funded with 1.000.000 € from the Recovery and Resilience Fund, aims to reduce GHG emissions in the private sector by targeting a 5% reduction in electricity usage, a 10% reduction in diesel usage, a 5% reduction in LPG usage, a 5% reduction in natural gas usage and a 25% reduction in firewood/pellet usage in buildings. The estimated substituted energy is 3.763,5 MWh/year, while the estimated GHG emissions reduction in electricity usage is 2.271,58 tn CO2e/year.  |
+| Recycle-Change Water Heater | The change of water heater will also contribute to energy upgrade of residences and it is also expected to reduce energy demand, CO2 emissions and effectively reduce energy costs for the citizens. |
+| The program, funded with 1.000.000 € from the Recovery and Resilience Fund, aims to reduce GHG emissions in the private sector by targeting a 5% reduction in electricity usage, a 10% reduction in diesel usage, a 5% reduction in LPG usage, a 5% reduction in natural gas usage and a 25% reduction in firewood/pellet usage in buildings. The estimated substituted energy is 3.763,5 MWh/year, while the estimated GHG emissions reduction in electricity usage is 2.271,58 tn CO2e/year.  |
 |   |  Action BE_10 :
 Energy Upgrade of the Municipality's Building Stock through ESCOs | The integration of energy-efficient upgrades and renewable energy sources in the Municipality's building stock serves as a systemic lever. By prioritizing energy efficiency and sustainability, this action not only directly reduces energy consumption and emissions but also sets a precedent for sustainable urban development.
 The program, seeking 100.000.000 € in funding, is dedicated to reducing GHG emissions. It targets a 15% reduction in electricity, diesel, LPG, and firewood/pellet usage in private sector buildings, a 10% reduction in natural gas usage in private sector  |
@@ -3696,10 +3696,10 @@ Action BE_10 | BL_MWh_PU_EL | MWh from Public Sector Electricity usage
 (MWh/year) | 8.358,03 | 8.254,03 | 8.197,17 | 1.836,38  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Building Sector: MWh/year from Municipality Lightning Electricity usage | Action BE_2
-Action ES_9 | BL_MWh_ML_EL | MWh from Municipality Lightning Electricity usage
-(MWh/year) | 8.308,22 | 5.400,35 | 5.400,35 | 1.685,10  |
+| Action ES_9 | BL_MWh_ML_EL | MWh from Municipality Lightning Electricity usage |
+| (MWh/year) | 8.308,22 | 5.400,35 | 5.400,35 | 1.685,10  |
 |  Building Sector: CO2 emissions from Municipality Lightning Electricity usage | Action ES_9 | BL_CO2_ML_EL | CO2 emissions from Municipality Lightning Electricity usage
-(t. CO2 equivalent / year) | 5.044,75 | 5.044,75 | 5.044,75 | 0,00  |
+| (t. CO2 equivalent / year) | 5.044,75 | 5.044,75 | 5.044,75 | 0,00  |
 |  Building Sector: CO2 emissions from Public Sector Diesel usage | Action BE_1
 Action BE_2
 Action BE_3
@@ -3725,7 +3725,7 @@ ICANNINA 2030
 Climate Neutrality Action Plan
 
 |   | Action GI_B_2
-Action BE_6 |  |  |  |  |  |   |
+| Action BE_6 |  |  |  |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Transport Sector: CO2 emissions from Public Sector Gasoline usage | Action MT_2
 Action MT_3
@@ -3775,7 +3775,7 @@ Action BE_11 | TS_CO2_CB_DS | CO2 emissions from City Bus Diesel usage
 (t. CO2 equivalent / year) | 2.122,88 | 2.101,65 | 1.698,30 | 0,00  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Transport Sector: CO2 emissions from Lake Boats Diesel usage | Action MT_5 | TS_CO2_LB_DS | CO2 emissions from Lake Boats Diesel usage
-(t. CO2 equivalent / year) | 185,75 | 185,75 | 185,75 | 0,00  |
+| (t. CO2 equivalent / year) | 185,75 | 185,75 | 185,75 | 0,00  |
 |  Transport Sector: CO2 emissions from General Trasnportation In & Out Boundary Fuel usage | Action MT_1
 Action MT_2
 Action MT_3
@@ -3836,8 +3836,8 @@ ICANNINA 2030
 Climate Neutrality Action Plan
 
 |  Water: CO2 emissions from Public Sector Diesel usage | Action ES_1
-Action ES_2 | WT_CO2_PU_DS | CO2 emissions from Public Sector Diesel usage
-(t. CO2 equivalent / year) | 169,17 | 101,50 | 101,50 | 101,50  |
+| Action ES_2 | WT_CO2_PU_DS | CO2 emissions from Public Sector Diesel usage |
+| (t. CO2 equivalent / year) | 169,17 | 101,50 | 101,50 | 101,50  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Water: CO2 emissions from Public Sector Electricity usage | Action ES_1
 Action ES_2
@@ -3871,8 +3871,8 @@ Climate Neutrality Action Plan
 #
 
 |  CO2 emissions from Private Sector Diesel usage | Action BE_6
-Action BE_11 |  | Sector Diesel usage
-(t. CO2 equivalent / year) |  |  |  |   |
+| Action BE_11 |  | Sector Diesel usage |
+| (t. CO2 equivalent / year) |  |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  AFOLU (Agriculture):
 CO2 emissions from Private Sector Diesel usage | Action GI_A_2
@@ -3967,7 +3967,7 @@ Climate Neutrality Action Plan
 C
 
 |   |  | Projects & Greenery
-Other services: Depending on the subject-type of service |  |  |   |
+| Other services: Depending on the subject-type of service |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Energy Manager in every municipal building | This intervention establishes dedicated Energy Managers in municipal buildings, tasked with monitoring energy consumption, creating indicators, identifying efficiency opportunities, developing energy-saving action plans, designing maintenance strategies, and staying updated on new energy-saving methods, collectively contributing to effective energy management and | Municipality of Ioannina | Municipality of Ioannina
 Region of Epirus
@@ -4413,45 +4413,45 @@ Supply and Installation of external monitoring system for water network of Ioann
 
 **End**
 | Energy Systems | 3.885,09
-tn CO2e/year | 4.116.589,00
-€  |
+| tn CO2e/year | 4.116.589,00 |
+| €  |
 |  **Action ES_3**
 Upgrade of Existing Wastewater Network Infrastructure | Municipal Enterprise for Water and WasteWater | **Start**
 3
 
 **End**
 | Energy Systems | 1.852,66
-tn CO2e/year | 11.168.602,29
-€  |
+| tn CO2e/year | 11.168.602,29 |
+| €  |
 |  **Action ES_4**
 Installation of RES on Water Sector – 1 PV stations | Municipality of Ioannina, Municipal Enterprise for Water and WasteWater | **Start**
 4
 
 **End**
 | Energy Systems | 849,14
-tn CO2e/year | 1.000.000,00
-€  |
+| tn CO2e/year | 1.000.000,00 |
+| €  |
 |  **Action ES_5**
 Installation of RES – 4 PV stations | Municipality of Ioannina | **Start**
 4
 
 **End**
 | Energy Systems | 3.110,02
-tn CO2e/year | 4.260.000 €  |
+| tn CO2e/year | 4.260.000 €  |
 |  **Action ES_6**
 Upgrade in the traffic light infrastructure of the Municipality of Ioannina | Municipality of Ioannina | **Start**
 3
 
 **End**
 | Energy Systems | 100,29
-tn CO2e/year | 830.000 €  |
+| tn CO2e/year | 830.000 €  |
 |  **Action ES_7**
 ICT Actions - Digital services and equipment e-governance in the Municipality of Ioannina | Municipality of Ioannina | **Start**
 4
 
 **End**
 | Energy Systems | 2.056,71
-tn CO2e/year | 1.300.000 €  |
+| tn CO2e/year | 1.300.000 €  |
 |  **Action ES_8**
 ICT Actions - Investments in | Municipality of Ioannina | **Start**
 4
@@ -4490,23 +4490,23 @@ Climate Neutrality Action Plan
 |   |  | 2026 |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Action MT_5
-Cleaning and strengthening waterborne transportation | Municipality of Ioannina | Start 2025
-End 2028 | Mobility & Transport | 3.202,93 tn CO2_{e}/year | 9.420.000 €  |
+| Cleaning and strengthening waterborne transportation | Municipality of Ioannina | Start 2025 |
+| End 2028 | Mobility & Transport | 3.202,93 tn CO2_{e}/year | 9.420.000 €  |
 |  Action MT_6
-Greening logistics. A new era in goods transportation | Municipality of Ioannina | Start 2025
-End 2028 | Mobility & Transport | 15.085,90 tn CO2_{e}/year | 131.420 €  |
+| Greening logistics. A new era in goods transportation | Municipality of Ioannina | Start 2025 |
+| End 2028 | Mobility & Transport | 15.085,90 tn CO2_{e}/year | 131.420 €  |
 |  Action MT_7
-Using Sustainable Transportation on waste collection | Municipality of Ioannina | Start 2025
-End 2028 | Mobility & Transport | 22,17 tn CO2_{e}/year | 680.000 €  |
+| Using Sustainable Transportation on waste collection | Municipality of Ioannina | Start 2025 |
+| End 2028 | Mobility & Transport | 22,17 tn CO2_{e}/year | 680.000 €  |
 |  Action WCE_1
-Separate collection of paper & cardboard | Municipality of Ioannina | Start 2023
-End 2027 | Waste & Circular Economy | 306,81 tn CO2_{e}/year | 516.832 €  |
+| Separate collection of paper & cardboard | Municipality of Ioannina | Start 2023 |
+| End 2027 | Waste & Circular Economy | 306,81 tn CO2_{e}/year | 516.832 €  |
 |  Action WCE_2
-Brown bins (food and garden waste) and separate bio-waste collection | Municipality of Ioannina | Start 2023
-End 2027 | Waste & Circular Economy | 2.400,31 tn CO2_{e}/year | 1.229.617,31 €  |
+| Brown bins (food and garden waste) and separate bio-waste collection | Municipality of Ioannina | Start 2023 |
+| End 2027 | Waste & Circular Economy | 2.400,31 tn CO2_{e}/year | 1.229.617,31 €  |
 |  Action WCE_3
-Development of a household composting network | Municipality of Ioannina | Start 2023
-End 2027 | Waste & Circular Economy | 90,24 tn CO2_{e}/year | 1.229.617,31 €  |
+| Development of a household composting network | Municipality of Ioannina | Start 2023 |
+| End 2027 | Waste & Circular Economy | 90,24 tn CO2_{e}/year | 1.229.617,31 €  |
 |  Action WCE_4
 Organization of separate waste collection in municipal buildings | Municipality of Ioannina | Start 2024
 End 2027 | Waste & Circular Economy | 15,34 tn CO2_{e}/year | 300.000 €  |
@@ -4624,13 +4624,13 @@ Climate Neutrality Action Plan
 |  Energy efficiency interventions in buildings and infrastructure of the Municipality of Ioannina |  | End 2028 |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Action BE_4 Interventions for the energy upgrade of the Municipality's buildings | Municipality of Ioannina | Start 2025
-End 2030 | Build Environment | 1.072,55 tn CO2e/year | 12.477.000 €  |
+| End 2030 | Build Environment | 1.072,55 tn CO2e/year | 12.477.000 €  |
 |  Action BE_5 Installation of RES in existing municipal infrastructure | Municipality of Ioannina | Start 2025
-End 2030 | Build Environment | 4.423,90 tn CO2e/year | 3.538.000 €  |
+| End 2030 | Build Environment | 4.423,90 tn CO2e/year | 3.538.000 €  |
 |  Action BE_6 Organizing events and issuing guides, brochures and other forms in order to inform the citizens and visitors of the Municipality about the benefits and advantages of RES | Municipality of Ioannina | Start 2024
-End 2030 | Build Environment | 14.983,30 tn CO2e/year | 30.000 €  |
+| End 2030 | Build Environment | 14.983,30 tn CO2e/year | 30.000 €  |
 |  Action BE_7 Saving energy and increasing energy efficiency with energy upgrading of existing buildings | Municipality of Ioannina | Start 2024
-End 2030 | Build Environment | 461,36,30 tn CO2e/year | 5.000.000 €  |
+| End 2030 | Build Environment | 461,36,30 tn CO2e/year | 5.000.000 €  |
 |  Action BE_8 | Municipality of Ioannina | Start 2023 | Build Environment | 36.822,95 tn CO2e/year | 30.000.000 €  |
 
 City of Ioannina, Greece
@@ -4656,14 +4656,14 @@ Climate Neutrality Action Plan
 C
 
 |  **Intervention**
-Groups of Engineers per sector (neighborhood) of the city | Municipality of Ioannina | - | - | - | -  |
+| Groups of Engineers per sector (neighborhood) of the city | Municipality of Ioannina | - | - | - | -  |
 | --- | --- | --- | --- | --- | --- |
 |  **Intervention**
-Incentives from the municipality for energy savings from businesses | Municipality of Ioannina | - | - | - | -  |
+| Incentives from the municipality for energy savings from businesses | Municipality of Ioannina | - | - | - | -  |
 |  **Intervention**
-Seminars and workshops in different professional groups with the aim of informing on Energy Saving issues | Municipality of Ioannina | - | - | - | -  |
+| Seminars and workshops in different professional groups with the aim of informing on Energy Saving issues | Municipality of Ioannina | - | - | - | -  |
 |  **Intervention**
-Actions to inform users of municipal buildings to improve behavior and optimal use of electromechanical equipment | Municipality of Ioannina | - | - | - | -  |
+| Actions to inform users of municipal buildings to improve behavior and optimal use of electromechanical equipment | Municipality of Ioannina | - | - | - | -  |
 |  **Intervention**
 Student Awareness Actions | Municipality of Ioannina | - | - | - | -  |
 
@@ -5058,10 +5058,9 @@ B-2.1: Description of action portfolios - textual or visual
 |  Fields of action | Portfolio description  |
 | --- | --- |
 |  Mobility & transport | List of actions
-Descriptions  |
+| Descriptions  |
 |  1. Walking and cycling: a push towards a real sustainable modal shift | The action aims to increase active mobility infrastructure and boost walking and cycling as commuting modes. Increase of pedestrian streets in the CC and the neighborhoods, increase of the city's sidewalks in major roads, cycle lanes and traffic calmed streets shall be at the core of the city's new image. Reducing car travel by 20% will be achieved through investing in new active mobility infrastructure and policies, tightening car policies and freedoms etc.
-
-This action includes various projects, both common regeneration infrastructure and soft/ hard policy measures. The key aim is to create a car-free downtown and vivid neighborhoods that limit car-presence and pollution. Cyclist- and pedestrian- friendly streets and complementary infrastructure and policies promoting active mobility will act as the drivers in changing mobility habits.  |
+| This action includes various projects, both common regeneration infrastructure and soft/ hard policy measures. The key aim is to create a car-free downtown and vivid neighborhoods that limit car-presence and pollution. Cyclist- and pedestrian- friendly streets and complementary infrastructure and policies promoting active mobility will act as the drivers in changing mobility habits.  |
 |  2. Greening the bus fleet and strengthening the public transport role | The action includes the upgrade of the current bus fleet with cleaner (electric, hydrogen etc) vehicles and the upgrade of the overall service level of the public transport. On-demand transportation services, new bus circulation plans, mini-bus services for the CC. KTEL of Ioannina (sole public transport operator) is the key stakeholder to apply the needed changes in accordance to the city's needs.
 
 This action includes sub-projects- as thoroughly examined and approved through Ioannina's Sustainable Urban Mobility Plan (SUMP) - such as the re-routing of bus lines with three (3) core axis and eight (8) routes serving the dense CC and the surrounding urban areas. It also includes the fleet replacement with a local scheme for buses and EV chargers for fast charging in the city.
@@ -5073,10 +5072,9 @@ B-2.1: Description of action portfolios - textual or visual
 |  Fields of action | Portfolio description  |
 | --- | --- |
 |  Mobility & transport | List of actions
-Descriptions  |
+| Descriptions  |
 |  4. Less cars- cleaner cars | This action is at the core of urban mobility strategy and aims to assist the overall urban redevelopment by limiting car presence and boosting e-mobility with a comprehensive and extended EV chargers’ network. The action takes into account the ‘avoid-shift-improve’ approach and deploys a new policy paradigm for the city. This network goes along with incentivizing private car users to minimize the use of conventional cars/ motorcycles and/ or replace their vehicles with cleaner ones that fully or partially run on electricity, such as battery electric vehicles or plug-in hybrid electric vehicles.
-
-Moreover the action deals with the replacement of city-owned fossil fuel vehicles fleet with green vehicles and other policies and practices that limit internal combustion engine vehicles’ circulation in the city.  |
+| Moreover the action deals with the replacement of city-owned fossil fuel vehicles fleet with green vehicles and other policies and practices that limit internal combustion engine vehicles’ circulation in the city.  |
 |  5. Cleaning and strengthening waterborne transportation | This action aims to increase the role of waterborne transportation by adding services and ease the replacement of diesel boats serving currently the connection between the city and the island. Lake Pamvotis can become an extra transportation corridor for connecting different areas of the city and the overall Ioannina conurbation with currently limited access to public transit through clean, electric and fast taxi-boats  |
 |  6. Greening logistics. A new era in goods transportation | This action aims to reduce urban freight emissions through regulatory schemes that promote clear timetables, encourage clean vehicles, promote cargo bikes and infrastructure that allow for this transition. Smaller, cleaner and quiter vehicles shall deliver goods in the conurbation of Ioannina with the support of UCCs and loading/unloading platforms. Replacing ICE van and lorries entering the city will directly have an impact on local health and pollution, while also for vehicles serving the overall logistics chain which will allow for lowering emissions beyond our borders.  |
 |  7. Using Sustainable Transportation on waste collection | This action aims to build on the existing waste strategy and rearrange waste collection with cleaner and smaller vehicles. The action includes projects such as smart waste collection system, supply of new waste collection vehicles (EVs) etc. Needed changes include;
@@ -5086,10 +5084,10 @@ B-2.2: Individual action outlines // 1. Walking and cycling: a push towards a re
 A – Boosting walking
 
 |  Action outline | Action name | 1. Walking and cycling: a push towards a real sustainable modal shift
-A – Boosting walking as a commuting mode  |
+| A – Boosting walking as a commuting mode  |
 | --- | --- | --- |
 |   |  Action type | Physical/ spatial interventions
-Infrastructure  |
+| Infrastructure  |
 |   |  Action description | 1A. Boosting walking as a commuting mode & 1B. Enhancing cycling as a commuting mode. The action aims to increase active mobility infrastructure and boost walking and cycling as commuting modes. Increase of pedestrian streets in the CC and the neighborhoods, increase of the city's sidewalks in major roads, cycle lanes and traffic calmed streets shall be at the core of the city's new image. Reducing car travel by 20% will be achieved through investing in new active mobility infrastructure and policies, tightening car policies and freedoms etc. This action includes various projects, both common regeneration infrastructure and soft/ hard policy measures. The key aim is to create a car-free downtown and vivid neighborhoods that limit car-presence and pollution. Cyclist- and pedestrian- friendly streets and complementary infrastructure and policies promoting active mobility will act as the drivers in changing mobility habits. 1A. Boosting walking as a commuting mode includes projects that aim to a) activate urban plans and implement foreseen pedestrian streets (+ number of KM provided), b) implement new emblematic pedestrian and cycle-friendly streets as demonstrated in the SUMP (i.e. Averof Str.), and c) apply street regeneration schemes for traffic calming and accessibility enhancement for new sidewalks, equipment for disabled people. Some of the strategic interventions are demonstrated in the following graphs/maps;  |
 |  Reference to impact pathway | Field of action | Mobility & Transport  |
 |   |  Systemic lever |   |
@@ -5161,10 +5159,10 @@ B-2.2: Individual action outlines // 1. Walking and cycling: a push towards a re
 B – Enhancing cycling
 
 |  Action outline | Action name | 1. Walking and cycling: a push towards a real sustainable modal shift
-B – Enhancing cycling  |
+| B – Enhancing cycling  |
 | --- | --- | --- |
 |   |  Action type | Physical/ spatial interventions
-Infrastructure  |
+| Infrastructure  |
 |   |  Action description | 1B. Enhancing cycling as a commuting mode includes projects that aim to a) implement new cycle lanes as demonstrated in the Municipal Masterplan for Cycling (with more than 30km of separated cycle lanes, 21+ km of traffic calmed streets, 19+ km of new pedestrian/ cyclists’ lanes, 11+ km new advisory cycle lanes in pedestrian streets) . This new cycling infrastructure will be enhanced with new bike sharing infrastructure and 24/7 services and bike parking facilities all over the city. Some of the strategic interventions are demonstrated in the following graphs/maps;  |
 |  Reference to impact pathway | Field of action | Mobility & Transport  |
 |   |  Systemic lever |   |
@@ -5448,7 +5446,7 @@ B-2.2: Individual action outlines // 3. Low to zero emission zones: Thorough and
 |  Action outline | Action name | Low to zero emission zones: Thorough and JUST transition for pilot zones  |
 | --- | --- | --- |
 |   | Action type | Infrastructure (Signage)
-Organisational and Governance Innovation  |
+| Organisational and Governance Innovation  |
 |   |  Action description | This action sets out the key steps to gradually apply a LEZ/ ZEZ scheme in three pilot zones in the city. The city center, the island and the university campus take the lead and by 2025 present replicable results to the rest of the city. By 2028 and 2030 more and more areas apply restrictions related to GHG emissions and car-circulation. Emphasis is given on policies to ensure a just transition, while also develop a medium-term plan to ban diesel vehicles and all ICE vehicles in the city. The suggested UVAR schemes are in accordance with the overall SUMP strategy for a car-free downtown and green- University Campus, while also focuses on altering the norms in the high and middle-density districts of the city.  |
 |   |  Field of action |   |
 |  Implementati on | Systemic lever |   |
@@ -5568,10 +5566,10 @@ The overall strategy of the action is based on the approved SUMP strategy of the
 |  Reference to impact pathway | Field of action |   |
 |   |  Systemic lever |   |
 |   |  Outcome (according to module B-1.1) | Reducing car travel share by 20%
-Reducing air and noise pollution from ICE vehicles etc.  |
+| Reducing air and noise pollution from ICE vehicles etc.  |
 |  Implementation | Responsible bodies/person for implementation | MUNICIPALITY OF IOANNINA, EPIRUS REGION  |
 |   |  Action scale & addressed entities | Scale: MUNICIPAL borders etc.
-Addressed entities: Residents, Visitors ...  |
+| Addressed entities: Residents, Visitors ...  |
 |   |  Involved stakeholders | MUNICIPALITY OF IOANNINA, EPIRUS REGION etc.  |
 ![img-0.jpeg](img-0.jpeg)
 
@@ -5670,7 +5668,7 @@ Developing new landscapes and lake corridors  |
 Island visitors
 Residents of Ioannina and Island’s residents  |
 |   |  Involved stakeholders | Local boat owners
-MUNICIPALITY OF IOANNINA, EPIRUS REGION,  |
+| MUNICIPALITY OF IOANNINA, EPIRUS REGION,  |
 |   |  Comments on implementation | REQUIRES the close cooperation of local boat owners and Mol.
 Requires funding and a boat replacement scheme  |
 
@@ -5726,7 +5724,7 @@ Organisational and Governance Innovation  |
 |  Reference to impact pathway | Field of action | SOFT supporting actions & SUPPLY of new vehicles (replacement of existing)  |
 |   |  Systemic lever | regulation ++ governance & policy ++ local strategy  |
 |   |  Outcome (according to module B-1.1) | Increasing air quality
-+++  |
+| +++  |
 |  Implementation | Responsible bodies/person for implementation | BUSINESSES, MUNICIPALITY OF IOANNINA, EPIRUS REGION  |
 |   |  Action scale & addressed entities | MUNICIPAL borders  |
 |   |  Involved stakeholders | BUSINESSES, MUNICIPALITY OF IOANNINA, EPIRUS REGIO etc.  |
@@ -5778,11 +5776,11 @@ Greening logistics. A new era in goods transportation / HOW Projects
 TO BE PLANNED &amp; implemented by 2030
 
 |  C.H.
-New UCC – north-west of Katsikas | 400.000 * (PPP with the industry)  |
+| New UCC – north-west of Katsikas | 400.000 * (PPP with the industry)  |
 | --- | --- |
 |  C.H.
-New logistics platforms/ loading platforms (2) | 2026
-* (PPP with the Union of Traders)  |
+| New logistics platforms/ loading platforms (2) | 2026 |
+| * (PPP with the Union of Traders)  |
 |  C.H.
 Truck replacement scheme
 % of private lorries will be replaced
@@ -5801,7 +5799,7 @@ a system to optimize processes of logistics, by using dynamic traffic management
 C.H. | 2025
 * (PPP with the Industry)  |
 |  Signage system and enforcement system
-includes signs for permitted timezones, types of vehicles, license plate recognition system | 2025
+| includes signs for permitted timezones, types of vehicles, license plate recognition system | 2025 |
 |
 B-2.2: Individual action outlines // 7. Improving waste collection
 
@@ -5819,7 +5817,7 @@ Administrative changes for – both national and Local scale,  |
 Reducing air and noise pollution from ICE waste collection vehicles,
 Building new business models and realizing cost savings (for waste collection services), Enhancing public health and social cohesion, Building a new narrative for waste collection.  |
 |   |  Responsible bodies/person for implementation | MUNICIPALITY OF IOANNINA, EPIRUS REGION, Hellenic Recovery Recycling Corporation (HERRCO)
-Hellenic Recycling Agency (HRA/EOAN) etc.  |
+| Hellenic Recycling Agency (HRA/EOAN) etc.  |
 |  Implementation | Action scale & addressed entities | +  |
 |   |  Involved stakeholders | Hellenic Recovery Recycling Corporation (HERRCO)
 Hellenic Recycling Agency (HRA/EOAN)
@@ -7327,23 +7325,17 @@ Designated Executive Advisor  |
 Climate-Neutrality Commitments
 
 |  Technical Chamber of Greece – Epirus Department | Urban Planning – Buildings
-Transportation and Sustainable Mobility | Memorandum of Understanding and Cooperation | Ioannis Tsigkros | President  |
+| Transportation and Sustainable Mobility | Memorandum of Understanding and Cooperation | Ioannis Tsigkros | President  |
 | --- | --- | --- | --- | --- |
 |  Intercity transport operator of the Prefecture of Ioannina | Transportation and Sustainable Mobility | Memorandum of Understanding and Cooperation | Grigorios Gkikas | CEO  |
 |  Urban transport operator of the Prefecture of Ioannina | Transportation and Sustainable Mobility | Memorandum of Understanding and Cooperation | Stefanos Moustaklis | CEO  |
 |  Poultry Industry TH. NITSIAKOS ABEE | Transportation and Sustainable Mobility
-Tree Planting | Memorandum of Understanding and Cooperation | - | -  |
+| Tree Planting | Memorandum of Understanding and Cooperation | - | -  |
 |  Directorate of Secondary Education of Ioannina | Information and awareness programs | Memorandum of Understanding and Cooperation | Stamatoula Logotheti | Director  |
 |  Union of Silversmiths of Ioannina | Waste & circular economy | Memorandum of Understanding and Cooperation | Konstantinos Zervas | CEO  |
 |  Association of Cafes - Bars, Entertainment Centers & Related Professions of the Prefecture of Ioannina "Pamvotis" | Waste & circular economy
-Transportation and Sustainable Mobility | Memorandum of Understanding and Cooperation | Christos Tatsis | President  |
+| Transportation and Sustainable Mobility | Memorandum of Understanding and Cooperation | Christos Tatsis | President  |
 |  Federation of Professional Craft and Trade Associations of the Prefecture of Ioannina | Waste & circular economy | Memorandum of Understanding and Cooperation | Christos Tatsis | President  |
-
-5
-Climate-Neutrality Commitments
-
-6
-
 |   | Transportation and Sustainable Mobility |  |  |   |
 | --- | --- | --- | --- | --- |
 |  General Hospital of Ioannina G. Chatzikosta | Energy Saving | Memorandum of Understanding and Cooperation | Spyridon Derdemezis | Hospital Manager  |
@@ -7604,7 +7596,7 @@ infoipiros@mou.gr
 | --- | --- | --- | --- | --- |
 |  4B.α.
 | Ενεργητικές Πολιτικές Απασχόλησης
-Ενίσχυση ΜΜΕ για δημιουργία Νέων Θέσεων Εργασίας (ΝΘΕ). | ΜΜΕ | 8 | 5  |
+| Ενίσχυση ΜΜΕ για δημιουργία Νέων Θέσεων Εργασίας (ΝΘΕ). | ΜΜΕ | 8 | 5  |
 |   | - Ενίσχυση της αυταπασχόλησης (ΝΕΕ) | Ελεύθεροι επαγγελματίες | 2 | 0,8  |
 
 /26
@@ -7889,15 +7881,15 @@ infoipiros@mou.gr
 | --- | --- | --- |
 |   |  Δράσεις | Περιγραφή  |
 |  Ενεργειακά Συστήματα | Προμήθεια και εγκατάσταση συστήματος εσωτερικής παρακολούθησης για το δίκτυο ύδρευσης της πόλης των Ιωαννίνων | Η δράση περιλαμβάνει 11.900 έξυπνους μετρητές νερού για οικιακή κατανάλωση, για την παρακολούθηση των δεδομένων σε καθημερινή βάση από απόσταση, για το εσωτερικό δίκτυο ύδρευσης της πόλης των Ιωαννίνων. Σήμερα το ποσοστό των διαρροών για το δίκτυο ύδρευσης εκτιμάται σε πάνω από 60%.
-Με την προτεινόμενη δράση το ποσοστό διαρροών θα μειωθεί κάτω του 50% (εκτιμώμενη εξοικονόμηση πάνω από 20%), όπου θα υπάρξει εξοικονόμηση και από την τηλεπαρακολούθηση, η οποία μπορεί να εκτιμηθεί σε 10% εξοικονόμηση ενέργειας στην κύρια υποδομή.  |
+| Με την προτεινόμενη δράση το ποσοστό διαρροών θα μειωθεί κάτω του 50% (εκτιμώμενη εξοικονόμηση πάνω από 20%), όπου θα υπάρξει εξοικονόμηση και από την τηλεπαρακολούθηση, η οποία μπορεί να εκτιμηθεί σε 10% εξοικονόμηση ενέργειας στην κύρια υποδομή.  |
 |   |  Προμήθεια και εγκατάσταση συστήματος εξωτερικής παρακολούθησης για το δίκτυο ύδρευσης της πόλης των Ιωαννίνων | Η δράση περιλαμβάνει 50 σταθμούς παρακολούθησης για το εξωτερικό δίκτυο ύδρευσης της πόλης των Ιωαννίνων και αναβάθμιση του υπάρχοντος εξοπλισμού στις γεωτρήσεις.
-Η προτεινόμενη δράση θα συμβάλει στην εξοικονόμηση τουλάχιστον 15% του νερού και γενικά στην εξοικονόμηση ενέργειας κατά 25%.  |
+| Η προτεινόμενη δράση θα συμβάλει στην εξοικονόμηση τουλάχιστον 15% του νερού και γενικά στην εξοικονόμηση ενέργειας κατά 25%.  |
 |   |  Αναβάθμιση των υφιστάμενων υποδομών του δικτύου αποχέτευσης | Η δράση περιλαμβάνει την πλήρη αναβάθμιση της υφιστάμενης υποδομής του δικτύου αποχέτευσης. Εκτιμάται ότι η δράση θα συμβάλει στην εξοικονόμηση ενέργειας κατά τουλάχιστον 15%.  |
 |   |  Εγκατάσταση ΑΠΕ στον Τομέα Υδάτων – 1 Φ/Β σταθμός | Η δράση περιλαμβάνει την προμήθεια και εγκατάσταση 1 Φ/Β σταθμού 999,54 kW, για net metering στον Τομέα Υδρευσης και Αποχέτευσης (Δημοτική Επιχείρηση Υδρευσης και Αποχέτευσης).  |
 |   |  Εγκατάσταση ΑΠΕ – 4 Φ/Β σταθμοί | Η δράση περιλαμβάνει την προμήθεια και εγκατάσταση 4 Φ/Β σταθμών 999,54 kW κάθε ένας, το οποίο θα μοιραστεί με την Ενεργειακή Κοινότητα Δήμου Ιωαννιτών. Οι Φ/Β σταθμοί θα χρηματοδοτηθούν από κεφάλαια του Δήμου ή χρηματοδότηση του ΥΠΕΝ.  |
 |   |  Ολοκληρωμένη παρέμβαση στην υποδομή των φωτεινών σηματοδοτών του Δήμου Ιωαννιτών | Η δράση περιλαμβάνει την αναβάθμιση των περισσότερων φωτεινών σηματοδοτών στη γενική μητροπολιτική περιοχή της πόλης των Ιωαννίνων με νεότερα τύπου LED.  |
 |  Μεταφορές & κινητικότητα | Περπάτημα και ποδηλασία: μια πραγματικά βιώσιμη μετατόπιση του τρόπου μετακίνησης | Η δράση αποσκοπεί στην αύξηση των υποδομών ήπιας κινητικότητας και στην ενίσχυση του περπατήματος και της ποδηλασίας ως τρόπων μετακίνησης. Η αύξηση των πεζόδρομων στο κέντρο της πόλης και στις γειτονιές, η αύξηση των πεζοδρομίων της πόλης σε μεγάλους δρόμους, οι ποδηλατόδρομοι και οι δρόμοι ήπιας κυκλοφορίας θα αποτελέσουν τον πυρήνα της νέας εικόνας της πόλης. Η μείωση των μετακινήσεων με το αυτοκίνητο κατά 20% θα επιτευχθεί με επενδύσεις σε νέες υποδομές και πολιτικές ήπιας κινητικότητας, αυστηροποίηση των πολιτικών και ελευθεριών για το αυτοκίνητο κ.λπ.
-Η δράση αυτή περιλαμβάνει διάφορα έργα, τόσο κοινές υποδομές ανάπλασης όσο και μέτρα ήπιας και σκληρής πολιτικής. Ο βασικός στόχος είναι η δημιουργία ενός κέντρου χωρίς αυτοκίνητα και ζωντανών γειτονιών που περιορίζουν την παρουσία και τη ρύπανση των αυτοκινήτων. Οι φιλικοί προς τους ποδηλάτες και τους πεζούς δρόμοι και οι συμπληρωματικές υποδομές και πολιτικές που προωθούν την ήπια κινητικότητα θα λειτουργήσουν ως κινητήριοι μοχλοί για την αλλαγή των συνηθειών κινητικότητας.  |
+| Η δράση αυτή περιλαμβάνει διάφορα έργα, τόσο κοινές υποδομές ανάπλασης όσο και μέτρα ήπιας και σκληρής πολιτικής. Ο βασικός στόχος είναι η δημιουργία ενός κέντρου χωρίς αυτοκίνητα και ζωντανών γειτονιών που περιορίζουν την παρουσία και τη ρύπανση των αυτοκινήτων. Οι φιλικοί προς τους ποδηλάτες και τους πεζούς δρόμοι και οι συμπληρωματικές υποδομές και πολιτικές που προωθούν την ήπια κινητικότητα θα λειτουργήσουν ως κινητήριοι μοχλοί για την αλλαγή των συνηθειών κινητικότητας.  |
 |   |  Πράσινος στόλος λεωφορείων και ενίσχυση | Η δράση περιλαμβάνει την αναβάθμιση του σημερινού στόλου λεωφορείων με καθαρότερα οχήματα (ηλεκτρικά, υδρογόνου κ.λπ.) και την αναβάθμιση του συνολικού  |
 
 Δημοτικό Συμβούλιο - Πρακτικό 26/13.09.2023
@@ -7926,9 +7918,9 @@ infoipiros@mou.gr
 Ανάπτυξη του δικτύου χωριστής συλλογής βιοαποβλήτων με 2.186 καφέ κάδους και 2 φορτηγά στο 1ο στάδιο και αξιοποίηση χρηματοδοτικών εργαλείων για την κάλυψη όλων των αναγκών σε εξοπλισμό στο 2ο στάδιο
 Χωρητικότητα: 5.127 τόνοι οικιακών βιοαποβλήτων  |
 |   |  Ανάπτυξη δικτύου οικιακής κομποστοποίησης | Προμήθεια 950 οικιακών κομποστοποιητών χωρητικότητας 300 lt (190 tn οικιακών βιοαποβλήτων) και 20 κομποστοποιητών σε σχολεία.
-Μηχανισμός παρακολούθησης και ελέγχου της λειτουργίας των οικιακών κομποστοποιητών και εφαρμογή συστήματος καθοδήγησης για τα συμμετέχοντα νοικοκυριά και σχολεία  |
+| Μηχανισμός παρακολούθησης και ελέγχου της λειτουργίας των οικιακών κομποστοποιητών και εφαρμογή συστήματος καθοδήγησης για τα συμμετέχοντα νοικοκυριά και σχολεία  |
 |   |  Οργάνωση χωριστής συλλογής αποβλήτων σε δημοτικά κτίρια | Ξεχωριστή συλλογή χαρτιού, πλαστικού, γυαλιού, μετάλλων και άλλων ρευμάτων αποβλήτων σε αθλητικές εγκαταστάσεις, παιδικές χαρές, παιδικούς σταθμούς και άλλες δημοτικές εγκαταστάσεις
-Προμήθεια 100 συστοιχιών κάδων ανακύκλωσης για χαρτί, πλαστικό, γυαλί, μέταλλο  |
+| Προμήθεια 100 συστοιχιών κάδων ανακύκλωσης για χαρτί, πλαστικό, γυαλί, μέταλλο  |
 |   |  α) Ενίσχυση του υφιστάμενου δικτύου συλλογής αποβλήτων,
 β) δημιουργία δικτύου χωριστής συλλογής, | Τύποι αποβλήτων:
 ρούχα και υποδήματα
@@ -7976,22 +7968,22 @@ infoipiros@mou.gr
 |   |  | Βελτιστοποίηση των διαδρομών μεταφοράς για τη μείωση των διαδρομών και τη θελτίωση της υπηρεσίας αποκομιδής απορριμμάτων  |
 | --- | --- | --- |
 |   |  Προγράμματα ενημέρωσης και ευαισθητοποίησης των πολιτών και των επισκεπτών (πρόληψη, επαναχρησιμοποίηση, επισκευή, ορθή ανακύκλωση) | Εκστρατείες ευαισθητοποίησης σχετικά με την πρόληψη της δημιουργίας αποθλήτων, την επαναχρησιμοποίηση, την επισκευή και τη σωστή ανακύκλωση
-Πληροφορίες για τα σημεία ανακύκλωσης  |
+| Πληροφορίες για τα σημεία ανακύκλωσης  |
 |   |  Πράσινες δημόσιες συμβάσεις | Προμήθεια αγαθών, υπηρεσιών και έργων με χαμηλότερο περιβαλλοντικό αποτύπωμα καθ’ όλη τη διάρκεια του κύκλου ζωής τους σύμφωνα με τις πολιτικές και τη νομοθεσία της ΕΕ και το Εθνικό Σχέδιο Δράσης για τις Πράσινες Δημόσιες Συμβάσεις.
-Εκπαίδευση των υπαλλήλων του Δήμου σχετικά με την ενσωμάτωση περιβαλλοντικών κριτηρίων στις προμήθειες  |
+| Εκπαίδευση των υπαλλήλων του Δήμου σχετικά με την ενσωμάτωση περιβαλλοντικών κριτηρίων στις προμήθειες  |
 |   |  Υιοθέτηση της κυκλικής οικονομίας στον τομέα των σχεδιαστών και κατασκευαστών ασημένιων κοσμημάτων | Εκπαίδευση των αργυροχρυσοχόων για την υιοθέτηση της κυκλικής οικονομίας στον τομέα τους  |
 |   |  Πιλοτική εφαρμογή της κυκλικής οικονομίας και των μηδενικών αποθλήτων στο νησί της λίμνης Παμβώτιδας | Δέσμευση νοικοκυριών και επιχειρήσεων του νησιού για τη διαλογή των απορριμμάτων τους σε ανακυκλώσιμα (για όλα τα ρεύματα απορριμμάτων), οργανικά και μη ανακυκλώσιμα.
 Ξεχωριστή συλλογή απορριμμάτων από πόρτα σε πόρτα.
 Εκτρέπονται όλα τα υπολειμματικά απόβλητα μακριά από τους χώρους υγειονομικής ταφής.
 Κίνητρα για τους κατοίκους, τους επισκέπτες και τις επιχειρήσεις για τη μείωση των απορριμμάτων και τη σωστή ταξινόμηση των απορριμμάτων.  |
 |   |  Αξιοποίηση και διανομή των πλεοναζόντων τροφίμων από σούπερ μάρκετ, καφετέριες, εστιατόρια | Εφαρμογή ενός τοπικού προγράμματος μείωσης των αποθλήτων τροφίμων
-Οργάνωση της διανομής τροφίμων και ευαισθητοποίηση σχετικά με τα περισσευούμενα τρόφιμα  |
+| Οργάνωση της διανομής τροφίμων και ευαισθητοποίηση σχετικά με τα περισσευούμενα τρόφιμα  |
 |   |  Υποστήριξη (ενημέρωση, ενδυνάμωση) των επιχειρήσεων του ιδιωτικού τομέα για την υιοθέτηση κυκλικών μοντέλων παραγωγής | Κυκλικός σχεδιασμός, ανακαίνιση, ανακατασκευή  |
 |   |  Βιομηχανική συμβίωση | Ανάπτυξη ηλεκτρονικής πλατφόρμας για την ενίσχυση της αξιοποίησης των υπολειμμάτων και υποπροϊόντων των βιομηχανιών και του γεωργικού, κτηνοτροφικού και αλιευτικού τομέα στην ευρύτερη περιοχή (π.χ. τυροκομεία, πτηνοτροφεία, ελαιοτριβεία, βιομηχανίες τροφίμων) για ζωοτροφές, παραγωγή ενέργειας, κομπόστ, πρώτες ύλες κ.ά.  |
 |  Πρόγραμμα 100% της Πράσινης Δημιουργίας  |   |   |
 |  Πράσινες υποδομές & λύσεις με βάση τη φύση Τομέας Α - Δάση & αγροτικές περιοχές | Εναλλακτική χρήση δασικών εκτάσεων ως χώρων αναψυχής | Συγκεκριμένες δασικές περιοχές προτείνεται να χρησιμοποιηθούν ως χώροι αναψυχής. Οι παρεμβάσεις αυτές θα ακολουθούν τις οδηγίες προστασίας κάθε περιοχής (μελέτη περίπτωσης - αστικό δάσος της Γορίτσας - τοποθεσία Ζευγάρια)  |
 |   |  Εκπαίδευση και ευαισθητοποίηση (προγράμματα κατάρτισης) | Προγράμματα κατάρτισης για αγρότες σε βιώσιμες γεωργικές πρακτικές - βιολογική γεωργία, αγροδασοκομία, μόνιμη καλλιέργεια.
-Εργαστήρια ενημέρωσης/ευαισθητοποίησης για τους επισκέπτες και τις τοπικές κοινότητες  |
+| Εργαστήρια ενημέρωσης/ευαισθητοποίησης για τους επισκέπτες και τις τοπικές κοινότητες  |
 |  Πράσινες υποδομές & | Δημιουργία 5 κλιματικά ουδέτερων ζωνών | Διαχωρισμός πέντε (5) ζωνών στην πόλη των Ιωαννίνων με βάση συγκεκριμένα χαρακτηριστικά. Η δράση αυτή θα  |
 
 Δημοτικό Συμβούλιο - Πρακτικό 26/13.09.2023
@@ -8005,7 +7997,7 @@ infoipiros@mou.gr
 Δεύτερη φάση: θα επιβεβαιωθεί |
 | --- | --- | --- |
 | Πράσινες υποδομές & λύσεις με βάση τη φύση Τομέας Γ - Περιοχές ειδικού ενδιαφέροντος | Δημιουργία κλιματικά ουδέτερων γραφείων (CNOs) και κλιματικά ουδέτερου παρατηρητηρίου | Δημιουργία 5 CNOs - ένα για κάθε επιλεγμένη πιλοτική περιοχή. Κάθε γραφείο θα είναι υπεύθυνο για τη δημοσιότητα, την ενημέρωση και την ευαισθητοποίηση για δράσεις και ενεργειακή συμπεριφορά, την προώθηση των ΑΠΕ και την υλοποίηση των παρεμβάσεων.
-Δημιουργία 1 Παρατηρητηρίου Κλιματικής Ουδετερότητας στο Δήμο που θα συγκεντρώνει, θα συντονίζει και θα παρακολουθεί τα αποτελέσματα των δράσεων. |
+| Δημιουργία 1 Παρατηρητηρίου Κλιματικής Ουδετερότητας στο Δήμο που θα συγκεντρώνει, θα συντονίζει και θα παρακολουθεί τα αποτελέσματα των δράσεων. |
 | Δημιουργία κλιματικά ουδέτερων χώρων πρασίνου | Επανασχεδιασμός μεγάλων αστικών χώρων πρασίνου στην πόλη των Ιωαννίνων με βάση βιοκλιματικούς άξονες. Αυτό θα εφαρμοστεί σε περιοχές όπως το πάρκο Πυρσινέλλα, το πάρκο Κατσαρή |
 | Εξασφάλιση κοινόχρηστων και κοινοτικών χώρων μέσω προγραμμάτων χρηματοδότησης | Στρατηγικό σχέδιο δράσης για τη διασφάλιση των δημόσιων και κοινόχρηστων χώρων (ΕΣΕΚΚ) |
 | Ανακαίνιση-ανασχεδιασμός και ανάδειξη συγκεκριμένων χώρων πρασίνου μεσαίου μεγέθους | Ανακαίνιση-ανασχεδιασμός και ανάδειξη συγκεκριμένων χώρων πρασίνου τοπικής σημασίας σε αστικές περιοχές όπως Καρδαμίτσια, Μπιζάνι, Ιωάννινα, περιοχή Ανατολής - Μαγλαραίικα, Περίβλεπτος, πλατεία Πύρρου |
@@ -8028,7 +8020,7 @@ A2 - AN3/ τοποθεσία Βρισόκα (58.000 m²) |
 ΑΔΑ: Ψ5ΥΖΩΕΩ-1ΙΓ
 
 |   |  | -Α2-Β11/ τοποθεσία Κασταλάτα (46.000 m²)
-G3-16 / (80.000 m²)  |
+| G3-16 / (80.000 m²)  |
 | --- | --- | --- |
 |   |  Διαχείριση και συστηματοποίηση της διαδικασίας αναβάθμισης των νεότερων μνημείων | Με δεδομένο ότι τα ακίνητα μνημεία, ακόμη και τα νεότερα, αποτελούν δημιουργήματα μιας άλλης εποχής, τα υλικά και η τεχνολογία δόμησής τους θεωρούνται σήμερα αρκετά παρωχημένα με αποτέλεσμα οι κατασκευές αυτές να είναι εν πολλοίς ανεπαρκείς να εξασφαλίσουν ποιοτικές συνθήκες ζωής στους ιδιοκτήτες τους και να συμβάλλουν στην αποτελεσματική προστασία του περιβάλλοντος, ενώ παρουσιάζουν υψηλό βαθμό εκπομπών αερίων θερμοκηπίου μέσω υψηλών καταναλώσεων ρεύματος και θέρμανσης. Είναι βέβαια δεδομένο, πως για τα κτίρια αυτά, εξαιτίας της ιδιαιτερότητάς τους, δεν θα είναι εφικτή η πλήρης πράσινη μετάβασή τους, αυτό όμως δεν θα έπρεπε να συνεπάγεται τον κατ’ απόλυτο τρόπο αποκλεισμό τους από τα μέτρα που εκπληρώνουν τους στόχους της κλιματικής ουδετερότητας, αλλά την προσπάθεια ένταξης τους όσο το δυνατόν περισσότερο σε αυτά με την δημιουργία νέων αρχών, μέτρων και τεχνικών. Είναι, λοιπόν, απαραίτητη η δημιουργία μιας νέας, πιο επίκαιρης μεθοδολογίας για την διαχείριση των νεότερων μνημείων, η οποία θα τοποθετεί την ενσωμάτωση της πολιτιστικής κληρονομιάς στις απαιτήσεις της κλιματικής αλλαγής μεταξύ των ουσιαστικών της στόχων  |
 |  Πράσινες υποδομές & λύσεις με βάση τη φύση Τομέας Δ - Αστικός σχεδιασμός | Αστικοί δρόμοι πρασίνου: Πόλη-Λίμνη: Εγκάρσιες συνδέσεις | Ο ακανόνιστος και πυκνός αστικός ιστός των Ιωαννίνων εμποδίζει την αντιληπτική, οπτική και φυσική σύνδεση με τη λίμνη. Προτείνονται δύο υποδειγματικόι αστικοί άξονες-πρασίνου: α. Ο πολιτιστικός άξονας που συνδέει σημαντικά τοπόσημα της πόλης (πρώην Παιδαγωγική Ακαδημία, τζαμί Καλούτσιανη, παραλίμνιο Κέντρο Παραδοσιακής Βιοτεχνίας Ιωαννίνων κ.ά.). β. Ο λειτουργικός άξονας που συνδέει την Αλβανία, τις επαρχίες Ζαγορίου, το αεροδρόμιο και τον τερματικό σταθμό λεωφορείων με το κέντρο και το παραλίμνιο πάρκο Κατσάρη.  |

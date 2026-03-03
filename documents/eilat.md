@@ -360,17 +360,15 @@ Climate Neutrality Action Plan
 
 Table 3: A-1.3: GHG emissions by source sectors
 
-|  Base year | 2019 |  |  |   |
-| --- | --- | --- | --- | --- |
-|  Unit | tCO2e per Year |  |  |   |
-|   |  | Scope 1 | Scope 2 | Scope 3  |
-|  Buildings |  | 8,491 | 281,321 |   |
-|  Transport |  | 131,736 |  |   |
-|  Waste |  |  |  | 134,446  |
-|  Industrial & Water Use |  |  | 21,105 |   |
-|  Agricultural Processes |  |  | 1,595 |   |
-|   |  |  |  | -  |
-|  Total |  | 140,227 | 304,021 | 134,446  |
+Base year | 2019
+Unit | tCO2e per Year
+Scope 1 | Scope 2 | Scope 3
+Buildings | 8,491 | 281,321
+Transport | 131,736
+Waste | 134,446
+Industrial & Water Use | 21,105
+Agricultural Processes | 1,595
+Total | 140,227 | 304,021 | 134,446
 
 Table 4: A-1.4: Activity by source sectors
 
@@ -833,11 +831,10 @@ Climate Neutrality Action Plan
 |   |  Policy & regulation Infrastructure | Limiting and regulating freight trucks around the city | Estimated 5% less trucks in the city each year | 1,858 tCO2eq/yearly average reduction | 1) Improved air quality 2) Improved public health 3) Reduced noise pollution  |
 Climate Neutrality Action Plan
 
-|   |  |  |  | 2025-30 | 4) Decreased traffic congestion
+2025-30 | 4) Decreased traffic congestion
 ) Increased safety for pedestrians and cyclists
 ) Enhanced aesthetic  |
-| --- | --- | --- | --- | --- | --- |
-|  Waste | • Capacity building
+Waste | • Capacity building
 • Regulation
 • Governance | Action Plan for organic waste decrease in hotels results of TourZero Pilot’s Living Labs and The Climate Acceleration Hub, co-managed with external stakeholders
 ) Waste audit and assessment (currently in process)
@@ -849,16 +846,15 @@ Climate Neutrality Action Plan
 ) Circular economy approach in hotels | 34,458 tCO_{2eq}/yearly average reduction 2024-30 | 1) Cost savings each 1 NIS = (0.25 EUR) invested in food rescue, creates a value of 4.2 fold for the national economy^{1}
 ) Land use: diverting organic waste from landfills
 ) Reduction of garbage trucks  |
-|   |  • Infrastructure
+• Infrastructure
 • Policy | 1) Improve the efficiency of the waste collection
 ) Establishment of waste to energy plant | 1) Waste to energy plant is operating, reducing 60% of the waste discarded to landfills | 83,193 tCO_{2eq}/yearly average reduction | 1) Cost savings via Reduction of garbage trucks  |
 
 The National Food Waste and Rescue Report, 2021
 Climate Neutrality Action Plan
 
-|   |  |  | 2) Energy generation | 2024-30 | 2) Land use: diverting organic waste from landfills  |
-| --- | --- | --- | --- | --- | --- |
-|  Green infrastructure & nature-based solutions | Infrastructure | Natural environments mapping & Restoration ecology | 1) Increased green infrastructure
+2) Energy generation | 2024-30 | 2) Land use: diverting organic waste from landfills
+Green infrastructure & nature-based solutions | Infrastructure | Natural environments mapping & Restoration ecology | 1) Increased green infrastructure
 ) Reduction of Heat Islands
 ) Carbon Capture | TBD | 1) Restoration of biodiversity
 ) Improved Air Quality
@@ -867,7 +863,7 @@ Climate Neutrality Action Plan
 ) Enhanced walkability
 ) Energy conservation
 ) Tourism development (economic and social co-benefits)  |
-|   |  Infrastructure | Increased Shading Infrastructure (exact quantification is currently unavailable) |  | 97 tCO_{2}eq/yearly average reduction 2024-30 |   |
+Infrastructure | Increased Shading Infrastructure (exact quantification is currently unavailable) | 97 tCO_{2}eq/yearly average reduction 2024-30
 Eilat Eilat
 
 Climate Neutrality Action Plan
@@ -909,12 +905,6 @@ Table 7: B-2.1: Description of action portfolios
 | --- | --- | --- |
 |   |  List of actions | Description & Data  |
 |  Energy systems | PV on public buildings, private homes, commercial buildings, open spaces and Production for Storage | Timeline: on-going implementation (2024-2030 and beyond) The comprehensive approach to advancing solar energy integration encompasses various initiatives and strategies, all aligned to enable widespread PV adoption and maximise benefits. All calculations and technical details are in the City's Energy Independence Plan and the annexed solar power plan, including costs, income projections, emissions savings, and return on investment (ROI), providing a transparent and calculable framework for interested stakeholders. The existing local and national legislation ensures all new buildings will have PVs across the different sectors. Private homes PV installations are mainly driven by the Eilat Solar Platform, an innovative urban solution that is a one-stop-shop, simplifying procedures for residents interested in installing PV. To diversify the energy landscape, we will work on engaging with a diverse array of RE providers. This strategic move is designed to significantly reduce energy costs compared to the rates offered by the IEC. By fostering competition among RE providers, Eilat aims to make renewable energy more accessible and affordable for its residents and businesses alike.  |
-Eilat
-
-Climate Neutrality Action Plan
-
-#
-
 |   |  | Responsible bodies/person for implementation: Elad Topel Smart City Coordinator, Avi Naim Energy Project Manager, Dudu Zatch Energy department Action scale & addressed entities: city scale Involved stakeholders: Eilat Economic Development Company, Municipal contractor, Ministry of Energy, Israel electric company, Residents Comments on implementation: Depends upon available budget  |
 | --- | --- | --- |
 |   |   |  Generated renewable energy: 547 MWH Total costs and costs by CO2e unit total cost of 143M euro until 2030  |
@@ -972,12 +962,6 @@ Climate Neutrality Action Plan
 |   |  | Responsible bodies/person for implementation The Environmental Unit Eilat-Eilot Action scale & addressed entities city scale & Eilot Region Involved stakeholders Contractor for waste gathering Large waste producers, Eilot regional authority, the Ministry of Energy and Infrastructure Comments on implementation All plans are in preparations for deployment phase  |
 |   |  | Generated renewable energy (if applicable) Gasification in Nimra - 2,233,800 Kwh/y produced from waste, including downtime Waste to Energy Plant - TBD Removed/substituted energy, volume or fuel type N/A Total costs and costs by CO2e unit 75M EURO for the waste to energy plant  |
 |  Green infrastructure & nature-based solutions | Natural environments mapping and Restoration ecology NBS shading | Timeline: 2024-2030 ongoing implementation Natural shading project is underway, with an approved national grant aimed to enhance urban greenery, including the planting of new trees (at least 30%) and the conservation and restoration of existing trees, thereby enhancing streets shading and improving walkability. The pilot area, covering approximately 15 dunams, incorporates a mix of residential, commercial, and public buildings. The team will conduct in-depth research with local business owners to gain insights and work together on objectives. The conclusions will be handed over to the architect for implementation in the plans, where feasible. In addition, the Environmental Unit is (always) engaged in mapping the natural environments, as Eilat is surrounded by nature reserves, and the coast of the Red Sea hosts unique ecosystems including a coral reef. The mapping will be the basis of restoration ecology initiatives.  |
-Eilat
-
-Climate Neutrality Action Plan
-
-#
-
 |   | Responsible bodies/person for implementation The Engineering Department, The Environmental Unit Action scale & addressed entities city scale and its surroundings Involved stakeholders the Drainage Authority, Environmental NGOs, SMEs impacted by the shading, Ministry of Environmental Protection Comments on implementation - NBS is currently in the development phase - The PPP Solar Bonds Project is intricately linked to the natural environment mapping, as certain sections of the fields are designated to be integrated into the reconstructed salt marsh for bird watching. Under the management of the Drainage Authority, this initiative aims to construct nature-based salt marsh pools, serving both as flood mitigation measures and as platforms for fostering endemic biodiversity. Furthermore, the project envisions the development of the area for sustainable tourism, with photovoltaic installations serving as infrastructure for shading.  |
 | --- | --- |
 |   |  Generated renewable energy (if applicable) N/A Removed/substituted energy, volume or fuel type TBD Total costs and costs by CO2e unit TBD  |
@@ -1017,24 +1001,22 @@ Eilat
 Climate Neutrality Action Plan
 4
 
-|  References |   |
-| --- | --- |
-|  Deliverables describing the indicator |   |
-|  Other indicator systems using this indicator |   |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  Indicator Name | Energy use by fuel/energy type within city boundary  |
-|  Indicator Unit | MWh/year  |
-|  Definition | Real consumption data for each fuel or energy type disaggregated by sub-sector. Where data is only available for a few of the total number of fuel suppliers, determine the population (or other indicators such as industrial output, floor space, etc.) served by real data to scale-up the partial data for total city-wide consumption.  |
-|  Calculation | Energy production, estimated electricity consumption per capita, number of EV cars, number of waste collection  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | Yes  |
-|  If yes, which emission source sectors does it impact? | Buildings Transport Waste Industrial  |
-|  Does the indicator measure indirect impacts (i.e. co-benefits)? | No  |
-|  If yes, which co-benefit does it measure? |   |
-|  Can the indicator be used for monitoring impact pathways? | Yes  |
-|  If yes, which NZC impact pathway is it relevant for? | Energy Systems  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
+References
+Deliverables describing the indicator
+Other indicator systems using this indicator
+B-3.2: Indicator Metadata
+Indicator Name | Energy use by fuel/energy type within city boundary
+Indicator Unit | MWh/year
+Definition | Real consumption data for each fuel or energy type disaggregated by sub-sector. Where data is only available for a few of the total number of fuel suppliers, determine the population (or other indicators such as industrial output, floor space, etc.) served by real data to scale-up the partial data for total city-wide consumption.
+Calculation | Energy production, estimated electricity consumption per capita, number of EV cars, number of waste collection
+Indicator Context
+Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | Yes
+If yes, which emission source sectors does it impact? | Buildings Transport Waste Industrial
+Does the indicator measure indirect impacts (i.e. co-benefits)? | No
+If yes, which co-benefit does it measure?
+Can the indicator be used for monitoring impact pathways? | Yes
+If yes, which NZC impact pathway is it relevant for? | Energy Systems
+Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No
 Eilat
 
 Climate Neutrality Action Plan
@@ -1058,26 +1040,24 @@ Climate Neutrality Action Plan
 
 #
 
-|   |   | Reduced noise pollution  |
-| --- | --- | --- |
-|  Can the indicator be used for monitoring impact pathways? |   | Yes  |
-|  If yes, which NZC impact pathway is it relevant for? |   | Shift to EV cars, car-free zones and reduction of cars influx into the city  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? |   | No  |
-|  Data requirements |   |   |
-|  Expected data source |   | The Central Bureau of Statistics  |
-|  Expected availability |   | Q1 2024  |
-|  Suggested collection interval |   | Yearly  |
-|  References |   |   |
-|  Deliverables describing the indicator |   |   |
-|  Other indicator systems using this indicator |   |   |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  Indicator Name | GHG emission from waste  |
-|  Indicator Unit | t CO2 equivalent  |
-|  Definition | Greenhouse gas emissions from waste treatment, waste incineration and landfills  |
-|  Calculation | Waste in tons via the number of waste collection. Types of waste are calculated by factors assuming average distribution  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | Yes  |
+Reduced noise pollution
+Can the indicator be used for monitoring impact pathways? | Yes
+If yes, which NZC impact pathway is it relevant for? | Shift to EV cars, car-free zones and reduction of cars influx into the city
+Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No
+Data requirements
+Expected data source | The Central Bureau of Statistics
+Expected availability | Q1 2024
+Suggested collection interval | Yearly
+References
+Deliverables describing the indicator
+Other indicator systems using this indicator
+B-3.2: Indicator Metadata
+Indicator Name | GHG emission from waste
+Indicator Unit | t CO2 equivalent
+Definition | Greenhouse gas emissions from waste treatment, waste incineration and landfills
+Calculation | Waste in tons via the number of waste collection. Types of waste are calculated by factors assuming average distribution
+Indicator Context
+Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | Yes
 Eliat
 Climate Neutrality Action Plan
 7
@@ -1175,15 +1155,14 @@ Climate Neutrality Action Plan
 
 Table 8: B-3.3 Participation Strategy for Portfolio Actions
 
-|  Action | Project's stage | Open Questions | Engagement Goal | Audience | Level of Participation  |
-| --- | --- | --- | --- | --- | --- |
-|  PV on public buildings | Ongoing | Who is impacted by the implementation of PV other than the buildings' users? Are there small businesses impacted by this? And do we need their buy-in? | Identifying barriers to large-scale implementation
+Action | Project's stage | Open Questions | Engagement Goal | Audience | Level of Participation
+PV on public buildings | Ongoing | Who is impacted by the implementation of PV other than the buildings' users? Are there small businesses impacted by this? And do we need their buy-in? | Identifying barriers to large-scale implementation
 Identify possible objections | Buildings' users
 Municipal Departments | Consult  |
-|  PV on private homes | Ongoing | What are the main barriers to maximising the solar potential in private homes? What are the most helpful tools for residents that incentivize PV installations? How to tackle the shared buildings challenge? | Identifying barriers
+PV on private homes | Ongoing | What are the main barriers to maximising the solar potential in private homes? What are the most helpful tools for residents that incentivize PV installations? How to tackle the shared buildings challenge? | Identifying barriers
 Identifying incentives and helpful tools/support | Residents
 Energy Providers | Empower  |
-|  PV on commercial buildings | Ongoing | What are the main barriers to maximising the solar potential in commercial properties? | Finding the relevant stakeholders (representatives of small businesses?) | SMEs | Empower  |
+PV on commercial buildings | Ongoing | What are the main barriers to maximising the solar potential in commercial properties? | Finding the relevant stakeholders (representatives of small businesses?) | SMEs | Empower
 Ellat
 
 Climate Neutrality Action Plan
@@ -1213,17 +1192,16 @@ Eilat
 Climate Neutrality Action Plan
 5
 
-|  Food Waste reduction capacity building | Phase 1 (planning) | Defining the key parameters to engage with the pilot hotels and how to choose them
+Food Waste reduction capacity building | Phase 1 (planning) | Defining the key parameters to engage with the pilot hotels and how to choose them
 Identifying stakeholders | Finding solutions together | Hotels | Empower  |
-| --- | --- | --- | --- | --- | --- |
-|  Food waste regulation | Phase 0 | Where to start - households or businesses and why? | Increase acceptance | Residents
+Food waste regulation | Phase 0 | Where to start - households or businesses and why? | Increase acceptance | Residents
 Hotels
 Businesses | Collaborate  |
-|  Waste management infrastructure & Waste management plant | Phase 2 (ongoing planning) | Who is impacted and who should be involved? | Identifying barriers | Residents
+Waste management infrastructure & Waste management plant | Phase 2 (ongoing planning) | Who is impacted and who should be involved? | Identifying barriers | Residents
 Waste Collection contractors | Inform  |
-|  Natural environments mapping & Restoration ecology | Phase 2 (ongoing planning) | Mapping all the impacted parties and finding potential collaborators | Finding ways to collaborate effectively
+Natural environments mapping & Restoration ecology | Phase 2 (ongoing planning) | Mapping all the impacted parties and finding potential collaborators | Finding ways to collaborate effectively
 Identifying barriers | NGOs | Collaborate  |
-|  NBS shading | Phase 2 (ongoing planning) | How to incorporate the SMEs feedback | Increase Acceptance | SMEs
+NBS shading | Phase 2 (ongoing planning) | How to incorporate the SMEs feedback | Increase Acceptance | SMEs
 Residents | Consult  |
 Eilat
 
@@ -1233,12 +1211,11 @@ Module C-2 Social Innovation Interventions
 
 C.2.1 Relations between social innovations, systems, and impact pathways
 
-|  Intervention name | Description | Systemic barriers/opportunities addressed | Responsible entity/dept./person | stakeholders involved | Enabling impact | Co-benefits  |
-| --- | --- | --- | --- | --- | --- | --- |
-|  PPP Solar Bonds Project | The project will reduce energy poverty by offering ownership of PV systems to 1000 residents | Facilitating solar power production for residents who are unable to fund their own PV, harnessing the sun hours and positive ROI of the initiative | EEC | Local Residents, Energy Suppliers, Private Investors | Accelerating the city's transition to renewable energy sources, leveraging private investment and citizen participation to expand renewable energy infrastructure. | Community Ownership and citizen engagement
+Intervention name | Description | Systemic barriers/opportunities addressed | Responsible entity/dept./person | stakeholders involved | Enabling impact | Co-benefits
+PPP Solar Bonds Project | The project will reduce energy poverty by offering ownership of PV systems to 1000 residents | Facilitating solar power production for residents who are unable to fund their own PV, harnessing the sun hours and positive ROI of the initiative | EEC | Local Residents, Energy Suppliers, Private Investors | Accelerating the city's transition to renewable energy sources, leveraging private investment and citizen participation to expand renewable energy infrastructure. | Community Ownership and citizen engagement
 Economic Growth
 Reduction of energy poverty  |
-|  TourZero | Pilot within the NZC Call for Pilot Cities, showcasing Accelerated decarbonisation in the tourism industry via the nexus of green innovation, cross-sectoral governance and systemic capacity building | Harnessing the cooperation of the Hotels Association, we aim to tackle energy and waste in hotels as the major GHG emissions sources. Transportation is a major emitter and a significant | The Environmental Unit | The Hotels Association, and relevant National Ministries | Accelerate GHG reduction, establish sustainable financial models, and create a governance model for scaling the pilot. | Reduction of operational costs, improved environmental sustainability, and societal benefits through behavioural change.  |
+TourZero | Pilot within the NZC Call for Pilot Cities, showcasing Accelerated decarbonisation in the tourism industry via the nexus of green innovation, cross-sectoral governance and systemic capacity building | Harnessing the cooperation of the Hotels Association, we aim to tackle energy and waste in hotels as the major GHG emissions sources. Transportation is a major emitter and a significant | The Environmental Unit | The Hotels Association, and relevant National Ministries | Accelerate GHG reduction, establish sustainable financial models, and create a governance model for scaling the pilot. | Reduction of operational costs, improved environmental sustainability, and societal benefits through behavioural change.
 Eilat
 Climate Neutrality Action Plan
 7
@@ -1302,44 +1279,34 @@ Figure 9: Timeline
 
 Also found in the Annex "Baseline &amp; Actions".
 
-|   |  |   | 2025 |   |   |   | 2026 |   |   |   | 2027 |   |   |   | 2028 |   |   |   | 2029 |   |   |   | 2030  |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   | Q3 | Q4 | Q1 | Q2 | Q3 | Q4 | Q1 | Q2 | Q3 | Q4 | Q1 | Q2 | Q3 | Q4 | Q1 | Q2 | Q3 | Q4 | Q1 | Q2 | Q3 | Q4 | Q1 | Q2 | Q3 | Q4  |
-|  CCC Iteration |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
-|  GHGs emission report to the MyCovanant system |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
-|  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|  Energy |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
-|  PV on public buildings |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
-|  PV on private homes |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
-|  PV on commercial buildings |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
-|  PV on open spaces and production for storage |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
-|  PPP Solar Bond Project (accumulated) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
-|  Energy Efficiency awareness |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
-|  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|  Trasportation |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
-|  Increase of EV: 1. Electrical Transport Master Plan 2. EV parking incentives 3. Deployment of technologies to lower the burden on the energy grid |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
-|  Lowering entrance of cars into the city: 1. incentives (parking lots outside the city, other methods of |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
+2025 | 2026 | 2027 | 2028 | 2029 | 2030
+Q3 | Q4 | Q1 | Q2 | Q3 | Q4 | Q1 | Q2 | Q3 | Q4 | Q1 | Q2 | Q3 | Q4 | Q1 | Q2 | Q3 | Q4 | Q1 | Q2 | Q3 | Q4 | Q1 | Q2 | Q3 | Q4
+CCC Iteration
+GHGs emission report to the MyCovanant system
+Energy
+PV on public buildings
+PV on private homes
+PV on commercial buildings
+PV on open spaces and production for storage
+PPP Solar Bond Project (accumulated)
+Energy Efficiency awareness
+Trasportation
+Increase of EV: 1. Electrical Transport Master Plan 2. EV parking incentives 3. Deployment of technologies to lower the burden on the energy grid
+Lowering entrance of cars into the city: 1. incentives (parking lots outside the city, other methods of
 Eilat
 Climate Neutrality Action Plan
 1
 
-|  transportation/mobility). 2. legal framework to reduce fossil-fuel cars 3. Enhance Public Transportation options |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Limiting and regulating freight trucks around the city |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
-|  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|  Waste |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
-|  Food Waste reduction capacity building |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
-|  Food waste regulation |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
-|  Waste management infrastructure |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
-|  Waste management plant |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
-|  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|  Green infrastructure & nature-based solutions |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
-|  Natural environments mapping & Restoration ecology |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
-|  NBS shading |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
+transportation/mobility). 2. legal framework to reduce fossil-fuel cars 3. Enhance Public Transportation options
+Limiting and regulating freight trucks around the city
+Waste
+Food Waste reduction capacity building
+Food waste regulation
+Waste management infrastructure
+Waste management plant
+Green infrastructure & nature-based solutions
+Natural environments mapping & Restoration ecology
+NBS shading
 Filat &amp; 2019
 
 Climate Neutrality Action Plan
@@ -1405,8 +1372,6 @@ Abbreviations and acronyms
 |  Investment Plan | IP  |
 |  Key Performance Indicator | KPI  |
 |  Monitoring Evaluation & Learning | MEL  |
-Climate-Neutrality Commitments
-
 |  Monitoring Reporting Verification | MRV  |
 | --- | --- |
 |  Work Package | WP  |
@@ -2796,90 +2761,87 @@ Spreadsheets and MATLAB code can be found at the Github repository: https://gith
 
 PVWatts Inputs. Meteorological data collected in Eilat (29.55, 34.95) during 2017.
 
-|  Residential Modules  |   |   |
-| --- | --- | --- |
-|  Parameter | Value | Explanation  |
-|  rated power | 0.2415 | 1 kW/m2* area * efficiency  |
-|  Module Type: Standard  |   |   |
-|  cell type | crystalline silicon |   |
-|  nominal efficiency | 0.15 |   |
-|  module cover | glass |   |
-|  temperature coefficient | 0.0047 | loss per °C  |
-|  array type | fixed, roof mount |   |
-|  System Losses  |   |   |
-|  soiling | 0.03 | light rainfall  |
-|  shading | 0.02 | little shading  |
-|  snow | 0 | none  |
-|  mismatch | 0.02 | default  |
-|  wiring | 0.02 | default  |
-|  connections | 0.005 | default  |
-|  light-induced degradation | 0.015 | default  |
-|  nameplate rating | 0.01 | default  |
-|  age | 0.025 | estimating .005/yr  |
-|  availability | 0.03 | default  |
-|  estimated cumulative | 0.1622 | apparently not quite a summation  |
-|  tilt angle (°) | 20 | default  |
-|  azimuth angle (°) | 180 | facing south  |
-|  Advanced Parameters  |   |   |
-|  DC to AC ratio | 1.2 | inverter power rating, default  |
-|  inverter efficiency | 0.96 | default  |
-|  ground coverage ratio | n/a | applies only to tracking arrays  |
-|  Result | 372 kWh/module/year  |   |
-|  Municipal Modules  |   |   |
-| --- | --- | --- |
-|  Parameter | Value | Explanation  |
-|  rated power | 0.3 | 1 kW/m2* area * efficiency  |
-|  Module Type: Standard  |   |   |
-|  cell type | crystalline silicon |   |
-|  nominal efficiency | 0.15 |   |
-|  module cover | glass |   |
-|  temperature coefficient | 0.0047 | loss per °C  |
-|  array type | fixed, roof mount |   |
-|  System Losses  |   |   |
-|  soiling | 0.03 | light rainfall  |
-|  shading | 0.02 | little shading  |
-|  snow | 0 | none  |
-|  mismatch | 0.02 | default  |
-|  wiring | 0.02 | default  |
-|  connections | 0.005 | default  |
-|  light-induced degradation | 0.015 | default  |
-|  nameplate rating | 0.01 | default  |
-|  age | 0.025 | estimating .005/yr  |
-|  availability | 0.03 | default  |
-|  estimated cumulative | 0.1622 | apparently not quite a summation  |
-|  tilt angle (°) | 20 | default  |
-|  azimuth angle (°) | 180 | facing south  |
-|  Advanced Parameters  |   |   |
-|  DC to AC ratio | 1.2 | inverter power rating, default  |
-|  inverter efficiency | 0.96 | default  |
-|  ground coverage ratio | n/a | applies only to tracking arrays  |
-|  Result | 463 kWh/module/year  |   |
-|  Eilot and Arava Valley PV Fields  |   |   |
-| --- | --- | --- |
-|  Parameter | Value | Explanation  |
-|  rated power | 100280 | 1 kW/m2* area * efficiency  |
-|  Module Type: Premium  |   |   |
-|  cell type | crystalline silicon |   |
-|  nominal efficiency | 0.19 |   |
-|  module cover | glass, anti reflective coating |   |
-|  temperature coefficient | 0.0035 | loss per °C  |
-|  array type | fixed, open rack |   |
-|  System Losses  |   |   |
-|  soiling | 0.03 | dust, assuming cleaning  |
-|  shading | 0.01 | open field  |
-|  snow | 0 | none  |
-|  mismatch | 0.02 | default  |
-|  wiring | 0.02 | default  |
-|  connections | 0.001 | default  |
-|  light-induced degradation | 0.015 | default  |
-|  nameplate rating | 0.01 | default  |
-|  age | 0.025 | estimating .005/yr  |
-|  availability | 0 | accounted in power demand data  |
-|  estimated cumulative | 0.1271 | multipled sequentially  |
-|  tilt angle (°) | 30 | observational guess  |
-|  azimuth angle (°) | 180 | facing south  |
-|  Advanced Parameters  |   |   |
-|  DC to AC ratio | 1.2 | inverter power rating, default  |
-|  inverter efficiency | 0.96 | default  |
-|  ground coverage ratio | n/a | applies only to tracking arrays  |
-|  Result | 322006512 kWh/year  |   |
+Residential Modules
+Parameter | Value | Explanation
+rated power | 0.2415 | 1 kW/m2* area * efficiency
+Module Type: Standard
+cell type | crystalline silicon
+nominal efficiency | 0.15
+module cover | glass
+temperature coefficient | 0.0047 | loss per °C
+array type | fixed, roof mount
+System Losses
+soiling | 0.03 | light rainfall
+shading | 0.02 | little shading
+snow | 0 | none
+mismatch | 0.02 | default
+wiring | 0.02 | default
+connections | 0.005 | default
+light-induced degradation | 0.015 | default
+nameplate rating | 0.01 | default
+age | 0.025 | estimating .005/yr
+availability | 0.03 | default
+estimated cumulative | 0.1622 | apparently not quite a summation
+tilt angle (°) | 20 | default
+azimuth angle (°) | 180 | facing south
+Advanced Parameters
+DC to AC ratio | 1.2 | inverter power rating, default
+inverter efficiency | 0.96 | default
+ground coverage ratio | n/a | applies only to tracking arrays
+Result | 372 kWh/module/year
+Municipal Modules
+Parameter | Value | Explanation
+rated power | 0.3 | 1 kW/m2* area * efficiency
+Module Type: Standard
+cell type | crystalline silicon
+nominal efficiency | 0.15
+module cover | glass
+temperature coefficient | 0.0047 | loss per °C
+array type | fixed, roof mount
+System Losses
+soiling | 0.03 | light rainfall
+shading | 0.02 | little shading
+snow | 0 | none
+mismatch | 0.02 | default
+wiring | 0.02 | default
+connections | 0.005 | default
+light-induced degradation | 0.015 | default
+nameplate rating | 0.01 | default
+age | 0.025 | estimating .005/yr
+availability | 0.03 | default
+estimated cumulative | 0.1622 | apparently not quite a summation
+tilt angle (°) | 20 | default
+azimuth angle (°) | 180 | facing south
+Advanced Parameters
+DC to AC ratio | 1.2 | inverter power rating, default
+inverter efficiency | 0.96 | default
+ground coverage ratio | n/a | applies only to tracking arrays
+Result | 463 kWh/module/year
+Eilot and Arava Valley PV Fields
+Parameter | Value | Explanation
+rated power | 100280 | 1 kW/m2* area * efficiency
+Module Type: Premium
+cell type | crystalline silicon
+nominal efficiency | 0.19
+module cover | glass, anti reflective coating
+temperature coefficient | 0.0035 | loss per °C
+array type | fixed, open rack
+System Losses
+soiling | 0.03 | dust, assuming cleaning
+shading | 0.01 | open field
+snow | 0 | none
+mismatch | 0.02 | default
+wiring | 0.02 | default
+connections | 0.001 | default
+light-induced degradation | 0.015 | default
+nameplate rating | 0.01 | default
+age | 0.025 | estimating .005/yr
+availability | 0 | accounted in power demand data
+estimated cumulative | 0.1271 | multipled sequentially
+tilt angle (°) | 30 | observational guess
+azimuth angle (°) | 180 | facing south
+Advanced Parameters
+DC to AC ratio | 1.2 | inverter power rating, default
+inverter efficiency | 0.96 | default
+ground coverage ratio | n/a | applies only to tracking arrays
+Result | 322006512 kWh/year

@@ -672,11 +672,11 @@ on climate mobility plans | prepared in accordance with § 4 (1) sentences 2 and
 Commitment to climate mobility plans offers municipalities numerous advantages. The preparation of climate mobility plans is currently funded with up to 50 percent of the eligible costs (maximum 200,000 €). For the implementation of projects that are anchored in climate mobility plans in accordance with § 4 paragraph 1 sentences 2 and 3 of the LGVFG, an increased funding rate of up to 75 percent of the eligible costs is possible. |   |
 | --- | --- | --- | --- | --- | --- |
 |  Policy | National | Bundes-Klimaschutzgesetz (KSG)
-Federal Climate Protection Act (KSG) |  | GHG target for 2030 raised to minus 65 percent compared to 1990, Mandatory greenhouse gas neutrality by 2045, Tougher targets in the sectors, binding target for natural sinks |   |
+| Federal Climate Protection Act (KSG) |  | GHG target for 2030 raised to minus 65 percent compared to 1990, Mandatory greenhouse gas neutrality by 2045, Tougher targets in the sectors, binding target for natural sinks |   |
 |  Strategy | National | Klimaschutz-Sofortprogramm 2022
-Emergency Climate Protection Programme 2022 |  | around 8 billion additional euros for climate protection measures in all sectors, with a particular focus on the industry, energy and buildings sectors, The measures in these sectors have a total volume of just under 6.5 billion euros. Additional funds are flowing into the Federal Promotion of Energy-Efficient Buildings (BEG), the Steel Industry Investment Programme and the Decarbonisation of Industry Programme, among others. |   |
+| Emergency Climate Protection Programme 2022 |  | around 8 billion additional euros for climate protection measures in all sectors, with a particular focus on the industry, energy and buildings sectors, The measures in these sectors have a total volume of just under 6.5 billion euros. Additional funds are flowing into the Federal Promotion of Energy-Efficient Buildings (BEG), the Steel Industry Investment Programme and the Decarbonisation of Industry Programme, among others. |   |
 |  Policy |  | nationales Emissionshandelssystem (nEHS)
-national Emissions Trading System (nEHS) |  | Reporting obligation for fuel emissions from waste becomes effective under SESTA on 01.01.2023 |   |
+| national Emissions Trading System (nEHS) |  | Reporting obligation for fuel emissions from waste becomes effective under SESTA on 01.01.2023 |   |
 |  Policy/Strategy |  | Klimaschutzprogramm 2030
 Climate Protection Programme 2030 |  | A comprehensive package of measures to achieve the 2030 climate targets, the core components of which are the national emissions trading scheme introduced at the beginning of the year in the areas of heating and transport, a gradual phase-out of coal-fired power generation, relief for citizens and the economy as well as extensive support measures in the energy, industry, buildings, transport, agriculture and waste management sectors.
 
@@ -689,8 +689,7 @@ Climate Neutrality Action Plan
 | --- | --- | --- | --- | --- | --- |
 |  Strategies | regional | Regionales Energiekonzept Rhein-Neckar (2012) Einheitlicher Regionalplan Rhein-Neckar (2019) Wasserstoffresolution IHK' Rhein-Neckar und Pfalz (2019) Mobilitätspakt Rhein-Neckar (2021) Rhine-Neckar Regional Energy Concept (2012) Standardised Rhine-Neckar Regional Plan (2019) Hydrogen Resolution IHK' Rhine-Neckar and Palatinate (2019) Rhine-Neckar Mobility Pact (2021) |  |  |   |
 |  Policy | EU | EU-Klimaschutzpaket: Fit For 55 | https://www.consiliu m.europa.eu/de/poli cies/green-deal/fit- for-55-the-eu-plan- for-a-green- transition/ | "Fit for 55" refers to the EU's target to reduce net greenhouse gas emissions by at least 55% by 2030.
-
-The EU's energy ministers, parliament and commission have taken important decisions for climate protection: Around three quarters of all European CO2 emissions will in future be included in emissions trading - from 2027 also those from heat and transport. The expansion of solar and wind energy is to be massively accelerated throughout the EU. |   |
+| The EU's energy ministers, parliament and commission have taken important decisions for climate protection: Around three quarters of all European CO2 emissions will in future be included in emissions trading - from 2027 also those from heat and transport. The expansion of solar and wind energy is to be massively accelerated throughout the EU. |   |
 |  Strategy | EU | EU Green Deal |  | https://ec.europa.eu/commission/presscorner/detail/de/ip_21_3541 |   |
 |  Policy | EU | REPowerEU |  | Adaptation to climate change in Mannheim" concept In addition to climate protection goals, the City of Mannheim also pursues adaptation to the unavoidable consequences of climate change. The Climate Protection Department has set out on the path to becoming a resilient city through the concept "Adapting to Climate Change in Mannheim" (V117/2019), the mission statement "Mannheim 2030" and the emergency plan. The concept "Adaptation to Climate Change in Mannheim", which was adopted by the city council in April 2019, was developed in a broad-based participation process with | European government s must implement the measures proposed by the Commission in the REPowerE U plan. Following the Extraordinary European Council of 30 and 31 May 2022,  |
 STADT MANNHEIM
@@ -1240,7 +1239,7 @@ NOTE: The table A 3-1 was filled with information from the stakeholder mapping o
 |   |  Wuppertal institute, Frauenhofer institute, Ifeu, IVAS, MVV EnergieAG, sMArt City GmbH, ZEW, dena, BUND | Research/Scientific advisory group | Medium | Comprehensive target definition on the basis of scientific findings and comprehensible strategy. These stakeholders reduce CO2 only indirectly through their actions, through a solid foundation and focused action.  |
 |   |  Political representatives | Politics, Steering group | High | The interests are multifaceted due to the broad political landscape and are oriented towards the individual political party programmes of the parliamentary groups. By voting and approving resolutions, projects, etc. in the municipal council, politicians have a high degree of influence on climate action-related goals.  |
 |   |  Environmental initiatives | Initiatives, associations
-Steering group, Scientific advisory group | Medium | Consideration of scientific evidence and methods as well as compliance with the 1.5 degree target. Process participation and project involvement.  |
+| Steering group, Scientific advisory group | Medium | Consideration of scientific evidence and methods as well as compliance with the 1.5 degree target. Process participation and project involvement.  |
 |   |  Citizenship | Steering group, Citizens Council | Medium | Individual and multifaceted interests, which, according to experience, are strongly focused on the two topics of housing and mobility. Citizens have a significant influence on the success of a climate action strategy through their behaviour and impact as multipliers.  |
 |   |  Local Green Deal | Municipality, Steering group | High | Cross-cutting interests in the sense of climate action to drive the implementation of measures and achieve public awareness.  |
 |   |  Power plant operator (GKM) | Strategy/Working group | Medium | Securing energy supply, future planning security, securing customers and staff  |
@@ -1502,7 +1501,7 @@ NOTE: The allocation in the table B-1.1 is a very theoretical work, which has al
 The following co-benefits are addressed by the emission domains in the Climate Action Plan and the CoLAB project.
 
 |  Direct impacts | Impacts (including co-benefits) and impact categories
-Climate-neutrality  |
+| Climate-neutrality  |
 | --- | --- |
 |   |  Climate Mitigation
 • Reduced GHG emissions
@@ -1976,12 +1975,12 @@ Car-poor inner city Mannheim
 | --- | --- | --- | --- |
 |  Mobility | Mobility & transport | Making motorised transport more efficient | Promoting new drive concepts  |
 |  Land use | Green infrastructure & nature based solutions | Reduce land consumption | Safeguarding and developing open space (planning principle)
-Land-saving urban development (planning principle)  |
+| Land-saving urban development (planning principle)  |
 |  Land use | Green infrastructure & nature based solutions | Green, forest and agricultural land | Forest areas  |
 |  Green-blue infrastructures | Green infrastructure & nature based solutions | Green and unsealing in public space | Unsealing of surfaces  |
 |  Green-blue infrastructures | Green infrastructure & nature based solutions | Water in the city | Sponge City Mannheim  |
 |  Private Households | Built environment | Residential building | Optimised use of living space and areas
-Renovation offensive ★  |
+| Renovation offensive ★  |
 |  Private Households | Others | Climate-friendly nutrition and consumption | Avoid waste, improve recycling  |
 |  Municipal administration | Built environment | Climate-neutral properties | Rehabilitation of municipal buildings ★
 Climate neutrality in new construction ★
@@ -2187,7 +2186,7 @@ All measures have already been transferred to Climate View and are controlled vi
 # MAIN TABLE FOR THE CCC WITH ALL INFORMATION INCLUDED
 
 |  TOP priority Overarching Measure:
-OFFENSIVE FOR ENERGY SAVING IN THE CITY OF MANNHEIM  |
+| OFFENSIVE FOR ENERGY SAVING IN THE CITY OF MANNHEIM  |
 | --- |
 |  Framework conditions :
 Due to the war in Ukraine and the associated reduction in gas supplies from Russia, it is currently a very realistic scenario that energy supply bottlenecks may occur in winter. Political activities currently focus on the question of where alternative energy supplies can come from.
@@ -2206,9 +2205,9 @@ In addition, a broad-based energy-saving campaign is to be launched, which will 
 • Heating public buildings to a maximum of 19 degrees
 • Stop lighting public buildings and monuments  |
 |  Time horizon
-The measure should be implemented immediately and be limited in time.  |
+| The measure should be implemented immediately and be limited in time.  |
 |  Contribution to climate neutrality
-The CO2 savings potential is shown here as 0.486 million tonnes. A saving of 20 % is to be achieved in all sectors except transport.  |
+| The CO2 savings potential is shown here as 0.486 million tonnes. A saving of 20 % is to be achieved in all sectors except transport.  |
 |  Responsibility
 • Energy saving: the whole of Mannheim's urban society
 • Advisory services: Climate Protection Agency Mannheim gGmbH
@@ -2258,7 +2257,7 @@ The calculations (cf. chapter 9) show in particular the great influence that a t
 |  **BUILDING BLOCK1: POWER GENERATION (7.2.1)**  |
 |  **TOP MEASURE 1: PV OFFENSIVE**  |
 |  **Framework conditions** : Photovoltaics (PV) as a renewable energy source usually has a special potential in densely populated urban areas, and this is also the case in Mannheim. The reason for this is that there are many unused roof and other areas (e.g. car parks, multi-storey car parks, garages) in existing buildings that lend themselves to expansion. At the same time, however, many different individual owners must be activated in order to use this potential, similar to the energy-efficient refurbishment of buildings. Against this backdrop, activation should also be considered in principle for corresponding measures and facilities (cf. Measure 7.8.1.2, 7.4.1.1 and 7.3.1.2). In this measure, the city of Mannheim itself also has corresponding land potential that it should consistently exploit in the future in order to live up to its role as a role model. In the new construction segment, it is expected that good utilisation of roof space can be achieved through the obligation to install photovoltaic systems, which has been in force in Baden-Württemberg since 2022. However, advisory and funding instruments should also be applied in this segment in order to optimise the PV offensive.
-The aim of the measure is to address the existing potential in existing buildings, complementing the PV obligation.  |
+| The aim of the measure is to address the existing potential in existing buildings, complementing the PV obligation.  |
 |  **The activities** of the City of Mannheim and its stakeholders in this regard are:
 Exploiting the PV potential on municipal properties by 2030
 Use of open space potential for solar energy (agri-PV, contaminated sites and along transport
@@ -2280,7 +2279,7 @@ Climate Neutrality Action Plan
 9
 
 |  **Contribution to climate neutrality**
-The CO2 savings potential amounts to approx. 196,300 t CO2 /a in 2030 (incl. the identified potentials from the measures 7.4.2.1, 7.8.1.2, 7.8.1.3, 7.9.1.1 and 7.9.1.2).  |
+| The CO2 savings potential amounts to approx. 196,300 t CO2 /a in 2030 (incl. the identified potentials from the measures 7.4.2.1, 7.8.1.2, 7.8.1.3, 7.9.1.1 and 7.9.1.2).  |
 | --- |
 |  **Responsibility**
 • PV potential on municipal properties and open spaces: FB 25, Dec. V, sMArt City Mannheim
@@ -2331,17 +2330,17 @@ Climate Neutrality Action Plan
 • management (C-Sells)
 • Accelerate smart meter rollout  |
 |  **Time horizon**
-The measure can be started immediately. For this purpose, a potential and feasibility study should be prepared as a first step, on the basis of which a first pilot project will be implemented. A more extensive expansion of smart grids is unlikely to be completed by 2030.  |
+| The measure can be started immediately. For this purpose, a potential and feasibility study should be prepared as a first step, on the basis of which a first pilot project will be implemented. A more extensive expansion of smart grids is unlikely to be completed by 2030.  |
 |  **Contribution to climate neutrality**
-Smart grids themselves do not have any direct CO2 saving potential, but through the intelligent control of grid loads they are a building block for the optimised use of renewable energies and their expansion.  |
+| Smart grids themselves do not have any direct CO2 saving potential, but through the intelligent control of grid loads they are a building block for the optimised use of renewable energies and their expansion.  |
 |  **Responsibility**
-Construction and operation of smart grids: energy companies, owners of large real estate portfolios, companies in commercial areas (see also section 7.3).  |
+| Construction and operation of smart grids: energy companies, owners of large real estate portfolios, companies in commercial areas (see also section 7.3).  |
 |  **Financial expenditure**
-In a first step, a preliminary study would have to be carried out at a comparatively low financial cost. The costs for implementing a pilot project depend very much on the identified area and the installations and construction measures required here, which is why a cost estimate is not possible at this point. It should be part of a corresponding feasibility study.  |
+| In a first step, a preliminary study would have to be carried out at a comparatively low financial cost. The costs for implementing a pilot project depend very much on the identified area and the installations and construction measures required here, which is why a cost estimate is not possible at this point. It should be part of a corresponding feasibility study.  |
 |  **Monitoring / Indicators**
-A first milestone would be the identification of a neighbourhood or an area that can be developed as a pilot project, a second the implementation of the project. Subsequently, the further expansion can provide information about the amount of energy controlled via smart grids or the connected plants and energy consumption points as an indicator of success.  |
+| A first milestone would be the identification of a neighbourhood or an area that can be developed as a pilot project, a second the implementation of the project. Subsequently, the further expansion can provide information about the amount of energy controlled via smart grids or the connected plants and energy consumption points as an indicator of success.  |
 |  **Conflicting goals and synergies**
-Synergies arise in the development of smart grids, especially with regard to the expansion of renewable energy plants such as PV and wind. The fluctuating amount of electricity can be used more optimally through intelligent load management. Smart grids can also contribute to the decarbonisation of industrial and other energy-intensive companies.  |
+| Synergies arise in the development of smart grids, especially with regard to the expansion of renewable energy plants such as PV and wind. The fluctuating amount of electricity can be used more optimally through intelligent load management. Smart grids can also contribute to the decarbonisation of industrial and other energy-intensive companies.  |
 |  **Good practice examples**
 • Mannheim district of Franklin: C-sells project https://www.mvv.de/smart-cities/quartiersentwickler/
 • loesungen#c19846 https://www.csells.net/de/
@@ -2429,15 +2428,15 @@ Climate Neutrality Action Plan
 3
 
 |  **Contribution to climate neutrality**
-The CO2 savings potential of this measure amounts to 25,800 t CO2 /a in 2030. This potential has already been included in measure 7.2.3.2 integrated.  |
+| The CO2 savings potential of this measure amounts to 25,800 t CO2 /a in 2030. This potential has already been included in measure 7.2.3.2 integrated.  |
 | --- |
 |  **Responsibility**
 • Expansion and operation: Vulcan Energy GmbH, GeoHardt GmbH, MVV
 • Support/environmental issues: FB 67  |
 |  **Financial expenditure**
-Depending on the ongoing explorations and the potentials identified, valid cost estimates will only be possible at a later date.  |
+| Depending on the ongoing explorations and the potentials identified, valid cost estimates will only be possible at a later date.  |
 |  **Monitoring / Indicators**
-The annual geothermal output can be determined from the installed systems. In addition, monitoring is carried out by regularly updating the energy and CO2 balance sheet.  |
+| The annual geothermal output can be determined from the installed systems. In addition, monitoring is carried out by regularly updating the energy and CO2 balance sheet.  |
 |  **Conflicting goals and synergies**
 The decision to use geothermal potential should be made on the basis of municipal heat planning. As with the measure 7.2.3.2 on district heating, a targeted city-wide strategy for decarbonising all heat should be pursued.
 Geothermal plants can also be used to extract lithium, which is used in batteries, for example. This results in synergies with storage technologies, which are needed as a building block of the energy and transport transition.
@@ -2459,9 +2458,9 @@ The mere existence of a strategic heat plan does not guarantee its implementatio
 • Intensify promotion for renovation and heating conversion
 • Neighbourhood- and building-specific targeted promotion of suitable heating solutions based on municipal heating planning  |
 |  **Time horizon**
-The municipal heat planning as a basis for this measure is currently being developed and will be completed by the end of 2023 at the latest. This can be followed up immediately with advice and funding.  |
+| The municipal heat planning as a basis for this measure is currently being developed and will be completed by the end of 2023 at the latest. This can be followed up immediately with advice and funding.  |
 |  **Contribution to climate neutrality**
-The CO2 savings potential of this measure can be estimated at 11,000 t CO2 after full implementation.  |
+| The CO2 savings potential of this measure can be estimated at 11,000 t CO2 after full implementation.  |
 |  **Responsibility**
 • Consultancy services: Klimaschutzagentur Mannheim gGmbH, sMArt City Mannheim GmbH, MVV, municipal heating planning: FB 67  |
 STADT MANNHEIM
@@ -2473,9 +2472,9 @@ An overview of existing funding programmes in the building sector - including co
 A supplementary funding programme on the part of the city should examine these existing offers and, based on this, design a supporting or supplementary funding. For a significant intensification of the implementation of measures in the building sector, a considerable increase of the current budget of the climate protection agency is necessary. The share of funding for the conversion of the heat supply should then be estimated more concretely on the basis of the results of the municipal heat planning.  |
 | --- |
 |  **Monitoring / Indicators**
-Monitoring can be done on the number of consultations carried out as well as on the subsidies used.  |
+| Monitoring can be done on the number of consultations carried out as well as on the subsidies used.  |
 |  **Conflicting goals and synergies**
-The change in the funding logic, which promotes different systems and technologies at the small-scale level on the basis of municipal heating planning, is intended to lead to a more efficient use of existing potentials and thus to a more targeted use of funding. Nevertheless, it is possible that this new approach will cause problems of acceptance among the population and businesses. The measure should therefore be prepared and accompanied with information and communication.  |
+| The change in the funding logic, which promotes different systems and technologies at the small-scale level on the basis of municipal heating planning, is intended to lead to a more efficient use of existing potentials and thus to a more targeted use of funding. Nevertheless, it is possible that this new approach will cause problems of acceptance among the population and businesses. The measure should therefore be prepared and accompanied with information and communication.  |
 |  **Good practice examples**
 • City of Constance: Municipal heating planning https://www.kea-bw.de/kommunaler-klimaschutz/
 • wissensportal/best-practice/konstanz
@@ -2485,7 +2484,7 @@ The change in the funding logic, which promotes different systems and technologi
 |  In various studies, green hydrogen promises to make a significant contribution to climate neutrality, but at the same time the production quantities have been far too small so far to be able to cover the diverse demand in various sectors. It therefore currently seems sensible to use hydrogen, which is foreseeably available in limited quantities, in those sectors and fields of action in which there are no sufficient alternatives, such as in certain industrial processes or in heavy goods transport. With the hydrogen strategy, the building block thus encompasses production, application and infrastructures to be developed.  |
 |  **MEASURE 1: HYDROGEN STRATEGY**  |
 |  **Framework conditions:** The topic of hydrogen is a highly topical one and is being promoted at various levels and programme strands. The areas of application for "green" hydrogen are diverse: in industry, aviation, in cars, for heat supply. Accordingly, energy and climate scenarios for Germany see competing uses and, in some cases, high import requirements. However, it is unclear whether the corresponding capacities can be created abroad to the extent estimated. It is therefore also important to further develop Germany as a production location and to test corresponding application possibilities.
-Due to the diverse areas of application, a hydrogen strategy is currently being developed for the Rhine-Neckar metropolitan region, in which specific fields of application will also be identified for Mannheim. Particularly in the industrial sector, in processes or logistics, there are suitable fields of application for Mannheim. Accordingly, a strategy should also include relevant fields of application and the development of the necessary infrastructure in addition to measures for production.  |
+| Due to the diverse areas of application, a hydrogen strategy is currently being developed for the Rhine-Neckar metropolitan region, in which specific fields of application will also be identified for Mannheim. Particularly in the industrial sector, in processes or logistics, there are suitable fields of application for Mannheim. Accordingly, a strategy should also include relevant fields of application and the development of the necessary infrastructure in addition to measures for production.  |
 |  **The aim of** the measure is to increase and strategically expand the production and application of hydrogen in Mannheim.  |
 |  **The activities of** the City of Mannheim and its stakeholders in this regard are:
 • Sector coupling & power generation (mobility, storage and transport)
@@ -2495,18 +2494,18 @@ Climate Neutrality Action Plan
 5
 
 |  **Time horizon**
-The development and expansion of production and infrastructure is a long-term process. Accordingly, the development of a strategy, the identification of potentials, the establishment of the network and the acquisition of funding should be started immediately.  |
+| The development and expansion of production and infrastructure is a long-term process. Accordingly, the development of a strategy, the identification of potentials, the establishment of the network and the acquisition of funding should be started immediately.  |
 | --- |
 |  **Contribution to climate neutrality**
-Green hydrogen has a high environmental relief potential. The contribution it can make to reducing emissions in Mannheim depends strongly on the local potential, availability and applications. Taking transport as an example, the expected hydrogen potential can lead to a saving of approx. 43,000 t CO2.  |
+| Green hydrogen has a high environmental relief potential. The contribution it can make to reducing emissions in Mannheim depends strongly on the local potential, availability and applications. Taking transport as an example, the expected hydrogen potential can lead to a saving of approx. 43,000 t CO2.  |
 |  **Responsibility**
-Development of strategy: MRN, companies, Dec. I, EB 76, IHK, HWK  |
+| Development of strategy: MRN, companies, Dec. I, EB 76, IHK, HWK  |
 |  **Financial expenditure**
-In the short term, there will be costs for potential analysis and strategy development. For initial pilot projects, efforts should be made to obtain funding so that the investment costs can be (partially) covered.  |
+| In the short term, there will be costs for potential analysis and strategy development. For initial pilot projects, efforts should be made to obtain funding so that the investment costs can be (partially) covered.  |
 |  **Monitoring / Indicators**
-The first milestones in this context would be the preparation of a strategy and potential analysis. In the further course, the use of hydrogen as an energy carrier can be mapped within the framework of the energy and CO2 balance sheet.  |
+| The first milestones in this context would be the preparation of a strategy and potential analysis. In the further course, the use of hydrogen as an energy carrier can be mapped within the framework of the energy and CO2 balance sheet.  |
 |  **Conflicting goals and synergies**
-Not all hydrogen is climate-neutral. Accordingly, the strategy should clearly focus on green or possibly turquoise hydrogen.  |
+| Not all hydrogen is climate-neutral. Accordingly, the strategy should clearly focus on green or possibly turquoise hydrogen.  |
 |  **Good practice examples**
 • H2 Rivers Rhine-Neckar Metropolitan Region (project partner EB76): https://www.m-rn.com/was-wir-tun/themen-und-projekte/projekte/h2rivers
 • Use of H2 vehicles in the EB 76 fleet
@@ -2530,17 +2529,17 @@ Climate Neutrality Action Plan
 • Construction of a hydropower plant  |
 | --- |
 |  **Time horizon**
-The measure is already underway and electricity and heat have been generated on the grounds of the sewage treatment plant for its own use for almost 50 years (City of Mannheim, 2010). By 2023, it is planned that so much energy can be generated on the grounds of the sewage treatment plant that it can be operated largely self-sufficiently in terms of energy.  |
+| The measure is already underway and electricity and heat have been generated on the grounds of the sewage treatment plant for its own use for almost 50 years (City of Mannheim, 2010). By 2023, it is planned that so much energy can be generated on the grounds of the sewage treatment plant that it can be operated largely self-sufficiently in terms of energy.  |
 |  **Contribution to climate neutrality**
-The measures already implemented can save 35,000 t CO2 per year.  |
+| The measures already implemented can save 35,000 t CO2 per year.  |
 |  **Responsibility**
-• Operator sewage treatment plant: EB 69  |
+| • Operator sewage treatment plant: EB 69  |
 |  **Financial expenditure**
-million have already been approved for the energy measures via business plans. A large part of this has already been implemented or is in the process of being implemented. In addition, subsidies are being applied for for the heat storage facility, which will subsidise 30 % of the established costs. Further investments depend on the development regarding the taxation of electricity feedin. As soon as it is legally and contractually permitted to feed self-generated green energy into the higher-level grid, further energy measures (wind turbine, additional PV systems over water surfaces) are to be included in the business plan. For this further development, the staff position of an energy management will be created.  |
+| million have already been approved for the energy measures via business plans. A large part of this has already been implemented or is in the process of being implemented. In addition, subsidies are being applied for for the heat storage facility, which will subsidise 30 % of the established costs. Further investments depend on the development regarding the taxation of electricity feedin. As soon as it is legally and contractually permitted to feed self-generated green energy into the higher-level grid, further energy measures (wind turbine, additional PV systems over water surfaces) are to be included in the business plan. For this further development, the staff position of an energy management will be created.  |
 |  **Monitoring / Indicators**
-The share of self-generated electricity in the electricity consumption of the sewage treatment plant is already regularly recorded. In addition, the associated avoidance of CO2 emissions can be calculated for the entire city.  |
+| The share of self-generated electricity in the electricity consumption of the sewage treatment plant is already regularly recorded. In addition, the associated avoidance of CO2 emissions can be calculated for the entire city.  |
 |  **Conflicting goals and synergies**
-In the routine replacement of company vehicles, there will be a switch to electric vehicles in the future where it makes sense to do so, which can be charged via self-generated electricity.  |
+| In the routine replacement of company vehicles, there will be a switch to electric vehicles in the future where it makes sense to do so, which can be charged via self-generated electricity.  |
 |  **Good practice examples**
 • Sewage treatment plant City of Mannheim: https://www.mannheim.de/sites/default/files/
 • 2020-03/EBS_Imagebroschuere_2020_Web.pdf Dresden: Energy 21 programme: https://www.stadtentwaesserung-dresden.de/ueberuns/umwelt-zukunft/  |
@@ -2635,9 +2634,9 @@ Support regional hydrogen network (Rhine-Neckar metropolitan region) and jointly
 • Joint pilot projects on hydrogen production, storage and use
 • Expansion and intensification of the training offer for companies around energy saving and sustainability at the workplace  |
 |  **Time horizon**
-The measure should be tackled in the short term and then implemented in the long term. In the field of PV, successes are likely to be achieved more quickly than in less established technologies and applications such as hydrogen.  |
+| The measure should be tackled in the short term and then implemented in the long term. In the field of PV, successes are likely to be achieved more quickly than in less established technologies and applications such as hydrogen.  |
 |  **Contribution to climate neutrality**
-The CO2 savings potential for the year 2030 is estimated at approx. **319,900 t CO /a.2**  |
+| The CO2 savings potential for the year 2030 is estimated at approx. **319,900 t CO /a.2**  |
 |  **Responsibility**
 • Advisory services: Klimaschutzagentur Mannheim gGmbH, sMArt City Mannheim GmbH
 • Climate Protection Alliance Network: FB 67
@@ -2647,9 +2646,9 @@ The CO2 savings potential for the year 2030 is estimated at approx. **319,900 t 
 For the city of Mannheim, costs arise for personnel capacities that can offer potential analyses and advisory services. Investment costs can also arise for the expansion of infrastructures, for example in the area of hydrogen. In this area in particular, however, there are currently and foreseeably funding programmes from the European Union and the Federal Ministry of Economics that can be used for the expansion of renewable energies in general and hydrogen in particular. Because the concrete potentials have not yet been determined, the costs in this context cannot be quantified in more detail.
 For the industrial companies, there are also investment costs that can also be financed proportionally through funding programmes.  |
 |  **Monitoring / Indicators**
-The production and use of renewable energies on site can best be mapped in the context of updating the energy and CO2 balance (energy consumption and use of energy sources).  |
+| The production and use of renewable energies on site can best be mapped in the context of updating the energy and CO2 balance (energy consumption and use of energy sources).  |
 |  **Conflicting goals and synergies**
-The expansion of renewable energies and their use are not necessarily core businesses of local companies. At the same time, however, the current Ukraine conflict demonstrates the sensitivity that arises for local companies due to their dependence on energy imports. Against this background, both climate protection and the security of energy supply for businesses can be addressed with this measure (see section 7.1).  |
+| The expansion of renewable energies and their use are not necessarily core businesses of local companies. At the same time, however, the current Ukraine conflict demonstrates the sensitivity that arises for local companies due to their dependence on energy imports. Against this background, both climate protection and the security of energy supply for businesses can be addressed with this measure (see section 7.1).  |
 |  **Good practice examples**
 • Roche https://www.energie.de/euroheatpower/news-detailansicht/
 nsctrl/detail/News/mvv-liefert-kompletten-bedarf-an-prozessdampf-fuer-rochewerk-aus-thermischer-abfallverwertung
@@ -2798,11 +2797,11 @@ Climate Neutrality Action Plan
 4
 
 |  efficient and associated with less land and landscape consumption, and can be increased more quickly.
-The average share of material costs in the gross production value in the manufacturing sector in Germany rose from about 38 % (1993) to about 47 % (2008) and then fell again to about 43 % by 2017. In absolute terms, the cost of materials thus amounted to about 917 billion euros in 2017. The energy cost share of the total gross production value was on average about 1.6 % in 2017, i.e. in absolute terms about 34 billion euros, which are included in the above-mentioned material costs. This makes it clear that a joint consideration of energy and resource saving potentials in the tertiary sector makes a lot of sense. As a result, a joint energy and resource turnaround means not only a mutually reinforcing contribution to climate and resource protection, but also a significant reduction in material and energy costs, which increase the socio-ecological scope for innovation and investment. If the regional economic effects are included, the picture that emerges, put simply, is of a circular economy that is less dependent on external imports and thus less vulnerable to sudden price increases or supply difficulties.  |
+| The average share of material costs in the gross production value in the manufacturing sector in Germany rose from about 38 % (1993) to about 47 % (2008) and then fell again to about 43 % by 2017. In absolute terms, the cost of materials thus amounted to about 917 billion euros in 2017. The energy cost share of the total gross production value was on average about 1.6 % in 2017, i.e. in absolute terms about 34 billion euros, which are included in the above-mentioned material costs. This makes it clear that a joint consideration of energy and resource saving potentials in the tertiary sector makes a lot of sense. As a result, a joint energy and resource turnaround means not only a mutually reinforcing contribution to climate and resource protection, but also a significant reduction in material and energy costs, which increase the socio-ecological scope for innovation and investment. If the regional economic effects are included, the picture that emerges, put simply, is of a circular economy that is less dependent on external imports and thus less vulnerable to sudden price increases or supply difficulties.  |
 | --- |
 |  MEASURE 1: COUNSELLING AND NETWORKING  |
 |  Framework conditions: The development of knowledge and the networking of actors is an important key to success.
-Sector-specific networks and advisory services can address efficiency potential in a targeted manner. In this context, SMEs should also be addressed, which often do not have the possibilities to deal with these topics on their own due to their lower personnel capacities.  |
+| Sector-specific networks and advisory services can address efficiency potential in a targeted manner. In this context, SMEs should also be addressed, which often do not have the possibilities to deal with these topics on their own due to their lower personnel capacities.  |
 |  The aim of the measure is to reach, inform and support companies on the path to emission reduction.  |
 |  The activities of the City of Mannheim and its stakeholders in this regard are:
 • Establish counselling centre and expand counselling services
@@ -2817,7 +2816,7 @@ Intensify corporate network (GreenTech cluster, climate protection alliance)
 |  Framework conditions: Sector-specific support programmes for tertiary enterprises can address energy saving potentials in a targeted manner and ideally respond to sector-specific characteristics.  |
 |  The aim of the measure is to tap the rich potential for saving energy and resources in tertiary enterprises and thus to improve the competitiveness of the enterprises and at the same time to give positive impulses to the regional economy.  |
 |  The activities of the City of Mannheim and its stakeholders in this regard are:
-• Set up municipal funding programmes to complement existing state and federal funding and close gaps where necessary.  |
+| • Set up municipal funding programmes to complement existing state and federal funding and close gaps where necessary.  |
 |  The CO2 savings potential of this measure cannot be quantified exactly. The amount of savings potential depends very much on sector-specific aspects, e.g. internet trade and laundry (digital business areas vs. manufacturing business areas).  |
 
 Building Block 2: Using climate-neutral energy in trade and industry
@@ -2841,7 +2840,7 @@ Climate Neutrality Action Plan
 |  Framework conditions: Contracting is a financing option in which an external provider makes energy-related investments that are refinanced via the cost savings achieved (e.g. through a more efficient plant). Sector-specific contracting offers, which are developed and offered both by MVV and by private contracting providers, can relieve companies in Mannheim of the burden of making corresponding investments. Conceivable offers are those that are specifically tailored to the hotel and catering industry, for example, where they in turn offer typical savings potential in special areas of application (such as food refrigeration, air conditioning or lighting) in the form of package solutions.  |
 |  The aim of the measure is to overcome investment barriers among companies and to bind companies as customers in the long term through an economical offer. The decisive factor here is that the focus is not on the costs of the individual kilowatt hour, but on the costs of the total bill. Industry-specific contracting offers are energy services that correspond to quality competition in a special way.  |
 |  The activities of the City of Mannheim and its stakeholders in this regard are:
-• Develop specific energy (savings) contracting offers that support the implementation of measures in this field of action (e.g. by energy service providers).  |
+| • Develop specific energy (savings) contracting offers that support the implementation of measures in this field of action (e.g. by energy service providers).  |
 |  The CO2 savings potential of this measure cannot be quantified exactly. The amount of savings potential depends very much on sector-specific aspects for which contracting offers are being developed.  |
 |  BUILDING BLOCK 3: ESTABLISH AND EXPAND THE CIRCULAR ECONOMY IN THE TERTIARY SECTOR  |
 |  The development of a tertiary circular economy opens up many opportunities to make better use of valuable resources. Separating residual materials leads to a significant increase in reuse options. According to the principle that what is not used does not have to be disposed of,  |
@@ -2866,20 +2865,20 @@ Climate Neutrality Action Plan
 7
 
 |  **Time horizon**
-This is a long-term measure. Although the implementation of high-quality deconstruction concepts must take place in the short term, due to the large time gap between the production and deconstruction of a building, comprehensive recycling of buildings can only take place in the future. Nevertheless, the structures needed for this must already be established now, because the current building stock offers great potential as a raw material store.  |
+| This is a long-term measure. Although the implementation of high-quality deconstruction concepts must take place in the short term, due to the large time gap between the production and deconstruction of a building, comprehensive recycling of buildings can only take place in the future. Nevertheless, the structures needed for this must already be established now, because the current building stock offers great potential as a raw material store.  |
 | --- |
 |  **Contribution to climate neutrality**
-The CO2 savings potential is mainly in the future and is therefore not accounted for. However, high-quality demolition of existing buildings and recycling of building materials can save CO2 emissions that are generated, for example, by landfilling or thermal recycling. An estimate of these savings is hardly possible due to the uncertainties of the building stock.  |
+| The CO2 savings potential is mainly in the future and is therefore not accounted for. However, high-quality demolition of existing buildings and recycling of building materials can save CO2 emissions that are generated, for example, by landfilling or thermal recycling. An estimate of these savings is hardly possible due to the uncertainties of the building stock.  |
 |  **Responsibility**
 • Involvement of companies: FB 80, chambers
 • Standards on soil excavation and earth levelling: EB 76, FB 67
 • Municipal implementation: FB 60, departments with their own properties (GBG Group of Companies (BBS, GBG)FB 25, FB 40, FB 52, FB 80, NextMannheim, EB 16, EB 42, EB 46, EB 47, EB 76, EB 69, EB 75, Alte Feuerwache, Mannheim old people's homes, Mannheim wholesale market, Central Institute for Mental Health, Mannheim University Medical Centre).  |
 |  **Financial expenditure**
-Due to the many uncertainties associated with this measure, it is not possible to estimate the costs. Concepts of the circular economy, such as the Crade to Cradle principle, are decisive for the production of sustainable and efficient buildings, with which high energy and thus cost savings are possible over the period of use. Due to the resulting high quality of materials, buildings with a high residual value are created, especially since such buildings are easier to deconstruct and building materials are easier to reuse (C2C Venlo, n.d.).  |
+| Due to the many uncertainties associated with this measure, it is not possible to estimate the costs. Concepts of the circular economy, such as the Crade to Cradle principle, are decisive for the production of sustainable and efficient buildings, with which high energy and thus cost savings are possible over the period of use. Due to the resulting high quality of materials, buildings with a high residual value are created, especially since such buildings are easier to deconstruct and building materials are easier to reuse (C2C Venlo, n.d.).  |
 |  **Monitoring / Indicators**
-Direct control of the measure is not possible at this point, as it is not possible to predict when and whether structures will be deconstructed. For future deconstruction, it is therefore necessary to create a detailed building material and component catalogue with a deconstruction and recycling concept for new buildings. Cooperation with the relevant professional chambers (Chamber of Trade, Chamber of Industry and Commerce) can be helpful here. In addition, concepts such as Cradle to Cradle can be verified through a variety of indicators in use. The focus here should be on climate-relevant indicators (electricity, heating, cooling).  |
+| Direct control of the measure is not possible at this point, as it is not possible to predict when and whether structures will be deconstructed. For future deconstruction, it is therefore necessary to create a detailed building material and component catalogue with a deconstruction and recycling concept for new buildings. Cooperation with the relevant professional chambers (Chamber of Trade, Chamber of Industry and Commerce) can be helpful here. In addition, concepts such as Cradle to Cradle can be verified through a variety of indicators in use. The focus here should be on climate-relevant indicators (electricity, heating, cooling).  |
 |  **Conflicting goals and synergies**
-Changes in the building sector in relation to a sustainable circular economy can be associated with many synergies. For example, a responsible use of resources would have an impact on the need for new resources and thus on the extraction of raw materials, which would be associated with less environmental intervention. New possibilities in reuse can open up new economic sectors and thus create jobs and support the structural change towards a climate-neutral society.  |
+| Changes in the building sector in relation to a sustainable circular economy can be associated with many synergies. For example, a responsible use of resources would have an impact on the need for new resources and thus on the extraction of raw materials, which would be associated with less environmental intervention. New possibilities in reuse can open up new economic sectors and thus create jobs and support the structural change towards a climate-neutral society.  |
 |  **Good practice examples**
 • Mannheim City Library cradle to cradle
 • TBS use of coal slag for cement production: https://www.mannheimer-morgen.de/wirtschaft/firmen_artikel,-gkm-ein-besonders-leiser-laster-_arid,1331401.html
@@ -2887,7 +2886,7 @@ Changes in the building sector in relation to a sustainable circular economy can
 • C2C Venlo City Hall: https://c2cvenlo.nl/de/stadtverwaltung-venlo/
 • RAG headquarters, Zeche Zollverein in Essen: https://www.dabonline.de/2020/04/28/cradle-to-cradle-ist-machbar-beispiele-architektur-baustoffe-c2c-infos/  |
 |  **BUILDING BLOCK 4: OVERARCHING MEASURES**
-The targeted approach and support of companies from the tertiary sector on the topic of climate protection should be supplemented by the design of corresponding framework conditions and strategies for the entire economy in Mannheim.  |
+| The targeted approach and support of companies from the tertiary sector on the topic of climate protection should be supplemented by the design of corresponding framework conditions and strategies for the entire economy in Mannheim.  |
 | --- |
 |  **MEASURE 1: ECONOMIC AND STRUCTURAL PROMOTION**  |
 STADT MANNHEIM
@@ -2908,15 +2907,15 @@ Climate Neutrality Action Plan
 • Networking for sustainable production and services
 • Development and use of existing (also regional) concrete advisory and support approaches for local enterprises  |
 |  **Time horizon**
-The measure can be implemented in the short term and should be continued permanently.  |
+| The measure can be implemented in the short term and should be continued permanently.  |
 |  **Contribution to climate neutrality**
-The measure itself has no direct CO2 saving potential. Rather, it aims to support a more environmentally and socially sustainable local and regional economy in order to promote the implementation of measures in local businesses.  |
+| The measure itself has no direct CO2 saving potential. Rather, it aims to support a more environmentally and socially sustainable local and regional economy in order to promote the implementation of measures in local businesses.  |
 |  **Responsibility**
-• Economic and structural development: FB 80  |
+| • Economic and structural development: FB 80  |
 |  **Financial expenditure**
-The costs are estimated to be relatively high. In particular, it is a question of personnel resources to establish the approach at the Mannheim Economic Development Agency.  |
+| The costs are estimated to be relatively high. In particular, it is a question of personnel resources to establish the approach at the Mannheim Economic Development Agency.  |
 |  **Monitoring / Indicators**
-The success of the measure can be mapped through concretely defined milestones, such as the establishment of regional and sustainable products and offers locally through events, networking and "pop-up stores", etc.  |
+| The success of the measure can be mapped through concretely defined milestones, such as the establishment of regional and sustainable products and offers locally through events, networking and "pop-up stores", etc.  |
 |  **Conflicting goals and synergies**
 A local labour market cannot be boosted only by attracting companies. The decision for or against a job coincides with other factors, such as the accessibility of the job, the quality of life locally and the existing infrastructures. Economic and structural development thus contributes to a more sustainable and liveable city and thus also to the city's strategic goal of promoting and attracting talent.
 Resource scarcity and energy dependence pose major challenges for many companies. On the one hand, they see the pressure to adapt, for example by switching to alternative, renewable or recycled raw materials and products or digitising processes. On the other hand, there is often a lack of skilled workers for these conversions. Through the network work of economic and structural development, companies can be strengthened in their sustainable development  |
@@ -2961,21 +2960,21 @@ Climate Neutrality Action Plan
 0
 
 |  - Introduction of a "voluntary practical year", comparable to a voluntary ecological or social year as an orientation phase for school leavers in the (building) trades
-Recruitment of skilled workers in relevant skilled crafts sectors in cooperation with the HWK, the Employment Agency, the Economic Development Agency and the Welcome Centre Rhine-Neckar  |
+| Recruitment of skilled workers in relevant skilled crafts sectors in cooperation with the HWK, the Employment Agency, the Economic Development Agency and the Welcome Centre Rhine-Neckar  |
 | --- |
 |  **Time horizon**
-The conception of the qualification offensive should be tackled immediately, as qualified personnel is very relevant for the implementation of the measures described in the KSAP. The measure should then be designed to be permanent.  |
+| The conception of the qualification offensive should be tackled immediately, as qualified personnel is very relevant for the implementation of the measures described in the KSAP. The measure should then be designed to be permanent.  |
 |  **Contribution to climate neutrality**
-The measure does not contribute to CO2 savings, but addresses a major obstacle with the shortage of skilled workers, which can jeopardise the reduction potential of other measures.  |
+| The measure does not contribute to CO2 savings, but addresses a major obstacle with the shortage of skilled workers, which can jeopardise the reduction potential of other measures.  |
 |  **Responsibility**
 • Network: Mannheim Employment Agency, Chamber of Industry and Commerce, Trade Unions, Employers' Association, Mannheim University of Applied Sciences, companies and the Welcome Centre Rhine-Neckar
 • Heat Pump Training Centre: MVV, IHK, HWK  |
 |  **Financial expenditure**
-The financial costs for the city are relatively low. The survey of qualification needs and the conception of concrete support services, such as the recruitment of international experts, are purely personnel-related.  |
+| The financial costs for the city are relatively low. The survey of qualification needs and the conception of concrete support services, such as the recruitment of international experts, are purely personnel-related.  |
 |  **Monitoring / Indicators**
-The success of the measure can be mapped via concretely defined milestones, such as the implementation of the survey to determine qualification needs or the establishment of and number of participants in concrete qualification measures.  |
+| The success of the measure can be mapped via concretely defined milestones, such as the implementation of the survey to determine qualification needs or the establishment of and number of participants in concrete qualification measures.  |
 |  **Conflicting goals and synergies**
-The measure specifically aims at synergies between climate protection and the qualification and recruitment of skilled workers. One obstacle, or conflict of objectives, could be the necessary financing within the companies for further training/personnel costs. If necessary, funding programmes of the Federal Employment Agency, etc. can be used here.  |
+| The measure specifically aims at synergies between climate protection and the qualification and recruitment of skilled workers. One obstacle, or conflict of objectives, could be the necessary financing within the companies for further training/personnel costs. If necessary, funding programmes of the Federal Employment Agency, etc. can be used here.  |
 |  **Good practice examples**
 • The Deconstruction Program in Portland, Oregon, USA, provided targeted training for longterm unemployed and hard-to-place people to deconstruct buildings for the reuse of components and materials: https://www.portland.gov/bps/decon
 • As part of the Caritas electricity savings check, long-term unemployed people are trained as energy advisors especially for low-income households: https://www.stromsparcheck.de/ Both examples show how energy- and resource-saving programmes can be combined with social aspects and that not every measure in climate protection requires many years of training.  |
@@ -3099,19 +3098,19 @@ Climate Neutrality Action Plan
 |  • Creation of an unsealing concept  |
 | --- |
 |  **Time horizon**
-This measure is already firmly anchored in the work of Department 61 and is already being implemented. It should be intensified and implemented permanently.  |
+| This measure is already firmly anchored in the work of Department 61 and is already being implemented. It should be intensified and implemented permanently.  |
 |  **Contribution to climate neutrality**
-An estimate of the direct CO2 reduction effect is not possible at this point. Nevertheless, the significance is high, as important preconditions are created at this higher planning level.  |
+| An estimate of the direct CO2 reduction effect is not possible at this point. Nevertheless, the significance is high, as important preconditions are created at this higher planning level.  |
 |  **Responsibility**
 • Urban planning: FB 61
 • within the framework of urban development contracts: 60.22
 • Implementation: FB 67, FB 80, FB 40, EB 76  |
 |  **Financial expenditure**
-Due to the large number of individual components, a reliable cost estimate is not possible at this point. Some of the activities in this measure are planning principles, which in principle do not involve any financial expenditure. It should be noted that inner development sometimes requires much smaller-scale planning and work processes than the development of open spaces. This can lead to increased costs.  |
+| Due to the large number of individual components, a reliable cost estimate is not possible at this point. Some of the activities in this measure are planning principles, which in principle do not involve any financial expenditure. It should be noted that inner development sometimes requires much smaller-scale planning and work processes than the development of open spaces. This can lead to increased costs.  |
 |  **Monitoring / Indicators**
-A suitable indicator for the success (or failure) of this measure is the development of the shares of land use in Mannheim. Other suitable indicators linked to the development of land use are the degree of new sealing or the unsealing of land.  |
+| A suitable indicator for the success (or failure) of this measure is the development of the shares of land use in Mannheim. Other suitable indicators linked to the development of land use are the degree of new sealing or the unsealing of land.  |
 |  **Conflicting goals and synergies**
-Conflicts of objectives are to be expected when there are competing demands for use of the (only limited) available land in terms of climate protection, e.g. when land is used for larger PV areas. Conflicts are also to be expected when land use claims with and without climate protection relevance compete with each other, for example when low-cost housing, childcare facilities or commercial areas are to be created. Conflicts of objectives are also to be expected within the measures. The desirable inner development often leads to further sealing and to possibly negative effects on the urban climate. Synergies arise with all other measures that aim to promote the use of environmentally friendly means of transport as an alternative to car use.  |
+| Conflicts of objectives are to be expected when there are competing demands for use of the (only limited) available land in terms of climate protection, e.g. when land is used for larger PV areas. Conflicts are also to be expected when land use claims with and without climate protection relevance compete with each other, for example when low-cost housing, childcare facilities or commercial areas are to be created. Conflicts of objectives are also to be expected within the measures. The desirable inner development often leads to further sealing and to possibly negative effects on the urban climate. Synergies arise with all other measures that aim to promote the use of environmentally friendly means of transport as an alternative to car use.  |
 |  **Good practice examples**
 • Mannheim Glücksteinquartier https://www.glueckstein-quartier.de/
 • Mannheim Spinelli https://spinelli-mannheim.com/
@@ -3119,7 +3118,7 @@ Conflicts of objectives are to be expected when there are competing demands for 
 • Phoenix Lake Dortmund https://www.dortmund.de/de/freizeit_und_kultur/phoenix_see_dortmund/start_phoenix_see/index.html
 • Mannheim Turley https://www.mwsp-mannheim.de/projekte/turley/  |
 |  **BUILDING BLOCK 2: GREEN, FOREST AND AGRICULTURAL AREAS**
-The measures in this component are aimed at maintaining and increasing the capacity of land and soils to bind carbon. Soils should serve as natural CO2 sinks. With regard to agricultural use, sustainable farming, i.e. extensive farming that does not use nitrogen fertilisers, should increasingly replace conventional farming.  |
+| The measures in this component are aimed at maintaining and increasing the capacity of land and soils to bind carbon. Soils should serve as natural CO2 sinks. With regard to agricultural use, sustainable farming, i.e. extensive farming that does not use nitrogen fertilisers, should increasingly replace conventional farming.  |
 |  **MEASURE 1: DEVELOPMENT AND QUALIFICATION OF GREEN SPACES**
 Framework conditions: Existing green spaces are to be preserved and new green spaces created.
 The *aim of* the measure is to bind carbon in the soil and to raise the awareness of the citizens of Mannheim for the concerns of sustainable land use in terms of climate protection and climate adaptation
@@ -3225,12 +3224,12 @@ Climate Neutrality Action Plan
 |  Framework conditions: his measure serves to protect groundwater from harmful human interference.  |
 |  The aim of the measure is to protect groundwater in order to ensure the supply of drinking water and to permanently take into account the importance of groundwater for the soil ecosystem.  |
 |  The activities of the City of Mannheim and its stakeholders in this regard are:
-• Reduce groundwater consumption through measures for the (mandatory) use of industrial and grey water, for example for the irrigation of gardens, sports fields and public green spaces.  |
+| • Reduce groundwater consumption through measures for the (mandatory) use of industrial and grey water, for example for the irrigation of gardens, sports fields and public green spaces.  |
 |  An estimate of the CO2 savings potential is not possible at this point.  |
 |  BUILDING BLOCK 4: SYSTEMATISE PLANNING SPECIFICATIONS  |
 | --- |
 |  Urban planning and projects can contribute to climate-friendly development at all spatial levels, from buildings and neighbourhoods to the city as a whole.
-To achieve this, all planning levels and processes must take climate protection concerns into account at an early stage and as a priority. Jointly developed planning guidelines help to anchor climate protection, minimise the need for coordination between the participants and ultimately reduce conflict potential and time expenditure. At the same time, these guidelines must be applied and, if necessary, adapted to the specific project in the individual planning processes.  |
+| To achieve this, all planning levels and processes must take climate protection concerns into account at an early stage and as a priority. Jointly developed planning guidelines help to anchor climate protection, minimise the need for coordination between the participants and ultimately reduce conflict potential and time expenditure. At the same time, these guidelines must be applied and, if necessary, adapted to the specific project in the individual planning processes.  |
 |  MEASURE 1: STRENGTHENING URBAN CLIMATE CONCERNS IN URBAN DEVELOPMENT PLANNING  |
 |  Framework conditions: Informal planning instruments, such as urban planning competitions and other concepts, represent important foundations for the desired developments. Accordingly, climate protection concerns must already be incorporated into the planning process at these levels in the form of specifications.  |
 |  The aim of this measure is to give special consideration to climatic specifications in the city's informal planning.  |
@@ -3257,7 +3256,7 @@ Climate Neutrality Action Plan
 |  **Framework conditions:** In addition to urban development contracts, other contractual provisions can be made that make it possible to realise planning goals relevant to climate protection. Especially when selling municipal properties, there is the possibility of contractually stipulating far-reaching climate protection measures that affect the property.  |
 |  The **aim** of this measure is to contractually stipulate climate protection-relevant measures as standard in the context of the sale of municipal properties and thereby save CO2 emissions.  |
 |  The **activities** of the City of Mannheim and its stakeholders in this regard are:
-• Continuous further development and adaptation of the climate specifications in the city's model purchase contracts (cf. also measure 7.4.4.2) for the aspects of energetic building standards, use of renewable energies, sealing and orientation towards the specifications for urban development contracts.  |
+| • Continuous further development and adaptation of the climate specifications in the city's model purchase contracts (cf. also measure 7.4.4.2) for the aspects of energetic building standards, use of renewable energies, sealing and orientation towards the specifications for urban development contracts.  |
 |  An estimate of the **CO2** savings potential is not possible at this point.  |
 |  MEASURE 4: HARMONISATION WITH OTHER SECTORAL PLANS AND CONCEPTS  |
 | --- |
@@ -3412,9 +3411,9 @@ Climate Neutrality Action Plan
 • Implementation of the "Adaptation to Climate Change in Mannheim" concept
 • Extension and updating of the tree cadastre  |
 |  Time horizon
-In order to implement the concept of the sponge city in a sustainable way, far-reaching changes in civil engineering are necessary. Public and private property owners are required to create sufficient retention areas. Therefore, this is a measure to be implemented in the short term, to be implemented permanently and to have a long-term effect.  |
+| In order to implement the concept of the sponge city in a sustainable way, far-reaching changes in civil engineering are necessary. Public and private property owners are required to create sufficient retention areas. Therefore, this is a measure to be implemented in the short term, to be implemented permanently and to have a long-term effect.  |
 |  Contribution to climate neutrality
-The conversion to a sponge city only shows positive CO2 savings in the medium term. The green spaces in the city should be seen as CO2 sinks that promote the absorption of CO2 from the atmosphere.  |
+| The conversion to a sponge city only shows positive CO2 savings in the medium term. The green spaces in the city should be seen as CO2 sinks that promote the absorption of CO2 from the atmosphere.  |
 |  Responsibility
 • Construction measures: EB 76, FB 25, all municipal and private property owners
 • Urban planning: FB 61 in coordination with EB 76 and FB 67  |
@@ -3422,7 +3421,7 @@ The conversion to a sponge city only shows positive CO2 savings in the medium te
 The financial and personnel costs can be classified as high. Although the Sponge City, once it is internalised as a planning principle and implemented across departments, does not cause a high additional personnel effort, considerable financial resources are necessary for the construction measures, such as the unsealing of areas.
 There are already a number of funding options for municipalities, such as the BMU's "Measures for Adaptation to Climate Change", the EU LIFE Programme of the ZUG or the Climate Passport of the State Bank of Baden-Württemberg (Zentrum Klimaanpassung, n.d.), which, however, do not reach the necessary financial volume for Mannheim.  |
 |  Monitoring / Indicators
-The implementation of the measure can be monitored mainly through the measure-related investments. Monitoring of the impact of the measure can also be depicted via a variety of indicators. For example, the reduction in damage to buildings due to heavy rainfall and flash floods could be mapped (Väth, S. J. et al. 2019).  |
+| The implementation of the measure can be monitored mainly through the measure-related investments. Monitoring of the impact of the measure can also be depicted via a variety of indicators. For example, the reduction in damage to buildings due to heavy rainfall and flash floods could be mapped (Väth, S. J. et al. 2019).  |
 |  Conflicting goals and synergies
 A sponge city brings with it a number of synergies. Not only does the system counteract flooding during heavy rain, but the city also becomes more resilient to heat. In addition, green cities are perceived as more liveable, which can increase the attractiveness of a city.  |
 STADT MANNHEIM
@@ -3661,9 +3660,9 @@ Climate Neutrality Action Plan
 |  - Expansion of bicycle parking facilities - Evaluation of the measure on the basis of - Traffic surveys - Citizen survey - Increasing the quality of stay - Greening of previous car parking spaces - Gastronomic use of previous car parking spaces - Improve traffic routing for MIV around the closed areas - Establishment of Park & Ride car parks -already on public transport axes in the interconnected area with attractive parking and travel offers (e.g. family day ticket). - Reorganisation of the roadside parking - Establishment of further delivery zones as well as parking spaces for the craft sector  |
 | --- |
 |  **Time horizon**
-This measure is already being implemented, as it ties in with existing activities or expands them and has been the subject of political discussion in the city for some time. An expansion should be further examined from the perspective of transport-related climate protection.  |
+| This measure is already being implemented, as it ties in with existing activities or expands them and has been the subject of political discussion in the city for some time. An expansion should be further examined from the perspective of transport-related climate protection.  |
 |  **Contribution to climate neutrality**
-The CO2 savings potential of this measure is part of the savings achieved by avoiding and shifting car traffic. To avoid double counting, it is therefore not shown here. The potential savings are part of the measures 7.7.2.2 and 7.7.2.1.  |
+| The CO2 savings potential of this measure is part of the savings achieved by avoiding and shifting car traffic. To avoid double counting, it is therefore not shown here. The potential savings are part of the measures 7.7.2.2 and 7.7.2.1.  |
 |  **Responsibility**
 • Urban development: FB 61
 • Traffic planning: FB 61
@@ -3671,9 +3670,9 @@ The CO2 savings potential of this measure is part of the savings achieved by avo
 • Provision and management of parking space: Mannheimer Parkhausbetriebe GmbH
 • Involvement of local businesses: FB 80  |
 |  **Financial expenditure**
-This cannot be estimated at this point.  |
+| This cannot be estimated at this point.  |
 |  **Monitoring / Indicators**
-One indicator for the promotion of public transport is the development of the modal split share of the environmental alliance in the city as well as the traffic volume and the choice of means of transport in the spatial environment of the city centre. The type and extent of the use of transport on the routes with the explicit destination of Mannheim city centre can also serve as an indicator for the effectiveness of this measure. A qualitative indicator for an increased quality of stay would be an increased use of offers in the public space also outside the opening hours of the shops (increased quality of stay).  |
+| One indicator for the promotion of public transport is the development of the modal split share of the environmental alliance in the city as well as the traffic volume and the choice of means of transport in the spatial environment of the city centre. The type and extent of the use of transport on the routes with the explicit destination of Mannheim city centre can also serve as an indicator for the effectiveness of this measure. A qualitative indicator for an increased quality of stay would be an increased use of offers in the public space also outside the opening hours of the shops (increased quality of stay).  |
 |  **Conflicting goals and synergies**
 Conflicts of objectives are to be expected or already exist today when there are competing demands within the environmental alliance for the limited traffic space available, especially in the densely built-up inner city area. With the reduction of car traffic, there would also be less wear and tear on the transport infrastructure and thus less effort required to maintain and repair this infrastructure. Less car traffic also means less traffic-related air pollutants, less traffic noise and thus a healthier city centre and higher quality of stay. The latter is also a reason why the often mentioned negative effect of a dying inner city has not occurred with comparable measures in other cities.
 However, solutions must be considered for delivery traffic, the trades and emergency supplies.  |
@@ -3872,23 +3871,23 @@ Climate Neutrality Action Plan
 8
 
 |  between buildings or adding storeys. The next step is to approach and support owners and tenants with appropriate advice on conversion, subletting or relocation, so that the existing potential can be used more efficiently. For the remaining major part of the new construction demand, the housing demand forecast 2040 not only takes into account households moving in, but also possible adaptation needs of the local population. For example, the provision of age-appropriate housing or communal housing projects may be accompanied by a reduction in the amount of space and building volume that needs to be built, resulting in the release of larger living space suitable for families, for example. Financial relocation assistance, e.g. for renovation or relocation costs for people with low incomes, can complement a corresponding offer. Therefore, this measure is a mixture of stock analysis, counselling and financial incentive.
-However, these internal shifts in housing demand will - not least because of the remanence effect (see below) - only be able to reduce the demand for new construction to a small extent.  |
+| However, these internal shifts in housing demand will - not least because of the remanence effect (see below) - only be able to reduce the demand for new construction to a small extent.  |
 | --- |
 |  The **aim** of this measure is to establish a corresponding advisory service for the creation of housing in the existing stock and thus to reduce the need for new construction as well as redensification, for example by closing gaps between buildings or adding storeys.  |
 |  The **activities** of the City of Mannheim and its stakeholders in this regard are:
 • Analyse underutilisation: GIS-supported neighbourhood analyses (e.g. vacancy analyses and residential land register).
 • Housing counselling services for optimised use of housing, buildings and spaces  |
 |  **Time horizon**
-This measure can be started in the short term and implemented in the medium term. In the process, the organisational and personnel structures are to be created in the short term so that the inventory analyses and advisory services can begin in the near future.  |
+| This measure can be started in the short term and implemented in the medium term. In the process, the organisational and personnel structures are to be created in the short term so that the inventory analyses and advisory services can begin in the near future.  |
 |  **Contribution to climate neutrality**
-The emission reduction is not accounted for at this point. This measure does not avoid current emissions, but rather future emissions through reduced new construction and the associated consumption of energy, resources and land.  |
+| The emission reduction is not accounted for at this point. This measure does not avoid current emissions, but rather future emissions through reduced new construction and the associated consumption of energy, resources and land.  |
 |  **Responsibility**
 • GIS-based neighbourhood analyses: FB 61
 • Consultation: Cooperation with owners' associations, housing associations, real estate developers,etc.  |
 |  **Financial expenditure**
-New staff positions need to be created, especially for housing counselling. Financial relocation assistance can expand the range of services and should be taken into account accordingly.  |
+| New staff positions need to be created, especially for housing counselling. Financial relocation assistance can expand the range of services and should be taken into account accordingly.  |
 |  **Monitoring / Indicators**
-How well the housing counselling is accepted can be determined by the number of people counseled annually as well as the use of relocation assistance. Even without taking advantage of financial support, it should be evaluated in the context of personal counselling how often it has actually come to an adjustment of one's own housing situation through the offer.  |
+| How well the housing counselling is accepted can be determined by the number of people counseled annually as well as the use of relocation assistance. Even without taking advantage of financial support, it should be evaluated in the context of personal counselling how often it has actually come to an adjustment of one's own housing situation through the offer.  |
 |  **Conflicting goals and synergies**
 Synergies of this measure are mainly to be found in the aspect of redensification. For example, the creation of new housing units in areas that have already been developed "infrastructurally" or the optimised use of land and buildings is associated with less planning effort and construction costs. The measure also has a positive effect on the field of action "land use", as less previously undeveloped land is needed for settlement development. Possible conflicts of objectives arise when new building projects have to be reconciled with the objective of avoiding new building activities.
 In view of rising rents and property prices, moving is usually a losing proposition for long-term tenants and homeowners. Without a controlling intervention in market prices, there will always be the so-called remanence effect (= inertia).
@@ -4027,18 +4026,18 @@ Climate Neutrality Action Plan
 ☐ Waste separation in public spaces (minimum criterion: paper and residue)
 ☐ Introduce waste separation in public buildings and at events (minimum criteria: paper, recyclable, organic and residual waste).  |
 |  **Time horizon**
-The expansion of the information campaigns and the development of a Zero Waste Strategy and its connection to the plastic strategy of the City of Mannheim can be tackled in the short term. However, since the Zero Waste Strategy is an independent catalogue of measures, it is not possible to specify a uniform time horizon. The individual measures of the Zero Waste Strategy range from short to long term.  |
+| The expansion of the information campaigns and the development of a Zero Waste Strategy and its connection to the plastic strategy of the City of Mannheim can be tackled in the short term. However, since the Zero Waste Strategy is an independent catalogue of measures, it is not possible to specify a uniform time horizon. The individual measures of the Zero Waste Strategy range from short to long term.  |
 |  **Contribution to climate neutrality**
-The emission reduction for this measure results from avoided production and transport for short-lived goods, which are mainly located outside the Mannheim city area. The amount of CO2 savings potential depends on the concrete measures of the Zero Waste Strategy and cannot be assessed at this point.  |
+| The emission reduction for this measure results from avoided production and transport for short-lived goods, which are mainly located outside the Mannheim city area. The amount of CO2 savings potential depends on the concrete measures of the Zero Waste Strategy and cannot be assessed at this point.  |
 |  **Responsibility**
 • Information campaigns: EB 76, Klimaschutzagentur Mannheim gGmbH
 • Zero Waste Strategy: EB 76, FB 67, Klimaschutzagentur Mannheim gGmbH, FB 15  |
 |  **Financial expenditure**
-Given the large number of possible measures, the financial cost of this measure can only be estimated after a zero waste strategy has been drawn up. The preparation of the strategy in the narrower sense is associated with little effort.  |
+| Given the large number of possible measures, the financial cost of this measure can only be estimated after a zero waste strategy has been drawn up. The preparation of the strategy in the narrower sense is associated with little effort.  |
 |  **Monitoring / Indicators**
-In principle, this measure can be measured on the basis of waste generation in tonnes and on the basis of the recycling share, which can then be converted into CO2 equivalents.  |
+| In principle, this measure can be measured on the basis of waste generation in tonnes and on the basis of the recycling share, which can then be converted into CO2 equivalents.  |
 |  **Conflicting goals and synergies**
-In addition to CO2 savings, waste avoidance can lead to further synergies. In the long term, the dependence on imports of raw materials can be reduced, which, after the experiences of the Corona pandemic and the Ukraine conflict, represents a significant contribution to supply security. In addition, regional value creation can benefit from the development and expansion of a circular economy.  |
+| In addition to CO2 savings, waste avoidance can lead to further synergies. In the long term, the dependence on imports of raw materials can be reduced, which, after the experiences of the Corona pandemic and the Ukraine conflict, represents a significant contribution to supply security. In addition, regional value creation can benefit from the development and expansion of a circular economy.  |
 |  **Good practice examples**
 • Mannheim Plastic Strategy: https://www.mannheim-gemeinsam-gestalten.de/plastikstrategie
 • Zero Waste Concept Kiel: https://www.kiel.de/de/umwelt_verkehr/zerowaste/_dokumente_zerowaste/zerowaste_kiel_konzept.pdf  |
@@ -4093,8 +4092,7 @@ Climate Neutrality Action Plan
 |  MEASURE 1: REFURBISHMENT OF MUNICIPAL BUILDINGS  |
 | --- |
 |  **Framework conditions:** Increasing the rate and depth of renovation is one of the most important measures in the building sector to achieve climate targets. Therefore, the renovation of the 330 municipal buildings of the City of Mannheim can make a significant contribution towards climate neutrality of the administration. Last but not least, in addition to the actual relevance, the exemplary function of the administration should also be emphasised.
-
-The refurbishment of existing buildings addresses two points to reduce CO2 emissions: Firstly, the reduction of energy demand. This can be achieved by optimising the energy efficiency of the building envelope, which not only leads to a reduction in heating energy demand, but also brings savings in systems engineering, such as ventilation systems, due to better building tightness. Further energy savings are possible with improved energy efficiency of building technology, e.g. use of LEDs. Secondly, the remaining energy demand should be covered by the use of renewable energy sources, so that CO2 emissions can be reduced as effectively as possible. Against this background, it makes sense to use renovation roadmaps to determine the appropriate measures for individual buildings and to develop a prioritisation for the entire building stock.  |
+| The refurbishment of existing buildings addresses two points to reduce CO2 emissions: Firstly, the reduction of energy demand. This can be achieved by optimising the energy efficiency of the building envelope, which not only leads to a reduction in heating energy demand, but also brings savings in systems engineering, such as ventilation systems, due to better building tightness. Further energy savings are possible with improved energy efficiency of building technology, e.g. use of LEDs. Secondly, the remaining energy demand should be covered by the use of renewable energy sources, so that CO2 emissions can be reduced as effectively as possible. Against this background, it makes sense to use renovation roadmaps to determine the appropriate measures for individual buildings and to develop a prioritisation for the entire building stock.  |
 |  **The goal of** this measure is the comprehensive energy refurbishment towards a climate-neutral building stock.
 
 The city of Mannheim has initially focused on the replacement of fossil fuels. In particular, buildings that currently use natural gas should be connected to existing district heating networks as soon as possible or supplied with renewable energies.
@@ -4107,7 +4105,7 @@ An external report concludes that with a 2% refurbishment rate, 16% of the area 
 • Regular examination of the possibilities of PV use, roof and façade greening in the case of redevelopment and on an ongoing basis for properties not due for redevelopment.
 • Initiation of a pilot project: training cooperation between Mannheim University of Applied Sciences, HWK and the City of Mannheim for the refurbishment of public buildings  |
 |  **Time horizon**
-The implementation of the measure should start immediately. The planning and implementation of the refurbishments take time and must be given appropriate weight in the budget, which is why they will only be completed in the medium to long term. Under an ambitious assumption of an annual refurbishment rate of 4% until 2030, a total of 32% of the building stock would be refurbished. The refurbishment of the entire building stock would take until 2045 if the refurbishment rate is maintained. An acceleration is therefore desirable, but at present hardly realistic to assume without massive flanking measures.  |
+| The implementation of the measure should start immediately. The planning and implementation of the refurbishments take time and must be given appropriate weight in the budget, which is why they will only be completed in the medium to long term. Under an ambitious assumption of an annual refurbishment rate of 4% until 2030, a total of 32% of the building stock would be refurbished. The refurbishment of the entire building stock would take until 2045 if the refurbishment rate is maintained. An acceleration is therefore desirable, but at present hardly realistic to assume without massive flanking measures.  |
 |  **Contribution to climate neutrality**
 An estimate of the CO2 reduction potential for 2030, assuming the above-mentioned renovation rate, yields a saving of approx. 11,000 t CO2 with a renovation rate of 32%. Around 8,000 t CO2 are accounted for by energy-efficient building refurbishment with conversion to renewable energies and efficiency measures to optimise ventilation and air-conditioning systems and lighting. Around 3,000 t CO2 can also be saved by installing PV systems on the roofs of the renovated buildings.
 In total, this can save about 36% of the CO2 emissions of the municipal administration.  |
@@ -4392,18 +4390,18 @@ Climate Neutrality Action Plan
 • Citizen participation  |
 | --- |
 |  **Time horizon**
-Organisational structures and work processes cannot be changed in the short term. Agile project approaches are increasingly being tested and consolidated within the framework of the evaluation of organisational structures of the administration.  |
+| Organisational structures and work processes cannot be changed in the short term. Agile project approaches are increasingly being tested and consolidated within the framework of the evaluation of organisational structures of the administration.  |
 |  **Contribution to climate neutrality**
-No direct CO2 savings potential can be attributed to the measure. However, by accelerating implementation, corresponding potentials in other fields of action will be exploited earlier.  |
+| No direct CO2 savings potential can be attributed to the measure. However, by accelerating implementation, corresponding potentials in other fields of action will be exploited earlier.  |
 |  **Responsibility**
 • Creating organisational flexibility: FB 11
 • Citizen participation: FB 15  |
 |  **Financial expenditure**
-No additional costs are expected with the changed work processes. If necessary, it can be helpful to have the process accompanied and evaluated by external expertise.  |
+| No additional costs are expected with the changed work processes. If necessary, it can be helpful to have the process accompanied and evaluated by external expertise.  |
 |  **Monitoring / Indicators**
-Takes place within the framework of the evaluation of organisational structures of the administration.  |
+| Takes place within the framework of the evaluation of organisational structures of the administration.  |
 |  **Conflicting goals and synergies**
-Changes to established work processes may initially meet with rejection from employees. It therefore seems sensible to start the measure as a pilot project in a participatory and cocreative way with relevant organisational units and committed employees.  |
+| Changes to established work processes may initially meet with rejection from employees. It therefore seems sensible to start the measure as a pilot project in a participatory and cocreative way with relevant organisational units and committed employees.  |
 |  **Good practice examples**
 • Mannheim: Heat action plan in cooperation between FB 67 and FB 58: https://www.mannheim-gemeinsam-gestalten.de/sites/default/files/unit/files/mannheimer_hitzaktionsplan.pdf
 • Mannheim: Interdisciplinary Planning Team Spinelli  |
@@ -4818,11 +4816,11 @@ O
 | --- | --- | --- | --- | --- | --- |
 |  Umstellungselement | Indikator | Basisindikator 2018 | Indikatorziel 2030 | Geplante Projektkosten | Direkte Auswirkungen  |
 |  Autofahrten durch ortsunabhängiges Arbeiten reduzieren | Anteil der Auto-Pendler, die neu zu Hause arbeiten | 0 % | 25 % | 0 Euro | Emissionsreduzierung 2030
-• 33.288,470 Tonnen  |
+| • 33.288,470 Tonnen  |
 |  Umstieg von Auto auf Bahn | Anteil der Pkw-Fahrten in Personenkilometer, die neu mit der Bahn zurückgelegt werden | 0 % | 20 % | 0 Euro | Emissionsreduzierung 2030
-• 52.197,707 Tonnen  |
+| • 52.197,707 Tonnen  |
 |  Anteil öffentlicher Verkehrsmittel (Straßenbahn) erhöhen | Anteil der Auto-Pendler, die auf öffentliche Verkehrsmittel (Straßen- und S-Bahnen) umsteigen | 0 % | 25,92 % | 0 Euro | Emissionsreduzierung 2030
-• 31.173,201 Tonnen  |
+| • 31.173,201 Tonnen  |
 |  Anteil öffentlicher Verkehrsmittel (Elektrobus) erhöhen | Anteil der Pendler, die vom privaten Auto auf öffentliche Verkehrsmittel (Elektrobusse) umsteigen | 0 % | 12,98 % | 0 Euro | Emissionsreduzierung 2030
 • 11.944,196 Tonnen
 Nettoersperrchen 2018-2030
@@ -4848,7 +4846,7 @@ Nettokosten 2018-2030
 • Wartungskosten, -19.225.635,95 Euro  |
 |  |   |   |   |   |   |
 |  Verbesserte Antriebstechnologien | Anteil der Pkw mit Verbrennungsmotor, die durch verbesserte Fahrzeugtechnologie eine Emissionsreduzierung erreichen | 0 % | 25 % | 0 Euro | Emissionsreduzierung 2030
-• 2.189,007 Tonnen  |
+| • 2.189,007 Tonnen  |
 |  Elektroautos | Anteil der Pkw mit Verbrennungsmotor, die durch Elektroautos ersetzt werden | 0 % | 20,86 % | 0 Euro | Emissionsreduzierung 2030
 • 37.886,008 Tonnen
 Nettoersperrchen 2018-2030
@@ -4862,15 +4860,15 @@ Nettoersperrchen 2018-2030
 Nettokosten 2018-2030
 • Kosten von Unfällen, 0,00 Euro  |
 |  Erneuerbaren Anteil im Diesel erhöhen | Anteil Biokraftstoff (HVS) in Diesel | 10 % | 32 % | 0 Euro | Emissionsreduzierung 2030
-• 2.246,965 Tonnen  |
+| • 2.246,965 Tonnen  |
 |  Wechsel zu gasbetriebenen Fahrzeugen | Anteil der privaten Autos, die auf Gas (CNG oder CBG) umgestellt wurden. | 0 % | 3 % | 0 Euro | Emissionsreduzierung 2030
-• -2.260,015 Tonnen  |
+| • -2.260,015 Tonnen  |
 |  Verlagerung auf den Schienenverkehr | Anteil der Güter, die von Schwertransporten auf die Schiene verlagert werden | 0 % | 25 % | 0 Euro | Emissionsreduzierung 2030
-• 49.423,918 Tonnen  |
+| • 49.423,918 Tonnen  |
 |  Auslastung von Leichttransportern verbessern | Verbesserte Auslastung (Anteil der ungenutzten Kapazitäten, die neu genutzt wird) | 0 % | 25 % | 0 Euro | Emissionsreduzierung 2030
-• 1.027,522 Tonnen  |
+| • 1.027,522 Tonnen  |
 |  Transportnutzen von Leichttransportern optimieren | Anteil der Leichttransporter, die durch Rautenoptimierung eine Emissionsreduzierung von 20% erreichen | 0 % | 25 % | 0 Euro | Emissionsreduzierung 2030
-• 3.131,420 Tonnen  |
+| • 3.131,420 Tonnen  |
 |  Auslastung von Schwertransportern verbessern | Verbesserte Auslastung (Anteil der ungenutzten Kapazitäten, die neu genutzt wird) | 0 % | 25 % | 0 Euro | Emissionsreduzierung 2030
 • 0,000 Tonnen  |
 STADT MANNHEIM
@@ -5167,15 +5165,15 @@ Annex 1: 3 million € start-up financing implementation KSAP in the financial y
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  1 | PV offensive | Energy production | PV offensive on municipal | Accelerated PV expansion schools (from Project pipeline xMAkt City GmbH) | 750.000 | - | 750.000 € | X  |
 |  2 | Promotion for the conversion of the heat supply | Energy production | Tackling the energy crisis benefits for climate protection | a) Oil/gas scrapping incentive programme (400,000)
-b) Citizens' information "District heating in priority areas / heat supply in areas without connection prospects": (50,000) | 450.000 | 1,5* | 600.000 € | X  |
+| b) Citizens' information "District heating in priority areas / heat supply in areas without connection prospects": (50,000) | 450.000 | 1,5* | 600.000 € | X  |
 |  3 | Qualification offensive | Trade, commerce services | Qualification offensive for crafts / trades | Implementation of measures in cooperation with the Rhine-Neckar Skilled Workers Alliance (People and competences) | 150.000 |  | 150.000 € |   |
 |  4 | Forest conversion | Land use | Climate-neutral forest conversion / promotion of biodiversity | a) Creation of the personnel prerequisites to accelerate forest conversion (2 VK)
-b) Preparatory analysis Biodiversity, esp. forest (50,000) | 50.000 | 2,0 | 200.000 € |   |
+| b) Preparatory analysis Biodiversity, esp. forest (50,000) | 50.000 | 2,0 | 200.000 € |   |
 |  5 | Sponge City Mannheim | Green-blue infrastructures | Increasing CO2 sink capacity and climate impact adaptation | a) Unsealing/planting measures in public spaces - accelerated implementation Project pipeline (100,000)
-b) Schoolyard Unsealing Programme - Project pipeline available (50,000) | 150.000 | - | 150.000 € |   |
+| b) Schoolyard Unsealing Programme - Project pipeline available (50,000) | 150.000 | - | 150.000 € |   |
 |  6 | Shift MIV to public transport | Mobility | Promote the attractiveness of public transport - range of services expand | Expansion of the FIPS offer | 250.000 | - | 250.000 € | X  |
 |  7 | Redevelopment open | Private households | Forcing leverage through funding programmes | a) Increase: PV funding, energy refurbishment (300,000);
-b) NEW: Tenant subsidies - balcony PV; scrapping premium refrigerators for low-income earners (120,000+50,000). | 470.000 | 1,0* | 550.000 € | X  |
+| b) NEW: Tenant subsidies - balcony PV; scrapping premium refrigerators for low-income earners (120,000+50,000). | 470.000 | 1,0* | 550.000 € | X  |
 |  8 | Climate protection management in the Quarter | Municipal administration | Raising funds for renovation offensive | Energetic refurbishment in the neighbourhood - doubling of areas | 220.000 | 1,0 | 300.000 € | X  |
 |  9 | Project Management |  | Coordination / Monitoring / Documentation | Project management, documentation, performance review / evaluation | 10.000 | 0,5 | 50.000 € |   |
 
@@ -6017,9 +6015,9 @@ O
 | --- | --- | --- | --- | --- |
 |  National Steering Forum | Climate Neutrality Target – all sectors | National Government | Representatives from Ministries of the national government | Federal Ministery of Research and Education  |
 |  Working Group
-German EU Mission Cities | Climate Neutrality Target – all sectors | Local Authority – representatives of the 9 German EU-Mission city | Christian Alecke | Federal Ministery of Research and Education  |
+| German EU Mission Cities | Climate Neutrality Target – all sectors | Local Authority – representatives of the 9 German EU-Mission city | Christian Alecke | Federal Ministery of Research and Education  |
 |   |   |   |  Timan Bucholz
-Dominique Breier | Federal Ministery of Housing, Urban Development and Construction  |
+| Dominique Breier | Federal Ministery of Housing, Urban Development and Construction  |
 |   |   |   |  |   |
 |  Mannheim |  |  | Agnes Schönfelder (Mannheim) | spokespersons to the national level  |
 |  Aachen |  |  |  | 100CNC contact point and Spokesperson Local Green Deal, EU Climate Policy Advisor – Mayors Department  |
@@ -6042,7 +6040,7 @@ We, the undersigned, hereby commit to help make the City of Mannheim climate neu
 |  Date of signature | Name | Signature  |
 | --- | --- | --- |
 |  Mannheim, 14.03.2023 | Dr. Peter Kurz
-Mayor City of Mannheim | Peter Kurz  |
+| Mayor City of Mannheim | Peter Kurz  |
 |  Mannheim, 14.03.2023 | Christian Specht
 First Deputy Mayor City of Mannheim
 Finance, Shareholdings,

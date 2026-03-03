@@ -384,7 +384,7 @@ ZERO
 CITIES
 
 |  used) | oil products: 370 900 |  |  | oil products: 370 900
-electricity: 630 454  |
+| electricity: 630 454  |
 | --- | --- | --- | --- | --- |
 |  Agriculture, forestry and land use (AFOLU) | 71 844 | 25 315 | not calculated | 97 159  |
 |  (Type of fuel/energy used) | wood: 7 480
@@ -1027,7 +1027,7 @@ provide a structured, simple, easy-to-understand mobility offer for all resident
 Develop school ecomobility | Infrastructure | -increased use of car-sharing schemes | -expansion of bicycle paths |  | -better air quality
 children's independence  |
 |  Increased car pooling | 1. support 1,000 households a year with climate challenges
-Promote the development of alternatives to individual car use | Governance | -use of alternative modes (bicycles, woodybus, etc.) to get to school | -increased use of public transport and bicycles | 129 |   |
+| Promote the development of alternatives to individual car use | Governance | -use of alternative modes (bicycles, woodybus, etc.) to get to school | -increased use of public transport and bicycles | 129 |   |
 |   |  11. Reduce the impact of carbon-based mobility
 provide a structured, simple, easy-to-understand mobility offer for all residents of the metropolitan area
 Develop school ecomobility | Infrastructure | -increased carpooling | -acceptance of carpooling as a regular mode of transport | 69 | -creating social links  |
@@ -1409,7 +1409,7 @@ Page 58
 |  Agricultural resilience: protecting biodiversity and water resources | Natural carbon sinks |  | Carbon structure and ecological resilience | Create a structure to store carbon and increase ecological resilience. Fund local natural carbon storage and environmental restoration projects (biodiversity, soil, water). Aggregate private (companies, individuals) funding to redistribute in local projects, complementing public funding. Provide advice to evaluate carbon stocks and potential. Extend action beyond Nantes Métropole, including neighboring communities, the Nantes St. Nazaire Metropolitan Pole, and department 44.  |
 |  Resilience and crisis management | Civic involvement |  | Strengthening the population's risk culture and memory | A weak risk culture and the loss of memory of past events make a region's population more vulnerable to future crises. In the face of climate change, strengthening the culture and memory of risk is a key factor in building resilience.  |
 |   |  |  |  | -flooding actions included in the PAPI loire Aval 2023-2029
-Global strategy to be developed by the community  |
+| Global strategy to be developed by the community  |
 | --- | --- | --- | --- | --- |
 
 Nantes Métropole - Climate City Contract
@@ -1501,7 +1501,7 @@ Page 65
 |  Target / Expected Impact | Action / Project | Indicator No. | Indicator Name | Target value  |   |   |
 |   |  |  |  | 2025 | 2027 | 2030  |
 |   | 50. Support the region in promoting renewable heat projects (including CCRt)
-Support local renewable gas project developers, including innovation |  |  |  |  |   |
+| Support local renewable gas project developers, including innovation |  |  |  |  |   |
 |  Reduction of collected waste and increase in reuse/recycling | 31. Make reuse year economic priority with the opening of a totem pole and the experimentation of a partnership platform.
 Draw up a regional roadmap with local players to increase the use of construction waste and bio-sourced materials and structure year eco-construction sector.
 Open a metropolitan "ressourcerie" and support the opening of "boutiques de réemploi" in every municipality and every urban policy district. | D1 | Collected waste |  |  |   |
@@ -2200,7 +2200,7 @@ Page 94
 ## 1. A climate plan for the people
 
 |  MITIGATION
-A climate plan for the people | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | green house gas  |
+| A climate plan for the people | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | green house gas  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Leader: Nantes Métropole
 Potential partners: Alisée, Université Gustave Eiffel, Nantes Université, Samoa, DRNA, Hespul.
@@ -2220,7 +2220,7 @@ Biodiversity | +++
 +
 +++
 | +
-Will be evaluated during the trial  |
+| Will be evaluated during the trial  |
 |   |  1. Support 1,000 households a year with climate challenges  |   |   |   |   |   |
 |  key contextual factors
 • action 88 of the roadmap of the "Grand Débat Fabrique de nos villes
@@ -2230,8 +2230,7 @@ indicators and goals
 Cost
 • ++: 1,5M€ (trial) | Description of the action  |   |   |   |   |   |
 |   |  Initiated as part of a European project, the Climate Challenges aim to help 1,000 households a year change their lifestyles. Relying on piloting partners and a network of relay structures located throughout France, and with the help of a mobile application, the challenges enable everyone to test new low-carbon daily practices.
-
-The Bifurcation workshop has proposed working on a "my week really without a car" challenge: this proposal is to be explored and integrated into future itineraries to be offered to participants.  |   |   |   |   |   |
+| The Bifurcation workshop has proposed working on a "my week really without a car" challenge: this proposal is to be explored and integrated into future itineraries to be offered to participants.  |   |   |   |   |   |
 |   |  Implementation schedule  |   |   |   |   |   |
 |   |  Committed / start in March 2024
 Medium-term: European financing ending in May 2025, arbitration to be carried out for continuation of program until 2030  |   |   |   |   |   |
@@ -2250,7 +2249,7 @@ les-defis-climat | success factors and obstacles  |
 | --- | --- |
 |   |  A person living in Nantes emits around 9T of CO2/year. To achieve carbon neutrality, we would need to reduce our emissions to 2T of CO2/year, which means radically changing our lifestyle. Individual action has year impact on 25% of carbon emissions alone.  |
 |  MITIGATION
-A climate plan for the people | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | green house gas  |
+| A climate plan for the people | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | green house gas  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Leader: Nantes Métropole
 Potential partners: Ecopole and its network . Communes. | Acceptability
@@ -2279,7 +2278,7 @@ indicators and goals
 Cost
 • 560 k€ per year | Description of the action  |   |   |   |   |   |
 |   |  Since the mid-2000s, Nantes Métropole has offered a multi-themed educational package to schools in the metropolis. In 2018, following the Grand Débat Transition Énergétique, a territorial educational offer around 5 themes was proposed. Since then, new themes have emerged: food and then inodation risk.
-At the end of the year, classes involved in the "challenges" can share their experiences and celebrate their successes (energy savings, waste reduction, etc.).  |   |   |   |   |   |
+| At the end of the year, classes involved in the "challenges" can share their experiences and celebrate their successes (energy savings, waste reduction, etc.).  |   |   |   |   |   |
 |   |  Implementation schedule  |   |   |   |   |   |
 |   |  Committed  |   |   |   |   |   |
 |   |  success factors and obstacles  |   |   |   |   |   |
@@ -2317,7 +2316,7 @@ locally rooted projects
 Obstacles :
 ultra-transversal projects that sometimes struggle to find the "right" thematic funding  |   |
 |  MITIGATION
-A climate plan for the people | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | green house gas  |
+| A climate plan for the people | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | green house gas  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Leader: Nantes Métropole
 Potential partners: | Acceptability
@@ -2350,7 +2349,7 @@ Nantes Métropole - Climate City Contract
 Page 100
 
 |   | Potential stakeholders : REEVE | Local dynamics
-Climate change adaptation | + | Biodiversity | - |   |
+| Climate change adaptation | + | Biodiversity | - |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |  **5. Developing a 100% eco-event strategy**  |   |   |   |   |   |   |
 |  **key contextual factors**
@@ -2372,7 +2371,7 @@ Climate change adaptation | + | Biodiversity | - |   |
 • Number of events supported in eco-event management by the challenge
 • Number of people trained |   |   |   |   |   |   |
 |  **Cost**
-• 65K€ / year | **Implementation schedule**  |   |   |   |   |   |
+| • 65K€ / year | **Implementation schedule**  |   |   |   |   |   |
 |  **state of progress**
 to amplify
 Planned
@@ -2422,7 +2421,7 @@ Cultural stakeholders already sensitive to the challenges of ecological transiti
 Obstacles:
 A wide range of cultural offerings in the region: carefully consider how to promote these proposals.  |
 |  MITIGATION
-A climate plan for the people | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | green house gas  |
+| A climate plan for the people | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | green house gas  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Leader: Nantes Métropole (DCEI+DATE)
 Potential stakeholders : | Acceptability
@@ -2442,7 +2441,7 @@ Other ? | +++
 | en kteq CO2  |
 |   |  7. “Place aux actes”, a web magazine to support changes in practices  |   |   |   |   |   |
 |  key contextual factors
-• Approximately 600,000 visits per month to metropole.nantes.fr | Description of the action  |   |   |   |   |   |
+| • Approximately 600,000 visits per month to metropole.nantes.fr | Description of the action  |   |   |   |   |   |
 |   |  Creation of a dedicated section on the corporate website.
 Publication of two articles per week and distribution of content on the local authority's social networks.
 Editorial line: practical articles, advice, testimonials from local residents and stakeholders to facilitate changes in behavior (food, waste,  |   |   |   |   |   |
@@ -2539,7 +2538,7 @@ To commit | **Description of the action**  |
 |   |  Supporting local authorities and providing them with specific advice on actions to be implemented, and setting up working groups on long-term investment issues to meet regulatory requirements and energy efficiency targets.  |
 |   |  **Calendrier de mise en œuvre**  |
 |   |  Start in November 2022, 1st assessment in summer 2023. 2nd assessment in summer 2024
-Sustainability of the sobriety plan: territory-wide review every 2 years.  |
+| Sustainability of the sobriety plan: territory-wide review every 2 years.  |
 |  **success factors and obstacles**  |   |
 |  **Success factors** :
 Acceptability of sobriety actions / First actions requiring no specific investment / Involvement of all stakeholders
@@ -2559,7 +2558,7 @@ Nantes Métropole - Climate City Contract
 Page 107
 
 |  MITIGATION
-Sobriety: reducing our needs | stakeholders | impacts / cobenefits (from -- to +++) |   |   |   | green house gas  |
+| Sobriety: reducing our needs | stakeholders | impacts / cobenefits (from -- to +++) |   |   |   | green house gas  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Leader : Nantes Métropole
 Potential stakeholders : Naolib | Acceptability
@@ -2602,7 +2601,7 @@ Transform the car into a daily collective transport option (development of carpo
 Amplify actions to promote behavior change  |   |   |   |   |   |
 |   |  Implementation schedule  |   |   |   |   |   |
 |   |  Committed
-Short term / medium term / long term  |   |   |   |   |   |
+| Short term / medium term / long term  |   |   |   |   |   |
 |   |  success factors and obstacles  |   |   |   |   |   |
 |   |  Success factors:
 • Acceptance of the city at 30 km/h
@@ -2646,9 +2645,9 @@ The Bifurcation workshop identified school ecomobility as a priority issue.  |
 | --- | --- |
 |   |  success factors and obstacles  |
 |   |  Success factor: Willingness and capacity to mobilize all stakeholders involved: local authorities, schools including parents, metropolitan services including local hubs.
-Obstacles: Resources available (human and financial) to intervene in public spaces and on school premises.  |
+| Obstacles: Resources available (human and financial) to intervene in public spaces and on school premises.  |
 |  MITIGATION
-Sobriety: reducing our needs | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | Gaz à effet de serre  |
+| Sobriety: reducing our needs | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | Gaz à effet de serre  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Leader : Mobility Department Nantes Metropole
 Potential stakeholders : agents, operators, associations, citizens | Acceptability
@@ -2668,7 +2667,7 @@ Other ? | +++
 | in kteq CO2  |
 |   |  14. Co-construction and testing of “mobility stations”  |   |   |   |   |   |
 |  key contextual factors
-• action 93 of the roadmap of the "Grand Débat Fabrique de nos villes | Description of the action  |   |   |   |   |   |
+| • action 93 of the roadmap of the "Grand Débat Fabrique de nos villes | Description of the action  |   |   |   |   |   |
 |   |  The aim is to provide complementary solutions to help achieve the objectives of the Metropole's public mobility policy, i.e. to support behavioral change towards sustainable mobility and make attractive alternatives to the private car by facilitating multi-modality.  |   |   |   |   |   |
 Nantes Métropole - Climate City Contract
 Page 111
@@ -2683,7 +2682,7 @@ implementing the experiment | The aim is to propose solutions based on a strong 
 To define the precise form/function/use of these stations, a "user-centric" method will be used, co-constructed with stakeholders (agents, operators, associations, citizens), namely service design.  |
 | --- | --- |
 |   |  A reference framework will be drawn up, proposing possible modules/solutions to be implemented/articulated in the area.
-Some solutions will be tested in late 24-early 2025, before being rolled out more widely.  |
+| Some solutions will be tested in late 24-early 2025, before being rolled out more widely.  |
 |   |  Implementation schedule  |
 |  state of progress
 to amplify
@@ -2692,9 +2691,9 @@ To commit | Underway
 co-design work begun in late 2023; diagnostic phase completed in February 2024 (with field immersion and collective workshops for agents, operators, citizens, associations); solution design phase underway until end of June 24. Field testing late 24-early 25.  |
 |   |  success factors and obstacles  |
 |   |  - a "user-centered" design, co-constructed with stakeholders; user needs should guide thinking to avoid "out of ground" solutions, and facilitate innovative and creative thinking about stations "à la nantaise", beyond "known" solutions such as PEM (Pôle d'Echange Multimodal).
-solutions tailored to local conditions  |
+| solutions tailored to local conditions  |
 |  MITIGATION
-Sobriety: reducing our needs | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | green house gas  |
+| Sobriety: reducing our needs | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | green house gas  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Leader : DM
 Potential stakeholders : DEP,
@@ -2826,7 +2825,7 @@ HR requirements for management to be validated
 number of operations to be carried out at the same time (maintenance of activities, capacity of craftsmen, recruitment for management to be carried out)
 
 |  MITIGATION
-Sobriety: reducing our needs | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | green house gas  |
+| Sobriety: reducing our needs | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | green house gas  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Leader: DEER/SET
 Potential stakeholders:
@@ -3027,7 +3026,7 @@ To commit
 Dealing with this issue at the right scale (it's also a topical issue raised by PETR de Retz)
 
 |  MITIGATION
-Sobriety: reducing our needs | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | green house gas  |
+| Sobriety: reducing our needs | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | green house gas  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Leader: Nantes Métropole
 Potential stakeholders: SSE stakeholders, companies, economic activity-based integration structures, ESATs (establishments or services providing assistance through work) | Acceptability
@@ -3047,7 +3046,7 @@ Biodiversity | +++
 ++
 +++
 | Not easily
-quantifiable  |
+| quantifiable  |
 |   |  25. Prendre en compte les enjeux de transition écologique dans les démarches d'achats  |   |   |   |   |   |
 |  key contextual factors
 • some 1,300 contracts for a financial volume of 530 million euros awarded by NM-Ville de Nantes and CCAS
@@ -3075,7 +3074,7 @@ Commit to a responsible digital approach (Join the Agec law with at least 20% re
 | --- | --- |
 |   |  **Implementation schedule**  |
 |   |  1st version of the SPAR in 2017-2021
-nd version of SPAR in 2022-2026  |
+| nd version of SPAR in 2022-2026  |
 |   |  **success factors and obstacles**  |
 |  **Indicateurs**
 • number of contracts including environmental and/or social considerations
@@ -3133,7 +3132,7 @@ Initiate the conversion of obsolete and under-utilized offices into housing on 2
 | --- | --- |
 |  **Implementation schedule**  |   |
 |  Committed
-Medium - long term  |   |
+| Medium - long term  |   |
 |  **success factors and obstacles**  |   |
 |  Success factor: partnership approach with stakeholders in the building and public works sector and re-emplaw (companies, network heads...)  |   |
 Nantes Métropole - Climate City Contract
@@ -3145,7 +3144,7 @@ Nantes Métropole - Climate City Contract
 Page 129
 
 |  MITIGATION
-Resources: reducing imported emissions | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | green house gas  |
+| Resources: reducing imported emissions | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | green house gas  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Leader: BATII Nantes Métropole
 Potential stakeholders: asset-allocating departments | Acceptability
@@ -3187,7 +3186,7 @@ Nantes Métropole - Climate City Contract
 Page 130
 
 |  MITIGATION
-Resources: reducing imported emissions | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | Gaz à effet de serre  |
+| Resources: reducing imported emissions | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | Gaz à effet de serre  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Leader: Nantes Métropole
 Potential stakeholders: | Acceptability
@@ -3238,7 +3237,7 @@ studies on town centers (to be undertaken in municipalities that have not alread
 |   |  success factors and obstacles  |
 |   |  |
 |  MITIGATION
-Resources: reducing imported emissions | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | green house gas  |
+| Resources: reducing imported emissions | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | green house gas  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Leader : Nantes Métropole
 Potential stakeholders : | Acceptability
@@ -3279,7 +3278,7 @@ Procedure for modifying the PLUm: 2024
 Approval of PLUm modification (with updated OAP Commerce): March 2025  |
 |   | success factors and obstacles  |
 |   | Success factors: political support for new orientations, operational implementation of urban projects
-Barriers: acceptability to retail stakeholders and real-estate operators of a change of model  |
+| Barriers: acceptability to retail stakeholders and real-estate operators of a change of model  |
 |   | stakeholders | impacts / cobenefits (from - - to +++) | Gaz à effet de serre  |
 | --- | --- | --- | --- |
 
@@ -3351,7 +3350,7 @@ land availability
 project ownership and financing model
 shared governance model  |
 |  MITIGATION
-Resources: reducing imported emissions | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | green house gas  |
+| Resources: reducing imported emissions | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | green house gas  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Leader: DEER - DD
 Potential stakeholders: Les Ecosolies,
@@ -3373,7 +3372,7 @@ Biodiversity | +
 quantifiable  |
 |   |  33. Open a metropolitan recycling center (“ressourcerie”) and support the opening of second-hand stores in every commune and every urban district.  |   |   |   |   |   |
 |  key contextual factors
-• Action n°45 marker n°3 of the roadmap of the Grand Débat | Description of the action  |   |   |   |   |   |
+| • Action n°45 marker n°3 of the roadmap of the Grand Débat | Description of the action  |   |   |   |   |   |
 |   |  In response to the challenges of waste reduction and prevention, solidarity, social cohesion and integration, Nantes Métropole has  |   |   |   |   |   |
 Nantes Métropole - Climate City Contract
 Page 137
@@ -3416,7 +3415,7 @@ Nantes Métropole - Climate City Contract
 Page 138
 
 |  MITIGATION
-Resources: reducing imported emissions | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | green house gas  |
+| Resources: reducing imported emissions | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | green house gas  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Leader: Nantes Métropole
 Potential stakeholders: Chamber of Trades and Crafts, actors of Social and Solidarity Economy | Acceptability
@@ -3445,7 +3444,7 @@ to amplify
 Planned
 To commit | Description of the action  |   |   |   |   |   |
 |   |  The Social and Solidarity Economy (SSE) is a group of companies that seeks to reconcile social utility, solidarity, economic performance and democratic governance.
-In order to limit the production of waste and combat the programmed obsolescence of certain products, a project will be launched with SSE stakeholders to develop a service offering that will enable better repairing and thus increase the longevity of goods.  |   |   |   |   |   |
+| In order to limit the production of waste and combat the programmed obsolescence of certain products, a project will be launched with SSE stakeholders to develop a service offering that will enable better repairing and thus increase the longevity of goods.  |   |   |   |   |   |
 |   |  Implementation schedule  |   |   |   |   |   |
 |   |  to amplify
 Short term: action to be undertaken with the Chamber of Trades and Crafts (see NM/CMA action plan) to support companies involved in repair and reconditioning in the field of responsible digital technology, to make the existing offer in the region more visible.
@@ -3494,7 +3493,7 @@ Nantes Métropole - Climate City Contract
 Page 141
 
 |  MITIGATION
-Resources: reducing imported emissions | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | green house gas  |
+| Resources: reducing imported emissions | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | green house gas  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Leader : Nantes Métropole
 Potential stakeholders : | Acceptability
@@ -3587,7 +3586,7 @@ Page 144
 
 Nantes Métropole - Climate City Contract
 |   | Committed
-Short term / medium term  |
+| Short term / medium term  |
 | --- | --- |
 |   |  success factors and obstacles  |
 |   |  Success factor :
@@ -3600,7 +3599,7 @@ Acceptability of visible renewable energy projects (wind power, methanization, g
 Lack of engineering resources to develop projects
 Legal, regulatory and financial complexity of project set-up and implementation  |
 |  MITIGATION
-Energy mix: 20% local renewable production by 2030, 100% renewable consumption by 2050 | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | green house gas  |
+| Energy mix: 20% local renewable production by 2030, 100% renewable consumption by 2050 | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | green house gas  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Leader : DATE
 Potential stakeholders : Alisée, Récit, Communes | Acceptability
@@ -3668,7 +3667,7 @@ This approach is also part of the OSER project (Outil de Simulation de systèmes
 | --- | --- |
 |  **Implementation schedule**  |   |
 |  Committed
-Short term - first CADER launched in 2024  |   |
+| Short term - first CADER launched in 2024  |   |
 |  **success factors and obstacles**  |   |
 Success factor :
 Mobilization of partners
@@ -3708,7 +3707,7 @@ integration of the various public policies and NM departments concerned by parki
 use of electricity produced as locally as possible (self-consumption) to improve acceptability and profitability.
 partnership with a departmental player  |   |   |   |   |
 |  MITIGATION
-Energy mix: 20% local renewable production by 2030, 100% renewable consumption by 2050 | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | green house gas  |
+| Energy mix: 20% local renewable production by 2030, 100% renewable consumption by 2050 | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | green house gas  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Leader : NM - BATII
 
@@ -3727,7 +3726,7 @@ Biodiversity | ++
 |   | 44. Roll out the BATII roadmap for photovoltaic solar power on public property.  |
 | --- | --- |
 |  key contextual factors
-• Target 50% local RE in 2050 / 20% in 2030 | Description of the action  |
+| • Target 50% local RE in 2050 / 20% in 2030 | Description of the action  |
 |  indicators and goals
 • 2026: 3 661 kWc
 • 2026: 17 726 m2 | Encourage the creation of collective self-consumption loops to benefit locally from renewable, low-carbon energy, thereby helping to reduce carbon footprints and promote the local energy transition.
@@ -3735,7 +3734,7 @@ Biodiversity | ++
 Target 8 self-consumption loops by 2027
 Reach 57 photovoltaic installations by 2026, enabling production of 3,661 kWp (compared with 25 installations currently on City of Nantes and Nantes Métropole buildings).  |
 |  Cost
-• 930 000€ /year, until 2026 | Implementation schedule  |
+| • 930 000€ /year, until 2026 | Implementation schedule  |
 |  state of progress
 to amplify
 Planned
@@ -3745,7 +3744,7 @@ To commit | Committed
 2026: 57 plants / 17,726 m2 / 3,661 kWp (forecast)
 2027: 8 collective self-consumption loops  |
 |  links to go further
-https://metropole.nantes.fr/actualites/2024/dechets-proprete-eau-energie/acceleration-solaire | success factors and obstacles  |
+| https://metropole.nantes.fr/actualites/2024/dechets-proprete-eau-energie/acceleration-solaire | success factors and obstacles  |
 |   | Success factor:
 A large number of public buildings available and usable
 The momentum is already there
@@ -3809,8 +3808,8 @@ Extend the scope of the study to include abandoned roads and railroad sidings, a
 | --- | --- |
 |   |  Implementation schedule  |
 |  Cost
-• + | To be committed
-Medium / long term  |
+| • + | To be committed |
+| Medium / long term  |
 |   |  success factors and obstacles  |
 |  state of progress
 to amplify
@@ -3819,7 +3818,7 @@ To commit | Success factor: land already developed
 Barriers: technical complexity / acceptability - consumption of materials for project implementation
 Project not identified in acceleration zones due to lack of study  |
 |  MITIGATION
-Energy mix: 20% local renewable production by 2030, 100% renewable consumption by 2050 | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | green house gas  |
+| Energy mix: 20% local renewable production by 2030, 100% renewable consumption by 2050 | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | green house gas  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Leader : NM-DATE
 Potential stakeholders : Chamber of Agriculture, CAP44 | Acceptability
@@ -3867,10 +3866,10 @@ Define conditions for the development of agrivoltaics in metropolitan France - s
 Disseminate the doctrine throughout the NM territory/communes  |
 |   |  **Implementation schedule**  |
 |   |  **Committed**
-Short term / medium term  |
+| Short term / medium term  |
 |   |  **success factors and obstacles**  |
 |   |  **Success factor:** territorial dialogue with Nantes Métropole
-**Obstacles:** control difficulties  |
+| **Obstacles:** control difficulties  |
 |  MITIGATION Energy mix: 20% local renewable production by 2030, 100% renewable consumption by 2050 Key action | stakeholders | impacts / cobenefits (from - - to +++) |   |   |   | green house gas  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Leader: NM - DEP Potential stakeholders: | Acceptability Cost Benefits/cost local dynamic Climate change adaptation | ++ ++ ++ +++ +++ | Health Ressources Climate Biodiversity | + ++ + | 60 kteq CO2 per year in 2022  |
@@ -3887,7 +3886,7 @@ Page 159
 • Master plan for heating networks has identified the potential for the development of heating networks in Nantes Métropole. | Implementation schedule  |
 | --- | --- |
 |   |  Committed and to be committed
-A medium term et long term  |
+| A medium term et long term  |
 |   |  success factors and obstacles  |
 |  indicators and goals :
 • +240 GWh from the extension/densification of existing networks
@@ -3899,7 +3898,7 @@ Maintain vigilance over biomass resources on a regional scale.
 Obstacles:
 Acceptability of the energy production equipment needed to develop heating networks.  |
 |  Cost
-• +++ |   |
+| • +++ |   |
 |  state of progress
 to amplify
 Planned
@@ -4056,7 +4055,7 @@ Action n°51 therefore proposes to set a target to reduce the rate of annual ENA
 Action n°51, consists in continuing the reduction in the rate of ENAF consumption observed for two decades now, notably through reducing the consumption of spaces in extension of the urban envelope, amplifying urban renewal, optimizing density, and protecting agricultural, natural and forested spaces.  |   |   |   |   |   |
 |   |  Implementation schedule  |   |   |   |   |   |
 |   |  Committed
-Medium-term  |   |   |   |   |   |
+| Medium-term  |   |   |   |   |   |
 |   |  success factors and obstacles  |   |   |   |   |   |
 Nantes Métropole - Climate City Contract
 Page 164
@@ -4069,13 +4068,13 @@ Define strategies for areas where renewal/optimization is at stake
 Support stakeholders in regional development with a view to reducing land use.  |
 | --- | --- |
 |  Cost
-• + |   |
+| • + |   |
 |  state of progress
 to amplify
 Planned
 To commit |   |
 |  MITIGATION
-Natural carbon sinks: preserving and developing | stakeholders | Impacts (de - - à +++) |   | Co-bénéfices  |
+| Natural carbon sinks: preserving and developing | stakeholders | Impacts (de - - à +++) |   | Co-bénéfices  |
 | --- | --- | --- | --- | --- |
 |   |  Leader: Nantes Métropole
 Potential stakeholders: Fibois Pays de la Loire, project aggregators (CRPF, Fransylva, CIVAM, FRC, AFAC, etc.), funding bodies (e.g. DR ONA), other local authorities in the Loire Atlantique region. | Acceptability
@@ -4119,9 +4118,9 @@ Individuals The structure created could have a shared governance structure repre
 | --- | --- |
 |  **Objectif:** creation of the structure |   |
 |  **Cost**
-HR and Research |   |
+| HR and Research |   |
 |  **links to go further:**
-La Rochelle carbon cooperative: https://larochelle.cooperativecarbone.fr/ |   |
+| La Rochelle carbon cooperative: https://larochelle.cooperativecarbone.fr/ |   |
 |  **state of progress**
 to amplify
 Planifiée
@@ -4165,8 +4164,8 @@ Nantes Métropole - Climate City Contract
 Page 168
 
 |  Planned
-A engager | Short term / medium term / long term ⇒ studies and work by 2033
-Including work already launched and continuing on Cens, Gesvres and Charbonneau, as well as Grande Vallée de Bouguenais and Marais nord loire.  |
+| A engager | Short term / medium term / long term ⇒ studies and work by 2033 |
+| Including work already launched and continuing on Cens, Gesvres and Charbonneau, as well as Grande Vallée de Bouguenais and Marais nord loire.  |
 | --- | --- |
 |   |  **success factors and obstacles**  |
 |   |  Human and financial resources (GEMAPI tax set up to finance these actions)
@@ -4203,7 +4202,7 @@ condominium gardens  |
 • Number of cooling cluster referenced
 • Number of cooling cluster equipped |   |
 |  **Cost :**
-Equipment: signage, seating, drinking fountains |   |
+| Equipment: signage, seating, drinking fountains |   |
 |  **links to go further:**
 https://metropole.nantes.fr/fortes-chaleurs
 https://metropole.nantes.fr/actualites/2024/environnement-nature/une-charte-pour-proteger-et-renf | **Methods (human, technical and financial resources to be mobilized) and implementation schedule**
@@ -4352,7 +4351,7 @@ Companies
 Institutions
 Individuals  |
 |  **links to go further:**
-La Rochelle carbon cooperative: https://larochelle.cooperativecarbone.fr/ | The structure created could have a shared governance structure representative of funders and civil society (Development Council...)  |
+| La Rochelle carbon cooperative: https://larochelle.cooperativecarbone.fr/ | The structure created could have a shared governance structure representative of funders and civil society (Development Council...)  |
 |  **state of progress**
 to amplify
 Planifiée
@@ -4375,7 +4374,7 @@ Develop year initial emblematic scheme to meet the expectations of project devel
 Resilience and crisis management
 
 |  ADAPTATION
-Resilience and crisis | stakeholders | Impacts (de - - à +++) |   | Co-bénéfices  |
+| Resilience and crisis | stakeholders | Impacts (de - - à +++) |   | Co-bénéfices  |
 | --- | --- | --- | --- | --- |
 |   |  Leader : Nantes métropole | Acceptability
 Cost | +

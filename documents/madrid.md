@@ -416,8 +416,6 @@ In addition, table A-1.4 is used to present the emissions resulting from the two
 | --- | --- | --- | --- | --- | --- | --- |
 |  Emission factors from the emissions inventory of the Madrid City Council, year 2019. This inventory uses IPCC and EMEP/EEA as reference methodologies. In the case of being global emission factors characteristic of a sector as a whole, they have been obtained secondarily, as the quotient between the total emissions of the sector and the corresponding activity variable.  |   |   |   |   |   |   |
 |  Activity variable | Carbon dioxide (CO)2 | Methane (CH)4 | Nitrous oxide (N2O) | Hydrofluorocarbons and Perfluorocarbons | Sulphur hexafluoride (SF)6 | Nitrogen trifluoride (NF)3  |
-MADRID
-
 |  Electricity (t/MWh) | 1,49E-01 | 9,17E-06 | 6,17E-06 | - | - | -  |
 | --- | --- | --- | --- | --- | --- | --- |
 |  Electricity (losses, t/MWh) | 2,00E-02 | 1,23E-06 | 8,28E-07 | - | - | -  |
@@ -449,8 +447,6 @@ MADRID
 |  Other biogas (landfill-autorcha, t/t CH4 flared) | - | 8,00E-03 | 9,00E-05 | - | - | -  |
 |  Other biogas (landfill-engine, t/t CH4 flared) | - | 2,80E-02 | 9,00E-05 | - | - | -  |
 |  Other biogas (anaerobic | - | 8,00E-03 | 9,00E-05 | - | - | -  |
-MADRID
-
 |  digestion-antorcha, t/t CH4 flared) |  |  |  |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |  Other biogas (anaerobic digestion-engine, t/t CH4 flared) | - | 2,80E-02 | 9,00E-05 | - | - | -  |
@@ -473,8 +469,6 @@ MADRID
 |  Livestock (sheep, t/head) | - | 1,90E-04 | - | - | - | -  |
 |  Livestock (horses, t/head) | - | 3,33E-03 | - | - | - | -  |
 |  Livestock (laying hens, t/head) | - | 2,04E-05 | - | - | - | -  |
-MADRID
-
 |  A-1.3: Activities by sector of origin → GHG Inventory 2019  |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |  Base year |   |   | 2019 (emissions considered in the current emissions inventory of the municipality of Madrid by scope and sector of activity)  |   |   |   |
@@ -482,8 +476,6 @@ MADRID
 |  Buildings and services |   | Emissions from stationary combustion in boilers, turbines, engines and similar installations | Emissions associated with electricity generation processes whose consumption takes place in the municipality of | Emissions associated with losses in the transport of electricity from the points of generation to the  |   |   |
 |  Commercial and institutional  |   |   |   |   |   |   |
 |  Residential  |   |   |   |   |   |   |
-MADRID
-
 |  Agriculture, forestry, aquaculture |  | Madrid, and within this sector of activity. | points of final consumption.  |
 | --- | --- | --- | --- |
 |  Industry | Emissions from stationary combustion in industrial installations, such as boilers and furnaces, with or without direct contact between treated materials and flue gases | Emissions associated with electricity generation processes whose consumption takes place in the municipality of Madrid, and within this sector of activity. | Emissions associated with losses in the transport of electricity from the points of generation to the points of final consumption.  |
@@ -503,8 +495,6 @@ MADRID
 |  Air traffic  |   |   |   |
 |  Mobile agricultural machinery  |   |   |   |
 |  Industrial mobile machinery  |   |   |   |
-MADRID
-
 |  Gardening machinery |  |  |   |
 | --- | --- | --- | --- |
 |  Other |  |  |   |
@@ -520,8 +510,6 @@ MADRID
 |  Dry cleaning, degreasing and electronic cleaning  |   |   |   |
 |  Manufacture or processing of chemicals  |   |   |   |
 |  Other solvent uses and related activities  |   |   |   |
-MADRID
-
 |  Use of HFCs, PFCs, SF_{6}, N_{2}O and NH_{3} |  |  |   |
 | --- | --- | --- | --- |
 |  Agriculture, forestry and land use | Emissions from the development of agricultural and animal husbandry practices, as well as from the management and exploitation of forests and natural areas | - | -  |
@@ -540,8 +528,6 @@ MADRID
 |  Changes in biomass stocks in forests and other woody biomass pools  |   |   |   |
 |  Waste treatment | Emissions from the various waste management operations | Emissions associated with electricity generation processes | Emissions associated with losses in the transport of electricity  |
 |  Waste incineration  |   |   |   |
-MADRID
-
 |  Landfill |   |  | whose consumption takes place in the municipality of Madrid, and within this sector of activity. | from the points of generation to the points of final consumption.  |
 | --- | --- | --- | --- | --- |
 |  Cremation  |   |   |   |   |
@@ -607,8 +593,6 @@ Below are the tables filled in with data specific to the Economic Model.
 |   |  Transport Buses (g/km) | 745 |  |  |  |  |   |
 |   |  Commercial transport (<3.5 t) (g/km) | 208 |  |  |  |  |   |
 |   |  Commercial transport | 359 |  |  |  |  |   |
-MADRID
-
 |   | (>3.5 t) (g/km) |  |  |  |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Buildings and Heating and Cooling | Heating Production (District Heating) (g/kWh) | 200 |  |  |  |  |   |
@@ -625,8 +609,6 @@ MADRID
 |  Commercial transport demand (<3.5 t) (M km/year) | 345 |  |   |
 |  Commercial transport demand (>3.5 t) (M km/year) | 1084 |  |   |
 |  Buildings and Heating and Cooling |  |  |   |
-MADRID
-
 |  Heating and DHW demand (GWh/year) | 10258 |  |   |
 | --- | --- | --- | --- |
 |  Electricity |  |  |   |
@@ -671,8 +653,6 @@ Indicate relevant policies, strategies or initiatives or regulations at local, r
 |  Type | Level | Name and/or title | Description | Relevance | Necessary actions  |
 |  Institutional Declaration | Local | Declaration of Climate Emergency 2019 | Declaring a climate emergency means assuming the fulfilment of real and binding political commitments, much more ambitious than the current ones, with the consequent allocation of resources to deal with to this crisis. | It involves driving forward the process of education, training and awareness-raising for the whole population about the severity of the ecological crisis and the enormous changes that are needed to curb the emergency. |   |
 |  Strategy | Local | MADRID 360 Sustainability Strategy | The objective of the strategy is to improve air quality through three axes: actions in the city (energy efficiency in municipal buildings and housing), | ... | Measures to promote the transition to efficient air conditioning systems, fleet renewal, the promotion of public transport, the integration of  |
-MADRID
-
 |   |  |  | actions in mobility (such as low-emission zones), and actions in administrative innovation (such as updating local regulations). |  | all modes of transport, the reinforcement of road safety and innovation.  |
 | --- | --- | --- | --- | --- | --- |
 |  Technical document | Local | Roadmap to climate neutrality for the city of Madrid | Technical document identifying and prioritising climate action measures with the most significant reduction potential
@@ -682,17 +662,13 @@ Complete document
 |  |   |
 |  Municipal regulations (Ordinance) | Local | Sustainable Mobility Ordinance | 2022 |  |   |
 |  Institutional Declaration | National | Institutional Declaration “Climate Neutral Cities in 2030”. | Signing of a declaration with the Ministry of Ecological Transition and the cities of Barcelona, |  |   |
-MADRID
-
 |   |  |  | Valencia and Seville.
-September 2022 |  |   |
+| September 2022 |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Plan | National | NNACC 2021-2030 | National planning instrument for coordinated action on climate change | 81 lines of action across 18 areas of work |   |
 |  Strategy | National | Spanish Urban Agenda | A strategy paper for sustainability in urban development policies | A working method and a process for all actors, public and private |   |
 |  Strategy | National | Long-term decarbonisation strategy (ELP 2050) | It shows a decarbonisation pathway that will guide investments in the coming years, underpinning the shift to an emission-free economy. | Imposes obligations on local authorities and other actors |   |
 |  Law | National | Law 7/21 on Climate Change and Energy Transition | It establishes minimum targets for the year 2030 for the reduction of GHG emissions, the penetration of renewable energies and their minimum share in the |  |   |
-MADRID
-
 |   |  |  | electricity system, and the reduction of primary energy consumption. |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Plan | National | Recovery, Transformation and Resilience Plan for Spain | National plan to join the NextGenerationEU Recovery Plan for Europe |  |   |
@@ -832,10 +808,8 @@ Compare opportunities and barriers with your strategic objectives to understand 
 | --- | --- | --- | --- | --- |
 |  Description of the system | Actors involved | Web | Influence | Interests  |
 |  Social | Citizens, social organisations, City Council | - Multi-actor platform
-Working group for the review of the Roadmap to Neutrality | Raising public awareness. Co-creation processes to propose measures and levers that do not increase the social divide. | Involve the social sector to ensure that the proposed levers and measures cover the whole spectrum of the population.  |
+| Working group for the review of the Roadmap to Neutrality | Raising public awareness. Co-creation processes to propose measures and levers that do not increase the social divide. | Involve the social sector to ensure that the proposed levers and measures cover the whole spectrum of the population.  |
 |  Private sector | Companies | - Mission Working Group | Attracting investment and | Economic growth opportunity  |
-MADRID
-
 |   | SMEs and the self-employed
 Cooperatives
 Start-up ecosystem
@@ -912,68 +886,56 @@ See description B-1.2 with explanation of compliance with table B-1.1 on impact 
 | --- | --- | --- | --- | --- | --- |
 |  Sector | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (emission reductions) (Kton) | Indirect impacts (co-benefits)  |
 |  Sector: Buildings and Heating and Cooling
-Subsector: New buildings highly energy efficient | Technology and infrastructure | Define innovative energy use and storage systems as demonstration projects. | Detail these systems in procurement documents to scale up their use in new buildings. | 23 | Increasing the comfort of new and future building stock  |
+| Subsector: New buildings highly energy efficient | Technology and infrastructure | Define innovative energy use and storage systems as demonstration projects. | Detail these systems in procurement documents to scale up their use in new buildings. | 23 | Increasing the comfort of new and future building stock  |
 |   |  Governance and Policy | Maintain the multi-stakeholder working group to deepen the clauses to be included in all | Expanding the public-private partnership model, involving more city actors |   | Awareness raising for new users (recruitment)  |
-MADRID
-
 |   |  | new developments. |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |   |  Learning and capabilities | Collect all lessons learned and consider their possible application to other sectors. | Export lessons learnt and working model to other sectors of the city |   | Fostering the entrepreneurial and mediating skills of public employees as agents of change  |
 |  Sector: Buildings and Heating and Cooling
-Subsector: Building energy efficiency renovations | Social innovation | Establish new energy rehabilitation models involving citizens and the private sector in their definition. | Efficiently implement such models to boost energy rehabilitation in the city. | 60 | Local job creation through new models of energy (co-)production and retrofitting  |
+| Subsector: Building energy efficiency renovations | Social innovation | Establish new energy rehabilitation models involving citizens and the private sector in their definition. | Efficiently implement such models to boost energy rehabilitation in the city. | 60 | Local job creation through new models of energy (co-)production and retrofitting  |
 |   |  Governance and Policy | Creation of systems/models for consultation and management support for citizens | Model implemented and replicated in the city |   | Increased citizen satisfaction by involving and accompanying them in the process of rehabilitating their homes.  |
 |   |  Finance / Funding  |   |   |   |   |
 |  Sector: Buildings and Heating and Cooling
-Subsector: Efficient lighting & appliances | Technology and infrastructure | Promoting the renovation of individual and collective systems in buildings (lighting, electrical appliances, etc.). | Reduction of individual and collective consumption per building due to the replacement of old equipment by more efficient equipment. | 247 | Reducing the cost of energy bills  |
-MADRID
-
+| Subsector: Efficient lighting & appliances | Technology and infrastructure | Promoting the renovation of individual and collective systems in buildings (lighting, electrical appliances, etc.). | Reduction of individual and collective consumption per building due to the replacement of old equipment by more efficient equipment. | 247 | Reducing the cost of energy bills  |
 |  Sector: Buildings and Heating and Cooling
-Subsector: Decarbonizing heating | Technology and infrastructure | Promotion of electrified heating systems (heat pump) | Reduction of greenhouse gas emissions associated with fossil fuels (mainly from individual gas boilers) | 1002 | Job creation specialising in heat pumps or other electrical heating systems  |
+| Subsector: Decarbonizing heating | Technology and infrastructure | Promotion of electrified heating systems (heat pump) | Reduction of greenhouse gas emissions associated with fossil fuels (mainly from individual gas boilers) | 1002 | Job creation specialising in heat pumps or other electrical heating systems  |
 | --- | --- | --- | --- | --- | --- |
 |  Sector: Transport
-Subsector: Reduced passenger transportation need | Governance and Policy | Consolidation of telework and hybrid work (face-to-face and telework) by regulation in those jobs where it is feasible. | Telework and hybrid work policy operating in most employing organisations | 215 | Increased possibilities to reconcile work with personal and family life.  |
+| Subsector: Reduced passenger transportation need | Governance and Policy | Consolidation of telework and hybrid work (face-to-face and telework) by regulation in those jobs where it is feasible. | Telework and hybrid work policy operating in most employing organisations | 215 | Increased possibilities to reconcile work with personal and family life.  |
 |   |  Social innovation | Promoting models of proximity urban planning, involving citizens in their definition. | New urban developments based on the concept of the city of proximity and the 15-minute city. |   | Boosting local economic activity and socio-economic revitalisation of neighbourhoods and districts  |
 |  Sector: Transport
-Subsector: Shift to public and non-motorized transport | Technology and infrastructure | Expansion of demonstrator cycle and pedestrian lanes in primary, secondary and university campus environments. | Mobility models scalable to all schools in the city and other cities in Spain and Europe. | 39 | Active mobility habits embedded in family and student routines through low-emission modes of mobility  |
+| Subsector: Shift to public and non-motorized transport | Technology and infrastructure | Expansion of demonstrator cycle and pedestrian lanes in primary, secondary and university campus environments. | Mobility models scalable to all schools in the city and other cities in Spain and Europe. | 39 | Active mobility habits embedded in family and student routines through low-emission modes of mobility  |
 |   |  Democracy / participation | Pilot interventions in schools co-created and implemented | Scaling up the results of the pilot projects to other areas of the city following |   | Positive perception of school users and their families about  |
-MADRID
-
 |   |  | with families and the school community. | participatory design principles. |  | the management of the school and its environment.  |
 | --- | --- | --- | --- | --- | --- |
 |   |  Learning and capacities | Participatory and co-creation methodologies applicable in projects to promote the active mobility | Forms of management that incorporate channels for co-creation and dialogue with citizens in an integrated way. |   | Positive public perception of the city's public administration  |
 |  Sector: Transport
-Subsector: Increase shared transport and car pooling | Governance and Policy | Support for Increase shared transport and car pooling models, facilitating their implementation, especially in Low Emission Zones. | Growth of the zero-emission car sharing network | 99 | Boosting local economic activity through ventures linked to forms of shared mobility (car, motorbike, bicycle, software applications for managing these forms of mobility, etc.).  |
+| Subsector: Increase shared transport and car pooling | Governance and Policy | Support for Increase shared transport and car pooling models, facilitating their implementation, especially in Low Emission Zones. | Growth of the zero-emission car sharing network | 99 | Boosting local economic activity through ventures linked to forms of shared mobility (car, motorbike, bicycle, software applications for managing these forms of mobility, etc.).  |
 |   |  Technology / infrastructure | Expansion of the municipal bike-sharing network BICIMAD to areas of the city where it is not yet present. | BICIMAD bike-sharing network extended to the whole municipality |   | Shared mobility habits incorporated into citizens' daily routines  |
 |  Sector: Transport
-Subsector: | Learning and capacities | Apply learnings from freight management in Low Emission Zones to other areas of the | Evaluation of the city's freight mobility management, especially in Low | 133 | Internal working group to strengthen  |
-MADRID
-
+| Subsector: | Learning and capacities | Apply learnings from freight management in Low Emission Zones to other areas of the | Evaluation of the city's freight mobility management, especially in Low | 133 | Internal working group to strengthen  |
 |  Optimise logistics |  | city. Innovation in delivery models. | Emission Zones and replication of lessons learned in the city and in other cities in Spain and Europe. |  | internal governance.  |
 | --- | --- | --- | --- | --- | --- |
 |  Sector: Transport
-Subsector: Electrification of passenger cars | Technology / infrastructure | Extending the public access opportunity recharging network to other Districts of the city. | Expansion of the public access opportunity recharging network to all Districts of the city. | 182 | Electric mobility habits incorporated in citizens' daily commuting routines  |
+| Subsector: Electrification of passenger cars | Technology / infrastructure | Extending the public access opportunity recharging network to other Districts of the city. | Expansion of the public access opportunity recharging network to all Districts of the city. | 182 | Electric mobility habits incorporated in citizens' daily commuting routines  |
 |  Sector: Transport
-Subsector: Electrification of buses | Technology / infrastructure | Transition to zero emission bus fleet. | Creation of new zero-emission operations centres with bus recharging network | 62 | Improved coordination of loading schedules and reduced loading times  |
+| Subsector: Electrification of buses | Technology / infrastructure | Transition to zero emission bus fleet. | Creation of new zero-emission operations centres with bus recharging network | 62 | Improved coordination of loading schedules and reduced loading times  |
 |  Sector: Transport
-Subsector: Electrification of freight transport | Technology / infrastructure | Study on the implementation of logistics hubs in the city | Development of new logistics hubs in the municipality | 59 | Public satisfaction with freight logistics management  |
+| Subsector: Electrification of freight transport | Technology / infrastructure | Study on the implementation of logistics hubs in the city | Development of new logistics hubs in the municipality | 59 | Public satisfaction with freight logistics management  |
 |  Sector: Electricity
-Subsector: Shift to renewable electricity | Social innovation | Development of a pilot project on the study of new energy models to extend the distributed energy generation network in the city. | Implementation of a participatory local energy community in a municipal facility (educational centre). | 2.640 | Improve communication and governance on decisions related to energy provision of the actors working in the city.  |
+| Subsector: Shift to renewable electricity | Social innovation | Development of a pilot project on the study of new energy models to extend the distributed energy generation network in the city. | Implementation of a participatory local energy community in a municipal facility (educational centre). | 2.640 | Improve communication and governance on decisions related to energy provision of the actors working in the city.  |
 |   |  Learning and capacities | Demand from citizens' groups, start- | Citizen empowerment in renewable energy |   | Working groups, associations  |
-MADRID
-
 |   |  | ups, SMEs and large companies for the promotion of renewable energy (co-)production initiatives. | (co-)production through local energy communities |  | and social movements linked to the promotion of local energy communities for the expansion of renewable energy co-production practices.  |
 | --- | --- | --- | --- | --- | --- |
 |   |  Finance / Funding | New business model tested in pilot project for renewable energy production through a local energy community | Sustainable financing models operating in local energy communities |   | Perception of the "pro-consumer" role of citizens as being able to combine their position as passive energy consumers with that of active producers in the energy production chain.  |
 |  Sector: Waste and reforestation
-Subsector: Increase recovery rates in the residential, services and institutional sectors. | Technology / infrastructure | Tender for a new composting plant and FORS | Commissioning of the new composting plant and FORS | 90 | Involve citizens in changing the urban waste management model.  |
+| Subsector: Increase recovery rates in the residential, services and institutional sectors. | Technology / infrastructure | Tender for a new composting plant and FORS | Commissioning of the new composting plant and FORS | 90 | Involve citizens in changing the urban waste management model.  |
 |   |  Governance and Policy | Extension of hours and days for household waste collection | Evaluation of the measure, specifically whether the extension of days and times has led to an increase in recycling rates, and incorporation of |   | Boosting local employment and a positive perception of public management among citizens.  |
-MADRID
-
 |   |  |  | learning and results into further related actions. |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Sector: Waste and reforestation
-Subsector: Naturalise and reforest the municipality | Democracy / participation | Participatory sub-project development of the Metropolitan Forest | First phases of completed projects.
-Communication and opening of these spaces to the public. | N/A | Improving the city's biodiversity  |
+| Subsector: Naturalise and reforest the municipality | Democracy / participation | Participatory sub-project development of the Metropolitan Forest | First phases of completed projects. |
+| Communication and opening of these spaces to the public. | N/A | Improving the city's biodiversity  |
 |   |  Learning and capacities | Involvement of citizens and organisations linked to the design, management and maintenance of urban green infrastructures. | Co-created forms of management and maintenance with the citizenry (specific publics) in operation |   | Positive perception of governance  |
 
 # B-1.2: Description of the impact pathways
@@ -1006,28 +968,24 @@ Each action is framed within a sector and the impact of each contributes to the 
 |  Sector | Description of climate action portfolio  |   |
 |   |  List of actions | General description  |
 |  Sector: Buildings and Heating and Cooling
-Subsector: New buildings highly energy efficient | Madrid Nuevo Norte: zero emission buildings and ADAC | New urban development with the ambition to be climate neutral. First Climate Action Demonstration Area in the city (Chamartín Business Centre).  |
+| Subsector: New buildings highly energy efficient | Madrid Nuevo Norte: zero emission buildings and ADAC | New urban development with the ambition to be climate neutral. First Climate Action Demonstration Area in the city (Chamartín Business Centre).  |
 |   |  Reinventing cities: Zero carbon urban projects 2019, 2020 | Initiative under the auspices of the C40 Cities Network to develop demonstration projects with decarbonisation criteria for the transformation and revitalisation of urban sites.
-Responsible: Madrid City Council (MCC) Area for Buildings + Crea Madrid Nuevo Norte  |
-MADRID
-
+| Responsible: Madrid City Council (MCC) Area for Buildings + Crea Madrid Nuevo Norte  |
 |  Sector: Buildings and Heating and Cooling
-Subsector: Building energy efficiency renovations | Green Office (EMVS) | Municipal pilot experience that provides citizens with information on energy efficiency and rehabilitation aid, both municipal, regional and state.
-Responsible: MCC Area for Buildings  |
+| Subsector: Building energy efficiency renovations | Green Office (EMVS) | Municipal pilot experience that provides citizens with information on energy efficiency and rehabilitation aid, both municipal, regional and state. |
+| Responsible: MCC Area for Buildings  |
 | --- | --- | --- |
 |  Sector: Buildings and Heating and Cooling
-Subsector: Efficient lighting & appliances | Energy management programme for municipal buildings and equipment. | Continuous monitoring system and adoption of energy efficiency and energy saving measures in municipal buildings. Implementation of the Energy Management system in accordance with ISO50001 in 60 buildings (2023). Involvement and training of public employees.
-Responsible: MCC Area for Buildings  |
+| Subsector: Efficient lighting & appliances | Energy management programme for municipal buildings and equipment. | Continuous monitoring system and adoption of energy efficiency and energy saving measures in municipal buildings. Implementation of the Energy Management system in accordance with ISO50001 in 60 buildings (2023). Involvement and training of public employees. |
+| Responsible: MCC Area for Buildings  |
 |  Sector: Buildings and Heating and Cooling
-Subsector: Decarbonizing heating | European Probono Project (The Integrator-centric approach for realising innovative energy efficient buildings in connected sustainable green neighbourhoods) | In Madrid the project will be tested through a pilot implementation of District Heating technologies based 100% on renewable energy (geothermal), these heating and cooling networks take advantage of the coexistence of residential and tertiary buildings and will be controlled and managed under a digital model that will allow maximum performance, stakeholder involvement, scaling and replication.
-Responsible: MCC Area for Buildings + Madrid Subterra  |
+| Subsector: Decarbonizing heating | European Probono Project (The Integrator-centric approach for realising innovative energy efficient buildings in connected sustainable green neighbourhoods) | In Madrid the project will be tested through a pilot implementation of District Heating technologies based 100% on renewable energy (geothermal), these heating and cooling networks take advantage of the coexistence of residential and tertiary buildings and will be controlled and managed under a digital model that will allow maximum performance, stakeholder involvement, scaling and replication. |
+| Responsible: MCC Area for Buildings + Madrid Subterra  |
 |  Sector: Transport
 Subsector: Reduced passenger transportation need | School environments with climate change adaptation and air quality criteria (Life-Pact Project) | European project to pilot the naturalisation of public spaces by exploring methodologies for the participation of school and neighbourhood communities in the co-design of naturalised school playgrounds and environments.
 This project contributes to the implementation of the Municipal Strategy for ‘intervention in school environments from the point of view of air quality improvement and adaptation to climate change’.
 Responsible: MCC Climate Change Department + Life-Pact Partners  |
 |   |  Clever project - habitable itineraries | The itinerary from the river to Pradolongo is a project of urban regeneration and adaptation to climate change that serves as a background and framework for partial  |
-MADRID
-
 |   |  | or specific interventions. It is the framework for the other two areas and is organised on three levels: a strategy for the itinerary and for the neighbourhood, a design and solutions that make the itinerary coherent and recognisable, and specific interventions.
 Responsible: MCC Climate Change Department+
 Clever project partners  |
@@ -1038,7 +996,7 @@ Shift to public and non-motorized transport | Zero-emission university campuses:
 The actions aim to improve pedestrian and cycling connections and infrastructure in the accesses to the educational centres of the Campus sur and other existing facilities in its area. It is planned as a pilot area to investigate mobility systems in the process of change from a multimodality approach that gives priority to active mobility with the extension of BiciMAD to the peripheral districts, new multimodal stations, MaaS, electrification of fleets and ZBE extended to the central area. ζ
 Responsible: MCC Area for Mobility + UPM  |
 |   | Climate commitment | Annual event organised by Madrid City Council and its collaborators with proposals from citizens and the City Council. All of them share the objective of building new climate narratives and cultivating new hopes for the climatic, economic and social future of the city of Madrid
-Responsible: MCC Climate Change Department  |
+| Responsible: MCC Climate Change Department  |
 |  **Sector:** Transport
 **Subsector:**
 Increase shared transport and car pooling | Zero-emission shared mobility | Bici-Mad, the municipal bike-sharing system, will expand its network in the coming years to new districts of the city. Four variables have been taken into account to establish the locations: a socio-demographic study, technical feasibility, proximity to transport hubs to promote intermodality and dialogue with the districts.
@@ -1049,26 +1007,24 @@ Optimise logistics | Mercamadrid: towards zero emissions logistics. | Transforma
 MADRID
 
 |   |  | Spain. Implications for other sectors such as the circular economy.
-Responsible: MCC Economic Area+ MercaMadrid  |
+| Responsible: MCC Economic Area+ MercaMadrid  |
 | --- | --- | --- |
 |  Sector: Transport
-Subsector: Electrification of buses | Electrification of bus bases | Strategic collaboration of energy distribution companies, bus manufacturers, designers of intelligent recharging systems and public transport companies (EMT).
-Responsible: MCC Area for Mobility+EMT  |
+| Subsector: Electrification of buses | Electrification of bus bases | Strategic collaboration of energy distribution companies, bus manufacturers, designers of intelligent recharging systems and public transport companies (EMT). |
+| Responsible: MCC Area for Mobility+EMT  |
 |  Sector: Transport
-Subsector: Electrification of passenger cars. | Deployment of public recharging infrastructure (private and logistic use) | Expansion of the public access electric vehicle charging network to reach new districts of the city in order to cover private and logistical needs.
-Responsible: MCC Area for Mobility  |
+| Subsector: Electrification of passenger cars. | Deployment of public recharging infrastructure (private and logistic use) | Expansion of the public access electric vehicle charging network to reach new districts of the city in order to cover private and logistical needs. |
+| Responsible: MCC Area for Mobility  |
 |  Sector: Transport
-Subsector: Electrification of freight transport. |  |   |
+| Subsector: Electrification of freight transport. |  |   |
 |  Sector: Electricity
 Subsector: Shift to renewable electricity | Madrid Solar
 Deployment production and installation of photovoltaic in municipal buildings (educational centres). | Madrid City Council initiative and public-private management model to promote energy self-consumption with photovoltaic panels in the residential, institutional and service sectors.
 Within the project 'Intervention in educational centres with criteria for adaptation to climate change and air quality', new energy models for distributed energy consumption in the city will be studied, such as energy communities.
 Responsible: MCC+Madrid Futuro  |
 |  Sector: Waste and reforestation
-Subsector: Increasing recovery rates in the residential, services and | Management of the organic fraction of waste at Valdemingómez | Start-up of a new organic and vegetable fraction composting plant to increase the production of biomethane and compost.
-Responsible: MCC Valdemingómez Department  |
-MADRID
-
+| Subsector: Increasing recovery rates in the residential, services and | Management of the organic fraction of waste at Valdemingómez | Start-up of a new organic and vegetable fraction composting plant to increase the production of biomethane and compost. |
+| Responsible: MCC Valdemingómez Department  |
 |  institutional sectors. |  |   |
 | --- | --- | --- |
 |  Sector: Waste and reforestation
@@ -1084,9 +1040,7 @@ Total cost of actions to be address are in module C3.
 |  Action plan | Name of the action | Madrid Nuevo Norte  |
 |   |  Type of action | Urban and real estate development. Private and public developer  |
 |   |  Description of the action | Madrid Nuevo Norte is an urban intervention of unique magnitude that will transform a 5.6 km long strip of land and regenerate more than 2.3 million m².
-The project arose from the need to integrate Chamartín station and all the railway facilities that depart from it into the city. For more than 50 years these infrastructures have created an enormous gap that has split the north of Madrid in two, causing many inconveniences for millions of citizens. This urban regeneration action will not only close this wound, solving problems of mobility, safety and lack of public services, but will also place Madrid among the group of cities that will be better able to face the great economic and social changes of the coming decades.  |
-MADRID
-
+| The project arose from the need to integrate Chamartín station and all the railway facilities that depart from it into the city. For more than 50 years these infrastructures have created an enormous gap that has split the north of Madrid in two, causing many inconveniences for millions of citizens. This urban regeneration action will not only close this wound, solving problems of mobility, safety and lack of public services, but will also place Madrid among the group of cities that will be better able to face the great economic and social changes of the coming decades.  |
 |   |  | Madrid Nuevo Norte creates a new city model, based on the best practices of sustainable urban planning.
 A dense, compact city that focuses on people, public space and sustainable mobility, where housing, offices, shops, green spaces and facilities blend and complement each other, creating the best environment for living, working and enjoying. Respecting the essence that makes our city so attractive, while enhancing its innovative and cosmopolitan character.
 A city model that thinks of everyone, which has been designed in participatory processes that have allowed us to listen to the citizens to find out their different needs and the different uses that each one makes of their city.
@@ -1097,8 +1051,6 @@ In addition, within this area one of the areas will be declared a **Climate Acti
 |   |  Systemic lever | Governance and Policy  |
 |   |  Result (according to module B-1.1) |   |
 |  Implementation | Agencies/persons responsible for implementation | Chamartín Business Centre Management Committee / Chamartín Business Centre Compensation Board  |
-MADRID
-
 |   |  | Comisión Gestora de Malmea - San Roque - Tres Olivos / Junta de Compensación de Malmea - San Roque - Tres Olivos
 Crea Madrid Nuevo Norte, S.A.
 ADIF, Community of Madrid, Madrid City Council.  |
@@ -1112,9 +1064,7 @@ Timeline for implementation: 2022-2026  |
 |   |  Energy removed/replaced, fuel volume or fuel type |   |
 |   |  Estimated GHG emission reductions (total) | 107,720.46 tCO_{2}eq that are not added in 2030. In a fully implemented NRM scenario.  |
 |   |  Total costs and costs per unit of CO_{2}eq | 7.163 M€
-,500 €/tCO_{2}eq only taking into account the estimated emission reductions in 2030  |
-MADRID
-
+| ,500 €/tCO_{2}eq only taking into account the estimated emission reductions in 2030  |
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |  Action plan | Name of the action | Life PACT  |
@@ -1132,10 +1082,8 @@ MADRID
 |   |  Systemic lever | Governance and Policy  |
 |   |  Result (according to module B-1.1) |   |
 |  Implementation | Bodies/persons responsible for implementation | Madrid City Council. Deputy Directorate General for Energy and Climate Change Junta de Distrito de Villaverde.  |
-MADRID
-
 |   | Scale of action and target entities | School playgrounds and school environments. Neighbourhood of San Cristóbal de los Ángeles
-Colegio de Educación Infantil y Primaria Sagunto and Colegio de Educación Infantil y Primaria Navas de Tolosa (San Cristóbal de los Ángeles, Villaverde).  |
+| Colegio de Educación Infantil y Primaria Sagunto and Colegio de Educación Infantil y Primaria Navas de Tolosa (San Cristóbal de los Ángeles, Villaverde).  |
 | --- | --- | --- |
 |   |  Actors involved | Ayuntamiento de Madrid, Junta de Distrito de Villaverde (Servicios técnicos y Servicios a la ciudadanía), Universidad Politécnica de Madrid, Democratic Society (DemSoc), Basurama, Instituto Mutante de Narrativas Ambientales (Asamblea de la Infancia), exe.arquitectura, Prointec, Gea21, Surcos Urbanos, Colegio de Educación Infantil y Primaria Sagunto, Colegio de Educación Infantil y Primaria Navas de Tolosa, Escuela Infantil La Luna, Espacio de apoyo a la crianza de San Cristobal, Asociación de Madres y Padres del CEIP Navas de Tolosa, AFANDICE, Asociación de vecinos de San Cristóbal, etc.  |
 |   |  Comments on implementation | Timeline for implementation: 2021-2024  |
@@ -1146,12 +1094,8 @@ Colegio de Educación Infantil y Primaria Sagunto and Colegio de Educación Infa
 |  B-2.2: Individual Action Schemes  |   |   |
 |  Action plan | Name of the action | Healthy, Clean Cities: EUropean Cities for Climate-Neutral COnstruction (HCC EU CINCO)  |
 |   |  Type of action | Research and advocacy  |
-MADRID
-
 |   | Description of the action | Funded by the Laudes Foundation since the beginning of 2021, the project aims to research and prototype solutions that reduce emissions in the construction sector. In particular, the project focuses on promoting circularity and the use of natural and low-carbon materials. This project is based on collaboration between representatives of the entire value chain of the construction sector and adopts a systemic approach to co-create and pilot a portfolio of interconnected multi-stakeholder projects. In particular, the initiative relies on two large local developments in Madrid and Milan as a testing ground to identify supply and demand barriers. The working methodology has adopted a collaborative approach, involving the different actors of the value chain in conversations for collective interpretation and co-creation of solutions. The ultimate goal of the project is to position cities as market makers for natural and circular sourced construction. The results of the first phase of this project include the following documents: 1. Report 'Mass Timber - An Option to Reduce Embodied Carbon in Buildings' by Material Economics, which sets out the reasons why building is a significant contributor to climate change and strategies (in terms of design choices and material selection) that could reduce the embodied carbon of buildings. In addition, the report proposes the use of wood as a cost-effective way to reduce emissions, analysing potential barriers and financial opportunities. Emission abatement cost model for buildings, developed by Material Economics. Aimed at a technical audience, the model includes 16 levers to estimate the cost of each tonne of carbon that can be avoided in a building project by adopting strategies linked to circularity and the use of naturally sourced materials. This tool can be useful for dialogue with banks, clients and investors by making visible the additional benefits of this type of construction compared to standard methods based on steel and concrete. 3. Analysis of financing instruments, prepared by Bankers without Boundaries. 4. Study of the Spanish demand for wood, prepared by Arup. 5. Analysis of the market for low-carbon materials and analysis of the end-of-life market, prepared by Arup for the Spanish case.  |
 | --- | --- | --- |
-MADRID
-
 |   |  | 6. Analysis of the economic and environmental impact of construction with materials of natural origin, prepared by Dark Matter Labs, which presents structured data on the state of Spanish and EU forests and proposes scenarios of the socio-economic impact of increasing the production and use of wood from sustainable forests. It also presents examples of how to incorporate procurement clauses that encourage the use of wood in construction. The report, although addressed to a general audience, aims to influence national and European policies and regulations.
 Proof of concept of a materials passport, developed by Dark Matter Labs and REDO.
 Revision of municipal price lists and tender clauses for Madrid Nuevo Norte
@@ -1159,14 +1103,12 @@ Training for municipal technicians with the aim of promoting circular and natura
 | --- | --- | --- |
 |  Reference to the impact pathway | Scope of issue | Buildings and Heating and Cooling  |
 |   |  Systemic lever | Learning and capabilities
-Technology and infrastructure  |
+| Technology and infrastructure  |
 |   |  Result (according to module B-1.1) |   |
 |  Implementation | Agencies/persons responsible for implementation | Creates Madrid Nuevo Norte and allies  |
 |   |  Scale of action and target entities |   |
 |   |  Actors involved | EIT Climate KIC, Dark Matter Labs, Arup, Universidad Politécnica de Madrid, Material Economics, Bankers without Boundaries, Comune di Milano, Crea Madrid Nuevo Norte, Democratic Society, Net Zero Cities Laudes Foundation  |
 |   |  Comments on implementation | Timeline for implementation: 2020-2024  |
-MADRID
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |  Action plan | Name of the action | Climate commitment  |
@@ -1177,8 +1119,6 @@ This event already has two editions held in hybrid format: Madrid Zero Emissions
 Madrid Zero Emissions (2021) was a first contact with the radical climate commitment initiatives already underway in Madrid. These encompassed proposals coming from organised citizens and the City Council. All of them shared the objective of building new climate narratives and cultivating new hopes for the climatic, economic and social future of the city of Madrid. The session made it possible to disseminate their objectives, strategies and forms of organisation. In addition, it also provided information on the city's solutions to emit less CO2, mitigate heat waves or water shortages, and the root changes that we must promote in the way we  |
 |   |  |   |
 |  |   |   |
-MADRID
-
 |   |  | educate about the environment or coexist with plants, animals or bacteria.
 
 **Madrid Mission (2022)** reinforced the objective of the previous event, but framed the initiatives presented as part of the path towards achieving the Mission "100 climate neutral cities by 2030", for which Madrid has been selected. In contrast to the previous year, the concept of "micro-missions" was introduced: citizens and institutions that have come together to achieve the Mission on a smaller scale and contribute to climate transformation projects in industrial estates, public facilities or schools, where nature, play and coexistence predominate.
@@ -1192,8 +1132,6 @@ For this year's 2023 edition, the main ambition is to **amplify the reach of the
 |   |  Scale of action and target entities |   |
 |   |  Actors involved | La Casa Encendida, Fundación Montemadrid, Centro de Innovación en Tecnología para el Desarrollo Humano de la Universidad Politécnica de Madrid (itdUPM), Antonella Broglia, Zuloark, EIT Climate-KIC, C40, Fundación Laudes  |
 |   |  Comments on implementation | Recurrent event since 2021  |
-MADRID
-
 |  Impacts and costs | Renewable energy generated (if applicable) |   |
 | --- | --- | --- |
 |   |  Energy removed/replaced, fuel volume or fuel type |   |
@@ -1238,8 +1176,6 @@ The indicators detailed here were defined in the April 2022 update of the 'Roadm
 |   | New buildings highly energy efficient | 1.2.1 | Total GHG emissions in the residential sector | ... | ... | ...  |
 |   |   |  1.4.1 | Total GHG emissions in the services sector  |   |   |   |
 |   |   |  0.0.1 | Energy balance: Table 7 Final energy consumption in RCI  |   |   |   |
-MADRID
-
 |   | Building energy efficiency renovations | 2.1.1 | Evolution of the number of rehabilitated dwellings (data to be received) |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  | 2.1.2 | Evolution of rehabilitated surface area |  |  |   |
@@ -1249,8 +1185,6 @@ MADRID
 |   |  | 2.2.3 | Contribution of electricity to total final energy consumption in the residential and services sectors |  |  |   |
 |   |  | 4.2.1 | Evolution of the number of heat pumps |  |  |   |
 |   | Reduced passenger | 3.1.1 | Evolution of traffic intensity |  |  |   |
-MADRID
-
 |   | transportation need | 3.1.2 | Evolution of the mobility of private cars |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   | Shift to public and non-motorized transport | 3.2.1 | Pedestrian mobility trends (weekdays, Saturdays, Sundays and public holidays) |  |  |   |
@@ -1259,8 +1193,6 @@ MADRID
 |   | Optimise logistics | 0.0.2 | Annual emissions from light and heavy duty vehicles. Vehicle fleet study / emissions inventory. |  |  |   |
 |   |  | 1.3.1 | Total GHG emissions in the road transport sector |  |  |   |
 |   | Electrification of the vehicle fleet: passenger | 3.3.1 | Evolution of ZERO passenger car registrations compared to |  |  |   |
-MADRID
-
 |   | cars, taxis and buses | 3.3.2
 | total registrations
 Evolution of ZERO taxis versus total number of taxis
@@ -1268,17 +1200,15 @@ Evolution of ZERO buses compared to total buses (EMT) |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   | Shift to renewable electricity | 1.7.1
 | Evolution of the electricity emission factor (national level)
-Renewable electricity generation |  |  |   |
+| Renewable electricity generation |  |  |   |
 |   | Increasing recovery rates in the RCI sector | 5.2.1
 | Evolution of the recovery rate in residential, services and municipal sectors
-Evolution of the total mass of bio-waste collected separately |  |  |   |
+| Evolution of the total mass of bio-waste collected separately |  |  |   |
 |   | Naturalise and reforest the municipality | 1.6.1 | Evolution of CO2 removals (sinks) |  |  |   |
-MADRID
-
 |  B-3.2: Indicator metadata  |   |
 | --- | --- |
 |  Sector: Buildings and Heating and Cooling
-Action / project / sub-sector: New buildings highly energy efficient  |   |
+| Action / project / sub-sector: New buildings highly energy efficient  |   |
 |  Indicator name | Total GHG emissions in the residential sector  |
 |  Indicator unit | 1.2.1  |
 |  Definition | The disaggregation of emissions provides insight into the evolution of each sector of activity on its mitigation pathway and towards climate neutrality.
@@ -1296,12 +1226,10 @@ Measured in kilotonnes of CO2 equivalent (kt CO2eq).  |
 |  Does the indicator measure indirect impacts (i.e. co-benefits)? | No  |
 |  If yes, what co-benefit do you measure? | N/A  |
 |  Can the indicator be used to monitor impact pathways? | Yes  |
-MADRID
-
 |  If yes, for which impact pathway? | New buildings highly energy efficient  |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Is the indicator captured by existing CDP/SCIS/Mayors' Covenant platforms? | Yes
-CDP 2022: Emissions Inventory Data (2.1d)  |   |   |   |   |   |   |
+| CDP 2022: Emissions Inventory Data (2.1d)  |   |   |   |   |   |   |
 |  Additional information |   |   |   |   |   |   |   |
 |  Planned data source | Inventory of greenhouse gas emissions in the municipality of Madrid (1999-2020).  |   |   |   |   |   |   |
 |  Planned availability | Annual  |   |   |   |   |   |   |
@@ -1316,15 +1244,13 @@ CDP 2022: Emissions Inventory Data (2.1d)  |   |   |   |   |   |   |
 |  B-3.2: Indicator metadata  |   |
 | --- | --- |
 |  Sector: Buildings and Heating and Cooling
-Action / project / sub-sector: New buildings highly energy efficient  |   |
+| Action / project / sub-sector: New buildings highly energy efficient  |   |
 |  Indicator name | Total GHG emissions services sector  |
 |  Indicator unit | 1.4.1  |
 |  Definition | The disaggregation of emissions provides insight into the evolution of each sector of activity on its mitigation pathway and towards climate neutrality. Expected trend: decreasing.
-With this indicator, the sum of the annual evolution of the direct and indirect GHG emissions of the services sector in the municipality of Madrid is accounted for.  |
-MADRID
-
+| With this indicator, the sum of the annual evolution of the direct and indirect GHG emissions of the services sector in the municipality of Madrid is accounted for.  |
 |   | The GHGs accounted for are as follows: CH4, CO2, HFCs, N2O, PFCs and SF6.
-Its trend is expected to be downward.  |
+| Its trend is expected to be downward.  |
 | --- | --- |
 |  Method of calculation | Sum of direct emissions and indirect emissions, in the services sector.
 Direct emissions are Scope 1 emissions, originating from within the city.
@@ -1338,13 +1264,11 @@ Measured in kilotonnes of CO2 equivalent (kt CO2eq).  |
 |  Can the indicator be used to monitor impact pathways? | Yes  |
 |  If yes, for which impact pathway? | New buildings highly energy efficient  |
 |  Is the indicator captured by existing CDP/SCIS/Mayors' Covenant platforms? | Yes
-CDP 2022: Emissions Inventory Data (2.1d)  |
+| CDP 2022: Emissions Inventory Data (2.1d)  |
 |  Additional information |   |
 |  Planned data source | Inventory of greenhouse gas emissions in the municipality of Madrid (1999-2020).  |
 |  Planned availability | Annual  |
 |  Planned collection interval | 2015-2030  |
-MADRID
-
 |  References |   |   |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Results describing the indicator | 1.4.1 | Emisiones totales GEI en el sector servicios  |   |   |   |   |   |   |
@@ -1365,8 +1289,6 @@ MADRID
 |  Does the indicator measure direct impacts (i.e. reduction of greenhouse gas emissions)? | No  |
 |  If yes, to which area of emission is the co-benefit linked? | N/A  |
 |  Does the indicator measure indirect impacts (i.e. co-benefits)? | Yes  |
-MADRID
-
 |  If yes, what co-benefit do you measure? | GHG emission reduction Heat island effect attenuation Improving air quality Improved health Lower consumption, reduced energy costs in households and service sector  |   |
 | --- | --- | --- |
 |  Can the indicator be used to monitor impact pathways? | Yes  |   |
@@ -1395,18 +1317,16 @@ MADRID
 |   | 2018 | 1.950,06  |
 |   | 2019 | 1.861,08  |
 |   | 2020 | 1.718,78  |
-MADRID
-
 |  B-3.2: Indicator metadata  |   |
 | --- | --- |
 |  Sector: Buildings and Heating and Cooling
-Action / project / sub-sector: Building rehabilitation  |   |
+| Action / project / sub-sector: Building rehabilitation  |   |
 |  Indicator name | Evolution of the number of rehabilitated dwellings.  |
 |  Indicator unit | 2.1.1  |
 |  Definition | Evolution of the number of rehabilitated dwellings (within the framework of the Rehabilita Madrid Plan), with the aim of reducing the energy consumption of existing buildings, improving insulation and energy efficiency.
-Developing; the trend is expected to increase.  |
+| Developing; the trend is expected to increase.  |
 |  Calculation method | Number of dwellings rehabilitated annually, within the scope of the Rehabilita Madrid Plan.
-Measured in number of dwellings.  |
+| Measured in number of dwellings.  |
 |  Context |   |
 |  Does the indicator measure direct impacts (i.e. reduction of greenhouse gas emissions)? | No  |
 |  If yes, to which area of emission is the co-benefit linked? | N/A  |
@@ -1438,16 +1358,14 @@ Standards to recopilar dicha información por parte del AYUNTAMIENTO  |
 |  B-3.2: Indicator metadata  |   |
 | --- | --- |
 |  Sector: Buildings and Heating and Cooling
-Action / project / sub-sector: Building rehabilitation  |   |
+| Action / project / sub-sector: Building rehabilitation  |   |
 |  Indicator name | Evolution of the rehabilitated surface area.  |
 |  Indicator unit | 2.1.2  |
-MADRID
-
 |  Definition | Evolution of the total surface area of rehabilitated dwellings (within the framework of the Rehabilita Madrid Plan), with the aim of reducing the consumption demand of existing buildings, improving insulation and energy efficiency.
-Developing; the trend is expected to increase.  |
+| Developing; the trend is expected to increase.  |
 | --- | --- |
 |  Method of calculation | Total number of rehabilitated housing areas annually, within the scope of the Rehabilita Madrid Plan.
-Measured in square metres (m2).  |
+| Measured in square metres (m2).  |
 |  Context |   |
 |  Does the indicator measure direct impacts (i.e. reduction of greenhouse gas emissions)? | No  |
 |  If yes, to which area of emission is the co-benefit linked? | N/A  |
@@ -1463,8 +1381,6 @@ Stationary energy Energy efficiency/ retrofit measures addressing existing comme
 |  Additional information |   |
 |  Planned data source | Madrid City Council, AG. Urban Development  |
 |  Planned availability | Annual  |
-MADRID
-
 |  Planned collection interval | 2015-2030  |
 | --- | --- |
 |  References |   |
@@ -1478,16 +1394,14 @@ Evolution 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024  |
 |  B-3.2: Indicator metadata  |   |
 | --- | --- |
 |  Sector: Buildings and Heating and Cooling
-Action / project / sub-sector: Renovation of systems (light, appliances, ... etc.)  |   |
+| Action / project / sub-sector: Renovation of systems (light, appliances, ... etc.)  |   |
 |  Indicator name | Evolution of the ratio of street lighting consumption to the number of lighting points.  |
 |  Indicator unit | 4.2.4  |
 |  Definition | As an additional indicator, and in order to make the analysis more robust, the consumption of public street lighting has been selected as a function of how the number of lighting points varies. This indicator evaluates the evolution of the energy efficiency of municipal public lighting. Its trend is expected to be downward.  |
 |  Method of calculation | Ratio of street lighting electricity consumption (KWh) to number of lighting points (number of points)
-Measured in kilowatt hours divided by the number of points (kWh / No. of points).  |
+| Measured in kilowatt hours divided by the number of points (kWh / No. of points).  |
 |  Context |   |
 |  Does the indicator measure direct impacts (i.e. reduction of greenhouse gas emissions)? | No  |
-MADRID
-
 | If yes, to which area of emission is the co-benefit linked? | N/A |
 | --- | --- |
 | Does the indicator measure indirect impacts (i.e. co-benefits)? | Yes |
@@ -1510,18 +1424,16 @@ Improving the quality of public space, social well-being and reducing light poll
 | Indicador | kWh/N° de puntos | 418 | 359 | 348 | 346 | 344 | 342 | 346 |
 | Evolución indicador | (2015=100) | 100 | 90 | 83 | 83 | 82 | 82 | 83 |
 | Other indicator systems using this indicator | - |
-MADRID
-
 |  B-3.2: Indicator metadata  |   |
 | --- | --- |
 |  Sector: Buildings and Heating and Cooling
-Action / project / sub-sector: Decarbonizing heating  |   |
+| Action / project / sub-sector: Decarbonizing heating  |   |
 |  Indicator name | Evolution of the number of coal-fired boilers.  |
 |  Indicator unit | 2.2.1  |
 |  Definition | Coal-fired boilers are highly polluting and intensive in CO2 emissions and, in recent years, Madrid City Council has taken measures to replace them with other less emissive technologies.
-Expected trend: downward.  |
+| Expected trend: downward.  |
 |  Method of calculation | Total annual number of reductions in coal-fired boiler installations, within the scope of the Rehabilita Madrid Plan.
-Measured in number of installations (No. Installations).  |
+| Measured in number of installations (No. Installations).  |
 |  Context |   |
 |  Does the indicator measure direct impacts (i.e. reduction of greenhouse gas emissions)? | No  |
 |  If yes, to which area of emission is the co-benefit linked? | N/A  |
@@ -1531,8 +1443,6 @@ Reduction of GHG emissions in the residential sector.
 Boosting innovation in the air-conditioning sector and ACS production.  |
 |  Can the indicator be used to monitor impact pathways? | Yes  |
 |  If yes, for which impact pathway? | Decarbonizing heating  |
-MADRID
-
 | Is the indicator captured by existing CDP/SCIS/Mayors' Covenant platforms? | Yes
 (3.1) Report the total annual electricity and heating and cooling consumption data (in MWh) and the percentage breakdown of this consumption by energy type for your jurisdiction.
 Percentage of total consumption from coal.
@@ -1555,13 +1465,11 @@ Target description Remove all remaining coal-fired boilers by 2022.
 |  B-3.2: Indicator metadata  |   |
 | --- | --- |
 |  Sector: Buildings and Heating and Cooling
-Action / project / sub-sector: Decarbonizing heating  |   |
+| Action / project / sub-sector: Decarbonizing heating  |   |
 |  Indicator name | Contribution of electricity to total final energy consumption in the residential and services sectors  |
 |  Indicator unit | 2.2.3  |
-MADRID
-
 |  Definition | The contribution of electricity to final energy consumption in the residential and services sector has been decided to monitor as an indicator of the degree of electrification and how this energy source can replace the final consumption of fossil energy sources.
-Expected trend: increasing.  |
+| Expected trend: increasing.  |
 | --- | --- |
 |  Calculation method | The first column of Table 8 of the Energy Balance of the municipality of Madrid, year 2020, shows the electricity consumption of the RCI sector (residential, commercial and institutional) for the year 2020, in terms of percentage contribution (50.61%) with respect to total consumption.
 Measured as a percentage (%).  |
@@ -1656,16 +1564,14 @@ Evolución indicador
 |  B-3.2: Indicator metadata  |   |
 | --- | --- |
 |  Sector: Buildings and Heating and Cooling
-Action / project / sub-sector: Decarbonizing heating  |   |
+| Action / project / sub-sector: Decarbonizing heating  |   |
 |  Indicator name | Evolution of the number of heat pumps  |
-MADRID
-
 |  Indicator unit | 4.2.1  |
 | --- | --- |
 |  Definition | The incorporation of heat pumps in air conditioning and DHW systems, replacing combustion installations (coal, diesel, LPG, etc.), will reduce the impact in terms of GHG emissions and improve energy efficiency in the residential and services sectors.
-Developing; the trend is expected to increase.  |
+| Developing; the trend is expected to increase.  |
 |  Calculation method | Annual evolution of the stock of heat pump installations in the residential and services sectors.
-Measured in number of installations.  |
+| Measured in number of installations.  |
 |  Context |   |
 |  Does the indicator measure direct impacts (i.e. reduction of greenhouse gas emissions)? | No  |
 |  If yes, to which area of emission is the co-benefit linked? | N/A  |
@@ -1703,16 +1609,14 @@ In the residential sector, this measure would involve the annual introduction of
 |  B-3.2: Indicator metadata  |   |
 | --- | --- |
 |  Sector: Transport
-Action / project / sub-sector: Reduce the need for personal mobility  |   |
+| Action / project / sub-sector: Reduce the need for personal mobility  |   |
 |  Indicator name | Evolution of traffic intensity  |
 |  Indicator unit | 3.1.1  |
 |  Definition | Traffic intensity provides information on the volume of vehicle movements in the municipality in a given period. In this case, traffic intensity has been expressed as average daily intensity (ADI) on working days and annual average.  |
-MADRID
-
 |   | The expected trend is downward, although this is an informative indicator that has to be assessed in conjunction with other indicators in the road traffic sector.  |
 | --- | --- |
 |  Method of calculation | Ratio of total average daily intensity on working days, annual average (IMD) in No. of vehicles / day, divided by 1,000.
-Measured in Thousands of vehicles / day.  |
+| Measured in Thousands of vehicles / day.  |
 |  Context |   |
 |  Does the indicator measure direct impacts (i.e. reduction of greenhouse gas emissions)? | No  |
 |  If yes, to which area of emission is the co-benefit linked? | N/A  |
@@ -1729,8 +1633,6 @@ Improving the quality of public space.  |
 |  Planned availability | Annual  |
 |  Planned collection interval | 2015-2030  |
 |  References |   |
-MADRID
-
 |  Results describing the indicator | I.I.I. Evaluation de la intensidad de tráfico  |   |   |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |   |  Variables | Unidades | 2010 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021  |
@@ -1749,8 +1651,6 @@ MADRID
 |  Does the indicator measure direct impacts (i.e. reduction of greenhouse gas emissions)? | No  |
 |  If yes, to which area of emission is the co-benefit linked? | N/A  |
 |  Does the indicator measure indirect impacts (i.e. co-benefits)? | Yes  |
-MADRID
-
 |  If yes, what co-benefit do you measure? | Reduction of GHG emissions.
 Improvement of air quality.
 Reduction of noise pollution.
@@ -1777,14 +1677,12 @@ Passenger mode share: Private motorized transport
 |  B-3.2: Indicator metadata  |
 | --- |
 |  Sector: Transport
-Action / project / sub-sector: Shift to public and non-motorized transport  |
-MADRID
-
+| Action / project / sub-sector: Shift to public and non-motorized transport  |
 |  Indicator name | Pedestrian mobility trends (weekdays, Saturdays and Sundays and public holidays)  |
 | --- | --- |
 |  Indicator unit | 3.2.1  |
 |  Definition | Pedestrian mobility has been selected as an indicator as it provides key information on the sustainability of mobility in the municipality. The series starts in 2019, the year in which the pedestrian mobility sampling points were put into operation.
-Expected trend: increasing.  |
+| Expected trend: increasing.  |
 |  Method of calculation | There are three indicators of the evolution of pedestrian mobility.
 According to:
 Working days: calculated by taking the total average number of working days (Persons/day), divided by 1,000.
@@ -1801,8 +1699,6 @@ Reduction of noise pollution.
 Improving the quality of public space.
 Improve public health.  |
 |  Can the indicator be used to monitor impact pathways? | Yes  |
-MADRID
-
 | If yes, for which impact pathway? | Shift to public and non-motorized transport |
 | --- | --- |
 | Is the indicator captured by existing CDP/SCIS/Mayors' Covenant platforms? | Yes, partially.
@@ -1833,16 +1729,14 @@ Mobility 2020 Report |
 |  B-3.2: Indicator metadata  |   |
 | --- | --- |
 |  Sector: Transport
-Action / project / sub-sector: Shift to public and non-motorized transport  |   |
+| Action / project / sub-sector: Shift to public and non-motorized transport  |   |
 |  Indicator name | Developments in public transport mobility  |
-MADRID
-
 |  Indicator unit | 3.2.2  |
 | --- | --- |
 |  Definition | Public transport is a fundamental part of the municipal mobility model, so it has been decided to include its evolution as an indicator of transport sustainability. To this end, the users of the main public transport services available (metro, suburban and EMT buses) have been grouped together.
-Expected trend: increasing.  |
+| Expected trend: increasing.  |
 |  Calculation method | Total number of users/year, EMT, Metro and Renfe, divided by one million.
-Measured in millions of users / year.  |
+| Measured in millions of users / year.  |
 |  Context |   |
 |  Does the indicator measure direct impacts (i.e. reduction of greenhouse gas emissions)? | No  |
 |  If yes, to which area of emission is the co-benefit linked? | N/A  |
@@ -1860,8 +1754,6 @@ Passenger mode share: Rail/Metro/Tram/
 Passenger mode share: Buses (including Bus Rapid Transit)
 (Page 17)  |
 |  Additional information |   |
-MADRID
-
 |  Planned data source | EMT Report / Madrid City Council Databank
 Metro Report / Madrid City Council's Data Bank
 Renfe / Madrid City Council Data Bank Report  |
@@ -1873,29 +1765,27 @@ Renfe / Madrid City Council Data Bank Report  |
 |  Variables | Unidades | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Movilidad EMT | 50 de canal湧水
-% | 430.923.000 | 430.109.000 | 427.631.000 | 420.197.000 | 436.797.000 | 241.581.000 | 162.642.000  |
+| % | 430.923.000 | 430.109.000 | 427.631.000 | 420.197.000 | 436.797.000 | 241.581.000 | 162.642.000  |
 |  Movilidad Metro | 50 de canal湧水
-% | 575.973.000 | 598.532.000 | 631.980.000 | 662.862.000 | 693.336.000 | 352.999.000 | 264.271.000  |
+| % | 575.973.000 | 598.532.000 | 631.980.000 | 662.862.000 | 693.336.000 | 352.999.000 | 264.271.000  |
 |  Movilidad Renfe | 50 de canal湧水
-% | 157.140.115 | 165.579.531 | 186.287.535 | 175.760.000 | 171.912.067 | 93.654.671 | 80.073.006  |
+| % | 157.140.115 | 165.579.531 | 186.287.535 | 175.760.000 | 171.912.067 | 93.654.671 | 80.073.006  |
 |  Indicator | 50 de canal湧水
-Indicators (No) | 1.156 | 1.176 | 1.226 | 1.259 | 1.295 | 999 | 557  |
+| Indicators (No) | 1.156 | 1.176 | 1.226 | 1.259 | 1.295 | 999 | 557  |
 |  Evolución indicador | 23731.145 | 100 | 533 | 535 | 111 | 114 | 60 | 40  |
 |  Other indicator systems using this indicator | -  |   |   |   |   |   |   |   |
 |  B-3.2: Indicator metadata  |   |
 | --- | --- |
 |  Sector: Transport
-Action / project / sub-sector: Increase transport sharing modes  |   |
+| Action / project / sub-sector: Increase transport sharing modes  |   |
 |  Indicator name | Evolution of zero-emission car sharing
-(carsharing or carpooling)  |
+| (carsharing or carpooling)  |
 |  Indicator unit | 3.2.5  |
 |  Definition | Percentage of electric car sharing vehicles, in terms of journeys, on a typical day.
-Its trend is expected to increase.  |
+| Its trend is expected to increase.  |
 |  Calculation method | It is part of the study of the vehicle fleet according to the European methodology EMEP / EEA CORINAIR (COPERT Model).  |
 |  Context |   |
 |  Does the indicator measure direct impacts (i.e. reduction of greenhouse gas emissions)? | No  |
-MADRID
-
 |  If yes, to which area of emission is the co-benefit linked? | N/A  |
 | --- | --- |
 |  Does the indicator measure indirect impacts (i.e. co-benefits)? | Yes  |
@@ -1926,19 +1816,17 @@ Economic Industry
 /000
 /000  |
 |  Other indicator systems using this indicator | -  |
-MADRID
-
 |  B-3.2: Indicator metadata  |   |
 | --- | --- |
 |  Sector: Transport
-Action / project / sub-sector: Optimise logistics  |   |
+| Action / project / sub-sector: Optimise logistics  |   |
 |  Indicator name | Annual emissions from light and heavy duty vehicles.
-Vehicle fleet study / emissions inventory.  |
+| Vehicle fleet study / emissions inventory.  |
 |  Indicator unit | 0.0.2  |
 |  Definition | Total annual GHG emissions from the fleet of light and heavy goods vehicles operating in the city of Madrid.
-Its trend is expected to be constant or decreasing.  |
+| Its trend is expected to be constant or decreasing.  |
 |  Method of calculation | It is part of the study of the vehicle fleet and the emissions inventory of the city of Madrid, in accordance with the European methodology EMEP / EEA CORINAIR (COPERT Model).
-Measured in kilotonnes of CO2 equivalent (kt CO2eq).  |
+| Measured in kilotonnes of CO2 equivalent (kt CO2eq).  |
 |  Context |   |
 |  Does the indicator measure direct impacts (i.e. reduction of greenhouse gas emissions)? | Yes  |
 |  If yes, to which area of emission is the co-benefit linked? | (2.1d) Provide a breakdown of your community-wide emissions in the format of the Common Reporting Framework.
@@ -1954,7 +1842,7 @@ MADRID
 MADRID
 
 |  | Measured in kilotonnes of CO2 equivalent (kt CO2eq).
-Tabla 10. Distribución por sectores de las emisiones directas e indirectas de GEI en Madrid (año 2020) |
+| Tabla 10. Distribución por sectores de las emisiones directas e indirectas de GEI en Madrid (año 2020) |
 | --- | --- |
 | Emisiones | ROI | Industria* | Transporte por carretera | Otros medios de transporte | Tratamiento y eliminación de residuos** | Otros*** | TOTAL |
 | Directas | 1.710,4 | 561,1 | 1.025,4 | 115,2 | 710,9 | 741,4 | 1.890,8 |
@@ -1981,9 +1869,7 @@ Transportation > On-road^
 (p. 12) |
 | Additional information |  |
 | Planned data source | Inventory of greenhouse gas emissions in the municipality of Madrid.
-Year 2020 |
-MADRID
-
+| Year 2020 |
 | Planned availability | Annual |
 | --- | --- |
 | Planned collection interval | 2015-2030 |
@@ -1997,18 +1883,16 @@ MADRID
 |  B-3.2: Indicator metadata  |   |
 | --- | --- |
 |  Sector: Transport
-Action / project / sub-sector: Electrification of passenger cars  |   |
+| Action / project / sub-sector: Electrification of passenger cars  |   |
 |  Indicator name | Evolution of ZERO passenger car registrations compared to total registrations  |
 |  Indicator unit | 3.3.1  |
 |  Definition | This indicator shows the proportion of cars with the DGT "0 emissions" badge, the most efficient and environmentally friendly, with respect to the total number of cars registered in the municipality.
-Expected trend: increasing.  |
+| Expected trend: increasing.  |
 |  Method of calculation | It is obtained by taking the number of ZERO passenger car registrations in a year multiplied by 100, and divided by the total number of passenger car registrations in a year.
-Measured as a percentage (%)  |
+| Measured as a percentage (%)  |
 |  Context |   |
 |  Does the indicator measure direct impacts (i.e. reduction of greenhouse gas emissions)? | No  |
 |  If yes, to which area of emission is the co-benefit linked? | N/A  |
-MADRID
-
 | Does the indicator measure indirect impacts (i.e. co-benefits)? | Yes |
 | --- | --- |
 | If yes, what co-benefit do you measure? | Penetration of new zero-emission technologies in the city's vehicle fleet. |
@@ -2032,9 +1916,7 @@ MADRID
 |  B-3.2: Indicator metadata  |
 | --- |
 |  Sector: Transport
-Action / project / sub-sector: Electrification of the vehicle fleet: taxis  |
-MADRID
-
+| Action / project / sub-sector: Electrification of the vehicle fleet: taxis  |
 |  Indicator name | Evolution of ZERO taxis versus total number of taxis  |
 | --- | --- |
 |  Indicator unit | 3.3.2  |
@@ -2052,10 +1934,8 @@ MADRID
 (p. 17)  |
 |  Additional information |   |
 |  Planned data source | Madrid City Council's Open Data Portal
-Daily and historical taxi fleet  |
+| Daily and historical taxi fleet  |
 |  Planned availability | Annual  |
-MADRID
-
 |  Planned collection interval | 2015-2030  |   |   |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  References |   |   |   |   |   |   |   |   |   |
@@ -2077,8 +1957,6 @@ MADRID
 |  Context |   |
 |  Does the indicator measure direct impacts (i.e. reduction of greenhouse gas emissions)? | No  |
 |  If yes, to which area of emission is the co-benefit linked? | N/A  |
-MADRID
-
 | Does the indicator measure indirect impacts (i.e. co-benefits)? | Yes |
 | --- | --- |
 | If yes, what co-benefit do you measure? | Penetration of new zero emission technologies in the city's bus fleet. |
@@ -2102,14 +1980,12 @@ MADRID
 | Other indicator systems using this indicator | - |
 | B-3.2: Indicator metadata |
 | Sector: Electricity
-Action / project / sub-sector: Shift to renewable electricity |
+| Action / project / sub-sector: Shift to renewable electricity |
 | Indicator name | Evolution of the electricity emission factor (national level) |
-MADRID
-
 |  Indicator unit | 1.7.1  |
 | --- | --- |
 |  Definition | The electricity emission factor expresses the CO2 emissions associated with the generation of electricity consumed in a given territory and therefore determines the indirect GHG emissions associated with the consumption of this energy source. It provides an overview of the energy sources and generation technologies involved in electricity production. It is a value at the national level.
-Expected trend: downward.  |
+| Expected trend: downward.  |
 |  Method of calculation | It is obtained by taking the value of the GHG emissions inventory of the municipality of Madrid.
 Table 4 of the Inventory of GHG emissions in the municipality of Madrid. Year 2020, shows the resulting emission factors used to estimate these indirect emissions.
 Measured in tonnes of CO2 between megawatt hours (tCO2/MWh).  |
@@ -2122,8 +1998,6 @@ Measured in tonnes of CO2 between megawatt hours (tCO2/MWh).  |
 |  If yes, for which impact pathway? | Shift to renewable electricity  |
 |  Is the indicator captured by existing CDP/SCIS/Mayors' Covenant platforms? | No  |
 |  Additional information |   |
-MADRID
-
 |  Planned data source | Inventory of GHG emissions in the municipality of Madrid. Year 2020. Original information from REE  |
 | --- | --- |
 |  Planned availability | Annual  |
@@ -2138,11 +2012,11 @@ MADRID
 |  B-3.2: Indicator metadata  |   |   |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Sector: Electricity
-Action / project / sub-sector: Shift to renewable electricity  |   |   |   |   |   |   |   |   |
+| Action / project / sub-sector: Shift to renewable electricity  |   |   |   |   |   |   |   |   |
 |  Indicator name | Renewable electricity generation  |   |   |   |   |   |   |   |
 |  Indicator unit | 1.7.2  |   |   |   |   |   |   |   |
 |  Definition | Renewable energy generation has been set as an indicator to monitor the inclusion of non-GHG emitting technologies in the production of electricity within the municipality of Madrid. For its calculation, photovoltaic generation is considered, as well as electricity generation from sewage sludge biogas, landfill biogas, biomethanisation biogas, and municipal waste incineration, in its renewable part.
-Expected trend: increasing.  |   |   |   |   |   |   |   |
+| Expected trend: increasing.  |   |   |   |   |   |   |   |
 |  Method of calculation | Sum of the gross electricity produced from the following own sources:
 Solar photovoltaic, biogas from biomethanisation, landfill biogas + biomethanisation and incineration.
 Rounded to whole units, measured in ktoe. in table 3 of the Energy Balance of the municipality of Madrid, Year 2020.
@@ -2152,7 +2026,7 @@ MADRID
 |  Tabla 3. Energía eléctrica producida a partir de fuentes propias en el municipio de Madrid. Año 2020  |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |  Fuentes energéticas propias
-Resoluto urbano (RU) | 2020 |   |   |   | 2020  |   |
+| Resoluto urbano (RU) | 2020 |   |   |   | 2020  |   |
 |   |  Boda | Venta | Autoconsumo | Boda | Venta | Autoconsumo  |
 |  Incorrección (Las Lomas) | 226,72 | 165,18 | 51,54 | 19,49 | 14,20 | 5,29  |
 |  Biogás de vertedero + biogás de biometanización (La Gallana) | 85,35 | 71,17 | 14,19 | 7,34 | 6,12 | 1,22  |
@@ -2178,8 +2052,6 @@ Fuente: elaboración propia a partir de datos del Ayuntamiento de Madrid, Comuni
 |  Planned data source | Energy Balance of the municipality of Madrid. Year 2020  |
 |  Planned availability | Annual  |
 |  Planned collection interval | 2015-2030  |
-MADRID
-
 | References |  |
 | --- | --- |
 | Results describing the indicator | 1.7.2 | Generación electrica renovable |  |  |  |  |  |  |
@@ -2201,8 +2073,6 @@ MADRID
 |  Method of calculation | This is the annual result of the sum of the waste recovered from the fractions Light packaging + residual waste, divided by the sum of the incoming waste from the fractions Light packaging + residual waste, from the waste treatment and sorting centres of La Paloma, Las Dehesas and Las Lomas. Measured as a percentage (%).  |
 |  Context |   |
 |  Does the indicator measure direct impacts (i.e. reduction of greenhouse gas emissions)? | No  |
-MADRID
-
 |  If yes, to which area of emission is the co-benefit linked? | N/A  |   |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Does the indicator measure indirect impacts (i.e. co-benefits)? | Yes  |   |   |   |   |   |   |   |
@@ -2253,10 +2123,8 @@ MADRID
 |  Does the indicator measure direct impacts (i.e. reduction of greenhouse gas emissions)? | No  |   |   |   |   |
 |  If yes, to which area of emission is the co-benefit linked? | N/A  |   |   |   |   |
 |  Does the indicator measure indirect impacts (i.e. co-benefits)? | Yes  |   |   |   |   |
-MADRID
-
 | If yes, what co-benefit do you measure? | Improving the energy use of waste (generation of biogas and electricity).
-Use of organic material for the generation of agricultural fertilisers. |
+| Use of organic material for the generation of agricultural fertilisers. |
 | --- | --- |
 | Can the indicator be used to monitor impact pathways? | Yes |
 | If yes, for which impact pathway? | Increasing recovery rates in the RCI sector |
@@ -2278,14 +2146,12 @@ Use of organic material for the generation of agricultural fertilisers. |
 |  B-3.2: Indicator metadata  |   |
 | --- | --- |
 |  Sector: Waste and reforestation
-Action / project / sub-sector: Naturalise and reforest the municipality  |   |
+| Action / project / sub-sector: Naturalise and reforest the municipality  |   |
 |  Indicator name | Evolution of CO2 removals (sinks)  |
-MADRID
-
 |  Indicator unit | 1.6.1  |
 | --- | --- |
 |  Definition | Absorptions by CO2 sinks are a natural mechanism for minimising the total concentration of carbon dioxide in the atmosphere and thus minimise global warming.
-Expected trend: unchanged or slightly increasing.  |
+| Expected trend: unchanged or slightly increasing.  |
 |  Method of calculation | Obtained from the Absorptions column in table 56 of the Inventory of greenhouse gas emissions in the municipality of Madrid. Year 2020.
 Measured in kilotonnes of CO2 equivalent (kt CO2 eq).
 Tabla 56. Emisiones de GEI del grupo SNAP 11 (kt CO2 equivalente)  |
@@ -2322,8 +2188,6 @@ AFOLU > Land use
 |  Does the indicator measure indirect impacts (i.e. co-benefits)? | No  |
 |  If yes, what co-benefit do you measure? | N/A  |
 |  Can the indicator be used to monitor impact pathways? | Yes  |
-MADRID
-
 |  If yes, for which impact pathway? | Naturalise and reforest the municipality  |   |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Is the indicator captured by existing CDP/SCIS/Mayors' Covenant platforms? | Yes
@@ -2333,7 +2197,7 @@ AFOLU > Land use
 (p. 16)  |   |   |   |   |   |   |   |
 |  Additional information |   |   |   |   |   |   |   |   |
 |  Planned data source | Inventory of greenhouse gas emissions in the municipality of Madrid.
-Year 2020  |   |   |   |   |   |   |   |
+| Year 2020  |   |   |   |   |   |   |   |
 |  Planned availability | Annual  |   |   |   |   |   |   |   |
 |  Planned collection interval | 2015-2030  |   |   |   |   |   |   |   |
 |  References |   |   |   |   |   |   |   |   |
@@ -2359,13 +2223,9 @@ It consists of a summary table, indicating the organisational and governance act
 | --- | --- | --- | --- | --- | --- |
 |  Name of the performance | Description | Person and entity/body responsible | Actors involved | Impact | Cobenefits  |
 |  *Interdepartmental Clima Group | Network of municipal officials from six different government areas with the aim of mainstreaming the climate dimension in municipal actions. | Madrid City Council Internationalisation and Cooperation Delegate Area | 25 people from the following government departments of the City Council: Culture, Tourism and Sport; Urban Development; Economy, Innovation and Employment; Internationalisation and Cooperation; Finance and Personnel; and Environment and Mobility. | Internal coordination and mainstreaming of the climate dimension in municipal actions | Systemic approach; human scale actions; interrelationships of climate actions on health and social well-being; generation of fair employment.  |
-MADRID
-
 |  Collaborative Platform for Climate Neutrality in Spanish Cities |  | Ministry for Ecological Transition and the Demographic Challenge of the Spanish Government, with the management support of EIT Climate-KIC (in collaboration with the Polytechnic University of Madrid - UPM). | The City Councils of Barcelona, Seville, Valencia, Valladolid, Vitoria-Gasteiz and Zaragoza, the Ministry for Ecological Transition and the Demographic Challenge, EIT Climate-KIC, UPM, Fundación Biodiversidad, the Spanish Office for Climate Change, and the European project NetCeroCities for the operationalisation of the European Cities Mission. | The aim is to accelerate the implementation of solutions with social, economic and environmental impact, bringing together public and private efforts for urban transformation. | Design and implementation of simultaneous actions in several Spanish cities (multi-city projects) that amplify the scale of the initiatives. Opportunities for inter-city training, learning and capacity building, and joint efforts to facilitate citizen participation and activation processes not only on a local but also on a national scale.  |
 | --- | --- | --- | --- | --- | --- |
 |  Participation in national and European networks of cities linked to climate challenges (C40, EIT Climate-KIC, Covenant of Mayors, EuroCities, FEMP-Cities for | Madrid continues to be present and to expand its participation in national and European networks of cities linked to climate challenges. | City Hall | All Government Areas | International presence and visibility, meeting common milestones together with other cities in each network, common commitments. | Knowledge of the peer network, exchange of experiences, monitoring of global climate policy.  |
-MADRID
-
 |  Climate Network). |  |  |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Chamartín Business Centre Climate Action Demonstrator Area (initial approval by the Governing Board 16-03-23) | Action Plan to accelerate climate neutrality in the urban area of the Madrid Nuevo Norte Business Centre. | Madrid City Council. Directorate of Sustainability and Environmental Control | Management Committee of the Chamartín Business Centre and Crea Madrid Nuevo Norte, S.A. | It establishes measures for the Chamartín Business Centre to have emissions of 0.4 tCO2e/pers-eq. The measures will be updated every 3 years. | Decarbonisation Living Lab to test regulations and public-private partnerships in a controlled environment.  |
@@ -2389,15 +2249,11 @@ MADRID
 |  Name of the performance | Description | Person and entity/body responsible | Actors involved | Impact | Co-benefits  |
 |  Mutant Institute for Environmental Narratives | Alliance between the Madrid City Council (Environment and Mobility Area), the public centre for contemporary creation Matadero-Madrid and the Polytechnic University of Madrid to create an artistic laboratory for the climate in 2018. | Matadero-Madrid | Madrid City Council (Environment and Mobility Area), Matadero-Madrid and the Polytechnic University of Madrid. | Broadening of audiences reached by climate communication through the connection of the scientific community with expertise in climate knowledge and the artistic community of recognised prestige. Use of new narratives to disseminate climate change. | New audiences can learn about and become aware of the climate crisis. Expansion of social spaces where the issue is present.  |
 |  Madrid City Studio | Scientific collaboration programme for the development of Master's and Bachelor's Degree Final Projects and on city problems included in the Roadmap to Climate Neutrality for the city of | Universidad Politécnica de Madrid and Madrid City Council | Students, teachers, civil servants and programme managers (in the first edition: 40 people directly involved, and 85 indirectly). | Involvement of students together with City Council officials in different strategic projects that address identified problems in the city related to climate neutrality objectives. | Co-design of a set of solutions; disruptive ideas through collaborative work and empathy between generations; feeling of contributing to the needs of the city by young people.  |
-MADRID
-
 |   | Madrid by 2050. |  |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  European innovation projects with citizen participation: CLEVER, LIFE-PACT, Food Wave, ECCENTRIC. | Innovation projects funded through European calls to design and implement climate actions for electric and non-motorised mobility, revegetation of infrastructures and public space and the design of indicators that specifically measure climate impact. | Madrid City Council | Allied partners in each project (other public administrations with competences in each field, companies, educational communities). | Implementation and experimentation in climate action demonstration zones in the city. Collaboration between public and private actors with a common purpose. | Satisfaction of the populations living in the areas of action (more naturalised neighbourhoods in the future, with more sustainable and electric modes of mobility, sustainable food practices integrated into food chains).  |
 |  EIT Climate-KIC Innovation Projects with citizen participation: Madrid Deep Demonstration, Climate, Ecología a Pie de Barrio, Innovation Leadership Program, Climate Accelerator Program, Journey, Climathon (from 2019 to 2022) | EIT Climate-KIC funded innovation projects for the creation of connected climate action portfolios that foster entrepreneurship and collaborative design skills. | EIT Climate-KIC, Polytechnic University of Madrid and Madrid City Council | Allied partners in each project and groups impacted by the action (companies, cultural centres, start-ups, for example). | Implementation and experimentation in climate action demonstration zones in the city. Collaboration between public and private actors with a common purpose. | Experimentation that can provide lessons for other experiments in other areas of the city and for other cities.  |
 |  Municipal School Environments | Action in 218 schools (primary and secondary) | Madrid City Council (various government | School communities of the schools (in | Increased road safety on access roads to | Satisfaction of the populations  |
-MADRID
-
 |  Programme (inter-area) | in the 21 districts of the city to adapt them to climate change until 2023. | departments involved) | the pilot actions), companies carrying out the work | schools and for the health of children, parents and/or family members and teachers. Infrastructure better adapted to the adverse effects of climate change (when the action is completed). | living in the areas of action. Experimentation that can provide lessons for other experiments in other areas of the city and for other cities.  |
 | --- | --- | --- | --- | --- | --- |
 |  Madrid Zero Emissions" open events | Annual event to disseminate innovative climate actions. | Madrid City Council | La Casa Encendida (MonteMadrid Banking Foundation), Democratic Society, Universidad Politécnica de Madrid, C40, Laudes Foundaiton and EIT Climate-KIC and more than 50 speakers. | Dissemination of climate action from practice. Real cases that demonstrate how to move towards more sustainable city models from different approaches. | New audiences can learn about and become aware of the climate crisis. Expansion of social spaces where the issue is present.  |
@@ -2432,8 +2288,6 @@ MADRID
 |  Electrification of goods | 90% | Trucks <3.5 t to 2040 | 2020-2030 | Transport | 59 | € 22 | € 35 | -325 €  |
 |   | 40% | Trucks >3.5 t to 2040 | 2020-2031 | Transport |  |  |  |   |
 |  Building energy efficiency renovations | 2,0% | of all existing buildings / year | 2020-2030 | Buildings and Heating and Cooling | 60 | € 640 | € 48 | - 1.892 €  |
-MADRID
-
 |  New buildings highly energy efficient | 20% | percentage of new buildings constructed according to the highest energy efficiency standards | 2020-2030 | Buildings and Heating and Cooling | 23 | € 263 | € 20 | -409 €  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Efficient lighting & appliances | 100 % | of luminaires retrofitted between 2020 and 2030 (40% efficiency improvements) | 2020-2030 | Buildings and Heating and Cooling | 247 | € 2.879 | € 21 | -1.431 €  |
@@ -2459,8 +2313,6 @@ Hypothesis: Extended case
 |  Electrification of goods | 90% | Trucks <3.5 t to 2040 | 2020-2030 | Transport | 59 | € 22 | € 35 | -325 €  |
 |   | 40% | Trucks >3.5 t to 2040 | 2020-2031 | Transport |  |  |  |   |
 |  Building energy efficiency renovations | 3,5% | of all existing buildings / year | 2020-2030 | Buildings and Heating and Cooling | 202 | € 2.147 | € 159 | -5.826 €  |
-MADRID
-
 |  New buildings highly energy efficient | 20% | percentage of new buildings constructed according to the highest energy efficiency standards | 2020-2030 | Buildings and Heating and Cooling | 23 | € 263 | € 20 | -409 €  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Efficient lighting & appliances | 100% | of luminaires retrofitted between 2020 and 2030 (40% efficiency improvements) | 2020-2030 | Buildings and Heating and Cooling | 345 | € 4.255 | € 31 | -1.951 €  |
@@ -2502,8 +2354,6 @@ The deadlines shown below are indicative and may be modified and adapted during 
 |  T7 | Gathering baseline data on key indicators identified in the monitoring and evaluation plan | M11 | M13  |
 |  T8 | Analysis of baseline indicators and progress towards achieving emission reduction targets | M11 | M13  |
 |  T9 | Review of the Cities Climate City Contract based on the results of the evaluation process, including assessing the effectiveness of the monitoring and evaluation process and identifying areas for improvement. | M13 | M16  |
-MADRID
-
 |  T10 | Drafting of the 2nd version of the Climate City Contract based on the results of the assessment and monitoring process | M16 | M24  |
 | --- | --- | --- | --- |
 |  2ND CA | 2nd version Climate City Contract | M1 | M24  |

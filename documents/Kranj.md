@@ -954,16 +954,14 @@ CITY OF KRANJ
 Climate Neutrality Action Plan
 
 |  INFRASTRUCTURE
-– waste management | Komunala Kranj, public utility company, LLC | Municipal utility company | According to the municipal Act on the Implementation of Public Utility Services - waste management is provided by municipal public utility company. With more than 235 employees and 24,5 mio EUR of income (2022), Komunala Kranj is one of the most important stakeholders of the City of Kranj CCC. Their management and experts are members of the SCCNSC and the extended TT. Komunala Kranj is strongly committed to zero waste and circular economy principles and thus coordinates measures of Kranj Zero Waste Strategy (2021) which is an important action of this document. As the former landfill is closed and under controlled rehabilitation until 2040, the current residual waste is incinerated out of the city. Direct city responsibility for waste management gives the utility company authority to instigate changes in this field of action. Investments are a responsibility of the City of Kranj.
-
-**Influence on city climate neutrality by 2030: high** | High
-Strong competences, available resources, digitalization efforts, clear strategy and projects in pipeline, assure high impact of Komunala Kranj on the GHG reduction in waste management.  |
+| – waste management | Komunala Kranj, public utility company, LLC | Municipal utility company | According to the municipal Act on the Implementation of Public Utility Services - waste management is provided by municipal public utility company. With more than 235 employees and 24,5 mio EUR of income (2022), Komunala Kranj is one of the most important stakeholders of the City of Kranj CCC. Their management and experts are members of the SCCNSC and the extended TT. Komunala Kranj is strongly committed to zero waste and circular economy principles and thus coordinates measures of Kranj Zero Waste Strategy (2021) which is an important action of this document. As the former landfill is closed and under controlled rehabilitation until 2040, the current residual waste is incinerated out of the city. Direct city responsibility for waste management gives the utility company authority to instigate changes in this field of action. Investments are a responsibility of the City of Kranj. |
+| **Influence on city climate neutrality by 2030: high** | High |
+| Strong competences, available resources, digitalization efforts, clear strategy and projects in pipeline, assure high impact of Komunala Kranj on the GHG reduction in waste management.  |
 | --- | --- | --- | --- | --- |
 |  INFRASTRUCTURE
-– water supply and waste water management | Komunala Kranj, public utility company, LLC | Municipal utility company | Further to the municipal Act on the Implementation of Public Utility Services - water supply and wastewater management is provided by municipal public utility company. With more than 235 employees and 24,5 mio EUR of income (2022) Komunala Kranj is one of the most important stakeholders of the City of Kranj’s CCC. Their management and experts are members of the SCCNSC and the extended TT. While the City of Kranj is responsible for investing in the completion of sewage system (in suburban areas), Komunala Kranj maintains and operates the sewage network, including modern in 2015 fully reconstructed wastewater management treatment (WWTP, 95.000 PE). Thus, the WWTP processes are already optimised, the challenge stays in improving the water supply energy efficiency.
-
-**Influence on city climate neutrality by 2030: low** | High
-Lower GHG emissions, reduced environmental footprint and cost savings are of high interest of Komunala Kranj as well as its clients – citizens (lower costs) and the City of Kranj.  |
+| – water supply and waste water management | Komunala Kranj, public utility company, LLC | Municipal utility company | Further to the municipal Act on the Implementation of Public Utility Services - water supply and wastewater management is provided by municipal public utility company. With more than 235 employees and 24,5 mio EUR of income (2022) Komunala Kranj is one of the most important stakeholders of the City of Kranj’s CCC. Their management and experts are members of the SCCNSC and the extended TT. While the City of Kranj is responsible for investing in the completion of sewage system (in suburban areas), Komunala Kranj maintains and operates the sewage network, including modern in 2015 fully reconstructed wastewater management treatment (WWTP, 95.000 PE). Thus, the WWTP processes are already optimised, the challenge stays in improving the water supply energy efficiency. |
+| **Influence on city climate neutrality by 2030: low** | High |
+| Lower GHG emissions, reduced environmental footprint and cost savings are of high interest of Komunala Kranj as well as its clients – citizens (lower costs) and the City of Kranj.  |
 |  INFRASTRUCTURE
 – public lighting | Vigred, elektroinstalacije LLC | Municipal concessioner for public lighting | Further to the municipal Act on the Implementation of Public Utility Services, public lighting operations and maintenance is provided by the concessioner. The company operates and maintains public lighting of roads, public areas, selected buildings, town light decoration and traffic lights in the municipal area. The investments and the development policy of the public lighting is the responsibility of the City of Kranj. The concessioner follows the strategy and the annual plans. As evident from the analysis, the city lighting is nearly fully optimized and in line with the | Medium
 Due to recent investments, most of the system is in line with the regulation, current interest for short-term re-investments in smart solutions is conditioned  |
@@ -974,8 +972,7 @@ Climate Neutrality Action Plan
 1
 
 |   |  |  | regulation. The challenge remains in securing the funds for specific solutions in historic centre and introduction of recently piloted smart lighting solutions in similar compact and new city districts.
-
-**Influence on city climate neutrality by 2030: medium** | by availability of external funding opportunities.  |
+| **Influence on city climate neutrality by 2030: medium** | by availability of external funding opportunities.  |
 | --- | --- | --- | --- | --- |
 |  **INFRASTRUCTURE**
 – EV and hydrogen charging network | The City of Kranj - City Administration
@@ -988,26 +985,23 @@ The respective City Administration employees are engaged in the Transition Team,
 Transport accounts at most to GHG in the city, accelerated transition to e-mobility is of high interest for the City of Kranj and its private partner.  |
 |   |  Vizije Mobilnosti LLC | City PPP partner for charging network |  |   |
 |   |  Ministry of the Environment, Climate and Energy | National Authority | Being responsible for the regulatory framework, policy and the support programmes in the key sectors for Kranj and Slovenia’s green transition (efficient energy supply, introduction of modern energy policies, with an emphasis on increasing the share of RES, public passenger transport, sustainable mobility and transport) the ministry is our main partner at the government level and member of the SC.
-
-**Influence on city climate neutrality by 2030: high** | **High**
-Assuring appropriate legal framework and embedding EU Cities Mission objectives in the national funding schemes.  |
+| **Influence on city climate neutrality by 2030: high** | **High** |
+| Assuring appropriate legal framework and embedding EU Cities Mission objectives in the national funding schemes.  |
 |   |  Arriva LLC | Municipal concessioner for urban transport | Elektro Gorenjska Group is a regional distributor of electricity and producer of green electrical energy. Arriva LLC is one of the two major Slovenian private transport companies providing passenger transport at urban and national scale. Both companies are based in Kranj, with significant resources and innovative sustainable business visions, they are of strategic importance in supporting city’s green transition. They are vital CCC partners in the Strategic Council for Climate Neutral and Smart | **High**
-Green transition in transport, testing of pilot charging technological and business model solutions in the home-based territory and  |
+| Green transition in transport, testing of pilot charging technological and business model solutions in the home-based territory and  |
 |   |  Elektro Gorenjska JS | Electricity distribution & |  |   |
 CITY OF KRANJ
 Climate Neutrality Action Plan
 
 |   | SODO Electricity distribution operator | production company | City and Transition Team. Together, in a joint partnership, they are preparing an investment project in Kranj for the first high-capacity and speed EV charging hub.
-
-**Influence on city climate neutrality by 2030: high** | opportunity to penetrate new green markets are high interest for Elektro Gorenjska and Arriva.  |
+| **Influence on city climate neutrality by 2030: high** | opportunity to penetrate new green markets are high interest for Elektro Gorenjska and Arriva.  |
 | --- | --- | --- | --- | --- |
 |   |  Ministry of Defence Directorate for Logistic | National Authority | The Military unit Petra Petriča in Kranj, a part of the Slovenian Armed Forces of the Ministry of Defence, is an innovation driven public partner with ambitious pilot RESHUB project investing in energy self-sufficient military infrastructure hub based on renewable, mostly hydrogen powered sources. Kranj, as a progressive, sustainable and smart city, was chosen as the first location in Slovenia to serve as a pilot project for cooperation between the defence system and local communities. The future RESHUB will significantly release the city grid network, act as a pilot project for other strategic infrastructure (city health centre, education.) and will be open to the local community, the Ministry of Defence acts as a strategic stakeholder in the CCC process in Kranj.
-
-**Influence on city climate neutrality by 2030: high** | High
-The RESHUB project in the Military unit Petra Petriča in Kranj is a pilot investment of the EU pan-European project RESHUB Network.  |
+| **Influence on city climate neutrality by 2030: high** | High |
+| The RESHUB project in the Military unit Petra Petriča in Kranj is a pilot investment of the EU pan-European project RESHUB Network.  |
 |  INFRASTRUCTURE
-Parking and pedestrian areas | The City of Kranj – City Administration Office for Economic Affairs and Traffic, Department for Traffic | Local Authority | Further to the Local Self-Government Act the municipality (Department of Transport of the City of Kranj Administration) is responsible for public parking/pedestrian areas and parking policy while its operation and maintenance is trusted to public utility company Komunala Kranj. Both bodies are actively involved in CCC structures and processes. Since 2017, the City of Kranj has been regulating parking system with the Decree on Road Traffic Rule. According to it, the City has designated public parking areas and parking fee and/or other parking regime in individual zones 1, 2 and 3. Parking policy is an important municipal tool for reduction of traffic, however with limited impact as only 15% of the parking space is in the city ownership while the rest belongs to the residents. Citizen’s resistance to changes in parking policy is high. | High
-Transport is a large contributor to the GHG emissions in the City, while noise and daily congestions impede citizens’ life quality. It is of City’s high interest to adjust the existing parking policy and extend pedestrian areas.  |
+| Parking and pedestrian areas | The City of Kranj – City Administration Office for Economic Affairs and Traffic, Department for Traffic | Local Authority | Further to the Local Self-Government Act the municipality (Department of Transport of the City of Kranj Administration) is responsible for public parking/pedestrian areas and parking policy while its operation and maintenance is trusted to public utility company Komunala Kranj. Both bodies are actively involved in CCC structures and processes. Since 2017, the City of Kranj has been regulating parking system with the Decree on Road Traffic Rule. According to it, the City has designated public parking areas and parking fee and/or other parking regime in individual zones 1, 2 and 3. Parking policy is an important municipal tool for reduction of traffic, however with limited impact as only 15% of the parking space is in the city ownership while the rest belongs to the residents. Citizen’s resistance to changes in parking policy is high. | High |
+| Transport is a large contributor to the GHG emissions in the City, while noise and daily congestions impede citizens’ life quality. It is of City’s high interest to adjust the existing parking policy and extend pedestrian areas.  |
 |   |  Komunala Kranj, public utility company | Municipal utility company | **Influence on city climate neutrality by 2030: high** |   |
 |  INFRASTRUCTURE
 Green and blue areas | The City of Kranj – City Administration | Local Authority | Further to the Local Self-Government Act, the municipality (Office for Economic Activities and Transport of the City of Kranj Administration) is in charge for public green areas while the maintenance based is trusted to the concessioner Flora LCC. Through spatial planning the City determines the land use and thus preserves agricultural land, forests | High
@@ -1103,22 +1097,18 @@ Climate Neutrality Action Plan
 5
 
 |   | Residential heating boards of apartment owners | Informal network | The facility managers have been promoting energy retrofit of the residential building for the last decade. Energy efficiency and renewal measures have been co-financed by the Slovenia Eco Fund. Thus, the relevant competences and business model established between individual facility manager and the residential heating boards (owners) are already in place.
-
-Influence on city climate neutrality by 2030: high | distance managed energy systems and well maintained facilities are important for the facility operator.  |
+| Influence on city climate neutrality by 2030: high | distance managed energy systems and well maintained facilities are important for the facility operator.  |
 | --- | --- | --- | --- | --- |
 |  ALIANCESS
-EU wide | Covenant of Mayors – Gorenjska region alliance | EU initiative | The City of Kranj is a Covenant signatory from 2013 and committed to adopting an integrated approach to climate change mitigation and adaptation. In 2018 the City has, together with other municipalities of Gorenjska region, adopted Strategic Energy and Climate Action Plan (SECAP) with and individual Action Plan aiming of cutting CO_{2} emissions and increasing resilience to climate change. Covenant of Mayors is the basis for the higher targets set by the CCC.
-
-Influence on city climate neutrality by 2030: medium | NA  |
+| EU wide | Covenant of Mayors – Gorenjska region alliance | EU initiative | The City of Kranj is a Covenant signatory from 2013 and committed to adopting an integrated approach to climate change mitigation and adaptation. In 2018 the City has, together with other municipalities of Gorenjska region, adopted Strategic Energy and Climate Action Plan (SECAP) with and individual Action Plan aiming of cutting CO_{2} emissions and increasing resilience to climate change. Covenant of Mayors is the basis for the higher targets set by the CCC. |
+| Influence on city climate neutrality by 2030: medium | NA  |
 |   |  EU Mission Adaptation to Climate Change – Gorenjska region alliance | EU initiative | As a regional centre, the City of Kranj plays an important role in the region of Gorenjska alliance for the EU Mission on Adaptation and Climate Change. The process of Mission Adaptation shall fully complement the Cities Mission objectives.
-
-Influence on city climate neutrality by 2030: medium | High
-There is high interest of both alliances to coordinate and exploit synergies to avoid overlapping.  |
+| Influence on city climate neutrality by 2030: medium | High |
+| There is high interest of both alliances to coordinate and exploit synergies to avoid overlapping.  |
 |  ALIANCESS
-national | Association of Urban Municipalities of Slovenia (ZMOS) | National association | The Association of Urban Municipalities of Slovenia is the only representative association of urban municipalities in Slovenia that exclusively represents the interests of 12 urban municipalities. Among others it manages EU Cohesion programme for urban development and fosters exchange of best practices between urban municipalities in tackling the various challenges. The Integrated Territorial Investments (ITI) funds for the period 2021–2028 have vital importance for implementation of actions proposed by this document thus tight alliance with ZMOS is crucial.
-
-Influence on city climate neutrality by 2030: medium | High
-ZMOS is familiarized with the CCC process as 3 of 12 members are part of EU Cities Mission. Transfer of experience and practices from/to Kranj to/from other Slovenian city municipalities is of high interest.  |
+| national | Association of Urban Municipalities of Slovenia (ZMOS) | National association | The Association of Urban Municipalities of Slovenia is the only representative association of urban municipalities in Slovenia that exclusively represents the interests of 12 urban municipalities. Among others it manages EU Cohesion programme for urban development and fosters exchange of best practices between urban municipalities in tackling the various challenges. The Integrated Territorial Investments (ITI) funds for the period 2021–2028 have vital importance for implementation of actions proposed by this document thus tight alliance with ZMOS is crucial. |
+| Influence on city climate neutrality by 2030: medium | High |
+| ZMOS is familiarized with the CCC process as 3 of 12 members are part of EU Cities Mission. Transfer of experience and practices from/to Kranj to/from other Slovenian city municipalities is of high interest.  |
 |  ALLIANCESS
 Local | Smart Kranj / IT group | Local | Developing Kranj smart city concept and its practical implementation over the years has brought together various experts from research and Kranj IT business community. The EU Cities Mission addresses new | High
 Ambitious city ecosystem is welcomed  |
@@ -1126,13 +1116,11 @@ CITY OF KRANJ
 Climate Neutrality Action Plan
 
 |   |  | innovation ecosystem & private sector | perspectives for the IT cluster dynamic and other Kranj based SMEs to add new climate related contents and technological solutions to the existing platform. Some of the cluster members (SMEs, researchers) are actively engaged in the SC.
-
-**Influence on city climate neutrality by 2030: medium** | by the dynamic SMEs although administrative barriers – procurement - often limit the direct collaboration of SMES in public projects.  |
+| **Influence on city climate neutrality by 2030: medium** | by the dynamic SMEs although administrative barriers – procurement - often limit the direct collaboration of SMES in public projects.  |
 | --- | --- | --- | --- | --- |
 |  **CAPACITIES & LEARNING** | **University of Maribor, Faculty of Organizational Sciences** | Faculty | Faculty of Organizational Sciences, a member of the University of Maribor, is located in Kranj and has 64 employees and around 1.000 enrolled students. They offer under- and post-graduate studies in fields of enterprise engineering, management of human resources, informational systems, sport management, education and health systems, including crisis management and provide an important professional background to support the City of Kranj in promotion of social innovation and of public institutions and enterprises for green transition. Therefore, the Faculty is a member of the SCCNSC and one of the signatories of the CCC commitment.
-
-**Influence on city climate neutrality by 2030: medium** | **High**
-The faculty is open to provide expertise in climate actions as well as initiate new study programmes associated with expanding opportunities in green economies.  |
+| **Influence on city climate neutrality by 2030: medium** | **High** |
+| The faculty is open to provide expertise in climate actions as well as initiate new study programmes associated with expanding opportunities in green economies.  |
 |   |  **University of Ljubljana
 Faculty of Electrical Engineering, Biotechnical Faculty, Institute for Innovation and Development of the University of Ljubljana** | Faculty R&D | **Faculty of Electrical Engineering** is a part of the University of Ljubljana and has been a long-lasting partner and one of major drivers of Kranj Smart City cluster. In Kranj, the Faculty runs an OPEN LAB space promoting innovation and technical skills among youth through series of workshops and innovative projects in public interest. Being a strong research, technology and competent stakeholder, the Faculty of Electrical Engineering can make and important contribution to the Kranj smart platform, to support climate transition and in the transfer and demonstration of new approaches and technologies in the Kranj pilot actions and investments. Faculty is running programmes at OPEN LAB Kranj, a technological hub for youngsters.
 
@@ -1144,17 +1132,14 @@ CITY OF KRANJ
 Climate Neutrality Action Plan
 
 |   |  |  | Institute implements interdisciplinary scientific research, development and professional projects aiming to transfer of cutting-edge knowledge and innovative solutions to the Slovenian industry and society. Both faculties are members of the SCCNSC and signatories of the CCC commitment.
-
-**Influence on city climate neutrality by 2030: medium** |   |
+| **Influence on city climate neutrality by 2030: medium** |   |
 | --- | --- | --- | --- | --- |
 |   |  **Secondary schools** | Schools | There are several upper secondary schools in Kranj with more than 3.500 students in gymnasium as well as technological, biotechnological, service and business fields. Students aged 15-18 participated in workshops during the CCC preparation and shared their visions and concrete solutions on Kranj becoming a climate neutral city with the Transition Team and the mayor. The collaboration proved successful and the youth and schools will get a strong role in the city climate communication and dissemination actions. Individual secondary schools expressed their commitment to the Kranj CCC.
-
-**Influence on city climate neutrality by 2030: high** | **High**
-Schools and youth have shown high interest and commitment to climate actions during the CCC process.  |
+| **Influence on city climate neutrality by 2030: high** | **High** |
+| Schools and youth have shown high interest and commitment to climate actions during the CCC process.  |
 |   |  **BSC Business support centre Kranj** | LLC – regional development agency | Business Support Centre Kranj is an authorized regional development agency and is responsible for balanced regional development within the Gorenjska region, including the City of Kranj. As a facilitator of individual EU Cohesion funds, manager of the incubation/ co-working infrastructure of the City of Kranj and competent EU project design partner, BSC Kranj is expected to foster climate neutrality project development and fund raising for the benefit of the City of Kranj an its nearby functional area. Therefore, BSC is actively involved in the CCC process and a member of the SC.
-
-**Influence on city climate neutrality by 2030: medium** | **High**
-The Gorenjska regional development strategy 2021-2027 sets sustainability and green transition in the centre thus the development agency has high interest in success of Kranj climate neutral goals.  |
+| **Influence on city climate neutrality by 2030: medium** | **High** |
+| The Gorenjska regional development strategy 2021-2027 sets sustainability and green transition in the centre thus the development agency has high interest in success of Kranj climate neutral goals.  |
 |   |  **Kranj Tourism and Culture Destination Management Organisation (ZTK)** | Public institute | ZTK is an authorised city tourism destination management organisation. Following its sustainable tourism strategy, tourism board has been promoting local supply in restaurants (annual local long table event), green measures in hospitality businesses and zero waste tourism events. As such, the destination has been granted Gold certificate for Green Destination and selected as the European Destinations of Excellence in 2023. Although tourism is still a minor economic sector, | **High**
 Tourism is a growing economy in the area thus ZTK is directing newcomers into introducing green standards from early start up.  |
 
@@ -1163,20 +1148,17 @@ CITY OF KRANJ
 Climate Neutrality Action Plan
 
 |   |  |  | ZTK is a key promotor of climate neutrality measures among tourism providers and visitors.
-
-**Influence on city climate neutrality by 2030: medium** |   |
+| **Influence on city climate neutrality by 2030: medium** |   |
 | --- | --- | --- | --- | --- |
 |   |  Kranj City Library | City public institute | Kranj City Library is a proactive, dynamic and cultural organisation, located in the heart of the city. With more than 19.000 members and offering diverse programme of cultural and educational events, the library presents a significant information and participatory hub in local community. Due to its reach capacity and ability to design and implement targeted programme, City Library is an important innovation, communication and education partner in the Kranj CCC ecosystem for awareness rising and behavioural change.
-
-**Influence on city climate neutrality by 2030: high** | **High**
-Library's mission is contributing to the citizens quality of life and cities' strategies.  |
+| **Influence on city climate neutrality by 2030: high** | **High** |
+| Library's mission is contributing to the citizens quality of life and cities' strategies.  |
 |   |  Chamber of Commerce Gorenjska | Chamber | As representative interest organisations of local companies, the two chambers have direct access to majority of Kranj based industrial, craft and service businesses. It is of great interest to the City of Kranj that the Chambers support the decarbonisation of economy and proactively provide their members needed guidance, information and trainings. Therefore, chambers are actively involved in the CCC process as partners in city's ecosystem for climate neutrality.
-
-**Influence on city climate neutrality by 2030: high** | **High**
-Progressive and innovative business environment is of high interest for both chambers.  |
+| **Influence on city climate neutrality by 2030: high** | **High** |
+| Progressive and innovative business environment is of high interest for both chambers.  |
 |   |  Chamber of Craft Kranj |  |  |   |
 |  INDUSTRIAL & BUSSINESS PROCESS | Goodyear d.o.o. | Private stakeholders | Listed private stakeholders are large industrial / trading or service companies in Kranj whose economic influence is significant in several sectors (industry, energy, transport, waste). They play an important role as partners in partnership projects, as investors and as promoters of sustainable behaviour and practises towards their employees, customers, suppliers, and the wider business environment. | **Medium**
-Investments cost/benefit effectiveness, sustainable standards and requirements from the financial institutions and customers and legislation (including the required Corporate Sustainable Reporting Directive), stimulate companies to make sustainable investments, adopt new business  |
+| Investments cost/benefit effectiveness, sustainable standards and requirements from the financial institutions and customers and legislation (including the required Corporate Sustainable Reporting Directive), stimulate companies to make sustainable investments, adopt new business  |
 |   |  Supernova Group |  |  |   |
 |   |  JGZ Brdo |  |  |   |
 |   |  Wolt Slovenia |  |  |   |
@@ -1224,8 +1206,7 @@ Due to significant challenges and lack of resources in the provision of basic se
 |   |  Kranj Kindergarten  |   |   |   |
 |   |  Elderly home Kranj  |   |   |   |
 |  FUNDS national | Slovenian Environmental Public Fund (Eco Fund) | Funds | The main purpose of Eco Fund is to promote development in the field of environmental protection by offering financial incentives such as soft loans and grants for various environmental investment projects aiming GHG emission reduction. In year 2021 Eco Fund approved loans totalling 54,8 million € and grants totalling 73,5 million €. Subsidies are directed to various beneficiaries for investments in residential buildings, construction of nearly zero-energy buildings and for electric vehicles, legal entities for electric vehicles, energy audits and energy efficiency investments, and municipalities for environmentally friendly public passenger buses in degraded areas, for charging stations for electric cars in Natura 2000 and protected areas, and for the construction of nearly zero-energy buildings and energy renovation of buildings owned by municipalities. Eco fund is crucial as financial stakeholder.
-
-**Influence on city climate neutrality by 2030: high** | High Effects which simultaneously contribute to the fight against the environmental crisis and GHG emissions and benefit the economy point to a positive role of Eco Fund in the process of green growth and development in Slovenia.  |
+| **Influence on city climate neutrality by 2030: high** | High Effects which simultaneously contribute to the fight against the environmental crisis and GHG emissions and benefit the economy point to a positive role of Eco Fund in the process of green growth and development in Slovenia.  |
 |   |  Climate Change Fund | Funds | The purpose of the Climate Fund is to finance measures to mitigate and adapt to the effects of climate change. Its incomes is generated by selling ETS allowances and is allocated for reduction of GHG emissions, mitigations and adaptations to the effects of climate change, demonstration projects, development of renewable energy sources, energy efficiency and clean technologies, measured to prevent deforestation, carbon, promotion of the transition to low-emission transport and public transport. For the years 2022 and 2023, allocation | High Effectively mitigate and adapt to climate change, maximise greenhouse gas emissions reductions to become climate neutral.  |
 
 0
@@ -1233,8 +1214,7 @@ CITY OF KRANJ
 Climate Neutrality Action Plan
 
 |   |  |  | of budget totalling 65 million was planned. Climate Change fund is crucial as financial stakeholder for innovative and soft interventions.
-
-**Influence on city climate neutrality by 2030: high** |   |
+| **Influence on city climate neutrality by 2030: high** |   |
 | --- | --- | --- | --- | --- |
 |   |  SID Bank | Funds | SID Bank is a state owned bank promoting development and provide long-term financial services to promote sustainable development and improve the competitiveness of the Slovene economy. It has several programmes to complement commercial banks with financial instruments and loans in market gaps related to:
 → development and innovations,
@@ -1376,7 +1356,7 @@ Table 10: B-1.1: Impact Pathways
 |  B-1.1: Impact Pathways  |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- |
 |  Fields of action | Systemic levers | Early changes (1-2 years)
-Up to 2025 | Late outcomes (3-4 years)
+| Up to 2025 | Late outcomes (3-4 years) |
 | Direct impacts (Emission reductions) | Indirect impacts (Co-benefits)  |
 |  Energy systems | Technology & infrastructure | 30% of district heating and cooling running primarily on RES (biomass, CHP) and waste heat | 90% of district heating and cooling running primarily on RES (biomass, CHP) and waste heat | Reduce CO2eq emissions by 24.192 t | Urban heat island (UHI) effect reduced  |
 |   |   |   |   |   |  Increased energy self - sufficiency and security  |
@@ -1400,7 +1380,7 @@ Climate Neutrality Action Plan
 |  B-1.1: Impact Pathways  |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- |
 |  Fields of action | Systemic levers | Early changes (1-2 years)
-Up to 2025 | Late outcomes (3-4 years)
+| Up to 2025 | Late outcomes (3-4 years) |
 | Direct impacts (Emission reductions) | Indirect impacts (Co-benefits)  |
 |   | Technology & infrastructure | Expanded and redeveloped infrastructure friendly to cyclists and walkers in the urban area (70 km of cycling network, car-free and shared spaced piloted, one-way streets...) | Expanded and redeveloped infrastructure friendly to cyclists and walkers in the urban area (92 km of cycling network, car free and shared spaced piloted, one-way streets...) | Reduce CO_{2} emissions by 451 t | Improved air quality  |
 |   |  Technology & infrastructure | Expansion of EV public charging stations | Deployment of large-scale technologies in high-speed EV and hydrogen powered charging hubs and network for citizens and business shift to EV/HFCV leading to 20% of EV on the main city roads | Reduce CO_{2} emissions by 11.612 t | Reduced noise pollution  |
@@ -1420,7 +1400,7 @@ Climate Neutrality Action Plan
 |  B-1.1: Impact Pathways  |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- |
 |  Fields of action | Systemic levers | Early changes (1-2 years)
-Up to 2025 | Late outcomes (3-4 years)
+| Up to 2025 | Late outcomes (3-4 years) |
 | Direct impacts (Emission reductions) | Indirect impacts (Co-benefits)  |
 |   | Social innovation | Initiation and support provided to circular economy private -public partnership solutions in industries, SMEs, public services, farming and their value chains | Innovative local based circular economy solutions, actions, symbiosis and initiatives jointly developed by industry, farmers, the City, NGOs and citizens implemented |  | Local deployment of material cycle  |
 |  Green infrastructure and nature-based solutions | Governance & Policy | Protected and better managed urban green infrastructure in the surface of 4 km² | Protected and better managed urban green infrastructure in the surface of 12 km² | Sequestration of 7.628 t of CO₂ | Land use management practices  |
@@ -1838,7 +1818,7 @@ Climate Neutrality Action Plan
 |   |  Systemic lever | Technology/ Infrastructure  |
 |   |  Outcome (according to module B-1.1) | 90% of district heating/cooling system running primarily on RES  |
 |  Implementation | Responsible bodies/person for implementation | Public heating service operator or other selected concessioners
-Enterprises providing residual heat  |
+| Enterprises providing residual heat  |
 |   |  Action scale & addressed entities | High density populated districts and districts with anticipated new developments.  |
 |   |  Involved stakeholders | City of Kranj
 Other enterprises in the industrial park
@@ -1847,7 +1827,7 @@ Major developers of new residential areas  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | A new business model assuring a long-term stability of the supply of waste heat on one hand and enterprise competitiveness on the other needs to be agreed between the district heating operator and the heat provider.  |
 |  Impact & cost | Generated renewable energy (if applicable) | 40.000 MWh/year  |
 |   |  Removed/substituted energy, volume, or fuel type | Diesel/ heating oil: - 15.000 MWh/year
-Natural gas: - 25.000 MWh/year  |
+| Natural gas: - 25.000 MWh/year  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 9.850 tonnes CO₂/year  |
 |   |  GHG emissions compensated (natural or technological sinks) | /  |
 |   |  Total costs and costs by CO₂eq unit | € 6.000.000
@@ -1881,7 +1861,7 @@ Climate Neutrality Action Plan
 |   |  GHG emissions reduction estimate (total) per emission source sector | 19.690 tonnes CO₂/year  |
 |   |  GHG emissions compensated (natural or technological sinks) | /  |
 |   |  Total costs and costs by CO₂eq unit | € 53.073.000
-€ 2.695 /t CO₂  |
+| € 2.695 /t CO₂  |
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | 1.4 Hydro electricity production  |
@@ -1908,7 +1888,7 @@ Climate Neutrality Action Plan
 |   |  GHG emissions reduction estimate (total) per emission source sector | 125 tonnes CO₂/year  |
 |   |  GHG emissions compensated (natural or technological sinks) | /  |
 |   |  Total costs and costs by CO₂eq unit | € 1.000.000 - total cost
-€ 7.981/t CO₂  |
+| € 7.981/t CO₂  |
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | 1.5 Upgrade of electricity grid  |
@@ -1936,10 +1916,10 @@ Climate Neutrality Action Plan
 |  Impact & cost | Generated renewable energy (if applicable) | NA  |
 |   |  Removed/substituted energy, volume, or fuel type | NA  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 0
-Indirect impact on CO2 emissions  |
+| Indirect impact on CO2 emissions  |
 |   |  GHG emissions compensated (natural or technological sinks) | /  |
 |   |  Total costs and costs by CO2eq unit | € 40.000.000,00 EUR
-€ 0/t CO2 (Indirect impact)  |
+| € 0/t CO2 (Indirect impact)  |
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | 1.6 Energy-efficient and smart public lighting  |
@@ -1972,14 +1952,14 @@ Climate Neutrality Action Plan
 |   |  GHG emissions reduction estimate (total) per emission source sector | 286 tonnes CO₂/year  |
 |   |  GHG emissions compensated (natural or technological sinks) | /  |
 |   |  Total costs and costs by CO₂eq unit | € 2.500.000
-€ 8.729 /t CO₂  |
+| € 8.729 /t CO₂  |
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | 1.8. Energy co-operatives  |
 |   |  Action type | Soft intervention (business model)
-Hard intervention (pilot project implementation)  |
+| Hard intervention (pilot project implementation)  |
 |   |  Action description | More than 50% of Kranj residents live in residential multi-flat buildings which does not enable them equal participation in renewable energy projects. Thus, the action aims at setting up co-operatives or similar democratic type of citizen initiatives, provide support in access to public or private unused premises and land and facilitate cooperation within the pilot investments.
-At least 1 energy co-operative with an investment in RES plant in the capacity of 5 MW is anticipated by 2030.  |
+| At least 1 energy co-operative with an investment in RES plant in the capacity of 5 MW is anticipated by 2030.  |
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   |  Systemic lever | Social Innovation  |
 |   |  Outcome (according to module B-1.1) | Increased electricity production from RES – PV + 5.500 MWh  |
@@ -2065,7 +2045,7 @@ B-2.2: Individual action outlines
 |  Action outline | Action name | 2.2. Smart multimodal public transport system  |
 | --- | --- | --- |
 |   |  Action type | Soft intervention (change management)
-Digitalization  |
+| Digitalization  |
 |   |  Action description | 25.601 persons commutes to, within and outward Kranj (towards Ljubljana and neighbouring business parks) for work, majority of them using personal cars (SORS, 2018). To make use of public transport attractive to citizens, and in particular daily commuters, further improvements and expansion of public bus transport and different mobility services is foreseen, together with their integration and digitization into a single smart multi-modal city public transport management system.
 
 The following is planned:
@@ -2087,12 +2067,11 @@ Climate Neutrality Action Plan
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Mobility & transport  |
 |   | Systemic lever | Governance & policy
-Technology/infrastructure  |
+| Technology/infrastructure  |
 |   | Outcome (according to module B-1.1) | 30% reduced motorized daily commuting to, within and outward the city of Kranj
-
-The action shall considerably influence the reduction of motorized daily commuting between Kranj and Ljubljana as well as within other functional areas along the railway Jesenice-Kranj-Škofja Loka-Ljubljana.  |
+| The action shall considerably influence the reduction of motorized daily commuting between Kranj and Ljubljana as well as within other functional areas along the railway Jesenice-Kranj-Škofja Loka-Ljubljana.  |
 |  Implementation | Responsible bodies/person for implementation | City of Kranj
-Republic of Slovenia, Ministry of Infrastructure  |
+| Republic of Slovenia, Ministry of Infrastructure  |
 |   | Action scale & addressed entities | Full implementation required.  |
 |   | Involved stakeholders | - Urban bus transport concessioner/provider (Arriva d.o.o.)
 E-mobility and car sharing solutions provider (Vizije Mobilnosti d.o.o.)
@@ -2134,7 +2113,7 @@ Climate Neutrality Action Plan
 8
 
 |   |  | In total 60 km of additional cycling network is foreseen, reaching 92 km of cycling network by 2030. Improvement of the walking infrastructure runs in parallel with cycling investments.
-Length of cycling network, 2017: 32,857 km (Analiza obstoječega kolesarskega omrežja v Mestni občini Kranj, Elaborat, št. PR329-IDZ-CE-F1, Provia d.o.o., Matjaž Brezavščak, Naklo, avgust, 2017)  |
+| Length of cycling network, 2017: 32,857 km (Analiza obstoječega kolesarskega omrežja v Mestni občini Kranj, Elaborat, št. PR329-IDZ-CE-F1, Provia d.o.o., Matjaž Brezavščak, Naklo, avgust, 2017)  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Mobility & transport  |
 |   | Systemic lever | Technology/ Infrastructure  |
@@ -2182,15 +2161,15 @@ o P+R in eastern part of the city.  |
 |  Implementation | Responsible bodies/person for implementation | City of Kranj  |
 |   | Action scale & addressed entities | Phased approach  |
 |   | Involved stakeholders | Local communities (KS)
-Komunala Kranj (public parking manager)  |
+| Komunala Kranj (public parking manager)  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | The action is very sensitive due to resistance of citizens on limited or no car access.
-Construction of P+R is jeopardized by lack of municipal land and interest of private investors.  |
+| Construction of P+R is jeopardized by lack of municipal land and interest of private investors.  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   | Removed/substituted energy, volume, or fuel type | Diesel: - 924 MWh/year  |
 |   | GHG emissions reduction estimate (total) per emission source sector | 268 t CO₂/year  |
 |   | GHG emissions compensated (natural or technological sinks) | /  |
 |   | Total costs and costs by CO₂eq unit | € 1.750.000EUR
-€ 6.531/t CO₂  |
+| € 6.531/t CO₂  |
 |  **B-2.2: Individual action outlines**  |   |   |
 |  Action outline | Action name | **2.5 EV and hydrogen charging infrastructure**  |
 |   | Action type | Hard intervention (infrastructure)  |
@@ -2219,7 +2198,7 @@ Electricity System Distribution Operator
 Ministry of Defense  |
 |   | Action scale & addressed entities | Phased approach  |
 |   | Involved stakeholders | Republic of Slovenia
-PPP partners - private investors  |
+| PPP partners - private investors  |
 |   | Comments on implementation – consider | Full implementation depends on action 1.5.  |
 CITY OF KRANJ
 Climate Neutrality Action Plan
@@ -2232,7 +2211,7 @@ Climate Neutrality Action Plan
 |   |  GHG emissions reduction estimate (total) per emission source sector | 10.585 t CO₂/year from Transport (* emissions of the electricity production deducted)  |
 |   |  GHG emissions compensated (natural or technological sinks) | /  |
 |   |  Total costs and costs by CO₂eq unit | € 19.488.260 EUR
-€ 1.841/t CO₂  |
+| € 1.841/t CO₂  |
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | 2.6 EV and hydrogen powered municipal vehicles  |
@@ -2246,7 +2225,7 @@ Climate Neutrality Action Plan
 |   |  Systemic lever | Technology/ Infrastructure  |
 |   |  Outcome (according to module B-1.1) | Accessible charging network across municipality and several high-speed EV charging hubs  |
 |  Implementation | Responsible bodies/person for implementation | City of Kranj
-Vizije Mobilnosti (PPP partner)  |
+| Vizije Mobilnosti (PPP partner)  |
 |   |  Action scale & addressed entities | Phased approach  |
 |   |  Involved stakeholders | Private investors  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Municipal e-cars are co-shared between municipal organisations or integrated in the new mobility services when not in use for primary purpose.  |
@@ -2266,13 +2245,13 @@ B-2.2: Individual action outlines
 |   |  Action description | City of Kranj crosses an important regional road connecting neighbouring municipality Škofja Loka (population 23.799, 2023) to the A2 highway. In 2018, there were 13.708 vehicles measured on average at counting point Dorfarje on the road R1 Kranj -Škofja Loka. A direct connecting road from Škofja Loka to Meja (City of Kranj) and further to highway is envisaged as part of the so-called 4^{th} Slovenian Development Axis. The road is being planned in both municipal spatial plans while investment is negotiated with the Government of Slovenia. The direct road would reduce traffic and air pollution in the City of Kranj as well as reduce travel distance for the transiting lorries and cars for 4 km.  |
 |  Reference to impact pathway | Field of action | Mobility & transport  |
 |   |  Systemic lever | Technology/ Infrastructure
-Policy & Regulation  |
+| Policy & Regulation  |
 |   |  Outcome (according to module B-1.1) | Reduced transit traffic to Škofja Loka (-50 % less car and -90 % less truck PLDP at counting point Dorfarje representing 6.854 vehicles)  |
 |  Implementation | Responsible bodies/person for implementation | City of Kranj
-The Ministry of Infrastructure  |
+| The Ministry of Infrastructure  |
 |   |  Action scale & addressed entities | Full implementation needed to achieve the set targets.  |
 |   |  Involved stakeholders | Municipality of Škofja Loka
-DRSI  |
+| DRSI  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Accelerated adoption of municipal master plans in both municipalities required.  |
 |  Impact & cost | Generated renewable energy (if applicable) | NA  |
 |   |  Removed/substituted energy, volume, or fuel type | Diesel: 9.306 MWh/year  |
@@ -2299,7 +2278,7 @@ B-2.2: Individual action outlines
 (6) Commercial providers: joint campaigns and demonstration actions for no/less packaging in daily use and consumption.  |
 |  Reference to impact pathway | Field of action | Waste & circular economy  |
 |   |  Systemic lever | Governance & policy
-Democracy & participation  |
+| Democracy & participation  |
 |   |  Outcome (according to module B-1.1) | Reduction of municipal waste produced per capita for 12% (from 334 kg/capita in 2018 to 293 kg/capita in 2030) of which 80% will be recycled or reused (material efficiency).
 (Source: Komunala Kranj)
 (1) All communal waste collected: 18.661.000 kg
@@ -2310,7 +2289,7 @@ Climate Neutrality Action Plan
 |  Implementation | Responsible bodies/person for implementation | Komunala Kranj – Public Utility Company  |
 | --- | --- | --- |
 |   |  Action scale & addressed entities | Phased approach
-Existing Zero waste governance structures  |
+| Existing Zero waste governance structures  |
 |  Implementing | Involved stakeholders | City of Kranj
 Social enterprises
 Major shopping centres – commercial sector
@@ -2325,7 +2304,7 @@ Local media  |
 |  Impact & cost | Generated renewable energy (if applicable) | NA  |
 |   |  Removed/substituted energy, volume, or fuel type | Diesel: 221 MWh/year  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 64 t CO₂/year from transport
-t CO₂/year less from incineration  |
+| t CO₂/year less from incineration  |
 |   |  GHG emissions compensated (natural or technological sinks) | /  |
 |   |  Total costs and costs by CO₂eq unit | € 350.000 total cost
 € 532/t CO₂  |
@@ -2335,7 +2314,7 @@ B-2.2: Individual action outlines
 |  Action outline | Action name | 3.2. Smart waste management  |
 | --- | --- | --- |
 |   |  Action type | Digitalization
-Hard intervention (infrastructure)  |
+| Hard intervention (infrastructure)  |
 |   |  Action description | Aiming at reducing carbon emission (from driving distance) and improving the waste management efficiency in collecting and re-distributing waste, digitization of Kranj waste management system and reallocation of waste transfer station is foreseen. The action involves:
 (1) Digitization of waste transport
 container tracking, intelligent routing and collection planning...,  |
@@ -2355,9 +2334,9 @@ Climate Neutrality Action Plan
 |  Implementation | Responsible bodies/person for implementation | Komunala Kranj – Public Utility Company  |
 |   |  Action scale & addressed entities |   |
 |   |  Involved stakeholders | City of Kranj
-Local communities  |
+| Local communities  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | On-going action in digitalization.
-Phased approach in investments into modernisation of logistic and collecting facilities.  |
+| Phased approach in investments into modernisation of logistic and collecting facilities.  |
 |  Impact & cost | Generated renewable energy (if applicable) | NA  |
 |   |  Removed/substituted energy, volume, or fuel type | Diesel: 183 MWh/year  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 53 t CO₂/year  |
@@ -2388,14 +2367,14 @@ Green recreation area with education points: education trail, “forest classroo
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Waste & Circular economy  |
 |   | Systemic lever | Technology/ Infrastructure
-Learning and capabilities  |
+| Learning and capabilities  |
 |   | Outcome (according to module B-1.1) | Reduction of municipal waste produced per capita for 12% (from 334 kg/capita in 2018 to 293 kg/capita in 2030) of which 80% will be recycled or reused (material efficiency).  |
 |  Implementation | Responsible bodies/person for implementation | Komunala Kranj – Public Utility Company  |
 |   | Action scale & addressed entities | Phased approach.  |
 |   | Involved stakeholders | City of Kranj
-Local community Drulovka  |
+| Local community Drulovka  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Landfill closing: on-going process.
-Zarta centre: phased approach.  |
+| Zarta centre: phased approach.  |
 |  Impact & cost | Generated renewable energy (if applicable) | NA  |
 |   | Removed/substituted energy, volume, or fuel type | Bio-fuel: 1170 MWh/year (Methane)  |
 |   | GHG emissions reduction estimate (total) per emission source sector | 11.512 t CO₂ (Methane from closed landfill)  |
@@ -2405,12 +2384,12 @@ Climate Neutrality Action Plan
 7
 
 |   | Total costs and costs by CO2eq unit | € 5.142.000 – total costs
-€ 447/t CO2  |
+| € 447/t CO2  |
 | --- | --- | --- |
 |  B-2.2: Individual action outlines  |   |   |
 |  Action outline | Action name | **3.4. Kranj Circular City public-private innovation actions**  |
 |   | Action type | Soft intervention (business models)
-Hard intervention (pilot project implementation)  |
+| Hard intervention (pilot project implementation)  |
 |   | Action description | Aiming at accelerating the circular economy in different fields of citizens’ life and business operation, the city will promote, support and/or participate in different projects bringing together different business and public actors in piloting and demonstrating concrete circular solutions. Some initiatives have already been identified during the participatory process but are not exhaustive:
 
 (1) Circular technologies and business models in farming – collaboration of farms in utilization of side products such as livestock secretions and plant residuals for energy, soil fertilization, packaging ...
@@ -2444,22 +2423,22 @@ Climate Neutrality Action Plan
 |   |  GHG emissions reduction estimate (total) per emission source sector | 2.579 t CO₂/year  |
 |   |  GHG emissions compensated (natural or technological sinks) | /  |
 |   |  Total costs and costs by CO₂eq unit | € 800.000 - total cost
-€ 310/t CO₂  |
+| € 310/t CO₂  |
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | 3.5 Energy and resource efficiency in water supply  |
 |   |  Action type | Hard intervention (infrastructure)
-Digitalization  |
+| Digitalization  |
 |   |  Action description | Kranj water system extends over 302 km (210 km in City of Kranj) and supplies 50.265 residents of the City of Kranj and 10.733 residents of neighbouring municipalities. In 2019, the system produced and distributed 5.686.161 m³ (4.586.507 m³ in the City of Kranj) of drinkable water. In addition, there are four other local water supply systems in the territory of the city. There are 6 major water sources, all located in the mountain area outside the city territory. Although there were significant investments in the system over the last decade, reducing of water leakages, increasing of energy efficiency of the water facilities and assuring supply and cyber security are of vital importance. Thus, this action includes:
-Reconstruction of existing water supply system to reduce water losses.  |
+| Reconstruction of existing water supply system to reduce water losses.  |
 |  Reference to impact pathway | Field of action | Waste  |
 |   |  Systemic lever | Technology/Infrastructure  |
 |   |  Outcome (according to module B-1.1) | Reduction of water losses to 25% by 2025 and 15% by 2030 (600.000 m³ water savings per year)  |
 |  Implementation | Responsible bodies/person for implementation | City of Kranj
-Komunala Kranj – Public Utility Company  |
+| Komunala Kranj – Public Utility Company  |
 |   |  Action scale & addressed entities | Phased approach  |
 |   |  Involved stakeholders | City of Kranj
-Komunala Kranj – Public Utility Company  |
+| Komunala Kranj – Public Utility Company  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Investment subject to funding availability  |
 |  Impact & cost | Generated renewable energy (if applicable) | NA  |
 |   |  Removed/substituted energy, volume, or fuel type | Electrical energy: - 52 MWh/year  |
@@ -2488,7 +2467,7 @@ CITY OF KRANJ
 Climate Neutrality Action Plan
 
 |   |  | as a role model for sustainable forest management for other passive owners);
-(7) Local promotion campaigns for active sustainable forest management among private forest owners.  |
+| (7) Local promotion campaigns for active sustainable forest management among private forest owners.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Green infrastructure & Nature based solutions  |
 |   |  Systemic lever | Governance & policy  |
@@ -2546,7 +2525,7 @@ The action is strongly supported by the Environment Preservation Operational Pro
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Green infrastructure & Nature based solutions  |
 |   | Systemic lever | Governance, policy and regulation
-Capacities & learning  |
+| Capacities & learning  |
 |   | Outcome (according to module B-1.1) | Green Spatial Plan enforcing climate neutral measures, adopted  |
 |  Implementation | Responsible bodies/person for implementation | City of Kranj  |
 |   | Action scale & addressed entities | Phased approach.  |
@@ -2622,7 +2601,7 @@ B-2.2: Individual action outlines
 |  Action outline | Action name | 4.4 Promotion of plant and low-emission livestock production  |
 | --- | --- | --- |
 |   |  Action type | Soft intervention (change management in agriculture production)
-Hard intervention (infrastructure)  |
+| Hard intervention (infrastructure)  |
 |   |  Action description | Further to Agriculture Census as of 2020, there are 448 farms in the City of Kranj which are in comparison to the EU of small size. The farms manage in total 9.122 ha of land, of which 4.938 ha is arable and 3.901 ha forests. The average farm has 11 ha of arable land and 8,7 ha of forests. 57% of farms raise livestock for meat or milk (18,6 livestock per farm), 15% have mixed production (mostly self-sufficient farming) and 21% are specialized in plant production. Due to predominant livestock farming, the estimated GHG from agriculture (above all methane from enteric fermentation and manure management) are relatively high. On the other hand, vegetable production is locally far undersupplied.
 
 In addition to the national climate measures of the CAP Strategic Plan, the City of Kranj will invest in promotion of plant production and reduction of emissions from the livestock sector. The action includes measures such as:
@@ -2681,7 +2660,7 @@ Promotion, demonstrations and education on composting, drain water collection, u
 | --- | --- | --- |
 |  -Reference to impact pathway | Field of action | Green infrastructure & Nature based solutions  |
 |   |  Systemic lever | Social innovation
-Democracy & participation  |
+| Democracy & participation  |
 |   |  Outcome (according to module B-1.1) | Farmers introducing local plant and low-emission livestock practices and production  |
 |  Implementation | Responsible bodies/person for implementation | City of Kranj  |
 |   |  Action scale & addressed entities | Upscaling, digitalization and further innovation of exiting initiatives.  |
@@ -2772,9 +2751,9 @@ There are 9.695 individual residential units with one (8728) or two flats (967) 
 |   |  Systemic lever | Technology/ Infrastructure  |
 |   |  Outcome (according to module B-1.1) | Improved energy-efficiency of at least 90% of multi-residential buildings and 25% individual homes  |
 |  Implementation | Responsible bodies/person for implementation | Apartment owners
-Heating boards of multi-apartment buildings  |
+| Heating boards of multi-apartment buildings  |
 |   |  Action scale & addressed entities | High density areas built before 1990.
-The most interested owners have already undergone the rehabilitation investments thus the implementation of the remaining buildings requires additional awareness rising, citizens dialog and facilitation by the facility managers.  |
+| The most interested owners have already undergone the rehabilitation investments thus the implementation of the remaining buildings requires additional awareness rising, citizens dialog and facilitation by the facility managers.  |
 |   |  Involved stakeholders | Authorized facility/ building managers  |
 |   |  Comments on implementation – consider | The action requires immediate design of a special scheme coordinated between the city,  |
 CITY OF KRANJ
@@ -2789,7 +2768,7 @@ Electrical energy: 3.567 MWh/year  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 5.092 t CO₂/year from Buildings  |
 |   |  GHG emissions compensated (natural or technological sinks) | /  |
 |   |  Total costs and costs by CO₂eq unit | € 78.500.000 - total cost
-€ 15.417/t CO₂  |
+| € 15.417/t CO₂  |
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  (Fill out one sheet per intervention/project)  |   |   |
@@ -2816,10 +2795,10 @@ Climate Neutrality Action Plan
 |   | Outcome (according to module B-1.1) | 150.000 m2 of brownfields regenerated, including energy-efficiency renovation  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | City of Kranj
-Private developers  |
+| Private developers  |
 |   |  Action scale & addressed entities | Investments in the pipeline  |
 |   |  Involved stakeholders | Private developers
-Housing Fund of the Republic of Slovenia  |
+| Housing Fund of the Republic of Slovenia  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Immediate climate proofing of planned private investments needed.  |
 |  Impact & cost | Generated renewable energy (if applicable) | NA  |
 |   |  Removed/substituted energy, volume, or fuel type | Land use – preservation of 150.000 m2 (= 15 ha)  |
@@ -3011,7 +2990,7 @@ Table 14: B-3.2: Indicator Metadata
 |  Indicator Unit | %  |
 |  Definition | Share of reduction of CO2eq emissions from 2018 baseline emissions gap  |
 |  Calculation | Detailed assessment by sectors as described in Action Plan for relevant year
-Baseline 2018: TOTAL 113.124 t CO2eq  |
+| Baseline 2018: TOTAL 113.124 t CO2eq  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | Yes  |
 |  If yes, which emission source sectors does it impact? | All: Buildings, Transport, Waste, IPPU and AFLOUY  |
@@ -3037,11 +3016,11 @@ ENERGY SYSTEMS
 |  Indicator Unit | %  |
 |  Definition | Share of RES and waste heat annual production in the city district heating and cooling in the territory of the city  |
 |  Calculation | = SUM (MWh of RES + waste heat) / total MWh.
-Baseline: 55 %  |
+| Baseline: 55 %  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | Yes (input data)  |
 |  If yes, which emission source sectors does it impact? | IPPU
-Buildings  |
+| Buildings  |
 |  Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes  |
 |  If yes, which co-benefit does it measure? | Energy self-sufficiency and security  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
@@ -3084,7 +3063,7 @@ Commercial centre Planina, summer 35°C, winter NA  |
 |  Suggested collection interval | 2022, 2030  |
 |  References |   |
 |  Deliverables describing the indicator | Study - Urban heat islands of the City of Kran, Zavita, d.o.o., April 2023
-City of Kranj MEL tool  |
+| City of Kranj MEL tool  |
 |  Other indicator systems using this indicator | /  |
 |  B-3.2: Indicator Metadata  |   |
 | --- | --- |
@@ -3092,11 +3071,11 @@ City of Kranj MEL tool  |
 |  Indicator Unit | MWH  |
 |  Definition | Total annual production of green electricity in the territory of the City of Kranj  |
 |  Calculation | OI 1.2. = solar MWh + hydro MWh + other RES electricity MWh
-II.1.1 = % = SUM (MWh of green energy production in district heating systema + MWh of green electricity production) / total energy and electricity consumption in City of Kranj * 100  |
+| II.1.1 = % = SUM (MWh of green energy production in district heating systema + MWh of green electricity production) / total energy and electricity consumption in City of Kranj * 100  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | Yes (input data)  |
 |  If yes, which emission source sectors does it impact? | IPPU
-Buildings  |
+| Buildings  |
 |  Does the indicator measure indirect impacts (i.e., co- benefits)? | Yes  |
 |  If yes, which co-benefit does it measure? | Energy self-sufficiency and security  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
@@ -3127,7 +3106,7 @@ Climate Neutrality Action Plan
 |  If yes, which co-benefit does it measure? | Cost savings  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 |  If yes, which action and impact pathway is it relevant for? | Energy systems – energy efficient and remote managed public lighting
-Cost savings  |
+| Cost savings  |
 |  Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | Yes  |
 |  Data requirements |   |
 |  Expected data source | The public lighting concessioner of the City of Kranj  |
@@ -3143,7 +3122,7 @@ Cost savings  |
 |  Indicator Unit | EUR  |
 |  Definition | Savings from implementation of AP green actions  |
 |  Calculation | Different calculation methods for each action (part of Investment plan and final MEL)
-Baseline – plan 2030: total 38,3 mio EUR  |
+| Baseline – plan 2030: total 38,3 mio EUR  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | No  |
 |  If yes, which emission source sectors does it impact? | /  |
@@ -3171,7 +3150,7 @@ B-3.2: Indicator Metadata
 |  Indicator Unit | Number/ share  |
 |  Definition | Households obtaining subsidy of Eco Fund for investments in the individual RES electricity production  |
 |  Calculation | Total number = cumulative value of households obtained subsidy
-Share % = cumulative value of households obtained subsidy /all households in the city  |
+| Share % = cumulative value of households obtained subsidy /all households in the city  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | Yes (input data)  |
 |  If yes, which emission source sectors does it impact? | Energy  |
@@ -3179,7 +3158,7 @@ Share % = cumulative value of households obtained subsidy /all households in the
 |  If yes, which co-benefit does it measure? | Citizen participation in green energy  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes (input data)  |
 |  If yes, which action and impact pathway is it relevant for? | Energy systems: Production of green energy
-Citizen participation in green energy  |
+| Citizen participation in green energy  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
 |  Data requirements |   |
 |  Expected data source | Slovenia Eco Fund  |
@@ -3209,12 +3188,12 @@ Climate Neutrality Action Plan
 1
 
 |  If yes, which action and impact pathway is it relevant for? | Mobility and Transport: One car by households
-Reduced transport costs for citizens  |
+| Reduced transport costs for citizens  |
 | --- | --- |
 |  Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | No  |
 |  Data requirements |   |
 |  Expected data source | SORS – Data Base
-Administrative unit Kranj (Motor vehicle registration)  |
+| Administrative unit Kranj (Motor vehicle registration)  |
 |  Is the data source local or regional/national? | National  |
 |  Expected availability | Yes  |
 |  Suggested collection interval | 2018, 2022, 2025, 2027, 2030  |
@@ -3236,7 +3215,7 @@ Baseline annual average daily value for 2018 is 37.408 (19.498 Primskovo + 18.15
 |  If yes, which co-benefit does it measure? | Reduced congestions  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 |  If yes, which action and impact pathway is it relevant for? | Mobility and Transport: Reduced car commuting
-Reduced congestions  |
+| Reduced congestions  |
 |  Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | No  |
 |  Data requirements |   |
 |  Expected data source | OPSI Open Data Slovenia (Traffic report)  |
@@ -3515,7 +3494,7 @@ Climate Neutrality Action Plan
 |  If yes, which co-benefit does it measure? | Water savings – reduced leakages  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 |  If yes, which action and impact pathway is it relevant for? | Waste and Circular Economy: Energy and resource efficiency in water supply
-Water savings – reduced leakages  |
+| Water savings – reduced leakages  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
 |  Data requirements |   |
 |  Expected data source | Annual report of the City utility company Komunala Kranj.  |
@@ -3594,7 +3573,7 @@ Climate Neutrality Action Plan
 |  If yes, which emission source sectors does it impact? | Green infrastructure and nature-based solutions  |
 |  Does the indicator measure indirect impacts (i.e., co- benefits)? | Yes  |
 |  If yes, which co-benefit does it measure? | Urban heat island effect reduced
-Increased quality of life/ Livability  |
+| Increased quality of life/ Livability  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 |  If yes, which action and impact pathway is it relevant for? | Green infrastructure and nature-based solutions: Green areas and green roofs, Greening the municipal spatial plan
 Urban heat island effect reduced
@@ -3619,7 +3598,7 @@ Increased quality of life/ Livability  |
 |  If yes, which emission source sectors does it impact? | /  |
 |  Does the indicator measure indirect impacts (i.e., co- benefits)? | Yes  |
 |  If yes, which co-benefit does it measure? | Land use management practices
-Sustainable local food production  |
+| Sustainable local food production  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 |  If yes, which action and impact pathway is it relevant for? | Green infrastructure and nature-based solutions:
 Promotion of plant and low-emission livestock production
@@ -4126,7 +4105,7 @@ Module C-3 "Financing of Action Portfolio" should contain the list of action por
 | --- | --- | --- | --- | --- | --- |
 |  Action/ intervention name | Responsible entity and person | Start/end date | Field of action | Impact (in t CO2eq) | Total cost estimated (2018-2030)  |
 |  1.1. Phase out fossil fuel in district heating/ cooling and replacement with RES | CoKA, Office for Economic Affairs and Traffic, Department of Economic Affairs
-Public Heating Service Operator or other selected concessioners | 2018-2030 | Energy systems | 14.342 t | 21.827.000  |
+| Public Heating Service Operator or other selected concessioners | 2018-2030 | Energy systems | 14.342 t | 21.827.000  |
 |  1.2. Utilization of waste heat from industrial and commercial facilities for Kranj district heating and cooling system | CoKA, Office for Economic Affairs and Traffic, Department of Economic Affairs
 Public Heating Service Operator or other selected concessioners
 Enterprises providing residual heat | 2023-2030 | Energy systems | 9.850 t | 6.000.000  |
@@ -4135,13 +4114,13 @@ Komunala Kranj (public utility company)
 Private investors | 2018-2030 | Energy systems | 19.690 t | 53.073.000  |
 |  1.4. Hydro electricity production | Private investor (Gorenjske elektrarne d.o.o.) | 2018-2030 | Energy systems | 125 t | 1.000.000  |
 |  1.5. Upgrade of electric grid | Distribution company
-Elektro Gorenjska d.d. | 2023-2030 | Energy systems | / Support action. | 40.000.000  |
+| Elektro Gorenjska d.d. | 2023-2030 | Energy systems | / Support action. | 40.000.000  |
 |  1.6. Energy-efficient and smart public lighting | CoKA, Office for Economic Affairs and Traffic, Department of Economic Affairs
-Concessioner | 2018-2030 | Energy systems | 286 t | 2.500.000  |
+| Concessioner | 2018-2030 | Energy systems | 286 t | 2.500.000  |
 |  1.7. Energy co-operatives | LEAG
-BSC Kranj | 2023-2028 | Energy systems | 1.969 t | 5.000.000  |
+| BSC Kranj | 2023-2028 | Energy systems | 1.969 t | 5.000.000  |
 |  2.1. "One car by household" promotion programme | CoKA, Office for Economic Affairs and Traffic, Department of Traffic
-CTM Centre for Sustainable Mobility | 2024-2030 | Mobility & transport | 16.342 t | 2.700.000  |
+| CTM Centre for Sustainable Mobility | 2024-2030 | Mobility & transport | 16.342 t | 2.700.000  |
 |  2.2. Smart multimodal public transport system | CoKA, Office for Economic Affairs and Traffic, Department of Traffic
 Joint Office for Spatial planning
 CoKA, Project Office
@@ -4157,23 +4136,23 @@ C-3.1: Summary of interventions with cost implication (to be unpacked in Investm
 | --- | --- | --- | --- | --- | --- |
 |   | CTM Centre for Sustainable Mobility Kranj |  |  |  |   |
 |  2.4. Car-free areas, shared spaces, one-way streets and P&R | CoKA, Office for Economic Affairs and Traffic, Department of Traffic
-Komunala Kranj (public utility company) | 2018-2030 | Mobility & transport | 268 t | 1.750.000  |
+| Komunala Kranj (public utility company) | 2018-2030 | Mobility & transport | 268 t | 1.750.000  |
 |  2.5. EV and hydrogen charging infrastructure | CoKA, Office for Economic Affairs and Traffic, Department of Economic Affairs
 Concessioners
 Ministry of Defence
 Private investors | 2018-2030 | Mobility & transport | 10.585 t | 19.488.260  |
 |  2.6. EV and hydrogen powered municipal vehicles | CoKA, Office for Economic Affairs and Traffic, Department of Economic Affairs
-Concessioner | 2018-2030 | Mobility & transport | 1.027 t | 14.900.000  |
+| Concessioner | 2018-2030 | Mobility & transport | 1.027 t | 14.900.000  |
 |  2.7. Reduced transit traffic | CoKA, Office for Economic Affairs and Traffic, Joint Office for Spatial planning
-Republic of Slovenia, Ministry of Infrastructure | 2023-2030 | Mobility & transport | 2.699 t | 12.000.000  |
+| Republic of Slovenia, Ministry of Infrastructure | 2023-2030 | Mobility & transport | 2.699 t | 12.000.000  |
 |  3.1. Zero waste programme | CoKA, Office for Economic Affairs and Traffic, Department of Economic Affairs
-Komunala Kranj (public utility company) | 2018-2030 | Mobility & transport | 658 t | 350.000  |
+| Komunala Kranj (public utility company) | 2018-2030 | Mobility & transport | 658 t | 350.000  |
 |  3.2. Smart waste management | CoKA, Office for Economic Affairs and Traffic, Department of Economic Affairs
-Komunala Kranj (public utility company) | 2018-2030 | Waste & circular economy | 53 t | 4.000.000  |
+| Komunala Kranj (public utility company) | 2018-2030 | Waste & circular economy | 53 t | 4.000.000  |
 |  3.3. Centre for Circular Economy Zarta with new waste management and support services | Komunala Kranj (public utility company) | 2023-2026 | Waste & circular economy | 11.512 t | 5.142.000  |
 |  3.4. Kranj Circular City joint public-private innovation actions | CoKA, Office for the development and smart community, Department for Green Transition | 2023-2030 | Waste & circular economy | 2.579 t | 800.000  |
 |  3.5 Energy and resource efficiency in water supply | CoKA, Project Office
-Komunala Kranj (public utility company) | 2018-2030 | Waste & circular economy | 20 t | 8.885.360  |
+| Komunala Kranj (public utility company) | 2018-2030 | Waste & circular economy | 20 t | 8.885.360  |
 |  4.1. Sustainable management of green and blue infrastructure system | CoKA, Joint Office for Environment protection | 2023-2028 | Green infrastructure & nature-based solutions | 7.560 t | 770.000  |
 |  4.2. Greening the municipal spatial planning | CoKA, Joint Office for Spatial planning | 2023-2028 | Green infrastructure & nature-based solutions | / Support action. | 500.000  |
 |  4.3. Green areas and green roofs | CoKA, Project Office
@@ -4192,9 +4171,9 @@ Office for the development and smart community
 Office for Economic Affairs and Traffic, Department of Economic Affairs | 2023-2030 | Green infrastructure & nature-based solutions | 672 t | 1.210.000  |
 |  4.5. Urban agriculture programme | CoKA, Office for the development and smart community and Office for Economic Affairs and Traffic, Department of Economic Affairs | 2018-2030 | Green infrastructure & nature-based solutions | 0 t | 4.194.000  |
 |  5.1. Energy-efficiency renovation of public buildings | CoKA, Office for Economic Affairs and Traffic, Department of Economic Affairs (municipal buildings)
-Republic of Slovenia (state owned buildings) | 2018-2030 | Built environment | 2.685 t | 40.682.440  |
+| Republic of Slovenia (state owned buildings) | 2018-2030 | Built environment | 2.685 t | 40.682.440  |
 |  5.2. Energy-efficiency of residential buildings in urban and semi-urban neighbourhoods | CoKA, Office for the development and smart community, Department for Green Transition
-LEAG | 2018-2030 | Built environment | 5.092 t | 78.500.000  |
+| LEAG | 2018-2030 | Built environment | 5.092 t | 78.500.000  |
 |  5.3. Integrated smart and climate neutral re-development of urban brownfield areas | CoKA, Joint Office for Spatial planning | 2018-2030 | Built environment | 203 t | 5.260.000  |
 |  0.1 Organisational and Governance Innovation interventions | CoKA, Office for the development and smart community | 2018-2030 | Built environment | / Support action. | 700.000  |
 |  0.2 Social, digital and other Innovation interventions | CoKA, Office for the development and smart community | 2018-2030 | Built environment | / Support action. | 8.135.975  |
@@ -4277,7 +4256,7 @@ Climate Neutrality Action Plan
 2
 
 |  SECTOR | MEASUREMENTS | TARGETS 2030 – COMPARED TO 2005 AND DRAFT NECP
-(update in progress)  |
+| (update in progress)  |
 | --- | --- | --- |
 |   | → increase the share of renewables in final consumption. | energy products excluding electricity and district heat), prohibition of sale and installation of new boilers using fuel oil after 2022. (DRAFT NECP no changes)
 → At least 30 % share of RES (including waste heat) in industry, (DRAFT NECP no changes)
@@ -4321,7 +4300,7 @@ Climate Neutrality Action Plan
 |  SECTOR | MEASUREMENTS | TARGETS 2030 – COMPARED TO 2005 AND DRAFT NECP (update in progress)  |
 | --- | --- | --- |
 |   | the use of synthetic gas and hydrogen;
-→ promotion of digitalisation in companies and the introduction of Industry 4.0. which also enables the transition to a low-carbon circular economy. |   |
+| → promotion of digitalisation in companies and the introduction of Industry 4.0. which also enables the transition to a low-carbon circular economy. |   |
 |  3. TRANSPORT AND MOBILITY | Transport is the sector with the largest share of GHG emissions in Slovenia. GHG emissions in the transport sector have been increasing in recent decades because of economic development. Rail transport and measures of sustainable mobility are put to the forefront, which will reduce GHG emissions in the transport sector and reduce traffic density. |   |
 |   |  → Upgrade the railway infrastructure (preparation by 2025, implementation by 2030); upgrade and enhance capacities on the corridor Ljubljana–Kranj (double track);
 → further develop integrated public transport (harmonisation of timetables, integration of urban transport, establishment of a single/suitable public passenger transport operator, development of shared mobility, introduction of prioritisation of public transport vehicles, integration of cableway installations);
@@ -4840,11 +4819,11 @@ The table below enlists the signatories who are committing to this CCC, and ther
 |  Name of the institution | Sector / Domain / Level of operation^{7} | Legal form | Name of the responsible person | Position of the responsible person  |
 | --- | --- | --- | --- | --- |
 |  City of Kranj | Sector: energy systems, mobility and transport/ waste and circular economy, green infrastructure and nature-based solutions - AFOLU/ built environment/ governance & policy
-Level: policy, management, implementation, monitoring | Local Authority | Matjaž Rakovec | Mayor  |
+| Level: policy, management, implementation, monitoring | Local Authority | Matjaž Rakovec | Mayor  |
 |  Ameba Holding, d.o.o. and 3FS NORDIC SI d.o.o. | Sector: smart city
-Level: implementation, expertise | Limited liability company – city partners in smart development | Andraž Logar | CEO  |
+| Level: implementation, expertise | Limited liability company – city partners in smart development | Andraž Logar | CEO  |
 |  Arriva d.o.o. | Sector: mobility and transport
-Level: implementation | Limited liability company – city and national public transport concessioner | Bo Erik Stig Karlsson | CEO  |
+| Level: implementation | Limited liability company – city and national public transport concessioner | Bo Erik Stig Karlsson | CEO  |
 |  Biotechnical Centre Naklo | Sector: green infrastructure and nature-based solutions / learning & capabilities
 Level: knowledge-base, engagement | Educational, research and development centre | dr. Marijan Pogačnik | Director  |
 
@@ -4858,92 +4837,77 @@ Commitments
 | --- | --- | --- | --- | --- |
 |  BSC, Regional Development Agency of Gorenjska | Sector: all sectors, learning & capabilities, social innovation, funding | Limited liability company – regional development agency | Franja Gabrovšek Schmidt | Director  |
 |  CER Sustainable Business Network Slovenia | Sector: all sectors
-Level: implementation, expertise | Institute | Ana Bregar Struna | Director  |
+| Level: implementation, expertise | Institute | Ana Bregar Struna | Director  |
 |  Chamber of Agriculture and Forestry of Slovenia, Agricultural Forestry Institute Kranj | Sector: green infrastructure and nature-based solutions – AFOLU, capacity building
-Level: implementation, funding, expertise | Chamber of agriculture and forestry – agriculture advisory service | Mitja Kadoič | Director  |
+| Level: implementation, funding, expertise | Chamber of agriculture and forestry – agriculture advisory service | Mitja Kadoič | Director  |
 |  City of Kranj Scouts Association | Sector: learning & capabilities
-Level: engagement, implementation | NGO | Danijel Kodrič | Representative  |
+| Level: engagement, implementation | NGO | Danijel Kodrič | Representative  |
 |  Cultural Art Association SubArt | Sector: learning & capabilities
-Level: engagement, implementation | NGO | Darjan Kruševac | Representative  |
+| Level: engagement, implementation | NGO | Darjan Kruševac | Representative  |
 |  Cultural Association Prostorož | Sector: learning & capabilities
-Level: engagement, implementation | NGO | Maša Cvetko | Representative  |
+| Level: engagement, implementation | NGO | Maša Cvetko | Representative  |
 |  Domplan, engineering, real estate, urban planning, and Energy company, d.d. | Sector: energy systems, built environment
-Level: implementation | Joint-stock company – city concessioner for district heating | Saša Krč | CEO  |
+| Level: implementation | Joint-stock company – city concessioner for district heating | Saša Krč | CEO  |
 |  Elektro Gorenjska, d.d. | Sector: energy systems, mobility & transport
-Level: implementation | Joint-stock company – electricity distribution and production company | Dr. Ivan Šmon, MBA | CEO  |
+| Level: implementation | Joint-stock company – electricity distribution and production company | Dr. Ivan Šmon, MBA | CEO  |
 |  GENIS d.o.o. | Sector: smart city
-Level: implementation, expertise | Limited liability company – city partners in smart development | Janko Štefančič | CEO  |
+| Level: implementation, expertise | Limited liability company – city partners in smart development | Janko Štefančič | CEO  |
 |  Goodyear Slovenija, d.o.o. | Sector: industrial processes and product use
-Level: implementation | Limited liability company | Matej Zavrl | Procurator  |
-
-0
-Climate-Neutrality
-Commitments
-
+| Level: implementation | Limited liability company | Matej Zavrl | Procurator  |
 |  Name of the institution | Sector / Domain / Level of operation^{7} | Legal form | Name of the responsible person | Position of the responsible person  |
 | --- | --- | --- | --- | --- |
 |  Gorenjska Banka d.d. | Sector: finance
-Level: implementation, expertise | Public limited company | Mario Henjak | President of the Management Board  |
+| Level: implementation, expertise | Public limited company | Mario Henjak | President of the Management Board  |
 |  Institute for Innovation and Development of University of Ljubljana | Sector: all sectors, learning & capabilities
-Level: multi-sector knowledgebase, research & innovation facilitation | Institute | izr. prof. dr. Andrej F. Gubina | Director  |
+| Level: multi-sector knowledgebase, research & innovation facilitation | Institute | izr. prof. dr. Andrej F. Gubina | Director  |
 |  Institute for Spatial Policies, IPOP | Sector: learning & capabilities
-Level: engagement, implementation | NGO | Marko Peterlin | Director  |
+| Level: engagement, implementation | NGO | Marko Peterlin | Director  |
 |  Institute for Tourism and Culture Kranj | Sector: waste and circular economy, capacity building, social innovation
-Level: implementation, expertise, engagement | Public institute – tourism destination management organisation | Klemen Malovrh | Director  |
+| Level: implementation, expertise, engagement | Public institute – tourism destination management organisation | Klemen Malovrh | Director  |
 |  Institute of the Republic of Slovenia for Nature Conservation | Sector: green infrastructure and nature-based solutions - AFOLU
-Level: policy, implementation | National public body – institute for nature conservation | Teo Hrvoje Oršanič | Director  |
+| Level: policy, implementation | National public body – institute for nature conservation | Teo Hrvoje Oršanič | Director  |
 |  Iskraemeco, d.d. | Sector: industrial processes and product use/ smart city/ energy
-Level: implementation | Joint-stock company | Luis Goncalves | CEO  |
+| Level: implementation | Joint-stock company | Luis Goncalves | CEO  |
 |  JGZ Brdo | Sector: green infrastructure and nature-based solutions
-Level: implementation | Public company | Maja Križmančič | Director  |
+| Level: implementation | Public company | Maja Križmančič | Director  |
 |  Jožef Stefan Institute | Sector: all sectors, learning & capabilities,
-Level: multi-sector knowledgebase, research & innovation facilitation | Institute | Matjaž Logar | Director  |
+| Level: multi-sector knowledgebase, research & innovation facilitation | Institute | Matjaž Logar | Director  |
 |  Komunala Kranj, javno podjetje, d.o.o. | Sector: waste and circular economy
-Level: implementation | Limited liability company - public utility company | Matjaž Berčon | CEO  |
-
-1
-Climate-Neutrality
-Commitments
-
+| Level: implementation | Limited liability company - public utility company | Matjaž Berčon | CEO  |
 |  Name of the institution | Sector / Domain / Level of operation^{7} | Legal form | Name of the responsible person | Position of the responsible person  |
 | --- | --- | --- | --- | --- |
 |  Kontron, d.o.o. | Sector: industrial processes and product use, smart city
-Level: implementation | Limited liability company | Robert Kuzmič, | CEO  |
+| Level: implementation | Limited liability company | Robert Kuzmič, | CEO  |
 |  Kranj City Library | Sector: all sectors, learning & capabilities, social innovation
-Sector: learning & capabilities | Public institute - library | Maja Vunšek | Director  |
+| Sector: learning & capabilities | Public institute - library | Maja Vunšek | Director  |
 |  Lanicon business consultation | Sector: smart city
-Level: implementation, expertise | Sole-trader | Matej Potokar | CEO  |
+| Level: implementation, expertise | Sole-trader | Matej Potokar | CEO  |
 |  LEAG – Local energy agency of Gorenjska | Sector: energy systems, built environment, learning & capabilities, social innovation, funding
-Level: implementation, monitoring, expertise, funding | Public institute – regional energy agency | Črtomir Kurnik | Director  |
+| Level: implementation, monitoring, expertise, funding | Public institute – regional energy agency | Črtomir Kurnik | Director  |
 |  MM IBIS, d.o.o. | Sector: mobility and transport
-Level: implementation, expertise | Limited liability company – city partner in managing Centre for sustainable mobility Kranj | Miha Hrženjak | CEO  |
+| Level: implementation, expertise | Limited liability company – city partner in managing Centre for sustainable mobility Kranj | Miha Hrženjak | CEO  |
 |  Rekono d.o.o. | Sector: smart city
-Level: implementation, expertise | Limited liability company – city partners in smart development | Janko Jager | CEO  |
+| Level: implementation, expertise | Limited liability company – city partners in smart development | Janko Jager | CEO  |
 |  School Centre Kranj | Sector: energy/ mobility/ learning & capabilities
-Level: knowledge-base, engagement | Educational, research and development centre | Jože Drenovec | Director  |
+| Level: knowledge-base, engagement | Educational, research and development centre | Jože Drenovec | Director  |
 |  T-2 d.o.o. | Sector: smart city
-Level: implementation, expertise | Limited liability company – city partners in smart development | Jurij Krč | CEO  |
+| Level: implementation, expertise | Limited liability company – city partners in smart development | Jurij Krč | CEO  |
 |  T2 ROTALAB d.o.o. | Sector: mobility and transport
-Level: implementation | Limited liability company – city partners in sustainable mobility | Jožef Zrimšek | CEO  |
-
-2
-Climate-Neutrality
-Commitments
-
+| Level: implementation | Limited liability company – city partners in sustainable mobility | Jožef Zrimšek | CEO  |
 |  Name of the institution | Sector / Domain / Level of operation^{7} | Legal form | Name of the responsible person | Position of the responsible person  |
 | --- | --- | --- | --- | --- |
 |  University of Ljubljana, Faculty of Electrical Engineering | Sector: learning & capabilities, energy systems, smart city
-Level: knowledgebase, research & innovation | Faculty – electrical engineering | prof. dr. Marko Topič | Dean  |
+| Level: knowledgebase, research & innovation | Faculty – electrical engineering | prof. dr. Marko Topič | Dean  |
 |  University of Maribor, Faculty of Organisational Sciences | Sector: learning & capabilities, social innovation, smart city
-Level: knowledgebase, research & innovation | Faculty – organisational sciences | red. prof. dr. Iztok Podbregar | Dean  |
+| Level: knowledgebase, research & innovation | Faculty – organisational sciences | red. prof. dr. Iztok Podbregar | Dean  |
 |  VIGRED, d.o.o. | Sector: energy systems
-Level: implementation | Limited liability company – city concessioner for public lighting | Tomaž Logar | CEO  |
+| Level: implementation | Limited liability company – city concessioner for public lighting | Tomaž Logar | CEO  |
 |  Vincenc Draksler Foundation so.p. | Sector: waste and circular economy, social innovation
-Level: implementation, engagement | Social enterprise | Nada Bogataj Kržan | Director  |
+| Level: implementation, engagement | Social enterprise | Nada Bogataj Kržan | Director  |
 |  VIZIJE MOBILNOSTI, d.o.o. | Sector: mobility and transport
-Level: implementation, expertise | Limited liability company – city concessioner for e-mobility | Blaženka Pospis Perpar | CEO  |
+| Level: implementation, expertise | Limited liability company – city concessioner for e-mobility | Blaženka Pospis Perpar | CEO  |
 |  Wolt d.o.o. Ljubljana | Sector: mobility and transport
-Level: implementation | Limited liability company | Clemens Brugger | CEO  |
+| Level: implementation | Limited liability company | Clemens Brugger | CEO  |
 |  Zavod Center Stonoga so.p. | Sector: waste and circular economy/ social innovation, smart city, local food supply
 Level: implementation, expertise, engagement | Social enterprise - NGO | Primož Slavec | Director  |
 
@@ -5006,13 +4970,13 @@ The table below enlists the signatories¹ who are committing to this CCC, and th
 |  Name of the institution | Sector / Domain / Level of operation² | Legal form | Name of the responsible person | Position of the responsible person  |
 | --- | --- | --- | --- | --- |
 |  Adult Education Centre Kranj | Sector: learning & capabilities, social innovation
-Level: implementation | Adult education centre | Mateja Šmid | Director  |
+| Level: implementation | Adult education centre | Mateja Šmid | Director  |
 |  Association Rekreatur | Sector: sport and tourism
-Level: implementation | Association – NGO | Andrej Zalokar | President  |
+| Level: implementation | Association – NGO | Andrej Zalokar | President  |
 |  Association Sorško polje | Sector: social innovation, local food supply
-Level: implementation, expertise, engagement | Association – NGO | Matjaž Jerala | President  |
+| Level: implementation, expertise, engagement | Association – NGO | Matjaž Jerala | President  |
 |  Chamber of Craft and Small Businesses, Regional Chamber Kranj | Sector: craft and SMEs
-Level: implementation, funding, expertise | Chamber of Craft and Small Businesses | Janja Erjavec | Director  |
+| Level: implementation, funding, expertise | Chamber of Craft and Small Businesses | Janja Erjavec | Director  |
 |  FLORA SPORT d.o.o. | Sector: green infrastructure and nature-based solutions
 Level: implementation | Limited liability company – city concessioner for green areas management | Matjaž Kumer | Procurator  |
 
@@ -5025,17 +4989,17 @@ Commitments
 |  Name of the institution | Sector / Domain / Level of operation² | Legal form | Name of the responsible person | Position of the responsible person  |
 | --- | --- | --- | --- | --- |
 |  Fragmenti, so.p. | Sector: cultural and natural protection, social innovation
-Level: implementation, engagement | Social enterprise – NGO | Mateja Zore | Director  |
+| Level: implementation, engagement | Social enterprise – NGO | Mateja Zore | Director  |
 |  LIDL Slovenija d.o.o. k.d. | Sector: retail
-Level: implementation | Limited liability company, Limited partnership | Ivan Udiljak
-Metka Šilar Šturm | CEO
-Procurator  |
+| Level: implementation | Limited liability company, Limited partnership | Ivan Udiljak |
+| Metka Šilar Šturm | CEO |
+| Procurator  |
 |  Marles hiše Maribor d. o. o | Sector: built environment
-Level: implementation, expertise | Limited liability company | Tadej Gosak | Director  |
+| Level: implementation, expertise | Limited liability company | Tadej Gosak | Director  |
 |  Prešeren Theatre Kranj | Sector: culture
-Level: implementation | Public institute | Jure Novak | Director  |
+| Level: implementation | Public institute | Jure Novak | Director  |
 |  Retirement Home Kranj | Sector: social care and health
-Level: implementation, engagement | Social care institution | Nadja Gantar | Director  |
+| Level: implementation, engagement | Social care institution | Nadja Gantar | Director  |
 |  Slovenia Forest Service | Sector: green infrastructure management
 Level: implementation, funding, expertise | Public institution – national forest service | Martin Umek
 under delegated authority | Head of Regional Unit  |

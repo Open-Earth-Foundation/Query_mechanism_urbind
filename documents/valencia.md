@@ -587,9 +587,9 @@ València proposes a process of public, social and ecosystem involvement in the 
 | --- | --- | --- | --- | --- |
 |  Levels and leadership |   | Description | Key Result | Period  |
 |  1 | València Mission Community | Creation and involvement with the CCC of mission teams from all municipal areas of València City Council and its Local Public Sector. | + First València Climate City Contract in March 2023
-+ Annual improvements to the València CCC | September 2022-March 2023.  |
+| + Annual improvements to the València CCC | September 2022-March 2023.  |
 |  2 | València Mission Transition RoundTable | Involvement and accession of the members of the València Mission Network Transition RoundTable with commitments to action and funding incorporated into the CAP. | + Accession to the Second València Climate City Contract in March 2024.
-+ Periodic improvements to the València CCC | From March 2023 onwards.  |
+| + Periodic improvements to the València CCC | From March 2023 onwards.  |
 |  3 | Alliance for the València Mission | Involvement and accessions of the València 5-helix ecosystem with commitments to action and funding incorporated into the CAP. | + Accession to the Second València Climate City Contract in March 2024.
 + Periodic improvements to the València CCC | From March 2023 onwards.  |
 
@@ -1035,7 +1035,7 @@ All this analysis allows us to identify the sectors to act on and the actions to
 Diesel
 Natural Gas | Electricity |  |   |
 |  Waste
-t (non-energy) for waste |  |  | 336.677,47 | 336.677,47 t  |
+| t (non-energy) for waste |  |  | 336.677,47 | 336.677,47 t  |
 |  (Type of fuel/energy used) |  |  |  |   |
 |  Industrial processes and product use | 215.090,809 | 91.258,487 | - | 306.349,296  |
 AJUNTAMENT DE VALENCIA
@@ -1072,7 +1072,7 @@ citiES 2030
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Base year 2019  |   |   |   |   |   |   |   |
 |  For calculation in tonnes with activity data
-Methodology for calculating Material Economics: Emission=activity data*Emission Factor  |   |   |   |   |   |   |   |
+| Methodology for calculating Material Economics: Emission=activity data*Emission Factor  |   |   |   |   |   |   |   |
 |  Relate this table to table A-1.3_b and A-1.4_b, in addition to chart A-1.5_b.  |   |   |   |   |   |   |   |
 |  Emitting Sector | Primary energy/ source of energy | Carbon dioxide (CO)2 | Methane (CH4) | Nitrous oxide (N2O) | Hydrofluorocarbons and Perfluorocarbons | Sulphur hexafluoride (SF6) | Nitrogen trifluoride (NF3)  |
 |  Transport | Private Transport (g/km) | 157 |  |  |  |  |   |
@@ -1420,7 +1420,7 @@ Climate Action Plan (CAP)
 citiES 2030
 
 |   |  |  | development of the city for the next decade. | City, Shared City, Sustainable City and Mediterranean City. It contemplates, for its development, twelve strategic lines that are deployed from 30 Programmes. | Contract (CCC) under this Urban Strategy
-Open the Climate City Contract (CCC) to debate and reflection every two years at the València Urban Forum.  |
+| Open the Climate City Contract (CCC) to debate and reflection every two years at the València Urban Forum.  |
 | --- | --- | --- | --- | --- | --- |
 |  Strategy | Local | València European Green Capital 2024 | Fundamental pillars: renaturalisation of the city and urban biodiversity, sustainable mobility and the recovery of public space, the Climate Mission 2030 and the recovery and integration of the vegetable garden to promote healthy eating. | The legacy of the Green Capital 2024 will contribute to the València 2030 Climate Mission. | Align all the events to be held and the processes of citizen involvement and the rest of the agents of the Green Capital with the València 2030 Climate Mission, generating synergies.  |
 |  Strategy | Local | Missions València 2030 | Missions València 2030 pivots on 5 public innovation strategies designed as global lines of action that establish a coherent sequence of commitments, objectives, projects and actions that are related and planned to guide innovation to missions and with long lights to consolidate the success of Missions València 2030: governing innovation, creating an innovative look | The Missions València 2030 programme which has generated the approval of the València 2030 Climate Mission and the election of València as one of the 100 Mission cities chosen by the EU for the European mission. At the same time, it facilitates the orientation of instruments and resources and the generation of capacities towards the success of the Climate Mission. | Orientate the instruments for promoting public innovation that are developed under Missions València 2030 (Public Procurement of Innovation, Sandbox, etc.) to the València 2030 Climate Mission.  |
@@ -1459,8 +1459,7 @@ Climate Action Plan (CAP)
 citiES 2030
 
 |   |  |  |  | essential meeting point for the city and its citizens. Organise surface parking space, defining an appropriate pricing policy for regulated parking and coordinating this with underground parking, especially in the city centre and the first urban ring road between the main thoroughfares.
-
-To further improve mobility management, to ensure that travel is carried out in the most efficient way. |   |
+| To further improve mobility management, to ensure that travel is carried out in the most efficient way. |   |
 | --- | --- | --- | --- | --- | --- |
 |  Plan | Local | Green and Biodiversity Plan | The Green and Biodiversity Plan is the strategic document that will guide the municipal management of green infrastructure, natural heritage and urban biodiversity in the coming decades. Since its conception, this initiative has focused on a future València with better connectivity between the municipality's green spaces, as well as on increasing the resilience of the urban ecosystem. | It is the strategic guide for the development of Programme 4 Green Neighbourhoods and Programme 5 Regeneration of the coastline and territorial green integration of the València 2030 Urban Strategy. | Finalise and approve the Plan
 Advance in the development of the actions of the Green and Biodiversity Plan under the València 2030 Urban Strategy (Programmes 4 and 5).  |
@@ -2110,9 +2109,9 @@ Figure 13: Levels and leadership in the process of ownership of the Climate City
 | --- | --- | --- | --- | --- |
 |  Levels and Leadership |   | Description | Key Result | Period  |
 |  1 | Community of the València Mission | Creation and involvement with the CCC of mission teams from all municipal areas of València City Council and its Local Public Sector. | • First València Climate City Contract (CCC) in March 2023
-• Annual improvements to the València CCC | September 2022- March 2023.  |
+| • Annual improvements to the València CCC | September 2022- March 2023.  |
 |  2 | València Mission Transition RoundTable | Involvement and accession of the members of the València Mission Network Transition RoundTable with commitments to action and funding incorporated into the CCC. | • Accessions to the Second València Climate City Contract (CCC) in March 2024.
-• Periodic improvements to the València CCC | From March 2023 onwards.  |
+| • Periodic improvements to the València CCC | From March 2023 onwards.  |
 |  3 | The València Mission Alliance | Involvement and accessions of the València 5-helix ecosystem with commitments to action and funding incorporated into the CCC. | • Accessions to the Second València Climate City Contract (CCC) in March 2024.
 • Periodic improvements to the València CCC | From March 2023 onwards.  |
 
@@ -2198,9 +2197,8 @@ Climate Action Plan (CAP)
 citiES 2030
 
 |   |  |  | City Council Square, the Queen's Square and Plaza de Brujas and the area around the Mercado y Lonja recover the space for the citizens and its symbolic identity as a landmark among the city's public spaces. | generation of pedestrian routes and recreational areas.
-
-Unblocking and development of different pending developments in the city with criteria of social cohesion, accessibility and sustainability: 1) Central Park; 2) Benimaclet; 3) El Grau. |  | ○ Just social transition that reduces inequalities, by allowing proximity to amenities, not linking safe and fast mobility to car ownership.
-○ Recovery of public space for citizens, both that left by car parks, streets, etc.  |
+| Unblocking and development of different pending developments in the city with criteria of social cohesion, accessibility and sustainability: 1) Central Park; 2) Benimaclet; 3) El Grau. |  | ○ Just social transition that reduces inequalities, by allowing proximity to amenities, not linking safe and fast mobility to car ownership. |
+| ○ Recovery of public space for citizens, both that left by car parks, streets, etc.  |
 | --- | --- | --- | --- | --- | --- | --- |
 |  Transport | Modal shift: shift to public and non-motorised transport | Technology and Infrastructure
 Financing and Investment
@@ -2581,13 +2579,13 @@ Modal shift: shift to public and non-motorised transport | TR-06 Implementation 
 Reducing the need for motorised transport
 Modal shift: shift to public and non-motorised transport | TR-07 Intelligent Public Transport Systems | We intend to advance in the digitalisation and sustainability of the activity of public transport services, consisting of the sensorisation and capture of vehicle data from the municipal transport fleet (480 buses).  |
 |  **Transport**
-Shared transport | TR-08 Mobility as a service | We aim to promote shared mobility by providing users with complete mobility solutions that facilitate their journeys from origin to destination, simplifying the choice of transport mode, integrating payment, etc.  |
+| Shared transport | TR-08 Mobility as a service | We aim to promote shared mobility by providing users with complete mobility solutions that facilitate their journeys from origin to destination, simplifying the choice of transport mode, integrating payment, etc.  |
 |  **Transport**
-Car electrification | TR-09 Renewal and electrification of the vehicle fleet | We intend to carry out electrification actions, among others, in the vehicle fleet of the Local Police, the fire brigade and other council vehicles. The progressive incorporation of electric vehicles with a ‘zero emissions’ label to replace diesel and petrol vehicles is being considered.  |
+| Car electrification | TR-09 Renewal and electrification of the vehicle fleet | We intend to carry out electrification actions, among others, in the vehicle fleet of the Local Police, the fire brigade and other council vehicles. The progressive incorporation of electric vehicles with a ‘zero emissions’ label to replace diesel and petrol vehicles is being considered.  |
 |  **Transport**
-Car electrification | TR-10 Network of recharging points for electric vehicles | We intend to progressively implement electric vehicle chargers in the public domain to facilitate the development of electric mobility, using and optimising existing electrical infrastructures.  |
+| Car electrification | TR-10 Network of recharging points for electric vehicles | We intend to progressively implement electric vehicle chargers in the public domain to facilitate the development of electric mobility, using and optimising existing electrical infrastructures.  |
 |  **Transport**
-Bus electrification | TR-11 Renewal and electrification of the EMT fleet | We intend to renew and adapt the city’s public urban transport fleet to less polluting and more energy-efficient vehicles, as well as to build the necessary infrastructure (garage, photovoltaic plant, substation) to begin electrification of the EMT València fleet.  |
+| Bus electrification | TR-11 Renewal and electrification of the EMT fleet | We intend to renew and adapt the city’s public urban transport fleet to less polluting and more energy-efficient vehicles, as well as to build the necessary infrastructure (garage, photovoltaic plant, substation) to begin electrification of the EMT València fleet.  |
 |  **Transport**
 Optimisation of freight transport logistics | TR-12 Sustainable logistics | We aim to increase the efficiency and sustainability of urban logistics systems, so that the mobility of people coexists well with the mobility of goods.  |
 
@@ -2656,7 +2654,7 @@ Climate Action Plan (CAP)
 citiES 2030
 
 |  Renaturalisation, biodiversity and resilience
-Urbanism & Habitat |  | Urban Quality Guidelines is a link between these two levels of planning, the metropolitan structural and the detailed planning of the neighbourhoods. The guidelines aim to establish a framework on which to implement a change of direction in urban planning activity towards urban regeneration based on urban quality as a means of improving people's quality of life. As a result of this work, progress is being made in comprehensive urban planning in the city from the perspective of the 15-minute city with local facilities in the different neighbourhoods of the city.  |
+| Urbanism & Habitat |  | Urban Quality Guidelines is a link between these two levels of planning, the metropolitan structural and the detailed planning of the neighbourhoods. The guidelines aim to establish a framework on which to implement a change of direction in urban planning activity towards urban regeneration based on urban quality as a means of improving people's quality of life. As a result of this work, progress is being made in comprehensive urban planning in the city from the perspective of the 15-minute city with local facilities in the different neighbourhoods of the city.  |
 | --- | --- | --- |
 |  Transport
 Reducing the need for motorised transport
@@ -2684,7 +2682,7 @@ citiES 2030
 Efficient lighting and appliances
 Low-emission heat generation (decarbonisation of heating) |  |   |
 |  Buildings and heating
-New near-zero energy buildings | EC-2 Promotion of new housing typologies | We aim to regulate and promote new housing models and typologies adapted to new social needs and incorporating elements of resilience to climate change.  |
+| New near-zero energy buildings | EC-2 Promotion of new housing typologies | We aim to regulate and promote new housing models and typologies adapted to new social needs and incorporating elements of resilience to climate change.  |
 |  València 2030 Urban Strategy Programme: Municipal energy efficiency  |   |   |
 |  Buildings and heating
 Building renovations
@@ -2706,7 +2704,7 @@ citiES 2030
 |   |  | appliances throughout the installation, which will provide greater and better control of the installation.  |
 | --- | --- | --- |
 |  **Electricity**
-Low-emission electricity generation | *E-2 Renewable production in public buildings* | We aim to increase the production of renewable energies from the production capacities offered by public infrastructures. Thus, we will focus on the installation of photovoltaic panels on the roofs of public buildings for self-consumption, so that surplus energy can be shared with economically vulnerable housing and/or public housing.  |
+| Low-emission electricity generation | *E-2 Renewable production in public buildings* | We aim to increase the production of renewable energies from the production capacities offered by public infrastructures. Thus, we will focus on the installation of photovoltaic panels on the roofs of public buildings for self-consumption, so that surplus energy can be shared with economically vulnerable housing and/or public housing.  |
 |  **Electricity**
 Low-emission electricity generation | *E-3 Municipal sustainable energy company* | We intend to create a mixed municipal company, with the participation of a minority private partner, chosen by public tender, with criteria of transparency and free competition, for the provision of services and the execution of municipal energy works and installations. The main services to be provided by the joint venture will be related to: 1) municipal renewable energy generation facilities for self-consumption; 2) energy efficiency works and installations; 3) maintenance and optimisation of systems.
 
@@ -2752,17 +2750,17 @@ Climate Action Plan (CAP)
 citiES 2030
 
 |  Waste
-Waste recycling | R-2 Circular economy | We aim to act at the beginning of the chain, i.e. improving the design phases to achieve product durability by combating planned obsolescence and promoting product reduction, reuse, recycling and component recovery.  |
+| Waste recycling | R-2 Circular economy | We aim to act at the beginning of the chain, i.e. improving the design phases to achieve product durability by combating planned obsolescence and promoting product reduction, reuse, recycling and component recovery.  |
 | --- | --- | --- |
 |  Waste
-Waste recycling | R-3 Awareness-raising and awareness-raising on circular economy | Our aim is to make it easier for consumers to make informed purchasing decisions, thereby promoting the circular economy in the city.  |
+| Waste recycling | R-3 Awareness-raising and awareness-raising on circular economy | Our aim is to make it easier for consumers to make informed purchasing decisions, thereby promoting the circular economy in the city.  |
 |  València 2030 Urban Strategy Programme: Green Neighbourhoods  |   |   |
 |  Renaturalisation, biodiversity and resilience
-Urbanism & Habitat | RBR-1 Accessible neighbourhood gardens | We intend to focus on the so-called neighbourhood gardens, which are of particular strategic interest due to their proximity and service to citizens. The selection of green spaces will be made taking into account the need for cohesion in the city and to compensate for existing imbalances, including actions planned for the creation of new accessible gardens without architectural barriers or the rehabilitation of existing ones in the different neighbourhoods and towns.  |
+| Urbanism & Habitat | RBR-1 Accessible neighbourhood gardens | We intend to focus on the so-called neighbourhood gardens, which are of particular strategic interest due to their proximity and service to citizens. The selection of green spaces will be made taking into account the need for cohesion in the city and to compensate for existing imbalances, including actions planned for the creation of new accessible gardens without architectural barriers or the rehabilitation of existing ones in the different neighbourhoods and towns.  |
 |  Renaturalisation, biodiversity and resilience
-Urbanism & Habitat | RBR-2 Large urban parks with inclusive design | We intend to expand the network of large parks in our city, turning them into inclusive places with design for all people, in areas such as Benimamet, Benimaclet, Cabañal, Benicalap, Arrancapins, etc.  |
+| Urbanism & Habitat | RBR-2 Large urban parks with inclusive design | We intend to expand the network of large parks in our city, turning them into inclusive places with design for all people, in areas such as Benimamet, Benimaclet, Cabañal, Benicalap, Arrancapins, etc.  |
 |  Renaturalisation, biodiversity and resilience
-Urbanism & Habitat | RBR-3 Green Corridor València South | The future València Sur green corridor will be one of the largest green infrastructures in the city of València, after the Turia Garden. The corridor will connect, as a large linear green area, the Central Park, all the large parks in the south of the city (Rambleta, San Isidro...), and the Vara de Quart Innovative District, with the new Turia riverbed.  |
+| Urbanism & Habitat | RBR-3 Green Corridor València South | The future València Sur green corridor will be one of the largest green infrastructures in the city of València, after the Turia Garden. The corridor will connect, as a large linear green area, the Central Park, all the large parks in the south of the city (Rambleta, San Isidro...), and the Vara de Quart Innovative District, with the new Turia riverbed.  |
 |  Renaturalisation, biodiversity and resilience
 Urbanism & Habitat | RBR-4 Urban gardens | We intend to focus on urban allotments, which are of particular strategic interest due to their proximity and service to citizens. The selection of these spaces will be made taking into account the need for cohesion in the city and to compensate for existing imbalances, including actions planned for the creation of new accessible urban allotments.  |
 
@@ -2775,17 +2773,17 @@ citiES
 0
 
 |  Renaturalisation, biodiversity and resilience
-Urbanism & Habitat | RBR-5 Urban trees | We intend to advance in the naturalisation of the orchard-city ecotones, as spaces of particular interest for the recovery of the carrying capacity of urban infrastructure and, therefore, of biodiversity.  |
+| Urbanism & Habitat | RBR-5 Urban trees | We intend to advance in the naturalisation of the orchard-city ecotones, as spaces of particular interest for the recovery of the carrying capacity of urban infrastructure and, therefore, of biodiversity.  |
 | --- | --- | --- |
 |  Renaturalisation, biodiversity and resilience
-Urbanism & Habitat | RBR-6 New nature-based solutions | We aim to design nature-inspired solutions capable of storing carbon, regulating water or controlling temperature, whether in public spaces, private spaces, buildings, peri-urban environments, corridors, natural areas and coastal boundaries. We aim to develop Nature-Based Solutions such as vertical ecosystems, sustainable copses, draining pavements, green roofs and facades or blue-green corridors.  |
+| Urbanism & Habitat | RBR-6 New nature-based solutions | We aim to design nature-inspired solutions capable of storing carbon, regulating water or controlling temperature, whether in public spaces, private spaces, buildings, peri-urban environments, corridors, natural areas and coastal boundaries. We aim to develop Nature-Based Solutions such as vertical ecosystems, sustainable copses, draining pavements, green roofs and facades or blue-green corridors.  |
 |  Renaturalisation, biodiversity and resilience
-Urbanism & Habitat | RBR-7 Green education and outreach | We aim to implement cross-cutting green education and dissemination actions that integrate and offer a response to the different dimensions of the ecological transition for sustainability: naturalisation, energy, mobility, resources (air, noise, water), consumption, waste and circular economy, urban planning and housing, and governance.  |
+| Urbanism & Habitat | RBR-7 Green education and outreach | We aim to implement cross-cutting green education and dissemination actions that integrate and offer a response to the different dimensions of the ecological transition for sustainability: naturalisation, energy, mobility, resources (air, noise, water), consumption, waste and circular economy, urban planning and housing, and governance.  |
 |  València 2030 Urban Strategy Programme: Regeneration of the coastline and territorial green integration  |   |   |
 |  Renaturalisation, biodiversity and resilience
-Urbanism & Habitat | RBR-8 Renaturalisation of northern beaches | We aim to achieve the landscape, environmental and urban improvement of the entire promenade of the city of València, with interventions on the sandy beach, remodelling of the promenade, adaptation and diversity of uses and the presence of trees.  |
+| Urbanism & Habitat | RBR-8 Renaturalisation of northern beaches | We aim to achieve the landscape, environmental and urban improvement of the entire promenade of the city of València, with interventions on the sandy beach, remodelling of the promenade, adaptation and diversity of uses and the presence of trees.  |
 |  Renaturalisation, biodiversity and resilience
-Urbanism & Habitat | RBR-9 “Desembocadura” Park | The “Desembocadura Park”of València will have a surface area of more than 25 hectares. It is a comprehensive and complex proposal with the aim of completing the landscaping of the Turia that began 35 years ago. When completed, it will be the longest urban park in Europe.  |
+| Urbanism & Habitat | RBR-9 “Desembocadura” Park | The “Desembocadura Park”of València will have a surface area of more than 25 hectares. It is a comprehensive and complex proposal with the aim of completing the landscaping of the Turia that began 35 years ago. When completed, it will be the longest urban park in Europe.  |
 |  Renaturalisation, biodiversity and resilience
 Urbanism & Habitat | RBR-10 Green corridor system | Green corridors are key itineraries connecting the different elements of the green infrastructure of the city and the metropolitan area. The following three proposals will be studied. The first would be the Playas del Norte-Jardin del Turia-Albufera to connect  |
 
@@ -2798,9 +2796,9 @@ citiES 2030
 |   |  | three of the key elements of the city's green infrastructure with the greatest identity and environmental value. It would integrate the Desembocadura Park and would require recovering at least part of the land of the Logistics Activities Zone (ZAL) and reconverting it into a large green area that could recover agricultural activities. In this way, the Jardín del Túria would have a continuity from the northern beaches and the Albufera to the Parque Natural del Túria in Riba-Roja. The second would be Huerta Burjassot-Partida de Dalt to overcome the fragmentation derived from the concentration of infrastructures and establish a connecting space of regional importance between Horta Nord and Horta Sud. The third would be Huerta de Alboraya-city to be able to move from the orchards of Masquefa and Sant Llorenç, as well as from the urban edges of Torrefiel and Benimaclet to the very centre of the city through a linear green space.  |
 | --- | --- | --- |
 |  Renaturalisation, biodiversity and resilience
-Urbanism & Habitat | RBR-11 Orchard-city transition | We intend to redesign the limits of the city to favour interaction with the huerta of València as an agricultural and productive space of singular interest and to promote the climatic adaptation of the city, improving the relationship between the huerta and the city.  |
+| Urbanism & Habitat | RBR-11 Orchard-city transition | We intend to redesign the limits of the city to favour interaction with the huerta of València as an agricultural and productive space of singular interest and to promote the climatic adaptation of the city, improving the relationship between the huerta and the city.  |
 |  Renaturalisation, biodiversity and resilience
-Urbanism & Habitat | RBR-12 El Braç de Poble Nou | A green infrastructure is planned for Pobles del Nord that aims to solve the flooding problems in Poble Nou and the Carpesa road.  |
+| Urbanism & Habitat | RBR-12 El Braç de Poble Nou | A green infrastructure is planned for Pobles del Nord that aims to solve the flooding problems in Poble Nou and the Carpesa road.  |
 |  Renaturalisation, biodiversity and resilience
 Urbanism & Habitat | RBR-13 Regeneration of La Albufera, its beaches and La Devesa | We aim to regenerate the coastline of the natural beaches in the south of the municipality of València, which are currently in a state of serious regression, mainly due to the lack of sedimentary contributions from the River Turia and the barrier effect of the port of València.  |
 
@@ -2811,14 +2809,14 @@ Climate Action Plan (CAP)
 citiES 2030
 
 |  Renaturalisation, biodiversity and resilience
-Urbanism & Habitat | RBR-14 Accessibility of La Devesa natural area | We intend to implement actions aimed at protecting the coastal dune system in order to regulate the intense public use, together with the construction of elements that allow greater enjoyment of its natural values (e.g. observatories). We also aim to improve the accessibility of the itineraries in the natural area of La Devesa.  |
+| Urbanism & Habitat | RBR-14 Accessibility of La Devesa natural area | We intend to implement actions aimed at protecting the coastal dune system in order to regulate the intense public use, together with the construction of elements that allow greater enjoyment of its natural values (e.g. observatories). We also aim to improve the accessibility of the itineraries in the natural area of La Devesa.  |
 | --- | --- | --- |
 |  Renaturalisation, biodiversity and resilience
-Urbanism & Habitat | RBR-15 Nou Llit del Túria | Project for the renaturalisation of the new bed of the river Túria, with the aim of creating a new green infrastructure that harmonises the drainage function of this area and enhances biodiversity and public use of the space.  |
+| Urbanism & Habitat | RBR-15 Nou Llit del Túria | Project for the renaturalisation of the new bed of the river Túria, with the aim of creating a new green infrastructure that harmonises the drainage function of this area and enhances biodiversity and public use of the space.  |
 |  Renaturalisation, biodiversity and resilience
-Urbanism & Habitat | RBR-16 Túria Natural Park | We intend to build a metropolitan riverside forest from the Parque Fluvial del Túria to the Parque de Cabecera.  |
+| Urbanism & Habitat | RBR-16 Túria Natural Park | We intend to build a metropolitan riverside forest from the Parque Fluvial del Túria to the Parque de Cabecera.  |
 |  Renaturalisation, biodiversity and resilience
-Urbanism & Habitat | RBR-17 Continuity with beaches of Alboraya and Carraixet | We aim to achieve territorial and landscape continuity between the beaches in the north of the city and the coastline of Alboraya in order to connect with the Barranc del Carraixet.  |
+| Urbanism & Habitat | RBR-17 Continuity with beaches of Alboraya and Carraixet | We aim to achieve territorial and landscape continuity between the beaches in the north of the city and the coastline of Alboraya in order to connect with the Barranc del Carraixet.  |
 |  València 2030 Urban Strategy Programme: Sustainable and proximity food  |   |   |
 |  Economy & Industry | E-1 Sustainable and quality food | We aim to strengthen and re-territorialise the municipal agri-food system, focusing on the values and potential of a city-region agrosystem and providing an open-air public space that can be used as a reference or meeting point for local, sustainable, healthy products that are culturally rooted in the territory and the city's population. At the same time, we aim to transform the city's agri-food culture in favour of more sustainable productive, social and environmental models, making progress in the development of fairer value chains that can improve the profitability of farms.
 
@@ -2899,19 +2897,19 @@ citiES 2030
 | --- | --- | --- |
 | Description of the action | This action focuses on the extension of the cycling network in València with actions, among others, in: Cardenal Benlloch-Eduardo Boscá, General Avilés. Section Maestro Rodrig Pío XII. Cortes Valèncianas, Av. Del Cid. Tres Cruces-Fin Término section, Av. Peset Aleixandre, General Avilés. Section Pío XII- N.Benlloch, Gascó Oliag-Bombero Daniel Balaciart, José María Haro - José Aguilar, etc. The development of the entire network will be carried out prioritising the safety of pedestrians and users of the cycling infrastructure. |
 | Reference to the impact pathway | Subsector | • Reduction in the need for motorised transport
-• Modal shift: shift to public and non-motorised transport |
+| • Modal shift: shift to public and non-motorised transport |
 |  | Systemic lever | • Technology & Infrastructure
-• Learning and Capacities |
+| • Learning and Capacities |
 | Short and medium-term changes | • Increased modal split of bicycles and VMP.
-• Creation of segregated and safe cycling infrastructure in neighbourhoods that lack it and which connects public spaces in the city. |
+| • Creation of segregated and safe cycling infrastructure in neighbourhoods that lack it and which connects public spaces in the city. |
 | Implementation | Agencies/persons responsible for implementation | València City Council
-• Area of Sustainable Mobility and Public Space. |
+| • Area of Sustainable Mobility and Public Space. |
 |  | Scale of action and target entities | • City scale
-• General public |
+| • General public |
 | Actors involved | • València City Council
-• Mobility Bureau |
+| • Mobility Bureau |
 | Comments on implementation | • 2015-2030
-• Development within the framework of the membership of the Cities for Bicycles Network |
+| • Development within the framework of the membership of the Cities for Bicycles Network |
 | Impacts and costs | Renewable energy generated (if applicable) | Not applicable |
 
 7
@@ -2927,7 +2925,7 @@ citiES
 |  Energy removed/replaced, volume or fuel type | N.a.  |
 | --- | --- |
 |  Estimated GHG emission reductions (total) | • This action contributes to the overall reduction of emissions associated with the sub-sector Reduction in the need for motorised transport amounting to 103kton.
-• This action contributes to the overall reduction of emissions associated with the modal shift subsector: shift to public and non-motorised transport amounting to 45kton.  |
+| • This action contributes to the overall reduction of emissions associated with the modal shift subsector: shift to public and non-motorised transport amounting to 45kton.  |
 |  Total costs and costs per unit CO2e | • Total cost: 28.000.000€.  |
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
@@ -2935,7 +2933,7 @@ citiES
 |   |  Type of action | AU València Bicycle Capital Programme  |
 |   |  Description of the action | This action focuses on the design and construction of a network of high-capacity cycle lanes connecting the municipalities of the metropolitan area with each other and with the city of València with the main objective of continuing to promote the use of the bicycle as a means of daily transport, also for medium and long distances. These bi-directional cycle lanes will be completely separated from motorised traffic, wider than a conventional cycle lane and properly lit, signposted and integrated.  |
 |  Reference to the impact pathway | Subsector | • Reduction in the need for motorised transport
-• Modal shift: shift to public and non-motorised transport  |
+| • Modal shift: shift to public and non-motorised transport  |
 |   |  Systemic lever | • Technology and Infrastructure
 • Governance and Politics
 • Learning and Capacities  |
@@ -2957,15 +2955,15 @@ citiES
 • Area of Sustainable Mobility and Public Space.
 Generalitat Valènciana  |
 |   |  Scale of action and target entities | • Metropolitan scale
-• General public  |
+| • General public  |
 |   |  Actors involved | • València City Council
-• Generalitat Valènciana  |
+| • Generalitat Valènciana  |
 |   |  Comments on implementation | • 2023-2030
-• This action depends, to a large extent, on the Generalitat Valènciana.  |
+| • This action depends, to a large extent, on the Generalitat Valènciana.  |
 |  Impacts and costs | Renewable energy generated (if applicable) | Does not precede  |
 |   |  Energy removed/replaced, fuel volume or fuel type | N.a.  |
 |   |  Estimated GHG emission reductions (total) | • This action contributes to the overall reduction of emissions associated with the sub-sector Reduction in the need for motorised transport amounting to 103kton.
-• This action contributes to the overall reduction of emissions associated with the modal shift subsector: shift to public and non-motorised transport amounting to 45kton.  |
+| • This action contributes to the overall reduction of emissions associated with the modal shift subsector: shift to public and non-motorised transport amounting to 45kton.  |
 |   |  Total costs and costs per unit of CO2e | • Total cost: 20.000.000€.  |
 
 9
@@ -2980,14 +2978,14 @@ citiES 2030
 |   |  Type of action | AU València Bicycle Capital Programme  |
 |   |  Description of the action | This action envisages, firstly, the deployment of a network of smart and secure bicycle and scooter parking facilities within the municipality. And, secondly, the implementation of secure bicycle parking facilities at the main transport interchanges / public transport stops with the aim of promoting intermodality in urban and metropolitan journeys, establishing parking facilities and minimising the likelihood of theft.  |
 |  Reference to the impact pathway | Subsector | • Reduction in the need for motorised transport
-• Modal shift: shift to public and non-motorised transport  |
+| • Modal shift: shift to public and non-motorised transport  |
 |   |  Systemic lever | • Technology and Infrastructure
-• Learning and Capacities  |
+| • Learning and Capacities  |
 |   |  Short and medium-term changes | • Creation of metropolitan transport axes for non-motorised vehicles.
 • Increased modal split of bicycles and VMP.
 • Creation of segregated and safe cycling infrastructure in neighbourhoods where it is lacking and connects public spaces in the city.  |
 |  Implementation | Agencies/persons responsible for implementation | València City Council
-• Area of Sustainable Mobility and Public Space.  |
+| • Area of Sustainable Mobility and Public Space.  |
 |   |  Scale of action and target entities | • City scale
 • General public  |
 
@@ -3002,13 +3000,13 @@ citiES
 0
 
 |   | Actors involved | • València City Council
-• Mobility Bureau  |
+| • Mobility Bureau  |
 | --- | --- | --- |
 |   |  Comments on implementation | • 2023-2030  |
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
 |   |  Energy removed/replaced, fuel volume or fuel type | N.a.  |
 |   |  Estimated GHG emission reductions (total) | • This action contributes to the overall reduction of emissions associated with the sub-sector Reduction in the need for motorised transport amounting to 103kton.
-• This action contributes to the overall emission reductions associated with the modal shift subsector: shift to public and non-motorised transport amounting to 45kton.  |
+| • This action contributes to the overall emission reductions associated with the modal shift subsector: shift to public and non-motorised transport amounting to 45kton.  |
 |   |  Total costs and costs per unit CO2e | • Total cost: 5.500.000€.  |
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
@@ -3025,18 +3023,18 @@ citiES 2030
 |   |  | that enables other sustainable forms of mobility such as walking or cycling.  |
 | --- | --- | --- |
 |  Reference to the impact pathway | Subsector | • Reduction in the need for motorised transport
-• Modal shift: shift to public and non-motorised transport  |
+| • Modal shift: shift to public and non-motorised transport  |
 |   |  Systemic lever | • Technology and Infrastructure
-• Learning and Capacities  |
+| • Learning and Capacities  |
 |   |  Short and medium-term changes | • Creation of metropolitan transport axes for non-motorised vehicles.
 • Increased modal split of bicycles and VMP.
 • Creation of segregated and safe cycling infrastructure at metropolitan level.  |
 |  Implementation | Agencies/persons responsible for implementation | València City Council
-• Area of Sustainable Mobility and Public Space.  |
+| • Area of Sustainable Mobility and Public Space.  |
 |   |  Scale of action and target entities | • Metropolitan scale
-• Citizenship of the villages of the North, specifically: Poble Nou, Carpesa, Benifaraig and Borbotó.  |
+| • Citizenship of the villages of the North, specifically: Poble Nou, Carpesa, Benifaraig and Borbotó.  |
 |   |  Actors involved | • València City Council
-• Mobility Bureau  |
+| • Mobility Bureau  |
 |   |  Comments on implementation | N.a.  |
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
 |   |  Energy removed/replaced, fuel volume or fuel type | N.a.  |
@@ -3062,9 +3060,9 @@ citiES
 |   |  Type of action | AU València Bicycle Capital Programme  |
 |   |  Description of the action | The Nou Camí a la Mar is a new sustainable mobility infrastructure that reconnects all the villages along the riverfront to the sea. The route of the path will run through heritage elements and cultural itineraries already recognised by the PATODH Catalogue of Protections, through the old centres of the villages and along the irrigation channels that have historically organised the territory. In addition, secondary itineraries will be created from this route to reconnect neighbourhoods such as San Jorge in La Torre or Pueblecitos in Castellar.  |
 |  Reference to the impact pathway | Subsector | • Reduction in the need for motorised transport
-• Modal shift: shift to public and non-motorised transport  |
+| • Modal shift: shift to public and non-motorised transport  |
 |   |  Systemic lever | • Technology and Infrastructure
-• Learning and Capacities  |
+| • Learning and Capacities  |
 |   |  Short and medium-term changes | • Creation of metropolitan transport axes for non-motorised vehicles.
 • Increased modal split of bicycles and VMP.  |
 
@@ -3077,16 +3075,16 @@ citiES 2030
 |   |  | • Creation of segregated and safe cycling infrastructure at metropolitan level.  |
 | --- | --- | --- |
 |  Implementation | Agencies/persons responsible for implementation | València City Council
-• Area of Sustainable Mobility and Public Space.  |
+| • Area of Sustainable Mobility and Public Space.  |
 |   |  Scale of action and target entities | • Metropolitan scale
-• Citizenship of the villages of La Torre, Forn de Alcedo, Castellar-l'Oliveral and Pinedo  |
+| • Citizenship of the villages of La Torre, Forn de Alcedo, Castellar-l'Oliveral and Pinedo  |
 |   |  Actors involved | • València City Council
-• Mobility Bureau  |
+| • Mobility Bureau  |
 |   |  Comments on implementation | N.a.  |
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
 |   |  Energy removed/replaced, fuel volume or fuel type | N.a.  |
 |   |  Estimated GHG emission reductions (total) | • This action contributes to the overall reduction of emissions associated with the sub-sector Reduction in the need for motorised transport amounting to 103kton.
-• This action contributes to the overall reduction of emissions associated with the modal shift subsector: shift to public and non-motorised transport amounting to 45kton.  |
+| • This action contributes to the overall reduction of emissions associated with the modal shift subsector: shift to public and non-motorised transport amounting to 45kton.  |
 |   |  Total costs and costs per unit of CO2e | • Total cost: N.a.  |
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
@@ -3102,7 +3100,7 @@ citiES 2030
 | --- | --- | --- |
 | Description of the action | The implementation of a Low Emission Zone in the city of València is a legal requirement and is integrated into the city's intelligent and digitalised traffic management system. It aims to manage mobility as a whole according to environmental parameters. The area of influence and its regulation will be set out in a municipal ordinance. The Line of Action includes the installation of all street equipment for access monitoring, environmental measurement and information panels, as well as the equipment and computer systems to host and process the computer applications. It also includes a communication and awareness-raising campaign aimed at the public to publicise the project for the implementation of the ZBE and raise awareness of its necessity and convenience. |
 | Reference to the impact pathway | Subsector | - Reduction in the need for motorised transport
-Modal shift: shift to public and non-motorised transport |
+| Modal shift: shift to public and non-motorised transport |
 |  | Systemic lever | - Technology and Infrastructure
 Governance and Politics
 Learning and Capacities |
@@ -3121,16 +3119,16 @@ Climate Action Plan (CAP)
 citiES 2030
 
 |   | Scale of action and target entities | • City scale - The specific area is still to be defined.
-• General citizenship  |
+| • General citizenship  |
 | --- | --- | --- |
 |   |  Actors involved | • València City Council
-• Mobility Bureau  |
+| • Mobility Bureau  |
 |   |  Comments on implementation | • 2022-2024
-• Action developed under Law 7/2021 of 20 May on climate change and energy transition.  |
+| • Action developed under Law 7/2021 of 20 May on climate change and energy transition.  |
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
 |   |  Energy removed/replaced, volume or fuel type | N.a.  |
 |   |  Estimated GHG emission reductions (total) | • This action contributes to the overall reduction of emissions associated with the sub-sector Reduction in the need for motorised transport amounting to 103kon.
-• This action contributes to the overall emission reductions associated with the modal shift subsector: shift to public and non-motorised transport amounting to 45kton.  |
+| • This action contributes to the overall emission reductions associated with the modal shift subsector: shift to public and non-motorised transport amounting to 45kton.  |
 |   |  Total costs and costs per unit of CO2e | • Total cost: 11.500.000€.  |
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
@@ -3150,19 +3148,19 @@ citiES
 0
 
 |   |  | efficient energy management, as well as intelligent technological assistants, efficient driving assistance systems (BusCAN - GPS GNSS - 4/5G and on-board dashboards), vehicle design, workshops and infrastructure, IT communication standards between systems, interface between the bus, buses and CRTs (collaborative systems), together with urban infrastructure, intelligent garage and predictive maintenance.
-Demonstration project: On-board environmental sensors in EMT. Installation of 40 on-board devices on buses of different EMT lines in València to measure air quality, temperature and humidity in the city.  |
+| Demonstration project: On-board environmental sensors in EMT. Installation of 40 on-board devices on buses of different EMT lines in València to measure air quality, temperature and humidity in the city.  |
 | --- | --- | --- |
 |  Reference to the impact pathway | Subsector | • Reduction in the need for motorised transport
-• Modal shift: shift to public and non-motorised transport  |
+| • Modal shift: shift to public and non-motorised transport  |
 |   |  Systemic lever | • Technology and Infrastructure
-• Learning and Capacities  |
+| • Learning and Capacities  |
 |   |  Short and medium-term changes | • Sensorised and digitised buses for sustainable smart fleet management EMT
-• Installation of 40 on-board devices on buses of different EMT lines in València.  |
+| • Installation of 40 on-board devices on buses of different EMT lines in València.  |
 |  Implementation | Agencies/persons responsible for implementation | València City Council
 • Area of Sustainable Mobility and Public Space.
 • EMT - València Municipal Transport Company  |
 |   |  Scale of action and target entities | • City scale
-• General citizenship  |
+| • General citizenship  |
 |   |  Actors involved | • València City Council
 • Mobility Bureau
 • EMT - València Municipal Transport Company
@@ -3180,7 +3178,7 @@ Climate Action Plan (CAP)
 | --- | --- | --- |
 |   |  Energy removed/replaced, volume or fuel type | N.a.  |
 |   |  Estimated GHG emission reductions (total) | • This action contributes to the overall reduction of emissions associated with the sub-sector Reduction in the need for motorised transport amounting to 103kton.
-• This action contributes to the overall reduction of emissions associated with the modal shift subsector: shift to public and non-motorised transport amounting to 45kton.  |
+| • This action contributes to the overall reduction of emissions associated with the modal shift subsector: shift to public and non-motorised transport amounting to 45kton.  |
 |   |  Total costs and costs per unit CO2e | • Total cost: 6.000.000€.  |
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
@@ -3209,7 +3207,7 @@ citiES
 • Area of Sustainable Mobility and Public Space.
 Companies linked to the Mobility as a service sector  |
 |   |  Scale of action and target entities | • City scale
-• General citizenship  |
+| • General citizenship  |
 |   |  Actors involved | • València City Council
 • Mobility Bureau
 • Companies linked to the Mobility as a service (MaaS) sector  |
@@ -3232,15 +3230,15 @@ citiES 2030
 |   |  Description of the action | Electrification actions are envisaged, among others, in the fleet of the Local Police, the fire brigade or certain vehicles at the disposal of the political team. The progressive incorporation of electric vehicles with a ‘zero emissions’ label is planned to replace diesel and petrol vehicles. Likewise, the recharging points to be installed will allow the power to be regulated, so that it can be configured so as not to exceed a certain level or depending on the time.  |
 |  Reference to the impact pathway | Subsector | • Car electrification  |
 |   |  Systemic lever | • Technology and Infrastructure
-• Learning and Capacities  |
+| • Learning and Capacities  |
 |   |  Short and medium-term changes | • Renewed, electrified and sustainable fleet of the Municipal Transport Company and the City Council’s vehicle fleet with supporting infrastructure in place.
-• 150 electric charging stations for the bus fleet.  |
+| • 150 electric charging stations for the bus fleet.  |
 |  Implementation | Bodies/persons responsible for implementation | València City Council
 • Resource Management Area (Central Technical Services)
 • Local Police
 • Fire Brigade  |
 |   |  Scale of action and target entities | • City scale
-• Public employees  |
+| • Public employees  |
 |   |  Actors involved | • València City Council
 • Public employees
 • Installation companies  |
@@ -3278,12 +3276,12 @@ citiES
 0
 
 |   | Short and medium-term changes | • EV chargers installed in the public domain by optimising existing electrical infrastructures.
-• Encouraging the use of non-polluting vehicles by facilitating their recharging and generating access privileges to certain areas of the city.  |
+| • Encouraging the use of non-polluting vehicles by facilitating their recharging and generating access privileges to certain areas of the city.  |
 | --- | --- | --- |
 |  Implementation | Agencies/persons responsible for implementation | València City Council
-• Area of Sustainable Mobility and Public Space.  |
+| • Area of Sustainable Mobility and Public Space.  |
 |   |  Scale of action and target entities | • City scale
-• General citizenship  |
+| • General citizenship  |
 |   |  Actors involved | • València City Council
 • Mobility Bureau
 • Companies in the electric mobility sector  |
@@ -3308,9 +3306,9 @@ citiES
 |   |  Description of the action | The action includes actions for the renewal and adaptation of the urban public transport fleet in the city of València towards less polluting and more energy efficient vehicles, as well as the construction of the necessary infrastructure (garage, photovoltaic plant, substation) to start the electrification of the EMT València fleet. We also intend to move forward with the purchase and installation of 150 electric charging stations distributed between the headquarters and the different PLV units distributed throughout the city.  |
 |  Reference to the impact pathway | Subsector | • Bus electrification  |
 |   |  Systemic lever | • Technology and Infrastructure
-• Learning and Capacities  |
+| • Learning and Capacities  |
 |   |  Short and medium-term changes | • Renewed, electrified and sustainable fleet of the Municipal Transport Company and the City Council's vehicle fleet with supporting infrastructure in place.
-• 150 electric charging stations for the bus fleet.  |
+| • 150 electric charging stations for the bus fleet.  |
 |  Implementation | Agencies/persons responsible for implementation | València City Council
 • Area of Sustainable Mobility and Public Space.
 • EMT - Municipal Transport Company of València  |
@@ -3355,7 +3353,7 @@ citiES
 • Learning and Capacities  |
 |   |  Short and medium-term changes | • Efficient and sustainable urban logistics that allows the mobility of people and goods to coexist.  |
 |  Implementations | Agencies/persons responsible for implementation | València City Council
-• Area of Sustainable Mobility and Public Space.  |
+| • Area of Sustainable Mobility and Public Space.  |
 |   |  Scale of action and target entities | • City scale
 • General citizenship
 • Companies in the field of urban logistics  |
@@ -3385,7 +3383,7 @@ citiES
 • Modal shift: shift to public and non-motorised transport
 • Impact also in the Impact Domain on Renaturalisation, Biodiversity and Resilience Emissions of the València 2030 Climate Mission.  |
 |   |  Systemic lever | • Technology and Infrastructure
-• Learning and Capacities  |
+| • Learning and Capacities  |
 |   |  Short and medium-term changes | • Creation of metropolitan transport axes for non-motorised vehicles.
 • Creation of segregated and safe cycling infrastructure at metropolitan level.  |
 
@@ -3401,16 +3399,16 @@ citiES 2030
 • Area of Sustainable Mobility and Public Space.
 Generalitat Valènciana  |
 |   |  Scale of action and target entities | • Metropolitan scale
-• General citizenship, with special focus on those located in the following 15 municipalities: Meliana, Alboraia, Moncada, Picanya, Alaquàs, Aldaia, Quart de Poblet, Paterna, Godella, Rocafort, Massarrojos, Pinedo and Sedavi.  |
+| • General citizenship, with special focus on those located in the following 15 municipalities: Meliana, Alboraia, Moncada, Picanya, Alaquàs, Aldaia, Quart de Poblet, Paterna, Godella, Rocafort, Massarrojos, Pinedo and Sedavi.  |
 |   |  Actors involved | • València City Council
 • Mobility Bureau
 • Generalitat Valènciana  |
 |   |  Comments on implementation | • 2023-2024
-• The action depends, to a large extent, on the Generalitat Valènciana and its Sustainable Metropolitan Mobility Plan for the València Area (PMoMe).  |
+| • The action depends, to a large extent, on the Generalitat Valènciana and its Sustainable Metropolitan Mobility Plan for the València Area (PMoMe).  |
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
 |   |  Energy removed/replaced, fuel volume or fuel type | N.a.  |
 |   |  Estimated GHG emission reductions (total) | • This action contributes to the overall reduction of emissions associated with the sub-sector Reduction in the need for motorised transport amounting to 103kton.
-• This action contributes to the overall reduction of emissions associated with the modal shift subsector: shift to public and non-motorised transport amounting to 45kton.  |
+| • This action contributes to the overall reduction of emissions associated with the modal shift subsector: shift to public and non-motorised transport amounting to 45kton.  |
 |   |  Total costs and costs per unit of CO2e | • Total cost: 50.000.000€.  |
 
 7
@@ -3445,7 +3443,7 @@ citiES 2030
 • Decarbonise metropolitan mobility: expand electric vehicle charging points on a metropolitan scale; promote the installation of charging points in metropolitan homes; electrify and improve the efficiency of the metropolitan public sector vehicle fleet; promote electric vehicles in the mobility of fleets and individuals; promote regulatory change in taxation for environmentally labelled vehicles; and promote measures to optimise logistics activity.  |
 | --- | --- | --- |
 |  Reference to the impact pathway | Subsector | • Reduction in the need for motorised transport
-• Modal shift: shift to public and non-motorised transport  |
+| • Modal shift: shift to public and non-motorised transport  |
 |   | Systemic lever | • Technology and Infrastructure
 • Financing and Investment
 • Governance and Politics
@@ -3472,14 +3470,14 @@ Generalitat Valènciana
 València Metropolitan Transport Authority
 Spanish Government  |
 |   |  Scale of action and target entities | • Metropolitan scale
-• General citizenship  |
+| • General citizenship  |
 |   |  Actors involved | • València City Council
 • Mobility Bureau
 • Generalitat Valènciana
 • València Metropolitan Transport Authority
 • Spanish Government  |
 |   |  Comments on implementation | • Vision 2035
-• Action depends to a large extent on the Generalitat Valènciana.  |
+| • Action depends to a large extent on the Generalitat Valènciana.  |
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
 |   |  Energy removed/replaced, fuel volume or fuel type | N.a.  |
 |   |  Estimated GHG emission reductions (total) | • This action contributes to the overall reduction of emissions associated with the sub-sector Reduction in the need for motorised transport amounting to 103kton.
@@ -3522,7 +3520,7 @@ València Port
 Polytechnic University of València |
 | --- | --- | --- |
 | Implementations | Scale of action and target entities | • Metropolitan scale
-• General citizenship |
+| • General citizenship |
 | Actors involved | • València City Council
 • Mobility Bureau
 • Generalitat Valènciana
@@ -3530,7 +3528,7 @@ Polytechnic University of València |
 • Polytechnic University of València
 • Companies in the field of mobility (specifically green hydrogen) |
 | Comments on implementation | • 2022-2030
-• Consortium action. |
+| • Consortium action. |
 | Impacts and costs | Renewable energy generated (if applicable) | N.a. |
 | Marketing | Energy removed/replaced, fuel volume or fuel type | N.a. |
 | Estimated GHG emission reductions (total) | • This action contributes to the overall reduction of emissions associated with the modal shift sub-sector: shift to public and non-motorised transport amounting to 103kton.
@@ -3592,7 +3590,7 @@ o Underground roads from Ibiza Street to connect with the seafront of València 
 Generalitat Valènciana
 Spanish Government  |
 |   |  Scale of action and target entities | • Country, regional, metropolitan and city scale
-• General citizenship  |
+| • General citizenship  |
 |   |  Actors involved | • València City Council
 • Mobility Bureau
 • Generalitat Valènciana
@@ -3669,12 +3667,12 @@ citiES
 • Urban Development, Urban Renewal and Housing Area
 • Area of Sustainable Mobility and Public Space  |
 |   |  Scale of action and target entities | • City scale (and focus on neighbourhoods)
-• General public  |
+| • General public  |
 |   |  Actors involved | • València City Council
 • Neighbourhood associations
 • General public  |
 |   |  Comments on implementation | • 2021-2025
-• Development under the Special Plan of Urban Quality Guidelines and the Design Guide for the sustainable transformation of València's public space.  |
+| • Development under the Special Plan of Urban Quality Guidelines and the Design Guide for the sustainable transformation of València's public space.  |
 |  Impacts and costs | Renewable energy generated (if applicable) | N.a.  |
 |   |  Energy removed/replaced, fuel volume or fuel type | N.a.  |
 |   |  Estimated GHG emission reductions (total) | • This action contributes to the overall reduction of emissions associated with the sub-sector Reduction in the need for motorised transport amounting to 103kton.  |
@@ -3719,7 +3717,7 @@ citiES 2030
 • Urban Development, Urban Renewal and Housing Area
 • AUMSA  |
 |   |  Scale of action and target entities | • City scale, with a focus on Nazaret and Cabanyal-Canyamelar
-• General public  |
+| • General public  |
 |   |  Actors involved | • València City Council
 • Neighbourhood associations
 • General public  |
@@ -3752,12 +3750,12 @@ citiES 2030
 • Governance and Politics
 • Learning and Capacities  |
 |   |  Short and medium-term changes | • A compact city model in which all services are provided to citizens without the need to spend more than 15 minutes travelling.
-• Improving the quality of the consolidated city, guaranteeing the balance of the city as a whole.  |
+| • Improving the quality of the consolidated city, guaranteeing the balance of the city as a whole.  |
 |   |  Agencies/persons responsible for implementation | València City Council
 • Urban Development, Urban Renewal and Housing Area
 • AUMSA  |
 |  Impacts and costs | Scale of action and target entities | • City scale
-• General public  |
+| • General public  |
 |   |  Actors involved | • València City Council
 • Neighbourhood associations
 • General public  |
@@ -3804,7 +3802,7 @@ citiES 2030
 • Urban Development, Urban Renewal and Housing Area
 • AUMSA  |
 |  Comments on implementation | Scale of action and target entities | City scale, with a focus on the Central Park, Benimaclet and El Grao areas.
-General public  |
+| General public  |
 |   |  Actors involved | València City Council
 Neighbourhood associations
 General public  |
@@ -3835,7 +3833,7 @@ Climate Action Plan (CAP)
 citiES 2030
 
 |  Reference to the impact pathway | Subsector | • Modal shift: shift to public and non-motorised transport
-• Impact also in the Emission Impact Domain Urbanism & Habitat of the Climate Mission València 2030  |
+| • Impact also in the Emission Impact Domain Urbanism & Habitat of the Climate Mission València 2030  |
 | --- | --- | --- |
 |  Implementation | Systemic lever | • Technology and Infrastructure
 • Social Innovation
@@ -3847,7 +3845,7 @@ citiES 2030
 • Area of Sustainable Mobility and Public Space.
 • Urban Development, Urban Renewal and Housing Area  |
 |  Implementations | Scale of action and target entities | • City scale
-• General public and, with special focus, citizens with reduced mobility  |
+| • General public and, with special focus, citizens with reduced mobility  |
 |   |  Actors involved | • València City Council
 • Mobility Bureau
 • Associations of groups with reduced mobility  |
@@ -3900,13 +3898,13 @@ citiES 2030
 • Urban Development, Urban Renewal and Housing Area
 • AUMSA  |
 |   |  Scale of action and target entities | • City scale
-• General public  |
+| • General public  |
 |   |  Actors involved | • València City Council
 • Neighbourhood associations
 • Construction companies
 • IDAE  |
 |   |  Comments on implementation | • 2020-2030
-• Guided by the European Renovation Wave  |
+| • Guided by the European Renovation Wave  |
 |  Impacts and costs | Renewable energy generated (if applicable) | N.a.  |
 |   |  Energy removed/replaced, volume or fuel type | N.a.  |
 |   |  Estimated GHG emission reductions (total) | • This action contributes to the overall emission reductions associated with the  |
@@ -3951,7 +3949,7 @@ Urban Development, Urban Renewal and Housing Area
 Area of Social Welfare and Social Rights
 AUMSA  |
 |   |  Scale of action and target entities | - City scale
-Citizens in general, with a special focus on young people and the elderly.  |
+| Citizens in general, with a special focus on young people and the elderly.  |
 |   |  Actors involved | - València City Council
 Youth associations
 Older people’s associations  |
@@ -3974,15 +3972,15 @@ citiES
 |  Action plan | Name of the action | EC-3 Energy efficiency of public buildings  |
 |   |  Type of action | AU Municipal Energy Efficiency Programme  |
 |   |  Description of the action | We intend to act in favour of public building refurbishment processes from the point of view of energy efficiency. Among others, we intend to develop energy rehabilitation processes in Tabacalera, municipal nurseries and schools, Municipal Historical Museum, City Museum, Palau de la Música, Punt de Ganxo, Palau de Congresos or municipal markets, prioritising the installation of efficient air conditioning elements that adapt these buildings to human wellbeing given the consequences of climate change and episodes of extreme weather.
-Demonstration project: Comprehensive refurbishment of the València Newspaper Library in Tres Forques with energy efficiency criteria and Next Generation financing.  |
+| Demonstration project: Comprehensive refurbishment of the València Newspaper Library in Tres Forques with energy efficiency criteria and Next Generation financing.  |
 |  Reference to the impact pathway | Subsector | • Building renovations
 • Efficient lighting and appliances
 • Low-emission heat generation (decarbonisation of heating)  |
 |   |  Systemic lever | • Technology and Infrastructure
-• Learning and Capacities  |
+| • Learning and Capacities  |
 |   |  Short and medium-term changes | • 27% increase in energy efficiency in public buildings by 2030.  |
 |  Implementation | Agencies/persons responsible for implementation | València City Council
-• Resource Management Area (Central Technical Services)  |
+| • Resource Management Area (Central Technical Services)  |
 |   |  Scale of action and target entities | • City scale
 • Public employees
 • General public  |
@@ -4029,7 +4027,7 @@ citiES 2030
 • Learning and Capacities  |
 |   |  Short and medium-term changes | • The city's oldest and most emblematic neighbourhood sports centres have been fully refurbished.  |
 |  Implementation | Agencies/persons responsible for implementation | Valência City Council
-• Resource Management Area (Central Technical Services)  |
+| • Resource Management Area (Central Technical Services)  |
 |   |  Scale of action and target entities | • Escala ciudad - All municipal sports facilities
 • Public employees
 • General public  |
@@ -4070,15 +4068,15 @@ citiES 2030
 | --- | --- | --- |
 |  Reference to the impact pathway | Subsector | • Low-emission electricity generation  |
 |   |  Systemic lever | • Technology and Infrastructure
-• Learning & Capacities  |
+| • Learning & Capacities  |
 |   |  Short and medium-term changes | • Transformation of the city's lighting 100% completed with LED lighting appliances to more energy efficient technology.
-• Transformation of the remaining 25,000 lighting appliances.  |
+| • Transformation of the remaining 25,000 lighting appliances.  |
 |  Implementation | Agencies/persons responsible for implementation | València City Council
-• Resource Management Area (Central Technical Services)  |
+| • Resource Management Area (Central Technical Services)  |
 |   |  Scale of action and target entities | • City scale
-• General public  |
+| • General public  |
 |   |  Actors involved | • València City Council
-• Installation companies  |
+| • Installation companies  |
 |   |  Comments on implementation | • 2023  |
 |  Impacts and costs | Renewable energy generated (if applicable) | N.a.  |
 |   |  Energy removed/replaced, volume or fuel type | At the end of this process, an installation that in 2015 had an installed capacity of around 25,000 kW will have been transformed into an installation of between 7,000 and 8,000 kW, with the consequence of reducing energy costs by 58% in the scope of this project and 65% in the city as a whole.  |
@@ -4112,7 +4110,7 @@ Climate Action Plan (CAP)
 citiES 2030
 
 |  Implementation | Agencies/persons responsible for implementation | València City Council
-• Resource Management Area (Central Technical Services)  |
+| • Resource Management Area (Central Technical Services)  |
 | --- | --- | --- |
 |   |  Scale of action and target entities | • City scale
 • Public employees
@@ -4158,9 +4156,9 @@ The Empresa Municipal de Energia Sostenible will be a joint venture, wholly owne
 • València Climate and Energy Foundation
 Private partner  |
 |   | Scale of action and target entities | • City scale
-• General public  |
+| • General public  |
 |   | Actors involved | • València City Council
-• Minority private partner  |
+| • Minority private partner  |
 |   | Comments on implementation | • Already on the move  |
 
 9
@@ -4214,7 +4212,7 @@ citiES 2030
 • Fundació València Climate and Energy Foundation |
 | --- | --- | --- |
 | Implementation | Scale of action and target entities | • City scale
-• Neighbours of the city |
+| • Neighbours of the city |
 | Actors involved | • València City Council
 • Neighbours of the city
 • Federation of Neighbourhood Associations
@@ -4266,12 +4264,12 @@ citiES 2030
 • Democracy and Participation
 • Learning and Capacities  |
 |   |  Short and medium-term changes | • Deployed a network of energy advice offices distributed in 100% of districts and villages acting as the backbone of the energy transition in the decade before 2030.
-• Savings on electricity bills for families in València.  |
+| • Savings on electricity bills for families in València.  |
 |  Implementation | Agencies/persons responsible for implementation | València City Council
 • Area of Urban Ecology, Climate Emergency and Energy Transition
 • Fundació València Climate and Energy Foundation  |
 |   |  Scale of action and target entities | • City scale
-• Neighbours of the city  |
+| • Neighbours of the city  |
 |   |  Actors involved | • València City Council
 • Neighbours of the city
 • Federation of Neighbourhood Associations
@@ -4319,12 +4317,12 @@ citiES
 • Democracy and Participation
 • Learning and Capacities  |
 |   | Short and medium-term changes | • 100% of the public schools adhering to the 50/50 programme to promote energy efficiency and savings by 2030.
-• Savings in the electricity bills of educational centres.  |
+| • Savings in the electricity bills of educational centres.  |
 |  Implementation | Agencies/persons responsible for implementation | València City Council
 • Area of Urban Ecology, Climate Emergency and Energy Transition
 • Area of Education, Culture and Sport Educational establishments  |
 |   | Scale of action and target entities | • City scale
-• Educational centres in the city  |
+| • Educational centres in the city  |
 |   | Actors involved | • València City Council
 • Educational centres in the city
 • AMPAs  |
@@ -4368,7 +4366,7 @@ citiES
 0
 
 |  Reference to the impact pathway |  | • Low-emission heat generation (decarbonisation of heating)
-• Low-emission electricity generation  |
+| • Low-emission electricity generation  |
 | --- | --- | --- |
 |  Systemic lever |  | • Social Innovation
 • Democracy and Participation
@@ -4378,7 +4376,7 @@ citiES
 • Area of Urban Ecology, Climate Emergency and Energy Transition
 • València Clima i Energia Foundation  |
 |  Scale of action and target entities |  | • City scale
-• Neighbours of the city  |
+| • Neighbours of the city  |
 |  Actors involved |  | • València City Council
 • Neighbours of the city
 • Federation of Neighbourhood Associations
@@ -4401,7 +4399,7 @@ citiES 2030
 | --- | --- | --- |
 |  | Type of action | AU Water, Sanitation and Waste Programme |
 | Description of the action | This action focuses on achieving better waste management in the city, among others, by strengthening the four systems currently in place for selective collection. The new contract for the sustainable management of urban waste and the cleaning of public spaces will introduce important environmental improvements. Among others: the introduction of machinery and vehicles with zero emissions and/or eco-labels; the use of non-polluting and/or renewable fuels; the use of non-potable water for street cleaning; and the renewal of more than 50% of the fleet of containers, which will be accessible and friendly to the image of the streets and neighbourhoods, as well as having locations that minimise nuisance to the neighbourhood, commerce and the hotel and catering trade. A local waste plan will be drawn up for València, which will include the different waste collection models in the districts of València, with a special study of the city's monumental and historical surroundings, as well as pedestrian mobility.
-Demonstration project: Modernisation of EMTRE's treatment plants for greater circularity in waste management, increasing waste recovery and reducing waste disposal. |
+| Demonstration project: Modernisation of EMTRE's treatment plants for greater circularity in waste management, increasing waste recovery and reducing waste disposal. |
 | Reference to the impact pathway | Subsector | • Waste recycling |
 |  | Systemic lever | • Technology and Infrastructure
 • Financing and Investment
@@ -4424,7 +4422,7 @@ citiES
 • Area of Urban Ecology, Climate Emergency and Energy Transition (Municipal Delegation of the Integral Water Cycle)
 • Empresa Mixta València de Aguas S.A. Company awarded the new waste management contract EMTRE  |
 |   |  Scale of action and target entities | • City scale
-• General citizenship  |
+| • General citizenship  |
 |   |  Actors involved | • València City Council
 • Spanish Government
 • Generalitat València
@@ -4450,7 +4448,7 @@ citiES
 | --- | --- | --- |
 |  | Type of action | AU Water, Sanitation and Waste Programme |
 | Description of the action | The reconfiguration of consumption flows is essential to close the circularity of the urban economy, and involves working on the initial design of products and services, promoting local production and distribution, facilitating repair and reuse, and maximising recycling and final recovery. All of this so that the products, materials and resources used in the city remain in use for as long as possible. The implementation of these new flows requires, in many cases, the development and implementation of innovative technologies, solutions and business models: new packaging materials, new models of ownership of goods and provision of services, new concepts of use and reuse of clothing, new materials, technologies and models of construction and housing, new systems for planning the purchase and consumption of food, etc.
-Demonstrator project: Proposed solutions to "Challenge 4: Valènçian Circular and Sustainable Economy", of the Preliminary Market Consultation for Innovative Public Procurement. |
+| Demonstrator project: Proposed solutions to "Challenge 4: Valènçian Circular and Sustainable Economy", of the Preliminary Market Consultation for Innovative Public Procurement. |
 | Reference to the impact pathway | Subsector | • Recycling and waste |
 |  | Systemic lever | • Technology and Infrastructure
 • Financing and Investment
@@ -4459,7 +4457,7 @@ Demonstrator project: Proposed solutions to "Challenge 4: Valènçian Circular a
 • Governance and Politics
 • Learning and Capacities |
 | Short and medium-term changes | • Circular economy visible in València by tripling the percentage of secondary materials and resources that re-enter the economy.
-• Environmental Education Plan for Waste and Cleanliness 2022-2023. |
+| • Environmental Education Plan for Waste and Cleanliness 2022-2023. |
 | Implementation | Agencies/persons responsible for implementation | València City Council
 • Area of Urban Ecology, Climate Emergency and Energy Transition |
 
@@ -4474,9 +4472,9 @@ EMTRE
 General public  |
 | --- | --- | --- |
 |   |  Scale of action and target entities | • City scale
-• General citizenship  |
+| • General citizenship  |
 |   |  Actors involved | • València City Council
-• All actors in the city as a whole  |
+| • All actors in the city as a whole  |
 |   |  Comments on implementation | • 2023-2030  |
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
 |   |  Energy removed/replaced, fuel volume or fuel type | N.a.  |
@@ -4503,7 +4501,7 @@ citiES
 • Democracy and Participation
 • Learning and Capacities  |
 |   |  Short and medium-term changes | • Circular economy visible in València by tripling the percentage of secondary materials and resources that re-enter the economy.
-• Environmental Education Plan for Waste and Cleanliness 2022-2023  |
+| • Environmental Education Plan for Waste and Cleanliness 2022-2023  |
 |  Implementation | Agencies/persons responsible for implementation | València City Council
 • Area of Urban Ecology, Climate Emergency and Energy Transition
 The city’s productive fabric
@@ -4511,9 +4509,9 @@ EMTRE
 NGOs (Caritas, La Casa Grande or El Rastrell)
 Civil society and citizens in general  |
 |   |  Scale of action and target entities | • City scale
-• General citizenship  |
+| • General citizenship  |
 |   |  Actors involved | • València City Council
-• All actors in the city as a whole  |
+| • All actors in the city as a whole  |
 |   |  Comments on implementation | N.a.  |
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
 |   |  Energy removed/replaced, fuel volume or fuel type | N.a.  |
@@ -4555,9 +4553,9 @@ citiES 2030
 • Area of Urban Ecology, Climate Emergency and Energy Transition
 • Urban Development, Urban Renewal and Housing Area  |
 |   |  Scale of action and target entities | • City scale
-• General citizenship  |
+| • General citizenship  |
 |   |  Actors involved | • València City Council
-• Federation of AVVs and neighbourhood organisations  |
+| • Federation of AVVs and neighbourhood organisations  |
 |   |  Comments on implementation | • 2019-2030  |
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
 |   |  Energy removed/replaced, volume or fuel type | Not applicable  |
@@ -4589,7 +4587,7 @@ citiES 2030
 |   |  | cultural facilities of almost 57,000 m2. The design considers natural solutions for the improvement of the environmental and acoustic quality in the surroundings of the road, integrating also the cultural heritage of the existing caves as another endowment for the town, as well as different spaces for play and sport.  |
 | --- | --- | --- |
 |  Reference to the impact pathway | Subsector | • Linked to the Impact on Renaturalisation, Biodiversity and Resilience Emissions Domain of the València 2030 Climate Mission.
-• Impact also in the Emission Impact Domain Urbanism & Habitat of the Climate Mission València 2030  |
+| • Impact also in the Emission Impact Domain Urbanism & Habitat of the Climate Mission València 2030  |
 |   |  Systemic lever | • Technology and Infrastructure
 • Financing and Investment
 • Social Innovation
@@ -4614,14 +4612,14 @@ citiES 2030
 |   |  | • Urban Development, Urban Renewal and Housing Area  |
 | --- | --- | --- |
 |   |  Scale of action and target entities | • City scale
-• General citizenship  |
+| • General citizenship  |
 |   |  Actors involved | • València City Council
-• Federation of AVVs and neighbourhood organisations  |
+| • Federation of AVVs and neighbourhood organisations  |
 |   |  Comments on implementation | • 2023-2030  |
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
 |   |  Energy removed/replaced, fuel volume or fuel type | Not applicable  |
 |   |  Estimated GHG emission reductions (total) | • This Emission Impact Domain is not covered by the economic model.
-An estimate of the compensation potential of the green infrastructure presented here will be studied in future iterations.  |
+| An estimate of the compensation potential of the green infrastructure presented here will be studied in future iterations.  |
 |   |  Total costs and costs per unit of CO2e | • Total cost: N.a.  |
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
@@ -4638,7 +4636,7 @@ citiES 2030
 |   |  | The neighbourhoods of Raiosa, Malilla, Creu Coberta, Sant Marcel-li, Camí Reial and Sant Isidre will be linked by this green infrastructure, which aims to encourage walking, reduce pollution and renaturalise the city. This will create a green buffer around the V30, reducing its visual and acoustic impact and creating a large green lung for the southern neighbourhoods. The integration of the railway infrastructure in San Isidre will also be addressed to minimise its impact.  |
 | --- | --- | --- |
 |  Reference to the impact pathway | Subsector | • Linked to the Impact on Renaturalisation, Biodiversity and Resilience Emissions Domain of the València 2030 Climate Mission.
-• Impact also in the Emission Impact Domain Urbanism & Habitat of the Climate Mission València 2030  |
+| • Impact also in the Emission Impact Domain Urbanism & Habitat of the Climate Mission València 2030  |
 |   | Systemic lever | • Technology and Infrastructure
 • Financing and Investment
 • Social Innovation
@@ -4665,14 +4663,14 @@ citiES
 • Urban Development, Urban Renewal and Housing Area  |
 | --- | --- | --- |
 |   |  Scale of action and target entities | • City scale
-• General citizenship, with special focus on those located in the neighbourhoods of Raiosa, Malilla, Creu Coberta, Sant Marcel-li, Camí Reial and Sant Isidre.  |
+| • General citizenship, with special focus on those located in the neighbourhoods of Raiosa, Malilla, Creu Coberta, Sant Marcel-li, Camí Reial and Sant Isidre.  |
 |   |  Actors involved | • València City Council
-• Federation of AVVs and neighbourhood organisations  |
+| • Federation of AVVs and neighbourhood organisations  |
 |   |  Comments on implementation | • Vision 2035  |
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
 |   |  Energy removed/replaced, volume or fuel type | Not applicable  |
 |   |  Estimated GHG emission reductions (total) | • This Emission Impact Domain is not covered by the economic model.
-An estimate of the compensation potential of the green infrastructure presented here will be studied in future iterations.  |
+| An estimate of the compensation potential of the green infrastructure presented here will be studied in future iterations.  |
 |   |  Total costs and costs per unit of CO2e | • Total cost: N.a.  |
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
@@ -4686,11 +4684,10 @@ Climate Action Plan (CAP)
 citiES 2030
 
 |   | Description of the action | This action will have a particular impact on the so-called urban allotments, which are of particular strategic interest due to their proximity and service to citizens. The selection of these spaces will be made taking into account the need for cohesion in the city and to compensate for existing imbalances, without prejudice to other existing facilities and in line with the interests and needs of the neighbourhood where they are located.
-
-Demonstration project: Sociópolis urban gardens. Under the management and supervision of the Consell Agrari Municipal, more than 95% of the available plots have been allocated to families and organisations, which shows the interest of the citizens in producing their own food and in regaining the contact and historical link that the residents of València have had with the market garden.  |
+| Demonstration project: Sociópolis urban gardens. Under the management and supervision of the Consell Agrari Municipal, more than 95% of the available plots have been allocated to families and organisations, which shows the interest of the citizens in producing their own food and in regaining the contact and historical link that the residents of València have had with the market garden.  |
 | --- | --- | --- |
 |  Reference to the impact pathway | Subsector | • Linked to the Impact on Renaturalisation, Biodiversity and Resilience Emissions Domain of the València 2030 Climate Mission.
-• Impact also in the Emissions Impact Domain Urbanism & Habitat of the Climate Mission València 2030  |
+| • Impact also in the Emissions Impact Domain Urbanism & Habitat of the Climate Mission València 2030  |
 |   | Systemic lever | • Technology and Infrastructure
 • Social Innovation
 • Learning and Capacities  |
@@ -4718,7 +4715,7 @@ citiES 2030
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
 |   |  Energy removed/replaced, volume or fuel type | Not applicable  |
 |   |  Estimated GHG emission reductions (total) | • This Emission Impact Domain is not covered by the economic model.
-An estimate of the compensation potential of the green infrastructure presented here will be studied in future iterations.  |
+| An estimate of the compensation potential of the green infrastructure presented here will be studied in future iterations.  |
 |   |  Total costs and costs per unit of CO2e | • Total cost: €750,000  |
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
@@ -4733,7 +4730,7 @@ citiES 2030
 |   |  | in optimum conditions, with inspections and pruning, with special interest in the conservation of monumental trees. Likewise, roads and streets without trees will be identified in order to increase them and thus contribute to the capture and retention of CO2 in the city.  |
 | --- | --- | --- |
 |  Reference to the impact pathway | Subsector | • Linked to the Impact on Renaturalisation, Biodiversity and Resilience Emissions Domain of the València 2030 Climate Mission.
-• Impact also in the Emission Impact Domain Urbanism & Habitat of the Climate Mission València 2030  |
+| • Impact also in the Emission Impact Domain Urbanism & Habitat of the Climate Mission València 2030  |
 |   |  Systemic lever | • Technology and Infrastructure
 • Social Innovation
 • Learning and Capacities  |
@@ -4746,9 +4743,9 @@ citiES 2030
 • Urban Ecology, Climate Emergency and Energy Transition Area
 • Urban Development, Urban Renewal and Housing Area  |
 |   |  Scale of action and target entities | • City scale
-• General citizenship  |
+| • General citizenship  |
 |   |  Actors involved | • València City Council
-• Federation of AVVs and neighbourhood organisations  |
+| • Federation of AVVs and neighbourhood organisations  |
 |   |  Comments on implementation | • 2019-2030  |
 
 4
@@ -4762,7 +4759,7 @@ citiES 2030
 |  Action plan | Name of the action | RBR-6 New nature-based solutions  |
 |   |  Type of action | AU Green Neighbourhoods Programme  |
 |   |  Description of the action | This action aims to design nature-inspired solutions capable of storing carbon, regulating water or controlling temperature, whether in public spaces, private spaces, buildings, peri-urban environments, corridors, natural areas and coastal boundaries. The aim is to develop Nature Based Solutions such as vertical ecosystems, sustainable copses, draining pavements, green roofs and facades or blue-green corridors. The design of these biodiversity solutions should not clash with the proper care of parks and gardens and should be compatible with effective tools to control the presence of pests that are a nuisance to neighbours.
-Demonstration project: Renaturalised meadow in the Jardín del Túria. Next to the Serranos Bridge, located in section VI of the Jardín del Túria, it has a surface area of 6,000 m2 to develop a biodiversity project.  |
+| Demonstration project: Renaturalised meadow in the Jardín del Túria. Next to the Serranos Bridge, located in section VI of the Jardín del Túria, it has a surface area of 6,000 m2 to develop a biodiversity project.  |
 |   |  Subsector | • Linked to the Impact on Renaturalisation, Biodiversity and  |
 AJUNTAMENT DE VALENCIA
 Missioné
@@ -4772,7 +4769,7 @@ citiES
 0
 
 |  Reference to the impact pathway |  | Resilience Emissions Domain of the València 2030 Climate Mission.
-• Impact also in the Emission Impact Domain Urbanism & Habitat of the Climate Mission València 2030  |
+| • Impact also in the Emission Impact Domain Urbanism & Habitat of the Climate Mission València 2030  |
 | --- | --- | --- |
 |  Systemic lever |  | • Technology and Infrastructure
 • Social Innovation
@@ -4790,9 +4787,9 @@ citiES
 • Area of Urban Ecology, Climate Emergency and Energy Transition
 • Urban Development, Urban Renewal and Housing Area  |
 |   | Scale of action and target entities | • City scale
-• General citizenship  |
+| • General citizenship  |
 |   | Actors involved | • València City Council
-• Federation of AVVs and neighbourhood organisations  |
+| • Federation of AVVs and neighbourhood organisations  |
 |   | Comments on implementation | • 2019-2030  |
 |  Impacts and costs | Renewable energy generated (if applicable) | N.a.  |
 
@@ -4812,7 +4809,7 @@ citiES 2030
 |   |  Type of action | AU Green Neighbourhoods Programme  |
 |   |  Description of the action | Cross-cutting environmental education and dissemination action that integrates and offers a response to the different dimensions of the ecological transition for sustainability: naturalisation, energy, mobility, resources (air, noise, water), consumption, waste and circular economy, urban planning and housing or governance.  |
 |  Reference to the impact pathway | Subsector | • Linked to the Impact on Renaturalisation, Biodiversity and Resilience Emissions Domain of the València 2030 Climate Mission.
-• Impact also in the Emissions Impact Domain Urbanism & Habitat of the Climate Mission València 2030  |
+| • Impact also in the Emissions Impact Domain Urbanism & Habitat of the Climate Mission València 2030  |
 |   |  Systemic lever | • Social Innovation
 • Democracy and Participation
 • Learning and Capacities  |
@@ -4835,14 +4832,14 @@ NGOs (Caritas, La Casa Grande or El Rastrell)
 Civil society and citizenship
 General public  |
 |   |  Scale of action and target entities | • City scale
-• General citizenship  |
+| • General citizenship  |
 |   |  Actors involved | • València City Council
-• All actors in the city as a whole  |
+| • All actors in the city as a whole  |
 |   |  Comments on implementation | • Building on the participatory process of the Green Plan and Urban Biodiversity.  |
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
 |   |  Energy removed/replaced, volume or fuel type | Not applicable  |
 |   |  Estimated GHG emission reductions (total) | • This Emission Impact Domain is not covered by the economic model.
-An estimate of the compensation potential of the green infrastructure presented here will be studied in future iterations.  |
+| An estimate of the compensation potential of the green infrastructure presented here will be studied in future iterations.  |
 |   |  Total costs and costs per unit of CO2e | • Total cost: N.a.  |
 
 8
@@ -4857,7 +4854,7 @@ citiES 2030
 |   |  Type of action | AU Programme Coastal regeneration and territorial green integration  |
 |   |  Description of the action | Landscape, environmental and urban improvement of the entire promenade of the city of València, with interventions on the sandy beach, remodelling of the promenade, adaptation and diversity of uses and the presence of trees. The new promenade aims to establish a space for interaction that allows conservation and environmental aspects to be resolved, making the system more sustainable in the face of adverse meteorological effects and, above all, catering for the use of the public. The new edge aims to offer the public a variety of alternative uses. A space with friendly shade, a place that offers spaces for leisure, living, sport, play and strolling, while at the same time promoting the use of the current leisure, consumer and restaurant areas. The idea is to develop a new renaturalised landscape where a dune system stabilises the sand with plant variants and suitable trees.  |
 |  Reference to the impact pathway | Subsector | • Linked to the Impact on Renaturalisation, Biodiversity and Resilience Emissions Domain of the València 2030 Climate Mission.
-• Impact also in the Emission Impact Domain Urbanism & Habitat of the Climate Mission València 2030  |
+| • Impact also in the Emission Impact Domain Urbanism & Habitat of the Climate Mission València 2030  |
 |   |  Systemic lever | • Technology and Infrastructure
 • Financing and Investment
 • Social Innovation
@@ -4885,7 +4882,7 @@ citiES 2030
 Generalitat Valènciana
 Spanish Government  |
 |   |  Scale of action and target entities | • City scale (focus on the waterfront: Cabanyal and Malvarrosa beaches).
-• General citizenship  |
+| • General citizenship  |
 |   |  Actors involved | • València City Council
 • Generalitat Valènciana
 • Spanish Government
@@ -4924,9 +4921,9 @@ citiES 2030
 • New naturalised green and blue spaces.
 • New green spaces of proximity.  |
 |  Implementation | Agencies/persons responsible for implementation | València City Council
-• Area of Urban Ecology, Climate Emergency and Energy Transition - Integrated Water Cycle Services, Beaches, Public Space Cleaning and Sustainable Gardening Service.  |
+| • Area of Urban Ecology, Climate Emergency and Energy Transition - Integrated Water Cycle Services, Beaches, Public Space Cleaning and Sustainable Gardening Service.  |
 |   |  Scale of action and target entities | • City scale
-• General citizenship  |
+| • General citizenship  |
 |   |  Actors involved | • València City Council  |
 |   |  Comments on implementation | • 2022-2026  |
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
@@ -4955,7 +4952,7 @@ Climate Action Plan (CAP)
 citiES 2030
 
 |  Reference to the impact pathway | Subsector | - Linked to the Impact on Renaturalisation, Biodiversity and Resilience Emissions Domain of the València 2030 Climate Mission.
-Impact also in the Emission Impact Domain Urbanism & Habitat of the Climate Mission València 2030  |
+| Impact also in the Emission Impact Domain Urbanism & Habitat of the Climate Mission València 2030  |
 | --- | --- | --- |
 |   | Systemic lever | - Technology and Infrastructure
 Financing and Investment
@@ -4967,12 +4964,11 @@ Learning and Capacities  |
 Full accessibility of urban and metropolitan Green Infrastructure.
 Green and Urban Biodiversity Plan.  |
 |  Implementation | Agencies/persons responsible for implementation | València City Council
-
-Area of Urban Ecology, Climate Emergency and Energy Transition - Integrated Water Cycle Services, Beaches, Cleaning of Public Space and Sustainable Gardening Service.  |
+| Area of Urban Ecology, Climate Emergency and Energy Transition - Integrated Water Cycle Services, Beaches, Cleaning of Public Space and Sustainable Gardening Service.  |
 |   | Scale of action and target entities | - Metropolitan scale
-General citizenship  |
+| General citizenship  |
 |   | Actors involved | - València City Council
-Port of València  |
+| Port of València  |
 |   | Comments on implementation | - Guided by the València Metropolitan Territorial Action Plan (PATEVAL) and the Territorial Action Plan for the development and revitalisation of the Huerta (PATH).  |
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
 
@@ -5001,7 +4997,7 @@ citiES 2030
 |   |  | the anthropic pressure caused by the city on the orchard. Urban edges are spaces of opportunity and the green transition between the huerta and the city should be worked on especially in places such as Benimaclet, Orriols-Torrefiel-Benicalap, Font d'Encorts, Malilla-San Isidre and Campanar. These actions will be respectful of farms and farmers' activities, with the preservation of the latter being the first objective to be pursued.  |
 | --- | --- | --- |
 |  Reference to the impact pathway | Subsector | • Linked to the Impact on Renaturalisation, Biodiversity and Resilience Emissions Domain of the València 2030 Climate Mission.
-• Impact also in the Emissions Impact Domain Urbanism & Habitat of the Climate Mission València 2030  |
+| • Impact also in the Emissions Impact Domain Urbanism & Habitat of the Climate Mission València 2030  |
 |   | Systemic lever | • Technology and Infrastructure
 • Financing and Investment
 • Social Innovation
@@ -5014,7 +5010,7 @@ citiES 2030
 • Full accessibility of urban and metropolitan Green Infrastructure.
 • Green and Urban Biodiversity Plan.  |
 |  Implementation | Bodies/persons responsible for implementation | València City Council
-• Area of Urban Ecology, Climate Emergency and Energy Transition - Integrated Water Cycle Services, Beaches, Public Space Cleaning and Sustainable Gardening Service.  |
+| • Area of Urban Ecology, Climate Emergency and Energy Transition - Integrated Water Cycle Services, Beaches, Public Space Cleaning and Sustainable Gardening Service.  |
 |   | Scale of action and target entities | • Metropolitan scale, focusing on places such as Benimaclet, Orriols-Torrefiel-Benicalap, Font d'Encorts, Malilla-San Isidre and Campanar.  |
 
 6
@@ -5034,7 +5030,7 @@ citiES
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
 |   |  Energy removed/replaced, volume or fuel type | Not applicable  |
 |   |  Estimated GHG emission reductions (total) | • This Emission Impact Domain is not covered by the economic model.
-An estimate of the compensation potential of the green infrastructure presented here will be studied in future iterations.  |
+| An estimate of the compensation potential of the green infrastructure presented here will be studied in future iterations.  |
 |   |  Total costs and costs per unit of CO2e | • Total cost: N.a.  |
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
@@ -5051,7 +5047,7 @@ citiES 2030
 |   |  | connect with Palmaret Baix and the Vera irrigation channel.  |
 | --- | --- | --- |
 |  Reference to the impact pathway | Subsector | • Linked to the Impact on Renaturalisation, Biodiversity and Resilience Emissions Domain of the València 2030 Climate Mission.
-• Impact also in the Emission Impact Domain Urbanism & Habitat of the Climate Mission València 2030  |
+| • Impact also in the Emission Impact Domain Urbanism & Habitat of the Climate Mission València 2030  |
 |   |  Systemic lever | • Technology and Infrastructure
 • Financing and Investment
 • Social Innovation
@@ -5062,9 +5058,9 @@ citiES 2030
 • Full accessibility of urban and metropolitan Green Infrastructure.
 • Green and Urban Biodiversity Plan.  |
 |  Implementation | Agencies/persons responsible for implementation | València City Council
-• Area of Urban Ecology, Climate Emergency and Energy Transition - Integrated Water Cycle Services, Beaches, Public Space Cleaning and Sustainable Gardening Service.  |
+| • Area of Urban Ecology, Climate Emergency and Energy Transition - Integrated Water Cycle Services, Beaches, Public Space Cleaning and Sustainable Gardening Service.  |
 |   |  Scale of action and target entities | • Metropolitan scale, focus on Pobles del Nord
-• General citizenship  |
+| • General citizenship  |
 |   |  Actors involved | • València City Council  |
 |   |  Comments on implementation | • Guided by the València Metropolitan Territorial Action Plan (PATEVAL), the Territorial Action Plan for the  |
 
@@ -5099,7 +5095,7 @@ All measures and actions to comply with the local forest fire prevention plan fo
 Likewise, the contract for dredging the canals and irrigation channels of l'Albufera de València will be extended, as well as a pilot dredging project in specific areas of l'Albufera lake that the municipal technicians deem appropriate, respecting the environmental values of the natural park, especially in those areas of the lake with registered historical ullals and at the entrances of ravines to the lake.  |
 | --- | --- | --- |
 |  Reference to the impact pathway | Subsector | • Linked to the Impact on Renaturalisation, Biodiversity and Resilience Emissions Domain of the València 2030 Climate Mission.
-• Impact also in the Emissions Impact Domain Urbanism & Habitat of the Climate Mission València 2030  |
+| • Impact also in the Emissions Impact Domain Urbanism & Habitat of the Climate Mission València 2030  |
 |   | Systemic lever | • Technology and Infrastructure
 • Financing and Investment
 • Social Innovation
@@ -5120,9 +5116,9 @@ citiES 2030
 • Green and Urban Biodiversity Plan.  |
 | --- | --- | --- |
 |  Implementation | Agencies/persons responsible for implementation | València City Council
-• Area of Urban Ecology, Climate Emergency and Energy Transition - Integrated Water Cycle Services, Beaches, Public Space Cleaning and Sustainable Gardening Service.  |
+| • Area of Urban Ecology, Climate Emergency and Energy Transition - Integrated Water Cycle Services, Beaches, Public Space Cleaning and Sustainable Gardening Service.  |
 |   | Scale of action and target entities | • Metropolitan scale
-• General citizenship  |
+| • General citizenship  |
 |   | Actors involved | València City Council  |
 |   | Comments on implementation | Guided by the Territorial Action Plan for the Coastal Green Infrastructure (PATIVEL)  |
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
@@ -5143,7 +5139,7 @@ B-2.2: Individual Action Schemes
 |   |  Type of action | AU Programme Coastal regeneration and territorial green integration  |
 |  Reference to the impact pathway | Description of the action | The action includes actions aimed at protecting the coastal dune system in order to regulate the intense public use, together with the construction of elements that allow greater enjoyment of its natural values (e.g. observatories). It also aims to improve the accessibility of the itineraries of the Devesa natural area in order to enable all sectors of society to enjoy the environment on equal terms, adapting these itineraries in accordance with criteria of functional diversity.  |
 |   |  Subsector | • Linked to the Impact on Renaturalisation, Biodiversity and Resilience Emissions Domain of the València 2030 Climate Mission.
-• Impact also in the Emissions Impact Domain Urbanism & Habitat of the Climate Mission València 2030  |
+| • Impact also in the Emissions Impact Domain Urbanism & Habitat of the Climate Mission València 2030  |
 |   |  Systemic lever | • Technology and Infrastructure
 • Financing and Investment
 • Social Innovation
@@ -5163,16 +5159,16 @@ citiES 2030
 • Green and Urban Biodiversity Plan.  |
 | --- | --- | --- |
 |  Implementation | Agencies/persons responsible for implementation | València City Council
-• Urban Ecology, Climate Emergency and Energy Transition Area - Integrated Water Cycle Services, Beaches, Public Space Cleaning and Sustainable Gardening Service.  |
+| • Urban Ecology, Climate Emergency and Energy Transition Area - Integrated Water Cycle Services, Beaches, Public Space Cleaning and Sustainable Gardening Service.  |
 |   | Scale of action and target entities | • Metropolitan scale
-• General citizenship  |
+| • General citizenship  |
 |   | Actors involved | València City Council  |
 |   | Comments on implementation | • 2022-2030
-• Guided by the Territorial Action Plan for the Coastal Green Infrastructure (PATIVEL)  |
+| • Guided by the Territorial Action Plan for the Coastal Green Infrastructure (PATIVEL)  |
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
 |   | Energy removed/replaced, volume or fuel type | Not applicable  |
 |   | Estimated GHG emission reductions (total) | • This Emission Impact Domain is not covered by the economic model.
-An estimate of the compensation potential of the green and blue infrastructure presented here will be studied in future iterations.  |
+| An estimate of the compensation potential of the green and blue infrastructure presented here will be studied in future iterations.  |
 |   | Total costs and costs per unit CO2e | • Total cost: 5.000.000€.  |
 
 3
@@ -5187,7 +5183,7 @@ citiES 2030
 |   |  Type of action | AU Programme Coastal regeneration and territorial green integration  |
 |   |  Description of the action | Project for the renaturalisation of the new bed of the river Túria, with the aim of creating a new green infrastructure that harmonises the drainage function of this area and enhances biodiversity and public use of the space. The aim is to move from the concept of an urban canal to that of a metropolitan biological corridor for public use. The actions focus on specific axes (hydraulic, ecological and social) and transversal axes (accessibility and connections between built-up areas, safety of use and evacuation). It requires inter-administrative cooperation between the basin organisations, València City Council, Quart de Poblet, Mislata and Xirivella, as well as the Generalitat Valènciana.  |
 |  Reference to the impact pathway | Subsector | • Linked to the Impact on Renaturalisation, Biodiversity and Resilience Emissions Domain of the València 2030 Climate Mission.
-• Impact also in the Emission Impact Domain Urbanism & Habitat of the Climate Mission València 2030  |
+| • Impact also in the Emission Impact Domain Urbanism & Habitat of the Climate Mission València 2030  |
 |   |  Systemic lever | • Technology and Infrastructure
 • Financing and Investment
 • Social Innovation
@@ -5215,7 +5211,7 @@ Quart de Poblet, Mislata and Xirivella Town Councils
 Regulatory bodies of the Túria basin
 Generalitat Valènciana  |
 |   |  Scale of action and target entities | • Metropolitan scale (València, Quart de Poblet, Mislata and Xirivella)
-• General citizenship  |
+| • General citizenship  |
 |   |  Actors involved | • València City Council
 • Quart de Poblet, Mislata and Xirivella Town Councils
 • Regulatory bodies of the Túria basin
@@ -5240,7 +5236,7 @@ citiES 2030
 |   |  Type of action | AU Programme Coastal regeneration and territorial green integration  |
 |   |  Description of the action | The Túria Natural Park requires measures aimed at its protection, conservation and use in order to preserve its natural heritage as a biological corridor of great ecological value. It is a key link in the city's green corridor. To the northwest of València, a metropolitan riverside woodland is planned from the Parc Fluvial del Túria to the Parc de Cabecera. It includes from the ecological restoration of the old landfill site with the works on the new riverbed to a network of cycle paths in the urban environment, with a new pedestrian and cycle route of 2.7 kilometres.  |
 |  Reference to the impact pathway | Subsector | • Linked to the Impact on Renaturalisation, Biodiversity and Resilience Emissions Domain of the València 2030 Climate Mission.
-• Impact also in the Emissions Impact Domain Urbanism & Habitat of the Climate Mission València 2030  |
+| • Impact also in the Emissions Impact Domain Urbanism & Habitat of the Climate Mission València 2030  |
 |   |  Systemic lever | • Technology and Infrastructure
 • Financing and Investment
 • Social Innovation
@@ -5264,9 +5260,9 @@ citiES
 • Green and Urban Biodiversity Plan.  |
 | --- | --- | --- |
 |  Implementation | Agencies/persons responsible for implementation | València City Council
-• Area of Urban Ecology, Climate Emergency and Energy Transition - Integrated Water Cycle Services, Beaches, Public Space Cleaning and Sustainable Gardening Service.  |
+| • Area of Urban Ecology, Climate Emergency and Energy Transition - Integrated Water Cycle Services, Beaches, Public Space Cleaning and Sustainable Gardening Service.  |
 |   | Scale of action and target entities | • Metropolitan scale
-• General citizenship  |
+| • General citizenship  |
 |   | Actors involved | València City Council  |
 |   | Comments on implementation | Guided by the València Metropolitan Territorial Action Plan (PATEVAL)  |
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
@@ -5285,7 +5281,7 @@ citiES 2030
 |  Type of action | AU Sustainable and local food programme  |   |
 |  Description of the action | To complete the integration with the metropolitan green infrastructure, this action is aimed at the territorial and landscape continuity of the beaches in the north of the city with the coastline of Alboraya in order to connect with the Carraixet ravine. The ravine is a structuring element of the first magnitude that connects and gives visibility to a large part of the landscapes and resources that form part of the northern area of València: from its headwaters, in the Calderona, to its end, in the sea. All of this also passes through a rich mosaic of villages, which represent a high level of heritage and connect spaces of great natural and cultural value in the area of the huerta, which has been declared an Important System for World Agricultural Heritage.  |   |
 |  Reference to the impact pathway | Subsector | - Linked to the Impact on Renaturalisation, Biodiversity and Resilience Emissions Domain of the València 2030 Climate Mission.
-Impact also in the Emissions Impact Domain Urbanism & Habitat of the Climate Mission València 2030  |
+| Impact also in the Emissions Impact Domain Urbanism & Habitat of the Climate Mission València 2030  |
 |  Systemic lever | - Technology and Infrastructure
 Financing and Investment
 Social Innovation
@@ -5306,15 +5302,15 @@ citiES 2030
 • Green and Urban Biodiversity Plan.  |
 | --- | --- | --- |
 |  Implementation | Agencies/persons responsible for implementation | València City Council
-• Urban Ecology, Climate Emergency and Energy Transition Area - Integrated Water Cycle Services, Beaches, Public Space Cleaning and Sustainable Gardening Service.  |
+| • Urban Ecology, Climate Emergency and Energy Transition Area - Integrated Water Cycle Services, Beaches, Public Space Cleaning and Sustainable Gardening Service.  |
 |   |  Scale of action and target entities | • Metropolitan scale
-• General citizenship  |
+| • General citizenship  |
 |   |  Actors involved | • València City Council  |
 |   |  Comments on implementation | • Guided by the Territorial Action Plan for the Coastal Green Infrastructure (PATIVEL)  |
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
 |   |  Energy removed/replaced, volume or fuel type | Not applicable  |
 |   |  Estimated GHG emission reductions (total) | • This Emission Impact Domain is not covered by the economic model.
-An estimate of the compensation potential of the green and blue infrastructure presented here will be studied in future iterations.  |
+| An estimate of the compensation potential of the green and blue infrastructure presented here will be studied in future iterations.  |
 |   |  Total costs and costs per unit of CO2e | • Total cost: N.a.  |
 
 B-2.2: Individual Action Schemes
@@ -5408,7 +5404,7 @@ citiES 2030
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
 |   | Energy removed/replaced, volume or fuel type | N.a.  |
 |   | Estimated GHG emission reductions (total) | • This Emission Impact Domain is not covered by the economic model.
-An estimate of the trade-off potential of the action presented here will be studied in future iterations.  |
+| An estimate of the trade-off potential of the action presented here will be studied in future iterations.  |
 |   | Total costs and costs per unit CO2e | • Total cost: N.a.  |
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
@@ -5426,7 +5422,7 @@ citiES 2030
 | --- | --- | --- |
 |  Reference to the impact pathway | Subsector | • Linked to the Economy and Industry Emissions Impact Domain of the Valência 2030 Climate Mission.  |
 |   |  Systemic lever | • Technology and Infrastructure
-• Learning and Capacities  |
+| • Learning and Capacities  |
 |   |  Short and medium-term changes | • The fisheries sector is active in three main areas of action: economic, cultural and environmental.
 • Elimination of emissions from fishing vessels through the installation of electric and/or hydrogen engines.
 • Strengthening the economic viability of traditional fishermen and fish farmers in the city of Valência.
@@ -5436,7 +5432,7 @@ citiES 2030
 • Innovative Development of Economic Sectors and Employment Area
 El Palmar Fishing Community  |
 |   |  Scale of action and target entities | • Metropolitan scale
-• Local productive fabric of the agri-food sector - Fishing organisations  |
+| • Local productive fabric of the agri-food sector - Fishing organisations  |
 |   |  Actors involved | • Valência City Council
 • El Palmar Fishing Community
 • Brotherhood of Perellonet's corner makers
@@ -5457,7 +5453,7 @@ citiES 2030
 | Description of the action | This action aims to extend the Valência Activa model of Local Development Agency and a network of local employment, entrepreneurship and training offices, one for each district, with a general catalogue of services common to all the offices and with specific services and actions for each district. Pilot experiences will be launched in the priority districts, to gradually extend the model to the whole city. |
 | Reference to the impact pathway | Subsector | • Linked to the Economy and Industry Emissions Impact Domain of the Valência 2030 Climate Mission. |
 | Systemic lever | • Governance and Politics
-• Learning and Capacities |
+| • Learning and Capacities |
 | Short and medium-term changes | • Consolidation of technology-based and innovative entrepreneurship in the city's key economic sectors.
 • Increase in the number of women in positions of responsibility. |
 AJUNTAMENT DE VALÈNCIA
@@ -5471,16 +5467,16 @@ citiES 2030
 • New working methodologies within the administration that allow the development and implementation of local policies to promote employment and entrepreneurship with a holistic character and that promote the improvement of the quality of life of citizens.  |
 | --- | --- | --- |
 |  Implementation | Bodies/persons responsible for implementation | València City Council
-• Area of Innovative Development of Economic Sectors and Employment (Entrepreneurship and Economic Innovation Service / València Activa)  |
+| • Area of Innovative Development of Economic Sectors and Employment (Entrepreneurship and Economic Innovation Service / València Activa)  |
 |   | Scale of action and target entities | • City scale
-• General public (those of working age)  |
+| • General public (those of working age)  |
 |   | Actors involved | • València City Council
 • VIT Emprende
 • The Marina of Companies
 • Investment funds
 • Startup ecosystem  |
 |   | Comments on implementation | • 2021-2026
-• Guided by the Strategic Plan for Employment, Entrepreneurship and Training 2017-2022  |
+| • Guided by the Strategic Plan for Employment, Entrepreneurship and Training 2017-2022  |
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
 |   | Energy removed/replaced, volume or fuel type | Not applicable  |
 |   | Estimated GHG emission reductions (total) | • This Emission Impact Domain is not covered by the economic model.
@@ -5514,15 +5510,15 @@ Climate Action Plan (CAP)
 citiES 2030
 
 |   | Scale of action and target entities | • City scale
-• Local business sector  |
+| • Local business sector  |
 | --- | --- | --- |
 |   |  Actors involved | • València City Council
-• Traders' associations  |
+| • Traders' associations  |
 |   |  Comments on implementation | • Guided by the Strategic Plan for Employment, Entrepreneurship and Training 2017-2022  |
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
 |   |  Energy removed/replaced, volume or fuel type | Not applicable  |
 |   |  Estimated GHG emission reductions (total) | • This Emission Impact Domain is not covered by the economic model.
-An estimate of the trade-off potential of the action presented here will be studied in future iterations.  |
+| An estimate of the trade-off potential of the action presented here will be studied in future iterations.  |
 |   |  Total costs and costs per unit of CO2e | • Total cost: N.a.  |
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
@@ -5574,16 +5570,16 @@ citiES 2030
 • Digital training and skills centre built and in operation, with the aim of training people, preferably unemployed, in the area of ICT with certifications from the main ICT companies, increasing the likelihood of employability and insertion in the labour market given the existing demand.  |
 | --- | --- | --- |
 |  Implementation | Agencies/persons responsible for implementation | València City Council
-• Area of Innovative Development of Economic Sectors and Employment - València Activa  |
+| • Area of Innovative Development of Economic Sectors and Employment - València Activa  |
 |   |  Scale of action and target entities | • City scale
-• The entrepreneurial ecosystem as a whole  |
+| • The entrepreneurial ecosystem as a whole  |
 |   |  Actors involved | • València City Council
 • VIT Emprende
 • The Marina of Companies
 • Investment funds
 • Startup ecosystem  |
 |   |  Comments on implementation | • 2020-2026
-• It has its own VLC Tech City strategy  |
+| • It has its own VLC Tech City strategy  |
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
 |   |  Energy removed/replaced, fuel volume or fuel type | Not applicable  |
 
@@ -5594,7 +5590,7 @@ Climate Action Plan (CAP)
 citiES 2030
 
 |   | Estimated GHG emission reductions (total) | • This Emission Impact Domain is not covered by the economic model.
-An estimate of the trade-off potential of the action presented here will be studied in future iterations.  |
+| An estimate of the trade-off potential of the action presented here will be studied in future iterations.  |
 | --- | --- | --- |
 |   | Total costs and costs per unit CO2e | • Total cost: 78.000.000€.  |
 |  B-2.2: Individual Action Schemes  |   |   |
@@ -5633,11 +5629,11 @@ citiES 2030
 • Governance and Politics
 • Learning and Capacities  |
 |   |  Short and medium-term changes | • Presence of motor actions generating and taking advantage of the opportunities that the sector can generate, whether in land availability (plots and/or buildings susceptible to immediate transformation), specialisation sectors present in the sector that can generate added value, economic actors willing to activate the transformation.
-• The main educational centres in the surrounding area are allies of the district, and joint training strategies are agreed upon so that potential productive specialisations or emerging sectors resulting from the industrial estate’s activities are in line with the training offered.  |
+| • The main educational centres in the surrounding area are allies of the district, and joint training strategies are agreed upon so that potential productive specialisations or emerging sectors resulting from the industrial estate’s activities are in line with the training offered.  |
 |   |  Agencies/persons responsible for implementation | València City Council
-• Area of Innovative Development of Economic Sectors and Employment - València Activa  |
+| • Area of Innovative Development of Economic Sectors and Employment - València Activa  |
 |  Accessibility | Scale of action and target entities | • City scale
-• The entrepreneurial ecosystem as a whole  |
+| • The entrepreneurial ecosystem as a whole  |
 |   |  Actors involved | • València City Council
 • Generalitat Valènciana
 • Universities
@@ -5662,8 +5658,7 @@ Climate Action Plan (CAP)
 citiES 2030
 
 |   |  | Along these lines, La Marina is called upon to play a fundamental role in the activation and productive revitalisation of the València waterfront, while at the same time favouring citizen appropriation of the old port of València and incorporating efficient management based on sustainability. Far from the exclusivity boasted by other marinas around the world, the València marina has become a civic space par excellence as an increasingly comfortable, accessible, sustainable and friendly environment, which includes a first-class cultural, gastronomic and leisure offer.
-
-Thus, in addition to serving as a dynamic centre for the territory and a beacon for the knowledge and innovation economy, we also aim to promote La Marina as an advanced technological centre for the nautical sector, promoting the creation of the Nautical Training Centre and the Workshop School for boat repair, facilitating digitalisation, promoting the blue economy and increasing nautical promotion actions. It also aims to boost nautical activity with initiatives such as the construction of a nautical village for commerce and services, the construction of a sports centre, the development of a commercial area, and the construction and operation of an industrial dry dock, among others.  |
+| Thus, in addition to serving as a dynamic centre for the territory and a beacon for the knowledge and innovation economy, we also aim to promote La Marina as an advanced technological centre for the nautical sector, promoting the creation of the Nautical Training Centre and the Workshop School for boat repair, facilitating digitalisation, promoting the blue economy and increasing nautical promotion actions. It also aims to boost nautical activity with initiatives such as the construction of a nautical village for commerce and services, the construction of a sports centre, the development of a commercial area, and the construction and operation of an industrial dry dock, among others.  |
 | --- | --- | --- |
 |  Reference to the impact pathway | Subsector | • Linked to the Economy and Industry Emissions Impact Domain of the València 2030 Climate Mission.  |
 |   | Systemic lever | • Technology and Infrastructure
@@ -5750,9 +5745,9 @@ citiES 2030
 • Generation of new public capacities in València City Council and its Local Public Sector that favour the development of innovation in València and strengthen its Institutions.  |
 | --- | --- | --- |
 |  Implementation | Agencies/persons responsible for implementation | València City Council
-• Mayor's Office Area. Delegation of Innovation and Knowledge Management Innovation ecosystem (5-helix actors)  |
+| • Mayor's Office Area. Delegation of Innovation and Knowledge Management Innovation ecosystem (5-helix actors)  |
 |   | Scale of action and target entities | • City scale
-• Ecosystem as a whole  |
+| • Ecosystem as a whole  |
 |   | Actors involved | • València City Council
 • Las Naves Foundation
 • City-University binomial
@@ -5770,7 +5765,7 @@ citiES 2030
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
 |   |  Energy removed/replaced, fuel volume or fuel type | Not applicable  |
 |   |  Estimated GHG emission reductions (total) | • This Emission Impact Domain is not covered by the economic model.
-An estimate of the trade-off potential of the action presented here will be studied in future iterations.  |
+| An estimate of the trade-off potential of the action presented here will be studied in future iterations.  |
 |   |  Total costs and costs per unit of CO2e | • Total cost: 191.100.000€.  |
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
@@ -5827,7 +5822,7 @@ citiES 2030
 Visit València Foundation |
 | --- | --- | --- |
 | Implementations | Scale of action and target entities | • Territorial, metropolitan and city scale
-• Residents of València and tourists |
+| • Residents of València and tourists |
 | Actors involved | • València City Council
 • Municipal Tourism Coordination Commission
 • Municipal Tourism Board
@@ -5842,7 +5837,7 @@ Visit València Foundation |
 • World Tourism Organisation
 • Other networks (European Cities Marketing, European Network Accessible Tourism, International Congress & Convention Association (ICCA), Association of Film Commissioners International (AFCI), Silky Cities Network, etc.). |
 | Comments on implementation | • 2022-2024
-• It has its own Sustainable Tourism 2030 strategy and Tourism Sustainability Plan 2022-2024. |
+| • It has its own Sustainable Tourism 2030 strategy and Tourism Sustainability Plan 2022-2024. |
 | Repeals and costs | Renewable energy generated (if applicable) | N.a. |
 | Energy removed/replaced, fuel volume or fuel type | N.a. |
 | Estimated GHG emission reductions (total) | • This Emission Impact Domain is not covered by the economic model. |
@@ -5900,7 +5895,7 @@ citiES 2030
 • Deployed before 2030 innovative projects in the Las Fallas sector, especially those aimed at reducing the environmental impact of this festivity while maintaining or even enhancing its creative and cultural values.  |
 | --- | --- | --- |
 |  Implementation | Agencies/persons responsible for implementation | València City Council
-• Area of Education, Culture and Sport  |
+| • Area of Education, Culture and Sport  |
 |   | Scale of action and target entities | • Territorial, metropolitan and city scale
 • Residents of València and tourists
 • Cultural associations and agents  |
@@ -5923,13 +5918,13 @@ Climate Action Plan (CAP)
 citiES 2030
 
 |   |  | • World Design Organization
-• Generalitat Valènciana (IVACE)  |
+| • Generalitat Valènciana (IVACE)  |
 | --- | --- | --- |
 |   |  Comments on implementation | • 2022-2026  |
 |  Impacts and costs | Renewable energy generated (if applicable) | N.a.  |
 |   |  Energy removed/replaced, fuel volume or fuel type | N.a.  |
 |   |  Estimated GHG emission reductions (total) | • This Emission Impact Domain is not covered by the economic model.
-An estimate of the trade-off potential of the action presented here will be studied in future iterations.  |
+| An estimate of the trade-off potential of the action presented here will be studied in future iterations.  |
 |   |  Total costs and costs per unit of CO2e | • Total cost: 15.450.000€.  |
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
@@ -5953,8 +5948,7 @@ Climate Action Plan (CAP)
 citiES 2030
 
 |   |  | recovering the obsolete port heritage and creating new opportunities for public uses. To this end, it is necessary to advance in a framework of multi-level governance in which the city gains a presence in the decisions.
-
-The Special Plan for South Zone 1 of the port of València, which forms part of the Port Space Delimitation Document (DEUP) of the port of València, transfers and defines in detail the details of the specific agreement reached by the City Council of València and the APV, which was approved in February 2017. This initiative is the result of the city-port relationship strategy, in which, in addition to the APV and the City Council, the port community and entities of the city also participate. With the plan, the APV is earmarking 230,000 square metres of port territory, adjacent to the Nazaret neighbourhood, for citizen use.  |
+| The Special Plan for South Zone 1 of the port of València, which forms part of the Port Space Delimitation Document (DEUP) of the port of València, transfers and defines in detail the details of the specific agreement reached by the City Council of València and the APV, which was approved in February 2017. This initiative is the result of the city-port relationship strategy, in which, in addition to the APV and the City Council, the port community and entities of the city also participate. With the plan, the APV is earmarking 230,000 square metres of port territory, adjacent to the Nazaret neighbourhood, for citizen use.  |
 | --- | --- | --- |
 |  Reference to the impact pathway | Subsector | • Linked to the Economy and Industry Emissions Impact Domain of the València 2030 Climate Mission.  |
 |   | Systemic lever | • Technology and Infrastructure
@@ -5966,7 +5960,7 @@ The Special Plan for South Zone 1 of the port of València, which forms part of 
 • Area of Sustainable Mobility and Public Space.
 Port Authority of València  |
 |   | Scale of action and target entities | • Country, regional, metropolitan and city scale
-• General citizenship and, with special focus, the citizens located in the Nazareth neighbourhood.  |
+| • General citizenship and, with special focus, the citizens located in the Nazareth neighbourhood.  |
 |   | Actors involved | • València City Council
 • Mobility Bureau  |
 
@@ -5979,14 +5973,14 @@ citiES
 0
 
 |   |  | • Port Authority of València
-• Neighbourhood associations of València (Nazaret neighbourhood above all)  |
+| • Neighbourhood associations of València (Nazaret neighbourhood above all)  |
 | --- | --- | --- |
 |   |  Comments on implementation | • 2019-2030
-• This action depends, to a large extent, on the Port Authority of València itself and its Climate Neutral Strategy for the port.  |
+| • This action depends, to a large extent, on the Port Authority of València itself and its Climate Neutral Strategy for the port.  |
 |  Impacts and costs | Renewable energy generated (if applicable) | N.a.  |
 |   |  Energy removed/replaced, fuel volume or fuel type | N.a.  |
 |   |  Estimated GHG emission reductions (total) | • This Emission Impact Domain is not covered by the economic model.
-An estimate of the trade-off potential of the action presented here will be studied in future iterations.  |
+| An estimate of the trade-off potential of the action presented here will be studied in future iterations.  |
 |   |  Total costs and costs per unit CO2e | • Total cost: N.a.  |
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
@@ -6025,7 +6019,7 @@ citiES
 • AUMSA  |
 | --- | --- | --- |
 |   |  Scale of action and target entities | • City scale, focusing on the Cabanyal-Canyamelar-Cap de França area.
-• General public  |
+| • General public  |
 |   |  Actors involved | • València City Council
 • Neighbourhood associations
 • Construction companies
@@ -6034,7 +6028,7 @@ citiES
 |  Impacts and costs | Renewable energy generated (if applicable) | N.a.  |
 |   |  Energy removed/replaced, volume or fuel type | N.a.  |
 |   |  Estimated GHG emission reductions (total) | • This Emission Impact Domain is not covered by the economic model.
-An estimate of the trade-off potential of the action presented here will be studied in future iterations.  |
+| An estimate of the trade-off potential of the action presented here will be studied in future iterations.  |
 |   |  Total costs and costs per unit of CO2e | • Total cost: N.a.  |
 
 3
@@ -6080,7 +6074,7 @@ citiES 2030
 • Fundació València Climate and Energy Foundation
 Responsible for the Plan.0 Project  |
 |   |  Scale of action and target entities | • City scale
-• Neighbours of the city  |
+| • Neighbours of the city  |
 |   |  Actors involved | • València City Council
 • Neighbours of the city
 • Federation of Neighbourhood Associations
@@ -6207,7 +6201,7 @@ citiES 2030
 |   | 5.1 6.2 Percentage of unemployed women  |
 | --- | --- |
 |  LE10 | 8.3 7.1 Number of technology SMEs per 1000 inhabitants
-Companies in the industrial sector  |
+| Companies in the industrial sector  |
 |   |  9.c 6.2 Population with broadband internet coverage  |
 |   |  4.4 6.2 Proportion of 25-74 year olds who have used a computer skill in the past 12 months  |
 |   |  8.3 7.1 Startup attractiveness  |
@@ -6450,7 +6444,7 @@ citiES 2030
 |   | interesting to generate a mechanism, space and deliberative process among València own citizens, chosen at random while maintaining social and territorial representative ness, to debate the city's climate emergency situation and make recommendations to improve it. |  |  | València 2030 Climate Mission. | Consideration of climate justice criteria in the València 2030 Climate Mission.  |
 | --- | --- | --- | --- | --- | --- |
 |  Ciuta-lab | The citizen laboratory at Las Naves aims to become a place where people can learn to participate, experiment and jointly produce these solutions. A space for research and innovation in which to bring together diverse people with different profiles, experiences and knowledge. | Las Naves | València's own citizens | Articulate spaces for citizen co-creation around the Climate Mission. | Extending the concept of citizen science and climate co-creation.
-Consideration of climate justice criteria in the València 2030 Climate Mission.  |
+| Consideration of climate justice criteria in the València 2030 Climate Mission.  |
 |  Col-lab | Public accelerator of startups and innovative business initiatives with a triple impact: social, economic and | Las Naves | Innovation ecosystem. | Development of new innovative products and services with an impact on the Climate Mission. | Development of a green economic and employment model based on knowledge and innovation.
 Innovation Hub.  |
 
@@ -6465,7 +6459,7 @@ Climate Action Plan (CAP)
 citiES
 
 |   | environmental.
-In addition to work and meeting spaces, Col-lab offers intensive mentoring in 10 key areas for entrepreneurs, as well as facilitation, networking and teambuilding actions. |  |  |  |   |
+| In addition to work and meeting spaces, Col-lab offers intensive mentoring in 10 key areas for entrepreneurs, as well as facilitation, networking and teambuilding actions. |  |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  City-University binomial | Strategic alliance with research. | Mr. Joan Ribó /Mayor of València
 Mr. José Capilla/ Rector of the UPV
@@ -6632,9 +6626,9 @@ citiES 2030
 • EMT | 2020-2030 | Transport | 45 | € 253 | € 364 | € (127)*  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Shared transport | 25% | due to increased transport efficiency | • Area of Sustainable Mobility and Public Space
-• Citizenship | 2020-2030 | Transport | 26 | € 423 | € 122 | € -  |
+| • Citizenship | 2020-2030 | Transport | 26 | € 423 | € 122 | € -  |
 |  Car electrification | 35% | of the electrified fleet by 2040 | • Area of Sustainable Mobility and Public Space
-• Citizenship | 2020-2040 | Transport | 23 | € (1) | € 12 | € (48)  |
+| • Citizenship | 2020-2040 | Transport | 23 | € (1) | € 12 | € (48)  |
 |  Bus electrification | 100% | of the electrified fleet | • Area of Sustainable Mobility and Public Space
 • EMT
 • Metropolitan Transport Operator | 2020-2030 | Transport | 19 | € 23 | € 17 | € (39)  |
@@ -6646,12 +6640,12 @@ Climate Action Plan (CAP)
 citiES 2030
 
 |  Optimisation of freight transport logistics | 10% | reduction of travel distance through route optimisation | - Area of Sustainable Mobility and Public Space
-Logistics companies | 2020-2030 | Transport | 43 | € 195 | € 66 | € -  |
+| Logistics companies | 2020-2030 | Transport | 43 | € 195 | € 66 | € -  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Electrification of trucks | 90% | Trucks <3.5 t to 2040 | - Area of Sustainable Mobility and Public Space
-Logistics companies | 2020-2030 | Transport | 22 | € 6 | € 15 | € (102)  |
+| Logistics companies | 2020-2030 | Transport | 22 | € 6 | € 15 | € (102)  |
 |  Electrification of trucks | 60% | Trucks >3.5 t to 2040 | - Area of Sustainable Mobility and Public Space
-Logistics companies | 2020-2031 | Transport |  |  |  |   |
+| Logistics companies | 2020-2031 | Transport |  |  |  |   |
 |  Building renovations | 2,5% | of all existing buildings / year | - Urban Development, Urban Renewal and Housing Area
 AUMSA | 2020-2030 | Buildings and heating | 27 | € 290 | € 23 | € (1.529)  |
 
@@ -6662,7 +6656,7 @@ Climate Action Plan (CAP)
 citiES 2030
 
 |  New near-zero energy buildings | 30% | Percentage of new buildings constructed according to maximum energy efficiency standards | • Urban Development, Urban Renewal and Housing Area
-• AUMSA | 2020-2030 | Buildings and heating | 7 | € 77 | € 6 | € (121)  |
+| • AUMSA | 2020-2030 | Buildings and heating | 7 | € 77 | € 6 | € (121)  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Efficient lighting and appliances | 100% | of lighting appliances retrofitted between 2020 and 2030 (40% efficiency improvements) | • Urban Development, Urban Renewal and Housing Area
 • AUMSA
@@ -6793,7 +6787,7 @@ Climate Action Plan (CAP)
 citiES 2030
 
 |   |  | commitments to action and funding incorporated into the CCC. | Contract (CCC) in March 2024.
-Periodic improvements to the València CCC |   |
+| Periodic improvements to the València CCC |   |
 | --- | --- | --- | --- | --- |
 |  3 | The València Mission Alliance | Engagement and accessions of the València 5-helix ecosystem with commitments to action and funding incorporated into the CCC. | Accessions to the Second València Climate City Contract (CCC) in March 2024.
 Periodic improvements to the València CCC | From March 2023 onwards.  |

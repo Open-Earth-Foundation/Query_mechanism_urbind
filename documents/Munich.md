@@ -675,8 +675,6 @@ Action Plan
 |  **National Energy and Climate Plan 2021-2023, Germany** |  | Germany’s integrated National Energy and Climate Plan (NECP) under the European Climate Law provides an overview of the country’s energy and climate policy as well as the current status of plans in these areas. Among other targets, it declares Germany’s national climate goal to reach at least -55 % GHG-emission by 2030 compared to 1990 as contribution to the European Climate Law. | All  |
 |  **Federal Climate Protection Act (KSG)** |  | The Federal Climate Protection Act (ger. Klimaschutzgesetz, KSG) is a German federal law that aims to ensure the fulfilment of national climate protection goals and compliance with European target specifications. With the Climate Protection Act, the climate protection and sector goals established in the Climate Protection Plan 2050 were legally anchored for the first time: greenhouse gas emissions are to be reduced by at least 65% below the reference value of 1990 by 2030, by at least 88% by 2040. Net greenhouse gas neutrality is to be achieved by 2045. In addition, the law sets annual reduction targets for the period up to 2040. Maximum annual emission levels are also specified for various economic sectors until 2030. | All  |
 |  **Building Code (BauGB)** |  | The building planning law regulated in the Building Code (ger. Baugesetzbuch, BauGB) has far-reaching significance for the construction of renewable energy facilities and their use. It primarily regulates the planning permission for these facilities, which is binding for the federal states and municipalities. It also defines the ability of local authorities to implement specific and ambitious regulatory requirements for new and existing buildings on key aspects for climate neutrality. According to the BauGB, areas can be designated where certain renewable energy facilities such as wind turbines, hydrogen plants, or photovoltaic systems can be preferentially constructed. To further accelerate and simplify expansion, as of January 1, 2023, solar systems have been included in the provision of building law privilege under certain conditions (localization in 200-meter strips along highways and | Stationary Energy  |
-2
-
 |   |  | railway lines of the superior network, as well as agri-PV systems in spatially functional connection with agricultural, forestry, and horticultural operations). Limitations in de BauGB for climate neutrality in cities include that cities cannot declare resource requirements, construction material requirements or process requirements for sustainable buildings, which would be necessary for tackling Scope-3 emissions in the built environment. |   |
 | --- | --- | --- | --- |
 |  Building Energy Act (GEG) |  | The Building Energy Act (ger. Gebäudeenergie-gesetz, GEG) contains requirements for the energy efficiency of buildings, the creation and use of energy certificates, as well as the use of renewable energy in buildings. For new buildings, there is a permissible annual primary energy demand that must be no more than 55% of a reference building. Additionally, the GEG aims to promote the replacement of heating systems. Municipalities have a role model function and must also comply with certain requirements for public buildings, such as the use of renewable energy in new construction and renovations. | Stationary Energy  |
@@ -702,11 +700,9 @@ Action Plan
 |   |  | overall energy supply. To achieve the goals, the regulation takes into account the forward-looking expansion, optimized use, and digitization of energy supply networks, the generation and use of electricity from renewable energies and hydrogen, the flexibility in the electricity system, including the use of energy storage, and the appropriate distribution of network costs in connection with the expansion of electricity generation from renewable energies. The law also aims to implement and enforce European Union law in the area of energy supply. |   |
 | --- | --- | --- | --- |
 |  **Network Expansion Acceleration Act (NABEG)** |  | The Network Expansion Acceleration Act (ger. Netzausbaubeschleunigungsgesetz, NABEG) aims to accelerate the expansion of cross-border and international high-voltage power lines in accordance with the Energy Industry Act. The law is intended to provide the basis for a legally secure, transparent, efficient, and environmentally friendly expansion and upgrading of the transmission network.
-
-The law primarily regulates the federal planning of route corridors and the approval process. Accordingly, with the approval of the Federal Council, the Federal Network Agency can be authorized by the federal government to carry out the corresponding approval procedures, including application conferences, hearings, environmental impact assessments (EIA), and approval decisions. | All  |
+| The law primarily regulates the federal planning of route corridors and the approval process. Accordingly, with the approval of the Federal Council, the Federal Network Agency can be authorized by the federal government to carry out the corresponding approval procedures, including application conferences, hearings, environmental impact assessments (EIA), and approval decisions. | All  |
 |  **Greenhouse Gas Emissions Trading Act (TEHG)** |  | The Greenhouse Gas Emissions Trading Act (ger. Treibhausgas-Emissionshandelsgesetz, TEHG) forms the legal basis for national trading of allowances for greenhouse gas emissions in Germany within the EU-wide Emissions Trading System (EU ETS). It serves to implement the EU Emissions Trading Directive of October 13, 2003 (ETS Directive).
-
-Additional regulations within the TEHG are set by the German Emissions Trading Directive 2030 (ger. Emissionshandelsverordnung 2030, EHV 2030). | All  |
+| Additional regulations within the TEHG are set by the German Emissions Trading Directive 2030 (ger. Emissionshandelsverordnung 2030, EHV 2030). | All  |
 |  **Energieverbrauchsrelevante-Produkte-Gesetz (EVPG)** |  | The Energy-related Products Act (EVPG) is crucial for climate mitigation in Germany as it enforces the EU's Eco-design Directive, which sets standards for the energy efficiency and environmental impact of products. By ensuring that products meet these stringent eco-design requirements, the EVPG helps reduce energy consumption and greenhouse gas emissions across various sectors. This contributes significantly to Germany's | All  |
 5
 
@@ -758,46 +754,44 @@ Action Plan
 |   |  | Issuance of a Climate Statute, Issuance of a Climate Council Statute |   |
 | --- | --- | --- | --- |
 |  Decision (20-26 / V 03535) |  | Einführung einer Klimaprüfung bei Beschlussvorlagen
-Introduction of a Climate Protection Check for Draft Decisions | All  |
+| Introduction of a Climate Protection Check for Draft Decisions | All  |
 |  Decision (20-26 / V 03534) |  | Finanzrahmen für den Klimaschutz ab 2022
-Financial Framework for Climate Protection from 2022 | All  |
+| Financial Framework for Climate Protection from 2022 | All  |
 |  Decision (20-26 / V 02817) |  | Monitoring zur Maßnahmenumsetzung des „Maßnahmenkonzept Anpassung an den Klimawandel in der Landeshauptstadt München“
-Monitoring the Implementation of Measures in the "Action Plan for Climate Change Adaptation in the City of Munich" | /  |
+| Monitoring the Implementation of Measures in the "Action Plan for Climate Change Adaptation in the City of Munich" | /  |
 |  Decision (20-26 / V 03507) |  | Mobilitätsstrategie 2035 - Entwurf einer neuen Gesamtstrategie für Mobilität und Verkehr in München
-Mobility Strategy 2035 - Draft of a New Comprehensive Strategy for Mobility and Transportation in Munich | Transport  |
+| Mobility Strategy 2035 - Draft of a New Comprehensive Strategy for Mobility and Transportation in Munich | Transport  |
 |  Decision (20-26 / V05040) |  | Grundsatzbeschluss II Klimaneutrales München 2035 und klimaneutrale Stadtverwaltung 2030: Von der Vision zur Aktion
-Decision of Principle II Climate Neutral Munich 2035 and Climate Neutral City Administration 2030: From Vision to Action | All  |
+| Decision of Principle II Climate Neutral Munich 2035 and Climate Neutral City Administration 2030: From Vision to Action | All  |
 |  Decision (20-26 / V 04479) |  | Schwerpunktsetzung im Referat für Klima- und Umweltschutz- personelle Mehrbedarfe Eckdatenbeschluss Haushalt 2022 Nrn. 2, 3, 4, und 11
-Focus Areas in the Department for Climate and Environmental Protection - Additional Personnel Requirements Key Data Resolution Budget 2022 Nos. 2, 3, 4, and 11 | /  |
+| Focus Areas in the Department for Climate and Environmental Protection - Additional Personnel Requirements Key Data Resolution Budget 2022 Nos. 2, 3, 4, and 11 | /  |
 |  Decision (20-26 / V 05892) |  | Analoge und digitale Öffentlichkeitsbeteiligung in der Landeshauptstadt München; Vorstellung des Externen-Konzepts für die systematische Weiterentwicklung
-Analog and Digital Public Participation in the City of Munich; Presentation of the External Concept for Systematic Further Development | /  |
+| Analog and Digital Public Participation in the City of Munich; Presentation of the External Concept for Systematic Further Development | /  |
 |  Decision (20-26 / V 06103) |  | Förderprogramm Klimaneutrale Gebäude
-Funding Program for Climate-Neutral Buildings | Stationary Energy  |
+| Funding Program for Climate-Neutral Buildings | Stationary Energy  |
 |  Decision (20-26 / 06054) |  | Novellierung und Umbenennung des Förderprogrammes „München emobil“ | Transport  |
-9
-
 |   |  | Revision and Renaming of the Funding Program "Munich emobil" |   |
 | --- | --- | --- | --- |
 |  Decision (20-26 / V 06483) |  | Satzung zur Änderung der Satzung zur Einführungenes Klimarates der Landeshauptstadt München (KlimaratS) vom 12. September 2021
-Amendment of the Statute for the Introduction of a Climate Council of the City of Munich (Climate Council Statute) dated September 12, 2021 | All  |
+| Amendment of the Statute for the Introduction of a Climate Council of the City of Munich (Climate Council Statute) dated September 12, 2021 | All  |
 |  Decision (20-26 / V 07870) |  | München auf dem Weg zur zirkulären Stadt – Ein Sachstandsbericht zur Erarbeitung einer kommunalen Circular Economy Strategie (Work in Progress Report 2022) Bekanntgabe des Gutachtens „Graue Energie und Materialkreisläufe bei Sanierung statt Abriss und Neubau“
-Munich on the Path to Becoming a Circular City – A Status Report on the Development of a Municipal Circular Economy Strategy (Work in Progress Report 2022) Announcement of the Study "Embodied Energy and Material Cycles in Renovation Instead of Demolition and New Construction" | Other  |
+| Munich on the Path to Becoming a Circular City – A Status Report on the Development of a Municipal Circular Economy Strategy (Work in Progress Report 2022) Announcement of the Study "Embodied Energy and Material Cycles in Renovation Instead of Demolition and New Construction" | Other  |
 |  Decision (20-26 / V 08153) |  | Umsetzung der kommunalen Wärmeplanung in München – Zwischenbericht
-Implementation of Municipal Heat Planning in Munich – Interim Report | Stationary Energy  |
+| Implementation of Municipal Heat Planning in Munich – Interim Report | Stationary Energy  |
 |  Decision (20-26 / V 08291) |  | Einführung der THG-Bilanzierung „Carbon Footprint der Stadtverwaltung“
-Introduction of GHG Accounting "Carbon Footprint of the City Administration" | All  |
+| Introduction of GHG Accounting "Carbon Footprint of the City Administration" | All  |
 |  Decision (20-26 / V 09135) |  | Masterplan solares München
-Masterplan Solar Munich | Stationary Energy  |
+| Masterplan Solar Munich | Stationary Energy  |
 |  Decision (20-26 / V 09608) |  | Förderprogramm klimaneutrale Gebäude – Sachstandsbericht und Anpassungsbedarf
-Funding Program Climate Neutral Buildings – Progress Report and Needs for Adjustment | Stationary Energy  |
+| Funding Program Climate Neutral Buildings – Progress Report and Needs for Adjustment | Stationary Energy  |
 |  Decision (20-26 / V 10332) |  | Umsetzung des Öffentlichkeitsbeteiligungskonzeptes in der Landeshauptstadt München
 Einführung eines Einwohner*innenbudgets
 Implementation of the Public Participation Concept in the City of Munich
 Introduction of a Citizen Budget | /  |
 |  Decision (20-26 / V 10356) |  | Novellierung der E-Taxiförderung in München
-Amendment to the Munich E-Taxi Funding | Transport  |
+| Amendment to the Munich E-Taxi Funding | Transport  |
 |  Decision (20-26 / V 09095) |  | Grundsatzbeschluss Ernährungshaus München
-Decision of Principle Nutrition House Munich | /  |
+| Decision of Principle Nutrition House Munich | /  |
 |  Decision (20-26 / V 09208) |  | Grundsatzbeschluss Ernährungshaus München (nicht öffentlich) | /  |
 0
 
@@ -806,21 +800,21 @@ Action Plan
 |   |  | Decision of Principle Nutrition House Munich (non-public) |   |
 | --- | --- | --- | --- |
 |  Decision (20-26 / V 11088) |  | Förderprogramm Klimaneutrale Gebäude (FKG) – Einführung von Fördermaßnahmen zur Berücksichtigung von THG-Emissionen im Gebäudelebenszyklus sowie Änderungen der Richtlinien der Förderprogramme FES und FKG
-Funding Program for Climate-Neutral Buildings (FKG) – Introduction of Funding Measures to Account for GHG Emissions in the Building Lifecycle and Amendments to the Guidelines of the FES and FKG Funding Programs | Stationary Energy  |
+| Funding Program for Climate-Neutral Buildings (FKG) – Introduction of Funding Measures to Account for GHG Emissions in the Building Lifecycle and Amendments to the Guidelines of the FES and FKG Funding Programs | Stationary Energy  |
 |  Decision (20-26 / 10568) |  | Grundsatzbeschluss III Fortschreibung des Klimabudgets
-Decision of Principle III – Update of the climate budget | All  |
+| Decision of Principle III – Update of the climate budget | All  |
 |  Decision (20-26 / V 11964) |  | Förderprogramm Klimaneutrale Gebäude (FKG) – Schadensbegrenzung für die Landeshauptstadt München durch Förderpause für Einzelmaßnahmen und Förderstopp für Sanierungsberatungen
-Funding Program Climate Neutral Buildings – Damage control for the State Capital of Munich via the Funding Break for single measures and the funding halt for renovation consulting | Stationary Energy  |
+| Funding Program Climate Neutral Buildings – Damage control for the State Capital of Munich via the Funding Break for single measures and the funding halt for renovation consulting | Stationary Energy  |
 |  Decision (20-26 / V 11336) |  | Corporate Carbon Footprint im erweiterten Verantwortungsbereich der Landeshauptstadt München – Berichtsjahre 2020 und 2021
-Corporate Carbon Footprint for the extended responsibility scope of the State Capital Munich | All  |
+| Corporate Carbon Footprint for the extended responsibility scope of the State Capital Munich | All  |
 |  Decision (20-26 / V11279) |  | Re:lektro Strategie der Landeshauptstadt München zur längeren Verwendung und optimierten Sammlung von Elektrokleingeräten
-Re:lektro Strategy of the State Capital Munich for extended use and optimized collection of small electronic devices | Other  |
+| Re:lektro Strategy of the State Capital Munich for extended use and optimized collection of small electronic devices | Other  |
 |  Decision (20-26 / V 12248) |  | Evaluierung und Weiterentwicklung der Klimaschutzprüfung
-Evaluation and Revision of the Climate Protection Check | All  |
+| Evaluation and Revision of the Climate Protection Check | All  |
 |  Decision (20-26 / V 11411) |  | Kommunale Wärmeplanung für München
-Municipal Heat Plan for Munich | Stationary Energy  |
+| Municipal Heat Plan for Munich | Stationary Energy  |
 |  Decision (20-26 / V 12515) |  | Dekarbonisierung der Fernwärmeversorgung in München, Transformationsplan für die Fernwärme
-Decarbonisation of District Heating Supply in Munich, Transformation Plan for District Heating | Stationary Energy  |
+| Decarbonisation of District Heating Supply in Munich, Transformation Plan for District Heating | Stationary Energy  |
 |  Decision 20-26 / V 13093 |  | Weiterentwicklung FKG – kreislauffähiges Bauen, klimagerechte Gebäudestandards im geförderten Wohnungsbau, Finanzierung FÖMIS | Stationary Energy  |
 1
 
@@ -829,7 +823,7 @@ Action Plan
 |   |  | Further Development of FKG – Circular Construction, Climate-Appropriate Building Standards in Subsidized Housing, Financing of FÖMIS |   |
 | --- | --- | --- | --- |
 |  Decision (20-26 / V 13383) |  | Monitoring-Bericht zum Solarenergieausbau in München
-Monitoring Report on the Expansion of Solar Energy in Munich | Stationary Energy  |
+| Monitoring Report on the Expansion of Solar Energy in Munich | Stationary Energy  |
 |  Decision (20-26 / V 13265) |  | Förderprogramm Klimaneutrale Gebäude (FKG) – Anpassungen Fördermaßnahmen
 Funding Program for Climate-Neutral Buildings (FKG) – Adjustments to Funding Measures | Stationary Energy  |
 
@@ -1655,18 +1649,18 @@ Action Plan
 O
 
 |  | Shift to district heating in multi-family buildings | Stock multi-family buildings heated with district heating | m² | Emission factor district heating
-Energy intensity district heating heated multi-family buildings | g CO2e / kWh
-kWh / m² | GHG Emission Reduction | Economic Savings |  |
+| Energy intensity district heating heated multi-family buildings | g CO2e / kWh |
+| kWh / m² | GHG Emission Reduction | Economic Savings |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Shift to district heating in commercial buildings | Stock district heating (non-residential, commercial) | m² | Emission factor district heating
-Energy intensity district heating commercial | g CO2e / kWh
-kWh / m² | GHG Emission Reduction | Economic Savings |
+| Energy intensity district heating commercial | g CO2e / kWh |
+| kWh / m² | GHG Emission Reduction | Economic Savings |
 | District heating in public buildings | Stock district heating (public) | m² | Emission factor district heating
-Energy intensity district heating public | g CO2e / kWh
-kWh / m² | GHG Emission Reduction | Economic Savings |
+| Energy intensity district heating public | g CO2e / kWh |
+| kWh / m² | GHG Emission Reduction | Economic Savings |
 | Shift to district heating in industrial buildings | Stock district heating (non-residential, industrial) | m² | Emission factor district heating
-Energy intensity district heating industrial | g CO2e / kWh
-kWh / m² | GHG Emission Reduction | Economic Savings |
+| Energy intensity district heating industrial | g CO2e / kWh |
+| kWh / m² | GHG Emission Reduction | Economic Savings |
 | Shift to heat pumps in multi-family buildings | Stock multi-family buildings heated with heat pumps | m² | Emission factor heat pumps
 Energy intensity heat pumps multi-family buildings | g CO2e / kWh
 kWh / m² | GHG Emission Reduction | Economic Savings | 33 % share of heat pumps on the city's total heating energy demand |
@@ -1679,17 +1673,17 @@ O
 |  |   |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |   |  Shift to heat pumps in single-family buildings | Stock single-family buildings heated with heat pumps | m² | Emission factor heat pumps
-Energy intensity heat pumps single-family buildings | g CO2e / kWh
-kWh / m² | GHG Emission Reduction | Economic Savings  |
+| Energy intensity heat pumps single-family buildings | g CO2e / kWh |
+| kWh / m² | GHG Emission Reduction | Economic Savings  |
 |   |  Shift to heat pumps in commercial buildings | Stock commercial buildings heated with heat pumps | m² | Emission factor heat pumps
-Energy intensity heat pumps commercial buildings | g CO2e / kWh
-kWh / m² | GHG Emission Reduction | Economic Savings  |
+| Energy intensity heat pumps commercial buildings | g CO2e / kWh |
+| kWh / m² | GHG Emission Reduction | Economic Savings  |
 |   |  Shift to heat pumps in public buildings | Stock public buildings heated with heat pumps | m² | Emission factor heat pumps
-Energy intensity heat pumps public buildings | g CO2e / kWh
-kWh / m² | GHG Emission Reduction | Economic Savings  |
+| Energy intensity heat pumps public buildings | g CO2e / kWh |
+| kWh / m² | GHG Emission Reduction | Economic Savings  |
 |   |  Shift to heat pumps in industrial buildings | Stock industrial buildings heated with heat pumps | m² | Emission factor heat pumps
-Energy intensity heat pumps industrial buildings | g CO2e / kWh
-kWh / m² | GHG Emission Reduction | Economic Savings  |
+| Energy intensity heat pumps industrial buildings | g CO2e / kWh |
+| kWh / m² | GHG Emission Reduction | Economic Savings  |
 |   |  Retrofitting single-family buildings for efficient heating | Annual Retrofitting factor for single-family buildings | % | Retrofitting savings factor for single-family buildings | % | Increased Energy Efficiency, GHG Emission Reduction | Economic Savings, Job Creation  |
 |   |  |  |  |  |  |  | Annually 1.3 % until 2025
 Annually 1.7 % between 2026 & 2030  |
@@ -1700,7 +1694,7 @@ Action Plan
 O
 
 |  |  |  |  |  |  |  |  | Annually 2.1 % between 2031 & 2035
-Cumulative 28.1 % until 2035 |
+| Cumulative 28.1 % until 2035 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Retrofitting multi-family buildings for efficient heating | Annual Retrofitting factor for multi-family buildings | % | Retrofitting savings factor for multi-family buildings | % | Increased Energy Efficiency, GHG Emission Reduction | Economic Savings, Job Creation | Annually 1.4 % until 2025
 Annually 1.8 % between 2026 & 2030
@@ -1717,8 +1711,8 @@ Action Plan
 O
 
 |   |  |  |  | Emission factor solar panel rooftop production per year
-Energy intensity direct resource use kWh | g CO2e / kWp year
-kWh / kWh | GHG Emission Reduction |  | (0.8 TWh in total)  |
+| Energy intensity direct resource use kWh | g CO2e / kWp year |
+| kWh / kWh | GHG Emission Reduction |  | (0.8 TWh in total)  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |   |  Electricity from wind onshore | Initial operation wind onshore | kWh | Stock per work coefficient wind onshore | kWh / kWh | Increased Renewable Energy Production, GHG Emission Reduction | Economic Savings, Job Creation | n/a  |
 |   |   |   |   |  Emission factor onshore production | g CO2e / kW  |   |   |   |
@@ -1767,8 +1761,8 @@ O
 |   |   |   |   |  Load factor car commute | Persons per car |   |   |   |
 |   |   |   |   |  Load factor bus commute | Persons per Bus |   |   |   |
 |   |   |   |   |  Average commute length to work (round-trip)
-Proportion commutes | Kilometres
-% |   |   |   |
+| Proportion commutes | Kilometres |
+| % |   |   |   |
 |  Shift to travel by diesel bus | Growth of diesel bus operations | Vkm per Capita | Stock of diesel busses | Vkm | GHG Emission Reduction |  |   |   |
 |   |   |   |  Emission factor fossil diesel WTW | g CO2e / kWh |   |   |   |   |
 |   |   |   |  Load factor car commute | Persons per car |   |   |   |   |
@@ -1790,7 +1784,7 @@ Action Plan
 Action Plan
 
 |   |  |  |  | electricity current grid mix average
-Energy intensity machinery (electricity) | kWh / vkm |  |  |   |
+| Energy intensity machinery (electricity) | kWh / vkm |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Waste | Shift to recycling of solid waste | Growth of waste recycling operations | Tons per Capita | Stock of recycled waste
 Emission factor recycling of solid waste
@@ -2991,22 +2985,22 @@ Die oben genannten Finanzierungsinstrumente von EU, Bund und Land bieten einen f
 | --- | --- | --- | --- | --- | --- |
 |   | 2021 | 2022 | 2023 | 2024 | 2025  |
 |   | 100.000.000
-Euro | 100.000.000
-Euro | 100.000.000
-Euro | 100.000.000
-Euro | 100.000.000
-Euro  |
+| Euro | 100.000.000 |
+| Euro | 100.000.000 |
+| Euro | 100.000.000 |
+| Euro | 100.000.000 |
+| Euro  |
 |   | IHKM-Programm | 70.000.000
-Euro | 70.000.000
-Euro | 70.000.000
-Euro | 70.000.000
-Euro  |
+| Euro | 70.000.000 |
+| Euro | 70.000.000 |
+| Euro | 70.000.000 |
+| Euro  |
 |  Summe | 100.000.000
-Euro | 170.000.000
-Euro | 170.000.000
-Euro | 170.000.000
-Euro | 170.000.000
-Euro  |
+| Euro | 170.000.000 |
+| Euro | 170.000.000 |
+| Euro | 170.000.000 |
+| Euro | 170.000.000 |
+| Euro  |
 |  Konsumtive Mittel (Weiterführung ab 2022)  |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- |
 |   | 2021 | 2022 | 2023 | 2024 | 2025  |
@@ -5865,12 +5859,12 @@ Seite 160 von 228
 |   | dauerhaft | einmalig | befristet  |
 | --- | --- | --- | --- |
 |  **Summe zahlungswirksame Kosten** | **603.740,--**
-ab 2022 | **45.000,--**
-in 2022 | **75.348.875,--**
-**2022-2025**  |
+| ab 2022 | **45.000,--** |
+| in 2022 | **75.348.875,--** |
+| **2022-2025**  |
 |  davon: |  |  |   |
 |  Personalauszahlungen (Zeile 9)* insgesamt | **598.140,--** |  | **2022-2024**
-**5.737.275,--**  |
+| **5.737.275,--**  |
 |  BAU: 11,0 VZÄ (E13, JMB 01.04.2021) |  |  |   |
 |  Produkt 32511100 Städtische Hochbauten |  |  | 1.334.250,--  |
 |  Produkt 32541100 Städtische Verkehrsflächen |  |  | 1.601.100,--  |
@@ -5997,7 +5991,7 @@ in 2024
 in 2025 |   |
 |  davon: |  |  |   |
 |  Auszahlungen für den Erwerb von
-Grundstücken und Gebäuden (Zeile 20) |  |  |   |
+| Grundstücken und Gebäuden (Zeile 20) |  |  |   |
 |  Auszahlungen für Baumaßnahmen
 (Zeile 21) |  | 27.831.000,--
 in 2022
@@ -6008,9 +6002,9 @@ in 2024
 ,--
 in 2025 |   |
 |  Auszahlungen für den Erwerb von
-beweglichem Vermögen (Zeile 22) |  |  |   |
+| beweglichem Vermögen (Zeile 22) |  |  |   |
 |  Auszahlungen für den Erwerb von
-Finanzvermögen (Zeile 23) |  |  |   |
+| Finanzvermögen (Zeile 23) |  |  |   |
 |  Auszahlungen für
 Investitionsförderungsmaßnahmen
 (Zeile 24) |  |  |   |
@@ -6068,15 +6062,15 @@ in 2024
 in 2025 |   |
 |  davon: |  |  |   |
 |  Auszahlungen für den Erwerb von
-Grundstücken und Gebäuden (Zeile 20) |  | 70.000,--
-in 2022 |   |
+| Grundstücken und Gebäuden (Zeile 20) |  | 70.000,-- |
+| in 2022 |   |
 |  Auszahlungen für Baumaßnahmen
-(Zeile 21) |  |  |   |
+| (Zeile 21) |  |  |   |
 |  Auszahlungen für den Erwerb von
-beweglichem Vermögen (Zeile 22) |  | 749.025,--
-in 2022 |   |
+| beweglichem Vermögen (Zeile 22) |  | 749.025,-- |
+| in 2022 |   |
 |  Auszahlungen für den Erwerb von
-Finanzvermögen (Zeile 23) |  |  |   |
+| Finanzvermögen (Zeile 23) |  |  |   |
 |  Auszahlungen für
 Investitionsförderungsmaßnahmen (Zeile
 ) |  |  |   |
@@ -6096,16 +6090,16 @@ Auszahlungen im Bereich der Investitionstätigkeit des Kulturreferats:
 |   | dauerhaft | einmalig | befristet  |
 | --- | --- | --- | --- |
 |  Summe zahlungswirksame Kosten
-(entspr. Zeile S5 des Finanzrechnungsschemas) |  | 220.600,--
-in 2022 |   |
+| (entspr. Zeile S5 des Finanzrechnungsschemas) |  | 220.600,-- |
+| in 2022 |   |
 |  davon: |  |  |   |
 |  Auszahlungen für den Erwerb von Grundstücken und Gebäuden (Zeile 20) |  |  |   |
 |  Auszahlungen für Baumaßnahmen (Zeile 21) |  |  |   |
 |  Auszahlungen für den Erwerb von beweglichem Vermögen (Zeile 22) |  | 72.600,--
-in 2022 |   |
+| in 2022 |   |
 |  Auszahlungen für den Erwerb von Finanzvermögen (Zeile 23) |  |  |   |
 |  Auszahlungen für Investitionsförderungsmaßnahmen (Zeile 24) |  | 148.000,--
-in 2022 |   |
+| in 2022 |   |
 |  Auszahlungen für sonstige Investitionstätigkeit (Zeile 25) |  |  |   |
 Seite 169 von 228
 
@@ -6125,7 +6119,7 @@ in 2024
 in 2025 |   |
 |  davon: |  |  |   |
 |  Auszahlungen für den Erwerb von
-Grundstücken und Gebäuden (Zeile 20) |  |  |   |
+| Grundstücken und Gebäuden (Zeile 20) |  |  |   |
 |  Auszahlungen für Baumaßnahmen
 (Zeile 21) |  | 250.000,--
 in 2022
@@ -6136,9 +6130,9 @@ in 2024
 ,--
 in 2025 |   |
 |  Auszahlungen für den Erwerb von
-beweglichem Vermögen (Zeile 22) |  |  |   |
+| beweglichem Vermögen (Zeile 22) |  |  |   |
 |  Auszahlungen für den Erwerb von
-Finanzvermögen (Zeile 23) |  |  |   |
+| Finanzvermögen (Zeile 23) |  |  |   |
 |  Auszahlungen für
 Investitionsförderungsmaßnahmen (Zeile
 ) |  |  |   |
@@ -9787,8 +9781,6 @@ Der Endbestand an Finanzmitteln hat sich trotz erheblicher Kreditneuaufnahmen im
 |  3. Rechnungsabgrenzungsposten | 178.226.214,75 | 195.182.756,95  |
 |  |   |   |
 |  4. Unselbstständige Stiftungen | 426.783.814,20 | 381.613.522,64  |
-
-6
 |   | 31.12.2023 | 31.12.2022  |
 | --- | --- | --- |
 |  P A S S I V A (in €) | 29.782.887.968,34 | 28.748.117.219,21  |
@@ -10768,7 +10760,7 @@ Teilergebnisrechnung Stiftungen o. e. R. Sozialreferat 2023
 | 7 | + Sonstige Einzahlungen aus laufender Verwaltungstätigkeit | 156.978.989,91 | 169.013.600 | 0 | 169.013.600 | 145.850.379,69 | -23.163.220,31 |
 | 8 | + Zinsen und sonstige Finanzinzahlungen | 125.673.937,43 | 114.325.500 | 0 | 114.325.500 | 96.305.005,13 | -18.020.494,87 |
 | S1 | + Einzahlungen aus laufender Verwaltungstätigkeit
-(+ Zeilen 1 bis 8) | 8.073.394.731,43 | 8.580.068.000 | 0 | 8.580.068.000 | 8.529.430.901,19 | -50.637.098,81 |
+| (+ Zeilen 1 bis 8) | 8.073.394.731,43 | 8.580.068.000 | 0 | 8.580.068.000 | 8.529.430.901,19 | -50.637.098,81 |
 | 9 | - Personalauszahlungen | 2.066.748.017,38 | 2.233.263.500 | 0 | 2.233.263.500 | 2.211.498.346,00 | -21.765.154,00 |
 | 10 | - Versorgungsauszahlungen | 406.290.182,10 | 416.867.500 | 0 | 416.867.500 | 422.102.763,24 | 5.235.263,24 |
 | 11 | - Auszahlungen für Sach- und Dienstleistungen | 1.486.760.775,25 | 1.688.725.400 | 0 | 1.688.725.400 | 1.594.847.172,74 | -93.878.227,26 |
@@ -10776,16 +10768,16 @@ Teilergebnisrechnung Stiftungen o. e. R. Sozialreferat 2023
 | 13 | - Sonstige Auszahlungen aus laufender Verwaltungstätigkeit | 281.453.059,80 | 415.151.900 | 0 | 415.151.900 | 351.445.813,30 | -63.706.086,70 |
 | 14 | - Zinsen und sonstige Finanzauszahlungen | 21.189.684,44 | 64.420.300 | 0 | 64.420.300 | 59.968.690,42 | -4.451.609,58 |
 | S2 | + Auszahlungen aus laufender Verwaltungstätigkeit
-(+ Zeilen 9 bis 14) | 7.522.066.043,49 | 8.525.849.300 | 0 | 8.525.849.300 | 8.408.860.289,43 | -116.989.010,37 |
+| (+ Zeilen 9 bis 14) | 7.522.066.043,49 | 8.525.849.300 | 0 | 8.525.849.300 | 8.408.860.289,43 | -116.989.010,37 |
 | S3 | + Saldo aus laufender Verwaltungstätigkeit
-(+ Saldo S1 und S2) | 551.328.687,94 | 54.218.700 | 0 | 54.218.700 | 120.570.611,76 | 66.351.911,56 |
+| (+ Saldo S1 und S2) | 551.328.687,94 | 54.218.700 | 0 | 54.218.700 | 120.570.611,76 | 66.351.911,56 |
 | 15 | + Einzahlungen aus Investitionszuwendungen | 205.562.372,92 | 190.767.000 | 0 | 190.767.000 | 189.591.493,09 | -1.175.506,91 |
 | 16 | + Einzahlungen aus Investitionsbeiträgen u.ä. Entgelten für Investitionstätigkeit | 13.174.085,52 | 58.300.000 | 0 | 58.300.000 | 68.899.845,19 | 10.599.845,19 |
 | 17 | + Einzahlungen aus der Veräußerung von Sachvermögen | 51.073.675,55 | 16.360.000 | 0 | 16.360.000 | 7.551.143,10 | -8.808.856,90 |
 | 18 | + Einzahlungen aus der Veräußerung von Finanzvermögen | 414.432,48 | 12.100.000 | 0 | 12.100.000 | 12.717.338,65 | 617.338,65 |
 | 19 | + Einzahlungen für sonstige Investitionstätigkeit | 34.900.306,55 | 98.659.300 | 0 | 98.659.300 | 95.515.669,62 | -3.143.630,38 |
 | S4 | + Einzahlungen aus Investitionstätigkeit
-(+ Zeilen 15 bis 19) | 305.124.873,02 | 376.186.300 | 0 | 376.186.300 | 374.275.489,65 | -1.910.810,35 |
+| (+ Zeilen 15 bis 19) | 305.124.873,02 | 376.186.300 | 0 | 376.186.300 | 374.275.489,65 | -1.910.810,35 |
 | 20 | - Auszahlungen für den Erwerb von Grundstücken und Gebäuden | 197.365.710,71 | 252.704.200 | 3.447.917 | 256.152.117 | 221.759.927,97 | -34.392.189,05 |
 | 21 | - Auszahlungen für Baumaßnahmen | 818.028.505,75 | 903.093.900 | 69.151.204 | 872.245.104 | 1.053.576.066,87 | 81.330.962,84 |
 | 22 | - Auszahlungen für den Erwerb von immateriellen und beweglichen Sachvermögen | 45.597.595,87 | 82.005.600 | 48.090.923 | 130.096.523 | 56.887.425,10 | -73.209.098,17 |
@@ -10793,24 +10785,24 @@ Teilergebnisrechnung Stiftungen o. e. R. Sozialreferat 2023
 | 24 | - Auszahlungen für Investitionsförderungsmaßnahmen | 72.079.944,89 | 298.685.700 | 67.414.045 | 366.099.745 | 267.270.318,21 | -98.829.426,95 |
 | 25 | - Auszahlungen für sonstige Investitionstätigkeit | 84.037.124,98 | 92.132.400 | 3.386.340 | 95.518.740 | 112.095.255,85 | 16.576.515,53 |
 | S5 | + Auszahlungen aus Investitionstätigkeit
-(+ Zeilen 20 bis 25) | 1.479.720.637,52 | 1.809.683.800 | 191.506.383 | 2.001.190.183 | 2.059.997.037,21 | 58.806.854,20 |
+| (+ Zeilen 20 bis 25) | 1.479.720.637,52 | 1.809.683.800 | 191.506.383 | 2.001.190.183 | 2.059.997.037,21 | 58.806.854,20 |
 | S6 | + Saldo aus Investitionstätigkeit
-(+ Saldo S6 und S5) | -1.174.595.764,50 | -1.433.497.500 | -191.506.383 | -1.625.003.883 | -1.685.721.547,56 | -60.717.664,55 |
+| (+ Saldo S6 und S5) | -1.174.595.764,50 | -1.433.497.500 | -191.506.383 | -1.625.003.883 | -1.685.721.547,56 | -60.717.664,55 |
 | S7 | + Finanzierungsmittelüberschuss/-fehlbetrag
-(+ Saldo S3 und S6) | -623.267.076,56 | -1.379.278.800 | -191.506.383 | -1.570.785.183 | -1.565.150.935,80 | 5.634.247,01 |
+| (+ Saldo S3 und S6) | -623.267.076,56 | -1.379.278.800 | -191.506.383 | -1.570.785.183 | -1.565.150.935,80 | 5.634.247,01 |
 | 26a | + Einzahlungen aus der Aufnahme von Krediten | 1.107.006.652,02 | 1.300.000.000 | 1.000.000.000 | 2.300.000.000 | 1.465.632.000,00 | -834.368.000,00 |
 | 26b | + Einzahlungen aus der Kreditaufnahme wirtschaftlich vergleichbaren Vorgängen | 0,00 | 0 | 0 | 0 | 0,00 | 0,00 |
 | 26c | + Einzahlungen aus Schuldendiensthilfen zur Tilgung von Krediten | 0,00 | 0 | 0 | 0 | 0,00 | 0,00 |
 | S8 | + Einzahlungen aus Finanzierungstätigkeit
-(+ Zeilen 26a bis 26c) | 1.107.006.652,02 | 1.300.000.000 | 1.000.000.000 | 2.300.000.000 | 1.465.632.000,00 | -834.368.000,00 |
+| (+ Zeilen 26a bis 26c) | 1.107.006.652,02 | 1.300.000.000 | 1.000.000.000 | 2.300.000.000 | 1.465.632.000,00 | -834.368.000,00 |
 | 27a | - Auszahlungen für die Tilgung von Krediten | 68.646.986,20 | 50.635.000 | 0 | 50.635.000 | 50.838.312,89 | 203.312,89 |
 | 27b | - Auszahlungen für die Tilgung von der Kreditaufnahme wirtschaftlich vergleichbaren Vorgängen | 0,00 | 0 | 0 | 0 | 0,00 | 0,00 |
 | S9 | + Auszahlungen aus Finanzierungstätigkeit
-(+ Zeilen 27a und 27b) | 68.646.986,20 | 50.635.000 | 0 | 50.635.000 | 50.838.312,89 | 203.312,89 |
+| (+ Zeilen 27a und 27b) | 68.646.986,20 | 50.635.000 | 0 | 50.635.000 | 50.838.312,89 | 203.312,89 |
 | S10 | + Saldo aus Finanzierungstätigkeit
-(+ Saldo S6 und S9) | 1.038.359.665,82 | 1.249.365.000 | 1.000.000.000 | 2.249.365.000 | 1.414.793.687,11 | -834.571.312,89 |
+| (+ Saldo S6 und S9) | 1.038.359.665,82 | 1.249.365.000 | 1.000.000.000 | 2.249.365.000 | 1.414.793.687,11 | -834.571.312,89 |
 | S11 | + Finanzmittelüberschuss/-fehlbetrag
-(+ Saldo S7 und S10) | 415.092.589,26 | -129.913.800 | 808.493.617 | 678.579.817 | -150.357.248,69 | -828.937.065,88 |
+| (+ Saldo S7 und S10) | 415.092.589,26 | -129.913.800 | 808.493.617 | 678.579.817 | -150.357.248,69 | -828.937.065,88 |
 |  Ein- und Auszahlungsarten | Ergebnis des Vorjahres | Gesamtermächtigung des Haushaltsjahres |   |   | Ist-Ergebnis des Haushaltsjahres | Vergleich Ist / Fortgeschriebener Planansatz  |   |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |   |   |  Ansatz (inkl. NHPL) | übertragene Haushalts-ermächtigungen aus Vorjahren | Fortgeschriebener Planansatz  |   |   |   |
@@ -12607,11 +12599,11 @@ durch Schätzung auf der Grundlage der Angaben im Hhpl-By und Annahmen der Bevö
 Die vollständigen Belastungen der dem Haushaltsjahr vorangegangenen fünf Haushaltsjahre für Krankenhaus- und Bezirksumlage stellen sich wie folgt dar:
 
 |   | 2022
-Mio. € | 2021
-Mio. € | 2020
-Mio. € | 2019
-Mio. € | 2018
-Mio. €  |
+| Mio. € | 2021 |
+| Mio. € | 2020 |
+| Mio. € | 2019 |
+| Mio. € | 2018 |
+| Mio. €  |
 | --- | --- | --- | --- | --- | --- |
 |  Bezirksumlage | 687,9 | 681,1 | 646,5 | 572,8 | 573,9  |
 |  Krankenhausumlage | 41,0 | 43,8 | 41,1 | 45,3 | 43,4  |
@@ -13129,8 +13121,6 @@ Zum 31.12.2023 beträgt der Abrechnungsstau insgesamt 2.765.091.837,00 €. Die 
 • Infrastrukturbauten (6.152.107,36 €)  |
 |  AiB Hochbaumaßnahmen | 1.726.606.342,11 | • Gebäude (1.726.606.342,11 €)  |
 |  AiB Tiefbaumaßnahmen | 545.358.784,22 | • Infrastrukturbauten (545.358.784,22 €)  |
-6
-
 |  AiB Maschinen und technische Anlagen | 33.181.867,35 | • Technische Anlagen und Maschinen, Fahrzeuge (33.181.867,35 €)  |
 | --- | --- | --- |
 |  AiB Fahrzeuge | 705.231,90 | • Technische Anlagen und Maschinen, Fahrzeuge (705.231,90 €)  |
@@ -14980,21 +14970,19 @@ In der nachfolgend aufgeführten Übersicht ist erkennbar, welche U-Bahn-Altlini
 |  U 1 Süd | 23.03.15 | Nein | 0  |
 |  U 6 Nord |  | Nein | 0  |
 |  U 1 West |  | Nein | 0  |
-1
-
 |  Nordk. U-Bf Alte Heide | 27.03.15 | Nein | 0  |
 | --- | --- | --- | --- |
 |  Umbau U-Bf Fröttmaning |  | Nein | 0  |
 |  Umbau Marienplatz |  | Nein | 0  |
 |  Bf-Kopf Freimann Süd
-=Verwendungsbestätigung | 01.08.14 | Nein | 0  |
+| =Verwendungsbestätigung | 01.08.14 | Nein | 0  |
 |  Aufzug Stachus | 21.08.08 | Nein | 0  |
 |  U 6-Nord Fröttmaning –
-Garching Hochbrück | 27.11.07 | nein, Bauherr Stadt
-Garching | 0  |
+| Garching Hochbrück | 27.11.07 | nein, Bauherr Stadt |
+| Garching | 0  |
 |  U 6-Nord Garching
-Hochbrück -Forschg. | 06.12.17 | nein, Bauherr Stadt
-Garching | 0  |
+| Hochbrück -Forschg. | 06.12.17 | nein, Bauherr Stadt |
+| Garching | 0  |
 |  P+R Aidenbachstr. | 18.02.94 | Nein | 0  |
 |  P+R Fürstenried West | 19.12.94 | Nein | 0  |
 |  P+R Kl. Großhadern | 02.03.04 | Nein | 0  |
@@ -15320,8 +15308,8 @@ München
 # Kapitalflussrechnung für das Geschäftsjahr vom 1. Januar bis 31. Dezember 2023
 
 |   | 2023
-T€ | 2022
-T€  |
+| T€ | 2022 |
+| T€  |
 | --- | --- | --- |
 |  Jahresergebnis | 1.611,5 | 434,1  |
 |  Abschreibungen auf Gegenstände des Anlagevermögens | 0,0 | 3,4  |
@@ -15515,7 +15503,6 @@ Der Oberbürgermeister und die ehrenamtlichen Mitglieder bilden den Stadtrat der
 |  Menges | Dr. Evelyne | CSU |   |
 |  Mentrup | Lars | SPD |   |
 |  Mirlach | Veronika | CSU |   |
-6
 |  Müller | Christian | SPD | 01.01.23 - 30.11.23  |
 | --- | --- | --- | --- |
 |  Naz | Cumali | SPD |   |
@@ -15610,8 +15597,6 @@ Betreuungsreferat: Sozialreferat
 |  Gerd und Annemarie Thomas-Stiftung | Buk 9017  |
 |  Heiliggeistspital-Stiftung München | Buk 9019  |
 |  Irma Wenke-Stiftung | Buk 9020  |
-9
-
 |  Johann Menrad-Stiftung | Buk 9022  |
 | --- | --- |
 |  Joseph und Maria Schöpf-Altenhilfe-Stiftung | Buk 9023  |
@@ -23124,11 +23109,11 @@ Betreuungsreferat: Sozialreferat
 |  Emmy Franz-Stiftung | 8034  |
 |  Erika Engelhardt-Stiftung | 8035  |
 |  Ernst Steinkopf-Hartig-Stiftung
-(aufgelöst in 2023) | 8036  |
+| (aufgelöst in 2023) | 8036  |
 |  Familie Christian Ernst Fischer-Stiftung | 8037  |
 |  Felix Voglrieder-Wohltätigkeitsstiftung | 8038  |
 |  Ferdinand und Therese Reingruber-Stiftung
-(aufgelöst in 2022, Übertragung des Vermögens in 2023) | 8039  |
+| (aufgelöst in 2022, Übertragung des Vermögens in 2023) | 8039  |
 |  Florentine Louis-Stiftung | 8040  |
 |  Fonds für gemeinnützige und wohltätige Zwecke | 8041  |
 |  Fonds Münchener Altenhilfe | 8042  |
@@ -23139,7 +23124,7 @@ Betreuungsreferat: Sozialreferat
 |  Franz, Therese, Isabella, Hildegunde Schulmeier-Stiftung | 8047  |
 |  Friedrich und Marianne Schönmann-Stiftung | 8048  |
 |  Fritz Riccius-Stiftung
-(aufgelöst in 2023, Übertragung des Vermögens in 2024) | 8049  |
+| (aufgelöst in 2023, Übertragung des Vermögens in 2024) | 8049  |
 |  Gabi und Dr. Erhart Stägmeyr-Stiftung | 8050  |
 |  Georg Niedermair-Stiftung | 8051  |
 |  Georg und Walburga Heitzinger-Stiftung | 8052  |
@@ -23149,8 +23134,6 @@ Betreuungsreferat: Sozialreferat
 |  Gottfried und Lina Fischer-Stiftung | 8056  |
 |  Hans Mahnert-Stiftung | 8057  |
 |  Heinrich Flaschenträger und Elisabeth Rath-Stiftung | 8058  |
-
-4
 |  Heinrich und Amalie Lang-Stiftung | 8059  |
 | --- | --- |
 |  Heinrich und Elsa Hackspiel-Stiftung | 8060  |
@@ -23181,14 +23164,14 @@ Betreuungsreferat: Sozialreferat
 |  Marie-Mattfeld-Hänsel- und Gretlheim-Stiftung | 8085  |
 |  Mark Lothar-Stiftung | 8086  |
 |  Mathias Perl-Stiftung
-(aufgelöst in 2023) | 8087  |
+| (aufgelöst in 2023) | 8087  |
 |  Michael und Anna Schweninger-Stiftung | 8088  |
 |  Moritz Freiherr von Mettingh-Stiftung | 8089  |
 |  Münchner Kindl-Heim-Stiftung | 8090  |
 |  Münchner Sozialstiftung | 8091  |
 |  Münchner Waisenkinder-Stiftung | 8092  |
 |  Ottilie Ohland-Stiftung
-(aufgelöst in 2022, Übertragung des Vermögens in 2023) | 8093  |
+| (aufgelöst in 2022, Übertragung des Vermögens in 2023) | 8093  |
 |  Peter und Sofie Parzinger-Stiftung | 8094  |
 |  Prof. Dr. Kitt-Stiftung | 8095  |
 |  Rose und Alphonse Pichler-Stiftung | 8096  |
@@ -23206,10 +23189,8 @@ Betreuungsreferat: Sozialreferat
 |  Stiftung zur Förderung von alleinerziehenden Müttern | 8108  |
 |  Stiftung zur Unterstützung von verschuldeten Personen | 8109  |
 |  Stiftungsfonds des ehemaligen Rekonvaleszenten- und
-Unterstützungsvereins München | 8110  |
+| Unterstützungsvereins München | 8110  |
 |  Stiftungsfonds Ludwig und Lina Petuel | 8111  |
-
-5
 |  Werner Friedmann-Stiftung | 8112  |
 | --- | --- |
 |  Wilhelm Dittrich-Stiftung | 8113  |
@@ -23752,7 +23733,7 @@ Eigenkapitalquote II
 |  Berechnung | Wert zum 31.12.2023 | Wert zum 31.12.2022  |
 | --- | --- | --- |
 |  Eigenkapital + SoPo aus Zuwendungen u. Beiträgen u.ähnl. Entgelten u. für Treuhandverm.
-X 100 | 54,8% | 57,9%  |
+| X 100 | 54,8% | 57,9%  |
 |  Bilanzsumme |  |   |
 
 Aussagewert:
@@ -25305,10 +25286,10 @@ Das Referat hat keine produktübergreifenden Ziele zum Haushalt 2023 vorgelegt.
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  1 | 32541100 | Städtische Verkehrsflächen | PL2: Aufwand für Unterhalt und Betrieb der Straßen-beleuchtung (in € / Stück) (F) | 102 | 159,79 | 57,31 | 55,92  |
 |   |  Betroffenes Ziel: „Die größtmögliche Verfügbarkeit von Straßen, Wegen und Plätzen wird durch das Sicherstellen der Verkehrssicherungspflicht und die Durchführung des Unterhalts gewährleistet.“
-Erläuterung der Abweichung: Die Finanzkennzahl wurde im Vergleich zum Plan überschritten. Dies ist auf höhere Stromkosten auf Grund der stark gestiegenen Strompreise zurückzuführen.  |   |   |   |   |   |   |
+| Erläuterung der Abweichung: Die Finanzkennzahl wurde im Vergleich zum Plan überschritten. Dies ist auf höhere Stromkosten auf Grund der stark gestiegenen Strompreise zurückzuführen.  |   |   |   |   |   |   |
 |  2 | 32511100 | Städtische Hochbauten | PL 1: Eingesetzte Mittel Vermieter Kommunalreferat für investive Projekte (in Mio. €) (F) | 107 | 153,69 | 47,18 | 44,30  |
 |   |  Betroffenes Ziel: „Bei den betreuten Projekten bzgl. des Neubaus bzw. der Generalinstandsetzung städtischer Gebäude sind die vorgegebenen Kosten einzuhalten.“
-Erläuterung der Abweichung: Die Finanzkennzahl wurde im Vergleich zum Plan überschritten. Dies ist auf höhere Ausgaben, insbesondere bei den Modulbauen für Ukraine-Flüchtlinge, zurückzuführen.  |   |   |   |   |   |   |
+| Erläuterung der Abweichung: Die Finanzkennzahl wurde im Vergleich zum Plan überschritten. Dies ist auf höhere Ausgaben, insbesondere bei den Modulbauen für Ukraine-Flüchtlinge, zurückzuführen.  |   |   |   |   |   |   |
 |  3 | 32541200 | Ingenieurbauwerke | PL 2: Aufwand für Unterhalt der Brücken und Unter-führungen (in € / m²) (F) | 15 | 19,45 | 3,99 | 25,81  |
 |   |  Betroffenes Ziel: „Die größtmögliche Verfügbarkeit der Brücken und Unterführungen wird durch das Sicherstellen der Erfüllung der Verkehrssicherungspflicht und die Durchführung des Unterhalts gewährleistet.“
 Erläuterung der Abweichung: Die Finanzkennzahl wurde im Vergleich zum Plan überschritten. Dies ist insbesondere auf die Rückbaumaßnahme der Unterführung Ratzinger Platz zurückzuführen. Die entsprechenden Mittel waren investiv veranschlagt, mussten jedoch konsumtiv verbucht werden.  |   |   |   |   |   |   |
@@ -27902,7 +27883,7 @@ Es liegen keine berichtspflichtigen Abweichungen vor.
 |  Ifd. Nr. | Prod.Nr. | Produktbezeichnung | Kennzahl (Bezeichnung) | Plan 2023 | Ergebnis 2023 | Abw. absolut | Abw. %  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  1 | 39424100 | Bereitstellung und Betrieb von Sportstätten | Nutzungszeiten
-Bezirkssportanlagen (LM) | 180.000 | 110.262 | -69.738 | -38,74  |
+| Bezirkssportanlagen (LM) | 180.000 | 110.262 | -69.738 | -38,74  |
 |   |  Betroffene/s Ziel/e: Die Auslastung der kommunalen Bezirkssportanlagen im Rahmen des Belegungsmanagements wird erhöht.
 Erläuterung der Abweichung/en: Die Leistungsmenge wurde im Vergleich zum Plan erheblich unterschritten. Einer Neubewertung bei der Berechnung der Nutzungszeiten in Bezirkssportanlagen während der Feiertage wird in Zukunft durch eine Anpassung der Planzahl Rechnung getragen.  |   |   |   |   |   |   |
 
@@ -28779,13 +28760,13 @@ Das Referat hat keine produktübergreifenden Ziele zum Haushalt 2023 vorgelegt.
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  1 | 40311100 | Hilfen zum Lebensunterhalt (3. Kapitel SGB XII) | Anzahl der Personen, die beschäftigungsfördernde Maßnahmen erfolgreich abschließen (W) | 2 | 1,00 | -1,00 | -50,00  |
 |   |  Betroffene/s Ziel/e: (2) Durch beschäftigungsfördernde und stabilisierende Maßnahmen ist die Teilhabe von Leistungsbezieher*innen am Arbeitsleben und am Leben in der Gesellschaft ermöglicht.
-Erläuterung der Abweichung/en: Die Zielwerte wurden im Vergleich zum Plan weit unterschritten, weil deutlich weniger Personen mit Maßnahmen erreicht und gefördert werden konnten. Die erwartete Steigerung ist nicht eingetreten; ein Wechsel ins SGB II finden kaum noch statt. Der Krankheitsstand nimmt zu. Dementsprechend konnten die Maßnahmen auch von weniger Personen erfolgreich abgeschlossen werden.  |   |   |   |   |   |   |
+| Erläuterung der Abweichung/en: Die Zielwerte wurden im Vergleich zum Plan weit unterschritten, weil deutlich weniger Personen mit Maßnahmen erreicht und gefördert werden konnten. Die erwartete Steigerung ist nicht eingetreten; ein Wechsel ins SGB II finden kaum noch statt. Der Krankheitsstand nimmt zu. Dementsprechend konnten die Maßnahmen auch von weniger Personen erfolgreich abgeschlossen werden.  |   |   |   |   |   |   |
 |  2 | 40312100 | Leistungen für Unterkunft und Heizung | Durchschnittliche Abweichung zwischen anerkannten und tatsächlichen KdU je Bedarfsgemeinschaft und Monat in % (W) | 4 | 2,90 | -1,10 | -27,50  |
 |   |  Betroffene/s Ziel/e: (2) Der Mietpreisentwicklung in München ist Rechnung getragen. Insbesondere entsprechen die im Einzelfall anerkannten laufenden Kosten der Unterkunft weitestgehend den tatsächlich anfallenden Kosten.
-Erläuterung der Abweichung/en: Der Zielwert wurde überschritten, da die Kosten für die Unterkunft in München permanent steigen. Aufgrund der Anerkennung höherer Kosten bei der KdU ist die Abweichung geringer.  |   |   |   |   |   |   |
+| Erläuterung der Abweichung/en: Der Zielwert wurde überschritten, da die Kosten für die Unterkunft in München permanent steigen. Aufgrund der Anerkennung höherer Kosten bei der KdU ist die Abweichung geringer.  |   |   |   |   |   |   |
 |  3 | 40312900 | Verwaltungsaufgaben der Grundsicherung für Arbeitssuchende | Aufwendungen für freiwillige Leistungen für Leistungsberechtigte im SGB II (F) (W) | 286.239 | 514.583,00 | 228.344,00 | 79,77  |
 |   |  Betroffene/s Ziel/e: (2) Für Menschen im Leistungsbezug des SGB II sind die Auswirkungen der Armut durch freiwillige Leistungen (z.B. München-Pass, IsarCard S) ansatzweise gelindert.
-Erläuterung der Abweichung/en: Höhere Leistungen durch das Projekt "Austausch weißer Ware gegen Energieeffizienterer Geräte".  |   |   |   |   |   |   |
+| Erläuterung der Abweichung/en: Höhere Leistungen durch das Projekt "Austausch weißer Ware gegen Energieeffizienterer Geräte".  |   |   |   |   |   |   |
 |  Ifd. Nr. | Prod.Nr. | Produktbezeichnung | Kennzahl (Bezeichnung) | Plan 2023 (Nachtrag) | Ergebnis 2023 | Abw. absolut | Abw. %  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  4 | 40313100 | Wirtschaftliche Hilfen für Geflüchtete | P: Anzahl der eingelegten Widersprüche gesamt (2) (W) | 130 | 73 | -57,00 | -43,85  |
@@ -28797,10 +28778,10 @@ Des Weiteren waren in 2023 die Personenzahlen im Vergleich zu 2022 rückläufig 
 Ebenso wirkt sich dies auf die Erstattungssumme bei den Transferleistungen aus, da auch hier mit einem höheren Kostenaufwand und somit mit einer höheren Erstattungssumme geplant wurde.  |   |   |   |   |   |   |
 |  5 | 40315400 | Soziale Einrichtungen für Wohnungslose | P: Kosten pro Jahr und Platz für die Vermittlung in dauerhaftes Wohnen (nur pädagogisches Personal) in Tsd. € (2) (F) | 4,07 | 3,02 | -1,05 | -25,80  |
 |   |  Betroffene/s Ziel/e: Für möglichst alle wohnungslosen Haushalte soll eine Wohnperspektive erstellt werden mit dem Ziel der Vermittlung in dauerhaftes Wohnen.
-Erläuterung der Abweichung/en: Für 2023 wurden höhere Kosten pro Platz im Bereich Pädagogik kalkuliert. Die Platzkosten Pädagogik 2022 sind in 2023 tatsächlich fast gleich geblieben (abgerundet 3 Tsd.).  |   |   |   |   |   |   |
+| Erläuterung der Abweichung/en: Für 2023 wurden höhere Kosten pro Platz im Bereich Pädagogik kalkuliert. Die Platzkosten Pädagogik 2022 sind in 2023 tatsächlich fast gleich geblieben (abgerundet 3 Tsd.).  |   |   |   |   |   |   |
 |  6 | 40315600 | Soziale Einrichtungen und Angebote für Geflüchtete und Zuwander*innen | PL 1: Betreute in Unterkünften (1) (W) | 6.240 | 12.399 | 6.159,00 | 98,70  |
 |   |  Betroffene/s Ziel/e: Zur Vermeidung von Obdachlosigkeit und zur Sicherstellung von Betreuung sollen unbegleitet eingereiste heranwachsende Flüchtlinge, geflüchtete Einzelpersonen und Familien sowie vulnerable Gruppen Geflüchteter in geeigneten Wohnformen und angemieteten Wohnungen untergebracht werden.
-Erläuterung der Abweichung/en: Aufgrund der insgesamt gestiegenen Anzahl von Geflüchteten, insbesondere aus der Ukraine, werden weiterhin staatliche und dezentrale Unterkünfte zur Verfügung gestellt. Weitere Eröffnung LBH Neuherbergstr. LBH Hansastr., Kronstadter Str.36  |   |   |   |   |   |   |
+| Erläuterung der Abweichung/en: Aufgrund der insgesamt gestiegenen Anzahl von Geflüchteten, insbesondere aus der Ukraine, werden weiterhin staatliche und dezentrale Unterkünfte zur Verfügung gestellt. Weitere Eröffnung LBH Neuherbergstr. LBH Hansastr., Kronstadter Str.36  |   |   |   |   |   |   |
 |  7 | 40363400 | Hilfe für junge Volljährige/ Inobhutnahme (§§ 41, 42, 43 SGB VIII) | Anteil der Inobhutnahmen § 42 SGB VIII in Bereitschaftspflege mit einer Dauer von unter 6 Monaten (W) | 60 | 37,30 | -22,70 | -37,83  |
 |   |   |   |  Inobhutnahmen § 42a und § 42 SGB VIII nur von ausländischen Kindern und Jugendlichen nach unbegleiteter Einreise (umF) (Jahresgesamtzahl) (LM) | 900 | 1.160,00 | 260,00 | 28,89  |
 |   |   |   |  > davon vorläufige Inobhutnahmen nach § 42a SGB VIII (LM) | 850 | 1.087,00 | 237,00 | 27,88  |
@@ -28813,7 +28794,7 @@ Erläuterung der Abweichung/en: Kinderschutzbereich ist nicht planbar und steuer
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  8 | 40363600 | Eingliederungshilfe für seelisch behinderte Kinder und Jugendliche | Anzahl der Plätze im Modellprojekt inklusive Förder- und Betreuungsangebote an Schulen (LM) | 37 | 51,00 | 14,00 | 37,84  |
 |   |  Betroffene/s Ziel/e: Durch eine 100 %-ige Auslastung der vorhandenen Plätze im Modellprojekt inklusiver Förder- und Betreuungsangebote an Schulen soll die Teilhabe am Leben in der Gesellschaft von betroffenen Kindern und Jugendlichen (langfristig) gewährleistet werden.
-Erläuterung der Abweichung/en: Hier erfolgte der Ausbau der Plätze im Modellprojekt inklusive Förder- und Betreuungsangebote an Schulen.  |   |   |   |   |   |   |
+| Erläuterung der Abweichung/en: Hier erfolgte der Ausbau der Plätze im Modellprojekt inklusive Förder- und Betreuungsangebote an Schulen.  |   |   |   |   |   |   |
 |  9 | 40522300 | Vermittlung in Dauerhaftes Wohnen | PL 1: Erlöse aus Registrierung und Vergabe in Tsd. € (2) (F) | 87,5 | 36,98 | -50,52 | -57,74  |
 |   |  Betroffene/s Ziel/e: Wohnungssuchende mit niedrigem Einkommen sollen durch Registrierung für geförderte Wohnungen und anschließender Vergabe mit preiswertem Wohnraum versorgt werden.
 Erläuterung der Abweichung/en: Der Planwert 2023 wurde auf Basis einer falschen Annahme zu hoch kalkuliert. Ab der Budgetplanung 2024 wurde der Planwert daher nach unten korrigiert. Darüber hinaus erfolgt die Rechnungsstellung bei einer Wohnungsvergabe mit festem Verwendungszweck, wodurch kein Mahnverfahren angestoßen wird.  |   |   |   |   |   |   |

@@ -75,12 +75,6 @@ The list of figures identifies the titles and locations (page numbers) of all vi
 |  Figure 4 | Fuels used in district heat production in 2021. | 16  |
 |  Figure 5 | Emissions from road traffic by vehicle types and road types | 17  |
 |  Figure 6 | Mode of transportation in Päijät-Häme region in 2021. | 18  |
-Lahti
-
-Climate Neutrality Action Plan
-
-O
-
 |  Figure 7 | Carbon sinks of vegetation in Lahti as estimated in 2019. | 18  |
 | --- | --- | --- |
 |  Figure 8 | Emission scenarios for 2025-2030 with reductions from actions in existing strategies included. | 30  |
@@ -334,12 +328,6 @@ Energy use by fuel from district heating production (direct emissions). Data rec
 |  Buildings |  |  |   |
 |  Area of oil heated buildings, m2 | 1 090 641 | naa | na  |
 |  Area of gas heated buildings, m2 | 252 393 | na | na  |
-Lahti
-
-Climate Neutrality Action Plan
-
-O
-
 |  Area of electricity heated buildings, m2 | na | 1 315 616 | na  |
 | --- | --- | --- | --- |
 |  Natural Gas in district heating |  |  |   |
@@ -375,12 +363,6 @@ Emissions are calculated with Sitowise's CO2-report model. The model is based on
 |  Road transport | 196,1 |  |  | 196,1 | 152,6 |  |  | 152,6  |
 |  Rail and waterborne | 8,4 |  |  | 8,4 | 5,2 |  |  | 5,2  |
 |  Waste^{a} | 53,1 |  |  | 53,1 | 22,0 |  |  | 22,0  |
-Lahti
-
-Climate Neutrality Action Plan
-
-O
-
 |  Industrial Process and Product Use (IPPU) | 135,2 |  |  | 135,2 | ns |  |  | 22,9  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Agricultural, Forestry and Land Use (AFOLU) | 13,2 |  |  | 13,2 | 7,6 |  |  | 7,6  |
@@ -583,12 +565,6 @@ A-2.1: List of relevant policies, strategies &amp; regulations
 |  Strategy | Local | Strategy of the City of Lahti | Carbon neutrality by 2025 is an aim set in the city strategy. The strategy guides all activities of the city and outlines the ways in which Lahti will succeed in the future. | Very relevant. The strategy is implemented through five key projects, of which one is called Carbon neutral 2025. | -Ensure climate and sustainability targets are kept in the strategy when it is updated.  |
 |  Policy/Action Plan | Local | Climate programme of the City of Lahti | Contains 96 climate actions in six sectors: Climate governance, Energy, Transportation, Circular economy and sustainable consumption, Carbon sinks and compensation, and Adaptation. | Very relevant | -Implementation - Updated annually (in 2025 to match the CCC work)  |
 |  Action Plan | Local | Sustainable Urban Mobility Plan (SUMP) | Based on city strategy and EU comission guidelines. Is used for guiding citizens towards more | Very relevant | -Implementation -Updated along the Master Plan cycle  |
-Lahti
-
-Climate Neutrality Action Plan
-
-4
-
 |   |  |  | sustainable mobility. |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Plan | Local | City Master Plan | Guides urban development, and implements city strategy and environment targets. | Very relevant | -implementation
@@ -601,12 +577,6 @@ Is related to 2030 EU Biodiversity Strategy
 Will be included in the Green Area Plan, which is under update and will be accepted in early 2024.  |
 |  Action Plan | Local (only at city organisation ) | Circular economy action plan for departments of urban planning and urban infrastructure | Guides the circular economy and climate actions at the departments | Very relevant, with practical actions. | -Under update  |
 |  Policy/Plan | Local | Environmental programme of the city | Guides the environment work of the entire city corporation on a strategic level. | Relevant | -Will be updated in 2023  |
-Lahti
-
-Climate Neutrality Action Plan
-
-5
-
 |  Policy/Action Plan | Regional | Nature Step to health | The program connects the health and environment targets of Päijät-Häme region. | Very relevant. The program has five detailed targets of which one is about climate change mitigation and adaptation. | -implementation -lasts 10 years and includes several projects  |
 | --- | --- | --- | --- | --- | --- |
 |  Action Plan | Regional | Carbon Neutral Päijät-Häme 2030: Climate Action Roadmap | The Climate Action Roadmap presents actions towards carbon neutrality. | Relevant. The city of Lahti and Lahti Energy are important stakeholders. | -implementation - The Roadmap is updated annually, and the first follow-up of actions was done in March 2022  |
@@ -614,12 +584,6 @@ Climate Neutrality Action Plan
 |  Policy | Regional | Innovation Ecosystem Agreement | A long-term agreement between State and university cities, with the aim to speed up innovations in carbon reduction, digitalisation and wellbeing. | Relevant, with the key strategic content Carbon-neutral circular economy and sports business | -implementation -Development Center for Carbon Neutral Construction Industry  |
 |  Policy/Action Plan | Regional | Regional Energy vision | A shared vision for fossil-free energy production. | Very relevant | To be created in autumn 2023  |
 |  Regulation/policy | National | Finnish Climate Act | National legislation | Relevant | -Poses obligations on  |
-Lahti
-
-Climate Neutrality Action Plan
-
-6
-
 |   |  |  | concerning climate change policy. |  | the authorities (e.g. municipalities) -Entered into force in 2022 but might be withdrawn in 2023  |
 | --- | --- | --- | --- | --- | --- |
 |  Strategy | National | Climate neutral Finland 2035 – National Climate and Energy Strategy | Outlines measures by which Finland will meet the EU's climate commitments for 2030 and achieve the targets set in the Climate Change Act. | Relevant |   |
@@ -772,12 +736,6 @@ A-3.1: Systems &amp; stakeholder mapping
 | --- | --- | --- | --- | --- |
 |  System description | Stakeholders involved | Network | Influence | Interest  |
 |  Mobility in inner city | City organisation (urban planning, mobility planning, public transport company, city infrastructure, parking), parking companies, EV charging companies, mobility service providers, residents, local entrepreneur (shops/services), Chamber of commerce, employers, national and regional authorities, | Vision for the city center working group, Green electrification of mobility (GEM) cluster, SUMP working group | Facilitation or restriction of sustainable mobility | -Attracting more visitors and clients in the city center (shops and services)-Creating an inviting atmosphere in the city center (clean, green, fresh, urban)-Emission reduction through sustainable mobility-Efficient public transport network-Improved conditions for biking and walking  |
-Lahti
-
-Climate Neutrality Action Plan
-
-#
-
 |  Freight and logistics | Labio, Ren-Gas, Ladec, Ministry of Transport and Communication, Finnish Transport Infrastructure Agency, distributors of fuel, producers of electric chagers, largest freight companies | GEM, Regional Council of Päijät-Häme | Planning of transport infrastructure, fueling, speed limits, commissioning of low-emission vehicles in the region | -The city has very little possibilities to reduce emissions of road transport passing through Lahti -National targets related to road transport -Electrification of freigth and logistics vehicles -Gas and hydrogen fuels and their distribution  |
 | --- | --- | --- | --- | --- |
 |  Local energy production | Planning authorities (city and regional), authorities for environmental protection, district heating company, wind energy companies, solar panel companies, grid company, electricity companies, service providers for energy renovations, residents, research institutes, Ladec | Regional Council of Päijät-Häme, GEM | Estimation of environmental effects of energy production, planning of suitable places for solar panels and wind power, conducting energy renovation | -Exploring the possibilities of wind and solar energy -Carbon-neutral district heating  |
@@ -957,18 +915,12 @@ Module B-1 "Climate Neutrality Scenarios and Impact Pathways" should list impact
 |  Energy systems  |   |   |   |   |   |
 |  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (co-benefits)  |
 |  Energy systems | Technology/infrastructure | Electric boilers for district heating | 1stboiler operating Phasing out natural gas in district heating | Full expected impacts of fossil free district heating -67 kt CO2e | Increased energy security
-Improved air quality  |
+| Improved air quality  |
 |   |   |  CCU linked to district heating | Scaling up  |   |   |
 |   |   |  Developing storing possibilities for district heat | Implementation |   | Circular economy and business potential  |
 |   |   |  Increase of solar energy (private/domestic and industrial scale) | Scaling up to 8 MW p | Decrease in consumption of grid-electricity | Financial impacts for city organisations and other stakeholders (investment needs and savings)  |
 |   |   |   |   |  Decreasing the national emission factor -0,3 kt CO2e  |   |
 |   |   |  New technical solutions for energy needs of industry based on energy efficiency and circular economy | New solutions available and tested | Decrease in emissions from industry – 15 kt CO2e (parly through decrease in national emission factor)  |   |
-Lahti
-
-Climate Neutrality Action Plan
-
-9
-
 |   | Governance & policy | A joint regional energy vision | Increased investments in fossile free nergy production in the area. Increased circular economy. | Decreasing the national emission factor Amx potentia by 2030 70 MW→ -8,9 kt CO2e |   |
 | --- | --- | --- | --- | --- | --- |
 |   |   |  clarifying permit processes for renewable energy production | Plans for wind energy in the area | Decreasing the national emission factor Amx potentia by 2030 70 MW ☐ -8,9 kt CO2e  |   |
@@ -979,12 +931,6 @@ Climate Neutrality Action Plan
 |   |  Finance and funding | Investigating potential for possibilities and cost efficiency of increasing biogas production. Securing investments. | Increasing biogas production | Increase of prudction to 25 GWh →-2,5 ktCO2e  |   |
 |   |   |  Securing funding for CCU process | CCU operating | Full expected impacts of fossil free district heating -67 kt CO2e  |   |
 |   |  Learning and capacity building | Mapping and analysing the potential of waste heat recovery in new sites (industry) | Implementation in best available sites | not estimated  |   |
-Lahti
-
-Climate Neutrality Action Plan
-
-0
-
 |   |  | Communication on the benefits of district heating (low emission and cost beneficial, careless option) | Increased number of buildings has joined district heating network | Close to fossil free separate heating by 2030 □ -60 kt CO2e |   |
 | --- | --- | --- | --- | --- | --- |
 |   |   |  Updating the building registers for separate heating sources. | Increased ability to support energy renovations | Close to fossil free separate heating by 2030 □ -60 kt CO2e  |   |
@@ -994,17 +940,11 @@ Climate Neutrality Action Plan
 |  Mobility & transport | Technology/infrastructure | Implementation plan for charging infrastructure of (EVs) in public buildings and areas | Number of public charging stations increased and network covers the whole city | Estimated additional impact of SUMP actions: 1.3 ktCO2e / year in 2023-2030 | Improving air quality and its effect on health  |
 |   |   |  Improved walking and cycling environment | Increase in share journeys made by walking and cycling |   | Health benefits of walking and cycling  |
 |   |  Governance & policy | Collaboration with cities and other levels of governance on national governments role in increasing transport emissions | Increased obligation for low-emission fuel distribution | Not assessed | Reduction of noise
-Improvement of traffic safety  |
+| Improvement of traffic safety  |
 |   |   |  Enabling and promoting alternative fuel distribution | Increased numbers of hydrogen and biogas stations | Not assessed | Financial benefits for consumers and the city  |
 |   |   |  Collaboration with cities and other levels of governance on enabling congestion charge in Finnish cities | Piloting in some Finnish city | Not assessed | Smooth everyday life and a pleasant street environment  |
 |   |   |  Improved cooperation between service network planning and traffic planning | Common understanding of most efficient and low emission service network for | Not assessed | Equality of movement
-Image benefits  |
-Lahti
-
-Climate Neutrality Action Plan
-
-1
-
+| Image benefits  |
 |   |  |  | emission reductions |   |
 | --- | --- | --- | --- | --- |
 |   |   |  Investigating possibilities for piloting speed limit reductions in Lahti area together with national authorities | Speed limit reductions piloted and scaling started | Full potential is – 5,8 kt CO2e  |
@@ -1039,12 +979,6 @@ B-2.1: Description of action portfolios - textual or visual
 | --- | --- | --- |
 |   |  List of actions | Descriptions  |
 |  Energy systems | District heating # Electric boilers and district heat storage # CCU # waste heat recovery | Goals: - Climate-neutral district heating by 2030 - Promotion of renewable energy production and storage  |
-Lahti
-
-Climate Neutrality Action Plan
-
-3
-
 |   | Decentralised production of renewable energy
 # energy vision for the region
 # enabling/requiring fossil free energy in urban planning
@@ -1180,11 +1114,11 @@ Climate Neutrality Action Plan
 5
 
 |   | # Promoting energy renovations in old buildings
-# Improving energy efficiency in rental housing |   |
+| # Improving energy efficiency in rental housing |   |
 | --- | --- | --- |
 |  IPPU | # Ensuring a just transition from natural gas to sustainable energy (electricity, heat pumps, biogas) in industrial sector (collaboration with Lahti Energia)
-# Deacreasing emissions from machinery: distribution obligation, procurement contracts, market guidance | **Goals**
-no official goals in Climate programme yet  |
+| # Deacreasing emissions from machinery: distribution obligation, procurement contracts, market guidance | **Goals** |
+| no official goals in Climate programme yet  |
 |  Cross sectoral actions | **Climate governance**
 # Development of more detailed and informative emission data and improved estimates of actions climate impacts
 # Development of climate budget
@@ -1250,12 +1184,6 @@ Climate Neutrality Action Plan
 | --- | --- | --- |
 |   |  Action type | Regulation and support, Top-down and bottom-up systemic initiatives/projects, Skills and capacity building  |
 |   | Action description | A joint energy vision will be planned together with the actors in the region. The vision describes renewable energy production to start in the area in the long term, to ensure emission-free and reliable local energy. The vision serves as a basis for investigation, research and development work. Enabling renewable forms of energy in land use planning. Identifying and marking areas suitable for wind power and solar energy production in zoning. The development of wind power technology is followed and new investment opportunities are identified.  |
-Lahti
-
-Climate Neutrality Action Plan
-
-8
-
 |   |  | Clarifying and simplifying the permit processes required by renewable energy production facilities.
 
 The possibilities for industrial-scale solar energy production in the Lahti region are being investigated.
@@ -1300,12 +1228,6 @@ Climate Neutrality Action Plan
 |   |  Systemic lever | Technology&infrastructure  |
 |   |  Outcome (according to module B-1.1) | # Number of public charging stations increased and network covers the whole city # Increased obligation for low-emission fuel distribution # Increased numbers of hydrogen and biogas stations  |
 |  Implementation | Responsible bodies/person for implementation | Department of urban planning, Tilakeskus, Lahden pysäköinti, Spatium (Päijät-Sote);  |
-Lahti
-
-Climate Neutrality Action Plan
-
-0
-
 |   |  | Ympäristökehitys, Ladec, LAB University of Applied Sciences  |
 | --- | --- | --- |
 |   |  Action scale & addressed entities | Actions can be seen in the city's land use and urban structure, efforts for drive power change affect the city's residents as well as passers-by.  |
@@ -1334,13 +1256,7 @@ Regulation and support
 Top-down and bottom-up systemic initiatives/project
 Physical/ spatial interventions  |
 |   |  Action description | Systemic change to sustainable commuting is promoted in the Lahti area through projects and programs in cooperation with employers and stakeholders including monitoring and promoting sustainable commuting of the city personnel.
-Service network planning and traffic planning developing cooperation to enable sustainable and safe mobility connections. Cross-administrative cooperation development. For example, the school network in relation to safe  |
-Lahti
-
-Climate Neutrality Action Plan
-
-1
-
+| Service network planning and traffic planning developing cooperation to enable sustainable and safe mobility connections. Cross-administrative cooperation development. For example, the school network in relation to safe  |
 |   |  | walking and cycling connections. Promoting bicycle parking in city premises. Accessibility of the premises. Networks of (outdoor) sports venues.
 
 Safe, comfortable and barrier-free walking and cycling environment. Quality walking routes. Green and cozy street space. Improving accessibility. Accessibility survey of the city center. Accessibility of natural sites. Luontoaskel terveyteen -program. Cycling routes prioritization program.
@@ -1350,7 +1266,7 @@ Increasing the competitiveness and attractiveness of public transport. Developme
 |  Reference to impact pathway | Field of action | Mobility & transport  |
 |   |  Systemic lever | Technology & infrastructure, governance & policy, learning & capabilities, finance & funding  |
 |   |  Outcome (according to module B-1.1) | # Increase in share journeys made by walking and cycling
-# Increased length of high quality bike lanes  |
+| # Increased length of high quality bike lanes  |
 |  Implementation | Responsible bodies/person for implementation | Department of urban planning, kaupunkitekniikka, Ympäristökehitys, LAB, LUT, Päijät-Sote, Tilakeskus, Sivistyksen palvelualue, Lahden Seudun Liikenne (LSL)  |
 |   |  Action scale & addressed entities | The measures have a wide impact on the mobility possibilities of the citizens, with a significant opportunity to reduce emissions.  |
 |   |  Involved stakeholders | City organization, city's subsidiaries, local businesses, citizens, national and regional authorities, construction industry  |
@@ -1358,7 +1274,7 @@ Increasing the competitiveness and attractiveness of public transport. Developme
 |  Impact & cost | Generated renewable energy (if applicable) |   |
 |   |  Removed/substituted energy, volume or fuel type | Replacing private driving with more sustainable means of transport with the aim of reducing consumption of fossil fuels and fuels derived from fossil fuels (gasoline, diesel, natural gas).  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 64.1 M€
-(total sum in 2023-2030, related to all SUMP measures)  |
+| (total sum in 2023-2030, related to all SUMP measures)  |
 |   |  Total costs and costs by CO2e unit |   |
 Lahti
 
@@ -1467,12 +1383,6 @@ Climate Neutrality Action Plan
 |  Action outline | Action name | Land use and planning: # Land use and construction control so, that the effects on carbon sinks is minimized # If the forest and carbon sinks are destroyed, they are compensated # Eco-calculation tools use of land use in planning  |
 |   |  Action type | Regulation and support Physical/ spatial interventions Nature-based solutions Top-down and bottom-up systemic initiatives/projects Skills and capacity building  |
 |   |  Action description | Land use and construction control so that trees and other vegetation are preserved as far as possible and unnecessary earth excavation is avoided. A local compensation model is prepared and and future carbon sink losses are compensated with it. The KEKO calculator is used to evaluate for land use planning alternatives in cities, as indicated in the planning instructions of the general land use plan. The KEKO calculator is especially applicable for reviews of significant land use alternatives and in evaluating competitions regarding land use planning. The green factor metric can be used in the zoning of compact areas and in the detailed planning  |
-Lahti
-
-Climate Neutrality Action Plan
-
-6
-
 |   |  | of sites, fundamentally important in the planning of groundwater areas. The KEKO calculator green factor is a critical evaluation criteria in carbon footprint evaluations. A new calculation tool, with multiple improvements to KEKO is being developed. Promoting carbon-neutral construction with zoning and land transfer conditions. Certain conditions/limits in the zoning and land transfer condition that guarantee the realization of carbon neutrality.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Built environment  |
@@ -1505,7 +1415,7 @@ Climate Neutrality Action Plan
 7
 
 |   |  | Skills and capacity building
-Empowerment and inclusion  |
+| Empowerment and inclusion  |
 | --- | --- | --- |
 |   |  Action description | Energy saving measures in the properties of Lahden Talot
 
@@ -1536,7 +1446,7 @@ Climate Neutrality Action Plan
 |  (fill out one sheet per intervention/project)  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Waste management
-# enhancing collection of management of bio-, packaging and textile waste  |
+| # enhancing collection of management of bio-, packaging and textile waste  |
 |   |  Action type | Empowerment and inclusion, change in social behaviour, skills and capacity building  |
 |   |  Action description | Improving the collection of biowaste and packaging waste from properties. Planning, tendering and starting transportation of biowaste and packaging waste. Service concepts for different service segments; review for a voluntary collection model such as multi-bin collection.
 
@@ -1568,12 +1478,6 @@ Climate Neutrality Action Plan
 |   |  Action description | The measures below are from Lahti's Circular Economy Roadmap: Education and competence, for example: Circular economy advice, education and help for business development is offered to companies. Everyday practices follow the principles of the circular economy, and the circular economy is taught at all levels of education: early childhood education, elementary school, upper secondary and vocational education, and university of applied sciences and university education. Internal lending system for youth services, where all loanable items are listed and loanable Public procurements promoting the circular economy, for example: Circular economy criteria according to the procurement guidelines of the city's procurement program are used in all public procurements. In the city group's budget, provision has been made for the possible additional costs of purchases that promote the circular economy. The movable assets available in the city's units are mapped and they are primarily used before purchasing new ones. The possibility of acquiring movable property as a used, rented or leasing service is also investigated and recorded. These guidelines are also included in the procurement program and instructions. In the construction and demolition projects of the city group, the circular economy is at the center both in the selection and use of  |
 |   |   |  be the project manager, and the project manager's office is located at the site of the project manager.  |
 |   |   |  the project manager, and the project manager's office is located at the site of the project manager.  |
-Lahti
-
-Climate Neutrality Action Plan
-
-0
-
 |   |  | materials for new construction and in the recycling and reuse of construction and demolition waste.  |
 | --- | --- | --- |
 |   |   |  Promoting the circular economy as a key starting point for land use and urban planning, including the promotion of circular economy business activities, e.g. mass economy management of zoning and regional construction. The use of recycled materials and recycled aggregates in the planning and procurement of urban infrastructure is promoted.  |
@@ -1590,12 +1494,6 @@ Climate Neutrality Action Plan
 |   |  Outcome (according to module B-1.1) |   |
 |  Implementation | Responsible bodies/person for implementation | Elinvoima- ja työllisyyspalvelut (ETP), Sivistyspalvelut, Youth services, Tilakeskus, Salpakierto, Environmental Development Team, Department of procurement  |
 |   |  Action scale & addressed entities | Lahti's Circular Economy Roadmap with its actions applies to the entire city group.  |
-Lahti
-
-Climate Neutrality Action Plan
-
-#
-
 | B-2.2: Individual action outlines - 11 (fill out one sheet per intervention/project) |
 | --- |
 | Action outline | Action name | Carbon sinks # development and deployment of net-carbon sink calculation models #development and deployment of local/regional carbon offsetting model |
@@ -1605,12 +1503,6 @@ Climate Neutrality Action Plan
 | Systemic lever | Learning & capabilities |
 | Outcome (according to module B-1.1) | # development and deployment of net-carbon sink calculation models #development and deployment of local/regional carbon offsetting model |
 | Implementation | Responsible bodies/person for implementation | Environmental Department, Department of urban planning, Department of urban infrastructure |
-Lahti
-
-Climate Neutrality Action Plan
-
-O
-
 |   | Action scale & addressed entities | Calculations of net carbon sinks and developing a compensation model requires extensive cooperation and involves several stakeholders.  |
 | --- | --- | --- |
 |   |  Involved stakeholders | The city organization, landowners, research institutes, national and regional authorities, other municipalities  |
@@ -1633,7 +1525,7 @@ Physical/ spatial interventions
 Nature-based solutions
 Skills and capacity building  |
 |   |  Action description | Increasing carbon sinks by reforesting underutilized areas. The situation of old gravel extraction sites will be reviewed, and landowners will be encouraged to reforest.
-The most important means of influencing the carbon balance are especially the maintenance of carbon reserves in forests. In terms of carbon sequestration, it would be important to preserve existing forests, especially in lush growing areas.  |
+| The most important means of influencing the carbon balance are especially the maintenance of carbon reserves in forests. In terms of carbon sequestration, it would be important to preserve existing forests, especially in lush growing areas.  |
 |  Reference to impact pathway | Field of action | Green infrastructure & nature-based solutions  |
 |   |  Systemic lever | Governance & policy  |
 |   |  Outcome (according to module B-1.1) | # reforestation of wastelands
@@ -1642,14 +1534,6 @@ importance as a carbon store
 is taken into account in the planning of forest
 management measures  |
 |  Implementation | Responsible bodies/person for implementation | Departments of Forest management, Urban infrastructure, Environmental services, Land politics  |
-
-2
-Lahti
-
-Climate Neutrality Action Plan
-
-3
-
 |   | Action scale & addressed entities | Decisions regarding the use of forests are made by landowners and the city organization and affect the city's carbon sinks.  |
 | --- | --- | --- |
 |   |  Involved stakeholders | The city organization, landowners, research institutes, national and regional authorities  |
@@ -1662,7 +1546,7 @@ Climate Neutrality Action Plan
 | --- | --- | --- |
 |  (fill out one sheet per intervention/project)  |   |   |
 |  Action outline | Action name | Agriculture
-# utilisation of city's rental agricultural land in climate work  |
+| # utilisation of city's rental agricultural land in climate work  |
 |   |  Action type | Top-down and bottom-up systemic initiatives/projects  |
 |   |  Action description | Restoration of peat fields owned by the city. The surface area of the potential areas and the landscape values are determined.  |
 |  Reference to impact pathway | Field of action | Green infrastructure & nature-based solutions  |
@@ -1676,23 +1560,17 @@ Climate Neutrality Action Plan
 |   |  Removed/substituted energy, volume or fuel type |   |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Being assessed  |
 |   |  Total costs and costs by CO2e unit | Being assessed  |
-Lahti
-
-Climate Neutrality Action Plan
-
-4
-
 |  B-2.2: Individual action outlines - 14  |   |   |
 | --- | --- | --- |
 |  (fill out one sheet per intervention/project)  |   |   |
 |  Action outline | Action name | Green infra
-# Carbon sinks and storages are taking into account in the management of green areas  |
+| # Carbon sinks and storages are taking into account in the management of green areas  |
 |   |  Action type |   |
 |   |  Action description | In particular, trees and the preservation of soil carbon stocks are taken into account in the management of city green areas.  |
 |  Reference to impact pathway | Field of action | Green infrastructure & nature-based solutions  |
 |   |  Systemic lever | Governance & policy  |
 |   |  Outcome (according to module B-1.1) | - A possible increase in carbon sinks and storages
-A more comfortable and healthier urban area  |
+| A more comfortable and healthier urban area  |
 |  Implementation | Responsible bodies/person for implementation | Department of urban infrastructure  |
 |   |  Action scale & addressed entities | Decisions regarding the management of green areas can have long-term effects and require expertise and cooperation with stakeholders.  |
 |   |  Involved stakeholders | The city organization, employers, national and regional authorities, research institutes  |
@@ -1705,18 +1583,12 @@ A more comfortable and healthier urban area  |
 | --- | --- | --- |
 |  (fill out one sheet per intervention/project)  |   |   |
 |  Action outline | Action name | Climate adaptation
-# Storm water management  |
+| # Storm water management  |
 |   |  Action type | Top-down and bottom-up systemic initiatives/projects
 Physical/ spatial interventions
 Nature-based solutions
 Skills and capacity building  |
 |   |  Action description | The local treatment of stormwater is increased, and new information is collected about different treatment solutions. In street planning, when dimensioning green areas, snow conditions and stormwater absorption are taken into account.  |
-Lahti
-
-Climate Neutrality Action Plan
-
-O
-
 |  Reference to impact pathway | Field of action | Green infrastructure & nature-based solutions  |
 | --- | --- | --- |
 |   |  Systemic lever | Technology & infrastructure, learning & capabilities  |
@@ -1740,15 +1612,7 @@ O
 #Ground water protection  |
 |   |  Action type | Top-down and bottom-up systemic initiatives/projects  |
 |   |  Action description | The most valuable natural environments are protected from construction. Restoration efforts and care of protected areas is intensified and special attention is paid to the habitats of the most endangered organisms. Follow-up annually in the Environmental Review with protection indicators.
-In the long term, forests are grown in such a way that they vary in the ratio of tree species, species and age structure and enable versatile recreation. At the same time, they withstand  |
-
-5
-Lahti
-
-Climate Neutrality Action Plan
-
-6
-
+| In the long term, forests are grown in such a way that they vary in the ratio of tree species, species and age structure and enable versatile recreation. At the same time, they withstand  |
 |   |  | deforestation and changes in weather conditions better than forests where only one tree species of the same age grows.
 The effect of urban vegetation that balances the temperature and winds, binds air pollutants and reduces the generation of harmful stormwater, is increased.
 The groundwater model of the city of Lahti will be updated in terms of material. The information of that material is exported to the city's spatial information system for use by various units.  |
@@ -1772,13 +1636,7 @@ The groundwater model of the city of Lahti will be updated in terms of material.
 | --- | --- | --- |
 |  (fill out one sheet per intervention/project)  |   |   |
 |  Action outline | Action name | Climate governance
-# Development of more detailed and informative emission data and improved estimates of actions climate impacts  |
-Lahti
-
-Climate Neutrality Action Plan
-
-7
-
+| # Development of more detailed and informative emission data and improved estimates of actions climate impacts  |
 |   |  | # Development of climate budget, assessments costs of actions
 # City Group will start reporting its own emissions and all subsidiaries have roadmaps towards climate neutrality
 # Climate partnership with local companies and other stakeholders is developed
@@ -1812,12 +1670,6 @@ Climate Neutrality Action Plan
 | --- | --- | --- |
 |  Action outline | Action name | Sustainable consumption # Communication plan for climate communication # Challenge campaign for residents # Challenge campaign for other actors (companies) # The conditions for climate-neutral events are improved # Residents' well-being and health are promoted in a nature-oriented way # Assessment of the carbon footprint of procurement and guidance towards sustainable procurement  |
 |   |  Action type | Skills and capacity building  |
-Lahti
-
-Climate Neutrality Action Plan
-
-9
-
 |   |  | Change in social behaviour
 Empowerment and inclusion
 Technical interventions
@@ -1880,19 +1732,13 @@ Module B-3 "Indicators for Monitoring, Evaluation and Learning" should contain a
 |  Outcomes/ impacts addressed | Portfolio | Indicator No. (unique identified) | Indicator name |  | Target values  |   |
 |   |   |   |   |   | 2025 | 2027 2030  |
 |  Actions for decreasing GHG emissions in the atmosphere due to stationary energy production and grid supplied electricity and heating | District heating
-Decentralised production of renewable energy | 1 | GHG emission from stationary energy |  | 150 kt CO2 equivalent | 100 kt CO2 equivalent  |
+| Decentralised production of renewable energy | 1 | GHG emission from stationary energy |  | 150 kt CO2 equivalent | 100 kt CO2 equivalent  |
 |  Actions for decreasing GHG emissions in the atmosphere due to transportation | Electrification and low-emission fuels
 Modal shift from private driving to sustainable mobility
 Other strategic interventions | 2 | GHG emission from transport |  | 150 kt CO2 equivalent | 125 kt CO2 equivalent  |
 |  Actions for decreasing GHG emissions in the atmosphere due to waste treatment | Waste management
-Circular economy | 3 | GHG emission from waste |  | 17,3 kt CO2 equivalent | 16,1 kt CO2 equivalent  |
+| Circular economy | 3 | GHG emission from waste |  | 17,3 kt CO2 equivalent | 16,1 kt CO2 equivalent  |
 |  Actions for decreasing GHG emissions in | Ensuring a just transition from natural gas to | 4 | GHG emission from IPPU |  | 20 kt CO2 equivalent | 18 kt CO2 equivalent  |
-Lahti
-
-Climate Neutrality Action Plan
-
-#
-
 |  B-3.2: Indicator Metadata  |   |   |
 | --- | --- | --- |
 |  (for each indicator selected – take from Comprehensive Indicator Sets)  |   |   |
@@ -1907,12 +1753,6 @@ Climate Neutrality Action Plan
 |  If yes, which co-benefit does it measure? | n/a  |   |
 |  Can the indicator be used for monitoring impact pathways? | yes  |   |
 |  If yes, which NZC impact pathway is it relevant for? | Energy systems  |   |
-Lahti
-
-Climate Neutrality Action Plan
-
-#
-
 |  B-3.2: Indicator Metadata  |   |
 | --- | --- |
 |  (for each indicator selected – take from Comprehensive Indicator Sets)  |   |
@@ -1970,7 +1810,7 @@ Climate Neutrality Action Plan
 |  Indicator Name | GHG emission from IPPU  |
 |  Indicator Unit | kt CO2 equivalent  |
 |  Definition | Greenhouse gas emissions from industrial processes and product use within city boundary.
-Not relevant. Emissions do not exist or are minor in the area.  |
+| Not relevant. Emissions do not exist or are minor in the area.  |
 |  Calculation |   |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | yes  |
@@ -1979,12 +1819,6 @@ Not relevant. Emissions do not exist or are minor in the area.  |
 |  If yes, which co-benefit does it measure? | n/a  |
 |  Can the indicator be used for monitoring impact pathways? | n/a  |
 |  If yes, which NZC impact pathway is it relevant for? |   |
-Lahti
-
-Climate Neutrality Action Plan
-
-#
-
 |  B-3.2: Indicator Metadata  |   |
 | --- | --- |
 |  (for each indicator selected – take from Comprehensive Indicator Sets)  |   |
@@ -2013,14 +1847,8 @@ Climate Neutrality Action Plan
 |  Indicator Name | GHG emission from grid supplied energy  |
 |  Indicator Unit | kt CO2 equivalent  |
 |  Definition | GHG emissions occurring as a consequence of the use of grid supplied electricity, heat, steam and/or cooling within the city boundary  |
-Lahti
-
-Climate Neutrality Action Plan
-
-6
-
 |  Calculation | According to CO2 report Lahti 2023 (Sitowise Oy):
-https://co2.sitowise.com/CO2tilastot/CO2-raportti_Menetelm%C3%A4kuvaus_2023.pdf  |
+| https://co2.sitowise.com/CO2tilastot/CO2-raportti_Menetelm%C3%A4kuvaus_2023.pdf  |
 | --- | --- |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | yes  |
@@ -2052,12 +1880,6 @@ https://co2.sitowise.com/CO2tilastot/CO2-raportti_Menetelm%C3%A4kuvaus_2023.pdf 
 |  Can the indicator be used for monitoring impact pathways? | yes  |
 |  If yes, which NZC impact pathway is it relevant for? |   |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? |   |
-Lahti
-
-Climate Neutrality Action Plan
-
-7
-
 |  Data requirements |   |
 | --- | --- |
 |  Expected data source | CO2 report Lahti (Sitowise Oy)  |
@@ -2090,12 +1912,6 @@ Improved air quality
 Circular economy and business potential
 Financial impacts for city organisations and other stakeholders  |
 |  Clarifying permit processes for renewable energy production | Permit processe are long and officers might have conflict views. Clarification is needed for what permits are needed and when and from who | Departments of City Environment | ELY and other regional and national authorities | Enabling and accelerating Plans for wind energy in the area |   |
-Lahti
-
-Climate Neutrality Action Plan
-
-C
-
 |  Investigate possibilities for local incentives for energy renovations |  | Departments of City Environment and economic development |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Stricter regulation and energy policy for new building |  | Departments of City Environment |  | Increased energy efficiency in new buildings  |   |
@@ -2109,7 +1925,7 @@ Equality of movement
 Image benefits  |
 |  Enabling and promoting alternative fuel distribution |  | Departments of Environmental development, and City Environment |  | Increased numbers of hydrogen and biogas stations |   |
 |  Collaboration with cities and other levels of governance on enabling congestion charge in Finnish cities
-Improved cooperation between service network planning and traffic planning |  | Unit of Environmental development, | Other Mission Cities, | Piloting in some Finnish city |   |
+| Improved cooperation between service network planning and traffic planning |  | Unit of Environmental development, | Other Mission Cities, | Piloting in some Finnish city |   |
 |  Investigating possibilities for piloting speed limit reductions in Lahti area together with national authorities |  | Departments of Environmental development, and City Environment | ELY, Väylävarasto | Speed limit reductions piloted and scaling started |   |
 
 # C-1.2: Description of organisation and governance interventions – textual and visual elements
@@ -2170,24 +1986,12 @@ C-3.1: Summary of interventions with cost implication (to be unpacked in Investm
 |  SUMP - all measures | LSL, Departments of Urban Planning, Urban infrastructure, Environmental Development | 2023 - 2030 | Transport | 0.4-1.3 ktCO2e / year in 2023- 2030 | 64.1 M€ (total sum in 2023-2030, related to all SUMP measures)  |
 |  Campaign year for sustainable mobility 2025 |  | 2023-2030 | Transport | 61.8 ktCO2e by 2030 (requires several successful emission reduction experiments during the year 2025 and scaling up best solutions 2026-2030). This number is, in other words, not the direct reduction in emissions during 2025, but the goal for 2030. | Will be assessed in 2023-2024  |
 |  Electric cars | Investment mainly by inhabitants | 2023-2030 | Transport | 9.3 ktCO2e in 2030 when comparing emissions | 284.7 M€ (total sum in 2023-2030, assuming that  |
-Lahti
-
-Climate Neutrality Action Plan
-
-2
-
 |   | and the private sector |  |  | from gasoline and diesel cars to electric cars | there will be 8500 electric cars in the city in 2030, while there were 860 electric cars in 2022)  |
 | --- | --- | --- | --- | --- | --- |
 |  Electric boiler | Lahti Energia | 2023-2024 | Energy systems | 2 ktCO2e / year in 2024-2030 | 10 M€ investments related to electric boiler in operation in 2024  |
 |  Electric boiler and heat storages | Lahti Energia | 2026-2030 | Energy systems | 8 ktCO2e / year in 2026-2030 | classified estimates, investment decisions pending  |
 |  CCU | Lahti Energia and Ren-Gas | 2026-2030 | Energy systems | 43-85 ktCO2e / year in 2026-2030 | Classified for Lahti Energia’s part of the project. The value of the investment in total is, when considering also the private investment, approx. 250 M€. Cost estimate, investment decision pending  |
 |  Solar energy production in city-owned real estates | Tilakeskus | 2023-2030 | Energy systems | 35 tCO2e / year in 2025-2030 and | 1.7 M€ (total sum in 2023-2030) -1.2 M€ (total sum in 2023-2030) Cost estimate, assuming that solar panels on the roofs of new city-owned buildings would cover 2% of total electricity need in 2030 of city-owned  |
-Lahti
-
-Climate Neutrality Action Plan
-
-O
-
 |   |  |  |  |  | buildings. Partly in the city budget.  |
 | --- | --- | --- | --- | --- | --- |
 |  Implementation of energy renovations | Households and private sector | 2023-2030 | Built environment | 2 ktCO2e / year when energy renovations have been implemented | 84.0 M€ (if energy renovations are implemented in 10% of the buildings in the city). Investments mainly those of inhabitants and companies.  |
@@ -2485,12 +2289,6 @@ Include a list of stakeholders who have committed to help your city achieve its 
 |  Regional Council of Päijät-Häme | Region | Regional authority | Niina Pautola-Mol | Regional Mayor  |
 |  Päijät-Hämeen Ateriapalvelut | Food | Company partly owned by the city | Päivi Karttunen | Chief Executive Officer  |
 |  Päijät-Hämeen Hyvinvointialue | Social and healthcare | Regional authority | Jukka Santala | Chief of Department  |
-Lahti
-
-Climate-Neutrality Commitments
-
-O
-
 |  Kempower Oyj | Electric charging infrastructure | Company | Not known | Not known  |
 | --- | --- | --- | --- | --- |
 |  Fazer Group | Bakery and Food | Company | Joséphine Mickwitz | EVP Head of Communications and Sustainability  |

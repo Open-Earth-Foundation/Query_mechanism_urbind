@@ -120,8 +120,6 @@ Abbreviations and acronyms
 | ETS | Emissions Trading System |
 | EU | European Union |
 | GHG | Greenhouse gas |
-6
-
 | ABBREVIATIONS AND ACRONYMS | DEFINITION |
 | --- | --- |
 | GIS | Geographic Information System |
@@ -151,8 +149,6 @@ Abbreviations and acronyms
 | PPP | Public-Private Partnership |
 | RD | Research-Development |
 | RDI | Research-Development-Innovation |
-7
-
 | ABBREVIATIONS AND ACRONYMS | DEFINITION |
 | --- | --- |
 | RES | Renewable energy source |
@@ -394,10 +390,8 @@ Climate Neutrality Action Plan
 | waste • 2 collection centers for voluminous and hazardous waste, including construction packaging. • 100 new street-smart waste bins powered by solar energy |
 | Industrial Process and Product Use (IPPU) N/A N/A N/A |
 | N/A N/A N/A N/A |
-
-Agricultural, Forestry and Land Use (AFOLU) | 8,403 MWh/year | 2,244 tons CO2/ year reduction | 9,615 MWh/year | 962 tons CO2/ year reduction | N/A
-Line 10 - Action 4.1 (from section B-2.1) | 266 tons CO2/year reduction associated with less Diesel as citizens will be encouraged to walk more and not use their cars | 114 tons CO2/year reduction associated with electrical energy as citizens would be encouraged to walk more | N/A
-
+| Agricultural, Forestry and Land Use (AFOLU) | 8,403 MWh/year | 2,244 tons CO2/ year reduction | 9,615 MWh/year | 962 tons CO2/ year reduction | N/A |
+| Line 10 - Action 4.1 (from section B-2.1) | 266 tons CO2/year reduction associated with less Diesel as citizens will be encouraged to walk more and not use their cars | 114 tons CO2/year reduction associated with electrical energy as citizens would be encouraged to walk more | N/A |
 | • 63 ha of parks rehabilitated • 120 ha of new parks • 100,000 new trees planted | N/A |
 | --- | --- |
 | Line 11 - Action 4.2 (from section B-2.1) | 1,855 tons CO2/year reduction associated with less Diesel as citizens would be encouraged to bike more and not use their cars 795 tons CO2/year reduction associated with electrical energy (all citizens would be encouraged to bike, even those with electric vehicles) N/A |
@@ -2400,10 +2394,6 @@ B-2.1: DESCRIPTION OF ACTION PORTFOLIOS - TEXTUAL OR VISUAL
 |  | efficiency of commercial buildings and brownfields redevelopment |
 |  | 2.1 Energy-efficient energy-efficient energy production |
 |  | 2.2 Energy-efficient energy-efficient energy production |
-Climate Neutrality Action Plan
-
-#
-
 | B-2.1: DESCRIPTION OF ACTION PORTFOLIOS - TEXTUAL OR VISUAL |  |
 | --- | --- | --- |
 | FIELDS OF ACTION | PORTFOLIO DESCRIPTION |
@@ -2492,11 +2482,11 @@ Climate Neutrality Action Plan
 |  | Comments on implementation | N/A |
 | Impact & cost | Generated renewable energy (if applicable) | N/A |
 |  | Removed/substituted energy, volume or fuel type | Electrical energy: 316,701 MWh/year |
-Natural gas: 67,193 MWh/year  |
+| Natural gas: 67,193 MWh/year  |
 |  | GHG emissions reduction estimate (total) per emission source sector | 45,243 tons CO2/year from Buildings |
 | --- | --- | --- |
 |  | Total costs and costs by CO2e unit | € 352,000,000.00- total cost |
-€ 7,784/tone CO2  |
+| € 7,784/tone CO2  |
 | Action outline | Action name | Local (off-site) renewable energy generation and integrating RES into private and public buildings |
 | --- | --- | --- |
 |  | Action type | Technical intervention |
@@ -2519,7 +2509,7 @@ Natural gas: 54,950 MWh/year  |
 |  | GHG emissions reduction estimate (total) per emission source sector | 37,000 tons CO2/year from Buildings |
 | --- | --- | --- |
 |  | Total costs and costs by CO2e unit | € 144,000,000.00- total cost |
-€ 3,953/tone CO2  |
+| € 3,953/tone CO2  |
 | Action outline | Action name | Energy-efficient public lighting |
 | --- | --- | --- |
 |  | Action type | Technical intervention |
@@ -2528,8 +2518,6 @@ Natural gas: 54,950 MWh/year  |
 |  | Systemic lever | Technology/Infrastructure |
 |  | Outcome (according to module B-1.1) | State of the art and energy efficient public lighting system |
 | Implementation | Responsible bodies/person | Municipality and Public Lighting Service |
-Climate Neutrality Action Plan
-
 |  | for implementation | Operator |
 | --- | --- | --- |
 |  | Action scale & addressed entities | Buildings (both public - used for providing public services and private - residential ones) |
@@ -2537,11 +2525,11 @@ Climate Neutrality Action Plan
 |  | Comments on implementation | N/A |
 | Impact & cost | Generated renewable energy (if applicable) | N/A |
 |  | Removed/substituted energy, volume or fuel type | Electrical energy: 30,000 MWh/year |
-Natural gas: 4,455 MWh/year  |
+| Natural gas: 4,455 MWh/year  |
 |  | GHG emissions reduction estimate (total) per emission source sector | 3,000 tons CO2/year from Buildings |
 | --- | --- | --- |
 |  | Total costs and costs by CO2e unit | € 13,000,000.00 - total cost |
-€ 4,366/tone CO2  |
+| € 4,366/tone CO2  |
 | Action outline | Action name | Major green public transport infrastructure and reduction of congestion in the city |
 | --- | --- | --- |
 |  | Action type | Technical intervention |
@@ -2576,13 +2564,9 @@ Bio-fuel: 6,726 MWh/Year  |
 |  | GHG emissions reduction estimate (total) per emission source sector | 25,377 tons CO2/year from Transport |
 | --- | --- | --- |
 |  | Total costs and costs by CO2e unit | € 4,351,000,000.00- total cost |
-€ 96,591/tone CO2  |
+| € 96,591/tone CO2  |
 | Action outline | Action name | Promotion of large-scale use of Electric |
 | --- | --- | --- |
-
-6
-Climate Neutrality Action Plan
-
 |  | Vehicles |  |
 | --- | --- | --- |
 |  | Action type | Technical intervention |
@@ -2599,7 +2583,7 @@ Extension of network of electric charging stations in neighbourhoods
 | --- | --- | --- |
 |  | Action scale & addressed entities | City wide streets and districts (both commercial and residential ones) |
 |  | Involved stakeholders | Cluj Napoca Municipality, Cluj Metropolitan IDA, Cluj-Napoca's Public Transport Company, Local innovation ecosystem & Private sector, |
-Romanian New Materials Cluster, Local NGOs that are active in the field of citizens engagement (eg. Sustainable Cluj NGO)  |
+| Romanian New Materials Cluster, Local NGOs that are active in the field of citizens engagement (eg. Sustainable Cluj NGO)  |
 |  | Comments on implementation | N/A |
 | --- | --- | --- |
 | Impact & cost | Generated renewable energy (if applicable) | N/A |
@@ -2615,7 +2599,7 @@ Climate Neutrality Action Plan
 | --- | --- |
 | GHG emissions reduction estimate (total) per emission source sector | 15,000 tons CO2/year from Transport |
 | Total costs and costs by CO2e unit | € 324,000,000.00- total cost |
-€ 270/tone CO2 |
+| € 270/tone CO2 |
 | Action outline | Action name | Extension of Walkable City Program |
 | --- | --- | --- |
 |  | Action type | Physical / spatial intervention |
@@ -2626,10 +2610,8 @@ Climate Neutrality Action Plan
 | Implementation | Responsible bodies/person for implementation | Municipality, Local NGOs that are active in the field of citizens engagement, active citizenship, community initiatives |
 |  | Action scale & addressed entities | Streets in both central area and city neighborhoods (especially Grigorescu, Iris, Mărăști and Mănăștur neighborhoods) |
 |  | Involved stakeholders | Cluj Napoca Municipality, Cluj-Napoca's Public Transport Company, Local innovation ecosystem & Private sector, |
-TUCN, BBU, Local NGOs that are active in the field of citizens engagement  |
-Comments on implementation | N/A
-Climate Neutrality Action Plan
-
+| TUCN, BBU, Local NGOs that are active in the field of citizens engagement  |
+| Comments on implementation | N/A |
 | Impact & cost | Generated renewable energy (if applicable) | N/A |
 | --- | --- | --- |
 |  | Removed/substituted energy, volume or fuel type | Electrical energy: 7,113 MWh/year |
@@ -2640,7 +2622,7 @@ Bio-fuel: 552 MWh/year  |
 |  | GHG emissions reduction estimate (total) per emission source sector | 2,000 tons CO2/year from Transport |
 | --- | --- | --- |
 |  | Total costs and costs by CO2e unit | € 219,000,000.00 - total cost |
-€ 22,500/tone CO2  |
+| € 22,500/tone CO2  |
 | Action outline | Action name | Extension of Cluj Bike Program |
 | --- | --- | --- |
 |  | Action type | Physical / spatial intervention |
@@ -2667,7 +2649,7 @@ Bio-fuel: 1,961 MWh/year  |
 |  | GHG emissions reduction estimate (total) per emission source sector | 7,100 tons CO2/year from Transport |
 | --- | --- | --- |
 |  | Total costs and costs by CO2e unit | € 15,000,000.00 |
-€ 2,112/tone CO2  |
+| € 2,112/tone CO2  |
 | Action outline | Action name | Cluj Circular City |
 | --- | --- | --- |
 |  | Action type | Technical intervention |
@@ -2677,18 +2659,16 @@ Bio-fuel: 1,961 MWh/year  |
 |  | Outcome (according to module B-1.1) | Over 60% of municipal waste will be reused or recycled |
 | Implementation | Responsible bodies/person for implementation | Municipality |
 |  | Action scale & addressed entities | Residential districts and areas |
-Climate Neutrality Action Plan
-
 |  | Involved stakeholders | Cluj Napoca Municipality, Cluj-Napoca's Waste Operator, Local NGOs that are active in the field of environmental protection and the urban sector, Local NGOs that are active in the field of citizens engagement, active citizenship, community initiatives, Local innovation ecosystem & Private sector, Transylvania IT Cluster |
 | --- | --- | --- |
 |  | Comments on implementation | N/A |
 | Impact & cost | Generated renewable energy (if applicable) | N/A |
 |  | Removed/substituted energy, volume or fuel type | Electrical energy: 151,414 MWh/year |
-Diesel 3,216  |
+| Diesel 3,216  |
 |  | GHG emissions reduction estimate (total) per emission source sector | 16,000 tons CO2/year from Waste |
 | --- | --- | --- |
 |  | Total costs and costs by CO2e unit | € 16,000,000.00 |
-€ 412/tone CO2  |
+| € 412/tone CO2  |
 | Action outline | Action name | Extension of "Green Cluj" Program |
 | --- | --- | --- |
 |  | Action type | Nature-based solution |
@@ -2713,7 +2693,7 @@ Diesel: 996 MWh/year  |
 |  | GHG emissions reduction estimate (total) per emission source sector | 380 tons CO2/year from Agricultural, Forestry and Land Use |
 | --- | --- | --- |
 |  | Total costs and costs by CO2e unit | € 195,000,000.00 |
-€ 511,843/tone CO2  |
+| € 511,843/tone CO2  |
 | Action outline | Action name | Green-blue corridors |
 | --- | --- | --- |
 |  | Action type | Nature-based solution |
@@ -2736,19 +2716,16 @@ C
 |  | Comments on implementation | N/A |
 | Impact & cost | Generated renewable energy (if applicable) | N/A |
 |  | Removed/substituted energy, volume or fuel type | Electrical energy: 7,950 MWh/year |
-Diesel: 6,948 MWh/year  |
+| Diesel: 6,948 MWh/year  |
 |  | GHG emissions reduction estimate (total) per emission source sector | 2,650 tons CO2/year from Agricultural, Forestry and Land Use |
 | --- | --- | --- |
 |  | Total costs and costs by | € 87,000,000.00 - total cost |
-3
-Climate Neutrality Action Plan
-
 |  | CO2e unit | € 32,641/tone CO2 |
 | --- | --- | --- |
 | Action outline | Action name | Green roofs and facades for public and private buildings |
 |  | Action type | Nature-based solution |
 |  | Action description | Green roofs and facades for public buildings: at least 20 by 2030 |
-Support for green roofs and facades for private buildings: at least 50 by 2030  |
+| Support for green roofs and facades for private buildings: at least 50 by 2030  |
 | Reference to impact pathway | Field of action | Green infrastructure & nature based solutions |
 | --- | --- | --- |
 |  | Systemic lever | Technology/Infrastructure |
@@ -2756,22 +2733,18 @@ Support for green roofs and facades for private buildings: at least 50 by 2030  
 | Implementation | Responsible bodies/person for implementation | Municipality, Public Entities headquartered in targeted public buildings, Associations of house owners and citizens in targeted private buildings |
 |  | Action scale & addressed entities | Buildings (both public - used for providing public services and private - residential ones) |
 |  | Involved stakeholders | Cluj Napoca Municipality, Cluj County Council, Associations of home owners: The Federation of Home Owners' Associations Cluj-Napoca, Technical University of Cluj-Napoca (Faculties of Architecture, Transport, Energy), The Order of Romanian Architects (especially Transilvania branch) and their (inter)national partners, National Environmental Agency, University of Agronomic Sciences and Veterinary Medicine, Association for Intercommunity Development CMA, Local NGOs that are active in the field of environmental protection and the urban sector, Local NGOs that are active in the field of citizens engagement, active citizenship, Local innovation ecosystem & Private sector, |
-Transylvania Energy Cluster, North-West Regional Development Agency  |
+| Transylvania Energy Cluster, North-West Regional Development Agency  |
 |  | Comments on implementation | N/A |
 | --- | --- | --- |
 | Impact & cost | Generated renewable energy | N/A |
-
-4
-Climate Neutrality Action Plan
-
 |  | (if applicable) |  |
 | --- | --- | --- |
 |  | Removed/substituted energy, volume or fuel type | Electrical energy: 525 MWh/year |
-Diesel: 459 MWh/year  |
+| Diesel: 459 MWh/year  |
 |  | GHG emissions reduction estimate (total) per emission source sector | 175 tons CO2/year from Agricultural, Forestry and Land Use |
 | --- | --- | --- |
 |  | Total costs and costs by CO2e unit | € 10,000,000.00 - total cost |
-€ 6,912,285/tone CO2  |
+| € 6,912,285/tone CO2  |
 | Action outline | Action name | Integrated renovation of dense multi-apartment residential areas and their transition to climate-neutral district |
 | --- | --- | --- |
 |  | Action type | Technical intervention |
@@ -2780,10 +2753,6 @@ Diesel: 459 MWh/year  |
 |  | Systemic lever | Technology/Infrastructure |
 |  | Outcome (according to module B-1.1) | Improved energy efficiency for at least 40,000 apartments, and public areas around apartment blocks rehabilitated to reduce car usage and make transport by foot, bike and public transport more attractive. |
 | Implementation | Responsible bodies/person for implementation | Municipality, The Order of Romanian Architects (especially Transilvania branch) and their (inter)national partners, Associations of house owners and citizens in targeted private |
-
-5
-Climate Neutrality Action Plan
-
 |  | buildings, TUCN, BBU, TREC, TITC |  |
 | --- | --- | --- |
 |  | Action scale & addressed entities | Housing, blocks, public area in the Mănăștur Quarter |
@@ -2791,11 +2760,11 @@ Climate Neutrality Action Plan
 |  | Comments on implementation | N/A |
 | Impact & cost | Generated renewable energy (if applicable) | N/A |
 |  | Removed/substituted energy, volume or fuel type | Electrical energy: 228,054 MWh/year |
-Natural gas: 233,636 MWh/year  |
+| Natural gas: 233,636 MWh/year  |
 |  | GHG emissions reduction estimate (total) per emission source sector | 70,000 tons CO2/year from Buildings |
 | --- | --- | --- |
 |  | Total costs and costs by CO2e unit | € 180,000,000.00 - total cost |
-€ 428/tone CO2  |
+| € 428/tone CO2  |
 | Action outline | Action name | Energy Renovation of Public Buildings |
 | --- | --- | --- |
 |  | Action type | Technical intervention |
@@ -2805,31 +2774,25 @@ Natural gas: 233,636 MWh/year  |
 |  | Outcome (according to module B-1.1) | At least 50 public buildings (e.g. nurseries, kindergartens, schools, administrative buildings) rehabilitated |
 | Implementation | Responsible bodies/person for implementation | Municipality, Public Entities headquartered in targeted public buildings, Energy Manager |
 |  | Action scale & addressed entities | Public buildings |
-Climate Neutrality Action Plan
-
 |  | Involved stakeholders | Cluj Napoca Municipality, Cluj-Napoca's Public Heating Company, Public Entities headquartered in targeted public buildings, North-West Regional Development Agency, Romanian Green Building Council, Transylvania Energy Cluster, North-West Regional Development Agency, Technical University of Cluj-Napoca (Faculties of Architecture, Transport, Energy), The Order of Romanian Architects (especially Transilvania branch) and their (inter)national partners, National Environmental Agency, Association for Intercommunity Development CMA |
 | --- | --- | --- |
 |  | Comments on implementation | N/A |
 | Impact & cost | Generated renewable energy (if applicable) | N/A |
 |  | Removed/substituted energy, volume or fuel type | Electrical energy: 16,290 MWh/year |
-Natural gas: 16,688 MWh/year  |
+| Natural gas: 16,688 MWh/year  |
 |  | GHG emissions reduction estimate (total) per emission source sector | 5,000 tons CO2/year from Buildings |
 | --- | --- | --- |
 |  | Total costs and costs by CO2e unit | € 90,00,000.00 - total cost |
-€ 52,260/tone CO2  |
+| € 52,260/tone CO2  |
 | Action outline | Action name | Energy Efficiency of Commercial Buildings and brownfields redevelopment |
 | --- | --- | --- |
 |  | Action type | Technical intervention |
 |  | Action description | Support for the redevelopment of at least 100 ha of brownfields that overlap UHIs into climate-friendly mixed-use areas, by using taxation and urban planning tools |
-Property tax reduction for at least 50 new commercial green buildings earning a green certification.  |
+| Property tax reduction for at least 50 new commercial green buildings earning a green certification.  |
 | Reference to impact pathway | Field of action | Built environment |
 | --- | --- | --- |
 |  | Systemic lever | Technology/Infrastructure |
 |  | Outcome (according to module B-1.1) | At least 95% of the commercial building stock with improved energy performance, and at least 3 major brownfield redevelopment projects undertaken in the city |
-
-7
-Climate Neutrality Action Plan
-
 | Implementation | Responsible bodies/person for implementation | Municipality |
 | --- | --- | --- |
 |  | Action scale & addressed entities | Brownfield areas |
@@ -2837,11 +2800,11 @@ Climate Neutrality Action Plan
 |  | Comments on implementation | N/A |
 | Impact & cost | Generated renewable energy (if applicable) | N/A |
 |  | Removed/substituted energy, volume or fuel type | Electrical energy: 39,095 MWh/year |
-Natural gas: 40,052 MWh/year  |
+| Natural gas: 40,052 MWh/year  |
 |  | GHG emissions reduction estimate (total) per emission source sector | 12,000 tons CO2/year from Buildings |
 | --- | --- | --- |
 |  | Total costs and costs by CO2e unit | € 81,000,000.00- total cost |
-€ 41/tone CO2  |
+| € 41/tone CO2  |
 | Action outline | Action name | Cluj NetZeroCoalition |
 | --- | --- | --- |
 |  | Action type | Other interventions |
@@ -2875,12 +2838,9 @@ Natural gas: 11,348 MWh/year  |
 |  | GHG emissions reduction estimate (total) per emission source sector | 3,400 tons CO2/year from Buildings |
 | --- | --- | --- |
 |  | Total costs and costs by CO2e unit | € 1.000,000.00 - total cost |
-€ 73/tone CO2  |
+| € 73/tone CO2  |
 | Action outline | Action name | Improved local urban regulations and |
 | --- | --- | --- |
-9
-Climate Neutrality Action Plan
-
 |  | policies for achieving climate neutrality |  |
 | --- | --- | --- |
 |  | Action type | Other interventions |
@@ -2899,18 +2859,14 @@ New governance models for condominiums and their integration into the local clim
 |  | Action scale & addressed entities | City-wide multi-apartment neighborhoods & suburbs and buildings |
 |  | Involved stakeholders | All the stakeholders involved in implementing the NZC Action Plan. |
 |  | Comments on implementation | N/A |
-
-0
-Climate Neutrality Action Plan
-
 | Impact & cost | Generated renewable energy (if applicable) | N/A |
 | --- | --- | --- |
 |  | Removed/substituted energy, volume or fuel type | Electrical energy: 205,249 MWh/year |
-Natural gas: 210,273 MWh/year  |
+| Natural gas: 210,273 MWh/year  |
 |  | GHG emissions reduction estimate (total) per emission source sector | 63,000 tons CO2/year from Buildings |
 | --- | --- | --- |
 |  | Total costs and costs by CO2e unit | € 10,000,000.00 - total cost |
-€ 72/tone CO2  |
+| € 72/tone CO2  |
 | Action outline | Action name | Communication, dissemination and scalability |
 | --- | --- | --- |
 |  | Action type | Other interventions |
@@ -3100,8 +3056,6 @@ Climate Neutrality Action Plan
 | (for each indicator selected – take from Comprehensive Indicator Sets) |  |
 | Indicator Name | Surface of green spaces |
 | Indicator Unit | Hectares |
-Climate Neutrality Action Plan
-
 | Definition | Increase in area covered with green spaces |
 | --- | --- |
 | Calculation | Data extracted from online and freely available land use databases (e.g. CORINE Land Cover) |
@@ -3173,8 +3127,6 @@ Climate Neutrality Action Plan
 | Indicator Unit | Euro |
 | Definition | Average energy cost savings per household |
 | Calculation | Comprehensive Household Survey |
-Climate Neutrality Action Plan
-
 | Indicator Context |  |
 | --- | --- |
 | Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | yes |
@@ -3199,8 +3151,6 @@ Climate Neutrality Action Plan
 | Calculation | Detailed budget executions of public administrations |
 | Indicator Context |  |
 | Does the indicator measure direct impacts | yes |
-Climate Neutrality Action Plan
-
 | (i.e. reduction in greenhouse gas emissions?) |  |
 | --- | --- |
 | If yes, which emission source sectors does it impact? | Buildings, Transport, Waste |
@@ -3695,8 +3645,6 @@ Climate Neutrality Action Plan
 | Civic Imagination & Innovation Center - CIIC modelling for climate neutrality at neighborhood level | 235.500 eur | This initiative aims to update and refine the ideas and approaches within Civic Imagination & Innovation Center - CIIC, which has been successfully implemented in Cluj-Napoca, by focusing more intensively on climate neutrality. The CIIC will be managed by Municipality, and external experts will be contracted to provide support. The initiative will host CIIC events that bring together international and local experts to interact with citizens, businesses, and NGOs on climate-neutral related topics. Additionally, new concepts for civic imagination and innovation events will be developed and tested for target groups such as children, students, and the elderly. The initiative will also test new participatory budgeting concepts at the neighborhood level for climate neutrality-related topics, in addition to organizing various forms of participatory budgeting processes and civic imagination and innovation events. |
 | Net Zero Caravan in urban neighbourhoods | 88.000 eur | The estimated budget will be allocated towards establishing communities at the neighborhood level that are willing to actively engage in the development, implementation, and supervision of participatory public policies pertaining to climate neutrality. This effort will involve conducting meetings in informal neighborhood spaces through the Net Zero Caravan initiative. After residents become involved with the NZ Caravans, they will be able to participate in specialized training and educational workshops focused on different aspects of climate neutrality and community-led initiatives. These workshops may include topics such as saving energy in their own homes, preventing food waste, recycling waste, and becoming a prosumer. |
 | Net Zero Caravan in the metropolitan area of Cluj-Napoca | 94.000 eur | The focus of the intervention is on the suburban areas in Cluj-Napoca's metropolitan area, with the goal of transferring the knowledge gained in the city center to the peri-urban communities. The Metropolitan Carbon Neutrality Caravan aims to promote the zero-carbon mindset of Cluj-Napoca to its suburbs, disseminate educational materials to various stakeholders in the Cluj Metropolitan Area, and encourage behavioral changes among the peri-urban residents, businesses, and public administrations to adopt the urban climate-neutral mentality that is specific to the metropolitan demographics. To accomplish these objectives, the caravan will organize workshops, training events, and community-building initiatives that target local administrations, residents, and other stakeholders in each neighborhood. In-depth training sessions will be conducted, to increase awareness of climate-neutrality-related topics, assist with the adoption of the proposed tools, and identify potential NZ Champions who can exchange best practices and experiences with those from urban neighborhoods. The training sessions will be available to public servants, residents, NGOs, business owners, and other interested parties. |
-1
-
 | Enhancing the capacity of the ecosystem to implement and monitor climate neutral policies at neighborhood level | 300.000 eur | The budget allocated for this intervention comprises several elements. Firstly, the NZChamp Campaign will be conducted to select climate neutrality managers/champions in neighborhoods. The competition will aim to identify private companies, NGOs, and institutions that are implementing measurable and replicable climate neutrality measures at the neighborhood level. Secondly, packages of training materials and good practice examples will be provided for various categories of stakeholders such as pupils, students, home owners, business owners, teachers, and researchers, etc. The materials will offer guidance on actions that can be taken in day-to-day activities and medium to long-term projects to accelerate neighborhood climate neutrality achievement. Thirdly, an interactive framework will be developed to enhance building administrators' knowledge of climate neutrality. The framework aims to assist building administrators in implementing measures and actions that can facilitate achieving climate neutrality at the condominium level. The budget will cover training and dissemination events organized for condominium administrators on topics such as energy saving, on-site renewable energy generation, and smart buildings. Finally, experience exchanges, networking, and learning activities will be organized for representatives of the local ecosystem on climate neutrality themes. |
 | --- | --- | --- |
 | Defining a set of urban planning principles and documents for climate neutral interventions, plus incentives for their implementation | 9.700.000 eur | The proposed budget encompasses the following sub-interventions: developing urban planning principles that integrate energy-saving and energy-generating methods, nature-based solutions, sustainable mobility, smart city initiatives, and UHI mitigation to improve citizens' quality of life and prevent urban migration to suburban and peri-urban areas. These principles will be based not only on technical expertise from Coalition partners but also on input from citizens and stakeholders. Additionally, the General Spatial Planning of Cluj-Napoca will be updated to incorporate strategies for reducing CO2 emissions in all targeted areas. Furthermore, at least 2 Zonal Urban Plans will be created for climate-neutral neighborhoods and around 8 international contests will be held for solutions to the major urban renewal interventions outlined in the Action Plan. The budget also includes costs associated with several incentives designed to encourage climate-friendly individual behaviors, such as tax reductions for green commercial buildings and the local implementation of the national RABLA program, which will offer financial support (in the form of discounts from the total price of the new purchased e-vehicle) to residents who purchase electric cars in exchange for giving up their old, polluting vehicles. |

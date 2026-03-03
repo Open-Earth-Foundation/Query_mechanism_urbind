@@ -1005,7 +1005,7 @@ Climate Neutrality Action Plan
 |  Type | Title | Description | Relevance  |
 |  Plan | European Green Deal | The European Green Deal is a package of strategic initiatives that aims to put the EU on the path to a green transition, with the ultimate goal of achieving climate neutrality by 2050. It was launched by the Commission in December 2019 and the European Council took note of it in December the same year. The Green Deal highlights the need for a holistic, cross-sectoral approach in which all relevant policy sectors contribute to the ultimate climate goal. The package includes initiatives regarding climate, environment, energy, transport, industry, agriculture and sustainable finance, all highly interconnected sectors. | The definition of a European-level strategy to achieve climate neutrality puts emissions reduction objectives and the definition of a single market for CO, emissions at the center of the debate.  |
 |  Financial instrument | NextGeneration EU | Temporary recovery tool, helping to repair the immediate economic and social damage caused by the coronavirus pandemic. The goal is to create a post-COVID-19 Europe that is greener, more digital, resilient and adapted to current and future challenges. On 21 July 2020, EU leaders agreed on a multi-faceted package of EUR 1824.3 billion (in 2018 prices) combining the EUR 1074.3 billion long-term budget for the period 2021-2027 or multiannual framework with NextGenerationEU, an extraordinary recovery effort of EUR 750 billion. | 30% of total spending under the multiannual framework and NextGenerationEU is allocated to climate-related projects. |
-The National Recovery and Resilience Plan fits into this context, the tool that outlines the objectives, reforms and investments that Italy intends to implement thanks to the use of Next Generation EU funds, to mitigate the economic and social impacts of the pandemic and make Italy a fairer, greener and more inclusive country, with a more competitive, dynamic and innovative economy.  |
+| The National Recovery and Resilience Plan fits into this context, the tool that outlines the objectives, reforms and investments that Italy intends to implement thanks to the use of Next Generation EU funds, to mitigate the economic and social impacts of the pandemic and make Italy a fairer, greener and more inclusive country, with a more competitive, dynamic and innovative economy.  |
 |  Regulation | European climate law (Regulation 2021/1119/EU) | The European Climate Law, in force since June 2021, turns into law the objective set in the European Green Deal for the European economy and society to become climate neutral by 2050. The law also sets the intermediate objective of reducing net greenhouse gas emissions by at least 55% by 2030, compared to 1990 levels. This is a legally binding target, based on an impact assessment carried out by the Commission. | The law aims to ensure that all EU policies contribute to this climate neutrality goal and that all sectors of the economy and society do their part to achieve it by 2050.  |
 | --- | --- | --- | --- |
 |  Plan | REPowerEU | Presented on 18 May 2022 by the European Commission, the REPowerEU plan aims to reduce the EU's dependence on fossil fuels imported from Russia by accelerating the transition and building a more resilient energy system. The Plan was completed in July 2023, with a further step aimed at reducing gas demand in all member states by 15% over the following 8 months and storing more gas for the winter. Among the pillars of the plan: energy saving; diversification in supply, the replacement of fossil fuels, the diversification of investments and the implementation of reforms towards the ecological transition. | To cope with energy supplies and reduce the EU's dependence on Russian supplies, synergistic work at European level to create a common energy platform is essential.  |
@@ -1034,7 +1034,7 @@ Climate Neutrality Action Plan
 1
 
 |   |  | in turn made up of Investments and Reforms. There are 3 further sub - missions (youth, gender equality and reduction of the citizenship gap), i.e. transversal priorities that guide the investments, reforms and projects of the Plan and have the aim of reducing the territorial, generational and gender gaps in the country . | solutions, improvement of the electricity grid and water infrastructure, incentives for energy efficiency of buildings, Investments to face climate change and hydrogeological instability).
-• Infrastructure for sustainable mobility (25.40 billion, 13.26% of the total, divided by high-speed rail in Northern and Southern Italy and rail transport).  |
+| • Infrastructure for sustainable mobility (25.40 billion, 13.26% of the total, divided by high-speed rail in Northern and Southern Italy and rail transport).  |
 | --- | --- | --- | --- |
 | --- | --- | --- | --- |
 |  Plan | National plan to contain gas consumption | The objective of the Plan, approved in October 2022, is to promote conscious and intelligent behaviour in the consumption of gas and electricity. The Plan adopts measures aimed at addressing the security of national natural gas supply in order to ensure a high level of storage filling and quickly diversify the origin of imported gas. | The National Ministry for Environment and energy security's guidance document confirms the decarbonisation commitments for 2030 to increase energy independence.  |
@@ -1072,7 +1072,7 @@ Climate Neutrality Action Plan
 | --- | --- | --- | --- |
 | --- | --- | --- | --- |
 |  Plan | Regional Integrated Air Plan (PAIR2020 - PAIR 2030 ) | With resolution 115/2017, PAIR2020 was approved, in compliance with the European Directive 2008/50/EC relating to ambient air quality and for cleaner air in Europe. The Plan identifies concrete actions to improve air quality and reduce the levels of pollutants present in the regional territory. | |
-During 2021, the Region began the path that will lead to the approval of the new Regional Integrated Air Plan (PAIR 2030). | The PAIR dictates specific binding rules for the territory regarding air quality, a topic strongly interconnected with climate.  |
+| During 2021, the Region began the path that will lead to the approval of the new Regional Integrated Air Plan (PAIR 2030). | The PAIR dictates specific binding rules for the territory regarding air quality, a topic strongly interconnected with climate.  |
 |  **Metropolitan level** |   |   |   |
 | --- | --- | --- | --- |
 |  Strategy | Bologna Charter for the Environment. Metropolitan cities for sustainable development | On 8 June 2017, on the occasion of the G7 Environment which was held in Bologna, the Mayors of the Italian metropolitan cities signed the "Bologna Charter for the Environment. Metropolitan cities for sustainable development" which identifies 8 environmental themes to work on at a metropolitan scale: | |
@@ -1149,7 +1149,7 @@ Climate Neutrality Action Plan
 7
 
 |   |  |  | electricity through renewable sources;
-• diffusion of energy production systems from renewable sources: the plan, in addition to reducing energy consumption, proposes the development of renewable energy sources. To do this, it adapts and supports what is promoted by the SECAP actions.  |
+| • diffusion of energy production systems from renewable sources: the plan, in addition to reducing energy consumption, proposes the development of renewable energy sources. To do this, it adapts and supports what is promoted by the SECAP actions.  |
 | --- | --- | --- | --- |
 | --- | --- | --- | --- |
 |  Regulation | Building Regulations (RE) | The Building Regulations (also including the Regulations for public and private green areas and the Regulations for the application of the hydrogeological restrictions) contain the definitive and prescriptive regulations for the governance of building interventions and transformations on the municipal territory. The objectives of safeguarding, increasing the quantity and improving the performance of the city's green areas are expressed in the General Urban Plan, in the new Building Regulations and in its annex Public and Private Green Regulations; they concern public greenery, private greenery, usable and mitigation greenery, arboreal phytomass, parks, gardens, protected natural areas and also the greening of building envelopes (green roofs and walls), with a view also to seek in the new building, urban and infrastructural transformations the opportunities and contexts to strengthen the urban eco-network and provide ecosystem services of regulation, mitigation and adaptation. | The Building Regulations address and detail the performance of various components of environmental sustainability, with a view to mitigation and adaptation. |
@@ -1267,7 +1267,7 @@ A-2.1d: Policies, strategies, relevant regulations and need for intervention
 |  Type | Title | Need for action | Action reference  |
 | --- | --- | --- | --- |
 |  Law | National Climate Law | The Municipality of Bologna believes it is necessary to promote the development of a national law for climate as happened in other European countries (such as France, Germany and Spain) to define, sector by sector, the actions and tools, at a national level, to achieve climate neutrality, also by shifting the different forms of economic support from activities and actions that aggravate the climate crisis, towards activities and actions that favour mitigation and adaptation to climate change. This new national regulation could provide a significant external contribution to Italian cities currently committed to the 2030 climate neutrality objective. | The Municipality will promote forms of discussion with all institutional levels to define the objectives, actions and tools that can be contained in the law. |
-Ref. Module C-1 - Multilevel Governance  |
+| Ref. Module C-1 - Multilevel Governance  |
 |  National decree | National decree for the definition of areas suitable for the installation of energy production systems from renewable sources. | The expectations for the decree, still being developed, are those of an expansion at national and local level of renewable plants, starting from photovoltaic ones, a further simplification of authorizations and the revision of the forms of public economic support for the various renewable energy sources. | In particular, the Municipality of Bologna will promote further regulatory and procedural simplifications, a greater possibility for innovative agrivoltaics, eroding the limitations provided for by the current regulations.
 Remodulation of the forms of economic support relating to energy sources.  |
 Comune di Bologna
@@ -1277,18 +1277,18 @@ Climate Neutrality Action Plan
 4
 
 |   |  |  | Strengthening the incentives for renewable sources aimed above all at the diffusion of small plants, and eliminating those relating to fossil sources.
-Ref. Module C-1  |
+| Ref. Module C-1  |
 | --- | --- | --- | --- |
 | --- | --- | --- | --- |
 |  National plan | Integrated National Energy and Climate Plan (INECP) | The current phase of updating the Plan provides the opportunity to create the necessary national support framework to accelerate the energy and climate transition of cities. | The Municipality has activated discussions with the national Government for the updating of the INECP together with the network of the Italian cities of the Mission, also proposing a review of the different forms of public economic support for sustainable energy. |
-Ref. Module C-1  |
+| Ref. Module C-1  |
 |  National plan | National Plan for Adaptation to Climate Change (NPACC) | The Plan lacks the identification of specific strategies and the definition of priorities, objectives, targets and times for their achievement. | The Municipality, together with the Emilia-Romagna Region, presented observations on the Plan for various environmental matrices.
 This plan can have an important role on emissions throughout the national territory also by promoting a rapid and widespread development of Nature Based Solutions (NbS) throughout the national territory, providing, among the various ecosystem services, also greater sequestration and storage capacity of CO.
 Ref Module C1  |
 |  Municipal plan | General Urban Plan (PUG) | The objectives of the PUG in terms of climate mitigation and adaptation are consistent with the SECAP, both instruments were in fact approved in 2021. In 2023 the Municipality of Bologna started the procedures envisaged by Regional Law 24/2017 to introduce some changes to the PUG. The variant proposal aims first of all to make the PUG's actions better adhere to the programmatic mandate lines of the current Administration, in terms of effectiveness and efficiency in the control of urban transformations, as well as the pursuit of climate neutrality objectives. | Among the objectives of the Plan revision are also the further expansion of local photovoltaic production, the promotion and incentive of building and urban planning interventions for climate neutrality, the strengthening of the energy infrastructures fundamental for local RES production and sharing, the refinement of climate and environmental provisions.
-Ref. Module C-1  |
+| Ref. Module C-1  |
 |  Municipal regulation | Building Regulations (RE) | The RE contains some elements of protection on certain buildings with the aim of maintaining their identity and historical and architectural characteristics. To this end, article 73 of the RE provides for different limitations on the installation of photovoltaics depending on the level of interest of the building (historical-architectural, cultural and testimonial, historical-architectural of the Modern, cultural and testimonial of the second half of the twentieth century). | With the PUG and RE revision, the easing of these constraints is envisaged in order to expand the local photovoltaic production through a greater possibility of installing PV panels.
-Ref. Module C-1  |
+| Ref. Module C-1  |
 |  Regional legislation | Resolution of the Legislative Assembly of the Emilia-Romagna Region n. 125 Location criteria for | There is a need to adapt the regional regulation regarding location criteria for photovoltaic systems in order to promote their maximum diffusion. | The Municipality of Bologna participated with specific proposals in the work which on 23 May 2023 led to the approval of the Resolution of the Legislative Assembly of the Emilia-Romagna Region n. 125 " Specification of location criteria to guarantee maximum diffusion of photovoltaic systems and to protect agricultural soils and the landscape and  |
 Comune di Bologna
 
@@ -2505,7 +2505,7 @@ Greater access to clean and affordable energy
 Greater community participation in the Mission
 Increased access to information, awareness and behavior change  |
 |   |  Continuation and strengthening of the activities of the Energy and Environment Showroom | Strengthening of Showroom activities | Increase in virtuous behaviors
-Increase in private initiatives for the energy transition  |   |
+| Increase in private initiatives for the energy transition  |   |
 |   |  Activation of a community of good practices linked to the Climate Mission | Active design by the community of good practices | Expansion of the stakeholder audience for the Climate Mission  |   |
 | --- | --- | --- | --- | --- |
 |  Increasing knowledge and skills for the climate transition | Internal training within the municipal administration | Dissemination of a basic culture of climate neutrality across all Departments | Greater capacity for coordination between Departments and transversal planning consistent with neutrality | Greater diffusion of sustainable practices  |
@@ -3254,7 +3254,6 @@ provides evidence of the city's ability to reduce its dependence on fossil fuels
 |  Expected availability | Annual  |
 |  References |   |
 |  Other indicator systems using this indicator | DUP (Documento Unico Programmazione) - the Municipality Programming Document  |
-
 |  B-3.2: Indicator Metadata  |   |
 | --- | --- |
 |  Indicator Name | Municipal tree budget  |
@@ -3301,7 +3300,6 @@ Plan
 |  Expected availability | Monitoring is carried out daily  |
 |  References  |   |
 |  Other indicator systems using this indicator | Air quality report  |
-
 |  B-3.2: Indicator Metadata  |   |
 | --- | --- |
 |  Indicator Name | Domestic water consumption per capita  |
@@ -3447,7 +3445,7 @@ especially to the spread of small systems, eliminating those referable to fossil
 Network of Italian Mission cities
 Other institutions | Expansion of renewable plants at national and local level, starting with photovoltaic ones, further simplification of authorizations and the review of the forms of public economic support for the various sources of renewable energy | Barrier T1 | Barrier T1  |
 |  Integrated National Energy and Climate Plan (INECP) | The Municipality has activated discussions with the national Government for the updating of the INECP together with the network of the nine Italian cities of the Mission, also proposing a review of the different forms of public economic support on the subject of sustainable energy | National government | Municipality of Bologna
-Network of Italian Mission cities | The current phase of updating the Plan provides the opportunity to create a necessary national support framework to accelerate the energy and climate transition of cities. | Barrier T1 | Barrier T1  |
+| Network of Italian Mission cities | The current phase of updating the Plan provides the opportunity to create a necessary national support framework to accelerate the energy and climate transition of cities. | Barrier T1 | Barrier T1  |
 |  National Plan for Adaptation to Climate Change (NPACC) | The Municipality, together with the Emilia-Romagna Region, presented observations on the Plan for various environmental matrices | National government | Municipality of Bologna
 Emilia Romagna region
 Other bodies and institutions in the national territory | This plan can have an important role on emissions throughout the national territory also by promoting a rapid and widespread development of Nature Based Solutions (NbS) throughout the national territory, providing, among the various ecosystem services, also greater sequestration | Increase in urban green spaces
@@ -4034,7 +4032,7 @@ Change in consumption style  |
 | --- | --- | --- | --- | --- | --- |
 | --- | --- | --- | --- | --- | --- |
 |  “Bologna Innovation Ecosystem” event (23 March 2023) | Organized as part of the European CITIES 4.0 project, it is one of the events held in the four participating cities to activate innovation ecosystems that contribute to the Mission. | Fondazione per l'Innovazione Urbana-Rusconi-Villa Ghigi (as partner of the CITIES 4.0 project) | 50 participants representing Bologna organizations working on the built environment and researchers from the University of Bologna | Activation of an innovation ecosystem for climate neutrality (buildings sector) among city actors dealing with R&I in the built environment (Barriers B1, B2, B3 - ref. Module A3) | Improved dialogue and collaboration between institutions, citizens and stakeholders |
-Greater community participation in the Mission  |
+| Greater community participation in the Mission  |
 |  Participatory budgeting | Tool for involving the citizens of Bologna directly in the design of new projects for the neighborhoods. In the 2023 edition, particular attention was paid to the issues of environmental sustainability and the climate | Fondazione per l'Innovazione Urbana - Rusconi-Villa Ghigi and Municipality of Bologna (Department of Public Works, Green and Mobility, Communications Office, Neighborhood Area) | Citizens (voters: 19,327)
 (528 participants in the Neighborhood Workshops for carrying out the BP). | The projects presented in 2023 were developed taking into consideration the objectives of the Mission and any impacts as criteria. (T6 Barriers) | Improved dialogue and collaboration between institutions, citizens and stakeholders
 Greater community participation in the Mission  |
@@ -4080,12 +4078,12 @@ Climate Neutrality Action Plan
 7
 
 |  H2020 FAST TRACK – Fostering the Acceleration of Sustainable Transport To Regions and Authorities Through Capacity and Knowledge | The project aims to create a thematic community of mutual learning to transfer innovations in the field of sustainable mobility. | Coordinated by ICLEI Europe
-For the Municipality of Bologna: Sustainable Mobility and Infrastructure Sector; Europe and International Sector | 24 European cities, Eurocities and 4 research institutions are participating in the project. | Capacity building and exchange of best practices between European cities on sustainable mobility (MT Barriers - ref. Module A3) | Improvement of the healthiness of the urban environment (starting from air quality)  |
+| For the Municipality of Bologna: Sustainable Mobility and Infrastructure Sector; Europe and International Sector | 24 European cities, Eurocities and 4 research institutions are participating in the project. | Capacity building and exchange of best practices between European cities on sustainable mobility (MT Barriers - ref. Module A3) | Improvement of the healthiness of the urban environment (starting from air quality)  |
 | --- | --- | --- | --- | --- | --- |
 | --- | --- | --- | --- | --- | --- |
 |  ENLIGHTENme - Innovative policies for improving citizens' health and wellbeing addressing indoor and outdoor lighting | The project acts on the two fronts of external public lighting and indoor lighting, to study the connections between lighting and health | Coordinated by the University of Bologna | | | |
-For the Municipality of Bologna: Health and Healthy Cities Office (Welfare and Community Wellbeing Department) - lead partner / Maintenance (Public Works, Mobility and Heritage Department); Europe and International Sector | Partners in Bologna:
-University of Bologna ISNB IRCCS - Institute of Neurological Sciences of Bologna, Municipality of Bologna, Fondazione per l'Innovazione Urbana, Rusconi, Villa Ghigi , and 18 other Italian and European partners | The research activities conducted contribute to raising awareness of the link between lighting, environment and public health, confirming the co-benefits of innovative lighting systems on health (Barriers T5,6 ref. Module A3) | Positive impacts on health  |
+| For the Municipality of Bologna: Health and Healthy Cities Office (Welfare and Community Wellbeing Department) - lead partner / Maintenance (Public Works, Mobility and Heritage Department); Europe and International Sector | Partners in Bologna: |
+| University of Bologna ISNB IRCCS - Institute of Neurological Sciences of Bologna, Municipality of Bologna, Fondazione per l'Innovazione Urbana, Rusconi, Villa Ghigi , and 18 other Italian and European partners | The research activities conducted contribute to raising awareness of the link between lighting, environment and public health, confirming the co-benefits of innovative lighting systems on health (Barriers T5,6 ref. Module A3) | Positive impacts on health  |
 |  #ClimateOfChange: End Climate Change, Start Climate of Change | Production of knowledge, facts and guidelines for communication on the link between economic models, climate change and migration, Raising awareness of young people on the topic. | Coordinated by WeWorld
 For the Municipality of Bologna: Innovation Sector, Administrative Simplification and Relations with the citizen; Europe and International Sector | Partners in Bologna:
 University of Bologna and Municipality of Bologna, 14 other Italian and European partners | Important contribution to raising the awareness of students and young people on climate change and the link with migratory phenomena (Barrier T5 - ref. Module A3) | Increased social inclusion  |

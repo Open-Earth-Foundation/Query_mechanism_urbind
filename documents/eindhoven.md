@@ -96,19 +96,18 @@ Climate Neutrality Action Plan
 
 The list of abbreviations and acronyms identifies the abbreviations (a shortened form of a word used in place of the full word) and acronyms (a word formed from the first letters of each of the words in a phrase of name) used in the CCC Action Plan.
 
-|  Abbreviations and acronyms | Definition  |
-| --- | --- |
-|  AP | Action Plan  |
-|  BENG | Bijna Energie Neutrale Gebouwen
+Abbreviations and acronyms | Definition
+AP | Action Plan
+BENG | Bijna Energie Neutrale Gebouwen
 (lit. almost energy neutral buildings)  |
-|  EV | Electric Vehicle  |
-|  IP | Investment Plan  |
-|  KPI | Key Performance Indicator  |
-|  MEL | Monitoring Evaluation & Learning  |
-|  MRV | Monitoring Reporting Verification  |
-|  VVE | Dutch: Vereniging van Eigenaren
+EV | Electric Vehicle
+IP | Investment Plan
+KPI | Key Performance Indicator
+MEL | Monitoring Evaluation & Learning
+MRV | Monitoring Reporting Verification
+VVE | Dutch: Vereniging van Eigenaren
 English: Owners' Association  |
-|  WP | Work Package  |
+WP | Work Package
 Gemeente Helmond
 EINDHOVEN
 Climate Neutrality Action Plan
@@ -436,25 +435,23 @@ Climate Neutrality Action Plan
 
 Table I-1.1 contains an overview of the emission sources, greenhouse gases and geographical boundaries that are included in the contract.
 
-|  Table I-1.1: Climate Neutrality Target by 2030  |   |   |   |
-| --- | --- | --- | --- |
-|  Sectors | Scope 1 | Scope 2 | Scope 3  |
-|  Stationary energy | Included: CO2, N2O, PFCs, NF3, CHA, HFCs, SF6 | Included: CO2, N2O, PFCs, NF3, CHA, HFCs, SF6 | To be defined  |
-|   |  |   |   |
-|  Transport | Included: CO2, N2O, PFCs, NF3, CHA, HFCs, SF6 | Included: CO2, N2O, PFCs, NF3, CHA, HFCs, SF6 | To be defined  |
-|   |  Air-traffic, motorways, marine freight is excluded. | Air-traffic, motorways, marine freight is excluded. |   |
-|  Waste/wastewater | Included | Not applicable | To be defined  |
-|   |  list exclusions (if any) in terms of sources or greenhouse gases | Not applicable |   |
-|  IPPU | Included | Not applicable | Not applicable  |
-|   |  list exclusions (if any) in terms of sources or greenhouse gases | Not applicable |   |
-|  AFOLU | Included | Not applicable | Not applicable  |
-|   |  list exclusions (if any) in terms of sources or greenhouse gases | Not applicable |   |
-|  Other | Not applicable |  |   |
-|  Geographical boundary | Same as city administrative boundary | Smaller than city administrative boundary | Larger than city administrative boundary  |
-|  (Tick correct option) |  |  |   |
-|  Specify excluded/additional areas | Motorways, air traffic, shipping (National) | Motorways, air traffic, shipping (National) | Required information  |
-|  Map  |   |   |   |
-|  Administrative territory of the cities Eindhoven and Helmond. Motorways (national), air traffic and shipping are excluded and are the responsibility of the National government.  |   |   |   |
+Table I-1.1: Climate Neutrality Target by 2030
+Sectors | Scope 1 | Scope 2 | Scope 3
+Stationary energy | Included: CO2, N2O, PFCs, NF3, CHA, HFCs, SF6 | Included: CO2, N2O, PFCs, NF3, CHA, HFCs, SF6 | To be defined
+Transport | Included: CO2, N2O, PFCs, NF3, CHA, HFCs, SF6 | Included: CO2, N2O, PFCs, NF3, CHA, HFCs, SF6 | To be defined
+Air-traffic, motorways, marine freight is excluded. | Air-traffic, motorways, marine freight is excluded.
+Waste/wastewater | Included | Not applicable | To be defined
+list exclusions (if any) in terms of sources or greenhouse gases | Not applicable
+IPPU | Included | Not applicable | Not applicable
+list exclusions (if any) in terms of sources or greenhouse gases | Not applicable
+AFOLU | Included | Not applicable | Not applicable
+list exclusions (if any) in terms of sources or greenhouse gases | Not applicable
+Other | Not applicable
+Geographical boundary | Same as city administrative boundary | Smaller than city administrative boundary | Larger than city administrative boundary
+(Tick correct option)
+Specify excluded/additional areas | Motorways, air traffic, shipping (National) | Motorways, air traffic, shipping (National) | Required information
+Map
+Administrative territory of the cities Eindhoven and Helmond. Motorways (national), air traffic and shipping are excluded and are the responsibility of the National government.
 Gemeente Helmond
 ^{}[]
 EINDHOVEN
@@ -475,35 +472,33 @@ Climate Neutrality Action Plan
 
 ## 1.1 Module A-1 Greenhouse Gas Emissions Baseline Inventory
 
-|  GhG Emissions Baseline inventory  |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- |
-|  The baseline is the gap analysis for 2018, which is included in the Annex. E: Eindhoven, H: Helmond  |   |   |   |   |   |   |
-|  A-1.1: Final energy use by source sectors  |   |   |   |   |   |   |
-|  Base year | 2018  |   |   |   |   |   |
-|  Unit |   |   |   |   |   |   |
-|   | Scope 1 |   | Scope 2 |   | Scope 3  |   |
-|  Buildings | E: 9.637
+GhG Emissions Baseline inventory
+The baseline is the gap analysis for 2018, which is included in the Annex. E: Eindhoven, H: Helmond
+A-1.1: Final energy use by source sectors
+Base year | 2018
+Unit
+Scope 1 | Scope 2 | Scope 3
+Buildings | E: 9.637
 H: 3.095 |   | E: 906
 H: 281 |   | To be defined  |   |
-|  (Fuel type/ energy used) | TJ (mostly gas, rest electricity) |   | GWh electricity (included in scope 1) |   |   |   |
-|  Transport | E: 6.295
+(Fuel type/ energy used) | TJ (mostly gas, rest electricity) | GWh electricity (included in scope 1)
+Transport | E: 6.295
 H: 1.481 |   |  |   |   |   |
-|  (Fuel type/ energy used) | TJ (fossile fuels) |   |  |   |   |   |
-|  Waste | Aggregated with industry |   |  |   |   |   |
-|  (Fuel type/ energy used) |  |   |  |   |   |   |
-|  Industrial Process and ProductUse (IPPU) | E: 2.635
+(Fuel type/ energy used) | TJ (fossile fuels)
+Waste | Aggregated with industry
+(Fuel type/ energy used)
+Industrial Process and Product Use (IPPU) | E: 2.635
 H: 2.272 |   | E: 386
 H: 262 |   |   |   |
-|  (Fuel type/ energy used) | TJ (electricity and gas) |   | GWh electricity (included in scope 1) |   |   |   |
-|  Agricultural, Forestry and Land Use (AFOLU) | E: 24
+(Fuel type/ energy used) | TJ (electricity and gas) | GWh electricity (included in scope 1)
+Agricultural, Forestry and Land Use (AFOLU) | E: 24
 H: 305 |   |  |   |   |   |
-|  (Fuel type/ energy used) | TJ |   |  |   |   |   |
-|  |   |   |   |   |   |   |
-|  A-1.2: Emission factors applied  |   |   |   |   |   |   |
-|  (Please specify for primary energy type and GHG emission factor according to methodology used).  |   |   |   |   |   |   |
-|  For calculation in t or MWh of primary energy  |   |   |   |   |   |   |
-|  Primary energy/ energy source | Carbon Dioxide (CO2) | Methane (CH4) | Nitrous Oxide (N2O) | F-gases (hydrofluorocarbons and perfluorocarbons) | Sulphur hexafluoride (SF6) | Nitrogen trifluoride (NF3)  |
-|  National method (CBS) | 0,290 (kg/kWh)(electricity)
+(Fuel type/ energy used) | TJ
+A-1.2: Emission factors applied
+(Please specify for primary energy type and GHG emission factor according to methodology used).
+For calculation in t or MWh of primary energy
+Primary energy/ energy source | Carbon Dioxide (CO2) | Methane (CH4) | Nitrous Oxide (N2O) | F-gases (hydrofluorocarbons and perfluorocarbons) | Sulphur hexafluoride (SF6) | Nitrogen trifluoride (NF3)
+National method (CBS) | 0,290 (kg/kWh)(electricity)
 ,785 kg/m3)(gas) and 35,970 (Kg/gj) (Heath) | National method (CBS) | National method (CBS) | National method (CBS) | National method (CBS) | National method (CBS)  |
 Gemeente Helmond
 
@@ -513,41 +508,39 @@ Climate Neutrality Action Plan
 
 A-1.3: GHG emissions by source sectors (kton CO₂) E: Eindhoven, H: Helmond
 
-|  Base year |   | 2018  |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  Unit |   | kton CO₂  |   |   |   |
-|   |   | Scope 1 | Scope 2 | Scope 3 | Total  |
-|  Buildings
+Base year | 2018
+Unit | kton CO₂
+Scope 1 | Scope 2 | Scope 3 | Total
+Buildings
 Residential
 Non-residential |   | H 107 E 283
 H 79 E 150 | H 28 E 83
 H 21 E 179 | n.n. | 930  |
-|  Transport |   | H 98 E 237 |  |  | 335  |
-|  Waste |   |  |  |  |   |
-|  Industrial Process and Product Use (IPPU) |   | H 165 E251 | H 43 E 216 |  | 675  |
-|  Agricultural, Forestry and Land Use (AFOLU) | Sources (positive emissions) |  |  |  | Not applicable  |
-|   |  Sinks (negative emissions) | H 19,2 |  |  | Not applicable  |
-|  Total |  |  |  |  | 1940  |
+Transport | H 98 E 237 | 335
+Waste
+Industrial Process and Product Use (IPPU) | H 165 E251 | H 43 E 216 | 675
+Agricultural, Forestry and Land Use (AFOLU) | Sources (positive emissions) | Not applicable
+Sinks (negative emissions) | H 19,2 | Not applicable
+Total | 1940
 
 A-1.4: Activity by source sectors E: Eindhoven, H: Helmond
 
-|  Base year 2018 |   |   |   |
-| --- | --- | --- | --- |
-|   | Scope 1 | Scope 2 | Scope 3  |
-|  Buildings
+Base year 2018
+Scope 1 | Scope 2 | Scope 3
+Buildings
 Residential
 Non-residential | H 107 E 283
 H 79 E 150 | H 28 E 83
 H 21 E 179 | n.n.  |
-|  (Activity) | Heating, DHW-demand | Electricity |   |
-|  Transport | H 98 E 237 |  |   |
-|  (Activity) | Vehicle kilometers |  |   |
-|  Sector: Waste |  |  |   |
-|  (Activity) |  |  |   |
-|  Sector: Industrial Process and Product Use (IPPU) | H 165 E251 | H 43 E 216 |   |
-|  (Activity) | Production processes, heating | Electricity |   |
-|  Sector: Agricultural, Forestry and Land Use (AFOLU) | H 19,2 |  |   |
-|  (Activity) | n.n. |  |   |
+(Activity) | Heating, DHW-demand | Electricity
+Transport | H 98 E 237
+(Activity) | Vehicle kilometers
+Sector: Waste
+(Activity)
+Sector: Industrial Process and Product Use (IPPU) | H 165 E251 | H 43 E 216
+(Activity) | Production processes, heating | Electricity
+Sector: Agricultural, Forestry and Land Use (AFOLU) | H 19,2
+(Activity) | n.n.
 Gemeente Helmond
 
 2
@@ -737,28 +730,26 @@ Climate Neutrality Action Plan
 
 A-2.1.2: List of relevant national and provincial policies, strategies &amp; regulations
 
-| Type | Name & Title | Year of Publication | Emission domain(s) | Description | Stakeholders | Need for action |
-| --- | --- | --- | --- | --- | --- | --- |
-| (regulation/policy/strategy/action plan) | (Name of policy/strategy/ plans) |  |  | (Description of policy/ strategy/ plans) |  | (Reference to Module C-1) |
-| Policy | National Climate Agreement | 2018 | All | Agreement between large group of national stakeholders committing to bringing national CO_{2}-emissions down by at least 49% by 2030 and 95% by 2050 compared to 1990 | All | Framework for most actions in this list. |
-| Strategy | Energy Agenda | 2016 | All | The main lines of future energy policy for the period up to 2050. | All | Link with local missions on speeding up energy saving, insulating and renewable energy. |
-| Action Plan | Delta Rhine Corridor | 2023 | Industry, energy Sector | A collection of initiatives to simultaneously construct multiple underground pipelines and direct connections between Rotterdam and the German border, via Moerdijk and Geleen. This involves the construction of a pipeline for the transport of hydrogen. | Industry, energy sector, governments | Link with missions/ actions on renewable energy and circular and sustainable industry Delta Rhine Corridor | DRC (delta-rhine-corridor.com) |
-| Strategy | National Approach Mobility Transition | Multi-year approach | Mobility | Accelerating the mobility transition through a joint approach by all governments. | All | Measures aimed at structurally improving mobility. Link with local mobility vision and implementation. |
-| Vision paper | Mobility vision 2050 | 2023 | Mobility | National vision paper about the future of mobility | All | Framework for policies on mobility. |
+Type | Name & Title | Year of Publication | Emission domain(s) | Description | Stakeholders | Need for action
+(regulation/policy/strategy/action plan) | (Name of policy/strategy/ plans) | (Description of policy/ strategy/ plans) | (Reference to Module C-1)
+Policy | National Climate Agreement | 2018 | All | Agreement between large group of national stakeholders committing to bringing national CO_{2}-emissions down by at least 49% by 2030 and 95% by 2050 compared to 1990 | All | Framework for most actions in this list.
+Strategy | Energy Agenda | 2016 | All | The main lines of future energy policy for the period up to 2050. | All | Link with local missions on speeding up energy saving, insulating and renewable energy.
+Action Plan | Delta Rhine Corridor | 2023 | Industry, energy Sector | A collection of initiatives to simultaneously construct multiple underground pipelines and direct connections between Rotterdam and the German border, via Moerdijk and Geleen. This involves the construction of a pipeline for the transport of hydrogen. | Industry, energy sector, governments | Link with missions/ actions on renewable energy and circular and sustainable industry Delta Rhine Corridor | DRC (delta-rhine-corridor.com)
+Strategy | National Approach Mobility Transition | Multi-year approach | Mobility | Accelerating the mobility transition through a joint approach by all governments. | All | Measures aimed at structurally improving mobility. Link with local mobility vision and implementation.
+Vision paper | Mobility vision 2050 | 2023 | Mobility | National vision paper about the future of mobility | All | Framework for policies on mobility.
 Gemeente Helmond
 Climate Neutrality Action Plan
 C
 
-| Policy proposal | Wetsvoorstel Collectieve Warmte | 2022 | Energy Transition | Proposed bill to facilitate the development of district heating by designating public parties to develop said networks, thus giving the public sector more control. | Governments, energy suppliers, housing associations, residents | Framework for developing district heating. |
-| --- | --- | --- | --- | --- | --- | --- |
-| Action plan | National Insulation Program | 2022 | Energy transition | National program to accelerate the insulation of households in order to decrease energy consumption and prepare for non-fossil fuel heating sources in 2.5 million households by 2030. | Governments, housing associations, home owners, insulation companies, occupants of housing needing insulation. | Link with local missions on speeding up energy saving and insulating.
+Policy proposal | Wetsvoorstel Collectieve Warmte | 2022 | Energy Transition | Proposed bill to facilitate the development of district heating by designating public parties to develop said networks, thus giving the public sector more control. | Governments, energy suppliers, housing associations, residents | Framework for developing district heating.
+Action plan | National Insulation Program | 2022 | Energy transition | National program to accelerate the insulation of households in order to decrease energy consumption and prepare for non-fossil fuel heating sources in 2.5 million households by 2030. | Governments, housing associations, home owners, insulation companies, occupants of housing needing insulation. | Link with local missions on speeding up energy saving and insulating.
 National Insulation Program |
-| Program | Building Balance | Multi-year approach | Buildings, homes, industry | Initiating, encouraging and supporting independent regional and national chains for biobased building. | Farmers, producers, builders, government, homeowners | Link with all missions/ actions to speed up existing policies.
+Program | Building Balance | Multi-year approach | Buildings, homes, industry | Initiating, encouraging and supporting independent regional and national chains for biobased building. | Farmers, producers, builders, government, homeowners | Link with all missions/ actions to speed up existing policies.
 Bouwmaterialen van eigen bodem - Building Balance |
-| Action Plan | Provincial multiple year plan on infrastructure, energy and climate (pMIEK) | 2023 | Energy transition, built environment | Integrated provincial analysis on the most important decisions to make to ensure a functioning energy system beyond 2030. | All | Link with missions aimed at countering netcongestion. |
-| Action Plan | Delta Plan on Spatial Adaptation (National) | 2018 | Built environment, rural areas | Limit flooding, heat stress, drought and the consequences of flooding. | All | Link with missions/ actions on green, water and climate proof as a base.
+Action Plan | Provincial multiple year plan on infrastructure, energy and climate (pMIEK) | 2023 | Energy transition, built environment | Integrated provincial analysis on the most important decisions to make to ensure a functioning energy system beyond 2030. | All | Link with missions aimed at countering netcongestion.
+Action Plan | Delta Plan on Spatial Adaptation (National) | 2018 | Built environment, rural areas | Limit flooding, heat stress, drought and the consequences of flooding. | All | Link with missions/ actions on green, water and climate proof as a base.
 DeltaPlan Ruimtelijke adaptatie | Drie thema's | Deltaprogramma |
-| Agenda | Energy Agenda 2019-2030 (Province) | 2019 | All | Guideline for action of the province. This with the aim of being in place by 2050, 100% sustainable energy and a reduction of 90% of CO_{2} emissions compared to 1990. | All | Link with local missions on speeding up energy saving and insulating. |
+Agenda | Energy Agenda 2019-2030 (Province) | 2019 | All | Guideline for action of the province. This with the aim of being in place by 2050, 100% sustainable energy and a reduction of 90% of CO_{2} emissions compared to 1990. | All | Link with local missions on speeding up energy saving and insulating.
 
 4
 Gemeente Helmond
@@ -775,30 +766,28 @@ Climate Neutrality Action Plan
 
 A-2.1.3: List of relevant regional and local policies, strategies &amp; regulations
 
-| Type | Name & Title | Year of Publication | Emission domain(s) | Description | Stakeholders | Need for action |
-| --- | --- | --- | --- | --- | --- | --- |
-| (regulation/policy/strategy/action plan) | (Name of policy/strategy/ plans) |  |  | (Description of policy/ strategy/ plans) |  | (Reference to Module C-1) |
-| Strategy | Regional Energy Strategy (Brainport region) | 2021-present | Energy transition, built environment, | Regional strategy for increased production of renewable energy on land, for saving energy and sustainable heat generation | All | Link with local missions on speeding up energy saving and insulating, renewable energy and decarbonizing buildings. RES Metropoolregio Eindhoven | Energieregio MRE |
-| Program | Implementation program Future-proof Brainport Electricity Network (UTEB, Brainport Region) | 2023 | Energy transition, built environment, industry, transport | 21 municipalities in the Brainport area, the province of North Brabant and Brainport Development collaborate to limit the consequences of net congestion. | All | Link with missions aimed at countering netcongestion. |
-| Agenda, Action Plan | Brainport Sustainability Plan (Brainport region) | 2023 | Industry, businesses, governments, transport, buildings | Projects and activities in the field of circularity and sustainability with a focus on circular chains. | High tech industry, businesses, governments | Link with missions/ actions with regard to circular and sustainable businesses and industrial areas. |
-| Agenda, Program, Action Plan | Peel Positief (Helmond and Peel region) | Multi-year approach | All | Projects and activities in the field of circularity and sustainability. | Businesses, governments, citizens, civil society | Link with all missions/ actions to speed up existing policies. Peel Positief |
+Type | Name & Title | Year of Publication | Emission domain(s) | Description | Stakeholders | Need for action
+(regulation/policy/strategy/action plan) | (Name of policy/strategy/ plans) | (Description of policy/ strategy/ plans) | (Reference to Module C-1)
+Strategy | Regional Energy Strategy (Brainport region) | 2021-present | Energy transition, built environment, | Regional strategy for increased production of renewable energy on land, for saving energy and sustainable heat generation | All | Link with local missions on speeding up energy saving and insulating, renewable energy and decarbonizing buildings. RES Metropoolregio Eindhoven | Energieregio MRE
+Program | Implementation program Future-proof Brainport Electricity Network (UTEB, Brainport Region) | 2023 | Energy transition, built environment, industry, transport | 21 municipalities in the Brainport area, the province of North Brabant and Brainport Development collaborate to limit the consequences of net congestion. | All | Link with missions aimed at countering netcongestion.
+Agenda, Action Plan | Brainport Sustainability Plan (Brainport region) | 2023 | Industry, businesses, governments, transport, buildings | Projects and activities in the field of circularity and sustainability with a focus on circular chains. | High tech industry, businesses, governments | Link with missions/ actions with regard to circular and sustainable businesses and industrial areas.
+Agenda, Program, Action Plan | Peel Positief (Helmond and Peel region) | Multi-year approach | All | Projects and activities in the field of circularity and sustainability. | Businesses, governments, citizens, civil society | Link with all missions/ actions to speed up existing policies. Peel Positief
 
 6
 Gemeente Helmond
 Climate Neutrality Action Plan
 C
 
-| Agenda, program | Green and smart mobility (Brainport region) | Multi-year approach | All | Realize innovative technological breakthroughs in electrification, hydrogen applications and future-oriented digital infrastructure in mobility. | Industry, businesses, knowledge institutions, governments | Link with missions/ actions to speed up existing policies aimed at reducing CO₂. |
-| --- | --- | --- | --- | --- | --- | --- |
-| Program | Brainport Bereikbaar (Brainport region) | Multi-year approach | All | Optimal flow and accessibility of the Brainport region. Facilitate and encourage mobility solutions that are faster, cleaner and healthier. | Governments, businesses, knowledge institutions, education, citizens | Link with missions/ actions to speed up existing policies aimed at reducing CO₂.
+Agenda, program | Green and smart mobility (Brainport region) | Multi-year approach | All | Realize innovative technological breakthroughs in electrification, hydrogen applications and future-oriented digital infrastructure in mobility. | Industry, businesses, knowledge institutions, governments | Link with missions/ actions to speed up existing policies aimed at reducing CO₂.
+Program | Brainport Bereikbaar (Brainport region) | Multi-year approach | All | Optimal flow and accessibility of the Brainport region. Facilitate and encourage mobility solutions that are faster, cleaner and healthier. | Governments, businesses, knowledge institutions, education, citizens | Link with missions/ actions to speed up existing policies aimed at reducing CO₂.
 Homepage - Brainport Bereikbaar |
-| Action Plan | Towards a climate neutral Eindhoven | 2020 | All | Eindhoven wants to reduce the city's CO₂ emissions by 55% in 2030 and 95% in 2050 compared to 1990 emissions. | All | Link with missions/ actions to speed up existing policies aimed at reducing CO₂.
+Action Plan | Towards a climate neutral Eindhoven | 2020 | All | Eindhoven wants to reduce the city's CO₂ emissions by 55% in 2030 and 95% in 2050 compared to 1990 emissions. | All | Link with missions/ actions to speed up existing policies aimed at reducing CO₂.
 Ambitie | Eindhoven Duurzaam |
-| Program | Implementation Agenda 2021-2025 (Eindhoven) | 2020 | All | An adaptive implementation agenda in which the CO₂ impact of projects is made transparent. | All | Link with missions/ actions to speed up existing policies aimed at reducing CO₂. |
-| Regulation | Climate Regulation 2016 (Eindhoven)
+Program | Implementation Agenda 2021-2025 (Eindhoven) | 2020 | All | An adaptive implementation agenda in which the CO₂ impact of projects is made transparent. | All | Link with missions/ actions to speed up existing policies aimed at reducing CO₂.
+Regulation | Climate Regulation 2016 (Eindhoven)
 Climate Regulation Helmond by 2035 | 2016
-| All | Step-by-step reduction of greenhouse gas emissions compared to emissions in 1990 | All | Link with missions/ actions to speed up existing policies aimed at reducing CO₂. |
-| Strategy | Sustainable Strategic Program and Healthy City (Helmond) | 2020-2025 | All | Strategy focused on sustainability and climate adaptation. | All | Link with all missions/ actions to speed up existing policies. |
+All | Step-by-step reduction of greenhouse gas emissions compared to emissions in 1990 | All | Link with missions/ actions to speed up existing policies aimed at reducing CO₂.
+Strategy | Sustainable Strategic Program and Healthy City (Helmond) | 2020-2025 | All | Strategy focused on sustainability and climate adaptation. | All | Link with all missions/ actions to speed up existing policies.
 
 7
 Gemeente Helmond
@@ -807,16 +796,15 @@ Climate Neutrality Action Plan
 
 #
 
-| Action Plan | Climate Neutral Plan in 2035 (Helmond) | 2021 | All | Helmond want to be climate neutral as a city in the period 2035-2045. | All | Link with missions/ actions to speed up existing policies aimed at reducing CO2.
+Action Plan | Climate Neutral Plan in 2035 (Helmond) | 2021 | All | Helmond want to be climate neutral as a city in the period 2035-2045. | All | Link with missions/ actions to speed up existing policies aimed at reducing CO2.
 Home | Heel Helmond duurzaam |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Program | Annual climate budget (CO2, energy-use) Eindhoven | 2023 | All | Report on progress towards CO2 reduction goals. | Citizens, businesses, civil society, governments | Link with missions/ actions to speed up existing policies aimed at reducing CO2. |
-| Program | Annual climate budget (CO2, energy-use) Helmond | 2021 | All | Report on progress towards CO2 reduction goals. | Citizens, businesses, civil society, governments | Link with missions/ actions to speed up existing policies aimed at reducing CO2. |
-| Strategy | Decarbonizing Strategy 2050 (Eindhoven, Helmond) | 2021 | Buildings, industry, services, energy sector | Heating an cooling homes, businesses and other buildings within the built environment in a different way than with natural gas. | House owners, industry, services, energy sector | Link with missions/ actions to speed up existing policies aimed at reducing CO2. |
-| Strategy, program | Mobility Vision and Implementation Program (Eindhoven, Helmond) | 2023 | All | Vison on the future mobility system and what is needed to achieve this. | All | Link with missions/ actions to speed up existing policies aimed at reducing CO2. |
-| Program, Action Plan | Circular City Eindhoven | 2021 | Buildings, industry | To be a circular city in 2050 that uses (raw) materials in a sustainable way. | House owners, developers, builders, housing associations, governments, industry | Link with missions/ actions with regard to circular and biobased building.
+Program | Annual climate budget (CO2, energy-use) Eindhoven | 2023 | All | Report on progress towards CO2 reduction goals. | Citizens, businesses, civil society, governments | Link with missions/ actions to speed up existing policies aimed at reducing CO2.
+Program | Annual climate budget (CO2, energy-use) Helmond | 2021 | All | Report on progress towards CO2 reduction goals. | Citizens, businesses, civil society, governments | Link with missions/ actions to speed up existing policies aimed at reducing CO2.
+Strategy | Decarbonizing Strategy 2050 (Eindhoven, Helmond) | 2021 | Buildings, industry, services, energy sector | Heating an cooling homes, businesses and other buildings within the built environment in a different way than with natural gas. | House owners, industry, services, energy sector | Link with missions/ actions to speed up existing policies aimed at reducing CO2.
+Strategy, program | Mobility Vision and Implementation Program (Eindhoven, Helmond) | 2023 | All | Vison on the future mobility system and what is needed to achieve this. | All | Link with missions/ actions to speed up existing policies aimed at reducing CO2.
+Program, Action Plan | Circular City Eindhoven | 2021 | Buildings, industry | To be a circular city in 2050 that uses (raw) materials in a sustainable way. | House owners, developers, builders, housing associations, governments, industry | Link with missions/ actions with regard to circular and biobased building.
 Cirkelstad Eindhoven - Cirkelstad |
-| Action Plan | Sustainability Pact (Eindhoven) and Performance Agreements (Helmond) | Multi-year approach | Homes, buildings | Agreements with housing associations about making homes more sustainable. | Housing associations, governments | Link with missions/ actions to speed up existing policies aimed at reducing CO2. |
+Action Plan | Sustainability Pact (Eindhoven) and Performance Agreements (Helmond) | Multi-year approach | Homes, buildings | Agreements with housing associations about making homes more sustainable. | Housing associations, governments | Link with missions/ actions to speed up existing policies aimed at reducing CO2.
 
 8
 Gemeente Helmond
@@ -1052,21 +1040,20 @@ Gemeente Helmond
 Climate Neutrality Action Plan
 0
 
-|   |  | or heard. JongRES is an organization that makes the voices of young people from the regions of the Netherlands heard. They want to create a living environment that young people are proud of. An environment where you can still live in fifty years and your children can grow up. That is why they are committed to a sustainable future in all regions.  |
-| --- | --- | --- |
-|  All lights are green
+or heard. JongRES is an organization that makes the voices of young people from the regions of the Netherlands heard. They want to create a living environment that young people are proud of. An environment where you can still live in fifty years and your children can grow up. That is why they are committed to a sustainable future in all regions.
+All lights are green
 (Alle Lichten op Groen) | Medium | Medium. All lights are green is the sustainability platform of the municipality of Helmond. To share stories and sustainable examples from residents, companies and associations. More sustainable energy, less CO_{2} emissions and more space for high-quality greenery and water. These are the ambitions in Helmond for which all lights go green.  |
-|  Struikroven | Low | Medium. Struikroven save existing greenery from front and back gardens and give it a new purpose in the area.  |
-|  Living Lab 040 | Medium | Medium. The mission is to develop cities in which people's well-being is central. Where they take responsibility and consciously deal with everything the earth offers. A city that is efficiently organized and therefore affordable and has no pollution. A city that is agile and also attractive to live in, for everyone. The Living LAB 040 is also a real living LAB. It will be physically realized in Eindhoven on 8500m2 with 119 experimental homes in an equally experimental area.  |
-|  Climate Grandparents
+Struikroven | Low | Medium. Struikroven save existing greenery from front and back gardens and give it a new purpose in the area.
+Living Lab 040 | Medium | Medium. The mission is to develop cities in which people's well-being is central. Where they take responsibility and consciously deal with everything the earth offers. A city that is efficiently organized and therefore affordable and has no pollution. A city that is agile and also attractive to live in, for everyone. The Living LAB 040 is also a real living LAB. It will be physically realized in Eindhoven on 8500m2 with 119 experimental homes in an equally experimental area.
+Climate Grandparents
 (grootouders voor het klimaat) | Medium | Medium. If we want to keep the earth livable for future generations, we will have to accelerate our move towards a 100% sustainable energy supply. That transition is already underway and the Grandparents for the Climate are committed to this and stand up for all children and grandchildren.  |
-|  Nature Platform Helmond
+Nature Platform Helmond
 (Natuurplatform Helmond) | Medium | Medium. Nature Platform Helmond is a partnership of volunteer organizations active in the Municipality of Helmond, which are expressly concerned with involving and/or raising awareness of citizens, government and other institutions in the importance of nature and nature experience.  |
-|  Youth Council
+Youth Council
 (Jeugdgemeenteraad Helmond) | Medium | Medium. The aim of this council is to educate the youth about politics and governing a city. On the other hand, the city council can learn about what lives among our youth.  |
-|  Youth Council
+Youth Council
 (Jeugdraad Eindhoven) | Medium | Medium. he members of the Youth Council meet three times per topic and then write advice and present it to the municipal council. Topics such as climate, traffic, inclusion, mental well-being and culture are discussed.  |
-|  Young 040 (Jong040 Eindhoven | Medium | Medium. Jong040 is a group of youth ambassadors with young people from 15 to 27 years old. They give advice to Eindhoven politicians on current topics in Eindhoven.  |
+Young 040 (Jong040 Eindhoven | Medium | Medium. Jong040 is a group of youth ambassadors with young people from 15 to 27 years old. They give advice to Eindhoven politicians on current topics in Eindhoven.
 Climate Neutrality Action Plan Guidance
 
 #
@@ -1104,11 +1091,10 @@ Climate Neutrality Action Plan Guidance
 
 3
 
-|  B-1.1: Impact Pathways  |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- |
-|  CITY THEME: VITAL CITY CENTRE  |   |   |   |   |   |   |
-|  Missions | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (Co-benefits) | Fields of action  |
-|  MISSION: 1. Storytelling Vital City Center | • Social innovation: ownership, inclusivity and behavioral change | Storymaking
+B-1.1: Impact Pathways
+CITY THEME: VITAL CITY CENTRE
+Missions | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (Co-benefits) | Fields of action
+MISSION: 1. Storytelling Vital City Center | • Social innovation: ownership, inclusivity and behavioral change | Storymaking
 • Make information easy accessible for everyone.
 • Target group-oriented communication. | Storytelling
 • Joint communication campaigns in the two cities.
@@ -1116,7 +1102,7 @@ Climate Neutrality Action Plan Guidance
 • More sustainable behaviour | Buildings
 Transport
 Waste  |
-|  MISSION: 2. Circular City Center and sustainable consumption | • Social innovation: leadership, ownership, inclusivity and behavioral change
+MISSION: 2. Circular City Center and sustainable consumption | • Social innovation: leadership, ownership, inclusivity and behavioral change
 • Collaboration
 • Financing/Investment
 • Economic innovation: Circular business models | Awareness and knowledge development
@@ -1130,7 +1116,7 @@ Waste  |
 • Reduce consumption emissions
 • Longer lifespan of products
 • Stimulation the local economy  |   |
-|  MISSION: 3. Development of circular and biobased building | • Technological innovation
+MISSION: 3. Development of circular and biobased building | • Technological innovation
 • Policy and regulations
 • Market stimulation
 • Financing/Investment
@@ -1147,7 +1133,7 @@ Waste  |
 • Health improvement
 • New businessmodels for producers
 • Job creation  |   |
-|  MISSION: 4. Climate neutral mobility in the city center | • Policy and regulations
+MISSION: 4. Climate neutral mobility in the city center | • Policy and regulations
 • Behavioral change
 • Finance/Investment
 • Technological innovation
@@ -1194,10 +1180,9 @@ Climate Neutrality Action Plan
 
 #
 
-|  8. Scaling up the new normal | • Policy and regulations | large scale, collectively and in an integrated manner.
+8. Scaling up the new normal | • Policy and regulations | large scale, collectively and in an integrated manner.
 • Encourage exemplary action through leaders and ambassadors in the neighbourhood and through energy communities. |  |  |  | Buildings Transport Waste  |
-| --- | --- | --- | --- | --- | --- | --- |
-|  MISSION:
+MISSION:
 Development of circular and biobased building | • Technological innovation
 • Policy and regulations
 • Market stimulation
@@ -1215,7 +1200,7 @@ Development of circular and biobased building | • Technological innovation
 • Health improvement
 • New businessmodels for producers
 • Job creation |   |
-|  MISSION:
+MISSION:
 Climate neutral mobility in the neighbourhoods | • Policy and regulations
 • Behavioral change
 • Finance/Investment
@@ -1232,7 +1217,7 @@ Climate neutral mobility in the neighbourhoods | • Policy and regulations
 • Reduction of noise and air pollution
 • More space for climate adaption
 • More access to mobility |   |
-|  MISSION:
+MISSION:
 Everyone can participate | • Finance/Investment
 • Social innovation
 • Awareness | Develop a collective approach
@@ -1242,7 +1227,7 @@ Everyone can participate | • Finance/Investment
 • A structural, multi-year approach to involve everyone in the missions. | Indirect (influence on buildings and waste) | • Awareness
 • Reducing social inequality
 • Large support for the mission |   |
-|  MISSION:
+MISSION:
 Sustainable public space | • Policy and regulations
 • Finance/investment
 • Collaboration | Vision and implementation program
@@ -1257,13 +1242,12 @@ Sustainable public space | • Policy and regulations
 5
 6
 
-|   | • Technical innovation
+• Technical innovation
 • Social innovation | • Creating space for pilots and best-practices.
 • Bring citizens together. |  |  | • Mitigate effects of extreme weather
 • Enhancing social cohesion
 • Enhancing bio-diversity |   |
-| --- | --- | --- | --- | --- | --- | --- |
-|  EXISTING POLICIES AND PROJECTS | • Finance/Investments
+EXISTING POLICIES AND PROJECTS | • Finance/Investments
 • Capacity
 • Collaboration
 Policy and regulations | Explore and develop strategies for speeding up existing policies and projects. | Accelerating existing policies and projects on energy-saving, insulating, renewable energy, decarbonising the heating and cooling systems, circular and biobased building, sustainable mobility, climate adaption and urban greening and sustainable purchasing. | Scope 1+2 | • Improvement of the comfort of dwellings
@@ -1271,9 +1255,9 @@ Policy and regulations | Explore and develop strategies for speeding up existing
 • More attractive public spaces
 • Health improvement
 • Reduction of noise and air pollution |   |
-|  CITY THEME: SUSTAINABLE BUSINESS  |   |   |   |   |   |   |
-|  Missions | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (Co-benefits) | Fields of action  |
-|  MISSION: 13. Sustainable and circular operations. | • Technological innovation
+CITY THEME: SUSTAINABLE BUSINESS
+Missions | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (Co-benefits) | Fields of action
+MISSION: 13. Sustainable and circular operations. | • Technological innovation
 • Policy and regulations
 • Market stimulation
 • Financing/Investment
@@ -1295,7 +1279,7 @@ Policy and regulations | Explore and develop strategies for speeding up existing
 Transport
 Waste
 IPPU  |
-|  MISSION: 14. Scaling up sustainable business areas | • Collaboration
+MISSION: 14. Scaling up sustainable business areas | • Collaboration
 • Information and data
 • Knowledge
 • Technological innovation
@@ -1311,7 +1295,7 @@ IPPU  |
 • Innovation on climate adaptive initiatives.  |   |
 7
 
-|  MISSION: 15 Sustainable Mobility and Logistics | • Policy and regulations
+MISSION: 15 Sustainable Mobility and Logistics | • Policy and regulations
 • Behavioral change
 • Finance/Investment
 • Technological innovation
@@ -1327,8 +1311,7 @@ IPPU  |
 • Reduction of noise and air pollution
 • More space for climate adaption, green and bio-diversity
 • More access to mobility | Buildings Transport Waste IPPU  |
-| --- | --- | --- | --- | --- | --- | --- |
-|  MISSION: 16 Healthy and Green Work Environments | • Policy and regulations
+MISSION: 16 Healthy and Green Work Environments | • Policy and regulations
 • Financing/Investment
 • Collaboration
 • Social and Technological Innovation | Develop a collective approach
@@ -1342,7 +1325,7 @@ IPPU  |
 • Health improvement
 • Prevent a ‘heat-island effect’.
 • Mitigate effects of extreme weather  |   |
-|  MISSION: 17 Energy and Smart Grids | • Financing/Investment
+MISSION: 17 Energy and Smart Grids | • Financing/Investment
 • Technological innovation
 • Collaboration
 • Policy and regulations
@@ -1358,7 +1341,7 @@ IPPU  |
 • Network expansion and optimization. | Scope 2 | • Self-sustainable energy consumption
 • Less usage of existing infrastructure
 • New business models  |   |
-|  MISSION: 18 Cooperation and Sharing Knowledge | • Policy and regulations
+MISSION: 18 Cooperation and Sharing Knowledge | • Policy and regulations
 • Financing/Investment
 • Collaboration
 • Information and data
@@ -1369,7 +1352,7 @@ IPPU  |
 • Knowledge-transfer | Upscaling
 • Linking education and business along impactful transition lines
 • Implement a uniform monitoring system | Indirect (influence on all sectors) | • Cross-over in innovations  |   |
-|  EXISTING POLICIES AND PROJECTS | • Finance/Investments
+EXISTING POLICIES AND PROJECTS | • Finance/Investments
 • Capacity
 • Collaboration
 Policy and regulations | Explore and develop strategies for speeding up existing policies and projects. | Accelerating existing policies and projects on energy-saving, insulating, renewable energy, decarbonising the heating and cooling systems, circular and biobased building, sustainable mobility, climate adaption and urban greening and sustainable purchasing. | Scope 1+2 | • Lowering energy bills for businesses
@@ -1388,11 +1371,10 @@ Climate Neutrality Action Plan
 
 #
 
-|   |  |  |  |  | Less effect due to gridcongestion |   |
-| --- | --- | --- | --- | --- | --- | --- |
-|  CITY THEME: ROBUST REGION  |   |   |   |   |   |   |
-|  Missions | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (Co-benefits) | Fields of action  |
-|  MISSION: 19.Local and Seasonal (Food) Production | • Policy and regulations
+Less effect due to gridcongestion
+CITY THEME: ROBUST REGION
+Missions | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (Co-benefits) | Fields of action
+MISSION: 19.Local and Seasonal (Food) Production | • Policy and regulations
 • Market stimulation
 • Financing/Investment
 • Collaboration
@@ -1406,7 +1388,7 @@ Climate Neutrality Action Plan
 • Narrowing the gap between consumers and producers
 • New business models
 • Job creation | Sectors: Buildings Waste IPPU AFOLU  |
-|  MISSION: 20.Regional Materials Market | • Policy and regulations
+MISSION: 20.Regional Materials Market | • Policy and regulations
 • Market stimulation
 • Collaboration
 • Knowledge
@@ -1416,7 +1398,7 @@ Investigating the possibility of a regional raw materials market. | Implementati
 • Setting a no-waste construction site and company as the standard.
 A new way of tendering: CO2-driven instead of cost-driven. | Indirect (influence on buildings and waste) | • Positive consequence for nature and biodiversity
 • Reduction of greenhouse emissions |   |
-|  MISSION: 21.Grid Congestion | • Financing/Investment
+MISSION: 21.Grid Congestion | • Financing/Investment
 • Technological innovation
 • Collaboration
 • Policy and regulations | Optimise available grid capacity
@@ -1428,7 +1410,7 @@ Expand pilots and local solutions. | Expand grid capacity
 Create necessary grid-space. | Indirect (speeding up renewable energy) | • Self-sustainable energy consumption
 • Lower costs
 • Job creation |   |
-|  MISSION: 22.Climate Jobs | • Policy and regulations
+MISSION: 22.Climate Jobs | • Policy and regulations
 • Finance/Investment
 • Collaboration
 • Information and data
@@ -1440,7 +1422,7 @@ Live-long learning and working. | Indirect | • Job creation |   |
 9
 
 ```markdown
-|  EXISTING POLICIES AND PROJECTS | • Finance/Investments
+EXISTING POLICIES AND PROJECTS | • Finance/Investments
 • Capacity
 • Collaboration
 • Policy and regulations
@@ -1453,7 +1435,6 @@ Live-long learning and working. | Indirect | • Job creation |   |
 Waste
 IPPU
 AFOLU  |
-| --- | --- | --- | --- | --- | --- | --- |
 Climate Neutrality Action Plan Guidance
 
 0
@@ -1509,22 +1490,19 @@ Climate Neutrality Action Plan
 
 This Investment Plan is structured around those actions that require (additional) investment, i.e. the implementation of specific policies and projects. As such, the CIP will focus predominantly on the three sectors and twelve investments actions targeted for investment while making only sporadic references to the 22 missions defined in the Climate Action Plan. The following overview maps the relationship between these investments and the previously mentioned themes. As the table shows, sectors in the Climate Investment Plan may relate to one or more of themes.
 
-|  Sector | Investment actions | Vital City center | Liveable neighbourhoods | Sustainable Business | Robust region  |
-| --- | --- | --- | --- | --- | --- |
-|  Built environment | Modifications to Residential Buildings | x | x |  |   |
-|   |  Modifications to Non-Residential Buildings | x |  | x | x  |
-|   |  Alternative Energy Systems & Infrastructure | x | x | x | x  |
-|   |  |   |   |   |   |
-|  Mobility | Sustainable vehicle fleet | x | x | x |   |
-|   |  Charging infrastructure | x | x | x |   |
-|   |  Zero Emission Zones/Low traffic City Centre | x | x | x |   |
-|   |  Modal Shift | x | x | x |   |
-|   |  Incentive programmes | x | x | x |   |
-|  |   |   |   |   |   |
-|  Industry | Heat infrastructure | x |  | x | x  |
-|   |  Modifications in Companies and Processes |  |  | x | x  |
-|   |  Projects | x |  | x | x  |
-|   |  Electrification |  |  | x | x  |
+Sector | Investment actions | Vital City center | Liveable neighbourhoods | Sustainable Business | Robust region
+Built environment | Modifications to Residential Buildings | x | x
+Modifications to Non-Residential Buildings | x | x | x
+Alternative Energy Systems & Infrastructure | x | x | x | x
+Mobility | Sustainable vehicle fleet | x | x | x
+Charging infrastructure | x | x | x
+Zero Emission Zones/Low traffic City Centre | x | x | x
+Modal Shift | x | x | x
+Incentive programmes | x | x | x
+Industry | Heat infrastructure | x | x | x
+Modifications in Companies and Processes | x | x
+Projects | x | x | x
+Electrification | x | x
 Gemeente Helmond
 
 Climate Neutrality Action Plan
@@ -1558,22 +1536,21 @@ Gemeente Helmond
 EINDHOVEN
 Climate Neutrality Action Plan
 ^{}[]
-|  Implementation | Responsible bodies/person for implementation | National, regional and local governments, facility managers, private sector  |
-| --- | --- | --- |
-|  Impact & cost | Action scale & addressed entities | Regional, city, commercial entities, public institutions  |
-|   |  Involved stakeholders | Facility managers, energy companies, construction industry, local authorities  |
-|   |  Comments on implementation | Requires public-private partnerships, especially in large commercial developments  |
-|   |  Generated renewable energy (if applicable) | n.a.  |
-|  Action outline 3 | Removed/substituted energy, volume or fuel type | Reduction of fossil fuel use due to improved energy efficiency  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | Expected reduction of 57Kiloton CO₂ + 6 Kiloton CO₂ impulse reduction (total 63 Kiloton CO₂)  |
-|   |  Total costs and costs by CO2e unit | Estimated total cost of € 451 mln.  |
-|   |  Alternative Energy Systems & Infrastructure |   |
-|  Reference to impact pathway | Investment type | Infrastructure Investment  |
-|   |  Investment description | Removal of Gas Infrastructure
+Implementation | Responsible bodies/person for implementation | National, regional and local governments, facility managers, private sector
+Impact & cost | Action scale & addressed entities | Regional, city, commercial entities, public institutions
+Involved stakeholders | Facility managers, energy companies, construction industry, local authorities
+Comments on implementation | Requires public-private partnerships, especially in large commercial developments
+Generated renewable energy (if applicable) | n.a.
+Action outline 3 | Removed/substituted energy, volume or fuel type | Reduction of fossil fuel use due to improved energy efficiency
+GHG emissions reduction estimate (total) per emission source sector | Expected reduction of 57Kiloton CO₂ + 6 Kiloton CO₂ impulse reduction (total 63 Kiloton CO₂)
+Total costs and costs by CO2e unit | Estimated total cost of € 451 mln.
+Alternative Energy Systems & Infrastructure
+Reference to impact pathway | Investment type | Infrastructure Investment
+Investment description | Removal of Gas Infrastructure
 Deployment of Alternative Heating and Electricity Infrastructure  |
-|   |  Mission | Energy and Smart Grids  |
-|   | Systemic levers | Financing/Investment, Technological innovation, Collaboration, Policy and regulations, Information and data, Knowledge  |
-|   |  Outcome (according to module B-1.1) | Early changes (1-2 years): Develop Smart Energy Solutions and create room for experiments and pilots.
+Mission | Energy and Smart Grids
+Systemic levers | Financing/Investment, Technological innovation, Collaboration, Policy and regulations, Information and data, Knowledge
+Outcome (according to module B-1.1) | Early changes (1-2 years): Develop Smart Energy Solutions and create room for experiments and pilots.
 Late outcomes (3-4 years): Create a marketplace for energy exchange, public access to data, network expansion, and optimization.  |
 Gemeente Helmond
 Climate Neutrality Action Plan
@@ -1633,120 +1610,116 @@ Gemeente Helmond
 Climate Neutrality Action Plan
 C
 
-|  Impact & cost | Generated renewable energy (if applicable) | n.a.  |
-| --- | --- | --- |
-|   | Removed/substituted energy, volume or fuel type | Reduction of petrol and diesel use in urban centres  |
-|   | GHG emissions reduction estimate (total) per emission source sector | Part of sector mobility> Total GHG emissions reduction for sector mobility: Expected reduction of 49 Kiloton CO₂  |
-|   | Total costs and costs by CO2e unit | Estimated total cost of € 12 mln.  |
-|  Action outline 7 | Modal Shift |   |
-|   | Investment type | Transportation Investment  |
-|   | Investment description | Alternative Transport (Transferria, Bicycle Stations)  |
-|  Reference to impact pathway | Mission | Climate neutral mobility in the neighbourhoods  |
-|   | Systemic levers | Policy and regulations, Behavioral change, Finance/Investment, Technological innovation, Collaboration  |
-|   | Outcome (according to module B-1.1) | Early changes (1-2 years): Implementation of mobility hubs in neighbourhoods and promotion of sustainable alternatives.
+Impact & cost | Generated renewable energy (if applicable) | n.a.
+Removed/substituted energy, volume or fuel type | Reduction of petrol and diesel use in urban centres
+GHG emissions reduction estimate (total) per emission source sector | Part of sector mobility> Total GHG emissions reduction for sector mobility: Expected reduction of 49 Kiloton CO₂
+Total costs and costs by CO2e unit | Estimated total cost of € 12 mln.
+Action outline 7 | Modal Shift
+Investment type | Transportation Investment
+Investment description | Alternative Transport (Transferria, Bicycle Stations)
+Reference to impact pathway | Mission | Climate neutral mobility in the neighbourhoods
+Systemic levers | Policy and regulations, Behavioral change, Finance/Investment, Technological innovation, Collaboration
+Outcome (according to module B-1.1) | Early changes (1-2 years): Implementation of mobility hubs in neighbourhoods and promotion of sustainable alternatives.
 Late outcomes (3-4 years): Accelerating the greening of vehicles and expansion of sustainable transport options.  |
-|  Implementation | Responsible bodies/person for implementation | National, regional and local governments, transport authorities  |
-|   | Action scale & addressed entities | Regional, city, citizens  |
-|   | Involved stakeholders | Citizens, public transport companies, urban planners, local authorities  |
-|   | Comments on implementation | requires infrastructure investment and behavioral change campaigns  |
-|  Impact & cost | Generated renewable energy (if applicable) | n.a.  |
-|   | Removed/substituted energy, volume or fuel type | Reduction of petrol and diesel use  |
-|   | GHG emissions reduction estimate (total) per emission source sector | Part of sector mobility> Total GHG emissions reduction for sector mobility: Expected reduction of 33 Kiloton CO₂  |
-|   | Total costs and costs by CO2e unit | Estimated total cost of € 1,5 mln.  |
-|  Action outline 8 | Incentive Programmes |   |
-|   | Investment type | Financial Policy  |
-|   | Investment description | Setting up incentive programmes  |
-|  Reference to impact pathway | Mission | Scaling up the new normal  |
-|   | Systemic levers | Capacity, Finance/Investment, Collaboration, Policy and regulations  |
-|   | Outcome (according to module B-1.1) | Early changes (1-2 years): Developing collective approaches for sustainability.
+Implementation | Responsible bodies/person for implementation | National, regional and local governments, transport authorities
+Action scale & addressed entities | Regional, city, citizens
+Involved stakeholders | Citizens, public transport companies, urban planners, local authorities
+Comments on implementation | requires infrastructure investment and behavioral change campaigns
+Impact & cost | Generated renewable energy (if applicable) | n.a.
+Removed/substituted energy, volume or fuel type | Reduction of petrol and diesel use
+GHG emissions reduction estimate (total) per emission source sector | Part of sector mobility> Total GHG emissions reduction for sector mobility: Expected reduction of 33 Kiloton CO₂
+Total costs and costs by CO2e unit | Estimated total cost of € 1,5 mln.
+Action outline 8 | Incentive Programmes
+Investment type | Financial Policy
+Investment description | Setting up incentive programmes
+Reference to impact pathway | Mission | Scaling up the new normal
+Systemic levers | Capacity, Finance/Investment, Collaboration, Policy and regulations
+Outcome (according to module B-1.1) | Early changes (1-2 years): Developing collective approaches for sustainability.
 Late outcomes (3-4 years): Joint implementation of incentive programs and roadmap for sustainable practices.  |
-|  Implementation | Responsible bodies/person for implementation | National, regional and local governments, financial institutions  |
+Implementation | Responsible bodies/person for implementation | National, regional and local governments, financial institutions
 
 7
 Gemeente Helmond
 Climate Neutrality Action Plan
 C
 
-|   | Action scale & addressed entities | National, regional, city, citizens, businesses  |
-| --- | --- | --- |
-|   |  Involved stakeholders | Financial institutions, citizens, businesses, local authorities  |
-|   |  Comments on implementation | Needs well-designed programs that target key behaviors and sectors  |
-|  **Impact & cost** | Generated renewable energy (if applicable) | n.a.  |
-|   | Removed/substituted energy, volume or fuel type | Reduction of fossil fuel use  |
-|   | GHG emissions reduction estimate (total) per emission source sector | Part of sector mobility> Total GHG emissions reduction for sector mobility: Expected reduction of 20 Kiloton CO_{2}  |
-|   | Total costs and costs by CO2e unit | Estimated total cost of € 1,5 mln.  |
-|  **Action outline 9** | **Heat Infrastructure**  |   |
-|   | Investment type | Infrastructure Investment  |
-|   | Investment description | Adjustment Heating Infrastructure
+Action scale & addressed entities | National, regional, city, citizens, businesses
+Involved stakeholders | Financial institutions, citizens, businesses, local authorities
+Comments on implementation | Needs well-designed programs that target key behaviors and sectors
+**Impact & cost** | Generated renewable energy (if applicable) | n.a.
+Removed/substituted energy, volume or fuel type | Reduction of fossil fuel use
+GHG emissions reduction estimate (total) per emission source sector | Part of sector mobility> Total GHG emissions reduction for sector mobility: Expected reduction of 20 Kiloton CO_{2}
+Total costs and costs by CO2e unit | Estimated total cost of € 1,5 mln.
+**Action outline 9** | **Heat Infrastructure**
+Investment type | Infrastructure Investment
+Investment description | Adjustment Heating Infrastructure
 Adjustment Electricity Infrastructure  |
-|  **Reference to impact pathway** | Mission | Energy and Smart Grids  |
-|   | Systemic levers | Financing/Investment, Technological innovation, Collaboration, Policy and regulations, Information and data, Knowledge  |
-|   | Outcome (according to module B-1.1) | Early changes (1-2 years): Development of smart energy solutions and optimization of grid capacity. Late outcomes (3-4 years): Expansion of smart grid infrastructure and public access to data.  |
-|  **Implementation** | Responsible bodies/person for implementation | National, regional and local governments, energy companies, utilities  |
-|   | Action scale & addressed entities | National, regional, city, utilities  |
-|   | Involved stakeholders | Energy companies, utilities, local authorities, construction industry  |
-|   | Comments on implementation | Requires long-term planning and integration with broader energy transition strategies  |
-|  **Impact & cost** | Generated renewable energy (if applicable) | n.a.  |
-|   | Removed/substituted energy, volume or fuel type | Reduction of natural gas and other fossil fuels  |
-|   | GHG emissions reduction estimate (total) per emission source sector | Part of sector industry> Total GHG emissions reduction for sector industry: Expected reduction of 119 Kiloton CO_{2}  |
-|   | Total costs and costs by CO2e unit | Estimated total cost of € 60,4 mln.  |
+**Reference to impact pathway** | Mission | Energy and Smart Grids
+Systemic levers | Financing/Investment, Technological innovation, Collaboration, Policy and regulations, Information and data, Knowledge
+Outcome (according to module B-1.1) | Early changes (1-2 years): Development of smart energy solutions and optimization of grid capacity. Late outcomes (3-4 years): Expansion of smart grid infrastructure and public access to data.
+**Implementation** | Responsible bodies/person for implementation | National, regional and local governments, energy companies, utilities
+Action scale & addressed entities | National, regional, city, utilities
+Involved stakeholders | Energy companies, utilities, local authorities, construction industry
+Comments on implementation | Requires long-term planning and integration with broader energy transition strategies
+**Impact & cost** | Generated renewable energy (if applicable) | n.a.
+Removed/substituted energy, volume or fuel type | Reduction of natural gas and other fossil fuels
+GHG emissions reduction estimate (total) per emission source sector | Part of sector industry> Total GHG emissions reduction for sector industry: Expected reduction of 119 Kiloton CO_{2}
+Total costs and costs by CO2e unit | Estimated total cost of € 60,4 mln.
 
 8
 Gemeente Helmond
 Climate Neutrality Action Plan
 9
 
-|  Action outline 10 | Modifications in Companies and Processes  |   |
-| --- | --- | --- |
-|   | Investment type | Energy Efficiency & Process Optimization  |
-|   |  Investment description | Adjustments to Companies and Processes: MJA, EML, EED  |
-|  Reference to impact pathway | Mission | Sustainable and circular operations  |
-|   |  Systemic levers | Technological innovation, Policy and regulations, Market stimulation, Financing/Investment, Collaboration, Knowledge, Information and data, Behavioral change  |
-|   |  Outcome (according to module B-1.1) | Early changes (1-2 years): Awareness campaign and focus on more selective and sustainable production processes.
+Action outline 10 | Modifications in Companies and Processes
+Investment type | Energy Efficiency & Process Optimization
+Investment description | Adjustments to Companies and Processes: MJA, EML, EED
+Reference to impact pathway | Mission | Sustainable and circular operations
+Systemic levers | Technological innovation, Policy and regulations, Market stimulation, Financing/Investment, Collaboration, Knowledge, Information and data, Behavioral change
+Outcome (according to module B-1.1) | Early changes (1-2 years): Awareness campaign and focus on more selective and sustainable production processes.
 Late outcomes (3-4 years): Scaling up circular business models and optimization of regulations.  |
-|  Implementation | Responsible bodies/person for implementation | National, regional and local governments, industry leaders, energy managers  |
-|   |  Action scale & addressed entities | National, regional, industry  |
-|   |  Involved stakeholders | Industry, energy managers, local authorities, regulatory bodies  |
-|   |  Comments on implementation | Requires strong regulatory framework and industry buy-in  |
-|  Impact & cost | Generated renewable energy (if applicable) | n.a.  |
-|   |  Removed/substituted energy, volume or fuel type | Reduction of fossil fuel use in industrial processes  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | Part of sector industry> Total GHG emissions reduction for sector industry: Expected reduction of 44 Kiloton CO₂  |
-|   |  Total costs and costs by CO2e unit | Estimated total cost of € 214mln.  |
-|  Action outline 11 | Energy Transition Projects  |   |
-|   | Investment type | Innovation & Infrastructure  |
-|   |  Investment description | Sustainable Energy Projects (smart grids etc.)  |
-|  Reference to impact pathway | Mission | Energy and Smart Grids  |
-|   |  Systemic levers | Financing/Investment, Technological innovation, Collaboration, Policy and regulations, Information and data, Knowledge  |
-|   |  Outcome (according to module B-1.1) | Early changes (1-2 years): Develop smart energy solutions and create room for experiments and pilots.
+Implementation | Responsible bodies/person for implementation | National, regional and local governments, industry leaders, energy managers
+Action scale & addressed entities | National, regional, industry
+Involved stakeholders | Industry, energy managers, local authorities, regulatory bodies
+Comments on implementation | Requires strong regulatory framework and industry buy-in
+Impact & cost | Generated renewable energy (if applicable) | n.a.
+Removed/substituted energy, volume or fuel type | Reduction of fossil fuel use in industrial processes
+GHG emissions reduction estimate (total) per emission source sector | Part of sector industry> Total GHG emissions reduction for sector industry: Expected reduction of 44 Kiloton CO₂
+Total costs and costs by CO2e unit | Estimated total cost of € 214mln.
+Action outline 11 | Energy Transition Projects
+Investment type | Innovation & Infrastructure
+Investment description | Sustainable Energy Projects (smart grids etc.)
+Reference to impact pathway | Mission | Energy and Smart Grids
+Systemic levers | Financing/Investment, Technological innovation, Collaboration, Policy and regulations, Information and data, Knowledge
+Outcome (according to module B-1.1) | Early changes (1-2 years): Develop smart energy solutions and create room for experiments and pilots.
 Late outcomes (3-4 years): Create a marketplace for energy exchange, public access to data, network expansion, and optimization.  |
-|  Implementation | Responsible bodies/person for implementation | National, regional and local governments, energy companies, technology innovators  |
-|   |  Action scale & addressed entities | National, regional, city, utilities, tech industry  |
+Implementation | Responsible bodies/person for implementation | National, regional and local governments, energy companies, technology innovators
+Action scale & addressed entities | National, regional, city, utilities, tech industry
 Gemeente Helmond
 Climate Neutrality Action Plan
 0
 
-|   | Involved stakeholders | Energy companies, tech companies, local authorities, research institutions, start-ups  |
-| --- | --- | --- |
-|   |  Comments on implementation | Requires cross-sector collaboration and significant R&D investment  |
-|  **Impact & cost** | Generated renewable energy (if applicable) | n.a.  |
-|   | Removed/substituted energy, volume or fuel type | Reduction of fossil fuel use  |
-|   | GHG emissions reduction estimate (total) per emission source sector | Part of sector industry> Total GHG emissions reduction for sector industry: Expected reduction of 8 Kiloton CO_{2}  |
-|   | Total costs and costs by CO2e unit | Estimated total cost of € 16,9 mln.  |
-|  **Action outline 12** | **Electrification** |   |
-|   | Investment type | Industrial & Energy Sector Investment  |
-|   | Investment description | Electrification Industry (Phasing Out Natural Gas in Company Processes)  |
-|  **Reference to impact pathway** | Mission | Scaling up sustainable business areas  |
-|   | Systemic levers | Collaboration, Information and data, Knowledge, Technological innovation, Capacity, Financing/Investment  |
-|   | Outcome (according to module B-1.1) | Early changes (1-2 years): Develop a collective approach for industrial electrification and phasing out natural gas.
+Involved stakeholders | Energy companies, tech companies, local authorities, research institutions, start-ups
+Comments on implementation | Requires cross-sector collaboration and significant R&D investment
+**Impact & cost** | Generated renewable energy (if applicable) | n.a.
+Removed/substituted energy, volume or fuel type | Reduction of fossil fuel use
+GHG emissions reduction estimate (total) per emission source sector | Part of sector industry> Total GHG emissions reduction for sector industry: Expected reduction of 8 Kiloton CO_{2}
+Total costs and costs by CO2e unit | Estimated total cost of € 16,9 mln.
+**Action outline 12** | **Electrification**
+Investment type | Industrial & Energy Sector Investment
+Investment description | Electrification Industry (Phasing Out Natural Gas in Company Processes)
+**Reference to impact pathway** | Mission | Scaling up sustainable business areas
+Systemic levers | Collaboration, Information and data, Knowledge, Technological innovation, Capacity, Financing/Investment
+Outcome (according to module B-1.1) | Early changes (1-2 years): Develop a collective approach for industrial electrification and phasing out natural gas.
 Late outcomes (3-4 years): Cooperation under a common flag and accelerate where possible.  |
-|  **Implementation** | Responsible bodies/person for implementation | European, national, regional and local governments, industrial companies  |
-|   | Action scale & addressed entities | European, national, regional, industry  |
-|   | Involved stakeholders | Industrial companies, energy providers, regulatory bodies, research institutions  |
-|   | Comments on implementation | equires large-scale investment and access to low-carbon electricity  |
-|  **Impact & cost** | Generated renewable energy (if applicable) | n.a.  |
-|   | Removed/substituted energy, volume or fuel type | Reduction of natural gas and other fossil fuels  |
-|   | GHG emissions reduction estimate (total) per emission source sector | Part of sector industry> Total GHG emissions reduction for sector industry: Expected reduction of 31 Kiloton CO_{2}  |
-|   | Total costs and costs by CO2e unit | Estimated total cost of € 102,1 mln.  |
+**Implementation** | Responsible bodies/person for implementation | European, national, regional and local governments, industrial companies
+Action scale & addressed entities | European, national, regional, industry
+Involved stakeholders | Industrial companies, energy providers, regulatory bodies, research institutions
+Comments on implementation | equires large-scale investment and access to low-carbon electricity
+**Impact & cost** | Generated renewable energy (if applicable) | n.a.
+Removed/substituted energy, volume or fuel type | Reduction of natural gas and other fossil fuels
+GHG emissions reduction estimate (total) per emission source sector | Part of sector industry> Total GHG emissions reduction for sector industry: Expected reduction of 31 Kiloton CO_{2}
+Total costs and costs by CO2e unit | Estimated total cost of € 102,1 mln.
 Gemeente Helmond
 
 2
@@ -1785,36 +1758,34 @@ Climate Neutrality Action Plan
 
 Table 3
 
-|  Sector | Indicator | Indicator Unit  |
-| --- | --- | --- |
-|  Transportation |  |   |
-|  • Reduction of emissions | CO2 emissions mobility | kton CO2  |
-|  • Smart mobility | Modal split (bike, walking, public transport, electric car, fossil fuel car) | %  |
-|   |  Shared mobility service | Number of available vehicles  |
-|   |  Zero-emission vehicles | Number of vehicles  |
-|  • Sustainable and clean mobility | Car traffic in city center | Indicator related to 2019 = 100  |
-|   |  Friendliness of walking, bicycle and public transport facilities | 1-10 indicator  |
-|   |  30km/h zones in city centre | Number of streets  |
-|  • Mobility safety | Traffic safety - car accidents | Number of serious accidents per year  |
-|  • Smooth mobility | Cyclists using cycling lanes | Number of cyclists  |
-|   |  Traffic flow on ring road | Floating car data  |
-|   |  Additional slowlanes (fast lane exclusively for bicycles) | km  |
-|   |  HOV-lane (fast lane exclusively for high speed bus) | km  |
-|   |  Renewal of traffic lights | Number renewed  |
-|  • Airport | Estimated LTO (Landing – take off) emissions of Eindhoven airport | kton CO2-equiv  |
-|  Built Environment |  |   |
-|   | CO2 emissions housing | kton CO2  |
-|   | CO2 emissions cultural, sports and leisure activities | kton CO2  |
-|   | CO2 emissions public buildings, schools and public services | kton CO2  |
-|   | Energy consumption industry and commercial services | TJ  |
-|   | Average energy consumption per household (gas, electric, district heating, other) | TJ  |
-|  • Housing | Energy labels of dwellings (sub divided into privately owned and rental) | Number of dwellings per label category (A-F)  |
-|   |  Exiting dwellings converted to (hybrid) all-electric or district heating | Number of dwellings converted  |
-|   |  |   |
-|   |  Collective purchase energy saving measures | Number of participating households  |
-|   |  Energy saving boxes | Number of boxes handed out  |
-|   |  Online helpdesk energy saving measures | Number of unique website visitors  |
-|   |  Vouchers to purchase energy saving measures | Number of vouchers handed out  |
+Sector | Indicator | Indicator Unit
+Transportation
+• Reduction of emissions | CO2 emissions mobility | kton CO2
+• Smart mobility | Modal split (bike, walking, public transport, electric car, fossil fuel car) | %
+Shared mobility service | Number of available vehicles
+Zero-emission vehicles | Number of vehicles
+• Sustainable and clean mobility | Car traffic in city center | Indicator related to 2019 = 100
+Friendliness of walking, bicycle and public transport facilities | 1-10 indicator
+30km/h zones in city centre | Number of streets
+• Mobility safety | Traffic safety - car accidents | Number of serious accidents per year
+• Smooth mobility | Cyclists using cycling lanes | Number of cyclists
+Traffic flow on ring road | Floating car data
+Additional slowlanes (fast lane exclusively for bicycles) | km
+HOV-lane (fast lane exclusively for high speed bus) | km
+Renewal of traffic lights | Number renewed
+• Airport | Estimated LTO (Landing – take off) emissions of Eindhoven airport | kton CO2-equiv
+Built Environment
+CO2 emissions housing | kton CO2
+CO2 emissions cultural, sports and leisure activities | kton CO2
+CO2 emissions public buildings, schools and public services | kton CO2
+Energy consumption industry and commercial services | TJ
+Average energy consumption per household (gas, electric, district heating, other) | TJ
+• Housing | Energy labels of dwellings (sub divided into privately owned and rental) | Number of dwellings per label category (A-F)
+Exiting dwellings converted to (hybrid) all-electric or district heating | Number of dwellings converted
+Collective purchase energy saving measures | Number of participating households
+Energy saving boxes | Number of boxes handed out
+Online helpdesk energy saving measures | Number of unique website visitors
+Vouchers to purchase energy saving measures | Number of vouchers handed out
 Gemeente Helmond
 Climate Neutrality Action Plan
 C
@@ -1860,29 +1831,27 @@ B-3.1: Impact Pathways
 
 B-3.2: Indicator Metadata
 
-|  (For each indicator selected)  |   |
-| --- | --- |
-|  Indicator Name |   |
-|  Indicator Unit |   |
-|  Definition |   |
-|  Calculation |   |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | [yes/no]  |
-|  If yes, which emission source sectors does it measure? | Fields of action according to GHG inventory format – Module A-1  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | [yes/no]  |
-|  If yes, which co-benefit does it measure? | Specify co-benefit  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | [yes/no]  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | [yes/no]  |
-|  Data requirements |   |
-| --- | --- |
-|  Expected data source |   |
-|  Is the data source local or regional/national? |   |
-|  Expected availability |   |
-|  Suggested collection interval |   |
-|  References |   |
-|  Deliverables describing the indicator |   |
-|  Other indicator systems using this indicator |   |
+(For each indicator selected)
+Indicator Name
+Indicator Unit
+Definition
+Calculation
+Indicator Context
+Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | [yes/no]
+If yes, which emission source sectors does it measure? | Fields of action according to GHG inventory format – Module A-1
+Does the indicator measure indirect impacts (i.e., co-benefits)? | [yes/no]
+If yes, which co-benefit does it measure? | Specify co-benefit
+Is the indicator useful for monitoring the output/impact of action(s)? | [yes/no]
+If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1
+Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | [yes/no]
+Data requirements
+Expected data source
+Is the data source local or regional/national?
+Expected availability
+Suggested collection interval
+References
+Deliverables describing the indicator
+Other indicator systems using this indicator
 Gemeente Helmond
 
 2
@@ -2898,41 +2867,40 @@ with the target and provide a clear and concise overview of the emissions reduct
 8
 Attachment A: Quantification of 12 investment actions (2030)
 
-| B-2.1: Description of action portfolios | Eindhoven | Helmond | Motivation and source |
-| --- | --- | --- | --- |
-| Sector | Portfolio description |  |
-| List of investment actions | Descriptions |  |  |  |
-| Bull environment | 1. Modifications to Residential Buildings | Insulation of Homes | 23 | 3 | Insulation approach (EBA/NP and Energy Poverty); 19,885 dwellings in Eindhoven, 13,557 dwellings in Helmond |
-| Alternative Heating & Cooling in Homes | 9 | 5 | All-electric districts Bleembosch (Eindhoven) and districts Helmond, Initial analysis Netherlands Environmental Assessment Agency (PBL) |
-| Main responsible stakeholders: Citizens |  |  |  |
-| 2. Modifications to Non-Residential Buildings | Insulation of Utilities & Other Buildings | 13 |  | EED and minimum label B steering |
-| Alternative Heating & Cooling in Utilities & Other Buildings | 15 | 16 | District heating networks with Utility sector, Initial analysis Netherlands Environmental Assessment Agency (PBL) |
-| Responsible stakeholders: Mainly public organizations and companies | 179 | 34 | Electricity mix: greening of grid infrastructure and electricity supply, KEV as a basis |
-| 3. Alternative Energy Systems & Infrastructure | Removal of Gas Infrastructure | 14 | 24 | District heating networks (Helmond city center, Esweeels Binderen, and Eindhoven station area, City Hall Square, North), Initial analysis Netherlands Environmental Assessment Agency (PBL) |
-| Deployment of Alternative Heating and Electricity Infrastructure | 83 | 50 | Electricity mix: greening of grid infrastructure and electricity supply, KEV as a basis |
-| Main responsible stakeholders: Energy companies and utility providers |  |  |  |
-|  | 31 | 12 |  |
-| Mobility | 4. Sustainable Vehicle Fleet | ZE-ring (47K Vehicles) | 37 | 10 | Study CE Delft extrapolated to Helmond |
-| Main responsible stakeholders: Citizens and companies |  |  |  |
-| 5. Charging Infrastructure | Charging Infrastructure (9000 Stations) | 26 | 12 | National Charging Infrastructure Agenda calculated for Eindhoven and Helmond: 47,240 EVs in Eindhoven, 23,354 EVs in Helmond |
-| Main responsible stakeholders: Municipalities and utility providers |  |  |  |
-| 6. Zero Emission Zones/ Low-Traffic City Centre | Creating Low Traffic Zones | 7 |  | Estimate: Eindhoven Study |
-| Main responsible stakeholder: Municipality |  |  |  |
-| 7. Modal Shift | Alternative Transport (Transferria, Bicycle Stations) | 21 | 10 | Estimate based on Eindhoven Mobility Vision: Eindhoven study used as basis, extrapolation for Helmond |
-| Main responsible stakeholder: Municipality and transport industry |  |  |  |
-| 8. Incentive Programmes | Setting up Incentive Programmes (smart grids etc.) | 4 | 11 | Estimate: parking measures and smart transport. For Helmond this is based on KEV |
-| Main responsible stakeholders: Municipalities and utility providers |  |  |  |
-|  | 5 | 2 |  |
-| Industry | 9. Heat Infrastructure | Adjustment Heating infrastructure |  |  |  |
-| Adjustment Electricity infrastructure |  | 8 | Participation district heating BZOB (Helmond): connection of 4 companies |
-| Main responsible stakeholders: Municipalities and utility providers |  |  |  |
-| 10. Interventions in Companies & Processes | Adjustments to Companies and Processes: MJA, EML, EED | 34 | 29 | NUA/EML/EED steering and steering on autonomous sustainability improvements: 10% reduction based on RVO reference values |
-| Main responsible stakeholders: Municipalities and utility providers |  |  |  |
-| 11. Energy Transition Projects | Sustainable Energy Projects | 216 | 43 | Greening of the network and increasing primary sustainable energy use, KEV as a basis |
-| Main responsible stakeholders: Municipalities and utility providers |  |  |  |
-| 12. Electrification | Electrification Industry (Phasing Out Natural Gas in Company Processes) | 91 | 24 | Electrification of an estimated 1,500 companies (partly) for production and heating processes: 1,000 companies in Eindhoven, 500 companies in Helmond |
-| Main responsible stakeholders: Municipalities, companies and utility providers |  |  |  |
-|  | 341 | 102 |  |
+B-2.1: Description of action portfolios | Eindhoven | Helmond | Motivation and source
+Sector | Portfolio description
+List of investment actions | Descriptions
+Bull environment | 1. Modifications to Residential Buildings | Insulation of Homes | 23 | 3 | Insulation approach (EBA/NP and Energy Poverty); 19,885 dwellings in Eindhoven, 13,557 dwellings in Helmond
+Alternative Heating & Cooling in Homes | 9 | 5 | All-electric districts Bleembosch (Eindhoven) and districts Helmond, Initial analysis Netherlands Environmental Assessment Agency (PBL)
+Main responsible stakeholders: Citizens
+2. Modifications to Non-Residential Buildings | Insulation of Utilities & Other Buildings | 13 | EED and minimum label B steering
+Alternative Heating & Cooling in Utilities & Other Buildings | 15 | 16 | District heating networks with Utility sector, Initial analysis Netherlands Environmental Assessment Agency (PBL)
+Responsible stakeholders: Mainly public organizations and companies | 179 | 34 | Electricity mix: greening of grid infrastructure and electricity supply, KEV as a basis
+3. Alternative Energy Systems & Infrastructure | Removal of Gas Infrastructure | 14 | 24 | District heating networks (Helmond city center, Esweeels Binderen, and Eindhoven station area, City Hall Square, North), Initial analysis Netherlands Environmental Assessment Agency (PBL)
+Deployment of Alternative Heating and Electricity Infrastructure | 83 | 50 | Electricity mix: greening of grid infrastructure and electricity supply, KEV as a basis
+Main responsible stakeholders: Energy companies and utility providers
+31 | 12
+Mobility | 4. Sustainable Vehicle Fleet | ZE-ring (47K Vehicles) | 37 | 10 | Study CE Delft extrapolated to Helmond
+Main responsible stakeholders: Citizens and companies
+5. Charging Infrastructure | Charging Infrastructure (9000 Stations) | 26 | 12 | National Charging Infrastructure Agenda calculated for Eindhoven and Helmond: 47,240 EVs in Eindhoven, 23,354 EVs in Helmond
+Main responsible stakeholders: Municipalities and utility providers
+6. Zero Emission Zones/ Low-Traffic City Centre | Creating Low Traffic Zones | 7 | Estimate: Eindhoven Study
+Main responsible stakeholder: Municipality
+7. Modal Shift | Alternative Transport (Transferria, Bicycle Stations) | 21 | 10 | Estimate based on Eindhoven Mobility Vision: Eindhoven study used as basis, extrapolation for Helmond
+Main responsible stakeholder: Municipality and transport industry
+8. Incentive Programmes | Setting up Incentive Programmes (smart grids etc.) | 4 | 11 | Estimate: parking measures and smart transport. For Helmond this is based on KEV
+Main responsible stakeholders: Municipalities and utility providers
+5 | 2
+Industry | 9. Heat Infrastructure | Adjustment Heating infrastructure
+Adjustment Electricity infrastructure | 8 | Participation district heating BZOB (Helmond): connection of 4 companies
+Main responsible stakeholders: Municipalities and utility providers
+10. Interventions in Companies & Processes | Adjustments to Companies and Processes: MJA, EML, EED | 34 | 29 | NUA/EML/EED steering and steering on autonomous sustainability improvements: 10% reduction based on RVO reference values
+Main responsible stakeholders: Municipalities and utility providers
+11. Energy Transition Projects | Sustainable Energy Projects | 216 | 43 | Greening of the network and increasing primary sustainable energy use, KEV as a basis
+Main responsible stakeholders: Municipalities and utility providers
+12. Electrification | Electrification Industry (Phasing Out Natural Gas in Company Processes) | 91 | 24 | Electrification of an estimated 1,500 companies (partly) for production and heating processes: 1,000 companies in Eindhoven, 500 companies in Helmond
+Main responsible stakeholders: Municipalities, companies and utility providers
+341 | 102
 
 Total
 
@@ -2949,15 +2917,15 @@ Attachment B: Outcome and impact of the 22 Missions (including estimates)
 More sustainable behaviour | Buildings
 Transport
 Waste  |
-|  1. Storytelling Vital City Center |   | Make information easy accessible for everyone. | Joint communication campaigns in the two cities.  |   |   |   |   |
-|   |  Target group-oriented communication. | Ambassadors and frontrunners tell the story. |   |   |   |   |   |
-|  MISSION: | Social innovation: leadership, ownership, inclusivity and behavioral change | Awareness and knowledge development | Targeted action campaigns | Indirect (scope 3) | n.a. | Awareness
+1. Storytelling Vital City Center | Make information easy accessible for everyone. | Joint communication campaigns in the two cities.
+Target group-oriented communication. | Ambassadors and frontrunners tell the story.
+MISSION: | Social innovation: leadership, ownership, inclusivity and behavioral change | Awareness and knowledge development | Targeted action campaigns | Indirect (scope 3) | n.a. | Awareness
 Reduce consumption emissions |   |
-|   |  Collaboration | More selective and sustainable purchasing behaviour. | Joint responsibility by residents, producers, distributors, stores and advertising agencies. |   |   |   |   |
-|  2. Circular City Center and sustainable consumption | Financing/Investment | The elimination of single-use products, more recovery and partial use of goods and services and a strongly locally oriented economy. | Stimulating circular entrepreneurship. |  |  | Longer lifespan of products |   |
-|   |  Economic innovation: Circular business models | Applying new circular business models. | Exchange shops in top locations, repair cafés and circular hotspots in the inner cities.
+Collaboration | More selective and sustainable purchasing behaviour. | Joint responsibility by residents, producers, distributors, stores and advertising agencies.
+2. Circular City Center and sustainable consumption | Financing/Investment | The elimination of single-use products, more recovery and partial use of goods and services and a strongly locally oriented economy. | Stimulating circular entrepreneurship. | Longer lifespan of products
+Economic innovation: Circular business models | Applying new circular business models. | Exchange shops in top locations, repair cafés and circular hotspots in the inner cities.
 Focus on 100% circular sustainable procurement. |  |  | Stimulation the local economy |   |
-|  MISSION: | • Technological innovation
+MISSION: | • Technological innovation
 • Policy and regulations | Facilitating
 • Boosting the market and strengthening the chains for biobased and circular construction
 • Ensuring the availability and accessibility of circular and biobased materials.
@@ -2970,16 +2938,15 @@ Focus on 100% circular sustainable procurement. |  |  | Stimulation the local ec
 • Health improvement
 • New businessmodels for producers
 • Job creation  |
-| --- | --- | --- | --- | --- | --- | --- |
-|   | • Market stimulation
+• Market stimulation
 • Financing/Investment
 • Collaboration
 • Knowledge
 • Information and data |  |  |  |  |   |
-|   | • Policy and regulations | Mobility vision and implementation program | Implementation | Scope 1 | Already in the action list: | • More attractive public spaces  |
+• Policy and regulations | Mobility vision and implementation program | Implementation | Scope 1 | Already in the action list: | • More attractive public spaces
 
 1
-|  MISSION: | • Behavioral change
+MISSION: | • Behavioral change
 • Finance/Investment
 • Technological innovation
 • Collaboration | • Focus on less car-oriented mobility and more on sustainable alternatives.
@@ -2992,8 +2959,7 @@ The shift to EV freight transport is not well known and will be issued in the fu
 • Reduction of noise and air pollution
 • More space for climate adaption
 • More access to mobility  |
-| --- | --- | --- | --- | --- | --- | --- |
-|  4. Climate neutral mobility in the city center | • Policy and regulations
+4. Climate neutral mobility in the city center | • Policy and regulations
 • Finance/Investment
 • Collaboration
 • Technical innovation
@@ -3008,23 +2974,22 @@ The shift to EV freight transport is not well known and will be issued in the fu
 • Mitigate effects of extreme weather
 • Enhancing social cohesion
 • Enhancing bio-diversity  |
-|  EXISTING POLICIES AND PROJECTS | • Finance/Investments
+EXISTING POLICIES AND PROJECTS | • Finance/Investments
 • Capacity | Explore and develop strategies for speeding up existing policies and projects. | Accelerating existing policies and projects on energy-saving, insulating, renewable energy, decarbonising the heating and cooling systems, circular and biobased building, | Scope 1+2 |  | • Improvement of the comfort of dwellings
 • Lowering energy bills  |
-|   | • Collaboration
+• Collaboration
 • Policy and regulations | sustainable mobility, climate adaption and urban greening and sustainable purchasing. |   |   |   | • More attractive public spaces
 • Health improvement
 • Reduction of noise and air pollution | Transport
 Waste  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  CITY THEME:
+CITY THEME:
 LIVABLE NEIGHBOURHOODS  |   |   |   |   |   |   |   |
-|  Missions | Systemic levers | Early changes
+Missions | Systemic levers | Early changes
 (1-2 years) | Late outcomes
 (3-4 years) | Direct impacts
 (Emission reductions) |  | Indirect impacts
 (Co-benefits) | Fields of action  |
-|  MISSION:
+MISSION:
 Storytelling | • Social innovation: ownership, inclusivity and behavioral change | Storytelling
 • Make information easy accessible for everyone.
 • Target group-oriented communication. | Storytelling
@@ -3032,22 +2997,20 @@ Storytelling | • Social innovation: ownership, inclusivity and behavioral chan
 • Ambassadors and frontrunners tell the story. | Indirect
 (influence on buildings, transport and waste) |  | • Awareness
 • More sustainable behaviour |   |
-|  MISSION: | • Social innovation: leadership, ownership, inclusivity and behavioral change | Awareness and knowledge development | Targeted action campaigns | Indirect |  | • Awareness |   |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|   | • Collaboration | • More selective and sustainable purchasing behaviour. | • Joint responsibility by residents, producers, distributors, stores and advertising agencies. | (scope 3) |  | • Reduce consumption emissions |   |
-|  7.Circular
+MISSION: | • Social innovation: leadership, ownership, inclusivity and behavioral change | Awareness and knowledge development | Targeted action campaigns | Indirect | • Awareness
+• Collaboration | • More selective and sustainable purchasing behaviour. | • Joint responsibility by residents, producers, distributors, stores and advertising agencies. | (scope 3) | • Reduce consumption emissions
+7.Circular
 Neighbourhoods and sustainable consumption | • Financing/Investment | • The elimination of single-use products, more recovery and partial use of goods and services and a strongly locally oriented economy. | • Stimulating circular entrepreneurship. |  |  | • Longer lifespan of products |   |
-|   | • Economic innovation: Circular business models | • Applying new circular business models. | • Exchange shops in top locations, repair cafés and circular hotspots in neighbourhoods.
+• Economic innovation: Circular business models | • Applying new circular business models. | • Exchange shops in top locations, repair cafés and circular hotspots in neighbourhoods.
 • Focus on 100% circular sustainable procurement. |  |  | • Stimulation the local economy | Buildings  |
-|   |  |  |  |  |  |  | Transport  |
-|  MISSION: | • Capacity | Develop a collective approach | Upscaling | Indirect |  | • Improvement of the comfort of dwellings | Waste  |
-|   | • Finance/Investment | • Making our existing rental and owner-occupied homes more sustainable on a large scale, collectively and in an integrated manner. | • Jointly implement the collective approach and roadmap for renovation (NIP). | (scope 3) | See Biobased insulation and build: G16 | • Lowering energy bills |   |
+Transport
+MISSION: | • Capacity | Develop a collective approach | Upscaling | Indirect | • Improvement of the comfort of dwellings | Waste
+• Finance/Investment | • Making our existing rental and owner-occupied homes more sustainable on a large scale, collectively and in an integrated manner. | • Jointly implement the collective approach and roadmap for renovation (NIP). | (scope 3) | See Biobased insulation and build: G16 | • Lowering energy bills
 
 4
-|  8.Scaling up the new normal | • Collaboration
+8.Scaling up the new normal | • Collaboration
 • Policy and regulations | • Encourage exemplary action through leaders and ambassadors in the neighbourhood and through energy communities. |  |  |  |   |
-| --- | --- | --- | --- | --- | --- | --- |
-|  MISSION: | • Technological innovation
+MISSION: | • Technological innovation
 • Policy and regulations | **Facilitating**
 • Boosting the market and strengthening the chains for biobased and circular construction
 • Ensuring the availability and accessibility of circular and biobased materials.
@@ -3060,15 +3023,15 @@ Neighbourhoods and sustainable consumption | • Financing/Investment | • The 
 • Health improvement
 • New businessmodels for producers
 • Job creation  |
-|  9.Development of circular and biobased building | • Market stimulation
+9.Development of circular and biobased building | • Market stimulation
 • Financing/Investment
 • Collaboration
 • Knowledge
 • Information and data |  |  |  |  |   |
-|  MISSION: | • Policy and regulations | **Mobility vision and implementation program** | **Implementation** | Scope 1 |  | • More attractive public spaces  |
+MISSION: | • Policy and regulations | **Mobility vision and implementation program** | **Implementation** | Scope 1 | • More attractive public spaces
 
 5
-|  10. Climate neutral mobility in the neighbourhoods | • Behavioral change
+10. Climate neutral mobility in the neighbourhoods | • Behavioral change
 • Finance/Investment
 • Technological innovation
 • Collaboration | • Focus on less car-oriented mobility and more on sustainable alternatives.
@@ -3081,8 +3044,7 @@ Neighbourhoods and sustainable consumption | • Financing/Investment | • The 
 • Reduction of noise and air pollution
 • More space for climate adaption
 • More access to mobility  |
-| --- | --- | --- | --- | --- | --- | --- |
-|  MISSION:
+MISSION:
 Everyone can participate | • Finance/Investment
 • Social innovation
 • Awareness | Develop a collective approach
@@ -3090,7 +3052,7 @@ Everyone can participate | • Finance/Investment
 • Target group-oriented communication.
 • More attention for social equality in the implementation of possible solutions. | Implementation
 • A structural, multi-year approach to involve everyone in the missions.  |   |   |   |
-|  MISSION:
+MISSION:
 Sustainable public space | • Policy and regulations
 • Finance/investment
 • Collaboration
@@ -3109,10 +3071,9 @@ Sustainable public space | • Policy and regulations
 6
 7
 
-|   | • Social innovation | • Bring citizens together. |  |  |  | • Enhancing social cohesion
+• Social innovation | • Bring citizens together. | • Enhancing social cohesion
 • Enhancing bio-diversity  |
-| --- | --- | --- | --- | --- | --- | --- |
-|  EXISTING POLICIES AND PROJECTS | • Finance/Investments
+EXISTING POLICIES AND PROJECTS | • Finance/Investments
 • Capacity
 • Collaboration
 Policy and regulations | Explore and develop strategies for speeding up existing policies and projects. | Accelerating existing policies and projects on energy-saving, insulating, renewable energy, decarbonising the heating and cooling systems, circular and biobased building, sustainable mobility, climate adaption and urban greening and sustainable purchasing. | Scope 1+2 | Roughly 19885 houses (Eindhoven) are planned and with an extra impuls we can scale up to 70332 (eindhoven) houses. In Helmond we are planning 15668 houses and were are saling up to 29720. We are foreseeing the heath transition as it is calculated by our Ministry (planbureau voor de leefomgeving, startanalyse 2021). This will reduce an amount of 311 kTon CO2 (houses and Utility buildings) | • Improvement of the comfort of dwellings
@@ -3124,18 +3085,17 @@ Policy and regulations | Explore and develop strategies for speeding up existing
 CITY THEME:
 SUSTAINABLE BUSINESS
 
-|  Missions | Systemic levers | Early changes
+Missions | Systemic levers | Early changes
 (1-2 years) | Late outcomes
 (3-4 years) | Direct impacts
 (Emission reductions) |  | Indirect impacts
 (Co-benefits) | Fields of action  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  MISSION: | • Technological innovation | Awareness and knowledge development | Upscaling |  |  | • Reduce production emissions |   |
-|  13. Sustainable and circular operations. | • Policy and regulations | • Awareness campaign. | • Scaling up circular business models. |  |  | • Longer lifespan of products |   |
-|   |  • Market stimulation | • Focus on more selective and sustainable production processes. | • Creating an autonomous raw-material market. |  | not known | • Stimulation of the local economy |   |
+MISSION: | • Technological innovation | Awareness and knowledge development | Upscaling | • Reduce production emissions
+13. Sustainable and circular operations. | • Policy and regulations | • Awareness campaign. | • Scaling up circular business models. | • Longer lifespan of products
+• Market stimulation | • Focus on more selective and sustainable production processes. | • Creating an autonomous raw-material market. | not known | • Stimulation of the local economy
 8
 
-|   | • Financing/Investment
+• Financing/Investment
 • Collaboration
 • Knowledge
 • Information and data
@@ -3144,8 +3104,7 @@ SUSTAINABLE BUSINESS
 • Realizing innovation-space by granting more room for experimenting in the business models.
 • Optimizing legislation and regulations, including requirements in tenders.
 • Creating an investment fund for Small- and Medium-sized Enterprises. |  | Scope 1+2 |  |  | Sectors:  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  MISSION: | • Collaboration
+MISSION: | • Collaboration
 • Information and data
 • Knowledge
 • Technological innovation | Develop a collective approach
@@ -3159,10 +3118,9 @@ SUSTAINABLE BUSINESS
 Transport
 Waste
 IPPU  |
-|  | • Capacity
+• Capacity
 • Financing/Investment |  |  |  |  | • Innovation on climate adaptive initiatives. |
-| --- | --- | --- | --- | --- | --- | --- |
-| MISSION: | • Policy and regulations
+MISSION: | • Policy and regulations
 • Behavioral change
 • Finance/Investment
 • Technological innovation
@@ -3178,7 +3136,7 @@ IPPU  |
 • Reduction of noise and air pollution
 • More space for climate adaption, green and bio-diversity
 • More access to mobility |
-| 15. Sustainable Mobility and Logistics | • Policy and regulations
+15. Sustainable Mobility and Logistics | • Policy and regulations
 • Financing/investment
 • Collaboration
 • Social and Technological Innovation | Develop a collective approach
@@ -3192,8 +3150,8 @@ IPPU  |
 • Health improvement
 • Prevent a ‘heat-island effect’.
 • Mitigate effects of extreme weather |
-| MISSION: | • Financing/Investment | Develop Smart Energy Solutions | Upscaling |  |  | • Self-sustainable energy consumption |
-|  17. Energy and Smart Grids | • Technological innovation
+MISSION: | • Financing/Investment | Develop Smart Energy Solutions | Upscaling | • Self-sustainable energy consumption
+17. Energy and Smart Grids | • Technological innovation
 • Collaboration
 • Policy and regulations
 • Information and data
@@ -3205,8 +3163,7 @@ IPPU  |
 • Business model for exchanging energy.
 • Network expansion and optimization. | Scope 2 | Both in Eindhoven and Helmond (e.g. Automotive Campus), smart grids are in development. The outcome would be that the energy use is more efficient (20%). Therefore a rough estimate of a 20 reduction could be valid. However the scope is still under investigation. The estimated reduction will be delivered when the scop of the projects are clear. | • Less usage of existing infrastructure
 • New business models  |
-| --- | --- | --- | --- | --- | --- | --- |
-|  MISSION:
+MISSION:
 Cooperation and Sharing Knowledge | • Policy and regulations
 • Financing/Investment
 • Collaboration
@@ -3220,7 +3177,7 @@ Cooperation and Sharing Knowledge | • Policy and regulations
 • Implement a uniform monitoring system | Indirect (influence on all sectors) | n.a. | • Cross-over in innovations  |
 1
 
-|  EXISTING POLICIES AND PROJECTS | • Finance/Investments
+EXISTING POLICIES AND PROJECTS | • Finance/Investments
 • Capacity
 • Collaboration
 Policy and regulations | Explore and develop strategies for speeding up existing policies and projects. | Accelerating existing policies and projects on energy-saving, insulating, renewable energy, decarbonising the heating and cooling systems, circular and biobased building, sustainable mobility, climate adaption and urban greening and sustainable purchasing. | Scope 1+2 |  | • Lowering energy bills for businesses
@@ -3231,14 +3188,13 @@ Less effect due to gridcongestion | Buildings
 Transport
 Waste
 IPPU  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  CITY THEME: ROBUST REGION  |   |   |   |   |   |   |   |
-|  Missions | Systemic levers | Early changes
+CITY THEME: ROBUST REGION
+Missions | Systemic levers | Early changes
 (1-2 years) | Late outcomes
 (3-4 years) | Direct impacts
 (Emission reductions) |  | Indirect impacts
 (Co-benefits) | Fields of action  |
-|  MISSION: | • Policy and regulations
+MISSION: | • Policy and regulations
 • Market stimulation
 • Financing/Investment
 • Collaboration
@@ -3256,23 +3212,21 @@ Buildings
 Waste
 IPPU
 AFOLU  |
-|  MISSION: | • Policy and regulations | Feasibility study | Implementation |  |  | • Positive consequence for nature and biodiversity  |
-| --- | --- | --- | --- | --- | --- | --- |
-|  20. Regional Materials Market | • Market stimulation | Investigating the possibility of a regional raw materials market. | • Set up of regional market and digital platform. | Indirect (influence on buildings and waste) | n.a. | • Reduction of greenhouse emissions  |
-|   |  • Collaboration |   | • Setting a no-waste construction site and company as the standard.  |   |   |   |
-|   |  • Knowledge |   | A new way of tendering: CO2-driven instead of cost-driven.  |   |   |   |
-|   |  • Information and data  |   |   |   |   |   |
-|  MISSION: | • Financing/Investment | Optimise available grid capacity | Expand grid capacity |  |  | • Self-sustainable energy consumption  |
-|  21. Grid Congestion | • Technological innovation | • Intensify lobby's with network operators and national government. | • Generation and storage of energy in one place. | Indirect (speeding up renewable energy) | n.a. | • Lower costs  |
-|   |  • Collaboration | • Set up a monitoring instrument for energy usage. | Create necessary grid-space. |   |   | • Job creation  |
-|   |  • Policy and regulations | • Set up collaboration. Expand pilots and local solutions.  |   |   |   |   |
-|  MISSION: | • Policy and regulations | Human Capital Agenda | Implementation |  |  | • Job creation  |
-|   |  • Finance/Investment | • Make a human capital agenda with partners (government, education and business). | • Transition to 'more manpower'. | Indirect | n.a.  |   |
-|  22. Climate Jobs | • Collaboration
+MISSION: | • Policy and regulations | Feasibility study | Implementation | • Positive consequence for nature and biodiversity
+20. Regional Materials Market | • Market stimulation | Investigating the possibility of a regional raw materials market. | • Set up of regional market and digital platform. | Indirect (influence on buildings and waste) | n.a. | • Reduction of greenhouse emissions
+• Collaboration | • Setting a no-waste construction site and company as the standard.
+• Knowledge | A new way of tendering: CO2-driven instead of cost-driven.
+• Information and data
+MISSION: | • Financing/Investment | Optimise available grid capacity | Expand grid capacity | • Self-sustainable energy consumption
+21. Grid Congestion | • Technological innovation | • Intensify lobby's with network operators and national government. | • Generation and storage of energy in one place. | Indirect (speeding up renewable energy) | n.a. | • Lower costs
+• Collaboration | • Set up a monitoring instrument for energy usage. | Create necessary grid-space. | • Job creation
+• Policy and regulations | • Set up collaboration. Expand pilots and local solutions.
+MISSION: | • Policy and regulations | Human Capital Agenda | Implementation | • Job creation
+• Finance/Investment | • Make a human capital agenda with partners (government, education and business). | • Transition to 'more manpower'. | Indirect | n.a.
+22. Climate Jobs | • Collaboration
 • Information and data
 • Capacity | Include sustainability themes in education. | Live-long learning and working. |  |  |  |   |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  EXISTING POLICIES AND PROJECTS | • Finance/Investments
+EXISTING POLICIES AND PROJECTS | • Finance/Investments
 • Capacity
 • Collaboration
 • Policy and regulations
@@ -5061,18 +5015,17 @@ EVOLUON EINDHOVEN - 13 MAART 2023
 8
 # PROGRAMMA
 
-|  12.30 | WELKOM  |
-| --- | --- |
-|  13.00 | BLIK OP DE TOEKOMST
+12.30 | WELKOM
+13.00 | BLIK OP DE TOEKOMST
 KOERT VAN MENSVOORT  |
-|  13.30 | SESSIE 1: IDEEGENERATIE OP DOORBRAKEN  |
-|  14.30 | PAUZE  |
-|  14.45 | LEIDERSCHAP OM MOGELIJK TE MAKEN
+13.30 | SESSIE 1: IDEEGENERATIE OP DOORBRAKEN
+14.30 | PAUZE
+14.45 | LEIDERSCHAP OM MOGELIJK TE MAKEN
 HAJAR YAGKOUBI  |
-|   |  SESSIE 2: OPLOSSINGSRICHTINGEN DEFINIËREN  |
-|  16.15 | PANELDISCUSSIE / WOORD VAN DE MINISTER
+SESSIE 2: OPLOSSINGSRICHTINGEN DEFINIËREN
+16.15 | PANELDISCUSSIE / WOORD VAN DE MINISTER
 MET O.A. MINISTER VAN KLIMAAT & ENERGIE ROB JETTEN  |
-|  16.45 | AFSLUITING EN VOLGENDE STAP
+16.45 | AFSLUITING EN VOLGENDE STAP
 WETHOUDER RIK THIJS  |
 |  ![img-0.jpeg](img-0.jpeg)  |   |   |
 | --- | --- | --- |

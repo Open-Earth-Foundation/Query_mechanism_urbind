@@ -266,7 +266,7 @@ Prior to the 2020 Paris municipal election, each of Paris's (formerly) 20 arrond
 |  AFOLU | Excluded | N.A | N.A  |
 |   |  Paris is exclusively composed of artificialized land – no significant emissions here | N.A | N.A  |
 |  Other |  |  | Alimentation: the emissions caused by the food consumption of the 2,2 million Parisians and the 1,1 million daily workers are reported in our carbon footprint, for 4 MtCO2e in 2021
-Air traffic count for around 4, 2 MtCO2e emissions in 2021.  |
+| Air traffic count for around 4, 2 MtCO2e emissions in 2021.  |
 |  Geographical boundary | Larger than city administrative boundary  |   |   |
 PARIS
 
@@ -1864,7 +1864,7 @@ April 2025
 |  Pandobac | Circular Economy | Association | Roch | Feuillade | Cofondateur – CTO  |
 |  Pari Végétal | Nature based solutions | Association | Lam-Son | Huynh | Directeur Général  |
 |  Paris Habitat | Social Housing | Public enterprise | Isabelle | Quet Hamon | Direction Générale Adjointe Maîtrise d'Ouvrage et Développement
-Directrice des services Expertises et Appuis  |
+| Directrice des services Expertises et Appuis  |
 |  PariSeine | City planners | Public enterprise | Ariane | Bouleau | Directrice Générale,  |
 |  Perial | Property investor | Enterprise | Éric | Cosserat | PDG  |
 |  Potel et Chabot | Food | Enterprise | Pauline | Jacquemard | Directrice RSE  |

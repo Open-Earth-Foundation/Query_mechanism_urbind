@@ -1808,8 +1808,6 @@ Dresden action plan for climate neutrality in 2030
 |   | Reduction in the volume of motorised private transport enables land to be unsealed, more efficient land use and higher urban space quality  |
 |   | Multi- and intermodality brings further health benefits through more exercise and better air quality  |
 |   | Greater use of eco-friendly modes of transport increases road safety  |
-7
-
 |   | High satisfaction with public transport in DD - possibly high openness to new innovative projects (https://www.dresden.de/de/rathaus/aktuelles/pressemitteilungen/2024/01/pm_082.php)  |
 | --- | --- |
 |   | High level of scientific expertise and know-how in mobility topics in Dresden TU Dresden, Faculty of Transport Sciences "Friedrich List" and various institutes  |

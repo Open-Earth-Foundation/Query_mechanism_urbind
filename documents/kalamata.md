@@ -613,10 +613,6 @@ A-1.2: Applied emission factors
 |  Commercial Transport  |   |   |   |   |   |   |
 |  Πετρέλαιο (t/MWh) | National: 0.245 | CRF: 1.89E-05 | CRF: 8.45E-06 |  |  |   |
 |  Βενζίνη (t/MWh) | National: | CRF: | CRF: |  |  |   |
-KALAMATA
-Climate Neutrality Action Plan
-C
-
 |   | 0.262 | 6.71E-05 | 1.16E-05 |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |  Υγραέριο ((t/MWh) | - | - | - |  |  |   |
@@ -640,12 +636,6 @@ C
 |  Non CO2 (t/animal) |  | CRF: 0.010 | CRF: 3.00E-05 |  |  |   |
 |  **Georgia**  |   |   |   |   |   |   |
 |  Electricity (t/MWh) | National: 0.547 | CRF: 3.60E-06 | CRF: 5.40E-06 |  |  |   |
-
-2
-KALAMATA
-Climate Neutrality Action Plan
-C
-
 |  Πετρέλαιο (t/MWh) | National: 0.266 | CRF: 3.24E-05 | CRF: 6.62E-05 |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |  Βενζίνη (t/MWh) | National: 0.262 | CRF: 3.24E-05 | CRF: 6.62E-05 |  |  |   |
@@ -677,10 +667,6 @@ C
 |  Petroleum (MWh) | 10.572 |  |   |
 |  Petrol (MWh) |  |  |   |
 |  LPG (MWh) |  |  |   |
-KALAMATA
-Climate Neutrality Action Plan
-4
-
 |  Municipal transport  |   |   |   |
 | --- | --- | --- | --- |
 |  Petroleum (MWh) | 2.532 |  |   |
@@ -712,10 +698,6 @@ Climate Neutrality Action Plan
 |  Public buildings and facilities  |   |   |   |   |
 |  Electricity (tn) |  | 4.669,46 |  | 4.669,46  |
 |  Petroleum (tn) | 829,47 |  |  | 829,47  |
-KALAMATA
-Climate Neutrality Action Plan
-C
-
 |  Houses  |   |   |   |   |
 | --- | --- | --- | --- | --- |
 |  Electricity (tn) |  | 63.787,86 |  | 63.787,86  |
@@ -1004,12 +986,12 @@ A-2.1: List of relevant policies, strategies and regulations
 |   |  UN | The direction of the actions of the target is for cities to offer equal opportunities for all, access to services, energy, housing, transport, etc., addressing the challenges faced by urban centers, such as traffic congestion, lack of funds for the provision of basic services, degradation of infrastructure, as well as lack of adequate housing.  |   |
 |   |  Objective 11 | Association | Need for Action  |
 |   |  SUSTAINABLE CITIES and COMMUNITIES | • Energy consumption reduction
-• GHG emissions reduction |   |
+| • GHG emissions reduction |   |
 |   |  Appellation | Description  |   |
 |   |  UN | Goal 13 proposes measures to tackle greenhouse gas emissions, which are the main cause of global warming, resulting in extreme weather events affecting life around the planet.  |   |
 |   |  Objective 13 | Association | Need for Action  |
 |   |  CLIMATE ACTION | • Energy consumption reduction
-• GHG emissions reduction |   |
+| • GHG emissions reduction |   |
 |   |  Appellation | Description  |   |
 KALAMATA
 An Indian go-aud
@@ -1040,12 +1022,6 @@ Table 2. Policies, Strategies and Regulations of European and International Leve
 |   |  Revised National Energy and Climate Plan (NECP) | In line with the Climate Law, the updated NECP will take into account that, in 2030, 80% of electricity will be generated from renewables and 20% from natural gas. Therefore, the emission factor for electricity production for the 2030 energy mix is taken into account  |   |
 |   |   |  Association | Need for Action  |
 |   |   |  GHG emissions reduction | GHG emissions reduction  |
-
-6
-KALAMATA
-Climate Neutrality Action Plan
-O
-
 |   | National Strategic Road Safety Plan | The National Strategic Plan leads to the definition, implementation and monitoring of the necessary actions to drastically reduce the number of road accidents and the number of fatalities and injuries in them.  |   |
 | --- | --- | --- | --- |
 |   |   |  Association | Need for Action  |
@@ -1449,10 +1425,6 @@ University proposals in various funding programs, if they include Kalamata as a 
 |   |  Department of Geography & Regional Planning, School of Rural and Surveying and Geoinformatics Engineering, National Technical University of Athens | Contribution to the development of geospatial systems, data mapping of the city.  |   |
 |   |  Decision Systems & Management Laboratory, School of Electrical and Computer Engineering, National Technical University of Athens, | Contribution to the formulation of energy management actions and smart electricity distribution networks.  |   |
 |   |  Laboratory of Spatial Planning and Urban Development of the School of Architecture of the National Technical University of Athens | Contribution to the formulation of interventions in urban space.  |   |
-KALAMATA
-Climate Neutrality Action Plan
-1
-
 |  2. | Institution Name | University of Patras  |   |
 | --- | --- | --- | --- |
 |   |  Description | Influence | Interest  |
@@ -1544,11 +1516,7 @@ Consider offering support in cash or in kind in exchange for services  |
 |   | Institution Name | Public Power Corporation PPC S.A.  |   |
 |   |  Description | Influence | Interest  |
 |   |  PPC is the public electricity operator in Greece, whose object is the production of energy and its distribution to consumers through its subsidiary company HEDNO, which manages the transmission networks. | PPC's program also includes the promotion of electromobility, with the installation and operation of a network of charging stations, as a necessary means for the use of electric vehicles.
-At the same time, PPC will contribute with the construction of photovoltaic parks and the integration of RES, and in changing the composition of the energy | The operation of the network of electric vehicle chargers for the company will have an economic benefit, while for the Municipality of Kalamata, apart from an economic benefit, there will also be a reduction in emissions.  |
-KALAMATA
-Climate Neutrality Action Plan
-O
-
+| At the same time, PPC will contribute with the construction of photovoltaic parks and the integration of RES, and in changing the composition of the energy | The operation of the network of electric vehicle chargers for the company will have an economic benefit, while for the Municipality of Kalamata, apart from an economic benefit, there will also be a reduction in emissions.  |
 |   |  | mix to one of lower emissions. |   |
 | --- | --- | --- | --- |
 |   | Institution Name | MYTILINEOS GROUP  |   |
@@ -1560,7 +1528,7 @@ O
 |   | Institution Name | NOVOVILLE  |   |
 |   | Description | Influence | Interest  |
 |   | Novoville is a start-up with a vision and goal to facilitate citizens' daily lives and transform municipal services, making them more accessible and efficient.
-It has emerged as one of Europe's 10 best start-up companies in the field of government technology | Novoville has the expertise to support urban and smart mobility actions | With its participation, it benefits from the evaluation and utilization of innovative methods in mobility actions and provision of services to citizens.  |
+| It has emerged as one of Europe's 10 best start-up companies in the field of government technology | Novoville has the expertise to support urban and smart mobility actions | With its participation, it benefits from the evaluation and utilization of innovative methods in mobility actions and provision of services to citizens.  |
 |   | Institution Name | LOCAL AI  |   |
 |   | Description | Influence | Interest  |
 |   | Local AI is a high-tech start-up, based in Kalamata, aiming to implement artificial intelligence and GeoAnalytics projects. | Local AI's activities are related to the management and utilization of data from smart city systems. | The benefits of the company are financial and research  |
@@ -1620,10 +1588,6 @@ Climate Neutrality Action Plan
 |  8. | Association of Olive Millers of Messinia Prefecture | It has as members the entrepreneurs of the olive fruit conversion units into oil. | In the process of converting the fruit into oil, large amounts of energy are consumed, so with the interventions of modernization of equipment and change of processes, economic benefits and reduction of emissions will result.  |
 |  9. | Union of Food Shopkeepers and Super Markets. | It includes food retailers, to consumers. Sector with large and small size businesses. | Businesses will be affected by the energy upgrade of facilities and equipment, as well as changes in the way they are supplied.  |
 |  10. | Butchers' Union of Messinia "Proodos" | The association owns all fresh meat businesses. | In a butcher shop, emissions are generated both from the operation of the business and from the process of production and transport of fresh meat.  |
-KALAMATA
-Climate Neutrality Action Plan
-0
-
 |   |  |  | The proposed actions will reduce the company's energy costs, while affecting the marketing processes of the products.  |
 | --- | --- | --- | --- |
 |  11. | Bakers' Guild of Messinia | It has as members all bread and pastry workshops | The exemption from fossil fuels (Diesel) operation of the unit, leads to the necessary modernization of the equipment, with the benefit of reducing energy costs.  |
@@ -1633,10 +1597,6 @@ Climate Neutrality Action Plan
 |  15. | Association of Gas Station Owners of Messinia "Aristodimos" | The union owns all petrol stations, through which vehicles are refueled with liquid fuels and homes with heating oil. | Due to the proposed actions to get rid of liquid fuels, both for traffic and heating, the sector will suffer the greatest consequences of all.  |
 |  16. | Kalamata Taxi Owners Association | Includes taxi owners | The industry will be affected by the promotion of electric vehicles, the encouragement of the use of public transport, means of mild transport, but also shared vehicles.  |
 |  17. | New Association of Electrical Contractors of Messinia | It consists of electrical construction professionals. | Due to the transition to an era free of fossil fuels, the energy upgrade of homes and facilities, the modernization of equipment and appliances, the  |
-KALAMATA
-Climate Neutrality Action Plan
-1
-
 |   |  |  | introduction of automation in the daily lives of citizens, but also of production lines, members will be at the forefront of promoting change.  |
 | --- | --- | --- | --- |
 |  18. | Association of Plumbing Installers of the Prefecture of Messinia "The Samaritan" | The association includes professionals installing plumbing systems for the operation of both buildings and production and processing units. | The abolition of central heating with oil will affect the working future of members of the industry.  |
@@ -1645,10 +1605,6 @@ Climate Neutrality Action Plan
 |   |  Kalamata Bar Association | All members of the association who provide legal services | In cases where the actions of the contract will include synergies between entities of different legal status, the agreements between them should have the legal documentation. Also, the implementation of some actions will require the adoption of regulatory or regulatory acts.  |
 |  8. | Technical Chamber of Greece (Messinia Branch) | It includes the Engineers with specialization, the Civil, the Architect, the Electrician, the Mechanical, the Surveyor and the Chemical Engineer. | Engineers are responsible for the construction of buildings and facilities, the urban planning of areas, methods of energy production and distribution, as well as waste management. Therefore, it is the sector on which the implementation of the proposed interventions will be based, with economic benefits.  |
 |  9. | Association of Accountants, Tax Consultants Freelancers of Messinia Prefecture ELFEE | It includes professionals who offer financial advisory services to citizens and businesses. | The movement of zero-emission goods, as well as their procurement procedures, leads to the imprinting of zero-footprint balance sheets, thus creating the need to inform and familiarize economists in terms of green accounting.  |
-KALAMATA
-Climate Neutrality Action Plan
-2
-
 |  10. | Medical Association of Messinia | The daily contact with people in need of medical attention creates the framework of the influence of the members of the association on issues of information and awareness on climate change. | The protection of public health through the proposed interventions, as well as the reduction of energy costs of business premises are reasons for expressing interest in implementing the actions of the climate contract.  |
 | --- | --- | --- | --- |
 |  11. | Pharmaceutical Association of Messinia | The daily contact with people in need of medical attention creates the framework of the influence of the members of the association on issues of information and awareness on climate change. | The protection of public health through the proposed interventions, as well as the reduction of energy costs of business premises are reasons for expressing interest in implementing the actions of the climate contract.  |
@@ -1665,10 +1621,6 @@ Climate Neutrality Action Plan
 • Informing parents  |
 |  2. | Union of Secondary Education Officers of Messinia | Includes the teaching staff of secondary schools (Gymnasiums and Lyceums) | Teachers, apart from the benefit of creating appropriate teaching conditions, have as their most important role the awareness of students on climate change issues  |
 |  3. | Association of Primary Education Teachers of Messinia | Includes the teaching staff of primary schools (Kindergartens and Primary Schools) | Teachers, apart from the benefit of creating appropriate teaching conditions, have as their most important role the  |
-KALAMATA
-Climate Neutrality Action Plan
-C
-
 |   |  |  | awareness of students on climate change issues  |
 | --- | --- | --- | --- |
 |  4. | Union of Parents & Guardians Associations of the Municipality of Kalamata | As an association that has as members the parents of all schools of the Municipality, it influences the formation of opinion and implementation of policies for climate neutrality. | The focus is on the proper functioning of school units, in terms of teaching conditions and operating costs.  |
@@ -2929,10 +2881,6 @@ Table 18. Scenario I: Results of actions - built environment
 |  Lever Change | Results  |   |
 |   |  Short term | Long term  |
 |  Technology & Infrastructure | 1. The full operation of the municipal lighting system 2. Preparation of an energy inspection study for each sports facility unit. | For sports facilities 1. Installation of metering systems for monitoring consumption (BMS) in all areas.  |
-KALAMATA
-Climate Neutrality Action Plan
-8
-
 |  Governance & Policies
 
 Financing | 3. Replacement of heating and cooling system at TENTA Sports Center
@@ -3450,10 +3398,6 @@ Table 32. Scenario II: Results of Actions - Built Environment
 |   | information and communication. 3. Start of the implementation of the project for the construction of the new system. 4. Start of the operation of the project for the construction of the new system. |   |
 |  Temporary | 1. Development of a digital application for Mobility as a Service (MaaS) and interconnection of all systems. 2. Start of implementation and operation of the project for the construction of the new system. | 1. Installation and operation of a controlled parking system 2. Preparation of studies for the construction of the common transit centre.  |
 |  Inclusivity | 1. Start of the operation of the project for the construction of the new system. | 1. Start of the operation of the project for the construction of the new system.  |
-KALAMATA
-Climate Neutrality Action Plan
-7
-
 |   | installation of the "Integrated Electric Bicycle Rental System".
 Creation of the network of collaborating companies, as a legal entity, for the shipment, transport and receipt of containers.
 Start of authorisation procedures for the establishment of a common warehouse centre
@@ -4015,8 +3959,8 @@ The results and impacts of the scenario "Kalamata, city to produce and create" a
 |  Lever Change | Results  |   |
 |   |  Short term | Long term  |
 |  Technology & Infrastructure | 1. Preparation of the energy audit study of all pumping units.
-Preparation of a study for the installation of photovoltaic systems | 1. Implementation of energy upgrade works for pumping equipment
-Installation of photovoltaic power systems to power the pumping units.  |
+| Preparation of a study for the installation of photovoltaic systems | 1. Implementation of energy upgrade works for pumping equipment |
+| Installation of photovoltaic power systems to power the pumping units.  |
 |  Financing | Promotion of investment plan to funding bodies | Promotion of investment plan to funding bodies  |
 |  Inclusivity | Establishment of a Common Energy Community | Establishment of a Common Energy Community  |
 
@@ -4062,7 +4006,7 @@ Construction of power plants  |
 Forward funding requests on a sector-by-sector basis.
 Approval of permits for the construction and operation of power plants |   |
 |  **Financing** | 1. Preparation of an investment plan for each sector separately and their promotion to funding bodies.
-Preparation of investment plans for the implementation of the construction of power plants | 1. Promotion of investment plans to funding bodies.  |
+| Preparation of investment plans for the implementation of the construction of power plants | 1. Promotion of investment plans to funding bodies.  |
 |  **Inclusivity** | 1. Establishment of a common energy community for the sectors of public gathering and temporary residence (tourism sector).
 Establishment of a common energy community for commerce, offices, |   |
 KALAMATA The money group
@@ -5191,7 +5135,7 @@ Table 80. Organizational and Governance Interventions: 3. Network of Cities "Cli
 |  Name of intervention | 4. Network of Municipalities of Peloponnese Region  |   |   |
 | --- | --- | --- | --- |
 |  Description | The Municipality of Kalamata is the only Municipality from the Peloponnese Region that participates in the Mission of 100 cities and for the promotion of good practices and for the information-sensitization of citizens, participates in a group of 14 Municipalities, of the Peloponnese Region, through a cooperation protocol.
-With the collaborations within the network, similar actions are expected to be taken by neighboring municipalities in order to accelerate climate neutrality.  |   |   |
+| With the collaborations within the network, similar actions are expected to be taken by neighboring municipalities in order to accelerate climate neutrality.  |   |   |
 |  Jurisdiction | Regional Union of Peloponnese Municipalities  |   |   |
 |   | Stakeholders | Impact on goal | Effect on Co-benefits  |
 |   |  Municipalities of Peloponnese Region
@@ -5583,10 +5527,6 @@ Climate Neutrality Action Plan
 |   |  P.3 | Energy upgrading of tertiary sector buildings and facilities | Prtf.P.3_3rd_Sector_En  |
 |   |  P.4 | Energy generation, storage and distribution systems | Prtf.P.4_Energy_En  |
 |  Kalamata, a city that learns | R.1 | Pilot Research Activities | Prtf.R.1_pilot_En  |
-KALAMATA
-Climate Neutrality Action Plan
-2
-
 |   | R.2 | Research and Innovation Structures | Prtf.R.2_R&I_En  |
 | --- | --- | --- | --- |
 |   | R.3 | Information and Awareness | Prtf.R.3_Sensitivation_En  |
@@ -8063,13 +8003,13 @@ Table 34 Agricultural Sector Actions
 |   | from RES (MWh/ year)  |
 | --- | --- |
 |  Electronic water abstraction systems for irrigation with charging cards | 134,61
-,68  |
+| ,68  |
 |  Modernisation of agricultural tractors | 77,67
-,63  |
+| ,63  |
 |  Replacing irrigation methods with drip irrigation | 54,63
-,18  |
+| ,18  |
 |  Energy upgrade of private pumps | 4,45
-,26  |
+| ,26  |
 |  Total | 271,26
 ,93  |
 
@@ -9142,10 +9082,6 @@ Include a list of stakeholders who have committed to help your city achieve its 
 |  University of Patras | Cross-sectoral | Legal Entity under Public Law Research Organization (Universities, Research Centers, Institutes) | Christos Bouras | Rector  |
 |  Department of Transport Engineering of the National Technical University of Athens | Energy Transport Industry | Legal Entity under Public Law Research Organization (Universities, Research Centers, Institutes) | Eleni Vlahogianni | Professor  |
 |  Electronic Sensors Laboratory of the School of Electrical and Computer Engineering, National Technical University of Athens | Energy Industry | Legal Entity under Public Law Research Organization (Universities, Research Centers, Institutes) | Evangelos Christoforou | Laboratory Director  |
-KALAMATA
-
-Climate-Neutrality Commitments
-
 |  Department of Geography & Regional Planning, School of Rural and Surveying and Geoinformatics Engineering, National Technical University of Athens | Energy
 Transport
 Industry
@@ -9155,9 +9091,9 @@ Georgia | Legal Entity under Public Law Research Organization (Universities, Res
 Transport
 Industry | Legal Entity under Public Law Research Organization (Universities, Research Centers, Institutes) | Ioannis Psarras | Laboratory Director  |
 |  Laboratory of Atmospheric Physics, University of Patras | Energy
-Industry | Legal Entity under Public Law Research Organization (Universities, Research Centers, Institutes) | Andreas Kazantzidis | Professor  |
+| Industry | Legal Entity under Public Law Research Organization (Universities, Research Centers, Institutes) | Andreas Kazantzidis | Professor  |
 |  Circular Economy Workshop of the University of Piraeus | Waste
-Industry | Legal Entity under Public Law Research Organization (Universities, Research Centers, Institutes) | Konstantina Kottaridi | Laboratory Director  |
+| Industry | Legal Entity under Public Law Research Organization (Universities, Research Centers, Institutes) | Konstantina Kottaridi | Laboratory Director  |
 |  Department of Finance, University of Peloponnese | Energy
 Transport
 Industry | Legal Entity under Public Law Research Organization (Universities, Research Centers, Institutes) | Athanasios Katsis | Rector  |
@@ -9210,7 +9146,7 @@ Industry
 Georgia | Association
 Club | Sotirios Tsonis | President  |
 |  Ministry of Education
-(Regional Directorate of Primary and Secondary Education of Peloponnese) | Cross-sectoral | Education | Dimitrios Economopoulos | Regional Director  |
+| (Regional Directorate of Primary and Secondary Education of Peloponnese) | Cross-sectoral | Education | Dimitrios Economopoulos | Regional Director  |
 |  Ministry of Education
 (Directorate of Secondary Education)
 (Directorate of Primary Education) | Cross-sectoral | Education | Dr. Theofania Siouti

@@ -384,7 +384,7 @@ A-1.3: Activities by Source Sector
 |  Activities | Wastewater management |  | Landfilling  |
 |  Sector: Industrial processes and product use (IPPU) |  |  |   |
 |  Activities | Use of fluorinated gases in air conditioning and refrigeration systems
-Manufacture of mineral wool |  |   |
+| Manufacture of mineral wool |  |   |
 |  Sector: Agriculture, forestry, and other land use (AFOLU) |  |  |   |
 |  Activities | Tree planting, land use areas (agricultural emissions not counted as negligible) |  |   |
 |  Sector: Electricity consumption |  |  |   |
@@ -1223,12 +1223,12 @@ Action Plan by 2030
 |   |  Energy Removed/Replaced, Volume or Fuel Type |   |
 |   |  GHG Emission Reduction Value (Total) per Source Sector | 70,180.41 tCO2eq. autonomous (non-centralised) heating  |
 |   |  Total Costs and Costs per Unit of CO2eq. | Total Capex: 398,056,500€
-,671.90 EUR/tCO2e  |
+| ,671.90 EUR/tCO2e  |
 |  B-2.2: Description of an Individual Action  |   |   |
 | --- | --- | --- |
 |  Action Description | Action Name | E3 Reconstruction of heating networks  |
 |   |  Action Type | Hard Measure
-Direct GHG Emission Reductions  |
+| Direct GHG Emission Reductions  |
 |   |  Action Description | District heating is supplied to the residents of Vilnius City Municipality through 758 km of pipeline. To increase the efficiency of heat supply, the DH networks need to be upgraded. The average age of the pipeline is 30 years, but in some places it can be more than 50 years. Naturally, pipelines of this age are worn and leaking, which results in higher heat losses during the supply process and contributes to the greenhouse effect. Heat losses in 2021 accounted for ~11.9% of the total heat supplied to the networks.  |
 |   | Field of Activity | Energy  |
 |   |  Systematic Leverage | Technology and Infrastructure  |
@@ -1358,9 +1358,9 @@ B-2.2: Description of an Individual Action
 |  Action Description | Action Name | E8 Install LED lighting in the city  |
 | --- | --- | --- |
 |   |  Action Type | Hard Measure
-Direct GHG Emission Reductions  |
+| Direct GHG Emission Reductions  |
 |   |  Action Description | The city's lighting system is to be upgraded to more energy-efficient LED technology, replacing conventional city lights with LED lamps. Currently, there are 63,567 light spots (street lights) in Vilnius City managed by UAB "Vilniaus apšvietimas", of which ~95% are LED luminaires.
-There are currently around 5,500 architectural lights in the city, which are Na-type lights. Replacing these lights with more environmentally friendly ones is a complex process due to the technical and quality requirements of the lighting.  |
+| There are currently around 5,500 architectural lights in the city, which are Na-type lights. Replacing these lights with more environmentally friendly ones is a complex process due to the technical and quality requirements of the lighting.  |
 |  Connection to the Impact of the Actions | Field of Activity | Energy  |
 |   |  Systematic Leverage | Technology and Infrastructure  |
 |   |  Results (Based on Table/Section B-1.1) | In 2030, the number of LED street lights in Vilnius City should reach 100% of the total number. This measure contributes to more efficient use of electricity and reduced GHG emissions.  |
@@ -1401,12 +1401,12 @@ Action Plan by 2030
 |   | Energy Removed/Replaced, Volume or Fuel Type |   |
 |   | GHG Emission Reduction Value (Total) per Source Sector | Effect linked to the E8 action  |
 |   | Total Costs and Costs per Unit of CO2e | Total Capex: 1,440,000€
-,393.50 EUR/tCO2e  |
+| ,393.50 EUR/tCO2e  |
 |  B-2.2: Description of an Individual Action  |   |   |
 | --- | --- | --- |
 |  Action Description | Action Name | E10 Promotion of connection of buildings to district heating system  |
 |   |  Action Type | Soft Measure
-Direct GHG Emission Reductions  |
+| Direct GHG Emission Reductions  |
 |   |  Action Description | To encourage the connection of new and existing buildings to district heating. To create a favourable legal environment for the implementation of the measure, it is recommended to periodically revise the DH zones and the heat supply regulations established in the special plan for the heat sector, taking into account technological progress and changes in the legal and economic environment.
 It is proposed to prepare an analysis and recommendations for Vilnius City Municipality Administration and VŠT on what changes (technological, socio-economic, etc.) are needed to effectively encourage residents to connect to district heating.  |
 VILNIUS
@@ -1463,7 +1463,7 @@ Action Plan by 2030
 Hard Measure
 Direct GHG Emission Reductions  |
 |   | Action Description | Nationally, natural gas consumption for food production accounts for around 20-21% of total gas consumption.
-Governance (for example, legislation), economic (for example, subsidies), etc. could be used to encourage people to switch away from natural gas used for cooking.  |
+| Governance (for example, legislation), economic (for example, subsidies), etc. could be used to encourage people to switch away from natural gas used for cooking.  |
 |  Connection to the Impact of the Actions | Field of Activity | Energy  |
 |   | Systematic Leverage | Governance and Policy  |
 |   | Results (Based on Table/Section B-1.1) | Reduced consumption of natural gas, reduced dependence on this fuel and reduced GHG emissions.  |
@@ -1554,7 +1554,7 @@ Action Plan by 2030
 | --- | --- | --- |
 |  Action Description | Action Name | E16 Assessing the potential of waste heat recovery in the city  |
 |   |  Action Type | Soft Measure
-Indirect GHG Emission Reductions  |
+| Indirect GHG Emission Reductions  |
 |   |  Action Description | This is a proposal to prepare a study that quantifies and qualitatively assesses the potential sources of waste heat – industrial or energy production facilities, the service sector. It analyses the possibilities of using this heat for city purposes.  |
 |  Connection to the Impact of the Actions | Field of Activity | Energy  |
 |   |  Systematic Leverage | Scientific Innovation  |
@@ -1579,9 +1579,9 @@ Action Plan by 2030
 | --- | --- | --- |
 |  Action Description | Action Name | T1 Renewal and modernisation of public vehicles and related infrastructure  |
 |   |  Action Type | Hard Measure
-Direct GHG Emission Reductions  |
+| Direct GHG Emission Reductions  |
 |   |  Action Description | By 2030, it is planned that electric, hydrogen and other alternative fuel vehicles will account for 100% of the total public transport fleet operated by UAB “Vilniaus viešasis transportas” (which currently provides 80% of the city’s public transport services).
-The operation of electric buses requires a sufficient, strategically located network of charging stations that correlates with the number of electric buses in the city. Therefore, this action includes the creation of charging infrastructure for electric buses in the city.  |
+| The operation of electric buses requires a sufficient, strategically located network of charging stations that correlates with the number of electric buses in the city. Therefore, this action includes the creation of charging infrastructure for electric buses in the city.  |
 |  Connection to the Impact of the Actions | Field of Activity | Transport  |
 |   |  Systematic Leverage | Technology and Infrastructure  |
 |   |  Results (Based on Table/Section B-1.1) | By 2030, it is planned that Vilnius will have 367 electric buses and 164 new trolleybuses (belonging to the VVT fleet). The average age of vehicles in the VVT fleet is expected to be 6 years.
@@ -1613,7 +1613,7 @@ B-2.2: Description of an Individual Action
 |  Action Description | Action Name | T2 Production of green hydrogen for bus fuel  |
 | --- | --- | --- |
 |   |  Action Type | Hard Measure
-Direct GHG Emission Reductions  |
+| Direct GHG Emission Reductions  |
 |   |  Action Description | The procurement of 16 hydrogen buses is planned for 2024. Therefore, the production of green hydrogen to fuel the buses is planned to start in 2026 on the territory of Vilniaus šilumos tinklai (Vilnius Heat Networks), Elektrinės St 2. VCMA and its partner AB “Vilniaus šilumos tinklai” have signed a contract to produce green hydrogen for use in public transport. The project also includes the installation of a hydrogen storage facility. A public access hydrogen station with hydrogen refuelling stops will be installed within the city limits.  |
 |  Connection to the Impact of the Actions | Field of Activity | Transport  |
 |   |  Systematic Leverage | Technology and Infrastructure  |
@@ -1638,7 +1638,7 @@ Action Plan by 2030
 |  Action Description | Action Name | T3 Development of street lanes for public transport  |
 | --- | --- | --- |
 |   |  Action Type | Hard Measure
-Direct GHG Emission Reductions  |
+| Direct GHG Emission Reductions  |
 |   |  Action Description | This would allow faster movement of public transport (PT) and thus encourage people to choose PT instead of their own cars.  |
 |  Connection to the Impact of the Actions | Field of Activity | Transport  |
 |   |  Systematic Leverage | Technology and Infrastructure  |
@@ -1658,7 +1658,7 @@ Direct GHG Emission Reductions  |
 |  Action Description | Action Name | T4 Implementation of intelligent traffic light regulation infrastructure on main public transport routes  |
 | --- | --- | --- |
 |   |  Action Type | Hard Measure
-Direct GHG Emission Reductions  |
+| Direct GHG Emission Reductions  |
 |   |  Action Description | By 2030, 96 intersections are to be reconstructed, to give right of way to public transport. This measure would help to speed up the movement of PT in the city and improve the quality of PT communication.  |
 |   | Field of Activity | Transport  |
 |   |  Systematic Leverage | Technology and Infrastructure  |
@@ -1736,7 +1736,7 @@ B-2.2: Description of an Individual Action
 |  Action Description | Action Name | T7 Development of infrastructure for multimodal points  |
 | --- | --- | --- |
 |   |  Action Type | Hard Measure
-Direct GHG Emission Reductions  |
+| Direct GHG Emission Reductions  |
 |   |  Action Description | To develop multi-modal hubs with the necessary infrastructure:
 Park your car and use public transport (Park&Ride). To ensure the possibility to park a car at designated multi-modal parking spaces and transfer to PT;
 Leave your bike and use public transport/car sharing (Bike&Ride). To provide locked cycle parking, storage facilities to ensure safe bicycle parking for the whole day, or filmed parking areas protected from rain.
@@ -1761,7 +1761,7 @@ Action Plan by 2030
 | --- |
 | Action Description | Action Name | T8 Development of bicycle storage and rack infrastructure |
 | Action Type | Hard Measure
-Direct GHG Emission Reductions |
+| Direct GHG Emission Reductions |
 | Action Description | To create and develop bicycle storage and rack infrastructure in the city. To provide bicycle storage facilities (racks) in the city's public spaces and in the vicinity of business centres/office buildings, train stations, PT stops; to provide bicycle parking and storage facilities for other micro-mobility devices, including electric ones, in all schools, other educational institutions; to provide bicycle storage facilities in the territories of multi-apartment buildings. An estimated 30 additional bicycle storage facilities are planned by 2030 (note: the installation of these facilities has not yet been approved). |
 | Connection to the Impact of the Actions | Field of Activity | Transport |
 | Systematic Leverage | Technology and Infrastructure |
@@ -1787,13 +1787,13 @@ Action Plan by 2030
 | --- | --- | --- |
 |  Action Description | Action Name | T9 Upgrading the car fleet of Vilnius City Municipality Administration to low-emission and zero-emission vehicles  |
 |   |  Action Type | Hard Measure
-Direct GHG Emission Reductions  |
+| Direct GHG Emission Reductions  |
 |   |  Action Description | The cars belonging to the VCM administration (61 cars in total, including 8 leased; 5 vehicles, including 2 leased, of 61 are electric vehicles) should be upgraded by 2030 to low-emission vehicles: electric vehicles, vehicles powered by alternative low-pollution fuels.
-This action is foreseen in the strategic plans of the VCMA.  |
+| This action is foreseen in the strategic plans of the VCMA.  |
 |  Connection to the Impact of the Actions | Field of Activity | Transport  |
 |   |  Systematic Leverage | Technology and Infrastructure  |
 |   |  Results (Based on Table/Section B-1.1) | The use of environmentally friendly, low-emission passenger cars for VCMA uses would contribute to reducing GHG emissions in the city. It would also encourage municipal companies to replace their cars with low-emission vehicles.
-It would set a good example for residents and businesses, potentially encouraging people to switch from fossil-fuelled cars to electric cars or vehicles powered by alternative low-pollution fuels.  |
+| It would set a good example for residents and businesses, potentially encouraging people to switch from fossil-fuelled cars to electric cars or vehicles powered by alternative low-pollution fuels.  |
 |  Implementation | Responsible Institutions/People | VCMA, SJ “Susisiekimo paslaugos”  |
 |   |  Scope of the Action and Facilities Concerned (Facilities in which Implementation Takes Place) | The action is significant for the whole city area and city residents.  |
 |   |  Stakeholders Involved | VCMA, SJ “Susisiekimo paslaugos”, city residents  |
@@ -1814,7 +1814,7 @@ Action Plan by 2030
 |  Action Description | Action Name | T10 Development of carsharing services  |
 | --- | --- | --- |
 |   |  Action Type | Hard Measure
-Direct GHG Emission Reductions  |
+| Direct GHG Emission Reductions  |
 |   |  Action Description | To encourage car-sharing trips, thereby reducing the use of private cars. This measure, implemented together with private businesses (for example, City Bee, Bolt Drive and Spark), could contribute to reducing the number of private cars and reduce traffic flows in the city.  |
 |  Connection to the Impact of the Actions | Field of Activity | Transport  |
 |   |  Systematic Leverage | Technology and Infrastructure  |
@@ -1839,7 +1839,7 @@ Action Plan by 2030
 | --- | --- | --- |
 |  Action Description | Action Name | T11 Expansion of the network of public charging stations and charging points for electric cars  |
 |   |  Action Type | Hard Measure
-Direct GHG Emission Reductions  |
+| Direct GHG Emission Reductions  |
 |   |  Action Description | The development of a network of charging stations for electric vehicles will encourage an increase in the number of electric vehicles in the city, replacing cars running on fossil fuel. This will help reduce GHG emissions in the city.  |
 |  Connection to the Impact of the Actions | Field of Activity | Transport  |
 |   |  Systematic Leverage | Technology and Infrastructure  |
@@ -1856,7 +1856,7 @@ Direct GHG Emission Reductions  |
 | --- | --- | --- |
 |  Action Description | Action Name | T12 Development of pedestrian infrastructure  |
 |   |  Action Type | Hard Measure
-Direct GHG Emission Reductions  |
+| Direct GHG Emission Reductions  |
 |   |  Action Description | Development of pavements and footpath infrastructure to encourage walking and improve pedestrian comfort.  |
 |  Connection to the Impact of the Actions | Field of Activity | Transport  |
 |   |  Systematic Leverage | Technology and Infrastructure  |
@@ -1905,12 +1905,12 @@ Action Plan by 2030
 |   |  Energy Removed/Replaced, Volume or Fuel Type |   |
 |   |  GHG Emission Reduction Value (Total) per Source Sector | 287,368.04 tCO₂eq.  |
 |   |  Total Costs and Costs per Unit of CO₂e | Total Capex: 1,681,365,000€
-,850.95 EUR/tCO₂e  |
+| ,850.95 EUR/tCO₂e  |
 |  B-2.2: Description of an Individual Action  |   |   |
 | --- | --- | --- |
 |  Action Description | Action Name | T14 Identification of low emission zones  |
 |   |  Action Type | Soft Measure
-Direct GHG Emission Reductions  |
+| Direct GHG Emission Reductions  |
 |   |  Action Description | Vilnius is one of the cities where the Law on Alternative Fuels requires the establishment of low-emission zones by 1 January 2025 at the latest. The Municipality Council will have to determine the area of the city in which vehicle traffic is restricted or completely banned, with the exception of clean vehicles. The low-emission zone is planned to be located in the Old Town. The options for expanding these zones are set out in the Sustainable Mobility Plan of Vilnius City Municipality.  |
 |  Connection to the Impact of the Actions | Field of Activity | Transport  |
 |   |  Systematic Leverage | Governance and Policy  |
@@ -1936,7 +1936,7 @@ Action Plan by 2030
 | --- | --- | --- |
 |  Action Description | Action Name | T15 Promoting the use of medium-sized commercial vehicles powered by alternative fuels in the city  |
 |   |  Action Type | Soft Measure
-Direct GHG Emission Reductions  |
+| Direct GHG Emission Reductions  |
 |   |  Action Description | To encourage the replacement of fossil-fuel powered medium-sized commercial vehicles with RES-powered vehicles. By 2030, only alternative fuel vehicles (N2 class) could enter the territory of Vilnius City Municipality (N3 class vehicles are practically excluded from most of Vilnius). From 2030 onwards, only RES-powered vehicles that do not emit any GHG could enter the city. This action is also linked to the expansion of low-emission zones: as the size of these zones grows, the trucks that drive in them will have to be clean.  |
 |  Connection to the Impact of the Actions | Field of Activity | Transport  |
 |   |  Systematic Leverage | Governance and Policy  |
@@ -1962,7 +1962,7 @@ Action Plan by 2030
 |  Action Description | Action Name | T16 Increasing parking fees  |
 | --- | --- | --- |
 |   |  Action Type | Soft Measure
-Indirect GHG Emission Reductions  |
+| Indirect GHG Emission Reductions  |
 |   |  Action Description | In order to reduce private car traffic in the city centre and other parts of the city, parking charges are planned to be increased, thus creating less favourable conditions for private car use. There are also plans to expand the number of paid parking zones in the city and to change the pricing.  |
 |  Connection to the Impact of the Actions | Field of Activity | Transport  |
 |   |  Systematic Leverage | Governance and Policy  |
@@ -1983,7 +1983,7 @@ Indirect GHG Emission Reductions  |
 |  Action Description | Action Name | A1 Assessment and implementation of food waste treatment options  |
 | --- | --- | --- |
 |   | Action Type | Hard and Soft Measures
-Direct GHG Emission Reductions  |
+| Direct GHG Emission Reductions  |
 |   | Action Description | From January 2024, city residents collect food waste separately at the place of production. The food waste separated by Vilnius residents in orange bags is put in shared mixed waste containers.
 A feasibility study on food waste treatment is proposed to explore alternative, more efficient  |
 VILNIUS
@@ -2011,7 +2011,7 @@ Action Plan by 2030
 | --- | --- | --- |
 |  Action Description | Action Name | A2 Improvement of municipal waste sorting processes  |
 |   | Action Type | Hard Measure
-Indirect GHG Emission Reductions  |
+| Indirect GHG Emission Reductions  |
 |   | Action Description | Residents already sort their municipal waste – the city has a well-developed waste sorting system (a system of containers for sorting plastic, paper, metal and glass, collection of sorted waste, etc.).
 UAB VAATC waste treatment site at Graičiūno St 36D, Vilnius, will ensure the separation and preparation for use of waste streams with a high  |
 VILNIUS
@@ -2039,7 +2039,7 @@ Action Plan by 2030
 | --- | --- | --- |
 |  Action Description | Action Name | A3 Production of hydrogen from municipal waste  |
 |   | Action Type | Hard Measure
-Direct GHG Emission Reductions  |
+| Direct GHG Emission Reductions  |
 |   | Action Description | Treating 11,000 tonnes of municipal waste per year would produce 700-800 tonnes of hydrogen. This hydrogen would be used as fuel for vehicles such as public transport buses.  |
 |  Connection to the Impact of the Actions | Field of Activity | Waste and the Circular Economy  |
 |   | Systematic Leverage | Technology and Infrastructure  |
@@ -2067,7 +2067,7 @@ Action Plan by 2030
 | --- | --- | --- |
 |  Action Description | Action Name | A4 Promotion of municipal waste sorting and prevention of waste generation by educating the population  |
 |   | Action Type | Soft Measure
-Indirect GHG Emission Reductions  |
+| Indirect GHG Emission Reductions  |
 |   | Action Description | To promote municipal waste sorting and waste reduction by organising educational events and activities in the city's communities.
 It is also important to reduce waste by encouraging consumers to choose durable, reusable packaging and to avoid single-use plastic, paper and other types of packaging.
 The planned educational events and activities would encourage even more people to sort municipal waste properly and contribute to waste reduction. There would be potentially two larger events per year, as well as seven smaller events or educational workshops targeting different communities or groups in the city, with a strong focus on their local needs.  |
@@ -2098,7 +2098,7 @@ Action Plan by 2030
 Hard Measure (Infrastructure Development)
 Indirect GHG Emission Reductions  |
 |   | Action Description | DĖK’UI stops are drop-off and exchange points where residents can leave items they do not use. Items that are functional, in good condition but no longer needed can be used by other people, thus reducing the likelihood of items becoming waste.
-A total of 11 item sharing stops are expected to be established in the city by 2027. Later on, the network of stops can be expanded as needed.  |
+| A total of 11 item sharing stops are expected to be established in the city by 2027. Later on, the network of stops can be expanded as needed.  |
 |  Connection to the Impact of the Actions | Field of Activity | Waste and the Circular Economy  |
 |   | Systematic Leverage | Social Innovation  |
 |   | Results (Based on Table/Section B-1.1) | Reduced waste production, promotion of the circular economy.  |
@@ -2147,7 +2147,7 @@ Action Plan by 2030
 9
 
 |   | Action Type | Soft Measure
-Indirect GHG Emission Reductions  |
+| Indirect GHG Emission Reductions  |
 | --- | --- | --- |
 |   | Action Description | The waste preparation site located at Graičiūno St 36D, Vilnius, will be adapted for waste prevention activities by setting up an education centre. The purpose of this centre is to educate the public, especially school children, about the waste management system in the Vilnius region, and to carry out various educational activities on waste issues. The education centre will also include workshops to teach how to repair, refurbish and renovate items and other activities to encourage the reuse of items. The education centre will be built with administrative premises needed for the centre. Implementation is planned by 2026.  |
 |  Connection to the Impact of the Actions | Field of Activity | Waste and the Circular Economy  |
@@ -2167,7 +2167,7 @@ B-2.2: Description of an Individual Action
 |  Action Description | Action Name | A8 Identification and application of textile waste recycling technologies in a municipality  |
 | --- | --- | --- |
 |   | Action Type | Soft Measure
-Indirect GHG Emission Reductions  |
+| Indirect GHG Emission Reductions  |
 |   | Action Description | The textile industry is one of the most polluting industries, so recycling as many textiles as possible is essential to make the use of textiles more sustainable and to reduce environmental impacts and GHG emissions. To achieve this, it is necessary to identify the most advanced  |
 VILNIUS
 
@@ -2230,7 +2230,7 @@ Action Plan by 2030
 | --- | --- | --- |
 |  Action Description | Action Name | P1 Upgrading municipal buildings and their systems  |
 |   | Action Type | Hard Measure
-Direct GHG Emission Reductions  |
+| Direct GHG Emission Reductions  |
 |   | Action Description | Energy efficiency is achieved when buildings are energy efficiency class B or higher.  |
 VILNIUS
 
@@ -2253,12 +2253,12 @@ Action Plan by 2030
 |   | Energy Removed/Replaced, Volume or Fuel Type |   |
 |   | GHG Emission Reduction Value (Total) per Source Sector | 4,719.03 tCO₂eq.  |
 |   | Total Costs and Costs per Unit of CO2e | Total Capex: 583,639,000€
-,677.75 EUR/tCO2e  |
+| ,677.75 EUR/tCO2e  |
 |  B-2.2: Description of an Individual Action  |   |   |
 | --- | --- | --- |
 |  Action Description | Action Name | P2 Centralisation of municipal building management and building energy consumption monitoring  |
 |   | Action Type | Hard Measure
-Direct GHG Emission Reductions  |
+| Direct GHG Emission Reductions  |
 |   | Action Description | To centralise professional management of municipally-owned buildings. To install a centralised automatic system for reading and analysing building meters and sub-meters. To optimise building utility systems and energy consumption on the basis of continuously collected and analysed data. To calculate the  |
 VILNIUS
 
@@ -2285,7 +2285,7 @@ Action Plan by 2030
 | --- | --- | --- |
 |  Action Description | Action Name | P3 Promoting the modernisation of multi-apartment buildings  |
 |   | Action Type | Hard Measure
-Direct GHG Emission Reductions  |
+| Direct GHG Emission Reductions  |
 |   | Action Description | By 2030, 2,400 multi-apartment buildings should be renovated (at least 480 per year). Residents can apply for state support for the modernisation of multi-apartment buildings. To qualify for this funding, owners of apartments and other premises must approve an Investment Plan, in which the renovated multi-apartment building should save at least 40% of heat energy).
 The Vilnius Coalition Programme foresees the creation of a special fund for the renovation of multi-apartment buildings and the additional financing of renovation projects on top of the state support. This could encourage more residents to renovate their homes.  |
 VILNIUS
@@ -2308,14 +2308,14 @@ Action Plan by 2030
 |   | Energy Removed/Replaced, Volume or Fuel Type |   |
 |   | GHG Emission Reduction Value (Total) per Source Sector | 68,349.82 tCO₂eq.  |
 |   | Total Costs and Costs per Unit of CO₂e | Total Capex: 3,920,000,000€
-,357.14 EUR/tCO₂e  |
+| ,357.14 EUR/tCO₂e  |
 |  B-2.2: Description of an Individual Action  |   |   |
 | --- | --- | --- |
 |  Action Description | Action Name | P4 Promoting panel modernisation of buildings  |
 |   | Action Type | Soft Measure
-Indirect GHG Emission Reductions  |
+| Indirect GHG Emission Reductions  |
 |   | Action Description | The EPMA of the Ministry of Environment of the Republic of Lithuania coordinates the calls for applications for state financial support for the panel renovation of buildings. The VCMA could promote this action by raising awareness among city residents, educating them during various information events, assisting in the preparation of the necessary documentation, organising procurement, etc.
-The Vilnius Coalition Programme foresees the creation of a special fund for the renovation of multi-apartment buildings and the additional financing of renovation projects on top of the state support. This could encourage more residents to renovate their homes. If residents increasingly opt for panel renovation, this would speed up the modernisation of buildings, achieve energy efficiency of buildings and reduce GHG emissions.  |
+| The Vilnius Coalition Programme foresees the creation of a special fund for the renovation of multi-apartment buildings and the additional financing of renovation projects on top of the state support. This could encourage more residents to renovate their homes. If residents increasingly opt for panel renovation, this would speed up the modernisation of buildings, achieve energy efficiency of buildings and reduce GHG emissions.  |
 |  Connection to the Impact of the Actions | Field of Activity | Buildings and Related Infrastructure  |
 |   | Systematic Leverage | Governance and Policy  |
 |   | Results (Based on Table/Section B-1.1) | If residents increasingly opt for panel renovation, this would speed up the modernisation of buildings, achieve energy efficiency of buildings and reduce GHG emissions.  |
@@ -2341,7 +2341,7 @@ Action Plan by 2030
 | --- | --- | --- |
 |  Action Description | Action Name | P5 Promoting quarterly modernisation of residential buildings  |
 |   | Action Type | Soft Measure
-Indirect GHG Emission Reductions  |
+| Indirect GHG Emission Reductions  |
 |   | Action Description | The implementation of complex block renovation projects is one of the government's priorities. Renovating groups of multi-apartment buildings and other public buildings as well as improving the living environment, access roads, street lighting and other infrastructure leads to greater energy efficiency.
 The improvement of an entire block of multi-apartment buildings includes upgrading the above-ground and underground utilities and cleaning up the environment. Projects for partial funding can be prepared at national level.
 VCMA provides financial support to encourage block renovation through the neighbourhood programme. The municipality gives EUR 10 per square metre of undeveloped neighbourhood area.
@@ -2380,7 +2380,7 @@ B-2.2: Description of an Individual Action
 |  Action Description | Action Name | P6 Promoting the development of sustainable buildings  |
 | --- | --- | --- |
 |   | Action Type | Soft Measure
-Indirect GHG Emission Reductions  |
+| Indirect GHG Emission Reductions  |
 |   | Action Description | Promotion of the development of sustainable buildings by going beyond the minimum energy efficiency requirements for new buildings and applying the “lean, clean, green” principle.
 Once the Vilnius General Plan has been approved, all newly constructed or reconstructed buildings with a gross floor area > 5,000 sq. m must be certified according to a  |
 VILNIUS
@@ -2397,7 +2397,7 @@ Action Plan by 2030
 | --- | --- | --- |
 |  Action Description | Action Name | H1 Establishment of Vilnius Climate Neutrality Information and Consultancy Centre  |
 |   | Action Type | Soft Measure
-Indirect GHG Emission Reductions  |
+| Indirect GHG Emission Reductions  |
 |   | Action Description | To establish an interdisciplinary information and advice centre to educate the public on climate neutrality actions. This centre/platform would become an important knowledge hub providing guidance and information on how residents, businesses, etc. can contribute to mitigating the impacts of climate change in the city and adapting to a changing climate. It would provide information on the use of renewable energy sources, sustainable transport options, the  |
 |   |  | system of sustainable building certification criteria recognised in Lithuania or another country of the European Union, chosen by the builder. In Lithuania, the EU recognises the certification of buildings according to systems (standards) of sustainable development criteria. At the municipal level, it is proposed to draw up rules for the development of new sustainable buildings as a guideline for property developers.  |
 |  Connection to the Impact of the Actions | Field of Activity | Buildings and Related Infrastructure  |
@@ -2434,12 +2434,12 @@ Action Plan by 2030
 ,630.88 tCO2eq.
 (Note: includes the electricity consumption switch from fossil fuel to RES and increased use of electricity use in transport and heating sector)  |
 |   | Total Costs and Costs per Unit of CO2e | Total Capex: 200,000€
-EUR/tCO2e  |
+| EUR/tCO2e  |
 |  B-2.2: Description of an Individual Action  |   |   |
 | --- | --- | --- |
 |  Action Description | Action Name | H2 Establishment of Climate Fund  |
 |   | Action Type | Soft Measure
-Indirect GHG Emission Reductions  |
+| Indirect GHG Emission Reductions  |
 |   | Action Description | The main objective of the climate fund is to raise capital from the private/business sector to implement climate action. This will enable financial support to be provided to small-scale climate change mitigation initiatives. Ideas for these projects will be offered by city communities, businesses, and other stakeholders.  |
 |  Connection to the Impact of the Actions | Field of Activity | Interdisciplinary Action  |
 |   | Systematic Leverage | Interdisciplinary  |
@@ -3809,7 +3809,7 @@ Commitments of Vilnius Climate City Contract 2030
 | --- | --- | --- | --- | --- |
 |  Vilnius TECH | Academia (local / national level) | Academia | Dr. Adas Meškėnas | Vice-rector  |
 |  Vilnius University Climate Change Group | Academia (local / national level) | Academia | Prof. Dr. Egidijus Rimkus
-Dr. Justinas Kilpys | Professor  |
+| Dr. Justinas Kilpys | Professor  |
 |  Vilnius College of Design and Technologies | Academia (local / national level) | Academia | Rolandas Vitkūnas | Director  |
 8
 

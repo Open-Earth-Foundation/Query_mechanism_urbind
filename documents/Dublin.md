@@ -2482,16 +2482,9 @@ C
 |  Irish University Association | The Irish Universities Association is the representative voice of Ireland's research intensive, enterprise engaged, public universities.  |
 |  Digital Hub | The Digital Hub is a cluster of technology, digital media and internet companies in The Liberties area of Dublin, Ireland. The hub consists of almost 75 companies located in eight buildings, collectively employing 700 people.  |
 |  Dog Patch Labs | Dogpatch Labs is a startup hub, located in the historic chq Building and in the heart of Dublin's Digital Docklands. Dog Patch Lab's mission is to accelerate the development of Ireland's startup ecosystem by providing a valuable  |
-9
-Climate Neutrality Action Plan
-
 |   |  | community from where you can grow, share knowledge and form connections. |   |
 | --- | --- | --- | --- |
 |   |  Dublin City Education and Training Board | CETB provides, supports and coordinates education, training and youth services in Dublin City. Through the CETB services, there is a pathway for every learner. CETB promote Climate Action across a number of initiatives including Green Skills micro qualifications. |   |
-
-0
-Climate Neutrality Action Plan
-
 |  Domain | Energy Systems |   |   |   |   |   | Mobility & Transport |   |   |   |   |   | Waste & Circular Economy |   |   |   |   |   | NSS and Green Infrastructure |   |   |   |   |   | Built Environment  |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Levers | TI | GP | SI | DP | FF | LC | TI | GP | SI | DP | FF | LC | TI | GP | SI | DP | FF | LC | TI | GP | SI | DP | FF | LC | TI | GP | SI | DP | FF | LC  |

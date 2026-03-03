@@ -927,7 +927,7 @@ Crop production farms
 Ministry of Agriculture | Replacing existing technologies with more environmentally friendly ones (both in livestock and crop production) contributes to reducing GHG emissions.
 National regulations and incentives have an impact. | The interest is linked to nationally defined performance requirements and eligibility requirements. Low motivation for the need for investment and doubts about the return on investment.  |
 |  Political | Tauragė district municipality Mayor and Council
-Government of the Republic of Lithuania | Decisions are taken on ambitions, targets, commitments and measures. | The need to implement international commitments, national commitments, development vision, strategic objectives, etc.  |
+| Government of the Republic of Lithuania | Decisions are taken on ambitions, targets, commitments and measures. | The need to implement international commitments, national commitments, development vision, strategic objectives, etc.  |
 |  Institutional and organisational | Tauragė district municipal administration and subordinate bodies | It prepares proposals for decisions, coordinates process, implements decisions, and cooperates with various stakeholders. | The need to implement international commitments, national commitments, development vision, strategic objectives, etc., and accountability for implementation.  |
 |  Financial | Tauragė district municipality Mayor and Council
 Tauragė district municipal administration and its subordinate bodies
@@ -946,7 +946,7 @@ Climate Neutrality Action Plan
 |  System | Stakeholders | Implications for a city's climate neutral ambitions | Interest in achieving urban climate neutrality  |
 | --- | --- | --- | --- |
 |   |  | Businesses and citizens often need financial incentives to take the necessary actions.
-A financing system becomes essential to involve vulnerable groups. |   |
+| A financing system becomes essential to involve vulnerable groups. |   |
 |  Social | Residents
 Community organisations (including youth, vulnerable groups)
 Businesses (all sectors, including agriculture)
@@ -1178,7 +1178,7 @@ Plan
 # A-3.3: Description of systemic bottlenecks and opportunities – textual elements
 
 |   | pumps, no funding for connection to CHS).
-Lengthy preparation of project financing conditions. |   |
+| Lengthy preparation of project financing conditions. |   |
 | --- | --- | --- |
 |  Transport | Lack of data on fuel consumption (by fuel type) at municipal level.
 Consumer preference for the cheapest fuel type, reluctance to pay more for cleaner fuels.
@@ -1647,7 +1647,7 @@ B-1.1: Impact pathways
 | --- | --- | --- | --- | --- | --- |
 |  Energy systems | Technology and infrastructure | Project preparation and implementation | Eliminating the use of fossil fuels for heat and hot water production | 13 061 | Reduced energy costs (compared to the current situation)  |
 |   |   |  Establishing the conditions necessary for the development of RES, preparing and implementing projects | Increasing the capacity and scale of RES production: harnessing solar energy |   | Increased energy independence from imported fossil fuels and electricity
-Improved air quality  |
+| Improved air quality  |
 |   |   |  Establishing the conditions necessary for the development of RES, preparing and implementing projects | Increasing the capacity and scale of RES production: harnessing wind energy |   |   |
 |   |  Governance and policy | Implementation of national legislation at municipal level (according to the mechanism provided for in the legislation) | Eliminating the use of fossil fuels for heat and hot water production |   |   |
 Tauragé
@@ -1714,7 +1714,7 @@ Better living conditions  |
 |   |  Social innovation | Data collection, processing, analysis and drawing conclusions | Reduced energy consumption  |   |   |
 |  |   |   |   |   |   |
 |  Agriculture | Technology and infrastructure | Changes in livestock feeding technology | Changes in livestock fermentation processes and reduced GHG emissions | 24 339 | Reducing air pollution
-Preserving biodiversity  |
+| Preserving biodiversity  |
 |   |   |  Increased amount of acidified manure and slurry | Reduced GHG emissions from the livestock sector  |   |   |
 |   |   |  Technological developments in manure and slurry management | Reduced GHG emissions from the livestock sector  |   |   |
 |   |   |  Implementation of new technologies | Reduction in fertiliser use  |   |   |
@@ -1952,15 +1952,15 @@ Replacing polluting buses owned by the municipality and its owned companies with
 Decarbonise the heavy polluting vehicles owned by the municipality and the companies it manages  |
 |  Optimising public transport routes | Mobility and transport | Does not directly contribute to the implementation of the actions foreseen but facilitates the implementation of the measures foreseen in other documents on the increased use of public transport. It also responds to the needs of the population regarding the use of public transport. | -  |
 |  Develop a concept and design principles for Tauragé as a cycling and walking city | Mobility and transport | Creates the conditions for developing the city in a way that encourages the use of non-motorised means of transport, such as walking, i.e. by discouraging the use of private cars. | Installation of a bicycle storage facility in the bus station area
-Installation of charging stations for non-motorised vehicles  |
+| Installation of charging stations for non-motorised vehicles  |
 |  Developing a strategy to raise awareness, sensitisation and education on waste management, sorting and recycling | Waste and circular economy | It would provide information and raise awareness, thus helping to sort waste properly, develop "Padék" stations, and provide suitable items. | Implementing control over the composition of municipal waste
-Developing the network of "Padék" stations in the region  |
+| Developing the network of "Padék" stations in the region  |
 |  Carrying out a survey of the population on their sorting habits | Waste and circular economy | It would provide information and raise awareness, thus helping to sort waste properly, develop "Padék" stations and provide suitable items. In the future, it could help to develop targeted measures (through iterations of the Action Plan) in the light of the survey results. | Implementing control over the composition of municipal waste
-Developing the network of "Padék" stations in the region  |
+| Developing the network of "Padék" stations in the region  |
 |  Optimising waste collection routes | Waste and circular economy | Fewer routes, lower costs and lower fuel consumption (not yet determinable). | -  |
 |  Feasibility study on the improvement of energy inefficient individual (1-2 flat) houses | Buildings | Creates the conditions for using the existing building stock to meet the needs of the municipality through energy efficiency. Allows for the analysis of the various options for use and the selection of the optimal one. | -  |
 |  Compensation for land research | AFOLU | It provides information on the fertility of the land, enabling optimum use of fertilisers and other farming options to conserve or improve the soil. | Development of precision fertilisation technologies (implementation of a national measure)
-Development of protein crops (implementation of a national measure)  |
+| Development of protein crops (implementation of a national measure)  |
 |  Organisation of information events on catch crops and their benefits for farmers | AFOLU | It provides information on which intercrops to choose for a specific purpose, allowing you to choose the optimal farming technology. | Promotion of initiatives to develop organic farming (certification)
 Promotion of organic farming (implementation of a national measure)
 Development of protein crops (implementation of a national measure)  |
@@ -1978,7 +1978,7 @@ Climate Neutrality Action Plan
 |  Name of action | Sector/area of activity | Description of the link/benefits | Related actions from the Action Portfolio  |
 | --- | --- | --- | --- |
 |  Provision of information on climate neutrality | AFOLU |  | farms (acidification of slurry) (implementation of a national measure)
-Investment support for the introduction of climate-smart farming practices on livestock holdings (slurry incorporation) (implementation of a national measure)  |
+| Investment support for the introduction of climate-smart farming practices on livestock holdings (slurry incorporation) (implementation of a national measure)  |
 |  On-site best practice workshops | AFOLU |  | Promotion of initiatives to develop organic farming (certification)
 Promotion of organic farming (implementation of a national measure)
 Development of precision fertilisation technologies (implementation of a national measure)
@@ -1987,7 +1987,7 @@ Sustainable horticulture and gardening (implementation of a national measure)
 Development of near-field technologies, in particular direct ploughing (implementation of a national measure)  |
 |  Implementation of activities on local farms to achieve climate neutrality | AFOLU |  |   |
 |  Inventorying the area of existing peatlands | AFOLU | Provide information on the situation of the areas within the area of the managed peatland and take decisions on their continued operation. | Decommissioning of undisturbed areas
-Rehabilitation of damaged wetland areas  |
+| Rehabilitation of damaged wetland areas  |
 |  Developing green infrastructure in urbanised environments (action in the Carbon Absorption Strategy) | AFOLU | A greening plan is being developed, which will include measures to increase greening. Provides a basis for including specific actions in future iterations of the Action Plan. | -  |
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
@@ -1998,12 +1998,12 @@ Rehabilitation of damaged wetland areas  |
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): project preparation and implementation
-Late changes (3-4 years): eliminating the use of fossil fuels for heat and hot water production  |
+| Late changes (3-4 years): eliminating the use of fossil fuels for heat and hot water production  |
 |  Implementation | Responsible bodies/person for implementation | UAB Tauragés šilumos tinklai  |
 |   |  Action scale & addressed entities | Heat pumps have a thermal output of 4,77 kW and an electrical output of 1,59 kW
-Residents and businesses supplied with heat  |
+| Residents and businesses supplied with heat  |
 |   |  Involved stakeholders | UAB Tauragés šilumos tinklai
-Tauragé district municipality  |
+| Tauragé district municipality  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Implementation period: 2025–2028  |
 |  Impact & cost | Generated renewable energy (if applicable) | 1,59 kW (solar power plant with cooling)  |
 Tauragé
@@ -2017,7 +2017,7 @@ Plan
 |   |  GHG emissions reduction estimate (total) per emission source sector | 2 410,0 tCO₂e (impact calculated in combination with the measure Total fossil fuel phase-out in district heating)  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO₂e unit | EUR 13 150 thousand
-116,1 Eur/tCO₂e (combined with the investment and impact of the measure Total fossil fuel phase-out in district heating)  |
+| 116,1 Eur/tCO₂e (combined with the investment and impact of the measure Total fossil fuel phase-out in district heating)  |
 |  |   |   |
 |  Action outline | Action name | Complete elimination of the use of fossil fuels for district heating  |
 |   |  Action type | Reducing the use of fossil fuels  |
@@ -2025,11 +2025,11 @@ Plan
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): project preparation and implementation
-Late changes (3-4 years): eliminating the use of fossil fuels for heat and hot water production  |
+| Late changes (3-4 years): eliminating the use of fossil fuels for heat and hot water production  |
 |  Implementation | Responsible bodies/person for implementation | UAB Tauragės šilumos tinklai  |
 |   |  Action scale & addressed entities | UAB Tauragės šilumos tinklai  |
 |   |  Involved stakeholders | UAB Tauragės šilumos tinklai
-Tauragė district municipality  |
+| Tauragė district municipality  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Implementation period: 2025–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 |   |  Removed/substituted energy, volume, or fuel type | Shale oil - 1 826 MWh
@@ -2038,7 +2038,7 @@ Marked diesel - 58 MWh  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 2 410,0 tCO₂e (impact calculated in combination with the measure Installation of thermal collectors for hot water and solar collectors)  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO₂e unit | EUR 4 000 thousand
-116,1 Eur/tCO₂e (together with the investment and impact of the measure Installation of thermal collectors for hot water and solar collectors)  |
+| 116,1 Eur/tCO₂e (together with the investment and impact of the measure Installation of thermal collectors for hot water and solar collectors)  |
 |  |   |   |
 |  Action outline | Action name | Decarbonisation of heat production in the industrial sector  |
 |   |  Action type | Reducing the use of fossil fuels  |
@@ -2055,9 +2055,9 @@ Climate Neutrality Action Plan
 |  Reference to impact pathway | Systemic lever | Technology and infrastructure  |
 | --- | --- | --- |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): project preparation and implementation
-Late changes (3-4 years): eliminating the use of fossil fuels for heat and hot water production  |
+| Late changes (3-4 years): eliminating the use of fossil fuels for heat and hot water production  |
 |  Implementation | Responsible bodies/person for implementation | UAB Tauragės šilumos tinklai
-Business enterprises  |
+| Business enterprises  |
 |   |  Action scale & addressed entities | Natural gas (for heating of buildings) - 3 426 MWh
 Liquefied petroleum gas (for heating buildings) - 404 MWh
 Business/industrial entities  |
@@ -2067,7 +2067,7 @@ Tauragė district municipality  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Implementation period: 2025–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 |   |  Removed/substituted energy, volume, or fuel type | Natural gas (for heating of buildings) - 3 426 MWh
-Liquefied petroleum gas (for heating buildings) - 404 MWh  |
+| Liquefied petroleum gas (for heating buildings) - 404 MWh  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 780,4 t CO₂e  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO₂e unit | Under evaluation  |
@@ -2078,13 +2078,13 @@ Liquefied petroleum gas (for heating buildings) - 404 MWh  |
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   |  Systemic lever | Governance and policy  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): implementation of national legislation at municipal level (according to the mechanism provided for in the legislation)
-Late changes (3-4 years): eliminating the use of fossil fuels for heat and hot water production  |
+| Late changes (3-4 years): eliminating the use of fossil fuels for heat and hot water production  |
 |  Implementation | Responsible bodies/person for implementation | Tauragė district municipality  |
 |   |  Action scale & addressed entities | Coal - 14 156 MWh
 Peat - 12 686 MWh
 Residents  |
 |   |  Involved stakeholders | Residents
-Tauragė district municipality  |
+| Tauragė district municipality  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Implementation period: 2025–2030  |
 #
 
@@ -2204,7 +2204,7 @@ Climate Neutrality Action Plan
 |   | GHG emissions compensated (natural or technological sinks) | -  |
 | --- | --- | --- |
 |   |  Total costs and costs by CO₂e unit | EUR 6 824,1 thousand
-697,2 Eur/ t CO₂e  |
+| 697,2 Eur/ t CO₂e  |
 |  Action outline | Action name | Development of energy production from RES (legal entities)  |
 |   |  Action type | Increase the production and consumption of energy production from renewable resources  |
 |   |  Action description | Developing solar parks for legal entities (generating consumers)
@@ -2214,18 +2214,18 @@ Development of solar power plants for legal entities (producing consumers)  |
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): establishing the conditions necessary for the development of RES, preparing and implementing projects
-Late changes (3-4 years): increasing the capacity and scale of RES production – harnessing solar energy  |
+| Late changes (3-4 years): increasing the capacity and scale of RES production – harnessing solar energy  |
 |  Implementation | Responsible bodies/person for implementation | Legal entities  |
 |   |  Action scale & addressed entities | Legal entities  |
 |   |  Involved stakeholders | Legal entities
-Electricity Distribution Operator (ESO)  |
+| Electricity Distribution Operator (ESO)  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Implementation period: 2025–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | 5,97 MW  |
 |   |  Removed/substituted energy, volume, or fuel type | -  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 36,4 t CO₂e  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO₂e unit | EUR 7 067,4 thousand
-220,8 Eur/ t CO₂e  |
+| 220,8 Eur/ t CO₂e  |
 |  Action outline | Action name | Development of solar power plants in UAB Tauragės vandenys  |
 |   |  Action type | Increase the production and consumption of energy production from renewable resources  |
 |   |  Action description | Installation of solar power plants on the territory of UAB Tauragės vandenys.  |
@@ -2240,11 +2240,11 @@ Climate Neutrality Action Plan
 4
 
 |   | Outcome (according to module B-1.1) | Early changes (1-2 years): establishing the conditions necessary for the development of RES, preparing and implementing projects
-Late changes (3-4 years): increasing the capacity and scale of RES production – harnessing solar energy  |
+| Late changes (3-4 years): increasing the capacity and scale of RES production – harnessing solar energy  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | UAB Tauragės vandenys  |
 |   |  Action scale & addressed entities | Three solar power plants with a total capacity of 650 kW.
-UAB Tauragės vandenys  |
+| UAB Tauragės vandenys  |
 |   |  Involved stakeholders | UAB Tauragės vandenys
 Tauragė district municipality
 Business enterprises  |
@@ -2254,7 +2254,7 @@ Business enterprises  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 4,0 t CO₂e  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO₂e unit | EUR 458,2 thousand
-646,3 Eur/ t CO₂e  |
+| 646,3 Eur/ t CO₂e  |
 |  |   |   |
 |  Action outline | Action name | **Development of wind power plants**  |
 |   |  Action type | Increase the production and consumption of energy production from renewable resources  |
@@ -2262,10 +2262,10 @@ Business enterprises  |
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): establishing the conditions necessary for the development of RES, preparing and implementing projects
-Late changes (3-4 years): increasing the capacity and scale of RES production – harnessing wind energy  |
+| Late changes (3-4 years): increasing the capacity and scale of RES production – harnessing wind energy  |
 |  Implementation | Responsible bodies/person for implementation | Business enterprises  |
 |   |  Action scale & addressed entities | 6 wind turbines
-Residents (national)  |
+| Residents (national)  |
 |   |  Involved stakeholders | Tauragė district municipality
 Residents
 Business enterprises  |
@@ -2321,7 +2321,7 @@ Climate Neutrality Action Plan
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   |  Systemic lever | Training and capacity  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): education, awareness-raising programmes and campaigns implemented
-Late changes (3-4 years): increase in production capacity and scale of RES  |
+| Late changes (3-4 years): increase in production capacity and scale of RES  |
 |  Implementation | Responsible bodies/person for implementation | Tauragė district municipality  |
 |   |  Action scale & addressed entities | Residents  |
 |   |  Involved stakeholders | Tauragė district municipality
@@ -2334,7 +2334,7 @@ Educational institutions  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 0 t CO₂e (no direct effect identified)  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO₂e unit | EUR 6 thousand
-Cost per CO₂e is not assessed  |
+| Cost per CO₂e is not assessed  |
 |  |   |   |
 |  Action outline | Action name | **Organisation of information meetings with owners of individual houses**  |
 |   |  Action type | Educate residents on clean energy issues  |
@@ -2342,7 +2342,7 @@ Cost per CO₂e is not assessed  |
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   |  Systemic lever | Training and capacity  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): organised events for owners of individual houses
-Late changes (3-4 years): increase in production capacity and scale of RES;  |
+| Late changes (3-4 years): increase in production capacity and scale of RES;  |
 |  Implementation | Responsible bodies/person for implementation | Tauragė district municipality  |
 |   |  Action scale & addressed entities | Residents (owners of individual houses)  |
 |   |  Involved stakeholders | Tauragė district municipality
@@ -2363,7 +2363,7 @@ Climate Neutrality Action Plan
 |   |  GHG emissions reduction estimate (total) per emission source sector | 0 t CO₂e (no direct effect identified)  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO₂e unit | EUR 3 thousand
-Cost per CO₂e is not assessed  |
+| Cost per CO₂e is not assessed  |
 |  **Transport**  |   |   |
 |  Action outline | Action name | Develop an information campaign to promote sustainable mobility or the purchase of sustainable vehicles  |
 |   |  Action type | Development of sustainable mobility/promoting the phasing out of passenger cars  |
@@ -2371,7 +2371,7 @@ Cost per CO₂e is not assessed  |
 |  Reference to impact pathway | Field of action | Mobility and transport  |
 |   |  Systemic lever | Training and capacity  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): education, awareness-raising programmes and campaigns implemented
-Late changes (3-4 years): increased number of journeys by non-motorised means of transport  |
+| Late changes (3-4 years): increased number of journeys by non-motorised means of transport  |
 |  Implementation | Responsible bodies/person for implementation | Tauragė district municipality  |
 |   |  Action scale & addressed entities | Residents  |
 |   |  Involved stakeholders | Tauragė district municipality
@@ -2390,7 +2390,7 @@ Climate Neutrality Action Plan
 |   | GHG emissions compensated (natural or technological sinks) | -  |
 | --- | --- | --- |
 |   | Total costs and costs by CO_{2}e unit | EUR 6 thousand
-Cost per CO_{2}e is not assessed  |
+| Cost per CO_{2}e is not assessed  |
 |  |   |   |
 |  Action outline | Action name | **Provide a shuttle service for residents**  |
 |   |  Action type | Development of sustainable mobility/promoting the phasing out of passenger cars  |
@@ -2398,19 +2398,19 @@ Cost per CO_{2}e is not assessed  |
 |  Reference to impact pathway | Field of action | Mobility and transport  |
 |   |  Systemic lever | Social innovation  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): services provided (transport) to vulnerable populations
-Late changes (3-4 years): reduction in fossil fuel consumption  |
+| Late changes (3-4 years): reduction in fossil fuel consumption  |
 |  Implementation | Responsible bodies/person for implementation | Tauragė district municipality  |
 |   |  Action scale & addressed entities | Residents
-Socially vulnerable residents  |
+| Socially vulnerable residents  |
 |   |  Involved stakeholders | Tauragė district municipality
-UAB Tauragės autobusų parkas  |
+| UAB Tauragės autobusų parkas  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Implementation period: 2025–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 |   |  Removed/substituted energy, volume, or fuel type | -  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 4,60 t CO_{2}e  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO_{2}e unit | EUR 445,0 thousand
-821,1 Eur/ t CO_{2}e  |
+| 821,1 Eur/ t CO_{2}e  |
 |  |   |   |
 |  Action outline | Action name | **Install cycle paths in remote settlements, near recreational areas, garden communities**  |
 |   |  Action type | Development of sustainable mobility/promoting the phasing out of passenger cars  |
@@ -2428,10 +2428,10 @@ Climate Neutrality Action Plan
 |  Reference to impact pathway | Field of action | Mobility and transport  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): bicycle lane installed
-Late changes (3-4 years): increased number of journeys by non-motorised means of transport  |
+| Late changes (3-4 years): increased number of journeys by non-motorised means of transport  |
 |  Implementation | Responsible bodies/person for implementation | Tauragė district municipality  |
 |   |  Action scale & addressed entities | About 86 km of cycle paths (Via Lithuania – 66 km, Tauragė district municipality – 20 km)
-Residents  |
+| Residents  |
 |   |  Involved stakeholders | Tauragė district municipality
 Residents
 Garden communities
@@ -2443,7 +2443,7 @@ Via Lithuania  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 2 802,41 t CO₂e (is counted together with the following measures: Installation of bicycle storage in the bus station area, Provision of bicycle transport service in public and intercity bus transport, Taxed car parking in the city centre, Installation of charging stations for non-motorized vehicles)  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO₂e unit | EUR 22 449,0 thousand
-037,9 Eur/ t CO₂e (is counted together with the following measures: Installation of bicycle storage in the bus station area, Provision of bicycle transport service in public and intercity bus transport, Taxed car parking in the city centre, Installation of charging stations for non-motorized vehicles)  |
+| 037,9 Eur/ t CO₂e (is counted together with the following measures: Installation of bicycle storage in the bus station area, Provision of bicycle transport service in public and intercity bus transport, Taxed car parking in the city centre, Installation of charging stations for non-motorized vehicles)  |
 |  |   |   |
 |  Action outline | Action name | Provision of bicycle storage in the bus station area  |
 |   |  Action type | Promoting the abandonment of passenger cars  |
@@ -2451,7 +2451,7 @@ Via Lithuania  |
 |  Reference to impact pathway | Field of action | Mobility and transport  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): infrastructure for non-motorised vehicle users
-Late changes (3-4 years): increased number of journeys by non-motorised means of transport  |
+| Late changes (3-4 years): increased number of journeys by non-motorised means of transport  |
 |  Implementation | Responsible bodies/person for implementation | Tauragė district municipality  |
 Tauragé
 
@@ -2462,17 +2462,17 @@ Climate Neutrality Action Plan
 0
 
 |   | Action scale & addressed entities | Residents
-Tourists  |
+| Tourists  |
 | --- | --- | --- |
 |   |  Involved stakeholders | Tauragė district municipality
-Business enterprises  |
+| Business enterprises  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Implementation period: 2026  |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 |   |  Removed/substituted energy, volume, or fuel type | -  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 2 802,41 t CO₂e (is counted together with the following measures: Installation of bicycle storage in the bus station area, Provision of bicycle transport service in public and intercity bus transport, Taxed car parking in the city centre, Installation of charging stations for non-motorized vehicles)  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO₂e unit | EUR 20,9 thousand
-037,9 Eur/ t CO₂e (is counted together with the following measures: Installation of bicycle storage in the bus station area, Provision of bicycle transport service in public and intercity bus transport, Taxed car parking in the city centre, Installation of charging stations for non-motorized vehicles)  |
+| 037,9 Eur/ t CO₂e (is counted together with the following measures: Installation of bicycle storage in the bus station area, Provision of bicycle transport service in public and intercity bus transport, Taxed car parking in the city centre, Installation of charging stations for non-motorized vehicles)  |
 |  |   |   |
 |  Action outline | Action name | **Provision of a bicycle transport service on public and intercity bus transport**  |
 |   |  Action type | Promoting the abandonment of passenger cars  |
@@ -2480,10 +2480,10 @@ Business enterprises  |
 |  Reference to impact pathway | Field of action | Mobility and transport  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): infrastructure for non-motorised vehicle users
-Late changes (3-4 years): increased number of journeys by non-motorised means of transport  |
+| Late changes (3-4 years): increased number of journeys by non-motorised means of transport  |
 |  Implementation | Responsible bodies/person for implementation | UAB Tauragės autobusų parkas  |
 |   |  Action scale & addressed entities | Residents
-Tourists  |
+| Tourists  |
 |   |  Involved stakeholders | UAB Tauragės autobusų parkas
 Tauragė district municipality
 Residents
@@ -2510,7 +2510,7 @@ Climate Neutrality Action Plan
 |  Reference to impact pathway | Field of action | Mobility and transport  |
 |   |  Systemic lever | Finance and funding  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): implementation of the taxation system
-Late changes (3-4 years): reduction in fossil fuel consumption  |
+| Late changes (3-4 years): reduction in fossil fuel consumption  |
 |  Implementation | Responsible bodies/person for implementation | Tauragė district municipality  |
 |   |  Action scale & addressed entities | Tauragė district municipality  |
 |   |  Involved stakeholders | Tauragė district municipality  |
@@ -2528,7 +2528,7 @@ Plan
 | --- | --- | --- |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO_{2}e unit | EUR 35,5 thousand
-037,9 Eur/ t CO_{2}e (is counted together with the following measures: Installation of bicycle storage in the bus station area, Provision of bicycle transport service in public and intercity bus transport, Taxed car parking in the city centre, Installation of charging stations for non-motorized vehicles)  |
+| 037,9 Eur/ t CO_{2}e (is counted together with the following measures: Installation of bicycle storage in the bus station area, Provision of bicycle transport service in public and intercity bus transport, Taxed car parking in the city centre, Installation of charging stations for non-motorized vehicles)  |
 |  |   |   |
 |  Action outline | Action name | Installation of charging stations for non-motorised vehicles  |
 |   |  Action type | Promoting the abandonment of passenger cars  |
@@ -2536,10 +2536,10 @@ Plan
 |  Reference to impact pathway | Field of action | Mobility and transport  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): infrastructure for non-motorised vehicle users
-Late changes (3-4 years): increased number of journeys by non-motorised means of transport  |
+| Late changes (3-4 years): increased number of journeys by non-motorised means of transport  |
 |  Implementation | Responsible bodies/person for implementation | Tauragė district municipality  |
 |   |  Action scale & addressed entities | Residents
-Tourists  |
+| Tourists  |
 |   |  Involved stakeholders | Tauragė district municipality
 Business enterprises
 Residents  |
@@ -2563,18 +2563,18 @@ Plan
 |  Reference to impact pathway | Field of action | Mobility and transport  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): increase in the number of clean transport
-Late changes (3-4 years): reduction in fossil fuel consumption  |
+| Late changes (3-4 years): reduction in fossil fuel consumption  |
 |  Implementation | Responsible bodies/person for implementation | Tauragė district municipality  |
 |   |  Action scale & addressed entities | Tauragė district municipality entities  |
 |   |  Involved stakeholders | Tauragė district municipality
-Tauragė district municipality entities  |
+| Tauragė district municipality entities  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Implementation period: 2025–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 |   |  Removed/substituted energy, volume, or fuel type | -  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 0 tCO2e (no direct reduction in GHG emissions)  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO2e unit | EUR 70,0 thousand
-Cost per CO2e not assessed  |
+| Cost per CO2e not assessed  |
 |  |   |   |
 |  Action outline | Action name | Establishment of an electric car hub in Tauragė district municipality  |
 |   |  Action type | Decarbonization and optimization of the transport fleet  |
@@ -2598,7 +2598,7 @@ Plan
 |  Reference to impact pathway | Field of action | Mobility and transport  |
 |   |  Systemic lever | Governance and policy  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): creating a hub for electric cars
-Late changes (3-4 years): reduction in fossil fuel consumption  |
+| Late changes (3-4 years): reduction in fossil fuel consumption  |
 |  Implementation | Responsible bodies/person for implementation | Tauragė district municipality
 Businesses working in the field of sales and repair of electric cars
 Educational institutions  |
@@ -2606,7 +2606,7 @@ Educational institutions  |
 Educational institutions
 Residents  |
 |   |  Involved stakeholders | Businesses working in the field of sales and repair of electric cars
-Educational institutions  |
+| Educational institutions  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Implementation period: 2025–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 |   |  Removed/substituted energy, volume, or fuel type | -  |
@@ -2694,7 +2694,7 @@ Plan
 |   |  GHG emissions reduction estimate (total) per emission source sector | 0 t CO₂e (no direct effect identified)  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO₂e unit | EUR 50 thousand
-Cost per CO₂e is not assessed  |
+| Cost per CO₂e is not assessed  |
 |  |   |   |
 |  Action outline | Action name | **Replacement of polluting vehicles owned by the municipality and the companies it manages with new non-polluting vehicles**  |
 |   |  Action type | Decarbonization and optimization of the transport fleet  |
@@ -2702,12 +2702,12 @@ Cost per CO₂e is not assessed  |
 |  Reference to impact pathway | Field of action | Mobility and transport  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): increase in the number of clean transport
-Late changes (3-4 years): reduction in fossil fuel consumption  |
+| Late changes (3-4 years): reduction in fossil fuel consumption  |
 |  Implementation | Responsible bodies/person for implementation | Tauragė district municipality  |
 |   |  Action scale & addressed entities | Tauragė district municipality
-Tauragė district municipal entities  |
+| Tauragė district municipal entities  |
 |   |  Involved stakeholders | Tauragė district municipality
-Tauragė district municipal entities  |
+| Tauragė district municipal entities  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Implementation period: 2025–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 |   |  Removed/substituted energy, volume, or fuel type | -  |
@@ -2728,19 +2728,19 @@ Plan
 |  Reference to impact pathway | Field of action | Mobility and transport  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): increase in the number of clean transport
-Late changes (3-4 years): reduction in fossil fuel consumption  |
+| Late changes (3-4 years): reduction in fossil fuel consumption  |
 |  Implementation | Responsible bodies/person for implementation | Tauragė district municipality  |
 |   |  Action scale & addressed entities | Tauragė district municipality
-Tauragė district municipal entities  |
+| Tauragė district municipal entities  |
 |   |  Involved stakeholders | Tauragė district municipality
-Tauragė district municipal entities  |
+| Tauragė district municipal entities  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Implementation period: 2025–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 |   |  Removed/substituted energy, volume, or fuel type | -  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 1 046,7 t CO₂e  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO₂e unit | EUR 13 800,0 thousand
-184,3 Eur/ t CO₂e  |
+| 184,3 Eur/ t CO₂e  |
 |  |   |   |
 |  Action outline | Action name | Decarbonise the heavy polluting vehicles owned by the municipality and the companies it manages  |
 |   |  Action type | Decarbonization and optimization of the transport fleet  |
@@ -2748,7 +2748,7 @@ Tauragė district municipal entities  |
 |  Reference to impact pathway | Field of action | Mobility and transport  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): increase in the number of clean transport
-Late changes (3-4 years): reduction in fossil fuel consumption  |
+| Late changes (3-4 years): reduction in fossil fuel consumption  |
 |  Implementation | Responsible bodies/person for implementation | Tauragė district municipality  |
 |   |  Action scale & addressed entities | Tauragė district municipality
 Tauragė district municipal entities  |
@@ -2763,7 +2763,7 @@ Plan
 O
 
 |   | Involved stakeholders | Tauragé district municipality
-Tauragé district municipal entities  |
+| Tauragé district municipal entities  |
 | --- | --- | --- |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Implementation period: 2025–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
@@ -2771,7 +2771,7 @@ Tauragé district municipal entities  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 384,5 t CO2e  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO2e unit | EUR 1 995,7 thousand
-190,3 Eur/ t CO2e  |
+| 190,3 Eur/ t CO2e  |
 |  |   |   |
 |  Action outline | Action name | Optimising public transport routes  |
 |   |  Action type | Decarbonization and optimization of the transport fleet  |
@@ -2779,9 +2779,9 @@ Tauragé district municipal entities  |
 |  Reference to impact pathway | Field of action | Mobility and transport  |
 |   |  Systemic lever | Social innovation  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): services provided (transport) to vulnerable populations
-Late changes (3-4 years): reduction in fossil fuel consumption  |
+| Late changes (3-4 years): reduction in fossil fuel consumption  |
 |  Implementation | Responsible bodies/person for implementation | UAB Tauragé buses
-Green region public enterprise  |
+| Green region public enterprise  |
 |   |  Action scale & addressed entities | Residents  |
 |   |  Involved stakeholders | Residents
 UAB Tauragé buses
@@ -2810,18 +2810,18 @@ Climate Neutrality Action Plan
 |  Reference to impact pathway | Field of action | Mobility and transport  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early developments (1-2 years): infrastructure for non-motorised users in place
-Late changes (3-4 years): Increased number of trips made by non-motorised means  |
+| Late changes (3-4 years): Increased number of trips made by non-motorised means  |
 |  Implementation | Responsible bodies/person for implementation | Tauragė district municipality  |
 |   |  Action scale & addressed entities | Residents  |
 |   |  Involved stakeholders | Tauragė district municipality
-Residents  |
+| Residents  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Implementation period: 2025-2026  |
 |  Impact & cost | Generated renewable energy (if applicable) | –  |
 |   |  Removed/substituted energy, volume, or fuel type | –  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 0 t CO2e (no direct reduction in GHG emissions)  |
 |   |  GHG emissions compensated (natural or technological sinks) | –  |
 |   |  Total costs and costs by CO2e unit | EUR 30 thousand
-Costs per CO2e not assessed  |
+| Costs per CO2e not assessed  |
 |  Waste and circular economy  |   |   |
 |  Action outline | Action name | Implementing control over the composition of municipal waste  |
 |   |  Action type | Reducing waste disposal in landfills  |
@@ -2829,7 +2829,7 @@ Costs per CO2e not assessed  |
 |  Reference to impact pathway | Field of action | Waste and circular economy  |
 |   |  Systemic lever | Governance and policy  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): reduction of waste going to landfill as a result of controls
-Late changes (3-4 years): increased waste sorting and recycling  |
+| Late changes (3-4 years): increased waste sorting and recycling  |
 |  Implementation | Responsible bodies/person for implementation | TRWMC  |
 |   |  Action scale & addressed entities | Residents
 Apartment building communities
@@ -2852,7 +2852,7 @@ Business enterprises  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 1032,3 t CO₂e  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO₂e unit | EUR 316,8 thousand
-,9 Eur/ t CO₂e  |
+| ,9 Eur/ t CO₂e  |
 |  |   |   |
 |  Action outline | Action name | **Developing the network of "Padėk" stations in the region**  |
 |   |  Action type | Reducing waste disposal in landfills  |
@@ -2860,11 +2860,11 @@ Business enterprises  |
 |  Reference to impact pathway | Field of action | Waste and circular economy  |
 |   |  Systemic lever | Social innovation  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): reduced waste to landfill through sharing
-Late changes (3-4 years): increased waste sorting and recycling  |
+| Late changes (3-4 years): increased waste sorting and recycling  |
 |  Implementation | Responsible bodies/person for implementation | TRWMC
-Communities  |
+| Communities  |
 |   |  Action scale & addressed entities | 11 stops (1 - TRWMC, 10 - Communities)
-Residents  |
+| Residents  |
 |   |  Involved stakeholders | TRWMC
 Tauragė district municipality
 Residents
@@ -2882,7 +2882,7 @@ Plan
 | --- | --- | --- |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO₂e unit | EUR 113,0 thousand
-210,2 Eur/ t CO₂e  |
+| 210,2 Eur/ t CO₂e  |
 |  |   |   |
 |  Action outline | Action name | **Incineration of non-recyclable waste**  |
 |   |  Action type | Reducing waste disposal in landfills  |
@@ -2890,7 +2890,7 @@ Plan
 |  Reference to impact pathway | Field of action | Waste and circular economy  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): reduction of waste going to landfill as a result of controls
-Late changes (3-4 years): increased waste sorting and recycling  |
+| Late changes (3-4 years): increased waste sorting and recycling  |
 |  Implementation | Responsible bodies/person for implementation | TRWMC  |
 |   |  Action scale & addressed entities | TRWMC  |
 |   |  Involved stakeholders | TRWMC  |
@@ -2900,7 +2900,7 @@ Late changes (3-4 years): increased waste sorting and recycling  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 171,0 t CO₂e  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO₂e unit | EUR 109,1 thousand
-,2 Eur/ t CO₂e  |
+| ,2 Eur/ t CO₂e  |
 |  |   |   |
 |  Action outline | Action name | **Developing a strategy to raise awareness, sensitisation and education on waste management, sorting and recycling**  |
 |   |  Action type | Education in the field of circular economy  |
@@ -2927,7 +2927,7 @@ Residents  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 0 t CO_{2e} (no direct effect identified)  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO_{2e} unit | EUR 30 thousand
-Cost per CO_{2e} is not assessed  |
+| Cost per CO_{2e} is not assessed  |
 |  |   |   |
 |  Action outline | Action name | **Carrying out a survey of the population on their sorting habits**  |
 |   |  Action type | Education in the field of circular economy  |
@@ -2935,7 +2935,7 @@ Cost per CO_{2e} is not assessed  |
 |  Reference to impact pathway | Field of action | Waste and circular economy  |
 |   |  Systemic lever | Governance and policy  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): data collection, processing, analysis and drawing conclusions
-Late changes (3-4 years): increased waste sorting and recycling  |
+| Late changes (3-4 years): increased waste sorting and recycling  |
 |  Implementation | Responsible bodies/person for implementation | Tauragé district municipality  |
 |   |  Action scale & addressed entities | Residents  |
 |   |  Involved stakeholders | TRWMC
@@ -2956,17 +2956,17 @@ Climate Neutrality Action Plan
 |   |  GHG emissions reduction estimate (total) per emission source sector | 0 t CO₂e (no direct effect identified)  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO₂e unit | EUR 10 thousand
-Cost per CO₂e is not assessed  |
+| Cost per CO₂e is not assessed  |
 |  Action outline | Action name | Encouraging residents to install more environmentally friendly domestic wastewater treatment plants  |
 |   |  Action type | Changing domestic wastewater management methods  |
 |   |  Action description | Reimbursement of part of the costs incurred in installing an environmentally friendly/non-harmful domestic wastewater treatment plant. Compensation is provided to individuals.  |
 |  Reference to impact pathway | Field of action | Waste and circular economy  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): increase in the number of environmentally friendly domestic wastewater treatment plants
-Late changes (3-4 years): increase in the volume of wastewater treated in an environmentally friendly way and reduction of GHG emissions from domestic wastewater management  |
+| Late changes (3-4 years): increase in the volume of wastewater treated in an environmentally friendly way and reduction of GHG emissions from domestic wastewater management  |
 |  Implementation | Responsible bodies/person for implementation | Tauragė district municipality  |
 |   |  Action scale & addressed entities | 300 pcs. sewage treatment plants
-Residents  |
+| Residents  |
 |   |  Involved stakeholders | Tauragė district municipality
 Residents
 Business enterprises
@@ -2992,18 +2992,18 @@ Plan
 |  Reference to impact pathway | Field of action | Waste and circular economy  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): installation of gas collection infrastructure at a landfill site
-Late changes (3-4 years): reduction of direct gas emissions  |
+| Late changes (3-4 years): reduction of direct gas emissions  |
 |  Implementation | Responsible bodies/person for implementation | TRWMC  |
 |   |  Action scale & addressed entities | TRWMC  |
 |   |  Involved stakeholders | TRWMC
-Tauragė district municipality  |
+| Tauragė district municipality  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Implementation period: 2025–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 |   |  Removed/substituted energy, volume, or fuel type | -  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 1 800,2 t CO_{2}e  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO_{2}e unit | EUR 65,0 thousand
-,1 Eur/ t CO_{2}e  |
+| ,1 Eur/ t CO_{2}e  |
 |  |   |   |
 |  Action outline | Action name | **Utilisation of landfill gas for energy production**  |
 |   |  Action type | Gas collection at waste management sites  |
@@ -3011,11 +3011,11 @@ Tauragė district municipality  |
 |  Reference to impact pathway | Field of action | Waste and circular economy  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): installation of gas utilisation infrastructure at a landfill site
-Late changes (3-4 years): electricity generated from landfill gas and substitution of electricity generated by other means  |
+| Late changes (3-4 years): electricity generated from landfill gas and substitution of electricity generated by other means  |
 |  Implementation | Responsible bodies/person for implementation | TRWMC  |
 |   |  Action scale & addressed entities | TRWMC  |
 |   |  Involved stakeholders | TRWMC
-Tauragė district municipality  |
+| Tauragė district municipality  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Implementation period: 2025–2030  |
 Tauragé
 Rytojų kuriame šiandien!
@@ -3035,9 +3035,9 @@ Climate Neutrality Action Plan
 |  Reference to impact pathway | Field of action | Waste and circular economy  |
 |   |  Systemic lever | Governance and policy  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): reduced waste going to landfill
-Late changes (3-4 years): increased waste sorting and recycling  |
+| Late changes (3-4 years): increased waste sorting and recycling  |
 |  Implementation | Responsible bodies/person for implementation | Dunokai
-TRWMC  |
+| TRWMC  |
 |   |  Action scale & addressed entities | Residents  |
 |   |  Involved stakeholders | Dunokai
 TRWMC
@@ -3064,11 +3064,11 @@ Climate Neutrality Action Plan
 | --- | --- | --- |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): renovated apartment buildings
-Late changes (3-4 years): reduced energy consumption  |
+| Late changes (3-4 years): reduced energy consumption  |
 |  Implementation | Responsible bodies/person for implementation | UAB Tauragės šilumos tinklai
-Owners of apartment buildings  |
+| Owners of apartment buildings  |
 |   |  Action scale & addressed entities | 159 apartment blocks to be renovated
-Residents  |
+| Residents  |
 |   |  Involved stakeholders | UAB Tauragės šilumos tinklai
 Owners of apartment buildings
 Residents
@@ -3079,7 +3079,7 @@ Tauragė district municipality as change facilitator  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 1 582,7 t CO₂e  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO₂e unit | EUR 220 679,6 thousand
-429,1 Eur/ t CO₂e  |
+| 429,1 Eur/ t CO₂e  |
 |  |   |   |
 |  Action outline | Action name | **Renovation of public buildings (additional)**  |
 |   |  Action type | Increase energy efficiency  |
@@ -3087,7 +3087,7 @@ Tauragė district municipality as change facilitator  |
 |  Reference to impact pathway | Field of action | Buildings  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): renovated public buildings
-Late changes (3-4 years): reduced energy consumption  |
+| Late changes (3-4 years): reduced energy consumption  |
 |  Implementation | Responsible bodies/person for implementation | Tauragė district municipality  |
 |   |  Action scale & addressed entities | 14 buildings to be renovated
 Tauragė district municipality entities
@@ -3109,7 +3109,7 @@ Plan
 |   |  GHG emissions reduction estimate (total) per emission source sector | 139,4 t CO₂e  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO₂e unit | EUR 6 639,7 thousand
-644,0 Eur/ t CO₂e  |
+| 644,0 Eur/ t CO₂e  |
 |  |   |   |
 |  Action outline | Action name | Renovation/modernisation of one- or two-apartment dwellings  |
 |   |  Action type | Increase energy efficiency  |
@@ -3117,19 +3117,19 @@ Plan
 |  Reference to impact pathway | Field of action | Buildings  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): renovated detached houses (1-2 apartments)
-Late changes (3-4 years): reduced energy consumption  |
+| Late changes (3-4 years): reduced energy consumption  |
 |  Implementation | Responsible bodies/person for implementation | Residents  |
 |   |  Action scale & addressed entities | 300 houses planned to be renovated
-Residents  |
+| Residents  |
 |   |  Involved stakeholders | Residents
-Tauragė district municipality as facilitator  |
+| Tauragė district municipality as facilitator  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Implementation period: 2025–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 |   |  Removed/substituted energy, volume, or fuel type | -  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 756,6 t CO₂e  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO₂e unit | EUR 9 000 thousand
-894,9 Eur / t CO₂e  |
+| 894,9 Eur / t CO₂e  |
 |  |   |   |
 |  Action outline | Action name | Encouraging the renovation of individual houses (1-2 flats)  |
 |   |  Action type | Increase energy efficiency  |
@@ -3145,20 +3145,20 @@ Plan
 |  Reference to impact pathway | Field of action | Buildings  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): renovated detached houses (1-2 apartments)
-Late changes (3-4 years): reduced energy consumption  |
+| Late changes (3-4 years): reduced energy consumption  |
 |  Implementation | Responsible bodies/person for implementation | Tauragė district municipality
-Residents  |
+| Residents  |
 |   |  Action scale & addressed entities | 100 houses are planned to be renovated
-Residents  |
+| Residents  |
 |   |  Involved stakeholders | Tauragė district municipality
-Residents  |
+| Residents  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Implementation period: 2025–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 |   |  Removed/substituted energy, volume, or fuel type | -  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 252,2 t CO_{2e}  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO_{2e} unit | EUR 106,7 thousand
-,9 Eur / t CO_{2e}  |
+| ,9 Eur / t CO_{2e}  |
 |  |   |   |
 |  Action outline | Action name | **Feasibility study on the improvement of energy inefficient individual (1-2 flat) houses**  |
 |   |  Action type | Increase energy efficiency  |
@@ -3166,7 +3166,7 @@ Residents  |
 |  Reference to impact pathway | Field of action | Buildings  |
 |   |  Systemic lever | Social innovation  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): data collection, processing, analysis and drawing conclusions
-Late changes (3-4 years): reduced energy consumption  |
+| Late changes (3-4 years): reduced energy consumption  |
 |  Implementation | Responsible bodies/person for implementation | Tauragė district municipality  |
 |   |  Action scale & addressed entities | 1 study
 Residents  |
@@ -3187,7 +3187,7 @@ Socially vulnerable residents  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 0 t CO_{2}e (direct effect not identified)  |
 |   |  GHG emissions compensated (natural or technological sinks) |   |
 |   |  Total costs and costs by CO_{2}e unit | EUR 30 thousand
-Cost per CO_{2}e is not assessed  |
+| Cost per CO_{2}e is not assessed  |
 |  AFOLU  |   |   |
 |  Action outline | Action name | Banning fur farming (implementation of a nationally adopted decision)  |
 |   |  Action type | Reducing GHG emissions in animal husbandry  |
@@ -3195,7 +3195,7 @@ Cost per CO_{2}e is not assessed  |
 |  Reference to impact pathway | Field of action | AFOLU  |
 |   |  Systemic lever | Governance and policy  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): implementation of new technologies
-Late changes (3-4 years): reduced GHG emissions from the livestock sector  |
+| Late changes (3-4 years): reduced GHG emissions from the livestock sector  |
 |  Implementation | Responsible bodies/person for implementation | Breeders of fur animals  |
 |   |  Action scale & addressed entities | Breeders of fur animals  |
 |   |  Involved stakeholders | Breeders of fur animals (Business enterprises)
@@ -3213,7 +3213,7 @@ Plan
 1
 
 |   | Total costs and costs by CO₂e unit | EUR 111,9 thousand
-,8 Eur / t CO₂e  |
+| ,8 Eur / t CO₂e  |
 | --- | --- | --- |
 |  |   |   |
 |  Action outline | Action name | Promotion of the use of feed/supplements to reduce methane emissions in livestock production  |
@@ -3222,7 +3222,7 @@ Plan
 |  Reference to impact pathway | Field of action | AFOLU  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): changes in livestock feeding technology
-Late changes (3-4 years): changes in livestock fermentation processes and reduced GHG emissions  |
+| Late changes (3-4 years): changes in livestock fermentation processes and reduced GHG emissions  |
 |  Implementation | Responsible bodies/person for implementation | Tauragė district municipality  |
 |   |  Action scale & addressed entities | Farmers  |
 |   |  Involved stakeholders | Farmers
@@ -3236,7 +3236,7 @@ Tauragė district farmers union  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 1 144,8 t CO₂e  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO₂e unit | EUR 150,9 thousand
-,8 Eur / t CO₂e  |
+| ,8 Eur / t CO₂e  |
 |  |   |   |
 |  Action outline | Action name | Use of biological agents for manure and slurry treatment  |
 |   |  Action type | Reducing GHG emissions in animal husbandry  |
@@ -3264,7 +3264,7 @@ Tauragė district farmers union  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 1 085,3 t CO₂e (assessed together with the Investment support for the introduction of climate-friendly farming practices on livestock farms (acidification of slurry) (implementation of a national measure) and Investment support for the introduction of climate-smart farming practices on livestock holdings (slurry incorporation) (implementation of a national measure))  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO₂e unit | EUR 10,5 thousand
-,4 Eur / t CO₂e (assessed together with the Investment support for the introduction of climate-friendly farming practices on livestock farms (acidification of slurry) (implementation of a national measure) and Investment support for the introduction of climate-smart farming practices on livestock holdings (slurry incorporation) (implementation of a national measure))  |
+| ,4 Eur / t CO₂e (assessed together with the Investment support for the introduction of climate-friendly farming practices on livestock farms (acidification of slurry) (implementation of a national measure) and Investment support for the introduction of climate-smart farming practices on livestock holdings (slurry incorporation) (implementation of a national measure))  |
 |   |  |   |
 |  Action outline | Action name | Investment support for the introduction of climate-friendly farming practices on livestock farms (acidification of slurry) (implementation of a national measure)  |
 |   |  Action type | Reducing GHG emissions in animal husbandry  |
@@ -3272,7 +3272,7 @@ Tauragė district farmers union  |
 |  Reference to impact pathway | Field of action | AFOLU  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): technological developments in manure and slurry management
-Late changes (3-4 years): reduced GHG emissions from the livestock sector  |
+| Late changes (3-4 years): reduced GHG emissions from the livestock sector  |
 |  Implementation | Responsible bodies/person for implementation | Ministry of Agriculture of the Republic of Lithuania  |
 Tauragé
 Rytojų kuriame šiandien!
@@ -3291,7 +3291,7 @@ Tauragė district farmers union  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 1 085,3 t CO2e (to be assessed in conjunction with the measure Use of biological products for the treatment of manure and slurry and Investment support for the introduction of climate-friendly farming practices in livestock farming (slurry incorporation) (implementation of national measure)  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO2e unit | EUR 92,8 thousand
-,4 Eur/t CO2e (to be assessed in conjunction with the measure Use of biological preparations for the treatment of manure and slurry and Investment support for the introduction of climate-friendly farming practices on livestock farms (slurry incorporation) (implementation of national measure)  |
+| ,4 Eur/t CO2e (to be assessed in conjunction with the measure Use of biological preparations for the treatment of manure and slurry and Investment support for the introduction of climate-friendly farming practices on livestock farms (slurry incorporation) (implementation of national measure)  |
 |  |   |   |
 |  Action outline | Action name | Investment support for the introduction of climate-smart farming practices on livestock holdings (slurry incorporation) (implementation of a national measure)  |
 |   |  Action type | Reducing GHG emissions in animal husbandry  |
@@ -3299,7 +3299,7 @@ Tauragė district farmers union  |
 |  Reference to impact pathway | Field of action | AFOLU  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): technological developments in manure and slurry management
-Late changes (3-4 years): reduced GHG emissions from the livestock sector  |
+| Late changes (3-4 years): reduced GHG emissions from the livestock sector  |
 |  Implementation | Responsible bodies/person for implementation | Ministry of Agriculture of the Republic of Lithuania  |
 |   |  Action scale & addressed entities | Farmers  |
 |   |  Involved stakeholders | Ministry of Agriculture of the Republic of Lithuania
@@ -3327,7 +3327,7 @@ Plan
 |  Reference to impact pathway | Field of action | AFOLU  |
 |   |  Systemic lever | Finance and funding  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): increase in the amount of land surveys carried out
-Late changes (3-4 years): reduction in fertiliser use  |
+| Late changes (3-4 years): reduction in fertiliser use  |
 |  Implementation | Responsible bodies/person for implementation | Tauragė district municipality  |
 |   |  Action scale & addressed entities | Farmers  |
 |   |  Involved stakeholders | Tauragė district municipality
@@ -3346,7 +3346,7 @@ Plan
 |   | GHG emissions compensated (natural or technological sinks) |   |
 | --- | --- | --- |
 |   |  Total costs and costs by CO₂e unit | EUR 25 thousand
-Cost per CO₂e is not assessed  |
+| Cost per CO₂e is not assessed  |
 |  |   |   |
 |  Action outline | Action name | Organisation of information events on catch crops and their benefits for farmers  |
 |   |  Action type | Reducing the use of fertilizers  |
@@ -3354,9 +3354,9 @@ Cost per CO₂e is not assessed  |
 |  Reference to impact pathway | Field of action | AFOLU  |
 |   |  Systemic lever | Training and capacity  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): education, awareness-raising programmes and campaigns implemented
-Late changes (3-4 years): reduction in fertiliser use  |
+| Late changes (3-4 years): reduction in fertiliser use  |
 |  Implementation | Responsible bodies/person for implementation | Tauragė district farmers union
-Lithuanian Agricultural Advisory Service  |
+| Lithuanian Agricultural Advisory Service  |
 |   |  Action scale & addressed entities | Farmers  |
 |   |  Involved stakeholders | Tauragė district farmers union
 Lithuanian Agricultural Advisory Service
@@ -3369,7 +3369,7 @@ NGOs  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 0 t CO₂e (direct effect not assessed)  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO₂e unit | EUR 3 thousand
-Cost per CO₂e is not assessed  |
+| Cost per CO₂e is not assessed  |
 |  |   |   |
 |  Action outline | Action name | Promotion of initiatives to develop organic farming (certification)  |
 |   |  Action type | Reducing the use of fertilizers  |
@@ -3396,16 +3396,16 @@ Tauragė district farmers union |
 | GHG emissions reduction estimate (total) per emission source sector | 2 707,8 t CO₂e (evaluated together with the measure Promotion of organic farming (implementation of the national measure) |
 | GHG emissions compensated (natural or technological sinks) | - |
 | Total costs and costs by CO₂e unit | EUR 60 thousand
-662,3 Eur / t CO₂e (evaluated together with the measure Promotion of organic farming (implementation of the national measure) |
+| 662,3 Eur / t CO₂e (evaluated together with the measure Promotion of organic farming (implementation of the national measure) |
 | Action outline | Action name | Promotion of organic farming (implementation of the national measure) |
 | Action type | Reducing the use of fertilizers |
 | Action description | The measure is designed to promote organic farming. The measure will address the challenges of providing the population with quality food products, reducing negative environmental impacts, preserving biodiversity and maintaining the stability of ecosystems. |
 | Reference to impact pathway | Field of action | AFOLU |
 | Systemic lever | Finance and funding |
 | Outcome (according to module B-1.1) | Early changes (1-2 years): increase in the number of organic farms
-Late changes (3-4 years): reduction in fertiliser use |
+| Late changes (3-4 years): reduction in fertiliser use |
 | Implementation | Responsible bodies/person for implementation | Ministry of Agriculture of the Republic of Lithuania
-Tauragė district municipality |
+| Tauragė district municipality |
 | Action scale & addressed entities | Farmers |
 | Involved stakeholders | Ministry of Agriculture of the Republic of Lithuania
 Tauragė district municipality
@@ -3424,7 +3424,7 @@ Plan
 |   |  GHG emissions reduction estimate (total) per emission source sector | 2 707,8 t CO₂e (evaluated together with the measure Promotion of organic farming (implementation of the national measure)  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO₂e unit | EUR 9 856,6 thousand
-662,3 Eur / t CO₂e (evaluated together with the measure Promotion of organic farming (implementation of the national measure)  |
+| 662,3 Eur / t CO₂e (evaluated together with the measure Promotion of organic farming (implementation of the national measure)  |
 |  |   |   |
 |  Action outline | Action name | Development of precision fertilisation technologies (implementation of a national measure)  |
 |   |  Action type | Reducing the use of fertilizers  |
@@ -3432,7 +3432,7 @@ Plan
 |  Reference to impact pathway | Field of action | AFOLU  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): implementation of new technologies
-Late changes (3-4 years): reduction in fertiliser use  |
+| Late changes (3-4 years): reduction in fertiliser use  |
 |  Implementation | Responsible bodies/person for implementation | Ministry of Agriculture of the Republic of Lithuania  |
 |   |  Action scale & addressed entities | Farmers  |
 |   |  Involved stakeholders | Ministry of Agriculture of the Republic of Lithuania
@@ -3446,7 +3446,7 @@ Business enterprises  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 833,1 t CO₂e  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO₂e unit | EUR 145,8 thousand
-,1 Eur / t CO₂e  |
+| ,1 Eur / t CO₂e  |
 |  |   |   |
 |  Action outline | Action name | Development of protein crops (implementation of a national measure)  |
 Tauragé
@@ -3461,7 +3461,7 @@ Plan
 |  Reference to impact pathway | Field of action | AFOLU  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): implementation of new technologies
-Late changes (3-4 years): reduction in fertiliser use  |
+| Late changes (3-4 years): reduction in fertiliser use  |
 |  Implementation | Responsible bodies/person for implementation | Ministry of Agriculture of the Republic of Lithuania  |
 |   |  Action scale & addressed entities | Farmers  |
 |   |  Involved stakeholders | Ministry of Agriculture of the Republic of Lithuania
@@ -3474,7 +3474,7 @@ Farmers  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 3 511,80 t CO_{2}e  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO_{2}e unit | EUR 1 238,2 thousand
-,6 Eur / t CO_{2}e  |
+| ,6 Eur / t CO_{2}e  |
 |  Action outline | Action name | Information and advice on the application of sustainable farming methods (implementation of a national measure)  |
 |   |  Action type | Reducing the use of fertilizers  |
 |   |  Action description | The aim of the measure is to publicize the good practices of sustainable and sustainable farming in order to reduce the negative impact on soil, water, air and climate. The aim is to acquaint farmers with the implementation of ecological systems in accordance with the direct support measures of the CAP strategic plan 2023-2027 and using other policy instruments. It is planned to hold field days, information campaigns about soil-saving technologies, practices promoting more efficient use of fertilizers and plant protection products, and other climate-friendly agricultural activities. The tool also aims to improve the knowledge of farmers and fish  |
@@ -3489,7 +3489,7 @@ Plan
 |  Reference to impact pathway | Field of action | AFOLU  |
 |   |  Systemic lever | Training and capacity  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): education, awareness-raising programmes and campaigns implemented
-Late changes (3-4 years): reduction in fertiliser use  |
+| Late changes (3-4 years): reduction in fertiliser use  |
 |  Implementation | Responsible bodies/person for implementation | Ministry of Agriculture of the Republic of Lithuania  |
 |   |  Action scale & addressed entities | Farmers  |
 |   |  Involved stakeholders | Ministry of Agriculture of the Republic of Lithuania
@@ -3503,7 +3503,7 @@ NVO  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 0 t CO2e (no direct effect identified)  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO2e unit | EUR 266,9 thousand
-Cost per CO2e: not assessed  |
+| Cost per CO2e: not assessed  |
 |  |   |   |
 |  Action outline | Action name | Sustainable horticulture and gardening (implementation of a national measure)  |
 |   |  Action type | Reducing the use of fertilizers  |
@@ -3511,7 +3511,7 @@ Cost per CO2e: not assessed  |
 |  Reference to impact pathway | Field of action | AFOLU  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): implementation of new technologies
-Late changes (3-4 years): reduction in fertiliser use  |
+| Late changes (3-4 years): reduction in fertiliser use  |
 |  Implementation | Responsible bodies/person for implementation | Ministry of Agriculture of the Republic of Lithuania  |
 |   |  Action scale & addressed entities | Farmers  |
 Tauragé
@@ -3531,7 +3531,7 @@ Farmers  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 77,8 t CO₂e  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO₂e unit | EUR 106,8 thousand
-371,7 Eur / t CO₂e  |
+| 371,7 Eur / t CO₂e  |
 |  |   |   |
 |  Action outline | Action name | Development of near-field technologies, in particular direct ploughing (implementation of a national measure)  |
 |   |  Action type | Increasing carbon absorption  |
@@ -3539,7 +3539,7 @@ Farmers  |
 |  Reference to impact pathway | Field of action | AFOLU  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): implementation of new technologies
-Late changes (3-4 years): GHG reductions due to change of cultivation method (ploughing)  |
+| Late changes (3-4 years): GHG reductions due to change of cultivation method (ploughing)  |
 |  Implementation | Responsible bodies/person for implementation | Ministry of Agriculture of the Republic of Lithuania  |
 |   |  Action scale & addressed entities | Farmers  |
 |   |  Involved stakeholders | Ministry of Agriculture of the Republic of Lithuania
@@ -3605,11 +3605,11 @@ Plan
 |  Reference to impact pathway | Field of action | AFOLU  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): restoration of damaged wetlands
-Late changes (3-4 years): reduction of GHG emissions from exploited wetland land  |
+| Late changes (3-4 years): reduction of GHG emissions from exploited wetland land  |
 |  Implementation | Responsible bodies/person for implementation | UAB Klasmann-Deilmann Laukesa  |
 |   |  Action scale & addressed entities | UAB Klasmann-Deilmann Laukesa  |
 |   |  Involved stakeholders | UAB Klasmann-Deilmann Laukesa
-Tauragė district municipality  |
+| Tauragė district municipality  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Implementation period: 2025–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 |   |  Removed/substituted energy, volume, or fuel type | -  |
@@ -3631,9 +3631,9 @@ Plan
 |  Reference to impact pathway | Field of action | AFOLU  |
 |   |  Systemic lever | Training and capacity  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): education, awareness-raising programmes and campaigns implemented
-Late changes (3-4 years): increased implementation of new technologies  |
+| Late changes (3-4 years): increased implementation of new technologies  |
 |  Implementation | Responsible bodies/person for implementation | Tauragė district municipality
-Farmers  |
+| Farmers  |
 |   |  Action scale & addressed entities | Farmers
 Business enterprises
 Residents  |
@@ -3649,7 +3649,7 @@ NVO  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 0 t CO₂e (no direct effect identified)  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO₂e unit | EUR 3 thousand
-Cost per CO₂e is not assessed  |
+| Cost per CO₂e is not assessed  |
 |  |   |   |
 |  Action outline | Action name | **On-site best practice workshops**  |
 |   |  Action type | Climate neutrality awareness/education  |
@@ -3657,7 +3657,7 @@ Cost per CO₂e is not assessed  |
 |  Reference to impact pathway | Field of action | AFOLU  |
 |   |  Systemic lever | Training and capacity  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): education, awareness-raising programmes and campaigns implemented
-Late changes (3-4 years): increased implementation of new technologies  |
+| Late changes (3-4 years): increased implementation of new technologies  |
 |  Implementation | Responsible bodies/person for implementation | Tauragė district farmers union  |
 |   |  Action scale & addressed entities | Farmers  |
 |   |  Involved stakeholders | Tauragė district farmers union  |
@@ -3675,7 +3675,7 @@ Plan
 |   |  GHG emissions reduction estimate (total) per emission source sector | 0 t CO₂e (no direct effect identified)  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO₂e unit | EUR 6 thousand
-Cost per CO₂e is not assessed  |
+| Cost per CO₂e is not assessed  |
 |  |   |   |
 |  Action outline | Action name | **Implementation of activities on local farms to achieve climate neutrality**  |
 |   |  Action type | Climate neutrality awareness/education  |
@@ -3683,12 +3683,12 @@ Cost per CO₂e is not assessed  |
 |  Reference to impact pathway | Field of action | AFOLU  |
 |   |  Systemic lever | Training and capacity  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): education, awareness-raising programmes and campaigns implemented
-Late changes (3-4 years): increased implementation of new technologies  |
+| Late changes (3-4 years): increased implementation of new technologies  |
 |  Implementation | Responsible bodies/person for implementation | Tauragė district municipality
-Farmers  |
+| Farmers  |
 |   |  Action scale & addressed entities | Farmers  |
 |   |  Involved stakeholders | Tauragė district municipality
-Farmers  |
+| Farmers  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Implementation period: 2025–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 |   |  Removed/substituted energy, volume, or fuel type | -  |
@@ -3701,7 +3701,7 @@ Plan
 5
 
 |   | Total costs and costs by CO₂e unit | EUR 100 thousand
-Cost per CO₂e is not assessed  |
+| Cost per CO₂e is not assessed  |
 | --- | --- | --- |
 |  |   |   |
 |  Action outline | Action name | **Public education campaigns on healthy and environmentally friendly diets (implementation of national measure)**  |
@@ -3710,10 +3710,10 @@ Cost per CO₂e is not assessed  |
 |  Reference to impact pathway | Field of action | AFOLU  |
 |   |  Systemic lever | Training and capacity  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): education, awareness-raising programmes and campaigns implemented
-Late changes (3-4 years): increased consumption of produce from organic farms  |
+| Late changes (3-4 years): increased consumption of produce from organic farms  |
 |  Implementation | Responsible bodies/person for implementation | Ministry of Health of the Republic of Lithuania  |
 |   |  Action scale & addressed entities | Residents
-Educational institutions  |
+| Educational institutions  |
 |   |  Involved stakeholders | Ministry of Health of the Republic of Lithuania
 Tauragė district municipality
 Residents
@@ -3757,7 +3757,7 @@ Landowners  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 1 732,6 t CO2e  |
 |   |  GHG emissions compensated (natural or technological sinks) | –  |
 |   |  Total costs and costs by CO2e unit | EUR 54,4 thousand
-,4 Eur/ t CO2e  |
+| ,4 Eur/ t CO2e  |
 |  |   |   |
 |  Action outline | Action name | **Reimbursement of the cost of forest seedlings to encourage afforestation**  |
 |   |  Action type | Increasing carbon absorption (Residual emissions strategy, does not contribute to emission reduction strategies)  |
@@ -3765,7 +3765,7 @@ Landowners  |
 |  Reference to impact pathway | Field of action | Green infrastructure and nature-based solutions  |
 |   |  Systemic lever | Finance and funding  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): increased forest cover
-Late changes (3-4 years): increased GHG absorption  |
+| Late changes (3-4 years): increased GHG absorption  |
 |  Implementation | Responsible bodies/person for implementation | Tauragė district municipality  |
 |   |  Action scale & addressed entities | 50 ha
 Farmers
@@ -3787,7 +3787,7 @@ Plan
 |   |  GHG emissions reduction estimate (total) per emission source sector | -  |
 |   |  GHG emissions compensated (natural or technological sinks) | - 1 503,1 t CO_{2}e  |
 |   |  Total costs and costs by CO_{2}e unit | EUR 67,5 thousand
-,9 Eur / t CO_{2}e  |
+| ,9 Eur / t CO_{2}e  |
 |  |   |   |
 |  Action outline | Action name | **Developing green infrastructure in urbanised environments**  |
 |   |  Action type | Increasing carbon absorption (Residual emissions strategy, does not contribute to emission reduction strategies)  |
@@ -3795,10 +3795,10 @@ Plan
 |  Reference to impact pathway | Field of action | Carbon absorption  |
 |   |  Systemic lever | Governance and policy  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): Greening plan developed
-Late changes (3-4 years): increased level of greening  |
+| Late changes (3-4 years): increased level of greening  |
 |  Implementation | Responsible bodies/person for implementation | Tauragé district municipality  |
 |   |  Action scale & addressed entities | Residents
-Tourists  |
+| Tourists  |
 |   |  Involved stakeholders | Tauragé district municipality
 Residents
 Business enterprises  |
@@ -3825,10 +3825,10 @@ Climate Neutrality Action Plan
 |  Reference to impact pathway | Field of action | Carbon absorption  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): increased forest cover
-Late changes (3-4 years): increased GHG absorption  |
+| Late changes (3-4 years): increased GHG absorption  |
 |  Implementation | Responsible bodies/person for implementation | State Forest Enterprise Tauragés regional division  |
 |   |  Action scale & addressed entities | 50 ha
-Residents  |
+| Residents  |
 |   |  Involved stakeholders | State Forest Enterprise Tauragés regional division
 Tauragé district municipality
 Residents  |
@@ -3838,7 +3838,7 @@ Residents  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | -  |
 |   |  GHG emissions compensated (natural or technological sinks) | -1503,1 t CO₂e  |
 |   |  Total costs and costs by CO₂e unit | EUR 67,5 thousand
-,9 Eur / t CO₂e  |
+| ,9 Eur / t CO₂e  |
 |  |   |   |
 |  Action outline | Action name | Afforestation of private land (implementation of a national measure)  |
 |   |  Action type | Increase carbon absorption (Residual emissions strategy, does not contribute to emission reduction strategies)  |
@@ -3846,7 +3846,7 @@ Residents  |
 |  Reference to impact pathway | Field of action | Carbon absorption  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early change (1-2 years): implementation of new technologies on a wide range of land uses where economic activities take place
-Late changes (3-4 years): increased GHG absorption  |
+| Late changes (3-4 years): increased GHG absorption  |
 |  Implementation | Responsible bodies/person for implementation | Ministry of Agriculture of the Republic of Lithuania  |
 |   |  Action scale & addressed entities | Residents
 Landowners
@@ -3862,7 +3862,7 @@ Climate Neutrality Action Plan
 9
 
 |   |  | Landowners
-Farmers  |
+| Farmers  |
 | --- | --- | --- |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Implementation period: 2025-2027  |
 |  Impact & cost | Generated renewable energy (if applicable) | –  |
@@ -3870,7 +3870,7 @@ Farmers  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | –  |
 |   |  GHG emissions compensated (natural or technological sinks) | -1 957,8 t CO2e  |
 |   |  Total costs and costs by CO2e unit | EUR 174,5 thousand
-,1 Eur/ t CO2e  |
+| ,1 Eur/ t CO2e  |
 |  |   |   |
 |  Action outline | Action name | **Developing young forests (implementation of national measure)**  |
 |   |  Action type | Increasing carbon absorption (Residual emissions strategy, does not contribute to emission reduction strategies)  |
@@ -3878,10 +3878,10 @@ Farmers  |
 |  Reference to impact pathway | Field of action | Carbon absorption  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): implementation of new technologies on land used for a wide range of purposes (grassland, wetlands, forests, etc.) where farming activities take place
-Late changes (3-4 years): increased GHG absorption  |
+| Late changes (3-4 years): increased GHG absorption  |
 |  Implementation | Responsible bodies/person for implementation | Ministry of Agriculture of the Republic of Lithuania  |
 |   |  Action scale & addressed entities | State Forest Enterprise Tauragės regional division
-Forest owners  |
+| Forest owners  |
 |   |  Involved stakeholders | Ministry of Agriculture of the Republic of Lithuania
 Forest owners
 Farmers
@@ -3931,10 +3931,10 @@ Climate Neutrality Action Plan
 |  Reference to impact pathway | Field of action | Carbon absorption  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early changes (1-2 years): implementation of new technologies on land used for a wide range of purposes (grassland, wetlands, forests, etc.) where farming activities take place
-Late changes (3-4 years): increased GHG absorption  |
+| Late changes (3-4 years): increased GHG absorption  |
 |  Implementation | Responsible bodies/person for implementation | Ministry of Agriculture of the Republic of Lithuania  |
 |   |  Action scale & addressed entities | Landowners
-State Forest Enterprise Tauragė Regional Unit  |
+| State Forest Enterprise Tauragė Regional Unit  |
 |   |  Involved stakeholders | Ministry of Agriculture of the Republic of Lithuania
 Landowners
 Residents
@@ -4021,14 +4021,14 @@ Climate Neutrality Action Plan
 5
 
 |   | vehicles by individuals and legal entities
-Installation of charging stations for electric vehicles in households and in the industrial and business sector |  | cars in the vehicle fleet (excluding passenger cars owned by the municipality and the companies and institutions it manages) |  | last available year |  |   |
+| Installation of charging stations for electric vehicles in households and in the industrial and business sector |  | cars in the vehicle fleet (excluding passenger cars owned by the municipality and the companies and institutions it manages) |  | last available year |  |   |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |   |  T-3 | Part of the alternative-fuel articulated vehicles and buses |  | Increase compared to the last available year | Increase compared to 2025 | 16% |   |
 |   |  T-4 | Number of charging stations installed |  | Increase compared to the last available year | Increase compared to 2025 | At least 101 units |   |
 |   |  Study on the optimisation of light transport for municipalities and their institutions
-Replacement of polluting vehicles owned by the municipality and the companies it manages with new non-polluting vehicles | T-5 | Share of electric light-duty vehicles in the municipality and its institutions |  | Increase compared to the last available year | Increase compared to 2025 | 100%  |
+| Replacement of polluting vehicles owned by the municipality and the companies it manages with new non-polluting vehicles | T-5 | Share of electric light-duty vehicles in the municipality and its institutions |  | Increase compared to the last available year | Increase compared to 2025 | 100%  |
 |   |  Replacing polluting buses owned by the municipality and its owned companies with vehicles powered by cleaner fuels
-Replacement of polluting heavy goods vehicles owned by the municipality and its owned companies with vehicles powered by cleaner fuels | T-6 | Share of electric buses for the municipality and its institutions |  | Increase compared to the last available year | Increase compared to 2025 | 100%  |
+| Replacement of polluting heavy goods vehicles owned by the municipality and its owned companies with vehicles powered by cleaner fuels | T-6 | Share of electric buses for the municipality and its institutions |  | Increase compared to the last available year | Increase compared to 2025 | 100%  |
 |   |  Replacing polluting heavy vehicles owned by the municipality and its owned companies with vehicles running on cleaner fuels | T-7 | Municipality and its agencies' share of heavy-duty electric vehicles |  | Increase compared to the last available year | Increase compared to 2025 | 16%  |
 |   |  Install cycle paths in remote settlements, near recreational areas, garden communities | T-8 | Length of cycle paths installed (km) |  | Increase compared to the last available year | Increase compared to 2025 | 86 km  |
 |   |  Provision of bicycle storage in the bus station area | T-9 | Number of bicycle storage |  | 0 | 1 unit | 1 unit  |
@@ -4047,7 +4047,7 @@ Developing a strategy to raise awareness, sensitisation and education on waste m
 Carrying out a survey of the population on their sorting habits | A-2 | Proportion of municipal waste that is recovered and recycled |  | Reduction compared to the last available year | Reduction compared to 2025 | 60%  |
 |  Reduced waste going to landfill |  | A-3 | Proportion of waste going to landfill |  | Reduction compared to the last available year | Reduction compared to 2025 | 5%  |
 |  Reduced energy consumption | Renovation of multi-family houses (3 or more apartments) connected to district heating
-Renovation of multi-apartment buildings (3 or more apartments) not connected to a district heating system | R-1 | Number of renovated apartment buildings |  | Increase compared to the last available year | Increase compared to 2025 | At least 159 units  |
+| Renovation of multi-apartment buildings (3 or more apartments) not connected to a district heating system | R-1 | Number of renovated apartment buildings |  | Increase compared to the last available year | Increase compared to 2025 | At least 159 units  |
 |   |  Renovation of public buildings (additional) | R-2 | Number of public buildings renovated |  | Increase compared to the last available year | Increase compared to 2025 | At least 21 units  |
 |   |  Renovation/modernisation of one- or two-apartment dwellings of individuals.
 Encouraging the renovation of individual houses (1-2 flats)
@@ -4559,7 +4559,7 @@ Plan
 |  If yes, which co-benefit does it measure? | -  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | yes  |
 |  If yes, which action and impact pathway is it relevant for? | Reduced GHG emissions from the livestock sector
-Reduction in fertiliser use  |
+| Reduction in fertiliser use  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no  |
 |  **Data requirements** |   |
 |  Expected data source | Tauragé district municipality  |

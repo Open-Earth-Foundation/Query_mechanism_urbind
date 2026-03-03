@@ -1065,7 +1065,7 @@ Climate Neutrality Action Plan
 |   |  Varisco srl | Medium | High: has signed a Climate Agreement.  |
 |   |  1173 srl | Low | High: has signed a Climate Agreement.  |
 |  Research & Education | Fondazione Fenice (non-profit foundation) | Medium - Low | Medium-high: has participated in the carbon neutrality process
-Is a member of the Council of Innovation  |
+| Is a member of the Council of Innovation  |
 |   |  Galileo Visionary District | Medium - Low | Medium-high: is a member of the Council of Innovation  |
 |   |  Le Village by CA | Medium | Medium-high: is a member of the Council of Innovation  |
 |   |  Net Center | Low | High: has signed a Climate Agreement.  |
@@ -2393,7 +2393,7 @@ The information is also used as part of the organisation's Sustainability Report
 |  Units of measurement | Number  |
 |  Definition | This indicator measures the number of heat generation systems replaced.  |
 |  Calculation method | [No calculation]
-The figure is derived from the number of beneficiaries of the municipally/regionally managed calls.  |
+| The figure is derived from the number of beneficiaries of the municipally/regionally managed calls.  |
 |  Context  |   |
 |  The indicator does not directly measure the impact in terms of reducing climate-changing emissions. To calculate the reduction of climate-altering emissions, this (indirect) indicator must be accompanied by some additional information such as the prior and subsequent output of the plants replaced and the energy vector used. All this information can be derived from the applications filled in by the beneficiaries in order to access the incentives made available by Padova Council or the Veneto Region.
 The indicator indirectly measures a number of secondary benefits, including improved living comfort for the dwellings that will benefit from the incentives and improved air quality as a result of the progressive electrification of heating systems with the inclusion of heat pumps.
@@ -2413,7 +2413,7 @@ Climate Neutrality Action Plan
 |  Units of measurement | Number  |
 |  Definition | This indicator measures the number of people benefiting from organisational, economic or fiscal instruments that favour sustainable mobility options for commuting.  |
 |  Calculation method | [No calculation]
-The data is provided by stakeholders who are signatories of Climate Agreements or other entities with corporate mobility managers (including Padova Council) that prepare and implement the Commuting Plan  |
+| The data is provided by stakeholders who are signatories of Climate Agreements or other entities with corporate mobility managers (including Padova Council) that prepare and implement the Commuting Plan  |
 |  Context  |   |
 |  The indicator does not directly measure the impact in terms of reducing climate-changing emissions. To calculate the reduction of climate-changing emissions, this (indirect) indicator needs to be accompanied by some additional information such as the method of travel of the beneficiaries before and after the implementation of the policies in favour of sustainable forms of mobility. The emission impact data must also be accompanied by the kilometres travelled annually by the various vehicles. Since this indicator is difficult to collect, some standard coefficients may be applied during annual monitoring, assuming that each beneficiary reduces the percentage of kilometres driven by private car.
 This value indirectly measures some of the secondary benefits of sustainable mobility policies, including the reduction of rush-hour congestion, air and noise pollution, and improved living conditions for some workers.
@@ -2453,7 +2453,7 @@ The information is also used as part of the organisation's Sustainability Report
 |  Units of measurement | Approval of the founding measure  |
 |  Definition | The indicator measures the effective activation of a Low Emission Zone in Padova, limiting access to the city to the most polluting vehicles and thus reducing the kilometres travelled annually by private and lower Euro category cars.  |
 |  Calculation method | [No calculation]
-The indicator merely transposes the LEZ establishment measure  |
+| The indicator merely transposes the LEZ establishment measure  |
 |  Context  |   |
 |  The indicator does not directly measure the impact in terms of reducing climate-changing emissions. To calculate the reduction of climate-changing emissions, this (indirect) indicator must be accompanied by a precise assessment of the number of vehicles registered in Padova and in the neighbouring municipalities (gravitating around Padova) with restricted access to the city. The quantification must also take into account the carrier used by the vehicles covered by the measure. Since an exact calculation of the kilometres avoided thanks to this measure is impossible, an estimate will be made according to the number of vehicles with restricted access.
 By defining the number of vehicles that cannot enter the city, the indicator indirectly measures certain indirect impacts, including the reduction of noise pollution and the improvement of air quality in the city and the reduction of road congestion.
@@ -2489,7 +2489,7 @@ The information is also used as part of the organisation's Sustainability Report
 |  Calculation method | [Electricity consumption from certified green sources / Total electricity consumption in the area]  |
 |  Context  |   |
 |  The indicator does not directly measure the impact in terms of reducing climate-changing emissions. To calculate the reduction of climate-altering emissions, this (indirect) indicator must be associated with the value of the national energy mix in tCO₂eq/MWh provided by the Covenant of Mayors Office (COMo) in ANNEX 1 - Fuel Emission Factors Database.
-The indicator is able to fully assess the impact of the strategic action it refers to (strategic action 11) and is included in the Covenant of Mayors platform.  |   |
+| The indicator is able to fully assess the impact of the strategic action it refers to (strategic action 11) and is included in the Covenant of Mayors platform.  |   |
 |  Data collection requirements  |   |
 |  The data will be taken from the energy suppliers active in the municipality of Padova. All data sources will be local operators. It is expected that the indicator will be monitored annually and that there will be no issues retrieving the information. Questionnaires will be created to collect information in aggregate form.  |   |
 COMUNE di PADOVA
@@ -3004,10 +3004,10 @@ Climate Neutrality Action Plan
 |  Intervention name | Description | Barriers/opportunities | Stakeholders involved | Impact pathway | Foreseen co-benefits  |
 | --- | --- | --- | --- | --- | --- |
 |  Conducting of fact-finding investigations | The purpose of the investigations is to form a picture of the socioeconomic and cultural makeup of the City of Padova's residents, including in spatial terms (by neighbourhood). Urban psychosocial, financial and energy poverty indicators will also be developed, and these will be monitored to determine whether the transition under way is fair. | Difficulty in reaching citizens effectively and across the board
-Difficulty in engaging local stakeholders, Resistance to change. | University of Padova, more specifically its Department of Philosophy, Sociology, Education and Applied Psychology (FISPPA). Padova City Council | The in-depth analysis findings will allow us to map the urban population according to different characteristics to understand the strengths or, conversely, critical issues hindering active citizen engagement in the implementation of climate neutrality policies. | The analyses carried out by the University of Padova will allow us to have a good overview of the whole area in socioeconomic and cultural terms, and will help the local government execute targeted actions allowing for the diversity of the area within its boundary.
-The investigations will thus help manage the transition with innovative models and, thanks to actions tailored to the requirements of different segments of the population, will engage citizens and raise their awareness around sustainable practices, helping overcome the resistance to change that is often commonplace among the city's residents.  |
+| Difficulty in engaging local stakeholders, Resistance to change. | University of Padova, more specifically its Department of Philosophy, Sociology, Education and Applied Psychology (FISPPA). Padova City Council | The in-depth analysis findings will allow us to map the urban population according to different characteristics to understand the strengths or, conversely, critical issues hindering active citizen engagement in the implementation of climate neutrality policies. | The analyses carried out by the University of Padova will allow us to have a good overview of the whole area in socioeconomic and cultural terms, and will help the local government execute targeted actions allowing for the diversity of the area within its boundary. |
+| The investigations will thus help manage the transition with innovative models and, thanks to actions tailored to the requirements of different segments of the population, will engage citizens and raise their awareness around sustainable practices, helping overcome the resistance to change that is often commonplace among the city's residents.  |
 |  Launch of communication campaigns | Communication campaigns will be produced yearly to inform the public about Padova's path to climate neutrality, using different means and language to suit the intended target audience. | Difficulty in reaching citizens effectively and across the board
-Resistance to change | All stakeholders who have signed Climate Agreements will be involved given that the change will require a collective effort, which will be explained and notified to Padova's residents. | Over coming years, Padova will undergo a makeover on many fronts: much of the infrastructure will be modernized or created from scratch, and there will be construction sites dotted around the city. At the same time, efforts will be made to influence citizens' behaviours and habits, in line with the climate neutral goal. Communication campaigns will be conducted for this very reason, to explain the changes being made, and will be essential for citizen buy-in. | Communication campaigns will help overcome the general resistance to change, thanks to increased awareness and greater citizen engagement, also helping to raise residents' awareness around sustainable practices.  |
+| Resistance to change | All stakeholders who have signed Climate Agreements will be involved given that the change will require a collective effort, which will be explained and notified to Padova's residents. | Over coming years, Padova will undergo a makeover on many fronts: much of the infrastructure will be modernized or created from scratch, and there will be construction sites dotted around the city. At the same time, efforts will be made to influence citizens' behaviours and habits, in line with the climate neutral goal. Communication campaigns will be conducted for this very reason, to explain the changes being made, and will be essential for citizen buy-in. | Communication campaigns will help overcome the general resistance to change, thanks to increased awareness and greater citizen engagement, also helping to raise residents' awareness around sustainable practices.  |
 |  Appointment of carbon neutrality facilitators/mediators | These mediators, trained by the University of Padova, will be tasked with stimulating and facilitating the transition processes under way within their respective communities. They will mainly operate in neighbourhoods, schools and businesses. | Difficulty in reaching citizens effectively and across the board
 Resistance to change | University of Padova, AcegasApsAmga S.p.A., Neighbourhood consultations, Teachers in schools, Mobility managers in businesses and schools, Energy managers in businesses. | Mediators/facilitators will be part of an awareness and engagement pathway required to get as many local stakeholders involved as possible, whether they be citizens or entities such as schools and businesses. The whole local community must be engaged in a concerted effort to achieve climate neutrality. | Through their work in neighbourhoods, in local business facilities and in schools (to start with), the facilitators/mediators will help build a sense of environmental responsibility, overcome general resistance to change, and foster citizen awareness around sustainable practices.
 Facilitators/mediators are thus one way to overcome the difficulty in reaching citizens effectively and across the board.  |
@@ -3020,11 +3020,11 @@ Climate Neutrality Action Plan
 |  Intervention name | Description | Barriers/opportunities | Stakeholders involved | Impact pathway | Foreseen co-benefits  |
 | --- | --- | --- | --- | --- | --- |
 |  Nudging systems to be put in place | Special nudging systems will be implemented to give citizens a gentle push to break with their old, entrenched ways (ones that are harmful to the environment) and introduce good behaviours in terms of how people move (nudge towards sustainable mobility solutions). | Difficulty in reaching citizens effectively and across the board
-Resistance to change | All signatories of Climate Agreements, Padova's local business owners, especially those who can offer "bonuses" for citizens to spend, entities that can offer services, such as vehicle sharing or local public transport. | The nudging systems — which will be defined in detail following relevant fact-finding investigations — will be implemented, above all, in the management of municipal solid waste, in encouraging green purchasing (including signing up with clean electricity providers) and in sustainable mobility solutions. | Nudging — which is seen as a gentle push rather than an order — will help overcome resistance to change and raise local awareness around sustainable practices.  |
+| Resistance to change | All signatories of Climate Agreements, Padova's local business owners, especially those who can offer "bonuses" for citizens to spend, entities that can offer services, such as vehicle sharing or local public transport. | The nudging systems — which will be defined in detail following relevant fact-finding investigations — will be implemented, above all, in the management of municipal solid waste, in encouraging green purchasing (including signing up with clean electricity providers) and in sustainable mobility solutions. | Nudging — which is seen as a gentle push rather than an order — will help overcome resistance to change and raise local awareness around sustainable practices.  |
 |  Implementation of experiential pathways | Experiential pathways are designed to encourage buy-in to the proposed solutions, helping people understand their benefits and purpose, making them easy to utilize, increasing their appeal and making new lifestyles and habits attractive. | Difficulty in reaching citizens effectively and across the board
-Resistance to change | University of Padova, more specifically its Department of Philosophy, Sociology, Education and Applied Psychology (FISPPA). Padova City Council | Experiential pathways are an additional way to get citizens engaged, familiar with and excited about the new solutions developed for decarbonization. | Experiential pathways — put together by drawing on the expertise of the University of Padova — will help overcome resistance to change and raise local awareness around sustainable practices.  |
+| Resistance to change | University of Padova, more specifically its Department of Philosophy, Sociology, Education and Applied Psychology (FISPPA). Padova City Council | Experiential pathways are an additional way to get citizens engaged, familiar with and excited about the new solutions developed for decarbonization. | Experiential pathways — put together by drawing on the expertise of the University of Padova — will help overcome resistance to change and raise local awareness around sustainable practices.  |
 |  Definition of incentive schemes for vulnerable families | Incentives will take different forms and will focus on encouraging: conversion of the private vehicle fleet to electric; undertaking of energy upgrade work on public housing; and the promotion of sustainable mobility solutions as an alternative to cars. | Need for substantial funding
-Resistance to change | Banks who have signed Climate Agreements, Busitalia Veneto, City-owned companies. | Possible incentives include: bonuses that can be spent on the city's vehicle sharing systems or for the use of local public transport; priority support offered by the One-Stop Shop in the building upgrade field; incentives around Renewable (and socially responsible) Energy Communities; and financial incentives for the purchase of EVs. | Incentives will be designed to support vulnerable families above all. This intervention will also help ensure that no segment of the population is left out of Padova's transition to climate neutrality.  |
+| Resistance to change | Banks who have signed Climate Agreements, Busitalia Veneto, City-owned companies. | Possible incentives include: bonuses that can be spent on the city's vehicle sharing systems or for the use of local public transport; priority support offered by the One-Stop Shop in the building upgrade field; incentives around Renewable (and socially responsible) Energy Communities; and financial incentives for the purchase of EVs. | Incentives will be designed to support vulnerable families above all. This intervention will also help ensure that no segment of the population is left out of Padova's transition to climate neutrality.  |
 |  Participatory budgeting for Padova 2030 | Members of the councils may decide to use part of the budget made available to them for decarbonization projects | Difficulty in reaching citizens effectively and extensively
 Resistance to change | Neighborhood councils | The actions that can be promoted and financed by the councils through the Participatory Budget are very varied, but they will be mainly geared toward informing and raising awareness among the citizenry. | The direct action of the Councils ensures greater effectiveness and capillarity to communication and dissemination actions. In addition, the Councils more easily ensure reaching target populations that tend to be more difficult to engage (e.g., the elderly). The ability to directly choose how to spend part of the municipal budget increases the population's sense of participation and makes citizens more active and responsible.  |
 COMUNE di PADOVA
@@ -3892,23 +3892,23 @@ ALLEGATO 1
 |   |  Ambito d'intervento | Trasporti  |
 |   |  Descrizione | Incentivo chilometrico di 0,25 €/km ai dipendenti che decidono di usare la bicicletta per lo spostamento casa-lavoro, registrando il tragitto con apposita App e rendicontandolo al Mobility manager.  |
 |   |  Data di inizio e fine attività | 01/03/2024-31/12/2024
-Rinnovabile  |
+| Rinnovabile  |
 |  Implementazione | Ufficio responsabile dell'implementazione | Benessere organizzativo, Area Giuridica e Organizzativa  |
 |   |  Modalità di implementazione | Proposta del Mobility manager nell'ambito degli interventi attuativi del PSC  |
 |   |  Ulteriori stakeholder coinvolti |   |
 |   |  Beneficiari dell'azione | Dipendenti  |
 |  Impatto & costo | [Azioni di mitigazione]
-Energia rinnovabile generata - MWh/anno * | //  |
+| Energia rinnovabile generata - MWh/anno * | //  |
 |   |  [Azioni di mitigazione]
-Energia risparmiata/sostituita - MWh o smc o tonnellate/anno (in caso di sostituzione specificare il tipo di combustibile sostituito e il nuovo utilizzato) * | //  |
+| Energia risparmiata/sostituita - MWh o smc o tonnellate/anno (in caso di sostituzione specificare il tipo di combustibile sostituito e il nuovo utilizzato) * | //  |
 |   |  Numero di beneficiari potenziali per anno ** | Variabile n. adesioni per Padova: 30 nel 2022, 46 nel 2023, su circa 180 dip. potenziali  |
 |   |  [Azioni di adattamento]
-Pericolo climatico mitigato * |   |
+| Pericolo climatico mitigato * |   |
 |   | [Azioni di adattamento]
-Effetto atteso * | Riduzione dell'impatto atteso  |
+| Effetto atteso * | Riduzione dell'impatto atteso  |
 | --- | --- | --- |
 |   |  Stima della riduzione delle emissioni di gas serra (totale)
-tCO2 eq/anno | -3,6 t/anno a livello comunale nel 2022, in elaborazione 2023  |
+| tCO2 eq/anno | -3,6 t/anno a livello comunale nel 2022, in elaborazione 2023  |
 |   |  Costi di implementazione (Capex) | 2.224 €/2021, 5.593 €/2022, in elaborazione 2023, per il 2024 stimati 10.000 € a livello regionale  |
 |   |  Costi operativi (Opex) | Stima 7.000 € per acquisizione sw di registrazione automatica dei percorsi dall'App individuata con gara (a livello regionale)  |
 |  Definizione dell'azione | Nome dell'azione | Abbonamenti annuali TPL  |
@@ -3916,23 +3916,23 @@ tCO2 eq/anno | -3,6 t/anno a livello comunale nel 2022, in elaborazione 2023  |
 |   |  Ambito d'intervento | Trasporti  |
 |   |  Descrizione | Incentivo di una mensilità gratuita ai dipendenti che decidono di usare il Trasporto Pubblico Locale per lo spostamento casa-lavoro, sottoscrivendo un abbonamento annuale in convenzione con il Mobility manager, o in autonomia (con giustificativi)  |
 |   |  Data di inizio e fine attività | 01/01/2024-31/12/2024
-Rinnovabile  |
+| Rinnovabile  |
 |  Implementazione | Ufficio responsabile dell'implementazione | Benessere organizzativo, Area Giuridica e Organizzativa  |
 |   |  Modalità di implementazione | Proposta del Mobility manager nell'ambito degli interventi attuativi del PSC  |
 |   |  Ulteriori stakeholder coinvolti |   |
 |   |  Beneficiari dell'azione | Dipendenti  |
 |  Impatto & costo | [Azioni di mitigazione]
-Energia rinnovabile generata - MWh/anno * | //  |
+| Energia rinnovabile generata - MWh/anno * | //  |
 |   | [Azioni di mitigazione]
-Energia risparmiata/sostituita - MWh o smc o tonnellate/anno (in caso di sostituzione specificare il tipo di combustibile sostituito e il nuovo utilizzato) * | //  |
+| Energia risparmiata/sostituita - MWh o smc o tonnellate/anno (in caso di sostituzione specificare il tipo di combustibile sostituito e il nuovo utilizzato) * | //  |
 | --- | --- | --- |
 |   |  Numero di beneficiari potenziali per anno ** | Variabile n. adesioni per Padova: 9 nel 2021, 16 nel 2022, 25 nel 2023  |
 |   |  [Azioni di adattamento]
-Pericolo climatico mitigato * |   |
+| Pericolo climatico mitigato * |   |
 |   |  [Azioni di adattamento]
-Effetto atteso * | Riduzione dell'impatto atteso  |
+| Effetto atteso * | Riduzione dell'impatto atteso  |
 |   |  Stima della riduzione delle emissioni di gas serra (totale)
-tCO2 eq/anno | -4,3 t/anno a livello comunale nel 2021, -7,2 t/anno nel 2022, in elaborazione 2023  |
+| tCO2 eq/anno | -4,3 t/anno a livello comunale nel 2021, -7,2 t/anno nel 2022, in elaborazione 2023  |
 |   |  Costi di implementazione (Capex) | 1,213 €/2021, 1,431 €/2022, in elaborazione 2023, per il 2024 stimati 5.000 € a livello regionale  |
 |   |  Costi operativi (Opex) |   |
 
@@ -3948,7 +3948,7 @@ DEFINIZIONE AZIONI POSSIBILI
 |   |  Ambito d'intervento | Trasporti  |
 |   |  Descrizione | Installazione parcheggi per biciclette (rastrelliere o bike box) ad uso di una sede con dichiarate criticità di spazi condominiali, per i dipendenti aderenti al Bike to work, proposta dal Mobility manager nell'ambito degli interventi attuativi del PSCL  |
 |   |  Data di inizio e fine attività ipotizzata | 01/03/2024-31/12/2024
-Rinnovabile  |
+| Rinnovabile  |
 |  Implementazione | Elementi mancanti per la realizzazione dell'azione (es. spazi, finanziamento, collaborazioni, vetture, personale..) | Spazi, finanziamento  |
 |  Impatto & costo | Stima della riduzione delle emissioni di gas serra (totale) - tCO2 eq/anno | Non stimabile  |
 |   |  Stima costi di implementazione (Capex) | 20.000 €  |
@@ -4429,7 +4429,7 @@ Smc  |
 DEFINIZIONE AZIONI POSSIBILI_Allegato 2
 
 |  Definizione dell'azione | Nome dell'azione | SVILUPPO PROPOSTE PARTENARIATO
-PUBBLICO-PRIVATO  |
+| PUBBLICO-PRIVATO  |
 | --- | --- | --- |
 |   |  Tipologia | Mitigazione  |
 |   |  Ambito d'intervento | Edilizia civile  |
@@ -4477,7 +4477,7 @@ NETWORKING
 | Tipologia | Mitigazione |
 | Ambito d'intervento | Altro (dettagliare nel campo descrizione) |
 | Descrizione | Il progetto STAGEGO si propone di rafforzare lo sviluppo economico sostenibile dei soggetti teatrali dell'area interessata attraverso l'efficientamento di pratiche di stoccaggio e gestione dei magazzini del patrimonio tessile di due importanti player dell'ambito spettacolo: il Teatro Stabile del Veneto - Teatro Nazionale e il Teatro Nazionale Sloveno di Nova Gorica. I due partner possiedono infatti un grande patrimonio tessile, che conta complessivamente di circa 16500 pezzi, la cui gestione non è organizzata al meglio. I costumi non sono ben catalogati, non esiste un criterio condiviso nella loro archiviazione, non c'è una gestione generale della loro manutenzione e complessivamente manca una reale consapevolezza di ciò che è veramente in possesso dei teatri.
-Per questo motivo, TSV ed SNGNG con il progetto STAGEGO intendono creare un magazzino digitale condiviso, che li porti a individuare una metodologia di archiviazione e catalogazione che risponda alle loro esigenze produttive e che, soprattutto, permetta loro di condividere il patrimonio tessile a seconda delle necessità, applicando il principio di economia circolare. |
+| Per questo motivo, TSV ed SNGNG con il progetto STAGEGO intendono creare un magazzino digitale condiviso, che li porti a individuare una metodologia di archiviazione e catalogazione che risponda alle loro esigenze produttive e che, soprattutto, permetta loro di condividere il patrimonio tessile a seconda delle necessità, applicando il principio di economia circolare. |
 | Data di inizio e fine attività | ottobre 2024 |
 | Implementazione | Elementi mancanti per la realizzazione dell'azione (es. spazi, finanziamento, collaborazioni, vetture, personale..) | finanziamento Intereg Italia-Slovenia |
 | Impatto & costo | Stima della riduzione delle emissioni di gas serra (totale) - tCO2 eq/anno | N/A |
@@ -4524,7 +4524,7 @@ Dal 2025, con l'ingresso nel network, il TSV si auspica di diventare uno dei tea
 |   |  Tipologia | Formazione ed educazione  |
 |   |  Ambito d'intervento | Altro (specificare nel campo descrizione)  |
 |   |  Descrizione | Iniziative di dissemination dedicate alle imprese produttive, volte a facilitare l'accesso alle opportunità tecnologiche e finanziarie per l'efficientamento energetico.
-A iniziare dalle misure "transizione 5.0", si organizzeranno in collaborazione con CCIAA di Padova iniziative volte a stimolare l'adozione delle nuove tecnologie anche facilitate dalla finanza agevolata, da parte delle imprese produttive del territorio.  |
+| A iniziare dalle misure "transizione 5.0", si organizzeranno in collaborazione con CCIAA di Padova iniziative volte a stimolare l'adozione delle nuove tecnologie anche facilitate dalla finanza agevolata, da parte delle imprese produttive del territorio.  |
 |   |  Data di inizio e fine attività | 01.06.2024 - 31.12.2030  |
 |  Implementazione | Ufficio responsabile dell'implementazione | Direzione  |
 |   |  Modalità di implementazione | Organizzazione attività  |
@@ -4693,13 +4693,13 @@ NETWORKING
 | Beneficiari dell'azione | conduttori dell'immobile e proprietà |
 |  | [Azioni di mitigazione] Energia rinnovabile generata - MWh/anno * | 0 |
 |  Impatto & costo | [Azioni di mitigazione]
-Energia risparmiata/sostituita - MWh o smc o tonnellate/anno (in caso di sostituzione specificare il tipo di combustibile sostituito e il nuovo utilizzato) * | 72.500 smc di gas metano sostituiti; riduzione dei consumi di energia pari a 132.569 kWh; passati da gas metano + energia a sola energia elettrica generata da impianti da fornite rinnovabile con certificato di origine  |
+| Energia risparmiata/sostituita - MWh o smc o tonnellate/anno (in caso di sostituzione specificare il tipo di combustibile sostituito e il nuovo utilizzato) * | 72.500 smc di gas metano sostituiti; riduzione dei consumi di energia pari a 132.569 kWh; passati da gas metano + energia a sola energia elettrica generata da impianti da fornite rinnovabile con certificato di origine  |
 | --- | --- | --- |
 |   |  Numero di beneficiari potenziali per anno ** | circa 600 persone presenti nell'immobile  |
 |   |  [Azioni di adattamento]
-Pericolo climatico mitigato * | Ondate di calore  |
+| Pericolo climatico mitigato * | Ondate di calore  |
 |   |  [Azioni di adattamento]
-Effetto atteso * | Riduzione dell'impatto atteso  |
+| Effetto atteso * | Riduzione dell'impatto atteso  |
 |   |  Stima della riduzione delle emissioni di gas serra (totale) - tCO2 eq/anno | 147,59  |
 |   |  Costi di implementazione (Capex) | 1245000  |
 |   |  Costi operativi (Opex) | da 55000/anno ante intervento a 5000/anno post intervento  |
@@ -4729,9 +4729,9 @@ ovvero 361.600 kg di CO2 non immessa
 nell'aria  |
 | --- | --- | --- |
 |   |  Numero di beneficiari potenziali per
-anno ** | 800 persone in 125 aziende  |
+| anno ** | 800 persone in 125 aziende  |
 |   |  Stima della riduzione delle emissioni di
-gas serra (totale) - tCO2 eq/anno | 161,43 tep/anno  |
+| gas serra (totale) - tCO2 eq/anno | 161,43 tep/anno  |
 |   |  Costi di implementazione (Capex) | 2.100.000,00 euro  |
 |   |  Costi operativi (Opex) | 56.000 euro  |
 |   |  Fonte del finanziamento | fondi propri  |
@@ -4919,10 +4919,10 @@ gas serra (totale) - tCO2 eq/anno | 161,43 tep/anno  |
 |  Impatto & costo | [Azioni di mitigazione] Energia rinnovabile generata - MWh/anno * [Azioni di mitigazione] Energia risparmiata/sostituita - MWh o smc o tonnellate/anno (in caso di sostituzione specificare il tipo di combustibile sostituito e il nuovo utilizzato) * | da quantificare a seguito degli interventi di ottimizzazione  |
 |   |  Numero di beneficiari potenziali per anno ** | Imprese associate operative nel Comune di Padova (335 in totale): circa 50 imprese/anno  |
 |   | [Azioni di adattamento]
-Pericolo climatico mitigato * |   |
+| Pericolo climatico mitigato * |   |
 | --- | --- | --- |
 |   |  [Azioni di adattamento]
-Effetto atteso * | Riduzione dell'impatto atteso  |
+| Effetto atteso * | Riduzione dell'impatto atteso  |
 |   |  Stima della riduzione delle emissioni di gas serra (totale) - tCO2 eq/anno | 5% medio delle emissioni ci CO2 anno per azienda  |
 |   |  Fonte del finanziamento | BUDGET INTERNO
 Confindustria  |
@@ -4975,7 +4975,7 @@ Confindustria  |
 |   |  Tipologia | Comunicazione  |
 |   |  Ambito d'intervento | Altro (specificare nel campo descrizione)  |
 |   |  Descrizione | - Sensibilizzazione dell'industria padovana in temi ESG; Promuovere l'adozione di certificazioni e standard internazionali riconosciuti nel campo ESG; sessioni informative su come ottenere e mantenere queste certificazioni, verranno evidenziati i benefici che possono portare alle aziende in termini di reputazione e accesso a finanziamenti.
-Osservazione e monitoraggio degli investimenti 5.0 sul territorio per riduzione dei consumi energetici; sensibilizzazione sulle tematiche legate all'efficienza energetica e alla sostenibilità. Coinvolgimento delle imprese associate nell'adozione di comportamenti più responsabili in termini di consumo energetico creando una cultura del risparmio energetico sul territorio.  |
+| Osservazione e monitoraggio degli investimenti 5.0 sul territorio per riduzione dei consumi energetici; sensibilizzazione sulle tematiche legate all'efficienza energetica e alla sostenibilità. Coinvolgimento delle imprese associate nell'adozione di comportamenti più responsabili in termini di consumo energetico creando una cultura del risparmio energetico sul territorio.  |
 |   |  Data di inizio e fine attività | 2024 - 2030  |
 |  Implementazione e Costo | Beneficiari dell'azione | Piccole e medie imprese  |
 |   |  Costi operativi (Opex) | €4.500  |
@@ -4996,14 +4996,14 @@ L'intervento riguarda circa 8.000 mq di uffici con 490 postazioni di lavoro  |
 |   |  Ulteriori stakeholder coinvolti |   |
 |   |  Beneficiari dell'azione | Dipendenti InfoCamere  |
 |  Impatto & costo | [Azioni di mitigazione]
-Energia rinnovabile generata - MWh/anno * | Non Applicabile  |
+| Energia rinnovabile generata - MWh/anno * | Non Applicabile  |
 |   |  [Azioni di mitigazione]
-Energia risparmiata/sostituita - MWh o smc o tonnellate/anno (in caso di sostituzione specificare il tipo di combustibile sostituito e il nuovo utilizzato) * | 200.000 kWh/anno  |
+| Energia risparmiata/sostituita - MWh o smc o tonnellate/anno (in caso di sostituzione specificare il tipo di combustibile sostituito e il nuovo utilizzato) * | 200.000 kWh/anno  |
 |   |  Numero di beneficiari potenziali per anno ** | 500  |
 |   |  [Azioni di adattamento]
-Pericolo climatico mitigato * |   |
+| Pericolo climatico mitigato * |   |
 |   |  [Azioni di adattamento]
-Effetto atteso * |   |
+| Effetto atteso * |   |
 |   |  Stima della riduzione delle emissioni di gas serra (totale) - tCO2 eq/anno |   |
 |   |  Costi di implementazione (Capex) | 1700000 €  |
 |   |  Costi operativi (Opex) | invariati  |
@@ -5135,7 +5135,7 @@ Effetto atteso * |   |
 |   |  Tipologia | Supporto finanziario  |
 |   |  Ambito d'intervento | Altro (specificare nel campo descrizione)  |
 |   |  Descrizione | Finanziamento con finalità green con garanzia MCC o SACE. Durata massima 8 anni.
-Spese di istruttoria: 1% comprensivo dell'eventuale costo della garanzia MCC - Tasso Euribor3mesi + 2% comprensivo dell'eventuale costo della garanzia SACE.  |
+| Spese di istruttoria: 1% comprensivo dell'eventuale costo della garanzia MCC - Tasso Euribor3mesi + 2% comprensivo dell'eventuale costo della garanzia SACE.  |
 |   |  Data di inizio e fine attività | 2024-2030  |
 |  Implementazione | Ufficio responsabile dell'implementazione | Corporate Banking  |
 |   |  Modalità di implementazione | Supporto economico a terzi  |
@@ -5291,12 +5291,12 @@ NETWORKING
 |   |  Modalità di implementazione | Acquisto di beni o servizi  |
 |   |  Ulteriori stakeholder coinvolti | Comune di Padova  |
 |   |  Beneficiari dell'azione
-[Azioni di mitigazione] | Busitalia Veneto Spa  |
+| [Azioni di mitigazione] | Busitalia Veneto Spa  |
 |  Impatto & costo | Energia rinnovabile generata -
-[Aziende mitigazione] |   |
+| [Aziende mitigazione] |   |
 |   |  Energia risparmiata/sostituita - MWh o smc o tonnellate/anno (in caso di sostituzione specificare il tipo di combustibile sostituito e il nuovo utilizzato) * |   |
 |   |  [Azioni di adattamento]
-Effetto atteso * | Riduzione dell'impatto atteso  |
+| Effetto atteso * | Riduzione dell'impatto atteso  |
 |   |  Stima della riduzione delle emissioni di gas serra (totale) - tCO2 eq/anno | 640  |
 |   |  Costi di implementazione (Capex) | € 2.701.640,00  |
 
@@ -5338,12 +5338,12 @@ La banca, in sede centrale, per incentivare il trasporto green, ha 2 colonnine p
 | Ulteriori stakeholder coinvolti | cittadini |
 | Beneficiari dell'azione | dipendenti della sede centrale e della filiale di Banca Etica (120 persone) |
 | Impatto e costo | [Azioni di mitigazione] Energia risparmiata/sostituita - MWh o smc o tonnellate/anno (in caso di sostituzione specificare il tipo di combustibile sostituito e il nuovo utilizzato) * | una media di 145 tonnellate annue di CO2 evitate
-ricarica su colonnine elettriche 5 tonnellate annue di CO2 evitate |
+| ricarica su colonnine elettriche 5 tonnellate annue di CO2 evitate |
 | Numero di beneficiari potenziali per anno ** | 120 dipendenti + cittadini |
 | [Azioni di adattamento] Effetto atteso * | Riduzione dell'impatto atteso |
 | Stima della riduzione delle emissioni di gas serra (totale) - tCO2 eq/anno | 145 anno |
 | Costi di implementazione (Capex) | Zero per lo smart working
-€/anno per le colonnine |
+| €/anno per le colonnine |
 | Costi operativi (Opex) | residuali |
 
 * se applicabile
@@ -5489,7 +5489,7 @@ All'Ascom, proprio per favorire l'acquisizione del marchio da parte delle impres
 L'obiettivo di questa iniziativa è quello di sensibilizzare le nostre imprese ed i loro clienti e premiare l'impegno ambientale del terziario di mercato, favorendo occasioni di crescita e di sviluppo, rendendo le stesse imprese protagoniste della transizione ecologica, che rappresenta un'opportunità e una sfida da vincere prima di tutto partendo dal territorio. |
 | Data di inizio e fine attività | 2023- 2030 |
 | Implementazione | Ufficio responsabile dell'implementazione | SPORTELLO IMPRENDIGREEN ASCOM PADOVA
-Dr.ssa silvia Mason 049/8209762 email: silvia.mason@ascompd.com |
+| Dr.ssa silvia Mason 049/8209762 email: silvia.mason@ascompd.com |
 | Modalità di implementazione | Organizzazione attività |
 | Beneficiari dell'azione | AZIENDE ASSOCIATE ASCOM PADOVA |
 | Costo | Costi operativi (Opex) | 1000€ all'anno |
@@ -5897,14 +5897,14 @@ Se sì, indica di seguito con chi vorresti entrare in contatto con realtà simil
 |   |  Ulteriori stakeholder coinvolti | Italchimica srl  |
 |   |  Beneficiari dell'azione | Italchimica srl  |
 |  Impatto & costo | [Azioni di mitigazione]
-Energia rinnovabile generata - MWh/anno * |   |
+| Energia rinnovabile generata - MWh/anno * |   |
 |   |  [Azioni di mitigazione]
-Energia risparmiata/sostituita - MWh o smc o tonnellate/anno (in caso di sostituzione specificare il tipo di combustibile sostituito e il nuovo utilizzato) * | 148 MWh annui risparmiati  |
+| Energia risparmiata/sostituita - MWh o smc o tonnellate/anno (in caso di sostituzione specificare il tipo di combustibile sostituito e il nuovo utilizzato) * | 148 MWh annui risparmiati  |
 |   |  Numero di beneficiari potenziali per anno ** |   |
 |   |  [Azioni di adattamento]
-Pericolo climatico mitigato * |   |
+| Pericolo climatico mitigato * |   |
 |   |  [Azioni di adattamento]
-Effetto atteso * |   |
+| Effetto atteso * |   |
 |   |  Stima della riduzione delle emissioni di gas serra (totale) - tCO2 eq/anno |   |
 |   |  Costi di implementazione (Capex) | 3.300.000 €  |
 |   |  Costi operativi (Opex) | Non vi è un impatto sui costi operativi, anzi dovremmo avere un beneficio in termini di ore uomo di 60.000 € annui  |
@@ -6223,21 +6223,21 @@ NETWORKING
 |   |  Tipologia | Formazione ed educazione  |
 |   |  Ambito d'intervento | Gestione dei rifiuti  |
 |   |  Descrizione | Promozione del progetto pilota per il recupero e riciclo del packaging in carta utilizzato in cantiere, iniziativa per lo sviluppo di pratiche di economia circolare per la crescita della sostenibilità dell'attività delle imprese edili.
-Promozione del progetto sperimentale per la raccolta ed il riciclo di materiali in PVC da cantiere edile mediante convenzione con le associazioni della filiera italiana del PVC.  |
+| Promozione del progetto sperimentale per la raccolta ed il riciclo di materiali in PVC da cantiere edile mediante convenzione con le associazioni della filiera italiana del PVC.  |
 |   |  Data di inizio e fine attività | Inizio ottobre 2023  |
 |  Implementazione | Ufficio responsabile dell'implementazione | Ufficio Appalti Ance Padova  |
 |   |  Modalità di implementazione | Organizzazione attività  |
 |   |  Ulteriori stakeholder coinvolti | Ance Veneto - PVC Forum Italia  |
 |   |  Beneficiari dell'azione | Imprese, filiera per il riciclo  |
 |  Impatto & costo | [Azioni di mitigazione]
-Energia rinnovabile generata - MWh/anno * | /  |
+| Energia rinnovabile generata - MWh/anno * | /  |
 |   |  [Azioni di mitigazione]
-Energia risparmiata/sostituita - MWh o smc o tonnellate/anno (in caso di sostituzione specificare il tipo di combustibile sostituito e il nuovo utilizzato) * | /  |
+| Energia risparmiata/sostituita - MWh o smc o tonnellate/anno (in caso di sostituzione specificare il tipo di combustibile sostituito e il nuovo utilizzato) * | /  |
 |   |  Numero di beneficiari potenziali per anno ** | /  |
 |   |  [Azioni di adattamento]
-Pericolo climatico mitigato * |   |
+| Pericolo climatico mitigato * |   |
 |   |  [Azioni di adattamento]
-Effetto atteso * |   |
+| Effetto atteso * |   |
 |   |  Stima della riduzione delle emissioni di gas serra (totale) - tCO2 eq/anno | /  |
 |   |  Costi di implementazione (Capex) | 3.000 €  |
 |   |  Costi operativi (Opex) | /  |

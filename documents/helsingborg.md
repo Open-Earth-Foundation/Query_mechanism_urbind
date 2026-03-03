@@ -12,11 +12,6 @@ EU MISSION PLATFORM | CLIMATE NEUTRAL AND SMART CITIES
 The content of this document reflects only the author's view. The European Commission is not responsible for any use that may be made of the information it contains.
 
 NetZeroCities has received funding from the H2020 Research and Innovation Programme under the grant agreement n°101036519.
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-5
 
 # Table of Contents
 
@@ -39,11 +34,6 @@ Module C-1 Governance Innovation Interventions ... 127
 Module C-2 Social Innovation Interventions ... 141
 Outlook and next steps ... 149
 Annexes ... 150
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
 
 # Summary
 
@@ -64,11 +54,6 @@ This document shows the challenges in each of these areas and lays out a project
 A collaborative approach is a prerequisite for the delivery of this ambitious programme. Helsingborg has a strong joint approach within the municipality and with the municipal companies that include the energy and waste utility companies who are major investors in the climate transition. The city also has a strong working relationship with other major businesses and industries and has mobilised key business partners through the Helsingborg Declaration and the Helsingborg Climate Pledge to tackle climate emissions together. Helsingborg has a history of partnerships and innovation with the local community and civil society across issues ranging from culture and the arts to the environment. Engaging actively with communities to understand their challenges in climate transition and co-designing solutions will be key to enabling a high level of adoption of low-carbon behaviours. A strong co-design process will also help to ensure that the process of change can maximise co-benefits, support improved quality of life for all citizens, not least that of under-represented or marginalised groups, and ensure a just transition.
 
 Helsingborg's Climate Action Plan is the first iteration of a highly ambitious yet achievable programme of works to drive the city's work to become climate neutral by 2030. Significant challenges lie ahead, as do countless opportunities to mobilise communities and businesses to build a long-term commitment that can drive economic development, improve quality of life and keep driving down the climate footprint beyond net zero.
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-O
 
 # List of figures
 
@@ -108,12 +93,6 @@ The list of tables identifies the titles and locations (page numbers) of all tab
 |  Table B-3.1 | Impact Pathways | 101 - 105  |
 |  Table B-3.2 | Indicator Metadata | 105 - 125  |
 |  Table C-1.2 | Sample Table: Relations between governance innovations, systems, and impact pathways | 134 - 139  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
-
 |  Table C-2.1 | Sample Table: Relations between social innovations, systems, and impact pathways | 140 - 144  |
 | --- | --- | --- |
 
@@ -144,11 +123,6 @@ The administrative territories included in the city's 2030 climate neutrality ta
 Key data on the administrative and political organisation of the city, its demographic and socioeconomic characteristics, and climate-relevant sectors.
 A clear description of the relationship of this CCC Action Plan with existing climate policies and strategies (further detailed in Module A-2), and how it builds on them to address the gap (if any) to climate neutrality.
 Background information on the work process of developing the city's CCC Action Plan, highlighting its connection with the other Climate City Contract components (2030 Climate Neutrality Commitments and 2030 Climate Neutrality Investment Plan).
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-O
 
 A description of future steps, planned timeline and milestones for future iterations for the continuous development of the CCC Action Plan.
 
@@ -169,11 +143,6 @@ Reducing emissions and reaching net-zero will bring significant positive side ef
 Key to this transition are the transition team and the transition arena, as outlined in Module C-1 Governance Innovation Interventions. These initiatives are crucial for driving the actions needed to achieve net-zero emissions. They also focus on highlighting and leveraging positive synergies between sustainability efforts, ensuring that the benefits of reducing emissions extend across all sectors of society.
 
 An essential part of Helsingborg's approach to achieving climate neutrality is reflexive learning. After each phase of monitoring and evaluation, it is critical to engage in continuous learning to improve and adapt the city's climate strategies. This process ensures that Helsingborg remains agile, identifying what works, where adjustments are needed, and how new knowledge can shape future efforts. Reflexive learning helps drive progress by incorporating lessons learned and ensuring that climate actions remain effective and relevant in a rapidly evolving context.
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-0
 
 This learning will take place both within Helsingborg's internal governance structures and through collaboration with regional partners. The city is part of a regional Learning Hub, a joint initiative with Lund University, Lund Municipality, and the City of Malmö, as outlined in Module C-1.1 of the participatory governance model for climate neutrality. By leveraging the resources of the Learning Hub, Helsingborg ensures that it is not working in isolation but as part of a regional effort to achieve climate neutrality, benefiting from the collective insights and experiences of its partners.
 
@@ -182,23 +151,11 @@ Helsingborg's profound commitment to environmental issues is reflected in our st
 # Helsingborg's Geographic and Social-Economic Context
 
 Helsingborg is the eighth-largest city in Sweden. Located in the Scania region, Helsingborg's administrative territory spans 344 km², of which 63.7% is used for agriculture, and 8.4% is forest. The city has a population of 151 306 as of 2023, with 76% residing in the central urban area. Population density is high, with 96.6% of residents living in urban zones. More than 93% live within 500 metres of public transport, highlighting accessibility as one of Helsingborg's strengths. The average age of residents is 41, slightly younger than the national average, and 28% of the population is foreign-born, reflecting a diverse community. Out of the 70 340 households, half are single-person households.
-M
-
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
 
 ![img-0.jpeg](img-0.jpeg)
 Figure 1: Layout of urban areas, geographical and other features across the city
 
 Strategically positioned along the narrowest part of the Öresund Strait, Helsingborg is a key logistics hub for Scandinavia, with critical infrastructure that includes three motorways, a railroad, and Sweden's second-largest container port. Approximately 77 000 people work in the city, with a positive net commute from the surrounding Scania area. Employment rates are high, with  $75.9\%$  of women and  $77.7\%$  of the total population in the workforce.
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
 
 ![img-0.jpeg](img-0.jpeg)
 Figure 2: Helsingborg is the second largest city in Scania (Skåne), the most southern region of Sweden.
@@ -208,11 +165,6 @@ Figure 2: Helsingborg is the second largest city in Scania (Skåne), the most so
 # Local Governance Structure
 
 The City of Helsingborg group consists of 11 local government committees (including nine municipal offices) and six larger municipally owned companies. All committees, their offices and companies are committed to work towards the vision of Helsingborg 2035.
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-O
 
 ![img-0.jpeg](img-0.jpeg)
 Figure 3: Organogram of Helsingborg city group
@@ -220,11 +172,6 @@ Figure 3: Organogram of Helsingborg city group
 Governance, culture and working methods focus on organisational practices and in creating needs-based, quality welfare solutions through trust-based governance. The City Council clarifies and prioritises through the governing documents included in the environmental masterplan. Committees and companies work together to achieve political priorities with support from a team or an office responsible for implementing the priorities in the organisation, following up, evaluating, and reporting progress to the City Council. The governing documents are reported to the City Council through dialogues, special reports, and the city's annual report on business and economy. Indicators are available to the politicians in the city's Business intelligence and on the city's website.
 
 The city's trend and global analysis describes mega and local trends that affect the conditions for sustainable development in Helsingborg. The analysis spreads knowledge and supports committees, companies and businesses when planning in the short term and towards the vision.
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
 
 ![img-0.jpeg](img-0.jpeg)
 Figure 4: Political governance in the City of Helsingborg
@@ -234,11 +181,6 @@ The City of Helsingborg employs around 12 000 people, all of whom play a crucial
 # Emissions and Challenges Ahead
 
 In 2022, the total greenhouse gas emissions within scope 1 and scope 2 were approximately 470 000 tons of carbon dioxide equivalents. Transport remains the largest source of emissions in Helsingborg. Significant emissions also stem from industrial energy use, particularly natural gas, and from the incineration of fossil plastics for district heating production. From 1990 to 2022, greenhouse gas emissions in Helsingborg decreased by 56 per cent. This reduction is primarily attributed to the transition to renewable energy for electricity, heating, and industry. Improvements in energy efficiency, more energy-efficient vehicles, and the use of biofuels for road transport have also contributed significantly to this decline.
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
 
 Figure 5: Distribution of emissions in Helsingborg 2022
 ![img-0.jpeg](img-0.jpeg)
@@ -260,11 +202,6 @@ Collaboration with local businesses, community groups, and regional and national
 Helsingborg's Climate Action Plan (CAP) aligns with existing frameworks and serves as an umbrella that integrates the city's Sustainable Energy and Climate Action Plan (SECAP) with other local strategies. The SECAP, which sets specific targets for each emission sector, is the cornerstone of Helsingborg's climate neutrality efforts. It outlines how the city, in collaboration with stakeholders from academia, businesses, and the community, will work towards achieving these goals. This comprehensive approach is supported by the Climate Action Plan (CAP) and Climate Investment Plan (CIP), which detail the specific actions and investments required to meet these ambitious targets.
 
 Local policies, such as the Sustainable Urban Mobility Plan (SUMP), are essential in addressing emissions in key sectors, further aligning with the overarching sustainable development strategies in Helsingborg. Together with the Comprehensive Development Plan 2021, which focuses on land use and development through 2050, and
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-O
 
 the Quality-of-Life Programme, which addresses broader issues like public health and employment, these initiatives place climate mitigation and sustainability at the heart of the city's decision-making process. This integrated approach not only ensures progress towards climate neutrality but also maximises co-benefits such as social inclusion and economic development.
 
@@ -286,12 +223,6 @@ In conclusion, Helsingborg's Climate Neutrality Action Plan reflects a comprehen
 |  Stationary energy | Included | Included | Not included  |
 |   |  Stationary energy for industry is included in IPPU. |  |   |
 |  Transport | Included | Included | Not included  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-7
-
 |   |  | Electricity for charging electric cars in the home is included in stationary energy (Scope 2). |   |
 | --- | --- | --- | --- |
 |  Waste/wastewater | Included | Not applicable | Not applicable  |
@@ -304,11 +235,6 @@ Climate Neutrality Action Plan
 |  Geographical boundary | Same as city administrative boundary | Smaller than city administrative boundary | Larger than city administrative boundary  |
 |  (Tick correct option) | X |  |   |
 |  Specify excluded/additional areas | No excluded areas | No excluded areas | No excluded areas  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-8
 
 # 2 Part A – Current State of Climate Action
 
@@ -333,11 +259,6 @@ Helsingborg’s key systemic priorities are closely tied to the findings of the 
 The city’s SECAP, and to a large extent, the CCC, are structured around the data from the emissions inventory. For each sector, Helsingborg has established specific emissions reduction targets and
 
 ² European Commission, 2021, Info Kit for Cities, European Commission. Further guidance is available also in: NZC, 2023, Guidance on target setting and emissions inventories for the Climate-neutral and Smart Cities Mission, NetZeroCities https://netzerocities.app/resource-3814
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-9
 
 identified the key shifts required to achieve these goals. Furthermore, the plan highlights critical stakeholders whose engagement is vital to ensure the success of the climate neutrality strategy.
 
@@ -365,11 +286,6 @@ By basing our strategic actions on this thorough emissions inventory, Helsingbor
 |  (Fuel type/ energy used) | 33 700 diesel + 40 100 oil | Electricity |   |
 |  IPPU | Not available | Not available |   |
 |  AFOLU | Not available | Not available |   |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
 
 # A-1.2: Emission factors applied 1990
 
@@ -394,12 +310,6 @@ The method used to calculate emissions are GPC-CRF. Scope 2, stationary energy, 
 |  Unit | MWh  |   |   |   |
 |   |  | Scope 2 | Scope 3  |   |
 |  Households | 56 000 | 880 000 |   |   |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
-
 |  Fuel type | 15 000 solid renewable, 3 000 liquid non-renewable, 15 000 non-renewable gas, 23 000 renewable gas | 285 119 electricity + 595 983 district heating |   |
 | --- | --- | --- | --- |
 |  Public services | 2 600 | 170 735 |   |
@@ -424,12 +334,6 @@ The method used to calculate emissions are GPC-CRF. Scope 2, stationary energy, 
 |  Primary energy/ energy source | CO2e | CO2 | CH4 | N2O | Comment  |
 | --- | --- | --- | --- | --- | --- |
 |  Electricity | 53 g/kWh |  |  |  | Helsingborg's electricity supply is highly dependent on overhead supply from the regional grid, where the local electricity production accounts for a small proportion of the total electricity  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-2
-
 |   |  |  |  |  | demand in the municipality (self-sufficiency rate approximately 20 % on an annual basis). The climate emissions resulting from the municipality's electricity use are calculated based on an emission factor corresponding to a consumption network mix for electricity area 4 to which Helsingborg belongs, taking into account imports and exports from and to surrounding electricity areas.  |
 | --- | --- | --- | --- | --- | --- |
 |  District heating | 53 g/kWh |  |  |  | Within Helsingborg's heating sector, district heating is the most common form of heating. Climate emissions resulting from district heating use are calculated similarly for electricity based on an emission factor corresponding to the fuel mix found in the district heating network. Today, these emissions mainly come from the system's co-generation production, which releases both biogenic and fossil carbon dioxide as a result of energy recovery from waste destruction.  |
@@ -447,10 +351,6 @@ Climate Neutrality Action Plan
 |  Buildings, including agricultural facilities | 55 572 | 233 881 |  |  |   |
 |  Buildings, industry, construction | Included in IPPU | 56 306 |  |  |   |
 |  Transport, on road, Scope 2 only public charging. | 256 668 | 493 |  |  |   |
-Climate Neutrality Action Plan
-
-#
-
 |  Transport, machines |   | 154 458 | Not available |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Transport, other |   | 8 417 | Not available |  |   |
@@ -477,14 +377,6 @@ Climate Neutrality Action Plan
 |  IPPU product use |   | 16 259 | Not applicable |  |   |
 |  Agricultural, Forestry and Land Use (AFOLU) Sources Includes: | Sources (positive emissions) | 47 597 | Not applicable |  |   |
 |   |  Sinks (negative emissions) | Not available | Not available |  |   |
-M
-
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
-
 |  Livestock, Landuse, Other |  |  |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Grid supplied energy | 99 675 | Not applicable |  |  |   |
@@ -504,11 +396,6 @@ A-1.4: Activity by source sectors.
 |  Sector: Industrial Process and Product Use (IPPU) |  |  |   |
 |  (Activity) | No activity data available. |  |   |
 |  Sector: Agricultural, Forestry and Land Use (AFOLU) |  |  |   |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
 
 # 2.2 Module A-2 Current Policies and Strategies Assessment
 
@@ -525,11 +412,6 @@ In evaluating Helsingborg's transition to climate neutrality by 2030, we have re
 We have begun the process of mapping existing and relevant policies in Table A.2.2.1, identifying key initiatives detailed in Table A 2.2.2 that are expected to drive significant reductions in GHG emissions. These policies are critical to the city's climate goals. If implemented as planned, they will contribute substantially to our overall emission reduction targets. However, we recognise that there are likely many additional policies important for local climate action that have yet to be fully mapped. This work needs to continue to ensure we have a comprehensive understanding of all relevant policies that can support our transition.
 
 For most sectors, it is possible to separate the impact of these policies from the actions in the Action Plan (Part B). However, it is more challenging in the road transport sector, but we have been careful to avoid double-counting emissions reductions. Based on current data, after accounting for the effects of existing policies, the remaining gap to the 2030 target is approximately 396 000 tons of CO2e. Helsingborg's SECAP suggests that increased carbon sinks could offset up to  $15\%$  of 1990 emissions, equivalent to 171 000 tons of CO2e, leaving 225 000 tons to be reduced through the actions outlined in Part B of the Action Plan.
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
 
 In addition to mapping existing policies, it will be essential to distil international and national policies into local strategies. By doing so, we can better understand how to align these broader frameworks with our local climate goals, maximising their benefits to achieve meaningful progress. Moreover, the possibility of mapping upcoming national and EU strategies will allow us to better prepare for future frameworks that could impact local climate work, ensuring that Helsingborg stays ahead of new developments.
 
@@ -548,8 +430,6 @@ The potential for emission reduction has been estimated for green marked policie
 |   |  Land and Housing Program, 2024 - 2027 | Roadmap for Scania's electricity supply |  | Energy Efficiency Directive (EU) 2023/1791  |
 |   |  Comprehensive Plan |  |  | Renewable Energy Directive (RED)  |
 |   |  Electric Car Strategy |  |  | Regulation on the internal market for electricity (EU) 2019/943  |
-Climate Neutrality Action Plan
-
 |   |  |  |  | Common Rules for the Internal Market for Electricity and Amending Directive (EU) 2019/944  |
 | --- | --- | --- | --- | --- |
 |   |   |  |  | Energy Performance of Buildings Directive (EU) 2024/1275  |
@@ -564,10 +444,6 @@ Climate Neutrality Action Plan
 |   |   | Traffic Supply Program for Scania 2020 - 2030 |  |   |
 |  Waste (solid waste disposal, biological treatment, wastewater) | Waste Plan | Regional Waste Plan | National regulation for landfills, 31–33 §§ | Waste Framework Directive  |
 |   |  Policy for purchasing and procurement | Environmental Program for Scania 2030 | The National Waste Plan and the Waste Prevention Program | Circular Economy Action Plan  |
-
-7
-Climate Neutrality Action Plan
-
 |   |  |  | National Procurement Strategy |   |
 | --- | --- | --- | --- | --- |
 |   |  Guidelines for purchasing and procurement |  | National Strategy for Circular Economy |   |
@@ -581,84 +457,38 @@ Climate Neutrality Action Plan
 |   | Action Plan for Trees in Urban Environments, 2025 - 2031 |  |  | Soil Strategy for 2030 (EU) 2021/699  |
 |   |  |  |  | Industrial and Livestock Rearing Emissions Directive (EU) 2024/1785  |
 |  Other relevant governing | Quality of Life Programme |  | Sweden's Environmental Objectives | Agenda 2030  |
-
-8
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-9
-
 |  documents and policies |  |  | Sweden's Climate Act and Climate Policy Framework | The Fit for 55 Package  |
 | --- | --- | --- | --- | --- |
 |   |   |  |  | The European Climate Law  |
-|  A-2.2.2: Description & assessments of policies
-Most relevant existing policies, strategies, programmes, and regulations that impact (directly or indirectly) the 2030 climate neutrality ambition. The table clarifies the numbers given in column 4 of table A 2.2.1.  |   |   |   |
+|  A-2.2.2: Description & assessments of policies | Most relevant existing policies, strategies, programmes, and regulations that impact (directly or indirectly) the 2030 climate neutrality ambition. The table clarifies the numbers given in column 4 of table A 2.2.1. |   |   |
 | --- | --- | --- | --- |
 |  Sector | Name | Description | Direct impact (ton CO2e)  |
 |  |   |   |   |
-|  District heating (scope 2) | Regulation (2022:1274) on producer responsibility for packaging | The regulation aims to reduce the amount of packaging and packaging waste by: a) reducing volume and weight of packaging b) packaging being used only when necessary, and c) packaging being reused. | 3700
-According to calculations for Stockholm exergy (Erselius 2021), emissions from waste incineration of household waste can be reduced by 17 % through full producer responsibility.  |
+|  District heating (scope 2) | Regulation (2022:1274) on producer responsibility for packaging | The regulation aims to reduce the amount of packaging and packaging waste by: a) reducing volume and weight of packaging b) packaging being used only when necessary, and c) packaging being reused. | 3700 According to calculations for Stockholm exergy (Erselius 2021), emissions from waste incineration of household waste can be reduced by 17 % through full producer responsibility. |
 |  Electricity (scope 2) | Global climate agreement, COP 28, Dubai | The agreement stipulates that (among other things) global renewable capacity should triple by 2030.  |   |
 |  Electricity (scope 2) | The national energy target for the composition of electricity production in 2040 | 100% renewable electricity system by 2040.  |   |
 |  Electricity (scope 2) | Regional climate and energy strategy for Skåne | Target: Energy use in Scania must consist of 80% renewable energy in 2030.  |   |
 |  Electricity (scope 2) | Roadmap for Scania's electricity supply | Target: Scania's degree of self-sufficiency in electricity power must increase from today's 15% to at least 50% in 2030 during all hours of the year. The roadmap shows that the potential for new onshore and offshore wind power is good. There is, for example, an ongoing permit process for a 1 500 MW offshore wind farm in Scania.  |   |
-|  Transport on road (scope 1 &2) | National climate target for the transport sector | According to Sweden's milestone goals for domestic transport, emissions must be reduced by at least 70% by 2030 compared to 2010. | 28 500
-Targets, regulations, agreements that lead to activities by various actors that primarily contribute to a  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-0
-
+|  Transport on road (scope 1 &2) | National climate target for the transport sector | According to Sweden's milestone goals for domestic transport, emissions must be reduced by at least 70% by 2030 compared to 2010. | 28 500 Targets, regulations, agreements that lead to activities by various actors that primarily contribute to a |
 |  Transport on road (scope 1 and 2) | The government's regulation letters | The government sees electrification as the main path for Sweden to reach its transport goals. In the regulation letters for 2024, the government has decided on several tasks to various authorities to speed up the electrification of the transport sector. | rapid electrification of passenger transport and freight transport. We believe that there are good chances of reaching the electrification targets for the transport sector for Helsingborg, because the government and private actors are pushing for electrification in parallel with the city group implementing its actions (B-part of CCC). In order to reach the national emissions target as well as the transport target, a shift from car journeys to active transport and public transport will also be necessary. Emission reductions from that type of actions are primarily included in Helsingborg's action plan in part B of CCC. Here we have modelled the total potential for the transition we want to see, using a model developed by Stockholm environmental institute. We have investigated the impact of our CCC actions (part B of CCC action plan) and put the remaining possible emission reduction in column 4.  |
 | --- | --- | --- | --- |
 |  Transport on road (scope 1 and 2) | Agreement, Fossil fuel-free Sweden, the transport challenge | Gathers actors (authorities, municipalities, businesses) who sign to only carry out and purchase fossil-free transport in 2030. |   |
-|  Transport Machines | National target for the non-trading sector | In Sweden, work machines are covered by the national milestones for the non-trading sector, which means that emissions must be reduced by 63% by 2030 and by 75% by 2040 compared to 1990. | 2 000
-The national target will, among other things, result in economical driving and planning of the work. According to the Swedish Environmental Protection Agency, economical driving and planning of the work can reduce fuel consumption and thus emissions by around 10% compared to previous driving patterns. Actions that lead to a shift to renewable fuel is included in part B of CCC action plan.  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-1
-
+|  Transport Machines | National target for the non-trading sector | In Sweden, work machines are covered by the national milestones for the non-trading sector, which means that emissions must be reduced by 63% by 2030 and by 75% by 2040 compared to 1990. | 2 000 The national target will, among other things, result in economical driving and planning of the work. According to the Swedish Environmental Protection Agency, economical driving and planning of the work can reduce fuel consumption and thus emissions by around 10% compared to previous driving patterns. Actions that lead to a shift to renewable fuel is included in part B of CCC action plan. |
 |  |   |   |   |
 | --- | --- | --- | --- |
-|  Transport, air, water, rail (scope 1) | EU regulation: FuelEU Maritime | According to EU regulation: The amount of greenhouse gases from ships must be reduced by two % from 2025, 14.5% from 2035 and 80% from 2050, compared to 2020 levels. | 600
-Assume that a small emission reduction will take place until 2030.  |
+|  Transport, air, water, rail (scope 1) | EU regulation: FuelEU Maritime | According to EU regulation: The amount of greenhouse gases from ships must be reduced by two % from 2025, 14.5% from 2035 and 80% from 2050, compared to 2020 levels. | 600 Assume that a small emission reduction will take place until 2030. |
 |  Waste (solid waste disposal, biological treatment, wastewater ) (scope 1) | National regulation for landfills, 31–33 §§ | Requirements for final coverage and treatment of landfills | Emission reduction that deals with reducing leakage from landfills and composts, and final cover of landfills are included in part B of CCC Action Plan.  |
-|  IPPU, Industrial Process (scope 1) | National energy efficiency target | Sector-wide target to reduce energy intensity by 50% between 2005 and 2030. | 3 000
-Emissions in IPPU industry sector has decreased by 3400 ton CO2e per year since 2005. The emission reduction rate has also been the same in the later years 2015-2022. Production volumes, fuel type and energy efficiency are factors that influence the emissions. Assume that approx. 15% of the emission reduction is due to energy efficiency. Assumes that industries have financial incentives to continue energy efficiency.  |
+|  IPPU, Industrial Process (scope 1) | National energy efficiency target | Sector-wide target to reduce energy intensity by 50% between 2005 and 2030. | 3 000 Emissions in IPPU industry sector has decreased by 3400 ton CO2e per year since 2005. The emission reduction rate has also been the same in the later years 2015-2022. Production volumes, fuel type and energy efficiency are factors that influence the emissions. Assume that approx. 15% of the emission reduction is due to energy efficiency. Assumes that industries have financial incentives to continue energy efficiency. |
 |  IPPU, Industrial Process (scope 1) | National legislation: Act (2014:266) on energy mapping in large companies | This law aims to promote improved energy efficiency in large companies. |   |
-|  IPPU, product use (scope 1) c | EU regulation on fluorinated greenhouse gases, (EU) No. 2024/573 | Availability of fluorocarbons is limited through a quota system. Prohibition for certain products. Certification will be needed to be allowed to buy fluorinated greenhouse gases and usually to install and repair equipment that contains these gases. | 8 000
-The purpose of the regulation from 2015 (which now is updated) was to reduce the emissions of f-gases by two-thirds, from 2015 to the year 2030. We used this assumption for our calculations.  |
-|  Agricultural, Forestry and Land Use (AFOLU), Sources Includes: Livestock, Landuse, Other | National legislation: The Swedish Agency for Agriculture's regulations and rules in the Environmental Code | The Swedish Agency for Agriculture's regulations and rules in the Environmental Code. | 4 000
-Emission reduction through legislation in combination with other important policy instruments in the agricultural sector such as advice for sustainable agriculture for example through Greppa Näringen, support and compensation that farmers can apply for within the common agricultural policy (CAP), investment support within  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-2
-
+|  IPPU, product use (scope 1) c | EU regulation on fluorinated greenhouse gases, (EU) No. 2024/573 | Availability of fluorocarbons is limited through a quota system. Prohibition for certain products. Certification will be needed to be allowed to buy fluorinated greenhouse gases and usually to install and repair equipment that contains these gases. | 8 000 The purpose of the regulation from 2015 (which now is updated) was to reduce the emissions of f-gases by two-thirds, from 2015 to the year 2030. We used this assumption for our calculations. |
+|  Agricultural, Forestry and Land Use (AFOLU), Sources Includes: Livestock, Landuse, Other | National legislation: The Swedish Agency for Agriculture's regulations and rules in the Environmental Code | The Swedish Agency for Agriculture's regulations and rules in the Environmental Code. | 4 000 Emission reduction through legislation in combination with other important policy instruments in the agricultural sector such as advice for sustainable agriculture for example through Greppa Näringen, support and compensation that farmers can apply for within the common agricultural policy (CAP), investment support within |
 |   |  |  | Klimatklivet. The Swedish Environmental Protection Agency's forecast is that emissions in the agricultural sector will decrease by 12% from 2020 to 2030. Additional actions are included in part B of CCC.  |
 | --- | --- | --- | --- |
-0
-
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
-
 |  Table A-2.1  |   |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  The emission reduction scenario presented below reduces emissions in Helsingborg by 83% from 1990 until 2030.The current climate and energy plan for Helsingborg is valid 2018-2024, so most of the activities related to that plan have already been implemented.The climate and energy plan for 2025-2030 is currently under review. Actions related to that plan are listed in column 6 (same as described later in section B of the Action Plan). In column 4 are activities that we can clearly distinguish from what we include in column 6, mainly emission reductions related to existing national legislation and targets. The emission reduction due to existing policies and CCC actions are best estimate based on the knowledge we currently have within the organization and should not be taken for absolute values. Calculations need to be refined and adjusted on an ongoing basis.We report emissions and emission reduction from grid supplied energy separately to avoid double counting. Emissions from grid supplied energy is indirectly included in stationary energy (scope 2) because it affects the emission factor for electricity and district heating.  |   |   |   |   |   |   |   |
 |   | (1)Baselineemissions | (2)EmissionsReductionTarget 2030 | (3)2022emission | (4)Emission reductionthrough other ActionPlans | (5)EmissionsGap | (6)Emissions reductionthrough the CCC ActionPlan to address the Gap | (7)Residualemissions  |
 |   | Baselineemissions(ideally not older than 2018)- referring to the inventory used for target setting | The emissions reduction target for 2030 ideally achieves a minimum 80% reduction from the baseline, as reported in Section 2 of the Commitments document of the CCC. The overall target should be absolute or net-zero (i.e. including |  | These are the emissions reductions that would be achieved through existing policies, and plans, outlined in Section A-2.1. Those actions are by definition not part of the action portfolio in section B. If they are fully or partially incorporated in module B-2, their associated reduction potential should be referenced in column (5) and not be included here.WARNING if the baseline is a BAU scenario: If the BAU | (3-4)-2Emission reduction gap to reach the target for the sector. | This column is used to present the already quantified emission reduction associated with the action portfolios outlined in module B-2. Ideally, this equals the gap. If the there is a difference between the reduction potential of the actions specified in module B-2 (for instance because their reduction potential has not been fully estimated or because additional measures will be identified in future iterations), the CCC AP should be explicit about this | 3-4-6Total residualemissions 2030  |
-Climate Neutrality Action Plan
-
-#
-
 |   |  | the compensation of any residual emissions). |   |  | modelling includes any of these existing measures, please also do not include the associated emissions reduction in this column as otherwise it would be double counted. |   |  |   | difference and explain how the difference will be closed. In principle, as long as the difference has not been addressed, it would be considered as part of the residual emissions. |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |   | (absolute) (tons CO2e) | (absolute) (tons CO2e) | (%) |  | (absolute) (tons CO2e) | (%) | (absolute) (tons CO2e) | (%) | (absolute) (tons CO2e) | (%) | (absolute) (tons CO2e) | (%)  |
@@ -666,8 +496,6 @@ Climate Neutrality Action Plan
 |  Buildings, including agricultural facilities, Electricity (Scope 2) | 98 710 | 35 549 | 65 | 65 208 | 28 000 |  | 2 660 |  | 5 785 |  | 31 423 |   |
 |  Buildings, Individual heating of homes and premises (Scope 1) | 55 572 | 881 | 98 | 8 505 | 0 |  | 7 624 |  | 7 000 |  | 1 505 |   |
 |  Transport, on road (scope 1&2) | 257 161 | 38 574 | 85 | 163 086 | 28 500 |  | 96 012 |  | 75 000 |  | 59 586 |   |
-Climate Neutrality Action Plan
-
 |  Transport, machines (scope 1) | 154 458 | 15 446 | 90 | 24 083 | 2 000 |  | 6 637 |  | 9 000 |  | 13 083 |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Transport, air, water, rail (scope 1) | 8 417 | 1 263 | 85 | 6 509 | 600 |  | 4 646 |  | 0 |  | 5 909 |   |
@@ -677,11 +505,6 @@ Climate Neutrality Action Plan
 |  Agricultural, Forestry and Land Use (AFOLU), Sources Includes: Livestock, Landuse, Other | 56 359 | 39 451 | 30 | 47 597 | 4 000 |  | 6 146 |  | 6 000 |  | 37 597 |   |
 |  Total | 1 143 256 | 195 257 |  | 476 185 | 77 836 |  | 200 792 |  | 204 995 |  | 191 054 |   |
 |  Grid supplied energy | 286 551 | 9 859 | 90 | 99 675 | 0 |  | 89 816 |  | 100 000 |  | 0 |   |
-M
-
-Climate Neutrality Action Plan
-
-#
 
 # 2.3 Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
 
@@ -698,11 +521,6 @@ The basis of Helsingborg's climate transition work is a strong infrastructure of
 However, the challenges are more complex than merely a transition and additions to the existing technical systems. A long-term programme of works to decrease emissions from centralised technical infrastructure has contributed to significant historical reductions. This has involved a small number of stakeholders with significant emissions, mandate, and ability to reduce those emissions. However, it is increasingly the case that reductions in remaining emissions become increasingly dependent on the active choices and actions of many stakeholders with smaller emissions at an individual level but with a significant cumulative effect. This may be through a larger number of small businesses, or through the general public of citizens, commuters and employees. This is particularly the case in areas such as mobility where low-carbon solutions need to be attractive, efficient, flexible, accessible, and affordable for them to be seen as a viable option.
 
 The next steps in the transition process will therefore need to combine major infrastructure investment and adaptation, and softer measures to ensure an uptake of new alternatives available. Major infrastructure investment may have challenges related to technology, finance, or
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-O
 
 business model. Softer measures may also need new business models and other approaches to behavioural change to drive the transition process.
 
@@ -726,12 +544,6 @@ The following table provides a comprehensive overview of the systems and barrier
 | --- | --- |
 |  Type of system | Description of system  |
 |  General description | Helsingborg has an energy system consisting of district heating, electricity, district cooling and gas (figure 7). In Helsingborg, the energy sector's emissions mainly come from the use of electricity, district heating and district cooling, as well as individual solutions for heating in homes.  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
-
 |   | The district heating network in Helsingborg is part of a regional network with several production sources. Helsingborg's part of the production consists of two local cogeneration plants (simultaneous production of heat and electricity) as well as waste heat from industry and water treatment plants. Thus, the local district heating in Helsingborg was produced with 100% recycled or renewable energy. The electricity grid supplies Helsingborg with electricity both from local production (cogeneration, wind power and solar power) and electricity that is distributed via the overlying regional grid which is part of a larger northern European system. The municipality's district cooling is produced by free cooling from the sea together with a district heating-driven absorption chiller supplemented by liquid cooling units. The gas network in Helsingborg is part of a regional gas network that stretches along the west coast with a connection down to Denmark, and is supplied, like the electricity network, by a certain amount of locally produced biogas which is supplemented with biogas and natural gas supplied through the surrounding gas network.  |
 | --- | --- |
 |  Type of Barrier | Description of Barrier  |
@@ -739,12 +551,6 @@ Climate Neutrality Action Plan
 |  Financial | The municipal energy company plans for carbon capture and storage at the district heating plant. This requires a lot of electricity and is expensive to operate. Business models to cover the costs of operating the CCS facility need to be put in place.  |
 |  Technological/ Infrastructural | In order to solve the climate challenge, a large part of the fossil fuels that today are mainly used in transport and industry will be phased out and replaced by electrified solutions. This leads to a greatly increased need for electricity. At the same time, production of electricity is changing to increasingly consist of renewable weather-dependent sources such as solar and wind power. Expansion of this new production of electricity takes place above all in the northern parts of Sweden, which means that large amounts of electricity need to be distributed south to also supply southern Sweden with electricity. This places high demands on the main, regional, and local grids, which then need to have sufficient capacity to be able to deliver electricity at the right time. Reinforcements and expansion to cope with this transfer are underway, but it will take time. The consequence will be a limited supply of electricity in the southern parts of Sweden. Helsingborg, its residents, and businesses thus need to economise on the electricity effect in order to continue to enable Helsingborg's development in the future.  |
 |  Lack of control | Lack of control over the electricity grid and lack of local electricity production. This prevents direct interventions in the share of renewables in the electricity mix and reducing the CO2 per KWh.  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-9
-
 |  Regulatory/ Conflict with biodiversity and agriculture land | In Scania's power commission's roadmap, wind power is singled out as a key component to reach the goal of 50 % self-sufficiency in electric power. There are challenges to expand wind power in and around Helsingborg, among other things due to protected bird species that are killed in the wind turbines. For large-scale solar production, there is a conflict with agricultural land.  |
 | --- | --- |
 |  Organisational/ Social and behavioural | The challenge with production of solar electricity lies in making use of all the electricity produced by solar cells so that there is no need to send out too much surplus quantities to the electricity grid and risk overloading it. Solutions are needed to enable increased self-use of solar electricity. By 2026, solar electricity production is estimated to correspond to 15 % of Helsingborg's annual electricity use, and this needs to be able to be integrated into the electricity system in a sustainable way.  |
@@ -757,12 +563,6 @@ Climate Neutrality Action Plan
 |  General description | Within this category, we focus on the use of electricity and heat in homes and properties. In Helsingborg, most houses are heated with district heating. The district heating network is well-developed in the central parts of Helsingborg. But there are areas on the outskirts that do not have access to the district heating network. Emissions from the homes/properties come from the use of natural gas for heating and from the use of electricity. Approximately 1 300 households in Helsingborg heat their houses with natural gas. An efficient use of electricity plays a decisive role in climate change, where above all transport and industry are completely dependent on available fossil-free electricity. An important part of the transition is to reduce and streamline the use of electricity as much as possible only goes, so that electricity is freed up and can meet the increased demand.  |
 |  Type of Barrier | Description of barrier  |
 |  Technological/Infrastructural | Natural gas used for heating houses mainly occur in areas that do not have access to the city's district heating network.  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-0
-
 |  Type of opportunity | Description of opportunity  |
 | --- | --- |
 |  Technical, Behavioural | The national organisation Fossil-free Sweden's national efficiency strategy shows that nationally there is a potential to save around 11 % of the electricity in homes, premises, and industries.  |
@@ -776,12 +576,6 @@ Climate Neutrality Action Plan
 |  Type of barrier | Description of barrier  |
 |  Social/Behavioural | Significant behavioural changes are needed for several transitions in personal mobility. Among other things, we need to build a stronger cycling culture.  |
 |  Social/Behavioural | Fleet replacement takes time; a certain number of fossil-fuelled vehicles will remain in operation in 2030.  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-1
-
 |  Infrastructural | Charging infrastructure for different types of rechargeable vehicles needs to be expanded in a sufficiently fast and effective manner, both regarding the electrical system and for the vehicles to be charged.  |
 | --- | --- |
 |  Regulatory | Helsingborg as an individual actor does not have full discretion to reduce transport emissions sufficiently on its own to achieve the goal. Co-operation between different key actors is necessary. The reduction obligation, mandatory mixing of a certain amount of biofuel with petrol and diesel, has been the most important steering tool to promote bio-based fuels. However, the current government has decided to lower the reduction obligation to a minimum and proposes to lower fuel taxes on petrol and diesel.  |
@@ -797,12 +591,6 @@ Climate Neutrality Action Plan
 |  Type of barrier | **Description of barrier**  |
 |  Technological/Infrastructural (Safety) | If Helsingborg switches to electric machines, there could be problems in crisis situations. The Helsingborg group must be able to maintain functions even during long-term power outages. This may mean having back-up power or alternative plans to continue running important operations even if there are problems with the power grid.  |
 |  Technological | The range of electric work machines is still limited  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-2
-
 |  Financial | The investment cost for an electric machine is significantly higher than for a traditional machine. The City of Helsingborg and municipal companies need to find business models that do not exclude small and medium-sized entrepreneurs due to the increased investment costs.  |
 | --- | --- |
 |  Type of opportunity | **Description of opportunity**  |
@@ -818,12 +606,6 @@ Climate Neutrality Action Plan
 |  Technological/Behavioural | The municipal waste company has started a competence and development centre with the aim of making use of different types of waste more efficiently and creating new circular energy and material flows. The centre offers a testbed for developing tomorrow’s technology solutions.  |
 |  Organisational (important for scope 3) | Public procurement has the potential to become a powerful tool in a transition to a circular economy. Most of the purchases made in a municipality are common to all municipalities. Collaboration around requirements facilitates a more thorough market analysis and creates the opportunity to set more appropriate requirements.  |
 |  Behavioural (important for scope 3) | About a third of the waste in Sweden comes from construction. Much of the waste can continue to be used. Saving and recirculating the materials in our built environment can reduce both society’s environmental impact  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-3
-
 |   | and costs. There is an increasing interest from construction companies in contributing to reduced construction waste.  |
 | --- | --- |
 |  **Field of action: Green industry**  |   |
@@ -841,12 +623,6 @@ Climate Neutrality Action Plan
 |  Conflict over land | Carbon storage is generally higher in natural soil than in arable land and lowest in hard-made surfaces. Restoration of forests, natural and pasture lands and rewetting of drained peatland are cost-effective measures to increase the natural carbon sinks. It also contributes to creating stable ecosystems and leads to more land within the municipality gaining natural values and becoming natural environments, which is important for reaching the environmental and public health goals in the Quality-of-Life program. The challenge is that the measures conflict with using the fertile land in Helsingborg for growing food.  |
 |  Lack of control | The challenge when it comes to agricultural land is that it is mainly owned and managed by private landowners. The city of Helsingborg owns 1 250 hectares of agricultural land which is currently leased out to farmers.  |
 |  **Type of opportunity** | **Description of opportunity**  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
-
 |  Scaling up | There is particularly good potential to increase the carbon sink in Helsingborg's arable land as the areas are large and the carbon content is low.  |
 | --- | --- |
 |  Technological/ spread knowledge | With a newly inaugurated facility for the local production of biochar in operation and an established competence centre for biochar, Helsingborg has a unique opportunity to demonstrate how biochar can play a significant role in climate change.  |
@@ -863,12 +639,6 @@ Climate Neutrality Action Plan
 |   |  Technological, Resident engagement | Solar Park (member-owned solar association) | High | Medium/High  |
 |  Energy systems, built environment | Regulatory | The Swedish National Board of Housing | High | Medium  |
 |   |  Building and planning, infrastructural | Building and Planning departments Helsingborg | High | High  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-5
-
 |   | Building and construction | National and local building, and construction industry through a range of networks/platforms (the entire chain from materials to construction and operation | High | Medium/High  |
 | --- | --- | --- | --- | --- |
 |   |  Behavioural, Social (Choice of heating system, energy savings) | Residents of Helsingborg | High | Low/ Medium  |
@@ -878,12 +648,6 @@ Climate Neutrality Action Plan
 |   |  Infrastructural, Operational, Environmental | Skånetrafiken works for sustainable travel for everyone who lives, works, and travels in Scania) | High | High  |
 |   |  Organisational, Social, Behavioural | The Helsingborg Declaration Network | High | High  |
 |   |  Organisational, learning oriented | Drive Sweden (the development of digitalised, connected, and shared mobility solutions) | Medium | Medium  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-6
-
 |   | Technological/infrastructural | Öresundskraft, municipal energy company | High | High  |
 | --- | --- | --- | --- | --- |
 |   |  Infrastructural | Port of Helsingborg | High | High  |
@@ -897,21 +661,12 @@ Climate Neutrality Action Plan
 |   |  Technological/Behavioural/infrastructural | NSVA (municipal water treatment company) | High | High  |
 |   |  Organisational, Social, Behavioural | The Helsingborg Agreement Network | High | High  |
 |  Green industry | Technological/Behavioural | Local industries, especially users of natural gas. | High | Medium/High  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-7
-
 |   | Technological/infrastructural | Öresundskraft, municipal energy company | High | High  |
 | --- | --- | --- | --- | --- |
 |   |  Technological | NSR (biogas producer) | High | High  |
 |  Nature based solutions | Technological, Behavioural | Farmers in Helsingborg | High | Low to High  |
 |   |  Technological | NSR (producer of biochar) | High | High  |
 |   |  Organisational, technological, Behavioural | LRF (federation of Swedish farmers) | Medium, High | High  |
-Climate Neutrality Action Plan Guidance
-
-O
 
 # 3 Part B – Pathways towards Climate Neutrality by 2030
 
@@ -935,11 +690,6 @@ The impact pathways presented in Table B 1.1 are based on the key shifts require
 These pathways align with the systemic strategic priorities outlined in Helsingborg's 2030 Climate Neutrality Commitments, focusing on reducing emissions from the city's largest sources: transport, energy production and distribution, building heating and electricity use, and industry. Transport remains Helsingborg's biggest source of emissions and is therefore the primary focus of the impact pathways, with the most proposed actions targeting this sector. However, to achieve climate neutrality, all sectors must reduce their emissions, and the impact pathways account for this need.
 
 The level of detail within each pathway varies, depending on the city's discretion over emissions reductions in a given sector. For example, the energy sector, where the city has more control, has seen more advanced planning for its transition. In all cases, the pathways are built by starting with desired outcomes for 2030 and then backtracking to identify the early changes required to reach those goals. The prioritisation of pathways is supported by detailed descriptions of individual
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-9
 
 actions, helping decision-makers focus on the early changes that will enable the most impactful measures.
 
@@ -952,11 +702,6 @@ Helsingborg's journey towards net zero is outlined through a comprehensive list 
 The emission reduction potential of the actions has in most cases been estimated in collaboration with the company ClimateView and the external consultant company Afry. The estimates have been made based on an impact assessment methodology developed by ClimateView. The methodology is based on the fact that climate transition can be divided into a number of shifts from a high-carbon activity to a low carbon activity that fulfill the same need. An example of a shift is a trip made by an electric car instead of a fossil driven car. The first step of the impact assessment is to identify what shift it related to the action that will be assessed. Actions are then divided into three different categories. They can be direct, indirect, or enabling actions. Direct measures lead to a shift without affecting the attributes of the city. For example, if the city group changes its fossil-powered cars to electric-powered cars the attributes of the city will not change. But many actions are indirect, and therefore affect the attributes of a city to encourage people to change behaviour so that a shift occurs. For example, by shortening the distances to public transportation both behaviour and attributes of the city will be affected. Enabling interventions serve as catalysts for other direct or indirect interventions. When the shift and action types are identified, an assessment is made of how large an impact a certain action has on a shift. For indirect measures and enabling measures, this is done qualitatively. The method also handles the need to evaluate the combined effect that several different actions can have on one and the same shift, as well as the cases where certain actions have an impact on several different shifts.
 
 The emission reductions and cost estimates presented in Section B2.2 are based on the City of Helsingborg's current knowledge but should not be taken as absolute values. These calculations will need to be refined and adjusted as more information becomes available. The list of proposed actions should be viewed as a flexible framework that prioritises emission reduction strategies, which, based on current analysis, offer the most reliable path to success. By contrast, estimations of carbon sequestration, including natural sinks, are often less reliable due to environmental variables and uncertainties in long-term impact.
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-0
 
 Additionally, the City of Helsingborg has applied for funding through the EU Innovation Fund for its Carbon Capture and Storage (CCS) initiatives. The final decision on municipal investment in CCS will be made by the City Council in early 2025, which could significantly shape future planning.
 
@@ -974,68 +719,24 @@ A summary of the actions and impact planned to address residual emissions (B-2.3
 | --- | --- | --- |
 |  Portfolio description  |   |   |
 |  Fields of action | Descriptions | Actions  |
-|  Energy systems | Capture and store fossil emissions from district heating production from residual waste. Capture and store biogenic emissions from district heating production from residual waste. | 1. Implementation of CCS.
-Planning and design of CCS.
-(Storage of biogenic emissions are counted towards residual emissions)  |
-|   |  Secure a robust energy system by increasing the availability of electric power and strengthening local electricity production, making it more plannable. | 3. Increase the share of flexible energy use within the city group.
-Increase the self-sufficiency of electricity.
-Solar power production by the City of Helsingborg.
-Solar power production by the City of Helsingborg.  |
+|  Energy systems | Capture and store fossil emissions from district heating production from residual waste. Capture and store biogenic emissions from district heating production from residual waste. | 1. Implementation of CCS. Planning and design of CCS. (Storage of biogenic emissions are counted towards residual emissions) |
+|   |  Secure a robust energy system by increasing the availability of electric power and strengthening local electricity production, making it more plannable. | 3. Increase the share of flexible energy use within the city group. Increase the self-sufficiency of electricity. Solar power production by the City of Helsingborg. Solar power production by the City of Helsingborg. |
 |  Energy system, built environment | Fossil-free fuels heating in homes and premises | 7. Phase out fossil gas from the heating system.  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-1
-
-|   | Reduce the use of electricity in homes, premises and industries | 8. Change all public light sources in the city to LED.
-Energy and climate consultancy for engaging homeowners, companies, and industry building owners to install renewables on private buildings and increase their energy efficiency
-Energy efficiency in public buildings.
-Energy efficiency in homes (external actor).
-Construction of climate-positive housing in healthcare.  |
+|   | Reduce the use of electricity in homes, premises and industries | 8. Change all public light sources in the city to LED. Energy and climate consultancy for engaging homeowners, companies, and industry building owners to install renewables on private buildings and increase their energy efficiency Energy efficiency in public buildings. Energy efficiency in homes (external actor). Construction of climate-positive housing in healthcare. |
 | --- | --- | --- |
-|  Mobility and transport (on road) | Shift to a more transport-efficient society. The number of vehicle kilometers with cars decreases without reducing people's accessibility. | 13. Actions to promote cycling and walking (e.g. constructions and improvements of roads for cyclists and pedestrians. Also includes the introduction of superbike lanes).
-Actions to promote public transportation (e.g. Introduction of Helsingborgsexpressen (electric BRT bus)).
-Explore the benefits of environmental zones, to limit transport with fossil fuel.
-Development of two station areas to facilitate commuters.
-Actions to reduce residents' need for a car (e.g. travels to and from work).  |
-|   |  Shift to a more transport-efficient society. The number of vehicle kilometers for transport of gods with energy-demanding means of transport such as trucks, decreases without reducing accessibility. | 18. Expansion and upgrading of industrial tracks.
-Expansion and upgrading of harbour tracks.
-Explore the benefits of environmental zones, to limit transport with fossil fuel.
-Systems for parcel boxes and/or delivery points in residential areas.
-Development of standardised requirements for sharing of data.  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-2
+|  Mobility and transport (on road) | Shift to a more transport-efficient society. The number of vehicle kilometers with cars decreases without reducing people's accessibility. | 13. Actions to promote cycling and walking (e.g. constructions and improvements of roads for cyclists and pedestrians. Also includes the introduction of superbike lanes). Actions to promote public transportation (e.g. Introduction of Helsingborgsexpressen (electric BRT bus)). Explore the benefits of environmental zones, to limit transport with fossil fuel. Development of two station areas to facilitate commuters. Actions to reduce residents' need for a car (e.g. travels to and from work). |
+|   |  Shift to a more transport-efficient society. The number of vehicle kilometers for transport of gods with energy-demanding means of transport such as trucks, decreases without reducing accessibility. | 18. Expansion and upgrading of industrial tracks. Expansion and upgrading of harbour tracks. Explore the benefits of environmental zones, to limit transport with fossil fuel. Systems for parcel boxes and/or delivery points in residential areas. Development of standardised requirements for sharing of data. |
 
 |   |  | 23. Development of local climate network, The Helsingborg Declaration  |
 | --- | --- | --- |
-|   |  Shift to fossil-free fuels for passenger transport and goods transport. | 24. The City of Helsingborg plans for, develops and invests in infrastructure for electric charging of heavy trucks
-The City of Helsingborg plans for, develops and invests in infrastructure for electric charging of passenger cars.
-Engage residents and business owners in switching to electric vehicles.
-Public procurement, requirements for fossil fuel-free and emission-free transport.
-Development of local climate networks for business and organisations "The Helsingborg Declaration "and "Climate Agreement in Helsingborg".
-Explore the benefits of environmental zones, to limit transport with fossil fuel.
-Increased availability of fossil-free fuel car sharing.  |
+|   |  Shift to fossil-free fuels for passenger transport and goods transport. | 24. The City of Helsingborg plans for, develops and invests in infrastructure for electric charging of heavy trucks The City of Helsingborg plans for, develops and invests in infrastructure for electric charging of passenger cars. Engage residents and business owners in switching to electric vehicles. Public procurement, requirements for fossil fuel-free and emission-free transport. Development of local climate networks for business and organisations "The Helsingborg Declaration "and "Climate Agreement in Helsingborg". Explore the benefits of environmental zones, to limit transport with fossil fuel. Increased availability of fossil-free fuel car sharing. |
 |  Mobility and transport (off road, machines) | Shift to a more efficient use of machines. | 31. Economical driving and planning of the work within the city group  |
-|   |  Shift to fossil-free fuels for machines. | 32. The Helsingborg group contribute charging infrastructure required to support a transition to electrified machinery.
-Purchase of electric machines by the Helsingborg group.
-Increased requirements for electric work machines during procurement.
-Electrically powered work machines in the port of Helsingborg.  |
+|   |  Shift to fossil-free fuels for machines. | 32. The Helsingborg group contribute charging infrastructure required to support a transition to electrified machinery. Purchase of electric machines by the Helsingborg group. Increased requirements for electric work machines during procurement. Electrically powered work machines in the port of Helsingborg. |
 |  Waste and circular economy | Reduce the amount of greenhouse gases leaking from landfills and from compost for garden and park waste. | 36. Installation of landfill gas wells and final cover of the landfill with bio-windows.  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-3
-
 |   |  | 37. Reduce emissions from composts at the recycling centre.  |
 | --- | --- | --- |
 |   |  Reduce the amount of plastic in the residual waste to decrease the emissions from waste incineration for energy recovery. | Handled in local and regional waste plan.  |
-|  Green Industry | Fossil-free manufacturing | 38. 50 % increase in local biogas production
-Establishment of an 80 MW electrolysis plant in Helsingborg.  |
+|  Green Industry | Fossil-free manufacturing | 38. 50 % increase in local biogas production Establishment of an 80 MW electrolysis plant in Helsingborg. |
 |  Green infrastructure & nature-based solutions | Shift agricultural land from a source of greenhouse gases to a sink of greenhouse gases. The agricultural land in Helsingborg is currently a source of greenhouse gases. | 40. The City of Helsingborg works to enable farmers to switch to agricultural methods that reduce emissions of greenhouse gases from agricultural land.  |
 |   |  Increased production and use of biochar | 41. Establishment of a new biochar plant (counted towards residual emissions)  |
 |   |  Increase the natural carbon sinks in soil and vegetation | 42. Creation, restoration, and protection of forests, natural land, pasture lands, seaweed, and eelgrass. Rewetting of drained peatland. (counted towards residual emissions)  |
@@ -1045,10 +746,6 @@ Establishment of an 80 MW electrolysis plant in Helsingborg.  |
 |   |  Action type: | New technology  |
 |   |  Action description | Within Helsingborg, district heating is the most common form of heating. District heat and electricity production generates fossil emissions from plastic produced from fossil raw materials, which are thrown into the residual waste and then burned in the cogeneration plant. The potential for a CCS plant is to reduce fossil emissions from burning of waste by 90%. The CCS also has capacity to capture CO2 from biogenic origin and create a carbon sink, by storage of the CO2.  |
 |  Reference to impact pathway | Field of action | Energy systems  |
-Climate Neutrality Action Plan
-
-#
-
 |   | Systemic lever | Technology/Infrastructure  |
 | --- | --- | --- |
 |   |  Outcome (according to module B-1.1) | Full scale Carbon Capture and Storage at the district heating plant in 2028. The CCS will capture fossil CO2 from burning of fossil waste as well as CO2 from biogenic origin. The capacity of the carbon sink of biogenic carbon will increase when, for example, plastic in the residual waste decreases.  |
@@ -1063,11 +760,6 @@ Climate Neutrality Action Plan
 |   |  Total costs and costs by CO2e unit | 2 000 MSEK and 10–20 SEK per captured ton CO2e in operating costs  |
 
 # B-2.2: Individual action outlines
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-5
 
 |  Action outline | Action name | Planning and design of CCS  |
 | --- | --- | --- |
@@ -1084,31 +776,19 @@ Climate Neutrality Action Plan
 |   |  Removed/substituted energy, volume, or fuel type | Not applicable  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Enabler for CCS. When in operation, the CCS will capture 100 000 tons of CO2e from fossil origin.  |
 |   |  GHG emissions compensated (natural or technological sinks) | When in operation, the CCS will capture 100000 tons of CO2e from biogenic origin.  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
 
 B-2.2: Individual action outlines
 
 |  Action outline | Action name | Increase the share of flexible energy use within the city  |
 | --- | --- | --- |
 |   |  Action type | Robust energy system  |
-|   |  Action description | The south of Sweden has a low degree of self-sufficiency in electrical power. This is a limitation for the electrification in the region. Therefore, a regional goal is set to increase the self-sufficiency to 50% by 2030.
-By predicting the hours when the need for electrical power is greatest and then proactively working to keep power peaks down, there will be a more even power output and a lower load on the power grid. One way to do this is to apply flexible electricity use, for example by using electricity during times of the day when demand is low. The Helsingborg group can contribute a large system benefit because the group accounts for a large part of the total electricity use in the municipality. This is done by inventorying, streamlining and thus controlling the need for electricity.  |
+|   |  Action description | The south of Sweden has a low degree of self-sufficiency in electrical power. This is a limitation for the electrification in the region. Therefore, a regional goal is set to increase the self-sufficiency to 50% by 2030. By predicting the hours when the need for electrical power is greatest and then proactively working to keep power peaks down, there will be a more even power output and a lower load on the power grid. One way to do this is to apply flexible electricity use, for example by using electricity during times of the day when demand is low. The Helsingborg group can contribute a large system benefit because the group accounts for a large part of the total electricity use in the municipality. This is done by inventorying, streamlining and thus controlling the need for electricity. |
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   |  Systemic lever | Technology/infrastructure  |
 |   |  Outcome (according to module B-1.1) | Action will contribute to the output: increased self-sufficiency in electric power within the entire municipality.  |
 |  Implementation | Responsible bodies/person for implementation | All municipal departments and companies  |
 |   |  Action scale & addressed entities | All electricity used by the city group.  |
 |   |  Involved stakeholders | All municipal departments and companies  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-7
-
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Mapping of Helsingborg group's electricity use and possibilities for flexible use has begun. We will be able to see results within a couple of years.  |
 | --- | --- | --- |
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
@@ -1120,19 +800,12 @@ Climate Neutrality Action Plan
 | --- | --- | --- |
 |  Action outline | Action name | Increase self-sufficiency in electricity  |
 |   |  Action type | Robust energy system  |
-|   |  Action description | Develop a local action plan to describe how to increase the self-sufficiency in electricity.
-The south of Sweden has a low degree of self-sufficiency in electrical power. This is a limitation for the electrification in the region. Therefore, a regional goal is set to increase the self-sufficiency to 50 % by 2030.  |
+|   |  Action description | Develop a local action plan to describe how to increase the self-sufficiency in electricity. The south of Sweden has a low degree of self-sufficiency in electrical power. This is a limitation for the electrification in the region. Therefore, a regional goal is set to increase the self-sufficiency to 50 % by 2030. |
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   |  Systemic lever | Technology/ infrastructure  |
 |   |  Outcome (according to module B-1.1) | Action will contribute to the output: increased self-sufficiency in electric power within the entire municipality.  |
 |  Implementation | Responsible bodies/person for implementation | The City of Helsingborg, The municipal energy company Öresundskraft.  |
 |   |  Action scale & addressed entities | Not decided  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-8
-
 |   | Involved stakeholders | The City of Helsingborg, The municipal energy company Öresundskraft.  |
 | --- | --- | --- |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Summarise already preformed reports and analyse needs and possibilities to increase self-sufficiency. To be finalised in 2025  |
@@ -1155,12 +828,6 @@ Climate Neutrality Action Plan
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Installation of solar panels will be ready by 2025.  |
 |  Impact & cost | Generated renewable energy (if applicable) | 1 600 MWh/year  |
 |   |  Removed/substituted energy, volume, or fuel type | Not applicable  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-9
-
 |  GHG emissions reduction estimate (total) per emission source sector | 1 200 tons of CO2e. Climate benefit can be calculated as 0.8 kg CO2 per charged kWh with an electric car.  |
 | --- | --- |
 |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
@@ -1181,25 +848,17 @@ Climate Neutrality Action Plan
 |   |  Removed/substituted energy, volume, or fuel type | Not applicable  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 1 400 tons CO2e. Climate benefit can be calculated as 0.8 kg CO2 per charged kWh with an electric car.  |
 |   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
-Climate Neutrality Action Plan
-
-#
 
 B-2.2: Individual action outlines
 
 |  Action outline | Action name | Phase out fossil gas from the heating system  |
 | --- | --- | --- |
 |   |  Action type | Heating, renewable energy  |
-|   |  Action description | Households in Helsingborg who currently heat their homes with natural/fossil gas shift to district heating.
-Helsingborg considers it important to promote district heating. District heating reduces the need for electricity for heating and enables local electricity production in Helsingborg's cogeneration plant. The production of district heating also supplies electricity and electrical power when it is needed most. When it is cold outside and the need for heating increases, local electricity is produced at the same time. This is in contrast to electrically powered heating alternatives, such as heat pumps, which instead contribute to an increased use of electricity during these cold periods. If you change from electric heating to district heating, electricity and electric power are freed up for other purposes.  |
+|   |  Action description | Households in Helsingborg who currently heat their homes with natural/fossil gas shift to district heating. Helsingborg considers it important to promote district heating. District heating reduces the need for electricity for heating and enables local electricity production in Helsingborg's cogeneration plant. The production of district heating also supplies electricity and electrical power when it is needed most. When it is cold outside and the need for heating increases, local electricity is produced at the same time. This is in contrast to electrically powered heating alternatives, such as heat pumps, which instead contribute to an increased use of electricity during these cold periods. If you change from electric heating to district heating, electricity and electric power are freed up for other purposes. |
 |  Reference to impact pathway | Field of action | Energy systems/built environment.  |
 |   |  Systemic lever | Technology/ infrastructure  |
 |   |  Outcome (according to module B-1.1) | The fossil emissions for homes and premises with heating from natural gas have decreased by 90 % compared to the year 2020 due to a shift to renewable energy for heating.  |
 |  Implementation | Responsible bodies/person for implementation | The municipal company Öresundskraft enables a shift through extension of the district heating net. When not possible shift to heat pumps.  |
-Climate Neutrality Action Plan
-
-#
-
 |   | Action scale & addressed entities | 1 300 households  |
 | --- | --- | --- |
 |   |  Involved stakeholders | The municipal company Öresundskraft, Households in Helsingborg, municipal energy advisors.  |
@@ -1217,12 +876,6 @@ Climate Neutrality Action Plan
 |  Reference to impact pathway | Field of action | Energy system/ built environment.  |
 |   |  Systemic lever | technology  |
 |   |  Outcome (according to module B-1.1) | Electricity use in housing, services, premises, and industry has decreased and/or made more efficient by at least 11 % compared to the year 2020.  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-2
-
 | B-2.2: Individual action outlines |
 | --- |
 | Action outline | Action name | Energy and climate consultancy. |
@@ -1232,12 +885,6 @@ Climate Neutrality Action Plan
 | Systemic lever | Learning and capabilities |
 | Implementation | Outcome (according to module B-1.1) | Electricity use in housing, services, premises, and industry has decreased and/or made more efficient by at least 11 % compared to the year 2020. |
 | Responsible bodies/person for implementation | The city of Helsingborg. |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-3
-
 |   | Action scale & addressed entities | Available for all residents in Helsingborg.  |
 | --- | --- | --- |
 |   |  Involved stakeholders | Energy advisors, residents  |
@@ -1261,11 +908,6 @@ Climate Neutrality Action Plan
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | A work that is ongoing and of which there is a lot of experience within the city group.  |
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
 |   |  Removed/substituted energy, volume, or fuel type | Not available  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
 
 B-2.2: Individual action outlines
 
@@ -1292,12 +934,6 @@ B-2.2: Individual action outlines
 | --- | --- | --- |
 |   |  Action type | Energy efficiency, small scale renewable energy production  |
 |   |  Action description | The Property Department projects a future climate  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-5
-
 |   |  | positive LSS accommodation, 6 apartments in Påarp. The accommodation will function as a pilot project that tests new techniques to reduce the climate impact during the construction and management of properties.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Energy system, built environment.  |
@@ -1317,10 +953,6 @@ Climate Neutrality Action Plan
 |  Action outline | Action name | Actions to promote cycling and walking  |
 |   |  Action type | Sustainable travel  |
 |   |  Action description | Construction of 7 new roads for cyclists and pedestrians. New cycle paths and improvements of links in the existing cycle path network. Promote cycling and walking by elevator, bike parking, safety and upgrades of cycle paths.  |
-Climate Neutrality Action Plan
-
-#
-
 |   |  | Actions for increased cycling and reduced speed for motorists at the city's station areas. Introduction of superbike lanes. This actions also include the following activities, but which are not included in total cost: • Development of mobility hub concept suitable for Helsingborg. • Shared bikes Possibly subsidised bikes to city employees. • Campaign focusing on Helsingborg City employees (Pendlapepp). • Up-scaling and digitalisation of recruitment of bikers.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Mobility and transport (on road)  |
@@ -1332,33 +964,19 @@ Climate Neutrality Action Plan
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Bike and walking paths – in the seven-year investment plan. Campaigns financed and decided upon on a regular basis.  |
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
 |   |  Removed/substituted energy, volume, or fuel type | Not applicable  |
-Climate Neutrality Action Plan
-
-#
 
 B-2.2: Individual action outlines
 
 |  Action outline | Action name | Actions to promote public transportation.  |
 | --- | --- | --- |
 |   |  Action type | Sustainable travel  |
-|   |  Action description | Introduction of electric BRT bus lines (Helsingborgsexpressen) section 2 and 3.
-This actions also include the following activities, which are not included in the total cost:
-Redesign of the bus line network in accordance to the new BRT lines.
-Strengthening of Maria train station as a hub with regional buses from December 2024.
-Upgrading traffic from one to two trains an hour on Västkustbanan from 2026.  |
+|   |  Action description | Introduction of electric BRT bus lines (Helsingborgsexpressen) section 2 and 3. This actions also include the following activities, which are not included in the total cost: Redesign of the bus line network in accordance to the new BRT lines. Strengthening of Maria train station as a hub with regional buses from December 2024. Upgrading traffic from one to two trains an hour on Västkustbanan from 2026. |
 |   |   |  |
 |  Reference to impact pathway | Field of action | Mobility and transport (on road)  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Easier for residents to choose walking, cycling and public transportation. An integrated and coordinated transport infrastructure enables easy transition between different modes of transport and the possibility for different types of shared vehicles and shared services.  |
 |  Implementation | Responsible bodies/person for implementation | Skånetrafiken (the Public Transportation regional company) in close partnership with the city of Helsingborg.  |
 |   |  Action scale & addressed entities | City wide  |
-8
-
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
 
 B-2.2: Individual action outlines
 
@@ -1370,20 +988,12 @@ B-2.2: Individual action outlines
 |   |  Systemic lever | Governance, policy and regulation  |
 |   |  Outcome (according to module B-1.1) | Proximity to important everyday functions in combination with environmental zone, makes it easier for residents to choose walking, cycling and public transportation. An integrated and coordinated transport infrastructure enables easy transition between different modes of transport and the possibility for different types of shared vehicles and shared services. Children and young people primarily walk and  |
 |   |   | involve in the development of a safe and safe transport system. The use of the system in the future is a key component of the system's development.  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-9
-
 |   |  | cycle to school and to activities.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | The City of Helsingborg  |
 |   |  Action scale & addressed entities | City center  |
 |   |  Involved stakeholders | Viable Cities, Lund University, companies of the Helsingborg Declaration  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Evaluation 2025
-Plan 2026
-Implementation 2027  |
+|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Evaluation 2025 Plan 2026 Implementation 2027 |
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
 |   |  Removed/substituted energy, volume, or fuel type | Not applicable  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 7 000 – 20 000 CO2e per year, if environmental zone is implemented.  |
@@ -1397,12 +1007,6 @@ Implementation 2027  |
 |  Reference to impact pathway | Field of action | Mobility and transport  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Proximity to important everyday functions in combination with environmental zone, makes it easier for residents to choose walking, cycling and public transportation. An integrated and coordinated transport infrastructure enables easy transition between different modes of transport and the possibility for different types of shared vehicles and shared services. Children and young  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-0
-
 |   |  | people primarily walk and cycle to school and to activities.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | The City of Helsingborg, Trafikverket, Skånetrafiken  |
@@ -1418,17 +1022,10 @@ Climate Neutrality Action Plan
 | --- | --- | --- |
 |  Action outline | Action name | Actions to reduce residents' need for a car.  |
 |   |  Action type | Sustainable travel  |
-|   |  Action description | Reduce the need to travel to and from work by introducing satellite offices. Develop concept.
-Offering shared mobility in new as well as old neighbourhoods.  |
+|   |  Action description | Reduce the need to travel to and from work by introducing satellite offices. Develop concept. Offering shared mobility in new as well as old neighbourhoods. |
 |  Reference to impact pathway | Field of action | Mobility and transport (on road)  |
 |   |  Systemic lever | Technology and infrastructure, participation  |
 |   |  Outcome (according to module B-1.1) | Proximity to important everyday functions in combination with environmental zone makes it easier for residents to choose walking, cycling and public transportation. An integrated and coordinated transport infrastructure enables easy transition between different modes of transport and the possibility for different types of shared vehicles and shared services. Children and young  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-1
-
 |   |  | people primarily walk and cycle to school and to activities. Broadband expansion and satellite offices creates prerequisites for remote work which reduce the number of trips to and from work for residents.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | The City of Helsingborg Helsingborgshem (Helsingborg's Public Housing Company)  |
@@ -1450,12 +1047,6 @@ Climate Neutrality Action Plan
 |   |  Outcome (according to module B-1.1) | Coordinated and efficient freight transport. Optimized filling levels in trucks and optimized routes. Good collaboration and co-creation between different actors linked to the logistics chain.  |
 |  Implementation | Responsible bodies/person for implementation | City of Helsingborg  |
 |   |  Action scale & addressed entities | Industrial trucks in Helsingborg  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-2
-
 |   | Involved stakeholders | City of Helsingborg, Noce AB  |
 | --- | --- | --- |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Switch change in 2025  |
@@ -1478,19 +1069,13 @@ Climate Neutrality Action Plan
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | An investigation is underway in 2024. It will respond to the future function and needs of the harbour track, for example double track in a southern section and level separation for other traffic. The results will have an impact of the investments costs.  |
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
 |   |  Removed/substituted energy, volume, or fuel type | Not applicable  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
 
 B-2.2: Individual action outlines
 
 |  Action outline | Action name | Systems for parcel boxes and/or delivery points in residential areas.  |
 | --- | --- | --- |
 |   |  Action type | Sustainable goods transport  |
-|   |  Action description | Development of parcel box system well suited for Helsingborg.
-Exploration of delivery robots.  |
+|   |  Action description | Development of parcel box system well suited for Helsingborg. Exploration of delivery robots. |
 |  Reference to impact pathway | Field of action | Mobility and transport (on road)  |
 |   |  Systemic lever | Infrastructure, participation  |
 |   |  Outcome (according to module B-1.1) | Co-ordinated and efficient freight transport. Optimised filling levels in trucks and optimised routes. Good collaboration and co-creation between different actors linked to the logistics chain.  |
@@ -1505,11 +1090,6 @@ Exploration of delivery robots.  |
 |   |  Total costs and costs by CO2e unit | 5 MSEK  |
 
 B-2.2: Individual action outlines
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-4
 
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
@@ -1533,12 +1113,6 @@ Climate Neutrality Action Plan
 |   |  Action description | Gathering key stakeholders in Helsingborg in order to make the logistics chain sustainable and climate neutral.  |
 |  Reference to impact pathway | Field of action | Transport and mobility (on road)  |
 |   |  Systemic lever | Democracy / participation  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-5
-
 |   | Outcome (according to module B-1.1) | Co-ordinated and efficient freight transport. Optimised filling levels in trucks and optimised routes. Good collaboration and co-creation between different actors linked to the logistics chain.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | City of Helsingborg  |
@@ -1558,12 +1132,6 @@ Climate Neutrality Action Plan
 |  Reference to impact pathway | Field of action | Mobility and transport (on road)  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Around 50% of light vehicles and around 30% of heavy vehicles can be electrified in Helsingborg. The public installed charging power for light vehicles amounts to at least 41 MW and for heavy  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-6
-
 |   |  | vehicles to at least 19 MW in 2030. Transport services and deliveries to the Helsingborg group are fossil-free.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | City of Helsingborg  |
@@ -1583,12 +1151,6 @@ Climate Neutrality Action Plan
 |  Reference to impact pathway | Field of action | Mobility and transport (on road)  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Around 50% of light vehicles and around 30% of heavy vehicles can be electrified in Helsingborg. The public installed charging power for light vehicles amounts to at least 41 MW and for heavy vehicles to at least 19 MW in 2030. Transport services and deliveries to the city group are fossil-free.  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-7
-
 | Implementation | Responsible bodies/person for implementation | City of Helsingborg |
 | --- | --- | --- |
 | Implementation | Action scale & addressed entities | City-wide |
@@ -1609,12 +1171,6 @@ Climate Neutrality Action Plan
 |  Implementation | Outcome (according to module B-1.1) | Around 50% of light vehicles and around 30% of heavy vehicles can be electrified in Helsingborg. The public installed charging power for light vehicles amounts to at least 41 MW and for heavy vehicles to at least 19 MW in 2030. Transport services and deliveries to the city group are fossil-free.  |
 |   |  Responsible bodies/person for implementation | The City of Helsingborg  |
 |  Action scale & addressed entities | Action scale & addressed entities | City-wide  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-8
-
 |   | Involved stakeholders | City of Helsingborg, residents, businesses  |
 | --- | --- | --- |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | The first step is to gain knowledge about barriers through climate dialogues with residents and dialogues within the Helsingborg Declaration and climate agreement for Helsingborg.  |
@@ -1634,12 +1190,6 @@ Climate Neutrality Action Plan
 |  Implementation | Responsible bodies/person for implementation | City of Helsingborg  |
 |   |  Action scale & addressed entities | City-wide  |
 |   |  Involved stakeholders | City of Helsingborg, residents and businesses in Helsingborg  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-9
-
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | TBD  |
 | --- | --- | --- |
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
@@ -1664,11 +1214,6 @@ Climate Neutrality Action Plan
 |   |  GHG emissions reduction estimate (total) per emission source sector | 5 000-13 000 tons of CO2e CO2e  |
 |   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
 |   |  Total costs and costs by CO2e unit | 23-45 MSEK  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-0
 
 B-2.2: Individual action outlines
 
@@ -1688,11 +1233,6 @@ B-2.2: Individual action outlines
 |   |  GHG emissions reduction estimate (total) per emission source sector | 6 000-10 000 tons of CO2e per year.  |
 |   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
 |   |  Total costs and costs by CO2e unit | TBD  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
 
 B-2.2: Individual action outlines
 
@@ -1714,11 +1254,6 @@ B-2.2: Individual action outlines
 |   |  Total costs and costs by CO2e unit | TBD, (reducing the amount of fuel will rather lead to savings).  |
 
 B-2.2: Individual action outlines
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
 
 |  Action outline | Action name | The city Group contribute charging infrastructure required to support a transition to electrified machinery.  |
 | --- | --- | --- |
@@ -1743,12 +1278,6 @@ B-2.2: Individual action outlines
 | --- | --- | --- |
 |   |  Action type | Renewable machines  |
 |   |  Action description | Most of the work machines used in work for the group are  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-O
-
 |   |  | owned by contractors and machine hirers. However, the group also has its own work machines, most of which belong to the port, where, among other things, container trucks are used to move goods. Within the City of Helsingborg, riding lawnmowers are used, among other things, to maintain sports facilities and parks. By choosing emission-free work machines for new purchases, the group can inspire other actors to change.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Mobility and transportation off road  |
@@ -1767,14 +1296,6 @@ O
 | --- | --- | --- |
 |  Action outline | Action name | Increased requirements for electric work machines during procurement.  |
 |   |  Action type | Renewable machines  |
-
-3
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
-
 |   | Action description | The range of electrically powered work machines, while still limited, is increasing due to increased demand from cities and companies. On the market today there are, among other things, smaller excavators, smaller wheel loaders and hand-held work tools. When it comes to heavier machinery, it is still primarily HVO that can replace fossil diesel, although a few emission-free heavy-duty machines have been introduced to the market. By placing increasingly high demands on emission-free work machines when procuring contracts, the group creates incentives for manufacturers to further invest in and develop emission-free work machines.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Mobility and transport off road  |
@@ -1785,12 +1306,6 @@ Climate Neutrality Action Plan
 |   |  Involved stakeholders | The Helsingborg group and contractors who work with construction of buildings and public spaces.  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Planning stage. At first, the Helsingborg group need to assess when it is appropriate to set requirements for emission-free machines, additional knowledge is needed about its benefits and challenges. Through pilot projects with electric-powered machines, the group can gather data and experience that can form the basis of more informed decisions about procuring and using emission-free machines on a wider basis.  |
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
-
 |   | Removed/substituted energy, volume, or fuel type | Not applicable  |
 | --- | --- | --- |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 2 000 – 7 000 tons of CO2e per year.  |
@@ -1815,11 +1330,6 @@ B-2.2: Individual action outlines
 |   |  GHG emissions reduction estimate (total) per emission source sector | (2 000 ton CO2e) Since the machines already run on biodiesel, there will be no reduction in CO2 due to shift to electric machines.  |
 |   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
 |   |  Total costs and costs by CO2e unit | 360 MSEK  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
 
 B-2.2: Individual action outlines
 
@@ -1841,11 +1351,6 @@ B-2.2: Individual action outlines
 |   |  Total costs and costs by CO2e unit | 3 MSEK  |
 
 B-2.2: Individual action outlines
-7
-
-HELSINGBORG
-
-Climate Neutrality Action Plan
 
 |  Action outline | Action name | Installation of landfill gas wells and final cover of the landfill with bio-windows.  |
 | --- | --- | --- |
@@ -1862,11 +1367,6 @@ Climate Neutrality Action Plan
 |   |  Removed/substituted energy, volume, or fuel type | Not available  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 15 000 tons of CO2e  |
 |   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
 
 B-2.2: Individual action outlines
 
@@ -1886,11 +1386,6 @@ B-2.2: Individual action outlines
 |   |  GHG emissions reduction estimate (total) per emission source sector | 1 000 tons of CO2e  |
 |   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
 |   |  Total costs and costs by CO2e unit | 0,5 MSEK  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
 
 B-2.2: Individual action outlines
 
@@ -1915,10 +1410,6 @@ B-2.2: Individual action outlines
 
 |  Action outline | Action name | Establishment of an 80 MW electrolysis plant in Helsingborg.  |
 | --- | --- | --- |
-Climate Neutrality Action Plan
-
-#
-
 |   | Action type | Fossil fuel free industry  |
 | --- | --- | --- |
 |   |  Action description | One way to replace the industrial usage of natural gas is by using green hydrogen. Implementation of production, distribution and storage of hydrogen in Helsingborg is needed.  |
@@ -1936,16 +1427,11 @@ Climate Neutrality Action Plan
 |   |  Total costs and costs by CO2e unit | 1 500 MSEK  |
 
 B-2.2: Individual action outlines
-Climate Neutrality Action Plan
-
-#
 
 |  Action outline | Action name | The City of Helsingborg works to enable farmers to switch to agricultural methods that reduce emissions of greenhouse gases from agricultural land.  |
 | --- | --- | --- |
 |   |  Action type | Changed agricultural practices  |
-|   |  Action description | The City of Helsingborg needs to involve farmers in the climate transition and make it easier for more farmers to invest in carbon storage. It can do this by, for example, educating, informing, and making visible support, grants and advice, as well as supporting landowners in applying for agricultural support.
-
-The City of Helsingborg also needs to explore how procurement as a tool can drive and control the demand for food that promotes increased carbon storage in soil and the development of a resilient agricultural landscape. In the case of new leases on the municipality's arable land, the municipality should steer towards an increase in methods that increase carbon storage in the soil. At the same time, previous decisions on organic farming should be considered for new agricultural leases.  |
+|   |  Action description | The City of Helsingborg needs to involve farmers in the climate transition and make it easier for more farmers to invest in carbon storage. It can do this by, for example, educating, informing, and making visible support, grants and advice, as well as supporting landowners in applying for agricultural support. The City of Helsingborg also needs to explore how procurement as a tool can drive and control the demand for food that promotes increased carbon storage in soil and the development of a resilient agricultural landscape. In the case of new leases on the municipality's arable land, the municipality should steer towards an increase in methods that increase carbon storage in the soil. At the same time, previous decisions on organic farming should be considered for new agricultural leases. |
 |  Reference to impact pathway | Field of action | Nature-based solutions  |
 |   |  Systemic lever | Democracy /participation  |
 |   |  Outcome (according to module B-1.1) | Changed agricultural practices on 5 % of the agricultural land  |
@@ -1953,12 +1439,6 @@ The City of Helsingborg also needs to explore how procurement as a tool can driv
 |   |  Action scale & addressed entities | 5 % of agricultural land in Helsingborg.  |
 |   |  Involved stakeholders | The city of Helsingborg, farmers in Helsingborg.  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Dialogues with LRF, the local branch of the federation of Swedish farmers has been initiated. Agriculture is one of  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-2
-
 |   |  | the work packages in the latest application for Viable Cities (climate neutral cities). Awaiting notification if the application has been granted  |
 | --- | --- | --- |
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
@@ -1978,12 +1458,6 @@ Climate Neutrality Action Plan
 |   |  Action scale & addressed entities | Scale based on amount of wood chips from used wood within the municipality.  |
 |   |  Involved stakeholders | NSR (municipality owned waste company), City of Helsingborg. Companies that can contribute with used wood.  |
 |   |  Comments on implementation – consider mentioning | Early investigation / feasibility stage. If implemented, it will be close to 2030.  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-3
-
 |   | resources, timelines, milestones |   |
 | --- | --- | --- |
 |  Impact & cost | Generated renewable energy (if applicable) | Possibilities to retrieve heat from the production process that can feed into the district heating system.  |
@@ -1998,21 +1472,11 @@ Climate Neutrality Action Plan
 |   |  Action description | Restoration of forests, natural and pasture lands, and re-wetting of drained peatlands are cost-effective measures to increase natural carbon sinks. This also helps create stable ecosystems and leads to more land within the municipality gaining natural values and becoming natural environments, which is important for achieving the city's environmental and public health targets. The challenge is that these measures conflict with using the fertile land in Helsingborg for food production. However, converting arable land to natural land in strategic locations can benefit food production by creating shelter, improving the water balance, increasing pollination, and reducing the risk of pest attacks.  |
 |  Reference to impact pathway | Field of action | Nature-based solutions  |
 |   |  Systemic lever | Green infrastructure  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
-
-|   | Outcome (according to module B-1.1) | 0.3 km2 restored natural land.
-km2 new parks and green areas.
-km2 protected nature.
-Marine areas have a good biological status.  |
+|   | Outcome (according to module B-1.1) | 0.3 km2 restored natural land. km2 new parks and green areas. km2 protected nature. Marine areas have a good biological status. |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | The Urban Planning Department at the City of Helsingborg.  |
 |   |  Action scale & addressed entities | City-wide  |
-|   |  Involved stakeholders | The Urban Planning department at the City of Helsingborg.
-The Environmental Department at the City of Helsingborg.  |
+|   |  Involved stakeholders | The Urban Planning department at the City of Helsingborg. The Environmental Department at the City of Helsingborg. |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | A work that takes place continuously until 2030. These actions are also included in Helsingborg's participation in the Green city accord.  |
 |  Impact & cost | Generated renewable energy (if applicable) | Not relevant  |
 |   |  Removed/substituted energy, volume, or fuel type | Not relevant  |
@@ -2027,11 +1491,6 @@ The Environmental Department at the City of Helsingborg.  |
 # Buildings, district heating (scope 2)
 
 Within Helsingborg's heating sector, district heating is the most common form of heating, and the emissions correspond to approximately  $35\%$  of the emissions from energy use within the municipality. Climate emissions resulting from district heating use are calculated similarly for electricity based on an emission factor corresponding to the fuel mix found in the district heating network. Today, these emissions mainly come from the system's cogeneration production, which releases both biogenic and fossil carbon dioxide because of energy recovery from waste destruction. The fossil emissions are mainly derived from plastics produced from fossil raw materials, which are thrown in the residual waste and then burned in the cogeneration plant. As we are planning a CCS facility at this cogeneration plant, the emissions in this sector will be greatly reduced.
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-O
 
 ## Buildings electricity (scope 2)
 
@@ -2048,11 +1507,6 @@ To reach the ambition of net zero emissions in Helsingborg it is necessary that 
 ## Transport, air, water, rail (scope 1)
 
 Helsingborg also has certain emissions from domestic flights, shipping and railways. The industry organisation for domestic aviation aims to be fossil-free by 2030. Local emissions from shipping and railways are already relatively small in relation to how much is transported with these means of transport. Currently, we do not see that these will decrease to a greater extent until 2030. Emissions from shipping will decrease to a larger extent towards 2050 due to EU regulation: According to EU
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-O
 
 regulation, the amount of greenhouse gases from ships must be reduced by two % from 2025, 14.5 % from 2035 and 80 % from 2050, compared to 2020 levels.
 
@@ -2081,11 +1535,6 @@ Greenhouse gases are emitted in the form of methane and nitrous oxide from anima
 The emissions from grid supplied energy will almost be gone by 2030 through implementation of a CCS plant at the cogeneration plant.
 
 ## Carbon sinks for compensation of residual emissions
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-O
 
 Technologies for directly capturing and storing large amounts of carbon dioxide from the air are a very important part of the solution. Technology that separates carbon dioxide from the air is already being tested today at the Filbornaverket in Helsingborg.
 
@@ -2109,13 +1558,6 @@ The municipal energy company Öresundskraft is planning to reduce the emissions 
 
 Biochar acts as a long-term carbon sink because it is a very stable carbon compound that can be preserved in soil for up to 1 000 years. It can be mixed into soil where it helps to bind nutrients and water, and its porous structure gives soil a light and airy texture. During the biochar process, energy is released which can be utilized in the district heating system. Helsingborg has recently inaugurated Sweden's largest facility to produce biochar from garden waste, with the capacity to sequester 3 500 tons of CO2e per year. Expanded production requires additional access to organic material as raw material. In Helsingborg, wood chips, among other things, could be used for production.
 
-7
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-O
-
 However, it is important to consider whether biomass by-products might generate more climate benefits by replacing fossil fuels. Biochar actions are also described in the pathways and action portfolio but not counted toward the 85% reduction in emissions because it is counted here toward residual emissions.
 
 ## Increase Carbon Sequestration in Agricultural Land
@@ -2133,13 +1575,6 @@ Nationally, there is significant potential to reduce greenhouse gas emissions by
 ## Preserve and develop existing carbon sinks in sea, soil, and vegetation
 
 In addition to creating new areas of forest and natural land, it is important to preserve the land we already have; otherwise, the carbon sink and biodiversity decrease. A mature forest can also continue to sequester carbon for many years. Agreements can be made with private landowners who own valuable natural land. It is important that the City of Helsingborg facilitates this work so that landowners see the benefits of protecting land. We also need to ensure that our marine areas have good biological status and that areas with seaweed and eelgrass are preserved and have favourable development. In addition to contributing to high biodiversity, they have the capacity to store carbon to the same extent as a forest on land.
-
-8
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
 
 # Carbon sink potential
 
@@ -2167,11 +1602,6 @@ Below table lists the potential for the different carbon sinks in Helsingborg by
 According to Gap table A 2.1, emissions in Helsingborg are assumed to decrease by 83% compared to 1990. To reach climate neutrality, we need to compensate for 191 000 tons of CO2e.
 
 On the scale that carbon sinks are currently being considered in Helsingborg, we reach a total carbon sink of approx. 124 000 CO2 equivalents. Thus, we need to increase the carbon sink by
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-O
 
 another 66 000 tons of CO2e. To get there, there are a few different possible paths to take. There are ongoing discussions about which route we should take, and there are yet no decision.
 
@@ -2196,11 +1626,6 @@ According to the regulations for mission cities, there is also the possibility f
 ## 3.3 Module B-3 Indicators for Monitoring, Evaluation and Learning
 
 Module B-3 "Indicators for Monitoring, Evaluation and Learning" contains a selection of indicators to monitor and evaluate progress along the selected impacts pathways and fields of action described in Module B-1. as well as a monitoring and evaluation plan, i.e., metadata on each indicator selected, in addition to milestones and timeline. More specifically:
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-O
 
 An overview table listing the indicators selected per outcome and impact including targets and evaluation points (B-3.1);
 A metadata table for each indicator selected (B-3.2).
@@ -2216,11 +1641,6 @@ The Environment Committee is responsible for the monitoring and evaluation of ta
 Helsingborg primarily relies on emissions data from the national emissions database for reporting Scope 1 emissions and energy statistics from Statistics Sweden (SCB) for Scope 2 emissions. A dilemma with the national emissions and energy statistics in Sweden is that there is a delay of 1.5 years before the statistics for a certain year becomes available. Currently, 2022 is the latest year for which statistics are available. Further details regarding data sources can be found in Part A of the CCC.
 
 To support the evaluation and learning process, Helsingborg uses the Climate OS tool, developed by ClimateView. The tool is based on the theory that the climate transition can be broken down into numerous shifts from high-carbon to low-carbon activities that still meet the same needs. For example, shifting from commuting by gasoline-powered car to commuting by electric bus. These shifts form the backbone of the transition. The tool helps conduct a tempo analysis, determining the pace of change required to meet a target within a specified timeframe. The tempo is derived through back casting and helps identify the annual rate of progress needed to achieve long-term goals. For instance, the tempo analysis found that to reduce emissions from the transport sector by 17 000 tons of CO2 per year, an additional 3 800 people would need to switch from personal vehicles to electric buses annually. For a further reduction of 7 000 tons of CO2 per year, an additional 2 900 people would need to start commuting by bike or foot. Results and learnings from tempo analysis will contribute to the work of supplementing the list of CCC indicators and setting targets for the
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
 
 interim target years. The tempo analysis also enables Helsingborg to design tailored, citizen-centric, and outcome-focused actions.
 
@@ -2230,78 +1650,33 @@ interim target years. The tempo analysis also enables Helsingborg to design tail
 |   |   |   |   |   | 2025 | 2027  |
 |  (List early changes/ late outcomes and impacts to be evaluated by indicator) | (List action/pilot project if applicable) |  | (Insert indicator name) |  | (List one value per indicator) | (List one value per indicator)  |
 |  Domain: Greenhouse gas emissions  |   |   |   |   |   |   |
-|  • Carbon Capture and Storage at the district heating plant.
-• Electricity use in housing, services, premises, and industry has decreased and/or made more efficient by at least 11 % compared to the year 2020. | 1-12 | 1 | GHG emission from stationary energy (t CO2 equivalent) |  | 106 495 | 97 830  |
+|  • Carbon Capture and Storage at the district heating plant. • Electricity use in housing, services, premises, and industry has decreased and/or made more efficient by at least 11 % compared to the year 2020. | 1-12 | 1 | GHG emission from stationary energy (t CO2 equivalent) |  | 106 495 | 97 830 |
 |  • Electricity use in housing, services, premises, and industry has decreased and/or made more efficient by at least 11 % compared to the year 2020. | 9-11 | 2 | Electricity use in housing, services, premises and industry (MWh) |  | 572 200 | 555 788  |
 |  • The fossil emissions for homes and premises with heating from natural gas have decreased by 90 % compared to the year 2020. | 10-11 | 3 | GHG emissions from individual heating of homes and premises. |  | 7 000 | 6 000  |
 |  • It is easy for residents to choose walking, cycling and | 13-30 | 4 | GHG emission from on road |  | 116 394 | 85 266  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-3
-
-|  public transportation.
-• Easy transition between different modes of transport.
-• Good access to shared transport.
-• Children and young people primarily walk and cycle to school and to their activities.
-• Good conditions for working remotely.
-• Co-ordinated and efficient freight transport.
-• Optimised filling levels in trucks.
-• Optimised routes for trucks.
-• Good collaboration and co-creation between different actors linked to the logistics chain.
-• 50% of light vehicles are electric.
-• 30% of heavy transport is electric.
-• A well-developed charging infrastructure. |  |  | transport (t CO2 equivalent) |  |  |  |   |
+|  public transportation. • Easy transition between different modes of transport. • Good access to shared transport. • Children and young people primarily walk and cycle to school and to their activities. • Good conditions for working remotely. • Co-ordinated and efficient freight transport. • Optimised filling levels in trucks. • Optimised routes for trucks. • Good collaboration and co-creation between different actors linked to the logistics chain. • 50% of light vehicles are electric. • 30% of heavy transport is electric. • A well-developed charging infrastructure. |  |  | transport (t CO2 equivalent) |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-|  • 50% of light vehicles are electric.
-• A well-developed charging infrastructure. | 25-27,29-30 | 5 | Share of light vehicles in Helsingborg that are electric (%) |  | 18 | 31 | 50  |
-|  • 30% of heavy transport is electric.
-• A well-developed charging infrastructure | 24,26-30 | 6 | Share of heavy vehicles in Helsingborg that are electric (%) |  | 9 | 17 | 30  |
-|  • It is easy for residents to choose walking, cycling and public transportation.
-• Easy transition between different modes of transport. | 13-17 | 7 | Modal share of green transport modes (walking, cycling, public |  | 61 | 64 | 70  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-4
-
+|  • 50% of light vehicles are electric. • A well-developed charging infrastructure. | 25-27,29-30 | 5 | Share of light vehicles in Helsingborg that are electric (%) |  | 18 | 31 | 50 |
+|  • 30% of heavy transport is electric. • A well-developed charging infrastructure | 24,26-30 | 6 | Share of heavy vehicles in Helsingborg that are electric (%) |  | 9 | 17 | 30 |
+|  • It is easy for residents to choose walking, cycling and public transportation. • Easy transition between different modes of transport. | 13-17 | 7 | Modal share of green transport modes (walking, cycling, public |  | 61 | 64 | 70 |
 |  Children and young people primarily walk and cycle to school and to their activities. |  |  | transportation) (%) |  |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Efficient use of work machines.
-Emissions from machines has decreased with 90 % from 1990 to 2030.
-A strong development of the market for electrically powered machines. | 31-35 | 8 | GHG emissions from machines (t CO2 equivalent) |  | 40 | 30 | 15  |
-|  Final cover of the landfill with bio-windows.
-Reduced leakage from landfills. | 36-37 | 9 | GHG emission from waste (t CO2 equivalent) |  | 23 100 | 18 283 | 11 000  |
-|  Hydrogen and biogas can replace fossil gas for manufacturing.
-Reduced emissions from fluorinated gases. | 38-39 | 10 | GHG emission from IPPU (t CO2 equivalent) |  | TBD | TBD | TBD  |
+|  Efficient use of work machines. Emissions from machines has decreased with 90 % from 1990 to 2030. A strong development of the market for electrically powered machines. | 31-35 | 8 | GHG emissions from machines (t CO2 equivalent) |  | 40 | 30 | 15 |
+|  Final cover of the landfill with bio-windows. Reduced leakage from landfills. | 36-37 | 9 | GHG emission from waste (t CO2 equivalent) |  | 23 100 | 18 283 | 11 000 |
+|  Hydrogen and biogas can replace fossil gas for manufacturing. Reduced emissions from fluorinated gases. | 38-39 | 10 | GHG emission from IPPU (t CO2 equivalent) |  | TBD | TBD | TBD |
 |  Hydrogen and biogas can replace fossil gas for manufacturing. | 38-39 | 11 | GHG emissions from industrial processes within the city boundary (t CO2 equivalent). |  | 55 812 | 47 148 | 34 150  |
 |  Reduced emissions from fluorinated gases | - | 12 | GHG emissions from non-energy product use (t CO2 equivalent). |  | 13 246 | 11 237 | 8 223  |
 |  Changed agricultural practices on 5 % of the agricultural land. | 40 | 13 | GHG emission from AFOLU (t CO2 equivalent) |  | 44 542 | 42 506 | 39 451  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-5
-
 |  • Self-sufficiency in electric power. | 5-6, 38-39 | 14 | Local RES energy production. |  | TBD | TBD | TBD  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  • Phasing out of fossil fuels in industry. | 38-39 | 15 | Local hydrogen production (MWh) |  | TBD | TBD | TBD  |
 |  • Carbon Capture and Storage at the district heating plant. | 1-2 | 16 | GHG emission from grid supplied energy (t CO2 equivalent) |  | 99 675 | 99 675 | 9 859  |
 |  • Carbon Capture and Storage at the district heating plant. | 1-2 | 17 | Amount of permanent sequestration of GHG within city boundary (t CO2 equivalent) |  | TBD | TBD | TBD  |
-|  • Changed agricultural practices has increased storage of carbon in agricultural land.
-• Operation of new biochar plant.
-• New parks and green areas. | 41-42 | 18 | Negative emissions through natural sinks (t CO2 equivalent) |  | 10 000 | 100 000 | 171 000  |
+|  • Changed agricultural practices has increased storage of carbon in agricultural land. • Operation of new biochar plant. • New parks and green areas. | 41-42 | 18 | Negative emissions through natural sinks (t CO2 equivalent) |  | 10 000 | 100 000 | 171 000 |
 |  • Changed agricultural practices has increased storage of carbon in agricultural land. | 40 | 19 | Hectares of land with changed agricultural practices (hectares) |  | TBD | TBD | 1 250  |
 |  Domain: Public health and Environment  |   |   |   |   |   |   |   |
 |  • Reduced air pollution |  | 20 | Yearly mean PM2.5, placed in traffic environment (μg/m3) |  | 7.8 | 7.5 | 7  |
 |  • Reduced air pollution |  | 21 | PM 10 concentration level. Number of |  | 3 | 3 | 2-3  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
-
 |   |  |  | days per year that exceed the daily average value of 45 micrograms per cubic meter (μg/m3). |  |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  · Reduced air pollution | 13-30, 38-39 | 22 | NO2 concentration level (μg/m3) |  | 15.6 | 14.6 | 13  |
@@ -2317,12 +1692,6 @@ Climate Neutrality Action Plan
 |  Indicator Unit | CO2 equivalent  |
 |  Definition | Greenhouse gas emissions (mainly CO2 emissions) from the operations of buildings.  |
 |  Calculation | Base emission information can be derived through "Amount of fuel consumption per fuel type x GHG emission per fuel type". Calculation  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-7
-
 |   | methodology has been described in detail in GHG Protocol for Cities (GPC) pages 60 – 73  |
 | --- | --- |
 |  Indicator Context |   |
@@ -2356,12 +1725,6 @@ Climate Neutrality Action Plan
 |  If yes, which action and impact pathway is it relevant for? | Impact pathway: Energy systems, built environment, Action 9-11  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes  |
 |  Data requirements |   |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-8
-
 |  B-3.2: Indicator Metadata  |   |
 | --- | --- |
 |  Indicator Name | GHG emissions from individual heating of homes and premises  |
@@ -2388,12 +1751,6 @@ Climate Neutrality Action Plan
 | --- | --- |
 |  Indicator Name | GHG emission from on road transport  |
 |  Indicator Unit | t CO2 equivalent  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
-
 |  Definition | Greenhouse gas emissions from the operations of vehicles.  |
 | --- | --- |
 |  Calculation | Calculation formulae for Transport indicators can be found in the GHG Protocol for Cities (2020).  |
@@ -2425,12 +1782,6 @@ Climate Neutrality Action Plan
 |  Does the indicator measure indirect impacts (i.e., co-benefits)? | No  |
 |  If yes, which co-benefit does it measure? | Not applicable  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-0
-
 |  If yes, which action and impact pathway is it relevant for? | Impact pathway: Mobility and transport, on road, actions 25-27,29-30  |
 | --- | --- |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
@@ -2464,20 +1815,12 @@ Climate Neutrality Action Plan
 |  References |   |
 |  Deliverables describing the indicator | Will be included in follow up of Helsingborg SECAP  |
 |  Other indicator systems using this indicator | Not that we know of  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-1
-
 |  B-3.2: Indicator Metadata  |   |
 | --- | --- |
 |  Indicator Name | Modal share of green transport modes (walking, cycling, public transportation)  |
 |  Indicator Unit | %  |
 |  Definition | An increase in the shares of walking, biking and public transport indicates that the mobility behaviour of the local population has changed and that the preference for climate friendly mobility options has risen. The transport modes walking, biking and public transport are summarized as green transport modes because they cause no (walking and biking) greenhouse gas emissions, or at least significantly less (public transport) greenhouse gas emissions than the transport modes private motor cars or motorbikes. The indicator can be defined as the average number of trips per day that an inhabitant of the city does walking, biking or going by public transport, expressed as a %age of the average total number of trips per inhabitant and day.  |
-|  Calculation | $$MS_{green} = ((T_w + T_b + T_{train} + T_{bus} + T_{tram}) / T_{total}) \times 100$$
-Where: $T_w =$ Walking trips per capita and day
-$T_b =$ Bike trips per capita and day  |
+|  Calculation | $$MS_{green} = ((T_w + T_b + T_{train} + T_{bus} + T_{tram}) / T_{total}) \times 100$$ Where: $T_w =$ Walking trips per capita and day $T_b =$ Bike trips per capita and day |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | No  |
 |  If yes, which emission source sectors does it measure? | Not applicable  |
@@ -2494,12 +1837,6 @@ $T_b =$ Bike trips per capita and day  |
 |  References |   |
 |  Deliverables describing the indicator | Will be included in follow up of Helsingborg SECAP  |
 |  Other indicator systems using this indicator | CDP  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-2
-
 |  B-3.2: Indicator Metadata  |   |
 | --- | --- |
 |  Indicator Name | GHG emissions from machines  |
@@ -2531,12 +1868,6 @@ Climate Neutrality Action Plan
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes  |
 |  If yes, which emission source sectors does it measure? | Waste  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-3
-
 |  Does the indicator measure indirect impacts (i.e., co-benefits)? | No  |
 | --- | --- |
 |  If yes, which co-benefit does it measure? | Not applicable  |
@@ -2568,12 +1899,6 @@ Climate Neutrality Action Plan
 |  Data requirements |   |
 |  Expected data source | Swedish national emission database  |
 |  Is the data source local or regional/national? | National  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
-
 |  B-3.2: Indicator Metadata  |   |
 | --- | --- |
 |  Indicator Name | GHG emissions from industrial processes within the city boundary  |
@@ -2601,12 +1926,6 @@ Climate Neutrality Action Plan
 |  Indicator Name | GHG emissions from non-energy product use  |
 |  Indicator Unit | t CO2 equivalent  |
 |  Definition | GHG emissions from non-energy product use  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-5
-
 |  Calculation | Amount of fuel consumption per fuel type x GHG emission per fuel type.  |
 | --- | --- |
 |  Indicator Context |   |
@@ -2637,12 +1956,6 @@ Climate Neutrality Action Plan
 |  Does the indicator measure indirect impacts (i.e., co- benefits)? | No  |
 |  If yes, which co-benefit does it measure? | Not applicable  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
-
 |  If yes, which action and impact pathway is it relevant for? | Impact Pathways: Nature based solutions, Action: 40  |
 | --- | --- |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes  |
@@ -2667,12 +1980,6 @@ Climate Neutrality Action Plan
 |  If yes, which co-benefit does it measure? | Not applicable  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 |  If yes, which action and impact pathway is it relevant for? | Impact Pathways: Energy systems, Actions: 5-6, 38-39  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
-
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes  |
 | --- | --- |
 |  Data requirements |   |
@@ -2709,12 +2016,6 @@ Climate Neutrality Action Plan
 | --- | --- |
 |  Indicator Name | GHG emission from grid supplied energy  |
 |  Indicator Unit | t CO2 equivalent  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-8
-
 |  Definition | GHG emissions occurring as a consequence of the use of grid-supplied electricity, heat, steam and/or cooling within the city boundary  |
 | --- | --- |
 |  Calculation | Detailed calculation and scoping methodology described in GPC pages 56 – 75.  |
@@ -2741,12 +2042,6 @@ Climate Neutrality Action Plan
 |  Definition | This indicator supports the reporting of carbon sequestration through “Technological sinks”, such as Biomass for Energy with Carbon Capture and Storage (BECCS) and Direct Air Carbon Capture and Storage (DACCS) technologies. This indicator can only be reported for Carbon Capture Project (CCP) applications which result in permanent sequestration of the CO2 (i.e., injected into geological structures)  |
 |  Calculation | Direct reporting from Carbon Credit Projects (CCP) based on C40 guidance: C40 and NYC Mayor’s Office of Sustainability, Defining Carbon Neutrality for Cities and Managing Residual Emissions. Cities’ perspective, C40, 2019.  |
 |  Indicator Context |   |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-9
-
 |  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | No  |
 | --- | --- |
 |  If yes, which emission source sectors does it measure? | Not applicable  |
@@ -2776,12 +2071,6 @@ Climate Neutrality Action Plan
 |  If yes, which co-benefit does it measure? | Not applicable  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 |  If yes, which action and impact pathway is it relevant for? | Impact Pathways: Nature based solutions, Actions 41-42  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
-
 |  B-3.2: Indicator Metadata  |   |
 | --- | --- |
 |  Indicator Name | Yearly mean PM2,5, placed in traffic environment  |
@@ -2804,12 +2093,6 @@ Climate Neutrality Action Plan
 |  References |   |
 |  Deliverables describing the indicator | Will be included in follow up of Helsingborg SECAP  |
 |  Other indicator systems using this indicator | TBD  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-1
-
 |  Indicator Unit | μg/m3  |
 | --- | --- |
 |  Definition | This indicator corresponds to the highest annual mean of PM2.5 concentration recorded in traffic location.  |
@@ -2836,12 +2119,6 @@ Climate Neutrality Action Plan
 |  Indicator Unit | μg/m3  |
 |  Definition | This indicator corresponds to the highest number of days in a year where the PM10 concentration level recorded at stations in urban and suburban background locations has exceeded the WHO recommendation of 45 μg/m3. It refers to the number of days on the monitoring station that measured the most days in excess of the WHO recommendation of 45 μg/m3.  |
 |  Calculation | This air quality management indicator corresponds to the highest number of days in a year where the PM10 concentration level recorded at stations in urban and suburban  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-2
-
 |   | background locations has exceeded the WHO recommendation of 45 μg/ m3. It refers to the number of days on the monitoring station that measured the most days in exceedance of the WHO recommendation of 45 μg/m³.  |
 | --- | --- |
 |  Indicator Context |   |
@@ -2868,12 +2145,6 @@ Climate Neutrality Action Plan
 |  Calculation | This indicator corresponds to the highest value of the annual mean of nitrogen dioxide (NO2) concentrations recorded in a particular year at stations with the highest traffic locations. Data can be obtained: - From air quality monitoring reports in different stations on a municipal and regional level; and - Based on measurements made in urban and suburban background locations established for this purpose.  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | No  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-3
-
 |  If yes, which emission source sectors does it measure? | Not applicable  |
 | --- | --- |
 |  Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes  |
@@ -2907,12 +2178,6 @@ Climate Neutrality Action Plan
 |  Expected data source | City of Helsingborg  |
 |  Is the data source local or regional/national? | Local  |
 |  Expected availability | TBD  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
-
 |  Suggested collection interval | Yearly  |
 | --- | --- |
 |  References |   |
@@ -2947,12 +2212,6 @@ Climate Neutrality Action Plan
 |  Definition | An indicator that is not relevant for the natural land since 2022 is not available.  |
 |  Calculation | L2= 10 log10 1/24 (12 × 10L2day/10 + 4 × 10222) = 10 log10 10 log10 1/24  |
 |  Calculation | L2= 10 log10 log10 1/24 (12 × 10L2day/10 + 4 × 10222) = 10 log10 10 log10 1/24  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-5
-
 |  Definition | The total area of protected natural areas and restored and naturalised areas in the city.  |
 | --- | --- |
 |  Calculation | Total area of natural, restored, and naturalised land.  |
@@ -2988,12 +2247,6 @@ Climate Neutrality Action Plan
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | TBD  |
 |  Data requirements |   |
 |  Expected data | City of Helsingborg  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-6
-
 |  source |   |
 | --- | --- |
 |  Is the data source local or regional/national? | Local  |
@@ -3024,11 +2277,6 @@ Climate Neutrality Action Plan
 |  References |   |
 |  Deliverables describing the indicator | Baseline report Green City Accord  |
 |  Other indicator systems using this indicator | TBD  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-7
 
 # 4 Part C – Enabling Climate Neutrality by 2030
 
@@ -3047,11 +2295,6 @@ Descriptions of how the governance innovations introduced or planned to reach cl
 ### New approach to governance
 
 Helsingborg is mobilising its resources to drive the climate transition across the municipal organisation, its publicly owned companies and in wider partnerships. The city is establishing a central Transition Team to lead and co-ordinate the transition work, which is organised into thematic areas, each with its own multi-stakeholder working group. The municipality has recently launched an Innovation and Transformation department with an innovation fund and testbed system to support innovation towards climate neutrality. The climate transition is also a focus area for some of the community engagement and environmental education work being carried out by the city. These internal resources are complimented by the Open Academy regional learning arena which is an important resource for shared knowledge development and co-operation with the other Net Zero Cities in the region.
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-8
 
 The policy framework for the governance programme is already in place and the Climate City Contract provides a strategic framework for the delivery stage and is helping to structure the action planning, financial strategy, and investment planning for implementation.
 
@@ -3060,11 +2303,6 @@ The policy framework for the governance programme is already in place and the Cl
 The cross-sectoral transition arena forms the basis for Helsingborg's participatory governance for climate neutrality. At the core of this approach is the establishment of a streamlined and coordinated process that will mobilise climate actions across sectors in Helsingborg with the city group (city and city-owned companies) as the key force. A critical aspect of this model is the emphasis on engagement and collaboration. Recognising that climate actions require collective effort, the city is dedicated to building strong and enduring partnerships with a wide array of stakeholders, including public and private sector actors, civil society, and academia. These collaborations are about fostering deep, collective understanding, and broad participation in Helsingborg's transition towards a sustainable future, where every sector of society plays its role.
 
 The transition arena is designed to provide Helsingborg's climate work with a clear and coherent framework. It combines effective coordination, strong partnerships, and a commitment to innovation and education, while ensuring that efforts are continuously monitored and adjusted to achieve the city's ambitious climate goals. This comprehensive approach will help generate the momentum needed to drive the city's climate agenda forward, ensuring a sustainable and resilient future for all its residents.
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
 
 ![img-0.jpeg](img-0.jpeg)
 Figure 6: Helsingborg's transition arena
@@ -3072,9 +2310,6 @@ Figure 6: Helsingborg's transition arena
 # Transition Team and Working Groups
 
 The climate transition is a joint commitment and responsibility based on decisions by the municipal council, and actions are implemented by the city group with the support of regulations and ownership directives. In line with Helsingborg's new SECAP and several other policy documents that indicate city-wide directions and objectives, a new organisational structure has been introduced in 2024. It consists of two main components: a central Transition Team and different working groups focused on specific emission sectors.
-HELSINGBORG
-
-Climate Neutrality Action Plan
 
 C
 
@@ -3090,13 +2325,6 @@ Monitoring and Problem-solving: By identifying areas where progress is stalled o
 Compilation of Plans: The team is responsible for compiling city-wide documents, such as roadmaps and climate investment plans, as well as for updating Helsingborg's Climate Contract 2030 (a national contract with Viable Cities and Swedish authorities), and the Climate City Contract.
 Financing the transition: The team will support the allocation of financial resources for the climate transition and liaise with the finance team regarding the wider investment portfolio. The city plans to stimulate green investments by developing economic incentives that encourage businesses and individuals to adopt more sustainable practices.
 Reporting to Management Board: The transition team reports on progress in the transition process to the management board, led by the Environment Director. Regular reports are also made to
-
-0
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-O
 
 political committees by the various technical departments, company boards and the overall political leadership of the council.
 
@@ -3127,13 +2355,6 @@ Testbed co-ordination
 
 The department is located in the Helsingborg Innovation District (HEIDI), an innovation hub launched in November 2023 jointly by Campus Helsingborg/Lund University, Region Skåne and the City of Helsingborg. This strategic location means easy contacts between the city and a large community of students and companies that work on smart solutions and collaborations on a daily basis. The ambition is to create long-term capacity for innovation and transformation so that the Helsingborg group can lead, support, and drive the transition process.
 
-1
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
-
 ![img-0.jpeg](img-0.jpeg)
 Figure 8: Innovation model
 
@@ -3144,11 +2365,6 @@ In 2023 the City of Helsingborg implemented a central innovation fund to address
 # Testbed ecosystem
 
 Under the testbed ecosystem umbrella, the city offers both physical and virtual innovation environments where companies, academia and other organisations can collaborate in developing, testing, and introducing new products, services, processes, or organisational solutions. Helsingborg's testbed ecosystem includes both more technically oriented test beds as well as flexible and user-friendly test environments such as living labs. While each individual environment offers a unique opportunity for collaboration, together they also complement each other.
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-3
 
 Here one will find testbeds that offer controlled and often high-tech environments with access to both equipment and basic data. Our RECO concept focuses on innovation and development for the circular transition with resources and expertise in water, waste, and energy. Helsingborg also hosts Sweden's first testbed for municipal data - AI Sweden's National City Lab. Living labs and more open innovation arenas are run within various projects. The city development area Oceanhamnen is a living lab for wastewater recycling within the RECO concept. In addition, work is underway to explore opportunities to establish more permanent living lab operations more notably within health care and culture.
 
@@ -3167,9 +2383,6 @@ A regional Learning Hub for "facilitated action learning" is being established j
 The transition to climate neutrality necessitates a highly coordinated effort across multiple sectors, each with unique stakeholder landscapes and challenges. Effective stakeholder engagement, therefore, cannot adopt a one-size-fits-all approach but must be tailored to the specific needs and dynamics of each sector involved.
 
 In the industrial sector, the focus on transitioning from natural gas to green hydrogen involves a smaller, more specialised group of stakeholders, including large corporations, energy suppliers, and regulatory bodies. Although fewer in number, these stakeholders bring technical complexities that require in-depth
-HELSINGBORG
-
-Climate Neutrality Action Plan
 
 C
 
@@ -3188,11 +2401,6 @@ At the heart of this strategy is the City of Helsingborg's role as an enabler. T
 Citizen involvement is a crucial factor in innovation and collaboration, as it brings a diversity of perspectives, creates relevant solutions, increases public support and acceptance, considers the local context, contributes to long-term sustainability, and promotes democratic participation. In recent years, the city has brought together methods for citizen dialogue and service design under the broader concept of "involvement." This approach aims to work more deeply with development and innovation projects together with those we serve, both by listening and by developing and testing solutions to challenges.
 
 Helsingborg's work with community engagement has been developing over recent years. The municipality has worked with leading researchers from the universities of Lund and Linköping and citizens to develop capacity and approaches to meaningful participation. Some of these methods and approaches were tested and developed in conjunction with the H22 sustainable urban development expo in the city. The city also launched its digital dialogue platform in 2021. Together these elements form a strong foundation for a deeper level of community engagement moving into the future in development work in general across the city, but also for the climate transition. As part of the action planning process in the CCC, more detailed community engagement strategies are being developed to drive change in mobility management. This can
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-#
 
 range from co-design processes to understand and address barriers to active mobility as well as collaborative communications to design to maximise impact.
 
@@ -3210,62 +2418,30 @@ As the City of Helsingborg continues to strengthen citizen involvement, children
 | --- | --- | --- | --- | --- |
 |  Systemic barriers / opportunities addressed | Intervention name | Description | Leadership and stakeholders involved | Co-benefits  |
 |  (Refer to barriers and opportunities identified in Module A-3) | (Indicate name of intervention) | (Describe the substance of the intervention) | (List leaders and all stakeholder involved and affected, referring to the stakeholders mapped in Module A3) | (Indicate how intervention helps achieve the impact listed in Module B-1)  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-6
-
 |  Technological and infrastructure | The Helsingborg Declaration | An initiative where the city works together with stakeholders from the entire logistics chain to develop the Helsingborg region into Europe's most sustainable and fast-moving logistics hub. Initiated 2022, ongoing until further notice. | City Management Department, Enterprise and Destination Development Division, Companies within transport and logistics operating in Helsingborg | Cleaner air, new collaborations and innovations, Increased awareness of climate goals, Reduced energy use, Reduced costs, Reduced resource use  |
 | --- | --- | --- | --- | --- |
 |   |  The Helsingborg Climate Agreement | Climate Agreement for local businesses and associations, supporting the goal of a climate neutral Helsingborg 2030 by actively reducing emissions. Initiated 2021, ongoing until further notice. | Environment department, Local businesses, and associations  |   |
 |   |  Energy and climate advisory service | Helsingborg's energy and climate advisors offer residents individual advice for reduced energy use. Made possible by funding from the Swedish Energy Agency, ongoing until further notice | Residents  |   |
 |   |  Environmental control | Through environmental control and inspections, the city can detect deviations and thereby implement measures that are important for the | Environment Department, local businesses such as industries with a large proportion of emissions  |   |
-Climate Neutrality Action Plan
-
-#
-
 |   |  | environment and human health. Required by Swedish law. |  |   |
 | --- | --- | --- | --- | --- |
 |  Regulatory and Political Systems | The Committee for Quality of Life | The committee is responsible for monitoring issues stated in the Quality of Life programme, such as environment and climate, public health and equal opportunities. Initiated 2018, ongoing until further notice. | Local politicians, City Management Department, Environment Department | New collaborations, Strengthened relationships  |
 |   |  Policy Lab | Together with representatives from 23 Swedish municipalities, Viable Cities and National Agencies Helsingborg is participating in different policy labs, examining how to design policy instruments favouring climate-neutral, inclusive and health promoting mobility, land use, energy sharing, circular resource and material flows. Initiated 2022, ongoing until further notice. | Environment Department, Urban Planning and Technical Services Department, City Management Department, Öresundskraft, Viable Cities, Vinnova, Formas, Energimyndigheten, Trafikverket, Tillväxtverket, Naturvårdsverket |   |
 |   |  Trend analysis and benchmarking | Yearly analysis designed to provide an in-depth picture of global and local trends effecting the city’s work. Initiated 2012, ongoing until further notice. | All departments within the City of Helsingborg |   |
-Climate Neutrality Action Plan
-
-#
-
 |  Financial Systems | Policy Lab | Together with representatives from 23 Swedish municipalities, Viable Cities and National Agencies Helsingborg is participating in different policy labs, examining how to design policy instruments favouring climate-neutral, inclusive and health promoting mobility, land use, energy sharing, circular resource and material flows. Initiated 2022, ongoing until further notice. | Environment Department, Urban Planning and Technical Services Department, City Management Department, Öresundskraft, Viable Cities, Vinnova, Formas, Energimyndigheten, Trafikverket, Tillväxtverket, Naturvårdsverket | Lowering barriers for marginalised groups to access funding  |
 | --- | --- | --- | --- | --- |
 |   |  Roadmaps for climate neutrality | Developing methods to identify feasible measures for reduced emissions within each emission sector, accompanied by estimated costs and investments. Initiated 2023, currently planned to run until 2027. | City Management Department, Environment Department, ClimateView |   |
 |   |  Sustainable linked bonds | In 2023, Helsingborg launched another unique sustainable investment framework, with the option to issue both green and social bonds, either separately or together as a | City Management |   |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-9
-
 |   |  | sustainable bond. The framework is based on Green bond and Social bond principles and enables financing of projects within most of the city's emission categories. Initiated 2021, ongoing until further notice. |  |   |
 | --- | --- | --- | --- | --- |
 |   |  Network for International Cooperation | Monitoring international collaborations, projects and calls that can accelerate the city's work in various ways. Initiated 2014, ongoing until further notice. | All departments and municipal companies within the City of Helsingborg |   |
 |   |  The Climate Fund | Residents of and over 18 years of age and non-profit associations based in Helsingborg can receive up to 100 000 SEK for projects contributing to reduced emissions in Helsingborg or strengthening the involvement of civil society in climate neutrality work. Initiated 2023, ongoing until further notice. | Environment Department |   |
 |   |  The Vision Fund | Residents of and over 18 years of can receive up to 100 000 SEK for projects contributing to the city's vision of Helsingborg 2035. Projects | City Management Department |   |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-0
-
 |   |  | are assessed based on the potential benefit to society. Initiated 2014, ongoing until further notice. |  |   |
 | --- | --- | --- | --- | --- |
 |  Social and Behavioural Systems | Habiteum, the Environmental Workshop | At Habiteum, Helsingborg's workshop for quality of life, the city's administrations and companies, residents, associations, and businesses co-create for a healthy environment and a future with low emissions. Initiated 1989, ongoing until further notice. | Environment Department | Increased public health  |
 |   |  Behavioural campaigns and nudging | The division for environmental education and behavioural influence carries out several different projects and campaigns to inform residents about the city's climate work. By using nudging as a tool, we want to encourage climate-smart habits. Initiated 1989, ongoing until further notice. | Environment Department |   |
 |   |  Climate dialogues | Climate dialogues with different groups of residents to get a better understanding of Helsingborg's residents need in order to contribute to climate- | Environment Department, City Management Department |   |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-1
-
 |   |  | neutrality. Initiated 2023, ongoing until 2025. |  |   |
 | --- | --- | --- | --- | --- |
 |   |  The Climate Fund | Residents of and over18 years of age and non-profit associations based in Helsingborg can receive up to 100 000 SEK for projects contributing to reduced emissions in Helsingborg or strengthening the involvement of civil society in climate neutrality work. Initiated 2023, ongoing until further notice. | Environment Department |   |
@@ -3278,11 +2454,6 @@ This module lists the actions taken by the city to support and foster social inn
 A description of the innovations (what do they innovate?).
 
 For more guidance on social innovation, please refer to the NetZeroCities Quick Read on Social Innovation, to the NetZeroCities Report on indicators &amp; assessment methods for social innovation action plans and the Social Innovation Toolkit. Social innovation case studies are also available on the NetZeroCities website.
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-O
 
 Systemic barriers /opportunities addressed by these innovations (from Module A-3).
 Stakeholders involved in the innovation.
@@ -3295,102 +2466,25 @@ C.2.1 Sample Table: Relations between social innovations, systems, and impact pa
 | --- | --- | --- | --- | --- | --- |
 |  Visualised climate data in our classrooms | Testing sensors that measure climate influencing factors and then visualise them on a dashboard that can be used in. teaching | Citizen acceptance, Behavioural | School and leisure administration /City management department Students and teachers at Västra Ramlösa and Gläntanskolan | Facilitate teaching about how climate works, and make something concrete out of an otherwise abstract issue. | Build awareness  |
 |  The environmental workshop | Environmental program for all students in Helsingborg about sustainable mobility, “reduce, reuse, recycle”, and sustainable energy solutions. | Citizen acceptance, Behavioural | The environmental department City-owned corporations Öresundkraft (energy) and NSR (waste). | School children learn how to travel safely to school by bicycle and how to save resources. | Build awareness, build bicycle culture  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-3
-
 |  Circular economy with new outdoor recycling | Outdoor recycling is a place where materials that would otherwise have been thrown away now instead become new resources for schools | Citizen acceptance, Behavioural | School and recreation services department Schools in Helsingborg | 50% of the city's schools and preschools have picked up materials the outdoor recycling centre | Save resources  |
 | --- | --- | --- | --- | --- | --- |
 |  Haffa | Concept and digital platform to share gadgets and resources, reuse furniture and products instead of buying new | Behavioural | Several departments within the city | Reduced climate footprint through increased sharing of internal resources | Save resources  |
 |  City maps for more families on the move | Produce maps in Geego's app that inspire joint walks in the urban environment. In the walking loops, playful movement tips will appear for the younger members of the family and training exercises for adults. | Citizen acceptance, Behavioural | School and recreation services department, Residents | Leisure activity with a low climate footprint that does not depend on car travel. Increased physical movement for children. | Facilitate for a sustainable lifestyle  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-4
-
 |  Climate Dialogues | Testing different tools and methods for carrying out productive community dialogues so that the city and residents can together reflect on challenges and needs connected to behavioral change necessary for climate neutrality. | Citizen acceptance, Behavioural | Environment department The division for environmental education and behavioral influence, City management department, residents | Increased understanding among residents of the city's climate neutrality goals | Increased understanding of residents' views and thoughts about the city's climate work  |
 | --- | --- | --- | --- | --- | --- |
 |  The Storm in the Calm Neighbourhoods: Sustainable Mobility in the Future | City residents, public servants and politicians lack a common vision about what sustainable mobility in Helsingborg can look like, and therefore lack alignment on possibilities for common goals to work towards. | Citizen acceptance, Infrastructural, Regulatory | City Management Department, Urban Planning and Technical Services Department, Environment Department, Planethon, Residents | Strategic foresight and future prototyping challenge assumptions, explore solutions and facilitate group dialogues with city residents and target groups | Increased public health  |
-5
-
 |  The Climate Fund | City residents and smaller non-profits can pitch ideas and test plans for how to address climate change. Ideas are evaluated against specific criteria and include a diversity of solutions. Residents with winning ideas are awarded up to 9 000 euros to test and implement their ideas. | Financial, Innovation | Environment Department, Residents |  | New solutions and innovations aligning with the climate goals  |
 | --- | --- | --- | --- | --- | --- |
 |  A Sustainable Tomorrow – Conference for children and teenagers | The first youth conference where 150 young people from different schools meet. The students listen to selected speakers and get involved in various activities to forge new relationships and joint action for the climate goals. | Citizen acceptance, Behavioural | A Sustainable Tomorrow, City Management Department, School and Recreation Services Department, Environment Department, school students | Relationship building and collaborative work | New solutions and innovations  |
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-C
-
-|  NEEDS
-Repowered,
-Case 6 | Case study
-focusing on
-the interaction
-between
-energy
-technologies,
-citizen
-engagement,
-business and
-ownership
-models, and
-strategies and
-plans for
-sustainable
-behaviour.
-Focus on
-shared local
-energy
-solutions in
-Oceanhamne
-n, e.g.
-through
-shared
-mobility | Behavioural,
-Infrastructure | Öresundskraft,
-HubPark, City
-Management
-Department,
-RISE | Lower
-energy
-consumption | Reduced
-costs for
-households  |
+|  NEEDS Repowered, Case 6 | Case study focusing on the interaction between energy technologies, citizen engagement, business and ownership models, and strategies and plans for sustainable behaviour. Focus on shared local energy solutions in Oceanhamnen, e.g. through shared mobility | Behavioural, Infrastructure | Öresundskraft, HubPark, City Management Department, RISE | Lower energy consumption | Reduced costs for households |
 | --- | --- | --- | --- | --- | --- |
-|  Miljövårdar
-(Environmental
-wardens) | Environmental
-I wardens
-help residents
-in various
-areas with
-proper waste
-sorting. Their
-presence also
-contributes to
-increased
-well-being
-and safety. | Behavioural | Helsingborgshe
-m, Labour
-Market
-Department | Less waste | Community  |
+|  Miljövårdar (Environmental wardens) | Environmental wardens help residents in various areas with proper waste sorting. Their presence also contributes to increased well-being and safety. | Behavioural | Helsingborgshem, Labour Market Department | Less waste | Community |
 
 ## C-2.2: Description of social innovation interventions
 
 The City of Helsingborg has identified three transformations that are at the centre of a changing world: the green, the social and the technological. These transformations are a common framework and strategy to reach vision Helsingborg 2035. The aim is to strengthen the organisation's power and ability to make a difference through new collaborations, smarter working methods, and common focus.
 
 Our mission as an organisation is to make society better. Our ability to do difference is fundamentally what social transformation is all about. If we are to succeed, we need to address the fundamental causes of society's challenges and create power for real change. Participation, inclusion, individual and joint responsibility are prerequisites for social transformation. A change that also requires us to see ourselves as enabler of the power and knowledge found in others. The transformations are closely connected, enabling each other.
-
-6
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-O
 
 # Vision Helsingborg 2035
 
@@ -3420,11 +2514,6 @@ Behavioural barriers such as putting plastic in residual waste and using the car
 Helsingborg's citizens are worried about threats to life that come with the climate crisis. Because of their concern they are also willing to make necessary changes happen – as a survey showed the citizens are willing to pay more taxes to facilitate measures. Social innovation is an important pathway to nurture strong wills among citizens to contribute to climate neutrality through entrepreneurial endeavours and/or individual actions.
 
 As of now the City of Helsingborg does not have a road map or blueprint specifically for social innovation interventions with a focus on the climate transition, but Vision Helsingborg 2035 and the Quality-of-Life Program provide solid foundation for the next steps. Social transformation is one of the three pillars of Vision Helsingborg 2035. Participation, inclusion, individual and joint responsibility are prerequisites for social transformation, a change that also requires us to see ourselves as enabler of the power and knowledge found in others.
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-O
 
 The Quality-of-Life programme establishes that the city's ambition for sustainable development is for all residents to experience a high quality of life, but with a low environmental impact so that people and businesses reach their full potential in long-term sustainable growth, and so that future generations can also experience a good quality of life. The social transformation, together with the Quality-of-Life program functions as an overall umbrella in the city's work with social innovation. Together they aim to overcome systemic barriers, while lowering barriers for marginalised groups to participate in the city's climate action work.
 
@@ -3435,13 +2524,6 @@ As shown in Table C- 2.1 there are many projects and processes with strong socia
 Social innovation is also supported through the 4.7MSEK Research and Development Fund which is a joint initiative with Lund University. Each year, the City of Helsingborg contributes funding for research and development projects that strengthen higher education, research, and collaboration in and around Helsingborg. The purpose of the fund is to enhance research and development cooperation between the City of Helsingborg and Campus Helsingborg. The aim is to increase research-based collaboration between the City and Campus, contribute to research-driven development in line with the city's goals and priorities, such as climate-neutrality 2030 and increased quality of life.
 
 There is therefore a robust organisation with a strong policy framework, organisational capacity, and experience of iterative innovation in sustainable urban development upon which to build a more comprehensive social innovation programme that is integrated into coming iterations of the action plan. It is expected that this will be in place in the spring of 2025.
-
-8
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-9
 
 # 5 Outlook and next steps
 
@@ -3462,11 +2544,6 @@ To operationalise these plans, detailed roadmaps with specific actions and inves
 Recognising the complexity of this transition, Helsingborg will adopt a portfolio approach to prioritise and sequence initiatives. This approach will enable us to allocate resources to projects with the highest impact potential and make informed decisions about where to focus our efforts. Monitoring emissions and tracking the progress of actions and initiatives will provide valuable insights into the effectiveness of different measures. This reflexive process will help us adapt our strategies as needed, ensuring a dynamic and responsive approach to climate action.
 
 To support this transition, a dedicated Transition Team will be established. This team will orchestrate the various elements of the transition, ensuring that actions are aligned with the overall strategy and that all stakeholders are engaged and informed. The Transition Team will also play a crucial role in ensuring that the move towards climate neutrality is just and equitable, addressing any social or economic disparities that may emerge.
-HELSINGBORG
-
-Climate Neutrality Action Plan
-
-0
 
 Additionally, a structured process will establish a Transition Arena, a collaborative platform where government, industry, academia, and civil society can come together. This arena will encourage dialogue, innovation, and co-creation, ensuring that the transition benefits from diverse perspectives and that all voices are heard.
 
@@ -3521,7 +2598,6 @@ In September 2022, Sweden held municipal elections and the political majority in
 
 The city recognises that the challenges ahead are substantial and will meet them with effective mobilisation of citizen engagement, stakeholders, digitalisation efforts, and large-scale investments.
 
-2
 # Track record
 
 Emissions of all greenhouse gases have decreased with 55% since 1990 within Helsingborg. Our subsequent accomplishments include:
@@ -3606,7 +2682,6 @@ Increasing climate action and reducing reliance on fossil fuels can bring numero
 
 Working towards climate neutrality goals can help Helsingborg achieve various co-benefits, including improving the well-being and health of residents, promoting social equity and justice, achieving financial savings through lower energy costs, and preserving the environment by reducing greenhouse gas emissions and protecting biodiversity. Therefore, it is important for Helsingborg to prioritise climate action and transition to a low-carbon economy to achieve these co-benefits and create a just and sustainable future for all.
 
-5
 # 3. Strategic priorities
 
 Below follows a description of Helsingborg's largest sources of emissions, making it particularly important to devise measures to achieve reductions within these areas, while measures within other areas will also be developed.
@@ -3629,9 +2704,6 @@ more than four times the rate at which emissions decreased from 1990 to 2021. Th
 To enable large-scale change, we must also build transformational capacity within the organisation as well as with other stakeholders. Emissions that are not directly caused by the city of Helsingborg can be managed by processes and decisions enabled by city officials, as well as joint actions for regulation together with key stakeholders, such as residents, businesses, regional and national governments as well as international organisations.
 
 To ensure that greenhouse gas emissions are reduced at the required rate, the city must focus on mobilising stakeholders and financial support, as well as co-creating actions and solutions with key stakeholders and residents to build transformational capacity. By clearly connecting measures for the climate with measures for a higher quality of life, the transition towards a climate-neutral society will also mean a better and more sustainable Helsingborg to live and work in. The process of going about this is very important and a crucial aspect of our city-wide approach of mobilising actors and build common capacity and understanding.
-
-7
-8
 
 # 4. Process and principles
 
@@ -3675,7 +2747,6 @@ An Innovation District was established in 2023 by existing pivotal businesses, m
 
 Helsingborg has a strong tradition of multi-stakeholder approaches to innovation and development towards sustainability. This is a strong foundation on which to build for a successful acceleration of the climate transition process, not least when many of the critical decisions, changes and investments will need to be made by local businesses and local people. The commitment of the city, its political leaders and business, academic and civil society partners are a key strength our transition work, and the climate transition can strengthen these ties further.
 
-0
 # 5. Endorsement
 
 ![img-0.jpeg](img-0.jpeg)

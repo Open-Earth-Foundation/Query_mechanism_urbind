@@ -5329,12 +5329,6 @@ Climate Neutrality Action Plan
 |  EXTRA-TERRITORIAL COOPERATION | contribution26 | O | Building strategic alliances for the gradual relocation of certain sectors of economic activity | contribution27 | O | Strengthening reciprocity between territories  |
 |  MOBILIZATION | contribution28 | O | Informing, reporting on and actively mobilizing all residents and socio-economic players to consolidate actions on the territory and increase their impact |  |  |   |
 |  SHARING KNOWLEDGE AND SKILLS | contribution29 | O | Building and sharing a common culture of climate and biodiversity in the region | contribution30 | O | Sharing and leveraging experience to accelerate the transition  |
-Climate Neutrality Action Plan
-
-Climate Neutrality Action Plan
-
-#
-
 |  Dijon Metropolis - CCC / Action Plan - Transition Pathway  |   |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ,number  |   |   |   |   |   |   |   |
@@ -5563,12 +5557,6 @@ This involves protecting, restoring and managing natural habitats to promote spe
 |   |  0 | millestone 1 | 0 | millestone 2 |  | millestone 3  |
 |  Main milestones | 2027 | Definition of indicators dedicated to the biodiversity footprint |  |  |  |   |
 |  Financial estimate | Estimated cost 2030 Ambitious scenario | cost1 509 520 000 € | Estimated cost 2030 Neutrality scenario | 1 579 340 000 € | Cost in € / tCO2 (Ambitious) | Not evaluated  |
-Climate Neutrality Action Plan
-
-Climate Neutrality Action Plan
-
-#
-
 |  Dijon Metropolis - CCC / Action Plan - Transition Pathway  |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |  number name  |   |   |   |   |   |   |
@@ -5937,10 +5925,6 @@ C
 |   |   | Supporting professional transitions and the attractiveness of professions |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
 |   |  Health, living environment, quality of life | Promoting a culture of risk and hazard management in our region | Reducing vulnerability to natural and health risks exacerbated by climate change |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
 |   |   | Offering everyone a resilient, healthy region with a | (Transversal to action sheets) |  |  |  |  |  |  |  |  |  | PM2.5 concentration (μg/m3) annual average |  | 6 |  |  |  |  |  |   |
-
-4
-Climate Neutrality Action Plan
-
 |  Axis | Domains | Objectives | Action Sheets | GHG emissions |   |   | Resources |   |   | Water and biodiversity |   |   | Health and lifestyle |   |   | Social inclusion |   |   | Economy  |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |   |  |  |  | Indicators concerned | early change (2027) | Late outcome (target 2030) | Indicators concerned | early change (2027) | Late outcome (target 2030) | Indicators concerned | early change (2027) | Late outcome (target 2030) | Indicators concerned | early change (2027) | Late outcome (target 2030) | Indicators concerned | early change (2027) | Late outcome (target 2030) | Indicators concerned | early change (2027) | Late outcome (target 2030)  |

@@ -374,8 +374,8 @@ Climate Neutrality Action Plan
 • Consumption of heat energy (produced in the city) for waste management in the city | • Electricity consumed for the waste management within the city | • Distribution losses from supplying electricity  |
 |  Transport | • Port fuel consumption¹ | • Port electricity consumption | • Distribution losses from supplying electricity  |
 |  Waste² | • Emissions from waste produced in the city and managed within the city
-• Emissions from urban wastewater managed within the city |  | • Emissions from waste produced in the city and managed outside the city boundaries
-• Emissions from urban wastewater managed outside the city boundaries  |
+| • Emissions from urban wastewater managed within the city |  | • Emissions from waste produced in the city and managed outside the city boundaries |
+| • Emissions from urban wastewater managed outside the city boundaries  |
 |  Industrial Process and Product Use (IPPU) |  |  |   |
 |  Agricultural, Forestry and Land Use (AFOLU) | • Emissions from livestock farming within the city |  |   |
 Liepāja
@@ -385,7 +385,7 @@ Climate Neutrality Action Plan
 C
 
 |   | • Emissions from urban land use
-• Emissions from forestry within the city |  |   |
+| • Emissions from forestry within the city |  |   |
 | --- | --- | --- | --- |
 
 A-1.4: GHG emissions by source sectors
@@ -849,7 +849,7 @@ Climate Neutrality Action Plan
 • Delegation of measures to the responsible authorities
 • Ensure feedback to the CCC group  |
 |  Waste Management Advisory Working Group (existing) | • Assess and calculate CO2 emissions from the waste management sector
-• Identify measures to reduce CO2 emissions from the waste management sector  |
+| • Identify measures to reduce CO2 emissions from the waste management sector  |
 |  CCC group (informal and existing) | • Ensure that the conditions of NetZeroCities are met and communicated with the representatives of the initiative
 • Monitoring the implementation of joint measures
 • Ensure annual inventory of CO2 emissions
@@ -1210,7 +1210,7 @@ Module B-2 “Climate Neutrality Portfolio Design” should contain a project de
 • Environmentally friendly mobility and services for municipal employees | CO₂ emissions will be reduced by reducing the number of private vehicles in the city by 16,000, optimising and modernising public transport, and replacing the municipal fleet with 100% electric vehicles.  |
 |  Waste & circular economy | - | -  |
 |  Green infrastructure & nature based solutions | • Climate Change Adaptation Package
-• CO₂ sequestration and nature-based measures | A set of climate change adaptation measures will be implemented. Nature-based solutions will be prioritised in urban development. A plan for CO₂ sequestration measures will be developed.  |
+| • CO₂ sequestration and nature-based measures | A set of climate change adaptation measures will be implemented. Nature-based solutions will be prioritised in urban development. A plan for CO₂ sequestration measures will be developed.  |
 |  Built environment | • Renovation of apartment buildings
 • Energy management system
 • “Energy efficiency first” principle in the manufacturing and service sectors
@@ -1265,7 +1265,7 @@ By 2030, natural gas consumption will be reduced by connecting 50% of households
 | Systemic lever | Governance and policy |
 | Outcome (according to module B-1.1) | CO₂ emission reduction |
 | Implementation | Responsible bodies/person for implementation | • Management and Monitoring Group - Monitoring of the measure
-• Liepājas enerģija Ltd - implementation of the measure |
+| • Liepājas enerģija Ltd - implementation of the measure |
 | Action scale & addressed entities | The whole city where the heat network is located and all potential consumers ready to connect to DH heat networks |
 | Involved stakeholders | Building board - informing existing and potential consumers |
 | Comments on implementation | • Strategy and identification of potential
@@ -1286,10 +1286,10 @@ B-2.2: Individual action outlines
 | Systemic lever | Technology/infrastructure |
 | Outcome (according to module B-1.1) | Energy and CO2 emission reduction |
 | Implementation | Responsible bodies/person for implementation | • Energy Efficiency Group - Organising and implementing the measure
-• Capital companies - the introduction of energy management system |
+| • Capital companies - the introduction of energy management system |
 | Action scale & addressed entities | City-wide: all municipalities and capital company buildings, street lighting and municipal transport |
 | Involved stakeholders | Working Group - provides data and other information
-Companies - provide data and other information |
+| Companies - provide data and other information |
 | Comments on implementation | • Updating the EMS documentation to include municipal transport and/or capital companies
 • Energy consumption accounting and analysis for buildings, street lighting and municipal transport
 • Improving the operational performance of the EMS, including monitoring and detection of discrepancies and anomalies
@@ -1336,7 +1336,7 @@ Climate Neutrality Action Plan
 |   |  Removed/substituted energy, volume or fuel type | Natural gas - 9 784 MWh/year  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 1 976/CO2 year  |
 |   |  Total costs and costs by CO2e unit | 25 million EUR
-650 EUR/tCO2  |
+| 650 EUR/tCO2  |
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Green renewable electricity municipal infrastructure  |
@@ -1365,7 +1365,7 @@ B-2.2: Individual action outlines
 |  Implementation | Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | CO2 emission reduction  |
 |   |  Responsible bodies/person for implementation | • Energy Efficiency Group - Planning and further delegation of the measure to the responsible authorities; monitoring
-• Public Procurement Commission – responsible for announcing procurement  |
+| • Public Procurement Commission – responsible for announcing procurement  |
 |   |  Action scale & addressed entities | All municipal buildings and street lighting; potentially also capital companies  |
 |   |  Involved stakeholders | Local government capital company SIA “Liepājas tramvajs” – takes over experience in announcing green electricity procurement  |
 |  Impact & cost | Comments on implementation | • To ensure comprehensive technical and economic feasibility studies to establish a unified energy community in the Liepāja city territory, with operational principles based on the use of renewable energy sources (RES).
@@ -1465,7 +1465,7 @@ Once energy consumption has been reduced as much as possible, consideration shou
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Energy reduction  |
 |  Implementation | Responsible bodies/person for implementation | • Energy Efficiency Group - Planning and further delegation of the measure to the responsible authorities; monitoring
-• Liepājas Special Economic Zone and cluster sub-group – implementation of the event  |
+| • Liepājas Special Economic Zone and cluster sub-group – implementation of the event  |
 |   |  Action scale & addressed entities | Urban Production and Services Sector Infrastructure  |
 |   |  Involved stakeholders | • Public Relations and Marketing - to inform about opportunities, good practices
 • Industrial enterprises and service providers - in project implementation
@@ -1493,10 +1493,10 @@ B-2.2: Individual action outlines
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Emission reduction  |
 |  Implementation | Responsible bodies/person for implementation | • Energy Efficiency Group - Planning and further delegation of the measure to the responsible authorities; monitoring
-• Liepājas Special Economic Zone and cluster sub-group – implementation of the event  |
+| • Liepājas Special Economic Zone and cluster sub-group – implementation of the event  |
 |   |  Action scale & addressed entities | Energy supply for city industry and services  |
 |   |  Involved stakeholders | • Public Relations and Marketing - to inform about opportunities, good practices
-• Industrial enterprises and service providers - in project implementation  |
+| • Industrial enterprises and service providers - in project implementation  |
 |   |  Comments on implementation | • Identify businesses in the city that might be interested and what needs they have; discuss with the municipality the possibility of introducing the event as an initiative
 • Produce information material on opportunities, good practices, etc.
 • Arrange meetings with businesses (also in the framework of other events) and initiate dialogue
@@ -1793,7 +1793,7 @@ By 2030, natural gas consumption in the housing sector will be reduced by 20%, w
 | Systemic lever | Governance and policy |
 | Outcome (according to module B-1.1) | CO₂ emission reduction |
 | Implementation | Responsible bodies/person for implementation | • Energy Efficiency Group - Planning and further delegation of the measure to the responsible authorities; monitoring
-• Energy Efficiency group Housing sub-group – implementation of the measure |
+| • Energy Efficiency group Housing sub-group – implementation of the measure |
 | Action scale & addressed entities | Private houses |
 | Involved stakeholders | • Environment, Health and Public Participation - Implementation of the Air Improvement Plan
 • Public relations and marketing – creating and implementing information materials and campaigns
@@ -1813,7 +1813,7 @@ Climate Neutrality Action Plan
 #
 
 |  Total costs and costs by CO2e unit | 6,5 million EUR, including the replacement of heating equipment in 20% of private homes
-042 EUR/tCO2  |
+| 042 EUR/tCO2  |
 | --- | --- |
 
 ## B-2.3: Summary strategy for residual emissions
@@ -2076,9 +2076,9 @@ Climate Neutrality Action Plan
 • Proportions of citizens by socio-economic strata who feel they have a say in how the city will reach climate neutrality
 • % of citizens involved in participatory and deliberative process who agree their opinion was listened to and respected  |
 |  Levels of Trust in city's willingness to engage | Trust is essential in processes of collective change. | • % of citizens who agree that their city provides opportunities for participation in relation to decisions on climate neutrality
-• % of citizens who think that their city is committed to involving citizens in decisions related to reaching climate neutrality  |
+| • % of citizens who think that their city is committed to involving citizens in decisions related to reaching climate neutrality  |
 |  Power/Efficacy | Public engagement can help empower citizens to be involved in the transition to climate neutrality. | • % of citizens who agree that they have a role to play in helping the city reach climate neutrality
-• % of citizens who think it is important for them to be involved in decisions related to climate neutrality in the city  |
+| • % of citizens who think it is important for them to be involved in decisions related to climate neutrality in the city  |
 |  Responsiveness | For citizens to feel that the city is genuine about listening to people's needs and suggestions, and for citizens to feel empowered and willing to | • Instances of feedback and engagement spaces and/or mechanisms to respond to citizens' input in decision-making processes
 • # of cases in which recommendations made in participatory and deliberative processes are followed up and responded to  |
 Liepāja
@@ -2121,7 +2121,7 @@ Climate Neutrality Action Plan
 2
 
 |   |  | • # of social innovation services procured
-• # of public procurement procedures implemented  |
+| • # of public procurement procedures implemented  |
 | --- | --- | --- |
 |  SI systemic approaches | Are systemic innovations for climate neutrality that involve social innovation implemented at city-wide level? | • Extent of urban planning systemic solutions implemented by the city
 • Extent of resource circularity solutions implemented by the city  |
@@ -2591,7 +2591,7 @@ Table B-3.2.14.: Reduction of  $\mathrm{CO}_{2}$  emissions from municipal infra
 |  Type of indicator | Direct impact (i.e. greenhouse gas emission reductions) indicator  |
 |  Which emission source sectors are affected? | Stationary energy sources  |
 |  Which measures have an impact? | Continuous maintenance of the energy management system
-Green renewable electricity for municipal infrastructure  |
+| Green renewable electricity for municipal infrastructure  |
 |  Required data  |   |
 |  Intended data source | EMS, Heads of institutions  |
 |  Expected availability | Available  |
@@ -4552,8 +4552,8 @@ tabula
 Pielāgošanās klimata pārmaiņām mērķi
 
 |  Mērķis | Mērķa
-gads | Bāzes
-gads  |
+| gads | Bāzes |
+| gads  |
 | --- | --- | --- |
 |  Uzsākt datu un informācijas apkopošanu par klimata izmaiņu radītajiem riskiem un zaudējumiem Liepājas valstspilsētas pašvaldībā, sākot ar 2023. gadu | 2025 | 2023  |
 |  Veicināt Liepājas valstspilsētas pašvaldības institūciju, iedzīvotāju un infrastruktūras pielāgošanos un izturētspēju pret klimata pārmaiņu izraisītajiem riskiem | 2030 | 2023  |
@@ -4682,7 +4682,7 @@ Ar vides komunikāciju saistītos pasākumu organizēšana un uzraudzība
 Pasākumu delegēšana atbildīgajām iestādēm
 Nodrošināt atgriezenisko saisti ar CCC grupu  |
 |  Atkritumu apsaimniekošanas konsultatīvā darba grupa (esoša) | - Izvērtēt un aprēķināt CO₂ emisijas no atkritumu apsaimniekošanas sektora
-Identificēt pasākumus CO₂ emisiju samazināšanai no atkritumu apsaimniekošanas sektora  |
+| Identificēt pasākumus CO₂ emisiju samazināšanai no atkritumu apsaimniekošanas sektora  |
 |  CCC grupa (neoficiāla un esoša) | - Nodrošināt NetZeroCities nosacījumu ievērošanu un komunikāciju ar iniciatīvas pārstāvjiem
 Veidot kopējo pasākumu ieviešanas monitoringu
 Nodrošināt ikgadēju CO₂ emisiju inventarizāciju
@@ -5302,7 +5302,7 @@ Liepāja kopumā ir pakļauta augstam plūdu riskam, gan stipru nokrišņu ietek
 |  Pasākuma tips | Ilgtermiņa  |
 |  Sistēmiskā svira | Tehnoloģija un infrastruktūra  |
 |  Pasākuma īss apraksts | SIA "Liepājas enerģija" ir privāta kapitāla uzņēmums, kas gatavo biznesa plānu līdz 2030. gadam. Nemot vērā, ka Liepājas centralizētās siltumapgādes sistēmā vēl ir salīdzinoši lielās dabas gāzes katlu māju īpatsvars, kā arī siltumenerģijas pieprasījums nākamo gadu laikā samazināties, jo ēkas arvien vairāk tiks siltinātas, ir nepieciešams izstrādāt ilgtermiņa centralizētās siltumapgādes sistēmas koncepciju, izvērtējot dažādas alternatīvas atjaunojamo energoresursu plašākai lietošanai siltumapgādes sistēmā, ar mērķi 2030. gadā enerģiju ražot 100% no AER.
-ES politika ilgtspejīgas enerģētikas sektorā tiek stingri virzīta enerģijas patēriņa samazināšanas, kā arī atjaunojamo energoresursu plašākas izmantošanas virzienā, atvēlot arī šiem pasākumiem finansējumu. SIA „Liepājas enerģija“ ir nepieciešams jau šobrīd prognozēt, kādu ietekmi atstās esošie un plānotie normatīvie akti, kā arī, kāds būs tās nākotnes biznesa modelis, lai spētu ilgtermiņā nodrošināt enerģiju par konkurētspējīgu cenu. Ir nepieciešams izstrādāt energoefektivitātes pasākumu un monitoringa plānu, lai pienācīgi sagatavotos un īstenotu ES energoefektivitātes direktīvas uzstādītos uzdevumus.  |
+| ES politika ilgtspejīgas enerģētikas sektorā tiek stingri virzīta enerģijas patēriņa samazināšanas, kā arī atjaunojamo energoresursu plašākas izmantošanas virzienā, atvēlot arī šiem pasākumiem finansējumu. SIA „Liepājas enerģija“ ir nepieciešams jau šobrīd prognozēt, kādu ietekmi atstās esošie un plānotie normatīvie akti, kā arī, kāds būs tās nākotnes biznesa modelis, lai spētu ilgtermiņā nodrošināt enerģiju par konkurētspējīgu cenu. Ir nepieciešams izstrādāt energoefektivitātes pasākumu un monitoringa plānu, lai pienācīgi sagatavotos un īstenotu ES energoefektivitātes direktīvas uzstādītos uzdevumus.  |
 |  Galvenie netiešie ieguvumi | • Ietekmes uz vidi un klimatu samazinājums
 • Plašāks atjaunojamo energoresursu lietojums
 • Kurināmā diversifikācija
@@ -5370,7 +5370,7 @@ Līdz 2030. gadam dabasgāzes patēriņš tiks samazināts pie CCS pieslēdzot 5
 • Mazāks individuālo piesārņojuma avotu skaits pilsētā
 • Saglabājas siltumapgādes uzņēmuma konkurētspēja un siltumenerģijas tarifs  |
 |  Atbildīgās institūcijas / personas par ieviešanu | • Vadības un uzraudzības grupa - pasākuma uzraudzība
-• SIA “Liepājas enerģija” – pasākuma ieviešana  |
+| • SIA “Liepājas enerģija” – pasākuma ieviešana  |
 |  Citas iesaistītās institūcijas /personas un to atbildība | • Būvvalde - esošo un potenciālo patērētāju informēšana  |
 
 Liepājas valstspilsētas ilgispējīgas enerģētikas un klimatā rīcības plans 2023.–2030. gadam
@@ -5422,7 +5422,7 @@ Liepāja
 • Ietaupījums vismaz 3-8 % apmērā gadā no enerģijas izmaksām
 • Neatkarīgi izvērtēta, ieviesta un sistemātiski uzlabota EPS  |
 |  Atbildīgās institūcijas /personas par ieviešanu | • Energoefektivitātes grupa - pasākuma organizēšana un ieviešana
-• Kapitālsabiedrības - energopārvaldības ieviešana  |
+| • Kapitālsabiedrības - energopārvaldības ieviešana  |
 |  Citas iesaistītās institūcijas /personas un to atbildība | • Pašvaldību ēku saimnieki – ēku apsaimniekošana  |
 |  Pasākuma mērogs un mērķa grupas | Visa pilsēta: visas pašvaldības un kapitālsabiedrību ēkas, ielu apgaismojum un pašvaldības transports  |
 |  Sasaistē ar attīstības programmu | Liepājas valstspilsētas un Dienvidkurzemes novada attīstības programmas 2022.-2027. gadam Rīcības plāna 1. un 4. rīcības virziens  |
@@ -5491,7 +5491,7 @@ Neatkarīgi no ēku atjaunošanas projektiem, pašvaldībā ir jāizvērtē AER 
 • Pašvaldība rāda labo piemēru klimatneitralitātes mērķu sasniegšanā
 • Iespēja piešāstīt trešās puses finansējumu, kas garantē ilgtermiņa enerģijas ietaupījumu visa līguma garumā un ļauj pašvaldībai saistības uzskaitīt ārpus bilances  |
 |  Atbildīgās institūcijas / personas par ieviešanu | • Energoefektivitātes grupa – pasākuma plānošana un tālāka deleģēšana atbildīgajām institūcijām; uzraudzība
-• Kapitālsabiedrības – pasākumu ieviešana  |
+| • Kapitālsabiedrības – pasākumu ieviešana  |
 |  Citas iesaistītās institūcijas/personas un to atbildība | • Pašvaldības iestāžu, aģentūru un kapitālsabiedrību vadītāji – ēku ekspluatācijas organizēšana  |
 |  Pasākuma mērogs un mērķa grupas | Pašvaldības ēkas  |
 
@@ -5547,7 +5547,7 @@ Tāpat atkarībā no attiecīgajiem Ministru kabineta noteikumiem, būtu jāizve
 • Samazināta ietekme uz klimata pārmaiņām
 • Iespēja rādīt labās prakses piemēru iedzīvotājiem  |
 |  Atbildīgās institūcijas/personas par ieviešanu | • Energoefektivitātes grupa – pasākuma plānošana un tālāka delegēšana atbildīgajām institūcijām; uzraudzība
-• Iepirkuma komisija – atbildīga par iepirkuma izsludināšanu  |
+| • Iepirkuma komisija – atbildīga par iepirkuma izsludināšanu  |
 |  Citas iesaistītās institūcijas/personas un to atbildība | • Pašvaldības kapitālsabiedrība SIA “Liepājas tramvajs” – pārņem pieredzi zaļā elektroenerģijas iepirkuma izsludināšanai  |
 |  Pasākuma mērogs un mērķa grupas | Visas pašvaldības ēkas un ielu apgaismojums; potenciāli arī kapitālsabiedrības  |
 |  Sasaistē ar attīstības programmu | Liepājas valstspilsētas un Dienvidkurzemes novada attīstības programmas 2022.-2027. gadam Rīcības plāna 1. rīcības virziens  |
@@ -5755,7 +5755,7 @@ Uzņēmumiem ir jānovērtē to esošais energoefektivitātes līmenis un jādef
 • Konkurētspējas celšana
 • “Zalā” tēla veidošana  |
 |  Atbildīgās institūcijas /personas par ieviešanu | • Energoefektivitātes grupa - pasākuma plānošana un tālāka delegēšana atbildīgajām institūcijām; uzraudzība
-• Liepājas SEZ un klasteris apakšgrupa – pasākuma ieviešana  |
+| • Liepājas SEZ un klasteris apakšgrupa – pasākuma ieviešana  |
 |  Citas iesaistītās institūcijas/personas un to atbildība | • Sabiedrisko attiecību un mārketinga nodaļa – informēšanā par iespējām, labās prakses piemēriem
 • Rūpniecības uzņēmumi un pakalpojumu sniedzēji – projektu ieviešana
 • Būvniecības valsts kontroles birojs - Energoefektivitātes likuma prasību ievērošanas kontrole Latvijā  |
@@ -5812,9 +5812,9 @@ Liepājas
 • Neatkarība no elektroenerģijas tirgus cenu svārstībām  |
 | --- | --- |
 |  Atbildīgās institūcijas /personas par ieviešanu | • Energoefektivitātes grupa - pasākuma plānošana un tālāka delegēšana atbildīgajām institūcijām; uzraudzība
-• Liepājas SEZ un klasteris apakšgrupa – pasākuma ieviešana  |
+| • Liepājas SEZ un klasteris apakšgrupa – pasākuma ieviešana  |
 |  Citas iesaistītās institūcijas/personas un to atbildība | • Sabiedrisko attiecību un mārketinga nodaļa – informēšana par iespējām, labās prakses piemēriem
-• Rūpniecības uznēmumi un pakalpojumu sniedzēji – projektu ieviešana  |
+| • Rūpniecības uznēmumi un pakalpojumu sniedzēji – projektu ieviešana  |
 |  Pasākuma mērogs un mērķa grupas | Pilsētas ražošanas un pakalpojumu sektora energoapgāde  |
 |  Sasaise ar attīstības programmu | Liepājas valstspilsētas un Dienvidkurzemes novada attīstības programmas 2022.-2027. gadam Rīcības plāna 4. un 8. rīcības virziens  |
 |  Pirmās rīcības | • Apzināt uznēmumus pilsētā, kuriem varētu būt interese un kādas ir vajadzības; izrunāt pašvaldībā par iespēju pasākumu ieviest kā iniciatīvu
@@ -6235,7 +6235,7 @@ Līdz 2030. gadam tiks samazināts dabasgāzes patēriņš mājokļu sektorā pa
 • Iedzīvotāju enerģijas patēriņa un izmaksu samazināšana
 • Gaisa kvalitātes paaugstināšana  |
 |  Atbildīgās institūcijas/personas par ieviešanu | • Energoefektivitātes grupa - pasākuma plānošana un tālāka delegēšana atbildīgajām institūcijām; uzraudzība
-• Energoefektivitātes grupas Mājokļu apakšgrupa – pasākuma ieviešana  |
+| • Energoefektivitātes grupas Mājokļu apakšgrupa – pasākuma ieviešana  |
 |  Citas iesaistītās institūcijas/personas un to atbildība | • Vides, veselības un sabiedrības līdzdalības daļa – Gaisa uzlabošanas plāna ieviešana
 • Sabiedrisko attiecību un mārketinga daļa – informatīvo materiālu un kampaņas izveide un ieviešana
 • Attīstības pārvalde – atbalsta mehānisma izstrāde un ieviešana  |
@@ -6304,7 +6304,7 @@ Liepājas valstspilsētas ilgtspējīgas enerģētikas un klimata rīcības plā
 Liepāja
 
 |   | SEG emisiju pakāpeniskai kompensēšanai, neņemot vērā SEG emisiju samazinājumu no organiskām augsnēm, būtu jāapmežo 5,3 tūkst. ha, bet, ieaudzējot mežu organiskās augsnēs – 1,8 tūkst. ha. Ierīkojot kokaugu stādījumus, būtu jāapstāda 3,5 tūkst. ha. Papildus atmežošanas radīto SEG emisiju pakāpeniskai aizstāšanai līdz 2050. gadam ir jāapmežo 0,3 tūkst. ha minerālaugšņu vai 0,1 tūkst. ha organisko augšņu vai arī jāierīko 0,2 tūkst. ha ātraudzīgu kokaugu stādījumu. Šī pasākuma ietvaros tiks meklētas un vērtētas iespējas palielināt CO_{2} emisiju piesaisti ar jaunām tehnoloģijām un inovācijā, kā arī vērtēta to izmaksu efektivitāte.
-Nepieciešams veicināt zaļās infrastruktūras veidošanu un attīstību, kas ietver gan apstādījumu veidošanu pilsētvidē, kas rada noēnojumu, gan citus dabā balstītus risinājumus.  |
+| Nepieciešams veicināt zaļās infrastruktūras veidošanu un attīstību, kas ietver gan apstādījumu veidošanu pilsētvidē, kas rada noēnojumu, gan citus dabā balstītus risinājumus.  |
 | --- | --- |
 |  Galvenie netiešie ieguvumi | • Samazināta ietekme uz klimata pārmaiņām
 • Uzlabojusies gaisa kvalitāte
@@ -6314,7 +6314,7 @@ Nepieciešams veicināt zaļās infrastruktūras veidošanu un attīstību, kas 
 • Erozijas novēršana
 • Koku stādīšanas pasākumi sabiedrības iesaistei  |
 |  Atbildīgās institūcijas /personas par ieviešanu | Apstādījumu uzraudzības komisija – pasākuma plānošana, organizēšana un deleģēšana citām iestādēm; uzraudzība
-Komunālā pārvalde - atbildīgā par pilsētas mežiem  |
+| Komunālā pārvalde - atbildīgā par pilsētas mežiem  |
 |  Citas iesaistītās institūcijas/personas un to atbildība | Būvvalde – teritorijas plānošana  |
 |  Pasākuma mērogs un mērķa grupas | Liepājas pilsēta (iespējams arī Dienvidkurzemes novads) un zaļās teritorijas  |
 |  Sasaise ar attīstības programmu | Liepājas valstspilsētas un Dienvidkurzemes novada attīstības programmas 2022.-2027. gadam Rīcības plāna 1. rīcības virziens  |
@@ -6609,7 +6609,7 @@ Organizācijas, pārvaldības un sociālo inovāciju intervenes pasākumu uzraud
 • % iedzīvotāju pēc sociālekonomiskiem slāņiem, kuriem ir viedoklis par to, kā pilsēta sasniegs klimatneitralitāti
 • % iedzīvotāju, kuri iēksaistīti līdzdalības pasākumos un kuri piekrīt viņu viedoklis, tika uzklausīts un ņemts vērā  |
 |  Uzticēšanās līmenis pilsētas vēlmei iesaistīties | Uzticēšanās ir būtiska kolektīvo pārmaiņu procesos. | • % iedzīvotāju, kuri piekrīt, ka viņu pilsēta sniedz līdzdalības iespējas saistībā ar lēmumiem par klimatneitralitāti
-• % iedzīvotāju, kuri domā, ka viņu pilsēta ir apņēmusies iesaistīt iedzīvotājus ar klimatneitralitāti saistītos lēmumos  |
+| • % iedzīvotāju, kuri domā, ka viņu pilsēta ir apņēmusies iesaistīt iedzīvotājus ar klimatneitralitāti saistītos lēmumos  |
 |  Jauda/efektivitāte | Sabiedrības iesaistīšanās var palīdzēt dot iespēju iedzīvotājiem iesaistīties pārejā uz klimatneitralitāti. | • % iedzīvotāju, kuri piekrīt, ka viņiem ir nozīme, palīdzot pilsētai sasniegt klimatneitralitāti
 • % iedzīvotāju, kuri uzskata, ka ir svarīgi, lai viņi būtu iesaistīti ar klimatneitralitāti saistītajos lēmumos pilsētā  |
 
@@ -6857,10 +6857,10 @@ Liepāja
 • Siltumenerģijas (kas saražota pilsētā) patēriņš atkritumu, kas saražoti pilsētas teritorijā, apsaimniekošanai | • Elektroenerģijas patēriņš, kas patērēts pilsētas teritorijā saražotu atkritumu apsaimniekošanai | • Sadales zudumi, no elektroenerģijas piegādes  |
 |  Transports | • Ostas degvielas patēriņš^{52} | • Ostas elektroenerģijas patēriņš | • Sadales zudumi, no elektroenerģijas piegādes (Tiks noteikts)  |
 |  Atkritumi^{53} | • Emisijas no pilsētā saražotajiem atkritumiem, kas apsaimniekoti pilsētas robežās
-• Emisijas no pilsētā radītajiem notekūdeņiem, kas apsaimniekoti pilsētas robežās | Neatbilst | • Emisijas no pilsētā saražotajiem atkritumiem, kas tiek apsaimniekoti ārpus pilsētas robežās
-• Emisijas no pilsētā radītajiem notekūdeņiem, kas tiek apsaimniekoti ārpus pilsētas robežās  |
+| • Emisijas no pilsētā radītajiem notekūdeņiem, kas apsaimniekoti pilsētas robežās | Neatbilst | • Emisijas no pilsētā saražotajiem atkritumiem, kas tiek apsaimniekoti ārpus pilsētas robežās |
+| • Emisijas no pilsētā radītajiem notekūdeņiem, kas tiek apsaimniekoti ārpus pilsētas robežās  |
 |  Ražošanas procesi un produktu izmantošana | • Emisijas no ražošanas procesiem, kas noris pilsētas robežās
-• Emisijas no produktu izmantošanas, kas notiek pilsētas robežās | Neatbilst | Neatbilst  |
+| • Emisijas no produktu izmantošanas, kas notiek pilsētas robežās | Neatbilst | Neatbilst  |
 |  Lauksaimniecība, mežsaimniecība, zemes izmantošana | • Emisijas no lopkopības, kas noris pilsētas robežās^{54}
 • Emisijas no pilsētas zemes izmantošanas^{55}
 • Emisijas no mežsaimniecības pilsētas robežās | Neatbilst | Neatbilst  |
@@ -7385,7 +7385,7 @@ Indikators #37: CO₂ emisiju samazinājums no pašvaldības infrastruktūras el
 |  Indkatora tips | Tiešās ietekmes (proti, siltumnīcefekta gāzu emisiju samazinājuma) indikators  |
 |  Kurus emisiju avotu sektorus tas ietekmē? | Stacionārie enerģijas avoti  |
 |  Kuri pasākumi to ietekmē? | • Energopārvaldības sistēmas nepārtraukta uzturēšana
-• Zaļā atjaunojamā elektroenerģija pašvaldības infrastruktūrai  |
+| • Zaļā atjaunojamā elektroenerģija pašvaldības infrastruktūrai  |
 |  Nepieciešamie dati  |   |
 |  Paredzētais datu avots | EPS, iestāžu vadītāji  |
 |  Paredzamā pieejamība | Pieejams  |
@@ -7620,7 +7620,7 @@ Pasākuma "Pašvaldības darbinieku videi draudzīga pārvietošanās un pakalpo
 |  Indikatora nr. | #55  |
 |  Mērvienība | tCO₂/gadā  |
 |  Skaidrojums | CO₂ emisiju apjoms no pašvaldības transporta
-degvielas patēriņa  |
+| degvielas patēriņa  |
 |  Noteikšana | Aprēķins – Pašvaldības transportlīdzekļu enerģijas
 patēriņš pēc degvielas veida reizināts ar attiecīgā
 resursa emisiju faktoru  |

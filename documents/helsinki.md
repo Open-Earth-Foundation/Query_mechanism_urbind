@@ -1781,7 +1781,7 @@ Climate Neutrality Action Plan
 • Calculating the lifecycle costs and carbon footprints of the options.
 • Implementing light market dialogues. | Buildings and Public Areas / Built Assets Management / Construction Contracting / Maintenance, Land Use and City Structure, HKL | 2020–2022  |
 |  8. Transferring good and functional practices into processes, instructions and models that will also steer future projects, based on the experiences of Actions 5–7.
-• Including aspects such as climate change prevention and mitigation, promoting circular economy, and protecting natural diversity into the maintenance classification of public areas. | Buildings and Public Areas / Built Assets Management / Maintenance, Land Use and City Structure, Development Services, HKL | 2022–2024  |
+| • Including aspects such as climate change prevention and mitigation, promoting circular economy, and protecting natural diversity into the maintenance classification of public areas. | Buildings and Public Areas / Built Assets Management / Maintenance, Land Use and City Structure, Development Services, HKL | 2022–2024  |
 |  9. Promoting the development of national emissions calculations for infrastructural construction in collaboration with the Ministry of the Environment, the Finnish Transport Infrastructure Agency, the Finnish Environment Institute and experts (universities, consultants, etc.). | Buildings and Public Areas / Built Assets Management | 2020 →  |
 Helsinki City of Helsinki
 
@@ -2048,7 +2048,7 @@ B-3.1: Impact Pathways
 |  Actions for decreasing emissions from heating | actions 1-12 | 2 | Overall emissions from heating |  | 400 kt co2e (from 1086 in 2023) | 220 kt co2e | 90 kt co2e  |
 |  Actions for decreasing emissions from transport | Actions 17-22 | 3 | Overall emissions in transport |  | 510 -kt c2e (from 528 in 2023) |  |   |
 |   |   |  4 | -Share of journeys taken by private cars of all journeys
-Share of sustainable journeys out of all journeys in the city |  |  | 485 kt co2e | 370 kt co2e  |
+| Share of sustainable journeys out of all journeys in the city |  |  | 485 kt co2e | 370 kt co2e  |
 |   |   |  5 | -Increased bike lanes |  |  |  |   |
 Helsinki City of Helsinki
 
@@ -2057,8 +2057,8 @@ Climate Neutrality Action Plan
 4
 
 |   |  | 6 | -Improved e-charging infrastructure
-Proportion of electric and gas cars of the passenger car population |  | currently the number is 14% |  | 140+140 km
-new chargers  |
+| Proportion of electric and gas cars of the passenger car population |  | currently the number is 14% |  | 140+140 km |
+| new chargers  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Actions for decreasing emissions from electricity | actions 13-16 | 8 | -Overall emissions from electricity |  | 189 kt co2e (from 262 in 2023) | 145 kt co2e | 98 kt co2e  |
 |  Actions for decreasing emissions from built environment | Actions 24-32 | 9 | -A limit value for the lifecycle carbon footprint of new residential blocks of flats set |  | 16kg co2e /m²/a |  | Has not been set yet  |
@@ -2073,7 +2073,7 @@ Climate Neutrality Action Plan
 |   |  |  | preconstruction plan. |  |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Actions for green infrastructure and nature based solutions | Actions 33-34 | 12 | -The green area factor
-Tree canopy cover |  | has not been set yet |  |   |
+| Tree canopy cover |  | has not been set yet |  |   |
 |  Actions for circular economy | Action 35 | 14 | Increase of circularity in the city |  |  |  |   |
 
 The key indicator for monitoring is the development of the City's total emissions. The progress on the target will also be monitored through the following sector-specific indicators:
@@ -2439,14 +2439,14 @@ O
 | --- | --- | --- | --- |
 |  Share of nature reserves of total land area | 4,0 % | 4,4 % | The indicator has improved  |
 |  Change in the number and area of nature reserves (from previous year) | +4 pcs ja
-+42.1 ha | +5 pcs ja
-+73.4 ha | The indicator has improved  |
+| +42.1 ha | +5 pcs ja |
+| +73.4 ha | The indicator has improved  |
 |  Total land area of water-permeable areas in Helsinki (available every second year) | 64 % | - | The indicator will next be calculated in 2024.  |
 |  The area of forests and wooded areas or their relative proportion of all land areas (available every second year) | 42 % | - | The indicator is calculated every second year, the next time being in 2024.  |
 |  Change in the number of natural areas (compared to previous year) | The total area of nature areas in 2022 was 8,399 ha (39% of the city's land area). | (not available) | Data on the amount of nature areas in 2022 produced comparably for the first time.  |
 |  Change in the number of bumblebee specimens | -61 %
-(from 2021) | +41 %
-(from 2022) | The indicator has improved. (It must be noted that annual fluctuations in insect populations are normal, and a distinct trend can only be observed in the long term.)  |
+| (from 2021) | +41 % |
+| (from 2022) | The indicator has improved. (It must be noted that annual fluctuations in insect populations are normal, and a distinct trend can only be observed in the long term.)  |
 |  Change in the number of European honeybee specimens | -28 %
 (from 2021) | -2 %
 (from 2022) | No substantial change in the development of the indicator.  |

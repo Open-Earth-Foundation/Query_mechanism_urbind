@@ -552,7 +552,7 @@ Table 4 Climate budget measures
 |  Road transport | Measures to facilitate emission-free vehicles. Effect is included in baseline trajectory scenario. Effect not included in sum | 24712  |
 |  Road transport | Zero increase in passenger car transportation from 2019 to 2029. The effect of the measure is an avoided increase in emissions. Effect is not included in the sum | 4939  |
 |  Road transport | Fossil-free Road public transport
-It is assumed that the start of the new bus contract for Nord-Jæren will take place on 1 July 2026, and that from then on, the buses will be battery-electrically operated throughout this contract. Estimates 5 % private buses that will not be electrified. | 9500  |
+| It is assumed that the start of the new bus contract for Nord-Jæren will take place on 1 July 2026, and that from then on, the buses will be battery-electrically operated throughout this contract. Estimates 5 % private buses that will not be electrified. | 9500  |
 |  Road transport | Stavanger municipality's vehicle fleet strives to be emission-free by 2025. There are still 222 petrol and diesel cars to be replaced by 2025 (all departments including enterprises). Effect included in first measure, not included in sum. | 280  |
 |  Waterborne Navigation | Fossil-free fast boats and ferries calling in Stavanger: Electrification of the Ryfylke ferry, the Ryfylke routes, the Hommersåk connection, Finnøy and Vassøy connection | 15807  |
 |  Waterborne Navigation | Measures to facilitate fossil-free port operations: Shore power at the Buøy shipyard: Rosenberg Worley's shore power facility opened June 2022. Emission reductions from shore power facilities for cruise ships at the shore quay from 2026. The effect of loading speedboats is taken care of by the measure above. | 3970  |
@@ -783,11 +783,8 @@ Climate Neutrality Action Plan
 |  NOU | National | The Norwegian Official Report 2023:25 « The transition to low emissions. Climate policy choices towards 2050 » / NOU 2023:25 «Omstilling til lavutslipp – veivalg for klimapolitikken mot 2050» | The Norwegian report on transition to low emissions is an official report that conducts an overall view of Norway's choices for achieving the 2050 climate targets, and to describe a pathway for the transformation to a low emission society that is cost-effective as possible. Resulting in a society where resource use is efficient, and business and industry is competitive. This process must also ensure a development pathway that safeguards biodiversity and maintains a welfare-based society. The committee will evaluate progress towards the targets and assess the benefits obtained against economic costs. | The Norwegian official report is not a legally binding document but gives a thorough evaluation of Norway's potential road to climate neutrality by 2050. Several of the recommendations in the report touches the responsibilities and concerns of the municipalities. If these recommendations are followed the possibilities to regulate and make claims to the private sectors, as well as in own organization can be strengthened.  |
 |  NOU | National | The Norwegian Official Report 2023:3 «More of everything – faster» / NOU: 2023:3 «Mer av alt – raskere» | "More of everything – faster" examines and evaluates the long-term possibilities and challenges of the Norwegian energy industry. The report presents recommendations and suggest actions that are necessary to change the pace of Norwegian energy policies. | The report concludes that the need for energy in the green transition is very high. Norway have historically had a surplus of energy but is now facing the risk of an energy deficit. Stavanger municipality is a co-owner in the energy company "lyse" and is therefore affected by the changes in energy prices, supply, and regulations. If the recommendations and suggestions of the report is followed through it can affect the municipal economy as well as access to electricity.  |
 |  Law | National | The planning and building act / | The most important Norwegian law when it comes to managing and planning land use in Norway. | The planning and building act have strict rules on the mandate of the municipalities. This law dictates on which matters the municipality can regulate private developers. For instance, utilization rate, quality, energy supply etc.  |
-6
-
 |   |  | Plan- og bygningsloven | The law coordinates several other laws that relates to land use and clarifies the hierarchy between them. It regulates both plans for land-use are to be made and followed, and how building applications are to be administrated. | The law is also very clear on matters the municipalities cannot regulate. Because the law has not been revised in a long time (2008) and has not been up to date on the climate changes its limits the necessary legal ground to make developers build the city in the best way possible with regards to emissions
-
-Because of the limitations of the law, the municipality doesn't have the legal authority to prevent old building from being demolished, set a minimum threshold for Co2 emissions, or demand local energy sources in new projects.  |
+| Because of the limitations of the law, the municipality doesn't have the legal authority to prevent old building from being demolished, set a minimum threshold for Co2 emissions, or demand local energy sources in new projects.  |
 | --- | --- | --- | --- | --- |
 |  Agreement | National/Regional | City Growth Agreement (2019-2029) / Byvekstavtalen | The city-growth agreement is an agreement between the national government (The Norwegian Public Roads Authority, Norwegian Railway Directorate, Rogaland County Governor), the municipalities in Nord-Jæren (Stavanger, Sandnes, Sola and Randaberg) and Rogaland County authority/council.
 
@@ -817,8 +814,6 @@ Climate Neutrality Action Plan
 | --- | --- | --- | --- | --- |
 |  Strategy | Regional | Development plan for Rogaland - regional planning strategy 2021-2024 / Utviklingsplan for Rogaland - Regional planstrategi 2021-2024 | The governing document for Rogaland County, where it is stated that the county municipality's vision is a sustainable development and strong communities throughout Rogaland. One of four long-term development goals for the county is climate change and a viable natural environment, and one of the four areas of effort under this development goal is reducing greenhouse gas emissions in all community sectors in accordance with the Paris agreement. | The plan names climate change as a leading principle in the municipalities' and county council's work, and that it is important to prioritize the most cost-effective measures that provide the greatest emission reduction for the money - seen from a life-cycle perspective. The development states that the transition to a low-emission society stands out as the biggest and most important task that we are now facing, and that municipalities and counties must facilitate this transition by contributing to a more sustainable way of life for the population and supporting business in the necessary changes. Rogaland county council has different roles as a land-use authority, comprehensive transport policy actor, building owner, developer and operator of roads, facilities and buildings.  |
 |  Plan | Regional | Regional plan for climate transition / Regionalplan for klimaomstilling | The county municipality is working on a new regional plan for climate adjustment/change, which will be submitted for consultation in 2024 and finally adopted at the beginning of 2025. This plan will set emission targets both for Rogaland as a whole and for the county municipality's operations. The plan will address a wide range of topics in the transition to a low-emission society: Emission reductions, energy transition, circular resource use, sustainable land-use, safe and climate-adapted society and fair transition. | The regional plan for climate change is under work and is expected to be ready early 2025. The regional plan is meant to coordinate the county and the municipalities planning and will be a basis for planning in the region. As a municipality in Rogaland Stavanger will have to follow guidelines and strategies in the coming regional plan. The plan is also meant to ease the planning process and work for the municipalities by laying the groundworks for a common knowledge base and recommendations, and increased co-operation between sectors and across municipal borders.  |
-8
-
 |  Strategy | Regional | Transport strategy for Rogaland County 2022-2033 / Samferdselsstrategi for Rogaland fylke 2022-2033 | Rogaland County Council's Transport strategy for Rogaland 2022-2033 was adopted by the county council in December 2021. The transport strategy for Rogaland County 2022-2033 are guidelines for the county council's work with transport and mobility, and how transport will be focused on in upcoming regional spatial and transport plans. The regional strategy describes some overarching goals for the transport sector and is indicative of which direction transport planning is going but doesn't itself give any concrete guidelines or measures to follow. | Within the transport sector the county work towards reduced emissions both by getting people to choose climate-friendly means of travel and by a transition to zero-emission technology on county council buses, speedboats, and ferries. The county will in its tenders have up to 70 % weighting of price, and at least 30% weighting of (greenhouse gas) emissions. In addition, there is an opportunity for the county to set environmental requirements in tender processes related to investments, operation and maintenance of the county road network etc. The transport strategy has the following strategies for climate and emission reduction: -The county municipality must prioritize the climate measures that provide the greatest reduction in emissions for the money. -The transition to zero-emission solutions in public transport must be carried out in a way that ensures the greatest possible emission reduction per kroner invested -The county municipality's efforts to implement national climate initiatives should preferably be linked to increased government allocations to cover additional expenses. -Functional requirements (for example zero emissions), not technology-specific requirements, should be in calls for tender. Tender notices must contain environmental requirements.  |
 | --- | --- | --- | --- | --- |
 |  Strategy | Regional | Property strategy 2023-2026 / Eiendomsstrategi 2023-2026 | The property strategy was adopted by the county council in December 2022. The strategy sets out the direction and goals for property management in Rogaland County municipality. Here there are several targets and measures that have an impact on energy use and direct and indirect greenhouse gas emissions. | The most relevant strategies for the municipality: -Solar cells must be established on prioritized buildings by 2028 (which buildings this applies to has not been clarified for the entire period, but is assessed on an ongoing basis, among other things, based on the need of roof replacement etc.) -Natural gas as a source of heating must be phased out by 2026. -Emission-free construction sites must be strived for in construction projects. -Fixtures and equipment must, as a general rule, be reused. -Climate budget must be included in alternative analyses for projects over NOK 50 million.  |
@@ -834,14 +829,12 @@ Climate Neutrality Action Plan
 | --- | --- | --- | --- | --- |
 |  Plan | Regional/Local | Plan for harbour development / Plan for havneutvikling | The plan provides an insight into the framework for port development in the Stavanger region. The Stavanger region Havn IKS is a inter municipal company, owned by Stavanger, Sola and Randaberg, and acts as port authority. Port of Stavanger is developed with a long term-perspective. Some important framework for the development is law, purpose, sustainability, reputation, economy and market. Co-operation between public and private stakeholders have opened opportunities for both sustainable and efficient development. Because of this shipping is on the way towards a change in direction of the EU's sustainability goals. Port of Stavanger aims to reduce emissions by 80% by 2030. | The plan is important to reach Stavanger municipality's aim of reducing emissions by 80%. Some goals outlined in the plan are: - Port of Stavanger will have sufficient space to be both a destination and a hub for public transport at sea. The port will provide for shore power so that the ships can be charged at berth. - The EU and other Nordic countries have a common ambition to transfer at much long-distance transport as possible from road to sea and railway. A premise for this is that port infrastructure is developed in sustainable locations and efficient roads to and from ports are built. The harbors Risavika (Sola), Mekjarvik (Randaberg) and Dusavika (Stavanger and Randaberg) are prioritized areas for development. - Stavanger is a popular cruise destination. The port authority plans to become a zero-emission cruise-port and is developing infrastructure to accommodate newer and more sustainable boats.  |
 |  Strategy | Regional/Local | Cruise ship strategy for Stavanger region 2020-2030 / Cruisestrategi for Stavangerregionen 2020-2030 | The cruise strategy is made by the business association of Stavanger. It is developed by a broad group made up of different stakeholders which are: business organizations and businesses, the interest group for old Stavanger, the destination group for Region Stavanger, Stavanger municipality and Port of Stavanger. The goals described in the municipality's climate plan and UN's 10 principles for sustainable destinations are used as a framework for the strategy. The vision of the plan is "Stavanger – a zero-emission cruise destination with high local value | The strategy is not adopted politically by Stavanger municipality, but it still holds some relevance as it shows what goals different stakeholders in Stavanger work towards for cruise tourism in Stavanger. It's sectioned in to four sub-goals; environment, product development, profitability and market. Some relevant measures and goals for climate are: - Zero-emission in transport for connected to cruise ships, also for the local transport connected to it. - Prioritize cruise ships with low or zero-emissions and use EPI (environmental port index) to increase the share of cruise ships with low or zero-emissions.  |
-0
-
 |   |  |  | creation”. The main goal is for the city to be a sustainable cruise destination with high local value creation that is good for the local communities. | - Consider the use of joint financing system that also includes cruise ship tourists.
-Work with national authorities to fulfill the goal of zero-emission in the cruise sail in to Stavanger.  |
+| Work with national authorities to fulfill the goal of zero-emission in the cruise sail in to Stavanger.  |
 | --- | --- | --- | --- | --- |
 |  Plan | Local | The planning strategy 2024-2027 / Planstrategien 2024-2027 | The planning strategy is neither a strategy nor a plan, but a tool and a framework for all municipal planning. The planning strategy points out considerations that must be taken, and which guidelines that are applicable.
-Additionally, the planning strategy discusses challenges and obstacles towards the long term societal-development and assess the need to revise the municipal master plan (both land-use and social). | The planning strategy, though not its own plan or strategy, lays the groundwork for all municipal plans. This includes theme plans like the climate plan, the green plan and all others.
-Some key points from the planning strategy are that the municipality must work towards climate neutrality and make plans for how to accomplish this. Mission cities climate contract is also mentioned as a key document for accomplishing this goal.  |
+| Additionally, the planning strategy discusses challenges and obstacles towards the long term societal-development and assess the need to revise the municipal master plan (both land-use and social). | The planning strategy, though not its own plan or strategy, lays the groundwork for all municipal plans. This includes theme plans like the climate plan, the green plan and all others. |
+| Some key points from the planning strategy are that the municipality must work towards climate neutrality and make plans for how to accomplish this. Mission cities climate contract is also mentioned as a key document for accomplishing this goal.  |
 |  Plan | Local | The Municipal Master plan – the social element 2020-2034 / Kommuneplanens samfunnsdel 2020-2034 | The Masterplan - community part 2020-2035
 The community part of the masterplan describes what the municipality is going to focus on the next 15 years, and how we will follow the UN's sustainability goals.
 The masterplan has three main goals;
@@ -849,10 +842,8 @@ Good everyday lives for everyone, no matter who you are.
 Regional engine is about having a diverse business community and strong city centre.
 Green spearhead is about taking care of nature and becoming more climate and environmentally friendly. | The municipal plan's community part deals with what we will focus on in the next 15 years and how we will meet the UN's sustainability goals. Stavanger must reduce greenhouse gas emissions by 80% by 2030 and become fossil-free by 2040.  |
 |  Plan | Local | The Municipal Master plan – land-use part 2023-2040 / Kommuneplanens arealdel 2023-2040 | The land-use part shall facilitate a sustainable and long-term development that takes account of the environment, climate, and natural values.
-The land-use part of the masterplan is the link between the desired social development, and the land-use. It is meant as a tool to ensure comprehensive and long-term management of the municipality. | There are some important regulations in the land-use masterplan that contribute to emission reductions:
-Effects on the environment, climate gas emissions and energy use must be assessed in the zoning plan. For plans with buildings projects over 1000 square meters climate consequences must be documented with an environmental program.  |
-1
-
+| The land-use part of the masterplan is the link between the desired social development, and the land-use. It is meant as a tool to ensure comprehensive and long-term management of the municipality. | There are some important regulations in the land-use masterplan that contribute to emission reductions: |
+| Effects on the environment, climate gas emissions and energy use must be assessed in the zoning plan. For plans with buildings projects over 1000 square meters climate consequences must be documented with an environmental program.  |
 |   |  |  | The land management is meant as a help to achieve the overarching goal set in the community/societal part of the masterplan.
 
 The land-use masterplan consists of two interconnected parts: The zoning map and the zoning regulations. | -Climate consequences of building applications for new buildings, extensions, total rehabilitation or change of use that exceeds 1000 square meters must be documented through climate-gas calculations. In the case of development that together make up more than 1,000 square meters of heated floor space, energy needs and solutions must be documented in the zoning plan.
@@ -878,13 +869,9 @@ In 2030, a maximum of 30 % of all trips should be made by car. From 1998 and tow
 
 Another goal is that the emissions from personal vehicles must be reduced by 100 % by 2030.  |
 |  Plan | Local | Green plan /
-Grønn plan | The green plan is a plan for the green areas in Stavanger.
-
-It's a holistic plan that includes what the blue-green structure means for both humans and nature, in established natural areas and in urban | The plan's main goal is for Stavanger's green structure to be preserved, and further developed.
-
-As areas of use and recreation of people in their local environment. By focusing on the nature near people, as areas of  |
-2
-
+| Grønn plan | The green plan is a plan for the green areas in Stavanger. |
+| It's a holistic plan that includes what the blue-green structure means for both humans and nature, in established natural areas and in urban | The plan's main goal is for Stavanger's green structure to be preserved, and further developed. |
+| As areas of use and recreation of people in their local environment. By focusing on the nature near people, as areas of  |
 |   |  |  | areas, and with a focus on natural diversity, recreation and the local environment for the inhabitants that live there.
 
 It was made to secure and develop green and blue areas in the whole municipality, that are important for natural diversity, health and are good public spaces.
@@ -914,8 +901,7 @@ To preserve the living conditions for plans and animals and increase biological 
 3
 
 |  Action plan | Local | Climate and environmental plan – action part 2022-2026 / Klima og miljøplanen – handlingsdel 2022-2026 | The action plan is a concretization of specific action points that will contribute to achieve the objectives of the community part of the master plan and follow up on the climate and environmental plan 2018-2030. | The action plan provides an overview of all measures to be taken, and a description of these. There is also a second part/appendix, which concretizes the effect of the measures that reduce direct emissions of greenhouse gases.
-
-The secondary part contains an estimated reduction in CO_{2} emissions, a description of costs and an assessment of whether the measures ensure that we reach the emissions limit for 2026. If we assume a linear decrease from 2015 to the target of 80 % reduction in 2030, emissions must be reduced by 59 % in 2026.  |
+| The secondary part contains an estimated reduction in CO_{2} emissions, a description of costs and an assessment of whether the measures ensure that we reach the emissions limit for 2026. If we assume a linear decrease from 2015 to the target of 80 % reduction in 2030, emissions must be reduced by 59 % in 2026.  |
 | --- | --- | --- | --- | --- |
 |  Plan | Local | Thematic plan for aquaculture / Temaplan for havbruk | The thematic plan for aquaculture is a plan for sustainable development of the aquaculture industry. The goal is to both to facilitate for a diverse coastal industry and secure a good and well functioning coastal environment.
 
@@ -943,7 +929,7 @@ Climate Neutrality Action Plan
 4
 
 |   |  |  |  | -Stop building down/reduction of agricultural lands and other important carbon stores.
-Stop the recultivation and building/development on bogs.  |
+| Stop the recultivation and building/development on bogs.  |
 | --- | --- | --- | --- | --- |
 |  Plan | Local | Inter-municipal sub-plan for (IKDP) Forus / Interkommunal kommunedelplan (IKDP) Forus | The inter-municipal plan for Forus is made in co-operation between Stavanger, Sola and Sandnes.
 Forus is one of Norway’s largest business areas, and is situated between these municipalities.
@@ -955,8 +941,8 @@ Contribute to the implementation of cost-effective investment measures.
 Together with the charging companies (actors/stakeholders), the municipality will facilitate/stimulate for the most rational development of the charging infrastructure over time.  |
 |  Strategy | Local | Urban public space strategy for Stavanger city centre / Byromstrategi for Stavanger sentrum | The urban space strategy describes qualities in the green structure in central Stavanger and provides guidelines for the planning, design, and construction of 40 selected urban spaces. | The plan contributes to the reduction of car traffic, and motivates people to use walking, cycling and public transport within and to/from the city centre.  |
 |  Plan | Local | Action plan for streetscapes: home zones and environmental streets 2021-2025 / Handlingsplan for Gatetun og miljøgater 2021-2025 | Home zones and environmental streets are both street environments facilitated for walking, living, and playing.
-The biggest difference between home zones and environmental streets are that home zones typically don’t have traffic through them, they are at the end destination. | The plan aims to make it easier to walk, cycle, travel by public transport and drive emission-free.
-There is an emphasis on public participation to design functional and aesthetic street environments adapted to local needs and identity.  |
+| The biggest difference between home zones and environmental streets are that home zones typically don’t have traffic through them, they are at the end destination. | The plan aims to make it easier to walk, cycle, travel by public transport and drive emission-free. |
+| There is an emphasis on public participation to design functional and aesthetic street environments adapted to local needs and identity.  |
 |  Plan | Local | Management plan for urban trees part 1 / | Stavanger municipality should be a green city with a rich, varied, and biodiverse population of city trees, which has an intrinsic value and from a climate and a living condition perspective. | There are several goals of the municipality in the conservation of the city trees:  |
 CITY OF STAVANGER
 
@@ -980,7 +966,7 @@ Stavanger municipality wants to take better care of the wild pollinating insects
 In the purchase of new equipment climate requirements and lifespan/quality is to be emphasized.  |
 |  Plan | Local | Plan for outdoor light in Stavanger city centre / Lysplan for Stavanger sentrum | The plan for outdoor light in Stavanger gives the technical guidelines for the conversion of all public outdoor public lighting from conventional to LED. | All public lighting is to be replaced to LED lighting by 2030 and will be a contributing factor to reduce power consumption by over 80 % in 2030.  |
 |  Strategy | Local | Research strategy 2023-2034 / Forskningsstrategi 2023-2034 | The research strategy is meant to be the municipality's guideline for follow-up and prioritisation of research and development. The overarching goal of the strategy is to use and develop knowledge to solve the societal issues facing the municipality. | Stavanger is taking measures to increase research activity, with a goal of developing and use new knowledge to solve the societal issues the municipality face.
-The strategy has three areas of interest for the research: Climate and environment, demography and health and inclusion.  |
+| The strategy has three areas of interest for the research: Climate and environment, demography and health and inclusion.  |
 |  Plan | Local | Action plan for competence development in Stavanger kindergardens / | In line with the municipality's climate and environmental plan 2018-2030, all municipal organizations must be certified as environmental beacons. | The municipality aims to develop material and resources to support the teaching of sustainability in kindergartens as part of the broader curriculum.  |
 CITY OF STAVANGER
 
@@ -1541,7 +1527,7 @@ Reduction of air pollution
 Enhancing quality of life
 Health improvements  |
 |   |  Technology/Infrastructure | Plan for improving energy efficiency in most buildings owned by Stavanger Municipality | Reduced energy used in many of the municipally owned buildings. | Reduction of energy bills
-Improved standard on older buildings  |
+| Improved standard on older buildings  |
 |   |  Finance & Funding | Financial support for energy efficiency measures in private households | Reduce energy consumption | Reduce energy costs  |
 |  Road Mobility & transport | Financing & funding | Incorporation of electric buses | Generating a more sustainable, attractive, and functional public transport service | Promoting the use of sustainable public transport
 Reduction of air pollution  |
@@ -1580,14 +1566,14 @@ More greenery
 Enhancing quality of life  |
 | --- | --- | --- | --- | --- |
 |  Waterborne Navigation | Financing & funding | Incorporation of electric fast boats | Generating a more sustainable, attractive, and functional public transport service | Promoting the use of sustainable public transport
-Reduction of air pollution  |
+| Reduction of air pollution  |
 |   |  Governance/Policy | Using Environmental Port Index (EPI) to dynamic increase in prize differentiation so that Cruise ships prioritize low carbon solutions when in port | Copy EPI to other ship categories | Reduction of air pollution
-Reduction of noise pollution  |
+| Reduction of noise pollution  |
 |   |  Technology/ Infrastructure | Onshore power on quay and charging buoys | Creating onshore infrastructure to enable green shipping | Reduction of air and noise pollution
 Health improvement
 Enhancing quality of life  |
 |  Waste & circular economy | Technology/ Infrastructure | Investments in plants to turn animal and municipal waste to energy | Reduced use of natural gas and carbon binding. Work towards realization of CCS plant for waste incineration | Innovation and development
-Green job creation  |
+| Green job creation  |
 |   |  Learning & Capabilities | Increase populations knowledge of the benefits of recycling and how to properly recycle. Enhance citizens capabilities to repair and willingness to reuse. Reducing food waste | Continuous work - Increase populations knowledge of the benefits of recycling and how to properly recycle. Enhance citizens capabilities to repair and willingness to reuse. Reducing food waste | Less use of resources, improved circular economy  |
 |   |  Technology/ Infrastructure | Work towards more sustainable mass handling | Masses in the county are kept as high as possible in the resource pyramid | Less use of resources  |
 |   |   | A thriving marketplace for selling and buying used building materials. | Implementing used building materials in new construction projects is common | Less use of resources, improved circular  |
@@ -1602,12 +1588,12 @@ Climate Neutrality Action Plan
 |   |  Governance and policy | The municipal « Reuse-storage » is expanded from furniture to also include large amounts of building materials | The amount of used building materials in municipal construction projects is very high and renovating is the standard choice before tearing down. | Less use of resources, improved circular economy, less demolition of buildings  |
 |   |  Finance/funding | Support schemes for increasing energy efficiency of buildings | More energy efficient buildings | Reduced Energy cost  |
 |   |  Governance & policy | Increase reuse and repurpose of existing buildings | Waste reduction
-Less ned for demolition and new construction | Less need to build entirely new buildings in property development. Property development as part of identity creation  |
+| Less ned for demolition and new construction | Less need to build entirely new buildings in property development. Property development as part of identity creation  |
 |   |   | Urban planning of new residential buildings and workplaces located in public transport zones and district centres | More people have the opportunity to use public transit, walking and cycling
-Shorter travel distances for everyday needs | Less need to build new infrastructure for citizens
-Less need to build new on green areas  |
+| Shorter travel distances for everyday needs | Less need to build new infrastructure for citizens |
+| Less need to build new on green areas  |
 |   |  Technology/Infrastructure Learning & Capabilities | Restoring and redeveloping already existing buildings is always the first choice of municipal construction project. This is also rooted in the municipal strategies and political ambitions. | Restoring and redeveloping already existing buildings is the first choice of all building projects, private and public.
-Knowledge and best practice are shared in between the developers | Less use of resources, strengthen new local business models, utilization of grey areas instead of green, increased knowledge of reused building materials  |
+| Knowledge and best practice are shared in between the developers | Less use of resources, strengthen new local business models, utilization of grey areas instead of green, increased knowledge of reused building materials  |
 |   | Technology/Infrastructure Learning & Capabilities | Through FutureBuilt 4-6 construction projects will have achieved at least 50 % reduction in emissions and serve as light | FutureBuilt is a permanent program and continues to showcase the ambitious de- | Higher quality building, higher flexibility in design and use, better  |
 City of Stavanger
 Climate Neutrality Action Plan
@@ -1872,17 +1858,16 @@ The source for cost by $\mathrm{CO}_{2}$ unit market * is the report M-2539 from
 Technical interventions
 Procurement actions  |
 |   |  Action description | Electrification of buses in Nord-Jæren, as part of electrification of the public transit system.
-Impact and cost are calculated for Stavanger, not the entire region of Nord-Jæren  |
+| Impact and cost are calculated for Stavanger, not the entire region of Nord-Jæren  |
 |  Reference to impact pathway | Field of action | Transport and Mobility  |
 |   |  Systemic lever | Technology/Infrastructure
-Finance & Funding  |
+| Finance & Funding  |
 |   |  Outcome (according to module B-1.1) | Generating a more sustainable, attractive, and functional public transport service  |
 |  Implementation | Responsible bodies/person for implementation | Rogaland County Council  |
 |   |  Action scale & addressed entities | National, Regional, Municipal, Citizen  |
 |   |  Involved stakeholders | Rogaland County Council, Kolumbus AS, Stavanger, Sandnes, Randaberg and Sola municipalities  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | It is assumed that the start of the new bus contract for Nord-Jæren will take place on 1 July 2026, and that from then on, the buses will be battery-electrically operated throughout this contract. Estimates 5 % private buses that will not be electrified.
-
-In the current financial plan, Rogaland County Council has not allocated sufficient funds to cover the additional operation costs of electric buses. However, costs for investments in charging infrastructure have been allocated. If the state does not provide increased funds to cover such possible additional costs until zero-emission materials are fully competitive with fossil alternatives, it will be extremely demanding for a county municipality such as Rogaland to handle.  |
+| In the current financial plan, Rogaland County Council has not allocated sufficient funds to cover the additional operation costs of electric buses. However, costs for investments in charging infrastructure have been allocated. If the state does not provide increased funds to cover such possible additional costs until zero-emission materials are fully competitive with fossil alternatives, it will be extremely demanding for a county municipality such as Rogaland to handle.  |
 |  Impact & cost | Generated renewable energy (if applicable) | n/a  |
 |   |  Removed/substituted energy, volume, or fuel type | Fossil fuel  |
 City of Stavanger
@@ -1903,7 +1888,7 @@ Procurement actions  |
 |   |  Action description | Fossil-free fast boats and ferries calling in Stavanger: Electrification of the Ryfylke ferry, the Ryfylke routes, the Hommersåk connection, Finnøy and Vassøy connection  |
 |  Reference to impact pathway | Field of action | Transport  |
 |   |  Systemic lever | Technology/Infrastructure
-Finance & Funding  |
+| Finance & Funding  |
 |   |  Outcome (according to module B-1.1) | Generating a more sustainable, attractive, and functional public transport service  |
 |  Implementation | Responsible bodies/person for implementation | Rogaland County Council  |
 |   |  Action scale & addressed entities | National, Regional, Municipal, Citizen  |
@@ -1935,17 +1920,17 @@ Climate Neutrality Action Plan
 |  (Fill out one sheet per intervention/project)  |   |   |
 |  Action outline | Action name | Measures to facilitate fossil-free port operations for cruise boats  |
 |   |  Action type | Physical and spatial interventions
-Technical interventions  |
+| Technical interventions  |
 |   |  Action description | Shore power for cruise boats.  |
 |  Reference to impact pathway | Field of action | Transport  |
 |   |  Systemic lever | Technology/
-Infrastructure  |
+| Infrastructure  |
 |   |  Outcome (according to module B-1.1) | Creating onshore infrastructure to enable green shipping  |
 |  Implementation | Responsible bodies/person for implementation | Port of Stavanger  |
 |   |  Action scale & addressed entities | Municipal, Companies  |
 |   |  Involved stakeholders | Port of Stavanger, Stavanger municipality  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | The Port of Stavanger (Stavangerregionen Havn) will establish electric shore power facilities at the shore quay for cruise ships, reducing the needs for ships to run their own diesel generators.
-There is a barrier for implementing this action concerning available power supply in the future because of grid capacity.  |
+| There is a barrier for implementing this action concerning available power supply in the future because of grid capacity.  |
 |  Impact & cost | Generated renewable energy (if applicable) | n/a  |
 |   |  Removed/substituted energy, volume, or fuel type | n/a  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 3 720 tonne, waterborne navigation  |
@@ -1970,7 +1955,7 @@ B-2.2: Individual action outlines
 |   |  Action scale & addressed entities | Municipal  |
 |   |  Involved stakeholders | Stavanger municipality  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Stavanger municipality has still 222 petrol and diesel cars. The municipality has a goal to replace these by 2025 (all departments including enterprises)
-Barriers for implementing are founding through the yearly budget passed by the city council. Political desire to invest in other projects or measures can delay the implementation.  |
+| Barriers for implementing are founding through the yearly budget passed by the city council. Political desire to invest in other projects or measures can delay the implementation.  |
 |  Impact & cost | Generated renewable energy (if applicable) | n/a  |
 |   |  Removed/substituted energy, volume, or fuel type | Fossil fuel  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 280, road transportation  |
@@ -2012,7 +1997,7 @@ Climate Neutrality Action Plan
 |   |  Action description | Transition from natural gas to district heating  |
 |  Reference to impact pathway | Field of action | Energy  |
 |   |  Systemic lever | Infrastructure
-Finance & Funding  |
+| Finance & Funding  |
 |   |  Outcome (according to module B-1.1) | Progressive change of the city’s energy model, by increasing biogas share and phasing out use of fossil gas in local district heating  |
 |  Implementation | Responsible bodies/person for implementation | Lyse NEO  |
 |   |  Action scale & addressed entities | Municipal, Public entities  |
@@ -2027,27 +2012,27 @@ Plan
 3
 
 | **B-2.2: Individual action outlines**
-(Fill out one sheet per intervention/project) |
+| (Fill out one sheet per intervention/project) |
 | --- |
 | Action outline | Action name | Production of biogas from animal waste I |
 | Action type | Technical intervention |
 | Action description | Bio Jæren wants to establish a plant to produce biofertiliser, biosoil and biogas at Grødåland in Hå from animal manure, with biogas production of up to 150 GWh of biogas. |
 | Reference to impact pathway | Field of action | Energy |
 | Systemic lever | Technology/Infrastructure
-Finance & Funding |
+| Finance & Funding |
 | Outcome (according to module B-1.1) | Reduced use of natural gas and carbon binding |
 | Implementation | Responsible bodies/person for implementation | Bio Jæren |
 | Action scale & addressed entities | Municipal, Public entities, Companies |
 | Involved stakeholders | Bio Jæren, Stavanger municipality, citizen |
 | Comments on implementation – consider mentioning resources, timelines, milestones | Assumes that 25 % of the biogas produced by this new facility is used in Stavanger municipality to displace natural gas use.
-Conservative estimate and may be updated later. |
+| Conservative estimate and may be updated later. |
 | Impact & cost | Generated renewable energy (if applicable) | n/a |
 | Removed/substituted energy, volume, or fuel type | Natural gas |
 | GHG emissions reduction estimate (total) per emission source sector | 7 750 tonnes CO₂-eq. in sector heating from displacing natural gas within city boarder. |
 | GHG emissions compensated (natural or technological sinks) | n/a |
 | Total costs and costs by CO₂e unit | 1 000 NOK/tonne * |
 |  **B-2.2: Individual action outlines**
-(Fill out one sheet per intervention/project)  |   |   |
+| (Fill out one sheet per intervention/project)  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Production of biogas from animal waste II  |
 |   |  Action type | Technical intervention  |
@@ -2059,7 +2044,7 @@ Plan
 4
 
 |  **B-2.2: Individual action outlines**
-(Fill out one sheet per intervention/project)  |   |   |
+| (Fill out one sheet per intervention/project)  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Phasing out fossil gas in local district heating  |
 |   |  Action type | Technical intervention  |
@@ -2071,7 +2056,7 @@ Plan
 |   |  Action scale & addressed entities | Municipal, Public entities  |
 |   |  Involved stakeholders | Lyse, Stavanger municipality, Citizen  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Lyse's local district heating plant will phase out fossil gas by 2030.
-Søra Bråde will produce heat and biocoal from municipal green waste from 2026. There is ongoing evaluation of available wood chips which  |
+| Søra Bråde will produce heat and biocoal from municipal green waste from 2026. There is ongoing evaluation of available wood chips which  |
 |   |   | to improve the quality of the natural gas and carbon source in the city.  |
 City of Stavanger
 Climate Neutrality Action Plan
@@ -2266,8 +2251,7 @@ Climate Neutrality Action Plan
 |   |  Action scale & addressed entities | Municipal, citizens  |
 |   |  Involved stakeholders | Citizens, Stavanger municipality  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | From April 2024 citizens can apply to the municipality for funding for changing windows from 1987 or older in housing. The municipality covers 2 000 NOK per window, but maximum 60 percent the cost of per window.
-
-It is secured 4 MNOK for this support scheme. The scheme last until the funding is used up.  |
+| It is secured 4 MNOK for this support scheme. The scheme last until the funding is used up.  |
 |  Impact & cost | Generated renewable energy (if applicable) | n/a  |
 |   |  Removed/substituted energy, volume, or fuel type | n/a  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | n/a  |
@@ -2282,7 +2266,7 @@ It is secured 4 MNOK for this support scheme. The scheme last until the funding 
 |  Reference to impact pathway | Field of action | Spatial interventions  |
 |   |  Systemic lever | Governance and policy  |
 |   |  Outcome (according to module B-1.1) | Waste reduction
-Less ned for demolition and new construction  |
+| Less ned for demolition and new construction  |
 |  Implementation | Responsible bodies/person for implementation | Developers, Stavanger municipality  |
 |   |  Action scale & addressed entities | Regional, municipal  |
 |   |  Involved stakeholders | Developers, Stavanger municipality, citizen  |
@@ -2301,13 +2285,12 @@ Climate Neutrality Action Plan
 |   |  GHG emissions compensated (natural or technological sinks) | n/a  |
 |   |  Total costs and costs by CO2e unit | n/a  |
 |  B-2.2: Individual action outlines
-(Fill out one sheet per intervention/project)  |   |   |
+| (Fill out one sheet per intervention/project)  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Developing charging infrastructure for EVs  |
 |   |  Action type | Spatial intervention  |
 |   |  Action description | Stavanger municipality has passed a Strategy for charging infrastructure 2022-2026. The strategy states that the municipality will stimulate and facilitate building of charging infrastructure for EVs in housing associations and in areas where citizens are dependent on curb side parking.
-
-The municipality will also facilitate building of fast charging station, with effect ranging from 50 kW up to 200 kW  |
+| The municipality will also facilitate building of fast charging station, with effect ranging from 50 kW up to 200 kW  |
 |  Reference to impact pathway | Field of action | Mobility and transport  |
 |   |  Systemic lever | Financing and funding  |
 |   |  Outcome (according to module B-1.1) | More accessible charging for citizens who do not have access to parking on own plot  |
@@ -2343,7 +2326,7 @@ Climate Neutrality Action Plan
 | Action scale & addressed entities | Municipal |
 | Involved stakeholders | Stavanger municipality, mobility enterprises, citizens |
 | Comments on implementation – consider mentioning resources, timelines, milestones | In the land use part of the municipal master plan and in zooning plan’s location and space have been allocated for development of mobility hubs. These are strategically placed, to offer increased mobility for citizens.
-The municipality has opened four mobility hubs. The municipality has a continuous work of opening new mobility hubs. This work is based on experiences from other cities with mobility hubs, such as Bergen, Oslo, and Bremen. |
+| The municipality has opened four mobility hubs. The municipality has a continuous work of opening new mobility hubs. This work is based on experiences from other cities with mobility hubs, such as Bergen, Oslo, and Bremen. |
 | Impact & cost | Generated renewable energy (if applicable) | n/a |
 | Removed/substituted energy, volume, or fuel type | n/a |
 | GHG emissions reduction estimate (total) per emission source sector | n/a |
@@ -2361,7 +2344,7 @@ B-2.2: Individual action outlines
 |   |  Action description | FutureBuilt is an innovation programme and learning arena, which shall contribute to developing areas and buildings which have a higher standard for meeting climate and environmental goals.  |
 |  Reference to impact pathway | Reference to impact pathway | Built environment  |
 |   |  Systemic lever | Technology/infrastructure
-Learning & Capabilities  |
+| Learning & Capabilities  |
 |   |  Outcome (according to module B-1.1) | FutureBuilt is a permanent program and continues to showcase the ambitious development projects in our region. Proving that it is possible to cut emissions and improve quality in city development through cooperation and innovation.  |
 |  Implementation | Implementation | Stavanger municipality  |
 |   |  Action scale & addressed entities | Municipal  |
@@ -2393,7 +2376,7 @@ Climate Neutrality Action Plan
 |   |  Action scale & addressed entities | Municipal  |
 |   |  Involved stakeholders | IVAR, citizen  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | IVAR has located a premises where they plan to sell used goods, which have been saved from municipal waste sites.
-The reuse store will open in 2024  |
+| The reuse store will open in 2024  |
 |  Impact & cost | Generated renewable energy (if applicable) | n/a  |
 |   |  Removed/substituted energy, volume, or fuel type | n/a  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | n/a  |
@@ -2405,7 +2388,7 @@ The reuse store will open in 2024  |
 |  Action outline | Action name | Municipal reuse storage  |
 |   |  Action type | Technical intervention  |
 |   |  Action description | The municipal reuse storage has been operating since 2022 and has been focused on reusing furniture internal for the municipal organization.
-The reuse-storage is underway of being expanded to also include construction materials which will be used in the  |
+| The reuse-storage is underway of being expanded to also include construction materials which will be used in the  |
 |  Reference to impact pathway | Reference to impact pathway | Waste & circular economy  |
 |   |  Systemic lever | Democracy and participation  |
 |   |  Outcome (according to module B-1.1) | A thriving large shopping centre for used goods for private citizens  |
@@ -2417,8 +2400,7 @@ Climate Neutrality Action Plan
 6
 
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | The reuse storage for furniture has been operating since 2022 and is well known by the employees in the municipality. When changing furniture, employees have first to see if available reused furniture is suitable for the need before new furniture can be bought.
-
-The storage expanded to include building materials in 2024 and made a new hire, making it two employees working on coordinating for using reused materials in municipal building projects and working on including the private sector.  |
+| The storage expanded to include building materials in 2024 and made a new hire, making it two employees working on coordinating for using reused materials in municipal building projects and working on including the private sector.  |
 | --- | --- | --- |
 |  Impact & cost | Generated renewable energy (if applicable) | n/a  |
 |   | Removed/substituted energy, volume, or fuel type | n/a  |
@@ -2431,8 +2413,7 @@ The storage expanded to include building materials in 2024 and made a new hire, 
 |  Action outline | Action name | Energy certification and improving energy efficiency of municipal owned buildings  |
 |   |  Action type | Technical intervention  |
 |   |  Action description | The municipality of Stavanger is in the process of update the energy certifying of it’s municipal buildings and assessing the energy performance of the buildings ventilation, heating, and cooling systems, which both are activities that the municipality is required to do by law.
-
-Simultaneously the municipality plan to do a comprehensive energy assessment of the same buildings to identify energy efficiency measures that can be done so that the municipal buildings become more energy efficient.  |
+| Simultaneously the municipality plan to do a comprehensive energy assessment of the same buildings to identify energy efficiency measures that can be done so that the municipal buildings become more energy efficient.  |
 |  Reference to impact pathway | Reference to impact pathway | Energy systems  |
 |   |  Systemic lever | Technology/Infrastructure  |
 |   |  Outcome (according to module B-1.1) | Reduced energy used in many of the municipally owned buildings.  |
@@ -2548,14 +2529,13 @@ Plan
 |   | Action description | Installation of electric chargers at quay.  |
 |  Reference to impact pathway | Field of action | Waterborne navigation  |
 |   | Systemic lever | Technology/Infrastructure
-Finance & Funding  |
+| Finance & Funding  |
 |   | Outcome (according to module B-1.1) | Creating onshore infrastructure to enable green shipping  |
 |  Implementation | Responsible bodies/person for implementation | Møkster  |
 |   | Action scale & addressed entities | National, Municipal  |
 |   | Involved stakeholders | Møkster, Port of Stavanger, Stavanger municipality  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Møkster shipping will works towards that their ships which can receive land power, will receive land power up to 80 % of the time it is at quay for each vessel. Timeframe for this goal is 2026-2028.
-
-Barrier for implementing is available onshore power supply and available grid capacity.  |
+| Barrier for implementing is available onshore power supply and available grid capacity.  |
 |  Impact & cost | Generated renewable energy (if applicable) | n/a  |
 |   | Removed/substituted energy, volume, or fuel type | Fossil fuel  |
 |   | GHG emissions reduction estimate (total) per emission source sector | n/a  |
@@ -2852,9 +2832,9 @@ Climate Neutrality Action Plan
 |  Indicator Unit | %  |
 | --- | --- |
 |  Definition | Biogas sale to buyers within the city
-Compared to total gas sales from lyse  |
+| Compared to total gas sales from lyse  |
 |  Calculation | Biogas sale to buyers within the city
-/ total gas sales from lyse  |
+| / total gas sales from lyse  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | yes  |
 |  If yes, which emission source sectors does it measure? | heating  |
@@ -3161,12 +3141,10 @@ Climate Neutrality Action Plan
 2
 
 |  Stedskompasset
-(The Place Standard Tool) | The Place Standard Tool is a tool was developed in Scotland by experts in public health, urban planning and architecture. It has been implemented in Stavanger and used as part of the Area-regeneration project.
-
-The Place Standard tool is a tool to get information on citizens opinion and feelings on a range of topics. In this way it is a multi-tool, which acts as a tool for site-development, public health, co-creation and participation | A cost-effective way to gain insight on inhabitants view on livelihood and how it is living in an area. This will be valuable information for planners in future planning and transformation of areas
-
-To much emphasis on questionnaire data over qualitative data means that planners do not gain insight on issues they do not know are important for the inhabitants | Stavanger kommune | The Place Standard Tool is a cost-effective tool to gather opinions and feedback from the inhabitants on certain topics. In this way the Place Standard Tool can become an important tool for citizen participation on climate action in their local environment | Health improvement
-Enhancing quality of life  |
+| (The Place Standard Tool) | The Place Standard Tool is a tool was developed in Scotland by experts in public health, urban planning and architecture. It has been implemented in Stavanger and used as part of the Area-regeneration project. |
+| The Place Standard tool is a tool to get information on citizens opinion and feelings on a range of topics. In this way it is a multi-tool, which acts as a tool for site-development, public health, co-creation and participation | A cost-effective way to gain insight on inhabitants view on livelihood and how it is living in an area. This will be valuable information for planners in future planning and transformation of areas |
+| To much emphasis on questionnaire data over qualitative data means that planners do not gain insight on issues they do not know are important for the inhabitants | Stavanger kommune | The Place Standard Tool is a cost-effective tool to gather opinions and feedback from the inhabitants on certain topics. In this way the Place Standard Tool can become an important tool for citizen participation on climate action in their local environment | Health improvement |
+| Enhancing quality of life  |
 | --- | --- | --- | --- | --- | --- |
 |  The Plan Portal
 https://minside.stavanger.kommune.no/planportal | In 2024 Stavanger municipality launched its new digital plan portal. Now, all the municipal plans and formal hearings are located at one place online. This makes it easier to access for both citizens, developers, politicians and employees.
@@ -3193,8 +3171,7 @@ Climate Neutrality Action Plan
 |   |  |  |  | a more sustainable life-style in alignment with climate goals. |   |
 | --- | --- | --- | --- | --- | --- |
 |  Agile piloting (Kvikktest) | Agile piloting, or Kvikktest is an approach introduced in Stavanger to engage with up to five companies simultaneously for six-month-long experiments aimed at exploring diverse solutions to specific challenges or needs. This method fosters collaborative learning with the private sector, accelerating urban innovation by testing and learning together in a structured environment. It allows cities to proactively understand the spectrum of possibilities before committing to specific solutions, thereby enriching their decision-making process. | Opportunity to quickly test new solutions and compare them | Stavanger municipality | One of the distinctive aspects of Kvikktest is that it serves as a strategic outpost for the city granting us a window into the methods and learnings that companies acquire throughout the process.
-
-The insights we gain from a Kvikktest is different from what we would gather through our own efforts in the field. By engaging with smaller companies, we're not just outsourcing tasks; we're insourcing wisdom about the specific area. These collaborations allow us to see a challenge trough five different lenses. | Innovation and development  |
+| The insights we gain from a Kvikktest is different from what we would gather through our own efforts in the field. By engaging with smaller companies, we're not just outsourcing tasks; we're insourcing wisdom about the specific area. These collaborations allow us to see a challenge trough five different lenses. | Innovation and development  |
 |  Mitt nabolag (My neighbourhood) https://mittnabolag.stavanger.no/?locale=no | My Neighbourhood is a digital portal where citizens can voice their opinion about different district, themes or individual actions | Makes it easier for citizens to gain information, participate and give feedback to the municipality. | Stavanger municipality | My Neighbourhood is a digital solution, which makes it easy to gather feedback from citizens.
 
 In 2023 as part of the Area-regeneration pro- | Raising awareness of plan processes
@@ -3206,8 +3183,7 @@ Climate Neutrality Action Plan
 5
 
 |   |  | Lack of awareness of the solution among the citizen |  | gram in Kvernevik citizens could suggest and vote over actions in the district which should get funding. As a result, 200 000 NOK were shared between 8 different actions
-
-In the future it is possible to build on these experiences and include citizens in distribution of funding for local climate actions |   |
+| In the future it is possible to build on these experiences and include citizens in distribution of funding for local climate actions |   |
 | --- | --- | --- | --- | --- | --- |
 |  Snakkeboblå (The talking camper) | The talking camper initiative is a way to engage easier with citizens and get oral feedback.
 
@@ -3225,13 +3201,10 @@ Climate Neutrality Action Plan
 6
 
 |  (Age Friendly City) | global network for Age-Friendly Cities and Communities, and is also creating an action plan for an “Age Friendly City” | and prepare for an aging society |  | future with an aging population. This creates both challenges and possibilities.
-
-Through the effort of being an Age friendly City, Stavanger has actions which support participation, information, transportation and habitation for the elderly. To reach climate neutrality it is important to include all age groups, and also target the increasing elderly population to ensure that they also can make choices which reduces emissions. | Health improvements  |
+| Through the effort of being an Age friendly City, Stavanger has actions which support participation, information, transportation and habitation for the elderly. To reach climate neutrality it is important to include all age groups, and also target the increasing elderly population to ensure that they also can make choices which reduces emissions. | Health improvements  |
 | --- | --- | --- | --- | --- | --- |
 |  Citizen Panel | Stavanger municipality will test a new citizen panel to give those between 60 and 80 years a clearer voice in the development of the society | Opportunity to gain insight from a specific age group which otherwise can be hard to reach by other digital solutions | Stavanger municipality | To transform to a climate neutral society, it is important to include all age groups. By creating a citizen panel targeting older age groups, it becomes possible to access experiences and voices of this age group. This in turn makes it easier to tailor and include them in climate actions and ensure a just transition | Raising awareness of plan processes
-Social participation  |
-7
-
+| Social participation  |
 |  ENERGY4ALL | ENERGY4ALL aims at developing energy configurations as a common pool resource, testing the community dimension in the design and implementation of emergent Positive Energy Districts (PED) and Energy Communities (EC). | Opportunity to gather information on how to create positive energy districts | Eutropian, University of Stavanger, Stavanger municipality, local industry (Skretting and Felleskjøpet) and international partners from Italia and Hungary will work together in transforming a neighborhood (Hillevåg) in Stavanger. | The project will explores how utilise waste heat from the industry, citizen-centric needs, and inclusive governance model through supportive toolboxes for the design and implementation of participatory energy governance and replicable pathways will work together in transforming a neighbourhood (Hillevåg) in Stavanger. | Energy4all can be a tool to include citizens in design and transformation of PED.e  |
 | --- | --- | --- | --- | --- | --- |
 |  Real green things (Grævla grønne greier) | Reel Green Things is an initiative from Stavanger municipality and is an innovation project where youth is communicating with other youth
@@ -3258,9 +3231,8 @@ Climate Neutrality Action Plan
 |   | The town halls are public accessible meeting places for activities, meetings and culture. Citizens can rent the town halls for big and small gatherings. | Lack of awareness and knowledge of the service can be a barrier for use |  | meetings and gatherings bottom up, which enables democratic participation. |   |
 | --- | --- | --- | --- | --- | --- |
 |  VOF | VOF is a digital map-based solution where inhabitants can report on faults on roads, green space, renovation, water, sewage and more | Opportunity to gather information and feedback from the inhabitants
-Lack of awareness and knowledge of the service can be a barrier for use | Stavanger municipality | By enabling citizens to easily engage with the municipality and report on faults, it helps with keeping the public infrastructure in good condition, which is important for climate adaptation.
-
-At the same time, the method behind VOF can be further developed and can become an important tool for crowdsourcing in the future. | Better communication between citizens and the municipality  |
+| Lack of awareness and knowledge of the service can be a barrier for use | Stavanger municipality | By enabling citizens to easily engage with the municipality and report on faults, it helps with keeping the public infrastructure in good condition, which is important for climate adaptation. |
+| At the same time, the method behind VOF can be further developed and can become an important tool for crowdsourcing in the future. | Better communication between citizens and the municipality  |
 |  Data Lake | The Data Lake Project is now receiving and handling data from more than 50 sources. A steady current of needs is reported in by “owners” through a gateway that is open for all service areas of Stavanger Municipality. These use-cases are | Opportunity to collect, store and utilise data in new ways | Stavanger municipality | By modelling, combining and analysing data from different sources, the Data Lake produces reports that give a better fact base and foundation for decision makers and other users.
 
 E.g.: Use-cases from surveillance of waterways and sea-level in | Innovation and development  |
@@ -3656,8 +3628,6 @@ The table below enlists the signatories who are committing to support this CCC, 
 |  D2 Productions | Merchandise producer | Limited Company (Ltd.) | Daniel Engen | Co-founder  |
 |  Stavanger Utvikling KF | Property Development | Municipal Enterprise | Hans Kjetil Aas | CEO  |
 |  Forus Business Park | Property Development | Limited Company (Ltd.) | Stein Racin Grødem | CEO  |
-4
-
 |  NorSea Group | Supply Chain Manager for Offshore Industry | Limited Company (Ltd.) | Renate Marie Klemetsen Jakobsen | VP ESG  |
 | --- | --- | --- | --- | --- |
 |  Skretting AS | Feed production for aquaculture | Limited Company (Ltd.) | Leif Kjetil Skjæveland | Manager of Sustainability and Public Affairs  |

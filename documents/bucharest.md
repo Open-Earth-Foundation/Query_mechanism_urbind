@@ -481,7 +481,6 @@ Plan O
 | 4,443 |  |  | 4,443 | 31% |  |
 |  |  |  | 14,451 | 1% |  |
 | TOTAL |  |  | 4,201,299 | 100% | 1,198,912 |
-
 | MWh/year |  |  |  |  |  | CO2 Emission | % compared to 2016 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | MWh/year |  |  |  |  |  |  |  |
@@ -1408,7 +1407,7 @@ C
 |  |  |  |  | climate mitigation and adaptation | Ownership of overall objectives |
 | --- | --- | --- | --- | --- | --- |
 |  | Governance & Policy | Digital twinning solution designed for climate neutrality | Agile and responsive governance model for climate neutrality |  | Real time data and adjustments to the proposed solutions |
-Innovative, data-based decision making  |
+| Innovative, data-based decision making  |
 |  | Funding | 25 | Integrated investments to ensure climate neutrality in relevant areas such as energy, buildings, environment, etc. |  | Reduce CO2 emissions by 51,420 tons |  |
 | --- | --- | --- | --- | --- | --- | --- |
 
@@ -1509,7 +1508,6 @@ B-2.2: INDIVIDUAL ACTION OUTLINES
 
 | INTERVENTIONS |  |  |
 | --- | --- | --- |
-
 | Action outline | Action name | 8. Extensive moderate energy renovation of multifamily residential buildings in District 2 of Bucharest |
 | --- | --- | --- |
 |  | Action type | Technical intervention |
@@ -1525,7 +1523,6 @@ B-2.2: INDIVIDUAL ACTION OUTLINES
 |  | Removed/substituted energy, volume, or fuel type | Electrical energy: 300,384 MWh/year Natural gas: 952,289 MWh/year |
 |  | GHG emissions reduction estimate (total) per emission source sector | 245,230 tons CO2/year from Buildings |
 |  | Total costs and costs by CO2e unit | €246,109,191 - total cost |
-
 | Action outline | Action name | 9. Comprehensive energy efficiency and modernisation program targeting educational institutions, public administrative buildings, and cultural heritage sites across District 2, Bucharest |
 | --- | --- | --- |
 |  | Action type | Technical intervention |
@@ -1561,7 +1558,7 @@ Preparation of renovation packages for historical/heritage buildings for private
 |  | Comments on implementation |  |
 | Impact & cost | Generated renewable energy (if applicable) | 20,758 MWh/year |
 |  | Removed/substituted energy, volume, or fuel type | Electrical energy: 53,548 MWh/year |
-Natural gas: 233,360 MWh/year  |
+| Natural gas: 233,360 MWh/year  |
 |  | GHG emissions reduction estimate (total) per emission source sector | 56,563 tons CO2/year from Buildings |
 | --- | --- | --- |
 |  | Total costs and costs by CO2e unit | €51,664,235 - total cost |
@@ -1593,11 +1590,10 @@ Demonstration project - implementation of smart electricity distribution in the 
 |  | Comments on implementation |  |
 | Impact & cost | Generated renewable energy (if applicable) | 140,000 MWh/year |
 |  | Removed/substituted energy, volume, or fuel type | Electrical energy: 120,000 MWh/year |
-Natural gas: 200,000 MWh/year  |
+| Natural gas: 200,000 MWh/year  |
 |  | GHG emissions reduction estimate (total) per emission source sector | 61,520 tons CO2/year from IPPU |
 | --- | --- | --- |
 |  | Total costs and costs by CO2e unit | €26,687,200 - total cost |
-
 | Action outline | Action name | 11. Expansion and enhancement of the public lighting system across green spaces, parks, playgrounds, and parking areas in designated locations |
 | --- | --- | --- |
 |  | Action type | Technical intervention |
@@ -1628,7 +1624,6 @@ Climate Neutrality Action Plan
 |  | Removed/substituted energy, volume, or fuel type | Electrical energy: 600 MWh/year Diesel: 1,800 MWh/year |
 |  | GHG emissions reduction estimate (total) per emission source sector | 586 tons CO2/year from Transport |
 |  | Total costs and costs by CO2e unit | €1,603,574 - total cost |
-
 | Action outline | Action name | 12. Development of a digital awareness and education center as well as training programs to support the understanding and education of companies and citizens regarding climate-neutral smart city concepts and efficient implementation methods |
 | --- | --- | --- |
 |  | Action type | Other intervention |
@@ -1651,11 +1646,10 @@ Climate Neutrality Action Plan
 |  | Comments on implementation |  |
 | Impact & cost | Generated renewable energy (if applicable) | 5,000 MWh/year |
 |  | Removed/substituted energy, volume, or fuel type | Electrical energy: 80,000 MWh/year |
-Natural gas: 100,000 MWh/year  |
+| Natural gas: 100,000 MWh/year  |
 |  | GHG emissions reduction estimate (total) per emission source sector | 34,280 tons CO2/year from IPPU |
 | --- | --- | --- |
 |  | Total costs and costs by CO2e unit | €5,822,068 - total cost |
-
 | Action outline | Action name | 25. Integrated investments to ensure climate neutrality in relevant areas such as energy, buildings, environment, etc. |
 | --- | --- | --- |
 |  | Action type | Technical intervention |
@@ -1669,11 +1663,10 @@ Natural gas: 100,000 MWh/year  |
 |  | Comments on implementation |  |
 | Impact & cost | Generated renewable energy (if applicable) | 120,000 MWh/year |
 |  | Removed/substituted energy, volume, or fuel type | Electrical energy: 120,000 MWh/year |
-Natural gas: 150,000 MWh/year  |
+| Natural gas: 150,000 MWh/year  |
 |  | GHG emissions reduction estimate (total) per emission source sector | 51,420 tons CO2/year from Buildings |
 | --- | --- | --- |
 |  | Total costs and costs by CO2e unit | €10,000,000 |
-
 | Action outline | Action name | 13. Rehabilitation and reconfiguration of street network to increase transport efficiency and decrease pollution levels. |
 | --- | --- | --- |
 |  | Action type | Physical intervention |
@@ -1702,7 +1695,6 @@ O
 |  | Removed/substituted energy, volume, or fuel type | Electrical energy: 4,113 MWh/year Diesel: 193,952 MWh/year Gasoline: 135,807 MWh/year |
 |  | GHG emissions reduction estimate (total) per emission source sector | 86,325 tons CO2/year from Transport |
 |  | Total costs and costs by CO2e unit | €595,556,582 - total cost |
-
 | Action outline | Action name | 14. Development of a network of EV charging stations |
 | --- | --- | --- |
 |  | Action type | Technical intervention |
@@ -1732,7 +1724,6 @@ Gasoline: 7,600 MWh/year  |
 |  | GHG emissions reduction estimate (total) per emission source sector | 5,802 tons CO2/year from Transport |
 | --- | --- | --- |
 |  | Total costs and costs by CO2e unit | €3,000,000 - total cost |
-
 | Action outline | Action name | 15. Decrease number of visits to public administration offices through digitalisation |
 | --- | --- | --- |
 |  | Action type | Other intervention |
@@ -1765,7 +1756,6 @@ C
 |  | Removed/substituted energy, volume, or fuel type | Electrical energy: 2,000 MWh/year Diesel: 8,700 MWh/year Gasoline: 8,000 MWh/year |
 |  | GHG emissions reduction estimate (total) per emission source sector | 4,667 tons CO2/year from Transport |
 |  | Total costs and costs by CO2e unit | €3,068,068 |
-
 | Action outline | Action name | 16. New parking policy and new residential parking facilities meant to decrease car use and transform parking spaces into public areas. |
 | --- | --- | --- |
 |  | Action type | Physical intervention/ Other intervention |
@@ -1793,7 +1783,6 @@ Gasoline: 6,558 MWh/year  |
 |  | GHG emissions reduction estimate (total) per emission source sector | 3,263 tons CO2/year from Transport |
 | --- | --- | --- |
 |  | Total costs and costs by CO2e unit | €2,382,800 - total cost |
-
 | Action outline | Action name | 17. Increased pedestrian mobility by revitalisation urban parks, upgrade of pedestrian underpasses, and expansion of pedestrian-priority areas. |
 | --- | --- | --- |
 |  | Action type | Physical intervention |
@@ -1824,11 +1813,10 @@ Plan
 |  | Comments on implementation |  |
 | Impact & cost | Generated renewable energy (if applicable) | 14,500 MWh/year |
 |  | Removed/substituted energy, volume, or fuel type | Diesel: 50,457 MWh/year |
-Gasoline: 37,698 MWh/year  |
+| Gasoline: 37,698 MWh/year  |
 |  | GHG emissions reduction estimate (total) per emission source sector | 22,859 tons CO2/year from Transport |
 | --- | --- | --- |
 |  | Total costs and costs by CO2e unit | €163,409,677 |
-
 | Action outline | Action name | 18. Enhancement and expansion of public transport systems with smart technology, new trams, dedicated lanes, and new routes for a cleaner urban travel. |
 | --- | --- | --- |
 |  | Action type | Physical intervention |
@@ -1867,7 +1855,6 @@ O
 |  | Removed/substituted energy, volume, or fuel type | Electrical energy: 50,000 MWh/year Diesel: 70,832 MWh/year Gasoline: 42,052 MWh/year |
 |  | GHG emissions reduction estimate (total) per emission source sector | 38,183 tons CO2/year from Transport |
 |  | Total costs and costs by CO2e unit | €1,355,595,683 |
-
 | Action outline | Action name | 19. Extension and modernisation of cycling infrastructure - Cycling Masterplan, bike sharing system and extension of cycling network. |
 | --- | --- | --- |
 |  | Action type | Physical intervention |
@@ -1894,7 +1881,6 @@ Climate Neutrality Action Plan
 |  | Removed/substituted energy, volume, or fuel type | Diesel: 20,000 MWh/yearGasoline: 15,000 MWh/year |
 |  | GHG emissions reduction estimate (total) per emission source sector | 9,075 tons CO2/year from Transport |
 |  | Total costs and costs by CO2e unit | €75,294,829 - total cost |
-
 | Action outline | Action name | 23. New waste sorting infrastructure to reduce energy consumption and increase waste management capabilities |
 | --- | --- | --- |
 |  | Action type | Other invervention |
@@ -1933,7 +1919,6 @@ Plan
 |  | Removed/substituted energy, volume, or fuel type | Electrical energy: 41,640 MWh/year Diesel: 22,000 MWh/year |
 |  | GHG emissions reduction estimate (total) per emission source sector | 13,203 tons CO2/year from Waste |
 |  | Total costs and costs by CO2e unit | €1,150,000 |
-
 | Action outline | Action name | 20. Rehabilitation of water ways for sustainable development. |
 | --- | --- | --- |
 |  | Action type | Nature-based solutions |
@@ -1961,7 +1946,6 @@ O
 |  | Removed/substituted energy, volume, or fuel type | Electrical energy: 14,383 MWh/year Diesel: 14,738 MWh/year |
 |  | GHG emissions reduction estimate (total) per emission source sector | 6,466 tons CO2/year from AFOLU |
 |  | Total costs and costs by CO2e unit | €68,300,000 |
-
 | Action outline | Action name | 21. Development of green roofs |
 | --- | --- | --- |
 |  | Action type | Nature-based solutions |
@@ -1989,7 +1973,6 @@ O
 
 |  | Total costs and costs by CO2e unit | €750,000 |
 | --- | --- | --- |
-
 | Action outline | Action name | 22. Rehabilitation of parks and development of sustainable green public spaces to incentivise pedestrian mobility. |
 | --- | --- | --- |
 |  | Action type | Nature-based solutions |
@@ -2037,7 +2020,6 @@ Gasoline: 3,711 MWh/year  |
 |  | GHG emissions reduction estimate (total) per emission source sector | 4,142 tons CO2/year from Transport |
 | --- | --- | --- |
 |  | Total costs and costs by CO2e unit | €322,976,908 |
-
 | Action outline | Action name | 1. Construction of new nZEB buildings |
 | --- | --- | --- |
 |  | Action type | Technical intervention |
@@ -2051,11 +2033,10 @@ Gasoline: 3,711 MWh/year  |
 |  | Comments on implementation | n/a |
 | Impact & cost | Generated renewable energy (if applicable) | 6000 MWh/year |
 |  | Removed/substituted energy, volume, or fuel type | Electrical energy: 2,000 MWh/year |
-Natural gas: 10,400 MWh/year  |
+| Natural gas: 10,400 MWh/year  |
 |  | GHG emissions reduction estimate (total) per emission source sector | 2,453 tons CO2/year from Buildings |
 | --- | --- | --- |
 |  | Total costs and costs by CO2e unit | €3,302,150 - total cost |
-
 | Action outline | Action name | 2. Renovation of public buildings |
 | --- | --- | --- |
 |  | Action type | Technical intervention |
@@ -2082,11 +2063,10 @@ Plan
 
 |  | Removed/substituted energy, volume, or fuel type | Electrical energy: 1,500 MWh/year |
 | --- | --- | --- |
-Natural gas: 5,000 MWh/year  |
+| Natural gas: 5,000 MWh/year  |
 |  | GHG emissions reduction estimate (total) per emission source sector | 1,247 tons CO2/year from Buildings |
 | --- | --- | --- |
 |  | Total costs and costs by CO2e unit | €5,850,000 - total cost |
-
 | Action outline | Action name | 3. Reconversion of formal industrial areas |
 | --- | --- | --- |
 |  | Action type | Technical intervention |
@@ -2100,11 +2080,10 @@ Natural gas: 5,000 MWh/year  |
 |  | Comments on implementation |  |
 | Impact & cost | Generated renewable energy (if applicable) | 100,000 MWh/year |
 |  | Removed/substituted energy, volume, or fuel type | Electrical energy: 60,000 MWh/year |
-Natural gas: 100,000 MWh/year  |
+| Natural gas: 100,000 MWh/year  |
 |  | GHG emissions reduction estimate (total) per emission source sector | 30,760 tons CO2/year from IPPU |
 | --- | --- | --- |
 |  | Total costs and costs by CO2e unit | €20,000,000 - total cost |
-
 | Action outline | Action name | 4. Citizen involvement program for sustainable Reconversion of public spaces |
 | --- | --- | --- |
 |  | Action type | Other interventions |
@@ -2133,7 +2112,6 @@ Plan
 |  | Removed/substituted energy, volume, or fuel type | Electrical energy: 3,000 MWh/year Diesel: 1,200 MWh/year |
 |  | GHG emissions reduction estimate (total) per emission source sector | 848 tons CO2/year from AFOLU |
 |  | Total costs and costs by CO2e unit | €600,000 |
-
 | Action outline | Action name | 5. Reconversion of public spaces for sustainable development |
 | --- | --- | --- |
 |  | Action type | Physical interventions |
@@ -2149,7 +2127,6 @@ Plan
 |  | Removed/substituted energy, volume, or fuel type | Electrical energy: 22,000 MWh/year Natural gas: 39,000 MWh/year |
 |  | GHG emissions reduction estimate (total) per emission source sector | 11,750 tons CO2/year |
 |  | Total costs and costs by CO2e unit | €28,000,000 - total cost |
-
 | Action outline | Action name | 6. Social inclusion program for sustainable development |
 | --- | --- | --- |
 |  | Action type | Other interventions |
@@ -2163,11 +2140,10 @@ Plan
 |  | Comments on implementation |  |
 | Impact & cost | Generated renewable energy (if applicable) | 1,500 MWh/year |
 |  | Removed/substituted energy, volume, or fuel type | Electrical energy: 7,000 MWh/year |
-Natural gas: 24,800 MWh/year  |
+| Natural gas: 24,800 MWh/year  |
 |  | GHG emissions reduction estimate (total) per emission source sector | 6,242 tons CO2/year from Buildings |
 | --- | --- | --- |
 |  | Total costs and costs by CO2e unit | €11,858,188 - total cost |
-
 | Action outline | Action name | 7. Development of educational infrastructure for climate neutral education |
 | --- | --- | --- |
 |  | Action type | Technical intervention |
@@ -2181,7 +2157,7 @@ Natural gas: 24,800 MWh/year  |
 |  | Comments on implementation |  |
 | Impact & cost | Generated renewable energy (if applicable) | 216 MWh/year |
 |  | Removed/substituted energy, volume, or fuel type | Electrical energy: 6,100 MWh/year |
-Natural gas: 7,010 MWh/year  |
+| Natural gas: 7,010 MWh/year  |
 |  | GHG emissions reduction estimate (total) per emission source sector | 2,490 tons CO2/year from Buildings |
 | --- | --- | --- |
 |  | Total costs and costs by CO2e unit | €18,354,163 - total cost |
@@ -2274,7 +2250,6 @@ Plan
 | Green space expansion | Rehabilitation of parks and development of public green spaces | D2 - G3 | Percentage of public green spaces renovated/ modernised | 10% | 50% | 70% |
 | Improved selective waste collection facilities | New waste sorting infrastructure to reduce energy consumption and increase waste management capabilities | D2 - WMCE01 | Percentage of Waste Recycled | 10% | 30% | 60% |
 | Increased share of people involved in greening projects | Implementation of innovative co-creation projects | D2 - S01 | Percentage of Residents Actively Participating in Climate Actions | 10% | 20% | 40% |
-
 | B-3.2: Indicator Metadata |  |
 | --- | --- |
 | (For each indicator selected – take from Comprehensive Indicator Sets) |  |
@@ -3036,8 +3011,6 @@ Module C-3 "Financing of Action Portfolio" should contain the list of action por
 | Renovation of public buildings | District 2 City Hall, Bucharest City Hall, Public Utility Companies | 2024-2030 | Built environment | Reduction of 1,247 tons CO2/year; Majority of buildings in the district meeting high energy efficiency standards | €5,850,000 |
 | Reconversion of formal industrial areas | District 2 City Hall, Bucharest City Hall, Public Utility Companies | 2024-2030 | Built environment | Reduction of 30,760 tons CO2/year; Enhanced functionality of | €20,000,000 |
 |  |  |  |  | sustainable buildings |  |
-6
-
 |  |  |  |  | underutilised spaces |  |
 | --- | --- | --- | --- | --- | --- |
 | Citizen involvement program for sustainable reconversion of public spaces | District 2 City Hall, Bucharest City Hall, Public Utility Companies, NGOs, Universities | 2024-2030 | Built environment | Reduction of 848 tons CO2/year; Active community involvement in urban planning and design | €600,000 |
@@ -3047,8 +3020,6 @@ Module C-3 "Financing of Action Portfolio" should contain the list of action por
 | Extensive moderate energy renovation of multifamily residential buildings in District 2 of Bucharest | District 2 City Hall, Bucharest City Hall, Public Utility Companies, Owners’ associations; | 2024-2030 | Energy systems | Reduction of 245,230 tons CO2/year; Decreased energy consumption and lower emissions from buildings. | €246,109,191 |
 | Comprehensive energy efficiency and modernisation program targeting educational institutions, public administrative buildings, and cultural heritage sites across District 2, Bucharest | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Energy systems | Reduction of 56,563 tons CO2/year; Widespread use of smart grids and renewable energy sources. | €51,664,235 |
 | Upgrading the electrical infrastructure to enhance the reliability, efficiency, and intelligence of the electrical grid to | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Energy systems | Reduction of 61,520 tons CO2/year; Decreased energy consumption and lower emissions from buildings. | €26,687,200 |
-7
-
 | meet current and future demands |  |  |  | Widespread use of smart grids and renewable energy sources |  |
 | --- | --- | --- | --- | --- | --- |
 | Expansion and enhancement of the public lighting system across green spaces, parks, playgrounds, and parking areas in designated locations | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Energy systems | Reduction of 586 tons CO2/year; Energy efficient public lighting system; Increased safety | €1,603,574 |
@@ -3057,8 +3028,6 @@ Module C-3 "Financing of Action Portfolio" should contain the list of action por
 | Development of a network of EV charging stations | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Mobility & Transport | Reduction of 5,802 tons CO2/year; Increased ownership and use of electric vehicles | €3,000,000 |
 | Decrease number of visits to public administration offices through digitalisation | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Mobility & Transport | Reduction of 4,667 tons CO2/year; Reduced commute-related emissions and streamlining government services. Reduced carbon footprint of public services | €3,068,068 |
 | New parking policy and new residential parking facilities meant to decrease car use and | District 2 City Hall, Bucharest City Hall, Public Utility Companies | 2024-2030 | Mobility & Transport | Reduction of 3,263 tons CO2/year; Comprehensive urban mobility plan fully operational | €2,382,800 |
-8
-
 | transform parking spaces into public areas |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- |
 | Increased pedestrian mobility by revitalisation urban parks, upgrade of pedestrian underpasses, and expansion of pedestrian-priority areas | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Mobility & Transport | Reduction of 22,859 tons CO2/year; Enhanced urban livability with safer streets for pedestrians and cyclists | €163,409,677 |
@@ -3155,7 +3124,6 @@ Annex – Database with 25 actions proposed for this Action Plan and GHG invento
 | Bulk Environment | Buildings | for climate neutral education | Complementary services for kindergarten 137 | 433,715 | 1,150 |  |  |  |  |
 | Bulk Environment | Buildings | Equipping with furniture, teaching materials and digital equipment of pre-university education units in Sector 2 | 12,500,774 | 2,200 | 1,600 |  |  |  |  |
 | 1 | 2 | 2 | 2 | 18,354,163 | 6,100 |  |  |  |  |
-
 | Domains | Calculation Domain | ACTIONS | Interventions/projects | Implementation cost estimated (in thousands BUDGET - BUDGET) | Electrical x Energy (Nc Diesel 201 Gasoline 2 Bio-fuel 2C Energy pros increase in electrical energy |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Energy Systems | Buildings |  | Moderate Energy Renovation of Multifamily Residential Buildings in District 2 of Bucharest Municipality III.31, Rascola Street from 190 | 12,459,200 | 11,819 | 64,513 | 0 | 0 | 0 | 17,269 |
@@ -3185,7 +3153,6 @@ Annex – Database with 25 actions proposed for this Action Plan and GHG invento
 | Energy Systems | Buildings | 8. Energy efficiency and modernization of the Public Directorate for Personal and Civil Status Records Sector 2 Bucharest, 19 Olari Street | Consolidation, rehabilitation and modernization: Lucian Blaga High School | 1,139,870 | 3,333 | 11,826 | 0 | 0 | 0 | 1,580 |
 | Energy Systems | Buildings | energy efficiency and modernization of the Public Directorate for Personal and Civil Status Records Sector 2 Bucharest, 19 Olari Street | Consolidation, rehabilitation and modernization: Lucian Blaga High School | 1,139,870 | 3,333 | 11,826 | 0 | 0 | 0 | 1,580 |
 | Energy Systems | Buildings | energy efficiency and modernization of the Public Directorate for Personal and Civil Status Records Sector 2 Bucharest, 19 Olari Street | 1,139,870 | 3,333 | 11,826 | 0 | 0 | 0 | 0 | 1 |
-
 | Domains | Calculation Domain | ACTIONS | Interventions/projects | Implementation and estimates (ESTIMATED HUDGET - EURM) | Electrical + Energy (Nc Diesel 201)-Gasoline 2 Bio-fuel 2C Energy product increase in energy |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Mobility and Transport | Transport |  | DALI - (capital repairs, road system rehabilitation) Streets, Alleys, Parking lots | 2,848,107 | 37 | 0 | 215 | 105 | 304 |
@@ -3275,7 +3242,6 @@ Annex – Database with 25 actions proposed for this Action Plan and GHG invento
 | Group VI: Introduction and N Transport |  | 40. Integrated urban regeneration project in the Dibor area by creating a railway museum complex. A system of green spaces and landscaping of the Dibor railway station square | 35,000,000 | 1,400 | 0 | 383 | 402 | 0 | 5,950 |
 | Group VII: Introduction and N Transport |  | 41. Creation of vegetation curtains along the secondary streets (green area), including a public private partnership in this respect | 1,214,490 | 49 | 0 | 13 | 14 | 0 | 208 |
 | 22 | 22 | 23 | 24 | 25 | 26,350,000 | 14,500 | 0 | 14,750 | 0 |
-
 | Domains | Calculation Domain | ACTIONS | Interventions/projects | Negative values (not response) (ESTIMATED BUDGET - EURO) | Electrical & Energy (Ns Diesel 201 Gasoline 2 Bio-fuel 2E Energy prc increase in energy consumption |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Waste and Circular Waste |  |  | Separate collection infrastructure to achieve waste recycling targets in Sector 2, Bucharest Municipality | 23,168,036 | 9,875 | 0 | 1,800 | 0 | 0 | 20,000 |

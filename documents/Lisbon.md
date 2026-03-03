@@ -1243,7 +1243,7 @@ Lisbon_2019_CIRIS_Standard_v2.4_Rev.20221130.xlsx
 |  Level | Local  |
 |  Relevance | High  |
 |  Need for action | Comply with the proposed schedule and current legislation
-Alignment of LISBON CCC2030 with current policies at the local, regional, national, and international/EU scales.  |
+| Alignment of LISBON CCC2030 with current policies at the local, regional, national, and international/EU scales.  |
 |  Name & Title | 2- Municipal Strategy of Adaptation to Climate Change (EMAAC)  |
 | --- | --- |
 |  Description | Establishes the Municipality's strategic vision for adaptation to climate change, and identifies and prioritizes the city's climate vulnerabilities and risks, and reviews climate projections until the end of the 21st century, identifying an open set of adaptation options to minimize the effects of climate change.  |
@@ -1270,7 +1270,7 @@ CITIES
 |  Level | Local  |
 |  Relevance | High  |
 |  Need for action | Comply with periodic monitoring mechanisms
-Alignment of LISBON CCC2030 with current policies at the local, regional, national, and international/EU scales.  |
+| Alignment of LISBON CCC2030 with current policies at the local, regional, national, and international/EU scales.  |
 |  Name & Title | 4- Metropolitan Climate Change Adaptation Plan (PMAAC)  |
 | --- | --- |
 |  Description | Establishes a regional strategy to enhance inter-municipal synergies in understanding risks and vulnerabilities when implementing adaptation measures and mobilizing key actors and populations.  |
@@ -1278,7 +1278,7 @@ Alignment of LISBON CCC2030 with current policies at the local, regional, nation
 |  Level | Regional  |
 |  Relevance | High  |
 |  Need for action | Comply with investment priorities across the Lisbon Metropolitan Area
-Alignment of LISBON CCC2030 with current policies at the local, regional, national, and international/EU scales.  |
+| Alignment of LISBON CCC2030 with current policies at the local, regional, national, and international/EU scales.  |
 |  Name & Title | 5- National Energy and Climate Plan (PNEC)  |
 | --- | --- |
 |  Description | It is the main national energy and climate policy instrument for the 2021-2030 10-year period, establishing national goals in terms of reduction of greenhouse gas emissions, incorporation of renewable energies, energy efficiency and interconnections, and implements the policies and measures to achieve them.  |
@@ -1306,7 +1306,7 @@ CITIES
 |  Level | National  |
 |  Relevance | High  |
 |  Need for action | Align guidelines, policies and strategies across various levels of governance
-Alignment of LISBON CCC2030 with current policies at the local, regional, national, and international/EU scales.  |
+| Alignment of LISBON CCC2030 with current policies at the local, regional, national, and international/EU scales.  |
 |  Name & Title | 7- Roadmap to Carbon Neutrality (RNC2050)  |
 | --- | --- |
 |  Description | Identifies and reviews the implications associated with alternative, technically feasible, economically viable and socially accepted trajectories to help achieve the goal of carbon neutrality for the Portuguese economy by 2050.  |
@@ -1314,7 +1314,7 @@ Alignment of LISBON CCC2030 with current policies at the local, regional, nation
 |  Level | National  |
 |  Relevance | High  |
 |  Need for action | Align guidelines, policies and strategies across various levels of governance
-Alignment of LISBON CCC2030 with current policies at the local, regional, national, and international/EU scales.  |
+| Alignment of LISBON CCC2030 with current policies at the local, regional, national, and international/EU scales.  |
 |  Name & Title | 8- Action Programme for Adaptation to Climate Change (P-3AC)  |
 | --- | --- |
 |  Description | Defines the lines of action and priority measures for adaptation and direct intervention in the territory and infrastructures, complemented by a line of action of a transversal nature, aimed at responding to the main impacts and climate vulnerabilities identified for Portugal, identifying the entities involved, monitoring indicators and potential sources of financing.  |
@@ -1322,7 +1322,7 @@ Alignment of LISBON CCC2030 with current policies at the local, regional, nation
 |  Level | National  |
 |  Relevance | High  |
 |  Need for action | Align guidelines, policies and strategies across various levels of governance
-Alignment of LISBON CCC2030 with current policies at the local, regional, national, and international/EU scales.  |
+| Alignment of LISBON CCC2030 with current policies at the local, regional, national, and international/EU scales.  |
 |  Name & Title | 9- National Strategy of Adaptation to Climate Change (ENAAC)  |
 | --- | --- |
 |  Description | Establishes the model for implementing solutions aimed at adapting various sectors to the effects of climate change, with the main goals of improving the level of knowledge on climate change and promoting the integration of adaptation to climate change into sectoral policies and territorial planning instruments.  |
@@ -1350,7 +1350,7 @@ CITIES
 |  Level | Local  |
 |  Relevance | High  |
 |  Need for action | Fulfil the Climate Action targets and the Air Quality Improvement Plan in the Lisbon and Tagus Valley Region (implementation programme)
-Alignment of LISBON CCC2030 with current policies at the local, regional, national, and international/EU scales.  |
+| Alignment of LISBON CCC2030 with current policies at the local, regional, national, and international/EU scales.  |
 |  Name & Title | 11 - Lisbon Municipal Master Plan (PDM)  |
 | --- | --- |
 |  Description | Establishes strategic principles for climate change, in the fields of mitigation and adaptation, considering critical elements for the city's territorial development model, supported by two vital systems: the ecological system, and the mobility and transport system.  |
@@ -1377,7 +1377,7 @@ CITIES
 |  Level | Local  |
 |  Relevance | High  |
 |  Need for action | Comply with its periodic update
-Alignment of LISBON CCC2030 with current policies at the local, regional, national, and international/EU scales.  |
+| Alignment of LISBON CCC2030 with current policies at the local, regional, national, and international/EU scales.  |
 |  Name & Title | 13 - Climate Change Scenarios — IPCC  |
 | --- | --- |
 |  Description | Follow-up on the climate scenario projections at local and regional levels  |
@@ -1385,7 +1385,7 @@ Alignment of LISBON CCC2030 with current policies at the local, regional, nation
 |  Level | Regional  |
 |  Relevance | High  |
 |  Need for action | Model scenarios at the scale of the city
-Alignment of LISBON CCC2030 with current policies at the local, regional, national, and international/EU scales.  |
+| Alignment of LISBON CCC2030 with current policies at the local, regional, national, and international/EU scales.  |
 |  Name & Title | 14 - Plan for Improving Air Quality in the Lisbon and Tagus Valley Region (implementation programme)  |
 | --- | --- |
 |  Description | The legislation in force, related to assessment and management of air quality, establishes that in areas and settlements where the levels of one or more pollutants are higher than the limit values — as is the case in Lisbon — air quality improvement plans must be drawn up and implemented aimed at enforcing limit values.  |
@@ -1976,7 +1976,7 @@ Programmes by pillar
 |  Transport & Mobility | B3. A Sustainable City — Diversifying Mobility  |
 | --- | --- |
 |  Buildings | B1. A Sustainable City — Protecting the Environment Day by Day
-D1. A Supportive City — Open Door to Housing and Habitat  |
+| D1. A Supportive City — Open Door to Housing and Habitat  |
 |  Local Energy & Production | B1. A Sustainable City — Protecting the Environment Day by Day  |
 |  Urban Waste | B1. A Sustainable City — Protecting the Environment Day by Day  |
 
@@ -2078,7 +2078,7 @@ Programmes by pillar
 | --- | --- |
 |  Water | B1. A Sustainable City — Protecting the Environment Day by Day  |
 |  Spatial Planning and Public Space | B2. A Sustainable City — Proximity Urbanism
-B4. A Sustainable City — A Renovated Public Space  |
+| B4. A Sustainable City — A Renovated Public Space  |
 |  Security of People and Goods | F. A Safe, Resilient City  |
 
 Table 12 — Transversal Actions, Measures and Projects
@@ -2181,7 +2181,7 @@ Investment | Estimated amount under review (M€) 91.4
 Programmes by pillar
 
 |  Capacity Building and Information Systems | A1. A Participating City — Encouraging Participation
-A3. A Participating City — Smart City  |
+| A3. A Participating City — Smart City  |
 | --- | --- |
 |  Governance and Citizenship | A1. A Participating City — Encouraging Participation
 A2. A Participating City — Greater Transparency and Efficiency  |
@@ -2390,7 +2390,7 @@ Connectivity at canopy and soil level  |
 |   |  Natural Ecosystem |  |  |   |
 |  Water | Water Efficiency |  | - No. of devices placed (water beeps, sensors, flowmeters) to monitor consumption | - Reduction of water consumption (% / Volume)  |
 |   |  Non Potable Water |  | - Volume / % of treated wastewater reused
-Volume / % of non-drinkable water used, from other sources | - Volume / % of drinking water saved  |
+| Volume / % of non-drinkable water used, from other sources | - Volume / % of drinking water saved  |
 |   |  Drinking Water |  | - PGDL execution rate | - Flood risk (re) assessment in the city (risk reduction)  |
 |   |  Drainage System |  | - No. of sustainable drainage solutions implemented
 No. of drinking fountains installed
@@ -2424,7 +2424,7 @@ CITIES
 |   |  |  | - Qualitative: state of play, including the main actions undertaken by public transport operators | - Capacity to respond to emergencies caused by weather events in public transports  |
 | --- | --- | --- | --- | --- |
 |  Capacity Building and Information Systems | Studies, Strategies and Plans |  | - No. of plans, studies, strategies executed
-No. of research projects in which we are involved | - Ability to communicate and provide information  |
+| No. of research projects in which we are involved | - Ability to communicate and provide information  |
 |   |  Collaborative Knowledge |   |   |   |
 |   |  Smart Information Management |   |   |   |
 |  Governance and Citizenship | Commitments |  | - No. of commitments signed

@@ -333,7 +333,7 @@ The city of Florence started to assess its consumption and emissions with the Co
 |  Buildings |  |  |  |   |
 |  Gas, Electricity, Biomass | 2.001.064 | 1.755.424 | - | 3.756.489  |
 |  Transport |  |  |  |   |
-|  Gasoline, Diesel, LPG, Biofules, Electricity | 1.922.484 | 3.150 | - | 1.925.634  |
+|  Gasoline, Diesel, LPG, Biofuels, Electricity | 1.922.484 | 3.150 | - | 1.925.634  |
 |  Waste & water |  |  |  |   |
 |  Gas, Electricity, RES | Incl. in build. & transp. | Incl. in build. & transp. | 39.020 | 39.020  |
 |  Industrial Process and Product Use (IPPU) |  |  |  |   |
@@ -428,18 +428,17 @@ Climate Neutrality Action Plan
 
 C
 
-|  A-1.4: GHG emissions by source sectors (Florence model)  |   |   |   |   |
-| --- | --- | --- | --- | --- |
-|  Year | 2019  |   |   |   |
-|  Unit | CO2equivalent/year  |   |   |   |
-|   | Scope 1 | Scope 2 | Scope 3 | Total  |
-|  Buildings | 404.077 | 495.030 |  | 899.107  |
-|  Transport | 464.884 | 888 |  | 465.772  |
-|  Waste and waste-water | Included elsewhere | Included elsewhere | 47.219
-| 119.258  |
-|  Industrial Process and Product Use (IPPU) | 85.793 | Included in buildings | - | 85.793  |
-|  Agricultural, Forestry and Land Use (AFOLU) | not relevant | not relevant | - | -  |
-|  Total | 954.755 | 495.916 | 119.258 | 1.569.930  |
+A-1.4: GHG emissions by source sectors (Florence model)
+Year | 2019
+Unit | CO2equivalent/year
+Scope 1 | Scope 2 | Scope 3 | Total
+Buildings | 404.077 | 495.030 | 899.107
+Transport | 464.884 | 888 | 465.772
+Waste and waste-water | Included elsewhere | Included elsewhere | 47.219
+119.258
+Industrial Process and Product Use (IPPU) | 85.793 | Included in buildings | - | 85.793
+Agricultural, Forestry and Land Use (AFOLU) | not relevant | not relevant | - | -
+Total | 954.755 | 495.916 | 119.258 | 1.569.930
 
 Table 5 – GHG emissions 2019 by source sector (Florence model)
 
@@ -754,10 +753,9 @@ Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
 
 The following table summarises the main systems and related stakeholder groups. As described in the following paragraphs, the list is a living database that is evolving together with the co-production activity.
 
-|  A-3.1: Systems & stakeholder mapping  |   |   |   |   |
-| --- | --- | --- | --- | --- |
-|  System description | Stakeholders involved | Networks | Influence | Interest  |
-|  Governance | - Local Administration (any department and/or third party related to the city council)
+A-3.1: Systems & stakeholder mapping
+System description | Stakeholders involved | Networks | Influence | Interest
+Governance | - Local Administration (any department and/or third party related to the city council)
 Metropolitan city
 Regional and
 National Administration | Association and networks of municipalities
@@ -770,7 +768,7 @@ Synergies exploitation
 Investment programs management
 Emergency management
 Research and innovation  |
-|  Public transport and sustainable mobility | 1- Region
+Public transport and sustainable mobility | 1- Region
 Metro City
 Public transport companies (Autolinee Toscane, Ferrovie dello Stato,...)
 Infrastructures managers (Aeroporto, SILFI...)
@@ -786,7 +784,7 @@ All - promotion of sustainable mobility | - Innovations & Best practices extensi
 services requirements
 traffic management
 parking and access policies  |
-|  Buildings | 1-National Heritage authority (Sovrintendenza)
+Buildings | 1-National Heritage authority (Sovrintendenza)
 Municipality (and third-party Casa spa)
 Financial organisations | - builders
 designers
@@ -1011,22 +1009,21 @@ Climate Neutrality Action Plan
 
 B-1.1: Impact Pathways
 
-|  Fields of action | Transformation / challenge | strategy | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions | Indirect impacts (co-benefits)  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  Energy systems | Greener City | Decarbonisation of heating | Capacities & capabilities | Designers and installers informed and engaged | Decrease of fossil fuel boilers (HPs, solar...) | - 170.000 tCO2eq | - Flexibility of the provisions
+Fields of action | Transformation / challenge | strategy | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions | Indirect impacts (co-benefits)
+Energy systems | Greener City | Decarbonisation of heating | Capacities & capabilities | Designers and installers informed and engaged | Decrease of fossil fuel boilers (HPs, solar...) | - 170.000 tCO2eq | - Flexibility of the provisions
 Local supply chain activated
 New skills/jobs
 Air quality increase (impacts on health, preservation of cultural heritage, biodiversity...)  |
-|   |   |   |  Technology and infrastr. | New options tested | Availability of new options on local market  |   |   |
-|   |   |   |   |  Distribution grids analysis | Optimisation of the grid and distribution of mixed fuels  |   |   |
-|   |   |  Decarbonisation of electricity | All | - Increased awareness about energy market & RES
+Technology and infrastr. | New options tested | Availability of new options on local market
+Distribution grids analysis | Optimisation of the grid and distribution of mixed fuels
+Decarbonisation of electricity | All | - Increased awareness about energy market & RES
 First “100% green electricity” use in companies (starting from public entities and tourism)
 Mini hydro plant installed in Arno | - Increased purchase / use of certified green electricity
 Further decrease of local emission factor Vs national provisions (65% res at 2030 in the national energy plan PNIEC) | - 397.000 tCO2eq | - Flexibility of the provisions
 Local supply chain activated
 New skills/jobs
 Air quality increase (health, preservation of cultural heritage, biodiversity...)  |
-|   |   |  Renewable energy communities and PV promotion | Democracy and participation + Governance + Finance and funding | - More information about RES exploitation options
+Renewable energy communities and PV promotion | Democracy and participation + Governance + Finance and funding | - More information about RES exploitation options
 Map of the available areas
 Analysis of the consumption profiles
 First business models | - Reduced boundary regulations in urban context
@@ -1048,7 +1045,7 @@ Climate Neutrality Action Plan
 
 2
 
-|   | Smarter City | - Information technology evolution
+Smarter City | - Information technology evolution
 eco-road pricing | Technology and infrastr.
 Governance & policy
 and
@@ -1060,12 +1057,11 @@ Reduced accesses of pollutant vehicles
 Reduced congestion
 Modal shift | - 51.000 t CO2eq
 Other emission reduction (CO2, NOx, PMx...) |   |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|   |  Greener city | - increased amount of alternative fuels (bio fuels, hydrogen...) | Technology and infrastr. | - Increased % of biofules in the distribution network (from 7 to 10%)
+Greener city | - increased amount of alternative fuels (bio fuels, hydrogen...) | Technology and infrastr. | - Increased % of biofules in the distribution network (from 7 to 10%)
 New options (hydrogen) | - Increased % of biofules in the distribution network (up to 20%)
 Increase of the low emission vehicles number | t CO2 eq NOT EVALUATED YET (Compensation)
 Other emission reduction (CO2, NOx, PMx...) | new supply chains and jobs  |
-|  Mobility & transport | Social focussed city | - mobility as a service
+Mobility & transport | Social focussed city | - mobility as a service
 vulnerable people services
 incentives for PT or upgraded vehicles | Gov & policy, social innovation | Increased accessibility to mobility services for vulnerable people
 Increased use of PT
@@ -1080,20 +1076,19 @@ Climate Neutrality Action Plan
 
 #
 
-|  Waste management & circular economy | Smarter city | Improve differentiated collection and selection
+Waste management & circular economy | Smarter city | Improve differentiated collection and selection
 Decrease plants and vehicles impacts | Technology and infrastructures and social innovation | - improved % of differentiated waste
 reuse of rough materials
 involvement of tourism sector | - optimal use of resources
 circular economy development
 production of alternative fuels (biogas, biodiesel...)
 improved efficiency of waste management system | - 10.000 t CO2eq | - new jobs / opportunities in circular economy  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  Green infrastructure & nature-based solutions: “Water management” | Greener city | -distribution network optimisation
+Green infrastructure & nature-based solutions: “Water management” | Greener city | -distribution network optimisation
 citizens’ awareness | Technology and infrastructures and social innovation | - water savings (decrease in water losses and use)
 energy savings | - optimal use of resources
 production of alternative fuels (biogas)
 improved efficiency of water management system | - 21.000 t CO2eq (other) | - water savings  |
-|  Green infrastructure & nature-based solutions | Greener city and Social focussed city | - green areas improvement (also through crowdfunding)
+Green infrastructure & nature-based solutions | Greener city and Social focussed city | - green areas improvement (also through crowdfunding)
 new trees
 urban vegetable gardens
 green roofs and walls | Technology and infrastructures + Finance and funding + Social innovation | - heat islands mitigation
@@ -1102,7 +1097,7 @@ increased sense of belonging
 urban forest therapy solutions | - energy savings for heat decrease at soil/roof level
 CO2 increased absorption t CO2 eq NOT EVALUATED YET (Compensation) | - fragile population safe from heat islands effects or drought
 support to biodiversity  |
-|  Buildings | Greener city and Social focussed city | - energy efficiency prioritization
+Buildings | Greener city and Social focussed city | - energy efficiency prioritization
 high DNSH standards in urban regeneration | Technology and infrastructures + Finance and funding + | - improvement of smart retrofitting measures
 analysis of new financial tools and incentives framework | - decrease of energy demand in buildings
 exemplary projects | - 127.000 t CO2eq | Energy poverty mitigation (energy communities and high standards for social housing)  |
@@ -1237,12 +1232,6 @@ Climate Neutrality Action Plan
 | --- | --- | --- | --- |
 |  Figure 34 – Enhancing governance and cooperation sub-model  |   |   |   |
 |  Communication and education | Information and communication | COM01 Cooperating with schools and universities COM02 Informing city-users COM03 Supporting with the help-desk | Communication and education about climate issues can multiply the results of all the previous measures. To reach “future citizens” and families, an information action with schools and universities is foreseen. Thematic campaigns and different media channels are planned to reach all city-users. A pilot “Climate Assembly” is going to be tested  |
-3
-
-Climate Neutrality Action Plan
-
-#
-
 |   |  |  | to involve citizens and focus on vulnerable people and youth. Coordination among stakeholders' communication activities will multiply effects and create networking.  |
 | --- | --- | --- | --- |
 |  Figure 35 – Information and communication sub-model 0  |   |   |   |
@@ -1274,27 +1263,26 @@ FINANZ
 Climate Neutrality Action Plan
 5
 
-| Action outline | Action name | Smart public lighting
+Action outline | Action name | Smart public lighting
 PA 02 Public lighting and indoor lighting in public buildings |
-| --- | --- | --- |
-| Reference to impact pathway | Action type | Lighting efficiency |
-| Action description | The Firenze Cambia Luce programme, cofinanced by NOP Metro for over 8.5 million €, has already achieved important results and will be completed throughout the municipal area.
+Reference to impact pathway | Action type | Lighting efficiency
+Action description | The Firenze Cambia Luce programme, cofinanced by NOP Metro for over 8.5 million €, has already achieved important results and will be completed throughout the municipal area.
 The design of the intervention combined energy efficiency criteria with the optimization of the service and the road safety. The additional services installed on the infrastructure (video surveillance, environmental sensors, wi-fi...), with savings in terms of costs and landscape impacts, new technologies will be extended and tested to make the network increasingly resilient and efficient.
 The action concerns public lighting, as a whole, including traffic and votive lights.
 Also indoor lighting of municipal buildings is included. |
-| Field of action | Buildings (lighting) |
-| Systemic lever | Technology |
-| Outcome (par. B-1.1) | Reduced consumption of buildings |
-| Implementation | Responsible body for implementation | Technical services department and third party Silfi spa |
-| Action scale | Municipal scale |
-| Involved stakeholders | Buildings users and magers, public lighting manager (SILFI) |
-| Comments on implementation | www.firenzecambialuce.it
+Field of action | Buildings (lighting)
+Systemic lever | Technology
+Outcome (par. B-1.1) | Reduced consumption of buildings
+Implementation | Responsible body for implementation | Technical services department and third party Silfi spa
+Action scale | Municipal scale
+Involved stakeholders | Buildings users and magers, public lighting manager (SILFI)
+Comments on implementation | www.firenzecambialuce.it
 Projects already financed: Firenze cambia luce, PON 2.1.1a
 KPIs: MWh/y consumption, number of public lighting lamps, % of LED bulbs |
-| Impact & cost | Generated renewable energy (if applicable) | - |
-| Action outline | Removed/substituted energy | 3.000 MWh€ |
-| emissions reduction estimate (total) | 1.400 t_{CO2eq} |
-| Total costs | 8,5 M€ since 2017 |
+Impact & cost | Generated renewable energy (if applicable) | -
+Action outline | Removed/substituted energy | 3.000 MWh€
+emissions reduction estimate (total) | 1.400 t_{CO2eq}
+Total costs | 8,5 M€ since 2017
 FRANZ
 
 Climate Neutrality Action Plan
@@ -1349,21 +1337,20 @@ Climate Neutrality Action Plan
 
 7
 
-|   |  | to the introduction of ICT services and solutions to support the Line of Business.  |
-| --- | --- | --- |
-|  Reference to impact pathway | Field of action | Green and nature based solutions  |
-|   |  Systemic lever | Technology and infrastructures, governance and policy, social innovation  |
-|   |  Outcome (par. B-1.1) | Reduced water and energy consumption, biogas production, reduced emission from water and waste water management  |
-|  Implementation | Responsible body for implementation | Publiacqua  |
-|   |  Action scale | Wider than municipal level (ATO)  |
-|   |  Involved stakeholders | Metro-city, Tuscany region, Authority “bacino dell'appennino settentrionale”, city users  |
-|   |  Comments on implementation | NRRP projects.
+to the introduction of ICT services and solutions to support the Line of Business.
+Reference to impact pathway | Field of action | Green and nature based solutions
+Systemic lever | Technology and infrastructures, governance and policy, social innovation
+Outcome (par. B-1.1) | Reduced water and energy consumption, biogas production, reduced emission from water and waste water management
+Implementation | Responsible body for implementation | Publiacqua
+Action scale | Wider than municipal level (ATO)
+Involved stakeholders | Metro-city, Tuscany region, Authority “bacino dell'appennino settentrionale”, city users
+Comments on implementation | NRRP projects.
 Effects also on adaptation
 KPIs: MWh/y of consumption, MWh/y produced by RES, annual drinking water consumption pro capite, % water leaks in the distribution network  |
-|  Impact & cost | Generated renewable energy (if applicable) | 14.500 MWh  |
-|   |  Removed/substituted energy | 3.700 MWh  |
-|   |  emissions reduction estimate (total) | 21.000 t_{CO2eq}  |
-|   |  Total costs | Most of the budget (79.501.374€ out of 106.341.374€) is dedicated to replacing and adapting aqueduct infrastructure and a massive water meter fleet renovation to ensure the accuracy of the measurement.
+Impact & cost | Generated renewable energy (if applicable) | 14.500 MWh
+Removed/substituted energy | 3.700 MWh
+emissions reduction estimate (total) | 21.000 t_{CO2eq}
+Total costs | Most of the budget (79.501.374€ out of 106.341.374€) is dedicated to replacing and adapting aqueduct infrastructure and a massive water meter fleet renovation to ensure the accuracy of the measurement.
 More than 5M€/tCO_{2eq}  |
 |  Action outline | Action name | (SER 02) Firenze circular city  |
 | --- | --- | --- |
@@ -1399,29 +1386,27 @@ FINANZ
 Climate Neutrality Action Plan
 C
 
-|  Reference to impact pathway | Outcome (according to module B-1.1) | Decrease in waste production and discard during the selection, increase of recycled fraction  |
-| --- | --- | --- |
-|  Implementation | Responsible body for implementation | ALIA (waste manager)
+Reference to impact pathway | Outcome (according to module B-1.1) | Decrease in waste production and discard during the selection, increase of recycled fraction
+Implementation | Responsible body for implementation | ALIA (waste manager)
 Environmental department of the municipality  |
-|   |  Action scale & addressed entities | Municipal scale  |
-|   |  Involved stakeholders | Citizens, tertiary sector  |
-|   |  Comments on implementation | KPIs: kg/y waste produced per capita, % differentiated waste, % recycled waste per each material, % discard during selection...  |
-|  Impact & cost | Generated renewable energy (if applicable) | -  |
-|   |  Removed/substituted energy | -  |
-|   |  emissions reduction estimate (total) | Scope 3: >10t_{CO2eq} depending on BAU forecasts.
+Action scale & addressed entities | Municipal scale
+Involved stakeholders | Citizens, tertiary sector
+Comments on implementation | KPIs: kg/y waste produced per capita, % differentiated waste, % recycled waste per each material, % discard during selection...
+Impact & cost | Generated renewable energy (if applicable) | -
+Removed/substituted energy | -
+emissions reduction estimate (total) | Scope 3: >10t_{CO2eq} depending on BAU forecasts.
 Scope 1 and 2 8t_{CO2eq} to be included under building, mobility and decarbonisation of electricity measures  |
-|   |  Total costs | 6,3 M€ already programmed  |
-| Action outline | Action name | (SER 03) Efficiency in other public authorities |
-| --- | --- | --- |
-| Action type | Action description | Buildings refurbishment, efficient fleets |
-|  | Florence as the capital of the region and of the metropolitan city is home to numerous buildings under the responsibility of other public bodies. The education and culture sector can also count on numerous properties belonging to other entities such as high schools, universities, museums, as well as the health sector.
+Total costs | 6,3 M€ already programmed
+Action outline | Action name | (SER 03) Efficiency in other public authorities
+Action type | Action description | Buildings refurbishment, efficient fleets
+Florence as the capital of the region and of the metropolitan city is home to numerous buildings under the responsibility of other public bodies. The education and culture sector can also count on numerous properties belonging to other entities such as high schools, universities, museums, as well as the health sector.
 As part of the climate neutrality objective, a consultation table is envisaged with the energy managers responsible for sharing the targets of each institution for 2030.
 Over the years, various interventions have already been carried out, while further measures can be designed by contextualizing them in the surrounding urban fabric to exploit synergies and possible synergies. |
-| Reference to impact pathway | Field of action | Buildings, mobility |
-|  | Systemic lever | Technology and infrastructures |
-|  | Outcome (according to module B-1.1) | Savings in building sector and in mobility |
-| Implementation | Responsible bodies/person for implementation | University of Florence, Tuscany region, Metropolitan city, Ministries and other public bodies |
-|  | Action scale & addressed entities | municipal |
+Reference to impact pathway | Field of action | Buildings, mobility
+Systemic lever | Technology and infrastructures
+Outcome (according to module B-1.1) | Savings in building sector and in mobility
+Implementation | Responsible bodies/person for implementation | University of Florence, Tuscany region, Metropolitan city, Ministries and other public bodies
+Action scale & addressed entities | municipal
 
 9
 FIRANZE
@@ -1430,64 +1415,58 @@ Climate Neutrality Action Plan
 
 #
 
-|   | Involved stakeholders | Building managers, mobility managers, employees  |
-| --- | --- | --- |
-|   |  Comments on implementation | Savings and specific actions are detailed in the annex to the CCC of each signatory. KPIs: MWh consumption for buildings and fleet  |
-|  Impact & cost | Generated renewable energy | TBD  |
-|   |  Removed/substituted energy | TBD  |
-|   |  emissions reduction estimate (total) | TBD  |
-|   |  Total costs | TBD  |
-|  Action outline | Action name | Green plan: Botanical invasions (ADAPT 10)  |
-| --- | --- | --- |
-|   |  Action type | Greening the urban spaces  |
-|   |  Action description | Florence has always had a strong sensitivity towards gardens and green areas, so much so that it can count on 8km2 of urban greenery. The objective of the new green plan is to further increase green spaces through a five-year program of recovery and unused areas (+6% of urban green compared to 2018). In 2019-2024, an "urban forestation" program is underway, planting at least 15000 new trees, thanks also to crowd-funding initiatives. At the same time, management activities continue for the control, maintenance and progressive replacement of the tree population. The city is promoting also urban vegetable gardens to both improve green and food culture. Furthermore, for mitigation Florence is taking steps to green the walls/roofs of buildings and use greenery to reduce heat island (mapped with the technical support of the National Research Centre CNR).  |
-|  Reference to impact pathway | Field of action | Green & nature-based solutions  |
-|   |  Systemic lever | Technology and infrastructures, Finance and funding, Social innovation  |
-|   |  Outcome (according to module B-1.1) | - energy savings for heat decrease at soil/roof level (tCO2 eq NOT EVALUATED YET - Compensation) - fragile population safe from heat islands effects or drought - support to biodiversity - increase adaptation  |
-|  Implementation | Responsible body for implementation | Municipal department for environment  |
-|   |  Action scale & addressed entities | Municipal scale  |
+Involved stakeholders | Building managers, mobility managers, employees
+Comments on implementation | Savings and specific actions are detailed in the annex to the CCC of each signatory. KPIs: MWh consumption for buildings and fleet
+Impact & cost | Generated renewable energy | TBD
+Removed/substituted energy | TBD
+emissions reduction estimate (total) | TBD
+Total costs | TBD
+Action outline | Action name | Green plan: Botanical invasions (ADAPT 10)
+Action type | Greening the urban spaces
+Action description | Florence has always had a strong sensitivity towards gardens and green areas, so much so that it can count on 8km2 of urban greenery. The objective of the new green plan is to further increase green spaces through a five-year program of recovery and unused areas (+6% of urban green compared to 2018). In 2019-2024, an "urban forestation" program is underway, planting at least 15000 new trees, thanks also to crowd-funding initiatives. At the same time, management activities continue for the control, maintenance and progressive replacement of the tree population. The city is promoting also urban vegetable gardens to both improve green and food culture. Furthermore, for mitigation Florence is taking steps to green the walls/roofs of buildings and use greenery to reduce heat island (mapped with the technical support of the National Research Centre CNR).
+Reference to impact pathway | Field of action | Green & nature-based solutions
+Systemic lever | Technology and infrastructures, Finance and funding, Social innovation
+Outcome (according to module B-1.1) | - energy savings for heat decrease at soil/roof level (tCO2 eq NOT EVALUATED YET - Compensation) - fragile population safe from heat islands effects or drought - support to biodiversity - increase adaptation
+Implementation | Responsible body for implementation | Municipal department for environment
+Action scale & addressed entities | Municipal scale
 FIRANZE
 
 Climate Neutrality Action Plan
 
 #
 
-|   | Involved stakeholders | Citizens' associations, schools, university and CNR  |
-| --- | --- | --- |
-|   |  Comments on implementation | m² of green areas, number of trees, hot spots / heat islands affected areas  |
-|  Impact & cost | Generated renewable energy | -  |
-|   |  Removed/substituted energy | -  |
-|   |  emissions reduction estimate (total) | TBD  |
-|   |  Total costs | 18 M€ already programmed  |
-|  Action outline | Action name | Shift to public and not motorised transport and reduction of mobility needs - MOB01 Public transport - MOB 02 Soft mobility - GOV02 Digital agenda  |
-| --- | --- | --- |
-|   |  Action type | Optimisation of public transport, promotion of soft mobility (pedestrian areas and paths, bike lanes and sharing)  |
-|   |  Action description | Local public transport will continue its optimization to be able to meet the needs of citizens in a sustainable way and to contribute to the decrease in private transport. Pursuing the goal of sustainable and intermodal mobility, focusing on electric mobility, Florence has designed a large network of tram-lines nearing completion to increase the offer of local public transport (+20%). The road share can count on a fleet of 350 city buses in continuous modernization towards the decarbonization and electrification. The fleet of e-taxis has been supported by the city and is expanding rapidly. Subsidized taxi services for vulnerable citizens have been activated through an agreement with the municipality. Much has already been done on cycle paths, park and ride parking, sharing and pedestrian mobility and the planning of sustainable mobility provides for the continuation of soft mobility policies with various improvement actions for the completion of connections (internal and also towards neighbouring municipalities), safety and the promotion of intermodality. The “Bicipolitana” is a planned network of 8 cycle paths crossing the city. Bike sharing was activated with over 3,500 traditional and pedal assisted vehicles. A Florence bike app with route map is available. For pedestrian mobility, numerous safety measures have been carried out and a pedibus has been introduced for schools.  |
+Involved stakeholders | Citizens' associations, schools, university and CNR
+Comments on implementation | m² of green areas, number of trees, hot spots / heat islands affected areas
+Impact & cost | Generated renewable energy | -
+Removed/substituted energy | -
+emissions reduction estimate (total) | TBD
+Total costs | 18 M€ already programmed
+Action outline | Action name | Shift to public and not motorised transport and reduction of mobility needs - MOB01 Public transport - MOB 02 Soft mobility - GOV02 Digital agenda
+Action type | Optimisation of public transport, promotion of soft mobility (pedestrian areas and paths, bike lanes and sharing)
+Action description | Local public transport will continue its optimization to be able to meet the needs of citizens in a sustainable way and to contribute to the decrease in private transport. Pursuing the goal of sustainable and intermodal mobility, focusing on electric mobility, Florence has designed a large network of tram-lines nearing completion to increase the offer of local public transport (+20%). The road share can count on a fleet of 350 city buses in continuous modernization towards the decarbonization and electrification. The fleet of e-taxis has been supported by the city and is expanding rapidly. Subsidized taxi services for vulnerable citizens have been activated through an agreement with the municipality. Much has already been done on cycle paths, park and ride parking, sharing and pedestrian mobility and the planning of sustainable mobility provides for the continuation of soft mobility policies with various improvement actions for the completion of connections (internal and also towards neighbouring municipalities), safety and the promotion of intermodality. The “Bicipolitana” is a planned network of 8 cycle paths crossing the city. Bike sharing was activated with over 3,500 traditional and pedal assisted vehicles. A Florence bike app with route map is available. For pedestrian mobility, numerous safety measures have been carried out and a pedibus has been introduced for schools.
 FINANZ
 Climate Neutrality Action Plan
 C
 
-|   |  | The Smart City Control Room and the ICT services (app IF, parking info...) together with the digitalisation of services and the policies for the 15' city, are going to reduce the mobility needs and travels.  |
-| --- | --- | --- |
-|  Reference to impact pathway | Field of action | Transport  |
-|   |  Systemic lever | Technology and infrastructure, social innovation  |
-|   |  Outcome (module B-1.1) | reduced km by private vehicles, reduced consumption of fossil fuels, reduced emissions (CO₂, NOx, PMx...), reduced traffic congestion and time spent in traffic  |
-|  Implementation | Responsible body for implementation | Municipality, Department mobility and viability  |
-|   |  Action scale & addressed entities | municipal and metro-city scale  |
-|   |  Involved stakeholders | Regional authority, metro-city, Autolinee Toscane, Taxi associations...  |
-|   |  Comments on implementation | https://mobilita.comune.fi.it/index.html
+The Smart City Control Room and the ICT services (app IF, parking info...) together with the digitalisation of services and the policies for the 15' city, are going to reduce the mobility needs and travels.
+Reference to impact pathway | Field of action | Transport
+Systemic lever | Technology and infrastructure, social innovation
+Outcome (module B-1.1) | reduced km by private vehicles, reduced consumption of fossil fuels, reduced emissions (CO₂, NOx, PMx...), reduced traffic congestion and time spent in traffic
+Implementation | Responsible body for implementation | Municipality, Department mobility and viability
+Action scale & addressed entities | municipal and metro-city scale
+Involved stakeholders | Regional authority, metro-city, Autolinee Toscane, Taxi associations...
+Comments on implementation | https://mobilita.comune.fi.it/index.html
 https://youtu.be/f-z4Rl6FxD0
 https://mobilita.comune.fi.it/mobilita_sostenibile/mobilita_sostenibile/mobilita_ciclistica.html  |
-|  Impact & cost | Generated renewable energy | -  |
-|   |  Removed/substituted energy | 400 GWh of fossil fuels consumption  |
-|   |  emissions reduction estimate (total) | 109 kt CO2eq  |
-|   |  Total costs | 564 M€  |
-|  Action outline | Action name | Eco-road pricing, electrification of fleets and sustainable logistic
+Impact & cost | Generated renewable energy | -
+Removed/substituted energy | 400 GWh of fossil fuels consumption
+emissions reduction estimate (total) | 109 kt CO2eq
+Total costs | 564 M€
+Action outline | Action name | Eco-road pricing, electrification of fleets and sustainable logistic
 MOB 03 Mobility management
 MOB 04 Private mobility  |
-| --- | --- | --- |
-|   |  Action type | mobility regulation, incentives and infrastructures  |
-|   |  Action description | Florence has focused on e-mobility for the private sector by equipping itself with a widespread public charging infrastructure of over 500 recharging points which will be further strengthened and modernized to respond to technological developments.
+Action type | mobility regulation, incentives and infrastructures
+Action description | Florence has focused on e-mobility for the private sector by equipping itself with a widespread public charging infrastructure of over 500 recharging points which will be further strengthened and modernized to respond to technological developments.
 The composition of the private fleet ought to continue to update, supported by discounts for LEV vehicles and other measures.
 Logistic system is playing a crucial role and it has been recently addressed by a new SULP which foresees a close cooperation with operators for a systemic change. The Horizon project UNCHAIN will support a pilot action in the city centre to test new approaches and technologies.
 The action includes the promotion of sharing services, of the concept of "Mobility As A Service"  |
@@ -1499,49 +1478,46 @@ Climate Neutrality Action Plan
 
 #
 
-|   |  | and of discussion tables with companies' mobility managers and logistic operators.  |
-| --- | --- | --- |
-|  Reference to impact pathway | Field of action | Transport  |
-|   |  Systemic lever | technology & infrastructure  |
-|   |  Outcome (module B-1.1) | - regulatory evolution (limited access for private transport to city centre)
+and of discussion tables with companies' mobility managers and logistic operators.
+Reference to impact pathway | Field of action | Transport
+Systemic lever | technology & infrastructure
+Outcome (module B-1.1) | - regulatory evolution (limited access for private transport to city centre)
 change of mobility habits for all city users (residents, commuters, tourists, logistic operators...)
 test of new solutions for logistics  |
-|  Implementation | Responsible body for implementation | Municipality, Department mobility and viability  |
-|   |  Action scale & addressed entities | municipal scale  |
-|   |  Involved stakeholders | mobility managers, SILFI (charging infrastructure manager), Regional and national authorities (for regulations and incentives), logistic operators, sharing services providers  |
-|  Impact & cost | Generated renewable energy | -  |
-|   |  Removed/substituted energy | >700 GWh by fossil fuels  |
-|   |  emissions reduction estimate (total) | 199 kt CO2eq  |
-|   |  Total costs | 221 M€  |
-|  Action outline | Action name | Buildings renovation
+Implementation | Responsible body for implementation | Municipality, Department mobility and viability
+Action scale & addressed entities | municipal scale
+Involved stakeholders | mobility managers, SILFI (charging infrastructure manager), Regional and national authorities (for regulations and incentives), logistic operators, sharing services providers
+Impact & cost | Generated renewable energy | -
+Removed/substituted energy | >700 GWh by fossil fuels
+emissions reduction estimate (total) | 199 kt CO2eq
+Total costs | 221 M€
+Action outline | Action name | Buildings renovation
 PLAN 01 Residential sector
 PLAN 02 Tertiary and industrial sector
 PLAN 03 Urban regeneration  |
-| --- | --- | --- |
-|   |  Action type | buildings regulation, retrofitting, incentives  |
-|   |  Action description | The Structural Plan contains the vision up to 2030, preventing land consumption: it represents a complete innovation in terms of approach to planning, since it does not foresee the exclusive reuse of abandoned buildings/surfaces, but only their transformation for the city's development. The principle of planning is to rehabilitate, limiting as far as possible the consumption of new ground (so-called “zero volume”) and improving the amount of the existing ecological network. For the first time, the Structural Plan granted equal importance to the system of ecological allocations as to that of mobility and collective facility systems, for the planning and management of the territory. Hence the definition and identification of ecological allocations, consisting of nodes and corridors making up the main network, formed by green elements of the urban fabric and connected to the metropolitan one.  |
+Action type | buildings regulation, retrofitting, incentives
+Action description | The Structural Plan contains the vision up to 2030, preventing land consumption: it represents a complete innovation in terms of approach to planning, since it does not foresee the exclusive reuse of abandoned buildings/surfaces, but only their transformation for the city's development. The principle of planning is to rehabilitate, limiting as far as possible the consumption of new ground (so-called “zero volume”) and improving the amount of the existing ecological network. For the first time, the Structural Plan granted equal importance to the system of ecological allocations as to that of mobility and collective facility systems, for the planning and management of the territory. Hence the definition and identification of ecological allocations, consisting of nodes and corridors making up the main network, formed by green elements of the urban fabric and connected to the metropolitan one.
 FINANZ
 Climate Neutrality Action Plan
 C
 
-|   |  | The operational plan, together with the green plan, contains the guidelines aligned with the new climate sustainability objectives.
+The operational plan, together with the green plan, contains the guidelines aligned with the new climate sustainability objectives.
 In recent years, the availability of subsidies has favoured interventions aimed at promoting the improvement of the energy performance of buildings. Energy consultancy is carried out through the renewed desk in cooperation with Legambiente and the one-stop shop for construction, in particular on state incentives available for homes.
 The intention is to proceed with an ERP housing redevelopment program by adopting high energy standards (NZEB).
 The evolution of the building stock in the tertiary and productive sector is also regulated by the structural plan with precise guidelines regarding the redevelopment and limitation of new buildings. The implementation of the new Municipal Operational Plan foresees specific exchange tables and programmatic agreements for the development of a green tourism/productive system.
 The municipality has encouraged the replacement of the boilers and also promoted the renovation of the facades with energy efficiency, increasing the national incentive (+10%).
 In addition, advanced management and control systems, intelligent lighting and efficient appliances, the use of RES and the purchase of green energy is promoted (the last two measures are part of the action about decarbonisation of electricity).  |
-| --- | --- | --- |
-|  Reference to impact pathway | Field of action | buildings & heating  |
-|   | Systemic lever | Technology and infrastructures, Finance and funding, Social innovation  |
-|   | Outcome (module B-1.1) | - improvement of smart retrofitting measures
+Reference to impact pathway | Field of action | buildings & heating
+Systemic lever | Technology and infrastructures, Finance and funding, Social innovation
+Outcome (module B-1.1) | - improvement of smart retrofitting measures
 analysis of new financial tools and incentives framework
 activation of the big industrial WG also on climate issues
 decrease of energy demand in buildings
 exemplary projects  |
-|  Implementation | Responsible body for implementation | Municipality, Urban development department  |
-|   | Action scale | municipal level  |
-|   | Involved stakeholders | Casa Spa, designers, builders, owners/tenants associations  |
-|   | Comments on implementation | The projects already started in the framework of PON Metro (9M€) and PNRR (52M€) on residential buildings are:
+Implementation | Responsible body for implementation | Municipality, Urban development department
+Action scale | municipal level
+Involved stakeholders | Casa Spa, designers, builders, owners/tenants associations
+Comments on implementation | The projects already started in the framework of PON Metro (9M€) and PNRR (52M€) on residential buildings are:
 • Pon 4.1.1a retrofitting of ex Meyer stock
 • Pon 4.1.1b Smart Liveability  |
 
@@ -1552,26 +1528,23 @@ Climate Neutrality Action Plan
 
 #
 
-|   |  | · Pon 6.1.3b Energy poverty · PNRR Urban regeneration · PNRR social housing (128 houses in Florence, 357 in the metro city) Other projects have been submitted for more than 60 M€  |
-| --- | --- | --- |
-|  Impact & cost | Generated renewable energy | -  |
-|   |  Removed/substituted energy | about 700 GWh of fossil fuels (gas, oil) and more than 250 GWh_{el}.  |
-|   |  emissions reduction estimate (total) | 210kt CO2eq  |
-|   |  Total costs | 1.038 M€  |
-|  Action outline | Action name | Decarbonisation of electricity & smart grid  |
-| --- | --- | --- |
-|   |  Action type | RES and green electricity market promotion, grid update  |
-|   |  Action description | The potential of renewables has been the subject of various studies and was also clarified for hydroelectric power during the drafting of the PAES (PV and mini hydro). The landscape constraints have considerably limited the development potential of solar plants, while the air quality requirements have not allowed the promotion of biomass power plants and cogeneration. Significant growth is expected following the launch of local energy communities that can facilitate, also thanks to the support of the municipality, the constraint and investment obstacle in the future by allowing access to many citizens. Two hydro plants are being installed in the Arno river within the Florentine area by the Region, as part of the eight plants programmed for a total cost of 80 M€ and a production of 55GWhe/y. Among the measures dependent on Other Entities there is also the improvement of the national electricity mix (NEEFE) strictly connected to local policies for the electrification of consumption, mainly in the mobility sector but also in the building sector, in synergy with the purchase and local production of renewable energy. The national emission factor target at 2030 has been set at 65% in the last update of the PNIECC. The municipality intends to - actively participate at national WG (also through Let's Gov project) to increase the targets - boost the local market for certified green electricity purchase by promoting green & sustainable tourism  |
+· Pon 6.1.3b Energy poverty · PNRR Urban regeneration · PNRR social housing (128 houses in Florence, 357 in the metro city) Other projects have been submitted for more than 60 M€
+Impact & cost | Generated renewable energy | -
+Removed/substituted energy | about 700 GWh of fossil fuels (gas, oil) and more than 250 GWh_{el}.
+emissions reduction estimate (total) | 210kt CO2eq
+Total costs | 1.038 M€
+Action outline | Action name | Decarbonisation of electricity & smart grid
+Action type | RES and green electricity market promotion, grid update
+Action description | The potential of renewables has been the subject of various studies and was also clarified for hydroelectric power during the drafting of the PAES (PV and mini hydro). The landscape constraints have considerably limited the development potential of solar plants, while the air quality requirements have not allowed the promotion of biomass power plants and cogeneration. Significant growth is expected following the launch of local energy communities that can facilitate, also thanks to the support of the municipality, the constraint and investment obstacle in the future by allowing access to many citizens. Two hydro plants are being installed in the Arno river within the Florentine area by the Region, as part of the eight plants programmed for a total cost of 80 M€ and a production of 55GWhe/y. Among the measures dependent on Other Entities there is also the improvement of the national electricity mix (NEEFE) strictly connected to local policies for the electrification of consumption, mainly in the mobility sector but also in the building sector, in synergy with the purchase and local production of renewable energy. The national emission factor target at 2030 has been set at 65% in the last update of the PNIECC. The municipality intends to - actively participate at national WG (also through Let's Gov project) to increase the targets - boost the local market for certified green electricity purchase by promoting green & sustainable tourism
 FINANZ
 Climate Neutrality Action Plan
 C
 
-|   |  | - support the implementation of RES private plants by facilitating the urban regulation and the creation of energy communities with pilot implementations and technical support
+- support the implementation of RES private plants by facilitating the urban regulation and the creation of energy communities with pilot implementations and technical support
 install public plants (hydro and PV)  |
-| --- | --- | --- |
-|  Reference to impact pathway | Field of action | buildings & heating  |
-|   |  Systemic lever | Democracy and participation, Governance, Finance and funding, technologies & infrastructures  |
-|   |  Outcome (module B-1.1) | - Increased awareness about energy market & RES
+Reference to impact pathway | Field of action | buildings & heating
+Systemic lever | Democracy and participation, Governance, Finance and funding, technologies & infrastructures
+Outcome (module B-1.1) | - Increased awareness about energy market & RES
 First “100% green electricity” use in companies (starting from public entities and tourism)
 Mini hydro plant installed in Arno - Increased purchase / use of certified green electricity
 Further decrease of local emission factor Vs national provisions (65% res at 2030 in the national energy plan PNIEC)
@@ -1581,18 +1554,17 @@ Analysis of the consumption profiles
 First business models - Reduced boundary regulations in urban context
 Implementation of pilot projects
 Decrease of local electricity emission factor and of heating systems impact  |
-|  Implementation | Responsible body for implementation | Municipal environmental department, Regional Authority, national Government  |
-|   |  Action scale & addressed entities | local and national  |
-|   |  Involved stakeholders | Sovrintendenza, ESCOs and energy market players  |
-|  Impact & cost | Generated renewable energy | more than 80% of electricity in use produced by RES  |
-|   |  Removed/substituted energy | -  |
-|   |  emissions reduction estimate (total) | 395 kt CO2eq  |
-|   |  Total costs | 240 M€  |
-|  Action outline | Action name | Decarbonisation of heating generation  |
-| --- | --- | --- |
-|   |  Action type | RES and efficient technologies promotion  |
-|   |  Action description | the municipality will promote the use of efficient technologies (like micro district heating and heat pumps) and renewable plants for heating generation following the pilot test of the seasonal TES (H2020 SCC1 Replicate). The use of biofuels for heating will be analysed together with DSO and stakeholders' associations.  |
-|   | Field of action | buildings & heating  |
+Implementation | Responsible body for implementation | Municipal environmental department, Regional Authority, national Government
+Action scale & addressed entities | local and national
+Involved stakeholders | Sovrintendenza, ESCOs and energy market players
+Impact & cost | Generated renewable energy | more than 80% of electricity in use produced by RES
+Removed/substituted energy | -
+emissions reduction estimate (total) | 395 kt CO2eq
+Total costs | 240 M€
+Action outline | Action name | Decarbonisation of heating generation
+Action type | RES and efficient technologies promotion
+Action description | the municipality will promote the use of efficient technologies (like micro district heating and heat pumps) and renewable plants for heating generation following the pilot test of the seasonal TES (H2020 SCC1 Replicate). The use of biofuels for heating will be analysed together with DSO and stakeholders' associations.
+Field of action | buildings & heating
 
 6
 FINANZ
@@ -1682,43 +1654,42 @@ Climate Neutrality Action Plan
 
 Tabella 8.1 Indicatori di valutazione
 
-|  Obiettivi di sostenibilità |   |   |
-| --- | --- | --- |
-|  Mobilità e trasporto | Garantire a tutti i cittadini modi di spostamento che permettano loro di accedere alle destinazioni ed ai servizi chiave (LG_PUMS) | Domanda di mobilità stradale riferita alla CM (veicoli/giorno)
+Obiettivi di sostenibilità
+Mobilità e trasporto | Garantire a tutti i cittadini modi di spostamento che permettano loro di accedere alle destinazioni ed ai servizi chiave (LG_PUMS) | Domanda di mobilità stradale riferita alla CM (veicoli/giorno)
 Lunghezza della rete stradale riferita alla CM (km)
 Percorrenze totali giornaliere sulla rete stradale della CM (auto*km/hp)
 Tempo totale di viaggio giornaliero sulla rete stradale della CM (auto*ore/hp)
 Velocità media sulla rete stradale – Auto (km/h)
 Passeggeri trasportati nell'ora di punta del giorno di riferimento sulla rete Tpb – (numero passeggeri/hp),
 Passeggeri saliti nell'ora di punta del giorno di riferimento sulla rete Tpb – (numero saliti/hp)  |
-|   |  Realizzare un passaggio equilibrato a modi di trasporto ecocompatibili ai fini di un sistema sostenibile di trasporto e di mobilità (SSS) | Ripartizione modale (% di spostamenti per mezzo utilizzato)
+Realizzare un passaggio equilibrato a modi di trasporto ecocompatibili ai fini di un sistema sostenibile di trasporto e di mobilità (SSS) | Ripartizione modale (% di spostamenti per mezzo utilizzato)
 Percorrenze totali giornaliere sulla rete stradale della CM (auto*km/hp)
 Percorrenze totali giornaliere sulla rete stradale dell'Agglomerato urbano (auto*km/hp)  |
-|   |  Aumentare la mobilità sostenibile di persone e merci, garantendo a tutti, entro il 2030, l'accesso a un sistema di trasporti sicuro, conveniente, accessibile e sostenibile, in particolare modo potenziando i trasporti pubblici (SNSvS) | Tratti di rete stradale in congestione – (km)
+Aumentare la mobilità sostenibile di persone e merci, garantendo a tutti, entro il 2030, l'accesso a un sistema di trasporti sicuro, conveniente, accessibile e sostenibile, in particolare modo potenziando i trasporti pubblici (SNSvS) | Tratti di rete stradale in congestione – (km)
 Tratti di rete stradale in precongestione – (km)
 Passeggeri trasportati nell'ora di punta del giorno di riferimento sulla rete Tpb – (numero passeggeri/hp),
 Passeggeri saliti nell'ora di punta del giorno di riferimento sulla rete Tpb – (numero saliti/hp)  |
-|   |  Migliorare i servizi di trasporto pubblico di passeggeri per incoraggiare a una maggiore efficienza e a prestazioni migliori (SSS) | Ripartizione modale (% di spostamenti per mezzo utilizzato)
+Migliorare i servizi di trasporto pubblico di passeggeri per incoraggiare a una maggiore efficienza e a prestazioni migliori (SSS) | Ripartizione modale (% di spostamenti per mezzo utilizzato)
 Passeggeri trasportati nell'ora di punta del giorno di riferimento sulla rete Tpb – (numero passeggeri/hp),
 Passeggeri saliti nell'ora di punta del giorno di riferimento sulla rete Tpb – (numero saliti/hp)  |
-|   |  Migliorare l'accessibilità di persone e merci (LG_PUMS) | Ripartizione modale (% di spostamenti per mezzo utilizzato)
+Migliorare l'accessibilità di persone e merci (LG_PUMS) | Ripartizione modale (% di spostamenti per mezzo utilizzato)
 Percorrenze totali giornaliere sulla rete stradale della CM (auto*km/hp)
 Tempo totale di viaggio giornaliero sulla rete stradale della CM (auto*ore/hp)
 Tratti di rete stradale in congestione – (km)
 Tratti di rete stradale in precongestione – (km)
 Passeggeri trasportati nell'ora di punta del giorno di riferimento sulla rete Tpb – (numero passeggeri/hp),
 Passeggeri saliti nell'ora di punta del giorno di riferimento sulla rete Tpb – (numero saliti/hp)  |
-|   |  Riduzione della congestione stradale (LG_PUMS) | Tempo totale di viaggio giornaliero sulla rete stradale della CM (auto*ore/hp)
+Riduzione della congestione stradale (LG_PUMS) | Tempo totale di viaggio giornaliero sulla rete stradale della CM (auto*ore/hp)
 Velocità media sulla rete stradale – Auto (km/h)
 Tratti di rete stradale in congestione – (km)
 Tratti di rete stradale in precongestione – (km)  |
-|  Qualità dell'aria | Minimizzare le emissioni e abbattere le concentrazioni inquinanti in atmosfera (SNSS) | NOX (kg/giorno)
+Qualità dell'aria | Minimizzare le emissioni e abbattere le concentrazioni inquinanti in atmosfera (SNSS) | NOX (kg/giorno)
 PM10 (kg/giorno)
 PM2,5 (kg/giorno)  |
-|  Cambiamenti climatici | Ridurre i consumi energetici (SEN/PNIEC e PERFER) | Consumi (Tep/ora)  |
-|   |  Ridurre le emissioni di gas climalteranti (SEN/PNIEC e PAESC) | Emissioni gas serra CO2 (kg/ora)  |
-|  Inquinamento acustico | Evitare e ridurre il rumore ambientale laddove necessario e, in particolare, allorché i livelli di esposizione possono avere effetti nocivi per la salute umana, nonché di conservare la qualità acustica dell'ambiente quando questa è buona (2002/49/CE) | Popolazione esposta al rumore  |
-|  Salute | Diminuire l'esposizione della popolazione ai fattori di rischio ambientale e antropico (SNSvS) | Emissioni centri abitati (agglomerato e città metropolitana di NOX (kg/giorno)
+Cambiamenti climatici | Ridurre i consumi energetici (SEN/PNIEC e PERFER) | Consumi (Tep/ora)
+Ridurre le emissioni di gas climalteranti (SEN/PNIEC e PAESC) | Emissioni gas serra CO2 (kg/ora)
+Inquinamento acustico | Evitare e ridurre il rumore ambientale laddove necessario e, in particolare, allorché i livelli di esposizione possono avere effetti nocivi per la salute umana, nonché di conservare la qualità acustica dell'ambiente quando questa è buona (2002/49/CE) | Popolazione esposta al rumore
+Salute | Diminuire l'esposizione della popolazione ai fattori di rischio ambientale e antropico (SNSvS) | Emissioni centri abitati (agglomerato e città metropolitana di NOX (kg/giorno)
 PM10 (kg/giorno)
 PM2,5 (kg/giorno)
 Popolazione esposta al rumore  |
@@ -2382,19 +2353,16 @@ O
 
 Hereafter is reported the first list of signatories who are supporting the city in its path towards climate neutrality at 2030; their contribution is detailed in the specific annex. The list is open and will be updated together with the regular monitoring of the present CCC.
 
-|  Name of the institution | Sector/Area | Legal form | Name of the responsible person | Position of the responsible person  |
-| --- | --- | --- | --- | --- |
-|  Regione Toscana | Governance | Public Authority | Monia Monni | Councillor for the Environment  |
-|  Città Metropolitana di Firenze | Governance | Public Authority | Giacomo Parenti | City Manager  |
-|  UNIFI – University of Florence | Academia | Public body | Alessandra Petrucci | Rector  |
-|  Alia Servizi Ambientali Spa | Integrated Waste Cycle management | Public company | Lorenzo Perra | Chairman of the board of directors  |
-|  SILFI | Public lighting and ICT (smart services) | Public Company | Matteo Casanovi | President  |
-|  PUBLIACQUA | Water management | Private company (with mixed public-private capital) | Nicola Pierini | President  |
-|  Fondazione CR Firenze | Philanthropic / social interest | Non-profit organisation (foundation of banking origin) | Salvadori Luigi | President  |
-|  THALES | Aeronautical and aerospace industry | Private company | Donato Amoroso | CEO & Country Director  |
-|  El.en. S.p.A | Laser products | Private Company | Caterina Delibassis | Sustainability manager  |
-|  |   |   |   |   |
-|  |   |   |   |   |
+Name of the institution | Sector/Area | Legal form | Name of the responsible person | Position of the responsible person
+Regione Toscana | Governance | Public Authority | Monia Monni | Councillor for the Environment
+Città Metropolitana di Firenze | Governance | Public Authority | Giacomo Parenti | City Manager
+UNIFI – University of Florence | Academia | Public body | Alessandra Petrucci | Rector
+Alia Servizi Ambientali Spa | Integrated Waste Cycle management | Public company | Lorenzo Perra | Chairman of the board of directors
+SILFI | Public lighting and ICT (smart services) | Public Company | Matteo Casanovi | President
+PUBLIACQUA | Water management | Private company (with mixed public-private capital) | Nicola Pierini | President
+Fondazione CR Firenze | Philanthropic / social interest | Non-profit organisation (foundation of banking origin) | Salvadori Luigi | President
+THALES | Aeronautical and aerospace industry | Private company | Donato Amoroso | CEO & Country Director
+El.en. S.p.A | Laser products | Private Company | Caterina Delibassis | Sustainability manager
 NET ZERO CITIES
 
 EU MISSION PLATFORM | CLIMATE NEUTRAL AND SMART CITIES
@@ -3761,7 +3729,7 @@ Our figures for the community
 
 Every year our activities translate into concrete actions for the territory
 
-|  600thousands people
+600thousands people
 impacted by the solidarity
 projects we support | 450 cultural workers
 operate thanks to our
@@ -3770,7 +3738,6 @@ are involved in innovative
 research projects | 3 millions euro
 are activated in the territory
 thanks to our Europe Counter  |
-| --- | --- | --- | --- |
 
 timing:
 ☑ Analysis / design phase

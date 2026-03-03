@@ -235,11 +235,11 @@ Table 2
 |   | Scope 1 | Scope 2 | Scope 3**  |
 |  Buildings | 1 441 003 | 1 344 163 | N/A  |
 |  (Fuel type/ energy used) | Natural gas
-272 | Electrical energy
-912 | N/A  |
+| 272 | Electrical energy |
+| 912 | N/A  |
 |   |  Coal
-130 232 | Central heating
-251 |   |
+| 130 232 | Central heating |
+| 251 |   |
 |   |  Biomass |  |   |
 KOŠICE
 
@@ -405,11 +405,9 @@ Climate Neutrality Action Plan
 |   |  |  |  | Contract: 3. Sustainable urban development  |
 | --- | --- | --- | --- | --- |
 |  Strategy | Regional | Adaptation Strategy to the Consequences of Climate Change in the Košice Region | The strategy focuses on measures and activities that are aimed at reducing sensitivity, vulnerability and increasing climate change adaptation capacity at regional and local level. | Relevant objectives of the strategy - reducing the sensitivity of the urban landscape, reducing the sensitivity of transport infrastructure; increasing the adaptation capacity of the local economy; adaptation of the population by increasing their awareness.
-
-Relevant for the priority defined in the Climate City Contract: 3. Sustainable urban development (green & blue infrastructure).  |
+| Relevant for the priority defined in the Climate City Contract: 3. Sustainable urban development (green & blue infrastructure).  |
 |  Action plan | Regional | Sustainable Mobility Plan of the Košice Self-Governing Region | SUPM concerns transport infrastructure and transport organization. It includes all modes of transport (motorized, non-motorized, public, individual, bicycle, freight). | Regional SUMP includes major interventions for Sustainable transport system of the region and its integration with city public transport.
-
-Relevant for the priority defined in the Climate City Contract: 2. Sustainable mobility  |
+| Relevant for the priority defined in the Climate City Contract: 2. Sustainable mobility  |
 |  Strategy | Regional | Hydrogen Strategy of the Košice Region | It is an information document describing the current state of hydrogen technologies and partially identifying potentials for the Košice Region without a strategic and implementation part. | Potential for future expansion of the Action Plan  |
 |  Strategy | Regional | Low-Carbon Strategy of Organizations in the Founding Competence of the Košice Region | The strategy focuses exclusively on its own organizations and in no way on stimulating the decarbonization of the region as a whole | Relevant for following priorities defined in the Climate City Contract: 1. Energy efficiency and the transition to renewable energy, 2. sustainable mobility, 3. Sustainable urban development  |
 |  Regulation | Local | Spatial plan of the city of Košice. A new spatial plan is currently being prepared. | Commitment to support the principles of sustainable development | Regulations for the organization of the territory of the Košice economic and residential agglomeration.  |
@@ -423,16 +421,10 @@ Climate Neutrality Action Plan
 | --- | --- | --- | --- | --- |
 |  Action plan | Local | Sustainable Energy and Climate Action Plans (SECAP) / Framework for combating climate change by promoting sustainable energy production and consumption in the city of Košice | Key actions to support the implementation of Europe's 40% GHG reduction target by 2030 compared to 2005 | Relevant for all priority areas defined in the Climate City Contract.  |
 |  Action plan | Local | Concept of the development of the city of Košice in the field of thermal energy (heating) | Commitment to the development of the city's thermal energy | Design of the system of thermal facilities and future heat supply, as well as conclusions and recommendations for the development of the city's thermal energy.
-Relevant for following priority defined in the Climate City Contract: 1. Energy efficiency and the transition to renewable energy,  |
+| Relevant for following priority defined in the Climate City Contract: 1. Energy efficiency and the transition to renewable energy,  |
 |  Strategy | Local | Climate Change Adaptation Strategy of the City of Košice 2022-2030 | Commitment to improve preparedness for negative consequences of climate change | Identification of the vulnerability of the city of Košice in terms of the negative and defined measures in the areas of governance, participation, and infrastructure to increase the resilience of the city area impact of the climate.
-Relevant for all priority areas defined in the Climate City Contract.  |
+| Relevant for all priority areas defined in the Climate City Contract.  |
 |  Startegy + Action plan | Local | Programme of Economic Development and Social Development of the City of Košice and its Functional Area | A medium-term development document that considers the sustainable development goals | Commitment to achieve the Sustainable Development Goals defined in the 2030 Agenda through 4 development themes - green development with respect to  |
-KOSICE
-
-Climate Neutrality Action Plan
-
-#
-
 |   |  | 2022 – 2027, Action Plan 2022 - 2027 | defined in the 2030 Agenda. | climate change, social development, economic development, and governance. Relevant for all priority areas defined in the Climate City Contract.  |
 | --- | --- | --- | --- | --- |
 |  Strategy | Local | Sustainable Mobility Plan of the City of Košice | The document defined goals and measures for the sustainable development of transport in the city in the 2020, 2030 and 2040 horizons. | The document focuses on the promotion of systematic management and development of public passenger transport, calming traffic in the city, developing a comprehensive cycling network and filling in the missing pedestrian links. Relevant for the priority defined in the Climate City Contract: 2. Sustainable mobility.  |
@@ -527,12 +519,6 @@ Climate Neutrality Action Plan
 |  Technological / infrastructural | Municipality, Municipal greenery company | Management of green infrastructure in the city | Expansion of green areas, revitalization of unused areas, planting trees  |
 |  Waste & Circular economy  |   |   |   |
 |  Technological / infrastructural | Municipality, Municipal greenery company | Recycling of green waste | Recycling - processing of material (compost) for own  |
-KOSICE
-
-Climate Neutrality Action
-
-Plan
-
 |   |  |  | activities and for the activities of residents  |
 | --- | --- | --- | --- |
 |  Technological / Behavioral | Universities (P.J.Šafárik University, Faculty of Economics in Technical University in Košice; Faculty of Civil Engineering in Technical University in Košice), Business Košice, n.o. | Recycling in production processes, and use of recycled materials for other activities (construction) | Conducting research for the reuse of materials, Increasing the interest of companies in circularity in production processes  |
@@ -555,7 +541,7 @@ Climate Neutrality Action Plan
 4
 
 |   | • Lack of available information on opportunities and return on investment;
-• Lack of technology (e.g. in the electrification of trucks) |   |
+| • Lack of technology (e.g. in the electrification of trucks) |   |
 | --- | --- | --- |
 |  Capacities | • Lack of capacities across all sectors - significant ‘brain drain’;
 • Lack of knowledge and awareness across all sectors; , resulting in resistance to climate actions ;
@@ -586,11 +572,11 @@ Climate Neutrality Action Plan
 5
 
 |   | • High bureaucracy
-• Insufficient attention to energy poverty |   |
+| • Insufficient attention to energy poverty |   |
 | --- | --- | --- |
 |  Alliances | • Limited past engagement with the private sector that can be leveraged to build cooperation on green topics ;
-• Insufficient communication, information sharing and data transfer between different levels of the administration and stakeholders; | • Establishment of a municipal organization for cooperation with the private sector (Business Košice, n.o.) ;
-• Higher interest in applied research on the part of manufacturing companies  |
+| • Insufficient communication, information sharing and data transfer between different levels of the administration and stakeholders; | • Establishment of a municipal organization for cooperation with the private sector (Business Košice, n.o.) ; |
+| • Higher interest in applied research on the part of manufacturing companies  |
 |  Funds | • High financial demands of infrastructure and technologies ;
 • Strong dependence on the external financial resources due to limited city budget-traditionally on EU funding;
 • Lack of business models and financing and distrust in new financial models;
@@ -649,7 +635,7 @@ Improved quality of life  |
 |   |   |  Establishment of an Energy Savings Fund for the municipal buildings | New projects supported by the Fund  |   |   |
 |   |   |  Business Engagement - partnership | Pilot programme for companies' engagement  |   |   |
 |   |  Technology/ Infrastructure
-Governance & Policy | Building's renovations; | Building's renovations  |   |   |
+| Governance & Policy | Building's renovations; | Building's renovations  |   |   |
 |   |   |  New energy efficient buildings, Introduction of regulations in accordance with the upcoming new zoning plan | New energy efficient buildings | 1  |   |
 |   |   |  Modernization of public lighting infrastructure, including the introduction of smart control | Modernized and smartly managed public lighting, including the addition of missing lighting in selected locations | 16  |   |
 |  Mobility & transport | Technology/ Infrastructure | Part of the public transport fleet has been modernized and charging infrastructure has been built; Preparations for the construction of a new depot for electric buses have begun, | Better conditions for the operation of electric buses, Ongoing electrification of public transport | 5 | Improved air quality
@@ -691,8 +677,8 @@ Financial savings  |
 |   |   |  Implementation of a comprehensive training programme for the Circular Transition Accelerator programme. | Adopting ways of circular lifestyle  |   |   |
 |   |   |  Promoting the adoption of the circular economy in industry - Circular Transition Toolkit for SMEs | Increased recycling rate  |   |   |
 |  Green infrastructure & nature-based solutions | Social Innovation
-Participation & Democracy | Greening the city and its territory | New and restored green areas and blue infrastructure in the city |  | Enhanced biodiversity,
-Improved microclimate around the parks and created new social places for the inhabitants - improved quality of life  |
+| Participation & Democracy | Greening the city and its territory | New and restored green areas and blue infrastructure in the city |  | Enhanced biodiversity, |
+| Improved microclimate around the parks and created new social places for the inhabitants - improved quality of life  |
 |   |  Technology/ Infrastructure | Implemented technical solutions close to nature - rain gardens and green roofs | Implemented technical solutions close to nature - rain gardens and green roofs |  | Improved microclimate - reduction of heat islands  |
 KOSICE
 
@@ -826,7 +812,7 @@ O
 | --- | --- | --- |
 |  Priority 1: Energy efficiency and the transition to renewable energy, Action No. 1.  |   |   |
 |  Action outline | Action name | 1.1 Geothermal energy for the central heating ;
-Modernisation of heat distribution system  |
+| Modernisation of heat distribution system  |
 |   |  Action type | Technical Intervention  |
 |   |  Action description | 1.1 Geothermal energy for the central heating
 The main goal of this for the city key project is to use the potential of geothermal energy in the Košice basin and bring heat from geothermal wells (Svinica - Ďurkov, about 15 km) to the hot-water network of central heat supply in the city of Košice. The plan is to completely phase out hard coal during 2024, which should first be replaced by natural gas and then geothermal energy. The project will be implemented in 3 phases. The first phase begins in the present. The supply of geothermal energy is planned from 2026. Phase 1 is planned to be completed by 2030. If successful, the project will continue with the second phase, which should be completed by the end of 2035. The implementation of the 3rd phase is expected by 2050. The total installed heat capacity, after future expansion, can be up to 90 MWt.
@@ -836,7 +822,7 @@ The heat supply of the residential and non-residential stock of Košice for the 
 |  Reference to impact pathway | Field of action | Energy system  |
 |   |  Systemic lever | Technology/ Infrastructure  |
 |   |  Outcome (according to module B-1.1) | Increasing the share of RES.
-Elimination of heat losses  |
+| Elimination of heat losses  |
 |  Implementation | Responsible bodies/person for implementation | 1.1 MH Teplárenský holding, a.s.(state heating company),
 GEOTERM KOŠICE, a.s. (privat company)
 TEHO (city company)  |
@@ -937,14 +923,14 @@ Climate Neutrality Action Plan
 |   | Innovation Partnerships program. Est cost of a prepared program is 2 mil.€  |
 | --- | --- |
 |   | **3.3 Buildings renovations**
-Our goal is to increase the renovation rate from 1.5% to 3% for all types of buildings, through medium and deep renovation.  |
+| Our goal is to increase the renovation rate from 1.5% to 3% for all types of buildings, through medium and deep renovation.  |
 |   | **Municipal buildings**
-The city owns 200 buildings of various nature - school buildings, administrative, cultural (including historical buildings) sports and buildings for the provision of social and health services. Most buildings are classified in lower energy classes. The need for funds of €60 million was estimated (in 2022) for the renovation of building envelopes, roofs by insulation, replacement of windows, heat generation equipment and regulation of heating systems. Priority is given to school buildings, which account for more than half of all buildings and which, due to insufficient funds, focus on small-scale maintenance and renovations. The city is intensively looking for funds, especially from external sources, for the preparation and renovation of its buildings. According to SECAP, the CO2 saving potential from the municipality building is 928 tCO2 per year.  |
+| The city owns 200 buildings of various nature - school buildings, administrative, cultural (including historical buildings) sports and buildings for the provision of social and health services. Most buildings are classified in lower energy classes. The need for funds of €60 million was estimated (in 2022) for the renovation of building envelopes, roofs by insulation, replacement of windows, heat generation equipment and regulation of heating systems. Priority is given to school buildings, which account for more than half of all buildings and which, due to insufficient funds, focus on small-scale maintenance and renovations. The city is intensively looking for funds, especially from external sources, for the preparation and renovation of its buildings. According to SECAP, the CO2 saving potential from the municipality building is 928 tCO2 per year.  |
 |   | **Tertiary building sector**
 There are 3 universities in Košice. Košice universities are planning significant investments in the comprehensive modernization of buildings and dormitories of public and state universities. For example, P.J. Šafárik University plans to carry out 20 modernizations by 2030, including the modernization of the greenhouse in the Botanical Garden. The estimated cost is €43.7 million. Tertiary building sector, especially state and regional institution searching for external sources. The university is actively involved in solving green topics also through the "Race to Zero – Green University" program
 According to SECAP, the CO2 saving potential from the tertiary building sector is 928 tCO2 per year.  |
 |   | **Residential buildings**
-The City of Košice has no direct managerial influence on the implementation of measures in residential buildings. In Slovakia, there are several financial support schemes for the renovation of residential and family houses, such as the State Housing Development Fund, subsidies from the Ministry of Transport and Construction, European Bank programs, the Recovery and Resilience Plan and EU resources. From the city level, raising awareness of the possibilities of support and presenting examples of good practice will be ensured. According to SECAP, the CO2 saving potential from the residential building sector is 5 739 tCO2 per year.  |
+| The City of Košice has no direct managerial influence on the implementation of measures in residential buildings. In Slovakia, there are several financial support schemes for the renovation of residential and family houses, such as the State Housing Development Fund, subsidies from the Ministry of Transport and Construction, European Bank programs, the Recovery and Resilience Plan and EU resources. From the city level, raising awareness of the possibilities of support and presenting examples of good practice will be ensured. According to SECAP, the CO2 saving potential from the residential building sector is 5 739 tCO2 per year.  |
 |   | **3.4 Energy Savings Fund for municipal buildings**  |
 KOŠICE
 
@@ -967,7 +953,7 @@ Main barrier: Lack of funds, Luck of financial models  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   |  Removed/substituted energy, volume, or fuel type | N/A  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | According to BAU 2030 potential for reduction 46 kt CO2e at 3% rate of renovation
-According SECAP : 7 595 tCO2/year  |
+| According SECAP : 7 595 tCO2/year  |
 |   |  GHG emissions compensated (natural or technological sinks) | The calculations were not implemented. This will be the subject of further iterations  |
 |   |  Total costs and costs by CO2e unit | 3.1 500 000 € / 387 tCO2
 Est. cost of the program: 2 mil.€
@@ -1028,7 +1014,7 @@ B-2.2: Individual action outlines
 |  Priority 2: Sustainable transport, Action No. 6.  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | 6.1 Modernisation and electrification of public transport
-Effective mobility management of public transport  |
+| Effective mobility management of public transport  |
 |   |  Action type | Technical Intervention, Other intervention  |
 |   |  Action description | 6.1 Modernisation and electrification of public transport
 Bus electrification
@@ -1075,7 +1061,7 @@ B-2.2: Individual action outlines
 |  Priority 2: Sustainable transport, Action No. 7.  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | 7.1 Promotion of sustainable transport modes
-Comprehensive network of cycling roads in the city  |
+| Comprehensive network of cycling roads in the city  |
 |   |  Action type | Technical Intervention, Other intervention  |
 |   |  Action description | 7.1 Promotion of sustainable transport modes
 The support of public and non-motorized transport is one of the key priorities of the SUMP of the city of Košice.
@@ -1084,7 +1070,7 @@ The City of Košice is aware of the importance of supporting non-motorized trans
 |  Reference to impact pathway | Field of action | Mobility & Transport  |
 |   |  Systemic lever | Learning & Capabilities, Technology / Infrastructure,  |
 |   |  Outcome (according to module B-1.1) | Higher share of public transport passengers, cyclists and pedestrians.
-Comprehensive network of cycling roads in the city is built.  |
+| Comprehensive network of cycling roads in the city is built.  |
 |  Implementation | Responsible bodies/person for implementation | Municipality, Public transport company  |
 |   |  Action scale & addressed entities | Urban area and its surrounding, Citizens  |
 |   |  Involved stakeholders | Civic organisations  |
@@ -1126,10 +1112,10 @@ Climate Neutrality Action Plan
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   |  Removed/substituted energy, volume, or fuel type | N/A  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | According to SECAP the potential of reduction is estimated at 6,543 ktCO2/year.
-According to BAU 2030 scenario for electrification of cars + motorcycles: 5 kt CO2e; truck electrification : 2ktCO2e by 2040.  |
+| According to BAU 2030 scenario for electrification of cars + motorcycles: 5 kt CO2e; truck electrification : 2ktCO2e by 2040.  |
 |   |  GHG emissions compensated (natural or technological sinks) | The calculations were not implemented. This will be the subject of further iterations  |
 |   |  Total costs and costs by CO2e unit | Electrification of cars + motorcycles – charging stations stations: € 400k; 80 €/tCO2
-Further costs need to be defined  |
+| Further costs need to be defined  |
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  Priority 2 : Sustainable transport , Action No. 9.  |   |   |
@@ -1170,7 +1156,7 @@ The city bypasses under construction (total length 14,2 km) will help divert tra
 |   |  Systemic lever | Technology / Infrastructure, Governance & Policy  |
 |   |  Outcome (according to module B-1.1) | Zone 30 extension; Regulations for the entry of cars into selected parts of the city are in place. Reduction of total distance travelled through route optimisation - Built bypass of the city  |
 |  Implementation | Responsible bodies/person for implementation | Municipality
-National Motorway Company  |
+| National Motorway Company  |
 |   |  Action scale & addressed entities | Urban area, surroundings, Citizens, Public and Privat companies  |
 |   |  Involved stakeholders | Municipality districts  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | The costs of setting up regulations will be assessed individually. Estimated cost for southwestern part of bypass: 140 mil. €  |
@@ -1211,7 +1197,7 @@ B-2.2: Individual action outlines
 |  Priority 3: Sustainable urban development, Action No. 12  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | 12.1 Re-use of goods
-Circular lifestyle  |
+| Circular lifestyle  |
 |   |  Action type | Other intervention  |
 |   |  Action description | 12.1 Re-use of goods
 The search for specific approaches for re-use of goods in our conditions and the opening of new topics is addressed by several international projects.
@@ -1241,7 +1227,7 @@ Climate Neutrality Action Plan
 | --- | --- | --- |
 |  Priority 3: Sustainable urban development, Action No. 13  |   |   |
 |  Action outline | Action name | 13.1 Re-use of materials
-Supporting SMEs in the transition to a circular economy  |
+| Supporting SMEs in the transition to a circular economy  |
 |   |  Action type | Other Intervention – Research and Innovations  |
 |   |  Action description | 13.1 Re-use of materials
 The project CI HUB accelerating the circular transition by adopting Industry 4.0 technologies and promoting circular principles like reduce, reuse, and recycle.
@@ -1270,7 +1256,7 @@ B-2.2: Individual action outlines
 |  Priority 3: Sustainable urban development, Action No. 14.  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | 14.1 Urban green and blue infrastructure
-Nature based technical solutions  |
+| Nature based technical solutions  |
 |   |  Action type | Technological Intervention  |
 |   |  Action description | 14.1 Urban green and blue infrastructure
 Construction of new parklands and parks on neglected areas covering an area of 10 hectares ; continuous care of existing parklands.
@@ -1282,7 +1268,7 @@ Introduction of green roofs in the reconstruction of buildings owned by the city
 |  Reference to impact pathway | Field of action | Green infrastructure & nature-based solutions  |
 |   |  Systemic lever | Technical Intervention  |
 |   |  Outcome (according to module B-1.1) | New and restored green areas and blue infrastructure in the city selected measures are implemented
-Implemented technical solutions close to nature - rain gardens, green roofs and walls.  |
+| Implemented technical solutions close to nature - rain gardens, green roofs and walls.  |
 |  Implementation | Responsible bodies/person for implementation | Municipality, City company (Urban Greenery Management)  |
 |   |  Action scale & addressed entities | Technical Intervention  |
 |   |  Involved stakeholders | Citizens, Public and private companies.  |
@@ -1365,12 +1351,6 @@ Climate Neutrality Action Plan
 |  Reduction of total distance travelled through route optimisation - Built bypass of the city |   |   |   |   |   |   |   |
 |  Waste & Circular economy  |   |   |   |   |   |   |   |
 |  Increasing the recycling rate of green waste; higher production of raw material (compost) used for | No.11-12-13 | KSC -I13 | Amount of waste recycled (%) |  | 40% | 55% | 60%  |
-KOSICE
-
-Climate Neutrality Action Plan
-
-4
-
 |  green areas of the city |  |  |  |  |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Reducing waste production; Increased re-use of goods |   |  |  |   |  |  |   |
@@ -1446,12 +1426,6 @@ Climate Neutrality Action Plan
 |  Does the indicator measure indirect impacts (i.e., co-benefits)? | no  |
 |  If yes, which co-benefit does it measure? | N/A  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | yes  |
-KOSICE
-
-Climate Neutrality Action Plan
-
-#
-
 |  If yes, which action and impact pathway is it relevant for? | Energy efficiency and the transition to renewable energy: Sustainable energy centre, Community energy  |
 | --- | --- |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes  |
@@ -1491,14 +1465,6 @@ Climate Neutrality Action Plan
 |  KSC - I5  |   |
 |  Indicator Name | Change in the total energy consumption by buildings per year  |
 |  Indicator Unit | %  |
-KOSICE
-
-Climate Neutrality Action
-
-Plan
-
-#
-
 |  Definition | The amount of energy consumed in buildings in the city (public, private - tertiary sector, residential  |
 | --- | --- |
 |  Calculation | Calculation on primary data  |
@@ -1589,12 +1555,6 @@ KSC -I8
 |  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | yes  |
 |  If yes, which emission source sectors does it measure? | Transport & mobility  |
 |  Does the indicator measure indirect impacts (i.e., co-benefits)? | N/A  |
-KOSICE
-
-Climate Neutrality Action Plan
-
-9
-
 |  If yes, which co-benefit does it measure? | N/A  |
 | --- | --- |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | yes  |
@@ -1677,12 +1637,6 @@ Climate Neutrality Action Plan
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes  |
 |  Data requirements |   |
 |  Expected data source | Registers of state organisations  |
-KOSICE
-
-Climate Neutrality Action Plan
-
-#
-
 |  Is the data source local or regional/national? | National  |
 | --- | --- |
 |  Expected availability | Publicly available data, Data gathering  |
@@ -1722,14 +1676,6 @@ Climate Neutrality Action Plan
 |  Calculation | Calculated as the ratio of mixed waste to waste destined for further use/treatment. It does not include the amount of waste that is recovered in terms of energy.  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | yes  |
-KOSICE
-
-Climate Neutrality Action
-
-Plan
-
-#
-
 |  If yes, which emission source sectors does it measure? | Waste & Circular economy  |
 | --- | --- |
 |  Does the indicator measure indirect impacts (i.e., co-benefits)? | no  |
@@ -1768,12 +1714,6 @@ Plan
 |  References |   |
 |  Deliverables describing the indicator | Wider involvement of residents and companies in the circular economy and way of life  |
 |  Other indicator systems using this indicator | N/A  |
-KOSICE
-
-Climate Neutrality Action Plan
-
-#
-
 |  B-3.2: Indicator Metadata  |   |
 | --- | --- |
 |  KSC – I15  |   |
@@ -1812,12 +1752,6 @@ Climate Neutrality Action Plan
 |  Is the indicator useful for monitoring the output/impact of action(s)? | yes  |
 |  If yes, which action and impact pathway is it relevant for? | Sustainable urban development: Nature based solutions  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no  |
-KOSICE
-
-Climate Neutrality Action Plan
-
-4
-
 |  B-3.2: Indicator Metadata  |   |
 | --- | --- |
 |  KSC – I17  |   |
@@ -1906,14 +1840,6 @@ C.2.1 Sample Table: Relations between social innovations, systems, and impact pa
 |  Science Park | For children's education, the "Steel Park" exhibition will be expanded, the aim of which will be to educate children in green topics, such as the possibilities of using residual energy, in a fun way. A council of experts from the scientific sphere and universities in Košice is working on the preparation of the new exhibition. | Behaviour change, using the potential of universities in this direction as well, interest in supporting educational activities from the steel giant | Municipal company - K13 Košice Cultural Centers, US Steel Košice, Universities | Supports behavioural change and innovative thinking at an early age | Creating a quality environment and quality of life  |
 |  Collaborative Efforts | Connecting actors from different sectors and from the population to propose specific solutions, such as Winter maintenance program "Adopt a sidewalk". | Behaviour change | Municipal company - K13 Košice Cultural Centers, | Supports behavioural change | Creating a quality environment and quality of life  |
 |  Awareness raising - Working with the community and for the community | As part of the ECoC 2013 project, the city transformed old heat exchanger stations into community centers "Výmenníky-exchangers" for local residents, where various community events are organized, which will also include events on the consequences of climate change and solutions to mitigate these consequences on a regular basis. Expand community gardens in "Exchangers", which will | Behaviour change | Municipal company - K13 Košice Cultural Centers, | Supports behavioural change | Creating a quality environment and quality of life Reduction of car use  |
-KOSICE
-
-Climate Neutrality Action
-
-Plan
-
-#
-
 |   | not only be a place to grow healthy vegetables and fruits, but also a space for the community to meet. |  |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Fighting energy poverty | Design and testing of energy assistance tools, to help identify groups of city residents at risk of energy poverty and subsequently seek solutions to prevent energy poverty (Roma communities, single parent households, Ukrainian refugees, and senior citizens) | Limited access to energy in the case of vulnerable groups of the population | ETP Slovakia, Municipality, civic organisation | Ensuring access to energy for all residents by preventing situations that could result in them being denied. | Improved quality of life  |
@@ -2144,9 +2070,9 @@ spoločnosť s ručením
 obmedzeným Košice / Heat
 management Košice | Public heating provider / Local | Legal subject under public law | Jaroslav Tkáč | Manager  |
 |  Energia budov s.r.o. / Energy of
-buildings, privat company | Energy / Buildings / National | Legal subject under public law | Peter Tauš | Director  |
+| buildings, privat company | Energy / Buildings / National | Legal subject under public law | Peter Tauš | Director  |
 |  Dopravný podnik mesta Košice /
-Public transport Company | Public transport provider /Local | Legal subject under public law | Roman Danko | Director  |
+| Public transport Company | Public transport provider /Local | Legal subject under public law | Roman Danko | Director  |
 |  Správa mestskej zelene Košice /
 Urban Greenery Management | Public greenery management provider /Local | Legal subject under public law | Marta Popríková | Director  |
 
@@ -2158,21 +2084,21 @@ Climate-Neutrality Commitments
 1
 
 |  Creative Industry Košice
-(municipal non-profit organisation) | Community and culture development
-/Local | Nonprofit Organization | Michal Hlladký | Director  |
+| (municipal non-profit organisation) | Community and culture development |
+| /Local | Nonprofit Organization | Michal Hlladký | Director  |
 | --- | --- | --- | --- | --- |
 |  The Faculty of Civil Engineering,
-Technical University of Košice | Education | Higher educational public Institution | Dušan Katunský | Dean  |
+| Technical University of Košice | Education | Higher educational public Institution | Dušan Katunský | Dean  |
 |  The Faculty of Economics,
-Technical University of Košice | Education | Higher educational public Institution | Michal Šoltés | Dean  |
+| Technical University of Košice | Education | Higher educational public Institution | Michal Šoltés | Dean  |
 |  Pavol Jozef Šafárik University in
-Košice | Education | Higher educational public Institution | Daniel Pella | Rector  |
+| Košice | Education | Higher educational public Institution | Daniel Pella | Rector  |
 |  Business Košice, n.o. | Public company /Local | Nonprofit Organization | Martin Mudrák | Director  |
 |  K13 - Košické kultúrne centrá /
-K13-Košice Cultural Centers | Community and culture development | Legal subject under public law | Martin Dani | Director  |
+| K13-Košice Cultural Centers | Community and culture development | Legal subject under public law | Martin Dani | Director  |
 |  ETP Slovakia – Centre for Sustainable Development | Housing, work in communities and education in socially excluded communities | Civil association | Veronika Poklembová | Director  |
 |  Energia pre Slovensko,
-občianske združenie / Energy for Slovakia, civic association | Green energy / Buildings / National | Civic association | Peter Tauš | Director  |
+| občianske združenie / Energy for Slovakia, civic association | Green energy / Buildings / National | Civic association | Peter Tauš | Director  |
 |  IDS Východ s.r.o. | Public transport / Regional | Legal subject under public law | Radovan Hužvík | Director  |
 KOSICE
 

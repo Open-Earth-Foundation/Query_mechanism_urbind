@@ -479,7 +479,7 @@ The table below summarises activities for which GHG emissions are not currently 
 |   | Scope 1 | Scope 2 | Scope 3  |
 | --- | --- | --- | --- |
 |  Stationary energy sources | • Energy consumption by individual heating systems in Riga (excluding natural gas)
-• Amount of electricity generated individually and fed into the grid |  | • Electricity supply distribution losses  |
+| • Amount of electricity generated individually and fed into the grid |  | • Electricity supply distribution losses  |
 |  Transport | • Port fuel consumption | • Port electricity consumption | • Electricity supply distribution losses  |
 |  Industrial Processes and Product Use | • Emissions from industrial processes and product use of companies in the city that are not a part of ETS |  |   |
 |  Agriculture, Forestry, and Land Use | • Emissions from green areas in Riga not managed by LLC ‘Rīgas meži’ |  |   |
@@ -660,7 +660,7 @@ Climate-Neutrality Action Plan
 | --- | --- | --- | --- | --- | --- |
 |  Type | Level | Name | Description | Importance | Action necessary  |
 |   |  |  |  | measures to mitigate climate change;
-• promotion of the use of alternative fuels. |   |
+| • promotion of the use of alternative fuels. |   |
 |  Strategy | National | Circular economy strategy for Latvia | The purpose of the strategy is to inform the Latvian public about the most important aspects of implementing the circular economy and to offer it a vision of the main areas of action and measures as part of these areas aimed at fostering the development of the circular economy in Latvia, thus investing in the development of a competitive, inclusive, and sustainable national economy, while enabling the fulfilment of the country’s international obligations. | National circular economy policy: This document lists a number of measures that must be implemented by municipalities, including the creation of a records system for waste and material flows and the use of statistics to enable informed policymaking. | The municipality is working to incorporate the principles of circular economy into municipal policies.  |
 |  Action plan | National | Latvia Circular Economy Transition Action Plan 2020–2027 | A mid-term policy planning document that outlines potential field of action that require the active engagement and commitment of all line ministries, municipalities, the private sector, and the public. | National circular economy policy: One of the field of action identified in the plan is strengthening the role of municipalities in implementing the principles of the circular economy. | The municipality is working to incorporate the principles of circular economy into municipal policies.  |
 |  Law | National | Waste Management Law | The goal is to set waste management procedures to protect the environment, human life and health by preventing or reducing the production of waste, enabling the separate collection and recovery of waste produced in Latvia and reducing the amount of waste disposed of in landfills, and promoting the efficient use of natural resources to increase Latvia’s competitiveness and encourage the transition to a circular economy. | National circular economy policy: States that municipalities in Latvia are responsible for organising household waste management in their administrative territories. | The municipality is working to incorporate the principles of circular economy into municipal policies.  |
@@ -749,7 +749,7 @@ Climate-Neutrality Action Plan
 | --- | --- | --- | --- | --- | --- |
 |  Type | Level | Name | Description | Importance | Action necessary  |
 |   |  |  |  | • for private transport;
-• for the development of electric transport infrastructure. |   |
+| • for the development of electric transport infrastructure. |   |
 |  Proposal (not approved as a planning document) | Local | Riga Air Quality Improvement Action Programme for 2021–2025 | In the period from 2015 to 2019, the air quality standards and upper pollution assessment thresholds of several pollutants were found to be exceeded in Riga, as a result of which the Riga City Air Quality Improvement Action Programme 2021–2025 was prepared. It includes measures to reduce emissions of five pollutants: nitrogen dioxide (N_{2}O), PM10 and PM2.5 particulate matter, benzene and benz(a)pyrene. | Riga air quality policy: The programme assesses in detail the measures that can potentially affect air quality, grouped as follows:
 • transport and traffic infrastructure;
 • public transport;
@@ -1445,7 +1445,7 @@ Climate-Neutrality Action Plan
 Improvements in infrastructure efficiency
 • Reduced environmental impact and improved air quality in the city  |
 |   |  | X |  |  |  | E3: Increases in the efficiency of heat generation and management, and digitisation of the heating system | 1320 | • Reduced fuel consumption and improved overall system energy efficiency
-• Improved system governance and efficiency  |
+| • Improved system governance and efficiency  |
 |   |  | X |  |  |  | E4: Gradual transition to the 4th generation heating supply system | 172 | • A more efficient and flexible system that also makes it possible to optimise resources and integrate various energy sources
 Integration with renewable energy sources
 • Economic benefits through reduced generation and transmission costs
@@ -1474,7 +1474,7 @@ Climate-Neutrality Action Plan
 • Healthier lifestyle and potentially lower healthcare costs
 • Improved attractiveness of public spaces, improved attractiveness for tourism and potentially increased number of tourists visiting Riga  |   |   |   |   |   |   |   |   |
 |   | X | X |  |  |  | P7: Creation of a data records system for the municipal vehicle fleet and improvements in the efficiency of vehicle use | 253 | • Transparent oversight of the municipality's overall road vehicle fleet
-• Measures can be developed to reduce the climate impact of the road vehicle fleet and to reduce fuel costs  |
+| • Measures can be developed to reduce the climate impact of the road vehicle fleet and to reduce fuel costs  |
 |   |  |  | X |  | P8: Promotion of the use of public transport for work among employees of the municipal government |  | 181 | • Changing of attitude towards the use of public transport  |
 RIGA
 
@@ -1511,7 +1511,7 @@ Climate-Neutrality Action Plan
 |  Governance and policy | Capacity and capacity building | Technology and infrastructure | Culture, engagement, and social innovation | Financial and business models  |   |   |   |   |
 |  X |  |  |  |  |  | T6: Other measures to reduce car use | 85,680 |   |
 |   |  | X |  |  |  | T7: Promotion of electrification in private transport and provision of services | 24,000 | • Increased demand for RES in electricity production
-• Improvement of air quality  |
+| • Improvement of air quality  |
 |   |  | X |  |  |  | T8: Gradual transition to clean technology in vehicles that enable municipal functions | 28,200 | • Compliance with the sustainability goals of the municipality
 • Implementation of innovative solutions in the provision of services
 • Raising of public awareness of zero-emissions vehicles and renewable fuels
@@ -1832,7 +1832,7 @@ Climate-Neutrality Action Plan
 5
 
 |   | • T8: Gradual transition to clean technology in vehicles that enable municipal functions (priority III)
-• T9: Collection of mobility data and monitoring of measures implemented (priority II) |   |
+| • T9: Collection of mobility data and monitoring of measures implemented (priority II) |   |
 | --- | --- | --- |
 |  Waste & circular economy | • A1: Development of a data records system and mapping of infrastructure
 • A2: Waste prevention
@@ -1876,7 +1876,7 @@ Plan
 |  Reference to impact pathway | Field of action | Municipal infrastructure  |
 |   |  Systemic lever | Governance and policy/Capacity and capacity building/Technology and infrastructure  |
 |  Implementation | Responsible bodies/person for implementation | • REA — responsible for maintaining EMS, including planning annual goals and measures, energy consumption records and their analysis, provision of recommendations, organisation of cooperation with PD, expansion of EMS boundaries, etc.
-• PD — responsible for the management of municipal buildings in accordance with the EMS manual and other guidelines  |
+| • PD — responsible for the management of municipal buildings in accordance with the EMS manual and other guidelines  |
 |   |  Action scale & addressed entities | Municipal infrastructure: all municipal buildings  |
 |   |  Involved stakeholders | • Municipal building owners and/or heads of institutions — management of buildings according to EMS, provision of energy consumption data (if necessary), consistent measures to reduce and/or streamline energy consumption
 • Legal Administration — preparation of binding regulations
@@ -1932,7 +1932,7 @@ Plan
 • FD — provide the necessary funding  |
 |   |  Action scale & addressed entities | Municipal building heating energy consumption  |
 |   |  Involved stakeholders | • AS ‘Rīgas siltums’ — involved in the implementation of the measure, providing technical assistance to connect potential buildings to DHS
-• Rīgas nami — coordinates cooperation with municipal buildings under its responsibility to achieve the goals of the measure  |
+| • Rīgas nami — coordinates cooperation with municipal buildings under its responsibility to achieve the goals of the measure  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | • P2.1. Creation or expansion of a single GEO RIGA database on heating systems installed in municipal buildings (PD in conjunction with REA and RDA; Q1 2024)
 • P2.2. Building of a single understanding with all stakeholders on the implementation of the measure, next steps, and a year-by-year breakdown on how to gradually ensure the introduction of RES and certificates of heating energy origin in Riga (REA in conjunction with AS ‘Rīgas siltums’, PD, etc.; starting from 2024)
 • P2.3. Inclusion of proof of origin in procurements or regulatory frameworks (Executive Director Office; starting from Q4 2024)
@@ -1989,7 +1989,7 @@ Plan
 |  Action outline | Action name | P4: Development of a plan for the renovation of municipal buildings until 2030 and consistent renovation of the buildings  |
 |   |  Action type | Long-term  |
 |   |  Action description | The municipality manages more than 4000 buildings and sites that are not undergoing renovation due to ownership and management problems. The energy monitoring system developed as part of EMS will enable the collection of data on municipal buildings and their energy consumption, which will further make it possible for the municipal government to develop a building renovation plan for 2030. Action priorities must be clearly defined during the development of the plan, i.e., the buildings of what type, technical condition, and occupancy must be renovated first in order to achieve the greatest energy savings while improving the working conditions in them.
-The implementation of the measure will not result in direct savings, but will enable the basic conditions to be met for achieving a systemic reduction in heat energy consumption through the planned measures, and improving indoor air quality in municipal buildings, especially in educational institutions.  |
+| The implementation of the measure will not result in direct savings, but will enable the basic conditions to be met for achieving a systemic reduction in heat energy consumption through the planned measures, and improving indoor air quality in municipal buildings, especially in educational institutions.  |
 |  Reference to impact pathway | Field of action | Municipal infrastructure: municipal buildings  |
 |   |  Systemic lever | Governance and policy/Technology and infrastructure  |
 RIGA
@@ -2004,7 +2004,7 @@ Plan
 | --- | --- | --- |
 | Action scale & addressed entities | All municipal buildings |
 | Involved stakeholders | • REA — coordination of the development of the plan and technical documentation; monitoring of the implementation of the measure
-• PD, CDD, ‘Rīgas nami’ — implementation of the measure |
+| • PD, CDD, ‘Rīgas nami’ — implementation of the measure |
 | Comments on implementation – consider mentioning resources, timelines, milestones | • P4.1. The stakeholders assign representatives for the preparation of the plan. The stakeholders agree on the purpose, content, and main expected outcomes of the document (REA; 2024)
 • P4.2. Analysis of data on municipal buildings, inspections of buildings for which information is missing (PD in conjunction with ‘Rīgas nami’; 2024)
 • P4.3. Development of a plan for the renovation of buildings, involving all responsible departments. Compilation of a list of priority buildings (REA; 2024)
@@ -2033,10 +2033,10 @@ The installation of new street lighting and the upgrading of existing lights als
 |  Reference to impact pathway | Field of action | Municipal infrastructure: street lighting  |
 |   | Systemic lever | Technology and infrastructure  |
 |  Implementation | Responsible bodies/person for implementation | • Executive Director Office: assignment of duties to stakeholders
-• PSMD — implementation and coordination of the measure  |
+| • PSMD — implementation and coordination of the measure  |
 |   | Action scale & addressed entities | All street lighting in Riga  |
 |   | Involved stakeholders | • REA — supervises the measure
-• CDD, PSMD — involvement in the implementation of the measure  |
+| • CDD, PSMD — involvement in the implementation of the measure  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | • P5.1. Continue the implementation of the technical specifications for the development of the engineering design and investment plan (CDD, PSMD; 2024)
 • P5.2. Continue the development of the engineering design, investment plan, and procurement documentation (external service provider; 2025)
 • P5.3. Implementation of the project ‘Modernization of street lighting and increase of energy efficiency in the city of Riga’. Preparation of public partnership project documentation, conclusion of contract and implementation (PSMD; 2026)
@@ -2066,10 +2066,10 @@ Plan
 |  Reference to impact pathway | Field of action | Municipal infrastructure: street lighting  |
 |   |  Systemic lever | Governance and policy  |
 |  Implementation | Responsible bodies/person for implementation | • Executive Director Office: assignment of duties to stakeholders
-• ‘Rīgas gaisma’ municipal agency — implementation and coordination of the measure  |
+| • ‘Rīgas gaisma’ municipal agency — implementation and coordination of the measure  |
 |   |  Action scale & addressed entities | Street lighting in Riga  |
 |   |  Involved stakeholders | • RSCM Procurement Administration — responsible for procuring electricity in the municipality
-• REA — cooperation in the preparation of procurement documentation; supervision of the measure  |
+| • REA — cooperation in the preparation of procurement documentation; supervision of the measure  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | • P6.1. Determine the annual amounts of electricity produced from renewables, and determine further forecasts (PSMD; 2028)
 • P6.2. Develop procurement documentation for the purchase of renewable electricity (Procurement Administration; 2028)
 • P6.3. Organise and conduct the procurement of RES electricity (Procurement Administration; 2029)  |
@@ -2093,10 +2093,10 @@ Plan
 |  Reference to impact pathway | Field of action | Municipal infrastructure: municipal transport  |
 |   |  Systemic lever | Technology and infrastructure/Capacity and capacity building  |
 |  Implementation | Responsible bodies/person for implementation | • Executive Director Office: assignment of duties to stakeholders
-• REA — implements and maintains EMS, including energy consumption records for the municipal vehicle fleet, provides training and advice to municipal institutions and companies; supervision of the measure  |
+| • REA — implements and maintains EMS, including energy consumption records for the municipal vehicle fleet, provides training and advice to municipal institutions and companies; supervision of the measure  |
 |   |  Action scale & addressed entities | Vehicles owned and leased by municipal institutions; vehicles of companies  |
 |   |  Involved stakeholders | • RDA — maintains the data records platform
-• Municipal institutions and companies — data records, development and implementation of measures, meeting of targets  |
+| • Municipal institutions and companies — data records, development and implementation of measures, meeting of targets  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | • P7.1. Executive director order to municipal institutions and request to companies defining their target for reducing emissions generated by their vehicle fleets and a requirement to participate in EMS (Executive Director Office; 2024)
 • P7.2. REA provides training and advice to municipal institutions and companies in the Scope of conducting inventory, preparing measures and EMS (REA; 2025)
 • P7.3. Municipal institutions and companies carry out a vehicle fleet inventory, including its age, mileage, fuel consumption, users, routes, workload, and other aspects to help define emission reduction measures (municipal institutions and companies; 2025)
@@ -2116,7 +2116,7 @@ Climate-Neutrality Action Plan
 |   | Energy savings | 963 MWh  |
 |   | (Total) GHG emission reduction forecast for the emissions sector | 253 tCO_{2}  |
 |   | Total costs and costs by CO_{2}e unit | EUR 91,000 (investment period 7 years, EUR 13,000 per year);
-EUR 360 per tCO_{2}  |
+| EUR 360 per tCO_{2}  |
 |  B-2.2.1: Individual action outlines — Municipal infrastructure  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | P8: Promotion of the use of public transport for work among employees of the municipal government  |
@@ -2138,7 +2138,7 @@ Plan
 | --- | --- | --- |
 |   |  Involved stakeholders | Municipal institutions and companies — development of internal rules on the use of public transport for work trips. Provision of monthly tickets.  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | • P8.1. Executive director order to municipal institutions and request to companies on the use of public transport for work purposes and the provision of monthly tickets for employees (Executive Director Office; 2025).
-• P8.2. REA provides training and advice to municipal institutions and companies on promoting the use of public transport among employees, e.g., by publishing information on the regular news page of the RCC Communication Administration and by organising internal motivation contests among employees of institutions (REA, 2025).  |
+| • P8.2. REA provides training and advice to municipal institutions and companies on promoting the use of public transport among employees, e.g., by publishing information on the regular news page of the RCC Communication Administration and by organising internal motivation contests among employees of institutions (REA, 2025).  |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 |   |  Energy savings | 690 MWh  |
 |   |  (Total) GHG emission reduction forecast for the emissions sector | 181 tCO_{2}  |
@@ -2202,7 +2202,7 @@ P10.7. Inclusion of active users in electricity procurement (LLC ‘Rīgas ūden
 ,032 MWh/year of electricity and an additional 374 MWh/year of heat from biogas cogeneration)
 This amount of RES will cover up to 85% of the internal energy consumption of the wastewater treatment plant.  |
 |   |  Energy savings | 24,445 MWh
-Replacement of European Residual Mix (ERM) electricity for a total of 22,431 MWh/year and 210 MWh/year unused; replacement of natural gas for 374 MWh/year and 1430 MWh/year unused.  |
+| Replacement of European Residual Mix (ERM) electricity for a total of 22,431 MWh/year and 210 MWh/year unused; replacement of natural gas for 374 MWh/year and 1430 MWh/year unused.  |
 |   |  (Total) GHG emission reduction forecast for the emissions sector | 2780 tCO₂e
 Additionally, up to 750 tCO₂e/year (treatment of 9000 t of wastewater sludge — reduction of biogenic GHG emissions).  |
 RIGA
@@ -2292,10 +2292,10 @@ Climate-Neutrality Action Plan
 |  Reference to impact pathway | Field of action | Energy production  |
 |   |  Systemic lever | Technology and infrastructure  |
 |  Implementation | Responsible bodies/person for implementation | • Executive Director Office: assignment of duties to stakeholders
-• AS ‘Rīgas siltums’ — planning and implementation of the field of action  |
+| • AS ‘Rīgas siltums’ — planning and implementation of the field of action  |
 |   |  Action scale & addressed entities | Riga city heating system lines to be renovated  |
 |   |  Involved stakeholders | • REA — supervises and monitors the field of action
-• RDA, CDD — involvement in the implementation of the field of action  |
+| • RDA, CDD — involvement in the implementation of the field of action  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | • E3.1. Map all energy sources producing heating energy for Riga DHS in Geo Riga (CDD in conjunction with AS ‘Rīgas siltums’; 2024)
 • E3.2. Continue implementing measures to reduce heat energy losses in the city’s district heating system in order to achieve the total heat energy loss reduction target (AS ‘Rīgas siltums’, from 2024)
 • E3.3. Continue implementing projects related to the installation of condensing plants and heat pumps for the deeper cooling of flue gas (AS ‘Rīgas siltums’, AS Latvenergo, and other independent producers; 2024–2025)
@@ -2336,7 +2336,7 @@ Plan
 |   | Action scale & addressed entities | Riga DHS lines to be renovated  |
 | --- | --- | --- |
 |   |  Involved stakeholders | • REA — supervises and monitors the field of action
-• CDD — involvement in the implementation of the field of action  |
+| • CDD — involvement in the implementation of the field of action  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | • E4.1. Develop (and update every 2–3 years) a detailed action plan for the upgrade of Riga DHS to a 4^{th} generation heat supply solution, taking the rate of renovation of apartments in Riga into account (AS ‘Rīgas siltums’; 2025)
 • E4.2. In implementing the 4^{th} generation concept, use the principle of sector interaction, install electric boilers that would enable economically viable heat generation and, if necessary, balancing of the power grid (AS ‘Rīgas siltums’; starting from 2025)
 • E4.3. Implement other projects related to the interaction of sectors, based on heat pump technology and providing heat recovery from wastewater or other sources where it is technologically and economically viable (AS ‘Rīgas siltums’; starting from 2025)
@@ -2347,7 +2347,7 @@ Plan
 |   |  Energy savings | 650 MWh  |
 |   |  (Total) GHG emission reduction forecast for the emissions sector | 172 tCO_{2}  |
 |   |  Total costs and costs by CO_{2}e unit | EUR 240,000;
-EUR 1395 per tCO_{2}  |
+| EUR 1395 per tCO_{2}  |
 |  B-2.2.2.: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | E5: Implementation of innovative projects  |
@@ -2366,7 +2366,7 @@ Plan
 |  Reference to impact pathway | Field of action | Energy production  |
 |   |  Systemic lever | Technology and infrastructure/Capacity and capacity building  |
 |  Implementation | Responsible bodies/person for implementation | • Executive Director Office: assignment of duties to stakeholders
-• AS ‘Rīgas siltums’ — planning and implementation of the field of action  |
+| • AS ‘Rīgas siltums’ — planning and implementation of the field of action  |
 |   |  Action scale & addressed entities | Riga DHS  |
 |   |  Involved stakeholders | • REA — supervises and monitors the field of action
 • CDD — involvement in the implementation of the field of action
@@ -2469,7 +2469,7 @@ B-2.2.3.: Individual action outlines — Multi-apartment residential buildings
 |  Reference to impact pathway | Field of action | Multi-apartment residential buildings  |
 |   |  Systemic lever | Governance and policy  |
 |  Implementation | Responsible bodies/person for implementation | • Executive Director Office: assignment of duties to stakeholders
-• REA — development of a data exchange system, coordination and monitoring of the implementation of the measure  |
+| • REA — development of a data exchange system, coordination and monitoring of the implementation of the measure  |
 |   |  Action scale & addressed entities | Residents of multi-apartment residential buildings. The goal is to cover information about all multi-apartment residential buildings in the database.  |
 |   |  Involved stakeholders | • AS ‘Rīgas siltums’, CDD, HED, RNP, other building managers, RDA — cooperation in circulating the information  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | • Dz1.1. Making data and information accessible to local residents (REA; 2024)
@@ -2489,9 +2489,9 @@ o Dz1.1.7. Publish advice on choosing energy auditors, structural engineers, des
 | --- | --- | --- |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 |   |  Energy savings (Total) GHG emission reduction forecast for the emissions sector | 4492 MWh
-tCO₂  |
+| tCO₂  |
 |   |  Total costs and costs by CO₂e unit | EUR 700,000 (investment period 7 years, EUR 100,000 per year);
-EUR 590 per tCO₂  |
+| EUR 590 per tCO₂  |
 |  B-2.2.3.: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Dz2: Revision of laws and regulations to increase the rate of multi-apartment residential building renovation in Riga  |
@@ -2510,7 +2510,7 @@ Plan
 |  Reference to impact pathway | Field of action | Multi-apartment residential buildings  |
 |   |  Systemic lever | Governance and policy  |
 |  Implementation | Responsible bodies/person for implementation | • HEC — decision-making and approval of regulatory documents
-• Executive Director Office: assignment of duties to stakeholders  |
+| • Executive Director Office: assignment of duties to stakeholders  |
 |   |  Action scale & addressed entities | Multi-apartment residential buildings within the administrative territory of Riga  |
 |   |  Involved stakeholders | • HED, CDD, FD — participation in the implementation of the measure
 • RNP — participation in the implementation of the measure
@@ -2541,7 +2541,7 @@ Plan
 |   |  Energy savings | 2246 MWh  |
 |   |  (Total) GHG emission reduction forecast for the emissions sector | 593 tCO₂  |
 |   |  Total costs and costs by CO₂e unit | EUR 700,000 (investment period 7 years, EUR 100,000 per year);
-EUR 1180 per tCO₂  |
+| EUR 1180 per tCO₂  |
 |  B-2.2.3.: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Dz3: Involvement of local residents in the renovation of multi-apartment residential buildings  |
@@ -2550,7 +2550,7 @@ EUR 1180 per tCO₂  |
 |  Reference to impact pathway | Field of action | Multi-apartment residential buildings  |
 |   |  Systemic lever | Governance and policy/Technology and infrastructure  |
 |  Implementation | Responsible bodies/person for implementation | • Executive Director Office: assignment of duties to all stakeholders
-• REA — supervises and monitors the measure  |
+| • REA — supervises and monitors the measure  |
 |   |  Action scale & addressed entities | Renovation of at least 2000 multi-apartment residential buildings in the administrative territory of Riga  |
 RIGA
 
@@ -2625,7 +2625,7 @@ Plan
 |   |  Energy savings | 12 000 MWh - part of the total heat energy reduction in the multi-apartment residential building sector, Dz3  |
 |   |  (Total) GHG emission reduction forecast for the emissions sector | 1800 tCO₂ - part of the total reduction in CO₂ emissions in the multi-apartment residential building sector, Dz3  |
 |   |  Total costs and costs by CO₂e unit | EUR 29 million;
-EUR 16,000 per tCO₂  |
+| EUR 16,000 per tCO₂  |
 |  B-2.2.3.: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Dz5: Research and implementation of new standardised solutions for the renovation of buildings, reducing building renovation costs  |
@@ -2643,7 +2643,7 @@ Climate-Neutrality Action Plan
 7
 
 |  Implementation | Responsible bodies/person for implementation | • Executive Director Office: assignment of duties to all stakeholders
-• REA — supervises and monitors the measure  |
+| • REA — supervises and monitors the measure  |
 | --- | --- | --- |
 |  Implementation | Action scale & addressed entities | The measure will involve the implementation of several pilot projects, with the municipality acting as a mediator and consultant. The catalogue of standard solutions must include solutions for all types of standard multi-apartment residential buildings.  |
 |   |  Involved stakeholders | • CDD, HED — Implementation of the measure
@@ -2684,7 +2684,7 @@ B-2.2.4.: Individual action outlines — Transport and mobility
 |  Reference to impact pathway | Field of action | Transport and mobility  |
 |   |  Systemic lever | Governance and policy  |
 |  Implementation | Responsible bodies/person for implementation | • Transport and Traffic Affairs Committee — policymaking and decision-making
-• CDD — policy development and integration into municipal documents and processes  |
+| • CDD — policy development and integration into municipal documents and processes  |
 |   |  Action scale & addressed entities | The measure is aimed at the development of the city as a whole  |
 |   |  Involved stakeholders | • PSMD — implementation of technical solutions
 • RDA — creation of digital solutions
@@ -2743,9 +2743,9 @@ Climate-Neutrality Action Plan
 | --- | --- | --- |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 |   | Energy savings | Depends on the number of municipal employees and local residents involved.
-~ 1.6 MWh/year/capita (included in field of action #T1)  |
+| ~ 1.6 MWh/year/capita (included in field of action #T1)  |
 |   | (Total) GHG emission reduction forecast for the emissions sector | Depends on the number of municipal employees and local residents involved.
-~ 0.5 tCO2/year/person (included in field of action #T1)  |
+| ~ 0.5 tCO2/year/person (included in field of action #T1)  |
 |   | Total costs and costs by CO2e unit | EUR 840,000  |
 |  B-2.2.4.: Individual action outlines  |   |   |
 | --- | --- | --- |
@@ -2763,7 +2763,7 @@ Plan
 1
 
 |  Implementation | Responsible bodies/person for implementation | • Executive Director Office — assignment of implementation of measures to departments in charge; implementation of measures defined
-• CDD — overall planning and implementation of measures defined  |
+| • CDD — overall planning and implementation of measures defined  |
 | --- | --- | --- |
 |   |  Action scale & addressed entities | The administrative territory of the city, covering the entire community  |
 |   |  Involved stakeholders | • PSMD — implementation of measures
@@ -2794,11 +2794,11 @@ B-2.2.4.: Individual action outlines
 | --- | --- | --- |
 |   |  Action type | Long-term  |
 |   |  Action description | The measure aims to encourage more use of public transport in the city and foster more active urban mobility.
-The scope for the development of public transport are: improvement of accessibility of public transport; improvement of public transport service quality; modernisation of ‘Rīgas satiksme’ rolling stock; promotion of railway use.  |
+| The scope for the development of public transport are: improvement of accessibility of public transport; improvement of public transport service quality; modernisation of ‘Rīgas satiksme’ rolling stock; promotion of railway use.  |
 |  Reference to impact pathway | Field of action | Transport and mobility  |
 |   |  Systemic lever | Technology and infrastructure/Governance and policy/Capacity and capacity building  |
 |  Implementation | Responsible bodies/person for implementation | • Executive Director Office — assignment of implementation of measures to departments in charge; implementation of measures defined
-• CDD — overall planning and implementation of measures defined  |
+| • CDD — overall planning and implementation of measures defined  |
 |   |  Action scale & addressed entities | The administrative territory of the city, including its residents, guests, as well as residents of other municipalities travelling through Riga  |
 |   |  Involved stakeholders | • PSMD — implementation of measures
 • Rīgas satiksme — participation in the implementation of the measures
@@ -2841,7 +2841,7 @@ Plan
 |  Reference to impact pathway | Field of action | Transport  |
 |   |  Systemic lever | Governance and policy  |
 |  Implementation | Responsible bodies/person for implementation | • Traffic and transport affairs committee — making of decisions on setting restrictions in the city
-• Executive Director Office — organising and conducting of discussions on restrictions/assignment of responsibilities  |
+| • Executive Director Office — organising and conducting of discussions on restrictions/assignment of responsibilities  |
 |   |  Action scale & addressed entities | The administrative territory of the city, covering the entire community  |
 |   |  Involved stakeholders | • RP LLC ‘Rīgas satiksme’ — introduction of restrictions at car parks
 • REA — supervises and monitors the measure
@@ -2874,10 +2874,10 @@ B-2.2.4.: Individual action outlines
 |  Reference to impact pathway | Field of action | Transport and mobility  |
 |   |  Systemic lever | Governance and policy  |
 |  Implementation | Responsible bodies/person for implementation | • Traffic and transport affairs committee — making of decisions on setting discounts in the city
-• Executive Director Office — conducts discussions on the introduction of discounts and facilitating of cooperation with all stakeholders; assignment of responsibilities  |
+| • Executive Director Office — conducts discussions on the introduction of discounts and facilitating of cooperation with all stakeholders; assignment of responsibilities  |
 |   |  Action scale & addressed entities | The administrative territory of the city, covering the entire community  |
 |   |  Involved stakeholders | • REA — supervises and monitors the measure
-• CDD — implementation of measures  |
+| • CDD — implementation of measures  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | • T6.1. Implementation of measures to encourage car sharing, including the creation or use of special infrastructure (e.g., car parks) to increase car sharing in the city centre and neighbourhoods (2026; CDD)
 • T6.2. Introduction of a discount policy to encourage the use of bicycles, public transport, and zero-emission vehicles by employees of private businesses (2027; CDD)
 • T6.3. Improve the cargo transportation modelling and planning (2027; CDD)
@@ -2927,7 +2927,7 @@ Climate-Neutrality Action Plan
 |   |  Energy savings | 101,000 MWh (due to rising number of EV)  |
 |   |  (Total) GHG emission reduction forecast for the emissions sector | 24,000 tCO₂  |
 |   |  Total costs and costs by CO₂e unit | EUR 1.5 million
-EUR 63 per tCO₂  |
+| EUR 63 per tCO₂  |
 |  B-2.2.4.: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | T8: Gradual transition to clean technology in vehicles that enable municipal functions  |
@@ -2936,10 +2936,10 @@ EUR 63 per tCO₂  |
 |  Reference to impact pathway | Field of action | Transport and mobility  |
 |   |  Systemic lever | Technology and infrastructure  |
 |  Implementation | Responsible bodies/person for implementation | • Executive Director Office — decision on the implementation, approval by decision-makers, implementation of set measures
-• HED — measure planning and implementation  |
+| • HED — measure planning and implementation  |
 |   |  Action scale & addressed entities | City administrative area in which the service is provided and the corresponding stakeholders, e.g., those involved in the waste management system  |
 |   |  Involved stakeholders | • Waste management and other service providers — implementation of the measure
-• REA — supervises and monitors the measure  |
+| • REA — supervises and monitors the measure  |
 |   |  Implementation comments | • T8.1. Identify the municipal functions that are not under the direct control of the municipality (e.g., in the waste management sector), but that involve the use of vehicles. Assess and include in future procurements the requirement to use low-emission vehicles for service delivery (starting from 2024; Executive Director Office in conjunction with HED)  |
 RIGA
 
@@ -2958,7 +2958,7 @@ Plan
 | Reference to impact pathway | Field of action | Transport and mobility |
 | Implementation | Systemic lever | Capacity and capacity building |
 | Responsible bodies/person for implementation | • Executive Director Office — inclusion of stakeholders and further assignment of responsibilities
-• PSMD — measure planning and implementation |
+| • PSMD — measure planning and implementation |
 | Action scale & addressed entities | City administrative area; service providers; municipal employees |
 | Involved stakeholders | • RDA — implementation of measures
 • HED — implementation of set measures

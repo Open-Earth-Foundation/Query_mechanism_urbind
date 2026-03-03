@@ -486,7 +486,6 @@ Below are the characteristic data for the municipal area.
 |  Muli | 3  |
 |  Avicoli | 0  |
 |  TOTALE | 1368  |
-
 |  COMUNE DI BERGAMO |  |   |
 | --- | --- | --- |
 |  Superficie territorio comunale | 2687 | ha  |
@@ -693,8 +692,6 @@ A-2.2: Description of policies and impact at Municipality level
 |  National | “PNIEC” Update - Integrated National Energy and Climate Plan | The Integrated National Plan for Energy and Climate (Piano Nazionale Integrato per l'Energia e il Clima - PNIEC) contains the national objectives for 2030 regarding energy efficiency, renewable sources and the reduction of CO2 emissions, as well as the goals for energy security, interconnectivity, the single energy market and competitiveness, development and sustainable mobility. A “proposal” to revise this Plan was presented in June 2023 and takes into account the public consultation open to all: private individuals, associations, stakeholders and institutions. | At the direct request of the Ministry itself, the Municipality of Bergamo, together with the other 8 Italian cities involved in the Mission, sent 18 documents to be included as strategies of the new PNIEC.  |
 |  National | National plan for the containment of natural gas consumption | Published on 17/10/2022, this plan introduces rules for limiting gas consumption during the thermal winter of 2022-2023 as a response to the energy crisis in Italy. It provides for a reduction in the maximum temperature at which buildings may be heated and controls the operating limits for heating systems (namely when they can be switched on, and their management). | The Municipality of Bergamo has implemented this provision across its own properties and has actively encouraged the entire territory to adopt the Plan.  |
 |  National | National Recovery and | The National Recovery and Resilience Plan (Piano Nazionale di Ripresa e Resilienza - PNRR) is part of the Next | The Municipality of Bergamo is using PNRR funds to finance the  |
-Climate Neutrality Action Plan
-
 |   | Resilience Plan (PNRR) | Generation EU (NGEU) program: a 750 billion euro package (approximately half of which in grants) agreed by the European Union in response to the COVID-19 pandemic. The main component of the NGEU programme is the Recovery and Resilience Facility (RRF), lasting six years (2021 - 2026), worth a total 672,5 billion Euros (312,5 billion in grants, the remaining 360 billion as loans at subsidised rates). The Plan is divided into 6 Missions, or thematic areas, for intervention. | development of new significant measures to contain emissions.  |
 | --- | --- | --- | --- |
 |   | National Energy Strategy (SEN) | Known as SEN2017, this is the result of a structured joint process that lasted a year involving a variety of stakeholders from its very conception (public bodies operating in the field of energy, electricity providers, gas distribution networks and qualified experts in the energy sector). The purpose of this strategy is to render the national energy system more competitive, securer and more sustainable. | The Municipality of Bergamo benefits from national financing amounting to approximately 175 billion by 2030, to be distributed throughout the territory.  |
@@ -1007,10 +1004,6 @@ Impact Pathways – Mobility &amp; transport
 |   |  Social innovation | Development of sustainable mobility models that include all sections of society | Ensuring social inclusion in the development of new mobility plans  |   |   |
 |   |  Democracy and participation | Involvement of citizens in the development of sustainable mobility plans | Support of the population in improving mobility programs  |   |   |
 |   |  Funding | Incentives to support the transition towards | Consolidation of financial resources to support the transition  |   |   |
-Climate Neutrality Action Plan
-
-#
-
 |   |  | sustainable alternative mobility | at a local, national and European level |  |   |
 | --- | --- | --- | --- | --- | --- |
 |   |  Learning and knowledge | Mobility information for citizens | Definition of a new innovative replicable standard for local public transport  |   |   |
@@ -1028,8 +1021,6 @@ Climate Neutrality Action Plan
 |   |  Social innovation | Social inclusion in solutions with a big impact on town planning for the city | Participation of citizens in the development and improvement of NBS projects  |   |   |
 |   |  Learning and knowledge | Continuous improvements in current technologies | Development of research and development centres  |   |   |
 |   |  Impact Pathways – Waste & circular economy  |   |   |   |   |
-Climate Neutrality Action Plan
-
 |  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions | Indirect impacts (co-benefits)  |
 | --- | --- | --- | --- | --- | --- |
 |  Waste & circular economy | Technology | Use of low-emission technologies | Development of new technologies | Technological innovations to reduce the impact of emissions; reduced amounts of waste sent to landfill | Greater competitiveness of innovative companies; change in consumption habits; improved healthiness of the urban environment; greater diffusion of sustainable practices; increase in territorial synergies  |
@@ -1398,8 +1389,6 @@ Climate Neutrality Action Plan
 |  Cariplo | Support for the drafting and activation of the “Click Bergamo” project. | Support for the territory through: technical assistance to support the drafting of the climate transition strategy (STC) and in designing new renewable energy communities (REC); economic contribution for the implementation of certain actions within the STC, and REC management  |
 |  Educational services | European “Food Trail” project | Modification of school menus with the introduction of vegetable proteins (especially legumes) to partially replace animal proteins. Accurate measurement of waste levels and degree of satisfaction to evaluate the effectiveness of the changes. At the same time, an activity park dedicated to children; training for teachers and canteen committees, and information events for parents.  |
 |  Educational services | “Green Menu”: nutrition and sustainable diets | A commercial business to promote healthy and sustainable nutrition, committed to guaranteeing meals using only plant-based ingredients  |
-Climate Neutrality Action Plan
-
 |  COESI | “Skift” project | Project created by CSA COESI, in partnership with 6 partners from 4 European countries, with the objective of supporting the green transition of social economy companies, i.e. making them more environmentally sustainable. 10 companies in the province of BG are taking part in this project  |
 | --- | --- | --- |
 |  Confcooperative | Memorandum of understanding with the Diocese of Bergamo for environmental and social sustainability | Promotion of concrete actions and training regarding social and green issues  |
@@ -1884,8 +1873,6 @@ Climate Neutrality Action Plan Guidance
 |  Clic.Bergamo | Project to boost social cohesion as an enabling factor for transition and for new urban welfare goals. | Possibility of citizen involvement and participation in decision-making processes, planning and the implementation of interventions at a local level | Municipal sectors and local citizen networks | Boost the involvement of different segments of the population | Spread of ESG and circular economy practices; increase in the effectiveness and efficiency of public policies  |
 |  Framework agreement for engineering services | Outsourcing of the consultancy service regarding energy requalification of heritage buildings | Opportunity to spread virtuous building practices; a lack of incentives | Municipality of Bergamo and companies operating in the construction sector | Greater fluidity in outsourcing services | Increase in the value of properties  |
 |  Platform for engaging, monitoring and spreading the CCC to all stakeholders | ForImpact.AI is a digital platform that allows Municipalities to work together with their stakeholders to generate impact on a local scale. This platform offers an opportunity for public interface to involve citizens in territorial transformations and sustainability policies, as well as being a valid collaborative and data management tool. It is also is a collaboration, monitoring and communication | Involvement of the population and stakeholders, collaboration between stakeholders and public administration, possibility of monitoring and spreading the project. | SuperUrbanity | Involvement of the population and stakeholders, monitoring of actions | Involvement and awareness-raising  |
-Climate Neutrality Action Plan
-
 |   | tool that simplifies the process of understanding current works and investments through the means of storytelling and data visualization. It informs citizens of all that is happening in the area thanks also to a Data Driven approach, boosting the efficiency of each decision by virtue of dynamic data monitoring. |  |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 
@@ -2102,7 +2089,6 @@ Tab. B-2.1: Description of actions portfolio
 |  Buildings | Electricity saving plan | 213 | Humanitas | Interventions aimed at plant and buildings, such as the replacement of refrigeration units, and the installation of heat pumps and refrigerator temperature monitoring systems  |
 |  Buildings | Reductions in thermal energy consumption | 214 | Humanitas | Replacement of boilers, changed to set point temperatures, temperature monitoring systems  |
 |  Buildings | Installation of renewable energy source systems | 215 | Humanitas | Installation of a new photovoltaic system and other interventions to improve the energy efficiency of buildings  |
-
 |  Sector | Action | ID | Stakeholder | Description  |
 | --- | --- | --- | --- | --- |
 |  Transport | Installation of "City Plug" charging points | 2 | A2A | EV charging points and low environmental impact green petrol stations  |
@@ -2137,7 +2123,6 @@ Tab. B-2.1: Description of actions portfolio
 |  Transport | Requalification of Bergamo station and boosting of the transport interchange | 195 | Mobility department | Requalification of the passenger area and strengthening of the connections for both civil and freight use  |
 |  Transport | Exchanger car parks installed | 196 | Mobility department | Construction of the single-level Malpensata car park (former gasometer) and the Area Mercatale car park  |
 |  Transport | Exchanger car parks planned and foreseen | 197 | Mobility department | Envisaged car parks: T1 stop in Pradalunga; Bergamo railway station; Via Baioni; Viale Giulio Cesare. Planned car parks: T2 stop in Sant'Antonio; T2 stop in Petrosino; Chorus Life district  |
-
 |  Sector | Action | ID | Stakeholder | Description  |
 | --- | --- | --- | --- | --- |
 |  Waste | Implementation of wastewater network mapping | 15 | Different Solutions | Scanning of real physical data for network pipelines and artefacts, identifying critical issues, damage, interaction with the environment and hydraulic risks. The data can be immediately associated with the relevant hydraulic and structural maintenance techniques  |
@@ -2170,7 +2155,6 @@ Tab. B-2.1: Description of actions portfolio
 |  Waste | "Mi piace un sacco" project | 210 | Waste department | Adoption of coded bags for collecting the non recyclable fraction of municipal waste and plastic packaging. This system saw the amount of separated waste rise from 71% in 2019 to 77% in 2022  |
 |  Waste | "Sfida alle plastiche" project | 211 | Waste department | The aim of this project was to identify effective solutions aimed at reducing single-use plastic waste within local communities through changes in selling, purchasing and consumption behaviours, as well as the implementation of new strategies inspired by the principles of ecodesign in order to design products and systems that allow for easy, convenient reuse, recovery and repair.  |
 |  Waste | Expression of interest in managing the collection of used clothing | 212 | Waste department | Objective: to identify one or more businesses willing to manage the collection of second-hand clothing and accessories, and cleaning the areas around the collection bins.  |
-
 |  Sector | Action | ID | Stakeholder | Description  |
 | --- | --- | --- | --- | --- |
 |  AFOLU | Planting of shrubs and plants | 69 | Legambiente | Planting of 240 new trees and 630 shrubs in various parts of the city in collaboration with other associations and bodies. "Bosco E.on" and "Azzera CO2" projects (the latter in Grumello al Piano). Annual investment value  |
@@ -2178,7 +2162,6 @@ Tab. B-2.1: Description of actions portfolio
 |  AFOLU | Urban re-greening | 72 | Legami | Purchase of an area of 3 hectares to create a protected to safeguard biodiversity: 2640 plants planted  |
 |  AFOLU | Re-greening initiatives | 83 | Bemoa | Partnerships with other bodies under consideration for large-scale planting projects within the municipal territory  |
 |  AFOLU | Municipal plan for the planting of new trees | 203 | Green department | Planting of 20.000 new trees and shrubs within the municipal area as part of the plan to plant new trees  |
-
 |  Sector | Action | ID | Stakeholder | Description  |
 | --- | --- | --- | --- | --- |
 |  Transversal | Supply of certified green energy | 4 | Edison Next | Supply of certified green energy with a guarantee of origin for the consumption of energy not coming from photovoltaic systems. Estimated annual purchase: approximately 6.700 MWh/annum. The value of the investment depends on market prices  |
@@ -2864,8 +2847,6 @@ Climate-Neutrality Commitments
 |  ATB Mobilità S.p.A. | Publicly held company - Subsidiary | Local level | joint-stock company (s.p.a.) | C. Rita Donato | General manager  |
 |  TEB s.p.a.- Tramvie Elettriche bergamasche1 |   |   |   | Gian battista Scarfone | CEO  |
 |  ATS Bergamo2 | Public authority | Local level | Public Body | Massimo Giupponi | General Manager  |
-Climate-Neutrality Commitments
-
 |  Bemoa S.r.l. | Private sector | Local level | limited liability company (s.r.l.) | Walter Battaglia | Sole administrator  |
 | --- | --- | --- | --- | --- | --- |
 |  BergamoScienza | Private sector – Research Center | Local level | Non-profit association | Rosella Colleoni | Secretary general  |
@@ -2879,16 +2860,6 @@ Climate-Neutrality Commitments
 |  Costim S.r.l. | Private sector | National level | limited liability company (s.r.l.) | Davide Albertini Petroni | CEO  |
 |  Different solutions | Private sector | National level | start up | Stefano Dini | Project Manager  |
 |  Edison Next S.p.a. | Private sector | International level | joint-stock company (s.p.a.) | Giovanni Brianza | CEO  |
-
-4
-6
-
-Climate-Neutrality
-
-Commitments
-
-#
-
 |  Zeliatech s.r.l. (Gruppo Esprinet S.p.A.) | Private sector | International level | limited liability company (s.r.l.) | Sergio Grassi | Country Manager (Zeliatech Srl)  |
 | --- | --- | --- | --- | --- | --- |
 |  Esselunga | Private sector | Regional level | joint-stock company (s.p.a.) | Luca Alovisi | technical director  |

@@ -131,10 +131,6 @@ The list of tables identifies the titles and locations (page numbers) of all tab
 |  EIB | European Investment Bank  |
 |  ERDF | European Regional Development Fund  |
 |  EU | European Union  |
-Climate Neutrality Action Plan
-
-O
-
 |  GHG | Greenhouse gas  |
 | --- | --- |
 |  LPG | Liquefied Petroleum Gas  |
@@ -369,10 +365,6 @@ Gasoline
 |   |
 |  Industrial Process and Product^{1} Use (IPPU) | 46.970 | 41.431 | N/A | 88.401  |
 |  (Fuel type/ energy used) | Natural gas | Electric energy | N/A |   |
-Climate Neutrality Action Plan
-
-#
-
 |  used) |   | 46.970 |   | 41.431 |   |  |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Agricultural, Forestry and Land Use³ (AFOLU) |   | 3.131 |   | 508 |   | N/A |   | 3.639  |   |
@@ -408,55 +400,47 @@ HEMS (Home Energy Management Systems)
 thermal points modernized
 distribution units – digitalized |   | N/A  |
 |  Action 1.2 | 45.512MWh/year | 29.210 t CO2/year | N/A  |
-Climate Neutrality Action Plan
-
-4
-
 |  (from section B-2.1) | At least 2 facilities (photovoltaic parks) for production of alternative “green “energy
 facility for “green “hydrogen production
 Production of at least 130.000 MWh/year
 Entire energy consumption for Suceava Municipality (lighting, buildings, electric public transport, electric vehicles) covered from “green“ energy sources |   | N/A  |
 | --- | --- | --- | --- |
 |  Action 1.3
-(from section B-2.1) | 4.452 MWh/year | 1.704 t CO2/year | N/A  |
+| (from section B-2.1) | 4.452 MWh/year | 1.704 t CO2/year | N/A  |
 |   |  100 % of public lighting equipped with LED systems (2550 new ones), smart management and dimming system
-Introduction of LI FI concept |   | N/A  |
+| Introduction of LI FI concept |   | N/A  |
 |  Action 5.1
-(from section B-2.1) | 120.675 MWh/year | 31.112 t CO2/year | N/A  |
+| (from section B-2.1) | 120.675 MWh/year | 31.112 t CO2/year | N/A  |
 |   |  65 residential buildings with more than 10.000 apartments/buildings with investments concerning increasing energy efficiency and reduction of CO2 emissions
-,000 residents targeted by awareness campaigns to promote reduction of energy consumption and change behaviour regarding environmentally friendly ways of living into the city |   | N/A  |
+| ,000 residents targeted by awareness campaigns to promote reduction of energy consumption and change behaviour regarding environmentally friendly ways of living into the city |   | N/A  |
 |  Action 5.2 (from section B 2.1) | 10.521 MWh/year | 7.230 t CO2/year | N/A  |
 |   |  10 municipal buildings (administrative buildings, educational units), with construction works for reduce energy consumption, increase energy efficiency, reduce GHG emissions, facilities for production of alternative energy, implementing an integrated system for monitoring, controlling and reducing energy consumption. |   | N/A  |
 |  Action 6.1
-(from section B-2.1) | 84.655 MWh/year | 48.351 t CO2/year | N/A  |
+| (from section B-2.1) | 84.655 MWh/year | 48.351 t CO2/year | N/A  |
 |   |  1 smart climate neutrality masterplan
-set of urban planning policies for climate neutral intervention in public and private buildings (including construction) |   | N/A  |
+| set of urban planning policies for climate neutral intervention in public and private buildings (including construction) |   | N/A  |
 |  Transport | 165.440 MWh/year | 65.808,77 t CO2/year | N/A  |
 |  Action 2.1
-(from section B-2.1) | 4.215 MWh/year | 2.920,5 tons CO2/year | N/A  |
+| (from section B-2.1) | 4.215 MWh/year | 2.920,5 tons CO2/year | N/A  |
 |   |  30 km municipal bicycle lanes,
 new stations for public bike sharing system
 new regular and electric bicycles
 citizens to use bikes on daily regular base |   | N/A  |
 |  Action 2.3
-(from section B-2.1) | 11.335 MWh/year | 6.986 t CO2/year | N/A  |
+| (from section B-2.1) | 11.335 MWh/year | 6.986 t CO2/year | N/A  |
 |   |  50 new charging stations for electric vehicles
 set of incentives for purchasing and use of electric vehicles
 new beneficiaries of incentives
 new electric (public and private) vehicles |   | N/A  |
 |  Action 2.2
-(from section B-2.1) | 74.754 MWh/year | 36.558 tons CO2/year | N/A  |
+| (from section B-2.1) | 74.754 MWh/year | 36.558 tons CO2/year | N/A  |
 |   |  100 % electric metropolitan public transport
 (12 m and 6 m) electric busses
 smart public transport stations
 integrated e-ticketing system, fleet management system |   | N/A  |
 |  Action 2.4 | 75.136 MWh/year | 19.344,27 tons CO2/year | N/A  |
-Climate Neutrality Action Plan
-
-O
-
 |  (from section B-2.1) | 22 km of new dedicated lanes for public transport along the main boulevards – “green wave”
-smart system for public transport priority in intersection, CCTV system and traffic management | N/A  |
+| smart system for public transport priority in intersection, CCTV system and traffic management | N/A  |
 | --- | --- | --- |
 |  Waste | 31.190 MWh/year |  | 9.304 t CO2/year  |
 | --- | --- | --- | --- |
@@ -474,7 +458,7 @@ km of sewerage network rehabilitated  |   |   |
 |  Agricultural, Forestry and Land Use (AFOLU) | 1.040 MWh/year | 281 t CO2/year | N/A  |
 |  Action 4.1 (from section B-2.1) | 1.040 MWh/year | 281 t CO2/year | N/A  |
 |   |  140 hectares of green areas rehabilitated
-new trees planted |   | N/A  |
+| new trees planted |   | N/A  |
 |  A-1.4: GHG emissions by source sectors  |   |   |   |   |
 | --- | --- | --- | --- | --- |
 |  Base year | 2021  |   |   |   |
@@ -756,10 +740,6 @@ For drinking water, sewerage and sanitation, a reduction in energy consumption o
 |  Drinking water, sewerage and sanitation  |   |   |
 | --- | --- | --- |
 |  Natural gas consumption reference year 2015 | MWh / year | 15.006  |
-Climate Neutrality Action Plan
-
-#
-
 |  Natural gas consumption in 2019 | MWh / year | 18.340  |
 | --- | --- | --- |
 |  Potential to reduce energy losses | MWh / year | 3.335  |
@@ -797,10 +777,6 @@ A-2.1: List of relevant policies, strategies &amp; regulations
 |  Type | Level | Name & Title | Description | Relevance | Need for action  |
 | --- | --- | --- | --- | --- | --- |
 |  (regulation/policy/strategy/action plan) | (Local, regional, national, EU) | (Name of policy/strategy/plans) | (Description of policy/strategy/plans) | (Describe relevance/impact on climate neutrality ambition) | (List any suggested action in relation – to be further picked in Module C-1)  |
-Climate Neutrality Action Plan
-
-4
-
 |  Policy | National | Romania Urban Policy | The first Urban Policy of Romania was adopted in 2021, with four major objective (green, resilient, inclusive, and well governed cities). | The second priority of the RUP is “Creating liveable and climate-smart cities, by developing green-blue infrastructure to mitigate and adapt to urban risks”. The RUP includes measures linked to reducing air pollution and sustainable urban mobility. | All interventions planned are aligned with the objectives and priorities of the Urban Policy, particularly focusing on the development of Suceava Urban Functional Area.  |
 | --- | --- | --- | --- | --- | --- |
 |  Strategy | National | The National Integrated Plan for Energy and Climate Change 2021 – 2030 | The National Plan for Energy and Climate Change was adopted in 2019 and was elaborated in accordance with the EU energy policy framework with specific and well defined objectives. | According to the Plan, Romania aims to increase its share of energy from renewable sources in the total energy consumption by 2030 by increasing the installed capacity of wind and photovoltaic plants (additional capacities of 6,9 MW from renewable energy). | Suceava is one of the three urban authorities which have joined the 100 Cities Mission and it is aligned with the objectives of the NPECC in terms of reducing GHG emissions and increasing the energy efficiency in cities.  |
@@ -808,19 +784,11 @@ Climate Neutrality Action Plan
 Priority 4: A region with sustainable mobility.
 Priority 5: An accessible region | The projects included in the Action and Investment Plan are according with the priorities mentioned in the North - East strategic document.  |
 |  Policy | Local | Green Transport for a Green City | The” green transport” policy was implemented at local level. Since early 2022, public transport is | Suceava was the first city with electric busses for public transport and now is the only Romanian city with 100 % electric public | The Green Transport Policy will be continued as a major contributor to the net zero objective. Further approaches  |
-Climate Neutrality Action Plan
-
-5
-
 |   |  |  | 100 % electric and the Municipality is currently implementing projects in order to extend the ”green public transport” concept to metropolitan area. | transport. The Municipality also implements the Green Friday project, that offers residents access to free public transport each last Friday of the month. In addition, Suceava was the first city with a municipal electric fleet, with more than 50 charging station for electric vehicles, 10 electric municipal bikes, incentives (as free charging and free parking for residents using an electric vehicle). | to encourage the use of public transport, extend the electric public transport to entire metropolitan area, and encouraging using the electric vehicles, 50 new charging stations for electric vehicles including urban planning regulations that encourage the development of private charging stations.  |
 | --- | --- | --- | --- | --- | --- |
 |  Policy | Local | Suceava - Green City | The Green City Policy implies the rehabilitation of 140 ha of green public areas, planting 5.000 new trees and creating green corridors along the main streets and boulevards in the city. | Implementing the Green City Policy is directly linked with the Climate-Neutral and Smart Cities Mission Action Plan, through the creation of carbon sinks, as well as an extended air, soil and water quality monitoring system. | The Green City Policy will be expanded in order to include measures related to green roofs and facades.  |
 |  Action Plan | Local | Sustainable Energy and Climate Action Plan 2021-2030 (SECAP) | The SECAP is a strategic document targeting the reduction of GHG emissions, elaborated according to the methodology of the Covenant of Mayors on Climate and Energy. | SECAP identifies stationary energy and transport as the main sectors responsible for GHG emissions. The plan highlights that buildings are responsible for 51,7% of total emissions, while transport is responsible for 29,32%. Therefore, the action plan addresses stationary energy with priority. The SECAP includes a target of reducing the emissions by 55 % by 2030(compared to 2019). | Considering the high emissions from residential buildings, measures to accelerate interventions for energy efficiency are required. To this end, a comprehensive climate-neutrality masterplan for dense multi-apartment neighbourhoods and suburbs will be developed, to allow for scalability at the metropolitan level.  |
 |  Strategy | Local | Integrated Urban Development Strategy for Suceava | The strategic document covers the level of the Urban functional area and includes | Specific Objective no. 3 Carbon neutral, green and resilient city aims to ensure an environmentally | The strategic document offers the strategic guidelines for becoming a climate  |
-Climate Neutrality Action Plan
-
-6
-
 |   |  | Urban Functional Area 2021 – 2030 | initiatives related to transition to climate neutrality | friendly development of the Municipality and its functional area so that GHG emissions are reduced by 50% by 2030, through the following investment priorities:
 Priority 3.1: Increasing energy performance at the level of collective housing complexes;
 Priority 3.2: Increasing energy performance in public buildings and public lighting systems;
@@ -828,12 +796,8 @@ Investment Priority.
 Priority 3.3: Investments in the central heating system, renewable energy supply infrastructure and natural gas. | neutral at the urban functional area level  |
 | --- | --- | --- | --- | --- | --- |
 |  Strategy | Local | Sustainable Urban Mobility Plan for Suceava Urban Functional Area | The document was developed for Suceava Urban Functional Area and it is focuses on reducing carbon emissions, promoting green/alternative means of transport, sustainable mobility and increasing quality of life | The SUMP includes interventions on the road infrastructure, public transport, freight transport, alternative mobility, traffic management, alternative ways of traveling, promotion of cycling and walking.
-The main project is the one concerning metropolitan system of public transport (operated with 100 % electric busses), project that is currently into the implementation of first phase. This will create facilities for increasing the number of PT passengers in the urban functional area and reduce GHG emissions. | As the transport sector is the second source of CO2 emissions in Suceava, the Suceava team will focusses on implementation of the actions included in SUMP as for the first time the strategic document is covering the urban functional area (two cities and 8 villages).  |
+| The main project is the one concerning metropolitan system of public transport (operated with 100 % electric busses), project that is currently into the implementation of first phase. This will create facilities for increasing the number of PT passengers in the urban functional area and reduce GHG emissions. | As the transport sector is the second source of CO2 emissions in Suceava, the Suceava team will focusses on implementation of the actions included in SUMP as for the first time the strategic document is covering the urban functional area (two cities and 8 villages).  |
 |  Strategy | Local | District | The main objective | The Strategy aims at | The main  |
-Climate Neutrality Action Plan
-
-#
-
 |   |  | Heating Strategy Suceava 2020-2030 | of Strategy is to identify solutions for increasing the energy efficiency of the central heating system, in order to encourage using the centralized heating system (as Suceava is the only city in Romania having a city plans using only biomass). | reducing GHG emissions from the central transport and distribution heating system with 35% by 2030. | intervention is to be done in rehabilitation and increase energy efficiency of the transport and distribution network (more than 255 km), modernize and digitalize of thermal points.  |
 | --- | --- | --- | --- | --- | --- |
 
@@ -954,19 +918,11 @@ A-2.3: Emissions gap
 |  Industrial Process and Product Use (IPPU) | 38.531,00 | 13,33 | 19.513,00 | 34,91 | 19.018,00 | 8,16 |  |  | 19.018,00 | 8,15  |
 |  Agricultural, Forestry and Land Use (AFOLU) | 1.192,00 | 0,41 | 911,00 | 1,63 | 281,00 | 0,12 |  |  | 281,00 | 0,12  |
 |  Total | 289.055,00 | 100 | 55.903,00 | 19,34 | 233.152 | 80,66 |  |  | 233.152 | 80,66  |
-Climate Neutrality Action Plan
-
 |  **1** Residual emission represents the emissions that cannot be reduced through climate action and are being offset. Residual emission may amount to a maximum of 20 % of all emissions, as stated in the Mission Info Kit.  |
 | --- |
 |  **2** Baseline reduction target = Baseline emissions – residual emissions.  |
 |  **3** Emission reductions planned for in existing action planning and strategies should be quantified per sector.  |
 |  **4** Emissions gap = Baseline emission reduction target – Emissions reduction in existing scenarios.  |
-
-0
-Climate Neutrality Action Plan
-
-#
-
 | Sector | Baseline Emissions (Base Year: 2021) |
 | --- | --- |
 | Absolute Value (t/y) | Share on the Total Baseline (%) | Per Unit Value (p.u.) |
@@ -1057,47 +1013,26 @@ Module A-3 "Systemic Barriers and Opportunities to 2030 Climate Neutrality" shou
 |  System description | Stakeholders involved | Network | Influence | Interest  |
 |  Infrastructure | Suceava Local Council | Public Institution | Suceava Municipality is a public administration institution responsible for local infrastructure, heating, public lighting, public transport, culture, public spaces, green areas, social activities, education, utilities. But Suceava Local Council is the decision maker's most important actor and each single initiative of the local public authority (Suceava Municipality) needs to be approved on technical, legal and financial aspect by the Local Council. In the past 15 years the Local Council was partner in many investment projects in the field of energy efficiency (public and private buildings), alternative heating production (biomass), rehabilitation of public lighting (LED systems), education buildings, public transport (100 % electric fleet), alternative vehicles (electric municipal fleet, charging stations for EV's – with incentives for charging also for private owners), traffic management, cycling lanes, electric bicycles and scooters, rehabilitation of central heating system, separate waste collection and recycling system, rehabilitation of the water and sewage system, green areas, rehabilitation of pedestrian (low emission zone) and road infrastructure, city ring. | The Suceava Local Council is considering to be the most relevant strategic dialogue partner for Suceava Municipality and will be invited to take active part in the decision and implementation stage of the activities included in the Action Plan.  |
 |  Infrastructure | TPL SA – Local and Metropolitan public transport operator | Public service – transport | As being the local public transport operator and is preparing to become a metropolitan one from second part of 2024 the company was the main partner for Suceava municipality in the field of climate neutral mobility, running with 62 full electric busses (since 2022), with a smart, modern and efficient e-ticketing system in place, with facilities for elderly and disable people, incentives for students all | SUMP includes specific objectives for public transport and mobility and the next steps in the field of sustainable public transport is to extend the electric fleet (with more than 65 buses from 2024), extend the area of operation to metropolitan area (from 2024), improve the PT efficiency (separate bus lanes, traffic lights priority) and  |
-Climate Neutrality Action Plan
-
-3
-
 |   |  |  | these with the main goal of making public transport more attractive, efficient and affordable for all citizens. | investments in alternative sources of production for electric energy (solar) with the main goal to cover the entire need for energy (related to public transport) from renewable sources.  |
 | --- | --- | --- | --- | --- |
 |  Infrastructure | Thermonet SA – local heating operator | Public service-central heating distribution | As central heating in Suceava is still an industrial sector with significant environmental, efficiency and smart management issues the company is an important partner for local authorities in the field of the objectives included in the Suceava Heating Local Strategy, that is concerning private and public buildings and also the central heating transport and distribution network. | The main domains include: reduce the losses from the transport and distribution system, improve the efficiency, reduce the negative impact against environment, reduce the energy consumption and GHG emissions by implementing infrastructure projects (distribution network and digitalization of thermal points) and soft measures like: HEMS and awareness raising campaigns.  |
 |  Infrastructure | ACET SA – regional water and sewage operator | Public service – water and sewage | As a regional water and sewage services provider the local operator has been an important partner for the municipality in the past 15 years, with common initiatives/investments in the field of rehabilitation of the waste water city plant, rehabilitation, modernization and extension of water and sewage network with the main objective as reducing the negative impact against environment. | The main objectives are related to efficient and sustainable water management (taking into consideration the huge impact of climate changes on water resources), reduce of losses into transport and distribution networks, increase the quality of efficiency of the sewage sector (including investments in modernization of the waste water treatment plant) with direct impact of the quality of life improvement and reducing the negative impact against nature and recently, as part of the Suceava Action Plan, investments in modern, efficient and ecological friendly solution for production of alternative energy necessarily for own consumption.  |
 |  Infrastructure | DIASIL & RITMIC SRL – municipal waste operator | Public service – waste | In the past 5 years the local waste operator has been able to implement an efficient, sustainable and secure waste management, with facilities for separate waste collection (glass, paper, plastic), with facilities for processing and recycling the waste collected from Suceava city. Lately the company | Working together with the municipality the local waste operator main objective is to increase the percentage separate waste collection, recycling facilities with direct impact on the reduction of pollution, emissions and  |
-Climate Neutrality Action Plan
-4
-
 |   |  |  | has been involved in recycling of construction materials and waste coming from construction sites and thus they are important actor on local level in the domain of circular economy practices. | increase the quality of life.  |
 | --- | --- | --- | --- | --- |
 |  Capabilities | Stefan cel Mare University Suceava | Academic and RDI | The Stefan cel Mare University in Suceava has more than 11.000 students, it is the second largest university in the North East Region, it is an advanced research, innovation and education university, with an higher education level and its achievements in the field of innovation and research is recognized both on national and European level. The main domain for research activities are: information technology and communications, renewable energies, nanomaterials, robotics, mechatronics, electrical engineering. | The University is one of the main partner for Suceava Municipality in its effort for implementation of investments that create the local condition for climate neutrality.
-
-The University is one of the main partners in project „NetZeRoCities – National Centre for Competence and solutions for developing climatic neutral smart cities” and offers support for local initiatives in the field of climate neutrality, research, transfer of best practice initiatives and knowledge.  |
+| The University is one of the main partners in project „NetZeRoCities – National Centre for Competence and solutions for developing climatic neutral smart cities” and offers support for local initiatives in the field of climate neutrality, research, transfer of best practice initiatives and knowledge.  |
 |  Process | Owners associations | Civil society | These associations are representing the interest of all the private owners of apartment located in common residential buildings. They work closely with the local supplier for utilities (water, gas, electricity, heating) and they facilitate the communication between municipality and the citizens thus they are a very important link for local investments in energy efficiency and ”green” buildings. | There are periodic and constant consultation between local public administration and the owner’s associations and the main purpose is the increase the quality of life, convince the citizens to cooperate with local authorities in projects concerning reduction of energy consumption and GHG emissions but also encouraging them (citizens) to implement private initiatives in these domains.  |
 |  Association | Suceava Association for Development and Investment – Transport | Association of cities/villages | The association (two cities and 7 villages from Suceava metropolitan area) has as its main objective to implement the sustainable and ecological integrated public transport system for the functional area Suceava with facilities for electric vehicles also. This means that the public transport in Suceava functional area will be (from 2024) 100 % electric. Beside this, the association (city ring, photovoltaic parks) will | The main objective is to extend the beneficial effects of the climate neutrality interventions in the functional area and replicating as many types of interventions / projects / in initiatives as possible.
-
-This way the strategic documents (SUMP, IUDs) were designed for the entire surface covered by the functional area with objectives  |
-Climate Neutrality Action Plan
-
-5
-
+| This way the strategic documents (SUMP, IUDs) were designed for the entire surface covered by the functional area with objectives  |
 |   |  |  | implement other common projects so this body is important for dissemination, outreach, awareness raising, project’s replication and communication about climate neutrality with targets as: public administrations, private companies and citizens. | and intervention for each single local authority.  |
 | --- | --- | --- | --- | --- |
 |  Finance | North-East Regional Development Agency | Regional NGO | The North-East Regional Development Agency was established as an NGO of public utility, responsible to financing the projects connected to regional development and in charge of Regional Operational Program for the North - East region, including non-reimbursable funds for projects implementation.
-
-One of the main priorities for Regional Programme 2021 – 2027 is investments in energy efficiency projects with a direct result of reduction of energy consumption and GHG emissions for future environmentally friendly local communities. | Regional Plan is the main source of financing projects that target climate neutrality (sustainable urban mobility, thermal rehabilitation of public and residential buildings, urban regeneration, green areas, alternative vehicles and public transport).
-
-Funds are allocated for each major city in the region and Suceava has an amount of 63.000.000 euro for project’s implementation.  |
+| One of the main priorities for Regional Programme 2021 – 2027 is investments in energy efficiency projects with a direct result of reduction of energy consumption and GHG emissions for future environmentally friendly local communities. | Regional Plan is the main source of financing projects that target climate neutrality (sustainable urban mobility, thermal rehabilitation of public and residential buildings, urban regeneration, green areas, alternative vehicles and public transport). |
+| Funds are allocated for each major city in the region and Suceava has an amount of 63.000.000 euro for project’s implementation.  |
 |  Finance | Central Govern (Ministry of Energy, Ministry of Development, Public Works and Administration | Public (national) institution | The Central Govern is responsible for implementation and financing of actions included into National Recovery and Resilience Plan 2022 – 2030.
-
-This programme includes facilities for financing of several strategic local projects in the domains of: energy efficiency in public and residential buildings, alternative (electric) public transport, sustainable urban mobility, waste and water management and most important increase the national production of energy from renewable sources (solar, wind). | Suceava municipality has already secured finance and start implementation for local projects (some of them included into Action Plan) like: energy efficiency in public and residential buildings, alternative (electric) public transport.
-
-The main domains of interest will be new local projects for renewable energy facilities (photovoltaic parks), production of “green” hydrogen, urban mobility and rehabilitation of municipal heating transport and distribution network.  |
-Climate Neutrality Action Plan
-
-6
-
+| This programme includes facilities for financing of several strategic local projects in the domains of: energy efficiency in public and residential buildings, alternative (electric) public transport, sustainable urban mobility, waste and water management and most important increase the national production of energy from renewable sources (solar, wind). | Suceava municipality has already secured finance and start implementation for local projects (some of them included into Action Plan) like: energy efficiency in public and residential buildings, alternative (electric) public transport. |
+| The main domains of interest will be new local projects for renewable energy facilities (photovoltaic parks), production of “green” hydrogen, urban mobility and rehabilitation of municipal heating transport and distribution network.  |
 |  Process | Citizens | Civil society / NGO’s/ Centre for Innovation and Civic Imagination (CIIC) | Suceava’s citizens are of course the final beneficiaries of the results coming from the implementation of the actions included into the Action Plan.
 Some of the main objectives for this common effort in AP implementation are: ensure the citizen's right of access to any public information, improve communication between local public administration institutions of Suceava municipality;
 But in the same time the civil society is consider to be one of the most important stakeholder and there was consultation not only while performing the plan but for almost each major investment and action implemented at local level.
@@ -1391,10 +1326,6 @@ Climate Neutrality Action Plan
 |   |   |  Local parking regulations and more efficient use of urban space | Reduced traffic volumes |   | Reduce traffic congestion  |
 |   |   |  Requirements for public procurements. | Increased use of electric vehicles (public fleets) |   | Reduce GHG emissions  |
 |   |  Social innovation | Changing behaviour related to smart mobility | Increased use of alternative mobility solutions |   | Increase the number of citizens with “eco-friendly” way of living  |
-Climate Neutrality Action Plan
-
-#
-
 |  Waste & circular economy | Technology/ infrastructure | Upgrading wastewater treatment plant. 100 digitalized eco – islands. | Reduce the energy consumption for sewage system 25% recycled municipal waste. | 9.304 | Reduce GHG emissions Increase the percentage of recycled materials and recycling municipal waste Reduce energy consumption for construction materials production  |
 | --- | --- | --- | --- | --- | --- |
 |   |  Governance & policy | Local policies and facilities for recycling DNSH principle | Mandatory recycling of construction materials  |   |   |
@@ -1511,24 +1442,18 @@ Climate Neutrality Action Plan
 |   |  2.2 Integrated green (100% electric) metropolitan public transport system | 100% green public metropolitan transportation fleet: purchase of 65 electric buses Smart public transport stations: the modernization of 25 stations equipped with easy access for low mobility passengers, e ticketing, LCD displays etc. Integrated e ticketing systems, CCTV system Public transport dedicated lanes: at least 22 km of new dedicated lanes for buses along main streets and boulevards.  |
 |   |  2.3 Expansion of the public and private fleet of electric vehicles and installation of at least 50 charging stations by 2028 | Extension of the network of public electric charging stations at least 50 new charging stations. Increase the number of public and private electric vehicles. Incentives for the residents and private companies purchasing electric vehicles (local taxes, subsidies (both national and local); parking and free charging) – at least 5.000 new beneficiaries by 2030.  |
 |   |  2.4 Integrated urban mobility system and priority for public transport ("green wave") | Public transport dedicated lanes: at least 22 km of new dedicated lanes for buses along main streets and boulevards Introduction of priority systems at traffic light intersections for local public transport, creation of dedicated lanes for transport (electric buses), increase in the number of electric buses, electric minibuses, traffic lights (green light), traffic management centre (information, surveillance), "Smart parking" application, interactive map for public transport and road traffic. Reducing  |
-Climate Neutrality Action Plan
-
-2
-
 |   |  | road traffic pollution and congestion. Planting of protective green curtains along main roads (to reduce noise pollution, GHG emissions and improve quality of life). Promoting smart mobility both through the development of a road and parking area dedicated to the development and testing of outdoor ambient intelligence technologies and products, and ICT solutions for connected and semi-autonomous vehicles. Test advanced solutions for intelligent urban traffic routing for decongestion and minimization of pollutant effects.  |
 | --- | --- | --- |
 |  Waste & circular economy | 3.1 Use of recyclable materials for local production of construction elements in the circular economy | Establishment of two voluntary collection centres to meet the needs of the population to dispose of: textile waste, paper/cardboard, plastic, small electrical and electronic waste, large household items, hazardous waste, wood/furniture, glass, tires, metal, garden waste, miscellaneous construction waste. Development of an efficient waste management system by increasing separate collection capacities, preparing for reuse and recovery of waste in order to continue the process of compliance with the specific directives and the transition to the circular economy (100 digitized eco-islands) including smart bins using photovoltaic panels for solar energy production. Improving waste management system, reducing the amount of unsorted waste, promoting recycling and reducing environmental impact. Increase the recycling activities connected to materials from construction works and implement the DNSH (Do Not Significant Harm) principle in all public investments and constructions projects.  |
 |   |  3.2 Rehabilitation of wastewater collectors, sewerage networks and rehabilitation and upgrading of Suceava wastewater treatment plant | At the moment, the sewage pipes do not ensure the complete transport of wastewater to the treatment plant, as there are losses that lead to the pollution of water courses in Suceava (Cetatii). There are also targets (houses or economic agents) that are not connected to the sewerage network, wastewater being discharged into the nearby water courses (Cetății) Therefore, by rehabilitating and changing the collector pipes that transport wastewater to the treatment plant, especially the collector that takes wastewater from the Obcini district - Alexandru cel Bun – Centru- Calea Unirii area, it will be possible to eliminate wastewater losses and implicitly the pollution of water courses in the Suceava municipality. The project for upgrading the waste water treatment plant will have as direct results significant improvement the degree of purification and increase the efficiency of the wastewater treatment system.  |
 |  Green infrastructure & nature-based solutions | 4.1 Development of new green areas and planting green curtains (major roads area) | Reconversion and reuse of degraded land in Suceava City. Planting 5000 ornamental trees, resistant to climate change, with a high CO2 absorption capacity, which will constitute a plant protection curtain (against noise) and reduce urban pollution (along the main traffic arteries in the city and into residential areas). Protecting existing wild area , unique in an urban habitat; Identify innovative ways of visual and auditory interaction with the protected biotope without disturbing its natural processes; Landscaping of the park forest functions with all the necessary facilities and equipment (paths, resting places, playgrounds, places for appropriate sports activities, public lighting, etc.); Addressing accessibility and links to build and planted spaces, nearby tourist and local interest objectives (140 hectares in Zamca and Sipote area).  |
 |  Built environment | 5.1 Increasing energy efficiency of residential and private buildings to reduce | Increasing energy efficiency in residential/private buildings by implementing an integrated energy monitoring, control and reduction system. The main aim of the energy retrofitting /  |
-Climate Neutrality Action Plan
-
 |   | GHG emissions and increase the quality of life of residents (including HEMS) | modernization of existing buildings is to reduce heat consumption for space heating and hot water preparation 65 residential buildings, 10.000 apartments, 480.000 sq.
 The same solutions are to be implemented into private buildings (mainly commercial and industrial ones).
 Identifying energy saving potential in existing buildings. Promoting appropriate energy efficiency measures such as thermal insulation, replacement of energy systems with more efficient technologies and use of viable renewable energy sources. Installation of sensors and automation systems to monitor and control energy consumption in real time. Creation of data platforms for collecting, managing and interpreting energy efficiency information and integrating it into the city's Digital Twin concept. Promoting solutions to transform neighbourhoods into entities capable of producing more energy from renewable sources than they consume, thus contributing to fighting climate change and ensuring sustainable urban development. Promoting public-private partnerships for the energy renovation of buildings and the development of a smart connected city infrastructure. Create awareness campaigns to promote energy reduction and the adoption of low environmental impact practices.  |
 | --- | --- | --- |
 |   |  5.2 Modernization of public institutions' buildings through refurbishment and increased energy efficiency | Increase energy efficiency in at least 10 municipal buildings (administrative buildings, educational units), with construction works for reduce energy consumption, increase energy efficiency, reduce GHG emissions, facilities for production of alternative energy, implementing an integrated system for monitoring, controlling and reducing energy consumption. The main aim of the energy rehabilitation/upgrading measures of the existing buildings is to reduce heat consumption for space heating and hot water preparation while ensuring comfortable microclimate conditions.
-Identifying energy saving potential in existing buildings. Promoting appropriate energy efficiency measures such as thermal insulation, replacement of energy systems with more efficient technologies and use of viable renewable energy sources. Installation of sensors and automation systems to monitor and control energy consumption in real time, Creation of data platforms for collecting, managing and interpreting energy efficiency information and integrating it into the city's Digital Twin concept. Promoting solutions to transform neighbourhoods into entities capable of producing more energy from renewable sources than they consume, thus contributing to fighting climate change and ensuring sustainable urban development, promoting public-private partnerships for the energy renovation of buildings and the development of a smart connected city infrastructure. Create awareness campaigns to promote energy consumption reduction and the implementation of low environmental impact practices.  |
+| Identifying energy saving potential in existing buildings. Promoting appropriate energy efficiency measures such as thermal insulation, replacement of energy systems with more efficient technologies and use of viable renewable energy sources. Installation of sensors and automation systems to monitor and control energy consumption in real time, Creation of data platforms for collecting, managing and interpreting energy efficiency information and integrating it into the city's Digital Twin concept. Promoting solutions to transform neighbourhoods into entities capable of producing more energy from renewable sources than they consume, thus contributing to fighting climate change and ensuring sustainable urban development, promoting public-private partnerships for the energy renovation of buildings and the development of a smart connected city infrastructure. Create awareness campaigns to promote energy consumption reduction and the implementation of low environmental impact practices.  |
 |  Soft interventions | 6.1 Improved local urban regulations and policies for achieving climate neutrality | Design, approve, implement and monitoring an innovative SMART climate-neutrality city plan, with regulation and policies (including incentives) related to increase the energy efficiency and reduce GHG emissions for residential buildings and with specific „climate neutral“, requirements for construction of new residential buildings (energy efficiency, green spaces, access to public transport, use of recycling construction materials, renewable energy production) with focus on nZEB principles and improve the quality of life into the city . The city plan need to have also a set of urban planning principles for climate neutral interventions for existing public  |
 
 3
@@ -1561,14 +1486,12 @@ All the action there are included in the Action Plan are expected to generate re
 |   |  Action scale & addressed entities | All city surface  |
 |   |  Involved stakeholders | Municipality of Suceava, Private Heating Distribution operator, Owner's Association, Ministry of Energy, Regional Development Agency North – East  |
 |   |  Comments on implementation | Technical documentation  |
-Climate Neutrality Action Plan
-
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 | --- | --- | --- |
 |   |  Removed/substituted energy, volume, or fuel type | Electric energy – 5.452 MWh/year  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 21.132,96 t CO2  |
 |   |  Total costs and costs by CO2 unit | Total cost – 89.130.300 Euro
-Euro / t CO2  |
+| Euro / t CO2  |
 |  Action outline | Action name | **Photovoltaic parks (including alternative system for production of hydrogen)**  |
 |   |  Action type | Technical intervention  |
 |   |  Action description | The project aims to redevelop a degraded site to revitalize and reduce air pollution while producing electricity from renewable sources (solar). The photovoltaic park will production will cover the entire consumption of electric energy for the municipality (including the electric PT fleet) - estimated capacity 19.928 MWh/year. The second project is related to floating park (Dragomirna lake) that will use existing water source for production of hydrogen and will have an electrical load of around 6500 MWh/year, generating alternative electricity with a low carbon footprint electricity used for “green “production of hydrogen. Hydrogen is estimated to be used for alternative public transport vehicles (pilot project) and /or for admission to natural gas transport network (reduce the GHG emissions). The other projects (industrial sector) include two separate projects for photovoltaic parks with a total energy production of 110.200 MWh/year. One of these projects will be implemented by the regional water and sewage provider and will cover 40 % of their own consumption. The second one will be Public Private Partnership investment with 131.648 photovoltaic panels and 78 ha.
@@ -1584,14 +1507,8 @@ Total estimated capacity: 136.628 MWh/year.  |
 |  Impact & cost | Generated renewable energy (if applicable) | 136.628 MWh/year  |
 |   |  Removed/substituted energy, volume, or fuel type | 45.512 MWh/year Natural Gas  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 29.210 t CO2 /year  |
-
-5
-Climate Neutrality Action Plan
-
-6
-
 |   | Total costs and costs by CO2 unit | 81.170.000 Euro
-Euro/ t CO2  |
+| Euro/ t CO2  |
 | --- | --- | --- |
 |  Action outline | Action name | **Intelligent and efficient municipal public lighting**  |
 |   | Action type | Technical intervention  |
@@ -1607,7 +1524,7 @@ Euro/ t CO2  |
 |   | Removed/substituted energy, volume, or fuel type | Electric energy – 4.452 MWh/year  |
 |   | GHG emissions reduction estimate (total) per emission source sector | 1.704 t CO2/year  |
 |   | Total costs and costs by CO2 unit | 3.352.020 Euro
-Euro / t CO2  |
+| Euro / t CO2  |
 |  Action outline | Action name | **Extension of cycling facilities**  |
 |   | Action type | Physical / Spatial intervention  |
 |   | Action description | Development of the municipal bicycle lanes by at least 30 km until 2030 and modernised of the existing lanes, development of the public bike and scouters sharing system (minimum 5 new stations) with also acquisition of new regular and electric bicycles/scouters (200).  |
@@ -1619,17 +1536,13 @@ Euro / t CO2  |
 |   | Involved stakeholders | Municipality of Suceava , Local Public Transport Company and local NGO’s  |
 |   | Comments on implementation | N/A  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
-Climate Neutrality Action Plan
-
-7
-
 |   | Removed/substituted energy, volume, or fuel type | Electric energy: 191 MWh/year
 Diesel: 1.981 MWh/year
 Gasoline: 2.043 MWh/year  |
 | --- | --- | --- |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 2.920,5 t CO2/year  |
 |   |  Total costs and costs by CO2 unit | 4.480.000 Euro
-,9 Euro /t CO2  |
+| ,9 Euro /t CO2  |
 |  Action outline | Action name | **Integrated green (100 % electric) metropolitan public transport system**  |
 |   |  Action type | Technical intervention  |
 |   |  Action description | Implementation of a public transport system in the metropolitan area, operated with electric buses, bus station, passenger information system, e-ticketing system, public transport monitoring and information centres. The project will increase the number of passengers/users for public transport at metropolitan level, reduce GHG emissions and increase the quality of life in the project area.
@@ -1648,14 +1561,10 @@ Diesel: 33.552 MWh/Year
 Gasoline: 35.836 MWh/Year  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 36.558,92 t CO2/year  |
 |   |  Total costs and costs by CO2e unit | 47.700.000 Euro
-,7 Euro / t CO2  |
+| ,7 Euro / t CO2  |
 |  Action outline | Action name | **Expansion of the public and private fleet of electric vehicles and installation of at least 50 charging stations by 2030**  |
 |   |  Action type | Technical/Soft intervention  |
 |   |  Action description | Extension of the network of public electric charging stations at least 50 new charging stations. Increase the number of public and private electric vehicles .Incentives for the residents and private companies purchasing electric vehicles (local taxes, subsidies (both national and local); parking and free charging) – at least 5.000 new beneficiaries by 2030.  |
-Climate Neutrality Action Plan
-
-8
-
 |  Reference to impact pathway | Field of action | Mobility&Transport  |
 | --- | --- | --- |
 |  Systemic lever | Technology/Infrastructure/Policies |   |
@@ -1673,7 +1582,7 @@ Diesel: 4.731 MWh/year
 Gasoline: 5.117MWh/year  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 6.986 t CO2/year  |
 |   |  Total costs and costs by CO2 unit | 21.300.000 Euro
-,9 Euro /t CO2  |
+| ,9 Euro /t CO2  |
 |  Action outline | Action name | Integrated urban mobility system and priority for public transport ("green wave")  |
 |   |  Action type | Technical intervention  |
 |   |  Action description | Introduction of priority systems at traffic light intersections for local public transport, creation of dedicated lanes for transport (electric buses), increase in the number of electric buses, electric minibuses, traffic lights (green light), one way main boulevards, traffic management centre (information, surveillance), "Smart parking" application, interactive map for public transport and road traffic. Reducing road traffic pollution and congestion. Planting of protective green curtains along main boulevards (to reduce noise pollution, GHG emissions and improve quality of life). Promoting smart mobility through the development of a road and parking area dedicated to the development and testing of outdoor ambient intelligence technologies and products, ICT solutions for connected and semi-autonomous vehicles. Test advanced solutions for intelligent urban traffic routing for decongestion and minimization of pollutant effects. Public transport dedicated lanes – 22 km along main boulevards  |
@@ -1683,10 +1592,6 @@ Gasoline: 5.117MWh/year  |
 |  Implementation | Responsible bodies/person for implementation | Municipality of Suceava, Local Public Transport Operator  |
 |   |  Action scale & addressed entities | City area  |
 |   |  Involved stakeholders | Municipality of Suceava , Local Public Transport Operator, Traffic Police, Stefan cel Mare University, Regional Development Agency North – East  |
-Climate Neutrality Action Plan
-
-9
-
 |   | Comments on implementation | Technical documentation  |
 | --- | --- | --- |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
@@ -1696,7 +1601,7 @@ Diesel: 34.275 MWh/Year
 Gasoline: 37.729 MWh/Year  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 19.344,27 t CO2/year  |
 |   |  Total costs and costs by CO2 unit | 20.800.000 Euro
-,25 Euro / t CO2  |
+| ,25 Euro / t CO2  |
 |  Action outline | Action name | **Use of recyclable materials for local production of construction elements in the circular economy**  |
 |   |  Action type | Technical intervention  |
 |   |  Action description | Establishment of two voluntary collection centres to meet the needs of the population to dispose of: textile waste, paper/cardboard, plastic, small electrical and electronic waste, large household items, hazardous waste, small animal carcasses, wood/furniture, glass, tires, metal, garden waste, miscellaneous construction waste.
@@ -1712,17 +1617,15 @@ Promoting the use of recyclable building materials, reducing the consumption of 
 |   |  Comments on implementation | Technical documentation  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   |  Removed/substituted energy, volume, or fuel type | Electric energy: 112 MWh/year
-Diesel : 21.867 MWh/year  |
+| Diesel : 21.867 MWh/year  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 7.624 t CO2/year  |
-Climate Neutrality Action Plan
-
 |   | Total costs and costs by CO2 unit | 5.800.000 Euro
-,75 Euro / t CO2  |
+| ,75 Euro / t CO2  |
 | --- | --- | --- |
 |  Action outline | Action name | **Rehabilitation of wastewater collectors, sewerage networks and rehabilitation and upgrading of Suceava wastewater treatment plant**  |
 |   |  Action type | Technical intervention  |
 |   |  Action description | At the moment, the sewage pipes do not ensure the complete transport of wastewater to the treatment plant, as there are losses that lead to the pollution of water courses in Suceava (pr. Cetății). There are also targets (houses or economic agents) that are not connected to the sewerage network, wastewater being discharged into the nearby water courses (pr. Cetății) Therefore, by rehabilitating and changing the collector pipes that transport wastewater to the treatment plant, especially the collector that takes wastewater from the Obcini district - Alexandru cel Bun – Centru-Calea Unirii area, it will be possible to eliminate wastewater losses and implicitly the pollution of water courses .
-Improper operation of the municipal wastewater treatment plant has a major negative impact on the outfall, namely on the Suceava river as the treatment plant has been the source of major pollution of the Suceava River, which has led to fish mortality and, implicitly, to the impairment of the ecological balance of the water body. The project for upgrading the waste water treatment plant will have as direct results significant improvement the degree of purification, increase the efficiency of the wastewater treatment system and sludge discharge with facilities for dehydration , drying of sludge , with phosphor recovery installation, increase the energy efficiency , reduce GHG emissions and alternative energy production ( biogas ).  |
+| Improper operation of the municipal wastewater treatment plant has a major negative impact on the outfall, namely on the Suceava river as the treatment plant has been the source of major pollution of the Suceava River, which has led to fish mortality and, implicitly, to the impairment of the ecological balance of the water body. The project for upgrading the waste water treatment plant will have as direct results significant improvement the degree of purification, increase the efficiency of the wastewater treatment system and sludge discharge with facilities for dehydration , drying of sludge , with phosphor recovery installation, increase the energy efficiency , reduce GHG emissions and alternative energy production ( biogas ).  |
 |  Reference to impact pathway | Field of action | Waste & circular economy  |
 |   |  Systemic lever | Technology/Infrastructure  |
 |   |  Outcome (according to module B-1.1) | Reduction of the waste water impact of natural environment, increase the capacity of the waste water treatment plant. conservation of biodiversity  |
@@ -1732,19 +1635,13 @@ Improper operation of the municipal wastewater treatment plant has a major negat
 |   |  Comments on implementation | N/A  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   |  Removed/substituted energy, volume, or fuel type | Electric energy: 1.013 MWh/year
-Diesel : 8.198 MWh/year  |
+| Diesel : 8.198 MWh/year  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 1.680 t CO2/year  |
 |   |  Total costs and costs by CO2 unit | 12.000.000 Euro
-,8 Euro /t CO2  |
+| ,8 Euro /t CO2  |
 |  Action outline | Action name | **Development of new green areas and planting green curtains (major roads area)**  |
 |   |  Action type | Nature based solution  |
 |   |  Action description | Reconversion and reuse of degraded land in Suceava City. Planting ornamental trees (5000) resistant to climate change, with a high CO2 absorption capacity, which will constitute a plant protection curtain (against noise) and reduce urban pollution (along the main traffic arteries in the city and into residential areas)  |
-
-0
-Climate Neutrality Action Plan
-
-1
-
 |   |  | Protecting existing wild nature, unique in an urban habitat; Identify innovative ways of visual and auditory interaction with the protected biotope without disturbing its natural processes; Landscaping of the park forest functions with all the necessary facilities and equipment (paths, resting places, playgrounds, places for appropriate sports activities, public lighting, etc.); Addressing accessibility and links to build and planted spaces, nearby tourist and local interest objectives(140 hectares in Zamca and Sipote area)  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Green infrastructure  |
@@ -1756,10 +1653,10 @@ Climate Neutrality Action Plan
 |   |  Comments on implementation | Technical documentation  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   |  Removed/substituted energy, volume, or fuel type | Electric energy: 126 MWh/year
-Diesel: 914 MWh/year  |
+| Diesel: 914 MWh/year  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 281 t CO2/year  |
 |   |  Total costs and costs by CO2 unit | 35.217.000 Euro
-Euro /t CO2  |
+| Euro /t CO2  |
 |  Action outline | Action name | **Increasing energy efficiency of residential and private buildings to reduce GHG emissions and increase the quality of life of residents (including HEMS)**  |
 |   |  Action type | Technical Intervention  |
 |   |  Action description | Increasing energy efficiency in residential buildings by implementing an integrated energy monitoring, control and reduction system (at least 65 residential buildings with more than 10.000 apartments). The same solutions are to be implemented into private buildings (mainly commercial and industrial ones) – Total = 480.000 sq. Production of green energy (photovoltaic and solar panels), green roofs and facades.
@@ -1787,16 +1684,14 @@ Wood : 17.013 MWh/year
 Biomass : 33.484 MWh/year  |
 |   | GHG emissions reduction estimate (total) per emission source sector | 31.112 t CO2/year from Buildings  |
 |   | Total costs and costs by CO2 unit | 80.000.000 Euro
-,4 Euro /t CO2  |
+| ,4 Euro /t CO2  |
 |  Action outline | Action name | Modernization of public institutions' buildings through refurbishment and increased energy efficiency  |
 |   | Action type | Technical intervention  |
 |   | Action description | Increase energy efficiency in at least 10 municipal buildings (administrative buildings, educational units), with construction works for reduce energy consumption, increase energy efficiency, reduce GHG emissions, facilities for production of alternative energy, implementing an integrated system for monitoring, controlling and reducing energy consumption. The main aim of the energy rehabilitation/upgrading measures of the existing buildings is to reduce heat consumption for heating and hot water preparation while ensuring comfortable microclimate conditions.
-Identifying energy saving potential in existing buildings. Promoting appropriate energy efficiency measures such as thermal insulation, replacement of energy systems with more efficient technologies and use of viable renewable energy sources. , Installation of sensors and automation systems to monitor and control energy consumption in real time, Creation of data platforms for collecting, managing and interpreting energy efficiency information and integrating it into the city's Digital Twin concept. , Promoting solutions to transform neighbourhoods into entities capable of producing more energy from renewable sources than they consume, thus contributing to fighting climate change and ensuring sustainable urban development, Promoting public-private partnerships for the energy renovation of buildings and the development of a smart connected city infrastructure. Create awareness campaigns to promote energy reduction and the adoption of low environmental impact practices.  |
+| Identifying energy saving potential in existing buildings. Promoting appropriate energy efficiency measures such as thermal insulation, replacement of energy systems with more efficient technologies and use of viable renewable energy sources. , Installation of sensors and automation systems to monitor and control energy consumption in real time, Creation of data platforms for collecting, managing and interpreting energy efficiency information and integrating it into the city's Digital Twin concept. , Promoting solutions to transform neighbourhoods into entities capable of producing more energy from renewable sources than they consume, thus contributing to fighting climate change and ensuring sustainable urban development, Promoting public-private partnerships for the energy renovation of buildings and the development of a smart connected city infrastructure. Create awareness campaigns to promote energy reduction and the adoption of low environmental impact practices.  |
 |  Reference to impact pathway | Field of action | Built environment  |
 |   | Systemic lever | Technology/Infrastructure  |
 |   | Outcome (according to module B-1.1) | Reduce the level of energy consumption and increase energy efficiency in public buildings (at least 10)  |
-Climate Neutrality Action Plan
-
 |  Implementation | Responsible bodies/person for implementation | Municipality of Suceava  |
 | --- | --- | --- |
 |   |  Action scale & addressed entities | Public buildings  |
@@ -1804,10 +1699,10 @@ Climate Neutrality Action Plan
 |   |  Comments on implementation | Technical documentation  |
 |  Impact & cost | Generated renewable energy (if applicable) | 390 MWh/year  |
 |   |  Removed/substituted energy, volume, or fuel type | Electric energy: 2.616 MWh/year
-Natural gas: 7.905 MWh/year  |
+| Natural gas: 7.905 MWh/year  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 7.230 t CO2  |
 |   |  Total costs and costs by CO2 unit | 22.190.000 Euro
-,1 Euro / t CO2  |
+| ,1 Euro / t CO2  |
 |  Action outline | Action name | **Improved local urban regulations and policies for achieving climate neutrality**  |
 |   |  Action type | Other intervention  |
 |   |  Action description | Design, approve, implement and monitoring an innovative SMART climate neutrality city plan, with regulation and policies (including incentives) related to increase the energy efficiency and reduce GHG emissions for residential/private buildings and with specific „climate neutral„ requirements for construction of new residential/private buildings (energy efficiency, green spaces, access to public transport, use of recycling construction materials, renewable energy production) with focus on nZEB principles and improve the quality of life into the city.
@@ -1910,14 +1805,14 @@ Climate Neutrality Action Plan
 7
 
 |  treatment plant | 5.1 Increasing energy efficiency of residential buildings to reduce GHG emissions and increase the quality of life of residents (including HEMS)
-Modernization of public institutions' buildings through refurbishment and increased energy efficiency |  |  |  |  |   |
+| Modernization of public institutions' buildings through refurbishment and increased energy efficiency |  |  |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |  Trips made with alternative ways of travelling (public transport / electric vehicles / bikes) | 2.1 Extension of cycling facilities
 Expansion of the public and private fleet of electric vehicles and installation of at least 50 charging stations by 2028
 Integrated urban mobility system and priority for public transport ("green wave")
 Improved local urban regulations and policies for achieving climate neutrality | SV-NZC-06 | Modal share | 42% | 48% | 52%  |
 |  Surface of green spaces | 2.4 Integrated urban mobility system and priority for public transport ("green wave")
-Development of new green areas and planting green curtains (major roads area) | SV-NZC-07 | Hectares | 40 | 100 | 140  |
+| Development of new green areas and planting green curtains (major roads area) | SV-NZC-07 | Hectares | 40 | 100 | 140  |
 |  B-3.2: Indicator Metadata  |   |
 | --- | --- |
 |  |   |
@@ -1940,10 +1835,6 @@ Development of new green areas and planting green curtains (major roads area) | 
 |  References |   |
 |  Deliverables describing the indicator | Monitoring reports  |
 |  Other indicator systems using this indicator | Reference Framework for Sustainable Cities, ISO 37110:2022 Sustainable cities and communities,  |
-Climate Neutrality Action Plan
-
-8
-
 |   | Romania Urban Policy Indicators  |
 | --- | --- |
 |  **B-3.2: Indicator Metadata**  |   |
@@ -1987,10 +1878,6 @@ Climate Neutrality Action Plan
 |  Suggested collection interval | At least twice in 10 years  |
 |  References |   |
 |  Deliverables describing the indicator | Urban survey for measurements of the people’s  |
-Climate Neutrality Action Plan
-
-9
-
 |   | satisfaction regarding quality of life into the city  |
 | --- | --- |
 |  Other indicator systems using this indicator | Romania Urban Policy Indicators  |
@@ -2035,8 +1922,6 @@ Climate Neutrality Action Plan
 |  Suggested collection interval | Each year  |
 |  References |   |
 |  Deliverables describing the indicator | Local public authority Financial Assessment  |
-Climate Neutrality Action Plan
-
 |  Other indicator systems using this indicator | Reference Framework for Sustainable Cities, Romania Urban Policy Indicators  |
 | --- | --- |
 |  **B-3.2: Indicator Metadata**  |   |
@@ -2098,10 +1983,6 @@ Module C-1 "Organisational and Governance Innovation Interventions" consists of 
 |  Climate City Local Support Group | A group of local public servants, experts and stakeholders all with expertise and responsibilities connected with climate neutrality | Suceava Municipality's Energy Manager | Representatives from municipality's departments, environment association, public institutions, local companies responsible for energy, heating, water and waste management /providers, citizens | Coordinate and provide technical support for the implementation of the Climate Action Plan | Stronger local commitment for climate neutral actions Adequate implementation of proposed actions  |
 |  Metropolitan Development Association - Transport | An association of two cities and 7 villages from metropolitan area with a designated objective of improve public transport condition and reach 100 % electric public transport in the area | The Association Chief Executive Group | Representatives from all 9 municipalities, local transport company, traffic police department, passenger's association and local traffic police | Implementation of projects for electric sustainable public transport, road infrastructure, traffic lights and traffic management with the final result of increase the number of PT passengers and reduce private cars journeys | Improve the quality of life in metropolitan area Reduce GHG emissions and traffic congestion Reduce traffic accidents Change behaviour and increase PT attractively  |
 |  Academic local and national partnership | Collaboration between public administration and several technical universities for research and innovation | Suceava City and University of Suceava | University from Cluj Napoca, Bucharest and other cities from Romania Private companies Research and | Development, testing and implementation of different solution for smart and sustainable city | Facilitate the transfer of best practice solutions between cities and academic sector  |
-Climate Neutrality Action Plan
-
-2
-
 |   | activities in order to find solutions for city challenges and implement pilot innovative projects |  | technical experts Students |  | Facilitate the implementation of the research studies Development of research and innovation skills for young generation  |
 | --- | --- | --- | --- | --- | --- |
 |  **Suceava Climate Pact** | Local association of public institutions, university and private companies engaged in climate transition activities and projects | Suceava City | Owners association Environmental Protection Agency Private companies | Design, implementation and evaluation of local initiatives, actions, policies and projects focussed on climate transition | Increase the number of local initiatives Improve cooperation between different sectors of activity Improve the quality of life.  |
@@ -2216,10 +2097,6 @@ Climate Neutrality Action Plan
 |  **Suceava ride** | Workplaces and facilities for developing the cycling-friendly concept into Suceava City | Suceava City | Association of cyclists, NGOs, businesses , citizens, local authorities, educational units | Promote alternative way of traveling – cycling in order to reduce private car usage and traffic emissions | Increase the numbers of cyclists Develop the cycling facilities (lanes) Implementation of « bike sharing « pilot project  |
 |  **Centre for Innovation and Civic Imagination (CIIC)** | Suceava city opened in 2023 the Centre for Innovation and Civic Imagination (CIIC) with activities related to communication between local public administration and citizens. This structure will be updated and will provide information, support, technical expertise and communication channels related also to climate neutrality. Local, national and European events will be promoted trough this new upgraded facility, interaction between citizens, students, young generation experts, businesses and NGOs will be facilitated. | Suceava City | Citizens mainly, University experts and representatives from public and private companies | The intervention is meant to stimulate and encourage civic engagement and innovation, increase support and participation to all actions that will allow to achieve climate neutrality | Stronger local support for city’s actions Improve quality of life into the city Integrated and coordinated efforts, which could enable higher GHG reduction Improved communication n between all stakeholders and local authorities Increased of Innovation activities Transfer the best practice experience and know how  |
 |  **NetZero Caravan** | Specific initiatives, activities and events that involves citizens, experts and city representatives will be organized in public places | Suceava City and Suceava University | Citizens , local stakeholders, NGOs | Encourage and engages citizens to work and live in sustainable and environmentally friendly ways | Improve quality of life into the city. Improved communication between all stakeholders. Increase the number  |
-Climate Neutrality Action Plan
-
-#
-
 |   |  |  |  |  | of citizens trained and aware of climate neutrality actions and concepts.  |
 | --- | --- | --- | --- | --- | --- |
 |  C-2.2: Description of social innovation interventions – textual and visual elements  |   |   |   |   |   |
@@ -2277,12 +2154,6 @@ C-3.1: Summary of interventions with cost implication (to be unpacked in Investm
 |  Rehabilitation of the waste water collectors, sewage networks and rehabilitation and upgrading of Suceava waste water treatment plant | Municipality of Suceava, Regional Water and Sewage Operator | 2024-2029 | Waste and circular economy | 1.680 t CO2 / year | 12.000.000 Euro  |
 |  Development of new green areas and planting green curtains(major roads area) | Municipality of Suceava, The Order of Romanian Architects | 2023-2030 | Green infrastructure & nature based solutions | 281 t CO2 / year | 35.217.000 Euro  |
 |  Increase energy efficiency of residential buildings to reduce GHG emissions and increase the quality of life for residents (including HEMS) | Municipality of Suceava, The Order of Romanian Architects , Owners Associations | 2023-2030 | Built environment | 31.112 t CO2 / year | 80.000.000 Euro  |
-
-9
-Climate Neutrality Action Plan
-
-#
-
 |  Modernization of public institutions buildings through refurbishment and increased energy efficiency | Municipality of Suceava | 2023-2030 | Built environment | 7.230 t CO2 / year | 22.190.000 Euro  |
 | --- | --- | --- | --- | --- | --- |
 |  Improved local urban regulations and policies for achieving climate neutrality | Stakeholders from the local NZC action working group | 2023-2030 | Soft intervention | 48.351 t CO2 / year | 25.000.000 Euro  |
@@ -3163,7 +3034,7 @@ Covenant of Mayors
 |  Route no. | Last station | Kilometers | Bus route  |
 | --- | --- | --- | --- |
 |  Line 5 | IȚCANI NORTH STATION - OBCINI neighborhood via HOSPITAL | 18,6 | Orizont - Market - Torino - Warehouse - Neuro Hospital - Cinema
-Gara Ițcani - Pedway - Străduința - Betty Ice - Petrom - TPL - Sticlă - „Petru Mușat” College - Center - Bank - Polyclinic - County Hospital - Metro - Corduș - IRE Block - Grocery shop - School no.9 - Obcini Flori - Mobilă - Curcubeu - Nordic - Cathedral - Polyclinic - Bank - Center - „Petru Mușat” College - Sticlă - TPL - Petrom - Selgros - Străduința - Pedway - Ițcani Train Station  |
+| Gara Ițcani - Pedway - Străduința - Betty Ice - Petrom - TPL - Sticlă - „Petru Mușat” College - Center - Bank - Polyclinic - County Hospital - Metro - Corduș - IRE Block - Grocery shop - School no.9 - Obcini Flori - Mobilă - Curcubeu - Nordic - Cathedral - Polyclinic - Bank - Center - „Petru Mușat” College - Sticlă - TPL - Petrom - Selgros - Străduința - Pedway - Ițcani Train Station  |
 |  Line 7 | CENTER - FORTRESS OF SUCEAVA and return | 5,5 | Center - Power Plant - Pacea Cemetery - Fortress of Suceava - Pacea Cemetery - "Sf. Ioan" Monastery - Center  |
 |  Line 15 | EUGEN DOBRILĂ STREET - GROPI - ORIZONT - BURDUJENI VILLAGE "ȘPAC" | 18,4 | Eugen Dobrilă Street - Gropi - Burdujeni Village "Șpac" - General School No. 6 - Tabita - Cpt. Grigore Andrei Street - Cpt. Grigore Andrei Street - Electric Bus Base - Cpt. Grigore Andrei Street - Cinema - Burdujeni Town Hall - Orizont - I.R.I.C. - Carrefour - Bazar - Sports Hall - Vocational School - Centru - Casa Cărții - Bus Terminal - Sf. Dumitru Church - Vocational School - Sports Hall - Bazar - Carrefour - CFR Pedway - Orizont - Burdujeni Town Hall - Cpt. Grigore Andrei Street - Cpt. Grigore Andrei Street - Electric Bus Base - Cpt. Grigore Andrei Street- Tabita - General School No. 6 -  |
 
@@ -3202,7 +3073,7 @@ Covenant of Mayors
 |  Route no. | Last station | Kilometers | Bus route  |
 | --- | --- | --- | --- |
 |  Line 22 | BURDUJENI VIL LAGE - ORIZONT - POD DE PIATRA | 19,9 | Burdujeni Village “Șpac” - Vasile Pârvan Street - Lev Tolstoi Street - Pod De Piatra - Tibeco - Neuropsychiatric Hospital - Depozit De Ouă - Tinereții end of line - Constantin Sofroni Street - Torino - Burdujeni Market - Orizont - I.R.I.C. - Carrefour - Bazar
-Sports Hall - Vocational School - Center 1 - Center 2 - Vocational School - Sports Hall - Bazar - Carrefour - Orizont - Burdujeni Market - Tinereții Neighborhood end of line - Constantin Sofroni Street - Torino - Depozit De Ouă - Neuropsychiatric Hospital - Tibeco - Pod De Piatra - Lev Tolstoi Street - Vasile Pârvan Street - Burdujeni Village “Șpac”  |
+| Sports Hall - Vocational School - Center 1 - Center 2 - Vocational School - Sports Hall - Bazar - Carrefour - Orizont - Burdujeni Market - Tinereții Neighborhood end of line - Constantin Sofroni Street - Torino - Depozit De Ouă - Neuropsychiatric Hospital - Tibeco - Pod De Piatra - Lev Tolstoi Street - Vasile Pârvan Street - Burdujeni Village “Șpac”  |
 |  Line 23 | GHEORGHE COZORICI (LANISTE) - ORIZONT | 10,7 | Gheorghe Cozorici (Laniste) - Traian Popovici (Laniste) - Owners Association 31 (Eroilor) - Torino - Burdujeni Market - Orizont - I.R.I.C. - Carrefour - Bazar - Sports Hall - Vocational School - Center - Center - Vocational School - Sports Hall - Bazar
 Carrefour - Orizont - Burdujeni Market - Gheorghe Cozorici (Laniste)  |
 
@@ -3780,7 +3651,7 @@ Suceava Municipality Sustainable Energy and Climate Action Plan
 Covenant of Mayors
 
 |  Number of justified claims about service provision | 756 / year
-(recorded on the basis of telephone calls and written complaints, registered at the ACET SA Suceava Dispatch Office)  |
+| (recorded on the basis of telephone calls and written complaints, registered at the ACET SA Suceava Dispatch Office)  |
 | --- | --- |
 |  Number of outages in the water supply system | 394 / year  |
 |  Average / minimum duration, in which the reported faults are remedied | average is 6 hours  |
@@ -3830,7 +3701,7 @@ From the presented data it is observed that, at the level of Suceava municipalit
 The lengths of the sewerage network, both the existing ones and the ones planned to be completed by the end of 2020 at the level of Suceava municipality are presented in the table below:
 
 |  Reference year
-Total network length | 2010 | 2010 | 2015 | 2020  |
+| Total network length | 2010 | 2010 | 2015 | 2020  |
 | --- | --- | --- | --- | --- |
 |  Sewerage systems existing in 2000: | 186 668 |  |  |   |
 |  Extended sewer network length in the period 2000-2010:

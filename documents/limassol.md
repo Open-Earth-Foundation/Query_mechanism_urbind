@@ -1227,10 +1227,10 @@ Climate Neutrality Action Plan
 2
 
 |  Regular Review Meetings
-Continuous Improvement | Identify areas that need improvement / adjustments to the plan / corrective actions.  |
+| Continuous Improvement | Identify areas that need improvement / adjustments to the plan / corrective actions.  |
 | --- | --- |
 |  KPI Ownership
-Capacity building | Assign each KPI to specific individuals or teams (accountability). Train people (importance of KPIs, data collection etc).  |
+| Capacity building | Assign each KPI to specific individuals or teams (accountability). Train people (importance of KPIs, data collection etc).  |
 |  Document the Plan | Document the entire KPI management plan. Deliverable (open access) available to all relevant stakeholders.  |
 |  Review and Adjust | Annually review the KPI management plan. Adjust KPIs and targets as necessary.  |
 |  Celebrate Success | Celebrate achievements and milestones. Recognition and motivation.  |
@@ -2774,8 +2774,7 @@ Climate Neutrality Action Plan
 7
 
 |  Indirect impacts (co-benefits) | Governance resource efficiency: Simplifying and expediting the permitting and approval processes for all energy projects. This can be achieved by creating dedicated review teams, implementing online application systems, and providing clear guidelines to ensure a smooth and efficient process. This in turn will reduce the demand for dedicated staff on these actions and increase processing speed and efficiency.
-
-Opportunity for municipality to become a DSO/Provider: Generating and storing energy in centralised locations (not necessarily within the city boundaries, see action 6 description) will necessitate the city itself to become a DSO and producer to obtain the right to count the energy it produces as its own. This is a novel approach for Cyprus at any level.  |
+| Opportunity for municipality to become a DSO/Provider: Generating and storing energy in centralised locations (not necessarily within the city boundaries, see action 6 description) will necessitate the city itself to become a DSO and producer to obtain the right to count the energy it produces as its own. This is a novel approach for Cyprus at any level.  |
 | --- | --- |
 |  Social innovation  |   |
 |  Early changes (1-2 years) | New skills and capacities at prosumer level: The energy interventions proposed will turn energy consumers to energy prosumers – the first step towards assumption of ownership of production means.  |
@@ -2804,7 +2803,7 @@ Climate Neutrality Action Plan
 | --- | --- |
 |  Direct impacts (Emission reductions |   |
 |  Indirect impacts (co-benefits) | **Opportunity for energy trade among members, including P2P:** The energy community action will allow novel modalities of energy and financial exchange between members, including on Peer-to-Peer platforms.
-**Local Job creation:** The actions will demand resources in technicians, planners, engineers and labourers among others at a very large scale. Most of these jobs will require a large degree of local sourcing, increasing the employment prospects (and demands) for Lemesos.  |
+| **Local Job creation:** The actions will demand resources in technicians, planners, engineers and labourers among others at a very large scale. Most of these jobs will require a large degree of local sourcing, increasing the employment prospects (and demands) for Lemesos.  |
 |  Finance/Funding  |   |
 |  Early changes (1-2 years) | **New opportunities for private investors:** The sheer size of the actions proposed will mean a diverse mix of financing sources, the bulk of which will come from private sources, either private individuals or commercial entities.  |
 |  Late outcomes (3-4 years) | **New ‘microfinancing’ schemes:** Financing schemes targeting small interventions at the local level will allow for faster adoption of energy solutions.
@@ -2847,9 +2846,9 @@ Starting pilot projects to test design methodologies, construction practices, mo
 Urban Heat and Pollution Islands Mitigation:
 Deep renovations will address urban heat island effects by incorporating strategies such as green roofs, cool pavements, and urban greening. These measures will mitigate the urban heat island effect, reduce energy consumption for cooling, and improve local microclimates. The result will be a more comfortable and sustainable urban environment for residents and visitors alike.  |
 |  Direct impacts (Emission reductions | Reduced GHG emissions:
-By implementing this action will contribute to a substantial reduction in greenhouse gas emissions. The upgraded building stock will consume less fossil fuel-based energy, resulting in lower carbon dioxide and other greenhouse gas emissions. This will support local and national climate change mitigation efforts, helping Limassol achieve its emission reduction targets.  |
+| By implementing this action will contribute to a substantial reduction in greenhouse gas emissions. The upgraded building stock will consume less fossil fuel-based energy, resulting in lower carbon dioxide and other greenhouse gas emissions. This will support local and national climate change mitigation efforts, helping Limassol achieve its emission reduction targets.  |
 |  Indirect impacts (co-benefits) | Improved air quality:
-Deep renovation of the building stock can improve air quality by reducing emissions from buildings and their systems. This can have a positive impact on public health and the environment.  |
+| Deep renovation of the building stock can improve air quality by reducing emissions from buildings and their systems. This can have a positive impact on public health and the environment.  |
 |  Governance/Policy  |   |
 |  Early changes (1-2 years) | Land use protection:
 A policy framework on land use can promote urban micro-forestation and densification by incentivizing the incorporation of green spaces and trees in urban areas. This can include requirements for minimum tree coverage, incentives for developers to integrate green spaces, and zoning regulations that prioritize mixed-use developments and compact urban designs. By combining micro-forestation with densification efforts, cities can enhance biodiversity, improve air quality, mitigate urban heat island effects, and create more vibrant and sustainable urban environments.
@@ -2916,8 +2915,7 @@ Plan
 #
 
 |   | Promoting informative campaign for citizens to provide information on motivations, purposes, scope of the action and on related technological infrastructures and components, policies financial subsidies, behavioural change.
-
-Demonstration Projects and Pilots: Implementing demonstration projects and pilots to showcase the feasibility and benefits of deep renovation. These projects serve as real-world examples that illustrate the successful integration of energy-efficient technologies, renewable energy systems, and sustainable building practices. Demonstration projects also provide valuable insights and data to inform decision-making, evaluate performance, and refine approaches for future deep renovation initiatives.  |
+| Demonstration Projects and Pilots: Implementing demonstration projects and pilots to showcase the feasibility and benefits of deep renovation. These projects serve as real-world examples that illustrate the successful integration of energy-efficient technologies, renewable energy systems, and sustainable building practices. Demonstration projects also provide valuable insights and data to inform decision-making, evaluate performance, and refine approaches for future deep renovation initiatives.  |
 | --- | --- |
 |  Late outcomes (3-4 years) | Continuous monitoring and evaluation:
 Establishing continuous monitoring and evaluation mechanisms to assess the performance and impact of deep renovation projects. This includes tracking energy savings, greenhouse gas emissions reductions, cost-effectiveness, occupant satisfaction, and overall sustainability outcomes.
@@ -2929,7 +2927,7 @@ Future citizens:
 Establishing programs to inform, communicate and involve the future citizens (youth) in the city regeneration process in primary and secondary schools  |
 |  Direct impacts (Emission reductions |   |
 |  Indirect impacts (co-benefits) | Increased number of skilled jobs & rate of employment:
-Deep renovation initiatives generate employment opportunities and stimulate local economic growth. The extensive retrofit projects require skilled labour in construction, engineering, architecture, and energy services. These jobs can provide stable employment for the local workforce and attract investment in the Carbon-neutral building sector. Furthermore, the renovation activities spur demand for building materials, equipment, and related services, supporting local businesses.  |
+| Deep renovation initiatives generate employment opportunities and stimulate local economic growth. The extensive retrofit projects require skilled labour in construction, engineering, architecture, and energy services. These jobs can provide stable employment for the local workforce and attract investment in the Carbon-neutral building sector. Furthermore, the renovation activities spur demand for building materials, equipment, and related services, supporting local businesses.  |
 |  Digitalisation  |   |
 |  Early changes (1-2 years) | Increased number of skilled jobs & rate of employment:
 Deep renovation initiatives generate employment opportunities and stimulate local economic growth. The extensive retrofit projects require skilled labour in construction, engineering, architecture, and energy services. These jobs can provide stable employment for the local workforce and attract investment in the Carbon-neutral building sector. Furthermore, the renovation activities spur demand for building materials, equipment, and related services, supporting local businesses.
@@ -2957,7 +2955,7 @@ Climate Neutrality Action Plan
 6
 
 |   | Local electricity storage capacity.
-By integrating energy storage systems within new carbon-neutral buildings, excess renewable energy can be stored and utilized during high-demand periods, reducing reliance on the grid and promoting renewable energy self-sufficiency. This helps optimize energy usage, increase resilience, and accelerate the transition towards carbon-neutral buildings.  |
+| By integrating energy storage systems within new carbon-neutral buildings, excess renewable energy can be stored and utilized during high-demand periods, reducing reliance on the grid and promoting renewable energy self-sufficiency. This helps optimize energy usage, increase resilience, and accelerate the transition towards carbon-neutral buildings.  |
 | --- | --- |
 |  Late outcomes (3-4 years) | Seamless integration of green and blue solutions:
 The design and construction of a new building is a unique case of use of resources and energy that must be accurately assessed, judged and conducted. It has to offer a contribution to the city in dealing with the current and future environmental challenges therefore, both adaptation and mitigation strategies have to be considered to tackle the climate-exacerbated impacts affecting Limassol like extreme heat, dust and air pollution, water scarcity, flooding, sea level rise, trough seamlessly integrating green and blue solutions.
@@ -3021,7 +3019,7 @@ Green and carbon-neutral buildings can incorporate urban farming initiatives, su
 **Collaborative construction projects:** Socially innovative construction projects involve collaboration between developers, community organizations, and local residents. These initiatives engage community members in the construction process, providing job training, skills development, and employment opportunities, while also incorporating sustainable and energy-efficient building practices
 **Socially responsible real estate development:** Promoting investments in carbon-neutral buildings that provide community benefits such as affordable housing, green spaces, and community facilities, ensuring the well-being of residents and contributing to the overall social fabric of the neighbourhood  |
 |  **Direct impacts**
-(Emission reductions |   |
+| (Emission reductions |   |
 |  **Indirect impacts**
 (co-benefits) | **Increased resilience to climate change:**
 Deep renovation of the building stock can make buildings more resilient to climate change by making them more resistant to extreme weather events, such as heat waves, floods, and droughts. This can help to protect property owners and the city from the negative impacts of climate change.
@@ -3214,7 +3212,7 @@ Mobilizing increased financial resources for MSW management. This involves lever
 **Risk mitigation strategies:**
 Developing risk mitigation strategies to address financial uncertainties and risks associated with sustainable solid waste management.  |
 |  Direct impacts (Emission reductions) | **Electricity production:**
-Producing electricity from waste supports reducing the cost for electricity at the household and municipality levels and has positive impact to GHG emissions mitigation.  |
+| Producing electricity from waste supports reducing the cost for electricity at the household and municipality levels and has positive impact to GHG emissions mitigation.  |
 |  Indirect impacts (co-benefits) | **Improved access to information, awareness & behaviour change:**
 Empowers individuals and communities to make informed choices (e.g., responsible consumption, and active participation in sustainability efforts). Transition to green and sustainable society (green jobs, reduction of health care costs).
 
@@ -3247,16 +3245,16 @@ Future citizens:
 Establishing programs to inform, communicate and involve the future citizens (youth) in the city sustainability model, in primary and secondary schools  |
 | --- | --- |
 |  Direct impacts (Emission reductions | Education/train/learn/MEL:
-Training towards sustainable MSW and circular economy leads to implementation and upscaling of the pilot projects for MSW sustainable management and circular economy, which effectively leads to GHG emissions mitigation.  |
+| Training towards sustainable MSW and circular economy leads to implementation and upscaling of the pilot projects for MSW sustainable management and circular economy, which effectively leads to GHG emissions mitigation.  |
 |  Indirect impacts (co-benefits) | Increased number of skilled jobs & rate of employment:
-Zero Waste and Circular Economy stimulate local economic growth. These approaches yield interventions and projects that require skilled labour in green economy, engineering, environment and energy. These jobs can provide stable employment for the local workforce and attract investment in the Carbon-neutral concept of the NZC. Furthermore, circular economy activities spur demand for materials, equipment, and related services, supporting local businesses which need to adjust their role towards NZC concepts.  |
+| Zero Waste and Circular Economy stimulate local economic growth. These approaches yield interventions and projects that require skilled labour in green economy, engineering, environment and energy. These jobs can provide stable employment for the local workforce and attract investment in the Carbon-neutral concept of the NZC. Furthermore, circular economy activities spur demand for materials, equipment, and related services, supporting local businesses which need to adjust their role towards NZC concepts.  |
 |  Digitalisation  |   |
 |  Early changes (1-2 years) | Digital platform:
-Developing a city-wide digital platform to integrate waste management digital twins. This also requires smart monitoring of waste production rates and waste composition.  |
+| Developing a city-wide digital platform to integrate waste management digital twins. This also requires smart monitoring of waste production rates and waste composition.  |
 |  Late outcomes (3-4 years) | Digitalisation of the waste management system:
-Documentation of all waste streams (e.g., organic, PMD, metals, green), locations and handling processes (e.g., anaerobic digestion, storage, bulk, batteries, cooking oils, toxic etc).  |
+| Documentation of all waste streams (e.g., organic, PMD, metals, green), locations and handling processes (e.g., anaerobic digestion, storage, bulk, batteries, cooking oils, toxic etc).  |
 |  Direct impacts (Emission reductions) | Waste streams:
-Waste streams generation and treatment yield GHG emissions. Close monitoring reveals opportunities for waste reduction and efficient collection/treatment. This supports GHG emissions mitigation.  |
+| Waste streams generation and treatment yield GHG emissions. Close monitoring reveals opportunities for waste reduction and efficient collection/treatment. This supports GHG emissions mitigation.  |
 |  Indirect impacts (co-benefits) | Efficient management: Increased efficiency in waste management and opportunity of testing different management scenarios and plans.
 Increased resilience to climate change:
 Deep knowledge on complex systems such as the waste management system can increase resilience to climate change.
@@ -3676,7 +3674,7 @@ Climate Neutrality Action Plan
 5
 
 |   |  | in buildings. These units can replace boilers or other conventional technologies and reduce carbon emissions significantly.
-This action proposes the installation of a hybrid RES system that consists of a large PV and wind park, coupled with Long-Term Energy Storage (LDES). The primary goal of this action is to satisfy the increased demand in electricity that arises from actions taken for Lemesos Mission, including elevated demand for EVs and heat pumps.  |
+| This action proposes the installation of a hybrid RES system that consists of a large PV and wind park, coupled with Long-Term Energy Storage (LDES). The primary goal of this action is to satisfy the increased demand in electricity that arises from actions taken for Lemesos Mission, including elevated demand for EVs and heat pumps.  |
 | --- | --- | --- |
 |  Built Environment | **Deep building renovation Actions**  |   |
 |   |  Increasing the building refurbishment rate through a large-scale retrofitting program | The existing building stock is responsible for a substantial share of GHG emissions. Therefore, it is paramount to stimulate its deep renovation by establishing a large-scale retrofitting programme built on financial instruments designed to support urban rehabilitation and revitalisation. To achieve the NZC target, a yearly renovation rate of 35% is needed.  |
@@ -3804,8 +3802,6 @@ O
 |   |  2.2. Desing a “circular economy” facility | The implementation of the actions and activities related to sustainable waste management will lead to a detailed inventory of the amounts produced for the various waste streams. Currently, recyclable material collection is low in Lemesos (and Cyprus) in comparison to other EU areas. In addition, recyclable material is not processed in Cyprus but transferred to other countries, where facilities exist. The Mission will start the process of designing a facility for recycling (e.g., plastic, paper). During the first 3 years (2024-2027) feasibility studies will be conducted, policy and funding instruments will be explored. This task contributes to the reduction of Scope 3 emissions (e.g., global transportation) but it is important towards circular economy and green jobs creation in Lemesos and Cyprus.  |
 |   |  2.3. MEL for circular economy in Lemesos | Monitoring waste production, environmental benefits vs impacts, education and learning KPIs. This is essential for the implementation of actions and activities.  |
 |  2.4. Networking and expertise transfer (national and international) | Networking with stakeholders (national and international) and experience transfer locally, nationally and internationally (training, story telling) will be implemented regarding the work on sustainable solid waste management.  |   |
-3
-
 |  **Coastal and Sea** | 1. Cold Ironing Implementation in Limassol Port
 Carbon Neutrality in Blue Infrastructure- The case of Limassol Marina
 Mitigation of Risks to the COastal Area through Technology Tools & Integrated Data Management
@@ -3892,8 +3888,7 @@ Climate Neutrality Action Plan
 8
 
 |   |  | within the municipality and will lead to a reduction of electricity requirements from the grid.
-
-A detailed business model will be drafted at a later stage, describing all related financial and operational aspects. The business model and the structure of the community needs to be decided by its members in a participatory manner, following the local legislative and regulatory framework. The most common business model for an energy community is the one of an energy cooperative, in which generation technologies belong to the community. In this model the energy community can install a “centralised” photovoltaics park, which will serve the needs of its members.  |
+| A detailed business model will be drafted at a later stage, describing all related financial and operational aspects. The business model and the structure of the community needs to be decided by its members in a participatory manner, following the local legislative and regulatory framework. The most common business model for an energy community is the one of an energy cooperative, in which generation technologies belong to the community. In this model the energy community can install a “centralised” photovoltaics park, which will serve the needs of its members.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Energy  |
 |   | Systemic lever | Technology/infrastructure; Governance/policy; Social innovation; Democracy/participation; Financing; Learning and new capabilities  |
@@ -3936,11 +3931,9 @@ LIMSSOL2030
 |  Action outline | Action name | Fresnel system  |
 |   |  Action type | Infrastructure  |
 |   |  Action description | Fresnel systems utilise solar thermal energy and can provide heat at low and mid temperatures (in the 140-350°C range). They can therefore become an alternative option for supplying clean energy to commercial and industrial facilities by augmenting (or even replacing) process heat processes.
-This action aims to promote the installation of 1MWth of Fresnel systems at industrial facilities to provide thermal energy. The advantage of thermal systems for such uses is the direct heat replacement (in some cases), the modularity and the ability to install them on existing roofs. In addition, the system can provide 2 hours of storage.  |
+| This action aims to promote the installation of 1MWth of Fresnel systems at industrial facilities to provide thermal energy. The advantage of thermal systems for such uses is the direct heat replacement (in some cases), the modularity and the ability to install them on existing roofs. In addition, the system can provide 2 hours of storage.  |
 |  Reference to impact pathway | Field of action | Energy  |
 |   |  Systemic lever | Technology/infrastructure; Financing; Learning and new capabilities  |
-Climate Neutrality Action Plan
-
 |   | Outcome (according to module B-1.1) | Early: RES capacity; Regulatory Framework; Prosumer Skills. Later: Market integration, Digitalisation, Technology Transfer  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Local SMEs, overseas tech providers, local expert engineers/scientists for initial system design and cost estimation  |
@@ -3968,7 +3961,7 @@ LIMSSOL2030
 |   | Removed/substituted energy, volume or fuel type | Fresnel systems are more suitable for direct replacement of heat produced by fossil fuels, while electric loads are better served by Heat Pumps³. Here an assumption is made that this heat would be produced by burning diesel.  |
 | --- | --- | --- |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Assuming an emissions factor equal to 0.267 tCO2/MWh for the combustion of diesel, substituting this will result in reductions of 468 tCO2
-This will lead to a reduction of 0.07% of city's emissions.  |
+| This will lead to a reduction of 0.07% of city's emissions.  |
 |   |  Total costs and costs by CO2e unit | CAPEX 2,500 €/kWth
 Feasibility studies, permitting,
 EIAs 100 €/kWth
@@ -4019,7 +4012,7 @@ Scalability:
 |  Impact & cost | Generated renewable energy (if applicable) | It is estimated that approximately 64,824 MWh/a will be generated from the REC.  |
 |   | Removed/substituted energy, volume or fuel type | Approximately 64,824 MWh/a of electricity delivered by the national grid will be substituted with local clean electricity.  |
 |   | GHG emissions reduction estimate (total) per emission source sector | The units will generate 64,824 MWh/a which can be subtracted from the energy consumed by the national grid and lead to a reduction of 56,656 tCO2
-This will result to a reduction of approximately 8.9% of the total city's emissions.  |
+| This will result to a reduction of approximately 8.9% of the total city's emissions.  |
 |   | Total costs and costs by CO2e unit | PV CAPEX 1,079 €/kWp
 Battery CAPEX 420 €/kWh
 Feasibility studies, permitting, EIAs 100 €/kWp
@@ -4060,8 +4053,6 @@ O
 |   |  Comments on implementation | The procurement and installation of this amount of heat pumps would be a major challenge for several reasons, such as availability of materials and availability of technicians. Moreover, heat pumps have a significant high capital cost. Timeline: • 2024 – 2030: Installation of approximately 220 units each year, in addition to what's prescribed by the NECP. Scalability: • Minimum size: 30 kW • Minimum cost: €30k • Maximum size: 58 MW • Maximum cost: €58.6m Barriers The replacement of existing diesel burners with heat pumps in existing buildings is a challenge for blocks of flats who need a collective decision for such significant investments. Also, the availability of skilled technicians to carry out all these projects comes with question marks. There is also a question on the ability of the grid to absorb the extra demand, esp. at times with low RES generation such as evening hours and at winter time.  |
 |  Impact & cost | Generated renewable energy (if applicable) | Heat pumps do not directly generate renewable energy but are efficient converters of ambient energy to either heating or cooling using electricity. In the scenario examined for this report they are estimated to generate 10,800 MWh of heating and 19,200 MWh of cooling each year. Despite the fact that replacing older stock of inefficient A/C split units in existing buildings will be a realistic method to reduce energy demand, this action focusses on replacement of fossil fuel-fired heating systems only.  |
 |   |  Removed/substituted energy, volume or fuel type | It is estimated that the heating requirement will be lowered by around 25,200 MWh of energy.  |
-Climate Neutrality Action Plan
-
 |   | GHG emissions reduction estimate (total) per emission source sector | The action will lead to a net reduction of 8,121 tCO2, which translates to 1.28% of the total city's emissions  |
 | --- | --- | --- |
 |   | Total costs and costs by CO2e unit | Case (1) Residential heat pumps:
@@ -4361,7 +4352,7 @@ Climate Neutrality Action Plan
 2
 
 |   |  | • LED luminaire technologies
-• Smart lighting  |
+| • Smart lighting  |
 | --- | --- | --- |
 |   |  Action description | This action involves the improvement and development of public areas, parks, and recreational spaces within the city. It focuses on creating inviting, accessible, and multifunctional spaces that promote community engagement, well-being, and environmental sustainability. It may involve the addition of amenities such as seating areas, walking paths, playgrounds, sports facilities, and landscaping elements. Enhancing open spaces aims to provide opportunities for social interaction, physical activity, and relaxation, while also fostering a connection with nature. These spaces contribute to the overall liveability of cities, improve air quality, support biodiversity, and enhance the visual appeal of urban areas, creating vibrant and inclusive communities for residents and visitors alike.
 
@@ -4395,10 +4386,8 @@ O
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Limassol Municipality  |
 |   |  Action scale & addressed entities | Pilot interventions start in 2024 for test and demonstration before large-scale implementation. They will: A) identify green corridors (urban canyons driving perpendicular to the coastline) and increase greening, avoid blockages due to tall buildings, limit traffic density, create open seafront promenades for enhancing breezes from and to the sea. B) the Municipality of Limassol has about 360 green spots from large parks to small pocket parks plus there are a few abandoned open spaces. A green network will be designed to connect those green spots to the green corridors enhancing and expanding the systems of cycle walkable paths. C) regenerate all public parking and establish rules for the renovation of the private parking but for public use in order to (1) plant trees covering at least 50% (assuming full established foliage of the ground surface, (2) at least 40% of the ground surface as to be permeable, and (3) cool asphalt or material with similar solar reflectance (≥65%) shall be used for the lines. D) Within the pilot areas referred to above, public squares will be regenerated by resurfacing them with cool material, black asphalt will be removed and substituted with cool asphalts. After monitoring, evaluating and learning from the pilot actions refined measure will be extended to the entire municipality.  |
-Climate Neutrality Action Plan
-
 |   |  | The maps of the pilot areas (30 km/h zone, carenaggio district) as well as a map of the green urban network with green corridors are included in section B1.2
-After the implementation, monitoring, evaluation and learning processes, this action is expanded to the whole municipality.  |
+| After the implementation, monitoring, evaluation and learning processes, this action is expanded to the whole municipality.  |
 | --- | --- | --- |
 |   |  Involved stakeholders | • Ministry of Interior/Town planning Department
 • Ministry of Transport, Communications and Public Works/Public Works Departments
@@ -4519,12 +4508,12 @@ Climate Neutrality Action Plan
 |   |  | services); Learning and new capabilities (Data-driven decision making by evaluating impact of early changes)  |
 | --- | --- | --- |
 |   |  Outcome (according to module B-1.1) | Early: Construction of a section of cycle lanes; Provision of street trees; Regulatory framework for user incentives; Revise Local Plan to enhance bike-lanes and pedestrian networks ; Community engagement; Pilots for participatory planning (e.g., living lab); Provide subsidies to users to use micro-mobility services
-Later: Construction of additional cycle lanes; User incentives for bike-sharing use; Provide shared e-bikes (metaCAZZE project); Ease regulations for mobility providers such as micro-mobility providers ; Achieve behavioral change and cultural shift towards sustainable transportation (e.g., metaCAZZE project); Data-driven decision making by evaluating impact of early changes.  |
+| Later: Construction of additional cycle lanes; User incentives for bike-sharing use; Provide shared e-bikes (metaCAZZE project); Ease regulations for mobility providers such as micro-mobility providers ; Achieve behavioral change and cultural shift towards sustainable transportation (e.g., metaCAZZE project); Data-driven decision making by evaluating impact of early changes.  |
 |  Implementation | Responsible bodies/person for implementation | Limassol Municipality; Micro-mobility Operators; Ministry of Transport Communications and Works; Citizen's representatives (NGOs)  |
 |   |  Action scale & addressed entities | Municipality level; District level  |
 |   |  Involved stakeholders | Limassol Municipality; Micro-mobility Operators; Ministry of Transport Communications and Works; Citizen's representatives (NGOs)  |
 |   |  Comments on implementation | It is crucial to foster partnerships and engage all relevant parties to ensure a coordinated and cohesive approach. Collaboration enables the sharing of resources, expertise, and responsibilities, leading to effective implementation and long-term sustainability. One of the key challenges in implementing micro-mobility strategies is the need for adequate infrastructure. It is essential to invest in the development of dedicated bike lanes, safe cycling and charging stations for electric micro-mobility vehicles. Regular monitoring and evaluation of the action's implementation are essential to assess its effectiveness and make necessary adjustments. Establishing key performance indicators, collecting data on mode share, emissions reduction, infrastructure usage, and user feedback enables evidence-based decision-making.
-It is essential to revise local plan and streetscape manual to enhance bike lane network, ease regulations to be able to provide user incentives  |
+| It is essential to revise local plan and streetscape manual to enhance bike lane network, ease regulations to be able to provide user incentives  |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 |   |  Removed/substituted energy, volume or fuel type | Reduction of 14,736tCO2 by 2030 (8% reduction)  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Reduction of 14,736tCO2 for the emission source sector of transportation  |
@@ -4617,8 +4606,6 @@ Plan
 |  Implementation | Responsible bodies/person for implementation | Limassol Municipality; Freight Operators; Ministry of Transport Communications and Works; Ministry of Commerce, Energy and Industry; Cargo operators; Citizen's representatives (NGOs)  |
 |   |  Action scale & addressed entities | Municipality level; District level  |
 |   |  Involved stakeholders | Limassol Municipality; Freight Operators; Ministry of Transport Communications and Works; Ministry of Commerce, Energy and Industry; Cargo operators; Citizen's representatives (NGOs)  |
-Climate Neutrality Action Plan
-
 |   | Comments on implementation | Engage with relevant stakeholders, including freight carriers, logistics providers, manufacturers, and local authorities, to ensure their active involvement and support. Collaborative partnerships can help align interests, share best practices, and address barriers to implementation. Invest in the development of supportive infrastructure, such as dedicated freight lanes, loading zones, and intermodal terminals. Additionally, encourage the adoption of advanced technologies, such as telematics, automation, and data analytics, to optimize freight operations and improve overall efficiency. Regularly monitor and evaluate the implementation of strategies to assess their effectiveness in reducing emissions and achieving climate neutrality goals through KPIs. The action needs to take into consideration that the regulations pertaining to local incentives need to be revised and be more flexible.  |
 | --- | --- | --- |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
@@ -4632,28 +4619,20 @@ Total Costs: 35.45m EUR (Cost upfront and remaining cost: €3.5m + €31.95m)
 |  Action outline | Action name | Optimization of Transportation Demand (TDM Strategies)  |
 |   |  Action type | Infrastructure + Technology + Social Innovation  |
 |   |  Action description | This action will be implemented in the city of Limassol. The development of a transportation demand management plan for Climate neutral cities involves implementing a comprehensive strategy to optimize transportation systems and reduce carbon emissions. This action aims to create a sustainable and efficient mobility ecosystem by promoting alternative modes of transportation, encouraging carpooling and ridesharing, improving public transit infrastructure, and implementing smart technology solutions. The plan includes measures such as congestion pricing, parking  |
-
-7
-Climate Neutrality Action Plan
-
 |   |  | management, and incentives for sustainable travel options. By strategically managing transportation demand, the plan seeks to minimize the use of private vehicles, reduce traffic congestion, and ultimately achieve climate neutrality by significantly lowering greenhouse gas emissions associated with transportation activities.
-The action includes the construction of 5 park and ride locations, the installation of 5 mobility hubs in strategic locations within Limassol Municipality and the design and operation of a platform that controls TDM strategies.  |
+| The action includes the construction of 5 park and ride locations, the installation of 5 mobility hubs in strategic locations within Limassol Municipality and the design and operation of a platform that controls TDM strategies.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Mobility & Transportation  |
 |   | Systemic lever | Technology/infrastructure (Construction of park and ride locations; Construction of mobility hubs);
-Governance/policy (Integrate transportation planning with land use ; Ease bureaucracy motions to ensure efficiency of TDM measures); Social innovation (Limassol is a leading living lab (metaCAZZE project); Democracy/participation (Ensure user-centric service improvements; Empower local communities through capacity building initiatives of living lab); Financing (Revenue generation strategies derived from TDM policies that fund sustainable transportation initiatives); Learning and new capabilities (Data-driven decision making by evaluating impact of early changes)  |
+| Governance/policy (Integrate transportation planning with land use ; Ease bureaucracy motions to ensure efficiency of TDM measures); Social innovation (Limassol is a leading living lab (metaCAZZE project); Democracy/participation (Ensure user-centric service improvements; Empower local communities through capacity building initiatives of living lab); Financing (Revenue generation strategies derived from TDM policies that fund sustainable transportation initiatives); Learning and new capabilities (Data-driven decision making by evaluating impact of early changes)  |
 |   | Outcome (according to module B-1.1) | Early: Construction of park and ride locations; Integrate transportation planning with land use ; Limassol is a leading living lab (metaCAZZE project) ; Ensure user-centric service improvements
-Later: Construction of mobility hubs; Ease bureaucracy motions to ensure efficiency of TDM measures ; Empower local communities through capacity building initiatives of living lab; Revenue generation strategies derived from TDM policies that fund sustainable transportation initiatives; Data-driven decision making by evaluating impact of early changes  |
+| Later: Construction of mobility hubs; Ease bureaucracy motions to ensure efficiency of TDM measures ; Empower local communities through capacity building initiatives of living lab; Revenue generation strategies derived from TDM policies that fund sustainable transportation initiatives; Data-driven decision making by evaluating impact of early changes  |
 |  Implementation | Responsible bodies/person for implementation | Limassol Municipality; Ministry of Transport Communications and Works; Department of Town Planning and Housing; Citizen's representatives (NGOs)  |
 |   | Action scale & addressed entities | Municipality level; District level; National level  |
 |   | Involved stakeholders | Limassol Municipality; Ministry of Transport Communications and Works; Department of Town Planning and Housing; Citizen's representatives (NGOs)  |
 |   | Comments on implementation | Effective implementation requires supportive governance structures and policies that encourage sustainable transportation practices. Regular monitoring and evaluation are essential to assess the effectiveness of the transportation demand management plan. Metrics such as modal shift, vehicle kilometers traveled, greenhouse gas emissions, and public perception can help track progress, identify challenges, and make necessary adjustments to optimize outcomes. Implementation should be viewed as an iterative process, with ongoing evaluation, feedback mechanisms, and opportunities for improvement. Regular review of the plan's performance and incorporation of new technologies and  |
-
-8
-Climate Neutrality Action Plan
-
 |   |  | innovative approaches ensure that the transportation demand management strategies remain relevant and effective over time.
-The action needs to consider legislative changes regarding potential conflicts with existing legislation on the implementation of TDM strategies  |
+| The action needs to consider legislative changes regarding potential conflicts with existing legislation on the implementation of TDM strategies  |
 | --- | --- | --- |
 |   | Generated renewable energy (if applicable) | -  |
 |   |  Removed/substituted energy, volume or fuel type | Reduction of 8,786tCO2 by 2030 (5% reduction)  |
@@ -4855,8 +4834,6 @@ Plan
 |  Reference impact pathway | Field of action | Coastal and Sea, energy  |
 |   |  Systemic lever | Technology/infrastructure. Governance/policy  |
 |   |  Outcome (according to module B-1.1) |   |
-Climate Neutrality Action Plan
-
 |  Implementation | Responsible bodies/person for implementation | This has to be the municipality or other relevant authorities, not taking in consideration who may do this  |
 | --- | --- | --- |
 |   |  Action scale & addressed entities | Implementation scope to be determined.  |
@@ -4949,15 +4926,13 @@ Plan
 |   |  Systemic lever | • Technology / infrastructure • Governance / policy • Social Innovation • Finance / funding • Learning / capabilities  |
 |   |  Outcome (according to module B-1.1) | Early: Maturity / Study period: Technology adoption; emissions monitoring, energy supply / demand model, financial resources identification Later: Carbon Neutrality, RES development; public awareness; compliance with Mission Cities activities  |
 |  Implementation | Responsible bodies/person for implementation | Phase A: • Frederick University (Research Organization) • Limassol Marina (Data provider, investor) • Marina Tenants and stakeholders (data providers, co-investors) • Cyprus Institute (energy communities model development) • Municipality of Limassol (main beneficiary) • Electricity Authority of Cyprus (data contributor, energy capacity expert, regulations) • External Experts (specific studies) • Associate Partners (financiers, co-investors, etc)  |
-Climate Neutrality Action Plan
-
 |   |  | • Media (awareness, social awareness)
 Phase B:
 • Limassol Marina (Data provider, investor)
 • Marina Tenants and stakeholders (data providers, co-investors)  |
 | --- | --- | --- |
 |   |  Action scale & addressed entities | Phase A: 24 months
-Phase B: 36 months  |
+| Phase B: 36 months  |
 |   |  Involved stakeholders | • Marinas and Yachting industry
 • Private organisations
 • Public bodies (governmental or not)
@@ -4966,7 +4941,7 @@ Phase B: 36 months  |
 |  Impact & cost | Generated renewable energy (if applicable) | It is estimated as 4.1 m. KWh on an annual basis  |
 |   |  Removed/substituted energy, volume or fuel type | 36% of the electricity needed is supplied by PVs. The total power to be installed is estimated at 2.3MW.  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Core target of the project is the development of the Carbon Index (value 100, basis year 2022), The RES investments will deliver an average reduction in critical emissions (CO₂, SOx, NOx, PM) at least by 70%-80%
-,770 t CO2e/yr  |
+| ,770 t CO2e/yr  |
 |   |  Total costs and costs by CO2e unit | Total action cost:
 Phase A: 300k€
 A.1 Measuring and monitoring the emissions:
@@ -4989,10 +4964,6 @@ Climate Neutrality Action Plan
 |   | A.4 Training & Certification on Environmental Aspects for the Marina Operators and stakeholders Timeframe: M1 – M24 Cost: 50.000€  |
 |   | A.5 Dissemination - Raise of awareness Timeframe: M1 – M24 Cost: 50.000€  |
 |   | Phase B: Capital Investment: 2.4 m. € Timeframe: M24 – M60 Cost Analysis: The Marina Action Plan towards carbon neutrality, includes the following actions: • Investment in RES (mainly PVs), (connection to the grid). The following assumptions are considered: - An amount of 64% of the total KWh needed are supplied by the grid - The rest, 36%, is produced by PV installation, i.e., an amount of 4.1 m.KWh - It is assumed that every installed KW produces 1.800 KWh on a yearly basis, so the installed power in KW is considered as 2.287, or 2.3MW. The Marina manager has already identified areas within the complex that can host about 1 MW of PVs. - Considering a price of 700k€ per installed MW, the estimated cost for installing 2.3MW is estimated at the price of 1.7m€ • Investment in electric cars (replacement and replenishment w/ new tech efficient vehicles) within Limassol Marina infrastructure Estimated cost: 370k€ • Investment in electrical chargers for visitors Estimated cost: 200k€ • Investment in Building Energy Management Systems (development of a single, central platform to manage buildings' energy consumption) Estimated cost: 200k€  |
-Climate Neutrality Action Plan
-
-#
-
 |   |  | • Implementing “Energy Communities” as a synergetic tool for the implementation of the “carbon neutral policy” of the Limassol Marina. Estimated cost: 30k€  |   |   |
 | --- | --- | --- | --- | --- |
 |   |  | TOTALS | Estimated Cost | t CO2e € / CO2e  |
@@ -5074,12 +5045,12 @@ LIMSSOL2030
 | --- | --- | --- |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Reduction of the number of polluting incidents to be calculated in natural numbers. Calculations will be based on the number of marine polluting incidents occurring annually, divided by the number of polluting incidents occurred in the baseline year 2022.  |
 |   |  Total costs and costs by CO2e unit | Total estimated action cost: €200,000.
-This includes the work for Phases A-C of the study as well as the cost for design, development, testing and deployment on the Urban Digital Platform, the procurement, set-up and integration of sensors and autonomous systems and the training of the responsible stakeholders for the relevant platform module use.  |
+| This includes the work for Phases A-C of the study as well as the cost for design, development, testing and deployment on the Urban Digital Platform, the procurement, set-up and integration of sensors and autonomous systems and the training of the responsible stakeholders for the relevant platform module use.  |
 |  B-2.2.22: Coastal and Sea: Action 4_RECONE (CA_4: RECONE)  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | RECONE_RESILIENT COASTAL NEIGHBOURHOODS  |
 |   |  Action type | a. Social Innovation
-b. Governance/ policy  |
+| b. Governance/ policy  |
 |   |  Action description | The project focuses on the assessment of one of the seven (7) coastal neighbourhoods of the Municipality of Limassol to define their resilience level in terms of their specific environmental, social, and economic challenges and their ability to support the 15 minutes neighbourhood model. The 15 Minute Neighbourhood which supports the notion of the Healthy Neighbourhood involves policy actions that provide residents access to most, if not all, of their needs within a short walk or bike ride from their home. It's based upon four pillars: Proximity, Diversity, Density, Ubiquity where policies transform urban spaces into connected and self-sufficient (or 'complete') neighbourhoods reducing car use and encouraging active travel are central to delivering the vision. The overall aim of the 15 minuet City is to makes life more liveable for residents, by improving air quality and making neighbourhoods safer, quieter, more diverse, inclusive and economically vibrant. Additionally, the project aims to connect the coastal residential quarters to the sea, the coast and the beach in order to maximise the positive impact of this amenity and the degree of daily needs satisfaction within the 15 minutes radius.  |
 |   |   |  There will be the potential to enable behavioural changes, individual preferences, consumption habits, lifestyles, which in parallel to the improvements of associated infrastructure to bring the particular place closer to the requirements of the European Green Deal and the New European Bauhaus initiative.  |
 #
@@ -5429,7 +5400,7 @@ Climate Neutrality Action Plan
 3
 
 |  accountability, democratisation etc.)
-Impact: Owing and sharing data generated |  |  |  |  |  |  |   |
+| Impact: Owing and sharing data generated |  |  |  |  |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Early: New skills adoption (installers, planners, engineers)
 Late: New skills for threatened professions
@@ -5458,7 +5429,7 @@ Fresnel systems for industry
 RES with storage
 Heat Pumps in new and existing buildings | E.8 | Signatories to CCI plan (number of signatures in SMEs, large corporations and local/national authorities) |  | 3 | 10 | 30  |
 |  - Reduced GHG emissions | - Deep renovation
-New carbon-neutral buildings | GHG1 | GHG emission from stationary energy |  | 20% | 60% | 100%  |
+| New carbon-neutral buildings | GHG1 | GHG emission from stationary energy |  | 20% | 60% | 100%  |
 |  - Reduced GHG emissions | - Deep renovation
 New carbon-neutral buildings | GHG2 | Rate of retrofit |  | 1.3% | 2% | 3.5%  |
 LIMASSOL2030
@@ -5549,13 +5520,13 @@ Calculate Emissions for Each Source: Multiply the energy consumption of each sta
 Sum Up Emissions: Add up the calculated GHG emissions from all stationary energy sources to get the total emissions.  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | Yes
-Reduced GHG emissions  |
+| Reduced GHG emissions  |
 |  If yes, which emission source sectors does it impact? | Built environment  |
 |  Does the indicator measure indirect impacts (i.e. co-benefits)? | No  |
 |  If yes, which co-benefit does it measure? | Co-Benefits  |
 |  Can the indicator be used for monitoring impact pathways? | Yes  |
 |  If yes, which NZC impact pathway is it relevant for? | - Deep Energy Refurbishment of the Building Stock and Urban regeneration
-Construction of New Carbon-Neutral Buildings  |
+| Construction of New Carbon-Neutral Buildings  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | [yes/no]  |
 |  Data requirements |   |
 |  Expected data source | Municipality, CEIC, Cyprus Energy Agency  |
@@ -5588,7 +5559,7 @@ Plan
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Unknown  |
 |  Data requirements |   |
 |  Expected data source | TR1 : Relevant ministries
-CE2 : Based in CE1 indicator and emissions factors from the literature. Field measurements in Cypriot landfills that contain organic waste.  |
+| CE2 : Based in CE1 indicator and emissions factors from the literature. Field measurements in Cypriot landfills that contain organic waste.  |
 |  Expected availability | For Limassol Municipality  |
 |  Suggested collection interval | Yearly  |
 |  References |   |
@@ -5603,7 +5574,7 @@ CE2 : Based in CE1 indicator and emissions factors from the literature. Field me
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | [yes, via contributions to energy emissions factor]  |
 |  If yes, which emission source sectors does it impact? (table A-1) | Built Environment
-IPPU  |
+| IPPU  |
 |  Does the indicator measure indirect impacts (i.e. co-benefits)? | [no]  |
 LIMASSOL2030
 
@@ -5620,7 +5591,7 @@ Green infrastructure
 Built environment
 Smart & Digital solutions  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | [yes/no]
-Unknown  |
+| Unknown  |
 |  Data requirements |   |
 |  Expected data source | CCI digital platform; CERA; Municipality  |
 |  Expected availability | In yearly intervals  |
@@ -5647,13 +5618,13 @@ Climate Neutrality Action Plan
 | --- | --- |
 |  **Indicator Context** |   |
 |  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | Yes
-Reduced energy demand, needs, or consumption  |
+| Reduced energy demand, needs, or consumption  |
 |  If yes, which emission source sectors does it impact? | Built environment  |
 |  Does the indicator measure indirect impacts (i.e. co-benefits)? | No  |
 |  If yes, which co-benefit does it measure? | Co-Benefits  |
 |  Can the indicator be used for monitoring impact pathways? | Yes  |
 |  If yes, which NZC impact pathway is it relevant for? | - Deep Energy Refurbishment of the Building Stock and Urban regeneration
-Construction of New Carbon-Neutral Buildings  |
+| Construction of New Carbon-Neutral Buildings  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | [yes/no]  |
 |  **Data requirements** |   |
 |  Expected data source | Municipality, CEIC, Cyprus Energy Agency  |
@@ -5683,7 +5654,7 @@ Plan
 |  Can the indicator be used for monitoring impact pathways? | [no]  |
 |  If yes, which NZC impact pathway is it relevant for? | N/A  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | [yes/no]
-Unknown  |
+| Unknown  |
 |  Data requirements |   |
 |  Expected data source | DLI; Universities/ Research Inst.  |
 |  Expected availability | Yearly  |
@@ -5694,9 +5665,9 @@ Unknown  |
 |  Indicator PM2.5 concentration levels PHE1  |   |
 |  Indicator Name | PM2.5 concentration levels  |
 |  Indicator Unit | μg/ m3 OR
-# of days above threshold  |
+| # of days above threshold  |
 |  Definition | PM concentration levels refer to the measurement of particulate matter in the air, specifically the concentration of particles suspended in the atmosphere. These particles can vary in size, composition, and origin, and they are categorized based on their diameter. PM concentration levels are typically expressed in micrograms per cubic meter (μg/m³) and are used to assess air quality and potential health risks associated with exposure to airborne particulates.
-PM2.5: Particulate matter with a diameter of 2.5 micrometers or smaller. These fine particles are capable of penetrating deep into the respiratory system and can have adverse health effects when inhaled. Sources of PM2.5 include combustion processes (e.g., vehicle emissions, industrial activities), dust, and chemical reactions in the atmosphere.  |
+| PM2.5: Particulate matter with a diameter of 2.5 micrometers or smaller. These fine particles are capable of penetrating deep into the respiratory system and can have adverse health effects when inhaled. Sources of PM2.5 include combustion processes (e.g., vehicle emissions, industrial activities), dust, and chemical reactions in the atmosphere.  |
 |  Calculation | Air quality monitoring stations measure and report PM2.5 concentration levels
 Air Sample Collection: Air samples are collected using specialized equipment, such as high-volume samplers or low-volume samplers with size-selective inlets designed to collect particles with diameters less than or equal to 2.5 micrometers. These samplers draw in air over a specified period.  |
 LIMASSOL2030
@@ -5715,7 +5686,7 @@ PM2.5 (μg/m³) = ((Weight of Filter with Collected Particles – Weight of Blan
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | No  |
 |  If yes, which emission source sectors does it impact? | Built environment
-Transport  |
+| Transport  |
 |  Does the indicator measure indirect impacts (i.e. co-benefits)? | Yes  |
 |  If yes, which co-benefit does it measure? | - Improved air quality  |
 |  Can the indicator be used for monitoring impact pathways? | No  |
@@ -5737,7 +5708,7 @@ Climate Neutrality Action Plan
 O
 
 |  Indicator Unit | μg/ m3 OR
-# of days above threshold  |
+| # of days above threshold  |
 | --- | --- |
 |  Definition | Air quality monitoring stations measure and report PM10 concentration levels
 
@@ -5769,7 +5740,7 @@ PM10 (μg/m³) = ((Weight of Filter with Collected Particles – Weight of Blank
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | No  |
 |  If yes, which emission source sectors does it impact? | Built environment
-Transport  |
+| Transport  |
 |  Does the indicator measure indirect impacts (i.e. co-benefits)? | Yes  |
 |  If yes, which co-benefit does it measure? | - Improved air quality  |
 |  Can the indicator be used for monitoring impact pathways? | No  |
@@ -5798,7 +5769,7 @@ Climate Neutrality Action Plan
 |  Calculation | Rate of Retrofit = (Number of Retrofitted Buildings / Total Number of Buildings) * 100  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | Yes
-Increased rate of retrofit  |
+| Increased rate of retrofit  |
 |  If yes, which emission source sectors does it impact? | Built environment  |
 |  Does the indicator measure indirect impacts (i.e. co- benefits)? | No  |
 |  If yes, which co-benefit does it measure? | NA  |
@@ -6164,10 +6135,10 @@ Plan
 #
 
 |   | Energy Systems
-Built Environment  |
+| Built Environment  |
 | --- | --- |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | [yes/no]
-Unknown  |
+| Unknown  |
 |  Data requirements |   |
 |  Expected data source | Surveys (probably organised by municipality)  |
 |  Expected availability | In yearly intervals  |
@@ -6187,9 +6158,9 @@ Unknown  |
 |  If yes, which co-benefit does it measure? | N/A  |
 |  Can the indicator be used for monitoring impact pathways? | [yes]  |
 |  If yes, which NZC impact pathway is it relevant for? | Impact Pathways according to Module B-1
-Smart & Digital solutions  |
+| Smart & Digital solutions  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | [yes/no]
-Unknown  |
+| Unknown  |
 |  Data requirements |   |
 |  Expected data source | Municipality; Digital service of CCI  |
 |  Expected availability | In yearly intervals  |
@@ -6410,8 +6381,6 @@ Plan
 |  Intervention name | Network of Mission Cities Cyprus  |   |
 |  Description | Building cooperative relationships, sharing, and applying best practices and expertise, and executing collaborative projects to advance both climate neutrality and digital transformation initiatives.  |   |
 |  Responsible entity/ dept./ person (indicate responsible) | Limassol Municipality Mayor, Nicos Nicolaides Strovolos Municipality Mayor, Andreas Papacharalambous Pafos Municipality Mayor, Phedonas Phedonos Aradippou Municipality Mayor, Evaggelos Evaggelides  |   |
-Climate Neutrality Action Plan
-
 |  |   |   |
 | --- | --- | --- |
 |  Involved stakeholder | Cyprus Central Government, Businesses, NGOs, Citizens  |   |
@@ -6479,8 +6448,8 @@ Climate Neutrality Action Plan
 |  **Responsible entity/ dept./ person** | Municipality of Lemesos  |
 |  **Involved stakeholder** | The Municipality; NZ Lemesos 2030 Inc., stakeholders.  |
 |  **Enabling impact**
-(describe how intervention enables climate neutrality) | **Co-benefits**
-(indicate how intervention helps achieve impact listed in Module B-1)  |
+| (describe how intervention enables climate neutrality) | **Co-benefits** |
+| (indicate how intervention helps achieve impact listed in Module B-1)  |
 |  **Enabling impacts**
 ✓ Deepens the inclusivity of considerations at the Trabnsition Planning stage
 ✓ Facilitates better updates of the CCC
@@ -6886,8 +6855,6 @@ Plan
 |  Installation of heat pumps at commercial and residential buildings (with built environment) (EA_4: Heat Pumps-residential) | Building owners | 1.1.2024/31.12.2030 | Energy | Heat pumps do not directly generate renewable energy but are efficient converters of ambient energy to either heating or cooling using electricity. In the scenario examined for this report they are estimated to generate 10,800 MWh of heating and 19,200 MWh of cooling each year. Despite the fact that replacing older stock of inefficient A/C split units in existing buildings will be a realistic method to reduce energy demand, this action focusses on replacement of fossil fuel-fired heating systems only. The action will lead to a net reduction of 8,121 tCO2, which translates to 1.28% of the total city's emissions | 20.20 M€  |
 |  Centralised RES generation and long-term storage to satisfy increased demand from Mission actions (EA_5: RES generation and long-term storage) | Limassol Municipality Local EPC International suppliers and EPCs | 1.1.2024 - 31.12.2030 | Energy | It is estimated that approximately 137 GWh/a will be generated from the combined PV, wind and storage subsystems. We assume that 80% of generation will be matched with demand, and 20% will be sourced from the grid. The whole system will substitute generation that will save 119,335 tCO2eq., around 19% of the Limassol's total. | 96.70 M€  |
 |  Deep building renovation (BA_1: Deep building renovation) | • Limassol Municipality for the municipal buildings and implementation, monitoring and evaluation of the action. • Government for the renovation of governmental buildings | 1.1.2024 - 31.12.2030 | Built environment | Long-term impacts - Reduced GHG emissions - Increased rate of retrofit - Reduced energy demand, needs, or consumption - Reduced energy poverty - Increased carbon sequestration Generated renewable energy 38,520 MWh/yr @ 2030 Removed/substituted energy, volume or fuel type 89,125 MWh/yr @ 2030 GHG emissions reduction estimate 200,386 tonCO2-eq/yr @ 2030 Co-benefits - Improved air quality | 348.4 M€  |
-Climate Neutrality Action Plan
-
 |   | • Private building owners. |  |  | - Reduced heat island effect
 Enhanced physical and mental well-being, comfort and productivity
 Improved access to information, awareness & behaviour change
@@ -6957,8 +6924,6 @@ Climate Neutrality Action Plan
 |  Optimization of Transportation Demand (TDM Strategies) (TA_6: TDM Strategies) | Limassol Municipality; Ministry of Transport Communications and Works; Department of Town Planning and Housing; Citizen's representatives (NGOs) | 1.1.2024/31.12.2030 | Mobility & Transportation | Reduction of 8,786 tCO2 by 2030 (5% reduction) | 27.27 M€  |
 |  Incorporation of Smart Technologies in Sustainable Transportation Strategies (TA_7: Smart Technologies in Sustainable Transportation) | Limassol Municipality; Ministry of Transport Communications and Works; Deputy Ministry of Research, Innovation and Digital Policy; Citizen's representatives (NGOs) | 1.1.2024/31.12.2030 | Mobility & Transportation | Reduction of 8,780 tCO2 by 2030 (5% reduction) | 17.73 M€  |
 |  Waste segregation to remove organic waste for energy and fertilizer production (WA_1: Removal | Limassol Municipality; Department of Environment. In addition, the support | 1.1.2024/31.12.2030 | Waste management | As estimated based on the available data, 54176 tons per year mixed MSW go to the landfill. | 54 M€  |
-Climate Neutrality Action Plan
-
 |  of organic waste for energy and fertilizer production) | from Information Technology experts for integrating smart systems like RFID or barcodes is required. Green Dot Cyprus (recycling). Citizens of Limassol play a vital role in sustainable MSW management. |  |  | According to available data on RE from organic waste in Cyprus (CYPRA-KEBE) 87.152 kWh are produced per ton of organic waste. Diverting 24779 tons/year of organic waste to produce RE will yield 2159 MWh of electricity. As estimated based on the available data, 54176 tons per year mixed MSW go to the landfill. GHG (tCO2eq) = 43341 (54176 tons x 0.8 tons CO2eq/ton MSW) + 6501 (15% x 43341; emissions for collection and transportation) = 49842 Reducing by 90% the amount of organic waste that goes to the landfill results to -82.8% reduction in these emissions (41277 tons CO2eq). |   |
 | --- | --- | --- | --- | --- | --- |
 |  Zero waste production (circular economy) in Lemesos (WA_2: Zero waste production) | Limassol Municipality | 1.1.2024/ 31.12.2030 | Waste management | The removal of 90% of the organic waste and 75% of the recyclable waste from the landfill leads to a reduction of 65% in the waste that goes to the landfill. Moreover, avoid waste generation (e.g. e-billing, pay as you throw) will lead to -50% of the emissions related to waste collection and transportation. Removing of organic (and paper, textile, wood) waste will decrease emissions from the landfill. GHG (tCO2eq) = 43341 (54176 tons x 0.8 tons CO2eq/ton MSW) + 6501 (15% x 43341; emissions for collection and transportation) = 49842 Reducing by 90% the amount of organic waste and 75% of the recyclable material that goes to the landfill results to -90.5% reduction in these emissions (45087 tons CO2eq). Action 2 contribution to GHG emissions reduction is 4753 tons CO2eq. | 6 M€  |
@@ -7437,7 +7402,7 @@ Include a list of stakeholders who have committed to help your city achieve its 
 | --- | --- | --- | --- | --- | --- |
 |   | President of the Republic of Cyprus |  | National Government | Nicos Christodoulides | President  |
 |  Commitments | • Aligns national goals with the green goals of the European Commission.
-• Works with the Limassol Municipality for the planning and implementation of holistic policies to utilize European tools and funds.  |   |   |   |   |
+| • Works with the Limassol Municipality for the planning and implementation of holistic policies to utilize European tools and funds.  |   |   |   |   |
 |  Aspect of Commitment | ☑ Formal oral public declaration of support
 ☐ Participated in drawing up the CCC
 ☐ Signed Memorandum of Collaboration for the Transition of Lemesos to NZ by 2030
@@ -7495,8 +7460,8 @@ for LIMSSOL
 | Website link |  |
 | Annex No. |  |
 |  | Ministry of Transport/ Department Public Works |  | National Government | Alexis Vafeades
-Evie Anayiotou | Minister of transport, communications and works
-Senior Executive Engineer at Public Works Department |
+| Evie Anayiotou | Minister of transport, communications and works |
+| Senior Executive Engineer at Public Works Department |
 | Commitments | • Planning for the protection of public health, the reduction of the effects of climate change, of noise and air pollution.
 • Development of all transport means with the simultaneous development of alternative modes of transport.
 • Implementation of Limassol Sump. |
@@ -7506,7 +7471,7 @@ Senior Executive Engineer at Public Works Department |
 ☐ Signed the CCC
 ☑ Climate friendly business activities. |
 | Website link | Ministry of Transport, Communications and Works | (mtcw.gov.cy)
-Sustainable Mobility – Sustainable Cyprus |
+| Sustainable Mobility – Sustainable Cyprus |
 | Annex No. |  |
 8
 
@@ -7565,8 +7530,6 @@ for LIMSSOLOL and/or the University of Texas
 |  Annex No. |   |   |   |   |   |
 |   | Municipality of Athens | Limassol Municipality forms Network with municipalities from Greece that were | Network of Local Authorities |  | Mayor  |
 |   | Municipality of Thessaloniki |  |  | Michail Koupkas | Deputy Mayor  |
-Climate-Neutrality Commitments
-
 |   | Municipality of Ioannina | selected as Mission Cities. |  | Dimitrios Papageorgiou | Mayor  |
 | --- | --- | --- | --- | --- | --- |
 |   | Municipality of Kalamata |  |  | Athanasios Vasilopoulos | Mayor  |
@@ -7589,13 +7552,11 @@ The creation of a municipal "ESG back office" to support SMEs in integrating ESG
 |   | Technical University of Cluj-Napoca |  |  | Caroline Conroy | Lord Mayor  |
 |   | Municipality of Dublin | Mission Cities and have Universities that belong to EuT (European |  |  |   |
 |   | Technological University Dublin |  |  |  |   |
-Climate-Neutrality Commitments
-
 |   | Municipality of Riga
-Riga Technical University | University of Technology) |  | Mārtiņš Staķis | Mayor  |
+| Riga Technical University | University of Technology) |  | Mārtiņš Staķis | Mayor  |
 | --- | --- | --- | --- | --- | --- |
 |   | Municipality of Sofia
-Technical University of Sofia |   |   | Yordaka Fandakova | Mayor  |
+| Technical University of Sofia |   |   | Yordaka Fandakova | Mayor  |
 |  Commitments | • Collaborate towards the development of a direct cultural, urban and scientific cooperation for the EU Mission: Climate Neutral and Smart Cities by 2030  |   |   |   |   |
 |  Aspect of Commitment | ☑ Formal oral public declaration of support
 ☐ Participated in drawing up the CCC
@@ -7609,7 +7570,7 @@ Research | Ioannis Vyrides
 Alexandros Charalambides
 Antonis Papantoniou | Phd Student  |
 |   |  • ERATOSTHENES CENTRE OF EXCELLENCE |   |   | Eleni Loulli
-Marios Tzouvaras | Researcher C  |
+| Marios Tzouvaras | Researcher C  |
 |   |  • FREDERICK UNIVERSITY |   |   | Angelos Menelaou
 Alexis Onoufriou
 Byron Ioannou |   |
@@ -7623,7 +7584,7 @@ Michael Papadopoulos |   |
 Climate-Neutrality Commitments
 
 |   | • UNIVERSITY OF CYPRUS |  |  | Loucas Dimitriou
-Christos Gkartzonikas |   |
+| Christos Gkartzonikas |   |
 | --- | --- | --- | --- | --- | --- |
 |   |  • UNIVERSITY OF NICOSIA |   |   |  |   |
 |  Commitments | • Propose actions that their implementation leads to pre-set goal of Climate Neutrality. (CNAP)
@@ -7642,7 +7603,7 @@ Christos Gkartzonikas |   |
 |  |   |   |   |   |   |
 |   | Limassol Chamber Of Commerce & Industry |  |  | Tsouloftas Andreas | CEO  |
 |  Commitments | • Co-creates stakeholder engagement workshops.
-• Belongs to the Board of Directors of the Lemesos NZ 2030 Organization  |   |   |   |   |
+| • Belongs to the Board of Directors of the Lemesos NZ 2030 Organization  |   |   |   |   |
 |  Aspect of Commitment | ☑ Formal oral public declaration of support
 ☐ Participated in drawing up the CCC
 ☐ Signed Memorandum of Collaboration for the Transition of Lemesos to NZ by 2030
@@ -7652,13 +7613,11 @@ Christos Gkartzonikas |   |
 |  Annex No. |   |   |   |   |   |
 |  |   |   |   |   |   |
 |   | ETAIREIA METAFORAS EPIBATON |  |  | Georgios Kyriakou
-Petros | CEO  |
-Climate-Neutrality Commitments
-
+| Petros | CEO  |
 |   | LEMESOU (EMEL) LTD |  |  | Christos |   |
 | --- | --- | --- | --- | --- | --- |
 |  Commitments | • Provides buses, bus drivers and the service needed for the demonstration in agreed projects and activities.
-• Updates telematics and connectivity platform in order to advance as a whole the PT offering  |   |   |   |   |
+| • Updates telematics and connectivity platform in order to advance as a whole the PT offering  |   |   |   |   |
 |  Aspect of Commitment | ☑ Formal oral public declaration of support
 ☐ Participated in drawing up the CCC
 ☐ Signed Memorandum of Collaboration for the Transition of Lemesos to NZ by 2030
@@ -7676,7 +7635,7 @@ Climate-Neutrality Commitments
 |  Website link | About Us - MobyX - Transport software solutions  |   |   |   |   |
 |  Annex No. |   |   |   |   |   |
 |   | Deloitte Touche Tohmatsu Limited |  |  | Kyriakos Charalambides
-Marina Papadopoulou | Partner  |
+| Marina Papadopoulou | Partner  |
 |  Commitments | • Supervises the preparation of the CNIP (Climate Neutrality Investment Plan).
 • Monitors the implementations and allocation of funds.
 • Participates in the co-design of a strategy for the Municipality to manage funds.  |   |   |   |   |
@@ -7705,9 +7664,9 @@ the climate-disaster
 | Website link |  |
 | Annex No. |  |
 |  | Green Dot Ltd |  |  | Vassilis Petrides
-Erato | President |
+| Erato | President |
 | Commitments | • Achieving recovery and recycling goals.
-• The cultivation of right values and habits. |
+| • The cultivation of right values and habits. |
 | Aspect of Commitment | ☑ Formal oral public declaration of support
 ☐ Participated in drawing up the CCC
 ☐ Signed Memorandum of Collaboration for the Transition of Lemesos to NZ by 2030
@@ -7725,7 +7684,7 @@ the climate-disaster
 | --- | --- | --- | --- | --- | --- |
 |   | Nextbike CY Ltd |  |  | Neophytos Ioannou | CEO  |
 |  Commitments | • Installs docking stations for e-bikes.
-• Advances their platform and app.  |   |   |   |   |
+| • Advances their platform and app.  |   |   |   |   |
 |  Aspect of Commitment | ☑ Formal oral public declaration of support
 ☑ Participated in drawing up the CCC
 ☐ Signed Memorandum of Collaboration for the Transition of Lemesos to NZ by 2030
@@ -7744,7 +7703,7 @@ the climate-disaster
 |  Annex No. |   |   |   |   |   |
 |   | The Heart Group |  |  | Stylianos Lambrou | President  |
 |  Commitments | • Invests private funds into deep retrofitting existing buildings.
-• Invests private funds into the development of net zero emissions buildings.  |   |   |   |   |
+| • Invests private funds into the development of net zero emissions buildings.  |   |   |   |   |
 |  Aspect of Commitment | ☑ Formal oral public declaration of support
 ☐ Participated in drawing up the CCC  |   |   |   |   |
 #
@@ -7795,7 +7754,7 @@ UNIVERSITY OF MARYLAND
 |  Annex No. |   |   |   |   |   |
 |   | Terra Cypria |  | NGO |  |   |
 |  Commitments | • Co-designs with the Limassol Municipality questionnaires
-• Prepares educational material and student engagement opportunities.  |   |   |   |   |
+| • Prepares educational material and student engagement opportunities.  |   |   |   |   |
 |  Aspect of Commitment | ☑ Formal oral public declaration of support
 ☐ Participated in drawing up the CCC  |   |   |   |   |
 
@@ -7810,7 +7769,7 @@ the Climate Institute
 ☑ Climate friendly business activities  |   |   |   |   |
 | --- | --- | --- | --- | --- | --- |
 |  Website link
-Annex No. | Terra Cypria – Terra Cypria  |   |   |   |   |
+| Annex No. | Terra Cypria – Terra Cypria  |   |   |   |   |
 |  |   |   |   |   |   |
 |   | The Cyprus Energy Agency | • Empowers local authorities in sustainable energy planning.
 • Offers technical assistance for climate change strategies.
@@ -7837,7 +7796,7 @@ the climate-disaster
 
 |
 |  | ☐ Signed the CCC
-☑ Climate friendly business activities. |  |  |  |  |
+| ☑ Climate friendly business activities. |  |  |  |  |
 | Website link | Home | (cea.org.cy) |  |  |  |  |
 | Annex No. |  |  |  |  |  |
 |  | CITY FRIENDS CLUB | • Educates on waste reduction and mindful waste practices.
@@ -7885,7 +7844,7 @@ Climate-Neutrality Commitments
 |   |  | for economic success. |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Commitments | • Incorporates the Mission Limassol 2030 goal in their programs like the Company Programme to high school students, impacting about 15,000 annually
-• Research and education  |   |   |   |   |
+| • Research and education  |   |   |   |   |
 |  Aspect of Commitment | ☑ Formal oral public declaration of support
 ☐ Participated in drawing up the CCC
 ☐ Signed Memorandum of Collaboration for the Transition of Lemesos to NZ by 2030
@@ -7894,8 +7853,8 @@ Climate-Neutrality Commitments
 |  Website link |   |   |   |   |   |
 |  Annex No. |   |   |   |   |   |
 |   | EAC (Electricity Authority of Cyprus) |  | Semi-private/Public Company | Adonis Yiasemidis
-Thasos Theodoulou | General Director
-Director Limassol Branch  |
+| Thasos Theodoulou | General Director |
+| Director Limassol Branch  |
 |  Commitments | • Implement actions that relate to energy production, storage, distribution.
 • Monitor.
 • Assess.
@@ -8646,17 +8605,17 @@ CITY ADVISOR: BOB D'HAESELEER
 DATES: 13-17/03/2023
 
 |   | MONDAY
-/03/2023 | TUESDAY
-/03/2023 | WEDNESDAY
-/03/2023 | THURSDAY
-/03/2023 | FRIDAY
-/03/2023  |
+| /03/2023 | TUESDAY |
+| /03/2023 | WEDNESDAY |
+| /03/2023 | THURSDAY |
+| /03/2023 | FRIDAY |
+| /03/2023  |
 | --- | --- | --- | --- | --- | --- |
 |  08:00-09:00 | INTRODUCTION | FINANCE | PILOT CITY SESSION |  |   |
 |  09:00-10:00 | HORIZON TASK 1
-GENERAL |  |  | MEETING WITH MAYOR |   |
+| GENERAL |  |  | MEETING WITH MAYOR |   |
 |  10:00-11:00 |  |  |  |  | DEPUTY MINISTRY OF
-INNOVATION  |
+| INNOVATION  |
 |  10:30-12:30 | HORIZON TASK 1
 THEMATIC
 BREAKOUT | TRANSITION TEAM
@@ -8682,8 +8641,8 @@ UNIVERSITY
 CUT (TBC) | EVALUATION OF
 PROJECTWEEK  |
 |  16:00-18:00 | HORIZON TASK 3
-STAKEHOLDERS | DEEP DIVE ACTION PLAN
-WITH KATHERIN KAMI | NGO SESSION |  |   |
+| STAKEHOLDERS | DEEP DIVE ACTION PLAN |
+| WITH KATHERIN KAMI | NGO SESSION |  |   |
 |  18:00-20:00 |  |  |  | WORKSHOP WITH
 COUNSELORS |   |
 

@@ -778,8 +778,8 @@ Plan
 C
 
 |  LULUCF | - 7,120.8 | 243 | Sinks at least
-2,500 kt CO₂ eq | No net emissions | Sinks at least
-kt CO₂eq  |
+| 2,500 kt CO₂ eq | No net emissions | Sinks at least |
+| kt CO₂eq  |
 | --- | --- | --- | --- | --- | --- |
 |  TOTAL | 13,336.0 | 17,745.1 | Net zero GHG emissions |  | * non-ETS sector  |
 
@@ -1404,7 +1404,7 @@ A-3.2: Systems &amp; stakeholder mapping
 |  System | Stakeholders | Influence on the City’s climate neutrality ambition | Interest in the City’s climate neutrality ambition  |
 | --- | --- | --- | --- |
 |  Infrastructure/technology | City of Velenje – City Administration
-Local self-government | Medium | High  |
+| Local self-government | Medium | High  |
 |   |  Komunalno podjetje Velenje
 Public utility company
 Local level | The public utility company is responsible for the management and operation of the water supply network and wastewater network and treatment. The City Administration is responsible for the construction of networks.
@@ -1659,11 +1659,11 @@ W.W.VELENJE.SI
 | --- | --- | --- | --- |
 |  System | Stakeholders | Influence on the City's climate neutrality ambition | Interest in the City's climate neutrality ambition  |
 |   |  | compulsory national public service of the support centre.
-They provide grants or co-financing in the area of green transition (e.g. for production of electricity and heat from RES and storage of electricity and heat). | sustainable and environmentally conscious society.
-Committed to fostering a green ethos, they develop initiatives that contribute to advancing sustainable energy solutions.  |
+| They provide grants or co-financing in the area of green transition (e.g. for production of electricity and heat from RES and storage of electricity and heat). | sustainable and environmentally conscious society. |
+| Committed to fostering a green ethos, they develop initiatives that contribute to advancing sustainable energy solutions.  |
 |   |  Slovenia Climate Change Fund | High
-The fund is managed by the Ministry of the Environment, Climate and Energy and is aimed at funding climate change adaptation and mitigation actions, with a focus on energy renovations of residential and public administration buildings, decarbonisation of economy projects (investments in RES and EE, support to SMEs for sustainable reporting), and transition to low-carbon society education projects. | High
-The fund's main purpose and the City's climate neutral path have common goals, i.e., mitigating and adapting to climate change, thus reducing GHG emissions.  |
+| The fund is managed by the Ministry of the Environment, Climate and Energy and is aimed at funding climate change adaptation and mitigation actions, with a focus on energy renovations of residential and public administration buildings, decarbonisation of economy projects (investments in RES and EE, support to SMEs for sustainable reporting), and transition to low-carbon society education projects. | High |
+| The fund's main purpose and the City's climate neutral path have common goals, i.e., mitigating and adapting to climate change, thus reducing GHG emissions.  |
 |   |  Ministry of Cohesion and Regional Development - EU Structural and Cohesion Fund | High
 The Ministry of Cohesion and Regional Development is the managing authority of the Slovenia's EU Cohesion Policy programme 2021–2027, which also includes priorities relevant for the City's climate neutrality, also including the Just Transition Fund.
 The Programme also includes funds for the implementation of the integrated territorial investment (ITI) mechanism for sustainable urban development of Slovenia. | High
@@ -1688,8 +1688,8 @@ The EIB is an important partner in this new growth strategy, and plays a leading
 The EIB supports climate action and just transition.
 The City of Velenje works on the preparation of project documentation for energy efficiency in public buildings supported by the ELENA- European Local Energy Assistance.  |
 |   |  HORIZON EUROPE | High
-Horizon Europe is the EU's key funding programme for research and innovation, which tackles climate change and helps achieve Sustainable Development Goals. Its new elements include Missions, including the Climate-Neutral and Smart Cities and adaptation to climate change missions. | High
-The 112 selected cities were invited to develop Climate City Contracts, which include an overall plan for climate neutrality across all sectors such as energy, buildings, waste management and transport, together with related investment plans.  |
+| Horizon Europe is the EU's key funding programme for research and innovation, which tackles climate change and helps achieve Sustainable Development Goals. Its new elements include Missions, including the Climate-Neutral and Smart Cities and adaptation to climate change missions. | High |
+| The 112 selected cities were invited to develop Climate City Contracts, which include an overall plan for climate neutrality across all sectors such as energy, buildings, waste management and transport, together with related investment plans.  |
 |  Organisational system | Association of Urban Municipalities of Slovenia AUMS | Medium
 The AUMS is the only representative association of municipalities in Slovenia that represents exclusively the interests of the 12 urban municipalities.
 The core mission of the AUMS is to represent and safeguard the interests of urban municipalities on the national and international level. It monitors national legislation and legislative proposals, prepares position papers, fosters exchange of practices, cooperates with international associations and regional and local authorities.
@@ -1709,11 +1709,11 @@ A-3.2: Systems &amp; stakeholder mapping
 | --- | --- | --- | --- |
 |   |  | mechanism for sustainable urban development of Slovenia under the Slovenia’s EU Cohesion Policy programme 2021–2027. | urban green infrastructure, sustainable mobility and urban regeneration.  |
 |   |  Association of Municipalities and Towns of Slovenia | Medium
-The association is the legal successor of the Standing Conference of Local Authorities of Slovenia, established in 1992. It is the largest representation organisation of municipalities. Key tasks relate to sharing experiences and strengthening local self-government at all levels, organising various forms of trainings to meet the needs of members, promoting and representing the common interests of local authorities vis-à-vis national authorities and international organisations, representing the interests of municipalities in negotiations for funding allocated in the national budget for the needs of municipalities. | Medium
-The association is active in diverse topics concerning the planning and implementation of policies at local level. Recently the association has been engaged in international projects on circular economy (https://circularpsp.eu) and geothermal energy (Info-geothermal), increasing knowledge and experience on how local authorities can support such processes.  |
+| The association is the legal successor of the Standing Conference of Local Authorities of Slovenia, established in 1992. It is the largest representation organisation of municipalities. Key tasks relate to sharing experiences and strengthening local self-government at all levels, organising various forms of trainings to meet the needs of members, promoting and representing the common interests of local authorities vis-à-vis national authorities and international organisations, representing the interests of municipalities in negotiations for funding allocated in the national budget for the needs of municipalities. | Medium |
+| The association is active in diverse topics concerning the planning and implementation of policies at local level. Recently the association has been engaged in international projects on circular economy (https://circularpsp.eu) and geothermal energy (Info-geothermal), increasing knowledge and experience on how local authorities can support such processes.  |
 |   |  Association of Municipalities of Slovenia | Medium
-The association represents local interests. works in the legal, economic and political interest of the member municipalities as well as other Slovenian municipalities. It represents the interests of Slovenian municipalities on a national and international level, and links up with similar institutions and organisations in Slovenia and abroad. | Medium
-The association is actively involved in a range of topics related to the planning and implementation of policies at local level, including transport and mobility, renewable energy, etc. It is a good source of information on legal and administrative topics concerning local authorities.  |
+| The association represents local interests. works in the legal, economic and political interest of the member municipalities as well as other Slovenian municipalities. It represents the interests of Slovenian municipalities on a national and international level, and links up with similar institutions and organisations in Slovenia and abroad. | Medium |
+| The association is actively involved in a range of topics related to the planning and implementation of policies at local level, including transport and mobility, renewable energy, etc. It is a good source of information on legal and administrative topics concerning local authorities.  |
 |   |  Covenant of Mayors | Medium
 The EU Covenant of Mayors for Climate & Energy is an initiative supported by the European Commission bringing together thousands of local governments that want to secure a better future for their citizens. By joining the initiative, they voluntarily commit to implementing EU climate and energy objectives. | High
 The City of Velenje has been a member since 2010.  |
@@ -1773,7 +1773,7 @@ Www.Velenje.Si
 |  Fields of action | Systemic levers | Early changes (1–2 years) | Late outcomes (3–4 years) | Direct impacts (Emission reductions) | Indirect impacts (Co-benefits)  |
 | --- | --- | --- | --- | --- | --- |
 |   |  |  |  |  | Better air quality
-Improved road safety  |
+| Improved road safety  |
 |   | Governance and policy | Solutions for optimisation of public transport identified. | Mobility management improved.
 Public passenger transport optimised – reduced travel times.
 City card introduced. | - | Better services  |
@@ -1781,14 +1781,14 @@ City card introduced. | - | Better services  |
 |  Waste & circular economy | Technology and infrastructure | Expanded network of underground waste collection facilities & reduced number of collection points in multi-dwelling residential areas | Optimised waste collection routes | Emission reduction: 145 tCO_{2}eq | Behavioural change towards a low carbon lifestyle  |
 |   |  Learning and capabilities | Improved waste separation | Increased recycling rates |   | Cost savings  |
 |   |  Social innovation | Increased participation of citizens in circular practices | Increased participation of citizens in circular practices
-Reduced waste generation |   | Behavioural change towards low carbon lifestyle  |
+| Reduced waste generation |   | Behavioural change towards low carbon lifestyle  |
 |   |  Technology and infrastructure | Circular economy solutions among local actors explored (industry, public services, agriculture, forestry, wood processing, etc.) | Circular economy solutions among local actors tested and upscaled |   | Cost saving  |
 |   |  Learning and capabilities |   |   |   | Green jobs  |
 |  |   |   |   |   |   |
 |  Green infrastructure & nature-based solutions | Technology and infrastructure | Green urban areas maintained and lost tree stock gradually replaced. | Green urban areas improved (green corridors, new or improved green areas, planted trees) | Carbon sink: - | Liveability, attractiveness and aesthetics of built environment  |
 |   |  Governance and policy | Management of urban green areas enhanced - (better understanding of the situation, enhanced maintenance standards, urban tree management plan) | Management of urban green areas improved (digitally supported monitoring, action planning) |   | Preserved urban biodiversity.  |
 |   |  Participation and democracy | Urban gardening and local food production programme improved | Urban gardening and local food production programme has been extended to include new areas |   | Improved sense of belonging, social wellbeing & inclusion
-Locally produced food  |
+| Locally produced food  |
 |   |  Social innovation  |   |   |   |   |
 6
 
@@ -1968,13 +1968,13 @@ C
 **Promotion of circular economy**
 The potential for circular economy has so far not yet been properly identified. Potentials will be analysed, and possible cooperation models tested and promoted in partnership with identified local/regional actors. Waste heat was identified as one of the focus areas.  |
 |  Green infrastructure & nature-based solutions | 1. Preserving and upgrading urban green areas | **Preserving and upgrading urban green areas**
-The City of Velenje must further protect and upgrade its green areas to maintain ‘the city in the park’ concept which gives the City a unique quality of life and contributes to climate change adaptation. In view of recent extreme weather (windthrow) and some infrastructure projects resulting in tree felling, replacing the tree stock and inter-connecting green areas is required.  |
+| The City of Velenje must further protect and upgrade its green areas to maintain ‘the city in the park’ concept which gives the City a unique quality of life and contributes to climate change adaptation. In view of recent extreme weather (windthrow) and some infrastructure projects resulting in tree felling, replacing the tree stock and inter-connecting green areas is required.  |
 |   |  2. Promoting urban gardening and locally produced food | **Promoting urban gardening and locally produced food**
-The City has traditionally supported urban gardening and will continue to expand available surfaces. Also, access to locally produced food will be improved through enhancements to the local market and initiatives promoting local food.  |
+| The City has traditionally supported urban gardening and will continue to expand available surfaces. Also, access to locally produced food will be improved through enhancements to the local market and initiatives promoting local food.  |
 |   |  3. Promoting green urban concepts in new commercial and residential areas | **Promoting green urban concepts in new commercial and residential areas**
-The spatial plan of the City of Velenje includes commercial and residential areas that are expected to be at least partially activated in light of the city’s just transition, economic restructuring, and related green job creation. In line with the nearly zero-energy building requirements prescribed by the Energy Act, the City will engage with property developers to incorporate above-standard green and blue infrastructure.  |
+| The spatial plan of the City of Velenje includes commercial and residential areas that are expected to be at least partially activated in light of the city’s just transition, economic restructuring, and related green job creation. In line with the nearly zero-energy building requirements prescribed by the Energy Act, the City will engage with property developers to incorporate above-standard green and blue infrastructure.  |
 |   |  4. Sustainable farming and forestry | **Sustainable farming and forestry**
-Preserving and maintaining forests is one of the City’s priorities. The agriculture sector, which currently produced GHG emissions, will be encouraged to apply low-emission farming practices that have been shown to reduce the methane emission from livestock breeding. The City will thus amend the programme of incentives in agriculture and forestry and promote the use of the intervention Environment and Climate Scheme of the CAP Strategic Plan.  |
+| Preserving and maintaining forests is one of the City’s priorities. The agriculture sector, which currently produced GHG emissions, will be encouraged to apply low-emission farming practices that have been shown to reduce the methane emission from livestock breeding. The City will thus amend the programme of incentives in agriculture and forestry and promote the use of the intervention Environment and Climate Scheme of the CAP Strategic Plan.  |
 |  Built environment | 1. Energy renovation of public buildings | **Energy renovation of buildings**
 Energy renewal of buildings complements the actions within the energy system related to decarbonisation of the district heating system. The most relevant for reducing GHG emissions is the energy renovation of multi-dwelling residential buildings; of 193 buildings 10 were completely renovated so far.
 A project group consisting of the City Administration, the public utility company, the managers of the building stock  |
@@ -2069,7 +2069,7 @@ C
 | --- | --- | --- |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Project documentation for the renewal of the district system is being prepared. The project is included in the Operational Programme 2021–2027 to be financed from JTF.  |
 |  Impact & cost | Generated renewable energy (if applicable) | Heat: 216.199 MWh per annum
-Electricity: 651,088 MWh  |
+| Electricity: 651,088 MWh  |
 |   | Removed/substituted energy, volume, or fuel type | Lignite  |
 |   | GHG emissions reduction estimate (total) per emission source sector | District heating system: 79,362 t CO2  |
 |   | GHG emissions compensated (natural or technological sinks) |   |
@@ -2115,7 +2115,7 @@ Several local enterprises have already demonstrated good practices and the trend
 Smart public lighting solutions in place
 Increased EE in service and processes  |
 |  Implementation | Responsible bodies/person for implementation | City of Velenje; Javna razsvetljava Ljubljana (concessionaire for public lighting); public utility company KP Velenje,
-Businesses and their management bodies  |
+| Businesses and their management bodies  |
 |   | Action scale & addressed entities | Local scale  |
 |   | Involved stakeholders | City of Velenje
 Javna razsvetljava Ljubljana (concessionaire for public lighting)
@@ -2159,7 +2159,7 @@ B-2.2: Individual action outlines
 | Reference to impact pathway | Field of action | Energy systems |
 | Systemic lever | Technology and infrastructure; Democracy& participation |
 | Outcome (according to module B-1.1) | Increased renewable energy production
-Energy community set-up |
+| Energy community set-up |
 | Implementation | Responsible bodies/person for implementation | City of Velenje, public utility company KP Velenje, TPP
 Private investors (companies, individuals) |
 
@@ -2174,7 +2174,7 @@ Plan
 C
 
 |   | Action scale & addressed entities | Local scale
-Energy producers and consumers  |
+| Energy producers and consumers  |
 | --- | --- | --- |
 |   |  Involved stakeholders | City of Velenje, public utility company KP Velenje, Local Energy Agency KSSENA, private investors (individuals, companies, public enterprises, ...), Elektro Celje (local electricity distribution grid operator)  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Since 2018, investments in smaller capacities have mainly been made by individual households and some businesses. In 2024, a joint project for investing in PV on public buildings was prepared. Further interest for installing larger capacity is expressed by the industrial sector.  |
@@ -2183,7 +2183,7 @@ Energy producers and consumers  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 20,009 t CO₂ pa  |
 |   |  GHG emissions compensated (natural or technological sinks) |   |
 |   |  Total costs and costs by CO2e unit | Total costs: € 38,736,499
-Costs by CO₂ unit: 1,936 EUR/t CO₂  |
+| Costs by CO₂ unit: 1,936 EUR/t CO₂  |
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | 1.4 Energy management  |
@@ -2374,7 +2374,7 @@ Learning and capabilities  |
 |   | Outcome (according to module B-1.1) | More commuters practice sustainable mobility: walking, cycling, public transportation, car sharing  |
 |  Implementation | Responsible bodies/person for implementation | City of Velenje, public utility company KP Velenje, Climate & Energy Office  |
 |   | Action scale & addressed entities | Local scale
-Public services, local enterprises, CSOs  |
+| Public services, local enterprises, CSOs  |
 |   | Involved stakeholders | City of Velenje, public utility company KP Velenje, tourist organizations, enterprises, educational institutions, CSOs, IPOP institute.  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | The City Administration plans annual resources for promotion activities, while EU funding is planned for technical ones (e.g. expanding the BICY network).  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
@@ -2430,11 +2430,11 @@ The charging infrastructure for e-vehicles in Velenje has been progressing slowl
 |  Reference to impact pathway | Field of action | Mobility and transport  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | More EV in public, private sector and households;
-Enhanced charging network for clean vehicles  |
+| Enhanced charging network for clean vehicles  |
 |  Implementation | Responsible bodies/person for implementation | City of Velenje  |
 |   |  Action scale & addressed entities | Sub-regional scale  |
 |   |  Involved stakeholders | • Public passenger transportation: City of Velenje, NOMAGO (bus operator/concessionaire), HSE (hydrogen producer), R&D institutions, Local Energy Agency (coordinator)
-• Deployment/purchase of low-carbon vehicles: public institutions and companies, private actors  |
+| • Deployment/purchase of low-carbon vehicles: public institutions and companies, private actors  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | The government provides support for fuel-cell electric vehicles with incentives for municipalities. The Eco Fund provides incentives for the low-carbon vehicle purchase.  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume, or fuel type | Diesel: 2,959,940 l (30,103 MWh)  |
@@ -2500,12 +2500,12 @@ B-2.2: Individual action outlines
 | --- | --- | --- |
 |   |  Action type | Other intervention  |
 |   |  Action description | Sustainable urban mobility planning
-Strategic approach to development and implementation of urban mobility policies started with the preparation of the first Sustainable Urban Mobility Strategy in 2017. The process will be iterated in 2024/2025. It will assess the results of the strategy implementation, identify challenges, vision and actions for the next period and a monitoring framework.  |
+| Strategic approach to development and implementation of urban mobility policies started with the preparation of the first Sustainable Urban Mobility Strategy in 2017. The process will be iterated in 2024/2025. It will assess the results of the strategy implementation, identify challenges, vision and actions for the next period and a monitoring framework.  |
 |   |   |  Digitalisation
-To take informed decisions on sustainable mobility measures, various mobility data will be collected and integrated into a common digital platform. With support of the Elaborator project, network of cameras will be installed to monitor traffic. A city card will be introduced to improve users’ experience regarding sustainable mobility service (bike rental, public transport, parking, etc.)  |
+| To take informed decisions on sustainable mobility measures, various mobility data will be collected and integrated into a common digital platform. With support of the Elaborator project, network of cameras will be installed to monitor traffic. A city card will be introduced to improve users’ experience regarding sustainable mobility service (bike rental, public transport, parking, etc.)  |
 |  Reference to impact pathway | Field of action | Mobility and transport  |
 |   |  Systemic lever | Governance and policy;
-Technology and infrastructure  |
+| Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Mobility management improved; Public passenger transport optimised-reduced travel times;
 City card introduced;
 Solutions for optimisation of public transport identified.  |
@@ -2587,7 +2587,7 @@ C
 |  GHG emissions compensated (natural or technological sinks) |   |
 | --- | --- |
 |  Total costs and costs by CO2e unit | Total costs: € 626,291
-Costs by CO2 eq: 26,109 EUR/t CO2 eq  |
+| Costs by CO2 eq: 26,109 EUR/t CO2 eq  |
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | 3.2 Promoting circular economy  |
@@ -2661,7 +2661,7 @@ C
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Green infrastructure and nature-based solutions  |
 |   | Systemic lever | Governance and policy;
-Learning and capabilities  |
+| Learning and capabilities  |
 |   | Outcome (according to module B-1.1) | Green urban areas maintained, and lost tree stock gradually replaced;
 Green urban areas improved;
 Management of green urban areas improved  |
@@ -2852,7 +2852,7 @@ Climate Neutrality Action
 Plan
 C
 |  Total costs and costs by CO2e unit | Total costs: € 19,970,351
-Costs by CO2eq: € 12,921  |
+| Costs by CO2eq: € 12,921  |
 | --- | --- |
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
@@ -3175,7 +3175,7 @@ C
 |  If yes, which co-benefit does it measure? |   |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | yes  |
 |  If yes, which action and impact pathway is it relevant for? | Mobility and transport - Sustainable mobility infrastructure enhanced
-IMPACT: behaviour change towards low carbon lifestyle  |
+| IMPACT: behaviour change towards low carbon lifestyle  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no  |
 |  Data requirements |   |
 |  Expected data source | City of Velenje  |
@@ -3190,9 +3190,9 @@ IMPACT: behaviour change towards low carbon lifestyle  |
 |  Indicator Name | I6- Use of the BICY system  |
 |  Indicator Unit | Number  |
 |  Definition | 6.1. Number of rentals of the BICY system within the boundaries of the City of Velenje
-Number of users of the BICY system  |
+| Number of users of the BICY system  |
 |  Calculation | 6.1 – Total number of users
-– Total number of users  |
+| – Total number of users  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | yes  |
 |  If yes, which emission source sectors does it measure? | TRANSPORT  |
@@ -3200,7 +3200,7 @@ Number of users of the BICY system  |
 |  If yes, which co-benefit does it measure? |   |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | yes  |
 |  If yes, which action and impact pathway is it relevant for? | Mobility and transport – more commuters practice sustainable mobility
-IMPACT: behaviour change towards low carbon lifestyle  |
+| IMPACT: behaviour change towards low carbon lifestyle  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no  |
 |  Data requirements |   |
 |  Expected data source | Public utility company KP Velenje  |
@@ -3234,7 +3234,7 @@ C
 |  If yes, which co-benefit does it measure? |   |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | yes  |
 |  If yes, which action and impact pathway is it relevant for? | Mobility and transport – more commuters practice sustainable mobility
-IMPACT: behaviour change towards low carbon lifestyle  |
+| IMPACT: behaviour change towards low carbon lifestyle  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no  |
 |  Data requirements |   |
 |  Expected data source | NOMAGO (transport concessionaire)  |
@@ -3257,7 +3257,7 @@ IMPACT: behaviour change towards low carbon lifestyle  |
 |  If yes, which co-benefit does it measure? | Less noise pollution; better air quality  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | yes  |
 |  If yes, which action and impact pathway is it relevant for? | Mobility and transport – more electricity or hydrogen powered vehicles
-IMPACT: behaviour change towards low carbon lifestyle; less noise pollution, better air quality  |
+| IMPACT: behaviour change towards low carbon lifestyle; less noise pollution, better air quality  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no  |
 
 7
@@ -3292,7 +3292,7 @@ C
 |  If yes, which co-benefit does it measure? | Less noise pollution; better air quality  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | yes  |
 |  If yes, which action and impact pathway is it relevant for? | Mobility and transport – more electricity or hydrogen powered vehicles
-IMPACT: behaviour change towards low carbon lifestyle; less noise pollution, better air quality  |
+| IMPACT: behaviour change towards low carbon lifestyle; less noise pollution, better air quality  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no  |
 |  Data requirements |   |
 |  Expected data source | Administrative Unit, ECO Fund database, own surveys (businesses)  |
@@ -3327,7 +3327,7 @@ C
 |  If yes, which co-benefit does it measure? | Less noise; better air quality  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | yes  |
 |  If yes, which action and impact pathway is it relevant for? | Mobility and transport – Public passenger transport decarbonised
-IMPACT: improved image of public transport; less noise pollution; better air quality  |
+| IMPACT: improved image of public transport; less noise pollution; better air quality  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no  |
 |  Data requirements |   |
 |  Expected data source | City of Velenje Administration and/or NOMAGO concessionaire  |
@@ -3350,7 +3350,7 @@ IMPACT: improved image of public transport; less noise pollution; better air qua
 |  If yes, which co-benefit does it measure? | Transit along the city centre reduced  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | yes  |
 |  If yes, which action and impact pathway is it relevant for? | Mobility and transport – Transit through the city reduced.
-IMPACT: less traffic congestion; less noise pollution; better air quality; improved road safety  |
+| IMPACT: less traffic congestion; less noise pollution; better air quality; improved road safety  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no  |
 |  Data requirements |   |
 |  Expected data source | OPSI – Open data Slovenia (traffic report)  |
@@ -3402,7 +3402,7 @@ IMPACT: behaviour change towards low carbon lifestyle  |
 |  Indicator Unit | percentage  |
 |  Definition | Share of other fractions disposed in mixed municipal waste containers (e.g. textile, biowaste, packaging, plastics) identified on the basis of sorting analysis.  |
 |  Calculation | Share = (% of biowaste + % plastics + % packaging + % of textile)/100% waste analysed
-Reduction compared to 2019–2022 results.  |
+| Reduction compared to 2019–2022 results.  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes  |
 |  If yes, which emission source sectors does it measure? | Waste and circular economy  |
@@ -3421,7 +3421,7 @@ Plan
 C
 
 |  If yes, which action and impact pathway is it relevant for? | Waste and circular economy – Improved waste separation, increased recycling rates
-IMPACT: cost savings  |
+| IMPACT: cost savings  |
 | --- | --- |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no  |
 |  Data requirements |   |
@@ -3445,7 +3445,7 @@ IMPACT: cost savings  |
 |  If yes, which co-benefit does it measure? | green jobs, cost savings  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | yes  |
 |  If yes, which action and impact pathway is it relevant for? | Waste and circular economy – circular economy solutions among local actors explored, circular economy solutions among local actors tested and upscaled.
-Impact: cost savings, green jobs  |
+| Impact: cost savings, green jobs  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no  |
 |  Data requirements |   |
 |  Expected data source | City of Velenje Administration  |
@@ -4497,10 +4497,10 @@ The table below enlists the signatories¹ who are committing to this CCC, and th
 |  Name of the signatory (organisation) | Sector / Domain / Level of operation² | Legal form | Name of the responsible person | Position of the responsible person  |
 | --- | --- | --- | --- | --- |
 |  The City of Velenje | Energy systems/ Mobility and transport/ Waste and circular economy/ Green infrastructure and nature-based solutions/ Built environment/ Governance & policy / Social innovation
-local level | Local Authority | Peter Dermol | Mayor  |
+| local level | Local Authority | Peter Dermol | Mayor  |
 |  KOMUNALNO PODJETJE VELENJE, d.o.o.
-Utility Company Velenje, d.o.o. | Energy systems/ Mobility and transport/ Built environment/
-sub-regional level | Limited liability company - public utility company | Gašper Škarja | CEO  |
+| Utility Company Velenje, d.o.o. | Energy systems/ Mobility and transport/ Built environment/ |
+| sub-regional level | Limited liability company - public utility company | Gašper Škarja | CEO  |
 |  KSSENA, Energy Agency | Energy systems/ Mobility and transport/ Built environment/
 Social innovation
 local level | Public institute - Local energy agency | Boštjan Krajnc | CEO  |
@@ -4525,20 +4525,20 @@ Commitments
 #
 
 |  LINEA SP, d.o.o. | Built environment
-local level | Limited liability company | Peter Konečnik | Director  |
+| local level | Limited liability company | Peter Konečnik | Director  |
 | --- | --- | --- | --- | --- |
 |  PUP SAUBERMACHER, d.o.o. | Waste and circular economy
-local level | Limited liability company, concessioner for waste collection | Janez Herodež | CEO  |
+| local level | Limited liability company, concessioner for waste collection | Janez Herodež | CEO  |
 |  MINISTRY OF HEALTH | Mobility and transport/ governance & policy
-national level | Ministry of Health | Dr. Valentina Prevolnik Rupel | Minister  |
+| national level | Ministry of Health | Dr. Valentina Prevolnik Rupel | Minister  |
 |  MINISTRY OF DIGITAL TRANSFORMATION | Energy systems/ built environment/ governance & policy
-national level | Ministry of Digital Transformation | Dr. Emilija Stojmenova Duh | Minister  |
+| national level | Ministry of Digital Transformation | Dr. Emilija Stojmenova Duh | Minister  |
 |  MINISTRY OF PUBLIC ADMINISTRATION,
 Local Self-Government, Non-Governmental Organisations and Political System Directorate | Waste and circular economy/
 Green infrastructure and nature-based solutions/ Governance & policy
 national level | Ministry of Public Administration | Mateja Prešern | Acting Director-General  |
 |  GORENJE, d.o.o. | Energy systems/ Waste and circular economy
-national level | Limited liability company | Tomaž Korošec | Executive Vice President  |
+| national level | Limited liability company | Tomaž Korošec | Executive Vice President  |
 |  MEGA M, d.o.o. | Mobility and transport
 local level | Limited liability company | Matej Meža | CEO  |
 2
@@ -4558,23 +4558,23 @@ Commitments
 #
 
 |  TIKI HVAC, d.o.o. | Energy systems
-local level | Limited liability company | Peter Šilc | CEO  |
+| local level | Limited liability company | Peter Šilc | CEO  |
 | --- | --- | --- | --- | --- |
 |  VONPHARMA SI, d.o.o. | Energy systems/ Mobility and transport/ Waste and circular economy
-local level | Limited liability company | Tadej von Horvath | CEO  |
+| local level | Limited liability company | Tadej von Horvath | CEO  |
 |  ESOTECH, d.d. | Energy systems
-local level | Joint stock company
-Company for Development and Implementation of Environmental Solutions and Power Technologies | Marko Škoberne | Chairman of the Board  |
+| local level | Joint stock company |
+| Company for Development and Implementation of Environmental Solutions and Power Technologies | Marko Škoberne | Chairman of the Board  |
 |  VEPLAS, d.d. | Waste and circular economy
-local level | Joint Stock company | Gregor Vedenik
-Helena Šumah Zaluberšek | Executive Director
-Executive Director  |
+| local level | Joint Stock company | Gregor Vedenik |
+| Helena Šumah Zaluberšek | Executive Director |
+| Executive Director  |
 |  ELPA, d.o.o. | Energy systems
-local level | Limited liability company | Darja Goltnik | Director  |
+| local level | Limited liability company | Darja Goltnik | Director  |
 |  APS, Avtoprevozništvo in servisi, d.d. | Mobility and transport
-local level | Joint stock company road and services | Zoran Zager | CEO  |
+| local level | Joint stock company road and services | Zoran Zager | CEO  |
 |  CORE, d.o.o. | Governance & polic
-local level | Limited liability company | Rok Urbanc | CEO  |
+| local level | Limited liability company | Rok Urbanc | CEO  |
 |  SAŠA INKUBATOR, d.o.o.,
 Company for Entrepreneurial and Business Consulting | Waste and circular economy/
 Social innovatio | Limited liability company | Ana Anžej | Director  |
@@ -4595,16 +4595,16 @@ Commitments
 |   | local level |  |  |   |
 | --- | --- | --- | --- | --- |
 |  RAZVOJNA AGENCIJA SAVINJSKO-ŠALEŠKE REGIJE, d.o.o.
-Development Agency of SAŠA Region | Energy systems/ Mobility and transport
-sub-regional level | Limited liability company | Biljana Škarja | CEO  |
+| Development Agency of SAŠA Region | Energy systems/ Mobility and transport |
+| sub-regional level | Limited liability company | Biljana Škarja | CEO  |
 |  SIMBIO, d.o.o. | Waste and circular economy
-sub-regional level | Limited liability company | Mag. Marko Zidanšek | Director  |
+| sub-regional level | Limited liability company | Mag. Marko Zidanšek | Director  |
 |  IPoP-Institute for Spatial Policies, | Mobility and transport
-national level | NGO | Marko Peterlin | Director  |
+| national level | NGO | Marko Peterlin | Director  |
 |  ŠOLSKI CENTER VELENJE | Mobility and transport/ Waste and circular economy/ Social innovation
-local level | Educational, research and development centre | Janko Pogorelčnik | Director  |
+| local level | Educational, research and development centre | Janko Pogorelčnik | Director  |
 |  PRIMARY SCHOOL GORICA, VELENJE | Mobility and transport/ Waste and circular economy/ Built Environment
-local level | Educational, research and development centre | Barbara Trebižan | Headmaster  |
+| local level | Educational, research and development centre | Barbara Trebižan | Headmaster  |
 |  CVIU- Center for behaviour, education and training Velenje | Mobility and transport/ Waste and circular economy/ Built Environment
 local level | Educational, research and development centre | Aleksander Vališer | The principal  |
 4
@@ -4636,11 +4636,11 @@ ENVIRONMENTAL
 PROTECTIONS | Mobility and transport/ Waste and circular economy
 local level | Faculty – environmental protection | Gašper Gantar | CEO  |
 |  TIE d.o.o. | Energy systems
-local level | Limited liability company | Matej Meža | CEO  |
+| local level | Limited liability company | Matej Meža | CEO  |
 |  T-2, d.o.o. | Energy systems/ Mobility and transport
-national level | Limited liability company | Jože Zrimšek | Member of Management  |
+| national level | Limited liability company | Jože Zrimšek | Member of Management  |
 |  FOCUS, Association for Sustainable Development | Mobility and transport/ Waste and circular economy
-national leve | NGO | Živa Kavka Gobbo | Representative  |
+| national leve | NGO | Živa Kavka Gobbo | Representative  |
 |  PNF d.o.o. | Waste and circular economy/
 Social innovation
 local level | Limited liability company | Maja Ferme | CEO  |
@@ -4686,19 +4686,19 @@ Commitments
 |   | local level |  |  |   |
 | --- | --- | --- | --- | --- |
 |  RED HALL- sports and recreation institute | Energy systems/ Waste and circular economy
-local level | Public institution | Dimitrij Amon | Director  |
+| local level | Public institution | Dimitrij Amon | Director  |
 |  VELENJE MEDICAL CENTER | Built Environment
-local level | Public institution | Janez Kramar | CEO  |
+| local level | Public institution | Janez Kramar | CEO  |
 |  PHARMACY VELENJE | Waste and circular economy
-local level | Public institution | Sabina Grm | Director  |
+| local level | Public institution | Sabina Grm | Director  |
 |  CARE HOME FOR ADULTS VELENJE | Mobility and transport/ Waste and circular economy/ Built Environment
-local level | Public institution | Violeta Potočnik Krajnc | Director  |
+| local level | Public institution | Violeta Potočnik Krajnc | Director  |
 |  YOUTH CENTER VELENJE | Waste and circular economy
-local level | Public institution | Janko Urbanc | Director  |
+| local level | Public institution | Janko Urbanc | Director  |
 |  CONSTRUCTION CLUSTER OF SLOVENIA | Built Environment
-national level | Economic Interest Group | Vladimir Gumilar | Director  |
+| national level | Economic Interest Group | Vladimir Gumilar | Director  |
 |  SPAR SLOVENIJA, d.o.o. | Energy systems/ Waste and circular economy
-national level | Limited liability company | David Kovačič | General Director  |
+| national level | Limited liability company | David Kovačič | General Director  |
 |  ENVIRODUAL, d.o.o. | Energy systems/ | Limited liability company | Katarina Pogačnik | CEO  |
 7
 
@@ -4717,20 +4717,20 @@ Commitments
 |   | international level |  |  |   |
 | --- | --- | --- | --- | --- |
 |  MERCATOR, d.o.o. | Energy systems/ Waste and circular economy
-national level | Limited liability company | Tomislav Kramarić | CEO  |
+| national level | Limited liability company | Tomislav Kramarić | CEO  |
 |  SRIP, Strategic Research and Innovation Partnership- Networks for the Transition to a Circular Economy | Waste and circular economy
-National level | NGO | Nina Meglič | Coordinator  |
+| National level | NGO | Nina Meglič | Coordinator  |
 |  AGRICULTURAL INSTITUTE OF SLOVENIA | Green infrastructure and NBS
-national level | Public research institute
-Agricultural Institute of Slovenia | Andrej Simončič | Director  |
+| national level | Public research institute |
+| Agricultural Institute of Slovenia | Andrej Simončič | Director  |
 |  JOŽEF STEFAN INSTITUTE | Energy systems/ Mobility and transport/ Waste and circular economy/ Built environment
-national level | Public research institute
-Slovenian scientific research institute | Boštjan Zalar | Director  |
+| national level | Public research institute |
+| Slovenian scientific research institute | Boštjan Zalar | Director  |
 |  NATIONAL INSTITUTE OF CHEMISTRY | Energy systems
-national level | Public research institute
-National Institute of Chemistry | Gregor Anderluh | Director  |
+| national level | Public research institute |
+| National Institute of Chemistry | Gregor Anderluh | Director  |
 |  STUDIO MF, d.o.o. | Waste and circular economy/ Social innovation
-local level | Limited liability company | Maja Ferme | CEO  |
+| local level | Limited liability company | Maja Ferme | CEO  |
 |  ELES, d.o.o. | Energy systems | Limited liability company | Aleksander Mervar | CEO  |
 8
 
@@ -4749,22 +4749,22 @@ Commitments
 |   | national level |  |  |   |
 | --- | --- | --- | --- | --- |
 |  ZMOS
-Association of Urban Municipalities of Slovenia | Governance & policy / Social innovation
-national level | Association | Miran Košpenda | Secretary General  |
+| Association of Urban Municipalities of Slovenia | Governance & policy / Social innovation |
+| national level | Association | Miran Košpenda | Secretary General  |
 |  SOS
-Association of Municipalities and Towns of Slovenia | Governance & policy / Social innovation
-national level | Association | Jasmina Vidmar | Secretary General  |
+| Association of Municipalities and Towns of Slovenia | Governance & policy / Social innovation |
+| national level | Association | Jasmina Vidmar | Secretary General  |
 |  PRIMARY SCHOOL MIHA PINTAR TOLEDO VELENJE | Mobility and transport/ Waste and circular economy/ Built Environment
-local level | Primary school Miha Pintar Toledo, Velenje | Mobility and transport/ Waste and circular economy/ Built Environment
-local level | Primary school Miha Pintar Toledo, Velenje  |
+| local level | Primary school Miha Pintar Toledo, Velenje | Mobility and transport/ Waste and circular economy/ Built Environment |
+| local level | Primary school Miha Pintar Toledo, Velenje  |
 |  LIDL, d.o.o. k.d. | Energy systems/ Waste and circular economy
-national level | Limited liability company | Ivan Udiljak
-Metka Šiljak Šturm | Director
-Procurator  |
+| national level | Limited liability company | Ivan Udiljak |
+| Metka Šiljak Šturm | Director |
+| Procurator  |
 |  VIMOSA, d.o.o. | Energy systems
-national level | Limited liability company | Andrej Fajmut | CEO  |
+| national level | Limited liability company | Andrej Fajmut | CEO  |
 |  LUCI, d.o.o. | Energy systems/ Waste and circular economy
-local level | Limited liability company | Martina Meke | CEO  |
+| local level | Limited liability company | Martina Meke | CEO  |
 |  PROSTOROŽ, Urban design studio | Green infrastructure and nature-based solutions | NGO | Maša Cvetko | Representative  |
 9
 
@@ -4783,15 +4783,15 @@ Commitments
 |   | national level |  |  |   |
 | --- | --- | --- | --- | --- |
 |  Ministry of the Environment, Climate and Energy | Energy systems/ mobility and transport/ built environment/ governance & policy
-national level | Ministry of the Environment, Climate and Energy | Bojan Kumer | Minister  |
+| national level | Ministry of the Environment, Climate and Energy | Bojan Kumer | Minister  |
 |  Eurofins Erico SI d.o.o. | Energy systems/ Waste and circular economy
-local level | Limited liability company | Matej Šuštaršič | Managing Director  |
+| local level | Limited liability company | Matej Šuštaršič | Managing Director  |
 |  MARLES HIŠE MARIBOR d.o.o. | Waste and circular economy
-national level | Limited liability company | Tadej Gosak | Director  |
+| national level | Limited liability company | Tadej Gosak | Director  |
 |  Administrative Unit Velenje | Built Environment
-local level | Public institution | Franja Tevž | Head  |
+| local level | Public institution | Franja Tevž | Head  |
 |  The City of Šoštanj | Energy systems/ Mobility and transport/ Waste and circular economy/ Green infrastructure and nature-based solutions/ Built environment/ Governance & policy / Social innovation
-local level | Local Authority | Boris Goličnik | Mayor  |
+| local level | Local Authority | Boris Goličnik | Mayor  |
 |  Premogovnik Velenje d.o.o. (Velenje Coal Mine) | Energy systems
 national level | Limited liability company | Marko Mavec | General Manager  |
 0

@@ -318,15 +318,6 @@ Climate Neutrality Action Plan
 | Unidentified                                |          |         |         |         |
 | Electricity                                 |          | 9.511   |         | 9.511   |
 | Natural Gas                                 | 35.070   |         |         | 35.070  |
-
-5
-
-leuven
-
-Climate Neutrality Action Plan
-
-C
-
 | A-1.1: Remarks                      |                                                                                                                                               |
 | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | Source                              | 2019-24062_LEUVEN_nulmeting_zonder_snelwegen_lok EFE.xlsx                                                                                     |
@@ -334,13 +325,6 @@ C
 | Transport                           | Private (particulier), commercial (commercieel) and public transport (openbaar vervoer)<br>Tab data: Wegtransport/Snelwegen column D set to 0 |
 | Industrial Process and Product Use  | Industrie (niet-ETS)                                                                                                                          |
 | Agricultural, Forestry and Land Use | Landbouw                                                                                                                                      |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | A-1.2: Emission Factors Applied                      |                                                                                                                              |               |                     |                                                   |                            |                            |
 | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------- | ------------------- | ------------------------------------------------- | -------------------------- | -------------------------- |
 | Unit                                                 |                                                                                                                              |               | Tons/MWh            |                                                   |                            |                            |
@@ -422,13 +406,6 @@ Climate Neutrality Action Plan
 | Agricultural, Forestry and Land Use         | Tab Landbouw in the spreadsheet 2019-24062_LEUVEN_nulmeting_zonder snelwegen_lok EFE                                                                                                                                                                                                                           |
 | Waste                                       | This is the sum of 10,7 kTon CO2 for household residual waste incineration (EcoWerf figures) supplemented by 37,1 kTon CO2 for business waste incineration. For the latter, Flemish figures were used and extrapolated to Leuven size based on the number of companies. Source: Afvalcijfers_Leuven_2022.xlsx. |
 | Forestry                                    | Calculated in 2013: -12 kTon CO2                                                                                                                                                                                                                                                                               |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | A-1.4: GHG Emissions by Source Sectors      |                                                                                                              |         |         |         |
 | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ------- | ------- | ------- |
 | Base Year                                   | 2019                                                                                                         |         |         |         |
@@ -615,13 +592,6 @@ Module A-2 Current Policies and Strategies Assessment
 | Spatial Policy Plan                                          | A vision for land use in the province                                                                                                                                                                                            |
 | Regionet Leuven                                              | A vision for sustainable mobility and land use in the Leuven region                                                                                                                                                              |
 | Planning Ordinance on Impermeable Surfaces                   | A set of rules governing impermeable surfaces                                                                                                                                                                                    |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | Energy and Climate Plan 2021-2030                                | A plan presenting existing and planned measures across ESR sectors (transport, buildings, agriculture, small industry, and waste), with a goal to reduce emissions by 40% by 2030 (compared to 2005) |
 | ---------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Climate Strategy 2050                                            | A long-term climate strategy that sets a goal of reducing emissions by 85% by 2050 (compared to 2005)                                                                                                |
@@ -643,13 +613,6 @@ Climate Neutrality Action Plan
 | Energy Regulation of 19 November 2010, Articles 9.1.15 to 9.1.16 | A set of standards for building renovations                                                                                                                                                          |
 | Energy Regulation of 19 November 2010, Articles 9.3.1 to 9.3.2   | A rule requiring all non-residential units to meet specific standards for energy performance within five years of sale or other forms of transfer                                                    |
 | Energy and Climate Plan 2021-2030                                | An integrated energy and climate plan, drawn up and submitted to the European Commission in compliance with the EU's Governance Regulation                                                           |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | Long-Term Strategy                                                        | A long-term climate strategy, drawn up and submitted to the European Commission in compliance with the EU's Governance Regulation                                |
 | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
 | Net-Zero or Growth? How Belgium Can Have Both                             | A report outlining a pathway to net-zero emissions                                                                                                               |
@@ -1093,14 +1056,6 @@ A-3.2: Description of Systemic Barriers and Opportunities â€“ Textual Eleme
 | High upfront costs and a lack of experience with capital and investment planning | Decarbonizing Leuvenâ€™s heating systems requires significant upfront investment, potentially as much as â‚¬500 million. Meeting this capital need will likely require a blend of public and private capital. The city has no vehicle in place with which to prepare and deliver such large-scale blended finance and has limited experience with capital and investment planning. Another complication is that there is no strong business model. |
 | Scale and complexity                                                             | Moving the cityâ€™s centuries-old building stock from natural gas to green heat at the pace and scale required to achieve net-zero emissions by 2030 calls for the initiation and implementation of 20 to 30 place-based transition projects in a span of less than eight years. Moreover, those projects will intersect with activity in other domains, adding complexity.                                                                        |
 | Access to data                                                                   | The cityâ€™s energy strategy relies exclusively on public data. This has produced a clear picture of household consumption but a fuzzy one for large consumers.                                                                                                                                                                                                                                                                                    |
-
-2
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | Built Environment               |                                                                                                                                                                                                                                                                                                               |
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Barrier                         | Description                                                                                                                                                                                                                                                                                                   |
@@ -1111,13 +1066,6 @@ Climate Neutrality Action Plan
 | A lack of enabling policy       | Higher-level policy is insufficiently supportive. There is little appetite to explore novel approaches in finance (e.g., on-tax or on-bill financing) and regulation (e.g., regulatory sandboxes). There are few legal/regulatory requirements to renovate. Fiscal incentives continue to favor fossil fuels. |
 | Need for a tailored approach    | Not all interventions are possible in every type of building. There is often a need to balance renovation with other aspects (e.g., architectural heritage), necessitating a customized approach.                                                                                                             |
 | Capacity                        | There is a lack of capacity to renovate municipal buildings at the pace and scale needed to meet Mission objectives.                                                                                                                                                                                          |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | Mobility & Transport              |                                                                                                                                                                                                                                                              |
 | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Barrier                           | Description                                                                                                                                                                                                                                                  |
@@ -1132,13 +1080,6 @@ Climate Neutrality Action Plan
 | Sprawl                            | Inaction at the regulatory level, coupled with the widespread availability of land for new construction outside of urban areas, has continued the trend of sprawl, increasing car dependency.                                                                |
 | Urban freight distribution        | City logistics are highly fragmented and vehicles use only part of their load factor when delivering goods. There is a need to consolidate deliveries and shift to sustainable modes of transportation.                                                      |
 | Accessibility and inclusion       | Sustainable modes of transportation may present physical and financial barriers as well as barriers relating to digitalization. There is a need for closer study and a dedicated effort to address such issues and ensure that the modal shift is inclusive. |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | Nature-Based Solutions & Green Infrastructure |                                                                                                                                                                                                                                                                                   |
 | --------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Barrier                                       | Description                                                                                                                                                                                                                                                                       |
@@ -1150,13 +1091,6 @@ Climate Neutrality Action Plan
 | Access to data                                | There are opportunities for a more data-driven approach to NBS.                                                                                                                                                                                                                   |
 | Inter-municipal cooperation                   | Expanding and strengthening nature in the broader Leuven region requires coordination and alignment with other municipalities.                                                                                                                                                    |
 | Capacity                                      | Capacity constraints limit the pace and scale of action.                                                                                                                                                                                                                          |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | Waste & Circularity                           |                                                                                                                                                                                                                                  |
 | --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Barrier                                       | Description                                                                                                                                                                                                                      |
@@ -1584,13 +1518,6 @@ A spreadsheet containing the larger portfolio structure within which the individ
 | 21                                                            | Renovation of City Building Stock â€“ Clusters                         |
 | 22                                                            | Renovation of Hal 9                                                    |
 |                                                               | NEW BUILDINGS                                                          |
-
-leuven
-
-Climate Neutrality Action Plan
-
-8
-
 | 23                                                | Centre for Performing Arts                                |
 | ------------------------------------------------- | --------------------------------------------------------- |
 | **POLICY & GOVERNANCE**                           |                                                           |
@@ -1633,13 +1560,6 @@ Climate Neutrality Action Plan
 | 52                                                | Materials Bank â€“ URC                                    |
 | 53                                                | EcoWerf â€“ URC                                           |
 | **BUILDING STOCK**                                |                                                           |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | 54                   | Circular Economy & Waste in Building Stock of UZ Leuven |
 | -------------------- | ------------------------------------------------------- |
 | 55                   | Circular Economy & Waste in Building Stock of KU Leuven |
@@ -1731,13 +1651,6 @@ The indicator set outlined above was selected based on both relevance and workab
 |                                     |                                                                                                                                                                                                                                                                                                                                                                                       |     |                                     |                | 2019     | 2025          | 2027    | 2030   |
 | ES - 2.1, ES - 3.1, all BE pathways | ESCollective Green Heat Pilots 1-5, Net-Zero Brewing Leuven (InBev), Process Emissions (Imec), Heat Pump (Beneo), Carbon-Neutral Steam Production (Beneo), Case: Cold and Heat Exchange Study (KUL-imec), Leuven Energy Company, Motivating Inspirational Framework Urban Development Projects, Green Heat in Urban Planning Tools, Energy Sharing / Energy CommunitiesBEAll projects | 001 | GHG emission from stationary energy | t CO2-eq/y     | 305.414  | 160.000       | 100.000 | 37.300 |
 | ES - 3.1                            | ESNet-Zero Brewing Leuven (InBev), Process Emissions (Imec), Heat Pump (Beneo), Carbon-Neutral Steam Production (Beneo), Case: Cold and Heat Exchange Study (KUL-imec)CEMaterials Bank - MaterialsWienerberger - MaterialsPlastics Hub - MaterialsMaterials Bank - URCEcowerf - URC                                                                                                   | 002 | GHG emission from IPPU              | t CO2-eq/y     | 30.900   | 22.900        | 20.300  | 16.300 |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | ES - 2.1, ES - 3.1, all BE pathways, MOB - 1.1, MOB - 2.1, MOB - 4.1 | ES Collective Green Heat Pilots 1-5, Net-Zero Brewing Leuven (InBev), Process Emissions (Imec), Heat Pump (Beneo), Carbon-Neutral Steam Production (Beneo), Case: Cold and Heat Exchange Study (KUL-imec)BE All projectsMOB All projects                                                                                | 003 | Energy use by fuel type within city boundary | MWh/y                               | Reported in Module A-1 | /       | /       | Reported in CCC CO2 calculations. |
 | -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | -------------------------------------------- | ----------------------------------- | ---------------------- | ------- | ------- | --------------------------------- |
 | ES - 1.1, ES - 1.2                                                   | ES Solar Energy for Every Leuven Resident, Large-Scale Deployment of PV Panels Large Buildings, Zonnebouwers+ (ECoOB)                                                                                                                                                                                                   | 004 | Local RE production                          | MWh/y                               | 21.000                 | 81.200  | 101.200 | 131.300                           |
@@ -1747,13 +1660,6 @@ Climate Neutrality Action Plan
 | All ES and BE pathways, MOB - 2.1, MOB - 4.1                         | ES - BE All projects (direct or indirect via electrification of heat demand)MOB Scaling Up Charging Infrastructure Sustainable Urban Logistics Cargo Transport Electrification - Trucks (Colruyt, AB InBev, Siemens) Electrification Waste Transport (EcoWerf) Hydrogen Panels (EcoWerf) CO2-Neutral Cargo Ship (Beneo) | 005 | GHG emissions from grid supplied energy      | t CO2-eq/y                          | 47.600                 | 30.300  | 24.500  | 15.800                            |
 | ES - 1.1, ES - 1.2, ES - 1.3                                         | ES Solar Energy for Every Leuven Resident, Large-Scale Deployment of PV Panels Large Buildings, Zonnebouwers+ (ECoOB)                                                                                                                                                                                                   | 006 | GHG emissions from grid supplied energy      | t CO2-eq/MWh                        | 0,0619                 | 0,0370  | 0,0287  | 0,0162                            |
 | ES - 2.1                                                             | ES Pilots 1-5, Heat Pump (Beneo), Leuven Energy Company, Motivating Inspirational Framework Urban Development Projects, Green Heat in                                                                                                                                                                                   | 007 | Heat and cold delivery via district heating  | MWh/y                               | 0                      | 173.500 | 231.300 | 318.000                           |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 |                                           | Urban Planning Tools, Case: Cold and Heat Exchange Study (KUL-imec)                                                                                                                                                                                                                            |     |                                                      |                                                         |         |         |        |      |
 | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | ---------------------------------------------------- | ------------------------------------------------------- | ------- | ------- | ------ | ---- |
 | BE - 1.4 (BE - 1.1, BE -1.2, BE - 1.3)    | ES Solar Energy for Every Leuven Resident, Leuven Energy Company, Zonnebouwers+ (ECoOB)                                                                                                                                                                                                        | 008 | Energy poverty                                       | % of households with active budget meter                | 0,89    | -       | -      | -    |
@@ -1766,13 +1672,6 @@ Climate Neutrality Action Plan
 | BE - 1.1, BE - 1.2, BE - 1.3, BE - 1.4    | BE Klimaathuis                                                                                                                                                                                                                                                                                 | 013 | Number of granted renovation subsidies in Leuven     | #/y                                                     | 2.128   | -       | -      | -    |
 | BE - 3.1, NBS - 1.1, NBS - 1.3, NBS - 1.4 | NBS Climate Adaptation Policy Climate Adaptation Taskforce Climate Adaptation Toolkit Molenbeek Valley                                                                                                                                                                                         | 014 | Growth rate of sealed land                           | mÂ³/y                                                   | 296.359 | 134.700 | 80.800 | 0    |
 | NBS - 1.1                                 | NBS Climate Adaptation Policy                                                                                                                                                                                                                                                                  | 015 | Average minimum and maximum                          | days/y                                                  | 6,2     | -       | -      | -    |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 |                                            | Climate Adaptation Taskforce Climate Adaptation Toolkit Molenbeek Valley                                                                               |     | temperature on heatwave days.                                                                               |                                   |                                                                        |        |         |                                                               |
 | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ | --- | ----------------------------------------------------------------------------------------------------------- | --------------------------------- | ---------------------------------------------------------------------- | ------ | ------- | ------------------------------------------------------------- |
 | NBS - 1.1                                  | NBS Climate Adaptation Policy Climate Adaptation Taskforce Climate Adaptation Toolkit Digital Twin Climate Adaptation                                  | 017 | Number of potential vulnerable institutions where NBS targeting heat stress reduction have been implemented | Adapted locations/total locations | Unknown/146                                                            | 80/146 | 106/146 | 146/146                                                       |
@@ -1783,13 +1682,6 @@ Climate Neutrality Action Plan
 | NBS - 1.5                                  | NBS Climate Adaptation Policy Trees for Leuven                                                                                                         | 028 | Percentage of buildings where the 3-30-300 rule is met.                                                     | % of buildings                    | -                                                                      | -      | -       | -                                                             |
 | NBS - 1.6, MOB - 1.1, MOB - 2.1, MOB - 4.1 | NBS Climate Adaptation Policy Climate Adaptation Taskforce Digital Twin Climate Adaptation Climate Adaptation Toolkit Trees for Leuven                 | 030 | PM2.5 concentration levels                                                                                  | ug/mÂ³                            | Multiple measurement points                                            | -      | -       | Better than reference year (2019) in every measurement point. |
 | NBS - 1.6, MOB - 1.1, MOB - 2.1, MOB - 4.1 | NBS Climate Adaptation Policy Climate Adaptation Taskforce Digital Twin Climate Adaptation Climate Adaptation Toolkit                                  | 031 | PM10 concentration levels                                                                                   | Number of days                    | Multiple measurement points                                            | -      | -       | Better than reference year (2019) in every measurement point. |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 |                                            | Trees for Leuven                                                                                                                                                                                                                |     |                                                                                             |                        |                             |        |        |                                                               |
 | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | ------------------------------------------------------------------------------------------- | ---------------------- | --------------------------- | ------ | ------ | ------------------------------------------------------------- |
 | NBS - 1.6, MOB - 1.1, MOB - 2.1, MOB - 4.1 | NBS Climate Adaptation Policy Climate Adaptation Taskforce Digital Twin Climate Adaptation Climate Adaptation Toolkit Trees for Leuven                                                                                          | 032 | NO2concentration levels                                                                     | ug/m3                  | Multiple measurement points | -      | -      | Better than reference year (2019) in every measurement point. |
@@ -1801,23 +1693,9 @@ Climate Neutrality Action Plan
 | NBS - 1.7                                  | NBS Climate Adaptation Policy Trees for Leuven                                                                                                                                                                                  | 038 | Net increase in area of "neighborhood forests"                                              | m2/y                   | 1.955 (2020)                | -      | -      | -                                                             |
 | NBS - 2.1, NBS - 3.1, NBS - 3.2            | NBS Climate Adaptation Policy Climate Adaptation Taskforce Climate Adaptation Toolkit Molenbeek Valley Case: Nature-Inclusive Carbon Farming on a City-Regional Scale (Provincie Vlaams-Brabant) Case: Carbon Farming (Arvesta) | 039 | GHG emission from AFOLU                                                                     | t CO2-eq/y             | -7.275                      | -      | -      | -                                                             |
 | NBS - 2.1, NBS - 3.1, NBS - 3.2            | NBS Climate Adaptation Policy Climate Adaptation Taskforce Case: Nature-Inclusive Carbon Farming on a City-Regional Scale (Provincie Vlaams-Brabant) Case: Carbon Farming (Arvesta)                                             | 040 | Surface area of agricultural land where carbon sequestration measures have been implemented | ha                     | -                           | -      | -      | -                                                             |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | MOB - 1.1, MOB - 2.1, MOB - 4.1 | MOB Development of a Regional Bicycle Network Small-Scale Public Space Project Program Sustainable Commuting Network Shared Mobility for Every Leuven Resident Ring Road as a Multimodal Hub Expansion of a High-Quality Public Transportation Network Sustainable Parking Policy of the City of Leuven Sustainable Parking Policy at KU Leuven Scaling Up Charging Infrastructure Mobility for All Sustainable Urban Logistics Electrification Waste Transport (EcoWerf) Hydrogen Panels (EcoWerf) CO2-Neutral Cargo Ship (Beneo) CE Materials Bank - Materials Wienerberger - Materials Plastics Hub - Materials Materials Bank - URC EcoWerf - URC | 041 | GHG emission from transport                                   | t CO2-eq/y | -                      | -   | -   | -                                 |
 | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | ------------------------------------------------------------- | ---------- | ---------------------- | --- | --- | --------------------------------- |
 | MOB - 1.1, MOB - 2.1, MOB - 4.1 | MOB Development of a Regional Bicycle Network Small-Scale Public Space Project Program Sustainable Commuting Network Shared Mobility for Every Leuven Resident Ring Road as a Multimodal Hub Expansion of a High-Quality Public Transportation Network Sustainable Parking Policy of the City of Leuven Sustainable Parking Policy at KU Leuven Scaling Up Charging Infrastructure Mobility for All Sustainable Urban Logistics Electrification Waste Transport (EcoWerf) Hydrogen Panels (EcoWerf) CO2-Neutral Cargo Ship (Beneo) CE Materials Bank - Material Wienerberger - Material Plastics Hub - Material                                       | 042 | Fuel consumption for in-boundary transportation per fuel type | MWh/y      | Reported in Module A-1 | /   | /   | Reported in CCC CO2 calculations. |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 |           | Materials Bank - URC EcoWerf - URC                                                                                                                                                                                                                                                                                                                         |     |                                                                             |                       |                                                     |     |     |           |
 | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | --------------------------------------------------------------------------- | --------------------- | --------------------------------------------------- | --- | --- | --------- |
 | MOB - 1.1 | MOB Development of a Regional Bicycle Network Sustainable Commuting Network Shared Mobility for Every Leuven Resident Ring Road as a Multimodal Hub Expansion of a High-Quality Public Transportation Network Sustainable Parking Policy of the City of Leuven Sustainable Parking Policy at KU Leuven Scaling Up Charging Infrastructure Mobility for All | 043 | Modal share of green transport modes (biking, walking and public transport) | %                     | 35                                                  | -   | -   | 60        |
@@ -1827,13 +1705,6 @@ Climate Neutrality Action Plan
 | MOB - 1.1 | MOB Sustainable Parking Policy of the City of Leuven                                                                                                                                                                                                                                                                                                       | 047 | Number of parking spots on public domain                                    | #                     | -                                                   | -   | -   | -         |
 | MOB - 2.2 | MOB Small-Scale Public Space Project Program Ring Road as a Multimodal Hub                                                                                                                                                                                                                                                                                 | 048 | Road Deaths & Injured                                                       | #/1.000 inhabitants/y | 5,4 light injuries 0,26 severe injuries 0,03 deaths | -   | -   | -         |
 | MOB - 2.2 | MOB Development of a Regional Bicycle Network Small-Scale Public Space Project Program                                                                                                                                                                                                                                                                     | 049 | Traffic Safety Active Modes                                                 | #/y                   | 257 (light injury) +20 (severe injury)              | -   | -   | -         |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 |           | Ring Road as a Multimodal Hub                                                                                                                                                                                                                                                                                                    |     |                                                              |             | +0 (deaths 30 days (bike) 52 (light injury) +3 (severe injury) +2 (deaths 30 days) (pedestrian) |                                                |       |                                                     |
 | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | ------------------------------------------------------------ | ----------- | ----------------------------------------------------------------------------------------------- | ---------------------------------------------- | ----- | --------------------------------------------------- |
 | MOB - 3.1 | MOB Scaling Up Charging Infrastructure                                                                                                                                                                                                                                                                                           | 050 | Number of EV charging points                                 | #           | 177 (public, 2022)                                                                              | -                                              | -     | 7,200 + 920 for fast charging ((semi-)public)       |
@@ -1841,13 +1712,6 @@ Climate Neutrality Action Plan
 | CE - all  | WCE Materials Bank - Materials Wienerberger - Materials Plastics Hub - Materials Materials Bank - URC EcoWerf - URC CE&W (Circular Economy & Waste) in Building Stock of UZ Leuven (University Hospital) CE&W (Circular Economy & Waste) in Building Stock of KU Leuven CE&W(Circular Economy & Waste) in Building Stock of imec | 053 | GHG emission from waste                                      | t CO2-eq/y  | 47.864                                                                                          | -                                              | -     | -                                                   |
 | CE - all  | WCE Materials Bank - Materials Wienerberger - Materials Plastics Hub - Materials Materials Bank - URC EcoWerf - URC CE&W (Circular Economy & Waste) in Building Stock of UZ Leuven (University Hospital) CE&W (Circular Economy & Waste) in Building Stock of KU Leuven CE&W(Circular Economy & Waste) in Building Stock of imec | 054 | Mass of waste produced per capita                            | kg/capita/y | HH: 363 Non-HH: 335                                                                             | -                                              | -     | Lokaal Materialenplan 2023-2030 HH: 254 Non-HH: 235 |
 | CE - all  | WCE Materials Bank - Materials Wienerberger - Materials Plastics Hub - Materials Materials Bank - URC EcoWerf - URC                                                                                                                                                                                                              | 055 | Percentage of waste processed per end-of-life treatment type | %           | Recycling: 42% Composting: 12% Incineration: 46%                                                | Lokaal Materialenplan 2023-2030 Recycling: 55% | -     | Lokaal Materialenplan 2023-2030 Recycling: 60%      |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | | CE&W (Circular Economy & Waste) in Building Stock of UZ Leuven (University Hospital)
 CE&W (Circular Economy & Waste) in Building Stock of KU Leuven
 CE&W(Circular Economy & Waste) in Building Stock of imec | | | | | | | |
@@ -1864,12 +1728,6 @@ EcoWerf - URC
 | CE - 2.1 | WCE; Plastics Hub - Materials; CE&W in Building Stock of UZ Leuven | 058 | Amount of recycled plastics | t/y | 2.400 | - | - | HH: 70%; Non-HH: 65% |
 | CE - 2.1 | WCE; Plastics Hub - Materials; CE&W in Building Stock of UZ Leuven | 060 | Circular Material Use Rate (CMU) for plastics (reuse, repair, repurpose) | t/y | - | - | - | - |
 | - | WCE; Plastics Hub - Materials; Materials Bank - Materials; Wienerberger - Materials; Materials Bank - URC; EcoWerf - URC | 061 | Inflow of Critical Raw Materials | t/y | - | - | - | - |
-1
-
-leuven
-
-Climate Neutrality Action Plan
-
 | | CE&W (Circular Economy & Waste) in Building Stock of UZ Leuven (University Hospital)
 CE&W (Circular Economy & Waste) in Building Stock of KU Leuven
 CE&W(Circular Economy & Waste) in Building Stock of imec | | | | | | | |
@@ -1904,13 +1762,6 @@ ENERGY SYSTEMS &amp; BUILT ENVIRONMENT
 | References                                                                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | Deliverables describing the indicator                                                   | CoM CO2 Inventory                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | Other indicator systems using this indicator                                            | /                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                                                                                                                                                                                                                                                           |
 | --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                                                                                                                                                                                                                                                           |
@@ -1933,13 +1784,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                                                                                                                                                                                                                                                           |
 | Deliverables describing the indicator                                                   | CoM CO2 Inventory                                                                                                                                                                                                                                                                                                                         |
 | Other indicator systems using this indicator                                            | /                                                                                                                                                                                                                                                                                                                                         |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                |
 | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                |
@@ -1962,13 +1806,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                |
 | Deliverables describing the indicator                                                   | CoM CO2 Inventory                                                                              |
 | Other indicator systems using this indicator                                            | /                                                                                              |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                                                                                                                                                                                                                          |
 | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                                                                                                                                                                                                                          |
@@ -1991,13 +1828,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                                                                                                                                                                                                                          |
 | Deliverables describing the indicator                                                   | CoM CO2 Inventory                                                                                                                                                                                                                                                                                        |
 | Other indicator systems using this indicator                                            | /                                                                                                                                                                                                                                                                                                        |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                                                                                                                |
 | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                                                                                                                |
@@ -2020,13 +1850,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                                                                                                                |
 | Deliverables describing the indicator                                                   | CoM CO2 Inventory                                                                                                                                                                              |
 | Other indicator systems using this indicator                                            | /                                                                                                                                                                                              |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                     |
 | --------------------------------------------------------------------------------------- | --------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                     |
@@ -2049,13 +1872,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                     |
 | Deliverables describing the indicator                                                   | CoM CO2 Inventory                                   |
 | Other indicator systems using this indicator                                            |                                                     |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                             |
 | --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                             |
@@ -2078,13 +1894,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                             |
 | Deliverables describing the indicator                                                   |                                                                                                             |
 | Other indicator systems using this indicator                                            |                                                                                                             |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                                                                                    |
 | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                                                                                    |
@@ -2107,13 +1916,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                                                                                    |
 | Deliverables describing the indicator                                                   | Rapport Armoede, Barometer Energiearmoede                                                                                                                          |
 | Other indicator systems using this indicator                                            | /                                                                                                                                                                  |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                                                       |
 | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                                                       |
@@ -2136,13 +1938,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                                                       |
 | Deliverables describing the indicator                                                   | Rapport Energie en Klimaat                                                                                                            |
 | Other indicator systems using this indicator                                            | /                                                                                                                                     |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                      |
 | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                      |
@@ -2165,13 +1960,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                      |
 | Deliverables describing the indicator                                                   | /                                                                                                    |
 | Other indicator systems using this indicator                                            | /                                                                                                    |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                                            |
 | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                                            |
@@ -2194,13 +1982,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                                            |
 | Deliverables describing the indicator                                                   | /                                                                                                                          |
 | Other indicator systems using this indicator                                            | /                                                                                                                          |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                        |
 | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                        |
@@ -2223,13 +2004,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                        |
 | Deliverables describing the indicator                                                   | /                                                                      |
 | Other indicator systems using this indicator                                            | /                                                                      |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                       |
 | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                       |
@@ -2252,13 +2026,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                       |
 | Deliverables describing the indicator                                                   | /                                                                     |
 | Other indicator systems using this indicator                                            | /                                                                     |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                                                       |
 | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                                                       |
@@ -2312,13 +2079,6 @@ NATURE-BASED SOLUTIONS
 | References                                                                              |                                                                                                                                                                                                                                                                                                 |
 | Deliverables describing the indicator                                                   | To assess number of heatwave days: https://www.vmm.be/data/gemeente-in-cijfershttps://klimaat.vmm.be/themas/hitte                                                                                                                                                                               |
 | Other indicator systems using this indicator                                            | /                                                                                                                                                                                                                                                                                               |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                                                                                                                                                                                                                                                                                          |
 | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                                                                                                                                                                                                                                                                                          |
@@ -2341,13 +2101,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                                                                                                                                                                                                                                                                                          |
 | Deliverables describing the indicator                                                   | Eindrapport Klimaatportaal https://klimaat.vmm.be/                                                                                                                                                                                                                                                                                                                       |
 | Other indicator systems using this indicator                                            | /                                                                                                                                                                                                                                                                                                                                                                        |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                                                                                |
 | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                                                                                |
@@ -2370,13 +2123,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                                                                                |
 | Deliverables describing the indicator                                                   | https://www.dov.vlaanderen.be/page/actuele-grondwaterstandindicatorDrought plan Leuvenhttps://omgeving.vlaanderen.be/nl/ruimte-voor-water-impact-op-droogte    |
 | Other indicator systems using this indicator                                            | /                                                                                                                                                              |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                                                                      |
 | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                                                                      |
@@ -2399,13 +2145,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                                                                      |
 | Deliverables describing the indicator                                                   | https://www.vmm.be/data/gemeente-in-cijfers                                                                                                          |
 | Other indicator systems using this indicator                                            | /                                                                                                                                                    |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                    |
 | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                    |
@@ -2428,13 +2167,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                    |
 | Deliverables describing the indicator                                                   | De Stadsmonitor: https://gemeente-stadsmonitor.vlaanderen.be/gemeente/leuven       |
 | Other indicator systems using this indicator                                            | /                                                                                  |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                                                                                                                                                                                  |
 | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                                                                                                                                                                                  |
@@ -2457,13 +2189,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                                                                                                                                                                                  |
 | Deliverables describing the indicator                                                   | https://omgeving.vlaanderen.be/nl/evolutie-groenaanbod Omgevingsanalyse Leuven in cijfers '18 https://www.kuleuven.be/duurzaamheid/duurzame-bedrijfsvoering/plan-groen-2015 https://gemeente-stadsmonitor.vlaanderen.be/gemeente/leuven/klimaat-milieu-en-natuur |
 | Other indicator systems using this indicator                                            | /                                                                                                                                                                                                                                                                |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                                                                                                                                                                                                                                                                                                  |
 | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                                                                                                                                                                                                                                                                                                  |
@@ -2486,13 +2211,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                                                                                                                                                                                                                                                                                                  |
 | Deliverables describing the indicator                                                   | https://digital.hortipoint.nl/vergroenen-van-de-stad/de-3-30-300-vuistregel/                                                                                                                                                                                                                                                                                                     |
 | Other indicator systems using this indicator                                            | /                                                                                                                                                                                                                                                                                                                                                                                |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                                                                                    |
 | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                                                                                    |
@@ -2515,13 +2233,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                                                                                    |
 | Deliverables describing the indicator                                                   | https://www.vmm.be/lucht/fijn-stof/concentratie-pm2-5                                                                                                              |
 | Other indicator systems using this indicator                                            | /                                                                                                                                                                  |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                                                                                                                                                                                                                                                                                 |
 | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                                                                                                                                                                                                                                                                                 |
@@ -2544,13 +2255,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                                                                                                                                                                                                                                                                                 |
 | Deliverables describing the indicator                                                   | https://www.vmm.be/lucht/fijn-stof/uitstoot-pm10                                                                                                                                                                                                                                                                                                                |
 | Other indicator systems using this indicator                                            |                                                                                                                                                                                                                                                                                                                                                                 |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                                                                                                  |
 | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                                                                                                  |
@@ -2573,13 +2277,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                                                                                                  |
 | Deliverables describing the indicator                                                   | https://www.vmm.be/lucht/stikstof/concentratie-stikstofdioxide                                                                                                                   |
 | Other indicator systems using this indicator                                            |                                                                                                                                                                                  |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -2602,13 +2299,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | Deliverables describing the indicator                                                   | /                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | Other indicator systems using this indicator                                            | /                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                                                                                                                                                                                                                                                                                                                                        |
@@ -2631,13 +2321,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | Deliverables describing the indicator                                                   | https://waarnemingen.be/                                                                                                                                                                                                                                                                                                                                                                                               |
 | Other indicator systems using this indicator                                            | /                                                                                                                                                                                                                                                                                                                                                                                                                      |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                                                                                   |
 | --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                                                                                   |
@@ -2660,13 +2343,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                                                                                   |
 | Deliverables describing the indicator                                                   | ORBA, the city project management system                                                                                                                          |
 | Other indicator systems using this indicator                                            | /                                                                                                                                                                 |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                                                      |
 | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                                                      |
@@ -2689,13 +2365,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                                                      |
 | Deliverables describing the indicator                                                   | ORBA, the city project management system                                                                                             |
 | Other indicator systems using this indicator                                            | /                                                                                                                                    |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                                                                                                                                                                                   |
 | --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                                                                                                                                                                                   |
@@ -2718,13 +2387,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                                                                                                                                                                                   |
 | Deliverables describing the indicator                                                   | ORBA, the city project management system                                                                                                                                                                                                                          |
 | Other indicator systems using this indicator                                            | /                                                                                                                                                                                                                                                                 |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                                                                         |
 | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                                                                         |
@@ -2747,13 +2409,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                                                                         |
 | Deliverables describing the indicator                                                   | ORBA, the city project management system                                                                                                                |
 | Other indicator systems using this indicator                                            | /                                                                                                                                                       |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                                                                                                                                    |
 | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                                                                                                                                    |
@@ -2776,13 +2431,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                                                                                                                                    |
 | Deliverables describing the indicator                                                   | /                                                                                                                                                                                                                  |
 | Other indicator systems using this indicator                                            | /                                                                                                                                                                                                                  |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                                                                                                 |
 | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                                                                                                 |
@@ -2834,13 +2482,6 @@ MOBILITY &amp; TRANSPORT
 | References                                                                              |                                                           |
 | Deliverables describing the indicator                                                   | /                                                         |
 | Other indicator systems using this indicator                                            | /                                                         |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                  |
 | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                  |
@@ -2863,13 +2504,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                  |
 | Deliverables describing the indicator                                                   | /                                                                                                |
 | Other indicator systems using this indicator                                            | /                                                                                                |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
@@ -2897,13 +2531,6 @@ Climate Neutrality Action Plan
 ^{}[]
 | Other indicator systems using this indicator | / |
 | --- | --- |
-7
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                             |
 | --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                             |
@@ -2926,13 +2553,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                             |
 | Deliverables describing the indicator                                                   | /                                                                                                           |
 | Other indicator systems using this indicator                                            | /                                                                                                           |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                     |
 | --------------------------------------------------------------------------------------- | --------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                     |
@@ -2955,13 +2575,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                     |
 | Deliverables describing the indicator                                                   | /                                                   |
 | Other indicator systems using this indicator                                            | /                                                   |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                |
 | --------------------------------------------------------------------------------------- | ---------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                |
@@ -2984,13 +2597,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                |
 | Deliverables describing the indicator                                                   | /                                              |
 | Other indicator systems using this indicator                                            | /                                              |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                             |
 | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                             |
@@ -3013,13 +2619,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                             |
 | Deliverables describing the indicator                                                   | /                                                                           |
 | Other indicator systems using this indicator                                            | /                                                                           |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                                                                     |
 | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                                                                     |
@@ -3042,13 +2641,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                                                                     |
 | Deliverables describing the indicator                                                   | /                                                                                                                                                   |
 | Other indicator systems using this indicator                                            | /                                                                                                                                                   |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                                                                                                                                                                                                                                                        |
 | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                                                                                                                                                                                                                                                        |
@@ -3071,13 +2663,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                                                                                                                                                                                                                                                        |
 | Deliverables describing the indicator                                                   | /                                                                                                                                                                                                                                                                                                                                      |
 | Other indicator systems using this indicator                                            | /                                                                                                                                                                                                                                                                                                                                      |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                          |
 | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                          |
@@ -3100,13 +2685,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                          |
 | Deliverables describing the indicator                                                   | /                                                                        |
 | Other indicator systems using this indicator                                            | /                                                                        |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                                                                                                                     |
 | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                                                                                                                     |
@@ -3160,14 +2738,6 @@ O
 | References                                                                              |                                                                                                                                                                                                                                                 |
 | Deliverables describing the indicator                                                   | /                                                                                                                                                                                                                                               |
 | Other indicator systems using this indicator                                            | /                                                                                                                                                                                                                                               |
-
-6
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                           |
 | --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                           |
@@ -3190,13 +2760,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                           |
 | Deliverables describing the indicator                                                   | Lokaal Materialenplan 2023-2030                                                           |
 | Other indicator systems using this indicator                                            | /                                                                                         |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                                                                                          |
 | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                                                                                          |
@@ -3219,13 +2782,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                                                                                          |
 | Deliverables describing the indicator                                                   | Lokaal Materialenplan 2023-2030                                                                                                                                          |
 | Other indicator systems using this indicator                                            | /                                                                                                                                                                        |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                             |
 | --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                             |
@@ -3248,13 +2804,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                             |
 | Deliverables describing the indicator                                                   | /                                                                                                           |
 | Other indicator systems using this indicator                                            | /                                                                                                           |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                                                                                                                                 |
 | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                                                                                                                                 |
@@ -3277,13 +2826,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                                                                                                                                 |
 | Deliverables describing the indicator                                                   | /                                                                                                                                                                                                               |
 | Other indicator systems using this indicator                                            | /                                                                                                                                                                                                               |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                                                                                           |
 | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                                                                                           |
@@ -3306,13 +2848,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                                                                                           |
 | Deliverables describing the indicator                                                   | Lokaal Materialenplan 2023-2030                                                                                                                                           |
 | Other indicator systems using this indicator                                            | /                                                                                                                                                                         |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                |
 | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                |
@@ -3335,13 +2870,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                |
 | Deliverables describing the indicator                                                   | /                                                                                              |
 | Other indicator systems using this indicator                                            | /                                                                                              |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                                                                                                                                 |
 | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                                                                                                                                 |
@@ -3364,13 +2892,6 @@ Climate Neutrality Action Plan
 | References                                                                              |                                                                                                                                                                                                                 |
 | Deliverables describing the indicator                                                   | /                                                                                                                                                                                                               |
 | Other indicator systems using this indicator                                            | /                                                                                                                                                                                                               |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | B-3.2: Indicator Metadata                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | (for each indicator selected â€“ take from Comprehensive Indicator Sets)                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
@@ -3423,24 +2944,10 @@ Climate Neutrality Action Plan
 |                                                    | Responsible organization/entity                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Sustainability service - Staff general manager                                                                                                         |
 |                                                    | Contact                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Ilse Premereur - Geert Vanhorebeek (climate policy city of Leuven) Jessie Van Couwenberghe (EU Mission) Elke Van Hamme (internal governance processes) |
 | Stakeholders involved and role of each stakeholder | Staff General Manager: Introduce horizontal principles and SDGs into MYP and ensure knowledge sharing on this and around projects, e.g. through FONS or workshops. Key directorates ifv climate ambitions: Spatial policy, public domain, buildings, Social Affairs.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                                                                                                                                                        |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 |     |                 | Support directorates: finance, general manager, communications.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | --- | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |     | Commitments     | City of Leuven integrates climate objectives within the entire city policy. If choices have to be made, it is important to focus on and prioritize "win-win" projects, which add value to both climate objectives and other policy areas.City of Leuven focuses on generating impact and rolling out motivating and stimulating actions:An accelerated transition, together with the pioneering role of Leuven, requires the city to focus on those projects and processes that - sometimes only after upscaling them or within the policy framework - have the largest impact and thus contribute in the first place, directly or indirectly, to an accelerated emission reduction.City of Leuven provides the necessary capacity (grant management) to find financing for climate projects:Achieving the climate goals and realizing the portfolio of breakthrough projects requires targeted funding. The additional capacity will be used to search for grants, write project proposals with internal and external partners.City of Leuven commits to monitor climate goals:The CCC outlines a clear path towards climate neutrality, indicating how much reduction we plan to achieve in which year and with which measures. Targets, linked to concrete, calculated measures, clearly show how the city is going to achieve the proposed reduction.Monitoring is crucial for adjusting policy and making sure the planned measures are not falling short in reaching the climate objectives. |
 |     | Enabling impact | Joining forces and working in an integrated way creates synergies that generate efficiency gains, making climate policy more visible and thus more convincing to its own people, as well as to third parties.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 |     | Indirect impacts                                                                                      | Level of impact(1 = no impact, 5 = very high impact) |
 | --- | ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
 |     | Health and environment (air quality, noise pollution, livability, physical and mental well-being,...) | 1 â˜ 2 â˜ 3 â˜ 4 â˜ 5 R                              |
@@ -3463,13 +2970,6 @@ REGIONAL COLLABORATION
 |     | Contact                                            | Wiet Vandaele                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |     | Stakeholders involved and role of each stakeholder | Neighboring municipalities: partners in co-production, each from its own strengths; Province of Flemish Brabant: director & facilitator; Flemish government: various agencies of the Flemish government carry out necessary investment projects (e.g., ANB for nature links, AWV for HOV axis).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |     | Commitments                                        | City of Leuven commits to continue and increase the existing collaborations.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 |     |                                                                                                                                                                                                                                                                     | Commitments not yet validated The Province of Flemish Brabant emphasises the importance of further developing the existing city-regional cooperation on spatial policy and mobility, set up within Regionet Leuven searches for the necessary co-financing to maintain a coordinatoting role. |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |     | Enabling impact                                                                                                                                                                                                                                                     | Â· The expansion of the network of high-quality public transportation and bicycle routes and amenities within walking distance allow for a far-reaching modal shift; Â· Further spread of building is reduced. This is how we protect open space and enable adaptation.                       |
@@ -3486,26 +2986,12 @@ Climate Neutrality Action Plan
 |     | Intervention                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |     | Description In climate policy, the city is often the initiator or leader of projects or measures but, to generate impact, a city also relies on close collaborations with others. An effective policy requires an integrated and holistic approach and close cooperation between departments and other authorities, organizations, associations, companies, ... across policy domains. An important external effect has already been developed in many policy areas and in different city departments (e.g., sustainability, mobility, public domain, economy, housing, area-oriented operation, etc.). In the future, this external effect will be further developed. Climate must be integrated in a thorough, thoughtful, smart and efficient way as a common thread in our external processes, both substantive and operational. The urban climate policy is partly realized by organizations in which the city participates (intermunicipal companies, social housing companies, non-profit organizations, the water group, etc.) and by government agencies active in Leuven (AWV, De Lijn, Vlaamse Waterweg, infrabel, ANB, etc.). All these actors should be maximally involved in order to formulate and realize the same ambitions. Important elements of the integrated climate policy are realized by other organizations, associations or companies. Therefore, the city is increasingly working together in networks (e.g. around nature policy, food strategy, water, circular economy, etc.) in order to engage and support these partners in the realization of the urban objectives. If we want to guide our cities together faster towards a climate-neutral future, further coordination with our supra-local governments is crucial. In light of the next Flemish elections, we are therefore reaching out from Leuven to other climate-ambitious Flemish central cities to come up with a supported memorandum together, addressed to the full Flemish government and the party chairmen. In it, we want to make a plea to maximally further activate the Flemish levers to accelerate urban climate transitions, and this against the background of the acceleration initiated at the European level. The memorandum aims to formulate recommendations in five emission domains: energy, built environment, mobility, climate adaptation and circular economy. Finally, Leuven depends on other governments and it is desirable to cooperate with neighboring municipalities and other municipalities. To this end, city administrations together with the administration must set up an active operation that directs and supports where necessary but also provides support in the city. This will be further included in the breakthrough project on city-regional cooperation. This external leg of climate policy is very important and different from the role and tasks of the Leuven 2030 non-profit organization. |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 |     | Responsible organization/entity                    | Sustainability service - Staff general manager                                                                                                                                                                                                                                                                                                                                                       |
 | --- | -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |     | Contact                                            | Ilse Premereur - Geert Vanhorebeek (climate policy city of Leuven) Jessie Van Couwenberghe (EU Mission) Geertrui Vanloo - general manager                                                                                                                                                                                                                                                            |
 |     | Stakeholders involved and role of each stakeholder | Key directorates in function of climate ambitions: spatial policy, public domain, buildings. Other authorities: Flanders, Province of Flemish Brabant Urban organizations: Dijledal, CPAS, Autonomous municipal corporations, Intercommunales and non-profit organizations: EcoWerf, Fluvius, Water Group, Aquafin, De Lijn... Companies: Voka, C-Valley, Leuven MindGate, ...                       |
 |     | Commitments                                        | City of Leuven supports Leuven 2030 as a key actor in climate policy. City of Leuven promotes and calls attention to climate objectives at every (partner) organization, intercommunal, network,... in which the city participates or is represented. City of Leuven and Leuven 2030 motivate partner organizations and businesses to achieve climate goals and allocate resources for this purpose. |
 |     | Enabling impact                                    | Joining forces and working in an integrated way creates synergies that generate efficiency gains. This makes climate policy more visible and thus more convincing to third parties. Moreover, economies of scale are possible if we involve enough external stakeholder.                                                                                                                             |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 |     | Indirect impacts                                                                                      | Level of impact (1 = no impact, 5 = very high impact) |
 | --- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
 |     | Health and environment (air quality, noise pollution, livability, physical and mental well-being,...) | 1 â–¡ 2 â–¡ 3 â–¡ 4 â–¡ 5 R                           |
@@ -3548,13 +3034,6 @@ Climate Neutrality Action Plan
 |     | Stakeholders involved and role of each stakeholder                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Leuven 2030: as soon as feasible - develop operations aiming at supporting stakeholders in their climate action plans (KAP).                                                                                                                                                                                                                                                                                                                                                    |
 |     | Commitments                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Leuven 2030 aims to build â€“ within the available capacity â€“ operations that, through monitoring the partners' climate action plans, accelerates the climate transition.                                                                                                                                                                                                                                                                                                     |
 |     | Enabling impact                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | This breakthrough project ensures that actors are invited to set goals and actions for their own foot- and handprint. This will undoubtedly impact the number of actions that will take place within the Leuven ecosystem. In addition, this operation strengthens the fabric between Leuven stakeholders, which we also expect to have a positive impact on accelerating the climate transition. After all, the complexity of the climate transition necessitates cooperation. |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 |     | Indirect impacts                                                                                      | Level of impact(1 = no impact, 5 = very high impact) |
 | --- | ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
 |     | Health and environment (air quality, noise pollution, livability, physical and mental well-being,...) | 1 â˜ 2 â˜ 3 â˜ 4 R 5 â˜                              |
@@ -3596,13 +3075,6 @@ MONITORING, EVALUATION AND LEARNING (MEL)
 |     | Contact                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Luca Lia<br>luca.lia@leuven2030.be                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |     | Stakeholders involved and role of each stakeholder                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | City of Leuven: â€¢ Establish a structured learning process as part of its activities in the Pilot Cities Programme; â€¢ Align monitoring systems to the indicators presented in the Action Plan. Leuven 2030: â€¢ Monitor the transition in Leuven and report on progress to its community of stakeholders; â€¢ Align monitoring systems to the indicators presented in the Action Plan; â€¢ Support and enable stakeholders to take stock, reflect, and learn. |
 |     | Commitments                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Leuven 2030: â€¢ Create a context for learning by convening stakeholders and establishing a process of accountability-for-learning;                                                                                                                                                                                                                                                                                                                              |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 |     |                                                                                                       | â€¢ Monitor the transition in Leuven and report on progress to stakeholders.                                                                                                                                                    |
 | --- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |     | Enabling impact                                                                                       | Monitoring, evaluating, and learning from Mission activity is critical to ensuring effective and impactful action. It enables better, more intelligent decision-making and therefore contributes to achieving a greater impact. |
@@ -3644,11 +3116,6 @@ Climate Neutrality Action Plan
 |     | Responsible organization/entity                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Open Time knowledge center, Erasmus University College Brussels (lead) Leuven 2030 (partner) NONO (partner)                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |     | Contact                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Sven Rosius, sven.rosius@leuven2030.be                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |     | Stakeholders involved and role of each stakeholder                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Open Time knowledge center, Erasmus University College Brussels (lead) Open Time knowledge center has expertise in the field of "Futures Studies. The affiliated researcher will provide the theoretical and methodological knowledge and skills for the co-creation of futures studies with the intended audience. The researcher will also lead the workshops. NONO (partner) NONO is a sustainable behavior change agency that uses insights from behavioral science to design effective communications. In this project, NONO will transform future scenarios into |
-
-leuven
-
-Climate Neutrality Action Plan
-
 | | | communication messages and a communication strategy.
 **Leuven 2030 (partner)**
 Leuven 2030 acts in this project as a client and link to the local network. This means that she helps determine the approach of the case study, helps recruit the target group and ensures that the outcome of the project finds its way to her network. In the context of this project, she pays particular attention to the link with the arts and culture field.
@@ -3681,13 +3148,6 @@ Climate Neutrality Action Plan
 |     | Stakeholders involved and role of each stakeholder                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | School 2030 - School 2030 leads young people who are already taking commitments on school climate councils and are eager to go the extra mile. The City of Leuven's Sustainability Department and Leuven 2030 provide substantive input and referral to experts and policymakers.                                                                          |
 |     | Commitments                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | City of Leuven connects young people with climate experts (at least twice a year). City of Leuven connects young people with politicians and facilitates a dialogue about the climate issue (at least twice a year). City of Leuven organizes actions or events to raise awareness about the climate issue with a broader audience (at least once a year). |
 |     | Enabling impact                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Young people are given the opportunity to help think about Leuven's climate policy and become fully-fledged                                                                                                                                                                                                                                                |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 |     |                                                                                                       | discussion partners. They feel heard and involved. This contributes to social inclusion and democratic climate plans. The positive impact for the young people themselves is not small either. They can turn negative emotions, such as climate anxiety, into a positive force whereby they can change their immediate environment for the better. |
 | --- | ----------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |     | Indirect impacts                                                                                      | Level of impact (1 = no impact, 5 = very high impact)                                                                                                                                                                                                                                                                                              |
@@ -3754,13 +3214,6 @@ Climate Neutrality Action Plan
 |     | Contact                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | Marie Mauer - Leuven Living Lab project coordinator                                                                                                                                                                                                                                                                                                                     |
 |     | Stakeholders involved and role of each stakeholder                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | SAAMO Flemish Brabant; KU Leuven (Institute for media studies); Stakeholder organizations working around vulnerable groups and food (yet to be confirmed which partners will participate);                                                                                                                                                                              |
 |     | Commitments                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Leuven 2030 coordinates the Leuven Living Lab project within the framework of the European FEAST project. KU Leuven provides input for the community action platform based on their research on behavior and digital media. SAAMO connects Leuven 2030 with organizations in Leuven that work with vulnerable groups and share their knowledge about this target group. |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 |                    |                                                                                                       | Stakeholder organizations participate in the testing phase of the common action platform and provide feedback.                                                                                                                                                                                                                                                                                       |
 | ------------------ | ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |                    | Enabling impact                                                                                       | First, this intervention aims to have an effect on healthier food consumption linked to climate neutrality. Second, an indirect effect will be advanced knowledge of how a collective action platform can be used as a tool to accelerate collaboration among stakeholders. Finally, lessons related to behavior change represent another indirect impact that will help shape future interventions. |
@@ -3824,13 +3277,6 @@ CARBON CONVERSATIONS
 |     | Stakeholders involved and role of each stakeholder                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | Loes van Hove: facilitator & supporter - Apart from this citywide ambition, Loes has already played her role as a regional facilitator particularly well in recent years. Flemish Brabant now has some 25 climate coaches.                   |
 |     | Commitments                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Klimaatcontact vzw coordinates KlimaatContact.                                                                                                                                                                                               |
 |     | Enabling impact                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | Connective and constructive climate conversations lead to more supported climate action.                                                                                                                                                     |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 |     |                                                                                                       | Since the start-up of KlimaatContact in 2019, we worked with individuals with great success: people found each other, learned to involve others in climate change and thus set in motion a huge amount of climate action. Meanwhile, we have grown into an organization with more than 150 active climate coaches across Flanders. Since January 2022, we have been working on behalf of organizations and companies such as the Province of Limburg, Department of Environment, Flemish Energy and Climate Agency, AZ Groeninge, the King Baudouin Foundation, Colruyt Group, P&G, the Port of Antwerp, UCLL, City of Ghent, Fair Fashion Fest, VUB, KU Leuven and University of Antwerp, etc. etc. We are also currently looking at ways in which City of Leuven can offer such a pathway for its own staff. |
 | --- | ----------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |     | Indirect impacts                                                                                      | Level of impact (1 = no impact, 5 = very high impact)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
@@ -3855,13 +3301,6 @@ DIGITAL TWIN
 |     | Stakeholders involved and role of each stakeholder                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | City: management and coordination tool - provide data Companies: hosting and management tool - connection data - data delivery Research institutions: mathematical models - supply (new) data Citizens: supplying data                                                                                                                              |
 |     | Commitments                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | City of Leuven produces a functional Digital Twin for Nature Based Solutions. City of Leuven systematically monitors relevant indicators (such as heat, drought, water infiltration, CO2 capture,...) for the development, management and use of a Digital Twin for NBS. City of Leuven further develops the Digital Twin (in 3D) so it can also be |
 |     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | in the environment, and the use of a digital twin for NBS. City of Leuven also has a focus on the use of digital twin in planning and management tasks. This tool offers additional support to the project team and provides support to the project team and to the NBS team.                                                                       |
-
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 |     |                                                                                                       | used for other domains, including energy.                                              |
 | --- | ----------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
 |     |                                                                                                       | Companies use transparent and open systems - open data.                                |
@@ -3938,13 +3377,6 @@ Climate Neutrality Action Plan
 | Collective Renovation Program Large Building Owners                                       | Leuven 2030                   |                | Built Environment | /                            | /                            |
 | Renovation of City Patrimony - Clusters                                                   | City of Leuven                |                | Built Environment | /                            | 129.874.000 EUR              |
 | Renovation Of Hal 9                                                                       | City of Leuven                |                | Built Environment | /                            | 10.600.000 EUR               |
-
-leuven
-
-Climate Neutrality Action Plan
-
-C
-
 | Centre for Performing Arts                                | City of Leuven                  |     | Built Environment                             | /                                | 85.000.000 EUR          |
 | --------------------------------------------------------- | ------------------------------- | --- | --------------------------------------------- | -------------------------------- | ----------------------- |
 | Property-Linked Financing                                 | Consortium â€˜Social Justiceâ€™ |     | Built Environment                             | /                                | /                       |
@@ -3966,14 +3398,6 @@ C
 | Climate Adaptation Taskforce                              | City of Leuven                  |     | Green Infrastructure & Nature-Based Solutions | /                                | /                       |
 | Digital Twin Climate Adaptation                           | City of Leuven                  |     | Green Infrastructure & Nature-Based Solutions | /                                | /                       |
 | Climate Adaptation Toolkit                                | City of Leuven                  |     | Green Infrastructure & Nature-Based Solutions | /                                | /                       |
-
-4
-leuven
-
-Climate Neutrality Action Plan
-
-#
-
 | Molenbeek Valley                                               | City of Leuven                                 |     | Green Infrastructure & Nature-Based Solutions | /                                                | /                                                 |
 | -------------------------------------------------------------- | ---------------------------------------------- | --- | --------------------------------------------- | ------------------------------------------------ | ------------------------------------------------- |
 | Trees for Leuven                                               | City of Leuven                                 |     | Green Infrastructure & Nature-Based Solutions | /                                                | /                                                 |
@@ -3993,13 +3417,6 @@ Climate Neutrality Action Plan
 | Place-Based Project Arenberg                                   | City of Leuven                                 |     | Place-Based Projects                          | 900 t CO2-eq/y (ES, Research Park Arenberg only) | Ca. 3,9 mio EUR (ES, Research Park Arenberg only) |
 | Place-Based Project Climate-Robust City Centre                 | City of Leuven                                 |     | Place-Based Projects                          | /                                                | /                                                 |
 | Place-Based Project Vaart-Dijle                                | City of Leuven                                 |     | Place-Based Projects                          | /                                                | /                                                 |
-
-leuven
-
-Climate Neutrality Action Plan
-
-C
-
 | Place-Based Project Kessel-Lo | City of Leuven |     | Place-Based Projects | /   | /   |
 | ----------------------------- | -------------- | --- | -------------------- | --- | --- |
 | Place-Based Project Wijgmaal  | City of Leuven |     | Place-Based Projects | /   | /   |
@@ -4475,8 +3892,6 @@ LEUVEN &amp; CLIMATE CITY CONTRACT
 | ES  | Motivating inspirational framework urban development projects | City of Leuven translates the "guiding principles" into an inspirational framework in which the ambitious goals within the different fields and topics (circular, adaptation, energy, green, water,...) are formulated in a challenging, innovative way.                                    |
 | ES  | Green heat in urban planning tools                            | City of Leuven uses urban planning tools to achieve climate ambitions, among other city objectives (using the sustainability framework as a guide).                                                                                                                                         |
 | BE  | Climate House                                                 | City of Leuven provides the necessary resources to expand the existing program, tailored to all residents.                                                                                                                                                                                  |
-
-7
 | BE | Collective renovation â€“ Case: Suburb Ter Elst | City of Leuven uses the LEKP 2.1 funds to develop a programme for collective renovation. Whereas the focus of the Climate House is now mainly on individual guidance, the city will also develop a group programme.<br><br>City of Leuven creates the framework, necessary to initiate collective renovation projects, including a clear view on the most plausible scenarios for climate-neutral neighbourhoods. |
 | --- | --- | --- |
 | BE | Renovation of apartment buildings | City of Leuven expands the program of the Climate House with a trajectory for VMEs (association for co-owners). The city builds on the market research conducted by Transition Stories and puts the recommendations into practice, within a few pilot projects (e.g. 3 VMEs - association for co-owners). |
@@ -4925,8 +4340,6 @@ CITY CONTRACT
 | --- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ES  | Pilot 5: **Wakkerzeelsebaan Wijgmaal** | To enable the supply of heat and cold to the surrounding area in the future, the design phase will include research about the possibility to develop a larger sized BEO field on the site. This also includes actively searching for this space which creates the possibility, but not the obligation, to construct a larger BEO field in a later phase. This way, there is more time to seek (possibly external) financing for this larger system, including a possible extension of the heat system to the surrounding area. The Leuven energy company could play a role in this process.<br><br>Comments/Conditions:<br>The design team further investigates the feasibility. If funding for a larger BEO field is not available during construction, the possibility of expanding the BEO field in a later phase will be explored. However, any later expansion of the BEO field must minimize disruption to residents as well as the cost of construction. This can be solved, for example, by providing vegetation for this area that can be easily removed and replanted after a few years.<br><br>Timing:<br>(start of design phase) |
 | ES  | Pilot 5: **Wakkerzeelsebaan Wijgmaal** | To enable the long term supply of heat and cold to the surrounding area, the design provides space for a substation where the connection to the surrounding area (surrounding residents, possible residual heat Beneo-Remy) can be made. The location is chosen wisely to make sure that the connection to a heat network in the surrounding area or a connection to Beneo-Remy is convenient.<br><br>Comments/Conditions:<br>The design team further investigates the feasibility. For example, the provided space could also be part of the collective technical space integrated into the buildings.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-
-8
 | | | Timing: 2024 (start of design phase) |
 | --- | --- | --- |
 | ES | Pilot 5: Wakkerzeelsebaan Wijgmaal | In the design phase the possibility to add more capacity for the heat network, than required for the site itself, is considered. This way, it can be connected to a larger collective system in the future.<br><br>Comments/Conditions: By the time the permit is submitted, it should be clear whether this larger collective system will be implemented. If the Leuven Energy Company (if then operational) or a private party is not willing to invest, the capacity of the heat network can still be adjusted in the permit application to the exact size needed for the site itself.<br><br>Timing: 2024 (start of design phase) |

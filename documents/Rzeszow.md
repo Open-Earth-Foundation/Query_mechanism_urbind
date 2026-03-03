@@ -1671,8 +1671,6 @@ A-3.2: Systems &amp; stakeholder mapping
 |  System | Stakeholders | Influence on the city's climate neutrality ambition | Interest in the city's climate neutrality ambition  |
 | --- | --- | --- | --- |
 |  Technological / infrastructural | PGE Energia Ciepła S.A., Rzeszów Combined Heat and Power Plant Branch | Impact: highIt uses environmentally friendly technologies, promotes district heating, and raises environmental awareness, among other things, in terms of municipal waste management. | The stakeholder is interested in eco-social transformation.It takes actions aimed at reducing greenhouse gases and adapting to climate change.  |
-Climate Neutrality Action Plan
-
 |   |  | It implements programs that reduce the impact of combined heat and power plants on the natural environment. It has a Thermal Energy Recovery Installation (ITOPE), where municipal waste, mostly coming from the city, is thermally transformed. |   |
 | --- | --- | --- | --- |
 |  Technological / infrastructural | Edison Next Poland Sp. z o.o. | Impact: high
@@ -1718,15 +1716,8 @@ C
 |   |  | of the distribution network; balancing the system and managing system constraints; maintaining an appropriate level of safety in the operation of the distribution network. | changing behavior of electricity market participants. The investments being carried out should ensure that the grid is adapted to the scale of connected micro-installations and RES. They should also enable monitoring of the electrical parameters available from the prosumer's bidirectional meter, allowing for analysis of power flows in the network and the identification of methods to eliminate potential overloads and maintain the required voltage levels in the network.  |
 | --- | --- | --- | --- |
 |  Technological / infrastructural | GAZ – SYSTEM S.A. | Impact: high
-It is responsible for the transmission of natural gas, manages the most important gas pipelines in Poland and the Baltic Pipe offshore gas pipeline, and is the owner of the President Lech Kaczyński LNG Terminal in Świnoujście. | The stakeholder is interested in eco-social transformation.
-
-The mission of the Company is to ensure Poland's energy security and increase the competitiveness of the Polish economy by: creating and managing a gas fuel transmission network and connections within the European transmission network; reliable operation of terminals and other key infrastructure elements for gas fuels; conducting projects that contribute to the efficient and cost-effective energy transformation of Poland.  |
-
-6
-Climate Neutrality Action Plan
-
-#
-
+| It is responsible for the transmission of natural gas, manages the most important gas pipelines in Poland and the Baltic Pipe offshore gas pipeline, and is the owner of the President Lech Kaczyński LNG Terminal in Świnoujście. | The stakeholder is interested in eco-social transformation. |
+| The mission of the Company is to ensure Poland's energy security and increase the competitiveness of the Polish economy by: creating and managing a gas fuel transmission network and connections within the European transmission network; reliable operation of terminals and other key infrastructure elements for gas fuels; conducting projects that contribute to the efficient and cost-effective energy transformation of Poland.  |
 |  Technological / infrastructural | Polska Spółka Gazownictwa Sp. z o.o. | Impact: high
 Polska Spółka Gazownictwa is the Gas Distribution System Operator.
 in Poland. The key task of the Company is the reliable and safe transportation of gas fuels through the distribution network throughout the country directly to end users and other local operators' networks. | The stakeholder is interested in eco-social transformation.
@@ -1878,9 +1869,8 @@ As part of the “City with Climate” project, Rzeszów closely collaborated wi
 Close cooperation within the CapaCities project.  |
 | --- | --- | --- | --- |
 |  Institutional / regulatory and organizational, social, behavioral | National Center for Research and Development | Impact: moderate
-Government executive agency, a key center for supporting and creating innovative technological and social solutions, creates a knowledge and information ecosystem about them. It initiates and implements initiatives contributing to the civilizational development of the country. | The stakeholder is interested in eco-social transformation.
-
-Rzeszów closely collaborates with NCBR within the NEEST Pilot Program.  |
+| Government executive agency, a key center for supporting and creating innovative technological and social solutions, creates a knowledge and information ecosystem about them. It initiates and implements initiatives contributing to the civilizational development of the country. | The stakeholder is interested in eco-social transformation. |
+| Rzeszów closely collaborates with NCBR within the NEEST Pilot Program.  |
 |  Institutional / regulatory and organizational, social, behavioral | National Centre for Nuclear Research | Impact: moderate
 Research institute, conducting fundamental research in the field of subatomic physics and applying nuclear physics methods and developing nuclear technologies. | The stakeholder is interested in eco-social transformation.
 
@@ -1901,9 +1891,8 @@ Research and services offered by IETU are focused on environmental challenges re
 
 As part of the “City with Climate” project, Rzeszów closely collaborated with the National Centre for Nuclear Research (NCBJ) to develop a Roadmap for the City's Transformation towards climate neutrality and resilience, focusing on urban greenery and water retention areas.  |
 |  Institutional / regulatory and organizational, social, behavioral | Forest Research Institute | Impact: moderate
-The Institute's activities involve conducting research and development work in the field of forestry sciences. | The stakeholder is interested in eco-social transformation.
-
-As part of the “City with Climate” project, Rzeszów closely collaborated with the National Centre for Nuclear Research (NCBJ) to develop a Roadmap for the City's Transformation towards climate neutrality and resilience, focusing on urban greenery and water retention areas.  |
+| The Institute's activities involve conducting research and development work in the field of forestry sciences. | The stakeholder is interested in eco-social transformation. |
+| As part of the “City with Climate” project, Rzeszów closely collaborated with the National Centre for Nuclear Research (NCBJ) to develop a Roadmap for the City's Transformation towards climate neutrality and resilience, focusing on urban greenery and water retention areas.  |
 |  Institutional / regulatory and financial | National Fund for Environmental Protection and Water Management | Impact: high
 Main pillar of the Polish system for financing environmental | The stakeholder is interested in eco-social transformation.  |
 
@@ -1915,7 +1904,7 @@ Plan
 C
 
 |   |  | protection and water management, with the largest financial potential.
-The National Fund is an important tool for implementing environmental protection policy in Poland. This is achieved through stable income, experienced staff, and established forms of cooperation with beneficiaries. | Loan, grant, and other forms of financing offers for projects implemented by local governments, companies, public entities, social organizations, as well as individuals for activities in the field of environmental protection, including tasks related to air pollution reduction and GHG reduction.  |
+| The National Fund is an important tool for implementing environmental protection policy in Poland. This is achieved through stable income, experienced staff, and established forms of cooperation with beneficiaries. | Loan, grant, and other forms of financing offers for projects implemented by local governments, companies, public entities, social organizations, as well as individuals for activities in the field of environmental protection, including tasks related to air pollution reduction and GHG reduction.  |
 | --- | --- | --- | --- |
 |   | Voivodeship Fund for Environmental Protection and Water Management in Rzeszów. | Impact: high | Implementation of Programs, within which it is possible to obtain financing for: improving air quality; energy transformation of the economy; adaptation to climate change; rational waste management, including closed-loop economy and land surface protection; protection of biodiversity and ecosystem functions; protection and sustainable management of water resources.  |
 |  Financial | Bank Gospodarstwa Krajowego | Impact: high
@@ -1959,8 +1948,8 @@ Plan
 C
 
 |  Financial | European Investment Bank | Impact: high
-The European Investment Bank provides financial resources for projects that contribute to achieving EU goals both within the EU and beyond its borders. | The stakeholder is interested in eco-social transformation.
-EBI aims to increase European potential. in terms of employment and economic growth; support actions in the field of climate; support EU policy beyond the EU borders.  |
+| The European Investment Bank provides financial resources for projects that contribute to achieving EU goals both within the EU and beyond its borders. | The stakeholder is interested in eco-social transformation. |
+| EBI aims to increase European potential. in terms of employment and economic growth; support actions in the field of climate; support EU policy beyond the EU borders.  |
 | --- | --- | --- | --- |
 |  Organizational, social, behavioral | City Council | Impact: high
 The City Council deliberates at sessions and resolves all matters within the scope of the City's activities by way of resolutions, unless otherwise provided by law.
@@ -2104,9 +2093,8 @@ C
 |   |  | Higher education institutions, as research and educational centers, play a crucial role in disseminating knowledge and technology. They contribute greatly to popularizing knowledge about environmental protection, including climate change, the ongoing changes, and the actions that need to be taken in terms of mitigation and adaptation. As a result, they shape pro-environmental attitudes and contribute to education and research in the field of climate protection. | Education and Health Team, the Ecology and Social Affairs Team, the Energy and Renewable Energy Sources Team, the Infrastructure, Communication, Urbanization, and Monuments Team, the Innovation and New Technologies Team, and the International Affairs Team.  |
 | --- | --- | --- | --- |
 |  Financial | Podkarpacie Innovation Center (PCI) | Impact: moderate
-An organization promoting the use of scientific achievements in the economy. It builds key skills for scientists and students. Strengthening the region's potential by financing research and development work of scientists and the resulting new technologies and solutions. | The stakeholder is interested in eco-social transformation.
-
-By supporting innovative ideas of young people, we broaden their knowledge about startups and prototyping by providing makerspace workshops, as well as organizing educational programs and hackathons, including in the field of environmental protection, such as CE.  |
+| An organization promoting the use of scientific achievements in the economy. It builds key skills for scientists and students. Strengthening the region's potential by financing research and development work of scientists and the resulting new technologies and solutions. | The stakeholder is interested in eco-social transformation. |
+| By supporting innovative ideas of young people, we broaden their knowledge about startups and prototyping by providing makerspace workshops, as well as organizing educational programs and hackathons, including in the field of environmental protection, such as CE.  |
 |  Organizational | Podkarpacie Hydrogen Valley | Impact: moderate
 To support the development of the hydrogen economy and strive to build a branch of the Podkarpacie region hydrogen industry, including the production of hydrogen | The stakeholder is interested in eco-social transformation.
 
@@ -2139,13 +2127,11 @@ C
 |   |  | architecture and urban planning. |   |
 | --- | --- | --- | --- |
 |  Organizational, social, behavioral | Podkarpackie District Chamber of Civil Engineers | Impact: moderate
-An organization that brings together engineers and technicians across the following ten industries: construction and building, sanitary installations, electrical installations, water and land reclamation, road construction, bridge construction, railway construction, telecommunications, demolition, hydrotechnical. | The stakeholder is interested in eco-social transformation.
-
-A sustainable approach to designing and constructing buildings, spaces, infrastructure, and educating users of those products seems to be crucial for achieving climate neutrality.  |
+| An organization that brings together engineers and technicians across the following ten industries: construction and building, sanitary installations, electrical installations, water and land reclamation, road construction, bridge construction, railway construction, telecommunications, demolition, hydrotechnical. | The stakeholder is interested in eco-social transformation. |
+| A sustainable approach to designing and constructing buildings, spaces, infrastructure, and educating users of those products seems to be crucial for achieving climate neutrality.  |
 |  Organizational, social, behavioral | Rzeszów Housing Cooperatives Agreement | Impact: low
-Organization bringing together housing cooperatives in Rzeszów, whose activities in the field of housing construction, both new and existing, will have an impact on achieving climate neutrality. | The stakeholder is interested in eco-social transformation.
-
-Housing cooperatives will have to adjust their resources to the provisions of the law. e.g. EPBD Directive.  |
+| Organization bringing together housing cooperatives in Rzeszów, whose activities in the field of housing construction, both new and existing, will have an impact on achieving climate neutrality. | The stakeholder is interested in eco-social transformation. |
+| Housing cooperatives will have to adjust their resources to the provisions of the law. e.g. EPBD Directive.  |
 |  Financial, social, behavioral | Business represented by the Rzeszów Economic Council | Impact: high
 The Economic Council is tasked with promoting the city and the companies operating within it. Collaboration among Council members contributes to strengthening the cooperation between local government and the business community.
 The Council consists of entrepreneurs from the City of Rzeszów and | The stakeholder is interested in eco-social transformation.
@@ -2272,7 +2258,7 @@ Plan
 9
 
 |   | Finance | Identification of barriers to financing and financing infrastructure. | Increased financing for the analyzed area.
-Close cooperation of the local government with the financing bodies/institutions in this area. |  | Strong financial support at the beginning provides opportunities for long-term cost reduction (economies of scale).  |
+| Close cooperation of the local government with the financing bodies/institutions in this area. |  | Strong financial support at the beginning provides opportunities for long-term cost reduction (economies of scale).  |
 | --- | --- | --- | --- | --- | --- |
 |   |  Social/behavior/education | Promoting alternative means of transportation (e.g. scooters), carpooling, etc. | Reducing the demand for private cars for city center residents.
 Developing new commuting models for work from outside the city. |   | 1. Improvement in environmental quality:
@@ -2297,7 +2283,7 @@ Plan
 0
 
 |   |  |  | Mobility Plan and close cooperation with the Municipalities forming the ROF, in order to fully implement the objectives of the Plan. |  | 8. Urban benefits: reduction of traffic jams, congestion, better and more efficient spatial planning.
-Promotion of the inverted pyramid of mobility idea.  |
+| Promotion of the inverted pyramid of mobility idea.  |
 | --- | --- | --- | --- | --- | --- |
 |  **Waste & circular economy** | Technology/infrastructure | Development of infrastructure (construction, expansion, modernization of facilities) necessary for proper waste management. | Increase in the number of exchange points and reuse points.
 Increase in the amount of selectively collected waste.
@@ -2343,9 +2329,9 @@ Increase of community engagement.
 Developing new business models - acquiring private capital.  |
 | --- | --- | --- | --- | --- | --- |
 |   |   |  Environmental education | Increasing social support for actions related to maintaining urban areas.
-Full transparency of actions.  |   |   |
+| Full transparency of actions.  |   |   |
 |   |  Spatial planning | Designing and implementing the provisions of the Study of Conditions and Directions for Spatial Development.
-Design a general plan according to this idea. | Planning documents that take into account the need to protect areas for the development of green spaces. Taking special care of particularly valuable areas.  |   |   |
+| Design a general plan according to this idea. | Planning documents that take into account the need to protect areas for the development of green spaces. Taking special care of particularly valuable areas.  |   |   |
 |  Built environment | Technology/infrastructure | Development of new sustainable technologies in the construction sector (new residential buildings and modernization of existing buildings). | Universal access to technology.
 Elimination of all sources of fossil fuels in the residential building sector.
 Significant increase in deep thermal modernization and significant reduction in primary energy demand, both in residential and industrial-service and public utility buildings. | Total reduction of GHG emissions: 470,728 tCO2e | 1. Significantly reduced energy demand (higher energy efficiency ratio).
@@ -2366,9 +2352,9 @@ Increase in property value.
 Creating new job opportunities.  |
 | --- | --- | --- | --- | --- | --- |
 |   |  Governance /policy/ organizational | Development of standards for construction - primarily for buildings managed by the city. | Extension of construction standards to private properties (multi-family residential buildings), e.g. developers. |   | 1. Reduction of operating costs.
-High standard of residential areas, and later on, high standard of workplaces.  |
+| High standard of residential areas, and later on, high standard of workplaces.  |
 |   |  Finance | Financial support enabling transition to ecology and sustainable development (including development of renewable energy sources and deep thermal modernization). | Increase in the utilization of available support funds for investment in the analyzed area (increase in the number of residents benefiting from subsidies).
-Programs dedicated to vulnerable groups. |   | 1. High standards of investment implementation thanks to external support.  |
+| Programs dedicated to vulnerable groups. |   | 1. High standards of investment implementation thanks to external support.  |
 |   |  Social/ behavior/ education | Promotion of a just energy transition by including vulnerable groups, especially those at risk of energy poverty, in support programs. | Increase in the number of residents served at the Municipal Promotional and Consultation Point of the “Clean Air” Program.
 Increase in the number of consultations provided by energy advisors. |   | 1. Access to financing and tax incentives.
 Reducing the number of people affected by energy poverty.
@@ -2439,7 +2425,7 @@ C
 |   | 6. Development and modernization of the power infrastructure. | 6. Systematic development and modernization of infrastructure. Energy management system and its further development.  |
 | --- | --- | --- |
 |   | 7. Decarbonization and development of local heating networks. Smart network solutions. | 7. Expansion of the district heating network, replacing heat sources from solid fuels, oil, and gas with heat pumps or connection to an efficient district heating system; replacing heat sources in local heating networks. Ban on using solid fuels and its enforcement, changing the heat source, subsidies for heat pumps.
-Development of smart district heating networks integrating advanced monitoring, control, and communication technologies with heating systems, enabling real-time optimization of energy production, distribution, and consumption, improving overall system efficiency. Smart networks allow for better response to demand, integration, and thus better utilization of renewable energy potential and greater reliability of district heating networks.  |
+| Development of smart district heating networks integrating advanced monitoring, control, and communication technologies with heating systems, enabling real-time optimization of energy production, distribution, and consumption, improving overall system efficiency. Smart networks allow for better response to demand, integration, and thus better utilization of renewable energy potential and greater reliability of district heating networks.  |
 |   | 8. Replacement of street lighting with energy-efficient alternatives. | 8. Successive modernization and replacement of lighting fixtures with energy-efficient LED fixtures.  |
 |  Mobility & transportation | 1. Increasing accessibility for public mass transportation. | 1. Promotion of public transportation, making it more attractive to use (e.g. free tickets for residents or groups of residents, such as students; diverse and attractive pricing of city tickets, e.g. 3-hour, annual, semi-annual tickets; discounts on long-term tickets). Attractiveness of the fleet, electrification/alternative fuels (the city aims to systematically increase the share of zero-emission buses in the fleet until reaching 100% share), improvement of travel comfort and safety, optimization of timetables. Public transportation accessibility for people facing exclusion, additional transportation for elderly people, people in need, or with disabilities. The city is taking steps to expand the affordable, integrated ticketing options for buses and trains. When planning the public transportation system, the City applies a comprehensive, door-to-door approach. Current and clear information about changes in public transportation system, giving residents the opportunity to consult planned changes.  |
 |   | 2. Expansion of the public transportation network. | 2. Investments in the development of urban transportation network, building interchange hubs that connect various means of transportation at multiple points in the city and synchronize connections to shorten travel time between distant parts of the city. Actions to prevent the exclusion of people from small settlements and places far from the transportation line (including suburban areas),  |
@@ -2553,14 +2539,10 @@ Plan
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 |   |  Removed/substituted energy, volume, or fuel type | Fossil fuels  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 27,866 tCO2e  |
-Climate Neutrality Action Plan
-
-#
-
 |   | GHG emissions compensated (natural or technological sinks) | -  |
 | --- | --- | --- |
 |   |  Total costs and costs by CO2e unit | Total costs: PLN 24,738,109, EUR 5,497,358
-Costs by CO2e unit: PLN 887.75, EUR 197.28  |
+| Costs by CO2e unit: PLN 887.75, EUR 197.28  |
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Generating electricity from renewable sources by the city. within its borders and beyond.  |
@@ -2620,7 +2602,7 @@ Plan
 Q
 
 |   | Action description | The implementation of the task involving the construction of a geothermal power plant and combined heat and power plant, preceded by necessary analyses and studies.
-A properly planned and managed investment has the potential to lead the city to climate neutrality.  |
+| A properly planned and managed investment has the potential to lead the city to climate neutrality.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   | Systemic lever | Technology/ infrastructure
@@ -2650,9 +2632,9 @@ Procurement actions
 Business models  |
 |   |  Action description | Rzeszow's participation in initiatives aimed at supporting a low-emission economy and utilizing scientific research potential. The Podkarpacie Hydrogen Valley Association (Rzeszów – represented by the Acting Mayor of Rzeszów as a signatory to the letter of intent for the establishment of the Association) aims to support the development of the hydrogen economy and strive to build a branch of the Podkarpacie region hydrogen industry, including the production of hydrogen in the electrolysis process using energy produced from renewable energy installations and its use in energy sector, including heat energy sector, transportation, infrastructure and industry.  |
 |  Reference to impact pathway | Field of action | Energy systems
-Transport  |
+| Transport  |
 |   |  Systemic lever | Technology/ infrastructure
-Governance /policy/ organizational  |
+| Governance /policy/ organizational  |
 |   |  Outcome (according to module B-1.1) | Gradual transition towards a sustainable energy area.  |
 |  Implementation | Responsible bodies/person for implementation | Urban Innovation Center – Urban Lab, Department of Climate and Environment of the Rzeszów City Office, Division of Energy  |
 rzeszów
@@ -2733,7 +2715,7 @@ B-2.2: Individual action outlines
 |  Action outline | Action name | Decarbonization and development of local heating networks. Smart network solutions.  |
 | --- | --- | --- |
 |   |  Action type | Technical interventions
-Implementation and development of national and/or EU laws and regulations.  |
+| Implementation and development of national and/or EU laws and regulations.  |
 |   |  Action description | 7. Construction of a district heating network along with connections to new and existing buildings.
 Increasing energy efficiency and reliability of heat distribution to Customers by eliminating group heat exchangers in the city of Rzeszów.
 Increasing energy efficiency and reliability of heat transmission through the modernization of overhead district heating networks, above-ground district heating networks, and duct networks, along with connections.  |
@@ -2753,7 +2735,7 @@ Construction of garage roofs with photovoltaic cells or carports, as well as pho
 Governance /policy/ organizational
 Finance  |
 |   | Outcome (according to module B-1.1) | Gradual transition towards a sustainable energy area.
-Complete departure from fossil fuels in favor of renewable energy sources.  |
+| Complete departure from fossil fuels in favor of renewable energy sources.  |
 |  Implementation | Responsible bodies/person for implementation | Miejskie Przedsiębiorstwo Energetyki Cieplnej Rzeszów Sp. o.o. (City Heat Energy Company)  |
 |   | Action scale & addressed entities | Systematic investments in the district heating network, optimization of heat utilization, increasing the safety and reliability of transmission, as well as energy efficiency, are necessary to achieve the goal of climate neutrality.  |
 |   | Involved stakeholders | MPEC Rzeszów Sp. z o.o., System heat recipients, Financial institutions  |
@@ -2819,7 +2801,7 @@ C
 |   |  GHG emissions reduction estimate (total) per emission source sector | 4,521 tCO_{2e}  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO_{2e} unit | Total costs: PLN 34,000,000, EUR 7,555,556
-Costs by CO_{2e} unit: PLN 7,520.46 EUR 1,671.21  |
+| Costs by CO_{2e} unit: PLN 7,520.46 EUR 1,671.21  |
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Increasing accessibility for public mass transportation.  |
@@ -2846,13 +2828,13 @@ Finance
 Social/ behavior/ education  |
 | --- | --- | --- |
 |   |  Outcome (according to module B-1.1) | Low- and zero-emission fleet of public collective transportation.
-Increasing the number of residents using public transportation.  |
+| Increasing the number of residents using public transportation.  |
 |  Implementation | Responsible bodies/person for implementation | City Municipality of Rzeszów - City Transport Management Authority in Rzeszów  |
 |   |  Action scale & addressed entities | The tasks planned by ZTM are a continuation of actions that have been taken for many years. ZTM undertakes systematic activities to improve the quality of public transportation (through both the gradual replacement of vehicles and organizational changes, such as adjusting the number of routes based on residents' needs, etc.) to encourage as many residents as possible to switch from private transportation to public transportation. By 2027, it is planned to replace at least 25% of the fleet with zero-emission vehicles.
-In the perspective of a year, the plan is for the entire fleet to be emission-free. Actions in this area contribute not only to the reduction of GHG, but also to air pollution and noise.  |
+| In the perspective of a year, the plan is for the entire fleet to be emission-free. Actions in this area contribute not only to the reduction of GHG, but also to air pollution and noise.  |
 |   |  Involved stakeholders | City Municipality of Rzeszów, City Transport Management Authority in Rzeszów, Miejskie Przedsiębiorstwo Komunikacyjne Rzeszów Sp. z o.o. (City Transport Company), road users, neighboring municipalities within the ROF framework.  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | ZTM will gradually strive to reduce the emissions of the transportation area. The provisions of the currently developed SUMP will have a very significant impact on the planning of public transportation development. The recommendations resulting from the citizens' panel conducted in Rzeszów under the name “How to achieve climate neutrality in Rzeszów by 2030?” will also be taken into account.
-Regardless of the above, ZTM will strive to replace the entire bus fleet with low- and zero-emission vehicles by 2030.  |
+| Regardless of the above, ZTM will strive to replace the entire bus fleet with low- and zero-emission vehicles by 2030.  |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 rzeszów
 
@@ -2893,12 +2875,12 @@ C
 |   | GHG emissions reduction estimate (total) per emission source sector | 38,605 tCO_{2e}/year  |
 |   | GHG emissions compensated (natural or technological sinks) | -  |
 |   | Total costs and costs by CO_{2e} unit | Total costs PLN 1,200,000, EUR 266,667
-Costs by CO_{2e} unit PLN 31.08 EUR 6.91  |
+| Costs by CO_{2e} unit PLN 31.08 EUR 6.91  |
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Development of charging infrastructure throughout the city (with the goal of providing access to charging stations at every parking lot).  |
 |   |  Action type | Technical interventions
-Implementation and development of national and/or EU laws and regulations  |
+| Implementation and development of national and/or EU laws and regulations  |
 |   |  Action description | The electrification of road transportation requires a significant improvement in charging infrastructure. For the implementation of the operation, the location of at least 100 publicly accessible electric vehicle charging stations, as well as the replacement of vehicles serving municipal services with electric ones, has been planned.  |
 
 0
@@ -2961,9 +2943,9 @@ B-2.2: Individual action outlines
 |  Action outline | Action name | Promotion of bicycle transportation  |
 | --- | --- | --- |
 |   |  Action type | Technology/Infrastructure
-Regulations/organizational  |
+| Regulations/organizational  |
 |  Reference to impact pathway | Action description | 1. Systematic construction of new bicycle paths (ultimately by 2030 - 340 km of paths - recommendation of the citizens' panel).
-Installation of 5 bicycle shelters with monitoring, equipped with two-level racks for 40 parking spaces each.  |
+| Installation of 5 bicycle shelters with monitoring, equipped with two-level racks for 40 parking spaces each.  |
 |   |  Field of action | Transport  |
 |  Implementation | Systemic lever | Technology/ infrastructure
 Governance /policy/ organizational
@@ -3085,11 +3067,11 @@ Plan
 9
 
 |   | Action description | Developing and effectively implementing a long-term strategy focused on ensuring good access to travel destinations and services, aimed at meeting the mobility needs of individuals and companies in urban areas and their surroundings, in order to improve quality of life.
-The development of the Sustainable Urban Mobility Plan (SUMP) was preceded by the largest, most comprehensive traffic studies in Rzeszów and the Rzeszów Functional Area, conducted by the Rzeszów University of Technology (using various methods, including big data).  |
+| The development of the Sustainable Urban Mobility Plan (SUMP) was preceded by the largest, most comprehensive traffic studies in Rzeszów and the Rzeszów Functional Area, conducted by the Rzeszów University of Technology (using various methods, including big data).  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Transport  |
 |   | Systemic lever | Governance /policy/ organizational
-Spatial planning  |
+| Spatial planning  |
 |   | Outcome (according to module B-1.1) | Adapting urban planning and regulatory tools related to reducing the demand for motorized passenger transportation.  |
 |  Implementation | Responsible bodies/person for implementation | City Municipality of Rzeszów - Office for the Development of the City of Rzeszów  |
 |   | Action scale & addressed entities | The development of the document is necessary in order to plan the directions of transportation development in the city and in the municipalities forming the ROF. The document will indicate justified reasons for implementing the task, for example, the need to introduce Clean Transport Zones.  |
@@ -3171,7 +3153,7 @@ Plan
 C
 
 |   |  | The Ecological Education Path (educational) will also be implemented, mainly intended for children and youth, including small architectural objects, ecological games, informational boards, and other elements. The necessary infrastructure is also planned to be implemented on the site of the new investment project: a ramp for access, unloading, covered, equipped with containers for selective waste collection; container storage areas for various types of waste, maneuvering areas, internal roads, and parking lots.
-Reconstruction of the installation for mechanical processing of municipal waste in order to adapt it for sorting (purifying) selectively collected waste.  |
+| Reconstruction of the installation for mechanical processing of municipal waste in order to adapt it for sorting (purifying) selectively collected waste.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Waste & circular economy  |
 |   | Systemic lever | Technology/ infrastructure
@@ -3179,7 +3161,7 @@ Governance /policy/ organizational
 Social/ behavior/ education
 Finance  |
 |   | Outcome (according to module B-1.1) | Increase in the amount of selectively collected waste.
-Significant increase in the level of waste recycling, including bio-waste.  |
+| Significant increase in the level of waste recycling, including bio-waste.  |
 |  Implementation | Responsible bodies/person for implementation | City Municipality of Rzeszów - Rzeszów City Office/Department of Municipal Services, Department of Investments. Miejskie Przedsiębiorstwo Gospodarki Komunalnej-Rzeszów Sp. z o. o. (City Public Utility Company)  |
 |   | Action scale & addressed entities | Continuous and systematic actions in the area of waste management are extremely important. They are crucial in striving for more sustainable and responsible resource management and environmental protection. Furthermore, the actions should be continued and intensified to meet ambitious legal regulations in this area.  |
 |   | Involved stakeholders | City Municipality of Rzeszów - Rzeszów City Office/Department of Municipal Services, Department of Investments. MPGK, residents, entrepreneurs  |
@@ -3199,7 +3181,7 @@ C
 |   | GHG emissions reduction estimate (total) per emission source sector | 533 tCO_{2e}  |
 |   | GHG emissions compensated (natural or technological sinks) | -  |
 |   | Total costs and costs by CO_{2e} unit | Total costs: PLN 30,000,000, EURO 6,666,667
-Costs by CO_{2e} unit: 56,285.18 EUR 12,507.82  |
+| Costs by CO_{2e} unit: 56,285.18 EUR 12,507.82  |
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Investments in solutions aimed at waste disposal and management.  |
@@ -3216,7 +3198,7 @@ Plan
 5
 
 |   | Action description | 1. Construction of a green waste biocomposting facility; implementation of a waste processing site with waste bins until 2027.
-Systematic modernization of the vehicle fleet.  |
+| Systematic modernization of the vehicle fleet.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Waste & circular economy  |
 |   |  Systemic lever | Technology/ infrastructure
@@ -3248,9 +3230,9 @@ Costs by CO_{2e} unit: PLN 36,976.17 EURO 8,216.93  |
 |   |  Action description | Systematic education of residents through billboard campaigns, workshops for residents (e.g., cooking with food scraps in a zero-waste spirit, reusing waste, how to avoid generating waste, etc.), lectures for students, educational games, ecological contests, happenings, promotion of circular economy (CE) and zero waste (ZW) initiatives, as part of city events such as Neighborhood Days, and recurring events like Reggae on the Wisłok River. We play for the Climate, etc. Implementation of the Ecological Education Center (described earlier).  |
 |  Reference to impact pathway | Field of action | Waste & circular economy  |
 |   |  Systemic lever | Governance /policy/ organizational
-Social/ behavior/ education  |
+| Social/ behavior/ education  |
 |   |  Outcome (according to module B-1.1) | Increase in the amount of selectively collected waste.
-Significant increase in the level of waste recycling, including bio-waste.  |
+| Significant increase in the level of waste recycling, including bio-waste.  |
 |  Implementation | Responsible bodies/person for implementation | City Municipality of Rzeszów - Rzeszów City Office/Department of Municipal Services  |
 |   |  Action scale & addressed entities | Education as a process aimed at imparting knowledge, shaping specific traits and skills is extremely important in the context of achieving climate neutrality, especially in the area of waste.
 In practice, education for sustainable development means much more than traditionally perceived environmental education, as it involves acquiring knowledge and skills to deal with the dilemmas and challenges of sustainable development.
@@ -3264,7 +3246,7 @@ Plan
 C
 
 |   |  | The aim is to minimize the production of waste generated on a daily basis in households.
-This is a great challenge and requires undertaking many diverse educational projects dedicated to different target groups.  |
+| This is a great challenge and requires undertaking many diverse educational projects dedicated to different target groups.  |
 | --- | --- | --- |
 |   |  Involved stakeholders | City Municipality of Rzeszów - Rzeszów City Office/GK, KS, Department of Education, CIM-Urban Lab; MPGK, educational institutions, NGOs, environmental associations, residents, businesses, universities  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Education and shaping of ecological awareness and pro-environmental attitudes of residents will be carried out systematically. There are also plans for stronger involvement of the private sector and universities in the process.  |
@@ -3329,7 +3311,7 @@ No information is available at the moment.  |
 | --- | --- | --- |
 |  Action outline | Action name | De-paving of concrete surfaces, including parking lots.  |
 |   |  Action type | Technical interventions/infrastructure
-Education  |
+| Education  |
 |   |  Action description | Development of green infrastructure and deconcreting of sealed surfaces in Rzeszów - removal of concrete and other hardened surfaces in the city area of over 1 hectare. In the places where the concrete has been removed, biologically active surfaces will be created, such as sports fields with grass surface, rain gardens in road strips, pocket parks, and new green arrangements in the spaces between the buildings.  |
 |  Reference to impact pathway | Field of action | Green infrastructure & nature-based solutions  |
 |   |  Systemic lever | Technology/ infrastructure
@@ -3350,19 +3332,19 @@ Plan
 O
 
 |   |  | Reducing the urban heat island effect.
-Increasing retention of rainfall.  |
+| Increasing retention of rainfall.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | City Municipality of Rzeszów - City Greenery Management Authority  |
 |   |  Action scale & addressed entities | Surface de-paving primarily enables retention, dependent on the surface: for small surfaces, retaining rainwater in the ground and thus supplying greenery; for large surfaces with intensive use by vehicles of varying load capacity and technical condition - retaining rainwater.  |
 |   |  Involved stakeholders | City Municipality of Rzeszów - ZZM, Rzeszów City Office/WI, MZBM, housing cooperatives, developers, entrepreneurs  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Actions related to deconcreting will be systematic and intensified.
-Heavy rains causing floods, as a result of climate change, require a quick response. Retention of water and its utilization “at the source” is one of the responses to this challenge.  |
+| Heavy rains causing floods, as a result of climate change, require a quick response. Retention of water and its utilization “at the source” is one of the responses to this challenge.  |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 |   |  Removed/substituted energy, volume, or fuel type | -  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | -  |
 |   |  GHG emissions compensated (natural or technological sinks) | 135 tCO2  |
 |   |  Total costs and costs by CO2e unit | Total costs: PLN 5,338,580, EUR 1,186,351
-Costs by CO2e unit: PLN 39,545, EUR 8,787.8  |
+| Costs by CO2e unit: PLN 39,545, EUR 8,787.8  |
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Application of solutions for retaining a portion of stormwater on new development sites.  |
@@ -3394,7 +3376,7 @@ Finance  |
 |   |  Action scale & addressed entities | Planning new investments with a priority on water retention and its utilization at the “point of origin”.  |
 |   |  Involved stakeholders | City Municipality of Rzeszów - Rzeszów City Office/WI, KŚ, Department of Architecture; BRMR, residents, entrepreneurs, developers, housing cooperatives  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Implementation of new “urban” investments with a priority of collecting and the use of rainwater “at its source” is crucial in the context of climate change adaptation, particularly as a response to increasingly frequent heavy rainfall causing flooding and inundation.
-Therefore, solutions in this scope are reflected in the prepared documentation, based on which investments are carried out. This approach must also be respected by Investors carrying out their investments in the city, therefore, already at the stage of obtaining so-called environmental decisions by Investors (or at the stage of development conditions decision, if an environmental decision is not required), issues related to water management are thoroughly analyzed and conditions regarding water retention are imposed.  |
+| Therefore, solutions in this scope are reflected in the prepared documentation, based on which investments are carried out. This approach must also be respected by Investors carrying out their investments in the city, therefore, already at the stage of obtaining so-called environmental decisions by Investors (or at the stage of development conditions decision, if an environmental decision is not required), issues related to water management are thoroughly analyzed and conditions regarding water retention are imposed.  |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 |   |  Removed/substituted energy, volume, or fuel type | -  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | -  |
@@ -3438,12 +3420,12 @@ O
 |   |  GHG emissions reduction estimate (total) per emission source sector | -  |
 |   |  GHG emissions compensated (natural or technological sinks) | 70 tCO2  |
 |   |  Total costs and costs by CO2e unit | Total costs: PLN 1,800,000, EUR 400,000
-Costs by CO2e unit: PLN 25,714, EUR 5,714  |
+| Costs by CO2e unit: PLN 25,714, EUR 5,714  |
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Developing or modifying spatial development plans and other planning documents to increase public spaces with new green areas, blue-green infrastructure solutions, and de-paving of high-density urban areas.  |
 |   |  Action type | Implementation and development of national and/or EU laws and regulations
-Regulations/organizational  |
+| Regulations/organizational  |
 |   |  Action description | Including in the developed planning documents and diagnoses of the aspect of environmental protection, including climate protection.
 Introducing provisions concerning: permissible heating sources for buildings (with priority given to municipal district heating networks and renewable energy sources); designating green areas with various functions; establishing minimum biologically active areas for plots or land; solutions for managing stormwater and meltwater.  |
 
@@ -3533,7 +3515,7 @@ Procurement actions
 Business models
 Education  |
 |   |  Action description | Implementation of the provisions of the anti-smog resolution for the Podkarpackie Voivodeship and the Air Protection Program for the urban zone.
-Rzeszów - complete elimination of individual solid fuel heating sources along with thermal modernization of residential buildings.  |
+| Rzeszów - complete elimination of individual solid fuel heating sources along with thermal modernization of residential buildings.  |
 |  Reference to impact pathway | Field of action | Built environment  |
 |   |  Systemic lever | Technology/ infrastructure
 Governance & policy
@@ -3577,7 +3559,7 @@ The devices running on gas fuel will also be gradually replaced, due to their ag
 |   |  GHG emissions reduction estimate (total) per emission source sector | 117,938 tCO2  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO2e unit | Total costs: PLN 459,975,201, EUR 102,216,711
-Costs by CO2e unit: PLN 3,900.14 EUR 866.70  |
+| Costs by CO2e unit: PLN 3,900.14 EUR 866.70  |
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Conducting a deep thermal modernization and elimination of individual heating methods in order to connect to the district heating network in buildings belonging to housing cooperatives and housing communities.  |
@@ -3627,7 +3609,7 @@ Plan
 |   |  GHG emissions reduction estimate (total) per emission source sector | 29,438 tCO2e  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO2e unit | Total costs: PLN 257,343,959, EUR 57,187,546
-Costs by CO2e unit: PLN 8,741.90 EURO 1,942.64  |
+| Costs by CO2e unit: PLN 8,741.90 EURO 1,942.64  |
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Implementing eco-friendly solutions in Municipal Units and Companies.  |
@@ -3653,7 +3635,7 @@ Climate Neutrality Action
 Plan
 
 |   | Outcome (according to module B-1.1) | All buildings of Municipal Units and Companies with energy-efficient management systems.
-Increase in the number of RES.  |
+| Increase in the number of RES.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | City Municipality of Rzeszów - Rzeszów City Office/WI, Municipal Companies, municipal units  |
 |   |  Action scale & addressed entities | Reducing the demand for non-renewable energy by: installing photovoltaic installations, heat pumps, and other renewable energy sources on existing buildings or in their surroundings, increasing the energy efficiency of existing buildings through deep thermal modernization and optimization of energy consumption, and implementing smart energy management systems.  |
@@ -4003,8 +3985,6 @@ Plan
 |  If yes, which co-benefit does it measure? | -  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | yes  |
 |  If yes, which action and impact pathway is it relevant for? | Waste and Circural Economy  |
-Climate Neutrality Action Plan
-
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | -  |
 | --- | --- |
 |  Data requirements |   |
@@ -5213,9 +5193,9 @@ The table below enlists the signatories¹ who are committing to this CCC, and th
 |  Name of the signatory (organisation) | Sector / Domain / Level of operation² | Legal form | Name of the responsible person | Position of the responsible person  |
 | --- | --- | --- | --- | --- |
 |  Ministry of Climate and Environment | Climate and Environment
-Coordination with national climate policy, creation of legislative framework, coordination of cooperation with the government side. | Central administration | Paulina Henning - Kloska | Minister of Climate and Environment  |
+| Coordination with national climate policy, creation of legislative framework, coordination of cooperation with the government side. | Central administration | Paulina Henning - Kloska | Minister of Climate and Environment  |
 |  Office of the Marshal of the Podkarpackie Voivodeship | Policies
-Coordination with regional climate policy and sustainable development policy. | Regional administration | Władysław Ortyl | Marshal of the Podkarpackie Voivodeship  |
+| Coordination with regional climate policy and sustainable development policy. | Regional administration | Władysław Ortyl | Marshal of the Podkarpackie Voivodeship  |
 |  Rzeszów Functional Area Association (ROF) | Integrated Territorial Investment Management; Intermediary institution | Association - regional level | Paweł Potyrański
 Damian Kosiarski | President of the Management Board
 Office Director  |
@@ -5251,22 +5231,22 @@ Office Director  |
 | --- | --- | --- | --- | --- |
 |  BIMAT GRUPA spółka z o. o. | Business | Company | Bartosz Blok | President of the Management Board  |
 |  Piotr Kamiński Robert Kamiński
-Kancelaria Radców Prawnych | Business | Company | Piotr Kamiński | President of the Management Board  |
+| Kancelaria Radców Prawnych | Business | Company | Piotr Kamiński | President of the Management Board  |
 |  PZL Sędziszów S.A. | Business | Company | Bogusław Satława | President of the Management Board  |
 |  Rzeszówdis spółka z o. o. | Business | Company | Elżbieta Rusak | Development Director  |
 |  MTU AERO ENGINES POLSKA
-spółka z o. o. | Business | Company | Jan Florian | Operations Director  |
+| spółka z o. o. | Business | Company | Jan Florian | Operations Director  |
 |  BESTA spółka z o. o. | Business | Company | Jarosław Mrozik | Member of the Management Board  |
 |  CTP spółka z o. o. | Business | Company | Bogumiła Gabrovic | Member of the Management Board  |
 |  HURT-PAPIER | Business | Company | Ryszard Cebula | Shareholder  |
 |  ZKS STAL Rzeszów | Sports club | Sports club/company | Bogusław Balicki
-Marcin Słowik | Member of the Management Board
-Member of the Management Board  |
+| Marcin Słowik | Member of the Management Board |
+| Member of the Management Board  |
 |  INNOVO Institute for Innovation
-and Responsible Development | Business | Institution | Agnieszka Sznyk | President of the Management Board  |
+| and Responsible Development | Business | Institution | Agnieszka Sznyk | President of the Management Board  |
 |  Pad Res Development Sp. z o.o. | Business | Company | Mariusz Adamczewski
-Michał Pryca | President of the Management Board
-Member of the Management Board  |
+| Michał Pryca | President of the Management Board |
+| Member of the Management Board  |
 | --- | --- | --- | --- | --- |
 |  PGE Energia Ciepła S.A.
 PGE Obrót S.A. | Business | Company | Grzegorz Krystek

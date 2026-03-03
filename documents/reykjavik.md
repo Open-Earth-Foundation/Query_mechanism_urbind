@@ -329,7 +329,7 @@ Domestic food production. Emissions from domestic food production are insignific
 |  Waste |   | 48.929 |  | 2.735 | 51.664  |
 |  Industrial Process and Product Use (IPPU) |   | 41.685 |  | 55.972 | 97.657  |
 |  (AFOLU) | Sources (positive emissions) | 56.009 (land use)
-(agriculture) |  |  | 57.719  |
+| (agriculture) |  |  | 57.719  |
 |   |  Sinks (negative emissions) | -10.587 |  |  | -10.587  |
 |  Total |  | 496.393 | 22.666 | 58.931 | 577.990  |
 City of Reykjavík
@@ -635,7 +635,7 @@ A.3.3 Crucial External Stakeholders:
 | Stakeholder | Emission type / Focus | Relationship | Relevant target | Website |
 | National government | All emissions | National and city | Iceland's goal of carbon neutrality by 2040 | https://www.co2.is/ |
 | SSH - Association of Municipalities in the Capital Area | All emissions | One of seven municipalities that together form this association | Carbon neutrality, waste collection and transportation | Sóknaráætun | Samtök sveitarfélaga á höfuðborgarsvæðinu (ssh.is)
-Loftslagsstefna fyrir höfuðborgarsvæðið | Samtök sveitarfélaga á höfuðborgarsvæðinu (ssh.is) |
+| Loftslagsstefna fyrir höfuðborgarsvæðið | Samtök sveitarfélaga á höfuðborgarsvæðinu (ssh.is) |
 | Municipally owned companies | Energy, Transportation, Waste | The city is the largest owner | Reykjavík has set an Owner's Policy of carbon neutrality by 2040 |  |
 | Reykjavík Energy | Energy | Co-owner | Reykjavík Energy has a very ambitious target of climate neutrality by 2030 and a plan in place to reach it | Orkuveita Reykjavíkur verði kolefnishlutlaus árið 2030 (orkuveitan.is) |
 | Strætó | Transportation | Co-owner | Strætó has sustainability targets which directly impact the city's carbon neutrality journey. | Samfélagið – Strætó (straeto.is) |
@@ -816,19 +816,19 @@ Climate Neutrality Action Plan
 | --- | --- | --- | --- |
 |   |  List of actions | Descriptions | Next steps  |
 |  Waste & circular economy | 6) Zero waste
-) Green food policy | A comprehensive action plan to be developed for recirculation and recycling in order to support a more sustainable treatment of waste.
-The City’s food policy to be implemented and co-operation to be organised involving green agriculture in Kjalarnes. | The plan has been made. Action will be combined with the action increased recycling.
-The plan ended in 2022 and no decision has been made to continue the plan. Will be excluded from the portfolio.  |
+| ) Green food policy | A comprehensive action plan to be developed for recirculation and recycling in order to support a more sustainable treatment of waste. |
+| The City’s food policy to be implemented and co-operation to be organised involving green agriculture in Kjalarnes. | The plan has been made. Action will be combined with the action increased recycling. |
+| The plan ended in 2022 and no decision has been made to continue the plan. Will be excluded from the portfolio.  |
 |  Green infrastructure & nature-based solutions | 10) Reclamation of wetlands
-) Reykjavík climate forests | To be increased according to a special plan
-Climate forests to be promoted in collaboration with the Reykjavík Forestry Society (Skógraektarfélag Reykjavíkur), and a forestry plan be presented. | Combined with the action Carbon sinks
-Combined with the action Carbon sinks  |
+| ) Reykjavík climate forests | To be increased according to a special plan |
+| Climate forests to be promoted in collaboration with the Reykjavík Forestry Society (Skógraektarfélag Reykjavíkur), and a forestry plan be presented. | Combined with the action Carbon sinks |
+| Combined with the action Carbon sinks  |
 |  Built environment | 8) Green construction industry | Cooperation to be organised with businesses and industry for a greener construction industry | Combined with the action Low-carbon and circular building materials  |
 |  Operations of Reykjavík City | 12) Fossil fuel free by 2025 | Cars and equipment powered by fossil fuel will not be procured by the City as of 2021 and the cars and equipment that is already possessed will be replaced before the year 2025 | Combined with the actions of energy transition everywhere  |
 |  Adaptation to climate change | 13) Blue-green surface water solutions
-) Flood control installations to become recreational areas and parks | New thinking in the application of utility systems with improved utilisation of water and blue-green surface water solutions to become the rule in new city districts and when renovating the older systems.
-Undertakings to be initiated for the reinforcement of flood control structures along the coastline where needed, aiming at nature-based solutions, developing recreational areas, beach parks and facilities for ocean bathing at selected locations | Included in portfolio as an action
-Included in portfolio as an action  |
+| ) Flood control installations to become recreational areas and parks | New thinking in the application of utility systems with improved utilisation of water and blue-green surface water solutions to become the rule in new city districts and when renovating the older systems. |
+| Undertakings to be initiated for the reinforcement of flood control structures along the coastline where needed, aiming at nature-based solutions, developing recreational areas, beach parks and facilities for ocean bathing at selected locations | Included in portfolio as an action |
+| Included in portfolio as an action  |
 |  Other | 15) Collaboration with businesses and industry | Continue to co-operate with Festa - Centre for Social Responsibility and Businesses, under the banner of the City of Reykjavík & Festa Climate Declaration towards further results in all sections of the economy. | Combined with the action on co-operation with Festa on a new declaration on mobility  |
 |   | Just transition | A gender equality evaluation of the City of Reykjavík Climate Policy 2021-2025 is included in the CAP. | The actions of the CCC includes broader connection to involvement of citizens and guidelines to just transition included in section C of this CCC.  |
 City of Reykjavík
@@ -979,7 +979,7 @@ Climate Neutrality Action Plan
 6
 
 |   |  | - Transportation grants (Samgöngustyrkur)
-These are the largest players in the Vatnsmyri area. We will start working together with this group that is already defined and can have a large impact with every action. As the action is better defined, we have the option of including more businesses that are located in the area.  |
+| These are the largest players in the Vatnsmyri area. We will start working together with this group that is already defined and can have a large impact with every action. As the action is better defined, we have the option of including more businesses that are located in the area.  |
 | --- | --- | --- |
 |  **Impact & cost** | Generated renewable energy (if applicable) | N/A  |
 |   |  Removed/substituted energy, volume, or fuel type | Reduction and avoidance of fossil fuel use in private cars.  |
@@ -1004,7 +1004,7 @@ Climate Neutrality Action Plan
 |   |  Action scale & addressed entities | Currently 167 members have signed the Climate Declaration of Festa and the City of Reykjavík, these members will be presented the opportunity to sign the new declaration.  |
 |   |  Involved stakeholders | Festa, All members of Festa, 184 companies. Head og climate change affairs at Reykjavík City.  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | The declaration will build on the momentum from the declaration from 2015 but this declaration will focus on transportation aiming to promote green mobility options, energy transition and behavioural change.
-The declaration will mention both the vehicles operated by the businesses and how the businesses plan to encourage their staff to travel to and from their workplaces in a sustainable manner.  |
+| The declaration will mention both the vehicles operated by the businesses and how the businesses plan to encourage their staff to travel to and from their workplaces in a sustainable manner.  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   |  Removed/substituted energy, volume, or fuel type | Reduction and avoidance of fossil fuel use in private cars and trucks.  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Avoided GHG emissions has not been estimated. Developing the declaration includes setting this measurement. One option could be a travel-mode survey.  |
@@ -1019,7 +1019,7 @@ Climate Neutrality Action Plan
 |  Faxaflóahafnir climate neutral  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Faxaflóahafnir climate neutral
-Increasing the share of renewable energy.  |
+| Increasing the share of renewable energy.  |
 |   |  Action type | Infrastructure  |
 |   |  Action description | Onshore Power Supply (OPS)  |
 |  Reference to impact pathway | Field of action | Transport  |
@@ -1029,7 +1029,7 @@ Increasing the share of renewable energy.  |
 |   |  Action scale & addressed entities | N/A  |
 |   |  Involved stakeholders | Veitur, Ship owners  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | 2022-2023 Low voltage shore connections at Faxagarður and Miðbakki commissioned.
-+ High voltage shore connections at Skarfabakki.  |
+| + High voltage shore connections at Skarfabakki.  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   |  Removed/substituted energy, volume, or fuel type | Marine fuels substituted.
 OPS will be available at all quaysides 2030.
@@ -1086,7 +1086,7 @@ Climate Neutrality Action Plan
 |  Implementation | Responsible bodies/person for implementation | Office of Environmental Quality (Skrifstofa umhverfisgæða) of Reykjavík.  |
 |   |  Action scale & addressed entities | Local level  |
 |   |  Involved stakeholders | Service providers collecting and/or treating waste from the private sector (municipal and operational waste).
-The relevant stakeholders that have declared commitment are: Íslenska Gámafélagið, Sorpa bs. and Terra.  |
+| The relevant stakeholders that have declared commitment are: Íslenska Gámafélagið, Sorpa bs. and Terra.  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Íslenska Gámafélagið and Terra are the two largest companies providing waste collection and treatment in the Capital Area. Both companies operate according to an accredited EMS and provide waste related consultation to clients and are knowledgeable when it comes to sustainability. Both companies provide collection and sorting services and have agreements with third party recycling companies.
 Sorpa bs. is the municipal waste receiving company, servicing both the public and private sector. Sorpa handles and exports recyclable waste for recycling and unsorted waste for energy recovery. Sorpa bs. can have impact on sorting quality by education programs and setting conditions for waste acceptance for the private sector. Sorpa also operates GAJA, a treatment plant for food waste.
 Stakeholder engagement has been started and both Íslenska Gámafélagið and Sorpa have confirmed that they are in the process of scoping their contributions to the contract. Meetings with stakeholders are scheduled for January, during which the project objectives will be further defined as well as the level and frequency of communication and cooperation for the coming years. In additions we want to discuss the reporting and how we can  |
@@ -1320,7 +1320,7 @@ C
 | Indicator Context |
 | Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | [yes/no] yes |
 | If yes, which emission source sectors does it measure? | Fields of action according to GHG inventory format – Module A-1
-All sectors, energy, transport, waste, IPPU and AFOLU |
+| All sectors, energy, transport, waste, IPPU and AFOLU |
 | Does the indicator measure indirect impacts (i.e., co-benefits)? | [yes/no] No |
 | If yes, which co-benefit does it measure? | Specify co-benefit |
 | Is the indicator useful for monitoring the output/impact of action(s)? | [yes/no] Yes |
@@ -1447,7 +1447,7 @@ Climate Neutrality Action Plan
 | Expected data source | The Environment Agency and the metres of the City of Reykjavík |
 | Is the data source local or regional/national? | Local |
 | Expected availability | On the website: Climate change | Reykjavik
-Loftgaedi.is |
+| Loftgaedi.is |
 | Suggested collection interval | Annual, from 1 January to 31 December |
 | **References** |
 | Deliverables describing the indicator | Environment Agency |

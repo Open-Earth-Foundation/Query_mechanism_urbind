@@ -121,7 +121,6 @@ Climate Neutrality Action Plan
 |  Figure 6 | GHG emissions by source sectors and scopes 2018, t CO2 eq | 22  |
 |  Figure 7 | Trend of GHG emissions and percentage reduction for period 2008 – 2020 | 23  |
 |  Figure 8 | GHG emissions trend and projections by sector (2008 – 2030), t CO2eq | 52  |
-|  |   |   |
 
 List of tables
 
@@ -429,7 +428,6 @@ Table I-1.1: Climate Neutrality Target by 2030
 |  Geographical boundary | Same as city administrative boundary | Smaller than city administrative boundary | Larger than city administrative boundary  |
 |   |  |  | X  |
 |  Map  |   |   |   |
-|  |   |   |   |
 图
 
 GABROVO
@@ -673,7 +671,7 @@ Table A-1.3: Emission factors applied
 
 Total GHG emissions on the territory of the municipality in 2008 are 324 566 t CO2eq with LULUCF and 400 573 t CO2eq without LULUCF. GHG emissions by source sectors are presented in Table A-1.4.1 and Figure 5.
 
-The main source of GHG emissions were Buildings and facilities sector with  $68.6\%$  of total emission without LULUCF, followed by Transport sector  $(24.3\%)$  and Waste sector with  $7.0\%$ .
+The main source of GHG emissions were Buildings and facilities sector with  $68.6\%$  of total emission without LULUCF, followed by Transport sector  $(24.3\%)$  and Waste sector with  $7.0\%$.
 
 In the LULUCF sector 76 007 tons of CO2 were absorbed in 2008.
 
@@ -700,7 +698,7 @@ Climate Neutrality Action Plan
 
 #
 
-In 2018, the total greenhouse gas (GHG) emissions within the municipality amounted to 216,743 t CO2eq with land use, land-use change, and forestry (LULUCF) considered, and 257,831 t CO2eq without LULUCF. The primary source of GHG emissions is the Buildings and Facilities sector, accounting for  $55.4\%$  of the total emissions (excluding LULUCF). It is followed by the Transport sector  $(37.9\%)$  and the Waste sector  $(6.8\%)$ . Additionally, the LULUCF sector absorbed 41,088 tons of CO2 in 2018
+In 2018, the total greenhouse gas (GHG) emissions within the municipality amounted to 216,743 t CO2eq with land use, land-use change, and forestry (LULUCF) considered, and 257,831 t CO2eq without LULUCF. The primary source of GHG emissions is the Buildings and Facilities sector, accounting for  $55.4\%$  of the total emissions (excluding LULUCF). It is followed by the Transport sector  $(37.9\%)$  and the Waste sector  $(6.8\%)$. Additionally, the LULUCF sector absorbed 41,088 tons of CO2 in 2018
 
 Table A-1.4.2: GHG emissions by source sectors, 2018
 
@@ -742,7 +740,7 @@ Figure 7: Trend of GHG emissions and percentage reduction for period 2008 - 2020
 
 Data showed that emissions from all sectors in the Municipality of Gabrovo decreased, except for the transport sector.
 
-The most significant percentage reduction in greenhouse gas (GHG) emissions occurred in the buildings and facilities sector. Specifically, emissions from stationary combustion processes decreased by an impressive  $48.1\%$ . Additionally, the waste sector saw a substantial reduction of  $37.8\%$  in emissions. These positive trends reflect our commitment to sustainable practices and environmental stewardship
+The most significant percentage reduction in greenhouse gas (GHG) emissions occurred in the buildings and facilities sector. Specifically, emissions from stationary combustion processes decreased by an impressive  $48.1\%$. Additionally, the waste sector saw a substantial reduction of  $37.8\%$  in emissions. These positive trends reflect our commitment to sustainable practices and environmental stewardship
 
 In the buildings and facilities sector, industrial facilities and residential buildings are the primary sources of greenhouse gas (GHG) emissions. Meanwhile, in the transport sector, private and commercial transportation significantly contribute to emissions.
 
@@ -814,7 +812,7 @@ Management System in the Gabrovo Region' represents a significant step toward im
 
 # 4. Agricultural, Forestry and Land Use (AFOLU)
 
-The forest sector experienced a significant decline in (carbon) C absorption, with a reduction of  $45.9\%$ . The most substantial drop occurred in 2016, reaching  $-54.2\%$ . Subsequently, forest sector absorption gradually increased, albeit at a slow pace in the subsequent years.
+The forest sector experienced a significant decline in (carbon) C absorption, with a reduction of  $45.9\%$. The most substantial drop occurred in 2016, reaching  $-54.2\%$. Subsequently, forest sector absorption gradually increased, albeit at a slow pace in the subsequent years.
 
 Table A-1.5.1: GHG emissions and percentage change 2018 to 2008 by sectors
 
@@ -865,7 +863,7 @@ Climate Neutrality Action Plan
 |   |  |  | proposal on the Energy Efficiency Directive recast on 14 July 2021. The target to reduce energy consumption by 32.5% in the EU will be tightened significantly to 36–39% and the target will become binding. Based on the Commission’s formula for 2030 Climate Neutrality Action Plan 19 | which align with Gabrovo’s goals of reducing energy consumption and emissions, build capacity, and align with EU policies for a sustainable future. | with EU policies for a sustainable future.  |
 |  Regulation | EU | The Renewable Energy Directive, (RED II; 2018/2001). | The directive provides a comprehensive policy framework that supports the development of renewable energy projects | The Renewable Energy Directive (RED II; 2018/2001) is highly relevant to Gabrovo’s Climate Change and Carbon (CCC) plan. This directive aims to promote the use of renewable energy across the EU, setting binding targets and providing a framework for the development of RES
 This aligns with Gabrovo’s goals of increasing renewable energy use and reducing greenhouse gas emissions. | Gabrovo can utilize to enhance its renewable energy infrastructure and implement in its activities relevant to CCC implementation.  |
-|  Regulation | EU | The Fit for 55 package | The European Climate Law makes reaching the EU’s climate goal of reducing EU emissions by at least 55% by 2030 a legal obligation. | The law mandates a 55% reduction in EU emissions by 2030, aligning with Gabrovo’s own emission reduction targets and ensuring compliance with EU-wide goals. It provides a structured framework for climate action, helping Gabrovo align its local policies with broader EU strategies. | Gabrovo can enhance its efforts to achieve its climate goals, ensuring a sustainable and resilient future for its citizens.  |
+Regulation | EU | The Fit for 55 package | The European Climate Law makes reaching the EU’s climate goal of reducing EU emissions by at least 55% by 2030 a legal obligation. | The law mandates a 55% reduction in EU emissions by 2030, aligning with Gabrovo’s own emission reduction targets and ensuring compliance with EU-wide goals. It provides a structured framework for climate action, helping Gabrovo align its local policies with broader EU strategies. | Gabrovo can enhance its efforts to achieve its climate goals, ensuring a sustainable and resilient future for its citizens.
 8
 
 GABROVO
@@ -878,13 +876,11 @@ Climate Neutrality Action Plan
 | --- | --- | --- | --- | --- | --- |
 |   |  |  |  | The law facilitates access to EU funding and technical support for projects that contribute to emission reductions, which Gabrovo can leverage for its CCC initiatives. |   |
 |  Regulation | EU | EU legislation on buildings and construction | The Energy Performance of Buildings Directive EPBD; 2010/31, 2018/44. Construction-related matters such as construction product approvals, the environmental impacts of buildings and the energy efficiency of buildings and construction products. The legislation contains, for example, regulations for urban buildings to utilize solar energy. From 2027, each new government building or private office building larger than 250 square meters must have solar panels. | EU legislation on buildings and construction is highly relevant to Gabrovo’s Climate Change and Carbon (CCC) plans. Key directives and regulations include the Energy Performance of Buildings Directive (EPBD), the Energy Efficiency Directive (EED), and the Renewable Energy Directive (RED). These policies aim to improve energy efficiency, promote renewable energy, and decarbonize the building sector. | Implement measures to enhance the energy performance of buildings, such as insulation, energy-efficient windows, and heating systems. Increase the use of renewable energy sources like solar and wind power in building projects. Focus on renovating existing buildings to meet nearly zero-energy standards. Ensure all construction projects comply with EU standards and regulations, including the Euro codes for structural design.  |
-9
-
 |  Type | Level | Name & Title | Description | Relevance | Need for action  |
 | --- | --- | --- | --- | --- | --- |
 |   |  |  |  |  | Involve local stakeholders, including citizens, industry, and academia, in the planning and implementation process to ensure inclusive and effective measures.
-Regularly monitor and report on the progress of energy efficiency and renewable energy initiatives to ensure compliance with EU targets.  |
-|  Plan | EU | RePowerEU | In response to the hardships and global energy market disruption caused by Russia's invasion of Ukraine, the European Commission is implementing its REPowerEU Plan. Launched in May 2022, REPowerEU is helping the EU to save energy, produce clean energy and diversify its energysupplies. | Cities have a significant role in accelerating the energy transition described in the RePowerEU plan.
+| Regularly monitor and report on the progress of energy efficiency and renewable energy initiatives to ensure compliance with EU targets.  |
+|  Plan | EU | RePowerEU | In response to the hardships and global energy market disruption caused by Russia's invasion of Ukraine, the European Commission is implementing its REPowerEU Plan. Launched in May 2022, REPowerEU is helping the EU to save energy, produce clean energy and diversify its energy supplies. | Cities have a significant role in accelerating the energy transition described in the RePowerEU plan.
 REPowerEU Plan entails additional public and private sector investment by 2027.
 This plan aligns well with Gabrovo’s CCC plan and SECAP, which seeks to | To implement the REPowerEU plan in Gabrovo, several actions are necessary:
 Investment in Renewable Energy,
@@ -902,7 +898,7 @@ Climate Neutrality Action Plan
 |   |  |  |  | achieve an 80.5% reduction in greenhouse gas emissions by 2030. | Infrastructure Development.
 renewable energy and storage capacities is crucial for the successful implementation of these plans.
 Stakeholder Engaging all levels of society, including citizens, local and national stakeholders, is essential to ensure the inclusivity and effectiveness of the initiatives.  |
-|  Initiative | EU | New European Bauhaus | The New European Bauhaus is a creative and interdisciplinary initiative that connects the European Green Deal to our living spaces and experiences. | The New European Bauhaus initiative aims to create beautiful, sustainable, and inclusive living spaces, aligning perfectly with the goals of CCC Gabrovo 2030. By integrating this initiative, Gabrovo can foster innovation ecosystems and projects that address both local and global challenges. This approach will help Gabrovo adapt to new national and EU policies, societal changes, and | The CCC Gabrovo 2030 plan, with its Quadruple Helix governance model, can leverage the strengths of government, industry, academia, and civil society to drive these initiatives. This collaborative model  |
+Initiative | EU | New European Bauhaus | The New European Bauhaus is a creative and interdisciplinary initiative that connects the European Green Deal to our living spaces and experiences. | The New European Bauhaus initiative aims to create beautiful, sustainable, and inclusive living spaces, aligning perfectly with the goals of CCC Gabrovo 2030. By integrating this initiative, Gabrovo can foster innovation ecosystems and projects that address both local and global challenges. This approach will help Gabrovo adapt to new national and EU policies, societal changes, and | The CCC Gabrovo 2030 plan, with its Quadruple Helix governance model, can leverage the strengths of government, industry, academia, and civil society to drive these initiatives. This collaborative model
 1
 
 GABROVO
@@ -941,7 +937,7 @@ The program helps align local actions with EU policies, ensuring that Gabrovo’
 Build on existing initiatives and frameworks, such as the SECAP and CCC plans, to create synergies and maximize the impact of new projects.
 
 Establish robust monitoring and reporting mechanisms to track the progress of funded projects and ensure compliance with LIFE Programme requirements.  |
-|  Program | EU | The “Environment and Climate Change” program | The “Environment and Climate Change” program aims to improve the environmental status | The program focuses on priority areas such as marine waters, climate, | The program provides financial support for projects that  |
+Program | EU | The “Environment and Climate Change” program | The “Environment and Climate Change” program aims to improve the environmental status | The program focuses on priority areas such as marine waters, climate, | The program provides financial support for projects that
 3
 
 GABROVO
@@ -1011,7 +1007,7 @@ Climate Neutrality Action Plan
 |  Type | Level | Name & Title | Description | Relevance | Need for action  |
 | --- | --- | --- | --- | --- | --- |
 |   |  |  |  |  | local adaptation projects.
-Establish robust monitoring and reporting mechanisms to track the progress of adaptation measures and ensure compliance with national guidelines  |
+| Establish robust monitoring and reporting mechanisms to track the progress of adaptation measures and ensure compliance with national guidelines  |
 |  Plan | Local | Sustainable Energy and Climate Action Plan - SECAP 2022-2030 | The Sustainable Energy and Climate Action Plan (SECAP) 2022-2030 is a strategic framework designed to help municipalities achieve their climate and energy goals. It builds on the previous SEAP (Sustainable Energy Action Plan) and incorporates more ambitious targets and measures to address climate change and promote sustainable energy use. | The SECAP set out clear targets for reducing greenhouse gas emissions, increasing energy efficiency, and promoting renewable energy sources. For Gabrovo, it aimed at least a 40% reduction in emissions by 2030 compared to 2008 levels in: buildings, transport, energy supply, and waste management, ensuring a holistic approach to sustainability.
 SECAP aligns with EU climate and energy policies, ensuring that Gabrovo’s actions are consistent with broader European goals and can benefit from EU funding and support.
 The plan emphasizes the importance of involving all levels of society, including citizens, local businesses, | Gabrovo’s CCC plan and SECAP is targeting an 80.5% reduction in greenhouse gas emissions, including industry, based on SECAP measures. The plan includes both long-term and short-term goals to support decarbonization and climate change adaptation in Gabrovo, with an inclusive investment plan involving citizens, local, and  |
@@ -1027,8 +1023,6 @@ Climate Neutrality Action Plan
 | --- | --- | --- | --- | --- | --- |
 |   |  |  |  | and national stakeholders, to ensure inclusive and effective implementation. | national stakeholders. Establish robust monitoring and reporting mechanisms to track the progress of the SECAP and make adjustments as needed to stay on track with the targets  |
 |  Programme | Local | Waste management Programme of Gabrovo Municipality 2021-2028 | The Waste Management Programme of Gabrovo Municipality 2021-2028 is crucial for the successful implementation of the CCC Gabrovo 2030 plan. This program aims to reduce the harmful impact of waste on the environment and public health by preventing waste generation and promoting efficient resource use. Management Programme with the CCC Gabrovo 2030 plan, the municipality can enhance its efforts to achieve its climate goals, foster innovation, and ensure sustainable development. | Relevance to Gabrovo CCC: Alignment with Climate Goals: The waste management program Supports Gabrovo’s climate goals by reducing greenhouse gas emissions from waste disposal and promoting recycling and composting. | By focusing on efficient resource use, the program aligns with the CCC plan’s objectives of sustainability and circular economy. The program emphasizes public participation, ensuring that citizens are involved in waste management practices, which is essential for the inclusive approach of the CCC plan. Utilize intelligent waste management  |
-9
-
 |  Type | Level | Name & Title | Description | Relevance | Need for action  |
 | --- | --- | --- | --- | --- | --- |
 |   |  |  |  |  | systems, such as smart bins and data-driven waste collection, to improve efficiency and reduce waste.
@@ -1085,7 +1079,7 @@ Climate Neutrality Action Plan
 |   |  |  |  |  | buildings and infrastructure, such as retrofitting old buildings and promoting energy-efficient technologies.
 Develop sustainable transport solutions, including public transportation, cycling infrastructure, and electric vehicle charging stations.
 Involve local stakeholders, including government, industry, academia, and civil society, in the planning and implementation process to ensure broad support and collaboration.  |
-|  Plan | Local | Sustainable Urban Mobility Plan – SUMP 2021-2030 | SUMP provides a strategic and integrated approach to urban transport, contributing to improved accessibility and | The Sustainable Urban Mobility Plan (SUMP) 2021-2030 is highly relevant to Gabrovo’s Climate Change and Carbon (CCC) plan. SUMP aims to | Supports overall target of Gabrovo for 2030 GHG emissions levels and emphasizes  |
+Plan | Local | Sustainable Urban Mobility Plan – SUMP 2021-2030 | SUMP provides a strategic and integrated approach to urban transport, contributing to improved accessibility and | The Sustainable Urban Mobility Plan (SUMP) 2021-2030 is highly relevant to Gabrovo’s Climate Change and Carbon (CCC) plan. SUMP aims to | Supports overall target of Gabrovo for 2030 GHG emissions levels and emphasizes
 3
 
 GABROVO
@@ -1153,7 +1147,7 @@ Encourages the adoption of innovative technologies and practices, which can be i
 Ensures that Gabrovo’s CCC plan is aligned with the national priorities and objectives outlined in the National Development Programme.
 
 Focuses on projects that address key areas such as renewable energy, energy efficiency, and sustainable transport, leveraging national support. | Gabrovo’s CCC plan, the municipality can enhance its efforts to achieve its climate goals, foster innovation, build capacity, and align with EU policies for a sustainable future  |
-|  Programme | EU | Energy from RS and biofuels - 2021-2030. | The Program to Promote the Use of Energy from Renewable Sources and Biofuels (2021-2030) | By promoting renewable energy and biofuels, the program supports Gabrovo’s goal of reducing | By integrating the Program to Promote the Use of Energy  |
+Programme | EU | Energy from RS and biofuels - 2021-2030. | The Program to Promote the Use of Energy from Renewable Sources and Biofuels (2021-2030) | By promoting renewable energy and biofuels, the program supports Gabrovo’s goal of reducing | By integrating the Program to Promote the Use of Energy
 7
 
 GABROVO
@@ -1185,13 +1179,11 @@ Climate Neutrality Action Plan
 Objective: Focuses on improving energy efficiency in multi-family residential buildings.
 Measures: Provides funding and support for energy-saving renovations, such as insulation, window replacement, and heating system upgrades. |  | The programme is aligned with Gabrovo’s 2030 vision, as it aims to improve energy efficiency, reduce energy consumption, and enhance the living conditions in multi-family residential buildings. This aligns with Gabrovo’s goals for sustainable development and environmental protection.  |
 |  Strategy | National | Integrated Transport Strategy until 2030; | The Integrated Transport Strategy for the period until 2030 is a key national document aimed at enhancing Bulgaria’s transport sector. | Its relevance to Gabrovo’s 2030 CCC Plan can be seen in several areas: Improving Transport Connectivity: The strategy focuses on improving both internal and external transport connectivity. For Gabrovo, this means better integration with national and European transport networks, which can enhance the city’s resilience to climate impacts by ensuring efficient movement of goods and people. | Gabrovo’s CCC Plan can leverage this by adopting cleaner transport technologies and practices, reducing greenhouse gas emissions, and improving air quality.
-The strategy emphasizes increasing energy efficiency in the transport sector  |
-9
-
+| The strategy emphasizes increasing energy efficiency in the transport sector  |
 |  Type | Level | Name & Title | Description | Relevance | Need for action  |
 | --- | --- | --- | --- | --- | --- |
 |   |  |  |  |  | ensuring that its transport infrastructure is resilient to climate change impacts, such as extreme weather events.
-Enhancing the safety and security of the transport system is another key objective. This aligns with Gabrovo’s goals of creating a safe and sustainable urban environment.  |
+| Enhancing the safety and security of the transport system is another key objective. This aligns with Gabrovo’s goals of creating a safe and sustainable urban environment.  |
 |  Strategy | National | National Strategy for Development of Scientific Research in Bulgaria for the period 2017—2030 | The national strategy promotes scientific research and innovation, which can lead to the development of new technologies and methods for climate adaptation. | Gabrovo can leverage these advancements to improve its local climate resilience measures.
 The national strategy’s policies for effective funding and legislative changes can support Gabrovo’s CCC Plan by providing the necessary resources and regulatory framework to implement climate adaptation measures effectively | By focusing on developing human potential in scientific fields, the strategy ensures a skilled workforce that can contribute to Gabrovo’s climate initiatives. This includes training and retaining experts who can work on local  |
 Climate Neutrality Action Plan
@@ -1440,7 +1432,7 @@ C
 **Resistance to Restrictions**: Reducing the number of cars in the city center may face resistance from residents who value the convenience of private car use and may be reluctant to accept measures that restrict their mobility or lower speed limits.
 **Traffic Congestion**: Gabrovo may experience traffic congestion during peak hours, particularly in the city center. This can discourage public transport use and contribute to air pollution.
 **Accessibility**: Ensuring that public transport and active transport options are accessible to all residents, including those with disabilities, is essential for promoting sustainable mobility.
-**Public Awareness**: Raising public awareness about the benefits of sustainable mobility and the negative impacts of excessive car use is crucial for fostering behavioral change.
+**Public Aawareness**: Raising public awareness about the benefits of sustainable mobility and the negative impacts of excessive car use is crucial for fostering behavioral change.
 
 # Opportunities for Sustainable Mobility in Gabrovo
 
@@ -1511,7 +1503,7 @@ Slow Policy Adaptation: The pace of legislative and policy changes may not keep 
 
 ## Social and Cultural Factors:
 
-Public Awareness and Attitudes: A lack of knowledge and negative attitudes among citizens can hinder public acceptance and support for circular economy initiatives.
+Public Aawareness and Attitudes: A lack of knowledge and negative attitudes among citizens can hinder public acceptance and support for circular economy initiatives.
 
 ## Opportunities for Circular Economy Implementation in Gabrovo
 
@@ -1694,7 +1686,7 @@ C
 
 Negative Attitudes: Resistance to change and negative attitudes towards climate action can hinder progress and create challenges for implementing sustainable solutions.
 Political Will: Strong political will and commitment from both national and local governments are essential for driving effective climate action.
-Public Awareness: Raising public awareness about climate change and its impacts is crucial for building support and fostering a sense of urgency.
+Public Aawareness: Raising public awareness about climate change and its impacts is crucial for building support and fostering a sense of urgency.
 Stakeholder Engagement: Engaging a wide range of stakeholders, including businesses, NGOs, and community groups, can help identify and address barriers to climate action.
 
 # Opportunities for governance in Gabrovo
@@ -1770,7 +1762,6 @@ Climate Neutrality Action Plan
 Innovative Approaches: The community’s focus on innovative approaches to clean energy can provide valuable insights and strategies for the CCC.
 
 Collaborations to implement policies and projects aimed at reducing carbon emissions and promoting renewable energy.  |
-| --- | --- | --- | --- |
 |  Energy systems&Built environment, Waste&Circular economy | Ministry of Economy and Industry | **High level of influence**
 Provide funding opportunities for industry for energy efficiency and circular economy
 
@@ -1815,7 +1806,7 @@ Offering programs to educate and train individuals and businesses on the latest 
 Member of Gabrovo Council for sustainable urban development
 Provides technical support
 Change driver
-Invest in Gabrovo gaz system | **High level of interest**
+Invest in Gabrovo gas system | **High level of interest**
 City gas promote that can be derived from renewable sources like biogas, which is produced from the decomposition of organic matter. Using biogas can reduce GHG emissions compared to fossil fuels.  |
 |  Energy systems & Built environment, Waste & circular economy | MBAL Tota Venkova Beneficiary | **High level of influence**
 Final beneficiary of energy efficiency projects funded by Bulgarian Resilience and Recovery Plan and other programs for renovation of the municipal hospital | **Medium to high level of interest**
@@ -1831,16 +1822,15 @@ Adopting sustainable waste management practices, including recycling medical was
 
 Promoting public health campaigns that emphasize the health impacts of climate change and the importance of sustainable living.
 Conducting research on the health effects of climate change and educating staff and patients about sustainable practices and their benefits.  |
-| --- | --- | --- | --- |
 |  Energy systems& Built environment
 Mobility & Transport
 Waste & circular economy
 Green infrastructure&
 Nature base solution | District Information Center – Gabrovo | **High level influence**
-Comunicator in Gabrovo Transition Team
+Communicator in Gabrovo Transition Team
 One stop shop for Energy efficiency
 Provides technical support and information to business and citizens
-Information dissemenation
+Information dissemination
 Organizes trainings and capacity building
 Policy development and implementation support | **High level of interest**
 Providing residents and businesses with information on climate change initiatives, energy-saving tips, and available resources for adopting sustainable practices.
@@ -1877,8 +1867,8 @@ Educational programs
 Schools' engagement
 Information and campaigns
 Facilitate the process of policy & standards
-implementaion on local level  |
-|  Energy systems & Built environment Mobility& transport Waste&circular economy Green infrastructure & naturebase solutions | Regional Innovation Center “Ambitious Gabrovo Partner | **High level of influence**
+implementation on local level  |
+|  Energy systems & Built environment Mobility& transport Waste&circular economy Green infrastructure & nature-based solutions | Regional Innovation Center “Ambitious Gabrovo Partner | **High level of influence**
 Member of Gabrovo Council for sustainable development
 Fosters advanced innovative technologies development and implementation in all sectors in Gabrovo CCC
 Provides technical support for smart city solutions
@@ -1902,7 +1892,7 @@ Organizing workshops, seminars, and events to share knowledge and best practices
 Built environment
 Mobility & transport
 Waste & circular economy
-Green infrastructure & naturebase solutions | Gabrovo District Government | **High level of influence**
+Green infrastructure & nature-based solutions | Gabrovo District Government | **High level of influence**
 Develops the regional policy and is a member of Gabrovo Council for sustainable urban development
 Participates in the monitoring process of Gabrovo CCC | **High level of interest**
 Implementing specialized programs in schools and universities to foster CCC skills among students.
@@ -1911,7 +1901,7 @@ Collaborating with local businesses and organizations to create opportunities fo
 |  Energy systems
 Built environment
 Waste & circular economy | Associations of owners in multifamily buildings | **High level of influence**
-Provide cofunding for residential retrofitting
+Provide co-funding for residential retrofitting
 Initiate new energy efficiency projects
 Participate in separation of waste campaigns
 Capacity building
@@ -1925,7 +1915,7 @@ Participate in community events  |
 Built environment
 Mobility & transport
 Waste & circular economy
-Green infrastructure & naturebase solutions | Chamber of Engineers in the investment design | **High level of influence**
+Green infrastructure & nature-based solutions | Chamber of Engineers in the investment design | **High level of influence**
 Technical support and advising
 Member of Gabrovo Council for sustainable urban development
 Capacity building
@@ -1943,7 +1933,7 @@ Climate Neutrality Action Plan
 Built environment
 Mobility & transport
 Waste & circular economy
-Green infrastructure & naturebase solutions | Chamber of architects | **High level of influence**
+Green infrastructure & nature-based solutions | Chamber of architects | **High level of influence**
 Member of Gabrovo Council for sustainable urban development
 Technical support
 Advisory function
@@ -1957,7 +1947,7 @@ Waste & circular economy | Regional Waste Depot for Non-Hazardous Waste – Gabr
 Partner and transition team member | **High level of influence**
 Technical support
 Community engagement
-Monitoring & data analisys
+Monitoring & data analysis
 Policing the law
 Information provider
 Change driver – Reuse, reduce and recycle | **High level of interest**
@@ -1971,7 +1961,7 @@ Mobility & Transport
 Waste & circular economy | Regional Ministry of Interior – Police & Fire department | **High level of influence**
 Safety & security support
 Disaster prevention
-Provides data for invetories of SECAP and CCC
+Provides data for inventories of SECAP and CCC
 Educational support
 Community engagement
 Law enforcement
@@ -1985,8 +1975,7 @@ Enforcing regulations related to low-emission zones and sustainable transportati
 4
 
 |   |  |  | Facilitating educational events on disaster prevention and management.
-Data Provision  |
-| --- | --- | --- | --- |
+| Data Provision  |
 |  Energy Systems
 Built environment
 Mobility & transport
@@ -2019,14 +2008,14 @@ Technical support
 Capacity building
 Community engagement | **High level of interest**
 Cleaning, organizing waste, infrastructure maintenance through out seasons
-Maintening and greening urban areas
+Maintaining and greening urban areas
 Provide circular economy practices
 Waste management
 Water and resource management
 Public engagement and awareness through educational campaigns
 Partnerships with local business and institutions
 Disaster prevention and preparedness to extreme weather events
-Monitoring & maintenance of infracture  |
+Monitoring & maintenance of infrastructure  |
 5
 
 |  Energy Systems
@@ -2034,10 +2023,10 @@ Built environment
 Mobility &transport
 Waste & Circular economy
 Green infrastructure and
-naturebase solutions
+nature-based solutions
 Citizens engagement | VIK Gabrovo- water supply and sewerage Gabrovo
 Municipal Water supplier | High level of influence
-Maintenance of water system, sewerage system, polution monitoring
+Maintenance of water system, sewerage system, pollution monitoring
 Invests in renovation of the water and sewer systems
 Provides technical solutions and participates in Gabrovo Council for sustainable urban development
 Community engagement
@@ -2047,9 +2036,8 @@ Provides sustainable water usage and conservation
 Waste water treatment & emissions reduction
 Flood resilience & climate adaptation
 Wastewater reuse & circular economy
-Provider of public wareness on water usage and sustainable water management
+Provider of public awareness on water usage and sustainable water management
 Collaboration with Municipal & regional climate projects  |
-| --- | --- | --- | --- |
 |  Energy Systems
 Built environment | Sustainable Energy Development Agency (SEDA) | High level of influence
 Develops the regulatory framework in the field of energy efficiency
@@ -2059,14 +2047,14 @@ Policy development - evidence based climate policy making
 Capacity building
 Community engagement & partnerships
 Data Provider | High level of interest
-Instrumental in alighnment local climate action plan with national & EU energy efficiency and sustainability goals.
+Instrumental in alignment local climate action plan with national & EU energy efficiency and sustainability goals.
 SEDA can conduct energy audits of Gabrovo's buildings and infrastructure to identify energy-saving opportunities.
 Can assess the potential for various renewable energy sources (solar, wind, geothermal) in Gabrovo and provide feasibility studies.
 Providing tech support expertise and capacity building support to municipalities in developing and executing energy and climate action plans.
 Public awareness events facilitator  |
 |  Energy & Built environment
 Mobility &transport | Ministry of regional development and public works | High level of influence
-Managing Authority of Bulgarian Recovery and Resilience Plan and the national program Regions under development for sectors : Energy & Built environment and | High level of interest
+Managing Authority of Bulgarian Recovery and Resilience Plan and the national program Regions under development for sectors: Energy & Built environment and | High level of interest
 Encourages integration of energy – efficient technology and materials in infrastructure projects
 Responsible in managing and distributing EU cohesion policy funds  |
 GABROVO
@@ -2079,12 +2067,11 @@ Regulatory framework developer and controller for Urban Planning
 Policy and program development
 Provides capacity building and technical support to the municipalities | Oversees national program for energy efficiency
 Regulatory framework & policy implementation
-Coordinatotion of climate resilience and adaptation projects
+Coordination of climate resilience and adaptation projects
 Green infrastructure development
 The ministry is influencing the extends to the planning and financing of the sustainable transportation systems.
 Public private partnership facilitator
 Oversees the compliance with EU directives  |
-| --- | --- | --- | --- |
 |  Energy Systems
 Built environment
 Mobility &transport
@@ -2110,7 +2097,7 @@ Ensure that transportation infrastructure is designed and built with climate res
 Implement policies to reduce emissions from the transportation sector.
 Smart city technology promoter
 Intelligent transport system supporter
-Policy development – playes a role in shaping EV incentives  |
+Policy development – plays a role in shaping EV incentives  |
 7
 
 |   |  |  | Collaboration with EU and national policies
@@ -2119,25 +2106,24 @@ Public awareness in low emissions mobility usage
 Encouraging behaviour change
 Setting emissions standards
 Compliance with EU directives  |
-| --- | --- | --- | --- |
 |  Green infrastructure & nature base solutions
-Citizens engagement | Executive forest Agency | High elevel of influence
+Citizens engagement | Executive forest Agency | High level of influence
 Data provider for inventories
 Local Forest manager and planner
 Projects development partner providing innovative solutions for Green infrastructure & nature base solutions
 Technical support partner
-Participates in capacity building and community engagement | High elevel of interest
+Participates in capacity building and community engagement | High level of interest
 Implements sustainable forest management practices to protect carbon sinks and promote biodiversity.
 Reforestation Support to increase forest cover and carbon sequestration.
 Forest Fires Prevention
 Promote the use of sustainable forest products and reduce deforestation.
 The EFA is responsible for monitoring and reporting on the carbon stock of Bulgaria’s forests  |
 |  Mobility & transport
-Waste & Circular economy | Ministry of youth and sport | High elevel of influence
+Waste & Circular economy | Ministry of youth and sport | High level of influence
 Community engagement
 Policy developer
 Capacity building
-Climate advocate | High elevel of interest
+Climate advocate | High level of interest
 Incorporate climate change education into school curricula and extracurricular activities, focusing on the importance of sustainability and the role of young people in addressing climate challenges.
 Train young people to become climate ambassadors
 Encourage the construction or renovation of sports facilities using sustainable materials and energy-efficient technologies.
@@ -2150,16 +2136,15 @@ Climate Neutrality Action Plan
 Support the development and implementation of policies that promote sustainable practices and reduce greenhouse gas emissions.
 Encourage the use of bicycles, walking, and public transportation for commuting to sports facilities and events
 Promoting green spaces  |
-| --- | --- | --- | --- |
 |  Energy Systems
 Built environment
 Mobility &transport
 Waste & Circular economy
-Citizens engagement | Ministry of Labour and social policy | **High elevel of influence**
+Citizens engagement | Ministry of Labour and social policy | **High level of influence**
 Data sharing
 Community engagement
 Social support
-Financial support | **High elevel of influence**
+Financial support | **High level of influence**
 Creation of green jobs
 **Job Training and Reskilling:**
 Offer retraining programs for workers in sectors affected by climate change, helping them transition to new industries or occupations.
@@ -2178,7 +2163,6 @@ Develop guidelines and regulations to protect workers from climate-related hazar
 **Climate-Friendly Policies:** friendly practices and reduce greenhouse gas emissions.
 
 Support a just transition to a low- carbon economy, ensuring that workers and communities are not left behind.  |
-| --- | --- | --- | --- |
 |  Energy Systems
 Built environment
 Mobility &transport
@@ -2196,7 +2180,7 @@ Advocating for green investment
 
 Supporting innovation in green technology
 
-Building green workforce - training and uposkilling for green jobs
+Building green workforce - training and upskilling for green jobs
 
 Raising awareness on climate issues
 
@@ -2216,7 +2200,7 @@ Green and blue zones
 
 Community events
 
-Promoting of naturebased tourism and eco practices
+Promoting of nature-basedd tourism and eco practices
 
 Reducing tourism’s carbon footprint by promoting of low emissions transport
 
@@ -2230,7 +2214,6 @@ Climate Neutrality Action Plan
 Promoting Environmental standards for tourism
 Supports Conservation initiatives
 Develops strategies for adapting to climate change  |
-| --- | --- | --- | --- |
 |  Energy Systems
 Built environment
 Mobility &transport
@@ -2238,7 +2221,7 @@ Waste & Circular economy
 Citizens engagement | Bulgarian Chamber of Commerce and Industry | **Moderate level of influence**
 Advocating for climate-friendly Policies
 Fostering Innovation
-Promoting Sustainable Business Practices
+Promoting Sustainable Business Ppractices
 Capacity building | **High level of interest**
 By promoting sustainable business practices, fostering innovation, and advocating for policies that support climate action.
 Facilitates public-private partnerships
@@ -2255,14 +2238,14 @@ Innovation practices
 Capacity building
 Data sharing
 Community engagement | **High interest level**
-Promoting sustainable ractices in agriculture
+Promoting sustainable practices in agriculture
 Supports landuse and carbon sequestration
 Funding and support for green agriculture
 Promoting climate resilience in agriculture
 Water conservation and irrigation efficiency
 Supporting rural development - green tourism, eco-tourism
 Supports circular economy practices
-Rasing awareness about sustainable farming  |
+Raising awareness about sustainable farming  |
 |  Waste & Circular economy
 Citizens engagement
 Green infrastructure and nature base solutions | Bulgarian foundation Bio diversity | **Significant level of influence**
@@ -2281,14 +2264,13 @@ Climate Neutrality Action Plan
 |   |  |  | Supporting sustainable land use
 Tracking ecosystem health and climate impact
 Promoting eco tourism and practices  |
-| --- | --- | --- | --- |
 |  Waste & Circular economy
 Green infrastructure&NBS
 Citizens engagement | Ministry of Environment and water | **Significant role**
 Policy development and governance
-Developes the strategic framework for climate adaptation of Bulgaria
+Develops the strategic framework for climate adaptation of Bulgaria
 Funding support by national program Environment
-Technical support and Extertise monitoring
+Technical support and Expertise monitoring
 Reporting body on climate actions
 Community engagement
 Capacity building | **High level of interest**
@@ -2297,8 +2279,8 @@ Providing financial support for local projects that focus on renewable energy, e
 Organizing workshops and seminars to educate the public and local businesses about climate change and sustainable practices.
 Working closely with the Gabrovo municipality to develop and implement climate action plans tailored to the region’s specific needs.
 Establishing systems to monitor environmental indicators and report on the progress of climate initiatives, ensuring transparency and accountability.
-Awareness campaigns, and volunteer programs.  |
-|   | Ministry of environment and water – regional office Veliko Turnovo |  |   |
+Aawareness campaigns, and volunteer programs.  |
+Ministry of environment and water – regional office Veliko Turnovo
 |  Energy Systems
 Built environment
 Mobility &transport
@@ -2331,7 +2313,6 @@ Sustainable transport and mobility initiatives
 Waste management – finances initiatives
 
 Finances green spaces  |
-| --- | --- | --- | --- |
 |  Energy Systems
 Built environment
 Mobility &transport
@@ -2342,18 +2323,18 @@ Capacity building
 Funding
 Community engagement
 Carbon Offsetting | **Moderate interest**
-Implementing Sustainable Practices
+Implementing Sustainable Ppractices
 Green Products and Services
 Community Engagement: Environmental projects, such as tree planting, clean-up drives, and educational campaigns about sustainability.
 
 Innovation and Technology: reduce emissions and improve energy efficiency.
 
 Participating in carbon offset programs to compensate for their emissions  |
-|   |  Pastili – local business  |   |   |
-|   |  STS investment holding – local business  |   |   |
-|   |  Senstate Technology – local business  |   |   |
-|   |  Forge capital – local business  |   |   |
-|   |  Mechatronic SC – local business  |   |   |
+Pastili – local business
+STS investment holding – local business
+Senstate Technology – local business
+Forge capital – local business
+Mechatronic SC – local business
 |  Energy Systems
 Built environment
 Mobility &transport
@@ -2362,7 +2343,7 @@ Citizens engagement | Youth center Gabrovo | **High influence**
 Capacity building
 Community engagement | **High interest**
 Engage in community projects,
-Educational, policy depates on climate issues ;
+Educational, policy debates on climate issues;
 Engage youth  |
 Gabrovo2030 Climate Neutrality Action Plan
 
@@ -2408,8 +2389,8 @@ Increased number of available solutions. | Reduction of GHG emissions by 38 746.
 Improved quality of life.
 Increased competitiveness of local industry  |
 |   |  #2 | Business models and investments for solutions are developed.
-Local, national and international funding opportunities are identified. | Investment projects are developed by interested parties and initiated for further implementation.
-Increased funding in energy systems. |   | Increased public funding and attracted private investments  |
+| Local, national and international funding opportunities are identified. | Investment projects are developed by interested parties and initiated for further implementation. |
+| Increased funding in energy systems. |   | Increased public funding and attracted private investments  |
 |   |  #3 | Local strategies and regulations are reviewed and updated.
 Analysis of national legislation and regulation framework is done. | Improved local strategies and regulations.
 National legislation and regulation framework are influenced by the results of CCC implementation. |   | Improved governance and regulation framework  |
@@ -2422,7 +2403,8 @@ MUNICIPALITY
 Climate Neutrality Action Plan
 
 |   | #4 | Plan of workshops, trainings and information campaigns are developed to improve capacity of all society groups for CO2 neutrality. | Workshops, trainings and information campaigns are organised.
-Improve capacity of all society groups |  | Improved capacity for all societal groups.  |
+| Improve capacity of all society groups |  | Improved capacity for all societal groups.  |
+| Field | Lever | Early changes | Late outcomes | Direct impacts | Indirect impacts |
 | --- | --- | --- | --- | --- | --- |
 |   |  #5 | Investigation on possible social innovation action and changes. | Social innovations are developed and started to be implemented. |   | Implemented social innovations  |
 |  Mobility & transport | #1 | Key innovative solutions and technologies are identified.
@@ -2433,17 +2415,15 @@ Improved air quality and health of the community
 Improved safety conditions in transport.
 New competencies and innovations  |
 |   |  #2 | Business models and investments for solutions are developed.
-Local, national and international funding | Investment projects are developed by interested parties and initiated for further implementation. |  | Increased pubic fundings and attracted private investments  |
-7
-
+| Local, national and international funding | Investment projects are developed by interested parties and initiated for further implementation. |  | Increased public funding and attracted private investments  |
 |   |  | opportunities are identified. | Increased funding in energy systems. |  |   |
 | --- | --- | --- | --- | --- | --- |
 |   |  #3 | Local strategies and regulations are reviewed and updated.
-Analysis of national legislation and regulation framework is done. | Improved local strategies and regulations.
-National legislation and regulation framework are influenced by the results of CCC implementation. |   | Improved governance and regulation framework  |
+| Analysis of national legislation and regulation framework is done. | Improved local strategies and regulations. |
+| National legislation and regulation framework are influenced by the results of CCC implementation. |   | Improved governance and regulation framework  |
 |   |  #4 | Plan of workshops, trainings and information campaigns are developed to improve capacity of all society groups for CO2 neutrality. | Workshops, trainings and information campaigns are organised.
-Improve capacity of all society groups |   | Improved capacity of all society groups.  |
-|   |  #5 | Investigation on possible social innovation action and changes. | Social innovations are developed and started to be implemented. |   | Implemented social innovations  |
+| Improve capacity of all society groups |   | Improved capacity of all society groups.  |
+| #5 | Investigation on possible social innovation action and changes. | Social innovations are developed and started to be implemented. | Implemented social innovations |
 |  Waste & circular economy | #1 | Key innovative solutions and technologies are identified.
 Local needs are investigated.
 Relevant stakeholders and interested parties are identified and involved | Advanced technologies and innovative solutions are promoted and used by the final users – citizens, business and institutions.
@@ -2454,33 +2434,27 @@ Improved circularity.  |
 8
 
 |   | #2 | Business models and investments for solutions are developed.
-Local, national and international funding opportunities are identified. | Investment projects are developed by interested parties and initiated for further implementation. |  | Increased public fundings and attracted private investments  |
-| --- | --- | --- | --- | --- | --- |
+| Local, national and international funding opportunities are identified. | Investment projects are developed by interested parties and initiated for further implementation. |  | Increased public fundings and attracted private investments  |
 |   |  #3 | Local strategies and regulations are reviewed and updated.
-Analysis of national legislation and regulation framework is done. | Improved local strategies and regulations.
-National legislation and regulation framework are influenced by the results of CCC implementation. |   | Improved governance and regulation framework  |
+| Analysis of national legislation and regulation framework is done. | Improved local strategies and regulations. |
+| National legislation and regulation framework are influenced by the results of CCC implementation. |   | Improved governance and regulation framework  |
 |   |  #4 | Plan of workshops, trainings and information campaigns are developed to improve capacity of all society groups for CO2 neutrality. | Workshops, trainings and information campaigns are organised.
-Improve capacity of all society groups |   | Improved capacity of all society groups.  |
-|   |  #5 | Investigation on possible social innovation action and changes. | Social innovations are developed and started to be implemented. |   | Implemented social innovations  |
+| Improve capacity of all society groups |   | Improved capacity of all society groups.  |
+| #5 | Investigation on possible social innovation action and changes. | Social innovations are developed and started to be implemented. | Implemented social innovations |
 |  Green infrastructure & nature-based solutions | #1 | Key innovative solutions and technologies are identified. | Advanced technologies and innovative solutions are promoted and used by the | Reduction of GHG emissions NE | Improved quality of live.
-Increased use of green technologies and  |
-9
-
+| Increased use of green technologies and  |
 |   |  | Local needs are investigated.
 Relevant stakeholders and interested parties are identified and involved | final users – citizens, business and institutions.
 Increased number of available solutions. |  | nature-based solutions. Green job creation.
 Increased number of visitors and tourists.
 Increase the adaptation potential of the community to climate change.
 Protected biodiversity.  |
-| --- | --- | --- | --- | --- | --- |
 |   |  #2 | Business models and investments for solutions are developed.
-Local, national and international funding opportunities are identified. | Investment projects are developed by interested parties and initiated for further implementation. |   | Increased pubic fundings and attracted private investments  |
+| Local, national and international funding opportunities are identified. | Investment projects are developed by interested parties and initiated for further implementation. |   | Increased public funding and attracted private investments  |
 |   |  #3 | Local strategies and regulations are reviewed and updated.
-Analysis of national legislation and regulation framework is done. | Improved local strategies and regulations.
-National legislation and regulation framework are influenced by the results of CCC implementation. |   | Improved governance and regulation framework  |
-|   |  #4 | Plan of workshops, trainings and information campaigns are developed to improve capacity of all | Workshops, trainings and information campaigns are organised. |   | Improved capacity of all society groups.  |
-Climate Neutrality Action Plan
-
+| Analysis of national legislation and regulation framework is done. | Improved local strategies and regulations. |
+| National legislation and regulation framework are influenced by the results of CCC implementation. |   | Improved governance and regulation framework  |
+| #4 | Plan of workshops, trainings and information campaigns are developed to improve capacity of all | Workshops, trainings and information campaigns are organised. | Improved capacity of all society groups. |
 |   |  | society groups for CO2 neutrality. | Improve capacity of all society groups |  |   |
 | --- | --- | --- | --- | --- | --- |
 |   | #5 | Investigation on possible social innovation action and changes. | Social innovations are developed and started to be implemented. |  | Implemented social innovations  |
@@ -2492,11 +2466,11 @@ G
 
 # B-1.2: Description of impact pathways
 
-In this section of Gabrovo CCC AP the impact pathways based on the planned areas of interventions are described. I fact there are 5 main sectors choozen for interactions based on the needs and plans of Gabrovo Municipality till 2030, alreday included in the scope Gabrovo Integrated Development Plan and related to its sectoral substrategies. In this CCC AP the sector of Energy Systems is merged with the sector Built environment, because most of the interventions on energy systems are included in buildings reconstruction and renovation. Also the renovation of industrial buildings and facilities are included in this sector. The most important measure in Energy System and Built Environment sector are focused on public and private buildings' renovation and RES installations.
+In this section of Gabrovo CCC AP the impact pathways based on the planned areas of interventions are described. In fact there are 5 main sectors chosen for interactions based on the needs and plans of Gabrovo Municipality till 2030, already included in the scope Gabrovo Integrated Development Plan and related to its sectoral substrategies. In this CCC AP the sector of Energy Systems is merged with the sector Built environment, because most of the interventions on energy systems are included in buildings reconstruction and renovation. Also the renovation of industrial buildings and facilities are included in this sector. The most important measure in Energy System and Built Environment sector are focused on public and private buildings' renovation and RES installations.
 
 The sector Mobility and Transport will implement actions related to electrification of public and private transport, and development of a sustainable mobility through construction of new cycling lanes, efficient traffic management and control.
 
-The Sector Waste and Circular economy is choozen because of the long experience of Gabrovo as an industrial center and its efforts to establish a regional innovation valley in Circularity together with Technical University of Gabrovo, Regional Innovation Center and advanced innovative companies. The actions in this sector will try to reduce and re-use waste both by companies and citizens, through separation of waste, smart waste management system, new underground bins' sites, trying to achieve zero waste.
+The Sector Waste and Circular economy is chosen because of the long experience of Gabrovo as an industrial center and its efforts to establish a regional innovation valley in Circularity together with Technical University of Gabrovo, Regional Innovation Center and advanced innovative companies. The actions in this sector will try to reduce and re-use waste both by companies and citizens, through separation of waste, smart waste management system, new underground bins' sites, trying to achieve zero waste.
 
 The Green infrastructure and NBS are part of Gabrovo adaptation strategy to climate change and though this area of interventions an improvement of green areas by implementation of NBSs is planned in this CCC AP.
 
@@ -2558,7 +2532,7 @@ Efficient Waste Management Strategies - Implementing innovative waste management
 
 Optimizing Waste Collection Systems - Utilizing smart technology and data analytics can streamline waste collection routes, leading to cost savings and improved efficiency in waste management processes.
 
-Promoting Source Separation Practices - Encouraging residents and businesses to separate recyclables from general waste at the source can increase recycling rates and reduce the amount of waste sent to landfills.
+Promoting Source Separation Ppractices - Encouraging residents and businesses to separate recyclables from general waste at the source can increase recycling rates and reduce the amount of waste sent to landfills.
 
 Zero waste initiatives - Implementing zero waste initiatives and principle of circularity involves minimizing waste generation, maximizing recycling and reuse of materials, and diverting organic waste from landfills, contributing to a more sustainable circular economy.
 
@@ -2574,7 +2548,7 @@ Rainwater Harvesting Systems - Innovative rainwater harvesting system will be de
 
 Biodiversity Conservation Efforts - Biodiversity conservation efforts focus on preserving and restoring natural habitats within urban landscapes to support diverse plant and animal species, enhance ecosystem services, and promote ecological balance for a resilient urban ecosystem.
 
-# 3.2 Module B-2 . Climate Neutrality Portfolio Design - contains a project description for each action planned in the CCC Action Plan.
+# 3.2 Module B-2. Climate Neutrality Portfolio Design - contains a project description for each action planned in the CCC Action Plan.
 Gabrovo2030 Climate Neutrality Action Plan
 
 4
@@ -2590,21 +2564,17 @@ An energy monitoring system will be introduced and maintained in municipal build
 5
 
 |   |  | The municipality will develop a system to determine the carbon footprint of its activities, encouraging the renovation of existing buildings to the highest levels of efficiency and the construction of new buildings with zero energy consumption and energy-positive features. Residential buildings will be renovated to meet class A and B energy standards.
-
-Efforts will also be made to increase the capacity of the private sector to develop Environmental, Social, and Governance (ESG) strategies, thereby reducing their carbon footprint. Lastly, the municipality aims to improve its greenhouse gas (GHG) emission inventory data collection system.  |
-| --- | --- | --- |
+| Efforts will also be made to increase the capacity of the private sector to develop Environmental, Social, and Governance (ESG) strategies, thereby reducing their carbon footprint. Lastly, the municipality aims to improve its greenhouse gas (GHG) emission inventory data collection system.  |
 |  Mobility & transport | Increasing the share of electric vehicles, development of infrastructure that will help to increase the share of electric vehicles, transitioning from high-emission to low-emission fuels, measures to increase the use of public transport. | The municipality is undertaking a series of initiatives to modernize and enhance the sustainability of its transportation system. This includes the gradual replacement of the public transport fleet with electric and compressed natural gas (CNG) vehicles, as well as the gradual transition of the administration's vehicle fleet to electric vehicles.
 
 Efforts are being made to promote the use of electric vehicles in private and commercial transport sectors. To support this transition, restricted areas for vehicles will be established, and paid parking areas will be expanded with new rules for their use.
 
 Additionally, there will be the construction of charging stations for electric cars, backed by a regulatory framework to facilitate this infrastructure development. A mobile application for public transport will be developed to improve user convenience and accessibility.  |
-|  Waste & circular economy | MSW reduction - increase the separate collection at source and share of underground waste collection, upgrading the system | The municipality is implementing a comprehensive plan to improve waste management and increase the efficiency of municipal solid waste (MSW) collection. This plan includes  |
+Waste & circular economy | MSW reduction - increase the separate collection at source and share of underground waste collection, upgrading the system | The municipality is implementing a comprehensive plan to improve waste management and increase the efficiency of municipal solid waste (MSW) collection. This plan includes
 6
 
 |   | of separate collection and recovery of waste, increasing citizens' capacity for waste collection. | providing incentives and imposing sanctions to encourage the separate collection of MSW at the source. The existing system for separate collection and waste recovery will be upgraded to enhance its effectiveness.
-
-Additionally, the municipality aims to increase the share of underground waste collection and separation of waste, which offers a more efficient and aesthetically pleasing solution. Efforts will also be made to boost citizens' capacity and participation in waste collection through educational programs and community initiatives.  |
-| --- | --- | --- |
+| Additionally, the municipality aims to increase the share of underground waste collection and separation of waste, which offers a more efficient and aesthetically pleasing solution. Efforts will also be made to boost citizens' capacity and participation in waste collection through educational programs and community initiatives.  |
 |  Green infrastructure & nature-based solutions | Establishment and maintenance of disaster monitoring, preparedness and warning and response systems, and modernization of the green system | The municipality is embarking on a comprehensive plan to enhance urban and environmental sustainability. This includes investigating the potential for connecting the city center with urban green spaces through green corridors, riverbanks, eco-trails, and other tourist pathways. A key aspect of this initiative is the care and maintenance of long-lived tree vegetation in urban areas, alongside establishing criteria for compensatory greening and integrating these criteria into local regulations.
 
 To ensure effective management, guidelines for evaluating urban vegetation will be developed, and areas lacking long-lived tree vegetation will be identified. Existing tree vegetation in urban streetscapes will be catalogued, and new greening projects will be planned and executed. A list of tree species suitable for planting in Gabrovo, considering future climate conditions, will be created, and supplemental irrigation systems for long-lived tree vegetation and green spaces will be implemented and automated.
@@ -2617,7 +2587,6 @@ The plan also includes developing criteria for vertical and roof greening in lin
 Riverbed restoration and maintenance will be carried out, including developing a plan to ensure riverbed conductivity and creating a public flood registry for Gabrovo. Additionally, a database will be established to track fire incidents, and high-efficiency fire protection systems will be introduced in buildings and facilities.
 
 To enhance urban resilience to extreme heat, an information base and mobile app will be developed to locate “cool spots” such as parks, museums, libraries, and air-conditioned public spaces. Climate control measures will be implemented in public transport vehicles, and a network of climate volunteers will be created to support and promote climate adaptation efforts. Finally, disaster monitoring systems will be established and maintained to effectively respond to emergencies.  |
-| --- | --- | --- |
 0
 
 GABROVO
@@ -2657,15 +2626,13 @@ Climate Neutrality Action Plan
 | --- | --- | --- | --- | --- | --- | --- |
 |  Mobility & transport | M.11. Pre-investment study of public transportation M.12. Gradual replacement of the public transport fleet with electric and CNG (compressed natural gas) vehicles M.13. Gradual replacement of the internal fleet with electric vehicles M.14. Promotion of electric vehicle use in private and commercial transportation M.15. Establishment of car-restricted zones M.16. Expansion of fee-based parking zones and regulations for use M.17. Charging stations for electric vehicles M.18. Mobile app for public transportation navigation | 6 823 | 14 009 401 | M.5. Public transport replacement with electric and CNG buses, development of charging infrastructure M.6. Municipal vehicles replacement with electric vehicles M.7. Private transport replacement with electric and low-emission vehicles M.8. Sustainable mobility – development of cycling infrastructure and traffic optimization | 58 154 | 10 000 000  |
 |  Waste & circular economy | M.19. Incentives and sanctions for increasing source-separated waste collection M.20. Improvement of the Waste Source Separation and Recycling System | 17 717 | 10 225 840 | M.9. Underground waste collection and separation of waste | NE | 4 000 000  |
-0
-
 |   | M.21. Increasing the share of underground waste collection. |  |  |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |  Cross-sectoral field of action | M.22. Introduction of criteria for Environmental Product Declarations (EPDs) and Carbon Footprint in the selection of suppliers and contractors for municipal tenders and competitions
 M.23. Improvement of the data collection system for greenhouse gas (GHG) emissions inventory
 M.24. Development of a system for determining the carbon footprint of municipal activities
 M.25. Establishment of a carbon-neutral industrial zone | NE | 12 935 688 | - | - | -  |
-|  Green infrastructure & nature-based solutions | The municipality is embarking on a comprehensive plan to enhance urban and environmental sustainability. This includes investigating the potential for connecting the city center with urban green spaces through green corridors, riverbanks, eco-trails, cycling routes, and other tourist pathways. To enhance urban resilience to extreme heat, an information base and mobile app will be developed to locate “cool spots” such as parks, museums, libraries, and air-conditioned public spaces. Climate control measures will be implemented in public transport vehicles, | NE | 2 040 055 | M.10. Improvement of green infrastructure for climate adaptation | NA | 10 410 000  |
+Green infrastructure & nature-based solutions | The municipality is embarking on a comprehensive plan to enhance urban and environmental sustainability. This includes investigating the potential for connecting the city center with urban green spaces through green corridors, riverbanks, eco-trails, cycling routes, and other tourist pathways. To enhance urban resilience to extreme heat, an information base and mobile app will be developed to locate “cool spots” such as parks, museums, libraries, and air-conditioned public spaces. Climate control measures will be implemented in public transport vehicles, | NE | 2 040 055 | M.10. Improvement of green infrastructure for climate adaptation | NA | 10 410 000
 1
 
 GABROVO
@@ -2681,7 +2648,6 @@ To ensure effective management, guidelines for evaluating urban vegetation will 
 A list of tree species suitable for planting in Gabrovo, considering future climate conditions, will be created, and supplemental irrigation systems for long-lived tree vegetation and green spaces will be implemented and automated. Rainwater harvesting system will be established.
 
 The plan also includes development of criteria for vertical and roof greening in line with municipal regulations, as well as participation in a national initiative to protect old forests. A system will be established to collect data on forest ecosystems affected by natural disturbances and biomass loss. Efforts will be focused on afforestation of unplanted areas and towards reforesting abandoned and erosion-prone lands, while  |
-| --- | --- |
 2
 
 GABROVO
@@ -2705,11 +2671,10 @@ Table B-2.2: Individual action outlines
 | --- | --- | --- |
 |   |  Action type | Technical, spatial and systemic interventions  |
 |   |  Action description | M.1 includes municipal buildings" renovation, part of already planned integrated territorial investments, for which energy audits, feasibility studies and designs of the buildings are done. The efforts are focused on renovation of the existing municipal buildings to achieve the highest energy efficiency standards.  |
-3
-
 |   |  | For buildings renovation innovative solutions for use of renewable energy sources (RES) installations are foreseen and expansion of the monitoring system to track the production and consumption of renewable energy within these buildings.
 Implementing a greater number of pilot and demonstration projects aimed at achieving zero-energy and energy-positive buildings, contingent on available funding.
 Introducing and expanding an energy monitoring system to support the development, implementation, and optimization of energy efficiency measures, thereby realizing significant energy savings.  |
+| Section | Item | Details |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Energy systems & Built environment  |
 |   |  Systemic lever | #1, #2, #3, #4, #5  |
@@ -2719,9 +2684,9 @@ Increased number of available solutions for new zero energy consumption and high
 Increased funding in energy systems.
 Improved local strategies and regulations.
 Organized workshops and information campaigns about the used innovative solutions in buildings renovation to enhance the capacity of all societal groups.  |
-|  Implementation | Responsible bodies/person for implementation | Gabrovo Municipality/ Municipal buildings operators – kindergarten, schools, medical facilities and other  |
-|   |  Action scale & addressed entities | Municipal boundary - Municipal buildings  |
-|   |  Involved stakeholders | MOEW, Ministry of Energy (ME), Sustainable Energy Development Agency (SEDA), Technical University of Gabrovo, Chamber of Engineers, Chamber of Architects, NDEF,  |
+Implementation | Responsible bodies/person for implementation | Gabrovo Municipality/ Municipal buildings operators – kindergarten, schools, medical facilities and other
+Action scale & addressed entities | Municipal boundary - Municipal buildings
+Involved stakeholders | MOEW, Ministry of Energy (ME), Sustainable Energy Development Agency (SEDA), Technical University of Gabrovo, Chamber of Engineers, Chamber of Architects, NDEF,
 4
 
 |   |  | Local Businesses, NGOs, DIP – Gabrovo, Gabrovo Regional Government, Eneffect Consult SLTD, Energy Auditors, Energopro Gabrovo (electricity supplying company), Municipal Buildings Operators (kindergartens, schools, medical facilities, and others), Ministry of Regional Development and Public Works, Associations of Owners in Multifamily Buildings, Regional Innovation Center “Ambitious Gabrovo”  |
@@ -2731,17 +2696,15 @@ Organized workshops and information campaigns about the used innovative solution
 |   |  Removed/substituted energy, volume, or fuel type | 51 623.63 MWh  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 38 746.83 t CO2 eq  |
 |   |  Total costs and costs by CO2 eq unit | 27 200 000 EUR  |
-|  |   |   |
 |  Action outline | Action name | M.2. Tertiary buildings renovation and RES installation  |
 |   |  Action type | Technical, spatial and systemic interventions  |
 |   |  Action description | M.2 included tertiary buildings renovation and RES installations for which energy audits, feasibility studies and designs of the buildings are done.  |
-5
-
-|   |  | The efforts are focused on renovation of the existing tertoary buildings to achieve the highest energy efficiency standards
+|   |  | The efforts are focused on renovation of the existing tertiary buildings to achieve the highest energy efficiency standards
 
 Use of advanced Building Efficiency and Zero-Energy Constructions will significantly expand the initiatives to renovate existing buildings to achieve the highest energy efficiency standards and construct new buildings with zero energy consumption or that are energy-positive. This also involves revising local tax and fee methodologies to incorporate incentive mechanisms, such as tax reductions linked to the level of energy efficiency and the use of renewable energy sources (RES) in buildings.
 
 Enhanced Monitoring and Promotion of Renewable Energy Sources (RES): Scaling up the analysis and evaluation of reports from the Long-term RES Program to better support the planning, development, and promotion of renewable energy usage, ensuring a comprehensive and strategic approach to sustainable energy management.  |
+| Section | Item | Details |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Energy systems & Built environment  |
 |   |  Systemic lever | #1, #2, #3, #4, #5  |
@@ -2755,7 +2718,7 @@ Improved local strategies and regulations.
 
 The implementation of CCC will influence the development of national legislation and regulatory frameworks.
 
-Workshops and information campaigns will be organized to present the executed projects and implemented innovative sollutions  |
+Workshops and information campaigns will be organized to present the executed projects and implemented innovative solutions  |
 6
 
 GABROVO
@@ -2774,8 +2737,6 @@ Climate Neutrality Action Plan
 |   |  Removed/substituted energy, volume, or fuel type | See M.1  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | See M.1  |
 |   |  Total costs and costs by CO2eq unit | See M.1  |
-7
-
 |  Action outline | Action name | M.3. Residential buildings retrofitting  |
 | --- | --- | --- |
 |   |  Action type | Technical, spatial and systemic interventions  |
@@ -2783,9 +2744,9 @@ Climate Neutrality Action Plan
 Expanding initiatives to renovate existing buildings to the highest energy efficiency standards and construct new buildings with zero energy consumption or energy-positive designs. This also includes revising local tax and fee methodologies to integrate robust incentive mechanisms, such as tax reductions linked to energy efficiency levels and the use of renewable energy sources (RES) in buildings.
 Intensifying the renovation of residential buildings to meet Class A and B energy efficiency standards. The specific upgrades and measures for each building will be determined through thorough energy efficiency assessments to ensure optimal performance.
 Increasing the analysis and evaluation of reports from the Long-term RES Program to strengthen the processes of evaluation, planning, and development of renewable energy use. This will support a more strategic and expansive approach to promoting sustainable energy solutions.  |
-|  Reference to impact pathway | Field of action | Energy systems & Built environment  |
-|   |  Systemic lever | #1, #2, #3, #4, #5  |
-|   |  Outcome (according to module B-1.1) | Advanced technologies and innovative solutions are promoted and used by the final users – citizens, business and institutions.  |
+Reference to impact pathway | Field of action | Energy systems & Built environment
+Systemic lever | #1, #2, #3, #4, #5
+Outcome (according to module B-1.1) | Advanced technologies and innovative solutions are promoted and used by the final users – citizens, business and institutions.
 8
 
 |   |  | Increased number of available solutions to limit the use of high-emission solid fuels and heating appliances
@@ -2794,13 +2755,12 @@ Increased funding in energy systems.
 Improved local strategies and regulations.
 The implementation of CCC will influence the development of national legislation and regulatory frameworks.
 Workshops, training sessions, and information campaigns will be organized to enhance the capacity of all societal groups. Social innovations are being developed and are beginning to be implemented.  |
+| Section | Item | Details |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Gabrovo Municipality/Citizens and Associations of owners in multifamily buildings  |
 |   |  Action scale & addressed entities | Municipal boundary - Residential buildings  |
 |   |  Involved stakeholders | MOEW, Ministry of Energy (ME), Sustainable Energy Development Agency (SEDA), Technical University of Gabrovo, Chamber of Engineers, Chamber of Architects, NDEF, Local Businesses, NGOs, DIP – Gabrovo, Gabrovo Regional Government, Eneffect Consult SLTD, Energy Auditors, Energopro Gabrovo (electricity supplying company), Associations of Owners in Multifamily Buildings, Ministry of Regional Development and Public Works, Ministry of Labour and Social Policy, Regional Innovation Center “Ambitious Gabrovo”  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | 2024-2030  |
-9
-
 |  Impact & cost | Generated renewable energy (if applicable) | na  |
 | --- | --- | --- |
 |   |  Removed/substituted energy, volume, or fuel type | See M.1  |
@@ -2809,9 +2769,7 @@ Workshops, training sessions, and information campaigns will be organized to enh
 |  Action outline | Action name | M.4. Industrial facilities and systems renovation - training and capacity building of industry for ESG strategies development  |
 |   |  Action type | Technical, social and systemic intervention  |
 |   |  Action description | Gabrovo Municipality will establish effective partnerships between SMEs and researchers from the existing innovation ecosystem. These partnerships will support companies in identifying, developing, and implementing net-zero technologies. As a result, businesses will enhance their capacity to carry out Life Cycle Assessment (LCA) as a tool to develop Environmental Product Declarations (EPD) and Carbon Footprint (CF) assessments for Scope 1, 2, and 3 emissions. This approach will facilitate the development of decarbonization goals and targets to meet ESG and net-zero requirements.
-By doing so, SMEs will become more sustainable and innovative, improving their efficiency and offering differentiated products and services that align with emerging sustainability standards and consumer demands. Enhancing the capacity of SMEs will  |
-0
-
+| By doing so, SMEs will become more sustainable and innovative, improving their efficiency and offering differentiated products and services that align with emerging sustainability standards and consumer demands. Enhancing the capacity of SMEs will  |
 |   |  | make them more competitive, which will improve the environmental conditions and boost the economic growth of the municipality.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Energy systems & Built environment  |
@@ -2821,10 +2779,10 @@ Increased number of identified, developed, and implemented net-zero technologies
 Investment projects are developed by companies and initiated for further implementation.
 Training sessions and information campaigns organized to enhance the capacity of SMEs.
 Increased capacity of industry to carry out Life Cycle Assessment (LCA) as a tool to develop Environmental Product Declarations (EPD) and Carbon Footprint (CF) assessments for Scope 1, 2, and 3 emissions  |
-|  Implementation | Responsible bodies/person for implementation | Gabrovo Municipality/Private sector  |
-|   |  Action scale & addressed entities | Municipal boundary - private sector  |
-|   |  Involved stakeholders | Local business, MOEW, Ministry of economy and industry, NGO, Regional Innovation Center “Amtious Gabrovo”  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | 2024-2030  |
+Implementation | Responsible bodies/person for implementation | Gabrovo Municipality/Private sector
+Action scale & addressed entities | Municipal boundary - private sector
+Involved stakeholders | Local business, MOEW, Ministry of economy and industry, NGO, Regional Innovation Center “Ambitious Gabrovo”
+Comments on implementation – consider mentioning resources, timelines, milestones | 2024-2030
 图
 
 GABROVO
@@ -2840,7 +2798,6 @@ Climate Neutrality Action Plan
 |   |  Removed/substituted energy, volume, or fuel type | See M.1  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | See M.1  |
 |   |  Total costs and costs by CO2eq unit | See M.1  |
-|  |   |   |
 |  Action outline | Action name | M.5. Public transport replacement with electric and CNG buses, development of charging infrastructure  |
 |   |  Action type | Technical, social and systemic intervention  |
 |   |  Action description | Intensifying efforts to replace the public transport fleet with electric and compressed natural gas (CNG) vehicles. This expanded initiative aims to significantly increase the proportion of vehicles powered by electricity and CNG, thereby greatly enhancing the reduction of greenhouse gas emissions, improving air quality, and benefiting public health.  |
@@ -2860,19 +2817,17 @@ Increased funding in energy systems.
 Improved local strategies and regulations.
 The implementation of CCC will influence the development of national legislation and regulatory frameworks.
 Workshops, training sessions, and information campaigns will be organized to enhance the capacity of all societal groups. Social innovations are being developed and are started to be implemented  |
+| Section | Item | Details |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Gabrovo Municipality/ Municipal transport company  |
 |   |  Action scale & addressed entities | Municipal boundary  |
-|   |  Involved stakeholders | Ministry of transport, MOEW, Municipal transport company, Citizens, Local companies, Enegopro – local energy provider, DIP – Gabrovo, NAMRB  |
+|   |  Involved stakeholders | Ministry of transport, MOEW, Municipal transport company, Citizens, Local companies, Energopro – local energy provider, DIP – Gabrovo, NAMRB  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | 2024-2030  |
 |  Impact & cost | Generated renewable energy (if applicable) |   |
 |   |  Removed/substituted energy, volume, or fuel type | 123 115.69 MWh  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 35 466 t CO2 eq  |
-3
-
 |   | Total costs and costs by CO2eq unit | 10 000 000 EUR  |
 | --- | --- | --- |
-|  |   |   |
 |  Action outline | Action name | M.6. Municipal vehicles replacement with electric vehicles  |
 |   |  Action type | Technical, social and physical intervention  |
 |   |  Action description | Expanding and intensifying efforts to progressively replace the internal fleet with electric vehicles. This enhanced initiative will significantly reduce greenhouse gas emissions, improve air quality, and promote public health. Additionally, it will serve as a leading example for the municipality’s residents, demonstrating the benefits of adopting cleaner transportation solutions.  |
@@ -2897,18 +2852,15 @@ Climate Neutrality Action Plan
 |  Implementation | Responsible bodies/person for implementation | Gabrovo Municipality  |
 | --- | --- | --- |
 |   |  Action scale & addressed entities | Municipal boundary  |
-|   |  Involved stakeholders | Ministry of transport, MOEW, Local companies, Enegopro – local energy provider, DIP – Gabrovo, NAMRB  |
+|   |  Involved stakeholders | Ministry of transport, MOEW, Local companies, Energopro – local energy provider, DIP – Gabrovo, NAMRB  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | 2024-2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | See M.5  |
 |   |  Removed/substituted energy, volume, or fuel type | See M.5  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | See M.5  |
 |   |  Total costs and costs by CO2 eq unit | See M.5  |
-|  |   |   |
 |  Action outline | Action name | M.7. Private transport replacement with electric and low-emission vehicles  |
 |   |  Action type | Technical, social and physical intervention  |
 |   |  Action description | Intensifying and expanding efforts to encourage the adoption of electric vehicles within both private and commercial fleets. While the renewal of these vehicle fleets and the  |
-5
-
 |   |  | shift to electric vehicles naturally evolves beyond direct municipal control, the municipality will actively stimulate and support this transition through targeted initiatives and incentives.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Mobility & transport  |
@@ -2919,10 +2871,10 @@ Increased funding in energy systems.
 Improved local strategies and regulations.
 The implementation of CCC will influence the development of national legislation and regulatory frameworks.
 Workshops, training sessions, and information campaigns will be organized to enhance the capacity of all societal groups. Social innovations are being developed and are started to be implemented  |
-|  Implementation | Responsible bodies/person for implementation | Gabrovo Municipality/private and commercial sector  |
-|   |  Action scale & addressed entities | Municipal boundary  |
-|   |  Involved stakeholders | Ministry of transport, MOEW, Citizens, Local companies, Enegopro – local energy provider, DIP – Gabrovo  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | 2024-2030  |
+Implementation | Responsible bodies/person for implementation | Gabrovo Municipality/private and commercial sector
+Action scale & addressed entities | Municipal boundary
+Involved stakeholders | Ministry of transport, MOEW, Citizens, Local companies, Energopro – local energy provider, DIP – Gabrovo
+Comments on implementation – consider mentioning resources, timelines, milestones | 2024-2030
 6
 
 GABROVO
@@ -2936,7 +2888,6 @@ Climate Neutrality Action Plan
 |   |  Removed/substituted energy, volume, or fuel type | See M.5  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | See M.5  |
 |   |  Total costs and costs by CO2 eq unit | See M.5  |
-|  |   |   |
 |  Action outline | Action name | M.8. Sustainable mobility – development of cycling infrastructure and traffic optimization  |
 |   |  Action type | Technical, spatial, physical, social and systemic intervention  |
 |   |  Action description | Creation of Car-Restricted Zones: Intensifying efforts to establish car-restricted zones to encourage public transportation use, significantly improve air quality, and enhance public health. Future studies may expand these zones to allow access for electric vehicles, potentially promoting the adoption of electric taxis.
@@ -2948,6 +2899,7 @@ Expansion of Fee-Based Parking Zones: Broadening the implementation of fee-based
 |   |  | • Enforcing parking restrictions for vehicles with low environmental standards. Additionally, creating buffer zones and fee-based parking areas near popular tourist attractions.
 Development of Electric Vehicle Charging Infrastructure: Expanding the construction of charging stations for electric vehicles and establishing a supportive regulatory framework, including public-private partnerships, to facilitate the growth of this infrastructure.
 Launch of a Public Transportation Navigation App: Intensifying the development and promotion of a mobile app designed to improve navigation for public transportation, thereby encouraging increased use of these services.  |
+| Section | Item | Details |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Mobility & transport  |
 |   |  Systemic lever | #1, #2, #3, #4, #5  |
@@ -2975,7 +2927,6 @@ Climate Neutrality Action Plan
 |   |  Removed/substituted energy, volume, or fuel type | See M.5  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | See M.5  |
 |   |  Total costs and costs by CO2 eq unit | See M.5  |
-|  |   |   |
 |  Action outline | Action name | M.9. Underground waste collection and separation of waste  |
 |   |  Action type | Technical, physical, social and systemic intervention  |
 9
@@ -3017,6 +2968,7 @@ Constructing two new underground waste collection sites in central areas, equipp
 Installing portable weighing machines on collection vehicles to track waste amounts.
 Enhancing the aesthetic integration of these sites with landscaping, park furniture, and solar systems.
 Using a LoRa network for data collection and transmission to optimize waste management processes. These intensified and expanded activities aim to significantly advance Gabrovo’s waste management capabilities, improve environmental outcomes, and set a benchmark for best practices in waste management.  |
+| Section | Item | Details |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Waste & circular economy  |
 |   |  Systemic lever | #1, #2, #3, #4, #5  |
@@ -3045,7 +2997,6 @@ Climate Neutrality Action Plan
 |   |  Removed/substituted energy, volume, or fuel type | -  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | NE  |
 |   |  Total costs and costs by CO2eq unit | 4 000 000 EUR  |
-|  |   |   |
 |  Action outline | Action name | M.10. Improvement of green infrastructure for climate adaptation  |
 2
 
@@ -3094,6 +3045,7 @@ Fire Protection and Early Warning Systems:
 Database and Protection Systems: Creating a comprehensive database to monitor fire incidents, implementing advanced fire protection systems in buildings and facilities, and establishing Early Warning Monitoring Systems.
 
 These expanded and intensified activities aim to significantly advance urban and environmental sustainability, enhancing the city’s resilience to climate impacts and improving overall quality of life.  |
+| Section | Item | Details |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Green infrastructure & nature-based solutions  |
 |   |  Systemic lever | #1, #2, #3, #4, #5  |
@@ -3373,7 +3325,7 @@ By adopting a collaborative and inclusive approach, Gabrovo aims to create a sus
 
 Being one of the most proactive Bulgarian municipalities, Gabrovo also strongly relies on the good cooperation with different levels of governance, including regional, national and European. National level policies and actions support capital allocation towards net zero also in the cities, but the long political crisis became the main barrier to access the available funding on time and to implement the planned activities and projects.
 
-Citizen involvement is crucial for the achievement of the CCC goals. Engaging residents directly in different activities, including design and implementation, guarantees their active participation in the initiatives. Through these strategies of citizen engagement, the objective is to provide meaningful opportunities for residents to connect with the narrative and purpose of the CCC actions, in order to enhance the collective understanding, enable co-creation process, stimulate ownership of the Gabrovo climate policies, and incentivize local investments within a citizens engagement strategy will be developed under NetZero Hero project. The strategy for citizen participation will include several important components: Community surveys; Co-creation workshops; Pilot Projects and Demonstrations; Capacity Building and Training for citizens; and Community Outreach and Awareness Campaign.
+Citizen involvement is crucial for the achievement of the CCC goals. Engaging residents directly in different activities, including design and implementation, guarantees their active participation in the initiatives. Through these strategies of citizen engagement, the objective is to provide meaningful opportunities for residents to connect with the narrative and purpose of the CCC actions, in order to enhance the collective understanding, enable co-creation process, stimulate ownership of the Gabrovo climate policies, and incentivize local investments within a citizens engagement strategy will be developed under NetZero Hero project. The strategy for citizen participation will include several important components: Community surveys; Co-creation workshops; Pilot Projects and Demonstrations; Capacity Building and Training for citizens; and Community Outreach and Aawareness Campaign.
 
 Gabrovo is committed to achieving climate neutrality by leveraging the expertise and tools provided by administrative, financial, citizen, and academic institutions. By working closely with all citizens, Gabrovo ensures that its efforts align with the city's vision of being clean, green, smart, and sustainable, while adhering to the principle of "no one is left behind."
 
@@ -3430,7 +3382,7 @@ Capacity building  |
 |   |  |  |  | process ensures that initiatives are well-coordinated and aligned with the overall goal of achieving climate neutrality by 2030. |   |
 | --- | --- | --- | --- | --- | --- |
 |  Stakeholder engagement | Citizen meetings where the city plan is presented, explained and discussed | Municipality of Gabrovo and Transition team
-Gabrovo Council for sustainable and urban development | Citizens & other stakeholders | Supporting the Implementation of cc plan | Social inclusion, improved wellbeing  |
+| Gabrovo Council for sustainable and urban development | Citizens & other stakeholders | Supporting the Implementation of cc plan | Social inclusion, improved wellbeing  |
 |  Circular Economy Green Deal | The Circular Economy Green Deal accelerates society's shift towards a circular economy. It outlines essential measures to foster a low-carbon circular economy through shared frameworks, criteria, and commitments. This initiative is being developed through multilevel collaboration and will be grounded in scientific scenarios that are unparalleled in scope and coverage. The | Ministry of environment and water
 Regional office of MOEW | Citizens
 Business
@@ -3454,10 +3406,9 @@ MUNICIPALITY
 Climate Neutrality Action Plan
 
 |   | Municipality of Gabrovo is one of 76 participants involved in the formulation of joint actions and scenarios. Implementation is set to commence in 2024. |  |  | Resource-efficient energy production
-Revitalizing food supply chains |   |
-| --- | --- | --- | --- | --- | --- |
+| Revitalizing food supply chains |   |
 |  Cities for Sustainability Governance (CSG) Network (Urbact) | A network of 9 European cities, that are striving to better integrate and mainstream the comprehensive sustainability framework of the UN’s Agenda 2030 and its 17 Sustainable Development Goals into urban initiatives. | Lead partner – Espoo Gabrovo – Sustainable development directorate Gabrovo ULG group
-Gabrovo Council for sustainable and urban development | Gabrovo Municipality’ administration, citizens, ULG group, academia | Enhances the ability of city organizations and stakeholders to consider sustainability in a comprehensive and integrated way. Facilitates the incorporation of sustainability into the city’s structures, processes, work culture, and mindsets. | Empowered individuals are inspired to make their work more sustainable. There is a growing awareness of the additional benefits of climate action within the city organization.  |
+| Gabrovo Council for sustainable and urban development | Gabrovo Municipality’ administration, citizens, ULG group, academia | Enhances the ability of city organizations and stakeholders to consider sustainability in a comprehensive and integrated way. Facilitates the incorporation of sustainability into the city’s structures, processes, work culture, and mindsets. | Empowered individuals are inspired to make their work more sustainable. There is a growing awareness of the additional benefits of climate action within the city organization.  |
 |  Creation of a digital Platform – “Forum” | Engagement, transparency, and accountability | Gabrovo Municipality | Gabrovo Municipality Citizens
 Other stakeholders | Develop and implement an online platform for communication between the municipality and its citizens. The platform aims to consolidate data collection and analysis, enhancing the sense of belonging and social inclusion by centralizing information that is | Transparency
 Social innovation
@@ -3468,8 +3419,6 @@ Behavior change  |
 |   |  |  |  | currently dispersed across various platforms. It can be incorporated into the website of the Gabrovo Climate Pact. The platform is designed not only to gather data but also to transparently share all developments and results of actions under the CCC. This will allow citizens to monitor progress and hold the municipality accountable for its advancements towards climate goals. |   |
 | --- | --- | --- | --- | --- | --- |
 |  Energy community Gabrovo | The Energy Community RDNO - Gabrovo (EC RDNO - Gabrovo) is an innovative initiative by the Municipality of Gabrovo aimed at addressing challenges in the energy market. The Municipality of Gabrovo and the community participants are using their resources, finances, land, knowledge, and energy to jointly create a | The Energy Community RDNO - Gabrovo (EC RDNO - Gabrovo) Municipality of Gabrovo | The Energy Community RDNO - Gabrovo (EC RDNO - Gabrovo) Municipality of Gabrovo Citizens Stakeholders | The pilot project envisions the construction of a renewable energy source to produce 100 kWh of electrical energy, with an investment cost of just under 160,000 BGN. The designated site for the investment is the Regional Non-Hazardous Waste Landfill of the | Community Inclusion Common goal and decision making Social responsibility Innovation Behavioural change  |
-0
-
 |   | source of their own energy. |  |  | Municipality of Gabrovo., chosen due to its exceptionally sunny location, lack of shading, the presence of a relatively constant energy consumer, and other factors important for the success of the initiative. |   |
 | --- | --- | --- | --- | --- | --- |
 |  Coordination and management of operations | Involvement, openness, and responsibility | Gabrovo Council for sustainable and urban development
@@ -3527,7 +3476,7 @@ C.2. Relations between social innovations, systems, and impact pathways
 |  Table C.2.1: Relations between social innovations, systems, and impact pathways  |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- |
 |  Intervention name | Description | Responsible entity/ dept./ person | Involved stakeholder | Enabling impact | Co-benefits  |
-|  Energy Community Gabrovo - RDNO(EO Gabrovo RDNO) | The pilot project envisions the construction of a renewable energy source to produce 100 kWh of electrical energy, with an investment cost of just under 160,000 BGN. | Energy community | Energy community Municipality of Gabrovo Citizens Stakeholders | Innovation Energy benefits through RES Decentralized way to empower citizens and create civic society | Inclusion Innovation Commoradery Transparency Shift in behavior and attitude  |
+|  Energy Community Gabrovo - RDNO(EO Gabrovo RDNO) | The pilot project envisions the construction of a renewable energy source to produce 100 kWh of electrical energy, with an investment cost of just under 160,000 BGN. | Energy community | Energy community Municipality of Gabrovo Citizens Stakeholders | Innovation Energy benefits through RES Decentralized way to empower citizens and create civic society | Inclusion Innovation Camaraderie Transparency Shift in behavior and attitude  |
 |  Forum - platform | Platform - informing, connecting and educating | Municipality of Gabrovo | Administration at municipality of Gabrovo Stakeholders, | A series of videos, interviews podcasts, articles to | Informed decision facilitation Information dessimination  |
 3
 
@@ -3539,12 +3488,9 @@ Climate Neutrality Action Plan
 
 |   | users about climate change, Gabrovo’s achievements |  | Citizens, Schools | address problems and solutions for climate neutrality and improving quality of life. | Transparency Empowerment Inclusivity  |
 | --- | --- | --- | --- | --- | --- |
-|  Netzerohero pilot project | Creating a NETZERO zone in Gabrovo to be replicated by other towns and regions | Gabrovo municipality EnEffect Sofia | Citizens, Schools, resindetial home owners, shop owners Banks Other stakeholders | These experiences will provide insights into the territory evolution and highlight its positive changes that come with introducing new technology and renovation in the zone. | Information dissemination Replication Inclusivity Enhanced awareness of climate issues and enhanced participation of citizens and communities.  |
+|  Netzerohero pilot project | Creating a NETZERO zone in Gabrovo to be replicated by other towns and regions | Gabrovo municipality EnEffect Sofia | Citizens, Schools, residential home owners, shop owners Banks Other stakeholders | These experiences will provide insights into the territory evolution and highlight its positive changes that come with introducing new technology and renovation in the zone. | Information dissemination Replication Inclusivity Enhanced awareness of climate issues and enhanced participation of citizens and communities.  |
 |  Citizens engagement, social and cultural events | Alterations in societal behavior, governance, and assistance. | Municipality of Gabrovo Partners and other stakeholders | Citizens Volunteers Partnering organizations Other stakeholders Gabrovo Council for sustainable and urban development | Ensure that all events, regardless of their direct connection to climate awareness, adhere to climate neutrality principles. This means that climate neutrality plans will be mandatory for all events and must encompass the entire event lifecycle, including preparation, execution, and post-event activities.
-
-Data on energy consumption, energy sources, waste generation and management, and other relevant metrics will be collected to support the effectiveness of these measures. | Social responsibility Ecological mindset enabling Change of attitude and behavior Inclusion Social change Sectoral collaboration Economic collaboration and connectivity with local and national entities  |
-4
-
+| Data on energy consumption, energy sources, waste generation and management, and other relevant metrics will be collected to support the effectiveness of these measures. | Social responsibility Ecological mindset enabling Change of attitude and behavior Inclusion Social change Sectoral collaboration Economic collaboration and connectivity with local and national entities  |
 |  Change in social behavior | Our vision for Gabrovo 2030 emphasizes fostering environmental consciousness among children and young people through extended comprehensive education that is already taking place in Gabrovo’s schools on waste management and the circular economy. | Transition team of Gabrovo Partners and other stakeholders
 Gabrovo Council for sustainable and urban development | Schools
 Children
@@ -3555,7 +3501,7 @@ Partnering organizations
 Other stakeholders | Waste Management Education:
 Implementing programs that teach children about waste reduction and innovative recycling methods.
 Engaging students in hands-on activities to understand the importance of proper waste management.
-Circular Economy Awareness:
+Circular Economy Aawareness:
 Expanding our educational efforts to include lessons on the principles of the circular economy.
 Encouraging sustainable consumption habits and the reuse of materials from an early age.
 School Engagement:
@@ -3564,7 +3510,6 @@ Developing and distributing Sustainable Development Goal (SDG) cards, inspired b
 Innovation in attitude
 Social change
 Fostering civic responsibility and togetherness  |
-| --- | --- | --- | --- | --- | --- |
 图
 
 GABROVO MUNICIPALITY
@@ -3717,7 +3662,7 @@ MUNICIPALITY
 
 Climate Neutrality Action Plan
 
-programme 'LoRanetwork'. The project was the first step towards the introduction of smart underground waste collection in the municipality. Also in 2022 a pilot demonstration project for a deposit vending system for plastic bottles and aluminum cans was launched in Gabrovo. The project aims to increase the amount of collected clean recyclable material and to encourage citizens to undertake further efforts for waste separation. In return for the deposited bottles and cans, citizens received eco-friendly gifts and a number of incentives, including food vouchers, monthly transport card, and other items or services. The project proved to be a success in our community so far.
+programme 'LoRa network'. The project was the first step towards the introduction of smart underground waste collection in the municipality. Also in 2022 a pilot demonstration project for a deposit vending system for plastic bottles and aluminum cans was launched in Gabrovo. The project aims to increase the amount of collected clean recyclable material and to encourage citizens to undertake further efforts for waste separation. In return for the deposited bottles and cans, citizens received eco-friendly gifts and a number of incentives, including food vouchers, monthly transport card, and other items or services. The project proved to be a success in our community so far.
 
 Additionally in 2017 Gabrovo launched an initiative for separate collection of biodegradable waste from restaurants and shops by providing individual containers and using the waste for compost creation. The system has expanded and now more and more restaurant and shop owners express their interest in the initiative. The current capacity of the specific waste collection infrastructure for biodegradable waste is not sufficient to cover all of the sites but additional investment could allow for a scale up.
 
@@ -3738,26 +3683,26 @@ Module C-3 Financing of Action Portfolio
 | --- | --- | --- | --- | --- | --- |
 |  Energy Systems & Built environment | 27.1 | 53% | 38 747 |  |   |
 |  Public buildings | 10.0 | 19% | 1 064 | EE and RES in municipal buildings | air quality monitoring data
-# of users and visitors getting better comfort and services  |
+| # of users and visitors getting better comfort and services  |
 |  Tertiary (non-municipal) buildings | 2.1 | 4% | 1565 | EE and RES in tertiary buildings | air quality monitoring data
-# of users and visitors getting better comfort and services  |
-|  Residential buildings | 15.0 | 29% | 13255 | EE and RES in multifamily residential buildings | # of households  |
-|  Industrial facilities and systems | 0.1 | 0% | 22 863 | Carbon footprint of industry | CO2eq/GVA  |
-|  Mobility and transport | 10.0 | 19% | 35 466 |  |   |
+| # of users and visitors getting better comfort and services  |
+| Residential buildings | 15.0 | 29% | 13255 | EE and RES in multifamily residential buildings | # of households |
+| Industrial facilities and systems | 0.1 | 0% | 22 863 | Carbon footprint of industry | CO2eq/GVA |
+| Mobility and transport | 10.0 | 19% | 35 466 |
 |  Replacement of public transport fleet | 7.0 | 14% | 445 | Replacement of the public transport fleet with electric and CNG (compressed natural gas) vehicles | air quality monitoring data
-# of passengers in public transport  |
+| # of passengers in public transport  |
 |  Replacement of municipal fleet | 0.5 | 1% | 767 | Purchasing of electric vehicles | air quality monitoring data
-% of electric vehicles in municipal fleet  |
+| % of electric vehicles in municipal fleet  |
 |  Sustainable mobility | 2.5 | 5% | Included below | Developed new cycling infrastructure, integrated in road infrastructure, traffic reorganisation and optimization | air quality monitoring data
-km new cycling infrastructure  |
-|  Private transport | 0.0 | 0% | 34 254 | Gradual replacement of private vehicles, reduction of emissions based on traffic optimisation and citizens using public transport na bycicles | air quality monitoring data
+| km new cycling infrastructure  |
+|  Private transport | 0.0 | 0% | 34 254 | Gradual replacement of private vehicles, reduction of emissions based on traffic optimisation and citizens using public transport and bicycles | air quality monitoring data
 # of registered EV
 # of passengers in public transport  |
-|  Circular economy and waste | 4.0 | 8% | ne |  |   |
-|  Separation and collection of waste | 4.0 | 8% |  | separate collection of waste and underground bins | decrease of waste disposal, tons/person  |
-|  Green infrastructure and Nature based solutions | 10.4 | 20% | ne |  |   |
-|  Green system modernisation | 10.4 | 20% |  | Green infrastructure renovation, rainwater harvesting system, EWMS | # of applied nature based solutions  |
-|  Total | 51.6 |  | 74 213 |  |   |
+Circular economy and waste | 4.0 | 8% | ne
+Separation and collection of waste | 4.0 | 8% | separate collection of waste and underground bins | decrease of waste disposal, tons/person
+Green infrastructure and Nature based solutions | 10.4 | 20% | ne
+Green system modernisation | 10.4 | 20% | Green infrastructure renovation, rainwater harvesting system, EWMS | # of applied nature based solutions
+Total | 51.6 | 74 213
 图
 
 GABROVO
@@ -3859,7 +3804,7 @@ At the local level, the work in this sphere is overseen by the Council for Susta
 
 Gabrovo also strongly relies on the good cooperation with different levels of governance, including regional, national and European. National level policies and actions support capital allocation towards net zero also in the cities, but the long political crisis became the main barrier to access the available funding on time and to implement the planned activities and projects.
 
-Citizen involvement is crucial for the achievement of the CCC goals. Engaging residents directly in different activities, including design and implementation, guarantees their active participation in the initiatives. Through these strategies of citizen engagement, the objective is to provide meaningful opportunities for residents to connect with the narrative and purpose of the CCC actions, in order to enhance the collective understanding, enable co-creation process, stimulate ownership of the Gabrovo climate policies, and incentivize local investments within a citizens engagement strategy will be developed under NetZeroHero project. The strategy for citizen participation will include several important components: Community surveys; Co-creation workshops; Pilot Projects and Demonstrations; Capacity Building and Training for citizens; and Community Outreach and Awareness Campaign.
+Citizen involvement is crucial for the achievement of the CCC goals. Engaging residents directly in different activities, including design and implementation, guarantees their active participation in the initiatives. Through these strategies of citizen engagement, the objective is to provide meaningful opportunities for residents to connect with the narrative and purpose of the CCC actions, in order to enhance the collective understanding, enable co-creation process, stimulate ownership of the Gabrovo climate policies, and incentivize local investments within a citizens engagement strategy will be developed under NetZeroHero project. The strategy for citizen participation will include several important components: Community surveys; Co-creation workshops; Pilot Projects and Demonstrations; Capacity Building and Training for citizens; and Community Outreach and Aawareness Campaign.
 
 **Best practices and project experience:**
 
@@ -3904,7 +3849,7 @@ By 2030, significant investments are anticipated from the private sector and ind
 The Municipality of Gabrovo actively engages various stakeholders to enhance mobility and transport within the city. Gabrovo is taking steps to promote cleaner vehicles and sustainable transportation. Additionally, the city is investing in infrastructure for active transportation, such as bike lanes and pedestrian paths, and organizing events to encourage citizens to adopt these sustainable habits. There are on-going activities to improve the already implemented traffic calming measures is set in motion, such as: fixing street signs, speed limits monitoring, pedestrian crossings, and roundabouts building, improvement of road safety and prioritize pedestrians and cyclists.
 
 Through a project: "Development of Sustainable Urban Transport in the City of Gabrovo", procedure: Direct grant award procedure - "Implementation of Integrated Urban Development Plans 2014-2020 - Gabrovo" (part of procedure BG16RFOP001-1.001-039 "Implementation of Integrated Urban Development Plans 2014-2020") and funded by: Operational Programme "Regions in Growth" 2014-2020; Priority Axis 1 "Sustainable and Integrated Urban Development". This project aimed at improving the urban transport system in Gabrovo by making it more sustainable. It's part of a larger initiative funded by the European Union's Operational Programme "Regions in Growth" to promote sustainable urban development. Secured more efficient, faster and more environmentally friendly urban transport to Gabrovo with less power
-consumption and capabilities for alternative forms of transport which contributed for raising quality of life and improvement of the ecological environment. Municipality of Gabrovo purchased 14 new eco-friendly buses meeting regulatory standards for harmful emissions. Promoting multimodal sustainable urban mobility by creating opportunities for alternative forms of transport and their appropriate combination. Reducing noise levels by introducing almost silent vehicles (electric buses). Improving the safety of the environment by providing safe pedestrian connections to bus stops, train stations and bus stations. Improved service quality of public urban transport. Improved crossings and ensured accessibility for people with disabilities. Goal is increased use of public transport and decrease of private owned cars in the road. Additional activities are promotion of carpooling and ride-sharing initiatives are planned to reduce the number of vehicles on the road. Incorporate active transportation principles into urban planning decisions to create more walkable and bikeable neighborhoods. Continue the already established education and awareness Campaigns in schools and kindergartens in Gabrovo by the Regional Directorate of the Ministry of Interior – Gabrovo. Continue to involve citizens in the planning and implementation of mobility and transportation initiatives, through conducting studies on related issues as we have conducted pertaining to Amigos project where citizens were asked to contribute with their opinion on biking lanes and walking issues. By engaging a wide range of stakeholders and implementing these activities and projects Gabrovo can promote a more sustainable, accessible, and healthier transportation system for its citizens: Regional Directorate of the Ministry of Interior – Gabrovo; Municipal transport company; Local companies; Enegopro – local energy provider; National Statistics; Regional Innovation Center “Ambitious Gabrovo; Council for Sustainable urban development; Municipal company for public works; Gabrovo regional Government; Gabrovo Schools; Technical university of Gabrovo; DIP – district information point; MBAL 'Tota Venkova; Youth center Gabrovo. All of these stakeholders get engaged and collaborate on activities, events and or meetings throughout the year. The process of communication, work and execution albeit difficult due to bearucacy is working. The newly established Council for Sustainable urban development has the opportunity to tackle this issue by optimizing the processes by bringing together a diverse set of professionals, expertise and skills to address current or future problems. In this way, Gabrovo is setting in an example of an innovative, participatoy and co-creative governance model.
+consumption and capabilities for alternative forms of transport which contributed for raising quality of life and improvement of the ecological environment. Municipality of Gabrovo purchased 14 new eco-friendly buses meeting regulatory standards for harmful emissions. Promoting multimodal sustainable urban mobility by creating opportunities for alternative forms of transport and their appropriate combination. Reducing noise levels by introducing almost silent vehicles (electric buses). Improving the safety of the environment by providing safe pedestrian connections to bus stops, train stations and bus stations. Improved service quality of public urban transport. Improved crossings and ensured accessibility for people with disabilities. Goal is increased use of public transport and decrease of private owned cars in the road. Additional activities are promotion of carpooling and ride-sharing initiatives are planned to reduce the number of vehicles on the road. Incorporate active transportation principles into urban planning decisions to create more walkable and bikeable neighborhoods. Continue the already established education and awareness Campaigns in schools and kindergartens in Gabrovo by the Regional Directorate of the Ministry of Interior – Gabrovo. Continue to involve citizens in the planning and implementation of mobility and transportation initiatives, through conducting studies on related issues as we have conducted pertaining to Amigos project where citizens were asked to contribute with their opinion on biking lanes and walking issues. By engaging a wide range of stakeholders and implementing these activities and projects Gabrovo can promote a more sustainable, accessible, and healthier transportation system for its citizens: Regional Directorate of the Ministry of Interior – Gabrovo; Municipal transport company; Local companies; Energopro – local energy provider; National Statistics; Regional Innovation Center “Ambitious Gabrovo; Council for Sustainable urban development; Municipal company for public works; Gabrovo regional Government; Gabrovo Schools; Technical university of Gabrovo; DIP – district information point; MBAL 'Tota Venkova; Youth center Gabrovo. All of these stakeholders get engaged and collaborate on activities, events and or meetings throughout the year. The process of communication, work and execution albeit difficult due to bureaucracy is working. The newly established Council for Sustainable urban development has the opportunity to tackle this issue by optimizing the processes by bringing together a diverse set of professionals, expertise and skills to address current or future problems. In this way, Gabrovo is setting in an example of an innovative, participatory and co-creative governance model.
 
 Promotion for eco-driving, implementation of technical measures like smart cards for public transport, and offers of financial incentives for citizens is taking shape. Voluntary measures, such as the European Week of Mobility, involve young families and children to participate in educational and ecological activities.
 
@@ -4100,33 +4045,33 @@ Table of contents... 2
 
 Introduction... 3
 
-Goal: Climate neutrality by 2030 ... 8
+Goal: Climate neutrality by 2030... 8
 
-Energy Systems &amp; Built Environment ... 8
+Energy Systems &amp; Built Environment... 8
 
-Mobility &amp; Transport ... 9
+Mobility &amp; Transport... 9
 
-Waste &amp; Circular Economy ... 10
+Waste &amp; Circular Economy... 10
 
-Green Infrastructure &amp; Nature-Based Solutions ... 11
+Green Infrastructure &amp; Nature-Based Solutions... 11
 
-Strategic priorities ... 13
+Strategic priorities... 13
 
-Energy Systems &amp; Built Environment ... 13
+Energy Systems &amp; Built Environment... 13
 
-Mobility &amp; Transport ... 14
+Mobility &amp; Transport... 14
 
-Waste &amp; Circular Economy ... 15
+Waste &amp; Circular Economy... 15
 
-Green Infrastructure &amp; Nature-Based Solutions ... 16
+Green Infrastructure &amp; Nature-Based Solutions... 16
 
-Process and principles ... 17
+Process and principles... 17
 
-Signatories ... 27
+Signatories... 27
 
-Sample contract with signatures ... 28
+Sample contract with signatures... 28
 
-Appendix 1: Individual / Cluster Signatory Commitments (to be added before submitting the Climate City Contract ... 29
+Appendix 1: Individual / Cluster Signatory Commitments (to be added before submitting the Climate City Contract... 29
 0
 
 GABROVO MUNICIPALITY
@@ -4237,7 +4182,7 @@ Over the past two decades, Gabrovo has made significant strides towards becoming
 Long-standing dedication to environmental sustainability: Gabrovo has consistently prioritized sustainable development, making this mission a natural extension of its goals. Joining the mission reflects the city's proactive approach to combating climate change through innovative and effective strategies. Gabrovo aims to leverage the EU's support to implement comprehensive sustainability practices that benefit both the environment and its citizens.
 Access to Financial Resources for Large-scale Projects: Participation in the EU Mission grants Gabrovo access to significant funding dedicated to climate initiatives. This financial support empowers the city to undertake ambitious projects that would be difficult to finance solely through local budgets, ensuring that transformative urban development is economically feasible.
 Expert Guidance and Knowledge Sharing: The mission provides Gabrovo with access to a vast pool of expertise and knowledge from leading European experts in sustainability. By collaborating with experienced professionals, Gabrovo can enhance its climate action plans by incorporating cutting-edge technologies and strategies. This exchange of ideas fosters innovation and drives Gabrovo's progress toward its climate goals.
-Network of Cities Committed to Sharing Best Practices: Being part of the mission allows Gabrovo to learn from and contribute to a network of cities, sharing successful strategies and innovations. This collaboration fosters a sense of solidarity and collective progress toward a common goal of sustainability. Gabrovo benefits from the shared experiences of these cities, which help in shaping effective policies and practices.
+Network of Cities Committed to Sharing Best Ppractices: Being part of the mission allows Gabrovo to learn from and contribute to a network of cities, sharing successful strategies and innovations. This collaboration fosters a sense of solidarity and collective progress toward a common goal of sustainability. Gabrovo benefits from the shared experiences of these cities, which help in shaping effective policies and practices.
 Alignment with EU Targets: The mission's goals align perfectly with Gabrovo's vision for a green, smart, and innovative city, supporting its ambition to become a leader in climate action. This alignment ensures that Gabrovo's efforts are synchronized with broader European policies, enhancing their impact and reach. It also helps Gabrovo contribute to the EU's broader climate objectives, reinforcing its commitment to global sustainability.
 7
 
@@ -4251,11 +4196,7 @@ Commitments
 
 G
 
-# Gabrovo's Climate Journey: Highlights
-
-: Gabrovo co-founded the EcoEnergy municipal network, marking its commitment to energy efficiency. This early involvement laid the foundation for the city's ongoing dedication to sustainable practices and energy conservation, positioning Gabrovo as a leader in municipal energy initiatives.
-
-: Pioneered an integrated street lighting system, establishing Gabrovo as a leader in sustainability in Bulgaria. This project not only reduced energy consumption but also showcased Gabrovo's capability to implement innovative solutions in urban settings, setting a benchmark for other cities.
+# Gabrovo's Climate Journey: Highlights: Gabrovo co-founded the EcoEnergy municipal network, marking its commitment to energy efficiency. This early involvement laid the foundation for the city's ongoing dedication to sustainable practices and energy conservation, positioning Gabrovo as a leader in municipal energy initiatives.: Pioneered an integrated street lighting system, establishing Gabrovo as a leader in sustainability in Bulgaria. This project not only reduced energy consumption but also showcased Gabrovo's capability to implement innovative solutions in urban settings, setting a benchmark for other cities.
 
 In 2013, Gabrovo developed and approved its Sustainable Energy Action Plan (SEAP) and joined the Covenant of Mayors, solidifying its dedication to climate action and reducing greenhouse gas emissions. This membership underscores Gabrovo's commitment to aligning with global standards and achieving tangible climate goals, enhancing its reputation as a proactive city in climate governance.
 

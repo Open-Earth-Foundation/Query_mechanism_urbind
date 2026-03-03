@@ -149,8 +149,6 @@ Table 17. The primary stakeholder focus of some engagement and involvement activ
 | Citizen's Climate Assembly | The citizens' Climate Assembly [Klimaborgertinget] consists of 36 representatively selected Copenhageners who, based on expert presentations and debates, make recommendations on climate change to the City Council. |
 | Climate Alliance | The Climate Alliance [Klimaalliancen] is a partnership established by the Local Government Denmark (KL), Danish Regions, and RealDania and constitutes a common framework for the implementation of municipalities' climate action plans. |
 | C4 (Copenhagen Carbon Capture Cluster) | C4 is a cluster cooperation project in the capital that collaborates on carbon capture and storage. The collaboration was established in February 2021. Altogether, there is a potential to reduce carbon emissions by 3 million tonnes a year using carbon capture and storage. The members represent the entire value chain from energy production to the procurement of surplus heat in the district heating network and the shipping of captured carbon to a storage site. The participating members of the C4 cluster: ARC, ARGO, BIOFOS, Copenhagen Malmö Port, CTR, HOFOR, Vestforbrænding, VEKS and Ørsted. |
-Climate Neutrality Action Plan
-
 | CMP (Copenhagen Malmö port) | Copenhagen Malmö Port (CMP) is one of Scandinavia’s largest port operators, and a full-service port in the Oresund region. We receive a vast variety of goods and have an infrastructure customised for all types of vessels. |
 | --- | --- |
 | CONCITO | CONCITO is Denmark’s green think tank aiming to translate relevant knowledge into climate action and thereby accelerate the green transition. Through scientific and knowledge-based analyses and information, the aim is to show how it is possible to create a climate-neutral and climate-resilient society. |
@@ -166,13 +164,10 @@ Climate Neutrality Action Plan
 | DSO | Distribution system operators are the operating managers (and sometimes owners) of energy distribution networks, operating at low, medium and, in some member states, high voltage levels. |
 | Energinet | Energinet is an independent public enterprise owned by the Danish Ministry of Climate, Energy and Utilities. Energinet owns, operates, and develops the transmission systems for electricity and gas in Denmark |
 | Energy Leap partnership | The Energy Leap partnership [Energispring] focuses on energy savings in buildings and represents 56 real estate companies and organizations and almost 40% of the building stock in Copenhagen. It addresses energy challenges in |
-Climate Neutrality Action Plan
-
 |  | buildings collectively, share valuable insights and experiences, and develop innovative solutions thereby reducing energy consumption, lowering carbon emissions, and creating a more sustainable future for Copenhagen. Energy Leap | Energispring (kk.dk). |
 | --- | --- | --- |
 | Fit-for-55 package | The Fit-for-55 package includes the following adopted or agreed proposals: reform of the EU Emissions Trading System (ETS) and the Market Stability Reserve (MSR); a new, self-standing ETS for buildings, road transport and fuels for additional sectors (ETS2); revised Effort Sharing Regulation (ESR); the Carbon Border Adjustment Mechanism (CBAM); the Social a revised Land Use, Land-Use Change and Forestry (LULUCF) Regulation; updated CO2 emission standards for cars and vans; the Alternative Fuel Infrastructure Regulation (AFIR); FuelEU Maritime; ReFuelEU Aviation; the Energy Efficiency Directive (EED); Renewable Energy Directive (RED); the Regulation on methane emissions reduction in the energy sector; and the associated revision of the Regulation on Fluorinated Greenhouse Gases. |  |
-
-The Fit-for-55 and associated proposals that are still under negotiation with the co-legislators at the time of drafting this report are: the Energy Performance of Buildings Directive (EPBD); the hydrogen and decarbonised gas market package; the proposal for a revised Energy Taxation Directive; and the revision of the Regulation on CO2 emission standards for heavy-duty vehicles. |
+| The Fit-for-55 and associated proposals that are still under negotiation with the co-legislators at the time of drafting this report are: the Energy Performance of Buildings Directive (EPBD); the hydrogen and decarbonised gas market package; the proposal for a revised Energy Taxation Directive; and the revision of the Regulation on CO2 emission standards for heavy-duty vehicles. |
 | Green Power Denmark | Green Power Denmark is a non-commercial business organization gathering around 1,500 members from across the green energy value chain. Green Power Denmark represents companies in the renewable energy industry, owners and developers of renewable energy systems, electricity companies, distribution system operators (DSOs), energy trading companies, and companies that work to refine, convert, and store green electricity. |
 | --- | --- |
 | HOFOR | Greater Copenhagen Utility. HOFOR is supplying 1.1 million customers in the Copenhagen metropolitan area with: Drinking water, district heating, district cooling, town gas, and disposal of wastewater. |
@@ -993,7 +988,7 @@ Efforts to ensure a sustainable, carbon-neutral district heating are focused on 
 |  | Field of action | Building a green energy system. |
 | --- | --- | --- |
 |  | Systemic lever | Technology /infrastructure. |
-Governance & Policy.  |
+| Governance & Policy.  |
 | Implementation | Outcome (according to module B-1.1) | 9.000 tons CO_{2}e. |
 | --- | --- | --- |
 |  | Responsible bodies/person for implementation | HOFOR. |
@@ -1011,10 +1006,6 @@ Table 11. Action outline: CO2 neutral district heating.
 | B-2.2c: Individual action outlines |  |  |
 | --- | --- | --- |
 | Action outline | Action name | CO_{2} neutral power generation. |
-Climate Neutrality Action Plan
-
-#
-
 |  | Action description | The installation of photovoltaic modules and installation of wind turbines contributes to the green transition of the electricity system and to achieving a production of electricity based on biomass and wind that exceeds the city's total electricity consumption. The current target for the wind power programme is to reach 560 MW installed capacity by 2025.HOFOR is working to install wind turbines and photovoltaic modules both within and outside the city limits of Copenhagen. HOFOR intends to achieve the target through a series of projects aimed at establishing both onshore and offshore wind power and photovoltaic power stations. |
 | --- | --- | --- |
 | Reference to impact pathway | Field of action | Building a green energy system. |
@@ -1039,10 +1030,6 @@ Table 12. CO2 neutral power generation.
 |  | Action description | to be implemented in the City of Copenhagen. |
 | Action plan | Action plan | to be implemented in the City of Copenhagen. |
 |  | Action plan | to be implemented in the City of Copenhagen. |
-Climate Neutrality Action Plan
-
-#
-
 |  |  | play a significant role in achieving these goals, as they account for approximately 70 % of total energy consumption. As the municipality owns and operates about 5 % of the building stock, it cannot meet the targets alone. That's why partnerships like Energy Leap are crucial, bringing together key stakeholders in the real estate sector to lead the way in the green transition. The Energy Leap partnership addresses energy challenges in buildings collectively, share valuable insights and experiences, and develop innovative solutions thereby reducing energy consumption, lowering carbon emissions, and creating a more sustainable future for Copenhagen. The Energy Leap partners achieved a 9 % reduction in heat consumption from 2021 to 2022. |
 | --- | --- | --- |
 | Reference to impact pathway | Field of action | Building a green energy system. |
@@ -1213,8 +1200,6 @@ Table 14. Status of CPH 2025 Climate Action plan indicators.
 | If yes, which emission source sectors does it measure? | Buildings |  |
 | Does the indicator measure indirect impacts | No |  |
 | Is the indicator useful for monitoring the output/impact of action(s)? | Yes |  |
-Climate Neutrality Action Plan
-
 | If yes, which action and impact pathway is it relevant for? | Reducing energy consumption |
 | --- | --- |
 | Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes |
@@ -1254,10 +1239,6 @@ Climate Neutrality Action Plan
 | If yes, which emission source sectors does it measure? | Buildings |
 | Does the indicator measure indirect impacts | No |
 | Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
-
-6
-Climate Neutrality Action Plan
-
 | If yes, which action and impact pathway is it relevant for? | Reducing energy consumption |
 | --- | --- |
 | Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No |
@@ -1297,10 +1278,6 @@ Climate Neutrality Action Plan
 | If yes, which emission source sectors does it measure? | Buildings |
 | Does the indicator measure indirect impacts | No |
 | Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
-
-7
-Climate Neutrality Action Plan
-
 | If yes, which action and impact pathway is it relevant for? | Building a green energy system |
 | --- | --- |
 | Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes |
@@ -1341,12 +1318,6 @@ Climate Neutrality Action Plan
 | Does the indicator measure indirect impacts | No |
 | Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
 | If yes, which action and impact pathway is it relevant for? | Building a green energy system |
-
-8
-Climate Neutrality Action Plan
-
-#
-
 | Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes |
 | --- | --- |
 | Data requirements |  |
@@ -1386,10 +1357,6 @@ Climate Neutrality Action Plan
 | Does the indicator measure indirect impacts | No |
 | Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
 | If yes, which action and impact pathway is it relevant for? | Building a green energy system |
-Climate Neutrality Action Plan
-
-0
-
 | Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes |
 | --- | --- |
 | Data requirements |  |
@@ -1427,10 +1394,6 @@ Climate Neutrality Action Plan
 | Does the indicator measure direct impacts | Yes |
 | If yes, which emission source sectors does it measure? | Transport |
 | Does the indicator measure indirect impacts | No |
-Climate Neutrality Action Plan
-
-1
-
 | Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
 | --- | --- |
 | If yes, which action and impact pathway is it relevant for? | Fostering green mobility |
@@ -1467,10 +1430,6 @@ Climate Neutrality Action Plan
 | Definition | 20% more passengers use public transportation in 2025 compared to 2009. |
 | Calculation | Number of passengers using public transportation (Busses, metro, and trains) on workdays. |
 | Indicator Context |  |
-Climate Neutrality Action Plan
-
-2
-
 | Does the indicator measure direct impacts | Yes |
 | --- | --- |
 | If yes, which emission source sectors does it measure? | Transport |
@@ -1555,8 +1514,6 @@ Plan
 | Indicator Name | CPH2025-17. Number of the municipality’s vehicles using electricity, hydrogen, or biofuels. |
 | Indicator Unit | Number of vehicles. |
 | Definition | 100% of heavy vehicles are powered by electricity or hydrogen. |
-Climate Neutrality Action Plan
-
 | Calculation | An absolute goal for 2025. Applies only to the municipality's cars, vans, and small buses, but not trucks, buses, and off-road vehicles. |
 | --- | --- |
 | Indicator Context |  |
@@ -2370,9 +2327,7 @@ The table below enlists the signatories who are committing to this CCC, and ther
 | BIOFOS – Wastewater Utility | Regional | Municipally owned utility company | John Buur Christiansen | CEO |
 | CTR – Metropolitan Copenhagen Heating Transmission Company | Regional | Municipally owned utility company | Randi Skogstad | CEO |
 | ARC – Amager Resource Centre | Regional | Municipally owned utility company | Jacob H. Simonsen |  |
-Andreas Keil | CEO
-Chairman of the Board, City of Copenhagen  |
-Climate-Neutrality Commitments
-
+| Andreas Keil | CEO |
+| Chairman of the Board, City of Copenhagen  |
 | Energy Leap partnership | Local | Partnership | Mette Skovbjerg | Steering Committee Chair. Head of Division, Technical and Environmental Administration |
 | --- | --- | --- | --- | --- |

@@ -719,8 +719,8 @@ A-2.1: List of relevant policies, strategies and regulations
 | --- | --- | --- | --- | --- | --- |
 |   |  |  | reforestation of road infrastructures, contributing to increased green areas by planting 2 000 trees annually in urban zones. | quality, and fosters overall environmental resilience within the municipality. |   |
 |  Plan | Local | Biodiversity Action Plan | New Biodiversity Action Plan under development.
-This plan aims to harness the collective knowledge, insights, and commitment of the local community to create a comprehensive strategy for preserving and enhancing biodiversity. Several activities are still under development with the collaboration of the community (see more information here). | Biodiverse ecosystems play a pivotal role in the battle against climate change by acting as nature's carbon reservoirs. Through conservation and restoration efforts, the plan can amplify the process of carbon sequestration, a crucial means of curbing the impact of climate change. Moreover, these ecosystems offer a suite of invaluable ecosystem services that bolster Guimarães resilience in the face of climatic challenges.
-Preserving and nurturing biodiversity is not just an ecological endeavour, it is a climate resilience strategy that the municipality sees as priceless ally for achieving climate change. |   |
+| This plan aims to harness the collective knowledge, insights, and commitment of the local community to create a comprehensive strategy for preserving and enhancing biodiversity. Several activities are still under development with the collaboration of the community (see more information here). | Biodiverse ecosystems play a pivotal role in the battle against climate change by acting as nature's carbon reservoirs. Through conservation and restoration efforts, the plan can amplify the process of carbon sequestration, a crucial means of curbing the impact of climate change. Moreover, these ecosystems offer a suite of invaluable ecosystem services that bolster Guimarães resilience in the face of climatic challenges. |
+| Preserving and nurturing biodiversity is not just an ecological endeavour, it is a climate resilience strategy that the municipality sees as priceless ally for achieving climate change. |   |
 |  Plan | Local | Tourism Ambassadors from the Tourism Strategy for Guimarães 2019-2029 | In connection with the implementation of the Tourism Strategy Action Plan, the municipality report here on the most important ongoing actions and projects: | The emphasis on new projects to diversify the tourism offer indicates a forward-looking approach that is consistent with the idea of creating sustainable and resilient tourism that can thrive while minimising negative environmental impacts. Also, the strategy's focus on valorising the whole territory and establishing a network of ambassadors for |   |
 
 5
@@ -854,7 +854,7 @@ A-2.1: List of relevant policies, strategies and regulations
 | --- | --- | --- | --- | --- | --- |
 |  Project | Local | Limp.AR | A project that encourages air and noise quality improvement in urban centres, promoting the integration of vegetation in urban areas and raise awareness, as well as the evaluation of noise and air quality in urban and school areas to assess the impact of the actions developed throughout the project. | The project aims to integrate vegetation in the urban environment, increasing the sequestration of GHG emissions. It also encourages citizens to use alternative and sustainable modes of transport, such as walking and cycling. This reduction in reliance on private vehicles helps to reduce carbon emissions and is in line with the municipality's goal of becoming climate neutral by promoting greener and more environmentally friendly forms of urban mobility. |   |
 |  Project | Local | Green Gap | The project aims to protect, preserve and enhance nature and the elements that make up the green infrastructure in the cross-border area, promoting its planning, contributing to the enhancement of biodiversity and valuing natural ecosystems, the urban environment and ecosystem services. | The project will enhance the role of local administrations in the development of effective nature protection and conservation policies, this being the main innovative element of the project: making the local administration a key agent in the development of nature protection and conservation policies in a territory that shares the same geographical reality and environmental problems.
-It also aims to mitigate and adapt to the effects of climate change by designing a resilient landscape. |   |
+| It also aims to mitigate and adapt to the effects of climate change by designing a resilient landscape. |   |
 |  Project | Local | River Green Ways | Over the past, as economic activity increased, stress on environmental resources grew, leading to water pollution, biodiversity loss and | The project plays an important role in achieving climate neutrality for the municipality, as it considers several environmental and social aspects. By |   |
 
 4
@@ -1415,8 +1415,8 @@ A-3.1: Systems and stakeholder mapping
 | --- | --- | --- | --- | --- |
 |   |  |  |  | these types of actors on board. It is also in the interest of these entities to align with Guimarães' climate neutrality goals, as they help provide citizens with transport.  |
 |  Actions implementation
-Funding and financing | - Guimabus
-(Guimarães public transports – bus company) | Mobility sector | Key stakeholder to shift mobility patterns to cleaner solutions. Support clean, safe, and reliable public transportation | In line with the municipality's strategic view to obtain the public bus concession.  |
+| Funding and financing | - Guimabus |
+| (Guimarães public transports – bus company) | Mobility sector | Key stakeholder to shift mobility patterns to cleaner solutions. Support clean, safe, and reliable public transportation | In line with the municipality's strategic view to obtain the public bus concession.  |
 |  Actions implementation | - Confeções Bugalhós
 LASA
 Mundifios S.A.
@@ -1450,7 +1450,7 @@ To-Be-Green
 APICCAPS
 (Portuguese Footwear, Components, Leather Goods Manufacturers' Association) |  |  |   |
 |  Strategic Learning and capabilities | - CITEVE (Textile and Clothing Technological Centre)
-PIEP (Pole for Innovation in Polymer Engineering) | Research and technological centre | Can conduct research and develop new technologies related to decarbonisation and circular economy in the textile sector, supporting policy and guide implementation of decarbonisation initiatives. | Interest in energy and related cost savings and strategic position in the decarbonisation field.  |
+| PIEP (Pole for Innovation in Polymer Engineering) | Research and technological centre | Can conduct research and develop new technologies related to decarbonisation and circular economy in the textile sector, supporting policy and guide implementation of decarbonisation initiatives. | Interest in energy and related cost savings and strategic position in the decarbonisation field.  |
 |  Actions implementation
 Financing and funding | - RESINORTE (Recycling centre)
 Ecomovimento (Collection of used cooking oils)
@@ -1471,15 +1471,15 @@ A-3.1: Systems and stakeholder mapping
 |  System description | Stakeholders involved | Network | Influence | Interest  |
 | --- | --- | --- | --- | --- |
 |   |  |  | to act as financing partners (e.g., ESCOs).
-Electricity networks and producers are the backbone of the electrical value-chain, bringing electricity to consumers in though safe and stable supply. |   |
+| Electricity networks and producers are the backbone of the electrical value-chain, bringing electricity to consumers in though safe and stable supply. |   |
 |  Actions implementation | - MCA Group (Construction company)
 Casais (Construction company)
 NVE, Engenharias, S.A. (Construction company) | Construction sector | Construction companies greatly influence buildings renovation actions, and implement the actions related with energy efficiency and renewable energy.
 Also, the building products industry is responsible for the embedded energy share in the built stock energy consumption. | Great demand for construction works will require specialised companies. Thus, companies can see their workload increase and be market leaders on sustainable construction.  |
 |  Actions implementation
-Financing and funding | - Companies from “Guimarães Marca” | Private companies with local products | As part of the local business community, these companies can use their resources, expertise and reach to drive sustainable practises and contribute to the city's climate goals.
-Their collaboration with local authorities and other stakeholders can have a collective impact by encouraging innovation, sharing best practises and supporting a culture of sustainability within the community. | This industry needs guidance on investment in circular economy actions, in energy efficiency and renewable production.
-Also, private investment will support the municipality goals.  |
+| Financing and funding | - Companies from “Guimarães Marca” | Private companies with local products | As part of the local business community, these companies can use their resources, expertise and reach to drive sustainable practises and contribute to the city's climate goals. |
+| Their collaboration with local authorities and other stakeholders can have a collective impact by encouraging innovation, sharing best practises and supporting a culture of sustainability within the community. | This industry needs guidance on investment in circular economy actions, in energy efficiency and renewable production. |
+| Also, private investment will support the municipality goals.  |
 |  Actions implementation
 Financing and funding | - Vimágua (Water service management)
 Tratave (management and operation of the public service of destination of industrial and | Water supply and wastewater operators | Water and wastewater collection, treatment and distribution process involve high energy consumption as well as scope III emissions from biological treatment processes. | These companies are in the path to decarbonisation, which will benefit from the support of the plan to implement the required measures.
@@ -1558,10 +1558,10 @@ Vimaranense Hotel and Tourism (Association)
 A Cozinha (restaurante) |  |  | and circular economy.
 Community outreach, at the local, national, and international levels to drive the positive change.  |
 |  Actions implementation | - Infantário Nuno Simões | kindergarten | Key role on raising the future generation. Makes the change from the inside, not just by changing its own practices but also, educating young children with environmental conscience. | The sector benefits from guidance to finance and funding and which actions that can take towards neutrality.
-Also, can outreach and engage community from very early in future generations life.  |
+| Also, can outreach and engage community from very early in future generations life.  |
 |  Actions implementation | - ACES Alto Ave - Guimarães, Vizela e Terras de Basto
-Senhora da Oliveira Hospital | Cluster of health centres: | Health facilities contribute to the actions implementation and can support emissions reductions. Reducing climate change effects has strong impact in the population life quality. | Strategic partners in promoting health of citizens.
-Benefit from new business models and financial schemes to implement decarbonisation measures.  |
+| Senhora da Oliveira Hospital | Cluster of health centres: | Health facilities contribute to the actions implementation and can support emissions reductions. Reducing climate change effects has strong impact in the population life quality. | Strategic partners in promoting health of citizens. |
+| Benefit from new business models and financial schemes to implement decarbonisation measures.  |
 |  Actions implementation | - Guimarães scouts
 3M (Social and - Cultural Artistic Association)
 A Oficina CIPRL (Guimarães Traditional Arts Centre)
@@ -1587,14 +1587,14 @@ Salgueiral – S.A.R.C (Solidarity, Associativism, Recreation and Culture)
 Irmandade de São Nicolau
 Irmandade de São Torcato |  |  | goals of the municipality and the well-being of the municipality.  |
 |  Actions implementation | - Caldas das Taipas Volunteer Firefighters
-Guimarães Volunteer Firefighters | Emergency responders | Firefighters are the first responders in emergencies thus can influence behaviour and implement actions. | As first responders they will benefit from the alignment with municipality goals and plans to act towards climate change action.  |
+| Guimarães Volunteer Firefighters | Emergency responders | Firefighters are the first responders in emergencies thus can influence behaviour and implement actions. | As first responders they will benefit from the alignment with municipality goals and plans to act towards climate change action.  |
 |  Actions implementation
 Financing and funding
 Governance and policy | - Associação de Municípios de Fins Específicos Quadrilátero Urbano (Association of Municipalities - for competitiveness, innovation and internationalisation)
 CIM Ave (Aves' Intermunicipal Community) | Regional entities | Organisations can drive change through sustainable practises, innovation, and advocacy.
 A strong team and coordination are required to work with different tools and frameworks, across departments and institutions, with the community. | A close relationship with regional institutions is essential for coordination, exchange, and learning, as well as funding opportunities.  |
 |  Actions implementation | - LABPAC (Creative hub)
-TecPark (Technological Base Incubator) | Municipal Hubs | Municipal companies and hubs are essential in coordinating and executing local initiatives. |   |
+| TecPark (Technological Base Incubator) | Municipal Hubs | Municipal companies and hubs are essential in coordinating and executing local initiatives. |   |
 |  Financing and funding | - CASFIG – (Coordination of the Social and Financial Scope of Housing in the Municipality of Guimarães, E.E.M) | Municipal companies | The municipality can influence climate neutrality pathway of homes by focusing on more sustainable construction practices.
 Environmental budgeting and reporting; green public procurement | Given the amount of investment that is needed to achieve the climate neutrality by 2030, only public investment is not enough. It is the interest of Guimarães to gather investment from the private sector as well (e.g., for buildings  |
 Guimarães
@@ -1610,7 +1610,7 @@ A-3.1: Systems and stakeholder mapping
 |   |  |  | Divestment (in non-renewable energy sources), as an example. | renovations, energy efficiency measures), also through innovative financial schemes.  |
 |  Financing and funding | - Citizens | Population | Citizens have the power to demand and implement for greener policies and products, act as a lever for public investment and policies, promoting climate neutrality measures. | Embracing the citizens and giving them a share fair part of the revenues of a green project, is a way to keep them interested in the decarbonisation pathway through innovative financial schemes (e.g., crowdfunding).  |
 |  Financing and funding | - Financial intuitions
-Banks | Private financing sector | Private institutions can leverage public investment to support climate action implementation. | Given the amount of investment that is needed to achieve the climate neutrality by 2030, only public investment is not enough. It is the interest of Guimarães and its citizens and businesses to gather investment from the private sector as well (e.g., for buildings renovations, energy efficiency measures).  |
+| Banks | Private financing sector | Private institutions can leverage public investment to support climate action implementation. | Given the amount of investment that is needed to achieve the climate neutrality by 2030, only public investment is not enough. It is the interest of Guimarães and its citizens and businesses to gather investment from the private sector as well (e.g., for buildings renovations, energy efficiency measures).  |
 |  Financing and funding
 Governance and policy | - IAPMEI (Agency for Competitiveness and Innovation)
 Portuguese National Commission for UNESCO
@@ -1656,7 +1656,7 @@ A-3.1: Systems and stakeholder mapping
 |  System description | Stakeholders involved | Network | Influence | Interest  |
 | --- | --- | --- | --- | --- |
 |   | Environment Agency)
-EIT (The European Institute of Innovation and Technology) |  |  | learning, as well as funding opportunities.  |
+| EIT (The European Institute of Innovation and Technology) |  |  | learning, as well as funding opportunities.  |
 |  Learning and capabilities
 Social innovation, democracy, and participation | - University of Minho
 UTAD
@@ -2648,7 +2648,7 @@ Plan
 B-2.2: Individual action outlines
 
 |   |  | identify appropriate renewable energy technologies, build legal and organisational structures, develop business models and revenue streams, access financing and investment opportunities, foster partnerships, and collaborations, develop a communication and outreach strategy.
-The Municipality of Guimarães also seeks to enhance energy efficiency, promote renewable energy integration, and create a more transparent and data-driven approach to energy management through the digitalisation of energy. This forward-thinking approach aligns with the broader sustainability objectives outlined in the European Green Deal and contributes to building a greener and digitally enabled city.  |
+| The Municipality of Guimarães also seeks to enhance energy efficiency, promote renewable energy integration, and create a more transparent and data-driven approach to energy management through the digitalisation of energy. This forward-thinking approach aligns with the broader sustainability objectives outlined in the European Green Deal and contributes to building a greener and digitally enabled city.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   |  Systemic lever | Technology/infrastructure  |
@@ -2671,7 +2671,7 @@ Community members  |
 |   |  Comments on implementation | N/A  |
 |  Impact and cost | Generated renewable energy (if applicable) | Electricity  |
 |   |  Removed/substituted energy, volume or fuel type | Substituted energy:
-• Electric energy over fossil fuels.  |
+| • Electric energy over fossil fuels.  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | GHG emissions reduction: 126 kt tonCO_{2}e (in total conjugation with the actions Renewable Energy Communities (REC) and digitalisation of energy, RES self-consumption: households, industry, companies, institutions)  |
 |   |  Total costs and costs by CO_{2}e unit | Total costs: € (72) M (in total conjugation with the all the actions from the energy systems domains)  |
 Guimarães 2030
@@ -2759,7 +2759,7 @@ st priority action
 | --- | --- | --- |
 |   |  Action type | Physical/ spatial interventions  |
 |   |  Action description | This action focuses on promoting and encouraging the adoption of a more sustainable transportation options, with a primary objective of reducing the reliance on private cars. The action aims to shift towards eco-friendly modes of transportation, such as walking, cycling, and public transport, to enhance the overall sustainability and liveability of the community.
-It also entails as a complement the engagement of the citizens into real-life examples of alternative and sustainable modes, to turn feasible the change towards this type of clean mobility.  |
+| It also entails as a complement the engagement of the citizens into real-life examples of alternative and sustainable modes, to turn feasible the change towards this type of clean mobility.  |
 |  Reference to impact pathway | Field of action | Mobility and transport  |
 |   |  Systemic lever | Governance and policy  |
 |   |  Outcome (according to module B-1.1) | • Decrease in the private cars circulating in the city.
@@ -2811,12 +2811,12 @@ Climate Neutrality Action Plan
 B-2.2: Individual action outlines
 
 |   |  | Speed station without having to use their private car to get there.
-Guimarães intends to articulate this action with regional and national actors, since it this action deals with a variety of stakeholders and is inter-regional.  |
+| Guimarães intends to articulate this action with regional and national actors, since it this action deals with a variety of stakeholders and is inter-regional.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Mobility and transport  |
 |   |  Systemic lever | Governance and policy  |
 |   |  Outcome (according to module B-1.1) | • Studies and first steps towards the Bus Rapid Transit (BRT) implementation.
-• Implementation of BRT services on national roads 101 and 206.  |
+| • Implementation of BRT services on national roads 101 and 206.  |
 |  Implementation | Responsible bodies/person for implementation | National Ministry of Infrastructure and Housing Municipality of Guimarães:
 Municipal Directorate for Intervention Territory, Environment and Climate Action:
 Energy efficiency department
@@ -2824,8 +2824,7 @@ Municipal works division.
 Mobility division.
 Public Transports of Braga  |
 |   |  Action scale and addressed entities | Action scale: this action will encompass the Guimarães municipality, parishes around the municipality, as well Braga municipality, since is an interregional measure that embraces a vast area of the territory.
-
-Addressed entities: citizens, Municipality of Guimarães and Braga, CIM do Ave e do Cávado  |
+| Addressed entities: citizens, Municipality of Guimarães and Braga, CIM do Ave e do Cávado  |
 |   |  Involved stakeholders | Citizens Municipality Guimarães and Municipality of Braga National Ministry of Infrastructure and Housing CIM do Ave e do Cávado  |
 |   | Comments on implementation | It is important to emphasise that this is a long-term action, that involves regional and national actors.
 Guimarães intends to explore the opportunities to improve the mobility and transportation systems that will connect the municipality with the future High-Speed station in Braga.
@@ -2858,13 +2857,13 @@ B-2.2: Individual action outlines
 |  Reference to impact pathway | Field of action | Mobility and transport  |
 |   |  Systemic lever | Technology/infrastructure  |
 |   |  Outcome (according to module B-1.1) | • Carbon-free delivery system roadmap developed and implemented with key stakeholders.
-• Implementation of carbon-free delivery with at least one stakeholder in tested area, e.g., District C.  |
+| • Implementation of carbon-free delivery with at least one stakeholder in tested area, e.g., District C.  |
 |  Implementation | Responsible bodies/person for implementation | Municipality of Guimarães:
 Municipal Directorate for Intervention Territory, Environment and Climate Action:
 Mobility division.
 Delivery services companies  |
 |   |  Action scale and addressed entities | Action scale: this action intends to be implemented on District C and then expand to the territory.
-Addressed entities: citizens, delivery services operators  |
+| Addressed entities: citizens, delivery services operators  |
 |   |  Involved stakeholders | Citizens
 Municipality of Guimarães
 Delivery services companies, e.g., DPD, UPS
@@ -2872,7 +2871,7 @@ Mobility and transportation related companies, e.g., Get Green  |
 |   |  Comments on implementation | N/A  |
 |  Impact and cost | Generated renewable energy (if applicable) | N/A  |
 |   |  Removed/substituted energy, volume or fuel type | Substituted energy:
-Gasoline, GPL, diesel by electricity  |
+| Gasoline, GPL, diesel by electricity  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | GHG emissions reduction: 23 kt tonCO2e  |
 |   |  Total costs and costs by CO2e unit | Total costs: € 0
 Values to be refined with delivery and transportation stakeholders  |
@@ -2980,7 +2979,7 @@ B-2.2: Individual action outlines
 |  1st priority action  |   |   |
 | --- | --- | --- |
 |   |  | National Energy and Climate Plan 2030) claims for the progressive reduction of its deposition in landfills and the increase of its recovery (e.g., to produce biogas), to fulfil European and national targets in this matter.
-The present action represents a considerable investment since it implies the creation of an installation for aerobic digestion does not exist in Guimarães territory, representing the necessity to invest and gather the crucial entities to deploy this procedure.  |
+| The present action represents a considerable investment since it implies the creation of an installation for aerobic digestion does not exist in Guimarães territory, representing the necessity to invest and gather the crucial entities to deploy this procedure.  |
 |  Impact and cost | Generated renewable energy (if applicable) | Biomethane  |
 |   |  Removed/substituted energy, volume or fuel type | 3 965 MWh (diesel)  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Removed emissions: 1 k tonCO2e/year  |
@@ -2993,7 +2992,7 @@ B-2.2: Individual action outlines
 |  Action outline | Action name | Carpooling and car sharing  |
 |   |  Action type | Other interventions  |
 |   |  Action description | Carpooling and car sharing intend to optimise transport and reduce emissions associated with the use of individual vehicles. Carpooling involves coordinating journeys to common destinations, reducing the number of vehicles on the roads by increasing the average number of passengers per car, and minimising congestion.
-Car sharing, on the other hand, is a service that aims to provide Guimarães' citizens short-term access to shared vehicles. This approach promotes a shift from car ownership to car access, encouraging citizens to use vehicles only when needed and to opt for more sustainable transport options where possible. By providing an easily accessible fleet of shared vehicles, this action aims to reduce the overall number of cars on the road and reduce GHG emissions.  |
+| Car sharing, on the other hand, is a service that aims to provide Guimarães' citizens short-term access to shared vehicles. This approach promotes a shift from car ownership to car access, encouraging citizens to use vehicles only when needed and to opt for more sustainable transport options where possible. By providing an easily accessible fleet of shared vehicles, this action aims to reduce the overall number of cars on the road and reduce GHG emissions.  |
 |  Reference to impact pathway | Field of action | Learning and capabilities  |
 |   |  Systemic lever | Technology/infrastructure  |
 |   |  Outcome (according to module B-1.1) | • Increase the acceptance of carpooling by the community and workers who work in the same area. The system is already in place and has led to a reduction in the use of private cars.  |
@@ -3002,7 +3001,7 @@ Municipal Directorate for Intervention Territory, Environment and Climate Action
 Mobility division
 Citizens and private cars owners  |
 |   |  Action scale and addressed entities | Action scale: throughout the territory of Guimarães
-Addressed entities: citizens  |
+| Addressed entities: citizens  |
 |   |  Involved stakeholders | Experts on sustainable mobility modes
 Citizens  |
 Guimarães
@@ -3044,7 +3043,7 @@ Urban Services Division
 Resinorte
 VITRUS  |
 |   |  Action scale and addressed entities | Action scale: trial on District C and continuing to expand the ongoing biowaste collection that already took place in some areas of Guimarães.
-Addressed entities: citizens, commercial areas (shopping centers, supermarkets), companies, restaurants, schools, other private and public entities, Brigadas Verdes, Pegadas programme  |
+| Addressed entities: citizens, commercial areas (shopping centers, supermarkets), companies, restaurants, schools, other private and public entities, Brigadas Verdes, Pegadas programme  |
 |   |  Involved stakeholders | Resinorte
 VITRUS
 Citizens
@@ -3119,7 +3118,7 @@ st priority action
 | --- | --- | --- |
 |   |  Action type | Technical interventions  |
 |   |  Action description | By implementing this action, the Municipality of Guimarães aims to increase the recycling rate and foster a sustainable waste management system. This approach will encourage residents, businesses, and institutions to actively participate in recycling efforts, reduce waste generation, and contribute to the development of a circular economy within the municipality.
-The action involves the following key elements: continuous awareness and education, infrastructure improvement, promotion of reuse, establishment of efficient recycling facilities, a strong collaboration with recycling companies monitoring and evaluation.  |
+| The action involves the following key elements: continuous awareness and education, infrastructure improvement, promotion of reuse, establishment of efficient recycling facilities, a strong collaboration with recycling companies monitoring and evaluation.  |
 |  Reference to impact pathway | Field of action | Waste and circular economy  |
 |   |  Systemic lever | Governance and policy  |
 |   |  Outcome (according to module B-1.1) | • Increase reuse and recycling of municipal waste.  |
@@ -3129,7 +3128,7 @@ Department of Urban Services and Environment Urban Services Division
 Resinorte
 VITRUS  |
 |   |  Action scale and addressed entities | Action scale: this action will cover District C and the expand to other areas of Guimarães.
-Addressed entities: citizens, commercial areas (shopping centres, supermarkets), companies, public and private entities, Brigadas Verdes, programa Pegadas  |
+| Addressed entities: citizens, commercial areas (shopping centres, supermarkets), companies, public and private entities, Brigadas Verdes, programa Pegadas  |
 |   |  Involved stakeholders | Municipality of Guimarães
 Resinorte
 VITRUS  |
@@ -3281,7 +3280,7 @@ Urban Management Division
 Landscape Laboratory of Guimarães  |
 | --- | --- | --- |
 |   |  Action scale and addressed entities | Action scale: a first test will be run on District C with the intention to expand to the territory.
-Addressed entities: citizens, local NGOs, and environmental organisations, Brigadas Verdes, Pegadas programme.  |
+| Addressed entities: citizens, local NGOs, and environmental organisations, Brigadas Verdes, Pegadas programme.  |
 |   |  Involved stakeholders | Local community and citizens
 Environmental and conservation organisations
 Landowners and property developers
@@ -3386,7 +3385,7 @@ Energy Service Companies (ESCOs)  |
 |   |  Comments on implementation | This action has the goal to build the ground for energy efficiency and renewable energy projects in Guimarães. It is a complementary but necessary action to support other energy related actions and projects. May not have a direct impact on emissions reductions as other actions on the Action Plan.  |
 |  Impact and cost | Generated renewable energy (if applicable) | N/A  |
 |   |  Removed/substituted energy, volume or fuel type | Substituted energy:
-• Renewable energy sources over non-renewable energy sources (fossil fuels)  |
+| • Renewable energy sources over non-renewable energy sources (fossil fuels)  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | GHG emissions reduction: 11 kt tonCO_{2}e  |
 |   |  Total costs and costs by CO_{2}e unit | Total costs: € (168) M  |
 
@@ -3443,7 +3442,7 @@ Local Government and Municipality
 Technology Providers
 Utilities and Grid Operators  |
 |   |  Action scale and addressed entities | Action scale: this action intends to be implemented by the Guimarães industry.
-Addressed entities: Industrial companies in Guimarães  |
+| Addressed entities: Industrial companies in Guimarães  |
 |   |  Involved stakeholders | Municipal Directorate for Intervention Territory, Environment and Climate Action.
 “Guimarães’ Brand”.
 Guimarães industry.
@@ -3456,13 +3455,13 @@ Technology providers
 Utilities and energy providers
 Business Association of Guimarães.  |
 |   |  Comments on implementation | This action should be implemented by the industry.
-The Municipality of Guimarães is merely a facilitator and does not have authority to obligate industries to implement this action since industries are private entities. The goal is to demonstrate the journey that needs to be done to achieve climate neutrality by 2030, including such an important sector for Guimarães that is the industry.  |
+| The Municipality of Guimarães is merely a facilitator and does not have authority to obligate industries to implement this action since industries are private entities. The goal is to demonstrate the journey that needs to be done to achieve climate neutrality by 2030, including such an important sector for Guimarães that is the industry.  |
 |  Impact and cost | Generated renewable energy (if applicable) | N/A  |
 |   |  Removed/substituted energy, volume or fuel type | Thermal energy: 135 070 MWh
 Electricity: 121 847 MWh
 Energy production: 59 486 MWh  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Removed emissions: 66 k tonCO2e
-GHG emissions reduction: 27,5%  |
+| GHG emissions reduction: 27,5%  |
 |   |  Total costs and costs by CO2e unit | Total costs: € (89) M
 Costs by CO2e unit: € 1,34 M / ktonCO2e  |
 
@@ -3522,17 +3521,17 @@ Utilities and Grid Operators
 Guimarães industry.
 Business Association of Guimarães.  |
 |   |  Action scale and addressed entities | Action scale: this action intends to be implemented by the Guimarães industry.
-Addressed entities: industry in Guimarães  |
+| Addressed entities: industry in Guimarães  |
 |   |  Involved stakeholders | Municipal Directorate for Intervention Territory, Environment and Climate Action.
 “Guimarães' Brand”.
 Guimarães industry.
 Business Association of Guimarães.  |
 |   |  Comments on implementation | This action should be implemented by the industry.
-Guimarães municipality is merely a facilitator and does not have authority to obligate industries to implement this action since industries are private entities. This measure would require national government involvement due to its political contours and implications, as it is also a national goal to decarbonise natural gas grids and power plants through hydrogen. This requires not only investment from industry, but also financial support from the government.  |
+| Guimarães municipality is merely a facilitator and does not have authority to obligate industries to implement this action since industries are private entities. This measure would require national government involvement due to its political contours and implications, as it is also a national goal to decarbonise natural gas grids and power plants through hydrogen. This requires not only investment from industry, but also financial support from the government.  |
 |  Impact and cost | Generated renewable energy (if applicable) | Electricity  |
 |   |  Removed/substituted energy, volume or fuel type | 40,6 MW of electrolyser (electric power) and 180 012 MWh  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Removed emissions: 37 k tonCO2/year.
-GHG emissions reduction: 15,1%  |
+| GHG emissions reduction: 15,1%  |
 |   |  Total costs and costs by CO2e unit | Total costs: € (53) M
 Costs by CO2e unit: € 1,77 M / kton CO2  |
 
@@ -3572,7 +3571,7 @@ Utilities and Grid Operators
 Guimarães industry.
 Business Association of Guimarães.  |
 |   |  Action scale and addressed entities | Action scale: this action intends to be implemented by the Guimarães industry.
-Addressed entities: industry of Guimarães, Biomass suppliers  |
+| Addressed entities: industry of Guimarães, Biomass suppliers  |
 |   |  Involved stakeholders | Resinorte
 VITRUS
 Tratave
@@ -3653,9 +3652,9 @@ B-2.2: Individual action outlines
 Guimarães industry.
 Business Association of Guimarães.  |
 |   |  Action scale and addressed entities | Action scale: this action intends to be implemented by the Guimarães industry, with the support of the municipality.
-Addressed entities: industry of Guimarães  |
+| Addressed entities: industry of Guimarães  |
 |   |  Involved stakeholders | Guimarães industry
-Municipality of Guimarães  |
+| Municipality of Guimarães  |
 |   |  Comments on implementation | N/A  |
 |  Impact and cost | Generated renewable energy (if applicable) | N/A  |
 |   |  Removed/substituted energy, volume or fuel type | N/A  |
@@ -3672,15 +3671,15 @@ B-2.2: Individual action outlines
 |  Reference to impact pathway | Field of action | Industry  |
 |   |  Systemic lever | Learning and capabilities  |
 |   |  Outcome (according to module B-1.1) | • Increased adoption of renewable energy technologies and practices within the industrial sector.
-• Integration of sustainable energy practices into the strategic plans of industry.  |
+| • Integration of sustainable energy practices into the strategic plans of industry.  |
 |  Implementation | Responsible bodies/person for implementation | Municipality of Guimarães
 “Guimarães Marca”
 Guimarães industry
 Business Association of Guimarães  |
 |   |  Action scale and addressed entities | Action scale: this action intends to be implemented by the Guimarães industry, with the support of the municipality.
-Addressed entities: industry of Guimarães  |
+| Addressed entities: industry of Guimarães  |
 |   |  Involved stakeholders | Guimarães industry
-Municipality of Guimarães  |
+| Municipality of Guimarães  |
 |   |  Comments on implementation | N/A  |
 |  Impact and cost | Generated renewable energy (if applicable) | N/A  |
 |   |  Removed/substituted energy, volume or fuel type | N/A  |
@@ -3783,7 +3782,7 @@ Municipal Directorate for Intervention Territory, Environment and Climate Action
 Local tourism businesses
 Tourism certification bodies  |
 |   |  Action scale and addressed entities | Action scale: this action intends to be implemented on District C and then expand to the territory.
-Addressed entities: tourism industry.  |
+| Addressed entities: tourism industry.  |
 |   |  Involved stakeholders | Environmental and conservation organizations
 Tourists and travellers
 Cultural and heritage organizations, Guimarães Historical centre
@@ -3965,8 +3964,7 @@ Climate Neutrality Action Plan
 |  Indicator Name | Change in the total energy consumption per year  |
 |  Indicator Unit | kWh/year  |
 |  Definition | This indicator is taken from the NZC PCP indicator set from the NZC pilot city programme. Since this activity correspond to an intervention to be undertaken through District C, the Municipality of Guimarães considered reasonable to maintain the presupposed indicator, in order to maintain consistency and trackability.
-
-This indicator refers to the annual variance in the amount of energy consumed, measured in kWh, that is directly associated with the utilisation of renewable energy sources for various stakeholders and sectors that desires to have PV solutions on its installations. It quantifies the year-to-year shift in energy consumption patterns, considering the transition towards renewable sources and the overall impact on the energy system.  |
+| This indicator refers to the annual variance in the amount of energy consumed, measured in kWh, that is directly associated with the utilisation of renewable energy sources for various stakeholders and sectors that desires to have PV solutions on its installations. It quantifies the year-to-year shift in energy consumption patterns, considering the transition towards renewable sources and the overall impact on the energy system.  |
 |  Calculation | To calculate this indicator is necessary to measure the difference in total energy consumption before and after implementing energy efficiency improvement measures. Energy efficiency improvement and energy performance labelling (ex-ante and ex-post)  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes  |
@@ -4403,7 +4401,7 @@ Climate Neutrality Action Plan
 |  Indicator Unit | kt CO_{2} equivalent  |
 |  Definition | The indicator assesses the reduction of GHG emissions resulting from the introduction of carpooling and car-sharing. It quantifies the emissions reduction resulting from the shared use of vehicles by several people, which contribute to a reduction in emissions compared to the ownership and use of single vehicles.  |
 |  Calculation | To calculate the reduction in GHG emissions resulting from the introduction of carpooling and car-sharing involves comparing emissions from individual vehicles with emissions from vehicles used in carpooling or car-sharing scenarios.
-The resulting value represents the reduction in GHG emissions achieved by implementing carpooling and car sharing practices.  |
+| The resulting value represents the reduction in GHG emissions achieved by implementing carpooling and car sharing practices.  |
 |  Indicator Context  |   |
 |  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes  |
 |  If yes, which emission source sectors does it impact? | Mobility and transport  |
@@ -4684,8 +4682,7 @@ It is important to note that the Municipality of Guimarães, for the interventio
 
 This indicator will account for negative emissions through the enlargement and enhancement of natural sinks within the territory to address residual emission. The Municipality of Guimarães intends to recovery/implement green areas for carbon capture.  |
 |  Calculation | To calculate this indicator is necessary to estimate the amount of carbon dioxide absorbed by green areas such as forests, which contributes to carbon sequestration.
-
-It would involve the assessment and calculation of carbon sequestration rate, calculate the total carbon sequestration, and convert to CO₂ equivalent.  |
+| It would involve the assessment and calculation of carbon sequestration rate, calculate the total carbon sequestration, and convert to CO₂ equivalent.  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes  |
 |  If yes, which emission source sectors does it impact? | Green infrastructure and nature-based solutions  |
@@ -4720,8 +4717,7 @@ It is important to note, that the Municipality of Guimarães for the interventio
 
 This indicator will account for negative emissions through the deployment of a green belt around the surroundings of the city.  |
 |  Calculation | To calculate this indicator is necessary to estimate the amount of carbon dioxide absorbed by the green belt which contributes to carbon sequestration.
-
-It would involve the assessment and calculation the carbon sequestration rate and convert to CO_{2} equivalent.  |
+| It would involve the assessment and calculation the carbon sequestration rate and convert to CO_{2} equivalent.  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes  |
 |  If yes, which emission source sectors does it impact? | Green infrastructure and nature-based solutions  |
@@ -5357,7 +5353,7 @@ C.1.1: Enabling organisational and governance interventions
 |  Intervention name | Description | Responsible entity/ dept./ person | Involved stakeholder | Enabling impact | Co-benefits  |
 | --- | --- | --- | --- | --- | --- |
 |  Data-driven decision-making | Data and technology to monitor and track | Municipality of Guimarães | Municipality of Guimarães | Data-driven decision-making helps achieve climate neutrality by providing the necessary information and insights to inform effective planning and implementation of actions aimed at reducing GHG and promoting sustainability. It is also possible to track progress, adjust strategies as needed, and measure the impact of their efforts. | Sectoral collaboration
-Improved Data Collection and Analysis  |
+| Improved Data Collection and Analysis  |
 |  Operational coordination and management | Engagement, transparency, and accountability | Municipality of Guimarães | Municipality of Guimarães
 Companies
 Citizens
@@ -6007,7 +6003,7 @@ Increased production, and consumption locally grown food | € (3,5) M  |
 Improved social cohesion
 Improved climate issues awareness | € (65) m  |
 |  Green Brigades | Municipality of Guimarães, Landscape Laboratory of Guimarães |   | Enhanced citizen and communities' participation
-Improve awareness and on climate and biodiversity issues | € (500) m  |
+| Improve awareness and on climate and biodiversity issues | € (500) m  |
 |  Desporto Zero | Municipality of Guimarães Landscape Laboratory of Guimarães |   | Enhanced citizen and communities' participation | € (250) m  |
 Guimarães 2030
 
@@ -6018,14 +6014,14 @@ C-3.1: Summary of interventions with cost implication
 |  Action | Responsible entity and person | Start/end date | Impact (GHG reduction in kt tonCO₂e / co-benefit) | Total cost estimated²  |
 | --- | --- | --- | --- | --- |
 |   |  |  | Increase resource efficiency
-Economic benefits |   |
+| Economic benefits |   |
 |  Pegadas Programme | Municipality of Guimarães, Landscape Laboratory of Guimarães |   | Enhanced citizen participation and social capacities
 Increased awareness of social and environmental issues
 Improved access to information, awareness, and behaviour change
 Increase resource efficiency
 Increase biodiversity impacts | € (600) m  |
 |  Poliniza-te | Landscape Laboratory of Guimarães |   | Improve awareness and on climate and biodiversity issues,
-Increase biodiversity impacts | € (100) m  |
+| Increase biodiversity impacts | € (100) m  |
 |  Rural Base Incubator | Municipality of Guimarães Landscape Laboratory of Guimarães |   | Entrepreneurship,
 Increased urban forestry
 Rural adaptation to climate change
@@ -6041,14 +6037,14 @@ C-3.1: Summary of interventions with cost implication
 | --- | --- | --- | --- | --- |
 |   |  |  | development opportunities |   |
 |  Biodiversity Action Plan | Landscape Laboratory of Guimarães |   | Increased ecological awareness
-Increased non-invasive species and pollinators | € (500) m  |
+| Increased non-invasive species and pollinators | € (500) m  |
 |  360.come | Landscape Laboratory of Guimarães |   | Improved awareness on circular economy
 Increased ecological awareness
 Increased deployment of circular material cycles
 Sustainable and resilient food production and supply systems
 Increased production, and consumption locally grown food | € (225) m  |
 |  Sem Invasoras | Landscape Laboratory of Guimarães |   | Increased non-invasive species and pollinators
-Increased ecological awareness | € (125) m  |
+| Increased ecological awareness | € (125) m  |
 |  Citizen engagement Events | Landscape Laboratory of Guimarães |   | Due to the diversity of activities, the co-benefits are expandable to diverse dimensions. Since the social intervention focus on the environmental (and social) thematic: Improved sense of belonging and social inclusion, Economic benefits, | € (750) m  |
 Guimarães 2030 2030 Green Transition
 
@@ -6199,10 +6195,10 @@ Table 3. Outputs from the Ideas Canvas from the waste and circular economy works
 |   | Waste prevention | Food waste | Waste or by-products - circular economy | Recycle more - increase recycling rates  |
 | --- | --- | --- | --- | --- |
 |  Down-to-earth ideas | Reusable shopping bags.
-Bottle refill stations. | Composting.
-Food donation programs. | Community swaps.
-Second-hand and thrift shops. | Education campaigns.
-Plastic recycling initiatives.  |
+| Bottle refill stations. | Composting. |
+| Food donation programs. | Community swaps. |
+| Second-hand and thrift shops. | Education campaigns. |
+| Plastic recycling initiatives.  |
 |  Heavenly ideas | Repair cafés.
 Cultural waste free events.
 Upcycled art installations. | Production of energy using food waste. | Textile recycling bins.
@@ -6577,7 +6573,7 @@ Climate-Neutrality Commitments
 #
 
 |   | EU Mission: Adaptation to Climate Change (2023)
-Tree Billion Trees Pledge (2023)  |
+| Tree Billion Trees Pledge (2023)  |
 | --- | --- |
 
 # Main developments:
