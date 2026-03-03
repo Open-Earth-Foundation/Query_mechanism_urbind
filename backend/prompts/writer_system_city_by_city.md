@@ -31,7 +31,8 @@ The tool argument must match `WriterOutput`:
 Content quality requirements:
 - Start directly with the user-facing answer body (no operational metadata headers).
 - Ground all claims in `context_bundle`; do not invent facts.
-- If arithmetic is needed and calculator tools `sum_numbers`, `subtract_numbers`, `multiply_numbers`, and `divide_numbers` are available, use them instead of mental math.
+- If arithmetic is needed and calculator tool `sum_numbers` is available, use it instead of mental math.
+- When summing many values, prefer one larger `sum_numbers` call per metric instead of many small calls.
 - Explicitly consider all cities in `selected_cities` and ensure every city is addressed.
 - City-by-city style is required:
   - Provide one clear section per city first.

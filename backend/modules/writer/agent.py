@@ -1,11 +1,14 @@
 from __future__ import annotations
 
+from collections.abc import Mapping
 import json
 import logging
 import time
 from pathlib import Path
+from typing import Any
 
 from agents import Agent, function_tool
+from agents.exceptions import MaxTurnsExceeded
 
 from backend.modules.writer.models import WriterOutput
 from backend.modules.writer.utils.markdown_helpers import (
@@ -26,9 +29,6 @@ from backend.services.agents import (
     run_agent_sync,
 )
 from backend.tools.calculator import (
-    divide_numbers,
-    multiply_numbers,
-    subtract_numbers,
     sum_numbers,
 )
 from backend.utils.city_normalization import format_city_display_name
@@ -43,6 +43,16 @@ from backend.utils.retry import (
 
 logger = logging.getLogger(__name__)
 
+NO_TOOL_FALLBACK_PROMPT_APPENDIX = """
+<fallback_mode>
+These fallback instructions override any conflicting tool-call requirements above.
+Tools are unavailable in this fallback pass.
+- Do not call any tools.
+- Return the final answer as structured `WriterOutput` output directly.
+- Do not mention turns, max turns, retries, tool status, finish reasons, or any runtime/debug details.
+</fallback_mode>
+"""
+
 
 def _resolve_writer_prompt_path(analysis_mode: str) -> Path:
     """Resolve writer prompt path for the selected analysis mode."""
@@ -50,6 +60,14 @@ def _resolve_writer_prompt_path(analysis_mode: str) -> Path:
     if analysis_mode == "city_by_city":
         return prompts_dir / "writer_system_city_by_city.md"
     return prompts_dir / "writer_system_aggregate.md"
+
+
+def _build_no_tool_fallback_instructions(base_instructions: str) -> str:
+    """Return no-tool fallback instructions while preserving the base writer prompt."""
+    return (
+        f"{base_instructions.strip()}\n\n"
+        f"{NO_TOOL_FALLBACK_PROMPT_APPENDIX.strip()}\n"
+    )
 
 
 def build_writer_agent(config: AppConfig, api_key: str, analysis_mode: str) -> Agent:
@@ -73,21 +91,6 @@ def build_writer_agent(config: AppConfig, api_key: str, analysis_mode: str) -> A
         """Return arithmetic sum of provided numbers."""
         return sum_numbers(numbers, source="writer")
 
-    @function_tool(name_override="subtract_numbers", strict_mode=True)
-    def subtract_numbers_tool(minuend: float, subtrahend: float) -> float:
-        """Return arithmetic subtraction of two numeric operands."""
-        return subtract_numbers(minuend, subtrahend, source="writer")
-
-    @function_tool(name_override="multiply_numbers", strict_mode=True)
-    def multiply_numbers_tool(numbers: list[float]) -> float:
-        """Return arithmetic product of provided numbers."""
-        return multiply_numbers(numbers, source="writer")
-
-    @function_tool(name_override="divide_numbers", strict_mode=True)
-    def divide_numbers_tool(dividend: float, divisor: float) -> float:
-        """Return arithmetic division of two numeric operands."""
-        return divide_numbers(dividend, divisor, source="writer")
-
     @function_tool
     def submit_writer_output(output: WriterOutput) -> WriterOutput:
         """Return structured writer output unchanged."""
@@ -98,16 +101,116 @@ def build_writer_agent(config: AppConfig, api_key: str, analysis_mode: str) -> A
         instructions=instructions,
         model=model,
         model_settings=settings,
-        tools=[
-            sum_numbers_tool,
-            subtract_numbers_tool,
-            multiply_numbers_tool,
-            divide_numbers_tool,
-            submit_writer_output,
-        ],
+        tools=[sum_numbers_tool, submit_writer_output],
         output_type=WriterOutput,
         tool_use_behavior="run_llm_again",
     )
+
+
+def build_writer_no_tool_agent(
+    config: AppConfig,
+    api_key: str,
+    analysis_mode: str,
+) -> Agent:
+    """Build a write-only fallback writer agent with no tools."""
+    prompt_path = _resolve_writer_prompt_path(analysis_mode)
+    instructions = _build_no_tool_fallback_instructions(load_prompt(prompt_path))
+    model = build_openrouter_model(
+        config.writer.model,
+        api_key,
+        config.openrouter_base_url,
+        client_max_retries=max(config.retry.max_attempts - 1, 0),
+    )
+    settings = build_model_settings(
+        config.writer.temperature,
+        config.writer.max_output_tokens,
+        reasoning_effort=config.writer.reasoning_effort,
+    )
+    return Agent(
+        name="Writer (No-Tool Fallback)",
+        instructions=instructions,
+        model=model,
+        model_settings=settings,
+        output_type=WriterOutput,
+    )
+
+
+def _get_field(target: object, key: str) -> Any:
+    """Return key-like field from dicts/objects."""
+    if isinstance(target, Mapping):
+        return target.get(key)
+    return getattr(target, key, None)
+
+
+def _extract_text_from_output_item(item: object) -> list[str]:
+    """Extract text fragments from one output item payload."""
+    texts: list[str] = []
+    item_type = _get_field(item, "type")
+    if item_type == "message":
+        content = _get_field(item, "content")
+        if isinstance(content, list):
+            for part in content:
+                part_type = _get_field(part, "type")
+                if part_type in {"output_text", "text"}:
+                    text = _get_field(part, "text")
+                    if text:
+                        texts.append(str(text))
+                elif part_type is None:
+                    text = _get_field(part, "text")
+                    if text:
+                        texts.append(str(text))
+        elif content:
+            texts.append(str(content))
+    elif item_type in {"output_text", "text"}:
+        text = _get_field(item, "text")
+        if text:
+            texts.append(str(text))
+    else:
+        text = _get_field(item, "text")
+        if text:
+            texts.append(str(text))
+    return texts
+
+
+def _extract_writer_draft_from_max_turns(exc: MaxTurnsExceeded) -> str:
+    """Extract any best-effort textual draft from max-turn diagnostics."""
+    run_data = getattr(exc, "run_data", None)
+    if run_data is None:
+        return ""
+
+    raw_responses = getattr(run_data, "raw_responses", None)
+    if not isinstance(raw_responses, list):
+        return ""
+
+    fragments: list[str] = []
+    for response in raw_responses:
+        output_items = _get_field(response, "output")
+        if not isinstance(output_items, list):
+            continue
+        for output_item in output_items:
+            fragments.extend(_extract_text_from_output_item(output_item))
+
+    cleaned_fragments = [part.strip() for part in fragments if part and part.strip()]
+    return "\n".join(cleaned_fragments).strip()
+
+
+def _inject_fallback_draft(
+    payload: dict[str, object],
+    fallback_draft: str,
+) -> dict[str, object]:
+    """Attach fallback draft to reconsideration payload for write-only pass."""
+    if not fallback_draft:
+        return payload
+
+    next_payload = dict(payload)
+    reconsideration_payload: dict[str, object] = {}
+    existing_reconsideration = next_payload.get("reconsideration")
+    if isinstance(existing_reconsideration, dict):
+        reconsideration_payload.update(existing_reconsideration)
+    reconsideration_payload.setdefault("previous_answer", fallback_draft)
+    reconsideration_payload["fallback_mode"] = "no_tool_writer"
+    next_payload["reconsideration"] = reconsideration_payload
+    return next_payload
 
 
 def _run_writer_once(
@@ -142,7 +245,10 @@ def write_markdown(
     markdown_bundle = extract_markdown_bundle(context_bundle)
     selected_city_names = extract_selected_city_names(context_bundle, markdown_bundle)
     analysis_mode = resolve_analysis_mode(context_bundle)
-    agent = build_writer_agent(config, api_key, analysis_mode=analysis_mode)
+    primary_agent = build_writer_agent(config, api_key, analysis_mode=analysis_mode)
+    fallback_agent: Agent | None = None
+    use_fallback_writer = False
+    fallback_draft = ""
     retry_settings = RetrySettings.bounded(
         max_attempts=config.retry.max_attempts,
         backoff_base_seconds=config.retry.backoff_base_seconds,
@@ -177,12 +283,48 @@ def write_markdown(
                 )
             payload["reconsideration"] = reconsideration_payload
 
-        output = _run_writer_once(
-            agent=agent,
-            payload=payload,
-            max_turns=config.writer.max_turns,
-            log_llm_payload=log_llm_payload,
+        active_agent = fallback_agent if use_fallback_writer and fallback_agent else primary_agent
+        active_payload = (
+            _inject_fallback_draft(payload, fallback_draft)
+            if use_fallback_writer and fallback_draft
+            else payload
         )
+        try:
+            output = _run_writer_once(
+                agent=active_agent,
+                payload=active_payload,
+                max_turns=config.writer.max_turns,
+                log_llm_payload=log_llm_payload,
+            )
+        except MaxTurnsExceeded as exc:
+            if use_fallback_writer:
+                raise
+            fallback_draft = _extract_writer_draft_from_max_turns(exc)
+            use_fallback_writer = True
+            fallback_agent = build_writer_no_tool_agent(
+                config,
+                api_key,
+                analysis_mode=analysis_mode,
+            )
+            fallback_payload = _inject_fallback_draft(payload, fallback_draft)
+            logger.warning(
+                "WRITER_MAX_TURNS_FALLBACK %s",
+                json.dumps(
+                    {
+                        "run_id": run_id or "unknown",
+                        "attempt": attempt,
+                        "analysis_mode": analysis_mode,
+                        "fallback_has_draft": bool(fallback_draft),
+                    },
+                    ensure_ascii=False,
+                ),
+            )
+            output = _run_writer_once(
+                agent=fallback_agent,
+                payload=fallback_payload,
+                max_turns=config.writer.max_turns,
+                log_llm_payload=log_llm_payload,
+            )
 
         (
             required_city_keys,
@@ -306,4 +448,8 @@ def write_markdown(
     raise RuntimeError("Writer retry loop ended unexpectedly.")
 
 
-__all__ = ["build_writer_agent", "write_markdown"]
+__all__ = [
+    "build_writer_agent",
+    "build_writer_no_tool_agent",
+    "write_markdown",
+]

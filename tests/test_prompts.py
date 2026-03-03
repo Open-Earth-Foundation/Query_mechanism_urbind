@@ -6,9 +6,7 @@ def test_writer_aggregate_prompt_mentions_grouped_requirements() -> None:
     content = prompt_path.read_text(encoding="utf-8")
     assert "`analysis_mode` (`aggregate` | `city_by_city`)" in content
     assert "sum_numbers" in content
-    assert "subtract_numbers" in content
-    assert "multiply_numbers" in content
-    assert "divide_numbers" in content
+    assert "one larger `sum_numbers` call per metric" in content
     assert "Cities considered:" in content
     assert "Do not produce one section/bullet/paragraph per city" in content
     assert "final aggregation overview" in content
@@ -20,8 +18,6 @@ def test_writer_city_by_city_prompt_mentions_per_city_requirements() -> None:
     content = prompt_path.read_text(encoding="utf-8")
     assert "`analysis_mode` (`aggregate` | `city_by_city`)" in content
     assert "sum_numbers" in content
-    assert "subtract_numbers" in content
-    assert "multiply_numbers" in content
-    assert "divide_numbers" in content
+    assert "one larger `sum_numbers` call per metric" in content
     assert "Cities considered:" in content
     assert "Provide one clear section per city first." in content

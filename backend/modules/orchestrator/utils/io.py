@@ -43,6 +43,11 @@ def load_context_bundle(paths: RunPaths) -> dict:
     return json.loads(paths.context_bundle.read_text(encoding="utf-8"))
 
 
+def sanitize_final_content(content: str) -> str:
+    """Normalize final user-facing markdown content."""
+    return content.replace("\r\n", "\n").strip()
+
+
 def write_final_output(
     question: str,
     content: str,
@@ -58,11 +63,11 @@ def write_final_output(
         content: Generated content
         paths: Run paths for output
         run_logger: Logger for recording artifacts
-        finish_reason: Finish reason for the output
+        finish_reason: Finish reason for the output (retained for call compatibility)
     """
+    _ = finish_reason
     question_header = f"# Question\n{question}\n\n"
-    finish_note = f"\n\n---\nFinish reason: {finish_reason}\n"
-    rendered_content = f"{question_header}{content}{finish_note}"
+    rendered_content = f"{question_header}{sanitize_final_content(content)}\n"
     final_path = paths.final_output
     final_path.write_text(rendered_content, encoding="utf-8")
     run_logger.record_artifact("final_output", final_path)
@@ -71,5 +76,6 @@ def write_final_output(
 __all__ = [
     "write_json",
     "load_context_bundle",
+    "sanitize_final_content",
     "write_final_output",
 ]

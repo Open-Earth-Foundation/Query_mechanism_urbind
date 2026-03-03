@@ -21,6 +21,17 @@ class _FakeRunResult:
         self.final_output = final_output
 
 
+class _FakeRunData:
+    def __init__(self, raw_responses: list[object]) -> None:
+        self.raw_responses = raw_responses
+
+
+class _FakeMaxTurnsExceeded(Exception):
+    def __init__(self, message: str, run_data: object | None = None) -> None:
+        super().__init__(message)
+        self.run_data = run_data
+
+
 def _extract_coverage_payloads(records: list[logging.LogRecord]) -> list[dict[str, object]]:
     """Parse WRITER_CITATION_COVERAGE payloads from captured logs."""
     payloads: list[dict[str, object]] = []
@@ -525,3 +536,143 @@ def test_writer_replaces_existing_model_footer_with_canonical_footer(
     assert "## Cities considered" in output.content
     assert "- Munich [ref_1]" not in output.content
     assert "- Berlin [ref_2]" not in output.content
+
+
+def test_writer_switches_to_no_tool_fallback_after_max_turns(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+    caplog: pytest.LogCaptureFixture,
+) -> None:
+    config = _build_test_config(tmp_path)
+    context_bundle: dict[str, object] = {
+        "markdown": {
+            "excerpt_count": 1,
+            "selected_city_names": ["Munich"],
+            "excerpts": [
+                {
+                    "ref_id": "ref_1",
+                    "city_name": "Munich",
+                    "quote": "Munich evidence.",
+                    "partial_answer": "Munich evidence.",
+                }
+            ],
+        }
+    }
+
+    primary_agent = object()
+    fallback_agent = object()
+    captured_runs: list[tuple[object, dict[str, object]]] = []
+
+    monkeypatch.setattr(writer_agent, "MaxTurnsExceeded", _FakeMaxTurnsExceeded)
+    monkeypatch.setattr(
+        writer_agent,
+        "build_writer_agent",
+        lambda *_args, **_kwargs: primary_agent,
+    )
+    monkeypatch.setattr(
+        writer_agent,
+        "build_writer_no_tool_agent",
+        lambda *_args, **_kwargs: fallback_agent,
+    )
+
+    def _fake_run_agent_sync(
+        agent: object,
+        input_text: str,
+        log_llm_payload: bool,
+        **_kwargs: object,
+    ) -> _FakeRunResult:
+        del log_llm_payload
+        payload = json.loads(input_text)
+        captured_runs.append((agent, payload))
+        if len(captured_runs) == 1:
+            raise _FakeMaxTurnsExceeded(
+                "Max turns (10) exceeded",
+                run_data=_FakeRunData(
+                    raw_responses=[
+                        {
+                            "output": [
+                                {"type": "output_text", "text": "Primary draft summary [ref_1]"}
+                            ]
+                        }
+                    ]
+                ),
+            )
+        return _FakeRunResult(WriterOutput(content="Fallback final answer [ref_1]"))
+
+    monkeypatch.setattr(writer_agent, "run_agent_sync", _fake_run_agent_sync)
+    caplog.set_level(logging.WARNING, logger=writer_agent.__name__)
+
+    output = writer_agent.write_markdown(
+        question="Summarize selected cities.",
+        context_bundle=context_bundle,
+        config=config,
+        api_key="test-key",
+        log_llm_payload=False,
+        run_id="run-fallback-success",
+    )
+
+    assert len(captured_runs) == 2
+    assert captured_runs[0][0] is primary_agent
+    assert captured_runs[1][0] is fallback_agent
+    reconsideration = captured_runs[1][1].get("reconsideration")
+    assert isinstance(reconsideration, dict)
+    assert reconsideration.get("previous_answer") == "Primary draft summary [ref_1]"
+    assert output.content.startswith("Fallback final answer [ref_1]")
+    assert any(
+        "WRITER_MAX_TURNS_FALLBACK" in record.message for record in caplog.records
+    )
+
+
+def test_writer_raises_when_no_tool_fallback_also_hits_max_turns(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    config = _build_test_config(tmp_path)
+    context_bundle: dict[str, object] = {
+        "markdown": {
+            "excerpt_count": 1,
+            "selected_city_names": ["Munich"],
+            "excerpts": [
+                {
+                    "ref_id": "ref_1",
+                    "city_name": "Munich",
+                    "quote": "Munich evidence.",
+                    "partial_answer": "Munich evidence.",
+                }
+            ],
+        }
+    }
+
+    monkeypatch.setattr(writer_agent, "MaxTurnsExceeded", _FakeMaxTurnsExceeded)
+    monkeypatch.setattr(writer_agent, "build_writer_agent", lambda *_args, **_kwargs: object())
+    monkeypatch.setattr(
+        writer_agent,
+        "build_writer_no_tool_agent",
+        lambda *_args, **_kwargs: object(),
+    )
+
+    call_count = {"count": 0}
+
+    def _always_max_turns(
+        _agent: object,
+        _input_text: str,
+        log_llm_payload: bool,
+        **_kwargs: object,
+    ) -> _FakeRunResult:
+        del log_llm_payload
+        call_count["count"] += 1
+        raise _FakeMaxTurnsExceeded("Max turns (10) exceeded")
+
+    monkeypatch.setattr(writer_agent, "run_agent_sync", _always_max_turns)
+
+    with pytest.raises(_FakeMaxTurnsExceeded):
+        writer_agent.write_markdown(
+            question="Summarize selected cities.",
+            context_bundle=context_bundle,
+            config=config,
+            api_key="test-key",
+            log_llm_payload=False,
+            run_id="run-fallback-failed",
+        )
+
+    assert call_count["count"] == 2
