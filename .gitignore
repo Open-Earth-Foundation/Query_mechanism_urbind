@@ -209,3 +209,4 @@ __marimo__/
 frontend/.next
 frontend/node_modules
 llm_config.benchmark_germany.yaml
+.vscode/settings.json

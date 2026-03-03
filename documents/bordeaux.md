@@ -136,7 +136,7 @@ Climate Neutrality Action Plan
 | --- | --- | --- | --- |
 |  Sectors | Scope 1 | Scope 2 | Scope 3  |
 |  Stationary energy | Included | Included | Optional information  |
-|   |  Emissions from stationary combustion in boilers, turbines, engines and similar installations in residential, commercial and institutional buildings, manufacturing industries and agricultural activities. Fugitive emissions from natural gas grid | Emissions associated with electricity and generation processes and district heating whose consumption takes place in Bordeaux Métropole | indirect emissions associated to energy consumption including grid losses  |
+|   |  Emissions from stationary combustion in boilers, turbines, engines and similar installations in residential, commercial and institutional buildings, manufacturing industries and agricultural activities. Fugitives missions from natural gas grid | Emissions associated with electricity and generation processes and district heating whose consumption takes place in Bordeaux Métropole | indirect emissions associated to energy consumption including grid losses  |
 |  Transport | Included | Included | Optional information  |
 |   |  Emissions related to combustion in the different modes of road, rail, air and waterborne transport | Emissions associated with electricity and generation processes whose consumption takes place in Bordeaux Métropole | Emissions related to transport of the inhabitants to their final destination, the visitors and transport of goods imported/exported from Bordeaux Métropole  |
 |  Waste/waste water | Included |  | Included  |
@@ -147,7 +147,7 @@ Climate Neutrality Action Plan
 |   |  Direct emissions from land and livestock, including sink |  |   |
 |  Other |  |  | Emissions from Construction materials, food and consumer goods imported by Bordeaux Metropole  |
 |  Carbon sink | Carbon sequestration from forest and bocage hedges. Carbon emissions from land use |  | Carbon sequestration from imported wood products  |
-|  Geographical boundary | Same as city administrative boundary | Smaller than city administrative boundary | Larger than city administrative boundary<br># |
+|  Geographical boundary | Same as city administrative boundary | Smaller than city administrative boundary | Larger than city administrative boundary |
 |  (Tick correct option) | X |  |   |
 |  Specify excluded/additional areas |  |  |   |
 
@@ -239,7 +239,8 @@ Buildings are the main consumers of energy (65%). Residential buildings first, t
 |  LPG | 0,23 | 0,01 | 0,00 | - | - | -  |
 |  Fuel oil | 0,27 | 0,00 | 0,00 | - | - | -  |
 |  Diesel | 0,25 | 0,00 | 0,00 | - | - | -  |
-|  Gasoline | 0,25 | 0,00 | 0,00 | - | - | -<br>A-1.3: GHG emissions by source sectors |
+|  Gasoline | 0,25 | 0,00 | 0,00 | - | - | -  |
+A-1.3: GHG emissions by source sectors
 |  Base year |   | | | | | |
 |  Unit | ktCO2e  | | | | | |
 |   | Scope 1 | Scope 2 | Scope 3 | Total  | | |
@@ -250,7 +251,8 @@ Buildings are the main consumers of energy (65%). Residential buildings first, t
 |  Agricultural, Forestry and Land Use (AFOLU) | Sources (positive emissions) | 6 ktCO2e | 0 ktCO2e | 6 ktCO2e  | | |
 |   |  Sinks (negative emissions) | -37 ktCO2e |  |   | | |
 |  Other scope 3 |   | 0 ktCO2e | 0 ktCO2e | 3 514 ktCO2e  | | |
-|  Total |  | 2 852 ktCO2e | 232 ktCO2e | 5 195 ktCO2e<br>A-1.3: GHG emissions by source sectors | | |
+|  Total |  | 2 852 ktCO2e | 232 ktCO2e | 5 195 ktCO2e  | | |
+A-1.3: GHG emissions by source sectors
 |  Base year |   |   |   |   |   | |
 |  Unit |   | ktCO2e  |   |   |   | |
 |   |   | Scope 1 | Scope 2 | Scope 3 | Total  | |
@@ -261,7 +263,8 @@ Buildings are the main consumers of energy (65%). Residential buildings first, t
 |  Agricultural, Forestry and Land Use (AFOLU) | Sources (positive emissions) | 6 ktCO2e | 0 ktCO2e | 0 ktCO2e | 6 ktCO2e  | |
 |   |  Sinks (negative emissions) | -37 ktCO2e |  |  |   | |
 |  Other scope 3 |   | 0 ktCO2e | 0 ktCO2e | 3 514 ktCO2e | 3 514 ktCO2e  | |
-|  Total |  | 2 852 ktCO2e | 232 ktCO2e | 5 195 ktCO2e | 8 279 ktCO2e<br>A-1.3a: GHG Emissions by Source Sector - Baseline Year | |
+|  Total |  | 2 852 ktCO2e | 232 ktCO2e | 5 195 ktCO2e | 8 279 ktCO2e  | |
+A-1.3a: GHG Emissions by Source Sector - Baseline Year
 |  Base Year | 2019  |   |   |   |   | |
 |  Unit | t CO₂ equivalent/year  |   |   |   |   | |
 |   | Scope 1 | Scope 2 | Scope 3 | Total | % of Total  | |
@@ -271,7 +274,8 @@ Buildings are the main consumers of energy (65%). Residential buildings first, t
 |  Waste* |  |  | 97700 | 97700 | 3%  | |
 |  Other (incl. IPPU & AFOLU) | 423559 |  |  | 423559 | 14%  | |
 |  Total | 2879121 | 101179 | 97700 | 3078000 | 100%  | |
-|  * Includes Scope 1 Waste emissions (produced and processed in the city) and Scope 3 (produced by the city but processed outside the city border) - solid waste only; wastewater falls under "Other" sector  |   |   |   |   |<br>A-1.4: Activity by source sectors. | |
+|  * Includes Scope 1 Waste emissions (produced and processed in the city) and Scope 3 (produced by the city but processed outside the city border) - solid waste only; wastewater falls under "Other" sector  |   |   |   |   |   | |
+A-1.4: Activity by source sectors.
 |  Base year: 2019  |   |   |   | | | |
 |   | Scope 1 | Scope 2 | Scope 3  | | | |
 |  Sector: Buildings | 1 044 ktCO2e | 229 ktCO2e | 251 ktCO2e  | | | |
@@ -295,7 +299,7 @@ Buildings are the main consumers of energy (65%). Residential buildings first, t
 |  Sink - Forestry and agriculture | -32 ktCO2e |  |   | | | |
 |  Sink - Wood Products | -19 ktCO2e |  |   | | | |
 |  Sector: Other scope 3 | 0 ktCO2e | 0 ktCO2e | 3 514 ktCO2e  | | | |
-|  Construction Materials |  |  | 515 ktCO2e<br># | | | |
+|  Construction Materials |  |  | 515 ktCO2e  | | | |
 |  Food |  |  | 1 789 ktCO2e  | | | |
 |  Consumer goods |  |  | 1 210 ktCO2e  | | | |
 
@@ -735,7 +739,7 @@ Climate Neutrality Action Plan
 |  B-2.2: Individual action outlines  |   |   |
 |  Action outline | Action name | Support teleworking and teleservices  |
 |   |  Action type | Other interventions  |
-|   |  Action description | Remote working is a decision taken by the employee and employer, who formalize its implementation through a collective agreement or a charter drawn up by the employer, the local authority can play an important role in organizing teleworking. The local authority can play an important role in organizing telecommuting and leading specific actions to develop the reception of teleworkers in local workplaces workplaces, in order to create a balanced dynamic across the region.  |
+|   |  Action description | Remote working is a decision taken by the employee and employer, who formalize its implementation through a collective agreement or a charter drawn up by the employer, the local authority can play an important role in organizing teleworking. The local authority can play an important role in organizing telecommuting and leading specific actions to develop the reception of teleworkers in local workplaces, in order to create a balanced dynamic across the region.  |
 |  Reference to impact pathway | Field of action | Sector: Mobility and transport<br>Subsector: Reducing demand for mobility |
 |   |  Systemic lever | Governance and policy  |
 |   |  Outcome (according to module B-1.1) | Generalise remote work regular for eligible employees  |
@@ -884,7 +888,7 @@ Climate Neutrality Action Plan
 |  B-2.2: Individual action outlines  |   |   |
 |  Action outline | Action name | Improv the energy and environmental performance of new buildings  |
 |   |  Action type | Sector: Built environment  |
-|   |  Action description | Identify available space in the area: vacant offices, second homes, underutilized premises.<br>Systematically question the act of building by imposing this principle, derived from the Bordeaux “frugal building label”. Set an example in the optimization and sharing of space in development projects and public buildings.<br>Promoting sustainable, health-friendly urban planning. The objective defined as part of the Climate Plan strategy is to reduce new construction by 40%, i.e. from 900,000 m² of new buildings in 2019 to 540,000 m². This would contribute to to an 81% reduction in the building sector's carbon footprint (GHG emissions over the entire life cycle of buildings) in the city by this date. |
+|   |  Action description | Identify available space in the area: vacant offices, second homes, underutilized premises.<br>Systematically question the act of building by imposing this principle, derived from the Bordeaux “frugal building label”. Set an example in the optimization and sharing of space in development projects and public buildings.<br>Promoting sustainable, health-friendly urban planning. The objective defined as part of the Climate Plan strategy is to reduce new construction by 40%, i.e. from 900,000 m² of new buildings in 2019 to 540,000 m². This would contribute to an 81% reduction in the building sector's carbon footprint (GHG emissions over the entire life cycle of buildings) in the city by this date. |
 |  Reference to impact pathway | Field of action | Sector: Built environment  |
 |   |  Systemic lever | Governance and policy  |
 |   |  Outcome (according to module B-1.1) | Widespread use of low-carbon construction methods in all new buildings<br>A large proportion of vacant and under-occupied spaces are being put to good use, drastically reducing the need for new construction. Households and businesses are adopting new ways of living and working by sharing space. |
