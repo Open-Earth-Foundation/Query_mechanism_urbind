@@ -5,7 +5,6 @@ Our city tomorrow
 # Climate City Contract
 
 Action plan
-Our city of tomorrow: City Climate Contract. Action plan.
 
 # Table of contents
 
@@ -47,9 +46,6 @@ B-1.3.1 Accelerating industry sustainability: energy efficiency and electrificat
 B-1.3.2 Working on the H2 economy ... 67
 B-1.3.3 Working on CCS in the city ... 70
 B-1.3.4 Working on the sustainable energy port ... 71
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 B-1.3.5 Working towards a sustainable digital sector 73
 
@@ -106,9 +102,6 @@ B-2.4.8 Towards a Sustainable and Integrated Water System 143
 
 B-5 The transition to a sustainable municipal organisation 147
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 B-5.1 Maximum energy reduction and maximum energy generation 148
 B-5.1.1 Buildings: Maximum energy reduction and maximum energy generation 149
 B-5.1.2 Public space: maximum energy reduction and maximum energy generation 150
@@ -132,9 +125,6 @@ Annexes 174
 Annex 1: technical Q&amp;A JRC 174
 Colophon 175
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 # Abbreviations
 
 Definitions of abbreviations used are
@@ -152,9 +142,6 @@ DMI Direct Material Input
 DMC Direct Material Consumption
 
 RMI Raw Material Input
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 # Introduction
 
@@ -176,9 +163,6 @@ Amsterdam has direct influence on 42% of total emissions (in scope 1 and 2) in A
 
 Our city is not taking on this mission alone, but together with 111 other mission cities across Europe with their own strengths and limitations, the central government, the EU and perhaps most importantly: with partners from our city who want to contribute to our city of tomorrow. These all have their own roles and challenges, but do see the need to work on the transitions described here. We proactively approached some of these partners to describe their roles in so-called letters of support. The other partners are always welcome. These letters demonstrate broad-based support for the ecological transition in Amsterdam.
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 In front of you is the Urban Climate Contract, a (non-legally binding) document in which the City of Amsterdam reports to the European Commission what is happening in our city to become more sustainable and how the mission is being implemented at the local level. For the European Commission, this document is an important tool to see how European policies are implemented locally, which is why it must meet some formal requirements. In addition, the contract is iterative, and must be updated every 2 years for the purpose of reporting progress to the European Commission. This will be done through Amsterdam's Integrated Sustainability Monitor. Based on the measurements from the monitor, the priorities and targets from the climate contract can be updated or adjusted.
 
 Our city of tomorrow: City Climate Contract consists of three elements:
@@ -197,9 +181,6 @@ About four times the CO2 emissions from Amsterdam's energy consumption are emitt
 
 Amsterdam has therefore chosen to include scope 3 in its climate-neutral city mission. We do this based on the conviction that we must take responsibility for what we do here within the municipal boundaries, which causes ecological and social problems elsewhere in the world. Indeed, the consequences of our actions on the earth and humanity are not limited to municipal boundaries. By including scope 3 emissions and our circular policy in our climate-neutral city mission, we recognise that other places, people and animals experience costs due to Amsterdam's consumption and lifestyle. In addition, it is an intervention that allows us to look at the climate transition with a systems perspective. After all, it does not matter to the earth where CO2 is emitted.
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 However, including scope 3 emissions is not easy. It is difficult to know for each product how many emissions and damages occur where, and to what extent Amsterdam is responsible for them. Therefore, we do not yet introduce a target on CO2 reduction in our chain, but commit to accelerate sustainability to the maximum.
 
 That maximum acceleration is also the commitment in terms of CO2 emissions from energy consumption. With the introduction of the coalition agreement, the City of Amsterdam has set a 60% CO2 reduction target for the city by 2030, higher than the 55% stipulated by Dutch and European climate laws and our bid when we applied for the mission. At the same time, for us, a sustainable city is more than just CO2 reduction. Indeed, planetary boundaries are crossed in several ways at once, and these interact with each other. We do not want to lose sight of this, which is why we adopt a broader interpretation of sustainability in this plan, with a focus on the CO2 reduction task. So we are more ambitious than before, and also more ambitious than what is stipulated in law for the country and the EU. CE Delft research shows that achieving 60% reduction by 2030 requires huge efforts from Amsterdam. While we would like to increase the ambition of a 60% reduction by 2030, that would not reflect reality.
@@ -208,7 +189,6 @@ The entire college, as described in the council information letter Our city of t
 
 Below is a summary of the most significant targets set by the municipality for the city:
 
-0
 Fully emission-free traffic within built-up areas
 Fully sustainable own organisation
 80 percent of electricity used by households generated from solar and wind power
@@ -216,11 +196,9 @@ Fully sustainable own organisation
 60 percent reduction in CO2 emissions within municipal borders compared to 1990
 From 40% plant protein to 60% plant protein in our diets
 
-0
 Fully natural gas-free in the built environment
 All suitable roofs utilised for solar power generation
 
-0
 Fully prepared for climate change ('climate adaptive')
 100% CO2 reduction
 100% less primary abiotic material use
@@ -229,9 +207,6 @@ The intention of the mission is to accelerate the climate transition. Our city i
 
 To get these preconditions right, cooperation between layers of government, cities, and actors within cities must improve. That way, we can remove barriers to acceleration more effectively and innovate. The joint effort of all European cities in the mission clarifies what the barriers to acceleration are and what solutions are needed for this at the European, national and local levels.
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 Cooperation between governments and other actors at different levels of scale is thus preconditional. This is shaped in part by the National Cooperation Structure (NSS). In addition, according to the European commission, the mission label given to cities for the climate contract will help finalise the financial framework for our sustainable transitions and promote cooperation there. Through this enhanced collaboration and pooled innovation and scale-up power, we aim to achieve accelerated implementation of our current strategies. Both in Amsterdam and elsewhere. In addition, we can share the lessons we have learned with others, which may help to scale up in other municipalities later.
 
 Our city is not taking on this mission alone, but together with 111 other mission cities across Europe with their own strengths and limitations, the central government, the EU and perhaps most importantly: with partners from our city who want to contribute to our city of tomorrow. These all have their own roles, challenges and needs, and all have a role to play in our transition. There is no doubt about the need to work on the transitions in Amsterdam described in the commitment document.
@@ -239,9 +214,6 @@ Our city is not taking on this mission alone, but together with 111 other missio
 In front of you is the City Climate Contract Action plan, a (non-legally binding) document in which the City of Amsterdam reports to the European Commission what is happening in our city to become more sustainable and how the European climate neutral and smart cities mission is being implemented at the local level. For the European Commission, this contract is an important tool to see how European policies are implemented locally, which is why it must meet some formal requirements. In addition, the contract is iterative, and must be updated at least every 2 years for the purpose of reporting progress to the European Commission. This will be done through Amsterdam's Integrated Sustainability Monitor, which will show how we are doing in achieving our strategic and operational goals. Based on things like the measurements from the monitor, the priorities and targets from the climate contract can be updated or additional actions can be included. This way, besides being a product within the climate neutral cities mission, the contract also helps inform internally and externally about the ongoing sustainability policy, as well as its opportunities and gaps.
 
 This part of the climate contract is the Action plan, which provides an overview of the current status of Amsterdam's climate policy. The municipality recently released Our city of tomorrow, in which the entire municipal executive expressed and established support for the ecological transition. In this letter, the municipality also announced additional actions; the Amsterdam approach.
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 # Part A – The state of climate action in Amsterdam
 
@@ -261,9 +233,6 @@ As such, the Roadmap was the start of a collaborative process within Amsterdam, 
 Figure 1: Amsterdam's geographical boundaries, its 9 city districts and 110 neighbourhoods.
 
 Amsterdam covers a land area of 243.65 km² of which 23% is surface water and 77% is land. The municipality has a population of 918,117 distributed across: 518 neighbourhoods, 110 communities, 25 areas or 9 city districts. However, this information is for the situation in 2024, after the expansion of the City of Amsterdam with Weesp. The estimate still assumes the old municipal boundaries and
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 therefore does not include Weesp. The latest post-expansion information is not yet available for the first version of the climate contract.
 
@@ -287,9 +256,6 @@ Other greenhouse gases are converted to CO2 equivalents using the Global Warming
 
 All categories that are not in the scope according to the Climate Act are not included in analysis (both for CO2 and other greenhouse gases). Table 1 lists which emissions are not included in the calculations. The emissions that are included are reflected in Table 2.
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 Tabel 1: Categories not included in CO2 calculations
 
 |  Category | CO2 emission in Amsterdam in 2017 | Datasources  |
@@ -311,37 +277,16 @@ We also do not count CO2 emissions caused by generating electricity and heat, as
 
 CO2 emissions are calculated per transition pathway. Following the national example, this involves the following transition pathways: Built environment, Mobility, Electricity, and Port &amp; Industry. For electricity, we look at all electricity consumption through the low-, medium-, and high-voltage grid. Electricity consumption generated behind the meter (such as by solar panels) is not included in electricity consumption. This has no impact on total CO2 emissions, as electricity consumption from solar panels does not cause CO2 emissions. For built environment and port &amp; industry, we look at heat consumption and natural gas consumption. This includes natural gas burnt in individual boilers, natural gas burnt in collection heat plants, heat from the AEB and heat from the Diemen power plant. For mobility, we look at model-based data on emissions from fuel consumption. For all paths except electricity, we also look at emissions from other greenhouse gases. Table 2 shows which data was used for which transition pathway. Data on heat consumption we receive from Vattenfall and is not public, the other data is public data.
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 Table 2: Overview of data sources by transition pathway
 
 |  Transition path | Greenhouse gas | Data | Data sources  |
 | --- | --- | --- | --- |
 |  Electricity | CO₂ | Data on indirect emissions from electricity consumption | National Climate Monitor  |
-|  Built environment | CO₂ | -Data on direct emissions from natural gas consumption (for homes temperature corrected*)
-Data on heat consumption (AEB and Diemenplant)
-Heat emission factors
-Data on direct emissions from natural gas consumption of the VU and the AMC | -National Climate Monitor
-Vattenfall (non public data)
-Vattenfall
-Emission Authority  |
+|  Built environment | CO₂ | -Data on direct emissions from natural gas consumption (for homes temperature corrected*) Data on heat consumption (AEB and Diemenplant) Heat emission factors Data on direct emissions from natural gas consumption of the VU and the AMC | -National Climate Monitor Vattenfall (non public data) Vattenfall Emission Authority  |
 |   |  Other greenhouse gases | Model-based data on all other greenhouse gas emissions | Emission registration  |
-|  Harbour and industry | CO₂ | -Emissions from waste incineration
-Share of biogenic/non-biogenic in waste incineration
-Data on direct emissions from natural gas consumption industry
-Data on heat consumption industry
-Heat emission factors
-Model-based data on direct emissions from fuel consumption shipping | -Emission registration
-RIVM
-National Climate Monitor
-Vattenfall (non public data)
-Vattenfall
-Emission registration  |
+|  Harbour and industry | CO₂ | -Emissions from waste incineration Share of biogenic/non-biogenic in waste incineration Data on direct emissions from natural gas consumption industry Data on heat consumption industry Heat emission factors Model-based data on direct emissions from fuel consumption shipping | -Emission registration RIVM National Climate Monitor Vattenfall (non public data) Vattenfall Emission registration  |
 |   |  Other greenhouse gases | Model-based data on all other greenhouse gas emissions | Emission registration  |
-|  Mobility | CO₂ | -Model-based data on direct emissions from fuel consumption highways**
-Model-based data on direct emissions from fuel consumption mobile equipment | -Emission registration
-Emission registration  |
+|  Mobility | CO₂ | -Model-based data on direct emissions from fuel consumption highways** Model-based data on direct emissions from fuel consumption mobile equipment | -Emission registration Emission registration  |
 |   |  CO₂ | Data on direct emissions from fuel consumption of road traffic inside and outside built-up areas** | -Municipality of Amsterdam / TNO  |
 |   |  Other greenhouse gases | Model-based data on all other greenhouse gas emissions | Emission registration  |
 
@@ -353,9 +298,6 @@ Emission registration  |
 The availability of data on CO2 emissions is about one to two years behind. Figures published earlier are often still preliminary. For calculations of Amsterdam emissions, we rely on the aforementioned sources. The Climate Monitor publishes preliminary figures on CO2 emissions for the previous year in November/December, and they also publish final figures for the previous year around that time. So in December 2021, for example, the final figures for 2019 will be known, as well as provisional emissions figures for 2020. The Emissions Registry will release municipal-level figures for 2019 and preliminary national figures for 2020 in August 2021.
 
 To still calculate more up-to-date figures, we use preliminary figures from the Climate Monitor. For emissions of other greenhouse gases and fuel consumption, data from the Emissions Registry, we use the (preliminary) national trend per emission category to estimate CO2 emissions for Amsterdam. For emissions from the AEB and from traffic and transport, we use sources other than the Emissions Registry. To determine emissions from traffic and transport inside and outside built-up areas, we use municipal data (emissions calculated by TNO); the AEB's emissions we get directly from the AEB. To
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 determine the emissions from AEB's non-biogenic waste incineration, we use the proportion of biogenic/non-biogenic as published by RIVM. This is not yet known for the past year and we are therefore using the data from the previous year.
 
@@ -386,9 +328,6 @@ Impact of measures in Amsterdam: Reducing emissions through actions and measures
 Substitution effects: Changes in energy use that lead to more or less emissions (e.g. the shift to electric cars instead of conventional cars, or heating houses with electricity instead of natural gas).
 Growth of the city: Additional emissions caused by new homes, buildings, residents and visitors.
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 Of the total estimated reduction of 3,010 ktonnes in 2030, 1,830 ktonnes (61%) is a result of autonomous developments/domestic policy, mainly making electricity generation greener in the Netherlands. In addition, 1,350 ktonnes of reduction (45%) is due to measures within Amsterdam itself. The measures with the greatest reduction effect are the phasing out of natural gas in the city, environmental zones for motorised transport and CO2 capture at the AEB waste plant.
 
 The city's growth is expected to increase emissions by 170 ktonnes, due to additional electricity consumption from new housing, offices and other economic activity. In the calculation, Amsterdam's solar and wind energy efforts are part of the autonomous development because they contribute to lowering the national emission factor for electricity, leading to lower CO2 emissions per kilowatt-hour generated.
@@ -407,9 +346,6 @@ The Amsterdam Climate Neutral 2050 Roadmap focuses on scope 1 and scope 2 greenh
 ## Scope 1: Direct CO2 emissions
 
 Scope 1 emissions are the direct CO2 emissions within the municipal boundaries of Amsterdam. Examples include factory emissions, the combustion of natural gas in a boiler or the combustion of petrol in a car. This does not include emissions from electricity and heat generation, as some of the energy generated is consumed outside Amsterdam.
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 # Scope 2: Indirect CO2 emissions
 
@@ -434,9 +370,6 @@ The Amsterdam City Climate Contract is a consolidation of all ongoing policies i
 
 Figure 4 shows CO2 emissions for 2010 through 2021. In 2020, total CO2 emissions will be 3,920 ktonnes, a decrease of about  $12\%$  compared to 2019. Emissions are lower than estimated by CE Delft in 2021. Indirect CO2 emissions from electricity consumption decreased the most, followed by activities in the mobility sector. Emissions also fell slightly for the built environment and mobility. After declining in 2019, emissions from port and industrial activities increased again in 2020. The higher emissions from sectors in port and industry compared to 2019 are largely due to AEB being (partially) out of operation for several months in 2019. The resumed activities in 2020 contributed to AEB's CO2 emissions increasing to 436 ktonnes of CO2 in 2020 from 362 ktonnes in 2019 (+74 ktonnes). The increase in CO2 emissions within the port and industry transition pathway was somewhat mitigated by
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 less natural gas consumption in 2020 (vs. 2019) by the construction industry covered by this transition pathway²
 
 Since 2010, CO2 emissions have been decreasing steadily, with the exception of 2021; on average, emissions are decreasing by about 135 ktonnes annually. That CO2 emissions increased in 2021 is because the sharp fall in 2020 was caused by the temporary reduction of the corona crisis.
@@ -444,10 +377,7 @@ Since 2010, CO2 emissions have been decreasing steadily, with the exception of 2
 ![img-0.jpeg](img-0.jpeg)
 Figure 4: CO2 emissions in ktonnes/year
 
-September 2024
-
 ² Research and Statistics memo June 2023: CO2 emissions in 2020, 2021 and 2022
-Our city of tomorrow: City Climate Contract. Action plan.
 
 The figure below presents how these emissions can be subdivided among the four transition pathways in 2019 (the reference year for the Amsterdam Climate Neutral 2050 Roadmap), Built Environment (scope 1), Mobility (scope 1), Electricity (scope 2), and Port and Industry (Scope 1 and 2), respectively.
 
@@ -458,9 +388,6 @@ Figure 2: relative CO2 emissions per transition pathway
 Figure 6: absolute CO2 emissions per transition pathway
 
 Emissions from electricity consumption are  $25\%$  lower in 2020 compared to 2019 (-410 ktonnes). As in 2019, for electricity, the CO2 emission factor decreased in 2020 (from 0.37 in 2019 kg/kWh to 0.29
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 kg/kWh in 2020³). The CO2 emission factor is a factor used to calculate emissions from electricity generation. The decrease in the CO2 emission factor is mainly due to the decreased production of electricity from coal and is reinforced by an increase in renewable electricity production. Electricity demand also decreased due to the corona crisis, especially in the commercial services sector. The fall in CO2 emissions from mobility is largely due to a decrease in traffic on motorways and Amsterdam roads. Again, this cannot be separated from the corona crisis. People used the car less, so there were fewer emissions from fuel consumption⁴.
 
@@ -478,9 +405,6 @@ This means that about 80% of Amsterdam's climate footprint takes place elsewhere
 The flow chart in the Circular Economy Monitor dashboard is intended to provide a global overview of material flows in Amsterdam. It shows where different types of materials are in the economy. It shows the interrelationships between different parts of the economy, such as imports versus extraction, and exports versus own consumption. Nationwide, a similar visualisation is used to map material flows. While the Roadmap focuses on direct emissions within Amsterdam, it also recognises the importance of addressing the much larger indirect Scope 3 emissions in the production chains. For now, these emissions remain linked to economic growth. By making material flows transparent, Amsterdam can develop more effective policies to address this Scope 3 footprint and thus make a greater contribution to reducing the climate impact of consumption in the city.
 
 Amsterdam wants to be a thriving city for all its inhabitants, within the confines of the planet. This requires a major change in Amsterdam's economy and consumption. To achieve this, a target has been set to halve the consumption of new raw materials by 2030 and be fully circular by 2050. Circular material consumption is still difficult to measure. This monitor therefore shows the general material
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 consumption in Amsterdam and what its effects are on the environment, especially elsewhere in the world.
 
@@ -502,9 +426,6 @@ Amsterdam recognises that a thriving and sustainable city can only be achieved t
 
 The aim of the Action plan is to accelerate what is already happening and identify new opportunities to accelerate even further towards a climate-neutral Amsterdam. This chapter presents an overview of the policy context in which the city operates, from the international to the local level. The relationship with important and relevant policies on a local, regional, national and international scale is covered, as well as how they interact with our actions and vice versa.
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 # A-2.1 Analysis of current policy
 
 ![img-0.jpeg](img-0.jpeg)
@@ -519,9 +440,6 @@ The realisation that we cannot do it alone is not just present locally, and resu
 The City of Amsterdam is taking its responsibility. We want Amsterdam to become a green, healthy, prosperous and future-proof city, where everyone can take maximum advantage of the opportunities offered by this social transition.
 
 For example, Amsterdam has embraced the UN's Sustainable Development Goals (SDGs), which link 17 global challenges with the aim of eradicating poverty, inequality and climate change. Amsterdam's vision of sustainable urban development is inspired by the concept of the 'doughnut economy' (Kate
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 Raworth, Doughnut Economics, 2017). According to this model, an economy can only be sustainable and prosperous if social goals are achieved without exceeding the ecological ceiling.
 
@@ -553,7 +471,6 @@ To realise these ambitions, the city works closely with local stakeholders such 
 
 Through these diverse initiatives, strategies and partnerships, Amsterdam is taking important steps to address the challenges of climate change and realise the ambitions for our city of tomorrow.
 
-September 2024
 Local policy and strategy up to 2022
 
 |  Type | Name & title | Year of publication | Emission domain(s) | Description | Relevance to/impact on local action | Stakeholders | Required action | Link  |
@@ -562,7 +479,6 @@ Local policy and strategy up to 2022
 |  Implementatio n Agenda | Implementation in Agenda 2020 - 2030: Towards a Sustainable Organisation | 2020 | All | The municipal organisation wants to contribute to making Amsterdam more sustainable through its own actions. This means that we apply sustainable solutions in our own operations, our own accommodation and in procurement and tendering processes. This agenda provides a picture of the level of sustainability of the municipal organisation as well as the task ahead to become a climate-neutral, circular and climate-resilient organisation. | Highly relevant, direct impact | City of Amsterdam |  | Implementation Agenda 2020 - 2030: Towards a Sustainable Organisation  |
 |  Vision document | Heat Transition Vision | 2020 | Energy transition | Amsterdam is transitioning away from natural gas. In this heat transition vision, we establish a timeline to outline the sequence in which neighbourhoods or buildings will move off natural gas and gradually move to sustainable solutions. This shows what we expect a natural gas-free Amsterdam to look like based on today's knowledge. | Highly relevant, direct impact | Users and owners of real estate within Amsterdam, developers, district heating suppliers, City of Amsterdam | Regular review | Heat Transition Vision Amsterdam  |
 |  Programme | 2019-2025 Smart Mobility Programme | 2019 | Energy transition | With the 2019-2025 Smart Mobility Programme, Amsterdam is developing the mobility system of the future together with its residents, visitors, public and private parties. To achieve this, we are developing Amsterdam conditions that new mobility solutions and providers must meet. This way, we want to manage various mobility flows in public spaces to keep them liveable, clean, accessible and safe. | Highly relevant, direct impact | City of Amsterdam, other authorities, knowledge institutions and mobility and technology companies |  | 2019-2025 Smart Mobility Programme  |
-Our city of tomorrow: City Climate Contract. Action plan.
 
 |  Action plan | Clean Air Action Plan | 2019 | Green & Healthy city | The 'Clean Air Action Plan' outlines how we will work towards cleaner and healthier air in the city until 2030. In doing so, we expect to extend the health of the average Amsterdam resident by three months. The most effective way to do this is to achieve zero-emission traffic. But we are not only looking at traffic as a source of air pollution. Industry, shipping and wood burning in the city are also covered. Sometimes through agreements, regulations and covenants, sometimes through lobbying and the central government. | Highly relevant, direct impact | City of Amsterdam, residents, industry, shipping, other authorities | Clean Air Action Plan  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -570,17 +486,11 @@ Our city of tomorrow: City Climate Contract. Action plan.
 |  Vision document | Municipal Port Vision 2020-2040: full speed ahead! | 2020 | Energy transition | Based on 5 public interests, we describe how we want to shape the area over the next 20 years. These guide the choices and cooperation with the Port of Amsterdam. The vision includes established policies on sustainability, urban development, circular economy and water transport. | Highly relevant, direct impact | City of Amsterdam, Port of Amsterdam, the central government (ministries I&W, EZK and more) Province of Noord-Holland, North Sea Canal Area (NZKG), companies in the port area | It also forms the basis for the Port of Amsterdam's Vision and Port Strategic Plan.  |
 |  Strategy | Port Strategic Plan 2021-2025 | 2021 | Energy transition | This strategy describes the port as a leading European Seaport, at the forefront of the transition to a sustainable society. |  | City of Amsterdam, Port of Amsterdam, the central government (ministries I&W, EZK and more) Province of Noord-Holland, North Sea Canal Area (NZKG), companies in the | The Strategic Plan has a four-year update cycle. (Version 2025-2028 under development in 2024)  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 |   |  |  |  |  |  | port area, suppliers, logistics service providers and authorities |  |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Vision document | Port Vision 2030 | 2015 | Energy transition | This vision describes the Amsterdam port in 2030 as a dynamic, multifaceted, adaptive and metropolitan "port ecosystem". A system that is flexible, recognises opportunities in time and is able to mobilise innovative power quickly. |  | City of Amsterdam, Port of Amsterdam, the central government (ministries I&W, EZK and more) Province of Noord-Holland, North Sea Canal Area (NZKG), companies in the port area, various authorities, companies and knowledge institutions | The Port Authority's vision is reviewed at least every 12 years. (2040 version under development in 2040) | Port Vision 2030  |
 |  Implementation programme | Waste and resources implementation programme 2020-2025 | 2020 | Circular transition | Amsterdam wants to be a waste-free city by 2050, with clean streets and squares. To achieve this, we are taking a number of measures described in this implementation agenda. | Highly relevant, indirect impact (scope 3) | Residents, business owners, waste processors, City of Amsterdam |  | Waste and resources implementation programme  |
 |  Action programme | Amsterdam Plastic Smart City action programme | 2019 | Circular transition | In 2019, Amsterdam signed a declaration of intent to become plastic smart - a world first. To this end, Amsterdam is developing an innovative, achievable action programme leading to a clean and healthy situation free of plastic pollution by 2030. The Amsterdam Plastic Smart City programme gives substance to this. | Highly relevant, indirect impact (scope 3) | City of Amsterdam, Plastic Soup Foundation, World Wildlife Fund Netherlands | Implementation programme to follow | Amsterdam Plastic Smart City action programme  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 | Strategy | Amsterdam Circular Strategy 2020-2025 | 2020 | Circular transition | The Amsterdam Circular Strategy is meant ensure a significant reduction in the use of new raw materials and materials, thus contributing to a sustainable city. The goal is to halve the use of new raw materials by 2030, and achieve a fully circular city by 2050. | Highly relevant, indirect impact (scope 3) | City of Amsterdam, entrepreneurs, social initiatives and residents, other authorities | This document is the first of four documents forming a unit, including the monitor, city donut and implementation programme | Amsterdam Circular Strategy 2020-2025 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -590,17 +500,11 @@ Our city of tomorrow: City Climate Contract. Action plan.
 | Strategy | Business Strategy 2020-2030 | 2020 | Energy transition Circular transition | The Business Strategy 2020-2030 describes the municipality's choices regarding the distribution and efficient use of space in the city. |  | Manufacturing industry and logistics, MRA |  | Business Strategy 2020-2030 |
 | Monitor | Circular Economy Monitor | 2022 | Circular transition | The circular economy is important for meeting climate targets and is needed to secure the availability of raw materials. In fact, CO2 emissions from consumption (scope 3) exceed all other emissions in Amsterdam. The Circular Monitor provides insight into material use and where impact can be made. | Highly relevant, indirect impact (scope 3) | City of Amsterdam, Amsterdam Economic Board, Amsterdam Metropolitan Region, residents, entrepreneurs | The impact of material consumption is broader than just CO2. Amsterdam's material consumption is not decreasing fast enough to meet the 50% reduction target by 2030. There is insufficient data available to properly measure the circularity of material flows. | Circular Economy in Outline | Website Research and Statistics (amsterdam.nl) |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 |  Vision document | The Amsterdam City Doughnut | 2020 | Circular transition | The City Doughnut for Amsterdam is designed to encourage cooperation between all parts of the city and to connect a large network of players in the city in a repeating process of change. The City Doughnut for Amsterdam demonstrates some of those ways, such as taking a snapshot of the city and stimulating engagement with key initiatives. | Highly relevant, indirect impact (scope 3) | City of Amsterdam, residents, authorities, businesses, knowledge institutions, social initiatives | The Amsterdam City Doughnut  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Agreement | Amsterdam Agreement (coalition agreement 2022-2026) | 2022 | All | The coalition agreement of the College of Mayor and Alderpersons contains municipal plans, priorities and finances for the 2022-2026 government period in the areas of energy transition, circular, green and healthy city. | Highly relevant, direct impact | City of Amsterdam, residents, businesses | Implementation agendas 2023-2026 Coalition agreement 2022-2026  |
 |  Vision document | Amsterdam environmental vision 2050 | 2021 | All | Besides being a guideline for urban development and the quality of the living environment, the 2050 environmental vision is also an agenda for twenty-first-century city-making, together with Amsterdam residents. | Highly relevant, indirect impact | City of Amsterdam, residents, businesses | Amsterdam environmental vision 2050  |
 |  Vision document | Main green structure (HGS) | 2020 | Green and Climate Adaptive | With the new HGS, we are aiming for a contiguous network. Where possible, we integrate the Ecological Structure, the Main Tree Structure, the Green Network and the Green Streets and Paths Map into the new HGS. | High relevance: indirect impact |  | Green vision Structural Vision 2040  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 # A-2.1.2 National and regional scale
 
@@ -613,18 +517,12 @@ Provincial, regional and national policies
 |  Strategy | Regional Energy Strategy | 2021 | Energy transition, built environment | Regional strategy for increased onshore renewable energy production. | Medium relevance/direct impact | Governments (all levels), energy suppliers, housing corporations, residents | Framework for regional cooperation on large-scale energy production, Noord-Holland Zuid (NHZ) region. | Regional Energy Strategy  |
 |  Policy proposal | Collective Heating Bill | 2022 | Energy transition | Proposed bill to facilitate district heating development by designating public parties to develop these networks, giving the public sector more control. | High relevance/direct impact | Governments (all levels), energy suppliers, housing corporations, residents | Framework for the development of district heating. |   |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 |  Action plan | National Insulation Programme | 2022 | Energy transition | National programme to accelerate household insulation to reduce energy consumption and prepare 2.5 million households for non-fossil heating sources by 2030. | High relevance/direct impact | Governments, housing corporations, homeowners, insulation companies, residents of homes in need of insulation | Link with local missions to accelerate energy saving and insulation. National Insulation Programme. | National Insulation Programme  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Policy | Electric vehicle charging infrastructure policy | 2022 | Sustainable mobility, energy transition | The National Charging Infrastructure Approach aims to make all transport zero-emission by 2050. This can only be achieved through a good, nationwide network. | High relevance/direct impact | Governments, energy suppliers, public transport company, grid operator, logistics companies, drivers |  | Policy on Charging Infrastructure for Electric Vehicles  |
 |  Vision | Mobility Vision 2050 | 2023 | Mobility | National vision memorandum on the future of mobility. | Medium relevance/indirect impact | All | Framework for mobility policy | Mobility Vision 2050  |
 |  Policy | National Performance Agreements | 2023 | Energy transition, built environment | Agreements stating that housing corporations will phase out EGF labels in all their social housing stock by 2028 at the latest. Further acceleration of efforts is needed to achieve the NPA goals. | High relevance/direct impact | Housing corporations, tenants | Link with local missions to accelerate energy saving and insulation. |   |
 |  Strategy | National approach to mobility transition | Multi-year | Mobility | Accelerating the mobility transition through a joint approach by all governments. | Medium relevance/indirect impact | Ministry of Infrastructure and Water Management, Provinces and municipalities | Measures aimed at structural improvement of mobility. Link to local mobility vision and implementation. | Not yet published  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 |  Regu-lation | Manifesto for Socially Responsible Contracting and Procurement (MVOI) | 2022 | All | Manifesto signed by 90 (semi-)government organisations to promote ambitious social procurement and sustainable procurement. Participation is optional, and still parties join and commit to write an Action Plan. It is divided into the themes: environment and biodiversity, climate, circularity, International Social Conditions (ISV or chain responsibility), diversity and inclusion, and social return. | High relevance/direct impact | All | Framework for municipal MVOI action plan | Manifesto for Socially Responsible Contracting and Procurement (MVOI)  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -633,17 +531,11 @@ Our city of tomorrow: City Climate Contract. Action plan.
 |  Regu-lation | Multi-year Programme Climate Fund 2024 | 2023 | Energy transition | The Climate Fund is intended for additional measures that contribute to achieving the reduction targets in the Climate Act, the transition to a climate-neutral energy supply, economy and society and a just climate transition. | High relevance/direct impact | All |  | Multi-year Programme Climate Fund 2024  |
 |  Action plan | National Programme Circular Economy 2023-2030 | 2023 | Circular transition | The National Programme Circular Economy (NPCE) contains measures to use raw materials more economically in the coming years. | High relevance/direct impact | All |  | National Programme Circular Economy 2023-2030  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 |  Policy | National Raw Materials Agreement | 2017 | Circular transition | Letter of intent to move towards transition agendas for the Circular Economy. The Raw Materials Agreement contains agreements by the central government with other parties on measures to accelerate the transition to the circular economy. | High relevance/direct impact | All | National Raw Materials Agreement  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Advice | Space for circular economy | 2023 | Circular transition | In this report, PBL explores the implications for space demand and design in a fully circular economy using four scenarios. The future images show that the transition – with different developments of social attitudes and with different actors taking the lead – looks different. | High relevance/indirect impact | All | Space for circular economy  |
 |  Action plan | Delta Programme Climate Adaptation 2024 | 2023 | All | The Spatial Adaptation Delta Plan contains all the projects and measures that will ensure a water-robust and climate-resilient Netherlands by 2050. | High relevance | All | Delta Programme Climate Adaptation 2024  |
 |  Vision | North Sea Canal Area Development Perspective (NZKG) | 2023 | All | In the coming decades, the North Sea Canal Area will be of national importance for realising substantial tasks. Themes such as the energy transition, circular economy, housing construction, strong port and industrial areas as well as a healthier living environment are addressed in the Development Perspective. Climate adaptation, landscape enhancement and ecology are also important themes. | High relevance/direct impact | All | North Sea Canal Area Development Perspective (NZKG)  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 |  Vision | Draft Energy Vision Noord-Holland-Noord | 2023 | Energy transition | The energy vision is the strategic framework for energy system development in the province. The vision contains or lists choices about the energy system, which are made in conjunction with developments in the physical environment and at specific locations, such as residential areas and business parks. | High relevance/direct impact | All | Energy Vision Noord-Holland-Noord  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -653,15 +545,9 @@ Our city of tomorrow: City Climate Contract. Action plan.
 |  Strategy | Grid operators investment plans | 2024 |  |  | High relevance/direct impact | All | Updated every 2 years  |
 |  Action plan | Regional Mobility Programme Flevoland and Noord-Holland | 2023 | Energy transition, mobility | The Flevoland and Noord-Holland Regional Mobility Programme aims to reduce CO2 emissions from mobility to no more than 2.2 megatonnes by 2030. This is a 55% reduction compared to 1990. | High relevance/direct impact | All | Regional Mobility Programme Flevoland and Noord-Holland  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 |  Policy | Green Deal Textile | 2022 | Circular transition | Within the Green Deals Circular Textiles, several parties commit to the ambition to work towards a circular approach to textiles over the next three years. | High relevance/direct impact | All | Green Deal Textile  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Action plan | Implementation programme MRA cycling routes | 2023 | Mobility | The ambition is that by 2035, there will be some 475 km of pleasant, recognisable, wide, well-lit and safe cycling paths in the region, so that residents and visitors to the transport region choose to cycle instead of drive. | High relevance/direct impact | All | Implementation programme MRA cycling routes  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 # A-2.1.3 EU and international scale
 
@@ -675,9 +561,6 @@ European and International Climate Policy and Strategy
 |  EU strategy | European Green Deal | 2019 | All | Package of policy proposals to reduce net greenhouse gas emissions by at least 55% by 2030. | High relevance/indirect impact | Governments, manufacturing sector, consumers | The European Green Deal (europa.eu). Link to all missions/actions aimed at CO2 reduction. | The European Green Deal (europa.eu)  |
 |  EU Policy | EU Climate Law | 2020 | All | European Union commitment to climate neutrality target by 2050 with identified 2030 target and pathway proposals to achieve both targets. | High relevance/indirect impact | All | Making the EU climate neutral by 2050 (europa.eu). |   |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 |  EU action plan | Circular Economy Action Plan | 2020 | Circular economy | Action plan with measures to produce more sustainable products, reduce waste and promote circularity in the EU. Part of the European Green Deal. | High relevance/direct impact | Governments, manufacturing sector, consumers | Link to missions for circular and sustainable inner cities, neighbourhoods and businesses. | EUR-Lex - 52020DC0098 - EN - EUR-Lex (europa.eu)  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  EU Strategy | EU Biodiversity strategy 2030 | 2020 | Built environment | EU strategy to halt biodiversity decline and help increase biodiversity by 2030. Part of the European Green Deal. | Medium relevance/ indirect impact | Governments, developers | Link to missions/actions on green and water as the basis. | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A52020DC0380  |
@@ -687,14 +570,10 @@ Our city of tomorrow: City Climate Contract. Action plan.
 |  EU Regulation | Regulation 2023/851 Actualised CO2 emission standards performance standards for cars and vans | 1992 - present | Mobility, Built environment | Introduction of stricter CO2 emission targets for cars and vans in line with EU car and van reduction targets of 100% by 2035. | High relevance/direct impact | Car and van users (commercial or private) | Link to air quality action plan. | Regulation - 2023/851 - EN - EUR-Lex (europa.eu)  |
 |  EU regulation | Actualised CO2 emission standards performance standards for heavy-duty vehicles | 1992 - present | Mobility, Built environment | Introduction of stricter CO2 emission targets for heavy-duty vehicles in line with EU car and van reduction targets of 100% by 2035. | High relevance/direct impact | Industry, transport sector | Link to air quality action plan. |   |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 |  EU regulation | Energy Efficiency Directive (EED) | 2012 - present | Built environment | Setting rules and obligations for achieving the EU's ambitious energy efficiency targets. The revised Energy Efficiency Directive establishes "energy efficiency first" as a fundamental principle of EU energy policy, giving it legal status for the first time. | High relevance/direct impact | All | Mandatory four-yearly audit, although we are now certified for the CO2 Performance Ladder, we will be exempt from this as the CO2 Performance Ladder is more stringent in this area. | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AJOL_2023_231_R_0001&qid=1695186598766  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  EU regulation | Clean Vehicles Directive (CVD) | 2019 - present | Mobility | The aim of the CVD is to increase the market for clean and energy-efficient vehicles by promoting them through procurement by requiring contracting authorities to have a certain minimum percentage of clean and zero-emission vehicles in their fleet. | High relevance/direct impact | Government |  | https://eur-lex.europa.eu/eli/dir/2019/1161/oj  |
 
-September 2024
 # A-2.2 2030 CO2 reduction gap in Amsterdam
 
 ![img-0.jpeg](img-0.jpeg)
@@ -705,7 +584,6 @@ Based on a calculation of all planned actions and measures by the national gover
 Due to uncertainties about the degree of success in implementing the intended actions and measures and about the size of the effects, a range has been used. The range of the calculation estimate is between  $-21\%$  and  $-55\%$ . Thus, the ambition of  $60\%$  reduction requires additional measures and full and successful implementation of existing actions and measures. Many actions and measures still need to be elaborated, policies still need to be developed, adopted and implemented. The municipality should also be given sufficient powers to do this work.
 
 The sharp drop in the mobility sector estimate can be attributed, for example, to proposals for zero-emission zones. However, it is unclear whether the appropriate legislation from the state will be there to introduce it as a municipality. However, to reach 2030, this needs to start soon. Congestion on the power grid is also a major barrier to electrifying energy-intensive industrial activities. This should be resolved in a timely manner. On the one hand, for the development of Amsterdam and the region, but also to realise current CO2 reduction intentions. The following section discusses these obstacles in more detail. The action plan presented in the next chapter has one goal: Making clear how we are now trying to accelerate the implementation of the climate transition as much as possible. This overview also helps us identify or explore new opportunities, and by supporting already planned activities as much as possible by removing obstacles in the implementation.
-Our city of tomorrow: City Climate Contract. Action plan.
 
 # A-3 Systemic barriers and opportunities for climate neutrality in Amsterdam
 
@@ -733,9 +611,6 @@ First, it seems important that sustainability and climate goals are given a prom
 
 In addition, vetting and, where necessary, amending existing laws and regulations is crucial. For example, research is under way on possibilities for banning harmful advertisements or adapting zoning plans for circular activities. These kinds of interventions can contribute to a more sustainable living environment.
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 In terms of tendering, purchasing and procurement, too, Amsterdam can encourage sustainability through frameworks and covenants with suppliers and leasing companies. Think of a preferred supplier system with sustainability criteria, performance contracts with circularity clauses or a covenant for sustainable tyres.
 
 That is why the CO2 ladder was introduced, why we use an internal CO2 price for projects over 1 million and why we increasingly work with an MKI standard during tenders. Research is also being carried out on developing new policies and instruments, such as an action framework for CO2 pricing according to the 'true price' principle or a national benchmark for climate adaptation that all cities should comply with.
@@ -760,9 +635,6 @@ The National Cooperation Structure (NSS) concretises this. By clearly identifyin
 
 Amsterdam is good at Amsterdam bravado. Setting and developing ambitions was long overdue, but it is good that the focus is now shifting to implementation. At the same time, we have found that it is challenging to properly include market players and citizens in this transition. We have to make political choices when we cannot achieve everything we want, and that can hurt.
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 The city faces tough choices that must be settled politically. Examples of such political and administrative barriers include questions about how Amsterdam should deal with the little space available in the city, and how housing construction can be linked to the sustainability challenge, about what an equitable climate transition looks like in practice in the context of risks of mobility and energy poverty. How the city of tomorrow can be designed for everyone, but also, for example, when an unsustainable alternative is chosen because municipal clients do not have the money. There is also the question of whether high ambitions sometimes do more harm than good, because they are difficult to realise in practice and can therefore paralyse or lead to an unreliable government. It is up to politicians to make it clear how to deal with such dilemmas.
 
 ## Opportunities for the municipality
@@ -784,9 +656,6 @@ On the technology front, innovations, sustainable sports facilities and Positive
 The development of battery swap stations for electric vehicles and the setting up of sharing platforms for electric cargo bikes can help make the mobility sector more sustainable.
 
 In the construction and industrial sectors, there are opportunities in electrification of equipment, circular scans to improve material consumption, and sustainable procurement and tendering processes. Innovative solutions such as bio-based construction and removing barriers for market players can be a flywheel here. Technological monitoring and data-driven insights, such as material flow analysis, can contribute to effective management. Platforms for knowledge exchange between cities and with other parties can accelerate innovation.
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 # A-3.5 Social aspects and behaviour
 
@@ -810,9 +679,6 @@ Partly for this reason, we encourage open knowledge exchange and facilitate join
 
 Therefore, a culture of innovation within the civil service organisation is key, giving civil servants the freedom and resources to explore sustainable solutions and set up pilots. Continuing to create a safe learning environment, in which "mistakes" are also embraced as learning moments, can help eliminate action anxiety.
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 # Part B – The Amsterdam Impact Pathways
 
 ## Amsterdam Climate Action plan: Our city of tomorrow
@@ -833,9 +699,6 @@ For each impact pathway, we look at the situation, where we want to be in a few 
 
 For each impact pathway, we look at the current situation, where we want to be in a few years, and what the ultimate outcome or goal is. We describe the direct and indirect benefits of the impact pathways. The CO2 reduction potential realised by a given impact pathway is predicted as best as possible but often overlaps with other impact pathways. The dependencies, as described in section A-
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 , are reflected in the systemic levers. The systemic levers affected by each action are indicated. We name the systemic levers for each action so that it is clear at a glance which enabling mechanisms are needed to implement this Action plan across sectors and inclusively. The co-benefits or additional benefits that can be achieved have also been identified for each impact pathway. The IPCC6 definition of co-benefits is: "The positive effects that a policy or measure aimed at one goal may have on other goals, without yet evaluating the net effect on overall social well-being. (IPCC, 2014b, p.14). To systematically allocate co-benefits, we draw on the framework of LSE Cities and C40 Cities consortium7
 
 ) What is an impact pathway? An impact pathway is a set of actions working towards a goal. An impact pathway is the transition (or change) pathway that needs to be taken to - in this case - keep Amsterdam liveable. Each impact pathway is described in one sentence and then broken down into three phases: where are we now, where do we expect to be in years, and what is the expected outcome.
@@ -846,12 +709,9 @@ Our city of tomorrow: City Climate Contract. Action plan.
 
 In line with the ambition and approach of the council information letter Our city of tomorrow, which emphasises urgent action and learning along the way, the aim of the action plan is to close the gap between the ambitions and their implementation, e.g. by diversifying and accelerating the transition. We do this by collecting what the municipality says it is doing in its policy documents and presenting it at the action level. Not all actions identified are at the same stage of implementation. Some are new, or actions where we have little to no experience or about which little knowledge is yet available. Also, many of the ongoing actions are undergoing further elaboration. This is part of the implementation of the climate contract. For this reason, and because of the multitude of actions, the choice was made in this action plan to focus on the impact pathways that guide the new actions, and less on the individual actions.
 
-September 2024
-
 IPCC (2014b) Climate Change 2014: Mitigation of Climate Change. Contribution of Working Group III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change
 
 C40 Cities &amp; LSE Cities. (2016). Cobenefits of urban climate action: A framework for cities.
-Our city of tomorrow: City Climate Contract. Action plan.
 
 The transition to a sustainable energy system
 
@@ -961,9 +821,6 @@ Sustainable thinking and acting
 
 Figure 11: The Amsterdam Impact Pathways
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 # B-1 The transition to a sustainable energy system
 
 Fifteen impact pathways have been identified for the transition to a sustainable energy system:
@@ -995,9 +852,6 @@ Making private transport more sustainable (= passenger transport)
 Making public transport more sustainable
 Making logistics more sustainable
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 # B-1.1 Built environment
 
 Amsterdam has 442,000 homes and 24 million m2 of gross floor area of activity, both businesses and (social) institutions. The built environment's share of Amsterdam's total CO2 emissions is large: 25% or 1250 ktonnes. Homes account for more than 50 percent of CO2 emissions in the built environment. This is due to use of natural gas for heating, cooking and hot water. CO2 emissions from electricity consumption fall under the Electricity sector in this Action plan. The rest of the CO2 emissions come from buildings with a business function (20%), buildings with a social function and other buildings. In these buildings, energy conservation is always a good and necessary choice, regardless of how these buildings are going to be made natural gas-free somewhere in the period up to 2040.
@@ -1020,21 +874,11 @@ Saving energy is always a good thing. Consumption of electricity and heat must b
 |  Renewable energy generated | N/A  |
 |  Energy consumption avoided or replaced | N/A  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 |  CO2e emissions | The central government's 2030 target is for 123 thousand homes in Amsterdam to be insulated during this period. This will save between 0.4 and 0.7 PJ of energy in 2030 compared to the current situation and between 25 and 35 ktonnes of CO2.  |
 | --- | --- |
 |  Offset CO2e emissions | N/A  |
 |  Total costs | EUR 151 million  |
-|  Co-benefits and indirect impacts | Lower energy demand
-Reduction in energy and heating costs
-Less energy poverty
-Improved indoor climate
-Health improvements through better air quality
-Increased comfort
-Technological innovation
-Job creation  |
+|  Co-benefits and indirect impacts | Lower energy demand Reduction in energy and heating costs Less energy poverty Improved indoor climate Health improvements through better air quality Increased comfort Technological innovation Job creation  |
 |  Policy document(s) | Insulation Offensive Implementation Plan 2024 – 2026  |
 
 # Actions for Accelerating Energy-efficient Homes and Utility Buildings
@@ -1046,9 +890,6 @@ Job creation  |
 |  1.2) Courses to train market participants as HOA specialists. | To ensure more advisers, the municipality is working on courses to train market participants as HOA specialists. | Learning and capabilities  |
 |  1.3) Providing professional sustainability advice to large and small HOAs focused on energy-saving measures | The municipality provides small and large HOAs with professional sustainability advice focusing on energy-saving measures, feasibility, heat solutions, PV panels. The advice looks at the current state of maintenance of the building, and the options for making it natural gas-free and sustainable. The advice also takes into account building physics effects and aesthetics requirements. The advice calculates the effect on housing costs of the various sustainability steps the HOA can take, taking into account available subsidies and loans. | Social Innovation  |
 |  1.4) The municipality informs and encourages all owner-occupiers outside HOAs with a basic offer. | The municipality informs and encourages all owner-occupiers outside HOAs with a basic offer. At the energy office, all residents can find information. This energy office is being renewed and expanded. | Social Innovation, Learning and capabilities  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 |  1.5) Offering sustainability advice in priority neighbourhoods. | In priority neighbourhoods, owner-occupiers can apply for sustainability advice from 2024. This is bespoke advice following a home visit. In these neighbourhoods, the municipality integrates. | Social Innovation, Learning and capabilities  |
 | --- | --- | --- |
@@ -1063,9 +904,6 @@ Our city of tomorrow: City Climate Contract. Action plan.
 |  2.4) A safety net scheme for low-income owner-occupiers for the HOA contribution. | From 2024, there will be a safety net scheme for low-income owner-occupiers who would otherwise be unable to pay the increase in the HOA contribution. This amounts to €2,000 per household. | Funding and financing  |
 |  2.5) Safety net for homeowners in poorly insulated houses. | Extra insulation subsidy in Amsterdam for homeowners in poorly insulated houses who do not have enough money to make them more sustainable, the municipality is working on a safety net scheme that can be applied for from 2024. Owners can claim a subsidy of €2,000 per household. | Funding and financing  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 |  2.6) Public Housing Fund Nieuw-West for housing improvement and sustainability. | Public Housing Fund: In specific neighbourhoods in Nieuw-West, a subsidy scheme for home improvement and sustainability is expected to be introduced. | Funding and financing  |
 | --- | --- | --- |
 |  **3) The city together/Cooperation:**  |   |   |
@@ -1079,12 +917,7 @@ Our city of tomorrow: City Climate Contract. Action plan.
 |  3) Supporting tenants to make a proposal to their landlord for sustainability through the right of initiative. | Tenants are supported by !WOON to make a proposal to their landlord for sustainability through the right of initiative. If necessary, tenants are also given legal support in the process. This is double the current commitment to supporting tenants. | Governance innovations & Policy, Social innovations, Learning and capabilities  |
 |  4) Pilot to enforce if an Energy Label is missing from lettings. | With the national Environment and Transport Inspectorate, we are conducting a pilot to enforce if an Energy Label is missing from lettings. If successful, this pilot will be continued as a project. | Governance innovations & Policy  |
 
-September 2024
-9
-Our city of tomorrow: City Climate Contract. Action plan.
-
-|  Qualitative energy targets as circularity | Besides the quantitative solar task, we are also working on qualitative targets. Think local ownership, combating energy poverty and encouraging circularity and innovation. | Governance innovations & Policy
-Social innovations  |
+|  Qualitative energy targets as circularity | Besides the quantitative solar task, we are also working on qualitative targets. Think local ownership, combating energy poverty and encouraging circularity and innovation. | Governance innovations & Policy Social innovations  |
 | --- | --- | --- |
 |  Renovation and Insulation Monitor  |   |   |
 |  Standardise rental homes to label C insulation (CED) | The additional effect of committing to insulating half of Amsterdam's rental homes to Label C. This therefore requires landlords to have homes insulated before they can be (re)let. The municipality could make agreements with landlords to have homes to be rented insulated to Energy Label C. | Social Innovation, Governance Innovation  |
@@ -1094,9 +927,6 @@ Social innovations  |
 |  Implementing the Roadmap to make healthcare real estate more sustainable | This is a national roadmap. To flesh this out, talks are ongoing between the Amsterdam municipality and Amsterdam UMC. To meet the estimate, concrete commitments must be made and implemented. | Governance innovations & Policy  |
 |  Covenant on behavioural change of utilities | This measure from the citizens' council proposes (partial) entering into covenants with retailers, utilities and office owners on energy savings. This can be combined with a neighbourhood approach, in which collective agreements are made. This idea can be included within the current recalibration of the Sustainable Business Market Programme (VZM). Because concluding area-based sub-covenants is labour intensive and the reduction potential is estimated at only 3 ktonnes, we are working with a 'coalition of the willing' as with the 15% GasTerug Action Network. | Social Innovation  |
 |  Mandatory heat pump (+ rooftop solar) for heating smaller businesses (without process heat) | mandatory heat pump + rooftop solar for heating smaller businesses without process heat. This obligation is possible based on the energy saving obligation under the Environmental Management Act. | Governance innovations & Policy; Technology & Infrastructure  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 |  Supporting SMEs, business collectives and estates to become more sustainable. (OSVM) | Supporting SMEs, business collectives and estates to become more sustainable: We offer free custom advice through an energy office and on-site guidance. We support business collectives and estates in applying for relevant subsidies and in collective procurement for solar panels and charging infrastructure, for example. | Social Innovation  |
 | --- | --- | --- |
@@ -1108,9 +938,6 @@ Our city of tomorrow: City Climate Contract. Action plan.
 |  Roadmap to save energy in offices by GasTerug Action Network | We help offices draw up an 'energy saving roadmap' for their office building. The roadmaps provide insight into building performance and opportunities for energy savings. | Learning and capabilities  |
 |  Setting up network organisation support for energy saving by the GasTerug Action Network | The network establishes initiatives and focuses on scaling them up. To achieve this, we facilitate at the basic level, provide overarching ownership, act as a sounding board and help explore crossovers. This way, the action network leaders help think ahead about broadening and scaling up. | Learning and capabilities  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 |  'Klus- en coachaanpak' for neighbourhoods by the GasTerug Action Network | With the 'Klus- en coachaanpak', we achieve average direct energy savings of 8% on electricity and 9% on gas consumption. This approach creates awareness among entrepreneurs and motivation for further sustainability. | Learning and capabilities; Social Innovation  |
 | --- | --- | --- |
 |  Support with breakthrough method by the GasTerug Action Network | The aim of the breakthrough method is to remove bureaucratic bottlenecks in order to accelerate energy transition initiatives. This is done by looking for cases facing a major issue at different levels (a home, housing complex or municipality). | Learning and capabilities; Governance innovations & Policy  |
@@ -1118,9 +945,6 @@ Our city of tomorrow: City Climate Contract. Action plan.
 |  Data & Monitoring by the GasTerug Action Network | The action network collects current data at postal code 6 level and publishes it at a monthly frequency to gain insight into (the development of) gas consumption for all 30 municipalities in the Amsterdam Metropolitan Region. We measure in three categories: small, medium and large consumption. | Research/Monitoring  |
 |  Officer.Communication Campaign by the GasTerug Action Network | This campaign seeks to reach, engage, connect and inspire as many people and organisations in the region as possible to participate through various communication channels, such as the website, LinkedIn, Instagram and a newsletter. | Democracy/Participation/Communication  |
 |  Roadmaps to Paris Proof by Green Business Club | Buildings lack insight into actual consumption, especially in the case of multi-tenant business premises. In addition, the presence of sustainable technology, a BREEAM In-Use certification on the asset pillar and having relatively good labels ensure energy efficiency on paper can result in a lack of urgency among building owners and users. Moreover, this energy efficiency on paper still says nothing about actual performance. By creating roadmaps of office buildings, we provide insight into what | Research/Monitoring, Learning and capabilities  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 ## B-1.1.2 Accelerating expansion and sustainability of heating and cooling facilities
 
@@ -1130,12 +954,8 @@ According to figures from Liander and Amsterdam Research&amp;Statistics (2023), 
 
 |  Impact pathway | Accelerating expansion and sustainability of heating and cooling facilities  |
 | --- | --- |
-|  Early results | Improved conditions for connection and development of heat networks
-Increase in connections to heat networks
-More sustainable heat sources
-: -5% CO2 emissions  |
-|  Later results | 2030: -60% CO2 emissions
-: 100% climate neutral  |
+|  Early results | Improved conditions for connection and development of heat networks Increase in connections to heat networks More sustainable heat sources -5% CO2 emissions  |
+|  Later results | 2030: -60% CO2 emissions 100% climate neutral  |
 |  Actors involved | Housing corporations, Heat suppliers, Homeowners and residents, Building owners, Ministry of Economic Affairs.  |
 |  Scale | Neighbourhood and City  |
 |  Renewable energy generated | TBD  |
@@ -1144,40 +964,18 @@ More sustainable heat sources
 
 ⁸publicaties.rekenkamer.amsterdam.nl/verduurzaming-warmtevoorziening-met-warmtenetten-onderzoeksrapport/index.html
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 |  Offset CO2e emissions (biologically or technologically fixed) | N/A  |
 | --- | --- |
 |  Total cost and cost per tonne of CO2e | TBD  |
-|  Co-benefits | Higher resilience in case of extreme weather
-Reduction in energy and heating costs
-Less energy poverty
-Improved indoor climate
-Health improvements through better air quality
-Increased comfort
-Technological innovation
-Job creation
-Growth of SMEs in the technology sector
-Stable power supply for commercial activities
-Reduced price volatility for energy services  |
-|  Policy document(s) | Heat Transition Vision,
-Neighbourhood implementation plans,
-Heat Transition Implementation Agenda  |
+|  Co-benefits | Higher resilience in case of extreme weather Reduction in energy and heating costs Less energy poverty Improved indoor climate Health improvements through better air quality Increased comfort Technological innovation Job creation Growth of SMEs in the technology sector Stable power supply for commercial activities Reduced price volatility for energy services  |
+|  Policy document(s) | Heat Transition Vision, Neighbourhood implementation plans, Heat Transition Implementation Agenda  |
 
 # Actions Accelerating expansion and sustainability of heating and cooling facilities
 
 |  Actions | Short Description | Levers of change  |
 | --- | --- | --- |
-|  Accelerated sustainability of heat grid Amsterdam-Oost/Zuid (CED) | Making the heat networks more sustainable according to the pace set out in agreements with WPW and the Diemen district heating sustainability covenant (Municipality of Diemen et al., 2019).
-This requires the planned bio-boiler in Diemen to be realised by 2030 (this is uncertain due to a pending court case, the plant can be replaced by alternative sustainable heat projects, according to the covenant) plus 510 GWh of additional sustainable generation, e.g. with geothermal, aquathermy and residual heat from data centres.
-This still requires options to be researched, projects to be designed, permit procedures to be completed and actual construction to take place.
-Above all, the municipality should engage with the parties involved to make concrete agreements and facilitate the projects, for instance through timely licensing. | Technology and Infrastructure  |
-|  Accelerated sustainability of heat grid WPW Amsterdam-Noordwest/Noord (CED) | For the WPW heat network, a solution must be found to replace non-sustainable heat. In addition, in a fully circular economy, the heat source is not future-proof, as waste is the raw material for the heat.
-Above all, the municipality should engage with the parties involved to make concrete agreements and facilitate the projects, for instance through timely licensing. We are also exploring sustainable alternative heat | Technology and Infrastructure  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
+|  Accelerated sustainability of heat grid Amsterdam-Oost/Zuid (CED) | Making the heat networks more sustainable according to the pace set out in agreements with WPW and the Diemen district heating sustainability covenant (Municipality of Diemen et al., 2019). This requires the planned bio-boiler in Diemen to be realised by 2030 (this is uncertain due to a pending court case, the plant can be replaced by alternative sustainable heat projects, according to the covenant) plus 510 GWh of additional sustainable generation, e.g. with geothermal, aquathermy and residual heat from data centres. This still requires options to be researched, projects to be designed, permit procedures to be completed and actual construction to take place. Above all, the municipality should engage with the parties involved to make concrete agreements and facilitate the projects, for instance through timely licensing. | Technology and Infrastructure  |
+|  Accelerated sustainability of heat grid WPW Amsterdam-Noordwest/Noord (CED) | For the WPW heat network, a solution must be found to replace non-sustainable heat. In addition, in a fully circular economy, the heat source is not future-proof, as waste is the raw material for the heat. Above all, the municipality should engage with the parties involved to make concrete agreements and facilitate the projects, for instance through timely licensing. We are also exploring sustainable alternative heat | Technology and Infrastructure  |
 
 |   | sources such as aquathermy, data centre residual heat and electrolysis. |   |
 | --- | --- | --- |
@@ -1186,78 +984,38 @@ Our city of tomorrow: City Climate Contract. Action plan.
 |  Heat Transition Vision outcomes review | We also want to make sure the implementation is well aligned with what the city wants and needs. This involves both a technical and social perspective. We want to learn from the lessons of recent years in the neighbourhoods where we operate. As such, the college considers it desirable to test the choices made in the Heat Transition Vision about the natural gas-free heating options. | Learning and capabilities, Infrastructure and technology  |
 |  Expanding the approach | At the same time as conducting a test on the TVW, we will further expand the current course in the heat transition, which now focuses mainly on expanding the heat network in neighbourhoods with a high percentage of housing owned by corporations. Despite the delay incurred in terms of the number of investment decisions (the reaction of the heat supplier in relation to the Collective Heat Act) in the roll-out of larger heat networks, we are working in this way to achieve the desired acceleration. This broadening includes measures and actions on target groups, heat technologies and preconditions. Concrete actions are presented below: | Governance Innovation and Policy, Social Innovation Technology and Infrastructure  |
 
-September 2024
-5
-Our city of tomorrow: City Climate Contract. Action plan.
-
-|  We encourage residents starting their own heat initiatives and cooperatives | Among others, in Middenmeer (totalling 5,000 homes), at KetelhuisWG (totalling 2,500 homes) and at least six other places in the city, we already actively support existing heat initiatives.
-
-The college is currently conducting research on how to (permanently) support current and future residents' initiatives and cooperatives. After the summer of 2023, you will receive a framework on how the municipality intends to deal with residents' initiatives and what (financial) support applies. | Social Innovation
-Learning and capabilities,
-Technology and Infrastructure  |
+|  We encourage residents starting their own heat initiatives and cooperatives | Among others, in Middenmeer (totalling 5,000 homes), at KetelhuisWG (totalling 2,500 homes) and at least six other places in the city, we already actively support existing heat initiatives. The college is currently conducting research on how to (permanently) support current and future residents' initiatives and cooperatives. After the summer of 2023, you will receive a framework on how the municipality intends to deal with residents' initiatives and what (financial) support applies. | Social Innovation Learning and capabilities, Technology and Infrastructure  |
 | --- | --- | --- |
-|  Survey of the wishes of owners of ground-level housing | We want to get and stay in a good dialogue with all residents during the heat transition. We are launching, in combination with low-threshold participation moments, a survey of the wishes of owners of ground-level homes. | Social Innovation
-Learning and capabilities,  |
-|  HOA feasibility studies | For HOAs, feasibility studies are carried out, among other things. By 2023, we aim to advise and guide 250 HOAs. The feasibility study includes identifying the technical options for insulation-ventilation, energy generation and going off gas. There are also discussions with HOA managers on things like replacement of flue gas ducts.
-
-The college sees additional opportunities with HOAs. For example, from the end of 2023, we will explore the extent to which there are opportunities for owner-occupied housing associations (where homes are heated with block heating using natural gas) to be connected to the nearby heat network or other heating options for the building or neighbourhood. In doing so, it is crucial that any old defects in the heat pipe system are remedied at the same time. | Learning and capabilities  |
-|  Integrated approach to utilities and housing | In autumn 2023, a study will be completed that will assess the costs and opportunities for the heat transition in utility buildings for a few neighbourhoods (including the Confuciusbuurt). This enables these buildings to eventually become a permanent part of the neighbourhood approach. Buildings where natural gas is used for space heating can follow along with the neighbourhood approach to homes in this regard. | Cooperation,
-Social Innovation  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
+|  Survey of the wishes of owners of ground-level housing | We want to get and stay in a good dialogue with all residents during the heat transition. We are launching, in combination with low-threshold participation moments, a survey of the wishes of owners of ground-level homes. | Social Innovation Learning and capabilities,  |
+|  HOA feasibility studies | For HOAs, feasibility studies are carried out, among other things. By 2023, we aim to advise and guide 250 HOAs. The feasibility study includes identifying the technical options for insulation-ventilation, energy generation and going off gas. There are also discussions with HOA managers on things like replacement of flue gas ducts. The college sees additional opportunities with HOAs. For example, from the end of 2023, we will explore the extent to which there are opportunities for owner-occupied housing associations (where homes are heated with block heating using natural gas) to be connected to the nearby heat network or other heating options for the building or neighbourhood. In doing so, it is crucial that any old defects in the heat pipe system are remedied at the same time. | Learning and capabilities  |
+|  Integrated approach to utilities and housing | In autumn 2023, a study will be completed that will assess the costs and opportunities for the heat transition in utility buildings for a few neighbourhoods (including the Confuciusbuurt). This enables these buildings to eventually become a permanent part of the neighbourhood approach. Buildings where natural gas is used for space heating can follow along with the neighbourhood approach to homes in this regard. | Cooperation, Social Innovation  |
 
 |   | Natural gas consumption for the purpose of corporate production processes is a separate focus here. We also want to learn from building owners who have made heat supply more sustainable in recent years. |   |
 | --- | --- | --- |
 |  More and accelerated focus on all-electric neighbourhoods in the city | We will start discussions with residents in 2 neighbourhoods about heating homes with heat pumps and then, based on lessons learned, extend this approach to more (parts of) neighbourhoods in 2024. In doing so, we cooperate with Liander so that we can take into account the load on the power grid. | Cooperation, Infrastructure and technology  |
 |  Working together on a source network | In Buikslotermeer Noord, we are working with some other parties on a local decentralised source network where heat from the sewers can be used to sustainably heat 700 homes. The college is enthusiastic about the potential of source networks and sees opportunities for its further innovative growth. In the aforementioned review of the Heat Transition Vision, we include the associated possibilities. | Cooperation, Infrastructure and technology  |
 |  Exploration and procurement of hybrid heat pumps | We will explore how, including in 'natural gas-free gas network' neighbourhoods, we can ensure a greater number of homes using the hybrid heat pump. The municipality starts doing collective procurement of hybrid heat pumps. This involves starting by writing to small groups of residents. We aim to write to several thousand homes. Based on experience gained, the approach will be adapted and expanded. | Infrastructure and technology  |
-|  Direction of FIDs in four neighbourhoods and efficiency in implementation heat network projects | In terms of expanding the heat network, we are working with Warm Amsterdam's cooperation partners on final investment decisions in the first four neighbourhoods (Confuciusbuurt, Wildeman, De Kameleon e.o. and Hakfoort/Huigenbos). In total, this involves about 4,000 homes.
-These four neighbourhoods are also highlighted in recent documentation on the Insulation Offensive. Both the insulation task and the societal task are large here. In practice, we already see housing associations not only betting on heat options, but also paying attention to insulation and renovation measures at the same time. |   |
+|  Direction of FIDs in four neighbourhoods and efficiency in implementation heat network projects | In terms of expanding the heat network, we are working with Warm Amsterdam's cooperation partners on final investment decisions in the first four neighbourhoods (Confuciusbuurt, Wildeman, De Kameleon e.o. and Hakfoort/Huigenbos). In total, this involves about 4,000 homes. These four neighbourhoods are also highlighted in recent documentation on the Insulation Offensive. Both the insulation task and the societal task are large here. In practice, we already see housing associations not only betting on heat options, but also paying attention to insulation and renovation measures at the same time. |   |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
-|   | We are also making preparations for 13 subsequent neighbourhoods (totalling about 13,000 homes) during this period. In doing so, we scrutinise the neighbourhood process by properly evaluating and learning, so that the entire lead time can be accelerated in the future.
-
-When constructing heat networks, we ensure the least possible inconvenience to the city through smart programming of underground and public space works. We also seize opportunities to set aside space for the future heat transition to minimise social costs. |   |
+|   | We are also making preparations for 13 subsequent neighbourhoods (totalling about 13,000 homes) during this period. In doing so, we scrutinise the neighbourhood process by properly evaluating and learning, so that the entire lead time can be accelerated in the future. When constructing heat networks, we ensure the least possible inconvenience to the city through smart programming of underground and public space works. We also seize opportunities to set aside space for the future heat transition to minimise social costs. |   |
 | --- | --- | --- |
 |  Heat transition affordability study | In the aforementioned TVW test, we look at both the affordability of collective and individual heat solutions and include energy-saving plans. We will (have someone) map out what is needed to ensure affordability for residents in the heat transition. | Learning and capabilities,  |
-|  Improving communication and information to residents | We are working on improving the provision of information toward residents through a mobile office under the banner ‘Het huis van nu voor straks’ (a modern home for the future). At this office, which can be used city-wide, residents can ask questions about energy saving, insulation and making homes natural gas-free.
-
-We are also continuously improving the municipality's sustainable living website. | Social innovation,
-Communication  |
-|  Neighbourhood citizens' council in the context of heat transition | This measure organises a neighbourhood citizens' council (as a pilot) on the heat transition. The aim of a neighbourhood citizens' council is more accessible involvement of residents in the heat transition in their neighbourhood. This has the positive effect of keeping concerned residents more intensely informed, representing their neighbours and thus allowing them to inform and collectively reflect on their preferences for the neighbourhood. This would fit well within the municipality's participation policy. There is also a risk of resident disappointment if outcomes are not followed up quickly or properly, and thus expectations are not met. Currently, some 15 neighbourhoods are already discussing policies towards natural gas-free by 2040 with | Social innovation,
-Communication
-Cooperation  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
+|  Improving communication and information to residents | We are working on improving the provision of information toward residents through a mobile office under the banner ‘Het huis van nu voor straks’ (a modern home for the future). At this office, which can be used city-wide, residents can ask questions about energy saving, insulation and making homes natural gas-free. We are also continuously improving the municipality's sustainable living website. | Social innovation, Communication  |
+|  Neighbourhood citizens' council in the context of heat transition | This measure organises a neighbourhood citizens' council (as a pilot) on the heat transition. The aim of a neighbourhood citizens' council is more accessible involvement of residents in the heat transition in their neighbourhood. This has the positive effect of keeping concerned residents more intensely informed, representing their neighbours and thus allowing them to inform and collectively reflect on their preferences for the neighbourhood. This would fit well within the municipality's participation policy. There is also a risk of resident disappointment if outcomes are not followed up quickly or properly, and thus expectations are not met. Currently, some 15 neighbourhoods are already discussing policies towards natural gas-free by 2040 with | Social innovation, Communication Cooperation  |
 
 |   | residents. The idea is that with a citizens' council, awareness about sustainable heat will be created, which could accelerate the transition. |   |
 | --- | --- | --- |
-|  Removing obstacles to making homes more sustainable | Where possible and necessary, the college is going to try to remove obstacles that sometimes now stand in the way of making homes and other buildings more sustainable. This may, for example, have to do with required permits for heat pumps or the installation of double glazing in listed buildings. In doing so, we do not lose sight of the city's standard of living and possible noise pollution.
-
-As a follow-up to the Solar Energy Handbook, we are also preparing a Heating Installations Handbook, which will provide residents with clarity on regulations in this area. | Governance Innovation and Policy, Information provision and communication  |
-|  Preparation of Municipal Instruments Heat Transition Act | We are preparing for the upcoming Municipal Instruments Heat Transition Act (Wgiw). If this law is passed by the States General in 2024, municipalities will have the (appointing) power to decide when and how a neighbourhood will go off natural gas and which preferred alternative to natural gas will be chosen. The college believes Amsterdam should start using this opportunity in due course to ensure that a careful pace can be set in making the city's heat supply more sustainable.
-
-We will use the results of the aforementioned test on the TVW when drafting a legally required Heat Programme (the successor to the Heat Transition Vision), which we will start in 2024. Participation among residents is a crucial part of this. | Governance Innovation and Policy, Infrastructure and technology  |
+|  Removing obstacles to making homes more sustainable | Where possible and necessary, the college is going to try to remove obstacles that sometimes now stand in the way of making homes and other buildings more sustainable. This may, for example, have to do with required permits for heat pumps or the installation of double glazing in listed buildings. In doing so, we do not lose sight of the city's standard of living and possible noise pollution. As a follow-up to the Solar Energy Handbook, we are also preparing a Heating Installations Handbook, which will provide residents with clarity on regulations in this area. | Governance Innovation and Policy, Information provision and communication  |
+|  Preparation of Municipal Instruments Heat Transition Act | We are preparing for the upcoming Municipal Instruments Heat Transition Act (Wgiw). If this law is passed by the States General in 2024, municipalities will have the (appointing) power to decide when and how a neighbourhood will go off natural gas and which preferred alternative to natural gas will be chosen. The college believes Amsterdam should start using this opportunity in due course to ensure that a careful pace can be set in making the city's heat supply more sustainable. We will use the results of the aforementioned test on the TVW when drafting a legally required Heat Programme (the successor to the Heat Transition Vision), which we will start in 2024. Participation among residents is a crucial part of this. | Governance Innovation and Policy, Infrastructure and technology  |
 |  Advocate for green gas blending | This measure involves lobbying the (new) government for an elaboration and introduction of a 20% blending obligation for green gas in the built environment. This blending obligation was included in the national coalition agreement of the caretaker government, but has not yet been fleshed out in concrete terms. The CO2 gain is estimated at 174 ktonnes | Governance, innovation and policy  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
-|  Research into residual heat from data centres and geothermal heat | With the heating companies and the Meer Energie neighbourhood initiative, we are exploring the possibilities and preconditions for using the residual heat from data centres to heat homes.
-Preparations are also currently being made by EBN (Energiebeheer Nederland) for geothermal research drilling. This is expected to provide insight into the potential of the subsurface in and around Amsterdam by 2025. We also see opportunities for aquathermy as a sustainable heat source. The aforementioned heat transition vision test will also examine the extent to which there is sufficient supply and diversification of heat sources for the relevant neighbourhoods. | Learning and capabilities, Infrastructure and Technology.  |
+|  Research into residual heat from data centres and geothermal heat | With the heating companies and the Meer Energie neighbourhood initiative, we are exploring the possibilities and preconditions for using the residual heat from data centres to heat homes. Preparations are also currently being made by EBN (Energiebeheer Nederland) for geothermal research drilling. This is expected to provide insight into the potential of the subsurface in and around Amsterdam by 2025. We also see opportunities for aquathermy as a sustainable heat source. The aforementioned heat transition vision test will also examine the extent to which there is sufficient supply and diversification of heat sources for the relevant neighbourhoods. | Learning and capabilities, Infrastructure and Technology.  |
 | --- | --- | --- |
 |  Energy for the City | An implementing organisation within the City of Amsterdam is being set up for a large-scale roll-out of the energy transition implementation. This starts in the fall of 2023. | Learning and Capabilities  |
 |  Staff shortages | The large staff shortages of technically trained personnel at all levels are a factor to consider in the implementation of heating plans. We will work on this throughout 2023-2024 through the Sustainable City, Sustainable Jobs programme. |   |
 |  Committing to blending green gas (CED) | Blending green gas into the existing gas supply is a responsibility of the central government. The municipality supports the target of adding 20% green gas by 2030, but it is currently uncertain whether sufficient green gas is or will be available. | Governance Innovation and Policy  |
 |  Heat programme | The heat programme is a legal document under the Environmental Act defining which sustainable heating systems will be realised in the city and when. This looks at both the technical details, financial and spatial implications and how to actually implement the preferred techniques. Besides heating, the increasing demand for cooling is also taken into account in the preparations. | Technology, Governance Innovation and Policy  |
 |  Research into preferred heating technologies, including congestion of power grid | Amsterdam's power grid faces congestion. We foresee solid growth in electricity demand due to residential construction, data centres and electrification of mobility. In addition, heating sustainability has a major effect on electricity demand. | Technology and Infrastructure  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 |   | We examine which techniques are preferable based on the combined tasks, financial, sustainability, space use and building capacity to arrive at robust choices. This also serves as input for the heat programme. |   |
 | --- | --- | --- |
@@ -1284,9 +1042,6 @@ CO2 emissions
 
 %
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 CO2 emissions. To reduce these emissions, one of our efforts is to make savings. The focus in this sector is on maximising renewable energy generation on Amsterdam territory with mature technologies such as solar panels and wind turbines. This is presented in the impact pathway "Making Amsterdam's energy mix more sustainable". The chapter on Industry and Port discusses converting biomass to electricity and heat. The share of sustainably produced energy was 6% of the energy used in Amsterdam in 2017. About three quarters of that renewable energy (electricity and heat) is generated by waste incineration; a quarter comes from solar panels and wind turbines. We believe that in the future, we will be able to domestically produce up to 30 percent of our electricity needs sustainably. Support for solar and wind energy is high among Amsterdam residents. Research by O&amp;S from 2022 shows that nine in 10 residents are in favour of the switch to renewable energy, with 90% and 86% respectively identifying solar and wind energy as sustainable.
 
 In Amsterdam, a lot of roof space is suitable for solar power generation and we aim to ensure that no roof is left unused. In total, there is room for about 1,100 MW of solar panels. We aim for half of Amsterdam's rooftop potential to be utilised by 2030. By 2040, all suitable roofs should be used for renewable energy generation.
@@ -1310,13 +1065,7 @@ B-1.2.1 Making Amsterdam's energy mix more sustainable
 |  Total cost and cost per tonne of CO2e | TBD  |
 |  Co-benefits | Reduced energy dependence Improved health Energy stability Lower energy demand  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
-|   | Job creation
-Growth of SMEs in the technology sector
-Stable power supply for commercial activities
-Reduced price volatility for energy services  |
+|   | Job creation Growth of SMEs in the technology sector Stable power supply for commercial activities Reduced price volatility for energy services  |
 | --- | --- |
 |  Policy document(s) | Regional Energy Strategy; Our city of tomorrow;  |
 
@@ -1342,15 +1091,9 @@ A congested power grid, by the way, will arise well before 2050. Liander has alr
 |  Impact pathway | Innovating and expanding towards a smart and flexible power grid  |
 | --- | --- |
 |  Early results | Better understanding of needs for the grid to facilitate transition, Smarter handling of available capacity on the grid, Faster incorporation of innovations into the grid, More efficient and faster process for grid reinforcement and expansion.  |
-|  Later results | Future-proof power grid
-More renewable energy generation:  |
+|  Later results | Future-proof power grid More renewable energy generation:  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
-|   | 2030: 550 MW solar + 127 MW wind
-: 1.1000 MW solar power
-: 100% renewable energy  |
+|   | 2030: 550 MW solar + 127 MW wind 1.1000 MW solar power 100% renewable energy  |
 | --- | --- |
 |  Actors involved | City of Amsterdam, DSO Liander, TSO TenneT,  |
 |  Scale | Building/home, neighbourhood, district, municipality  |
@@ -1370,11 +1113,7 @@ Our city of tomorrow: City Climate Contract. Action plan.
 |  Handing out devices that measure standby consumption to SMEs and homes (CED) |  | Technology and Infrastructure  |
 |  Installing batteries, smart charging stations, etc.. (CED) |  | Technology and Infrastructure  |
 |  Social prioritisation methodology (OSVM) | Collaboration with partners on methodology to prioritise social and local power allocation in the context of grid congestion. | Governance innovation and policy  |
-|  Expansion of existing substations, new substations and cable connections by Liander and Tennet | Amsterdam's power grid will need to be significantly upgraded in the coming decades. This will require major modifications: 29 new substations will be built at 23 locations, with associated cable connections. And 12 existing substations are also being substantially reinforced.
-The growing demand for capacity in the power grid is so high that reinforcements – where possible – need to be tackled at an accelerated pace. Realisation of the expansion task in Amsterdam is largely expected in 2023-2028. An overall calculation shows that the construction, as well as the design and preparation of the overall expansion of the main power grid structure, will require investments of €750 million from Liander and €650 million from TenneT. | Technology and Infrastructure  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
+|  Expansion of existing substations, new substations and cable connections by Liander and Tennet | Amsterdam's power grid will need to be significantly upgraded in the coming decades. This will require major modifications: 29 new substations will be built at 23 locations, with associated cable connections. And 12 existing substations are also being substantially reinforced. The growing demand for capacity in the power grid is so high that reinforcements – where possible – need to be tackled at an accelerated pace. Realisation of the expansion task in Amsterdam is largely expected in 2023-2028. An overall calculation shows that the construction, as well as the design and preparation of the overall expansion of the main power grid structure, will require investments of €750 million from Liander and €650 million from TenneT. | Technology and Infrastructure  |
 
 |  Drawing up Implementation Agenda for power grid expansion | For more efficient management of this task, an (official) implementation agenda is being developed. This implementation agenda is a tool/resource to arrive at more specific follow-up agreements and streamlined processes of decision-making and actions for each substation to be expanded and new substation (including cable connections and possible final site selection). This is an integrated planning in which feasibility, land acquisition, administrative decision-making of a site and planning procedures are tracked and bottlenecks can be identified and addressed with the responsible parties. | Governance innovation and policy  |
 | --- | --- | --- |
@@ -1399,9 +1138,6 @@ CO2 emissions
 
 %
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 energy cluster to a leader in renewable energy, heat and alternative fuels for shipping and aviation. How the municipality is shaping this is reflected in the municipal port vision.
 
 The CO2 emissions of the Amsterdam Port &amp; Industry covers all companies classified by CBS as industrial companies and located in Amsterdam, including AEB's waste incineration plants and Waternet's Sewage Treatment Plants. Industrial companies in Amsterdam emit 920 kilotonnes of CO2 annually (18% of the total), more than half of which comes from AEB Amsterdam. Most of the industrial companies are located in Amsterdam's port area. Meeting the climate target requires making the port economy greener. The port area as a 'sustainable battery for the city, region and Europe' offers prospects for a port economy with little to no CO2 emissions and plenty of room to generate, store and distribute renewable energy to end users on an industrial scale. The new port economy provides sustainable energy products and services such as sustainably generated electricity, green hydrogen, renewable fuels, energy storage capacity and switching power. Carbon Capture, Storage and Utilisation (CCSU) is a part of the new port economy. This makes the port an important link for the energy transition of industry, power generation, international aviation, mobility and the built environment.
@@ -1421,20 +1157,11 @@ Port and inland navigation are also part of this sector. In any case, this requi
 |  Early results | More energy-efficient industry: 2025: -10% CO2 emissions  |
 |  Later results | Transforming the port into a sustainable energy hub. Greater hydrogen economy. More CO2 capture AEB. More energy-efficient industry: 2030: -55% CO2 emissions 2050: 100% fossil-free and circular  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 Actions for Accelerating industry sustainability
 
 |  Actions | Short Description | Levers of change  |
 | --- | --- | --- |
-|  Accelerating availability of necessary infrastructure | - informing and bringing together companies and grid operators;
-initiating energy-saving studies;
-keeping permitting procedures short;
-give official status to projects from CES (Cluster Energy Strategy) and MIEK (Multi-year Energy and Climate Infrastructure Programme);
-recognising negative emissions;
-timely mapping of routing (for steam, hydrogen, CO2 and residual heat) through the port of Amsterdam;
-leveraging the municipality's shareholder position. | Governance Innovation  |
+|  Accelerating availability of necessary infrastructure | - informing and bringing together companies and grid operators; initiating energy-saving studies; keeping permitting procedures short; give official status to projects from CES (Cluster Energy Strategy) and MIEK (Multi-year Energy and Climate Infrastructure Programme); recognising negative emissions; timely mapping of routing (for steam, hydrogen, CO2 and residual heat) through the port of Amsterdam; leveraging the municipality's shareholder position. | Governance Innovation  |
 |  CCS for total AEB emissions (fossil and biogenic) |  | Technology and Infrastructure  |
 |  Local steam grid in port on heat AEB (for industry) - Citizens' Council |  | Technology and Infrastructure  |
 |  Agreements with the 10 biggest polluters on reducing emissions and making their industrial processes sustainable (OSVM). |  | Governance Innovation  |
@@ -1444,13 +1171,9 @@ leveraging the municipality's shareholder position. | Governance Innovation  |
 |  Impact pathway | Working on the H2 economy  |
 | --- | --- |
 |  Early results | 2025: -10% CO2 emissions  |
-|  Later results | 2030: -55% CO2 emissions
-: 100% fossil-free and circular  |
+|  Later results | 2030: -55% CO2 emissions 100% fossil-free and circular  |
 |  Actors involved | Storage and transhipment companies, Industrial parties, Port of Amsterdam, Programmabureau NZKG, Province of Noord-Holland ...  |
 |  Scale | Central government, HyCC, Firan  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 |  Comments on feasibility and progress |   |
 | --- | --- |
@@ -1459,15 +1182,7 @@ Our city of tomorrow: City Climate Contract. Action plan.
 |  CO2e emissions by emission sector |   |
 |  Offset CO2e emissions (biologically or technologically fixed) |   |
 |  Total cost and cost per tonne of CO2e |   |
-|  Co-benefits | Technological innovation
-Improved air quality
-Lower energy demand
-Energy stability
-Stable power supply for commercial activities
-Reduced price volatility for energy services
-Improve the city's economic competitiveness
-Lower energy dependence
-Job creation in sustainability domain  |
+|  Co-benefits | Technological innovation Improved air quality Lower energy demand Energy stability Stable power supply for commercial activities Reduced price volatility for energy services Improve the city's economic competitiveness Lower energy dependence Job creation in sustainability domain  |
 |  Policy document(s) |   |
 
 # Actions for Working on the H2 economy
@@ -1483,9 +1198,6 @@ Job creation in sustainability domain  |
 |  Developing Hydrogen import chain from Bilbao Spain | The development of a green hydrogen logistics chain between Bilbao and Amsterdam to serve Dutch and European markets. | Cooperation/Chains  |
 |  Developing Hydrogen import chain from Saudi Arabia | The MoU builds on a previously signed agreement between Saudi Arabia and the Dutch government, aiming to strengthen cooperation in |   |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 |   | energy transition and hydrogen and establish international supply chains. A detailed feasibility study will also follow to establish a trade corridor for liquid green hydrogen between ACWA Power's production sites and Zenith's terminal at the Port of Amsterdam |   |
 | --- | --- | --- |
 |  Developing Hydrogen import chain from Abu Dhabi | The development of a green hydrogen logistics chain between Abu Dhabi and Amsterdam to serve Dutch and European markets. | Cooperation/Chains  |
@@ -1498,16 +1210,12 @@ Our city of tomorrow: City Climate Contract. Action plan.
 |  Electriq Global hydrogen powder plant | Electriq Global and Zenith Energy are building the world's first hydrogen powder plant in the port of Amsterdam. FID 2024 | Technology and Infrastructure  |
 |  Working on Hydrogen infrastructure, electrolysis, H2 import (OSVM) | In the coming years, we will work on a regional and national hydrogen infrastructure, electrolysis and large-scale import of hydrogen. | Technology and Infrastructure  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 B-1.3.3 Working on CCS in the city
 
 |  Impact pathway | Working on CCS in the city  |
 | --- | --- |
 |  Early results | 2025: -10% CO2 emissions  |
-|  Later results | 2030: -55% CO2 emissions
-: 100% fossil-free and circular  |
+|  Later results | 2030: -55% CO2 emissions 100% fossil-free and circular  |
 |  Actors involved | Municipality, AEB  |
 |  Scale | Municipality (shareholder), AEB, central government (subsidy)  |
 |  Comments on feasibility and progress |   |
@@ -1516,9 +1224,7 @@ B-1.3.3 Working on CCS in the city
 |  CO2e emissions by emission sector |   |
 |  Offset CO2e emissions (biologically or technologically fixed) |   |
 |  Total cost and cost per tonne of CO2e |   |
-|  Co-benefits | Technological innovation
-Improved air quality
-Improved health  |
+|  Co-benefits | Technological innovation Improved air quality Improved health  |
 |  Policy document(s) |   |
 
 Actions for Working on CCS in the city
@@ -1526,24 +1232,15 @@ Actions for Working on CCS in the city
 |  Actions | Short Description | Levers of change  |
 | --- | --- | --- |
 |  CCS for AEB emissions (fossil) | AEB's total emissions (including the biogenic part, but excluding heat generation from the biomass plant) were around 1.5 Mtonnes in 2018. Oh this, approximately 520 ktonnes were fossil. Current plans for CCS amount to 480 ktonnes. Since a maximum of 90% of CO2 emissions can be captured via CCS in practice, we assume a potential for additional CCS of 650 ktonnes. This would concern mostly biogenic carbon and capture thus leads to negative emissions. (CED). | Technology and Infrastructure  |
-|  Other CCS projects | If CCS is realised at AEB, and the infrastructure is in place, it is relatively easy to connect other point sources of CO2 near AEB to this infrastructure. With a significant effort from Amsterdam, it is possible to realise additional projects before 2030. This is partly about capturing biogenic CO2, creating negative emissions.
-Southpole (2022) has identified potential sources of biogenic emissions, where negative emissions can be realised with CCS:
-Cargill (40,000 tonnes/year, no current plans, 'less promising unless strongly incentivised')
-Advanced Methanol Amsterdam (AMA) ('less promising' in 2030, 'promising' in 2050: 116 ktonnes of CO2/year).
-Bio energy NL ('not promising' in 2030, 'promising' in 2050).
-Waternet (85 ktonnes of CO2/year, 'less promising', flows are too small and diluted). | Technology and Infrastructure, Research  |
+|  Other CCS projects | If CCS is realised at AEB, and the infrastructure is in place, it is relatively easy to connect other point sources of CO2 near AEB to this infrastructure. With a significant effort from Amsterdam, it is possible to realise additional projects before 2030. This is partly about capturing biogenic CO2, creating negative emissions. Southpole (2022) has identified potential sources of biogenic emissions, where negative emissions can be realised with CCS: Cargill (40,000 tonnes/year, no current plans, 'less promising unless strongly incentivised') Advanced Methanol Amsterdam (AMA) ('less promising' in 2030, 'promising' in 2050: 116 ktonnes of CO2/year). Bio energy NL ('not promising' in 2030, 'promising' in 2050). Waternet (85 ktonnes of CO2/year, 'less promising', flows are too small and diluted). | Technology and Infrastructure, Research  |
 |  Construction of CO2 network/connection to OCAP | Expanding the CO2 grid is prerequisite for CCS at carbon sources other than AEB | Technology and Infrastructure  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 B-1.3.4 Working on the sustainable energy port
 
 |  Impact pathway | Working on the sustainable energy port  |
 | --- | --- |
 |  Early results | 2025: -10% CO2 emissions  |
-|  Later results | 2030: -55% CO2 emissions
-: 100% fossil-free and circular  |
+|  Later results | 2030: -55% CO2 emissions 100% fossil-free and circular  |
 |  Actors involved | Port of Amsterdam,  |
 |  Scale | Port area  |
 |  Comments on feasibility and progress |   |
@@ -1552,17 +1249,8 @@ B-1.3.4 Working on the sustainable energy port
 |  CO2e emissions by emission sector |   |
 |  Offset CO2e emissions (biologically or technologically fixed) |   |
 |  Total cost and cost per tonne of CO2e |   |
-|  Co-benefits | Technological innovation
-Improved air quality
-Lower energy demand
-Energy stability
-Stable power supply for commercial activities
-Reduced price volatility for energy services
-Improve the city's economic competitiveness
-Lower energy dependence
-Job creation in sustainability domain  |
-|  Policy document(s) | 2021 – 2025 Port Strategy
-Clean Shipping Vision 2050  |
+|  Co-benefits | Technological innovation Improved air quality Lower energy demand Energy stability Stable power supply for commercial activities Reduced price volatility for energy services Improve the city's economic competitiveness Lower energy dependence Job creation in sustainability domain  |
+|  Policy document(s) | 2021 – 2025 Port Strategy Clean Shipping Vision 2050  |
 
 Actions for Working on CCS in the city
 
@@ -1580,9 +1268,6 @@ Actions for Working on CCS in the city
 |  Developing a sustainable settlement policy |  | Policy Innovation & Governance  |
 |  A customer engagement programme for sustainability | A customer engagement programme to make chains more sustainable and promote chain transparency. | Social innovations  |
 |  International sustainability projects. | Sustainability projects with international partner ports and | Cooperation/Chains  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 |   | customers to bind new sustainable chains to Amsterdam. |   |
 | --- | --- | --- |
@@ -1609,9 +1294,6 @@ Our city of tomorrow: City Climate Contract. Action plan.
 |  Working on Port Emission Reduction Technologies | Port Emission Reduction Technologies (PERT) With the deployment of technology, we reduce emissions from ships docked in the port. For example, shore power on and mobile power with sailing batteries. | Technology and Infrastructure  |
 |  Working on Port Call Optimisation innovation | Port Call Optimisation (PCO) We reduce emissions by handling shipping efficiently. | Technology and Infrastructure  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 # B-1.3.5 Working towards a sustainable digital sector
 
 |  Impact pathway | Working towards a sustainable digital sector  |
@@ -1625,8 +1307,7 @@ Our city of tomorrow: City Climate Contract. Action plan.
 |  CO2e emissions by emission sector |   |
 |  Offset CO2e emissions (biologically or technologically fixed) |   |
 |  Total cost and cost per tonne of CO2e |   |
-|  Policy document(s) | Data centre establishment policy Amsterdam 2020 – 2030 (review in 2023 and expected in late 2024)
-Data centre strategy Noord-Holland 2022-2024  |
+|  Policy document(s) | Data centre establishment policy Amsterdam 2020 – 2030 (review in 2023 and expected in late 2024) Data centre strategy Noord-Holland 2022-2024  |
 
 # Actions for Working towards a sustainable digital sector
 
@@ -1634,9 +1315,6 @@ Data centre strategy Noord-Holland 2022-2024  |
 | --- | --- | --- |
 |  Recalibration of data centre policy | CE Delft suggested as a measure not to honour data centre applications for a 75-ktonne emission reduction. We consider the blocking of ongoing plans and projects (often started and licensed years ago) as undesirable. However, new establishment conditions can prevent the power of data centres to grow to 670 MW in 2030, which is currently set as the maximum in the establishment decision. In early 2024, the College of Mayor and Alderpersons of Amsterdam issued a preparatory decision. Amsterdam, after adoption of the Data Centres zoning plan, will apply a ‘no, unless...’ policy: new data centres can only be built in Amsterdam if they directly serve an Amsterdam interest and meet new sustainability requirements. The policy applies to new establishments or expansions of more than 5 MW. The college aims to have the umbrella zoning plan ready in Q4 2024. | Learning and Capabilities, Governance Innovation and policy Technology and Infrastructure  |
 |  Data centres energy saving through stricter requirements (Citizens' Council) |  | Governance Innovation and policy  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 # B-1.4 Mobility and Logistics
 
@@ -1670,9 +1348,6 @@ A flexible, robust and universally accessible mobility system is needed to respo
 
 ¹⁰ Shared Transport Memorandum
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 common term) plays an important role in this. It is an alternative to private car ownership and car use; especially when combined with public transport. In addition, shared transport is sustainable, flexible and it encourages chain travel. The City of Amsterdam is constantly working on making the city's air cleaner and healthier. Important is the transition to more sustainable and quieter mobility. The measures involved can be classified according to the nationally and internationally used concept of the Trias Mobilica, which focuses on transport of people and goods by road and water. We are working to reduce the amount of road traffic. We do this with tasks such as Amsterdam Autoluw in which shared mobility and the development of hubs play an important role. Changing the way we travel to sustainable forms of mobility. We are working to encourage the use of public transport and cycling, rather than cars. We are also working hard to further clean up mobility and a number of other sources; the Amsterdam Zero-Emission Mobility Implementation Agenda 2023-2026 mainly contributes to this.¹¹
 
 A lot is being done in the city. With various (mobility) programmes, we are working on the city of tomorrow. We do this with the programmes Air Quality, Smart Mobility, Bicycle, Boating, Urban Logistics and the Bridges and Quay Walls Action Plan, among others. Together with the Transport Region, we are working on the Mobility Investment Agenda, the Urban Public Transport Development Strategy 2020-2030, the Regional Public Transport Future Vision and the regional cycling network, among others. All these developments affect mobility and public space in the city and region. We therefore consider the various measures in conjunction and coordinate their implementation.¹²
@@ -1684,9 +1359,7 @@ As a city, we want to make space for pedestrians, cyclists and children playing,
 |  Impact pathway | Optimising public space for pedestrians, cyclists and public transport  |
 | --- | --- |
 |  Early results | Less space for private cars.  |
-|  Later results | Increased use of active modes and public transport at the expense of private car use.
-: Meeting 2005 WHO air quality advisory values
-: 100% zero-emission traffic  |
+|  Later results | Increased use of active modes and public transport at the expense of private car use. Meeting 2005 WHO air quality advisory values 100% zero-emission traffic  |
 |  Actors involved | City, municipality, residents, developers, shared mobility providers, GGD, knowledge and innovation organisations.  |
 |  Scale | City; municipality; stations; metro stops; districts; cycling routes; streets; cycling connections.  |
 |  Renewable energy generated | N/A  |
@@ -1694,23 +1367,8 @@ As a city, we want to make space for pedestrians, cyclists and children playing,
 |  CO2e emissions by emission sector | TBD  |
 |  Offset CO2e emissions (biologically or technologically fixed) | N/A  |
 |  Total cost and cost per tonne of CO2e | TBD  |
-|  Co-benefits | Improved air quality
-Improved health
-Active lifestyle
-Increased quality of life
-Less traffic congestion
-Less delay
-Decrease in car dependence
-Lower maintenance costs for users
-Increased efficiency  |
-|  Policy document(s) | Multi-year Bicycle Plan
-Smart Mobility Programme
-Agenda Amsterdam Autoluw
-Amsterdam Climate Neutral Roadmap (2020)
-Memorandum on Shared Transport  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
+|  Co-benefits | Improved air quality Improved health Active lifestyle Increased quality of life Less traffic congestion Less delay Decrease in car dependence Lower maintenance costs for users Increased efficiency  |
+|  Policy document(s) | Multi-year Bicycle Plan Smart Mobility Programme Agenda Amsterdam Autoluw Amsterdam Climate Neutral Roadmap (2020) Memorandum on Shared Transport  |
 
 Actions for Optimising public space for pedestrians, cyclists and public transport
 
@@ -1737,9 +1395,6 @@ Actions for Optimising public space for pedestrians, cyclists and public transpo
 |  Facilitating the new cycling | Facilitate the new cycling, including encouraging bicycle-friendly behaviour. | Social innovations  |
 |  Creating clean and active movements | Creating more clean and active travel, including creating space for public transport. | Technology and Infrastructure  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 |  Less car parking | Creating space through less car parking, including fewer parking permits. | Governance innovations & Policy  |
 | --- | --- | --- |
 |  Technological innovations cyclists | Commit to technological innovations, including smart bicycle parking. | Technology and Infrastructure  |
@@ -1762,8 +1417,7 @@ As a city, we experience that a large proportion of space is consumed by mobilit
 |  Impact pathway | Facilitating, encouraging and regulating supply and use of shared mobility  |
 | --- | --- |
 |  Early results | Increasing supply and use of shared mobility.  |
-|  Later results | Reduction in private car ownership.
-: 100% zero-emission traffic  |
+|  Later results | Reduction in private car ownership. 100% zero-emission traffic  |
 |  Actors involved | City, municipality, residents, developers, shared mobility providers, knowledge and innovation organisations.  |
 |  Scale | City; municipality; stations; metro stops; districts.  |
 |  Renewable energy generated | N/A  |
@@ -1771,20 +1425,10 @@ As a city, we experience that a large proportion of space is consumed by mobilit
 |  CO2e emissions by emission sector | TBD  |
 |  Offset CO2e emissions (biologically or technologically fixed) | N/A  |
 |  Total cost and cost per tonne of CO2e | TBD  |
-|  Co-benefits | Improved health
-Improved air quality
-Lower energy demand
-Job creation in sustainability domain
-Lower maintenance costs for users
-Reduced space demand for parking facilities  |
+|  Co-benefits | Improved health Improved air quality Lower energy demand Job creation in sustainability domain Lower maintenance costs for users Reduced space demand for parking facilities  |
 |  Policy document(s) | Agenda Amsterdam Autoluw  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
-|   | Amsterdam Climate Neutral Roadmap (2020)
-Memorandum on Shared Transport
-Zero-Emission Mobility Implementation Agenda 2023-2026  |
+|   | Amsterdam Climate Neutral Roadmap (2020) Memorandum on Shared Transport Zero-Emission Mobility Implementation Agenda 2023-2026  |
 | --- | --- |
 
 Actions for Facilitating, encouraging and regulating supply and use of shared mobility.
@@ -1808,9 +1452,6 @@ Actions for Facilitating, encouraging and regulating supply and use of shared mo
 |  Increasing supply of shared bicycles. |  | Technology & Infrastructure  |
 |  AMS Project: Sustainable neighbourhood logistics: opportunities for hubs? | Investigating and testing business models for sustainable neighbourhood logistics | Research/Monitoring  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 # B-1.4.3 Facilitating and regulating full-fledged charging network
 
 As a city of Amsterdam, we aim to become a zero-emission city. 100% zero-emission mobility is part of this. Electric transport is needed to achieve the goal of zero-emission mobility. The presence of all electric vehicles and vessels requires a full charging network. As a city, we are committed to facilitating and regulating this full-fledged charging network so that we can develop a safe, reliable, accessible and affordable charging infrastructure in the coming years.
@@ -1826,17 +1467,8 @@ As a city of Amsterdam, we aim to become a zero-emission city. 100% zero-emissio
 |  CO2e emissions by emission sector |   |
 |  Offset CO2e emissions (biologically or technologically fixed) |   |
 |  Total cost and cost per tonne of CO2e |   |
-|  Co-benefits | Improved health
-Improved air quality
-Energy stability
-Technological innovation
-Stable power supply for commercial activities
-Job creation in sustainability domain  |
-|  Policy document(s) | Amsterdam Climate Neutral Roadmap (2020)
-Charging infrastructure strategic plan 2020-2030
-Monitor Clean Air Action Plan 2022
-Zero-Emission Mobility Implementation Agenda 2023-2026
-Regional Implementation Agenda Urban Logistics  |
+|  Co-benefits | Improved health Improved air quality Energy stability Technological innovation Stable power supply for commercial activities Job creation in sustainability domain  |
+|  Policy document(s) | Amsterdam Climate Neutral Roadmap (2020) Charging infrastructure strategic plan 2020-2030 Monitor Clean Air Action Plan 2022 Zero-Emission Mobility Implementation Agenda 2023-2026 Regional Implementation Agenda Urban Logistics  |
 
 # Actions for Facilitating and regulating full-fledged charging network
 
@@ -1849,9 +1481,6 @@ Regional Implementation Agenda Urban Logistics  |
 |  Publishing neighbourhood location plan for charging station sites. | Publishing neighbourhood location plan mapping potential charging station locations and coordinating with city districts, tasks and residents. | Governance innovations & Policy; Democratisation and participation  |
 |  Agreements on future-proof construction of charging points in new construction projects | Internal arrangements are being made to future-proof the construction of charging points in new construction projects. | Governance innovations & Policy  |
 |  Community location plans for new placement procedure. | Community location plans: the municipality will adopt a new placement procedure where traffic decisions will be made at the community level. Areas of concern | Governance innovations & Policy; Technology and Infrastructure; Funding and financing  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 |   | are the available budget, power grid congestion due to heavy charging infrastructure and fitting the charging infrastructure into the urban environment. |   |
 | --- | --- | --- |
@@ -1879,25 +1508,14 @@ Towards a cleaner and healthier Amsterdam, we are committed to making private tr
 |  CO2e emissions by emission sector |   |
 |  Offset CO2e emissions (biologically or technologically fixed) |   |
 |  Total cost and cost per tonne of CO2e |   |
-|  Co-benefits | Improved health
-Improved air quality
-Lower maintenance costs for users  |
-|  Policy document(s) | 2023 Memorandum on Shared Transport
-Zero-Emission Mobility Implementation Agenda 2023-2026
-Monitor Clean Air Action Plan 2022
-Regional Implementation Agenda Logistics
-Agenda Amsterdam Autoluw
-Charging infrastructure strategic plan 2020-2030
-Amsterdam Climate Neutral Roadmap (2020)  |
+|  Co-benefits | Improved health Improved air quality Lower maintenance costs for users  |
+|  Policy document(s) | 2023 Memorandum on Shared Transport Zero-Emission Mobility Implementation Agenda 2023-2026 Monitor Clean Air Action Plan 2022 Regional Implementation Agenda Logistics Agenda Amsterdam Autoluw Charging infrastructure strategic plan 2020-2030 Amsterdam Climate Neutral Roadmap (2020)  |
 
 Actions for Making private transport more sustainable
 
 |  Action | Description | Levers of Change  |
 | --- | --- | --- |
 |  Introduction of Environmental Zone (diesel) passenger cars. |  | Governance innovations & Policy  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 |  All shared cars zero-emission. |  | Technology and Infrastructure  |
 | --- | --- | --- |
@@ -1923,9 +1541,6 @@ Our city of tomorrow: City Climate Contract. Action plan.
 Also part of the impact pathway 'Making public transport more sustainable'
 Also part of the impact pathway 'Making Logistics More Sustainable'
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 # B-1.4.5 Making public transport more sustainable
 
 Towards a cleaner and healthier Amsterdam, we are committed to making public transport more sustainable. We support this ambition by focusing, among other things, on geographical restrictions on combustion-engine vehicles and vessels, and replacing current combustion-engine vehicles and vessels.
@@ -1942,22 +1557,8 @@ Towards a cleaner and healthier Amsterdam, we are committed to making public tra
 |  CO2e emissions by emission sector |   |
 |  Offset CO2e emissions (biologically or technologically fixed) |   |
 |  Total cost and cost per tonne of CO2e |   |
-|  Co-benefits | Improved health
-Improved air quality
-Lower energy demand
-Improved comfort in public transportation
-Reduced price volatility for energy services
-Reduction in car dependence  |
-|  Policy document(s) | GVB CO2 policy
-Zero-Emission Mobility Implementation Agenda 2023-2026
-Monitor Clean Air Action Plan 2022
-Regional Implementation Agenda Logistics
-Agenda Amsterdam Autoluw
-Charging infrastructure strategic plan 2020-2030
-Amsterdam Climate Neutral Roadmap (2020)  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
+|  Co-benefits | Improved health Improved air quality Lower energy demand Improved comfort in public transportation Reduced price volatility for energy services Reduction in car dependence  |
+|  Policy document(s) | GVB CO2 policy Zero-Emission Mobility Implementation Agenda 2023-2026 Monitor Clean Air Action Plan 2022 Regional Implementation Agenda Logistics Agenda Amsterdam Autoluw Charging infrastructure strategic plan 2020-2030 Amsterdam Climate Neutral Roadmap (2020)  |
 
 Actions for Making public transport more sustainable
 
@@ -1977,9 +1578,6 @@ Actions for Making public transport more sustainable
 Also part of the impact pathway 'Making Logistics More Sustainable'
 Also part of the impact pathway 'Making Private Transport More Sustainable'
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 # B-1.4.6 Making logistics more sustainable
 
 Towards a cleaner and healthier Amsterdam, we are committed to making logistics more sustainable. We support this ambition by focusing, among other things, on geographical restrictions on combustion-engine vehicles and vessels, and regulations to support stakeholders in this transition.
@@ -1996,18 +1594,8 @@ Towards a cleaner and healthier Amsterdam, we are committed to making logistics 
 |  CO2e emissions by emission sector | ?  |
 |  Offset CO2e emissions (biologically or technologically fixed) | ?  |
 |  Total cost and cost per tonne of CO2e | ?  |
-|   | Improved health
-Improved air quality
-Lower energy costs
-Reduced price volatility for energy services
-Lower maintenance costs
-Greater efficiency  |
-|  Policy document(s) | Zero-Emission Mobility Implementation Agenda 2023-2026
-Monitor Clean Air Action Plan 2022
-Regional Implementation Agenda Logistics
-Agenda Amsterdam Autoluw
-Charging infrastructure strategic plan 2020-2030
-Amsterdam Climate Neutral Roadmap (2020)  |
+|   | Improved health Improved air quality Lower energy costs Reduced price volatility for energy services Lower maintenance costs Greater efficiency  |
+|  Policy document(s) | Zero-Emission Mobility Implementation Agenda 2023-2026 Monitor Clean Air Action Plan 2022 Regional Implementation Agenda Logistics Agenda Amsterdam Autoluw Charging infrastructure strategic plan 2020-2030 Amsterdam Climate Neutral Roadmap (2020)  |
 
 Actions for Making logistics more sustainable
 
@@ -2020,9 +1608,6 @@ Actions for Making logistics more sustainable
 |  Zero-emission urban inland waterway transport.1 |  | Technology and Infrastructure  |
 |  Facilitating hydrogen refuelling station rollout.1,3 |  | Technology and Infrastructure  |
 |  Enforcement for foreign vehicles | A solution to the enforcement for foreign vehicles is being worked on.1,3 | Governance innovations & Policy  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 |  National office for environmental and zero-emission zone exemptions from 2025 | The City of Amsterdam is working with other municipalities, various partners and the central government to create a national office for environmental and zero-emission zone exemptions from 2025. ^{1,3} | Governance innovations & Policy; Democratisation and participation  |
 | --- | --- | --- |
@@ -2041,10 +1626,6 @@ Our city of tomorrow: City Climate Contract. Action plan.
 |  Tightening investigation into environmental zone freight |  | Research/Monitoring  |
 |  Experimenting with LEVV (light-electric freight transport). |  | Research/Monitoring  |
 |  Drafting Logistics Schedule of Requirements (LSoE). |  | Governance innovations & Policy  |
-
-September 2024
-5
-Our city of tomorrow: City Climate Contract. Action plan.
 
 |  Facilitating hydrogen for urban logistics |  | Technology and Infrastructure  |
 | --- | --- | --- |
@@ -2065,9 +1646,6 @@ Our city of tomorrow: City Climate Contract. Action plan.
 
 Also part of the impact pathway 'Making public transport more sustainable'
 Also part of the impact pathway 'Making private transport more sustainable'
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 # B-2 The Food Transition
 
@@ -2101,8 +1679,6 @@ Similarly, the EAT-Lancet report, a leading scientific study, recommends reducin
 
 Based on this scientific evidence, the Amsterdam UMC recently published a petition¹⁷ calling for less animal-based and more plant-based food in hospitals. In doing so, they and other health institutions
 
-September 2024
-
 -
 
 ¹³ Field to fork: global food miles generate nearly 20% of all CO2 emissions from food (European Commission, 25 February 2023)
@@ -2114,7 +1690,6 @@ September 2024
 ¹⁶ *Meerderheid Nederlanders is tegen intensieve veehouderij, maar we eten nog nauwelijks vegetarisch | Trouw*
 
 ¹⁷ *Petition for a plant-based food offer at Amsterdam UMC (office.com)*
-Our city of tomorrow: City Climate Contract. Action plan.
 
 embracing the protein transition are sending an important message: the protein transition is essential for public health and for the planet.
 
@@ -2146,10 +1721,7 @@ Industrial animal husbandry is often accompanied by harrowing conditions for ani
 
 About 70% of agricultural land in the Netherlands is used for livestock farming. 60% of meat and as much as 70% of milk is exported. To feed our livestock, forests are cleared elsewhere or it comes at the expense of food production elsewhere, thus contributing to food inequality.
 
-September 2024
-
 ¹⁸ Poore, J., &amp; Nemecek, T. (2018). Reducing food’s environmental impacts through producers and consumers. *Science*, 360(6392), 987-992.
-Our city of tomorrow: City Climate Contract. Action plan.
 
 The current and most common forms of livestock and arable farming are at the expense of soil life and have negative impacts on biodiversity in the fields and adjacent ditches. To get the quality of the ditches and waters around the pastures and fields that are intensively fertilised to the agreed level, you will first have to do some 15 to 30 years of nature-inclusive farming on them.
 
@@ -2172,9 +1744,6 @@ In late 2020, the City Council discussed Partij voor de Dieren's own-initiative 
 |  Early results |   |
 |  Result | Shifting the ratio of vegetable to animal proteins in Amsterdam residents’ diets to 60% vegetable and 40% animal proteins by 2030  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 Actions for More Plant based
 
 |  Action | Description | Levers of Change  |
@@ -2187,16 +1756,9 @@ Actions for More Plant based
 |  Plant Based Treaty | Being one of the first European cities to sign the Plant-Based Treaty. | Governance Innovations & Policy Social innovations  |
 |  Research on protein ratio | Researching whether we can exceed the protein ratio of 60:40. | Governance Innovations & Policy Research/Monitoring  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
-|  Facilitating innovative plant-based start-ups and scale-ups | Supporting, connecting and facilitating innovative start-ups and scale-ups. Particularly focused on More Plant Based and protein transition. | Governance innovations & Policy Social innovations
-Democratisation and participation
-Funding and financing
-Learning and capabilities  |
+|  Facilitating innovative plant-based start-ups and scale-ups | Supporting, connecting and facilitating innovative start-ups and scale-ups. Particularly focused on More Plant Based and protein transition. | Governance innovations & Policy Social innovations Democratisation and participation Funding and financing Learning and capabilities  |
 | --- | --- | --- |
-|  A campaign on banqueting (vegetarian meetings). | A campaign on banqueting (vegetarian meetings). | Governance innovations & Policy Social innovations
-Learning and capabilities  |
+|  A campaign on banqueting (vegetarian meetings). | A campaign on banqueting (vegetarian meetings). | Governance innovations & Policy Social innovations Learning and capabilities  |
 
 # B-2.2 Reducing food waste
 
@@ -2215,12 +1777,7 @@ Food waste is the third biggest contributor to CO2 emissions in the Netherlands.
 |  Removed/substituted energy, volume, or fuel type |   |
 |  CO2e emissions by emission sector | The related GHGs are huge. The food stream in Amsterdam accounts for 8 Mtonnes of CO2 annually. Preventing waste within our sphere of influence will not completely inhibit this, but suppose 30% is wasted, and we can reduce it to 15%, that already results in a +- 1.2 Mtonnes gain.  |
 |  Offset CO2e emissions (biologically or technologically fixed) |   |
-|  Total cost and cost per tonne of CO2e | Cost reduction
-Increased food security
-Reduction in waste and waste transport  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
+|  Total cost and cost per tonne of CO2e | Cost reduction Increased food security Reduction in waste and waste transport  |
 
 Policy document
 Food strategy implementation plan
@@ -2249,9 +1806,6 @@ Actions for Preventing food waste
 
 This is described in section B-5.2.1 Making own organisation's food chain more sustainable
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 # B-2.4 Short Chains and Urban Farming
 
 As a capital city, we want to make an active contribution to the necessary transition of agriculture in the metropolitan landscape. From producing at the lowest price for the global market to more products for the regional and local market. We also want to make Amsterdam residents more aware of the production, distribution, preparation and consumption of food so that they will buy more sustainable food, eat healthier and waste less food. One way we want to do this is by encouraging urban farming and short chains.²²
@@ -2260,8 +1814,7 @@ As a capital city, we want to make an active contribution to the necessary trans
 
 |  Impact pathway | Making available sustainably and regionally produced food  |
 | --- | --- |
-|  Early results | Residents ‘prosumers’: By 2026, 20% of Amsterdam residents will be familiar with or involved in urban farming
-Sustainable, regionally produced food becomes more available  |
+|  Early results | Residents ‘prosumers’: By 2026, 20% of Amsterdam residents will be familiar with or involved in urban farming Sustainable, regionally produced food becomes more available  |
 |  Result | In 2030: 25% sustainably produced regional food available in Amsterdam.  |
 |  Actors involved | City of Amsterdam, City Farming Foundation, City Farming Academy, local parties, Wageningen University & Research, Amped, MRA Foodcouncil, City Deal, Boeren voor Buren (Farmers for Neighbours)  |
 |  Scale | City, hospitality, public institutions, municipal property, workplace, stations, social initiatives  |
@@ -2274,17 +1827,7 @@ Sustainable, regionally produced food becomes more available  |
 
 ²² 7_vrm23_199_uitvoeringsplan_voedselstrategie_a4_liggend_1 (6).pdf
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
-|  Co-benefits | Increased food security
-Improved health
-Improved animal welfare
-Sustainable food production
-Food safety
-Stimulating local food production
-Reduced food transport
-Reduction in waste and waste transport  |
+|  Co-benefits | Increased food security Improved health Improved animal welfare Sustainable food production Food safety Stimulating local food production Reduced food transport Reduction in waste and waste transport  |
 | --- | --- |
 |  Policy document | Food strategy implementation plan  |
 
@@ -2292,36 +1835,17 @@ Reduction in waste and waste transport  |
 
 |  Action | Description | Levers of Change  |
 | --- | --- | --- |
-|  Increasing awareness and impact of urban farming | Increasing awareness and impact of urban farming in Amsterdam and the number of people participating in urban farming. | Social innovations
-Democratisation and participation
-Learning and capabilities  |
-|  Organising Urban Farming Day | Organising Amsterdam Urban Farming Day together with Stichting Stadslandbouw Amsterdam. | Social innovations
-Democratisation and participation
-Learning and capabilities  |
-|  Urban Farming Academy | Urban Farming Academy in collaboration with local parties in Amsterdam Zuidoost and Wageningen University & Research (WUR) | Social innovations
-Democratisation and participation
-Learning and capabilities  |
-|  Developing framework for urban farming | Developing framework for urban farming together with Stichting Stadslandbouw Amsterdam. | Governance innovations & Policy Research/Monitoring
-Learning and capabilities  |
+|  Increasing awareness and impact of urban farming | Increasing awareness and impact of urban farming in Amsterdam and the number of people participating in urban farming. | Social innovations Democratisation and participation Learning and capabilities  |
+|  Organising Urban Farming Day | Organising Amsterdam Urban Farming Day together with Stichting Stadslandbouw Amsterdam. | Social innovations Democratisation and participation Learning and capabilities  |
+|  Urban Farming Academy | Urban Farming Academy in collaboration with local parties in Amsterdam Zuidoost and Wageningen University & Research (WUR) | Social innovations Democratisation and participation Learning and capabilities  |
+|  Developing framework for urban farming | Developing framework for urban farming together with Stichting Stadslandbouw Amsterdam. | Governance innovations & Policy Research/Monitoring Learning and capabilities  |
 |  Drawing up research agenda | Drawing up research agenda for existing initiatives, substantiation of expanding number and m2 | Research/Monitoring  |
-|  Food system rollout strategy MRA | Drawing up robust roll-out strategy for a regional, regenerative food system in the MRA set up by Amped/Local 2 Local in a coalition of parties from city and country. | Governance innovations & Policy Social innovations
-Democratisation and participation
-Learning and capabilities  |
-|  Organising new marketplaces | Organising new marketplaces in collaboration with local parties, MRA FoodCouncil and MRA regional food system rollout strategy. | Social innovations
-Democratisation and participation
-Learning and capabilities  |
+|  Food system rollout strategy MRA | Drawing up robust roll-out strategy for a regional, regenerative food system in the MRA set up by Amped/Local 2 Local in a coalition of parties from city and country. | Governance innovations & Policy Social innovations Democratisation and participation Learning and capabilities  |
+|  Organising new marketplaces | Organising new marketplaces in collaboration with local parties, MRA FoodCouncil and MRA regional food system rollout strategy. | Social innovations Democratisation and participation Learning and capabilities  |
 |  Sharing success and failure factors for regional production | Sharing success and failure factors of existing regional production initiatives within City Deal collaboration | Governance innovations & Policy Learning and capabilities  |
-|  Revitalising collaboration Boeren voor Buren (Farmers for Neighbours). | Revitalising collaboration Boeren voor Buren (Farmers for Neighbours). | Governance innovations & Policy Social innovations
-Democratisation and participation
-Learning and capabilities  |
+|  Revitalising collaboration Boeren voor Buren (Farmers for Neighbours). | Revitalising collaboration Boeren voor Buren (Farmers for Neighbours). | Governance innovations & Policy Social innovations Democratisation and participation Learning and capabilities  |
 |  Reflective monitoring | Setting up reflective monitoring with Directie Data and VU (FoodCLIC): Co-design of indicators with stakeholders. | Research/Monitoring  |
-|  Artis master plan - Food boulevard | Artis and surroundings master plan: research into realising a Food Boulevard at the Sarphatikant with a restaurant that will process cultivated food. The restaurant will be publicly accessible and the Salmhuisjes will provide space for | Social innovations
-Research/Monitoring
-Democratisation and participation
-Learning and capabilities  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
+|  Artis master plan - Food boulevard | Artis and surroundings master plan: research into realising a Food Boulevard at the Sarphatikant with a restaurant that will process cultivated food. The restaurant will be publicly accessible and the Salmhuisjes will provide space for | Social innovations Research/Monitoring Democratisation and participation Learning and capabilities  |
 
 |   | education and storage of grown produce. |   |
 | --- | --- | --- |
@@ -2333,9 +1857,6 @@ Our city of tomorrow: City Climate Contract. Action plan.
 |  Quartermaster Food Hubs | Quartermaster food hubs – schedule of requirements for food hubs. | Governance innovations & Policy  |
 |  Exploring Milan Foodhubs | Exploring whether the Milan Foodhubs example could be emulated in Amsterdam. Exploring social and logistics food hubs. | Research/Monitoring  |
 |  AMS Project: True Cost Accounting SFSC | Determining actual costs of urban food supply, incl. short chains, incorporating environmental costs | Governance Innovation/Policy Research/Monitoring  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 # B-2.5 Fair and Social Food
 
@@ -2353,9 +1874,6 @@ For instance, there is a clear trend of offering more vegetarian options in publ
 
 ![img-0.jpeg](img-0.jpeg)
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 |  Impact pathway | Facilities encourage fair and sustainably produced, healthy offerings  |
 | --- | --- |
 |  Early results | By 2028, 80%-100% of the food supply from municipal policies (sporting events, canteens, social base, municipal procurement) meets the guideline for healthy and sustainable food environment by Voedingscentrum  |
@@ -2368,60 +1886,27 @@ Our city of tomorrow: City Climate Contract. Action plan.
 |  CO2e emissions by emission sector |   |
 |  Offset CO2e emissions (biologically or technologically fixed) |   |
 |  Total cost and cost per tonne of CO2e |   |
-|  Co-benefits | Improved health
-Improved animal welfare
-Sustainable food production
-Food safety
-Stimulating local food production  |
+|  Co-benefits | Improved health Improved animal welfare Sustainable food production Food safety Stimulating local food production  |
 |  Policy document | Food strategy implementation plan  |
 
 ## Actions for Fair and Social Food
 
 |  Action | Description | Levers of Change  |
 | --- | --- | --- |
-|  Facilitating neighbourhood kitchens and food circles | Supporting and facilitating neighbourhood kitchens/food circles and related kitchen gardens | Social innovations
-Democracy & Participation
-Funding and financing  |
-|  Developing participation policy line | Developing policy line 'neighbourhoods for local food and against food waste', it is integral and participatory. | Governance innovations & Policy Social innovations
-Democracy & Participation  |
-|  Agreements with Stadspas | Make agreements with the Stadspas scheme to support a fair price for healthy and sustainable food. | Social innovations
-Democracy & Participation  |
-|  Agreements with social organisations | Make arrangements with food banks, Red Cross, Human Aid Now and other food bank-related social organisations. Linking with local suppliers and producers in the MRA. | Social innovations
-Democracy & Participation  |
+|  Facilitating neighbourhood kitchens and food circles | Supporting and facilitating neighbourhood kitchens/food circles and related kitchen gardens | Social innovations Democracy & Participation Funding and financing  |
+|  Developing participation policy line | Developing policy line 'neighbourhoods for local food and against food waste', it is integral and participatory. | Governance innovations & Policy Social innovations Democracy & Participation  |
+|  Agreements with Stadspas | Make agreements with the Stadspas scheme to support a fair price for healthy and sustainable food. | Social innovations Democracy & Participation  |
+|  Agreements with social organisations | Make arrangements with food banks, Red Cross, Human Aid Now and other food bank-related social organisations. Linking with local suppliers and producers in the MRA. | Social innovations Democracy & Participation  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
-|  Making a value case | Active cooperation with funds and impulse schemes in creating a value case | Social innovations
-Democracy & Participation
-Learning and capabilities  |
+|  Making a value case | Active cooperation with funds and impulse schemes in creating a value case | Social innovations Democracy & Participation Learning and capabilities  |
 | --- | --- | --- |
-|  Community of Practice large employers | Joining Community of Practice of large employers in the field of procurement for catering and beverages | Social innovations
-Democracy & Participation
-Learning and capabilities  |
-|  Roadmap alternative instruments | Drawing up a roadmap of alternative instruments that are successful, through participation Alliance 'food for the healthy generation' | Governance innovations & Policy
-Social innovations
-Learning and capabilities  |
-|  Area-based approach Healthy Food Environment | Developing first area-based approach for healthy food environment in neighbourhood in together with initiatives and city districts | Governance innovations & Policy
-Social innovations
-Democratisation and participation
-Learning and capabilities  |
-|  Supporting AmsterDoeners | Support AmsterDoeners in food (foodcommons) with knowledge, network and funding. Increasing AmsterDoen's share of the food ecosystem by making regulations and funding schemes accessible to collectives. | Social innovations
-Democratisation and participation
-Funding and financing
-Learning and capabilities  |
-|  Organising incubator programme | Organising an incubator programme with three challenges each year. Promoting ecosystem for innovative food entrepreneurship, international exchange with other cities for trade, innovation and transition, access to talent and capital. | Social innovations
-Democratisation and participation
-Funding and financing
-Learning and capabilities  |
-|  Strengthening local ecosystem | Strengthening the local ecosystem and making space in rules and policies: such as allowing collectives to access funding and tenders | Governance innovations & Policy
-Democratisation and participation
-Funding and financing
-Learning and capabilities  |
+|  Community of Practice large employers | Joining Community of Practice of large employers in the field of procurement for catering and beverages | Social innovations Democracy & Participation Learning and capabilities  |
+|  Roadmap alternative instruments | Drawing up a roadmap of alternative instruments that are successful, through participation Alliance 'food for the healthy generation' | Governance innovations & Policy Social innovations Learning and capabilities  |
+|  Area-based approach Healthy Food Environment | Developing first area-based approach for healthy food environment in neighbourhood in together with initiatives and city districts | Governance innovations & Policy Social innovations Democratisation and participation Learning and capabilities  |
+|  Supporting AmsterDoeners | Support AmsterDoeners in food (foodcommons) with knowledge, network and funding. Increasing AmsterDoen's share of the food ecosystem by making regulations and funding schemes accessible to collectives. | Social innovations Democratisation and participation Funding and financing Learning and capabilities  |
+|  Organising incubator programme | Organising an incubator programme with three challenges each year. Promoting ecosystem for innovative food entrepreneurship, international exchange with other cities for trade, innovation and transition, access to talent and capital. | Social innovations Democratisation and participation Funding and financing Learning and capabilities  |
+|  Strengthening local ecosystem | Strengthening the local ecosystem and making space in rules and policies: such as allowing collectives to access funding and tenders | Governance innovations & Policy Democratisation and participation Funding and financing Learning and capabilities  |
 |  Monitoring added value | Monitoring and making added value measurable: financial, ecological, social. | Research/Monitoring  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 # B-3 The transition to a Circular Economy
 
@@ -2446,9 +1931,6 @@ The time to talk it all over again or wait for others is over. Only by doing it 
 # Circular impact pathways
 
 Following previous chapters on Amsterdam GHG emissions, the policy framework and systemic barriers and opportunities, we hereby present the impact pathways we (will) take for the circular transition. Associated actions are then elaborated and we will reflect on the early outcomes (1-2 years) and results (from 2030 onwards) of the actions and who the stakeholders are. We indicate which levers of change are used to bring about change. To the extent known, for each action, we show the expected impact in ktonnes of CO2 by 2030 and how much renewable energy will be generated. If it is
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 an indirect action, we show the indirect impact and/or co-benefits of the action. Finally, we provide a cost indication per action.
 
@@ -2490,9 +1972,6 @@ lack of affordable physical space;
 uneven playing field, with conventional companies not including many shadow costs in their price, making it harder for circular companies to compete;
 insufficient power due to grid congestion, which will limit the establishment or expansion of businesses in Amsterdam in the coming years.
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 |  Impact pathway | Enabling entrepreneurs/SMEs to work circularly  |
 | --- | --- |
 |  Early results (1-2 years) | We enable parties in the city to work circularly. One way we do this is by offering support schemes for entrepreneurs/SMEs.  |
@@ -2505,67 +1984,29 @@ Our city of tomorrow: City Climate Contract. Action plan.
 |  CO2e emissions by emission sector |   |
 |  Offset CO2e emissions (biologically or technologically fixed) |   |
 |  Total cost and cost per tonne of CO2e | The total municipal cost of Together with the city for the period 2023-2026 is: €14,325,000. Of this, €6,700,000 has been reserved for the actions under Entrepreneurs/SMEs.  |
-|  Co-benefits | Technological innovation
-Cost reduction for businesses and residents
-Local job creation
-Reduction in waste and waste transport
-Reduced damage costs
-Participation
-Social cohesion  |
+|  Co-benefits | Technological innovation Cost reduction for businesses and residents Local job creation Reduction in waste and waste transport Reduced damage costs Participation Social cohesion  |
 |  Policy document(s) | Circular Implementation Agenda 2023-2026  |
 
 ## Actions for Entrepreneurs/SMEs
 
 |  Actions | Short Description | Levers of change  |
 | --- | --- | --- |
-|  The innovation relay with events | The innovation relay with events | Social innovations
-Research/Monitoring
-Democratisation and participation  |
-|  Showcasing circular solutions | In 2025, when Amsterdam celebrates its 750th anniversary, the city is going to ensure that events are showcases where all available circular solutions are visible, from fully reused tableware to zero-emission energy. | Social innovations
-Democratisation and participation  |
-|  Tailored advice for 100 entrepreneurs | Beginning in 2024, Amsterdam will hire (external) capacity to provide tailored advice to around 100 entrepreneurs each year that will help them take steps towards more circular business. | Social innovations
-Democratisation and participation  |
-|  Facilitating frontrunners in textile and appliances | From 2024, we will facilitate two collectives of entrepreneurs every year in developing frontrunner groups in textiles and appliances. | Social innovations
-Democratisation and participation  |
+|  The innovation relay with events | The innovation relay with events | Social innovations Research/Monitoring Democratisation and participation  |
+|  Showcasing circular solutions | In 2025, when Amsterdam celebrates its 750th anniversary, the city is going to ensure that events are showcases where all available circular solutions are visible, from fully reused tableware to zero-emission energy. | Social innovations Democratisation and participation  |
+|  Tailored advice for 100 entrepreneurs | Beginning in 2024, Amsterdam will hire (external) capacity to provide tailored advice to around 100 entrepreneurs each year that will help them take steps towards more circular business. | Social innovations Democratisation and participation  |
+|  Facilitating frontrunners in textile and appliances | From 2024, we will facilitate two collectives of entrepreneurs every year in developing frontrunner groups in textiles and appliances. | Social innovations Democratisation and participation  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
-|  Removing barriers and providing opportunities for frontrunners and ambassadors | The transition to a circular economy requires frontrunners and ambassadors. To support them, the municipality will remove barriers and provide opportunities. | Social innovations
-Democratisation and participation
-Funding and financing  |
+|  Removing barriers and providing opportunities for frontrunners and ambassadors | The transition to a circular economy requires frontrunners and ambassadors. To support them, the municipality will remove barriers and provide opportunities. | Social innovations Democratisation and participation Funding and financing  |
 | --- | --- | --- |
-|  Creating physical and environmental space for circular initiatives | The municipality will ensure that physical space is made available for target groups such as thrift shops, repair and sustainable processing businesses that can be given (temporary) leases on a priority basis. For example, to achieve the desired retail diversity. To this end, the municipality will purchase, (temporarily) lease or develop properties (or have them developed) wherever possible, such as in transformation areas | Governance innovations & Policy
-Social innovations
-Technology and Infrastructure
-Democratisation and participation  |
-|  Looking for circular business models | Looking for new circular revenue models (from products to services, paying for use instead of ownership, sharing economy, true price, et cetera) | Social innovations
-Research/Monitoring
-Democratisation and participation
-Funding and financing  |
-|  Resources for business case development | Providing resources and knowledge to develop business cases, including alternative ways of including value and (environmental) costs such as true pricing | Social innovations
-Democratisation and participation
-Funding and financing
-Learning and capabilities  |
-|  Finding action perspectives for entrepreneurs | Gaining insight into material flows and finding action perspectives for entrepreneurs | Social innovations
-Research/Monitoring
-Technology and Infrastructure
-Democratisation and participation  |
-|  Offering action perspectives to companies and institutions that do not yet know how | Ultimately, everyone has to join the transition. Many companies and institutions realise this, and want to, but do not yet know how. The municipality also wants to provide this group with action perspectives and support. | Social innovations
-Democratisation and participation
-Funding and financing  |
+|  Creating physical and environmental space for circular initiatives | The municipality will ensure that physical space is made available for target groups such as thrift shops, repair and sustainable processing businesses that can be given (temporary) leases on a priority basis. For example, to achieve the desired retail diversity. To this end, the municipality will purchase, (temporarily) lease or develop properties (or have them developed) wherever possible, such as in transformation areas | Governance innovations & Policy Social innovations Technology and Infrastructure Democratisation and participation  |
+|  Looking for circular business models | Looking for new circular revenue models (from products to services, paying for use instead of ownership, sharing economy, true price, et cetera) | Social innovations Research/Monitoring Democratisation and participation Funding and financing  |
+|  Resources for business case development | Providing resources and knowledge to develop business cases, including alternative ways of including value and (environmental) costs such as true pricing | Social innovations Democratisation and participation Funding and financing Learning and capabilities  |
+|  Finding action perspectives for entrepreneurs | Gaining insight into material flows and finding action perspectives for entrepreneurs | Social innovations Research/Monitoring Technology and Infrastructure Democratisation and participation  |
+|  Offering action perspectives to companies and institutions that do not yet know how | Ultimately, everyone has to join the transition. Many companies and institutions realise this, and want to, but do not yet know how. The municipality also wants to provide this group with action perspectives and support. | Social innovations Democratisation and participation Funding and financing  |
 |  Creating a level playing field | Lobbying towards central government/EU to create a level playing field for circular entrepreneurs. | Lobby  |
-|  Making support available to entrepreneurs | Making support available to entrepreneurs, together with entrepreneurs, industry associations and other relevant parties. We will look closely at existing activities and schemes, such as also from the province of Noord-Holland, to match them, reinforce them or supplement them where necessary. | Social innovations
-Democratisation and participation
-Funding and financing  |
-|  Making hotels more sustainable | Making the catering, linen use, energy and water of Amsterdam's 88,000-plus hotel beds more sustainable. By 2022, the cooperation between the hotels will have grown into an independent Green Hotel Club foundation. | Social innovations
-Democratisation and participation
-Funding and financing  |
-|  Stimulating ecosystems for innovation | Actively connecting organisations | Social innovations
-Democratisation and participation  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
+|  Making support available to entrepreneurs | Making support available to entrepreneurs, together with entrepreneurs, industry associations and other relevant parties. We will look closely at existing activities and schemes, such as also from the province of Noord-Holland, to match them, reinforce them or supplement them where necessary. | Social innovations Democratisation and participation Funding and financing  |
+|  Making hotels more sustainable | Making the catering, linen use, energy and water of Amsterdam's 88,000-plus hotel beds more sustainable. By 2022, the cooperation between the hotels will have grown into an independent Green Hotel Club foundation. | Social innovations Democratisation and participation Funding and financing  |
+|  Stimulating ecosystems for innovation | Actively connecting organisations | Social innovations Democratisation and participation  |
 
 # B-3.1.2 Social and resident initiatives
 
@@ -2586,9 +2027,6 @@ The Amsterdam Doughnut Coalition is a network of people and organisations enthus
 |  Actors involved | City of Amsterdam, social initiatives, collective activities, neighbourhood initiatives, frontrunners and ambassadors, schools, knowledge institutions, other authorities, job seekers  |
 |  Scale | City level, from neighbourhood initiative to collaborations with schools.  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 |  Comments on feasibility and progress | Many actions have already been or are being initiated and stem from established policies.  |
 | --- | --- |
 |  Renewable energy generated |   |
@@ -2596,41 +2034,19 @@ Our city of tomorrow: City Climate Contract. Action plan.
 |  CO2e emissions by emission sector |   |
 |  Offset CO2e emissions (biologically or technologically fixed) |   |
 |  Total cost and cost per tonne of CO2e | The total municipal cost of Together with the city for the period 2023-2026 is: €14,325,000. Of this, €5,125,000 has been reserved for the actions under Social and resident initiatives.  |
-|  Co-benefits | Technological innovation
-Cost reduction for businesses and residents
-Local job creation
-Reduction in waste and waste transport
-Reduced damage costs
-Participation
-Social cohesion  |
+|  Co-benefits | Technological innovation Cost reduction for businesses and residents Local job creation Reduction in waste and waste transport Reduced damage costs Participation Social cohesion  |
 |  Policy document(s) | Circular Implementation Agenda 2023-2026  |
 
 # Actions for Social and resident initiatives
 
 |  Actions | Short Description | Levers of change  |
 | --- | --- | --- |
-|  Strengthening support offer for social initiatives at neighbourhood level | We strengthen, in consultation, the support offer to social initiatives and collective activities that enable the circular economy at the neighbourhood level. | Social innovations
-Democratisation and participation
-Funding and financing  |
-|  Elaborating concept of broad welfare | The connection between all these social and ecological aspects will be visualised through the elaboration of the concept of 'broad prosperity', the first results of which were presented to the City Council in mid-2024. | Governance innovations & Policy
-Social innovations
-Research/Monitoring
-Democratisation and participation  |
-|  Supporting residents | Amsterdam supports residents and social initiatives, with knowledge, contacts and resources, and makes an effort to make suitable space available. | Social innovations
-Democratisation and participation
-Learning and capabilities  |
-|  Collection campaigns with schools | Periodically organise collection campaigns with schools for textiles or e-waste (electrical and electronic appliances, of which some 17,840 were collected in 2022). | Social innovations
-Democratisation and participation
-Learning and capabilities  |
-|  Teaching packages on waste separation | For example, we offer teaching packages on waste separation in areas where we will install new collection containers for organic waste. | Social innovations
-Democratisation and participation
-Learning and capabilities  |
-|  Assessment framework impact social and community initiatives | Working on an assessment framework that also includes the social and societal impact of initiatives in the city. | Governance innovations & Policy
-Social innovations
-Democratisation and participation  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
+|  Strengthening support offer for social initiatives at neighbourhood level | We strengthen, in consultation, the support offer to social initiatives and collective activities that enable the circular economy at the neighbourhood level. | Social innovations Democratisation and participation Funding and financing  |
+|  Elaborating concept of broad welfare | The connection between all these social and ecological aspects will be visualised through the elaboration of the concept of 'broad prosperity', the first results of which were presented to the City Council in mid-2024. | Governance innovations & Policy Social innovations Research/Monitoring Democratisation and participation  |
+|  Supporting residents | Amsterdam supports residents and social initiatives, with knowledge, contacts and resources, and makes an effort to make suitable space available. | Social innovations Democratisation and participation Learning and capabilities  |
+|  Collection campaigns with schools | Periodically organise collection campaigns with schools for textiles or e-waste (electrical and electronic appliances, of which some 17,840 were collected in 2022). | Social innovations Democratisation and participation Learning and capabilities  |
+|  Teaching packages on waste separation | For example, we offer teaching packages on waste separation in areas where we will install new collection containers for organic waste. | Social innovations Democratisation and participation Learning and capabilities  |
+|  Assessment framework impact social and community initiatives | Working on an assessment framework that also includes the social and societal impact of initiatives in the city. | Governance innovations & Policy Social innovations Democratisation and participation  |
 
 # B-3.1.3 Circular Port and Industry
 
@@ -2650,50 +2066,24 @@ The municipality and the Port of Amsterdam aim to further build the circular ind
 |  CO2e emissions by emission sector |   |
 |  Offset CO2e emissions (biologically or technologically fixed) |   |
 |  Total cost and cost per tonne of CO2e | The total municipal cost of Together with the city for the period 2023-2026 is: €14,325,000. Of this, €2,500,000 has been reserved for the actions under Port and Industry.  |
-|  Co-benefits | Technological innovation
-Cost reduction for businesses and residents
-Local job creation
-Reduction in waste and waste transport
-Reduced damage costs
-Participation
-Social cohesion  |
+|  Co-benefits | Technological innovation Cost reduction for businesses and residents Local job creation Reduction in waste and waste transport Reduced damage costs Participation Social cohesion  |
 |  Policy document(s) | Circular Implementation Agenda 2023-2026  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 Actions for Port and Industry
 
 |  Actions | Short Description | Levers of change  |
 | --- | --- | --- |
-|  Individual scheme for circular work in the port | Amsterdam is going to make it easier for entrepreneurs in the city and port to work in a circular way. There will be a scheme for individual support. | Social innovations
-Democratisation and participation
-Funding and financing  |
-|  Scheme for strengthening networking and connecting organisations in the port | Amsterdam is going to make it easier for entrepreneurs in the city and port to work in a circular way. There will be a scheme to strengthen networking and connect organisations. | Social innovations
-Democratisation and participation
-Funding and financing
-Learning and capabilities  |
-|  Scheme to ensure more physical and environmental space in the port | Amsterdam is going to make it easier for entrepreneurs in the city and port to work in a circular way. There will be a scheme for ensuring more physical and environmental space | Social innovations
-Technology and Infrastructure
-Funding and financing  |
+|  Individual scheme for circular work in the port | Amsterdam is going to make it easier for entrepreneurs in the city and port to work in a circular way. There will be a scheme for individual support. | Social innovations Democratisation and participation Funding and financing  |
+|  Scheme for strengthening networking and connecting organisations in the port | Amsterdam is going to make it easier for entrepreneurs in the city and port to work in a circular way. There will be a scheme to strengthen networking and connect organisations. | Social innovations Democratisation and participation Funding and financing Learning and capabilities  |
+|  Scheme to ensure more physical and environmental space in the port | Amsterdam is going to make it easier for entrepreneurs in the city and port to work in a circular way. There will be a scheme for ensuring more physical and environmental space | Social innovations Technology and Infrastructure Funding and financing  |
 |  Adapting laws and regulations to remove barriers to circularity | Amsterdam is adapting regulations and policies to remove barriers to circularity where possible, including adjustments to and better support for licensing. | Governance innovations & Policy  |
-|  Making trade chains transparent and traceable | We work with the Port Authority around socially responsible trade chains. We build on the Port Authority's efforts to make trade chains transparent and traceable. The Port Authority makes agreements on this with entrepreneurs setting up in the port area. | Governance innovations & Policy
-Research/Monitoring
-Technology and Infrastructure  |
-|  Circular advisory processes at the port | We offer assistance to (SMEs) in the port area with circular advisory processes and finding financing opportunities. | Social innovations
-Democratisation and participation
-Funding and financing  |
+|  Making trade chains transparent and traceable | We work with the Port Authority around socially responsible trade chains. We build on the Port Authority's efforts to make trade chains transparent and traceable. The Port Authority makes agreements on this with entrepreneurs setting up in the port area. | Governance innovations & Policy Research/Monitoring Technology and Infrastructure  |
+|  Circular advisory processes at the port | We offer assistance to (SMEs) in the port area with circular advisory processes and finding financing opportunities. | Social innovations Democratisation and participation Funding and financing  |
 |  Lobbying for level playing field | Towards higher authorities, such as the central government and the European Union, we lobby for a level playing field. | Lobby  |
-|  Port policy development | Participating in NOVEX approach
-NZKG and the topic of space is explicitly included in the development of the new policy Environmental Safety and the Port Area Vision. | Governance innovations & Policy  |
+|  Port policy development | Participating in NOVEX approach NZKG and the topic of space is explicitly included in the development of the new policy Environmental Safety and the Port Area Vision. | Governance innovations & Policy  |
 |  Active shareholdership port | On the basis of our shareholdership, we specify which frameworks and direction the municipality can give the Port Authority in this transition. | Governance innovations & Policy  |
 |  Recalibration of strategic plan for port | Recalibration of the Port Authority's 2025 – 2030 strategic plan | Governance innovations & Policy  |
-|  Importance of circular economy for grid connection | Together with the Port Authority and ORAM, we bring the importance of the circular economy to the public discussions on infrastructure investment and prioritisation in grid connection and expansion. | Social innovations
-Technology and Infrastructure
-Democratisation and participation  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
+|  Importance of circular economy for grid connection | Together with the Port Authority and ORAM, we bring the importance of the circular economy to the public discussions on infrastructure investment and prioritisation in grid connection and expansion. | Social innovations Technology and Infrastructure Democratisation and participation  |
 
 # B-3.2 Accelerating circular value chains
 
@@ -2707,9 +2097,6 @@ These value chains involve a lot of volume. They have strong economic significan
 
 ![img-0.jpeg](img-0.jpeg)
 Figure 12: Environmental costs of Amsterdam material consumption
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 # B-3.2.1 Food and organic waste streams
 
@@ -2733,48 +2120,27 @@ This calls for strong intervention. Therefore, the municipal food strategy will 
 |  CO2e emissions by emission sector | ?  |
 |  Offset CO2e emissions (biologically or technologically fixed) | ?  |
 |  Total cost and cost per tonne of CO2e | The total municipal cost of Accelerating circular value chains and preconditions for the period 2023-2026 is: €3,175,000. Of this, €1,220,000 has been reserved for the actions under Food and organic waste streams.  |
-|  Co-benefits | Technological innovation
-Cost reduction for businesses and residents
-Local job creation
-Reduction in waste and waste transport
-Reduced damage costs
-Participation
-Social cohesion  |
+|  Co-benefits | Technological innovation Cost reduction for businesses and residents Local job creation Reduction in waste and waste transport Reduced damage costs Participation Social cohesion  |
 |  Policy document(s) | Circular Implementation Agenda 2023-2026  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 Actions for Food and organic waste streams
 
 |  Action | Short description | Levers of change  |
 | --- | --- | --- |
-|  ‘Saving’ food | 'Saving' more food by connecting more shops, restaurants and other partners to Food Banks and social initiatives. | Social innovations
-Democratisation and participation  |
-|  Thinking together about how to prevent food waste | Working with consumers and businesses to figure out what we can do together to prevent food waste. | Social innovations
-Research/Monitoring
-Democratisation and participation  |
+|  ‘Saving’ food | 'Saving' more food by connecting more shops, restaurants and other partners to Food Banks and social initiatives. | Social innovations Democratisation and participation  |
+|  Thinking together about how to prevent food waste | Working with consumers and businesses to figure out what we can do together to prevent food waste. | Social innovations Research/Monitoring Democratisation and participation  |
 |  Legal measures against waste | Amsterdam is preparing legal measures to oblige businesses (hospitality, retail, distribution centres) to more actively combat waste. | Governance innovations & Policy  |
-|  Food Waste Action Plan 2024 | In 2024, Amsterdam will write a Food Waste Action Plan to ensure less food is wasted and more reaches places like food banks. | Governance innovations & Policy
-Social innovations
-Funding and financing
-Learning and capabilities  |
-|  Research on processing methods | Because in agriculture, the use of compost and fertilisers from the city is often still prohibited, we will figure out what is legally possible. We do this together with national parties developing new, food-safe processing methods. | Governance innovations & Policy
-Research/Monitoring  |
+|  Food Waste Action Plan 2024 | In 2024, Amsterdam will write a Food Waste Action Plan to ensure less food is wasted and more reaches places like food banks. | Governance innovations & Policy Social innovations Funding and financing Learning and capabilities  |
+|  Research on processing methods | Because in agriculture, the use of compost and fertilisers from the city is often still prohibited, we will figure out what is legally possible. We do this together with national parties developing new, food-safe processing methods. | Governance innovations & Policy Research/Monitoring  |
 |  Facilities to separate organic waste | We provide more facilities to separate organic waste, so that less peat from sensitive areas is needed for compost production | Technology and Infrastructure  |
 |  Using organic waste for compost or green gas | Amsterdam will ensure more organic waste is used for compost or green gas production. | Technology and Infrastructure  |
-|  Supporting initiatives to bring nutrients back into the chain | Amsterdam supports initiatives by, for example, the Amstel, Gooi en Vecht Water Board (AGV) to extract more nutrients from wastewater and return them to the chain. | Governance innovations & Policy
-Funding and financing  |
+|  Supporting initiatives to bring nutrients back into the chain | Amsterdam supports initiatives by, for example, the Amstel, Gooi en Vecht Water Board (AGV) to extract more nutrients from wastewater and return them to the chain. | Governance innovations & Policy Funding and financing  |
 |  Circular Water Chain Roadmap | Until 2026, the AGV Water Board and the City of Amsterdam are drawing up a Circular Water Chain Roadmap on how the water chain can become 50% circular by 2030 and 100% circular by 2050. | Governance innovations & Policy  |
-|  AMS Project: Circular Urban Food Production, safe by design | Developing methods for safe production/cultivation of crops with organic waste as a source of nutrients. | Technology and Infrastructure
-Learning and capabilities  |
+|  AMS Project: Circular Urban Food Production, safe by design | Developing methods for safe production/cultivation of crops with organic waste as a source of nutrients. | Technology and Infrastructure Learning and capabilities  |
 
 B-3.2.2 Consumer goods
 
 Of the things we use, textiles and electrical appliances in particular have a major impact on people, nature and the climate. In addition to mattresses, furniture should also be mentioned here, as it makes up at least half of Amsterdam's bulky waste. The 2023 Intergovernmental Panel on Climate Change (IPCC) report shows that 40-70% of CO2 emissions can be reduced by changing people's behaviour. With low engagement, it appears that emotional impulses (easy, attractive) drive (buying) behaviour. Advertising around us encourages us to consume. Buying new stuff tends to take less time, money and effort than getting a product repaired. As a municipality, we will have to consider what we can change in the city to encourage more circular behaviour.
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 |  Impact pathway | Consumer goods  |
 | --- | --- |
@@ -2788,13 +2154,7 @@ Our city of tomorrow: City Climate Contract. Action plan.
 |  CO2e emissions by emission sector | ?  |
 |  Offset CO2e emissions (biologically or technologically fixed) | ?  |
 |  Total cost and cost per tonne of CO2e | The total municipal cost of Accelerating circular value chains and preconditions for the period 2023-2026 is: €3,175,000. Of this, €150,000 has been reserved for the actions under Consumer goods.  |
-|  Co-benefits | Technological innovation
-Cost reduction for businesses and residents
-Local job creation
-Reduction in waste and waste transport
-Reduced damage costs
-Participation
-Social cohesion  |
+|  Co-benefits | Technological innovation Cost reduction for businesses and residents Local job creation Reduction in waste and waste transport Reduced damage costs Participation Social cohesion  |
 |  Policy document(s) | Circular Implementation Agenda 2023-2026  |
 
 ## Actions for Consumer goods
@@ -2802,19 +2162,10 @@ Social cohesion  |
 |  Action | Short description | Levers of change  |
 | --- | --- | --- |
 |  Space for circular entrepreneurs | Ensuring that circular entrepreneurs are given more space to offer services such as repair and sharing of consumer goods, for example by developing a circular craft centre | Governance innovations & Policy Technology and Infrastructure  |
-|  Entrepreneurs provide information | Encouraging entrepreneurs to educate on the impact of their products and how to extend their lifespan | Social innovations
-Learning and capabilities  |
-|  Research into limiting advertising of 'harmful' products | Exploring restrictions on advertising of 'harmful' products in public spaces, as is also being prepared in Haarlem | Research/Monitoring
-Governance innovations & Policy
-Social innovations  |
-|  Transparency in the chain | More transparency in the supply chain: where do raw materials come from, where do discarded textiles go and what waste and environmental impacts are created in the process worldwide | Research/Monitoring
-Technology and Infrastructure  |
-|  Experimenting with reusable tableware | Amsterdam is looking for entrepreneurs willing to experiment with reusable tableware instead of single-use tableware. | Social innovations
-Research/Monitoring
-Democratisation and participation  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
+|  Entrepreneurs provide information | Encouraging entrepreneurs to educate on the impact of their products and how to extend their lifespan | Social innovations Learning and capabilities  |
+|  Research into limiting advertising of 'harmful' products | Exploring restrictions on advertising of 'harmful' products in public spaces, as is also being prepared in Haarlem | Research/Monitoring Governance innovations & Policy Social innovations  |
+|  Transparency in the chain | More transparency in the supply chain: where do raw materials come from, where do discarded textiles go and what waste and environmental impacts are created in the process worldwide | Research/Monitoring Technology and Infrastructure  |
+|  Experimenting with reusable tableware | Amsterdam is looking for entrepreneurs willing to experiment with reusable tableware instead of single-use tableware. | Social innovations Research/Monitoring Democratisation and participation  |
 
 |  Reuse of old clothing | We facilitate textile entrepreneurs or who turn old clothes into new yarns | Governance innovations & Policy Social innovations Funding and financing  |
 | --- | --- | --- |
@@ -2834,9 +2185,6 @@ Our city of tomorrow: City Climate Contract. Action plan.
 |  Agreements on return logistics and mandatory product take-back packaging industry and mattress manufacturers | Amsterdam will agree with the packaging industry and mattress manufacturers on return logistics and mandatory take-back of products, and explore what accelerating role the municipality can play in this. | Governance innovations & Policy Social innovations Research/Monitoring Democratisation and participation  |
 |  Research on circular return logistics | Making return logistics as circular as possible in other sectors is being explored | Governance innovations & Policy Research/Monitoring  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 # B-3.2.3 Built environment
 
 Amsterdam is a compact city. When many people live relatively close together, there are usually environmental benefits: commuting is usually limited, public transport is an attractive option, and with a smaller living area - in Amsterdam about 12m2 below the Dutch average - residents have less space to heat. A number of measures from the Amsterdam Approach to Public Housing are also helping to make more efficient use of the existing housing stock. For instance, we create more living spaces in the existing housing stock by making it easier to live together in non-traditional ways and we counter vacancy through the Vacancy Ordinance.
@@ -2846,9 +2194,6 @@ At the same time, there is a lot of construction activity in absolute terms and 
 |  Impact pathway | Built environment  |
 | --- | --- |
 |  Early results (1-2 years) | We enable parties in the city to work circularly. We do this by focusing on key value chains where the municipality can make a difference, including the built environment. From 2022, all new designs for area developments (including transformation) and public spaces in Amsterdam will be based on circular criteria. From 2023, the municipality of Amsterdam will use circular and social criteria when working on buildings and in public spaces. 20% of new residential buildings will have wooden or bio-based main load-bearing structures by 2025.  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 |  Later results (by 2030) | Circular development is something we do together. We are working together towards a 100% circular economy by 2050. From 2030, 50% of renovations will be carried out according to circular principles. Amsterdam's public spaces are sustainably managed and are accessible, whole and safe for all users. We manage and maintain our pavements, street & play furniture and bus stations. We have achieved a 50% reduction in use of primary abiotic raw materials.  |
 | --- | --- |
@@ -2860,15 +2205,8 @@ Our city of tomorrow: City Climate Contract. Action plan.
 |  CO2e emissions by emission sector |   |
 |  Offset CO2e emissions (biologically or technologically fixed) |   |
 |  Total cost and cost per tonne of CO2e | The total municipal cost of Accelerating circular value chains and preconditions for the period 2023-2026 is: €3,175,000. Of this, €1,005,000 has been reserved for the actions under Built environment.  |
-|  Co-benefits | Technological innovation
-Cost reduction for businesses and residents
-Local job creation
-Reduction in waste and waste transport
-Reduced damage costs
-Participation
-Social cohesion  |
-|  Policy document(s) | Circular Implementation Agenda 2023-2026
-Insulation Offensive Implementation Plan 2024 – 2026  |
+|  Co-benefits | Technological innovation Cost reduction for businesses and residents Local job creation Reduction in waste and waste transport Reduced damage costs Participation Social cohesion  |
+|  Policy document(s) | Circular Implementation Agenda 2023-2026 Insulation Offensive Implementation Plan 2024 – 2026  |
 
 ## Actions for Built environment
 
@@ -2878,9 +2216,6 @@ Insulation Offensive Implementation Plan 2024 – 2026  |
 |  Reduction in use of primary raw materials | Jointly reducing the use of primary raw materials in the built environment. To this end, we deploy instruments at the city level, such as thematic studies, and at the area level we develop specific, achievable ambitions and instruments. | Governance innovations & Policy Democratisation and participation  |
 |  Circular procurement of school buildings | Entering into framework contract for circular procurement of 30 new (school) buildings. Including for procurement, tendering and tenders for land allocation. This applies to all life phases: from new construction to management to the end of the functional life, unless this is not (entirely) possible. | Governance innovations & Policy Funding and financing  |
 |  Using fewer new, non-renewable raw materials | Already using 50% less new, non-renewable raw materials by 2030 (nationally; national raw materials agreement). | Governance innovations & Policy  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 |  Stimulating use of bio-based building materials | Amsterdam stimulates the use of bio-based building materials to reduce the harmful impact of building material production. | Governance innovations & Policy Technology and Infrastructure Funding and financing  |
 | --- | --- | --- |
@@ -2897,22 +2232,14 @@ Our city of tomorrow: City Climate Contract. Action plan.
 |  More production of bio-based building materials | Amsterdam will participate with the central government and the region to work with construction companies and farmers to produce more bio-based building materials as an incentive for circular construction. | Governance innovations & Policy Social innovations Technology and Infrastructure Democratisation and participation  |
 |  Sharing experiences of circular procurement | The experience gained from this will be shared widely so that we can take it into account in other procurement processes for all the municipality's 'assets'. | Governance innovations & Policy Learning and capabilities  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 |  Use of renewable materials such as wood construction | Replacing fossil and mineral materials with renewable materials. For example, by having at least 20 percent of new buildings constructed in wood by 2025. Great existing examples are Juf Nienke in the Sluisbuurt, Geins in Zuidoost, HAUT in the Amstelkwartier, Poppies in Buiksloterham and Switi in Zuidoost. | Governance innovations & Policy Technology and Infrastructure  |
 | --- | --- | --- |
 |  Evaluation of nature-inclusive construction | Evaluation of point system for Nature-inclusive Construction. | Governance innovations & Policy Research/Monitoring  |
-|  Seeking funding for private circular insulation | We will help homeowners insulate in a circular way. The starting point is to find funding to make it cost-neutral for homeowners. | Governance innovations & Policy Social innovations
-Democratisation and participation
-Funding and financing  |
+|  Seeking funding for private circular insulation | We will help homeowners insulate in a circular way. The starting point is to find funding to make it cost-neutral for homeowners. | Governance innovations & Policy Social innovations Democratisation and participation Funding and financing  |
 |  Insulation offensive | Insulation offensive (See also B-1.1 Built environment) | Governance innovations & Policy  |
 |  AMS project: Bio-based cement recycling | Environmentally friendly method for high-quality low-emission recycling of cement for production of concrete elements. | Technology and Infrastructure Research/Monitoring  |
 |  AMS project: Bio-based industrialised zero-emission modular high-rise buildings | Development of new normal for bio-based high-rise buildings. | Governance innovations & Policy; Technology and Infrastructure Research/Monitoring  |
 |  AMS Project: Circular Collaboration | Exploring and testing new chain cooperation for reuse of building elements and solar panels. | Governance innovations & Policy; Technology and Infrastructure Research/Monitoring  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 # B-3.2.4 Preconditions
 
@@ -2930,13 +2257,7 @@ The transition to a circular economy in Amsterdam requires a different way of or
 |  CO2e emissions by emission sector |   |
 |  Offset CO2e emissions (biologically or technologically fixed) |   |
 |  Total cost and cost per tonne of CO2e | The total municipal cost of Value chains and preconditions for the period 2023-2026 is: €3,175,000. Of this, €700,000 has been reserved for the actions under Preconditions.  |
-|  Co-benefits | Technological innovation
-Cost reduction for businesses and residents
-Local job creation
-Reduction in waste and waste transport
-Reduced damage costs
-Participation
-Social cohesion  |
+|  Co-benefits | Technological innovation Cost reduction for businesses and residents Local job creation Reduction in waste and waste transport Reduced damage costs Participation Social cohesion  |
 |  Policy document(s) | Circular Implementation Agenda 2023-2026  |
 
 # Actions for Preconditions
@@ -2947,9 +2268,6 @@ Social cohesion  |
 |  Applying material passports | We apply material passports | Governance innovations & Policy Research/Monitoring Technology and Infrastructure  |
 |  Monitoring material flows | We monitor material flows in the city | Governance innovations & Policy Research/Monitoring  |
 |  Adjusting financial rules for circular initiatives | We are working to adjust the rules that currently stand in the way of circular initiatives, such as applying true pricing in investment decisions and procurement | Governance innovations & Policy Funding and financing  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 |  Adjusting legal rules for circular initiatives | We are working to adjust the rules that currently stand in the way of circular initiatives, such as certain permitting criteria | Governance innovations & Policy Technology and Infrastructure  |
 | --- | --- | --- |
@@ -2965,9 +2283,6 @@ Our city of tomorrow: City Climate Contract. Action plan.
 |  Inserting circular principles into policy | When policies are updated, circular principles are inserted into those policies | Governance innovations & Policy  |
 |  Linking regional knowledge | We will link knowledge on the circular economy more closely to programmes around energy transition in a regional context to achieve more synergy | Governance innovations & Policy Learning and capabilities  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 |  AMS Project: Logistics in the circular economy living lab | Field labs in the city with circular logistics to improve reuse and high-value recycling | Governance Innovation & Policy Research/Monitoring Democratisation and participation  |
 | --- | --- | --- |
 
@@ -2980,22 +2295,12 @@ Figure 13 Circular processing ladder 26
 
 To be a circular city by 2050, we will have to 'close' resource cycles. Amsterdam's waste chain contributes to this objective by ensuring that waste prevention, and reuse and recycling of materials
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 are made as efficient as possible. This will create better opportunities for high-value processing such as reuse, repurposing and recycling. These different approaches are part of the Circular Processing Ladder. Here, the higher up the ladder, the better the measure scores in terms of circularity.
 
 |  Impact pathway | Waste-free city  |
 | --- | --- |
-|  Early results (1-2 years) | We clean public spaces (where it matters).
-We ensure that residents and businesses can dispose of their waste properly.
-We collect waste efficiently and sustainably.
-We support co-management and are committed to prevention.
-Amsterdam prevents (residual) waste.
-We will ensure a 30% reduction of plastic litter on land and in water by 2023.  |
-|  Later results (by 2030) | Amsterdam is a clean city and a 100% waste-free city by 2050. By 2030, we will be a city without plastic pollution.
-We want to connect 75% of Amsterdam households to separate collection of kitchen and garden waste by 2030.
-We ensure that waste is treated with the highest possible quality.  |
+|  Early results (1-2 years) | We clean public spaces (where it matters). We ensure that residents and businesses can dispose of their waste properly. We collect waste efficiently and sustainably. We support co-management and are committed to prevention. Amsterdam prevents (residual) waste. We will ensure a 30% reduction of plastic litter on land and in water by 2023.  |
+|  Later results (by 2030) | Amsterdam is a clean city and a 100% waste-free city by 2050. By 2030, we will be a city without plastic pollution. We want to connect 75% of Amsterdam households to separate collection of kitchen and garden waste by 2030. We ensure that waste is treated with the highest possible quality.  |
 |  Actors involved | City of Amsterdam, frontrunners in the events industry and the hospitality industry, biz Knowledge Mile, residents, businesses, waste processors, social initiatives, collective activities, neighbourhood initiatives, entrepreneurs, experts, civil servants, other authorities, hospitals, AVG Water Board, textile entrepreneurs  |
 |  Scale | City level  |
 |  Comments on feasibility and progress | Many actions have already been or are being initiated and stem from established policies.  |
@@ -3004,19 +2309,8 @@ We ensure that waste is treated with the highest possible quality.  |
 |  CO2e emissions by emission sector |   |
 |  Offset CO2e emissions (biologically or technologically fixed) |   |
 |  Total cost and cost per tonne of CO2e |   |
-|  Co-benefits | Satisfaction with quality of living environment
-Technological innovation
-Cost reduction for businesses and residents
-Local job creation
-Reduction in waste and waste transport
-Reduced damage costs
-Participation
-Social cohesion  |
-|  Policy document(s) | Circular Implementation Agenda 2023-2026 and more
-Budget 2024
-Our city of tomorrow
-Amsterdam Plastic Smart City
-Approach Inner City Implementation Programme 2025  |
+|  Co-benefits | Satisfaction with quality of living environment Technological innovation Cost reduction for businesses and residents Local job creation Reduction in waste and waste transport Reduced damage costs Participation Social cohesion  |
+|  Policy document(s) | Circular Implementation Agenda 2023-2026 and more Budget 2024 Our city of tomorrow Amsterdam Plastic Smart City Approach Inner City Implementation Programme 2025  |
 
 ## Actions for Waste-free city
 
@@ -3025,9 +2319,6 @@ Approach Inner City Implementation Programme 2025  |
 |  Citizens' council on waste | Amsterdam will organise a citizens' council on the topic of waste in 2024, where residents and entrepreneurs will discuss the city's waste challenges with each other, experts and civil servants. The citizens' council will formulate proposals to be submitted to the City Council by the college. | Governance innovations & Policy Research/Monitoring Democratisation and participation  |
 |  Waste prevention plan with entrepreneurs | A 'Waste Prevention Plan' will be drawn up in 2023. Together with entrepreneurs and business collectives, such as Business Investment Zones (BIZ), we will | Governance innovations & Policy Social innovations Democratisation and participation  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 |   | work on 'the front end' to reduce waste, for example by disincentivising the use of 'to go' packaging. |   |
 | --- | --- | --- |
 |  Stopping disposable plastic via Plastic Smart City | Through the Plastic Smart City initiative, cafes and restaurants between Amstel Station and City Hall will stop using disposable plastic on their terraces. | Democratisation and participation  |
@@ -3035,9 +2326,6 @@ Our city of tomorrow: City Climate Contract. Action plan.
 |  Pilots for new waste collection methods | Several pilots with new collection methods for household waste, commercial waste and bulky waste in different neighbourhoods. | Governance innovations & Policy Technology and Infrastructure Learning and capabilities  |
 |  Pilots for clean shopping areas | Several pilots for getting the core shopping area clean. In 2024, ongoing pilots from 2023 such as the Nieuwendijk Approach will be continued, and new ones will be started. | Governance innovations & Policy Technology and Infrastructure Learning and capabilities  |
 |  AMS: Solving the Plastic Soup Project | Development of monitoring system plastic litter and circular business cases. | Research/Monitoring  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 # B-4 The transition to a nature-friendly, climate-adaptive city
 
@@ -3057,9 +2345,6 @@ The following impact pathways have been identified based on the policy. The impa
 
 Rain showers can cause flooding. There is a lot of stone in the city, preventing rainwater from draining away. Flooding can cause damage to houses, basements and buildings. Too much water, for example, causes trees and plants in parks to die. It also worsens accessibility (e.g. of emergency services) and can cause failure of important functions such as power supply. The probability of extreme showers will double towards 2050. The city is not yet fully prepared for these extreme showers. These vulnerabilities will be addressed. For example, by increasing drainage (the sewer system), ensuring better infiltration thanks to the construction of more greenery and less stone or increasing temporary collection capacity, for example by constructing rainwater swales. Rainwater can be temporarily collected there if needed.
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 Rain is also a valuable resource. It is important that we use rainwater differently. In fact, rainwater is valuable. It is important that everyone in our area has just the right amount of water. Not too much, nor too little. During drought or, on the contrary, prolonged rain, we distribute water intelligently.
 
 We make room for rainwater and give it a temporary place. Catch it during peak rains and use it in times of drought. This way, damage can be limited.
@@ -3078,21 +2363,10 @@ We also live in a densely populated area with lots of water, which we have desig
 |  CO2e emissions by emission sector |   |
 |  Offset CO2e emissions (biologically or technologically fixed) |   |
 |  Total cost and cost per tonne of CO2e |   |
-|  Co-benefits | Health benefits
-Safety
-Improved liveability of the city
-Increased biodiversity
-Improving and exploiting ecosystem services
-Improving the quality of the living environment; and
-Increased biodiversity  |
-|  Policy document | Green vision
-Climate Adaptation Progress Report 2023
-VTH Policy Physical Living Environment 2024  |
+|  Co-benefits | Health benefits Safety Improved liveability of the city Increased biodiversity Improving and exploiting ecosystem services Improving the quality of the living environment; and Increased biodiversity  |
+|  Policy document | Green vision Climate Adaptation Progress Report 2023 VTH Policy Physical Living Environment 2024  |
 
 ²⁹ Policy: Climate adaptation - City of Amsterdam
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 Actions for Rain and flood risk mitigation
 
@@ -3100,23 +2374,15 @@ Actions for Rain and flood risk mitigation
 | --- | --- | --- |
 |  Rainproof Nieuwenhuysenbuurt | In the Nieuwenhuysenbuurt, the public space will be made rainproof by constructing infiltration crates, rainwater swales and water-storing streets. Completion is expected in 2025 | Technology and Infrastructure  |
 |  Resolving rainwater bottlenecks in maintenance projects | The municipality will resolve rainwater bottlenecks while carrying out work on 10 major maintenance projects | Technology and Infrastructure  |
-|  Testing water storage system | We are testing a water storage system under the tram track in Rooseveltlaan | Research/Monitoring
-Technology and Infrastructure  |
+|  Testing water storage system | We are testing a water storage system under the tram track in Rooseveltlaan | Research/Monitoring Technology and Infrastructure  |
 |  Raising and Rainproof Sloterdijk Zuid | We are working on raising the area and rainproof landscaping of streets and parks in Sloterdijk Zuid by 2024 | Technology and Infrastructure  |
-|  Research on water and soil quality | Making process agreements between water managers and municipality for the AGV Water Board's study on the impact of climate change on water and soil quality | Governance innovations & Policy
-Research/Monitoring  |
-|  Improving water flow | We will improve the flow of water in the canals and make agreements for bridges, banks, quays and the use of water | Technology and Infrastructure
-Learning and capabilities  |
+|  Research on water and soil quality | Making process agreements between water managers and municipality for the AGV Water Board's study on the impact of climate change on water and soil quality | Governance innovations & Policy Research/Monitoring  |
+|  Improving water flow | We will improve the flow of water in the canals and make agreements for bridges, banks, quays and the use of water | Technology and Infrastructure Learning and capabilities  |
 |  Optimal water storage | We will ensure optimal water storage in Amsterdam to the north of the North Sea Canal. | Technology and Infrastructure  |
-|  Research on climate-adaptive recreational areas | We are exploring opportunities to make parks and recreational areas more climate-adaptive | Research/Monitoring
-Technology and Infrastructure  |
+|  Research on climate-adaptive recreational areas | We are exploring opportunities to make parks and recreational areas more climate-adaptive | Research/Monitoring Technology and Infrastructure  |
 |  Sea Level Rise Knowledge Programme | The Sea Level Rise Knowledge Programme explores possible effects of more extreme sea level rise with the aim of understanding the measures needed. To be completed in 2026 | Research/Monitoring  |
-|  Research and test on evaporation and sap flow of trees | Ghent University is researching evaporation and sap flow of trees in the city. By monitoring urban trees, "live" data on sap flow and growth are collected and analysed. Waternet is testing several versions of such solutions on Stadioneiland, Rivierenbuurt, Betondorp and Frans Halsbuurt | Research/monitoring
-Learning and capabilities  |
+|  Research and test on evaporation and sap flow of trees | Ghent University is researching evaporation and sap flow of trees in the city. By monitoring urban trees, "live" data on sap flow and growth are collected and analysed. Waternet is testing several versions of such solutions on Stadioneiland, Rivierenbuurt, Betondorp and Frans Halsbuurt | Research/monitoring Learning and capabilities  |
 |  Mandatory rainwater harvesting | In new buildings or major renovations, it becomes mandatory that rainwater is collected and processed on private property | Governance innovations & Policy  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 ## B-4.1.2 Heat and Drought
 
@@ -3126,8 +2392,7 @@ Too little rain and a lot of evaporation (due to heat) causes drought. Drought h
 
 |  Impact pathway | Minimising the effects of extreme heat and drought  |
 | --- | --- |
-|  Early results | Minimising the effects on people, animals, environment, economy and infrastructure in extreme heat.
-Be prepared for prolonged periods of drought to prevent or minimise damage to buildings, greenery, wet and dry infrastructure and dykes.  |
+|  Early results | Minimising the effects on people, animals, environment, economy and infrastructure in extreme heat. Be prepared for prolonged periods of drought to prevent or minimise damage to buildings, greenery, wet and dry infrastructure and dykes.  |
 |  Result | We are as prepared as possible for the changing climate by 2050  |
 |  Actors involved | City of Amsterdam, operators, water managers, Pantar, work brigade, Cordaan  |
 |  Scale | City, buildings, public space, paving  |
@@ -3137,19 +2402,10 @@ Be prepared for prolonged periods of drought to prevent or minimise damage to bu
 |  CO2e emissions by emission sector |   |
 |  Offset CO2e emissions (biologically or technologically fixed) |   |
 |  Total cost and cost per tonne of CO2e |   |
-|  Co-benefits | Health benefits
-Safety
-Improved liveability of the city
-Increased biodiversity
-Improving and exploiting ecosystem services
-Improving the quality of the living environment; and
-Increased biodiversity  |
+|  Co-benefits | Health benefits Safety Improved liveability of the city Increased biodiversity Improving and exploiting ecosystem services Improving the quality of the living environment; and Increased biodiversity  |
 |  Policy document | Climate Adaptation Implementation Agenda 2021  |
 
 ³⁰ Policy: Climate adaptation - City of Amsterdam
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 # Actions for Heat and Drought
 
@@ -3171,9 +2427,6 @@ A climate-resilient Amsterdam can only be achieved if the whole city joins in. T
 
 The network approach means working proactively with the existing network and all relevant parties and initiatives in the city. This way, we can create awareness and encourage stakeholders to take action. By thinking based on the network, we strengthen cooperation. We connect and activate all parties that influence a climate-resilient city. The municipality is a driver here and can share knowledge and information as well as initiate and support projects.[31]
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 |  Impact pathway | Cooperation and knowledge sharing on climate adaptation  |
 | --- | --- |
 |  Early results | We explore collaborations, generic approaches and shared guidelines, and integrate climate adaptation in the entire management and development task of Amsterdam's public space  |
@@ -3186,29 +2439,17 @@ Our city of tomorrow: City Climate Contract. Action plan.
 |  CO2e emissions by emission sector |   |
 |  Offset CO2e emissions (biologically or technologically fixed) |   |
 |  Total cost and cost per tonne of CO2e |   |
-|  Co-benefits | Health benefits
-Safety
-Improved liveability of the city
-Increased biodiversity
-Improving and exploiting ecosystem services
-Improving the quality of the living environment; and
-Increased biodiversity  |
-|  Policy document | Climate Adaptation Progress Report 2023
-Sustainability Report 2022  |
+|  Co-benefits | Health benefits Safety Improved liveability of the city Increased biodiversity Improving and exploiting ecosystem services Improving the quality of the living environment; and Increased biodiversity  |
+|  Policy document | Climate Adaptation Progress Report 2023 Sustainability Report 2022  |
 
 ## Actions for Cooperation and knowledge sharing on climate adaptation
 
 |  Action | Description | Levers of Change  |
 | --- | --- | --- |
-|  Climate adaptation network | We will form a network around climate adaptation with stakeholders: residents, businesses and partners to answer questions and help with initiatives | Governance innovations & Policy Social innovations
-Democracy/Participation Learning and capabilities  |
+|  Climate adaptation network | We will form a network around climate adaptation with stakeholders: residents, businesses and partners to answer questions and help with initiatives | Governance innovations & Policy Social innovations Democracy/Participation Learning and capabilities  |
 |  Exploring guidelines | We will explore new guidelines on heat, flood, drought and flooding. | Governance innovations & Policy Learning and capabilities  |
 |  Exploring structural costs | The municipality is exploring structural additional costs of climate-adaptive measures in public spaces with the aim of gaining more insight into the financial consequences of climate adaptation. | Governance innovations & Policy Research/Monitoring Funding and financing  |
-|  Including climate adaptation in cooperation agreements | The municipality will explore including climate adaptation in cooperation agreements between municipality, housing corporations and tenant associations 2024-2027/2028 | Governance innovations & Policy Research/Monitoring Funding and financing
-Democratisation and participation  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
+|  Including climate adaptation in cooperation agreements | The municipality will explore including climate adaptation in cooperation agreements between municipality, housing corporations and tenant associations 2024-2027/2028 | Governance innovations & Policy Research/Monitoring Funding and financing Democratisation and participation  |
 
 |  Incorporating climate adaptation into design | We will develop solutions to include climate adaptation in the design of public spaces | Governance innovations & Policy Research/Monitoring Technology and Infrastructure  |
 | --- | --- | --- |
@@ -3226,9 +2467,6 @@ Our city of tomorrow: City Climate Contract. Action plan.
 |  AMS Project: Green Water Hubs | Landscape-integrated water buffers for climate adaptation and mitigation synergy in water-stressed urban areas |   |
 |  AMS Project: STABILITY | Testing eco-friendly and circular strategies for life extension of bridges and quay walls in cities |   |
 |  AMS Project: Logiquay | Research and optimisation of planning and logistics for sustainable replacement and |   |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 |   | renovation of bridges and quay walls |   |
 | --- | --- | --- |
@@ -3260,16 +2498,10 @@ Climate change impacts the safety, infrastructure and quality of our living envi
 
 ³² Our city of tomorrow
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 |  Impact pathway | We ensure enough varied greenery for everyone  |
 | --- | --- |
-|  Early results | Manage recreational lawns in the city so that at least 25% of the surface consists of flowering plants
-More connections between green-blue areas in the city realised
-More trees planted  |
-|  Result | Park-like, public area no more than 10 minutes' walk from any home in 2050
-More green streets with space for trees and flowers in tree beds and planting beds by 2050  |
+|  Early results | Manage recreational lawns in the city so that at least 25% of the surface consists of flowering plants More connections between green-blue areas in the city realised More trees planted  |
+|  Result | Park-like, public area no more than 10 minutes' walk from any home in 2050 More green streets with space for trees and flowers in tree beds and planting beds by 2050  |
 |  Actors involved | City of Amsterdam  |
 |  Scale | City, streets, parks, Amsterdam Forest, Haven-Stad, recreational areas  |
 |  Comments on feasibility and progress |   |
@@ -3278,28 +2510,14 @@ More green streets with space for trees and flowers in tree beds and planting be
 |  CO2e emissions by emission sector |   |
 |  Offset CO2e emissions (biologically or technologically fixed) |   |
 |  Total cost and cost per tonne of CO2e |   |
-|  Co-benefits | Health benefits
-Safety
-Improved liveability of the city
-Increased biodiversity
-Improving and exploiting ecosystem services
-Improving the quality of the living environment; and
-Increased biodiversity  |
-|  Policy document | Green vision
-Amsterdam environmental vision 2050
-Approach Inner City Implementation Programme 2024
-Climate Adaptation Progress Report 2023
-Amsterdam coalition agreement 2022-2026  |
+|  Co-benefits | Health benefits Safety Improved liveability of the city Increased biodiversity Improving and exploiting ecosystem services Improving the quality of the living environment; and Increased biodiversity  |
+|  Policy document | Green vision Amsterdam environmental vision 2050 Approach Inner City Implementation Programme 2024 Climate Adaptation Progress Report 2023 Amsterdam coalition agreement 2022-2026  |
 
 # Actions for Varied Green
 
 |  Action | Description | Levers of Change  |
 | --- | --- | --- |
-|  New park in Haven-Stad | There will be a new park in Haven-Stad, next to Westerpark, to have enough greenery for existing and new residents | Social innovations
-Technology and Infrastructure  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
+|  New park in Haven-Stad | There will be a new park in Haven-Stad, next to Westerpark, to have enough greenery for existing and new residents | Social innovations Technology and Infrastructure  |
 
 |  80 green spaces | The municipality will provide 80 green spaces in the city | Technology and Infrastructure  |
 | --- | --- | --- |
@@ -3319,20 +2537,14 @@ Good-quality greenery is preserved and well managed.
 
 We opt for a design and management that preserves, adds or enhances as many values of greenery as possible. In this way, greenery contributes maximally to various tasks in the city. 33
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 ![img-0.jpeg](img-0.jpeg)
 
 Figure 14 The various contributions of greenery
 
 |  Impact pathway | We provide greenery that contributes to various tasks  |
 | --- | --- |
-|  Early results | Realising the green standard (for area development)
-Area of paved public space will decrease in coming years
-Manage recreational lawns in the city so that at least 25% of the surface consists of flowering plants  |
-|  Result | Large green area no more than 15 minutes’ cycling from any home in 2050
-Park-like, public area no more than 10 minutes’ walk from any home in 2050  |
+|  Early results | Realising the green standard (for area development) Area of paved public space will decrease in coming years Manage recreational lawns in the city so that at least 25% of the surface consists of flowering plants  |
+|  Result | Large green area no more than 15 minutes’ cycling from any home in 2050 Park-like, public area no more than 10 minutes’ walk from any home in 2050  |
 |  Actors involved | City of Amsterdam,  |
 |  Scale | City, bus shelters, parks, new areas, existing areas, public space, shopping and hospitality streets, Artisterrein  |
 |  Comments on feasibility and progress |   |
@@ -3341,21 +2553,10 @@ Park-like, public area no more than 10 minutes’ walk from any home in 2050  |
 |  CO2e emissions by emission sector |   |
 |  Offset CO2e emissions (biologically or technologically fixed) |   |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 |  Total cost and cost per tonne of CO2e |   |
 | --- | --- |
-|  Co-benefits | Health benefits
-Safety
-Improved liveability of the city
-Increased biodiversity
-Improving and exploiting ecosystem services
-Improving the quality of the living environment; and
-Increased biodiversity  |
-|  Policy document | Green vision
-Climate Adaptation Progress Report 2023
-VTH Policy Physical Living Environment 2024  |
+|  Co-benefits | Health benefits Safety Improved liveability of the city Increased biodiversity Improving and exploiting ecosystem services Improving the quality of the living environment; and Increased biodiversity  |
+|  Policy document | Green vision Climate Adaptation Progress Report 2023 VTH Policy Physical Living Environment 2024  |
 
 # Actions for Greenery contributes to multiple tasks
 
@@ -3367,20 +2568,12 @@ VTH Policy Physical Living Environment 2024  |
 |  Tree-lined avenues | In new areas we create tree-lined avenues | Governance & Policy Innovation Technology and Infrastructure  |
 |  Greening Weteringpark | Improving and greening Weteringpark: Implementation of the renewal of the playground and greenery will start in 2024, and plan development of the U.J. Klaren building to be completed with possible start to implementation. | Technology and Infrastructure  |
 |  Frederikspark improvement | Frederikspark improvement | Technology and Infrastructure  |
-|  CO2 forest with contribution from residents and businesses | Investigating possibilities for financial contributions from residents or private parties, for example in the case of a CO2 forest: urban forest constructed with contributions from businesses or residents who want to offset their CO2 emissions by planting a tree. | Social innovations
-Democratisation and participation
-Funding and financing  |
-|  Babyboompje Bos | Investigating possibilities for financial contribution from residents or private parties e.g. Babyboompje Bos: urban forest constructed with the contribution of parents who plant a tree for their child. | Social innovations
-Democratisation and participation
-Funding and financing  |
+|  CO2 forest with contribution from residents and businesses | Investigating possibilities for financial contributions from residents or private parties, for example in the case of a CO2 forest: urban forest constructed with contributions from businesses or residents who want to offset their CO2 emissions by planting a tree. | Social innovations Democratisation and participation Funding and financing  |
+|  Babyboompje Bos | Investigating possibilities for financial contribution from residents or private parties e.g. Babyboompje Bos: urban forest constructed with the contribution of parents who plant a tree for their child. | Social innovations Democratisation and participation Funding and financing  |
 |  New trees in design | We include new trees in the design of landscape parks. | Governance & Policy Innovation  |
-|  Adding greenery on water | We will add more greenery on the water and explore options for a floating park. | Research/Monitoring
-Technology and Infrastructure Learning and capabilities  |
+|  Adding greenery on water | We will add more greenery on the water and explore options for a floating park. | Research/Monitoring Technology and Infrastructure Learning and capabilities  |
 |  Area development Amsterdam-Rhine Canal and North Sea Canal | The area development of a future-proof Amsterdam-Rhine Canal and North Sea Canal will be water-neutral and climate-adaptive. | Technology and Infrastructure  |
 |  Double use of greenery | Deploying dual-use greenery: vertical greenery, more greenery | Technology and Infrastructure  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 ## B-2.4.3 We Work On Green Together
 
@@ -3388,14 +2581,9 @@ A green and liveable city is made with many hands. The municipality wants to joi
 
 |  Impact pathway | We work on green together  |
 | --- | --- |
-|  Early results | Area of paved public space will decrease in coming years
-Manage recreational lawns in the city so that at least 25% of the surface consists of flowering plants  |
+|  Early results | Area of paved public space will decrease in coming years Manage recreational lawns in the city so that at least 25% of the surface consists of flowering plants  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
-|  Result | Ecological management is the standard in 2030
-Large green area no more than 15 minutes' cycling from any home in 2050  |
+|  Result | Ecological management is the standard in 2030 Large green area no more than 15 minutes' cycling from any home in 2050  |
 | --- | --- |
 |  Actors involved | Municipality of Amsterdam, residents, businesses, other cities, national networks, Amsterdam 750, green organisations, greenery managers, designers, greenery workers, Pantar employees, management staff, supervisors, residents, entrepreneurs, organisations, Artis, Green Fund, green cooperatives, neighbourhood funds, Green Roofs Fund, Masterplan Artis  |
 |  Scale | City, buildings, public space, paving  |
@@ -3405,61 +2593,31 @@ Large green area no more than 15 minutes' cycling from any home in 2050  |
 |  CO2e emissions by emission sector |   |
 |  Offset CO2e emissions (biologically or technologically fixed) |   |
 |  Total cost and cost per tonne of CO2e |   |
-|  Co-benefits | Health benefits
-Safety
-Improved liveability of the city
-Increased biodiversity
-Improving and exploiting ecosystem services
-Improving the quality of the living environment; and
-Increased biodiversity  |
-|  Policy document | Green vision
-Climate Adaptation Progress Report 2023
-Amsterdam coalition agreement 2022-2026
-Amsterdam environmental vision 2050  |
+|  Co-benefits | Health benefits Safety Improved liveability of the city Increased biodiversity Improving and exploiting ecosystem services Improving the quality of the living environment; and Increased biodiversity  |
+|  Policy document | Green vision Climate Adaptation Progress Report 2023 Amsterdam coalition agreement 2022-2026 Amsterdam environmental vision 2050  |
 
 # Actions for We Work On Green Together
 
 |  Action | Description | Levers of Change  |
 | --- | --- | --- |
-|  Knowledge on greening is accessible to all | We ensure that existing and new knowledge is accessible to all. For residents and businesses, this is at least about knowledge on building façade gardens, green facades, green (and blue-green) roofs, courtyard gardens and nature-inclusive neighbourhood greenery. | Social innovations
-Democratisation and participation
-Learning and capabilities  |
-|  Follow-up approach to roofscape vision and strategy | In response to Motion 1.276 “Het Dak op”, the municipality is drawing up a follow-up approach for an integrated vision and strategy for the roofscape, within the framework of the environmental vision. | Research/Monitoring
-Learning and capabilities  |
+|  Knowledge on greening is accessible to all | We ensure that existing and new knowledge is accessible to all. For residents and businesses, this is at least about knowledge on building façade gardens, green facades, green (and blue-green) roofs, courtyard gardens and nature-inclusive neighbourhood greenery. | Social innovations Democratisation and participation Learning and capabilities  |
+|  Follow-up approach to roofscape vision and strategy | In response to Motion 1.276 “Het Dak op”, the municipality is drawing up a follow-up approach for an integrated vision and strategy for the roofscape, within the framework of the environmental vision. | Research/Monitoring Learning and capabilities  |
 |  New subsidy scheme green roofs and de-tiling | Introducing new subsidy scheme for green roofs and de-tiling courtyard gardens in 2024. | Governance innovations & Policy Funding and financing  |
 |  Funding studies | Exploring opportunities for funding from European and national funds. | Governance innovations & Policy Funding and financing  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 |  Collaborating in various networks | Collaborating and sharing knowledge with other (European) cities, other governments and national networks to realise the ambitions for greening cities. | Governance innovations & Policy Learning and capabilities  |
 | --- | --- | --- |
-|  “Amsterdam 750” as a catalyst | Collaborating with organisations and residents on initiatives such as "Amsterdam 750", this can be a catalyst to further strengthen Amsterdam's green identity. | Social innovations
-Democratisation and participation
-Learning and capabilities  |
+|  “Amsterdam 750” as a catalyst | Collaborating with organisations and residents on initiatives such as "Amsterdam 750", this can be a catalyst to further strengthen Amsterdam's green identity. | Social innovations Democratisation and participation Learning and capabilities  |
 |  Involving and supporting green projects and green management | Involving, and where necessary supporting, residents, businesses and green organisations in implementing green projects and managing green spaces. | Democratisation and participation  |
 |  Investment programme development and management of greenery | Establishing a city-wide investment programme for greenery development and management | Funding and financing  |
 |  Ensuring equal level of knowledge | Ensuring that all greenery managers, designers, greenery employees, Pantar employees, management staff and supervisors have the right level of knowledge with regard to green space design and management. Appropriate to this are competencies focused on communication and advice. | Learning and capabilities  |
-|  Stimulating self-reliance with regard to greening | Ensuring that residents, entrepreneurs and organisations can start (co-)managing and greening roofs, existing buildings, neighbourhoods and gardens themselves. | Democratisation and participation
-Learning and capabilities  |
-|  Accessible knowledge | Making existing, new but also specific information and knowledge from the municipality accessible to all. | Governance innovations & Policy
-Democratisation and participation
-Learning and capabilities  |
+|  Stimulating self-reliance with regard to greening | Ensuring that residents, entrepreneurs and organisations can start (co-)managing and greening roofs, existing buildings, neighbourhoods and gardens themselves. | Democratisation and participation Learning and capabilities  |
+|  Accessible knowledge | Making existing, new but also specific information and knowledge from the municipality accessible to all. | Governance innovations & Policy Democratisation and participation Learning and capabilities  |
 |  Greening Artis | We will work with Artis to make the park more sustainable and greener. | Social innovations  |
-|  Investing in green fund and participation | We invest in the green fund and increase participation and self-management opportunities for greenery. In doing so, we look at new forms of cooperation in green cooperatives and/or neighbourhood funds in which residents and municipality work together and bear responsibility, also with public-private financing possibilities. | Social innovations
-Democratisation and participation
-Learning and capabilities  |
-|  Exploring a Green Roofs fund | Amsterdam is exploring the establishment of a Groene Daken (Green Roofs) Fund with partners and other investors. | Social innovations
-Research/Monitoring
-Democratisation and participation
-Funding and financing  |
-|  De-tiling | We will stimulate removing tiles from gardens and from very wide pavements. | Governance innovations & Policy
-Technology and Infrastructure
-Democratisation and participation  |
+|  Investing in green fund and participation | We invest in the green fund and increase participation and self-management opportunities for greenery. In doing so, we look at new forms of cooperation in green cooperatives and/or neighbourhood funds in which residents and municipality work together and bear responsibility, also with public-private financing possibilities. | Social innovations Democratisation and participation Learning and capabilities  |
+|  Exploring a Green Roofs fund | Amsterdam is exploring the establishment of a Groene Daken (Green Roofs) Fund with partners and other investors. | Social innovations Research/Monitoring Democratisation and participation Funding and financing  |
+|  De-tiling | We will stimulate removing tiles from gardens and from very wide pavements. | Governance innovations & Policy Technology and Infrastructure Democratisation and participation  |
 |  Finding structural funding | Finding structural funding for part of the overall task: At least for management and maintenance, but also for the development of new greenery in the city. This funding should be able to grow with the city and changing needs. | Funding and financing  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 # B-2.4.4 Enhancing and Protecting Biodiversity
 
@@ -3477,53 +2635,31 @@ Cities can be rich in wild plants and animals. As an increasing proportion of ou
 |  CO2e emissions by emission sector |   |
 |  Offset CO2e emissions (biologically or technologically fixed) |   |
 |  Total cost and cost per tonne of CO2e |   |
-|  Co-benefits | Health benefits
-Safety
-Improved liveability of the city
-Increased biodiversity
-Improving and exploiting ecosystem services
-Improving the quality of the living environment; and
-Increased biodiversity  |
-|  Policy document | Green vision
-Climate Adaptation Progress Report 2023
-VTH Policy Physical Living Environment 2024  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
+|  Co-benefits | Health benefits Safety Improved liveability of the city Increased biodiversity Improving and exploiting ecosystem services Improving the quality of the living environment; and Increased biodiversity  |
+|  Policy document | Green vision Climate Adaptation Progress Report 2023 VTH Policy Physical Living Environment 2024  |
 
 Actions for Enhancing and Protecting Biodiversity
 
 |  Action | Description | Levers of Change  |
 | --- | --- | --- |
 |  Making city attractive to birds and insects | For birds and insects, we make the city attractive with nesting boxes, swallow and kingfisher walls, brushwood fences, and dead wood in green areas and infra-passages. | Technology and Infrastructure  |
-|  Innovative solutions | We look for innovative solutions, such as tiny forests, food forests and more nature-friendly roadside management. | Governance innovations & Policy
-Social innovations
-Learning and capabilities  |
+|  Innovative solutions | We look for innovative solutions, such as tiny forests, food forests and more nature-friendly roadside management. | Governance innovations & Policy Social innovations Learning and capabilities  |
 |  Improving monitoring | Improving monitoring: We will draw up a monitoring plan for house sparrows, swifts and bats. | Research/Monitoring  |
 |  Biodiversity Action Plan | Making Biodiversity Action Plan. | Governance innovations & Policy  |
 |  Extra attention to building-dwelling animals | Extra attention to building-dwelling animals. | Governance innovations & Policy  |
 |  Assessing dog parks | We will assess all designated dog parks for overlap with ecologically sensitive areas. Based on this, we will propose adjustments. | Research/Monitoring  |
-|  Aligning recreational water use with ecology | We are exploring the possibility of tailoring recreational water use in ecologically sensitive periods to sensitive areas, such as Strandeiland, Buiteneiland and Zuidelijke IJmeerkust. | Governance innovations & Policy
-Research/Monitoring  |
-|  Future-proof agriculture and robust nature | The Amsterdam Wetlands consortium is driving the development of future-proof agriculture and robust nature. Trial with cattail cultivation successfully extended. | Research/Monitoring
-Technology and Infrastructure
-Learning and capabilities  |
+|  Aligning recreational water use with ecology | We are exploring the possibility of tailoring recreational water use in ecologically sensitive periods to sensitive areas, such as Strandeiland, Buiteneiland and Zuidelijke IJmeerkust. | Governance innovations & Policy Research/Monitoring  |
+|  Future-proof agriculture and robust nature | The Amsterdam Wetlands consortium is driving the development of future-proof agriculture and robust nature. Trial with cattail cultivation successfully extended. | Research/Monitoring Technology and Infrastructure Learning and capabilities  |
 |  Climate-robust ecological network | We will realise a climate-robust ecological network of greenery and water that provides peace and space for plants and animals in the city. | Technology and Infrastructure  |
-|  Financial calculation | Calculating financial resources needed for planning, design, implementation, (asset) management and incentive schemes. | Research/Monitoring
-Funding and financing  |
-|  Financial expertise in terms of nature inclusivity | Ensuring more financial expertise on nature inclusiveness to find more opportunities for funding. | Governance innovations & Policy
-Funding and financing  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
+|  Financial calculation | Calculating financial resources needed for planning, design, implementation, (asset) management and incentive schemes. | Research/Monitoring Funding and financing  |
+|  Financial expertise in terms of nature inclusivity | Ensuring more financial expertise on nature inclusiveness to find more opportunities for funding. | Governance innovations & Policy Funding and financing  |
 
 B-2.4.5 Nature-inclusive Construction
 
 |  Impact pathway | Nature-inclusive construction  |
 | --- | --- |
 |  Early results | Improving ecological water quality in ponds and ditches through better bank design, dredging and fish stock management.  |
-|  Result | Nature-inclusive new construction and renovation is the standard in 2030
-In 2050: 100% nature-inclusive city  |
+|  Result | Nature-inclusive new construction and renovation is the standard in 2030 In 2050: 100% nature-inclusive city  |
 |  Actors involved | City of Amsterdam, schools, school gardens  |
 |  Scale | City, school gardens, tenders, new construction, bridges and roads  |
 |  Comments on feasibility and progress |   |
@@ -3532,17 +2668,8 @@ In 2050: 100% nature-inclusive city  |
 |  CO2e emissions by emission sector |   |
 |  Offset CO2e emissions (biologically or technologically fixed) |   |
 |  Total cost and cost per tonne of CO2e |   |
-|  Co-benefits | Health benefits
-Safety
-Improved liveability of the city
-Increased biodiversity
-Improving and exploiting ecosystem services
-Improving the quality of the living environment; and
-Increased biodiversity  |
-|  Policy document | Green vision
-Our city of tomorrow
-Animals Agenda 2024-2026
-Amsterdam coalition agreement 2022-2026  |
+|  Co-benefits | Health benefits Safety Improved liveability of the city Increased biodiversity Improving and exploiting ecosystem services Improving the quality of the living environment; and Increased biodiversity  |
+|  Policy document | Green vision Our city of tomorrow Animals Agenda 2024-2026 Amsterdam coalition agreement 2022-2026  |
 
 Actions for Nature-inclusive Construction
 
@@ -3554,20 +2681,11 @@ Actions for Nature-inclusive Construction
 |  Flora and fauna provisions on quaysides | On all quays that are replaced, we apply flora and fauna provisions | Technology and Infrastructure  |
 |  Nature-inclusive construction and management | We increase biodiversity through nature-inclusive construction, design, landscaping and management | Technology and Infrastructure  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
-|  Recalibration of points system
-Nature-inclusive Construction | Recalibration of points system
-Nature-inclusive Construction | Governance innovations & Policy  |
+|  Recalibration of points system Nature-inclusive Construction | Recalibration of points system Nature-inclusive Construction | Governance innovations & Policy  |
 | --- | --- | --- |
-|  Nature education | We will continue the school garden programme and invest in nature education | Democratisation and participation
-Funding and financing
-Learning and capabilities  |
+|  Nature education | We will continue the school garden programme and invest in nature education | Democratisation and participation Funding and financing Learning and capabilities  |
 |  Opportunity map for nature-friendly banks | We will create an opportunity map for nature-friendly banks for climate adaptation and biodiversity (Environmental Vision) | Technology and Infrastructure  |
-|  Handbook nature-inclusive construction 2.0 | Handbook nature-inclusive construction 2.0, handbook nature-inclusive bridges and quay walls, handbook greenery, climbing plant guide | Governance innovations & Policy
-Technology and Infrastructure
-Learning and capabilities  |
+|  Handbook nature-inclusive construction 2.0 | Handbook nature-inclusive construction 2.0, handbook nature-inclusive bridges and quay walls, handbook greenery, climbing plant guide | Governance innovations & Policy Technology and Infrastructure Learning and capabilities  |
 |  Points system in tenders | Within tenders for new construction projects, we use a points system for nature-inclusive measures | Governance innovations & Policy  |
 
 # B-2.4.6 Improving animal welfare
@@ -3586,25 +2704,14 @@ Together, we will make great strides towards an animal-friendly and biodiverse A
 |  Scale | City, surrounding municipalities, pastures, public space, paving vulnerable areas,  |
 |  Comments on feasibility and progress |   |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 |  Renewable energy generated |   |
 | --- | --- |
 |  Removed/substituted energy, volume, or fuel type |   |
 |  CO2e emissions by emission sector |   |
 |  Offset CO2e emissions (biologically or technologically fixed) |   |
 |  Total cost and cost per tonne of CO2e |   |
-|  Co-benefits | Health benefits
-Safety
-Improved liveability of the city
-Increased biodiversity
-Improving and exploiting ecosystem services
-Improving the quality of the living environment; and
-Increased biodiversity  |
-|  Policy document | Green vision
-Climate Adaptation Progress Report 2023
-VTH Policy Physical Living Environment 2024  |
+|  Co-benefits | Health benefits Safety Improved liveability of the city Increased biodiversity Improving and exploiting ecosystem services Improving the quality of the living environment; and Increased biodiversity  |
+|  Policy document | Green vision Climate Adaptation Progress Report 2023 VTH Policy Physical Living Environment 2024  |
 
 Actions for Animal Welfare  $^{35}$ Improvement
 
@@ -3617,25 +2724,16 @@ Actions for Animal Welfare  $^{35}$ Improvement
 |  Legislation on animals and chasing away meadow birds | Improving conditions for meadow birds: We call on the central government for better legislation on conditions when buying an animal and on conditions in subsidies for not chasing meadow birds out of pastures. | Governance innovations & Policy  |
 |  Research on effects of light pollution on animals | We ask the UvA to also include underwater light in its research on the effects of light pollution on animals. The results of this study | Research/Monitoring  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 |   | constitute policy input for the next administrative term. We want to minimise the negative effects of light (pollution) on wild animals. |   |
 | --- | --- | --- |
 |  Knowledge on the impact of extreme weather on animals: knowledge platforms | Occurrence of animal suffering due to extreme weather conditions: In publications about extreme weather, we refer to knowledge platforms such as Landelijk Informatiecentrum Gezelschapsdieren (LICG) to prevent animal suffering during extreme weather conditions. | Research/Monitoring  |
-|  Knowledge on the impact of extreme weather on animals: increasing target group outreach | Occurrence of animal suffering due to extreme weather conditions: We are increasing target group outreach to inform how residents and partners can help prevent animals from suffering during weather extremes. | Social innovations
-Democratisation and participation
-Learning and capabilities  |
-|  Exploring arrangements for wildlife in need | Occurrence of animal suffering due to extreme weather conditions: We explore what agreements, expertise and equipment is needed between the safety region and the Animal Ambulance to help wild animals in distress during emergencies. | Research/Monitoring
-Learning and capabilities  |
+|  Knowledge on the impact of extreme weather on animals: increasing target group outreach | Occurrence of animal suffering due to extreme weather conditions: We are increasing target group outreach to inform how residents and partners can help prevent animals from suffering during weather extremes. | Social innovations Democratisation and participation Learning and capabilities  |
+|  Exploring arrangements for wildlife in need | Occurrence of animal suffering due to extreme weather conditions: We explore what agreements, expertise and equipment is needed between the safety region and the Animal Ambulance to help wild animals in distress during emergencies. | Research/Monitoring Learning and capabilities  |
 |  Flora and Fauna code of conduct | We will draw up an Amsterdam Flora and Fauna code of conduct for invasive exotic species. This helps accommodate needy and non-self-sufficient wild birds and mammals. | Governance innovations & Policy  |
 |  Fixbrigade at veterinarians, shelters and community centres | We encourage the Fixbrigade to also hold consultations at veterinarians, shelters and community centres to raise awareness about taking care of needy and non-self-sufficient wild birds and mammals. | Learning and capabilities  |
 |  Monitoring causes of wildlife victimisation | Monitoring: recording causes of wildlife victimisation. At least for: window, traffic, event, violence by person, violence by other animal, infectious disease and zoonosis. This way, we aim to prevent disturbance to wild animals at outdoor events. | Research/Monitoring  |
 |  Creating awareness among residents | Creating more awareness among residents through communication on risks, help with behavioural problems and shelters. This way, we help owners improve the mental and physical health of (domestic) animals. | Learning and capabilities  |
 |  Requesting regulation from central government | In discussion with central government: requesting regulation regarding online sales, matching obligation, health insurance obligation, pressure on veterinarians. This way, we help owners improve the mental and physical health of (domestic) animals. | Governance innovations & Policy  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 # B-2.4.7 Addressing Infrastructural Ecological Bottlenecks
 
@@ -3643,8 +2741,7 @@ Based on the Green Vision and Environmental Vision, we will work to increase bio
 
 |  Impact pathway | Addressing infrastructural ecological bottlenecks  |
 | --- | --- |
-|  Early results | Resolving ecological bottlenecks and stimulating initiatives
-Designating rest areas and creating nature-friendly banks and quays  |
+|  Early results | Resolving ecological bottlenecks and stimulating initiatives Designating rest areas and creating nature-friendly banks and quays  |
 |  Result | No more infrastructural ecological bottlenecks by 2030  |
 |  Actors involved | City of Amsterdam, Waternet, Amstel, Gooi en Vecht Water Board  |
 |  Scale | City, water system, vulnerable areas, recreational areas,  |
@@ -3654,24 +2751,14 @@ Designating rest areas and creating nature-friendly banks and quays  |
 |  CO2e emissions by emission sector |   |
 |  Offset CO2e emissions (biologically or technologically fixed) |   |
 |  Total cost and cost per tonne of CO2e |   |
-|  Co-benefits | Health benefits
-Safety
-Improved liveability of the city
-Increased biodiversity
-Improving and exploiting ecosystem services
-Improving the quality of the living environment; and
-Increased biodiversity  |
-|  Policy document | Green vision
-Animals Agenda 2024-2026  |
+|  Co-benefits | Health benefits Safety Improved liveability of the city Increased biodiversity Improving and exploiting ecosystem services Improving the quality of the living environment; and Increased biodiversity  |
+|  Policy document | Green vision Animals Agenda 2024-2026  |
 
 Actions for Addressing Infrastructural Ecological Bottlenecks
 
 |  Action | Description | Levers of Change  |
 | --- | --- | --- |
 |  Wildlife refuges | We create places where animals can escape from the water (at bottlenecks). | Technology and Infrastructure  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 |  Structurally safeguarding places of refuge | We will explore whether structural securing of these places of refuge (preferably through creation of additional nature) is possible during the realisation of bridge and quay walls. | Funding and financing  |
 | --- | --- | --- |
@@ -3693,27 +2780,16 @@ This impact pathway consists of actions taken by Waternet.
 |  Early results | Working towards good status for natural water bodies (both ecological and chemical) (GET) (Guideline values 2027: Fish: 100%; Macrofauna: 100%; Plants: 35%; Algae: 100%) Active groundwater management in 2025 Meeting the KRW by 2027  |
 |  Result | Water chain 50% circular by 2030, and 100% circular by 2050 2050: 100% nature-inclusive water system36  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 |  Actors involved | Waternet, City of Amsterdam, Operators  |
 | --- | --- |
-|  Scale | Drinking water system
-Wastewater system
-Rainwater system  |
+|  Scale | Drinking water system Wastewater system Rainwater system  |
 |  Comments on feasibility and progress |   |
 |  Renewable energy generated |   |
 |  Removed/substituted energy, volume, or fuel type |   |
 |  CO2e emissions by emission sector |   |
 |  Offset CO2e emissions (biologically or technologically fixed) |   |
 |  Total cost and cost per tonne of CO2e |   |
-|  Co-benefits | Health benefits
-Safety
-Improved liveability of the city
-Increased biodiversity
-Improving and exploiting ecosystem services
-Improving the quality of the living environment; and
-Increased biodiversity  |
+|  Co-benefits | Health benefits Safety Improved liveability of the city Increased biodiversity Improving and exploiting ecosystem services Improving the quality of the living environment; and Increased biodiversity  |
 |  Policy document | Water management programme Amstel, Gooi en Vecht 2022-2027  |
 
 ## Actions for Water system
@@ -3731,88 +2807,50 @@ Increased biodiversity  |
 |  Keeping up to date and implementing regulations, signage and enforcement of (sailing) rules |  | Governance innovations & Policy  |
 |  Enabling recreational routes, taking nature into account |  | Governance innovations & Policy  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
-|  Effective cooperation and participation in water-related social tasks |  | Social innovations
-Democratisation and participation  |
+|  Effective cooperation and participation in water-related social tasks |  | Social innovations Democratisation and participation  |
 | --- | --- | --- |
 |  Implementing vision of 100% circular execution of tasks |  | Learning and capabilities  |
-|  Deploying communication and media strategy |  | Social innovations
-Learning and capabilities  |
-|  Implementing vision for Aquathermy and energy from solar and wind |  | Technology and Infrastructure
-Learning and capabilities  |
+|  Deploying communication and media strategy |  | Social innovations Learning and capabilities  |
+|  Implementing vision for Aquathermy and energy from solar and wind |  | Technology and Infrastructure Learning and capabilities  |
 |  Implementing activities World Waternet |  | Social innovations  |
-|  Conducting research focused on sustainable innovation |  | Research/Monitoring
-Learning and capabilities  |
-|  Inspecting and testing flood defences and taking management measures to reduce risks |  | Governance innovations & Policy
-Research/Monitoring
-Technology and Infrastructure  |
-|  Regulating use and maintenance as per regulation |  | Governance innovations & Policy
-Technology and Infrastructure  |
+|  Conducting research focused on sustainable innovation |  | Research/Monitoring Learning and capabilities  |
+|  Inspecting and testing flood defences and taking management measures to reduce risks |  | Governance innovations & Policy Research/Monitoring Technology and Infrastructure  |
+|  Regulating use and maintenance as per regulation |  | Governance innovations & Policy Technology and Infrastructure  |
 |  Reinforcement of defences according to dyke programme |  | Technology and Infrastructure  |
 |  Carrying out maintenance of flood defences and associated technical systems |  | Technology and Infrastructure  |
-|  Stimulating spatial planning that takes water safety into account |  | Governance innovations & Policy
-Learning and capabilities  |
-|  Developing and applying a 'blue label' per polder basin section |  | Governance innovations & Policy
-Social innovations  |
-|  Implementing (nature-friendly) management and maintenance and control of water system (room for customisation) |  | Governance innovations & Policy
-Social innovations
-Learning and capabilities  |
+|  Stimulating spatial planning that takes water safety into account |  | Governance innovations & Policy Learning and capabilities  |
+|  Developing and applying a 'blue label' per polder basin section |  | Governance innovations & Policy Social innovations  |
+|  Implementing (nature-friendly) management and maintenance and control of water system (room for customisation) |  | Governance innovations & Policy Social innovations Learning and capabilities  |
 |  Sufficiently sizing the water system |  | Governance innovations & Policy  |
 |  Making main waters comply with waterway and/or fairway profiles |  | Governance innovations & Policy  |
-|  Regulating use and maintenance as per regulation |  | Governance innovations & Policy
-Technology and Infrastructure  |
-|  Advising on climate-proof spatial design and plans |  | Social innovations
-Learning and capabilities  |
+|  Regulating use and maintenance as per regulation |  | Governance innovations & Policy Technology and Infrastructure  |
+|  Advising on climate-proof spatial design and plans |  | Social innovations Learning and capabilities  |
 |  Activities aimed at updating and implementing the entire Water Level Decree system |  | Governance innovations & Policy  |
-|  Implementing soil subsidence strategy and peatland action plan |  | Governance innovations & Policy
-Technology and Infrastructure  |
-|  Activities focusing on the polder system |  | Governance innovations & Policy
-Technology and Infrastructure  |
+|  Implementing soil subsidence strategy and peatland action plan |  | Governance innovations & Policy Technology and Infrastructure  |
+|  Activities focusing on the polder system |  | Governance innovations & Policy Technology and Infrastructure  |
 |  Implementation of Basin Plan 2.0 |  | Technology and Infrastructure  |
-|  Cross-area cooperation with all stakeholders in the storage basin system |  | Social innovations
-Democratisation and participation
-Learning and capabilities  |
+|  Cross-area cooperation with all stakeholders in the storage basin system |  | Social innovations Democratisation and participation Learning and capabilities  |
 |  Activities focusing on the basin system |  | Technology and Infrastructure  |
-|  Carrying out groundwater care, together with other parties |  | Democratisation and participation
-Learning and capabilities  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
+|  Carrying out groundwater care, together with other parties |  | Democratisation and participation Learning and capabilities  |
 
 |  Implementing solutions to drought |  | Governance innovations & Policy  |
 | --- | --- | --- |
 |  Implementing and advising on KRW measures[1] in water bodies |  | Social innovations  |
 |  Implementing and advising on measures in 'other waters' |  | Social innovations  |
-|  Stimulating and subsidising agricultural water management |  | Social innovations
-Funding and financing  |
+|  Stimulating and subsidising agricultural water management |  | Social innovations Funding and financing  |
 |  Tackling historical pollution of water beds |  | Technology and Infrastructure  |
-|  Stimulating spatial protection of ground and surface[1] water quality |  | Governance innovations & Policy
-Learning and capabilities  |
+|  Stimulating spatial protection of ground and surface[1] water quality |  | Governance innovations & Policy Learning and capabilities  |
 |  Implementing soil management[1] memorandum |  | Governance innovations & Policy  |
 |  Implementing Fish Memorandum to achieve healthy fish stocks and fish accessibility |  | Governance innovations & Policy  |
 |  Giving biodiversity a guiding role in AGV work |  | Governance innovations & Policy  |
-|  Implementing and encouraging nature-friendly management and maintenance |  | Social innovations
-Technology and Infrastructure
-Learning and capabilities  |
-|  Being an effective networking partner on biodiversity |  | Social innovations
-Democratisation and participation  |
-|  Projects nutrients from wastewater | Amsterdam supports initiatives by, for example, the Amstel, Gooi en Vecht Water Board (AGV) to extract more nutrients from wastewater and return them to the chain. | Funding and financing
-Learning and capabilities  |
-|  Drawing up circular water chain roadmap | Until 2026, the AGV Water Board and the City of Amsterdam are drawing up a Circular Water Chain Roadmap on how the water chain can become 50% circular by 2030 and 100% circular by 2050. | Research/Monitoring
-Learning and capabilities  |
-|  Making wastewater suitable for reuse | The AGV Water Board and the City of Amsterdam will work with industry and the Port Authority in the port to make wastewater (effluent) suitable for industrial application by 2025. | Social innovations
-Technology and Infrastructure  |
-|  Raw material recovery pilots | Exploring with pilots such as new sanitation, how we can recover valuable raw materials in the water chain. | Research/Monitoring
-Technology and Infrastructure
-Learning and capabilities  |
+|  Implementing and encouraging nature-friendly management and maintenance |  | Social innovations Technology and Infrastructure Learning and capabilities  |
+|  Being an effective networking partner on biodiversity |  | Social innovations Democratisation and participation  |
+|  Projects nutrients from wastewater | Amsterdam supports initiatives by, for example, the Amstel, Gooi en Vecht Water Board (AGV) to extract more nutrients from wastewater and return them to the chain. | Funding and financing Learning and capabilities  |
+|  Drawing up circular water chain roadmap | Until 2026, the AGV Water Board and the City of Amsterdam are drawing up a Circular Water Chain Roadmap on how the water chain can become 50% circular by 2030 and 100% circular by 2050. | Research/Monitoring Learning and capabilities  |
+|  Making wastewater suitable for reuse | The AGV Water Board and the City of Amsterdam will work with industry and the Port Authority in the port to make wastewater (effluent) suitable for industrial application by 2025. | Social innovations Technology and Infrastructure  |
+|  Raw material recovery pilots | Exploring with pilots such as new sanitation, how we can recover valuable raw materials in the water chain. | Research/Monitoring Technology and Infrastructure Learning and capabilities  |
 |  Research on water management | We are continuing our research on proper drainage to maintain water levels at a desirable level together with the water boards, the central government and the province. | Research/Monitoring  |
-|  AMS Project: AquaConnect | Developing and demonstrating sustainable water management in urban green space management. | Technology and Infrastructure
-Learning and capabilities  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
+|  AMS Project: AquaConnect | Developing and demonstrating sustainable water management in urban green space management. | Technology and Infrastructure Learning and capabilities  |
 
 # B-5 The transition to a sustainable municipal organisation
 
@@ -3824,9 +2862,6 @@ With the administrative order Sustainable Future City and Organisation, we commi
 # Administrative instruments: administrative order and administrative team
 
 By 2030, we want to be a circular, climate-neutral organisation and maximise our own energy generation. We want to work in a climate-adaptive environment, with officials steeped in sustainable thinking and action. To achieve this, we have launched the Sustainable Future City and Organisation administrative order, aimed at a municipality-wide incorporation of the sustainability task. We are also rolling out the 'Sustainable, unless' principle in the city through this administrative order. We appeal to all organisational units to do as much as they can. And ensure that everyone in the organisation feels responsible and knows that working on sustainability is not without obligation, so that the entire civil service organisation steps up to the common task. At the initiative of the college, the Sustainable Future administrative team was formed, where aldermen and two administrative representatives of the city districts make breakthrough decisions to start, scale up, continue and accelerate implementation.
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 Derived from the urban programmes are the climate targets for their own organisation:
 
@@ -3851,9 +2886,6 @@ Make the most efficient use of fossil fuels to meet remaining energy needs. 41
 
 Energy storage is also expected to become part of step 3 in the future.
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 Energy consumption in 2018 was around 684 terajoules (TJ). In 2021, we as a municipal organisation consumed 594 Terajoules (TJ) of energy. This means we continue to see a downward trend compared to the starting year 2018 (11 percent less energy consumption), but the reduction is not as great as in 2020. The decrease is caused by the organisation's overall electricity consumption. This refers to direct consumption by the municipal organisation's own operations, as well as the energy consumed for municipal tasks and responsibilities such as lighting public spaces, car parks, public transport facilities and some municipal sports facilities. We distinguish between:
 
 # B-5.1.1 Buildings: Maximum energy reduction and maximum energy generation
@@ -3865,46 +2897,18 @@ The greatest energy-saving potential for our own organisation lies in the munici
 |  Early results | Lower energy costs, reducing CO2 emissions, at least energy label C by 2030  |
 |  Later results | Energy label A for all buildings in the municipal portfolio  |
 |  Actors involved | City of Amsterdam, social institutions, users, tenants  |
-|  Scale | 61% municipal housing properties and yards
-% municipal sports halls and swimming pools
-% metro stations
-% parking garages
-% other buildings (concerns part of energy costs for the municipality of properties being rented out).  |
+|  Scale | 61% municipal housing properties and yards % municipal sports halls and swimming pools % metro stations % parking garages % other buildings (concerns part of energy costs for the municipality of properties being rented out).  |
 |  Comments on feasibility and progress |   |
 |  Renewable energy generated | The total solar potential of all roofs of buildings owned is 15 MW, which means that a total of about 50,000 panels can be put on our roofs. If it is possible to also install solar panels on the embankments of metro lines, about another 4.5 MW could be generated. That's another 15,000 solar panels.  |
 |  Energy consumption avoided or replaced | Of the municipal housing properties and yards owned (77 properties), 29 properties have energy label A and 11 properties are natural gas-free. Improving the energy performance of these buildings to label A level potentially yields an 11% energy reduction in total energy consumption. Looking at all properties belonging to the scope of this Implementation Agenda, that potential is higher, at around 18% Label A+ energy reduction measures  |
 |  CO2e emissions by emission sector | Absolute decrease of 123 terajoules in 2030 compared to 2018, i.e. a 35% decrease  |
 |  Offset CO2e emissions (biologically or technologically fixed) | ?  |
 |  Total cost and cost per tonne of CO2e | ?  |
-|  Co-benefits | Improved health
-Improved air quality
-Efficient energy consumption
-Reliable energy supply
-Increased resilience
-Lower energy costs
-Reduced energy poverty
-Improved indoor climate
-Increased comfort
-Stimulating innovation
-Job creation
-Growth of SMEs
-Minimisation of energy losses
-Lower energy dependency
-Stable power supply
-Price stability
-Strengthening competitiveness  |
+|  Co-benefits | Improved health Improved air quality Efficient energy consumption Reliable energy supply Increased resilience Lower energy costs Reduced energy poverty Improved indoor climate Increased comfort Stimulating innovation Job creation Growth of SMEs Minimisation of energy losses Lower energy dependency Stable power supply Price stability Strengthening competitiveness  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
-|   | Sustainable employment opportunities
-Awareness within organisation  |
+|   | Sustainable employment opportunities Awareness within organisation  |
 | --- | --- |
-|  Policy document(s) | Recalibration of the 'Transition Plan For Making Amsterdam's Fleet More Sustainable – 2019'
-Noise Action Plan 2020-2023
-Amsterdam Climate Neutral Roadmap (2020)
-Sustainable Organisation Implementation Agenda
-GGD Green Deal Sustainable Care 3.0  |
+|  Policy document(s) | Recalibration of the 'Transition Plan For Making Amsterdam's Fleet More Sustainable – 2019' Noise Action Plan 2020-2023 Amsterdam Climate Neutral Roadmap (2020) Sustainable Organisation Implementation Agenda GGD Green Deal Sustainable Care 3.0  |
 
 Achieving these savings is possible by reducing the consumption of electricity, gas, and district heat by taking building-related measures (such as façade and roof insulation, double glazing and optimising the control technical installations) and user-related measures (the energy performance of ICT facilities, kitchens, multi-functionals, beverage dispensers and the way the users use them).
 
@@ -3924,29 +2928,11 @@ This means the municipality needs to implement even more energy-saving measures.
 |  CO2e emissions by emission sector |   |
 |  Offset CO2e emissions (biologically or technologically fixed) |   |
 |  Total cost and cost per tonne of CO2e |   |
-|  Co-benefits | Improved health
-Improved air quality
-Lower energy costs
-Efficient energy consumption
-Reliable energy supply
-Increased resilience
-Reduced energy poverty
-Stimulating innovation
-Minimisation of energy losses
-Lower energy dependence
-Stable power supply  |
+|  Co-benefits | Improved health Improved air quality Lower energy costs Efficient energy consumption Reliable energy supply Increased resilience Reduced energy poverty Stimulating innovation Minimisation of energy losses Lower energy dependence Stable power supply  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
-|   | Price stability
-Strengthening competitiveness
-Sustainable employment opportunities
-Awareness within organisation  |
+|   | Price stability Strengthening competitiveness Sustainable employment opportunities Awareness within organisation  |
 | --- | --- |
-|  Policy document(s) | Towards a Sustainable Organisation 2020-2030
-Sustainability Report 2022
-Sustainability Report 2023  |
+|  Policy document(s) | Towards a Sustainable Organisation 2020-2030 Sustainability Report 2022 Sustainability Report 2023  |
 
 # Actions for public space
 
@@ -3958,9 +2944,6 @@ Sustainability Report 2023  |
 |  Material use and reuse | ‘Reuse unless’ principle: materials and raw materials in public spaces should be reused unless absolutely impossible. We are also experimenting in a number of areas in public spaces with reusing materials or asking for circular principles in procurement processes. | Governance Innovation Learning and capabilities  |
 |  Knowledge and innovation | Scaling up | Learning and capabilities  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 B-5.1.3 Municipal vehicle fleet: maximum energy reduction and maximum energy generation
 
 |  Impact pathway | Making municipal vehicle fleets more sustainable.  |
@@ -3971,29 +2954,12 @@ B-5.1.3 Municipal vehicle fleet: maximum energy reduction and maximum energy gen
 |  Scale | Scooters, passenger cars and small vans; Sweepers; Trucks and waste trucks; Other vehicles  |
 |  Comments on feasibility and progress |   |
 |  Renewable energy generated |   |
-|  Energy consumption avoided or replaced | 18% of the municipal organisation's current energy consumption, i.e. 122 terajoules (TJ), goes to the municipal vehicle fleet.
-Reduced CO2 emissions: 11 ktonnes
-By fully electrifying the fleet, we will save at least 10% energy on our total energy consumption  |
+|  Energy consumption avoided or replaced | 18% of the municipal organisation's current energy consumption, i.e. 122 terajoules (TJ), goes to the municipal vehicle fleet. Reduced CO2 emissions: 11 ktonnes By fully electrifying the fleet, we will save at least 10% energy on our total energy consumption  |
 |  CO2e emissions by emission sector | That means we will use at least 50% less energy for the fleet (vs. 2018).  |
 |  Offset CO2e emissions (biologically or technologically fixed) |   |
 |  Total cost and cost per tonne of CO2e |   |
-|  Co-benefits | Awareness within organisation
-Improved air quality
-Active lifestyle
-Mental well-being
-Increased quality of life
-Reduced traffic congestion
-Less delay
-Decrease in car dependence
-Lower maintenance costs
-Greater efficiency
-Improved comfort in public transportation
-Reduced space demand for parking facilities  |
-|  Policy document(s) | Recalibration of the 'Transition Plan For Making Amsterdam's Fleet More Sustainable – 2019'
-Noise Action Plan 2020-2023
-Amsterdam Climate Neutral Roadmap (2020)
-Sustainable Organisation Implementation Agenda
-GGD Green Deal Sustainable Care 3.0  |
+|  Co-benefits | Awareness within organisation Improved air quality Active lifestyle Mental well-being Increased quality of life Reduced traffic congestion Less delay Decrease in car dependence Lower maintenance costs Greater efficiency Improved comfort in public transportation Reduced space demand for parking facilities  |
+|  Policy document(s) | Recalibration of the 'Transition Plan For Making Amsterdam's Fleet More Sustainable – 2019' Noise Action Plan 2020-2023 Amsterdam Climate Neutral Roadmap (2020) Sustainable Organisation Implementation Agenda GGD Green Deal Sustainable Care 3.0  |
 
 Actions for Making municipal vehicle fleets more sustainable
 
@@ -4004,9 +2970,6 @@ Actions for Making municipal vehicle fleets more sustainable
 |  Zero-emission forklifts | Replace all non-zero-emission forklifts with zero-emission variants in the short term. | Technology and Infrastructure  |
 |  Testing of zero-emission sweepers | Continuing testing of zero-emission variants of diesel sweepers. | Research/Monitoring; Technology and Infrastructure  |
 |  Electrification of municipal passenger and delivery vehicles | Replacing municipal passenger and delivery vehicles with electric. | Technology and Infrastructure  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 |   | Between 2023 and 2030, we will replace all 1,500 vehicles in the fleet with electric variants. |   |
 | --- | --- | --- |
@@ -4025,9 +2988,6 @@ Our city of tomorrow: City Climate Contract. Action plan.
 |  Making GGD business trips more sustainable | GGD: Identifying CO2 emissions on business trips and commuting + drawing up plan on how to reduce it. | Governance innovations & Policy; Research/Monitoring  |
 |  Making business travel more sustainable | Making business travel and commuting more sustainable. | Social innovations  |
 |  Sharing municipal service vehicles through municipal car pool. | Sharing service vehicles | Governance innovations & Policy; Social innovations  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 # B-5.2 Carbon-neutral operations in 2030
 
@@ -4053,18 +3013,7 @@ One way to make business operations more carbon neutral is to scrutinise our own
 |  CO2e emissions by emission sector |   |
 |  Offset CO2e emissions (biologically or technologically fixed) |   |
 |  Total cost and cost per tonne of CO2e |   |
-|  Co-benefits | Increased food security
-Improved health
-Improved animal welfare
-Sustainable food production
-Food safety
-Stimulating local food production
-Reduced food transport
-Reduction in waste and waste transport
-Awareness within organisation  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
+|  Co-benefits | Increased food security Improved health Improved animal welfare Sustainable food production Food safety Stimulating local food production Reduced food transport Reduction in waste and waste transport Awareness within organisation  |
 
 Policy document
 Food strategy implementation plan
@@ -4078,29 +3027,14 @@ Making own organisation's food chain more sustainable
 | --- | --- | --- |
 |  Sustainable Unless | All decision-making and implementation is governed by the premise of: ‘Sustainable, unless’. Should there be reasons why this cannot be met, this must be substantiated and an executive assessment will follow, whereby the agreements made in the current coalition agreement generally prevail. | Governance innovations & Policy  |
 |  Reporting negative climate impacts | This measure provides insight into the cost savings of early action on climate change, providing a financial tool for long-term public investment. | Governance innovations & Policy  |
-|  Catering | Catering will be sustainable, healthy, varied and local. | Governance innovations & Policy
-Social innovations
-Funding and financing
-Learning and capabilities  |
-|  Catering ratio vegetable/animal is 60:40 | Catering ratio animal/vegetable is 40/60 | Governance innovations & Policy
-Research/Monitoring  |
+|  Catering | Catering will be sustainable, healthy, varied and local. | Governance innovations & Policy Social innovations Funding and financing Learning and capabilities  |
+|  Catering ratio vegetable/animal is 60:40 | Catering ratio animal/vegetable is 40/60 | Governance innovations & Policy Research/Monitoring  |
 |  Mapping food waste of own organisation | Food waste: mapping and minimising | Research/Monitoring  |
-|  GGD: sustainable and responsible procurement of medicines | Considering environmental and international social conditions when procuring medicines. | Governance innovations & Policy
-Research/Monitoring
-Funding and financing
-Learning and capabilities  |
-|  Plant-based fruntrunner group | Fruntrunner group on plant-based, fair and sustainable food within major catering employers; scan for instruments and agreements (contracting, subsidisation, tenders). | Social innovations
-Research/Monitoring
-Learning and capabilities  |
+|  GGD: sustainable and responsible procurement of medicines | Considering environmental and international social conditions when procuring medicines. | Governance innovations & Policy Research/Monitoring Funding and financing Learning and capabilities  |
+|  Plant-based fruntrunner group | Fruntrunner group on plant-based, fair and sustainable food within major catering employers; scan for instruments and agreements (contracting, subsidisation, tenders). | Social innovations Research/Monitoring Learning and capabilities  |
 |  GGD as a sustainable and healthy organisation | GGD as a sustainable and healthy organisation (procurement). | Governance innovations & Policy  |
-|  Implementation for plant-based offer within Municipal Organisation | Preparing implementation plan for accelerating transition to plant-based food and beverage offer within municipal organisation in collaboration with Facilities Office, GGD, Green Office. | Governance innovations & Policy
-Learning and capabilities  |
-|  Participation employees more plant-based | Drawing up plan for employee participation in transition to plant based. | Governance innovations & Policy
-Social innovations
-Learning and capabilities  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
+|  Implementation for plant-based offer within Municipal Organisation | Preparing implementation plan for accelerating transition to plant-based food and beverage offer within municipal organisation in collaboration with Facilities Office, GGD, Green Office. | Governance innovations & Policy Learning and capabilities  |
+|  Participation employees more plant-based | Drawing up plan for employee participation in transition to plant based. | Governance innovations & Policy Social innovations Learning and capabilities  |
 
 # B-5.3 Circular operations in 2030 and maximum circular use of materials in public spaces
 
@@ -4117,9 +3051,7 @@ In public spaces and construction, too, it is imperative that prior to developme
 |  Impact pathway | Circular organisation  |
 | --- | --- |
 |  Early results (1-2 years) | 50% circular procurement by 2025  |
-|  Later results (by 2030) | 100% circular procurement by 2030
-% circular operations by 2030
-In 2030: 20% reduction in consumption  |
+|  Later results (by 2030) | 100% circular procurement by 2030 % circular operations by 2030 In 2030: 20% reduction in consumption  |
 |  Actors involved | City of Amsterdam  |
 |  Scale | City of Amsterdam  |
 |  Comments on feasibility and progress | Many actions have already been or are being initiated and stem from established policies.  |
@@ -4128,17 +3060,10 @@ In 2030: 20% reduction in consumption  |
 |  CO2e emissions by emission sector |   |
 |  Offset CO2e emissions (biologically or technologically fixed) |   |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 |  Total cost and cost per tonne of CO2e |   |
 | --- | --- |
-|  Co-benefits | Cost reduction
-Reduction in waste and waste transport
-Awareness within organisation  |
-|  Policy document(s) | Circular Implementation Agenda 2023-2026 and more
-Sustainable Organisation Implementation Agenda
-Our city of tomorrow  |
+|  Co-benefits | Cost reduction Reduction in waste and waste transport Awareness within organisation  |
+|  Policy document(s) | Circular Implementation Agenda 2023-2026 and more Sustainable Organisation Implementation Agenda Our city of tomorrow  |
 
 # Actions for Circular organisation
 
@@ -4157,9 +3082,6 @@ Our city of tomorrow  |
 |  Living lab life extension for bridges and quay walls | In a living lab, life-extending solutions for repairing bridges and quay walls will be explored and applied together with market players. | Governance innovations & Policy Research/Monitoring Democratisation and participation  |
 |  Reducing consumption | The municipality will also reduce its consumption by 20%, starting with consumables and furnishing its own premises and, where possible, those of social property. | Governance innovations & Policy Technology and Infrastructure  |
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 |  Using less stuff | Amsterdam itself will use less stuff, repair more and engage in circular procurement. | Governance innovations & Policy Social innovations  |
 | --- | --- | --- |
 |  Presenting true price procurement behaviour | The municipality will lead by example and present the true price of its own procurement behaviour by 2025. This is an extension of the carbon price included in tenders. | Governance innovations & Policy Social innovations Funding and financing  |
@@ -4171,9 +3093,6 @@ Our city of tomorrow: City Climate Contract. Action plan.
 |  ‘Reuse unless…’ for material use in the built environment | The municipality will set the right example by applying the ‘Reuse unless …’ principle for the use of materials in public spaces. For better materials management, we will provide new ICT systems and storage space. | Governance innovations & Policy Technology and Infrastructure  |
 |  Setting up action frameworks for circular procurement | Setting up concrete action frameworks for sustainable procurement. | Governance innovations & Policy  |
 |  Circular organisation | We will ensure that the municipal organisation is able to operate circularly by 2026. | Governance innovations & Policy Social innovations  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 # B-5.4 Climate-resilient buildings and (courtyard) areas
 
@@ -4193,39 +3112,22 @@ B-5.4.1 Making the municipal organisation climate adaptive
 |  CO2e emissions by emission sector |   |
 |  Offset CO2e emissions (biologically or technologically fixed) |   |
 |  Total cost and cost per tonne of CO2e |   |
-|  Co-benefits | Health benefits
-Safety
-Improved liveability of the city
-Increased biodiversity
-Improving and exploiting ecosystem services
-Improving the quality of the living environment; and
-Increased biodiversity  |
-|  Policy document | Green vision
-Climate Adaptation Progress Report 2023  |
+|  Co-benefits | Health benefits Safety Improved liveability of the city Increased biodiversity Improving and exploiting ecosystem services Improving the quality of the living environment; and Increased biodiversity  |
+|  Policy document | Green vision Climate Adaptation Progress Report 2023  |
 
 We want to structurally integrate climate adaptation into all the work of our organisations. It needs to be considered 'normal' that climate-adaptive thinking and action is a standard part of our processes and ways of working. We strive for employees to be aware of what impact their work has on the city's climate resilience. The following is a selection of activities undertaken to structurally integrate climate adaptation into our operations and management[48].
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 Actions for Making municipal properties climate adaptive
 
 |  Action | Description | Levers of Change  |
 | --- | --- | --- |
-|  Research on costs for green roofs | The municipality will look into funding and maintenance costs for green roofs, facades and courtyard gardens. | Research/Monitoring
-Funding and financing  |
-|  Nature-inclusive development and management of roofs and facades | Greener and nature-inclusive development and management of the roofs and facades of buildings and adjacent land owned or used by the municipality of Amsterdam. | Governance innovations & Policy
-Learning and capabilities  |
-|  Green tendering and procurement | Committing to greenery and nature inclusiveness in tenders or procurement processes. | Governance innovations & Policy
-Funding and financing  |
-|  Maintenance and climate adaptation will be intertwined | Each project considers whether climate adaptation measures are necessary. An appropriate set of climate-adaptive measures will be established for the different types of maintenance. Linking climate adaptation to maintenance work in this way makes the city a little more climate-adaptive with every maintenance project. | Governance innovations & Policy
-Technology and Infrastructure  |
+|  Research on costs for green roofs | The municipality will look into funding and maintenance costs for green roofs, facades and courtyard gardens. | Research/Monitoring Funding and financing  |
+|  Nature-inclusive development and management of roofs and facades | Greener and nature-inclusive development and management of the roofs and facades of buildings and adjacent land owned or used by the municipality of Amsterdam. | Governance innovations & Policy Learning and capabilities  |
+|  Green tendering and procurement | Committing to greenery and nature inclusiveness in tenders or procurement processes. | Governance innovations & Policy Funding and financing  |
+|  Maintenance and climate adaptation will be intertwined | Each project considers whether climate adaptation measures are necessary. An appropriate set of climate-adaptive measures will be established for the different types of maintenance. Linking climate adaptation to maintenance work in this way makes the city a little more climate-adaptive with every maintenance project. | Governance innovations & Policy Technology and Infrastructure  |
 |  Climate adaptation as part of 'Sustainable, unless' decision-making | When this way of working is successfully rolled out, it means that every physical project that is started should also be realised in a climate-adaptive way. Only under specific circumstances can an exception to this be made, and this exception must then be ratified by an official in a resolution. This way, structural attention is paid to the topic of climate adaptation within projects. | Governance innovations & Policy  |
 |  New and quicker insights through the QuickScan climate adaptation | This gives project teams insight into climate adaptation risks and opportunities at the very start of a project, allowing them to estimate the costs of possible measures in a timely manner. With further development, initial risk assessment can be done faster and at a lower cost. | Governance innovation & policy  |
 |  We share knowledge and good examples with each other | We are continuously raising awareness about climate adaptation. Increasingly, knowledge exchange and advice on how best to incorporate climate adaptation is taking place. Both internal and external communication and knowledge sharing play a major role here. Through knowledge tables, learning pathways, presentations and a news series on climate adaptation plans, we aim to make all organisations involved with us more 'climate literate' in the coming period. | Learning and capabilities  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 # B-5.5 Sustainable thinking and action
 
@@ -4247,9 +3149,6 @@ The network of sustainability ambassadors has broadened and evolved, continuing 
 
 A Sustainable Procurement and Contracting Action Framework was developed and established in 2022. This action framework is a concrete translation of the 'Procurement with Influence' and 'Procurement for Amsterdam' procurement policies. The action framework provides concrete tools for buyers and clients to translate sustainability policy into procurement⁴⁹.
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 |  Impact pathway | Sustainable thinking and action  |
 | --- | --- |
 |  Early results | The municipality leads by example  |
@@ -4262,28 +3161,16 @@ Our city of tomorrow: City Climate Contract. Action plan.
 |  CO2e emissions by emission sector |   |
 |  Offset CO2e emissions (biologically or technologically fixed) |   |
 |  Total cost and cost per tonne of CO2e |   |
-|  Co-benefits | Awareness within organisation
-Health benefits
-Safety
-Improved liveability of the city
-Increased biodiversity
-Improving and exploiting ecosystem services
-Improving the quality of the living environment; and
-Increased biodiversity  |
-|  Policy document | Green vision
-Climate Adaptation Progress Report 2023  |
+|  Co-benefits | Awareness within organisation Health benefits Safety Improved liveability of the city Increased biodiversity Improving and exploiting ecosystem services Improving the quality of the living environment; and Increased biodiversity  |
+|  Policy document | Green vision Climate Adaptation Progress Report 2023  |
 
 ## Actions for Sustainable thinking and action
 
 |  Action | Description | Levers of Change  |
 | --- | --- | --- |
 |  Platform for a sustainable organisation | Green Office reports annually on progress on carbon and energy footprints, initiatives taken and progress on measures and provides advice where necessary. We also work on knowledge transfer, employees' sustainable thinking and actions, an ambassadors' network and making our own sustainability and climate goals visible internally. To this end, Green Office has an informative intranet page, a newsletter and an active Tamtam page. |   |
-|  Advice on learning and development programmes
-Sustainable thinking and action | Various subject-specific courses and workshops, training courses, working methods and roadmaps for sustainability are available in the organisation. These were developed bottom-up and intended for one's own department. To unlock the knowledge from the existing offer, Green Office makes a recommendation for the provision of training and education accessible to all employees, and we remain in dialogue to retrieve the needs of employees. |   |
+|  Advice on learning and development programmes Sustainable thinking and action | Various subject-specific courses and workshops, training courses, working methods and roadmaps for sustainability are available in the organisation. These were developed bottom-up and intended for one's own department. To unlock the knowledge from the existing offer, Green Office makes a recommendation for the provision of training and education accessible to all employees, and we remain in dialogue to retrieve the needs of employees. |   |
 |  Green Colleges and Green Screens | During Green Colleges, internal and external professionals explain issues about sustainable thinking and action, energy, CO2, circularity and climate adaptation. It also translates what some see as abstract goals to their own organisation and employees' own work. Green Screens are screenings |   |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 |   | of documentaries or informative films on a sustainability or climate topic. All colleagues can attend both lectures and films. |   |
 | --- | --- | --- |
@@ -4293,9 +3180,6 @@ Our city of tomorrow: City Climate Contract. Action plan.
 |  Stimulating and facilitating initiatives | Green Office stimulates, advises and implements projects to make business processes more sustainable. Where possible, Green Office also encourages and facilitates initiatives taken by colleagues themselves. Waste separation in municipal premises is now possible. The new banqueting (vegetarian is the norm) and catering (80 percent vegetarian) makes choosing more sustainable drinks and lunch easy. Green Office stimulates managers to appoint an ambassador or sustainability coordinator in their department. |   |
 |  Internal and external sharing of internal successes | Sustainability successes are shared via interviews with colleagues on intranet and Tamtam, on the internet as a Sustainable Example, externally as a case study on New Amsterdam Climate and Rainproof, on Green Office LinkedIn, on Duurzaam020 and in the Green Office newsletter (internally over 1,000 colleagues) and Duurzaam020 (externally). |   |
 |  Indoor communication | It is important for employees to know what is sustainable in the premises where they work. We share that information through displays, posters, campaigns, information boards, et cetera. |   |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 # B Indicators for monitoring evaluation and learning
 
@@ -4343,9 +3227,6 @@ Zero-mission area within Ring A10 for taxis by 2025
 Zero-mission area within Ring A10 for vans by 2025
 Zero-mission area within Ring A10 for trucks by 2025
 Zero-mission area within built-up areas for mopeds and motorised bikes by 2025
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 Entire inland water/centre area zero-emission for waterborne transport by 2025
 All passenger vessels on the Amsterdam
@@ -4399,9 +3280,6 @@ birds and mammals.
 Help owners improve the mental and
 physical health of (domestic) animals.
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 Improve ecological water quality in ponds and ditches through better bank design, dredging and fish stock management
 Designate rest areas where aquatic ecology can develop
 Create more nature-friendly banks/embankments, both below and above water
@@ -4446,18 +3324,11 @@ We ensure that residents and businesses can dispose of their waste properly
 We collect waste efficiently and sustainably
 We support co-management and are committed to prevention
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 Amsterdam prevents (residual) waste.
 City without plastic pollution by 2030
 30% reduction of plastic litter on land and in water by 2023
 50% reduction of primary abiotic raw materials use
 Sustainable thinking and action
-
-September 2024
-7
-Our city of tomorrow: City Climate Contract. Action plan.
 
 # Part C – Enabling acceleration of climate action
 
@@ -4487,7 +3358,6 @@ The municipality and other authorities ensure compliance with these rules. By di
 
 In its budget, the City of Amsterdam works with various programme lines, consists of 50 departments and even more subdivisions. Since 2023, sustainability has been integrated horizontally throughout the organisation. This means that everyone applies the 'Sustainable, unless' principle in their own domain.
 
-September 2024
 Our existing organisational structure makes acceleration difficult. We are well aware of that. Despite good intentions and a commitment to integrated working methods, we and others see that we still often work in a compartmentalised way. Therefore, we are innovating within our organisation to best facilitate these transitions. At the same time, this compartmentalisation is functional. Amsterdam is big, and if you want to get something done you cannot always coordinate with everyone. However, if we don't make sustainability everyone's responsibility, the transition will not succeed. Therefore, however counterintuitive, we need to work in a more integrated way to accelerate sustainability.
 
 ## C-1.2 Strategic Coalitions with the city for sustainability
@@ -4510,9 +3380,6 @@ And on the other hand, this refers to the financial sector itself having to chan
 
 The council letter Our city of tomorrow includes the ambition to engage as an active shareholder in favour of the sustainability challenge. The aim of the active shareholdership process is to gain insight into the current sustainability developments of the participations and how we as shareholders can
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 focus on this. We answer questions such as: what is already being done in the participations in terms of Corporate Social Responsibility (CSR)? What issues are the participations facing during implementation? And what tools can we as a municipality use to accelerate the task?
 
 This results in an understanding of the opportunities that exist in our participations, and the room we see in our role as an active shareholder to focus more on this issue, with a number of concrete proposals for selected participations to accelerate sustainability. We are already fulfilling this role, for example through the active role we are playing as a shareholder in the current port vision and strategy review, based on our municipal port vision. Or through the recently released position paper Schiphol, in which we, as an active shareholder, give our view on the development of the airport and aviation.
@@ -4529,9 +3396,6 @@ This results in an understanding of the opportunities that exist in our particip
 |  "Climate consultation: Alderperson Pels will set up a climate walk-in clinic to make it as easy as possible for residents and businesses to engage in conversation about their concerns and solutions."  |
 |  Participation in the Coalition for Disaster Resilient Infrastructure (CDRI) irt Climate Adaptation  |
 |  AMS Project: Ideal(s) City  |
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 # C-2 Doing it together and conversation with the city
 
@@ -4555,9 +3419,6 @@ Broadly speaking, the city's circularity is a sum of everyday choices, such as h
 
 Diverse groups of Amsterdam residents were also heard in the making of the environmental vision, which guides Amsterdam's development perspective. They pointed out, besides issues such as
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 sustainability, accessibility, affordability and meeting, the importance of being able to co-determine what the city and neighbourhoods will look like. This involvement is essential, because we make the city together. The turbulent growth of the past decade has caused alienation, the feeling of losing one's neighbourhood. Participating gives Amsterdam residents a chance to take back their city. In this vision, the city board makes choices that will sometimes hurt. Sometimes existing interests and space users have to make concessions. The choices have been made on solid grounds, which reflects the character of this college, but good and better are debatable. The board is keen to engage further with the city on this in the coming years. How the environmental vision will have its effect in practice will be elaborated in an Implementation Agenda for the Amsterdam Environmental Vision.
 
 ## Doing it together
@@ -4572,9 +3433,6 @@ In addition, several initiatives to engage in dialogue and gather input are ongo
 
 First, there is room for increased cooperation in the actual implementation of projects and policy-making. Amsterdam residents are increasingly coming up with their own ideas. The municipality sets up participation processes for all kinds of different projects, so that Amsterdam residents' ideas can have a place in them and the plans improve: resident participation. The way this is happening is changing. Not only at times when the municipality asks for residents' input, but also to facilitate Amsterdam residents with good ideas to develop their initiatives. With a focus on more structural cooperation with (groups of) residents: government participation and network participation. Joint implementation processes, such as sustainability coalitions, also offer opportunities for knowledge sharing, support building and innovative solutions from the bottom up.
 Second, more synergy in participation policies may be good. In the past, this was often fragmented across different sustainability domains. People got involved in energy transition or food, but not all at once. An integrated vision of participation, broadening the view to other themes such as circular economy, food supply and climate adaptation, can lead to greater involvement of Amsterdam residents, but also risks fragmentation. At the same time, it is also
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 a way of outlining a broader perspective in which individual transitions and other dossiers can reinforce each other.
 
@@ -4610,9 +3468,6 @@ In order to manage the CO2 impact of the municipal budget, it is necessary to be
 
 In parallel with improving our own budget system, we know that the municipality has insufficient funds to pay for the climate transition. For a next Investment plan, we want to take steps to make municipal
 
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
-
 and urban climate policy more financeable by, for example, getting more private capital invested in the sustainability task. We will implement this by working on identifying avoided costs, and the various strategies associated with the actions around sustainable finance as described in the current Investment plan.
 
 # Annexes
@@ -4620,9 +3475,6 @@ and urban climate policy more financeable by, for example, getting more private 
 ## Annex 1: technical Q&amp;A JRC
 
 This Q&amp;A is meant as a technical annex to the action plan which provides clarity to several questions the European commission still has concerning which specific greenhouse gases and emission sources are included in our plans. Where there is a difference between information provided in the CCC and the annex, the information in the annex is leading.
-
-September 2024
-Our city of tomorrow: City Climate Contract. Action plan.
 
 # Colophon
 
@@ -4634,14 +3486,10 @@ City of Amsterdam.
 
 All rights reserved.
 
-September 2024
-
 For more information: amsterdam.nl/duurzaam
 
 duurzaam@amsterdam.nl
 
-September 2024
-5
 # Annex 1: technical Q&amp;A for the joint review committee
 
 ## Introduction
@@ -4815,11 +3663,7 @@ This is the most recent baseline from CE-Delft, which is in line with national m
 |  Total | 3.843.914  |
 
 The methodology of CE-Delft is available on their website
-ص 262 فن القيادة
 
-الخارجية
-
-الخارجية هي من أهم ما يخصنا في القيادة، وهي من أهم ما يخصنا في القيادة، وهي من أهم ما يخصنا في القيادة، وهي من أهم ما يخصنا في القيادة، وهي من أهم ما يخصنا في القيادة، وهي من أهم ما يخصنا في القيادة، وهي من أهم ما يخصنا في القيادة، وهي من أهم ما يخصنا في القيادة،
 # Table of contents
 
 Introduction 3
@@ -4858,7 +3702,6 @@ Amsterdam has already committed to combating climate change in recent years. In 
 In September 2023, we published the council letter Our city of tomorrow, in which the entire Amsterdam city council committed to Amsterdam's climate policy. Sustainability is no longer an isolated task; it is the responsibility of the entire municipal organisation. We work according to the principle of 'Sustainable, unless'. In other words: a lot is already happening. Yet despite our efforts, we are not on track. We therefore need different ways of working. That means looking for new methods, but also phasing out unsustainable practices.
 
 Climate City Contracts Commitment document
-4
 # Why are we participating?
 
 To support and endorse our city's effort, the municipality of Amsterdam has committed to the EU mission 100 climate neutral and smart cities. The intention of the mission is to accelerate the climate transition, contributing to our city of tomorrow. We do this by promoting cooperation between cities, actors within cities and between layers of government. We want to remove barriers to this acceleration, scale up and innovate. Our city is fully committed to this. The joint effort of the cities in the mission clarifies what barriers to acceleration are possible and what solutions are needed for this at the European, national and local levels.
@@ -4868,10 +3711,6 @@ Amsterdam has direct influence on 42% of total emissions (in scope 1 and 2) in A
 Our city is not taking on this mission alone, but together with 111 other mission cities across Europe with their own strengths and limitations, the region, the central government, the EU and perhaps most importantly: with partners from our city who want to contribute to our city of tomorrow. They all have their own roles and face their own challenges, but they do see the need to work on the transitions described here. We proactively approached some of these partners to describe their roles in so-called letters of support. Other partners remain welcome. These letters demonstrate broad-based support for the ecological transition in Amsterdam.
 
 In front of you is the Climate City Contract, a (non-legally binding) document in which the City of Amsterdam reports to the European Commission what is being done in our city to become more sustainable and how the mission is being implemented at the local level. For the European Commission, this document is an important tool to see how European policies are implemented locally, which is why it must meet some formal requirements. In addition, the contract is iterative, and must be updated every 2 years for the purpose of reporting progress to the European Commission. This will be done through Amsterdam's Integrated Sustainability Monitor. Based on the measurements from the monitor, the priorities and targets from the climate contract can be updated or adjusted.
-
-Climate City Contract, Commitment document
-5
-Climate City Contracts | Commitment document
 
 # Our city of tomorrow: Climate City Contract consists of three elements:
 
@@ -4918,11 +3757,6 @@ The Amsterdam Climate Neutral Roadmap is an ambition document adopted in 2020 wi
 
 In this strategy, we use Kate Raworth's donut economy as a basis to look at the necessary economic and social developments required to live within socially equitable boundaries (the inner boundary of the donut) and planetary boundaries (the outer boundary of donut). This is in line with our ambitions and lines of action for realising a circular Amsterdam.
 
-Climate City Contracts | Commitment document
-7
-Climate City Contract
-Commitment document
-
 # Climate adaptation strategy
 
 With the climate adaptation strategy, we as the municipality of Amsterdam, together with the three water authorities of Amstel, Gooi and Vecht, Hollands Noorderkwartier and Rijnland, create a future vision for a climate-resilient city. Climate adaptation is essential to ensure that physical, social and economic value of Amsterdam is preserved. It is an opportunity to make an important contribution to a safe, green, liveable and attractive city together with all Amsterdam residents.
@@ -4948,13 +3782,6 @@ The action plan will detail the actions that the municipality and signatories of
 
 ![img-0.jpeg](img-0.jpeg)
 
-Climate City Contract
-Commitment document
-ص 262 فن القيادة
-
-الخارجية
-
-الخارجية هي من أهم ما يخصنا في القيادة، وهي من أهم ما يخصنا في القيادة، وهي من أهم ما يخصنا في القيادة، وهي من أهم ما يخصنا في القيادة، وهي من أهم ما يخصنا في القيادة، وهي من أهم ما يخصنا في القيادة، وهي من أهم ما يخصنا في القيادة، وهي من أهم ما يخصنا في القيادة،
 The climate crisis, resource crisis and biodiversity crisis require our maximum commitment: we take responsibility for the organisation and the city to pull out all the stops now to keep our city and the world liveable. We focus not only on $\mathrm{CO}_{2}$, but on all the targets we have set: a $100\%$ climate-neutral, circular and climate-adaptive city by 2050. We do so because we need to take good care of the city and our world: for now and for future generations, with a focus on the most vulnerable. In all plans for the coming years, along the way, we remain in constant dialogue with the city and are transparent in the choices we make. We do it together. Together, we balance the necessary, sometimes painful measures now with the major consequences of climate change later.
 
 About four times the amount of $\mathrm{CO}_{2}$ emissions from Amsterdam's energy consumption are emitted annually from material use, for example in the production of food, building materials and consumer goods for the city, also known as scope 3 emissions (Monitor Circulair, 2023). Besides the $\mathrm{CO}_{2}$ effects, Amsterdam's consumption pattern also imposes other environmental costs, which would cost billions to fix (Ibid).
@@ -4967,9 +3794,6 @@ However, including scope 3 emissions is not easy. It is difficult to know for ea
 
 ![img-0.jpeg](img-0.jpeg)
 
-Climate City Contract
-
-Commitment document
 That maximum acceleration is also the commitment in terms of $\mathrm{CO}_{2}$ emissions from energy consumption. With the introduction of the coalition agreement, the City of Amsterdam has set a $60\%$ $\mathrm{CO}_{2}$ reduction target for the city by 2030, higher than the $55\%$ stipulated by Dutch and European climate laws. This means we are more ambitious than the country and the EU. CE Delft research shows that achieving $60\%$ reduction by 2030 already requires huge efforts from Amsterdam.
 
 The entire college, as described in the council information letter Our city of tomorrow, feels a responsibility to do everything possible to combat climate change. While we would like to increase the ambition of a $60\%$ reduction by 2030, that would not reflect reality.
@@ -4997,8 +3821,6 @@ Fully prepared for climate change ('climate adaptive')
 Fully climate neutral compared to 1990
 Fully circular economy
 
-Climate City Contracts | Commitment document
-2
 These objectives underpin Our city of tomorrow. They go beyond the city's direct energy consumption, because we see that Amsterdam's impact on our planet does not end at municipal borders. Other objectives, such as climate adaptation but also traffic diversion, instead have local effects, and are related to other aspects of the sustainability challenge, and the effects of climate mitigation. We therefore include our entire sustainability policy in the climate-neutral city mission. As such, we do not exclude any areas within our city limits or emission sources from the mission and keep the possibility open for any new targets and tasks in future iterations of the contract. In fact, we also feel responsible for emissions in the chain of the Amsterdam economy.
 
 To achieve sustainability targets, preconditions must be realised at other layers of government. Amsterdam, for example, has a direct impact on 42% of CO₂ reductions in scope 1 and 2 with the measures from the Climate Neutral Roadmap. Illustrative are developments in the heat transition and mobility transition, where it is clear that flanking, essential legislation and funding from other layers of government are not always in place at the right time to make our current goals achievable. Therefore, maximising sustainability also means learning together and scaling up.
@@ -5013,23 +3835,15 @@ The IMF argues that investing in a climate-neutral world will pay off twice over
 
 Insulating homes, for example, improves housing quality and reduces energy poverty. Overdue maintenance can be addressed. And in case of bio-based home insulation, it also contributes to the circular transition and can even store CO₂ in the building, which can help boost the sustainable agriculture chain. Finally, it offers opportunities for retraining disadvantaged residents into new jobs created by the sustainable transition.
 
-Climate City Contracts | Commitment document
-3
 In addition, our city's energy security improves, and we become less vulnerable to another gas crisis. In turn, climate adaptation offers opportunities for more greenery and water security, but also helps promote physical and mental well-being by expanding green spaces in the city and reducing the negative impacts of climate change. Adding more greenery and removing paving in neighbourhoods increases residents' quality of life. A green and sustainable neighbourhood is also pleasing to property owners due to an increase in value.
 
 The transition will also be accompanied by a reduction in air and noise pollution. Currently, people in Dutch cities die 9 months earlier than Dutch people in rural areas. Therefore, when air and noise pollution decrease due to reduced motorised mobility, we live longer, and age more pleasantly. In other words, this transition is not just important for the earth, but for the health of our residents as well.
 
 ![img-0.jpeg](img-0.jpeg)
 
-Climate City Contract
-Commitment document
-4
 # Strategic priorities in sustainability
 
 Climate City Contract - Commitment Document 15
-Climate City Contract
-Commitment document
-6
 
 Five strategic priorities for sustainability can be identified in Amsterdam. They are:
 
@@ -5073,11 +3887,6 @@ The built environment
 
 By 2050, all buildings in the city should be heated in a sustainable way. Replacing natural gas with alternative heat sources and saving energy are therefore key. Work needs to be done behind every front door, behind every facade and in every street. At the same time, we must ensure that CO₂ emissions do not increase further as the city grows. To achieve this, Amsterdam is working on seven pillars with specific measures reflected in the action plan.
 
-Climate City Contracts | Commitment document
-7
-Climate City Contracts | Commitment document
-8
-
 # 1. Natural gas-free neighbourhood approach
 
 We are working to make our city natural gas-free. We are currently accelerating the implementation through the establishment of the 'Energy for the City' implementing organisation and in the recalibration of the Transition Vision on Heat. We remain dependent on framework conditions in laws and regulations for this approach, and see a major financial challenge to scale up in a way that is good for residents, businesses and housing associations.
@@ -5093,8 +3902,6 @@ Making Amsterdam natural gas-free requires growing the heat infrastructure into 
 # 4. Making homes more energy efficient
 
 Consumption of electricity and heat in homes must be reduced. Homes account for more than 50% (690 ktonnes) of CO₂ emissions in the built environment and 14% of Amsterdam's total. Amsterdam now has about 441,000 homes, of which 30% are owned by residents, 42% by housing associations, and 28% by private landlords. Amsterdam's Insulation Offensive ensures energy savings in the existing housing stock. It makes an important contribution to the municipal climate target of saving 60 percent CO₂ by 2030. With this implementation plan, the college outlines how it will support homeowners through 2026. Tenants and owners, landlords and asset owners must then make their own choice of insulation and sustainability. Together, the 2030 goals are within reach. This will help contribute to a climate-neutral city by 2050 and reduce energy poverty.
-Climate City Contract
-Commitment document
 
 # 5. Making the business market energy efficient
 
@@ -5113,10 +3920,6 @@ There is only one time to give new construction in the city the quality it needs
 There are increasing numbers of residents, visitors and jobs in Amsterdam. More people also means more travel. Doing nothing will lead to more $\mathrm{CO}_{2}$ emissions, pressure on public spaces and negative health effects from air and noise pollution. Therefore, we ask every vehicle owner or driver to consciously choose a sustainable form of transport. As a municipality, we encourage, facilitate and, where necessary, regulate this switch. We do this with the following three paths:
 
 ![img-0.jpeg](img-0.jpeg)
-
-9
-Climate City Contract
-Commitment document
 
 # 1. Changing traffic movements
 
@@ -5146,10 +3949,6 @@ We want to make an appropriate contribution to the diversification of electricit
 
 Electricity has a key role in the economy and in the energy transition. More and more electricity is consumed for heating buildings, electric mobility and other purposes. Sufficient capacity on the electricity grid is an important prerequisite for a sustainable city. That is why Amsterdam is working hard with other governments in the region and with partners such as Liander and Tennet to create a robust electricity system, and to deal with the lack of capacity that exists on the grid today.
 
-0
-Climate City Contract, Commitment document
-1
-
 # The food transition
 
 The food transition is prerequisite for achieving a climate-neutral, circular and more nature-inclusive society. This is because the food system accounts for about 30% of global greenhouse gas emissions. Reducing the impact of this system by consuming differently thus becomes a strategic opportunity in the climate challenge. These impacts come from methane emissions from livestock farming, among others, and CO₂ emissions from food transportation and land-use changes. The system is also a major consumer of water and contributor to water pollution from over-fertilisation and other chemicals. Moreover, changing how we eat can lead to health benefits.
@@ -5173,8 +3972,6 @@ As a capital city, we want to make an active contribution to the necessary trans
 # Fair and social food
 
 Producing, preparing and consuming food defines who we are as individuals and as a community. The city's tastes, like its cultures, are diverse and large in number. Our goal is to make healthy, fair, sustainable and affordable food available to all and to transform existing food aid to increase food security. To do so, we will join local, area-based cooperation and will support existing initiatives, such as the food circle in Noord.
-Climate City Contract
-Commitment document
 
 # The transition to a circular economy
 
@@ -5199,7 +3996,6 @@ Of the things we use, textiles and electrical appliances in particular have a ma
 
 The 2023 Intergovernmental Panel on Climate Change (IPCC) report shows that 40-70% of CO₂ emissions can be reduced by changing people's behaviour. With low engagement, it appears that emotional impulses (easy, attractive) drive (buying) behaviour. Advertising around us encourages us to consume. Buying new stuff tends to take less time, money and effort than getting a product repaired. As a municipality, we will have to consider what we can change in the city to encourage more circular behaviour.
 
-2
 For that reason, Amsterdam wants to:
 
 Ensure that circular entrepreneurs are given more space to offer services such as repair and sharing of consumer goods, for example by developing a circular craft centre;
@@ -5225,8 +4021,6 @@ Climate change impacts the safety, infrastructure and quality of our living envi
 
 Therefore, integral working is necessary. In the pilot cities programme with the other Dutch cities from the mission, we are practising making an integral area plan based on the integral public space design method
 
-Climate City Contracts | Commitment document
-3
 in Amsterdam. That means designing the public space based on a shared budget, overall future-proofing requirements and integrating replacement tasks.
 
 In addition, for each new neighbourhood design, we work towards a continuous green ecological structure with high biodiversity and a natural network of water and plants. We also opt for nature-inclusive, green and biodiverse banks, quays, verges, parks, forest and woodland, grasslands, lawns, parks, streets and squares when constructing or redesigning public spaces. We transform pavement in existing public spaces from grey to green, such as the asphalt in the Amsterdam Forest. In the Rembrandpark, among other things, waterways will be deepened and reconstructed, paving will be replaced by greenery and nature-friendly banks will be constructed to increase water storage capacity.
@@ -5244,12 +4038,6 @@ March 2020. This sets the target of 100% less CO₂ emissions (in scope 1 and 2)
 In 2022, as a municipal organisation, we consumed 596 Terajoules (TJ) of energy. This means we continue to see a downward trend compared to the starting year 2018 (11 percent less energy consumption). There has been a slight increase in energy consumption since 2021, mainly due to electrification of the vehicle fleet. The absolute decrease is caused by using less natural gas and fuels in the organisation.
 
 ![img-0.jpeg](img-0.jpeg)
-
-Climate City Contract
-
-Commitment document
-Climate City Contracts | Commitment document
-5
 
 # Fully carbon neutral operations
 
@@ -5273,16 +4061,6 @@ We are working on climate adaptation to protect our city from increasing heat, d
 Getting the city ready for the future is not just about technology and money. To create a sustainable organisation, people also need to have different knowledge, and different behaviour. We help our colleagues make sustainable choices and apply sustainability in their work. One way we do this is by providing them with a network of civil servants (Sustainable Civil Servants Network). Colleagues from across the organisation can join this to exchange experiences on making their boards more sustainable. We make sustainability in our organisation visible, understandable and accessible to all.
 
 ![img-0.jpeg](img-0.jpeg)
-
-Climate City Contract
-Commitment document
-ص 160 فن القيادة
-
-الخارجية
-
-الخارجية هي من أهم ما يخصنا في القيادة، وهي من أهم ما يخصنا في القيادة، وهي من أهم ما يخصنا في القيادة، وهي من أهم ما يخصنا في القيادة، وهي من أهم ما يخصنا في القيادة، وهي من أهم ما يخصنا في القيادة، وهي من أهم ما يخصنا في القيادة، وهي من أهم ما يخصنا في القيادة،
-Climate City Contracts | Commitment document
-8
 
 # What happens next?
 
@@ -5317,9 +4095,6 @@ There is no time to lose, and at the same time, this transition is all about the
 
 All this is why the Dutch mission cities have been in frequent contact over the past two years to share lessons and best practices on the mission and sustainability. We are jointly learning about neighbourhood-based investment platforms for sustainability. We see how new financing structures and ways of designing and budgeting could contribute to the financial challenges we face there.
 
-Climate City Contract
-Commitment document
-9
 We also look beyond borders. NetZeroCities helps us innovate in the way we think about investments and financing systems. NetZeroCities has, for instance, introduced a capital hub that allows it to see how projects that are not currently fundable can become so. This overlaps well with Amsterdam's work on the ESG hub for cities, where we are also looking for ways to link sustainability issues to resources. We also share Amsterdam's knowledge through our networks and city ties, such as in the Eurocities working groups, or by providing input on new laws and regulations to the European Commission and the state through these ties, networks, official contacts and council platforms.
 
 Partly for this purpose, the national cooperation structure with the central government was set up, in which we work together to accelerate sustainability and remove barriers for cities in terms of zero-emission mobility, bio-based construction and insulation, and integrated neighbourhood-oriented sustainability. Under the guidance of Platform 31, in the NSS we look for supported scalable interventions and shared knowledge needs to accelerate sustainability as a collaborative government. With the Institute for Public Value (IPW), we are also working at this scale level to achieve breakthroughs in areas where we as a government ourselves get stuck in bureaucracy. We also collaborate in the DMI ecosystem, to harmonise the digital ecosystem, for example by participating in an advisory board on monitoring on the climate challenge.
@@ -5332,27 +4107,14 @@ Together with Amsterdam's knowledge institutions, we are working on various pilo
 
 With the GasTerug Action Network, which was launched on the initiative of then-Amsterdam alderman Van Doorninck after Russia's invasion of Ukraine to reduce dependence on Russian gas, the municipality is working closely on the theme of energy saving. This network, which received the prestigious C40 Cities Award in Buenos Aires in 2022, helps Amsterdam make connections with businesses, social organisations and citizens and develop concrete initiatives together. This is based on the idea that energy saving is not only a technical issue, but also a matter of cooperation, vision and common will.
 
-Climate City Contract
-Commitment document
-0
 By staying in touch with initiatives, actors and organisations in our city, we also want to gain a better understanding of where and why sustainability stagnates. Therefore, a climate consultation hour has been introduced and we are working on a sustainability council. We also organise a citizens' council around waste, a neighbourhood council around heat and try to facilitate energy cooperatives more. We also want to improve contact with existing initiatives and networks in the city, to see how they could be helped by other networks, stakeholders and initiatives in the city to accelerate in sustainability, or what unnecessary barriers they experience from municipal or other government policies in implementation. The sustainability coordinators and city brokers provide a listening ear for this. Another way we do this is by soliciting statements of support for making Amsterdam more sustainable from partners in the city.
 
 ![img-0.jpeg](img-0.jpeg)
 
-Climate City Contract
-
-Commitment document
-ص 160 فن القيادة
-
-الخارجية
-
-الخارجية هي من أهم ما يخصنا في القيادة، وهي من أهم ما يخصنا في القيادة، وهي من أهم ما يخصنا في القيادة، وهي من أهم ما يخصنا في القيادة، وهي من أهم ما يخصنا في القيادة، وهي من أهم ما يخصنا في القيادة، وهي من أهم ما يخصنا في القيادة، وهي من أهم ما يخصنا في القيادة،
 # Statements of support
 
 A separate annex lists various statements of support received by the municipality from partners in the city. The statements of support themselves are kept and are available on request. These declarations were enclosed with the submission of this document to the European Commission.
 
-Climate City Contract
-Commitment document
 ![img-0.jpeg](img-0.jpeg)
 
 More info? amsterdam.nl/en/policy/sustainability

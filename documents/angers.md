@@ -11,9 +11,6 @@ EU MISSION PLATFORM | CLIMATE NEUTRAL AND SMART CITIES
 ![img-1.jpeg](img-1.jpeg)
 
 NetZeroCities has received funding from the H2020 Research and Innovation Programme under the grant agreement n°101036519.
-Orientation of the 2030 Climate Neutrality Action Plan
-
-O
 
 # Table of contents
 
@@ -61,7 +58,6 @@ In general, through their policies and public services, local authorities have t
 
 The Climate City Contract aims to unify the actions, financial resources, and human capital of our local authority and, in the long term, mobilize all regional stakeholders in an unprecedented effort to drive this ambitious transition.
 
-3
 # List of figures
 
 Figure1 - Map of the geographical location of Angers Loire Métropole. 7
@@ -96,7 +92,6 @@ Figure29 - ALM funding for the higher education and research sector 83
 Figure30 - The main stages of the conference 85
 Figure31 - Our framework for involving the public in the ecological transition in the region 89
 Figure32 - Areas of action to be developed to coordinate and consolidate the players involved in the offer and support the public in the ecological transition 90
-5
 
 # List of tables
 
@@ -143,7 +138,6 @@ Table11 - Relationships between social innovations, systems and impact pathways 
 |  TI | Intelligent territory  |
 |  EPZ | Low-emission zone  |
 
-6
 # 1 Introduction
 
 # 1- The Angers Loire Métropole area
@@ -323,7 +317,6 @@ The CCC's contribution is the reflection carried out to consolidate the match be
 
 The following diagram shows how the CCC fits into the internal organisation, at the crossroads of our commitments and strategies, our sectoral action plans, our financial management, monitoring and evaluation tools and, of course, the local authority's internal governance for controlling and monitoring the ecological and energy transition process.
 
-6
 ![img-13.jpeg](img-13.jpeg)
 Figure10 - Organisation and interactions between bodies, strategies, action plans and funding
 
@@ -521,7 +514,6 @@ strategic objectives have been defined due to the weight of emissions linked to 
 
 ![img-16.jpeg](img-16.jpeg)
 Figure14 - Breakdown of consumption and emissions by sector - 2018 - Source: BASEMIS, Air Pays de la Loire, Energie Demain
-6
 
 # Objective 1 - Improve energy efficiency in the built environment
 
@@ -548,7 +540,6 @@ More than 48,000 single-family homes will have to be renovated, half of them to 
 In the tertiary sector (excluding local authority property), 45% of buildings in the region are subject to the decree requiring energy consumption to be reduced by 40% by 2030. At this stage, there are no public support measures in place, as local authorities are themselves subject to these targets and have to meet their own investment needs. Consideration is being given to bringing in partners, in particular consular chambers.
 
 In the end, a reduction of almost 60% in emissions will be required from the built environment, which will reduce the energy bill by 14%. The remaining energy consumption will have to be largely carbon-free (renewable and nuclear electricity, biomass heat, biogas, etc.).
-7
 
 # Objective 2: Sober transport, using new energies and an alternative mobility offer
 
@@ -594,7 +585,6 @@ Through a comprehensive, systematic and ambitious approach, Angers Loire Métrop
 electric vehicles: the rate of renewal of electric vehicles is twice as high (60%/year) as the regulatory targets. To date, investments have resulted in 35% of light vehicles being electric (193 city cars, saloons and vans). Our objective is to acquire a further 221 vehicles. In addition to the desire to reduce the number of vehicles in the fleet by developing pools and leasing, and by choosing smaller vehicles with a lower carbon impact, this acceleration of the changeover will make it possible to reduce greenhouse gas emissions by 60%, with a reduction in fuel consumption of 5% per year.
 Angers Loire Métropole is switching its bus fleet from diesel to biogas and electric engines. There are already 17 biogas buses in service on the Irigo network, rising to 41 by 2026. The biogas used is locally certified, as it is a guarantee of origin linked to the production of biomethane from the La Baumette wastewater treatment plant in Angers. There are 2 public stations and private stations (Irigo) offering BioGNV. In accordance with European regulatory requirements, it is planned to switch part of the bus fleet to electric power, with the acquisition of 91 electric buses up to 2034. This acquisition will begin in 2027 for 12 buses. The adaptation of depots for bus charging is also already under study.
 
-8
 Objective 3 - Accelerate the development of renewable energies and the transformation of systems
 
 The current national objective is to achieve a 33% share of renewable energy in the energy mix by 2030, rising to 42.5% once the European REDIII directive has been transposed. Nearly 15% of local consumption is covered by renewable energy, mainly from wood energy (43%) used by private households, but also from heat production plants supplying urban networks and heat pumps used in the residential and tertiary sectors (32%).
@@ -647,7 +637,6 @@ Table4 - ALM's sector objectives for achieving carbon neutrality
 |  Waste | Reducing the volume of waste (HHW) by 1% per year | - | Territory (excluding commercial waste)  |
 |  Water | Maintain drinking water network efficiency at 92%. | - | Territory  |
 |  Storage | Triple carbon stocks | 2050 | Territory  |
-1
 
 Link between local sectoral objectives and strategic frameworks and policies
 
@@ -723,7 +712,6 @@ At national level, the SNBC was introduced by the 2015 Energy Transition Law for
 At regional level, the SRADDET and the roadmap drawn up as part of the current regional COP are two essential tools for specifying the strategy and the objectives and targets to be achieved. In addition, the Region is heavily involved in funding for the economic sector and also partly for the region's public assets in connection with the ecological transition (e.g. bioGNV bus subsidies).
 
 Lastly, Angers Loire Métropole benefits from structural funds that are increasingly focused on ecological transition criteria, through the Metropolitan Development Contract signed between the Region and the Angevin region, which provides funding for the regional project, and the Energy Transition Fund to support actions undertaken by local authorities.
-5
 
 ## Private players
 
@@ -779,7 +767,6 @@ Lack of understanding of the issues, the causes and effects (impacts of its acti
 The low visibility of practical solutions and offers such as financial aid (abundant, inflexible funding) or advice (digital, human);
 Concrete obstacles such as: access to supply (e.g. public transport), the cost of actions (e.g. energy-efficient home renovation, electric vehicle), failing alternatives (switching to organic and local produce);
 The difficulty of getting local players to use the solutions available to them.
-7
 
 ## Sector challenges
 
@@ -841,7 +828,6 @@ The Figure 9 - Overall architecture of ALM's ecological transition policies and 
 
 The following table provides a non-exhaustive list of the global monitoring and assessment tools and the sectoral approaches linked to the ecological transition that are also subject to monitoring and assessment. There are almost 30 plans devoted to the ecological transition.
 
-9
 ![img-20.jpeg](img-20.jpeg)
 Figure18 - Extraction from the inventory of approaches subject to monitoring and evaluation
 
@@ -863,7 +849,6 @@ Lastly, the Ecological Transition Steering Committee, which brings together the 
 Figure21 - Organisation and interactions between bodies, strategies, action plans and funding
 
 In conclusion, ALM has a number of tools for measuring the progress of consumption and emissions in the region. The challenge is to optimise these tools and connect them so as to acquire different levels of vision, from overall monitoring to technical and operational monitoring. The complexity of this system of data flows still requires structuring work to achieve a systemic vision.
-3
 
 # 3 Part B - Pathways to climate neutrality by 2030
 
@@ -876,88 +861,19 @@ To achieve ALM's objective of carbon neutrality, it is necessary to massively re
 The internal organisation set up and described in the introduction, as well as the stakeholder involvement and governance described in part C.1, consolidate the leadership needed to coordinate and accelerate the ecological transition.
 
 The CCC action plan described below in table 6 is an extension of the ALM priorities and main objectives described in section A.2.1. This table presents the main lines of action, the actions and their correspondence with the CCC architecture for all practical purposes and to facilitate cross-referencing between existing plans and the CCC
-Orientation of the 2030 Climate Neutrality Action Plan
-
-O
 
 Table6 - Pathways to carbon neutrality
 
 |  Axes | Sub-axis | Actions to achieve carbon neutrality | Correspondence with CCC typology | Systemic levers | First changes (1-2 years) | Late results (3-4 years) | Direct impacts (reductions in emissions, see Tab. 8) | Indirect impacts (co-benefits)  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Transport - mobility | Urban public transport (bus) | Implement the mobility strategy:
-> Developing the bus network and modal shift
-> Develop intermodality
-> Greening the bus fleet
-> Reduce speed, regulate traffic and enhance public space
-> Encourage new working practices to reduce travel: teleworking, coworking sites, etc.
-> Support and encourage employers to improve the impact of their employees' journeys, or even reduce them through new solutions
-> Develop a real-time car-sharing service for journeys to and within the conurbation. | Electrification of buses and tramway
-Shift to public & non-motorized transport | Investment Infrastructure Governance Supporting behavioural change Innovation | Developing and consolidating public transport services
-Increasing the use of public transport
-Switching bus fleets to electric vehicles | Reducing car use | see table 8 | Improved air quality
-Reduced noise pollution
-Improved overall health
-Creation of social links
-Improved dialogue between stakeholders
-Lower overall energy bills in the region and reduce fuel poverty linked to transport  |
-|   |  Urban public transport (tramway) | Implement the mobility strategy:
-> Develop the tram network and modal transport (build or extend tram lines, develop and maintain the network, equip passengers with shelters, etc.)
-> Develop intermodality
-> Combating car use and developing car sharing
-> Reducing speed, regulating traffic and enhancing public space
-Encouraging new working practices to reduce travel: teleworking, coworking sites, etc.
-Support and encourage employers to improve the impact of their employees' journeys, or even reduce them through new solutions
-Develop a real-time car-sharing service for journeys to and within the conurbation. |   |   | Extension of tramway networks completed
-Increased use of public transport | Reducing car use | see table 8  |   |
-|   |  Cycling plan | Implement the cycling plan:
-Promoting and educating people to use bicycles
-Develop and share public space
-Develop and support cycling services
-Supporting and encouraging businesses and establishments
-Monitor and evaluate the cycling plan | Shift to public & non-motorized transport
-Reduced motorized passenger transportation need | Investment Infrastructure Governance Support for change behaviour Innovation | Creation of suburban and interurban cycle networks
-Improved safety
-Increased number of cyclists | Increase in the number of cyclists
-Reduction in car use | see table 8  |   |
+|  Transport - mobility | Urban public transport (bus) | Implement the mobility strategy: > Developing the bus network and modal shift > Develop intermodality > Greening the bus fleet > Reduce speed, regulate traffic and enhance public space > Encourage new working practices to reduce travel: teleworking, coworking sites, etc. > Support and encourage employers to improve the impact of their employees' journeys, or even reduce them through new solutions > Develop a real-time car-sharing service for journeys to and within the conurbation. | Electrification of buses and tramway Shift to public & non-motorized transport | Investment Infrastructure Governance Supporting behavioural change Innovation | Developing and consolidating public transport services Increasing the use of public transport Switching bus fleets to electric vehicles | Reducing car use | see table 8 | Improved air quality Reduced noise pollution Improved overall health Creation of social links Improved dialogue between stakeholders Lower overall energy bills in the region and reduce fuel poverty linked to transport  |
+|   |  Urban public transport (tramway) | Implement the mobility strategy: > Develop the tram network and modal transport (build or extend tram lines, develop and maintain the network, equip passengers with shelters, etc.) > Develop intermodality > Combating car use and developing car sharing > Reducing speed, regulating traffic and enhancing public space Encouraging new working practices to reduce travel: teleworking, coworking sites, etc. Support and encourage employers to improve the impact of their employees' journeys, or even reduce them through new solutions Develop a real-time car-sharing service for journeys to and within the conurbation. |   |   | Extension of tramway networks completed Increased use of public transport | Reducing car use | see table 8  |   |
+|   |  Cycling plan | Implement the cycling plan: Promoting and educating people to use bicycles Develop and share public space Develop and support cycling services Supporting and encouraging businesses and establishments Monitor and evaluate the cycling plan | Shift to public & non-motorized transport Reduced motorized passenger transportation need | Investment Infrastructure Governance Support for change behaviour Innovation | Creation of suburban and interurban cycle networks Improved safety Increased number of cyclists | Increase in the number of cyclists Reduction in car use | see table 8  |   |
 |  Axes | Sub-axis | Actions to achieve carbon neutrality | Correspondence with CCC typology | Systemic levers | First changes (1-2 years) | Late results (3-4 years) | Direct impacts (reduction in emissions, see Tab. 8) | Indirect impacts (co-benefits)  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   | Car-pooling, car-sharing and alternative modes of transport | Promoting the development of alternatives to the use of private cars by supporting the local offer (citiz, etc.)
-Combating car-free driving and developing car-sharing
-Develop car-sharing areas
-Making alternative mobility tools accessible and visible
-Support the implementation of mobility plans for companies and local authorities | Reduced motorized passenger transportation need
-Increased car pooling | Investment Infrastructure Governance
-Supporting behavioural change
-Innovation | Encouraging car-pooling and car-sharing
-Increased parking for car sharing | Reducing car use
-Increased use as a knock-on effect | see table 8 |   |
-|   |  Calming the public space | - Develop pedestrianisation:
-* Rethink the layout of roadways
-* Implement tools to monitor and evaluate pedestrian policy.
-* Redesign public spaces (e.g. square plan)
-Rethink parking policies:
-* Park-and-ride facilities
-* Extend the green parking zone
-* Charging points for electric vehicles
-* Develop car-sharing areas
-* Parking guidance systems
-* Remove spaces
-* Change the pricing system
-* Allocate revenues from paid parking to sustainable mobility
-* Set up a low-emission zone
-Develop the area by promoting local centres (shops, health services, etc.) | Reduced motorized passenger transportation need
-Increased car pooling | Investment Infrastructure Governance
-Supporting behavioural change
-Innovation | Revision of the PLUi , Renewed parking policy
-Increased pedestrianisation (safety, paths, signage, etc.) | Reduced car use
-Reduced need for transport thanks to local services | see table 8 |   |
-|   |  Developing the use of rail | - Encouraging modal shift from passenger transport to rail
-Develop rail freight:
-* Initiate consultation with local stakeholders to identify freight flows and needs.
-* Include guidelines for optimising freight transport at regional level in planning documents.
-* Rethink the parking strategy for goods vehicles
-* Encourage and support local players within a formalised framework | Shift to public & non-motorized transport
-Reduced motorized passenger transportation need | Investment Infrastructure Governance | Visibility of services and development of intermodal facilities | Reducing the use of cars for long journeys | see table 8 |   |
+|   | Car-pooling, car-sharing and alternative modes of transport | Promoting the development of alternatives to the use of private cars by supporting the local offer (citiz, etc.) Combating car-free driving and developing car-sharing Develop car-sharing areas Making alternative mobility tools accessible and visible Support the implementation of mobility plans for companies and local authorities | Reduced motorized passenger transportation need Increased car pooling | Investment Infrastructure Governance Supporting behavioural change Innovation | Encouraging car-pooling and car-sharing Increased parking for car sharing | Reducing car use Increased use as a knock-on effect | see table 8 |   |
+|   |  Calming the public space | - Develop pedestrianisation: * Rethink the layout of roadways * Implement tools to monitor and evaluate pedestrian policy. * Redesign public spaces (e.g. square plan) Rethink parking policies: * Park-and-ride facilities * Extend the green parking zone * Charging points for electric vehicles * Develop car-sharing areas * Parking guidance systems * Remove spaces * Change the pricing system * Allocate revenues from paid parking to sustainable mobility * Set up a low-emission zone Develop the area by promoting local centres (shops, health services, etc.) | Reduced motorized passenger transportation need Increased car pooling | Investment Infrastructure Governance Supporting behavioural change Innovation | Revision of the PLUi , Renewed parking policy Increased pedestrianisation (safety, paths, signage, etc.) | Reduced car use Reduced need for transport thanks to local services | see table 8 |   |
+|   |  Developing the use of rail | - Encouraging modal shift from passenger transport to rail Develop rail freight: * Initiate consultation with local stakeholders to identify freight flows and needs. * Include guidelines for optimising freight transport at regional level in planning documents. * Rethink the parking strategy for goods vehicles * Encourage and support local players within a formalised framework | Shift to public & non-motorized transport Reduced motorized passenger transportation need | Investment Infrastructure Governance | Visibility of services and development of intermodal facilities | Reducing the use of cars for long journeys | see table 8 |   |
 |  Axes | Sub-axis | Actions to achieve carbon neutrality | Correspondence with CCC typology | Systemic levers | First changes (1-2 years) | Late results (3-4 years) | Direct impacts (reduction in emissions, see Tab. 8) | Indirect impacts (co-benefits)  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |   | Urban logistics and freight | Optimise the logistics and management of urban goods flows in the first and last mile: - Inform and raise awareness of the challenges of sustainable urban logistics among local authorities and economic players - Implement a sustainable urban logistics charter to promote increasingly energy-efficient and carbon-free urban goods transport - Rethink the parking strategy for goods vehicles | Optimized logistics | Investment Infrastructure Governance Innovation | Development of best practice in optimising carbon-free/soft mobility in the last mile Consultation with freight operators and economic players to optimise loads | Reducing the use of vehicles in the last kilometre | see table 8 | Improved air quality Reduced noise pollution Improved traffic flow Lower overall energy bills in the region  |
@@ -968,131 +884,31 @@ Reduced motorized passenger transportation need | Investment Infrastructure Gove
 |  Axes | Sub-axis | Actions to achieve carbon neutrality | Correspondence with CCC typology | Systemic levers | First changes (1-2 years) | Late results (3-4 years) | Direct impacts (reduction in emissions, see Tab. 8) | Indirect impacts (co-benefits)  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  urban planning | Energy-efficient renovation of homes and commercial buildings | Investment by residents and businesses in energy-efficient renovation of homes and commercial buildings | Building renovations (envelope) | Investment Support for behavioural change Innovation | Strengthen financing for residents and businesses for their energy renovation projects | operations Reducing energy demand | see table 8 |   |
-|   | Public action for sustainable urban development | - Gradually reduce the rate at which land is artificially developed, with the aim of achieving zero net artificialisation by 2050
-Favour urban renewal over urban expansion
-Incorporate the zero net artificialisation (ZAN) objectives into urban planning documents, in particular SCOTs, SRADDETs and PLUiIs.
-Develop the conditions for exemplary development and property operations (encourage dialogue between players, provide training, define a framework/guide for sustainable construction). | New energy-efficient buildings | Investment Infrastructure Governance | Reducing the number of projects that contribute to artificialisation Incentives for densification Changes in planning and urban development practices and greater control | Improving projects and their energy efficiency and the use of renewable energies Elimination of oil-fired heating and reduction in gas-fired heating | see table 8 | Improved quality of life Positive impact on biodiversity Improvement of carbon sinks  |
+|   | Public action for sustainable urban development | - Gradually reduce the rate at which land is artificially developed, with the aim of achieving zero net artificialisation by 2050 Favour urban renewal over urban expansion Incorporate the zero net artificialisation (ZAN) objectives into urban planning documents, in particular SCOTs, SRADDETs and PLUiIs. Develop the conditions for exemplary development and property operations (encourage dialogue between players, provide training, define a framework/guide for sustainable construction). | New energy-efficient buildings | Investment Infrastructure Governance | Reducing the number of projects that contribute to artificialisation Incentives for densification Changes in planning and urban development practices and greater control | Improving projects and their energy efficiency and the use of renewable energies Elimination of oil-fired heating and reduction in gas-fired heating | see table 8 | Improved quality of life Positive impact on biodiversity Improvement of carbon sinks  |
 |   | Efficient new construction in the private sector (housing and commercial buildings) | Investment by residents and businesses in new construction of efficient, bioclimatic housing and tertiary buildings using renewable energy. | New energy-efficient buildings | Investment Governance Innovation | Better compliance with thermal regulations and connection to heating networks Encouraging ambitious projects energy-efficient buildings and bioclimatism Encouraging the | Widespread use of quality projects and energy efficiency and the use of renewable energies Reducing energy demand | see table 8 | Lower energy bills Improved comfort Favourable impact on biodiversity  |
 |  Axes | Sub-axis | Actions to achieve carbon neutrality | Correspondence with CCC typology | Systemic levers | First changes (1-2 years) | Late results (3-4 years) | Direct impacts (reductions in emissions, see Tab. 8) | Indirect impacts (co-benefits)  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Energy systems | Renovation of public service buildings and intelligent buildings
-Efficient new buildings | Implement Building Energy Plans, focusing on 3 areas (users, assets and ecological transition) and 6 actions:
-Raising awareness among occupants
-Raising awareness among children
-Property strategy - optimising floor space
-Intelligent Territory - improving the management of energy equipment
-Investment - implementing environmental requirements
-Investment - develop renewable and bio-sourced energies
-
-Implement the Intelligent Territory project to reduce the area's energy consumption:
-Renovate public lighting and introduce intelligent lighting / encourage private lighting companies to renovate
-Reduce energy consumption in public buildings through precision control
-Develop precision watering of green spaces to reduce water consumption
-Optimising waste management and collection by installing sensors
-Monitor the drinking water network in real time (quantity/quality) | Building renovations (envelope)
-New energy-efficient buildings | Investment Innovation | reuse of materials and bio-sourced materials | Improving projects and their energy efficiency and the use of renewable energies | see table 8 | Lower energy bills
-Improved comfort
-Favourable impact on biodiversity  |
-|   |  Public district heating networks | - Continue to roll out the master plan for heating networks:
-* Interconnect heating networks
-* Continuing to develop the various districts and outlying municipalities
-* Innovate by identifying new sources of energy recovery | Decarbonizing heating generation | Investment Infrastructure Governance Innovation | Massive development of connections to district heating networks
-Development of the heat energy mix (recovery, etc.) | Massive development of connections to district heating networks
-Development of the energy mix (recovery, etc.) | see table 8 | Lower energy bills
-Reduce fuel poverty
-Improved comfort  |
-|   | Decarbonisation of heating in the private sector | Initiatives by residents, businesses and energy suppliers to decarbonise their heating systems (gas, oil, etc.) (not connected to public heating networks) | Decarbonizing heating generation | Investment Support for behavioural change |  |  | see table 8 | Lower energy bills
-Reduced fuel poverty
-Improved air quality  |
+|  Energy systems | Renovation of public service buildings and intelligent buildings Efficient new buildings | Implement Building Energy Plans, focusing on 3 areas (users, assets and ecological transition) and 6 actions: Raising awareness among occupants Raising awareness among children Property strategy - optimising floor space Intelligent Territory - improving the management of energy equipment Investment - implementing environmental requirements Investment - develop renewable and bio-sourced energies Implement the Intelligent Territory project to reduce the area's energy consumption: Renovate public lighting and introduce intelligent lighting / encourage private lighting companies to renovate Reduce energy consumption in public buildings through precision control Develop precision watering of green spaces to reduce water consumption Optimising waste management and collection by installing sensors Monitor the drinking water network in real time (quantity/quality) | Building renovations (envelope) New energy-efficient buildings | Investment Innovation | reuse of materials and bio-sourced materials | Improving projects and their energy efficiency and the use of renewable energies | see table 8 | Lower energy bills Improved comfort Favourable impact on biodiversity  |
+|   |  Public district heating networks | - Continue to roll out the master plan for heating networks: * Interconnect heating networks * Continuing to develop the various districts and outlying municipalities * Innovate by identifying new sources of energy recovery | Decarbonizing heating generation | Investment Infrastructure Governance Innovation | Massive development of connections to district heating networks Development of the heat energy mix (recovery, etc.) | Massive development of connections to district heating networks Development of the energy mix (recovery, etc.) | see table 8 | Lower energy bills Reduce fuel poverty Improved comfort  |
+|   | Decarbonisation of heating in the private sector | Initiatives by residents, businesses and energy suppliers to decarbonise their heating systems (gas, oil, etc.) (not connected to public heating networks) | Decarbonizing heating generation | Investment Support for behavioural change |  |  | see table 8 | Lower energy bills Reduced fuel poverty Improved air quality  |
 |  Axes | Sub-axis | Actions to achieve carbon neutrality | Correspondence with CCC typology | Systemic levers | First changes (1-2 years) | Late results (3-4 years) | Direct impacts (reduction in emissions, see Tab. 8) | Indirect impacts (co-benefits)  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   | Gas and electricity networks | Actions concerning gas :
-To cover gas consumption with renewable gas, enabling the department to be self-sufficient in gas.
-Massively reduce gas consumption for building needs, by around -35% between 2020 and 2030 and by 60% between 2030 and 2050 (a reduction of 4% per year), through the combined effects of energy sobriety, energy efficiency and substitution of energy sources.
-efficiency and energy substitution
-Develop the growing use of biogas in the transport sector
-Reduce the carbon footprint of the network operator's activities in the region by 30% by 2030 (compared with 2009).
-
-Actions concerning electricity :
-Involve energy distribution stakeholders across the board
-Implement a localised energy management programme with network operators/concessionaires
-Encourage the purchase of renewable electricity
-Develop energy management and renewable energy services offered by energy players | Decarbonizing heating generation | Investment Infrastructure Governance | Reducing energy consumption
-Increasing the share of renewable energies in the energy mix
-Modernising networks | Reducing energy consumption
-Use of electricity for domestic purposes rather than heating
-Significant reduction in the use of non-renewable gas | see table 8 | Improving the region's energy bill  |
-|   |  Energy efficiency of lighting and equipment | - Implement the Intelligent Territory project in order to reduce the area's energy consumption - Renovate public lighting and implement intelligent lighting / encourage those involved in private lighting to renovate
-Action to reduce electricity consumption (digital, centralised management, etc.) > Treated in public buildings | Efficient lighting & appliances | Investment Infrastructure Governance | Reducing energy consumption | Reducing energy consumption | see table 8 | Lower energy bills
-Reduce light pollution for health and biodiversity  |
+|   | Gas and electricity networks | Actions concerning gas : To cover gas consumption with renewable gas, enabling the department to be self-sufficient in gas. Massively reduce gas consumption for building needs, by around -35% between 2020 and 2030 and by 60% between 2030 and 2050 (a reduction of 4% per year), through the combined effects of energy sobriety, energy efficiency and substitution of energy sources. efficiency and energy substitution Develop the growing use of biogas in the transport sector Reduce the carbon footprint of the network operator's activities in the region by 30% by 2030 (compared with 2009). Actions concerning electricity : Involve energy distribution stakeholders across the board Implement a localised energy management programme with network operators/concessionaires Encourage the purchase of renewable electricity Develop energy management and renewable energy services offered by energy players | Decarbonizing heating generation | Investment Infrastructure Governance | Reducing energy consumption Increasing the share of renewable energies in the energy mix Modernising networks | Reducing energy consumption Use of electricity for domestic purposes rather than heating Significant reduction in the use of non-renewable gas | see table 8 | Improving the region's energy bill  |
+|   |  Energy efficiency of lighting and equipment | - Implement the Intelligent Territory project in order to reduce the area's energy consumption - Renovate public lighting and implement intelligent lighting / encourage those involved in private lighting to renovate Action to reduce electricity consumption (digital, centralised management, etc.) > Treated in public buildings | Efficient lighting & appliances | Investment Infrastructure Governance | Reducing energy consumption | Reducing energy consumption | see table 8 | Lower energy bills Reduce light pollution for health and biodiversity  |
 |   |  Energy efficiency of private equipment | Energy efficiency of lighting and equipment | Efficient lighting & appliances | Supporting behavioural change Innovation | Reducing energy consumption | Reducing energy consumption | see table 8 | Lower energy bills  |
-|   |  Development of renewable energy production in the region | - Supporting the local production and consumption of renewable energies: biomethane, biomass, solar energy, wind power, waste-to-energy and hydrogen, in particular:
-* Identify areas to accelerate the development of renewable energies.
-* Draw up a solar plan | Decarbonizing electricity generation | Investment Infrastructure Governance | Acceleration of solar PV projects on buildings, on the ground, in shaded areas, etc.
-Increase in solar electricity production | Massive increases in production | see table 8 | Improving the region's energy bill  |
+|   |  Development of renewable energy production in the region | - Supporting the local production and consumption of renewable energies: biomethane, biomass, solar energy, wind power, waste-to-energy and hydrogen, in particular: * Identify areas to accelerate the development of renewable energies. * Draw up a solar plan | Decarbonizing electricity generation | Investment Infrastructure Governance | Acceleration of solar PV projects on buildings, on the ground, in shaded areas, etc. Increase in solar electricity production | Massive increases in production | see table 8 | Improving the region's energy bill  |
 |  Axes | Sub-axis | Actions to achieve carbon neutrality | Correspondence with CCC typology | Systemic levers | First changes (1-2 years) | Late results (3-4 years) | Direct impacts (reduction in emissions, see Tab. 8) | Indirect impacts (co-benefits)  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Green infrastructure and nature-based solutions | Revegetation and renaturation of public spaces (parks and gardens) | - Increasing carbon sinks through urban forests and the preservation/vegetation of spaces, desoiling schoolyards, canopies, etc.
-Implement the biodiversity plan (ALM perimeter):
-* Discovering, raising awareness and training to improve collective action
-* Sharing and pooling to improve knowledge
-* Preserve and restore to protect our natural heritage
-* Innovate and experiment to meet new challenges (adaptation to climate change, invasive alien species, soil conservation, etc.).
-Implement the Angevins landscape master plan and the Urban Nature Plan (within the boundaries of the City of Angers):
-* Strengthen the area's landscape identity.
-* Sustainable design and management
-* Knowing, preserving and developing the tree heritage
-* Raise awareness and bring people together
-* Promote, monitor and evaluate the scheme | Not taken into account in the CCC method | Investment Infrastructure Governance | Implementing conditions to improve carbon sinks | Improving carbon sinks | see table 8 | health and quality of life
-Preserving biodiversity
-Greater social involvement  |
-|   |  Environmental protection and adaptation to CC | - Implement the climate change adaptation plan:
-* Ensure the resilience of natural environments, production and infrastructure
-* Ensure the resilience of residents and communities
-* Ensure the resilience of organisations and communities
-Raising public awareness of the ecological transition (general public, elected representatives, employees, businesses, etc.)
-Implement the water cycle strategy for better resource sharing and management:
-* Slow down the water cycle and preserve the environment.
-* Organise sober use of water for all stakeholders
-* Optimising availability and substituting resources
-* Preserve water quality and prevent pollution
-Prevent risks: flooding, pollution, noise, air quality, etc. | Not taken into account in the CCC method | Investment Infrastructure Governance Supporting behavioural change Innovation | Improving environmental impact
-Preservation of resources | Improving environmental impact
-Preservation of resources | see table 8 | health and quality of life
-Improving the region's resilience to climatic shocks
-Preserving biodiversity
-Greater social involvement  |
+|  Green infrastructure and nature-based solutions | Revegetation and renaturation of public spaces (parks and gardens) | - Increasing carbon sinks through urban forests and the preservation/vegetation of spaces, desoiling schoolyards, canopies, etc. Implement the biodiversity plan (ALM perimeter): * Discovering, raising awareness and training to improve collective action * Sharing and pooling to improve knowledge * Preserve and restore to protect our natural heritage * Innovate and experiment to meet new challenges (adaptation to climate change, invasive alien species, soil conservation, etc.). Implement the Angevins landscape master plan and the Urban Nature Plan (within the boundaries of the City of Angers): * Strengthen the area's landscape identity. * Sustainable design and management * Knowing, preserving and developing the tree heritage * Raise awareness and bring people together * Promote, monitor and evaluate the scheme | Not taken into account in the CCC method | Investment Infrastructure Governance | Implementing conditions to improve carbon sinks | Improving carbon sinks | see table 8 | health and quality of life Preserving biodiversity Greater social involvement  |
+|   |  Environmental protection and adaptation to CC | - Implement the climate change adaptation plan: * Ensure the resilience of natural environments, production and infrastructure * Ensure the resilience of residents and communities * Ensure the resilience of organisations and communities Raising public awareness of the ecological transition (general public, elected representatives, employees, businesses, etc.) Implement the water cycle strategy for better resource sharing and management: * Slow down the water cycle and preserve the environment. * Organise sober use of water for all stakeholders * Optimising availability and substituting resources * Preserve water quality and prevent pollution Prevent risks: flooding, pollution, noise, air quality, etc. | Not taken into account in the CCC method | Investment Infrastructure Governance Supporting behavioural change Innovation | Improving environmental impact Preservation of resources | Improving environmental impact Preservation of resources | see table 8 | health and quality of life Improving the region's resilience to climatic shocks Preserving biodiversity Greater social involvement  |
 |  Axes | Sub-axis | Actions to achieve carbon neutrality | Correspondence with CCC typology | Systemic levers | First changes (1-2 years) | Late results (3-4 years) | Direct impacts (reductions in emissions, see Tab. 8) | Indirect impacts (co-benefits)  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   | Agriculture and the Territorial Food Project | - Implement the regional food project:
-* Agriculture and the region (e.g. identifying farms that are close to being handed over, carrying out a technical and economic study of the region's organic sectors, adapting training needs, etc.).
-* Commodity chains and the region (e.g. improving information on local supplies)
-* Spatial accessibility (e.g. drawing up an inventory of the spatial supply of food, etc.)
-* Food culture (e.g. raising awareness among children, taking part in local events, etc.)
-* Social accessibility (e.g. carry out anti-waste initiatives, collaborate on food insecurity projects, study the needs and support solutions of collective catering, etc.). | Not taken into account in the CCC method | Investment Infrastructure Governance | Lower emissions SCOPE 3 Implementation of conditions to improve carbon sinks Improved environmental impact Preservation of resources | Lower emissions SCOPE 3 Implementation of conditions to improve carbon sinks Improved environmental at impact Preservation of resources | see table 8 | health and quality of life Improving the region's resilience to climatic shocks Preserving biodiversity Greater social involvement  |
-|  Waste, circular economy, water and sanitation | Waste recycling and the circular economy | - Implement the circular economy roadmap:
-* Strengthen local sorted collection solutions for household and business waste.
-* Setting an example for the local authority: public procurement, responsible digital technologies, development and construction projects, sustainable tourism and events, etc.
-Modernising collection and processing facilities to improve energy efficiency and performance
-Deploy bio-waste sorting/treatment solutions | Increased waste recycling | Investment Infrastructure Governance Supporting behavioural change Innovation | Developing bio-waste management solutions in the region Increased sorting and recycling at waste collection centres Improving the impact of waste transport and treatment Reducing waste through prevention, reuse and recycling | Developing bio-waste management solutions in the region Increased sorting and recycling at waste collection centres Improving the impact of waste transport and treatment Reducing waste through prevention, reuse and recycling | see table 8 | Reducing the impact on natural and mineral resources Improving the CSR performance of local companies Improve environmental nuisance (plastic pollution, etc.)  |
+|   | Agriculture and the Territorial Food Project | - Implement the regional food project: * Agriculture and the region (e.g. identifying farms that are close to being handed over, carrying out a technical and economic study of the region's organic sectors, adapting training needs, etc.). * Commodity chains and the region (e.g. improving information on local supplies) * Spatial accessibility (e.g. drawing up an inventory of the spatial supply of food, etc.) * Food culture (e.g. raising awareness among children, taking part in local events, etc.) * Social accessibility (e.g. carry out anti-waste initiatives, collaborate on food insecurity projects, study the needs and support solutions of collective catering, etc.). | Not taken into account in the CCC method | Investment Infrastructure Governance | Lower emissions SCOPE 3 Implementation of conditions to improve carbon sinks Improved environmental impact Preservation of resources | Lower emissions SCOPE 3 Implementation of conditions to improve carbon sinks Improved environmental at impact Preservation of resources | see table 8 | health and quality of life Improving the region's resilience to climatic shocks Preserving biodiversity Greater social involvement  |
+|  Waste, circular economy, water and sanitation | Waste recycling and the circular economy | - Implement the circular economy roadmap: * Strengthen local sorted collection solutions for household and business waste. * Setting an example for the local authority: public procurement, responsible digital technologies, development and construction projects, sustainable tourism and events, etc. Modernising collection and processing facilities to improve energy efficiency and performance Deploy bio-waste sorting/treatment solutions | Increased waste recycling | Investment Infrastructure Governance Supporting behavioural change Innovation | Developing bio-waste management solutions in the region Increased sorting and recycling at waste collection centres Improving the impact of waste transport and treatment Reducing waste through prevention, reuse and recycling | Developing bio-waste management solutions in the region Increased sorting and recycling at waste collection centres Improving the impact of waste transport and treatment Reducing waste through prevention, reuse and recycling | see table 8 | Reducing the impact on natural and mineral resources Improving the CSR performance of local companies Improve environmental nuisance (plastic pollution, etc.)  |
 |  Axes | Sub-axis | Actions to achieve carbon neutrality | Correspondence with CCC typology | Systemic levers | First changes (1-2 years) | Late results (3-4 years) | Direct impacts (reductions in emissions, see Tab. 8) | Indirect impacts (co-benefits)  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   | Helping citizens and stakeholders to change their practices and reduce waste | - Implement the circular economy roadmap:
-* Acting on key economic sectors: food/bio-waste, construction and public works, repair/reuse, etc.
-* Cross-functional actions: developing research and innovation, supporting initiatives and projects, promoting inter-company relations and virtuous approaches, providing information and training in the ET professions, etc.
-* Setting an example for local authorities: public procurement, responsible digital technologies, development and construction projects, sustainable tourism and events, etc.
-Strengthen the waste prevention and management strategy local residents | Increased waste recycling | Investment Infrastructure Governance Supporting behavioural change Innovation | Reducing waste through sorting, prevention and reuse | Reducing waste through prevention, reuse and recycling | see table 8 | Reduced impact on natural and mineral resources
-Reduced environmental impact (plastic pollution, etc.)
-Greater social involvement  |
-|   |  Improving water and wastewater networks | - Optimising water and wastewater systems at all levels:
-* Drinking water production and distribution systems (detecting and reducing leaks, reducing consumption, etc.)
-* Wastewater treatment systems (increasing renewable energy production, optimising energy performance, etc.)
-* Promoting integrated rainwater management (GIEP) (reducing waterproofing, promoting water management at plot level, etc.). | Not taken into account in the CCC method | Investment Infrastructure Governance Supporting behavioural change Innovation | Reducing water consumption and discharges by residents | Reduced energy and water requirements for drinking water and treatment before discharge | see table 8 | Improved impact on receiving environments and biodiversity
-Reducing diffuse pollution
-Improved management of water resources  |
-Orientation of the 2030 Climate Neutrality Action Plan
-
-0
+|   | Helping citizens and stakeholders to change their practices and reduce waste | - Implement the circular economy roadmap: * Acting on key economic sectors: food/bio-waste, construction and public works, repair/reuse, etc. * Cross-functional actions: developing research and innovation, supporting initiatives and projects, promoting inter-company relations and virtuous approaches, providing information and training in the ET professions, etc. * Setting an example for local authorities: public procurement, responsible digital technologies, development and construction projects, sustainable tourism and events, etc. Strengthen the waste prevention and management strategy local residents | Increased waste recycling | Investment Infrastructure Governance Supporting behavioural change Innovation | Reducing waste through sorting, prevention and reuse | Reducing waste through prevention, reuse and recycling | see table 8 | Reduced impact on natural and mineral resources Reduced environmental impact (plastic pollution, etc.) Greater social involvement  |
+|   |  Improving water and wastewater networks | - Optimising water and wastewater systems at all levels: * Drinking water production and distribution systems (detecting and reducing leaks, reducing consumption, etc.) * Wastewater treatment systems (increasing renewable energy production, optimising energy performance, etc.) * Promoting integrated rainwater management (GIEP) (reducing waterproofing, promoting water management at plot level, etc.). | Not taken into account in the CCC method | Investment Infrastructure Governance Supporting behavioural change Innovation | Reducing water consumption and discharges by residents | Reduced energy and water requirements for drinking water and treatment before discharge | see table 8 | Improved impact on receiving environments and biodiversity Reducing diffuse pollution Improved management of water resources  |
 
 # B-1.2: Description of impact pathways
 
@@ -1104,9 +920,9 @@ At regional level, the SRADDET, adopted in December 2021, will flesh out these n
 
 The ALM context is as follows:
 
-: Adoption of the Territorial Climate-Air-Energy Plan (PCAET) for the PMLA.
+- Adoption of the Territorial Climate-Air-Energy Plan (PCAET) for the PMLA.
 
-: Implementation of the "Acting on the Ecological Transition" participative process.
+- Implementation of the "Acting on the Ecological Transition" participative process.
 
 April 2021: Drawing up of an Ecological Transition Contract, transformed into a Regional Ecological Transition Contract (CRTE) in February 2022, integrating the local authorities and the socio-cultural aspect of the transition.
 
@@ -1220,7 +1036,6 @@ Par rapport au tendanciel
 Evolution de la facture énergétique
 
 ![img-29.jpeg](img-29.jpeg)
-6
 
 Tertiaire
 
@@ -1310,7 +1125,6 @@ Origin of wood energy: There is still room for improvement to ensure that the ma
 The consumption reduction scenarios forecast a very sharp reduction in heating consumption as a result of the energy renovation effort.
 The deployment of wind power is severely restricted in the region, in particular due to heritage protection zones.
 Acceptability of projects: Some projects, particularly those relating to wind power and methanisation, are finding it difficult to gain acceptance among local populations.
-9
 
 # Scénario global de production d'EnR&amp;R
 
@@ -1320,7 +1134,6 @@ Un vecteur gaz qui conserve un talon de consommation
 Effort de maîtrise des consommations
 Développement massif des EnR
 
-0
 Taux EnR cible sur le mix énergétique : 81-87%
 
 ![img-37.jpeg](img-37.jpeg)
@@ -1331,7 +1144,6 @@ Développement massif des EnR : PV et éolien terrestre
 Grands parcs minimisant les coûts
 Capacités nouvelles d'EnR + modulation taux EnR par recours aux EPR (et éolien flottant)
 
-0
 Taux EnR cible sur le mix électrique : 77-87%
 
 ![img-38.jpeg](img-38.jpeg)
@@ -1342,13 +1154,11 @@ Développement massif des EnR : notamment biomasse, aérothermie et biogaz
 Développement des réseaux de chaleur : 15% de la chaleur avec un taux de 90% d'EnR&amp;R
 Recours plus important à la géothermie en RCU et hors RCU
 
-0
 Taux EnR cible sur le mix chaleur : 72%
 
 ![img-39.jpeg](img-39.jpeg)
 
 ![img-40.jpeg](img-40.jpeg)
-0
 
 # 3.2 Module B-2 Designing a climate neutral portfolio
 
@@ -1391,60 +1201,20 @@ Reader alert: please read the comments carefully before reading this table.
 |  1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ALM areas of action | ALM share target | Sub-domains ALM | Actions to make ALM carbon neutral | ALM action sheet attached | Cost to City - Investment Expense CAPEX Completed and 2020-30 | Correspondence between investment plan sectors. CCC sub-sectors | Cost to City - Investment Expense - CAPEX (Madrid model 2020-30 | Cost to Other Stakeholders - Investment Expense - CAPEX (Madrid model 2020-30 | Year 2030 Remaining emission kton CO2e  |
-|   | Territory | Developing the use of rail | ☐ Encouraging modal shift from passenger transport to rail
-☐ Develop rail freight:
-* Initiate consultation with local stakeholders to identify freight flows and needs.
-* Include guidelines for optimising freight transport at regional level in planning documents.
-* Regulate, supervise, support and enforce the optimisation of goods flow management in the area.
-* Rethink the parking strategy for goods vehicles
-* Encourage and support local players within a formalised framework | NO ACTION SHEET but financing | 1,5 M€ |  |  |  |   |
-|   |  Territory | Urban logistics and freight | Optimise the logistics and management of urban goods flows in the first and last mile:
-☐ Inform and raise awareness of the challenges of sustainable urban logistics among local authorities and economic players
-☐ Implement a sustainable urban logistics charter to promote increasingly energy-efficient, low-carbon urban freight transport.
-Action not included in section 3 because the financial requirements have not been assessed at this stage. | ENE10 | 0,5 M€ | Optimized logistics |  |  |   |
-|   |  Community assets | Mobility and renewal of local authority car fleets | Reducing the carbon impact of staff journeys: rolling out the internal mobility plan
-☐ Build up a fleet of electric vehicles
-☐ Cover the cost of public transport and soft modes of transport
-☐ Business trips: distribute public transport tickets, encourage car-sharing
-☐ Introduce a sustainable mobility package (FMD) to provide financial support for sustainable practices
-☐ Encourage car-pooling
-☐ Facilitate teleworking
-☐ Encouraging residents and businesses to switch to less GHG-emitting vehicles
-Community initiative: electric charging points + parking spaces, etc. | ENE7A | 9 M€ | Electrification of cars + motorbikes | 1 M€ |  |   |
+|   | Territory | Developing the use of rail | ☐ Encouraging modal shift from passenger transport to rail ☐ Develop rail freight: * Initiate consultation with local stakeholders to identify freight flows and needs. * Include guidelines for optimising freight transport at regional level in planning documents. * Regulate, supervise, support and enforce the optimisation of goods flow management in the area. * Rethink the parking strategy for goods vehicles * Encourage and support local players within a formalised framework | NO ACTION SHEET but financing | 1,5 M€ |  |  |  |   |
+|   |  Territory | Urban logistics and freight | Optimise the logistics and management of urban goods flows in the first and last mile: ☐ Inform and raise awareness of the challenges of sustainable urban logistics among local authorities and economic players ☐ Implement a sustainable urban logistics charter to promote increasingly energy-efficient, low-carbon urban freight transport. Action not included in section 3 because the financial requirements have not been assessed at this stage. | ENE10 | 0,5 M€ | Optimized logistics |  |  |   |
+|   |  Community assets | Mobility and renewal of local authority car fleets | Reducing the carbon impact of staff journeys: rolling out the internal mobility plan ☐ Build up a fleet of electric vehicles ☐ Cover the cost of public transport and soft modes of transport ☐ Business trips: distribute public transport tickets, encourage car-sharing ☐ Introduce a sustainable mobility package (FMD) to provide financial support for sustainable practices ☐ Encourage car-pooling ☐ Facilitate teleworking ☐ Encouraging residents and businesses to switch to less GHG-emitting vehicles Community initiative: electric charging points + parking spaces, etc. | ENE7A | 9 M€ | Electrification of cars + motorbikes | 1 M€ |  |   |
 |   |  Territory | Electrification of private car and motorbike fleets | Encouraging residents and businesses to invest in electric vehicles |  |  | Electrification of cars + motorbikes |  | 75 M€ including €6M for businesses |   |
 |   |  Territory | Electrification of private HGV fleets | Encourage companies to invest in electric vehicles |  |  | Electrification of trucks | 2 M€ | 143 M€ |   |
 |   |   |  | TOTAL |  | 574 M€ |  | 227 M€ |  | 24 Kt  |
 |  1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ALM areas of action | ALM share target | Sub-domains ALM | Actions to make ALM carbon neutral | ALM action sheet attached | Cost to City - Investment Expense CAPEX Completed and 2020-30 | Correspondence between investment plan sectors. CCC sub-sectors | Cost to City - Investment Expense - CAPEX (Madrid model 2020-30 | Cost to Other Stakeholders - Investment Expense - CAPEX (Madrid model 2020-30 | Year 2030 Remaining emission kton CO2e  |
-|  Building renovation and sustainable urban planning | Territory | Public support for the renovation of private and social housing | ☐ Social housing stock: encouraging energy renovation and urban renewal in eco-districts
-☐ Improving the efficiency of thermal improvement schemes in private housing: developing a one-stop public service for assistance and support with energy renovation of residential buildings
-☐ Combating fuel poverty | ENE3
-ENE3a | 16 M€ | Building renovations (envelope) |  |  |   |
+|  Building renovation and sustainable urban planning | Territory | Public support for the renovation of private and social housing | ☐ Social housing stock: encouraging energy renovation and urban renewal in eco-districts ☐ Improving the efficiency of thermal improvement schemes in private housing: developing a one-stop public service for assistance and support with energy renovation of residential buildings ☐ Combating fuel poverty | ENE3 ENE3a | 16 M€ | Building renovations (envelope) |  |  |   |
 |   |  Territory | Energy-efficient renovation of homes and commercial buildings | Investment by residents and businesses in energy-efficient renovation of homes and commercial buildings |  |  | Building renovations (envelope) |  | 549 M€ |   |
-|   |  Territory | Public action for sustainable urban development | ☐ Gradually reduce the rate at which land is artificially developed, so that by 2050 there will be no net artificialisation.
-☐ Favour urban renewal over urban expansion
-☐ Incorporate zero net artificialisation (ZAN) objectives into urban planning documents, in particular SCOT, SRADDET and PLUi.
-☐ Develop the conditions for exemplary development and property operations (encourage dialogue between players, provide training, define a framework/guide for sustainable construction). | ENE1
-ENE4 | 317 M€ | New energy-efficient buildings | Not rated |  |   |
+|   |  Territory | Public action for sustainable urban development | ☐ Gradually reduce the rate at which land is artificially developed, so that by 2050 there will be no net artificialisation. ☐ Favour urban renewal over urban expansion ☐ Incorporate zero net artificialisation (ZAN) objectives into urban planning documents, in particular SCOT, SRADDET and PLUi. ☐ Develop the conditions for exemplary development and property operations (encourage dialogue between players, provide training, define a framework/guide for sustainable construction). | ENE1 ENE4 | 317 M€ | New energy-efficient buildings | Not rated |  |   |
 |   |  Territory | Efficient new construction in the private sector (housing and commercial) | Investment by residents and businesses in new housing and commercial buildings |  |  | New energy-efficient buildings |  | 231 M€ |   |
-|   |  Community assets | Renovation of public service buildings and intelligent buildings
-Efficient new buildings | Implement Building Energy Plans, focusing on 3 areas (users, assets and ecological transition) and 6 actions:
-☐ Raising awareness among occupants
-☐ Raising awareness among children
-☐ Property strategy - optimising floor space
-☐ Intelligent Territory - improving the management of energy equipment
-☐ Investment - implementing environmental requirements
-☐ Investment - develop renewable and bio-sourced energies
-Implement the Intelligent Territory project to reduce the region's energy consumption:
-☐ Renovate public lighting and introduce intelligent lighting / encourage private lighting companies to renovate
-☐ Reduce energy consumption in public buildings through precision control
-☐ Develop precision watering of green spaces to reduce water consumption
-☐ Optimising waste management and collection by installing sensors
-☐ Monitor the drinking water network in real time (quantity/quality) | T6
-ENE5 | 93 M€ | Building renovations (envelope)
-New energy-efficient buildings | 29 M€
-M€ |  |   |
+|   |  Community assets | Renovation of public service buildings and intelligent buildings Efficient new buildings | Implement Building Energy Plans, focusing on 3 areas (users, assets and ecological transition) and 6 actions: ☐ Raising awareness among occupants ☐ Raising awareness among children ☐ Property strategy - optimising floor space ☐ Intelligent Territory - improving the management of energy equipment ☐ Investment - implementing environmental requirements ☐ Investment - develop renewable and bio-sourced energies Implement the Intelligent Territory project to reduce the region's energy consumption: ☐ Renovate public lighting and introduce intelligent lighting / encourage private lighting companies to renovate ☐ Reduce energy consumption in public buildings through precision control ☐ Develop precision watering of green spaces to reduce water consumption ☐ Optimising waste management and collection by installing sensors ☐ Monitor the drinking water network in real time (quantity/quality) | T6 ENE5 | 93 M€ | Building renovations (envelope) New energy-efficient buildings | 29 M€ M€ |  |   |
 |   |  | TOTAL |  | 426 M€ |  | 55 M€ | 780 M€ | 15 kt |   |
 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1470,62 +1240,22 @@ M€ |  |   |
 |   |   |  Helping citizens and stakeholders to change their practices and reduce waste | □ Implement the circular economy roadmap: * Acting on key economic sectors: food/bio-waste, construction and public works, repair/reuse, etc. * Cross-functional actions: developing research and innovation, supporting initiatives and projects, promoting inter-company relations and virtuous approaches, providing information and training in the ET professions, etc. * Setting an example for local authorities: public procurement, responsible digital technologies, development and construction projects, sustainable tourism and events, etc. □ Strengthen the waste prevention and management strategy for citizens | ECO3 sheet ECO2 sheet | 3,5 M€ | Increased waste recycling |  |  |   |
 |   |  Heritage | Improving water and wastewater networks | □ Optimising water and wastewater systems at all levels: * Drinking water production and distribution systems (detect and reduce leaks, reduce consumption, etc.) * Wastewater treatment systems (increasing renewable energy production, optimising energy performance, etc.) * Promoting integrated rainwater management (GIEP) (reducing waterproofing, promoting water management at plot level, etc.). | ENV3B sheet | 208 M€ | Not taken into account in the CCC method |  |  |   |
 |   |   |  | TOTAL |  | 253 M€ |  | 1 M€ |  | 9 kt  |
-7
 
-|  1
-ALM areas
-of action | 2
-ALM share
-target | 3
-Sub-domains
-ALM | 4
-Actions to make ALM carbon neutral | 5
-ALM action
-sheet
-attached | 6
-Cost to City -
-Investment
-Expense CAPEX
-Completed and
-| 7
-Correspondence
-between
-investment plan
-sectors.
-CCC sub-sectors | 8
-Cost to City -
-Investment
-Expense - CAPEX
-(Madrid model
-| 9
-Cost to Other
-Stakeholders -
-Investment
-Expense - CAPEX
-(Madrid model
-| 10
-Year 2030
-Remaining
-emission
-kton CO2e  |
+|  1 ALM areas of action | 2 ALM share target | 3 Sub-domains ALM | 4 Actions to make ALM carbon neutral | 5 ALM action sheet attached | 6 Cost to City - Investment Expense CAPEX Completed and |
+| 7 Correspondence between investment plan sectors. CCC sub-sectors | 8 Cost to City - Investment Expense - CAPEX (Madrid model |
+| 9 Cost to Other Stakeholders - Investment Expense - CAPEX (Madrid model |
+| 10 Year 2030 Remaining emission kton CO2e  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |  |  | TOTAL FOR THE ENTIRE
-PLAN (2020-2030) |  | 1 483 M€ * |  | 470 M€ | 1 485 M€ | 50 kt  |
+|   |  |  | TOTAL FOR THE ENTIRE PLAN (2020-2030) |  | 1 483 M€ * |  | 470 M€ | 1 485 M€ | 50 kt  |
 
 * 1,541m including Green Infrastructure and nature-based solutions
 
-|  Sub-total linked to the
-Intelligent Territory project **
-(extracted from the above
-amounts) |  | 82 M€  |
+|  Sub-total linked to the Intelligent Territory project ** (extracted from the above amounts) |  | 82 M€  |
 | --- | --- | --- |
 |  Energy efficiency in public lighting |  | 52 M€  |
-|  Green spaces intelligent watering,
-supervisor... |  | 21 M€  |
-|  Buildings : BMS, sensors, remote
-monitoring |  | 6 M€  |
-|  Waste: collection, waste collection
-centres, waste management |  | 3 M€  |
+|  Green spaces intelligent watering, supervisor... |  | 21 M€  |
+|  Buildings : BMS, sensors, remote monitoring |  | 6 M€  |
+|  Waste: collection, waste collection centres, waste management |  | 3 M€  |
 
 ** This extraction makes it possible to identify (without complicating the reading) the investments made as part of the Intelligent Territory approach. This is an innovative and ambitious initiative designed to accelerate the ecological transition, and is presented in part 2.3, figure 20.
 
@@ -1550,7 +1280,6 @@ Below are the different levers envisaged to increase carbon sequestration in the
 
 ![img-41.jpeg](img-41.jpeg)
 Figure23 - Type of land use in ALM territory - Source: Portrait Environnement du Territoire d'ALM 2023, Pays de la Loire Region
-9
 Table8 - Levers for carbon sequestration in the ALM region - Source: SDEC
 
 |  Types of levers | Levers | Assumptions/objectives neutrality  |
@@ -1584,213 +1313,43 @@ Table9 - Impact pathway monitoring indicators - Source: Ecological Transition De
 |   |  Cycling plan | Implement the cycling plan: - Promoting and educating people to use bicycles - Develop and share public space - Develop and support services using bicycles - Supporting and encouraging companies and establishments | Modal share of cycling (%)  |   |
 |   |  | - Monitor and evaluate the cycling plan |  |   |
 | --- | --- | --- | --- | --- |
-|   |  Car-pooling, car-sharing and alternative modes of transport | Promote the development of alternatives to the use of private cars by supporting the local offer (citiz, etc.)
-Combating car-free driving and developing car-sharing
-Develop car-sharing areas
-Making alternative mobility tools accessible and visible
-Support the implementation of mobility plans for companies and local authorities | Modal share of alternative modes (%) |   |
-|   |  Calming the public space | - Develop pedestrianisation
-* Rethinking the design of roadways
-* Implement tools to monitor and evaluate pedestrian policy
-* Redesign public spaces (e.g. square plan)
-Rethink parking policies
-* Park-and-ride facilities
-* Extend the green parking zone
-* Charging points for electric vehicles
-* Developing car-sharing areas
-* Parking guidance systems
-* Remove spaces
-* Change the pricing system
-* Allocate revenues from paid parking to sustainable mobility
-* Set up a low-emission zone
-Develop the area by promoting local centres (shops, health services, etc.) | Pedestrian modal share (%)
-Modal share cycling (%) |   |
-|   |  Developing the use of rail | - Encouraging modal shift from passenger transport to rail
-Develop rail freight:
-* Initiate consultation with local stakeholders to identify freight flows and needs.
-* Include guidelines for optimising freight transport at regional level in planning documents.
-* Rethink the parking strategy for goods vehicles
-* Encourage and support local players within a formalised framework | Passenger numbers :
-Journeys/capita/year
-Total number of journeys |   |
-|   |  Urban logistics and freight | Optimise the logistics and management of urban goods flows in the first and last mile:
-Inform and raise awareness of the challenges of sustainable urban logistics among local authorities and economic players
-Implement a sustainable urban logistics charter to promote increasingly energy-efficient and carbon-free urban goods transport .
-Rethink the parking strategy for goods vehicles | Number of companies that have signed up to the charter
-Number of companies investing in electric vehicles and proportion of company fleet (%) |   |
+|   |  Car-pooling, car-sharing and alternative modes of transport | Promote the development of alternatives to the use of private cars by supporting the local offer (citiz, etc.) Combating car-free driving and developing car-sharing Develop car-sharing areas Making alternative mobility tools accessible and visible Support the implementation of mobility plans for companies and local authorities | Modal share of alternative modes (%) |   |
+|   |  Calming the public space | - Develop pedestrianisation * Rethinking the design of roadways * Implement tools to monitor and evaluate pedestrian policy * Redesign public spaces (e.g. square plan) Rethink parking policies * Park-and-ride facilities * Extend the green parking zone * Charging points for electric vehicles * Developing car-sharing areas * Parking guidance systems * Remove spaces * Change the pricing system * Allocate revenues from paid parking to sustainable mobility * Set up a low-emission zone Develop the area by promoting local centres (shops, health services, etc.) | Pedestrian modal share (%) Modal share cycling (%) |   |
+|   |  Developing the use of rail | - Encouraging modal shift from passenger transport to rail Develop rail freight: * Initiate consultation with local stakeholders to identify freight flows and needs. * Include guidelines for optimising freight transport at regional level in planning documents. * Rethink the parking strategy for goods vehicles * Encourage and support local players within a formalised framework | Passenger numbers : Journeys/capita/year Total number of journeys |   |
+|   |  Urban logistics and freight | Optimise the logistics and management of urban goods flows in the first and last mile: Inform and raise awareness of the challenges of sustainable urban logistics among local authorities and economic players Implement a sustainable urban logistics charter to promote increasingly energy-efficient and carbon-free urban goods transport . Rethink the parking strategy for goods vehicles | Number of companies that have signed up to the charter Number of companies investing in electric vehicles and proportion of company fleet (%) |   |
 
-1
-|   | Mobility and renewal of local authority car fleets | Reducing the carbon impact of staff journeys: rolling out the internal mobility plan
-Building up a fleet of electric vehicles
-Cover the cost of public transport and soft modes of transport
-Business trips: distribute public transport tickets, encourage car-sharing, etc.
-Introduce a sustainable mobility package (FMD) to provide financial support for sustainable practices
-Encourage car-pooling
-Facilitate teleworking
-Encourage residents and businesses to switch to less GHG-emitting engines
-Community incentives: electric charging points + parking spaces, etc. | Change in the internal fleet towards electric vehicles (%)
-Fuel consumption
-GHG emissions from vehicle fleet
-Number of in-house electric charging points Number of teleworking days per year
-
-See annual fleet report | Renewal of the annual electric fleet in excess of 60%.  |
+|   | Mobility and renewal of local authority car fleets | Reducing the carbon impact of staff journeys: rolling out the internal mobility plan Building up a fleet of electric vehicles Cover the cost of public transport and soft modes of transport Business trips: distribute public transport tickets, encourage car-sharing, etc. Introduce a sustainable mobility package (FMD) to provide financial support for sustainable practices Encourage car-pooling Facilitate teleworking Encourage residents and businesses to switch to less GHG-emitting engines Community incentives: electric charging points + parking spaces, etc. | Change in the internal fleet towards electric vehicles (%) Fuel consumption GHG emissions from vehicle fleet Number of in-house electric charging points Number of teleworking days per year See annual fleet report | Renewal of the annual electric fleet in excess of 60%.  |
 | --- | --- | --- | --- | --- |
-|   |  Electrification of private car and motorbike fleets | - Encourage residents and businesses to invest in electric vehicles
-Strengthen the network of charging points | Number of charging points in the region
-Percentage of electric vehicles in the local fleet | 18% of the fleet electrified  |
-|   |  Electrification of private HGV fleets | - Encourage companies to invest in electric vehicles
-Strengthen the network of charging points (ultra-fast) | Road transport consumption (GWh)
-GHG emissions linked to road transport and freight in the region and trends |   |
-|  Building renovation and sustainable urban planning | Public support for the renovation of private and social housing | - Social housing stock: encouraging energy renovation and urban renewal in eco-districts
-Improving the efficiency of thermal improvement schemes in private housing: developing a one-stop public service for assistance and support with energy renovation of residential buildings | Greenhouse gas emissions from the private tertiary sector (teq CO2)
-Energy consumption in the private tertiary sector (GWh)
-Greenhouse gas emissions from the public sector / social housing stock (teq CO2)
-Energy consumption in the public sector / social housing stock (GWh)
-Final energy consumption of public buildings (based on the surface area of the buildings, in kWh/m²)
-Final energy consumption of public buildings (per capita, in kWh/inhab) (PCAET = not per capita (MWh) + "local authority assets") | 3.5% annual renovation rate for 80% of new buildings with high energy performance 4% of efficient lighting and household appliances 16%  |
-|   |  Energy-efficient renovation of homes and commercial buildings | Investment by residents and businesses in energy-efficient renovation of homes and commercial buildings | Number of homes renovated for energy efficiency (no. of homes renovated/100 existing homes) by type of property (condominiums, social housing, detached houses)
-Number of renovations in the public and private tertiary sectors |   |
-|   |  Public action for sustainable urban development | - Gradually reduce the rate at which land is artificially developed, with the aim of achieving zero net artificialisation by 2050
-Favour urban renewal over urban expansion
-Incorporate the zero net artificialisation (ZAN) objectives into urban planning documents, in particular SCOTs, SRADDETs and PLUiIs.
-Develop the conditions for exemplary development and property | CF. data from the housing observatory, OPAH, etc. |   |
+|   |  Electrification of private car and motorbike fleets | - Encourage residents and businesses to invest in electric vehicles Strengthen the network of charging points | Number of charging points in the region Percentage of electric vehicles in the local fleet | 18% of the fleet electrified  |
+|   |  Electrification of private HGV fleets | - Encourage companies to invest in electric vehicles Strengthen the network of charging points (ultra-fast) | Road transport consumption (GWh) GHG emissions linked to road transport and freight in the region and trends |   |
+|  Building renovation and sustainable urban planning | Public support for the renovation of private and social housing | - Social housing stock: encouraging energy renovation and urban renewal in eco-districts Improving the efficiency of thermal improvement schemes in private housing: developing a one-stop public service for assistance and support with energy renovation of residential buildings | Greenhouse gas emissions from the private tertiary sector (teq CO2) Energy consumption in the private tertiary sector (GWh) Greenhouse gas emissions from the public sector / social housing stock (teq CO2) Energy consumption in the public sector / social housing stock (GWh) Final energy consumption of public buildings (based on the surface area of the buildings, in kWh/m²) Final energy consumption of public buildings (per capita, in kWh/inhab) (PCAET = not per capita (MWh) + "local authority assets") | 3.5% annual renovation rate for 80% of new buildings with high energy performance 4% of efficient lighting and household appliances 16%  |
+|   |  Energy-efficient renovation of homes and commercial buildings | Investment by residents and businesses in energy-efficient renovation of homes and commercial buildings | Number of homes renovated for energy efficiency (no. of homes renovated/100 existing homes) by type of property (condominiums, social housing, detached houses) Number of renovations in the public and private tertiary sectors |   |
+|   |  Public action for sustainable urban development | - Gradually reduce the rate at which land is artificially developed, with the aim of achieving zero net artificialisation by 2050 Favour urban renewal over urban expansion Incorporate the zero net artificialisation (ZAN) objectives into urban planning documents, in particular SCOTs, SRADDETs and PLUiIs. Develop the conditions for exemplary development and property | CF. data from the housing observatory, OPAH, etc. |   |
 
-2
 |   |  | operations (encourage dialogue between players, provide training, define a framework/guide for sustainable construction). |  |   |
 | --- | --- | --- | --- | --- |
 |   |  Efficient new construction in the private sector (housing and commercial) | Investment by residents and businesses in new construction of efficient, bioclimatic housing and tertiary buildings using renewable energy.  |   |   |
-|   |  Renovation of public service buildings and intelligent buildings and efficient new buildings | Implement Building Energy Plans, focusing on 3 areas (users, assets and ecological transition) and 6 actions:
-Raising awareness among occupants
-Raising awareness among children
-Property strategy - optimising floor space
-Intelligent Territory - improving the management of energy equipment
-Investment - implementing environmental requirements
-Investment - develop renewable and bio-sourced energies
+|   |  Renovation of public service buildings and intelligent buildings and efficient new buildings | Implement Building Energy Plans, focusing on 3 areas (users, assets and ecological transition) and 6 actions: Raising awareness among occupants Raising awareness among children Property strategy - optimising floor space Intelligent Territory - improving the management of energy equipment Investment - implementing environmental requirements Investment - develop renewable and bio-sourced energies Implement the Intelligent Territory project to reduce the area's energy consumption: Renovate public lighting and introduce intelligent lighting / encourage private lighting companies to renovate Reduce energy consumption in public buildings through precision control Develop precision watering of green spaces to reduce water consumption Optimising waste management and collection by installing sensors Monitor the drinking water network in real time (quantity/quality)  |   |   |
+|  Energy systems | Public district heating networks | - Continue to roll out the master plan for heating networks: * Interconnect heating networks * Continue to develop the various districts and outlying municipalities * Innovate by identifying new sources of energy recovery | Number of homes connected to district heating networks Number of establishments connected to district heating networks Total heat production and delivery per network (GWh) Network efficiency Share of renewable energy in production (%) Length of networks (km) and heat density (MWh / ml,year) See heating network annual reports | Decarbonisation of district heating (16% of heating): *10% of district heating produced from fossil fuels *20% of district heating produced using electric heat pumps *80% of district heating produced from biofuels  |
 
-Implement the Intelligent Territory project to reduce the area's energy consumption:
-Renovate public lighting and introduce intelligent lighting / encourage private lighting companies to renovate
-Reduce energy consumption in public buildings through precision control
-Develop precision watering of green spaces to reduce water consumption
-Optimising waste management and collection by installing sensors
-Monitor the drinking water network in real time (quantity/quality)  |   |   |
-|  Energy systems | Public district heating networks | - Continue to roll out the master plan for heating networks:
-* Interconnect heating networks
-* Continue to develop the various districts and outlying municipalities
-* Innovate by identifying new sources of energy recovery | Number of homes connected to district heating networks
-Number of establishments connected to district heating networks
-Total heat production and delivery per network (GWh)
-Network efficiency
-Share of renewable energy in production (%)
-Length of networks (km) and heat density (MWh / ml,year)
-See heating network annual reports | Decarbonisation of district heating (16% of heating):
-*10% of district heating produced from fossil fuels
-*20% of district heating produced using electric heat pumps
-*80% of district heating produced from biofuels  |
-
-3
 |   | Decarbonising heating in the private sector | Initiatives by residents, businesses and energy suppliers to decarbonise their heating systems (gas, oil, etc.) (not connected to public heating networks) | Greenhouse gas emissions from the residential and tertiary sectors (teq CO2) Percentage of renewable energy consumed for heating and cooling in the region (%) Share of energy sources in the consumption of residential and tertiary buildings Rate of oil-fired heating in the building stock and change in the number of oil-fired buildings | Decarbonisation of local heating (84% of heating): *30% share of local heating produced from fossil fuels *45% of local heating is produced using electric heat pumps * 25% of local heating produced from biofuels  |
 | --- | --- | --- | --- | --- |
 |   |  Optimising gas and electricity networks | Actions concerning gas : - To cover gas consumption with renewable gas, enabling the department to be self-sufficient in gas. - Massively reduce gas consumption for building needs, by around -35% between 2020 and 2030 and by 60% between 2030 and 2050 (a reduction of 4% per year), through the combined effects of energy sobriety, energy efficiency and substitution of energy sources. efficiency and energy substitution - Develop the growing use of biogas in the transport sector - Reduce the carbon footprint of the network operator's activities in the region by 30% by 2030 (compared with 2009). Actions concerning electricity : - Involve energy distribution stakeholders across the board - Implement a localised energy management programme with network operators/concessionaires - Encourage the purchase of renewable electricity - Develop energy management and renewable energy services offered by energy players | Gas consumption (Gwh) Consumption per m² Percentage of biogas consumed Change in number of customers (and by category) Length of network Same for electricity See GRDF and Enedis annual reports Financial indicators for energy prices Percentage of households in fuel poverty |   |
 |   |  Energy-efficient lighting and public facilities | - Implement the Intelligent Territory project to reduce the area's energy consumption - Renovate public lighting and implement intelligent lighting / encourage private lighting companies to renovate - Action to reduce electricity consumption (digital, centralised management, etc.) > treated in public buildings | Public lighting consumption (kWh/inhab/year) Rate of renovation of streetlights |   |
 |   |  Energy efficiency of private equipment | Energy efficiency of lighting and equipment | Electricity consumption / uses (Enedis data) |   |
-|   | Development of renewable energy production in the region | - Supporting the local production and consumption of renewable energies: biomethane, biomass, solar energy, wind power, waste-to-energy and hydrogen, in particular:
-* Identify areas to accelerate the development of renewable energies.
-* Draw up a solar plan | - Total renewable energy production in the region (MWh)
-Total renewable energy production in the region (% of consumption)
-Renewable energy coverage rate - local authority assets
-Rate of renewable and recovered energy (RRE&R) for heating networks in the area (%)
-Rate of renewable energy production for heating and cooling in the area (%)
-Renewable electricity production (MWh)
-See annual data from the Energy Observatory currently being developed. |   |
+|   | Development of renewable energy production in the region | - Supporting the local production and consumption of renewable energies: biomethane, biomass, solar energy, wind power, waste-to-energy and hydrogen, in particular: * Identify areas to accelerate the development of renewable energies. * Draw up a solar plan | - Total renewable energy production in the region (MWh) Total renewable energy production in the region (% of consumption) Renewable energy coverage rate - local authority assets Rate of renewable and recovered energy (RRE&R) for heating networks in the area (%) Rate of renewable energy production for heating and cooling in the area (%) Renewable electricity production (MWh) See annual data from the Energy Observatory currently being developed. |   |
 | --- | --- | --- | --- | --- |
-|  Green infrastructure and nature-based solutions | Revegetation and renaturation of public spaces (parks and gardens) | - Increasing carbon sinks through urban forests and the preservation/vegetation of spaces, desoiling schoolyards, canopies, etc.
-Implement the biodiversity plan (ALM perimeter):
-* Discovering, raising awareness and training to improve collective action
-* Sharing and pooling to improve knowledge
-* Preserve and restore to protect our natural heritage
-* Innovate and experiment to meet new challenges (adaptation to climate change, invasive alien species, soil conservation, etc.).
-Implement the Angevins landscape master plan and the Urban Nature Plan (within the boundaries of the City of Angers):
-* Strengthen the area's landscape identity.
-* Sustainable design and management
-* Knowing, preserving and developing the tree heritage
-* Raise awareness and bring people together
-* Promote, monitor and evaluate the scheme | Annual artificial surface area
-Annual surface area desilted
-Number of trees planted
-See existing Biodiversity Plan and Urban Nature Plan indicators |   |
-|   |  Environmental protection and adaptation to CC | - Implement the climate change adaptation plan:
-* Ensure the resilience of natural environments, production and infrastructure
-* Ensure the resilience of residents and communities
-* Ensure the resilience of organisations and communities
-Raising public awareness of the ecological transition (general public, elected representatives, employees, businesses, etc.)
-Implement the water cycle strategy for better resource sharing and management:
-* Slow down the water cycle and preserve the environment. | Net sequestration of carbon dioxide from soils and forests (teq CO2)
-Change in surface area of forests and undeveloped areas
-Number of people affected by heat island effects
-Monitoring of meteorological events
-See existing climate change adaptation plan indicator |   |
+|  Green infrastructure and nature-based solutions | Revegetation and renaturation of public spaces (parks and gardens) | - Increasing carbon sinks through urban forests and the preservation/vegetation of spaces, desoiling schoolyards, canopies, etc. Implement the biodiversity plan (ALM perimeter): * Discovering, raising awareness and training to improve collective action * Sharing and pooling to improve knowledge * Preserve and restore to protect our natural heritage * Innovate and experiment to meet new challenges (adaptation to climate change, invasive alien species, soil conservation, etc.). Implement the Angevins landscape master plan and the Urban Nature Plan (within the boundaries of the City of Angers): * Strengthen the area's landscape identity. * Sustainable design and management * Knowing, preserving and developing the tree heritage * Raise awareness and bring people together * Promote, monitor and evaluate the scheme | Annual artificial surface area Annual surface area desilted Number of trees planted See existing Biodiversity Plan and Urban Nature Plan indicators |   |
+|   |  Environmental protection and adaptation to CC | - Implement the climate change adaptation plan: * Ensure the resilience of natural environments, production and infrastructure * Ensure the resilience of residents and communities * Ensure the resilience of organisations and communities Raising public awareness of the ecological transition (general public, elected representatives, employees, businesses, etc.) Implement the water cycle strategy for better resource sharing and management: * Slow down the water cycle and preserve the environment. | Net sequestration of carbon dioxide from soils and forests (teq CO2) Change in surface area of forests and undeveloped areas Number of people affected by heat island effects Monitoring of meteorological events See existing climate change adaptation plan indicator |   |
 
-5
-|   |  | * Organise sober use of water for all stakeholders
-* Optimising availability and substituting resources
-* Preserve water quality and prevent pollution
-Prevent risks: flooding, pollution, noise, air quality, etc. |  |   |
+|   |  | * Organise sober use of water for all stakeholders * Optimising availability and substituting resources * Preserve water quality and prevent pollution Prevent risks: flooding, pollution, noise, air quality, etc. |  |   |
 | --- | --- | --- | --- | --- |
-|   |  Agriculture and the Territorial Food Project | - Implement the regional food project:
-* Agriculture and the region (e.g. identifying farms that are close to being handed over, carrying out a technical and economic study of the region's organic sectors, adapting training needs, etc.).
-* Commodity chains and the region (e.g. improving information on local supplies)
-* Spatial accessibility (e.g. drawing up an inventory of the spatial supply of food, etc.)
-* Food culture (e.g. raising awareness among children, taking part in local events, etc.)
-* Social accessibility (e.g. carry out anti-waste initiatives, collaborate on food insecurity projects, study the needs and support solutions of collective catering, etc.). | Greenhouse gas emissions from agriculture (teqCO2)
-Energy consumption by agriculture (GWh)
-Proportion of agricultural area certified as organic or in conversion and of high environmental value (%) (+MAEC for PAT) (AB only for CRTE)
-Share of organic food in school catering
-*See Territorial Food Plan assessment* |   |
-|  Waste and circular ecology | Waste recycling and the circular economy | - Implement the circular economy roadmap:
-* Strengthen local sorted collection solutions for household and business waste.
-* Setting an example for the local authority: public procurement, responsible digital technologies, development and construction projects, sustainable tourism and events, etc.
-Modernising collection and processing facilities to improve energy efficiency and performance
-Deploy bio-waste sorting/treatment solutions | Greenhouse gas emissions from waste (teq CO2)
-Change in quantities of waste collected by type and material (tonnes and ratio per inhabitant)
-Recycling rate by material (%)
-Energy consumption of collection and treatment systems
-Recovery rate by material
-Number of households sorting their bio-waste (via survey)
-*See annual waste report* | Recycling target by material :
-* 85% paper
-* 85% metal
-* 80% plastic
-* 85% glass
-* 90% organic matter  |
-|   |  Helping citizens and stakeholders to change their practices and reduce waste | - Implement the circular economy roadmap:
-* Acting on key economic sectors: food/bio-waste, construction and public works, repair/reuse, etc.
-* Cross-functional actions: developing research and innovation, supporting initiatives and projects, promoting inter-company relations and virtuous approaches, providing information and training in the ET professions, etc.
-* Setting an example for local authorities: public procurement, responsible digital technologies, development and construction projects, sustainable tourism and events, etc.
-Strengthening the waste prevention and management strategy for local residents | Recovery rate by material
-Number of awareness campaigns
-Number of participants in zero waste challenges
-Percentage of public contracts including environmental clauses (%)
-Percentage of public contracts including social clauses (%)
-*See circular economy roadmap and annual report* |   |
+|   |  Agriculture and the Territorial Food Project | - Implement the regional food project: * Agriculture and the region (e.g. identifying farms that are close to being handed over, carrying out a technical and economic study of the region's organic sectors, adapting training needs, etc.). * Commodity chains and the region (e.g. improving information on local supplies) * Spatial accessibility (e.g. drawing up an inventory of the spatial supply of food, etc.) * Food culture (e.g. raising awareness among children, taking part in local events, etc.) * Social accessibility (e.g. carry out anti-waste initiatives, collaborate on food insecurity projects, study the needs and support solutions of collective catering, etc.). | Greenhouse gas emissions from agriculture (teqCO2) Energy consumption by agriculture (GWh) Proportion of agricultural area certified as organic or in conversion and of high environmental value (%) (+MAEC for PAT) (AB only for CRTE) Share of organic food in school catering *See Territorial Food Plan assessment* |   |
+|  Waste and circular ecology | Waste recycling and the circular economy | - Implement the circular economy roadmap: * Strengthen local sorted collection solutions for household and business waste. * Setting an example for the local authority: public procurement, responsible digital technologies, development and construction projects, sustainable tourism and events, etc. Modernising collection and processing facilities to improve energy efficiency and performance Deploy bio-waste sorting/treatment solutions | Greenhouse gas emissions from waste (teq CO2) Change in quantities of waste collected by type and material (tonnes and ratio per inhabitant) Recycling rate by material (%) Energy consumption of collection and treatment systems Recovery rate by material Number of households sorting their bio-waste (via survey) *See annual waste report* | Recycling target by material : * 85% paper * 85% metal * 80% plastic * 85% glass * 90% organic matter  |
+|   |  Helping citizens and stakeholders to change their practices and reduce waste | - Implement the circular economy roadmap: * Acting on key economic sectors: food/bio-waste, construction and public works, repair/reuse, etc. * Cross-functional actions: developing research and innovation, supporting initiatives and projects, promoting inter-company relations and virtuous approaches, providing information and training in the ET professions, etc. * Setting an example for local authorities: public procurement, responsible digital technologies, development and construction projects, sustainable tourism and events, etc. Strengthening the waste prevention and management strategy for local residents | Recovery rate by material Number of awareness campaigns Number of participants in zero waste challenges Percentage of public contracts including environmental clauses (%) Percentage of public contracts including social clauses (%) *See circular economy roadmap and annual report* |   |
 
-6
-|   | Improving water and wastewater networks | - Optimising water and wastewater systems at all levels:
-* Drinking water production and distribution systems (detecting and reducing leaks, reducing consumption, etc.)
-* Sewerage systems (increasing renewable energy production, optimising energy performance, etc.)
-* Promoting integrated rainwater management (GIEP) (reducing the waterproofing of areas, promoting water management at plot level, etc.). | Energy consumption of distribution and treatment systems (Mwh)
-Number of km of water networks renovated
-Number of km of wastewater networks renovated
-Number of health checks on water
-Number of compliance checks on wastewater networks
-Efficiency of drinking water supply system (catchment/treatment/distribution)
-(PCAET: drinking water network efficiency %)
-Percentage of water bodies in good condition (= ecological condition + chemical condition)
-
-See annual water report and assessment of the major water cycle strategy. | To be entered in the database  |
+|   | Improving water and wastewater networks | - Optimising water and wastewater systems at all levels: * Drinking water production and distribution systems (detecting and reducing leaks, reducing consumption, etc.) * Sewerage systems (increasing renewable energy production, optimising energy performance, etc.) * Promoting integrated rainwater management (GIEP) (reducing the waterproofing of areas, promoting water management at plot level, etc.). | Energy consumption of distribution and treatment systems (Mwh) Number of km of water networks renovated Number of km of wastewater networks renovated Number of health checks on water Number of compliance checks on wastewater networks Efficiency of drinking water supply system (catchment/treatment/distribution) (PCAET: drinking water network efficiency %) Percentage of water bodies in good condition (= ecological condition + chemical condition) See annual water report and assessment of the major water cycle strategy. | To be entered in the database  |
 | --- | --- | --- | --- | --- |
-
-7
-8
 
 # 4. Part C - Achieving climate neutrality by 2030
 
@@ -1859,7 +1418,6 @@ The diagram opposite simplifies the processes at work for most of the initiative
 
 ![img-42.jpeg](img-42.jpeg)
 Figure25 - CCC governance
-0
 
 # 2. Entities with responsibilities for climate change mitigation policies and cross-sectoral coordination
 
@@ -1893,7 +1451,6 @@ Elected representatives from the 3 EPCIs run the structure and its teams manage 
 
 ![img-43.jpeg](img-43.jpeg)
 Figure26 - Map of the PMLA
-1
 
 &gt; Syndicat intercommunal d'énergies de Maine-et-Loire (Siéml) and Alter Energies
 
@@ -1981,7 +1538,6 @@ Guideline 3: An area that regenerates natural ecosystems, which provide resource
 3 framework actions worth an estimated €35.9 million
 
 Co-signed in May 2021 with the State, ADEME, the Region, the Department, the Banque des territoires and the City of Angers, and 8 structures (landlords, developers, etc.), it is the fruit of a partnership effort.
-5
 
 # 3. Mechanisms for involving citizens in bringing about change
 
@@ -2037,7 +1593,6 @@ On the climate-air-energy theme, *occasional surveys* are carried out by the dep
 
 *Lastly, citizens are consulted on a number of specific projects*: revision of the PLUi (2025-26), establishment of the RE Acceleration Zone (2024), etc.
 
-6
 # 4. Mechanisms for involving citizens in bringing about change
 
 Below are the governance structures for addressing and existing barriers and opportunities:
@@ -2102,7 +1657,6 @@ This approach, which would be used by all the players in the supply chain and wo
 On the one hand, changes in the regulatory framework imposing technical developments (transport, construction, housing, etc.), the volatility of energy prices and the increase in the cost of goods purchased, among other factors, mean that people are looking for new and practical solutions in their daily lives. This is why the functions of transport, food, housing, etc., used in the approach are at the heart of the general public's approach.
 
 In addition, the intensification of activities will be made possible by the deployment of financial tools (subsidies, including European subsidies, crowdfunding, participative financing, sponsorship, etc.). The example of projects such as AMBITION (see table above) also opens the door to large-scale replication of projects with convincing results.
-1
 
 # 5. Outlook and next steps
 
@@ -2146,8 +1700,6 @@ angers Loire métropole COMMUNAUTE UPEBRE
 
 Commitments to climate neutrality by 2030
 
-2
-
 # INTRODUCTION
 
 By initiating work on this Climate City Contract (CCC), Angers Loire Métropole (ALM) is delivering an ambitious response to the climate emergency we face. The ALM CCC's climate policy is driven by three key objectives: accelerating the ecological transition to achieve climate neutrality, building a resilient metropolis capable of withstanding the effects of climate change, and fostering an inclusive transition that benefits all residents and stakeholders in the region.
@@ -2165,7 +1717,6 @@ In fact, local residents' daily mobility and residential energy consumption acco
 The purpose of the Climate City Contract is therefore to consolidate the actions, financial resources, and human capital of our local authority—and ultimately, all regional stakeholders—into a forward-looking framework. This unprecedented initiative will need to be further developed to address the systemic and multi-level transformations required. The approach will be closely coordinated with our continuous improvement initiative, Territoire Engagé pour la Transition Écologique (TETE).
 
 The commitments made toward achieving carbon neutrality represent a first step in presenting the European Commission with ALM's objectives and proactive approach to climate action.
-3
 
 angers Loire métropole
 
@@ -2196,15 +1747,9 @@ Figure 10 - CCC governance ... 22
 Figure 11 - The CCC, an iterative tool ... 23
 #
 
-angers Loire
-
 métropole
 
 COMMUNAUTE UITIGEN
-
-Commitments to climate neutrality
-
-by 2030
 
 #
 
@@ -2228,8 +1773,6 @@ angers Loire métropole
 COMMUNAUTE UITBUNE
 
 Commitments to climate neutrality by 2030
-
-O
 
 The services have been structured and developed by integrating the challenges of the ecological transition, which are now fully supported on a cross-cutting basis and with the guidance and support of all the elected representatives and, more specifically, a dozen or so vice-presidents on these issues under the impetus of the Mayor-President of Angers Loire Métropole.
 
@@ -2273,16 +1816,11 @@ It is important to note that emissions directly linked to ALM's operations and p
 These systemic interactions lie at the heart of the CCC's approach. No single actor can achieve carbon neutrality alone. Therefore, stakeholder inclusion and open governance are fundamental to ensuring that actions and commitments are both meaningful and effective.
 
 Illustrating this collaborative and innovative approach, ALM, through its participation in Mission Ville, has been selected for the Pilot Cities program. This opportunity allows ALM to develop its ambitious "AMBITION" project, which aligns fully with its climate neutrality objectives.
-7
 
-angers Loire
 métropole
 ^{}[]淄淋しい
 ^{}[]形
 a
-
-Commitments to climate neutrality
-by 2030
 
 # 2 Objective: climate neutrality by 2030
 
@@ -2317,12 +1855,6 @@ angersloire métropole
 
 COMMUNAUTE URBAN
 
-Commitments to climate neutrality
-
-by 2030
-
-O
-
 # Scope of emissions
 
 The objective of accelerating the reduction of emissions applies to territorial GHG emissions. Local emissions are monitored annually by a regional emissions assessment system: the BASEMIS® inventory. This inventory, managed by the AIRPDL association, is based on national methodological references and assesses ALM's energy consumption and production, GHG emissions and atmospheric pollutants. It meets French regulatory requirements and is the measurement tool for the PCAET and the region's action plans. As a member, ALM benefits from a set of personalised, accurate and up-to-date data. It covers the following emission sectors: residential, tertiary, industry, transport (road and off-road), waste, agriculture and energy (excluding the production of electricity, heat and cooling, which are recorded at the consumption stage).
@@ -2343,9 +1875,6 @@ ALM's increased involvement in the ecological transition, and more specifically 
 Figure4 - Main co-benefits of carbon neutrality for ALM
 angers Loire métropole
 COMMUNAUTE ULISENNE
-Commitments to climate neutrality
-by 2030
-O
 
 # 1- Greater resilience to energy shocks
 
@@ -2378,8 +1907,6 @@ Collaboration and citizen participation are the common thread running through th
 The mobilisation of citizens over more than 6 months was illustrated by the collection of 1,000 contributions. These have been studied and summarised into 135 proposals, which will be put to the vote in the summer of 2021. As a result of the Assises, Angers Loire Métropole has drawn up an action plan comprising 63 measures designed to accelerate the ecological transition of the region, enabling existing initiatives to strengthened and new ones to be launched.
 #
 
-angers Loire
-
 #
 
 m
@@ -2387,10 +1914,6 @@ m
 entreple
 
 communaute urbaine
-
-Commitments to climate neutrality
-
-by 2030
 
 #
 
@@ -2420,8 +1943,6 @@ angers Loire métropole
 
 commitments to climate neutrality by 2030
 
-1
-
 With regard to public lighting, the "Intelligent Territory" initiative aims to replace 30,000 lighting points with LEDs and install 3,600 presence sensors to reduce energy consumption by 66%. By the end of 2023, 15,200 streetlights had already been replaced. Energy savings are averaging 70%. The targets are to be met by 2026.
 
 Angers Loire Métropole has also set up a 3-year energy transition fund to support its 29-member communes in speeding up the energy renovation of their public buildings, in addition to government funding (green funds and other schemes).
@@ -2444,8 +1965,6 @@ In the end, a reduction of almost 60% in emissions will be required from the bui
 angers Loire métropole
 
 commitments to climate neutrality by 2030
-
-2
 
 # 2- Sober transport, using new energies and an alternative mobility offer
 
@@ -2476,8 +1995,6 @@ angers Loire métropole
 
 commitments to climate neutrality by 2030
 
-3
-
 b. New mobility and modal shift
 
 Angers Loire Métropole is working with other local players, first and foremost the City of Angers, to encourage alternative modes of transport to the use of private cars and self-driving cars. Among these, cycling plays a key role. With its 625 km of cycle network (up 22% since 2019), including 397 km of dedicated cycle paths, Angers Loire Métropole is one of the most advanced cities. ALM and the city of Angers have adopted a 25-action cycling plan for 2019. To this end, they are developing actions in the following areas:
@@ -2504,8 +2021,6 @@ Speeding up the development of renewable energies and the transformation of syst
 The current national objective is to achieve a 33% share of renewable energy in the energy mix by 2030, rising to 42.5% once the European REDIII directive has been transposed. Nearly 15% of local consumption is covered by renewable energy, mainly from wood energy (43%) used by private households, but also from heat production plants supplying urban networks and heat pumps used in the residential and tertiary sectors (32%).
 angersloire métropole
 commitments to climate neutrality
-by 2030
-4
 
 With a view to achieving carbon neutrality, the aim is to consume energy that is essentially carbon-free, involving 2/3 renewable electricity and 1/3 renewable heat (biomass, biogas from methanisation, aerothermal energy and geothermal energy). As part of the work on the law on accelerating the production of renewable energy in March 2023, the region's potential has been estimated at 3,521 GWh (66% electricity and 33% heat).
 
@@ -2534,26 +2049,13 @@ angers Loire métropole
 
 COMMUNAUTE ULISENNE
 
-Commitments to climate neutrality
-
-by 2030
-
-O
-
 The practical application of these principles is integrated the new development projects undertaken in partnership with the main development operator ALTER: through the 12 large-scale mixed projects (Cours St Laud, Quai St Serge, NPNRU, Plateau de la Mayenne, etc.), housing, business parks, and two major urban renewal projects (Monplaisir and Belle-Beille districts) mentioned above.
 
 In conclusion, over and above the priority objectives and technical projects to be developed and described above, it is the entire ecosystem of players and, in particular, citizens that must be mobilised. ALM has undertaken work with nearly 80 partners to better identify the levers for behavioural change and to make actions better coordinated and more effective. The "Assises de la transition écologique" (ecological transition conference) and the winning project of the Net Zero Cities pilot cities call are illustrations of this desire to experiment with new approaches with local residents.
 
-5
 angers Loire métropole
 
 COMMUNAUTE URBAINE
-
-Commitments to climate neutrality
-
-by 2030
-
-O
 
 # 4 Processes and principles
 
@@ -2574,17 +2076,9 @@ The many planning initiatives undertaken in the region are linked and coordinate
 The sector plan for the energy transition is currently being redefined in the light of changes in European and national regulations.
 #
 
-angers Loire
-
 métropole
 
-C
-
 COMMUNAUTE ULISENSE
-
-Commitments to climate neutrality
-
-by 2030
 
 #
 
@@ -2609,10 +2103,6 @@ angers Loire métropole
 
 COMMUNE DE GONNESNE
 
-Commitments to climate neutrality
-
-by 2030
-
 #
 
 ![img-58.jpeg](img-58.jpeg)
@@ -2630,10 +2120,6 @@ The transition is based on modes of governance and mobilisation that demonstrate
 angersloire métropole
 
 COMMUNAUTE URBAINE
-
-Commitments to climate neutrality
-
-by 2030
 
 #
 
@@ -2661,9 +2147,6 @@ The practical organisation of CCC monitoring will be implemented as follows:
 The Ecological Transition Steering Committee will be mobilised. It provides guidance on the climate-air-energy policy and monitors actions and performance indicators across the board. It decides on proposals for new actions. It involves 8 vice-presidents and the Chairman, as well as directors and departments, and meets at least twice a year. It reports on its work to the Community Council and the Standing Committee.
 angers Loire métropole
 COMMUNAUTE ULISENNE
-Commitments to climate neutrality
-by 2030
-O
 
 Other sectoral steering committees are set up for different policies and projects.
 A technical committee: chaired by the Director of Ecological Transition and Development and the Director of Ecological Transition, and bringing together the departments and contact persons for the areas covered. External partners are involved as necessary: the Pôle Métropolitain Loire Angers, as leader of the PCAET, associated organisations (ALTER, AURA, ALDEV, etc.) and contributing partners (Siéml, energy suppliers).
@@ -2693,18 +2176,11 @@ With 46,000 students, Angers Loire Métropole is the 3rd largest centre for high
 
 In order to establish a strategy that brings together all the players involved, the Angers Loire Métropole Urban Community has adopted a metropolitan plan for Higher Education, Research and Innovation (ESRI).
 
-0
 #
-
-angers Loire
 
 métropole
 
 COMMUNAUTE URBAINE
-
-Commitments to climate neutrality
-
-by 2030
 
 #
 
@@ -2767,25 +2243,12 @@ métropole
 
 COMMUNAUTE UITBANK
 
-Commitments to climate neutrality
-
-by 2030
-
-O
-
 ![img-61.jpeg](img-61.jpeg)
 Figure11 - The CCC, an iterative tool
-0
 
 angers loire métropole
 
 communiqué d'athlétisme
-
-Commitments to climate neutrality
-
-by 2030
-
-O
 
 NET ZERO CITIES
 
@@ -2808,15 +2271,10 @@ Some players, such as the Pays de la Loire Regional Council, are not stakeholder
 |  Pôle métropolitain Loire Angers (PMLA) | Crossways sectors | Syndicat mixte | Roselyne Bienvenu | Vice-President  |
 |   |  Intercommunal scale  |   |   |   |
 |  ALTER Services | Energy - Heating networks under integrated service contracts (Public service delegation | Société publique locale | Michel Ballarini | Director  |
-5
 
-angers Loire
 métropole
 ^{}[]地
 www.mairie-dumore.fr
-
-Commitments to climate neutrality
-by 2030
 
 |   | urban scale |  |  |   |
 | --- | --- | --- | --- | --- |
@@ -2830,14 +2288,11 @@ by 2030
 |   |  Regional scale |  |  |   |
 |  ADECC (association d'entreprises pour le développement d'une économie circulaire et collaborative) | County scale / environment | Association | Philippe LOHEZIC | Director  |
 |  CHAMBRE DES METIERS et de l'ARTISANAT | Employment | Public Entity | Nadège DEKENUYDT | President  |
-6
 
-angers Loire
 métropole
 ^{}[]淄淋
 
 Committments to climate neutrality
-by 2030
 
 |   | Regional scale |  |  |   |
 | --- | --- | --- | --- | --- |
@@ -2848,15 +2303,10 @@ by 2030
 |  AURA | Urbanism agency | Public Entity | Roch Brancour | President  |
 |   |  Regional scale |  |  |   |
 |  Syndicat intercommunal d'énergies du Maine et Loire (SIEML) | Energy | Public Entity - Organising authority for the public distribution of electricity | Jean-Luc Davy | President  |
-7
 
-angers Loire
 métropole
 ^{}[]地
 www.mairie-dumore.fr
-
-Commitments to climate neutrality
-by 2030
 
 |   | County scale |  |  |   |
 | --- | --- | --- | --- | --- |
@@ -2874,7 +2324,6 @@ by 2030
 |   |  12 counties |  |  |   |
 |  Office national des Forêts | Biodiversity | Etablissement public | Olivier Thibault | Director  |
 |   |  National scale |  |  |   |
-8
 
 |  Ligue pour la protection des oiseaux (LPO) Pays de Loire | Biodiversity | Association | Reine DUPAS | President  |
 | --- | --- | --- | --- | --- |
@@ -2886,17 +2335,10 @@ by 2030
 |  Syndicat Mixte du Bassin de l'Authion et de ses Affluents (SMBAA) | Water management and flood prevention | Etablissement public | Arnaud DECAS | Director  |
 |   |  Authion watershed. |  |  |   |
 |  Syndicat Mixte des Basses Vallées | Water management and flood prevention | Etablissement public | Jean-Paul PAVILLON | President  |
-9
 
 angers loire métropole
 
 COMMUNAUTE URBAINE
-
-Commitments to climate neutrality
-
-by 2030
-
-O
 
 |  Angevines et de la Romme (SMBVAR) | The Syndicate's perimeter extends over five main hydrographic entities: Loir, Sarthe, Mayenne, Maine and Romme, representing a territory of approximately 1,500 km². |  |  |   |
 | --- | --- | --- | --- | --- |
@@ -2913,12 +2355,6 @@ angersloire
 métropole
 
 ordinateur d'urbane
-
-Commitments to climate neutrality
-
-by 2030
-
-O
 
 # STAKEHOLDERS SCHEME
 

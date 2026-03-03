@@ -9,12 +9,7 @@ EU MISSION PLATFORM | CLIMATE NEUTRAL AND SMART CITIES
 
 ![img-0.jpeg](img-0.jpeg)
 
-NetZeroCities has received funding from the U2030 Research and Innovation Programme under the
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-C
+NetZeroCities has received funding from the H2020 Research and Innovation Programme under the
 
 # Summary
 
@@ -25,9 +20,6 @@ The Action Plan starts with an introduction to the city of Athens, including its
 The Climate City Contract of Athens is partially based on the 2022 Climate Action Plan as well as on insights stemming from engagement activities during the last decade with stakeholders from Athens and the networks and initiatives that Athens belongs to. The CCC raises the ambition of the previous plan significantly, by bringing the target to climate neutrality from 2050 forward to 2030, along with an updated set of objectives and a portfolio of actions to realise this target. The goal for climate neutrality by 2030 will be primarily achieved through extensive emissions cuts within all emissions-intensive sectors of the city, including energy supply, the built environment, transportation and mobility, and waste. In line with the climate neutrality definition pursued by the Cities Mission, the target for emissions cuts is set to 80% compared to a 'Business-as-Usual' scenario—i.e., assuming that the Municipality did not develop any further climate policy after 2019. The residual chunk of 20% of emissions will be covered through nature-based solutions, by expanding the city's green infrastructure and afforestation/reforestation activities in the region. The climate neutrality target covers all administrative territories within the Municipality and all emission sources, sectors, and relevant GHG emissions.
 
 Part A of the action plan then continues with an evaluation of the current state of climate action in Athens (Module A-1). The Municipality has been measuring and reporting its emissions since 2014 using the City Inventory Reporting and Information System provided by the global network of C40 Cities and based on the GHG Protocol for Cities. The inventories cover the entire geographical boundaries of the city without any exception and include all relevant GHG emissions which are then reported to the Carbon Disclosure Project (CDP). While the most recent emissions inventory available is for 2021, in consultation with the NetZeroCities advisors, it was decided to use the 2019 inventory to avoid any data anomalies due to the impact of COVID-19. GHG emissions within the boundaries of the Municipality of Athens were estimated at 2,759 kilotonnes of CO₂e for 2019, or about 4.3 tonnes of CO₂e per capita. The distribution of these GHG emissions is 71% due to energy consumption in buildings and street
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
 
 lighting, 17% of GHG emissions due to transport and mobility within the Municipality of Athens, and 12% due to the management of the Municipality's wastewater and the disposal of solid waste in landfills.
 
@@ -40,9 +32,6 @@ To understand this gap in more detail, a reference scenario with no climate poli
 The last part of Part A (Module A-3) examines barriers and opportunities on the different systems related to the city's GHG emission sectors, such as infrastructure and the wider technological system, the institutional, regulatory, and organisational system, the financial system, as well as the political, social, and behavioural systems. The barriers to the transition towards climate neutrality are many and multidimensional. They include issues at a national or European level (e.g., insufficient finance for energy upgrades in buildings) but also conditions that mainly concern the Municipality of Athens, such as its limited authority over the power grid, the public transportation network and the major avenues of Athens or the increased tourism in the city centre and its impact on emissions. At the same time, there are various opportunities and co-benefits through climate actions, such as increasing green jobs in the city's building sector through increasing the rate of energy upgrades.
 
 The module then analyses stakeholders that can potentially help Athens to overcome these barriers. Stakeholders from all relevant categories are examined such as other public institutions (e.g., the Ministry of Environment and Energy), administrative and regulatory bodies (e.g., grid operators, public transport operator, and the waste management authority in Attica), financial institutions (e.g., the Green Fund and the European Investment Bank), city networks (e.g., NetZeroCities, C40 Cities, and ICLEI), universities and researchers (e.g., National Technical University of Athens and National Observatory of Athens), companies and professional associations (e.g., General Confederation of
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
 
 Professional, Craft Merchants of Greece and the Athens Chamber of Commerce), and civil society (e.g., Greenpeace, WWF, ELLET, Hyperion).
 
@@ -53,9 +42,6 @@ Based on these priorities, detailed impact pathways are drawn up for the main em
 Impact pathways are also created for green infrastructure and nature-based solutions as they will contribute to the offsetting of 20% of the emissions and foster resilience to the impacts of climate change on the city, such as an ever-increasing overheating, the urban heat island phenomenon and the floods and fires in areas in and around Athens. There are several pathways and actions that could partly lead to the absorption of the remaining emissions such as the planting of 35,000 trees (or, conditionally, more) by 2030 and the expansion of green infrastructure, such as in the area of Elaionas in the context of Double Redevelopment. Although these measures will have a significant impact on the city's living conditions, the absorption of emissions will cover a minimal part and thus its it is necessary to carry out afforestation and reforestation actions outside the Municipality of Athens. The plan also discusses the applicability of other methods for addressing residual emissions such as storage of emissions in soil using biochar and increasing the albedo of surfaces of the built environment through cool-painting roofs and sidewalks.
 
 Based on these impact pathways, a first portfolio of actions is created for each sector and presented in Module B-2. It is noted that these mostly include actions that are already planned or soon-to-be planned. For energy systems, this includes PV systems in most schools of Athens and in municipal buildings, support measures for boosting energy communities and rooftop PV installations, and capacity development with neighbouring municipalities (Athenian Energy Alliance, Climate and Energy Academy), as well as the municipal energy community 'Faethon'. For the built environment, actions include energy upgrades in school complexes and municipal buildings of low energy performance, the operationalisation of the Energy Poverty Alleviation Office, and the establishment of financial support tools for energy upgrades of buildings. For transport and mobility, this includes measures to reduce traffic and parking in the centre of Athens, the creation of pilot Superblocks and 15-minute
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
 
 neighbourhoods, and EV chargers in municipal buildings. For waste and circular economy, the Municipality will ensure that there are composting bins available in all neighbourhoods, expand the recycling network, and promote re-use and responsible consumption. Finally, in terms of green infrastructure, existing green spaces will be improved, more trees will be planted, and Athens' streams and water bodies will be protected.
 
@@ -66,11 +52,6 @@ Part C starts by detailing the city's governance innovations for achieving city 
 Module C-2 then lists the actions taken by the city to support and foster social innovation initiatives or non-technological innovation more broadly (e.g., in entrepreneurship, social economy, social awareness &amp; mobilisation, social cohesion and solidarity, etc.) aimed to address systemic barriers and leverage opportunities. These measures include among others financial instruments for PV, energy storage and energy upgrades, the Athens Business Green Toolkit to help small enterprises of the municipality to become more energy efficient, the Youth Climate Action Fund to support social innovation projects from the young population of Athens, and the Climate Schools Athens 2030 programme to promote climate awareness and taking climate actions in schools.
 
 The CCC Action Plan closes with an outlook on the process of updating the CCC and next steps that need to be taken in future iterations. The CCC will be updated at least once a year, based on the progress of the selected indicators shown in Module B-3 and, ideally, every 3-6 months, based on the feedback from all upcoming sessions of the Climate Forum of Athens. Next CCC updates need to explore impacts to emissions from the increased tourism and Airbnb dwellings in Athens, change of food habits (e.g., more food delivery), and greater use of air conditioning due to the rising temperatures. The CCC Investment Plan will be also further adapted based on simulations with the improved NZC model and on the work of the Climate Neutrality Investment Council that will be established in the coming months. More specific barriers and interactions with national and regional policies will be identified during the implementation of the CCC, and more detail will be added to the climate actions such as estimations on the budget and resulting GHG emission reduction. Finally, a more solid plan for addressing the residual emissions will be developed, along with a detailed analysis of synergies and co-benefits with the goals of climate adaptation.
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-C
 
 # Abbreviations and acronyms
 
@@ -85,12 +66,6 @@ C
 | NZC                        | NetZeroCities project                                                   |
 | UHI                        | Urban Heat Island                                                       |
 | RES                        | Renewable Energy Systems                                                |
-
-CITY OF LITHOIS
-
-Climate Neutrality Action Plan
-
-C
 
 # Table of contents
 
@@ -130,11 +105,6 @@ Actions related to waste and the circular economy ... 123
 Actions related to green infrastructure &amp; NBS ... 133
 Module B-3 – Indicators for Monitoring, Evaluation and Learning ... 144
 Indicators related to energy systems ... 149
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-0
 
 Indicators related to the built environment ... 152
 Indicators related to transport &amp; mobility ... 156
@@ -178,11 +148,6 @@ Table 11. Detailed description of policies – Electric Vehicle Charging Plan of
 Table 12. Detailed description of policies – Regional Plan for Adaptation to Climate Change for the region of Attica (A-2.1.4) ... 37
 Table 13. Detailed description of policies – National Energy and Climate Plan (A-2.1.5) ... 38
 Table 14. Detailed description of policies – National Climate Law (A-2.1.6) ... 39
-CITY OF LITHOIS
-
-Climate Neutrality Action Plan
-
-C
 
 Table 15. Detailed description of policies – National Strategy for Adaptation to Climate Change (A-2.1.7) 40
 Table 16. Detailed description of policies – National Action Plan for the promotion of Green Public Procurement (A-2.1.8) 41
@@ -221,11 +186,6 @@ Table 48. Action description – A.E.5 98
 Table 49. Action description – A.E.6 99
 Table 50. Action description – A.E.7 101
 Table 51. Overview of actions – Built environment (B-2.1.2) 102
-CITY OF ATARIBBEI
-
-Climate Neutrality Action Plan
-
-C
 
 Table 52. Action description – A.B.1 ... 103
 Table 53. Action description – A.B.2 ... 104
@@ -268,11 +228,6 @@ Table 89. Action description – A.G.8 ... 142
 Table 90. Action description – A.G.9 ... 143
 Table 91. Overview of Key Performance Indicators (B-3.1) ... 145
 Table 92. Indicator metadata – I.A.1 ... 148
-CITY OF ATHENA
-
-Climate Neutrality Action Plan
-
-C
 
 Table 93. Indicator metadata – I.E.1 ... 149
 Table 94. Indicator metadata – I.E.2 ... 150
@@ -310,11 +265,6 @@ Figure 5. Percentage of insulated residences in the neighbourhoods of Athens (Da
 Figure 6. Transportation data for Athens in 2021 (Data source: Google Environmental Insights Explorer, 2021) ... 7
 Figure 7. Access to number of metro lines (Data source: Athens Geoportal, 2021; Processing: Norman Foster Institute – Athens Cohort, 2024) ... 8
 Figure 8. Mean daytime surface temperature (Data source: Athens Geoportal, Processing: Norman Foster Institute – Athens Cohort, 2024) ... 9
-CITY OF ATHENA
-
-Climate Neutrality Action Plan
-
-C
 
 Figure 9. Green spaces and trees within the Municipality of Athens (Data source: Athens Geoportal, Processing: Norman Foster Institute – Athens Cohort, 2024) 10
 Figure 10. Areas under flooding risk within the Municipality of Athens shown with red dots (Data source: Athens Geoportal) 12
@@ -339,12 +289,6 @@ Figure 28. 1st Innovation Workshop for Climate 182
 Figure 29. Inauguration of the Athenian Energy Alliance 183
 Figure 30. Workshop on financial tools 185
 
-#
-
-Climate Neutrality Action Plan
-
-#
-
 # 1. Introduction
 
 Athens Metropolitan area (Greek: Αθήνα, romanised: Athína [a'θina]) is where the capital city of Greece is situated. With a population close to 4 million it is the largest metropolitan area in Greece, and the $7^{\text{th}}$ largest in the European Union. The City of Athens constitutes a small administrative unit of the entire metropolitan area, with a population of 643,452 (in 2021) within its official limits, and a land area of 38.96 km².
@@ -357,12 +301,6 @@ The Municipality of Athens is the most populous municipality of Greece. It belon
 
 ![img-1.jpeg](img-1.jpeg)
 Figure 1. Position of Athens municipality within the region of Attica
-
-#
-
-Climate Neutrality Action Plan
-
-#
 
 ![img-2.jpeg](img-2.jpeg)
 Figure 2. The seven municipal communities of Athens
@@ -377,28 +315,12 @@ From the 1950s to the 1980s, the capital developed into a powerful urban centre 
 
 In the following decades, new forms of population mobility have been observed: movements between urban centres, economic migration, and intra-urban movements. The massive influx of immigrants in
 
-#
-
-OFT OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 more-than-quadrupled the share of foreign residents in Athens, who settled in the empty, abandoned, and therefore cheap building stock of Athens while Greek nationals decreased by $20\%$ (moving mainly to the suburbs). The Great Recession contributed to further reduction of the permanent population, with shifts to financially safer places (province, suburbs, abroad). The city began to show an image of abandonment, with infrastructure and public space degrading and decaying, and at the same time social and cooperative initiatives began to flourish to support the ever-growing affected groups of the population. The 2010s refugee crisis, primarily due to the Syrian Civil War, significantly boosted the number of refugees and immigrants mainly from Middle Eastern countries.
 
 Although there has been a decrease in population since the 1980s (-16% between the 2001 and 2011 censuses), Athens remains one of the most densely populated cities in Greece and Europe, mainly due to the tall building standards applied. The population of Athens amounts to 643,452 inhabitants (ELSTAT 2021) with a density of up to 17,070 inhabitants per square kilometre (see Figure 3 for more details on density). According to Eurostat (2018), the life expectancy of the residents of the Attica Region for the year 2016 was 81 years, slightly less than the national average (81.5 years) and equal to the European average, while the mix of the population consists of $77\%$ Greeks and $23\%$ foreign citizens.
 
 ![img-3.jpeg](img-3.jpeg)
 Figure 3. Population density (Data source: ELSTAT 2011, Processing: Norman Foster Institute - Athens Cohort, 2024)
-
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
 
 The average age of the population of Attica was 41.3 years a decade ago (ELSTAT 2014). In the City of Athens, in particular, a large number of elderly people are accumulating, in relation to the younger ages, with an ever-worsening demographic problem, especially after the Great Recession, and thus with increasing projections for lower productivity in the future. The observed ageing index is high (1.73—i.e., 100 children under 15 years old correspond to 173 elderly people over 65 years old) while school-age children make up approximately $15\%$ of the Municipality's population.
 
@@ -410,9 +332,6 @@ Most businesses operating within the Municipality concern retail and wholesale t
 Figure 4. Gross Domestic Product in Greece (blue line), Attica (red line), and the Central Sector of Athens (green line), based on existing data. Source data: ELSTAT (2017)
 
 Given Athens' unique history and culture, one of the most important drivers of the Municipality's economy in recent years is tourism. The city of Athens has been a popular tourist destination due to its culture and art, the vibrancy and potential of the city, its hospitality, gastronomy and favourable climatic conditions (especially in spring and autumn). Tourism in the city has increased significantly since 2012, with the number of visitors reaching 6.4 million in 2019, thereby boosting business activity in the tourism sector, despite the considerable yet temporary setback amid the COVID-19 pandemic. In a 2019 survey on tourist satisfaction and hotel performance, a very large percentage of visitors appeared to wish to return $(87\%)$ and almost all $(96\%)$ would recommend Athens as a destination, despite finding the environmental condition of the city and the public space unsatisfactory.
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
 
 The planning and certification of Athens as a Sustainable Tourist Destination has been an important goal of the city in recent times. In 2021, the Athens Development and Tourism Promotion Company (EATA) completed, in collaboration with the Global Sustainable Tourism Council (GSTC), a holistic and innovative assessment of Athens as a tourist destination. This assessment aims to help the city integrate the 17 United Nations (UN) Sustainable Development Goals (SDGs) into the city's plans and strategies for tourism and urban development. This effort takes into account the common interests of visitors, residents, and businesses, and properly prepares the city for increased tourism flows, which in turn bring increased demands in terms of energy and resource use, waste management, transport, biodiversity and landscape conservation, and effective management of cultural heritage.
 
@@ -428,26 +347,10 @@ Almost 75% of all buildings were built before 1970, indicating a rather old buil
 
 ² https://insideairbnb.com/athens/
 
-#
-
-OFT OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 detailed analysis of the built environment is found in the analysis of the Athens Cohort of the Norman Foster Institute in Annex A.
 
 ![img-5.jpeg](img-5.jpeg)
 Figure 5. Percentage of insulated residences in the neighbourhoods of Athens (Data source: ELSTAT 2011, Processing: Norman Foster Institute – Athens Cohort, 2024)
-
-#
-
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 # 1.5. Transport
 
@@ -460,28 +363,12 @@ Figure 6. Transportation data for Athens in 2021 (Data source: Google Environmen
 
 Despite the increased car usage, public transportation coverage is somewhat high within the Municipality. As shown in the Figure 7, more than $60\%$ of the neighbourhoods of Athens have access to at least one metro line, while this figure is expected to increase to $75\%$ with the development of the $4^{\text{th}}$ metro line (expected around 2030). The bus network is even more dense, with more than $95\%$ of the neighbourhoods having access to at least one bus line. A more detailed analysis of the transportation system is found in the analysis of the Athens Cohort of the Norman Foster Institute in Annex A.
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 ![img-8.jpeg](img-8.jpeg)
 Figure 7. Access to number of metro lines (Data source: Athens Geoportal, 2021; Processing: Norman Foster Institute – Athens Cohort, 2024)
 
 # 1.6. Climate and green infrastructure
 
 The city of Athens is located within the Attica basin and is the centre of Metropolitan Athens. It is located at an average altitude of $130\mathrm{m}$ above sea level, at latitude $38^{\circ}$ and longitude $24^{\circ}$ , and occupies an area of around $39\mathrm{km}^2$ . The basin is surrounded by four mountain ranges (Mount Egaleo in the west, Parnitha in the north, Penteli in the northeast, and Ymittos in the east) and the Saronic Gulf in the south. Due to the morphology of the basin, which is often characterised by temperature inversion, the movement of gas masses is severely hindered, resulting in pollutants being accumulated/trapped in the atmosphere. This is when the photochemical cloud phenomenon is observed (and continuously monitored by the National Observatory of Athens) and especially in the summer period, due to the intense sunshine. The phenomenon of smog (due to soot produced by the combustion of unsuitable materials in combustion
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 hearths) was notably strong in Athens during the years of the Great Recession. The limited peri-urban and metropolitan greenery in Attica, which is mainly concentrated in the mountainous areas of the basin, in synergy with the equally scarce greenery in the city, is of paramount importance, as it helps reduce air pollution, flooding, high temperatures, and the urban heat island effect, which is exacerbated by the non-water-permeable and heat-permeable materials that cover $80\%$ of the city. Figure 8 showcases the mean daytime surface temperature within the Municipality which is especially high in the area of Elaionas at the west of the Municipality.
 
@@ -490,25 +377,12 @@ Figure 8. Mean daytime surface temperature (Data source: Athens Geoportal, Proce
 
 In contrast, the green spaces that are shown in Figure 9 help to keep their respective neighbourhoods of Athens in much lower temperatures. Nevertheless, only $17.87\%$ of the municipality is a green space, while only $40\%$ of the residents live within $300\mathrm{m}$ to one of these spaces (NFI, 2024). This is translated to around $0.96\mathrm{m}^2$ of green space per person which is much lower than the $9 - 50\mathrm{m}^2$ per person suggested
 
-#
-
-OFY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 by the World Health Organisation standard (NFI, 2024). The number of trees is also quite low, with 91,117 street tree plots measured by the Municipality of Athens in 2024, which is translated to 2 trees per linear meter per neighbourhood.
 
 ![img-10.jpeg](img-10.jpeg)
 Figure 9. Green spaces and trees within the Municipality of Athens (Data source: Athens Geoportal, Processing: Norman Foster Institute – Athens Cohort, 2024)
 
 The climate of Athens is characterised as subtropical, Mediterranean, with prolonged hot and dry summers and mild winters, with moderate rainfall. The average annual temperature is $17.7^{\circ}\mathrm{C}$ , based on the Thiseion weather station. As shown in Table 1, in recent years, the centre of the municipality has experienced quite elevated temperatures in the summer period (maximum $42.8^{\circ}\mathrm{C}$ in July), while from December to March the temperature can drop below $0^{\circ}\mathrm{C}$ . Average rainfall is relatively low (378mm per year), as is wind speed (around 2m/s average annual wind speed). According to the Regional Adaptation Plan to Climate Change (RCPCA, 2020) and two future global warming scenarios, the moderate
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-C
 
 (RCP4.5) and the extreme (RCP 8.5), the following changes in climate parameters are expected in Athens for the period 2031-2050 compared to the reference period (1981-2000).
 
@@ -532,18 +406,9 @@ Table 1. Climatic parameters for the Region of Attica
 | Number of days with Fire Weather Index >30 \*                                                         | 90 days                    | Increase (days)       | +12              | +19              |
 | Heating Degree Days (HDD) weighted by households                                                      | 1714 grade days            | Decrease (grade days) | 1425             | 1380             |
 
-| \* Represents data from the PESPKA Attica for the Region of Attica
-** Refers to data from the PESPKA Attica for the Central Sector of the Region of Attica \*** Refers to data from the PESPKA Attica for the urban areas of the Region of Attica | | | | |
+| \* Represents data from the PESPKA Attica for the Region of Attica ** Refers to data from the PESPKA Attica for the Central Sector of the Region of Attica \*** Refers to data from the PESPKA Attica for the urban areas of the Region of Attica | | | | |
 
 The expected increase in the average annual temperature in the city may extend the tourist season in Athens by expanding the lifecycle of its touristic "product" (culture, nature, history, gastronomy). However, when the temperature rises in the very hot months of July and August, the tourist traffic in Athens is expected to decrease, especially in terms of commercial traffic and overnight stays in the city.
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 Additionally, the effects of climate change are expected to increase energy demand for cooling and raise the prices of basic goods (energy, water, necessities), leading to higher cost of living. Similarly, the risk of flooding is also exacerbated, especially for some areas of the Municipality, as shown in Figure 10.
 
@@ -553,9 +418,6 @@ Figure 10. Areas under flooding risk within the Municipality of Athens shown wit
 # 1.7. Climate action and previous action plans
 
 The Municipality of Athens has a long history of systematic climate action and planning, stemming from its participation in global initiatives in the context of climate change mitigation and adaptation. Since 2008, Athens actively participates in the global climate network of C40 Cities that supports cities to act together to deal with climate change, through partnerships, exchange of scientific knowledge, experiences, know-how, and best practices. The Municipality also signed the Covenant of Mayors in
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
 
 and the Compact of Mayors in 2015 (merged since 2016 to the Global Covenant of Mayors for Climate &amp; Energy), with the commitment to tackle climate change and increase energy efficiency and the use of renewable energy sources (RES) in their regions. In addition, the Municipality of Athens was selected to participate in the Global network of 100 Resilient Cities (today Global Resilient Cities Network³) and signed the Milan Urban Food Policy Pact⁴ in 2015 with the aim to develop sustainable food systems while minimising waste and mitigating emissions and overall climate change impacts.
 
@@ -571,14 +433,6 @@ https://resilientcitiesnetwork.org
 http://www.milanurbanfoodpolicypact.org/
 https://www.cityofathens.gr/wp-content/uploads/2022/08/schedio-gia-tin-klimatiki-allagi-9-6-2022.pdf
 https://2050pathways.org/about/c40/
-
-#
-
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 emissions reductions in 2030 (compared to 2018), the Climate Action Plan had the following sub-sector targets for 2030:
 
@@ -598,11 +452,6 @@ Figure 11. Emission reduction based on the previous Climate Action Plan (Municip
 # 1.8. Development of the CCC Action Plan
 
 The Climate City Contract of Athens is partially based on the 2022 Climate Action Plan as well as on insights stemming from engagement activities during the last decade with stakeholders from Athens and the networks and initiatives that Athens belongs to. The CCC raises the ambition of the previous plan significantly by bringing the target to climate neutrality from 2050 forward to 2030, along with an updated set of objectives and a portfolio of actions to realise this target. The development of CCC is supported
-CITY OF ATHENE
-
-Climate Neutrality Action Plan
-
-C
 
 by the EU-funded NetZeroCities (NZC) project⁷, which has developed and operationalised an extensive process for supporting cities that embark in their Cities Mission 2030 journey. Although the process for drafting the Contract was short, several heavy stakeholder consultation activities took place, including two Climate Forums in May and July 2024 as well as a deliberation process within all seven municipal units. These activities will continue as the CCC is a living document that will be further updated in the future.
 
@@ -615,9 +464,6 @@ Additionally, acquiring the Cities Mission label will open many opportunities fo
 Table 2 summarises the sectors and geographical areas that are included in the 2030 climate neutrality target of Athens.
 
 ⁷ https://netzerocities.eu
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
 
 Table 2. Climate Neutrality Target by 2030 (I-1.1)
 
@@ -635,12 +481,6 @@ Table 2. Climate Neutrality Target by 2030 (I-1.1)
 | Specify excluded/additional areas                                                                                                                                                               | -                                    | -                                         | -                                        |
 | Map of the Municipality of Athens and its seven municipal units                                                                                                                                 |                                      |                                           |                                          |
 |                                                                                                                                                                                                 |                                      |                                           |                                          |
-
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-C
 
 # 2. Part A – Current State of Climate Action
 
@@ -664,14 +504,6 @@ https://netzerocities.app/resource-3814
 https://www.c40knowledgehub.org/s/article/City-Inventory-Reporting-and-Information-System-CIRIS?language=en_US
 https://ghgprotocol.org/ghg-protocol-cities
 
-#
-
-OFT OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 $17\%$ of GHG emissions are due to transport and mobility within the Municipality of Athens.
 $12\%$ of GHG emissions are due to the management of the Municipality's wastewater and the disposal of solid waste in landfills.
 
@@ -689,14 +521,6 @@ It is clarified that these values are calculated based on the "BASIC" reference 
 
 So, in the case of Athens, emissions that are not taken into account at the BASIC level and therefore in the objectives of the CCC are the GHG emissions due to electricity network losses (Scope 3 of the built
 
-#
-
-OFT OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 environment) as well as half of the transboundary traffic through the Municipality of Athens (Scope 3 of transport). It is noted that the other half of transboundary traffic emissions are considered by assumption as Scope 1, based on the proposal of the C40 Cities network. Beyond the suggestion of the NetZeroCities advisors to use the BASIC level, the remaining emissions are outside the jurisdiction of the Municipality of Athens, especially in the context of network losses. Nevertheless, the Municipality of Athens will cooperate with neighbouring municipalities within the framework of the Athens Energy Alliance in order to reduce emissions due to transboundary mobility beyond the share attributable to the Municipality of Athens.
 
 Observing the overall course of GHG emissions from 2014 to 2021, there is a clear reduction of total emissions by almost half (from 3,628 kt $\mathrm{CO}_{2}\mathrm{e}$ in 2014 to 1,935 kt $\mathrm{CO}_{2}\mathrm{e}$ to 2021), which comes mainly from emissions reductions in the built environment. However, the building sector continues to generate the majority of emissions in 2021, so it is clear that it remains a priority. Figure 13 offers more details on the origin of the emissions. Based on the results for 2019, $61\%$ of GHG emissions come from electricity consumption in buildings and street lighting, followed by $15.8\%$ from transport-related liquid fuels (e.g., for cars, motorbikes, buses, waste collection trucks, trucks, coaches, etc.), $11.7\%$ from decomposition of organic waste in landfills, $10\%$ from heat consumption in buildings (e.g., oil and natural gas boilers), and $1.5\%$ from transport electricity (metro, tram, trolley).
@@ -706,27 +530,12 @@ Figure 13. Greenhouse gas emissions by sub-sector within the Municipality of Ath
 
 Figure 13 also shows that the reduction in total emissions between 2014 and 2021 comes mainly from the significant reduction in emissions from electricity consumption in the built environment from 2,542 kt $\mathrm{CO}_{2}\mathrm{e}$ to 960 kt $\mathrm{CO}_{2}\mathrm{e}-\mathrm{i.e.}$ , a reduction of over $60\%$ . This, however, does not mean that there was a corresponding reduction in the consumption of electricity itself. As shown in Figure 14, there was indeed
 
-#
-
-OFT OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 a reduction in consumption from 3,145 GWh in 2014 to 2,632 GWh in 2021 (-16%). The most significant decrease is evident in the tertiary sector (shops, services, offices) that, together with residences, is responsible for over $88\%$ of total consumption in 2019, followed by public buildings (approximately $9\%$ ), industries/crafts $(2\%)$ , and street lighting $(1\%)$ . While consumption in the tertiary sector decreased by $29\%$ between 2014 and 2021, consumption in residences, public buildings and street lighting remained at similar levels to 2014. Thus, the explanation for the significant reduction in emissions lies mainly in the change in the country's power generation mix due to the rapid lignite phaseout in the last decade and parallel increase in RES (Figure 15), alongside a more modest increase in natural gas. As can be seen in Figure 16 below, these changes have led to a significant drop in the emissions of the electricity mix from $33.8\mathrm{MtCO_2}$ to $18.9\mathrm{MtCO_2}$ (i.e., by about $44\%$ ), which also explains the large drop in emissions in the building sector within the Municipality of Athens in addition to a $16\%$ consumption drop.
 
 ![img-15.jpeg](img-15.jpeg)
 Electricity consumption in the built environment
 Figure 14. Electricity consumption in buildings and street lighting within the Municipality of Athens
 
-#
-
-OITY OF KENNEDO
-
-Climate Neutrality Action Plan
-
-#
 
 ![img-16.jpeg](img-16.jpeg)
 Source: International Energy Agency. Licence: CC BY 4.0
@@ -737,14 +546,6 @@ Figure 16. IEA trajectory for various sources of electricity in Greece according
 Source: International Energy Agency. Licence: CC BY 4.0
 
 Contrary to electricity consumption, heat consumption has increased in recent years (Figure 17), with the largest increase occurring in the tertiary sector. Nevertheless, residences are the largest heat consumers within the Municipality (about $59\%$ in 2019), with public buildings and industries following with small shares. Table 3 presents the detailed energy consumption in the built environment for the base year 2019.
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-O
 
 ![img-18.jpeg](img-18.jpeg)
 Heat consumption in the built environment
@@ -776,12 +577,6 @@ Table 3. Final energy consumption by the built environment (A-1.1a)
 | Agriculture, forestry, and fishing activities |         |           |         |
 | Electricity (MWh)                             |         | 23        |         |
 
-#
-
-Climate Neutrality Action Plan
-
-#
-
 Source: CIRIS 2019 for the Municipality of Athens. For the building sector, Scope 1 includes direct emissions from buildings within the Municipality of Athens (e.g., gas-based heating), Scope 2 mainly includes emissions from the consumption of electricity, while Scope 3 includes emissions that take place outside the boundaries of the Municipality (e.g., network losses).
 
 In the transport sector, over $90\%$ of emissions come from burning liquid fuels in internal combustion engines. Figure 18 shows that the majority of these emissions come from the use of passenger cars within the Municipality of Athens (about $89\%$ of the total consumption of liquid fuels), while the use of passenger cars comes second $(9\%)$ . As can also be seen from the same figure, this consumption has remained almost at the same levels between 2014 and 2021, with the exception of the 2020 consumption levels that, due to the confinements associated with (state responses to) COVID-19, appears significantly reduced. Consumption (and therefore emissions) from public transport vehicles and buses is minimal compared to the first two categories and has also remained at similar levels in recent years. Similarly, total energy consumption associated with electricity-powered transport modes (Figure 19) is much lower (62 GWh in 2019, or 223.2 TJ) than that of cars and motorcycles (about 6,000 TJ). Most consumption comes from the operation of metro and trains, followed by that of trolleys and the tram network.
@@ -789,14 +584,6 @@ In the transport sector, over $90\%$ of emissions come from burning liquid fuels
 ![img-19.jpeg](img-19.jpeg)
 Liquid fuels for transportation
 Figure 18. Liquid fuel consumption for transport and mobility within the Municipality of Athens ("BASIC" level)
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 ![img-20.jpeg](img-20.jpeg)
 Electricity consumption for transportation
@@ -829,14 +616,6 @@ Table 4. Final energy use by the Transport &amp; Mobility sector (A-1.1b)
 | Electricity (MWh)                               |         | 44,827  |         |
 | Municipal vehicles (incl. for waste collection) |         |         |         |
 
-#
-
-OFT OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 | Motor gasoline (TJ) | 9   |     |     |
 | ------------------- | --- | --- | --- |
 | Diesel oil (TJ)     | 74  |     |     |
@@ -849,14 +628,6 @@ The waste management sector is the third largest GHG sector of the Municipality 
 Figure 20. Solid waste management by the Municipality of Athens (CIRIS 2019 and data from the Directorate of Cleanliness and Recycling of the Municipality of Athens)
 
 Tables 5, 6 and 7 summarise important data of the CIRIS emission inventory of the Municipality of Athens for 2019, which was set as the base year for the calculation of the CCC emissions gap. This
-
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
 
 data includes the GHG emission factors applied to the 2019 CIRIS, the detailed GHG emissions by sector calculated in the inventory, as well as aggregate measures of sector activities used in the model, such as total electricity and heat consumption and total solids of waste. It should be noted that the GHG coefficient for municipal waste is much higher than the corresponding coefficients of other cities because it is calculated based on the data at the Phylis Landfill, where the majority of the waste of the Municipality of Athens ends up.
 
@@ -876,14 +647,6 @@ Table 5. Emission factors applied (A-1.2)
 | Municipal waste (tCO2e / tonne)      | -                    | 0.0456        | -                   | 1.28        | Emission factor calculated based on Methane Commitment Model (Eq 8.3 and 8.4 of GPC). Waste composition of 2019 for Greece is used (Table 7.9, NIR 2021) for equation 8.1. The specific characteristics of Fyli Landfill are taken into consideration regarding the fraction of methane in landfill gas and the amount of energy produced from biogas. |
 
 Source: CIRIS 2019 inventory for Athens; \* Emission factor for wood calculated directly in tCO2e. Based on the National Inventory Report (NIR) of Greece to UNFCCC $^{11}$ and the IPCC 5th Assessment Report: Climate Change 2013 $^{12}$ . Global Warming Potential (GWP) based on the IPCC SAR report.
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 6. GHG emissions by source sectors (A-1.3)
 
@@ -919,25 +682,12 @@ Table 7. Activity by Source Sector (A-1.4)
 Source: Data inputs for the Municipality of Athens to the NZC economic model (Material Economics, 2020) [model run: July 2024].
 
 In conclusion, although emissions in most sectors have decreased from 2014 to 2021, the decrease is mainly due to changes outside the Municipality's control (such as the delignitisation of the national electricity mix) rather than to more direct actions, relating e.g. to the amount of waste collection or the energy consumption in buildings and transport. In fact, there are indications that energy consumption
-CITY OF ATHEINE
-
-Climate Neutrality Action Plan
-
-C
 
 will increase in 2024 and perhaps in the coming years unless dedicated measures are taken. June 2024 marked the 13th consecutive month of record-breaking global temperatures, and the 12th in a row above 1.5°C with respect to pre-industrial levels ¹³, inter alia leading to continuous heatwaves in summer 2024 in Athens and therefore to increased electricity consumption for air conditioning of buildings. Also, judging by the first half of 2024, the Directorate of Cleanliness and Recycling of the Municipality of Athens estimates an annual increase in the amount of waste by 10%, possibly due to increased tourist flows as well as an increase in the consumption of food deliveries. Increased tourism beyond the summer season and throughout the year substantially increases the population estimate, further affecting the Municipality's emissions. All of these factors will be examined in greater detail in future CCC updates and used to update the City's emissions estimates (see Section 5 for next steps).
 
 It is evident that there are significant opportunities to reduce emissions across sectors, with electricity GHG emissions in the built environment being top priority, mainly through the use of RES and measures for consumption reduction, followed by transport GHG emissions by means of reduction of private vehicle use, and then by solid waste-related emissions by boosting recycling and composting. The following sections of Part A focus on existing climate policies and the potential barriers and opportunities to reduce emissions as well as the emissions gap between the 2030 GHG reduction projected by existing policies and the climate neutrality goal envisioned. This emissions gap will be covered by the measures and strategies discussed in Part B, with the support of other agencies and stakeholders listed and discussed in Part C.
 
 ¹³ https://climate.copernicus.eu/copernicus-june-2024-marks-12th-month-global-temperature-reaching-15degc-above-pre-industrial
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 # 2.2. Module A-2 – Current Policies and Strategies Assessment
 
@@ -958,12 +708,6 @@ Table 8. Overview of relevant policies, strategies, action plans (A-2.1)
 |                                        |             |       | institutional policy for the City of Athens.                                                                                                                                                                                                                             |
 | Sustainable Urban Mobility Plan (SUMP) | Action plan | Local | Based on Law 4784/202114, the Sustainable Urban Mobility Plan is a strategic plan for Local Government Organisations designed with the                                                                                                                                   |
 
-CITY OF ATHEINE
-
-Climate Neutrality Action Plan
-
-#
-
 | of the Municipality of Athens                                     |             |          | aim of sustainably meeting the needs for the mobility of citizens and the transport of goods in the urban and peri-urban areas. The Municipality of Athens prepared the SUMP for Athens with the aim of improving the quality of its citizens' lives and reducing energy consumption and corresponding emissions from transport.                                                                                                                                                      |
 | ----------------------------------------------------------------- | ----------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Electric Vehicle Charging Scheme (EVS)                            | Action plan | Local    | This plan includes a strategy for the location of publicly accessible recharging points for electric vehicles (EV) and EV parking spaces, developed by municipalities within their administrative boundaries. The Municipality of Athens completed the EV Charging Plan in 2022 with the construction of 545 EV charging points.                                                                                                                                                      |
@@ -973,7 +717,6 @@ Climate Neutrality Action Plan
 | National Strategy for Adaptation to Climate Change (ESPKA)        | Strategy    | National | The ESPKA is a text of strategic orientation with the aim of drawing up guidelines to strengthen the country's resilience to the effects of climate change. As such, it does not analyse in depth the necessary sectoral policies, nor does it decide on the feasibility of individual adaptation measures and actions at the local/regional level, issues that are examined in more detail within the Regional Climate Change Adaptation Plans.                                      |
 
 https://climate.ec.europa.eu/eu-action/european-climate-law_en
-Climate Neutrality Action Plan
 
 | National Action Plan to promote Green Public Procurements | Action plan | National | This plan aims to promote the Green Public Procurements in Greece, as defined by the European Commission as the processes “whereby public authorities seek to procure goods, services, and works with a reduced environmental impact throughout their life cycle.”                                                                                                        |
 | --------------------------------------------------------- | ----------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -984,20 +727,10 @@ Climate Neutrality Action Plan
 | Fit for 55                                                | Policy      | EU       | The Fit for 55 package is a series of proposals for the review and update of EU legislation, defining new initiatives to ensure that EU policies are consistent with the climate goals agreed by the Council and the European Parliament, especially with regard to the European Green Deal.                                                                              |
 | Energy Performance of Buildings Directive                 | Legislation | EU       | Together with the revised European Energy Performance Directive and the “Renovation Wave” strategy in the EU, the Energy Performance of Buildings Directive will help to achieve a high energy-efficient and zero-emission building stock by 2050 and the creation of a stable investment environment, while enabling consumers and businesses to make                    |
 
-Climate Neutrality Action Plan
-
 |                                  |             |     | more informed choices to save energy and money.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | -------------------------------- | ----------- | --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Renewable Energy Directive       | Legislation | EU  | Building on the 2009 and 2018 directives, this revision introduces stricter measures to ensure that all potential for the further development and adoption of renewable energy sources is fully exploited.                                                                                                                                                                                                                                                                                                                                                                 |
 | New Circular Economy Action Plan | Action plan | EU  | The EU's transition to a circular economy will reduce pressure on natural resources and is also a prerequisite for achieving the EU's 2050 climate neutrality target and halting biodiversity loss. The new action plan includes initiatives for energy, emissions, and material reductions throughout the life cycle of the products. It targets the way products are designed, promotes circular economy processes, encourages sustainable consumption, and aims to ensure that waste is prevented, and resources used remain in the EU economy for as long as possible. |
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 9. Detailed description of policies – Athens' Climate Action Plan 2022 (A-2.1.1)
 
@@ -1012,14 +745,6 @@ Table 9. Detailed description of policies – Athens' Climate Action Plan 2022 (
 | Relevance to the Athens Climate Agreement   | Direct relevance since the Climate City Contract builds on this predecessor plan, increasing the ambition in terms of measures and strategies proposed to achieve climate neutrality in 2030, instead of 2050.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | Impacts on the climate neutrality of Athens | The 2022 Action Plan aimed to reduce emissions by at least 61% by 2030, while the new Climate City Contract raises this target to 80%.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | Source                                      | https://www.cityofathens.gr/wp-content/uploads/2022/08/schedio-gia-tin-klimatiki-allagi-9-6-2022.pdf                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 10. Detailed description of policies – Sustainable Urban Mobility Plan of the Municipality of Athens (A-2.1.2)
 
@@ -1038,14 +763,6 @@ Table 10. Detailed description of policies – Sustainable Urban Mobility Plan o
 ^{16}
 https://www.et.gr/api/DownloadFeksApi/?fek(pdf=20210100040
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 11. Detailed description of policies – Electric Vehicle Charging Plan of the Municipality of Athens (A-2.1.3)
 
 | Electric Vehicle Charging Plan of the Municipality of Athens |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
@@ -1060,24 +777,8 @@ Table 11. Detailed description of policies – Electric Vehicle Charging Plan of
 | Impacts on the climate neutrality of Athens                  | The charging points are essential for the enhancement of electric mobility, which is expected to play an important role in the reduction of GHG emissions in transport and mobility.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | Source                                                       | https://www.cityofathens.gr/oloklirosi-schedioy-fortisis-ilek/                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 ![img-22.jpeg](img-22.jpeg)
 Figure 21. Charging points recommended by the Electric Vehicle Charging Plan of the Municipality of Athens
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 12. Detailed description of policies – Regional Plan for Adaptation to Climate Change for the region of Attica (A-2.1.4)
 
@@ -1093,14 +794,6 @@ Table 12. Detailed description of policies – Regional Plan for Adaptation to C
 | Impacts on the climate neutrality of Athens                                      | It has no direct impact on the city's climate neutrality. However, it features references to important interactions between climate change adaptation and mitigation measures, e.g., targeted tree planting improves adaptation from floods while also reducing emissions.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | Source                                                                           | https://www.patt.gov.gr/koinonia/perivallon/pespka/pespka_ye1/                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 13. Detailed description of policies – National Energy and Climate Plan (A-2.1.5)
 
 | National Energy and Climate Plan (NECP)     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
@@ -1114,14 +807,6 @@ Table 13. Detailed description of policies – National Energy and Climate Plan 
 | Relevance to the Athens Climate Agreement   | Direct relevance since the Athens' Climate City Contract largely draws on the NECP's objectives, in terms of actions in power generation to achieve an 80% GHG reduction in 2030.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | Impacts on the climate neutrality of Athens | The new NECP is more ambitious than the Climate Law, increasing the GHG reduction to at least 58.6%, compared to 1990. This can be considered as the minimum reduction in the GHG emissions of the Municipality of Athens if it were not for the increased ambition of the CCC. The target for RES in electricity generation also plays an important role, as it affects the GHG emissions of electricity generation for the needs of the Municipality of Athens, which is the most important source of emissions as shown in chapter 2.1.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | Source                                      | Last update of 2024: http://www.opengov.gr/minenv/wp-content/uploads/2024/08/Eθνικό-Σχέδιο-για-την-Eνέργεια-και-το-Kλίμα-EΣΕK_αναθεωρημένη-εκδοση.pdf                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 14. Detailed description of policies – National Climate Law (A-2.1.6)
 
@@ -1137,14 +822,6 @@ Table 14. Detailed description of policies – National Climate Law (A-2.1.6)
 | Impacts on the climate neutrality of Athens | The established target of 55% GHG reduction in 2030 can be a case for the minimum GHG reduction that would have taken place in the Municipality of Athens in 2030 had it not been for the 2022 Climate Action Plan and the CCC, which raise this ambition to 61% and (now) 80%, respectively. Also, the ban on the production of electricity from solid fossil fuels will significantly reduce the emissions of electricity generation, which are the most important for the Municipality.                                                                                                                                                                                                                                                                                    |
 | Source                                      | https://civilprotection.gov.gr/sites/default/files/2023-01/Εθνικός Κλιματικός Nόμος 4936_2022.pdf                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 15. Detailed description of policies – National Strategy for Adaptation to Climate Change (A-2.1.7)
 
 | National Strategy for Adaptation to Climate Change (NSCA) |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
@@ -1158,14 +835,6 @@ Table 15. Detailed description of policies – National Strategy for Adaptation 
 | Relevance to the Athens Climate Agreement                 | Indirectly, it defines the guidelines for the Regional Climate Change Adaptation Plan of the Attica Region, which in turn influences the adaptation measures of the Municipality of Athens.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | Impacts on the climate neutrality of Athens               | It has no direct impact on the city's climate neutrality. However, it features references to important interactions between climate change adaptation and mitigation measures, e.g., targeted tree planting improves adaptation from floods while also reducing emissions.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | Source                                                    | https://ypen.gov.gr/perivallon/klimatiki-allagi/prosarmogi-stin-klimatiki-allagi/                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-
-#
-
-OFT OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 16. Detailed description of policies – National Action Plan for the promotion of Green Public Procurement (A-2.1.8)
 
@@ -1181,14 +850,6 @@ Table 16. Detailed description of policies – National Action Plan for the prom
 | Impacts on the climate neutrality of Athens                        | There is no quantified estimate as to how much GPPs will help the Municipality’s pathway towards climate neutrality, but they are expected to create a more favourable environment for its achievement.                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | Source                                                             | https://gge.mindev.gov.gr/tomeas-dimosion-simvaseon/ethniko-sxedio-drasis-prasines-dimosies-simvaseis/                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 17. Detailed description of policies – National Waste Management Plan (A-2.1.9)
 
 | National Waste Management Plan              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
@@ -1202,14 +863,6 @@ Table 17. Detailed description of policies – National Waste Management Plan (A
 | Relevance to the Athens Climate Agreement   | The quantitative targets defined at the national level also concern Athens. Although they have not been fully legislated, they can be a point of reference for the Municipality's goals for recycling and reducing the amount of waste and processing it in landfills.                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Impacts on the climate neutrality of Athens | The goals and measures defined by the framework positively affect the efforts of the Municipality of Athens to reduce emissions from its waste management.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | Source                                      | https://ypen.gov.gr/wp-content/uploads/2021/02/εγκριση-ΕΣΔΑ.pdf https://www.elinyae.gr/sites/default/files/2023-04/94A_2023.pdf                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 18. Detailed description of policies – National Waste Prevention Programme (A-2.1.10)
 
@@ -1225,14 +878,6 @@ Table 18. Detailed description of policies – National Waste Prevention Program
 | Impacts on the climate neutrality of Athens | The goals and measures defined by the framework positively affect the effort of the Municipality of Athens to reduce the emissions caused by its waste management.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | Source                                      | http://www.opengov.gr/minenv/wp-content/uploads/downloads/2021/03/EPPDA_04-03-2021 -final-ΔIABOYΛEYΣH.pdf https://pedmede.gr/wp-content/uploads/2022/05/φεκ-83.pdf                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 19. Detailed description of policies – Integrated Framework for Waste Management (A-2.1.11)
 
 | Integrated Framework for Waste Management (Law 4819/2021) |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
@@ -1246,14 +891,6 @@ Table 19. Detailed description of policies – Integrated Framework for Waste Ma
 | Relevance to the Athens Climate Agreement                 | The quantitative targets defined at the national level in the framework also apply to Athens and are a point of reference for the Municipality's targets for recycling and reducing the amount of waste and processing it in landfills.                                                                                                                                                                                                                                                                                  |
 | Impacts on the climate neutrality of Athens               | The goals and measures defined by the framework positively affect the effort of the Municipality of Athens to reduce the emissions caused by its waste management.                                                                                                                                                                                                                                                                                                                                                       |
 | Source                                                    | https://www.elinyae.gr/sites/default/files/2021-07/129A_2021.pdf                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 20. Detailed description of policies – European Green Deal (A-2.1.12)
 
@@ -1269,14 +906,6 @@ Table 20. Detailed description of policies – European Green Deal (A-2.1.12)
 | Impacts on the climate neutrality of Athens | Directly, since the objectives of the European Green Deal also apply to Athens and, in fact, most of them must be achieved before 2030.                                                                                                                                                                   |
 | Source                                      | https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal_en                                                                                                                                                                                                              |
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 21. Detailed description of policies – Fit for 55 package (A-2.1.13)
 
 | Fit for 55 package                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                |
@@ -1290,14 +919,6 @@ Table 21. Detailed description of policies – Fit for 55 package (A-2.1.13)
 | Relevance to the Athens Climate Agreement   | Indirect since measures of Fit for 55 such as the renewal of the Directive on the Energy Performance of Buildings affect the national goals of Greece, which in turn affect Athens as well.                                                                                                                                                                                                                                                    |
 | Impacts on the climate neutrality of Athens | Immediate, since the measures of the package pave the way towards climate neutrality of the Municipality of Athens. Nevertheless, the challenge remains as the Municipality needs to achieve almost double the 2030 emissions reduction target compared to other parts of the EU under the Fit for 55.                                                                                                                                         |
 | Source                                      | https://www.consilium.europa.eu/en/policies/green-deal/fit-for-55/                                                                                                                                                                                                                                                                                                                                                                             |
-
-#
-
-OFT OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 22. Detailed description of policies – Energy Performance of Buildings Directive (A-2.1.14)
 
@@ -1313,14 +934,6 @@ Table 22. Detailed description of policies – Energy Performance of Buildings D
 | Impacts on the climate neutrality of Athens | To achieve climate neutrality, the GHG reduction target in the buildings of Athens should be much higher than the 60% set by the Directive. The package of measures proposed by the Directive can create a favourable environment for the energy upgrade of the building stock of Athens, which the Municipality can further strengthen with its own measures.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | Source                                      | 1. https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-buildings/energy-performance-buildings-directive_en 2. https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficiency-targets-directive-and-rules/energy-efficiency-directive_en 3. https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-buildings/renovation-wave_en                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 23. Detailed description of policies – Renewable Energy Directive (A-2.1.15)
 
 | Renewable Energy Directive                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
@@ -1335,14 +948,6 @@ Table 23. Detailed description of policies – Renewable Energy Directive (A-2.1
 | Impacts on the climate neutrality of Athens | As with the Energy Performance of Buildings Directive, the package of measures proposed by the Renewable Energy Directive will create a favourable climate for the reinforcement of RES in the city, thus reducing the emissions of electricity generation that constitute the largest chunk of GHG emissions in the city.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | Source                                      | https://energy.ec.europa.eu/topics/renewable-energy/renewable-energy-directive-targets-and-rules/renewable-energy-directive_en                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 24. Detailed description of policies – New Circular Economy Action Plan (A-2.1.16)
 
 | New Circular Economy Action Plan            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
@@ -1356,12 +961,6 @@ Table 24. Detailed description of policies – New Circular Economy Action Plan 
 | Relevance to the Athens Climate Agreement   | The measures and initiatives of this European Action Plan influence national policies such as the National Waste Prevention Plan, which in turn influence the CCC's waste management targets.                                                                                                                                                                                                                                                                                                                                 |
 | Impacts on the climate neutrality of Athens | A circular economy is also a prerequisite for achieving the EU's goal of climate neutrality in 2050, and this is also the case for Athens. The measures proposed in the New Circular Economy Action Plan will lead to a favourable environment for increasing the circularity of material flows in Athens and reducing waste.                                                                                                                                                                                                 |
 | Source                                      | https://environment.ec.europa.eu/strategy/circular-economy-action-plan_en                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-3
 
 ## 2.2.2. Emissions gap calculation
 
@@ -1380,14 +979,6 @@ The remaining policies contain sectoral objectives and measures taken into accou
 Based on the policy objectives and measures presented in this section as well as the analysis of the existing situation in Module A-1, a reference scenario with no climate policy after 2019 was simulated ('Business as usual') as well as a scenario that achieves an 80% emission reduction for the Municipality of Athens compared to the reference scenario. The simulation was done based on the economic model of the NetZeroCities programme¹⁸ and with the guidance and support of the programme advisors. It is noted that, although the 'Business as usual' reference scenario of the model does not incorporate any climate policy after 2019, it takes into account the change in emissions due to the population growth trajectory, as well as to the replacement of vehicles and buildings due to natural wear and tear. In
 
 ¹⁸Materials Economics. (2020). Understanding the Economic Case for Decarbonising Cities—Why Economic Case Analysis for City Decarbonisation is Crucial. https://netzerocities.app/resource-3768
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 practice, population increases tend to be offset by physical replacement of equipment, so the 'Business as Usual' scenario for 2030 tends to be very similar to the base year 2019.
 
@@ -1408,14 +999,6 @@ Source: Calculation of the NZC economic model (July 2024). Note: GHG emissions f
 
 Figure 22 presents four schematic scenarios for the Municipality's GHG path until 2030. These scenarios include the reference scenario (i.e., no climate policy after 2019) as well as three scenarios based on the reductions foreseen by the Climate City Contract targets, of the previous Action Plan of the Municipality, and the revised Greek NECP. Based on the above data, it follows that, in order to achieve climate neutrality, the GHG emissions for 2030 need to be reduced from 2,386 (Business as Usual) to $442\mathrm{ktCO_2e}$ , so the emissions difference is calculated at $1,909\mathrm{ktCO_2e}$ . Comparing the CCC target with the previous Action Plan target, it appears that an additional $617\mathrm{ktCO_2e}$ will need to be addressed through additional CCC actions compared to the actions proposed in 2022. This emissions difference rises to $1,152\mathrm{ktCO_2e}$ if the actions of the CCC are compared with the goals of the NECP, indicating even more clearly that the Municipality of Athens will need to significantly raise its climate ambition in relation to the national goals.
 
-#
-
-OFT OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 ![img-23.jpeg](img-23.jpeg)
 Greenhouse gas emissions trajectory for the Municipality of Athens (BASIC level)
 Figure 22. Greenhouse emission trajectory for the Municipality of Athens (BASIC level) based on historical data and estimates for the achievement of various climate targets
@@ -1425,16 +1008,8 @@ Most of this emissions gap will be covered through actions by the Municipality o
 At the same time, the key objectives of the CCC are based on the assumption that the objectives of the NECP will be fulfilled. For example, the strategic priority of the Municipality of Athens for $88\%$ clean electricity is based on the NECP target of $76\%$ RES in gross electricity consumption and reinforces it with local RES projects in Athens (see Part B). However, the target for local RES as well as other "dependent" targets of the CCC take into account uncertainties about whether the NECP targets will be met in 2030 by setting a minimum value for the target and an ideal one, e.g., the share of local RES is defined at $12\%$ and $24\%$ respectively. This means that the real emission gap that the CCC actions (including the 2022 plan) must address is $1,152 \mathrm{kt} \mathrm{CO}_{2} \mathrm{e}$ , i.e. as much as the 2030 GHG emissions difference between the Athens' CCC scenario and the NECP scenario.
 
 The remaining emissions to be compensated based on the CCC of the Municipality of Athens are estimated at $477\mathrm{ktCO}_{2}\mathrm{e}$ . These GHG emissions mainly include transport and mobility sector emissions that are deemed very difficult to reduce by 2030 as they would require excessively large changes in the
-CITY OF ATHEINE
-
-Climate Neutrality Action Plan
 
 mobility habits of the citizens of Athens, new metro and tram lines, as well as a steep increase in electrification. At the same time, to eliminate the remaining emissions from the other sectors, it will be necessary to increase recycling to 100%, significantly renovate almost all buildings in the city while installing solar PV in most, which is not considered realistic by 2030. These emissions will be addressed mainly by the development of green infrastructure within the city, with nature-based solutions and reforestation actions around Athens. In addition to reducing the remaining GHG emissions, these actions will have additional adaptation co-benefits for the city, such as reducing warming and or risk of flooding through targeted green infrastructure.
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-C
 
 ## 2.3. Module A-3 – Systemic Barriers and Opportunities to 2030 Climate Neutrality
 
@@ -1455,14 +1030,6 @@ The barriers to the transition towards climate neutrality are many and multidime
 
 The following tables include a brief description of the systems for each of the emissions sectors of the Municipality of Athens (as analysed in Module A-1) as well as the barriers and opportunities that exist in relation to emissions reductions per sector. The overview of barriers and opportunities is largely based on the discussions held at Climate Forums, communication with specific bodies such as the C40 Cities network, as well as the literature. During the implementation of the CCC, further barriers and opportunities are expected to appear, which will be recorded in subsequent editions of the Climate City Contract.
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 26. Systemic barriers and opportunities – Energy systems (A-3.1.1)
 
 | Energy systems                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
@@ -1471,13 +1038,6 @@ Table 26. Systemic barriers and opportunities – Energy systems (A-3.1.1)
 | Institutional, regulatory, and organisational system | Energy policy in Greece is mainly shaped by the central government (e.g., Ministry of Environment and Energy) and regulated by the Waste, Energy and Water Regulatory Authority (RAAEY). Electricity networks and other infrastructures are the responsibility of the system operators, DEDDIE and ADMIE.                                                                                                                             | Barriers: - The Municipality of Athens has limited authority over the electricity network or energy production. - The latest version of the National Energy and Climate Plan (August 2024) features very ambitious estimates for RES in the electricity mix, reaching around 76% by 2030 19. But what if this is not achieved? Opportunities: - The city can work with network operators to ensure that network capacity is aligned with the increased needs for RES within the city.                                                                                                                                                                                                                                 |
 | Technological system & infrastructure                | The city is connected to the national electricity grid and powered by natural gas, lignite, solar, onshore wind, hydro and biomass20. PV panels are installed on some rooftops in the city, covering a small part of the electricity demand. PV is a mature technology in Greece, and all relevant stakeholders (e.g., regulators, engineers, ESCOs, installers, etc.) have high expertise and long-term experience in such projects. | Barriers: - Network congestion, need for new network capacities. - Long waiting time for new RES projects in Greece (about 15 GW approved for connection, over 40 GW in the development stage21). - Lack of storage capacity at scale. - Competition of photovoltaics with solar water heaters on the roofs of Athens, limited space and difficulty in negotiations between tenants of apartment buildings. Opportunities: - New hybrid panels for the production of electricity and thermal energy for domestic hot water. - The increasing penetration of electrification technologies (e.g., electric vehicles, heat pumps) will enable the use of clean electricity from RES in the transport and heating sector. |
 
-#
-
-OPTI OF SYSTEMS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 27. Systemic barriers and opportunities – Built environment (A-3.1.1)
 
@@ -1488,13 +1048,6 @@ Table 27. Systemic barriers and opportunities – Built environment (A-3.1.1)
 |                                                     | the City's town planning department and the City's town planning department.                                                                                              |                                                                                                                                                                                                                                                                                                                                                             |
 | Political, social & behavioural system              | Citizens are relatively familiar with decentralised electricity generation technologies such as photovoltaics.                                                            | Barriers - Low energy literacy in part of the population. - Low trust in institutions (Dianeosis, 2024; Nikas et al., 2019). - Politicisation and polarisation around solar and wind technologies, mainly linked to natural disasters (e.g., fires). Opportunities: - Social perception of the unreliability of renewable energy sources has begun to fade. |
 
-#
-
-OPP OF KENNED
-
-Climate Neutrality Action Plan
-
-#
 
 |                                       | other relevant regulatory agencies (e.g., the Hellenic Archaeological Service). Municipal buildings are only a small part of the total number of buildings (680 buildings out of a total of 61,764 buildings in the last building census of 201123).                                                                                                                                                                                                                                                                                                                                                                           | - The Municipality has no control over the flow of funding programmes.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1502,14 +1055,6 @@ Climate Neutrality Action Plan
 | Financial system                      | Financing for the construction of new buildings or the renovation of old ones is mainly private. Financing programmes for renovations are also very popular (the "Eksikonomo" program) and take place almost annually.                                                                                                                                                                                                                                                                                                                                                                                                         | Barriers: - High upfront costs for the energy upgrade of the building shell. - Extensive renovations will require significant investment. Opportunities: - Energy upgrades lead to lower energy demand and therefore lower operating costs. - Solar water heaters and cooling and heating systems that use clean electricity will make households less vulnerable to fluctuations in fossil fuel prices.                                                                                                                                                                                                                                                                                                                                                                      |
 
 https://www.statistics.gr/census-buildings-2011
-
-#
-
-OPTI OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 28. Systemic barriers and opportunities – Transport &amp; mobility (A-3.1.3)
 
@@ -1525,13 +1070,6 @@ The City of Athens is the only city in the state of Athens.
 The City of Athens is the city of the City of Athens.
 The City of Athens is the city of the City of Athens.
 The City of Athens is the city of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City of the City
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 |                                       | institutions towards more sustainable mobility and transport.                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | stakeholders for transport and mobility in its area. - The Municipality can set an example by electrifying most of its vehicles and, in cooperation with OASA, a large part of the bus fleet.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1540,14 +1078,6 @@ Climate Neutrality Action Plan
 
 https://insights.sustainability.google/places/ChlJ8UNwBh-9oRQR3Y1mdkU1Nic?hl=en-US
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 29. Systemic barriers and opportunities – Waste &amp; Circular Economy (A-3.1.4)
 
 | Waste & Circular Economy                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -1555,23 +1085,12 @@ Table 29. Systemic barriers and opportunities – Waste &amp; Circular Economy (
 | System                                            | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Barriers and opportunities                                                                                                                                                                                                                                                                                                                                                                                                 |
 | Institutional, regulatory & organisational system | The solid waste produced in Athens is collected by the Municipality and then transported to facilities of the Unified Interlevel Association of the Prefecture of Attica (EDSNA). Most solid waste is transported to a landfill (such as the Phylis Landfill) while some is recycled. The overall recycling rate in the Municipality of Athens was approximately 8.29% in 2023, based on the estimate of the Cleanliness Directorate of the Municipality of Athens. Recycling is covered by companies such as the Hellenic Recycling Utilisation | Barriers: - While the Municipality has more control over waste compared to other sectors, coordination efforts between all the different stakeholders will be important, especially considering that EDSNA operates at the regional level. - Composting may require a change in the organisation of waste collection and management services (e.g., frequency of collection, capacity of waste collection vehicles, etc.). |
 
-#
-
-OITY OF KYNAMA
-
-Climate Neutrality Action Plan
-
-#
 
 |                                        | Company (EEAA) and the Excavation, Construction and Demolition Recycling System (ANAKEM), under the supervision of the Hellenic Recycling Organisation (EOAN). Wastewater is managed by EYDAP.                                               |                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Technological system & infrastructure  | Composting infrastructure is relatively new in Greece and needs to be expanded significantly. Recycling management also needs to be strengthened.                                                                                            | Barriers: - More recycling and composting bins are needed throughout the city. - Effective management of composting is still incomplete. - Collaboration with consumer goods companies and food producers is needed to reduce waste through strategies at the source (e.g., packaging reduction, longer shelf life).                                                                                                          |
 | Financial system                       | Public funds for waste management are managed at all levels (central and regional government, municipalities). Funding for wastewater treatment is also public, provided by the water and sewerage company (EYDAP) as part of utility bills. | Barriers: - More funds are needed to purchase composting bins on a large scale (both small bins for households and larger ones for waste collection). - Funding and human resources are needed for composting processing infrastructure. Opportunities: - The city can reduce landfill costs by reducing litter and increasing recycling and composting. - Possible creation of more jobs by upgrading composting management. |
 | Political, social & behavioural system | While recycling has become more widespread over the past decade, composting is relatively new and has yet to be implemented on a large scale in most cities.                                                                                 | Barriers: - A significant behavioural change is required to increase the recycling rate and introduce composting on a large scale. - The preconceived notion that recycling is also landfilled can also affect the perception of composting. - Reducing waste also requires significant behavioural change other than the practice of recycling, e.g., avoiding food waste.                                                   |
-
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
 
 Stakeholder analysis
 
@@ -1597,14 +1116,6 @@ The most important stakeholders for the achievement of all these goals are the c
 
 Public bodies and policymakers at national and European level will also be crucial both for the implementation of the transition actions of the city and for their financing. As shown in Table 30, among the most influential bodies for the city's climate neutrality plan are the European Commission, the Ministry of Environment and Energy, the Ministry of Infrastructure and Transport, the Ministry of Climate Crisis and Civil Protection, the Region of Attica, as well as neighbouring municipalities—especially the participants in the Athens Energy Alliance.
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 30. Systems &amp; Stakeholder Mapping – Public bodies and policymakers (A-3.2.1)
 
 | Public bodies and policymakers                                                                      | Related systems               | Related areas              | Influence on the climate neutrality of the city | Interest in the climate neutrality of the city |
@@ -1622,12 +1133,6 @@ Table 30. Systems &amp; Stakeholder Mapping – Public bodies and policymakers (
 | Region of Attica (especially the General Directorate of Sustainable Development and Climate Change) | Institutional                 | All                        | High                                            | High                                           |
 | Central Association of Municipalities of Greece (KEDE)                                              | Institutional, Organisational | All                        | Moderate                                        | Moderate                                       |
 | Athens Energy Alliance (Group of municipalities in the metropolitan area of Athens)                 | Institutional, Technological  | Energy systems             | High                                            | High                                           |
-
-CITY OF ATHENE
-
-Climate Neutrality Action Plan
-
-C
 
 Network operators and regulatory bodies will be important partners in this transition (Table 31). The key bodies include the Hellenic Electricity Distribution Network Operator (HEDNO, or DEDDIE), the Capital Water Supply and Sewerage Company S.A. (EYDAP), the Athens Urban Transport Organisation (OASA) and the Solid Waste Management Company of the Attica Region (EDSNA). The relevant companies of the Municipality of Athens, i.e., the Anonymous Development Company of Computerization and Business Units OTA (DAEM) and the Athens Development and Tourist Promotion Company (EATA) also play an important role with their expertise and experience.
 
@@ -1647,14 +1152,6 @@ Table 31. Mapping systems &amp; stakeholders – Administrative and regulatory b
 | Hellenic Tourism Organisation (HTO)                                   | Institutional                | All                       | Low                                             | Moderate                                       |
 | Union of Municipal Water Supply and Sewerage Companies                | Institutional                | All                       | Low                                             | Low                                            |
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 Financial institutions will be necessary to finance the actions outlined in the Athens CCC (Table 32). Among the institutions that already finance or are likely to finance the next climate actions of the Municipality of Athens are the Green Fund, the European Investment Bank, the European Regional Development Bank, the European Bank for Reconstruction and Development, the Climate Bond Initiative, and the Climate Change and Sustainability Centre of the Bank of Greece.
 
 Table 32. Mapping systems &amp; stakeholders – Financial institutions and related organisations (A-3.2.3)
@@ -1670,14 +1167,6 @@ Table 32. Mapping systems &amp; stakeholders – Financial institutions and rela
 | Bank of Greece                                                                         | Financial       | All           | Moderate                                        | Moderate                                       |
 | Banks in Greece (e.g. Eurobank EFG, Alpha Bank, Piraeus Bank, National Bank of Greece) | Financial       | All           | Moderate                                        | Low                                            |
 | Centre for Climate Change and Sustainability of the Bank of Greece                     | Financial       | All           | Moderate                                        | High                                           |
-
-#
-
-CITY OF ATHEWS
-
-Climate Neutrality Action Plan
-
-#
 
 | International Capital Market Association (ICMA) | Financial | All       | Low      | Low  |
 | ----------------------------------------------- | --------- | --------- | -------- | ---- |
@@ -1700,14 +1189,6 @@ Table 33. Systems &amp; Stakeholder Mapping - City networks (A-3.2.4)
 | B40 – Network of Balkan Cities               | Technological, Learning  | All           | Moderate                                        | Moderate                                       |
 | Climate-KIC                                  | Technological, Financial | All           | Moderate                                        | Moderate                                       |
 
-#
-
-CITY OF ATHEINE
-
-Climate Neutrality Action Plan
-
-#
-
 Academic and research institutions as well as expert associations will support with their studies and analyses the planning and implementation of the city's climate actions. Table 34 presents institutions that contribute with their studies to the climate visions of the Municipality such as the National Technical University of Athens, the National Centre for Natural Sciences "Demokritos", the National Meteorological Service, the National Observatory of Athens, and the National Kapodistrian University of Athens as well as Norman Foster Institute on Sustainable Cities. The table also includes expert associations such as the Technical Chamber of Greece (TEE) and research centres such as the Centre for Renewable Energy Sources and Savings (CRES).
 
 Table 34. Mapping systems &amp; stakeholders - Universities, research centres, expert associations (A-3.2.5)
@@ -1726,14 +1207,6 @@ Table 34. Mapping systems &amp; stakeholders - Universities, research centres, e
 | National University of Athens                       | Technological                            | All                  | Moderate                                        | High                                           |
 | National University of Athens (NKUA)                | Technological                            | All                  | Moderate                                        | High                                           |
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 Businesses inside and outside the Municipality of Athens will help implement the plan and can play a leading role through special programmes that combine climate action with the strengthening of entrepreneurship (especially in tourism businesses). In addition to energy suppliers, energy service companies, and energy system installers, professionals will play an important role organisations and associations such as the General Confederation of Professional, Craft Merchants of Greece (GSEVEE) and its institute (IME GSEVEE and KEK), the Athens Chamber of Commerce, the Association of Businesses and Industries (SEV), the Athens - Attica &amp; Argosaronic Hotel Association and the Association of Taxi Owners of Attica (SATA). Table 35 presents these organisms in more detail.
 
 Table 35. Systems &amp; stakeholder mapping – Private companies and professional associations (A-3.2.6)
@@ -1745,8 +1218,6 @@ Table 35. Systems &amp; stakeholder mapping – Private companies and profession
 | Public Energy (e.g., EMEA, EMEA, EMEA)                                | Technological   | Energy systems, Buildings | High                                            | High                                           |
 | Public Energy (e.g., EMEA, EMEA)                                      | Technological   | Energy systems, Buildings | High                                            | High                                           |
 | Other energy suppliers (e.g., EMEA, EMEA)                             | Technological   | Energy systems, Buildings | High                                            | High                                           |
-
-Climate Neutrality Action Plan
 
 | Energy Saving Companies (ESCOs) and energy system installers (e.g., Schneider Electric Greece)                   | Technological                 | Energy systems, Buildings                 | High     | High     |
 | ---------------------------------------------------------------------------------------------------------------- | ----------------------------- | ----------------------------------------- | -------- | -------- |
@@ -1763,14 +1234,6 @@ Climate Neutrality Action Plan
 
 NGOs and civil society organisations will help with their participation to combine climate action with meaningful social policy. Examples of such organisations are shown in Table 36 such as the energy communities around Athens (e.g., Hyperion), the Panhellenic Federation of Property Owners (POMIDA), and the Consumers' Union - Quality of Life (EKPOIZO). International environmental organisations with a strong presence in Greece (e.g. Greenpeace, WWF, Resilient Cities Catalyst), local environmental organisations (e.g., The Green Tank, InCommon, Hellenic Society for Culture and Environment or
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 ELLET, Hellenic Society for Nature Protection or HSPN, Environmental Alliance 2004, Team for the World), as well as organisations related to sustainable mobility such as Ecocity - Ecomobility, the Cycling Community PodilATTIKI and the organisation for the rights of pedestrians "PEZI" and social economy (Wind of Renewal, INZEB. Electra) are also expected to play an important role in the transition.
 
 Table 36. Systems &amp; Stakeholder Mapping – Civil society (A-3.2.7)
@@ -1782,8 +1245,6 @@ Table 36. Systems &amp; Stakeholder Mapping – Civil society (A-3.2.7)
 | Local environmental organisations such as The Green Tank, InCommon, Hellenic Society for Culture and Environment (ELLET), Hellenic Society for the Protection of Nature (HSPN), Environmental Alliance 2004, Team for the World, Upshift, RCC/CC HUB, Citizens' Association for Streams "ROH", Organisation GI, Network Mediterranean SOS, Ecological Society for Recycling, Panhellenic Network of Environmental Organisations | Technological, social, behavioural | All                                   | Moderate                                        | High                                           |
 | Wildlife organisations such as the Association for the Protection and Welfare of Wildlife (ANIMA), Hellenic Ornithological Society                                                                                                                                                                                                                                                                                              | Social, behavioural                | Green infrastructure                  | Low                                             | Low                                            |
 
-Climate Neutrality Action Plan
-
 | Athens Partnership                                                                                                                                                                                                         | Financial                          | All            | Moderate | High     |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------- | -------- | -------- |
 | Panhellenic Federation of Property Owners (POMIDA)                                                                                                                                                                         | Technological, social, behavioural | Buildings      | Moderate | Moderate |
@@ -1793,16 +1254,8 @@ Climate Neutrality Action Plan
 | NGO supporting social groups such as I RCF-Greece, Ithaca, UNICEF, Hellenic Red Cross, ACCMR Athens, SOLIDARITY NOW, Greek Forum of Refugees, PRAKSIS, Terres des Hommes Greece, Ecogenia, The Salvation Army              | Social, behavioural                | All            | Low      | Low      |
 | Social, cultural and educational institutions and organisations, such as parents' and teachers' associations, Children's Museum and in general students and teachers of the Municipality of Athens                         | Social, behavioural                | All            | Moderate | Moderate |
 
-Climate Neutrality Action Plan
-
 | Social economy entities, such as the social cooperative enterprise "Myrtilo", Intercultural Steps | Social, behavioural | All | Moderate | Moderate |
 | ------------------------------------------------------------------------------------------------- | ------------------- | --- | -------- | -------- |
-
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-C
 
 # 3. Part B – Pathways towards Climate Neutrality by 2030
 
@@ -1817,11 +1270,6 @@ The following modules present with a hierarchical structure how the Municipality
 As mentioned in the introduction, the 2022 Climate Action Plan of Athens had already defined a series of strategic priorities for the reduction of the city's emissions by 61% by 2030 and achieve climate neutrality by 2050. The Climate City Contract of Athens builds on these initiatives and further increases their ambition to achieve over 80% emissions reductions by 2030, with the remaining emissions to be addressed with nature-based solutions. At the same time, the CCC aims to present in greater detail how strategic initiatives will be achieved, creating impact pathways that link specific immediate actions to short- and medium-term goals. These impact pathways are detailed later in the section, after the strategic priorities.
 
 Beyond the need to increase the ambition for climate neutrality, the municipal authority had formulated since the beginning of 2024 a series of initiatives in response to everyday problems faced by citizens of Athens, such as energy poverty, unaffordable living costs, and road congestion. An important step was the decision to create municipal energy communities that will offer clean and affordable electricity to citizens, thus contributing to the reduction of energy costs and tackling energy poverty. In addition, the municipal authority is committed to improving infrastructure for pedestrians and cyclists as well as improving mobility with reliable and electric public transportation, while promoting the increase of pedestrian mobility and fostering a more sustainable and liveable city. Reducing traffic and emissions will also have significant public health benefits and reduce the number of premature deaths due to pollution and extreme temperatures. Also, the expansion of composting and better management of materials and waste can lead to a cleaner and more sustainable Athens.
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-C
 
 These initiatives could not disregard measures to foster resilience to the impacts of climate change on the city, such as an ever-increasing overheating, the urban heat island phenomenon, as well as floods and fires in areas in and around Athens. The municipal authority's commitment to plant at least 25,000 trees by 2028 underlines its commitment to strengthening green infrastructure and improving the quality of life of residents. At the same time, the city's increasing water needs due to high temperatures require greater water conservation but possibly also the utilisation of rainwater, underground water and greywater, and even water after waste treatment. All these actions can contribute both to the adaptation to the new climate data and to the reduction of energy consumption for water transfer and use.
 
@@ -1851,11 +1299,6 @@ Athens faces the challenge of meeting its ambitious climate goals in less than s
 Based on the priorities developed in the previous section, impact pathways are drawn up outlining the climate action of the Municipality of Athens in the main emission sectors of the city, including buildings and transport. Impact pathways were created based on their definitions in the NZC Theory of Change and the CCC Action Plan Guidance26. Beyond the 2030 goals mentioned in the strategic initiatives, impact pathways include short-term changes (about 1-2 years from now) and medium-term outcomes (3-4 years from now). For each emissions sector, an estimate of the emission reductions that would result from these routes is also calculated based on the simulation done with the model of the NZC programme (see Section 2.2.2 for more details). The total emissions resulting from all routes is equivalent to an 80% reduction compared to the Business as Usual, as shown in Section 2.2.2.
 
 It is noted that the impact pathways were appropriately configured to bring about the necessary changes in all systems that can have an impact on the city's climate neutrality, i.e. technology and infrastructure, governance and politics, social innovation, democracy and participation, financing and financial tools, as well as learning and skills. At the same time, the barriers and opportunities identified for changing these systems in Module A-3 form the basis for estimating indirect impacts of impact pathways beyond emissions reduction, such as on urban air quality, adaptation to extreme weather phenomena, mitigation of the urban heat island effect, etc.
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-C
 
 # 3.1.2. Impact pathways for energy systems
 
@@ -1872,14 +1315,6 @@ A significant part of the local PV will be placed on the rooftops of buildings o
 The Municipal Authority is considering the use of other technologies, such as wind turbines, biomass, and energy storage systems, to further enhance energy sustainability and autonomy. Also, the Municipality will seek collaborations with HEDNO, IPTO, RAEWW and other bodies related to the electricity system in order to overcome obstacles to the installation of new RES projects (see Module A-3) and especially in the issue of networks and finding electricity space. It is indicated that the revised NECP (summer 2024) estimates that the investments between 2025 and 2030 in electricity networks throughout Greece will reach almost 10 billion with about 1.5 billion already available through public funding. At the same time, the "Apollo" programme, which is already launched by the Ministry of
 
 ²⁷ https://insights.sustainability.google/places/ChlJ8UNwBh-9oRQR3Y1mdkU1Nic?ty=2023&amp;hl=en-US
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 Environment and Energy $^{28}$ , intends to reduce the energy costs of vulnerable households and self-governing organisations by installing new RES stations and using energy offsetting. There are many opportunities to coordinate the goals of the CCC with the national goals, and the Municipality will take advantage of these opportunities by cooperating actively with the central government and other agencies.
 
@@ -1901,14 +1336,6 @@ Table 38. Overview of impact pathways - Energy systems (B-1.1.1)
 
 https://ypen.gov.gr/7-erotiseis-apantiseis-gia-to-programma-apollon/
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 |                           |                                                                                                                                 | Installation of other energy systems (e.g., biomass-based systems)                     |     |     |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | --- | --- |
 | Governance & politics     | Support measures to strengthen energy communities and rooftop PV projects (e.g., promotion campaigns, benefits, one-stop-shops) | Provision of cheap energy produced by the Municipality for energy poor households      |     |     |
@@ -1924,9 +1351,6 @@ Climate Neutrality Action Plan
 The building sector is responsible for most greenhouse gas emissions in the Municipality of Athens, generating $71\%$ of total emissions (see Module A-1). Most of these emissions (1,684 kt $\mathrm{CO}_{2}\mathrm{e}$ in 2019) are generated by electricity consumption and will be addressed by the measures mentioned above in the category of energy systems. However, electricity aside, heating in buildings leads to non-negligible emissions (277 kt $\mathrm{CO}_{2}\mathrm{e}$ in 2019) that must also be addressed. At the same time, the ever-increasing temperatures in Athens are expected to lead to an increase in the use of air conditioning, which together with the electrification of movement and heating (heat pumps) are expected to increase electricity consumption above the levels in 2019. Therefore, there is a need for significant energy upgrades to the shell of most of the Municipality's buildings, in addition to changing heating or cooling equipment to more energy efficient models (and modes).
 
 As presented in the strategic priorities of the Municipality, the goals for the energy upgrade of the Municipality's buildings are for at least $50\%$ of the buildings in the tertiary sector and $30\%$ of the residential buildings to be of energy class B or above. Energy class B is the reference building class according to the Regulation on the Energy Performance of Buildings (KENAK), which for older buildings it indicates that they have been properly upgraded to have a comparable performance with buildings built after 2012. Similar targets existed in the 2022 Action Plan and now a much more ambitious target is added for municipal buildings to reach $90\%$ .
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
 
 Of course, these targets are quite ambitious given that most buildings in Athens are quite old, and the current rate of energy upgrades is insufficient to reach the 2030 targets. Assuming that the past energy performance certificates mix in the buildings of the Municipality of Athens are close to those of the Region of Attica²⁹, it is estimated that in 2022 over 60% of the total area of the residential buildings of the Municipality of Athens were classified in the three lowest energy classes, E, Z, and H. This share is approximately 28% for tertiary buildings and 23% for public buildings for 2022. In contrast, the corresponding area percentage for buildings classified in class B and above is approximately 6% for residential buildings, 9% for tertiary buildings, and 9.7% for public buildings.
 
@@ -1942,14 +1366,6 @@ Heat pumps are less widespread, having been installed in just 0.6% of Greek home
 
 ²⁹ https://bpes.ypeka.gr/wp-content/uploads/2023_06_30_ETHISSIA_EKTHESI_STATISTIKON_ATFOTELSMATON.pdf
 ³⁰ https://www.statistics.gr/documents/20181/18074233/GreeceinFigures_2023Q4_EN.pdf/1e72c05a-0802-1b9d-aca0-dbcb5be5d355
-
-#
-
-OFT OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 rate in heat consumption reaches $30\%$ for all buildings within the Municipality, with a greater emphasis on buildings in the tertiary sector.
 
@@ -1971,14 +1387,6 @@ Table 39. Overview of impact pathways - Built environment (B-1.1.2)
 | Governance & politics       | Promotional campaigns and                                                                                                          | Support measures for the construction of                                                                                          | 98 kt CO2e                                                                                            |                                                                                                                                                                                      |
 |                             | e-economy                                                                                                                          | e-economy                                                                                                                         |                                                                                                       |                                                                                                                                                                                      |
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 | Learning & skills         | rewards for energy upgrades Support programmes for the adoption of heat pumps and solar water heaters | new buildings with near zero energy consumption (category A+)                                                                                    | (energy efficient lighting fixtures & devices in buildings within the Municipality) 1 kt CO2e (construction of new buildings with energy class A+ instead of A) | Better thermal comfort and conditions inside buildings (especially with extreme temperatures becoming more intense and frequent in summer) |
 | ------------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | Social innovation         | Measures to tackle energy poverty                                                                     | Creation of municipal housing stock with zero greenhouse gas emissions                                                                           |                                                                                                                                                                 |                                                                                                                                            |
@@ -1994,9 +1402,6 @@ Sustainable and smart mobility is an important goal for the Municipality of Athe
 Although the Municipality of Athens does not have jurisdiction over its major avenues, it can play an important role by intervening in neighbourhoods. For example, one of the most important interventions, which is also a recent initiative of the municipal authority, is the creation of 15-minute neighbourhoods in order to reduce the need for motorised travel and enable citizens to meet most of their needs by commuting within short distances from their home. Measures that are currently examined to support 15-minute neighbourhoods include local traffic regulations at neighbourhood level, the designation of 30 km/h traffic zones and shared space for cars, bicycles, and pedestrians, as well as bicycle parking at public transport stations.
 
 Similarly, the Superblock model will be used to create light-traffic streets within the neighbourhoods of Athens, unlocking urban spaces for pedestrians, cyclists, green infrastructure and other uses. In the coming months, Superblock will be piloted in an Athens neighbourhood through the ASCEND project, funded and supported by the NetZeroCities programme (see action A.T.1 in Module B-2). In parallel with these interventions, the Municipality's sidewalks will be upgraded and widened, while networks of bicycle paths will be constructed to facilitate and boost walking and cycling.
-CITY OF ATHENA
-
-Climate Neutrality Action Plan
 
 For the planning and implementation of these actions, relevant studies that have already been done for a more sustainable transport and mobility system in Athens based on walking and cycling will be used. These studies include the Sustainable Urban Mobility Plan of the Municipality of Athens (2021), the analysis of the walkability of Athens by the NTUA Sustainable Mobility Unit (2024), as well as the analysis of the Norman Foster Institute for Athens (2024). The latest analysis focuses on measures for light-traffic roads and green infrastructure in the neighbourhood of Kypseli and is available in Annex A.
 
@@ -2007,14 +1412,6 @@ In addition, to the measures for discouraging private car traffic, a comprehensi
 In terms of urban transport, one of the most decisive improvements will be the completion of Metro Line 4, which will serve a large part of the Municipality that does not yet have access to a metro station. Officially, the line is expected to be completed in 2030, but it is not unlikely to be further delayed based on latest statements and developments. Although the Municipality does not participate in the operation of urban transport, it will play a decisive role in improving the conditions so that a part of car mobility is replaced by public transport. The use of public transport can be boosted through awareness-raising actions and information campaigns organised by the Municipality as well as through other measures in collaboration with OASA such as, for example, readjustment and optimisation of bus routes in areas with poor connection. Additionally, the public transport operating hours can be extended and the regulation for the transfer of bicycles and micro-mobility units on public transport can be changed. At the same time, the Municipality has already launched the creation of municipal transport through electric buses, which will serve visitors and residents of the city.
 
 Apart from reducing traffic load, another important step is the electrification of cars, motorcycles, and buses. As of May 2024, 140 electric buses have been acquired in Attica, with some of them already serving the Municipality of Athens (together with the existing electric trolleys). This number is expected to increase in the coming years together with the support of the Municipality of Athens through
-
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
 
 appropriate programmes in collaboration with OASA and based on its plan for sustainable development $^{31}$ . The goal is for $50\%$ of buses to be electric by 2030.
 
@@ -2035,14 +1432,6 @@ Table 40. Overview of impact pathways - Transport &amp; mobility (B-1.1.3)
 
 https://oasa.b-cdn.net/wp-content/uploads/2024/04/GR_OASA_SUSTAINABILITY_REPORT_2022_webl.pdf
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 | Governance & politics     | Measures to reduce traffic and parking in the centre of Athens Measures to optimise the supply chain of businesses within the Municipality (e.g., truck loading and unloading program) | Zero emission zone in the city centre for heavy vehicles Coordination actions with neighbouring municipalities to limit transboundary traffic | 28 kt CO2e (electrification of cars and motorcycles) 5 kt CO2e (bus electrification) 9 kt CO2e (optimised supply chain) | Reduced road traffic accidents and deaths Reduced commuting time Reduced fuel costs (especially when combined with the provision of cheap electricity) Decentralised neighbourhood development across municipal units (e.g., enhanced local commercial activity) Optimised supply chain and reduced costs and times for truck and van deliveries |
 | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Social innovation         | Creating pilot Superblocks Creating 15-minute pilot neighbourhoods                                                                                                                     | Expanding the Superblock programme to other neighbourhoods                                                                                    |                                                                                                                         |                                                                                                                                                                                                                                                                                                                                                  |
@@ -2057,9 +1446,6 @@ Climate Neutrality Action Plan
 Reducing waste production and increasing recycling and composting are necessary conditions for reducing greenhouse gas emissions from waste generated within the Municipality of Athens. Composting in particular is of key importance since the decomposition of organic waste in landfills is the main source of emissions from the waste sector. At the same time, it will allow the Municipality to move away from the linear model of export, production, use, disposal, and treatment of waste and to support a more circular and sustainable model of material use.
 
 The Municipality's priority for 2030 is to treat over $85\%$ of waste within its territory through recycling and composting processes. This target is translated into individual targets per waste stream, namely $90\%$ recycling of paper, glass, and metals; $60\%$ recycling of plastic; and $85\%$ composting of organic waste.
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
 
 This is a very significant change from the current situation, since the general recycling rate for 2023 was 8.3% and the composting rate was about 3% (of the total amount of organic waste), based on estimates by the Municipality's Cleaning and Recycling Department.
 
@@ -2077,14 +1463,6 @@ Complementary to these awareness measures, the Municipality of Athens will creat
 
 An overview of the impact pathways for waste and the circular economy can be seen in Table 41.
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 41. Overview of impact pathways – Waste &amp; circular economy (B-1.1.4)
 
 | Systemic Levers             | Early Changes (1-2 Years)                                                                                                                                  | Late Outcomes (3-4 years)                                                                                                                                 | Direct Impacts (2030 emission reductions) \*        | Indirect Impacts (Co-benefits)                                                                                                                                                                                                                                                                                                                                                    |
@@ -2097,11 +1475,6 @@ Table 41. Overview of impact pathways – Waste &amp; circular economy (B-1.1.4)
 | Financing                   | Support for businesses (especially restaurants) to acquire small bins for composting                                                                       | Supporting citizens to acquire small bins for composting                                                                                                  |                                                     |                                                                                                                                                                                                                                                                                                                                                                                   |
 
 - NZC economic model results (Material Economics, 2020) for the Municipality of Athens [simulation: July 2024]. The calculation was made by comparing a scenario leading to over 80% reduction in emissions in 2030 with a scenario without climate policy after 2019 (Business as Usual).
-  CITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-C
 
 # 3.1.6. Impact pathways for the green infrastructure and NBS
 
@@ -2118,14 +1491,6 @@ At the same time, the climate crisis and the high air pollution in Athens presen
 In addition, in cooperation with educational and lifelong learning institutions, the Municipality will promote the training of young professionals to work in integrated green-blue infrastructure approaches. At the same time, retraining programmes for more experienced professionals in the field will be developed, thereby strengthening the city's ability to respond to environmental challenges and create sustainable, green solutions for the future. The Municipality will also seek to strengthen the human resources and capabilities of the Department of Greenery and Urban Fauna as well as the training of its staff in nature-based solutions. The Municipality is also actively involved in many research projects on green infrastructure and improving the resilience of Athens to climate change and will seek to participate in even more in the future.
 
 It is noted that, although these infrastructures and actions will be an important first step in shielding the city against the climate crisis, it is clear that larger-scale projects and based on an even more comprehensive design are needed to address the ever-increasing challenges in Athens and to significantly improve its citizens' quality of life. In addition to individual projects, it will be necessary to connect areas with green continuous corridors and ventilation and cooling projects of the city with linear
-
-#
-
-OFT OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 parks, even larger green and blue infrastructure, as well as openings in areas that face serious problems from the urban heat island effect. For example, a 'green defence' zone could be created against heat waves and pollution, especially along Kifisos / Ethniki, while hill resilience projects and green routes can be done in Lycabettus, Plato Academy, Goudi, Skouze Hill, in the park of the Evelpidon School, etc.
 
@@ -2144,14 +1509,6 @@ Table 42. Overview of impact pathways - Green infrastructure &amp; NBS (B-1.1.5)
 | New staff and infrastructure in the Department of Greenery and Urban Wildlife as well as training in nature-based solutions | Healthier ecosystems and soil in the Municipality that further supports sequestration of greenhouse gas emissions |
 | Social innovation                                                                                                           | Campaigns to increase public participation in tree planting and                                                   | Ecotourism activities in Athens with the support of                                                                                                  |
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 | Democracy & participation | protection as well as other nature-based solutions                                                               | relevant stakeholders                                                                                                                     |
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 |                           | Collaboration with stakeholders to study and monitor the resilience of Athens' trees (e.g., through GIS systems) | Biodiversity monitoring programmes (e.g., through partnerships with relevant NGOs and citizen science activities)                         |
@@ -2167,9 +1524,6 @@ The remaining emissions based on the CCC targets of the Municipality of Athens a
 Also, despite all interventions to strengthen walking and cycling within the Municipality, transboundary traffic via the main avenues through the Municipality of Athens will not be able to easily reduce. It is
 
 https://www.ethnos.gr/greece/article/321958/grammh4metroexopragmatikotoxronodiagrammatonoktoetonleeitoypoyrgeiopaeipiooisohparadoshths
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
 
 noteworthy that these emissions are quite significant and correspond to approximately 65% of the total emissions for transport and mobility (BASIC level, see Google EIE, 2024). Part of these can be reduced by measures that discourage entering or passing through the Municipality by car (e.g., reduced availability of parking spaces in the centre of Athens), but most of them should be reduced by a more integrated transport planning with the participation of the municipalities of the Central Sector of Athens or at the regional level. The Municipality of Athens will seek such collaborations with all relevant levels of government in Greece (Municipalities, Regions, Ministry of Infrastructure and Transport) and will offer expertise to neighbouring Municipalities to reduce their emissions from commuting (e.g., in the context of the Athens Energy Alliance).
 
@@ -2188,11 +1542,6 @@ Of these solutions, emissions storage in the built environment and sequestration
 There are several impact pathways (Section 3.1.6) and actions (Section 3.2.5) that could lead to the absorption of part of the remaining emissions such as the planting of 35,000 trees (or, conditionally, more) by 2030 and the expansion of green infrastructure, such as in the area of Elaionas in the context of Double Redevelopment. Although these measures will have a significant impact on the city's living conditions, the absorption of emissions will cover a minimal part of the 477 kt target CO₂e. Based on the calculations of the European LIFE programme tool CLIMATREE (2019), the average absorption per (young) tree for various tree varieties in Athens is 20-24 kg CO₂ per year. Thus, the 35,000 trees will absorb about 0.77 kt CO₂e per year, which is a very small part of the total target.
 
 Given the above, it is necessary to carry out afforestation and reforestation actions outside the Municipality of Athens. Such actions could primarily be done in the wider area around Athens within the
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-C
 
 Attica Region, since over 37% of Attica's forests (700,000 acres) have burned from 2017 to 2024³³. Assuming that one acre of trees absorbs about 2-5 t CO₂e depending on the type of tree and the planting density (LIFE CLIMATREE, 2019), the residual emissions of 477 kt CO₂e will require approximately 100,000-240,000 hectares of reforestation, which corresponds almost to the area burned in 2024 or 14-34% of the forest hectares burned in the past eight years in Attica.
 
@@ -2208,14 +1557,6 @@ In any case, all possible offsetting and carbon sequestration methods for the re
 
 ³³ https://meteo.gr/article_view.cfm?entryID=3355
 ³⁴ https://ypen.gov.gr/xekina-to-megalytero-programma-anadasoseon-stin-ellada/
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 # 3.2. Module B2 – Climate Neutrality Portfolio Design
 
@@ -2236,20 +1577,10 @@ Table 43. Overview of actions - Energy systems (B-2.1.1)
 | A.E.3 | Campaign to promote the installation of RES in buildings within the Municipality             | Promotion campaigns and supporting measures to citizens for the installation of photovoltaic panels and storage systems on their buildings (e.g., using Solar Map developed by the Municipality).                                                                                                                                                                                             |
 | A.E.4 | Athenian Energy Alliance                                                                     | An initiative taken by the mayor of Athens, the foundations were laid for the creation of the Athenian Energy Alliance, with the participation of 17 neighbouring municipalities. The main goal of the Athenian Energy Alliance will be the production of green energy and its utilisation in a way that reduces the energy costs of vulnerable households of the cooperating municipalities. |
 
-Climate Neutrality Action Plan
-
 | A.E.5 | Climate and Energy Academy                                                                                               | In the context of the Athens Energy Alliance, the Municipality of Athens aims to train executives of the cooperating local authorities in new technological developments, institutional frameworks, and financial tools. Training in this Climate and Energy Academy will be provided by academic scientists as well as actors who have stood out in the energy market. |
 | ----- | ------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | A.E.6 | Energy Community of the Municipality of Athens "Faethon"                                                                 | The Municipality of Athens will develop an energy community for the production of clean energy and its distribution to citizens and, above all, to vulnerable households. The municipality is currently targeting the purchase of the first 20 MW for the energy community of the municipality.                                                                         |
 | A.E.7 | Redistribution of revenues from electricity production through the Municipality's photovoltaics to vulnerable households | Investigating ways in which the Municipality could redistribute income production of electricity from PV of municipal buildings to vulnerable households, reducing their energy costs.                                                                                                                                                                                  |
-
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 44. Action description - A.E.1
 
@@ -2270,14 +1601,6 @@ Table 44. Action description - A.E.1
 |                                                             | Total costs (€)                      | €5,000,000                                                                                                                                                                                                                                                                                |
 | Data source                                                 |                                      | Integrated Territorial Investment for the Municipality of Athens v. v. 07/2024 (line 7)                                                                                                                                                                                                   |
 
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 45. Action description - A.E.2
 
 | Installation of photovoltaic systems in private and public buildings within the Municipality |                                      |                                                                                                                                                                                                                                                                                                                                                                                |
@@ -2296,14 +1619,6 @@ Table 45. Action description - A.E.2
 |                                                                                              | Renewable energy generated (MWh)     | 78,000                                                                                                                                                                                                                                                                                                                                                                         |
 |                                                                                              | Total costs (€)                      | €110,000,000                                                                                                                                                                                                                                                                                                                                                                   |
 | Data source                                                                                  |                                      | New proposals - v. 07/2024                                                                                                                                                                                                                                                                                                                                                     |
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 46. Action description - A.E.3
 
@@ -2324,14 +1639,6 @@ Table 46. Action description - A.E.3
 |                                                                                  | Total costs (€)                      | €500,000                                                                                                                                                                                                                                                                                                                                                                                               |
 | Data source                                                                      |                                      | Integrated Territorial Investment for the Municipality of Athens v. 07/2024 (line 7)                                                                                                                                                                                                                                                                                                                   |
 
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 47. Action description - A.E.4
 
 | Athenian Energy Alliance    |                                      |                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -2350,14 +1657,6 @@ Table 47. Action description - A.E.4
 |                             | Renewable energy generated (MWh)     | There is no estimate yet                                                                                                                                                                                                                                                                                                                                                                    |
 |                             | Total costs (€)                      | There is no estimate yet                                                                                                                                                                                                                                                                                                                                                                    |
 | Data source                 |                                      | https://energyalliance.cityofathens.gr/                                                                                                                                                                                                                                                                                                                                                     |
-
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 48. Action description - A.E.5
 
@@ -2378,14 +1677,6 @@ Table 48. Action description - A.E.5
 |                             | Total costs (€)                      | There is no estimate yet                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | Data source                 |                                      | https://www.cityofathens.gr/enarxi-tis-akadimias-energeias/                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 49. Action description - A.E.6
 
 | Energy Community of the Municipality of Athens (Faethon) |                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -2400,24 +1691,12 @@ Table 49. Action description - A.E.6
 |                                                          | Action scale       | Throughout the territory of the Municipality and in neighbouring municipalities                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |                                                          | Funders            | For the first 20 MW (estimated cost approximately €16,000,000), 80% will be a loan and 20% (€3,200,000) will be covered by the Municipality through the Integrated Territorial Investment. The total cost for all required energy communities for the Municipality of Athens (270 MW) is estimated at approximately €216,000,000.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
-
 | Impact & cost | GHG emissions reduction/sink (tCO\_{2e}) | 16,800                                                                                                                                                       |
 | ------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 |               | Removed/substituted energy (MWh)         | 28,000                                                                                                                                                       |
 |               | Renewable energy generated (MWh)         | 28,000                                                                                                                                                       |
 |               | Total costs (€)                          | €16,000,000                                                                                                                                                  |
 | Data source   |                                          | Integrated Territorial Investment for the Municipality of Athens v. 07/2024 (line 76) – https://www.cityofathens.gr/dimos-athinaion-idrysi-tis-energeiaki-2/ |
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 50. Action description - A.E.7
 
@@ -2438,14 +1717,6 @@ Table 50. Action description - A.E.7
 |                                                                                                                          | Total costs (€)                      | €200,000                                                                                                                                                                                                                                                                                                                                         |
 | Data source                                                                                                              |                                      | New proposals - v. 07/2024                                                                                                                                                                                                                                                                                                                       |
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 # 3.2.2.Actions related to the built environment
 
 Table 51 provides an overview of interventions that are already planned or soon-to-be planned for the built environment. Then, Tables 52-59 contain more details for each action, including the type of intervention and information on the relevant strategy, gas emissions sector, scale of the intervention, actors, amount of greenhouse gas emissions reductions, and estimated associated costs.
@@ -2462,14 +1733,6 @@ Table 51. Overview of actions - Built environment (B-2.1.2)
 | A.B.6 | Energy upgrading of cultural buildings                                          | Renovation and energy upgrade of the "Eleftherios Venizelos" Museum and the "Aggeliki Hatzimichalis" Museum of Folk Art and Tradition. Energy upgrade of building D2, radio station 98.4 in Technopolis.                                                                                                                                           |
 | A.B.7 | Energy Poverty Alleviation Office                                               | The Energy Poverty Alleviation Office is expected to be an emblematic support centre for the city's energy-vulnerable residents. The Office will contribute to the identification of energy-vulnerable households, the assessment of the magnitude of their problems, and the provision of appropriate advice, interventions, and financial tools. |
 | A.B.8 | Smart city actions to support energy management                                 | This includes a range of services that can potentially be used to support energy upgrades, such as digital smart neighbourhood services, a personalised citizen-centric city assistant, and network infrastructure upgrades.                                                                                                                       |
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 52. Action description - A.B.1
 
@@ -2490,14 +1753,6 @@ Table 52. Action description - A.B.1
 |                                                                                 | Total costs (€)                      | €94,950,000                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | Data source                                                                     |                                      | Integrated Territorial Investment for the Municipality of Athens - v. 07/2024 (line 7, deducting the costs for actions A.E.1 & A.E.3). Technical Programme 2024 of the Municipality of Athens (codes: 7311.107, 7331.351, 7331.375, 7331.355, 7331.380).                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 53. Action description - A.B.2
 
 | Upgrading the energy efficiency of street lighting |                                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
@@ -2516,14 +1771,6 @@ Table 53. Action description - A.B.2
 |                                                    | Renewable energy generated (MWh)     | -                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |                                                    | Total costs (€)                      | €53,650,000                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | Data source                                        |                                      | Climate Action Plan 2022 of Athens                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 54. Action description - A.B.3
 
@@ -2544,14 +1791,6 @@ Table 54. Action description - A.B.3
 |                               | Total costs (€)                      | €1,300,000                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Data source                   |                                      | Integrated Territorial Investment for the Municipality of Athens - v. 07/2024 (line 24) https://www.elanet.gr/wp-content/uploads/files/sitefiles/draseis/PEP_Attikis_Green/GREEN_TOOLKIT_3h_trop_210722.pdf                                                                                                                                                                                                          |
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 55. Action description - A.B.4
 
 | Energy upgrade of historic buildings |                                      |                                                                                                                                                                        |
@@ -2570,14 +1809,6 @@ Table 55. Action description - A.B.4
 |                                      | Renewable energy generated (MWh)     | -                                                                                                                                                                      |
 |                                      | Total costs (€)                      | €2,824,473                                                                                                                                                             |
 | Data source                          |                                      | Integrated Territorial Investment for the Municipality of Athens - v. 07/2024 (lines 80, 50)                                                                           |
-
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 56. Action description - A.B.5
 
@@ -2598,14 +1829,6 @@ Table 56. Action description - A.B.5
 |                                          | Total costs (€)                      | €2,000,000                                                                                                                                                                                                                            |
 | Data source                              |                                      | Integrated Territorial Investment for the Municipality of Athens - v. 07/2024 (line 78)                                                                                                                                               |
 
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 57. Action description - A.B.6
 
 | Energy upgrading of cultural buildings |                                      |                                                                                                                                                                                                          |
@@ -2624,14 +1847,6 @@ Table 57. Action description - A.B.6
 |                                        | Renewable energy generated (MWh)     | -                                                                                                                                                                                                        |
 |                                        | Total costs (€)                      | €1,972,536                                                                                                                                                                                               |
 | Data source                            |                                      | Integrated Territorial Investment for the Municipality of Athens - v. 07/2024 (lines 51 and 52) and Technical Programme 2024 of the Municipality of Athens (code 7331.380 for Technopolis)               |
-
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 58. Action description - A.B.7
 
@@ -2652,14 +1867,6 @@ Table 58. Action description - A.B.7
 |                                   | Total costs (€)                      | €1,600,000                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | Data source                       |                                      | Integrated Territorial Investment for the Municipality of Athens - v. 07/2024 (line 6)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 59. Action description - A.B.8
 
 | Smart city actions to support energy management |                                      |                                                                                                                                                                                                                                |
@@ -2679,14 +1886,6 @@ Table 59. Action description - A.B.8
 |                                                 | Total costs (€)                      | €9,650,000                                                                                                                                                                                                                     |
 | Data source                                     |                                      | Smart city projects 06/2024 (projects: 3, 5, 6)                                                                                                                                                                                |
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 # 3.2.3.Actions related to transport and mobility
 
 Table 60 provides an overview of interventions that are already planned or soon-to-be planned for transport and mobility. Then, Tables 61-70 contain more details for each action, including the type of intervention and information on the relevant strategy, gas emissions sector, scale of the intervention, actors, amount of greenhouse gas emissions reductions, and estimated associated costs.
@@ -2705,18 +1904,8 @@ Table 60. Overview of actions - Transport &amp; Mobility (B-2.1.3)
 | A.T.8 | Integrated management system for micromobility and charging stations                             | Smart system for the management of micromobility vehicles and charging stations in the Municipality of Athens.                                                                                                                                                                                                                                                  |
 | A.T.9 | Public transportation with 10 minibuses                                                          | Municipal public transportation with 10 electric buses to provide access to citizens and visitors to points of interest within the Municipality.                                                                                                                                                                                                                |
 
-Climate Neutrality Action Plan
-
 | A.T.10 | Preparation of a study to optimise waste collection routes | The aim is for waste collection vehicles to be at least 80% full at the end of their route. |
 | ------ | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 61. Action description - A.T.1
 
@@ -2737,14 +1926,6 @@ Table 61. Action description - A.T.1
 |                             | Total costs (€)                      | €517,938                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | Data source                 |                                      | New proposals - 06/2024                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 62. Action description - A.T.2
 
 | Creating green routes       |                                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
@@ -2763,14 +1944,6 @@ Table 62. Action description - A.T.2
 |                             | Renewable energy generated (MWh)     | -                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |                             | Total costs (€)                      | €21,500,000                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Data source                 |                                      | Technical Programme 2024 of the Municipality of Athens (codes: 7333.121, 7333.122, 7333.123)                                                                                                                                                                                                                                                                                                                                                                                          |
-
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 63. Action description - A.T.3
 
@@ -2791,14 +1964,6 @@ Table 63. Action description - A.T.3
 |                                                                                | Total costs (€)                      | €19,770,489                                                                                                                                                                                                                                                                                                                                                                 |
 | Data source                                                                    |                                      | Technical Programme 2024 of the Municipality of Athens (codes: 7323.015, 7323.016)                                                                                                                                                                                                                                                                                          |
 
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 64. Action description - A.T.4
 
 | Utilisation of the Walkable study for the targeted strengthening of pedestrian traffic in Athens |                                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
@@ -2814,14 +1979,6 @@ Table 64. Action description - A.T.4
 |                                                                                                  | Funders                              | Municipality of Athens and Sustainable Mobility Unit NTUA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Impact & cost                                                                                    | GHG emissions reduction/sink (tCO2e) | There is no estimate yet                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |                                                                                                  | Removed/substituted energy (MWh)     | There is no estimate yet                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 65. Action description - A.T.5
 
@@ -2842,14 +1999,6 @@ Table 65. Action description - A.T.5
 |                                       | Total costs (€)                      | €2,500,000                                                                                                                                                                                                               |
 | Data source                           |                                      | Integrated Territorial Investment for the Municipality of Athens v. 07/2024 (line 2)                                                                                                                                     |
 
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 66. Action description - A.T.6
 
 | Vehicle access control and policing system |                                      |                                                                                                           |
@@ -2868,14 +2017,6 @@ Table 66. Action description - A.T.6
 |                                            | Renewable energy generated (MWh)     | -                                                                                                         |
 |                                            | Total costs (€)                      | €3,000,000                                                                                                |
 | Data source                                |                                      | Smart city projects 06/2024 (project 8)                                                                   |
-
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 67. Action description - A.T.7
 
@@ -2896,14 +2037,6 @@ Table 67. Action description - A.T.7
 |                                    | Total costs (€)                      | €3,000,000                                                                                                                                                                                    |
 | Data source                        |                                      | Integrated Territorial Investment for the Municipality of Athens v. 07/2024 (line 40)                                                                                                         |
 
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 68. Action description - A.T.8
 
 | Integrated management system for micromobility and charging stations |                                      |                                                                                                                |
@@ -2922,14 +2055,6 @@ Table 68. Action description - A.T.8
 |                                                                      | Renewable energy generated (MWh)     | -                                                                                                              |
 |                                                                      | Total costs (€)                      | €2,000,000                                                                                                     |
 | Data source                                                          |                                      | Smart city projects 06/2024 (project 4)                                                                        |
-
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 69. Action description - A.T.9
 
@@ -2950,14 +2075,6 @@ Table 69. Action description - A.T.9
 |                                    | Total costs (€)                      | €2,000,000                                                                                                                                                                                                                                    |
 | Data source                        |                                      | Integrated Territorial Investment for the Municipality of Athens v. 07/2024 (line 73)                                                                                                                                                         |
 
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 70. Action description - A.T.10
 
 | Preparation of a study to optimise waste collection routes |                                      |                                                                                                                                                                                                                                                                       |
@@ -2977,14 +2094,6 @@ Table 70. Action description - A.T.10
 |                                                            | Total costs (€)                      | €37,200                                                                                                                                                                                                                                                               |
 | Data source                                                |                                      | New proposals - 06/2024                                                                                                                                                                                                                                               |
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 # 3.2.4.Actions related to waste and the circular economy
 
 Table 71 provides an overview of interventions that are already planned or soon-to-be planned for waste and circular economy. Then, Tables 72-80 contain more details for each action, including the type of intervention and information on the relevant strategy, gas emissions sector, scale of the intervention, actors, amount of greenhouse gas emissions reductions, and estimated associated costs.
@@ -3002,14 +2111,6 @@ Table 71. Overview of actions - Waste &amp; Circular Economy (B-2.1.4)
 | A.W.7 | Increase in urban mining                                                   | Cooperation with the private sector and in particular with the actors of the social and solidarity economy for urban mining (recovery of useful materials from waste) and for repair cafes.                                 |
 | A.W.8 | Separate collection of hazardous household waste                           | The Department of Cleaning and Recycling, participating in the European LIFE programme, is pilot testing the separate collection of hazardous household waste from the neighbourhoods of the 7th municipal units of Athens. |
 | A.W.9 | Strengthening the human resources of the Cleaning and Recycling Department | Recruiting 20 new drivers and 40 waste collection workers to support organic waste collection.                                                                                                                              |
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 72. Action description - A.W.1
 
@@ -3030,14 +2131,6 @@ Table 72. Action description - A.W.1
 |                                                                          | Total costs (€)                      | €27,483,298                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | Data source                                                              |                                      | Technical Programme 2024 of the Municipality of Athens (code: 7326.043)                                                                                                                                                                                                                                                                                                                                                           |
 
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 73. Action description - A.W.2
 
 | Supply of ecological composters |                                      |                                                                                               |
@@ -3056,14 +2149,6 @@ Table 73. Action description - A.W.2
 |                                 | Renewable energy generated (MWh)     | -                                                                                             |
 |                                 | Total costs (€)                      | €16,368                                                                                       |
 | Data source                     |                                      | Technical Programme 2024 of the Municipality of Athens (code: 7341.052)                       |
-
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 74. Action description - A.W.3
 
@@ -3084,14 +2169,6 @@ Table 74. Action description - A.W.3
 |                                                     | Total costs (€)                      | €250,000                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | Data source                                         |                                      | Technical Programme 2024 of the Municipality of Athens (codes: 7413.119, 7311.120)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 75. Action description - A.W.4
 
 | Waste transfer station and new waste trucks |                                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
@@ -3110,14 +2187,6 @@ Table 75. Action description - A.W.4
 |                                             | Renewable energy generated (MWh)     | -                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |                                             | Total costs (€)                      | €16,939,106                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | Data source                                 |                                      | Technical Programme 2024 of the Municipality of Athens (code: 7341.035)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 76. Action description - A.W.5
 
@@ -3138,14 +2207,6 @@ Table 76. Action description - A.W.5
 |                                                                   | Total costs (€)                      | €100,000                                                                                                                                                                                                                                                                                                                                                                                                             |
 | Data source                                                       |                                      | Climate Action Plan 2022 of Athens                                                                                                                                                                                                                                                                                                                                                                                   |
 
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 77. Action description - A.W.6
 
 | Update of the plan for sustainable nutrition |                                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
@@ -3164,14 +2225,6 @@ Table 77. Action description - A.W.6
 |                                              | Renewable energy generated (MWh)     | -                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |                                              | Total costs (€)                      | €115,625                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Data source                                  |                                      | https://fusilli-project.eu                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 78. Action description - A.W.7
 
@@ -3192,14 +2245,6 @@ Table 78. Action description - A.W.7
 |                             | Total costs (€)                      | There is no estimate yet                                                                                                                                                      |
 | Data source                 |                                      | New proposals - 06/2024                                                                                                                                                       |
 
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 79. Action description - A.W.8
 
 | Separate collection of hazardous household waste |                                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -3218,14 +2263,6 @@ Table 79. Action description - A.W.8
 |                                                  | Renewable energy generated (MWh)     | -                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |                                                  | Total costs (€)                      | There is no estimate yet                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Data source                                      |                                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 80. Action description - A.W.9
 
@@ -3246,14 +2283,6 @@ Table 80. Action description - A.W.9
 |                                                                            | Total costs (€)                      | There is no estimate yet                                                                       |
 | Data source                                                                |                                      | New proposals - v. 07/2024                                                                     |
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 # 3.2.5.Actions related to green infrastructure &amp; NBS
 
 Table 81 provides an overview of interventions that are already planned or soon-to-be planned for waste and circular economy. Then, Tables 82-90 contain more details for each action, including the type of intervention and information on the relevant strategy, gas emissions sector, scale of the intervention, actors, amount of greenhouse gas emissions reductions, and estimated associated costs.
@@ -3271,18 +2300,8 @@ Table 81. Overview of actions - Green infrastructure &amp; NBS (B-2.1.5)
 | A.G.7 | Tree species resilience and biodiversity study                                                                                 | Study of the resilience of tree species in collaboration with the Agricultural University of Athens and based on climate change data. Monitoring through innovative systems and applications (automatic recorders, participation of volunteers from environmental organisations, etc.).                         |
 | A.G.8 | GreenInCities: A holistic approach to address urban inequality                                                                 | The European GreenInCities project aims to address inequalities in urban regeneration strategies by prioritising public awareness, going beyond conventional greening methods, and incorporating cutting-edge technology. In Athens, the pilot location is Prophet Ilias Square in the Rizoupoli neighbourhood. |
 
-Climate Neutrality Action Plan
-
 | A.G.9 | Cooling Havens: Water-Powered Neighbourhood Cooling and Engagement Stations | The programme addresses the escalating climate crisis in Athens by installing water-powered public interventions to create new blue and green infrastructure. |
 | ----- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 82. Action description - A.G.1
 
@@ -3303,14 +2322,6 @@ Table 82. Action description - A.G.1
 |                                                                                                            | Total costs (€)                      | €80,695,995                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | Data source                                                                                                |                                      | Technical Programme 2024 of the Municipality of Athens (codes: 7332.059, 7332.061)                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 83. Action description - A.G.2
 
 | Public spaces and landscaping projects in the wider area of the Double Redevelopment and the Naval Fort in the area of Elaionas |                                      |                                                                                                                                                                                                                                             |
@@ -3329,14 +2340,6 @@ Table 83. Action description - A.G.2
 |                                                                                                                                 | Renewable energy generated (MWh)     | -                                                                                                                                                                                                                                           |
 |                                                                                                                                 | Total costs (€)                      | €37,200,000                                                                                                                                                                                                                                 |
 | Data source                                                                                                                     |                                      | Technical Programme 2024 of the Municipality of Athens (code: 7332.057)                                                                                                                                                                     |
-
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 84. Action description - A.G.3
 
@@ -3357,14 +2360,6 @@ Table 84. Action description - A.G.3
 |                                                          | Total costs (€)                      | €4,000,000                                                                                                                                                                                                                                                                               |
 | Data source                                              |                                      | Technical Programme 2024 of the Municipality of Athens (code: 7322.087) and Integrated Territorial Investment v. 07/2024 (line 16)                                                                                                                                                       |
 
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 85. Action description - A.G.4
 
 | Highlighting water resources and natural springs of Athens |                                      |                                                                                                                                                                                                                                                       |
@@ -3383,14 +2378,6 @@ Table 85. Action description - A.G.4
 |                                                            | Renewable energy generated (MWh)     | -                                                                                                                                                                                                                                                     |
 |                                                            | Total costs (€)                      | €800,000                                                                                                                                                                                                                                              |
 | Data source                                                |                                      | Integrated Territorial Investment for the Municipality of Athens v. 07/2024 (line 64)                                                                                                                                                                 |
-
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 86. Action description - A.G.5
 
@@ -3411,14 +2398,6 @@ Table 86. Action description - A.G.5
 |                                                                   | Total costs (€)                      | There is no estimate yet                                                                                                                                                                                                                                                    |
 | Data source                                                       |                                      | New proposals - 06/2024                                                                                                                                                                                                                                                     |
 
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 87. Action description - A.G.6
 
 | Modernisation of the infrastructure and equipment of the Department of Greenery and Urban Wildlife |                                      |                                                                                                                                                                                                                                                                              |
@@ -3437,14 +2416,6 @@ Table 87. Action description - A.G.6
 |                                                                                                    | Renewable energy generated (MWh)     | -                                                                                                                                                                                                                                                                            |
 |                                                                                                    | Total costs (€)                      | €5,000,000                                                                                                                                                                                                                                                                   |
 | Data source                                                                                        |                                      | Integrated Territorial Investment for the Municipality of Athens v. 07/2024 (line 71)                                                                                                                                                                                        |
-
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 88. Action description - A.G.7
 
@@ -3465,14 +2436,6 @@ Table 88. Action description - A.G.7
 |                                                | Total costs (€)                      | There is no estimate yet.                                                                                                                                                                                                                                                               |
 | Data source                                    |                                      | New proposals - 06/2024                                                                                                                                                                                                                                                                 |
 
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 89. Action description - A.G.8
 
 | GreenInCities: A holistic approach to address urban inequality |                                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
@@ -3491,14 +2454,6 @@ Table 89. Action description - A.G.8
 |                                                                | Renewable energy generated (MWh)     | -                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |                                                                | Total costs (€)                      | €331,931                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | Data source                                                    |                                      | https://www.greenincities.eu                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 90. Action description - A.G.9
 
@@ -3519,12 +2474,6 @@ Table 90. Action description - A.G.9
 |                                                                             | Total costs (€)                      | €6,248,417                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | Data source                                                                 |                                      | https://www.urban-initiative.eu/calls-proposals/second-call-proposals-innovative-actions/selected-projects-eui-ia-2nd-call                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-C
-
 # 3.3. Module B-3 – Indicators for Monitoring, Evaluation and Learning
 
 Module B-3 includes a series of indicators to monitor and evaluate progress along the selected impact pathways and areas described in Module B-1. The indicators were selected according to the objectives identified in the strategic priorities of the Climate City Contract as well as based on the availability of their data for monitoring.
@@ -3543,14 +2492,6 @@ https://netzerocities.app/resource-2910
 https://kausal.tech
 https://arsinoe-project.eu
 https://www.cityofathens.gr/wp-content/uploads/2023/06/svak-dimou-athinaion-2021.pdf
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 indicators will be added in the future, such as the course of the views of the stakeholders in relation to actions of the Plan, as well as a record of the actions that come from or are mobilised by the organisations.
 
@@ -3572,14 +2513,6 @@ Table 91. Overview of Key Performance Indicators (B-3.1)
 
 https://bpes.ypeka.gr/wp-content/uploads/2023_06_30_ETHISSIA_EKTHESI_STATISTIKON_EPOTELESMATON.pdf
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 |                                                           |        |                                                                                            | Energy40for 2022 for the Region of Attica)                                                                 |     |     |      |
 | --------------------------------------------------------- | ------ | ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------- | --- | --- | ---- |
 | Buildings [A.B.7, A.A.3]                                  | I.B. 4 | Percentage of residential buildings of energy class B (measured per m2of building surface) | 6% (estimate based on data from the Ministry of Environment and Energy41for 2022 for the Region of Attica) | 10% | 20% | 30%  |
@@ -3597,25 +2530,13 @@ see previous source
 see previous source
 
 https://www.osy.gr/n-osy-ae/stolos/
-Climate Neutrality Action Plan
 
-| Waste [A.W.7, A.W.8] | I.W.4 | Organic waste reduction rate compared to 2019 | -2%
-(Directory of Sanitation and Recycling, 2023) | 0% | 15% | 30% |
+| Waste [A.W.7, A.W.8] | I.W.4 | Organic waste reduction rate compared to 2019 | -2% (Directory of Sanitation and Recycling, 2023) | 0% | 15% | 30% |
 | --- | --- | --- | --- | --- | --- | --- |
 | Green infrastructure [all sector actions] | I.G.1 | Offsetting greenhouse gas emissions through green infrastructure (kt CO\_{2e}) | - | 20 | 150 | 477 |
 | Green Infrastructure [A.G.1] | I.G.2 | New trees planted in the city (compared to 2024) | - | 10,000 | 20,000 | 35,000 |
-| Green infrastructure [A.G.2, A.G.3, A.G.4, A.G.9] | I.G.3 | Percentage of city surface coverage with green spaces or permeable surfaces | 18%
-(NFI, 2024) | 20% | 25% | 30% |
-| Green Infrastructure [A.G.8] | I.G.4 | Percentage of the city's population with access to a green space within 300 meters | 40%
-(NFI, 2024) | 45% | 55% | 70% |
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
+| Green infrastructure [A.G.2, A.G.3, A.G.4, A.G.9] | I.G.3 | Percentage of city surface coverage with green spaces or permeable surfaces | 18% (NFI, 2024) | 20% | 25% | 30% |
+| Green Infrastructure [A.G.8] | I.G.4 | Percentage of the city's population with access to a green space within 300 meters | 40% (NFI, 2024) | 45% | 55% | 70% |
 
 Table 92. Indicator metadata - I.A.1
 
@@ -3634,14 +2555,6 @@ Table 92. Indicator metadata - I.A.1
 | Is the source local or regional/national?                                                                                                 | Local                                                                                                                                |
 | Expected availability                                                                                                                     | High                                                                                                                                 |
 | Suggested collection interval                                                                                                             | Annually                                                                                                                             |
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 # 3.3.1.Indicators related to energy systems
 
@@ -3663,14 +2576,6 @@ Table 93. Indicator metadata - I.E.1
 | Expected availability                                                                                                                     | High                                                                                                                                                            |
 | Suggested collection interval                                                                                                             | Annually                                                                                                                                                        |
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 94. Indicator metadata - I.E.2
 
 | Percentage of the Municipality's electricity consumption covered by RES                                                                   |                                                                                                                                                                                                                                                                                                                    |
@@ -3691,14 +2596,6 @@ Table 94. Indicator metadata - I.E.2
 
 https://ec.europa.eu/eurostat/databrowser/bookmark/8a2c055c-f87f-40b1-b0a8-39ecf5214abe?lang=en
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 95. Indicator metadata - I.E.3
 
 | New photovoltaic systems on roofs within the Municipality and by energy communities, compared to 2019                                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
@@ -3716,14 +2613,6 @@ Table 95. Indicator metadata - I.E.3
 | Is the source local or regional/national?                                                                                                 | Local                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | Expected availability                                                                                                                     | High                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | Suggested collection interval                                                                                                             | Annually                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 # 3.3.2.Indicators related to the built environment
 
@@ -3745,14 +2634,6 @@ Table 96. Indicator metadata - I.B.1
 | Expected availability                                                                                                                     | High                                                                                                                                                                                                      |
 | Suggested collection interval                                                                                                             | Annually                                                                                                                                                                                                  |
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 97. Indicator metadata - I.B.2
 
 | Percentage of municipal buildings of energy class B                                                                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                  |
@@ -3770,14 +2651,6 @@ Table 97. Indicator metadata - I.B.2
 | Is the source local or regional/national?                                                                                                 | Local (or regional if local data is not available).                                                                                                                                                                                                                                                                                                                                                                              |
 | Expected availability                                                                                                                     | High                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | Suggested collection interval                                                                                                             | Annually (potentially and quarterly)                                                                                                                                                                                                                                                                                                                                                                                             |
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 98. Indicator metadata - I.B.3
 
@@ -3797,14 +2670,6 @@ Table 98. Indicator metadata - I.B.3
 | Expected availability                                                                                                                     | High                                                                                                                                                                                                                                                                                                                                                               |
 | Suggested collection interval                                                                                                             | Annually (potentially and quarterly)                                                                                                                                                                                                                                                                                                                               |
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 99. Indicator metadata - I.B.4
 
 | Percentage of residential buildings with energy class B                                                                                   |                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -3822,14 +2687,6 @@ Table 99. Indicator metadata - I.B.4
 | Is the source local or regional/national?                                                                                                 | Regional/national                                                                                                                                                                                                                                                                                                                                                                          |
 | Expected availability                                                                                                                     | High                                                                                                                                                                                                                                                                                                                                                                                       |
 | Suggested collection interval                                                                                                             | Annually (potentially and quarterly)                                                                                                                                                                                                                                                                                                                                                       |
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 # 3.3.3.Indicators related to transport &amp; mobility
 
@@ -3851,14 +2708,6 @@ Table 100. Indicator metadata - I.T.1
 | Expected availability                                                                                                                     | High                                                                                                                                                                                                                                                         |
 | Suggested collection interval                                                                                                             | Annually                                                                                                                                                                                                                                                     |
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 101. Indicator metadata - I.T.2
 
 | Percentage of total number of trips within the territory of the Municipality of Athens travelled by car                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                      |
@@ -3879,14 +2728,6 @@ Table 101. Indicator metadata - I.T.2
 
 https://insights.sustainability.google/methodology?hl=en-US
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 102. Indicator metadata - I.T.3
 
 | Percentage of electric or plug-in hybrid municipal vehicles                                                                               |                                                                                                                                                                                                                |
@@ -3904,14 +2745,6 @@ Table 102. Indicator metadata - I.T.3
 | Is the source local or regional/national?                                                                                                 | Local                                                                                                                                                                                                          |
 | Expected availability                                                                                                                     | High                                                                                                                                                                                                           |
 | Suggested collection interval                                                                                                             | At least annually, probably also semi-annually or quarterly                                                                                                                                                    |
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 103. Indicator metadata - I.T.4
 
@@ -3935,14 +2768,6 @@ https://seaa.gr/passenger-cars-registrations-in-europe/
 
 https://www.acea.auto/nav/?content=passenger-car-registrations
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 104. Indicator metadata - I.T.5
 
 | Percentage of electric buses for public transport within the Municipality of Athens                                                       |                                                                                                                                                                                               |
@@ -3962,14 +2787,6 @@ Table 104. Indicator metadata - I.T.5
 | Suggested collection interval                                                                                                             | Annual                                                                                                                                                                                        |
 
 https://www.osy.gr/n-osy-ae/stolos/
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 # 3.3.4.Indicators related to waste and circular economy
 
@@ -3991,14 +2808,6 @@ Table 105. Indicator metadata - I.W.1
 | Expected availability                                                                                                                     | High                                                                                                                                                                |
 | Suggested collection interval                                                                                                             | Annually                                                                                                                                                            |
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 106. Indicator metadata - I.W.2
 
 | Overall recycling rate                                                                                                                    |                                                                                                                                                                               |
@@ -4016,14 +2825,6 @@ Table 106. Indicator metadata - I.W.2
 | Is the source local or regional/national?                                                                                                 | Local                                                                                                                                                                         |
 | Expected availability                                                                                                                     | High                                                                                                                                                                          |
 | Suggested collection interval                                                                                                             | Annual (official), possible quarterly estimates                                                                                                                               |
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 107. Indicator metadata - I.W.3
 
@@ -4043,14 +2844,6 @@ Table 107. Indicator metadata - I.W.3
 | Expected availability                                                                                                                     | High                                                                                                                                                                                                                  |
 | Suggested collection interval                                                                                                             | Annual (official), possible quarterly estimates                                                                                                                                                                       |
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 108. Indicator metadata - I.W.4
 
 | Organic waste reduction rate compared to 2019                                                                                             |                                                                                                                                                                                                                       |
@@ -4068,14 +2861,6 @@ Table 108. Indicator metadata - I.W.4
 | Is the source local or regional/national?                                                                                                 | Local                                                                                                                                                                                                                 |
 | Expected availability                                                                                                                     | High                                                                                                                                                                                                                  |
 | Suggested collection interval                                                                                                             | Annual (official), possible quarterly estimates                                                                                                                                                                       |
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 # 3.3.5.Indicators related to green infrastructure &amp; NBS
 
@@ -4097,14 +2882,6 @@ Table 109. Indicator metadata - I.G.1
 | Expected availability                                                                                                                     | Unknown                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | Suggested collection interval                                                                                                             | Annually (temporary target)                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 110. Indicator metadata - I.G.2
 
 | New trees planted in the city compared to 2024                                                                                            |                                                                                                                                                                                                    |
@@ -4124,14 +2901,6 @@ Table 110. Indicator metadata - I.G.2
 | Suggested collection interval                                                                                                             | Lasting                                                                                                                                                                                            |
 
 https://athenstrees.cityofathens.gr
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 Table 111. Indicator metadata - I.G.3
 
@@ -4155,14 +2924,6 @@ https://normanfosterinstitute.org
 
 http://gis.cityofathens.gr
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 Table 112. Indicator metadata - I.G.4
 
 | Percentage of the city's population with access to a green space within 300 meters                                                        |                                                                                                                                                                                                                                                                                                 |
@@ -4184,11 +2945,6 @@ Table 112. Indicator metadata - I.G.4
 https://normanfosterinstitute.org
 
 http://gis.cityofathens.gr
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-C
 
 # 4. Part C – Enabling Climate Neutrality by 2030
 
@@ -4213,9 +2969,6 @@ Apart from the five core innovations, the module presents smaller governance int
 Apart from supporting the climate neutrality of Athens in 2030, the implementation of the Climate City Contract is an opportunity to bridge the climate and environmental targets with social and financial ones. The CCC is thus envisioned as a Green Social Deal, including climate actions with high positive social impact such as reducing energy poverty through the participation of citizens and small-medium enterprises in energy cooperatives of the Municipality and through measures to increase the energy efficiency of the building stock. Other examples include the creation of green jobs and revitalising the local economy through the implementation of CCC and the mitigation of health problems and premature deaths due to air quality through the development of Nature-Based Solutions for cooling and greening the city. Thus, the principles for guiding the implementation of the CCC are the following:
 
 Connecting climate action with social justice and social impact, social and green innovation, and inclusiveness (leave no-one behind).
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
 
 Climate policy as a tool for modern social policy, climate justice, and sustainability for the local society and economy.
 Inclusiveness and active role for all, including the youth, women, and vulnerable groups, gender equality.
@@ -4234,14 +2987,6 @@ The Municipality would also need to overcome the institutional-legislative barri
 
 During the development of the first version of the CCC between March and September 2024, numerous consultation and engagement actions have been implemented, including one public event for Climate Neutral Cities, three meetings of the Athens Climate Forum, two meetings of the Athens Climate Youth Assembly and a series of specialised workshops on topics such as on urban warming, financial tools, and public engagement. In addition, meetings were organised with municipal officials and agencies, strengthening the internal participatory procedures for signing the CCC. All implemented engagement
 
-#
-
-OFT OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 activities are described in detail in the next sections. Stakeholder engagement processes culminated to an event on 12 September $2024^{53}$ where stakeholders and citizens were invited to co-shape and sign, together with the Municipality of Athens, the first version of the Climate City Contract for the climate neutrality of Athens (Figure 23). More than 90 individuals from 75 organisations attended the event with most of them signing the CCC (see the CCC Commitments document for a full list of signatures). The signed CCC was submitted to the NetZeroCities project and the European Commission on the 16 September 2024.
 
 ![img-24.jpeg](img-24.jpeg)
@@ -4258,14 +3003,6 @@ Table 113. Relations between governance innovations, systems, and impact pathway
 | Governing of the Climate City of Athens – G | - A system for the development of a climate change system                    | - A system for the development of a climate change system | • The development of a climate change system |
 | Governing of the Climate City of Athens – G | - A system for the development of a climate change system                    | - A system for the development of a climate change system | • The development of a climate change system |
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 | participatory institution created with the aim of involving the citizens of Athens and representatives of the city's main stakeholder groups in order to shape the Climate City Contract for Athens together. The Climate Forum will frequently run every 3 to 6 months during the implementation of the CCC. | Athens over many domains that are relevant to climate action such as the electricity and public transport networks. - Politicisation and polarisation around technologies that are indispensable for climate action - Opportunity for further coordination of the Municipality with all relevant stakeholders for the built environment, transport, and waste. | - Central government institutions - Regulators and public utilities - Universities and research bodies - NGOs - Professional bodies - Citizens of Athens, including pupils and university students | implementation of climate actions of the CCC with the help of all relevant stakeholders Co-benefits: - Improve the policy alignment and working relationship between the Municipality of Athens and other institutions - Improve environmental awareness - Enhance the legitimacy of climate action                                                                               |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Athens Climate Youth Assembly – A participatory planning process with emphasis on issues that concern young people and on solutions that benefit the climate neutrality and resilience of Athens.                                                                                                             | - Athens has many universities and schools and thus a young population that can play an active role for climate action - Young people in the Municipality may often have the motivation and time for climate actions but not the resources to implement them.                                                                                                  | - Municipality of Athens (lead) - Universities - Schools - Organisations of parents and teachers - NGOs working with young people                                                                  | Main impact: Improve awareness of and active interest on climate issues among the young population of Athens and implement interventions designed by young people Co-benefits: - Improve the capacity of young participants for social innovation and entrepreneurship - Address social issues in tandem with climate action (e.g., social housing on energy efficient buildings) |
@@ -4273,40 +3010,16 @@ Climate Neutrality Action Plan
 | affordable energy efficiency and the development of energy-efficient buildings.                                                                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                |                                                                                                                                                                                                    | effective change in energy efficiency and the development of energy-efficient buildings.                                                                                                                                                                                                                                                                                          |
 | Athens International Community Action Plan (ICCAP) – A plan to promote the implementation of the CC.                                                                                                                                                                                                          | - The ICAP is a project to promote the implementation of the CC and to promote the implementation of the CC. It is a project to promote the implementation of the CC and to promote the implementation of the CC.                                                                                                                                              | - The ICAP is a project to promote the implementation of the CC and to promote the implementation of the CC.                                                                                       | - The ICAP is a project to promote the implementation of the CC and to promote the implementation of the CC.                                                                                                                                                                                                                                                                      |
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 | green energy and utilise it in a way that reduces the energy costs of vulnerable households of these municipalities. https://energyalliance.c ityofathens.gr/                                                                                                                                                                  | - Apart from transportation, there are many climates action-related interconnections between municipalities of Metropolitan Athens such as on waste management - In the context of the EU Cities Mission, cities with the mission label will help other cities become climate neutral by 2050 | - Other neighbouring municipalities that can potentially join the Alliance in the future                                                                                                                                      | neighbouring municipalities Co-benefits: - Better communication and policy alignment among the participating Municipalities - A precedent for further collaborations on other issues (e.g., on addressing homelessness)                                                                      |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Internal re-organisation of the Municipality - Strengthening climate governance by integrating the dimensions of climate action and resilience in all activities and plans of the Municipality. This restructuring will eventually include the development of a dedicated Directorate for Climate Policy and Civil Protection. | - Fragmentation of jurisdiction between the different directorates of the Municipality - Lack of coordination for climate action - Lack of personnel that are critical for climate action (e.g., for the collection of organic waste)                                                         | - Deputy Mayor for Climate Governance and Social Economy (lead) - All directorates and services of the Municipality of Athens                                                                                                 | Main impact: Improve the effectiveness and implementation speed of climate actions of the CCC through an optimal internal organisation of the Municipality Co-benefits: - Improved collaboration and integration between the different Directories - Better municipal services to the public |
 | Climate Neutrality Investment Council - A working group with the participation of the Municipality, experts, and other interested parties, to identify and secure further funding opportunities for the implementation of the CCC and to oversee the implementation of the investment plan.                                    | - Lack of investments for energy upgrades of buildings and RES infrastructure to the level needed for the Athens CCC - Many available climate investment programmes in Europe but the Municipality has mostly experience with national finance programmes                                     | - Municipality of Athens (lead) - Representatives from the regional and central government (e.g., from the Ministry of Environment and Energy). - Relevant academics such as from Athens University of Economics and Business | Main impact: unlock investments to implement all impact pathways and actions shown in Modules B-1 & B-2. Co-benefits: - Unlock investments for relevant social measures, e.g., for creating social housing in energy refurbished buildings in Athens                                         |
-
-#
-
-GIFT OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 |                                                                                                                                                                                                                    | - Need for holistic investment planning within a system innovation approach for all main GHG sectors, ensuring synergies between mitigation and adaptation investment needs.                                                             | - The Council could potentially include relevant experts and representatives from financial organisations as advisors                                                                                                   | - Green jobs through the implementation of the projects - Raising the Municipality's profile in green innovation and increasing its green branding.                                                                                                                                               |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ASCEND: Athens Superblock – Promoting sustainable mobility, expanding bike lanes, encouraging the use of electric vehicles, and urban reforestation in a specific area of the city based on the Superblocks model. | - Walking and biking infrastructure in Athens is inadequate - Most areas of the municipality (and especially areas like Kypseli) have a very dense urban environment with high buildings, narrow streets, and relatively few open spaces | - Municipality of Athens (lead) - Municipal unit officials and the public in the area where the first Superblock will be created - NZC advisors - City networks including cities with know-how in the Superblocks model | Main impact: Create the first, successful Superblock in Athens and a local participatory forum on transport Co-benefits: - A more active neighbourhood with more space for pedestrians and community activities - Less noise from cars                                                            |
 | GreenInCities – A Horizon Europe project that aims to address inequalities in urban regeneration strategies by prioritising public awareness. https://www.greenincities.eu                                         | - Green infrastructure is not sited uniformly within the municipal units of Athens                                                                                                                                                       | - EATA of Municipality of Athens (lead for the case study in Athens) - Other consortium members of the GreenInCities project                                                                                            | Main impact: Create participatory-based solutions for improving the micro-climate of the Prophet Ilias Square in the Rizoupoli neighbourhood and making mobility more sustainable Co-benefits: - Improved engagement of citizens with climate topics - A more attractive square and neighbourhood |
 | Cooling Havens – The programme addresses the escalating climate crisis in Athens by                                                                                                                                | - Increasingly higher risks of urban heat and periodic flooding in Athens                                                                                                                                                                | - Municipality of Athens (lead for the case study in Athens)                                                                                                                                                            | Main impact: Create new blue and green infrastructure in the inner city                                                                                                                                                                                                                           |
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 | installing water-powered public interventions to create new blue and green infrastructure. https://www.urban-initiative.eu/calls-proposals/second-call-proposals-innovative-actions/selected-projects-eui-ia-2nd-call | - High impact of the urban heat island effect | - Other consortium members of the Cooling Havens project, including the Athens Water Supply and Sewerage Company, the National Technical University of Athens, etc. | Co-benefits: - Improved natural cooling, reduced extreme temperatures in the summer - Increased awareness on water conservation |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
@@ -4316,12 +3029,6 @@ Table 114. Summary of the participatory governance model for climate neutrality 
 | Summary of the participatory governance model for climate neutrality                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | · The climate agenda will be at the core of the Municipality of Athens governance and administrative structure. This will be supported by an upcoming internal restructuring that will strengthen the horizontal coordination between officials from all municipal directorates that are relevant for climate action. · A well-organised and well-staffed Directorate for Climate Policy and Civil Protection will be eventually created within the Municipality, taking the lead in developing climate mitigation and adaptation policies and coordinating climate action with the other directives of the Municipality and with external stakeholders. Until the development of this directorate, the Directorate of Strategic Planning, Resilience, Innovation & Documentation will lead associated efforts. · The steering and implementation of the Athens CCC will be guided by frequent sessions of the Athens Climate Forum, which will consistently engage the citizens of Athens and stakeholders from other public institutions, academia, city networks, NGOs, and financial organisations. This interaction will facilitate the connection of the systems linked to emissions sources and overcome existing barriers, especially related to the fragmented jurisdiction over the emission domains of Athens. · The Athenian Energy Alliance will also play an important role on the horizontal coordination of climate action between the Municipality of Athens and 17 other neighbouring municipalities. · Financial and investment challenges will be addressed through the development of a Climate Neutrality Investment Council with the participation of the Municipality, experts, and other interested parties. · The Athens Climate Youth Assembly will specifically engage with the young people of Athens, empowering them and offering them an active role in the development of climate action in Athens. Both the Youth Assembly and the Climate Forum will be key to involve citizens in the further development of the CCC and its implementation through transparent participatory methods. |
-
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-C
 
 # 4.1.2. Athens Climate Forum
 
@@ -4345,14 +3052,6 @@ On 14 May 2024, the 1st Session of the Climate Forum took place at Serafeio Athl
 
 The meeting was an important step towards creating a common framework for action to tackle climate change, combining experience and innovation from different sectors and generations. Representatives from the Municipality and DAEM presented the progress in developing the Athens CCC, including
 
-#
-
-OFY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 strategic priorities and examples of climate actions, which were subsequently discussed by the participants. Representatives from the Ministry of Environment and Energy, the Green Fund, and other organisations also presented relevant topics to the efforts of Athens for climate neutrality. The meeting also included the inauguration of the Energy Poverty Alleviation Office of the Municipality of Athens, the $1^{\text{st}}$ Athens Youth Climate Assembly (see next section) and a workshop on "Overheating of the city and actions for mitigation and adaptation".
 
 ![img-25.jpeg](img-25.jpeg)
@@ -4367,12 +3066,6 @@ The significance of green infrastructure for addressing mitigation challenges an
 
 The $2^{\text{nd}}$ Session of the Climate Forum took place on 3 July 2024 again at the Serafeio complex (Figure 25). The event was attended by representatives from a wide range of organisations and institutions (around 46 in total), making it an important platform to discuss and plan actions on climate change and sustainability. The event had a similar format with the first session and included a more detailed
 
-#
-
-Climate Neutrality Action Plan
-
-#
-
 presentation of the Action Plan for the Climate Neutrality in the context of the Athens CCC. The event also included the inauguration of the first electric vehicle charger at Serafeio, as well as the $2^{\text{nd}}$ Youth Climate Assembly and a workshop on financial tools that can support the transition of Athens to climate neutrality by 2030.
 
 ![img-26.jpeg](img-26.jpeg)
@@ -4383,9 +3076,6 @@ Among the participating organisations was a representative from the Ministry of 
 The Bank of Greece's Centre for Climate Change and Sustainability provided a scientific and economic approach to climate change issues, highlighting the importance of economic stability and environmental sustainability, inter alia stressing that inaction would cost three times as much as effective action to mitigate and adapt to climate change. The Green Financing Institution focused on (innovative) financial tools, while the Hellenic Passive House Institute presentation of good practices for the energy efficiency of buildings.
 
 The Consumers' Union EKPOIZO participated in the debate with proposals to improve energy efficiency for households and to tackle energy poverty, while the company Anavathmisi S.A. presented possible European and other financial instruments to support the climate neutrality process. The Cycling Community and the Hellenic Urban Cycling Federation as well as the PEZI citizen movement highlighted the importance of sustainable mobility and the promotion of cycling and walking as a sustainable way of commuting in everyday life.
-CITY OF ATHENE
-
-Climate Neutrality Action Plan
 
 The National Observatory of Athens participated by offering scientific knowledge and support to climate actions, while DAEM emphasised technological solutions for climate management at the local level. The Hellenic Property Federation (POMIDA) referred to tools needed by property owners and tenants for the energy upgrade of buildings, while the Hellenic Society for the Environment and Cultural Heritage (ELLET) focused on issues related to the protection and utilisation of the urban and natural environment, as well as the need to preserve cultural heritage. Finally, a representative of the Hellenic Confederation of Professionals, Craftsmen, and Merchants offered valuable opinions and proposals for the green transition and sustainability in the economy of Athens.
 
@@ -4404,14 +3094,6 @@ In parallel with the Climate Forum, we have established the Athens Climate Youth
 
 The 1st session of the Climate Youth Assembly took place on May 14, 2024 (Figure 26), alongside the 1st Climate Forum and focused on various proposals and interventions that can be implemented to reduce the consequences of high temperatures and heat waves in Athens. Participants included students and teachers from the 2nd, 4th, 23rd, and 56th High Schools of Athens as well as university students, offering fresh ideas and showing their dedication to creating a sustainable future. The participants acknowledged that the climate crisis is affecting their lives more and more and it is important to look for solutions that are workable and sustainable. The participants were then split into working groups to discuss different problems they have identified related to climate, as well as potential solutions. At the end of the session, the participants presented workable proposals aimed both at mitigating emissions and helping Athens adapt to the new climate conditions.
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 ![img-27.jpeg](img-27.jpeg)
 Figure 26. $1^{\text{st}}$ session of the Athens Climate Youth Assembly on 14 May 2024
 
@@ -4427,11 +3109,6 @@ Creating a platform of active citizens and students, which will enhance particip
 Management of urban green infrastructure and creation of a single map for the surveillance and recording of burnt areas around Athens
 
 The $2^{\text{nd}}$ session of the Climate Youth Assembly was held with the participation of the Mayor of Athens, Haris Doukas, and the Deputy Mayor for Climate Governance and Social Economy, Nikos Chrysogelos, on July 3, 2024, in the context of the $2^{\text{nd}}$ Climate Forum (Figure 27). The $2^{\text{nd}}$ session focused on strengthening active youth engagement in promoting sustainability and climate justice and on how to sustain the Assembly with further actions and active participation of young citizens. The session was also an opportunity to promote the Youth Climate Action Fund of Athens (funded by Bloomberg Philanthropies) and to urge participants to submit proposals for climate projects in Athens (see Module C-2 for more details).
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 ![img-28.jpeg](img-28.jpeg)
 Figure 27. $2^{\text{nd}}$ session of the Athens Climate Youth Assembly on 3 July 2024
@@ -4451,14 +3128,6 @@ Apart from the official sessions of the Athens Climate Youth Assembly, the Munic
 
 https://www.unicef.org/greece/δελτια-τύπου/εγαστήριο-καινοτομίας-για-το-κλίμα
 
-#
-
-OITY OF ATHENIA
-
-Climate Neutrality Action Plan
-
-#
-
 ![img-29.jpeg](img-29.jpeg)
 Figure 28. 1st Innovation Workshop for Climate
 
@@ -4475,14 +3144,6 @@ Afterwards, the young participants presented their ideas to a group of represent
 
 With the initiative of the Mayor, Haris Doukas, and with the cooperation of seven neighbouring municipalities (Egaleo, Vyronas, Zografou, Kallithea, Moschatou-Tavros, Papagou-Cholargos, and Nea Ionia), the foundations were laid on March 19, 2024, for the establishment of the Athenian Energy Alliance (Figure 29). Its primary purpose will be the production of green energy from RES at a competitive cost and its utilisation in a way that reduces the energy costs of vulnerable households in the cooperating municipalities. The Alliance also aims to promote education and awareness at the local level on issues of sustainability, energy democracy, and energy transition.
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 ![img-30.jpeg](img-30.jpeg)
 Figure 29. Inauguration of the Athenian Energy Alliance
 
@@ -4496,9 +3157,6 @@ Among the various comments and proposals that were suggested are the following:
 
 It is important to coordinate the various services of the Municipality to achieve a common planning that incorporates both the objectives and the financial assessment of the CCC.
 The new Action Plan is ambitious and must be translated to a more operational level.
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
 
 The Municipality of Athens faces difficulties in supporting certain actions, such as the withdrawal of cars and coordination with OASA. There must be changes on the parking policy and potentially create more parking stations at the perimeter of the Municipality, in collaboration with OASA.
 There is a need to find and understand the terms of different financial tools for supporting the implementation of the projects. There should be a maturation process for each project separately, so that they are effective and not just ambitious.
@@ -4519,14 +3177,6 @@ regular meetings of all deputy mayors and departments to discuss plans and proje
 strengthening a horizontal coordination structure with officials from relevant directorates.
 designating a desk officer in each deputy mayor's office to monitor and identify climate policy issues in a timely manner.
 
-#
-
-OFY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 Finally, apart from the need for financial tools, data-driven tools will play an important role on improving the internal capacity of the Municipality to effectively design and monitor climate actions. This was the topic of a conference organised on 12 June 2024 at the Athens City Hall in collaboration with the ICLEI Europe Cities Network, titled "Data-driven Tools for Cities on the Path to Climate Neutrality". The ICLEI Action Fund will support three projects in the Greek municipalities of Athens, Vari-Voula-Vouliagmeni, and Thessaloniki, utilising different data sources and technologies to implement inclusive climate actions. This initiative, led by ICLEI Europe and funded by Google (Alphabet), will focus on programmes that will be called upon to address critical climate challenges such as energy poverty, fire detection, and air quality management in Greece. All programmes will contribute to the implementation of the European Mission for Climate Neutral and Smart Cities and the Mission for Adaptation to Climate Change.
 
 # 4.1.6. Governance structure of CCC Investment Plan
@@ -4537,11 +3187,6 @@ The discussion on the investment needs of the CCC and potential funding sources 
 
 ![img-31.jpeg](img-31.jpeg)
 Figure 30. Workshop on financial tools
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-C
 
 Some of the main findings of the workshop was that the success of the goals for climate neutrality requires the coordinated action of all actors involved as well as overcoming regulatory and institutional barriers. In addition, the importance of training and informing professionals about the green transition was highlighted, as well as the need to integrate green parameters into all projects. Funding was considered critical for the implementation of the actions, while synergies between the agencies are required. Institutional proposals included the possibility of hiring more personnel for climate strategy needs, VAT reductions for related investments, the obligation of energy providers to allocate resources for energy savings, the creation of green bonds, and the allocation of part of the revenue from the climate resilience fee to Municipalities.
 
@@ -4560,21 +3205,10 @@ Social dimension should be strongly integrated in all climate efforts.
 A think tank can be created in the Municipality, encouraging specific and targeted proposals for the improvement of the local community.
 
 A similar discussion took place on 2 July 2024 in an online meeting on green bonds organised between the Municipality and European financial institutions and organisations, including the Climate Bonds Initiative, the European Mortgage Federation HYPO, the EBRD, and the Green Finance Institute. Participants of the Climate Bonds Initiative stressed the emblematic character of financing actions of the Athens Climate Action Plan. The Climate Bonds Initiative could play a coordinating role in securing funds from EU programmes and private investors. The various financial tools that could be used were discussed at length, with special reference to Green Loans and (Public) Covered Bonds and relevant experiences from London and San Francisco. The importance of equality and strengthening of local societies was underlined, as the stronger they are, the better they cope with crises (climatic, economic, etc.).
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
 
 Similar meetings were organised with representatives of the Bankers without Borders and Business. The latter organisation enables London to take the lead in the energy transition by utilising innovative tools and can provide best practices for Athens too. An important online briefing was also organised by the General Secretariat of Spatial Planning and Urban Environment of the Ministry of Environment and Energy on the new international financial tools introduced by the European Commission, with the aim of supporting them. Cities that have received the EU Cities Label will have access to financial services from the European Investment Bank. These include the ability to structure financing needs, introduce projects to capital providers, and support during the deal closing process.
 
 In order to continue this work on finding new investment opportunities and governing the implementation of the investment plan of the CCC, we will create a Climate Neutrality Investment Council with the participation of the Municipality, professionals, and other interested parties. The council will in practice be a working group that aims to implement the investment plan of the CCC to achieve climate neutrality, as well as the search for funding sources. The group will also ensure that the implementation of the CCC does not lead to financial exclusion and that society and entrepreneurs have access to fair financing tools. Although the City is not yet ready to draw up a complete "climate budget" with indicators and data to monitor the achievement of the 2030 climate neutrality goal, we will train municipal personnel and develop expertise on this issue in the near future. Thus, the role of the group will not only be on finding funds for the climate transition but also building the capacity of the Municipality to fund future activities.
-
-#
-
-OPT OF ATHEMS
-
-Climate Neutrality Action Plan
-
-#
 
 # 4.2. Module C-2 – Social Innovation Interventions
 
@@ -4603,70 +3237,26 @@ Table 115. Relations between social innovations, systems, and impact pathways (C
 | ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------- | -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | Financial instruments for PV and energy storage – Creation of a supporting mechanism | - The required rate of adding new renewable electricity systems in the CCC | - Municipality of Athens (lead) - Ministry of Environment and Energy | Main impact: secure finance for all CCC actions related to installing new energy systems for Athens; |
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 | of new financial instruments to support the installation of photovoltaics and energy storage. [Funding/supporting community-led initiatives and small-scale pilots or experimentations; Enabling social innovation/entrepreneurship initiatives scale-up beyond pilots] | is much higher than the current rate. - While there are national programmes to help citizens to acquire PVs and storage, the initial costs and bureaucracy can be oftentimes significant. - Emerging energy communities in Athens and elsewhere in Greece have encountered many challenges such as the lack of available (electric) space, grid connection delays, bureaucracy, and frequent policy changes. - The Municipality has already started the process for acquiring 20 MW of PVs for its first energy community. Based on this first pilot, it can then scale more effectively. | - Climate Change and Sustainability of the Bank of Greece - Climate Bonds Initiative - European Bank for Reconstruction and Development - Greek Green Fund - European Structural and Investment Funds - Other cities and city networks with experience in the topic - Existing energy communities of Athens - Relevant NGOs - Athens Energy Alliance | allocate this finance to relevant city stakeholders and citizens in an effective way, without unnecessary bureaucracy. Co-benefits: - The municipality can act as a facilitator for organisational issues such as faster connections to the grid by negotiating with HEDNO. - Provide an example for overcoming barriers in financing local RES installations in other municipalities or even at national scale. - Reducing energy cost volatility for the citizens and business within the Municipality by providing financial solutions to put a PV and storage system on their roof - The instruments could support energy democracy by meaningfully supporting energy communities - Reduce energy poverty by redistributing income from the Municipality's energy communities |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-
-#
-
-GIFT OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 | Financial instruments to promote energy upgrades – Creating innovative financing tools to promote energy upgrade (focusing on citizens) [Funding/supporting community-led initiatives and small-scale pilots or experimentations]                                                                        | - Deep renovation rate must ramp up in Athens to achieve the CCC targets. - As with the PV support programmes, existing national programmes for energy upgrades can often have significant bureaucracy in applying as well as initial costs that cannot be covered by the building owners (in case that a loan cannot be secured). - The funding support by these programmes can be oftentimes delayed, transferring the financial burden to the constructors that have to implement an upgrade without getting paid at a reasonable time. | - Municipality of Athens (lead) - Ministry of Environment and Energy (including the Energy Inspection Departments) - Climate Change and Sustainability of the Bank of Greece - Climate Bonds Initiative - European Bank for Reconstruction and Development - Greek Green Fund - European Structural and Investment Funds - Other cities and city networks with experience in the topic - Technical Chamber of Greece - Construction companies in Athens (or relevant professional networks) - ESCOs - Athens Energy Alliance | Main impact: secure finance for all CCC actions related to energy upgrades of the building stock within Athens; allocate this finance to relevant city stakeholders and citizens in an effective way, without unnecessary bureaucracy. Co-benefits: - The municipality can act as a facilitator for relevant loans for energy upgrades - The Reduced energy costs for households and businesses within the municipality - Reduce energy poverty by prioritising the funding of buildings with low energy performance and unbearable energy costs for its tenants |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Athens Business Green Toolkit – The aim of this action is to support small and very small enterprises of the Municipality of Athens to upgrade their operation based on the principles of energy efficiency and bioclimatic design. Source: https://athensib.gr/images/EFDFILES/2023/tropopoihseis/GREEN | - The scale of renovation required for business within Athens would be difficult to reach without support programmes (i.e., at least 50% renovated to B until 2030) - Apart from technical measures such as the energy upgrades, the businesses may lack the know-how of optimising their operations (e.g.,                                                                                                                                                                                                                                | - Municipality of Athens (lead) - Hellenic Confederation of Professional, Craftsmen and Merchants (GSEVEE) and its institute (IME GSEVEE and KEK) - Commercial Association of Athens - Athens – Attica & Argosaronic Hotel Association                                                                                                                                                                                                                                                                                       | Main impact: the target of CCC for energy upgrades in buildings of the tertiary sector is achieved. Co-benefits: - Reduced energy costs for the businesses which can be then reflected on their cost of services - Better and more healthy conditions within upgraded                                                                                                                                                                                                                                                                                            |
-
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 | TOOLKIT 3h trop 2 10722.pdf [Funding/supporting community-led initiatives and small-scale pilots or experimentations]                                                                                                                                                                                                                                                                                                                                          | configuring correctly their cooling or heating systems) - Lack of incentives for businesses to perform deep renovations - The programme has been already designed and started already from 2022. It needs to be extended considerably in the coming years. |                                                                                                                                                                                                                                                                             | buildings (e.g., less drafts), especially for buildings related to tourism and the catering sector.                                                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Youth Climate Action Fund – Using a grant by Bloomberg Philanthropies the Municipality will finance the direct implementation of climate actions designed and implemented by young people (aged 15-24). Source: https://ycaf.cityofathens.gr [Funding/supporting community-led initiatives and small-scale pilots or experimentations; Co-creation of social innovation initiatives with citizens and stakeholders. Skills of citizens and urban stakeholders] | - Many NGOs and bottom-up initiatives within Athens focus on climate action but most do not have the needs to achieve it. - Youth-led climate initiatives (e.g., climate strikes) are relative weaker in Greece than in other EU countries.                | - Municipality of Athens (lead) - Bloomberg Philanthropies - NGOs for the youth such as Hellenic Youth Participation, Inter Alia, Youth Active Minds, Ecotivity, Amazing Youth, WeFor, Astylab, Erasmus Student Network and the Cell of Alternative Youth Activities (KEAN) | Main impact: implement youth-led climate actions within the municipality Co-benefits: - Increased empowerment and awareness on climate among Athens's youth - Creating small but powerful examples of climate action within the cities |
 | Climate Schools Athens 2030 – A continuation of a programme by the Municipality promoting climate awareness and taking climate actions in schools                                                                                                                                                                                                                                                                                                              | - Low environmental education among the general population -                                                                                                                                                                                               | - Municipality of Athens (lead) - Schools within the municipality - Organisations of parents and teachers                                                                                                                                                                   | Main impact: Improve awareness of and active interest on climate issues among the young population of Athens and implement climate                                                                                                     |
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 | [Skills of citizens and urban stakeholders]                                                                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                               |                                                                                                                                                                                                 | interventions on the schools Co-benefits: - Improve the sense of efficacy and empowerment of students                                                                                                                                                  |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Climate and Energy Academy – In the context of the Athens Energy Alliance, the Municipality of Athens aims to train executives of the cooperating local authorities in new technological developments, institutional frameworks, and financial tools. [Capacity building of public officials and policymakers]                | - Low capacity among municipal officials on addressing climate issues and identifying effective solutions - Integrating climate action in the work of municipalities would require specialised knowledge and long-term experience such as on developing emission inventories. | - Municipality of Athens (lead) - Municipalities already participating in the Athenian Energy Alliance - Other neighbouring municipalities that can potentially join the Alliance in the future | Main impact: Improve the capacity of municipal officials and policymakers in terms of successfully designing and implementing climate actions in their jurisdiction Co-benefits: - Strengthen ties between the neighbouring municipalities in Attica - |
 | Energy Poverty Alleviation Office – The Office will contribute to the identification of energy-vulnerable households of the Municipality, the assessment of the magnitude of their problems, and the provision of appropriate advice and interventions. [Public procurement of social innovation services for sustainability] | - Low energy literacy among the general population. - Potentially high levels of energy poverty within Athens                                                                                                                                                                 | - Municipality of Athens (lead) - C40 Cities (funding) - Engineers and energy advisors - Energy poor households                                                                                 | Main impact: Reduce energy poverty within the municipality Co-benefits: - Improve energy literacy in energy vulnerable households                                                                                                                      |
 
-#
-
-OITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
-
 | ARSINOE – The aim of the EU-funded ARSINOE is to provide Athens with the foundations of a public consensus towards climate resilience, targeting the key community systems of environment, biodiversity, clean energy, primarily, and transport secondarily. Source: https://arsinoe-project.eu/case-study-1/ [Capacity building of public officials and policymakers; Co-design of policies with social innovators and urban stakeholders] | - While nature-based solutions can have significant benefits for both climate adaptation and mitigation, they have not been implemented yet at scale in Athens - Public is often not involved in decisions of green infrastructure | - Municipality of Athens (lead) - University of Thessaly - Other partners of the ARSINOE project - Citizens and stakeholders of Athens | Main impact: better understanding of NBS that are appropriate and acceptable for Athens Co-benefits: - Further establishing a culture of public engagement with climate issues within the city                                                                                                                     |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | REACHOUT - As part of the EU-funded REACHOUT project, Athens will develop better flood maps for the city and heat maps of historical and future heat that will illustrate the urban heat island phenomenon. Source: https://reachout-cities.eu/post_type_city/athens/ [Capacity building of public officials and policymakers]                                                                                                              | - There is a need to understand in more detail and in high resolution the problems of the city in term of urban heat island and flooding                                                                                           | - Municipality of Athens (lead) - Other partners of the REACHOUT project                                                               | Main impact: better scientific base for designing new green infrastructure of the city (see Section 3.2.5); better targeting of other interventions within buildings and in the urban environment to address the urban heat island effect Co-benefits: - Improve adaptation of the city to floods and extreme heat |
-
-CITY OF ATHENS
-Climate Neutrality Action Plan
-C
 
 # Table 116. Description of social innovation interventions (C-2.2)
 
@@ -4681,11 +3271,6 @@ The Municipality is not new in the development of such support programmes and so
 Apart from municipal financial support programmes, the Municipality will evaluate additional instruments in coordination with the national government such as reducing or abolishing VAT on basic goods and services could increase the number of households with solar panels or hybrid systems (electricity and hot water production). Additionally, the Municipality established in May 2024 an Energy Poverty Alleviation Office with the aim to identify households that are energy vulnerable and support them with advice and home interventions. In general, the office will provide advice to all citizens of the municipality to help them change wasteful energy behaviours, identify funding programmes related to energy management and carbon footprint reduction, and increasing the active participation of energy vulnerable citizens, energy communities and citizen initiatives. Similarly, the Climate and Energy Academy will provide training to policymakers and officials of the municipalities that are part of Athenian Energy
 
 ⁵⁷ https://news.b2green.gr/32226/τα-αμέτρητα-προβλήματα-του-εξοικονου
-CITY OF ATHENE
-
-Climate Neutrality Action Plan
-
-C
 
 Alliance in new technological developments, institutional frameworks, and financial tools related to the energy and climate transition.
 
@@ -4699,18 +3284,8 @@ Similar to the ARSINOE programme, the aim of the EU-funded REACHOUT⁵⁹ projec
 
 ⁵⁸ https://arsinoe-project.eu/case-study-1/
 ⁵⁹ https://reachout-cities.eu/post_type_city/athens/
-CITY OF ATHEINE
-
-Climate Neutrality Action Plan
-
-C
 
 specific) 'Climate Stories' which translate climate science into information that the local officials, water experts, advisors, citizens and companies can understand and work with. For Athens, the REACHOUT project is an opportunity to develop better flood maps for the city and historical and future heat maps that show the urban heat island phenomenon. These maps will build the capacity of the municipality officials and policymakers to design the urban infrastructure needed for the CCC and in the future in general considering issues of resilience to climate impacts. The total funding for this Horizon 2020 project is 4,998,860 euros and for the Municipality of Athens: 61,875 euros.
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-C
 
 # 5. Outlook and next steps
 
@@ -4725,11 +3300,6 @@ The ongoing stakeholder engagement along the implementation of CCC will also hel
 In terms of improvements, it is imperative to have a more accurate picture of the emissions of Athens and how these can be impacted by different factors. As discussed in Module A-1, there are already indications that the electricity consumption in 2024 may be higher due to longer use of air conditioning to survive the continuous heatwaves that affected Athens this summer. Additionally, the quantity of waste may be higher due to the increased tourist flows in the city (even beyond the typical summer period) as well as an increase in food deliveries. The increased tourism is also related with the conversion of many dwellings in Athens to Airbnb, which may affect the energy consumption and therefore the emissions from residential buildings. All these aspects need to be further examined in the future and reflected in upcoming emission inventories and CCC updates.
 
 Apart from developing more accurate emission inventories, we will use the upgraded version of the NZC economic model (expected September-October 2024) to simulate and explore different scenarios on Athens' transition. While the current NZC model helped us to identify domains and high-level interventions for reducing the emissions of Athens by 80% in 2030, the new model is expected to allow for more granular parameter input such as different numbers of buildings for residential, tertiary and public sectors or a more detailed simulation of climate actions. This increased level of detail will also
-CITY OF ATHENE
-
-Climate Neutrality Action Plan
-
-C
 
 potentially increase the accuracy of the resulting emissions gap (Section 2.2.2), the calculation of co-benefits, as well as the required investments for climate neutrality and their breakdown for all relevant stakeholders. In addition, the model will be online allowing us to easily explore different scenarios on Athens' transition when major changes are needed on the CCC.
 
@@ -4740,11 +3310,6 @@ Apart from adding new impact pathways and relevant actions in new versions of th
 Similarly, a more solid plan for addressing the residual emissions will need to be developed. As suggested in the current plan (Section 3.1.7), offsetting will mainly occur through green infrastructure within the Municipality and afforestation and reforestation actions in the wider region of Attica. These actions will need to be coordinated with the regional and the central government and can build on and expand national initiatives and policies such as the National Reforestation Plan of the Ministry of Environment and Energy. Nature-Based Solutions within and outside the Municipality of Athens will lead to strong synergies with the climate adaptation goals that are critical for the city and the regions, such as reducing overheating, flood risk, and wildfires as well as addressing water shortage and drought. It is noted that such green interventions are not included in the current simulation of the NZC economic model and, thus, a more detailed design and analysis of their costs and impacts are required.
 
 Finally, more governance and social innovations will be explored with the help of stakeholders while the design of the existing ones will be adapted based on their effectiveness. Apart from the major governance innovations that will guide CCC updates, i.e., the Climate Forum, the Climate Youth Assembly, and the Athenian Energy Alliance, it would be important to assess the responsiveness of the stakeholder groups in Module A-3 throughout the CCC implementation and create new engagement processes to approach them. It would be also imperative to develop more wide citizen engagement processes in Athens' neighbourhoods, e.g., through open events, workshops, and questionnaires, to ensure that a wide range of Athenians have a say on the transition. Furthermore, citizens can have a more active role with new social innovations such as through citizen assemblies, mini-publics and other methodologies of deliberative democracy. These interventions will be evaluated in new updates of the CCC along with relevant organisations such as the NetZeroCities programme and the Democratic Odyssey network of the European University Institute.
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-O
 
 Table 117. Overview of the plan for the next CCC updates
 
@@ -4759,12 +3324,6 @@ Table 117. Overview of the plan for the next CCC updates
 | · Apart from adding new impact pathways and relevant actions in new versions of the CCC, the existing ones will be updated and detailed, e.g., with estimations on the budget and resulting GHG emission reduction.                               |
 | · A more solid plan for addressing the residual emissions will be developed (Section 3.1.7), along with a detailed analysis of synergies and co-benefits with the goals of climate adaptation.                                                    |
 | · More governance and social innovations will be explored with the help of stakeholders while the design of the existing ones will be adapted based on their effectiveness.                                                                       |
-
-CITY OF ATHENS
-
-Climate Neutrality Action Plan
-
-#
 
 # References
 
@@ -4784,20 +3343,14 @@ Pfenninger, S., &amp; Staffell, I. (2016). Long-term patterns of European PV out
 Rodriguez Mendez, Q., Fuss, S., Lück, S., &amp; Creutzig, F. (2024). Assessing global urban CO2 removal. Nature Cities, 1(6), 413-423. https://doi.org/10.1038/s44284-024-00069-x
 Rodriguez Mendez, Q., Fuss, S., Lück, S., &amp; Creutzig, F. (2024). Assessing global urban CO2 removal. Nature Cities, 1(6), 413-423. https://doi.org/10.1038/s44284-024-00069-x
 Siatitsa, D. (2022). Re-inhabiting central Athens: Urban planning, housing and the claim for socio-spatial justice. Bulletin de Correspondance Hellénique Moderne et Contemporain, 7, Article 7. https://doi.org/10.4000/bchmc.1105
-CITY OF ATHENS
-Climate Neutrality Action Plan
-C
 
 SMU-NTUA. (2024). Walkable Athens—Study of Sustainable Mobility Unit of the National Technical University of Athens. https://walkable.cityofathens.gr/home
 
 Ulpiani, G., Vetters, N., Bertoldi, P., &amp; Thiel, C. (2024). Shining light on residual emissions for cities. Nature Climate Change, 14(4), 302–305. https://doi.org/10.1038/s41558-024-01961-z
 
 YPEN. (2022). Αρχείο Στατιστικών Αποτελεσμάτων των Τμημάτων Επιθεώρησης Ενέργειας Βορείου και Νοτίου Ελλάδος [Archive of Statistical Results of the Energy Inspection Departments of Northern and Southern Greece]. https://bpes.ypeka.gr/?page_id=21&amp;stat=222
-Climate Neutrality Action Plan
 
 # Annex 1 – Athens and Kypseli study by Norman Foster Institute
-
-Climate Neutrality Action Plan
 
 # Annex 1 – Athens and Kypseli study by Norman Foster Institute
 
@@ -4809,7 +3362,6 @@ Climate Action Plan
 Supporting Images
 
 August 2024
-.
 NFN
 
 Norman Foster Institute on Sustainable Cities
@@ -5113,9 +3665,6 @@ Athens Neighbourhood Boundaries
 Metro Line
 Metro Station
 Access to Number of Lines
-1
-2
-3
 
 ![img-3.jpeg](img-3.jpeg)
 NFN
@@ -5140,9 +3689,6 @@ Athens Neighbourhood Boundaries
 Metro Line
 Metro Station
 Access to Number of Lines
-1
-2
-3
 Future Line
 
 ![img-4.jpeg](img-4.jpeg)
@@ -5166,9 +3712,6 @@ Athens Neighbourhood Boundaries
 Bus Line
 Metro Station
 Access to Number of Lines
-3
-6
-9
 
 - NFJ
 
@@ -5389,7 +3932,6 @@ Percentage Insulated Residences
 %
 
 %
-0
 %
 No Insulated Residences
 
@@ -5750,7 +4292,6 @@ Superblocks
 
 Source: Norman Foster Institute on Sustainable Cities
 ![img-31.jpeg](img-31.jpeg)
-3
 NFN
 
 Norman Foster Institute on Sustainable Cities
@@ -5763,7 +4304,6 @@ Superblocks
 
 Source: Norman Foster Institute on Sustainable Cities
 ![img-32.jpeg](img-32.jpeg)
-3
 NFJ Norman Foster Institute on Sustainable Cities
 
 # References Bibliography
@@ -5824,11 +4364,6 @@ Scale 1:25 000
 Micro
 Kypseli Neighbourhood
 NF | Norman Foster Institute on Sustainable Cities
-CITY OF ATHENE
-
-Climate Neutrality Action Plan
-
-C
 
 # Annex 2 – Targets of Athens Climate Action Plan 2022
 
@@ -5880,14 +4415,8 @@ EU MISSION PLATFORM | CLIMATE NEUTRAL AND SMART CITIES
 ### Climate Neutrality Commitments of the City of Athens
 
 ![img-35.jpeg](img-35.jpeg)
-CITY OF ATHENS
 
 NetZeroCities has received funding from the H2020 Research and Innovation Programme under the
-CITY OF ATARIBBEI
-
-Climate-Neutrality Commitments
-
-O
 
 # Table of contents
 
@@ -5896,11 +4425,6 @@ Goal: Climate neutrality by 2030 ... 4
 Strategic priorities ... 7
 Process and principles ... 10
 Signatories ... 13
-CITY OF ATHENA
-
-Climate-Neutrality Commitments
-
-1
 
 # 1 Introduction
 
@@ -5930,11 +4454,6 @@ In 2021, the EU has established the European Mission of “100 Climate Neutral a
 
 ¹ https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal_en
 ² https://www.consilium.europa.eu/en/policies/green-deal/fit-for-55/
-CITY OF ATHENA
-
-Climate-Neutrality Commitments
-
-Climate-Neutrality Commitments
 
 The programme was launched with a call for expressions of interest where 377 EU cities applied. Through this competitive process, the Municipality of Athens was among the 112 cities selected in May 2022 for participating in the Cities Mission, alongside other emblematic European Cities such as Paris, Amsterdam, Rome, Madrid, and Dublin as well as five other Greek cities: Thessaloniki, Ioannina, Kalamata, Kozani, and Trikala.
 
@@ -5957,11 +4476,6 @@ In 2022, the Municipality of Athens updated its Climate Action Plan, aiming for 
 
 ³ https://resilientcitiesnetwork.org
 ⁴ https://www.milanurbanfoodpolicypact.org/
-CITY OF ATHENE
-
-Climate-Neutrality Commitments
-
-C
 
 In 2024, the Municipality of Athens pledged to further increase its ambition with the Climate City Contract and achieve climate neutrality by 2030 by reducing its emissions by 80% and offsetting the rest of 20% through (mainly) Nature-Based Solutions.
 
@@ -5979,13 +4493,6 @@ The Office of Energy Poverty Alleviation was established to aid energy vulnerabl
 The ASCEND pilot project was submitted and approved to apply the Superblock concept to one neighbourhood as an example of what we want to achieve city-wide.
 The "Cooling Havens" project was approved which envisages water-based and NBS projects.
 The Athens Energy Alliance was created, a collaboration with over 17 neighbouring and related municipalities, which aims to establish energy communities to produce clean energy, available at low or zero cost to the most vulnerable citizens.
-
-0
-CITY OF ATHENS
-
-Climate-Neutrality Commitments
-
-C
 
 The FAETHON Energy Community of the Municipality of Athens has been created.
 The Municipality is also moving forward with an integrated programme of energy interventions and installing photovoltaics in 52 schools and municipal buildings as well as expanding electric vehicle charging stations.
@@ -6007,13 +4514,6 @@ The development of the Pact was supported by the EU-funded NetZeroCities program
 ⁵ https://athenstrees.cityofathens.gr
 ⁶ https://netzerocities.eu
 
-T
-CITY OF ATLANTA
-
-Climate-Neutrality Commitments
-
-C
-
 In line with the climate neutrality definition pursued by the Cities Mission, the target for emissions cuts is set to 80% compared to a Business-as-Usual scenario—i.e., assuming that the Municipality did not develop any further climate policy after 2019. This goal will be achieved mainly through:
 
 Extensive reduction of greenhouse gas emissions in power generation, including production of local green, affordable energy by the municipality and citizens.
@@ -6034,11 +4534,6 @@ Energy upgrades in the city's buildings as well as interventions in the area for
 Reducing car traffic will help reduce transport emissions while improving air quality and increase safety and accessibility for pedestrians and cyclists. It will also free up urban space for communication, neighbourhood revitalisation, play, recreation, and exercise.
 In addition, addressing emissions from waste through prevention, reuse, recycling, composting and the circular economy will reduce not only climate-changing gas emissions but also the costs of their collection, transport, and disposal as well as keep the roads and sidewalks clean.
 Planting more trees, restoring nature, and investing in green and blue infrastructure will reduce the risks of extreme heat and flooding, enhancing the city's resilience.
-CITY OF ATHENA
-
-Climate-Neutrality Commitments
-
-C
 
 # The Investment Plan for Climate Neutrality
 
@@ -6055,11 +4550,6 @@ Aiming to make Athens a climate neutral city and adapting to climate change requ
 The GIS maps that have been created by Athens using scientific data provide valuable information to be able to plan our interventions based on scientific and social data, with priority in sectors and areas most affected by climate change and also by the urban heat island effect.
 
 http://gis.cityofathens.gr/layers/athens_geonode_data:geonode:angLST_Athens_UrbanAtlas
-CITY OF ATHENE
-
-Climate-Neutrality Commitments
-
-O
 
 # Goal
 
@@ -6086,9 +4576,6 @@ It is noted that the NetZeroCities programme assumes the aforementioned methodol
 ⁸ https://NetZeroCities.app/resource-3768
 ⁹ https://www.c40knowledgehub.org/s/article/The-Global-Protocol-for-Community-Scale-Greenhouse-Gas Emission-Inventories-GPC
 ¹⁰ https://www.c40knowledgehub.org/s/article/C40-cities-greenhouse-gas-emissions-interactive-dashboard
-CITY OF ATHEINE
-
-Climate-Neutrality Commitments
 
 transboundary vehicle traffic passing through the Municipality as well as emissions from the losses of the electricity supply network (i.e., at the BASIC+ level of the GPC protocol). Similarly, if emissions for all residents of Greece are accounted, the figure rises to 5.5 tonnes of CO₂e per capita. It is therefore clear that beyond the formal target for the NetZeroCities programme, the Municipality of Athens must raise its ambition to set an example for other municipalities and for achieving emission reduction at national level.
 
@@ -6109,11 +4596,6 @@ The strategic priorities of the Athens’ Climate City Contract are summarised a
 
 It is clear that a very important goal is to almost completely reduce greenhouse gas emissions in electricity demand. In addition to being the most emitting sector, energy efficiency and clean electricity will help reduce the emissions of other sectors, such as by electrifying electric vehicles and powering heat pumps in buildings. At the same time, after the recent wildfire disasters in the forests of Attica and the looming increase in the average temperature in Athens’ climate zone, the role of green and blue infrastructure and the cooling and ventilation of the city with Nature-Based Solutions has been significantly upgraded in the new Climate Action Plan of Athens in the context of the CCC.
 
-1
-CITY OF ATLANTA
-
-Climate-Neutrality Commitments
-
 Athens faces the challenge of meeting its ambitious climate goals in less than seven years, despite the constraints imposed by the Municipality's limited powers on key infrastructure and policies, such as the electricity grid and public transport system. However, the municipal authority reaffirms its commitment to change,
 
 by taking initiatives in areas where it has direct competence, such as the improvement of public buildings and waste management and the promotion of green and blue infrastructure, and
@@ -6128,9 +4610,6 @@ Built environment: Energy upgrades in school complexes and municipal buildings o
 Transport &amp; mobility: Measures to reduce traffic and parking in the centre of Athens and supporting measures to reduce car traffic; measures for optimising truck logistics within the city (e.g., loading schedule); creation of pilot Superblocks and 15-minute neighbourhoods (EU project ASCEND within the NZC's Pilot Cities Programme); expansion of the network of cycle roads; upgrade and widening of pavements; more than 150 electric buses; EV chargers in municipal buildings.
 Waste &amp; circular economy: composting bins made available in neighbourhoods; organised composting at home, neighbourhood, and mechanical composting level; expansion of the recycling network; reduction of the environmental footprint of waste collection operations (e.g., improved logistics of waste collection); campaigns for boosting awareness on composting and recycling and promoting re-use and responsible consumption; support measures for citizens and businesses (especially restaurants) to acquire small bins for composting.
 Green infrastructure &amp; Nature-Based Solutions: More than 35,000 new trees within the municipality; improvement of existing green spaces in the city; protection and restoration of Athens' streams and water bodies; training activities on NBS with municipality departments, citizens, and other stakeholders; increased funding sources for green infrastructure within Athens; new staff in the Directorate of Greenery &amp; Urban Fauna and training on NBS; recording of all trees and updating of data in a geodatabase; campaigns for increasing public participation in tree planting, protection, and other nature-based activities.
-CITY OF ATLANTA
-
-Climate-Neutrality Commitments
 
 Process and principles
 
@@ -6145,11 +4624,6 @@ We will also proceed with the internal reorganisation of the Municipality's stru
 To further support the monitoring of implementation, Athens will set in place a digital platform that enables smarter collaboration around key data, helping the Municipality turn its climate goals into action. The platform will visualise the main goals and indicators for the Climate City Contract and the 2022 Climate Action Plan and showcase the progress of climate action. The platform is funded through
 
 ¹¹ https://www.greenincities.eu
-CITY OF ATLANTA
-
-Climate-Neutrality Commitments
-
-C
 
 the EU project ARSINOE¹² and the overall goal would be to bring together impactful stakeholders of the city to (voluntarily) monitor their actions by compiling their data in a systematic way that allows monitoring progress and planning accordingly for the future.
 
@@ -6169,24 +4643,12 @@ Better quality of life for all at a neighbourhood level and reduction of inequal
 
 ¹² https://arsinoe-project.eu
 
-T
-CITY OF ATHENE
-
-Climate-Neutrality Commitments
-
-C
-
 # Process and principles
 
 The implementation of Athens' CCC will be facilitated by a new institutional design within the municipality, the creation of a Climate Neutrality Investment Council, pilot projects, collaboration with research, and enhanced coordination with the national and regional government.
 The monitoring and further development of the plan will be guided by extensive stakeholder and public engagement as well as learning processes with other cities.
 Monitoring will be also supported by a comprehensive, open digital platform that will visualise climate targets and progress towards them.
 The principles guiding the implementation include social justice, the achievement of high social impact, inclusiveness, integrated policy coherence, and reducing inequalities in neighbourhoods of Athens.
-CITY OF ATHENE
-
-Climate-Neutrality Commitments
-
-O
 
 # 5 Signatories
 
@@ -6209,12 +4671,6 @@ The table below lists the signatories who are committing to this CCC, thereby he
 | 13  | National Observatory of Athens (Εθνικό Αστεροσκοπείο Αθηνών)                 | Research centres                              | Signed                                                                              |
 | 14  | Social Research Centre (Κέντρο Κοινωνικών Ερευνών)                           | Expert associations                           | Signed by a representative; expected to be signed by the organisation in the future |
 | 15  | Association of Solar Energy Industries (Ένωση Βιομηχανιών Ηλιακής Ενέργειας) | Expert associations                           | Signed by a representative; expected to be signed by the organisation in the future |
-
-CITY OF ATARIAN
-
-Climate-Neutrality Commitments
-
-O
 
 | 16  | Hellenic Passive House Institute (Ινστιτούτο Παθητικού Κτιρίου)                               | Expert associations | Signed                                                                              |
 | --- | --------------------------------------------------------------------------------------------- | ------------------- | ----------------------------------------------------------------------------------- |
@@ -6240,12 +4696,6 @@ O
 | 36  | Hellenic Society for the Protection of Nature (Ελληνική Εταιρεία Προστασίας της Φύσης)        | Civil society       | Signed                                                                              |
 | 37  | HOLISTIC                                                                                      | Private companies   | Signed                                                                              |
 
-CITY OF ATARIAN
-
-Climate-Neutrality Commitments
-
-C
-
 | 38  | INCOMMON                                                                           | Civil society | Signed                                                                              |
 | --- | ---------------------------------------------------------------------------------- | ------------- | ----------------------------------------------------------------------------------- |
 | 39  | International Institute for Climate Change (Διεθνές Ινστιτούτο Κλιματικής Αλλαγής) | Civil society | Signed                                                                              |
@@ -6259,12 +4709,6 @@ C
 | 47  | Wind of Renewal (Άνεμος Ανανεώσης)                                                 | Civil society | Signed                                                                              |
 | 48  | WWF                                                                                | Civil society | Signed by a representative; expected to be signed by the organisation in the future |
 
-AHMOI AOHNAIAN
-
-Climate-Neutrality Commitments
-
-#
-
 # Contract with signatures
 
 We, the undersigned, hereby commit to help make Athens climate neutral by 2030. We agree on the joint ambition and commitments, as formulated in the Athens Climate City Contract.
@@ -6274,12 +4718,6 @@ We, the undersigned, hereby commit to help make Athens climate neutral by 2030. 
 | 13/9/2024         | Haris Doukas | ![img-38.jpeg](img-38.jpeg) |
 
 Mayor of Athens
-
-#
-
-CITY OF VITAMINS
-
-Climate Neutrality Action Plan
 
 Accelerating the transition to sustainable and smart mobility
 Enhancing active mobility
