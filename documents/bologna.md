@@ -209,7 +209,7 @@ O
 
 Today's socio-economic context is complex, the resident population of Bologna continues to grow slightly but steadily over the last decade. Growth is supported by the migratory balance, which compensates for the always negative value of the natural balance. The ability to attract new residents who arrive mainly from other Italian cities and a constantly increasing temporary population made up of students, workers and tourists is confirmed.
 
-Bologna is currently the seventh most populous municipality in Italy, with 392,000 inhabitants registered in the municipal population registers as of 31 December 2022, with an average age of 46.9 years. In addition to residents and non residents (but living steadily in Bologna), Bologna is lived by a further 100,000 people (workers, students and city users of the area), approximately 29% more, bringing the total number of people present to approximately 500,000, without considering tourists.
+Bologna is currently the seventh most populous municipality in Italy, with 392,000 inhabitants registered in the municipal population registers as of 31 December 2022, with an average age of 46.9 years. In addition to residents and non-residents (but living steadily in Bologna), Bologna is lived by a further 100,000 people (workers, students and city users of the area), approximately 29% more, bringing the total number of people present to approximately 500,000, without considering tourists.
 
 Bologna today, in addition to being expanding in terms of resident population and people who gravitate to the city, presents an ever-increasing attractiveness, as also confirmed by the data relating to tourist flows. The first element of attraction of Bologna is certainly culture, understood as the set of monuments, museums, exhibitions and cultural events.
 
@@ -1004,9 +1004,10 @@ Climate Neutrality Action Plan
 | --- | --- | --- | --- |
 |  Type | Title | Description | Relevance  |
 |  Plan | European Green Deal | The European Green Deal is a package of strategic initiatives that aims to put the EU on the path to a green transition, with the ultimate goal of achieving climate neutrality by 2050. It was launched by the Commission in December 2019 and the European Council took note of it in December the same year. The Green Deal highlights the need for a holistic, cross-sectoral approach in which all relevant policy sectors contribute to the ultimate climate goal. The package includes initiatives regarding climate, environment, energy, transport, industry, agriculture and sustainable finance, all highly interconnected sectors. | The definition of a European-level strategy to achieve climate neutrality puts emissions reduction objectives and the definition of a single market for CO, emissions at the center of the debate.  |
-|  Financial instrument | NextGeneration EU | Temporary recovery tool, helping to repair the immediate economic and social damage caused by the coronavirus pandemic. The goal is to create a post-COVID-19 Europe that is greener, more digital, resilient and adapted to current and future challenges. On 21 July 2020, EU leaders agreed on a multi-faceted package of EUR 1824.3 billion (in 2018 prices) combining the EUR 1074.3 billion long-term budget for the period 2021-2027 or multiannual framework with NextGenerationEU, an extraordinary recovery effort of EUR 750 billion. | 30% of total spending under the multiannual framework and NextGenerationEU is allocated to climate-related projects.
+|  Financial instrument | NextGeneration EU | Temporary recovery tool, helping to repair the immediate economic and social damage caused by the coronavirus pandemic. The goal is to create a post-COVID-19 Europe that is greener, more digital, resilient and adapted to current and future challenges. On 21 July 2020, EU leaders agreed on a multi-faceted package of EUR 1824.3 billion (in 2018 prices) combining the EUR 1074.3 billion long-term budget for the period 2021-2027 or multiannual framework with NextGenerationEU, an extraordinary recovery effort of EUR 750 billion. | 30% of total spending under the multiannual framework and NextGenerationEU is allocated to climate-related projects. |
 The National Recovery and Resilience Plan fits into this context, the tool that outlines the objectives, reforms and investments that Italy intends to implement thanks to the use of Next Generation EU funds, to mitigate the economic and social impacts of the pandemic and make Italy a fairer, greener and more inclusive country, with a more competitive, dynamic and innovative economy.  |
 |  Regulation | European climate law (Regulation 2021/1119/EU) | The European Climate Law, in force since June 2021, turns into law the objective set in the European Green Deal for the European economy and society to become climate neutral by 2050. The law also sets the intermediate objective of reducing net greenhouse gas emissions by at least 55% by 2030, compared to 1990 levels. This is a legally binding target, based on an impact assessment carried out by the Commission. | The law aims to ensure that all EU policies contribute to this climate neutrality goal and that all sectors of the economy and society do their part to achieve it by 2050.  |
+| --- | --- | --- | --- |
 |  Plan | REPowerEU | Presented on 18 May 2022 by the European Commission, the REPowerEU plan aims to reduce the EU's dependence on fossil fuels imported from Russia by accelerating the transition and building a more resilient energy system. The Plan was completed in July 2023, with a further step aimed at reducing gas demand in all member states by 15% over the following 8 months and storing more gas for the winter. Among the pillars of the plan: energy saving; diversification in supply, the replacement of fossil fuels, the diversification of investments and the implementation of reforms towards the ecological transition. | To cope with energy supplies and reduce the EU's dependence on Russian supplies, synergistic work at European level to create a common energy platform is essential.  |
 Comune di Bologna
 
@@ -1016,7 +1017,7 @@ Plan
 
 #
 
-Nationale, regional and local energy and climate framework for 2030
+National, regional and local energy and climate framework for 2030
 
 |  A-2.1b: List of relevant policies and strategies at national, regional, metropolitan and municipal levels  |   |   |   |
 | --- | --- | --- | --- |
@@ -1035,11 +1036,12 @@ Climate Neutrality Action Plan
 |   |  | in turn made up of Investments and Reforms. There are 3 further sub - missions (youth, gender equality and reduction of the citizenship gap), i.e. transversal priorities that guide the investments, reforms and projects of the Plan and have the aim of reducing the territorial, generational and gender gaps in the country . | solutions, improvement of the electricity grid and water infrastructure, incentives for energy efficiency of buildings, Investments to face climate change and hydrogeological instability).
 • Infrastructure for sustainable mobility (25.40 billion, 13.26% of the total, divided by high-speed rail in Northern and Southern Italy and rail transport).  |
 | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 |  Plan | National plan to contain gas consumption | The objective of the Plan, approved in October 2022, is to promote conscious and intelligent behaviour in the consumption of gas and electricity. The Plan adopts measures aimed at addressing the security of national natural gas supply in order to ensure a high level of storage filling and quickly diversify the origin of imported gas. | The National Ministry for Environment and energy security's guidance document confirms the decarbonisation commitments for 2030 to increase energy independence.  |
 |  Plan | National Plan for Adaptation to Climate Change (NPACC) | In order to implement the National Strategy for Adaptation to Climate Change, approved with directorial decree no. 86 of 16 June 2015 by the Ministry of the Environment and Protection of Land and Sea, with decree no. 434 on 21 December 2023 the Ministry for Environment and Energy Security approved the NPACC. The objective is to encourage adaptation and increase the country's resilience towards climate change, through actions to be implemented also through their integration into current policies and instruments. | The Plan could represent a complex framework of union of the strategies and actions to be implemented for adaptation and therefore an important guidance tool for the planning and implementation of adaptation actions in the national territory.  |
 |  Regional Level |   |   |   |
 |  Financial planning tool | Regional Economy and Finance Document (REFD) 2023 - 2025 | With Assembly Resolution no. 92 of 27 July 2022, the Regional Economic and Financial Document 2023 - 2025 was approved, the main financial planning instrument of the Region. | Among the strategic objectives of the REFD there is ' The ecological transition through the Path to Carbon Neutrality before 2050 ', i.e. the drafting of a strategic and programmatic document which, on the basis of a net balance of emissions and technical-economic scenarios, will identify sector by sector, the best policies and actions to be implemented, over time, so that the 'sum' of these results in net neutrality of GHG emissions before 2050.  |
-|  Strategy | Pact for Work and Climate | With resolution 1899/2020, at the end of a participatory process between institutions, economic and social representatives, the Emilia-Romagna Region signed the "Pact for Work and the Climate" (Patto per il Lavoro e il Clima) with 55 signatories: local authorities, trade unions, businesses, the four universities in the region (Bologna, Modena and Reggio Emilia, Ferrara, Parma), the regional school office, environmental associations, third sector and voluntary work, professional orders, Chambers of commerce and banks. The objective of the Pact is to relaunch regional projects towards the SDG objectives, including the fight against inequalities, the ecological transition, the reduction of climate- | With this Pact, the signatories outline the strategic framework and the guidelines of the subsequent operational agreements and implementation strategies necessary to achieve the shared objectives:
+|  Strategy | Pact for Work and Climate | With resolution 1899/2020, at the end of a participatory process between institutions, economic and social representatives, the Emilia-Romagna Region signed the "Pact for Work and the Climate" (Patto per il Lavoro e il Clima) with 55 signatories: local authorities, trade unions, businesses, the four universities in the region (Bologna, Modena and Reggio Emilia, Ferrara, Parma), the regional school office, environmental associations, third sector and voluntary work, professional orders, Chambers of commerce and banks. The objective of the Pact is to relaunch regional projects towards the SDG objectives, including the fight against inequalities, the ecological transition, the reduction of climate- | With this Pact, the signatories outline the strategic framework and the guidelines of the subsequent operational agreements and implementation strategies necessary to achieve the shared objectives: |
 • complete decarbonisation by 2050
 • 100% renewable energy by 2035.
 • 3% of regional GDP in research
@@ -1068,10 +1070,12 @@ Climate Neutrality Action Plan
 • Energy rationalization in the transport sector;
 • Transversal aspects. |   |
 | --- | --- | --- | --- |
-|  Plan | Regional Integrated Air Plan (PAIR2020 - PAIR 2030 ) | With resolution 115/2017, PAIR2020 was approved, in compliance with the European Directive 2008/50/EC relating to ambient air quality and for cleaner air in Europe. The Plan identifies concrete actions to improve air quality and reduce the levels of pollutants present in the regional territory.
+| --- | --- | --- | --- |
+|  Plan | Regional Integrated Air Plan (PAIR2020 - PAIR 2030 ) | With resolution 115/2017, PAIR2020 was approved, in compliance with the European Directive 2008/50/EC relating to ambient air quality and for cleaner air in Europe. The Plan identifies concrete actions to improve air quality and reduce the levels of pollutants present in the regional territory. | |
 During 2021, the Region began the path that will lead to the approval of the new Regional Integrated Air Plan (PAIR 2030). | The PAIR dictates specific binding rules for the territory regarding air quality, a topic strongly interconnected with climate.  |
 |  **Metropolitan level** |   |   |   |
-|  Strategy | Bologna Charter for the Environment. Metropolitan cities for sustainable development | On 8 June 2017, on the occasion of the G7 Environment which was held in Bologna, the Mayors of the Italian metropolitan cities signed the "Bologna Charter for the Environment. Metropolitan cities for sustainable development" which identifies 8 environmental themes to work on at a metropolitan scale:
+| --- | --- | --- | --- |
+|  Strategy | Bologna Charter for the Environment. Metropolitan cities for sustainable development | On 8 June 2017, on the occasion of the G7 Environment which was held in Bologna, the Mayors of the Italian metropolitan cities signed the "Bologna Charter for the Environment. Metropolitan cities for sustainable development" which identifies 8 environmental themes to work on at a metropolitan scale: | |
 Sustainable use of land;
 Circular economy;
 Adaptation to climate change and risk reduction;
@@ -1094,7 +1098,7 @@ Climate Neutrality Action Plan
 |  Plan | Sustainable Urban Mobility Plan (SUMP) | Approved in November 2019, the SUMP is a strategic plan with a medium-long term time horizon, with the task of satisfying the demand for mobility of people and goods in a sustainable manner in urban and metropolitan areas, in order to improve the quality of life and cities, also dedicating targeted attention to the development of the cycle/pedestrian network. | The PUMS envisages important interventions for sustainable mobility and metropolitan public transport, including a new tram-type rapid mass transport system for the urban area of Bologna.  |
 | --- | --- | --- | --- |
 |  Plan | Sustainable Urban Logistics Plan (SULP) | The SULP was developed in a coordinated and integrated manner with the SUMP, in which the strategies for the sustainable mobility of goods are identified (distribution logistics in urban areas and industrial logistics). | The SULP aims to achieve a goods transport system capable of responding to the various needs present in the territory of the metropolitan city, increasing the sustainability of logistics and transport activities (carbon free objective by 2030 for urban distribution).  |
-|  Plan | Metropolitan Territorial Plan (MTP) | Approved in 2021, the MTP incorporates what was elaborated by the Strategic Metropolitan Plan 2.0, the Metropolitan Agenda for Sustainable Development and the SUMP, defining the strategic and structural choices of territorial planning for the social and economic development and the environmental protection and enhancement of the area subway. | For the regeneration of the settlement system, for the protection of public health, for the conservation of biodiversity, for the provision of ecosystem services and for the increase in resilience and the capacity to mitigate polluting and climate-altering emissions and to adapt to climate change, the MTP provides that the Municipalities:
+|  Plan | Metropolitan Territorial Plan (MTP) | Approved in 2021, the MTP incorporates what was elaborated by the Strategic Metropolitan Plan 2.0, the Metropolitan Agenda for Sustainable Development and the SUMP, defining the strategic and structural choices of territorial planning for the social and economic development and the environmental protection and enhancement of the area subway. | For the regeneration of the settlement system, for the protection of public health, for the conservation of biodiversity, for the provision of ecosystem services and for the increase in resilience and the capacity to mitigate polluting and climate-altering emissions and to adapt to climate change, the MTP provides that the Municipalities: |
 increase the provision of urban greenery through:
 • the creation of urban forests, green areas, planted areas and tree lines in public and private spaces;
 • integrated planting interventions along the penetration roads, cycle paths, strips bordering watercourses;
@@ -1113,13 +1117,14 @@ Climate Neutrality Action Plan
 
 |  Municipal level |   |   |   |
 | --- | --- | --- | --- |
-|  Declaration | Climate emergency declaration | On September 30th 2019, the Bologna City Council approved the Declaration of climate and ecological emergency, recognizing the urgency of the fight against climate change. The Declaration contains a number of commitments, including:
+|  Declaration | Climate emergency declaration | On September 30th 2019, the Bologna City Council approved the Declaration of climate and ecological emergency, recognizing the urgency of the fight against climate change. The Declaration contains a number of commitments, including: | |
 • promote knowledge on CO₂ emissions,
 • act to reduce emissions levels to reach net zero by 2030;
 • promote citizen participation in environmental policies.
 The Declaration also asks that measures to fight climate emergency comply with the following principles: Climate and ecological justice, participatory and deliberative democracy, transparency. | The commitments undertaken by the Declaration contributed to the process of establishing the Citizen Assembly and the set up of the first Citizen Assembly for Climate, as well as to the city's application for the 100 Climate Neutral Cities Mission.  |
 |  Plan | General Urban Traffic Plan (GUTP) | The Plan was approved in December 2019, at the same time as the drafting of the SUMP of the Metropolitan City of Bologna. The Plan coordinates and systematizes the operational interventions for managing the mobility and road system, integrating them with other higher-level and municipal planning tools. The Bike plan (Biciplan) approved in 2019 within the GUTP, aims to increase and spread the use of bicycles. | The Plan develops aspects of sustainable mobility, providing for a further strengthening of LPT bicycle and pedestrian mobility, setting the objective of approximately 20% modal shift from the use of private vehicles.  |
-|  Plan | Sustainable Energy and Climate Action Plan (SECAP) | The SECAP was approved in April 2021 and contains the climate neutrality scenarios, the inventory of CO₂ emissions, the assessment of vulnerability and climate risks on the municipal territory, as well as mitigation and adaptation actions.
+| --- | --- | --- | --- |
+|  Plan | Sustainable Energy and Climate Action Plan (SECAP) | The SECAP was approved in April 2021 and contains the climate neutrality scenarios, the inventory of CO₂ emissions, the assessment of vulnerability and climate risks on the municipal territory, as well as mitigation and adaptation actions. | |
 The Plan is the result of the adhesion process by the Municipality of Bologna to the Covenant of Mayors for energy and climate, which requires the definition of an Action Plan for the mitigation and adaptation to climate change, with objectives up to to 2030, as part of a long-term strategy for the complete decarbonisation of all activities carried out on its territory (not only, therefore, in energy uses, but also in the use of materials, products and services).
 The Municipality of Bologna joined the Covenant of Mayors in 2008 with the consequent drafting of the SEAP (Sustainable Energy Action Plan) approved by the City Council on 28 May 2012. In October 2014 the Municipality of Bologna also joined (first Italian municipality) the Mayors Adapt initiative of the Covenant of Mayors, addressing the issue of adaptation to climate change and developing the first Adaptation Plan, approved by the City Council on 8 September 2015.
 Both updated Plans were therefore merged into the SECAP. | The SECAP, under monitoring in 2023, is the voluntary tool of the Municipality of Bologna for estimating CO₂ emissions and for defining climate mitigation and adaptation actions. Its monitoring in 2023 was conducted in synergy with the drafting of the Climate City Contract and the emissions inventory was the starting point for the development of the CCC baseline.  |
@@ -1146,7 +1151,8 @@ Climate Neutrality Action Plan
 |   |  |  | electricity through renewable sources;
 • diffusion of energy production systems from renewable sources: the plan, in addition to reducing energy consumption, proposes the development of renewable energy sources. To do this, it adapts and supports what is promoted by the SECAP actions.  |
 | --- | --- | --- | --- |
-|  Regulation | Building Regulations (RE) | The Building Regulations (also including the Regulations for public and private green areas and the Regulations for the application of the hydrogeological restrictions) contain the definitive and prescriptive regulations for the governance of building interventions and transformations on the municipal territory. The objectives of safeguarding, increasing the quantity and improving the performance of the city's green areas are expressed in the General Urban Plan, in the new Building Regulations and in its annex Public and Private Green Regulations; they concern public greenery, private greenery, usable and mitigation greenery, arboreal phytomass, parks, gardens, protected natural areas and also the greening of building envelopes (green roofs and walls), with a view also to seek in the new building, urban and infrastructural transformations the opportunities and contexts to strengthen the urban eco-network and provide ecosystem services of regulation, mitigation and adaptation. | The Building Regulations address and detail the performance of various components of environmental sustainability, with a view to mitigation and adaptation.
+| --- | --- | --- | --- |
+|  Regulation | Building Regulations (RE) | The Building Regulations (also including the Regulations for public and private green areas and the Regulations for the application of the hydrogeological restrictions) contain the definitive and prescriptive regulations for the governance of building interventions and transformations on the municipal territory. The objectives of safeguarding, increasing the quantity and improving the performance of the city's green areas are expressed in the General Urban Plan, in the new Building Regulations and in its annex Public and Private Green Regulations; they concern public greenery, private greenery, usable and mitigation greenery, arboreal phytomass, parks, gardens, protected natural areas and also the greening of building envelopes (green roofs and walls), with a view also to seek in the new building, urban and infrastructural transformations the opportunities and contexts to strengthen the urban eco-network and provide ecosystem services of regulation, mitigation and adaptation. | The Building Regulations address and detail the performance of various components of environmental sustainability, with a view to mitigation and adaptation. |
 Specifically, the art. 28 - Performance requirements of buildings for environmental compatibility in the urban context - defines the main performances for:
 • Microclimatic well-being: to contribute to the mitigation of the "heat island" effect, the methods for calculating the microclimatic well-being index and the albedo are defined and the performance levels are defined depending on the type of intervention;
 • Saving and reuse of water: the performance levels are defined in terms of maximum daily domestic (and similar) water consumption, to be achieved in the case of urban planning and building interventions or interventions on existing structures involving the entire sanitary water system, and the further requirements to be satisfied regarding the installation of low consumption water and sanitary systems, preparation of rainwater recovery systems, to be used for non-potable uses, and greywater treatment and reuse systems.
@@ -1167,7 +1173,8 @@ The aspect of energy-emission sustainability is also taken up by the RE in relat
 
 With respect to sustainable mobility, the RE, in compliance with the PUMS, provides for parking obligations for bicycles and charging points for electric vehicles.  |
 | --- | --- | --- | --- |
-|  Strategy | Green strategy for the urban climate | The strategy, outcome of the LIFE CLIVUT Project (Ref. Module C-2) and approved in 2022, aims to counteract the negative effects of climate change and enhance greenery as an element of well-being for all, while at the same time increasing the resilience capabilities of the city. It is in line with the objectives and requirements relating to greenery contained in the General Urban Plan (2021). The key points of the Strategy are:
+| --- | --- | --- | --- |
+|  Strategy | Green strategy for the urban climate | The strategy, outcome of the LIFE CLIVUT Project (Ref. Module C-2) and approved in 2022, aims to counteract the negative effects of climate change and enhance greenery as an element of well-being for all, while at the same time increasing the resilience capabilities of the city. It is in line with the objectives and requirements relating to greenery contained in the General Urban Plan (2021). The key points of the Strategy are: | |
 
 • know and protect the existing arboreal heritage;
 • increase the number of trees (in line with PUG and SECAP objectives);
@@ -1190,7 +1197,8 @@ In particular to the Art. 2 (Programmatic objectives) added the following senten
 
 Article 6 also formalizes the Citizens' Assembly as a participatory institution.  |
 | --- | --- | --- | --- |
-|  Regulation | Regulation on the rights of participation and information of citizens of the Municipality of Bologna | The Regulation regulates the methods for exercising the rights of participation in politics and the information rights of citizens, implementing the provisions of the Municipality Statute. | Particularly relevant for the Municipality's neutrality transition were the changes introduced to the Regulation by Council Resolution 74/2022 of 07/29/2022, which introduced the Citizen Assembly among the forms of participation and information.
+| --- | --- | --- | --- |
+|  Regulation | Regulation on the rights of participation and information of citizens of the Municipality of Bologna | The Regulation regulates the methods for exercising the rights of participation in politics and the information rights of citizens, implementing the provisions of the Municipality Statute. | Particularly relevant for the Municipality's neutrality transition were the changes introduced to the Regulation by Council Resolution 74/2022 of 07/29/2022, which introduced the Citizen Assembly among the forms of participation and information. |
 
 The implementing rules of the Assembly are identified here, with particular reference to the methods and terms of proposal, call, composition, organization and functioning, of discussion and decision of the Council on the outcomes, of involvement of the Council and the Municipal Offices, as well as of monitoring and verification of the state of implementation, according to principles of democratic participation, publicity and transparency.
 
@@ -1208,7 +1216,7 @@ Climate Neutrality Action Plan
 |  Type | Title | Description | Relevance  |
 |  National level  |   |   |   |
 |  Regulations | Legislative Decree 199/2021 Implementation of Directive (EU) 2018/2001 of the European Parliament and of the Council of 11 December 2018 on the promotion of the use of energy from renewable sources. | Defines the tools, mechanisms, incentives and institutional framework, financial and legal, necessary to achieve the objectives of increasing the share of energy from renewable sources by 2030, in implementation of the Directive (EU) 2018/2001. It contains provisions necessary for the implementation of the measures of the National Recovery and Resilience Plan (NRRP) regarding energy from renewable sources, in accordance with the Integrated National Energy and Climate Plan (INECP), with the aim of identifying a set of coordinated measures and instruments, through which a binding objective of reducing greenhouse gas emissions of at least 55% compared to 1990 levels by 2030 is foreseen for the European Union. The Art. 20 also defines the rules for identifying surfaces and areas suitable for the installation of renewable energy systems. Annex III introduces more efficient requirements in terms of covering the thermal and electrical energy needs from renewable sources of new buildings or those undergoing significant renovations. | Law that contains the provisions on energy from renewable sources while defining the tools, mechanisms, incentives and the institutional, financial and legal framework, in coherence with the European objectives of decarbonisation of the energy system by 2030 and complete decarbonisation by 2050.  |
-|  Regulations | Law 34/2022 Conversion into law, with amendments, of Legislative Decree 1 March 2022, n. 17, containing urgent measures to contain the costs of electricity and natural gas, for the development of renewable energy and for the relaunch of industrial policies | Conversion into law of the Legislative Decree of 1 March 2022 n. 17, which came into force on 2 March 2022 ("Energy Decree"), through which urgent measures were adopted aimed at containing the cost of electricity and natural gas, as well as impacting the renewable sources sector. With particular reference to the renewable sources sector, the decree introduces:
+|  Regulations | Law 34/2022 Conversion into law, with amendments, of Legislative Decree 1 March 2022, n. 17, containing urgent measures to contain the costs of electricity and natural gas, for the development of renewable energy and for the relaunch of industrial policies | Conversion into law of the Legislative Decree of 1 March 2022 n. 17, which came into force on 2 March 2022 ("Energy Decree"), through which urgent measures were adopted aimed at containing the cost of electricity and natural gas, as well as impacting the renewable sources sector. With particular reference to the renewable sources sector, the decree introduces: | |
 • measures to simplify the authorization processes;
 • provisions relating to areas suitable for the installation of RES plants;
 • new concessions for interventions to be carried out in the regions of Southern Italy and other interventions;
@@ -1236,7 +1244,7 @@ Climate Neutrality Action Plan
 |  Regulations | Resolution of the Legislative Assembly 6 December 2010, n. 28 | This Resolution identifies the areas and sites for the installation of electricity production systems, through the use of renewable solar photovoltaic energy sources, starting from a synthetic consideration of the landscape and environmental constraints present in the regional territory and the need to protect the excellent crops and agricultural traditions. In particular, the Resolution identifies four macro categories of areas in which it is possible or not to install photovoltaics. | Act that promotes the diffusion of photovoltaic solar renewable energy sources.  |
 | --- | --- | --- | --- |
 |  Regulations | Resolution of the Regional Assembly of 26 July 2011 n.51 | Identification of areas and sites for the installation of electricity production systems through the use of renewable energy sources from wind, biogas, biomass and hydroelectric. | Act that promotes the diffusion of renewable energy sources from wind, biogas, biomass and hydroelectric.  |
-|  Regulations | Regional Council Resolution 24 July 2015, n. 967 and subsequent amendments | Defines the obligations regarding the minimum energy performance requirements of buildings. The changes made with DGR 1261/2022 have increased the minimum percentages of coverage of energy needs from renewable sources for buildings newly built or subject to significant renovation, with the following gradual:
+|  Regulations | Regional Council Resolution 24 July 2015, n. 967 and subsequent amendments | Defines the obligations regarding the minimum energy performance requirements of buildings. The changes made with DGR 1261/2022 have increased the minimum percentages of coverage of energy needs from renewable sources for buildings newly built or subject to significant renovation, with the following gradual: | |
 a) 60% of the expected consumption for domestic hot water and 60% of the sum of the expected consumption for the production of domestic hot water, winter air conditioning and summer air conditioning for the interventions for which the building permit request is submitted until to 31 December 2023;
 b) 70% of the expected consumption for domestic hot water and 70% of the sum of the expected consumption for the production of domestic hot water, winter air conditioning and summer air conditioning for the interventions for which the building permit request is presented by the January 1, 2024;
 c) 80% of the expected consumption for domestic hot water and 80% of the sum of the expected consumption for the production of domestic hot water, winter air conditioning and summer air conditioning for the interventions for which the building permit request is presented by January 1, 2026. | Act that promotes the decarbonisation of the construction sector through the progressive energy renovation of the existing real estate assets and the construction of new buildings with very high performance and almost zero impact.  |
@@ -1258,7 +1266,7 @@ A-2.1d: Policies, strategies, relevant regulations and need for intervention
 
 |  Type | Title | Need for action | Action reference  |
 | --- | --- | --- | --- |
-|  Law | National Climate Law | The Municipality of Bologna believes it is necessary to promote the development of a national law for climate as happened in other European countries (such as France, Germany and Spain) to define, sector by sector, the actions and tools, at a national level, to achieve climate neutrality, also by shifting the different forms of economic support from activities and actions that aggravate the climate crisis, towards activities and actions that favour mitigation and adaptation to climate change. This new national regulation could provide a significant external contribution to Italian cities currently committed to the 2030 climate neutrality objective. | The Municipality will promote forms of discussion with all institutional levels to define the objectives, actions and tools that can be contained in the law.
+|  Law | National Climate Law | The Municipality of Bologna believes it is necessary to promote the development of a national law for climate as happened in other European countries (such as France, Germany and Spain) to define, sector by sector, the actions and tools, at a national level, to achieve climate neutrality, also by shifting the different forms of economic support from activities and actions that aggravate the climate crisis, towards activities and actions that favour mitigation and adaptation to climate change. This new national regulation could provide a significant external contribution to Italian cities currently committed to the 2030 climate neutrality objective. | The Municipality will promote forms of discussion with all institutional levels to define the objectives, actions and tools that can be contained in the law. |
 Ref. Module C-1 - Multilevel Governance  |
 |  National decree | National decree for the definition of areas suitable for the installation of energy production systems from renewable sources. | The expectations for the decree, still being developed, are those of an expansion at national and local level of renewable plants, starting from photovoltaic ones, a further simplification of authorizations and the revision of the forms of public economic support for the various renewable energy sources. | In particular, the Municipality of Bologna will promote further regulatory and procedural simplifications, a greater possibility for innovative agrivoltaics, eroding the limitations provided for by the current regulations.
 Remodulation of the forms of economic support relating to energy sources.  |
@@ -1271,7 +1279,8 @@ Climate Neutrality Action Plan
 |   |  |  | Strengthening the incentives for renewable sources aimed above all at the diffusion of small plants, and eliminating those relating to fossil sources.
 Ref. Module C-1  |
 | --- | --- | --- | --- |
-|  National plan | Integrated National Energy and Climate Plan (INECP) | The current phase of updating the Plan provides the opportunity to create the necessary national support framework to accelerate the energy and climate transition of cities. | The Municipality has activated discussions with the national Government for the updating of the INECP together with the network of the Italian cities of the Mission, also proposing a review of the different forms of public economic support for sustainable energy.
+| --- | --- | --- | --- |
+|  National plan | Integrated National Energy and Climate Plan (INECP) | The current phase of updating the Plan provides the opportunity to create the necessary national support framework to accelerate the energy and climate transition of cities. | The Municipality has activated discussions with the national Government for the updating of the INECP together with the network of the Italian cities of the Mission, also proposing a review of the different forms of public economic support for sustainable energy. |
 Ref. Module C-1  |
 |  National plan | National Plan for Adaptation to Climate Change (NPACC) | The Plan lacks the identification of specific strategies and the definition of priorities, objectives, targets and times for their achievement. | The Municipality, together with the Emilia-Romagna Region, presented observations on the Plan for various environmental matrices.
 This plan can have an important role on emissions throughout the national territory also by promoting a rapid and widespread development of Nature Based Solutions (NbS) throughout the national territory, providing, among the various ecosystem services, also greater sequestration and storage capacity of CO.
@@ -1295,7 +1304,7 @@ Comune di Bologna
 
 Climate Neutrality Action Plan
 
-A-2. 1e: Emission Gap
+A-2.1e: Emission Gap
 
 |   | (1) | (2) |   | (3) |   | (4) |   | (5) |   | (6)  |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1312,7 +1321,7 @@ Climate Neutrality Action Plan
 
 O
 
-|  A-2. 1e: Emission Gap  |   |   |   |   |   |   |   |   |   |   |   |
+|  A-2.1e: Emission Gap  |   |   |   |   |   |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  . | (1) | (2) |   | (3) |   | (4) |   | (5) |   | (6)  |   |
 |   |  Baseline emissions | Emissions reduction target for 2030 |   | Emission reduction through other Action Plans |   | Emission Gap |   | Emissions reduction through the CCC Action Plan to address the Gap |   | Residual emissions  |   |
@@ -2321,14 +2330,15 @@ B-1.1: Impact pathways - Buildings (Built environment and RES)
 
 |  Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (emission reduction) | Indirect impacts (co-benefits)  |
 | --- | --- | --- | --- | --- |
-|  Technology and infrastructure | Energy efficiency of buildings | Energy efficiency of buildings | Reduction of consumption and emissions
+|  Technology and infrastructure | Energy efficiency of buildings | Energy efficiency of buildings | Reduction of consumption and emissions | |
 Increase in local energy production from renewable sources
 The value in tCo2eq of the direct impacts linked to the systemic lever "technologies and infrastructures" and the related short and long-term changes are linked to the reduction of emissions in the "buildings (built environment and RES)" sector whose overall value is 507,250.13 tCo2eq. | Greater local energy autonomy
 Fight against energy poverty  |
 |   |  Installation and diffusion of renewable energy sources | Greater local energy autonomy  |   |   |
+| --- | --- | --- | --- | --- |
 |   |  Development of large innovative renewable energy production projects | Greater local supply of energy from renewable sources |   | Improvement of the healthiness of the urban environment (starting from air quality)  |
 |   |  Agrivoltaic systems | Sustainable agriculture and increase in RES  |   |   |
-|   |  Mapping of buildings with digital twin | Data collection platform as a decision support tool |   | Development of employment opportunities and a local market for renewable sources
+|   |  Mapping of buildings with digital twin | Data collection platform as a decision support tool |   | Development of employment opportunities and a local market for renewable sources |
 Greater attractiveness and competitiveness of the territory
 Increase in value of properties  |
 |  Governance and Policy | PUG and RE alignment to mission objectives | Further diffusion of renewable sources in the area | Increase in local energy autonomy from clean sources
@@ -2345,7 +2355,7 @@ Plan
 | --- | --- | --- | --- |
 |   |  Assignment of Public Private Partnership for the management of municipal assets | Innovative management of municipal assets consistent with the objectives of the Mission | Strengthening collaboration between public and private  |
 |  Financing | Incentives at national and regional level for the energy efficiency of buildings and for the widespread self-production of energy from renewable sources | Increase in the energy class of buildings and local energy production from clean sources | Greater investment capacity on RES and energy efficiency.  |
-|  Information and capacity building | Continuation and strengthening of the activities of the Energy Desk | Strengthening of the help desk with additional services | Increased awareness
+|  Information and capacity building | Continuation and strengthening of the activities of the Energy Desk | Strengthening of the help desk with additional services | Increased awareness |
 Increase in virtuous behaviors
 Increase in private initiatives for the energy transition.
 The value in tCo2eq of the direct impacts linked to the systemic lever "Information and capacity building" and the related short and long-term changes mentioned here, are linked to the reduction of emissions in the "buildings (built environment and RES)" sector whose overall value is 507,250.13 tCo2eq. It should be underlined that the systemic lever "Information and capacity building" acts on all sectors of the CCC.  |
@@ -2424,6 +2434,7 @@ The direct impacts linked to the systemic levers for the waste and wastewater se
 Improvement of the healthiness of the urban environment
 Greater diffusion of sustainable practices  |
 | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- |
 |   |  Innovative finance for the circular economy | Increasing circular economy projects  |   |   |
 |  Governance and policy | PUG and RE adaptation to the Mission objectives | Reduction in the use of natural resources following circularity actions of materials and water |   |   |
 |  Information, capacity building and citizen involvement | Implementation and continuation of current municipal policies and initiatives for the training and involvement of citizens for reduction, reuse, and recycling | Increase in virtuous practices by citizens | Greater permeability of circular economy principles |   |
@@ -2439,7 +2450,7 @@ B-1.1: Impact pathways - IPPU
 |  Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (emission reduction) | Indirect impacts (co-benefits)  |
 | --- | --- | --- | --- | --- |
 |  Technology and infrastructure | Innovation in the processes and services provided | Technological development | Reduction of emissions | Increased competitiveness  |
-|   |  Digitalization of the service offering | Change in usage habits | Process efficiency | Greater capillarity of health services
+|   |  Digitalization of the service offering | Change in usage habits | Process efficiency | Greater capillarity of health services |
 Improvement of the healthiness of the urban environment  |
 #
 
@@ -2485,16 +2496,18 @@ Increased resilience of the city system
 Reduction of inequalities and energy poverty
 Strengthening the local economy and attractiveness  |
 | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- |
 |   |  Consolidation of local external governance | Local ecosystem institutionalized for climate neutrality  |   |   |
 |   |  Consolidation of multilevel dialogue and cooperation | National and regional policy and regulatory framework to support neutrality  |   |   |
 |   |  Evaluation of Citizens Assembly for climate's proposals by the City Council | Implementation of actions approved by the City Council  |   |   |
-|  Social innovation, information, capacity building and involvement of citizens and stakeholders | Continuation and strengthening of the activities of the Energy Desk | Strengthening of the help desk with additional services | Increased awareness | Reduction of energy poverty
+|  Social innovation, information, capacity building and involvement of citizens and stakeholders | Continuation and strengthening of the activities of the Energy Desk | Strengthening of the help desk with additional services | Increased awareness | Reduction of energy poverty |
 Greater access to clean and affordable energy
 Greater community participation in the Mission
 Increased access to information, awareness and behavior change  |
 |   |  Continuation and strengthening of the activities of the Energy and Environment Showroom | Strengthening of Showroom activities | Increase in virtuous behaviors
 Increase in private initiatives for the energy transition  |   |
 |   |  Activation of a community of good practices linked to the Climate Mission | Active design by the community of good practices | Expansion of the stakeholder audience for the Climate Mission  |   |
+| --- | --- | --- | --- | --- |
 |  Increasing knowledge and skills for the climate transition | Internal training within the municipal administration | Dissemination of a basic culture of climate neutrality across all Departments | Greater capacity for coordination between Departments and transversal planning consistent with neutrality | Greater diffusion of sustainable practices  |
 |   |  Training outside the municipal administration | Widespread increase in skills for the energy and climate transition among professionals and sector operators | Greater number of projects compliant with neutrality requirements  |   |
 
@@ -2990,7 +3003,7 @@ Climate Neutrality Action Plan
 
 |   |  | promotes transversal skills and technical capabilities that are essential for the future. Financing partly Carisbo partly Golinelli.  |
 | --- | --- | --- |
-|  CRIF | Sustainable mobility | • Inclusion of sustainable mobility among the 4 pillars of the CRIF Environmental Policy.
+|  CRIF | Sustainable mobility | • Inclusion of sustainable mobility among the 4 pillars of the CRIF Environmental Policy. |
 • Adoption of a corporate Mobility Manager with the aim of measuring, analyzing, designing and monitoring new mobility solutions that meet the travel needs of the company population.
 • Three-year Mobility Management agreement with the Municipality of Bologna
 • Introduction of a Mobility Plan to support employees in travel, home-work and personal mobility which includes agreements for the use of alternative transport modes to the private car (e.g. contribution for the purchase of an annual LPT subscription and discounts on the use of urban car sharing)
@@ -3198,13 +3211,14 @@ O
 |  Increase in urban green spaces | NA | #8 | Municipal tree budget | 90,000 | 95,000 | 100,000  |
 |  Improving the healthiness of the urban environment | NA | #9 | Concentration of pollutants in the air: NO2 | 35 | 30 | 20 μg/m3  |
 |  Change in consumption styles | NA | #10 | Domestic water consumption per capita (l/day/inhabitant) | 141 | 137 | 130  |
-|  Modal split movements | All stocks in the transport sector | #11 | % | - | - | Car: 22%
+|  Modal split movements | All stocks in the transport sector | #11 | % | - | - | Car: 22% |
 TPM: 28%
 Feet 27%
 Bike: 18%
 Motorcycle: 4%
 Other: 1  |
 |  Biciplan implementation | Biciplan | #12 | % Biciplan strategic cycle network implemented | 70% (61km) | - | 100% (86km)  |
+| --- | --- | --- | --- | --- | --- | --- |
 |  Per capita reduction in emissions | NA | #13 | Net GHG emissions per capita |  |  | 0  |
 |  Total reduction of emissions | NA | #14 | Total net GHG emissions |  |  | 0  |
 
@@ -3240,6 +3254,7 @@ provides evidence of the city's ability to reduce its dependence on fossil fuels
 |  Expected availability | Annual  |
 |  References |   |
 |  Other indicator systems using this indicator | DUP (Documento Unico Programmazione) - the Municipality Programming Document  |
+
 |  B-3.2: Indicator Metadata  |   |
 | --- | --- |
 |  Indicator Name | Municipal tree budget  |
@@ -3286,6 +3301,7 @@ Plan
 |  Expected availability | Monitoring is carried out daily  |
 |  References  |   |
 |  Other indicator systems using this indicator | Air quality report  |
+
 |  B-3.2: Indicator Metadata  |   |
 | --- | --- |
 |  Indicator Name | Domestic water consumption per capita  |
@@ -3323,14 +3339,14 @@ The quantification of the effect of these actions is included, within Module B, 
 
 |  C.1.1: Enabling organisational and Governance innovations  |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
-|  Intervention name | Description | Responsible organisation/de partmen t/person | Stakeholders involved | Enabling impact | Co-benefits | Reference to barriers  |
-|  Climate Transition Team (refer to chapter 2.1 of the Action Plan for details) | A core team that manages the Mission. The team is coordinated by the Deputy Mayor in charge of the Mission, and composed of representatives of the Municipality, supported by two external parties (AESS and Fondazione per l'Innovazione Urbana, Rusconi, Villa Ghigi). | Deputy mayor in charge of the Mission
+|  Intervention name | Description | Responsible organisation/department/person | Stakeholders involved | Enabling impact | Co-benefits | Reference to barriers  |
+|  Climate Transition Team (refer to chapter 2.1 of the Action Plan for details) | A core team that manages the Mission. The team is coordinated by the Deputy Mayor in charge of the Mission, and composed of representatives of the Municipality, supported by two external parties (AESS and Fondazione per l'Innovazione Urbana, Rusconi, Villa Ghigi). | Deputy mayor in charge of the Mission | | | | |
 Person in charge of strategic urban projects at the Municipality Chief Administrative Office | Municipality of Bologna
 Fondazione per l'Innovazione Urbana, Rusconi, Villa Ghigi
 Agency for Energy and Sustainable Development (AESS) | The team manages the Mission and the development of the Climate City Contract, coordinating the key processes (internal and external to the Municipality) to achieve the objectives. | Improved dialogue and collaboration within the municipal administration
 Greater cross-sector coordination
 Greater effectiveness of local policies and local action for the climate transition | Barrier T2  |
-|  Building internal transvers al governance for the | Involvement of all sectors of the Municipality and the City Council in the Mission, through: | Climate Transition Team | Municipality of Bologna, representatives of all sectors and deputy | This intervention is aimed at overcoming the silos functioning of the local | Increased awareness and consensus towards the | Barrier T2, T4, T5  |
+|  Building internal transversal governance for the | Involvement of all sectors of the Municipality and the City Council in the Mission, through: | Climate Transition Team | Municipality of Bologna, representatives of all sectors and deputy | This intervention is aimed at overcoming the silos functioning of the local | Increased awareness and consensus towards the | Barrier T2, T4, T5  |
 Comune di Bologna
 
 Climate Neutrality Action
@@ -3347,7 +3363,8 @@ AESS (technical support) | authority, activating widespread awareness on the obj
 The Focus groups identified the obstacles and opportunities towards climate neutrality from the point of view of each municipal Department/Sector and contributed to the identification of synergistic and transversal actions and strategies. They also contributed, together with actions to strengthen skills, to increasing awareness of the Mission and laid the foundations for greater collaboration between Departments and municipal sectors. | energy transition and climate neutrality
 Greater effectiveness and efficiency of public policies |   |
 | --- | --- | --- | --- | --- | --- | --- |
-|  External governance at local level | In order to open up the possibility of participating in the Bologna Missione Clima to all the city's stakeholders, thus creating a shared governance of the Mission in the municipal territory, the following have been activated:
+| --- | --- | --- | --- | --- | --- | --- |
+|  External governance at local level | In order to open up the possibility of participating in the Bologna Missione Clima to all the city's stakeholders, thus creating a shared governance of the Mission in the municipal territory, the following have been activated: | | | | | |
 a launch event of the Climate Mission (19 December 2022)
 numerous 1:1 meetings with Mission partners and new potential local partners to collect and define actions and investments for the CCC;
 an envisioning event of Bologna as a neutral city (5 June 2023); | Climate Transition Team | Municipality of Bologna
@@ -3365,7 +3382,7 @@ Plan
 
 |   | - a call to action for the widest possible involvement of the territory (October 2023). |  |  |  | consensus towards the energy transition and climate neutrality |   |
 | --- | --- | --- | --- | --- | --- | --- |
-|  Multilevel governance | The city has started working groups at different levels, both with institutions and with public and private entities relevant to the climate transition.
+|  Multilevel governance | The city has started working groups at different levels, both with institutions and with public and private entities relevant to the climate transition. | | | | | |
 Fundamental in this sense is the network of the nine Italian cities of the Mission | Climate Transition Team | Municipality of Bologna
 Metropolitan City of Bologna
 Emilia Romagna Region
@@ -3393,7 +3410,8 @@ Energy Center (Polytechnic University of Turin) |  | stakeholders
 Greater community participation in the Mission
 Increased awareness and consensus towards the energy transition and climate neutrality |   |
 | --- | --- | --- | --- | --- | --- | --- |
-|  The Citizens' Assembly for Climate | The Citizen Assembly is an institute of deliberative participatory democracy, formally introduced in the Statute of the Municipality of Bologna in 2021. The first assembly was called by the City Council in December 2022 on the climate theme. | Responsible for Strategic Urban Projects - Chief Administrative Office
+| --- | --- | --- | --- | --- | --- | --- |
+|  The Citizens' Assembly for Climate | The Citizen Assembly is an institute of deliberative participatory democracy, formally introduced in the Statute of the Municipality of Bologna in 2021. The first assembly was called by the City Council in December 2022 on the climate theme. | Responsible for Strategic Urban Projects - Chief Administrative Office | | | | |
 Ecological Transition in Sector and Climate Office
 Fondazione Innovazione Urbana-Rusconi-Villa Ghigi | Municipality of Bologna
 Members of the Assembly
@@ -3405,7 +3423,7 @@ Improved dialogue and collaboration between institutions, citizens and stakehold
 |  C.1.1: Regulatory innovations |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |  Intervention name | Description | Responsible organisation/department/person | Stakeholders involved | Enabling impact | Co-benefits | Reference to barriers  |
-|  National Climate Law | The Municipality of Bologna believes it is necessary to promote a national climate law as it has happened in other European countries | National Government | Municipality of Bologna
+|  National Climate Law | The Municipality of Bologna believes it is necessary to promote a national climate law as it has happened in other European countries | National Government | Municipality of Bologna | | | |
 Network of Italian Mission cities
 Other institutions | This new national law could provide a significant external contribution to Italian cities currently committed to the 2030 climate neutrality objective | Greater local energy autonomy
 Fight against energy poverty | Barrier T1  |
@@ -3423,7 +3441,8 @@ Increase in value of properties
 Increase and stimulus of the circular economy
 Greater access to clean and affordable energy | Barrier T1  |
 | --- | --- | --- | --- | --- | --- | --- |
-|  National decree for the definition of areas suitable for the installation of energy production systems from renewable sources. | Compared to the existing Decree, the Municipality of Bologna believes that it is necessary to promote further regulatory and procedural simplifications, a greater possibility for innovative agri voltaics; strengthen incentives for designated renewable sources
+| --- | --- | --- | --- | --- | --- | --- |
+|  National decree for the definition of areas suitable for the installation of energy production systems from renewable sources. | Compared to the existing Decree, the Municipality of Bologna believes that it is necessary to promote further regulatory and procedural simplifications, a greater possibility for innovative agrivoltaics; strengthen incentives for designated renewable sources | | | | | |
 especially to the spread of small systems, eliminating those referable to fossil sources. | National government | Municipality of Bologna
 Network of Italian Mission cities
 Other institutions | Expansion of renewable plants at national and local level, starting with photovoltaic ones, further simplification of authorizations and the review of the forms of public economic support for the various sources of renewable energy | Barrier T1 | Barrier T1  |
@@ -4013,7 +4032,8 @@ Greater diffusion of sustainable practices
 Increased awareness and consensus towards the energy transition and climate neutrality
 Change in consumption style  |
 | --- | --- | --- | --- | --- | --- |
-|  “Bologna Innovation Ecosystem” event (23 March 2023) | Organized as part of the European CITIES 4.0 project, it is one of the events held in the four participating cities to activate innovation ecosystems that contribute to the Mission. | Fondazione per l'Innovazione Urbana-Rusconi-Villa Ghigi (as partner of the CITIES 4.0 project) | 50 participants representing Bologna organizations working on the built environment and researchers from the University of Bologna | Activation of an innovation ecosystem for climate neutrality (buildings sector) among city actors dealing with R&I in the built environment (Barriers B1, B2, B3 - ref. Module A3) | Improved dialogue and collaboration between institutions, citizens and stakeholders
+| --- | --- | --- | --- | --- | --- |
+|  “Bologna Innovation Ecosystem” event (23 March 2023) | Organized as part of the European CITIES 4.0 project, it is one of the events held in the four participating cities to activate innovation ecosystems that contribute to the Mission. | Fondazione per l'Innovazione Urbana-Rusconi-Villa Ghigi (as partner of the CITIES 4.0 project) | 50 participants representing Bologna organizations working on the built environment and researchers from the University of Bologna | Activation of an innovation ecosystem for climate neutrality (buildings sector) among city actors dealing with R&I in the built environment (Barriers B1, B2, B3 - ref. Module A3) | Improved dialogue and collaboration between institutions, citizens and stakeholders |
 Greater community participation in the Mission  |
 |  Participatory budgeting | Tool for involving the citizens of Bologna directly in the design of new projects for the neighborhoods. In the 2023 edition, particular attention was paid to the issues of environmental sustainability and the climate | Fondazione per l'Innovazione Urbana - Rusconi-Villa Ghigi and Municipality of Bologna (Department of Public Works, Green and Mobility, Communications Office, Neighborhood Area) | Citizens (voters: 19,327)
 (528 participants in the Neighborhood Workshops for carrying out the BP). | The projects presented in 2023 were developed taking into consideration the objectives of the Mission and any impacts as criteria. (T6 Barriers) | Improved dialogue and collaboration between institutions, citizens and stakeholders
@@ -4049,7 +4069,8 @@ Greater diffusion of sustainable practices
 Increased awareness and consensus towards the energy transition and climate neutrality
 Change in consumption styles  |
 | --- | --- | --- | --- | --- | --- |
-|  The PHOENIX project and the Neighborhood Houses | Bologna is one of the testing areas of the H2020 Phoenix project and from 2023 will test the co-planning of actions in neighborhood houses in order to bring citizens closer to the Missione Clima. | Fondazione Innovazione Urbana-Rusconi-Villa Ghigi in collaboration with the University of Florence (project partner) | Municipality of Bologna, Neighborhood Houses, some members of the Climate Assembly, citizens | The experimentation will activate new tools to raise awareness and support citizens in the energy and climate transition at neighborhood level (Barrier T6 - ref. Module A3) | Improved dialogue and collaboration between institutions, citizens and stakeholders
+| --- | --- | --- | --- | --- | --- |
+|  The PHOENIX project and the Neighborhood Houses | Bologna is one of the testing areas of the H2020 Phoenix project and from 2023 will test the co-planning of actions in neighborhood houses in order to bring citizens closer to the Missione Clima. | Fondazione Innovazione Urbana-Rusconi-Villa Ghigi in collaboration with the University of Florence (project partner) | Municipality of Bologna, Neighborhood Houses, some members of the Climate Assembly, citizens | The experimentation will activate new tools to raise awareness and support citizens in the energy and climate transition at neighborhood level (Barrier T6 - ref. Module A3) | Improved dialogue and collaboration between institutions, citizens and stakeholders |
 Greater community participation in the Mission
 Increased access to information, awareness and behavior change  |
 Comune di Bologna
@@ -4061,7 +4082,8 @@ Climate Neutrality Action Plan
 |  H2020 FAST TRACK – Fostering the Acceleration of Sustainable Transport To Regions and Authorities Through Capacity and Knowledge | The project aims to create a thematic community of mutual learning to transfer innovations in the field of sustainable mobility. | Coordinated by ICLEI Europe
 For the Municipality of Bologna: Sustainable Mobility and Infrastructure Sector; Europe and International Sector | 24 European cities, Eurocities and 4 research institutions are participating in the project. | Capacity building and exchange of best practices between European cities on sustainable mobility (MT Barriers - ref. Module A3) | Improvement of the healthiness of the urban environment (starting from air quality)  |
 | --- | --- | --- | --- | --- | --- |
-|  ENLIGHTENme - Innovative policies for improving citizens' health and wellbeing addressing indoor and outdoor lighting | The project acts on the two fronts of external public lighting and indoor lighting, to study the connections between lighting and health | Coordinated by the University of Bologna
+| --- | --- | --- | --- | --- | --- |
+|  ENLIGHTENme - Innovative policies for improving citizens' health and wellbeing addressing indoor and outdoor lighting | The project acts on the two fronts of external public lighting and indoor lighting, to study the connections between lighting and health | Coordinated by the University of Bologna | | | |
 For the Municipality of Bologna: Health and Healthy Cities Office (Welfare and Community Wellbeing Department) - lead partner / Maintenance (Public Works, Mobility and Heritage Department); Europe and International Sector | Partners in Bologna:
 University of Bologna ISNB IRCCS - Institute of Neurological Sciences of Bologna, Municipality of Bologna, Fondazione per l'Innovazione Urbana, Rusconi, Villa Ghigi , and 18 other Italian and European partners | The research activities conducted contribute to raising awareness of the link between lighting, environment and public health, confirming the co-benefits of innovative lighting systems on health (Barriers T5,6 ref. Module A3) | Positive impacts on health  |
 |  #ClimateOfChange: End Climate Change, Start Climate of Change | Production of knowledge, facts and guidelines for communication on the link between economic models, climate change and migration, Raising awareness of young people on the topic. | Coordinated by WeWorld
@@ -4079,7 +4101,8 @@ to policies of Air | Improvement of air quality in the Po Valley area and in Slo
 
 For the Municipality of Bologna: Ecological Transition/Sustainable Mobility and Infrastructure Sector; Europe and International Sector | 6 Italian regions, 7 regional environmental protection agencies, three municipalities, including Bologna, 1 regional development agency and 1 foundation are participating in the project | Important impact on raising the awareness of citizens and socio-economic actors and strengthening the network of institutions and stakeholders on the topic of air quality, which is strongly linked to the climate. (Barriers T1, T5 - ref. Module A3) | Improvement of the healthiness of the urban environment (starting from air quality)  |
 | --- | --- | --- | --- | --- | --- |
-|  LIFE CLIVUT - Climate Value of Urban Trees | Enhancement of the potential of urban trees to mitigate the effects of pollution. Awareness raising and participation of citizens in awareness-raising activities. Educational actions. Awareness actions also aimed at the business and academic world. | Coordinated by University of Perugia
+| --- | --- | --- | --- | --- | --- |
+|  LIFE CLIVUT - Climate Value of Urban Trees | Enhancement of the potential of urban trees to mitigate the effects of pollution. Awareness raising and participation of citizens in awareness-raising activities. Educational actions. Awareness actions also aimed at the business and academic world. | Coordinated by University of Perugia | | | |
 
 For the Municipality of Bologna: Mobility Department, Public Works, Ecological Transition Sector; Europe and International Sector | Municipality of Bologna, citizens, students, planners, businesses Other project partners | Increased awareness among citizens, technicians and businesses on the contribution of greenery and trees on air quality and the urban climate; increase in management and maintenance capabilities of urban greenery. (T5 barriers - ref. Module A3) | Improvement of the healthiness of the urban environment (starting from air quality)
 
@@ -4101,7 +4124,8 @@ For the Municipality of Bologna: Culture Department | University of Bologna, Mun
 Fight against energy poverty
 Increase and stimulus of the circular economy  |
 | --- | --- | --- | --- | --- | --- |
-|  REALLOCATE - Rethinking the design of streets And public spaces to Leverage the mOdal shift to Climate-friendly Active Transport Everywhere | Nudging solutions will also be tested in all the pilot cities of the project, i.e. communication tools to push for a change in behaviour with respect to the use of cycle and pedestrian traffic. | Coordinator: University College of Dublin (UCD)
+| --- | --- | --- | --- | --- | --- |
+|  REALLOCATE - Rethinking the design of streets And public spaces to Leverage the mOdal shift to Climate-friendly Active Transport Everywhere | Nudging solutions will also be tested in all the pilot cities of the project, i.e. communication tools to push for a change in behaviour with respect to the use of cycle and pedestrian traffic. | Coordinator: University College of Dublin (UCD) | | | |
 For the Municipality of Bologna: Mobility Department - UI Impronta Verde; Europe and International Sector | Municipality of Bologna, citizens
 Other project partners | On the north-east axis of Bologna (Road of Knowledge): Redesign of a school square with street furniture interventions and new technologies in order to make access to the school safer for all users and to reduce CO2 consumption, promoting active mobility (Barrier MT1) | Improved dialogue and collaboration between institutions, citizens and stakeholders
 Greater community participation in the Mission
@@ -6012,29 +6036,24 @@ Comune di Bologna
 
 Climate Neutrality Action Plan
 
-|  Sector | Action | ID | Stakeholders | Description  |
-| --- | --- | --- | --- | --- |
-|  Buildings | Biomethane production | 2 | HERA | The organic waste of the Municipality of Bologna is sent to the Herambiente plant able to process 135,000 tons annually and to generating 80 millions of cubic meters of biomethane and 20,000 tons of compost.  |
-|  Buildings | Energy efficiency of the IDAR water treatment plant | 3 | HERA | Installation of a filtration and oxidation plant and of the process controller for energy consumption optimization through real time monitoring of the parameters in the basin  |
-|  Buildings | Energy efficiency improvement of IDAR plant lifting | 4 | HERA | Improving the efficiency of the initial lift system through progressive replacement of the lift augers.  |
-|  Buildings | Energy efficiency of pumping systems | 5 | HERA | Replacement of the existing engines with higher efficiency ones
-Installation of new pumping system for suspended tank elimination  |
-|  Buildings | DHS efficiency | 6 | HERA | Installation of new heat generator with economizer
-Installation for optimization of the heat recovery from cogenerators
-Extraordinary maintenance of heat exchangers S. Giacomo  |
-|  Buildings | LED revamping | 7 | HERA | Energy revamping through LEDs lamps  |
-|  Buildings | Energy efficiency of gas systems and networks | 8 | HERA | Net re-layout to maximize the operation of the turboexpander
-Installation of a new turboexpander
-Improving the efficiency of the pumping system of the thermal plant  |
-|  Buildings | Power to Methane | 9 | HERA | Realization, at the IDAR wastewater treatment plant in Bologna, of an experimental plant of biological methanation. Investment covered for the 84% by NRRP; 16% Integrated water service.  |
-|  Buildings | Calderara RES installation | 10 | HERA | Photovoltaic Installation at the aqueducts station San Vitale of 4.3 MW  |
-|  Buildings | Energy Park | 11 | HERA/other subjects | Strategic projects for production of renewable electricity integrating the agrivoltaic park. The energy generated will be then sold to businesses that will be able to acquire Energy Park shares at discounted rates. It is estimated that the intervention covers about 1700 ha with a production of 1,320,000 MWh/year  |
-|  Buildings | Energy Park agriPV Technopole and reforestation | 12 | HERA | Agrivoltaic plant that will be developed in an area privately owned inside the territory of the Municipality of Bologna, on which Hera has acquired the right. The wooded area will interest an area owned by the Municipality of Bologna adjacent to the area dedicated at the production of renewable energy.  |
-|  Buildings | Expansion of the DH network | 13 | HERA | Interconnection CAAB-Pilastro and Berti-San Giacomo. The project predicts to connect 4 District Heating systems currently isolated through the implementation of about 8.3 km of the principal network (current network approximately 36 km). The project includes the increase in capacity of the thermal generation section at the Waste To Energy "Frullo" for the power supply of the 4 interconnected systems.  |
-|  Buildings | PV 161.3 kWp | 14 | CAAB | Photovoltaic Plant with annual production of 209.44 MWh/year of photovoltaic + 500 kWh of storage  |
-|  Buildings | Establishment of a REC | 16 | CAAB | Agreement Protocol between CAAB, AGER and FEDAGRO ACMO  |
-|  Buildings | Food City Logistics: PV on shelters - 1.4 MWp | 17 | CAAB | Photovoltaic Plant on car parks shelters across 14,000 m² and about 1.5 MWh  |
-|  Buildings | Electrification of buildings | 18 | Airport | Decarbonization of the thermal plants of the airport from gas to electric  |
+|  Sector | Action | ID | Stakeholders | Description  | |
+| --- | --- | --- | --- | --- | |
+|  Buildings | Biomethane production | 2 | HERA | The organic waste of the Municipality of Bologna is sent to the Herambiente plant able to process 135,000 tons annually and to generating 80 millions of cubic meters of biomethane and 20,000 tons of compost.  | |
+|  Buildings | Energy efficiency of the IDAR water treatment plant | 3 | HERA | Installation of a filtration and oxidation plant and of the process controller for energy consumption optimization through real time monitoring of the parameters in the basin  | |
+|  Buildings | Energy efficiency improvement of IDAR plant lifting | 4 | HERA | Improving the efficiency of the initial lift system through progressive replacement of the lift augers.  | |
+|  Buildings | Energy efficiency of pumping systems | 5 | HERA | Replacement of the existing engines with higher efficiency ones<br>Installation of new pumping system for suspended tank elimination  | |
+|  Buildings | DHS efficiency | 6 | HERA | Installation of new heat generator with economizer<br>Installation for optimization of the heat recovery from cogenerators<br>Extraordinary maintenance of heat exchangers S. Giacomo  | |
+|  Buildings | LED revamping | 7 | HERA | Energy revamping through LEDs lamps  | |
+|  Buildings | Energy efficiency of gas systems and networks | 8 | HERA | Net re-layout to maximize the operation of the turboexpander<br>Installation of a new turboexpander<br>Improving the efficiency of the pumping system of the thermal plant  | |
+|  Buildings | Power to Methane | 9 | HERA | Realization, at the IDAR wastewater treatment plant in Bologna, of an experimental plant of biological methanation. Investment covered for the 84% by NRRP; 16% Integrated water service.  | |
+|  Buildings | Calderara RES installation | 10 | HERA | Photovoltaic Installation at the aqueducts station San Vitale of 4.3 MW  | |
+|  Buildings | Energy Park | 11 | HERA/other subjects | Strategic projects for production of renewable electricity integrating the agrivoltaic park. The energy generated will be then sold to businesses that will be able to acquire Energy Park shares at discounted rates. It is estimated that the intervention covers about 1700 ha with a production of 1,320,000 MWh/year  | |
+|  Buildings | Energy Park agriPV Technopole and reforestation | 12 | HERA | Agrivoltaic plant that will be developed in an area privately owned inside the territory of the Municipality of Bologna, on which Hera has acquired the right. The wooded area will interest an area owned by the Municipality of Bologna adjacent to the area dedicated at the production of renewable energy.  | |
+|  Buildings | Expansion of the DH network | 13 | HERA | Interconnection CAAB-Pilastro and Berti-San Giacomo. The project predicts to connect 4 District Heating systems currently isolated through the implementation of about 8.3 km of the principal network (current network approximately 36 km). The project includes the increase in capacity of the thermal generation section at the Waste To Energy "Frullo" for the power supply of the 4 interconnected systems.  | |
+|  Buildings | PV 161.3 kWp | 14 | CAAB | Photovoltaic Plant with annual production of 209.44 MWh/year of photovoltaic + 500 kWh of storage  | |
+|  Buildings | Establishment of a REC | 16 | CAAB | Agreement Protocol between CAAB, AGER and FEDAGRO ACMO  | |
+|  Buildings | Food City Logistics: PV on shelters - 1.4 MWp | 17 | CAAB | Photovoltaic Plant on car parks shelters across 14,000 m² and about 1.5 MWh  | |
+|  Buildings | Electrification of buildings | 18 | Airport | Decarbonization of the thermal plants of the airport from gas to electric  | |
 Comune di Bologna
 
 O
@@ -6213,28 +6232,24 @@ Comune di Bologna
 
 Climate Neutrality Action Plan
 
-|  Sector | Action | ID | Stakeholders | Description  |
-| --- | --- | --- | --- | --- |
-|  Transport | Biofuel from waste oils | 1 | HERA | Collection and valorisation of Used Vegetable Oils (OVE) in order to produce 100% biofuel of plant origin. The oil is collected by citizens, restaurants and some canteens in the municipal area using special containers  |
-|  Transport | Purchase of electric vehicles | 22 | Airport | Replacement of the airport company fleet with electric vehicles  |
-|  Transport | Installation of electric car charging stations | 23 | Airport | Installation of 32 columns installed landside  |
-|  Transport | Implementation of charging columns for airport vectors | 24 | Airport | Installation of 8 airside columns for airport carriers  |
-|  Transport | Mobility Manager of the airport area | 25 | Airport | The airport area mobility manager has been appointed with the task of analysing, managing and monitoring traffic flows and transport to and from Bologna Airport, activating agreements, promoting and enhancing new, more sustainable methods of access to the airport  |
-|  Transport | Eurovelo 7 creation | 26 | Airport | The project is part of the attempt to increase bike to work and cycle tourism thanks to the presence of a supervised bike station and other infrastructures dedicated to the air transport of bicycles  |
-|  Transport | Actions to promote soft mobility | 27 | Airport | Bike station available to passengers and employees
-Ridemovi bike sharing hub available to passengers and employees
-Bike to work project, to encourage home-work travel by bicycle
-FIAB bike friendly airport certification  |
-|  Transport | MuoviAMOci project | 28 | Airport | Pilot project currently applied only to employees: integrate the public transport fare system by also including shared transport for accessibility to the airport. Annual investment value  |
-|  Transport | Public transport employees | 45 | AUO BO | Financial incentive recognition for employees who sign up for annual subscriptions in accordance with the methods set out in the specific Regulation (agreement with TPER). Annual investment value  |
-|  Transport | Bike to Work project | 46 | AUO BO | Mileage reimbursements for employees who travel from home to work by bicycle  |
-|  Transport | Soft mobility | 47 | AUO BO | Creation of protected fenced parking for employee bicycles in pavilion 2 and pavilion 1 (30+20 bicycle spaces), bike charging points, totem for small repairs  |
-|  Transport | Car pooling project | 48 | AUO BO | Increase in parking spaces dedicated to the Carpooling project (n. 10)
-Installation of totems for displaying reservations (Hall 23, Hall 5 and Zaccherini-Alvisi car park)  |
-|  Transport | Soft mobility promotion | 60 | AUSL BO | Protected parking for employee bicycles in the area overlooking the Ospedale Maggiore canteen  |
-|  Transport | Bike to Work | 61 | AUSL BO | Mileage reimbursements for employees who travel from home to work by bicycle  |
-|  Transport | Incentives for commuting to work | 62 | AUSL BO | Recognition of financial incentives for employees who sign up for annual subscriptions in accordance with the methods set out in the specific Regulation (agreement with TPER)  |
-|  Transport | Increase the use of LPT | 69 | IOR BO | Introduction of incentives to reduce the use of private vehicles  |
+|  Sector | Action | ID | Stakeholders | Description  | |
+| --- | --- | --- | --- | --- | |
+|  Transport | Biofuel from waste oils | 1 | HERA | Collection and valorisation of Used Vegetable Oils (OVE) in order to produce 100% biofuel of plant origin. The oil is collected by citizens, restaurants and some canteens in the municipal area using special containers  | |
+|  Transport | Purchase of electric vehicles | 22 | Airport | Replacement of the airport company fleet with electric vehicles  | |
+|  Transport | Installation of electric car charging stations | 23 | Airport | Installation of 32 columns installed landside  | |
+|  Transport | Implementation of charging columns for airport vectors | 24 | Airport | Installation of 8 airside columns for airport carriers  | |
+|  Transport | Mobility Manager of the airport area | 25 | Airport | The airport area mobility manager has been appointed with the task of analysing, managing and monitoring traffic flows and transport to and from Bologna Airport, activating agreements, promoting and enhancing new, more sustainable methods of access to the airport  | |
+|  Transport | Eurovelo 7 creation | 26 | Airport | The project is part of the attempt to increase bike to work and cycle tourism thanks to the presence of a supervised bike station and other infrastructures dedicated to the air transport of bicycles  | |
+|  Transport | Actions to promote soft mobility | 27 | Airport | Bike station available to passengers and employees<br>Ridemovi bike sharing hub available to passengers and employees<br>Bike to work project, to encourage home-work travel by bicycle<br>FIAB bike friendly airport certification  | |
+|  Transport | MuoviAMOci project | 28 | Airport | Pilot project currently applied only to employees: integrate the public transport fare system by also including shared transport for accessibility to the airport. Annual investment value  | |
+|  Transport | Public transport employees | 45 | AUO BO | Financial incentive recognition for employees who sign up for annual subscriptions in accordance with the methods set out in the specific Regulation (agreement with TPER). Annual investment value  | |
+|  Transport | Bike to Work project | 46 | AUO BO | Mileage reimbursements for employees who travel from home to work by bicycle  | |
+|  Transport | Soft mobility | 47 | AUO BO | Creation of protected fenced parking for employee bicycles in pavilion 2 and pavilion 1 (30+20 bicycle spaces), bike charging points, totem for small repairs  | |
+|  Transport | Car pooling project | 48 | AUO BO | Increase in parking spaces dedicated to the Carpooling project (n. 10)<br>Installation of totems for displaying reservations (Hall 23, Hall 5 and Zaccherini-Alvisi car park)  | |
+|  Transport | Soft mobility promotion | 60 | AUSL BO | Protected parking for employee bicycles in the area overlooking the Ospedale Maggiore canteen  | |
+|  Transport | Bike to Work | 61 | AUSL BO | Mileage reimbursements for employees who travel from home to work by bicycle  | |
+|  Transport | Incentives for commuting to work | 62 | AUSL BO | Recognition of financial incentives for employees who sign up for annual subscriptions in accordance with the methods set out in the specific Regulation (agreement with TPER)  | |
+|  Transport | Increase the use of LPT | 69 | IOR BO | Introduction of incentives to reduce the use of private vehicles  | |
 Comune di Bologna
 
 Climate Neutrality Action Plan
@@ -6283,23 +6298,20 @@ Comune di Bologna
 
 Climate Neutrality Action Plan
 
-|  Sector | Action | ID | Stakeholders | Description  |
-| --- | --- | --- | --- | --- |
-|  Transport | Car and bike sharing mobility vouchers | 142 | Municipality of Bologna | Discounts offered to residents of the municipality of Bologna  |
-|  Transport | Adoption of Mobility Manager | 143 | Municipality of Bologna | Promotion of the creation of systems for the organisation, management and rationalization of the demand for private transport, in particular the mobility of company employees and the implementation of sustainable mobility policies applied to home-work travel  |
-|  Transport | Incentives for the purchase of electric bikes and pedal-assisted cargo bikes | 144 | Municipality of Bologna | The contribution includes 500 euros for pedal-assisted bicycles and 1,000 euros for pedal-assisted cargo bikes.  |
-|  Transport | SPINE project (Smart Public transport Initiatives for climate Neutral cities in Europe) | 145 | Municipality of Bologna | The SPINE project will support the implementation of two multimodal hubs, equipping them with various services and innovations to improve their sustainability, accessibility and inclusion (such as accessible electric charging stations and inclusive information services), and of other solutions for citizen mobility  |
-|  Transport | URBANE European Plan | 146 | Municipality of Bologna | Creation of three proximity logistics spaces, in areas identified near the avenues, close to the historic center. The local logistics spaces will be dedicated to the transfer of goods from traditional vans to electric vehicles and electric and muscle-powered cargo bikes  |
-|  Transport | Adoption of Mobility Manager | 205 | UniBo | The three-year annual mobility management plan has been prepared with the Municipality of Bologna as well as the annual Home-Work Travel Plan  |
-|  Transport | Strengthening the use of LPT | 206 | UniBo | Through an agreement with TPER, discounts and preferential rates promote annual public transport. The agreements also concern the branch offices of Forlì, Cesena, Ravenna and Rimini  |
-|  Transport | Strengthening cycling mobility | 207 | UniBo | Encourage an increase in the use of bicycles by offering parking, bicycle maintenance stations and marking services  |
-|  Transport | PV systems for charging stations | 209 | Authorized photovoltaic Installations | Building practices for photovoltaic system installation projects and areas to be used for charging electric vehicles with related stalls and columns  |
-|  Transport | Installation of charging stations | 223 | Toyota MHM | Installation of 2 additional charging stations for electric cars  |
-|  Transport | Vehicle replacement for company transport | 229 | Fondazione Golinelli | Replacement of a Euro 2 vehicle with a Fiat Ducato electric vehicle  |
-|  Transport | Sustainable Mobility | 241 | CRIF | • Inclusion of sustainable mobility among the 4 pillars of the CRIF Environmental Policy.
-• Adoption of a corporate Mobility Manager with the aim of measuring, analyzing, designing and monitoring new mobility solutions that meet the travel needs of the company population.
-• Three-year Mobility Management agreement with the Municipality of Bologna
-• Introduction of a Mobility Plan to support employees in travel, home-work and personal mobility which includes agreements for the use of alternative means of transport  |
+|  Sector | Action | ID | Stakeholders | Description  | |
+| --- | --- | --- | --- | --- | |
+|  Transport | Car and bike sharing mobility vouchers | 142 | Municipality of Bologna | Discounts offered to residents of the municipality of Bologna  | |
+|  Transport | Adoption of Mobility Manager | 143 | Municipality of Bologna | Promotion of the creation of systems for the organisation, management and rationalization of the demand for private transport, in particular the mobility of company employees and the implementation of sustainable mobility policies applied to home-work travel  | |
+|  Transport | Incentives for the purchase of electric bikes and pedal-assisted cargo bikes | 144 | Municipality of Bologna | The contribution includes 500 euros for pedal-assisted bicycles and 1,000 euros for pedal-assisted cargo bikes.  | |
+|  Transport | SPINE project (Smart Public transport Initiatives for climate Neutral cities in Europe) | 145 | Municipality of Bologna | The SPINE project will support the implementation of two multimodal hubs, equipping them with various services and innovations to improve their sustainability, accessibility and inclusion (such as accessible electric charging stations and inclusive information services), and of other solutions for citizen mobility  | |
+|  Transport | URBANE European Plan | 146 | Municipality of Bologna | Creation of three proximity logistics spaces, in areas identified near the avenues, close to the historic center. The local logistics spaces will be dedicated to the transfer of goods from traditional vans to electric vehicles and electric and muscle-powered cargo bikes  | |
+|  Transport | Adoption of Mobility Manager | 205 | UniBo | The three-year annual mobility management plan has been prepared with the Municipality of Bologna as well as the annual Home-Work Travel Plan  | |
+|  Transport | Strengthening the use of LPT | 206 | UniBo | Through an agreement with TPER, discounts and preferential rates promote annual public transport. The agreements also concern the branch offices of Forlì, Cesena, Ravenna and Rimini  | |
+|  Transport | Strengthening cycling mobility | 207 | UniBo | Encourage an increase in the use of bicycles by offering parking, bicycle maintenance stations and marking services  | |
+|  Transport | PV systems for charging stations | 209 | Authorized photovoltaic Installations | Building practices for photovoltaic system installation projects and areas to be used for charging electric vehicles with related stalls and columns  | |
+|  Transport | Installation of charging stations | 223 | Toyota MHM | Installation of 2 additional charging stations for electric cars  | |
+|  Transport | Vehicle replacement for company transport | 229 | Fondazione Golinelli | Replacement of a Euro 2 vehicle with a Fiat Ducato electric vehicle  | |
+|  Transport | Sustainable Mobility | 241 | CRIF | • Inclusion of sustainable mobility among the 4 pillars of the CRIF Environmental Policy.<br>• Adoption of a corporate Mobility Manager with the aim of measuring, analyzing, designing and monitoring new mobility solutions that meet the travel needs of the company population.<br>• Three-year Mobility Management agreement with the Municipality of Bologna<br>• Introduction of a Mobility Plan to support employees in travel, home-work and personal mobility which includes agreements for the use of alternative means of transport  | |
 Comune di Bologna
 
 Climate Neutrality Action Plan
@@ -6340,30 +6352,24 @@ Comune di Bologna
 
 Climate Neutrality Action Plan
 
-|  Sector | Action | ID | Stakeholders | Description  |
-| --- | --- | --- | --- | --- |
-|  Transversal | Purchase of green electricity | 19 | Airport | Green electricity purchase  |
-|  Transversal | Training/information/awareness | 31 | CNA | Diffusion of a culture in companies energy efficiency and the use of renewable sources. Annual investment value  |
-|  Transversal | Purchase of certified green electricity | 41 | AUO BO | Purchase of green electricity certified by Guarantee of Origin  |
-|  Transversal | Purchase of certified green electricity | 58 | AUSL BO | Purchase of certified green energy with Guarantee of Origin for the pumping systems  |
-|  Transversal | Telemedicine Implementation | 65 | AUSL BO | Projects in the studio: Tele-screening, TAO tele-reporting and digitalisation, VIRTUAL EYE CLINIC, tele-consultation, multi-specialist tele-consultation in CRAs, specialist GP tele-consultation  |
-|  Transversal | Purchase of certified green electricity | 70 | IOR BO | Purchase of certified green electricity with Guarantee of Origin from the central purchasing body  |
-|  Transversal | Telemedicine Implementation | 71 | All healthcare companies | Services provided by AUSL: televisi, remote reporting, multidisciplinary discussion, Services provided by AUO BO: televisi, telereporting, remote case discussion All services are active and further implementations are expected to start from 2024  |
-|  Transversal | Training Course | 73 | All healthcare companies | Environment and Health Programme: The course aims to actively involve healthcare workers in training and information courses on environmental and health issues and in concrete actions to reduce the use of plastics in favor of separate waste collection and recycling.  |
-|  Transversal | Purchase of electricity from renewable sources | 80 | TPER | Purchase of electricity from renewable sources. Intercenter is an energy supplier that has guaranteed supplies from renewable sources since 2019  |
-|  Transversal | Purchase of green energy | 82 | Emilbanca | Purchase through the BCC Energia consortium coming exclusively from renewables  |
-|  Transversal | Subsidized financing with energy and environmental objectives | 98 | Emilbanca | Subsidized loans: 58 total loans in 2023  |
-|  Transversal | Information campaigns on ESG topics | 99 | Emilbanca | 631 companies involved in 2023 alone; training meetings with 1500 companies involved and 1500 entrepreneurs of which 32.5% in the province of Bologna  |
-|  Transversal | Subsidized financing for investments with environmental objectives | 100 | Emilbanca | 21 loans in 2023. Type of investments:
-energy efficiency
-biological conversion
-sustainable mobility  |
-|  Transversal | Information campaigns for the agricultural sector on environmental issues | 101 | Emilbanca | Creation of training and awareness meetings with operators in the agri-food sector on the following topics:
-Energy saving and efficiency
-Energy production systems from renewable sources
-Use of water resources  |
-|  Transversal | Environmental and energy training of employees | 106 | Ducati | Development of mandatory training for all Ducati employees and collaborators on the topic of energy saving and the environmental impact of greenhouse gases  |
-|  Transversal | Purchase of certified green energy | 107 | Ducati | Purchase of certified green electricity from the grid for the energy not self-produced within the plant  |
+|  Sector | Action | ID | Stakeholders | Description  | |
+| --- | --- | --- | --- | --- | |
+|  Transversal | Purchase of green electricity | 19 | Airport | Green electricity purchase  | |
+|  Transversal | Training/information/awareness | 31 | CNA | Diffusion of a culture in companies energy efficiency and the use of renewable sources. Annual investment value  | |
+|  Transversal | Purchase of certified green electricity | 41 | AUO BO | Purchase of green electricity certified by Guarantee of Origin  | |
+|  Transversal | Purchase of certified green electricity | 58 | AUSL BO | Purchase of certified green energy with Guarantee of Origin for the pumping systems  | |
+|  Transversal | Telemedicine Implementation | 65 | AUSL BO | Projects in the studio: Tele-screening, TAO tele-reporting and digitalisation, VIRTUAL EYE CLINIC, tele-consultation, multi-specialist tele-consultation in CRAs, specialist GP tele-consultation  | |
+|  Transversal | Purchase of certified green electricity | 70 | IOR BO | Purchase of certified green electricity with Guarantee of Origin from the central purchasing body  | |
+|  Transversal | Telemedicine Implementation | 71 | All healthcare companies | Services provided by AUSL: televisi, remote reporting, multidisciplinary discussion, Services provided by AUO BO: televisi, telereporting, remote case discussion All services are active and further implementations are expected to start from 2024  | |
+|  Transversal | Training Course | 73 | All healthcare companies | Environment and Health Programme: The course aims to actively involve healthcare workers in training and information courses on environmental and health issues and in concrete actions to reduce the use of plastics in favor of separate waste collection and recycling.  | |
+|  Transversal | Purchase of electricity from renewable sources | 80 | TPER | Purchase of electricity from renewable sources. Intercenter is an energy supplier that has guaranteed supplies from renewable sources since 2019  | |
+|  Transversal | Purchase of green energy | 82 | Emilbanca | Purchase through the BCC Energia consortium coming exclusively from renewables  | |
+|  Transversal | Subsidized financing with energy and environmental objectives | 98 | Emilbanca | Subsidized loans: 58 total loans in 2023  | |
+|  Transversal | Information campaigns on ESG topics | 99 | Emilbanca | 631 companies involved in 2023 alone; training meetings with 1500 companies involved and 1500 entrepreneurs of which 32.5% in the province of Bologna  | |
+|  Transversal | Subsidized financing for investments with environmental objectives | 100 | Emilbanca | 21 loans in 2023. Type of investments:<br>energy efficiency<br>biological conversion<br>sustainable mobility  | |
+|  Transversal | Information campaigns for the agricultural sector on environmental issues | 101 | Emilbanca | Creation of training and awareness meetings with operators in the agri-food sector on the following topics:<br>Energy saving and efficiency<br>Energy production systems from renewable sources<br>Use of water resources  | |
+|  Transversal | Environmental and energy training of employees | 106 | Ducati | Development of mandatory training for all Ducati employees and collaborators on the topic of energy saving and the environmental impact of greenhouse gases  | |
+|  Transversal | Purchase of certified green energy | 107 | Ducati | Purchase of certified green electricity from the grid for the energy not self-produced within the plant  | |
 Comune di Bologna
 
 Climate Neutrality Action Plan
@@ -6408,12 +6414,11 @@ To join, it was necessary to be a public or private organisation, a third sector
 
 Below are the admitted organizations which will therefore be an active part of the Bologna Missione Clima process.
 
-|  Organization name | Number of actions | Action Type | Progress status | Website  |
-| --- | --- | --- | --- | --- |
-|  Progetto Ristrutturabilmente | 1 | Environmental, digital and technological innovation | In progress | http://www.ristrutturabilmente.it  |
-|  mammabo project di emmebo srl | 2 | - Reduction of consumption and energy needs;
-promotion of urban green and blue | In progress | http://www.mammabo.com  |
-|  Kilowatt | 2 | - Information, training | In progress | https://kilowatt.bp.it/  |
+|  Organization name | Number of actions | Action Type | Progress status | Website  | | | |
+| --- | --- | --- | --- | --- | | | |
+|  Progetto Ristrutturabilmente | 1 | Environmental, digital and technological innovation | In progress | http://www.ristrutturabilmente.it  | | | |
+|  mammabo project di emmebo srl | 2 | - Reduction of consumption and energy needs; | |<br>promotion of urban green and blue | In progress | http://www.mammabo.com  | |
+|  Kilowatt | 2 | - Information, training | In progress | https://kilowatt.bp.it/  | | | |
 Comune di Bologna
 
 Climate Neutrality Action Plan
@@ -6468,87 +6473,57 @@ Climate Neutrality Action Plan
 
 O
 
-|  SAM Project Srl | 1 | Information, training and dissemination | In progress | http://www.samproject.it  |
-| --- | --- | --- | --- | --- |
-|  M'Over Walking aps ASD |  | Information, training and dissemination | In progress | -  |
-|  Valentina Gozzi Studio - Giovanna Varotti Studio | 1 | Reduction of consumption and energy needs | In progress | http://giovannavarotti-studio.com e http://valentinagozzi-studio.it  |
-|  Diventare Alberi | 1 | Promotion of urban green and blue | To realize | https://www.diventarealberi.it/  |
-|  Ordine degli Architetti, Pianificatori, Paesaggisti e Conservatori di Bologna | 1 | Reduction of consumption and energy needs | In progress | http://www.archibo.it  |
-|  Associazione Dilettantistica Polisportiva Lame | 1 | Reduction of consumption and energy needs | To realize | http://www.polisportivalame.bologna.it/  |
-|  Go2RAIL aps | 1 | Reduction of consumption and energy needs | In progress | www.go2rail.eu  |
-|  Amici di Rigosa | 1 | Reduction of consumption and energy needs | In progress | -  |
-|  Ento Labs aps | 3 | - Reduction of consumption and energy needs
-Reduction of consumption and energy needs
-Information, training and dissemination | To realize | https://www.ento.ai/  |
-|  Camilla Emporio di Comunità Soc. Coop. | 1 | Circular economy | To realize | www.camilla.coop  |
-|  Abantu Società Cooperativa Sociale | 1 | Circular economy | In progress | www.coopabantu.it  |
-|  Day Ristoservice SpA Società Benefit | 3 | - Promotion of urban green and blue;
-Promotion of urban green and blue;
-Environmental, digital and technological innovation | - Completed;
-Completed;
-Finished | http://www.day.it  |
+|  SAM Project Srl | 1 | Information, training and dissemination | In progress | http://www.samproject.it  | | | |
+| --- | --- | --- | --- | --- | | | |
+|  M'Over Walking aps ASD |  | Information, training and dissemination | In progress | -  | | | |
+|  Valentina Gozzi Studio - Giovanna Varotti Studio | 1 | Reduction of consumption and energy needs | In progress | http://giovannavarotti-studio.com e http://valentinagozzi-studio.it  | | | |
+|  Diventare Alberi | 1 | Promotion of urban green and blue | To realize | https://www.diventarealberi.it/  | | | |
+|  Ordine degli Architetti, Pianificatori, Paesaggisti e Conservatori di Bologna | 1 | Reduction of consumption and energy needs | In progress | http://www.archibo.it  | | | |
+|  Associazione Dilettantistica Polisportiva Lame | 1 | Reduction of consumption and energy needs | To realize | http://www.polisportivalame.bologna.it/  | | | |
+|  Go2RAIL aps | 1 | Reduction of consumption and energy needs | In progress | www.go2rail.eu  | | | |
+|  Amici di Rigosa | 1 | Reduction of consumption and energy needs | In progress | -  | | | |
+|  Ento Labs aps | 3 | - Reduction of consumption and energy needs | |<br>Reduction of consumption and energy needs<br>Information, training and dissemination | To realize | https://www.ento.ai/  | |
+|  Camilla Emporio di Comunità Soc. Coop. | 1 | Circular economy | To realize | www.camilla.coop  | | | |
+|  Abantu Società Cooperativa Sociale | 1 | Circular economy | In progress | www.coopabantu.it  | | | |
+|  Day Ristoservice SpA Società Benefit | 3 | - Promotion of urban green and blue; | |<br>Promotion of urban green and blue;<br>Environmental, digital and technological innovation | - Completed;<br>Completed;<br>Finished | http://www.day.it  | |
 Comune di Bologna
 
 Climate Neutrality Action Plan
 
 O
 
-|  Associazione Parco dei Cedri nel Cuore ODV | 3 | - Information, training and dissemination;
-Environmental, digital and technological innovation;
-Information, training and dissemination | - In progress;
-In progress;
-In progress | www.cortebellaria.it  |
-| --- | --- | --- | --- | --- |
-|  Fondazione Carisbo | 2 | - Information, training, dissemination;
-Information, training, dissemination | - in progress;
-Finished | http://www.fondazionecarisbo.it  |
-|  100 per il Clima | 1 | Information, training, dissemination | To realize | -  |
-|  Centro Natura Srl | 2 | - Information, training, dissemination;
-Reduction of consumption and energy needs | - In progress;
-In progress | http://www.centronatura.it  |
-|  Fondazione del Monte di Bologna e Ravenna | 1 | Promotion of urban green and blue | Finished | http://www.fondazionedelmonte.it  |
-|  Sprintaly | 1 | Information, training, dissemination | To realize | https://www.sprintaly.it/  |
-|  Associazione Generation Carbon | 1 | Information, training, dissemination | In progress | -  |
-|  Volt Bologna | 1 | Information, training, dissemination | In progress | https://www.voltbologna.org/  |
-|  Tecnoscienza Srl - Impresa Culturale Creativa | 1 | Information, training, dissemination | In progress | http://www.tecnoscienza.it  |
-|  GreenGo Srl | 1 | Information, training, dissemination | In progress | https://green-go.net  |
-|  REA Srl - Reliable Energy Advisors | 4 | - Information, training, dissemination;
-Information, training, dissemination;
-Information, training, dissemination;
-Information, | Completed;
-Completed;
-In progress;
-To realize | https://readvisor.eu/  |
+|  Associazione Parco dei Cedri nel Cuore ODV | 3 | - Information, training and dissemination;<br>Environmental, digital and technological innovation;<br>Information, training and dissemination | - In progress;<br>In progress;<br>In progress | www.cortebellaria.it  | | | |
+| --- | --- | --- | --- | --- | | | |
+|  Fondazione Carisbo | 2 | - Information, training, dissemination; | |<br>Information, training, dissemination | - in progress;<br>Finished | http://www.fondazionecarisbo.it  | |
+|  100 per il Clima | 1 | Information, training, dissemination | To realize | -  | | | |
+|  Centro Natura Srl | 2 | - Information, training, dissemination; | |<br>Reduction of consumption and energy needs | - In progress;<br>In progress | http://www.centronatura.it  | |
+|  Fondazione del Monte di Bologna e Ravenna | 1 | Promotion of urban green and blue | Finished | http://www.fondazionedelmonte.it  | | | |
+|  Sprintaly | 1 | Information, training, dissemination | To realize | https://www.sprintaly.it/  | | | |
+|  Associazione Generation Carbon | 1 | Information, training, dissemination | In progress | -  | | | |
+|  Volt Bologna | 1 | Information, training, dissemination | In progress | https://www.voltbologna.org/  | | | |
+|  Tecnoscienza Srl - Impresa Culturale Creativa | 1 | Information, training, dissemination | In progress | http://www.tecnoscienza.it  | | | |
+|  GreenGo Srl | 1 | Information, training, dissemination | In progress | https://green-go.net  | | | |
+|  REA Srl - Reliable Energy Advisors | 4 | - Information, training, dissemination; | |<br>Information, training, dissemination;<br>Information, training, dissemination;<br>Information, | Completed;<br>Completed;<br>In progress;<br>To realize | https://readvisor.eu/  | |
 Comune di Bologna
 
 Climate Neutrality Action Plan
 
 O
 
-|   |  | training, dissemination; |  |   |
-| --- | --- | --- | --- | --- |
-|  FIMM Srl | 1 | Information, training, dissemination | To realize | https://www.fimm.com/  |
-|  Impronta Etica | 1 | Information, training, dissemination | Finished | https://www.improntaetica.org/  |
-|  Dismeco srl | 2 | - Circular economy
-Circular economy | - In progress
-To realize | http://www.dismeco.com  |
-|  IMAGEM srl | 1 | Information, training, dissemination | To realize | http://www.imagem.it  |
-|  Pictor Soc. Coop. | 2 | - Electrification of energy consumption
-Environmental, digital and technological innovation | - In progress
-In progress | http://www.cooperativapictor.it  |
-|  Arca di Noè Soc. Coop. | 1 | - Circular economy | In progress | https://www.arcacoop.com/  |
-|  SUMs architects | 2 | - Renewable energy production
-Circular economy | - In progress
-In progress | http://www.sumsarchitects.it/  |
-|  Syniergy srl | 2 | - Renewable energy production
-Information, training and dissemination | - Finished
-To realize | http://www.syniergy.it  |
-|  A Tutta Birra APS | 1 | Information, training and dissemination | In progress | https://atuttabirrabologna.wixsite.com/website  |
-|  SITEB strade e Bitumi | 1 | - Information, training and dissemination | To realize | https://www.siteb.it/  |
-|  Gruppo Ingegneria Benefit srl | 2 | - Information, training and dissemination
-Promotion of urban green and blue | - In progress
-In progress | https://gruppoingegneria.it/  |
-|  Massimiliano Roberto | 1 | Information, training and dissemination | To realize | -  |
+|   |  | training, dissemination; |  |   | | | |
+| --- | --- | --- | --- | --- | | | |
+|  FIMM Srl | 1 | Information, training, dissemination | To realize | https://www.fimm.com/  | | | |
+|  Impronta Etica | 1 | Information, training, dissemination | Finished | https://www.improntaetica.org/  | | | |
+|  Dismeco srl | 2 | - Circular economy | |<br>Circular economy | - In progress<br>To realize | http://www.dismeco.com  | |
+|  IMAGEM srl | 1 | Information, training, dissemination | To realize | http://www.imagem.it  | | | |
+|  Pictor Soc. Coop. | 2 | - Electrification of energy consumption | |<br>Environmental, digital and technological innovation | - In progress<br>In progress | http://www.cooperativapictor.it  | |
+|  Arca di Noè Soc. Coop. | 1 | - Circular economy | In progress | https://www.arcacoop.com/  | | | |
+|  SUMs architects | 2 | - Renewable energy production | |<br>Circular economy | - In progress<br>In progress | http://www.sumsarchitects.it/  | |
+|  Syniergy srl | 2 | - Renewable energy production<br>Information, training and dissemination | - Finished<br>To realize | http://www.syniergy.it  | | | |
+|  A Tutta Birra APS | 1 | Information, training and dissemination | In progress | https://atuttabirrabologna.wixsite.com/website  | | | |
+|  SITEB strade e Bitumi | 1 | - Information, training and dissemination | To realize | https://www.siteb.it/  | | | |
+|  Gruppo Ingegneria Benefit srl | 2 | - Information, training and dissemination | |<br>Promotion of urban green and blue | - In progress<br>In progress | https://gruppoingegneria.it/  | |
+|  Massimiliano Roberto | 1 | Information, training and dissemination | To realize | -  | | | |
 Comune di Bologna
 Climate Neutrality Action Plan
 

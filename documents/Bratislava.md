@@ -73,59 +73,59 @@ Climate Neutrality Action Plan
 
 The list of figures identifies the titles and locations (page numbers) of all visual elements: figures, drawings, photos, maps, etc. used in the CCC Action Plan.
 
-|  Figure No | Figure title | Page No  |
+| Figure No | Figure title | Page No |
 | --- | --- | --- |
-|  Figure 1 | Map of the CCC process in Bratislava | 8  |
-|  Figure 2 | Projected greenhouse gas emissions until 2030 | 12  |
-|  Figure 3 | Greenhouse gas emissions change between 2005 and 2022 by sectors | 13  |
-|  Figure 4 | Greenhouse gas emissions breakdown by sectors | 13  |
-|  Figure 5 & 6 | Energy consumption by type of fuel and respective greenhouse gas emissions | 14  |
+| Figure 1 | Map of the CCC process in Bratislava | 8 |
+| Figure 2 | Projected greenhouse gas emissions until 2030 | 12 |
+| Figure 3 | Greenhouse gas emissions change between 2005 and 2022 by sectors | 13 |
+| Figure 4 | Greenhouse gas emissions breakdown by sectors | 13 |
+| Figure 5 & 6 | Energy consumption by type of fuel and respective greenhouse gas emissions | 14 |
 
 # List of tables
 
 The list of tables identifies the titles and locations (page numbers) of all tables used in the CCC Action Plan.
 
-|  Table title | Page No  |
+| Table title | Page No |
 | --- | --- |
-|  A-1.1: Final energy use by source sectors | 10  |
-|  A-1.2: Emission factors applied | 11  |
-|  A-1.3: GHG emissions by source sectors | 11  |
-|  A-1.4: Activity by source sectors | 11  |
-|  A-2.1a: Emissions Gap (kt CO2e) based on the SECAP | 20  |
-|  A-2.1b: Emissions Gap (kt CO2e) based on NZC Planner | 21  |
+| A-1.1: Final energy use by source sectors | 10 |
+| A-1.2: Emission factors applied | 11 |
+| A-1.3: GHG emissions by source sectors | 11 |
+| A-1.4: Activity by source sectors | 11 |
+| A-2.1a: Emissions Gap (kt CO2e) based on the SECAP | 20 |
+| A-2.1b: Emissions Gap (kt CO2e) based on NZC Planner | 21 |
 
 # Abbreviations and acronyms
 
 The list of abbreviations and acronyms identifies the abbreviations (a shortened form of a word used in place of the full word) and acronyms (a word formed from the first letters of each of the words in a phrase of name) used in the CCC Action Plan.
 
-|  Abbreviations and acronyms | Definition  |
+| Abbreviations and acronyms | Definition |
 | --- | --- |
-|  AFOLU | Agriculture, Forestry, and Other Land Use  |
-|  BA | Bloomberg Associates  |
-|  BSK | Bratislavský samosprávný kraj (Bratislava Self-Governing Region)  |
-|  CSR | Corporate Social Responsibility  |
-|  CNG | Compressed Natural Gas  |
-|  DPB | Dopravný podnik Bratislavy (Bratislava Transport Company)  |
-|  DH | District Heating  |
-|  ERDF | European Regional Development Fund  |
-|  ESCO | Energy Service Company  |
-|  ESIF/ESI Funds | European Structural and Investment Fund  |
-|  EU ETS | European Union Emissions Trading System  |
-|  GHG | Greenhouse Gas  |
-|  IPPU | Industrial Processes and Product Use  |
-|  LULCUF | Land Use, Land-Use Change, and Forestry  |
+| AFOLU | Agriculture, Forestry, and Other Land Use |
+| BA | Bloomberg Associates |
+| BSK | Bratislavský samosprávný kraj (Bratislava Self-Governing Region) |
+| CSR | Corporate Social Responsibility |
+| CNG | Compressed Natural Gas |
+| DPB | Dopravný podnik Bratislavy (Bratislava Transport Company) |
+| DH | District Heating |
+| ERDF | European Regional Development Fund |
+| ESCO | Energy Service Company |
+| ESIF/ESI Funds | European Structural and Investment Fund |
+| EU ETS | European Union Emissions Trading System |
+| GHG | Greenhouse Gas |
+| IPPU | Industrial Processes and Product Use |
+| LULCUF | Land Use, Land-Use Change, and Forestry |
 Climate Neutrality Action Plan
 
-|  MEL | Monitoring, Evaluation and Learning  |
+| MEL | Monitoring, Evaluation and Learning |
 | --- | --- |
-|  NECP | National Energy and Climate Plan  |
-|  OLO | Odvoz a likvidácia odpadu (Bratislava Waste Management Company)  |
-|  RES | Renewable Energy Source  |
-|  SECAP | Sustainable Energy and Climate Action Plan  |
-|  SIEA | Slovenská inovačná a energetická agenúra (Slovak Innovation and Energy Agency)  |
-|  SUMP | It is a strategic planning framework used by cities and municipalities  |
-|  TSB | Technické siete Bratislava (Bratislava Public Lighting and Networks Company)  |
-|  WTE | Waste To Energy  |
+| NECP | National Energy and Climate Plan |
+| OLO | Odvoz a likvidácia odpadu (Bratislava Waste Management Company) |
+| RES | Renewable Energy Source |
+| SECAP | Sustainable Energy and Climate Action Plan |
+| SIEA | Slovenská inovačná a energetická agenúra (Slovak Innovation and Energy Agency) |
+| SUMP | It is a strategic planning framework used by cities and municipalities |
+| TSB | Technické siete Bratislava (Bratislava Public Lighting and Networks Company) |
+| WTE | Waste To Energy |
 
 5
 1
@@ -239,39 +239,39 @@ Climate Neutrality Action Plan
 
 #
 
-|  A-1.1: Final energy use by source sectors  |   |   |   |   |   |   |
+| A-1.1: Final energy use by source sectors |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- |
-|  Base year | 2022 *  |   |   |   |   |   |
-|  Unit | MWh/year  |   |   |   |   |   |
-|   | Scope 1 |   | Scope 2 |   | Scope 3  |   |
-|  Buildings | 2 862 187 |   | 1 334 900 |   | N/A  |   |
-|  Electricity |  |   | 1 334 900 |   | N/A  |   |
-|  Natural gas | 1 774 125 |   |  |   | N/A  |   |
-|  Heat/cold | 1 062 277 |   |  |   | N/A  |   |
-|  Diesel fuel | 831 |   |  |   | N/A  |   |
-|  Brown coal | 1 220 |   |  |   | N/A  |   |
-|  Black coal | 1 324 |   |  |   | N/A  |   |
-|  Biofuel | 22 410 |   |  |   | N/A  |   |
-|  Transport | 1 752 757 |   | 43 268 |   | N/A  |   |
-|  Electricity |  |   | 43 268 |   | N/A  |   |
-|  CNG | 17 346 |   |  |   | N/A  |   |
-|  Diesel | 995 764 |   |  |   | N/A  |   |
-|  Gasoline | 597 343 |   |  |   | N/A  |   |
-|  Biofuel | 142 304 |   |  |   | N/A  |   |
-|  Waste | N/A |   | N/A |   | N/A  |   |
-|  Industrial Process and Product Use (IPPU) | N/A |   | N/A |   | N/A  |   |
-|  Agricultural, Forestry and Land Use (AFOLU) | N/A |   | N/A |   | N/A  |   |
-|  * Latest available emission data but we use 2005 as baseline year for emissions reduction ambitions.  |   |   |   |   |   |   |
-|  A-1.2: Emission factors applied  |   |   |   |   |   |   |
-|  (Please specify for primary energy type and GHG emission factor according to methodology used).  |   |   |   |   |   |   |
-|  tonne per MWh of primary energy  |   |   |   |   |   |   |
-|  Covenant of Mayors GHG Emission factors following the activity-based approach (IPCC 2006)  |   |   |   |   |   |   |
-|  Primary energy/ energy source | Carbon Dioxide equivalents (CO2eq) | Methane (CH4) | Nitrous Oxide (N2O) | F-gases (hydrofluorocarbons and perfluorocarbons) | Sulphur hexafluoride (SF6) | Nitrogen trifluoride (NF3)  |
-|  Electricity (2021) | 0.398 |  |  |  |  |   |
-|  Natural gas | 0.202 |  |  |  |  |   |
-|  Heat/cold | 0.257 |  |  |  |  |   |
-|  Diesel fuel | 0.268 |  |  |  |  |   |
-|  Gasoline | 0.250 |  |  |  |  |   |
+| Base year | 2022 * |  |  |  |  |  |
+| Unit | MWh/year |  |  |  |  |  |
+|  | Scope 1 |  | Scope 2 |  | Scope 3 |  |
+| Buildings | 2 862 187 |  | 1 334 900 |  | N/A |  |
+| Electricity |  |  | 1 334 900 |  | N/A |  |
+| Natural gas | 1 774 125 |  |  |  | N/A |  |
+| Heat/cold | 1 062 277 |  |  |  | N/A |  |
+| Diesel fuel | 831 |  |  |  | N/A |  |
+| Brown coal | 1 220 |  |  |  | N/A |  |
+| Black coal | 1 324 |  |  |  | N/A |  |
+| Biofuel | 22 410 |  |  |  | N/A |  |
+| Transport | 1 752 757 |  | 43 268 |  | N/A |  |
+| Electricity |  |  | 43 268 |  | N/A |  |
+| CNG | 17 346 |  |  |  | N/A |  |
+| Diesel | 995 764 |  |  |  | N/A |  |
+| Gasoline | 597 343 |  |  |  | N/A |  |
+| Biofuel | 142 304 |  |  |  | N/A |  |
+| Waste | N/A |  | N/A |  | N/A |  |
+| Industrial Process and Product Use (IPPU) | N/A |  | N/A |  | N/A |  |
+| Agricultural, Forestry and Land Use (AFOLU) | N/A |  | N/A |  | N/A |  |
+| * Latest available emission data but we use 2005 as baseline year for emissions reduction ambitions. |  |  |  |  |  |  |
+| A-1.2: Emission factors applied |  |  |  |  |  |  |
+| (Please specify for primary energy type and GHG emission factor according to methodology used). |  |  |  |  |  |  |
+| tonne per MWh of primary energy |  |  |  |  |  |  |
+| Covenant of Mayors GHG Emission factors following the activity-based approach (IPCC 2006) |  |  |  |  |  |  |
+| Primary energy/ energy source | Carbon Dioxide equivalents (CO2eq) | Methane (CH4) | Nitrous Oxide (N2O) | F-gases (hydrofluorocarbons and perfluorocarbons) | Sulphur hexafluoride (SF6) | Nitrogen trifluoride (NF3) |
+| Electricity (2021) | 0.398 |  |  |  |  |  |
+| Natural gas | 0.202 |  |  |  |  |  |
+| Heat/cold | 0.257 |  |  |  |  |  |
+| Diesel fuel | 0.268 |  |  |  |  |  |
+| Gasoline | 0.250 |  |  |  |  |  |
 3
 
 Climate Neutrality Action Plan
@@ -280,39 +280,39 @@ Climate Neutrality Action Plan
 
 A-1.3: GHG emissions by source sectors
 
-|  Base year |   | 2022  |   |   |   |
+| Base year |  | 2022 |  |  |  |
 | --- | --- | --- | --- | --- | --- |
-|  Unit |   | tCO2eq  |   |   |   |
-|   |   | Scope 1 | Scope 2 | Scope 3 | Total  |
-|  Buildings |   | 632 748 | 530 766 | N/A | 1 163 514  |
-|  Transport |   | 419 847 | 17 204 | N/A | 437 051  |
-|  Waste |   | 73 330* | 0 |  | 73 330  |
-|  Industrial Process and Product Use (IPPU) |   | N/A | N/A | N/A | N/A  |
-|  Agricultural, Forestry and Land Use (AFOLU) | Sources (positive emissions) | N/A | N/A | N/A | N/A  |
-|   |  Sinks (negative emissions) | N/A | N/A | N/A | N/A  |
-|  Total |  | 1 052 595 | 547 970 | 73 330 | 1 673 895  |
+| Unit |  | tCO2eq |  |  |  |
+|  |  | Scope 1 | Scope 2 | Scope 3 | Total |
+| Buildings |  | 632 748 | 530 766 | N/A | 1 163 514 |
+| Transport |  | 419 847 | 17 204 | N/A | 437 051 |
+| Waste |  | 73 330* | 0 |  | 73 330 |
+| Industrial Process and Product Use (IPPU) |  | N/A | N/A | N/A | N/A |
+| Agricultural, Forestry and Land Use (AFOLU) | Sources (positive emissions) | N/A | N/A | N/A | N/A |
+|  | Sinks (negative emissions) | N/A | N/A | N/A | N/A |
+| Total |  | 1 052 595 | 547 970 | 73 330 | 1 673 895 |
 
 * Scope 1 emissions now include all waste-related emissions from activities occurring within city boundaries, specifically: waste incineration at the city-owned WTE facility (Vlčie hrdlo), and wastewater treatment processes managed by the Bratislava Water Company. Scope 3 emissions connected with landfilling outside of the city boundary are categorised as Scope 1 due to waste data uncertainties.
 
 A-1.4: Activity by source sectors
 
-|  Base year: 2022 |   |   |   |
+| Base year: 2022 |  |  |  |
 | --- | --- | --- | --- |
-|   | Scope 1 | Scope 2 | Scope 3  |
-|  Sector: Buildings | 632 748 | 530 766 | N/A  |
-|  Municipality | 15 679 | 34 231 | N/A  |
-|  Tertiary | 300 599 | 307 809 | N/A  |
-|  Residential | 316 471 | 181 363 | N/A  |
-|  Public lightning |  | 7 362 | N/A  |
-|  Sector: Transport | 419 847 | 17 204 | N/A  |
-|  City fleet | 2 722 | 0 | N/A  |
-|  Public transport | 32 971 | 17 204 | N/A  |
-|  Private and commercial transport | 384 155 | * | N/A  |
-|  Sector: Waste | N/A | N/A | 73 330  |
-|  Waste treatment | 0 | 0 | 69 842  |
-|  Wastewater treatment | 0 | 0 | 3 488  |
-|  Sector: Industrial Process and Product Use (IPPU) | N/A | N/A | N/A  |
-|  Sector: Agricultural, Forestry and Land Use (AFOLU) | N/A | N/A | N/A  |
+|  | Scope 1 | Scope 2 | Scope 3 |
+| Sector: Buildings | 632 748 | 530 766 | N/A |
+| Municipality | 15 679 | 34 231 | N/A |
+| Tertiary | 300 599 | 307 809 | N/A |
+| Residential | 316 471 | 181 363 | N/A |
+| Public lightning |  | 7 362 | N/A |
+| Sector: Transport | 419 847 | 17 204 | N/A |
+| City fleet | 2 722 | 0 | N/A |
+| Public transport | 32 971 | 17 204 | N/A |
+| Private and commercial transport | 384 155 | * | N/A |
+| Sector: Waste | N/A | N/A | 73 330 |
+| Waste treatment | 0 | 0 | 69 842 |
+| Wastewater treatment | 0 | 0 | 3 488 |
+| Sector: Industrial Process and Product Use (IPPU) | N/A | N/A | N/A |
+| Sector: Agricultural, Forestry and Land Use (AFOLU) | N/A | N/A | N/A |
 
 * No data available from electricity distribution companies on EV chargers' consumption.
 #
@@ -487,16 +487,16 @@ Climate Neutrality Action Plan
 A-2.1a: Emissions Gap (kt CO2e) based on the SECAP methodology NOT considering BAU Scenario and residual emissions offsetting
 This approach shows projected emission reductions through the CCC Action Plan alone, without considering business-as-usual developments or offsetting mechanisms.
 
-|   | (1) Baseline Emissions |   | (2) Emissions Reduction Target 2030 |   |   | (3) Emission Reduction Through the CCC Action Plan |   |   | (4) Emissions Gap (amount necessary to achieve net-zero)  |   |   |
+|  | (1) Baseline Emissions |  | (2) Emissions Reduction Target 2030 |  |  | (3) Emission Reduction Through the CCC Action Plan |  |  | (4) Emissions Gap (amount necessary to achieve net-zero) |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   | Baseline emissions for 2022 |   | The emissions reduction target for 2030 |   |   | These are the emissions reductions that would be achieved through the CCC Action Plan. |   |   | (4) = (1) – (2)  |   |   |
-|   | tCO2e | tCO2e / per capita | tCO2e | % from baseline | tCO2e / per capita | tCO2e | % from baseline | tCO2e / per capita | tCO2e | % from baseline | tCO2e / per capita  |
-|  Buildings | 1 163 514 | 2,44 | 563 607 | 48% | 1,16 | 563 607 | 48% | 1,16 | 599 907 | 52% | 1,23  |
-|  Transport | 437 051 | 0,92 | -2 163 | 0% | 0,00 | -2 163 | 0% | 0,00 | 439 214 | 100% | 0,90  |
-|  Waste | 73 330 | 0,15 | 69 842 | 95% | 0,14 | 69 842 | 95% | 0,14 | 3 488 | 5% | 0,01  |
-|  Industrial Process and Product Use (IPPU) | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A  |
-|  Agricultural, Forestry and Land Use (AFOLU) | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A  |
-|  Total | 1 673 895 | 3,51 | 631 287 | 38% | 1,29 | 631 287 | 38% | 1,29 | 1 042 608 | 62% | 2,14  |
+|  | Baseline emissions for 2022 |  | The emissions reduction target for 2030 |  |  | These are the emissions reductions that would be achieved through the CCC Action Plan. |  |  | (4) = (1) – (2) |  |  |
+|  | tCO2e | tCO2e / per capita | tCO2e | % from baseline | tCO2e / per capita | tCO2e | % from baseline | tCO2e / per capita | tCO2e | % from baseline | tCO2e / per capita |
+| Buildings | 1 163 514 | 2,44 | 563 607 | 48% | 1,16 | 563 607 | 48% | 1,16 | 599 907 | 52% | 1,23 |
+| Transport | 437 051 | 0,92 | -2 163 | 0% | 0,00 | -2 163 | 0% | 0,00 | 439 214 | 100% | 0,90 |
+| Waste | 73 330 | 0,15 | 69 842 | 95% | 0,14 | 69 842 | 95% | 0,14 | 3 488 | 5% | 0,01 |
+| Industrial Process and Product Use (IPPU) | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| Agricultural, Forestry and Land Use (AFOLU) | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| Total | 1 673 895 | 3,51 | 631 287 | 38% | 1,29 | 631 287 | 38% | 1,29 | 1 042 608 | 62% | 2,14 |
 Climate Neutrality Action Plan Guidance
 
 #
@@ -505,78 +505,78 @@ Climate Neutrality Action Plan Guidance
 
 # A-3.1: Systems &amp; stakeholder mapping
 
-|  System  |
+| System |
 | --- |
-|  Built Environment – Municipal Assets  |
-|  Stakeholders  |
-|  City: Department of Construction, Department of City Property Management, Department of Buildings Renovation, Bratislava Climate Office, Technical Networks Bratislava (TSB), City owned organisations (sports facilities, art schools, museums and galleries, theatres, social housing facilities, etc.), Metropolitan Institute of Bratislava (MIB), city owned companies (OLO – waste management, BVS – water management, DPB – public transport), city districts.  |
-|  Private sector: Energy providers and contractors (ESCOs, energy auditors and consultants, construction firms, renewable energy companies, etc.)  |
-|  Regulatory and legislative stakeholders: Government of the Slovak Republic, specifically Ministry of Economy, Ministry of Environment, Ministry of Regional Development and Informatisation, Slovak Energy and Innovation Agency (SIEA), Union of Cities of Slovakia, Bratislava Self-Governing Region, EU institutions.  |
-|  System Description  |
-|  Influence on the city's climate neutrality ambition: Compared to the residential or tertiary sector, municipal assets contribute to only 2.98% and public lighting 0.44% of Bratislava's total CO2e emissions. However, we see this system as key, as the city needs to lead by example to be able to influence other stakeholders.  |
-|  Comprehensive building reconstructions to the highest standards will require significant investments from the city. Therefore it will be important to secure funding and financing through national, European, or international instruments to the maximum extent possible, while also making use of financial tools, such as guaranteed energy services (ESCO companies, energy auditors, energy providers).  |
-|  Bratislava has recently established a new Energy Management Team under the Climate Office. This Team will be responsible for coordinating all stakeholders across the municipality, city companies and the private sector to deliver short-term and long-term energy savings in municipal assets. NGOs and civic associations do not have direct influence on the city emissions but play a key role in communication and advocating for change.  |
+| Built Environment – Municipal Assets |
+| Stakeholders |
+| City: Department of Construction, Department of City Property Management, Department of Buildings Renovation, Bratislava Climate Office, Technical Networks Bratislava (TSB), City owned organisations (sports facilities, art schools, museums and galleries, theatres, social housing facilities, etc.), Metropolitan Institute of Bratislava (MIB), city owned companies (OLO – waste management, BVS – water management, DPB – public transport), city districts. |
+| Private sector: Energy providers and contractors (ESCOs, energy auditors and consultants, construction firms, renewable energy companies, etc.) |
+| Regulatory and legislative stakeholders: Government of the Slovak Republic, specifically Ministry of Economy, Ministry of Environment, Ministry of Regional Development and Informatisation, Slovak Energy and Innovation Agency (SIEA), Union of Cities of Slovakia, Bratislava Self-Governing Region, EU institutions. |
+| System Description |
+| Influence on the city's climate neutrality ambition: Compared to the residential or tertiary sector, municipal assets contribute to only 2.98% and public lighting 0.44% of Bratislava's total CO2e emissions. However, we see this system as key, as the city needs to lead by example to be able to influence other stakeholders. |
+| Comprehensive building reconstructions to the highest standards will require significant investments from the city. Therefore it will be important to secure funding and financing through national, European, or international instruments to the maximum extent possible, while also making use of financial tools, such as guaranteed energy services (ESCO companies, energy auditors, energy providers). |
+| Bratislava has recently established a new Energy Management Team under the Climate Office. This Team will be responsible for coordinating all stakeholders across the municipality, city companies and the private sector to deliver short-term and long-term energy savings in municipal assets. NGOs and civic associations do not have direct influence on the city emissions but play a key role in communication and advocating for change. |
 Climate Neutrality Action Plan
 
 #
 
-|  System  |
+| System |
 | --- |
-|  Built Environment – Private Buildings  |
-|  Stakeholders  |
-|  City: Bratislava Chief Architect, Metropolitan Institute of Bratislava (MIB) – Department of Urban Planning, Bratislava Climate Office.  |
-|  Residential and Tertiary Sector: companies (services and industries), asset managers, energy providers, residents of Bratislava, flat owners’ associations, NGOs and civic organisations.  |
-|  Regulatory and legislative stakeholders: Government of the Slovak Republic, specifically Ministry of Economy, Ministry of Environment, Ministry of Regional Development and Informatisation, Government Office for Urban Planning, Slovak Energy and Innovation Agency (SIEA), Union of Cities of Slovakia, Bratislava Self-Governing Region, EU institutions.  |
-|  System Description  |
-|  Influence on the city’s climate neutrality ambition:  |
-|  Existing private buildings  |
-|  Energy consumption in the residential and tertiary sector amounts to two thirds of overall city GHG emissions. There has been a significant increase in energy efficiency from the year 2005, however there are still measures that could bring about important changes (installing renewable energy sources, buildings renovations, switch to energy efficient appliances, etc.). Most importantly, both district and local heating sources must shift away from natural gas to ensure full decarbonisation.  |
-|  New developments  |
-|  Building new neighbourhoods is a long-term project that spans decades and has enormous influence on the city’s climate neutrality pathway. The city has limited direct influence on how new developments will perform in terms of sustainability and climate, since building performance requirements are set at the national level. However, the city can intervene through spatial planning and voluntary cooperation with developers. In cooperation with developers, Bratislava will propose pilot measures/standards for new neighbourhoods in areas such as thermal management, energy efficiency of buildings, transportation, parking, and building materials.  |
-|  Interest in the city’s climate neutrality ambition:  |
-|  Existing private buildings  |
-|  Residents are willing to improve energy efficiency in their homes to decrease energy expenses. However, processes to obtain permits or funding can be difficult and long. The city plans to provide support in this area by simplifying permitting processes and communicating about the benefits to increase energy efficiency.  |
-|  Based on preliminary conversations, companies are already taking steps or planning to reduce their carbon footprint. There is increased pressure (from EU regulation or business policy) to implement ESG commitments, deploy energy management, install renewables and other sustainable practices. The city will motivate them further through its Bratislava Mayor Climate Challenge (see detail in Module C.1).  |
-|  New developments  |
-|  While developers must ensure their new projects are financially feasible, there are also important incentives for them to increasingly prioritise climate neutrality. First, they need to consider not only current legislative conditions but also future EU requirements for new buildings and neighbourhoods, as new developments take a long time to plan and construct. The best way to prepare for the future is by building to the highest net-zero standards. Second, there is a growing market demand for  |
+| Built Environment – Private Buildings |
+| Stakeholders |
+| City: Bratislava Chief Architect, Metropolitan Institute of Bratislava (MIB) – Department of Urban Planning, Bratislava Climate Office. |
+| Residential and Tertiary Sector: companies (services and industries), asset managers, energy providers, residents of Bratislava, flat owners’ associations, NGOs and civic organisations. |
+| Regulatory and legislative stakeholders: Government of the Slovak Republic, specifically Ministry of Economy, Ministry of Environment, Ministry of Regional Development and Informatisation, Government Office for Urban Planning, Slovak Energy and Innovation Agency (SIEA), Union of Cities of Slovakia, Bratislava Self-Governing Region, EU institutions. |
+| System Description |
+| Influence on the city’s climate neutrality ambition: |
+| Existing private buildings |
+| Energy consumption in the residential and tertiary sector amounts to two thirds of overall city GHG emissions. There has been a significant increase in energy efficiency from the year 2005, however there are still measures that could bring about important changes (installing renewable energy sources, buildings renovations, switch to energy efficient appliances, etc.). Most importantly, both district and local heating sources must shift away from natural gas to ensure full decarbonisation. |
+| New developments |
+| Building new neighbourhoods is a long-term project that spans decades and has enormous influence on the city’s climate neutrality pathway. The city has limited direct influence on how new developments will perform in terms of sustainability and climate, since building performance requirements are set at the national level. However, the city can intervene through spatial planning and voluntary cooperation with developers. In cooperation with developers, Bratislava will propose pilot measures/standards for new neighbourhoods in areas such as thermal management, energy efficiency of buildings, transportation, parking, and building materials. |
+| Interest in the city’s climate neutrality ambition: |
+| Existing private buildings |
+| Residents are willing to improve energy efficiency in their homes to decrease energy expenses. However, processes to obtain permits or funding can be difficult and long. The city plans to provide support in this area by simplifying permitting processes and communicating about the benefits to increase energy efficiency. |
+| Based on preliminary conversations, companies are already taking steps or planning to reduce their carbon footprint. There is increased pressure (from EU regulation or business policy) to implement ESG commitments, deploy energy management, install renewables and other sustainable practices. The city will motivate them further through its Bratislava Mayor Climate Challenge (see detail in Module C.1). |
+| New developments |
+| While developers must ensure their new projects are financially feasible, there are also important incentives for them to increasingly prioritise climate neutrality. First, they need to consider not only current legislative conditions but also future EU requirements for new buildings and neighbourhoods, as new developments take a long time to plan and construct. The best way to prepare for the future is by building to the highest net-zero standards. Second, there is a growing market demand for |
 Climate Neutrality Action Plan
 
 #
 
 sustainable housing, offices, and other buildings. The city can also play an important role through urban planning, regulation, and cooperation with developers interested in creating demonstration projects. This cooperation has already been started for several large-scale developments in the city, which are being prepared for construction, including Mlynske Nivy (around 8,000 new flats expected until 2040), New Lido (5,000 new flats) and Zimny Pristav (number of flats TBD).
 
-|  System  |
+| System |
 | --- |
-|  Energy Supply  |
-|  Stakeholders  |
-|  Energy providers: heat (MHTH, Veolia, Engie, others), electricity producers and distributors (ZSE, ZSD, SSD), gas (SPP, heating companies), renewable energy companies (solar, heat pumps).  |
-|  City of Bratislava: Bratislava Climate Office, Energy Management Team, Department of City Companies' Management, Technical Networks Bratislava (TSB), waste-to-energy plant (operated by OLO - municipal waste company), BVS (municipal water company).  |
-|  Regulatory and legislative stakeholders: Government of the Slovak Republic, Ministry of the Environment, Ministry of Economy, Slovak Energy and Innovation Agency (SIEA), Regulatory Office for Network Industries (URSO), EU institutions.  |
-|  Research and Innovation: Slovak Academy of Sciences, Slovak Technical University.  |
-|  System Description  |
-|  Influence on the city's climate neutrality ambition: Energy suppliers have a very important impact on the city's climate neutrality ambition. For electricity providers, the main challenge is to facilitate the readiness of the grid for massive renewables deployment. For heat production, which is the overall largest contributor to the city's emissions, decarbonising both local and district heating are crucial for Bratislava's climate neutrality ambition. In this area, the city plans to explore its own maximum potential for producing clean energy through waste incineration (electricity and heat), use of residual heat from wastewater treatment and other sources. In this area, the city is planning to play a more active role in regulation through its local heating plan and new concession agreements. Relevant ministries and the Slovak Energy and Innovation Agency can have significant influence in terms of funding allocation and overall technical and regulatory support.  |
-|  Interest in the city's climate neutrality ambition: Energy providers in Bratislava are private companies, so their main interests are profits and economic viability of investments. These companies are willing to cooperate with the city on climate neutrality, but their goals do not necessarily align with Bratislava's climate ambitions. For some of them, like the natural gas distributors, decarbonisation means end of business. Intense negotiations will be needed in this area, and alignment with national and regional authorities and agencies, particularly regarding financial, technical and regulatory support is a crucial precondition for success.  |
+| Energy Supply |
+| Stakeholders |
+| Energy providers: heat (MHTH, Veolia, Engie, others), electricity producers and distributors (ZSE, ZSD, SSD), gas (SPP, heating companies), renewable energy companies (solar, heat pumps). |
+| City of Bratislava: Bratislava Climate Office, Energy Management Team, Department of City Companies' Management, Technical Networks Bratislava (TSB), waste-to-energy plant (operated by OLO - municipal waste company), BVS (municipal water company). |
+| Regulatory and legislative stakeholders: Government of the Slovak Republic, Ministry of the Environment, Ministry of Economy, Slovak Energy and Innovation Agency (SIEA), Regulatory Office for Network Industries (URSO), EU institutions. |
+| Research and Innovation: Slovak Academy of Sciences, Slovak Technical University. |
+| System Description |
+| Influence on the city's climate neutrality ambition: Energy suppliers have a very important impact on the city's climate neutrality ambition. For electricity providers, the main challenge is to facilitate the readiness of the grid for massive renewables deployment. For heat production, which is the overall largest contributor to the city's emissions, decarbonising both local and district heating are crucial for Bratislava's climate neutrality ambition. In this area, the city plans to explore its own maximum potential for producing clean energy through waste incineration (electricity and heat), use of residual heat from wastewater treatment and other sources. In this area, the city is planning to play a more active role in regulation through its local heating plan and new concession agreements. Relevant ministries and the Slovak Energy and Innovation Agency can have significant influence in terms of funding allocation and overall technical and regulatory support. |
+| Interest in the city's climate neutrality ambition: Energy providers in Bratislava are private companies, so their main interests are profits and economic viability of investments. These companies are willing to cooperate with the city on climate neutrality, but their goals do not necessarily align with Bratislava's climate ambitions. For some of them, like the natural gas distributors, decarbonisation means end of business. Intense negotiations will be needed in this area, and alignment with national and regional authorities and agencies, particularly regarding financial, technical and regulatory support is a crucial precondition for success. |
 Climate Neutrality Action Plan
 
 #
 
-|  System  |
+| System |
 | --- |
-|  Sustainable Transport  |
-|  Stakeholders  |
-|  City: DPB (city transport company), Department of Transportation, Department of Construction.  |
-|  Residential and Tertiary Sector: Bratislava residents, NGOs and civic organisations, private companies, shared mobility providers.  |
-|  Regulatory and legislative stakeholders: Bratislava Self-Governing Region (BSK), Slovak Railways (ZSSK), Ministry of Transportation, EU institutions.  |
-|  System Description  |
-|  Influence on the city's climate neutrality ambition: Currently, transport's share of total emissions is increasing as other sectors achieve significant savings. Private and corporate transport comprises 22.95% of Bratislava's emissions, public transport accounts for 3.00%, and the city fleet accounts for 0.16% of the total emissions.  |
-|  Reducing emissions in the transport sector depends both on the availability of clean transport options and on their social acceptance as the preferred alternatives. Since they are not economically viable, sustainable transport measures depend on public funding. These projects are often investment-intensive and, particularly in the Slovak context, extremely complex from both technical and managerial perspectives. Therefore, transport measures require comprehensive cooperation with the Slovak Government, the Slovak Railways, and the Bratislava Self-Governing Region (BSK), as much of the individual car traffic flows into the city from nearby municipalities. This traffic needs to be influenced before it reaches the city limits by providing commuters with adequate sustainable transport alternatives. The new Sustainable Urban Mobility Plan, required by the TEN-T regulation, can be a powerful tool to provide the necessary coordination framework.  |
-|  Interest in the city's climate neutrality ambition: Bratislava takes a proactive approach to mobility, aiming to expand sustainable transport options for residents rather than relying on restrictive measures. The city's mobility ecosystem includes a diverse range of stakeholders, and Bratislava is committed to improving conditions for all users. While public transport users and NGOs advocate for cleaner air and reduced emissions, car owners tend to prioritize traffic reduction, convenience, and parking availability. At the national level, urban transportation in Bratislava has become a politically charged issue, with recent proposals from the national government seeking to limit municipal authority over transport systems through legislative changes. In this context, aligning policy and communication across stakeholders emerges as a key challenge—and a critical success factor—for achieving transformative change in urban mobility.  |
-|  System  |
-|  Waste and Wastewater  |
-|  Stakeholders  |
-|  City: Department of City Companies' Management, Department of Environment, OLO (Waste management company of Bratislava) including their 2 reuse centres KOLO, BVS (Wastewater management company of Bratislava).  |
-|  Private sector: Waste management companies (other than OLO), Energy providers (electricity and heat from incineration, potential residual heat from wastewater), Companies (as waste producers).  |
-|  Regulatory and legislative stakeholders: Government of the Slovak Republic, Ministry of the Environment, Ministry of Economy, Slovak Energy and Innovation Agency (SIEA), EU institutions  |
+| Sustainable Transport |
+| Stakeholders |
+| City: DPB (city transport company), Department of Transportation, Department of Construction. |
+| Residential and Tertiary Sector: Bratislava residents, NGOs and civic organisations, private companies, shared mobility providers. |
+| Regulatory and legislative stakeholders: Bratislava Self-Governing Region (BSK), Slovak Railways (ZSSK), Ministry of Transportation, EU institutions. |
+| System Description |
+| Influence on the city's climate neutrality ambition: Currently, transport's share of total emissions is increasing as other sectors achieve significant savings. Private and corporate transport comprises 22.95% of Bratislava's emissions, public transport accounts for 3.00%, and the city fleet accounts for 0.16% of the total emissions. |
+| Reducing emissions in the transport sector depends both on the availability of clean transport options and on their social acceptance as the preferred alternatives. Since they are not economically viable, sustainable transport measures depend on public funding. These projects are often investment-intensive and, particularly in the Slovak context, extremely complex from both technical and managerial perspectives. Therefore, transport measures require comprehensive cooperation with the Slovak Government, the Slovak Railways, and the Bratislava Self-Governing Region (BSK), as much of the individual car traffic flows into the city from nearby municipalities. This traffic needs to be influenced before it reaches the city limits by providing commuters with adequate sustainable transport alternatives. The new Sustainable Urban Mobility Plan, required by the TEN-T regulation, can be a powerful tool to provide the necessary coordination framework. |
+| Interest in the city's climate neutrality ambition: Bratislava takes a proactive approach to mobility, aiming to expand sustainable transport options for residents rather than relying on restrictive measures. The city's mobility ecosystem includes a diverse range of stakeholders, and Bratislava is committed to improving conditions for all users. While public transport users and NGOs advocate for cleaner air and reduced emissions, car owners tend to prioritize traffic reduction, convenience, and parking availability. At the national level, urban transportation in Bratislava has become a politically charged issue, with recent proposals from the national government seeking to limit municipal authority over transport systems through legislative changes. In this context, aligning policy and communication across stakeholders emerges as a key challenge—and a critical success factor—for achieving transformative change in urban mobility. |
+| System |
+| Waste and Wastewater |
+| Stakeholders |
+| City: Department of City Companies' Management, Department of Environment, OLO (Waste management company of Bratislava) including their 2 reuse centres KOLO, BVS (Wastewater management company of Bratislava). |
+| Private sector: Waste management companies (other than OLO), Energy providers (electricity and heat from incineration, potential residual heat from wastewater), Companies (as waste producers). |
+| Regulatory and legislative stakeholders: Government of the Slovak Republic, Ministry of the Environment, Ministry of Economy, Slovak Energy and Innovation Agency (SIEA), EU institutions |
 Climate Neutrality Action Plan
 
 #
@@ -604,23 +604,23 @@ Climate Neutrality Action Plan
 
 #
 
-|  System  |
+| System |
 | --- |
-|  Green-Blue Infrastructure  |
-|  Stakeholders  |
-|  City: Department of Environment – Department of Greenery, Metropolitan Institute of Bratislava (MIB), Bratislava Water Management Company (BVS), Department of Construction, Department of Transportation, Bratislava City Districts, City Forests.  |
-|  Private sector: Companies (CSR cooperation on tree planting initiatives), Developers.  |
-|  Civil society: Residents, NGOs and civic associations.  |
-|  Regulatory and legislative stakeholders: Ministry of Environment, Forests of the Slovak Republic (state forests), EU institutions.  |
-|  Research and Innovation: Comenius University Bratislava (Faculty of Environment).  |
-|  System Description  |
-|  Blue-green infrastructure is predominantly important for the resilience of the city and adaptation to climate change. However, its increased quality and quantity can also contribute to emissions reduction (i.e. through sequestration). The city is mostly responsible for this area, but other stakeholders also play an important role:  |
-|  Private sector  |
-|  Since blue-green infrastructure is not a profitable business, it requires investments which cannot come from the city alone. Bratislava cooperates with companies to finance greening projects in Bratislava as part of their CSR strategies. The Metropolitan Institute of Bratislava (MIB) has also developed a new urban planning tool (ecoindex) to ensure that developers build new neighbourhoods with blue-green infrastructure of sufficient quantity and quality.  |
-|  Residents, Volunteers and NGOs  |
-|  Residents also have significant influence on the blue-green infrastructure, e.g., through activities supported by Bratislava, such as greening front yards, starting up community gardens, or volunteering for tree-planting activities across the city. NGOs play an important role in communication and advocating for nature protection.  |
-|  National government  |
-|  A very influential stakeholder is also the state-owned company Forests of the Slovak Republic, which manages a significant portion of forests within the city's territory. While the city considers forests to be important from a recreational and environmental perspective (besides being important carbon sinks), the state sees them as economic potential for logging. Recently the city reached an agreement with state forests to reduce logging on Bratislava's territory, marking an important milestone in the preservation of this key piece of blue-green infrastructure. However, the agreement with the state is contingent upon regular payments from the city budget and ongoing political support from the national government.  |
+| Green-Blue Infrastructure |
+| Stakeholders |
+| City: Department of Environment – Department of Greenery, Metropolitan Institute of Bratislava (MIB), Bratislava Water Management Company (BVS), Department of Construction, Department of Transportation, Bratislava City Districts, City Forests. |
+| Private sector: Companies (CSR cooperation on tree planting initiatives), Developers. |
+| Civil society: Residents, NGOs and civic associations. |
+| Regulatory and legislative stakeholders: Ministry of Environment, Forests of the Slovak Republic (state forests), EU institutions. |
+| Research and Innovation: Comenius University Bratislava (Faculty of Environment). |
+| System Description |
+| Blue-green infrastructure is predominantly important for the resilience of the city and adaptation to climate change. However, its increased quality and quantity can also contribute to emissions reduction (i.e. through sequestration). The city is mostly responsible for this area, but other stakeholders also play an important role: |
+| Private sector |
+| Since blue-green infrastructure is not a profitable business, it requires investments which cannot come from the city alone. Bratislava cooperates with companies to finance greening projects in Bratislava as part of their CSR strategies. The Metropolitan Institute of Bratislava (MIB) has also developed a new urban planning tool (ecoindex) to ensure that developers build new neighbourhoods with blue-green infrastructure of sufficient quantity and quality. |
+| Residents, Volunteers and NGOs |
+| Residents also have significant influence on the blue-green infrastructure, e.g., through activities supported by Bratislava, such as greening front yards, starting up community gardens, or volunteering for tree-planting activities across the city. NGOs play an important role in communication and advocating for nature protection. |
+| National government |
+| A very influential stakeholder is also the state-owned company Forests of the Slovak Republic, which manages a significant portion of forests within the city's territory. While the city considers forests to be important from a recreational and environmental perspective (besides being important carbon sinks), the state sees them as economic potential for logging. Recently the city reached an agreement with state forests to reduce logging on Bratislava's territory, marking an important milestone in the preservation of this key piece of blue-green infrastructure. However, the agreement with the state is contingent upon regular payments from the city budget and ongoing political support from the national government. |
 
 In addition to the systems described above, key public stakeholders in Bratislava include the 17 city districts, each with distinct but complementary powers to the City of Bratislava. In this regard, Bratislava and Košice are unique in Slovakia, having a two-level municipal government structure. Additionally, the Bratislava Self-Governing Region (Bratislavský samosprávny kraj) holds specific responsibilities within the territory and will be a key partner, specifically in transport planning and specific property portfolios (mainly secondary schools). In the next interaction of the CCC, the city will seek to engage the region with defined roles in the implementation of the CCC. Bratislava also supports active
 m
@@ -633,63 +633,63 @@ cooperation among the city districts in the implementation of their local climat
 
 # A-3.1: Description of urban systems, systemic barriers, and opportunities
 
-|  Municipal Governance  |   |
+| Municipal Governance |  |
 | --- | --- |
-|  Type of barrier | Description of the barrier and opportunity  |
-|  Financial/Institutional | Funding of municipalities Slovakia is one of the most centralised countries in Central and Eastern Europe (IMF Country Report No 19/330), which affects regional and local government powers and funding. Slovak regions and municipalities, while largely independent in fiscal planning, receive government funding solely through personal income taxes. These tax receipts are redistributed among all municipal/regional governments based on population, without considering the level of economic activity. Local taxes have a minimal impact on total revenues, while regions and municipalities have limited revenue-raising authority and must maintain balanced budgets. CAPEX budgets are low, and all major investments, such as in energy, sustainable transport, or adaptation, are mostly made through grants or loans. These constraints have been exacerbated as the Slovak government has repeatedly reduced cities' revenues in 2022 and 2023 to fund financial assistance through tax cuts on personal income to help address increased energy and living costs. In 2025 onwards, Bratislava will have to contend with the government's fiscal consolidation packages—in 2025 particularly the rise in VAT and the introduction of a financial transaction tax, both of which directly affect the cost of goods and services procured by the city. Additionally, there has been a change in the system of redistributing shared taxes in Slovakia, resulting in municipalities receiving a smaller share of collected taxes than in the past. “The financial outlook for Bratislava is bleak,” acknowledged Mayor Matúš Vallo in a Startup.sk interview in 2025. “Alongside Sofia, the capital of Bulgaria, Bratislava ranks as the poorest capital in the European Union,” he noted. His words underline a stark reality: despite its status as Slovakia's capital, Bratislava continues to grapple with deep-rooted structural underfunding, making its ambitions all the more challenging in an increasingly strained economic climate in the world and Slovakia specifically. Opportunity: Administrative reform of municipalities incl. reform of funding is crucial prerequisite for successful and systematic investment into climate action by the City of Bratislava.  |
-|  Organisational | Siloed organisational structures Traditional municipal governance structures promote silos, hindering effective cross-cutting cooperation necessary for transformative climate action. Hierarchical departmental organisation leads to insufficient communication between the different levels of the administration, city departments, and city organisations and a lack of ownership for delivering the overall result among civil servants. Opportunity: • New governance structures created for the CCC processes. • Embedding climate targets into all policies and projects (climate mainstreaming).  |
-|  Organisational | Fragmentation of city governance  |
+| Type of barrier | Description of the barrier and opportunity |
+| Financial/Institutional | Funding of municipalities Slovakia is one of the most centralised countries in Central and Eastern Europe (IMF Country Report No 19/330), which affects regional and local government powers and funding. Slovak regions and municipalities, while largely independent in fiscal planning, receive government funding solely through personal income taxes. These tax receipts are redistributed among all municipal/regional governments based on population, without considering the level of economic activity. Local taxes have a minimal impact on total revenues, while regions and municipalities have limited revenue-raising authority and must maintain balanced budgets. CAPEX budgets are low, and all major investments, such as in energy, sustainable transport, or adaptation, are mostly made through grants or loans. These constraints have been exacerbated as the Slovak government has repeatedly reduced cities' revenues in 2022 and 2023 to fund financial assistance through tax cuts on personal income to help address increased energy and living costs. In 2025 onwards, Bratislava will have to contend with the government's fiscal consolidation packages—in 2025 particularly the rise in VAT and the introduction of a financial transaction tax, both of which directly affect the cost of goods and services procured by the city. Additionally, there has been a change in the system of redistributing shared taxes in Slovakia, resulting in municipalities receiving a smaller share of collected taxes than in the past. “The financial outlook for Bratislava is bleak,” acknowledged Mayor Matúš Vallo in a Startup.sk interview in 2025. “Alongside Sofia, the capital of Bulgaria, Bratislava ranks as the poorest capital in the European Union,” he noted. His words underline a stark reality: despite its status as Slovakia's capital, Bratislava continues to grapple with deep-rooted structural underfunding, making its ambitions all the more challenging in an increasingly strained economic climate in the world and Slovakia specifically. Opportunity: Administrative reform of municipalities incl. reform of funding is crucial prerequisite for successful and systematic investment into climate action by the City of Bratislava. |
+| Organisational | Siloed organisational structures Traditional municipal governance structures promote silos, hindering effective cross-cutting cooperation necessary for transformative climate action. Hierarchical departmental organisation leads to insufficient communication between the different levels of the administration, city departments, and city organisations and a lack of ownership for delivering the overall result among civil servants. Opportunity: • New governance structures created for the CCC processes. • Embedding climate targets into all policies and projects (climate mainstreaming). |
+| Organisational | Fragmentation of city governance |
 Climate Neutrality Action Plan
 
 #
 
-|  Municipal Assets  |   |
+| Municipal Assets |  |
 | --- | --- |
-|  Type of barrier | Description of the barrier and opportunity  |
-|  Financial | Infrastructure modernisation debt/high upfront costs The city's building stock has significant deferred maintenance and modernisation needs. This is particularly acute for energy-intensive buildings  |
+| Type of barrier | Description of the barrier and opportunity |
+| Financial | Infrastructure modernisation debt/high upfront costs The city's building stock has significant deferred maintenance and modernisation needs. This is particularly acute for energy-intensive buildings |
 Climate Neutrality Action Plan
 
 #
 
-|  Waste and Wastewater  |   |
+| Waste and Wastewater |  |
 | --- | --- |
-|  Type of barrier | Description of the barrier and opportunity  |
-|  Financial/technical | Infrastructure modernisation debt The existing waste management infrastructure in Bratislava (particularly its waste-to-energy plant, which ensures the city's landfilling rate remains low, as well as the wastewater treatment plants, which could potentially be supplemented with the heat recovery technology) requires significant investment for modernisation. The high costs associated with upgrading facilities and implementing new technologies pose a financial challenge for the city. Opportunity: Seek funding and investment through national and EU programs, as well as sustainable sources of financing that are supported by reliable profitability projections. However, requirement for a balanced budget remains an obstacle for the city or its companies to take on more loans.  |
-|  Financial | Insufficient financial sustainability for circular initiatives Circular economy initiatives require substantial investment and ongoing operational costs. Ensuring the financial viability of these initiatives can be challenging, particularly in securing consistent funding streams. Opportunity:  |
+| Type of barrier | Description of the barrier and opportunity |
+| Financial/technical | Infrastructure modernisation debt The existing waste management infrastructure in Bratislava (particularly its waste-to-energy plant, which ensures the city's landfilling rate remains low, as well as the wastewater treatment plants, which could potentially be supplemented with the heat recovery technology) requires significant investment for modernisation. The high costs associated with upgrading facilities and implementing new technologies pose a financial challenge for the city. Opportunity: Seek funding and investment through national and EU programs, as well as sustainable sources of financing that are supported by reliable profitability projections. However, requirement for a balanced budget remains an obstacle for the city or its companies to take on more loans. |
+| Financial | Insufficient financial sustainability for circular initiatives Circular economy initiatives require substantial investment and ongoing operational costs. Ensuring the financial viability of these initiatives can be challenging, particularly in securing consistent funding streams. Opportunity: |
 Climate Neutrality Action Plan
 
 #
 
-|  Sustainable Transport  |   |
+| Sustainable Transport |  |
 | --- | --- |
-|  Type of barrier | Description of the barrier and opportunity  |
-|  Organisational | Fragmentation of planning Transport in Bratislava is significantly influenced by the broader metropolitan region. However, urban and transport planning in this area is fragmented among various municipalities, the region, and the state, resulting in conflicting goals, changing priorities, and continued urban sprawl. The City of Bratislava has been advocating for administrative reform to strengthen planning at the metropolitan level. Despite these calls for reform, no concrete plans currently exist to implement such changes. This lack of coordination and unified planning continues to challenge the development of a cohesive and efficient transport system in the wider Bratislava metropolitan region.  |
-|  Funding | High investment needs into network expansion (public transport, cycling routes) 20% of Bratislava's total city budget is allocated to public transport as a transfer to the Municipal Transport Company for its OPEX and CAPEX expenditures. Consequently, both the city and the Transport Company are left with insufficient funds to undertake significant investments in expanding the network. This financial constraint limits them to basic maintenance of existing infrastructure, hindering potential improvements and expansion necessary for enhancing the public transport system's capacity and efficiency. Over the past two decades, all major public transport projects have been funded by the EU, and this source of funding will continue to be crucial for Bratislava in the future.  |
-|  Structural | Low population density in Bratislava Low residential density in Bratislava has significant impacts on urban services leading to higher per capita costs for infrastructure and public services, as utilities and services must cover larger areas with fewer users. Specifically, public transportation becomes less cost-effective and harder to sustain with fewer passengers spread over a larger area, leading to longer routes and less frequent services, while the system is reliant on tramline infrastructure as its backbone, which remains underdeveloped compared to similar cities in the region.  |
-|  Organisational | Lack of quality data for planning The ability to evaluate proposed changes to the city transport system is currently hampered by the lack of a good-quality transport model allowing the selection of appropriate measures that will yield optimal results in terms of  |
+| Type of barrier | Description of the barrier and opportunity |
+| Organisational | Fragmentation of planning Transport in Bratislava is significantly influenced by the broader metropolitan region. However, urban and transport planning in this area is fragmented among various municipalities, the region, and the state, resulting in conflicting goals, changing priorities, and continued urban sprawl. The City of Bratislava has been advocating for administrative reform to strengthen planning at the metropolitan level. Despite these calls for reform, no concrete plans currently exist to implement such changes. This lack of coordination and unified planning continues to challenge the development of a cohesive and efficient transport system in the wider Bratislava metropolitan region. |
+| Funding | High investment needs into network expansion (public transport, cycling routes) 20% of Bratislava's total city budget is allocated to public transport as a transfer to the Municipal Transport Company for its OPEX and CAPEX expenditures. Consequently, both the city and the Transport Company are left with insufficient funds to undertake significant investments in expanding the network. This financial constraint limits them to basic maintenance of existing infrastructure, hindering potential improvements and expansion necessary for enhancing the public transport system's capacity and efficiency. Over the past two decades, all major public transport projects have been funded by the EU, and this source of funding will continue to be crucial for Bratislava in the future. |
+| Structural | Low population density in Bratislava Low residential density in Bratislava has significant impacts on urban services leading to higher per capita costs for infrastructure and public services, as utilities and services must cover larger areas with fewer users. Specifically, public transportation becomes less cost-effective and harder to sustain with fewer passengers spread over a larger area, leading to longer routes and less frequent services, while the system is reliant on tramline infrastructure as its backbone, which remains underdeveloped compared to similar cities in the region. |
+| Organisational | Lack of quality data for planning The ability to evaluate proposed changes to the city transport system is currently hampered by the lack of a good-quality transport model allowing the selection of appropriate measures that will yield optimal results in terms of |
 Climate Neutrality Action Plan
 
 #
 
-|  Private Buildings/Built Environment  |   |
+| Private Buildings/Built Environment |  |
 | --- | --- |
-|  Type of barrier | Description of the barrier and opportunity  |
-|  Institutional/Regulatory | Limited municipal powers Bratislava and other Slovak municipalities have limited ability to drive non-municipal decarbonisation action because of lacking regulatory power to mandate energy efficiency and/or emissions reduction action by the private sector and citizens, limited authority over energy regulations and building codes and lacking financial capacity to directly support decarbonisation action, Opportunities: - Engagement with the private sector that can be leveraged to build cooperation on emissions reduction. - Engage national government for enhanced support and regulation, introduce local energy efficiency regulations.  |
-|  Financial | Limited support for residents in the Bratislava region through EU or national subsidy schemes, as support is oriented towards all other regions, with the Bratislava region qualified as the only more developed region in Slovakia. However, income inequalities in the region are among the highest in the country, creating barriers for many households for undertaking renovations.  |
+| Type of barrier | Description of the barrier and opportunity |
+| Institutional/Regulatory | Limited municipal powers Bratislava and other Slovak municipalities have limited ability to drive non-municipal decarbonisation action because of lacking regulatory power to mandate energy efficiency and/or emissions reduction action by the private sector and citizens, limited authority over energy regulations and building codes and lacking financial capacity to directly support decarbonisation action, Opportunities: - Engagement with the private sector that can be leveraged to build cooperation on emissions reduction. - Engage national government for enhanced support and regulation, introduce local energy efficiency regulations. |
+| Financial | Limited support for residents in the Bratislava region through EU or national subsidy schemes, as support is oriented towards all other regions, with the Bratislava region qualified as the only more developed region in Slovakia. However, income inequalities in the region are among the highest in the country, creating barriers for many households for undertaking renovations. |
 Climate Neutrality Action Plan
 
 #
 
-|  Blue-Green infrastructure  |   |
+| Blue-Green infrastructure |  |
 | --- | --- |
-|  Type of barrier | Description of the barrier and opportunity  |
-|  Structural | Lack of public land The municipality can only invest on its own land, which may not be available in areas with highest vulnerabilities to the effects of climate change, notably heat islands and local flooding. Tree-planting in the built environment has become increasingly difficult due to underground utilities and poor quality of soil. Opportunity: Use new tools in urban planning or voluntary cooperation with developers  |
-|  Financial | Lack of financing tools for capital expenditures Nature-based solutions entail important upfront costs with little ability to recover them through revenue-raising. In this context, it is difficult for the city to find financing for these projects, as there is no expected revenue stream.  |
-|  Financial | Ongoing maintenance requirements Green infrastructure projects often require ongoing maintenance to remain effective and aesthetically pleasing. The costs and logistics of maintaining these projects can be a barrier. Opportunity: Develop long-term maintenance plans and secure funding for ongoing upkeep. Involve community groups and volunteers in maintenance activities to foster a sense of ownership and reduce costs.  |
-|  Social and behavioural | Public resistance and lack of awareness: Residents and businesses may resist green infrastructure projects due to perceived disruptions, lack of understanding of benefits, or concerns about maintenance. Opportunity:  |
+| Type of barrier | Description of the barrier and opportunity |
+| Structural | Lack of public land The municipality can only invest on its own land, which may not be available in areas with highest vulnerabilities to the effects of climate change, notably heat islands and local flooding. Tree-planting in the built environment has become increasingly difficult due to underground utilities and poor quality of soil. Opportunity: Use new tools in urban planning or voluntary cooperation with developers |
+| Financial | Lack of financing tools for capital expenditures Nature-based solutions entail important upfront costs with little ability to recover them through revenue-raising. In this context, it is difficult for the city to find financing for these projects, as there is no expected revenue stream. |
+| Financial | Ongoing maintenance requirements Green infrastructure projects often require ongoing maintenance to remain effective and aesthetically pleasing. The costs and logistics of maintaining these projects can be a barrier. Opportunity: Develop long-term maintenance plans and secure funding for ongoing upkeep. Involve community groups and volunteers in maintenance activities to foster a sense of ownership and reduce costs. |
+| Social and behavioural | Public resistance and lack of awareness: Residents and businesses may resist green infrastructure projects due to perceived disruptions, lack of understanding of benefits, or concerns about maintenance. Opportunity: |
 6
 
-|   | Conduct public awareness campaigns to educate citizens on the benefits of green infrastructure. Engage the community through participatory planning processes and provide incentives for local businesses and residents to support green initiatives.  |
+|  | Conduct public awareness campaigns to educate citizens on the benefits of green infrastructure. Engage the community through participatory planning processes and provide incentives for local businesses and residents to support green initiatives. |
 | --- | --- |
 Climate Neutrality Action Plan Guidance
 
@@ -706,139 +706,29 @@ Module B-1 "Climate Neutrality Scenarios and Impact Pathways" lists and describe
 List of impact pathways, selected from or inspired by the NetZeroCities Theory of Change, including early and late outcomes (strategic objectives) and levers of change structured along the fields of action.
 Descriptions of the impact pathways, summarising their relationship with key priorities and strategic interventions and with the analysis developed in Part A
 
-|  B-1.1: Impact Pathways  |   |   |   |   |   |
+| B-1.1: Impact Pathways |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- |
-|  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (potential emission reductions in tCO2eq/year) | Indirect impacts (co-benefits)  |
-|  MUNICIPAL ASSETS | Governance & policy Technology | Comprehensive energy savings The city develops and approves a building renovation standard and a clear prioritisation plan for city buildings. The city introduces yearly KPIs for energy efficiency for its municipal companies | Comprehensive energy savings As a result of the procedural and governance changes, more renovation projects are initiated yearly with higher performance in terms of energy savings CO2 reduction. | 11,060 | Improved comfort and functionality of retrofitted municipal buildings, such as schools, kindergartens, retirement homes, cultural venues, etc.  |
-8
-
-|   |  |  | Comprehensive energy savings in municipal companies
-Companies achieve a 20% reduction in yearly energy consumption compared to 2022. |  | Financial savings
-Development of the market for building retrofits (including local green jobs), enabling private building owners to deploy retrofits for their building stock.  |
-| --- | --- | --- | --- | --- | --- |
-|   |  Governance & policy
-Data and digitisation
-Learning & capabilities
-Social innovation | Energy management
-The city will enhance data management through a building inventory. This will be combined with improved governance via a newly established energy management team and an intersectoral community of practice of energy/facility managers, facilitating both short-term and long-term systematic energy and emission savings. Energy savings will be introduced as key KPIs for city departments, organisations, and companies. | Energy management
-Most of the city buildings' portfolio is included in the building inventory and the energy management system, allowing for centralised buildings management as systemic governance change. Clear reporting is in place on energy savings. | 620 | Improved city governance and overall asset management
-Enhanced sense of ownership over energy efficiency measures  |
-Climate Neutrality Action Plan
-
-|   | Governance & policy Technology/infrastructure | Public Lighting Renovation
-The city continues to carry out a comprehensive upgrade of city-wide lighting infrastructure, showcasing a transformational project that successfully ended a long-term vendor lock-in and is resulting in up to 60% energy savings. | Public Lighting Renovation
-Public lighting network continues to be upgraded to provide other smart services to the city to allow for better planning based on robust data and integrating the city's e-charger network | 1,800 | Reliable and efficient operation
-Increased safety in neighbourhoods  |
-| --- | --- | --- | --- | --- | --- |
-|   | Governance & policy Technology/infrastructure Procurement | Renewable Energy Deployment
-The annual electricity consumption of the city's properties and municipal organisations is approximately 86,000 MWh. Currently, the city does not generate electricity from renewable sources on; all electricity is purchased from external suppliers. Therefore, we will develop a long-term strategy, focused predominantly on solar energy, as a crucial step for achieving the city's climate goals and as one of the breakthrough projects that can also influence other sectors. | Renewable Energy Deployment
-A clear investment plan and model (such as energy communities or guaranteed energy services) is in place, gradually increasing yearly output, enhancing price stability, and securing a reliable energy supply for the city. | 6,000 | Potentially additional sources of revenue from energy generation
-Energy security increased  |
-
-9
-0
-
-Climate Neutrality Action Plan
-
-|  MUNICIPAL WASTE & WASTEWATER | Technology/infrastructure | Waste-to-Energy
-The municipal waste management company, OLO, replaces fossil fuel consumption and associated CO_{2} emissions by recovering waste heat generated during the incineration of waste at the waste-to-energy facility (WTE) in Vlčie hrdlo. The current technology dating back to 1970s is, however, obsolete and inefficient, and is being prepared for replacement. | Waste-to-Energy
-The K3 combustion line modernisation project will increase the volume of waste used for electricity and heat production. After the completion of the K3, OLO will produce 96,106 MWh/year of electricity and supply 53,000 MWh/year of heat to the district heating system, providing a key contribution to the decarbonisation of the district heating system and allowing the city to largely eliminate landfilling. Overall efficiency of the technology will be increased from 25% to 85%. | Impact included under DHS decarbonisation. | Elimination of landfilling
-Potentially new business opportunities in circular economy  |
-| --- | --- | --- | --- | --- | --- |
-|   | Technology/infrastructure | Composting and Biogas plant
-The waste management company OLO is designing a new composting and biogas plant. The plant will be capable of using biogas for electricity and heat production or potentially | Composting and Biogas plant
-The project will contribute to maximising the material recovery of waste, as it will improve the infrastructure for processing organic waste, which accounts | 17,000 |   |
-1
-
-|   |  | producing BioCNG fuel for transportation. | for up to 45% of total municipal waste. Public awareness campaigns on separation and recycling will remain an integral part of the city policy. Both investments contribute to the overall waste management goal of 65% recycling and sorting. |  |   |
-| --- | --- | --- | --- | --- | --- |
-|   |  Technology/infrastructure | Utilisation of residual wastewater heat The first step towards unlocking the energy recovery potential of residual wastewater heat is a feasibility study, which will determine the optimal use, location of the technology, possible decentralisation at neighbourhood level, or estimated investment costs. | Utilisation of residual wastewater heat If the economic feasibility of the project is demonstrated, the project can be implemented either directly by the private sector or through a public-private partnership. | Not possible to calculate, as project scope not defined yet. In pre-feasibility stage.  |   |
-|  SUSTAINABLE TRANSPORT*
-* It was not possible to calculate the impact of individual measures due to the outdated transport model. The city is working to rectify this until the next iteration. | Governance & policy Data and digitisation Learning & capabilities | Development and integration of a multimodal transport model with GHG and noise modelling
-A new multimodal transport model is currently being procured by Bratislava | Development and integration of a multimodal transport model with GHG and noise modelling
-The integrated model will support strategic transport planning and | The creation of the model will allow for better establishment of the baseline as well as impact for individual measure. |   |
-2
-
-Climate Neutrality Action Plan
-
-|   |  | including collection of the latest transport data and update of the software (Visum). The model will be expanded with integrated GHG emissions and noise modules. | feed directly into the preparation of Bratislava's Sustainable Urban Mobility Plan (SUMP). It will also provide a baseline for future quantification of GHG reduction measures |  |   |
-| --- | --- | --- | --- | --- | --- |
-|   |  Governance & policy | Sustainable Urban Mobility Plan (SUMP) – update & alignment with TEN-T Regulation - development | Sustainable Urban Mobility Plan (SUMP) – update & alignment with TEN-T Regulation - development | Impact of individual measures will be evaluated as part of planning. | Improved air quality and reduced noise
-More quality public space
-Increased public health  |
-|   |  Technology/infrastructure | City of Bratislava coordinates stakeholder and citizen participation and drafts the plan for approval. | Improved policy and projections based on validated data and increased capability by the city. |  | Increased quality of life
-Increased comfort of public transport
-A more accessible city for all residents  |
-|   |  | Tram infrastructure Bratislava is currently preparing or already building four new tram lines: line extension to Petržalka, line extension to Bory, new line on Pribinova - Košická streets, and line extension to multimodal hub in Ružinov. In addition to preparing new lines, the city is also preparing or has already implemented the | Tram infrastructure By 2030, 10 km of the tram system, which is the city's public transit backbone, will either be modernised and/or built to increase efficiency and connect densely populated areas or new developments. This is of key importance to increase the number of passengers and to support modal shift |  |   |
-3
-
-Climate Neutrality Action Plan
-
-|   |  | modernisation of three key tram lines: 1. Vajnorská, 2. Ružinovská and 3. SNP/Kamenné Square | towards sustainable modes. |  |   |
-| --- | --- | --- | --- | --- | --- |
-|   |  Technology/infrastructure | Zero-Emission Vehicles
-This includes primarily investing into new trolleybus lines replacing buses on concrete routes as well as purchases of new public transport vehicles, specifically trams and trolleybuses, | Zero-Emission Vehicles
-Investments, especially in the field of public transport, are continued as part of increasing the overall quality, efficiency and attractiveness of public transport.  |   |   |
-|   |  Technology/infrastructure | Cycling infrastructure
-Bratislava continues investing to achieve 42 km of new or modernised cycling infrastructure. | Cycling infrastructure
-Public acceptance of cycling is growing, including as a means of daily commute or for travelling shorter distances.  |   |   |
-|  PRIVATE (RESIDENTIAL AND TERTIARY) BUILDINGS EFFICIENCY/BUILT ENVIRONMENT | Technology/infrastructure | Private residents invest in refurbishment, technology replacement, and renewable energy sources.
-The city and state support this through communication campaigns and by reformulating energy subsidies to better motivate change. | Reduction of energy consumption in the residential sector by 23%, Increase of renewable energy production by 226,000 MWh | 127,000 |   |
-|   | Technology/infrastructure | Businesses invest in refurbishment, technology replacement, | Reduction of energy consumption in the tertiary sector by 38%, Increase of | 317,750 |   |
-4
-
-Climate Neutrality Action Plan
-
-|   |  | and renewable energy sources.
-The city and state support this through communication campaigns and by reformulating energy subsidies to better motivate change. | renewable energy production by 380,000 MWh |  |   |
-| --- | --- | --- | --- | --- | --- |
-|   |  Governance & policy | District heating decarbonisation
-The Bratislava Climate Office, with wide stakeholder participation, develops a new heating strategy outlining decarbonisation pathways and investments by heating companies to achieve them. | District heating decarbonisation
-Heating companies start preparing investments according to the decarbonisation pathways laid out in the heating plan. | 150,000 | Improved air quality
-Enhanced cooperation with the private sector  |
-|   |  Governance & policy | Spatial Planning and Regulation
-The city aims to pilot decarbonisation measures in new developments in collaboration with major developers, and focusing on local energy production, decarbonised heating and local adaptation measures through piloting a new urban planning tool (ecoindex). | Spatial Planning and Regulation
-New regulatory tools are developed and integrated into the new city master plan. | Contributes to the overall reduction in the sector. | Enhanced cooperation with the private sector
-Improved quality of public space
-Improved quality of living/housing  |
-|   |  Social innovation | Bratislava Mayor's Climate Challenge
-In 2025, The city is implementing a pilot | Bratislava Mayor Climate Challenge
-In the following years, the BMCC is expanded | Contributes to the overall reduction in the sector. | Enhanced cooperation with the private sector  |
-5
-
-|   |  | Bratislava Mayor Climate Challenge partnering with 10 retailer and asset managers with one or more sites in Bratislava to accelerate decarbonisation of existing assets. This focus reflects these sectors' impact on Bratislava's current emissions footprint, and their ability to drive emissions reduction both on their own premises and among suppliers, contractors, customers, and other stakeholders through their actions, requirements, and engagement. | to further companies and sectors, delivering measurable energy savings and RES output targets. |  | Better preparedness of local companies for future challenges
-Potentially improved air quality
-Potentially improved quality of public space  |
-| --- | --- | --- | --- | --- | --- |
-|  BLUE-GREEN INFRASTRUCTURE | Technology/infrastructure | Park Redevelopment Bratislava continues to systematic investment into park redevelopment according to standards developed by the Metropolitan Institute of Bratislava. Overall, 15 parks will be redeveloped by 2030. | Park Redevelopment Renewed parks form a connected network across the city; quality green and blue infrastructure is available to residents of every neighbourhood. | Most of the direct impact of this action relates to helping the city adapt to extreme heat and flash flooding. This action has a limited carbon sequestration effect. | Increased public health
-Improved quality of life
-Enhanced biodiversity
-Improved quality of public space  |
-|   | Social innovation | Urban Tree Planting Initiative | Urban Tree Planting Initiative | Most of the direct impact of this action relates to | Improved public health  |
-6
-
-|   |  | Since 2019, the city has been organising the initiative to plant 10,000 trees with various partners from companies, institutions, organisations and communities. By 2030, the city is extending the programme to planting 25,000 new trees and shrubs. As part of this initiative, the city will also provide post-planting care until the trees are well-rooted and can survive without further assistance. | The city can continue the programme in all city districts, working on the technical barriers to tree planting. | helping the city adapt to extreme heat. This action has a limited carbon sequestration effect. | Improved quality of life
-Enhanced biodiversity
-Improved quality of public space  |
-| --- | --- | --- | --- | --- | --- |
-|   |  Technology/infrastructure
-Social innovation | Sustainable Forest Management and Protection
-In 2021, the city of Bratislava concluded an agreement with the Slovak State Forests (Lesy Slovenskej republiky) to limit logging in state forests within the city. As a result, state forests reduced logging in Bratislava forests by more than half (from 17,319 m³ to below 8,000 m³), saving approximately 4,000 trees from being felled annually. | Sustainable Forest Management and Protection
-Both of the programmes are upheld to ensure continued sequestration of carbon and quality recreational opportunities for Bratislava residents. | Most of the direct impact of this action relates to helping the city adapt to extreme heat and flash flooding. This action has a limited carbon sequestration effect. | Improved public health
-Improved quality of life
-Enhanced biodiversity
-Improved air quality  |
-7
-
-Climate Neutrality Action Plan
-
-|   |  | At the same time, the Bratislava City Forests expanded the quiet zone from the original 4% to 51%, a higher proportion than in the Slovak national parks. The aim is to maintain this management regime on 1,500 hectares in the long term, with logging on a further 1,500 hectares kept to a minimum. |  |  |   |
-| --- | --- | --- | --- | --- | --- |
-|   |  Technology/infrastructure Social innovation | Comprehensive Water Retention Measures
-A yearly target will be established for both the city operation as well as for the Bratislava water management company, BVS. | Comprehensive Water Retention Measures
-Water retention measures are integrated into every newbuild and gradually also integrated to existing buildings. Ideally, the city and other stakeholders are able to implement larger-scale measures to limit surface flows of rainwater in the city. | Most of the direct impact of this action relates to helping the city adapt to flash flooding. | Improved quality of life
-Increased comfort of public transport (usually disturbed by floods)
-Increased safety of residents and city users  |
+| Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (potential emission reductions in tCO2eq/year) | Indirect impacts (co-benefits) |
+| MUNICIPAL ASSETS | Governance & policy; Technology | Comprehensive energy savings: the city approves a renovation standard and prioritisation plan for city buildings; yearly efficiency KPIs are introduced for municipal companies. | More high-performance renovation projects are initiated yearly and municipal companies reduce yearly energy use by 20% vs. 2022. | 11,060 | Better comfort and functionality of municipal buildings; financial savings; development of the retrofit market and local green jobs. |
+| MUNICIPAL ASSETS | Governance & policy; Data and digitisation; Learning & capabilities; Social innovation | Energy management: a city building inventory and energy management team are established, with an intersectoral community of practice. | Most municipal buildings are covered by inventory and energy management systems, with clear reporting on savings. | 620 | Improved governance and asset management; stronger ownership of energy-efficiency measures. |
+| MUNICIPAL ASSETS | Governance & policy; Technology/infrastructure | Public Lighting Renovation: citywide lighting upgrade continues with smart-services integration. | Public lighting network is further modernised and integrated with other city services, including the e-charger network. | 1,800 | More reliable operations and improved neighborhood safety. |
+| MUNICIPAL ASSETS | Governance & policy; Technology/infrastructure; Procurement | Renewable Energy Deployment: long-term solar-focused strategy and delivery model development (e.g., energy communities or guaranteed energy services). | Investment plan and implementation model are in place, increasing output and energy-supply stability. | 6,000 | Additional revenue potential and improved energy security. |
+| MUNICIPAL WASTE & WASTEWATER | Technology/infrastructure | Waste-to-Energy: OLO upgrades obsolete incineration technology and prepares K3 modernization. | K3 increases electricity and heat output, supports district-heating decarbonisation, and reduces landfilling. | Impact included under DHS decarbonisation | Elimination of landfilling and new circular-economy business opportunities. |
+| MUNICIPAL WASTE & WASTEWATER | Technology/infrastructure | Composting and Biogas plant: OLO develops infrastructure for organic-waste treatment and energy recovery. | Improved recovery of organic waste and progress toward the city objective of 65% recycling/sorting. | 17,000 | Better circularity outcomes and sustained public-awareness effects on separation/recycling. |
+| MUNICIPAL WASTE & WASTEWATER | Technology/infrastructure | Utilisation of residual wastewater heat: feasibility study defines use cases, locations, costs and deployment model. | If feasible, project implementation is launched through private investment or PPP. | Not possible to calculate (pre-feasibility stage) | Supports district-heating decarbonisation options. |
+| SUSTAINABLE TRANSPORT* | Governance & policy; Data and digitisation; Learning & capabilities | Development and integration of a multimodal transport model with GHG and noise modules; updated data collection and software calibration. | Model feeds directly into SUMP preparation and enables robust baseline and measure-level quantification. | Not quantified in this iteration | Better strategic transport planning and future impact quantification. |
+| SUSTAINABLE TRANSPORT | Governance & policy | Sustainable Urban Mobility Plan (SUMP) update and alignment with TEN-T Regulation; city coordinates stakeholder and citizen participation. | Policy and projections improve through validated data and stronger institutional capability. | Impact of individual measures evaluated through planning | Better air quality and lower noise; higher quality public space; improved public health and accessibility. |
+| SUSTAINABLE TRANSPORT | Technology/infrastructure | Tram infrastructure: new and modernised lines (including Petržalka, Bory, Pribinova-Košická, Ružinov connections). | By 2030, 10 km of tram network is built/modernised to increase efficiency and support modal shift. | Not quantified in this table | Higher public-transport comfort and quality of life. |
+| SUSTAINABLE TRANSPORT | Technology/infrastructure | Zero-Emission Vehicles: trolleybus line development and procurement of low-emission public-transport vehicles. | Continuous upgrades increase transport quality, efficiency and attractiveness. | Not quantified in this table | Supports long-term fleet decarbonisation. |
+| SUSTAINABLE TRANSPORT | Technology/infrastructure | Cycling infrastructure: continued investments toward 42 km of new/modernised network. | Public acceptance and everyday cycling uptake increase. | Not quantified in this table | Health and liveability co-benefits. |
+| PRIVATE (RESIDENTIAL AND TERTIARY) BUILDINGS EFFICIENCY / BUILT ENVIRONMENT | Technology/infrastructure | Residents and businesses invest in refurbishment, technology replacement and renewable sources, supported by communication and subsidy adjustments. | Residential consumption decreases by 23% and tertiary consumption by 38%; renewable production increases (residential +226,000 MWh; tertiary +380,000 MWh). | Residential: 127,000; Tertiary: 317,750 | Greater resilience and lower energy costs. |
+| PRIVATE (RESIDENTIAL AND TERTIARY) BUILDINGS EFFICIENCY / BUILT ENVIRONMENT | Governance & policy | District heating decarbonisation strategy is developed with broad stakeholder participation. | Heating companies prepare investments along agreed pathways. | 150,000 | Improved air quality and stronger private-sector cooperation. |
+| PRIVATE (RESIDENTIAL AND TERTIARY) BUILDINGS EFFICIENCY / BUILT ENVIRONMENT | Governance & policy | Spatial Planning and Regulation: pilots in new developments for local energy production, low-carbon heating and adaptation (ecoindex tool). | New regulatory tools are integrated into the city master plan. | Contributes to overall sector reduction | Improved quality of public space and housing. |
+| PRIVATE (RESIDENTIAL AND TERTIARY) BUILDINGS EFFICIENCY / BUILT ENVIRONMENT | Social innovation | Bratislava Mayor's Climate Challenge pilot starts with retailers and asset managers to accelerate asset decarbonisation. | Program expands to additional sectors with measurable savings and RES targets. | Contributes to overall sector reduction | Better company preparedness and strengthened public-private collaboration. |
+| BLUE-GREEN INFRASTRUCTURE | Technology/infrastructure | Park Redevelopment: systematic investment in park renewal and quality standards. | Renewed parks form a connected citywide network. | Limited direct mitigation impact (primarily adaptation) | Public health, quality of life, biodiversity, and public-space quality benefits. |
+| BLUE-GREEN INFRASTRUCTURE | Social innovation | Urban Tree Planting Initiative: expansion from 10,000 to 25,000 trees/shrubs with post-planting care. | Program scales across districts and addresses technical planting barriers. | Limited direct mitigation impact (primarily adaptation) | Public health, biodiversity, and quality-of-life benefits. |
+| BLUE-GREEN INFRASTRUCTURE | Technology/infrastructure; Social innovation | Sustainable Forest Management and Protection: reduced logging and maintained low-extraction management. | Long-term carbon sequestration and recreation value are maintained. | Limited direct mitigation impact (primarily adaptation) | Public health, biodiversity, air-quality, and liveability co-benefits. |
+| BLUE-GREEN INFRASTRUCTURE | Technology/infrastructure; Social innovation | Comprehensive Water Retention Measures: yearly targets and scaling through city and BVS operations. | Water-retention measures are integrated into new and existing developments. | Limited direct mitigation impact (primarily adaptation) | Lower flood risk, better safety, comfort, and quality of life. |
 
 Important on co-benefits monitoring: While co-benefits such as improved public health, or increased biodiversity are important motivators for local climate action, monitoring them comprehensively presents significant challenges for Bratislava. Data collection often requires long-term, sector-specific studies or proxy indicators that are not readily available at the local level. Additionally, quantifying these effects can be costly, involve multiple institutions, and rely on methodologies that are still evolving. As a result, many of these co-benefits remain qualitatively described but not systematically measured. However, until the next iteration Bratislava will provide a list of co-benefits to be measured through our evolved reporting mechanisms of its strategic framework, especially the city development plan Bratislava 2030. Bratislava will consider reporting such co-benefits, which it can collect independently or through co-operation with academic
 8
@@ -884,21 +774,21 @@ Climate Neutrality Action Plan
 
 # 2.2 Module B-2 Climate Neutrality Portfolio Design
 
-|  B-2.1: Description of action portfolios  |   |
+| B-2.1: Description of action portfolios |  |
 | --- | --- |
-|  Fields of action | Portfolio description  |
-|  Municipal Assets | Comprehensive Energy Savings: Implementing renovations and energy-saving measures in municipal buildings to achieve a 35% reduction in energy consumption by 2030.Energy Management: Introducing comprehensive energy management systems to reduce energy consumption by 20% across all city companies. Partially funded through the Pilot City Project.Public Lighting: Ensuring 100% coverage with LED fixtures with the possibility of intensity control to improve energy efficiency and reduce CO2 emissions.Renewable Energy: Installing renewable energy sources to cover at least 20% of the annual electricity consumption of municipal assets.  |
-|  Municipal Waste & Wastewater | Waste-to-Energy: Upgrading the Waste to Energy (WTE) facility to increase the volume of waste used for electricity and heat production, contributing to the greening of local heat production.Composting and Biogas Plants: Building a new composting plant and a biogas plant to treat biodegradable waste, reducing landfill rates and producing renewable energy.Reducing Landfilling: Achieving a minimum of 65% sorting and recycling rate, less than 5% landfilling, and treating the rest of the waste through energy recovery by 2035.Wastewater Heat Recovery: Conducting feasibility studies for the potential for residual wastewater heat from buildings.  |
-|  Sustainable Transport | Increase of modal share of sustainable transport modes: Raising the combined share of public transport, walking, and cycling to 70% by 2030—directly contributing to emission reductions. This target originates from the Bratislava 2030 strategy and will need to be validated through updated mobility surveys and enhancements to the city's transport modelling tools.Tram Infrastructure: Building and modernising 10 km of tram lines, as the key city transit infrastructure, to enhance public transport efficiency and reduce reliance on private vehicles. Support already ensured or envisioned through ESI Funds 2021 – 2027.Zero-Emission Vehicles: Increasing the share of zero-emission vehicles in the municipal fleet to 50% and building 400 new charging stations for electric vehicles.Cycling Infrastructure: Constructing at least 42 km of new cycling infrastructure, including the installation of new bike racks and support for shared bike infrastructure. The city has been successful in applying for grants from the national Recovery and Resilience Plan. It is crucial that the national government continues the support for cycling infrastructure.  |
-|  Private Buildings Efficiency/Built Environment | Residential Sector:Energy Consumption Reduction: Encourage residents to reduce household energy consumption by 23% through energy-saving measures and increased efficiency.Renewable Energy Production: Significantly increase the production of energy from renewable sources, targeting a  |
-|   | energy-efficient building to reduce energy consumption by 20%.Residential Energy Production: A key component of the energy-efficient building to reduce energy consumption by 20%.  |
+| Fields of action | Portfolio description |
+| Municipal Assets | Comprehensive Energy Savings: Implementing renovations and energy-saving measures in municipal buildings to achieve a 35% reduction in energy consumption by 2030.Energy Management: Introducing comprehensive energy management systems to reduce energy consumption by 20% across all city companies. Partially funded through the Pilot City Project.Public Lighting: Ensuring 100% coverage with LED fixtures with the possibility of intensity control to improve energy efficiency and reduce CO2 emissions.Renewable Energy: Installing renewable energy sources to cover at least 20% of the annual electricity consumption of municipal assets. |
+| Municipal Waste & Wastewater | Waste-to-Energy: Upgrading the Waste to Energy (WTE) facility to increase the volume of waste used for electricity and heat production, contributing to the greening of local heat production.Composting and Biogas Plants: Building a new composting plant and a biogas plant to treat biodegradable waste, reducing landfill rates and producing renewable energy.Reducing Landfilling: Achieving a minimum of 65% sorting and recycling rate, less than 5% landfilling, and treating the rest of the waste through energy recovery by 2035.Wastewater Heat Recovery: Conducting feasibility studies for the potential for residual wastewater heat from buildings. |
+| Sustainable Transport | Increase of modal share of sustainable transport modes: Raising the combined share of public transport, walking, and cycling to 70% by 2030—directly contributing to emission reductions. This target originates from the Bratislava 2030 strategy and will need to be validated through updated mobility surveys and enhancements to the city's transport modelling tools.Tram Infrastructure: Building and modernising 10 km of tram lines, as the key city transit infrastructure, to enhance public transport efficiency and reduce reliance on private vehicles. Support already ensured or envisioned through ESI Funds 2021 – 2027.Zero-Emission Vehicles: Increasing the share of zero-emission vehicles in the municipal fleet to 50% and building 400 new charging stations for electric vehicles.Cycling Infrastructure: Constructing at least 42 km of new cycling infrastructure, including the installation of new bike racks and support for shared bike infrastructure. The city has been successful in applying for grants from the national Recovery and Resilience Plan. It is crucial that the national government continues the support for cycling infrastructure. |
+| Private Buildings Efficiency/Built Environment | Residential Sector:Energy Consumption Reduction: Encourage residents to reduce household energy consumption by 23% through energy-saving measures and increased efficiency.Renewable Energy Production: Significantly increase the production of energy from renewable sources, targeting a |
+|  | energy-efficient building to reduce energy consumption by 20%.Residential Energy Production: A key component of the energy-efficient building to reduce energy consumption by 20%. |
 Climate Neutrality Action Plan
 
 #
 
-|   | production volume of 226,000 MW to enhance energy self-sufficiency. The city commits to support co-operation among distribution companies, permitting offices (incl. for heritage buildings) and providers to facilitate installation of photovoltaics. • Tertiary Sector: ○ Energy Consumption Reduction: Recommend a 38% reduction in energy consumption for companies in the services, trade, retail, educational institutions, hospitals, and public administration sectors. Launch a Bratislava Mayor Climate Challenge to engage local businesses in achieving this goal. ○ Renewable Energy Production: Increase energy production from renewable sources to 380,000 MW in the tertiary sector. ○ Spatial Planning and Regulation: Promote spatial planning and regulatory measures focused on decarbonisation, specifically for development of new neighbourhoods and focusing on local energy production and enhancing local adaptation measures through the new urban planning tool. • District Heating Decarbonisation: ○ Bratislava will work with private heating companies using the tool of the local heating plan to ensure that the industry, which is almost fully reliant on natural gas, commits to clear decarbonisation targets and pathways.  |
+|  | production volume of 226,000 MW to enhance energy self-sufficiency. The city commits to support co-operation among distribution companies, permitting offices (incl. for heritage buildings) and providers to facilitate installation of photovoltaics. • Tertiary Sector: ○ Energy Consumption Reduction: Recommend a 38% reduction in energy consumption for companies in the services, trade, retail, educational institutions, hospitals, and public administration sectors. Launch a Bratislava Mayor Climate Challenge to engage local businesses in achieving this goal. ○ Renewable Energy Production: Increase energy production from renewable sources to 380,000 MW in the tertiary sector. ○ Spatial Planning and Regulation: Promote spatial planning and regulatory measures focused on decarbonisation, specifically for development of new neighbourhoods and focusing on local energy production and enhancing local adaptation measures through the new urban planning tool. • District Heating Decarbonisation: ○ Bratislava will work with private heating companies using the tool of the local heating plan to ensure that the industry, which is almost fully reliant on natural gas, commits to clear decarbonisation targets and pathways. |
 | --- | --- |
-|  Blue-Green Infrastructure | • Park Redevelopment: Bratislava will transform at least 15 existing public spaces such as parks, pocket parks, plazas, and courtyards into higher quality spaces that reduce temperatures in summer, improve air quality, promote local biodiversity, and enhance rainwater retention. In addition to this, the city is committed to creating more linear parks and greenery, to counter the urban heat island effect and reduce flooding risk. • Urban Tree Planting Initiative: Planting 25,000 trees and shrubs by 2030, expanding the existing commitment from the 10,000 trees planting initiative started in 2019. This initiative includes providing post-planting care for trees and prioritising species that are resistant to extreme urban conditions. Trees in the city help reduce the heat island effect, filter pollutants, retain water, support biodiversity, and improve overall quality of life. • Sustainable Forest Management and Protection: In cooperation with the State Enterprise Forests of the Slovak Republic, reducing logging in Bratislava forests by more than half and expanding 'rest zones' where economic logging is excluded to promote recreational use and preserve biodiversity. The city aims to maintain a management regime that excludes commercial logging from more than half of Urban Forests and will seek ways to link corporate volunteering and regular cooperation with the private sector for forest maintenance. • Comprehensive Water Retention Measures: Implementing systemic water retention measures such as the construction of retention ponds, rain gardens, green roofs, and vegetation islands around roads at risk of flooding. The initiative aims to increase the retention capacity of urban areas, reduce drainage load on the sewer system, and prevent local flooding. Specific projects include reviewing 50,000 stormwater connections to sewers and, in the city forests, restoring two large and four small ponds, and creating 30 amphibian hatcheries.  |
+| Blue-Green Infrastructure | • Park Redevelopment: Bratislava will transform at least 15 existing public spaces such as parks, pocket parks, plazas, and courtyards into higher quality spaces that reduce temperatures in summer, improve air quality, promote local biodiversity, and enhance rainwater retention. In addition to this, the city is committed to creating more linear parks and greenery, to counter the urban heat island effect and reduce flooding risk. • Urban Tree Planting Initiative: Planting 25,000 trees and shrubs by 2030, expanding the existing commitment from the 10,000 trees planting initiative started in 2019. This initiative includes providing post-planting care for trees and prioritising species that are resistant to extreme urban conditions. Trees in the city help reduce the heat island effect, filter pollutants, retain water, support biodiversity, and improve overall quality of life. • Sustainable Forest Management and Protection: In cooperation with the State Enterprise Forests of the Slovak Republic, reducing logging in Bratislava forests by more than half and expanding 'rest zones' where economic logging is excluded to promote recreational use and preserve biodiversity. The city aims to maintain a management regime that excludes commercial logging from more than half of Urban Forests and will seek ways to link corporate volunteering and regular cooperation with the private sector for forest maintenance. • Comprehensive Water Retention Measures: Implementing systemic water retention measures such as the construction of retention ponds, rain gardens, green roofs, and vegetation islands around roads at risk of flooding. The initiative aims to increase the retention capacity of urban areas, reduce drainage load on the sewer system, and prevent local flooding. Specific projects include reviewing 50,000 stormwater connections to sewers and, in the city forests, restoring two large and four small ponds, and creating 30 amphibian hatcheries. |
 #
 
 Climate Neutrality Action Plan
@@ -907,96 +797,86 @@ Climate Neutrality Action Plan
 
 # Municipal Assets
 
-|  B-2.2: Individual action outlines  |   |   |
+| B-2.2: Individual action outlines |  |  |
 | --- | --- | --- |
-|  Action outline | Action name | 1 Comprehensive Energy Savings at the City and City Companies  |
-|   |  Action type | Renovation and energy-saving measures  |
-|   |  Action description | Implement renovations and energy-saving measures in municipal buildings to achieve a 35% reduction in energy consumption by 2030, and implement actions to achieve overall reductions of 20% by the municipal companies  |
-|  Reference to impact pathway | Field of action | Energy systems  |
-|   |  Systemic lever | Technological, financial, organisational  |
-|   |  Outcome (according to module B-1.1) | Reduced energy consumption, increased energy efficiency  |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Bratislava and municipal organisations  |
-|   |  Action scale & addressed entities | Municipal buildings  |
-|   |  Involved stakeholders | Municipal staff, energy consultants, contractors  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for renovations, energy-saving technologies Key milestones 2-3 years: 1. Prepare a building renovation standard 2. Introduce yearly KPIs for city companies 3. Prepare an investment plan incl. prioritisation criteria 4. Complete energy audits and prepare an investment package 5. Initiate renovation projects  |
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-|   |  Removed/substituted energy, volume, or fuel type | Reduced electricity and heating fuel consumption  |
-|   |  GHG emissions reduction estimate (total) per emission source sector (tCO2e/year) | 3,060, city and 8,000 city companies  |
-|   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
+| Action outline | Action name | 1 Comprehensive Energy Savings at the City and City Companies |
+|  | Action type | Renovation and energy-saving measures |
+|  | Action description | Implement renovations and energy-saving measures in municipal buildings to achieve a 35% reduction in energy consumption by 2030, and implement actions to achieve overall reductions of 20% by the municipal companies |
+| Reference to impact pathway | Field of action | Energy systems |
+|  | Systemic lever | Technological, financial, organisational |
+|  | Outcome (according to module B-1.1) | Reduced energy consumption, increased energy efficiency |
+| Implementation | Responsible bodies/person for implementation | Municipality of Bratislava and municipal organisations |
+|  | Action scale & addressed entities | Municipal buildings |
+|  | Involved stakeholders | Municipal staff, energy consultants, contractors |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for renovations, energy-saving technologies Key milestones 2-3 years: 1. Prepare a building renovation standard 2. Introduce yearly KPIs for city companies 3. Prepare an investment plan incl. prioritisation criteria 4. Complete energy audits and prepare an investment package 5. Initiate renovation projects |
+| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+|  | Removed/substituted energy, volume, or fuel type | Reduced electricity and heating fuel consumption |
+|  | GHG emissions reduction estimate (total) per emission source sector (tCO2e/year) | 3,060, city and 8,000 city companies |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable |
 Climate Neutrality Action Plan
 
 #
 
 B-2.2: Individual action outlines
 
-|  Action outline | Action name | 2 Energy Management  |
+| Action outline | Action name | 2 Energy Management |
 | --- | --- | --- |
-|   |  Action type | Energy management system implementation  |
-|   |  Action description | Introduce comprehensive energy management systems to reduce energy consumption by 20% across all city companies.  |
-|  Reference to impact pathway | Field of action | Energy systems  |
-|   |  Systemic lever | Technological, organisational  |
-|   |  Outcome (according to module B-1.1) | Improved energy efficiency, reduced operational costs  |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Bratislava, city companies  |
-|   |  Action scale & addressed entities | All city companies  |
-|   |  Involved stakeholders | City companies, City energy managers  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: energy management platform, expert consultation, energy management team and staff training
-Key milestones 2-3 years:
-Create an energy management team
-Build a community of practice of city facility and energy managers
-Develop and scale a building inventory
-Procure an energy management platform  |
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-|   |  Removed/substituted energy, volume, or fuel type | Reduced electricity and heating fuel consumption  |
-|   |  GHG emissions reduction estimate (total) per emission source sector (tCO2eq/year) | 620  |
-|   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
-|   |  Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed  |
+|  | Action type | Energy management system implementation |
+|  | Action description | Introduce comprehensive energy management systems to reduce energy consumption by 20% across all city companies. |
+| Reference to impact pathway | Field of action | Energy systems |
+|  | Systemic lever | Technological, organisational |
+|  | Outcome (according to module B-1.1) | Improved energy efficiency, reduced operational costs |
+| Implementation | Responsible bodies/person for implementation | Municipality of Bratislava, city companies |
+|  | Action scale & addressed entities | All city companies |
+|  | Involved stakeholders | City companies, City energy managers |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: energy management platform, expert consultation, energy management team and staff training<br>Key milestones 2-3 years:<br>Create an energy management team<br>Build a community of practice of city facility and energy managers<br>Develop and scale a building inventory<br>Procure an energy management platform |
+| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+|  | Removed/substituted energy, volume, or fuel type | Reduced electricity and heating fuel consumption |
+|  | GHG emissions reduction estimate (total) per emission source sector (tCO2eq/year) | 620 |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable |
+|  | Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed |
 #
 Climate Neutrality Action Plan
 C
 
-|  B-2.2: Individual action outlines  |   |   |
+| B-2.2: Individual action outlines |  |  |
 | --- | --- | --- |
-|  Action outline | Action name | 3 Public Lighting  |
-|   |  Action type | Lighting system upgrade  |
-|   |  Action description | Ensure 100% coverage with LED fixtures with the possibility of intensity control to improve energy efficiency and reduce GHG emissions.  |
-|  Reference to impact pathway | Field of action | Energy systems  |
-|   |  Systemic lever | Technological, financial  |
-|   |  Outcome (according to module B-1.1) | Reduced energy consumption, improved public lighting efficiency  |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Bratislava  |
-|   |  Action scale & addressed entities | Public lighting systems throughout the city  |
-|   |  Involved stakeholders | Municipal staff  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for LED installations, smart lighting systems
-Milestones: Project implementation is ongoing; funding through a bank loan is secured – completion expected in 2030.  |
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-|   |  Removed/substituted energy, volume, or fuel type | Reduced electricity consumption  |
-|   |  GHG emissions reduction estimate (total) per emission source sector (tCO2eq/year) | 1,800  |
-|   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
-|   |  Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed  |
+| Action outline | Action name | 3 Public Lighting |
+|  | Action type | Lighting system upgrade |
+|  | Action description | Ensure 100% coverage with LED fixtures with the possibility of intensity control to improve energy efficiency and reduce GHG emissions. |
+| Reference to impact pathway | Field of action | Energy systems |
+|  | Systemic lever | Technological, financial |
+|  | Outcome (according to module B-1.1) | Reduced energy consumption, improved public lighting efficiency |
+| Implementation | Responsible bodies/person for implementation | Municipality of Bratislava |
+|  | Action scale & addressed entities | Public lighting systems throughout the city |
+|  | Involved stakeholders | Municipal staff |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for LED installations, smart lighting systems<br>Milestones: Project implementation is ongoing; funding through a bank loan is secured – completion expected in 2030. |
+| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+|  | Removed/substituted energy, volume, or fuel type | Reduced electricity consumption |
+|  | GHG emissions reduction estimate (total) per emission source sector (tCO2eq/year) | 1,800 |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable |
+|  | Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed |
 #
 Climate Neutrality Action Plan
 C
 
-|  B-2.2: Individual action outlines  |   |   |
+| B-2.2: Individual action outlines |  |  |
 | --- | --- | --- |
-|  Action outline | Action name | 4 Renewable Energy  |
-|   |  Action type | Renewable energy installations  |
-|   |  Action description | Deploy renewable energy to cover at least 20% of the annual electricity consumption of municipal assets.  |
-|  Reference to impact pathway | Field of action | Energy systems  |
-|   |  Systemic lever | Technological, financial  |
-|   |  Outcome (according to module B-1.1) | Increased use of renewable energy, reduced reliance on fossil fuels  |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Bratislava  |
-|   |  Action scale & addressed entities | Municipal buildings and facilities  |
-|   |  Involved stakeholders | Renewable energy providers, municipal staff, contractors  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for renewable installations
-Milestones for 2-3 years:
-Selection of an implementation model (energy community, GES or PPP)
-Development of a pilot project scope and design
-At the same time, individual installations on refurbished buildings should be ongoing.  |
-|  Impact & cost | Generated renewable energy (MWh/year) | 15,500  |
-|   |  Removed/substituted energy, volume, or fuel type | Reduced reliance on grid electricity and fossil fuels  |
-|   |  GHG emissions reduction estimate (total) per emission source sector (tCO2eq/year) | 6,000  |
-|   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
-|   |  Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed  |
+| Action outline | Action name | 4 Renewable Energy |
+|  | Action type | Renewable energy installations |
+|  | Action description | Deploy renewable energy to cover at least 20% of the annual electricity consumption of municipal assets. |
+| Reference to impact pathway | Field of action | Energy systems |
+|  | Systemic lever | Technological, financial |
+|  | Outcome (according to module B-1.1) | Increased use of renewable energy, reduced reliance on fossil fuels |
+| Implementation | Responsible bodies/person for implementation | Municipality of Bratislava |
+|  | Action scale & addressed entities | Municipal buildings and facilities |
+|  | Involved stakeholders | Renewable energy providers, municipal staff, contractors |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for renewable installations<br>Milestones for 2-3 years:<br>Selection of an implementation model (energy community, GES or PPP)<br>Development of a pilot project scope and design<br>At the same time, individual installations on refurbished buildings should be ongoing. |
+| Impact & cost | Generated renewable energy (MWh/year) | 15,500 |
+|  | Removed/substituted energy, volume, or fuel type | Reduced reliance on grid electricity and fossil fuels |
+|  | GHG emissions reduction estimate (total) per emission source sector (tCO2eq/year) | 6,000 |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable |
+|  | Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed |
 
 6
 #
@@ -1009,100 +889,87 @@ Climate Neutrality Action Plan
 
 B-2.2: Individual action outlines
 
-|  Action outline | Action name | 5 Waste-to-Energy Plant  |
+| Action outline | Action name | 5 Waste-to-Energy Plant |
 | --- | --- | --- |
-|   |  Action type | Facility upgrade  |
-|   |  Action description | Upgrade the Waste to Energy (WTE) facility to increase the volume of waste used for electricity and heat production.  |
-|  Reference to impact pathway | Field of action | Waste & circular economy  |
-|   |  Systemic lever | Technological, financial  |
-|   |  Outcome (according to module B-1.1) | Increased renewable energy production, reduced landfill waste  |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Bratislava, Municipal waste management company (OLO)  |
-|   |  Action scale & addressed entities | OLO facilities  |
-|   |  Involved stakeholders | OLO, municipal staff  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for facility upgrades
-Milestones for 2-3 years:
-Environmental impact assessment process completed
-Project design under development
-Procurement to start in 2025  |
-|  Impact & cost | Generated renewable energy (MWh/year) | 96,000 MWh of electricity and 53,000 MWh of heat produced yearly  |
-|   |  Removed/substituted energy, volume, or fuel type | Reduced landfill and fossil fuel usage  |
-|   |  GHG emissions reduction estimate (total) per emission source sector (tCO2eq/year) | Impact included under DHS decarbonisation  |
-|   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
-|   |  Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed  |
+|  | Action type | Facility upgrade |
+|  | Action description | Upgrade the Waste to Energy (WTE) facility to increase the volume of waste used for electricity and heat production. |
+| Reference to impact pathway | Field of action | Waste & circular economy |
+|  | Systemic lever | Technological, financial |
+|  | Outcome (according to module B-1.1) | Increased renewable energy production, reduced landfill waste |
+| Implementation | Responsible bodies/person for implementation | Municipality of Bratislava, Municipal waste management company (OLO) |
+|  | Action scale & addressed entities | OLO facilities |
+|  | Involved stakeholders | OLO, municipal staff |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for facility upgrades<br>Milestones for 2-3 years:<br>Environmental impact assessment process completed<br>Project design under development<br>Procurement to start in 2025 |
+| Impact & cost | Generated renewable energy (MWh/year) | 96,000 MWh of electricity and 53,000 MWh of heat produced yearly |
+|  | Removed/substituted energy, volume, or fuel type | Reduced landfill and fossil fuel usage |
+|  | GHG emissions reduction estimate (total) per emission source sector (tCO2eq/year) | Impact included under DHS decarbonisation |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable |
+|  | Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed |
 #
 Climate Neutrality Action Plan
 C
 
-|  B-2.2: Individual action outlines  |   |   |
+| B-2.2: Individual action outlines |  |  |
 | --- | --- | --- |
-|  Action outline | Action name | 6 Composting and Biogas Plants  |
-|   |  Action type | Facility construction  |
-|   |  Action description | Build a new composting plant and a biogas plant to treat biodegradable waste, reducing landfill rates and producing renewable energy.  |
-|  Reference to impact pathway | Field of action | Waste & circular economy  |
-|   |  Systemic lever | Technological, financial  |
-|   |  Outcome (according to module B-1.1) | Increased renewable energy production, reduced landfill waste  |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Bratislava, OLO  |
-|   |  Action scale & addressed entities | OLO facilities  |
-|   |  Involved stakeholders | OLO, municipal staff  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for new facilities
-Timelines: 2024-2026
-Milestones:
-Project design ongoing, implementation expected by 2029  |
-|  Impact & cost | Generated renewable energy (MWh/year) | 7,920 MWh of electricity  |
-|   |  Removed/substituted energy, volume, or fuel type | Reduced landfill and fossil fuel usage  |
-|   |  GHG emissions reduction estimate (total) per emission source sector (tCO2eq/year) | 17,000  |
-|   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
-|   |  Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed  |
+| Action outline | Action name | 6 Composting and Biogas Plants |
+|  | Action type | Facility construction |
+|  | Action description | Build a new composting plant and a biogas plant to treat biodegradable waste, reducing landfill rates and producing renewable energy. |
+| Reference to impact pathway | Field of action | Waste & circular economy |
+|  | Systemic lever | Technological, financial |
+|  | Outcome (according to module B-1.1) | Increased renewable energy production, reduced landfill waste |
+| Implementation | Responsible bodies/person for implementation | Municipality of Bratislava, OLO |
+|  | Action scale & addressed entities | OLO facilities |
+|  | Involved stakeholders | OLO, municipal staff |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for new facilities<br>Timelines: 2024-2026<br>Milestones:<br>Project design ongoing, implementation expected by 2029 |
+| Impact & cost | Generated renewable energy (MWh/year) | 7,920 MWh of electricity |
+|  | Removed/substituted energy, volume, or fuel type | Reduced landfill and fossil fuel usage |
+|  | GHG emissions reduction estimate (total) per emission source sector (tCO2eq/year) | 17,000 |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable |
+|  | Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed |
 
 8
 #
 Climate Neutrality Action Plan
 C
 
-|  B-2.2: Individual action outlines  |   |   |
+| B-2.2: Individual action outlines |  |  |
 | --- | --- | --- |
-|  Action outline | Action name | 7 Reducing Landfilling  |
-|   |  Action type | Waste management policy  |
-|   |  Action description | Achieve a minimum of 65% sorting and recycling rate, less than 5% landfilling, and treat the rest of the waste through energy recovery by 2035.  |
-|  Reference to impact pathway | Field of action | Waste & circular economy  |
-|   |  Systemic lever | Regulatory, organisational, financial  |
-|   |  Outcome (according to module B-1.1) | Increased recycling rates, reduced landfill waste  |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Bratislava, OLO  |
-|   |  Action scale & addressed entities | Municipal waste management system  |
-|   |  Involved stakeholders | OLO, municipal staff, recyclers, residents  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for recycling programs and facilities
-Milestones for 2-3 years:
-Continue improving collection of waste for residents
-Introduce a pay-as-you-throw system
-Expand programmes for the collection of construction waste  |
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-|   |  Removed/substituted energy, volume, or fuel type | Reduced landfill usage  |
-|   |  GHG emissions reduction estimate (total) per emission source sector (tCO2eq/year) | Impact included under composting and biogas and DHS decarbonisation through waste-to-energy plant, see above.  |
-|   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
-|   |  Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed  |
+| Action outline | Action name | 7 Reducing Landfilling |
+|  | Action type | Waste management policy |
+|  | Action description | Achieve a minimum of 65% sorting and recycling rate, less than 5% landfilling, and treat the rest of the waste through energy recovery by 2035. |
+| Reference to impact pathway | Field of action | Waste & circular economy |
+|  | Systemic lever | Regulatory, organisational, financial |
+|  | Outcome (according to module B-1.1) | Increased recycling rates, reduced landfill waste |
+| Implementation | Responsible bodies/person for implementation | Municipality of Bratislava, OLO |
+|  | Action scale & addressed entities | Municipal waste management system |
+|  | Involved stakeholders | OLO, municipal staff, recyclers, residents |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for recycling programs and facilities<br>Milestones for 2-3 years:<br>Continue improving collection of waste for residents<br>Introduce a pay-as-you-throw system<br>Expand programmes for the collection of construction waste |
+| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+|  | Removed/substituted energy, volume, or fuel type | Reduced landfill usage |
+|  | GHG emissions reduction estimate (total) per emission source sector (tCO2eq/year) | Impact included under composting and biogas and DHS decarbonisation through waste-to-energy plant, see above. |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable |
+|  | Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed |
 #
 Climate Neutrality Action Plan
 C
 
-|  B-2.2: Individual action outlines  |   |   |
+| B-2.2: Individual action outlines |  |  |
 | --- | --- | --- |
-|  Action outline | Action name | 8 Wastewater Heat Recovery  |
-|   |  Action type | Feasibility studies  |
-|   |  Action description | Conduct feasibility studies for the potential recovery of residual wastewater heat from buildings.  |
-|  Reference to impact pathway | Field of action | Waste & circular economy  |
-|   |  Systemic lever | Technological, financial  |
-|   |  Outcome (according to module B-1.1) | Identification of potential heat recovery opportunities  |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Bratislava and Bratislava Water Management Company (BVS)  |
-|   |  Action scale & addressed entities | Municipal buildings and facilities  |
-|   |  Involved stakeholders | Energy consultants, municipal staff  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for feasibility studies
-Milestones for 2-3 years:
-Completion of a feasibility study and identification of viable projects  |
-|  Impact & cost | Generated renewable energy (if applicable) | Potential renewable energy from heat recovery  |
-|   |  Removed/substituted energy, volume, or fuel type | Potential reduction in heating energy usage  |
-|   |  GHG emissions reduction estimate (total) per emission source sector (tCO2eq/year) | Dependent on feasibility study outcomes and all impacts to be reflected in the decarbonisation of the district heating action.  |
-|   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
-|   |  Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed  |
+| Action outline | Action name | 8 Wastewater Heat Recovery |
+|  | Action type | Feasibility studies |
+|  | Action description | Conduct feasibility studies for the potential recovery of residual wastewater heat from buildings. |
+| Reference to impact pathway | Field of action | Waste & circular economy |
+|  | Systemic lever | Technological, financial |
+|  | Outcome (according to module B-1.1) | Identification of potential heat recovery opportunities |
+| Implementation | Responsible bodies/person for implementation | Municipality of Bratislava and Bratislava Water Management Company (BVS) |
+|  | Action scale & addressed entities | Municipal buildings and facilities |
+|  | Involved stakeholders | Energy consultants, municipal staff |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for feasibility studies<br>Milestones for 2-3 years:<br>Completion of a feasibility study and identification of viable projects |
+| Impact & cost | Generated renewable energy (if applicable) | Potential renewable energy from heat recovery |
+|  | Removed/substituted energy, volume, or fuel type | Potential reduction in heating energy usage |
+|  | GHG emissions reduction estimate (total) per emission source sector (tCO2eq/year) | Dependent on feasibility study outcomes and all impacts to be reflected in the decarbonisation of the district heating action. |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable |
+|  | Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed |
 
 0
 Climate Neutrality Action Plan
@@ -1111,258 +978,246 @@ Climate Neutrality Action Plan
 
 # Sustainable Transport
 
-|  B-2.2: Individual action outlines  |   |   |
+| B-2.2: Individual action outlines |  |  |
 | --- | --- | --- |
-|  Action outline | Action name | 9 Increase of Modal Share of Sustainable Transport Modes  |
-|   |  Action type | Transportation infrastructure and policy  |
-|   |  Action description | Raising the combined share of public transport, walking, and cycling to 70% by 2030—directly contributing to emission reductions. This target originates from the Bratislava 2030 strategy and will need to be validated through updated mobility surveys and enhancements to the city's transport modelling tools.  |
-|  Reference to impact pathway | Field of action | Mobility & transport  |
-|   |  Systemic lever | Technological, regulatory, financial  |
-|   |  Outcome (according to module B-1.1) | Increased use of sustainable transport modes, reduced vehicle emissions  |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Bratislava, City Transport Company (DPB)  |
-|   |  Action scale & addressed entities | Citywide  |
-|   |  Involved stakeholders | Municipal transportation department, City Transportation Company (DPB)  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for infrastructure improvements and policy changes, update of the city transport modelling tool. Milestones: Action includes various policy-related as well as infrastructural measures to be implemented on an ongoing basis.  |
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-|   |  Removed/substituted energy, volume, or fuel type | Reduced fossil fuel usage in transportation  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | Significant reductions in transport-related emissions  |
-|   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
-|   |  Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed  |
+| Action outline | Action name | 9 Increase of Modal Share of Sustainable Transport Modes |
+|  | Action type | Transportation infrastructure and policy |
+|  | Action description | Raising the combined share of public transport, walking, and cycling to 70% by 2030—directly contributing to emission reductions. This target originates from the Bratislava 2030 strategy and will need to be validated through updated mobility surveys and enhancements to the city's transport modelling tools. |
+| Reference to impact pathway | Field of action | Mobility & transport |
+|  | Systemic lever | Technological, regulatory, financial |
+|  | Outcome (according to module B-1.1) | Increased use of sustainable transport modes, reduced vehicle emissions |
+| Implementation | Responsible bodies/person for implementation | Municipality of Bratislava, City Transport Company (DPB) |
+|  | Action scale & addressed entities | Citywide |
+|  | Involved stakeholders | Municipal transportation department, City Transportation Company (DPB) |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for infrastructure improvements and policy changes, update of the city transport modelling tool. Milestones: Action includes various policy-related as well as infrastructural measures to be implemented on an ongoing basis. |
+| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+|  | Removed/substituted energy, volume, or fuel type | Reduced fossil fuel usage in transportation |
+|  | GHG emissions reduction estimate (total) per emission source sector | Significant reductions in transport-related emissions |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable |
+|  | Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed |
 #
 
 Climate Neutrality Action Plan
 
 #
 
-|  B-2.2: Individual action outlines  |   |   |
+| B-2.2: Individual action outlines |  |  |
 | --- | --- | --- |
-|  Action outline | Action name | 10 Increase of Modal Share of Sustainable Transport Modes  |
-|   |  Action type | Transportation infrastructure and policy  |
-|   |  Action description | Deliver a city- and region-wide programme of traffic surveys (household travel survey, automatic counts, cordon/origin-destination, junction counts), process the data, and update/calibrate the existing PTV Visum multimodal model (latest version). Build an integrated emissions model (HBEFA-based; CO2, CH4, N2O → CO2e and air pollutants) and a noise model linked to the road network. Outputs will underpin strategic transport planning, environmental analyses, and serve as core inputs to the SUMP and CCC impact quantification.  |
-|  Reference to impact pathway | Field of action | Mobility & transport  |
-|   |  Systemic lever | Technological, data/analytical  |
-|   |  Outcome (according to module B-1.1) | Validated baseline and forecasting tools for mobility; quantified transport activity, emissions and noise; improved planning & prioritisation; enables robust GHG reduction estimates for transport measure  |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Bratislava (Transport/ Mobility dept., Climate Office); City Transport Company (DPB)  |
-|   |  Action scale & addressed entities | City and hinterland  |
-|   |  Involved stakeholders | DPB, NDS, ZSSK, IDS BK, Ministry of Transport (MD SR), private/regional operators, telco operators (mobility data), city districts, SUMP team.  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Milestones: under procurement in 2025,  |
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-|   |  Removed/substituted energy, volume, or fuel type | Not direct; action enables fuel use reduction via better policy, modal shift, and network efficiency measures.  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | Enabling action. No direct tCO2e claimed to avoid double counting. Provides transport  |
-|   |  | increase in GHG emissions reduction estimate.  |
+| Action outline | Action name | 10 Increase of Modal Share of Sustainable Transport Modes |
+|  | Action type | Transportation infrastructure and policy |
+|  | Action description | Deliver a city- and region-wide programme of traffic surveys (household travel survey, automatic counts, cordon/origin-destination, junction counts), process the data, and update/calibrate the existing PTV Visum multimodal model (latest version). Build an integrated emissions model (HBEFA-based; CO2, CH4, N2O → CO2e and air pollutants) and a noise model linked to the road network. Outputs will underpin strategic transport planning, environmental analyses, and serve as core inputs to the SUMP and CCC impact quantification. |
+| Reference to impact pathway | Field of action | Mobility & transport |
+|  | Systemic lever | Technological, data/analytical |
+|  | Outcome (according to module B-1.1) | Validated baseline and forecasting tools for mobility; quantified transport activity, emissions and noise; improved planning & prioritisation; enables robust GHG reduction estimates for transport measure |
+| Implementation | Responsible bodies/person for implementation | Municipality of Bratislava (Transport/ Mobility dept., Climate Office); City Transport Company (DPB) |
+|  | Action scale & addressed entities | City and hinterland |
+|  | Involved stakeholders | DPB, NDS, ZSSK, IDS BK, Ministry of Transport (MD SR), private/regional operators, telco operators (mobility data), city districts, SUMP team. |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Milestones: under procurement in 2025, |
+| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+|  | Removed/substituted energy, volume, or fuel type | Not direct; action enables fuel use reduction via better policy, modal shift, and network efficiency measures. |
+|  | GHG emissions reduction estimate (total) per emission source sector | Enabling action. No direct tCO2e claimed to avoid double counting. Provides transport |
+|  |  | increase in GHG emissions reduction estimate. |
 Climate Neutrality Action Plan
 
 #
 
-|  GHS emissions compensated (natural or technological sinks) | Not applicable  |
+| GHG emissions compensated (natural or technological sinks) | Not applicable |
 | --- | --- |
-|  Total costs and costs by CO2e unit | TBD  |
-|  B-2.2: Individual action outlines  |   |   |
+| Total costs and costs by CO2e unit | TBD |
+
+| B-2.2: Individual action outlines |  |  |
 | --- | --- | --- |
-|  Action outline | Action name | 11 Sustainable Urban Mobility Plan (SUMP) – update & alignment with TEN-T Regulation  |
-|   |  Action type | Strategic planning & governance  |
-|   |  Action description | Preparation of a new Sustainable Urban Mobility Plan (SUMP) for Bratislava, aligned with TEN-T Regulation (EU 2021/1153, as revised) and EU Mission neutrality goals. The SUMP will integrate passenger and freight, cross-border commuting, active mobility, public transport, and decarbonisation pathways into one metropolitan framework.  |
-|  Reference to impact pathway | Field of action | Mobility & transport  |
-|   |  Systemic lever | Regulatory, governance, data/analytical, financial  |
-|   |  Outcome (according to module B-1.1) | Legally compliant SUMP providing investment roadmap to 2030; integrated scenarios for sustainable modes (70% modal split target); prioritised TEN-T node interventions; quantified contribution to GHG reduction and air quality.  |
-|  Implementation | Responsible bodies/person for implementation | City of Bratislava, Ministry of Transport  |
-|   |  Action scale & addressed entities | City and metropolitan area  |
-|   |  Involved stakeholders | DPB, NDS, ZSSK, IDS BK, Ministry of Transport (MD SR), private/regional operators, telco operators (mobility data), city districts, SUMP team.  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Resources: procurement of expert consortium; EU/TEN-T technical assistance; staff coordination. Process: participatory design; compliance with EU SUMP guidelines  |
+| Action outline | Action name | 11 Sustainable Urban Mobility Plan (SUMP) – update & alignment with TEN-T Regulation |
+|  | Action type | Strategic planning & governance |
+|  | Action description | Preparation of a new Sustainable Urban Mobility Plan (SUMP) for Bratislava, aligned with TEN-T Regulation (EU 2021/1153, as revised) and EU Mission neutrality goals. The SUMP will integrate passenger and freight, cross-border commuting, active mobility, public transport, and decarbonisation pathways into one metropolitan framework. |
+| Reference to impact pathway | Field of action | Mobility & transport |
+|  | Systemic lever | Regulatory, governance, data/analytical, financial |
+|  | Outcome (according to module B-1.1) | Legally compliant SUMP providing investment roadmap to 2030; integrated scenarios for sustainable modes (70% modal split target); prioritised TEN-T node interventions; quantified contribution to GHG reduction and air quality. |
+| Implementation | Responsible bodies/person for implementation | City of Bratislava, Ministry of Transport |
+|  | Action scale & addressed entities | City and metropolitan area |
+|  | Involved stakeholders | DPB, NDS, ZSSK, IDS BK, Ministry of Transport (MD SR), private/regional operators, telco operators (mobility data), city districts, SUMP team. |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Resources: procurement of expert consortium; EU/TEN-T technical assistance; staff coordination. Process: participatory design; compliance with EU SUMP guidelines |
 Climate Neutrality Action Plan
 
-|   |  | & TEN-T Regulation. Milestones: (1) Scoping & governance setup; (2) Baseline data consolidation (surveys, model inputs); (3) Stakeholder forums & citizen engagement; (4) Draft scenarios (BAU, green, TEN-T priority); (5) Cost-benefit & climate impact analysis; (6) Draft plan; (7) Political adoption; (8) Integration into investment planning (ESIF, CEF, RRP). First milestone: training by Ministry of Transport, engage external advisor.  |
+|  |  | & TEN-T Regulation. Milestones: (1) Scoping & governance setup; (2) Baseline data consolidation (surveys, model inputs); (3) Stakeholder forums & citizen engagement; (4) Draft scenarios (BAU, green, TEN-T priority); (5) Cost-benefit & climate impact analysis; (6) Draft plan; (7) Political adoption; (8) Integration into investment planning (ESIF, CEF, RRP). First milestone: training by Ministry of Transport, engage external advisor. |
 | --- | --- | --- |
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-|   |  Removed/substituted energy, volume, or fuel type | Not direct; action enables fuel use reduction via better policy, modal shift, and network efficiency measures.  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | Enabling action. No direct tCO_{2}e claimed to avoid double counting. Provides transport GHG baseline and measure-level estimates for subsequent actions (from next inventory cycle).  |
-|   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
-|   |  Total costs and costs by CO2e unit | TBD  |
+| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+|  | Removed/substituted energy, volume, or fuel type | Not direct; action enables fuel use reduction via better policy, modal shift, and network efficiency measures. |
+|  | GHG emissions reduction estimate (total) per emission source sector | Enabling action. No direct tCO_{2}e claimed to avoid double counting. Provides transport GHG baseline and measure-level estimates for subsequent actions (from next inventory cycle). |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable |
+|  | Total costs and costs by CO2e unit | TBD |
 
 4
 #
 Climate Neutrality Action Plan
 C
 
-|  B-2.2: Individual action outlines  |   |   |
+| B-2.2: Individual action outlines |  |  |
 | --- | --- | --- |
-|  Action outline | Action name | 12 Tram Infrastructure  |
-|   |  Action type | Infrastructure development  |
-|   |  Action description | Building and modernising 10 km of tram lines to enhance public transport efficiency and reduce reliance on private vehicles.  |
-|  Reference to impact pathway | Field of action | Mobility & transport  |
-|   |  Systemic lever | Technological, financial  |
-|   |  Outcome (according to module B-1.1) | Improved public transport infrastructure, reduced vehicle emissions  |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Bratislava, City Transport Company (DPB)  |
-|   |  Action scale & addressed entities | Citywide  |
-|   |  Involved stakeholders | Municipal transportation department, City Transport Company (DPB)  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | A total of nearly 6 km will be finished by the end of 2025, including the new Petrzalka tramline connecting a neighbourhood of 100,000 residents to the city’s crucial transport system. Funding for the remaining projects is secured through the European Structural and Investment Funds/Cohesion Fund.  |
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-|   |  Removed/substituted energy, volume, or fuel type | Reduced fossil fuel usage in transportation  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | Significant reductions in transport-related emissions  |
-|   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
-|   |  Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed  |
+| Action outline | Action name | 12 Tram Infrastructure |
+|  | Action type | Infrastructure development |
+|  | Action description | Building and modernising 10 km of tram lines to enhance public transport efficiency and reduce reliance on private vehicles. |
+| Reference to impact pathway | Field of action | Mobility & transport |
+|  | Systemic lever | Technological, financial |
+|  | Outcome (according to module B-1.1) | Improved public transport infrastructure, reduced vehicle emissions |
+| Implementation | Responsible bodies/person for implementation | Municipality of Bratislava, City Transport Company (DPB) |
+|  | Action scale & addressed entities | Citywide |
+|  | Involved stakeholders | Municipal transportation department, City Transport Company (DPB) |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | A total of nearly 6 km will be finished by the end of 2025, including the new Petrzalka tramline connecting a neighbourhood of 100,000 residents to the city’s crucial transport system. Funding for the remaining projects is secured through the European Structural and Investment Funds/Cohesion Fund. |
+| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+|  | Removed/substituted energy, volume, or fuel type | Reduced fossil fuel usage in transportation |
+|  | GHG emissions reduction estimate (total) per emission source sector | Significant reductions in transport-related emissions |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable |
+|  | Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed |
 #
 Climate Neutrality Action Plan
 C
 
-|  B-2.2: Individual action outlines  |   |   |
+| B-2.2: Individual action outlines |  |  |
 | --- | --- | --- |
-|  Action outline | Action name | 13 Zero-Emission Vehicles  |
-|   |  Action type | Fleet upgrade  |
-|   |  Action description | Increasing the share of zero-emission vehicles in the municipal fleet to 50% incl. development of trolleybus lines.
-Building 400 new charging stations for electric vehicles.  |
-|  Reference to impact pathway | Field of action | Mobility & transport  |
-|   |  Systemic lever | Technological, financial  |
-|   |  Outcome (according to module B-1.1) | Increased use of zero-emission vehicles, reduced vehicle emissions  |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Bratislava, City Transportation Company, Technical Networks of Bratislava (city company)  |
-|   |  Action scale & addressed entities | Municipal fleet  |
-|   |  Involved stakeholders | Municipal transportation department, electric vehicle providers, charging station contractors  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: Funding for charging infrastructure expected from the national RRF funding for vehicle procurement is dependent upon ESI funds becoming available.
-Timelines: 2024-2029
-Milestones: Individual projects will be implemented as their maturity progresses and funding from RRF/ESI funds becomes available.  |
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-|   |  Removed/substituted energy, volume, or fuel type | Reduced fossil fuel usage in transportation  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | Significant reductions in transport-related emissions  |
-|   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
-|   |  Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed  |
+| Action outline | Action name | 13 Zero-Emission Vehicles |
+|  | Action type | Fleet upgrade |
+|  | Action description | Increasing the share of zero-emission vehicles in the municipal fleet to 50% incl. development of trolleybus lines.<br>Building 400 new charging stations for electric vehicles. |
+| Reference to impact pathway | Field of action | Mobility & transport |
+|  | Systemic lever | Technological, financial |
+|  | Outcome (according to module B-1.1) | Increased use of zero-emission vehicles, reduced vehicle emissions |
+| Implementation | Responsible bodies/person for implementation | Municipality of Bratislava, City Transportation Company, Technical Networks of Bratislava (city company) |
+|  | Action scale & addressed entities | Municipal fleet |
+|  | Involved stakeholders | Municipal transportation department, electric vehicle providers, charging station contractors |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: Funding for charging infrastructure expected from the national RRF funding for vehicle procurement is dependent upon ESI funds becoming available.<br>Timelines: 2024-2029<br>Milestones: Individual projects will be implemented as their maturity progresses and funding from RRF/ESI funds becomes available. |
+| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+|  | Removed/substituted energy, volume, or fuel type | Reduced fossil fuel usage in transportation |
+|  | GHG emissions reduction estimate (total) per emission source sector | Significant reductions in transport-related emissions |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable |
+|  | Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed |
 
 6
 Climate Neutrality Action Plan
 
 B-2.2: Individual action outlines
 
-|  Action outline | Action name | 14 Cycling Infrastructure  |
+| Action outline | Action name | 14 Cycling Infrastructure |
 | --- | --- | --- |
-|   |  Action type | Infrastructure development  |
-|   |  Action description | Construct 42 km of new cycling infrastructure to promote sustainable transport and reduce vehicle emissions.  |
-|  Reference to impact pathway | Field of action | Mobility & transport  |
-|   |  Systemic lever | Technological, financial  |
-|   |  Outcome (according to module B-1.1) | Increased use of cycling as a mode of transport, reduced vehicle emissions  |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Bratislava  |
-|   |  Action scale & addressed entities | Citywide  |
-|   |  Involved stakeholders | Municipal transportation department, urban planners, cycling advocacy groups  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for cycling infrastructure, construction equipment
-Timelines: 2024-2030
-Milestones: Ongoing preparation and completion of individual cycling infrastructure projects.  |
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-|   |  Removed/substituted energy, volume, or fuel type | Reduced fossil fuel usage in transportation  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | Moderate reductions in transport-related emissions  |
-|   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
-|   |  Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed  |
+|  | Action type | Infrastructure development |
+|  | Action description | Construct 42 km of new cycling infrastructure to promote sustainable transport and reduce vehicle emissions. |
+| Reference to impact pathway | Field of action | Mobility & transport |
+|  | Systemic lever | Technological, financial |
+|  | Outcome (according to module B-1.1) | Increased use of cycling as a mode of transport, reduced vehicle emissions |
+| Implementation | Responsible bodies/person for implementation | Municipality of Bratislava |
+|  | Action scale & addressed entities | Citywide |
+|  | Involved stakeholders | Municipal transportation department, urban planners, cycling advocacy groups |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for cycling infrastructure, construction equipment<br>Timelines: 2024-2030<br>Milestones: Ongoing preparation and completion of individual cycling infrastructure projects. |
+| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+|  | Removed/substituted energy, volume, or fuel type | Reduced fossil fuel usage in transportation |
+|  | GHG emissions reduction estimate (total) per emission source sector | Moderate reductions in transport-related emissions |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable |
+|  | Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed |
 Climate Neutrality Action Plan
 
 8
 
 # Private Buildings Efficiency
 
-|  B-2.2: Individual action outlines  |   |   |
+| B-2.2: Individual action outlines |  |  |
 | --- | --- | --- |
-|  Action outline | Action name | 15 Residential Sector: Energy Consumption Reduction  |
-|   |  Action type | Energy-saving measures  |
-|   |  Action description | Encourage residents to reduce household energy consumption by 23% through energy-saving measures and increased efficiency.  |
-|  Reference to impact pathway | Field of action | Residential sector  |
-|   |  Systemic lever | Technological, financial  |
-|   |  Outcome (according to module B-1.1) | Reduced energy consumption  |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Bratislava (in a supporting role)  |
-|   |  Action scale & addressed entities | Residential buildings  |
-|   |  Involved stakeholders | Residents, energy consultants, municipal staff  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for energy-saving measures, incentives for efficiency improvements
-Timelines: 2024-2030
-Milestones: Implementation of energy-saving measures  |
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-|   |  Removed/substituted energy, volume, or fuel type | Reduced electricity and heating fuel consumption  |
-|   |  GHG emissions reduction estimate (total) per emission source sector (tCO2eq/year) | 77,000  |
-|   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
-|   |  Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed  |
+| Action outline | Action name | 15 Residential Sector: Energy Consumption Reduction |
+|  | Action type | Energy-saving measures |
+|  | Action description | Encourage residents to reduce household energy consumption by 23% through energy-saving measures and increased efficiency. |
+| Reference to impact pathway | Field of action | Residential sector |
+|  | Systemic lever | Technological, financial |
+|  | Outcome (according to module B-1.1) | Reduced energy consumption |
+| Implementation | Responsible bodies/person for implementation | Municipality of Bratislava (in a supporting role) |
+|  | Action scale & addressed entities | Residential buildings |
+|  | Involved stakeholders | Residents, energy consultants, municipal staff |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for energy-saving measures, incentives for efficiency improvements<br>Timelines: 2024-2030<br>Milestones: Implementation of energy-saving measures |
+| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+|  | Removed/substituted energy, volume, or fuel type | Reduced electricity and heating fuel consumption |
+|  | GHG emissions reduction estimate (total) per emission source sector (tCO2eq/year) | 77,000 |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable |
+|  | Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed |
 Climate Neutrality Action Plan
 
 B-2.2: Individual action outlines
 
-|  Action outline | Action name | 16 Residential Sector: Renewable Energy Production  |
+| Action outline | Action name | 16 Residential Sector: Renewable Energy Production |
 | --- | --- | --- |
-|   |  Action type | Renewable energy installations  |
-|   |  Action description | Significantly increase the production of energy from renewable sources, targeting a production volume of 226,000 MW to enhance energy self-sufficiency. The city commits to support co-operation among distribution companies, permitting offices (incl. for heritage buildings) and providers to facilitate installation of solar panels.  |
-|  Reference to impact pathway | Field of action | Residential sector  |
-|   |  Systemic lever | Technological, financial  |
-|   |  Outcome (according to module B-1.1) | Increased renewable energy production  |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Bratislava (in a supporting role)  |
-|   |  Action scale & addressed entities | Residential buildings  |
-|   |  Involved stakeholders | Distribution companies, permitting offices, providers, residents  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for renewable installations
-Timelines: 2024-2030  |
-|  Impact & cost | Generated renewable energy (MWh/year) | 226,000  |
-|   |  Removed/substituted energy, volume, or fuel type | Reduced reliance on grid electricity and fossil fuels  |
-|   |  GHG emissions reduction estimate (total) per emission source sector (tCO2eq/year) | 50,000  |
-|   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
-|   |  Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed  |
+|  | Action type | Renewable energy installations |
+|  | Action description | Significantly increase the production of energy from renewable sources, targeting a production volume of 226,000 MW to enhance energy self-sufficiency. The city commits to support co-operation among distribution companies, permitting offices (incl. for heritage buildings) and providers to facilitate installation of solar panels. |
+| Reference to impact pathway | Field of action | Residential sector |
+|  | Systemic lever | Technological, financial |
+|  | Outcome (according to module B-1.1) | Increased renewable energy production |
+| Implementation | Responsible bodies/person for implementation | Municipality of Bratislava (in a supporting role) |
+|  | Action scale & addressed entities | Residential buildings |
+|  | Involved stakeholders | Distribution companies, permitting offices, providers, residents |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for renewable installations<br>Timelines: 2024-2030 |
+| Impact & cost | Generated renewable energy (MWh/year) | 226,000 |
+|  | Removed/substituted energy, volume, or fuel type | Reduced reliance on grid electricity and fossil fuels |
+|  | GHG emissions reduction estimate (total) per emission source sector (tCO2eq/year) | 50,000 |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable |
+|  | Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed |
 #
 Climate Neutrality Action Plan
 0
 
 B-2.2: Individual action outlines
 
-|  Action outline | Action name | 17 Tertiary Sector: Energy Consumption Reduction  |
+| Action outline | Action name | 17 Tertiary Sector: Energy Consumption Reduction |
 | --- | --- | --- |
-|   |  Action type | Energy-saving measures  |
-|   |  Action description | Recommend a 38% reduction in energy consumption for companies in the services, trade, retail, educational institutions, hospitals, and public administration sectors. Launch a Bratislava Mayor Climate Challenge to engage local businesses in achieving this goal.  |
-|  Reference to impact pathway | Field of action | Tertiary sector  |
-|   |  Systemic lever | Technological, financial  |
-|   |  Outcome (according to module B-1.1) | Reduced energy consumption  |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Bratislava (in a supporting role)  |
-|   |  Action scale & addressed entities | Tertiary sector buildings  |
-|   |  Involved stakeholders | Businesses, educational institutions, hospitals, public administration  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for energy-saving measures, incentives for efficiency improvements
-Timelines: 2024-2030
-Milestones:
-City support through the Bratislava Mayor Climate Challenge to start in 2025. The design is being prepared.  |
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-|   |  Removed/substituted energy, volume, or fuel type | Reduced electricity and heating fuel consumption  |
-|   |  GHG emissions reduction estimate (total) per emission source sector (tCO2eq/year) | 124,100  |
-|   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
-|   |  Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed  |
+|  | Action type | Energy-saving measures |
+|  | Action description | Recommend a 38% reduction in energy consumption for companies in the services, trade, retail, educational institutions, hospitals, and public administration sectors. Launch a Bratislava Mayor Climate Challenge to engage local businesses in achieving this goal. |
+| Reference to impact pathway | Field of action | Tertiary sector |
+|  | Systemic lever | Technological, financial |
+|  | Outcome (according to module B-1.1) | Reduced energy consumption |
+| Implementation | Responsible bodies/person for implementation | Municipality of Bratislava (in a supporting role) |
+|  | Action scale & addressed entities | Tertiary sector buildings |
+|  | Involved stakeholders | Businesses, educational institutions, hospitals, public administration |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for energy-saving measures, incentives for efficiency improvements<br>Timelines: 2024-2030<br>Milestones:<br>City support through the Bratislava Mayor Climate Challenge to start in 2025. The design is being prepared. |
+| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+|  | Removed/substituted energy, volume, or fuel type | Reduced electricity and heating fuel consumption |
+|  | GHG emissions reduction estimate (total) per emission source sector (tCO2eq/year) | 124,100 |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable |
+|  | Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed |
 Climate Neutrality Action Plan
 
 B-2.2: Individual action outlines
 
-|  Action outline | Action name | 18 Tertiary Sector: Renewable Energy Production  |
+| Action outline | Action name | 18 Tertiary Sector: Renewable Energy Production |
 | --- | --- | --- |
-|   |  Action type | Renewable energy installations  |
-|   |  Action description | Increase energy production from renewable sources to 380,000 MW in the tertiary sector.  |
-|  Reference to impact pathway | Field of action | Tertiary sector  |
-|   |  Systemic lever | Technological, financial  |
-|   |  Outcome (according to module B-1.1) | Increased renewable energy production  |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Bratislava (in a supporting role)  |
-|   |  Action scale & addressed entities | Tertiary sector buildings  |
-|   |  Involved stakeholders | Businesses, educational institutions, hospitals, public administration  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for renewable installations
-Timelines: 2024-2030
-Milestones for the city support TBD.  |
-|  Impact & cost | Generated renewable energy (MWh/year) | 380,000  |
-|   |  Removed/substituted energy, volume, or fuel type | Reduced reliance on grid electricity and fossil fuels  |
-|   |  GHG emissions reduction estimate (total) per emission source sector (tCO2eq/year) | 193,650  |
-|   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
-|   |  Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed  |
+|  | Action type | Renewable energy installations |
+|  | Action description | Increase energy production from renewable sources to 380,000 MW in the tertiary sector. |
+| Reference to impact pathway | Field of action | Tertiary sector |
+|  | Systemic lever | Technological, financial |
+|  | Outcome (according to module B-1.1) | Increased renewable energy production |
+| Implementation | Responsible bodies/person for implementation | Municipality of Bratislava (in a supporting role) |
+|  | Action scale & addressed entities | Tertiary sector buildings |
+|  | Involved stakeholders | Businesses, educational institutions, hospitals, public administration |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for renewable installations<br>Timelines: 2024-2030<br>Milestones for the city support TBD. |
+| Impact & cost | Generated renewable energy (MWh/year) | 380,000 |
+|  | Removed/substituted energy, volume, or fuel type | Reduced reliance on grid electricity and fossil fuels |
+|  | GHG emissions reduction estimate (total) per emission source sector (tCO2eq/year) | 193,650 |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable |
+|  | Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed |
 #
 Climate Neutrality Action Plan
 C
 
-|  B-2.2: Individual action outlines  |   |   |
+| B-2.2: Individual action outlines |  |  |
 | --- | --- | --- |
-|  Action outline | Action name | 19 Tertiary Sector: Spatial Planning and Regulation  |
-|  Referenceto impact pathway | Action type | Policy and regulatory measures  |
-|   |  Action description | Promote spatial planning and regulatory measures focused on decarbonisation, specifically for development of new neighbourhoods and focusing on local energy production and enhancing local adaptation measures through the new urban planning tool.  |
-|   |  Field of action | Tertiary sector  |
-|  Implementation | Systemic lever | Regulatory, organisational  |
-|   |  Outcome (according to module B-1.1) | Improved urban planning, increased focus on decarbonisation  |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Bratislava, Metropolitan Institute of Bratislava  |
-|   |  Action scale & addressed entities | Citywide  |
-|   |  Involved stakeholders | Metropolitan Institute of Bratislava, developers, municipal staff  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | The city is co-creating Bratislava’s Voluntary Decarbonised Development Standard (DDS) that translates EPBD/EED into locally usable performance thresholds, criteria, and processes. Milestones: Develop DDS v0, pilot it in private and municipal projects, then publish DDS v1 with a Technical Implementation Manual. Build internal capacity, onboard developers, produce an explainer kit, and drive national policy alignment. Timeline: until mid-2027..  |
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-|   |  Removed/substituted energy, volume, or fuel type | Not applicable  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | Moderate reductions in urban emissions  |
-|   |  GHG emissions compensated (natural or technological sinks) | Contributes to the overall reduction envisaged for the sector.  |
-|   |  Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed  |
+| Action outline | Action name | 19 Tertiary Sector: Spatial Planning and Regulation |
+| Reference to impact pathway | Action type | Policy and regulatory measures |
+|  | Action description | Promote spatial planning and regulatory measures focused on decarbonisation, specifically for development of new neighbourhoods and focusing on local energy production and enhancing local adaptation measures through the new urban planning tool. |
+|  | Field of action | Tertiary sector |
+| Implementation | Systemic lever | Regulatory, organisational |
+|  | Outcome (according to module B-1.1) | Improved urban planning, increased focus on decarbonisation |
+| Implementation | Responsible bodies/person for implementation | Municipality of Bratislava, Metropolitan Institute of Bratislava |
+|  | Action scale & addressed entities | Citywide |
+|  | Involved stakeholders | Metropolitan Institute of Bratislava, developers, municipal staff |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | The city is co-creating Bratislava’s Voluntary Decarbonised Development Standard (DDS) that translates EPBD/EED into locally usable performance thresholds, criteria, and processes. Milestones: Develop DDS v0, pilot it in private and municipal projects, then publish DDS v1 with a Technical Implementation Manual. Build internal capacity, onboard developers, produce an explainer kit, and drive national policy alignment. Timeline: until mid-2027.. |
+| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+|  | Removed/substituted energy, volume, or fuel type | Not applicable |
+|  | GHG emissions reduction estimate (total) per emission source sector | Moderate reductions in urban emissions |
+|  | GHG emissions compensated (natural or technological sinks) | Contributes to the overall reduction envisaged for the sector. |
+|  | Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed |
 3
 
 Climate Neutrality Action Plan
@@ -1370,95 +1225,87 @@ Climate Neutrality Action Plan
 Climate Neutrality Action Plan
 C
 
-|  B-2.2: Individual action outlines  |   |   |
+| B-2.2: Individual action outlines |  |  |
 | --- | --- | --- |
-|  Action outline | Action name | 20 District Heating Decarbonisation  |
-|   |  Action type | Energy infrastructure upgrade  |
-|   |  Action description | Bratislava will work with private heating companies using the tool of the local heating strategy to ensure that the industry, which is almost fully reliant on natural gas, commits to clear decarbonisation targets and pathways.  |
-|  Reference to impact pathway | Field of action | District heating  |
-|   |  Systemic lever | Technological, financial  |
-|   |  Outcome (according to module B-1.1) | Decarbonisation of district heating systems, reduced reliance on fossil fuels  |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Bratislava  |
-|   |  Action scale & addressed entities | District heating systems  |
-|   |  Involved stakeholders | Private heating companies, energy consultants, municipal staff  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for heating infrastructure upgrades, incentives for decarbonisation
-Timelines: 2024-2030
-Milestones: Development of a new local heating plan in 2024 and 2025.  |
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-|   |  Removed/substituted energy, volume, or fuel type | Reduced reliance on fossil fuels for heating  |
-|   |  GHG emissions reduction estimate (total) per emission source sector (tCO2eq/year) | 150,000  |
-|   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
-|   |  Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed  |
+| Action outline | Action name | 20 District Heating Decarbonisation |
+|  | Action type | Energy infrastructure upgrade |
+|  | Action description | Bratislava will work with private heating companies using the tool of the local heating strategy to ensure that the industry, which is almost fully reliant on natural gas, commits to clear decarbonisation targets and pathways. |
+| Reference to impact pathway | Field of action | District heating |
+|  | Systemic lever | Technological, financial |
+|  | Outcome (according to module B-1.1) | Decarbonisation of district heating systems, reduced reliance on fossil fuels |
+| Implementation | Responsible bodies/person for implementation | Municipality of Bratislava |
+|  | Action scale & addressed entities | District heating systems |
+|  | Involved stakeholders | Private heating companies, energy consultants, municipal staff |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for heating infrastructure upgrades, incentives for decarbonisation<br>Timelines: 2024-2030<br>Milestones: Development of a new local heating plan in 2024 and 2025. |
+| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+|  | Removed/substituted energy, volume, or fuel type | Reduced reliance on fossil fuels for heating |
+|  | GHG emissions reduction estimate (total) per emission source sector (tCO2eq/year) | 150,000 |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable |
+|  | Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed |
 #
 Climate Neutrality Action Plan
 #
 Blue-Green Infrastructure
 
-|  B-2.2: Individual action outlines  |   |   |
+| B-2.2: Individual action outlines |  |  |
 | --- | --- | --- |
-|  Action outline | Action name | 21 Park Redevelopment  |
-|   | Action type | Public space transformation  |
-|   | Action description | Bratislava will transform at least 15 existing public spaces such as parks, pocket parks, plazas, and courtyards into higher quality spaces that reduce temperatures in summer, improve air quality, promote local biodiversity, and enhance rainwater retention. In addition to this, the city is committed to creating more linear parks and greenery, to counter the urban heat island effect and reduce flooding risk.  |
-|  Reference to impact pathway | Field of action | Green infrastructure  |
-|   | Systemic lever | Technological, financial, organisational  |
-|   | Outcome (according to module B-1.1) | Improved urban climate resilience and biodiversity  |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Bratislava  |
-|   | Action scale & addressed entities | Citywide  |
-|   | Involved stakeholders | Municipal staff, urban planners, local communities  |
-|   | Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for park redevelopment, public engagement programs
-Timelines: 2024-2030
-Milestones: Completion of park redevelopment projects  |
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-|   | Removed/substituted energy, volume, or fuel type | Not applicable  |
-|   | GHG emissions reduction estimate (total) per emission source sector | Not applicable  |
-|   | GHG emissions compensated (natural or technological sinks) | Moderate carbon sink through increased trees and greenery  |
-|   | Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed  |
+| Action outline | Action name | 21 Park Redevelopment |
+|  | Action type | Public space transformation |
+|  | Action description | Bratislava will transform at least 15 existing public spaces such as parks, pocket parks, plazas, and courtyards into higher quality spaces that reduce temperatures in summer, improve air quality, promote local biodiversity, and enhance rainwater retention. In addition to this, the city is committed to creating more linear parks and greenery, to counter the urban heat island effect and reduce flooding risk. |
+| Reference to impact pathway | Field of action | Green infrastructure |
+|  | Systemic lever | Technological, financial, organisational |
+|  | Outcome (according to module B-1.1) | Improved urban climate resilience and biodiversity |
+| Implementation | Responsible bodies/person for implementation | Municipality of Bratislava |
+|  | Action scale & addressed entities | Citywide |
+|  | Involved stakeholders | Municipal staff, urban planners, local communities |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for park redevelopment, public engagement programs<br>Timelines: 2024-2030<br>Milestones: Completion of park redevelopment projects |
+| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+|  | Removed/substituted energy, volume, or fuel type | Not applicable |
+|  | GHG emissions reduction estimate (total) per emission source sector | Not applicable |
+|  | GHG emissions compensated (natural or technological sinks) | Moderate carbon sink through increased trees and greenery |
+|  | Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed |
 #
 Climate Neutrality Action Plan
 6
 
 B-2.2: Individual action outlines
 
-|  Action outline | Action name | 22 Urban Tree Planting Initiative  |
+| Action outline | Action name | 22 Urban Tree Planting Initiative |
 | --- | --- | --- |
-|   | Action type | Tree and shrub planting  |
-|   | Action description | Planting 25,000 trees and shrubs by 2030, expanding the existing commitment from the 10,000 trees planting initiative started in 2019. This initiative includes providing post-planting care for trees and prioritising species that are resistant to extreme urban conditions. Trees in the city help reduce the heat island effect, filter pollutants, retain water, support biodiversity, and improve the overall quality of life.  |
-|  Reference to impact pathway | Field of action | Green infrastructure  |
-|   | Systemic lever | Technological, financial, organisational  |
-|   | Outcome (according to module B-1.1) | Enhanced urban greenery and improved air quality  |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Bratislava  |
-|   | Action scale & addressed entities | Citywide  |
-|   | Involved stakeholders | Municipal staff, local communities, environmental NGOs  |
-|   | Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for tree planting, post-planting care programs
-Timelines: 2024-2030
-Milestones: Achievement of tree planting targets  |
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-|   | Removed/substituted energy, volume, or fuel type | Not applicable  |
-|   | GHG emissions reduction estimate (total) per emission source sector | Not applicable  |
-|   | GHG emissions compensated (natural or technological sinks) | Significant carbon sink through tree planting  |
-|   | Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed  |
+|  | Action type | Tree and shrub planting |
+|  | Action description | Planting 25,000 trees and shrubs by 2030, expanding the existing commitment from the 10,000 trees planting initiative started in 2019. This initiative includes providing post-planting care for trees and prioritising species that are resistant to extreme urban conditions. Trees in the city help reduce the heat island effect, filter pollutants, retain water, support biodiversity, and improve the overall quality of life. |
+| Reference to impact pathway | Field of action | Green infrastructure |
+|  | Systemic lever | Technological, financial, organisational |
+|  | Outcome (according to module B-1.1) | Enhanced urban greenery and improved air quality |
+| Implementation | Responsible bodies/person for implementation | Municipality of Bratislava |
+|  | Action scale & addressed entities | Citywide |
+|  | Involved stakeholders | Municipal staff, local communities, environmental NGOs |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for tree planting, post-planting care programs<br>Timelines: 2024-2030<br>Milestones: Achievement of tree planting targets |
+| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+|  | Removed/substituted energy, volume, or fuel type | Not applicable |
+|  | GHG emissions reduction estimate (total) per emission source sector | Not applicable |
+|  | GHG emissions compensated (natural or technological sinks) | Significant carbon sink through tree planting |
+|  | Total costs and costs by CO2e unit | Estimated project cost and cost-effectiveness analysis needed |
 #
 Climate Neutrality Action Plan
 7
 
-|  B-2.2: Individual action outlines  |   |   |
+| B-2.2: Individual action outlines |  |  |
 | --- | --- | --- |
-|  Action outline | Action name | 23 Sustainable Forest Management and Protection  |
-|   | Action type | Forest management  |
-|   | Action description | In cooperation with the State Enterprise Forests of the Slovak Republic, reducing logging in Bratislava forests by more than half and expanding 'rest zones' where economic logging is excluded to promote recreational use and preserve biodiversity. The city aims to maintain a management regime that excludes commercial logging from more than half of Urban Forests and will seek ways to link corporate volunteering and regular cooperation with the private sector for forest maintenance.  |
-|  Reference to impact pathway | Field of action | Forest management  |
-|   | Systemic lever | Regulatory, organisational, financial  |
-|   | Outcome (according to module B-1.1) | Preserved biodiversity and enhanced recreational spaces  |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Bratislava  |
-|   | Action scale & addressed entities | Urban forests  |
-|   | Involved stakeholders | State Enterprise Forests, municipal staff, private sector volunteers  |
-|   | Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for forest management, volunteer coordination
-Timelines: 2024-2030
-Milestones: Establishment and maintenance of 'rest zones'  |
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-|   | Removed/substituted energy, volume, or fuel type | Not applicable  |
-|   | GHG emissions reduction estimate (total) per emission source sector | Not applicable  |
-|   | GHG emissions compensated (natural or technological sinks) | Carbon sink preserved through trees not logged  |
+| Action outline | Action name | 23 Sustainable Forest Management and Protection |
+|  | Action type | Forest management |
+|  | Action description | In cooperation with the State Enterprise Forests of the Slovak Republic, reducing logging in Bratislava forests by more than half and expanding 'rest zones' where economic logging is excluded to promote recreational use and preserve biodiversity. The city aims to maintain a management regime that excludes commercial logging from more than half of Urban Forests and will seek ways to link corporate volunteering and regular cooperation with the private sector for forest maintenance. |
+| Reference to impact pathway | Field of action | Forest management |
+|  | Systemic lever | Regulatory, organisational, financial |
+|  | Outcome (according to module B-1.1) | Preserved biodiversity and enhanced recreational spaces |
+| Implementation | Responsible bodies/person for implementation | Municipality of Bratislava |
+|  | Action scale & addressed entities | Urban forests |
+|  | Involved stakeholders | State Enterprise Forests, municipal staff, private sector volunteers |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for forest management, volunteer coordination<br>Timelines: 2024-2030<br>Milestones: Establishment and maintenance of 'rest zones' |
+| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+|  | Removed/substituted energy, volume, or fuel type | Not applicable |
+|  | GHG emissions reduction estimate (total) per emission source sector | Not applicable |
+|  | GHG emissions compensated (natural or technological sinks) | Carbon sink preserved through trees not logged |
 8
 
 Climate Neutrality Action Plan
@@ -1467,22 +1314,20 @@ Climate Neutrality Action Plan
 
 B-2.2: Individual action outlines
 
-|  Action outline | Action name | 24 Comprehensive Water Retention Measures  |
+| Action outline | Action name | 24 Comprehensive Water Retention Measures |
 | --- | --- | --- |
-|   | Action type | Blue infrastructure  |
-|   | Action description | Implementing systemic water retention measures such as the construction of retention ponds, rain gardens, green roofs, and vegetation islands around roads at risk of flooding. The initiative aims to increase the retention capacity of urban areas, reduce drainage load on the sewer system, and prevent local flooding. Specific projects include reviewing 50,000 stormwater connections to sewers and, in the city forests, restoring two large and four small ponds, and creating 30 amphibian hatcheries.  |
-|  Reference to impact pathway | Field of action | Water management  |
-|   | Systemic lever | Technological, financial, organisational  |
-|   | Outcome (according to module B-1.1) | Improved water retention and reduced flood risk  |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Bratislava, Water Management Agency of the city (BVS)  |
-|   | Action scale & addressed entities | Citywide  |
-|   | Involved stakeholders | Municipal staff, water management authorities, local communities  |
-|   | Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for water retention projects, public engagement
-Timelines: 2024-2030
-Milestones: Completion of water retention projects  |
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-|   | Removed/substituted energy, volume, or fuel type | Not applicable  |
-|   | GHG emissions reduction estimate (total) per emission source sector | Moderate reductions through enhanced water management  |
+|  | Action type | Blue infrastructure |
+|  | Action description | Implementing systemic water retention measures such as the construction of retention ponds, rain gardens, green roofs, and vegetation islands around roads at risk of flooding. The initiative aims to increase the retention capacity of urban areas, reduce drainage load on the sewer system, and prevent local flooding. Specific projects include reviewing 50,000 stormwater connections to sewers and, in the city forests, restoring two large and four small ponds, and creating 30 amphibian hatcheries. |
+| Reference to impact pathway | Field of action | Water management |
+|  | Systemic lever | Technological, financial, organisational |
+|  | Outcome (according to module B-1.1) | Improved water retention and reduced flood risk |
+| Implementation | Responsible bodies/person for implementation | Municipality of Bratislava, Water Management Agency of the city (BVS) |
+|  | Action scale & addressed entities | Citywide |
+|  | Involved stakeholders | Municipal staff, water management authorities, local communities |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Resources needed: funding for water retention projects, public engagement<br>Timelines: 2024-2030<br>Milestones: Completion of water retention projects |
+| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+|  | Removed/substituted energy, volume, or fuel type | Not applicable |
+|  | GHG emissions reduction estimate (total) per emission source sector | Moderate reductions through enhanced water management |
 9
 
 Climate Neutrality Action Plan
@@ -1506,41 +1351,37 @@ Module B-3 "Indicators for Monitoring, Evaluation and Learning" contains a selec
 
 An overview table listing the indicators selected per outcome and impact including targets and evaluation points (B-3.1);
 A metadata table for each indicator selected (B-3.2).
-|  Fields of Action | Indicator | KPI | Indicator Unit | Indicator Baseline* | Indicator Target 2030 | Corresponding Action | Note  |
+| Fields of Action | Indicator | KPI | Indicator Unit | Indicator Baseline* | Indicator Target 2030 | Corresponding Action | Note |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Buildings & Heating | Energy consumption from municipal buildings | KPI.1 | MWh/year | Electricity: 35,530
-Heat/Cold: 10,271
-Natural Gas: 5,667 | Electricity: 23,313
-Heat/Cold: 3,511
-Natural Gas: 4,979 | 1,2 |   |
-|   |  Shared of modernised public lighting | KPI.2 | % | - | 100% | 3 | Baseline 2021  |
-|   |  Share of own production of electricity and heat from renewable sources in the total consumption of buildings | KPI.3 | % | 0% | 20.0% | 4 | Baseline 2022  |
-|   |  Overall building renovation (envelope) | KPI.4 | % annual renovation rate | 1% | 2.5% | 15,16,18 |   |
-|   |  Decarbonizing district heating | KPI.5 | % share of district heating produced using renewables vs. fossil fuels | TBD | TBD | 17 |   |
-|   |  Emission factor of heat supplied by the district heating system | KPI.6 | tCO2e/MWh | TBD | 0.122 | 17 |   |
-|   |  Companies participating in the Bratislava Mayor Climate Challenge | KPI.7 | number of companies | 0 | 30 | 19 |   |
-|   |  Energy savings participating companies in the Bratislava Mayor Climate Challenge | KPI.8 | MWh/year | 0 | 2 | 19 |   |
-|  Electricity | Renewable electricity production in Bratislava | KPI.9 | MWh/year |  | 606,000.00 | 4,15,16,18 |   |
-|  Transport | Modal split | KPI.10 | share of sustainable travel modes | 60% | 70% | 10,11,12, 14 | in 2014  |
-|   |  Cycling infrastructure | KPI.11 | km per year of new infrastructure |  | 5 | 14 |   |
+| Buildings & Heating | Energy consumption from municipal buildings | KPI.1 | MWh/year | Electricity: 35,530<br>Heat/Cold: 10,271<br>Natural Gas: 5,667 | Electricity: 23,313<br>Heat/Cold: 3,511<br>Natural Gas: 4,979 | 1,2 |  |
+|  | Share of modernised public lighting | KPI.2 | % | - | 100% | 3 | Baseline 2021 |
+|  | Share of own production of electricity and heat from renewable sources in the total consumption of buildings | KPI.3 | % | 0% | 20.0% | 4 | Baseline 2022 |
+|  | Overall building renovation (envelope) | KPI.4 | % annual renovation rate | 1% | 2.5% | 15,16,18 |  |
+|  | Decarbonizing district heating | KPI.5 | % share of district heating produced using renewables vs. fossil fuels | TBD | TBD | 17 |  |
+|  | Emission factor of heat supplied by the district heating system | KPI.6 | tCO2e/MWh | TBD | 0.122 | 17 |  |
+|  | Companies participating in the Bratislava Mayor Climate Challenge | KPI.7 | number of companies | 0 | 30 | 19 |  |
+|  | Energy savings participating companies in the Bratislava Mayor Climate Challenge | KPI.8 | MWh/year | 0 | 2 | 19 |  |
+| Electricity | Renewable electricity production in Bratislava | KPI.9 | MWh/year |  | 606,000.00 | 4,15,16,18 |  |
+| Transport | Modal split | KPI.10 | share of sustainable travel modes | 60% | 70% | 10,11,12, 14 | in 2014 |
+|  | Cycling infrastructure | KPI.11 | km per year of new infrastructure |  | 5 | 14 |  |
 2
 
 Climate Neutrality Action Plan
 
-|   | Modernised or new line infrastructure (tram) | KPI.12 | km | 0 | 10 | 12 |   |
+|  | Modernised or new line infrastructure (tram) | KPI.12 | km | 0 | 10 | 12 |  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |  % of zero-emission vehicles in public transport | KPI.13 | km | 0 | 1 | 13 |   |
-|  Waste | Municipal waste landfilling rate | KPI.14 | % | 8.9% | under 5% | 5,6 | Baseline 2022, target by 2035  |
-|   |  Volume of municipal waste generated | KPI.15 | kg/year/per capita |  |  |  | Actions covered by a separate strategy.  |
-|   |  Waste sorting rate | KPI.16 | % | 39% | 45% |  | Actions covered by a separate strategy.  |
-|   |  Volume of heat supplied to the central heat supply system | KPI.17 | MWh/year | 0 | 53,000 | 5 |   |
-|  Blue-Green Infrastructure | Number of parks redeveloped | KPI.18 | number | 0 | 15 | 20 |   |
-|   |  Area of public space revitalised | KPI.19 | m2 | TBD | TBD | 20 |   |
-|   |  Trees and bushes planted | KPI.20 | number | 0 | 25,000 | 21 |   |
-|   |  Volume of trees/timber protected from logging | KPI.21 | m³/year | 0 | 13,000 | 22 |   |
-|   |  Impervious area replaced | KPI.22 | m2/year | TBD | TBD | 23 |   |
-|  Citizen engagement | Number of citizens engaged in education or campaign activities | KPI.23 | number/year | 0 | 100 |  |   |
-|   |  Number of citizens engaged through participatory activities | KPI.24 | number/year | 0 | 100 |  |   |
+|  | % of zero-emission vehicles in public transport | KPI.13 | km | 0 | 1 | 13 |  |
+| Waste | Municipal waste landfilling rate | KPI.14 | % | 8.9% | under 5% | 5,6 | Baseline 2022, target by 2035 |
+|  | Volume of municipal waste generated | KPI.15 | kg/year/per capita |  |  |  | Actions covered by a separate strategy. |
+|  | Waste sorting rate | KPI.16 | % | 39% | 45% |  | Actions covered by a separate strategy. |
+|  | Volume of heat supplied to the central heat supply system | KPI.17 | MWh/year | 0 | 53,000 | 5 |  |
+| Blue-Green Infrastructure | Number of parks redeveloped | KPI.18 | number | 0 | 15 | 20 |  |
+|  | Area of public space revitalised | KPI.19 | m2 | TBD | TBD | 20 |  |
+|  | Trees and bushes planted | KPI.20 | number | 0 | 25,000 | 21 |  |
+|  | Volume of trees/timber protected from logging | KPI.21 | m³/year | 0 | 13,000 | 22 |  |
+|  | Impervious area replaced | KPI.22 | m2/year | TBD | TBD | 23 |  |
+| Citizen engagement | Number of citizens engaged in education or campaign activities | KPI.23 | number/year | 0 | 100 |  |  |
+|  | Number of citizens engaged through participatory activities | KPI.24 | number/year | 0 | 100 |  |  |
 # 4 Part C – Enabling Climate Neutrality by 2030
 
 Part C “Enabling Climate Neutrality by 2030” aims to outline any enabling interventions, i.e., regarding organisational setting or collaborative governance models or related to social innovations – designed to support the climate action portfolios (Module B-2) as well as aiming to achieve co-benefits outlined in the impact pathway (Module B-1). These interventions also address the identified opportunities, gaps and barriers identified Module A-2 and A-3.
@@ -1579,9 +1420,9 @@ Climate action also provides a key opportunity for engagement with Bratislava's 
 
 The implementation of the CCC will be reported regularly to the Environment and Climate Change Commission, ensuring transparency and accountability. Biannually, reporting to the City Council is planned and required.
 
-|  Barrier(s) addressed | Siloed organisational structures (Municipal governance)  |
+| Barrier(s) addressed | Siloed organisational structures (Municipal governance) |
 | --- | --- |
-|  4.1.1 | Fragmentation of city governance (Municipal governance)  |
+| 4.1.1 | Fragmentation of city governance (Municipal governance) |
 
 # 4.1.2 External governance
 
@@ -1610,11 +1451,11 @@ In alignment with the internal governance mechanisms described above, the output
 
 Looking ahead, Bratislava will continue to expand community engagement through public consultations, workshops, and participatory processes, inviting residents to co-create local climate solutions. Partnerships with regional and international climate networks will also support mutual learning and alignment with emerging global practices. To further advance this work, the Climate Office will pilot interdisciplinary workshops bringing together professionals from urban planning, environmental science, and social sciences, unlocking creative synergies for climate solutions.
 
-|  Barrier(s) addressed | 4.1.2 | Lack of technical staff (Municipal Governance)  |
+| Barrier(s) addressed | 4.1.2 | Lack of technical staff (Municipal Governance) |
 | --- | --- | --- |
-|   |  | Lack of capacity (Municipal Assets)  |
-|   |  | Lack of capacity and expertise (Waste and Wastewater)  |
-|   |  | Lack of quality data for planning (Sustainable Transport)  |
+|  |  | Lack of capacity (Municipal Assets) |
+|  |  | Lack of capacity and expertise (Waste and Wastewater) |
+|  |  | Lack of quality data for planning (Sustainable Transport) |
 
 # Private sector engagement
 
@@ -1671,7 +1512,7 @@ Energy supply is vastly privatised in Bratislava, which means the city will need
 Electricity: A key measure to reduce emissions in the built environment is to increase electricity production from local renewable energy sources (mostly solar PVs) on residential, commercial, and public buildings. Bratislava's role in this area is to strongly support processes aimed at simplifying the permits for photovoltaic installation and their connection to the grid. The Climate Office has started discussions with the main electricity provider ZSE to explore possibilities of cooperation on the deployment of renewables across the city. This will address the technological barrier of connectivity of renewables to the grid.
 Heat: While Bratislava has a large district heating network, it predominantly uses natural gas. The decarbonisation of district heating is a key priority for achieving climate neutrality, as it is responsible for  $40\%$  of the city's total GHG emissions. A key obstacle here is the fragmentation of the district heat system under several concession agreements with the city districts, which leaves the city without immediate control over strategic decisions on fuel sources and technology upgrades. Bratislava aims to maximize its influence on heat sources in new developments through its local heat plan, that is currently under revision as one of our key initiatives under the CCC, while also revising our approach to new concessions focusing on decarbonisation plans. However, the absence of clear gas phase-out mandates limits our ability to drive a full transition until 2030.
 
-|  Barrier(s) addressed 4.1.3 | Lack of financing tools for capital expenditures (Blue-Green Infrastructure) Limited municipal powers (Built Environment – Private Buildings) Low support for Renewable Energy Sources (Built Environment – Private Buildings) Low public acceptance of renewables (Built Environment – Private Buildings) High investment needs into network expansion (Sustainable Transport)  |
+| Barrier(s) addressed 4.1.3 | Lack of financing tools for capital expenditures (Blue-Green Infrastructure) Limited municipal powers (Built Environment – Private Buildings) Low support for Renewable Energy Sources (Built Environment – Private Buildings) Low public acceptance of renewables (Built Environment – Private Buildings) High investment needs into network expansion (Sustainable Transport) |
 | --- | --- |
 
 # 4.1.3 Engaging Citizens in Bratislava's Climate Transition
@@ -1745,42 +1586,20 @@ Climate Neutrality Action Plan
 
 This module lists the actions taken by the city to support and foster social innovation initiatives or non-technological innovation more broadly (e.g., in entrepreneurship, social economy, social awareness &amp; mobilisation, social cohesion and solidarity, etc) aimed to address the systemic barriers and leverage the opportunities identified in Module A-3 $^4$ .
 
-|  Intervention name | Description | Systemic barriers / opportunities addressed | Leadership and stakeholders involved | Enabling impact and co-benefits  |
+| Intervention name | Description | Systemic barriers / opportunities addressed | Leadership and stakeholders involved | Enabling impact and co-benefits |
 | --- | --- | --- | --- | --- |
-|  Mayor of Bratislava Climate Challenge | Bratislava is developing a programme that engages commercial building owners and tenants to pursue voluntary workplace energy use reductions. | Limited municipal powers (Built Environment – Private Buildings)Low support for renewable energy sources (Built Environment – Private Buildings)Low public acceptance of renewables (Built Environment – Private Buildings) | Bratislava Climate OfficePrivate companiesMayor of BratislavaEnergy providers | Emissions reduced through energy savings, renewable energy sources deployment and other measures taken by companies in the challenge.Strengthened relationship between the city and the private sector.Increased environmental awareness in companies.  |
-|  Climathon Bratislava | Climathon Bratislava is an innovative event where teams of students and enthusiasts from across Slovakia develop creative solutions around climate mitigation and adaptation for the city of Bratislava | Siloed organisational structures (Municipal governance)Lack of technical staff (Municipal Governance)Lack of capacity (Municipal Assets)Lack of capacity and expertise (Waste and Wastewater) | Bratislava Innovations OfficeBratislava Climate OfficeMetropolitan Institute of Bratislava (MIB)Private companies and start-upsCitizens and students | Various solutions for climate change mitigation and adaptation developed each year.A community of environmentally conscious students, workers and companies is created to support further climate action in the city.Proposal for social innovation tools as well as digital solutions  |
-|  Re-use centres KOLO | KOLO serves as a tool for waste prevention. For a recommended contribution, residents can take items away and can also bring items | Insufficient financial sustainability for circular initiatives (Waste and Wastewater) | Department of EnvironmentWaste Management Company (OLO)NGOs and civic organisations | Reduced landfilling and enhanced circularity principles.Educated citizens and children, who engage in more sustainable practices.  |
+| Mayor of Bratislava Climate Challenge | Bratislava is developing a programme that engages commercial building owners and tenants to pursue voluntary workplace energy use reductions. | Limited municipal powers (Built Environment – Private Buildings)Low support for renewable energy sources (Built Environment – Private Buildings)Low public acceptance of renewables (Built Environment – Private Buildings) | Bratislava Climate OfficePrivate companiesMayor of BratislavaEnergy providers | Emissions reduced through energy savings, renewable energy sources deployment and other measures taken by companies in the challenge.Strengthened relationship between the city and the private sector.Increased environmental awareness in companies. |
+| Climathon Bratislava | Climathon Bratislava is an innovative event where teams of students and enthusiasts from across Slovakia develop creative solutions around climate mitigation and adaptation for the city of Bratislava | Siloed organisational structures (Municipal governance)Lack of technical staff (Municipal Governance)Lack of capacity (Municipal Assets)Lack of capacity and expertise (Waste and Wastewater) | Bratislava Innovations OfficeBratislava Climate OfficeMetropolitan Institute of Bratislava (MIB)Private companies and start-upsCitizens and students | Various solutions for climate change mitigation and adaptation developed each year.A community of environmentally conscious students, workers and companies is created to support further climate action in the city.Proposal for social innovation tools as well as digital solutions |
+| Re-use centres KOLO | KOLO serves as a tool for waste prevention. For a recommended contribution, residents can take items away and can also bring items | Insufficient financial sustainability for circular initiatives (Waste and Wastewater) | Department of EnvironmentWaste Management Company (OLO)NGOs and civic organisations | Reduced landfilling and enhanced circularity principles.Educated citizens and children, who engage in more sustainable practices. |
 Climate Neutrality Action Plan
 
 #
 
-|   | they no longer need at home. | Lack of capacity and expertise (Waste and Wastewater)
-Lack of awareness of climate change among city staff and the public and resistance to lifestyle changes (Municipal Governance) | Citizens
-Private companies
-City Organisations (libraries, museums, schools) | Increased quality of life.
-Business opportunities for circular economy.
-Support for socially disadvantaged households.  |
+|  | they no longer need at home. | Lack of capacity and expertise (Waste and Wastewater)<br>Lack of awareness of climate change among city staff and the public and resistance to lifestyle changes (Municipal Governance) | Citizens<br>Private companies<br>City Organisations (libraries, museums, schools) | Increased quality of life.<br>Business opportunities for circular economy.<br>Support for socially disadvantaged households. |
 | --- | --- | --- | --- | --- |
-|  Bratislava Municipal Rental Agency | The project of the Municipal Rental Agency is aimed at reducing and overcoming barriers in the availability of housing. It is intended for all people facing various obstacles in the commercial housing market, including those who are suffering from energy poverty. | Limited municipal powers (Private Buildings)
-Limited support for residents in the Bratislava region (Private Buildings) | Department of Social Affairs
-Citizens (single women, seniors, low-income households)
-Flat owners
-Banks
-Private Companies | No direct impact on climate neutrality.
-Social inclusion and support for disadvantaged households.
-Enhanced partnership between the city and private finance institutions.  |
-|  City for Children programme | The City for Children project aims to create a safe, inclusive and functioning environment for children. In cooperation with schools, the city is developing mobility plans, introducing measures to increase the safety of pedestrians, supporting outdoor play, creating attractive and functional public spaces and building communities. | Growing reliance on private cars (Sustainable Mobility)
-Public resistance and lack of awareness (Blue-Green Infrastructure)
-Lack of awareness of climate change among city staff and the public and resistance to lifestyle changes (Municipal Governance) | Metropolitan Institute of Bratislava (MIB)
-Schools
-Citizens
-Children | Reduced emissions from transportation of children to schools.
-Changing behaviours of children towards more sustainable transportation.
-Reduced air pollution and noise from traffic.
-Increased quality of life.
-Increased quality of public spaces.  |
-|  City Forests Eco-education Centre | The city has opened a modern eco-education centre in one of its most frequented forest areas. The centre offers courses, | Public resistance and lack of awareness (Blue-Green Infrastructure) | Bratislava City Forests
-Department of Environment | Educated children (and adults) who are more aware of environmental issues and are closer to nature.  |
+| Bratislava Municipal Rental Agency | The project of the Municipal Rental Agency is aimed at reducing and overcoming barriers in the availability of housing. It is intended for all people facing various obstacles in the commercial housing market, including those who are suffering from energy poverty. | Limited municipal powers (Private Buildings)<br>Limited support for residents in the Bratislava region (Private Buildings) | Department of Social Affairs<br>Citizens (single women, seniors, low-income households)<br>Flat owners<br>Banks<br>Private Companies | No direct impact on climate neutrality.<br>Social inclusion and support for disadvantaged households.<br>Enhanced partnership between the city and private finance institutions. |
+| City for Children programme | The City for Children project aims to create a safe, inclusive and functioning environment for children. In cooperation with schools, the city is developing mobility plans, introducing measures to increase the safety of pedestrians, supporting outdoor play, creating attractive and functional public spaces and building communities. | Growing reliance on private cars (Sustainable Mobility)<br>Public resistance and lack of awareness (Blue-Green Infrastructure)<br>Lack of awareness of climate change among city staff and the public and resistance to lifestyle changes (Municipal Governance) | Metropolitan Institute of Bratislava (MIB)<br>Schools<br>Citizens<br>Children | Reduced emissions from transportation of children to schools.<br>Changing behaviours of children towards more sustainable transportation.<br>Reduced air pollution and noise from traffic.<br>Increased quality of life.<br>Increased quality of public spaces. |
+| City Forests Eco-education Centre | The city has opened a modern eco-education centre in one of its most frequented forest areas. The centre offers courses, | Public resistance and lack of awareness (Blue-Green Infrastructure) | Bratislava City Forests<br>Department of Environment | Educated children (and adults) who are more aware of environmental issues and are closer to nature. |
 1
 
 Climate Neutrality Action Plan
@@ -2088,12 +1907,12 @@ EU MISSION PLATFORM | CLIMATE NEUTRAL AND SMART CITIES
 
 The table below enlists the signatories¹ who are committing to this CCC, and thereby to help the city achieve its goal to reach climate neutrality by 2030.
 
-|  Name of the signatory (organisation) | Sector / Domain / Level of operation² | Legal form | Name of the responsible person | Position of the responsible person  |
+| Name of the signatory (organisation) | Sector / Domain / Level of operation² | Legal form | Name of the responsible person | Position of the responsible person |
 | --- | --- | --- | --- | --- |
-|  City of Bratislava | Municipality | City | Matúš Vallo | Mayor  |
-|  Odvoz a likvidácia odpadu | Municipal Waste Company | Akciová spoločnosť (joint-stock company) | Ivan Sokáč | CEO & Chairman of the Board  |
-|  Bratislavská vodárenská spoločnosť | Municipal Water Company | Akciová spoločnosť (joint-stock company) | Ladislav Kizák | CEO & Chairman of the Board  |
-|  Technické siete Bratislava | Municipal Public Lighting and Networks Company | Akciová spoločnosť (joint-stock company) | Juraj Nyulassy | CEO & Chairman of the Board  |
+| City of Bratislava | Municipality | City | Matúš Vallo | Mayor |
+| Odvoz a likvidácia odpadu | Municipal Waste Company | Akciová spoločnosť (joint-stock company) | Ivan Sokáč | CEO & Chairman of the Board |
+| Bratislavská vodárenská spoločnosť | Municipal Water Company | Akciová spoločnosť (joint-stock company) | Ladislav Kizák | CEO & Chairman of the Board |
+| Technické siete Bratislava | Municipal Public Lighting and Networks Company | Akciová spoločnosť (joint-stock company) | Juraj Nyulassy | CEO & Chairman of the Board |
 
 ¹ Climate City Contract signatories may be individuals or organisations. They ideally include national and/or regional governments, for example concrete agreements/ commitments made through the multi-level governance engagement processes supported by NetZeroCities, CapaCities, and other emerging national level initiatives.
 

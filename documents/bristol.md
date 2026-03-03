@@ -12,7 +12,6 @@ EU MISSION PLATFORM | CLIMATE NEUTRAL AND SMART CITIES
 The content of this document reflects only the author's view. The European Commission is not responsible for any use that may be made of the information it contains.
 
 NetZeroCities has received funding from the H2020 Research and Innovation Programme under the grant agreement n°101036519.
-Page | 2
 
 # Table of Contents
 
@@ -35,7 +34,6 @@ Module C-1 Governance Innovation Interventions ... 102
 Module C-2 Social Innovation Interventions ... 104
 Outlook and next steps ... 105
 Annexes ... 106
-BRISTOL CLIMATE ACTION
 
 Bristol One City Climate Action Plan
 
@@ -62,76 +60,73 @@ The plan has been created by partners in Bristol and has been documented here by
 The individual action outlines described here have been suggested by the Transition Team as potential actions to address the city's greenhouse gas emissions. Whereas there is commitment from the Transition Team to strive to support the process of prioritising and developing these actions with further stakeholder involvement with a view to successfully realising the actions in future, this plan does not represent a commitment by any of the Transition Team members to implement these actions. It should also be noted that action to address the city's greenhouse gas emissions needs a collaborative approach involving action locally, regionally, nationally and internationally.
 
 The plan also sets these suggested actions within the context of Bristol as a city, previous work on climate action in Bristol and potential next steps.
-Page | 4
 
 # List of figures
 
 The list identifies the titles and page numbers of all the visual elements in the plan.
 
-|  Figure No | Figure title | Page No  |
+| Figure No | Figure title | Page No |
 | --- | --- | --- |
-|  Figure 1 | Bristol's Climate Mission Approach | 9  |
-|  Figure 2 | Map of Bristol's geographical boundary | 10  |
-|  Figure 3 | Bristol's territorial GHG emissions by domain in 2018 – adapted from DESNZ data | 16  |
-|  Figure 4 | Bristol's territorial GHG emissions by sector in 2018 – adapted from ClimateView data | 16  |
-|  Figure 5 | Bristol's territorial GHG emissions by domain 2005-2022 - Adapted from DESNZ (2024) | 17  |
-|  Figure 6 | Assessment of the projected impact of existing policies by 2030, and emissions gap to climate neutrality | 22  |
-|  Figure 7 | Transition pathway for this Climate Neutrality Action Plan | 23  |
-|  Figure 8 | The relationship between enabling conditions and systemic levers | 26  |
-|  Figure 9 | The 10 key themes (emissions domains) for climate action in Bristol | 27  |
-|  Figure 10 | Bristol's Transition Team members | 32  |
-|  Figure 11 | Key indicators of the transition to decarbonise homes | 38  |
-|  Figure 12 | Number of Bristol's homes by tenure | 39  |
-|  Figure 13 | Number of Bristol's non-domestic units by sector | 40  |
-|  Figure 14 | Percentage of homes with Energy Performance Certificate of C or above, by tenure | 42  |
-|  Figure 15 | Percentage of non-domestic units with Energy Performance Certificate of C or above, by sector | 42  |
-|  Figure 16 | Hypothetical price scenarios and cost to offset residual emissions | 86  |
+| Figure 1 | Bristol's Climate Mission Approach | 9 |
+| Figure 2 | Map of Bristol's geographical boundary | 10 |
+| Figure 3 | Bristol's territorial GHG emissions by domain in 2018 – adapted from DESNZ data | 16 |
+| Figure 4 | Bristol's territorial GHG emissions by sector in 2018 – adapted from ClimateView data | 16 |
+| Figure 5 | Bristol's territorial GHG emissions by domain 2005-2022 - Adapted from DESNZ (2024) | 17 |
+| Figure 6 | Assessment of the projected impact of existing policies by 2030, and emissions gap to climate neutrality | 22 |
+| Figure 7 | Transition pathway for this Climate Neutrality Action Plan | 23 |
+| Figure 8 | The relationship between enabling conditions and systemic levers | 26 |
+| Figure 9 | The 10 key themes (emissions domains) for climate action in Bristol | 27 |
+| Figure 10 | Bristol's Transition Team members | 32 |
+| Figure 11 | Key indicators of the transition to decarbonise homes | 38 |
+| Figure 12 | Number of Bristol's homes by tenure | 39 |
+| Figure 13 | Number of Bristol's non-domestic units by sector | 40 |
+| Figure 14 | Percentage of homes with Energy Performance Certificate of C or above, by tenure | 42 |
+| Figure 15 | Percentage of non-domestic units with Energy Performance Certificate of C or above, by sector | 42 |
+| Figure 16 | Hypothetical price scenarios and cost to offset residual emissions | 86 |
 
 # List of tables
 
 The list identifies the titles and page numbers of all tables in the plan.
 
-|  Table No | Table title | Page No  |
+| Table No | Table title | Page No |
 | --- | --- | --- |
-|  I-1.1: | Climate Neutrality Target by 2030 | 10  |
-|  A1.1 | Bristol's territorial greenhouse gas emission sources by sector in 2018, produced using ClimateView | 12  |
-|  A1.2 | Global Protocol for Community-Scale Greenhouse Gas Inventories compliant report: Bristol's territorial greenhouse gas emission sources by sector and sub-sector in 2018, produced using ClimateView | 13  |
-|  A1.3 | Emissions factors used in this emissions inventory | 15  |
-|  A-2.1 | Bristol's territorial emissions baseline in 2018, the city's carbon reduction target, an assessment of emissions impact of existing policies, the remaining gap to be addressed through this plan, assessment of the emissions impact of this plan, and the projected residual emissions after its full implementation | 24  |
-|  B-3.1 | Proposed indicators overview table | 87  |
-|  C.2.1 | Relations between social innovations, systems, and impact pathways | 103  |
-Page | 5
+| I-1.1: | Climate Neutrality Target by 2030 | 10 |
+| A1.1 | Bristol's territorial greenhouse gas emission sources by sector in 2018, produced using ClimateView | 12 |
+| A1.2 | Global Protocol for Community-Scale Greenhouse Gas Inventories compliant report: Bristol's territorial greenhouse gas emission sources by sector and sub-sector in 2018, produced using ClimateView | 13 |
+| A1.3 | Emissions factors used in this emissions inventory | 15 |
+| A-2.1 | Bristol's territorial emissions baseline in 2018, the city's carbon reduction target, an assessment of emissions impact of existing policies, the remaining gap to be addressed through this plan, assessment of the emissions impact of this plan, and the projected residual emissions after its full implementation | 24 |
+| B-3.1 | Proposed indicators overview table | 87 |
+| C.2.1 | Relations between social innovations, systems, and impact pathways | 103 |
 
 # Abbreviations and acronyms
 
 The list identifies the abbreviations and acronyms used in the plan.
 
-|  Abbreviations and acronyms | Definition  |
+| Abbreviations and acronyms | Definition |
 | --- | --- |
-|  BACCC | Bristol Advisory Committee on Climate Change  |
-|  BAU | Business As Usual  |
-|  BCC | Bristol City Council  |
-|  CCC | Climate City Contract  |
-|  CO2e | Carbon Dioxide Equivalent  |
-|  DESNZ | Department of Energy Security and Net Zero  |
-|  DFES | Distribution Future Energy Scenarios  |
-|  EPC | Energy Performance Certificate  |
-|  EU | European Union  |
-|  EV | Electric Vehicle  |
-|  HE | Higher Education  |
-|  HWRCs | Household Waste and Recycling Centres  |
-|  GHG | Greenhouse Gas  |
-|  GPC | Global Protocol for Community-Scale Greenhouse Gas Reporting  |
-|  LGV | Large Goods Vehicle  |
-|  LIDP | Local Industrial Decarbonisation Plan  |
-|  MW | Megawatts  |
-|  NGED | National Grid Electricity Distribution  |
-|  NHS | National Health Service  |
-|  PV | Photovoltaics  |
-|  SDG | Sustainable Development Goals  |
-|  TT | Transition Team  |
-|  WECA | West of England Combined Authority  |
-Page | 6
+| BACCC | Bristol Advisory Committee on Climate Change |
+| BAU | Business As Usual |
+| BCC | Bristol City Council |
+| CCC | Climate City Contract |
+| CO2e | Carbon Dioxide Equivalent |
+| DESNZ | Department of Energy Security and Net Zero |
+| DFES | Distribution Future Energy Scenarios |
+| EPC | Energy Performance Certificate |
+| EU | European Union |
+| EV | Electric Vehicle |
+| HE | Higher Education |
+| HWRCs | Household Waste and Recycling Centres |
+| GHG | Greenhouse Gas |
+| GPC | Global Protocol for Community-Scale Greenhouse Gas Reporting |
+| LGV | Large Goods Vehicle |
+| LIDP | Local Industrial Decarbonisation Plan |
+| MW | Megawatts |
+| NGED | National Grid Electricity Distribution |
+| NHS | National Health Service |
+| PV | Photovoltaics |
+| SDG | Sustainable Development Goals |
+| TT | Transition Team |
+| WECA | West of England Combined Authority |
 
 # 1 Introduction
 
@@ -192,8 +187,6 @@ Most recently Bristol delivered £100 million of low carbon energy investment fr
 
 Bristol's stated ambition is carbon neutrality by 2030 for all scopes of emissions, covering the six greenhouse gases listed in the EU Mission. This has been established in the city's climate strategy – the One City Climate Strategy. However, for the purpose of this plan we are only considering territorial emissions and not all scopes of emissions.
 
-Page | 7
-Page | 8
 
 # Development of Bristol's One City Climate Strategy
 
@@ -221,7 +214,6 @@ Waste and Circular Economy
 Green Infrastructure and Nature-based Solutions
 
 The plan also sets these actions within the context of Bristol as a city, previous work on climate action in Bristol and key initiatives taking place in the city. The action plan has then been used as the basis for the creation of the One City Climate Investment Plan which has been developed with input from consultants. The suite of information and documents that now form the city's climate plans is shown below in Figure 1.
-Page | 9
 
 # Bristol's Climate Mission Approach
 
@@ -241,25 +233,23 @@ work towards obtaining the related funding required to implement actions
 This will be a continuous process of development but we plan to review the Climate City Contract (CCC) in two years and update as appropriate. We consider that the plan is comprehensive in its scope but that additional information and detail will be needed actions as are developed and implemented.
 
 Whilst the Transition Team forms the core group working to develop the actions in this plan we shall engage with a much wider group of stakeholders in the city, drawing upon the One City approach and the Mission Net Zero Project (see section A-3.1).
-Page | 10
 
-|  Table I-1.1: Climate Neutrality Target by 2030  |   |   |   |
+| Table I-1.1: Climate Neutrality Target by 2030 |  |  |  |
 | --- | --- | --- | --- |
-|  Sectors | Scope 1 | Scope 2 | Scope 3  |
-|  Stationary energy | Included | Included | Not applicable  |
-|   |  No exclusions | No exclusions | Not applicable  |
-|  Transport | Included | Included | Not applicable  |
-|   |  No exclusions | No exclusions | Not applicable  |
-|  Waste/wastewater | Included | Not applicable | Included  |
-|   |  No exclusions | Not applicable | No exclusions  |
-|  Industrial Process and Product Use (IPPU) | Included | Not applicable | Not applicable  |
-|   |  No exclusions | Not applicable | Not applicable  |
-|  Agricultural, Forestry and Land Use (AFOLU) | Included | Not applicable | Not applicable  |
-|   |  No exclusions | Not applicable | Not applicable  |
-|  Other | Not applicable | Not applicable | Not applicable  |
-|  Geographical boundary | Same as city administrative boundary  |   |   |
-|  Figure 2: Map of Bristol's geographical boundary  |   |   |   |
-Page | 11
+| Sectors | Scope 1 | Scope 2 | Scope 3 |
+| Stationary energy | Included | Included | Not applicable |
+|  | No exclusions | No exclusions | Not applicable |
+| Transport | Included | Included | Not applicable |
+|  | No exclusions | No exclusions | Not applicable |
+| Waste/wastewater | Included | Not applicable | Included |
+|  | No exclusions | Not applicable | No exclusions |
+| Industrial Process and Product Use (IPPU) | Included | Not applicable | Not applicable |
+|  | No exclusions | Not applicable | Not applicable |
+| Agricultural, Forestry and Land Use (AFOLU) | Included | Not applicable | Not applicable |
+|  | No exclusions | Not applicable | Not applicable |
+| Other | Not applicable | Not applicable | Not applicable |
+| Geographical boundary | Same as city administrative boundary |  |  |
+| Figure 2: Map of Bristol's geographical boundary |  |  |  |
 
 # 2 Part A – Current State of Climate Action
 
@@ -288,101 +278,89 @@ Emissions arising from Industrial Process and Product Use (IPPU) are excluded fr
 
 All of the figures in ClimateView are calculated in tonnes of carbon dioxide equivalent (tonnes / CO₂e). The model does not currently allow direct input of data for individual GHG types. However, where data for individual GHGs is available, national conversion factors have been applied to include their relative GHG impact in carbon dioxide equivalent terms.
 
-|  Emission Source by Sector | Total GHGs (metric tonnes CO2e)  |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|   |   |  Scope 1 | Scope 2 | Scope 3 | Basic | Basic+ | Basic+ S3  |
-|  STATIONARY ENERGY | Energy use (all emissions except I.4.4) | 690885 | 375921 | 0 | 10668
-| 0 | 0  |
-|   |  Energy generation supplied to the grid (I.4.4) | 518 |  |  |  |  |   |
-|  TRANSPORTATION | Transportation | 739526 | 6243 | 1 | 74577
-| 0 | 0  |
-|  WASTE | Waste generated in the city (III.X.1 and III.X.2) | 143130 |  | 0 | 14313
-| 0 | 0  |
-|   |  Waste generated outside city (III.X.3) | 0 |  |  |  |  |   |
-|  IPPU | (all IV emissions) | 0 |  |  |  | 0 | 0  |
-|  AFOLU | (all V emissions) | 3000 |  |  | 3000 | 0 | 0  |
-|  OTHER SCOPE 3 | (all VI emissions) |  |  | 0 |  |  | 0  |
-|  Total |   | 1577059 | 382164 | 1 | 1,958,706 | All Basic+ Emissions | All Basic+ S3 Emissions  |
-|  |   |   |   |   |   |   |   |
-|  Table A1.1 Bristol's territorial greenhouse gas emission sources by sector in 2018, produced using ClimateView  |   |   |   |   |   |   |   |
-
-Page | 12
-|  GPE ref No. | GHG Emissions Source (By Sector and Sub-sector) | Total GHGs (metric tonnes CO2e)  |   |   |   |
+| Emission Source by Sector | Total GHGs (metric tonnes CO2e) |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- |
-|   |   |  Scope 1 | Scope 2 | Scope 3 | Total  |
-|  I | STATIONARY ENERGY |  |  |  |   |
-|  I.1 | Residential | 408582 | 139467 | 0 | 548049  |
-|  I.2 | Commercial and Institutional | 191727 | 219331 | 0 | 411058  |
-|  I.3 | Manufacturing Industries and Construction | 84055 | 17123 | 0 | 101178  |
-|  I.4.1/2 /3 | Energy Industries | 0 | 0 | 0 | 0  |
-|  I.4.4 | Energy Generation Supplied to Grid | 518 |  |  |   |
-|  I.5 | Agriculture, Forestry and Fishing | 1508 | 0 | 0 | 1508  |
-|  I.6 | Non-specified Stationary Energy | 5013 | 0 | 0 | 5013  |
-|  I.7 | Fugitive Emissions from Mining, etc. of Coal | 0 |  |  | 0  |
-|  I.8 | Fugitive Emissions from Oil and Natural Gas Systems | 0 |  |  | 0  |
-|  SUB-TOTAL | (city induced framework only) | 690885 | 375921 | 0 | 1066806  |
-|  II | TRANSPORTATION |  |  |  |   |
-|  II.1 | On-road transportation | 625714 | 281 | 1 | 625996  |
-|  II.2 | Railways | 9700 | 5962 | 0 | 15662  |
-|  II.3 | Waterborne navigation | 38311 | 0 | 0 | 38311  |
-|  II.4 | Aviation | 0 | 0 | 0 | 0  |
-|  II.5 | Off-road transportation | 65801 | 0 | 0 | 65801  |
-|  SUB-TOTAL | (city induced framework only) | 739526 | 6243 | 1 | 745770  |
-|  III |  |  |  |  | WASTE  |
-|  III.1.1/2 | Solid waste generated in the city | 13788 |  | 0 | 13788  |
-|  III.2.1/2 | Biological waste generated in the city | 1140 |  | 0 | 1140  |
-|  III.3.1/2 | Incinerated and burned waste generated in the city | 120065 |  | 0 | 120065  |
-|  III.4.1/2 | Wastewater generated in the city | 8137 |  | 0 | 8137  |
-|  III.1.3 | Solid waste generated outside the city | 0 |  |  |   |
-|  III.2.3 | Biological waste generated outside the city | 0 |  |  |   |
-|  III.3.3 | Incinerated and burned waste generated outside city | 0 |  |  |   |
-|  III.4.3 | Wastewater generated outside the city | 0 |  |  |   |
-|  SUB-TOTAL | (city induced framework only) | 143130 |  | 0 | 143130  |
-|  IV | INDUSTRIAL PROCESSES and PRODUCT USES |  |  |  |   |
-|  IV.1 | Emissions from industrial processes occurring in the city boundary | 0 |  |  | 0  |
-
-Page | 13
-|  IV.2 | Emissions from product use occurring within the city boundary | 0 |  |  | 0  |
-| --- | --- | --- | --- | --- | --- |
-|  SUB-TOTAL | (city induced framework only) | 0 |  |  | 0  |
-|  V | AGRICULTURE, FORESTRY and OTHER LAND USE  |   |   |   |   |
-|  V.1 | Emissions from livestock | 0 |  |  | 0  |
-|  V.2 | Emissions from land | 3000 |  |  | 3000  |
-|  V.3 | Emissions from aggregate sources and non-CO2 emission sources on land | 0 |  |  | 0  |
-|  SUB-TOTAL | (city induced framework only) | 3000 |  |  | 3000  |
-|  VI | OTHER SCOPE 3  |   |   |   |   |
-|  VI.1 | Other Scope 3 |  |  | 0 | 0  |
-|  Total | (city induced framework only) | 157654
-| 382164 | 1 | 1,958,706  |
+|  |  | Scope 1 | Scope 2 | Scope 3 | Basic | Basic+ | Basic+ S3 |
+| STATIONARY ENERGY | Energy use (all emissions except I.4.4) | 690885 | 375921 | 0 | 10668<br>0 | 0 |
+|  | Energy generation supplied to the grid (I.4.4) | 518 |  |  |  |  |  |
+| TRANSPORTATION | Transportation | 739526 | 6243 | 1 | 74577<br>0 | 0 |
+| WASTE | Waste generated in the city (III.X.1 and III.X.2) | 143130 |  | 0 | 14313<br>0 | 0 |
+|  | Waste generated outside city (III.X.3) | 0 |  |  |  |  |  |
+| IPPU | (all IV emissions) | 0 |  |  |  | 0 | 0 |
+| AFOLU | (all V emissions) | 3000 |  |  | 3000 | 0 | 0 |
+| OTHER SCOPE 3 | (all VI emissions) |  |  | 0 |  |  | 0 |
+| Total |  | 1577059 | 382164 | 1 | 1,958,706 | All Basic+ Emissions | All Basic+ S3 Emissions |
+| Table A1.1 Bristol's territorial greenhouse gas emission sources by sector in 2018, produced using ClimateView |  |  |  |  |  |  |  |
+| GPE ref No. | GHG Emissions Source (By Sector and Sub-sector) | Total GHGs (metric tonnes CO2e) |  |  |  |
+|  |  | Scope 1 | Scope 2 | Scope 3 | Total |
+| I | STATIONARY ENERGY |  |  |  |  |
+| I.1 | Residential | 408582 | 139467 | 0 | 548049 |
+| I.2 | Commercial and Institutional | 191727 | 219331 | 0 | 411058 |
+| I.3 | Manufacturing Industries and Construction | 84055 | 17123 | 0 | 101178 |
+| I.4.1/2 /3 | Energy Industries | 0 | 0 | 0 | 0 |
+| I.4.4 | Energy Generation Supplied to Grid | 518 |  |  |  |
+| I.5 | Agriculture, Forestry and Fishing | 1508 | 0 | 0 | 1508 |
+| I.6 | Non-specified Stationary Energy | 5013 | 0 | 0 | 5013 |
+| I.7 | Fugitive Emissions from Mining, etc. of Coal | 0 |  |  | 0 |
+| I.8 | Fugitive Emissions from Oil and Natural Gas Systems | 0 |  |  | 0 |
+| SUB-TOTAL | (city induced framework only) | 690885 | 375921 | 0 | 1066806 |
+| II | TRANSPORTATION |  |  |  |  |
+| II.1 | On-road transportation | 625714 | 281 | 1 | 625996 |
+| II.2 | Railways | 9700 | 5962 | 0 | 15662 |
+| II.3 | Waterborne navigation | 38311 | 0 | 0 | 38311 |
+| II.4 | Aviation | 0 | 0 | 0 | 0 |
+| II.5 | Off-road transportation | 65801 | 0 | 0 | 65801 |
+| SUB-TOTAL | (city induced framework only) | 739526 | 6243 | 1 | 745770 |
+| III |  |  |  |  | WASTE |
+| III.1.1/2 | Solid waste generated in the city | 13788 |  | 0 | 13788 |
+| III.2.1/2 | Biological waste generated in the city | 1140 |  | 0 | 1140 |
+| III.3.1/2 | Incinerated and burned waste generated in the city | 120065 |  | 0 | 120065 |
+| III.4.1/2 | Wastewater generated in the city | 8137 |  | 0 | 8137 |
+| III.1.3 | Solid waste generated outside the city | 0 |  |  |  |
+| III.2.3 | Biological waste generated outside the city | 0 |  |  |  |
+| III.3.3 | Incinerated and burned waste generated outside city | 0 |  |  |  |
+| III.4.3 | Wastewater generated outside the city | 0 |  |  |  |
+| SUB-TOTAL | (city induced framework only) | 143130 |  | 0 | 143130 |
+| IV | INDUSTRIAL PROCESSES and PRODUCT USES |  |  |  |  |
+| IV.1 | Emissions from industrial processes occurring in the city boundary | 0 |  |  | 0 |
+| IV.2 | Emissions from product use occurring within the city boundary | 0 |  |  | 0 |
+| SUB-TOTAL | (city induced framework only) | 0 |  |  | 0 |
+| V | AGRICULTURE, FORESTRY and OTHER LAND USE |  |  |  |  |
+| V.1 | Emissions from livestock | 0 |  |  | 0 |
+| V.2 | Emissions from land | 3000 |  |  | 3000 |
+| V.3 | Emissions from aggregate sources and non-CO2 emission sources on land | 0 |  |  | 0 |
+| SUB-TOTAL | (city induced framework only) | 3000 |  |  | 3000 |
+| VI | OTHER SCOPE 3 |  |  |  |  |
+| VI.1 | Other Scope 3 |  |  | 0 | 0<br>Total | (city induced framework only) | 157654<br>382164 | 1 | 1,958,706 |
 
 Table A1.2 Global Protocol for Community-Scale Greenhouse Gas Inventories compliant report: Bristol's territorial greenhouse gas emission sources by sector and sub-sector in 2018, produced using ClimateView
-|  Primary energy | Emission factor | Unit | Secondary energy | Emission factor | Unit  |
+| Primary energy | Emission factor | Unit | Secondary energy | Emission factor | Unit |
 | --- | --- | --- | --- | --- | --- |
-|  Emission factor natural gas | 231 | g CO2e / kWh | Emission factor imported grid district heating | 198 | g CO2e / kWh  |
-|  Emission factor hydrogen (climate neutral) | 20 | g CO2e / kWh | Emission factor produced electricity current grid mix average | 214.947 | g CO2e / kWh  |
-|  Emission factor atmospheric methane in CO2e | 2056.277 | g CO2e / kWh | Emission factor solar parks production | 36100 | g CO2e / kWh / year  |
-|  Emission factor petrol WTW | 319.4 | g CO2e / kWh | Emission Factor hydro reservoir production | 72500 | g CO2e / kWh / year  |
-|  Emission factor fossil diesel WTW | 331.6 | g CO2e / kWh | Emission factor solar panel rooftop production per year | 36100 | g CO2e / kWh / year  |
-|  Emission factor burning of oil | 303.6 | g CO2e / kWh | Emission Factor wind onshore production | 24000 | g CO2e / kWh / year  |
-|  Emission factor LPG | 230.31 | g CO2e / kWh | Emission Factor wind offshore production | 24000 | g CO2e / kWh / year  |
-|  Emission factor marine diesel | 284.84 | g CO2e / kWh | Emission factor consumed electricity average | 149 | g CO2e / kWh  |
-|  Emission factor aviation turbine fuel | 260.86 | g CO2e / kWh | Emission factor grid electricity (future) * | 45 | g CO2e / kWh  |
-|  Emission factor liquefied natural gas (LNG) | 204.49 | g CO2e / kWh | Emission factor district heating | 47.7 | g CO2e / kWh  |
-|  Emission factor liquefied biogas | 0.22 | g CO2e / kWh | Emission factor district cooling | 62 | g CO2e / kWh  |
-|  Emission factor coal | 417.1 | g CO2e / kWh | Emission factor residual heat | 0 | g CO2e / kWh  |
-|  Emission factor biogas | 53 | g CO2e / kWh | Emission factor electricity produced PV | 25 | g CO2e / kWh  |
-|  Emission factor landfill gas | 0.3825 | g CO2e / kWh | Construction | Emission factor | Unit  |
-|  Emission factor ethanol | 1.415806867 | g CO2e / kWh | Emission factor cement construction | 934000 | g CO2e / m2  |
-|  Emission factor biodiesel WTW | 79.8 | g CO2e / kWh | Emission factor low carbon construction | 582000 | g CO2e / m2  |
-|  Emission factor marine biodiesel | 18.02867758 | g CO2e / kWh | Emission factor limestone calcination in clinker production | 520000 | g CO2e / tonne  |
-|  Emission factor aviation biofuel | 18.02867758 | g CO2e / kWh | Emission factor limestone calcination in lime production | 768000 | g CO2e / tonne  |
-|  Emission factor solid biofuel | 23.4 | g CO2e / kWh | Emission factor wastewater treatment | 272 | g CO2e / m3  |
-|  Emission factor geothermal heat | 0 | g CO2e / kWh | Emission factor sludge | 706 | g CO2e / kWh  |
-|  Emission factor active travel | 0 | g CO2e / kWh |  |  |   |
-|  Waste | Emission factor | Unit | Waste | Emission factor | Unit  |
-|  Emission from open burning of solid waste | 487000 | g CO2e / tonne | Emission factor solid waste landfill | 456204 | g CO2e / tonne  |
-|  Emission factor recycling of solid waste | 21317 | g CO2e / tonne | Emission factor incineration of solid waste | 330000 | g CO2e / tonne  |
-|  Emission factor emission factor solid waste composting | 8918 | g CO2e / tonne | Emission factor emission factor solid waste anaerobic digestion | 22800 | g CO2e / tonne  |
+| Emission factor natural gas | 231 | g CO2e / kWh | Emission factor imported grid district heating | 198 | g CO2e / kWh |
+| Emission factor hydrogen (climate neutral) | 20 | g CO2e / kWh | Emission factor produced electricity current grid mix average | 214.947 | g CO2e / kWh |
+| Emission factor atmospheric methane in CO2e | 2056.277 | g CO2e / kWh | Emission factor solar parks production | 36100 | g CO2e / kWh / year |
+| Emission factor petrol WTW | 319.4 | g CO2e / kWh | Emission Factor hydro reservoir production | 72500 | g CO2e / kWh / year |
+| Emission factor fossil diesel WTW | 331.6 | g CO2e / kWh | Emission factor solar panel rooftop production per year | 36100 | g CO2e / kWh / year |
+| Emission factor burning of oil | 303.6 | g CO2e / kWh | Emission Factor wind onshore production | 24000 | g CO2e / kWh / year |
+| Emission factor LPG | 230.31 | g CO2e / kWh | Emission Factor wind offshore production | 24000 | g CO2e / kWh / year |
+| Emission factor marine diesel | 284.84 | g CO2e / kWh | Emission factor consumed electricity average | 149 | g CO2e / kWh |
+| Emission factor aviation turbine fuel | 260.86 | g CO2e / kWh | Emission factor grid electricity (future) * | 45 | g CO2e / kWh |
+| Emission factor liquefied natural gas (LNG) | 204.49 | g CO2e / kWh | Emission factor district heating | 47.7 | g CO2e / kWh |
+| Emission factor liquefied biogas | 0.22 | g CO2e / kWh | Emission factor district cooling | 62 | g CO2e / kWh |
+| Emission factor coal | 417.1 | g CO2e / kWh | Emission factor residual heat | 0 | g CO2e / kWh |
+| Emission factor biogas | 53 | g CO2e / kWh | Emission factor electricity produced PV | 25 | g CO2e / kWh |
+| Emission factor landfill gas | 0.3825 | g CO2e / kWh | Construction | Emission factor | Unit |
+| Emission factor ethanol | 1.415806867 | g CO2e / kWh | Emission factor cement construction | 934000 | g CO2e / m2 |
+| Emission factor biodiesel WTW | 79.8 | g CO2e / kWh | Emission factor low carbon construction | 582000 | g CO2e / m2 |
+| Emission factor marine biodiesel | 18.02867758 | g CO2e / kWh | Emission factor limestone calcination in clinker production | 520000 | g CO2e / tonne |
+| Emission factor aviation biofuel | 18.02867758 | g CO2e / kWh | Emission factor limestone calcination in lime production | 768000 | g CO2e / tonne |
+| Emission factor solid biofuel | 23.4 | g CO2e / kWh | Emission factor wastewater treatment | 272 | g CO2e / m3 |
+| Emission factor geothermal heat | 0 | g CO2e / kWh | Emission factor sludge | 706 | g CO2e / kWh |
+| Emission factor active travel | 0 | g CO2e / kWh |  |  |  |
+| Waste | Emission factor | Unit | Waste | Emission factor | Unit |
+| Emission from open burning of solid waste | 487000 | g CO2e / tonne | Emission factor solid waste landfill | 456204 | g CO2e / tonne |
+| Emission factor recycling of solid waste | 21317 | g CO2e / tonne | Emission factor incineration of solid waste | 330000 | g CO2e / tonne |
+| Emission factor emission factor solid waste composting | 8918 | g CO2e / tonne | Emission factor emission factor solid waste anaerobic digestion | 22800 | g CO2e / tonne |
 
 Table A1.3 Emissions factors used in this emissions inventory
 
@@ -405,7 +383,6 @@ The emissions inventory forms the 2018 baseline presented here (see tables A.1.1
 The modelled emissions impact of all the actions in this plan have been presented in terms of their net impact, that is minus the projected impact of actions arising in the BAU scenario. In this way there is certainty that none of the modelled emissions reductions resulting from the actions in this plan have been double counted. A summary of these scenarios is presented in table A.2.1.
 
 Finally, it should be noted that ClimateView is a whole city-system model which links multiple activity changes together. This approach is beneficial for understanding the relationships between changes to different combinations of energy producing and consuming activities now and in the future. However, the approach can also show the potential abatement of certain actions as being relatively low in 2030. For example, the emissions reduction achievable through retrofitting of domestic properties is significantly lower in 2030 than it is today, if in 2030 those properties are served by low carbon heating systems.
-BRISTOL CLIMATE ACTION
 
 Bristol One City Climate Action Plan
 
@@ -460,8 +437,6 @@ Similarly for the transport sector, the Decarbonising Transport guidance publish
 
 Within national policy concerning building regulation the Future Homes Standard aims to reduce waste energy in new buildings which will contribute to the national 2050 net zero target. This is reflected in local planning policy discussed in the local context below.
 
-Page | 19
-Page | 20
 
 # Regional policy
 
@@ -484,7 +459,6 @@ For example, setting the strategic framework for action at the city level, Brist
 Numerous individual projects have been completed since 2020 which help to realise the One City Climate Strategy and act as forerunners to the actions in this plan. These projects include Bristol's Black and Green Ambassadors; Bristol Climate Hub; Bristol Climate Ask; Climate Action Programme and Climate Leaders' Group plus the Community Leadership Panel on Climate and Just Transition; Bristol's Liveable Neighbourhoods; REPLICATE (which used the 6 step Bristol Approach to engage people with technological innovations) and the Bright Green Homes Programme as well as projects related to how to finance city action including Bristol's Net Zero Investment Co-Innovation Lab and City Funds. There have been upgrades to city streetlighting to LED lighting and significant community energy projects including the community-owned wind turbine at Lawrence Weston. These all provided a helpful context as the Transition Team members were aware of how to build on these successful projects and experience to create this plan.
 
 Many Transition Team members have plans to decarbonise their own operations but all are making a significant contribution at city level. For example, Bristol City Council has volunteered to coordinate the efforts to achieve the One City Climate Strategy (action at the city level). This coordination work includes employing a Climate Strategy Coordinator role to work with city partners, encouraging and supporting them to take action in relation to the city strategy; this includes convening the Transition Team and leading the process of production of this Climate City Contract. This coordination work was therefore a very helpful component of this action plan.
-Page | 21
 
 # Foundational approaches - Community Climate Action Plans
 
@@ -529,16 +503,16 @@ Figure 7: Transition pathway for this Climate Neutrality Action Plan
 The pathway above models the emissions impact of full implementation of each of the actions within this plan. However, even with full implementation of these actions we estimate residual emissions in 2030 to be 247,576 tonnes  $\mathrm{CO}_{2}\mathrm{e}$ .
 
 The reasons for these emissions being unavoidable within the action plan timeframe are that electricity consumed for both stationary and transport energy is expected to retain a carbon intensity of  $45 - 42\mathrm{gCO_2e}$  / kWh in 2030. In addition, the carbon intensity of the heat network is expected to be  $21\mathrm{gCO_2e}$  / kWh in 2030. Currently, it is not believed that the carbon intensity of both these networks can be further reduced within the timeframe given the constraints of the existing and planned infrastructure this decade. However, it should be noted that this assessment is based on the information that is presently available; further reductions in the carbon intensity of the national electricity grid are possible but cannot yet be confidently assumed.
-|  Table A-2.1 | (1) Baseline emission in 2018 | (2) Emissions Reduction Target for 2030 (One City Climate Strategy) | (3) Estimated emission reduction achievable through other Action Plans |   | (4) Emissions Gap |   | (5) Emissions reduction achievable through the CCC Action Plan to address the Gap |   | (6) Residual emissions (Projected remaining after full implementation of CCC Action Plan)  |   |
+| Table A-2.1 | (1) Baseline emission in 2018 | (2) Emissions Reduction Target for 2030 (One City Climate Strategy) | (3) Estimated emission reduction achievable through other Action Plans |  | (4) Emissions Gap |  | (5) Emissions reduction achievable through the CCC Action Plan to address the Gap |  | (6) Residual emissions (Projected remaining after full implementation of CCC Action Plan) |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Emissions domain | (absolute) (tonnes CO2e) | (%) | (absolute) | (%) | (absolute) | (%) | (absolute) | (%) | (absolute) | (%)  |
-|  Stationary Energy | 1,066,806 | 100 | 312,934 | 29.33% | 753,872 | 70.67% | 529,716 | 49.65% | 224,156 | 21.01%  |
-|  Transport | 745,770 | 100 | 268,350 | 35.98% | 477,420 | 64.02% | 457,000 | 61.28% | 20,420 | 2.74%  |
-|  Waste | 143,130 | 100 | 61,830 | 43.20% | 81,300 | 56.80% | 81,300 | 56.80% | 0 | 0  |
-|  Industrial Process and Product Use (IPPU) | 0 | 100 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A  |
-|  Agricultural, Forestry and Land Use (AFOLU) Sources | 7,500 | 100 | 0 | 0 | 7,500 | 100.00% | 0 | 0 | 7,500 | 100  |
-|  Agricultural, Forestry and Land Use (AFOLU) Sinks | -4,500 | N/A | N/A | N/A | -4,500 | N/A | N/A | N/A | -4,500 |   |
-|  Total | 1,958,706 | 100.00% | 643,114 | 32.83% | 1,315,592 | 67.17% | 1,068,016 | 54.53% | 247,576 | 12.64%  |
+| Emissions domain | (absolute) (tonnes CO2e) | (%) | (absolute) | (%) | (absolute) | (%) | (absolute) | (%) | (absolute) | (%) |
+| Stationary Energy | 1,066,806 | 100 | 312,934 | 29.33% | 753,872 | 70.67% | 529,716 | 49.65% | 224,156 | 21.01% |
+| Transport | 745,770 | 100 | 268,350 | 35.98% | 477,420 | 64.02% | 457,000 | 61.28% | 20,420 | 2.74% |
+| Waste | 143,130 | 100 | 61,830 | 43.20% | 81,300 | 56.80% | 81,300 | 56.80% | 0 | 0 |
+| Industrial Process and Product Use (IPPU) | 0 | 100 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| Agricultural, Forestry and Land Use (AFOLU) Sources | 7,500 | 100 | 0 | 0 | 7,500 | 100.00% | 0 | 0 | 7,500 | 100 |
+| Agricultural, Forestry and Land Use (AFOLU) Sinks | -4,500 | N/A | N/A | N/A | -4,500 | N/A | N/A | N/A | -4,500 |  |
+| Total | 1,958,706 | 100.00% | 643,114 | 32.83% | 1,315,592 | 67.17% | 1,068,016 | 54.53% | 247,576 | 12.64% |
 
 Table A-2.1 shows Bristol's territorial emissions baseline in 2018, the city's carbon reduction target, an assessment of emissions impact of existing policies, the remaining gap to be addressed through this plan, assessment of the emissions impact of this plan, and the projected residual emissions after its full implementation.
 ## 2.3 Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
@@ -573,14 +547,14 @@ The One City Approach was used to develop the One City Climate Strategy (2020), 
 
 The Bristol One City Climate Strategy set out the key city systems to be decarbonised in ten key themes (emissions domains) as well as the six key factors to creating the appropriate 'enabling conditions' for achievement of carbon neutrality in the city. These are both shown in Figure 9 below, with the key city systems shown in the outer circle and the enabling conditions for change (barriers to change) in the inner circle. The enabling conditions can be seen to relate to the Mission Systemic Levers as shown in Figure 8 below. They also relate to the main risks to enabling carbon neutrality by 2030 as discussed in the Investment Plan risk management framework.
 
-|  One City Climate Strategy Enabling Condition | Related Mission Systemic Lever  |
+| One City Climate Strategy Enabling Condition | Related Mission Systemic Lever |
 | --- | --- |
-|  Data | Learning and capabilities  |
-|  Funding | Finance and funding  |
-|  National action | Governance and policy  |
-|  Skills | Learning and capabilities  |
-|  Engagement | Social innovation; Democracy and participation  |
-|  Infrastructure | Technology and infrastructure  |
+| Data | Learning and capabilities |
+| Funding | Finance and funding |
+| National action | Governance and policy |
+| Skills | Learning and capabilities |
+| Engagement | Social innovation; Democracy and participation |
+| Infrastructure | Technology and infrastructure |
 
 Figure 8: The relationship between enabling conditions and systemic levers
 ![img-7.jpeg](img-7.jpeg)
@@ -651,7 +625,6 @@ Achieving carbon neutrality offers many benefits beyond reducing our contributio
 
 A key area of development since the strategy was created is the increased focus and definition of the Just Transition with the creation of the Bristol Just Transition Declaration. Working towards a Just Transition provides an opportunity for net zero projects to contribute to addressing existing inequalities whilst avoiding new ones. This is an important matter for Bristol where there are significant inequalities.
 
-Page | 28
 These opportunities and concerns therefore led to the actions suggested under Impact Pathway 1: Cross-cutting Enabling Actions on Just Transition, Communications and Engagement and Skills.
 
 ## Funding and finance
@@ -679,7 +652,6 @@ The Net Zero Investment Co-innovation Lab, a Net Zero Cities Pilot Project, is d
 
 A further opportunity/strength of Bristol is the Bristol Climate and Nature Partnership. The partnership has over 1,200 members from all sectors and catalyses collective citywide action towards a zero carbon, nature-rich and socially just Bristol. It collaborates with policy makers, the public sector, businesses, charities, communities, and underrepresented groups. It is helping them to design and implement their own responses to the climate and nature crises – in a fair, fast and inter-connected way. The city is also home to many national organisations with clear remits and strong track records of improving our
 
-Page | 29
 environment, such as Sustrans, the Soil Association, the Environment Agency headquarters and the Centre for Sustainable Energy.
 
 The One City Climate Strategy references that replacing fossil fuels consumed in Bristol would require 7,500 – 10,000 full time workers for 10 years. This creates a great opportunity to increase employment and replace jobs that are no longer needed. This replacement of jobs highlights the importance of a just transition in which the impacts and opportunities are justly shared. A number of the impact pathways contain actions on skills and training to enable the capacity to deliver the programmes of work envisaged e.g. for heat pump installation. Impact Pathway 1 also contains suggested actions for green skills and jobs to be available to a diverse range of people.
@@ -698,89 +670,18 @@ In July 2024, a new UK Government was elected. This administration is setting ou
 
 A-3.2: Systems &amp; stakeholder mapping
 
-|  System | Suggested potential stakeholders (* starred stakeholders are members of the Transition Team) | Influence on the city's climate neutrality ambition | Interest in the city's climate neutrality ambition  |
-| --- | --- | --- | --- |
-|  Cross-cutting
-Enabling Actions on Just Transition, Communications and Engagement and Skills | Bristol City Council*
-Bristol's City Office*
-Business West*
-West of England Combined Authority*
-Bristol Climate and Nature Partnership*
-University of Bristol*
-Cabot Institute for the Environment*
-University of the West of England*
-Future Leap*
-SevernNet*
-Bristol and Bath Regional Capital*
-City of Bristol College*
-Black South West Network
-Disability Climate Justice Consultant
-Future Economy Network
-Natural History Consortium
-Black and Green Ambassadors
-Babbasa
-Bristol's Women's Commission
-Federation of Small Businesses | High | High  |
+| System | Suggested potential stakeholders (* starred stakeholders are members of the Transition Team) | Influence on the city's climate neutrality ambition | Interest in the city's climate neutrality ambition |  |
+| --- | --- | --- | --- | --- |
+| --- | --- | --- | ---<br>Cross-cutting<br>Enabling Actions on Just Transition, Communications and Engagement and Skills | Bristol City Council*<br>Bristol's City Office*<br>Business West*<br>West of England Combined Authority*<br>Bristol Climate and Nature Partnership*<br>University of Bristol*<br>Cabot Institute for the Environment*<br>University of the West of England*<br>Future Leap*<br>SevernNet*<br>Bristol and Bath Regional Capital*<br>City of Bristol College*<br>Black South West Network<br>Disability Climate Justice Consultant<br>Future Economy Network<br>Natural History Consortium<br>Black and Green Ambassadors<br>Babbasa<br>Bristol's Women's Commission<br>Federation of Small Businesses | High | High |  |
+|  | The West of England Centre for Inclusive Living<br>Trades Union Congress<br>We The Curious<br>ACH<br>Bristol Older People’s Forum<br>Eastside Community Trust<br>Quartet Community Foundation |  |  |  |
+| Energy systems | Bristol City Council*<br>Bristol City Leap*<br>Bristol Energy Network*<br>National Grid Electricity Distribution*<br>Wales and West Utilities*<br>Vattenfall*<br>Centre for Sustainable Energy*<br>OVO Energy*<br>Jacobs | High | High |  |
+| Mobility and transport | Bristol City Council*<br>Business West*<br>West of England Combined Authority*<br>Enterprise Mobility*<br>Jacobs<br>Bristol Port Company<br>First West of England<br>Great Western Railway<br>Highways England<br>Motability<br>National Express<br>Sustrans<br>Priority Express<br>Zedify<br>University Hospitals Bristol and Weston NHS<br>Foundation Trust | High | High |  |
+| Waste and circular economy | Bristol City Council*<br>Bristol Waste Company*<br>Business West*<br>Wessex Water*<br>Jacobs<br>Resource Futures<br>North Bristol NHS Trust | High | High |  |
+| Green Infrastructure and nature-based solutions | Bristol City Council*<br>West of England Combined Authority*<br>Avon Wildlife Trust<br>Environment Agency<br>Natural History Consortium<br>Jacobs | High | High |  |
+| Built environment | Bristol City Council*<br>West of England Combined Authority*<br>Bristol City Leap*<br>Business West*<br>Retrofit West CIC*<br>Centre for Sustainable Energy*<br>North Bristol NHS Trust* | High | High |  |
 
-Page | 30
-|   | The West of England Centre for Inclusive Living
-Trades Union Congress
-We The Curious
-ACH
-Bristol Older People’s Forum
-Eastside Community Trust
-Quartet Community Foundation |  |   |
-| --- | --- | --- | --- |
-|  Energy systems | Bristol City Council*
-Bristol City Leap*
-Bristol Energy Network*
-National Grid Electricity Distribution*
-Wales and West Utilities*
-Vattenfall*
-Centre for Sustainable Energy*
-OVO Energy*
-Jacobs | High | High  |
-|  Mobility and transport | Bristol City Council*
-Business West*
-West of England Combined Authority*
-Enterprise Mobility*
-Jacobs
-Bristol Port Company
-First West of England
-Great Western Railway
-Highways England
-Motability
-National Express
-Sustrans
-Priority Express
-Zedify
-University Hospitals Bristol and Weston NHS
-Foundation Trust | High | High  |
-|  Waste and circular economy | Bristol City Council*
-Bristol Waste Company*
-Business West*
-Wessex Water*
-Jacobs
-Resource Futures
-North Bristol NHS Trust | High | High  |
-|  Green Infrastructure and nature-based solutions | Bristol City Council*
-West of England Combined Authority*
-Avon Wildlife Trust
-Environment Agency
-Natural History Consortium
-Jacobs | High | High  |
-|  Built environment | Bristol City Council*
-West of England Combined Authority*
-Bristol City Leap*
-Business West*
-Retrofit West CIC*
-Centre for Sustainable Energy*
-North Bristol NHS Trust* | High | High  |
-
-Page | 31
 ![img-8.jpeg](img-8.jpeg)
 Figure 10: Bristol's Transition Team Members
-BRISTOL CLIMATE ACTION
 
 Bristol One City Climate Action Plan
 
@@ -817,7 +718,6 @@ Vattenfall UK
 Wales and West Utilities
 Wessex Water
 West of England Combined Authority
-Page | 34
 
 # 3 Part B – Pathways towards Climate Neutrality by 2030
 
@@ -826,7 +726,6 @@ Part B represents the core of the CCC Action Plan, shaped by local authorities, 
 # 3.1 Module B-1 Climate Neutrality Scenarios and Impact Pathways
 
 The Impact Pathways show the earlier and later outcomes and direct and indirect impacts (co-benefits) which might occur should the actions in the action plan be implemented. The Impact Pathways have been developed in a graphic format for ease of understanding. Please see annexes 1-6 for detailed overviews of all impact pathways.
-Page | 35
 
 # B-1.2: Description of impact pathways
 
@@ -858,7 +757,6 @@ Alongside the visual diagrams of the impact pathways (see annexes 1-6) which sho
 ## Description and rationale by impact pathway
 
 The impact pathways describe the impact of actions designed to reach climate neutrality in five emissions domains: Energy Systems (combining both Electricity and Heat Energy Systems), Mobility and Transport, Built Environment, Waste and Circular Economy, Green Infrastructure and Nature Based solutions, as well as the pathway describing the cross-cutting actions required for Just Transition, Communications and Engagement and Skills.
-Page | 36
 
 # B-1.2: Description of impact pathways
 
@@ -882,7 +780,6 @@ Tools and best practice can be shared to help Bristol meet its aims to be a city
 In addition, a clear focus on skills development, aligned with pre-existing jobs and skill creation in the region is included and goes further to support the development of green skills for the effective implementation of green technology and stimulation of green innovation. This would provide opportunities for those not currently able to access green jobs and skills to do so.
 
 More effective planning, with a wider citizen base would reduce inequality by facilitating the targeting of interventions so that they can benefit more people. The evidence this has been built on includes Bristol's Strategies and declarations, Bristol's Citizen's Assembly, SDG local voluntary review, expertise from Bristol City Council's Climate Change Engagement and Diversity Project manager as well as specialists from BCC's engagement teams, Bristol's City Office staff; Community Climate Action plans, academia, and the evaluation of the Black and Green Ambassadors Programme.
-Page | 37
 
 # B-1.2: Description of impact pathways
 
@@ -929,7 +826,6 @@ The local electricity network is reinforced, managed more smartly and made more 
 The first set of actions in the Electricity field of action relates to the need to reinforce the electricity network in Bristol. Reinforcement of the electricity network can be done efficiently through maximising smart management of electricity demand before deploying physical reinforcement solutions. This means that peak demand is smoothed through shifting demands to other times of day or using batteries. Smart management also maximises the use of renewable energy when it is abundant (e.g. sunny, windy days) and minimises use of electricity generated by fossil fuels when renewable energy is not being produced. National Grid Electricity Distribution (NGED) are limited in the amount of money they can invest in reinforcement by Ofgem (the energy regulator), as these costs are shared by all NGED customers and Ofgem need to protect customers from price rises. The more certainty NGED have over the need for reinforcement, the more likely Ofgem will approve the network investment.
 
 Bristol can further contribute to the decarbonisation of the electricity grid through maximising renewable electricity generation in the city. Due to the urban environment of the city, this is most likely to be through rooftop solar PV on domestic and non-domestic buildings.
-Page | 39
 
 # B-1.2: Description of impact pathways
 
@@ -959,7 +855,6 @@ To realise heat pump installations this can be split into activity in the domest
 Likewise, in non-domestic buildings, there are some building owners with significant building stock in the city (for example, Bristol City Council, the universities, the NHS trusts, community buildings). These building owners could implement a programme of heat pump installation in suitable buildings. For other non-domestic building owners, actions focus on encouraging heat pump installation through communications, advice and access to funding and finance.
 
 Heat networks require more centralised management and Bristol City Council has appointed a heat network developer, Vattenfall, to build the city-wide heat network. The action here is for Vattenfall to expand the network and to facilitate upcoming UK government policy for heat network zoning. However, building owners and occupiers would need to see the benefits of connecting to the network in order for the network to expand, so engagement and communications are a crucial element as well as financial support for the upfront costs of connection to the network. Finally, whilst connections to large buildings and blocks of flats are business as usual for the Bristol Heat Network, the feasibility of connecting individual homes has not yet been proven. Therefore, a demonstrator project is required to explore this.
-Page | 41
 
 # B-1.2: Description of impact pathways
 
@@ -989,7 +884,6 @@ Main action areas: Building retrofit (domestic and non-domestic) with integratio
 The built environment impact pathway refers to actions which seek to improve the energy performance of Bristol's existing buildings through tailored retrofit solutions in order to minimise heat demand and prevent overheating. Improving energy efficiency before installing low carbon heat means that the amount of electricity required to run a heat pump or heat network is reduced, reducing running costs. From a system-wide perspective, this also reduces the amount of renewable electricity the UK must generate and saves costs for all electricity customers. However, it must be noted if the priority is to decarbonise the building, installing low carbon heat first will be the fastest and most impactful route, and energy efficiency improvements can be made later.
 
 Similarly, as with the heat energy system, it is useful to understand the breakdown of number of buildings in the city (over 160,000) by domestic (155,000) and non-domestic (7,000) category. Figure 12 shows the breakdown of number of homes by tenure. Figure 13 shows the breakdown of non-domestic units by sector.
-Page | 42
 
 # B-1.2: Description of impact pathways
 
@@ -1007,7 +901,6 @@ The One City Climate Strategy includes the following objectives related to the b
 
 New buildings are carbon neutral and climate resilient (aligning heat provision to the city's heat decarbonisation programme).
 The energy performance of existing buildings in the city is improved to minimise heat demand, whilst preventing overheating, through tailored retrofit solutions.
-Page | 43
 
 # B-1.2: Description of impact pathways
 
@@ -1032,7 +925,6 @@ Learner numbers on relevant training courses
 # Pathway 4: Mobility and Transport
 
 Systemic levers applied: All – Technology and Infrastructure; Social Innovation; Finance and Funding; Democracy and Participation; Governance and Policy; Learning and Capabilities.
-Page | 44
 
 # B-1.2: Description of impact pathways
 
@@ -1055,7 +947,6 @@ The most effective way to reduce congestion and the negative associated impacts 
 For these reasons the first group of actions focus on achieving significant reductions in car miles across the city. Whilst these actions are envisaged to make alternative travel easier and more accessible through the provision of single ticketing for multi-modal travel, advice, support, training, discount and loan schemes, and other priorities identified through the Community Climate Action Plans, they will also need to be accompanied by demand management measures such as a Workplace Parking Levy. The shape and extent of those measures is not yet possible to know. However, it is proposed than such measures are co-designed with citizens and businesses to ensure that they are both effective and equitable.
 
 Actions that create significant reductions in car miles may be controversial. However, there is strong support amongst Bristolians for improvements to walking and cycling (Walking and Cycling Index 2023: Bristol sustrans.org.uk), and pedestrianisation schemes have recently been enacted in Princess Victoria Street, Old City, King Street and Cotham Hill. A (small) survey reported by bristol247.com shows overwhelmingly positive public perception of the Cotham Hill and half of people surveyed are spending more time on that high-street. Cotham Hill pedestrianisation pilot made permanent. However, pedestrianisation schemes must be accompanied by effective consultation and engagement to ensure that local residents are involved in design.
-Page | 45
 
 # B-1.2: Description of impact pathways
 
@@ -1086,7 +977,6 @@ Main action areas: Reduced waste and consumption through increased repair and re
 In 2018, waste accounted for approximately 6% of Bristol's territorial emissions, with the majority of those emissions arising from incineration of residual waste.
 
 The majority of Bristol's residual waste is processed at two Energy from Waste plants in the Avonmouth area, but only one of these is within the Bristol local authority boundary. To reduce these territorial emissions, actions have been designed to deliver continuing improvements in recycling rates for both domestic and commercial waste, so that the carbon content of residual waste is reduced. In this context particular focus has been placed on reducing both the food and plastic content of residual waste.
-Page | 46
 
 # B-1.2: Description of impact pathways
 
@@ -1105,7 +995,6 @@ Bristol's One City Climate Strategy has two objectives that relate primarily to 
 Bristol's Household Waste and Recycling Centres already each have Re-Use and Repair shops where citizens can donate and purchase items that are fit for refurbishment. Expanding and further normalising these schemes so that they have greater civic reach, offer a wider range of affordable and high-quality products, and become a more often considered option for citizens, are believed to be important parts of growing Bristol's circular economy ecosystem. In addition to their expansion, inclusive training and skills programmes for repair and re-use focusing on electrical goods, will grow the local skills base and offer new green jobs in the local area. These programmes are intended to work with existing Further Education providers and reach a diverse group of learners including those from marginalised backgrounds. Finally, supporting the creation of new high quality retail spaces for circular economy goods and businesses is regarded as important to support citizen access to, and demand for, re-useable goods and services. It is envisioned that these would include a city centre-based space with high visibility, as well as retail spaces located in neighbourhoods outside of the city centre.
 
 The final group of actions in this pathway relate to engaging citizens and businesses regarding the impacts of consumption. The approach centres on three areas. Firstly, working with anchor and large organisations to coordinate and harmonise sustainable procurement policies and standards with the intention of decarbonising local, regional and wider supply chains. Secondly, working with small businesses to reduce their waste production and carbon emissions through capacity building, and supply chain engagement. Thirdly, delivering targeted engagement campaigns aimed at high-consumption demographics and businesses and to support innovative solutions and alternatives.
-Page | 47
 
 # B-1.2: Description of impact pathways
 
@@ -1132,11 +1021,9 @@ The number of parks achieving 'good' status
 The area of Bristol City Council park land managed for nature
 The tree canopy cover and/or number of trees
 The area of new green space created
-BRISTOL CLIMATE ACTION
 
 Bristol One City Climate Action Plan
 
-#
 
 # 3.2 Module B-2 Climate Neutrality Portfolio Design
 
@@ -1144,35 +1031,22 @@ The following portfolio represents a plan of actions co-created by the Transitio
 
 Prior to detailing actions for emissions reduction, outlined are cross-cutting actions which will provide the enabling conditions for implementing these. These actions have been developed in accordance with the enabling conditions outlined in the One City Climate Strategy and align to Bristol's Just Transition Declaration principles. Where necessary, engagement for specific actions within a field of action is also detailed within table 2.1. This is expected to be the first iteration of this plan, and therefore lists interim measures. It is expected that the next iteration will go further still, to deliver transformative engagement practices to ensure maximum reach of actions and support their delivery.
 
-|  B-2.1: Description of action portfolios |   |   |
+| B-2.1: Description of action portfolios |  |  |
 | --- | --- | --- |
-|  Fields of action | Portfolio description  |   |
-|   |  List of actions | Descriptions  |
-|  Cross-cutting Enabling Actions on Just Transition, Communications and Engagement and Skills  |   |   |
-|  Relates to the One City Climate Strategy enabling conditions  |   |   |
-|  Stakeholder Engagement Transition Team | 1. Continue to engage Transition Team on CCC design and implementation including developing business cases and securing funding | Programme Overview: Continue and deepen support for effective engagement with Transition Team (TT). Provide support to continue and enhance collaboration between TT members. Co-create systems and processes to enable ongoing effective functioning of the TT e.g. governance, strategic planning of next steps, prioritisation of actions, partnership brokering and management, development of business cases. 1) Engage with Transition Team to: • Encourage longer term involvement in delivering CCC, develop and strengthen partnerships • Take lead to deliver specific actions • Prioritising actions which should be delivered first • Develop Business Cases for actions • Secure funding and finance 2) Strengthen internal practices of TT members to strengthen relationships and enhance collaboration between organisations and within their respective teams, departments, boards etc.  |
-|  Just Transition | 2. Further embed Just Transition principles into CCC and support wider adoption in the city through wide engagement. | Programme Overview:
-Embed Just Transition principles more widely in the implementation of the Climate City Contract actions, through excellent practice on engagement, and design of effective and fair solutions which benefit everyone. Support wider adoption of Just Transition principles in climate policy, practice and projects in the city. Embed in decision making,
-) Further embed Just Transition principles into the Bristol Climate City Contract by integrating them into the portfolio of actions as they develop
-) Engage widely (especially with those not previously reached) on Just Transition to design effective net zero strategies and actions. Embed these within decision making with the support of the Community Leadership and Just Transition Panel, One City and other processes.
-) Support the wider adoption of Bristol’s Just Transition Declaration principles across the city  |
-| --- | --- | --- |
-|  Communication and Engagement | 3. Deliver transformative, inclusive, programmes of environmental communications, consultation and engagement and support | Programme Overview:
-Recognising that current communications and engagement practices are not yet sufficient, deliver a transformative programme of communications, consultation and engagement to both build on existing good practice, and extend reach to groups who have not previously been reached.
-Transform existing approaches to public environmental communications, consultation and engagement, enabling greater effectiveness, inclusivity, scale and reach. Disseminate good practice across the sector.
-Communicate, consult and engage with the public- especially those previously excluded- to effectively design and implement the actions outlined in this plan, and to influence wider policy making and implementation.
-Building on the priorities identified by residents in the Community Climate Action Plans co-create and deliver a programme of advice, training and support to enable citizens to do more to contribute to reducing their carbon footprints. This includes advice, training and peer to peer support on subjects like DIY insulation, energy use, cycling and food growing.  |
+| Fields of action | Portfolio description |  |
+|  | List of actions | Descriptions |
+| Cross-cutting Enabling Actions on Just Transition, Communications and Engagement and Skills |  |  |
+| Relates to the One City Climate Strategy enabling conditions |  |  |
+| Stakeholder Engagement Transition Team | 1. Continue to engage Transition Team on CCC design and implementation including developing business cases and securing funding | Programme Overview: Continue and deepen support for effective engagement with Transition Team (TT). Provide support to continue and enhance collaboration between TT members. Co-create systems and processes to enable ongoing effective functioning of the TT e.g. governance, strategic planning of next steps, prioritisation of actions, partnership brokering and management, development of business cases. 1) Engage with Transition Team to: • Encourage longer term involvement in delivering CCC, develop and strengthen partnerships • Take lead to deliver specific actions • Prioritising actions which should be delivered first • Develop Business Cases for actions • Secure funding and finance 2) Strengthen internal practices of TT members to strengthen relationships and enhance collaboration between organisations and within their respective teams, departments, boards etc. |
+| Just Transition | 2. Further embed Just Transition principles into CCC and support wider adoption in the city through wide engagement. | Programme Overview:<br>Embed Just Transition principles more widely in the implementation of the Climate City Contract actions, through excellent practice on engagement, and design of effective and fair solutions which benefit everyone. Support wider adoption of Just Transition principles in climate policy, practice and projects in the city. Embed in decision making,<br>) Further embed Just Transition principles into the Bristol Climate City Contract by integrating them into the portfolio of actions as they develop<br>) Engage widely (especially with those not previously reached) on Just Transition to design effective net zero strategies and actions. Embed these within decision making with the support of the Community Leadership and Just Transition Panel, One City and other processes.<br>) Support the wider adoption of Bristol’s Just Transition Declaration principles across the city |  |
+| Communication and Engagement | 3. Deliver transformative, inclusive, programmes of environmental communications, consultation and engagement and support | Programme Overview:<br>Recognising that current communications and engagement practices are not yet sufficient, deliver a transformative programme of communications, consultation and engagement to both build on existing good practice, and extend reach to groups who have not previously been reached.<br>Transform existing approaches to public environmental communications, consultation and engagement, enabling greater effectiveness, inclusivity, scale and reach. Disseminate good practice across the sector.<br>Communicate, consult and engage with the public- especially those previously excluded- to effectively design and implement the actions outlined in this plan, and to influence wider policy making and implementation.<br>Building on the priorities identified by residents in the Community Climate Action Plans co-create and deliver a programme of advice, training and support to enable citizens to do more to contribute to reducing their carbon footprints. This includes advice, training and peer to peer support on subjects like DIY insulation, energy use, cycling and food growing. |  |
+| Green jobs and Skills | 4. Widen access to green jobs and skills | Programme Overview: Building on existing practice in the region, provide support for strategic planning and delivery of inclusive green skills programmes and support for green job creation. Involve targeted interventions as well as broad offers, to ensure that all are able to access emerging opportunities. 1) Strategic planning and implementation for skills development at regional, city, local and community level building on existing activity and learning. 2) Engagement on green skills and job opportunities to widen access across the city 3) Develop Green Skills Pipeline and Career Pathways to support the delivery of the actions set out in this plan 4) Support in-work Green Skills development |
+| Green jobs and Skills | 5. Deliver programme to support employers to create and sustain green jobs | Programme Overview Building on existing practice in the region, support the development of a pipeline of green jobs, including strengthening work in existing green sectors, and also enabling transition from fossil fuel-based activities into low carbon ones. 1. Support employers to transition their businesses away from fossil fuel-based activities into the low carbon activities set out in this action plan. Enabling them to re-train and train their employees to retain people in employment, recruit inclusively and enable everyone to benefit from the transition. 2. Support employers in existing green sectors to sustain and create jobs, recruiting inclusively, and developing inclusive pathways for leadership progression 3. Support employers to develop jobs in emerging sectors such as maintenance of new green infrastructure. |
+| Energy Systems: Electricity |  |  |
+| 2030 Objective (i) All electricity supplied to and generated in Bristol will be carbon neutral (taking into account the anticipated 50% increase in demand by 2030). |  |  |
+| 2030 Objective (iii) The local electricity network is reinforced, managed more smartly and made more resilient to accommodate increased demand. NDP |  |  |
+| Energy systems Electricity | 6. Reinforce local energy network and manage smartly | Programme overview: Deliver a number of projects to help decarbonise the local grid and provide improved flexibility. 1. Explore flexibility and smart solutions (technological); NGED procuring improved flexibility to meet local demand; developing more renewable and dynamic tariffs. 2. Reinforce the network e.g. at Iron Acton grid supply point. |
 
-Page | 49
-|  Green jobs and Skills | 4. Widen access to green jobs and skills | Programme Overview: Building on existing practice in the region, provide support for strategic planning and delivery of inclusive green skills programmes and support for green job creation. Involve targeted interventions as well as broad offers, to ensure that all are able to access emerging opportunities. 1) Strategic planning and implementation for skills development at regional, city, local and community level building on existing activity and learning. 2) Engagement on green skills and job opportunities to widen access across the city 3) Develop Green Skills Pipeline and Career Pathways to support the delivery of the actions set out in this plan 4) Support in-work Green Skills development  |
-| --- | --- | --- |
-|  Green jobs and Skills | 5. Deliver programme to support employers to create and sustain green jobs | Programme Overview Building on existing practice in the region, support the development of a pipeline of green jobs, including strengthening work in existing green sectors, and also enabling transition from fossil fuel-based activities into low carbon ones. 1. Support employers to transition their businesses away from fossil fuel-based activities into the low carbon activities set out in this action plan. Enabling them to re-train and train their employees to retain people in employment, recruit inclusively and enable everyone to benefit from the transition. 2. Support employers in existing green sectors to sustain and create jobs, recruiting inclusively, and developing inclusive pathways for leadership progression 3. Support employers to develop jobs in emerging sectors such as maintenance of new green infrastructure.  |
-|  Energy Systems: Electricity  |   |   |
-|  2030 Objective (i) All electricity supplied to and generated in Bristol will be carbon neutral (taking into account the anticipated 50% increase in demand by 2030).  |   |   |
-|  2030 Objective (iii) The local electricity network is reinforced, managed more smartly and made more resilient to accommodate increased demand. NDP  |   |   |
-|  Energy systems Electricity | 6. Reinforce local energy network and manage smartly | Programme overview: Deliver a number of projects to help decarbonise the local grid and provide improved flexibility. 1. Explore flexibility and smart solutions (technological); NGED procuring improved flexibility to meet local demand; developing more renewable and dynamic tariffs. 2. Reinforce the network e.g. at Iron Acton grid supply point.  |
-
-Page | 50
 |  Energy systems
 Electricity | 7. Implement programme to maximise renewable energy generation (esp. solar) | Programme overview:
 Maximise potential to generate energy in the city from renewables with an emphasis on solar. Programme will need to first create enabling conditions. Projects include: creating a Local Area Energy Plan; reviewing the application of new Local Plan/planning conditions to identify any barriers to delivery; maximising renewable energy generation and storage on all suitable buildings and land.
@@ -1181,708 +1055,454 @@ Engage, communicate, and provide advice to the private housing sector (tenants/h
 Engage large organisations to make commitments to buy renewable electricity, create innovative shared buying solutions and generate their own renewable energy
 See actions on building retrofit for action to promote solar.  |
 | --- | --- | --- |
-|  Energy Systems: Heat  |   |   |
-|  2030 Objective (i) Individual electric heat pumps installed in ~95,000 buildings which have been well-insulated to support the phase out of gas heating in Bristol.  |   |   |
-|  Energy systems
-Heat | 8. Implement a programme to install or encourage/incentivise installation of heat pumps in homes in the city. | Programme Overview:
-A programme of heat pump promotion, financing and installation which serves all tenures of homes.
-Plan and deliver a programme of heat pump installation in social housing and low-income private homes (BCC social housing and that of other social housing providers) including an associated programme of resident engagement.
-Trial community scale heat pump solutions including an associated programme of community engagement
-Engage, communicate and provide advice to the private housing sector (tenants/homeowners/landlords) on heat pumps and develop initiatives to facilitate market-based delivery, eg group buying schemes
-Provide access to funding, finance and favourable tariffs for homeowners and landlords  |
-
-Page | 51
-|  Energy systems Heat | 9. Implement a programme to install or encourage/incentivise installation of heat pumps in non-domestic buildings in the city. | Programme Overview:
-A programme of heat pump promotion, financing and installation which serves all forms of non-domestic building.
-Plan and deliver programme of heat pump installation in Bristol City Council buildings, buildings of large asset owners in the city (e.g. universities and hospitals) and community buildings
-Engage, communicate and provide advice to non-domestic building owners/managers on heat pumps
-Provide access to funding, finance and favourable tariffs for non-domestic building owners and managers  |
 | --- | --- | --- |
-|  2030 Objective (ii) 65,000 buildings connected to heat networks to support the phase out of gas heating in Bristol.  |   |   |
-|  Energy systems Heat | 10. Expand the network and connect more buildings to the heat network | Programme Overview:
-A programme to create a city heat network serving a wide range of domestic and non-domestic buildings.
-Accelerate pace of heat network delivery and connection, including increasing supply of zero carbon heat, in particular large existing and new sources of waste heat, and implement Heat Network Zoning arrangements
-Engage, communicate and provide advice to building users/owners/managers on heat networks
-Provide access to funding and finance for heat network connections
-Develop a demonstrator project for the retrofitting of high density, low rise, hard to treat housing (such as terraces) with connection to low carbon heat networks.  |
-|  Not related to a specific 2030 objective  |   |   |
-|  Energy systems Heat | 11. Reduce carbon intensity of the existing gas network | 1. Reduce carbon intensity of gas by increasing the proportion of biogas and, pending evidence from industry trials, blending up to 20% hydrogen into the gas supply.  |
-|  Energy Systems Heat | 12. Put in place an inclusive training and skills programme for heat pump installation and heat network construction. | 1. Put in place an inclusive training and skills programme for heat pump installation and heat network construction to support supply chain development  |
-|  Built Environment  |   |   |
-|  2030 Objective (iii) The energy performance of existing buildings in the city is improved to minimise heat demand, whilst preventing overheating, through tailored retrofit solutions.  |   |   |
-
-Page | 52
-|  Built Environment | 13. Implement a city-wide programme for **housing** retrofit to reduce demand and integrate renewable generation. | **Programme Overview:** Deliver programmes of housing retrofit or encourage/incentivise retrofit for all homes in the city. Develop a joined-up ‘retrofit ecosystem’ for Bristol and WECA region by systematically coordinating communications, advice, innovation projects, large scale delivery schemes and skills initiatives across buildings and heat themes.
+| Energy Systems: Heat |  |  |
+| 2030 Objective (i) Individual electric heat pumps installed in ~95,000 buildings which have been well-insulated to support the phase out of gas heating in Bristol. |  | Energy systems<br>Heat | 8. Implement a programme to install or encourage/incentivise installation of heat pumps in homes in the city. | Programme Overview:<br>A programme of heat pump promotion, financing and installation which serves all tenures of homes.<br>Plan and deliver a programme of heat pump installation in social housing and low-income private homes (BCC social housing and that of other social housing providers) including an associated programme of resident engagement.<br>Trial community scale heat pump solutions including an associated programme of community engagement<br>Engage, communicate and provide advice to the private housing sector (tenants/homeowners/landlords) on heat pumps and develop initiatives to facilitate market-based delivery, eg group buying schemes<br>Provide access to funding, finance and favourable tariffs for homeowners and landlords |  |
+| Energy systems Heat | 9. Implement a programme to install or encourage/incentivise installation of heat pumps in non-domestic buildings in the city. | Programme Overview:<br>A programme of heat pump promotion, financing and installation which serves all forms of non-domestic building.<br>Plan and deliver programme of heat pump installation in Bristol City Council buildings, buildings of large asset owners in the city (e.g. universities and hospitals) and community buildings<br>Engage, communicate and provide advice to non-domestic building owners/managers on heat pumps<br>Provide access to funding, finance and favourable tariffs for non-domestic building owners and managers |  |
+| 2030 Objective (ii) 65,000 buildings connected to heat networks to support the phase out of gas heating in Bristol. |  |  |
+| Energy systems Heat | 10. Expand the network and connect more buildings to the heat network | Programme Overview:<br>A programme to create a city heat network serving a wide range of domestic and non-domestic buildings.<br>Accelerate pace of heat network delivery and connection, including increasing supply of zero carbon heat, in particular large existing and new sources of waste heat, and implement Heat Network Zoning arrangements<br>Engage, communicate and provide advice to building users/owners/managers on heat networks<br>Provide access to funding and finance for heat network connections<br>Develop a demonstrator project for the retrofitting of high density, low rise, hard to treat housing (such as terraces) with connection to low carbon heat networks. |  |
+| Not related to a specific 2030 objective |  |  |
+| Energy systems Heat | 11. Reduce carbon intensity of the existing gas network | 1. Reduce carbon intensity of gas by increasing the proportion of biogas and, pending evidence from industry trials, blending up to 20% hydrogen into the gas supply. |
+| Energy Systems Heat | 12. Put in place an inclusive training and skills programme for heat pump installation and heat network construction. | 1. Put in place an inclusive training and skills programme for heat pump installation and heat network construction to support supply chain development |
+| Built Environment |  |  |
+| 2030 Objective (iii) The energy performance of existing buildings in the city is improved to minimise heat demand, whilst preventing overheating, through tailored retrofit solutions. |  |  |
+| Built Environment | 13. Implement a city-wide programme for **housing** retrofit to reduce demand and integrate renewable generation. | **Programme Overview:** Deliver programmes of housing retrofit or encourage/incentivise retrofit for all homes in the city. Develop a joined-up ‘retrofit ecosystem’ for Bristol and WECA region by systematically coordinating communications, advice, innovation projects, large scale delivery schemes and skills initiatives across buildings and heat themes. |
 
 **Plan and deliver** a programme of retrofit (including renewable energy) in social housing (BCC social housing and that of other social housing providers) including an associated programme of resident engagement.
 **Trial** street retrofit with blended finance building on the Net Zero Neighbourhoods model including significant community engagement related to neighbourhood decarbonisation activities (e.g. External Wall Insulation on a whole terrace).
 **Engage**, communicate and provide advice to the private housing sector (tenants/homeowners/landlords) on housing retrofit.
 Provide access and signposting to **funding and finance** for retrofit for homeowners and landlords  |
 | --- | --- | --- |
-|  Built Environment | 14. Implement a city-wide programme for **non-domestic building** retrofit to reduce demand and integrate renewable generation. | **Programme Overview:** Plan and deliver non-domestic retrofit programme or encourage/incentivise non-domestic retrofit for all non-domestic buildings across the city.
+| --- | --- | --- |
+| Built Environment | 14. Implement a city-wide programme for **non-domestic building** retrofit to reduce demand and integrate renewable generation. | **Programme Overview:** Plan and deliver non-domestic retrofit programme or encourage/incentivise non-domestic retrofit for all non-domestic buildings across the city. |
 
 **Plan and deliver** non-domestic retrofit programme in BCC-owned buildings, in buildings owned by large asset owners (e.g. university and hospital campuses) and community buildings.
 **Trial** a business retrofit project by sector or location (e.g. business park)
 **Engage**, communicate and provide advice to non-domestic building owners/ managers/ users on retrofit.
 Provide access to **funding and finance** for non-domestic building owners/managers.  |
-|  Built Environment | 15. Implement an inclusive training and **skills** programme for retrofit and renewable energy generation. | **Programme Overview:** Plan and deliver a training and skills programme for retrofit
-**Deliver** large scale training and skills programme for domestic and non-domestic retrofit – in all parts of the system including building works, planning, financing etc.
-**Deliver** targeted support to the supply chain development  |
-|  **Mobility & transport**  |   |   |
-|  2030 Objective (i) Significant reduction in car mileage achieved through mode shift towards public transport, walking and cycling; commercial vehicle mileage reduced through freight consolidation; aiming for a total 40% reduction in vehicle miles.  |   |   |
-|  2030 Objective (iv) Significant improvements made to accessibility and service of sustainable travel infrastructure to ensure it can support carbon neutral, climate resilient transport systems.  |   |   |
-
-Page | 53
-|  Mobility & transport | 16. Implement programme to significantly reduce car miles | Programme Overview: Deliver a range of projects aimed to reduce car miles by 40%, significantly reducing congestion across the city, and creating the conditions and financial support for mass shift to public and active travel modes including: 1. Deliver demand management measures including a workplace parking levy. 2. Expand existing mobility as a service offers across the city, supporting single ticketing for multi-modal travel and expanding electric car clubs and schemes such as e-scooter and e-bike hire. 3. Engage with citizens and businesses on the design of changes to the transport systems which helps to address existing inequalities of access to mobility. This includes support for citizens and small business to make changes, with advice, support, training, discount schemes, loan schemes etc drawing upon the ideas in the Community Climate Action Plans.  |
+| Built Environment | 15. Implement an inclusive training and **skills** programme for retrofit and renewable energy generation. | **Programme Overview:** Plan and deliver a training and skills programme for retrofit<br>**Deliver** large scale training and skills programme for domestic and non-domestic retrofit – in all parts of the system including building works, planning, financing etc.<br>**Deliver** targeted support to the supply chain development |  |
 | --- | --- | --- |
-|  Mobility & transport | 17. Implement programme to encourage modal shift to active transport | Programme Overview: Deliver improvements to walking and cycling routes and infrastructure so that public enjoyment and safety when travelling by active modes is significantly improved. 1. Deliver significant expansion of the City Region Sustainable Transport Settlement programme of segregated cycling infrastructure and make public realm improvements for walking. 2. Deliver expansion of the Liveable Neighbourhoods schemes to all central residential neighbourhoods. 3. Engage with citizens on promotion of safe active and public travel and help address inequalities in access to mobility.  |
-|  Mobility & transport | 18. Implement programme to encourage modal shift to public transport | Programme Overview: Significantly improve bus service routes, frequency and reliability so that people have a realistic alternative to driving. 1. Deliver upgrades to existing bus services and establish new routes and more integrated services; in particular addressing existing inequalities in access to mobility. 2. Support full electrification of bus fleet. 3. Deliver a Rapid Mass Transit system for the benefit of the city  |
-|  Mobility & transport | 19. Implement policy changes and provide innovation funding to encourage freight consolidation and low carbon deliveries | Programme Overview: Supporting the Local Industrial Decarbonisation Plan, implement policy changes to encourage freight consolidation and low carbon deliveries across the city region. 1. Policy changes to support increased freight consolidation and electrification. 2. Provide innovation funding to support and encourage operators to further invest in freight consolidation and final mile delivery by e-cargo bike.  |
+| **Mobility & transport** |  |  |
+| 2030 Objective (i) Significant reduction in car mileage achieved through mode shift towards public transport, walking and cycling; commercial vehicle mileage reduced through freight consolidation; aiming for a total 40% reduction in vehicle miles. |  |  |
+| 2030 Objective (iv) Significant improvements made to accessibility and service of sustainable travel infrastructure to ensure it can support carbon neutral, climate resilient transport systems. |  |  |
+| Mobility & transport | 16. Implement programme to significantly reduce car miles | Programme Overview: Deliver a range of projects aimed to reduce car miles by 40%, significantly reducing congestion across the city, and creating the conditions and financial support for mass shift to public and active travel modes including: 1. Deliver demand management measures including a workplace parking levy. 2. Expand existing mobility as a service offers across the city, supporting single ticketing for multi-modal travel and expanding electric car clubs and schemes such as e-scooter and e-bike hire. 3. Engage with citizens and businesses on the design of changes to the transport systems which helps to address existing inequalities of access to mobility. This includes support for citizens and small business to make changes, with advice, support, training, discount schemes, loan schemes etc drawing upon the ideas in the Community Climate Action Plans. |
+| Mobility & transport | 17. Implement programme to encourage modal shift to active transport | Programme Overview: Deliver improvements to walking and cycling routes and infrastructure so that public enjoyment and safety when travelling by active modes is significantly improved. 1. Deliver significant expansion of the City Region Sustainable Transport Settlement programme of segregated cycling infrastructure and make public realm improvements for walking. 2. Deliver expansion of the Liveable Neighbourhoods schemes to all central residential neighbourhoods. 3. Engage with citizens on promotion of safe active and public travel and help address inequalities in access to mobility. |
+| Mobility & transport | 18. Implement programme to encourage modal shift to public transport | Programme Overview: Significantly improve bus service routes, frequency and reliability so that people have a realistic alternative to driving. 1. Deliver upgrades to existing bus services and establish new routes and more integrated services; in particular addressing existing inequalities in access to mobility. 2. Support full electrification of bus fleet. 3. Deliver a Rapid Mass Transit system for the benefit of the city |
+| Mobility & transport | 19. Implement policy changes and provide innovation funding to encourage freight consolidation and low carbon deliveries | Programme Overview: Supporting the Local Industrial Decarbonisation Plan, implement policy changes to encourage freight consolidation and low carbon deliveries across the city region. 1. Policy changes to support increased freight consolidation and electrification. 2. Provide innovation funding to support and encourage operators to further invest in freight consolidation and final mile delivery by e-cargo bike. |
+| 2030 Objective (ii) All of Bristol's cars primarily consist of ultralow emission vehicles (ULEVs) and 90% of other vehicles to be ULEV. |  |  |
+| Mobility & transport | 20. Implement programme to support accelerated shift from internal combustion engine vehicles to battery electric vehicles | Programme Overview: Accelerate market driven uptake of electric vehicles by providing a network of accessible and affordable public charge points to enable households without off-street parking to switch to electric vehicles, ensuring both effective use of the electricity network, city space and ensuring fair access to charge points. 1. Deliver expansion of public Electric Vehicle Charging Infrastructure to 950 charge points within the city, including on-street, car park and other solutions. 2. Support electricity network upgrades required for fast and ultra rapid public charge points. 3. Engage large organisations to convert their fleet cars to electric; including to convert Bristol City Council van fleet (300 vehicles) to electric vehicles with associated charging infrastructure 4. Provide access to funding and finance for business vehicles to convert to electric vehicles. |
+| Waste & circular economy |  |  |
+| 2030 Objective (i) Bristol's retail economy has transitioned to high quality, durable products that can be easily repaired. |  |  |
+| Waste & circular economy | 21. Implement citywide programme to support increased repair and reuse of retail products | Programme Overview: Support a growing ecosystem of supply and demand for re-usable and repairable goods. 1. Deliver expansion of local household waste and recycling centre's (HWRC's) Re-Use schemes. 2. Support expansion of Bristol's burgeoning re-use and repair sector and community owned assets. 3. Deliver an inclusive training and skills programme for repair and re-use, focusing on electrical goods, and a range of support for community-based repair and reuse initiatives based on ideas in the Community Climate Action Plans. |
+| 2030 Objective (ii) Everyone follows principles of responsible consumption, using and buying less and buying carbon neutral goods and services. |  |  |
+| Waste & circular economy | 22. Conduct targeted engagement campaigns across the city to communicate impacts of consumption to businesses and citizens | Programme Overview: Through targeted engagement, increase awareness amongst citizens and businesses of the impacts of consumption, especially among high consumption groups/ businesses and enable significant changes.<br>Deliver targeted engagement campaigns to communicate impacts of consumption, aimed at high-consumption demographics and businesses and support innovative solutions.<br>Coordinate the creation and adoption of consistent local circular economy procurement principles, standards, and strategies.<br>Deliver substantial and sustained programme of activities to inspire and support businesses to reduce their waste production and carbon emissions through capacity building, supply chain engagement etc. | 2030 Objective (iii) Significant levels of waste reduction (particularly for food, textiles, and plastic).<br>Objective (iv) At least 65% of all ‘waste’ is repaired, recycled or re-used. |  |  |  |
+| Waste & circular economy | 23. Implement waste reduction efforts and improve waste collection, recycling and processing services | Programme Overview: Improve local waste services to reduce waste, increase recycling rates and support the expansion of the local circular economy.<br>Engage with waste services providers to support changes in local services that reduce food and plastic content of residual waste.<br>Engage businesses and citizens to increase domestic and commercial recycling rates.<br>Support the emerging Local Industrial Decarbonisation Plan working with Energy from Waste plant operators to find solutions for removal of fossil carbon from residual waste, and implement Carbon Capture and Storage at scale. |  |
+| Green infrastructure & nature-based solutions |  |  |
+| 2030 Objective (i) At least 30% of land in Bristol to be managed for the benefit of wildlife by 2030 |  |  |
+| Green infrastructure & nature-based solutions | 24. Raise the quality of existing green spaces | Programme Overview: Raise the quality of Bristol’s existing green spaces from ‘moderate’ to good, through targeted investment delivering high quality green spaces.<br>Deliver improvements to parks and green spaces making them safer, more welcoming, and more inclusive.<br>Deliver improvements to parks and green spaces through increased tree planting and wildlife friendly habitat. |  |
+| Green infrastructure & nature-based solutions | 25. Improve climate resilience and ecological recovery through greening of the public realm | Programme Overview: Improve access to green spaces and boost climate resilience through street greening and tree planting.<br>Deliver a significant expansion of street greening through planting of new trees and other planting in the public realm to mitigate urban heat and improve the city's climate resilience.<br>Deliver expansion of the emerging Green Recovery Fund project, resulting in a combined uplift in the total space for nature within the city of 10%. |  |
+| Green infrastructure & nature-based solutions | 26. Create new green spaces across the city | Programme Overview: Incorporate the creation of new green spaces into strategic regeneration projects and flood defence schemes.<br>Deliver new green spaces in the city centre, Temple Quarter, and St Phillips Marsh as part of long-term strategic regeneration zones.<br>Deliver the incorporation of Green Infrastructure designs into the developing river Avon flood strategy.<br>Deliver 5,500m² of new floating reedbeds in the Floating Harbour. |  |
 
-Page | 54
-Page | 55
-
-|  2030 Objective (ii) All of Bristol's cars primarily consist of ultralow emission vehicles (ULEVs) and 90% of other vehicles to be ULEV.  |   |   |
-| --- | --- | --- |
-|  Mobility & transport | 20. Implement programme to support accelerated shift from internal combustion engine vehicles to battery electric vehicles | Programme Overview: Accelerate market driven uptake of electric vehicles by providing a network of accessible and affordable public charge points to enable households without off-street parking to switch to electric vehicles, ensuring both effective use of the electricity network, city space and ensuring fair access to charge points. 1. Deliver expansion of public Electric Vehicle Charging Infrastructure to 950 charge points within the city, including on-street, car park and other solutions. 2. Support electricity network upgrades required for fast and ultra rapid public charge points. 3. Engage large organisations to convert their fleet cars to electric; including to convert Bristol City Council van fleet (300 vehicles) to electric vehicles with associated charging infrastructure 4. Provide access to funding and finance for business vehicles to convert to electric vehicles.  |
-|  Waste & circular economy  |   |   |
-|  2030 Objective (i) Bristol's retail economy has transitioned to high quality, durable products that can be easily repaired.  |   |   |
-|  Waste & circular economy | 21. Implement citywide programme to support increased repair and reuse of retail products | Programme Overview: Support a growing ecosystem of supply and demand for re-usable and repairable goods. 1. Deliver expansion of local household waste and recycling centre's (HWRC's) Re-Use schemes. 2. Support expansion of Bristol's burgeoning re-use and repair sector and community owned assets. 3. Deliver an inclusive training and skills programme for repair and re-use, focusing on electrical goods, and a range of support for community-based repair and reuse initiatives based on ideas in the Community Climate Action Plans.  |
-Page | 56
-
-|  2030 Objective (ii) Everyone follows principles of responsible consumption, using and buying less and buying carbon neutral goods and services.  |   |   |
-| --- | --- | --- |
-|  Waste & circular economy | 22. Conduct targeted engagement campaigns across the city to communicate impacts of consumption to businesses and citizens | Programme Overview: Through targeted engagement, increase awareness amongst citizens and businesses of the impacts of consumption, especially among high consumption groups/ businesses and enable significant changes.
-Deliver targeted engagement campaigns to communicate impacts of consumption, aimed at high-consumption demographics and businesses and support innovative solutions.
-Coordinate the creation and adoption of consistent local circular economy procurement principles, standards, and strategies.
-Deliver substantial and sustained programme of activities to inspire and support businesses to reduce their waste production and carbon emissions through capacity building, supply chain engagement etc.  |
-|  2030 Objective (iii) Significant levels of waste reduction (particularly for food, textiles, and plastic).
-Objective (iv) At least 65% of all ‘waste’ is repaired, recycled or re-used.  |   |   |
-|  Waste & circular economy | 23. Implement waste reduction efforts and improve waste collection, recycling and processing services | Programme Overview: Improve local waste services to reduce waste, increase recycling rates and support the expansion of the local circular economy.
-Engage with waste services providers to support changes in local services that reduce food and plastic content of residual waste.
-Engage businesses and citizens to increase domestic and commercial recycling rates.
-Support the emerging Local Industrial Decarbonisation Plan working with Energy from Waste plant operators to find solutions for removal of fossil carbon from residual waste, and implement Carbon Capture and Storage at scale.  |
-|  Green infrastructure & nature-based solutions  |   |   |
-|  2030 Objective (i) At least 30% of land in Bristol to be managed for the benefit of wildlife by 2030  |   |   |
-|  Green infrastructure & nature-based solutions | 24. Raise the quality of existing green spaces | Programme Overview: Raise the quality of Bristol’s existing green spaces from ‘moderate’ to good, through targeted investment delivering high quality green spaces.
-Deliver improvements to parks and green spaces making them safer, more welcoming, and more inclusive.
-Deliver improvements to parks and green spaces through increased tree planting and wildlife friendly habitat.  |
-|  Green infrastructure & nature-based solutions | 25. Improve climate resilience and ecological recovery through greening of the public realm | Programme Overview: Improve access to green spaces and boost climate resilience through street greening and tree planting.
-Deliver a significant expansion of street greening through planting of new trees and other planting in the public realm to mitigate urban heat and improve the city's climate resilience.
-Deliver expansion of the emerging Green Recovery Fund project, resulting in a combined uplift in the total space for nature within the city of 10%.  |
-| --- | --- | --- |
-|  Green infrastructure & nature-based solutions | 26. Create new green spaces across the city | Programme Overview: Incorporate the creation of new green spaces into strategic regeneration projects and flood defence schemes.
-Deliver new green spaces in the city centre, Temple Quarter, and St Phillips Marsh as part of long-term strategic regeneration zones.
-Deliver the incorporation of Green Infrastructure designs into the developing river Avon flood strategy.
-Deliver 5,500m² of new floating reedbeds in the Floating Harbour.  |
-
-Page | 57
 B-2.2: Individual action outlines
 
-|  Impact Pathway 1: Cross-cutting Enabling Actions on Just Transition, Communications and Engagement and Skills  |   |   |
+| Impact Pathway 1: Cross-cutting Enabling Actions on Just Transition, Communications and Engagement and Skills |  |  |
 | --- | --- | --- |
-|  Action outline | Action name | 1. Continue to engage Transition Team on CCC design and implementation including developing business cases and securing funding  |
-|   |  Action type | Cross-cutting Enabling Action  |
-|   |  Action description | Support for Transition Team to engage with CCC long term. Interventions to develop and support effective partnerships, business cases, secure funding and finance etc for members to take the lead on delivering actions in the CCC.
-Focus on strengthening relations within TT organisations allows interdepartmental working, collaboration and fosters innovation.
-Focus on strengthening relations between TT organisations allows collaboration and fosters innovation for problem solving at city level  |
-|  Reference to impact pathway | Field of action | Cross-cutting Enabling Actions on Just Transition, Communications and Engagement and Skills  |
-|   |  Systemic lever | Democracy and Participation  |
-|   |  Outcome (according to module B-1.1) | Action planning and implementation informed by local opinion achieves a just transition to climate neutrality  |
-|  Implementation | Responsible bodies/person for implementation | Transition Team  |
-|   |  Action scale & addressed entities | Within Transition Team organisations  |
-|   |  Involved stakeholders | Transition Team  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | The Climate Strategy Co-ordinator in BCC will continue this work. Additional resources will be needed to fully achieve the action.  |
-|  Impact & cost | GHG emissions reduction estimate (total) per emission source sector | None expected – enabling condition  |
-|   |  Total costs and costs by CO2e unit | Not applicable  |
+| Action outline | Action name | 1. Continue to engage Transition Team on CCC design and implementation including developing business cases and securing funding |
+|  | Action type | Cross-cutting Enabling Action |
+|  | Action description | Support for Transition Team to engage with CCC long term. Interventions to develop and support effective partnerships, business cases, secure funding and finance etc for members to take the lead on delivering actions in the CCC.<br>Focus on strengthening relations within TT organisations allows interdepartmental working, collaboration and fosters innovation.<br>Focus on strengthening relations between TT organisations allows collaboration and fosters innovation for problem solving at city level |  |
+| Reference to impact pathway | Field of action | Cross-cutting Enabling Actions on Just Transition, Communications and Engagement and Skills |
+|  | Systemic lever | Democracy and Participation |
+|  | Outcome (according to module B-1.1) | Action planning and implementation informed by local opinion achieves a just transition to climate neutrality |
+| Implementation | Responsible bodies/person for implementation | Transition Team |
+|  | Action scale & addressed entities | Within Transition Team organisations |
+|  | Involved stakeholders | Transition Team |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | The Climate Strategy Co-ordinator in BCC will continue this work. Additional resources will be needed to fully achieve the action. |
+| Impact & cost | GHG emissions reduction estimate (total) per emission source sector | None expected – enabling condition |
+|  | Total costs and costs by CO2e unit | Not applicable |
+| B-2.2: Individual action outlines |  |  |
+| --- | --- | --- |
+| Action outline | Action name | 2. Further embed Just Transition principles into CCC and support wider adoption in the city through wide engagement |
+|  | Action type | Cross-cutting Enabling Action |
+|  | Action description | Bristol’s Just Transition declaration aims to work towards net zero in a way that works for everyone in the city.<br>Embedding the principles more widely in the CCC will help achieve this aim.<br>Excellent practice on engagement to feed into the design of actions will allow for effective solutions.<br>Engagement on Just Transition itself will also be necessary, for both high level decision makers and for citizens more widely. |  |
+| Reference to impact pathway | Field of action | Cross-cutting Enabling Actions on Just Transition, Communications and Engagement and Skills |
+|  | Systemic lever | Democracy and Participation |
+|  | Outcome (according to module B-1.1) | Action planning and implementation informed by local opinion achieves a just transition to climate neutrality |
+| Implementation | Responsible bodies/person for implementation | Transition Team |
+|  | Action scale & addressed entities | Citizens citywide |
+|  | Involved stakeholders | Transition Team. Advice from experts in inclusion and equity in environmental work may also be sought |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Learn from and build upon the Mission Net Zero Project.<br>Additional resources will be needed. |  |
+| Impact & cost | GHG emissions reduction estimate (total) per emission source sector | None expected – enabling condition |
+|  | Total costs and costs by CO2e unit | Not applicable |
+| B-2.2: Individual action outlines |  |  |
+| Action outline | Action name | 3 Deliver transformative, inclusive, programmes of environmental communications, consultation and engagement |
+|  | Action type | Cross-cutting Enabling Action |
+|  | Action description | Transformation of current programmes of environmental communications, consultation and engagement are necessary to develop inclusivity and equity, build on existing good practice and work with new groups- particularly those who have previously been excluded. Sharing good practice allows it to be disseminated widely in the city. |
+|  |  | This could include:<br>Embed equitable practice at the heart of communications and engagement recognising the multiple barriers to inclusive environmentalism.<br>Undertake further research to prioritise which audiences to engage with and how to reach them. Ensure that accessible versions of this research are available to the public<br>Collate and share best practice across the sector.<br>Co-produce, test and disseminate a set of tools to help organisations across the city to create communications and engagement that are in line with Just Transition principles, building on existing work on inclusive environmentalism and Just Transition, avoids causing harm and trauma, and fosters cohesion across difference, is more consistent across the city and has more impact which is more comprehensively measured<br>Ensure that engagement influences policy, the design of services and solutions and decision making |  |
+| Reference to impact pathway | Field of action | Cross-cutting Enabling Actions on Just Transition, Communications and Engagement and Skills |
+|  | Systemic lever | Democracy and Participation |
+|  | Outcome (according to module B-1.1) | Action planning and implementation informed by local opinion achieves a just transition to climate neutrality |
+| Implementation | Responsible bodies/person for implementation | Transition Team |
+|  | Action scale & addressed entities | Citizens citywide |
+|  | Involved stakeholders | Transition Team and stakeholders representing wider demographics - particularly those not previously reached. Advice from experts in inclusion and equity in environmental work may also be sought |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Learn from and build upon the Mission Net Zero Project. Additional resources will be needed. |
+| Impact & cost | GHG emissions reduction estimate (total) per emission source sector | None expected – enabling condition |
+|  | Total costs and costs by CO2e unit | Not applicable |
 
-Page | 58
-Page | 59
-
-|  B-2.2: Individual action outlines  |   |   |
-| --- | --- | --- |
-|  Action outline | Action name | 2. Further embed Just Transition principles into CCC and support wider adoption in the city through wide engagement  |
-|   |  Action type | Cross-cutting Enabling Action  |
-|   |  Action description | Bristol’s Just Transition declaration aims to work towards net zero in a way that works for everyone in the city.
-Embedding the principles more widely in the CCC will help achieve this aim.
-Excellent practice on engagement to feed into the design of actions will allow for effective solutions.
-Engagement on Just Transition itself will also be necessary, for both high level decision makers and for citizens more widely.  |
-|  Reference to impact pathway | Field of action | Cross-cutting Enabling Actions on Just Transition, Communications and Engagement and Skills  |
-|   |  Systemic lever | Democracy and Participation  |
-|   |  Outcome (according to module B-1.1) | Action planning and implementation informed by local opinion achieves a just transition to climate neutrality  |
-|  Implementation | Responsible bodies/person for implementation | Transition Team  |
-|   |  Action scale & addressed entities | Citizens citywide  |
-|   |  Involved stakeholders | Transition Team. Advice from experts in inclusion and equity in environmental work may also be sought  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Learn from and build upon the Mission Net Zero Project.
-Additional resources will be needed.  |
-|  Impact & cost | GHG emissions reduction estimate (total) per emission source sector | None expected – enabling condition  |
-|   |  Total costs and costs by CO2e unit | Not applicable  |
-|  B-2.2: Individual action outlines  |   |   |
-| --- | --- | --- |
-|  Action outline | Action name | 3 Deliver transformative, inclusive, programmes of environmental communications, consultation and engagement  |
-|   |  Action type | Cross-cutting Enabling Action  |
-|   |  Action description | Transformation of current programmes of environmental communications, consultation and engagement are necessary to develop inclusivity and equity, build on existing good practice and work with new groups- particularly those who have previously been excluded. Sharing good practice allows it to be disseminated widely in the city.  |
-|   |  | This could include:
-Embed equitable practice at the heart of communications and engagement recognising the multiple barriers to inclusive environmentalism.
-Undertake further research to prioritise which audiences to engage with and how to reach them. Ensure that accessible versions of this research are available to the public
-Collate and share best practice across the sector.
-Co-produce, test and disseminate a set of tools to help organisations across the city to create communications and engagement that are in line with Just Transition principles, building on existing work on inclusive environmentalism and Just Transition, avoids causing harm and trauma, and fosters cohesion across difference, is more consistent across the city and has more impact which is more comprehensively measured
-Ensure that engagement influences policy, the design of services and solutions and decision making  |
-| --- | --- | --- |
-|  Reference to impact pathway | Field of action | Cross-cutting Enabling Actions on Just Transition, Communications and Engagement and Skills  |
-|   |  Systemic lever | Democracy and Participation  |
-|   |  Outcome (according to module B-1.1) | Action planning and implementation informed by local opinion achieves a just transition to climate neutrality  |
-|  Implementation | Responsible bodies/person for implementation | Transition Team  |
-|   |  Action scale & addressed entities | Citizens citywide  |
-|   |  Involved stakeholders | Transition Team and stakeholders representing wider demographics - particularly those not previously reached. Advice from experts in inclusion and equity in environmental work may also be sought  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Learn from and build upon the Mission Net Zero Project. Additional resources will be needed.  |
-|  Impact & cost | GHG emissions reduction estimate (total) per emission source sector | None expected – enabling condition  |
-|   |  Total costs and costs by CO2e unit | Not applicable  |
-
-Page | 60
 B-2.2: Individual action outlines
 
 | Action outline | Action name | 4 Widen access to green jobs and skills |
 | --- | --- | --- |
 |  | Action type | Cross-cutting Enabling Action |
-| Action description | Further support green skills development in the region. Ensure there is a trained, skilled talent pipeline and workforce for net zero infrastructure supply chain, maintenance and decommissioning.
-Effective planning for skills development – e.g. targeting areas which would benefit from new employment opportunities, overcoming barriers to entry and tackling exclusion, providing opportunities to tackle inequality.
-This could include:
-• Ensure time and resource for effective planning for skills development
-• Join up strategic thinking from regional to community level to develop long term aspirations for skills and career development
-• Link effectively to BCC Inclusive Growth Strategy
-• Develop comprehensive Green Skills training programmes from Primary level to HE as well as alternative provisions, and on the job training
-• Ensure green skills training is relevant and inclusive to a wider range of people:
-o co-create with stakeholders to overcome barriers to inclusion
-• Engage on green skills and job opportunities to widen access across the city
-e.g. careers fairs, information for education providers, online info hubs for signposting, paid work experience opportunities and/or internships
-• Support inclusive, in-work Green Skills development
-• Ensure that leadership in Green Skills and Jobs is inclusive
-• Provide (financial) support and information on available opportunities |
+| Action description | Further support green skills development in the region. Ensure there is a trained, skilled talent pipeline and workforce for net zero infrastructure supply chain, maintenance and decommissioning.<br>Effective planning for skills development – e.g. targeting areas which would benefit from new employment opportunities, overcoming barriers to entry and tackling exclusion, providing opportunities to tackle inequality.<br>This could include:<br>• Ensure time and resource for effective planning for skills development<br>• Join up strategic thinking from regional to community level to develop long term aspirations for skills and career development<br>• Link effectively to BCC Inclusive Growth Strategy<br>• Develop comprehensive Green Skills training programmes from Primary level to HE as well as alternative provisions, and on the job training<br>• Ensure green skills training is relevant and inclusive to a wider range of people:<br>o co-create with stakeholders to overcome barriers to inclusion<br>• Engage on green skills and job opportunities to widen access across the city<br>e.g. careers fairs, information for education providers, online info hubs for signposting, paid work experience opportunities and/or internships<br>• Support inclusive, in-work Green Skills development<br>• Ensure that leadership in Green Skills and Jobs is inclusive<br>• Provide (financial) support and information on available opportunities |  |
 | Reference to impact pathway | Field of action | Cross-cutting Enabling Actions on Just Transition, Communications and Engagement and Skills |
-| Systemic lever | All -Technology and Infrastructure; Social Innovation; Finance and Funding; Democracy and Participation; Governance and Policy; Learning and Capabilities |
-| Outcome (according to module B-1.1) | Action planning and implementation informed by local opinion achieves a just transition to climate neutrality |
+| Systemic lever | All -Technology and Infrastructure; Social Innovation; Finance and Funding; Democracy and Participation; Governance and Policy; Learning and Capabilities |  |
+| Outcome (according to module B-1.1) | Action planning and implementation informed by local opinion achieves a just transition to climate neutrality |  |
 | Implementation | Responsible bodies/person for implementation | The overall responsible body or bodies would be identified as this work progresses. At present, several organisations are playing a role |
-| Action scale & addressed entities | Citizens citywide |
-| Involved stakeholders | Transition Team, educational providers. Advice from experts in inclusion and equity in environmental work may also be sought. |
-
-Page | 61
-Page | 62
-
-|   | Comments on implementation – consider mentioning resources, timelines, milestones | Learn from and build upon the Mission Net Zero Project and WECA Green Skills Programme. Additional resources will be needed.  |
+| Action scale & addressed entities | Citizens citywide |  |
+| Involved stakeholders | Transition Team, educational providers. Advice from experts in inclusion and equity in environmental work may also be sought. |  |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Learn from and build upon the Mission Net Zero Project and WECA Green Skills Programme. Additional resources will be needed. |
+| Impact & cost | GHG emissions reduction estimate (total) per emission source sector | None expected – enabling condition |
+|  | Total costs and costs by CO2e unit | Not applicable |
+| B-2.2: Individual action outlines |  |  |
 | --- | --- | --- |
-|  Impact & cost | GHG emissions reduction estimate (total) per emission source sector | None expected – enabling condition  |
-|   | Total costs and costs by CO2e unit | Not applicable  |
-|  B-2.2: Individual action outlines  |   |   |
-| --- | --- | --- |
-|  Action outline | Action name | 5 Deliver programme to support employers to create and sustain green jobs  |
-|   |  Action type | Cross-cutting Enabling Action  |
-|   |  Action description | Further support development of a green jobs pipeline of green jobs, including strengthening work in existing green sectors, and also enabling transition from fossil fuel-based activities into low carbon ones to facilitate the actions in this plan being carried out effectively.
-This could include:
-• Ensure that Green Jobs pipeline is inclusive and provides opportunities for those previously excluded, and those formerly employed in fossil fuel industry by using equitable practices.
-• Support for Green Job creation, recruitment and retention, whilst overcoming barriers to entering and progressing in the sector.  |
-|  Reference to impact pathway | Field of action | Cross-cutting Enabling Actions on Just Transition, Communications and Engagement and Skills  |
-|   |  Systemic lever | Finance and Funding; Democracy and Participation; Learning and Capabilities  |
-|   |  Outcome (according to module B-1.1) | Action planning and implementation informed by local opinion achieves a just transition to climate neutrality  |
-|  Implementation | Responsible bodies/person for implementation | The overall responsible body or bodies would be identified as this work progresses. At present, several organisations are playing a role  |
-|   |  Action scale & addressed entities | Citizens citywide  |
-|   |  Involved stakeholders | Transition Team, educational providers, employers. Advice from experts in inclusion and equity in environmental work may also be sought  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | To implement in coordination with leadership from key stakeholders with a role in leading work on skills development  |
-|  Impact & cost | GHG emissions reduction estimate (total) per emission source sector | None expected – enabling condition  |
-|   |  Total costs and costs by CO2e unit | Not applicable  |
+| Action outline | Action name | 5 Deliver programme to support employers to create and sustain green jobs |
+|  | Action type | Cross-cutting Enabling Action |
+|  | Action description | Further support development of a green jobs pipeline of green jobs, including strengthening work in existing green sectors, and also enabling transition from fossil fuel-based activities into low carbon ones to facilitate the actions in this plan being carried out effectively.<br>This could include:<br>• Ensure that Green Jobs pipeline is inclusive and provides opportunities for those previously excluded, and those formerly employed in fossil fuel industry by using equitable practices.<br>• Support for Green Job creation, recruitment and retention, whilst overcoming barriers to entering and progressing in the sector. |  |
+| Reference to impact pathway | Field of action | Cross-cutting Enabling Actions on Just Transition, Communications and Engagement and Skills |
+|  | Systemic lever | Finance and Funding; Democracy and Participation; Learning and Capabilities |
+|  | Outcome (according to module B-1.1) | Action planning and implementation informed by local opinion achieves a just transition to climate neutrality |
+| Implementation | Responsible bodies/person for implementation | The overall responsible body or bodies would be identified as this work progresses. At present, several organisations are playing a role |
+|  | Action scale & addressed entities | Citizens citywide |
+|  | Involved stakeholders | Transition Team, educational providers, employers. Advice from experts in inclusion and equity in environmental work may also be sought |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | To implement in coordination with leadership from key stakeholders with a role in leading work on skills development |
+| Impact & cost | GHG emissions reduction estimate (total) per emission source sector | None expected – enabling condition |
+|  | Total costs and costs by CO2e unit | Not applicable<br>B-2.2: Individual action outlines |
+| Impact Pathway 2: Energy Systems |  |  |
+| Action outline | Action name | 6 Reinforce local energy network and manage smartly |
+|  | Action type | Infrastructure |
+|  | Action description | Deliver a number of projects to help decarbonise the local grid and provide improved flexibility.<br>Explore flexibility and smart solutions (technological); NGED procuring improved flexibility to meet local demand; developing more renewable and dynamic tariffs.<br>Reinforce the network e.g. at Iron Acton grid supply point. |  |
+| Reference to impact pathway | Field of action | Energy Systems: Electricity |
+|  | Systemic lever | Social Innovation; Tech & Infrastructure |
+|  | Outcome (according to module B-1.1) | Increased availability and uptake of renewable and dynamic tariffs. Greater use of flexibility within Bristol's electricity network. Offsetting the need for network reinforcement and allowing the growth of low carbon technologies.<br>Delivery of Network Development Plan (informed by DFES) starts. The network can quickly and easily accommodate new low carbon technologies to connect (e.g. heat pumps and electric vehicle charge points). |  |
+| Implementation | Responsible bodies/person for implementation | National Grid Electricity Distribution (NGED) is the main responsible body |
+|  | Action scale & addressed entities | Citywide across the electricity distribution network, including domestic and non-domestic customers |
+|  | Involved stakeholders | NGED and their key stakeholders |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation including timelines would be developed by the stakeholders as the action is developed |
+| Impact & cost | Generated renewable energy (if applicable) | This action is about maximising energy use when it is being produced by renewable sources so that renewable energy is not wasted, rather than installing additional renewable energy generation |
+|  | Removed/substituted energy, volume, or fuel type | Through shifting energy use to times of renewable generation, the demand for electricity generated by burning fossil fuels is reduced |
+| GHG emissions reduction estimate (total) per emission source sector | None expected – enabling condition |  |
+| GHG emissions compensated (natural or technological sinks) | Not applicable |  |
+| Total costs and costs by CO2e unit | See investment plan |  |
+| B-2.2: Individual action outlines |  |  |
+| Action outline | Action name | 7 Implement programme to maximise renewable energy generation (especially solar) |
+|  | Action type | Infrastructure |
+|  | Action description | Delivery<br>Maximise potential to generate energy in the city from renewables with an emphasis on solar. Programme will need to first create enabling conditions. Projects include: creating a Local Area Energy Plan; reviewing the application of new Local Plan/planning conditions to identify any barriers to delivery; maximising renewable energy generation and storage on all suitable buildings and land.<br>Create a Regional Climate Investment Plan and review the application of new Local Plan to identify any barriers to delivery<br>Engage, communicate, and provide advice to the private housing sector (tenants/homeowners/landlords) on solar PV and develop initiatives to facilitate market-based delivery, e.g. group buying schemes<br>Engage large organisations to make commitments to buy renewable electricity, create innovative shared buying solutions and generate their own renewable energy |  |
+| Reference to impact pathway | Field of action | Energy Systems: Electricity |
+|  | Systemic lever | Governance & Policy; Tech & Infrastructure; Social Innovation; Democracy & Participation; Finance and Funding |
+|  | Outcome (according to module B-1.1) | Applications for solar on rooftops in the local area are more readily approved and current 'shovel ready' renewables projects are connected.<br>A significant increase in local generation from PV supports improved flexibility in the local grid, and at household level, supporting increased uptake of heat pumps and EVs.<br>Large organisations are on renewable electricity tariffs and starting to roll out plans for generating their own renewable energy. |  |
+| Implementation | Responsible bodies/person for implementation | The overall responsible body or bodies would be identified as this work progresses. At present, several organisations are playing a role |
+|  | Action scale & addressed entities | Citywide |
+|  | Involved stakeholders | To be confirmed as this action is developed |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation including timelines and potential milestones would follow as the action is developed |
+| Impact & cost | Generated renewable energy (if applicable) | 520,074,511 kWh in 2030 |
+|  | Removed/substituted energy, volume, or fuel type | 520,074,511 kWh of grid supplied energy in 2030 |
+|  | GHG emissions reduction estimate (total) per emission source sector | Abatement of 14,736 tonnes CO2e in 2030 |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable |
+|  | Total costs and costs by CO2e unit | See investment plan |
+| B-2.2: Individual action outlines |  |  |
+| Action outline | Action name | 8 Deliver programme to install or encourage/incentivise installation of heat pumps in homes in the city |
+|  | Action type | Infrastructure |
+|  | Action description | Delivery: Plan and deliver a programme of heat pump installation in social housing and low-income private homes (BCC social housing and that of other social housing providers) including an associated programme of resident engagement.<br>Trial community scale heat pump solutions including an associated programme of community engagement<br>Engagement: Put in place a communications campaign on heat pumps with targeted messaging for different segments of homeowners, tenants and landlords<br>Finance/Funding: Assess outcomes of Net Zero Co-Innovation Investment Lab, Mission Net Zero and South West Net Zero Hub Able to Pay Loan Offer and set up appropriate finance instruments. Provide access to electricity tariffs for heat pump customers with reduced price electricity. |  |
+| Reference to impact pathway | Field of action | Energy Systems: Heat |
+|  | Systemic lever | Governance & Policy, Finance & Funding, Tech & Infrastructure, Democracy & Participation and Social Innovation |
+|  | Outcome (according to module B-1.1) | Social housing providers have trialled heat pumps in their housing stock.<br>Community scale heat pumps are working, inspiring uptake in other communities.<br>Normalisation of heat pump technology.<br>Sufficient grant funding and finance available to private homeowners who need it. |  |
+|  |  | Heat pump installations increased exponentially from 2024 across both social housing and private homes. |
+| Implementation | Responsible bodies/person for implementation | To be confirmed as this action is developed |
+|  | Action scale & addressed entities | Citywide scale focusing on homes in the city |
+|  | Involved stakeholders | To be confirmed |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation including timelines and potential milestones would follow as the action is developed |
+| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+|  | Removed/substituted energy, volume, or fuel type | Over 75% Bristol's homes are heated by gas boilers, and the majority of the remainder by direct electric heating. Therefore, heat pumps will predominantly be replacing gas boilers, but will replace direct electric in some cases. |
+|  | GHG emissions reduction estimate (total) per emission source sector | Abatement of 143,140 tonnes CO2e in 2030 |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable |
+|  | Total costs and costs by CO2e unit | See investment plan |
+| B-2.2: Individual action outlines |  |  |
+| Action outline | Action name | 9 Implement a programme to install or encourage/incentivise installation of heat pumps in non-domestic buildings in the city |
+|  | Action type | Infrastructure |
+|  | Action description | Delivery: Plan and deliver programme of heat pump installation in Bristol City Council buildings, buildings of large asset owners in the city (e.g. universities and hospitals) and community buildings.<br>Engagement: Build understanding of the transition to heat pumps in non-domestic buildings.<br>Provide advice on heat pumps for non-domestic building owners/managers<br>Funding/Finance: Provide access to funding, finance and favourable tariffs for non-domestic building owners and managers |  |
+|  | Field of action | Energy Systems: Heat |
+| Reference to impact pathway | Systemic lever | Governance & Policy, Finance & Funding, Tech & Infrastructure, Social Innovation and Democracy & Participation |
+|  | Outcome (according to module B-1.1) | Plan delivery in Bristol City Council buildings, buildings of large asset owners and community buildings is well underway. Improved awareness of heat pumps as a solution for decarbonising non-domestic buildings. Sufficient grant funding and finance available for non-domestic building owners/managers who need it. |
+| Implementation | Responsible bodies/person for implementation | As a group the Transition Team will look at this action and suggest an appropriate group of responsible organisations |
+|  | Action scale & addressed entities | Citywide targeting non-domestic buildings |
+|  | Involved stakeholders | To be confirmed as this action is developed |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation including resources, timelines and potential milestones would follow as the action is developed |
+| Impact & cost | Generated renewable energy (if applicable) | The majority of non-domestic buildings are heated by gas boilers and the remainder by direct electric heating. Therefore, heat pumps will predominantly be replacing gas boilers, but will replace direct electric in some cases. |
+|  | Removed/substituted energy, volume, or fuel type | 80,176,278.6 kWh shifted from fossil fuel heating sources in 2030 |
+|  | GHG emissions reduction estimate (total) per emission source sector | Abatement of 27,650 tonnes CO2e in 2030 |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable |
+|  | Total costs and costs by CO2e unit | See investment plan |
+| B-2.2: Individual action outlines |  |  |
+| Action outline | Action name | 10 Expand the network and connect more buildings to the heat network |
+|  | Action type | Infrastructure |
+|  | Action description | Delivery: Accelerate pace of heat network delivery and connection, including increasing supply of zero carbon heat, in particular large existing and new sources of waste heat. Secure funding and investment to extend the heat network Streamline Bristol City Council processes (e.g. planning, legal, highways) Enforce Heat Network Zoning policy when it comes into force [requiring large non-domestic |
+|  |  | buildings and communally heated residential buildings within a heat network zone to connect to a heat network]. Put Zoning Coordinator in place.<br>**Engagement:** Develop approach to consultation on heat networks<br>Put in place a communications campaign on heat networks with targeted messaging for building owners, users and residents.<br>Provide advice on heat networks for building owners, users and residents.<br>**Finance/Funding:** Provide access to funding and finance for heat network connections |  |
+| Reference to impact pathway | Field of action | Energy Systems: Heat |
+|  | Systemic lever | Tech & Infrastructure, Governance & Policy, Finance & Funding, Social Innovation and Democracy & Participation |
+|  | Outcome (according to module B-1.1) | Additional heat networks (beyond original Vattenfall plans) are in construction. Existing buildings are connecting to the heat network as a result of zoning policy. Normalisation of heat networks. Sufficient grant funding and finance available to ensure strategically important buildings can connect to the heat network |
+| Implementation | Responsible bodies/person for implementation | Vattenfall and Bristol City Council |
+|  | Action scale & addressed entities | Areas of the city where heat networks are the lowest cost low carbon solution, predominantly city centre and some pockets outside the centre. Connections to non-domestic and domestic buildings |
+|  | Involved stakeholders | To be confirmed as this action is developed |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation would follow as the action is developed |
+| Impact & cost | Generated renewable energy (if applicable) | Energy centres will predominantly be large-scale heat pumps and direct electric boilers for peak demand |
+|  | Removed/substituted energy, volume, or fuel type | Gas is the main fuel that will be replaces. |
+|  | GHG emissions reduction estimate (total) per emission source sector | Abatement of 331,720 tonnes CO2e in 2030 |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable |
+|  | Total costs and costs by CO2e unit | See investment plan |
+| B-2.2: Individual action outlines |  |  |
+| Action outline | Action name | 11 Reduce carbon intensity of the existing gas network |
+|  | Action type | Infrastructure |
+|  | Action description | Reduce carbon intensity of gas by increasing the proportion of biogas and, pending government policy, blending up to 20% hydrogen into the gas supply. |
+| Reference to impact pathway | Field of action | Energy Systems: Heat |
+|  | Systemic lever | Tech & Infrastructure and Governance & Policy |
+|  | Outcome (according to module B-1.1) | Ability (or otherwise) to blend hydrogen into the gas supply has been established |
+| Implementation | Responsible bodies/person for implementation | The overall responsible body will be identified as this work progresses |
+|  | Action scale & addressed entities | Citywide |
+|  | Involved stakeholders | To be confirmed as this action is developed |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation would follow as the action is developed |
+| Impact & cost | Generated renewable energy (if applicable) | No renewable energy generated |
+|  | Removed/substituted energy, volume, or fuel type | Fossil gas replaced with biogas or hydrogen |
+|  | GHG emissions reduction estimate (total) per emission source sector | Not yet known |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable |
+|  | Total costs and costs by CO2e unit | Not yet known |
+| B-2.2: Individual action outlines |  |  |
+| Action outline | Action name | 12 Inclusive training and skills programme for heat pump installation and heat network construction |
+|  | Action type | Supply chain development via training and skills development |
+|  | Action description | Plan and deliver a training and skills programme for retrofit<br>Deliver large scale training and skills programme for domestic and non-domestic retrofit – in all parts of the system including building works, planning, financing etc.<br>Deliver targeted support to the supply chain development |  |
+| Reference to impact pathway | Field of action | Energy Systems: Heat |
+|  | Systemic lever | Learning & Capabilities and Finance & Funding |
+|  | Outcome (according to module B-1.1) | Increase in skilled local supply chain. Clear pathway from training into jobs |
+| Implementation | Responsible bodies/person for implementation | The overall responsible body or bodies would be identified as this work progresses. At present, several organisations are playing a role |
+|  | Action scale & addressed entities | Citywide |
+|  | Involved stakeholders | To be confirmed as this action is developed |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation would follow as the action is developed |
+| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+|  | Removed/substituted energy, volume, or fuel type | Not applicable |
+|  | GHG emissions reduction estimate (total) per emission source sector | Not applicable |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable |
+|  | Total costs and costs by CO2e unit | See investment plan |
+| B-2.2: Individual action outlines |  |  |
+| Impact Pathway 3: Built Environment |  |  |
+| Action outline | Action name | 13 Implement citywide programme for housing retrofit to reduce demand and integrate renewable generation |
+|  | Action type | Infrastructure |
+|  | Action description | Delivery: Plan and deliver a programme of retrofit (including renewable energy) in social housing (BCC social housing and that of other social housing providers) including an associated programme of resident engagement.<br>Trial street retrofit with blended finance building on the Net Zero Neighbourhoods model including significant community engagement related to neighbourhood decarbonisation activities (e.g. External Wall Insulation on a whole terrace).<br>Engage, communicate and provide advice to tenants/homeowners/landlords on housing |  |
+|  |  | retrofit<br>**Engagement:**<br>Provide advice and casework on energy, fuel poverty, damp and mould for households.<br>Put in place a communications campaign on housing retrofit with targeted messaging for different segments of homeowners, tenants and landlords<br>**Funding, Finance**<br>Provide access to funding, finance for retrofit for homeowners and landlords |  |
+| Reference to impact pathway | Field of action | Built Environment |
+|  | Systemic lever | Governance & Policy, Finance & Funding, Tech & Infrastructure, Democracy & Participation and Social Innovation |
+|  | Outcome (according to module B-1.1) | All social housing and low-income homes are retrofitted and achieve EPC C plus rating.<br>Street retrofit pilot completed and more communities are inspired to do the same.<br>Number of private homes with retrofit plans is increasing exponentially.<br>Sufficient grant funding and finance available for private homeowners who need it. |  |
+| Implementation | Responsible bodies/person for implementation | As a group the Transition Team could look at this action and suggest an appropriate group of responsible organisations |
+|  | Action scale & addressed entities | Citywide scale targeting all homes |
+|  | Involved stakeholders | To be confirmed as this action is developed |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation including resources, timelines and potential milestones would follow as the action is developed |
+| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+|  | Removed/substituted energy, volume, or fuel type | Reduced energy demand leads to reduction in use of gas boilers and electricity generated by fossil fuel sources. |
+|  | GHG emissions reduction estimate (total) per emission source sector | Abatement of 10,660 tonnes CO2e in 2030 |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable |
+|  | Total costs and costs by CO2e unit | See investment plan |
+
 B-2.2: Individual action outlines
 
-|  Impact Pathway 2: Energy Systems  |   |   |
+| Action outline | Action name | 14 Implement a city-wide programme for non-domestic building retrofit to reduce demand and integrate renewable generation |
 | --- | --- | --- |
-|  Action outline | Action name | 6 Reinforce local energy network and manage smartly  |
-|   |  Action type | Infrastructure  |
-|   |  Action description | Deliver a number of projects to help decarbonise the local grid and provide improved flexibility.
-Explore flexibility and smart solutions (technological); NGED procuring improved flexibility to meet local demand; developing more renewable and dynamic tariffs.
-Reinforce the network e.g. at Iron Acton grid supply point.  |
-|  Reference to impact pathway | Field of action | Energy Systems: Electricity  |
-|   |  Systemic lever | Social Innovation; Tech & Infrastructure  |
-|   |  Outcome (according to module B-1.1) | Increased availability and uptake of renewable and dynamic tariffs. Greater use of flexibility within Bristol's electricity network. Offsetting the need for network reinforcement and allowing the growth of low carbon technologies.
-Delivery of Network Development Plan (informed by DFES) starts. The network can quickly and easily accommodate new low carbon technologies to connect (e.g. heat pumps and electric vehicle charge points).  |
-|  Implementation | Responsible bodies/person for implementation | National Grid Electricity Distribution (NGED) is the main responsible body  |
-|   |  Action scale & addressed entities | Citywide across the electricity distribution network, including domestic and non-domestic customers  |
-|   |  Involved stakeholders | NGED and their key stakeholders  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation including timelines would be developed by the stakeholders as the action is developed  |
-|  Impact & cost | Generated renewable energy (if applicable) | This action is about maximising energy use when it is being produced by renewable sources so that renewable energy is not wasted, rather than installing additional renewable energy generation  |
-|   |  Removed/substituted energy, volume, or fuel type | Through shifting energy use to times of renewable generation, the demand for electricity generated by burning fossil fuels is reduced  |
-
-Page | 63
-Page | 64
-
-|  GHG emissions reduction estimate (total) per emission source sector | None expected – enabling condition  |
-| --- | --- |
-|  GHG emissions compensated (natural or technological sinks) | Not applicable  |
-|  Total costs and costs by CO2e unit | See investment plan  |
-|  B-2.2: Individual action outlines  |   |   |
+|  | Action type | Infrastructure |
+|  | Action description | Delivery: Plan and deliver non-domestic retrofit programme in BCC-owned buildings, in buildings owned by large asset owners (e.g. university and hospital campuses) and community buildings.<br>Trial a business retrofit project by sector or location (e.g. business park).<br>Engagement:<br>Research to understand archetypes of properties, barriers to retrofit and incentives required.<br>Put in place a communications campaign and provide advice on building retrofit for non-domestic building owners/managers/users.<br>Finance/Funding:<br>Research to understand different business model options for different ownership models of non-domestic buildings |  |
+| Reference to impact pathway | Field of action | Built Environment |
+|  | Systemic Lever | Governance & Policy, Finance & Funding, Tech & Infrastructure, Democracy & Participation and Social Innovation |
+|  | Outcome (according to module B-1.1) | Plan delivery for BCC buildings and buildings owned by large asset owners is well underway.<br>Place/sector based-project has been demonstrated and other are inspired to do the same.<br>Improved awareness of retrofit solutions for non-domestic buildings.<br>Sufficient grant funding and finance available for non-domestic building owners/managers who need it. |  |
+| Implementation | Responsible bodies/person for implementation | As a group the Transition Team could look at this action and suggest an appropriate group of responsible organisations. At present, several organisations are playing a role. The Transition Team could discuss the value of coordinating work across asset owners |
+|  | Action scale & addressed entities | Citywide scale targeting non-domestic buildings |
+|  | Involved stakeholders | To be confirmed as this action is developed |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation would follow as the action is developed |
+| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+|  | Removed/substituted energy, volume, or fuel type | Reduced energy demand leads to reduction in use of gas boilers and electricity generated by fossil fuel sources. |
+|  | GHG emissions reduction estimate (total) per emission source sector | Abatement of 1,810 tonnes CO2e in 2030 |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable |
+|  | Total costs and costs by CO2e unit | See investment plan |
+| B-2.2: Individual action outlines |  |  |
 | --- | --- | --- |
-|  Action outline | Action name | 7 Implement programme to maximise renewable energy generation (especially solar)  |
-|   |  Action type | Infrastructure  |
-|   |  Action description | Delivery
-Maximise potential to generate energy in the city from renewables with an emphasis on solar. Programme will need to first create enabling conditions. Projects include: creating a Local Area Energy Plan; reviewing the application of new Local Plan/planning conditions to identify any barriers to delivery; maximising renewable energy generation and storage on all suitable buildings and land.
-Create a Regional Climate Investment Plan and review the application of new Local Plan to identify any barriers to delivery
-Engage, communicate, and provide advice to the private housing sector (tenants/homeowners/landlords) on solar PV and develop initiatives to facilitate market-based delivery, e.g. group buying schemes
-Engage large organisations to make commitments to buy renewable electricity, create innovative shared buying solutions and generate their own renewable energy  |
-|  Reference to impact pathway | Field of action | Energy Systems: Electricity  |
-|   |  Systemic lever | Governance & Policy; Tech & Infrastructure; Social Innovation; Democracy & Participation; Finance and Funding  |
-|   |  Outcome (according to module B-1.1) | Applications for solar on rooftops in the local area are more readily approved and current 'shovel ready' renewables projects are connected.
-A significant increase in local generation from PV supports improved flexibility in the local grid, and at household level, supporting increased uptake of heat pumps and EVs.
-Large organisations are on renewable electricity tariffs and starting to roll out plans for generating their own renewable energy.  |
-|  Implementation | Responsible bodies/person for implementation | The overall responsible body or bodies would be identified as this work progresses. At present, several organisations are playing a role  |
-|   |  Action scale & addressed entities | Citywide  |
-|   |  Involved stakeholders | To be confirmed as this action is developed  |
-Page | 65
-
-|   | Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation including timelines and potential milestones would follow as the action is developed  |
-| --- | --- | --- |
-|  Impact & cost | Generated renewable energy (if applicable) | 520,074,511 kWh in 2030  |
-|   |  Removed/substituted energy, volume, or fuel type | 520,074,511 kWh of grid supplied energy in 2030  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | Abatement of 14,736 tonnes CO2e in 2030  |
-|   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
-|   |  Total costs and costs by CO2e unit | See investment plan  |
-|  B-2.2: Individual action outlines  |   |   |
-| --- | --- | --- |
-|  Action outline | Action name | 8 Deliver programme to install or encourage/incentivise installation of heat pumps in homes in the city  |
-|   |  Action type | Infrastructure  |
-|   |  Action description | Delivery: Plan and deliver a programme of heat pump installation in social housing and low-income private homes (BCC social housing and that of other social housing providers) including an associated programme of resident engagement.
-Trial community scale heat pump solutions including an associated programme of community engagement
-Engagement: Put in place a communications campaign on heat pumps with targeted messaging for different segments of homeowners, tenants and landlords
-Finance/Funding: Assess outcomes of Net Zero Co-Innovation Investment Lab, Mission Net Zero and South West Net Zero Hub Able to Pay Loan Offer and set up appropriate finance instruments. Provide access to electricity tariffs for heat pump customers with reduced price electricity.  |
-|  Reference to impact pathway | Field of action | Energy Systems: Heat  |
-|   |  Systemic lever | Governance & Policy, Finance & Funding, Tech & Infrastructure, Democracy & Participation and Social Innovation  |
-|   |  Outcome (according to module B-1.1) | Social housing providers have trialled heat pumps in their housing stock.
-Community scale heat pumps are working, inspiring uptake in other communities.
-Normalisation of heat pump technology.
-Sufficient grant funding and finance available to private homeowners who need it.  |
-Page | 66
-
-|   |  | Heat pump installations increased exponentially from 2024 across both social housing and private homes.  |
-| --- | --- | --- |
-|  Implementation | Responsible bodies/person for implementation | To be confirmed as this action is developed  |
-|   |  Action scale & addressed entities | Citywide scale focusing on homes in the city  |
-|   |  Involved stakeholders | To be confirmed  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation including timelines and potential milestones would follow as the action is developed  |
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-|   |  Removed/substituted energy, volume, or fuel type | Over 75% Bristol's homes are heated by gas boilers, and the majority of the remainder by direct electric heating. Therefore, heat pumps will predominantly be replacing gas boilers, but will replace direct electric in some cases.  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | Abatement of 143,140 tonnes CO2e in 2030  |
-|   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
-|   |  Total costs and costs by CO2e unit | See investment plan  |
-|  B-2.2: Individual action outlines  |   |   |
-| --- | --- | --- |
-|  Action outline | Action name | 9 Implement a programme to install or encourage/incentivise installation of heat pumps in non-domestic buildings in the city  |
-|   |  Action type | Infrastructure  |
-|   |  Action description | Delivery: Plan and deliver programme of heat pump installation in Bristol City Council buildings, buildings of large asset owners in the city (e.g. universities and hospitals) and community buildings.
-Engagement: Build understanding of the transition to heat pumps in non-domestic buildings.
-Provide advice on heat pumps for non-domestic building owners/managers
-Funding/Finance: Provide access to funding, finance and favourable tariffs for non-domestic building owners and managers  |
-|   | Field of action | Energy Systems: Heat  |
-Page | 67
-
-|  Reference to impact pathway | Systemic lever | Governance & Policy, Finance & Funding, Tech & Infrastructure, Social Innovation and Democracy & Participation  |
-| --- | --- | --- |
-|   |  Outcome (according to module B-1.1) | Plan delivery in Bristol City Council buildings, buildings of large asset owners and community buildings is well underway. Improved awareness of heat pumps as a solution for decarbonising non-domestic buildings. Sufficient grant funding and finance available for non-domestic building owners/managers who need it.  |
-|  Implementation | Responsible bodies/person for implementation | As a group the Transition Team will look at this action and suggest an appropriate group of responsible organisations  |
-|   |  Action scale & addressed entities | Citywide targeting non-domestic buildings  |
-|   |  Involved stakeholders | To be confirmed as this action is developed  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation including resources, timelines and potential milestones would follow as the action is developed  |
-|  Impact & cost | Generated renewable energy (if applicable) | The majority of non-domestic buildings are heated by gas boilers and the remainder by direct electric heating. Therefore, heat pumps will predominantly be replacing gas boilers, but will replace direct electric in some cases.  |
-|   |  Removed/substituted energy, volume, or fuel type | 80,176,278.6 kWh shifted from fossil fuel heating sources in 2030  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | Abatement of 27,650 tonnes CO2e in 2030  |
-|   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
-|   |  Total costs and costs by CO2e unit | See investment plan  |
-|  B-2.2: Individual action outlines  |   |   |
-| --- | --- | --- |
-|  Action outline | Action name | 10 Expand the network and connect more buildings to the heat network  |
-|   |  Action type | Infrastructure  |
-|   |  Action description | Delivery: Accelerate pace of heat network delivery and connection, including increasing supply of zero carbon heat, in particular large existing and new sources of waste heat. Secure funding and investment to extend the heat network Streamline Bristol City Council processes (e.g. planning, legal, highways) Enforce Heat Network Zoning policy when it comes into force [requiring large non-domestic  |
-|   |  | buildings and communally heated residential buildings within a heat network zone to connect to a heat network]. Put Zoning Coordinator in place.
-**Engagement:** Develop approach to consultation on heat networks
-Put in place a communications campaign on heat networks with targeted messaging for building owners, users and residents.
-Provide advice on heat networks for building owners, users and residents.
-**Finance/Funding:** Provide access to funding and finance for heat network connections  |
-| --- | --- | --- |
-|  Reference to impact pathway | Field of action | Energy Systems: Heat  |
-|   |  Systemic lever | Tech & Infrastructure, Governance & Policy, Finance & Funding, Social Innovation and Democracy & Participation  |
-|   |  Outcome (according to module B-1.1) | Additional heat networks (beyond original Vattenfall plans) are in construction. Existing buildings are connecting to the heat network as a result of zoning policy. Normalisation of heat networks. Sufficient grant funding and finance available to ensure strategically important buildings can connect to the heat network  |
-|  Implementation | Responsible bodies/person for implementation | Vattenfall and Bristol City Council  |
-|   |  Action scale & addressed entities | Areas of the city where heat networks are the lowest cost low carbon solution, predominantly city centre and some pockets outside the centre. Connections to non-domestic and domestic buildings  |
-|   |  Involved stakeholders | To be confirmed as this action is developed  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation would follow as the action is developed  |
-|  Impact & cost | Generated renewable energy (if applicable) | Energy centres will predominantly be large-scale heat pumps and direct electric boilers for peak demand  |
-|   |  Removed/substituted energy, volume, or fuel type | Gas is the main fuel that will be replaces.  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | Abatement of 331,720 tonnes CO2e in 2030  |
-|   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
-|   |  Total costs and costs by CO2e unit | See investment plan  |
-
-Page | 68
-Page | 69
-
-|  B-2.2: Individual action outlines  |   |   |
-| --- | --- | --- |
-|  Action outline | Action name | 11 Reduce carbon intensity of the existing gas network  |
-|   |  Action type | Infrastructure  |
-|   |  Action description | Reduce carbon intensity of gas by increasing the proportion of biogas and, pending government policy, blending up to 20% hydrogen into the gas supply.  |
-|  Reference to impact pathway | Field of action | Energy Systems: Heat  |
-|   |  Systemic lever | Tech & Infrastructure and Governance & Policy  |
-|   |  Outcome (according to module B-1.1) | Ability (or otherwise) to blend hydrogen into the gas supply has been established  |
-|  Implementation | Responsible bodies/person for implementation | The overall responsible body will be identified as this work progresses  |
-|   |  Action scale & addressed entities | Citywide  |
-|   |  Involved stakeholders | To be confirmed as this action is developed  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation would follow as the action is developed  |
-|  Impact & cost | Generated renewable energy (if applicable) | No renewable energy generated  |
-|   |  Removed/substituted energy, volume, or fuel type | Fossil gas replaced with biogas or hydrogen  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | Not yet known  |
-|   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
-|   |  Total costs and costs by CO2e unit | Not yet known  |
-|  B-2.2: Individual action outlines  |   |   |
-| --- | --- | --- |
-|  Action outline | Action name | 12 Inclusive training and skills programme for heat pump installation and heat network construction  |
-|   | Action type | Supply chain development via training and skills development  |
-|   | Action description | Plan and deliver a training and skills programme for retrofit
-Deliver large scale training and skills programme for domestic and non-domestic retrofit – in all parts of the system including building works, planning, financing etc.
-Deliver targeted support to the supply chain development  |
-Page | 70
-
-|  Reference to impact pathway | Field of action | Energy Systems: Heat  |
-| --- | --- | --- |
-|   | Systemic lever | Learning & Capabilities and Finance & Funding  |
-|   | Outcome (according to module B-1.1) | Increase in skilled local supply chain. Clear pathway from training into jobs  |
-|  Implementation | Responsible bodies/person for implementation | The overall responsible body or bodies would be identified as this work progresses. At present, several organisations are playing a role  |
-|   | Action scale & addressed entities | Citywide  |
-|   | Involved stakeholders | To be confirmed as this action is developed  |
-|   | Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation would follow as the action is developed  |
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-|   | Removed/substituted energy, volume, or fuel type | Not applicable  |
-|   | GHG emissions reduction estimate (total) per emission source sector | Not applicable  |
-|   | GHG emissions compensated (natural or technological sinks) | Not applicable  |
-|   | Total costs and costs by CO2e unit | See investment plan  |
-|  B-2.2: Individual action outlines  |   |   |
-| --- | --- | --- |
-|  Impact Pathway 3: Built Environment  |   |   |
-|  Action outline | Action name | 13 Implement citywide programme for housing retrofit to reduce demand and integrate renewable generation  |
-|   |  Action type | Infrastructure  |
-|   |  Action description | Delivery: Plan and deliver a programme of retrofit (including renewable energy) in social housing (BCC social housing and that of other social housing providers) including an associated programme of resident engagement.
-Trial street retrofit with blended finance building on the Net Zero Neighbourhoods model including significant community engagement related to neighbourhood decarbonisation activities (e.g. External Wall Insulation on a whole terrace).
-Engage, communicate and provide advice to tenants/homeowners/landlords on housing  |
-|   |  | retrofit
-**Engagement:**
-Provide advice and casework on energy, fuel poverty, damp and mould for households.
-Put in place a communications campaign on housing retrofit with targeted messaging for different segments of homeowners, tenants and landlords
-**Funding, Finance**
-Provide access to funding, finance for retrofit for homeowners and landlords  |
-| --- | --- | --- |
-|  Reference to impact pathway | Field of action | Built Environment  |
-|   |  Systemic lever | Governance & Policy, Finance & Funding, Tech & Infrastructure, Democracy & Participation and Social Innovation  |
-|   |  Outcome (according to module B-1.1) | All social housing and low-income homes are retrofitted and achieve EPC C plus rating.
-Street retrofit pilot completed and more communities are inspired to do the same.
-Number of private homes with retrofit plans is increasing exponentially.
-Sufficient grant funding and finance available for private homeowners who need it.  |
-|  Implementation | Responsible bodies/person for implementation | As a group the Transition Team could look at this action and suggest an appropriate group of responsible organisations  |
-|   |  Action scale & addressed entities | Citywide scale targeting all homes  |
-|   |  Involved stakeholders | To be confirmed as this action is developed  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation including resources, timelines and potential milestones would follow as the action is developed  |
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-|   |  Removed/substituted energy, volume, or fuel type | Reduced energy demand leads to reduction in use of gas boilers and electricity generated by fossil fuel sources.  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | Abatement of 10,660 tonnes CO2e in 2030  |
-|   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
-|   |  Total costs and costs by CO2e unit | See investment plan  |
-
-Page | 71
-B-2.2: Individual action outlines
-
-|  Action outline | Action name | 14 Implement a city-wide programme for non-domestic building retrofit to reduce demand and integrate renewable generation  |
-| --- | --- | --- |
-|   |  Action type | Infrastructure  |
-|   |  Action description | Delivery: Plan and deliver non-domestic retrofit programme in BCC-owned buildings, in buildings owned by large asset owners (e.g. university and hospital campuses) and community buildings.
-Trial a business retrofit project by sector or location (e.g. business park).
-Engagement:
-Research to understand archetypes of properties, barriers to retrofit and incentives required.
-Put in place a communications campaign and provide advice on building retrofit for non-domestic building owners/managers/users.
-Finance/Funding:
-Research to understand different business model options for different ownership models of non-domestic buildings  |
-|  Reference to impact pathway | Field of action | Built Environment  |
-|   |  Systemic Lever | Governance & Policy, Finance & Funding, Tech & Infrastructure, Democracy & Participation and Social Innovation  |
-|   |  Outcome (according to module B-1.1) | Plan delivery for BCC buildings and buildings owned by large asset owners is well underway.
-Place/sector based-project has been demonstrated and other are inspired to do the same.
-Improved awareness of retrofit solutions for non-domestic buildings.
-Sufficient grant funding and finance available for non-domestic building owners/managers who need it.  |
-|  Implementation | Responsible bodies/person for implementation | As a group the Transition Team could look at this action and suggest an appropriate group of responsible organisations. At present, several organisations are playing a role. The Transition Team could discuss the value of coordinating work across asset owners  |
-|   |  Action scale & addressed entities | Citywide scale targeting non-domestic buildings  |
-|   |  Involved stakeholders | To be confirmed as this action is developed  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation would follow as the action is developed  |
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-
-Page | 72
-Page | 73
-
-|   | Removed/substituted energy, volume, or fuel type | Reduced energy demand leads to reduction in use of gas boilers and electricity generated by fossil fuel sources.  |
-| --- | --- | --- |
-|   | GHG emissions reduction estimate (total) per emission source sector | Abatement of 1,810 tonnes CO2e in 2030  |
-|   | GHG emissions compensated (natural or technological sinks) | Not applicable  |
-|   | Total costs and costs by CO2e unit | See investment plan  |
-|  B-2.2: Individual action outlines  |   |   |
-| --- | --- | --- |
-|  Action outline | Action name | 15 Implement an inclusive training and skills programme for retrofit and renewable energy generation  |
-|   |  Action type | Supply chain development via training and skills development  |
-|   |  Action description | Deliver large scale training and skills programme for domestic and non-domestic retrofit – in all parts of the system including building works, planning, financing etc.
-Deliver targeted support to the supply chain development  |
-|  Reference to impact pathway | Field of action | Built Environment  |
-|   |  Systemic lever | Learning & Capabilities and Finance & Funding  |
-|   |  Outcome (according to module B-1.1) | Increase in skilled local supply chain and increased participation in green jobs. Clear pathway from training into jobs.  |
-|  Implementation | Responsible bodies/person for implementation | The overall responsible body or bodies would be identified as this work progresses. At present, several organisations are playing a role  |
-|   |  Action scale & addressed entities | Citywide  |
-|   |  Involved stakeholders | To be confirmed as this action is developed  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation would follow as the action is developed  |
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-|   |  Removed/substituted energy, volume, or fuel type | Not applicable  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | Not applicable  |
-|   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
-B-2.2: Individual action outlines
-
-|  Impact Pathway 4: Mobility and Transport  |   |   |
-| --- | --- | --- |
-|  Action outline | Action name | 16 Implement programme to significantly reduce car miles  |
-|   |  Action type | Infrastructure  |
-|   |  Action description | Delivery: Deliver a range of projects aimed to reduce car miles by 40%, significantly reducing congestion across the city, and creating the conditions and financial support for mass shift to public and active travel modes including:
-Demand management measures including a workplace parking levy.
-Expansion of existing mobility as a service offers across the city, supporting single ticketing for multi-modal travel and expanding electric car clubs and schemes such as e-scooter and e-bike hire.
-Engagement with citizens and businesses on the design of changes to the transport systems which helps to address existing inequalities of access to mobility
-Across all transport actions/modes, support and enable citizens and small business to make changes, with advice, support, training, discount schemes, loan schemes etc drawing upon the ideas in the Community Climate Action Plans.  |
-|  Reference to impact pathway | Field of action | Mobility & Transport  |
-|   |  Systemic lever | Technology & infrastructure; governance & policy; democracy & participation; finance & funding and social innovation  |
-|   |  Outcome (according to module B-1.1) | A 40% reduction in car miles reduces congestion and allows for increased public transport measures. Door-to-door journeys by multiple modes become more feasible and desirable. Shift to replacing private ownership with mobility as a service. Existing and new services are informed by citizen and business priorities. Connectivity across the city becomes more equal, providing improved and more equitable access to employment and leisure opportunities. Community-led local transport initiatives are realised across the city, improving connectivity and ensuring that other transport interventions proposed do not create new barriers for marginalised groups.  |
-|  Implementation | Responsible bodies/person for implementation | West of England Combined Authority and Bristol City Council  |
-|   |  Action scale & addressed entities | Citywide scale  |
-|   |  Involved stakeholders | To be confirmed  |
-
-Page | 74
-Page | 75
-
-|   | Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation would follow as the action is developed  |
-| --- | --- | --- |
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-|   |  Removed/substituted energy, volume, or fuel type | Primarily reducing petrol and diesel consumption.  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | Abatement of 160,970 tonnes CO2e in 2030  |
-|   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
-|   |  Total costs and costs by CO2e unit | See investment plan  |
-|  B-2.2: Individual action outlines  |   |   |
-| --- | --- | --- |
-|  Action outline | Action name | 17 Implement programme to encourage modal shift to active travel  |
-|   |  Action type | Infrastructure and public engagement  |
-|   |  Action description | Delivery: Deliver improvements to walking and cycling routes and infrastructure so that public enjoyment and safety when travelling by active modes is significantly improved.
-Significant expansion of the City Region Sustainable Transport Settlement programme of segregated cycling infrastructure and make public realm improvements for walking.
-Expansion of the Liveable Neighbourhoods schemes to all central residential neighborhoods.
-Engagement: Engage with citizens on promotion of safe active and public travel and help address inequalities in access to mobility.  |
-|  Reference to impact pathway | Field of action | Mobility & Transport  |
-|   |  Systemic lever | Technology & Infrastructure, Governance & Policy, Democracy & Participation and Social Innovation  |
-|   |  Outcome (according to module B-1.1) | Active travel rates significantly increase across the city, particularly amongst groups with lower-than-average participation, as citizens feel more confident, safe and welcome to move about the city by walking, cycling and wheeling.
-Neighbourhoods feel and are measurably safer, healthier and more inclusive, where everyone can breathe clean air, access better quality green spaces and safe spaces to play, increasing social cohesion.  |
-|  Implementation | Responsible bodies/person for implementation | To be agreed  |
-|   |  Action scale & addressed entities | Citywide scale, focusing on areas of greatest inequality  |
-Page | 76
-
-|   | Involved stakeholders | Citizens, Bristol City Council, West of England Combined Authority and others to be confirmed  |
-| --- | --- | --- |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation would follow as the action is developed  |
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-|   |  Removed/substituted energy, volume, or fuel type | Primarily displacing petrol consumption.  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | Abatement of 56,520 tonnes CO2e in 2030  |
-|   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
-|   |  Total costs and costs by CO2e unit | See investment plan  |
-|  B-2.2: Individual action outlines  |   |   |
-| --- | --- | --- |
-|  Action outline | Action name | 18 Implement programme to encourage modal shift to public transport  |
-|   |  Action type | Infrastructure and public engagement  |
-|   |  Action description | Delivery: Significantly improve bus service routes, frequency and reliability so that people have a realistic alternative to driving.
-Deliver upgrades to existing bus services and establish new routes and more integrated services; in particular addressing existing inequalities in access to mobility.
-Support full electrification of bus fleet.
-Deliver a Rapid Mass Transit system for the benefit of the city.  |
-|  Reference to impact pathway | Field of action | Mobility & Transport  |
-|   |  Systemic lever | Technology and Infrastructure; Governance & Policy  |
-|   |  Outcome (according to module B-1.1) | Model share increases to 40% for public transport. Connectivity across the city is improved, reducing barriers in access to employment opportunities and increasing economic productivity. All bus travel within the city is close to zero carbon, as supply of electricity to the bus fleet is 100% renewable energy. Journeys across the city, both work and leisure, are significantly easier and more affordable than by private vehicles, making this mode of travel the preferred option for the majority.  |
-|  Implementation | Responsible bodies/person for implementation | To be agreed, but would likely be Bristol City Council, West of England Combined Authority and transport providers  |
-|   |  Action scale & addressed entities | Citywide  |
-| B-2.2: Individual action outlines |
-| --- |
-| Action outline | Action name |
-| Action type |
-| Reference to impact pathway | Field of action |
-| Systemic lever |
-| Outcome (according to module B-1.1) |
-| Move to electrification of LGV deliveries is accelerated to 100% by 2030. |
-| Implementation | Responsible bodies/person for implementation |
-| Action scale & addressed entities |
-| Involved stakeholders |
-|  | Comments on implementation – consider mentioning resources, timelines, milestones |
-
-Page | 77
-Page | 78
-
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-| --- | --- | --- |
-|   | Removed/substituted energy, volume, or fuel type | Primarily shifting diesel consumption to low carbon electricity and some hydrogen.  |
-|   | GHG emissions reduction estimate (total) per emission source sector | Abatement of 131,380 tonnes CO2e in 2030  |
-|   | GHG emissions compensated (natural or technological sinks) | Not applicable  |
-|   | Total costs and costs by CO2e unit | See investment plan  |
-|  B-2.2: Individual action outlines  |   |   |
-| --- | --- | --- |
-|  Action outline | Action name | 20 Implement programme to support accelerated shift from internal combustion engine vehicles to battery electric vehicles  |
-|   |  Action type | Infrastructure and public engagement  |
-|   |  Action description | Accelerate market driven uptake of electric vehicles by providing a network of accessible and affordable public charge points to enable households without off-street parking to switch to electric vehicles, ensuring both effective use of the electricity network, city space and ensuring fair access to charge points.
-Deliver expansion of public Electric Vehicle Charging Infrastructure to 950 charge points within the city, including on-street, car park and other solutions.
-Support electricity network upgrades required for fast and ultra rapid public charge points.
-Engage large organisations to convert their fleet cars to electric; including to convert Bristol City Council van fleet (300 vehicles) to electric vehicles with associated charging infrastructure
-Provide access to funding and finance for business vehicles to convert to electric vehicles.  |
-|  Reference to impact pathway | Field of action | Mobility & Transport  |
-|   |  Systemic lever | Technology & Infrastructure; Social Innovation; Learnings & Capabilities and Finance & Funding  |
-|   |  Outcome (according to module B-1.1) | Ownership of EVs becomes viable for citizens without off-street parking at their home address. Fast and ultra-rapid charge points now have coverage across all areas of the city. All fleet vehicles owned by large organisations are now EV, with opportunities to share charging infrastructure.  |
-Page | 79
-
-| B-2.2: Individual action outlines |
-| --- |
-| Impact Pathway 5: Waste and Circular Economy |
+| Action outline | Action name | 15 Implement an inclusive training and skills programme for retrofit and renewable energy generation |
+|  | Action type | Supply chain development via training and skills development |
+|  | Action description | Deliver large scale training and skills programme for domestic and non-domestic retrofit – in all parts of the system including building works, planning, financing etc.<br>Deliver targeted support to the supply chain development |  |
+| Reference to impact pathway | Field of action | Built Environment |
+|  | Systemic lever | Learning & Capabilities and Finance & Funding |
+|  | Outcome (according to module B-1.1) | Increase in skilled local supply chain and increased participation in green jobs. Clear pathway from training into jobs. |
+| Implementation | Responsible bodies/person for implementation | The overall responsible body or bodies would be identified as this work progresses. At present, several organisations are playing a role |
+|  | Action scale & addressed entities | Citywide |
+|  | Involved stakeholders | To be confirmed as this action is developed |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation would follow as the action is developed |
+| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+|  | Removed/substituted energy, volume, or fuel type | Not applicable |
+|  | GHG emissions reduction estimate (total) per emission source sector | Not applicable |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable<br>B-2.2: Individual action outlines |
+| Impact Pathway 4: Mobility and Transport |  |  |
+| Action outline | Action name | 16 Implement programme to significantly reduce car miles |
+|  | Action type | Infrastructure |
+|  | Action description | Delivery: Deliver a range of projects aimed to reduce car miles by 40%, significantly reducing congestion across the city, and creating the conditions and financial support for mass shift to public and active travel modes including:<br>Demand management measures including a workplace parking levy.<br>Expansion of existing mobility as a service offers across the city, supporting single ticketing for multi-modal travel and expanding electric car clubs and schemes such as e-scooter and e-bike hire.<br>Engagement with citizens and businesses on the design of changes to the transport systems which helps to address existing inequalities of access to mobility<br>Across all transport actions/modes, support and enable citizens and small business to make changes, with advice, support, training, discount schemes, loan schemes etc drawing upon the ideas in the Community Climate Action Plans. |  |
+| Reference to impact pathway | Field of action | Mobility & Transport |
+|  | Systemic lever | Technology & infrastructure; governance & policy; democracy & participation; finance & funding and social innovation |
+|  | Outcome (according to module B-1.1) | A 40% reduction in car miles reduces congestion and allows for increased public transport measures. Door-to-door journeys by multiple modes become more feasible and desirable. Shift to replacing private ownership with mobility as a service. Existing and new services are informed by citizen and business priorities. Connectivity across the city becomes more equal, providing improved and more equitable access to employment and leisure opportunities. Community-led local transport initiatives are realised across the city, improving connectivity and ensuring that other transport interventions proposed do not create new barriers for marginalised groups. |
+| Implementation | Responsible bodies/person for implementation | West of England Combined Authority and Bristol City Council |
+|  | Action scale & addressed entities | Citywide scale |
+|  | Involved stakeholders | To be confirmed |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation would follow as the action is developed |
+| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+|  | Removed/substituted energy, volume, or fuel type | Primarily reducing petrol and diesel consumption. |
+|  | GHG emissions reduction estimate (total) per emission source sector | Abatement of 160,970 tonnes CO2e in 2030 |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable |
+|  | Total costs and costs by CO2e unit | See investment plan |
+| B-2.2: Individual action outlines |  |  |
+| Action outline | Action name | 17 Implement programme to encourage modal shift to active travel |
+|  | Action type | Infrastructure and public engagement |
+|  | Action description | Delivery: Deliver improvements to walking and cycling routes and infrastructure so that public enjoyment and safety when travelling by active modes is significantly improved.<br>Significant expansion of the City Region Sustainable Transport Settlement programme of segregated cycling infrastructure and make public realm improvements for walking.<br>Expansion of the Liveable Neighbourhoods schemes to all central residential neighborhoods.<br>Engagement: Engage with citizens on promotion of safe active and public travel and help address inequalities in access to mobility. |  |
+| Reference to impact pathway | Field of action | Mobility & Transport |
+|  | Systemic lever | Technology & Infrastructure, Governance & Policy, Democracy & Participation and Social Innovation |
+|  | Outcome (according to module B-1.1) | Active travel rates significantly increase across the city, particularly amongst groups with lower-than-average participation, as citizens feel more confident, safe and welcome to move about the city by walking, cycling and wheeling.<br>Neighbourhoods feel and are measurably safer, healthier and more inclusive, where everyone can breathe clean air, access better quality green spaces and safe spaces to play, increasing social cohesion. |  |
+| Implementation | Responsible bodies/person for implementation | To be agreed |
+|  | Action scale & addressed entities | Citywide scale, focusing on areas of greatest inequality |
+|  | Involved stakeholders | Citizens, Bristol City Council, West of England Combined Authority and others to be confirmed |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation would follow as the action is developed |
+| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+|  | Removed/substituted energy, volume, or fuel type | Primarily displacing petrol consumption. |
+|  | GHG emissions reduction estimate (total) per emission source sector | Abatement of 56,520 tonnes CO2e in 2030 |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable |
+|  | Total costs and costs by CO2e unit | See investment plan |
+| B-2.2: Individual action outlines |  |  |
+| Action outline | Action name | 18 Implement programme to encourage modal shift to public transport |
+|  | Action type | Infrastructure and public engagement |
+|  | Action description | Delivery: Significantly improve bus service routes, frequency and reliability so that people have a realistic alternative to driving.<br>Deliver upgrades to existing bus services and establish new routes and more integrated services; in particular addressing existing inequalities in access to mobility.<br>Support full electrification of bus fleet.<br>Deliver a Rapid Mass Transit system for the benefit of the city. |  |
+| Reference to impact pathway | Field of action | Mobility & Transport |
+|  | Systemic lever | Technology and Infrastructure; Governance & Policy |
+|  | Outcome (according to module B-1.1) | Model share increases to 40% for public transport. Connectivity across the city is improved, reducing barriers in access to employment opportunities and increasing economic productivity. All bus travel within the city is close to zero carbon, as supply of electricity to the bus fleet is 100% renewable energy. Journeys across the city, both work and leisure, are significantly easier and more affordable than by private vehicles, making this mode of travel the preferred option for the majority. |
+| Implementation | Responsible bodies/person for implementation | To be agreed, but would likely be Bristol City Council, West of England Combined Authority and transport providers |
+|  | Action scale & addressed entities | Citywide<br>B-2.2: Individual action outlines |
+| Action outline | Action name<br>Action type |  |
+| Reference to impact pathway | Field of action<br>Systemic lever<br>Outcome (according to module B-1.1)<br>Move to electrification of LGV deliveries is accelerated to 100% by 2030. |  |
+| Implementation | Responsible bodies/person for implementation<br>Action scale & addressed entities<br>Involved stakeholders |  |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones |  |
+| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+|  | Removed/substituted energy, volume, or fuel type | Primarily shifting diesel consumption to low carbon electricity and some hydrogen. |
+|  | GHG emissions reduction estimate (total) per emission source sector | Abatement of 131,380 tonnes CO2e in 2030 |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable |
+|  | Total costs and costs by CO2e unit | See investment plan |
+| B-2.2: Individual action outlines |  |  |
+| Action outline | Action name | 20 Implement programme to support accelerated shift from internal combustion engine vehicles to battery electric vehicles |
+|  | Action type | Infrastructure and public engagement |
+|  | Action description | Accelerate market driven uptake of electric vehicles by providing a network of accessible and affordable public charge points to enable households without off-street parking to switch to electric vehicles, ensuring both effective use of the electricity network, city space and ensuring fair access to charge points.<br>Deliver expansion of public Electric Vehicle Charging Infrastructure to 950 charge points within the city, including on-street, car park and other solutions.<br>Support electricity network upgrades required for fast and ultra rapid public charge points.<br>Engage large organisations to convert their fleet cars to electric; including to convert Bristol City Council van fleet (300 vehicles) to electric vehicles with associated charging infrastructure<br>Provide access to funding and finance for business vehicles to convert to electric vehicles. |  |
+| Reference to impact pathway | Field of action | Mobility & Transport |
+|  | Systemic lever | Technology & Infrastructure; Social Innovation; Learnings & Capabilities and Finance & Funding |
+|  | Outcome (according to module B-1.1) | Ownership of EVs becomes viable for citizens without off-street parking at their home address. Fast and ultra-rapid charge points now have coverage across all areas of the city. All fleet vehicles owned by large organisations are now EV, with opportunities to share charging infrastructure.<br>B-2.2: Individual action outlines |
+| ---<br>Impact Pathway 5: Waste and Circular Economy |  |  |
 | Action outline | Action name | 21 Implement citywide programme to support increased repair and reuse of retail products |
-| Action type | Infrastructure and public engagement |
-| Action description | Support a growing ecosystem of supply and demand for re-usable and reparable goods.
-Deliver expansion of local household waste and recycling centre's (HWRC's) Re-Use schemes.
-Support expansion of Bristol's burgeoning re-use and repair sector and community owned assets.
-Deliver an inclusive training and skills programme for repair and re-use, focusing on electrical goods, and a range of support for community-based repair and reuse initiatives based on ideas in the Community Climate Action Plans. |
+| Action type | Infrastructure and public engagement |  |
+| Action description | Support a growing ecosystem of supply and demand for re-usable and reparable goods.<br>Deliver expansion of local household waste and recycling centre's (HWRC's) Re-Use schemes.<br>Support expansion of Bristol's burgeoning re-use and repair sector and community owned assets.<br>Deliver an inclusive training and skills programme for repair and re-use, focusing on electrical goods, and a range of support for community-based repair and reuse initiatives based on ideas in the Community Climate Action Plans. |  |
 | Reference to impact pathway | Field of action | Waste & Circular Economy |
-| Systemic lever | Social Innovation; Finance & Funding; Technology & Infrastructure; Learning & Capabilities |
-| Outcome (according to module B-1.1) | Re-Use shops at local HWRC's become well known and normalised as a route for household items, forming an important part of Bristol's circular economy.
-Citizens across the city have normalised supplying and purchasing reparable and re-usable goods from this ecosystem of organisations. Buying in this way becomes a go-to option for |
-|  | companies and other organisations. |
-Page | 80
-
-|   |  | an increasingly large number of citizens.
-A pipeline of students from diverse backgrounds leads to significantly more green jobs in the local circular economy and further supports the positive perception of citizens regarding the desirability of re-used and repaired products.  |
-| --- | --- | --- |
-|  Implementation | Responsible bodies/person for implementation | To be agreed. Likely to be Bristol Waste and Bristol City Council  |
-|   |  Action scale & addressed entities | Citywide  |
-|   |  Involved stakeholders | To be confirmed but noting the need for public engagement  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation would follow as the action is developed  |
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-|   |  Removed/substituted energy, volume, or fuel type | Not applicable  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | Out of scope  |
-|   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
-|   |  Total costs and costs by CO2e unit | See investment plan  |
-|  B-2.2: Individual action outlines  |   |   |
-| --- | --- | --- |
-|  Action outline | Action name | 22 Conduct targeted engagement campaigns across the city to communicate impacts of consumption to businesses and citizens  |
-|   |  Action type | Infrastructure and public engagement  |
-|   |  Action description | Through targeted engagement, increase awareness amongst citizens and businesses of the impacts of consumption, especially among high consumption groups/ businesses and enable significant changes.
-Deliver targeted engagement campaigns to communicate impacts of consumption, aimed at high-consumption demographics and businesses and support innovative solutions.
-Coordinate the creation and adoption of consistent local circular economy procurement principles, standards and strategies.
-Deliver substantial and sustained programme of activities to inspire and support businesses to reduce their waste production and carbon emissions through capacity building and supply chain engagement.  |
-|   | Field of action | Waste & Circular Economy  |
-|  Reference to impact pathway | Systemic lever | Learning & Capabilities; Governance & Policy  |
-| --- | --- | --- |
-|   |  Outcome (according to module B-1.1) | High-consumption demographics and businesses make active efforts to change their consumption patterns switching to local products and services with lower carbon footprints. Suppliers of a wide range of goods and services within Bristol begin to adjust their business practices to reflect the growing and consistent requirement for circular economy principles embedded in supply chains. Minimisation of waste and carbon are mainstreamed into business as usual operations of commercial organisations throughout the city, resulting in Bristol's local economy being an international leader in low waste and low carbon business operations.  |
-|  Implementation | Responsible bodies/person for implementation | As a group the Transition Team could look at this action and suggest an appropriate group of responsible organisations  |
-|   |  Action scale & addressed entities | Citywide  |
-|   |  Involved stakeholders | To be confirmed  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation would follow as the action is developed  |
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-|   |  Removed/substituted energy, volume, or fuel type | Not applicable  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | Out of scope  |
-|   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
-|   |  Total costs and costs by CO2e unit | See investment plan  |
-|  B-2.2: Individual action outlines  |   |   |
-| --- | --- | --- |
-|  Action outline | Action name | 23 Implement waste reduction efforts and improve waste collection, recycling and processing services  |
-|   |  Action type | Infrastructure and engagement  |
-|   |  Action description | Improve local waste services to reduce waste, increase recycling rates and support the expansion of the local circular economy.
-Engage with waste services providers to support changes in local services that reduce food and plastic content of residual waste.
-Engage businesses and citizens to increase domestic and commercial recycling rates.  |
-
-Page | 81
-|   |  | 3. Support the emerging Local Industrial Decarbonisation Plan working with Energy from Waste plant operators to find solutions for removal of fossil carbon from residual waste, and implement Carbon Capture and Storage at scale.  |
-| --- | --- | --- |
-|  Reference to impact pathway | Field of action | Waste & Circular Economy  |
-|   |  Systemic lever | Technology & Infrastructure, Democracy & Participation; Social Innovation  |
-|   |  Outcome (according to module B-1.1) | Domestic recycling rates continue to improve reaching 65% by 2030. Bristol's domestic waste stream contains almost no food or plastics, increasing the supply of material for local Anaerobic Digestion, and reducing the carbon content of residual waste. All of Bristol's small businesses now separate and recycle their food and plastic waste.
-Residual waste now contains far less fossil carbon, and emissions from energy from waste plants are significantly reduced through the implementation of carbon capture and storage at scale.
-Bristol's circular economy is integrated across the city's residential, commercial, and industrial districts. New opportunities arise and are realised through an ecosystem of collaborative stakeholders communicating effectively.  |
-|  Implementation | Responsible bodies/person for implementation | To be agreed. Likely to be Bristol Waste and Bristol City Council  |
-|   |  Action scale & addressed entities | Citywide  |
-|   |  Involved stakeholders | To be confirmed. Likely to include other waste service providers and noting the need for engagement with the public and businesses  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation would follow as the action is developed  |
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-|   |  Removed/substituted energy, volume, or fuel type | Not applicable  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | Abatement of 81,310 tonnes CO2e in 2030  |
-|   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
-|   |  Total costs and costs by CO2e unit | See investment plan  |
+| Systemic lever | Social Innovation; Finance & Funding; Technology & Infrastructure; Learning & Capabilities |  |
+| Outcome (according to module B-1.1) | Re-Use shops at local HWRC's become well known and normalised as a route for household items, forming an important part of Bristol's circular economy.<br>Citizens across the city have normalised supplying and purchasing reparable and re-usable goods from this ecosystem of organisations. Buying in this way becomes a go-to option for |  |
+|  | companies and other organisations. |  |
+|  |  | an increasingly large number of citizens.<br>A pipeline of students from diverse backgrounds leads to significantly more green jobs in the local circular economy and further supports the positive perception of citizens regarding the desirability of re-used and repaired products. |  |
+| Implementation | Responsible bodies/person for implementation | To be agreed. Likely to be Bristol Waste and Bristol City Council |
+|  | Action scale & addressed entities | Citywide |
+|  | Involved stakeholders | To be confirmed but noting the need for public engagement |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation would follow as the action is developed |
+| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+|  | Removed/substituted energy, volume, or fuel type | Not applicable |
+|  | GHG emissions reduction estimate (total) per emission source sector | Out of scope |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable |
+|  | Total costs and costs by CO2e unit | See investment plan |
+| B-2.2: Individual action outlines |  |  |
+| Action outline | Action name | 22 Conduct targeted engagement campaigns across the city to communicate impacts of consumption to businesses and citizens |
+|  | Action type | Infrastructure and public engagement |
+|  | Action description | Through targeted engagement, increase awareness amongst citizens and businesses of the impacts of consumption, especially among high consumption groups/ businesses and enable significant changes.<br>Deliver targeted engagement campaigns to communicate impacts of consumption, aimed at high-consumption demographics and businesses and support innovative solutions.<br>Coordinate the creation and adoption of consistent local circular economy procurement principles, standards and strategies.<br>Deliver substantial and sustained programme of activities to inspire and support businesses to reduce their waste production and carbon emissions through capacity building and supply chain engagement. |  |
+|  | Field of action | Waste & Circular Economy |
+| Reference to impact pathway | Systemic lever | Learning & Capabilities; Governance & Policy |
+|  | Outcome (according to module B-1.1) | High-consumption demographics and businesses make active efforts to change their consumption patterns switching to local products and services with lower carbon footprints. Suppliers of a wide range of goods and services within Bristol begin to adjust their business practices to reflect the growing and consistent requirement for circular economy principles embedded in supply chains. Minimisation of waste and carbon are mainstreamed into business as usual operations of commercial organisations throughout the city, resulting in Bristol's local economy being an international leader in low waste and low carbon business operations. |
+| Implementation | Responsible bodies/person for implementation | As a group the Transition Team could look at this action and suggest an appropriate group of responsible organisations |
+|  | Action scale & addressed entities | Citywide |
+|  | Involved stakeholders | To be confirmed |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation would follow as the action is developed |
+| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+|  | Removed/substituted energy, volume, or fuel type | Not applicable |
+|  | GHG emissions reduction estimate (total) per emission source sector | Out of scope |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable |
+|  | Total costs and costs by CO2e unit | See investment plan |
+| B-2.2: Individual action outlines |  |  |
+| Action outline | Action name | 23 Implement waste reduction efforts and improve waste collection, recycling and processing services |
+|  | Action type | Infrastructure and engagement |
+|  | Action description | Improve local waste services to reduce waste, increase recycling rates and support the expansion of the local circular economy.<br>Engage with waste services providers to support changes in local services that reduce food and plastic content of residual waste.<br>Engage businesses and citizens to increase domestic and commercial recycling rates. |  |
+|  |  | 3. Support the emerging Local Industrial Decarbonisation Plan working with Energy from Waste plant operators to find solutions for removal of fossil carbon from residual waste, and implement Carbon Capture and Storage at scale. |
+| Reference to impact pathway | Field of action | Waste & Circular Economy |
+|  | Systemic lever | Technology & Infrastructure, Democracy & Participation; Social Innovation |
+|  | Outcome (according to module B-1.1) | Domestic recycling rates continue to improve reaching 65% by 2030. Bristol's domestic waste stream contains almost no food or plastics, increasing the supply of material for local Anaerobic Digestion, and reducing the carbon content of residual waste. All of Bristol's small businesses now separate and recycle their food and plastic waste.<br>Residual waste now contains far less fossil carbon, and emissions from energy from waste plants are significantly reduced through the implementation of carbon capture and storage at scale.<br>Bristol's circular economy is integrated across the city's residential, commercial, and industrial districts. New opportunities arise and are realised through an ecosystem of collaborative stakeholders communicating effectively. |  |
+| Implementation | Responsible bodies/person for implementation | To be agreed. Likely to be Bristol Waste and Bristol City Council |
+|  | Action scale & addressed entities | Citywide |
+|  | Involved stakeholders | To be confirmed. Likely to include other waste service providers and noting the need for engagement with the public and businesses |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation would follow as the action is developed |
+| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+|  | Removed/substituted energy, volume, or fuel type | Not applicable |
+|  | GHG emissions reduction estimate (total) per emission source sector | Abatement of 81,310 tonnes CO2e in 2030 |
+|  | GHG emissions compensated (natural or technological sinks) | Not applicable |
+|  | Total costs and costs by CO2e unit | See investment plan |
 
 B-2.2: Individual action outlines
-|  Impact Pathway 6 : Green Infrastructure and Nature-based Solutions  |   |   |
+| Impact Pathway 6 : Green Infrastructure and Nature-based Solutions |  |  |
 | --- | --- | --- |
-|  Action outline | Action name | 24 Raise the quality of existing green spaces  |
-|   |  Action type | Infrastructure and public engagement  |
-|   |  Action description | Raise the quality of Bristol’s existing green spaces from ‘moderate’ to good, through targeted investment delivering high quality green spaces.
-Deliver improvements to parks and green spaces making them safer, more welcoming, and more inclusive.
-Deliver improvements to parks and green spaces through increased tree planting and wildlife friendly habitat.  |
-|  Reference to impact pathway | Field of action | Green Infrastructure & Nature Based Solutions  |
-|   |  Systemic lever | Tech & Infrastructure  |
-|   |  Outcome (according to module B-1.1) | Greater numbers of citizens from a wider range of backgrounds visit Bristol's parks and green spaces on a regular basis, feeling safe and welcome to do so on their own and with groups of people.
-Tree canopy cover in existing parks and green spaces begins to mature providing vital new habitat for insects and birds supporting the abundance of wildlife within Bristol. The number of cool spaces also increases improving the provision of respite for citizens during extended heatwaves.  |
-|  Implementation | Responsible bodies/person for implementation | As a group the Transition Team could look at this action and suggest an appropriate group of responsible organisations. Bristol City Council would have a significant role with regard to actions for parks  |
-|   |  Action scale & addressed entities | Citywide  |
-|   |  Involved stakeholders | To be confirmed  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation would follow as the action is developed  |
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-|   |  Removed/substituted energy, volume, or fuel type | Not applicable  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | Not applicable  |
-|   |  GHG emissions compensated (natural or technological sinks) | Currently not estimated  |
-
-Page | 83
-Page | 84
-
-|  B-2.2: Individual action outlines  |   |   |
+| Action outline | Action name | 24 Raise the quality of existing green spaces |
+|  | Action type | Infrastructure and public engagement |
+|  | Action description | Raise the quality of Bristol’s existing green spaces from ‘moderate’ to good, through targeted investment delivering high quality green spaces.<br>Deliver improvements to parks and green spaces making them safer, more welcoming, and more inclusive.<br>Deliver improvements to parks and green spaces through increased tree planting and wildlife friendly habitat. |  |
+| Reference to impact pathway | Field of action | Green Infrastructure & Nature Based Solutions |
+|  | Systemic lever | Tech & Infrastructure |
+|  | Outcome (according to module B-1.1) | Greater numbers of citizens from a wider range of backgrounds visit Bristol's parks and green spaces on a regular basis, feeling safe and welcome to do so on their own and with groups of people.<br>Tree canopy cover in existing parks and green spaces begins to mature providing vital new habitat for insects and birds supporting the abundance of wildlife within Bristol. The number of cool spaces also increases improving the provision of respite for citizens during extended heatwaves. |  |
+| Implementation | Responsible bodies/person for implementation | As a group the Transition Team could look at this action and suggest an appropriate group of responsible organisations. Bristol City Council would have a significant role with regard to actions for parks |
+|  | Action scale & addressed entities | Citywide |
+|  | Involved stakeholders | To be confirmed |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation would follow as the action is developed |
+| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+|  | Removed/substituted energy, volume, or fuel type | Not applicable |
+|  | GHG emissions reduction estimate (total) per emission source sector | Not applicable |
+|  | GHG emissions compensated (natural or technological sinks) | Currently not estimated |
+| B-2.2: Individual action outlines |  |  |
 | --- | --- | --- |
-|  Action outline | Action name | 25 Improve climate resilience and ecological recovery through greening of the public realm  |
-|   |  Action type | Green infrastructure  |
-|   |  Action description | Improve access to green spaces and boost climate resilience through street greening and tree planting.
-Deliver a significant expansion of street greening through planting of new trees and other planting in the public realm to mitigate urban heat and improve the city's climate resilience.
-Deliver expansion of the emerging Green Recovery Fund project, resulting in a combined uplift in the total space for nature within the city of 10%.  |
-|  Reference to impact pathway | Field of action | Green Infrastructure & Nature Based Solutions  |
-|   |  Systemic lever | Tech & Infrastructure  |
-|   |  Outcome (according to module B-1.1) | New tree canopy cover begins to mature and, along with other planting, provides improved urban cooling reducing the vulnerability of Bristol's people and wildlife to extreme heat.
-Insect and other wildlife populations show signs of recovery with increased abundance and diversity. Newly diversified species rich grassland may begin to provide moderate carbon sequestration along with other ecosystem services.  |
-|  Implementation | Responsible bodies/person for implementation | As a group the Transition Team could look at this action and suggest an appropriate group of responsible organisations. Bristol City Council would have a significant role with regard to actions for parks and public realm. West of England Combined Authority have a significant role with regard to the Green Recovery Fund  |
-|   |  Action scale & addressed entities | Citywide  |
-|   |  Involved stakeholders | To be confirmed as this action is developed  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation would follow as the action is developed  |
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-|   |  Removed/substituted energy, volume, or fuel type | Not applicable  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | Not applicable  |
-Page | 85
-
-|  GHG emissions compensated (natural or technological sinks) | Currently not estimated  |
-| --- | --- |
-|  Total costs and costs by CO2e unit | Not applicable  |
-|  B-2.2: Individual action outlines  |   |   |
-| --- | --- | --- |
-|  Action outline | Action name | 26 Create new green spaces across the city  |
-|   |  Action type | Green infrastructure  |
-|   |  Action description | Incorporate the creation of new green spaces into strategic regeneration projects and flood defence schemes
-Deliver new green spaces in the city centre, Temple Quarter, and St Phillips Marsh as part of long-term strategic regeneration zones.
-Deliver the incorporation of Green Infrastructure designs into the developing river Avon flood strategy, to create a 5-10m green corridor running along Feeder canal and river Avon
-Deliver 5,500m2 of new floating reedbeds in the Floating Harbour.  |
-|  Reference to impact pathway | Field of action | Green Infrastructure & Nature Based Solutions  |
-|   |  Systemic lever | Tech & Infrastructure  |
-|   |  Outcome (according to module B-1.1) | Public experience of green spaces improves encouraging further active travel; contribution to urban cooling; improved biodiversity and ecosystem connectivity  |
-|  Implementation | Responsible bodies/person for implementation | The overall responsible body or bodies would be identified as this work progresses. At present, several organisations are playing a leading role across the regeneration projects  |
-|   |  Action scale & addressed entities | Citywide  |
-|   |  Involved stakeholders | To be confirmed as this action is developed  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation would follow as the action is developed  |
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
-|   |  Removed/substituted energy, volume, or fuel type | Not applicable  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | Not applicable  |
-|   |  GHG emissions compensated (natural or technological sinks) | Currently not estimated  |
-|   |  Total costs and costs by CO2e unit | Not applicable  |
+| Action outline | Action name | 25 Improve climate resilience and ecological recovery through greening of the public realm |
+|  | Action type | Green infrastructure |
+|  | Action description | Improve access to green spaces and boost climate resilience through street greening and tree planting.<br>Deliver a significant expansion of street greening through planting of new trees and other planting in the public realm to mitigate urban heat and improve the city's climate resilience.<br>Deliver expansion of the emerging Green Recovery Fund project, resulting in a combined uplift in the total space for nature within the city of 10%. |  |
+| Reference to impact pathway | Field of action | Green Infrastructure & Nature Based Solutions |
+|  | Systemic lever | Tech & Infrastructure |
+|  | Outcome (according to module B-1.1) | New tree canopy cover begins to mature and, along with other planting, provides improved urban cooling reducing the vulnerability of Bristol's people and wildlife to extreme heat.<br>Insect and other wildlife populations show signs of recovery with increased abundance and diversity. Newly diversified species rich grassland may begin to provide moderate carbon sequestration along with other ecosystem services. |  |
+| Implementation | Responsible bodies/person for implementation | As a group the Transition Team could look at this action and suggest an appropriate group of responsible organisations. Bristol City Council would have a significant role with regard to actions for parks and public realm. West of England Combined Authority have a significant role with regard to the Green Recovery Fund |
+|  | Action scale & addressed entities | Citywide |
+|  | Involved stakeholders | To be confirmed as this action is developed |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation would follow as the action is developed |
+| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+|  | Removed/substituted energy, volume, or fuel type | Not applicable |
+|  | GHG emissions reduction estimate (total) per emission source sector | Not applicable |
+| GHG emissions compensated (natural or technological sinks) | Currently not estimated |  |
+| Total costs and costs by CO2e unit | Not applicable |  |
+| B-2.2: Individual action outlines |  |  |
+| Action outline | Action name | 26 Create new green spaces across the city |
+|  | Action type | Green infrastructure |
+|  | Action description | Incorporate the creation of new green spaces into strategic regeneration projects and flood defence schemes<br>Deliver new green spaces in the city centre, Temple Quarter, and St Phillips Marsh as part of long-term strategic regeneration zones.<br>Deliver the incorporation of Green Infrastructure designs into the developing river Avon flood strategy, to create a 5-10m green corridor running along Feeder canal and river Avon<br>Deliver 5,500m2 of new floating reedbeds in the Floating Harbour. |  |
+| Reference to impact pathway | Field of action | Green Infrastructure & Nature Based Solutions |
+|  | Systemic lever | Tech & Infrastructure |
+|  | Outcome (according to module B-1.1) | Public experience of green spaces improves encouraging further active travel; contribution to urban cooling; improved biodiversity and ecosystem connectivity |
+| Implementation | Responsible bodies/person for implementation | The overall responsible body or bodies would be identified as this work progresses. At present, several organisations are playing a leading role across the regeneration projects |
+|  | Action scale & addressed entities | Citywide |
+|  | Involved stakeholders | To be confirmed as this action is developed |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Further information on implementation would follow as the action is developed |
+| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+|  | Removed/substituted energy, volume, or fuel type | Not applicable |
+|  | GHG emissions reduction estimate (total) per emission source sector | Not applicable |
+|  | GHG emissions compensated (natural or technological sinks) | Currently not estimated |
+|  | Total costs and costs by CO2e unit | Not applicable |
 # B-2.3: Summary strategy for residual emissions
 
 The residual emissions after the implementation of the actions in this plan are projected to be 247,576 tonnes CO2e.
@@ -1893,12 +1513,12 @@ Bristol's focus is on reducing greenhouse emission reductions from the city. We 
 
 Whilst it is considered to be highly unlikely that the city will choose to use market-based mechanisms for offsetting residual emissions, the table below demonstrates the hypothetical cost to the city of doing so in 2030 under a number of different price scenarios. The first scenario recognises that the voluntary carbon offset market is currently subject to widespread concerns regarding robustness, a lack of harmonised standards, and therefore valid concerns about potential greenwashing. The remaining scenarios assume different levels of standards harmonisation or market restriction.
 
-|  Hypothetical price scenario | Rate | Total offset price by 2030  |
+| Hypothetical price scenario | Rate | Total offset price by 2030 |
 | --- | --- | --- |
-|  Lack of harmonised standards and weak quality control | Assumed price of $13 per tonne | £2,510,421  |
-|  Implementation of harmonised robust universal definitions | Assumed price of $20 per tonne | £3,862,186  |
-|  Offset market becomes restricted to only cover carbon removals | Assumed price of $146 per tonne by 2030 | £28,193,955  |
-|  Estimated EU market value by 2030 | Assumed price of $162 per tonne | £31,283,703  |
+| Lack of harmonised standards and weak quality control | Assumed price of $13 per tonne | £2,510,421 |
+| Implementation of harmonised robust universal definitions | Assumed price of $20 per tonne | £3,862,186 |
+| Offset market becomes restricted to only cover carbon removals | Assumed price of $146 per tonne by 2030 | £28,193,955 |
+| Estimated EU market value by 2030 | Assumed price of $162 per tonne | £31,283,703 |
 
 Figure 16: Hypothetical price scenarios and cost to offset residual emissions
 
@@ -1915,546 +1535,493 @@ Prices are given in nominal terms.
 This section contains proposed indicators that could be used for monitoring, evaluation and learning associated with the action proposed if implemented. It comprises an overview table listing the indicators associated with each Impact Pathway followed by a metadata table for each indicator. Where indicators are not available this is noted.
 B-3.1 Proposed Indicators Overview Table
 
-|  Outcomes/ impacts addressed | Action/ project | Indicator No. | Indicator name | Target values  |
+| Outcomes/ impacts addressed | Action/ project | Indicator No. | Indicator name | Target values |
 | --- | --- | --- | --- | --- |
-|  Indicator No. - identified by impact pathway and number eg 1.1 is the first indicator listed in impact pathway 1
-Target values - Targets for 2025, 2027 and 2030 have not yet been developed for the indicators and are therefore marked 'not available'  |   |   |   |   |
-|  Impact Pathway 1: Cross-cutting Enabling Actions on Just Transition, Communications and Engagement and Skills  |   |   |   |   |
-|  Transition Team Engagement | Continue to engage Transition Team on Climate City Contract (CCC) design and implementation | 1.1 | Total Capital Value of Projects for which Business Cases Developed | To be developed as actions further defined  |
-|  Just Transition | Further embed Just Transition principles into CCC and support wider adoption in the city | 1.2 | Number of TT organisations which have adopted the Just Transition Principles | To be developed as actions further defined  |
-|  Just Transition | Deliver transformative, inclusive, programmes of environmental communications, consultation and engagement | 1.3 | Number of CCC actions updated following feedback from engagement with diverse stakeholders | To be developed as actions further defined  |
-|  Just Transition | Widen access to green jobs and skills, Deliver programme to support employers to create and sustain green jobs | 1.4, 1.5 | Not available – indicator being developed by key stakeholder. For illustration, may be indicated by number of learners on green skills courses. | To be developed as actions further defined  |
-|  Impact Pathway 2: Energy Systems  |   |   |   |   |
-|  Energy network reinforcement | Reinforce local energy network and manage smartly | 2.1 | Indicator to be developed in consultation with key stakeholder | To be developed as actions further defined  |
-|  Maximisation of renewable energy generation | Implement programme to maximise renewable energy generation (especially solar) | 2.2 | Megawatts of installed renewable capacity | To be developed as actions further defined  |
-|  Domestic heat pump installation | Deliver programme to install or encourage/incentivise installation of heat pumps in all homes in the city | 2.3 | Number of dwellings directly served by heat pumps | To be developed as actions further defined  |
-|  Non-domestic heat pump installation | Implement a programme to install or encourage/incentivise installation of heat pumps in non-domestic buildings in the city | 2.4 | Number of non-domestic buildings directly served by heat pumps | To be developed as actions further defined  |
-|  Heat network expansion | Expand the network and connect more buildings to the heat network | 2.5 | Number of heat network connections to 'low carbon' heat networks. | To be developed as actions further defined  |
-|  Reduce carbon intensity of existing network | Reduce carbon intensity of the existing gas network | 2.6 | Carbon intensity of gas network | To be developed as actions further defined  |
-| --- | --- | --- | --- | --- |
-|  Supply chain development | Inclusive training and skills programme for heat pump installation and heat network construction | 2.7 | Not available – indicator being developed by key stakeholder. For illustration, may be indicated by number of learners on low carbon heat training courses in the region | To be developed as actions further defined  |
-|  Impact Pathway 3: Built Environment  |   |   |   |   |
-|  Reduce energy demand in homes | Implement citywide programme for housing retrofit to reduce demand and integrate renewable generation | 3.1 | Proportion of homes EPC C and above | To be developed as actions further defined  |
-|  Reduce energy demand in non-domestic buildings | Implement a city-wide programme for non-domestic building retrofit to reduce demand and integrate renewable generation | 3.2 | Proportion of non-domestic buildings EPC C and above | To be developed as actions further defined  |
-|  Supply chain development | Implement an inclusive training and skills programme for retrofit and renewable energy generation | 3.3 | Not available – indicator being developed by key stakeholder. For illustration, may be indicated by learner numbers on retrofit training courses in the region | To be developed as actions further defined  |
-|  Impact Pathway 4: Mobility and Transport  |   |   |   |   |
-|  Car mileage reduction | Implement programme to significantly reduce car miles | 4.1 | Car miles per year | To be developed as actions further defined  |
-|  Travel mode shift to active travel | Implement programme to encourage modal shift to active travel | 4.2 | Active travel miles per year | To be developed as actions further defined  |
-|  Travel mode shift to public transport use | Implement programme to encourage modal shift to public transport | 4.3 | Public transport passenger miles per year | To be developed as actions further defined  |
-|  Freight consolidation and low carbon deliveries | Implement policy changes and provide innovation funding to encourage freight consolidation and low carbon deliveries | 4.4 | Number of low carbon freight consolidation centres | To be developed as actions further defined  |
-|  Travel mode shift to electric vehicles | Implement programme to support accelerated shift from internal combustion engine vehicles to battery electric vehicles | 4.5 | Number of public charging points | To be developed as actions further defined  |
-
-Page | 88
-Page | 89
-
-|  Impact Pathway 5: Waste and Circular Economy  |   |   |   |   |
-| --- | --- | --- | --- | --- |
-|  Consumption and waste reduction | Implement citywide programme to support increased repair and reuse of retail products | 5.1 | Not available – to be determined | To be developed as actions further defined  |
-|  Consumption and waste reduction | Conduct targeted engagement campaigns across the city to communicate impacts of consumption to businesses and citizens | 5.2 | Not available – to be determined | To be developed as actions further defined  |
-|  Waste reduction | Implement waste reduction efforts and improve waste collection, recycling and processing services | 5.3 | Domestic waste recycling rate | To be developed as actions further defined  |
-|  Waste reduction | Implement waste reduction efforts and improve waste collection, recycling and processing services | 5.4 | Carbon intensity of Energy from Waste production | To be developed as actions further defined  |
-|  Impact Pathway 6: Green Infrastructure and Nature-based Solutions  |   |   |   |   |
-|  Green infrastructure for climate resilience | Raise the quality of existing green spaces | 6.1 | Number of parks achieving 'good' status.
-Area of BCC parks land managed for nature | To be developed as actions further defined  |
-|  Green infrastructure for climate resilience | Improve climate resilience and ecological recovery through greening of the public realm - Tree canopy cover / number of trees | 6.2 | Area of BCC parks land managed for nature | To be developed as actions further defined  |
-|  Green infrastructure for climate resilience | Create new green spaces across the city | 6.3 | Area of new green space created | To be developed as actions further defined  |
-B-3.2 Indicator Metadata Listed by Impact Pathway
+| --- | --- | --- | --- | ---<br>Indicator No. - identified by impact pathway and number eg 1.1 is the first indicator listed in impact pathway 1<br>Target values - Targets for 2025, 2027 and 2030 have not yet been developed for the indicators and are therefore marked 'not available' |  |  |  |  |  |
+| Impact Pathway 1: Cross-cutting Enabling Actions on Just Transition, Communications and Engagement and Skills |  |  |  |  |
+| Transition Team Engagement | Continue to engage Transition Team on Climate City Contract (CCC) design and implementation | 1.1 | Total Capital Value of Projects for which Business Cases Developed | To be developed as actions further defined |
+| Just Transition | Further embed Just Transition principles into CCC and support wider adoption in the city | 1.2 | Number of TT organisations which have adopted the Just Transition Principles | To be developed as actions further defined |
+| Just Transition | Deliver transformative, inclusive, programmes of environmental communications, consultation and engagement | 1.3 | Number of CCC actions updated following feedback from engagement with diverse stakeholders | To be developed as actions further defined |
+| Just Transition | Widen access to green jobs and skills, Deliver programme to support employers to create and sustain green jobs | 1.4, 1.5 | Not available – indicator being developed by key stakeholder. For illustration, may be indicated by number of learners on green skills courses. | To be developed as actions further defined |
+| Impact Pathway 2: Energy Systems |  |  |  |  |
+| Energy network reinforcement | Reinforce local energy network and manage smartly | 2.1 | Indicator to be developed in consultation with key stakeholder | To be developed as actions further defined |
+| Maximisation of renewable energy generation | Implement programme to maximise renewable energy generation (especially solar) | 2.2 | Megawatts of installed renewable capacity | To be developed as actions further defined |
+| Domestic heat pump installation | Deliver programme to install or encourage/incentivise installation of heat pumps in all homes in the city | 2.3 | Number of dwellings directly served by heat pumps | To be developed as actions further defined |
+| Non-domestic heat pump installation | Implement a programme to install or encourage/incentivise installation of heat pumps in non-domestic buildings in the city | 2.4 | Number of non-domestic buildings directly served by heat pumps | To be developed as actions further defined |
+| Heat network expansion | Expand the network and connect more buildings to the heat network | 2.5 | Number of heat network connections to 'low carbon' heat networks. | To be developed as actions further defined |
+| Reduce carbon intensity of existing network | Reduce carbon intensity of the existing gas network | 2.6 | Carbon intensity of gas network | To be developed as actions further defined |
+| Supply chain development | Inclusive training and skills programme for heat pump installation and heat network construction | 2.7 | Not available – indicator being developed by key stakeholder. For illustration, may be indicated by number of learners on low carbon heat training courses in the region | To be developed as actions further defined |
+| Impact Pathway 3: Built Environment |  |  |  |  |
+| Reduce energy demand in homes | Implement citywide programme for housing retrofit to reduce demand and integrate renewable generation | 3.1 | Proportion of homes EPC C and above | To be developed as actions further defined |
+| Reduce energy demand in non-domestic buildings | Implement a city-wide programme for non-domestic building retrofit to reduce demand and integrate renewable generation | 3.2 | Proportion of non-domestic buildings EPC C and above | To be developed as actions further defined |
+| Supply chain development | Implement an inclusive training and skills programme for retrofit and renewable energy generation | 3.3 | Not available – indicator being developed by key stakeholder. For illustration, may be indicated by learner numbers on retrofit training courses in the region | To be developed as actions further defined |
+| Impact Pathway 4: Mobility and Transport |  |  |  |  |
+| Car mileage reduction | Implement programme to significantly reduce car miles | 4.1 | Car miles per year | To be developed as actions further defined |
+| Travel mode shift to active travel | Implement programme to encourage modal shift to active travel | 4.2 | Active travel miles per year | To be developed as actions further defined |
+| Travel mode shift to public transport use | Implement programme to encourage modal shift to public transport | 4.3 | Public transport passenger miles per year | To be developed as actions further defined |
+| Freight consolidation and low carbon deliveries | Implement policy changes and provide innovation funding to encourage freight consolidation and low carbon deliveries | 4.4 | Number of low carbon freight consolidation centres | To be developed as actions further defined |
+| Travel mode shift to electric vehicles | Implement programme to support accelerated shift from internal combustion engine vehicles to battery electric vehicles | 4.5 | Number of public charging points | To be developed as actions further defined |
+| Impact Pathway 5: Waste and Circular Economy |  |  |  |  |
+| Consumption and waste reduction | Implement citywide programme to support increased repair and reuse of retail products | 5.1 | Not available – to be determined | To be developed as actions further defined |
+| Consumption and waste reduction | Conduct targeted engagement campaigns across the city to communicate impacts of consumption to businesses and citizens | 5.2 | Not available – to be determined | To be developed as actions further defined |
+| Waste reduction | Implement waste reduction efforts and improve waste collection, recycling and processing services | 5.3 | Domestic waste recycling rate | To be developed as actions further defined |
+| Waste reduction | Implement waste reduction efforts and improve waste collection, recycling and processing services | 5.4 | Carbon intensity of Energy from Waste production | To be developed as actions further defined |
+| Impact Pathway 6: Green Infrastructure and Nature-based Solutions |  |  |  |  |
+| Green infrastructure for climate resilience | Raise the quality of existing green spaces | 6.1 | Number of parks achieving 'good' status.<br>Area of BCC parks land managed for nature | To be developed as actions further defined |  |
+| Green infrastructure for climate resilience | Improve climate resilience and ecological recovery through greening of the public realm - Tree canopy cover / number of trees | 6.2 | Area of BCC parks land managed for nature | To be developed as actions further defined |
+| Green infrastructure for climate resilience | Create new green spaces across the city | 6.3 | Area of new green space created | To be developed as actions further defined<br>B-3.2 Indicator Metadata Listed by Impact Pathway |
 
 Impact Pathway 1: Cross-cutting Enabling Actions on Just Transition, Communications and Engagement and Skills
 
-|  B-3.2: Indicator Metadata  |   |
+| B-3.2: Indicator Metadata |  |
 | --- | --- |
-|  Indicator Name | 1.1 Total Capital Value of Projects for which Business Cases Developed  |
-|  Indicator Unit | Pounds sterling (£)  |
-|  Definition | Total Capital Value of Projects for which Business Cases Developed  |
-|  Calculation | Sum total of capital value  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | No  |
-|  If yes, which emission source sectors does it measure? | Not applicable  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | Strengthened, coherent and joined-up working  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathway 1: Cross-cutting Enabling Actions on Just Transition, Communications and Engagement and Skills – Transition Team (TT) engagement  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | Data from business cases developed  |
-|  Is the data source local or regional/national? | Local  |
-|  Expected availability | To be agreed  |
-|  Suggested collection interval | To be agreed  |
-|  References |   |
-|  Deliverables describing the indicator | None specified  |
-|  Other indicator systems using this indicator | None  |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  Indicator Name | 1.2 Number of TT organisations which have adopted the Just Transition Principles  |
-|  Indicator Unit | Number  |
-|  Definition | Number of TT organisations which have adopted the Just Transition Principles  |
-|  Calculation | Sum of number of TT organisations which have adopted the Just Transition Principles  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | No  |
-|  If yes, which emission source sectors does it measure? | Not applicable  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | Faster progress to 2030 ambition  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathway 1: Cross-cutting Enabling Actions on Just Transition, Communications and Engagement and Skills – Just Transition  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-
-Page | 90
-|  Expected data source | Data from Transition Team organisations  |
-| --- | --- |
-|  Is the data source local or regional/national? | Local  |
-|  Expected availability | To be agreed  |
-|  Suggested collection interval | To be agreed  |
-|  References |   |
-|  Deliverables describing the indicator | None specified  |
-|  Other indicator systems using this indicator | None  |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  Indicator Name | 1.3 Number of Climate City Contract (CCC) actions updated following feedback from engagement with diverse stakeholders  |
-|  Indicator Unit | Number  |
-|  Definition | Number of CCC actions updated following feedback from engagement with diverse stakeholders  |
-|  Calculation | Sum of number of CCC actions updated following feedback from engagement with diverse stakeholders  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | No  |
-|  If yes, which emission source sectors does it measure? | Not applicable  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | Reduced inequality  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathway 1: Cross-cutting Enabling Actions on Just Transition, Communications and Engagement and Skills – Just Transition  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | Data from Transition Team  |
-|  Is the data source local or regional/national? | Local  |
-|  Expected availability | To be agreed  |
-|  Suggested collection interval | To be agreed  |
-|  References |   |
-|  Deliverables describing the indicator | None specified  |
-|  Other indicator systems using this indicator | None  |
+| Indicator Name | 1.1 Total Capital Value of Projects for which Business Cases Developed |
+| Indicator Unit | Pounds sterling (£) |
+| Definition | Total Capital Value of Projects for which Business Cases Developed |
+| Calculation | Sum total of capital value |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | No |
+| If yes, which emission source sectors does it measure? | Not applicable |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes |
+| If yes, which co-benefit does it measure? | Strengthened, coherent and joined-up working |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Impact Pathway 1: Cross-cutting Enabling Actions on Just Transition, Communications and Engagement and Skills – Transition Team (TT) engagement |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No |
+| Data requirements |  |
+| Expected data source | Data from business cases developed |
+| Is the data source local or regional/national? | Local |
+| Expected availability | To be agreed |
+| Suggested collection interval | To be agreed |
+| References |  |
+| Deliverables describing the indicator | None specified |
+| Other indicator systems using this indicator | None |
+| B-3.2: Indicator Metadata |  |
+| Indicator Name | 1.2 Number of TT organisations which have adopted the Just Transition Principles |
+| Indicator Unit | Number |
+| Definition | Number of TT organisations which have adopted the Just Transition Principles |
+| Calculation | Sum of number of TT organisations which have adopted the Just Transition Principles |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | No |
+| If yes, which emission source sectors does it measure? | Not applicable |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes |
+| If yes, which co-benefit does it measure? | Faster progress to 2030 ambition |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Impact Pathway 1: Cross-cutting Enabling Actions on Just Transition, Communications and Engagement and Skills – Just Transition |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No |
+| Data requirements |  |
+| Expected data source | Data from Transition Team organisations |
+| Is the data source local or regional/national? | Local |
+| Expected availability | To be agreed |
+| Suggested collection interval | To be agreed |
+| References |  |
+| Deliverables describing the indicator | None specified |
+| Other indicator systems using this indicator | None |
+| B-3.2: Indicator Metadata |  |
+| Indicator Name | 1.3 Number of Climate City Contract (CCC) actions updated following feedback from engagement with diverse stakeholders |
+| Indicator Unit | Number |
+| Definition | Number of CCC actions updated following feedback from engagement with diverse stakeholders |
+| Calculation | Sum of number of CCC actions updated following feedback from engagement with diverse stakeholders |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | No |
+| If yes, which emission source sectors does it measure? | Not applicable |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes |
+| If yes, which co-benefit does it measure? | Reduced inequality |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Impact Pathway 1: Cross-cutting Enabling Actions on Just Transition, Communications and Engagement and Skills – Just Transition |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No |
+| Data requirements |  |
+| Expected data source | Data from Transition Team |
+| Is the data source local or regional/national? | Local |
+| Expected availability | To be agreed |
+| Suggested collection interval | To be agreed |
+| References |  |
+| Deliverables describing the indicator | None specified |
+| Other indicator systems using this indicator | None |
 
 Please note indicators 1.4, 1.5 and 2.1 are to be developed.
 
 Impact Pathway 2: Energy Systems
 
-|  B-3.2: Indicator Metadata  |   |
+| B-3.2: Indicator Metadata |  |
 | --- | --- |
-|  Indicator Name | 2.2 Megawatts of installed renewable capacity  |
-|  Indicator Unit | Megawatts  |
-|  Definition | Megawatts of installed renewable capacity per financial year  |
-|  Calculation | Sum of megawatts of installed renewable capacity  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes  |
-|  If yes, which emission source sectors does it measure? | Not applicable  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | Reduced inequality  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-Page | 92
-
-|  If yes, which emission source sectors does it measure? | Stationary energy  |
-| --- | --- |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | No  |
-|  If yes, which co-benefit does it measure? | Not applicable  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathway 2: Energy Systems – maximisation of renewable energy generation  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes  |
-|  Data requirements |   |
-|  Expected data source | UK government Department for Energy Security and Net Zero  |
-|  Is the data source local or regional/national? | National data, available for local level  |
-|  Expected availability | Annual (2 years in arrears)  |
-|  Suggested collection interval | Annual  |
-|  References |   |
-|  Deliverables describing the indicator | None specified  |
-|  Other indicator systems using this indicator | None  |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  Indicator Name | 2.3 Number of dwellings directly served by heat pumps  |
-|  Indicator Unit | Number of dwellings  |
-|  Definition | Number of dwellings directly served by heat pumps  |
-|  Calculation | Number of dwellings directly served by heat pumps  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes  |
-|  If yes, which emission source sectors does it measure? | Stationary energy  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | No  |
-|  If yes, which co-benefit does it measure? | Not applicable  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathway 2: Energy Systems - Domestic heat pump installation  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | Microgeneration Certification Scheme database  |
-|  Is the data source local or regional/national? | National and we have a data sharing agreement with MCS to receive detailed data for City of Bristol  |
-|  Expected availability | Quarterly  |
-|  Suggested collection interval | Annual  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | No  |
-|  If yes, which co-benefit does it measure? | Not applicable  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  Indicator Name | 2.4 Number of non-domestic buildings directly served by heat pumps  |
-|  Indicator Unit | Number of non-domestic buildings  |
-|  Definition | Number of non-domestic buildings directly served by heat pumps  |
-| --- | --- |
-|  Calculation | Sum of number of non-domestic buildings directly served by heat pumps  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes  |
-|  If yes, which emission source sectors does it measure? | Stationary energy  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | No  |
-|  If yes, which co-benefit does it measure? | Not applicable  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathway 2: Energy Systems – Non-domestic heat pump installation  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | Microgeneration Certification Scheme database  |
-|  Is the data source local or regional/national? | National and we have a data sharing agreement with MCS to receive detailed data for City of Bristol  |
-|  Expected availability | Quarterly  |
-|  Suggested collection interval | Annual  |
-|  References |   |
-|  Deliverables describing the indicator | None specified  |
-|  Other indicator systems using this indicator | None  |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  Indicator Name | 2.5 Number of heat network connections to 'low carbon' heat networks  |
-|  Indicator Unit | Number of heat network connections  |
-|  Definition | Number of heat network connections to 'low carbon' heat networks  |
-|  Calculation | Sum of number of heat network connections to 'low carbon' heat networks  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes  |
-|  If yes, which emission source sectors does it measure? | Stationary energy  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | No  |
-|  If yes, which co-benefit does it measure? |   |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathway 2: Energy Systems – Heat network expansion  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no  |
-|  Data requirements |   |
-|  Expected data source | UK Gov Department for Energy Security and Net Zero (for number of connections), Vattenfall carbon intensity statistics for Bristol Heat Network  |
-|  Is the data source local or regional/national? | National (UK Gov stats) and local (Vattenfall stats)  |
-|  Expected availability | Annual (one year in arrears for UK Gov Stats)  |
-|  Suggested collection interval | Annual  |
-|  References |   |
-Deliverables describing the indicator None specified
-Other indicator systems using this indicator None
-
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  Indicator Name | 2.6 Carbon intensity of gas network  |
-|  Indicator Unit | kilograms of CO2e / kWh  |
-|  Definition | Carbon intensity of gas provided to end users of the central gas network  |
-|  Calculation | kilograms of CO2e produced for each kWh of energy produced through consumption of blended gas from the central gas network  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes  |
-|  If yes, which emission source sectors does it measure? | Stationary energy  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | No  |
-|  If yes, which co-benefit does it measure? | Not applicable  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathway 2: Energy Systems – Reduce carbon intensity of existing network  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | Wales and West Utilities  |
-|  Is the data source local or regional/national? | Regional  |
-|  Expected availability | Annual  |
-|  Suggested collection interval | Annual  |
-|  References |   |
-|  Deliverables describing the indicator | None specified  |
-|  Other indicator systems using this indicator | None  |
+| Indicator Name | 2.2 Megawatts of installed renewable capacity |
+| Indicator Unit | Megawatts |
+| Definition | Megawatts of installed renewable capacity per financial year |
+| Calculation | Sum of megawatts of installed renewable capacity |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes |
+| If yes, which emission source sectors does it measure? | Not applicable |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes |
+| If yes, which co-benefit does it measure? | Reduced inequality |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which emission source sectors does it measure? | Stationary energy |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | No |
+| If yes, which co-benefit does it measure? | Not applicable |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Impact Pathway 2: Energy Systems – maximisation of renewable energy generation |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes |
+| Data requirements |  |
+| Expected data source | UK government Department for Energy Security and Net Zero |
+| Is the data source local or regional/national? | National data, available for local level |
+| Expected availability | Annual (2 years in arrears) |
+| Suggested collection interval | Annual |
+| References |  |
+| Deliverables describing the indicator | None specified |
+| Other indicator systems using this indicator | None |
+| B-3.2: Indicator Metadata |  |
+| Indicator Name | 2.3 Number of dwellings directly served by heat pumps |
+| Indicator Unit | Number of dwellings |
+| Definition | Number of dwellings directly served by heat pumps |
+| Calculation | Number of dwellings directly served by heat pumps |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes |
+| If yes, which emission source sectors does it measure? | Stationary energy |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | No |
+| If yes, which co-benefit does it measure? | Not applicable |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Impact Pathway 2: Energy Systems - Domestic heat pump installation |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No |
+| Data requirements |  |
+| Expected data source | Microgeneration Certification Scheme database |
+| Is the data source local or regional/national? | National and we have a data sharing agreement with MCS to receive detailed data for City of Bristol |
+| Expected availability | Quarterly |
+| Suggested collection interval | Annual |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | No |
+| If yes, which co-benefit does it measure? | Not applicable |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| B-3.2: Indicator Metadata |  |
+| Indicator Name | 2.4 Number of non-domestic buildings directly served by heat pumps |
+| Indicator Unit | Number of non-domestic buildings |
+| Definition | Number of non-domestic buildings directly served by heat pumps |
+| Calculation | Sum of number of non-domestic buildings directly served by heat pumps |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes |
+| If yes, which emission source sectors does it measure? | Stationary energy |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | No |
+| If yes, which co-benefit does it measure? | Not applicable |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Impact Pathway 2: Energy Systems – Non-domestic heat pump installation |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No |
+| Data requirements |  |
+| Expected data source | Microgeneration Certification Scheme database |
+| Is the data source local or regional/national? | National and we have a data sharing agreement with MCS to receive detailed data for City of Bristol |
+| Expected availability | Quarterly |
+| Suggested collection interval | Annual |
+| References |  |
+| Deliverables describing the indicator | None specified |
+| Other indicator systems using this indicator | None |
+| B-3.2: Indicator Metadata |  |
+| Indicator Name | 2.5 Number of heat network connections to 'low carbon' heat networks |
+| Indicator Unit | Number of heat network connections |
+| Definition | Number of heat network connections to 'low carbon' heat networks |
+| Calculation | Sum of number of heat network connections to 'low carbon' heat networks |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes |
+| If yes, which emission source sectors does it measure? | Stationary energy |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | No |
+| If yes, which co-benefit does it measure? |  |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Impact Pathway 2: Energy Systems – Heat network expansion |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no |
+| Data requirements |  |
+| Expected data source | UK Gov Department for Energy Security and Net Zero (for number of connections), Vattenfall carbon intensity statistics for Bristol Heat Network |
+| Is the data source local or regional/national? | National (UK Gov stats) and local (Vattenfall stats) |
+| Expected availability | Annual (one year in arrears for UK Gov Stats) |
+| Suggested collection interval | Annual |
+| References | Deliverables describing the indicator None specified<br>Other indicator systems using this indicator None |
+| B-3.2: Indicator Metadata |  |
+| Indicator Name | 2.6 Carbon intensity of gas network |
+| Indicator Unit | kilograms of CO2e / kWh |
+| Definition | Carbon intensity of gas provided to end users of the central gas network |
+| Calculation | kilograms of CO2e produced for each kWh of energy produced through consumption of blended gas from the central gas network |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes |
+| If yes, which emission source sectors does it measure? | Stationary energy |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | No |
+| If yes, which co-benefit does it measure? | Not applicable |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Impact Pathway 2: Energy Systems – Reduce carbon intensity of existing network |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No |
+| Data requirements |  |
+| Expected data source | Wales and West Utilities |
+| Is the data source local or regional/national? | Regional |
+| Expected availability | Annual |
+| Suggested collection interval | Annual |
+| References |  |
+| Deliverables describing the indicator | None specified |
+| Other indicator systems using this indicator | None |
 
 Please note indicator 2.7 with reference to skills programmes is not available as it is being developed by the key stakeholder.
 
 Impact Pathway 3: Built Environment
 
-|  B-3.2: Indicator Metadata  |   |
+| B-3.2: Indicator Metadata |  |
 | --- | --- |
-|  Indicator Name | 3.1 Number of homes EPC C and above  |
-|  Indicator Unit | Number of homes  |
-|  Definition | Number of homes EPC C and above  |
-|  Calculation | Sum of number of homes EPC C and above  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes  |
-|  If yes, which emission source sectors does it measure? | Stationary energy  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | Numerous suggested co-benefits including increased likelihood of warmer homes; reduced fuel poverty; reduced damp and mould in homes improving health; growth of local supply chain – see Impact Pathway 3  |
-
-Page | 94
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-| --- | --- |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathway 3: Built Environment - Reduce energy demand in homes  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | UK Central government Ministry of Housing, Communities and Local Government, and city-wide housing stock model, e.g. Parity Projects Ltd  |
-|  Is the data source local or regional/national? | National data, available for local level  |
-|  Expected availability | Quarterly  |
-|  Suggested collection interval | Annual  |
-|  References |   |
-|  Deliverables describing the indicator | None specified  |
-|  Other indicator systems using this indicator | None  |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  (For each indicator selected)  |   |
-|  Indicator Name | 3.2 Number of non-domestic buildings EPC C and above  |
-|  Indicator Unit | Number of non-domestic buildings  |
-|  Definition | Number of non-domestic buildings EPC C and above  |
-|  Calculation | Sum of number of non-domestic buildings EPC C and above  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes  |
-|  If yes, which emission source sectors does it measure? | Stationary energy  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | Numerous suggested co-benefits including lower running costs; properties easier to rent; growth of local supply chain – see Impact Pathway 3  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathway 3: Built Environment - Reduce energy demand in non-domestic buildings  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | UK Central government Ministry of Housing, Communities and Local Government  |
-|  Is the data source local or regional/national? | National data, available for local level  |
-|  Expected availability | Quarterly  |
-|  Suggested collection interval | Annual  |
-|  References |   |
-|  Deliverables describing the indicator | None specified  |
-|  Other indicator systems using this indicator | None  |
+| Indicator Name | 3.1 Number of homes EPC C and above |
+| Indicator Unit | Number of homes |
+| Definition | Number of homes EPC C and above |
+| Calculation | Sum of number of homes EPC C and above |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes |
+| If yes, which emission source sectors does it measure? | Stationary energy |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes |
+| If yes, which co-benefit does it measure? | Numerous suggested co-benefits including increased likelihood of warmer homes; reduced fuel poverty; reduced damp and mould in homes improving health; growth of local supply chain – see Impact Pathway 3 |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Impact Pathway 3: Built Environment - Reduce energy demand in homes |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No |
+| Data requirements |  |
+| Expected data source | UK Central government Ministry of Housing, Communities and Local Government, and city-wide housing stock model, e.g. Parity Projects Ltd |
+| Is the data source local or regional/national? | National data, available for local level |
+| Expected availability | Quarterly |
+| Suggested collection interval | Annual |
+| References |  |
+| Deliverables describing the indicator | None specified |
+| Other indicator systems using this indicator | None |
+| B-3.2: Indicator Metadata |  |
+| (For each indicator selected) |  |
+| Indicator Name | 3.2 Number of non-domestic buildings EPC C and above |
+| Indicator Unit | Number of non-domestic buildings |
+| Definition | Number of non-domestic buildings EPC C and above |
+| Calculation | Sum of number of non-domestic buildings EPC C and above |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes |
+| If yes, which emission source sectors does it measure? | Stationary energy |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes |
+| If yes, which co-benefit does it measure? | Numerous suggested co-benefits including lower running costs; properties easier to rent; growth of local supply chain – see Impact Pathway 3 |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Impact Pathway 3: Built Environment - Reduce energy demand in non-domestic buildings |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No |
+| Data requirements |  |
+| Expected data source | UK Central government Ministry of Housing, Communities and Local Government |
+| Is the data source local or regional/national? | National data, available for local level |
+| Expected availability | Quarterly |
+| Suggested collection interval | Annual |
+| References |  |
+| Deliverables describing the indicator | None specified |
+| Other indicator systems using this indicator | None |
 
 Please note indicator 3.3 with reference to skills programmes is not available as it is being developed by the key stakeholder.
 Impact Pathway 4: Mobility and Transport
 
-|  B-3.2: Indicator Metadata  |   |
+| B-3.2: Indicator Metadata |  |
 | --- | --- |
-|  Indicator Name | 4.1 Car miles per year  |
-|  Indicator Unit | Car miles  |
-|  Definition | Car miles travelled within city boundary per year  |
-|  Calculation | GPC Protocol compliant - Data shown includes 50% inbound, 50% outbound, and 100% in-boundary trips per the Global Protocol for Community-Scale GHG Inventories. Further information available at: https://insights.sustainability.google/methodology?hl=en-US#transportation  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes  |
-|  If yes, which emission source sectors does it measure? | Transportation  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | Numerous suggested co-benefits including air quality improvements; road safety improvements – see Impact Pathway 4  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathway 4 : Mobility and Transport - Car mileage reduction  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | Google Environmental Insights Explorer  |
-|  Is the data source local or regional/national? | Local  |
-|  Expected availability | Annual  |
-|  Suggested collection interval | Annual  |
-|  References |   |
-|  Deliverables describing the indicator | None specified  |
-|  Other indicator systems using this indicator | None  |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  Indicator Name | 4.2 Active travel miles per year  |
-|  Indicator Unit | Active travel miles  |
-|  Definition | Active travel (walking and cycling) miles travelled within city boundary per year  |
-|  Calculation | GPC Protocol compliant - Data shown includes 50% inbound, 50% outbound, and 100% in-boundary trips per the Global Protocol for Community-Scale GHG Inventories. Further information available at: https://insights.sustainability.google/methodology?hl=en-US#transportation  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes  |
-|  If yes, which emission source sectors does it measure? | Transportation  |
-
-Page | 96
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes  |
-| --- | --- |
-|  If yes, which co-benefit does it measure? | Suggested co-benefits are air quality improvements ; road safety improvements ; public health benefits – see Impact Pathway 4  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathway 4: Mobility and Transport - Travel mode shift to active travel  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | Google Environmental Insights Explorer  |
-|  Is the data source local or regional/national? | Local  |
-|  Expected availability | Annual  |
-|  Suggested collection interval | Annual  |
-|  References |   |
-|  Deliverables describing the indicator | None specified  |
-|  Other indicator systems using this indicator | None  |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  Indicator Name | 4.3 Public transport passenger miles per year  |
-|  Indicator Unit | Public transport passenger miles  |
-|  Definition | Public transport travel (bus, light rail and train) miles travelled within city boundary per year  |
-|  Calculation | GPC Protocol compliant - Data shown includes 50% inbound, 50% outbound, and 100% in-boundary trips per the Global Protocol for Community-Scale GHG Inventories. Further information available at: https://insights.sustainability.google/methodology?hl=en-US#transportation  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes  |
-|  If yes, which emission source sectors does it measure? | Transportation  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | Suggested co-benefits are air quality improvements; road safety improvements; public health benefits – see Impact Pathway 4  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathway 4: Mobility and Transport - Travel mode shift to public transport use  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | Google Environmental Insights Explorer  |
-|  Is the data source local or regional/national? | Local  |
-|  Expected availability | Annual  |
-|  Suggested collection interval | Annual  |
-|  References |   |
-Page | 98
-
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  Indicator Name | 4.4 Number of low carbon freight consolidation centres  |
-|  Indicator Unit | Number of low carbon freight consolidation centres  |
-|  Definition | Number of low carbon freight consolidation centres within the Bristol area  |
-|  Calculation | Sum of number of low carbon freight consolidation centres counted  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | No, however it is the best proxy indicator currently available  |
-|  If yes, which emission source sectors does it measure? | Transportation  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | Suggested co-benefits are air quality improvements ; road safety improvements – see Impact Pathway 4  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathway 4 : Mobility and Transport - Freight consolidation and low carbon deliveries  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | Bristol City Council  |
-|  Is the data source local or regional/national? | Local  |
-|  Expected availability | Annual  |
-|  Suggested collection interval | Annual  |
-|  References |   |
-|  Deliverables describing the indicator | None specified  |
-|  Other indicator systems using this indicator | None  |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  Indicator Name | 4.5 Number of public charging points  |
-|  Indicator Unit | Number of public charging points  |
-|  Definition | Number of electric vehicle charging points installed as part of the public network within the Bristol area.  |
-|  Calculation | Number of electric vehicle charging points installed as part of the public network within the Bristol area.  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes  |
-|  If yes, which emission source sectors does it measure? | Transportation  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | No, however it is the best proxy indicator currently available  |
-|  If yes, which co-benefit does it measure? | Suggested co-benefits are air quality improvements ; public health benefits – see Impact Pathway 4  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathway 4 : Mobility and Transport - Travel mode shift to electric vehicles ravel mode shift to public transport use  |
-Page | 99
-
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
-| --- | --- |
-|  Data requirements |   |
-|  Expected data source | Bristol City Council  |
-|  Is the data source local or regional/national? | Local  |
-|  Expected availability | Annual  |
-|  Suggested collection interval | Annual  |
-|  References |   |
-|  Deliverables describing the indicator | None specified  |
-|  Other indicator systems using this indicator | None  |
+| Indicator Name | 4.1 Car miles per year |
+| Indicator Unit | Car miles |
+| Definition | Car miles travelled within city boundary per year |
+| Calculation | GPC Protocol compliant - Data shown includes 50% inbound, 50% outbound, and 100% in-boundary trips per the Global Protocol for Community-Scale GHG Inventories. Further information available at: https://insights.sustainability.google/methodology?hl=en-US#transportation |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes |
+| If yes, which emission source sectors does it measure? | Transportation |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes |
+| If yes, which co-benefit does it measure? | Numerous suggested co-benefits including air quality improvements; road safety improvements – see Impact Pathway 4 |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Impact Pathway 4 : Mobility and Transport - Car mileage reduction |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No |
+| Data requirements |  |
+| Expected data source | Google Environmental Insights Explorer |
+| Is the data source local or regional/national? | Local |
+| Expected availability | Annual |
+| Suggested collection interval | Annual |
+| References |  |
+| Deliverables describing the indicator | None specified |
+| Other indicator systems using this indicator | None |
+| B-3.2: Indicator Metadata |  |
+| Indicator Name | 4.2 Active travel miles per year |
+| Indicator Unit | Active travel miles |
+| Definition | Active travel (walking and cycling) miles travelled within city boundary per year |
+| Calculation | GPC Protocol compliant - Data shown includes 50% inbound, 50% outbound, and 100% in-boundary trips per the Global Protocol for Community-Scale GHG Inventories. Further information available at: https://insights.sustainability.google/methodology?hl=en-US#transportation |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes |
+| If yes, which emission source sectors does it measure? | Transportation |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes |
+| If yes, which co-benefit does it measure? | Suggested co-benefits are air quality improvements ; road safety improvements ; public health benefits – see Impact Pathway 4 |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Impact Pathway 4: Mobility and Transport - Travel mode shift to active travel |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No |
+| Data requirements |  |
+| Expected data source | Google Environmental Insights Explorer |
+| Is the data source local or regional/national? | Local |
+| Expected availability | Annual |
+| Suggested collection interval | Annual |
+| References |  |
+| Deliverables describing the indicator | None specified |
+| Other indicator systems using this indicator | None |
+| B-3.2: Indicator Metadata |  |
+| Indicator Name | 4.3 Public transport passenger miles per year |
+| Indicator Unit | Public transport passenger miles |
+| Definition | Public transport travel (bus, light rail and train) miles travelled within city boundary per year |
+| Calculation | GPC Protocol compliant - Data shown includes 50% inbound, 50% outbound, and 100% in-boundary trips per the Global Protocol for Community-Scale GHG Inventories. Further information available at: https://insights.sustainability.google/methodology?hl=en-US#transportation |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes |
+| If yes, which emission source sectors does it measure? | Transportation |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes |
+| If yes, which co-benefit does it measure? | Suggested co-benefits are air quality improvements; road safety improvements; public health benefits – see Impact Pathway 4 |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Impact Pathway 4: Mobility and Transport - Travel mode shift to public transport use |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No |
+| Data requirements |  |
+| Expected data source | Google Environmental Insights Explorer |
+| Is the data source local or regional/national? | Local |
+| Expected availability | Annual |
+| Suggested collection interval | Annual |
+| References |  |
+| B-3.2: Indicator Metadata |  |
+| Indicator Name | 4.4 Number of low carbon freight consolidation centres |
+| Indicator Unit | Number of low carbon freight consolidation centres |
+| Definition | Number of low carbon freight consolidation centres within the Bristol area |
+| Calculation | Sum of number of low carbon freight consolidation centres counted |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | No, however it is the best proxy indicator currently available |
+| If yes, which emission source sectors does it measure? | Transportation |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes |
+| If yes, which co-benefit does it measure? | Suggested co-benefits are air quality improvements ; road safety improvements – see Impact Pathway 4 |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Impact Pathway 4 : Mobility and Transport - Freight consolidation and low carbon deliveries |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No |
+| Data requirements |  |
+| Expected data source | Bristol City Council |
+| Is the data source local or regional/national? | Local |
+| Expected availability | Annual |
+| Suggested collection interval | Annual |
+| References |  |
+| Deliverables describing the indicator | None specified |
+| Other indicator systems using this indicator | None |
+| B-3.2: Indicator Metadata |  |
+| Indicator Name | 4.5 Number of public charging points |
+| Indicator Unit | Number of public charging points |
+| Definition | Number of electric vehicle charging points installed as part of the public network within the Bristol area. |
+| Calculation | Number of electric vehicle charging points installed as part of the public network within the Bristol area. |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes |
+| If yes, which emission source sectors does it measure? | Transportation |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | No, however it is the best proxy indicator currently available |
+| If yes, which co-benefit does it measure? | Suggested co-benefits are air quality improvements ; public health benefits – see Impact Pathway 4 |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Impact Pathway 4 : Mobility and Transport - Travel mode shift to electric vehicles ravel mode shift to public transport use |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No |
+| Data requirements |  |
+| Expected data source | Bristol City Council |
+| Is the data source local or regional/national? | Local |
+| Expected availability | Annual |
+| Suggested collection interval | Annual |
+| References |  |
+| Deliverables describing the indicator | None specified |
+| Other indicator systems using this indicator | None |
 
 # Impact Pathway 5: Waste and Circular Economy
 
 Please note indicators 5.1 and 5.2 and with reference to consumption and waste reduction are not available as they are being determined.
 
-|  B-3.2: Indicator Metadata  |   |
+| B-3.2: Indicator Metadata |  |
 | --- | --- |
-|  Indicator Name | 5.3 Domestic waste recycling rate  |
-|  Indicator Unit | % of household waste sent for recycling  |
-|  Definition | % of household waste originating within the Bristol area sent for recycling  |
-|  Calculation | Total weight of collections sent for recycling, anaerobic digestion, or composting, divided by total weight of all collections per year.  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes  |
-|  If yes, which emission source sectors does it measure? | Waste  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | Suggested numerous co-benefits including reduced littering – see Impact Pathway 5  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathway 5 : Waste and Circular Economy - Waste reduction  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes  |
-|  Data requirements |   |
-|  Expected data source | UK Central government Department for Environment, Food and Rural Affairs  |
-|  Is the data source local or regional/national? | National data, produced and available for local level  |
-|  Expected availability | Annual  |
-|  Suggested collection interval | Annual  |
-|  References |   |
-|  Deliverables describing the indicator | None specified  |
-|  Other indicator systems using this indicator | None  |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  Indicator Name | 5.4 Carbon intensity of Energy from Waste production  |
-|  Indicator Unit | Kilograms of C02e / tonne of waste incinerated  |
-|  Definition | Kilograms of C02e produced per tonne of waste incinerated at Energy from Waste facilities in Bristol  |
-Page | 100
-
-|  Calculation | Total tonnes of C02e produced divided by total tonnes of waste incinerated per year  |
-| --- | --- |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes  |
-|  If yes, which emission source sectors does it measure? | Waste  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | Suggested co-benefits are air quality improvements and improved resilience in local circular economy  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathway 5 : Waste and Circular Economy - Waste reduction  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | UK Central government (Environment Agency) Pollution Inventory  |
-|  Is the data source local or regional/national? | National data, produced and available for local level  |
-|  Expected availability | Annual  |
-|  Suggested collection interval | Annual  |
-|  References |   |
-|  Deliverables describing the indicator | None specified  |
-|  Other indicator systems using this indicator | None  |
+| Indicator Name | 5.3 Domestic waste recycling rate |
+| Indicator Unit | % of household waste sent for recycling |
+| Definition | % of household waste originating within the Bristol area sent for recycling |
+| Calculation | Total weight of collections sent for recycling, anaerobic digestion, or composting, divided by total weight of all collections per year. |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes |
+| If yes, which emission source sectors does it measure? | Waste |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes |
+| If yes, which co-benefit does it measure? | Suggested numerous co-benefits including reduced littering – see Impact Pathway 5 |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Impact Pathway 5 : Waste and Circular Economy - Waste reduction |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes |
+| Data requirements |  |
+| Expected data source | UK Central government Department for Environment, Food and Rural Affairs |
+| Is the data source local or regional/national? | National data, produced and available for local level |
+| Expected availability | Annual |
+| Suggested collection interval | Annual |
+| References |  |
+| Deliverables describing the indicator | None specified |
+| Other indicator systems using this indicator | None |
+| B-3.2: Indicator Metadata |  |
+| Indicator Name | 5.4 Carbon intensity of Energy from Waste production |
+| Indicator Unit | Kilograms of C02e / tonne of waste incinerated |
+| Definition | Kilograms of C02e produced per tonne of waste incinerated at Energy from Waste facilities in Bristol |
+| Calculation | Total tonnes of C02e produced divided by total tonnes of waste incinerated per year |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes |
+| If yes, which emission source sectors does it measure? | Waste |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes |
+| If yes, which co-benefit does it measure? | Suggested co-benefits are air quality improvements and improved resilience in local circular economy |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Impact Pathway 5 : Waste and Circular Economy - Waste reduction |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No |
+| Data requirements |  |
+| Expected data source | UK Central government (Environment Agency) Pollution Inventory |
+| Is the data source local or regional/national? | National data, produced and available for local level |
+| Expected availability | Annual |
+| Suggested collection interval | Annual |
+| References |  |
+| Deliverables describing the indicator | None specified |
+| Other indicator systems using this indicator | None |
 
 Impact Pathway 6: Green Infrastructure and Nature-based Solutions
 
-|  B-3.2: Indicator Metadata  |   |
+| B-3.2: Indicator Metadata |  |
 | --- | --- |
-|  Indicator Name | 6.1 Number of parks achieving 'good' status.  |
-|  Indicator Unit | Number of parks achieving 'good' status.  |
-|  Definition | The Bristol City Council Parks Service is developing a new quality standard as set out in the 2024 Parks and Green Spaces Strategy. Whilst this new Bristol Quality Standard is being developed 'good' refers to the Green Flag Quality Standard.  |
-|  Calculation | Number of parks achieving 'good' status  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | No  |
-|  If yes, which emission source sectors does it measure? | Not applicable  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | Suggested co-benefits include improved public health; improved ecosystem resilience – see Impact Pathway 6  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathway 6: Green Infrastructure and Nature-based Solutions - Green infrastructure for climate resilience  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | Bristol City Council Parks Service  |
-|  Is the data source local or regional/national? | Local  |
-Page | 101
-
-|  Expected availability | To be defined  |
-| --- | --- |
-|  Suggested collection interval | To be defined  |
-|  References |   |
-|  Deliverables describing the indicator | None specified  |
-|  Other indicator systems using this indicator | None  |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  Indicator Name | 6.2 Area of Bristol City Council-owned (BCC) parks land managed for nature  |
-|  Indicator Unit | Hectares  |
-|  Definition | The definition of BCC-owned land being managed for nature is that the land is either being managed on a conservation maintenance regime (mapped in an asset management system); or it has a Habitat Management Plan/Brief which is being actively implemented  |
-|  Calculation | Hectares of land achieving ‘Land Managed for Nature’ definition  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | No  |
-|  If yes, which emission source sectors does it measure? | Not applicable  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | Suggested co-benefits include improved public health; improved pride of place; improved ecosystem resilience – see Impact Pathway 6  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathway 6: Green Infrastructure and Nature-based Solutions - Green infrastructure for climate resilience  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | BCC corporate reporting or BCC Parks Service  |
-|  Is the data source local or regional/national? | Local  |
-|  Expected availability | Annual  |
-|  Suggested collection interval | Annual  |
-|  References |   |
-|  Deliverables describing the indicator | None specified  |
-|  Other indicator systems using this indicator | This measure could also be applied to assess the improvement in the quality of existing green spaces linked to 6.1 above.  |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  Indicator Name | 6.3 Area of new green space created  |
-|  Indicator Unit | Hectares  |
-|  Definition | The BCC Parks Strategy ‘Minimum Standards for publicly accessible new space’ defines that new green spaces should be a minimum size of 0.2 hectares  |
-|  Calculation | Additional hectares of green space compared to baseline year  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | No  |
-Page | 102
-
-|  If yes, which emission source sectors does it measure? | Not applicable  |
-| --- | --- |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | Suggested co-benefits include improved public health; improved pride of place; improved ecological resilience – see Impact Pathway 6  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathway 6: Green Infrastructure and Nature-based Solutions - Green infrastructure for climate resilience  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | Bristol City Council  |
-|  Is the data source local or regional/national? | Local  |
-|  Expected availability | Annual  |
-|  Suggested collection interval | To be determined  |
-|  References |   |
-|  Deliverables describing the indicator | None specified  |
-|  Other indicator systems using this indicator | None  |
+| Indicator Name | 6.1 Number of parks achieving 'good' status. |
+| Indicator Unit | Number of parks achieving 'good' status. |
+| Definition | The Bristol City Council Parks Service is developing a new quality standard as set out in the 2024 Parks and Green Spaces Strategy. Whilst this new Bristol Quality Standard is being developed 'good' refers to the Green Flag Quality Standard. |
+| Calculation | Number of parks achieving 'good' status |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | No |
+| If yes, which emission source sectors does it measure? | Not applicable |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes |
+| If yes, which co-benefit does it measure? | Suggested co-benefits include improved public health; improved ecosystem resilience – see Impact Pathway 6 |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Impact Pathway 6: Green Infrastructure and Nature-based Solutions - Green infrastructure for climate resilience |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No |
+| Data requirements |  |
+| Expected data source | Bristol City Council Parks Service |
+| Is the data source local or regional/national? | Local |
+| Expected availability | To be defined |
+| Suggested collection interval | To be defined |
+| References |  |
+| Deliverables describing the indicator | None specified |
+| Other indicator systems using this indicator | None |
+| B-3.2: Indicator Metadata |  |
+| Indicator Name | 6.2 Area of Bristol City Council-owned (BCC) parks land managed for nature |
+| Indicator Unit | Hectares |
+| Definition | The definition of BCC-owned land being managed for nature is that the land is either being managed on a conservation maintenance regime (mapped in an asset management system); or it has a Habitat Management Plan/Brief which is being actively implemented |
+| Calculation | Hectares of land achieving ‘Land Managed for Nature’ definition |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | No |
+| If yes, which emission source sectors does it measure? | Not applicable |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes |
+| If yes, which co-benefit does it measure? | Suggested co-benefits include improved public health; improved pride of place; improved ecosystem resilience – see Impact Pathway 6 |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Impact Pathway 6: Green Infrastructure and Nature-based Solutions - Green infrastructure for climate resilience |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No |
+| Data requirements |  |
+| Expected data source | BCC corporate reporting or BCC Parks Service |
+| Is the data source local or regional/national? | Local |
+| Expected availability | Annual |
+| Suggested collection interval | Annual |
+| References |  |
+| Deliverables describing the indicator | None specified |
+| Other indicator systems using this indicator | This measure could also be applied to assess the improvement in the quality of existing green spaces linked to 6.1 above. |
+| B-3.2: Indicator Metadata |  |
+| Indicator Name | 6.3 Area of new green space created |
+| Indicator Unit | Hectares |
+| Definition | The BCC Parks Strategy ‘Minimum Standards for publicly accessible new space’ defines that new green spaces should be a minimum size of 0.2 hectares |
+| Calculation | Additional hectares of green space compared to baseline year |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | No |
+| If yes, which emission source sectors does it measure? | Not applicable |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes |
+| If yes, which co-benefit does it measure? | Suggested co-benefits include improved public health; improved pride of place; improved ecological resilience – see Impact Pathway 6 |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Impact Pathway 6: Green Infrastructure and Nature-based Solutions - Green infrastructure for climate resilience |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No |
+| Data requirements |  |
+| Expected data source | Bristol City Council |
+| Is the data source local or regional/national? | Local |
+| Expected availability | Annual |
+| Suggested collection interval | To be determined |
+| References |  |
+| Deliverables describing the indicator | None specified |
+| Other indicator systems using this indicator | None |
 
 # 4 Part C – Enabling Climate Neutrality by 2030
 
@@ -2482,14 +2049,12 @@ In addition, the Climate Neutral and Smart Cities Mission has enabled us to chan
 
 Table: C.1.2: Relations between governance innovations, systems and impact pathways
 
-|  Intervention name | Description | Systemic barriers / opportunities addressed | Leadership and stakeholders involved | Enabling impact | Co-benefits  |
+| Intervention name | Description | Systemic barriers / opportunities addressed | Leadership and stakeholders involved | Enabling impact | Co-benefits |
 | --- | --- | --- | --- | --- | --- |
-|  One City Approach | It brings together a huge range of public, private, voluntary and third sector partners to work together to make Bristol fairer, healthier and more sustainable. | Its main focus is to facilitate integrated action addressing the challenge that no single organisation can deliver a climate neutral city. | See Module A3 for the full list. All boards are co-chaired by a the chair of the relevant council policy committee chair and a senior representative of a partner organisation. | Responsible for One City Climate Strategy | The more integrated approach of the Approach creates the conditions which facilitate realisation of co-benefits  |
-|  Transition Team | Multi-partner team of the main actors in net zero. | As above | See A3.1 | Co-ordinated development and delivery of this action plan |   |
-|  Mission Net Zero Project | See text box above in this section | Focused on citizen engagement, infrastructure, skills and finance | Local and regional government, community and voluntary sector organisations and infrastructure providers | To combine customer demand, supply chain capacity and investment on a platform of robust data. | Skills and focus on Just Transition  |
+| One City Approach | It brings together a huge range of public, private, voluntary and third sector partners to work together to make Bristol fairer, healthier and more sustainable. | Its main focus is to facilitate integrated action addressing the challenge that no single organisation can deliver a climate neutral city. | See Module A3 for the full list. All boards are co-chaired by a the chair of the relevant council policy committee chair and a senior representative of a partner organisation. | Responsible for One City Climate Strategy | The more integrated approach of the Approach creates the conditions which facilitate realisation of co-benefits |
+| Transition Team | Multi-partner team of the main actors in net zero. | As above | See A3.1 | Co-ordinated development and delivery of this action plan |  |
+| Mission Net Zero Project | See text box above in this section | Focused on citizen engagement, infrastructure, skills and finance | Local and regional government, community and voluntary sector organisations and infrastructure providers | To combine customer demand, supply chain capacity and investment on a platform of robust data. | Skills and focus on Just Transition |
 
-Page | 103
-Page | 104
 
 # 4.2 Module C-2 Social Innovation Interventions
 
@@ -2497,19 +2062,18 @@ This module lists the actions taken by the city to address the systemic barriers
 
 C.2.1 Relations between social innovations, systems, and impact pathways
 
-|  Intervention name | Description | Systemic barriers / opportunities addressed | Leadership and stakeholders involved | Enabling impact | Co-benefits  |
+| Intervention name | Description | Systemic barriers / opportunities addressed | Leadership and stakeholders involved | Enabling impact | Co-benefits |
 | --- | --- | --- | --- | --- | --- |
-|  Just Transition | Further embed Just Transition principles into CCC and support wider adoption in the city. | Engagement, culture and inclusion | Transition Team and partners in the One City Approach | See Impact Pathways for details | See Impact Pathways for details  |
-|  Communication and Engagement | Deliver transformative, inclusive, programmes of environmental communications, consultation and engagement and support | Engagement, culture and inclusion | BCC, Transition Team, Mission Net Zero Project and all organisations involved in the design and delivery of major projects in the city. | See Impact Pathways for details | See Impact Pathways for details  |
-|  Green jobs and Skills | Widen access to green jobs and skills | Skills and capacity | BCC and WECA and others skills sector partners | See Impact Pathways for details | See Impact Pathways for details  |
-|  Green jobs and Skills | Deliver programme to support employers to create and sustain green jobs | Skills and capacity |   | See Impact Pathways for details | See Impact Pathways for details  |
+| Just Transition | Further embed Just Transition principles into CCC and support wider adoption in the city. | Engagement, culture and inclusion | Transition Team and partners in the One City Approach | See Impact Pathways for details | See Impact Pathways for details |
+| Communication and Engagement | Deliver transformative, inclusive, programmes of environmental communications, consultation and engagement and support | Engagement, culture and inclusion | BCC, Transition Team, Mission Net Zero Project and all organisations involved in the design and delivery of major projects in the city. | See Impact Pathways for details | See Impact Pathways for details |
+| Green jobs and Skills | Widen access to green jobs and skills | Skills and capacity | BCC and WECA and others skills sector partners | See Impact Pathways for details | See Impact Pathways for details |
+| Green jobs and Skills | Deliver programme to support employers to create and sustain green jobs | Skills and capacity |  | See Impact Pathways for details | See Impact Pathways for details |
 
 # C-2.2: Description of social innovation interventions
 
 The actions that would have been in this section are set out as actions in the action portfolio table B2.1.
 
 Further work is needed to address the barriers/strategic risks set out in the One City Climate strategy, action plan and investment plan. Some of these will build on existing projects such as Mission Net Zero Project and the Net Zero Investment Co-innovation Lab.
-Page | 105
 
 # 5 Outlook and next steps
 
@@ -2563,7 +2127,6 @@ Annex 4 – Impact Pathway 4: Mobility and Transport
 Annex 5 – Impact Pathway 5: Waste and Circular Economy
 Annex 6 – Impact Pathway 6: Green Infrastructure and Nature-based Solutions
 
-Page | 106
 NET ZERO CITIES
 EU MISSION PLATFORM | CLIMATE NEUTRAL AND SMART CITIES
 
@@ -2577,11 +2140,9 @@ CLIMATE ACTION
 The content of this document reflects only the author's view. The European Commission is not responsible for any use that may be made of the information it contains.
 
 NetZeroCities has received funding from the H2020 Research and Innovation Programme under the grant agreement n°101036519.
-BRISTOL CLIMATE ACTION
 
 Bristol One City Climate Neutrality Commitments
 
-2
 
 # Table of contents
 
@@ -2592,7 +2153,6 @@ Strategic priorities ... 6
 Process and principles ... 8
 Signatories ... 9
 Contract with signatures ... 10
-BRISTOL CLIMATE ACTION
 
 Bristol One City Climate Neutrality Commitments
 
@@ -2613,11 +2173,9 @@ As well as establishing these structures to advise the city, operationally Brist
 European Union funding had been an essential part of the process of achieving Bristol City Leap. The European Local ENergy Assistance (ELENA) funding was the start of the journey enabling the Bristol City Council to increase its capacity and capability. This led to the capacity to deliver over €100m of investment in sustainable energy projects. This was the platform for the successful achievement of Bristol City Leap. The City Council assets developed included the Castle Park Energy Centre – the UK's largest single water source heat pump - which saw Bristol named Heat Pump City of the Year at the 2022 European Heat Pump Association Awards.
 
 It is also clear that how to pay for climate action is a critical consideration which city partners must address. This was reflected by some of the recommendations of the Citizens Assembly held in Bristol in 2021. The Assembly considered the questions of How do we rapidly reduce the impact of our homes on climate change? What changes should we make to our neighbourhoods to make how we travel easier, healthier and better for the environment? and How should we tackle health inequalities in Bristol? Many of the recommendations made by the Assembly need substantial, additional amounts of money to achieve for example, Recommendation 3: Create innovative financing options including grants, and/or loans to support homeowners and landlords to improve the energy efficiency of every home in Bristol and Recommendation 9: By 2030, make Bristol the best city internationally to travel
-BRISTOL CLIMATE ACTION
 
 Bristol One City Climate Neutrality Commitments
 
-4
 
 around, by prioritising sustainable, safe, healthy, accessible alternatives to the car for all. Some other recommendations are being actioned and some others require funding to be taken forward.
 
@@ -2632,11 +2190,9 @@ In April 2022, 100 cities in the EU and 12 cities in countries associated to Hor
 Following selection as a Mission City, Bristol City Council and partners Abundance, Bristol and Bath Regional Capital and Bristol Climate and Nature Partnership applied for associated Pilot City Project funding to support a project focused on innovative ways of financing climate action. Bristol's project the Net Zero Investment Co-innovation Lab is developing new ways to fund climate action in the city.
 
 In 2023, Bristol City Council and a wide partnership was awarded national research funding from Innovate UK to carry out a new project - Mission Net Zero. This project directly builds upon the ideas and approach of the Climate Neutral and Smart Cities Mission. The partners include all local authorities in the region, the West of England Combined Authority, Bristol and Bath Regional Capital, Bristol Climate and Nature Partnership, Bristol City Leap, Bristol Energy Network, Centre for Sustainable Energy, Living Places and National Grid Electricity Distribution. Mission Net Zero aims to speed up Bristol and the West of England's transition to net zero by working with local people to address some of the barriers to progress such as finding money for improvements and having the skilled professionals to do them. Funding will be used to support three communities in Bristol to plan the climate action projects that they want in their neighbourhoods and help them secure money to take them forward; this could include improving the energy efficiency of homes, generating more renewable energy or other actions. It will also build support for climate action through a strategic climate investment plan for Bristol and the West of England, to help direct investment into projects that will help reduce carbon emissions. In addition, it will support small businesses and people wanting to work on these climate projects, creating jobs and providing training for local people. This project complements the Climate City Contract process by developing parallel climate investment plans in the three areas and at the regional level. It builds on the Community Climate Action Project by moving towards creating an investment plan at the local community level.
-BRISTOL CLIMATE ACTION
 
 Bristol One City Climate Neutrality Commitments
 
-5
 
 More recently, Bristol authors formulated a Just Transition Declaration to accompany the Climate and Ecological Emergency declarations again emphasising the urgency of action required on all three interlinked areas. In 2024, it was adopted by Bristol City Council and other city partners. It is set of 10 principles that all climate and ecological work in the city can use in making plans to make them as just as possible. The 10 principles (in no particular order of importance) are:
 
@@ -2667,11 +2223,9 @@ The future opportunities available to Bristol via participation in the Mission a
 
 further develop these initial plans with the benefit of more community involvement particularly with regard to the principles of the recent Just Transition Declaration
 offer Bristol's experience to and receive feedback from other Mission Cities through sensemaking opportunities.
-BRISTOL CLIMATE ACTION
 
 Bristol One City Climate Neutrality Commitments
 
-6
 
 # 2 Goal: Climate neutrality by 2030
 
@@ -2712,11 +2266,9 @@ Heat decarbonisation
 Electricity
 
 Emerging areas to take forward drawn from the action plan reflect these priority themes.
-BRISTOL CLIMATE ACTION
 
 Bristol One City Climate Neutrality Commitments
 
-7
 
 # Transport:
 
@@ -2764,11 +2316,9 @@ the expertise of financial experts and
 the investor community with an interest in decarbonisation and/or specific asset classes relevant to the decarbonisation actions and the related enabling conditions
 
 For this reason, the Transition Team is particularly interested in demonstrating the quality of our Climate City Contract sufficient to obtain the Cities Mission Label as we aim to be better connected with the expertise and investors associated with the European Climate City Capital Hub to facilitate capital flows to ensure we maximise the use of this to help implement our action plan.
-BRISTOL CLIMATE ACTION
 
 Bristol One City Climate Neutrality Commitments
 
-8
 
 Our next steps working as a Transition Team are to:
 deepen teamwork
@@ -2791,17 +2341,16 @@ The process of monitoring progress on the Climate City Contract will be the same
 The Climate City Contract will be treated as a dynamic document but with a scheduled update every two years.
 Climate-Neutrality Commitments
 
-9
 
 # 5 Signatories
 
 This table lists the signatories who are committing to this Climate City Contract and thereby to help the city achieve its goal to reach climate neutrality by 2030.
 
-|  Name of the signatory (organisation) | Sector / Domain / Level of operation | Legal form | Name of the responsible person | Position of the responsible person  |
+| Name of the signatory (organisation) | Sector / Domain / Level of operation | Legal form | Name of the responsible person | Position of the responsible person |
 | --- | --- | --- | --- | --- |
-|  Bristol City Council | Local Government / Local | Local Authority | Councillor Tony Dyer | Leader, Bristol City Council  |
-|  One City Environment Board | Cross-Sector / Local | City partnership organisation | Councillor Martin Fodor, Ann Cousins | Co-Chairs of the Board  |
-|  Bristol Climate & Nature Partnership | Environmental network/Local | CIC | Lizzi Testani | Chief Executive Officer  |
-|  Business West | Business/Regional | Private Limited Company | Jessica Vallentine | Director of Responsible Business  |
-|  National Grid Electricity Distribution DSO | Electricity distributor/Regional | Public Limited Company | Emily Taylor | Strategic Engagement Officer  |
-|  Wales & West Utilities | Gas distribution network/Regional | Private Limited Company | Matthew Hindle | Head of Net Zero and Sustainability  |
+| Bristol City Council | Local Government / Local | Local Authority | Councillor Tony Dyer | Leader, Bristol City Council |
+| One City Environment Board | Cross-Sector / Local | City partnership organisation | Councillor Martin Fodor, Ann Cousins | Co-Chairs of the Board |
+| Bristol Climate & Nature Partnership | Environmental network/Local | CIC | Lizzi Testani | Chief Executive Officer |
+| Business West | Business/Regional | Private Limited Company | Jessica Vallentine | Director of Responsible Business |
+| National Grid Electricity Distribution DSO | Electricity distributor/Regional | Public Limited Company | Emily Taylor | Strategic Engagement Officer |
+| Wales & West Utilities | Gas distribution network/Regional | Private Limited Company | Matthew Hindle | Head of Net Zero and Sustainability |
