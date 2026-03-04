@@ -181,3 +181,36 @@ def test_markdown_payload_batches_keep_city_chunk_integrity(
             seen_chunk_ids.append(chunk["chunk_id"])
 
     assert seen_chunk_ids == ["a1", "a2", "a3", "b1"]
+
+
+def test_markdown_uses_markdown_researcher_max_turns(
+    monkeypatch: MonkeyPatch,
+) -> None:
+    config = _build_test_config()
+    config.markdown_researcher.max_turns = 10
+    config.retry.max_attempts = 5
+    documents = [
+        {
+            "path": "OnlyCity.md",
+            "city_name": "OnlyCity",
+            "city_key": "onlycity",
+            "content": "content",
+            "chunk_id": "only-1",
+        }
+    ]
+    observed_max_turns: list[int] = []
+
+    monkeypatch.setattr(markdown_agent, "build_markdown_agent", lambda *_args, **_kwargs: object())
+
+    def _fake_run_agent_sync(_agent: object, _input_data: str, **kwargs: object) -> _FakeRunResult:
+        max_turns = kwargs.get("max_turns")
+        assert isinstance(max_turns, int)
+        observed_max_turns.append(max_turns)
+        return _FakeRunResult(MarkdownResearchResult(excerpts=[]))
+
+    monkeypatch.setattr(markdown_agent, "run_agent_sync", _fake_run_agent_sync)
+
+    result = extract_markdown_excerpts("question?", documents, config, api_key="test")
+
+    assert result.status == "success"
+    assert observed_max_turns == [10]

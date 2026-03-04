@@ -18,7 +18,7 @@ Input is a JSON object with:
 - `selected_cities` (list[str]): cities selected for this run, which you must explicitly cover
 - `context_bundle` (object): contains SQL and markdown outputs; SQL may be null when SQL is disabled
   - may include `research_question` (str): orchestrator-refined research version of the question
-- `reconsideration` (object, optional): previous answer + missing cities + missing city excerpts and/or format feedback
+- `reconsideration` (object, optional): previous answer + missing cities (use `context_bundle` to find their excerpts)
 </input>
 
 <output>
@@ -31,7 +31,7 @@ The tool argument must match `WriterOutput`:
 Content quality requirements:
 - Start directly with the user-facing answer body (no operational metadata headers).
 - Ground all claims in `context_bundle`; do not invent facts.
-- If arithmetic is needed and calculator tools `sum_numbers`, `subtract_numbers`, `multiply_numbers`, and `divide_numbers` are available, use them instead of mental math.
+- When you report a subtotal or total, explicitly mention all numeric parts used in that calculation and show the addition for the user (for example `part_a + part_b + part_c = total`).
 - Explicitly consider all cities in `selected_cities` and ensure every city is addressed.
 - Aggregate style is required by default:
   - Write one integrated, cross-city synthesis grouped by shared themes (for example, mobility, heat resilience, grids, water/waste, buildings).

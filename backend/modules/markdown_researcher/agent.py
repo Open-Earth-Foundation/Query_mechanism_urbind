@@ -38,6 +38,7 @@ from backend.utils.retry import (
     log_retry_event,
     log_retry_exhausted,
 )
+
 logger = logging.getLogger(__name__)
 
 
@@ -159,6 +160,7 @@ def extract_markdown_excerpts(
             backoff_max_seconds=config.retry.backoff_max_seconds,
         )
         max_attempts = retry_settings.max_attempts
+        markdown_max_turns = max(config.markdown_researcher.max_turns, 1)
         run_result = None
         output: MarkdownResearchResult | None = None
         retryable_bad_output_reason: str | None = None
@@ -169,9 +171,10 @@ def extract_markdown_excerpts(
                 run_result = run_agent_sync(
                     agent,
                     json.dumps(payload, ensure_ascii=False),
-                    max_turns=config.retry.max_attempts,
+                    max_turns=markdown_max_turns,
                     log_llm_payload=log_llm_payload,
                 )
+
                 # Get the final output - handle all format variations
                 final_output = run_result.final_output
                 output = coerce_markdown_result(final_output)
@@ -257,9 +260,11 @@ def extract_markdown_excerpts(
                 "Markdown %s batch %s returned invalid output (coercion failed). result.final_output=%s",
                 city_name,
                 batch_index,
-                run_result.final_output
-                if hasattr(run_result, "final_output")
-                else run_result,
+                (
+                    run_result.final_output
+                    if hasattr(run_result, "final_output")
+                    else run_result
+                ),
             )
             error = ErrorInfo(
                 code="MARKDOWN_OUTPUT_INVALID",
@@ -304,7 +309,9 @@ def extract_markdown_excerpts(
     batch_max_chunks = max(config.markdown_researcher.batch_max_chunks, 1)
     batch_token_limit = resolve_batch_input_token_limit(config)
     for city_name, city_documents in sorted(documents_by_city.items()):
-        logger.info("Preparing markdown for city %s (%d chunks)", city_name, len(city_documents))
+        logger.info(
+            "Preparing markdown for city %s (%d chunks)", city_name, len(city_documents)
+        )
 
     # Build list of city-scoped batches under token/chunk limits.
     all_tasks = build_city_batches(
@@ -423,7 +430,9 @@ def extract_markdown_excerpts(
         error=ErrorInfo(
             code="MARKDOWN_EMPTY_RESULT",
             message="Markdown researcher returned no excerpts.",
-            details=["No excerpts were produced and no explicit failures were captured."],
+            details=[
+                "No excerpts were produced and no explicit failures were captured."
+            ],
         ),
     )
 

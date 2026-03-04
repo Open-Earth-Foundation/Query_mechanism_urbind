@@ -4,6 +4,7 @@ import json
 import logging
 import os
 import re
+import shlex
 import statistics
 from contextlib import contextmanager
 from dataclasses import asdict, dataclass
@@ -237,17 +238,31 @@ def _compute_runtime_seconds(started_at: str, completed_at: str) -> float:
 
 
 def _parse_structured_log_payload(line: str, marker: str) -> dict[str, object] | None:
-    """Parse JSON payload that follows a structured log marker."""
+    """Parse retry payload in JSON or key=value format after a marker."""
     if marker not in line:
         return None
     payload_raw = line.split(marker, 1)[1].strip()
     try:
         payload = json.loads(payload_raw)
     except json.JSONDecodeError:
-        return None
+        payload = None
     if isinstance(payload, dict):
         return payload
-    return None
+
+    try:
+        tokens = shlex.split(payload_raw)
+    except ValueError:
+        return None
+    parsed: dict[str, object] = {}
+    for token in tokens:
+        if "=" not in token:
+            continue
+        key, value = token.split("=", 1)
+        key_clean = key.strip()
+        if not key_clean:
+            continue
+        parsed[key_clean] = value.strip()
+    return parsed or None
 
 
 def _has_rate_limit_signal(value: str) -> bool:

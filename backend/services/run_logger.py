@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import logging
+import shlex
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -153,6 +154,32 @@ class RunLogger:
                 return int(value)
         return None
 
+    def _parse_retry_payload_raw(self, payload_raw: str) -> dict[str, Any] | None:
+        """Parse retry payload from either JSON or key=value format."""
+        try:
+            payload = json.loads(payload_raw)
+        except json.JSONDecodeError:
+            payload = None
+        if isinstance(payload, dict):
+            return payload
+
+        try:
+            tokens = shlex.split(payload_raw)
+        except ValueError:
+            return None
+        parsed: dict[str, Any] = {}
+        for token in tokens:
+            if "=" not in token:
+                continue
+            key, value = token.split("=", 1)
+            key_clean = key.strip()
+            if not key_clean:
+                continue
+            parsed[key_clean] = value.strip()
+        if parsed:
+            return parsed
+        return None
+
     def _format_total_runtime(self) -> str:
         """Return elapsed runtime in seconds from run start/end timestamps."""
         started_raw = self.run_log.get("started_at")
@@ -255,10 +282,7 @@ class RunLogger:
                 if marker is None:
                     continue
                 payload_raw = line.split(marker, 1)[1].strip()
-                try:
-                    payload = json.loads(payload_raw)
-                except json.JSONDecodeError:
-                    continue
+                payload = self._parse_retry_payload_raw(payload_raw)
                 if not isinstance(payload, dict):
                     continue
                 operation = str(payload.get("operation", "unknown")).strip() or "unknown"

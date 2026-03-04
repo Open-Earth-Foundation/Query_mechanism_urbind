@@ -35,7 +35,8 @@ The `uv.lock` file is committed to ensure reproducible builds.
 
 - `llm_config.yaml` stores model names and settings.
 - Markdown researcher batching knobs are configured in `llm_config.yaml` under `markdown_researcher` (`batch_max_chunks`, `batch_max_input_tokens`, `batch_overhead_tokens`).
-- Retry policy is centralized in top-level `retry` in `llm_config.yaml` (`max_attempts`, `backoff_base_seconds`, `backoff_max_seconds`) and is shared across LLM calls, agent max-turn limits, chat tool-call loop limits, and vector retrieval operations.
+- Retry policy is centralized in top-level `retry` in `llm_config.yaml` (`max_attempts`, `backoff_base_seconds`, `backoff_max_seconds`) and is shared across retry/backoff behavior for LLM calls and related operations.
+- Agent turn limits are configured per agent via `max_turns` (for example `markdown_researcher.max_turns`, `writer.max_turns`).
 - Optional `markdown_researcher.reasoning_effort` can be set for Grok reasoning control (for example `"none"`), but this is model/provider-specific and may fail on unsupported models.
 - Copy `.env.example` to `.env` and fill in values for your environment.
 - `.env` is loaded automatically via `python-dotenv` in the scripts.
@@ -152,6 +153,7 @@ markdown_researcher:
   # reasoning_effort: "none"
   context_window_tokens: 400000
   input_token_reserve: 2000
+  max_turns: 10
   max_chunk_tokens: 120000
   chunk_overlap_tokens: 200
   batch_max_chunks: 32
@@ -205,6 +207,7 @@ What each key controls:
 - `sql_researcher.max_result_tokens`: Hard cap for SQL rows included in the capped SQL bundle passed downstream.
 - `markdown_researcher.max_chunk_tokens`: Hard cap for each markdown chunk size.
 - `markdown_researcher.chunk_overlap_tokens`: Token overlap between neighboring chunks.
+- `markdown_researcher.max_turns`: Max LLM turns per markdown batch extraction call.
 - `markdown_researcher.batch_max_chunks`: Hard cap on chunk count per markdown researcher request batch.
 - `markdown_researcher.batch_max_input_tokens`: Optional explicit token budget per markdown researcher request batch.
 - `markdown_researcher.batch_overhead_tokens`: Reserved prompt/payload overhead used when adaptive markdown batch token budget is calculated.
@@ -537,7 +540,7 @@ python -m backend.scripts.test_db_connection
 Artifacts are written under `output/<run_id>/`:
 
 - `run.json`: machine-readable run metadata (status, timestamps, artifacts, decisions), including `inputs.analysis_mode` and `artifacts.error_log` when available.
-- `run.log`: detailed runtime logs, including per-agent `LLM_USAGE` lines and writer city-citation coverage checkpoints (`WRITER_CITATION_COVERAGE`, with `coverage_ratio` such as `33/33`).
+- `run.log`: detailed runtime logs, including per-agent `LLM_USAGE` lines, retry reason lines (`RETRY_EVENT`/`RETRY_EXHAUSTED` with plain-text fields such as `reason`, `http_status`, `rate_limited`), and writer city-citation coverage checkpoints (`WRITER_CITATION_COVERAGE`, with `coverage_ratio` such as `33/33`).
 - `error_log.txt`: extracted error-focused log view from `run.log` (`ERROR`, `CRITICAL`, and exhausted retry events).
 - `run_summary.txt`: human-readable consolidated report. Header includes `Started`, `Completed`, and explicit `Total runtime` in seconds, plus `LLM Usage` totals/per-agent. It also captures an input snapshot (`initial question`, `refined question`, `selected cities` planned/found, markdown dir/file/chunk/excerpt counts) and a `MARKDOWN_FAILURE_SUMMARY` aggregated from batch failures.
 - `context_bundle.json`: payload passed between agents (`sql`, `markdown`, `research_question`, `analysis_mode`, final path).
