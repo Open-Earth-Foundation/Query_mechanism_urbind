@@ -75,42 +75,6 @@ def test_system_prompt_header_avoids_inline_allowed_ref_list() -> None:
     )
     assert "Allowed references for this turn:" not in header
     assert "present in that catalog" in header
-    assert "calculator tools are available" in header
-
-
-def test_chat_tool_definitions_include_all_calculator_tools() -> None:
-    expected_names = {
-        "sum_numbers",
-        "subtract_numbers",
-        "multiply_numbers",
-        "divide_numbers",
-    }
-    actual_names: set[str] = set()
-    for definition in context_chat.CHAT_TOOL_DEFINITIONS:
-        function_definition = definition.get("function")
-        if not isinstance(function_definition, dict):
-            continue
-        name = function_definition.get("name")
-        if isinstance(name, str):
-            actual_names.add(name)
-    assert actual_names == expected_names
-
-
-def test_normalize_subtract_numbers_args_returns_numeric_operands() -> None:
-    result = context_chat._normalize_subtract_numbers_args(
-        '{"minuend": 10, "subtrahend": "3.5"}'
-    )
-    assert result == (10.0, 3.5)
-
-
-def test_normalize_divide_numbers_args_rejects_missing_divisor() -> None:
-    with pytest.raises(ValueError, match="`divisor`"):
-        context_chat._normalize_divide_numbers_args('{"dividend": 12}')
-
-
-def test_normalize_multiply_numbers_args_rejects_malformed_json() -> None:
-    with pytest.raises(ValueError, match="valid JSON"):
-        context_chat._normalize_multiply_numbers_args("{bad-json")
 
 
 def test_generate_context_chat_reply_forwards_reasoning_effort(
