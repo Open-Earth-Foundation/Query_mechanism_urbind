@@ -8,7 +8,7 @@ import pytest
 from backend.modules.writer import agent as writer_agent
 from backend.modules.writer.models import WriterOutput
 from backend.utils.config import (
-    AgentConfig,
+    WriterConfig,
     AppConfig,
     MarkdownResearcherConfig,
     OrchestratorConfig,
@@ -43,7 +43,7 @@ def _build_test_config(tmp_path: Path) -> AppConfig:
         ),
         sql_researcher=SqlResearcherConfig(model="test-model"),
         markdown_researcher=MarkdownResearcherConfig(model="test-model"),
-        writer=AgentConfig(model="test-model"),
+        writer=WriterConfig(model="test-model"),
         runs_dir=tmp_path / "output",
         markdown_dir=tmp_path / "documents",
         enable_sql=False,

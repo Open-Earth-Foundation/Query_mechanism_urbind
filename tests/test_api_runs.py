@@ -11,7 +11,7 @@ from fastapi.testclient import TestClient
 from backend.api.main import create_app
 from backend.api.services.run_store import TERMINAL_STATUSES
 from backend.utils.config import (
-    AgentConfig,
+    WriterConfig,
     AppConfig,
     MarkdownResearcherConfig,
     OrchestratorConfig,
@@ -27,7 +27,7 @@ def _build_config(runs_dir: Path, markdown_dir: Path) -> AppConfig:
         ),
         sql_researcher=SqlResearcherConfig(model="test-model"),
         markdown_researcher=MarkdownResearcherConfig(model="test-model"),
-        writer=AgentConfig(model="test-model"),
+        writer=WriterConfig(model="test-model"),
         runs_dir=runs_dir,
         markdown_dir=markdown_dir,
         enable_sql=False,

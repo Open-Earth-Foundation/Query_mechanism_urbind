@@ -8,7 +8,7 @@ from backend.modules.vector_store.retriever import (
 )
 from backend.modules.vector_store.manifest import save_manifest
 from backend.utils.config import (
-    AgentConfig,
+    WriterConfig,
     AppConfig,
     MarkdownResearcherConfig,
     OrchestratorConfig,
@@ -52,7 +52,7 @@ def _build_test_config() -> AppConfig:
         orchestrator=OrchestratorConfig(model="test", context_bundle_name="context_bundle.json"),
         sql_researcher=SqlResearcherConfig(model="test"),
         markdown_researcher=MarkdownResearcherConfig(model="test"),
-        writer=AgentConfig(model="test"),
+        writer=WriterConfig(model="test"),
     )
     config.vector_store.retrieval_fallback_min_chunks_per_city_query = 2
     config.vector_store.retrieval_max_chunks_per_city_query = 3
