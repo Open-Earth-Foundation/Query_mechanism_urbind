@@ -51,6 +51,7 @@ def test_fit_citation_catalog_to_budget_prunes_refs() -> None:
         + first_entry_budget
     )
 
+
     fitted = context_chat._fit_citation_catalog_to_budget(
         citation_catalog=citation_catalog,
         prompt_header=prompt_header,
