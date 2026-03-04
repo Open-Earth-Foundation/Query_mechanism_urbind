@@ -19,7 +19,7 @@ from backend.modules.vector_store.chunk_packer import pack_blocks
 from backend.modules.vector_store.table_utils import split_markdown_table_by_row_groups
 from backend.utils.tokenization import count_tokens
 from backend.utils.config import (
-    AgentConfig,
+    WriterConfig,
     AppConfig,
     MarkdownResearcherConfig,
     OrchestratorConfig,
@@ -34,7 +34,7 @@ def _build_config(tmp_path: Path) -> AppConfig:
         orchestrator=OrchestratorConfig(model="test"),
         sql_researcher=SqlResearcherConfig(model="test"),
         markdown_researcher=MarkdownResearcherConfig(model="test"),
-        writer=AgentConfig(model="test"),
+        writer=WriterConfig(model="test"),
         vector_store=VectorStoreConfig(
             enabled=True,
             chroma_persist_path=tmp_path / ".chroma",

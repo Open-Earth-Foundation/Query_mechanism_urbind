@@ -7,7 +7,7 @@ from backend.modules.markdown_researcher import agent as markdown_agent
 from backend.modules.markdown_researcher.agent import extract_markdown_excerpts
 from backend.modules.markdown_researcher.models import MarkdownExcerpt, MarkdownResearchResult
 from backend.utils.config import (
-    AgentConfig,
+    WriterConfig,
     AppConfig,
     MarkdownResearcherConfig,
     OrchestratorConfig,
@@ -31,7 +31,7 @@ def _build_test_config() -> AppConfig:
             request_backoff_base_seconds=0.1,
             request_backoff_max_seconds=0.1,
         ),
-        writer=AgentConfig(model="test"),
+        writer=WriterConfig(model="test"),
     )
 
 

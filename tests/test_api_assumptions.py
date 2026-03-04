@@ -15,7 +15,7 @@ from backend.api.services.assumptions_review import (
 from backend.api.services.run_store import RunStore
 from backend.modules.writer.models import WriterOutput
 from backend.utils.config import (
-    AgentConfig,
+    WriterConfig,
     AppConfig,
     ChatConfig,
     MarkdownResearcherConfig,
@@ -32,7 +32,7 @@ def _build_config(runs_dir: Path, markdown_dir: Path) -> AppConfig:
         ),
         sql_researcher=SqlResearcherConfig(model="test-model"),
         markdown_researcher=MarkdownResearcherConfig(model="test-model"),
-        writer=AgentConfig(model="test-model"),
+        writer=WriterConfig(model="test-model"),
         chat=ChatConfig(model="openai/gpt-5.2", max_history_messages=10),
         runs_dir=runs_dir,
         markdown_dir=markdown_dir,

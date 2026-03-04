@@ -5,7 +5,7 @@ import pytest
 
 from backend.api.services import context_chat
 from backend.utils.config import (
-    AgentConfig,
+    WriterConfig,
     AppConfig,
     ChatConfig,
     MarkdownResearcherConfig,
@@ -107,7 +107,7 @@ def test_generate_context_chat_reply_forwards_reasoning_effort(
         orchestrator=OrchestratorConfig(model="test-model", context_bundle_name="context_bundle.json"),
         sql_researcher=SqlResearcherConfig(model="test-model"),
         markdown_researcher=MarkdownResearcherConfig(model="test-model"),
-        writer=AgentConfig(model="test-model"),
+        writer=WriterConfig(model="test-model"),
         chat=ChatConfig(model="openai/gpt-5.2", reasoning_effort="high"),
         runs_dir=Path("output"),
         markdown_dir=Path("documents"),
@@ -162,7 +162,7 @@ def test_generate_context_chat_reply_rejects_citation_path_over_token_cap(
         orchestrator=OrchestratorConfig(model="test-model", context_bundle_name="context_bundle.json"),
         sql_researcher=SqlResearcherConfig(model="test-model"),
         markdown_researcher=MarkdownResearcherConfig(model="test-model"),
-        writer=AgentConfig(model="test-model"),
+        writer=WriterConfig(model="test-model"),
         chat=ChatConfig(model="openai/gpt-5.2", reasoning_effort="high"),
         runs_dir=Path("output"),
         markdown_dir=Path("documents"),
