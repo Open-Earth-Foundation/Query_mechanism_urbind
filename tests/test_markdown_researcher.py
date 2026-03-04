@@ -5,7 +5,11 @@ from pytest import MonkeyPatch
 
 from backend.modules.markdown_researcher import agent as markdown_agent
 from backend.modules.markdown_researcher.agent import extract_markdown_excerpts
-from backend.modules.markdown_researcher.models import MarkdownExcerpt, MarkdownResearchResult
+from backend.modules.markdown_researcher.models import (
+    MarkdownExcerpt,
+    MarkdownResearchResult,
+    ThrownExcerpt,
+)
 from backend.utils.config import (
     AgentConfig,
     AppConfig,
@@ -45,12 +49,14 @@ def test_markdown_returns_partial_success_with_city_failure_markers(
             "city_name": "A",
             "city_key": "a",
             "content": "A content",
+            "chunk_id": "a1",
         },
         {
             "path": "B.md",
             "city_name": "B",
             "city_key": "b",
             "content": "B content",
+            "chunk_id": "b1",
         },
     ]
 
@@ -67,6 +73,7 @@ def test_markdown_returns_partial_success_with_city_failure_markers(
                             quote="City A allocated EUR 1.2 million to retrofit public buildings in 2024.",
                             city_name="A",
                             partial_answer="City A allocated EUR 1.2 million to retrofit public buildings in 2024.",
+                            source_chunk_ids=["a1"],
                         )
                     ]
                 )
@@ -79,6 +86,7 @@ def test_markdown_returns_partial_success_with_city_failure_markers(
 
     assert result.status == "success"
     assert len(result.excerpts) == 1
+    assert result.thrown_excerpts == []
     assert result.error is not None
     assert result.error.code == "MARKDOWN_PARTIAL_BATCH_FAILURE"
     assert result.error.details is not None
@@ -113,6 +121,74 @@ def test_markdown_returns_success_when_all_batches_hit_max_turns(
     assert result.error.code == "MARKDOWN_ALL_BATCHES_FAILED"
     assert result.error.details is not None
     assert "onlycity#batch1: MARKDOWN_MAX_TURNS_EXCEEDED" in result.error.details
+
+
+def test_markdown_collects_thrown_excerpts_for_invalid_batch_output(
+    monkeypatch: MonkeyPatch,
+) -> None:
+    config = _build_test_config()
+    documents = [
+        {
+            "path": "Oslo.md",
+            "city_name": "Oslo",
+            "city_key": "oslo",
+            "content": "one",
+            "chunk_id": "oslo_1",
+        },
+        {
+            "path": "Oslo.md",
+            "city_name": "Oslo",
+            "city_key": "oslo",
+            "content": "two",
+            "chunk_id": "oslo_2",
+        },
+    ]
+
+    monkeypatch.setattr(markdown_agent, "build_markdown_agent", lambda *_args, **_kwargs: object())
+
+    def _fake_run_agent_sync(_agent: object, _input_data: str, **_kwargs: object) -> _FakeRunResult:
+        return _FakeRunResult(
+            MarkdownResearchResult(
+                excerpts=[
+                    MarkdownExcerpt(
+                        quote="Oslo plans 20 zero-emission vans by 2027.",
+                        city_name="Oslo",
+                        partial_answer="Oslo plans 20 zero-emission vans by 2027.",
+                        source_chunk_ids=["oslo_1"],
+                    ),
+                    MarkdownExcerpt(
+                        quote="This quote has no chunk id.",
+                        city_name="Oslo",
+                        partial_answer="No chunk id should be rejected.",
+                        source_chunk_ids=[],
+                    ),
+                    MarkdownExcerpt(
+                        quote="Wrong city should be rejected.",
+                        city_name="Bergen",
+                        partial_answer="Bergen target.",
+                        source_chunk_ids=["oslo_2"],
+                    ),
+                ]
+            )
+        )
+
+    monkeypatch.setattr(markdown_agent, "run_agent_sync", _fake_run_agent_sync)
+
+    result = extract_markdown_excerpts("question?", documents, config, api_key="test")
+
+    assert result.status == "success"
+    assert len(result.excerpts) == 1
+    assert result.excerpts[0].city_name == "Oslo"
+    assert len(result.thrown_excerpts) == 2
+    assert all(
+        isinstance(thrown_excerpt, ThrownExcerpt)
+        for thrown_excerpt in result.thrown_excerpts
+    )
+    first_reasons = set(result.thrown_excerpts[0].reason_codes)
+    second_reasons = set(result.thrown_excerpts[1].reason_codes)
+    all_reasons = first_reasons | second_reasons
+    assert "missing_source_chunk_ids" in all_reasons
+    assert "city_name_mismatch" in all_reasons
 
 
 def test_markdown_payload_batches_keep_city_chunk_integrity(

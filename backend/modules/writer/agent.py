@@ -49,9 +49,19 @@ These fallback instructions override any conflicting tool-call requirements abov
 Tools are unavailable in this fallback pass.
 - Do not call any tools.
 - Return the final answer as structured `WriterOutput` output directly.
+- If `reconsideration.previous_answer` is provided, rewrite it into one corrected full document.
+- If `reconsideration.missing_cities` is provided, explicitly cover every listed city.
+- This is a finalize-only pass; complete the corrected document in this single response.
 - Do not mention turns, max turns, retries, tool status, finish reasons, or any runtime/debug details.
 </fallback_mode>
 """
+
+RECONSIDERATION_FINALIZE_INSTRUCTION = (
+    "You must output one corrected final document in this response. "
+    "Fix the previous answer so every city listed in missing_cities is covered with grounded citations."
+)
+RECONSIDERATION_RETRY_LIMIT = 1
+RECONSIDERATION_MAX_TURNS = 1
 
 
 def _resolve_writer_prompt_path(analysis_mode: str) -> Path:
@@ -213,6 +223,33 @@ def _inject_fallback_draft(
     return next_payload
 
 
+def _build_reconsideration_payload(
+    *,
+    previous_answer: str,
+    missing_city_keys: list[str],
+    markdown_bundle: dict[str, object],
+) -> dict[str, object]:
+    """Build explicit reconsideration guidance for finalize-only retries."""
+    ref_city_map = extract_ref_city_mapping(markdown_bundle)[1]
+    missing_city_names = [
+        ref_city_map.get(city_key, format_city_display_name(city_key))
+        for city_key in missing_city_keys
+    ]
+    reconsideration_payload: dict[str, object] = {
+        "previous_answer": previous_answer,
+        "missing_cities": missing_city_names,
+        "instruction": RECONSIDERATION_FINALIZE_INSTRUCTION,
+        "finalize_in_this_turn": True,
+        "fallback_mode": "no_tool_writer",
+    }
+    if missing_city_keys:
+        reconsideration_payload["missing_city_excerpts"] = extract_missing_city_excerpts(
+            markdown_bundle,
+            missing_city_keys,
+        )
+    return reconsideration_payload
+
+
 def _run_writer_once(
     *,
     agent: Agent,
@@ -241,7 +278,7 @@ def write_markdown(
     log_llm_payload: bool = False,
     run_id: str | None = None,
 ) -> WriterOutput:
-    """Generate the final markdown answer with city-coverage guardrails."""
+    """Generate the final markdown answer with one finalize-only reconsideration retry."""
     markdown_bundle = extract_markdown_bundle(context_bundle)
     selected_city_names = extract_selected_city_names(context_bundle, markdown_bundle)
     analysis_mode = resolve_analysis_mode(context_bundle)
@@ -258,6 +295,7 @@ def write_markdown(
 
     previous_answer = ""
     missing_city_keys: list[str] = []
+    reconsideration_retries_used = 0
 
     for attempt in range(1, max_attempts + 1):
         payload: dict[str, object] = {
@@ -267,21 +305,18 @@ def write_markdown(
             "selected_cities": selected_city_names,
         }
         if attempt > 1 and previous_answer:
-            ref_city_map = extract_ref_city_mapping(markdown_bundle)[1]
-            reconsideration_payload: dict[str, object] = {
-                "previous_answer": previous_answer,
-            }
-            if missing_city_keys:
-                missing_city_names = [
-                    ref_city_map.get(city_key, format_city_display_name(city_key))
-                    for city_key in missing_city_keys
-                ]
-                reconsideration_payload["missing_cities"] = missing_city_names
-                reconsideration_payload["missing_city_excerpts"] = extract_missing_city_excerpts(
-                    markdown_bundle,
-                    missing_city_keys,
+            payload["reconsideration"] = _build_reconsideration_payload(
+                previous_answer=previous_answer,
+                missing_city_keys=missing_city_keys,
+                markdown_bundle=markdown_bundle,
+            )
+            if fallback_agent is None:
+                fallback_agent = build_writer_no_tool_agent(
+                    config,
+                    api_key,
+                    analysis_mode=analysis_mode,
                 )
-            payload["reconsideration"] = reconsideration_payload
+            use_fallback_writer = True
 
         active_agent = fallback_agent if use_fallback_writer and fallback_agent else primary_agent
         active_payload = (
@@ -289,11 +324,16 @@ def write_markdown(
             if use_fallback_writer and fallback_draft
             else payload
         )
+        active_max_turns = (
+            RECONSIDERATION_MAX_TURNS
+            if attempt > 1 and previous_answer
+            else config.writer.max_turns
+        )
         try:
             output = _run_writer_once(
                 agent=active_agent,
                 payload=active_payload,
-                max_turns=config.writer.max_turns,
+                max_turns=active_max_turns,
                 log_llm_payload=log_llm_payload,
             )
         except MaxTurnsExceeded as exc:
@@ -378,7 +418,11 @@ def write_markdown(
             city_display_by_key.get(city_key, format_city_display_name(city_key))
             for city_key in missing_city_keys
         ]
-        coverage_status = "retrying" if attempt < max_attempts else "exhausted"
+        can_retry_reconsideration = (
+            reconsideration_retries_used < RECONSIDERATION_RETRY_LIMIT
+            and attempt < max_attempts
+        )
+        coverage_status = "retrying" if can_retry_reconsideration else "exhausted"
         logger.warning(
             "WRITER_CITATION_COVERAGE %s",
             json.dumps(
@@ -396,7 +440,15 @@ def write_markdown(
                 ensure_ascii=False,
             ),
         )
-        if attempt < max_attempts:
+        if can_retry_reconsideration:
+            reconsideration_retries_used += 1
+            if fallback_agent is None:
+                fallback_agent = build_writer_no_tool_agent(
+                    config,
+                    api_key,
+                    analysis_mode=analysis_mode,
+                )
+            use_fallback_writer = True
             delay_seconds = compute_retry_delay_seconds(attempt, retry_settings)
             retry_error_type = "MissingCityCitationCoverage"
             retry_error_message = (

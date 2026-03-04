@@ -54,6 +54,7 @@ def test_model_validation() -> None:
     assert plan.queries[0].query == "SELECT 1"
     assert research.total_token_count == 3
     assert md_result.excerpts[0].city_name == "Munich"
+    assert md_result.thrown_excerpts == []
     assert decision.action == "write"
     assert refinement.research_question.startswith("For Munich")
     assert writer.content.startswith("#")

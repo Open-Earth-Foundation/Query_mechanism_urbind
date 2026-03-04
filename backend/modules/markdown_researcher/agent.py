@@ -15,6 +15,7 @@ from backend.models import ErrorInfo
 from backend.modules.markdown_researcher.models import (
     MarkdownExcerpt,
     MarkdownResearchResult,
+    ThrownExcerpt,
 )
 from backend.modules.markdown_researcher.services import (
     build_city_batches,
@@ -24,6 +25,7 @@ from backend.modules.markdown_researcher.services import (
 from backend.modules.markdown_researcher.utils import (
     coerce_markdown_result,
     format_batch_failure,
+    partition_batch_excerpts,
 )
 from backend.services.agents import (
     build_model_settings,
@@ -106,6 +108,7 @@ def extract_markdown_excerpts(
     documents_by_city = split_documents_by_city(documents)
 
     collected: list[MarkdownExcerpt] = []
+    collected_thrown_excerpts: list[ThrownExcerpt] = []
     seen: set[tuple[str, str, str]] = set()
     first_error: ErrorInfo | None = None
     failed_batches: list[str] = []
@@ -131,9 +134,10 @@ def extract_markdown_excerpts(
         city_name: str,
         batch_index: int,
         batch: list[dict[str, object]],
-    ) -> tuple[str, int, list[MarkdownExcerpt], ErrorInfo | None, bool]:
+    ) -> tuple[str, int, list[MarkdownExcerpt], list[ThrownExcerpt], ErrorInfo | None, bool]:
         """Process one city batch and return excerpts."""
         excerpts: list[MarkdownExcerpt] = []
+        thrown_excerpts: list[ThrownExcerpt] = []
         error: ErrorInfo | None = None
         success = False
 
@@ -218,7 +222,7 @@ def extract_markdown_excerpts(
                     code="MARKDOWN_MAX_TURNS_EXCEEDED",
                     message="Markdown extraction exceeded max turns for this city batch.",
                 )
-                return city_name, batch_index, excerpts, error, success
+                return city_name, batch_index, excerpts, thrown_excerpts, error, success
             except Exception as exc:  # noqa: BLE001
                 if attempt < max_attempts and _is_retryable_error(exc):
                     delay_seconds = compute_retry_delay_seconds(attempt, retry_settings)
@@ -265,7 +269,7 @@ def extract_markdown_excerpts(
                 code="MARKDOWN_OUTPUT_INVALID",
                 message="Markdown researcher did not return structured excerpts.",
             )
-            return city_name, batch_index, excerpts, error, success
+            return city_name, batch_index, excerpts, thrown_excerpts, error, success
 
         if retryable_bad_output_reason == "status_error_without_error":
             logger.warning(
@@ -277,7 +281,7 @@ def extract_markdown_excerpts(
                 code="MARKDOWN_OUTPUT_ERROR_EMPTY",
                 message="Markdown researcher returned status=error without an error payload.",
             )
-            return city_name, batch_index, excerpts, error, success
+            return city_name, batch_index, excerpts, thrown_excerpts, error, success
 
         if output.status == "error":
             logger.warning(
@@ -295,11 +299,25 @@ def extract_markdown_excerpts(
                         "after retries."
                     ),
                 )
-            return city_name, batch_index, excerpts, error, success
+            return city_name, batch_index, excerpts, thrown_excerpts, error, success
+
+        valid_chunk_ids = {
+            str(document.get("chunk_id", "")).strip()
+            for document in batch
+            if str(document.get("chunk_id", "")).strip()
+        }
+        accepted_excerpts, rejected_excerpts = partition_batch_excerpts(
+            output.excerpts,
+            expected_city_name=city_name,
+            batch_index=batch_index,
+            valid_chunk_ids=valid_chunk_ids,
+        )
         success = True
-        for excerpt in output.excerpts:
+        for excerpt in accepted_excerpts:
             excerpts.append(excerpt)
-        return city_name, batch_index, excerpts, error, success
+        for excerpt in rejected_excerpts:
+            thrown_excerpts.append(excerpt)
+        return city_name, batch_index, excerpts, thrown_excerpts, error, success
 
     batch_max_chunks = max(config.markdown_researcher.batch_max_chunks, 1)
     batch_token_limit = resolve_batch_input_token_limit(config)
@@ -323,6 +341,7 @@ def extract_markdown_excerpts(
                 message="No markdown batches were available for extraction.",
                 details=["No markdown documents were provided."],
             ),
+            thrown_excerpts=[],
         )
 
     # Process all city batches with worker-level rate limiting
@@ -345,7 +364,9 @@ def extract_markdown_excerpts(
 
         for future in as_completed(futures):
             try:
-                city_name, batch_idx, excerpts, error, success = future.result()
+                city_name, batch_idx, excerpts, thrown_excerpts, error, success = future.result()
+                for thrown_excerpt in thrown_excerpts:
+                    collected_thrown_excerpts.append(thrown_excerpt)
                 if success:
                     any_success = True
                     for excerpt in excerpts:
@@ -357,6 +378,19 @@ def extract_markdown_excerpts(
                         if key not in seen:
                             seen.add(key)
                             collected.append(excerpt)
+                        else:
+                            collected_thrown_excerpts.append(
+                                ThrownExcerpt(
+                                    quote=excerpt.quote,
+                                    city_name=excerpt.city_name,
+                                    partial_answer=excerpt.partial_answer,
+                                    source_chunk_ids=excerpt.source_chunk_ids,
+                                    rejection_stage="dedupe",
+                                    reason_codes=["duplicate_excerpt"],
+                                    batch_index=batch_idx,
+                                    expected_city_name=city_name,
+                                )
+                            )
                 elif error:
                     failed_batches.append(
                         format_batch_failure(city_name, batch_idx, error.code)
@@ -392,8 +426,13 @@ def extract_markdown_excerpts(
                     message="Some markdown city batches failed; returning partial results.",
                     details=failed_batches,
                 ),
+                thrown_excerpts=collected_thrown_excerpts,
             )
-        return MarkdownResearchResult(status="success", excerpts=collected)
+        return MarkdownResearchResult(
+            status="success",
+            excerpts=collected,
+            thrown_excerpts=collected_thrown_excerpts,
+        )
 
     if failed_batches:
         message = "No excerpts extracted; all markdown batches failed."
@@ -409,12 +448,14 @@ def extract_markdown_excerpts(
                 message=message,
                 details=failed_batches,
             ),
+            thrown_excerpts=collected_thrown_excerpts,
         )
 
     if first_error:
         return MarkdownResearchResult(
             status="error",
             error=first_error,
+            thrown_excerpts=collected_thrown_excerpts,
         )
 
     return MarkdownResearchResult(
@@ -425,6 +466,7 @@ def extract_markdown_excerpts(
             message="Markdown researcher returned no excerpts.",
             details=["No excerpts were produced and no explicit failures were captured."],
         ),
+        thrown_excerpts=collected_thrown_excerpts,
     )
 
 

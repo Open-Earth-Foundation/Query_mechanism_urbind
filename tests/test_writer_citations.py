@@ -174,22 +174,39 @@ def test_writer_retries_when_city_citation_coverage_is_missing(
         }
     }
 
-    captured_inputs: list[dict[str, object]] = []
+    primary_agent = object()
+    fallback_agent = object()
+    captured_runs: list[tuple[object, dict[str, object], int | None]] = []
     responses = [
         WriterOutput(content="Munich update [ref_1]"),
         WriterOutput(content="Munich update [ref_1]\nBerlin update [ref_2]"),
     ]
 
-    monkeypatch.setattr(writer_agent, "build_writer_agent", lambda *_args, **_kwargs: object())
+    monkeypatch.setattr(
+        writer_agent,
+        "build_writer_agent",
+        lambda *_args, **_kwargs: primary_agent,
+    )
+    monkeypatch.setattr(
+        writer_agent,
+        "build_writer_no_tool_agent",
+        lambda *_args, **_kwargs: fallback_agent,
+    )
 
     def _fake_run_agent_sync(
-        _agent: object,
+        agent: object,
         input_text: str,
         log_llm_payload: bool,
         **_kwargs: object,
     ) -> _FakeRunResult:
         del log_llm_payload
-        captured_inputs.append(json.loads(input_text))
+        payload = json.loads(input_text)
+        max_turns = _kwargs.get("max_turns")
+        if isinstance(max_turns, int):
+            resolved_max_turns: int | None = max_turns
+        else:
+            resolved_max_turns = None
+        captured_runs.append((agent, payload, resolved_max_turns))
         output = responses.pop(0)
         return _FakeRunResult(output)
 
@@ -205,9 +222,20 @@ def test_writer_retries_when_city_citation_coverage_is_missing(
         run_id="run-writer-retry",
     )
 
-    assert len(captured_inputs) == 2
-    assert "reconsideration" not in captured_inputs[0]
-    assert isinstance(captured_inputs[1].get("reconsideration"), dict)
+    assert len(captured_runs) == 2
+    assert captured_runs[0][0] is primary_agent
+    assert captured_runs[0][2] == config.writer.max_turns
+    assert "reconsideration" not in captured_runs[0][1]
+
+    assert captured_runs[1][0] is fallback_agent
+    assert captured_runs[1][2] == 1
+    reconsideration = captured_runs[1][1].get("reconsideration")
+    assert isinstance(reconsideration, dict)
+    assert reconsideration.get("missing_cities") == ["Berlin"]
+    assert reconsideration.get("finalize_in_this_turn") is True
+    instruction = reconsideration.get("instruction")
+    assert isinstance(instruction, str)
+    assert "corrected final document" in instruction
     assert "Berlin update [ref_2]" in output.content
     assert "## Cities considered" in output.content
     assert "- Munich" in output.content
@@ -219,6 +247,97 @@ def test_writer_retries_when_city_citation_coverage_is_missing(
     )
     assert any(
         payload.get("status") == "confirmed" and payload.get("coverage_ratio") == "2/2"
+        for payload in coverage_payloads
+    )
+
+
+def test_writer_stops_after_single_reconsideration_retry(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+    caplog: pytest.LogCaptureFixture,
+) -> None:
+    config = _build_test_config(tmp_path)
+    context_bundle: dict[str, object] = {
+        "markdown": {
+            "excerpt_count": 2,
+            "selected_city_names": ["Munich", "Berlin"],
+            "excerpts": [
+                {
+                    "ref_id": "ref_1",
+                    "city_name": "Munich",
+                    "quote": "Munich charging evidence.",
+                    "partial_answer": "Munich charging evidence.",
+                },
+                {
+                    "ref_id": "ref_2",
+                    "city_name": "Berlin",
+                    "quote": "Berlin charging evidence.",
+                    "partial_answer": "Berlin charging evidence.",
+                },
+            ],
+        }
+    }
+
+    primary_agent = object()
+    fallback_agent = object()
+    captured_runs: list[tuple[object, dict[str, object], int | None]] = []
+    responses = [
+        WriterOutput(content="Munich update [ref_1]"),
+        WriterOutput(content="Munich updated again [ref_1]"),
+    ]
+
+    monkeypatch.setattr(
+        writer_agent,
+        "build_writer_agent",
+        lambda *_args, **_kwargs: primary_agent,
+    )
+    monkeypatch.setattr(
+        writer_agent,
+        "build_writer_no_tool_agent",
+        lambda *_args, **_kwargs: fallback_agent,
+    )
+
+    def _fake_run_agent_sync(
+        agent: object,
+        input_text: str,
+        log_llm_payload: bool,
+        **_kwargs: object,
+    ) -> _FakeRunResult:
+        del log_llm_payload
+        payload = json.loads(input_text)
+        max_turns = _kwargs.get("max_turns")
+        if isinstance(max_turns, int):
+            resolved_max_turns: int | None = max_turns
+        else:
+            resolved_max_turns = None
+        captured_runs.append((agent, payload, resolved_max_turns))
+        return _FakeRunResult(responses.pop(0))
+
+    monkeypatch.setattr(writer_agent, "run_agent_sync", _fake_run_agent_sync)
+    caplog.set_level(logging.INFO, logger=writer_agent.__name__)
+
+    output = writer_agent.write_markdown(
+        question="Summarize city charging evidence.",
+        context_bundle=context_bundle,
+        config=config,
+        api_key="test-key",
+        log_llm_payload=False,
+        run_id="run-writer-single-reconsideration",
+    )
+
+    assert len(captured_runs) == 2
+    assert captured_runs[0][0] is primary_agent
+    assert captured_runs[1][0] is fallback_agent
+    assert captured_runs[1][2] == 1
+    assert "Berlin update [ref_2]" not in output.content
+
+    coverage_payloads = _extract_coverage_payloads(caplog.records)
+    assert any(
+        payload.get("status") == "retrying" and payload.get("coverage_ratio") == "1/2"
+        for payload in coverage_payloads
+    )
+    assert any(
+        payload.get("status") == "exhausted" and payload.get("coverage_ratio") == "1/2"
         for payload in coverage_payloads
     )
 

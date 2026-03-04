@@ -20,6 +20,7 @@ from backend.modules.sql_researcher.models import SqlQuery, SqlQueryPlan
 from backend.modules.markdown_researcher.models import (
     MarkdownExcerpt,
     MarkdownResearchResult,
+    ThrownExcerpt,
 )
 from backend.modules.vector_store.models import RetrievedChunk
 from backend.modules.writer.models import WriterOutput
@@ -124,6 +125,80 @@ def test_run_pipeline_creates_artifacts(
     run_log = json.loads(paths.run_log.read_text(encoding="utf-8"))
     assert run_log["status"] == "completed"
     assert Path(run_log["artifacts"]["final_output"]).exists()
+
+
+def test_run_pipeline_writes_markdown_thrown_excerpts_artifact(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    monkeypatch.setenv("OPENROUTER_API_KEY", "test")
+
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir()
+    (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
+
+    config = AppConfig(
+        orchestrator=OrchestratorConfig(model="test", context_bundle_name="context_bundle.json"),
+        sql_researcher=SqlResearcherConfig(model="test", max_result_tokens=100000),
+        markdown_researcher=MarkdownResearcherConfig(model="test"),
+        writer=AgentConfig(model="test"),
+        runs_dir=tmp_path / "output",
+        source_db_path=tmp_path / "missing.db",
+        markdown_dir=docs_dir,
+        enable_sql=False,
+    )
+
+    def _markdown_with_thrown(
+        question: str,
+        documents: list[dict[str, str]],
+        config: AppConfig,
+        api_key: str,
+        **_kwargs: dict[str, object],
+    ) -> MarkdownResearchResult:
+        _ = (question, documents, config, api_key, _kwargs)
+        return MarkdownResearchResult(
+            excerpts=[
+                MarkdownExcerpt(
+                    quote="Munich has 43 public chargers.",
+                    city_name="Munich",
+                    partial_answer="Munich has 43 public chargers.",
+                )
+            ],
+            thrown_excerpts=[
+                ThrownExcerpt(
+                    quote="Ignored excerpt",
+                    city_name="Munich",
+                    partial_answer="Ignored excerpt",
+                    source_chunk_ids=["chunk_missing"],
+                    rejection_stage="batch_validation",
+                    reason_codes=["unknown_source_chunk_ids"],
+                    batch_index=1,
+                    expected_city_name="Munich",
+                    invalid_source_chunk_ids=["chunk_missing"],
+                )
+            ],
+        )
+
+    paths = run_pipeline(
+        question="What initiatives exist for Munich?",
+        config=config,
+        sql_plan_func=_stub_sql_plan,
+        markdown_func=_markdown_with_thrown,
+        refine_question_func=_stub_refine_question,
+        writer_func=_stub_writer,
+    )
+
+    thrown_path = paths.markdown_thrown_excerpts
+    assert thrown_path.exists()
+    thrown_payload = json.loads(thrown_path.read_text(encoding="utf-8"))
+    assert thrown_payload["run_id"] == paths.base_dir.name
+    assert thrown_payload["thrown_excerpt_count"] == 1
+    assert thrown_payload["thrown_excerpts"][0]["reason_codes"] == [
+        "unknown_source_chunk_ids"
+    ]
+
+    run_log = json.loads(paths.run_log.read_text(encoding="utf-8"))
+    assert "markdown_thrown_excerpts" in run_log["artifacts"]
+    assert Path(run_log["artifacts"]["markdown_thrown_excerpts"]).exists()
 
 
 def test_run_pipeline_sql_disabled_skips_db(

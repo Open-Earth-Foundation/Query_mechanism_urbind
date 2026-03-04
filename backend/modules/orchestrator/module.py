@@ -425,7 +425,23 @@ def run_pipeline(
     markdown_chunks = markdown_payload["markdown_chunks"]
     markdown_result = markdown_payload["result"]
     if isinstance(markdown_result, MarkdownResearchResult):
-        markdown_bundle = markdown_result.model_dump()
+        thrown_excerpts_payload = [
+            thrown_excerpt.model_dump()
+            for thrown_excerpt in markdown_result.thrown_excerpts
+        ]
+        write_json(
+            paths.markdown_thrown_excerpts,
+            {
+                "run_id": run_id_value,
+                "thrown_excerpt_count": len(thrown_excerpts_payload),
+                "thrown_excerpts": thrown_excerpts_payload,
+            },
+        )
+        run_logger.record_artifact(
+            "markdown_thrown_excerpts",
+            paths.markdown_thrown_excerpts,
+        )
+        markdown_bundle = markdown_result.model_dump(exclude={"thrown_excerpts"})
         source_mode = str(markdown_payload.get("markdown_source_mode", "standard_chunking"))
         markdown_bundle["retrieval_mode"] = source_mode
         markdown_bundle["analysis_mode"] = analysis_mode
