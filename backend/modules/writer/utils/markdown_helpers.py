@@ -243,28 +243,6 @@ def extract_missing_coverage(
     return missing_coverage_keys, no_evidence_keys, city_display_by_key
 
 
-def extract_missing_city_excerpts(
-    markdown_bundle: dict[str, object],
-    missing_city_keys: list[str],
-) -> list[dict[str, str]]:
-    """Collect excerpt snippets for cities that missed citation coverage."""
-    missing_set = set(missing_city_keys)
-    snippets: list[dict[str, str]] = []
-    for excerpt in extract_markdown_excerpts(markdown_bundle):
-        city_name = str(excerpt.get("city_name", "")).strip()
-        city_key_value = city_key(city_name)
-        if city_key_value not in missing_set:
-            continue
-        snippets.append(
-            {
-                "city_name": city_display_name(city_name),
-                "ref_id": str(excerpt.get("ref_id", "")).strip(),
-                "quote": str(excerpt.get("quote", "")).strip(),
-                "partial_answer": str(excerpt.get("partial_answer", "")).strip(),
-            }
-        )
-    return snippets
-
 
 def render_no_evidence_section(no_evidence_city_names: list[str]) -> str:
     """Render deterministic section for selected cities with no excerpts."""
@@ -372,7 +350,6 @@ __all__ = [
     "append_sections",
     "extract_city_coverage_sets",
     "extract_markdown_bundle",
-    "extract_missing_city_excerpts",
     "extract_missing_coverage",
     "extract_ref_city_mapping",
     "extract_selected_city_names",

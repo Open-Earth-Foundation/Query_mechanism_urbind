@@ -21,6 +21,7 @@ markdown_researcher:
   reasoning_effort: "low"
   context_window_tokens: 200000
   input_token_reserve: 10000
+  max_turns: 10
   max_chunk_tokens: 40000
   chunk_overlap_tokens: 2000
   # try this and how much it drops the time
@@ -37,7 +38,8 @@ writer:
   reasoning_effort: "high"
   context_window_tokens: 400000
   input_token_reserve: 20000
-  max_turns: 30
+  max_turns: 5
+  max_coverage_attempts: 2
 chat:
   model: "openai/gpt-5.2"
   temperature: 0.0

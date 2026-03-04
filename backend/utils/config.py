@@ -55,6 +55,12 @@ class ChatConfig(AgentConfig):
     multi_pass_chunk_tokens: int = 150_000
 
 
+class WriterConfig(AgentConfig):
+    """Configuration for the writer agent."""
+
+    max_coverage_attempts: int = 2
+
+
 class AssumptionsReviewerConfig(AgentConfig):
     """Configuration for two-pass missing-data discovery."""
 
@@ -95,7 +101,7 @@ class AppConfig(BaseModel):
     orchestrator: OrchestratorConfig
     sql_researcher: SqlResearcherConfig
     markdown_researcher: MarkdownResearcherConfig
-    writer: AgentConfig
+    writer: WriterConfig
     chat: ChatConfig = Field(default_factory=lambda: ChatConfig(model="openai/gpt-5.2"))
     assumptions_reviewer: AssumptionsReviewerConfig = Field(
         default_factory=lambda: AssumptionsReviewerConfig(model="openai/gpt-5.2")
@@ -200,6 +206,7 @@ __all__ = [
     "SqlResearcherConfig",
     "MarkdownResearcherConfig",
     "ChatConfig",
+    "WriterConfig",
     "AssumptionsReviewerConfig",
     "RetryConfig",
     "VectorStoreConfig",

@@ -76,6 +76,36 @@ def test_collect_llm_issue_counts_uses_max_turns_fallback(tmp_path: Path) -> Non
     assert counts["not_working_count"] == 1
 
 
+def test_collect_llm_issue_counts_parses_plain_text_retry_payloads(tmp_path: Path) -> None:
+    run_log = tmp_path / "run.log"
+    run_log.write_text(
+        "\n".join(
+            [
+                (
+                    "foo - ERROR - RETRY_EXHAUSTED "
+                    "operation=markdown.batch_extraction run_id=run-1 attempt=5/5 "
+                    "error=true error_type=RateLimitError reason='provider rate limit' "
+                    "http_status=429 rate_limited=true next_backoff_seconds=none "
+                    "error_message='Too many requests' context='city_name=aachen'"
+                ),
+                (
+                    "foo - ERROR - RETRY_EXHAUSTED "
+                    "operation=markdown.batch_extraction run_id=run-1 attempt=5/5 "
+                    "error=true error_type=APIConnectionError reason='provider HTTP 404' "
+                    "http_status=404 rate_limited=false next_backoff_seconds=none "
+                    "error_message='404 Not Found' context='city_name=turin'"
+                ),
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    counts = _collect_llm_issue_counts(run_log)
+    assert counts["retry_exhausted_count"] == 2
+    assert counts["rate_limit_count"] == 1
+    assert counts["not_working_count"] == 1
+
+
 def test_benchmark_continues_when_run_fails(monkeypatch: pytest.MonkeyPatch, tmp_path: Path) -> None:
     monkeypatch.setattr(
         "backend.benchmarks.runner._load_questions",
