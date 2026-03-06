@@ -35,6 +35,8 @@ Return only that tool call.
 
 The tool argument must match `MarkdownResearchResult`:
 - `excerpts` (list[`MarkdownExcerpt`])
+- `accepted_chunk_ids` (list[str])
+- `rejected_chunk_ids` (list[str])
 - `error` (`ErrorInfo` | `null`)
 
 Each `MarkdownExcerpt` must include:
@@ -47,6 +49,13 @@ Relevance rules:
 - Return excerpts only when the chunk directly supports a useful partial answer for the user question.
 - If a chunk is not relevant, do not cite its `chunk_id`.
 - Keep city grounding strict: for city-specific questions, do not return excerpts that only support a different city.
+
+Decision partition rules:
+- Classify every input `chunk_id` exactly once into either `accepted_chunk_ids` or `rejected_chunk_ids`.
+- Every ID in `accepted_chunk_ids` and `rejected_chunk_ids` must come from input `chunks`.
+- A `chunk_id` cannot appear in both arrays.
+- `accepted_chunk_ids` plus `rejected_chunk_ids` must cover all input `chunk_id` values.
+- Every `source_chunk_id` in `excerpts[].source_chunk_ids` must appear in `accepted_chunk_ids`.
 
 Rules for `partial_answer`:
 - Must be fully supported by the quote.
@@ -63,6 +72,8 @@ Error handling:
 
 <example_output>
 {
+  "accepted_chunk_ids": ["chunk_123example"],
+  "rejected_chunk_ids": ["chunk_456example"],
   "excerpts": [
     {
       "quote": "The city has deployed 43 public EV charging points as of 2024.",

@@ -39,6 +39,9 @@ class RunPaths:
     sql_results_full: Path
     markdown_dir: Path
     markdown_excerpts: Path
+    markdown_accepted_excerpts: Path
+    markdown_rejected_excerpts: Path
+    markdown_decision_audit: Path
     markdown_references: Path
     final_output: Path
 
@@ -63,6 +66,9 @@ def create_run_paths(runs_dir: Path, run_id: str, context_bundle_name: str) -> R
         sql_results_full=sql_dir / "results_full.json",
         markdown_dir=markdown_dir,
         markdown_excerpts=markdown_dir / "excerpts.json",
+        markdown_accepted_excerpts=markdown_dir / "accepted_excerpts.json",
+        markdown_rejected_excerpts=markdown_dir / "rejected_excerpts.json",
+        markdown_decision_audit=markdown_dir / "decision_audit.json",
         markdown_references=markdown_dir / "references.json",
         final_output=base_dir / "final.md",
     )
