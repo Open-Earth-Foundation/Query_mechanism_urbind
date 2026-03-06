@@ -355,7 +355,7 @@ def main() -> None:
     output_path.write_text("\n".join(report_lines).rstrip() + "\n", encoding="utf-8")
     logger.info("Wrote decision chunk report: %s", output_path.as_posix())
     if args.stdout:
-        logger.info("\n%s", "\n".join(report_lines))
+        print("\n".join(report_lines))
 
 
 if __name__ == "__main__":

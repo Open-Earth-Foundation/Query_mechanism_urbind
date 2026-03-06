@@ -77,11 +77,12 @@ def _collect_markdown_decision_artifacts(
     markdown_chunks: list[dict[str, object]],
     markdown_result: MarkdownResearchResult,
 ) -> tuple[dict[str, object], dict[str, object], dict[str, object]]:
+    """Build accepted/rejected id artifacts and a run-level decision audit."""
+
     batch_failures_payload = [
         failure.model_dump() for failure in markdown_result.batch_failures
     ]
 
-    """Build accepted/rejected id artifacts and a run-level decision audit."""
     retrieved_ids = _dedupe_preserve_order(
         [str(document.get("chunk_id", "")).strip() for document in markdown_chunks]
     )
@@ -98,12 +99,14 @@ def _collect_markdown_decision_artifacts(
         chunk_id
         for chunk_id in accepted_set
         if chunk_id in rejected_set or chunk_id in unresolved_set
-    } | {
-        chunk_id for chunk_id in rejected_set if chunk_id in unresolved_set
-    }
+    } | {chunk_id for chunk_id in rejected_set if chunk_id in unresolved_set}
 
     unknown_decision_ids = _dedupe_preserve_order(
-        [chunk_id for chunk_id in accepted_ids + rejected_ids + unresolved_ids if chunk_id not in retrieved_set]
+        [
+            chunk_id
+            for chunk_id in accepted_ids + rejected_ids + unresolved_ids
+            if chunk_id not in retrieved_set
+        ]
     )
     unknown_decision_set = set(unknown_decision_ids)
 
@@ -117,7 +120,11 @@ def _collect_markdown_decision_artifacts(
             ]
         )
     unknown_excerpt_source_ids = _dedupe_preserve_order(
-        [source_chunk_id for source_chunk_id in excerpt_source_ids if source_chunk_id not in accepted_set]
+        [
+            source_chunk_id
+            for source_chunk_id in excerpt_source_ids
+            if source_chunk_id not in accepted_set
+        ]
     )
 
     decided_valid_ids = {
@@ -125,7 +132,9 @@ def _collect_markdown_decision_artifacts(
         for chunk_id in accepted_set | rejected_set | unresolved_set
         if chunk_id in retrieved_set and chunk_id not in unknown_decision_set
     }
-    missing_chunk_ids = [chunk_id for chunk_id in retrieved_ids if chunk_id not in decided_valid_ids]
+    missing_chunk_ids = [
+        chunk_id for chunk_id in retrieved_ids if chunk_id not in decided_valid_ids
+    ]
 
     city_by_chunk_id: dict[str, str] = {}
     for chunk in markdown_chunks:
@@ -264,7 +273,9 @@ def run_pipeline(
             logger.warning(
                 "Research question refinement returned empty output; using original question."
             )
-        retrieval_query_candidates = [query.strip() for query in refinement.retrieval_queries]
+        retrieval_query_candidates = [
+            query.strip() for query in refinement.retrieval_queries
+        ]
         combined_queries = [canonical_research_query] + [
             candidate_query
             for candidate_query in retrieval_query_candidates
@@ -446,7 +457,8 @@ def run_pipeline(
                     "batch_index": batch_index,
                     "chunk_count": len(batch),
                     "estimated_tokens": sum(
-                        max(count_tokens(str(item.get("content", ""))), 0) for item in batch
+                        max(count_tokens(str(item.get("content", ""))), 0)
+                        for item in batch
                     ),
                     "chunks": [
                         {
@@ -591,7 +603,9 @@ def run_pipeline(
             "invariant_ok": decision_audit_artifact["invariant_ok"],
             "status": accepted_artifact["status"],
         }
-        source_mode = str(markdown_payload.get("markdown_source_mode", "standard_chunking"))
+        source_mode = str(
+            markdown_payload.get("markdown_source_mode", "standard_chunking")
+        )
         markdown_bundle["retrieval_mode"] = source_mode
         markdown_bundle["analysis_mode"] = analysis_mode
         if source_mode == "vector_store_retrieval":
@@ -613,7 +627,11 @@ def run_pipeline(
             key = str(document.get("city_key", "")).strip()
             name = document.get("city_name")
             if key and key not in key_to_name:
-                key_to_name[key] = format_city_stem(str(name).strip()) if name else format_city_stem(key)
+                key_to_name[key] = (
+                    format_city_stem(str(name).strip())
+                    if name
+                    else format_city_stem(key)
+                )
         markdown_bundle["inspected_city_names"] = [
             key_to_name[k] for k in inspected_cities if k in key_to_name
         ]
@@ -631,7 +649,9 @@ def run_pipeline(
                 for key in selected_city_keys
             ]
         else:
-            markdown_bundle["selected_city_names"] = markdown_bundle["inspected_city_names"]
+            markdown_bundle["selected_city_names"] = markdown_bundle[
+                "inspected_city_names"
+            ]
         excerpts = markdown_bundle.get("excerpts", [])
         if isinstance(excerpts, list):
             excerpt_entries = [
@@ -665,7 +685,9 @@ def run_pipeline(
                     "decision_audit": decision_audit_artifact,
                 }
             )
-            run_logger.finalize("failed", finish_reason="markdown_decision_audit_failed")
+            run_logger.finalize(
+                "failed", finish_reason="markdown_decision_audit_failed"
+            )
             detach_run_file_logger(run_log_handler)
             return paths
         if markdown_result.status == "error":
@@ -695,7 +717,9 @@ def run_pipeline(
         )
         return result if result is not None else paths
     except Exception:
-        logger.exception("Unexpected error during write decision for run_id=%s", run_id_value)
+        logger.exception(
+            "Unexpected error during write decision for run_id=%s", run_id_value
+        )
         run_logger.finalize("failed", finish_reason="writer_unexpected_error")
         detach_run_file_logger(run_log_handler)
         raise
