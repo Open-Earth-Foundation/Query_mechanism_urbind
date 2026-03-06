@@ -1,4 +1,4 @@
-﻿"""
+"""
 Brief: Run the multi-agent document builder pipeline.
 
 Inputs:
@@ -10,7 +10,7 @@ Inputs:
 - --db-url: override source DB URL
 - --markdown-path: override documents folder
 - --city: limit markdown loading to selected city names (repeatable)
-- --log-llm-payload: log full LLM request/response payloads (default: on)
+- --log-llm-payload: log full LLM request/response payloads (default: off)
 - --no-log-llm-payload: disable LLM payload logging
 - OPENROUTER_API_KEY (env var)
 
@@ -62,9 +62,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--log-llm-payload",
         action=argparse.BooleanOptionalAction,
-        default=True,
+        default=False,
         dest="log_llm_payload",
-        help="Enable or disable logging of full LLM request/response payloads (default: on).",
+        help="Enable or disable logging of full LLM request/response payloads (default: off).",
     )
     return parser.parse_args()
 
