@@ -40,7 +40,93 @@ interface ContextChatWorkspaceProps {
   onClose: () => void;
 }
 
-const DEFAULT_CONTEXT_TOKEN_CAP = 250000;
+const BOOTSTRAP_MAX_ATTEMPTS = 3; // initial attempt + 2 retries
+const BOOTSTRAP_RETRY_BASE_DELAY_MS = 400;
+
+type ErrorLogContext = Record<string, string | number | boolean | null | undefined>;
+
+function waitForRetry(ms: number): Promise<void> {
+  return new Promise((resolve) => {
+    setTimeout(resolve, ms);
+  });
+}
+
+function resolveUiErrorMessage(error: unknown, fallback: string): string {
+  if (error instanceof Error && error.message.trim().length > 0) {
+    return error.message;
+  }
+  return fallback;
+}
+
+function isTokenLimitErrorMessage(message: string): boolean {
+  const normalized = message.toLowerCase();
+  return (
+    (normalized.includes("token") && normalized.includes("exceed")) ||
+    (normalized.includes("token") && normalized.includes("limit")) ||
+    (normalized.includes("token") && normalized.includes("cap")) ||
+    (normalized.includes("token") && normalized.includes("budget"))
+  );
+}
+
+function resolveTokenAwareErrorMessage(error: unknown, fallback: string): string {
+  const message = resolveUiErrorMessage(error, fallback);
+  if (isTokenLimitErrorMessage(message)) {
+    return "the message exceeds token limit";
+  }
+  return message;
+}
+
+function logWorkspaceError(
+  stage: string,
+  error: unknown,
+  context: ErrorLogContext,
+): void {
+  if (error instanceof Error) {
+    console.error(
+      "[ContextChatWorkspace] request failed",
+      {
+        stage,
+        ...context,
+        name: error.name,
+        message: error.message,
+        stack: error.stack,
+      },
+      error,
+    );
+    return;
+  }
+  console.error("[ContextChatWorkspace] request failed", {
+    stage,
+    ...context,
+    error,
+  });
+}
+
+async function retryBootstrapRequest<T>(
+  stage: string,
+  operation: () => Promise<T>,
+  context: ErrorLogContext,
+): Promise<T> {
+  for (let attempt = 1; attempt <= BOOTSTRAP_MAX_ATTEMPTS; attempt += 1) {
+    try {
+      return await operation();
+    } catch (error) {
+      const isLastAttempt = attempt >= BOOTSTRAP_MAX_ATTEMPTS;
+      logWorkspaceError(stage, error, {
+        ...context,
+        attempt,
+        maxAttempts: BOOTSTRAP_MAX_ATTEMPTS,
+        willRetry: !isLastAttempt,
+      });
+      if (isLastAttempt) {
+        throw error;
+      }
+      const delayMs = BOOTSTRAP_RETRY_BASE_DELAY_MS * attempt;
+      await waitForRetry(delayMs);
+    }
+  }
+  throw new Error("Unreachable retry state.");
+}
 
 export function ContextChatWorkspace({
   runId,
@@ -89,12 +175,14 @@ export function ContextChatWorkspace({
   ): Promise<void> {
     setIsLoadingContexts(true);
     try {
-      const payload = await fetchChatSessionContexts(activeRunId, sessionId);
+      const payload = await retryBootstrapRequest(
+        "fetchChatSessionContexts",
+        () => fetchChatSessionContexts(activeRunId, sessionId),
+        { runId: activeRunId, conversationId: sessionId },
+      );
       setSessionContexts(payload);
     } catch (error) {
-      setErrorMessage(
-        error instanceof Error ? error.message : "Failed to load session contexts.",
-      );
+      setErrorMessage(resolveUiErrorMessage(error, "Failed to load session contexts."));
     } finally {
       setIsLoadingContexts(false);
     }
@@ -111,7 +199,11 @@ export function ContextChatWorkspace({
       setIsBootstrapping(true);
       setErrorMessage(null);
       try {
-        const existing = await listChatSessions(activeRunId);
+        const existing = await retryBootstrapRequest(
+          "listChatSessions",
+          () => listChatSessions(activeRunId),
+          { runId: activeRunId },
+        );
         if (cancelled) {
           return;
         }
@@ -120,7 +212,13 @@ export function ContextChatWorkspace({
           // Fetch all sessions to sort by updated_at (most recent first)
           // Use allSettled to handle partial failures (e.g., corrupted session files)
           const results = await Promise.allSettled(
-            existing.conversations.map((id) => fetchChatSession(activeRunId, id)),
+            existing.conversations.map((id) =>
+              retryBootstrapRequest(
+                "fetchChatSession",
+                () => fetchChatSession(activeRunId, id),
+                { runId: activeRunId, conversationId: id },
+              ),
+            ),
           );
           if (cancelled) {
             return;
@@ -144,7 +242,11 @@ export function ContextChatWorkspace({
           // If all sessions failed to load, fall through to create a new one
         }
         if (!sessionId) {
-          const created = await createChatSession(activeRunId);
+          const created = await retryBootstrapRequest(
+            "createChatSession",
+            () => createChatSession(activeRunId),
+            { runId: activeRunId },
+          );
           if (cancelled) {
             return;
           }
@@ -159,9 +261,7 @@ export function ContextChatWorkspace({
         if (cancelled) {
           return;
         }
-        setErrorMessage(
-          error instanceof Error ? error.message : "Failed to open chat session.",
-        );
+        setErrorMessage(resolveUiErrorMessage(error, "Failed to open chat session."));
       } finally {
         if (!cancelled) {
           setIsBootstrapping(false);
@@ -210,7 +310,7 @@ export function ContextChatWorkspace({
     return mapping;
   }, [contextCatalog]);
 
-  const managerTokenCap = sessionContexts?.token_cap ?? DEFAULT_CONTEXT_TOKEN_CAP;
+  const managerTokenCap = sessionContexts?.token_cap ?? null;
   const selectedContextTokens = useMemo(
     () =>
       managerSelection.reduce((sum, runIdValue) => {
@@ -243,9 +343,11 @@ export function ContextChatWorkspace({
       ]);
       await loadSessionContexts(runId, conversationId);
     } catch (error) {
-      setErrorMessage(
-        error instanceof Error ? error.message : "Message send failed.",
-      );
+      logWorkspaceError("sendChatMessage", error, {
+        runId,
+        conversationId,
+      });
+      setErrorMessage(resolveTokenAwareErrorMessage(error, "Message send failed."));
       setInputValue((current) => (current.trim() ? current : value));
     } finally {
       setPendingPrompt(null);
@@ -261,15 +363,6 @@ export function ContextChatWorkspace({
           return current;
         }
         return current.filter((runIdValue) => runIdValue !== targetRunId);
-      }
-
-      const context = contextById.get(targetRunId);
-      const additionalTokens = context?.total_tokens ?? 0;
-      if (selectedContextTokens + additionalTokens > managerTokenCap) {
-        setCatalogError(
-          `Selection exceeds token cap ${managerTokenCap.toLocaleString()} tokens.`,
-        );
-        return current;
       }
       setCatalogError(null);
       return [...current, targetRunId];
@@ -325,9 +418,7 @@ export function ContextChatWorkspace({
       setSessionContexts(payload);
       setIsContextManagerOpen(false);
     } catch (error) {
-      setCatalogError(
-        error instanceof Error ? error.message : "Failed to update contexts.",
-      );
+      setCatalogError(resolveTokenAwareErrorMessage(error, "Failed to update contexts."));
     } finally {
       setIsSavingContexts(false);
     }
@@ -495,14 +586,19 @@ export function ContextChatWorkspace({
             <DialogTitle>Context Manager</DialogTitle>
             <DialogDescription>
               Switch or combine multiple run contexts. Hard cap:{" "}
-              {managerTokenCap.toLocaleString()} tokens.
+              {managerTokenCap === null
+                ? "not available yet"
+                : `${managerTokenCap.toLocaleString()} tokens`}
+              .
             </DialogDescription>
           </DialogHeader>
 
           <div className="space-y-3 p-5">
             <div className="rounded-md border border-slate-200 bg-slate-50 p-3 text-xs text-slate-700">
               Selected token estimate: {selectedContextTokens.toLocaleString()} /{" "}
-              {managerTokenCap.toLocaleString()}
+              {managerTokenCap === null
+                ? "unknown"
+                : managerTokenCap.toLocaleString()}
             </div>
 
             <ScrollArea className="h-[45vh] rounded-md border border-slate-200 p-3">
@@ -517,19 +613,15 @@ export function ContextChatWorkspace({
                 <div className="space-y-2">
                   {contextCatalog.map((context) => {
                     const selected = managerSelection.includes(context.run_id);
-                    const wouldOverflow =
-                      !selected &&
-                      selectedContextTokens + context.total_tokens > managerTokenCap;
                     return (
                       <button
                         key={context.run_id}
                         type="button"
                         onClick={() => toggleContextSelection(context.run_id)}
-                        disabled={wouldOverflow}
                         className={
                           selected
                             ? "w-full rounded-md border border-teal-300 bg-teal-50 p-3 text-left"
-                            : "w-full rounded-md border border-slate-200 bg-white p-3 text-left hover:border-slate-300 disabled:cursor-not-allowed disabled:opacity-45"
+                            : "w-full rounded-md border border-slate-200 bg-white p-3 text-left hover:border-slate-300"
                         }
                       >
                         <div className="mb-1 flex items-center justify-between gap-2">
@@ -561,8 +653,7 @@ export function ContextChatWorkspace({
                 disabled={
                   isSavingContexts ||
                   isLoadingCatalog ||
-                  managerSelection.length === 0 ||
-                  selectedContextTokens > managerTokenCap
+                  managerSelection.length === 0
                 }
               >
                 {isSavingContexts ? <Loader2 className="h-4 w-4 animate-spin" /> : null}
