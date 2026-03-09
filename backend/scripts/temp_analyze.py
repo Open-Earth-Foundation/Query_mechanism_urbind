@@ -1,4 +1,4 @@
-﻿"""
+"""
 Brief: Backward-compatible run-log token analyzer that includes reasoning tokens.
 
 Inputs:
@@ -66,4 +66,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

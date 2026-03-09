@@ -25,6 +25,8 @@ def test_coerce_markdown_result_accepts_partial_answer_field() -> None:
         == "Munich has deployed 43 existing public chargers as of 2024."
     )
     assert parsed.excerpts[0].source_chunk_ids == ["chunk_abc123"]
+    assert parsed.accepted_chunk_ids == []
+    assert parsed.rejected_chunk_ids == []
 
 
 def test_coerce_markdown_result_rejects_legacy_answer_field() -> None:

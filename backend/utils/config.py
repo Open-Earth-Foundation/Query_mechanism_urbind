@@ -43,6 +43,7 @@ class MarkdownResearcherConfig(AgentConfig):
     max_workers: int = 2
     request_backoff_base_seconds: float = 2.0
     request_backoff_max_seconds: float = 10.0
+    strict_decision_audit: bool = False
 
 
 class ChatConfig(AgentConfig):

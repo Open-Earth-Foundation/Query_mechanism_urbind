@@ -46,12 +46,24 @@ def _stub_markdown(
     api_key: str,
     **_kwargs: dict[str, object],
 ) -> MarkdownResearchResult:
+    chunk_ids = [
+        str(document.get("chunk_id", "")).strip()
+        for document in documents
+        if str(document.get("chunk_id", "")).strip()
+    ]
+    accepted_chunk_ids = chunk_ids[:1]
+    rejected_chunk_ids = chunk_ids[1:]
     excerpt = MarkdownExcerpt(
         quote="Munich has deployed 43 existing public chargers as of 2024.",
         city_name="Munich",
         partial_answer="Munich has deployed 43 existing public chargers as of 2024.",
+        source_chunk_ids=accepted_chunk_ids,
     )
-    return MarkdownResearchResult(excerpts=[excerpt])
+    return MarkdownResearchResult(
+        excerpts=[excerpt],
+        accepted_chunk_ids=accepted_chunk_ids,
+        rejected_chunk_ids=rejected_chunk_ids,
+    )
 
 
 def _stub_refine_question(
@@ -121,6 +133,9 @@ def test_run_pipeline_creates_artifacts(
     )
 
     assert paths.final_output.exists()
+    assert paths.markdown_accepted_excerpts.exists()
+    assert paths.markdown_rejected_excerpts.exists()
+    assert paths.markdown_decision_audit.exists()
     run_log = json.loads(paths.run_log.read_text(encoding="utf-8"))
     assert run_log["status"] == "completed"
     assert Path(run_log["artifacts"]["final_output"]).exists()
