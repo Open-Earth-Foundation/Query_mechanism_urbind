@@ -170,67 +170,191 @@ def test_generate_context_chat_reply_forwards_reasoning_effort(
     assert captured_request_kwargs["reasoning_effort"] == "high"
 
 
-def test_generate_context_chat_reply_rejects_citation_path_over_token_cap(
+def test_generate_context_chat_reply_routes_citation_overflow_to_map_reduce(
+    tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    """When using citations, a message that exceeds the hard token cap raises an error."""
-
-    class _DummyResponse:
-        choices = [type("Choice", (), {"message": type("Message", (), {"content": "ok"})()})()]
-
-    def _stub_run_chat_completion_with_tools(
-        *,
-        client: object,
-        messages: list[dict[str, str]],
-        request_kwargs: dict[str, object],
-        max_tool_rounds: int,
-    ) -> object:
-        _ = client, messages, request_kwargs, max_tool_rounds
-        return _DummyResponse()
-
-    monkeypatch.setattr(
-        context_chat,
-        "_run_chat_completion_with_tools",
-        _stub_run_chat_completion_with_tools,
-    )
+    """Oversized citation catalogs should switch into overflow map-reduce."""
     config = AppConfig(
         orchestrator=OrchestratorConfig(model="test-model", context_bundle_name="context_bundle.json"),
         sql_researcher=SqlResearcherConfig(model="test-model"),
         markdown_researcher=MarkdownResearcherConfig(model="test-model"),
         writer=AgentConfig(model="test-model"),
-        chat=ChatConfig(model="openai/gpt-5.2", reasoning_effort="high"),
-        runs_dir=Path("output"),
+        chat=ChatConfig(
+            model="openai/gpt-5.2",
+            reasoning_effort="high",
+            max_context_total_tokens=240,
+            min_prompt_token_cap=0,
+            prompt_token_buffer=0,
+        ),
+        runs_dir=tmp_path / "output",
         markdown_dir=Path("documents"),
         enable_sql=False,
     )
+    overflow_calls: list[dict[str, object]] = []
 
+    monkeypatch.setattr(context_chat, "OpenAI", lambda **_kwargs: object())
     monkeypatch.setattr(
         context_chat,
-        "_estimate_messages_tokens",
-        lambda _messages: config.chat.max_context_total_tokens + 1,
+        "_run_overflow_evidence_map_reduce",
+        lambda **kwargs: overflow_calls.append(kwargs) or "overflow answer [ref_1]",
     )
 
     citation_catalog = [
-        {"ref_id": "ref_1", "city_name": "Munich", "quote": "evidence", "partial_answer": "answer"}
+        _catalog_entry("ref_1", 20),
+        _catalog_entry("ref_2", 220),
     ]
-    with pytest.raises(ValueError, match="Chat context exceeds token budget"):
-        context_chat.generate_context_chat_reply(
-            original_question="Question",
-            contexts=[
-                {
-                    "run_id": "run-1",
-                    "question": "Question",
-                    "final_document": "# Final",
-                    "context_bundle": {"markdown": {"status": "success", "excerpts": []}},
-                }
-            ],
-            history=[],
-            user_content="Answer briefly.",
-            config=config,
-            token_cap=config.chat.max_context_total_tokens + 30_000,
-            api_key_override="sk-or-v1-test",
-            citation_catalog=citation_catalog,
+    result = context_chat.generate_context_chat_reply(
+        original_question="Question",
+        contexts=[
+            {
+                "run_id": "run-1",
+                "question": "Question",
+                "final_document": "# Final",
+                "context_bundle": {"markdown": {"status": "success", "excerpts": []}},
+            }
+        ],
+        history=[],
+        user_content="Answer briefly.",
+        config=config,
+        token_cap=config.chat.max_context_total_tokens,
+        api_key_override="sk-or-v1-test",
+        citation_catalog=citation_catalog,
+        run_id="run-1",
+    )
+
+    assert result == "overflow answer [ref_1]"
+    assert overflow_calls
+    assert overflow_calls[0]["run_id"] == "run-1"
+
+
+def test_load_or_build_evidence_cache_strips_prompt_noise_and_reuses_cache(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Cached overflow evidence should keep only compact prompt fields and be reusable."""
+    config = AppConfig(
+        orchestrator=OrchestratorConfig(model="test-model", context_bundle_name="context_bundle.json"),
+        sql_researcher=SqlResearcherConfig(model="test-model"),
+        markdown_researcher=MarkdownResearcherConfig(model="test-model"),
+        writer=AgentConfig(model="test-model"),
+        chat=ChatConfig(model="openai/gpt-5.2"),
+        runs_dir=tmp_path / "output",
+        markdown_dir=Path("documents"),
+        enable_sql=False,
+    )
+    normalized_contexts = [
+        context_chat.ChatContextSource(
+            run_id="run-1",
+            question="Question",
+            final_document="# Final",
+            context_bundle={
+                "final": "/tmp/final.md",
+                "markdown": {
+                    "status": "success",
+                    "error": {"code": "E"},
+                    "excerpts": [
+                        {
+                            "ref_id": "ref_1",
+                            "city_name": "Munich",
+                            "quote": "evidence",
+                            "partial_answer": "answer",
+                            "source_chunk_ids": ["chunk-1"],
+                        }
+                    ],
+                },
+            },
         )
+    ]
+    normalized_citations = [
+        {
+            "ref_id": "ref_1",
+            "city_name": "Munich",
+            "quote": "evidence",
+            "partial_answer": "answer",
+        }
+    ]
+
+    payload = context_chat._load_or_build_evidence_cache(
+        run_id="run-1",
+        normalized_contexts=normalized_contexts,
+        normalized_citations=normalized_citations,
+        config=config,
+    )
+
+    cache_path = context_chat._chat_evidence_cache_path(config.runs_dir, "run-1")
+    assert cache_path.exists()
+    assert payload["evidence_count"] == 1
+    cached = json.loads(cache_path.read_text(encoding="utf-8"))
+    item = cached["chunks"][0]["items"][0]
+    assert set(item.keys()) == {"ref_id", "city_name", "quote", "partial_answer"}
+    assert "source_chunk_ids" not in item
+    assert "final" not in cached
+
+    monkeypatch.setattr(
+        context_chat,
+        "_write_json_object",
+        lambda *_args, **_kwargs: (_ for _ in ()).throw(AssertionError("Cache should be reused.")),
+    )
+
+    reused = context_chat._load_or_build_evidence_cache(
+        run_id="run-1",
+        normalized_contexts=normalized_contexts,
+        normalized_citations=normalized_citations,
+        config=config,
+    )
+    assert reused["source_signature"] == payload["source_signature"]
+
+
+def test_run_reduce_passes_batches_recursively(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Large partial-answer sets should be merged across multiple reduce batches."""
+    merge_calls: list[str] = []
+
+    monkeypatch.setattr(
+        context_chat,
+        "_resolve_prompt_budget",
+        lambda **_kwargs: ([], 120),
+    )
+    monkeypatch.setattr(context_chat, "count_tokens", lambda value: len(value))
+
+    def _stub_run_single_pass(
+        *,
+        client: object,
+        messages: list[dict[str, object]],
+        request_kwargs: dict[str, object],
+        retry_settings: object,
+        run_id: str | None,
+        context_count: int,
+    ) -> str:
+        _ = client, request_kwargs, retry_settings, run_id, context_count
+        merge_calls.append(str(messages[0]["content"]))
+        return "Merged answer [ref_1]"
+
+    monkeypatch.setattr(context_chat, "_run_single_pass", _stub_run_single_pass)
+
+    result = context_chat._run_reduce_passes(
+        partial_answers=[
+            "A" * 24 + " [ref_1]",
+            "B" * 24 + " [ref_2]",
+            "C" * 24 + " [ref_3]",
+            "D" * 24 + " [ref_4]",
+        ],
+        prompt_header="Header",
+        bounded_history=[],
+        user_content="Summarize.",
+        effective_token_cap=400,
+        prompt_token_buffer=0,
+        client=object(),
+        request_kwargs={},
+        retry_settings=object(),
+        run_id="run-1",
+        context_count=1,
+    )
+
+    assert result == "Merged answer [ref_1]"
+    assert len(merge_calls) == 3
 
 
 def test_run_chat_completion_with_tools_preserves_unsupported_tool_behavior() -> None:

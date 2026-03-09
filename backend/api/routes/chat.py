@@ -487,14 +487,17 @@ def _selected_followup_bundles(session: dict[str, object]) -> list[dict[str, str
     return bundles
 
 
-def _apply_context_token_cap(
-    contexts: list[_LoadedContext], token_cap: int
+def _apply_additional_context_token_cap(
+    *,
+    base_context: _LoadedContext,
+    additional_contexts: list[_LoadedContext],
+    token_cap: int,
 ) -> tuple[list[_LoadedContext], list[str]]:
-    """Apply sequential token cap to selected contexts."""
-    included: list[_LoadedContext] = []
+    """Keep the base context pinned while capping only extra selected runs."""
+    included: list[_LoadedContext] = [base_context]
     excluded: list[str] = []
-    running_total = 0
-    for context in contexts:
+    running_total = base_context.total_tokens
+    for context in additional_contexts:
         next_total = running_total + context.total_tokens
         if next_total <= token_cap:
             included.append(context)
@@ -538,14 +541,31 @@ def _resolve_session_contexts(
 ]:
     """Resolve selected contexts for a chat session with token cap applied."""
     selected_ids = _selected_context_run_ids(session, fallback_run_id)
+    try:
+        base_context = _load_context_for_run_id(run_store, fallback_run_id)
+    except ValueError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_409_CONFLICT,
+            detail=(
+                "The base run context is no longer usable for chat. "
+                f"Fix run artifacts for `{fallback_run_id}` and retry."
+            ),
+        ) from exc
+
     loaded_contexts: list[_LoadedContext] = []
     excluded: list[str] = []
     for context_run_id in selected_ids:
+        if context_run_id == fallback_run_id:
+            continue
         try:
             loaded_contexts.append(_load_context_for_run_id(run_store, context_run_id))
         except ValueError:
             excluded.append(context_run_id)
-    included, cap_excluded = _apply_context_token_cap(loaded_contexts, token_cap)
+    included, cap_excluded = _apply_additional_context_token_cap(
+        base_context=base_context,
+        additional_contexts=loaded_contexts,
+        token_cap=token_cap,
+    )
     excluded.extend(cap_excluded)
     included_total = sum(context.total_tokens for context in included)
 
@@ -607,7 +627,11 @@ def _build_session_contexts_response(
         token_cap=token_cap,
         excluded_context_run_ids=excluded_ids,
         excluded_followup_bundle_ids=excluded_followups,
-        is_capped=len(excluded_ids) > 0 or len(excluded_followups) > 0,
+        is_capped=(
+            len(excluded_ids) > 0
+            or len(excluded_followups) > 0
+            or total_tokens > token_cap
+        ),
     )
 
 
@@ -1166,13 +1190,27 @@ def update_chat_session_contexts(
             ),
         )
 
-    total_tokens = sum(available[run_id_value].total_tokens for run_id_value in requested)
-    if total_tokens > token_cap:
+    base_tokens = available[run_id].total_tokens
+    extra_run_ids = [run_id_value for run_id_value in requested if run_id_value != run_id]
+    extra_tokens = sum(available[run_id_value].total_tokens for run_id_value in extra_run_ids)
+    remaining_budget = max(token_cap - base_tokens, 0)
+
+    if base_tokens > token_cap and extra_run_ids:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail=(
-                f"Selected contexts total {total_tokens} tokens, "
-                f"which exceeds the {token_cap} token cap."
+                f"Base context `{run_id}` already uses {base_tokens} tokens, "
+                f"which exceeds the {token_cap} token cap. Remove extra contexts and retry."
+            ),
+        )
+
+    if extra_tokens > remaining_budget:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail=(
+                f"Selected extra contexts total {extra_tokens} tokens, "
+                f"which exceeds the remaining {remaining_budget} token budget "
+                f"after pinning base context `{run_id}`."
             ),
         )
 

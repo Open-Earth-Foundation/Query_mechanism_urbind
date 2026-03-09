@@ -7,6 +7,7 @@ import pytest
 from fastapi.testclient import TestClient
 
 from backend.api.main import create_app
+from backend.api.services import context_chat
 from backend.api.services.chat_followup_research import (
     CHAT_FOLLOWUP_CITY_UNAVAILABLE,
     ChatFollowupSearchResult,
@@ -30,6 +31,10 @@ def _build_config(
     *,
     followup_search_enabled: bool = False,
     max_auto_followup_bundles: int = 3,
+    max_context_total_tokens: int = 220_000,
+    min_prompt_token_cap: int = 20_000,
+    prompt_token_buffer: int = 2_000,
+    multi_pass_chunk_tokens: int = 150_000,
 ) -> AppConfig:
     return AppConfig(
         orchestrator=OrchestratorConfig(
@@ -41,6 +46,10 @@ def _build_config(
         chat=ChatConfig(
             model="openai/gpt-5.2",
             max_history_messages=10,
+            max_context_total_tokens=max_context_total_tokens,
+            min_prompt_token_cap=min_prompt_token_cap,
+            prompt_token_buffer=prompt_token_buffer,
+            multi_pass_chunk_tokens=multi_pass_chunk_tokens,
             followup_search_enabled=followup_search_enabled,
             max_auto_followup_bundles=max_auto_followup_bundles,
         ),
@@ -1567,3 +1576,226 @@ def test_chat_followup_same_city_search_replaces_previous_bundle(
         assert [bundle["bundle_id"] for bundle in contexts_payload["followup_bundles"]] == [
             "fup_chat_002_munich"
         ]
+
+
+def test_chat_overflow_uses_evidence_map_reduce_and_reuses_cache(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+
+    def _stub_load_config(_path: Path | None = None) -> AppConfig:
+        return _build_config(
+            runs_dir=runs_dir,
+            markdown_dir=markdown_dir,
+            max_context_total_tokens=1200,
+            min_prompt_token_cap=0,
+            prompt_token_buffer=0,
+            multi_pass_chunk_tokens=120,
+        )
+
+    def _stub_run_pipeline(
+        question: str,
+        config: AppConfig,
+        run_id: str | None = None,
+        log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
+        selected_cities: list[str] | None = None,
+    ) -> RunPaths:
+        assert run_id is not None
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
+        assert selected_cities is None
+        excerpts = [
+            {
+                "ref_id": "ref_7",
+                "city_name": "munich",
+                "quote": "Munich evidence " * 120,
+                "partial_answer": "Munich partial answer " * 20,
+                "source_chunk_ids": ["chunk_hidden_1"],
+            },
+            {
+                "ref_id": "ref_9",
+                "city_name": "porto",
+                "quote": "Porto evidence " * 120,
+                "partial_answer": "Porto partial answer " * 20,
+                "source_chunk_ids": ["chunk_hidden_2"],
+            },
+        ]
+        return _write_success_artifacts(question, run_id, config, excerpts=excerpts)
+
+    responses = iter(
+        [
+            "Munich partial analysis. [ref_1]",
+            "Porto partial analysis. [ref_2]",
+            "Merged answer for both cities. [ref_1] [ref_2]",
+            "Second Munich partial. [ref_1]",
+            "Second Porto partial. [ref_2]",
+            "Second merged answer. [ref_1] [ref_2]",
+        ]
+    )
+
+    class _DummyResponse:
+        def __init__(self, content: str) -> None:
+            self.choices = [
+                type("Choice", (), {"message": type("Message", (), {"content": content})()})()
+            ]
+
+    def _stub_run_chat_completion_with_tools(
+        *,
+        client: object,
+        messages: list[dict[str, object]],
+        request_kwargs: dict[str, object],
+        max_tool_rounds: int,
+    ) -> object:
+        _ = client, messages, request_kwargs, max_tool_rounds
+        return _DummyResponse(next(responses))
+
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.routes.chat.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+    monkeypatch.setattr("backend.api.services.context_chat.OpenAI", lambda **_kwargs: object())
+    monkeypatch.setattr(
+        "backend.api.services.context_chat._run_chat_completion_with_tools",
+        _stub_run_chat_completion_with_tools,
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        start = client.post(
+            "/api/v1/runs",
+            json={"question": "Build doc", "run_id": "run-chat-overflow"},
+        )
+        assert start.status_code == 202
+        _poll_until_completed(client, "run-chat-overflow")
+
+        create_session = client.post(
+            "/api/v1/runs/run-chat-overflow/chat/sessions",
+            json={},
+        )
+        conversation_id = create_session.json()["conversation_id"]
+
+        first_send = client.post(
+            f"/api/v1/runs/run-chat-overflow/chat/sessions/{conversation_id}/messages",
+            json={"content": "Compare the evidence."},
+        )
+        assert first_send.status_code == 200
+        first_payload = first_send.json()
+        assert first_payload["assistant_message"]["content"] == "Merged answer for both cities. [ref_1] [ref_2]"
+        assert [citation["source_ref_id"] for citation in first_payload["assistant_message"]["citations"]] == [
+            "ref_7",
+            "ref_9",
+        ]
+
+        cache_path = context_chat._chat_evidence_cache_path(runs_dir, "run-chat-overflow")
+        assert cache_path.exists()
+        cached_payload = json.loads(cache_path.read_text(encoding="utf-8"))
+        assert cached_payload["evidence_count"] == 2
+
+        monkeypatch.setattr(
+            "backend.api.services.context_chat._write_json_object",
+            lambda path, payload: (_ for _ in ()).throw(
+                AssertionError(f"Cache should be reused, not rewritten: {path}")
+            ),
+        )
+
+        second_send = client.post(
+            f"/api/v1/runs/run-chat-overflow/chat/sessions/{conversation_id}/messages",
+            json={"content": "Summarize again."},
+        )
+        assert second_send.status_code == 200
+        assert second_send.json()["assistant_message"]["content"] == "Second merged answer. [ref_1] [ref_2]"
+
+
+def test_chat_session_contexts_keep_base_run_pinned_when_base_exceeds_cap(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+
+    def _stub_load_config(_path: Path | None = None) -> AppConfig:
+        return _build_config(
+            runs_dir=runs_dir,
+            markdown_dir=markdown_dir,
+            max_context_total_tokens=120,
+        )
+
+    def _stub_run_pipeline(
+        question: str,
+        config: AppConfig,
+        run_id: str | None = None,
+        log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
+        selected_cities: list[str] | None = None,
+    ) -> RunPaths:
+        assert run_id is not None
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
+        assert selected_cities is None
+        return _write_success_artifacts(question, run_id, config)
+
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.routes.chat.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        start_parent = client.post(
+            "/api/v1/runs",
+            json={"question": "Parent doc", "run_id": "run-parent-cap"},
+        )
+        assert start_parent.status_code == 202
+        _poll_until_completed(client, "run-parent-cap")
+
+        start_other = client.post(
+            "/api/v1/runs",
+            json={"question": "Other doc", "run_id": "run-other-cap"},
+        )
+        assert start_other.status_code == 202
+        _poll_until_completed(client, "run-other-cap")
+
+        base_final = runs_dir / "run-parent-cap" / "final.md"
+        base_bundle = runs_dir / "run-parent-cap" / "context_bundle.json"
+        base_final.write_text("# Answer\n" + ("overflow " * 200), encoding="utf-8")
+        base_bundle.write_text(
+            json.dumps(
+                {
+                    "sql": None,
+                    "markdown": {
+                        "status": "success",
+                        "excerpts": [],
+                    },
+                    "final": str(base_final),
+                },
+                ensure_ascii=True,
+                indent=2,
+            ),
+            encoding="utf-8",
+        )
+
+        create_session = client.post(
+            "/api/v1/runs/run-parent-cap/chat/sessions",
+            json={},
+        )
+        assert create_session.status_code == 201
+        conversation_id = create_session.json()["conversation_id"]
+
+        session_contexts = client.get(
+            f"/api/v1/runs/run-parent-cap/chat/sessions/{conversation_id}/contexts"
+        )
+        assert session_contexts.status_code == 200
+        contexts_payload = session_contexts.json()
+        assert [context["run_id"] for context in contexts_payload["contexts"]] == ["run-parent-cap"]
+        assert contexts_payload["is_capped"] is True
+        assert contexts_payload["excluded_context_run_ids"] == []
+
+        update_contexts = client.put(
+            f"/api/v1/runs/run-parent-cap/chat/sessions/{conversation_id}/contexts",
+            json={"context_run_ids": ["run-other-cap"]},
+        )
+        assert update_contexts.status_code == 400
+        assert "Base context `run-parent-cap` already uses" in update_contexts.json()["detail"]

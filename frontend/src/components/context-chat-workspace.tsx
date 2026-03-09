@@ -524,10 +524,20 @@ export function ContextChatWorkspace({
                 ))}
               </div>
               {sessionContexts.is_capped ? (
-                <p className="text-amber-700">
-                  Some sources are excluded due to token cap or missing artifacts:{" "}
-                  {[...sessionContexts.excluded_context_run_ids, ...sessionContexts.excluded_followup_bundle_ids].join(", ")}
-                </p>
+                [...sessionContexts.excluded_context_run_ids, ...sessionContexts.excluded_followup_bundle_ids]
+                  .length > 0 ? (
+                    <p className="text-amber-700">
+                      Some sources are excluded due to token cap or missing artifacts:{" "}
+                      {[
+                        ...sessionContexts.excluded_context_run_ids,
+                        ...sessionContexts.excluded_followup_bundle_ids,
+                      ].join(", ")}
+                    </p>
+                  ) : (
+                    <p className="text-amber-700">
+                      The base context exceeds the token cap and remains pinned.
+                    </p>
+                  )
               ) : null}
             </div>
           ) : isLoadingContexts ? (

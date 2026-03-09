@@ -2,12 +2,13 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import logging
 import re
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, cast
+from typing import Any, Callable, cast
 
 from openai import APIConnectionError, APIStatusError, APITimeoutError, OpenAI
 from openai.types.chat import ChatCompletionMessageParam
@@ -29,6 +30,11 @@ CHAT_SUBTRACT_TOOL_NAME = "subtract_numbers"
 CHAT_MULTIPLY_TOOL_NAME = "multiply_numbers"
 CHAT_DIVIDE_TOOL_NAME = "divide_numbers"
 CHAT_REF_ID_PATTERN = re.compile(r"^ref_[1-9]\d*$")
+CHAT_EVIDENCE_CACHE_FILENAME = "evidence_chunks.json"
+
+
+class ChatPromptOverflowError(ValueError):
+    """Raised when the direct chat prompt exceeds the configured token budget."""
 
 
 def resolve_chat_token_cap(config: AppConfig) -> int:
@@ -211,9 +217,66 @@ def generate_context_chat_reply(
     )
 
     included_context_ids = [context.run_id for context in normalized_contexts]
+    try:
+        return _generate_direct_context_chat_reply(
+            prompt_header=prompt_header,
+            normalized_contexts=normalized_contexts,
+            normalized_citations=normalized_citations,
+            bounded_history=bounded_history,
+            user_content=user_content,
+            effective_token_cap=effective_token_cap,
+            resolved_cap=resolved_cap,
+            config=config,
+            client=client,
+            request_kwargs=base_request_kwargs,
+            retry_settings=retry_settings,
+            run_id=run_id,
+            context_count=len(included_context_ids),
+            context_ids=included_context_ids,
+        )
+    except ChatPromptOverflowError as exc:
+        logger.info(
+            "Context chat overflow fallback run_id=%s contexts=%s error=%s",
+            run_id,
+            included_context_ids,
+            exc,
+        )
+        return _run_overflow_evidence_map_reduce(
+            prompt_header=prompt_header,
+            normalized_contexts=normalized_contexts,
+            normalized_citations=normalized_citations,
+            bounded_history=bounded_history,
+            user_content=user_content,
+            effective_token_cap=effective_token_cap,
+            config=config,
+            client=client,
+            request_kwargs=base_request_kwargs,
+            retry_settings=retry_settings,
+            run_id=run_id,
+            context_count=len(included_context_ids),
+        )
 
+
+def _generate_direct_context_chat_reply(
+    *,
+    prompt_header: str,
+    normalized_contexts: list[ChatContextSource],
+    normalized_citations: list[dict[str, str]],
+    bounded_history: list[dict[str, str]],
+    user_content: str,
+    effective_token_cap: int,
+    resolved_cap: int,
+    config: AppConfig,
+    client: OpenAI,
+    request_kwargs: dict[str, Any],
+    retry_settings: RetrySettings,
+    run_id: str | None,
+    context_count: int,
+    context_ids: list[str],
+) -> str:
+    """Return the direct single-pass chat answer or raise on prompt overflow."""
     if normalized_citations:
-        context_block = _build_fitted_citation_context_block(
+        fitted_citations = _fit_citation_catalog_to_budget(
             citation_catalog=normalized_citations,
             prompt_header=prompt_header,
             history=bounded_history,
@@ -221,32 +284,29 @@ def generate_context_chat_reply(
             token_cap=effective_token_cap,
             prompt_token_buffer=config.chat.prompt_token_buffer,
         )
-        system_prompt = _compose_system_prompt(prompt_header, context_block)
-        messages = _build_messages(system_prompt, bounded_history, user_content)
-        while _estimate_messages_tokens(messages) > effective_token_cap and bounded_history:
-            bounded_history = bounded_history[1:]
-            context_block = _build_fitted_citation_context_block(
-                citation_catalog=normalized_citations,
-                prompt_header=prompt_header,
-                history=bounded_history,
-                user_content=user_content,
-                token_cap=effective_token_cap,
-                prompt_token_buffer=config.chat.prompt_token_buffer,
+        if len(fitted_citations) < len(normalized_citations):
+            raise ChatPromptOverflowError(
+                "Citation evidence catalog exceeds direct prompt budget and requires overflow map-reduce."
             )
-            system_prompt = _compose_system_prompt(prompt_header, context_block)
-            messages = _build_messages(system_prompt, bounded_history, user_content)
+        context_block = _render_citation_catalog_block(fitted_citations)
+        system_prompt = _compose_system_prompt(prompt_header, context_block)
+        working_history = list(bounded_history)
+        messages = _build_messages(system_prompt, working_history, user_content)
+        while _estimate_messages_tokens(messages) > effective_token_cap and working_history:
+            working_history = working_history[1:]
+            messages = _build_messages(system_prompt, working_history, user_content)
         estimated_prompt_tokens = _estimate_messages_tokens(messages)
         if estimated_prompt_tokens > effective_token_cap:
-            raise ValueError(
+            raise ChatPromptOverflowError(
                 "Chat context exceeds token budget after trimming "
                 f"({estimated_prompt_tokens} > {effective_token_cap}). "
                 "Reduce selected contexts or shorten history/messages."
             )
         logger.info(
-            "Context chat request model=%s contexts=%s estimated_prompt_tokens=%d "
+            "Context chat direct request model=%s contexts=%s estimated_prompt_tokens=%d "
             "token_cap=%d effective_token_cap=%d",
             config.chat.model,
-            included_context_ids,
+            context_ids,
             estimated_prompt_tokens,
             resolved_cap,
             effective_token_cap,
@@ -254,60 +314,634 @@ def generate_context_chat_reply(
         return _run_single_pass(
             client=client,
             messages=messages,
-            request_kwargs=base_request_kwargs,
+            request_kwargs=request_kwargs,
             retry_settings=retry_settings,
             run_id=run_id,
-            context_count=len(included_context_ids),
+            context_count=context_count,
         )
 
     serialized_contexts = _serialize_all_contexts(normalized_contexts)
     context_tokens = count_tokens(serialized_contexts)
     logger.info(
-        "Context chat request model=%s contexts=%s context_tokens=%d "
+        "Context chat direct request model=%s contexts=%s context_tokens=%d "
         "threshold=%d token_cap=%d effective_token_cap=%d",
         config.chat.model,
-        included_context_ids,
+        context_ids,
         context_tokens,
         config.chat.multi_pass_threshold_tokens,
         resolved_cap,
         effective_token_cap,
     )
+    if context_tokens > config.chat.multi_pass_threshold_tokens:
+        raise ChatPromptOverflowError(
+            "Serialized context exceeds direct prompt threshold and requires overflow map-reduce."
+        )
+    system_prompt = _compose_system_prompt(prompt_header, serialized_contexts)
+    working_history = list(bounded_history)
+    messages = _build_messages(system_prompt, working_history, user_content)
+    while _estimate_messages_tokens(messages) > effective_token_cap and working_history:
+        working_history = working_history[1:]
+        messages = _build_messages(system_prompt, working_history, user_content)
+    estimated_prompt_tokens = _estimate_messages_tokens(messages)
+    if estimated_prompt_tokens > effective_token_cap:
+        raise ChatPromptOverflowError(
+            "Chat context exceeds token budget after trimming history "
+            f"({estimated_prompt_tokens} > {effective_token_cap}). "
+            "Reduce selected contexts or shorten messages."
+        )
+    return _run_single_pass(
+        client=client,
+        messages=messages,
+        request_kwargs=request_kwargs,
+        retry_settings=retry_settings,
+        run_id=run_id,
+        context_count=context_count,
+    )
 
-    if context_tokens <= config.chat.multi_pass_threshold_tokens:
-        system_prompt = _compose_system_prompt(prompt_header, serialized_contexts)
-        messages = _build_messages(system_prompt, bounded_history, user_content)
-        while _estimate_messages_tokens(messages) > effective_token_cap and bounded_history:
-            bounded_history = bounded_history[1:]
-            messages = _build_messages(system_prompt, bounded_history, user_content)
-        estimated_prompt_tokens = _estimate_messages_tokens(messages)
-        if estimated_prompt_tokens > effective_token_cap:
-            raise ValueError(
-                f"Chat context exceeds token budget after trimming history "
-                f"({estimated_prompt_tokens} > {effective_token_cap}). "
-                "Reduce selected contexts or shorten messages."
-            )
-        return _run_single_pass(
+
+def _run_overflow_evidence_map_reduce(
+    *,
+    prompt_header: str,
+    normalized_contexts: list[ChatContextSource],
+    normalized_citations: list[dict[str, str]],
+    bounded_history: list[dict[str, str]],
+    user_content: str,
+    effective_token_cap: int,
+    config: AppConfig,
+    client: OpenAI,
+    request_kwargs: dict[str, Any],
+    retry_settings: RetrySettings,
+    run_id: str | None,
+    context_count: int,
+) -> str:
+    """Answer from compact evidence chunks when the direct prompt would overflow."""
+    cache_payload = _load_or_build_evidence_cache(
+        run_id=run_id,
+        normalized_contexts=normalized_contexts,
+        normalized_citations=normalized_citations,
+        config=config,
+    )
+    evidence_items = _flatten_evidence_cache_items(cache_payload)
+    if not evidence_items:
+        return _run_overflow_empty_evidence_answer(
+            prompt_header=prompt_header,
+            bounded_history=bounded_history,
+            user_content=user_content,
+            effective_token_cap=effective_token_cap,
+            prompt_token_buffer=config.chat.prompt_token_buffer,
             client=client,
-            messages=messages,
-            request_kwargs=base_request_kwargs,
+            request_kwargs=request_kwargs,
             retry_settings=retry_settings,
             run_id=run_id,
-            context_count=len(included_context_ids),
+            context_count=context_count,
         )
 
-    return _run_multi_pass(
-        serialized_contexts=serialized_contexts,
+    map_history, map_budget = _resolve_prompt_budget(
+        prompt_factory=lambda: _compose_evidence_map_prompt(
+            prompt_header=prompt_header,
+            evidence_block="",
+            chunk_index=1,
+            total_chunks=1,
+        ),
+        history=bounded_history,
+        user_content=user_content,
+        effective_token_cap=effective_token_cap,
+        prompt_token_buffer=config.chat.prompt_token_buffer,
+    )
+    evidence_blocks = _build_request_evidence_blocks(
+        evidence_items=evidence_items,
+        block_budget=max(map_budget, 1),
+    )
+    partial_answers: list[str] = []
+    total_blocks = len(evidence_blocks)
+    for chunk_index, evidence_block in enumerate(evidence_blocks, start=1):
+        system_prompt = _compose_evidence_map_prompt(
+            prompt_header=prompt_header,
+            evidence_block=evidence_block,
+            chunk_index=chunk_index,
+            total_chunks=total_blocks,
+        )
+        partial_answers.append(
+            _run_single_pass(
+                client=client,
+                messages=_build_messages(system_prompt, map_history, user_content),
+                request_kwargs=request_kwargs,
+                retry_settings=retry_settings,
+                run_id=run_id,
+                context_count=context_count,
+            )
+        )
+    return _run_reduce_passes(
+        partial_answers=partial_answers,
         prompt_header=prompt_header,
         bounded_history=bounded_history,
         user_content=user_content,
-        chunk_tokens=config.chat.multi_pass_chunk_tokens,
         effective_token_cap=effective_token_cap,
         prompt_token_buffer=config.chat.prompt_token_buffer,
         client=client,
-        request_kwargs=base_request_kwargs,
+        request_kwargs=request_kwargs,
         retry_settings=retry_settings,
         run_id=run_id,
-        context_count=len(included_context_ids),
+        context_count=context_count,
+    )
+
+
+def _run_overflow_empty_evidence_answer(
+    *,
+    prompt_header: str,
+    bounded_history: list[dict[str, str]],
+    user_content: str,
+    effective_token_cap: int,
+    prompt_token_buffer: int,
+    client: OpenAI,
+    request_kwargs: dict[str, Any],
+    retry_settings: RetrySettings,
+    run_id: str | None,
+    context_count: int,
+) -> str:
+    """Use the LLM to explain that no compact evidence is available in overflow mode."""
+    working_history, _budget = _resolve_prompt_budget(
+        prompt_factory=lambda: _compose_empty_evidence_prompt(prompt_header),
+        history=bounded_history,
+        user_content=user_content,
+        effective_token_cap=effective_token_cap,
+        prompt_token_buffer=prompt_token_buffer,
+    )
+    system_prompt = _compose_empty_evidence_prompt(prompt_header)
+    return _run_single_pass(
+        client=client,
+        messages=_build_messages(system_prompt, working_history, user_content),
+        request_kwargs=request_kwargs,
+        retry_settings=retry_settings,
+        run_id=run_id,
+        context_count=context_count,
+    )
+
+
+def _run_reduce_passes(
+    *,
+    partial_answers: list[str],
+    prompt_header: str,
+    bounded_history: list[dict[str, str]],
+    user_content: str,
+    effective_token_cap: int,
+    prompt_token_buffer: int,
+    client: OpenAI,
+    request_kwargs: dict[str, Any],
+    retry_settings: RetrySettings,
+    run_id: str | None,
+    context_count: int,
+) -> str:
+    """Recursively merge map outputs until one final answer remains."""
+    pending_answers = [answer.strip() for answer in partial_answers if answer.strip()]
+    if not pending_answers:
+        return _run_overflow_empty_evidence_answer(
+            prompt_header=prompt_header,
+            bounded_history=bounded_history,
+            user_content=user_content,
+            effective_token_cap=effective_token_cap,
+            prompt_token_buffer=prompt_token_buffer,
+            client=client,
+            request_kwargs=request_kwargs,
+            retry_settings=retry_settings,
+            run_id=run_id,
+            context_count=context_count,
+        )
+
+    stage_index = 1
+    while len(pending_answers) > 1:
+        reduce_history, reduce_budget = _resolve_prompt_budget(
+            prompt_factory=lambda: _compose_evidence_reduce_prompt(
+                prompt_header=prompt_header,
+                analyses_block="",
+                stage_index=stage_index,
+                batch_index=1,
+                batch_count=1,
+            ),
+            history=bounded_history,
+            user_content=user_content,
+            effective_token_cap=effective_token_cap,
+            prompt_token_buffer=prompt_token_buffer,
+        )
+        grouped_blocks = _group_partial_answers(
+            partial_answers=pending_answers,
+            block_budget=max(reduce_budget, 1),
+        )
+        next_round: list[str] = []
+        total_groups = len(grouped_blocks)
+        for batch_index, analyses_block in enumerate(grouped_blocks, start=1):
+            system_prompt = _compose_evidence_reduce_prompt(
+                prompt_header=prompt_header,
+                analyses_block=analyses_block,
+                stage_index=stage_index,
+                batch_index=batch_index,
+                batch_count=total_groups,
+            )
+            next_round.append(
+                _run_single_pass(
+                    client=client,
+                    messages=_build_messages(system_prompt, reduce_history, user_content),
+                    request_kwargs=request_kwargs,
+                    retry_settings=retry_settings,
+                    run_id=run_id,
+                    context_count=context_count,
+                )
+            )
+        pending_answers = [answer.strip() for answer in next_round if answer.strip()]
+        stage_index += 1
+
+    return pending_answers[0]
+
+
+def _load_or_build_evidence_cache(
+    *,
+    run_id: str | None,
+    normalized_contexts: list[ChatContextSource],
+    normalized_citations: list[dict[str, str]],
+    config: AppConfig,
+) -> dict[str, object]:
+    """Load a per-run evidence cache when valid or rebuild it from compact evidence."""
+    evidence_items = _resolve_overflow_evidence_items(
+        normalized_contexts=normalized_contexts,
+        normalized_citations=normalized_citations,
+    )
+    source_signature = _build_evidence_source_signature(
+        normalized_contexts=normalized_contexts,
+        evidence_items=evidence_items,
+    )
+    if run_id:
+        cache_path = _chat_evidence_cache_path(config.runs_dir, run_id)
+        cached_payload = _read_json_object(cache_path)
+        if (
+            isinstance(cached_payload, dict)
+            and str(cached_payload.get("source_signature", "")).strip() == source_signature
+        ):
+            logger.info("Context chat evidence cache hit run_id=%s", run_id)
+            return cached_payload
+
+    chunk_groups = _chunk_evidence_items(
+        evidence_items=evidence_items,
+        block_budget=max(config.chat.multi_pass_chunk_tokens, 1),
+    )
+    payload: dict[str, object] = {
+        "source_signature": source_signature,
+        "evidence_count": len(evidence_items),
+        "chunks": [
+            {
+                "chunk_id": f"chunk_{index}",
+                "ref_ids": [item["ref_id"] for item in chunk],
+                "items": chunk,
+            }
+            for index, chunk in enumerate(chunk_groups, start=1)
+        ],
+    }
+    if run_id:
+        cache_path = _chat_evidence_cache_path(config.runs_dir, run_id)
+        _write_json_object(cache_path, payload)
+        logger.info("Context chat evidence cache built run_id=%s chunks=%d", run_id, len(chunk_groups))
+    return payload
+
+
+def _resolve_overflow_evidence_items(
+    *,
+    normalized_contexts: list[ChatContextSource],
+    normalized_citations: list[dict[str, str]],
+) -> list[dict[str, str]]:
+    """Choose stable compact evidence items for overflow prompts."""
+    if normalized_citations:
+        return _normalize_evidence_items(normalized_citations)
+    return _extract_evidence_items_from_contexts(normalized_contexts)
+
+
+def _normalize_evidence_items(
+    normalized_citations: list[dict[str, str]],
+) -> list[dict[str, str]]:
+    """Normalize compact evidence items while preserving stable ref order."""
+    items: list[dict[str, str]] = []
+    seen: set[str] = set()
+    for item in normalized_citations:
+        ref_id = str(item.get("ref_id", "")).strip()
+        if not ref_id or ref_id in seen:
+            continue
+        seen.add(ref_id)
+        items.append(
+            {
+                "ref_id": ref_id,
+                "city_name": str(item.get("city_name", "")).strip(),
+                "quote": str(item.get("quote", "")).strip(),
+                "partial_answer": str(item.get("partial_answer", "")).strip(),
+            }
+        )
+    return items
+
+
+def _extract_evidence_items_from_contexts(
+    normalized_contexts: list[ChatContextSource],
+) -> list[dict[str, str]]:
+    """Fallback overflow evidence extraction from stored markdown excerpts."""
+    extracted: list[dict[str, str]] = []
+    seen: set[str] = set()
+    for context in normalized_contexts:
+        markdown_payload = context.context_bundle.get("markdown")
+        if not isinstance(markdown_payload, dict):
+            continue
+        raw_excerpts = markdown_payload.get("excerpts")
+        if not isinstance(raw_excerpts, list):
+            continue
+        for raw_excerpt in raw_excerpts:
+            if not isinstance(raw_excerpt, dict):
+                continue
+            ref_id = str(raw_excerpt.get("ref_id", "")).strip()
+            if not ref_id or ref_id in seen or not CHAT_REF_ID_PATTERN.fullmatch(ref_id):
+                continue
+            quote = str(raw_excerpt.get("quote", "")).strip()
+            partial_answer = str(raw_excerpt.get("partial_answer", "")).strip()
+            if not quote and not partial_answer:
+                continue
+            extracted.append(
+                {
+                    "ref_id": ref_id,
+                    "city_name": str(raw_excerpt.get("city_name", "")).strip(),
+                    "quote": quote,
+                    "partial_answer": partial_answer,
+                }
+            )
+            seen.add(ref_id)
+    return extracted
+
+
+def _build_evidence_source_signature(
+    *,
+    normalized_contexts: list[ChatContextSource],
+    evidence_items: list[dict[str, str]],
+) -> str:
+    """Build a stable cache signature for the active context sources and evidence."""
+    payload = {
+        "context_ids": [context.run_id for context in normalized_contexts],
+        "evidence_items": evidence_items,
+    }
+    raw = json.dumps(payload, ensure_ascii=True, sort_keys=True, separators=(",", ":"))
+    return hashlib.sha256(raw.encode("utf-8")).hexdigest()
+
+
+def _flatten_evidence_cache_items(cache_payload: dict[str, object]) -> list[dict[str, str]]:
+    """Flatten cached chunk payload back into a stable evidence item list."""
+    chunks = cache_payload.get("chunks")
+    if not isinstance(chunks, list):
+        return []
+    items: list[dict[str, str]] = []
+    for chunk in chunks:
+        if not isinstance(chunk, dict):
+            continue
+        raw_items = chunk.get("items")
+        if not isinstance(raw_items, list):
+            continue
+        for item in raw_items:
+            if not isinstance(item, dict):
+                continue
+            items.append(
+                {
+                    "ref_id": str(item.get("ref_id", "")).strip(),
+                    "city_name": str(item.get("city_name", "")).strip(),
+                    "quote": str(item.get("quote", "")).strip(),
+                    "partial_answer": str(item.get("partial_answer", "")).strip(),
+                }
+            )
+    return [item for item in items if item["ref_id"]]
+
+
+def _build_request_evidence_blocks(
+    *,
+    evidence_items: list[dict[str, str]],
+    block_budget: int,
+) -> list[str]:
+    """Build rendered evidence blocks that fit within the request budget."""
+    chunks = _chunk_evidence_items(
+        evidence_items=evidence_items,
+        block_budget=block_budget,
+    )
+    if not chunks:
+        return []
+    return [_render_evidence_items_block(chunk) for chunk in chunks]
+
+
+def _chunk_evidence_items(
+    *,
+    evidence_items: list[dict[str, str]],
+    block_budget: int,
+) -> list[list[dict[str, str]]]:
+    """Group evidence items into token-bounded blocks while preserving order."""
+    if block_budget <= 0:
+        return []
+    chunks: list[list[dict[str, str]]] = []
+    current_chunk: list[dict[str, str]] = []
+    for raw_item in evidence_items:
+        item = _fit_evidence_item_to_budget(raw_item, block_budget)
+        candidate = current_chunk + [item]
+        if current_chunk and count_tokens(_render_evidence_items_block(candidate)) > block_budget:
+            chunks.append(current_chunk)
+            current_chunk = [item]
+            continue
+        current_chunk = candidate
+    if current_chunk:
+        chunks.append(current_chunk)
+    return chunks
+
+
+def _fit_evidence_item_to_budget(
+    item: dict[str, str],
+    block_budget: int,
+) -> dict[str, str]:
+    """Trim oversized quote fields so one evidence item always fits in a block."""
+    candidate = dict(item)
+    if count_tokens(_render_evidence_items_block([candidate])) <= block_budget:
+        return candidate
+
+    quote_tokens = max(block_budget // 2, 1)
+    partial_tokens = max(block_budget // 3, 1)
+    candidate["quote"] = _truncate_to_tokens(candidate["quote"], quote_tokens)
+    candidate["partial_answer"] = _truncate_to_tokens(
+        candidate["partial_answer"],
+        partial_tokens,
+    )
+    while count_tokens(_render_evidence_items_block([candidate])) > block_budget:
+        if candidate["quote"] and len(candidate["quote"]) >= len(candidate["partial_answer"]):
+            candidate["quote"] = _truncate_to_tokens(
+                candidate["quote"],
+                max(count_tokens(candidate["quote"]) - 32, 1),
+            )
+            continue
+        if candidate["partial_answer"]:
+            candidate["partial_answer"] = _truncate_to_tokens(
+                candidate["partial_answer"],
+                max(count_tokens(candidate["partial_answer"]) - 24, 1),
+            )
+            continue
+        if candidate["city_name"]:
+            candidate["city_name"] = _truncate_to_tokens(
+                candidate["city_name"],
+                max(count_tokens(candidate["city_name"]) - 8, 0),
+            )
+            continue
+        if candidate["quote"] or candidate["partial_answer"] or candidate["city_name"]:
+            candidate["quote"] = ""
+            candidate["partial_answer"] = ""
+            candidate["city_name"] = ""
+            continue
+        break
+    return candidate
+
+
+def _group_partial_answers(
+    *,
+    partial_answers: list[str],
+    block_budget: int,
+) -> list[str]:
+    """Group partial answers into token-bounded reduce batches."""
+    if block_budget <= 0:
+        return []
+    groups: list[list[str]] = []
+    current_group: list[str] = []
+    for answer in partial_answers:
+        candidate = current_group + [answer]
+        if current_group and count_tokens(_render_partial_answers_block(candidate)) > block_budget:
+            groups.append(current_group)
+            current_group = [answer]
+            continue
+        current_group = candidate
+    if current_group:
+        groups.append(current_group)
+    return [_render_partial_answers_block(group) for group in groups]
+
+
+def _resolve_prompt_budget(
+    *,
+    prompt_factory: Callable[[], str],
+    history: list[dict[str, str]],
+    user_content: str,
+    effective_token_cap: int,
+    prompt_token_buffer: int,
+) -> tuple[list[dict[str, str]], int]:
+    """Trim history until the prompt has a positive remaining budget for context blocks."""
+    working_history = list(history)
+    while True:
+        system_prompt = prompt_factory()
+        prompt_tokens = _estimate_messages_tokens(
+            _build_messages(system_prompt, working_history, user_content)
+        )
+        remaining_budget = effective_token_cap - prompt_tokens - prompt_token_buffer
+        if remaining_budget > 0 or not working_history:
+            return working_history, remaining_budget
+        working_history = working_history[1:]
+
+
+def _compose_evidence_map_prompt(
+    *,
+    prompt_header: str,
+    evidence_block: str,
+    chunk_index: int,
+    total_chunks: int,
+) -> str:
+    """Build the system prompt for one evidence map step."""
+    return (
+        f"{prompt_header}\n\n"
+        f"You are analyzing evidence chunk {chunk_index} of {total_chunks} for a larger map-reduce answer.\n"
+        "Use only the evidence items below.\n"
+        "Cite every factual claim with one or more [ref_n] tokens that appear in this chunk.\n"
+        "Do not invent citations and do not use any citation format other than [ref_n].\n"
+        "If this chunk is not relevant to the latest user question, say so briefly.\n\n"
+        "Evidence chunk:\n"
+        f"{evidence_block or '- No evidence items available in this chunk.'}"
+    )
+
+
+def _compose_evidence_reduce_prompt(
+    *,
+    prompt_header: str,
+    analyses_block: str,
+    stage_index: int,
+    batch_index: int,
+    batch_count: int,
+) -> str:
+    """Build the system prompt for one reduce batch."""
+    return (
+        f"{prompt_header}\n\n"
+        f"You are merging map-reduce summaries at reduce stage {stage_index}, batch {batch_index} of {batch_count}.\n"
+        "Use only facts and [ref_n] citations already present in the partial analyses below.\n"
+        "Preserve valid citations on factual claims, merge duplicates, and remove contradictions when later analyses correct earlier ones.\n"
+        "Do not invent new citations and do not drop necessary citations.\n\n"
+        "Partial analyses:\n"
+        f"{analyses_block}"
+    )
+
+
+def _compose_empty_evidence_prompt(prompt_header: str) -> str:
+    """Build the overflow fallback prompt when no compact evidence items exist."""
+    return (
+        f"{prompt_header}\n\n"
+        "No compact evidence items are available for the selected context sources in overflow mode.\n"
+        "Explain briefly that the current saved context does not provide extractable evidence for a grounded answer."
+    )
+
+
+def _render_evidence_items_block(evidence_items: list[dict[str, str]]) -> str:
+    """Render compact evidence items into a prompt-safe markdown block."""
+    if not evidence_items:
+        return "- No evidence items available."
+    lines = ["### Evidence items"]
+    for item in evidence_items:
+        lines.append(
+            "\n".join(
+                [
+                    f"- [{item['ref_id']}] City: {item['city_name'] or '(unknown city)'}",
+                    f"  Quote: {item['quote'] or '(empty quote)'}",
+                    f"  Partial answer: {item['partial_answer'] or '(empty partial answer)'}",
+                ]
+            )
+        )
+    return "\n".join(lines)
+
+
+def _render_partial_answers_block(partial_answers: list[str]) -> str:
+    """Render partial analyses into a prompt-safe markdown block."""
+    lines: list[str] = []
+    for index, answer in enumerate(partial_answers, start=1):
+        lines.append(
+            "\n".join(
+                [
+                    f"### Partial analysis {index}",
+                    answer.strip() or "(empty partial analysis)",
+                ]
+            )
+        )
+    return "\n\n".join(lines)
+
+
+def _chat_evidence_cache_path(runs_dir: Path, run_id: str) -> Path:
+    """Return the cached compact evidence artifact path for one run."""
+    return runs_dir / run_id / "chat_cache" / CHAT_EVIDENCE_CACHE_FILENAME
+
+
+def _read_json_object(path: Path) -> dict[str, object] | None:
+    """Read one JSON object from disk with safe fallback."""
+    if not path.exists():
+        return None
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        logger.exception("Failed to read JSON object at %s", path)
+        return None
+    if isinstance(payload, dict):
+        return payload
+    return None
+
+
+def _write_json_object(path: Path, payload: dict[str, object]) -> None:
+    """Write one JSON object artifact with stable formatting."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        json.dumps(payload, indent=2, ensure_ascii=False),
+        encoding="utf-8",
     )
 
 
@@ -360,142 +994,6 @@ def _run_single_pass(
         context={"context_count": context_count},
     )
     return _extract_response_text(response)
-
-
-def _run_multi_pass(
-    *,
-    serialized_contexts: str,
-    prompt_header: str,
-    bounded_history: list[dict[str, str]],
-    user_content: str,
-    chunk_tokens: int,
-    effective_token_cap: int,
-    prompt_token_buffer: int,
-    client: OpenAI,
-    request_kwargs: dict[str, Any],
-    retry_settings: RetrySettings,
-    run_id: str | None,
-    context_count: int,
-) -> str:
-    """Split large context into chunks and refine the answer across multiple passes.
-
-    Pass 1: first chunk → initial answer.
-    Pass 2+: previous answer + next chunk → enhanced answer.
-
-    Chunk size is clamped so that every initial pass fits within effective_token_cap.
-    Enhancement passes additionally truncate previous_answer when needed.
-    """
-    # Compute fixed overhead for an initial pass (no context yet).
-    # This accounts for prompt_header, history, user_content, and message framing.
-    empty_initial_messages = _build_messages(
-        _compose_system_prompt(prompt_header, ""),
-        bounded_history,
-        user_content,
-    )
-    base_overhead = _estimate_messages_tokens(empty_initial_messages) + prompt_token_buffer
-    safe_chunk_tokens = max(1, min(chunk_tokens, effective_token_cap - base_overhead))
-    if safe_chunk_tokens < chunk_tokens:
-        logger.info(
-            "Multi-pass chat: clamping chunk_tokens %d -> %d to fit effective_token_cap=%d",
-            chunk_tokens,
-            safe_chunk_tokens,
-            effective_token_cap,
-        )
-
-    chunks = _split_text_by_tokens(serialized_contexts, safe_chunk_tokens)
-    logger.info(
-        "Multi-pass chat: context split into %d chunks of ~%d tokens each",
-        len(chunks),
-        safe_chunk_tokens,
-    )
-
-    current_answer: str | None = None
-    for pass_index, chunk in enumerate(chunks, start=1):
-        if current_answer is None:
-            system_prompt = _compose_system_prompt(prompt_header, chunk)
-        else:
-            # Compute how many tokens are available for previous_answer in this pass.
-            # Use an empty previous_answer to measure the fixed enhancement overhead.
-            empty_enhancement = _compose_enhancement_prompt(
-                prompt_header=prompt_header,
-                previous_answer="",
-                additional_context=chunk,
-            )
-            empty_enhancement_tokens = _estimate_messages_tokens(
-                _build_messages(empty_enhancement, bounded_history, user_content)
-            )
-            available_for_answer = (
-                effective_token_cap - empty_enhancement_tokens - prompt_token_buffer
-            )
-            if count_tokens(current_answer) > available_for_answer:
-                logger.warning(
-                    "Multi-pass chat pass %d: truncating previous_answer to %d tokens "
-                    "to fit effective_token_cap=%d",
-                    pass_index,
-                    max(0, available_for_answer),
-                    effective_token_cap,
-                )
-                current_answer = _truncate_to_tokens(current_answer, max(0, available_for_answer))
-            system_prompt = _compose_enhancement_prompt(
-                prompt_header=prompt_header,
-                previous_answer=current_answer,
-                additional_context=chunk,
-            )
-
-        messages = _build_messages(system_prompt, bounded_history, user_content)
-        logger.info("Multi-pass chat: running pass %d/%d", pass_index, len(chunks))
-        current_answer = _run_single_pass(
-            client=client,
-            messages=messages,
-            request_kwargs=request_kwargs,
-            retry_settings=retry_settings,
-            run_id=run_id,
-            context_count=context_count,
-        )
-
-    if current_answer is None:
-        raise ValueError("Multi-pass chat produced no answer.")
-    return current_answer
-
-
-def _split_text_by_tokens(value: str, chunk_tokens: int) -> list[str]:
-    """Split text into sequential non-overlapping chunks of ~chunk_tokens tokens."""
-    stripped = value.strip()
-    if not stripped:
-        return []
-    encoding = get_encoding()
-    tokens = encoding.encode(stripped)
-    if len(tokens) <= chunk_tokens:
-        return [stripped]
-    chunks: list[str] = []
-    start = 0
-    while start < len(tokens):
-        end = min(start + chunk_tokens, len(tokens))
-        chunks.append(encoding.decode(tokens[start:end]).strip())
-        start = end
-    return [c for c in chunks if c]
-
-
-def _compose_enhancement_prompt(
-    *,
-    prompt_header: str,
-    previous_answer: str,
-    additional_context: str,
-) -> str:
-    """Build system prompt for a multi-pass enhancement turn."""
-    return (
-        f"{prompt_header}\n\n"
-        "You previously produced the following answer based on partial context data:\n\n"
-        "---\n"
-        f"{previous_answer}\n"
-        "---\n\n"
-        "Below is an additional batch of context data not yet seen. "
-        "Enhance and refine your answer by incorporating the new information. "
-        "Keep everything from the initial answer that remains accurate, "
-        "and add or correct details based on this new data.\n\n"
-        "Additional context sources:\n"
-        f"{additional_context}"
-    )
 
 
 def _parse_tool_arguments(raw_arguments: str | None) -> dict[str, object]:
@@ -765,26 +1263,6 @@ def _fit_citation_catalog_to_budget(
             break
         fitted = candidate
     return fitted
-
-
-def _build_fitted_citation_context_block(
-    citation_catalog: list[dict[str, str]],
-    prompt_header: str,
-    history: list[dict[str, str]],
-    user_content: str,
-    token_cap: int,
-    prompt_token_buffer: int,
-) -> str:
-    """Render citation context block after budget-aware catalog pruning."""
-    fitted = _fit_citation_catalog_to_budget(
-        citation_catalog=citation_catalog,
-        prompt_header=prompt_header,
-        history=history,
-        user_content=user_content,
-        token_cap=token_cap,
-        prompt_token_buffer=prompt_token_buffer,
-    )
-    return _render_citation_catalog_block(fitted)
 
 
 def _render_citation_catalog_block(citation_catalog: list[dict[str, str]]) -> str:

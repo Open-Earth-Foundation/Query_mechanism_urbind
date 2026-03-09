@@ -469,6 +469,8 @@ Document and chat citations render as compact city labels; clicking a label load
 When `chat.followup_search_enabled` is `true`, the chat router may run a synchronous one-city markdown-only follow-up search, attach the resulting follow-up bundle to the session, and keep citations clickable for both base runs and chat-owned follow-up bundles.
 Follow-up search stays conservative: it never launches a multi-city refresh, and failed follow-up searches return a limitation message instead of a guessed answer.
 When chat needs a single city before searching, the backend now sends clarification metadata and the frontend opens a city-picker popup that can trigger the one-city follow-up search directly.
+When a direct chat prompt would overflow, the backend now falls back to an evidence-only map-reduce flow built from compact excerpt evidence and caches that stripped chat artifact under `output/<run_id>/chat_cache/evidence_chunks.json`.
+The parent/base run stays pinned in chat context selection even when it alone exceeds the token cap; extra contexts and auto-added follow-up bundles are still trimmed first.
 The `Load Previous Answer` picker reads `run_id` + `question` from `GET /api/v1/runs`, then loads selected run artifacts through the standard run endpoints.
 
 Hidden but implemented features (buttons temporarily hidden):
