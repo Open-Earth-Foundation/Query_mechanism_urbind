@@ -16,6 +16,7 @@ from backend.api.services.reference_artifacts import (
     build_reference_item,
     load_reference_records,
 )
+from backend.api.services.source_chunks import load_source_chunks, normalize_chunk_ids
 from backend.api.services.assumptions_review import (
     apply_assumptions_and_regenerate,
     apply_assumptions_to_context,
@@ -64,8 +65,10 @@ __all__ = [
     "followup_bundle_dir",
     "index_city_markdown_files",
     "load_reference_records",
+    "load_source_chunks",
     "list_city_names",
     "load_city_groups",
+    "normalize_chunk_ids",
     "resolve_chat_token_cap",
     "generate_context_chat_reply",
     "load_context_bundle",

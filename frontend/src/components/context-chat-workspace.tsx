@@ -366,18 +366,23 @@ export function ContextChatWorkspace({
     if (!selectedClarificationCity || !clarificationQuestion) {
       return;
     }
-    const succeeded = await submitMessage({
-      content: `Focus only on ${selectedClarificationCity}.`,
-      clarificationCity: selectedClarificationCity,
-      clarificationQuestion,
-    });
-    if (!succeeded) {
-      return;
-    }
+    const chosenCity = selectedClarificationCity;
+    const originalQuestion = clarificationQuestion;
     setIsCityClarificationOpen(false);
-    setClarificationQuestion(null);
     setSelectedClarificationCity(null);
     setClarificationError(null);
+    const succeeded = await submitMessage({
+      content: `Focus only on ${chosenCity}.`,
+      clarificationCity: chosenCity,
+      clarificationQuestion: originalQuestion,
+    });
+    if (!succeeded) {
+      setClarificationQuestion(originalQuestion);
+      setSelectedClarificationCity(chosenCity);
+      setIsCityClarificationOpen(true);
+      return;
+    }
+    setClarificationQuestion(null);
   }
 
   function closeCityClarification(): void {
@@ -768,7 +773,7 @@ export function ContextChatWorkspace({
           <DialogHeader className="border-b border-slate-200 px-6 pb-4 pt-6 pr-14">
             <DialogTitle>Choose One City</DialogTitle>
             <DialogDescription>
-              Pick one city and the backend will run the follow-up search directly for your original question.
+              Pick one city for additional search.
             </DialogDescription>
           </DialogHeader>
           <div className="flex min-h-0 flex-1 flex-col gap-4 overflow-hidden px-6 py-5">
@@ -790,7 +795,6 @@ export function ContextChatWorkspace({
               isLoading={isLoadingClarificationCities}
               emptyMessage="No cities match the current filter."
               loadingMessage="Loading cities..."
-              scrollAreaClassName="h-full"
             />
           </div>
           <DialogFooter className="border-t border-slate-200 bg-slate-50 px-6 py-4 sm:justify-between sm:space-x-0">

@@ -5,7 +5,6 @@ import { Loader2 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import { cn, formatCityLabel } from "@/lib/utils";
 
 interface SearchableCityPickerProps {
@@ -46,16 +45,21 @@ export function SearchableCityPicker({
   }, [cities, filter]);
 
   return (
-    <div className={cn("flex flex-col gap-3", className)}>
+    <div className={cn("flex min-h-0 flex-col gap-3", className)}>
       <Input
         placeholder={searchPlaceholder}
         value={filter}
         onChange={(event) => setFilter(event.target.value)}
         disabled={disabled || isLoading}
       />
-      <div className="min-h-0 rounded-md border border-slate-200">
-        <ScrollArea className={cn("h-64", scrollAreaClassName)}>
-          <div className="grid gap-2 p-3">
+      <div className="min-h-0 flex-1 overflow-hidden rounded-md border border-slate-200 bg-white">
+        <div
+          className={cn(
+            "min-h-0 h-64 overflow-y-auto overscroll-contain p-3 [scrollbar-gutter:stable]",
+            scrollAreaClassName,
+          )}
+        >
+          <div className="grid gap-2">
             {isLoading ? (
               <div className="flex items-center gap-2 text-sm text-slate-600">
                 <Loader2 className="h-4 w-4 animate-spin" />
@@ -83,7 +87,7 @@ export function SearchableCityPicker({
               <p className="text-sm text-slate-500">{emptyMessage}</p>
             )}
           </div>
-        </ScrollArea>
+        </div>
       </div>
     </div>
   );

@@ -19,8 +19,10 @@ import {
   ChatCitation,
   ChatCitationSourceType,
   RunReferenceListItem,
+  SourceChunkItem,
   fetchChatFollowupReferences,
   fetchRunReferences,
+  fetchRunSourceChunks,
 } from "@/lib/api";
 import { formatCityLabel } from "@/lib/utils";
 
@@ -321,6 +323,12 @@ export function MarkdownWithReferences({
   );
   const [loadingRequestKey, setLoadingRequestKey] = useState<string | null>(null);
   const [referenceError, setReferenceError] = useState<string | null>(null);
+  const [expandedReferenceKey, setExpandedReferenceKey] = useState<string | null>(null);
+  const [sourceChunkCache, setSourceChunkCache] = useState<
+    Record<string, SourceChunkItem[]>
+  >({});
+  const [loadingChunkRequestKey, setLoadingChunkRequestKey] = useState<string | null>(null);
+  const [sourceChunkError, setSourceChunkError] = useState<string | null>(null);
 
   const markdownContent = useMemo(() => _toReferenceMarkdown(content), [content]);
 
@@ -358,6 +366,12 @@ export function MarkdownWithReferences({
     activeReferenceCacheKey !== null
       ? referenceCache[activeReferenceCacheKey]
       : undefined;
+  const activeSourceChunks =
+    activeReferenceCacheKey !== null
+      ? sourceChunkCache[activeReferenceCacheKey]
+      : undefined;
+  const isActiveReferenceExpanded =
+    activeReferenceCacheKey !== null && expandedReferenceKey === activeReferenceCacheKey;
 
   useEffect(() => {
     activePopoverRef.current = activePopover;
@@ -368,8 +382,12 @@ export function MarkdownWithReferences({
     setActivePopover(null);
     setOpenCitationGroups({});
     setLoadingRequestKey(null);
+    setLoadingChunkRequestKey(null);
     setReferenceError(null);
+    setSourceChunkError(null);
+    setExpandedReferenceKey(null);
     setReferenceCache({});
+    setSourceChunkCache({});
     setRunReferencePointers({});
   }, [conversationId, runId, chatCitations]);
 
@@ -417,6 +435,8 @@ export function MarkdownWithReferences({
       }
       setActivePopover(null);
       setReferenceError(null);
+      setSourceChunkError(null);
+      setExpandedReferenceKey(null);
     }
 
     function handleKeydown(event: KeyboardEvent): void {
@@ -425,6 +445,8 @@ export function MarkdownWithReferences({
       }
       setActivePopover(null);
       setReferenceError(null);
+      setSourceChunkError(null);
+      setExpandedReferenceKey(null);
     }
 
     document.addEventListener("mousedown", handleDocumentClick);
@@ -449,10 +471,13 @@ export function MarkdownWithReferences({
     if (activePopover?.refId === refId) {
       setActivePopover(null);
       setReferenceError(null);
+      setSourceChunkError(null);
+      setExpandedReferenceKey(null);
       return;
     }
 
     const targetRect = event.currentTarget.getBoundingClientRect();
+    setExpandedReferenceKey(null);
     setActivePopover({
       refId,
       sourceType,
@@ -462,6 +487,7 @@ export function MarkdownWithReferences({
       left: _resolvePopoverLeft(targetRect.left),
     });
     setReferenceError(null);
+    setSourceChunkError(null);
     const requestKey = _buildReferenceCacheKey(sourceType, sourceId, sourceRefId);
 
     if (!sourceId || !sourceRefId) {
@@ -518,6 +544,64 @@ export function MarkdownWithReferences({
       }
       setLoadingRequestKey((current) =>
         current === requestKey ? null : current,
+      );
+    }
+  }
+
+  async function handleExpandClick(): Promise<void> {
+    if (!activeReference || !activeReferenceCacheKey) {
+      return;
+    }
+
+    if (expandedReferenceKey === activeReferenceCacheKey) {
+      setExpandedReferenceKey(null);
+      setSourceChunkError(null);
+      return;
+    }
+
+    setExpandedReferenceKey(activeReferenceCacheKey);
+    setSourceChunkError(null);
+    if (sourceChunkCache[activeReferenceCacheKey]) {
+      return;
+    }
+    if (!runId) {
+      setSourceChunkError("Run context is missing, so the full chunk cannot be loaded.");
+      return;
+    }
+
+    const chunkIds = (activeReference.source_chunk_ids ?? []).filter(
+      (chunkId): chunkId is string => typeof chunkId === "string" && chunkId.trim().length > 0,
+    );
+    if (chunkIds.length === 0) {
+      setSourceChunkError("This source does not include a chunk id to expand.");
+      return;
+    }
+
+    setLoadingChunkRequestKey(activeReferenceCacheKey);
+    try {
+      const payload = await fetchRunSourceChunks(runId, chunkIds);
+      setSourceChunkCache((current) => ({
+        ...current,
+        [activeReferenceCacheKey]: payload.chunks,
+      }));
+    } catch (error) {
+      const activePopoverState = activePopoverRef.current;
+      const activePopoverKey =
+        activePopoverState !== null
+          ? _buildReferenceCacheKey(
+              activePopoverState.sourceType,
+              activePopoverState.sourceId,
+              activePopoverState.sourceRefId,
+            )
+          : null;
+      if (activePopoverKey === activeReferenceCacheKey) {
+        setSourceChunkError(
+          error instanceof Error ? error.message : "Failed to load source chunk.",
+        );
+      }
+    } finally {
+      setLoadingChunkRequestKey((current) =>
+        current === activeReferenceCacheKey ? null : current,
       );
     }
   }
@@ -624,16 +708,31 @@ export function MarkdownWithReferences({
               style={{ top: `${activePopover.top}px`, left: `${activePopover.left}px` }}
             >
               <div className="citation-popover-header">
-                <button
-                  type="button"
-                  className="citation-popover-close"
-                  onClick={() => {
-                    setActivePopover(null);
-                    setReferenceError(null);
-                  }}
-                >
-                  Close
-                </button>
+                <div className="citation-popover-actions">
+                  {!referenceError && activeReference ? (
+                    <button
+                      type="button"
+                      className="citation-popover-action"
+                      onClick={() => {
+                        void handleExpandClick();
+                      }}
+                    >
+                      {isActiveReferenceExpanded ? "Collapse" : "Expand"}
+                    </button>
+                  ) : null}
+                  <button
+                    type="button"
+                    className="citation-popover-close"
+                    onClick={() => {
+                      setActivePopover(null);
+                      setReferenceError(null);
+                      setSourceChunkError(null);
+                      setExpandedReferenceKey(null);
+                    }}
+                  >
+                    Close
+                  </button>
+                </div>
               </div>
 
               {loadingRequestKey === activeReferenceCacheKey && !activeReference ? (
@@ -647,6 +746,32 @@ export function MarkdownWithReferences({
               {!referenceError && activeReference ? (
                 <div className="citation-popover-body">
                   <p>{activeReference.quote?.trim() || "(empty quote)"}</p>
+                  {isActiveReferenceExpanded ? (
+                    <div className="citation-popover-expanded">
+                      {loadingChunkRequestKey === activeReferenceCacheKey && !activeSourceChunks ? (
+                        <p className="citation-popover-muted">Loading full chunk...</p>
+                      ) : null}
+
+                      {sourceChunkError ? (
+                        <p className="citation-popover-error">{sourceChunkError}</p>
+                      ) : null}
+
+                      {!sourceChunkError && activeSourceChunks ? (
+                        <div className="citation-popover-chunks">
+                          {activeSourceChunks.map((chunk, index) => (
+                            <div key={chunk.chunk_id} className="citation-popover-chunk">
+                              {activeSourceChunks.length > 1 ? (
+                                <p className="citation-popover-chunk-label">Chunk {index + 1}</p>
+                              ) : null}
+                              <pre className="citation-popover-chunk-content">
+                                {chunk.content.trim() || "(empty chunk)"}
+                              </pre>
+                            </div>
+                          ))}
+                        </div>
+                      ) : null}
+                    </div>
+                  ) : null}
                 </div>
               ) : null}
             </div>,

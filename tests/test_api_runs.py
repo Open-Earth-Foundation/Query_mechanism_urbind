@@ -10,6 +10,7 @@ from fastapi.testclient import TestClient
 
 from backend.api.main import create_app
 from backend.api.services.run_store import TERMINAL_STATUSES
+from backend.modules.markdown_researcher.services import build_markdown_chunks_for_file
 from backend.utils.config import (
     AgentConfig,
     AppConfig,
@@ -69,6 +70,14 @@ def _write_success_artifacts(question: str, run_id: str, config: AppConfig) -> R
     return paths
 
 
+def _write_config_file(path: Path, config: AppConfig) -> None:
+    """Persist one test config as JSON-compatible YAML."""
+    path.write_text(
+        json.dumps(config.model_dump(mode="json"), ensure_ascii=True, indent=2),
+        encoding="utf-8",
+    )
+
+
 def _write_started_artifacts_with_error_log_input(
     question: str,
     run_id: str,
@@ -118,6 +127,15 @@ def _write_markdown_reference_artifacts(
             json.dumps(excerpts_payload, ensure_ascii=True, indent=2),
             encoding="utf-8",
         )
+
+
+def _write_markdown_batches_artifact(paths: RunPaths, payload: dict[str, object]) -> None:
+    """Persist markdown batch metadata for chunk-to-path lookup tests."""
+    paths.markdown_dir.mkdir(parents=True, exist_ok=True)
+    (paths.markdown_dir / "batches.json").write_text(
+        json.dumps(payload, ensure_ascii=True, indent=2),
+        encoding="utf-8",
+    )
 
 
 def _poll_until_terminal(
@@ -428,6 +446,96 @@ def test_api_get_run_reference_rejects_invalid_ref_format(tmp_path: Path) -> Non
             "/api/v1/runs/run-reference-invalid/references?ref_id=ref_x"
         )
         assert query_response.status_code == 400
+
+
+def test_api_list_run_source_chunks_returns_full_chunk_content(tmp_path: Path) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    config_path = tmp_path / "llm_config.yaml"
+    _write_config_file(config_path, config)
+
+    source_path = markdown_dir / "Leipzig.md"
+    source_content = (
+        "# Leipzig\n\n"
+        "Leipzig plans to expand charging infrastructure across municipal districts.\n"
+    )
+    source_path.write_text(source_content, encoding="utf-8")
+    chunks = build_markdown_chunks_for_file(source_path, config.markdown_researcher)
+    assert len(chunks) == 1
+    chunk_id = str(chunks[0]["chunk_id"])
+
+    paths = _write_success_artifacts(
+        question="Source chunk lookup run",
+        run_id="run-source-chunks",
+        config=config,
+    )
+    _write_markdown_batches_artifact(
+        paths=paths,
+        payload={
+            "batches": [
+                {
+                    "city_name": "leipzig",
+                    "batch_index": 1,
+                    "chunk_count": 1,
+                    "estimated_tokens": 10,
+                    "chunks": [
+                        {
+                            "chunk_id": chunk_id,
+                            "path": str(source_path),
+                            "chunk_index": 0,
+                        }
+                    ],
+                }
+            ]
+        },
+    )
+
+    app = create_app(
+        runs_dir=runs_dir,
+        max_workers=1,
+        markdown_dir=markdown_dir,
+        config_path=config_path,
+    )
+    with TestClient(app) as client:
+        response = client.get(
+            f"/api/v1/runs/run-source-chunks/source-chunks?chunk_id={chunk_id}"
+        )
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["run_id"] == "run-source-chunks"
+        assert payload["chunk_count"] == 1
+        assert payload["chunks"][0]["chunk_id"] == chunk_id
+        assert payload["chunks"][0]["content"] == source_content
+
+
+def test_api_list_run_source_chunks_returns_not_found_for_missing_chunk(
+    tmp_path: Path,
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    config_path = tmp_path / "llm_config.yaml"
+    _write_config_file(config_path, config)
+    _write_success_artifacts(
+        question="Missing chunk lookup run",
+        run_id="run-source-chunks-missing",
+        config=config,
+    )
+
+    app = create_app(
+        runs_dir=runs_dir,
+        max_workers=1,
+        markdown_dir=markdown_dir,
+        config_path=config_path,
+    )
+    with TestClient(app) as client:
+        response = client.get(
+            "/api/v1/runs/run-source-chunks-missing/source-chunks?chunk_id=chunk_missing"
+        )
+        assert response.status_code == 404
 
 
 def test_api_duplicate_run_id_returns_conflict(

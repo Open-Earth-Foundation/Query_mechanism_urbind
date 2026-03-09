@@ -109,6 +109,25 @@ class RunReferenceListResponse(BaseModel):
     references: list[RunReferenceItem]
 
 
+class SourceChunkItem(BaseModel):
+    """Single resolved markdown chunk used for source expansion UI."""
+
+    chunk_id: str
+    content: str
+    city_name: str | None = None
+    source_path: str | None = None
+    heading_path: str | None = None
+    block_type: str | None = None
+
+
+class SourceChunkListResponse(BaseModel):
+    """Response body for run-scoped source chunk lookup."""
+
+    run_id: str
+    chunk_count: int
+    chunks: list[SourceChunkItem]
+
+
 class RunSummary(BaseModel):
     """Minimal run metadata used by run picker UI."""
 
@@ -338,6 +357,8 @@ __all__ = [
     "RunReferenceResponse",
     "RunReferenceItem",
     "RunReferenceListResponse",
+    "SourceChunkItem",
+    "SourceChunkListResponse",
     "RunSummary",
     "RunListResponse",
     "MissingDataItem",

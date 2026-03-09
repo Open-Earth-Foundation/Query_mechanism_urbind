@@ -19,6 +19,7 @@ from backend.api.models import (
     RunOutputResponse,
     RunSummary,
     RunStatusResponse,
+    SourceChunkListResponse,
 )
 from backend.api.services import (
     DuplicateRunIdError,
@@ -30,8 +31,11 @@ from backend.api.services import (
     StartRunCommand,
     build_reference_item,
     load_reference_records,
+    load_source_chunks,
+    normalize_chunk_ids,
 )
 from backend.modules.orchestrator.utils.references import is_valid_ref_id
+from backend.utils.config import AppConfig, load_config
 
 router = APIRouter()
 logger = logging.getLogger(__name__)
@@ -67,6 +71,23 @@ def _get_run_executor(request: Request) -> RunExecutor:
             detail="Run executor is not initialized.",
         )
     return run_executor
+
+
+def _get_markdown_dir(request: Request) -> Path:
+    """Return markdown source root resolved at API startup."""
+    markdown_dir = getattr(request.app.state, "markdown_dir", None)
+    if not isinstance(markdown_dir, Path):
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Markdown directory is not initialized.",
+        )
+    return markdown_dir
+
+
+def _load_request_config(request: Request) -> AppConfig:
+    """Load the active app config for request-scoped helper operations."""
+    config_path = getattr(request.app.state, "config_path", Path("llm_config.yaml"))
+    return load_config(Path(config_path))
 
 
 def _require_completed_run(
@@ -322,6 +343,57 @@ def get_run_reference(
         quote=item.quote or "",
         partial_answer=item.partial_answer or "",
         source_chunk_ids=item.source_chunk_ids or [],
+    )
+
+
+@router.get(
+    "/runs/{run_id}/source-chunks",
+    name="list_run_source_chunks",
+    response_model=SourceChunkListResponse,
+    response_model_exclude_none=True,
+)
+def list_run_source_chunks(
+    run_id: str,
+    request: Request,
+    chunk_id: list[str] = Query(
+        default_factory=list,
+        description=(
+            "One or more markdown chunk ids. Repeat `chunk_id` to fetch multiple chunks "
+            "in the same request."
+        ),
+    ),
+) -> SourceChunkListResponse:
+    """Return full markdown chunks for citation/source expansion UI."""
+    run_store, record = _require_completed_run(run_id, request)
+    normalized_chunk_ids = normalize_chunk_ids(chunk_id)
+    if not normalized_chunk_ids:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="At least one chunk_id query parameter is required.",
+        )
+
+    run_dir = _resolve_run_dir(record, run_store.runs_dir, run_id)
+    try:
+        chunks = load_source_chunks(
+            run_dir=run_dir,
+            markdown_dir=_get_markdown_dir(request),
+            config=_load_request_config(request),
+            chunk_ids=normalized_chunk_ids,
+        )
+    except FileNotFoundError as exc:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=str(exc)) from exc
+    except ValueError as exc:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(exc)) from exc
+    except OSError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Failed to load source chunks for run `{run_id}`: {exc}",
+        ) from exc
+
+    return SourceChunkListResponse(
+        run_id=record.run_id,
+        chunk_count=len(chunks),
+        chunks=chunks,
     )
 
 

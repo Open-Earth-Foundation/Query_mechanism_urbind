@@ -77,6 +77,21 @@ export interface RunReferenceListResponse {
   references: RunReferenceListItem[];
 }
 
+export interface SourceChunkItem {
+  chunk_id: string;
+  content: string;
+  city_name?: string | null;
+  source_path?: string | null;
+  heading_path?: string | null;
+  block_type?: string | null;
+}
+
+export interface SourceChunkListResponse {
+  run_id: string;
+  chunk_count: number;
+  chunks: SourceChunkItem[];
+}
+
 export interface RunSummary {
   run_id: string;
   question: string;
@@ -460,6 +475,23 @@ export async function fetchRunReferences(
   const suffix = params.toString();
   const path = `/api/v1/runs/${encodeURIComponent(runId)}/references${suffix ? `?${suffix}` : ""}`;
   return requestJson<RunReferenceListResponse>(path);
+}
+
+export async function fetchRunSourceChunks(
+  runId: string,
+  chunkIds: string[],
+): Promise<SourceChunkListResponse> {
+  const params = new URLSearchParams();
+  chunkIds.forEach((chunkId) => {
+    const normalized = chunkId.trim();
+    if (normalized.length > 0) {
+      params.append("chunk_id", normalized);
+    }
+  });
+  const suffix = params.toString();
+  const path =
+    `/api/v1/runs/${encodeURIComponent(runId)}/source-chunks${suffix ? `?${suffix}` : ""}`;
+  return requestJson<SourceChunkListResponse>(path);
 }
 
 export async function fetchCities(): Promise<CityListResponse> {
