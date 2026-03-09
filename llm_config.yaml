@@ -51,6 +51,8 @@ chat:
   prompt_token_buffer: 2000
   multi_pass_threshold_tokens: 200000
   multi_pass_chunk_tokens: 150000
+  followup_search_enabled: true
+  max_auto_followup_bundles: 3
 assumptions_reviewer:
   model: "openai/gpt-5.2"
   temperature: 0.0

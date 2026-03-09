@@ -78,6 +78,7 @@ class ChatMemoryStore:
                 "created_at": now,
                 "updated_at": now,
                 "context_run_ids": [run_id],
+                "followup_bundles": [],
                 "messages": [],
             }
             _write_json(path, payload)
@@ -100,8 +101,9 @@ class ChatMemoryStore:
         conversation_id: str,
         user_content: str,
         assistant_content: str,
-        assistant_citations: list[dict[str, str]] | None = None,
+        assistant_citations: list[dict[str, object]] | None = None,
         assistant_citation_warning: str | None = None,
+        assistant_routing: dict[str, object] | None = None,
     ) -> tuple[dict[str, Any], dict[str, Any], dict[str, Any]]:
         """Append a user/assistant turn and persist session."""
         path = self._session_path(run_id, conversation_id)
@@ -130,6 +132,8 @@ class ChatMemoryStore:
                 assistant_message["citations"] = assistant_citations
             if assistant_citation_warning:
                 assistant_message["citation_warning"] = assistant_citation_warning
+            if assistant_routing:
+                assistant_message["routing"] = assistant_routing
             messages.append(user_message)
             messages.append(assistant_message)
             payload["updated_at"] = assistant_message["created_at"]
@@ -150,8 +154,72 @@ class ChatMemoryStore:
                 raise ChatSessionNotFoundError(
                     f"Conversation `{conversation_id}` not found for run `{run_id}`."
                 )
-            normalized = self._normalize_context_run_ids(context_run_ids)
+            normalized = self._normalize_context_run_ids(run_id, context_run_ids)
             payload["context_run_ids"] = normalized
+            payload["updated_at"] = _utc_now_iso()
+            _write_json(path, payload)
+            return payload
+
+    def attach_followup_bundle(
+        self,
+        run_id: str,
+        conversation_id: str,
+        bundle_id: str,
+        city_key: str,
+        target_city: str,
+        created_at: str,
+        max_followup_bundles: int,
+    ) -> dict[str, Any]:
+        """Attach a new follow-up bundle, replacing older bundles for the same city."""
+        path = self._session_path(run_id, conversation_id)
+        with self._lock:
+            payload = _read_json(path)
+            if payload is None:
+                raise ChatSessionNotFoundError(
+                    f"Conversation `{conversation_id}` not found for run `{run_id}`."
+                )
+            existing = self._normalize_followup_bundles(payload.get("followup_bundles"))
+            filtered = [entry for entry in existing if entry["city_key"] != city_key]
+            filtered.insert(
+                0,
+                {
+                    "bundle_id": self._resolve_session_id_value(bundle_id, "bundle_id"),
+                    "city_key": city_key,
+                    "target_city": target_city.strip(),
+                    "created_at": created_at.strip(),
+                },
+            )
+            payload["followup_bundles"] = self._trim_followup_bundles(
+                filtered,
+                max_followup_bundles,
+            )
+            payload["updated_at"] = _utc_now_iso()
+            _write_json(path, payload)
+            return payload
+
+    def prune_followup_bundles(
+        self,
+        run_id: str,
+        conversation_id: str,
+        keep_bundle_ids: list[str],
+    ) -> dict[str, Any]:
+        """Persist only the selected follow-up bundles for a session."""
+        path = self._session_path(run_id, conversation_id)
+        with self._lock:
+            payload = _read_json(path)
+            if payload is None:
+                raise ChatSessionNotFoundError(
+                    f"Conversation `{conversation_id}` not found for run `{run_id}`."
+                )
+            keep = {
+                self._resolve_session_id_value(bundle_id, "bundle_id")
+                for bundle_id in keep_bundle_ids
+                if isinstance(bundle_id, str) and bundle_id.strip()
+            }
+            existing = self._normalize_followup_bundles(payload.get("followup_bundles"))
+            payload["followup_bundles"] = [
+                entry for entry in existing if entry["bundle_id"] in keep
+            ]
             payload["updated_at"] = _utc_now_iso()
             _write_json(path, payload)
             return payload
@@ -172,33 +240,80 @@ class ChatMemoryStore:
         cleaned = conversation_id.strip()
         if not cleaned:
             raise ValueError("conversation_id must be non-empty when provided.")
+        return self._resolve_session_id_value(cleaned, "conversation_id")
+
+    def _resolve_session_id_value(self, value: str, field_name: str) -> str:
+        """Validate a stored run/chat identifier against the session id pattern."""
+        cleaned = value.strip()
         if not SESSION_ID_PATTERN.fullmatch(cleaned):
             raise ValueError(
-                "conversation_id may contain only letters, numbers, underscore, and hyphen."
+                f"{field_name} may contain only letters, numbers, underscore, and hyphen."
             )
         return cleaned
 
-    def _normalize_context_run_ids(self, context_run_ids: list[str]) -> list[str]:
+    def _normalize_context_run_ids(self, run_id: str, context_run_ids: list[str]) -> list[str]:
         """Validate, de-duplicate, and normalize selected context run ids."""
         normalized: list[str] = []
         seen: set[str] = set()
-        for run_id in context_run_ids:
-            if not isinstance(run_id, str):
+        normalized.append(self._resolve_session_id_value(run_id, "run_id"))
+        seen.add(normalized[0])
+        for context_run_id in context_run_ids:
+            if not isinstance(context_run_id, str):
                 continue
-            cleaned = run_id.strip()
+            cleaned = context_run_id.strip()
             if not cleaned:
                 continue
-            if not SESSION_ID_PATTERN.fullmatch(cleaned):
-                raise ValueError(
-                    "context_run_ids may contain only letters, numbers, underscore, and hyphen."
-                )
+            cleaned = self._resolve_session_id_value(cleaned, "context_run_ids")
             if cleaned in seen:
                 continue
             normalized.append(cleaned)
             seen.add(cleaned)
-        if not normalized:
-            raise ValueError("context_run_ids must include at least one run id.")
         return normalized
+
+    def _normalize_followup_bundles(self, value: object) -> list[dict[str, str]]:
+        """Validate and normalize persisted follow-up bundle metadata."""
+        if not isinstance(value, list):
+            return []
+        normalized: list[dict[str, str]] = []
+        seen: set[str] = set()
+        for item in value:
+            if not isinstance(item, dict):
+                continue
+            raw_bundle_id = item.get("bundle_id")
+            raw_city_key = item.get("city_key")
+            raw_target_city = item.get("target_city")
+            raw_created_at = item.get("created_at")
+            if not isinstance(raw_bundle_id, str) or not raw_bundle_id.strip():
+                continue
+            if not isinstance(raw_city_key, str) or not raw_city_key.strip():
+                continue
+            if not isinstance(raw_target_city, str) or not raw_target_city.strip():
+                continue
+            if not isinstance(raw_created_at, str) or not raw_created_at.strip():
+                continue
+            bundle_id = self._resolve_session_id_value(raw_bundle_id, "bundle_id")
+            if bundle_id in seen:
+                continue
+            seen.add(bundle_id)
+            normalized.append(
+                {
+                    "bundle_id": bundle_id,
+                    "city_key": raw_city_key.strip(),
+                    "target_city": raw_target_city.strip(),
+                    "created_at": raw_created_at.strip(),
+                }
+            )
+        return normalized
+
+    def _trim_followup_bundles(
+        self,
+        bundles: list[dict[str, str]],
+        max_followup_bundles: int,
+    ) -> list[dict[str, str]]:
+        """Trim follow-up bundles to the configured maximum."""
+        if max_followup_bundles <= 0:
+            return []
+        return bundles[:max_followup_bundles]
 
 
 __all__ = [

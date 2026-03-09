@@ -7,6 +7,12 @@ import pytest
 from fastapi.testclient import TestClient
 
 from backend.api.main import create_app
+from backend.api.services.chat_followup_research import (
+    CHAT_FOLLOWUP_CITY_UNAVAILABLE,
+    ChatFollowupSearchResult,
+    followup_bundle_dir,
+)
+from backend.modules.orchestrator.models import ChatFollowupDecision
 from backend.utils.config import (
     AgentConfig,
     AppConfig,
@@ -18,7 +24,13 @@ from backend.utils.config import (
 from backend.utils.paths import RunPaths, create_run_paths
 
 
-def _build_config(runs_dir: Path, markdown_dir: Path) -> AppConfig:
+def _build_config(
+    runs_dir: Path,
+    markdown_dir: Path,
+    *,
+    followup_search_enabled: bool = False,
+    max_auto_followup_bundles: int = 3,
+) -> AppConfig:
     return AppConfig(
         orchestrator=OrchestratorConfig(
             model="test-model", context_bundle_name="context_bundle.json"
@@ -26,7 +38,12 @@ def _build_config(runs_dir: Path, markdown_dir: Path) -> AppConfig:
         sql_researcher=SqlResearcherConfig(model="test-model"),
         markdown_researcher=MarkdownResearcherConfig(model="test-model"),
         writer=AgentConfig(model="test-model"),
-        chat=ChatConfig(model="openai/gpt-5.2", max_history_messages=10),
+        chat=ChatConfig(
+            model="openai/gpt-5.2",
+            max_history_messages=10,
+            followup_search_enabled=followup_search_enabled,
+            max_auto_followup_bundles=max_auto_followup_bundles,
+        ),
         runs_dir=runs_dir,
         markdown_dir=markdown_dir,
         enable_sql=False,
@@ -82,6 +99,88 @@ def _poll_until_completed(client: TestClient, run_id: str, timeout_seconds: floa
             return
         time.sleep(0.02)
     raise AssertionError(f"Run `{run_id}` did not complete in time.")
+
+
+def _write_followup_bundle(
+    *,
+    runs_dir: Path,
+    run_id: str,
+    conversation_id: str,
+    bundle_id: str,
+    target_city: str,
+    quote: str,
+    partial_answer: str,
+) -> None:
+    bundle_dir = followup_bundle_dir(
+        runs_dir=runs_dir,
+        run_id=run_id,
+        conversation_id=conversation_id,
+        bundle_id=bundle_id,
+    )
+    bundle_dir.mkdir(parents=True, exist_ok=True)
+    context_bundle = {
+        "bundle_id": bundle_id,
+        "parent_run_id": run_id,
+        "conversation_id": conversation_id,
+        "source": "chat_followup",
+        "created_at": datetime.now(timezone.utc).isoformat(),
+        "target_city": target_city,
+        "research_question": f"What does {target_city} say?",
+        "retrieval_queries": [f"{target_city} question"],
+        "sql": None,
+        "final": None,
+        "analysis_mode": "aggregate",
+        "markdown": {
+            "status": "success",
+            "selected_city_names": [target_city],
+            "inspected_city_names": [target_city],
+            "excerpt_count": 1,
+            "excerpts": [
+                {
+                    "ref_id": "ref_1",
+                    "city_name": target_city,
+                    "quote": quote,
+                    "partial_answer": partial_answer,
+                    "source_chunk_ids": ["chunk-followup-1"],
+                }
+            ],
+        },
+    }
+    (bundle_dir / "context_bundle.json").write_text(
+        json.dumps(context_bundle, ensure_ascii=True, indent=2),
+        encoding="utf-8",
+    )
+    markdown_dir = bundle_dir / "markdown"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    (markdown_dir / "excerpts.json").write_text(
+        json.dumps(
+            {
+                "excerpts": context_bundle["markdown"]["excerpts"],
+            },
+            ensure_ascii=True,
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
+    (markdown_dir / "references.json").write_text(
+        json.dumps(
+            {
+                "references": [
+                    {
+                        "ref_id": "ref_1",
+                        "excerpt_index": 0,
+                        "city_name": target_city,
+                        "quote": quote,
+                        "partial_answer": partial_answer,
+                        "source_chunk_ids": ["chunk-followup-1"],
+                    }
+                ]
+            },
+            ensure_ascii=True,
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
 
 
 def test_chat_session_lifecycle(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
@@ -421,13 +520,15 @@ def test_chat_builds_prompt_safe_citation_catalog_and_persists_mapping(
         citations = payload["assistant_message"]["citations"]
         assert citations[0]["ref_id"] == "ref_1"
         assert citations[0]["city_name"] == "Seville"
-        assert citations[0]["source_run_id"] == "run-chat-citations"
+        assert citations[0]["source_type"] == "run"
+        assert citations[0]["source_id"] == "run-chat-citations"
         assert citations[0]["source_ref_id"] == "ref_7"
 
     assert captured_catalog
     assert set(captured_catalog[0].keys()) == {"ref_id", "city_name", "quote", "partial_answer"}
     assert captured_catalog[0]["ref_id"] == "ref_1"
-    assert "source_run_id" not in captured_catalog[0]
+    assert "source_type" not in captured_catalog[0]
+    assert "source_id" not in captured_catalog[0]
     assert "source_ref_id" not in captured_catalog[0]
     assert "source_chunk_ids" not in captured_catalog[0]
 
@@ -512,3 +613,957 @@ def test_chat_retries_once_when_first_reply_has_no_valid_citations(
         assert payload["assistant_message"]["citations"][0]["ref_id"] == "ref_1"
 
     assert call_log == [False, True]
+
+
+def test_chat_update_contexts_keeps_parent_run_pinned(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+
+    def _stub_load_config(_path: Path | None = None) -> AppConfig:
+        return _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+
+    def _stub_run_pipeline(
+        question: str,
+        config: AppConfig,
+        run_id: str | None = None,
+        log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
+        selected_cities: list[str] | None = None,
+    ) -> RunPaths:
+        assert run_id is not None
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
+        assert selected_cities is None
+        return _write_success_artifacts(question, run_id, config)
+
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        start = client.post(
+            "/api/v1/runs",
+            json={"question": "Parent doc", "run_id": "run-parent"},
+        )
+        assert start.status_code == 202
+        _poll_until_completed(client, "run-parent")
+
+        start_other = client.post(
+            "/api/v1/runs",
+            json={"question": "Other doc", "run_id": "run-other"},
+        )
+        assert start_other.status_code == 202
+        _poll_until_completed(client, "run-other")
+
+        create_session = client.post("/api/v1/runs/run-parent/chat/sessions", json={})
+        conversation_id = create_session.json()["conversation_id"]
+        update_contexts = client.put(
+            f"/api/v1/runs/run-parent/chat/sessions/{conversation_id}/contexts",
+            json={"context_run_ids": ["run-other"]},
+        )
+        assert update_contexts.status_code == 200
+        assert update_contexts.json()["context_run_ids"] == ["run-parent", "run-other"]
+
+
+def test_chat_followup_search_attaches_bundle_and_exposes_references(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+
+    def _stub_load_config(_path: Path | None = None) -> AppConfig:
+        return _build_config(
+            runs_dir=runs_dir,
+            markdown_dir=markdown_dir,
+            followup_search_enabled=True,
+        )
+
+    def _stub_run_pipeline(
+        question: str,
+        config: AppConfig,
+        run_id: str | None = None,
+        log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
+        selected_cities: list[str] | None = None,
+    ) -> RunPaths:
+        assert run_id is not None
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
+        assert selected_cities is None
+        return _write_success_artifacts(question, run_id, config, excerpts=[])
+
+    def _stub_route_chat_followup(
+        payload: dict[str, object],
+        config: AppConfig,
+        api_key: str,
+        log_llm_payload: bool = False,
+    ) -> ChatFollowupDecision:
+        _ = config, api_key, log_llm_payload
+        assert payload["user_message"] == "Tell me more about Munich."
+        return ChatFollowupDecision(
+            action="search_single_city",
+            reason="Current excerpts do not answer the Munich question.",
+            target_city="Munich",
+            rewritten_question="What does Munich report?",
+            confidence=0.8,
+        )
+
+    def _stub_run_chat_followup_search(
+        *,
+        runs_dir: Path,
+        run_id: str,
+        conversation_id: str,
+        turn_index: int,
+        question: str,
+        target_city: str,
+        config: AppConfig,
+        api_key: str,
+        log_llm_payload: bool = False,
+    ) -> ChatFollowupSearchResult:
+        _ = config, api_key, log_llm_payload
+        assert turn_index == 1
+        assert question == "What does Munich report?"
+        bundle_id = "fup_chat_001_munich"
+        _write_followup_bundle(
+            runs_dir=runs_dir,
+            run_id=run_id,
+            conversation_id=conversation_id,
+            bundle_id=bundle_id,
+            target_city=target_city,
+            quote="Munich plans rooftop solar expansion.",
+            partial_answer="Munich plans rooftop solar expansion.",
+        )
+        return ChatFollowupSearchResult(
+            status="success",
+            bundle_id=bundle_id,
+            target_city=target_city,
+            created_at=datetime.now(timezone.utc),
+            excerpt_count=1,
+            total_tokens=120,
+            error_message=None,
+        )
+
+    def _stub_generate_reply(
+        original_question: str,
+        contexts: list[dict[str, object]],
+        history: list[dict[str, str]],
+        user_content: str,
+        config: AppConfig,
+        token_cap: int = 0,
+        api_key_override: str | None = None,
+        citation_catalog: list[dict[str, str]] | None = None,
+        retry_missing_citation: bool = False,
+        run_id: str | None = None,
+    ) -> str:
+        assert original_question == "Build doc"
+        assert run_id == "run-chat-followup"
+        assert isinstance(citation_catalog, list) and citation_catalog
+        assert contexts[-1]["run_id"] == "fup_chat_001_munich"
+        return "Munich plans rooftop solar expansion. [ref_1]"
+
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.routes.chat.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+    monkeypatch.setattr("backend.api.routes.chat.route_chat_followup", _stub_route_chat_followup)
+    monkeypatch.setattr(
+        "backend.api.routes.chat.run_chat_followup_search",
+        _stub_run_chat_followup_search,
+    )
+    monkeypatch.setattr("backend.api.routes.chat.generate_context_chat_reply", _stub_generate_reply)
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        start = client.post(
+            "/api/v1/runs",
+            json={"question": "Build doc", "run_id": "run-chat-followup"},
+        )
+        assert start.status_code == 202
+        _poll_until_completed(client, "run-chat-followup")
+
+        create_session = client.post("/api/v1/runs/run-chat-followup/chat/sessions", json={})
+        conversation_id = create_session.json()["conversation_id"]
+        send_message = client.post(
+            f"/api/v1/runs/run-chat-followup/chat/sessions/{conversation_id}/messages",
+            json={"content": "Tell me more about Munich."},
+        )
+        assert send_message.status_code == 200
+        payload = send_message.json()
+        assert payload["assistant_message"]["content"] == "Munich plans rooftop solar expansion. [ref_1]"
+        assert payload["assistant_message"]["routing"]["action"] == "search_single_city"
+        assert payload["assistant_message"]["citations"][0]["source_type"] == "followup_bundle"
+        assert payload["assistant_message"]["citations"][0]["source_id"] == "fup_chat_001_munich"
+
+        session_contexts = client.get(
+            f"/api/v1/runs/run-chat-followup/chat/sessions/{conversation_id}/contexts"
+        )
+        assert session_contexts.status_code == 200
+        contexts_payload = session_contexts.json()
+        assert contexts_payload["followup_bundles"][0]["bundle_id"] == "fup_chat_001_munich"
+
+        followup_refs = client.get(
+            f"/api/v1/runs/run-chat-followup/chat/sessions/{conversation_id}/followups/fup_chat_001_munich/references",
+            params={"ref_id": "ref_1", "include_quote": "true"},
+        )
+        assert followup_refs.status_code == 200
+        refs_payload = followup_refs.json()
+        assert refs_payload["references"][0]["quote"] == "Munich plans rooftop solar expansion."
+
+
+def test_chat_followup_router_returns_out_of_scope_message(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+
+    def _stub_load_config(_path: Path | None = None) -> AppConfig:
+        return _build_config(
+            runs_dir=runs_dir,
+            markdown_dir=markdown_dir,
+            followup_search_enabled=True,
+        )
+
+    def _stub_run_pipeline(
+        question: str,
+        config: AppConfig,
+        run_id: str | None = None,
+        log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
+        selected_cities: list[str] | None = None,
+    ) -> RunPaths:
+        assert run_id is not None
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
+        assert selected_cities is None
+        return _write_success_artifacts(question, run_id, config, excerpts=[])
+
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.routes.chat.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+    monkeypatch.setattr(
+        "backend.api.routes.chat.route_chat_followup",
+        lambda payload, config, api_key, log_llm_payload=False: ChatFollowupDecision(
+            action="out_of_scope",
+            reason="The message is unrelated to the report context.",
+        ),
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        start = client.post(
+            "/api/v1/runs",
+            json={"question": "Build doc", "run_id": "run-chat-oos"},
+        )
+        assert start.status_code == 202
+        _poll_until_completed(client, "run-chat-oos")
+
+        create_session = client.post("/api/v1/runs/run-chat-oos/chat/sessions", json={})
+        conversation_id = create_session.json()["conversation_id"]
+        send_message = client.post(
+            f"/api/v1/runs/run-chat-oos/chat/sessions/{conversation_id}/messages",
+            json={"content": "What's the weather tomorrow?"},
+        )
+        assert send_message.status_code == 200
+        payload = send_message.json()
+        assert "outside the current city-report context" in payload["assistant_message"]["content"]
+        assert payload["assistant_message"]["routing"]["action"] == "out_of_scope"
+
+
+def test_chat_followup_router_requests_city_clarification(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+
+    def _stub_load_config(_path: Path | None = None) -> AppConfig:
+        return _build_config(
+            runs_dir=runs_dir,
+            markdown_dir=markdown_dir,
+            followup_search_enabled=True,
+        )
+
+    def _stub_run_pipeline(
+        question: str,
+        config: AppConfig,
+        run_id: str | None = None,
+        log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
+        selected_cities: list[str] | None = None,
+    ) -> RunPaths:
+        assert run_id is not None
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
+        assert selected_cities is None
+        return _write_success_artifacts(question, run_id, config, excerpts=[])
+
+    def _unexpected_reply(**_kwargs: object) -> str:
+        raise AssertionError("Direct answer generation should not run for clarification prompts.")
+
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.routes.chat.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+    monkeypatch.setattr(
+        "backend.api.routes.chat.generate_context_chat_reply",
+        _unexpected_reply,
+    )
+    monkeypatch.setattr(
+        "backend.api.routes.chat.route_chat_followup",
+        lambda payload, config, api_key, log_llm_payload=False: ChatFollowupDecision(
+            action="needs_city_clarification",
+            reason="The user asked about more than one city.",
+        ),
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        start = client.post(
+            "/api/v1/runs",
+            json={"question": "Build doc", "run_id": "run-chat-clarify"},
+        )
+        assert start.status_code == 202
+        _poll_until_completed(client, "run-chat-clarify")
+
+        create_session = client.post("/api/v1/runs/run-chat-clarify/chat/sessions", json={})
+        conversation_id = create_session.json()["conversation_id"]
+        send_message = client.post(
+            f"/api/v1/runs/run-chat-clarify/chat/sessions/{conversation_id}/messages",
+            json={"content": "Compare Munich and Berlin."},
+        )
+        assert send_message.status_code == 200
+        payload = send_message.json()
+        assert "one city at a time" in payload["assistant_message"]["content"]
+        assert payload["assistant_message"]["routing"]["action"] == "needs_city_clarification"
+        assert (
+            payload["assistant_message"]["routing"]["pending_user_message"]
+            == "Compare Munich and Berlin."
+        )
+
+
+def test_chat_followup_search_failure_returns_grounded_limitation(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+
+    def _stub_load_config(_path: Path | None = None) -> AppConfig:
+        return _build_config(
+            runs_dir=runs_dir,
+            markdown_dir=markdown_dir,
+            followup_search_enabled=True,
+        )
+
+    def _stub_run_pipeline(
+        question: str,
+        config: AppConfig,
+        run_id: str | None = None,
+        log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
+        selected_cities: list[str] | None = None,
+    ) -> RunPaths:
+        assert run_id is not None
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
+        assert selected_cities is None
+        return _write_success_artifacts(question, run_id, config, excerpts=[])
+
+    def _unexpected_reply(**_kwargs: object) -> str:
+        raise AssertionError("Direct answer generation should not run after failed follow-up search.")
+
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.routes.chat.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+    monkeypatch.setattr(
+        "backend.api.routes.chat.generate_context_chat_reply",
+        _unexpected_reply,
+    )
+    monkeypatch.setattr(
+        "backend.api.routes.chat.route_chat_followup",
+        lambda payload, config, api_key, log_llm_payload=False: ChatFollowupDecision(
+            action="search_single_city",
+            reason="Existing context does not cover Munich.",
+            target_city="Munich",
+            rewritten_question="What does Munich report?",
+        ),
+    )
+    monkeypatch.setattr(
+        "backend.api.routes.chat.run_chat_followup_search",
+        lambda **kwargs: ChatFollowupSearchResult(
+            status="error",
+            bundle_id="fup_chat_001_munich",
+            target_city="Munich",
+            created_at=datetime.now(timezone.utc),
+            excerpt_count=0,
+            total_tokens=10,
+            error_message="No excerpts available.",
+        ),
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        start = client.post(
+            "/api/v1/runs",
+            json={"question": "Build doc", "run_id": "run-chat-failed-followup"},
+        )
+        assert start.status_code == 202
+        _poll_until_completed(client, "run-chat-failed-followup")
+
+        create_session = client.post(
+            "/api/v1/runs/run-chat-failed-followup/chat/sessions",
+            json={},
+        )
+        conversation_id = create_session.json()["conversation_id"]
+        send_message = client.post(
+            f"/api/v1/runs/run-chat-failed-followup/chat/sessions/{conversation_id}/messages",
+            json={"content": "Tell me more about Munich."},
+        )
+        assert send_message.status_code == 200
+        payload = send_message.json()
+        assert "could not refresh the context for Munich" in payload["assistant_message"]["content"]
+        assert payload["assistant_message"]["routing"]["action"] == "search_single_city"
+        assert payload["assistant_message"]["routing"]["bundle_id"] == "fup_chat_001_munich"
+
+        session_contexts = client.get(
+            f"/api/v1/runs/run-chat-failed-followup/chat/sessions/{conversation_id}/contexts"
+        )
+        assert session_contexts.status_code == 200
+        assert session_contexts.json()["followup_bundles"] == []
+
+
+def test_chat_unavailable_followup_city_returns_city_choice_trigger(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+
+    def _stub_load_config(_path: Path | None = None) -> AppConfig:
+        return _build_config(
+            runs_dir=runs_dir,
+            markdown_dir=markdown_dir,
+            followup_search_enabled=True,
+        )
+
+    def _stub_run_pipeline(
+        question: str,
+        config: AppConfig,
+        run_id: str | None = None,
+        log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
+        selected_cities: list[str] | None = None,
+    ) -> RunPaths:
+        assert run_id is not None
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
+        assert selected_cities is None
+        return _write_success_artifacts(question, run_id, config, excerpts=[])
+
+    def _unexpected_reply(**_kwargs: object) -> str:
+        raise AssertionError("Direct answer generation should not run for unavailable cities.")
+
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.routes.chat.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+    monkeypatch.setattr(
+        "backend.api.routes.chat.generate_context_chat_reply",
+        _unexpected_reply,
+    )
+    monkeypatch.setattr(
+        "backend.api.routes.chat.route_chat_followup",
+        lambda payload, config, api_key, log_llm_payload=False: ChatFollowupDecision(
+            action="search_single_city",
+            reason="Existing context does not cover Atlantis.",
+            target_city="Atlantis",
+            rewritten_question="What does Atlantis report?",
+        ),
+    )
+    monkeypatch.setattr(
+        "backend.api.routes.chat.run_chat_followup_search",
+        lambda **kwargs: ChatFollowupSearchResult(
+            status="error",
+            bundle_id="fup_chat_001_atlantis",
+            target_city="Atlantis",
+            created_at=datetime.now(timezone.utc),
+            excerpt_count=0,
+            total_tokens=10,
+            error_code=CHAT_FOLLOWUP_CITY_UNAVAILABLE,
+            error_message="Selected city is not available in the vector store index.",
+        ),
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        start = client.post(
+            "/api/v1/runs",
+            json={"question": "Build doc", "run_id": "run-chat-unavailable-city"},
+        )
+        assert start.status_code == 202
+        _poll_until_completed(client, "run-chat-unavailable-city")
+
+        create_session = client.post(
+            "/api/v1/runs/run-chat-unavailable-city/chat/sessions",
+            json={},
+        )
+        conversation_id = create_session.json()["conversation_id"]
+        send_message = client.post(
+            f"/api/v1/runs/run-chat-unavailable-city/chat/sessions/{conversation_id}/messages",
+            json={"content": "Tell me more about Atlantis."},
+        )
+        assert send_message.status_code == 200
+        payload = send_message.json()
+        assert payload["assistant_message"]["content"] == (
+            "We don't have Atlantis in the current city list. Please choose another one."
+        )
+        assert payload["assistant_message"]["routing"]["action"] == "needs_city_clarification"
+        assert (
+            payload["assistant_message"]["routing"]["pending_user_message"]
+            == "Tell me more about Atlantis."
+        )
+
+        session_contexts = client.get(
+            f"/api/v1/runs/run-chat-unavailable-city/chat/sessions/{conversation_id}/contexts"
+        )
+        assert session_contexts.status_code == 200
+        assert session_contexts.json()["followup_bundles"] == []
+
+
+def test_chat_clarification_city_selection_triggers_direct_followup_search(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    route_calls: list[str] = []
+
+    def _stub_load_config(_path: Path | None = None) -> AppConfig:
+        return _build_config(
+            runs_dir=runs_dir,
+            markdown_dir=markdown_dir,
+            followup_search_enabled=True,
+        )
+
+    def _stub_run_pipeline(
+        question: str,
+        config: AppConfig,
+        run_id: str | None = None,
+        log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
+        selected_cities: list[str] | None = None,
+    ) -> RunPaths:
+        assert run_id is not None
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
+        assert selected_cities is None
+        return _write_success_artifacts(question, run_id, config, excerpts=[])
+
+    def _stub_route_chat_followup(
+        payload: dict[str, object],
+        config: AppConfig,
+        api_key: str,
+        log_llm_payload: bool = False,
+    ) -> ChatFollowupDecision:
+        _ = config, api_key, log_llm_payload
+        route_calls.append(str(payload["user_message"]))
+        return ChatFollowupDecision(
+            action="needs_city_clarification",
+            reason="The follow-up question mentions multiple cities.",
+        )
+
+    def _stub_run_chat_followup_search(
+        *,
+        runs_dir: Path,
+        run_id: str,
+        conversation_id: str,
+        turn_index: int,
+        question: str,
+        target_city: str,
+        config: AppConfig,
+        api_key: str,
+        log_llm_payload: bool = False,
+    ) -> ChatFollowupSearchResult:
+        _ = config, api_key, log_llm_payload
+        assert turn_index == 2
+        assert question == "Compare Munich and Berlin on rooftop solar."
+        assert target_city == "Munich"
+        bundle_id = "fup_chat_002_munich"
+        _write_followup_bundle(
+            runs_dir=runs_dir,
+            run_id=run_id,
+            conversation_id=conversation_id,
+            bundle_id=bundle_id,
+            target_city=target_city,
+            quote="Munich plans rooftop solar expansion.",
+            partial_answer="Munich plans rooftop solar expansion.",
+        )
+        return ChatFollowupSearchResult(
+            status="success",
+            bundle_id=bundle_id,
+            target_city=target_city,
+            created_at=datetime.now(timezone.utc),
+            excerpt_count=1,
+            total_tokens=120,
+        )
+
+    def _stub_generate_reply(
+        original_question: str,
+        contexts: list[dict[str, object]],
+        history: list[dict[str, str]],
+        user_content: str,
+        config: AppConfig,
+        token_cap: int = 0,
+        api_key_override: str | None = None,
+        citation_catalog: list[dict[str, str]] | None = None,
+        retry_missing_citation: bool = False,
+        run_id: str | None = None,
+    ) -> str:
+        _ = original_question, history, config, token_cap, api_key_override, retry_missing_citation
+        assert run_id == "run-chat-city-choice"
+        assert isinstance(citation_catalog, list) and citation_catalog
+        assert user_content == "Compare Munich and Berlin on rooftop solar."
+        assert contexts[-1]["run_id"] == "fup_chat_002_munich"
+        return "Munich plans rooftop solar expansion. [ref_1]"
+
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.routes.chat.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+    monkeypatch.setattr("backend.api.routes.chat.route_chat_followup", _stub_route_chat_followup)
+    monkeypatch.setattr(
+        "backend.api.routes.chat.run_chat_followup_search",
+        _stub_run_chat_followup_search,
+    )
+    monkeypatch.setattr("backend.api.routes.chat.generate_context_chat_reply", _stub_generate_reply)
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        start = client.post(
+            "/api/v1/runs",
+            json={"question": "Build doc", "run_id": "run-chat-city-choice"},
+        )
+        assert start.status_code == 202
+        _poll_until_completed(client, "run-chat-city-choice")
+
+        create_session = client.post("/api/v1/runs/run-chat-city-choice/chat/sessions", json={})
+        conversation_id = create_session.json()["conversation_id"]
+
+        clarify_response = client.post(
+            f"/api/v1/runs/run-chat-city-choice/chat/sessions/{conversation_id}/messages",
+            json={"content": "Compare Munich and Berlin on rooftop solar."},
+        )
+        assert clarify_response.status_code == 200
+        clarify_payload = clarify_response.json()
+        assert clarify_payload["assistant_message"]["routing"]["action"] == "needs_city_clarification"
+        assert (
+            clarify_payload["assistant_message"]["routing"]["pending_user_message"]
+            == "Compare Munich and Berlin on rooftop solar."
+        )
+
+        city_choice_response = client.post(
+            f"/api/v1/runs/run-chat-city-choice/chat/sessions/{conversation_id}/messages",
+            json={
+                "content": "Focus only on Munich.",
+                "clarification_city": "Munich",
+                "clarification_question": "Compare Munich and Berlin on rooftop solar.",
+            },
+        )
+        assert city_choice_response.status_code == 200
+        payload = city_choice_response.json()
+        assert payload["user_message"]["content"] == "Focus only on Munich."
+        assert payload["assistant_message"]["content"] == "Munich plans rooftop solar expansion. [ref_1]"
+        assert payload["assistant_message"]["routing"]["action"] == "search_single_city"
+        assert payload["assistant_message"]["routing"]["target_city"] == "Munich"
+        assert payload["assistant_message"]["citations"][0]["source_type"] == "followup_bundle"
+
+    assert route_calls == ["Compare Munich and Berlin on rooftop solar."]
+
+
+def test_chat_followup_bundles_are_pruned_to_configured_maximum(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+
+    def _stub_load_config(_path: Path | None = None) -> AppConfig:
+        return _build_config(
+            runs_dir=runs_dir,
+            markdown_dir=markdown_dir,
+            followup_search_enabled=True,
+            max_auto_followup_bundles=1,
+        )
+
+    def _stub_run_pipeline(
+        question: str,
+        config: AppConfig,
+        run_id: str | None = None,
+        log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
+        selected_cities: list[str] | None = None,
+    ) -> RunPaths:
+        assert run_id is not None
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
+        assert selected_cities is None
+        return _write_success_artifacts(question, run_id, config, excerpts=[])
+
+    def _stub_route_chat_followup(
+        payload: dict[str, object],
+        config: AppConfig,
+        api_key: str,
+        log_llm_payload: bool = False,
+    ) -> ChatFollowupDecision:
+        _ = config, api_key, log_llm_payload
+        if payload["user_message"] == "Tell me more about Munich.":
+            target_city = "Munich"
+        else:
+            target_city = "Berlin"
+        return ChatFollowupDecision(
+            action="search_single_city",
+            reason=f"Need fresh context for {target_city}.",
+            target_city=target_city,
+            rewritten_question=f"What does {target_city} report?",
+        )
+
+    def _stub_run_chat_followup_search(
+        *,
+        runs_dir: Path,
+        run_id: str,
+        conversation_id: str,
+        turn_index: int,
+        question: str,
+        target_city: str,
+        config: AppConfig,
+        api_key: str,
+        log_llm_payload: bool = False,
+    ) -> ChatFollowupSearchResult:
+        _ = question, config, api_key, log_llm_payload
+        bundle_id = f"fup_chat_{turn_index:03d}_{target_city.casefold()}"
+        _write_followup_bundle(
+            runs_dir=runs_dir,
+            run_id=run_id,
+            conversation_id=conversation_id,
+            bundle_id=bundle_id,
+            target_city=target_city,
+            quote=f"{target_city} follow-up quote.",
+            partial_answer=f"{target_city} follow-up answer.",
+        )
+        return ChatFollowupSearchResult(
+            status="success",
+            bundle_id=bundle_id,
+            target_city=target_city,
+            created_at=datetime.now(timezone.utc),
+            excerpt_count=1,
+            total_tokens=100,
+        )
+
+    def _stub_generate_reply(
+        original_question: str,
+        contexts: list[dict[str, object]],
+        history: list[dict[str, str]],
+        user_content: str,
+        config: AppConfig,
+        token_cap: int = 0,
+        api_key_override: str | None = None,
+        citation_catalog: list[dict[str, str]] | None = None,
+        retry_missing_citation: bool = False,
+        run_id: str | None = None,
+    ) -> str:
+        _ = original_question, history, config, token_cap, api_key_override, retry_missing_citation
+        assert run_id == "run-chat-prune-followups"
+        assert isinstance(citation_catalog, list) and citation_catalog
+        return f"{user_content} [ref_1]"
+
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.routes.chat.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+    monkeypatch.setattr("backend.api.routes.chat.route_chat_followup", _stub_route_chat_followup)
+    monkeypatch.setattr(
+        "backend.api.routes.chat.run_chat_followup_search",
+        _stub_run_chat_followup_search,
+    )
+    monkeypatch.setattr("backend.api.routes.chat.generate_context_chat_reply", _stub_generate_reply)
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        start = client.post(
+            "/api/v1/runs",
+            json={"question": "Build doc", "run_id": "run-chat-prune-followups"},
+        )
+        assert start.status_code == 202
+        _poll_until_completed(client, "run-chat-prune-followups")
+
+        create_session = client.post(
+            "/api/v1/runs/run-chat-prune-followups/chat/sessions",
+            json={},
+        )
+        conversation_id = create_session.json()["conversation_id"]
+
+        first_send = client.post(
+            f"/api/v1/runs/run-chat-prune-followups/chat/sessions/{conversation_id}/messages",
+            json={"content": "Tell me more about Munich."},
+        )
+        assert first_send.status_code == 200
+
+        second_send = client.post(
+            f"/api/v1/runs/run-chat-prune-followups/chat/sessions/{conversation_id}/messages",
+            json={"content": "Tell me more about Berlin."},
+        )
+        assert second_send.status_code == 200
+        second_payload = second_send.json()
+        assert second_payload["assistant_message"]["routing"]["bundle_id"] == "fup_chat_002_berlin"
+
+        session_contexts = client.get(
+            f"/api/v1/runs/run-chat-prune-followups/chat/sessions/{conversation_id}/contexts"
+        )
+        assert session_contexts.status_code == 200
+        contexts_payload = session_contexts.json()
+        assert [bundle["bundle_id"] for bundle in contexts_payload["followup_bundles"]] == [
+            "fup_chat_002_berlin"
+        ]
+
+
+def test_chat_followup_same_city_search_replaces_previous_bundle(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+
+    def _stub_load_config(_path: Path | None = None) -> AppConfig:
+        return _build_config(
+            runs_dir=runs_dir,
+            markdown_dir=markdown_dir,
+            followup_search_enabled=True,
+        )
+
+    def _stub_run_pipeline(
+        question: str,
+        config: AppConfig,
+        run_id: str | None = None,
+        log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
+        selected_cities: list[str] | None = None,
+    ) -> RunPaths:
+        assert run_id is not None
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
+        assert selected_cities is None
+        return _write_success_artifacts(question, run_id, config, excerpts=[])
+
+    def _stub_run_chat_followup_search(
+        *,
+        runs_dir: Path,
+        run_id: str,
+        conversation_id: str,
+        turn_index: int,
+        question: str,
+        target_city: str,
+        config: AppConfig,
+        api_key: str,
+        log_llm_payload: bool = False,
+    ) -> ChatFollowupSearchResult:
+        _ = question, config, api_key, log_llm_payload
+        bundle_id = f"fup_chat_{turn_index:03d}_munich"
+        _write_followup_bundle(
+            runs_dir=runs_dir,
+            run_id=run_id,
+            conversation_id=conversation_id,
+            bundle_id=bundle_id,
+            target_city=target_city,
+            quote=f"{target_city} follow-up quote {turn_index}.",
+            partial_answer=f"{target_city} follow-up answer {turn_index}.",
+        )
+        return ChatFollowupSearchResult(
+            status="success",
+            bundle_id=bundle_id,
+            target_city=target_city,
+            created_at=datetime.now(timezone.utc),
+            excerpt_count=1,
+            total_tokens=100,
+        )
+
+    def _stub_generate_reply(
+        original_question: str,
+        contexts: list[dict[str, object]],
+        history: list[dict[str, str]],
+        user_content: str,
+        config: AppConfig,
+        token_cap: int = 0,
+        api_key_override: str | None = None,
+        citation_catalog: list[dict[str, str]] | None = None,
+        retry_missing_citation: bool = False,
+        run_id: str | None = None,
+    ) -> str:
+        _ = original_question, history, config, token_cap, api_key_override, citation_catalog, retry_missing_citation
+        assert run_id == "run-chat-replace-followup"
+        assert contexts[-1]["run_id"].startswith("fup_chat_")
+        return f"{user_content} [ref_1]"
+
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.routes.chat.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+    monkeypatch.setattr(
+        "backend.api.routes.chat.route_chat_followup",
+        lambda payload, config, api_key, log_llm_payload=False: ChatFollowupDecision(
+            action="search_single_city",
+            reason="Need fresh context for Munich.",
+            target_city="Munich",
+            rewritten_question="What does Munich report?",
+        ),
+    )
+    monkeypatch.setattr(
+        "backend.api.routes.chat.run_chat_followup_search",
+        _stub_run_chat_followup_search,
+    )
+    monkeypatch.setattr("backend.api.routes.chat.generate_context_chat_reply", _stub_generate_reply)
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        start = client.post(
+            "/api/v1/runs",
+            json={"question": "Build doc", "run_id": "run-chat-replace-followup"},
+        )
+        assert start.status_code == 202
+        _poll_until_completed(client, "run-chat-replace-followup")
+
+        create_session = client.post(
+            "/api/v1/runs/run-chat-replace-followup/chat/sessions",
+            json={},
+        )
+        conversation_id = create_session.json()["conversation_id"]
+
+        first_send = client.post(
+            f"/api/v1/runs/run-chat-replace-followup/chat/sessions/{conversation_id}/messages",
+            json={"content": "Tell me more about Munich."},
+        )
+        assert first_send.status_code == 200
+
+        second_send = client.post(
+            f"/api/v1/runs/run-chat-replace-followup/chat/sessions/{conversation_id}/messages",
+            json={"content": "Refresh Munich again."},
+        )
+        assert second_send.status_code == 200
+        second_payload = second_send.json()
+        assert second_payload["assistant_message"]["routing"]["bundle_id"] == "fup_chat_002_munich"
+
+        session_contexts = client.get(
+            f"/api/v1/runs/run-chat-replace-followup/chat/sessions/{conversation_id}/contexts"
+        )
+        assert session_contexts.status_code == 200
+        contexts_payload = session_contexts.json()
+        assert [bundle["bundle_id"] for bundle in contexts_payload["followup_bundles"]] == [
+            "fup_chat_002_munich"
+        ]

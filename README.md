@@ -169,6 +169,8 @@ chat:
   context_window_tokens: 400000
   input_token_reserve: 20000
   max_history_messages: 24
+  followup_search_enabled: false
+  max_auto_followup_bundles: 3
 assumptions_reviewer:
   model: "openai/gpt-5.2"
   temperature: 0.0
@@ -425,7 +427,7 @@ Context chat notes:
 - Context manager supports selecting multiple completed run contexts.
 - Chat builds a deterministic synthetic citation catalog from selected context bundles and requires assistant citations in `[ref_n]` format.
 - Chat prompt citation context contains only `ref_id`, `city_name`, `quote`, and `partial_answer` (no chunk ids and no internal source ids).
-- Assistant messages persist citation metadata (`source_run_id`, `source_ref_id`) for deterministic click-to-quote resolution in frontend.
+- Assistant messages persist citation metadata (`source_type`, `source_id`, `source_ref_id`) for deterministic click-to-quote resolution in frontend.
 - Prompt budget defaults to `250000` tokens (`CHAT_PROMPT_TOKEN_CAP`) and switches to pooled excerpts if full context exceeds this budget.
 - `include_quote=false` on `/references` is the default for lightweight city-label rendering; quote payload is fetched on click using `include_quote=true`.
 
@@ -464,6 +466,9 @@ Frontend supports three city scope modes in the build form: all cities, predefin
 Frontend also supports two answer modes: `Aggregate Mode` and `City-by-City Mode` (sent as `analysis_mode` in run requests).
 Clicking `Chat About the Answer` switches to a dedicated chat workspace (not a chat modal).
 Document and chat citations render as compact city labels; clicking a label loads and shows only the source quote.
+When `chat.followup_search_enabled` is `true`, the chat router may run a synchronous one-city markdown-only follow-up search, attach the resulting follow-up bundle to the session, and keep citations clickable for both base runs and chat-owned follow-up bundles.
+Follow-up search stays conservative: it never launches a multi-city refresh, and failed follow-up searches return a limitation message instead of a guessed answer.
+When chat needs a single city before searching, the backend now sends clarification metadata and the frontend opens a city-picker popup that can trigger the one-city follow-up search directly.
 The `Load Previous Answer` picker reads `run_id` + `question` from `GET /api/v1/runs`, then loads selected run artifacts through the standard run endpoints.
 
 Hidden but implemented features (buttons temporarily hidden):

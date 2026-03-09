@@ -138,12 +138,27 @@ export interface ApplyAssumptionsResponse {
 }
 
 export type ChatRole = "user" | "assistant";
+export type ChatFollowupAction =
+  | "answer_from_context"
+  | "search_single_city"
+  | "out_of_scope"
+  | "needs_city_clarification";
+export type ChatCitationSourceType = "run" | "followup_bundle";
 
 export interface ChatCitation {
   ref_id: string;
   city_name: string;
-  source_run_id: string;
+  source_type: ChatCitationSourceType;
+  source_id: string;
   source_ref_id: string;
+}
+
+export interface ChatRoutingMetadata {
+  action: ChatFollowupAction;
+  reason: string;
+  target_city?: string | null;
+  bundle_id?: string | null;
+  pending_user_message?: string | null;
 }
 
 export interface ChatMessage {
@@ -152,6 +167,7 @@ export interface ChatMessage {
   created_at: string;
   citations?: ChatCitation[] | null;
   citation_warning?: string | null;
+  routing?: ChatRoutingMetadata | null;
 }
 
 export interface ChatSessionResponse {
@@ -186,14 +202,24 @@ export interface ChatContextCatalogResponse {
   token_cap: number;
 }
 
+export interface ChatFollowupBundleSummary {
+  bundle_id: string;
+  target_city: string;
+  excerpt_count: number;
+  total_tokens: number;
+  created_at: string;
+}
+
 export interface ChatSessionContextsResponse {
   run_id: string;
   conversation_id: string;
   context_run_ids: string[];
   contexts: ChatContextSummary[];
+  followup_bundles: ChatFollowupBundleSummary[];
   total_tokens: number;
   token_cap: number;
   excluded_context_run_ids: string[];
+  excluded_followup_bundle_ids: string[];
   is_capped: boolean;
 }
 
@@ -202,6 +228,14 @@ export interface SendChatMessageResponse {
   conversation_id: string;
   user_message: ChatMessage;
   assistant_message: ChatMessage;
+}
+
+export interface ChatFollowupReferenceListResponse {
+  run_id: string;
+  conversation_id: string;
+  bundle_id: string;
+  reference_count: number;
+  references: RunReferenceListItem[];
 }
 
 function normalizeCityKey(value: string): string {
@@ -517,14 +551,48 @@ export async function sendChatMessage(
   runId: string,
   conversationId: string,
   content: string,
+  options?: {
+    clarificationCity?: string;
+    clarificationQuestion?: string;
+  },
 ): Promise<SendChatMessageResponse> {
+  const body: Record<string, string> = { content };
+  if (options?.clarificationCity) {
+    body.clarification_city = options.clarificationCity;
+  }
+  if (options?.clarificationQuestion) {
+    body.clarification_question = options.clarificationQuestion;
+  }
   return requestJson<SendChatMessageResponse>(
     `/api/v1/runs/${encodeURIComponent(runId)}/chat/sessions/${encodeURIComponent(conversationId)}/messages`,
     {
       method: "POST",
-      body: JSON.stringify({ content }),
+      body: JSON.stringify(body),
     },
     true,
   );
+}
+
+export async function fetchChatFollowupReferences(
+  runId: string,
+  conversationId: string,
+  bundleId: string,
+  options?: {
+    refId?: string;
+    includeQuote?: boolean;
+  },
+): Promise<ChatFollowupReferenceListResponse> {
+  const params = new URLSearchParams();
+  if (options?.refId) {
+    params.set("ref_id", options.refId);
+  }
+  if (options?.includeQuote) {
+    params.set("include_quote", "true");
+  }
+  const suffix = params.toString();
+  const path =
+    `/api/v1/runs/${encodeURIComponent(runId)}/chat/sessions/${encodeURIComponent(conversationId)}` +
+    `/followups/${encodeURIComponent(bundleId)}/references${suffix ? `?${suffix}` : ""}`;
+  return requestJson<ChatFollowupReferenceListResponse>(path);
 }
 

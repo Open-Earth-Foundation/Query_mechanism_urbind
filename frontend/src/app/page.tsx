@@ -16,10 +16,10 @@ import {
 import { AssumptionsWorkspace } from "@/components/assumptions-workspace";
 import { ContextChatWorkspace } from "@/components/context-chat-workspace";
 import { MarkdownWithReferences } from "@/components/markdown-with-references";
+import { SearchableCityPicker } from "@/components/searchable-city-picker";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 import { Textarea } from "@/components/ui/textarea";
@@ -58,7 +58,6 @@ export default function Home() {
   const [question, setQuestion] = useState("");
   const [scopeMode, setScopeMode] = useState<CityScopeMode>("all");
   const [analysisMode, setAnalysisMode] = useState<AnalysisMode>("aggregate");
-  const [cityFilter, setCityFilter] = useState("");
   const [cities, setCities] = useState<string[]>([]);
   const [selectedCities, setSelectedCities] = useState<string[]>([]);
   const [cityGroups, setCityGroups] = useState<CityGroup[]>([]);
@@ -364,14 +363,6 @@ export default function Home() {
       cancelled = true;
     };
   }, [runId, runStatus, canFetchArtifacts]);
-
-  const filteredCities = useMemo(() => {
-    const needle = cityFilter.trim().toLowerCase();
-    if (!needle) {
-      return cities;
-    }
-    return cities.filter((city) => city.toLowerCase().includes(needle));
-  }, [cities, cityFilter]);
 
   const selectedGroup = useMemo(() => {
     if (!selectedGroupId) {
@@ -680,41 +671,14 @@ export default function Home() {
                 ) : null}
 
                 {scopeMode === "manual" ? (
-                  <>
-                    <Input
-                      id="city-filter"
-                      placeholder="Filter cities..."
-                      value={cityFilter}
-                      onChange={(event) => setCityFilter(event.target.value)}
-                    />
-                    <div className="max-h-40 overflow-y-auto rounded-md border border-slate-200 p-2">
-                      {isLoadingCities ? (
-                        <p className="text-sm text-slate-500">Loading cities...</p>
-                      ) : citiesError ? (
-                        <p className="text-sm text-red-600">{citiesError}</p>
-                      ) : filteredCities.length === 0 ? (
-                        <p className="text-sm text-slate-500">No cities found.</p>
-                      ) : (
-                        <div className="flex flex-wrap gap-2">
-                          {filteredCities.map((city) => {
-                            const selected = selectedCities.includes(city);
-                            return (
-                              <Button
-                                key={city}
-                                type="button"
-                                variant={selected ? "default" : "outline"}
-                                size="sm"
-                                onClick={() => toggleCity(city)}
-                                className="h-8 rounded-full px-3"
-                              >
-                                {formatCityLabel(city)}
-                              </Button>
-                            );
-                          })}
-                        </div>
-                      )}
-                    </div>
-                  </>
+                  <SearchableCityPicker
+                    cities={cities}
+                    selectedCities={selectedCities}
+                    onSelectCity={toggleCity}
+                    errorMessage={citiesError}
+                    isLoading={isLoadingCities}
+                    loadingMessage="Loading cities..."
+                  />
                 ) : null}
               </div>
 

@@ -176,6 +176,13 @@ class CityGroupListResponse(BaseModel):
 
 
 ChatRole = Literal["user", "assistant"]
+ChatFollowupAction = Literal[
+    "answer_from_context",
+    "search_single_city",
+    "out_of_scope",
+    "needs_city_clarification",
+]
+ChatCitationSourceType = Literal["run", "followup_bundle"]
 
 
 class ChatCitation(BaseModel):
@@ -183,8 +190,19 @@ class ChatCitation(BaseModel):
 
     ref_id: str
     city_name: str
-    source_run_id: str
+    source_type: ChatCitationSourceType
+    source_id: str
     source_ref_id: str
+
+
+class ChatRoutingMetadata(BaseModel):
+    """Routing metadata persisted for assistant follow-up messages."""
+
+    action: ChatFollowupAction
+    reason: str
+    target_city: str | None = None
+    bundle_id: str | None = None
+    pending_user_message: str | None = None
 
 
 class ChatMessage(BaseModel):
@@ -195,6 +213,7 @@ class ChatMessage(BaseModel):
     created_at: datetime
     citations: list[ChatCitation] | None = None
     citation_warning: str | None = None
+    routing: ChatRoutingMetadata | None = None
 
 
 class CreateChatSessionRequest(BaseModel):
@@ -237,6 +256,16 @@ class ChatContextSummary(BaseModel):
     total_tokens: int
 
 
+class ChatFollowupBundleSummary(BaseModel):
+    """Auto-attached follow-up excerpt bundle for one chat session."""
+
+    bundle_id: str
+    target_city: str
+    excerpt_count: int
+    total_tokens: int
+    created_at: datetime
+
+
 class ChatContextCatalogResponse(BaseModel):
     """Response body listing available run contexts for chat."""
 
@@ -260,9 +289,11 @@ class ChatSessionContextsResponse(BaseModel):
     conversation_id: str
     context_run_ids: list[str]
     contexts: list[ChatContextSummary]
+    followup_bundles: list[ChatFollowupBundleSummary] = Field(default_factory=list)
     total_tokens: int
     token_cap: int
     excluded_context_run_ids: list[str]
+    excluded_followup_bundle_ids: list[str] = Field(default_factory=list)
     is_capped: bool
 
 
@@ -272,6 +303,8 @@ class SendChatMessageRequest(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     content: str = Field(min_length=1)
+    clarification_city: str | None = None
+    clarification_question: str | None = None
 
 
 class SendChatMessageResponse(BaseModel):
@@ -281,6 +314,16 @@ class SendChatMessageResponse(BaseModel):
     conversation_id: str
     user_message: ChatMessage
     assistant_message: ChatMessage
+
+
+class ChatFollowupReferenceListResponse(BaseModel):
+    """Response body for one chat follow-up bundle reference list."""
+
+    run_id: str
+    conversation_id: str
+    bundle_id: str
+    reference_count: int
+    references: list[RunReferenceItem]
 
 
 __all__ = [
@@ -304,15 +347,20 @@ __all__ = [
     "CityGroup",
     "CityGroupListResponse",
     "ChatRole",
+    "ChatFollowupAction",
+    "ChatCitationSourceType",
     "ChatCitation",
+    "ChatRoutingMetadata",
     "ChatMessage",
     "CreateChatSessionRequest",
     "ChatSessionResponse",
     "ChatSessionListResponse",
     "ChatContextSummary",
+    "ChatFollowupBundleSummary",
     "ChatContextCatalogResponse",
     "UpdateChatContextsRequest",
     "ChatSessionContextsResponse",
     "SendChatMessageRequest",
     "SendChatMessageResponse",
+    "ChatFollowupReferenceListResponse",
 ]

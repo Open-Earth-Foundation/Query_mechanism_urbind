@@ -63,6 +63,12 @@ def _load_manifest_cities(config: AppConfig) -> dict[str, str]:
     return city_display_by_key
 
 
+def list_indexed_city_names(config: AppConfig) -> list[str]:
+    """Return display names for cities currently present in the vector-store manifest."""
+    manifest_city_display_by_key = _load_manifest_cities(config)
+    return sorted(manifest_city_display_by_key.values(), key=str.casefold)
+
+
 def _embed_queries(queries: list[str], config: AppConfig) -> dict[str, list[float]]:
     """Embed retrieval queries in one batch using a reusable provider."""
     provider = OpenAIEmbeddingProvider(
@@ -499,6 +505,7 @@ def as_markdown_documents(chunks: list[RetrievedChunk]) -> list[dict[str, object
 
 __all__ = [
     "as_markdown_documents",
+    "list_indexed_city_names",
     "retrieve_chunks_for_queries",
     "retrieve_top_k_chunks",
 ]

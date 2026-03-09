@@ -28,11 +28,10 @@ from backend.api.services import (
     RunExecutor,
     RunStore,
     StartRunCommand,
+    build_reference_item,
+    load_reference_records,
 )
-from backend.modules.orchestrator.utils.references import (
-    build_markdown_references,
-    is_valid_ref_id,
-)
+from backend.modules.orchestrator.utils.references import is_valid_ref_id
 
 router = APIRouter()
 logger = logging.getLogger(__name__)
@@ -342,7 +341,7 @@ def _resolve_run_reference_items(
 
     run_store, record = _require_completed_run(run_id, request)
     run_dir = _resolve_run_dir(record, run_store.runs_dir, run_id)
-    records = _load_reference_records(run_dir, run_id)
+    records = load_reference_records(run_dir, run_id)
     if not records:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
@@ -351,7 +350,7 @@ def _resolve_run_reference_items(
 
     items: list[RunReferenceItem] = []
     for item in records:
-        normalized = _build_run_reference_item(record=item, include_quote=include_quote)
+        normalized = build_reference_item(record=item, include_quote=include_quote)
         if not is_valid_ref_id(normalized.ref_id):
             continue
         items.append(normalized)
@@ -366,22 +365,6 @@ def _resolve_run_reference_items(
             )
         return filtered
     return items
-
-
-def _build_run_reference_item(
-    record: dict[str, object], include_quote: bool
-) -> RunReferenceItem:
-    """Normalize one raw reference record into API response shape."""
-    item = RunReferenceItem(
-        ref_id=str(record.get("ref_id", "")).strip(),
-        excerpt_index=_parse_excerpt_index(record.get("excerpt_index")),
-        city_name=str(record.get("city_name", "")).strip(),
-    )
-    if include_quote:
-        item.quote = str(record.get("quote", ""))
-        item.partial_answer = str(record.get("partial_answer", ""))
-        item.source_chunk_ids = _normalize_source_chunk_ids(record.get("source_chunk_ids"))
-    return item
 
 
 def _resolve_output_path(path: Path | None, runs_dir: Path, run_id: str) -> Path | None:
@@ -421,74 +404,6 @@ def _resolve_run_dir(record: RunRecord, runs_dir: Path, run_id: str) -> Path:
     if record.final_output_path is not None:
         return record.final_output_path.parent
     return runs_dir / run_id
-
-
-def _parse_excerpt_index(value: object) -> int:
-    """Parse excerpt index into a non-negative integer."""
-    if isinstance(value, int):
-        return max(value, 0)
-    if isinstance(value, str):
-        try:
-            return max(int(value.strip()), 0)
-        except ValueError:
-            return 0
-    return 0
-
-
-def _normalize_source_chunk_ids(value: object) -> list[str]:
-    """Normalize source chunk ids to string list."""
-    if not isinstance(value, list):
-        return []
-    normalized: list[str] = []
-    for item in value:
-        if not isinstance(item, str):
-            continue
-        candidate = item.strip()
-        if candidate:
-            normalized.append(candidate)
-    return normalized
-
-
-def _coerce_reference_records(value: object) -> list[dict[str, object]]:
-    """Coerce reference payload into a list of dict records."""
-    if not isinstance(value, list):
-        return []
-    return [record for record in value if isinstance(record, dict)]
-
-
-def _load_reference_records(run_dir: Path, run_id: str) -> list[dict[str, object]]:
-    """Load reference records from references artifact or fallback excerpts artifact."""
-    references_path = run_dir / "markdown" / "references.json"
-    if references_path.exists():
-        try:
-            payload = json.loads(references_path.read_text(encoding="utf-8"))
-        except (OSError, json.JSONDecodeError):
-            logger.exception("Failed to parse references artifact at %s", references_path)
-            return []
-        if isinstance(payload, dict):
-            records = _coerce_reference_records(payload.get("references"))
-            if records:
-                return records
-
-    excerpts_path = run_dir / "markdown" / "excerpts.json"
-    if not excerpts_path.exists():
-        return []
-    try:
-        excerpts_payload = json.loads(excerpts_path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
-        logger.exception("Failed to parse excerpts artifact at %s", excerpts_path)
-        return []
-    if not isinstance(excerpts_payload, dict):
-        return []
-    raw_excerpts = excerpts_payload.get("excerpts")
-    excerpt_records = _coerce_reference_records(raw_excerpts)
-    if not excerpt_records:
-        return []
-    _enriched_excerpts, references_payload = build_markdown_references(
-        run_id=run_id,
-        excerpts=excerpt_records,
-    )
-    return _coerce_reference_records(references_payload.get("references"))
 
 
 __all__ = ["router"]

@@ -201,6 +201,8 @@ def test_load_config_defaults_chat_history_to_twelve(tmp_path: Path) -> None:
     config = load_config(config_path)
 
     assert config.chat.max_history_messages == 12
+    assert not config.chat.followup_search_enabled
+    assert config.chat.max_auto_followup_bundles == 3
 
 
 def test_load_config_reads_central_retry_settings_from_yaml(tmp_path: Path) -> None:

@@ -53,6 +53,8 @@ class ChatConfig(AgentConfig):
     prompt_token_buffer: int = 2_000
     multi_pass_threshold_tokens: int = 200_000
     multi_pass_chunk_tokens: int = 150_000
+    followup_search_enabled: bool = False
+    max_auto_followup_bundles: int = 3
 
 
 class AssumptionsReviewerConfig(AgentConfig):
@@ -109,7 +111,9 @@ class AppConfig(BaseModel):
     markdown_dir: Path = Field(default_factory=lambda: Path("documents"))
     enable_sql: bool = False
 
+
 def _parse_env_bool(value: str | None) -> bool | None:
+    """Parse a permissive environment boolean string."""
     if value is None:
         return None
     normalized = value.strip().lower()
@@ -121,6 +125,7 @@ def _parse_env_bool(value: str | None) -> bool | None:
 
 
 def load_config(config_path: Optional[Path] = None) -> AppConfig:
+    """Load config from YAML and apply supported environment overrides."""
     load_dotenv()
     path = config_path or Path("llm_config.yaml")
     if not path.exists():
@@ -171,6 +176,7 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
 
 
 def get_openrouter_api_key() -> str:
+    """Return the configured OpenRouter API key and mirror it to OpenAI vars."""
     load_dotenv()
     api_key = os.getenv("OPENROUTER_API_KEY")
     if not api_key:
@@ -187,6 +193,7 @@ def get_openrouter_api_key() -> str:
 
 
 def get_database_url() -> str:
+    """Return the configured database URL or raise when missing."""
     load_dotenv()
     database_url = os.getenv("DATABASE_URL")
     if not database_url:

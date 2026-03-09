@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 
 import {
+  fetchCities,
   ChatContextSummary,
   ChatMessage,
   ChatSessionContextsResponse,
@@ -21,6 +22,7 @@ import {
   updateChatSessionContexts,
 } from "@/lib/api";
 import { MarkdownWithReferences } from "@/components/markdown-with-references";
+import { SearchableCityPicker } from "@/components/searchable-city-picker";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -28,11 +30,13 @@ import {
   Dialog,
   DialogContent,
   DialogDescription,
+  DialogFooter,
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { formatCityLabel } from "@/lib/utils";
 
 interface ContextChatWorkspaceProps {
   runId: string;
@@ -48,6 +52,7 @@ export function ContextChatWorkspace({
   onClose,
 }: ContextChatWorkspaceProps) {
   const messageScrollAreaRef = useRef<HTMLDivElement | null>(null);
+  const handledClarificationKeyRef = useRef<string | null>(null);
   const sendLockRef = useRef(false);
   const [conversationId, setConversationId] = useState<string | null>(null);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
@@ -56,6 +61,10 @@ export function ContextChatWorkspace({
 
   const [inputValue, setInputValue] = useState("");
   const [pendingPrompt, setPendingPrompt] = useState<string | null>(null);
+  const [pendingClarificationCity, setPendingClarificationCity] = useState<string | null>(null);
+  const [pendingClarificationQuestion, setPendingClarificationQuestion] = useState<string | null>(
+    null,
+  );
   const [isBootstrapping, setIsBootstrapping] = useState(false);
   const [isSending, setIsSending] = useState(false);
   const [isLoadingContexts, setIsLoadingContexts] = useState(false);
@@ -67,6 +76,12 @@ export function ContextChatWorkspace({
   const [catalogError, setCatalogError] = useState<string | null>(null);
   const [contextCatalog, setContextCatalog] = useState<ChatContextSummary[]>([]);
   const [managerSelection, setManagerSelection] = useState<string[]>([]);
+  const [isCityClarificationOpen, setIsCityClarificationOpen] = useState(false);
+  const [clarificationQuestion, setClarificationQuestion] = useState<string | null>(null);
+  const [clarificationCities, setClarificationCities] = useState<string[]>([]);
+  const [selectedClarificationCity, setSelectedClarificationCity] = useState<string | null>(null);
+  const [isLoadingClarificationCities, setIsLoadingClarificationCities] = useState(false);
+  const [clarificationError, setClarificationError] = useState<string | null>(null);
 
   const canChat = enabled && !!runId;
 
@@ -76,10 +91,19 @@ export function ContextChatWorkspace({
     setSessionContexts(null);
     setInputValue("");
     setPendingPrompt(null);
+    setPendingClarificationCity(null);
+    setPendingClarificationQuestion(null);
     setErrorMessage(null);
     setContextCatalog([]);
     setManagerSelection([]);
     setCatalogError(null);
+    setIsCityClarificationOpen(false);
+    setClarificationQuestion(null);
+    setClarificationCities([]);
+    setSelectedClarificationCity(null);
+    setIsLoadingClarificationCities(false);
+    setClarificationError(null);
+    handledClarificationKeyRef.current = null;
     sendLockRef.current = false;
   }, [runId]);
 
@@ -220,41 +244,155 @@ export function ContextChatWorkspace({
     [contextById, managerSelection],
   );
 
-  async function handleSend(event: FormEvent<HTMLFormElement>): Promise<void> {
-    event.preventDefault();
-    if (!runId || !conversationId || isSending || sendLockRef.current) {
+  useEffect(() => {
+    const latestMessage = sortedMessages.at(-1);
+    const pendingQuestion = latestMessage?.routing?.pending_user_message?.trim();
+    if (
+      latestMessage?.role !== "assistant" ||
+      latestMessage.routing?.action !== "needs_city_clarification" ||
+      !pendingQuestion
+    ) {
       return;
     }
-    const value = inputValue.trim();
-    if (!value) {
+    const clarificationKey = `${latestMessage.created_at}:${pendingQuestion}`;
+    if (handledClarificationKeyRef.current === clarificationKey) {
       return;
+    }
+    handledClarificationKeyRef.current = clarificationKey;
+    setClarificationQuestion(pendingQuestion);
+    setSelectedClarificationCity(null);
+    setClarificationError(null);
+    setIsCityClarificationOpen(true);
+  }, [sortedMessages]);
+
+  useEffect(() => {
+    if (!isCityClarificationOpen || clarificationCities.length > 0) {
+      return;
+    }
+    let cancelled = false;
+    setIsLoadingClarificationCities(true);
+    setClarificationError(null);
+    fetchCities()
+      .then((payload) => {
+        if (cancelled) {
+          return;
+        }
+        setClarificationCities(payload.cities);
+      })
+      .catch((error) => {
+        if (cancelled) {
+          return;
+        }
+        setClarificationError(
+          error instanceof Error ? error.message : "Failed to load city list.",
+        );
+      })
+      .finally(() => {
+        if (!cancelled) {
+          setIsLoadingClarificationCities(false);
+        }
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [clarificationCities.length, isCityClarificationOpen]);
+
+  async function submitMessage(options: {
+    content: string;
+    clarificationCity?: string;
+    clarificationQuestion?: string;
+    restoreInputOnError?: boolean;
+  }): Promise<boolean> {
+    if (!runId || !conversationId || isSending || sendLockRef.current) {
+      return false;
+    }
+    const content = options.content.trim();
+    if (!content) {
+      return false;
     }
     sendLockRef.current = true;
     setIsSending(true);
     setErrorMessage(null);
-    setInputValue("");
-    setPendingPrompt(value);
+    setClarificationError(null);
+    setPendingPrompt(content);
+    setPendingClarificationCity(options.clarificationCity?.trim() || null);
+    setPendingClarificationQuestion(options.clarificationQuestion?.trim() || null);
     try {
-      const response = await sendChatMessage(runId, conversationId, value);
+      const response = await sendChatMessage(runId, conversationId, content, {
+        clarificationCity: options.clarificationCity,
+        clarificationQuestion: options.clarificationQuestion,
+      });
       setMessages((current) => [
         ...current,
         response.user_message,
         response.assistant_message,
       ]);
       await loadSessionContexts(runId, conversationId);
+      return true;
     } catch (error) {
       setErrorMessage(
         error instanceof Error ? error.message : "Message send failed.",
       );
-      setInputValue((current) => (current.trim() ? current : value));
+      if (options.restoreInputOnError) {
+        setInputValue((current) => (current.trim() ? current : content));
+      }
+      return false;
     } finally {
       setPendingPrompt(null);
+      setPendingClarificationCity(null);
+      setPendingClarificationQuestion(null);
       setIsSending(false);
       sendLockRef.current = false;
     }
   }
 
+  async function handleSend(event: FormEvent<HTMLFormElement>): Promise<void> {
+    event.preventDefault();
+    const value = inputValue.trim();
+    if (!value) {
+      return;
+    }
+    setInputValue("");
+    const succeeded = await submitMessage({
+      content: value,
+      restoreInputOnError: true,
+    });
+    if (!succeeded) {
+      return;
+    }
+  }
+
+  async function handleClarificationSubmit(): Promise<void> {
+    if (!selectedClarificationCity || !clarificationQuestion) {
+      return;
+    }
+    const succeeded = await submitMessage({
+      content: `Focus only on ${selectedClarificationCity}.`,
+      clarificationCity: selectedClarificationCity,
+      clarificationQuestion,
+    });
+    if (!succeeded) {
+      return;
+    }
+    setIsCityClarificationOpen(false);
+    setClarificationQuestion(null);
+    setSelectedClarificationCity(null);
+    setClarificationError(null);
+  }
+
+  function closeCityClarification(): void {
+    if (isSending) {
+      return;
+    }
+    setIsCityClarificationOpen(false);
+    setSelectedClarificationCity(null);
+    setClarificationError(null);
+  }
+
   function toggleContextSelection(targetRunId: string): void {
+    if (targetRunId === runId) {
+      return;
+    }
     setManagerSelection((current) => {
       if (current.includes(targetRunId)) {
         if (current.length <= 1) {
@@ -366,7 +504,7 @@ export function ContextChatWorkspace({
           {sessionContexts ? (
             <div className="space-y-2 rounded-md border border-slate-200 bg-slate-50 p-3 text-xs text-slate-700">
               <p>
-                Active contexts: {sessionContexts.contexts.length}
+                Active sources: {sessionContexts.contexts.length + sessionContexts.followup_bundles.length}
               </p>
               <div className="flex flex-wrap gap-2">
                 {sessionContexts.contexts.map((context) => (
@@ -374,11 +512,16 @@ export function ContextChatWorkspace({
                     {context.run_id}
                   </Badge>
                 ))}
+                {sessionContexts.followup_bundles.map((bundle) => (
+                  <Badge key={bundle.bundle_id} variant="outline">
+                    Follow-up: {bundle.target_city}
+                  </Badge>
+                ))}
               </div>
               {sessionContexts.is_capped ? (
                 <p className="text-amber-700">
-                  Some selected contexts are excluded due to token cap or missing artifacts:{" "}
-                  {sessionContexts.excluded_context_run_ids.join(", ")}
+                  Some sources are excluded due to token cap or missing artifacts:{" "}
+                  {[...sessionContexts.excluded_context_run_ids, ...sessionContexts.excluded_followup_bundle_ids].join(", ")}
                 </p>
               ) : null}
             </div>
@@ -420,9 +563,16 @@ export function ContextChatWorkspace({
                         <MarkdownWithReferences
                           content={message.content}
                           runId={runId}
+                          conversationId={conversationId}
                           chatCitations={message.citations}
                           prefetchRunReferences={false}
                         />
+                        {message.routing ? (
+                          <p className="mt-2 text-xs text-slate-600">
+                            Route: {message.routing.action.replaceAll("_", " ")}
+                            {message.routing.target_city ? ` (${message.routing.target_city})` : ""}
+                          </p>
+                        ) : null}
                         {message.citation_warning ? (
                           <p className="mt-2 text-xs text-amber-700">
                             {message.citation_warning}
@@ -443,22 +593,46 @@ export function ContextChatWorkspace({
                   </div>
                 ) : null}
                 {isSending ? (
-                  <div className="mr-8 rounded-lg border border-teal-100 bg-teal-50 p-3 text-slate-900">
-                    <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-teal-800">
-                      assistant
-                    </p>
-                    <p className="mb-2 text-base font-semibold text-teal-900">
-                      Processing your question...
-                    </p>
-                    <div className="inline-flex items-center gap-2 text-xs text-teal-800">
-                      <span>Thinking</span>
-                      <span className="chat-thinking-dots" aria-hidden="true">
-                        <span className="chat-thinking-dot" />
-                        <span className="chat-thinking-dot" />
-                        <span className="chat-thinking-dot" />
-                      </span>
+                  pendingClarificationCity ? (
+                    <div className="mr-8 rounded-lg border border-sky-200 bg-sky-50 p-3 text-slate-900">
+                      <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-sky-700">
+                        assistant
+                      </p>
+                      <p className="mb-1 text-base font-semibold text-sky-950">
+                        Reading {formatCityLabel(pendingClarificationCity)} to answer your question...
+                      </p>
+                      {pendingClarificationQuestion ? (
+                        <p className="mb-2 text-sm leading-relaxed text-sky-900">
+                          {pendingClarificationQuestion}
+                        </p>
+                      ) : null}
+                      <div className="inline-flex items-center gap-2 text-xs text-sky-800">
+                        <span>Reviewing city context</span>
+                        <span className="chat-thinking-dots" aria-hidden="true">
+                          <span className="chat-thinking-dot" />
+                          <span className="chat-thinking-dot" />
+                          <span className="chat-thinking-dot" />
+                        </span>
+                      </div>
                     </div>
-                  </div>
+                  ) : (
+                    <div className="mr-8 rounded-lg border border-teal-100 bg-teal-50 p-3 text-slate-900">
+                      <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-teal-800">
+                        assistant
+                      </p>
+                      <p className="mb-2 text-base font-semibold text-teal-900">
+                        Processing your question...
+                      </p>
+                      <div className="inline-flex items-center gap-2 text-xs text-teal-800">
+                        <span>Thinking</span>
+                        <span className="chat-thinking-dots" aria-hidden="true">
+                          <span className="chat-thinking-dot" />
+                          <span className="chat-thinking-dot" />
+                          <span className="chat-thinking-dot" />
+                        </span>
+                      </div>
+                    </div>
+                  )
                 ) : null}
               </div>
             )}
@@ -520,12 +694,13 @@ export function ContextChatWorkspace({
                     const wouldOverflow =
                       !selected &&
                       selectedContextTokens + context.total_tokens > managerTokenCap;
+                    const isPinnedBaseRun = context.run_id === runId;
                     return (
                       <button
                         key={context.run_id}
                         type="button"
                         onClick={() => toggleContextSelection(context.run_id)}
-                        disabled={wouldOverflow}
+                        disabled={wouldOverflow || isPinnedBaseRun}
                         className={
                           selected
                             ? "w-full rounded-md border border-teal-300 bg-teal-50 p-3 text-left"
@@ -539,6 +714,9 @@ export function ContextChatWorkspace({
                           </Badge>
                         </div>
                         <p className="line-clamp-2 text-xs text-slate-600">{context.question}</p>
+                        {isPinnedBaseRun ? (
+                          <p className="mt-1 text-xs text-teal-700">Pinned parent run</p>
+                        ) : null}
                       </button>
                     );
                   })}
@@ -551,7 +729,7 @@ export function ContextChatWorkspace({
                 <p className="text-xs text-red-600">{catalogError}</p>
               ) : (
                 <p className="text-xs text-slate-500">
-                  Keep at least one context selected.
+                  The parent run stays pinned; select additional runs as needed.
                 </p>
               )}
               <Button
@@ -570,6 +748,76 @@ export function ContextChatWorkspace({
               </Button>
             </div>
           </div>
+        </DialogContent>
+      </Dialog>
+
+      <Dialog
+        open={isCityClarificationOpen}
+        onOpenChange={(open) => {
+          if (isSending) {
+            return;
+          }
+          if (!open) {
+            closeCityClarification();
+            return;
+          }
+          setIsCityClarificationOpen(true);
+        }}
+      >
+        <DialogContent className="flex max-h-[85vh] max-w-xl flex-col overflow-hidden p-0">
+          <DialogHeader className="border-b border-slate-200 px-6 pb-4 pt-6 pr-14">
+            <DialogTitle>Choose One City</DialogTitle>
+            <DialogDescription>
+              Pick one city and the backend will run the follow-up search directly for your original question.
+            </DialogDescription>
+          </DialogHeader>
+          <div className="flex min-h-0 flex-1 flex-col gap-4 overflow-hidden px-6 py-5">
+            {clarificationQuestion ? (
+              <div className="rounded-md border border-slate-200 bg-slate-50 p-3 text-sm text-slate-700">
+                <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                  Original question
+                </p>
+                <p className="mt-1 whitespace-pre-wrap">{clarificationQuestion}</p>
+              </div>
+            ) : null}
+            <SearchableCityPicker
+              cities={clarificationCities}
+              selectedCities={selectedClarificationCity ? [selectedClarificationCity] : []}
+              onSelectCity={setSelectedClarificationCity}
+              className="min-h-0 flex-1"
+              disabled={isSending}
+              errorMessage={clarificationError}
+              isLoading={isLoadingClarificationCities}
+              emptyMessage="No cities match the current filter."
+              loadingMessage="Loading cities..."
+              scrollAreaClassName="h-full"
+            />
+          </div>
+          <DialogFooter className="border-t border-slate-200 bg-slate-50 px-6 py-4 sm:justify-between sm:space-x-0">
+            <p className="text-xs text-slate-600">
+              {selectedClarificationCity
+                ? `Selected city: ${formatCityLabel(selectedClarificationCity)}`
+                : "Select one city to continue with a focused follow-up search."}
+            </p>
+            <div className="flex items-center justify-end gap-2">
+              <Button
+                type="button"
+                variant="outline"
+                disabled={isSending}
+                onClick={closeCityClarification}
+              >
+                Cancel
+              </Button>
+              <Button
+                type="button"
+                disabled={!selectedClarificationCity || isSending}
+                onClick={() => void handleClarificationSubmit()}
+              >
+                {isSending ? <Loader2 className="h-4 w-4 animate-spin" /> : null}
+                Continue with {selectedClarificationCity ? formatCityLabel(selectedClarificationCity) : "City"}
+              </Button>
+            </div>
+          </DialogFooter>
         </DialogContent>
       </Dialog>
     </>
