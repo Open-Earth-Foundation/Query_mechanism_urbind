@@ -8,7 +8,7 @@ import logging
 import re
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Callable, cast
+from typing import Any, Callable, Literal, cast
 
 from openai import APIConnectionError, APIStatusError, APITimeoutError, OpenAI
 from openai.types.chat import ChatCompletionMessageParam
@@ -31,10 +31,6 @@ CHAT_MULTIPLY_TOOL_NAME = "multiply_numbers"
 CHAT_DIVIDE_TOOL_NAME = "divide_numbers"
 CHAT_REF_ID_PATTERN = re.compile(r"^ref_[1-9]\d*$")
 CHAT_EVIDENCE_CACHE_FILENAME = "evidence_chunks.json"
-
-
-class ChatPromptOverflowError(ValueError):
-    """Raised when the direct chat prompt exceeds the configured token budget."""
 
 
 def resolve_chat_token_cap(config: AppConfig) -> int:
@@ -138,6 +134,70 @@ class ChatContextSource:
     context_bundle: dict[str, Any]
 
 
+@dataclass(frozen=True)
+class ContextChatPlan:
+    """Preflight strategy decision for one chat request."""
+
+    mode: Literal["direct", "split"]
+    context_ids: list[str]
+    resolved_token_cap: int
+    effective_token_cap: int
+    estimated_prompt_tokens: int | None = None
+    context_tokens: int | None = None
+    split_reason: str | None = None
+    context_window_kind: Literal["citation_catalog", "serialized_contexts"] | None = None
+    context_block_tokens: int | None = None
+    prompt_header_tokens: int | None = None
+    history_tokens: int | None = None
+    user_tokens: int | None = None
+    citation_catalog_entry_count: int | None = None
+    fitted_citation_entry_count: int | None = None
+    fitted_citation_ref_ids: list[str] | None = None
+
+
+@dataclass(frozen=True)
+class ContextWindowEstimate:
+    """Context-window estimate derived from the same prompt assembly path as chat."""
+
+    mode: Literal["direct", "split"]
+    resolved_token_cap: int
+    effective_token_cap: int
+    context_window_kind: Literal["citation_catalog", "serialized_contexts"] | None = None
+    context_window_tokens: int | None = None
+    fitted_context_window_tokens: int | None = None
+    estimated_prompt_tokens: int | None = None
+    citation_catalog_entry_count: int | None = None
+    fitted_citation_entry_count: int | None = None
+
+
+@dataclass(frozen=True)
+class _PreparedContextChatRequest:
+    """Normalized chat inputs and the resolved direct-vs-split strategy."""
+
+    prompt_header: str
+    normalized_contexts: list[ChatContextSource]
+    normalized_citations: list[dict[str, str]]
+    bounded_history: list[dict[str, str]]
+    user_content: str
+    resolved_cap: int
+    effective_token_cap: int
+    context_ids: list[str]
+    mode: Literal["direct", "split"]
+    direct_system_prompt: str | None = None
+    direct_history: list[dict[str, str]] | None = None
+    estimated_prompt_tokens: int | None = None
+    context_tokens: int | None = None
+    split_reason: str | None = None
+    context_window_kind: Literal["citation_catalog", "serialized_contexts"] | None = None
+    context_block_tokens: int | None = None
+    prompt_header_tokens: int | None = None
+    history_tokens: int | None = None
+    user_tokens: int | None = None
+    citation_catalog_entry_count: int | None = None
+    fitted_citation_entry_count: int | None = None
+    fitted_citation_ref_ids: list[str] | None = None
+
+
 def load_context_bundle(path: Path) -> dict[str, Any]:
     """Load context bundle object from JSON file."""
     payload = json.loads(path.read_text(encoding="utf-8"))
@@ -149,6 +209,81 @@ def load_context_bundle(path: Path) -> dict[str, Any]:
 def load_final_document(path: Path) -> str:
     """Load final markdown document."""
     return path.read_text(encoding="utf-8")
+
+
+def plan_context_chat_request(
+    original_question: str,
+    contexts: list[dict[str, Any]],
+    history: list[dict[str, str]],
+    user_content: str,
+    config: AppConfig,
+    token_cap: int = 0,
+    citation_catalog: list[dict[str, str]] | None = None,
+    retry_missing_citation: bool = False,
+) -> ContextChatPlan:
+    """Plan whether one chat request can stay direct or must switch to split mode."""
+    prepared = _prepare_context_chat_request(
+        original_question=original_question,
+        contexts=contexts,
+        history=history,
+        user_content=user_content,
+        config=config,
+        token_cap=token_cap,
+        citation_catalog=citation_catalog,
+        retry_missing_citation=retry_missing_citation,
+    )
+    return ContextChatPlan(
+        mode=prepared.mode,
+        context_ids=prepared.context_ids,
+        resolved_token_cap=prepared.resolved_cap,
+        effective_token_cap=prepared.effective_token_cap,
+        estimated_prompt_tokens=prepared.estimated_prompt_tokens,
+        context_tokens=prepared.context_tokens,
+        split_reason=prepared.split_reason,
+        context_window_kind=prepared.context_window_kind,
+        context_block_tokens=prepared.context_block_tokens,
+        prompt_header_tokens=prepared.prompt_header_tokens,
+        history_tokens=prepared.history_tokens,
+        user_tokens=prepared.user_tokens,
+        citation_catalog_entry_count=prepared.citation_catalog_entry_count,
+        fitted_citation_entry_count=prepared.fitted_citation_entry_count,
+        fitted_citation_ref_ids=prepared.fitted_citation_ref_ids,
+    )
+
+
+def estimate_context_window(
+    original_question: str,
+    contexts: list[dict[str, Any]],
+    config: AppConfig,
+    token_cap: int = 0,
+    citation_catalog: list[dict[str, str]] | None = None,
+) -> ContextWindowEstimate:
+    """Estimate the context-window tokens for chat selection and diagnostics."""
+    prepared = _prepare_context_chat_request(
+        original_question=original_question,
+        contexts=contexts,
+        history=[],
+        user_content="",
+        config=config,
+        token_cap=token_cap,
+        citation_catalog=citation_catalog,
+        retry_missing_citation=False,
+    )
+    return ContextWindowEstimate(
+        mode=prepared.mode,
+        resolved_token_cap=prepared.resolved_cap,
+        effective_token_cap=prepared.effective_token_cap,
+        context_window_kind=prepared.context_window_kind,
+        context_window_tokens=_estimate_full_context_window_tokens(
+            normalized_contexts=prepared.normalized_contexts,
+            normalized_citations=prepared.normalized_citations,
+            context_window_kind=prepared.context_window_kind,
+        ),
+        fitted_context_window_tokens=prepared.context_block_tokens,
+        estimated_prompt_tokens=prepared.estimated_prompt_tokens,
+        citation_catalog_entry_count=prepared.citation_catalog_entry_count,
+        fitted_citation_entry_count=prepared.fitted_citation_entry_count,
+    )
 
 
 def generate_context_chat_reply(
@@ -164,13 +299,17 @@ def generate_context_chat_reply(
     run_id: str | None = None,
 ) -> str:
     """Generate assistant reply grounded in selected run contexts."""
-    resolved_cap = int(token_cap) if token_cap > 0 else resolve_chat_token_cap(config)
-    effective_token_cap = max(
-        config.chat.min_prompt_token_cap,
-        min(resolved_cap, config.chat.max_context_total_tokens),
+    prepared = _prepare_context_chat_request(
+        original_question=original_question,
+        contexts=contexts,
+        history=history,
+        user_content=user_content,
+        config=config,
+        token_cap=token_cap,
+        citation_catalog=citation_catalog,
+        retry_missing_citation=retry_missing_citation,
     )
     timeout = config.chat.provider_timeout_seconds
-
     api_key = (
         api_key_override.strip()
         if isinstance(api_key_override, str) and api_key_override.strip()
@@ -180,23 +319,6 @@ def generate_context_chat_reply(
         api_key=api_key,
         base_url=config.openrouter_base_url,
         timeout=timeout,
-    )
-
-    normalized_contexts = _normalize_contexts(contexts)
-    if not normalized_contexts:
-        raise ValueError("At least one chat context source is required.")
-
-    history_limit = max(0, config.chat.max_history_messages)
-    bounded_history = _normalize_history(history)
-    if history_limit > 0:
-        bounded_history = bounded_history[-history_limit:]
-    else:
-        bounded_history = []
-
-    normalized_citations = _normalize_citation_catalog(citation_catalog)
-    prompt_header = _build_system_prompt_header(
-        original_question=original_question,
-        retry_missing_citation=retry_missing_citation,
     )
 
     base_request_kwargs: dict[str, Any] = {
@@ -215,66 +337,120 @@ def generate_context_chat_reply(
         backoff_base_seconds=config.retry.backoff_base_seconds,
         backoff_max_seconds=config.retry.backoff_max_seconds,
     )
-
-    included_context_ids = [context.run_id for context in normalized_contexts]
-    try:
-        return _generate_direct_context_chat_reply(
-            prompt_header=prompt_header,
-            normalized_contexts=normalized_contexts,
-            normalized_citations=normalized_citations,
-            bounded_history=bounded_history,
-            user_content=user_content,
-            effective_token_cap=effective_token_cap,
-            resolved_cap=resolved_cap,
-            config=config,
+    if prepared.mode == "direct":
+        if prepared.context_tokens is not None:
+            logger.info(
+                "Context chat direct request model=%s contexts=%s context_tokens=%d estimated_prompt_tokens=%d "
+                "threshold=%d token_cap=%d effective_token_cap=%d context_window_kind=%s "
+                "context_block_tokens=%s prompt_header_tokens=%s history_tokens=%s user_tokens=%s "
+                "citation_entries=%s fitted_citation_entries=%s",
+                config.chat.model,
+                prepared.context_ids,
+                prepared.context_tokens,
+                prepared.estimated_prompt_tokens or 0,
+                config.chat.multi_pass_threshold_tokens,
+                prepared.resolved_cap,
+                prepared.effective_token_cap,
+                prepared.context_window_kind,
+                prepared.context_block_tokens,
+                prepared.prompt_header_tokens,
+                prepared.history_tokens,
+                prepared.user_tokens,
+                prepared.citation_catalog_entry_count,
+                prepared.fitted_citation_entry_count,
+            )
+        else:
+            logger.info(
+                "Context chat direct request model=%s contexts=%s estimated_prompt_tokens=%d "
+                "token_cap=%d effective_token_cap=%d context_window_kind=%s context_block_tokens=%s "
+                "prompt_header_tokens=%s history_tokens=%s user_tokens=%s citation_entries=%s "
+                "fitted_citation_entries=%s",
+                config.chat.model,
+                prepared.context_ids,
+                prepared.estimated_prompt_tokens or 0,
+                prepared.resolved_cap,
+                prepared.effective_token_cap,
+                prepared.context_window_kind,
+                prepared.context_block_tokens,
+                prepared.prompt_header_tokens,
+                prepared.history_tokens,
+                prepared.user_tokens,
+                prepared.citation_catalog_entry_count,
+                prepared.fitted_citation_entry_count,
+            )
+        return _run_single_pass(
             client=client,
+            messages=_build_messages(
+                prepared.direct_system_prompt or "",
+                list(prepared.direct_history or []),
+                prepared.user_content,
+            ),
             request_kwargs=base_request_kwargs,
             retry_settings=retry_settings,
             run_id=run_id,
-            context_count=len(included_context_ids),
-            context_ids=included_context_ids,
-        )
-    except ChatPromptOverflowError as exc:
-        logger.info(
-            "Context chat overflow fallback run_id=%s contexts=%s error=%s",
-            run_id,
-            included_context_ids,
-            exc,
-        )
-        return _run_overflow_evidence_map_reduce(
-            prompt_header=prompt_header,
-            normalized_contexts=normalized_contexts,
-            normalized_citations=normalized_citations,
-            bounded_history=bounded_history,
-            user_content=user_content,
-            effective_token_cap=effective_token_cap,
-            config=config,
-            client=client,
-            request_kwargs=base_request_kwargs,
-            retry_settings=retry_settings,
-            run_id=run_id,
-            context_count=len(included_context_ids),
+            context_count=len(prepared.context_ids),
         )
 
+    logger.info(
+        "Context chat overflow fallback run_id=%s contexts=%s error=%s",
+        run_id,
+        prepared.context_ids,
+        prepared.split_reason,
+    )
+    return _run_overflow_evidence_map_reduce(
+        prompt_header=prepared.prompt_header,
+        normalized_contexts=prepared.normalized_contexts,
+        normalized_citations=prepared.normalized_citations,
+        bounded_history=prepared.bounded_history,
+        user_content=prepared.user_content,
+        effective_token_cap=prepared.effective_token_cap,
+        config=config,
+        client=client,
+        request_kwargs=base_request_kwargs,
+        retry_settings=retry_settings,
+        run_id=run_id,
+        context_count=len(prepared.context_ids),
+    )
 
-def _generate_direct_context_chat_reply(
+
+def _prepare_context_chat_request(
     *,
-    prompt_header: str,
-    normalized_contexts: list[ChatContextSource],
-    normalized_citations: list[dict[str, str]],
-    bounded_history: list[dict[str, str]],
+    original_question: str,
+    contexts: list[dict[str, Any]],
+    history: list[dict[str, str]],
     user_content: str,
-    effective_token_cap: int,
-    resolved_cap: int,
     config: AppConfig,
-    client: OpenAI,
-    request_kwargs: dict[str, Any],
-    retry_settings: RetrySettings,
-    run_id: str | None,
-    context_count: int,
-    context_ids: list[str],
-) -> str:
-    """Return the direct single-pass chat answer or raise on prompt overflow."""
+    token_cap: int,
+    citation_catalog: list[dict[str, str]] | None,
+    retry_missing_citation: bool,
+) -> _PreparedContextChatRequest:
+    """Normalize one chat request and resolve the direct-vs-split strategy."""
+    resolved_cap = int(token_cap) if token_cap > 0 else resolve_chat_token_cap(config)
+    effective_token_cap = max(
+        config.chat.min_prompt_token_cap,
+        min(resolved_cap, config.chat.max_context_total_tokens),
+    )
+    normalized_contexts = _normalize_contexts(contexts)
+    if not normalized_contexts:
+        raise ValueError("At least one chat context source is required.")
+
+    history_limit = max(0, config.chat.max_history_messages)
+    bounded_history = _normalize_history(history)
+    if history_limit > 0:
+        bounded_history = bounded_history[-history_limit:]
+    else:
+        bounded_history = []
+
+    prompt_header = _build_system_prompt_header(
+        original_question=original_question,
+        retry_missing_citation=retry_missing_citation,
+    )
+    normalized_citations = _normalize_citation_catalog(citation_catalog)
+    context_ids = [context.run_id for context in normalized_contexts]
+    user_tokens = _estimate_messages_tokens([{"role": "user", "content": user_content}])
+    prompt_header_tokens = count_tokens(prompt_header)
+    bounded_history_tokens = _estimate_messages_tokens(bounded_history)
+
     if normalized_citations:
         fitted_citations = _fit_citation_catalog_to_budget(
             citation_catalog=normalized_citations,
@@ -284,78 +460,172 @@ def _generate_direct_context_chat_reply(
             token_cap=effective_token_cap,
             prompt_token_buffer=config.chat.prompt_token_buffer,
         )
+        fitted_ref_ids = [item["ref_id"] for item in fitted_citations]
+        fitted_catalog_tokens = count_tokens(_render_citation_catalog_block(fitted_citations))
         if len(fitted_citations) < len(normalized_citations):
-            raise ChatPromptOverflowError(
-                "Citation evidence catalog exceeds direct prompt budget and requires overflow map-reduce."
+            return _PreparedContextChatRequest(
+                prompt_header=prompt_header,
+                normalized_contexts=normalized_contexts,
+                normalized_citations=normalized_citations,
+                bounded_history=bounded_history,
+                user_content=user_content,
+                resolved_cap=resolved_cap,
+                effective_token_cap=effective_token_cap,
+                context_ids=context_ids,
+                mode="split",
+                split_reason=(
+                    "Citation evidence catalog exceeds direct prompt budget and requires "
+                    "overflow map-reduce."
+                ),
+                context_window_kind="citation_catalog",
+                context_block_tokens=fitted_catalog_tokens,
+                prompt_header_tokens=prompt_header_tokens,
+                history_tokens=bounded_history_tokens,
+                user_tokens=user_tokens,
+                citation_catalog_entry_count=len(normalized_citations),
+                fitted_citation_entry_count=len(fitted_citations),
+                fitted_citation_ref_ids=fitted_ref_ids,
             )
-        context_block = _render_citation_catalog_block(fitted_citations)
-        system_prompt = _compose_system_prompt(prompt_header, context_block)
-        working_history = list(bounded_history)
-        messages = _build_messages(system_prompt, working_history, user_content)
-        while _estimate_messages_tokens(messages) > effective_token_cap and working_history:
-            working_history = working_history[1:]
-            messages = _build_messages(system_prompt, working_history, user_content)
-        estimated_prompt_tokens = _estimate_messages_tokens(messages)
-        if estimated_prompt_tokens > effective_token_cap:
-            raise ChatPromptOverflowError(
-                "Chat context exceeds token budget after trimming "
-                f"({estimated_prompt_tokens} > {effective_token_cap}). "
-                "Reduce selected contexts or shorten history/messages."
-            )
-        logger.info(
-            "Context chat direct request model=%s contexts=%s estimated_prompt_tokens=%d "
-            "token_cap=%d effective_token_cap=%d",
-            config.chat.model,
-            context_ids,
-            estimated_prompt_tokens,
-            resolved_cap,
-            effective_token_cap,
-        )
-        return _run_single_pass(
-            client=client,
-            messages=messages,
-            request_kwargs=request_kwargs,
-            retry_settings=retry_settings,
-            run_id=run_id,
-            context_count=context_count,
+        return _prepare_direct_prompt_request(
+            prompt_header=prompt_header,
+            context_block=_render_citation_catalog_block(fitted_citations),
+            normalized_contexts=normalized_contexts,
+            normalized_citations=normalized_citations,
+            bounded_history=bounded_history,
+            user_content=user_content,
+            resolved_cap=resolved_cap,
+            effective_token_cap=effective_token_cap,
+            context_ids=context_ids,
+            overflow_reason_prefix="Chat context exceeds token budget after trimming",
+            context_window_kind="citation_catalog",
+            context_block_tokens=fitted_catalog_tokens,
+            prompt_header_tokens=prompt_header_tokens,
+            user_tokens=user_tokens,
+            citation_catalog_entry_count=len(normalized_citations),
+            fitted_citation_entry_count=len(fitted_citations),
+            fitted_citation_ref_ids=fitted_ref_ids,
         )
 
     serialized_contexts = _serialize_all_contexts(normalized_contexts)
     context_tokens = count_tokens(serialized_contexts)
-    logger.info(
-        "Context chat direct request model=%s contexts=%s context_tokens=%d "
-        "threshold=%d token_cap=%d effective_token_cap=%d",
-        config.chat.model,
-        context_ids,
-        context_tokens,
-        config.chat.multi_pass_threshold_tokens,
-        resolved_cap,
-        effective_token_cap,
-    )
     if context_tokens > config.chat.multi_pass_threshold_tokens:
-        raise ChatPromptOverflowError(
-            "Serialized context exceeds direct prompt threshold and requires overflow map-reduce."
+        return _PreparedContextChatRequest(
+            prompt_header=prompt_header,
+            normalized_contexts=normalized_contexts,
+            normalized_citations=normalized_citations,
+            bounded_history=bounded_history,
+            user_content=user_content,
+            resolved_cap=resolved_cap,
+            effective_token_cap=effective_token_cap,
+            context_ids=context_ids,
+            mode="split",
+            context_tokens=context_tokens,
+            split_reason=(
+                "Serialized context exceeds direct prompt threshold and requires "
+                "overflow map-reduce."
+            ),
+            context_window_kind="serialized_contexts",
+            context_block_tokens=context_tokens,
+            prompt_header_tokens=prompt_header_tokens,
+            history_tokens=bounded_history_tokens,
+            user_tokens=user_tokens,
         )
-    system_prompt = _compose_system_prompt(prompt_header, serialized_contexts)
+    return _prepare_direct_prompt_request(
+        prompt_header=prompt_header,
+        context_block=serialized_contexts,
+        normalized_contexts=normalized_contexts,
+        normalized_citations=normalized_citations,
+        bounded_history=bounded_history,
+        user_content=user_content,
+        resolved_cap=resolved_cap,
+        effective_token_cap=effective_token_cap,
+        context_ids=context_ids,
+        context_tokens=context_tokens,
+        overflow_reason_prefix="Chat context exceeds token budget after trimming history",
+        context_window_kind="serialized_contexts",
+        context_block_tokens=context_tokens,
+        prompt_header_tokens=prompt_header_tokens,
+        user_tokens=user_tokens,
+    )
+
+
+def _prepare_direct_prompt_request(
+    *,
+    prompt_header: str,
+    context_block: str,
+    normalized_contexts: list[ChatContextSource],
+    normalized_citations: list[dict[str, str]],
+    bounded_history: list[dict[str, str]],
+    user_content: str,
+    resolved_cap: int,
+    effective_token_cap: int,
+    context_ids: list[str],
+    overflow_reason_prefix: str,
+    context_tokens: int | None = None,
+    context_window_kind: Literal["citation_catalog", "serialized_contexts"],
+    context_block_tokens: int,
+    prompt_header_tokens: int,
+    user_tokens: int,
+    citation_catalog_entry_count: int | None = None,
+    fitted_citation_entry_count: int | None = None,
+    fitted_citation_ref_ids: list[str] | None = None,
+) -> _PreparedContextChatRequest:
+    """Build the direct prompt shape or return a split-mode overflow reason."""
+    system_prompt = _compose_system_prompt(prompt_header, context_block)
     working_history = list(bounded_history)
     messages = _build_messages(system_prompt, working_history, user_content)
     while _estimate_messages_tokens(messages) > effective_token_cap and working_history:
         working_history = working_history[1:]
         messages = _build_messages(system_prompt, working_history, user_content)
     estimated_prompt_tokens = _estimate_messages_tokens(messages)
+    history_tokens = _estimate_messages_tokens(working_history)
     if estimated_prompt_tokens > effective_token_cap:
-        raise ChatPromptOverflowError(
-            "Chat context exceeds token budget after trimming history "
-            f"({estimated_prompt_tokens} > {effective_token_cap}). "
-            "Reduce selected contexts or shorten messages."
+        return _PreparedContextChatRequest(
+            prompt_header=prompt_header,
+            normalized_contexts=normalized_contexts,
+            normalized_citations=normalized_citations,
+            bounded_history=bounded_history,
+            user_content=user_content,
+            resolved_cap=resolved_cap,
+            effective_token_cap=effective_token_cap,
+            context_ids=context_ids,
+            mode="split",
+            context_tokens=context_tokens,
+            split_reason=(
+                f"{overflow_reason_prefix} ({estimated_prompt_tokens} > {effective_token_cap}). "
+                "Reduce selected contexts or shorten history/messages."
+            ),
+            context_window_kind=context_window_kind,
+            context_block_tokens=context_block_tokens,
+            prompt_header_tokens=prompt_header_tokens,
+            history_tokens=history_tokens,
+            user_tokens=user_tokens,
+            citation_catalog_entry_count=citation_catalog_entry_count,
+            fitted_citation_entry_count=fitted_citation_entry_count,
+            fitted_citation_ref_ids=fitted_citation_ref_ids,
         )
-    return _run_single_pass(
-        client=client,
-        messages=messages,
-        request_kwargs=request_kwargs,
-        retry_settings=retry_settings,
-        run_id=run_id,
-        context_count=context_count,
+    return _PreparedContextChatRequest(
+        prompt_header=prompt_header,
+        normalized_contexts=normalized_contexts,
+        normalized_citations=normalized_citations,
+        bounded_history=bounded_history,
+        user_content=user_content,
+        resolved_cap=resolved_cap,
+        effective_token_cap=effective_token_cap,
+        context_ids=context_ids,
+        mode="direct",
+        direct_system_prompt=system_prompt,
+        direct_history=working_history,
+        estimated_prompt_tokens=estimated_prompt_tokens,
+        context_tokens=context_tokens,
+        context_window_kind=context_window_kind,
+        context_block_tokens=context_block_tokens,
+        prompt_header_tokens=prompt_header_tokens,
+        history_tokens=history_tokens,
+        user_tokens=user_tokens,
+        citation_catalog_entry_count=citation_catalog_entry_count,
+        fitted_citation_entry_count=fitted_citation_entry_count,
+        fitted_citation_ref_ids=fitted_citation_ref_ids,
     )
 
 
@@ -381,8 +651,20 @@ def _run_overflow_evidence_map_reduce(
         normalized_citations=normalized_citations,
         config=config,
     )
+    cached_chunks = cache_payload.get("chunks")
+    cache_chunk_count = len(cached_chunks) if isinstance(cached_chunks, list) else 0
     evidence_items = _flatten_evidence_cache_items(cache_payload)
+    logger.info(
+        "Context chat split mode enabled run_id=%s context_count=%d evidence_items=%d "
+        "cache_chunks=%d effective_token_cap=%d",
+        run_id,
+        context_count,
+        len(evidence_items),
+        cache_chunk_count,
+        effective_token_cap,
+    )
     if not evidence_items:
+        logger.info("Context chat split mode empty-evidence fallback run_id=%s", run_id)
         return _run_overflow_empty_evidence_answer(
             prompt_header=prompt_header,
             bounded_history=bounded_history,
@@ -414,6 +696,12 @@ def _run_overflow_evidence_map_reduce(
     )
     partial_answers: list[str] = []
     total_blocks = len(evidence_blocks)
+    logger.info(
+        "Context chat split mode map phase run_id=%s map_chunks=%d map_budget=%d",
+        run_id,
+        total_blocks,
+        map_budget,
+    )
     for chunk_index, evidence_block in enumerate(evidence_blocks, start=1):
         system_prompt = _compose_evidence_map_prompt(
             prompt_header=prompt_header,
@@ -529,6 +817,15 @@ def _run_reduce_passes(
         )
         next_round: list[str] = []
         total_groups = len(grouped_blocks)
+        logger.info(
+            "Context chat split mode reduce phase run_id=%s stage=%d input_partials=%d "
+            "reduce_batches=%d reduce_budget=%d",
+            run_id,
+            stage_index,
+            len(pending_answers),
+            total_groups,
+            reduce_budget,
+        )
         for batch_index, analyses_block in enumerate(grouped_blocks, start=1):
             system_prompt = _compose_evidence_reduce_prompt(
                 prompt_header=prompt_header,
@@ -1290,6 +1587,20 @@ def _render_citation_catalog_block(citation_catalog: list[dict[str, str]]) -> st
     return "\n".join(lines)
 
 
+def _estimate_full_context_window_tokens(
+    *,
+    normalized_contexts: list[ChatContextSource],
+    normalized_citations: list[dict[str, str]],
+    context_window_kind: Literal["citation_catalog", "serialized_contexts"] | None,
+) -> int | None:
+    """Count full context-window tokens before any budget fitting or history trimming."""
+    if context_window_kind == "citation_catalog":
+        return count_tokens(_render_citation_catalog_block(normalized_citations))
+    if context_window_kind == "serialized_contexts":
+        return count_tokens(_serialize_all_contexts(normalized_contexts))
+    return None
+
+
 def _build_system_prompt_header(
     original_question: str,
     retry_missing_citation: bool,
@@ -1406,7 +1717,11 @@ def _truncate_to_tokens(value: str, max_tokens: int) -> str:
 
 __all__ = [
     "ChatContextSource",
+    "ContextChatPlan",
+    "ContextWindowEstimate",
+    "estimate_context_window",
     "resolve_chat_token_cap",
+    "plan_context_chat_request",
     "generate_context_chat_reply",
     "load_context_bundle",
     "load_final_document",

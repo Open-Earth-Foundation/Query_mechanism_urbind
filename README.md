@@ -49,6 +49,7 @@ Environment variables (`.env`):
 - `SOURCE_DB_PATH` (optional, default `data/source.db`): SQLite source DB path used when `DATABASE_URL` is not set.
 - `MARKDOWN_DIR` (optional, default `documents`): default directory scanned for markdown files.
 - `RUNS_DIR` (optional, default `output`): base directory for run artifacts.
+- `API_CHAT_JOB_WORKERS` (optional, default `1`): dedicated worker count for async split-mode chat jobs.
 - `LOG_LEVEL` (optional, default `INFO`): logging verbosity (`DEBUG`, `INFO`, `WARNING`, `ERROR`).
 - `OPENROUTER_BASE_URL` (optional, default `https://openrouter.ai/api/v1`): custom OpenRouter-compatible base URL.
 - `CHAT_PROMPT_TOKEN_CAP` (optional, default `250000`): token cap for context chat prompt assembly.
@@ -387,9 +388,10 @@ Core endpoints:
 - `GET /api/v1/runs/{run_id}/chat/sessions`
 - `POST /api/v1/runs/{run_id}/chat/sessions`
 - `GET /api/v1/runs/{run_id}/chat/sessions/{conversation_id}`
+- `GET /api/v1/runs/{run_id}/chat/sessions/{conversation_id}/jobs/{job_id}`
 - `GET /api/v1/runs/{run_id}/chat/sessions/{conversation_id}/contexts`
 - `PUT /api/v1/runs/{run_id}/chat/sessions/{conversation_id}/contexts`
-- `POST /api/v1/runs/{run_id}/chat/sessions/{conversation_id}/messages`
+- `POST /api/v1/runs/{run_id}/chat/sessions/{conversation_id}/messages` (`200` with `mode="completed"` for direct replies, `202` with `mode="queued"` for split-mode jobs)
 - `POST /api/v1/runs/{run_id}/assumptions/discover` (two-pass missing-data extraction + verification)
 - `POST /api/v1/runs/{run_id}/assumptions/apply` (apply edited assumptions and regenerate document; ephemeral by default)
 - `GET /api/v1/runs/{run_id}/assumptions/latest` (load latest assumptions artifacts for a run; only when persisted)
@@ -424,10 +426,14 @@ Context chat notes:
 
 - Run outputs are persisted under `output/<run_id>/final.md` and `output/<run_id>/context_bundle.json`.
 - Chat sessions persist under `output/<run_id>/chat/<conversation_id>.json`.
+- Split-mode chat jobs persist under `output/<run_id>/chat_jobs/<conversation_id>/<job_id>.json`.
 - Context manager supports selecting multiple completed run contexts; manual selections may exceed the direct prompt cap and rely on overflow handling when needed.
 - Chat builds a deterministic synthetic citation catalog from selected context bundles and requires assistant citations in `[ref_n]` format.
 - Chat prompt citation context contains only `ref_id`, `city_name`, `quote`, and `partial_answer` (no chunk ids and no internal source ids).
+- Chat context APIs expose both raw stored artifact totals (`total_tokens`) and prompt-context totals (`prompt_context_tokens`) so the frontend can reflect the same excerpt-based sizing model the chat planner uses.
 - Assistant messages persist citation metadata (`source_type`, `source_id`, `source_ref_id`) for deterministic click-to-quote resolution in frontend.
+- When a turn is predicted to use split/map-reduce overflow mode, the API persists the user message, returns `202 Accepted`, and the frontend polls the chat-job status endpoint until the final assistant message is attached to the session.
+- Only one split-mode chat job may be active per session at a time; sending another message or changing contexts while that job is pending returns `409`.
 - Prompt budget defaults to `250000` tokens (`CHAT_PROMPT_TOKEN_CAP`) and switches to the overflow map-reduce path described below when direct chat would exceed the effective budget.
 - `include_quote=false` on `/references` is the default for lightweight city-label rendering; quote payload is fetched on click using `include_quote=true`.
 
@@ -451,6 +457,7 @@ For every chat turn, the backend first tries the direct path:
 6. Try to answer in one direct chat completion call.
 
 If that direct prompt fits, chat stays on the fast path and no overflow artifact is created.
+If it does not fit, the API now queues a split-mode chat job and returns immediately so the frontend can poll instead of waiting on a long-running HTTP request.
 
 ### When overflow is triggered
 
@@ -710,7 +717,7 @@ python -m backend.scripts.test_db_connection
 Artifacts are written under `output/<run_id>/`:
 
 - `run.json`: machine-readable run metadata (status, timestamps, artifacts, decisions), including `inputs.analysis_mode` and `artifacts.error_log` when available.
-- `run.log`: detailed runtime logs, including per-agent `LLM_USAGE` lines and writer city-citation coverage checkpoints (`WRITER_CITATION_COVERAGE`, with `coverage_ratio` such as `33/33`).
+- `run.log`: detailed runtime logs, including per-agent `LLM_USAGE` lines, chat prompt-window diagnostics (`Context chat reply plan`, `Context chat direct request`, with fitted source ids and token-component counts), and writer city-citation coverage checkpoints (`WRITER_CITATION_COVERAGE`, with `coverage_ratio` such as `33/33`).
 - `error_log.txt`: extracted error-focused log view from `run.log` (`ERROR`, `CRITICAL`, and exhausted retry events).
 - `run_summary.txt`: human-readable consolidated report. Header includes `Started`, `Completed`, and explicit `Total runtime` in seconds, plus `LLM Usage` totals/per-agent. It also captures an input snapshot (`initial question`, `refined question`, `selected cities` planned/found, markdown dir/file/chunk/excerpt counts) and a `MARKDOWN_FAILURE_SUMMARY` aggregated from batch failures.
 - `context_bundle.json`: payload passed between agents (`sql`, `markdown`, `research_question`, `analysis_mode`, final path).

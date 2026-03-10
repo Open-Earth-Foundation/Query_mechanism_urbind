@@ -4,13 +4,15 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from datetime import datetime
+import json
 from pathlib import Path
 import logging
 import re
 import time
-from typing import Any, Literal
+from typing import Any, Callable, Literal
+from uuid import uuid4
 
-from fastapi import APIRouter, Header, HTTPException, Query, Request, status
+from fastapi import APIRouter, Header, HTTPException, Query, Request, Response, status
 from openai import APIStatusError, APITimeoutError, AuthenticationError
 
 from backend.api.models import (
@@ -19,22 +21,35 @@ from backend.api.models import (
     ChatFollowupReferenceListResponse,
     ChatContextCatalogResponse,
     ChatContextSummary,
+    ChatJobHandle,
+    ChatJobStatusResponse,
+    ChatMessageJobAcceptedResponse,
     ChatMessage,
     ChatSessionContextsResponse,
     ChatSessionListResponse,
     ChatSessionResponse,
     CreateChatSessionRequest,
+    SendChatMessageCompletedResponse,
     SendChatMessageRequest,
     SendChatMessageResponse,
     UpdateChatContextsRequest,
 )
 from backend.api.services import (
     CHAT_FOLLOWUP_CITY_UNAVAILABLE,
+    ChatJobExecutor,
+    ChatJobRecord,
+    ChatJobResult,
+    ChatJobStore,
     ChatMemoryStore,
+    ContextChatPlan,
+    ContextWindowEstimate,
     ChatSessionExistsError,
     ChatSessionNotFoundError,
+    ChatSessionPendingJobError,
     RunRecord,
     RunStore,
+    StartChatJobCommand,
+    build_chat_job_failure_message,
     SUCCESS_STATUSES,
     build_reference_item,
     followup_bundle_dir,
@@ -42,6 +57,8 @@ from backend.api.services import (
     load_reference_records,
     load_context_bundle,
     load_final_document,
+    estimate_context_window,
+    plan_context_chat_request,
     resolve_chat_token_cap,
     run_chat_followup_search,
 )
@@ -98,7 +115,12 @@ class _LoadedContext:
         """Total tokens consumed by both context artifacts."""
         return self.document_tokens + self.bundle_tokens
 
-    def to_summary(self) -> ChatContextSummary:
+    def to_summary(
+        self,
+        *,
+        prompt_context_tokens: int,
+        prompt_context_kind: Literal["citation_catalog", "serialized_contexts"] | None,
+    ) -> ChatContextSummary:
         """Convert to API summary model."""
         return ChatContextSummary(
             run_id=self.run_id,
@@ -110,6 +132,8 @@ class _LoadedContext:
             document_tokens=self.document_tokens,
             bundle_tokens=self.bundle_tokens,
             total_tokens=self.total_tokens,
+            prompt_context_tokens=prompt_context_tokens,
+            prompt_context_kind=prompt_context_kind,
         )
 
 
@@ -130,13 +154,20 @@ class _LoadedFollowupBundle:
         """Total prompt-budget cost for this follow-up bundle."""
         return self.bundle_tokens
 
-    def to_summary(self) -> ChatFollowupBundleSummary:
+    def to_summary(
+        self,
+        *,
+        prompt_context_tokens: int,
+        prompt_context_kind: Literal["citation_catalog", "serialized_contexts"] | None,
+    ) -> ChatFollowupBundleSummary:
         """Convert to API summary model."""
         return ChatFollowupBundleSummary(
             bundle_id=self.bundle_id,
             target_city=self.target_city,
             excerpt_count=self.excerpt_count,
             total_tokens=self.total_tokens,
+            prompt_context_tokens=prompt_context_tokens,
+            prompt_context_kind=prompt_context_kind,
             created_at=self.created_at,
         )
 
@@ -185,6 +216,28 @@ def _get_chat_memory_store(request: Request) -> ChatMemoryStore:
             detail="Chat memory store is not initialized.",
         )
     return store
+
+
+def _get_chat_job_store(request: Request) -> ChatJobStore:
+    """Return chat job store from app state."""
+    store = getattr(request.app.state, "chat_job_store", None)
+    if not isinstance(store, ChatJobStore):
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Chat job store is not initialized.",
+        )
+    return store
+
+
+def _get_chat_job_executor(request: Request) -> ChatJobExecutor:
+    """Return chat job executor from app state."""
+    executor = getattr(request.app.state, "chat_job_executor", None)
+    if not isinstance(executor, ChatJobExecutor):
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Chat job executor is not initialized.",
+        )
+    return executor
 
 
 def _load_request_config(request: Request) -> AppConfig:
@@ -296,10 +349,10 @@ def _load_followup_bundle(
     run_store: RunStore,
     run_id: str,
     conversation_id: str,
-    bundle_meta: dict[str, str],
+    bundle_id: str,
+    bundle_meta: dict[str, str] | None = None,
 ) -> _LoadedFollowupBundle:
     """Load one persisted follow-up bundle referenced by the session."""
-    bundle_id = bundle_meta["bundle_id"]
     bundle_dir = followup_bundle_dir(
         runs_dir=run_store.runs_dir,
         run_id=run_id,
@@ -313,8 +366,12 @@ def _load_followup_bundle(
     context_bundle = load_context_bundle(context_bundle_path)
     markdown_bundle = extract_markdown_bundle(context_bundle)
     excerpt_count = len(extract_bundle_excerpts(markdown_bundle))
-    target_city = str(context_bundle.get("target_city", "")).strip() or bundle_meta["target_city"]
-    created_at_raw = str(context_bundle.get("created_at", "")).strip() or bundle_meta["created_at"]
+    fallback_target_city = bundle_meta["target_city"] if bundle_meta is not None else bundle_id
+    fallback_created_at = (
+        bundle_meta["created_at"] if bundle_meta is not None else datetime.now().isoformat()
+    )
+    target_city = str(context_bundle.get("target_city", "")).strip() or fallback_target_city
+    created_at_raw = str(context_bundle.get("created_at", "")).strip() or fallback_created_at
     try:
         created_at = datetime.fromisoformat(created_at_raw)
     except ValueError as exc:
@@ -417,6 +474,37 @@ def _as_chat_routing(value: object) -> dict[str, Any] | None:
     }
 
 
+def _build_chat_job_status_url(run_id: str, conversation_id: str, job_id: str) -> str:
+    """Build the relative polling path for one chat job."""
+    return (
+        f"/api/v1/runs/{run_id}/chat/sessions/{conversation_id}"
+        f"/jobs/{job_id}"
+    )
+
+
+def _as_pending_job(
+    run_id: str,
+    conversation_id: str,
+    value: object,
+) -> ChatJobHandle | None:
+    """Normalize the persisted pending-job payload into the API model."""
+    if not isinstance(value, dict):
+        return None
+    job_id = str(value.get("job_id", "")).strip()
+    status_value = str(value.get("status", "")).strip()
+    job_number = value.get("job_number")
+    if not job_id or status_value not in {"queued", "running", "completed", "failed"}:
+        return None
+    if not isinstance(job_number, int) or job_number <= 0:
+        return None
+    return ChatJobHandle(
+        job_id=job_id,
+        job_number=job_number,
+        status=status_value,
+        status_url=_build_chat_job_status_url(run_id, conversation_id, job_id),
+    )
+
+
 def _as_session_response(payload: dict[str, object]) -> ChatSessionResponse:
     """Convert stored session payload into API model."""
     messages_raw = payload.get("messages")
@@ -433,7 +521,24 @@ def _as_session_response(payload: dict[str, object]) -> ChatSessionResponse:
         conversation_id=conversation_id,
         created_at=_as_datetime(payload.get("created_at")),
         updated_at=_as_datetime(payload.get("updated_at")),
+        pending_job=_as_pending_job(run_id, conversation_id, payload.get("pending_job")),
         messages=message_models,
+    )
+
+
+def _as_chat_job_status_response(record: ChatJobRecord) -> ChatJobStatusResponse:
+    """Convert one persisted chat-job record into the polling response model."""
+    return ChatJobStatusResponse(
+        run_id=record.run_id,
+        conversation_id=record.conversation_id,
+        job_id=record.job_id,
+        job_number=record.job_number,
+        status=record.status,
+        created_at=record.created_at,
+        started_at=record.started_at,
+        completed_at=record.completed_at,
+        finish_reason=record.finish_reason,
+        error=record.error,
     )
 
 
@@ -485,6 +590,14 @@ def _selected_followup_bundles(session: dict[str, object]) -> list[dict[str, str
         )
         seen.add(bundle_id)
     return bundles
+
+
+def _pending_job_payload(session: dict[str, object]) -> dict[str, object] | None:
+    """Return the raw pending-job payload when present."""
+    raw = session.get("pending_job")
+    if isinstance(raw, dict):
+        return raw
+    return None
 
 
 def _apply_followup_bundle_token_cap(
@@ -558,6 +671,7 @@ def _resolve_session_contexts(
                     run_store=run_store,
                     run_id=fallback_run_id,
                     conversation_id=conversation_id,
+                    bundle_id=bundle_meta["bundle_id"],
                     bundle_meta=bundle_meta,
                 )
             )
@@ -573,11 +687,36 @@ def _resolve_session_contexts(
     return selected_ids, included, excluded, included_followups, excluded_followup_bundle_ids
 
 
+def _load_followup_bundles_by_ids(
+    *,
+    run_store: RunStore,
+    run_id: str,
+    conversation_id: str,
+    bundle_ids: list[str],
+) -> list[_LoadedFollowupBundle]:
+    """Load persisted follow-up bundles directly from the stored job snapshot."""
+    loaded: list[_LoadedFollowupBundle] = []
+    for bundle_id in bundle_ids:
+        if not isinstance(bundle_id, str) or not bundle_id.strip():
+            continue
+        loaded.append(
+            _load_followup_bundle(
+                run_store=run_store,
+                run_id=run_id,
+                conversation_id=conversation_id,
+                bundle_id=bundle_id.strip(),
+                bundle_meta=None,
+            )
+        )
+    return loaded
+
+
 def _build_session_contexts_response(
     run_id: str,
     conversation_id: str,
     run_store: RunStore,
     session: dict[str, object],
+    config: AppConfig,
     token_cap: int,
 ) -> ChatSessionContextsResponse:
     """Build session context payload for API response."""
@@ -597,20 +736,41 @@ def _build_session_contexts_response(
     total_tokens = sum(context.total_tokens for context in included_contexts) + sum(
         bundle.total_tokens for bundle in followup_bundles
     )
+    base_question = included_contexts[0].question if included_contexts else ""
+    prompt_estimate = _estimate_prompt_context_window(
+        original_question=base_question,
+        sources=_build_chat_sources(included_contexts, followup_bundles),
+        config=config,
+        token_cap=token_cap,
+    )
     return ChatSessionContextsResponse(
         run_id=run_id,
         conversation_id=conversation_id,
         context_run_ids=selected_ids,
-        contexts=[context.to_summary() for context in included_contexts],
-        followup_bundles=[bundle.to_summary() for bundle in followup_bundles],
+        contexts=[
+            _build_context_summary(context, config=config, token_cap=token_cap)
+            for context in included_contexts
+        ],
+        followup_bundles=[
+            _build_followup_bundle_summary(
+                bundle,
+                original_question=base_question,
+                config=config,
+                token_cap=token_cap,
+            )
+            for bundle in followup_bundles
+        ],
         total_tokens=total_tokens,
+        prompt_context_tokens=prompt_estimate.context_window_tokens or 0,
+        prompt_context_kind=prompt_estimate.context_window_kind,
         token_cap=token_cap,
         excluded_context_run_ids=excluded_ids,
         excluded_followup_bundle_ids=excluded_followups,
         is_capped=(
             len(excluded_ids) > 0
             or len(excluded_followups) > 0
-            or total_tokens > token_cap
+            or prompt_estimate.mode == "split"
+            or (prompt_estimate.context_window_tokens or 0) > token_cap
         ),
     )
 
@@ -620,25 +780,9 @@ def _build_chat_sources(
     followup_bundles: list[_LoadedFollowupBundle],
 ) -> list[_LoadedChatSource]:
     """Build reply-generation context sources from runs and follow-up bundles."""
-    sources = [
-        _LoadedChatSource(
-            source_type="run",
-            source_id=context.run_id,
-            question=context.question,
-            final_document=context.final_document,
-            context_bundle=context.context_bundle,
-        )
-        for context in contexts
-    ]
+    sources = [_as_chat_source_from_context(context) for context in contexts]
     sources.extend(
-        _LoadedChatSource(
-            source_type="followup_bundle",
-            source_id=bundle.bundle_id,
-            question=str(bundle.context_bundle.get("research_question", "")).strip(),
-            final_document="",
-            context_bundle=bundle.context_bundle,
-        )
-        for bundle in followup_bundles
+        _as_chat_source_from_followup_bundle(bundle) for bundle in followup_bundles
     )
     return sources
 
@@ -696,6 +840,66 @@ def _build_llm_citation_catalog(
         }
         for entry in entries
     ]
+
+
+def _sample_ids(ids: list[str], *, limit: int = 6) -> list[str]:
+    """Return a short sample of ids for structured logging."""
+    if len(ids) <= limit:
+        return ids
+    return [*ids[:limit], "..."]
+
+
+def _summarize_citation_sources(
+    entries: list[_ChatCitationEntry],
+    *,
+    selected_ref_ids: list[str] | None = None,
+) -> list[dict[str, object]]:
+    """Group citation entries by source for prompt-window diagnostics."""
+    selected_ref_set = None if selected_ref_ids is None else set(selected_ref_ids)
+    grouped: dict[tuple[str, str], dict[str, object]] = {}
+    for entry in entries:
+        if selected_ref_set is not None and entry.ref_id not in selected_ref_set:
+            continue
+        group_key = (entry.source_type, entry.source_id)
+        bucket = grouped.get(group_key)
+        if bucket is None:
+            bucket = {
+                "source_type": entry.source_type,
+                "source_id": entry.source_id,
+                "entry_count": 0,
+                "ref_ids": [],
+                "source_ref_ids": [],
+            }
+            grouped[group_key] = bucket
+        bucket["entry_count"] = int(bucket["entry_count"]) + 1
+        cast_refs = bucket["ref_ids"]
+        cast_source_refs = bucket["source_ref_ids"]
+        if isinstance(cast_refs, list):
+            cast_refs.append(entry.ref_id)
+        if isinstance(cast_source_refs, list):
+            cast_source_refs.append(entry.source_ref_id)
+
+    summaries: list[dict[str, object]] = []
+    for key in sorted(grouped):
+        bucket = grouped[key]
+        ref_ids = [
+            ref_id for ref_id in bucket.get("ref_ids", []) if isinstance(ref_id, str) and ref_id
+        ]
+        source_ref_ids = [
+            ref_id
+            for ref_id in bucket.get("source_ref_ids", [])
+            if isinstance(ref_id, str) and ref_id
+        ]
+        summaries.append(
+            {
+                "source_type": bucket["source_type"],
+                "source_id": bucket["source_id"],
+                "entry_count": bucket["entry_count"],
+                "sample_ref_ids": _sample_ids(ref_ids),
+                "sample_source_ref_ids": _sample_ids(source_ref_ids),
+            }
+        )
+    return summaries
 
 
 def _extract_ordered_ref_ids(content: str) -> list[str]:
@@ -783,6 +987,248 @@ def _build_router_context_payload(source: _LoadedChatSource) -> dict[str, object
     }
 
 
+def _build_context_model_payloads(sources: list[_LoadedChatSource]) -> list[dict[str, object]]:
+    """Build raw source payloads consumed by the context-chat service."""
+    return [
+        {
+            "run_id": source.source_id,
+            "question": source.question,
+            "final_document": source.final_document,
+            "context_bundle": source.context_bundle,
+        }
+        for source in sources
+    ]
+
+
+def _as_chat_source_from_context(context: _LoadedContext) -> _LoadedChatSource:
+    """Convert one loaded run context into the generic chat-source shape."""
+    return _LoadedChatSource(
+        source_type="run",
+        source_id=context.run_id,
+        question=context.question,
+        final_document=context.final_document,
+        context_bundle=context.context_bundle,
+    )
+
+
+def _as_chat_source_from_followup_bundle(bundle: _LoadedFollowupBundle) -> _LoadedChatSource:
+    """Convert one loaded follow-up bundle into the generic chat-source shape."""
+    return _LoadedChatSource(
+        source_type="followup_bundle",
+        source_id=bundle.bundle_id,
+        question=str(bundle.context_bundle.get("research_question", "")).strip(),
+        final_document="",
+        context_bundle=bundle.context_bundle,
+    )
+
+
+def _estimate_prompt_context_window(
+    *,
+    original_question: str,
+    sources: list[_LoadedChatSource],
+    config: AppConfig,
+    token_cap: int,
+) -> ContextWindowEstimate:
+    """Estimate context-window tokens using the same prompt assembly path as chat."""
+    citation_entries = _build_chat_citation_entries(sources)
+    llm_citation_catalog = _build_llm_citation_catalog(citation_entries)
+    return estimate_context_window(
+        original_question=original_question,
+        contexts=_build_context_model_payloads(sources),
+        config=config,
+        token_cap=token_cap,
+        citation_catalog=llm_citation_catalog,
+    )
+
+
+def _build_context_summary(
+    context: _LoadedContext,
+    *,
+    config: AppConfig,
+    token_cap: int,
+) -> ChatContextSummary:
+    """Build one run-context summary with prompt-context token diagnostics."""
+    prompt_estimate = _estimate_prompt_context_window(
+        original_question=context.question,
+        sources=[_as_chat_source_from_context(context)],
+        config=config,
+        token_cap=token_cap,
+    )
+    return context.to_summary(
+        prompt_context_tokens=prompt_estimate.context_window_tokens or 0,
+        prompt_context_kind=prompt_estimate.context_window_kind,
+    )
+
+
+def _build_followup_bundle_summary(
+    bundle: _LoadedFollowupBundle,
+    *,
+    original_question: str,
+    config: AppConfig,
+    token_cap: int,
+) -> ChatFollowupBundleSummary:
+    """Build one follow-up bundle summary with prompt-context token diagnostics."""
+    prompt_estimate = _estimate_prompt_context_window(
+        original_question=original_question,
+        sources=[_as_chat_source_from_followup_bundle(bundle)],
+        config=config,
+        token_cap=token_cap,
+    )
+    return bundle.to_summary(
+        prompt_context_tokens=prompt_estimate.context_window_tokens or 0,
+        prompt_context_kind=prompt_estimate.context_window_kind,
+    )
+
+
+def _build_context_reply_plan(
+    *,
+    original_question: str,
+    sources: list[_LoadedChatSource],
+    history: list[dict[str, str]],
+    user_content: str,
+    config: AppConfig,
+    token_cap: int,
+) -> ContextChatPlan:
+    """Build the citation catalog and preflight strategy for one answer-from-context turn."""
+    citation_entries = _build_chat_citation_entries(sources)
+    llm_citation_catalog = _build_llm_citation_catalog(citation_entries)
+    return plan_context_chat_request(
+        original_question=original_question,
+        contexts=_build_context_model_payloads(sources),
+        history=history,
+        user_content=user_content,
+        config=config,
+        token_cap=token_cap,
+        citation_catalog=llm_citation_catalog,
+    )
+
+
+def _summarize_session_source_tokens(
+    loaded_contexts: list[_LoadedContext],
+    loaded_followup_bundles: list[_LoadedFollowupBundle],
+) -> int:
+    """Return total persisted token cost for the session-selected chat sources."""
+    return sum(context.total_tokens for context in loaded_contexts) + sum(
+        bundle.total_tokens for bundle in loaded_followup_bundles
+    )
+
+
+def _log_chat_router_preflight(
+    *,
+    run_id: str,
+    conversation_id: str,
+    selected_run_ids: list[str],
+    loaded_contexts: list[_LoadedContext],
+    loaded_followup_bundles: list[_LoadedFollowupBundle],
+    router_payload: dict[str, object],
+) -> None:
+    """Log router payload sizing before the follow-up routing model runs."""
+    router_payload_tokens = count_tokens(json.dumps(router_payload, ensure_ascii=False))
+    context_summaries: list[dict[str, object]] = []
+    raw_contexts = router_payload.get("contexts")
+    if isinstance(raw_contexts, list):
+        for item in raw_contexts:
+            if not isinstance(item, dict):
+                continue
+            rendered_tokens = count_tokens(json.dumps(item, ensure_ascii=False))
+            context_summaries.append(
+                {
+                    "source_type": item.get("source_type"),
+                    "source_id": item.get("source_id"),
+                    "excerpt_count": item.get("excerpt_count"),
+                    "payload_tokens": rendered_tokens,
+                }
+            )
+    logger.info(
+        "Context chat router preflight run_id=%s conversation_id=%s contexts=%s "
+        "followup_bundles=%s session_context_tokens=%d router_payload_tokens=%d "
+        "router_context_summaries=%s",
+        run_id,
+        conversation_id,
+        selected_run_ids,
+        [bundle.bundle_id for bundle in loaded_followup_bundles],
+        _summarize_session_source_tokens(loaded_contexts, loaded_followup_bundles),
+        router_payload_tokens,
+        context_summaries,
+    )
+
+
+def _log_context_reply_plan(
+    *,
+    run_id: str,
+    conversation_id: str,
+    selected_run_ids: list[str],
+    loaded_contexts: list[_LoadedContext],
+    loaded_followup_bundles: list[_LoadedFollowupBundle],
+    sources: list[_LoadedChatSource],
+    plan: ContextChatPlan,
+) -> None:
+    """Log the resolved direct-vs-split decision for one chat answer attempt."""
+    citation_entries = _build_chat_citation_entries(sources)
+    full_catalog_sources = _summarize_citation_sources(citation_entries)
+    prompt_window_sources = _summarize_citation_sources(
+        citation_entries,
+        selected_ref_ids=plan.fitted_citation_ref_ids,
+    )
+    logger.info(
+        "Context chat reply plan run_id=%s conversation_id=%s mode=%s contexts=%s "
+        "followup_bundles=%s session_context_tokens=%d estimated_prompt_tokens=%s "
+        "context_tokens=%s token_cap=%d effective_token_cap=%d split_reason=%s "
+        "context_window_kind=%s context_block_tokens=%s prompt_header_tokens=%s "
+        "history_tokens=%s user_tokens=%s citation_entries=%s fitted_citation_entries=%s "
+        "prompt_window_sources=%s full_catalog_sources=%s",
+        run_id,
+        conversation_id,
+        plan.mode,
+        selected_run_ids,
+        [bundle.bundle_id for bundle in loaded_followup_bundles],
+        _summarize_session_source_tokens(loaded_contexts, loaded_followup_bundles),
+        plan.estimated_prompt_tokens,
+        plan.context_tokens,
+        plan.resolved_token_cap,
+        plan.effective_token_cap,
+        plan.split_reason,
+        plan.context_window_kind,
+        plan.context_block_tokens,
+        plan.prompt_header_tokens,
+        plan.history_tokens,
+        plan.user_tokens,
+        plan.citation_catalog_entry_count,
+        plan.fitted_citation_entry_count,
+        prompt_window_sources,
+        full_catalog_sources,
+    )
+
+
+def _log_chat_request_summary(
+    *,
+    run_id: str,
+    conversation_id: str,
+    selected_run_ids: list[str],
+    loaded_contexts: list[_LoadedContext],
+    loaded_followup_bundles: list[_LoadedFollowupBundle],
+    history: list[dict[str, str]],
+    token_cap: int,
+    followup_search_enabled: bool,
+    clarification_city: str | None = None,
+) -> None:
+    """Log one concise chat-source summary before any chat LLM call starts."""
+    logger.info(
+        "Context chat request summary run_id=%s conversation_id=%s selected_runs=%s "
+        "followup_bundles=%s history_messages=%d session_context_tokens=%d token_cap=%d "
+        "followup_search_enabled=%s clarification_city=%s",
+        run_id,
+        conversation_id,
+        selected_run_ids,
+        [bundle.bundle_id for bundle in loaded_followup_bundles],
+        len(history),
+        _summarize_session_source_tokens(loaded_contexts, loaded_followup_bundles),
+        token_cap,
+        followup_search_enabled,
+        clarification_city,
+    )
+
+
 def _answer_from_context_reply(
     *,
     run_id: str,
@@ -800,15 +1246,7 @@ def _answer_from_context_reply(
     llm_citation_catalog = _build_llm_citation_catalog(citation_entries)
     chat_kwargs: dict[str, object] = {
         "original_question": original_question,
-        "contexts": [
-            {
-                "run_id": source.source_id,
-                "question": source.question,
-                "final_document": source.final_document,
-                "context_bundle": source.context_bundle,
-            }
-            for source in sources
-        ],
+        "contexts": _build_context_model_payloads(sources),
         "history": history,
         "user_content": user_content,
         "config": config,
@@ -937,6 +1375,143 @@ def _next_turn_index(history: list[dict[str, str]]) -> int:
     return user_turns + 1
 
 
+def build_chat_job_processor(
+    *,
+    run_store: RunStore,
+    chat_memory_store: ChatMemoryStore,
+    config_path: Path,
+) -> Callable[[StartChatJobCommand], ChatJobResult]:
+    """Build the split-mode chat job worker used by the background executor."""
+
+    def _processor(command: StartChatJobCommand) -> ChatJobResult:
+        chat_memory_store.get_session(command.run_id, command.conversation_id)
+        config = load_config(config_path)
+        config.enable_sql = False
+        loaded_contexts = [
+            _load_context_for_run_id(run_store, context_run_id)
+            for context_run_id in command.context_run_ids
+        ]
+        if not loaded_contexts:
+            raise ValueError("No valid run contexts remain for the queued split-mode chat job.")
+        loaded_followup_bundles = _load_followup_bundles_by_ids(
+            run_store=run_store,
+            run_id=command.run_id,
+            conversation_id=command.conversation_id,
+            bundle_ids=command.followup_bundle_ids,
+        )
+        sources = _build_chat_sources(loaded_contexts, loaded_followup_bundles)
+        assistant_text, assistant_citations, assistant_citation_warning = (
+            _answer_from_context_reply(
+                run_id=command.run_id,
+                original_question=command.original_question,
+                sources=sources,
+                history=command.history,
+                user_content=command.user_content,
+                config=config,
+                token_cap=command.token_cap,
+                api_key_override=command.api_key_override,
+            )
+        )
+        return ChatJobResult(
+            assistant_content=assistant_text,
+            assistant_citations=assistant_citations or None,
+            assistant_citation_warning=assistant_citation_warning,
+        )
+
+    return _processor
+
+
+def _queue_split_context_chat_job(
+    *,
+    run_id: str,
+    conversation_id: str,
+    payload_content: str,
+    original_question: str,
+    effective_user_content: str,
+    history: list[dict[str, str]],
+    context_run_ids: list[str],
+    followup_bundle_ids: list[str],
+    token_cap: int,
+    assistant_routing: dict[str, object] | None,
+    api_key_override: str | None,
+    chat_memory_store: ChatMemoryStore,
+    chat_job_executor: ChatJobExecutor,
+) -> SendChatMessageResponse:
+    """Persist one split-mode user turn and queue the assistant answer in the background."""
+    job_id = uuid4().hex
+    _, pending_job = chat_memory_store.create_pending_job(
+        run_id=run_id,
+        conversation_id=conversation_id,
+        job_id=job_id,
+    )
+    try:
+        _, user_message = chat_memory_store.append_user_message(
+            run_id=run_id,
+            conversation_id=conversation_id,
+            content=payload_content,
+        )
+    except Exception:
+        chat_memory_store.clear_pending_job(
+            run_id=run_id,
+            conversation_id=conversation_id,
+            job_id=job_id,
+        )
+        raise
+    command = StartChatJobCommand(
+        run_id=run_id,
+        conversation_id=conversation_id,
+        job_id=job_id,
+        job_number=int(pending_job["job_number"]),
+        original_question=original_question,
+        user_content=effective_user_content,
+        history=history,
+        context_run_ids=context_run_ids,
+        followup_bundle_ids=followup_bundle_ids,
+        token_cap=token_cap,
+        assistant_routing=assistant_routing,
+        api_key_override=api_key_override,
+    )
+    try:
+        chat_job_executor.submit(command)
+    except Exception:  # noqa: BLE001
+        logger.exception(
+            "Context chat split job submission failed run_id=%s conversation_id=%s job_id=%s job_number=%s",
+            run_id,
+            conversation_id,
+            job_id,
+            pending_job["job_number"],
+        )
+        chat_memory_store.clear_pending_job(
+            run_id=run_id,
+            conversation_id=conversation_id,
+            job_id=job_id,
+        )
+        _, assistant_message = chat_memory_store.append_assistant_message(
+            run_id=run_id,
+            conversation_id=conversation_id,
+            content=build_chat_job_failure_message(),
+        )
+        return SendChatMessageCompletedResponse(
+            mode="completed",
+            run_id=run_id,
+            conversation_id=conversation_id,
+            user_message=_as_message(user_message),
+            assistant_message=_as_message(assistant_message),
+        )
+
+    pending_handle = _as_pending_job(run_id, conversation_id, pending_job)
+    if pending_handle is None:
+        raise ValueError("Queued split-mode chat job is missing pending-job metadata.")
+    return ChatMessageJobAcceptedResponse(
+        mode="queued",
+        run_id=run_id,
+        conversation_id=conversation_id,
+        user_message=_as_message(user_message),
+        job=pending_handle,
+        routing=_as_chat_routing(assistant_routing),
+    )
+
+
 @router.get(
     "/chat/contexts",
     response_model=ChatContextCatalogResponse,
@@ -947,10 +1522,14 @@ def list_chat_contexts(request: Request) -> ChatContextCatalogResponse:
     run_store = _get_run_store(request)
     contexts = _available_contexts(run_store)
     config = _load_request_config(request)
+    token_cap = resolve_chat_token_cap(config)
     return ChatContextCatalogResponse(
-        contexts=[context.to_summary() for context in contexts],
+        contexts=[
+            _build_context_summary(context, config=config, token_cap=token_cap)
+            for context in contexts
+        ],
         total=len(contexts),
-        token_cap=resolve_chat_token_cap(config),
+        token_cap=token_cap,
     )
 
 
@@ -1015,6 +1594,32 @@ def get_chat_session(
 
 
 @router.get(
+    "/runs/{run_id}/chat/sessions/{conversation_id}/jobs/{job_id}",
+    response_model=ChatJobStatusResponse,
+    name="get_chat_job_status",
+)
+def get_chat_job_status(
+    run_id: str,
+    conversation_id: str,
+    job_id: str,
+    request: Request,
+) -> ChatJobStatusResponse:
+    """Return persisted status for one queued split-mode chat job."""
+    _require_chat_ready_run(run_id, request)
+    store = _get_chat_job_store(request)
+    record = store.get_job(run_id, conversation_id, job_id)
+    if record is None:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=(
+                f"Chat job `{job_id}` was not found for conversation "
+                f"`{conversation_id}` in run `{run_id}`."
+            ),
+        )
+    return _as_chat_job_status_response(record)
+
+
+@router.get(
     "/runs/{run_id}/chat/sessions/{conversation_id}/contexts",
     response_model=ChatSessionContextsResponse,
     name="get_chat_session_contexts",
@@ -1037,6 +1642,7 @@ def get_chat_session_contexts(
         conversation_id,
         run_store,
         session,
+        config,
         resolve_chat_token_cap(config),
     )
 
@@ -1137,9 +1743,18 @@ def update_chat_session_contexts(
     run_store, _ = _require_chat_ready_run(run_id, request)
     store = _get_chat_memory_store(request)
     try:
-        _ = store.get_session(run_id, conversation_id)
+        session = store.get_session(run_id, conversation_id)
     except ChatSessionNotFoundError as exc:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=str(exc)) from exc
+    pending_job = _as_pending_job(run_id, conversation_id, _pending_job_payload(session))
+    if pending_job is not None:
+        raise HTTPException(
+            status_code=status.HTTP_409_CONFLICT,
+            detail=(
+                "This chat session already has a pending long-context answer. "
+                "Wait for it to finish before changing contexts."
+            ),
+        )
 
     config = _load_request_config(request)
     token_cap = resolve_chat_token_cap(config)
@@ -1179,7 +1794,14 @@ def update_chat_session_contexts(
     except ValueError as exc:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(exc)) from exc
 
-    return _build_session_contexts_response(run_id, conversation_id, run_store, session, token_cap)
+    return _build_session_contexts_response(
+        run_id,
+        conversation_id,
+        run_store,
+        session,
+        config,
+        token_cap,
+    )
 
 
 @router.post(
@@ -1191,6 +1813,7 @@ def send_chat_message(
     run_id: str,
     conversation_id: str,
     payload: SendChatMessageRequest,
+    response: Response,
     request: Request,
     x_openrouter_api_key: str | None = Header(
         default=None, alias="X-OpenRouter-Api-Key"
@@ -1203,10 +1826,20 @@ def send_chat_message(
         session = store.get_session(run_id, conversation_id)
     except ChatSessionNotFoundError as exc:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=str(exc)) from exc
+    pending_job = _as_pending_job(run_id, conversation_id, _pending_job_payload(session))
+    if pending_job is not None:
+        raise HTTPException(
+            status_code=status.HTTP_409_CONFLICT,
+            detail=(
+                "This chat session already has a pending long-context answer. "
+                "Wait for it to finish before sending another message."
+            ),
+        )
 
     config = _load_request_config(request)
     config.enable_sql = False
     token_cap = resolve_chat_token_cap(config)
+    chat_job_executor = _get_chat_job_executor(request)
 
     (
         selected_run_ids,
@@ -1274,12 +1907,70 @@ def send_chat_message(
     assistant_routing: dict[str, object] | None = None
     assistant_text = ""
     try:
+        _log_chat_request_summary(
+            run_id=run_id,
+            conversation_id=conversation_id,
+            selected_run_ids=selected_run_ids,
+            loaded_contexts=loaded_contexts,
+            loaded_followup_bundles=loaded_followup_bundles,
+            history=history,
+            token_cap=token_cap,
+            followup_search_enabled=config.chat.followup_search_enabled,
+            clarification_city=clarification_city or None,
+        )
         effective_api_key = (
             api_key_override
             if api_key_override is not None
             else get_openrouter_api_key()
         )
         if not config.chat.followup_search_enabled:
+            plan = _build_context_reply_plan(
+                original_question=run_record.question,
+                sources=sources,
+                history=history,
+                user_content=effective_user_content,
+                config=config,
+                token_cap=token_cap,
+            )
+            _log_context_reply_plan(
+                run_id=run_id,
+                conversation_id=conversation_id,
+                selected_run_ids=selected_run_ids,
+                loaded_contexts=loaded_contexts,
+                loaded_followup_bundles=loaded_followup_bundles,
+                sources=sources,
+                plan=plan,
+            )
+            if getattr(plan, "mode", "direct") == "split":
+                logger.info(
+                    "Context chat split job accepted run_id=%s conversation_id=%s contexts=%s "
+                    "followup_bundles=%s estimated_prompt_tokens=%s context_tokens=%s split_reason=%s",
+                    run_id,
+                    conversation_id,
+                    selected_run_ids,
+                    [bundle.bundle_id for bundle in loaded_followup_bundles],
+                    getattr(plan, "estimated_prompt_tokens", None),
+                    getattr(plan, "context_tokens", None),
+                    getattr(plan, "split_reason", None),
+                )
+                queued_response = _queue_split_context_chat_job(
+                    run_id=run_id,
+                    conversation_id=conversation_id,
+                    payload_content=payload.content,
+                    original_question=run_record.question,
+                    effective_user_content=effective_user_content,
+                    history=history,
+                    context_run_ids=selected_run_ids,
+                    followup_bundle_ids=[bundle.bundle_id for bundle in loaded_followup_bundles],
+                    token_cap=token_cap,
+                    assistant_routing=assistant_routing,
+                    api_key_override=api_key_override,
+                    chat_memory_store=store,
+                    chat_job_executor=chat_job_executor,
+                )
+                if queued_response.mode == "queued":
+                    response.status_code = status.HTTP_202_ACCEPTED
+                return queued_response
             assistant_text, assistant_citations, assistant_citation_warning = (
                 _answer_from_context_reply(
                     run_id=run_id,
@@ -1301,16 +1992,25 @@ def send_chat_message(
                     rewritten_question=effective_user_content,
                 )
             else:
+                router_payload = _build_router_payload(
+                    user_message=payload.content,
+                    original_question=run_record.question,
+                    history=history,
+                    selected_run_ids=selected_run_ids,
+                    followup_bundles=loaded_followup_bundles,
+                    sources=sources,
+                )
+                _log_chat_router_preflight(
+                    run_id=run_id,
+                    conversation_id=conversation_id,
+                    selected_run_ids=selected_run_ids,
+                    loaded_contexts=loaded_contexts,
+                    loaded_followup_bundles=loaded_followup_bundles,
+                    router_payload=router_payload,
+                )
                 try:
                     routing_decision = route_chat_followup(
-                        payload=_build_router_payload(
-                            user_message=payload.content,
-                            original_question=run_record.question,
-                            history=history,
-                            selected_run_ids=selected_run_ids,
-                            followup_bundles=loaded_followup_bundles,
-                            sources=sources,
-                        ),
+                        payload=router_payload,
                         config=config,
                         api_key=effective_api_key,
                     )
@@ -1330,6 +2030,53 @@ def send_chat_message(
                         reason=routing_decision.reason,
                         target_city=routing_decision.target_city,
                     )
+                plan = _build_context_reply_plan(
+                    original_question=run_record.question,
+                    sources=sources,
+                    history=history,
+                    user_content=effective_user_content,
+                    config=config,
+                    token_cap=token_cap,
+                )
+                _log_context_reply_plan(
+                    run_id=run_id,
+                    conversation_id=conversation_id,
+                    selected_run_ids=selected_run_ids,
+                    loaded_contexts=loaded_contexts,
+                    loaded_followup_bundles=loaded_followup_bundles,
+                    sources=sources,
+                    plan=plan,
+                )
+                if getattr(plan, "mode", "direct") == "split":
+                    logger.info(
+                        "Context chat split job accepted run_id=%s conversation_id=%s contexts=%s "
+                        "followup_bundles=%s estimated_prompt_tokens=%s context_tokens=%s split_reason=%s",
+                        run_id,
+                        conversation_id,
+                        selected_run_ids,
+                        [bundle.bundle_id for bundle in loaded_followup_bundles],
+                        getattr(plan, "estimated_prompt_tokens", None),
+                        getattr(plan, "context_tokens", None),
+                        getattr(plan, "split_reason", None),
+                    )
+                    queued_response = _queue_split_context_chat_job(
+                        run_id=run_id,
+                        conversation_id=conversation_id,
+                        payload_content=payload.content,
+                        original_question=run_record.question,
+                        effective_user_content=effective_user_content,
+                        history=history,
+                        context_run_ids=selected_run_ids,
+                        followup_bundle_ids=[bundle.bundle_id for bundle in loaded_followup_bundles],
+                        token_cap=token_cap,
+                        assistant_routing=assistant_routing,
+                        api_key_override=api_key_override,
+                        chat_memory_store=store,
+                        chat_job_executor=chat_job_executor,
+                    )
+                    if queued_response.mode == "queued":
+                        response.status_code = status.HTTP_202_ACCEPTED
+                    return queued_response
                 assistant_text, assistant_citations, assistant_citation_warning = (
                     _answer_from_context_reply(
                         run_id=run_id,
@@ -1424,6 +2171,55 @@ def send_chat_message(
                                 token_cap=token_cap,
                             )
                         sources = _build_chat_sources(loaded_contexts, loaded_followup_bundles)
+                        plan = _build_context_reply_plan(
+                            original_question=run_record.question,
+                            sources=sources,
+                            history=history,
+                            user_content=effective_user_content,
+                            config=config,
+                            token_cap=token_cap,
+                        )
+                        _log_context_reply_plan(
+                            run_id=run_id,
+                            conversation_id=conversation_id,
+                            selected_run_ids=selected_run_ids,
+                            loaded_contexts=loaded_contexts,
+                            loaded_followup_bundles=loaded_followup_bundles,
+                            sources=sources,
+                            plan=plan,
+                        )
+                        if getattr(plan, "mode", "direct") == "split":
+                            logger.info(
+                                "Context chat split job accepted run_id=%s conversation_id=%s contexts=%s "
+                                "followup_bundles=%s estimated_prompt_tokens=%s context_tokens=%s split_reason=%s",
+                                run_id,
+                                conversation_id,
+                                selected_run_ids,
+                                [bundle.bundle_id for bundle in loaded_followup_bundles],
+                                getattr(plan, "estimated_prompt_tokens", None),
+                                getattr(plan, "context_tokens", None),
+                                getattr(plan, "split_reason", None),
+                            )
+                            queued_response = _queue_split_context_chat_job(
+                                run_id=run_id,
+                                conversation_id=conversation_id,
+                                payload_content=payload.content,
+                                original_question=run_record.question,
+                                effective_user_content=effective_user_content,
+                                history=history,
+                                context_run_ids=selected_run_ids,
+                                followup_bundle_ids=[
+                                    bundle.bundle_id for bundle in loaded_followup_bundles
+                                ],
+                                token_cap=token_cap,
+                                assistant_routing=assistant_routing,
+                                api_key_override=api_key_override,
+                                chat_memory_store=store,
+                                chat_job_executor=chat_job_executor,
+                            )
+                            if queued_response.mode == "queued":
+                                response.status_code = status.HTTP_202_ACCEPTED
+                            return queued_response
                         assistant_text, assistant_citations, assistant_citation_warning = (
                             _answer_from_context_reply(
                                 run_id=run_id,
@@ -1485,22 +2281,28 @@ def send_chat_message(
                 "or configure server OPENROUTER_API_KEY."
             ),
         ) from exc
-    _, user_message, assistant_message = store.append_turn(
-        run_id=run_id,
-        conversation_id=conversation_id,
-        user_content=payload.content,
-        assistant_content=assistant_text,
-        assistant_citations=assistant_citations or None,
-        assistant_citation_warning=assistant_citation_warning,
-        assistant_routing=assistant_routing,
-    )
+    except ChatSessionPendingJobError as exc:
+        raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail=str(exc)) from exc
+    try:
+        _, user_message, assistant_message = store.append_turn(
+            run_id=run_id,
+            conversation_id=conversation_id,
+            user_content=payload.content,
+            assistant_content=assistant_text,
+            assistant_citations=assistant_citations or None,
+            assistant_citation_warning=assistant_citation_warning,
+            assistant_routing=assistant_routing,
+        )
+    except ChatSessionPendingJobError as exc:
+        raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail=str(exc)) from exc
 
     if excluded_ids:
         # Persist selected ids without unavailable ids to keep the session healthy.
         filtered_ids = [context.run_id for context in loaded_contexts]
         store.update_context_runs(run_id, conversation_id, filtered_ids or [run_id])
 
-    return SendChatMessageResponse(
+    return SendChatMessageCompletedResponse(
+        mode="completed",
         run_id=run_id,
         conversation_id=conversation_id,
         user_message=_as_message(user_message),
@@ -1508,4 +2310,4 @@ def send_chat_message(
     )
 
 
-__all__ = ["router"]
+__all__ = ["build_chat_job_processor", "router"]

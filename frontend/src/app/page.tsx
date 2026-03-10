@@ -816,6 +816,7 @@ export default function Home() {
                 enabled={documentReady}
                 onClose={() => setChatOpen(false)}
                 showContextManager={devFeatures.showContextManager}
+                showDevDiagnostics={frontendMode === "dev"}
                 showTokenMetrics={devFeatures.showChatTokenMetrics}
               />
             ) : (

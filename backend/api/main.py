@@ -18,13 +18,21 @@ from backend.api.routes import (
     cities_router,
     runs_router,
 )
-from backend.api.services import ChatMemoryStore, RunExecutor, RunStore
+from backend.api.routes.chat import build_chat_job_processor
+from backend.api.services import (
+    ChatJobExecutor,
+    ChatJobStore,
+    ChatMemoryStore,
+    RunExecutor,
+    RunStore,
+)
 from backend.utils.config import load_config
 from backend.utils.logging_config import setup_logger
 
 logger = logging.getLogger(__name__)
 # this is responsible for how many runs we can run per instance
 DEFAULT_API_RUN_WORKERS = 2
+DEFAULT_API_CHAT_JOB_WORKERS = 1
 
 
 def _resolve_runs_dir(runs_dir: Path | None) -> Path:
@@ -38,6 +46,19 @@ def _resolve_worker_count(max_workers: int | None) -> int:
     """Resolve worker count from explicit argument or hardcoded default."""
     if max_workers is None:
         return DEFAULT_API_RUN_WORKERS
+    return max(1, max_workers)
+
+
+def _resolve_chat_job_worker_count(max_workers: int | None) -> int:
+    """Resolve dedicated split-mode chat job workers."""
+    env_value = os.getenv("API_CHAT_JOB_WORKERS")
+    if env_value:
+        try:
+            return max(1, int(env_value))
+        except ValueError:
+            logger.warning("Invalid API_CHAT_JOB_WORKERS=%s; falling back to default.", env_value)
+    if max_workers is None:
+        return DEFAULT_API_CHAT_JOB_WORKERS
     return max(1, max_workers)
 
 
@@ -77,13 +98,15 @@ def create_app(
     setup_logger()
     resolved_runs_dir = _resolve_runs_dir(runs_dir)
     resolved_workers = _resolve_worker_count(max_workers)
+    resolved_chat_job_workers = _resolve_chat_job_worker_count(None)
     resolved_markdown_dir = _resolve_markdown_dir(markdown_dir)
     resolved_config_path = _resolve_config_path(config_path)
     resolved_city_groups_path = _resolve_city_groups_path(city_groups_path)
     logger.info(
-        "Initializing API app runs_dir=%s workers=%d markdown_dir=%s config_path=%s city_groups_path=%s",
+        "Initializing API app runs_dir=%s workers=%d chat_job_workers=%d markdown_dir=%s config_path=%s city_groups_path=%s",
         resolved_runs_dir,
         resolved_workers,
+        resolved_chat_job_workers,
         resolved_markdown_dir,
         resolved_config_path,
         resolved_city_groups_path,
@@ -91,7 +114,7 @@ def create_app(
 
     @asynccontextmanager
     async def lifespan(app: FastAPI) -> AsyncIterator[None]:
-        logger.info("API startup: initializing run store and worker pool")
+        logger.info("API startup: initializing run store and worker pools")
         if resolved_config_path.exists():
             try:
                 startup_config = load_config(resolved_config_path)
@@ -105,16 +128,31 @@ def create_app(
                 logger.warning("API startup: could not load config for mode log: %s", e)
         run_store = RunStore(resolved_runs_dir)
         chat_memory_store = ChatMemoryStore(resolved_runs_dir)
+        chat_job_store = ChatJobStore(resolved_runs_dir)
         run_executor = RunExecutor(run_store=run_store, max_workers=resolved_workers)
+        chat_job_executor = ChatJobExecutor(
+            job_store=chat_job_store,
+            chat_memory_store=chat_memory_store,
+            processor=build_chat_job_processor(
+                run_store=run_store,
+                chat_memory_store=chat_memory_store,
+                config_path=resolved_config_path,
+            ),
+            max_workers=resolved_chat_job_workers,
+        )
+        chat_job_executor.reconcile_interrupted_jobs()
         app.state.run_store = run_store
         app.state.chat_memory_store = chat_memory_store
+        app.state.chat_job_store = chat_job_store
         app.state.run_executor = run_executor
+        app.state.chat_job_executor = chat_job_executor
         app.state.markdown_dir = resolved_markdown_dir
         app.state.config_path = resolved_config_path
         app.state.city_groups_path = resolved_city_groups_path
         logger.info("API startup complete")
         yield
-        logger.info("API shutdown: stopping worker pool")
+        logger.info("API shutdown: stopping worker pools")
+        chat_job_executor.shutdown(wait=True)
         run_executor.shutdown(wait=True)
         logger.info("API shutdown complete")
 

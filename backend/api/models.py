@@ -195,6 +195,7 @@ class CityGroupListResponse(BaseModel):
 
 
 ChatRole = Literal["user", "assistant"]
+ChatJobStatus = Literal["queued", "running", "completed", "failed"]
 ChatFollowupAction = Literal[
     "answer_from_context",
     "search_single_city",
@@ -243,6 +244,15 @@ class CreateChatSessionRequest(BaseModel):
     conversation_id: str | None = None
 
 
+class ChatJobHandle(BaseModel):
+    """Minimal chat-job handle returned for polling and session resume."""
+
+    job_id: str
+    job_number: int
+    status: ChatJobStatus
+    status_url: str
+
+
 class ChatSessionResponse(BaseModel):
     """Response body with chat session metadata and transcript."""
 
@@ -250,6 +260,7 @@ class ChatSessionResponse(BaseModel):
     conversation_id: str
     created_at: datetime
     updated_at: datetime
+    pending_job: ChatJobHandle | None = None
     messages: list[ChatMessage]
 
 
@@ -273,6 +284,8 @@ class ChatContextSummary(BaseModel):
     document_tokens: int
     bundle_tokens: int
     total_tokens: int
+    prompt_context_tokens: int
+    prompt_context_kind: Literal["citation_catalog", "serialized_contexts"] | None = None
 
 
 class ChatFollowupBundleSummary(BaseModel):
@@ -282,6 +295,8 @@ class ChatFollowupBundleSummary(BaseModel):
     target_city: str
     excerpt_count: int
     total_tokens: int
+    prompt_context_tokens: int
+    prompt_context_kind: Literal["citation_catalog", "serialized_contexts"] | None = None
     created_at: datetime
 
 
@@ -310,6 +325,8 @@ class ChatSessionContextsResponse(BaseModel):
     contexts: list[ChatContextSummary]
     followup_bundles: list[ChatFollowupBundleSummary] = Field(default_factory=list)
     total_tokens: int
+    prompt_context_tokens: int
+    prompt_context_kind: Literal["citation_catalog", "serialized_contexts"] | None = None
     token_cap: int
     excluded_context_run_ids: list[str]
     excluded_followup_bundle_ids: list[str] = Field(default_factory=list)
@@ -326,13 +343,43 @@ class SendChatMessageRequest(BaseModel):
     clarification_question: str | None = None
 
 
-class SendChatMessageResponse(BaseModel):
-    """Response body after assistant generates a reply."""
+class SendChatMessageCompletedResponse(BaseModel):
+    """Response body after assistant generates a synchronous reply."""
 
+    mode: Literal["completed"] = "completed"
     run_id: str
     conversation_id: str
     user_message: ChatMessage
     assistant_message: ChatMessage
+
+
+class ChatMessageJobAcceptedResponse(BaseModel):
+    """Response body after accepting one queued split-mode chat job."""
+
+    mode: Literal["queued"] = "queued"
+    run_id: str
+    conversation_id: str
+    user_message: ChatMessage
+    job: ChatJobHandle
+    routing: ChatRoutingMetadata | None = None
+
+
+SendChatMessageResponse = SendChatMessageCompletedResponse | ChatMessageJobAcceptedResponse
+
+
+class ChatJobStatusResponse(BaseModel):
+    """Response body for chat-job polling."""
+
+    run_id: str
+    conversation_id: str
+    job_id: str
+    job_number: int
+    status: ChatJobStatus
+    created_at: datetime
+    started_at: datetime | None = None
+    completed_at: datetime | None = None
+    finish_reason: str | None = None
+    error: RunError | None = None
 
 
 class ChatFollowupReferenceListResponse(BaseModel):
@@ -368,12 +415,14 @@ __all__ = [
     "CityGroup",
     "CityGroupListResponse",
     "ChatRole",
+    "ChatJobStatus",
     "ChatFollowupAction",
     "ChatCitationSourceType",
     "ChatCitation",
     "ChatRoutingMetadata",
     "ChatMessage",
     "CreateChatSessionRequest",
+    "ChatJobHandle",
     "ChatSessionResponse",
     "ChatSessionListResponse",
     "ChatContextSummary",
@@ -382,6 +431,9 @@ __all__ = [
     "UpdateChatContextsRequest",
     "ChatSessionContextsResponse",
     "SendChatMessageRequest",
+    "SendChatMessageCompletedResponse",
+    "ChatMessageJobAcceptedResponse",
     "SendChatMessageResponse",
+    "ChatJobStatusResponse",
     "ChatFollowupReferenceListResponse",
 ]

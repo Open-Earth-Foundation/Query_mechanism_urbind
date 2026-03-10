@@ -11,10 +11,14 @@ import {
 import {
   fetchCities,
   ChatContextSummary,
+  ChatJobHandle,
   ChatMessage,
+  ChatRoutingMetadata,
+  ChatSessionResponse,
   ChatSessionContextsResponse,
   createChatSession,
   fetchChatContextCatalog,
+  fetchChatJobStatus,
   fetchChatSession,
   fetchChatSessionContexts,
   listChatSessions,
@@ -36,23 +40,73 @@ import {
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { formatCityLabel } from "@/lib/utils";
+import { cn, formatCityLabel } from "@/lib/utils";
 
 interface ContextChatWorkspaceProps {
   runId: string;
   enabled: boolean;
   onClose: () => void;
   showContextManager: boolean;
+  showDevDiagnostics: boolean;
   showTokenMetrics: boolean;
 }
 
 const DEFAULT_CONTEXT_TOKEN_CAP = 250000;
+const CHAT_JOB_POLL_INTERVAL_MS = 2000;
+const CHAT_SEND_RECOVERY_POLL_INTERVAL_MS = 2000;
+const CHAT_SEND_RECOVERY_TIMEOUT_MS = 180000;
+
+function isRequestTimeoutError(error: unknown): boolean {
+  return error instanceof Error && /^Request timeout after \d+s\.$/.test(error.message);
+}
+
+function formatAdditionalResearchLabel(city: string | null | undefined): string {
+  const cityLabel = formatCityLabel(city ?? "");
+  return cityLabel ? `Additional ${cityLabel} research` : "Additional city research";
+}
+
+function getPromptContextTokens(value: {
+  total_tokens: number;
+  prompt_context_tokens?: number | null;
+}): number {
+  return typeof value.prompt_context_tokens === "number"
+    ? value.prompt_context_tokens
+    : value.total_tokens;
+}
+
+function describeRouting(
+  routing: ChatRoutingMetadata,
+): { label: string; className: string } {
+  switch (routing.action) {
+    case "search_single_city":
+      return {
+        label: formatAdditionalResearchLabel(routing.target_city),
+        className: "border-sky-200 bg-sky-50 text-sky-900",
+      };
+    case "needs_city_clarification":
+      return {
+        label: "Choose one city",
+        className: "border-amber-200 bg-amber-50 text-amber-900",
+      };
+    case "out_of_scope":
+      return {
+        label: "Outside current scope",
+        className: "border-slate-300 bg-slate-100 text-slate-800",
+      };
+    default:
+      return {
+        label: "Answered from saved context",
+        className: "border-teal-200 bg-teal-50 text-teal-900",
+      };
+  }
+}
 
 export function ContextChatWorkspace({
   runId,
   enabled,
   onClose,
   showContextManager,
+  showDevDiagnostics,
   showTokenMetrics,
 }: ContextChatWorkspaceProps) {
   const messageScrollAreaRef = useRef<HTMLDivElement | null>(null);
@@ -62,6 +116,8 @@ export function ContextChatWorkspace({
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [sessionContexts, setSessionContexts] =
     useState<ChatSessionContextsResponse | null>(null);
+  const [pendingJob, setPendingJob] = useState<ChatJobHandle | null>(null);
+  const [pendingJobRouting, setPendingJobRouting] = useState<ChatRoutingMetadata | null>(null);
 
   const [inputValue, setInputValue] = useState("");
   const [pendingPrompt, setPendingPrompt] = useState<string | null>(null);
@@ -71,8 +127,11 @@ export function ContextChatWorkspace({
   );
   const [isBootstrapping, setIsBootstrapping] = useState(false);
   const [isSending, setIsSending] = useState(false);
+  const [isRecoveringSend, setIsRecoveringSend] = useState(false);
   const [isLoadingContexts, setIsLoadingContexts] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const [recoveryMessage, setRecoveryMessage] = useState<string | null>(null);
+  const [recoveryPollAttempt, setRecoveryPollAttempt] = useState(0);
 
   const [isContextManagerOpen, setIsContextManagerOpen] = useState(false);
   const [isLoadingCatalog, setIsLoadingCatalog] = useState(false);
@@ -93,11 +152,15 @@ export function ContextChatWorkspace({
     setConversationId(null);
     setMessages([]);
     setSessionContexts(null);
+    setPendingJob(null);
+    setPendingJobRouting(null);
     setInputValue("");
     setPendingPrompt(null);
     setPendingClarificationCity(null);
     setPendingClarificationQuestion(null);
     setErrorMessage(null);
+    setRecoveryMessage(null);
+    setRecoveryPollAttempt(0);
     setContextCatalog([]);
     setManagerSelection([]);
     setCatalogError(null);
@@ -107,9 +170,16 @@ export function ContextChatWorkspace({
     setSelectedClarificationCity(null);
     setIsLoadingClarificationCities(false);
     setClarificationError(null);
+    setIsRecoveringSend(false);
     handledClarificationKeyRef.current = null;
     sendLockRef.current = false;
   }, [runId]);
+
+  function applySessionState(session: ChatSessionResponse): void {
+    setMessages(session.messages);
+    setPendingJob(session.pending_job ?? null);
+    setPendingJobRouting(null);
+  }
 
   async function loadSessionContexts(
     activeRunId: string,
@@ -125,6 +195,50 @@ export function ContextChatWorkspace({
       );
     } finally {
       setIsLoadingContexts(false);
+    }
+  }
+
+  async function recoverTimedOutSend(options: {
+    activeRunId: string;
+    sessionId: string;
+    baselineMessageCount: number;
+  }): Promise<boolean> {
+    setIsRecoveringSend(true);
+    setRecoveryMessage("Polling backend session state...");
+    setRecoveryPollAttempt(0);
+    const deadline = Date.now() + CHAT_SEND_RECOVERY_TIMEOUT_MS;
+    let attempt = 0;
+    try {
+      while (Date.now() < deadline) {
+        attempt += 1;
+        setRecoveryPollAttempt(attempt);
+        try {
+          const sessionPayload = await fetchChatSession(options.activeRunId, options.sessionId);
+          if (
+            sessionPayload.pending_job ||
+            sessionPayload.messages.length > options.baselineMessageCount
+          ) {
+            const contextsPayload = await fetchChatSessionContexts(
+              options.activeRunId,
+              options.sessionId,
+            );
+            applySessionState(sessionPayload);
+            setSessionContexts(contextsPayload);
+            setErrorMessage(null);
+            return true;
+          }
+        } catch {
+          // Keep polling while the original request is still settling on the backend.
+        }
+        await new Promise<void>((resolve) => {
+          window.setTimeout(resolve, CHAT_SEND_RECOVERY_POLL_INTERVAL_MS);
+        });
+      }
+      return false;
+    } finally {
+      setIsRecoveringSend(false);
+      setRecoveryMessage(null);
+      setRecoveryPollAttempt(0);
     }
   }
 
@@ -167,7 +281,7 @@ export function ContextChatWorkspace({
             );
             const mostRecent = sessionsWithMetadata[0];
             sessionId = mostRecent.conversation_id;
-            setMessages(mostRecent.messages);
+            applySessionState(mostRecent);
           }
           // If all sessions failed to load, fall through to create a new one
         }
@@ -177,7 +291,7 @@ export function ContextChatWorkspace({
             return;
           }
           sessionId = created.conversation_id;
-          setMessages(created.messages);
+          applySessionState(created);
         }
         setConversationId(sessionId);
         if (sessionId) {
@@ -228,7 +342,7 @@ export function ContextChatWorkspace({
       scrollMessagesToBottom();
     });
     return () => window.cancelAnimationFrame(handle);
-  }, [scrollMessagesToBottom, sortedMessages.length, isSending, pendingPrompt]);
+  }, [scrollMessagesToBottom, sortedMessages.length, isSending, pendingJob, pendingPrompt]);
 
   const contextById = useMemo(() => {
     const mapping = new Map<string, ChatContextSummary>();
@@ -237,13 +351,14 @@ export function ContextChatWorkspace({
     });
     return mapping;
   }, [contextCatalog]);
+  const pendingJobId = pendingJob?.job_id ?? null;
 
   const managerTokenCap = sessionContexts?.token_cap ?? DEFAULT_CONTEXT_TOKEN_CAP;
   const selectedContextTokens = useMemo(
     () =>
       managerSelection.reduce((sum, runIdValue) => {
         const context = contextById.get(runIdValue);
-        return sum + (context?.total_tokens ?? 0);
+        return sum + (context ? getPromptContextTokens(context) : 0);
       }, 0),
     [contextById, managerSelection],
   );
@@ -302,6 +417,63 @@ export function ContextChatWorkspace({
     };
   }, [clarificationCities.length, isCityClarificationOpen]);
 
+  useEffect(() => {
+    if (!runId || !conversationId || !pendingJobId) {
+      return;
+    }
+    let cancelled = false;
+    let timeoutHandle: number | null = null;
+
+    const poll = async (): Promise<void> => {
+      try {
+        const jobStatus = await fetchChatJobStatus(runId, conversationId, pendingJobId);
+        if (cancelled) {
+          return;
+        }
+        setPendingJob((current) => {
+          if (!current || current.job_id !== jobStatus.job_id) {
+            return current;
+          }
+          return {
+            ...current,
+            status: jobStatus.status,
+          };
+        });
+        if (jobStatus.status === "completed" || jobStatus.status === "failed") {
+          const [sessionPayload, contextsPayload] = await Promise.all([
+            fetchChatSession(runId, conversationId),
+            fetchChatSessionContexts(runId, conversationId),
+          ]);
+          if (cancelled) {
+            return;
+          }
+          applySessionState(sessionPayload);
+          setSessionContexts(contextsPayload);
+          setErrorMessage(null);
+          return;
+        }
+      } catch (error) {
+        if (cancelled) {
+          return;
+        }
+        setErrorMessage(
+          error instanceof Error ? error.message : "Failed to poll long answer.",
+        );
+      }
+      timeoutHandle = window.setTimeout(() => {
+        void poll();
+      }, CHAT_JOB_POLL_INTERVAL_MS);
+    };
+
+    void poll();
+    return () => {
+      cancelled = true;
+      if (timeoutHandle) {
+        window.clearTimeout(timeoutHandle);
+      }
+    };
+  }, [conversationId, pendingJobId, runId]);
+
   async function submitMessage(options: {
     content: string;
     clarificationCity?: string;
@@ -318,26 +490,54 @@ export function ContextChatWorkspace({
     sendLockRef.current = true;
     setIsSending(true);
     setErrorMessage(null);
+    setRecoveryMessage(null);
+    setRecoveryPollAttempt(0);
     setClarificationError(null);
     setPendingPrompt(content);
     setPendingClarificationCity(options.clarificationCity?.trim() || null);
     setPendingClarificationQuestion(options.clarificationQuestion?.trim() || null);
+    const baselineMessageCount = sortedMessages.length;
     try {
       const response = await sendChatMessage(runId, conversationId, content, {
         clarificationCity: options.clarificationCity,
         clarificationQuestion: options.clarificationQuestion,
       });
-      setMessages((current) => [
-        ...current,
-        response.user_message,
-        response.assistant_message,
-      ]);
+      if (response.mode === "completed") {
+        setMessages((current) => [
+          ...current,
+          response.user_message,
+          response.assistant_message,
+        ]);
+        setPendingJob(null);
+        setPendingJobRouting(null);
+      } else {
+        setMessages((current) => [
+          ...current,
+          response.user_message,
+        ]);
+        setPendingJob(response.job);
+        setPendingJobRouting(response.routing ?? null);
+      }
       await loadSessionContexts(runId, conversationId);
       return true;
     } catch (error) {
-      setErrorMessage(
-        error instanceof Error ? error.message : "Message send failed.",
-      );
+      if (isRequestTimeoutError(error)) {
+        const recovered = await recoverTimedOutSend({
+          activeRunId: runId,
+          sessionId: conversationId,
+          baselineMessageCount,
+        });
+        if (recovered) {
+          return true;
+        }
+        setErrorMessage(
+          "The request is still running on the backend, but the chat state did not update in time. Refresh to recover the saved result.",
+        );
+      } else {
+        setErrorMessage(
+          error instanceof Error ? error.message : "Message send failed.",
+        );
+      }
       if (options.restoreInputOnError) {
         setInputValue((current) => (current.trim() ? current : content));
       }
@@ -346,6 +546,9 @@ export function ContextChatWorkspace({
       setPendingPrompt(null);
       setPendingClarificationCity(null);
       setPendingClarificationQuestion(null);
+      setIsRecoveringSend(false);
+      setRecoveryMessage(null);
+      setRecoveryPollAttempt(0);
       setIsSending(false);
       sendLockRef.current = false;
     }
@@ -461,7 +664,7 @@ export function ContextChatWorkspace({
   }, [showContextManager]);
 
   async function saveContextSelection(): Promise<void> {
-    if (!runId || !conversationId || managerSelection.length === 0) {
+    if (!runId || !conversationId || managerSelection.length === 0 || pendingJob) {
       return;
     }
     setIsSavingContexts(true);
@@ -483,10 +686,11 @@ export function ContextChatWorkspace({
     }
   }
 
-  const disabledInput = !canChat || !conversationId || isBootstrapping;
-  const disabledSend = !canChat || !conversationId || isSending || isBootstrapping;
+  const disabledInput = !canChat || !conversationId || isBootstrapping || !!pendingJob;
+  const disabledSend =
+    !canChat || !conversationId || isSending || isBootstrapping || !!pendingJob;
   const hasVisibleMessages =
-    sortedMessages.length > 0 || (isSending && !!pendingPrompt);
+    sortedMessages.length > 0 || (isSending && !!pendingPrompt) || !!pendingJob;
 
   return (
     <>
@@ -513,7 +717,9 @@ export function ContextChatWorkspace({
                     size="sm"
                     variant="outline"
                     onClick={() => setIsContextManagerOpen(true)}
-                    disabled={!sessionContexts || isLoadingContexts || isBootstrapping}
+                    disabled={
+                      !sessionContexts || isLoadingContexts || isBootstrapping || !!pendingJob
+                    }
                   >
                     Manage Contexts
                   </Button>
@@ -533,7 +739,7 @@ export function ContextChatWorkspace({
               </p>
               {showTokenMetrics ? (
                 <p>
-                  Token estimate: {sessionContexts.total_tokens.toLocaleString()} /{" "}
+                  Prompt estimate: {getPromptContextTokens(sessionContexts).toLocaleString()} /{" "}
                   {sessionContexts.token_cap.toLocaleString()}
                 </p>
               ) : null}
@@ -541,15 +747,15 @@ export function ContextChatWorkspace({
                 {sessionContexts.contexts.map((context) => (
                   <Badge key={context.run_id} variant="secondary">
                     {showTokenMetrics
-                      ? `${context.run_id} · ${context.total_tokens.toLocaleString()}`
+                      ? `${context.run_id} · ${getPromptContextTokens(context).toLocaleString()}`
                       : context.run_id}
                   </Badge>
                 ))}
                 {sessionContexts.followup_bundles.map((bundle) => (
                   <Badge key={bundle.bundle_id} variant="outline">
                     {showTokenMetrics
-                      ? `Follow-up: ${bundle.target_city} · ${bundle.total_tokens.toLocaleString()}`
-                      : `Follow-up: ${bundle.target_city}`}
+                      ? `${formatAdditionalResearchLabel(bundle.target_city)} · ${getPromptContextTokens(bundle).toLocaleString()}`
+                      : formatAdditionalResearchLabel(bundle.target_city)}
                   </Badge>
                 ))}
               </div>
@@ -591,44 +797,51 @@ export function ContextChatWorkspace({
               </p>
             ) : (
               <div className="space-y-3">
-                {sortedMessages.map((message, index) => (
-                  <div
-                    key={`${message.created_at}-${index}`}
-                    className={
-                      message.role === "user"
-                        ? "ml-8 rounded-lg bg-slate-900 p-3 text-sm text-white"
-                        : "mr-8 rounded-lg bg-amber-50 p-3 text-sm text-slate-900"
-                    }
-                  >
-                    <p className="mb-1 text-xs font-semibold uppercase tracking-wide opacity-75">
-                      {message.role}
-                    </p>
-                    {message.role === "assistant" ? (
-                      <div className="chat-markdown text-sm leading-relaxed">
-                        <MarkdownWithReferences
-                          content={message.content}
-                          runId={runId}
-                          conversationId={conversationId}
-                          chatCitations={message.citations}
-                          prefetchRunReferences={false}
-                        />
-                        {message.routing ? (
-                          <p className="mt-2 text-xs text-slate-600">
-                            Route: {message.routing.action.replaceAll("_", " ")}
-                            {message.routing.target_city ? ` (${message.routing.target_city})` : ""}
-                          </p>
-                        ) : null}
-                        {message.citation_warning ? (
-                          <p className="mt-2 text-xs text-amber-700">
-                            {message.citation_warning}
-                          </p>
-                        ) : null}
-                      </div>
-                    ) : (
-                      <p className="whitespace-pre-wrap leading-relaxed">{message.content}</p>
-                    )}
-                  </div>
-                ))}
+                {sortedMessages.map((message, index) => {
+                  const routingDescriptor = message.routing
+                    ? describeRouting(message.routing)
+                    : null;
+                  return (
+                    <div
+                      key={`${message.created_at}-${index}`}
+                      className={
+                        message.role === "user"
+                          ? "ml-8 rounded-lg bg-slate-900 p-3 text-sm text-white"
+                          : "mr-8 rounded-lg bg-amber-50 p-3 text-sm text-slate-900"
+                      }
+                    >
+                      <p className="mb-1 text-xs font-semibold uppercase tracking-wide opacity-75">
+                        {message.role}
+                      </p>
+                      {message.role === "assistant" ? (
+                        <div className="chat-markdown text-sm leading-relaxed">
+                          {routingDescriptor ? (
+                            <Badge
+                              variant="outline"
+                              className={cn("mb-3", routingDescriptor.className)}
+                            >
+                              {routingDescriptor.label}
+                            </Badge>
+                          ) : null}
+                          <MarkdownWithReferences
+                            content={message.content}
+                            runId={runId}
+                            conversationId={conversationId}
+                            chatCitations={message.citations}
+                            prefetchRunReferences={false}
+                          />
+                          {message.citation_warning ? (
+                            <p className="mt-2 text-xs text-amber-700">
+                              {message.citation_warning}
+                            </p>
+                          ) : null}
+                        </div>
+                      ) : (
+                        <p className="whitespace-pre-wrap leading-relaxed">{message.content}</p>
+                      )}
+                    </div>
+                  );
+                })}
                 {isSending && pendingPrompt ? (
                   <div className="ml-8 rounded-lg bg-slate-900 p-3 text-sm text-white">
                     <p className="mb-1 text-xs font-semibold uppercase tracking-wide opacity-75">
@@ -644,7 +857,7 @@ export function ContextChatWorkspace({
                         assistant
                       </p>
                       <p className="mb-1 text-base font-semibold text-sky-950">
-                        Reading {formatCityLabel(pendingClarificationCity)} to answer your question...
+                        {formatAdditionalResearchLabel(pendingClarificationCity)} in progress...
                       </p>
                       {pendingClarificationQuestion ? (
                         <p className="mb-2 text-sm leading-relaxed text-sky-900">
@@ -652,7 +865,7 @@ export function ContextChatWorkspace({
                         </p>
                       ) : null}
                       <div className="inline-flex items-center gap-2 text-xs text-sky-800">
-                        <span>Reviewing city context</span>
+                        <span>Searching and reading city context</span>
                         <span className="chat-thinking-dots" aria-hidden="true">
                           <span className="chat-thinking-dot" />
                           <span className="chat-thinking-dot" />
@@ -666,10 +879,16 @@ export function ContextChatWorkspace({
                         assistant
                       </p>
                       <p className="mb-2 text-base font-semibold text-teal-900">
-                        Processing your question...
+                        {showDevDiagnostics && isRecoveringSend
+                          ? "Reconnecting to backend..."
+                          : "Processing your question..."}
                       </p>
                       <div className="inline-flex items-center gap-2 text-xs text-teal-800">
-                        <span>Thinking</span>
+                        <span>
+                          {showDevDiagnostics && isRecoveringSend
+                            ? `Polling backend session state (check ${recoveryPollAttempt})`
+                            : "Thinking"}
+                        </span>
                         <span className="chat-thinking-dots" aria-hidden="true">
                           <span className="chat-thinking-dot" />
                           <span className="chat-thinking-dot" />
@@ -678,6 +897,30 @@ export function ContextChatWorkspace({
                       </div>
                     </div>
                   )
+                ) : null}
+                {!isSending && pendingJob ? (
+                  <div className="mr-8 rounded-lg border border-teal-100 bg-teal-50 p-3 text-slate-900">
+                    <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-teal-800">
+                      assistant
+                    </p>
+                    <p className="mb-2 text-base font-semibold text-teal-900">
+                      {pendingJobRouting?.action === "search_single_city"
+                        ? `${formatAdditionalResearchLabel(pendingJobRouting.target_city)} in progress...`
+                        : "Processing long answer..."}
+                    </p>
+                    <div className="inline-flex items-center gap-2 text-xs text-teal-800">
+                      <span>
+                        {pendingJobRouting?.action === "search_single_city"
+                          ? "Finishing the answer with the new city context"
+                          : "Working through a very large context"}
+                      </span>
+                      <span className="chat-thinking-dots" aria-hidden="true">
+                        <span className="chat-thinking-dot" />
+                        <span className="chat-thinking-dot" />
+                        <span className="chat-thinking-dot" />
+                      </span>
+                    </div>
+                  </div>
                 ) : null}
               </div>
             )}
@@ -693,6 +936,12 @@ export function ContextChatWorkspace({
             <div className="flex items-center justify-between gap-3">
               {errorMessage ? (
                 <p className="text-xs text-red-600">{errorMessage}</p>
+              ) : showDevDiagnostics && recoveryMessage ? (
+                <p className="text-xs text-amber-700">
+                  {recoveryPollAttempt > 0
+                    ? `${recoveryMessage} Check ${recoveryPollAttempt}.`
+                    : recoveryMessage}
+                </p>
               ) : (
                 <p className="text-xs text-slate-500">
                   Chat memory and selected contexts are persisted on backend.
@@ -720,7 +969,7 @@ export function ContextChatWorkspace({
 
           <div className="space-y-3 p-5">
             <div className="rounded-md border border-slate-200 bg-slate-50 p-3 text-xs text-slate-700">
-              Selected token estimate: {selectedContextTokens.toLocaleString()} /{" "}
+              Selected prompt estimate: {selectedContextTokens.toLocaleString()} /{" "}
               {managerTokenCap.toLocaleString()}
               {selectionExceedsDirectCap ? (
                 <p className="mt-2 text-amber-700">
@@ -757,7 +1006,7 @@ export function ContextChatWorkspace({
                         <div className="mb-1 flex items-center justify-between gap-2">
                           <p className="text-sm font-semibold text-slate-900">{context.run_id}</p>
                           <Badge variant="outline">
-                            {context.total_tokens.toLocaleString()} tokens
+                            {getPromptContextTokens(context).toLocaleString()} tokens
                           </Badge>
                         </div>
                         <p className="line-clamp-2 text-xs text-slate-600">{context.question}</p>
@@ -785,6 +1034,7 @@ export function ContextChatWorkspace({
                 size="sm"
                 onClick={() => void saveContextSelection()}
                 disabled={
+                  !!pendingJob ||
                   isSavingContexts ||
                   isLoadingCatalog ||
                   managerSelection.length === 0

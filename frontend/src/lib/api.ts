@@ -153,6 +153,7 @@ export interface ApplyAssumptionsResponse {
 }
 
 export type ChatRole = "user" | "assistant";
+export type ChatJobStatus = "queued" | "running" | "completed" | "failed";
 export type ChatFollowupAction =
   | "answer_from_context"
   | "search_single_city"
@@ -185,11 +186,19 @@ export interface ChatMessage {
   routing?: ChatRoutingMetadata | null;
 }
 
+export interface ChatJobHandle {
+  job_id: string;
+  job_number: number;
+  status: ChatJobStatus;
+  status_url: string;
+}
+
 export interface ChatSessionResponse {
   run_id: string;
   conversation_id: string;
   created_at: string;
   updated_at: string;
+  pending_job?: ChatJobHandle | null;
   messages: ChatMessage[];
 }
 
@@ -209,6 +218,8 @@ export interface ChatContextSummary {
   document_tokens: number;
   bundle_tokens: number;
   total_tokens: number;
+  prompt_context_tokens: number;
+  prompt_context_kind?: "citation_catalog" | "serialized_contexts" | null;
 }
 
 export interface ChatContextCatalogResponse {
@@ -222,6 +233,8 @@ export interface ChatFollowupBundleSummary {
   target_city: string;
   excerpt_count: number;
   total_tokens: number;
+  prompt_context_tokens: number;
+  prompt_context_kind?: "citation_catalog" | "serialized_contexts" | null;
   created_at: string;
 }
 
@@ -232,17 +245,46 @@ export interface ChatSessionContextsResponse {
   contexts: ChatContextSummary[];
   followup_bundles: ChatFollowupBundleSummary[];
   total_tokens: number;
+  prompt_context_tokens: number;
+  prompt_context_kind?: "citation_catalog" | "serialized_contexts" | null;
   token_cap: number;
   excluded_context_run_ids: string[];
   excluded_followup_bundle_ids: string[];
   is_capped: boolean;
 }
 
-export interface SendChatMessageResponse {
+export interface SendChatMessageCompletedResponse {
+  mode: "completed";
   run_id: string;
   conversation_id: string;
   user_message: ChatMessage;
   assistant_message: ChatMessage;
+}
+
+export interface ChatMessageJobAcceptedResponse {
+  mode: "queued";
+  run_id: string;
+  conversation_id: string;
+  user_message: ChatMessage;
+  job: ChatJobHandle;
+  routing?: ChatRoutingMetadata | null;
+}
+
+export type SendChatMessageResponse =
+  | SendChatMessageCompletedResponse
+  | ChatMessageJobAcceptedResponse;
+
+export interface ChatJobStatusResponse {
+  run_id: string;
+  conversation_id: string;
+  job_id: string;
+  job_number: number;
+  status: ChatJobStatus;
+  created_at: string;
+  started_at?: string | null;
+  completed_at?: string | null;
+  finish_reason?: string | null;
+  error?: RunError | null;
 }
 
 export interface ChatFollowupReferenceListResponse {
@@ -251,6 +293,49 @@ export interface ChatFollowupReferenceListResponse {
   bundle_id: string;
   reference_count: number;
   references: RunReferenceListItem[];
+}
+
+function resolvePromptContextTokens(
+  totalTokens: number,
+  promptContextTokens?: number | null,
+): number {
+  return typeof promptContextTokens === "number" ? promptContextTokens : totalTokens;
+}
+
+function normalizeChatContextSummary(summary: ChatContextSummary): ChatContextSummary {
+  return {
+    ...summary,
+    prompt_context_tokens: resolvePromptContextTokens(
+      summary.total_tokens,
+      summary.prompt_context_tokens,
+    ),
+  };
+}
+
+function normalizeChatFollowupBundleSummary(
+  summary: ChatFollowupBundleSummary,
+): ChatFollowupBundleSummary {
+  return {
+    ...summary,
+    prompt_context_tokens: resolvePromptContextTokens(
+      summary.total_tokens,
+      summary.prompt_context_tokens,
+    ),
+  };
+}
+
+function normalizeChatSessionContextsResponse(
+  payload: ChatSessionContextsResponse,
+): ChatSessionContextsResponse {
+  return {
+    ...payload,
+    contexts: payload.contexts.map(normalizeChatContextSummary),
+    followup_bundles: payload.followup_bundles.map(normalizeChatFollowupBundleSummary),
+    prompt_context_tokens: resolvePromptContextTokens(
+      payload.total_tokens,
+      payload.prompt_context_tokens,
+    ),
+  };
 }
 
 function normalizeCityKey(value: string): string {
@@ -278,6 +363,7 @@ const configuredBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL?.trim() ?? "";
 const LOCAL_API_BASE_URL = "http://127.0.0.1:8000";
 const DEFAULT_API_BASE_URL = "https://urbind-query-mechanism-api.openearth.dev";
 const DEFAULT_REQUEST_TIMEOUT_MS = 120_000;
+const CHAT_SEND_REQUEST_TIMEOUT_MS = 25_000;
 const RUN_LIST_REQUEST_TIMEOUT_MS = 12_000;
 const STATUS_REQUEST_TIMEOUT_MS = 10_000;
 
@@ -530,7 +616,11 @@ export async function applyRunAssumptions(
 }
 
 export async function fetchChatContextCatalog(): Promise<ChatContextCatalogResponse> {
-  return requestJson<ChatContextCatalogResponse>("/api/v1/chat/contexts");
+  const payload = await requestJson<ChatContextCatalogResponse>("/api/v1/chat/contexts");
+  return {
+    ...payload,
+    contexts: payload.contexts.map(normalizeChatContextSummary),
+  };
 }
 
 export async function listChatSessions(runId: string): Promise<ChatSessionListResponse> {
@@ -563,9 +653,10 @@ export async function fetchChatSessionContexts(
   runId: string,
   conversationId: string,
 ): Promise<ChatSessionContextsResponse> {
-  return requestJson<ChatSessionContextsResponse>(
+  const payload = await requestJson<ChatSessionContextsResponse>(
     `/api/v1/runs/${encodeURIComponent(runId)}/chat/sessions/${encodeURIComponent(conversationId)}/contexts`,
   );
+  return normalizeChatSessionContextsResponse(payload);
 }
 
 export async function updateChatSessionContexts(
@@ -573,7 +664,7 @@ export async function updateChatSessionContexts(
   conversationId: string,
   contextRunIds: string[],
 ): Promise<ChatSessionContextsResponse> {
-  return requestJson<ChatSessionContextsResponse>(
+  const payload = await requestJson<ChatSessionContextsResponse>(
     `/api/v1/runs/${encodeURIComponent(runId)}/chat/sessions/${encodeURIComponent(conversationId)}/contexts`,
     {
       method: "PUT",
@@ -581,6 +672,7 @@ export async function updateChatSessionContexts(
     },
     true,
   );
+  return normalizeChatSessionContextsResponse(payload);
 }
 
 export async function sendChatMessage(
@@ -606,6 +698,21 @@ export async function sendChatMessage(
       body: JSON.stringify(body),
     },
     true,
+    CHAT_SEND_REQUEST_TIMEOUT_MS,
+  );
+}
+
+export async function fetchChatJobStatus(
+  runId: string,
+  conversationId: string,
+  jobId: string,
+  options?: { signal?: AbortSignal },
+): Promise<ChatJobStatusResponse> {
+  return requestJson<ChatJobStatusResponse>(
+    `/api/v1/runs/${encodeURIComponent(runId)}/chat/sessions/${encodeURIComponent(conversationId)}/jobs/${encodeURIComponent(jobId)}`,
+    { signal: options?.signal },
+    false,
+    STATUS_REQUEST_TIMEOUT_MS,
   );
 }
 

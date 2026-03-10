@@ -1,4 +1,5 @@
 import json
+import logging
 import time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -108,6 +109,36 @@ def _poll_until_completed(client: TestClient, run_id: str, timeout_seconds: floa
             return
         time.sleep(0.02)
     raise AssertionError(f"Run `{run_id}` did not complete in time.")
+
+
+def _poll_chat_job_terminal(
+    client: TestClient,
+    run_id: str,
+    conversation_id: str,
+    job_id: str,
+    timeout_seconds: float = 3.0,
+) -> dict[str, object]:
+    """Poll one chat job until it reaches a terminal state."""
+    deadline = time.monotonic() + timeout_seconds
+    while time.monotonic() < deadline:
+        response = client.get(
+            f"/api/v1/runs/{run_id}/chat/sessions/{conversation_id}/jobs/{job_id}"
+        )
+        assert response.status_code == 200
+        payload = response.json()
+        if payload["status"] in {"completed", "failed"}:
+            return payload
+        time.sleep(0.02)
+    raise AssertionError(f"Chat job `{job_id}` did not complete in time.")
+
+
+def _patch_api_config_loaders(
+    monkeypatch: pytest.MonkeyPatch,
+    stub_load_config: object,
+) -> None:
+    """Patch both async run and chat-route config loading for deterministic tests."""
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", stub_load_config)
+    monkeypatch.setattr("backend.api.routes.chat.load_config", stub_load_config)
 
 
 def _write_followup_bundle(
@@ -238,7 +269,7 @@ def test_chat_session_lifecycle(tmp_path: Path, monkeypatch: pytest.MonkeyPatch)
         assert run_id == "run-chat"
         return f"Echo: {user_content}"
 
-    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    _patch_api_config_loaders(monkeypatch, _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
     monkeypatch.setattr("backend.api.routes.chat.generate_context_chat_reply", _stub_generate_reply)
 
@@ -291,6 +322,8 @@ def test_chat_session_lifecycle(tmp_path: Path, monkeypatch: pytest.MonkeyPatch)
         assert session_contexts_payload["context_run_ids"] == ["run-chat"]
         assert session_contexts_payload["token_cap"] == 220_000
         assert session_contexts_payload["total_tokens"] > 0
+        assert session_contexts_payload["prompt_context_tokens"] > 0
+        assert session_contexts_payload["contexts"][0]["prompt_context_tokens"] > 0
 
         update_contexts = client.put(
             f"/api/v1/runs/run-chat/chat/sessions/{conversation_id}/contexts",
@@ -308,6 +341,85 @@ def test_chat_session_lifecycle(tmp_path: Path, monkeypatch: pytest.MonkeyPatch)
         catalog_payload = catalog.json()
         assert catalog_payload["total"] == 1
         assert catalog_payload["contexts"][0]["run_id"] == "run-chat"
+        assert catalog_payload["contexts"][0]["prompt_context_tokens"] > 0
+
+
+def test_chat_context_metrics_expose_prompt_context_tokens_for_excerpt_runs(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+
+    def _stub_load_config(_path: Path | None = None) -> AppConfig:
+        return _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+
+    def _stub_run_pipeline(
+        question: str,
+        config: AppConfig,
+        run_id: str | None = None,
+        log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
+        selected_cities: list[str] | None = None,
+    ) -> RunPaths:
+        assert run_id is not None
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
+        assert selected_cities is None
+        return _write_success_artifacts(
+            question,
+            run_id,
+            config,
+            excerpts=[
+                {
+                    "ref_id": "ref_1",
+                    "city_name": "Warsaw",
+                    "quote": "Grounded evidence sentence. " * 12,
+                    "partial_answer": "Grounded partial answer. " * 8,
+                    "source_chunk_ids": ["chunk_1", "chunk_2"],
+                }
+            ],
+        )
+
+    _patch_api_config_loaders(monkeypatch, _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        start = client.post(
+            "/api/v1/runs",
+            json={"question": "Build doc", "run_id": "run-chat-excerpts"},
+        )
+        assert start.status_code == 202
+        _poll_until_completed(client, "run-chat-excerpts")
+
+        final_path = runs_dir / "run-chat-excerpts" / "final.md"
+        final_path.write_text("# Answer\n" + ("Stored artifact text. " * 80), encoding="utf-8")
+
+        catalog = client.get("/api/v1/chat/contexts")
+        assert catalog.status_code == 200
+        catalog_payload = catalog.json()
+        summary = next(
+            item for item in catalog_payload["contexts"] if item["run_id"] == "run-chat-excerpts"
+        )
+        assert summary["prompt_context_kind"] == "citation_catalog"
+        assert summary["prompt_context_tokens"] > 0
+        assert summary["prompt_context_tokens"] < summary["total_tokens"]
+
+        create_session = client.post("/api/v1/runs/run-chat-excerpts/chat/sessions", json={})
+        assert create_session.status_code == 201
+        conversation_id = create_session.json()["conversation_id"]
+
+        session_contexts = client.get(
+            f"/api/v1/runs/run-chat-excerpts/chat/sessions/{conversation_id}/contexts"
+        )
+        assert session_contexts.status_code == 200
+        session_payload = session_contexts.json()
+        assert session_payload["prompt_context_kind"] == "citation_catalog"
+        assert session_payload["prompt_context_tokens"] > 0
+        assert session_payload["prompt_context_tokens"] < session_payload["total_tokens"]
+        assert session_payload["is_capped"] is False
 
 
 def test_chat_requires_completed_run(tmp_path: Path) -> None:
@@ -370,7 +482,7 @@ def test_chat_supports_header_api_key_override(
         captured_key["value"] = api_key_override
         return "Header key response"
 
-    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    _patch_api_config_loaders(monkeypatch, _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
     monkeypatch.setattr("backend.api.routes.chat.generate_context_chat_reply", _stub_generate_reply)
 
@@ -423,7 +535,7 @@ def test_chat_context_update_rejects_unknown_context_run(
         assert selected_cities is None
         return _write_success_artifacts(question, run_id, config)
 
-    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    _patch_api_config_loaders(monkeypatch, _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
 
     app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
@@ -503,7 +615,7 @@ def test_chat_builds_prompt_safe_citation_catalog_and_persists_mapping(
         assert run_id == "run-chat-citations"
         return "Seville plans charging expansion. [ref_1]"
 
-    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    _patch_api_config_loaders(monkeypatch, _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
     monkeypatch.setattr("backend.api.routes.chat.generate_context_chat_reply", _stub_generate_reply)
 
@@ -595,7 +707,7 @@ def test_chat_retries_once_when_first_reply_has_no_valid_citations(
             return "Porto targets 35% by 2030. [ref_1]"
         return "Porto targets 35% by 2030."
 
-    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    _patch_api_config_loaders(monkeypatch, _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
     monkeypatch.setattr("backend.api.routes.chat.generate_context_chat_reply", _stub_generate_reply)
 
@@ -649,7 +761,7 @@ def test_chat_update_contexts_keeps_parent_run_pinned(
         assert selected_cities is None
         return _write_success_artifacts(question, run_id, config)
 
-    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    _patch_api_config_loaders(monkeypatch, _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
 
     app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
@@ -776,8 +888,7 @@ def test_chat_followup_search_attaches_bundle_and_exposes_references(
         assert contexts[-1]["run_id"] == "fup_chat_001_munich"
         return "Munich plans rooftop solar expansion. [ref_1]"
 
-    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
-    monkeypatch.setattr("backend.api.routes.chat.load_config", _stub_load_config)
+    _patch_api_config_loaders(monkeypatch, _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
     monkeypatch.setattr("backend.api.routes.chat.route_chat_followup", _stub_route_chat_followup)
     monkeypatch.setattr(
@@ -824,7 +935,7 @@ def test_chat_followup_search_attaches_bundle_and_exposes_references(
         assert refs_payload["references"][0]["quote"] == "Munich plans rooftop solar expansion."
 
 
-def test_chat_followup_router_returns_out_of_scope_message(
+def test_chat_followup_queued_response_exposes_city_routing(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
     runs_dir = tmp_path / "output"
@@ -853,8 +964,175 @@ def test_chat_followup_router_returns_out_of_scope_message(
         assert selected_cities is None
         return _write_success_artifacts(question, run_id, config, excerpts=[])
 
-    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
-    monkeypatch.setattr("backend.api.routes.chat.load_config", _stub_load_config)
+    def _stub_route_chat_followup(
+        payload: dict[str, object],
+        config: AppConfig,
+        api_key: str,
+        log_llm_payload: bool = False,
+    ) -> ChatFollowupDecision:
+        _ = payload, config, api_key, log_llm_payload
+        return ChatFollowupDecision(
+            action="search_single_city",
+            reason="Need fresh context for Izmir.",
+            target_city="Izmir",
+            rewritten_question="What does Izmir report?",
+        )
+
+    def _stub_run_chat_followup_search(
+        *,
+        runs_dir: Path,
+        run_id: str,
+        conversation_id: str,
+        turn_index: int,
+        question: str,
+        target_city: str,
+        config: AppConfig,
+        api_key: str,
+        log_llm_payload: bool = False,
+    ) -> ChatFollowupSearchResult:
+        _ = question, config, api_key, log_llm_payload
+        assert turn_index == 1
+        bundle_id = "fup_chat_001_izmir"
+        _write_followup_bundle(
+            runs_dir=runs_dir,
+            run_id=run_id,
+            conversation_id=conversation_id,
+            bundle_id=bundle_id,
+            target_city=target_city,
+            quote="Izmir follow-up quote.",
+            partial_answer="Izmir follow-up answer.",
+        )
+        return ChatFollowupSearchResult(
+            status="success",
+            bundle_id=bundle_id,
+            target_city=target_city,
+            created_at=datetime.now(timezone.utc),
+            excerpt_count=1,
+            total_tokens=120,
+            error_message=None,
+        )
+
+    def _stub_build_context_reply_plan(**_kwargs: object) -> context_chat.ContextChatPlan:
+        return context_chat.ContextChatPlan(
+            mode="split",
+            context_ids=["run-chat-followup-queued", "fup_chat_001_izmir"],
+            resolved_token_cap=220_000,
+            effective_token_cap=220_000,
+            estimated_prompt_tokens=221_000,
+            context_tokens=221_000,
+            split_reason="test split",
+        )
+
+    def _stub_generate_reply(
+        original_question: str,
+        contexts: list[dict[str, object]],
+        history: list[dict[str, str]],
+        user_content: str,
+        config: AppConfig,
+        token_cap: int = 0,
+        api_key_override: str | None = None,
+        citation_catalog: list[dict[str, str]] | None = None,
+        retry_missing_citation: bool = False,
+        run_id: str | None = None,
+    ) -> str:
+        _ = history, config, token_cap, api_key_override, retry_missing_citation
+        assert original_question == "Build doc"
+        assert user_content == "Tell me more about Izmir."
+        assert run_id == "run-chat-followup-queued"
+        assert isinstance(citation_catalog, list) and citation_catalog
+        assert contexts[-1]["run_id"] == "fup_chat_001_izmir"
+        return "Izmir plans district cooling expansion. [ref_1]"
+
+    _patch_api_config_loaders(monkeypatch, _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+    monkeypatch.setattr("backend.api.routes.chat.route_chat_followup", _stub_route_chat_followup)
+    monkeypatch.setattr(
+        "backend.api.routes.chat.run_chat_followup_search",
+        _stub_run_chat_followup_search,
+    )
+    monkeypatch.setattr(
+        "backend.api.routes.chat._build_context_reply_plan",
+        _stub_build_context_reply_plan,
+    )
+    monkeypatch.setattr("backend.api.routes.chat.generate_context_chat_reply", _stub_generate_reply)
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        start = client.post(
+            "/api/v1/runs",
+            json={"question": "Build doc", "run_id": "run-chat-followup-queued"},
+        )
+        assert start.status_code == 202
+        _poll_until_completed(client, "run-chat-followup-queued")
+
+        create_session = client.post(
+            "/api/v1/runs/run-chat-followup-queued/chat/sessions",
+            json={},
+        )
+        conversation_id = create_session.json()["conversation_id"]
+
+        send_message = client.post(
+            f"/api/v1/runs/run-chat-followup-queued/chat/sessions/{conversation_id}/messages",
+            json={"content": "Tell me more about Izmir."},
+        )
+        assert send_message.status_code == 202
+        payload = send_message.json()
+        assert payload["mode"] == "queued"
+        assert payload["routing"]["action"] == "search_single_city"
+        assert payload["routing"]["target_city"] == "Izmir"
+        assert payload["routing"]["bundle_id"] == "fup_chat_001_izmir"
+
+        completed_job = _poll_chat_job_terminal(
+            client,
+            "run-chat-followup-queued",
+            conversation_id,
+            str(payload["job"]["job_id"]),
+        )
+        assert completed_job["status"] == "completed"
+
+        session_payload = client.get(
+            f"/api/v1/runs/run-chat-followup-queued/chat/sessions/{conversation_id}"
+        ).json()
+        assert (
+            session_payload["messages"][-1]["content"]
+            == "Izmir plans district cooling expansion. [ref_1]"
+        )
+        assert session_payload["messages"][-1]["routing"]["target_city"] == "Izmir"
+
+
+def test_chat_followup_router_returns_out_of_scope_message(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+    caplog: pytest.LogCaptureFixture,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+
+    def _stub_load_config(_path: Path | None = None) -> AppConfig:
+        return _build_config(
+            runs_dir=runs_dir,
+            markdown_dir=markdown_dir,
+            followup_search_enabled=True,
+        )
+
+    def _stub_run_pipeline(
+        question: str,
+        config: AppConfig,
+        run_id: str | None = None,
+        log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
+        selected_cities: list[str] | None = None,
+    ) -> RunPaths:
+        assert run_id is not None
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
+        assert selected_cities is None
+        return _write_success_artifacts(question, run_id, config, excerpts=[])
+
+    _patch_api_config_loaders(monkeypatch, _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
     monkeypatch.setattr(
         "backend.api.routes.chat.route_chat_followup",
@@ -863,6 +1141,7 @@ def test_chat_followup_router_returns_out_of_scope_message(
             reason="The message is unrelated to the report context.",
         ),
     )
+    caplog.set_level(logging.INFO, logger="backend.api.routes.chat")
 
     app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
     with TestClient(app) as client:
@@ -883,6 +1162,11 @@ def test_chat_followup_router_returns_out_of_scope_message(
         payload = send_message.json()
         assert "outside the current city-report context" in payload["assistant_message"]["content"]
         assert payload["assistant_message"]["routing"]["action"] == "out_of_scope"
+
+    log_output = "\n".join(record.getMessage() for record in caplog.records)
+    log_output = f"{log_output}\n{capsys.readouterr().err}"
+    assert "Context chat request summary" in log_output
+    assert "Context chat router preflight" in log_output
 
 
 def test_chat_followup_router_requests_city_clarification(
@@ -917,8 +1201,7 @@ def test_chat_followup_router_requests_city_clarification(
     def _unexpected_reply(**_kwargs: object) -> str:
         raise AssertionError("Direct answer generation should not run for clarification prompts.")
 
-    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
-    monkeypatch.setattr("backend.api.routes.chat.load_config", _stub_load_config)
+    _patch_api_config_loaders(monkeypatch, _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
     monkeypatch.setattr(
         "backend.api.routes.chat.generate_context_chat_reply",
@@ -989,8 +1272,7 @@ def test_chat_followup_search_failure_returns_grounded_limitation(
     def _unexpected_reply(**_kwargs: object) -> str:
         raise AssertionError("Direct answer generation should not run after failed follow-up search.")
 
-    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
-    monkeypatch.setattr("backend.api.routes.chat.load_config", _stub_load_config)
+    _patch_api_config_loaders(monkeypatch, _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
     monkeypatch.setattr(
         "backend.api.routes.chat.generate_context_chat_reply",
@@ -1081,8 +1363,7 @@ def test_chat_unavailable_followup_city_returns_city_choice_trigger(
     def _unexpected_reply(**_kwargs: object) -> str:
         raise AssertionError("Direct answer generation should not run for unavailable cities.")
 
-    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
-    monkeypatch.setattr("backend.api.routes.chat.load_config", _stub_load_config)
+    _patch_api_config_loaders(monkeypatch, _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
     monkeypatch.setattr(
         "backend.api.routes.chat.generate_context_chat_reply",
@@ -1244,8 +1525,7 @@ def test_chat_clarification_city_selection_triggers_direct_followup_search(
         assert contexts[-1]["run_id"] == "fup_chat_002_munich"
         return "Munich plans rooftop solar expansion. [ref_1]"
 
-    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
-    monkeypatch.setattr("backend.api.routes.chat.load_config", _stub_load_config)
+    _patch_api_config_loaders(monkeypatch, _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
     monkeypatch.setattr("backend.api.routes.chat.route_chat_followup", _stub_route_chat_followup)
     monkeypatch.setattr(
@@ -1394,8 +1674,7 @@ def test_chat_followup_bundles_are_pruned_to_configured_maximum(
         assert isinstance(citation_catalog, list) and citation_catalog
         return f"{user_content} [ref_1]"
 
-    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
-    monkeypatch.setattr("backend.api.routes.chat.load_config", _stub_load_config)
+    _patch_api_config_loaders(monkeypatch, _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
     monkeypatch.setattr("backend.api.routes.chat.route_chat_followup", _stub_route_chat_followup)
     monkeypatch.setattr(
@@ -1521,8 +1800,7 @@ def test_chat_followup_same_city_search_replaces_previous_bundle(
         assert contexts[-1]["run_id"].startswith("fup_chat_")
         return f"{user_content} [ref_1]"
 
-    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
-    monkeypatch.setattr("backend.api.routes.chat.load_config", _stub_load_config)
+    _patch_api_config_loaders(monkeypatch, _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
     monkeypatch.setattr(
         "backend.api.routes.chat.route_chat_followup",
@@ -1579,7 +1857,10 @@ def test_chat_followup_same_city_search_replaces_previous_bundle(
 
 
 def test_chat_overflow_uses_evidence_map_reduce_and_reuses_cache(
-    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+    caplog: pytest.LogCaptureFixture,
+    capsys: pytest.CaptureFixture[str],
 ) -> None:
     runs_dir = tmp_path / "output"
     markdown_dir = tmp_path / "documents"
@@ -1589,9 +1870,9 @@ def test_chat_overflow_uses_evidence_map_reduce_and_reuses_cache(
         return _build_config(
             runs_dir=runs_dir,
             markdown_dir=markdown_dir,
-            max_context_total_tokens=1200,
+            max_context_total_tokens=600,
             min_prompt_token_cap=0,
-            prompt_token_buffer=0,
+            prompt_token_buffer=150,
             multi_pass_chunk_tokens=120,
         )
 
@@ -1653,14 +1934,14 @@ def test_chat_overflow_uses_evidence_map_reduce_and_reuses_cache(
         _ = client, messages, request_kwargs, max_tool_rounds
         return _DummyResponse(next(responses))
 
-    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
-    monkeypatch.setattr("backend.api.routes.chat.load_config", _stub_load_config)
+    _patch_api_config_loaders(monkeypatch, _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
     monkeypatch.setattr("backend.api.services.context_chat.OpenAI", lambda **_kwargs: object())
     monkeypatch.setattr(
         "backend.api.services.context_chat._run_chat_completion_with_tools",
         _stub_run_chat_completion_with_tools,
     )
+    caplog.set_level(logging.INFO, logger="backend.api.routes.chat")
 
     app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
     with TestClient(app) as client:
@@ -1681,10 +1962,49 @@ def test_chat_overflow_uses_evidence_map_reduce_and_reuses_cache(
             f"/api/v1/runs/run-chat-overflow/chat/sessions/{conversation_id}/messages",
             json={"content": "Compare the evidence."},
         )
-        assert first_send.status_code == 200
+        assert first_send.status_code == 202
         first_payload = first_send.json()
-        assert first_payload["assistant_message"]["content"] == "Merged answer for both cities. [ref_1] [ref_2]"
-        assert [citation["source_ref_id"] for citation in first_payload["assistant_message"]["citations"]] == [
+        assert first_payload["mode"] == "queued"
+        assert first_payload["user_message"]["content"] == "Compare the evidence."
+        pending_session = client.get(
+            f"/api/v1/runs/run-chat-overflow/chat/sessions/{conversation_id}"
+        )
+        assert pending_session.status_code == 200
+        assert pending_session.json()["pending_job"]["job_id"] == first_payload["job"]["job_id"]
+
+        blocked_second_send = client.post(
+            f"/api/v1/runs/run-chat-overflow/chat/sessions/{conversation_id}/messages",
+            json={"content": "This should be blocked while pending."},
+        )
+        assert blocked_second_send.status_code == 409
+
+        blocked_context_update = client.put(
+            f"/api/v1/runs/run-chat-overflow/chat/sessions/{conversation_id}/contexts",
+            json={"context_run_ids": ["run-chat-overflow"]},
+        )
+        assert blocked_context_update.status_code == 409
+
+        first_job = _poll_chat_job_terminal(
+            client,
+            "run-chat-overflow",
+            conversation_id,
+            str(first_payload["job"]["job_id"]),
+        )
+        assert first_job["status"] == "completed"
+
+        first_session = client.get(
+            f"/api/v1/runs/run-chat-overflow/chat/sessions/{conversation_id}"
+        )
+        assert first_session.status_code == 200
+        first_session_payload = first_session.json()
+        assert first_session_payload["pending_job"] is None
+        assert first_session_payload["messages"][-1]["content"] == (
+            "Merged answer for both cities. [ref_1] [ref_2]"
+        )
+        assert [
+            citation["source_ref_id"]
+            for citation in first_session_payload["messages"][-1]["citations"]
+        ] == [
             "ref_7",
             "ref_9",
         ]
@@ -1705,8 +2025,31 @@ def test_chat_overflow_uses_evidence_map_reduce_and_reuses_cache(
             f"/api/v1/runs/run-chat-overflow/chat/sessions/{conversation_id}/messages",
             json={"content": "Summarize again."},
         )
-        assert second_send.status_code == 200
-        assert second_send.json()["assistant_message"]["content"] == "Second merged answer. [ref_1] [ref_2]"
+        assert second_send.status_code == 202
+        second_payload = second_send.json()
+        assert second_payload["mode"] == "queued"
+
+        second_job = _poll_chat_job_terminal(
+            client,
+            "run-chat-overflow",
+            conversation_id,
+            str(second_payload["job"]["job_id"]),
+        )
+        assert second_job["status"] == "completed"
+
+        second_session = client.get(
+            f"/api/v1/runs/run-chat-overflow/chat/sessions/{conversation_id}"
+        )
+        assert second_session.status_code == 200
+        assert second_session.json()["messages"][-1]["content"] == (
+            "Second merged answer. [ref_1] [ref_2]"
+        )
+
+    log_output = "\n".join(record.getMessage() for record in caplog.records)
+    log_output = f"{log_output}\n{capsys.readouterr().err}"
+    assert "Context chat request summary" in log_output
+    assert "Context chat reply plan" in log_output
+    assert "mode=split" in log_output
 
 
 def test_chat_session_contexts_allow_extra_runs_when_selection_exceeds_direct_cap(
@@ -1738,7 +2081,7 @@ def test_chat_session_contexts_allow_extra_runs_when_selection_exceeds_direct_ca
         assert selected_cities is None
         return _write_success_artifacts(question, run_id, config)
 
-    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    _patch_api_config_loaders(monkeypatch, _stub_load_config)
     monkeypatch.setattr("backend.api.routes.chat.load_config", _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
 

@@ -4,6 +4,15 @@ from backend.api.services.chat_memory import (
     ChatMemoryStore,
     ChatSessionExistsError,
     ChatSessionNotFoundError,
+    ChatSessionPendingJobError,
+)
+from backend.api.services.chat_jobs import (
+    ChatJobExecutor,
+    ChatJobRecord,
+    ChatJobResult,
+    ChatJobStore,
+    StartChatJobCommand,
+    build_chat_job_failure_message,
 )
 from backend.api.services.chat_followup_research import (
     CHAT_FOLLOWUP_CITY_UNAVAILABLE,
@@ -34,9 +43,13 @@ from backend.api.services.city_catalog import (
     load_city_groups,
 )
 from backend.api.services.context_chat import (
+    ContextChatPlan,
+    ContextWindowEstimate,
+    estimate_context_window,
     generate_context_chat_reply,
     load_context_bundle,
     load_final_document,
+    plan_context_chat_request,
     resolve_chat_token_cap,
 )
 from backend.api.services.run_executor import RunExecutor, StartRunCommand
@@ -57,6 +70,13 @@ __all__ = [
     "ChatMemoryStore",
     "ChatSessionExistsError",
     "ChatSessionNotFoundError",
+    "ChatSessionPendingJobError",
+    "ChatJobExecutor",
+    "ChatJobRecord",
+    "ChatJobResult",
+    "ChatJobStore",
+    "StartChatJobCommand",
+    "build_chat_job_failure_message",
     "CHAT_FOLLOWUP_CITY_UNAVAILABLE",
     "CHAT_FOLLOWUP_SEARCH_FAILED",
     "ChatFollowupSearchResult",
@@ -70,6 +90,10 @@ __all__ = [
     "load_city_groups",
     "normalize_chunk_ids",
     "resolve_chat_token_cap",
+    "plan_context_chat_request",
+    "ContextChatPlan",
+    "ContextWindowEstimate",
+    "estimate_context_window",
     "generate_context_chat_reply",
     "load_context_bundle",
     "load_final_document",
