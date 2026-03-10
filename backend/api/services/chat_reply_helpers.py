@@ -12,9 +12,15 @@ from uuid import uuid4
 
 from openai import APIStatusError, APITimeoutError, AuthenticationError
 
-from backend.api.models import SendChatMessageCompletedResponse
+from backend.api.models import ChatMessageJobAcceptedResponse, SendChatMessageCompletedResponse
 from backend.api.services.chat_context_loader import LoadedChatSource
-from backend.api.services.chat_session_helpers import ChatCitationEntry
+from backend.api.services.chat_jobs import StartChatJobCommand
+from backend.api.services.chat_session_helpers import (
+    ChatCitationEntry,
+    as_chat_routing,
+    as_message,
+    as_pending_job,
+)
 from backend.api.services.context_chat import generate_context_chat_reply, plan_context_chat_request
 from backend.api.services.chat_followup_research import run_chat_followup_search, ChatFollowupSearchResult
 from backend.modules.orchestrator.utils.references import is_valid_ref_id
@@ -673,10 +679,6 @@ def queue_split_context_chat_job(
     chat_job_executor: Any,  # ChatJobExecutor
 ) -> Any:  # SendChatMessageResponse
     """Persist one split-mode user turn and queue the assistant answer in the background."""
-    from backend.api.services.chat_jobs import StartChatJobCommand
-    from backend.api.models import ChatMessageJobAcceptedResponse
-    from backend.api.services.chat_session_helpers import as_message, as_chat_routing
-
     job_id = uuid4().hex
     _, pending_job = chat_memory_store.create_pending_job(
         run_id=run_id,
