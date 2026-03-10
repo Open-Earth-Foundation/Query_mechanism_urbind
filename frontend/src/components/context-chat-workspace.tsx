@@ -42,6 +42,8 @@ interface ContextChatWorkspaceProps {
   runId: string;
   enabled: boolean;
   onClose: () => void;
+  showContextManager: boolean;
+  showTokenMetrics: boolean;
 }
 
 const DEFAULT_CONTEXT_TOKEN_CAP = 250000;
@@ -50,6 +52,8 @@ export function ContextChatWorkspace({
   runId,
   enabled,
   onClose,
+  showContextManager,
+  showTokenMetrics,
 }: ContextChatWorkspaceProps) {
   const messageScrollAreaRef = useRef<HTMLDivElement | null>(null);
   const handledClarificationKeyRef = useRef<string | null>(null);
@@ -499,10 +503,23 @@ export function ContextChatWorkspace({
               {conversationId ? (
                 <Badge variant="outline">Session: {conversationId.slice(0, 8)}</Badge>
               ) : null}
-              <Button type="button" size="sm" variant="outline" onClick={onClose}>
-                <ArrowLeft className="h-4 w-4" />
-                Back to Document
-              </Button>
+              <div className="flex flex-wrap justify-end gap-2">
+                {showContextManager ? (
+                  <Button
+                    type="button"
+                    size="sm"
+                    variant="outline"
+                    onClick={() => setIsContextManagerOpen(true)}
+                    disabled={!sessionContexts || isLoadingContexts || isBootstrapping}
+                  >
+                    Manage Contexts
+                  </Button>
+                ) : null}
+                <Button type="button" size="sm" variant="outline" onClick={onClose}>
+                  <ArrowLeft className="h-4 w-4" />
+                  Back to Document
+                </Button>
+              </div>
             </div>
           </div>
 
@@ -511,15 +528,25 @@ export function ContextChatWorkspace({
               <p>
                 Active sources: {sessionContexts.contexts.length + sessionContexts.followup_bundles.length}
               </p>
+              {showTokenMetrics ? (
+                <p>
+                  Token estimate: {sessionContexts.total_tokens.toLocaleString()} /{" "}
+                  {sessionContexts.token_cap.toLocaleString()}
+                </p>
+              ) : null}
               <div className="flex flex-wrap gap-2">
                 {sessionContexts.contexts.map((context) => (
                   <Badge key={context.run_id} variant="secondary">
-                    {context.run_id}
+                    {showTokenMetrics
+                      ? `${context.run_id} · ${context.total_tokens.toLocaleString()}`
+                      : context.run_id}
                   </Badge>
                 ))}
                 {sessionContexts.followup_bundles.map((bundle) => (
                   <Badge key={bundle.bundle_id} variant="outline">
-                    Follow-up: {bundle.target_city}
+                    {showTokenMetrics
+                      ? `Follow-up: ${bundle.target_city} · ${bundle.total_tokens.toLocaleString()}`
+                      : `Follow-up: ${bundle.target_city}`}
                   </Badge>
                 ))}
               </div>

@@ -15,6 +15,8 @@ import {
 
 import { AssumptionsWorkspace } from "@/components/assumptions-workspace";
 import { ContextChatWorkspace } from "@/components/context-chat-workspace";
+import { DevModeToggle } from "@/components/dev-mode-toggle";
+import { DevToolsPanel } from "@/components/dev-tools-panel";
 import { MarkdownWithReferences } from "@/components/markdown-with-references";
 import { SearchableCityPicker } from "@/components/searchable-city-picker";
 import { Badge } from "@/components/ui/badge";
@@ -23,6 +25,14 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 import { Textarea } from "@/components/ui/textarea";
+import {
+  FrontendMode,
+  getDefaultFrontendMode,
+  getDevFeatureFlags,
+  isDevModeToggleEnabled,
+  persistFrontendMode,
+  readStoredFrontendMode,
+} from "@/lib/frontend-mode";
 import { formatCityLabel } from "@/lib/utils";
 import {
   CityGroup,
@@ -53,6 +63,7 @@ type CityScopeMode = "all" | "group" | "manual";
 type AnalysisMode = "aggregate" | "city_by_city";
 const LAST_RUN_ID_STORAGE_KEY = "last_run_id";
 const CONTROLS_COLLAPSED_STORAGE_KEY = "build_controls_collapsed";
+const DEV_MODE_TOGGLE_ENABLED = isDevModeToggleEnabled();
 
 export default function Home() {
   const [question, setQuestion] = useState("");
@@ -83,11 +94,29 @@ export default function Home() {
   const [chatOpen, setChatOpen] = useState(false);
   const [assumptionsOpen, setAssumptionsOpen] = useState(false);
   const [isControlsCollapsed, setIsControlsCollapsed] = useState(false);
+  const [frontendMode, setFrontendMode] = useState<FrontendMode>(getDefaultFrontendMode());
+  const [hasHydratedFrontendMode, setHasHydratedFrontendMode] = useState(false);
 
   const runId = runResponse?.run_id ?? null;
   const statusValue = runStatus?.status ?? runResponse?.status ?? null;
   const canFetchArtifacts = statusValue === "completed" || statusValue === "completed_with_gaps";
   const documentReady = !!runOutput?.content && canFetchArtifacts;
+  const devFeatures = useMemo(() => getDevFeatureFlags(frontendMode), [frontendMode]);
+
+  useEffect(() => {
+    const storedMode = readStoredFrontendMode();
+    if (storedMode) {
+      setFrontendMode(storedMode);
+    }
+    setHasHydratedFrontendMode(true);
+  }, []);
+
+  useEffect(() => {
+    if (!hasHydratedFrontendMode) {
+      return;
+    }
+    persistFrontendMode(frontendMode);
+  }, [frontendMode, hasHydratedFrontendMode]);
 
   useEffect(() => {
     if (typeof window === "undefined") {
@@ -482,6 +511,9 @@ export default function Home() {
                 This flow is document-first. You submit a build run, wait for completion, review the generated document, then switch into context chat workspace.
               </p>
             </div>
+            {DEV_MODE_TOGGLE_ENABLED ? (
+              <DevModeToggle mode={frontendMode} onModeChange={setFrontendMode} />
+            ) : null}
           </div>
         </header>
 
@@ -764,6 +796,13 @@ export default function Home() {
                 ) : null}
                 {runError ? <p className="text-sm text-red-600">{runError}</p> : null}
               </div>
+
+              {devFeatures.showRunId || devFeatures.showApiKeyControls ? (
+                <>
+                  <Separator />
+                  <DevToolsPanel apiKeyIssue={hasApiKeyIssue} runId={runId} />
+                </>
+              ) : null}
               </CardContent>
             </Card>
           </div>
@@ -780,6 +819,8 @@ export default function Home() {
                 runId={runId}
                 enabled={documentReady}
                 onClose={() => setChatOpen(false)}
+                showContextManager={devFeatures.showContextManager}
+                showTokenMetrics={devFeatures.showChatTokenMetrics}
               />
             ) : (
               <Card className="border-slate-300">
@@ -798,6 +839,20 @@ export default function Home() {
                     <>
                       <div className="mb-3 flex justify-end">
                         <div className="flex gap-2">
+                          {devFeatures.showAssumptionsEntry ? (
+                            <Button
+                              type="button"
+                              variant="outline"
+                              onClick={() => {
+                                setChatOpen(false);
+                                setAssumptionsOpen(true);
+                              }}
+                              disabled={!runId}
+                            >
+                              <Sparkles className="h-4 w-4" />
+                              Assumptions Review
+                            </Button>
+                          ) : null}
                           <Button
                             type="button"
                             onClick={() => {

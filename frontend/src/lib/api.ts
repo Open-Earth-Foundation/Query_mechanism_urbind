@@ -320,6 +320,10 @@ export function setUserApiKey(key: string | null): void {
   userApiKey = cleaned.length > 0 ? cleaned : null;
 }
 
+export function getUserApiKey(): string | null {
+  return userApiKey;
+}
+
 function buildHeaders(includeJsonContentType: boolean): HeadersInit {
   const headers: Record<string, string> = {};
   if (includeJsonContentType) {
@@ -627,4 +631,3 @@ export async function fetchChatFollowupReferences(
     `/followups/${encodeURIComponent(bundleId)}/references${suffix ? `?${suffix}` : ""}`;
   return requestJson<ChatFollowupReferenceListResponse>(path);
 }
-

@@ -623,6 +623,8 @@ Optional frontend env:
 
 ```
 NEXT_PUBLIC_API_BASE_URL=http://127.0.0.1:8000
+NEXT_PUBLIC_FRONTEND_MODE=standard
+NEXT_PUBLIC_ENABLE_DEV_MODE_TOGGLE=true
 ```
 
 Frontend supports three city scope modes in the build form: all cities, predefined group, and manual selection.
@@ -635,13 +637,15 @@ When chat needs a single city before searching, the backend now sends clarificat
 When a direct chat prompt would overflow, the backend now falls back to an evidence-only map-reduce flow built from compact excerpt evidence and caches that stripped chat artifact under `output/<run_id>/chat_cache/evidence_chunks.json`.
 The parent/base run stays pinned in chat context selection even when it alone exceeds the token cap; extra contexts and auto-added follow-up bundles are still trimmed first.
 The `Load Previous Answer` picker reads `run_id` + `question` from `GET /api/v1/runs`, then loads selected run artifacts through the standard run endpoints.
+`NEXT_PUBLIC_FRONTEND_MODE` sets the default frontend surface, and `NEXT_PUBLIC_ENABLE_DEV_MODE_TOGGLE=true` exposes a persistent browser toggle between `standard` and `dev`.
 
-Hidden but implemented features (buttons temporarily hidden):
+Dev-mode frontend features:
 
 - `Assumptions Review` workspace: `Find Missing Data` runs two LLM passes (extract + verification), missing items are editable by city, and `Regenerate` returns revised content without persisting assumptions by default.
 - `Manage Contexts` in chat workspace: switching/combining multiple completed run contexts with token-cap enforcement.
-- Frontend user-owned OpenRouter key controls: `OpenRouter API Key (Optional)`, `Use This Key`, and `Clear` are implemented but hidden in the current UI; API-level support remains available via `X-OpenRouter-Api-Key`.
-- Chat token metrics in UI (`total_tokens`, `token_cap`, and per-context token counts) are implemented but hidden for regular users; planned to be shown in a future dev mode.
+- Chat token metrics in UI (`total_tokens`, `token_cap`, and per-context token counts).
+- Read-only `run_id` display with a copy action for quick run identification.
+- Frontend user-owned OpenRouter key controls: `OpenRouter API Key (Optional)`, `Use This Key`, and `Clear`; the override stays in memory for the current tab and is not stored in localStorage.
 
 Example file is available at `frontend/.env.example`.
 
