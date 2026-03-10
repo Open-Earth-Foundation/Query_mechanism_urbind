@@ -134,6 +134,7 @@ def test_run_chat_followup_search_uses_vector_store_retrieval_and_persists_artif
         bundle_id=result.bundle_id,
     )
     context_bundle = json.loads((bundle_dir / "context_bundle.json").read_text(encoding="utf-8"))
+    excerpts_payload = json.loads((bundle_dir / "markdown" / "excerpts.json").read_text(encoding="utf-8"))
     references = json.loads((bundle_dir / "markdown" / "references.json").read_text(encoding="utf-8"))
     retrieval = json.loads((bundle_dir / "markdown" / "retrieval.json").read_text(encoding="utf-8"))
 
@@ -151,6 +152,10 @@ def test_run_chat_followup_search_uses_vector_store_retrieval_and_persists_artif
     assert context_bundle["markdown"]["selected_city_names"] == ["Munich"]
     assert context_bundle["markdown"]["inspected_city_names"] == ["Munich"]
     assert context_bundle["markdown"]["excerpts"][0]["ref_id"] == "ref_1"
+    assert context_bundle["prompt_context_kind"] == "citation_catalog"
+    assert context_bundle["prompt_context_tokens"] > 0
+    assert excerpts_payload["prompt_context_kind"] == "citation_catalog"
+    assert excerpts_payload["prompt_context_tokens"] == context_bundle["prompt_context_tokens"]
     assert references["references"][0]["ref_id"] == "ref_1"
     assert references["references"][0]["source_chunk_ids"] == ["chunk-1"]
     assert retrieval["selected_cities"] == ["Munich"]

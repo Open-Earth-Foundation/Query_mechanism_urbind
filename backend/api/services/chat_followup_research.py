@@ -10,6 +10,10 @@ from pathlib import Path
 from typing import Any, Literal
 
 from backend.api.services.city_catalog import list_city_names
+from backend.api.services.context_prompt_cache import (
+    compute_prompt_context_cache,
+    write_prompt_context_cache,
+)
 from backend.modules.markdown_researcher.agent import extract_markdown_excerpts
 from backend.modules.markdown_researcher.services import load_markdown_documents
 from backend.modules.orchestrator.agent import refine_research_question
@@ -109,6 +113,7 @@ def run_chat_followup_search(
             bundle_id=bundle_id,
             run_id=run_id,
             conversation_id=conversation_id,
+            config=config,
             created_at=created_at,
             target_city=city_name,
             research_question=research_question,
@@ -142,6 +147,7 @@ def run_chat_followup_search(
             bundle_id=bundle_id,
             run_id=run_id,
             conversation_id=conversation_id,
+            config=config,
             created_at=created_at,
             target_city=city_name,
             research_question=question.strip(),
@@ -241,6 +247,7 @@ def _persist_followup_result(
     bundle_id: str,
     run_id: str,
     conversation_id: str,
+    config: AppConfig,
     created_at: datetime,
     target_city: str,
     research_question: str,
@@ -282,12 +289,27 @@ def _persist_followup_result(
         "markdown": markdown_bundle,
     }
 
-    _write_json(bundle_dir / "context_bundle.json", context_bundle)
-    _write_json(bundle_dir / "markdown" / "excerpts.json", {"excerpts": enriched_excerpts})
+    context_bundle_path = bundle_dir / "context_bundle.json"
+    markdown_excerpts_path = bundle_dir / "markdown" / "excerpts.json"
+    _write_json(context_bundle_path, context_bundle)
+    _write_json(markdown_excerpts_path, {"excerpts": enriched_excerpts})
     _write_json(bundle_dir / "markdown" / "references.json", references_payload)
     if retrieval_payload is not None:
         _write_json(bundle_dir / "markdown" / "retrieval.json", retrieval_payload)
 
+    prompt_context_tokens, prompt_context_kind = compute_prompt_context_cache(
+        question=research_question,
+        final_document="",
+        context_bundle=context_bundle,
+        config=config,
+    )
+    context_bundle = write_prompt_context_cache(
+        context_bundle_path=context_bundle_path,
+        markdown_excerpts_path=markdown_excerpts_path,
+        context_bundle=context_bundle,
+        prompt_context_tokens=prompt_context_tokens,
+        prompt_context_kind=prompt_context_kind,
+    )
     bundle_text = json.dumps(context_bundle, ensure_ascii=False, default=str)
     error_code = _extract_error_code(markdown_bundle.get("error"))
     error_message = _extract_error_message(markdown_bundle.get("error"))

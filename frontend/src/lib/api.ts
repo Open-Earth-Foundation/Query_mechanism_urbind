@@ -295,33 +295,14 @@ export interface ChatFollowupReferenceListResponse {
   references: RunReferenceListItem[];
 }
 
-function resolvePromptContextTokens(
-  totalTokens: number,
-  promptContextTokens?: number | null,
-): number {
-  return typeof promptContextTokens === "number" ? promptContextTokens : totalTokens;
-}
-
 function normalizeChatContextSummary(summary: ChatContextSummary): ChatContextSummary {
-  return {
-    ...summary,
-    prompt_context_tokens: resolvePromptContextTokens(
-      summary.total_tokens,
-      summary.prompt_context_tokens,
-    ),
-  };
+  return summary;
 }
 
 function normalizeChatFollowupBundleSummary(
   summary: ChatFollowupBundleSummary,
 ): ChatFollowupBundleSummary {
-  return {
-    ...summary,
-    prompt_context_tokens: resolvePromptContextTokens(
-      summary.total_tokens,
-      summary.prompt_context_tokens,
-    ),
-  };
+  return summary;
 }
 
 function normalizeChatSessionContextsResponse(
@@ -331,10 +312,6 @@ function normalizeChatSessionContextsResponse(
     ...payload,
     contexts: payload.contexts.map(normalizeChatContextSummary),
     followup_bundles: payload.followup_bundles.map(normalizeChatFollowupBundleSummary),
-    prompt_context_tokens: resolvePromptContextTokens(
-      payload.total_tokens,
-      payload.prompt_context_tokens,
-    ),
   };
 }
 
@@ -363,7 +340,7 @@ const configuredBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL?.trim() ?? "";
 const LOCAL_API_BASE_URL = "http://127.0.0.1:8000";
 const DEFAULT_API_BASE_URL = "https://urbind-query-mechanism-api.openearth.dev";
 const DEFAULT_REQUEST_TIMEOUT_MS = 120_000;
-const CHAT_SEND_REQUEST_TIMEOUT_MS = 25_000;
+const CHAT_SEND_REQUEST_TIMEOUT_MS = 300_000;
 const RUN_LIST_REQUEST_TIMEOUT_MS = 12_000;
 const STATUS_REQUEST_TIMEOUT_MS = 10_000;
 

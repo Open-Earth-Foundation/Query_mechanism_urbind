@@ -65,6 +65,52 @@ def test_fit_citation_catalog_to_budget_prunes_refs() -> None:
     assert [item["ref_id"] for item in fitted] == ["ref_1"]
 
 
+def test_fit_citation_catalog_to_budget_uses_cached_prefix_tokens(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    citation_catalog = [
+        _catalog_entry("ref_1", 8),
+        _catalog_entry("ref_2", 180),
+        _catalog_entry("ref_3", 8),
+    ]
+    prompt_header = context_chat._build_system_prompt_header(
+        original_question="What is the policy status?",
+        retry_missing_citation=False,
+    )
+    user_content = "Summarize the policy."
+    from backend.utils.config import load_config
+
+    config = load_config()
+    prompt_token_buffer = config.chat.prompt_token_buffer
+    token_cache = context_chat.build_citation_catalog_token_cache(citation_catalog)
+    token_cap = (
+        context_chat._estimate_messages_tokens([{"role": "user", "content": user_content}])
+        + count_tokens(prompt_header)
+        + prompt_token_buffer
+        + token_cache.prefix_tokens[0]
+    )
+
+    monkeypatch.setattr(
+        context_chat,
+        "_render_citation_catalog_block",
+        lambda *_args, **_kwargs: (_ for _ in ()).throw(
+            AssertionError("Cached prefix tokens should avoid catalog re-rendering.")
+        ),
+    )
+
+    fitted = context_chat._fit_citation_catalog_to_budget(
+        citation_catalog=citation_catalog,
+        prompt_header=prompt_header,
+        history=[],
+        user_content=user_content,
+        token_cap=token_cap,
+        prompt_token_buffer=prompt_token_buffer,
+        citation_prefix_tokens=token_cache.prefix_tokens,
+    )
+
+    assert [item["ref_id"] for item in fitted] == ["ref_1"]
+
+
 def test_render_citation_catalog_block_for_empty_entries() -> None:
     rendered = context_chat._render_citation_catalog_block([])
     assert "No citation entries fit within the prompt token budget" in rendered

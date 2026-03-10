@@ -65,13 +65,17 @@ function formatAdditionalResearchLabel(city: string | null | undefined): string 
   return cityLabel ? `Additional ${cityLabel} research` : "Additional city research";
 }
 
+function formatExcludedBundleLabel(bundleId: string): string {
+  // Bundle ID format: fup_{conversation_prefix}_{turn_index}_{city_key}
+  const parts = bundleId.split("_");
+  const cityKey = parts.length >= 4 ? parts.slice(3).join("_") : bundleId;
+  return formatAdditionalResearchLabel(cityKey);
+}
+
 function getPromptContextTokens(value: {
-  total_tokens: number;
-  prompt_context_tokens?: number | null;
+  prompt_context_tokens: number;
 }): number {
-  return typeof value.prompt_context_tokens === "number"
-    ? value.prompt_context_tokens
-    : value.total_tokens;
+  return value.prompt_context_tokens;
 }
 
 function describeRouting(
@@ -739,7 +743,7 @@ export function ContextChatWorkspace({
               </p>
               {showTokenMetrics ? (
                 <p>
-                  Prompt estimate: {getPromptContextTokens(sessionContexts).toLocaleString()} /{" "}
+                  Context tokens: {getPromptContextTokens(sessionContexts).toLocaleString()} /{" "}
                   {sessionContexts.token_cap.toLocaleString()}
                 </p>
               ) : null}
@@ -759,21 +763,25 @@ export function ContextChatWorkspace({
                   </Badge>
                 ))}
               </div>
-              {sessionContexts.is_capped ? (
-                [...sessionContexts.excluded_context_run_ids, ...sessionContexts.excluded_followup_bundle_ids]
-                  .length > 0 ? (
-                    <p className="text-amber-700">
-                      Some sources are excluded due to token cap or missing artifacts:{" "}
-                      {[
-                        ...sessionContexts.excluded_context_run_ids,
-                        ...sessionContexts.excluded_followup_bundle_ids,
-                      ].join(", ")}
-                    </p>
-                  ) : (
-                    <p className="text-amber-700">
-                      The selected context is very large. AI may take longer to answer.
-                    </p>
-                  )
+              {sessionContexts.excluded_followup_bundle_ids.length > 0 ? (
+                <p className="text-amber-700">
+                  {sessionContexts.excluded_followup_bundle_ids.map(formatExcludedBundleLabel).join(", ")}{" "}
+                  excluded — context already exceeds the {sessionContexts.token_cap.toLocaleString()}-token cap.
+                  Reduce the selection to re-attach city research.
+                </p>
+              ) : null}
+              {sessionContexts.excluded_context_run_ids.length > 0 ? (
+                <p className="text-amber-700">
+                  Some runs could not be loaded (broken or missing artifacts):{" "}
+                  {sessionContexts.excluded_context_run_ids.join(", ")}
+                </p>
+              ) : null}
+              {sessionContexts.is_capped &&
+              sessionContexts.excluded_followup_bundle_ids.length === 0 &&
+              sessionContexts.excluded_context_run_ids.length === 0 ? (
+                <p className="text-amber-700">
+                  The selected context is very large. AI may take longer to answer.
+                </p>
               ) : null}
             </div>
           ) : isLoadingContexts ? (
@@ -969,7 +977,7 @@ export function ContextChatWorkspace({
 
           <div className="space-y-3 p-5">
             <div className="rounded-md border border-slate-200 bg-slate-50 p-3 text-xs text-slate-700">
-              Selected prompt estimate: {selectedContextTokens.toLocaleString()} /{" "}
+              Selected context tokens: {selectedContextTokens.toLocaleString()} /{" "}
               {managerTokenCap.toLocaleString()}
               {selectionExceedsDirectCap ? (
                 <p className="mt-2 text-amber-700">

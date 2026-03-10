@@ -254,6 +254,7 @@ def test_chat_session_lifecycle(tmp_path: Path, monkeypatch: pytest.MonkeyPatch)
         config: AppConfig,
         token_cap: int = 0,
         citation_catalog: list[dict[str, str]] | None = None,
+        citation_prefix_tokens: list[int] | None = None,
         retry_missing_citation: bool = False,
         run_id: str | None = None,
     ) -> str:
@@ -265,6 +266,7 @@ def test_chat_session_lifecycle(tmp_path: Path, monkeypatch: pytest.MonkeyPatch)
         assert config.chat.model == "openai/gpt-5.2"
         assert token_cap == config.chat.max_context_total_tokens
         assert isinstance(citation_catalog, list)
+        assert citation_prefix_tokens is None or isinstance(citation_prefix_tokens, list)
         assert isinstance(retry_missing_citation, bool)
         assert run_id == "run-chat"
         return f"Echo: {user_content}"
@@ -471,12 +473,14 @@ def test_chat_supports_header_api_key_override(
         token_cap: int = 0,
         api_key_override: str | None = None,
         citation_catalog: list[dict[str, str]] | None = None,
+        citation_prefix_tokens: list[int] | None = None,
         retry_missing_citation: bool = False,
         run_id: str | None = None,
     ) -> str:
         assert isinstance(original_question, str)
         assert isinstance(contexts, list) and contexts
         assert isinstance(citation_catalog, list)
+        assert citation_prefix_tokens is None or isinstance(citation_prefix_tokens, list)
         assert isinstance(retry_missing_citation, bool)
         assert run_id == "run-chat-header"
         captured_key["value"] = api_key_override
@@ -601,6 +605,7 @@ def test_chat_builds_prompt_safe_citation_catalog_and_persists_mapping(
         config: AppConfig,
         token_cap: int = 0,
         citation_catalog: list[dict[str, str]] | None = None,
+        citation_prefix_tokens: list[int] | None = None,
         retry_missing_citation: bool = False,
         run_id: str | None = None,
     ) -> str:
@@ -610,6 +615,7 @@ def test_chat_builds_prompt_safe_citation_catalog_and_persists_mapping(
         assert config.chat.model == "openai/gpt-5.2"
         assert token_cap == config.chat.max_context_total_tokens
         assert isinstance(citation_catalog, list) and citation_catalog
+        assert citation_prefix_tokens is None or isinstance(citation_prefix_tokens, list)
         captured_catalog[:] = citation_catalog
         assert not retry_missing_citation
         assert run_id == "run-chat-citations"
@@ -697,9 +703,11 @@ def test_chat_retries_once_when_first_reply_has_no_valid_citations(
         config: AppConfig,
         token_cap: int = 0,
         citation_catalog: list[dict[str, str]] | None = None,
+        citation_prefix_tokens: list[int] | None = None,
         retry_missing_citation: bool = False,
         run_id: str | None = None,
     ) -> str:
+        _ = citation_prefix_tokens
         assert isinstance(citation_catalog, list) and citation_catalog
         assert run_id == "run-chat-retry"
         call_log.append(retry_missing_citation)
@@ -879,12 +887,14 @@ def test_chat_followup_search_attaches_bundle_and_exposes_references(
         token_cap: int = 0,
         api_key_override: str | None = None,
         citation_catalog: list[dict[str, str]] | None = None,
+        citation_prefix_tokens: list[int] | None = None,
         retry_missing_citation: bool = False,
         run_id: str | None = None,
     ) -> str:
         assert original_question == "Build doc"
         assert run_id == "run-chat-followup"
         assert isinstance(citation_catalog, list) and citation_catalog
+        assert citation_prefix_tokens is None or isinstance(citation_prefix_tokens, list)
         assert contexts[-1]["run_id"] == "fup_chat_001_munich"
         return "Munich plans rooftop solar expansion. [ref_1]"
 
@@ -1032,6 +1042,7 @@ def test_chat_followup_queued_response_exposes_city_routing(
         token_cap: int = 0,
         api_key_override: str | None = None,
         citation_catalog: list[dict[str, str]] | None = None,
+        citation_prefix_tokens: list[int] | None = None,
         retry_missing_citation: bool = False,
         run_id: str | None = None,
     ) -> str:
@@ -1040,6 +1051,7 @@ def test_chat_followup_queued_response_exposes_city_routing(
         assert user_content == "Tell me more about Izmir."
         assert run_id == "run-chat-followup-queued"
         assert isinstance(citation_catalog, list) and citation_catalog
+        assert citation_prefix_tokens is None or isinstance(citation_prefix_tokens, list)
         assert contexts[-1]["run_id"] == "fup_chat_001_izmir"
         return "Izmir plans district cooling expansion. [ref_1]"
 
@@ -1515,12 +1527,14 @@ def test_chat_clarification_city_selection_triggers_direct_followup_search(
         token_cap: int = 0,
         api_key_override: str | None = None,
         citation_catalog: list[dict[str, str]] | None = None,
+        citation_prefix_tokens: list[int] | None = None,
         retry_missing_citation: bool = False,
         run_id: str | None = None,
     ) -> str:
         _ = original_question, history, config, token_cap, api_key_override, retry_missing_citation
         assert run_id == "run-chat-city-choice"
         assert isinstance(citation_catalog, list) and citation_catalog
+        assert citation_prefix_tokens is None or isinstance(citation_prefix_tokens, list)
         assert user_content == "Compare Munich and Berlin on rooftop solar."
         assert contexts[-1]["run_id"] == "fup_chat_002_munich"
         return "Munich plans rooftop solar expansion. [ref_1]"
@@ -1666,10 +1680,19 @@ def test_chat_followup_bundles_are_pruned_to_configured_maximum(
         token_cap: int = 0,
         api_key_override: str | None = None,
         citation_catalog: list[dict[str, str]] | None = None,
+        citation_prefix_tokens: list[int] | None = None,
         retry_missing_citation: bool = False,
         run_id: str | None = None,
     ) -> str:
-        _ = original_question, history, config, token_cap, api_key_override, retry_missing_citation
+        _ = (
+            original_question,
+            history,
+            config,
+            token_cap,
+            api_key_override,
+            citation_prefix_tokens,
+            retry_missing_citation,
+        )
         assert run_id == "run-chat-prune-followups"
         assert isinstance(citation_catalog, list) and citation_catalog
         return f"{user_content} [ref_1]"
@@ -1792,10 +1815,20 @@ def test_chat_followup_same_city_search_replaces_previous_bundle(
         token_cap: int = 0,
         api_key_override: str | None = None,
         citation_catalog: list[dict[str, str]] | None = None,
+        citation_prefix_tokens: list[int] | None = None,
         retry_missing_citation: bool = False,
         run_id: str | None = None,
     ) -> str:
-        _ = original_question, history, config, token_cap, api_key_override, citation_catalog, retry_missing_citation
+        _ = (
+            original_question,
+            history,
+            config,
+            token_cap,
+            api_key_override,
+            citation_catalog,
+            citation_prefix_tokens,
+            retry_missing_citation,
+        )
         assert run_id == "run-chat-replace-followup"
         assert contexts[-1]["run_id"].startswith("fup_chat_")
         return f"{user_content} [ref_1]"
@@ -2148,3 +2181,101 @@ def test_chat_session_contexts_allow_extra_runs_when_selection_exceeds_direct_ca
             "run-other-cap",
         ]
         assert updated_payload["is_capped"] is True
+
+
+def test_chat_contexts_lazy_backfill_bundle_cache_and_reuse_session_cache(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+
+    def _stub_load_config(_path: Path | None = None) -> AppConfig:
+        return _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+
+    def _stub_run_pipeline(
+        question: str,
+        config: AppConfig,
+        run_id: str | None = None,
+        log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
+        selected_cities: list[str] | None = None,
+    ) -> RunPaths:
+        assert run_id is not None
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
+        assert selected_cities is None
+        return _write_success_artifacts(
+            question,
+            run_id,
+            config,
+            excerpts=[
+                {
+                    "ref_id": "ref_1",
+                    "city_name": "Munich",
+                    "quote": "Munich evidence sentence.",
+                    "partial_answer": "Munich evidence sentence.",
+                    "source_chunk_ids": ["chunk-hidden-1"],
+                }
+            ],
+        )
+
+    _patch_api_config_loaders(monkeypatch, _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        start = client.post(
+            "/api/v1/runs",
+            json={"question": "Build doc", "run_id": "run-chat-cache"},
+        )
+        assert start.status_code == 202
+        _poll_until_completed(client, "run-chat-cache")
+
+        create_session = client.post("/api/v1/runs/run-chat-cache/chat/sessions", json={})
+        assert create_session.status_code == 201
+        conversation_id = create_session.json()["conversation_id"]
+
+        first_contexts = client.get(
+            f"/api/v1/runs/run-chat-cache/chat/sessions/{conversation_id}/contexts"
+        )
+        assert first_contexts.status_code == 200
+        first_payload = first_contexts.json()
+        assert first_payload["prompt_context_kind"] == "citation_catalog"
+        assert first_payload["prompt_context_tokens"] > 0
+
+        context_bundle = json.loads(
+            (runs_dir / "run-chat-cache" / "context_bundle.json").read_text(encoding="utf-8")
+        )
+        markdown_excerpts = json.loads(
+            (runs_dir / "run-chat-cache" / "markdown" / "excerpts.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        session_payload = json.loads(
+            (runs_dir / "run-chat-cache" / "chat" / f"{conversation_id}.json").read_text(
+                encoding="utf-8"
+            )
+        )
+
+        assert context_bundle["prompt_context_kind"] == "citation_catalog"
+        assert context_bundle["prompt_context_tokens"] == first_payload["contexts"][0]["prompt_context_tokens"]
+        assert markdown_excerpts["prompt_context_kind"] == "citation_catalog"
+        assert markdown_excerpts["prompt_context_tokens"] == context_bundle["prompt_context_tokens"]
+        assert session_payload["prompt_context_cache"]["prompt_context_tokens"] == first_payload["prompt_context_tokens"]
+        assert session_payload["prompt_context_cache"]["citation_prefix_tokens"]
+
+        monkeypatch.setattr(
+            "backend.api.routes.chat._build_session_prompt_context_cache",
+            lambda **_kwargs: (_ for _ in ()).throw(
+                AssertionError("Session prompt cache should be reused.")
+            ),
+        )
+
+        second_contexts = client.get(
+            f"/api/v1/runs/run-chat-cache/chat/sessions/{conversation_id}/contexts"
+        )
+        assert second_contexts.status_code == 200
+        assert second_contexts.json()["prompt_context_tokens"] == first_payload["prompt_context_tokens"]

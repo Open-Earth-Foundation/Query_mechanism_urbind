@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from bisect import bisect_right
 import hashlib
 import json
 import logging
@@ -19,6 +20,7 @@ from backend.tools.calculator import (
     subtract_numbers,
     sum_numbers,
 )
+from backend.utils.city_normalization import format_city_stem
 from backend.utils.retry import RetrySettings, call_with_retries
 from backend.utils.config import AppConfig, get_openrouter_api_key
 from backend.utils.tokenization import count_tokens, get_encoding
@@ -171,6 +173,15 @@ class ContextWindowEstimate:
 
 
 @dataclass(frozen=True)
+class CitationCatalogTokenCache:
+    """Cached token accounting for one ordered citation catalog."""
+
+    ordered_ref_ids: list[str]
+    prefix_tokens: list[int]
+    total_tokens: int
+
+
+@dataclass(frozen=True)
 class _PreparedContextChatRequest:
     """Normalized chat inputs and the resolved direct-vs-split strategy."""
 
@@ -219,6 +230,7 @@ def plan_context_chat_request(
     config: AppConfig,
     token_cap: int = 0,
     citation_catalog: list[dict[str, str]] | None = None,
+    citation_prefix_tokens: list[int] | None = None,
     retry_missing_citation: bool = False,
 ) -> ContextChatPlan:
     """Plan whether one chat request can stay direct or must switch to split mode."""
@@ -230,6 +242,7 @@ def plan_context_chat_request(
         config=config,
         token_cap=token_cap,
         citation_catalog=citation_catalog,
+        citation_prefix_tokens=citation_prefix_tokens,
         retry_missing_citation=retry_missing_citation,
     )
     return ContextChatPlan(
@@ -267,6 +280,7 @@ def estimate_context_window(
         config=config,
         token_cap=token_cap,
         citation_catalog=citation_catalog,
+        citation_prefix_tokens=None,
         retry_missing_citation=False,
     )
     return ContextWindowEstimate(
@@ -286,6 +300,67 @@ def estimate_context_window(
     )
 
 
+def build_citation_catalog_from_contexts(
+    contexts: list[dict[str, Any]],
+) -> list[dict[str, str]]:
+    """Build the prompt citation catalog from stored context bundles."""
+    normalized_contexts = _normalize_contexts(contexts)
+    synthetic_index = 1
+    citation_catalog: list[dict[str, str]] = []
+    for context in normalized_contexts:
+        markdown_payload = context.context_bundle.get("markdown")
+        if not isinstance(markdown_payload, dict):
+            continue
+        raw_excerpts = markdown_payload.get("excerpts")
+        if not isinstance(raw_excerpts, list):
+            continue
+        for excerpt_index, raw_excerpt in enumerate(raw_excerpts):
+            if not isinstance(raw_excerpt, dict):
+                continue
+            source_ref_id = str(raw_excerpt.get("ref_id", "")).strip()
+            if not source_ref_id:
+                source_ref_id = f"ref_{excerpt_index + 1}"
+            if not CHAT_REF_ID_PATTERN.fullmatch(source_ref_id):
+                continue
+            quote = str(raw_excerpt.get("quote", "")).strip()
+            partial_answer = str(raw_excerpt.get("partial_answer", "")).strip()
+            if not quote and not partial_answer:
+                continue
+            citation_catalog.append(
+                {
+                    "ref_id": f"ref_{synthetic_index}",
+                    "city_name": format_city_stem(
+                        str(raw_excerpt.get("city_name", "")).strip()
+                    ),
+                    "quote": quote,
+                    "partial_answer": partial_answer,
+                }
+            )
+            synthetic_index += 1
+    return citation_catalog
+
+
+def build_citation_catalog_token_cache(
+    citation_catalog: list[dict[str, str]] | None,
+) -> CitationCatalogTokenCache:
+    """Build exact prefix-token accounting for one ordered citation catalog."""
+    normalized_catalog = _normalize_citation_catalog(citation_catalog)
+    if not normalized_catalog:
+        return CitationCatalogTokenCache(
+            ordered_ref_ids=[],
+            prefix_tokens=[],
+            total_tokens=count_tokens(_render_citation_catalog_block([])),
+        )
+    prefix_tokens: list[int] = []
+    for index in range(1, len(normalized_catalog) + 1):
+        prefix_tokens.append(count_tokens(_render_citation_catalog_block(normalized_catalog[:index])))
+    return CitationCatalogTokenCache(
+        ordered_ref_ids=[item["ref_id"] for item in normalized_catalog],
+        prefix_tokens=prefix_tokens,
+        total_tokens=prefix_tokens[-1],
+    )
+
+
 def generate_context_chat_reply(
     original_question: str,
     contexts: list[dict[str, Any]],
@@ -295,6 +370,7 @@ def generate_context_chat_reply(
     token_cap: int = 0,
     api_key_override: str | None = None,
     citation_catalog: list[dict[str, str]] | None = None,
+    citation_prefix_tokens: list[int] | None = None,
     retry_missing_citation: bool = False,
     run_id: str | None = None,
 ) -> str:
@@ -307,6 +383,7 @@ def generate_context_chat_reply(
         config=config,
         token_cap=token_cap,
         citation_catalog=citation_catalog,
+        citation_prefix_tokens=citation_prefix_tokens,
         retry_missing_citation=retry_missing_citation,
     )
     timeout = config.chat.provider_timeout_seconds
@@ -422,6 +499,7 @@ def _prepare_context_chat_request(
     config: AppConfig,
     token_cap: int,
     citation_catalog: list[dict[str, str]] | None,
+    citation_prefix_tokens: list[int] | None,
     retry_missing_citation: bool,
 ) -> _PreparedContextChatRequest:
     """Normalize one chat request and resolve the direct-vs-split strategy."""
@@ -459,6 +537,7 @@ def _prepare_context_chat_request(
             user_content=user_content,
             token_cap=effective_token_cap,
             prompt_token_buffer=config.chat.prompt_token_buffer,
+            citation_prefix_tokens=citation_prefix_tokens,
         )
         fitted_ref_ids = [item["ref_id"] for item in fitted_citations]
         fitted_catalog_tokens = count_tokens(_render_citation_catalog_block(fitted_citations))
@@ -1545,6 +1624,7 @@ def _fit_citation_catalog_to_budget(
     user_content: str,
     token_cap: int,
     prompt_token_buffer: int,
+    citation_prefix_tokens: list[int] | None = None,
 ) -> list[dict[str, str]]:
     """Keep only citation entries that fit the strict prompt budget."""
     fixed_messages = [{"role": "user", "content": user_content}] + history
@@ -1552,6 +1632,14 @@ def _fit_citation_catalog_to_budget(
     strict_budget = token_cap - fixed_tokens - count_tokens(prompt_header) - prompt_token_buffer
     if strict_budget <= 0:
         return []
+
+    normalized_prefix_tokens = _normalize_citation_prefix_tokens(
+        citation_prefix_tokens,
+        expected_entries=len(citation_catalog),
+    )
+    if normalized_prefix_tokens is not None:
+        fitted_count = bisect_right(normalized_prefix_tokens, strict_budget)
+        return citation_catalog[:fitted_count]
 
     fitted: list[dict[str, str]] = []
     for item in citation_catalog:
@@ -1585,6 +1673,26 @@ def _render_citation_catalog_block(citation_catalog: list[dict[str, str]]) -> st
             )
         )
     return "\n".join(lines)
+
+
+def _normalize_citation_prefix_tokens(
+    citation_prefix_tokens: list[int] | None,
+    *,
+    expected_entries: int,
+) -> list[int] | None:
+    """Validate cached prefix-token accounting against the current citation order."""
+    if not isinstance(citation_prefix_tokens, list):
+        return None
+    if len(citation_prefix_tokens) != expected_entries:
+        return None
+    normalized: list[int] = []
+    previous = -1
+    for raw_value in citation_prefix_tokens:
+        if not isinstance(raw_value, int) or raw_value < 0 or raw_value < previous:
+            return None
+        normalized.append(raw_value)
+        previous = raw_value
+    return normalized
 
 
 def _estimate_full_context_window_tokens(
@@ -1719,6 +1827,9 @@ __all__ = [
     "ChatContextSource",
     "ContextChatPlan",
     "ContextWindowEstimate",
+    "CitationCatalogTokenCache",
+    "build_citation_catalog_from_contexts",
+    "build_citation_catalog_token_cache",
     "estimate_context_window",
     "resolve_chat_token_cap",
     "plan_context_chat_request",

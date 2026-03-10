@@ -430,7 +430,7 @@ Context chat notes:
 - Context manager supports selecting multiple completed run contexts; manual selections may exceed the direct prompt cap and rely on overflow handling when needed.
 - Chat builds a deterministic synthetic citation catalog from selected context bundles and requires assistant citations in `[ref_n]` format.
 - Chat prompt citation context contains only `ref_id`, `city_name`, `quote`, and `partial_answer` (no chunk ids and no internal source ids).
-- Chat context APIs expose both raw stored artifact totals (`total_tokens`) and prompt-context totals (`prompt_context_tokens`) so the frontend can reflect the same excerpt-based sizing model the chat planner uses.
+- Chat context APIs use `prompt_context_tokens` as the canonical context-size metric for UI warnings, token-cap decisions, and direct-vs-split planning; raw stored totals remain diagnostic only.
 - Assistant messages persist citation metadata (`source_type`, `source_id`, `source_ref_id`) for deterministic click-to-quote resolution in frontend.
 - When a turn is predicted to use split/map-reduce overflow mode, the API persists the user message, returns `202 Accepted`, and the frontend polls the chat-job status endpoint until the final assistant message is attached to the session.
 - Only one split-mode chat job may be active per session at a time; sending another message or changing contexts while that job is pending returns `409`.
@@ -649,7 +649,7 @@ Dev-mode frontend features:
 
 - `Assumptions Review` workspace: `Find Missing Data` runs two LLM passes (extract + verification), missing items are editable by city, and `Regenerate` returns revised content without persisting assumptions by default.
 - `Manage Contexts` in chat workspace: switching/combining multiple completed run contexts with token-cap enforcement.
-- Chat token metrics in UI (`total_tokens`, `token_cap`, and per-context token counts).
+- Chat token metrics in UI (`prompt_context_tokens`, `token_cap`, and per-context context-token counts).
 - Read-only `run_id` display with a copy action for quick run identification.
 - Frontend user-owned OpenRouter key controls: `OpenRouter API Key (Optional)`, `Use This Key`, and `Clear`; the override stays in memory for the current tab and is not stored in localStorage.
 

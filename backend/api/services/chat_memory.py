@@ -83,6 +83,7 @@ class ChatMemoryStore:
                 "updated_at": now,
                 "context_run_ids": [run_id],
                 "followup_bundles": [],
+                "prompt_context_cache": None,
                 "next_job_number": 1,
                 "pending_job": None,
                 "messages": [],
@@ -180,6 +181,7 @@ class ChatMemoryStore:
             payload = self._load_session_payload_locked(run_id, conversation_id)
             normalized = self._normalize_context_run_ids(run_id, context_run_ids)
             payload["context_run_ids"] = normalized
+            payload["prompt_context_cache"] = None
             payload["updated_at"] = _utc_now_iso()
             _write_json(path, payload)
             return payload
@@ -213,6 +215,7 @@ class ChatMemoryStore:
                 filtered,
                 max_followup_bundles,
             )
+            payload["prompt_context_cache"] = None
             payload["updated_at"] = _utc_now_iso()
             _write_json(path, payload)
             return payload
@@ -236,7 +239,24 @@ class ChatMemoryStore:
             payload["followup_bundles"] = [
                 entry for entry in existing if entry["bundle_id"] in keep
             ]
+            payload["prompt_context_cache"] = None
             payload["updated_at"] = _utc_now_iso()
+            _write_json(path, payload)
+            return payload
+
+    def update_prompt_context_cache(
+        self,
+        run_id: str,
+        conversation_id: str,
+        prompt_context_cache: dict[str, object] | None,
+    ) -> dict[str, Any]:
+        """Persist the combined prompt-context cache for a session selection."""
+        path = self._session_path(run_id, conversation_id)
+        with self._lock:
+            payload = self._load_session_payload_locked(run_id, conversation_id)
+            payload["prompt_context_cache"] = (
+                dict(prompt_context_cache) if isinstance(prompt_context_cache, dict) else None
+            )
             _write_json(path, payload)
             return payload
 
