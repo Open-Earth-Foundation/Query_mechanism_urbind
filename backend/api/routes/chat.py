@@ -43,15 +43,18 @@ from backend.api.services.chat_context_loader import (
     validate_context_run_id,
 )
 from backend.api.services.chat_session_helpers import (
+    as_message,
     as_pending_job,
     as_session_response,
     build_session_contexts_response,
+    get_or_build_session_prompt_context_cache,
     pending_job_payload,
     resolve_session_contexts,
     selected_followup_bundles,
 )
 from backend.api.services.chat_reply_helpers import (
     answer_from_context_reply,
+    build_chat_citation_entries,
     build_chat_job_processor,
     build_chat_sources,
     build_city_clarification_reply,
@@ -67,6 +70,8 @@ from backend.api.services.chat_reply_helpers import (
     next_turn_index,
     queue_split_context_chat_job,
 )
+from backend.api.services.context_chat import estimate_context_window
+from backend.modules.orchestrator.models import ChatFollowupDecision
 from backend.modules.orchestrator.agent import route_chat_followup
 from backend.modules.orchestrator.utils.references import is_valid_ref_id
 from backend.utils.config import AppConfig, get_openrouter_api_key, load_config
@@ -279,8 +284,6 @@ def get_chat_session_contexts(
     except ChatSessionNotFoundError as exc:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=str(exc)) from exc
     config = _load_request_config(request)
-    from backend.api.services.chat_reply_helpers import build_chat_citation_entries
-    from backend.api.services.context_chat import estimate_context_window
     return build_session_contexts_response(
         run_id,
         conversation_id,
@@ -598,11 +601,6 @@ def send_chat_message(
         else payload.content
     )
     sources = build_chat_sources(loaded_contexts, loaded_followup_bundles)
-    
-    from backend.api.services.chat_session_helpers import get_or_build_session_prompt_context_cache
-    from backend.api.services.chat_reply_helpers import build_chat_citation_entries
-    from backend.api.services.context_chat import estimate_context_window
-    
     session, prompt_cache = get_or_build_session_prompt_context_cache(
         run_id=run_id,
         conversation_id=conversation_id,
@@ -701,8 +699,6 @@ def send_chat_message(
                 )
             )
         else:
-            from backend.modules.orchestrator.models import ChatFollowupDecision
-
             # Compute the plan before routing. Split-mode sessions are queued
             # immediately — no value routing when the answer is generated async.
             plan = build_context_reply_plan(
@@ -1044,8 +1040,6 @@ def send_chat_message(
         filtered_ids = [context.run_id for context in loaded_contexts]
         store.update_context_runs(run_id, conversation_id, filtered_ids or [run_id])
 
-    from backend.api.services.chat_session_helpers import as_message
-    
     return SendChatMessageCompletedResponse(
         mode="completed",
         run_id=run_id,
