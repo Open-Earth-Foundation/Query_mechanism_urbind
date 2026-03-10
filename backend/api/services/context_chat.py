@@ -23,6 +23,7 @@ from backend.tools.calculator import (
 from backend.utils.city_normalization import format_city_stem
 from backend.utils.retry import RetrySettings, call_with_retries
 from backend.utils.config import AppConfig, get_openrouter_api_key
+from backend.utils.json_io import read_json_object, write_json
 from backend.utils.tokenization import count_tokens, get_encoding
 
 logger = logging.getLogger(__name__)
@@ -1300,13 +1301,11 @@ def _chat_evidence_cache_path(runs_dir: Path, run_id: str) -> Path:
 
 def _read_json_object(path: Path) -> dict[str, object] | None:
     """Read one JSON object from disk with safe fallback."""
-    if not path.exists():
-        return None
-    try:
-        payload = json.loads(path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
-        logger.exception("Failed to read JSON object at %s", path)
-        return None
+    payload = read_json_object(
+        path,
+        logger=logger,
+        error_prefix="Failed to read JSON object",
+    )
     if isinstance(payload, dict):
         return payload
     return None
@@ -1314,11 +1313,7 @@ def _read_json_object(path: Path) -> dict[str, object] | None:
 
 def _write_json_object(path: Path, payload: dict[str, object]) -> None:
     """Write one JSON object artifact with stable formatting."""
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(
-        json.dumps(payload, indent=2, ensure_ascii=False),
-        encoding="utf-8",
-    )
+    write_json(path, payload, ensure_ascii=False)
 
 
 def _is_retryable_chat_error(exc: Exception) -> bool:

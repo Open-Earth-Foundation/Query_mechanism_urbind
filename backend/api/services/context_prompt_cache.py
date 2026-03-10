@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import json
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Literal, cast
@@ -13,6 +12,7 @@ from backend.api.services.context_chat import (
     resolve_chat_token_cap,
 )
 from backend.utils.config import AppConfig
+from backend.utils.json_io import read_json_object, write_json
 
 PromptContextKind = Literal["citation_catalog", "serialized_contexts"]
 _VALID_PROMPT_CONTEXT_KINDS = {"citation_catalog", "serialized_contexts"}
@@ -31,7 +31,7 @@ class TokenSidecar:
 
 def read_token_sidecar(run_dir: Path) -> TokenSidecar | None:
     """Return cached token metrics from the run sidecar when present and valid."""
-    payload = _read_json_object(run_dir / _TOKEN_SIDECAR_NAME)
+    payload = read_json_object(run_dir / _TOKEN_SIDECAR_NAME)
     if payload is None:
         return None
     doc = payload.get("document_tokens")
@@ -63,7 +63,7 @@ def write_token_sidecar(
     prompt_context_kind: PromptContextKind,
 ) -> None:
     """Persist all token metrics to the run-level sidecar file."""
-    _write_json(
+    write_json(
         run_dir / _TOKEN_SIDECAR_NAME,
         {
             "document_tokens": document_tokens,
@@ -71,6 +71,8 @@ def write_token_sidecar(
             "prompt_context_tokens": prompt_context_tokens,
             "prompt_context_kind": prompt_context_kind,
         },
+        ensure_ascii=False,
+        default=str,
     )
 
 
@@ -129,10 +131,10 @@ def write_prompt_context_cache(
     updated_bundle = dict(context_bundle)
     updated_bundle["prompt_context_tokens"] = prompt_context_tokens
     updated_bundle["prompt_context_kind"] = prompt_context_kind
-    _write_json(context_bundle_path, updated_bundle)
+    write_json(context_bundle_path, updated_bundle, ensure_ascii=False, default=str)
 
     if markdown_excerpts_path is not None:
-        excerpts_payload = _read_json_object(markdown_excerpts_path)
+        excerpts_payload = read_json_object(markdown_excerpts_path)
         if not isinstance(excerpts_payload, dict):
             markdown_payload = updated_bundle.get("markdown")
             excerpts_payload = (
@@ -140,7 +142,7 @@ def write_prompt_context_cache(
             )
         excerpts_payload["prompt_context_tokens"] = prompt_context_tokens
         excerpts_payload["prompt_context_kind"] = prompt_context_kind
-        _write_json(markdown_excerpts_path, excerpts_payload)
+        write_json(markdown_excerpts_path, excerpts_payload, ensure_ascii=False, default=str)
 
     return updated_bundle
 
@@ -157,7 +159,7 @@ def ensure_prompt_context_cache(
     """Load cached prompt-context metrics or compute and persist them once."""
     bundle_cache = read_prompt_context_cache(context_bundle)
     excerpts_payload = (
-        _read_json_object(markdown_excerpts_path) if markdown_excerpts_path is not None else None
+        read_json_object(markdown_excerpts_path) if markdown_excerpts_path is not None else None
     )
     excerpts_cache = read_prompt_context_cache(excerpts_payload)
 
@@ -199,28 +201,6 @@ def ensure_prompt_context_cache(
         prompt_context_kind=prompt_context_kind,
     )
     return updated_bundle, prompt_context_tokens, prompt_context_kind, "miss"
-
-
-def _read_json_object(path: Path) -> dict[str, Any] | None:
-    """Read one JSON object from disk when available."""
-    if not path.exists():
-        return None
-    try:
-        payload = json.loads(path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
-        return None
-    if isinstance(payload, dict):
-        return payload
-    return None
-
-
-def _write_json(path: Path, payload: dict[str, Any]) -> None:
-    """Write one JSON object using stable formatting."""
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(
-        json.dumps(payload, indent=2, ensure_ascii=False, default=str),
-        encoding="utf-8",
-    )
 
 
 __all__ = [

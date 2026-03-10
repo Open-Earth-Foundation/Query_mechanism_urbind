@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import json
 import re
 import threading
 from datetime import datetime, timezone
@@ -10,34 +9,14 @@ from pathlib import Path
 from typing import Any
 from uuid import uuid4
 
+from backend.utils.json_io import read_json_object, write_json
+
 SESSION_ID_PATTERN = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_-]{0,127}$")
 
 
 def _utc_now_iso() -> str:
     """Return ISO timestamp in UTC."""
     return datetime.now(timezone.utc).isoformat()
-
-
-def _read_json(path: Path) -> dict[str, Any] | None:
-    """Read a JSON object from disk."""
-    if not path.exists():
-        return None
-    try:
-        payload = json.loads(path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
-        return None
-    if isinstance(payload, dict):
-        return payload
-    return None
-
-
-def _write_json(path: Path, payload: dict[str, Any]) -> None:
-    """Write JSON payload with stable formatting."""
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(
-        json.dumps(payload, indent=2, ensure_ascii=True, default=str),
-        encoding="utf-8",
-    )
 
 
 class ChatSessionExistsError(ValueError):
@@ -88,14 +67,14 @@ class ChatMemoryStore:
                 "pending_job": None,
                 "messages": [],
             }
-            _write_json(path, payload)
+            write_json(path, payload, default=str)
             return payload
 
     def get_session(self, run_id: str, conversation_id: str) -> dict[str, Any]:
         """Read session payload from disk."""
         path = self._session_path(run_id, conversation_id)
         with self._lock:
-            payload = _read_json(path)
+            payload = read_json_object(path)
             if payload is None:
                 raise ChatSessionNotFoundError(
                     f"Conversation `{conversation_id}` not found for run `{run_id}`."
@@ -127,7 +106,7 @@ class ChatMemoryStore:
             messages.append(user_message)
             messages.append(assistant_message)
             payload["updated_at"] = assistant_message["created_at"]
-            _write_json(self._session_path(run_id, conversation_id), payload)
+            write_json(self._session_path(run_id, conversation_id), payload, default=str)
             return payload, user_message, assistant_message
 
     def append_user_message(
@@ -142,7 +121,7 @@ class ChatMemoryStore:
             user_message = self._build_message("user", content)
             self._messages_list(payload).append(user_message)
             payload["updated_at"] = user_message["created_at"]
-            _write_json(self._session_path(run_id, conversation_id), payload)
+            write_json(self._session_path(run_id, conversation_id), payload, default=str)
             return payload, user_message
 
     def append_assistant_message(
@@ -166,7 +145,7 @@ class ChatMemoryStore:
                 assistant_message["routing"] = routing
             self._messages_list(payload).append(assistant_message)
             payload["updated_at"] = assistant_message["created_at"]
-            _write_json(self._session_path(run_id, conversation_id), payload)
+            write_json(self._session_path(run_id, conversation_id), payload, default=str)
             return payload, assistant_message
 
     def update_context_runs(
@@ -183,7 +162,7 @@ class ChatMemoryStore:
             payload["context_run_ids"] = normalized
             payload["prompt_context_cache"] = None
             payload["updated_at"] = _utc_now_iso()
-            _write_json(path, payload)
+            write_json(path, payload, default=str)
             return payload
 
     def attach_followup_bundle(
@@ -217,7 +196,7 @@ class ChatMemoryStore:
             )
             payload["prompt_context_cache"] = None
             payload["updated_at"] = _utc_now_iso()
-            _write_json(path, payload)
+            write_json(path, payload, default=str)
             return payload
 
     def prune_followup_bundles(
@@ -241,7 +220,7 @@ class ChatMemoryStore:
             ]
             payload["prompt_context_cache"] = None
             payload["updated_at"] = _utc_now_iso()
-            _write_json(path, payload)
+            write_json(path, payload, default=str)
             return payload
 
     def update_prompt_context_cache(
@@ -257,7 +236,7 @@ class ChatMemoryStore:
             payload["prompt_context_cache"] = (
                 dict(prompt_context_cache) if isinstance(prompt_context_cache, dict) else None
             )
-            _write_json(path, payload)
+            write_json(path, payload, default=str)
             return payload
 
     def create_pending_job(
@@ -287,7 +266,7 @@ class ChatMemoryStore:
             payload["pending_job"] = pending_job
             payload["next_job_number"] = next_job_number + 1
             payload["updated_at"] = now
-            _write_json(path, payload)
+            write_json(path, payload, default=str)
             return payload, pending_job
 
     def update_pending_job_status(
@@ -310,7 +289,7 @@ class ChatMemoryStore:
             pending_job["updated_at"] = _utc_now_iso()
             payload["pending_job"] = pending_job
             payload["updated_at"] = pending_job["updated_at"]
-            _write_json(path, payload)
+            write_json(path, payload, default=str)
             return payload
 
     def clear_pending_job(
@@ -330,7 +309,7 @@ class ChatMemoryStore:
                 return payload
             payload["pending_job"] = None
             payload["updated_at"] = _utc_now_iso()
-            _write_json(path, payload)
+            write_json(path, payload, default=str)
             return payload
 
     def _chat_dir(self, run_id: str) -> Path:
@@ -427,7 +406,7 @@ class ChatMemoryStore:
     def _load_session_payload_locked(self, run_id: str, conversation_id: str) -> dict[str, Any]:
         """Load one session payload while holding the store lock."""
         path = self._session_path(run_id, conversation_id)
-        payload = _read_json(path)
+        payload = read_json_object(path)
         if payload is None:
             raise ChatSessionNotFoundError(
                 f"Conversation `{conversation_id}` not found for run `{run_id}`."

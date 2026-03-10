@@ -13,7 +13,6 @@ Outputs:
 
 from __future__ import annotations
 
-import json
 import logging
 import re
 import threading
@@ -25,6 +24,7 @@ from typing import Any, Callable, Literal
 
 from backend.api.models import RunError
 from backend.api.services.chat_memory import ChatMemoryStore
+from backend.utils.json_io import read_json_object, write_json
 
 logger = logging.getLogger(__name__)
 
@@ -42,28 +42,6 @@ CHAT_JOB_INTERRUPTED_MESSAGE = (
 def _utc_now() -> datetime:
     """Return timezone-aware UTC timestamp."""
     return datetime.now(timezone.utc)
-
-
-def _read_json(path: Path) -> dict[str, Any] | None:
-    """Read one JSON object from disk."""
-    if not path.exists():
-        return None
-    try:
-        payload = json.loads(path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
-        return None
-    if isinstance(payload, dict):
-        return payload
-    return None
-
-
-def _write_json(path: Path, payload: dict[str, Any]) -> None:
-    """Write one JSON object using stable formatting."""
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(
-        json.dumps(payload, indent=2, ensure_ascii=True, default=str),
-        encoding="utf-8",
-    )
 
 
 def _parse_datetime(value: object) -> datetime | None:
@@ -235,7 +213,7 @@ class ChatJobStore:
                 created_at=_utc_now(),
                 request_payload=command.to_request_payload(),
             )
-            _write_json(path, record.to_payload())
+            write_json(path, record.to_payload(), default=str)
             return record
 
     def get_job(self, run_id: str, conversation_id: str, job_id: str) -> ChatJobRecord | None:
@@ -299,7 +277,7 @@ class ChatJobStore:
         records: list[ChatJobRecord] = []
         with self._lock:
             for path in self._runs_dir.glob("*/chat_jobs/*/*.json"):
-                payload = _read_json(path)
+                payload = read_json_object(path)
                 if not isinstance(payload, dict):
                     continue
                 record = ChatJobRecord.from_payload(payload)
@@ -333,16 +311,17 @@ class ChatJobStore:
         job_id: str,
     ) -> ChatJobRecord | None:
         """Load one record from disk while holding the store lock."""
-        payload = _read_json(self.job_path(run_id, conversation_id, job_id))
+        payload = read_json_object(self.job_path(run_id, conversation_id, job_id))
         if not isinstance(payload, dict):
             return None
         return ChatJobRecord.from_payload(payload)
 
     def _write_record_locked(self, record: ChatJobRecord) -> None:
         """Persist one record while holding the store lock."""
-        _write_json(
+        write_json(
             self.job_path(record.run_id, record.conversation_id, record.job_id),
             record.to_payload(),
+            default=str,
         )
 
 

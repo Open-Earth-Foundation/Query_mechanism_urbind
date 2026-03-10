@@ -12,6 +12,7 @@ from pathlib import Path
 from typing import Any
 
 from backend.api.models import RunError, RunStatus
+from backend.utils.json_io import read_json_object, write_json
 from backend.utils.paths import build_run_id
 
 logger = logging.getLogger(__name__)
@@ -135,28 +136,6 @@ def _parse_datetime(value: str) -> datetime | None:
 def _utc_now() -> datetime:
     """Return timezone-aware UTC timestamp."""
     return datetime.now(timezone.utc)
-
-
-def _read_json(path: Path) -> dict[str, Any] | None:
-    """Read JSON object from file, returning None on parse errors."""
-    if not path.exists():
-        return None
-    try:
-        raw = json.loads(path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
-        return None
-    if isinstance(raw, dict):
-        return raw
-    return None
-
-
-def _write_json(path: Path, payload: dict[str, Any]) -> None:
-    """Write JSON payload to file with stable formatting."""
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(
-        json.dumps(payload, indent=2, ensure_ascii=True, default=str),
-        encoding="utf-8",
-    )
 
 
 def _coerce_status(value: str | None) -> RunStatus | None:
@@ -367,7 +346,7 @@ class RunStore:
         if self._has_record_for_run_folder_locked(run_log_path.parent.name):
             return None
 
-        run_log = _read_json(run_log_path)
+        run_log = read_json_object(run_log_path)
         if run_log is None:
             return None
 
@@ -503,7 +482,7 @@ class RunStore:
             return existing
 
         run_log_path = self._runs_dir / run_id / "run.json"
-        run_log = _read_json(run_log_path)
+        run_log = read_json_object(run_log_path)
         if run_log is None:
             return None
 
@@ -561,7 +540,7 @@ class RunStore:
         run_dir = self._runs_dir / record.run_id
         if run_dir.exists():
             try:
-                _write_json(run_dir / "api_state.json", payload)
+                write_json(run_dir / "api_state.json", payload, default=str)
             except OSError:
                 logger.exception(
                     "Failed to persist run-local API state for run_id=%s", record.run_id

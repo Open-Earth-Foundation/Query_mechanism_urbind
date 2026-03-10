@@ -25,6 +25,7 @@ from backend.modules.vector_store.retriever import (
 )
 from backend.utils.city_normalization import format_city_display_name, normalize_city_key
 from backend.utils.config import AppConfig
+from backend.utils.json_io import write_json
 from backend.utils.tokenization import count_tokens
 
 logger = logging.getLogger(__name__)
@@ -291,11 +292,26 @@ def _persist_followup_result(
 
     context_bundle_path = bundle_dir / "context_bundle.json"
     markdown_excerpts_path = bundle_dir / "markdown" / "excerpts.json"
-    _write_json(context_bundle_path, context_bundle)
-    _write_json(markdown_excerpts_path, {"excerpts": enriched_excerpts})
-    _write_json(bundle_dir / "markdown" / "references.json", references_payload)
+    write_json(context_bundle_path, context_bundle, ensure_ascii=False, default=str)
+    write_json(
+        markdown_excerpts_path,
+        {"excerpts": enriched_excerpts},
+        ensure_ascii=False,
+        default=str,
+    )
+    write_json(
+        bundle_dir / "markdown" / "references.json",
+        references_payload,
+        ensure_ascii=False,
+        default=str,
+    )
     if retrieval_payload is not None:
-        _write_json(bundle_dir / "markdown" / "retrieval.json", retrieval_payload)
+        write_json(
+            bundle_dir / "markdown" / "retrieval.json",
+            retrieval_payload,
+            ensure_ascii=False,
+            default=str,
+        )
 
     prompt_context_tokens, prompt_context_kind = compute_prompt_context_cache(
         question=research_question,
@@ -379,15 +395,6 @@ def _extract_error_message(value: object) -> str | None:
     if isinstance(message, str) and message.strip():
         return message.strip()
     return None
-
-
-def _write_json(path: Path, payload: dict[str, object]) -> None:
-    """Write one JSON artifact with stable formatting."""
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(
-        json.dumps(payload, indent=2, ensure_ascii=False, default=str),
-        encoding="utf-8",
-    )
 
 
 __all__ = [

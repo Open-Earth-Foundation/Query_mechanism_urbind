@@ -51,10 +51,30 @@ interface ContextChatWorkspaceProps {
   showTokenMetrics: boolean;
 }
 
+interface ChatTurn {
+  key: string;
+  userMessage: ChatMessage | null;
+  assistantMessages: ChatMessage[];
+}
+
+interface PendingAssistantCardOptions {
+  accentClassName: string;
+  labelClassName: string;
+  titleClassName: string;
+  detailClassName: string;
+  title: string;
+  detail: string;
+  description?: string | null;
+}
+
 const DEFAULT_CONTEXT_TOKEN_CAP = 250000;
 const CHAT_JOB_POLL_INTERVAL_MS = 2000;
 const CHAT_SEND_RECOVERY_POLL_INTERVAL_MS = 2000;
 const CHAT_SEND_RECOVERY_TIMEOUT_MS = 180000;
+const CHAT_RETRY_FAILURE_MESSAGES = new Set<string>([
+  "The long-context answer did not complete. Please retry.",
+  "The long-context answer was interrupted before completion. Please retry.",
+]);
 
 function isRequestTimeoutError(error: unknown): boolean {
   return error instanceof Error && /^Request timeout after \d+s\.$/.test(error.message);
@@ -103,6 +123,118 @@ function describeRouting(
         className: "border-teal-200 bg-teal-50 text-teal-900",
       };
   }
+}
+
+function normalizeMessageFingerprint(content: string): string {
+  return content.trim().replace(/\s+/g, " ").toLocaleLowerCase();
+}
+
+function isRetryFailureMessage(content: string): boolean {
+  return CHAT_RETRY_FAILURE_MESSAGES.has(content.trim());
+}
+
+function buildDisplayMessages(messages: ChatMessage[]): ChatMessage[] {
+  const nonEmptyMessages = messages.filter((message) => message.content.trim().length > 0);
+  const displayMessages: ChatMessage[] = [];
+  let skippedRetryFingerprint: string | null = null;
+
+  nonEmptyMessages.forEach((message, index) => {
+    if (message.role === "assistant" && isRetryFailureMessage(message.content)) {
+      const previousMessage = displayMessages.at(-1);
+      const nextMessage = nonEmptyMessages[index + 1];
+      if (
+        previousMessage?.role === "user" &&
+        nextMessage?.role === "user" &&
+        normalizeMessageFingerprint(previousMessage.content) ===
+          normalizeMessageFingerprint(nextMessage.content)
+      ) {
+        skippedRetryFingerprint = normalizeMessageFingerprint(previousMessage.content);
+        return;
+      }
+    }
+
+    if (
+      skippedRetryFingerprint &&
+      message.role === "user" &&
+      normalizeMessageFingerprint(message.content) === skippedRetryFingerprint
+    ) {
+      skippedRetryFingerprint = null;
+      return;
+    }
+
+    skippedRetryFingerprint = null;
+    displayMessages.push(message);
+  });
+
+  return displayMessages;
+}
+
+function buildChatTurns(messages: ChatMessage[]): ChatTurn[] {
+  const turns: ChatTurn[] = [];
+  let currentTurn: ChatTurn | null = null;
+
+  messages.forEach((message, index) => {
+    if (message.role === "user") {
+      if (currentTurn) {
+        turns.push(currentTurn);
+      }
+      currentTurn = {
+        key: `${message.created_at}-${index}`,
+        userMessage: message,
+        assistantMessages: [],
+      };
+      return;
+    }
+
+    if (!currentTurn) {
+      turns.push({
+        key: `${message.created_at}-${index}`,
+        userMessage: null,
+        assistantMessages: [message],
+      });
+      return;
+    }
+
+    currentTurn.assistantMessages.push(message);
+  });
+
+  if (currentTurn) {
+    turns.push(currentTurn);
+  }
+
+  return turns;
+}
+
+function UserMessageBubble({ content }: { content: string }) {
+  return (
+    <div className="flex justify-end">
+      <div className="min-w-0 w-full max-w-[88%] rounded-[1.25rem] bg-slate-900 px-4 py-3 text-sm text-white shadow-sm">
+        <p className="mb-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-300">
+          User
+        </p>
+        <p className="whitespace-pre-wrap break-words leading-relaxed">{content}</p>
+      </div>
+    </div>
+  );
+}
+
+function buildPendingJobCardOptions(
+  routing: ChatRoutingMetadata | null,
+): PendingAssistantCardOptions {
+  return {
+    accentClassName: "border-teal-100 bg-teal-50",
+    labelClassName: "text-teal-800",
+    titleClassName: "text-teal-900",
+    detailClassName: "text-teal-800",
+    title:
+      routing?.action === "search_single_city"
+        ? `${formatAdditionalResearchLabel(routing.target_city)} in progress...`
+        : "Processing long answer...",
+    detail:
+      routing?.action === "search_single_city"
+        ? "Finishing the answer with the new city context"
+        : "Working through a very large context",
+  };
 }
 
 export function ContextChatWorkspace({
@@ -326,6 +458,8 @@ export function ContextChatWorkspace({
       [...messages].sort((a, b) => a.created_at.localeCompare(b.created_at)),
     [messages],
   );
+  const displayMessages = useMemo(() => buildDisplayMessages(sortedMessages), [sortedMessages]);
+  const chatTurns = useMemo(() => buildChatTurns(displayMessages), [displayMessages]);
 
   const scrollMessagesToBottom = useCallback((): void => {
     const root = messageScrollAreaRef.current;
@@ -694,7 +828,42 @@ export function ContextChatWorkspace({
   const disabledSend =
     !canChat || !conversationId || isSending || isBootstrapping || !!pendingJob;
   const hasVisibleMessages =
-    sortedMessages.length > 0 || (isSending && !!pendingPrompt) || !!pendingJob;
+    displayMessages.length > 0 || (isSending && !!pendingPrompt) || !!pendingJob;
+  const lastChatTurn = chatTurns.at(-1) ?? null;
+  const shouldRenderStandalonePendingJob =
+    !isSending && !!pendingJob && (!lastChatTurn || !lastChatTurn.userMessage);
+
+  const renderPendingAssistantCard = (options: PendingAssistantCardOptions) => (
+    <div className="flex justify-start">
+      <div className={cn(
+        "min-w-0 w-full max-w-[88%] rounded-[1.25rem] border px-4 py-3 text-slate-900 shadow-sm",
+        options.accentClassName,
+      )}>
+        <p className={cn(
+          "mb-2 text-[11px] font-semibold uppercase tracking-[0.18em]",
+          options.labelClassName,
+        )}>
+          Assistant
+        </p>
+        <p className={cn("mb-2 text-base font-semibold", options.titleClassName)}>
+          {options.title}
+        </p>
+        {options.description ? (
+          <p className={cn("mb-2 text-sm leading-relaxed", options.detailClassName)}>
+            {options.description}
+          </p>
+        ) : null}
+        <div className={cn("inline-flex items-center gap-2 text-xs", options.detailClassName)}>
+          <span>{options.detail}</span>
+          <span className="chat-thinking-dots" aria-hidden="true">
+            <span className="chat-thinking-dot" />
+            <span className="chat-thinking-dot" />
+            <span className="chat-thinking-dot" />
+          </span>
+        </div>
+      </div>
+    </div>
+  );
 
   return (
     <>
@@ -804,132 +973,93 @@ export function ContextChatWorkspace({
                 No chat messages yet. Ask about assumptions, compare runs, or request a narrower summary.
               </p>
             ) : (
-              <div className="space-y-3">
-                {sortedMessages.map((message, index) => {
-                  const routingDescriptor = message.routing
-                    ? describeRouting(message.routing)
-                    : null;
-                  return (
-                    <div
-                      key={`${message.created_at}-${index}`}
-                      className={
-                        message.role === "user"
-                          ? "ml-8 rounded-lg bg-slate-900 p-3 text-sm text-white"
-                          : "mr-8 rounded-lg bg-amber-50 p-3 text-sm text-slate-900"
-                      }
-                    >
-                      <p className="mb-1 text-xs font-semibold uppercase tracking-wide opacity-75">
-                        {message.role}
-                      </p>
-                      {message.role === "assistant" ? (
-                        <div className="chat-markdown text-sm leading-relaxed">
-                          {routingDescriptor ? (
-                            <Badge
-                              variant="outline"
-                              className={cn("mb-3", routingDescriptor.className)}
-                            >
-                              {routingDescriptor.label}
-                            </Badge>
-                          ) : null}
-                          <MarkdownWithReferences
-                            content={message.content}
-                            runId={runId}
-                            conversationId={conversationId}
-                            chatCitations={message.citations}
-                            prefetchRunReferences={false}
-                          />
-                          {message.citation_warning ? (
-                            <p className="mt-2 text-xs text-amber-700">
-                              {message.citation_warning}
+              <div className="space-y-5">
+                {chatTurns.map((turn, turnIndex) => (
+                  <div key={turn.key} className="space-y-3">
+                    {turn.userMessage ? (
+                      <UserMessageBubble content={turn.userMessage.content} />
+                    ) : null}
+
+                    {turn.assistantMessages.map((message, assistantIndex) => {
+                      const routingDescriptor = message.routing
+                        ? describeRouting(message.routing)
+                        : null;
+                      return (
+                        <div
+                          key={`${message.created_at}-${assistantIndex}`}
+                          className="flex justify-start"
+                        >
+                          <div className="min-w-0 w-full max-w-[88%] rounded-[1.25rem] border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-slate-900 shadow-sm">
+                            <p className="mb-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500">
+                              Assistant
                             </p>
-                          ) : null}
+                            <div className="chat-markdown break-words text-sm leading-relaxed">
+                              {routingDescriptor ? (
+                                <Badge
+                                  variant="outline"
+                                  className={cn("mb-3", routingDescriptor.className)}
+                                >
+                                  {routingDescriptor.label}
+                                </Badge>
+                              ) : null}
+                              <MarkdownWithReferences
+                                content={message.content}
+                                runId={runId}
+                                conversationId={conversationId}
+                                chatCitations={message.citations}
+                                prefetchRunReferences={false}
+                              />
+                              {message.citation_warning ? (
+                                <p className="mt-2 text-xs text-amber-700">
+                                  {message.citation_warning}
+                                </p>
+                              ) : null}
+                            </div>
+                          </div>
                         </div>
-                      ) : (
-                        <p className="whitespace-pre-wrap leading-relaxed">{message.content}</p>
-                      )}
-                    </div>
-                  );
-                })}
+                      );
+                    })}
+
+                    {!isSending &&
+                    pendingJob &&
+                    turnIndex === chatTurns.length - 1 &&
+                    turn.userMessage
+                      ? renderPendingAssistantCard(buildPendingJobCardOptions(pendingJobRouting))
+                      : null}
+                  </div>
+                ))}
                 {isSending && pendingPrompt ? (
-                  <div className="ml-8 rounded-lg bg-slate-900 p-3 text-sm text-white">
-                    <p className="mb-1 text-xs font-semibold uppercase tracking-wide opacity-75">
-                      user
-                    </p>
-                    <p className="whitespace-pre-wrap leading-relaxed">{pendingPrompt}</p>
+                  <div className="space-y-3">
+                    <UserMessageBubble content={pendingPrompt} />
+                    {pendingClarificationCity
+                      ? renderPendingAssistantCard({
+                          accentClassName: "border-sky-200 bg-sky-50",
+                          labelClassName: "text-sky-700",
+                          titleClassName: "text-sky-950",
+                          detailClassName: "text-sky-800",
+                          title: `${formatAdditionalResearchLabel(pendingClarificationCity)} in progress...`,
+                          description: pendingClarificationQuestion,
+                          detail: "Searching and reading city context",
+                        })
+                      : renderPendingAssistantCard({
+                          accentClassName: "border-teal-100 bg-teal-50",
+                          labelClassName: "text-teal-800",
+                          titleClassName: "text-teal-900",
+                          detailClassName: "text-teal-800",
+                          title:
+                            showDevDiagnostics && isRecoveringSend
+                              ? "Reconnecting to backend..."
+                              : "Processing your question...",
+                          detail:
+                            showDevDiagnostics && isRecoveringSend
+                              ? `Polling backend session state (check ${recoveryPollAttempt})`
+                              : "Thinking",
+                        })}
                   </div>
                 ) : null}
-                {isSending ? (
-                  pendingClarificationCity ? (
-                    <div className="mr-8 rounded-lg border border-sky-200 bg-sky-50 p-3 text-slate-900">
-                      <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-sky-700">
-                        assistant
-                      </p>
-                      <p className="mb-1 text-base font-semibold text-sky-950">
-                        {formatAdditionalResearchLabel(pendingClarificationCity)} in progress...
-                      </p>
-                      {pendingClarificationQuestion ? (
-                        <p className="mb-2 text-sm leading-relaxed text-sky-900">
-                          {pendingClarificationQuestion}
-                        </p>
-                      ) : null}
-                      <div className="inline-flex items-center gap-2 text-xs text-sky-800">
-                        <span>Searching and reading city context</span>
-                        <span className="chat-thinking-dots" aria-hidden="true">
-                          <span className="chat-thinking-dot" />
-                          <span className="chat-thinking-dot" />
-                          <span className="chat-thinking-dot" />
-                        </span>
-                      </div>
-                    </div>
-                  ) : (
-                    <div className="mr-8 rounded-lg border border-teal-100 bg-teal-50 p-3 text-slate-900">
-                      <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-teal-800">
-                        assistant
-                      </p>
-                      <p className="mb-2 text-base font-semibold text-teal-900">
-                        {showDevDiagnostics && isRecoveringSend
-                          ? "Reconnecting to backend..."
-                          : "Processing your question..."}
-                      </p>
-                      <div className="inline-flex items-center gap-2 text-xs text-teal-800">
-                        <span>
-                          {showDevDiagnostics && isRecoveringSend
-                            ? `Polling backend session state (check ${recoveryPollAttempt})`
-                            : "Thinking"}
-                        </span>
-                        <span className="chat-thinking-dots" aria-hidden="true">
-                          <span className="chat-thinking-dot" />
-                          <span className="chat-thinking-dot" />
-                          <span className="chat-thinking-dot" />
-                        </span>
-                      </div>
-                    </div>
-                  )
-                ) : null}
-                {!isSending && pendingJob ? (
-                  <div className="mr-8 rounded-lg border border-teal-100 bg-teal-50 p-3 text-slate-900">
-                    <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-teal-800">
-                      assistant
-                    </p>
-                    <p className="mb-2 text-base font-semibold text-teal-900">
-                      {pendingJobRouting?.action === "search_single_city"
-                        ? `${formatAdditionalResearchLabel(pendingJobRouting.target_city)} in progress...`
-                        : "Processing long answer..."}
-                    </p>
-                    <div className="inline-flex items-center gap-2 text-xs text-teal-800">
-                      <span>
-                        {pendingJobRouting?.action === "search_single_city"
-                          ? "Finishing the answer with the new city context"
-                          : "Working through a very large context"}
-                      </span>
-                      <span className="chat-thinking-dots" aria-hidden="true">
-                        <span className="chat-thinking-dot" />
-                        <span className="chat-thinking-dot" />
-                        <span className="chat-thinking-dot" />
-                      </span>
-                    </div>
-                  </div>
-                ) : null}
+                {shouldRenderStandalonePendingJob
+                  ? renderPendingAssistantCard(buildPendingJobCardOptions(pendingJobRouting))
+                  : null}
               </div>
             )}
           </ScrollArea>

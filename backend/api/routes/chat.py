@@ -36,6 +36,7 @@ from backend.api.services import (
     resolve_chat_token_cap,
 )
 from backend.api.services.chat_context_loader import (
+    LoadedFollowupBundle,
     fast_context_summary,
     list_available_context_summaries,
     load_context_for_run_id,
@@ -140,6 +141,58 @@ def _load_request_config(request: Request) -> AppConfig:
     """Load AppConfig using the config path resolved at API startup."""
     config_path = getattr(request.app.state, "config_path", Path("llm_config.yaml"))
     return load_config(Path(config_path))
+
+
+def _queue_split_context_chat_response(
+    *,
+    run_id: str,
+    conversation_id: str,
+    response: Response,
+    payload_content: str,
+    original_question: str,
+    effective_user_content: str,
+    history: list[dict[str, str]],
+    context_run_ids: list[str],
+    loaded_followup_bundles: list[LoadedFollowupBundle],
+    token_cap: int,
+    assistant_routing: dict[str, object] | None,
+    api_key_override: str | None,
+    chat_memory_store: ChatMemoryStore,
+    chat_job_executor: ChatJobExecutor,
+    selected_run_ids: list[str],
+    plan: object,
+) -> SendChatMessageResponse:
+    """Queue a split-mode chat reply and normalize the HTTP response code."""
+    followup_bundle_ids = [bundle.bundle_id for bundle in loaded_followup_bundles]
+    logger.info(
+        "Context chat split job accepted run_id=%s conversation_id=%s contexts=%s "
+        "followup_bundles=%s estimated_prompt_tokens=%s context_tokens=%s split_reason=%s",
+        run_id,
+        conversation_id,
+        selected_run_ids,
+        followup_bundle_ids,
+        getattr(plan, "estimated_prompt_tokens", None),
+        getattr(plan, "context_tokens", None),
+        getattr(plan, "split_reason", None),
+    )
+    queued_response = queue_split_context_chat_job(
+        run_id=run_id,
+        conversation_id=conversation_id,
+        payload_content=payload_content,
+        original_question=original_question,
+        effective_user_content=effective_user_content,
+        history=history,
+        context_run_ids=context_run_ids,
+        followup_bundle_ids=followup_bundle_ids,
+        token_cap=token_cap,
+        assistant_routing=assistant_routing,
+        api_key_override=api_key_override,
+        chat_memory_store=chat_memory_store,
+        chat_job_executor=chat_job_executor,
+    )
+    if queued_response.mode == "queued":
+        response.status_code = status.HTTP_202_ACCEPTED
+    return queued_response
 
 
 def _require_chat_ready_run(run_id: str, request: Request) -> tuple[RunStore, RunRecord]:
@@ -656,35 +709,24 @@ def send_chat_message(
                 plan=plan,
             )
             if getattr(plan, "mode", "direct") == "split":
-                logger.info(
-                    "Context chat split job accepted run_id=%s conversation_id=%s contexts=%s "
-                    "followup_bundles=%s estimated_prompt_tokens=%s context_tokens=%s split_reason=%s",
-                    run_id,
-                    conversation_id,
-                    selected_run_ids,
-                    [bundle.bundle_id for bundle in loaded_followup_bundles],
-                    getattr(plan, "estimated_prompt_tokens", None),
-                    getattr(plan, "context_tokens", None),
-                    getattr(plan, "split_reason", None),
-                )
-                queued_response = queue_split_context_chat_job(
+                return _queue_split_context_chat_response(
                     run_id=run_id,
                     conversation_id=conversation_id,
+                    response=response,
                     payload_content=payload.content,
                     original_question=run_record.question,
                     effective_user_content=effective_user_content,
                     history=history,
                     context_run_ids=selected_run_ids,
-                    followup_bundle_ids=[bundle.bundle_id for bundle in loaded_followup_bundles],
+                    loaded_followup_bundles=loaded_followup_bundles,
                     token_cap=token_cap,
                     assistant_routing=assistant_routing,
                     api_key_override=api_key_override,
                     chat_memory_store=store,
                     chat_job_executor=chat_job_executor,
+                    selected_run_ids=selected_run_ids,
+                    plan=plan,
                 )
-                if queued_response.mode == "queued":
-                    response.status_code = status.HTTP_202_ACCEPTED
-                return queued_response
             assistant_text, assistant_citations, assistant_citation_warning = (
                 answer_from_context_reply(
                     run_id=run_id,
@@ -720,35 +762,24 @@ def send_chat_message(
                 plan=plan,
             )
             if getattr(plan, "mode", "direct") == "split":
-                logger.info(
-                    "Context chat split job accepted run_id=%s conversation_id=%s contexts=%s "
-                    "followup_bundles=%s estimated_prompt_tokens=%s context_tokens=%s split_reason=%s",
-                    run_id,
-                    conversation_id,
-                    selected_run_ids,
-                    [bundle.bundle_id for bundle in loaded_followup_bundles],
-                    getattr(plan, "estimated_prompt_tokens", None),
-                    getattr(plan, "context_tokens", None),
-                    getattr(plan, "split_reason", None),
-                )
-                queued_response = queue_split_context_chat_job(
+                return _queue_split_context_chat_response(
                     run_id=run_id,
                     conversation_id=conversation_id,
+                    response=response,
                     payload_content=payload.content,
                     original_question=run_record.question,
                     effective_user_content=effective_user_content,
                     history=history,
                     context_run_ids=selected_run_ids,
-                    followup_bundle_ids=[bundle.bundle_id for bundle in loaded_followup_bundles],
+                    loaded_followup_bundles=loaded_followup_bundles,
                     token_cap=token_cap,
                     assistant_routing=assistant_routing,
                     api_key_override=api_key_override,
                     chat_memory_store=store,
                     chat_job_executor=chat_job_executor,
+                    selected_run_ids=selected_run_ids,
+                    plan=plan,
                 )
-                if queued_response.mode == "queued":
-                    response.status_code = status.HTTP_202_ACCEPTED
-                return queued_response
 
             if clarification_city:
                 routing_decision = ChatFollowupDecision(
@@ -928,37 +959,24 @@ def send_chat_message(
                             plan=plan,
                         )
                         if getattr(plan, "mode", "direct") == "split":
-                            logger.info(
-                                "Context chat split job accepted run_id=%s conversation_id=%s contexts=%s "
-                                "followup_bundles=%s estimated_prompt_tokens=%s context_tokens=%s split_reason=%s",
-                                run_id,
-                                conversation_id,
-                                selected_run_ids,
-                                [bundle.bundle_id for bundle in loaded_followup_bundles],
-                                getattr(plan, "estimated_prompt_tokens", None),
-                                getattr(plan, "context_tokens", None),
-                                getattr(plan, "split_reason", None),
-                            )
-                            queued_response = queue_split_context_chat_job(
+                            return _queue_split_context_chat_response(
                                 run_id=run_id,
                                 conversation_id=conversation_id,
+                                response=response,
                                 payload_content=payload.content,
                                 original_question=run_record.question,
                                 effective_user_content=effective_user_content,
                                 history=history,
                                 context_run_ids=selected_run_ids,
-                                followup_bundle_ids=[
-                                    bundle.bundle_id for bundle in loaded_followup_bundles
-                                ],
+                                loaded_followup_bundles=loaded_followup_bundles,
                                 token_cap=token_cap,
                                 assistant_routing=assistant_routing,
                                 api_key_override=api_key_override,
                                 chat_memory_store=store,
                                 chat_job_executor=chat_job_executor,
+                                selected_run_ids=selected_run_ids,
+                                plan=plan,
                             )
-                            if queued_response.mode == "queued":
-                                response.status_code = status.HTTP_202_ACCEPTED
-                            return queued_response
                         assistant_text, assistant_citations, assistant_citation_warning = (
                             answer_from_context_reply(
                                 run_id=run_id,

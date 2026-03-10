@@ -381,6 +381,7 @@ body {
 .chat-markdown {
   color: #1d2737;
   line-height: 1.65;
+  min-width: 0;
 }
 
 .chat-markdown > :first-child {
@@ -429,6 +430,17 @@ body {
   color: #0f4a9d;
   text-decoration: underline;
   text-underline-offset: 2px;
+}
+
+.chat-markdown .markdown-table-wrap {
+  max-width: 100%;
+  overscroll-behavior-x: contain;
+}
+
+.chat-markdown .markdown-table {
+  width: max-content;
+  min-width: 100%;
+  table-layout: auto;
 }
 
 .chat-thinking-dots {
