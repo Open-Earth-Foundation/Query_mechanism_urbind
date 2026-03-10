@@ -624,7 +624,6 @@ Optional frontend env:
 ```
 NEXT_PUBLIC_API_BASE_URL=http://127.0.0.1:8000
 NEXT_PUBLIC_FRONTEND_MODE=standard
-NEXT_PUBLIC_ENABLE_DEV_MODE_TOGGLE=true
 ```
 
 Frontend supports three city scope modes in the build form: all cities, predefined group, and manual selection.
@@ -637,7 +636,7 @@ When chat needs a single city before searching, the backend now sends clarificat
 When a direct chat prompt would overflow, the backend now falls back to an evidence-only map-reduce flow built from compact excerpt evidence and caches that stripped chat artifact under `output/<run_id>/chat_cache/evidence_chunks.json`.
 The parent/base run stays pinned in chat context selection even when it alone exceeds the token cap; extra contexts and auto-added follow-up bundles are still trimmed first.
 The `Load Previous Answer` picker reads `run_id` + `question` from `GET /api/v1/runs`, then loads selected run artifacts through the standard run endpoints.
-`NEXT_PUBLIC_FRONTEND_MODE` sets the default frontend surface, and `NEXT_PUBLIC_ENABLE_DEV_MODE_TOGGLE=true` exposes a persistent browser toggle between `standard` and `dev`.
+`NEXT_PUBLIC_FRONTEND_MODE` sets the default frontend surface, and the page header always exposes a persistent browser toggle between `standard` and `dev`.
 
 Dev-mode frontend features:
 

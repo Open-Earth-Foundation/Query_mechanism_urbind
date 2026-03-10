@@ -22,19 +22,8 @@ function parseFrontendMode(value: string | undefined | null): FrontendMode | nul
   return null;
 }
 
-function parseBooleanFlag(value: string | undefined): boolean {
-  if (!value) {
-    return false;
-  }
-  return value.trim().toLowerCase() === "true";
-}
-
 export function getDefaultFrontendMode(): FrontendMode {
   return parseFrontendMode(process.env.NEXT_PUBLIC_FRONTEND_MODE) ?? DEFAULT_FRONTEND_MODE;
-}
-
-export function isDevModeToggleEnabled(): boolean {
-  return parseBooleanFlag(process.env.NEXT_PUBLIC_ENABLE_DEV_MODE_TOGGLE);
 }
 
 export function readStoredFrontendMode(): FrontendMode | null {

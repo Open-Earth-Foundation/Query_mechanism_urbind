@@ -25,13 +25,12 @@ Create `.env.local` or use `.env.example`:
 ```bash
 NEXT_PUBLIC_API_BASE_URL=http://127.0.0.1:8000
 NEXT_PUBLIC_FRONTEND_MODE=standard
-NEXT_PUBLIC_ENABLE_DEV_MODE_TOGGLE=true
 ```
 
 Backend API must be running at the configured base URL.
 
 `NEXT_PUBLIC_FRONTEND_MODE` sets the default surface (`standard` or `dev`).
-`NEXT_PUBLIC_ENABLE_DEV_MODE_TOGGLE=true` shows a persistent browser toggle that lets users switch between modes without reloading or changing routes.
+The page header always shows a persistent browser toggle that lets users switch between modes without reloading or changing routes.
 
 ## Dev mode
 

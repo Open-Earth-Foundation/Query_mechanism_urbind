@@ -12,7 +12,7 @@ The selected mode is stored in browser `localStorage` and remains active until t
 ## Mode controls
 
 - `NEXT_PUBLIC_FRONTEND_MODE=standard|dev` sets the default mode.
-- `NEXT_PUBLIC_ENABLE_DEV_MODE_TOGGLE=true|false` controls whether the runtime toggle is visible.
+- The runtime toggle is always visible in the page header.
 - The runtime toggle only changes frontend visibility. It is not a security boundary.
 
 ## Dev-only features

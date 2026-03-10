@@ -29,7 +29,6 @@ import {
   FrontendMode,
   getDefaultFrontendMode,
   getDevFeatureFlags,
-  isDevModeToggleEnabled,
   persistFrontendMode,
   readStoredFrontendMode,
 } from "@/lib/frontend-mode";
@@ -63,7 +62,6 @@ type CityScopeMode = "all" | "group" | "manual";
 type AnalysisMode = "aggregate" | "city_by_city";
 const LAST_RUN_ID_STORAGE_KEY = "last_run_id";
 const CONTROLS_COLLAPSED_STORAGE_KEY = "build_controls_collapsed";
-const DEV_MODE_TOGGLE_ENABLED = isDevModeToggleEnabled();
 
 export default function Home() {
   const [question, setQuestion] = useState("");
@@ -511,9 +509,7 @@ export default function Home() {
                 This flow is document-first. You submit a build run, wait for completion, review the generated document, then switch into context chat workspace.
               </p>
             </div>
-            {DEV_MODE_TOGGLE_ENABLED ? (
-              <DevModeToggle mode={frontendMode} onModeChange={setFrontendMode} />
-            ) : null}
+            <DevModeToggle mode={frontendMode} onModeChange={setFrontendMode} />
           </div>
         </header>
 
