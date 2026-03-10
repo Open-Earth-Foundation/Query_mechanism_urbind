@@ -428,8 +428,171 @@ Context chat notes:
 - Chat builds a deterministic synthetic citation catalog from selected context bundles and requires assistant citations in `[ref_n]` format.
 - Chat prompt citation context contains only `ref_id`, `city_name`, `quote`, and `partial_answer` (no chunk ids and no internal source ids).
 - Assistant messages persist citation metadata (`source_type`, `source_id`, `source_ref_id`) for deterministic click-to-quote resolution in frontend.
-- Prompt budget defaults to `250000` tokens (`CHAT_PROMPT_TOKEN_CAP`) and switches to pooled excerpts if full context exceeds this budget.
+- Prompt budget defaults to `250000` tokens (`CHAT_PROMPT_TOKEN_CAP`) and switches to the overflow map-reduce path described below when direct chat would exceed the effective budget.
 - `include_quote=false` on `/references` is the default for lightweight city-label rendering; quote payload is fetched on click using `include_quote=true`.
+
+## Context chat overflow handling
+
+This chapter describes the full runtime path used when a chat turn is too large for a normal single-pass prompt.
+
+### Goal
+
+The system should still answer grounded chat questions even when the selected run context is too large to fit in one prompt. Instead of failing or sending the raw run artifacts unchanged, chat switches to an evidence-only map-reduce flow that keeps citations deterministic and frontend click-to-quote behavior intact.
+
+### Normal direct path
+
+For every chat turn, the backend first tries the direct path:
+
+1. Resolve chat context sources.
+2. Keep the parent/base run pinned.
+3. Add extra manually selected runs only while they fit the configured token cap.
+4. Add auto-generated follow-up bundles only after the pinned base run and any fitting manual runs.
+5. Build a synthetic chat citation catalog from excerpt evidence across all included sources.
+6. Try to answer in one direct chat completion call.
+
+If that direct prompt fits, chat stays on the fast path and no overflow artifact is created.
+
+### When overflow is triggered
+
+The overflow path is used only when the direct prompt would exceed the effective chat budget after normal history trimming.
+
+Two main cases trigger it:
+
+- Citation-backed direct chat cannot fit the full normalized citation catalog inside the prompt budget.
+- Full serialized run context is too large for the direct prompt threshold or still exceeds the effective token cap after history is trimmed.
+
+This keeps the direct path fast for normal cases and activates the more expensive flow only when needed.
+
+### Lazy chat artifact
+
+On the first overflowed turn for a run, the backend builds a cached compact evidence artifact at:
+
+`output/<run_id>/chat_cache/evidence_chunks.json`
+
+This is a lazy artifact:
+
+- It is created only if chat actually overflows.
+- It is a cache, not a new source of truth.
+- It is safe to reuse because completed run artifacts are treated as immutable.
+- It is rebuilt only when the active context selection or extracted evidence changes.
+
+The cache stores a source signature plus compact evidence chunks. The source signature is derived from the active context ids and normalized evidence items so the backend can tell whether an existing cache is still valid for the current chat source set.
+
+### What is kept and what is stripped
+
+Overflow mode is evidence-only by design. The prompt payload keeps only the fields the LLM actually needs for grounded answering:
+
+- `ref_id`
+- `city_name`
+- `quote`
+- `partial_answer`
+
+The overflow prompt intentionally strips prompt-noise and backend-only data, including:
+
+- raw `context_bundle` JSON serialization
+- full `final_document`
+- artifact paths such as `final`
+- status/debug/error metadata
+- retrieval bookkeeping such as `source_chunk_ids`
+
+This reduction is the main reason large contexts can still be answered reliably.
+
+### Evidence cache structure
+
+The cached artifact is organized as token-bounded chunks of evidence items. At a high level it looks like this:
+
+```json
+{
+  "source_signature": "...",
+  "evidence_count": 42,
+  "chunks": [
+    {
+      "chunk_id": "chunk_1",
+      "ref_ids": ["ref_1", "ref_2"],
+      "items": [
+        {
+          "ref_id": "ref_1",
+          "city_name": "Munich",
+          "quote": "...",
+          "partial_answer": "..."
+        }
+      ]
+    }
+  ]
+}
+```
+
+The backend may trim oversized `quote` or `partial_answer` fields so a single evidence item can still fit inside a chunk budget. This trimming happens only inside the overflow prompt cache and does not mutate the original run artifacts.
+
+### Map step
+
+Once the compact evidence cache exists, the backend flattens the cached items and groups them into token-bounded request blocks.
+
+Each map pass:
+
+- receives one evidence block
+- is told which chunk number it is processing
+- is instructed to use only evidence from that block
+- must cite factual claims using only `[ref_n]` values present in that block
+
+This means the model never sees the full raw run payload during overflow mode. It sees only compact evidence records and produces partial grounded analyses per chunk.
+
+### Reduce step
+
+After all map passes finish, the backend merges the partial grounded analyses into a final answer.
+
+The reduce prompt:
+
+- uses only facts and citations that already appear in the partial map outputs
+- preserves valid `[ref_n]` citations on factual claims
+- merges duplicate statements
+- resolves contradictions by preferring the later corrected grounded summary when appropriate
+
+If the reduce prompt itself would become too large, the backend reduces recursively in batches until only one final answer remains. This is how the system handles very large evidence sets without assuming that a single reduce pass will fit.
+
+### Citation preservation
+
+Overflow mode does not break frontend citation behavior.
+
+The chat layer still uses the same synthetic `ref_n` scheme. After the final answer is generated, the backend resolves each synthetic citation back to its original source metadata:
+
+- `source_type`
+- `source_id`
+- `source_ref_id`
+
+Because of that mapping, the frontend can still render compact city labels and fetch the original quote on click, even when the answer came from overflow map-reduce instead of the direct prompt path.
+
+### Base-run pinning and token caps
+
+Overflow handling works together with pinned-base context selection.
+
+The parent/base run is always treated as mandatory:
+
+- it stays included even if it alone exceeds `chat.max_context_total_tokens`
+- manually selected extra runs are trimmed or rejected after the base run
+- auto-added follow-up bundles are trimmed after the base run and manual contexts
+
+This avoids a failure mode where the main report disappears from the chat context simply because additional sources were selected.
+
+When the base run alone exceeds the configured token cap:
+
+- the contexts response still includes the base run
+- `is_capped` becomes `true`
+- the UI shows that the base context remains pinned
+
+### Empty-evidence case
+
+If overflow mode finds no usable compact evidence items, the backend still uses the LLM to answer. It does not guess missing facts. Instead, it asks the model to explain briefly that the current saved context does not provide extractable grounded evidence for the question.
+
+### Why this design exists
+
+This design keeps three things true at once:
+
+- normal chat stays fast when the prompt fits
+- very large run contexts still remain answerable
+- citations remain deterministic and clickable in the UI
+
+In practice, the most important optimization is not splitting the raw run JSON into arbitrary pieces. It is stripping the prompt down to compact evidence records first, then map-reducing over those records while preserving citation ids end-to-end.
 
 Run API in Docker:
 
