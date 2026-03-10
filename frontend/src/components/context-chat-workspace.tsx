@@ -457,6 +457,12 @@ export function ContextChatWorkspace({
     };
   }, [isContextManagerOpen, runId, sessionContexts]);
 
+  useEffect(() => {
+    if (!showContextManager) {
+      setIsContextManagerOpen(false);
+    }
+  }, [showContextManager]);
+
   async function saveContextSelection(): Promise<void> {
     if (!runId || !conversationId || managerSelection.length === 0) {
       return;

@@ -808,7 +808,7 @@ export default function Home() {
           </div>
 
           <div className="min-w-0 flex-1">
-            {assumptionsOpen && documentReady && runId ? (
+            {devFeatures.showAssumptionsEntry && assumptionsOpen && documentReady && runId ? (
               <AssumptionsWorkspace
                 runId={runId}
                 enabled={documentReady}
