@@ -247,6 +247,7 @@ export function ContextChatWorkspace({
       }, 0),
     [contextById, managerSelection],
   );
+  const selectionExceedsDirectCap = selectedContextTokens > managerTokenCap;
 
   useEffect(() => {
     const latestMessage = sortedMessages.at(-1);
@@ -411,11 +412,7 @@ export function ContextChatWorkspace({
       }
 
       const context = contextById.get(targetRunId);
-      const additionalTokens = context?.total_tokens ?? 0;
-      if (selectedContextTokens + additionalTokens > managerTokenCap) {
-        setCatalogError(
-          `Selection exceeds token cap ${managerTokenCap.toLocaleString()} tokens.`,
-        );
+      if (!context) {
         return current;
       }
       setCatalogError(null);
@@ -568,7 +565,7 @@ export function ContextChatWorkspace({
                     </p>
                   ) : (
                     <p className="text-amber-700">
-                      The base context exceeds the token cap and remains pinned.
+                      The selected context is very large. AI may take longer to answer.
                     </p>
                   )
               ) : null}
@@ -716,7 +713,7 @@ export function ContextChatWorkspace({
           <DialogHeader className="border-b border-slate-200 p-5">
             <DialogTitle>Context Manager</DialogTitle>
             <DialogDescription>
-              Switch or combine multiple run contexts. Hard cap:{" "}
+              Select or combine multiple run contexts. Direct prompt cap before overflow:{" "}
               {managerTokenCap.toLocaleString()} tokens.
             </DialogDescription>
           </DialogHeader>
@@ -725,6 +722,11 @@ export function ContextChatWorkspace({
             <div className="rounded-md border border-slate-200 bg-slate-50 p-3 text-xs text-slate-700">
               Selected token estimate: {selectedContextTokens.toLocaleString()} /{" "}
               {managerTokenCap.toLocaleString()}
+              {selectionExceedsDirectCap ? (
+                <p className="mt-2 text-amber-700">
+                  This context is very large. AI may take longer to answer.
+                </p>
+              ) : null}
             </div>
 
             <ScrollArea className="h-[45vh] rounded-md border border-slate-200 p-3">
@@ -739,16 +741,13 @@ export function ContextChatWorkspace({
                 <div className="space-y-2">
                   {contextCatalog.map((context) => {
                     const selected = managerSelection.includes(context.run_id);
-                    const wouldOverflow =
-                      !selected &&
-                      selectedContextTokens + context.total_tokens > managerTokenCap;
                     const isPinnedBaseRun = context.run_id === runId;
                     return (
                       <button
                         key={context.run_id}
                         type="button"
                         onClick={() => toggleContextSelection(context.run_id)}
-                        disabled={wouldOverflow || isPinnedBaseRun}
+                        disabled={isPinnedBaseRun}
                         className={
                           selected
                             ? "w-full rounded-md border border-teal-300 bg-teal-50 p-3 text-left"
@@ -777,7 +776,8 @@ export function ContextChatWorkspace({
                 <p className="text-xs text-red-600">{catalogError}</p>
               ) : (
                 <p className="text-xs text-slate-500">
-                  The parent run stays pinned; select additional runs as needed.
+                  The parent run stays pinned; select additional runs as needed. Selections above
+                  the direct prompt cap are allowed and will use overflow mode.
                 </p>
               )}
               <Button
@@ -787,8 +787,7 @@ export function ContextChatWorkspace({
                 disabled={
                   isSavingContexts ||
                   isLoadingCatalog ||
-                  managerSelection.length === 0 ||
-                  selectedContextTokens > managerTokenCap
+                  managerSelection.length === 0
                 }
               >
                 {isSavingContexts ? <Loader2 className="h-4 w-4 animate-spin" /> : null}

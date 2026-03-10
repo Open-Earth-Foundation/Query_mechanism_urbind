@@ -424,7 +424,7 @@ Context chat notes:
 
 - Run outputs are persisted under `output/<run_id>/final.md` and `output/<run_id>/context_bundle.json`.
 - Chat sessions persist under `output/<run_id>/chat/<conversation_id>.json`.
-- Context manager supports selecting multiple completed run contexts.
+- Context manager supports selecting multiple completed run contexts; manual selections may exceed the direct prompt cap and rely on overflow handling when needed.
 - Chat builds a deterministic synthetic citation catalog from selected context bundles and requires assistant citations in `[ref_n]` format.
 - Chat prompt citation context contains only `ref_id`, `city_name`, `quote`, and `partial_answer` (no chunk ids and no internal source ids).
 - Assistant messages persist citation metadata (`source_type`, `source_id`, `source_ref_id`) for deterministic click-to-quote resolution in frontend.
@@ -445,8 +445,8 @@ For every chat turn, the backend first tries the direct path:
 
 1. Resolve chat context sources.
 2. Keep the parent/base run pinned.
-3. Add extra manually selected runs only while they fit the configured token cap.
-4. Add auto-generated follow-up bundles only after the pinned base run and any fitting manual runs.
+3. Include all manually selected run contexts, even when the combined selection exceeds the direct prompt cap.
+4. Add auto-generated follow-up bundles only while they fit after the pinned base run and any manually selected runs.
 5. Build a synthetic chat citation catalog from excerpt evidence across all included sources.
 6. Try to answer in one direct chat completion call.
 
@@ -569,7 +569,7 @@ Overflow handling works together with pinned-base context selection.
 The parent/base run is always treated as mandatory:
 
 - it stays included even if it alone exceeds `chat.max_context_total_tokens`
-- manually selected extra runs are trimmed or rejected after the base run
+- manually selected extra runs remain included even when they push the selection above the direct prompt cap
 - auto-added follow-up bundles are trimmed after the base run and manual contexts
 
 This avoids a failure mode where the main report disappears from the chat context simply because additional sources were selected.
@@ -578,7 +578,7 @@ When the base run alone exceeds the configured token cap:
 
 - the contexts response still includes the base run
 - `is_capped` becomes `true`
-- the UI shows that the base context remains pinned
+- the UI shows that the selection exceeds the direct prompt cap and overflow handling will be used when needed
 
 ### Empty-evidence case
 
@@ -634,7 +634,7 @@ When `chat.followup_search_enabled` is `true`, the chat router may run a synchro
 Follow-up search stays conservative: it never launches a multi-city refresh, and failed follow-up searches return a limitation message instead of a guessed answer.
 When chat needs a single city before searching, the backend now sends clarification metadata and the frontend opens a city-picker popup that can trigger the one-city follow-up search directly.
 When a direct chat prompt would overflow, the backend now falls back to an evidence-only map-reduce flow built from compact excerpt evidence and caches that stripped chat artifact under `output/<run_id>/chat_cache/evidence_chunks.json`.
-The parent/base run stays pinned in chat context selection even when it alone exceeds the token cap; extra contexts and auto-added follow-up bundles are still trimmed first.
+The parent/base run stays pinned in chat context selection, manual run selections may exceed the direct prompt cap, and auto-added follow-up bundles are still trimmed first.
 The `Load Previous Answer` picker reads `run_id` + `question` from `GET /api/v1/runs`, then loads selected run artifacts through the standard run endpoints.
 `NEXT_PUBLIC_FRONTEND_MODE` sets the default frontend surface, and the page header always exposes a persistent browser toggle between `standard` and `dev`.
 

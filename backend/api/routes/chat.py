@@ -487,26 +487,6 @@ def _selected_followup_bundles(session: dict[str, object]) -> list[dict[str, str
     return bundles
 
 
-def _apply_additional_context_token_cap(
-    *,
-    base_context: _LoadedContext,
-    additional_contexts: list[_LoadedContext],
-    token_cap: int,
-) -> tuple[list[_LoadedContext], list[str]]:
-    """Keep the base context pinned while capping only extra selected runs."""
-    included: list[_LoadedContext] = [base_context]
-    excluded: list[str] = []
-    running_total = base_context.total_tokens
-    for context in additional_contexts:
-        next_total = running_total + context.total_tokens
-        if next_total <= token_cap:
-            included.append(context)
-            running_total = next_total
-        else:
-            excluded.append(context.run_id)
-    return included, excluded
-
-
 def _apply_followup_bundle_token_cap(
     bundles: list[_LoadedFollowupBundle],
     token_cap: int,
@@ -539,7 +519,12 @@ def _resolve_session_contexts(
     list[_LoadedFollowupBundle],
     list[str],
 ]:
-    """Resolve selected contexts for a chat session with token cap applied."""
+    """Resolve selected contexts for a chat session.
+
+    Manual run contexts remain selected even when they exceed the direct prompt cap.
+    The cap is still applied to auto-attached follow-up bundles so chat-owned searches
+    do not grow without bound.
+    """
     selected_ids = _selected_context_run_ids(session, fallback_run_id)
     try:
         base_context = _load_context_for_run_id(run_store, fallback_run_id)
@@ -561,12 +546,7 @@ def _resolve_session_contexts(
             loaded_contexts.append(_load_context_for_run_id(run_store, context_run_id))
         except ValueError:
             excluded.append(context_run_id)
-    included, cap_excluded = _apply_additional_context_token_cap(
-        base_context=base_context,
-        additional_contexts=loaded_contexts,
-        token_cap=token_cap,
-    )
-    excluded.extend(cap_excluded)
+    included = [base_context, *loaded_contexts]
     included_total = sum(context.total_tokens for context in included)
 
     loaded_followup_bundles: list[_LoadedFollowupBundle] = []
@@ -1190,30 +1170,6 @@ def update_chat_session_contexts(
             ),
         )
 
-    base_tokens = available[run_id].total_tokens
-    extra_run_ids = [run_id_value for run_id_value in requested if run_id_value != run_id]
-    extra_tokens = sum(available[run_id_value].total_tokens for run_id_value in extra_run_ids)
-    remaining_budget = max(token_cap - base_tokens, 0)
-
-    if base_tokens > token_cap and extra_run_ids:
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail=(
-                f"Base context `{run_id}` already uses {base_tokens} tokens, "
-                f"which exceeds the {token_cap} token cap. Remove extra contexts and retry."
-            ),
-        )
-
-    if extra_tokens > remaining_budget:
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail=(
-                f"Selected extra contexts total {extra_tokens} tokens, "
-                f"which exceeds the remaining {remaining_budget} token budget "
-                f"after pinning base context `{run_id}`."
-            ),
-        )
-
     try:
         session = store.update_context_runs(
             run_id=run_id,
@@ -1540,7 +1496,7 @@ def send_chat_message(
     )
 
     if excluded_ids:
-        # Persist selected ids without unavailable/capped ids to keep session healthy.
+        # Persist selected ids without unavailable ids to keep the session healthy.
         filtered_ids = [context.run_id for context in loaded_contexts]
         store.update_context_runs(run_id, conversation_id, filtered_ids or [run_id])
 

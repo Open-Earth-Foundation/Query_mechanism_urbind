@@ -1709,7 +1709,7 @@ def test_chat_overflow_uses_evidence_map_reduce_and_reuses_cache(
         assert second_send.json()["assistant_message"]["content"] == "Second merged answer. [ref_1] [ref_2]"
 
 
-def test_chat_session_contexts_keep_base_run_pinned_when_base_exceeds_cap(
+def test_chat_session_contexts_allow_extra_runs_when_selection_exceeds_direct_cap(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
     runs_dir = tmp_path / "output"
@@ -1797,5 +1797,11 @@ def test_chat_session_contexts_keep_base_run_pinned_when_base_exceeds_cap(
             f"/api/v1/runs/run-parent-cap/chat/sessions/{conversation_id}/contexts",
             json={"context_run_ids": ["run-other-cap"]},
         )
-        assert update_contexts.status_code == 400
-        assert "Base context `run-parent-cap` already uses" in update_contexts.json()["detail"]
+        assert update_contexts.status_code == 200
+        updated_payload = update_contexts.json()
+        assert updated_payload["context_run_ids"] == ["run-parent-cap", "run-other-cap"]
+        assert [context["run_id"] for context in updated_payload["contexts"]] == [
+            "run-parent-cap",
+            "run-other-cap",
+        ]
+        assert updated_payload["is_capped"] is True
