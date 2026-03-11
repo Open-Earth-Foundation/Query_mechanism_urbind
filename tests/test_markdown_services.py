@@ -9,8 +9,10 @@ from backend.utils.config import MarkdownResearcherConfig
 
 
 def _build_markdown_config() -> MarkdownResearcherConfig:
+    """Build a markdown config with an explicit chunk budget for tests."""
     return MarkdownResearcherConfig(
         model="test",
+        max_chunk_tokens=40_000,
         chunk_overlap_tokens=2000,
         batch_max_chunks=32,
         max_workers=8,

@@ -13,10 +13,12 @@ import backend.api.services.utils.context_chat as context_chat_utils
 from backend.api.services import context_chat
 from backend.utils.config import (
     AgentConfig,
+    AssumptionsReviewerConfig,
     AppConfig,
     ChatConfig,
     MarkdownResearcherConfig,
     OrchestratorConfig,
+    RetryConfig,
     SqlResearcherConfig,
     load_config,
 )
@@ -41,6 +43,35 @@ def _markdown_researcher_config() -> MarkdownResearcherConfig:
         max_workers=8,
         request_backoff_base_seconds=0.5,
         request_backoff_max_seconds=2.0,
+    )
+
+
+def _chat_config(**overrides: object) -> ChatConfig:
+    return ChatConfig(
+        model="openai/gpt-5.2",
+        provider_timeout_seconds=60.0,
+        followup_router_max_excerpts_per_source=50,
+        **overrides,
+    )
+
+
+def _app_config(
+    *,
+    chat: ChatConfig | None = None,
+    runs_dir: Path = Path("output"),
+    markdown_dir: Path = Path("documents"),
+) -> AppConfig:
+    return AppConfig(
+        orchestrator=OrchestratorConfig(model="test-model", context_bundle_name="context_bundle.json"),
+        sql_researcher=SqlResearcherConfig(model="test-model"),
+        markdown_researcher=_markdown_researcher_config(),
+        writer=AgentConfig(model="test-model"),
+        chat=chat or _chat_config(),
+        assumptions_reviewer=AssumptionsReviewerConfig(model="test-model"),
+        retry=RetryConfig(backoff_base_seconds=1.0, backoff_max_seconds=30.0),
+        runs_dir=runs_dir,
+        markdown_dir=markdown_dir,
+        enable_sql=False,
     )
 
 
@@ -194,19 +225,11 @@ def test_estimate_context_window_reports_full_catalog_tokens_before_split() -> N
         _catalog_entry("ref_2", 180),
         _catalog_entry("ref_3", 8),
     ]
-    config = AppConfig(
-        orchestrator=OrchestratorConfig(model="test-model", context_bundle_name="context_bundle.json"),
-        sql_researcher=SqlResearcherConfig(model="test-model"),
-        markdown_researcher=_markdown_researcher_config(),
-        writer=AgentConfig(model="test-model"),
-        chat=ChatConfig(
-            model="openai/gpt-5.2",
+    config = _app_config(
+        chat=_chat_config(
             max_context_total_tokens=260,
             min_prompt_token_cap=0,
         ),
-        runs_dir=Path("output"),
-        markdown_dir=Path("documents"),
-        enable_sql=False,
     )
 
     estimate = context_chat.estimate_context_window(
@@ -305,16 +328,7 @@ def test_generate_context_chat_reply_forwards_reasoning_effort(
         _stub_run_chat_completion_with_tools,
     )
 
-    config = AppConfig(
-        orchestrator=OrchestratorConfig(model="test-model", context_bundle_name="context_bundle.json"),
-        sql_researcher=SqlResearcherConfig(model="test-model"),
-        markdown_researcher=_markdown_researcher_config(),
-        writer=AgentConfig(model="test-model"),
-        chat=ChatConfig(model="openai/gpt-5.2", reasoning_effort="high"),
-        runs_dir=Path("output"),
-        markdown_dir=Path("documents"),
-        enable_sql=False,
-    )
+    config = _app_config(chat=_chat_config(reasoning_effort="high"))
     result = context_chat.generate_context_chat_reply(
         original_question="Question",
         contexts=[
@@ -352,16 +366,7 @@ def test_generate_context_chat_reply_logs_prompt_window_metrics(
         lambda **_kwargs: _DummyResponse(),
     )
 
-    config = AppConfig(
-        orchestrator=OrchestratorConfig(model="test-model", context_bundle_name="context_bundle.json"),
-        sql_researcher=SqlResearcherConfig(model="test-model"),
-        markdown_researcher=_markdown_researcher_config(),
-        writer=AgentConfig(model="test-model"),
-        chat=ChatConfig(model="openai/gpt-5.2"),
-        runs_dir=Path("output"),
-        markdown_dir=Path("documents"),
-        enable_sql=False,
-    )
+    config = _app_config()
 
     caplog.set_level(logging.INFO, logger="backend.api.services.context_chat")
     result = context_chat.generate_context_chat_reply(
@@ -389,20 +394,12 @@ def test_generate_context_chat_reply_logs_prompt_window_metrics(
 
 def test_plan_context_chat_request_prefers_direct_mode_for_small_prompt() -> None:
     """Small grounded prompts should stay on the direct single-pass path."""
-    config = AppConfig(
-        orchestrator=OrchestratorConfig(model="test-model", context_bundle_name="context_bundle.json"),
-        sql_researcher=SqlResearcherConfig(model="test-model"),
-        markdown_researcher=_markdown_researcher_config(),
-        writer=AgentConfig(model="test-model"),
-        chat=ChatConfig(
-            model="openai/gpt-5.2",
+    config = _app_config(
+        chat=_chat_config(
             max_context_total_tokens=2_000,
             min_prompt_token_cap=0,
             prompt_token_buffer=0,
         ),
-        runs_dir=Path("output"),
-        markdown_dir=Path("documents"),
-        enable_sql=False,
     )
 
     plan = context_chat.plan_context_chat_request(
@@ -436,20 +433,12 @@ def test_plan_context_chat_request_prefers_direct_mode_for_small_prompt() -> Non
 
 def test_plan_context_chat_request_marks_large_catalog_for_split_mode() -> None:
     """Oversized citation catalogs should be routed to split mode before execution."""
-    config = AppConfig(
-        orchestrator=OrchestratorConfig(model="test-model", context_bundle_name="context_bundle.json"),
-        sql_researcher=SqlResearcherConfig(model="test-model"),
-        markdown_researcher=_markdown_researcher_config(),
-        writer=AgentConfig(model="test-model"),
-        chat=ChatConfig(
-            model="openai/gpt-5.2",
+    config = _app_config(
+        chat=_chat_config(
             max_context_total_tokens=260,
             min_prompt_token_cap=0,
             prompt_token_buffer=0,
         ),
-        runs_dir=Path("output"),
-        markdown_dir=Path("documents"),
-        enable_sql=False,
     )
 
     plan = context_chat.plan_context_chat_request(
@@ -482,21 +471,13 @@ def test_plan_context_chat_request_marks_large_catalog_for_split_mode() -> None:
 
 def test_plan_context_chat_request_reports_serialized_context_window_metrics() -> None:
     """Context-only prompts should expose serialized-context window metrics."""
-    config = AppConfig(
-        orchestrator=OrchestratorConfig(model="test-model", context_bundle_name="context_bundle.json"),
-        sql_researcher=SqlResearcherConfig(model="test-model"),
-        markdown_researcher=_markdown_researcher_config(),
-        writer=AgentConfig(model="test-model"),
-        chat=ChatConfig(
-            model="openai/gpt-5.2",
+    config = _app_config(
+        chat=_chat_config(
             max_context_total_tokens=4_000,
             min_prompt_token_cap=0,
             prompt_token_buffer=0,
             multi_pass_threshold_tokens=4_000,
         ),
-        runs_dir=Path("output"),
-        markdown_dir=Path("documents"),
-        enable_sql=False,
     )
 
     plan = context_chat.plan_context_chat_request(
@@ -529,21 +510,14 @@ def test_generate_context_chat_reply_routes_citation_overflow_to_map_reduce(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     """Oversized citation catalogs should switch into overflow map-reduce."""
-    config = AppConfig(
-        orchestrator=OrchestratorConfig(model="test-model", context_bundle_name="context_bundle.json"),
-        sql_researcher=SqlResearcherConfig(model="test-model"),
-        markdown_researcher=_markdown_researcher_config(),
-        writer=AgentConfig(model="test-model"),
-        chat=ChatConfig(
-            model="openai/gpt-5.2",
+    config = _app_config(
+        chat=_chat_config(
             reasoning_effort="high",
             max_context_total_tokens=240,
             min_prompt_token_cap=0,
             prompt_token_buffer=0,
         ),
         runs_dir=tmp_path / "output",
-        markdown_dir=Path("documents"),
-        enable_sql=False,
     )
     overflow_calls: list[dict[str, object]] = []
 
@@ -664,15 +638,9 @@ def test_run_overflow_evidence_map_reduce_logs_split_mode(
     caplog: pytest.LogCaptureFixture,
 ) -> None:
     """Overflow map-reduce should log explicit split-mode entry and phase summaries."""
-    config = AppConfig(
-        orchestrator=OrchestratorConfig(model="test-model", context_bundle_name="context_bundle.json"),
-        sql_researcher=SqlResearcherConfig(model="test-model"),
-        markdown_researcher=_markdown_researcher_config(),
-        writer=AgentConfig(model="test-model"),
-        chat=ChatConfig(model="openai/gpt-5.2", prompt_token_buffer=0),
+    config = _app_config(
+        chat=_chat_config(prompt_token_buffer=0),
         runs_dir=tmp_path / "output",
-        markdown_dir=Path("documents"),
-        enable_sql=False,
     )
     caplog.set_level(logging.INFO, logger=context_chat.__name__)
     monkeypatch.setattr(

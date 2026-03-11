@@ -7,9 +7,12 @@ from backend.modules.orchestrator import agent as orchestrator_agent
 from backend.modules.orchestrator.models import ChatFollowupDecision
 from backend.utils.config import (
     AgentConfig,
+    AssumptionsReviewerConfig,
     AppConfig,
+    ChatConfig,
     MarkdownResearcherConfig,
     OrchestratorConfig,
+    RetryConfig,
     SqlResearcherConfig,
 )
 
@@ -30,6 +33,14 @@ def _markdown_researcher_config() -> MarkdownResearcherConfig:
     )
 
 
+def _chat_config() -> ChatConfig:
+    return ChatConfig(
+        model="test-model",
+        provider_timeout_seconds=60.0,
+        followup_router_max_excerpts_per_source=50,
+    )
+
+
 def _build_test_config(tmp_path: Path) -> AppConfig:
     return AppConfig(
         orchestrator=OrchestratorConfig(
@@ -39,6 +50,9 @@ def _build_test_config(tmp_path: Path) -> AppConfig:
         sql_researcher=SqlResearcherConfig(model="test-model"),
         markdown_researcher=_markdown_researcher_config(),
         writer=AgentConfig(model="test-model"),
+        chat=_chat_config(),
+        assumptions_reviewer=AssumptionsReviewerConfig(model="test-model"),
+        retry=RetryConfig(backoff_base_seconds=1.0, backoff_max_seconds=30.0),
         runs_dir=tmp_path / "output",
         markdown_dir=tmp_path / "documents",
         enable_sql=False,
