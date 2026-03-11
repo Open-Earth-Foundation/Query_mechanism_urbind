@@ -341,6 +341,39 @@ def test_load_config_applies_chat_and_assumptions_defaults_when_sections_missing
     assert config.assumptions_reviewer.model == "openai/gpt-5.2"
 
 
+def test_load_config_applies_retry_defaults_when_section_missing(
+    tmp_path: Path,
+) -> None:
+    """Missing retry config falls back to RetryConfig defaults."""
+    config_path = tmp_path / "llm_config.yaml"
+    config_path.write_text(
+        "\n".join(
+            [
+                "orchestrator:",
+                "  model: test-model",
+                "sql_researcher:",
+                "  model: test-model",
+                "markdown_researcher:",
+                "  model: test-model",
+                "  chunk_overlap_tokens: 2000",
+                "  batch_max_chunks: 32",
+                "  max_workers: 8",
+                "  request_backoff_base_seconds: 0.5",
+                "  request_backoff_max_seconds: 2.0",
+                "writer:",
+                "  model: test-model",
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    config = load_config(config_path)
+
+    assert config.retry.max_attempts == 5
+    assert config.retry.backoff_base_seconds == 1.0
+    assert config.retry.backoff_max_seconds == 30.0
+
+
 def test_load_config_reads_central_retry_settings_from_yaml(tmp_path: Path) -> None:
     """Retry settings can be overridden via top-level retry config."""
     config_path = tmp_path / "llm_config.yaml"

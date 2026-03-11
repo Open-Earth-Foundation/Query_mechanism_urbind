@@ -93,7 +93,10 @@ class VectorStoreConfig(BaseModel):
 
 
 class RetryConfig(BaseModel):
-    """Shared retry policy for LLM and retrieval operations."""
+    """Shared retry policy for LLM and retrieval operations.
+
+    Defaults keep ``AppConfig.retry`` optional when the YAML omits a retry block.
+    """
 
     max_attempts: int = 5
     backoff_base_seconds: float = 1.0
