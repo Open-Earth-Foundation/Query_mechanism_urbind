@@ -27,14 +27,15 @@ from backend.utils.paths import RunPaths, create_run_paths
 
 
 def _build_config(runs_dir: Path, markdown_dir: Path) -> AppConfig:
+    """Build a minimal app config for assumptions API tests."""
     return AppConfig(
         orchestrator=OrchestratorConfig(
             model="test-model", context_bundle_name="context_bundle.json"
         ),
         sql_researcher=SqlResearcherConfig(model="test-model"),
-    markdown_researcher=MarkdownResearcherConfig(model="test-model"),
-    writer=WriterConfig(model="test-model"),
-    chat=ChatConfig(model="openai/gpt-5.2", max_history_messages=10),
+        markdown_researcher=MarkdownResearcherConfig(model="test-model"),
+        writer=WriterConfig(model="test-model"),
+        chat=ChatConfig(model="openai/gpt-5.2", max_history_messages=10),
         runs_dir=runs_dir,
         markdown_dir=markdown_dir,
         enable_sql=False,
