@@ -17,9 +17,11 @@ from backend.modules.writer.models import WriterOutput
 from backend.utils.config import (
     AgentConfig,
     AppConfig,
+    AssumptionsReviewerConfig,
     ChatConfig,
     MarkdownResearcherConfig,
     OrchestratorConfig,
+    RetryConfig,
     SqlResearcherConfig,
 )
 from backend.utils.paths import RunPaths, create_run_paths
@@ -31,9 +33,23 @@ def _build_config(runs_dir: Path, markdown_dir: Path) -> AppConfig:
             model="test-model", context_bundle_name="context_bundle.json"
         ),
         sql_researcher=SqlResearcherConfig(model="test-model"),
-        markdown_researcher=MarkdownResearcherConfig(model="test-model"),
+        markdown_researcher=MarkdownResearcherConfig(
+            model="test-model",
+            chunk_overlap_tokens=2000,
+            batch_max_chunks=32,
+            max_workers=8,
+            request_backoff_base_seconds=0.5,
+            request_backoff_max_seconds=2.0,
+        ),
         writer=AgentConfig(model="test-model"),
-        chat=ChatConfig(model="openai/gpt-5.2", max_history_messages=10),
+        chat=ChatConfig(
+            model="openai/gpt-5.2",
+            max_history_messages=10,
+            provider_timeout_seconds=60.0,
+            followup_router_max_excerpts_per_source=50,
+        ),
+        assumptions_reviewer=AssumptionsReviewerConfig(model="openai/gpt-5.2"),
+        retry=RetryConfig(backoff_base_seconds=1.0, backoff_max_seconds=30.0),
         runs_dir=runs_dir,
         markdown_dir=markdown_dir,
         enable_sql=False,
@@ -101,6 +117,7 @@ def test_assumptions_discover_returns_payload(
     markdown_dir = tmp_path / "documents"
     markdown_dir.mkdir(parents=True, exist_ok=True)
     config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    configured = config.model_copy(update={"enable_sql": True})
 
     app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
     with TestClient(app) as client:
@@ -112,8 +129,14 @@ def test_assumptions_discover_returns_payload(
         )
 
         monkeypatch.setattr(
-            "backend.api.routes.assumptions.discover_missing_data_for_run",
-            lambda **_: {
+            "backend.api.routes.assumptions.load_config",
+            lambda _path=None: configured,
+        )
+        def _stub_discover_missing_data_for_run(**kwargs: object) -> dict[str, object]:
+            config = kwargs["config"]
+            assert isinstance(config, AppConfig)
+            assert config.enable_sql is True
+            return {
                 "run_id": "run-assumptions",
                 "items": [
                     {
@@ -137,7 +160,11 @@ def test_assumptions_discover_returns_payload(
                     "merged_count": 1,
                     "added_in_verification": 0,
                 },
-            },
+            }
+
+        monkeypatch.setattr(
+            "backend.api.routes.assumptions.discover_missing_data_for_run",
+            _stub_discover_missing_data_for_run,
         )
 
         response = client.post("/api/v1/runs/run-assumptions/assumptions/discover")

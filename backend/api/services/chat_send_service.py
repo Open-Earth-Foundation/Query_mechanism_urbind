@@ -70,7 +70,6 @@ def process_send_chat_message(
             "Wait for it to finish before sending another message."
         )
 
-    config.enable_sql = False
     token_cap = resolve_chat_token_cap(config)
     state = _load_chat_session_state(
         run_id=run_id,

@@ -13,8 +13,11 @@ from backend.modules.vector_store.models import RetrievedChunk
 from backend.utils.config import (
     AgentConfig,
     AppConfig,
+    AssumptionsReviewerConfig,
+    ChatConfig,
     MarkdownResearcherConfig,
     OrchestratorConfig,
+    RetryConfig,
     SqlResearcherConfig,
 )
 
@@ -26,8 +29,22 @@ def _build_test_config(tmp_path: Path, *, vector_store_enabled: bool) -> AppConf
             context_bundle_name="context_bundle.json",
         ),
         sql_researcher=SqlResearcherConfig(model="test-model"),
-        markdown_researcher=MarkdownResearcherConfig(model="test-model"),
+        markdown_researcher=MarkdownResearcherConfig(
+            model="test-model",
+            chunk_overlap_tokens=2000,
+            batch_max_chunks=32,
+            max_workers=8,
+            request_backoff_base_seconds=0.5,
+            request_backoff_max_seconds=2.0,
+        ),
         writer=AgentConfig(model="test-model"),
+        chat=ChatConfig(
+            model="test-model",
+            provider_timeout_seconds=60.0,
+            followup_router_max_excerpts_per_source=50,
+        ),
+        assumptions_reviewer=AssumptionsReviewerConfig(model="test-model"),
+        retry=RetryConfig(backoff_base_seconds=1.0, backoff_max_seconds=30.0),
         runs_dir=tmp_path / "output",
         markdown_dir=tmp_path / "documents",
         enable_sql=True,
@@ -125,7 +142,7 @@ def test_run_chat_followup_search_uses_vector_store_retrieval_and_persists_artif
     assert result.excerpt_count == 1
     assert result.target_city == "Munich"
     assert result.total_tokens > 0
-    assert not config.enable_sql
+    assert config.enable_sql is True
 
     bundle_dir = chat_followup_research.followup_bundle_dir(
         runs_dir=config.runs_dir,

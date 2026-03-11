@@ -19,6 +19,17 @@ class _FakeRunResult:
         self.final_output = final_output
 
 
+def _markdown_researcher_config() -> MarkdownResearcherConfig:
+    return MarkdownResearcherConfig(
+        model="test-model",
+        chunk_overlap_tokens=2000,
+        batch_max_chunks=32,
+        max_workers=8,
+        request_backoff_base_seconds=0.5,
+        request_backoff_max_seconds=2.0,
+    )
+
+
 def _build_test_config(tmp_path: Path) -> AppConfig:
     return AppConfig(
         orchestrator=OrchestratorConfig(
@@ -26,7 +37,7 @@ def _build_test_config(tmp_path: Path) -> AppConfig:
             context_bundle_name="context_bundle.json",
         ),
         sql_researcher=SqlResearcherConfig(model="test-model"),
-        markdown_researcher=MarkdownResearcherConfig(model="test-model"),
+        markdown_researcher=_markdown_researcher_config(),
         writer=AgentConfig(model="test-model"),
         runs_dir=tmp_path / "output",
         markdown_dir=tmp_path / "documents",

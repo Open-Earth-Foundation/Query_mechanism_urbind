@@ -33,6 +33,17 @@ def _catalog_entry(ref_id: str, token_repeats: int) -> dict[str, str]:
     }
 
 
+def _markdown_researcher_config() -> MarkdownResearcherConfig:
+    return MarkdownResearcherConfig(
+        model="test-model",
+        chunk_overlap_tokens=2000,
+        batch_max_chunks=32,
+        max_workers=8,
+        request_backoff_base_seconds=0.5,
+        request_backoff_max_seconds=2.0,
+    )
+
+
 def test_fit_citation_catalog_to_budget_prunes_refs() -> None:
     citation_catalog = [
         _catalog_entry("ref_1", 8),
@@ -186,7 +197,7 @@ def test_estimate_context_window_reports_full_catalog_tokens_before_split() -> N
     config = AppConfig(
         orchestrator=OrchestratorConfig(model="test-model", context_bundle_name="context_bundle.json"),
         sql_researcher=SqlResearcherConfig(model="test-model"),
-        markdown_researcher=MarkdownResearcherConfig(model="test-model"),
+        markdown_researcher=_markdown_researcher_config(),
         writer=AgentConfig(model="test-model"),
         chat=ChatConfig(
             model="openai/gpt-5.2",
@@ -297,7 +308,7 @@ def test_generate_context_chat_reply_forwards_reasoning_effort(
     config = AppConfig(
         orchestrator=OrchestratorConfig(model="test-model", context_bundle_name="context_bundle.json"),
         sql_researcher=SqlResearcherConfig(model="test-model"),
-        markdown_researcher=MarkdownResearcherConfig(model="test-model"),
+        markdown_researcher=_markdown_researcher_config(),
         writer=AgentConfig(model="test-model"),
         chat=ChatConfig(model="openai/gpt-5.2", reasoning_effort="high"),
         runs_dir=Path("output"),
@@ -344,7 +355,7 @@ def test_generate_context_chat_reply_logs_prompt_window_metrics(
     config = AppConfig(
         orchestrator=OrchestratorConfig(model="test-model", context_bundle_name="context_bundle.json"),
         sql_researcher=SqlResearcherConfig(model="test-model"),
-        markdown_researcher=MarkdownResearcherConfig(model="test-model"),
+        markdown_researcher=_markdown_researcher_config(),
         writer=AgentConfig(model="test-model"),
         chat=ChatConfig(model="openai/gpt-5.2"),
         runs_dir=Path("output"),
@@ -381,7 +392,7 @@ def test_plan_context_chat_request_prefers_direct_mode_for_small_prompt() -> Non
     config = AppConfig(
         orchestrator=OrchestratorConfig(model="test-model", context_bundle_name="context_bundle.json"),
         sql_researcher=SqlResearcherConfig(model="test-model"),
-        markdown_researcher=MarkdownResearcherConfig(model="test-model"),
+        markdown_researcher=_markdown_researcher_config(),
         writer=AgentConfig(model="test-model"),
         chat=ChatConfig(
             model="openai/gpt-5.2",
@@ -428,7 +439,7 @@ def test_plan_context_chat_request_marks_large_catalog_for_split_mode() -> None:
     config = AppConfig(
         orchestrator=OrchestratorConfig(model="test-model", context_bundle_name="context_bundle.json"),
         sql_researcher=SqlResearcherConfig(model="test-model"),
-        markdown_researcher=MarkdownResearcherConfig(model="test-model"),
+        markdown_researcher=_markdown_researcher_config(),
         writer=AgentConfig(model="test-model"),
         chat=ChatConfig(
             model="openai/gpt-5.2",
@@ -474,7 +485,7 @@ def test_plan_context_chat_request_reports_serialized_context_window_metrics() -
     config = AppConfig(
         orchestrator=OrchestratorConfig(model="test-model", context_bundle_name="context_bundle.json"),
         sql_researcher=SqlResearcherConfig(model="test-model"),
-        markdown_researcher=MarkdownResearcherConfig(model="test-model"),
+        markdown_researcher=_markdown_researcher_config(),
         writer=AgentConfig(model="test-model"),
         chat=ChatConfig(
             model="openai/gpt-5.2",
@@ -521,7 +532,7 @@ def test_generate_context_chat_reply_routes_citation_overflow_to_map_reduce(
     config = AppConfig(
         orchestrator=OrchestratorConfig(model="test-model", context_bundle_name="context_bundle.json"),
         sql_researcher=SqlResearcherConfig(model="test-model"),
-        markdown_researcher=MarkdownResearcherConfig(model="test-model"),
+        markdown_researcher=_markdown_researcher_config(),
         writer=AgentConfig(model="test-model"),
         chat=ChatConfig(
             model="openai/gpt-5.2",
@@ -656,7 +667,7 @@ def test_run_overflow_evidence_map_reduce_logs_split_mode(
     config = AppConfig(
         orchestrator=OrchestratorConfig(model="test-model", context_bundle_name="context_bundle.json"),
         sql_researcher=SqlResearcherConfig(model="test-model"),
-        markdown_researcher=MarkdownResearcherConfig(model="test-model"),
+        markdown_researcher=_markdown_researcher_config(),
         writer=AgentConfig(model="test-model"),
         chat=ChatConfig(model="openai/gpt-5.2", prompt_token_buffer=0),
         runs_dir=tmp_path / "output",

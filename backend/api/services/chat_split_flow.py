@@ -49,7 +49,6 @@ def build_chat_job_processor(
     def _processor(command: StartChatJobCommand) -> ChatJobResult:
         session = chat_memory_store.get_session(command.run_id, command.conversation_id)
         config = load_config(config_path)
-        config.enable_sql = False
         loaded_contexts = [
             load_context_for_run_id(run_store, context_run_id, config)
             for context_run_id in command.context_run_ids

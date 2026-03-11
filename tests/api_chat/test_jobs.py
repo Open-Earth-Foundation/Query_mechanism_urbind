@@ -40,7 +40,7 @@ def test_chat_followup_queued_response_exposes_city_routing(
             runs_dir=runs_dir,
             markdown_dir=markdown_dir,
             followup_search_enabled=True,
-        )
+        ).model_copy(update={"enable_sql": True})
 
     def _stub_run_pipeline(
         question: str,
@@ -55,6 +55,7 @@ def test_chat_followup_queued_response_exposes_city_routing(
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert config.enable_sql is True
         return write_success_artifacts(question, run_id, config, excerpts=[])
 
     def _stub_route_chat_followup(
@@ -85,6 +86,7 @@ def test_chat_followup_queued_response_exposes_city_routing(
     ) -> ChatFollowupSearchResult:
         _ = question, config, api_key, log_llm_payload
         assert turn_index == 1
+        assert config.enable_sql is True
         bundle_id = "fup_chat_001_izmir"
         write_followup_bundle(
             runs_dir=runs_dir,
@@ -136,6 +138,7 @@ def test_chat_followup_queued_response_exposes_city_routing(
         assert isinstance(citation_catalog, list) and citation_catalog
         assert citation_prefix_tokens is None or isinstance(citation_prefix_tokens, list)
         assert contexts[-1]["run_id"] == "fup_chat_001_izmir"
+        assert config.enable_sql is True
         return "Izmir plans district cooling expansion. [ref_1]"
 
     patch_api_config_loaders(monkeypatch, _stub_load_config)

@@ -5,7 +5,6 @@ from __future__ import annotations
 import hashlib
 import json
 import logging
-from pathlib import Path
 from typing import Any, Callable
 
 from openai import OpenAI
@@ -94,6 +93,17 @@ def _run_overflow_evidence_map_reduce(
         user_content=user_content,
         effective_token_cap=effective_token_cap,
         prompt_token_buffer=config.chat.prompt_token_buffer,
+        minimum_remaining_budget=max(
+            (
+                token_count
+                for token_count in (
+                    chunk.get("token_count")
+                    for chunk in cache_chunks
+                )
+                if isinstance(token_count, int)
+            ),
+            default=1,
+        ),
     )
     evidence_blocks = _resolve_request_evidence_blocks(
         cache_chunks=cache_chunks,
@@ -435,13 +445,29 @@ def _build_evidence_cache_chunks(
     evidence_items: list[dict[str, str]],
     block_budget: int,
 ) -> list[dict[str, object]]:
-    """Pack full evidence items into ordered cache chunks without trimming text."""
+    """Fit oversized evidence items once, then pack them into ordered cache chunks."""
+    return _chunk_evidence_items(
+        evidence_items=evidence_items,
+        block_budget=block_budget,
+    )
+
+
+def _chunk_evidence_items(
+    *,
+    evidence_items: list[dict[str, str]],
+    block_budget: int,
+) -> list[dict[str, object]]:
+    """Pack prompt-safe evidence items into token-bounded cache chunks."""
     if block_budget <= 0:
         return []
     chunks: list[dict[str, object]] = []
     current_items: list[dict[str, str]] = []
     for item in evidence_items:
-        candidate_items = current_items + [item]
+        fitted_item = _fit_evidence_item_to_budget(
+            item=item,
+            block_budget=block_budget,
+        )
+        candidate_items = current_items + [fitted_item]
         if current_items and count_tokens(_render_evidence_items_block(candidate_items)) > block_budget:
             chunks.append(
                 _make_evidence_cache_chunk(
@@ -449,7 +475,7 @@ def _build_evidence_cache_chunks(
                     items=current_items,
                 )
             )
-            current_items = [item]
+            current_items = [fitted_item]
             continue
         current_items = candidate_items
     if current_items:
@@ -460,6 +486,80 @@ def _build_evidence_cache_chunks(
             )
         )
     return chunks
+
+
+def _fit_evidence_item_to_budget(
+    *,
+    item: dict[str, str],
+    block_budget: int,
+) -> dict[str, str]:
+    """Trim one evidence item until its rendered block fits the cache budget."""
+    fitted_item = {
+        "ref_id": str(item.get("ref_id", "")).strip(),
+        "city_name": str(item.get("city_name", "")).strip(),
+        "quote": str(item.get("quote", "")).strip(),
+        "partial_answer": str(item.get("partial_answer", "")).strip(),
+    }
+    if count_tokens(_render_evidence_items_block([fitted_item])) <= block_budget:
+        return fitted_item
+
+    minimal_item = dict(fitted_item)
+    minimal_item["quote"] = ""
+    minimal_item["partial_answer"] = ""
+    if count_tokens(_render_evidence_items_block([minimal_item])) > block_budget:
+        raise ValueError(
+            f"Evidence item `{fitted_item['ref_id']}` does not fit the cache chunk budget "
+            f"({block_budget}) even after trimming quote and partial answer."
+        )
+
+    for field_name in ("quote", "partial_answer"):
+        fitted_item[field_name] = _fit_evidence_text_field_to_budget(
+            item=fitted_item,
+            field_name=field_name,
+            block_budget=block_budget,
+        )
+        if count_tokens(_render_evidence_items_block([fitted_item])) <= block_budget:
+            return fitted_item
+
+    raise ValueError(
+        f"Evidence item `{fitted_item['ref_id']}` does not fit the cache chunk budget "
+        f"({block_budget}) after trimming."
+    )
+
+
+def _fit_evidence_text_field_to_budget(
+    *,
+    item: dict[str, str],
+    field_name: str,
+    block_budget: int,
+) -> str:
+    """Return the longest word-trimmed field value that still fits the item budget."""
+    raw_value = item.get(field_name, "")
+    if not raw_value:
+        return ""
+    words = raw_value.split()
+    best_value = ""
+    low = 0
+    high = len(words)
+    while low <= high:
+        midpoint = (low + high) // 2
+        candidate_item = dict(item)
+        candidate_item[field_name] = _truncate_words(words, midpoint)
+        if count_tokens(_render_evidence_items_block([candidate_item])) <= block_budget:
+            best_value = candidate_item[field_name]
+            low = midpoint + 1
+            continue
+        high = midpoint - 1
+    return best_value
+
+
+def _truncate_words(words: list[str], word_count: int) -> str:
+    """Return a stable truncated text fragment from a word list."""
+    if word_count <= 0:
+        return ""
+    if word_count >= len(words):
+        return " ".join(words)
+    return f"{' '.join(words[:word_count])} ..."
 
 
 def _make_evidence_cache_chunk(
@@ -564,8 +664,9 @@ def _resolve_prompt_budget(
     user_content: str,
     effective_token_cap: int,
     prompt_token_buffer: int,
+    minimum_remaining_budget: int = 1,
 ) -> tuple[list[dict[str, str]], int]:
-    """Trim history until the prompt has positive remaining budget for context blocks."""
+    """Trim history until the prompt has enough remaining budget for context blocks."""
     working_history = list(history)
     while True:
         system_prompt = prompt_factory()
@@ -573,7 +674,10 @@ def _resolve_prompt_budget(
             _build_messages(system_prompt, working_history, user_content)
         )
         remaining_budget = effective_token_cap - prompt_tokens - prompt_token_buffer
-        if remaining_budget > 0 or not working_history:
+        if (
+            (remaining_budget >= minimum_remaining_budget and remaining_budget > 0)
+            or not working_history
+        ):
             return working_history, remaining_budget
         working_history = working_history[1:]
 

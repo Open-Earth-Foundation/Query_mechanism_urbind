@@ -15,7 +15,7 @@ import { ChatContextSummary } from "@/lib/api";
 interface ContextManagerDialogProps {
   open: boolean;
   runId: string;
-  managerTokenCap: number;
+  managerTokenCap: number | null;
   selectedContextTokens: number;
   selectionExceedsDirectCap: boolean;
   isLoadingCatalog: boolean;
@@ -45,6 +45,9 @@ export function ContextManagerDialog({
   pendingJob,
   catalogError,
 }: ContextManagerDialogProps) {
+  const formattedTokenCap =
+    managerTokenCap === null ? "Loading backend token cap..." : `${managerTokenCap.toLocaleString()} tokens`;
+
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-h-[85vh] max-w-3xl overflow-hidden p-0">
@@ -52,14 +55,14 @@ export function ContextManagerDialog({
           <DialogTitle>Context Manager</DialogTitle>
           <DialogDescription>
             Select or combine multiple run contexts. Direct prompt cap before overflow:{" "}
-            {managerTokenCap.toLocaleString()} tokens.
+            {formattedTokenCap}.
           </DialogDescription>
         </DialogHeader>
 
         <div className="space-y-3 p-5">
           <div className="rounded-md border border-slate-200 bg-slate-50 p-3 text-xs text-slate-700">
             Selected context tokens: {selectedContextTokens.toLocaleString()} /{" "}
-            {managerTokenCap.toLocaleString()}
+            {managerTokenCap === null ? "Loading backend token cap..." : managerTokenCap.toLocaleString()}
             {selectionExceedsDirectCap ? (
               <p className="mt-2 text-amber-700">
                 This context is very large. AI may take longer to answer.

@@ -482,6 +482,7 @@ This is a lazy artifact:
 - It is a cache, not a new source of truth.
 - It is safe to reuse because completed run artifacts are treated as immutable.
 - It is rebuilt only when the active context selection or extracted evidence changes.
+- It is also rebuilt when the cache schema changes, so older trim-based cache files are not reused by newer overflow logic.
 
 The cache stores a source signature plus compact evidence chunks. The source signature is derived from the active context ids and normalized evidence items so the backend can tell whether an existing cache is still valid for the current chat source set.
 
@@ -510,12 +511,14 @@ The cached artifact is organized as token-bounded chunks of evidence items. At a
 
 ```json
 {
+  "schema_version": 2,
   "source_signature": "...",
   "evidence_count": 42,
   "chunks": [
     {
       "chunk_id": "chunk_1",
       "ref_ids": ["ref_1", "ref_2"],
+      "token_count": 1234,
       "items": [
         {
           "ref_id": "ref_1",
@@ -529,11 +532,19 @@ The cached artifact is organized as token-bounded chunks of evidence items. At a
 }
 ```
 
-The backend may trim oversized `quote` or `partial_answer` fields so a single evidence item can still fit inside a chunk budget. This trimming happens only inside the overflow prompt cache and does not mutate the original run artifacts.
+`token_count` stores the rendered prompt-token cost of each cached chunk. This lets split-mode decide quickly whether a chunk already fits the current map-pass budget.
 
 ### Map step
 
-Once the compact evidence cache exists, the backend flattens the cached items and groups them into token-bounded request blocks.
+Once the compact evidence cache exists, the backend uses those cached chunks directly for the map step.
+
+If a cached chunk is larger than the current map-pass budget because the request budget shrank further, the backend tries one half split of that chunk:
+
+- left half of the chunk items
+- right half of the chunk items
+
+If both halves fit, they are used as two map blocks for that request.
+If either half still does not fit, the overflow job fails instead of trimming `city_name`, `quote`, or `partial_answer`.
 
 Each map pass:
 
@@ -600,6 +611,14 @@ This design keeps three things true at once:
 - citations remain deterministic and clickable in the UI
 
 In practice, the most important optimization is not splitting the raw run JSON into arbitrary pieces. It is stripping the prompt down to compact evidence records first, then map-reducing over those records while preserving citation ids end-to-end.
+
+In the current implementation, that means:
+
+- build and cache full evidence-item chunks once
+- store per-chunk token counts in the cache
+- reuse those chunks across overflowed turns
+- split one oversized chunk in half once when a later request has a tighter budget
+- fail clearly if even a half split cannot fit
 
 Run API in Docker:
 

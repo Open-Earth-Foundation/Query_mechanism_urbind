@@ -63,9 +63,7 @@ def _require_ready_run(run_id: str, request: Request) -> tuple[RunStore, RunReco
 def _load_api_config(request: Request) -> AppConfig:
     """Load API configuration using app-level configured path."""
     config_path = getattr(request.app.state, "config_path", Path("llm_config.yaml"))
-    config = load_config(Path(config_path))
-    config.enable_sql = False
-    return config
+    return load_config(Path(config_path))
 
 
 def _raise_llm_http_error(exc: Exception) -> None:

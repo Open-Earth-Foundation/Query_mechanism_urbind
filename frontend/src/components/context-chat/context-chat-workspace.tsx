@@ -15,7 +15,6 @@ import {
 import { useChatJobPolling } from "@/components/context-chat/hooks/use-chat-job-polling";
 import { useChatSend } from "@/components/context-chat/hooks/use-chat-send";
 import { useChatSession } from "@/components/context-chat/hooks/use-chat-session";
-import { DEFAULT_CONTEXT_TOKEN_CAP } from "@/components/context-chat/chat-ui-config";
 import {
   ChatContextSummary,
   fetchChatContextCatalog,
@@ -141,7 +140,7 @@ export function ContextChatWorkspace({
     });
     return mapping;
   }, [contextCatalog]);
-  const managerTokenCap = sessionContexts?.token_cap ?? DEFAULT_CONTEXT_TOKEN_CAP;
+  const managerTokenCap = sessionContexts?.token_cap ?? null;
   const selectedContextTokens = useMemo(
     () =>
       managerSelection.reduce((sum, contextRunId) => {
@@ -150,7 +149,8 @@ export function ContextChatWorkspace({
       }, 0),
     [contextById, managerSelection],
   );
-  const selectionExceedsDirectCap = selectedContextTokens > managerTokenCap;
+  const selectionExceedsDirectCap =
+    managerTokenCap !== null && selectedContextTokens > managerTokenCap;
 
   useEffect(() => {
     const latestMessage = sortedMessages.at(-1);

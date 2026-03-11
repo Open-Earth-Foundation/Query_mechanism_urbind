@@ -66,7 +66,6 @@ def run_chat_followup_search(
     log_llm_payload: bool = False,
 ) -> ChatFollowupSearchResult:
     """Run one follow-up markdown search and persist the resulting bundle."""
-    config.enable_sql = False
     created_at = datetime.now(timezone.utc)
     city_name = format_city_display_name(target_city) or target_city.strip()
     city_key = normalize_city_key(city_name)
