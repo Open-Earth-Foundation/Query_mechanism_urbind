@@ -7,7 +7,7 @@ from typing import Literal, Optional
 
 import yaml
 from dotenv import load_dotenv
-from pydantic import BaseModel, ConfigDict, Field
+from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 ReasoningEffort = Literal["none", "minimal", "low", "medium", "high", "xhigh"]
 
@@ -37,8 +37,8 @@ class MarkdownResearcherConfig(AgentConfig):
     max_files: int = 200
     max_file_bytes: int = 5_000_000
     max_chunk_tokens: Optional[int] = None
-    chunk_overlap_tokens: int
-    batch_max_chunks: int
+    chunk_overlap_tokens: int = 2000
+    batch_max_chunks: int = 32
     batch_max_input_tokens: Optional[int] = None
     batch_overhead_tokens: int = 600
     max_workers: int = 2
@@ -51,13 +51,13 @@ class ChatConfig(AgentConfig):
     max_history_messages: int = 12
     max_context_total_tokens: int = 220_000
     min_prompt_token_cap: int = 20_000
-    provider_timeout_seconds: float
+    provider_timeout_seconds: float = 60.0
     prompt_token_buffer: int = 2_000
     multi_pass_threshold_tokens: int = 200_000
     multi_pass_chunk_tokens: int = 150_000
     followup_search_enabled: bool = False
     max_auto_followup_bundles: int = 3
-    followup_router_max_excerpts_per_source: int
+    followup_router_max_excerpts_per_source: int = 50
 
 
 class WriterConfig(AgentConfig):
@@ -96,8 +96,8 @@ class RetryConfig(BaseModel):
     """Shared retry policy for LLM and retrieval operations."""
 
     max_attempts: int = 5
-    backoff_base_seconds: float
-    backoff_max_seconds: float
+    backoff_base_seconds: float = 1.0
+    backoff_max_seconds: float = 30.0
 
 
 class AppConfig(BaseModel):
@@ -119,6 +119,14 @@ class AppConfig(BaseModel):
     source_db_url: str | None = None
     markdown_dir: Path = Field(default_factory=lambda: Path("documents"))
     enable_sql: bool = False
+
+    @field_validator("writer", mode="before")
+    @classmethod
+    def _coerce_writer_config(cls, value: object) -> object:
+        """Accept generic agent configs and coerce them into WriterConfig."""
+        if isinstance(value, AgentConfig):
+            return value.model_dump()
+        return value
 
 
 def _parse_env_bool(value: str | None) -> bool | None:
@@ -216,11 +224,22 @@ def load_cached_config(
     return config.model_copy(deep=True)
 
 
-def get_openrouter_api_key() -> str:
-    """Return the configured OpenRouter API key and mirror it to OpenAI vars."""
+def resolve_openrouter_api_key(
+    api_key_override: str | None = None,
+    *,
+    allow_missing: bool = False,
+) -> str:
+    """Resolve an OpenRouter API key from override or environment."""
     load_dotenv()
-    api_key = os.getenv("OPENROUTER_API_KEY")
+    if isinstance(api_key_override, str):
+        cleaned_override = api_key_override.strip()
+        if cleaned_override:
+            return cleaned_override
+
+    api_key = os.getenv("OPENROUTER_API_KEY", "").strip()
     if not api_key:
+        if allow_missing:
+            return "missing-openrouter-api-key"
         raise EnvironmentError("OPENROUTER_API_KEY is not set in the environment.")
     if not os.getenv("OPENAI_API_KEY"):
         os.environ["OPENAI_API_KEY"] = api_key
@@ -231,6 +250,11 @@ def get_openrouter_api_key() -> str:
     if not os.getenv("OPENAI_AGENTS_DISABLE_TRACING"):
         os.environ["OPENAI_AGENTS_DISABLE_TRACING"] = "1"
     return api_key
+
+
+def get_openrouter_api_key() -> str:
+    """Return the configured OpenRouter API key and mirror it to OpenAI vars."""
+    return resolve_openrouter_api_key()
 
 
 def get_database_url() -> str:
@@ -255,6 +279,7 @@ __all__ = [
     "AppConfig",
     "load_config",
     "load_cached_config",
+    "resolve_openrouter_api_key",
     "get_openrouter_api_key",
     "get_database_url",
 ]

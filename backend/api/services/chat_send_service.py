@@ -44,7 +44,7 @@ from backend.api.services.models import (
 )
 from backend.api.services.run_store import RunRecord, RunStore
 from backend.modules.orchestrator.models import ChatFollowupDecision
-from backend.utils.config import AppConfig, get_openrouter_api_key
+from backend.utils.config import AppConfig, resolve_openrouter_api_key
 
 logger = logging.getLogger(__name__)
 
@@ -133,8 +133,9 @@ def process_send_chat_message(
             )
         )
     else:
-        effective_api_key = (
-            api_key_override if api_key_override is not None else get_openrouter_api_key()
+        effective_api_key = resolve_openrouter_api_key(
+            api_key_override,
+            allow_missing=True,
         )
         routing_decision = resolve_followup_decision(
             clarification_city=clarification_city or None,

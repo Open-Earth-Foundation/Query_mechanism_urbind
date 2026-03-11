@@ -304,8 +304,10 @@ def test_load_config_reads_required_chat_defaults_from_yaml(tmp_path: Path) -> N
     assert config.retry.backoff_max_seconds == 30.0
 
 
-def test_load_config_requires_chat_and_assumptions_sections(tmp_path: Path) -> None:
-    """Chat and assumptions reviewer sections must be present in llm_config.yaml."""
+def test_load_config_applies_chat_and_assumptions_defaults_when_sections_missing(
+    tmp_path: Path,
+) -> None:
+    """Missing chat and assumptions sections fall back to safe model defaults."""
     config_path = tmp_path / "llm_config.yaml"
     config_path.write_text(
         "\n".join(
@@ -331,8 +333,12 @@ def test_load_config_requires_chat_and_assumptions_sections(tmp_path: Path) -> N
         encoding="utf-8",
     )
 
-    with pytest.raises(ValidationError):
-        load_config(config_path)
+    config = load_config(config_path)
+
+    assert config.chat.model == "openai/gpt-5.2"
+    assert config.chat.provider_timeout_seconds == 60.0
+    assert config.chat.followup_router_max_excerpts_per_source == 50
+    assert config.assumptions_reviewer.model == "openai/gpt-5.2"
 
 
 def test_load_config_reads_central_retry_settings_from_yaml(tmp_path: Path) -> None:
