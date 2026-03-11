@@ -57,7 +57,7 @@ from backend.api.services.chat_reply_helpers import (
 )
 from backend.api.services.context_chat import estimate_context_window, resolve_chat_token_cap
 from backend.modules.orchestrator.utils.references import is_valid_ref_id
-from backend.utils.config import AppConfig, load_config
+from backend.utils.config import AppConfig, load_cached_config, load_config
 
 router = APIRouter()
 
@@ -117,9 +117,13 @@ def _get_chat_job_executor(request: Request) -> ChatJobExecutor:
 
 
 def _load_request_config(request: Request) -> AppConfig:
-    """Load AppConfig using the config path resolved at API startup."""
+    """Load AppConfig and reuse a cached copy until the file changes."""
     config_path = getattr(request.app.state, "config_path", Path("llm_config.yaml"))
-    return load_config(Path(config_path))
+    return load_cached_config(
+        Path(config_path),
+        cache_owner=request.app.state,
+        loader=load_config,
+    )
 
 
 def _require_chat_ready_run(run_id: str, request: Request) -> tuple[RunStore, RunRecord]:

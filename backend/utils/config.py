@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import os
+from collections.abc import Callable
 from pathlib import Path
 from typing import Literal, Optional
 
@@ -174,6 +175,38 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
     return config
 
 
+def load_cached_config(
+    config_path: Path | None = None,
+    *,
+    cache_owner: object | None = None,
+    loader: Callable[[Path | None], AppConfig] | None = None,
+) -> AppConfig:
+    """Load config once per file mtime and return deep copies from an optional cache."""
+    path = Path(config_path or "llm_config.yaml")
+    load = loader or load_config
+    if cache_owner is None:
+        return load(path)
+
+    current_mtime_ns = path.stat().st_mtime_ns
+    cached_config = getattr(cache_owner, "_cached_app_config", None)
+    cached_path = getattr(cache_owner, "_cached_app_config_path", None)
+    cached_mtime_ns = getattr(cache_owner, "_cached_app_config_mtime_ns", None)
+    if (
+        isinstance(cached_config, AppConfig)
+        and isinstance(cached_path, Path)
+        and cached_path == path
+        and cached_mtime_ns == current_mtime_ns
+    ):
+        return cached_config.model_copy(deep=True)
+
+    config = load(path)
+    current_mtime_ns = path.stat().st_mtime_ns
+    setattr(cache_owner, "_cached_app_config", config)
+    setattr(cache_owner, "_cached_app_config_path", path)
+    setattr(cache_owner, "_cached_app_config_mtime_ns", current_mtime_ns)
+    return config.model_copy(deep=True)
+
+
 def get_openrouter_api_key() -> str:
     """Return the configured OpenRouter API key and mirror it to OpenAI vars."""
     load_dotenv()
@@ -211,6 +244,7 @@ __all__ = [
     "VectorStoreConfig",
     "AppConfig",
     "load_config",
+    "load_cached_config",
     "get_openrouter_api_key",
     "get_database_url",
 ]

@@ -35,7 +35,7 @@ from backend.api.services import (
     normalize_chunk_ids,
 )
 from backend.modules.orchestrator.utils.references import is_valid_ref_id
-from backend.utils.config import AppConfig, load_config
+from backend.utils.config import AppConfig, load_cached_config, load_config
 
 router = APIRouter()
 logger = logging.getLogger(__name__)
@@ -85,9 +85,13 @@ def _get_markdown_dir(request: Request) -> Path:
 
 
 def _load_request_config(request: Request) -> AppConfig:
-    """Load the active app config for request-scoped helper operations."""
+    """Load the active app config and reuse a cached copy until the file changes."""
     config_path = getattr(request.app.state, "config_path", Path("llm_config.yaml"))
-    return load_config(Path(config_path))
+    return load_cached_config(
+        Path(config_path),
+        cache_owner=request.app.state,
+        loader=load_config,
+    )
 
 
 def _require_completed_run(

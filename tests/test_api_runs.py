@@ -1,4 +1,5 @@
 import json
+import os
 import shutil
 import threading
 import time
@@ -536,6 +537,89 @@ def test_api_list_run_source_chunks_returns_not_found_for_missing_chunk(
             "/api/v1/runs/run-source-chunks-missing/source-chunks?chunk_id=chunk_missing"
         )
         assert response.status_code == 404
+
+
+def test_api_list_run_source_chunks_reuses_cached_config_until_file_changes(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Source chunk requests reuse cached config and reload after config mtime changes."""
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    config_path = tmp_path / "llm_config.yaml"
+    _write_config_file(config_path, config)
+
+    source_path = markdown_dir / "Leipzig.md"
+    source_content = (
+        "# Leipzig\n\n"
+        "Leipzig plans to expand charging infrastructure across municipal districts.\n"
+    )
+    source_path.write_text(source_content, encoding="utf-8")
+    chunks = build_markdown_chunks_for_file(source_path, config.markdown_researcher)
+    chunk_id = str(chunks[0]["chunk_id"])
+
+    paths = _write_success_artifacts(
+        question="Source chunk cache lookup run",
+        run_id="run-source-chunks-cache",
+        config=config,
+    )
+    _write_markdown_batches_artifact(
+        paths=paths,
+        payload={
+            "batches": [
+                {
+                    "city_name": "leipzig",
+                    "batch_index": 1,
+                    "chunk_count": 1,
+                    "estimated_tokens": 10,
+                    "chunks": [
+                        {
+                            "chunk_id": chunk_id,
+                            "path": str(source_path),
+                            "chunk_index": 0,
+                        }
+                    ],
+                }
+            ]
+        },
+    )
+
+    load_calls = 0
+
+    def _stub_load_config(_path: Path | None = None) -> AppConfig:
+        nonlocal load_calls
+        load_calls += 1
+        return _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+
+    monkeypatch.setattr("backend.api.routes.runs.load_config", _stub_load_config)
+
+    app = create_app(
+        runs_dir=runs_dir,
+        max_workers=1,
+        markdown_dir=markdown_dir,
+        config_path=config_path,
+    )
+    with TestClient(app) as client:
+        first = client.get(
+            f"/api/v1/runs/run-source-chunks-cache/source-chunks?chunk_id={chunk_id}"
+        )
+        assert first.status_code == 200
+        second = client.get(
+            f"/api/v1/runs/run-source-chunks-cache/source-chunks?chunk_id={chunk_id}"
+        )
+        assert second.status_code == 200
+        assert load_calls == 1
+
+        updated_mtime_ns = config_path.stat().st_mtime_ns + 1_000_000_000
+        os.utime(config_path, ns=(updated_mtime_ns, updated_mtime_ns))
+
+        third = client.get(
+            f"/api/v1/runs/run-source-chunks-cache/source-chunks?chunk_id={chunk_id}"
+        )
+        assert third.status_code == 200
+        assert load_calls == 2
 
 
 def test_api_duplicate_run_id_returns_conflict(
