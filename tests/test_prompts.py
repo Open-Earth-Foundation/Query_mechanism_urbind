@@ -32,3 +32,6 @@ def test_chat_followup_router_prompt_uses_required_schema_sections() -> None:
     assert "<output>" in content
     assert "<example_output>" in content
     assert "submit_chat_followup_decision" in content
+    assert "selected_run_ids" not in content
+    assert "selected_followup_bundle_ids" not in content
+    assert "- `source_id`" not in content

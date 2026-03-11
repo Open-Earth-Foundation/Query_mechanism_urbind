@@ -56,7 +56,7 @@ Environment variables (`.env`):
 - `LLM_CONFIG_PATH` (optional, default `llm_config.yaml`): API config file path.
 - `CITY_GROUPS_PATH` (optional, default `backend/api/assets/city_groups.json`): city groups catalog JSON path.
 
-Chat prompt sizing, follow-up router excerpt caps, retry backoff, and provider timeouts now come from `llm_config.yaml`.
+Chat prompt sizing, follow-up router history and excerpt caps, retry backoff, and provider timeouts now come from `llm_config.yaml`.
 - `VECTOR_STORE_ENABLED` (optional, default `false`): enables local Chroma markdown indexing flows.
 - `ANONYMIZED_TELEMETRY` (optional, default `FALSE`): disables Chroma anonymized telemetry when set to `FALSE`.
 - `CHROMA_PERSIST_PATH` (optional, default `.chroma`): local Chroma persistence directory.
@@ -174,6 +174,8 @@ chat:
   max_history_messages: 24
   followup_search_enabled: false
   max_auto_followup_bundles: 3
+  followup_router_max_history_messages: 6
+  followup_router_max_excerpts_per_source: 50
 assumptions_reviewer:
   model: "openai/gpt-5.2"
   temperature: 0.0

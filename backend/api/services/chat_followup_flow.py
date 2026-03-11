@@ -58,9 +58,8 @@ def resolve_followup_decision(
         user_message=user_message,
         original_question=original_question,
         history=history,
-        selected_run_ids=selected_run_ids,
-        followup_bundles=loaded_followup_bundles,
         sources=sources,
+        max_history_messages=config.chat.followup_router_max_history_messages,
         max_excerpts_per_source=config.chat.followup_router_max_excerpts_per_source,
     )
     log_chat_router_preflight(

@@ -299,6 +299,7 @@ def test_load_config_reads_required_chat_defaults_from_yaml(tmp_path: Path) -> N
     assert not config.chat.followup_search_enabled
     assert config.chat.max_auto_followup_bundles == 3
     assert config.chat.provider_timeout_seconds == 60.0
+    assert config.chat.followup_router_max_history_messages == 6
     assert config.chat.followup_router_max_excerpts_per_source == 50
     assert config.retry.backoff_base_seconds == 1.0
     assert config.retry.backoff_max_seconds == 30.0
@@ -337,6 +338,7 @@ def test_load_config_applies_chat_and_assumptions_defaults_when_sections_missing
 
     assert config.chat.model == "openai/gpt-5.2"
     assert config.chat.provider_timeout_seconds == 60.0
+    assert config.chat.followup_router_max_history_messages == 6
     assert config.chat.followup_router_max_excerpts_per_source == 50
     assert config.assumptions_reviewer.model == "openai/gpt-5.2"
 

@@ -57,6 +57,7 @@ class ChatConfig(AgentConfig):
     multi_pass_chunk_tokens: int = 150_000
     followup_search_enabled: bool = False
     max_auto_followup_bundles: int = 3
+    followup_router_max_history_messages: int = 6
     followup_router_max_excerpts_per_source: int = 50
 
 

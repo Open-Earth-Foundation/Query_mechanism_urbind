@@ -3,6 +3,8 @@ from pathlib import Path
 
 import pytest
 
+from backend.api.services.chat_reply_helpers import build_router_payload
+from backend.api.services.models import LoadedChatSource
 from backend.modules.orchestrator import agent as orchestrator_agent
 from backend.modules.orchestrator.models import ChatFollowupDecision
 from backend.utils.config import (
@@ -37,6 +39,7 @@ def _chat_config() -> ChatConfig:
     return ChatConfig(
         model="test-model",
         provider_timeout_seconds=60.0,
+        followup_router_max_history_messages=6,
         followup_router_max_excerpts_per_source=50,
     )
 
@@ -109,8 +112,6 @@ def test_route_chat_followup_returns_structured_decision(
         "user_message": "Tell me more about Munich.",
         "original_question": "Build doc",
         "history": [{"role": "user", "content": "Start here."}],
-        "selected_run_ids": ["run-parent"],
-        "selected_followup_bundle_ids": ["fup_chat_001_munich"],
         "contexts": [],
     }
     sentinel_agent = object()
@@ -145,6 +146,52 @@ def test_route_chat_followup_returns_structured_decision(
     assert captured_input == payload
     assert result.action == expected_action
     assert result == decision
+
+
+def test_build_router_payload_bounds_history_and_omits_internal_ids() -> None:
+    source = LoadedChatSource(
+        source_type="run",
+        source_id="run-parent",
+        question="Build doc",
+        final_document="",
+        context_bundle={
+            "markdown": {
+                "selected_city_names": ["Munich"],
+                "inspected_city_names": ["Munich"],
+                "excerpts": [
+                    {
+                        "city_name": "Munich",
+                        "quote": "Munich quote",
+                        "partial_answer": "Munich partial answer",
+                    }
+                ],
+            }
+        },
+    )
+    payload = build_router_payload(
+        user_message="Tell me more about Munich.",
+        original_question="Build doc",
+        history=[
+            {"role": "user", "content": "First"},
+            {"role": "assistant", "content": "Second"},
+            {"role": "user", "content": "Third"},
+        ],
+        sources=[source],
+        max_history_messages=2,
+        max_excerpts_per_source=50,
+    )
+
+    assert payload["history"] == [
+        {"role": "assistant", "content": "Second"},
+        {"role": "user", "content": "Third"},
+    ]
+    assert "selected_run_ids" not in payload
+    assert "selected_followup_bundle_ids" not in payload
+    assert len(payload["contexts"]) == 1
+    context = payload["contexts"][0]
+    assert context["source_type"] == "run"
+    assert context["question"] == "Build doc"
+    assert "source_id" not in context
 
 
 def test_route_chat_followup_rejects_unstructured_output(
