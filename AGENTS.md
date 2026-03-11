@@ -191,6 +191,7 @@ Skills included:
 - `script-quality-gate`: Use when adding/changing a runnable script or CLI entrypoint.
 - `prompt-schema-authoring`: **Mandatory** when creating or updating prompt files. Trigger it automatically unless it is already active for the turn, and use it to enforce `<role>/<task>/<input>/<output>` structure and model-aligned output contracts.
 - `repo-doc-audit`: One-off full repo documentation audit (**manual** via `/repo-doc-audit`).
+- `pr-thread-analysis`: Review unresolved or open PR review threads against the current branch, quoting the exact comment, showing the relevant code, and stating whether a fix is still needed.
 
 ### Mandatory after code changes
 

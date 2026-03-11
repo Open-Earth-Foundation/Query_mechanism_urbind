@@ -32,6 +32,12 @@ from backend.utils.tokenization import count_tokens
 logger = logging.getLogger("backend.api.services.context_chat")
 
 CHAT_EVIDENCE_CACHE_SCHEMA_VERSION = 2
+_ORIGINAL_BUILD_QUESTION_MARKER = "Original build question:"
+_RETRY_MISSING_CITATION_MARKER = "Prior response failed citation requirements"
+_RETRY_MISSING_CITATION_NOTE = (
+    "- Prior response failed citation requirements. Rewrite the full answer and ensure "
+    "every factual claim is immediately followed by one or more valid [ref_n] citations."
+)
 
 
 def _run_overflow_evidence_map_reduce(
@@ -50,6 +56,7 @@ def _run_overflow_evidence_map_reduce(
     context_count: int,
 ) -> str:
     """Answer from compact evidence chunks when the direct prompt would overflow."""
+    overflow_prompt_header = _build_overflow_prompt_header(prompt_header)
     cache_payload = _load_or_build_evidence_cache(
         run_id=run_id,
         normalized_contexts=normalized_contexts,
@@ -70,7 +77,7 @@ def _run_overflow_evidence_map_reduce(
     if not cache_chunks:
         logger.info("Context chat split mode empty-evidence fallback run_id=%s", run_id)
         return _run_overflow_empty_evidence_answer(
-            prompt_header=prompt_header,
+            prompt_header=overflow_prompt_header,
             bounded_history=bounded_history,
             user_content=user_content,
             effective_token_cap=effective_token_cap,
@@ -84,7 +91,7 @@ def _run_overflow_evidence_map_reduce(
 
     map_history, map_budget = _resolve_prompt_budget(
         prompt_factory=lambda: _compose_evidence_map_prompt(
-            prompt_header=prompt_header,
+            prompt_header=overflow_prompt_header,
             evidence_block="",
             chunk_index=1,
             total_chunks=1,
@@ -119,7 +126,7 @@ def _run_overflow_evidence_map_reduce(
     )
     for chunk_index, evidence_block in enumerate(evidence_blocks, start=1):
         system_prompt = _compose_evidence_map_prompt(
-            prompt_header=prompt_header,
+            prompt_header=overflow_prompt_header,
             evidence_block=evidence_block,
             chunk_index=chunk_index,
             total_chunks=total_blocks,
@@ -136,7 +143,7 @@ def _run_overflow_evidence_map_reduce(
         )
     return _run_reduce_passes(
         partial_answers=partial_answers,
-        prompt_header=prompt_header,
+        prompt_header=overflow_prompt_header,
         bounded_history=bounded_history,
         user_content=user_content,
         effective_token_cap=effective_token_cap,
@@ -163,14 +170,15 @@ def _run_overflow_empty_evidence_answer(
     context_count: int,
 ) -> str:
     """Use the LLM to explain that no compact evidence is available in overflow mode."""
+    overflow_prompt_header = _build_overflow_prompt_header(prompt_header)
     working_history, _budget = _resolve_prompt_budget(
-        prompt_factory=lambda: _compose_empty_evidence_prompt(prompt_header),
+        prompt_factory=lambda: _compose_empty_evidence_prompt(overflow_prompt_header),
         history=bounded_history,
         user_content=user_content,
         effective_token_cap=effective_token_cap,
         prompt_token_buffer=prompt_token_buffer,
     )
-    system_prompt = _compose_empty_evidence_prompt(prompt_header)
+    system_prompt = _compose_empty_evidence_prompt(overflow_prompt_header)
     return context_chat_execution._run_single_pass(
         client=client,
         messages=_build_messages(system_prompt, working_history, user_content),
@@ -196,10 +204,11 @@ def _run_reduce_passes(
     context_count: int,
 ) -> str:
     """Recursively merge map outputs until one final answer remains."""
+    overflow_prompt_header = _build_overflow_prompt_header(prompt_header)
     pending_answers = [answer.strip() for answer in partial_answers if answer.strip()]
     if not pending_answers:
         return _run_overflow_empty_evidence_answer(
-            prompt_header=prompt_header,
+            prompt_header=overflow_prompt_header,
             bounded_history=bounded_history,
             user_content=user_content,
             effective_token_cap=effective_token_cap,
@@ -215,7 +224,7 @@ def _run_reduce_passes(
     while len(pending_answers) > 1:
         reduce_history, reduce_budget = _resolve_prompt_budget(
             prompt_factory=lambda: _compose_evidence_reduce_prompt(
-                prompt_header=prompt_header,
+                prompt_header=overflow_prompt_header,
                 analyses_block="",
                 stage_index=stage_index,
                 batch_index=1,
@@ -243,7 +252,7 @@ def _run_reduce_passes(
         )
         for batch_index, analyses_block in enumerate(grouped_blocks, start=1):
             system_prompt = _compose_evidence_reduce_prompt(
-                prompt_header=prompt_header,
+                prompt_header=overflow_prompt_header,
                 analyses_block=analyses_block,
                 stage_index=stage_index,
                 batch_index=batch_index,
@@ -307,6 +316,34 @@ def _load_or_build_evidence_cache(
         context_chat_io._write_json_object(cache_path, payload)
         logger.info("Context chat evidence cache built run_id=%s chunks=%d", run_id, len(chunks))
     return payload
+
+
+def _build_overflow_prompt_header(prompt_header: str) -> str:
+    """Return a compact prompt header for overflow map-reduce prompts."""
+    normalized_header = prompt_header.strip()
+    if not normalized_header:
+        return f"{_ORIGINAL_BUILD_QUESTION_MARKER}\n(not provided)"
+
+    compact_lines: list[str] = []
+    if _RETRY_MISSING_CITATION_MARKER in normalized_header:
+        compact_lines.append(_RETRY_MISSING_CITATION_NOTE)
+
+    original_question = _extract_original_build_question(normalized_header)
+    if original_question:
+        compact_lines.append(_ORIGINAL_BUILD_QUESTION_MARKER)
+        compact_lines.append(original_question)
+
+    if compact_lines:
+        return "\n".join(compact_lines)
+    return f"{_ORIGINAL_BUILD_QUESTION_MARKER}\n(not provided)"
+
+
+def _extract_original_build_question(prompt_header: str) -> str:
+    """Extract the original build question from the shared prompt header."""
+    marker_index = prompt_header.rfind(_ORIGINAL_BUILD_QUESTION_MARKER)
+    if marker_index < 0:
+        return ""
+    return prompt_header[marker_index + len(_ORIGINAL_BUILD_QUESTION_MARKER) :].strip()
 
 
 def _resolve_overflow_evidence_items(

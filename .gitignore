@@ -28,7 +28,9 @@ output/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
-.cursor
+.cursor/*
+!.cursor/skills/
+!.cursor/skills/**
 
 frontend/.next
 frontend/node_modules

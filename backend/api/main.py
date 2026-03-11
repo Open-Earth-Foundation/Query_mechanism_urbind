@@ -18,13 +18,10 @@ from backend.api.routes import (
     cities_router,
     runs_router,
 )
-from backend.api.services import (
-    ChatJobExecutor,
-    ChatJobStore,
-    ChatMemoryStore,
-    RunExecutor,
-    RunStore,
-)
+from backend.api.services.chat_jobs import ChatJobExecutor, ChatJobStore
+from backend.api.services.chat_memory import ChatMemoryStore
+from backend.api.services.run_executor import RunExecutor
+from backend.api.services.run_store import RunStore
 from backend.api.services.chat_split_flow import build_chat_job_processor
 from backend.utils.config import load_config
 from backend.utils.logging_config import setup_logger

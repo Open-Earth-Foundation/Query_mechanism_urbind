@@ -219,6 +219,21 @@ def test_resolve_request_evidence_blocks_errors_when_chunk_cannot_split() -> Non
         )
 
 
+def test_build_overflow_prompt_header_compacts_base_prompt() -> None:
+    """Overflow prompts should keep only the retry note and original question."""
+    prompt_header = context_chat_prompts.build_system_prompt_header(
+        original_question="What does Aachen do for rooftop solar?",
+        retry_missing_citation=True,
+    )
+
+    compact_header = context_chat_evidence._build_overflow_prompt_header(prompt_header)
+
+    assert "What does Aachen do for rooftop solar?" in compact_header
+    assert "Prior response failed citation requirements" in compact_header
+    assert "<role>" not in compact_header
+    assert count_tokens(compact_header) < count_tokens(prompt_header)
+
+
 def test_estimate_context_window_reports_full_catalog_tokens_before_split() -> None:
     citation_catalog = [
         _catalog_entry("ref_1", 8),

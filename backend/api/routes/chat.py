@@ -20,27 +20,23 @@ from backend.api.models import (
     SendChatMessageResponse,
     UpdateChatContextsRequest,
 )
-from backend.api.services import (
-    ChatJobExecutor,
-    ChatJobStore,
-    ChatMemoryStore,
-    ChatBaseContextUnavailableError,
-    ChatNoContextSourcesError,
-    ChatSessionExistsError,
-    ChatSessionNotFoundError,
-    ChatSessionPendingJobError,
-    RunRecord,
-    RunStore,
-    SUCCESS_STATUSES,
-    build_reference_item,
-    followup_bundle_dir,
-    load_reference_records,
-)
 from backend.api.services.chat_context_loader import (
     fast_context_summary,
     list_available_context_summaries,
     load_followup_bundle,
     validate_context_run_id,
+)
+from backend.api.services.chat_errors import (
+    ChatBaseContextUnavailableError,
+    ChatNoContextSourcesError,
+)
+from backend.api.services.chat_followup_research import followup_bundle_dir
+from backend.api.services.chat_jobs import ChatJobExecutor, ChatJobStore
+from backend.api.services.chat_memory import (
+    ChatMemoryStore,
+    ChatSessionExistsError,
+    ChatSessionNotFoundError,
+    ChatSessionPendingJobError,
 )
 from backend.api.services.chat_send_service import process_send_chat_message
 from backend.api.services.chat_session_helpers import (
@@ -56,6 +52,11 @@ from backend.api.services.chat_reply_helpers import (
     build_chat_sources,
 )
 from backend.api.services.context_chat import estimate_context_window, resolve_chat_token_cap
+from backend.api.services.reference_artifacts import (
+    build_reference_item,
+    load_reference_records,
+)
+from backend.api.services.run_store import RunRecord, RunStore, SUCCESS_STATUSES
 from backend.modules.orchestrator.utils.references import is_valid_ref_id
 from backend.utils.config import AppConfig, load_cached_config, load_config
 
