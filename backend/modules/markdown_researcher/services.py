@@ -34,7 +34,9 @@ def _resolve_chunk_tokens(config: MarkdownResearcherConfig) -> int:
         return config.max_chunk_tokens
     if max_input_tokens is not None and max_input_tokens > 0:
         return max_input_tokens
-    return 12000
+    raise ValueError(
+        "Markdown researcher config must define max_chunk_tokens or a valid model input limit."
+    )
 
 
 def split_documents_by_city(

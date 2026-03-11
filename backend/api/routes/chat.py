@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 from pathlib import Path
-import logging
 
 from fastapi import APIRouter, Header, HTTPException, Query, Request, Response, status
 from openai import APIStatusError, APITimeoutError, AuthenticationError
@@ -17,70 +16,50 @@ from backend.api.models import (
     ChatSessionListResponse,
     ChatSessionResponse,
     CreateChatSessionRequest,
-    SendChatMessageCompletedResponse,
     SendChatMessageRequest,
     SendChatMessageResponse,
     UpdateChatContextsRequest,
 )
 from backend.api.services import (
     ChatJobExecutor,
+    ChatJobStore,
     ChatMemoryStore,
+    ChatBaseContextUnavailableError,
+    ChatNoContextSourcesError,
     ChatSessionExistsError,
     ChatSessionNotFoundError,
     ChatSessionPendingJobError,
     RunRecord,
     RunStore,
+    SUCCESS_STATUSES,
     build_reference_item,
     followup_bundle_dir,
     load_reference_records,
-    resolve_chat_token_cap,
 )
 from backend.api.services.chat_context_loader import (
-    LoadedFollowupBundle,
     fast_context_summary,
     list_available_context_summaries,
-    load_context_for_run_id,
     load_followup_bundle,
     validate_context_run_id,
 )
+from backend.api.services.chat_send_service import process_send_chat_message
 from backend.api.services.chat_session_helpers import (
-    as_message,
+    as_chat_job_status_response,
     as_pending_job,
     as_session_response,
     build_session_contexts_response,
-    get_or_build_session_prompt_context_cache,
     pending_job_payload,
-    resolve_session_contexts,
     selected_followup_bundles,
 )
 from backend.api.services.chat_reply_helpers import (
-    answer_from_context_reply,
     build_chat_citation_entries,
-    build_chat_job_processor,
     build_chat_sources,
-    build_city_clarification_reply,
-    build_context_reply_plan,
-    build_followup_failure_reply,
-    build_out_of_scope_reply,
-    build_routing_metadata,
-    build_unavailable_city_reply,
-    is_unavailable_city_result,
-    log_chat_request_summary,
-    log_context_reply_plan,
-    log_chat_router_preflight,
-    next_turn_index,
-    queue_split_context_chat_job,
 )
-from backend.api.services.context_chat import estimate_context_window
-from backend.modules.orchestrator.models import ChatFollowupDecision
-from backend.modules.orchestrator.agent import route_chat_followup
+from backend.api.services.context_chat import estimate_context_window, resolve_chat_token_cap
 from backend.modules.orchestrator.utils.references import is_valid_ref_id
-from backend.utils.config import AppConfig, get_openrouter_api_key, load_config
-from backend.utils.retry import compute_retry_delay_seconds, log_retry_event
-from backend.api.services.chat_followup_research import run_chat_followup_search
+from backend.utils.config import AppConfig, load_config
 
 router = APIRouter()
-logger = logging.getLogger(__name__)
 
 
 def _resolve_api_key_override(raw: str | None) -> str | None:
@@ -115,7 +94,7 @@ def _get_chat_memory_store(request: Request) -> ChatMemoryStore:
     return store
 
 
-def _get_chat_job_store(request: Request):
+def _get_chat_job_store(request: Request) -> ChatJobStore:
     """Return chat job store from app state."""
     store = getattr(request.app.state, "chat_job_store", None)
     if store is None:
@@ -143,62 +122,8 @@ def _load_request_config(request: Request) -> AppConfig:
     return load_config(Path(config_path))
 
 
-def _queue_split_context_chat_response(
-    *,
-    run_id: str,
-    conversation_id: str,
-    response: Response,
-    payload_content: str,
-    original_question: str,
-    effective_user_content: str,
-    history: list[dict[str, str]],
-    context_run_ids: list[str],
-    loaded_followup_bundles: list[LoadedFollowupBundle],
-    token_cap: int,
-    assistant_routing: dict[str, object] | None,
-    api_key_override: str | None,
-    chat_memory_store: ChatMemoryStore,
-    chat_job_executor: ChatJobExecutor,
-    selected_run_ids: list[str],
-    plan: object,
-) -> SendChatMessageResponse:
-    """Queue a split-mode chat reply and normalize the HTTP response code."""
-    followup_bundle_ids = [bundle.bundle_id for bundle in loaded_followup_bundles]
-    logger.info(
-        "Context chat split job accepted run_id=%s conversation_id=%s contexts=%s "
-        "followup_bundles=%s estimated_prompt_tokens=%s context_tokens=%s split_reason=%s",
-        run_id,
-        conversation_id,
-        selected_run_ids,
-        followup_bundle_ids,
-        getattr(plan, "estimated_prompt_tokens", None),
-        getattr(plan, "context_tokens", None),
-        getattr(plan, "split_reason", None),
-    )
-    queued_response = queue_split_context_chat_job(
-        run_id=run_id,
-        conversation_id=conversation_id,
-        payload_content=payload_content,
-        original_question=original_question,
-        effective_user_content=effective_user_content,
-        history=history,
-        context_run_ids=context_run_ids,
-        followup_bundle_ids=followup_bundle_ids,
-        token_cap=token_cap,
-        assistant_routing=assistant_routing,
-        api_key_override=api_key_override,
-        chat_memory_store=chat_memory_store,
-        chat_job_executor=chat_job_executor,
-    )
-    if queued_response.mode == "queued":
-        response.status_code = status.HTTP_202_ACCEPTED
-    return queued_response
-
-
 def _require_chat_ready_run(run_id: str, request: Request) -> tuple[RunStore, RunRecord]:
     """Require run existence and completed status before chat access."""
-    from backend.api.services import SUCCESS_STATUSES
-    
     run_store = _get_run_store(request)
     run_record = run_store.get_run(run_id)
     if run_record is None:
@@ -315,7 +240,6 @@ def get_chat_job_status(
                 f"`{conversation_id}` in run `{run_id}`."
             ),
         )
-    from backend.api.services.chat_session_helpers import as_chat_job_status_response
     return as_chat_job_status_response(record)
 
 
@@ -337,20 +261,23 @@ def get_chat_session_contexts(
     except ChatSessionNotFoundError as exc:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=str(exc)) from exc
     config = _load_request_config(request)
-    return build_session_contexts_response(
-        run_id,
-        conversation_id,
-        run_store,
-        session,
-        store,
-        config,
-        resolve_chat_token_cap(config),
-        lambda context: context.to_summary(),
-        lambda bundle: bundle.to_summary(),
-        build_chat_sources,
-        build_chat_citation_entries,
-        estimate_context_window,
-    )
+    try:
+        return build_session_contexts_response(
+            run_id,
+            conversation_id,
+            run_store,
+            session,
+            store,
+            config,
+            resolve_chat_token_cap(config),
+            lambda context: context.to_summary(),
+            lambda bundle: bundle.to_summary(),
+            build_chat_sources,
+            build_chat_citation_entries,
+            estimate_context_window,
+        )
+    except ChatBaseContextUnavailableError as exc:
+        raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail=str(exc)) from exc
 
 
 @router.get(
@@ -572,436 +499,36 @@ def send_chat_message(
     """Send chat message and return assistant response."""
     run_store, run_record = _require_chat_ready_run(run_id, request)
     store = _get_chat_memory_store(request)
-    try:
-        session = store.get_session(run_id, conversation_id)
-    except ChatSessionNotFoundError as exc:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=str(exc)) from exc
-    pending_job = as_pending_job(run_id, conversation_id, pending_job_payload(session))
-    if pending_job is not None:
-        raise HTTPException(
-            status_code=status.HTTP_409_CONFLICT,
-            detail=(
-                "This chat session already has a pending long-context answer. "
-                "Wait for it to finish before sending another message."
-            ),
-        )
-
     config = _load_request_config(request)
-    config.enable_sql = False
-    token_cap = resolve_chat_token_cap(config)
     chat_job_executor = _get_chat_job_executor(request)
-
-    (
-        selected_run_ids,
-        loaded_contexts,
-        excluded_ids,
-        loaded_followup_bundles,
-        excluded_followup_ids,
-    ) = resolve_session_contexts(
-        run_store,
-        session,
-        conversation_id=conversation_id,
-        fallback_run_id=run_id,
-        config=config,
-        token_cap=token_cap,
-    )
-    if not loaded_contexts:
-        raise HTTPException(
-            status_code=status.HTTP_409_CONFLICT,
-            detail=(
-                "No usable context sources are selected for this session. "
-                "Open context manager and select at least one completed run."
-            ),
-        )
-    if excluded_followup_ids:
-        session = store.prune_followup_bundles(
-            run_id,
-            conversation_id,
-            [bundle.bundle_id for bundle in loaded_followup_bundles],
-        )
-        (
-            selected_run_ids,
-            loaded_contexts,
-            excluded_ids,
-            loaded_followup_bundles,
-            excluded_followup_ids,
-        ) = resolve_session_contexts(
-            run_store,
-            session,
-            conversation_id=conversation_id,
-            fallback_run_id=run_id,
-            config=config,
-            token_cap=token_cap,
-        )
-
-    history: list[dict[str, str]] = []
-    messages = session.get("messages")
-    if isinstance(messages, list):
-        for item in messages:
-            if not isinstance(item, dict):
-                continue
-            role = item.get("role")
-            content = item.get("content")
-            if role in {"user", "assistant"} and isinstance(content, str):
-                history.append({"role": role, "content": content})
-
     api_key_override = _resolve_api_key_override(x_openrouter_api_key)
-    clarification_city = (payload.clarification_city or "").strip()
-    clarification_question = (payload.clarification_question or "").strip()
-    effective_user_content = (
-        clarification_question
-        if clarification_city and clarification_question
-        else payload.content
-    )
-    sources = build_chat_sources(loaded_contexts, loaded_followup_bundles)
-    session, prompt_cache = get_or_build_session_prompt_context_cache(
-        run_id=run_id,
-        conversation_id=conversation_id,
-        session=session,
-        store=store,
-        original_question=run_record.question,
-        sources=sources,
-        context_run_ids=[context.run_id for context in loaded_contexts],
-        followup_bundle_ids=[bundle.bundle_id for bundle in loaded_followup_bundles],
-        config=config,
-        token_cap=token_cap,
-        build_citation_catalog_fn=build_chat_citation_entries,
-        estimate_context_window_fn=estimate_context_window,
-    )
-    assistant_citations: list[dict[str, object]] = []
-    assistant_citation_warning: str | None = None
-    assistant_routing: dict[str, object] | None = None
-    assistant_text = ""
+
+    if not payload.content.strip():
+        raise HTTPException(
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+            detail="content must be a non-empty string.",
+        )
     try:
-        log_chat_request_summary(
+        result = process_send_chat_message(
             run_id=run_id,
             conversation_id=conversation_id,
-            selected_run_ids=selected_run_ids,
-            loaded_contexts=loaded_contexts,
-            loaded_followup_bundles=loaded_followup_bundles,
-            history=history,
-            token_cap=token_cap,
-            followup_search_enabled=config.chat.followup_search_enabled,
-            clarification_city=clarification_city or None,
+            payload=payload,
+            run_store=run_store,
+            run_record=run_record,
+            store=store,
+            chat_job_executor=chat_job_executor,
+            config=config,
+            api_key_override=api_key_override,
         )
-        effective_api_key = (
-            api_key_override
-            if api_key_override is not None
-            else get_openrouter_api_key()
-        )
-        if not config.chat.followup_search_enabled:
-            plan = build_context_reply_plan(
-                original_question=run_record.question,
-                sources=sources,
-                history=history,
-                user_content=effective_user_content,
-                config=config,
-                token_cap=token_cap,
-                citation_prefix_tokens=prompt_cache.citation_prefix_tokens,
-            )
-            log_context_reply_plan(
-                run_id=run_id,
-                conversation_id=conversation_id,
-                selected_run_ids=selected_run_ids,
-                loaded_contexts=loaded_contexts,
-                loaded_followup_bundles=loaded_followup_bundles,
-                sources=sources,
-                plan=plan,
-            )
-            if getattr(plan, "mode", "direct") == "split":
-                return _queue_split_context_chat_response(
-                    run_id=run_id,
-                    conversation_id=conversation_id,
-                    response=response,
-                    payload_content=payload.content,
-                    original_question=run_record.question,
-                    effective_user_content=effective_user_content,
-                    history=history,
-                    context_run_ids=selected_run_ids,
-                    loaded_followup_bundles=loaded_followup_bundles,
-                    token_cap=token_cap,
-                    assistant_routing=assistant_routing,
-                    api_key_override=api_key_override,
-                    chat_memory_store=store,
-                    chat_job_executor=chat_job_executor,
-                    selected_run_ids=selected_run_ids,
-                    plan=plan,
-                )
-            assistant_text, assistant_citations, assistant_citation_warning = (
-                answer_from_context_reply(
-                    run_id=run_id,
-                    original_question=run_record.question,
-                    sources=sources,
-                    history=history,
-                    user_content=effective_user_content,
-                    config=config,
-                    token_cap=token_cap,
-                    api_key_override=api_key_override,
-                    citation_prefix_tokens=prompt_cache.citation_prefix_tokens,
-                )
-            )
-        else:
-            # Compute the plan before routing. Split-mode sessions are queued
-            # immediately — no value routing when the answer is generated async.
-            plan = build_context_reply_plan(
-                original_question=run_record.question,
-                sources=sources,
-                history=history,
-                user_content=effective_user_content,
-                config=config,
-                token_cap=token_cap,
-                citation_prefix_tokens=prompt_cache.citation_prefix_tokens,
-            )
-            log_context_reply_plan(
-                run_id=run_id,
-                conversation_id=conversation_id,
-                selected_run_ids=selected_run_ids,
-                loaded_contexts=loaded_contexts,
-                loaded_followup_bundles=loaded_followup_bundles,
-                sources=sources,
-                plan=plan,
-            )
-            if getattr(plan, "mode", "direct") == "split":
-                return _queue_split_context_chat_response(
-                    run_id=run_id,
-                    conversation_id=conversation_id,
-                    response=response,
-                    payload_content=payload.content,
-                    original_question=run_record.question,
-                    effective_user_content=effective_user_content,
-                    history=history,
-                    context_run_ids=selected_run_ids,
-                    loaded_followup_bundles=loaded_followup_bundles,
-                    token_cap=token_cap,
-                    assistant_routing=assistant_routing,
-                    api_key_override=api_key_override,
-                    chat_memory_store=store,
-                    chat_job_executor=chat_job_executor,
-                    selected_run_ids=selected_run_ids,
-                    plan=plan,
-                )
-
-            if clarification_city:
-                routing_decision = ChatFollowupDecision(
-                    action="search_single_city",
-                    reason="User selected a single city after clarification request.",
-                    target_city=clarification_city,
-                    rewritten_question=effective_user_content,
-                )
-            else:
-                router_payload = _build_router_payload(
-                    user_message=payload.content,
-                    original_question=run_record.question,
-                    history=history,
-                    selected_run_ids=selected_run_ids,
-                    followup_bundles=loaded_followup_bundles,
-                    sources=sources,
-                )
-                log_chat_router_preflight(
-                    run_id=run_id,
-                    conversation_id=conversation_id,
-                    selected_run_ids=selected_run_ids,
-                    loaded_contexts=loaded_contexts,
-                    loaded_followup_bundles=loaded_followup_bundles,
-                    router_payload=router_payload,
-                )
-                try:
-                    routing_decision = route_chat_followup(
-                        payload=router_payload,
-                        config=config,
-                        api_key=effective_api_key,
-                    )
-                except (OSError, RuntimeError, ValueError) as exc:
-                    logger.warning(
-                        "Chat follow-up router failed; falling back to answer_from_context. run_id=%s conversation_id=%s error=%s",
-                        run_id,
-                        conversation_id,
-                        exc,
-                    )
-                    routing_decision = None
-
-            if routing_decision is None or routing_decision.action == "answer_from_context":
-                if routing_decision is not None:
-                    assistant_routing = build_routing_metadata(
-                        action=routing_decision.action,
-                        reason=routing_decision.reason,
-                        target_city=routing_decision.target_city,
-                    )
-                assistant_text, assistant_citations, assistant_citation_warning = (
-                    answer_from_context_reply(
-                        run_id=run_id,
-                        original_question=run_record.question,
-                        sources=sources,
-                        history=history,
-                        user_content=effective_user_content,
-                        config=config,
-                        token_cap=token_cap,
-                        api_key_override=api_key_override,
-                        citation_prefix_tokens=prompt_cache.citation_prefix_tokens,
-                    )
-                )
-            elif routing_decision.action == "out_of_scope":
-                assistant_text = build_out_of_scope_reply()
-                assistant_routing = build_routing_metadata(
-                    action=routing_decision.action,
-                    reason=routing_decision.reason,
-                )
-            elif routing_decision.action == "needs_city_clarification":
-                assistant_text = build_city_clarification_reply()
-                assistant_routing = build_routing_metadata(
-                    action=routing_decision.action,
-                    reason=routing_decision.reason,
-                    pending_user_message=payload.content,
-                )
-            else:
-                target_city = routing_decision.target_city
-                if not target_city:
-                    assistant_text = build_city_clarification_reply()
-                    assistant_routing = build_routing_metadata(
-                        action="needs_city_clarification",
-                        reason="Router requested a city search but did not provide exactly one city.",
-                        pending_user_message=payload.content,
-                    )
-                else:
-                    search_result = run_chat_followup_search(
-                        runs_dir=run_store.runs_dir,
-                        run_id=run_id,
-                        conversation_id=conversation_id,
-                        turn_index=next_turn_index(history),
-                        question=routing_decision.rewritten_question or effective_user_content,
-                        target_city=target_city,
-                        config=config,
-                        api_key=effective_api_key,
-                    )
-                    assistant_routing = build_routing_metadata(
-                        action=routing_decision.action,
-                        reason=routing_decision.reason,
-                        target_city=target_city,
-                        bundle_id=search_result.bundle_id,
-                    )
-                    if search_result.status == "success" and search_result.excerpt_count > 0:
-                        session = store.attach_followup_bundle(
-                            run_id=run_id,
-                            conversation_id=conversation_id,
-                            bundle_id=search_result.bundle_id,
-                            city_key=target_city.strip().casefold(),
-                            target_city=search_result.target_city,
-                            created_at=search_result.created_at.isoformat(),
-                            max_followup_bundles=config.chat.max_auto_followup_bundles,
-                        )
-                        (
-                            selected_run_ids,
-                            loaded_contexts,
-                            excluded_ids,
-                            loaded_followup_bundles,
-                            excluded_followup_ids,
-                        ) = resolve_session_contexts(
-                            run_store,
-                            session,
-                            conversation_id=conversation_id,
-                            fallback_run_id=run_id,
-                            config=config,
-                            token_cap=token_cap,
-                        )
-                        if excluded_followup_ids:
-                            session = store.prune_followup_bundles(
-                                run_id,
-                                conversation_id,
-                                [bundle.bundle_id for bundle in loaded_followup_bundles],
-                            )
-                            (
-                                selected_run_ids,
-                                loaded_contexts,
-                                excluded_ids,
-                                loaded_followup_bundles,
-                                excluded_followup_ids,
-                            ) = resolve_session_contexts(
-                                run_store,
-                                session,
-                                conversation_id=conversation_id,
-                                fallback_run_id=run_id,
-                                config=config,
-                                token_cap=token_cap,
-                            )
-                        sources = build_chat_sources(loaded_contexts, loaded_followup_bundles)
-                        session, prompt_cache = get_or_build_session_prompt_context_cache(
-                            run_id=run_id,
-                            conversation_id=conversation_id,
-                            session=session,
-                            store=store,
-                            original_question=run_record.question,
-                            sources=sources,
-                            context_run_ids=[context.run_id for context in loaded_contexts],
-                            followup_bundle_ids=[
-                                bundle.bundle_id for bundle in loaded_followup_bundles
-                            ],
-                            config=config,
-                            token_cap=token_cap,
-                            build_citation_catalog_fn=build_chat_citation_entries,
-                            estimate_context_window_fn=estimate_context_window,
-                        )
-                        plan = build_context_reply_plan(
-                            original_question=run_record.question,
-                            sources=sources,
-                            history=history,
-                            user_content=effective_user_content,
-                            config=config,
-                            token_cap=token_cap,
-                            citation_prefix_tokens=prompt_cache.citation_prefix_tokens,
-                        )
-                        log_context_reply_plan(
-                            run_id=run_id,
-                            conversation_id=conversation_id,
-                            selected_run_ids=selected_run_ids,
-                            loaded_contexts=loaded_contexts,
-                            loaded_followup_bundles=loaded_followup_bundles,
-                            sources=sources,
-                            plan=plan,
-                        )
-                        if getattr(plan, "mode", "direct") == "split":
-                            return _queue_split_context_chat_response(
-                                run_id=run_id,
-                                conversation_id=conversation_id,
-                                response=response,
-                                payload_content=payload.content,
-                                original_question=run_record.question,
-                                effective_user_content=effective_user_content,
-                                history=history,
-                                context_run_ids=selected_run_ids,
-                                loaded_followup_bundles=loaded_followup_bundles,
-                                token_cap=token_cap,
-                                assistant_routing=assistant_routing,
-                                api_key_override=api_key_override,
-                                chat_memory_store=store,
-                                chat_job_executor=chat_job_executor,
-                                selected_run_ids=selected_run_ids,
-                                plan=plan,
-                            )
-                        assistant_text, assistant_citations, assistant_citation_warning = (
-                            answer_from_context_reply(
-                                run_id=run_id,
-                                original_question=run_record.question,
-                                sources=sources,
-                                history=history,
-                                user_content=effective_user_content,
-                                config=config,
-                                token_cap=token_cap,
-                                api_key_override=api_key_override,
-                                citation_prefix_tokens=prompt_cache.citation_prefix_tokens,
-                            )
-                        )
-                    else:
-                        if is_unavailable_city_result(search_result):
-                            assistant_text = build_unavailable_city_reply(target_city)
-                            assistant_routing = build_routing_metadata(
-                                action="needs_city_clarification",
-                                reason=(
-                                    "Requested city is not available in the current searchable city list."
-                                ),
-                                pending_user_message=effective_user_content,
-                            )
-                        else:
-                            assistant_text = build_followup_failure_reply(target_city)
+        if result.queued:
+            response.status_code = status.HTTP_202_ACCEPTED
+        return result.response
+    except ChatSessionNotFoundError as exc:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=str(exc)) from exc
+    except ChatBaseContextUnavailableError as exc:
+        raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail=str(exc)) from exc
+    except ChatNoContextSourcesError as exc:
+        raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail=str(exc)) from exc
     except APITimeoutError as exc:
         raise HTTPException(
             status_code=status.HTTP_504_GATEWAY_TIMEOUT,
@@ -1041,51 +568,6 @@ def send_chat_message(
         ) from exc
     except ChatSessionPendingJobError as exc:
         raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail=str(exc)) from exc
-    try:
-        _, user_message, assistant_message = store.append_turn(
-            run_id=run_id,
-            conversation_id=conversation_id,
-            user_content=payload.content,
-            assistant_content=assistant_text,
-            assistant_citations=assistant_citations or None,
-            assistant_citation_warning=assistant_citation_warning,
-            assistant_routing=assistant_routing,
-        )
-    except ChatSessionPendingJobError as exc:
-        raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail=str(exc)) from exc
-
-    if excluded_ids:
-        filtered_ids = [context.run_id for context in loaded_contexts]
-        store.update_context_runs(run_id, conversation_id, filtered_ids or [run_id])
-
-    return SendChatMessageCompletedResponse(
-        mode="completed",
-        run_id=run_id,
-        conversation_id=conversation_id,
-        user_message=as_message(user_message),
-        assistant_message=as_message(assistant_message),
-    )
 
 
-def _build_router_payload(
-    *,
-    user_message: str,
-    original_question: str,
-    history: list[dict[str, str]],
-    selected_run_ids: list[str],
-    followup_bundles,
-    sources,
-):
-    """Build the compact payload sent to the follow-up router."""
-    from backend.api.services.chat_reply_helpers import build_router_payload
-    return build_router_payload(
-        user_message=user_message,
-        original_question=original_question,
-        history=history,
-        selected_run_ids=selected_run_ids,
-        followup_bundles=followup_bundles,
-        sources=sources,
-    )
-
-
-__all__ = ["build_chat_job_processor", "router"]
+__all__ = ["router"]

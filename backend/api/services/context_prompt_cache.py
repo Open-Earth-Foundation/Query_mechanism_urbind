@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Literal, cast
 
@@ -11,22 +10,12 @@ from backend.api.services.context_chat import (
     estimate_context_window,
     resolve_chat_token_cap,
 )
+from backend.api.services.models import PromptContextKind, TokenSidecar
 from backend.utils.config import AppConfig
 from backend.utils.json_io import read_json_object, write_json
 
-PromptContextKind = Literal["citation_catalog", "serialized_contexts"]
 _VALID_PROMPT_CONTEXT_KINDS = {"citation_catalog", "serialized_contexts"}
 _TOKEN_SIDECAR_NAME = "token_cache.json"
-
-
-@dataclass(frozen=True)
-class TokenSidecar:
-    """All token metrics for one run, stored in a tiny sidecar file."""
-
-    document_tokens: int
-    bundle_tokens: int
-    prompt_context_tokens: int
-    prompt_context_kind: PromptContextKind
 
 
 def read_token_sidecar(run_dir: Path) -> TokenSidecar | None:

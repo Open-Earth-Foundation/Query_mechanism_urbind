@@ -1,3 +1,7 @@
+import { getApiBaseUrl } from "@/lib/api-runtime-config";
+
+export { getApiBaseUrl };
+
 export type RunStatus =
   | "queued"
   | "running"
@@ -295,26 +299,6 @@ export interface ChatFollowupReferenceListResponse {
   references: RunReferenceListItem[];
 }
 
-function normalizeChatContextSummary(summary: ChatContextSummary): ChatContextSummary {
-  return summary;
-}
-
-function normalizeChatFollowupBundleSummary(
-  summary: ChatFollowupBundleSummary,
-): ChatFollowupBundleSummary {
-  return summary;
-}
-
-function normalizeChatSessionContextsResponse(
-  payload: ChatSessionContextsResponse,
-): ChatSessionContextsResponse {
-  return {
-    ...payload,
-    contexts: payload.contexts.map(normalizeChatContextSummary),
-    followup_bundles: payload.followup_bundles.map(normalizeChatFollowupBundleSummary),
-  };
-}
-
 function normalizeCityKey(value: string): string {
   return value.trim().toLocaleLowerCase();
 }
@@ -336,45 +320,10 @@ function normalizeCityKeys(values?: string[]): string[] | undefined {
   return normalized.length > 0 ? normalized : undefined;
 }
 
-const configuredBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL?.trim() ?? "";
-const LOCAL_API_BASE_URL = "http://127.0.0.1:8000";
-const DEFAULT_API_BASE_URL = "https://urbind-query-mechanism-api.openearth.dev";
 const DEFAULT_REQUEST_TIMEOUT_MS = 120_000;
 const CHAT_SEND_REQUEST_TIMEOUT_MS = 300_000;
 const RUN_LIST_REQUEST_TIMEOUT_MS = 12_000;
 const STATUS_REQUEST_TIMEOUT_MS = 10_000;
-
-function normalizeBaseUrl(baseUrl: string): string {
-  return baseUrl.replace(/\/+$/, "");
-}
-
-function resolveClientFallbackApiBaseUrl(): string {
-  const locationHost = globalThis.location?.hostname?.toLowerCase() ?? "";
-  if (locationHost === "localhost" || locationHost === "127.0.0.1") {
-    return LOCAL_API_BASE_URL;
-  }
-  if (locationHost.endsWith(".openearth.dev")) {
-    return DEFAULT_API_BASE_URL;
-  }
-  if (locationHost.length > 0) {
-    return `http://${locationHost}:8000`;
-  }
-  return DEFAULT_API_BASE_URL;
-}
-
-export const apiBaseUrl = normalizeBaseUrl(
-  configuredBaseUrl.length > 0 ? configuredBaseUrl : DEFAULT_API_BASE_URL,
-);
-
-export function getApiBaseUrl(): string {
-  if (configuredBaseUrl.length > 0) {
-    return normalizeBaseUrl(configuredBaseUrl);
-  }
-  if (typeof window !== "undefined") {
-    return normalizeBaseUrl(resolveClientFallbackApiBaseUrl());
-  }
-  return apiBaseUrl;
-}
 
 let userApiKey: string | null = null;
 
@@ -593,11 +542,7 @@ export async function applyRunAssumptions(
 }
 
 export async function fetchChatContextCatalog(): Promise<ChatContextCatalogResponse> {
-  const payload = await requestJson<ChatContextCatalogResponse>("/api/v1/chat/contexts");
-  return {
-    ...payload,
-    contexts: payload.contexts.map(normalizeChatContextSummary),
-  };
+  return requestJson<ChatContextCatalogResponse>("/api/v1/chat/contexts");
 }
 
 export async function listChatSessions(runId: string): Promise<ChatSessionListResponse> {
@@ -630,10 +575,9 @@ export async function fetchChatSessionContexts(
   runId: string,
   conversationId: string,
 ): Promise<ChatSessionContextsResponse> {
-  const payload = await requestJson<ChatSessionContextsResponse>(
+  return requestJson<ChatSessionContextsResponse>(
     `/api/v1/runs/${encodeURIComponent(runId)}/chat/sessions/${encodeURIComponent(conversationId)}/contexts`,
   );
-  return normalizeChatSessionContextsResponse(payload);
 }
 
 export async function updateChatSessionContexts(
@@ -641,7 +585,7 @@ export async function updateChatSessionContexts(
   conversationId: string,
   contextRunIds: string[],
 ): Promise<ChatSessionContextsResponse> {
-  const payload = await requestJson<ChatSessionContextsResponse>(
+  return requestJson<ChatSessionContextsResponse>(
     `/api/v1/runs/${encodeURIComponent(runId)}/chat/sessions/${encodeURIComponent(conversationId)}/contexts`,
     {
       method: "PUT",
@@ -649,7 +593,6 @@ export async function updateChatSessionContexts(
     },
     true,
   );
-  return normalizeChatSessionContextsResponse(payload);
 }
 
 export async function sendChatMessage(
@@ -658,15 +601,11 @@ export async function sendChatMessage(
   content: string,
   options?: {
     clarificationCity?: string;
-    clarificationQuestion?: string;
   },
 ): Promise<SendChatMessageResponse> {
   const body: Record<string, string> = { content };
   if (options?.clarificationCity) {
     body.clarification_city = options.clarificationCity;
-  }
-  if (options?.clarificationQuestion) {
-    body.clarification_question = options.clarificationQuestion;
   }
   return requestJson<SendChatMessageResponse>(
     `/api/v1/runs/${encodeURIComponent(runId)}/chat/sessions/${encodeURIComponent(conversationId)}/messages`,

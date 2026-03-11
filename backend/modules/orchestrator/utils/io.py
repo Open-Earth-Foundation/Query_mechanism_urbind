@@ -3,19 +3,12 @@
 from __future__ import annotations
 
 import json
-import logging
 from pathlib import Path
-from typing import TYPE_CHECKING
 
 from backend.api.services.context_prompt_cache import compute_prompt_context_cache, write_prompt_context_cache
-
-if TYPE_CHECKING:
-    from backend.services.run_logger import RunLogger
-    from backend.utils.config import AppConfig
-    from backend.utils.paths import RunPaths
-
-logger = logging.getLogger(__name__)
-
+from backend.services.run_logger import RunLogger
+from backend.utils.config import AppConfig
+from backend.utils.paths import RunPaths
 
 def write_json(path: Path, payload: object) -> None:
     """

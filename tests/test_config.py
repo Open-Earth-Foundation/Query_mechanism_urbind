@@ -18,8 +18,22 @@ def _write_minimal_config(tmp_path: Path) -> Path:
                 "  model: test-model",
                 "markdown_researcher:",
                 "  model: test-model",
+                "  chunk_overlap_tokens: 2000",
+                "  batch_max_chunks: 32",
+                "  max_workers: 8",
+                "  request_backoff_base_seconds: 0.5",
+                "  request_backoff_max_seconds: 2.0",
                 "writer:",
                 "  model: test-model",
+                "chat:",
+                "  model: openai/gpt-5.2",
+                "  provider_timeout_seconds: 60.0",
+                "  followup_router_max_excerpts_per_source: 50",
+                "assumptions_reviewer:",
+                "  model: openai/gpt-5.2",
+                "retry:",
+                "  backoff_base_seconds: 1.0",
+                "  backoff_max_seconds: 30.0",
             ]
         ),
         encoding="utf-8",
@@ -73,8 +87,22 @@ def test_load_config_reads_vector_store_settings_from_yaml(
                 "  model: test-model",
                 "markdown_researcher:",
                 "  model: test-model",
+                "  chunk_overlap_tokens: 2000",
+                "  batch_max_chunks: 32",
+                "  max_workers: 8",
+                "  request_backoff_base_seconds: 0.5",
+                "  request_backoff_max_seconds: 2.0",
                 "writer:",
                 "  model: test-model",
+                "chat:",
+                "  model: openai/gpt-5.2",
+                "  provider_timeout_seconds: 60.0",
+                "  followup_router_max_excerpts_per_source: 50",
+                "assumptions_reviewer:",
+                "  model: openai/gpt-5.2",
+                "retry:",
+                "  backoff_base_seconds: 1.0",
+                "  backoff_max_seconds: 30.0",
                 "vector_store:",
                 "  embedding_model: custom-embedding-model",
                 "  retrieval_max_distance: 0.75",
@@ -106,8 +134,22 @@ def test_load_config_reads_markdown_reasoning_effort_from_yaml(
                 "markdown_researcher:",
                 "  model: x-ai/grok-4.1-fast",
                 "  reasoning_effort: none",
+                "  chunk_overlap_tokens: 2000",
+                "  batch_max_chunks: 32",
+                "  max_workers: 8",
+                "  request_backoff_base_seconds: 0.5",
+                "  request_backoff_max_seconds: 2.0",
                 "writer:",
                 "  model: test-model",
+                "chat:",
+                "  model: openai/gpt-5.2",
+                "  provider_timeout_seconds: 60.0",
+                "  followup_router_max_excerpts_per_source: 50",
+                "assumptions_reviewer:",
+                "  model: openai/gpt-5.2",
+                "retry:",
+                "  backoff_base_seconds: 1.0",
+                "  backoff_max_seconds: 30.0",
             ]
         ),
         encoding="utf-8",
@@ -172,8 +214,22 @@ def test_load_config_rejects_invalid_markdown_reasoning_effort(
                 "markdown_researcher:",
                 "  model: x-ai/grok-4.1-fast",
                 "  reasoning_effort: ultra",
+                "  chunk_overlap_tokens: 2000",
+                "  batch_max_chunks: 32",
+                "  max_workers: 8",
+                "  request_backoff_base_seconds: 0.5",
+                "  request_backoff_max_seconds: 2.0",
                 "writer:",
                 "  model: test-model",
+                "chat:",
+                "  model: openai/gpt-5.2",
+                "  provider_timeout_seconds: 60.0",
+                "  followup_router_max_excerpts_per_source: 50",
+                "assumptions_reviewer:",
+                "  model: openai/gpt-5.2",
+                "retry:",
+                "  backoff_base_seconds: 1.0",
+                "  backoff_max_seconds: 30.0",
             ]
         ),
         encoding="utf-8",
@@ -183,19 +239,8 @@ def test_load_config_rejects_invalid_markdown_reasoning_effort(
         load_config(config_path)
 
 
-def test_load_config_uses_central_retry_defaults(tmp_path: Path) -> None:
-    """Retry settings default to centralized values when omitted."""
-    config_path = _write_minimal_config(tmp_path)
-
-    config = load_config(config_path)
-
-    assert config.retry.max_attempts == 5
-    assert config.retry.backoff_base_seconds == 0.8
-    assert config.retry.backoff_max_seconds == 8.0
-
-
-def test_load_config_defaults_chat_history_to_twelve(tmp_path: Path) -> None:
-    """Chat history defaults to 12 messages when chat config is omitted."""
+def test_load_config_reads_required_chat_defaults_from_yaml(tmp_path: Path) -> None:
+    """Chat settings come from YAML instead of hidden model defaults."""
     config_path = _write_minimal_config(tmp_path)
 
     config = load_config(config_path)
@@ -203,6 +248,41 @@ def test_load_config_defaults_chat_history_to_twelve(tmp_path: Path) -> None:
     assert config.chat.max_history_messages == 12
     assert not config.chat.followup_search_enabled
     assert config.chat.max_auto_followup_bundles == 3
+    assert config.chat.provider_timeout_seconds == 60.0
+    assert config.chat.followup_router_max_excerpts_per_source == 50
+    assert config.retry.backoff_base_seconds == 1.0
+    assert config.retry.backoff_max_seconds == 30.0
+
+
+def test_load_config_requires_chat_and_assumptions_sections(tmp_path: Path) -> None:
+    """Chat and assumptions reviewer sections must be present in llm_config.yaml."""
+    config_path = tmp_path / "llm_config.yaml"
+    config_path.write_text(
+        "\n".join(
+            [
+                "orchestrator:",
+                "  model: test-model",
+                "sql_researcher:",
+                "  model: test-model",
+                "markdown_researcher:",
+                "  model: test-model",
+                "  chunk_overlap_tokens: 2000",
+                "  batch_max_chunks: 32",
+                "  max_workers: 8",
+                "  request_backoff_base_seconds: 0.5",
+                "  request_backoff_max_seconds: 2.0",
+                "writer:",
+                "  model: test-model",
+                "retry:",
+                "  backoff_base_seconds: 1.0",
+                "  backoff_max_seconds: 30.0",
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    with pytest.raises(ValidationError):
+        load_config(config_path)
 
 
 def test_load_config_reads_central_retry_settings_from_yaml(tmp_path: Path) -> None:
@@ -217,8 +297,19 @@ def test_load_config_reads_central_retry_settings_from_yaml(tmp_path: Path) -> N
                 "  model: test-model",
                 "markdown_researcher:",
                 "  model: test-model",
+                "  chunk_overlap_tokens: 2000",
+                "  batch_max_chunks: 32",
+                "  max_workers: 8",
+                "  request_backoff_base_seconds: 0.5",
+                "  request_backoff_max_seconds: 2.0",
                 "writer:",
                 "  model: test-model",
+                "chat:",
+                "  model: openai/gpt-5.2",
+                "  provider_timeout_seconds: 60.0",
+                "  followup_router_max_excerpts_per_source: 50",
+                "assumptions_reviewer:",
+                "  model: openai/gpt-5.2",
                 "retry:",
                 "  max_attempts: 7",
                 "  backoff_base_seconds: 0.25",

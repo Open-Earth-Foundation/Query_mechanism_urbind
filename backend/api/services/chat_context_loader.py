@@ -2,18 +2,20 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
-from typing import Any
 import logging
 
-from backend.api.models import ChatContextSummary, ChatFollowupBundleSummary
+from backend.api.models import ChatContextSummary
 from backend.api.services.context_prompt_cache import (
-    PromptContextKind,
     ensure_prompt_context_cache,
     read_token_sidecar,
     write_token_sidecar,
+)
+from backend.api.services.models import (
+    LoadedChatSource,
+    LoadedContext,
+    LoadedFollowupBundle,
 )
 from backend.api.services.run_store import RunRecord, RunStore, SUCCESS_STATUSES
 from backend.modules.writer.utils.markdown_helpers import (
@@ -26,90 +28,6 @@ from backend.api.services.chat_followup_research import followup_bundle_dir
 from backend.api.services.context_chat import load_context_bundle, load_final_document
 
 logger = logging.getLogger(__name__)
-
-
-@dataclass(frozen=True)
-class LoadedContext:
-    """Loaded context artifacts with token accounting."""
-
-    run_id: str
-    question: str
-    status: str
-    started_at: datetime
-    final_output_path: Path
-    context_bundle_path: Path
-    markdown_excerpts_path: Path
-    final_document: str
-    context_bundle: dict[str, Any]
-    document_tokens: int
-    bundle_tokens: int
-    prompt_context_tokens: int
-    prompt_context_kind: PromptContextKind
-
-    @property
-    def total_tokens(self) -> int:
-        """Total tokens consumed by both context artifacts."""
-        return self.document_tokens + self.bundle_tokens
-
-    def to_summary(self) -> ChatContextSummary:
-        """Convert to API summary model."""
-        return ChatContextSummary(
-            run_id=self.run_id,
-            question=self.question,
-            status=self.status,  # type: ignore[arg-type]
-            started_at=self.started_at,
-            final_output_path=str(self.final_output_path),
-            context_bundle_path=str(self.context_bundle_path),
-            document_tokens=self.document_tokens,
-            bundle_tokens=self.bundle_tokens,
-            total_tokens=self.total_tokens,
-            prompt_context_tokens=self.prompt_context_tokens,
-            prompt_context_kind=self.prompt_context_kind,
-        )
-
-
-@dataclass(frozen=True)
-class LoadedFollowupBundle:
-    """Loaded chat-owned follow-up bundle."""
-
-    bundle_id: str
-    target_city: str
-    created_at: datetime
-    context_bundle_path: Path
-    markdown_excerpts_path: Path
-    context_bundle: dict[str, Any]
-    bundle_tokens: int
-    excerpt_count: int
-    prompt_context_tokens: int
-    prompt_context_kind: PromptContextKind
-
-    @property
-    def total_tokens(self) -> int:
-        """Total prompt-budget cost for this follow-up bundle."""
-        return self.bundle_tokens
-
-    def to_summary(self) -> ChatFollowupBundleSummary:
-        """Convert to API summary model."""
-        return ChatFollowupBundleSummary(
-            bundle_id=self.bundle_id,
-            target_city=self.target_city,
-            excerpt_count=self.excerpt_count,
-            total_tokens=self.total_tokens,
-            prompt_context_tokens=self.prompt_context_tokens,
-            prompt_context_kind=self.prompt_context_kind,
-            created_at=self.created_at,
-        )
-
-
-@dataclass(frozen=True)
-class LoadedChatSource:
-    """Generic chat source consumed by citation building and reply generation."""
-
-    source_type: str  # Literal["run", "followup_bundle"]
-    source_id: str
-    question: str
-    final_document: str
-    context_bundle: dict[str, Any]
 
 
 def resolve_final_output_path(run_store: RunStore, run_id: str, raw_path: Path | None) -> Path:

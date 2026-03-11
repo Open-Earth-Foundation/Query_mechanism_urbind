@@ -3,12 +3,15 @@ import logging
 import time
 from datetime import datetime, timezone
 from pathlib import Path
+from types import SimpleNamespace
 
 import pytest
 from fastapi.testclient import TestClient
 
 from backend.api.main import create_app
 from backend.api.services import context_chat
+from backend.api.services import ChatNoContextSourcesError
+from backend.api.services import chat_send_service
 from backend.api.services.chat_followup_research import (
     CHAT_FOLLOWUP_CITY_UNAVAILABLE,
     ChatFollowupSearchResult,
@@ -17,10 +20,12 @@ from backend.api.services.chat_followup_research import (
 from backend.modules.orchestrator.models import ChatFollowupDecision
 from backend.utils.config import (
     AgentConfig,
+    AssumptionsReviewerConfig,
     AppConfig,
     ChatConfig,
     MarkdownResearcherConfig,
     OrchestratorConfig,
+    RetryConfig,
     SqlResearcherConfig,
 )
 from backend.utils.paths import RunPaths, create_run_paths
@@ -42,18 +47,29 @@ def _build_config(
             model="test-model", context_bundle_name="context_bundle.json"
         ),
         sql_researcher=SqlResearcherConfig(model="test-model"),
-        markdown_researcher=MarkdownResearcherConfig(model="test-model"),
+        markdown_researcher=MarkdownResearcherConfig(
+            model="test-model",
+            chunk_overlap_tokens=2000,
+            batch_max_chunks=32,
+            max_workers=8,
+            request_backoff_base_seconds=0.5,
+            request_backoff_max_seconds=2.0,
+        ),
         writer=AgentConfig(model="test-model"),
+        assumptions_reviewer=AssumptionsReviewerConfig(model="openai/gpt-5.2"),
         chat=ChatConfig(
             model="openai/gpt-5.2",
             max_history_messages=10,
             max_context_total_tokens=max_context_total_tokens,
             min_prompt_token_cap=min_prompt_token_cap,
+            provider_timeout_seconds=60.0,
             prompt_token_buffer=prompt_token_buffer,
             multi_pass_chunk_tokens=multi_pass_chunk_tokens,
             followup_search_enabled=followup_search_enabled,
             max_auto_followup_bundles=max_auto_followup_bundles,
+            followup_router_max_excerpts_per_source=50,
         ),
+        retry=RetryConfig(backoff_base_seconds=1.0, backoff_max_seconds=30.0),
         runs_dir=runs_dir,
         markdown_dir=markdown_dir,
         enable_sql=False,
@@ -139,6 +155,7 @@ def _patch_api_config_loaders(
     """Patch both async run and chat-route config loading for deterministic tests."""
     monkeypatch.setattr("backend.api.services.run_executor.load_config", stub_load_config)
     monkeypatch.setattr("backend.api.routes.chat.load_config", stub_load_config)
+    monkeypatch.setattr("backend.api.services.chat_split_flow.load_config", stub_load_config)
 
 
 def _write_followup_bundle(
@@ -273,7 +290,7 @@ def test_chat_session_lifecycle(tmp_path: Path, monkeypatch: pytest.MonkeyPatch)
 
     _patch_api_config_loaders(monkeypatch, _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
-    monkeypatch.setattr("backend.api.routes.chat.generate_context_chat_reply", _stub_generate_reply)
+    monkeypatch.setattr("backend.api.services.chat_reply_helpers.generate_context_chat_reply", _stub_generate_reply)
 
     app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
     with TestClient(app) as client:
@@ -440,6 +457,93 @@ def test_chat_unknown_run_returns_not_found(tmp_path: Path) -> None:
         assert response.status_code == 404
 
 
+def test_load_chat_session_state_raises_dedicated_error_when_no_contexts(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+
+    monkeypatch.setattr(
+        "backend.api.services.chat_send_service.resolve_session_contexts",
+        lambda *_args, **_kwargs: (["run-chat"], [], [], [], []),
+    )
+
+    with pytest.raises(
+        ChatNoContextSourcesError,
+        match="No usable context sources are selected for this session.",
+    ):
+        chat_send_service._load_chat_session_state(
+            run_id="run-chat",
+            conversation_id="conv-1",
+            run_store=SimpleNamespace(),
+            run_record=SimpleNamespace(question="Build doc"),
+            store=SimpleNamespace(),
+            session={},
+            config=config,
+            token_cap=config.chat.max_context_total_tokens,
+        )
+
+
+def test_send_chat_message_returns_conflict_for_no_context_sources_error(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+
+    def _stub_load_config(_path: Path | None = None) -> AppConfig:
+        return _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+
+    def _stub_run_pipeline(
+        question: str,
+        config: AppConfig,
+        run_id: str | None = None,
+        log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
+        selected_cities: list[str] | None = None,
+    ) -> RunPaths:
+        assert run_id is not None
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
+        assert selected_cities is None
+        return _write_success_artifacts(question, run_id, config)
+
+    def _stub_process_send_chat_message(**_kwargs: object) -> object:
+        raise ChatNoContextSourcesError("Context selection is empty after pruning.")
+
+    _patch_api_config_loaders(monkeypatch, _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+    monkeypatch.setattr(
+        "backend.api.routes.chat.process_send_chat_message",
+        _stub_process_send_chat_message,
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        start = client.post(
+            "/api/v1/runs",
+            json={"question": "Build doc", "run_id": "run-chat-no-context"},
+        )
+        assert start.status_code == 202
+        _poll_until_completed(client, "run-chat-no-context")
+
+        create_session = client.post("/api/v1/runs/run-chat-no-context/chat/sessions", json={})
+        assert create_session.status_code == 201
+        conversation_id = create_session.json()["conversation_id"]
+
+        response = client.post(
+            f"/api/v1/runs/run-chat-no-context/chat/sessions/{conversation_id}/messages",
+            json={"content": "What was the context?"},
+        )
+        assert response.status_code == 409
+        assert response.json()["detail"] == "Context selection is empty after pruning."
+
+
 def test_chat_supports_header_api_key_override(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
@@ -488,7 +592,7 @@ def test_chat_supports_header_api_key_override(
 
     _patch_api_config_loaders(monkeypatch, _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
-    monkeypatch.setattr("backend.api.routes.chat.generate_context_chat_reply", _stub_generate_reply)
+    monkeypatch.setattr("backend.api.services.chat_reply_helpers.generate_context_chat_reply", _stub_generate_reply)
 
     app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
     with TestClient(app) as client:
@@ -623,7 +727,7 @@ def test_chat_builds_prompt_safe_citation_catalog_and_persists_mapping(
 
     _patch_api_config_loaders(monkeypatch, _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
-    monkeypatch.setattr("backend.api.routes.chat.generate_context_chat_reply", _stub_generate_reply)
+    monkeypatch.setattr("backend.api.services.chat_reply_helpers.generate_context_chat_reply", _stub_generate_reply)
 
     app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
     with TestClient(app) as client:
@@ -717,7 +821,7 @@ def test_chat_retries_once_when_first_reply_has_no_valid_citations(
 
     _patch_api_config_loaders(monkeypatch, _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
-    monkeypatch.setattr("backend.api.routes.chat.generate_context_chat_reply", _stub_generate_reply)
+    monkeypatch.setattr("backend.api.services.chat_reply_helpers.generate_context_chat_reply", _stub_generate_reply)
 
     app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
     with TestClient(app) as client:
@@ -900,12 +1004,12 @@ def test_chat_followup_search_attaches_bundle_and_exposes_references(
 
     _patch_api_config_loaders(monkeypatch, _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
-    monkeypatch.setattr("backend.api.routes.chat.route_chat_followup", _stub_route_chat_followup)
+    monkeypatch.setattr("backend.api.services.chat_followup_flow.route_chat_followup", _stub_route_chat_followup)
     monkeypatch.setattr(
-        "backend.api.routes.chat.run_chat_followup_search",
+        "backend.api.services.chat_followup_flow.run_chat_followup_search",
         _stub_run_chat_followup_search,
     )
-    monkeypatch.setattr("backend.api.routes.chat.generate_context_chat_reply", _stub_generate_reply)
+    monkeypatch.setattr("backend.api.services.chat_reply_helpers.generate_context_chat_reply", _stub_generate_reply)
 
     app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
     with TestClient(app) as client:
@@ -1057,16 +1161,16 @@ def test_chat_followup_queued_response_exposes_city_routing(
 
     _patch_api_config_loaders(monkeypatch, _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
-    monkeypatch.setattr("backend.api.routes.chat.route_chat_followup", _stub_route_chat_followup)
+    monkeypatch.setattr("backend.api.services.chat_followup_flow.route_chat_followup", _stub_route_chat_followup)
     monkeypatch.setattr(
-        "backend.api.routes.chat.run_chat_followup_search",
+        "backend.api.services.chat_followup_flow.run_chat_followup_search",
         _stub_run_chat_followup_search,
     )
     monkeypatch.setattr(
-        "backend.api.routes.chat._build_context_reply_plan",
+        "backend.api.services.chat_send_service._build_and_log_context_reply_plan",
         _stub_build_context_reply_plan,
     )
-    monkeypatch.setattr("backend.api.routes.chat.generate_context_chat_reply", _stub_generate_reply)
+    monkeypatch.setattr("backend.api.services.chat_reply_helpers.generate_context_chat_reply", _stub_generate_reply)
 
     app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
     with TestClient(app) as client:
@@ -1147,7 +1251,7 @@ def test_chat_followup_router_returns_out_of_scope_message(
     _patch_api_config_loaders(monkeypatch, _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
     monkeypatch.setattr(
-        "backend.api.routes.chat.route_chat_followup",
+        "backend.api.services.chat_followup_flow.route_chat_followup",
         lambda payload, config, api_key, log_llm_payload=False: ChatFollowupDecision(
             action="out_of_scope",
             reason="The message is unrelated to the report context.",
@@ -1216,11 +1320,11 @@ def test_chat_followup_router_requests_city_clarification(
     _patch_api_config_loaders(monkeypatch, _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
     monkeypatch.setattr(
-        "backend.api.routes.chat.generate_context_chat_reply",
+        "backend.api.services.chat_reply_helpers.generate_context_chat_reply",
         _unexpected_reply,
     )
     monkeypatch.setattr(
-        "backend.api.routes.chat.route_chat_followup",
+        "backend.api.services.chat_followup_flow.route_chat_followup",
         lambda payload, config, api_key, log_llm_payload=False: ChatFollowupDecision(
             action="needs_city_clarification",
             reason="The user asked about more than one city.",
@@ -1287,11 +1391,11 @@ def test_chat_followup_search_failure_returns_grounded_limitation(
     _patch_api_config_loaders(monkeypatch, _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
     monkeypatch.setattr(
-        "backend.api.routes.chat.generate_context_chat_reply",
+        "backend.api.services.chat_reply_helpers.generate_context_chat_reply",
         _unexpected_reply,
     )
     monkeypatch.setattr(
-        "backend.api.routes.chat.route_chat_followup",
+        "backend.api.services.chat_followup_flow.route_chat_followup",
         lambda payload, config, api_key, log_llm_payload=False: ChatFollowupDecision(
             action="search_single_city",
             reason="Existing context does not cover Munich.",
@@ -1300,7 +1404,7 @@ def test_chat_followup_search_failure_returns_grounded_limitation(
         ),
     )
     monkeypatch.setattr(
-        "backend.api.routes.chat.run_chat_followup_search",
+        "backend.api.services.chat_followup_flow.run_chat_followup_search",
         lambda **kwargs: ChatFollowupSearchResult(
             status="error",
             bundle_id="fup_chat_001_munich",
@@ -1378,11 +1482,11 @@ def test_chat_unavailable_followup_city_returns_city_choice_trigger(
     _patch_api_config_loaders(monkeypatch, _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
     monkeypatch.setattr(
-        "backend.api.routes.chat.generate_context_chat_reply",
+        "backend.api.services.chat_reply_helpers.generate_context_chat_reply",
         _unexpected_reply,
     )
     monkeypatch.setattr(
-        "backend.api.routes.chat.route_chat_followup",
+        "backend.api.services.chat_followup_flow.route_chat_followup",
         lambda payload, config, api_key, log_llm_payload=False: ChatFollowupDecision(
             action="search_single_city",
             reason="Existing context does not cover Atlantis.",
@@ -1391,7 +1495,7 @@ def test_chat_unavailable_followup_city_returns_city_choice_trigger(
         ),
     )
     monkeypatch.setattr(
-        "backend.api.routes.chat.run_chat_followup_search",
+        "backend.api.services.chat_followup_flow.run_chat_followup_search",
         lambda **kwargs: ChatFollowupSearchResult(
             status="error",
             bundle_id="fup_chat_001_atlantis",
@@ -1541,12 +1645,12 @@ def test_chat_clarification_city_selection_triggers_direct_followup_search(
 
     _patch_api_config_loaders(monkeypatch, _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
-    monkeypatch.setattr("backend.api.routes.chat.route_chat_followup", _stub_route_chat_followup)
+    monkeypatch.setattr("backend.api.services.chat_followup_flow.route_chat_followup", _stub_route_chat_followup)
     monkeypatch.setattr(
-        "backend.api.routes.chat.run_chat_followup_search",
+        "backend.api.services.chat_followup_flow.run_chat_followup_search",
         _stub_run_chat_followup_search,
     )
-    monkeypatch.setattr("backend.api.routes.chat.generate_context_chat_reply", _stub_generate_reply)
+    monkeypatch.setattr("backend.api.services.chat_reply_helpers.generate_context_chat_reply", _stub_generate_reply)
 
     app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
     with TestClient(app) as client:
@@ -1575,14 +1679,13 @@ def test_chat_clarification_city_selection_triggers_direct_followup_search(
         city_choice_response = client.post(
             f"/api/v1/runs/run-chat-city-choice/chat/sessions/{conversation_id}/messages",
             json={
-                "content": "Focus only on Munich.",
+                "content": "Compare Munich and Berlin on rooftop solar.",
                 "clarification_city": "Munich",
-                "clarification_question": "Compare Munich and Berlin on rooftop solar.",
             },
         )
         assert city_choice_response.status_code == 200
         payload = city_choice_response.json()
-        assert payload["user_message"]["content"] == "Focus only on Munich."
+        assert payload["user_message"]["content"] == "Compare Munich and Berlin on rooftop solar."
         assert payload["assistant_message"]["content"] == "Munich plans rooftop solar expansion. [ref_1]"
         assert payload["assistant_message"]["routing"]["action"] == "search_single_city"
         assert payload["assistant_message"]["routing"]["target_city"] == "Munich"
@@ -1699,12 +1802,12 @@ def test_chat_followup_bundles_are_pruned_to_configured_maximum(
 
     _patch_api_config_loaders(monkeypatch, _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
-    monkeypatch.setattr("backend.api.routes.chat.route_chat_followup", _stub_route_chat_followup)
+    monkeypatch.setattr("backend.api.services.chat_followup_flow.route_chat_followup", _stub_route_chat_followup)
     monkeypatch.setattr(
-        "backend.api.routes.chat.run_chat_followup_search",
+        "backend.api.services.chat_followup_flow.run_chat_followup_search",
         _stub_run_chat_followup_search,
     )
-    monkeypatch.setattr("backend.api.routes.chat.generate_context_chat_reply", _stub_generate_reply)
+    monkeypatch.setattr("backend.api.services.chat_reply_helpers.generate_context_chat_reply", _stub_generate_reply)
 
     app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
     with TestClient(app) as client:
@@ -1836,7 +1939,7 @@ def test_chat_followup_same_city_search_replaces_previous_bundle(
     _patch_api_config_loaders(monkeypatch, _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
     monkeypatch.setattr(
-        "backend.api.routes.chat.route_chat_followup",
+        "backend.api.services.chat_followup_flow.route_chat_followup",
         lambda payload, config, api_key, log_llm_payload=False: ChatFollowupDecision(
             action="search_single_city",
             reason="Need fresh context for Munich.",
@@ -1845,10 +1948,10 @@ def test_chat_followup_same_city_search_replaces_previous_bundle(
         ),
     )
     monkeypatch.setattr(
-        "backend.api.routes.chat.run_chat_followup_search",
+        "backend.api.services.chat_followup_flow.run_chat_followup_search",
         _stub_run_chat_followup_search,
     )
-    monkeypatch.setattr("backend.api.routes.chat.generate_context_chat_reply", _stub_generate_reply)
+    monkeypatch.setattr("backend.api.services.chat_reply_helpers.generate_context_chat_reply", _stub_generate_reply)
 
     app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
     with TestClient(app) as client:
@@ -1926,16 +2029,30 @@ def test_chat_overflow_uses_evidence_map_reduce_and_reuses_cache(
             {
                 "ref_id": "ref_7",
                 "city_name": "munich",
-                "quote": "Munich evidence " * 120,
-                "partial_answer": "Munich partial answer " * 20,
+                "quote": "Munich evidence " * 30,
+                "partial_answer": "Munich partial answer " * 5,
                 "source_chunk_ids": ["chunk_hidden_1"],
             },
             {
                 "ref_id": "ref_9",
                 "city_name": "porto",
-                "quote": "Porto evidence " * 120,
-                "partial_answer": "Porto partial answer " * 20,
+                "quote": "Porto evidence " * 30,
+                "partial_answer": "Porto partial answer " * 5,
                 "source_chunk_ids": ["chunk_hidden_2"],
+            },
+            {
+                "ref_id": "ref_11",
+                "city_name": "munich",
+                "quote": "Munich evidence " * 30,
+                "partial_answer": "Munich partial answer " * 5,
+                "source_chunk_ids": ["chunk_hidden_3"],
+            },
+            {
+                "ref_id": "ref_13",
+                "city_name": "porto",
+                "quote": "Porto evidence " * 30,
+                "partial_answer": "Porto partial answer " * 5,
+                "source_chunk_ids": ["chunk_hidden_4"],
             },
         ]
         return _write_success_artifacts(question, run_id, config, excerpts=excerpts)
@@ -1944,9 +2061,13 @@ def test_chat_overflow_uses_evidence_map_reduce_and_reuses_cache(
         [
             "Munich partial analysis. [ref_1]",
             "Porto partial analysis. [ref_2]",
+            "Munich backup partial analysis. [ref_3]",
+            "Porto backup partial analysis. [ref_4]",
             "Merged answer for both cities. [ref_1] [ref_2]",
             "Second Munich partial. [ref_1]",
             "Second Porto partial. [ref_2]",
+            "Second Munich backup partial. [ref_3]",
+            "Second Porto backup partial. [ref_4]",
             "Second merged answer. [ref_1] [ref_2]",
         ]
     )
@@ -2045,7 +2166,9 @@ def test_chat_overflow_uses_evidence_map_reduce_and_reuses_cache(
         cache_path = context_chat._chat_evidence_cache_path(runs_dir, "run-chat-overflow")
         assert cache_path.exists()
         cached_payload = json.loads(cache_path.read_text(encoding="utf-8"))
-        assert cached_payload["evidence_count"] == 2
+        assert cached_payload["schema_version"] == context_chat.CHAT_EVIDENCE_CACHE_SCHEMA_VERSION
+        assert cached_payload["evidence_count"] == 4
+        assert all(isinstance(chunk.get("token_count"), int) for chunk in cached_payload["chunks"])
 
         monkeypatch.setattr(
             "backend.api.services.context_chat._write_json_object",
@@ -2268,7 +2391,7 @@ def test_chat_contexts_lazy_backfill_bundle_cache_and_reuse_session_cache(
         assert session_payload["prompt_context_cache"]["citation_prefix_tokens"]
 
         monkeypatch.setattr(
-            "backend.api.routes.chat._build_session_prompt_context_cache",
+            "backend.api.services.chat_session_helpers.build_session_prompt_context_cache",
             lambda **_kwargs: (_ for _ in ()).throw(
                 AssertionError("Session prompt cache should be reused.")
             ),

@@ -52,10 +52,10 @@ Environment variables (`.env`):
 - `API_CHAT_JOB_WORKERS` (optional, default `1`): dedicated worker count for async split-mode chat jobs.
 - `LOG_LEVEL` (optional, default `INFO`): logging verbosity (`DEBUG`, `INFO`, `WARNING`, `ERROR`).
 - `OPENROUTER_BASE_URL` (optional, default `https://openrouter.ai/api/v1`): custom OpenRouter-compatible base URL.
-- `CHAT_PROMPT_TOKEN_CAP` (optional, default `250000`): token cap for context chat prompt assembly.
-- `CHAT_PROVIDER_TIMEOUT_SECONDS` (optional, default `50`): provider timeout for context chat.
 - `LLM_CONFIG_PATH` (optional, default `llm_config.yaml`): API config file path.
 - `CITY_GROUPS_PATH` (optional, default `backend/api/assets/city_groups.json`): city groups catalog JSON path.
+
+Chat prompt sizing, follow-up router excerpt caps, retry backoff, and provider timeouts now come from `llm_config.yaml`.
 - `VECTOR_STORE_ENABLED` (optional, default `false`): enables local Chroma markdown indexing flows.
 - `ANONYMIZED_TELEMETRY` (optional, default `FALSE`): disables Chroma anonymized telemetry when set to `FALSE`.
 - `CHROMA_PERSIST_PATH` (optional, default `.chroma`): local Chroma persistence directory.
@@ -434,7 +434,7 @@ Context chat notes:
 - Assistant messages persist citation metadata (`source_type`, `source_id`, `source_ref_id`) for deterministic click-to-quote resolution in frontend.
 - When a turn is predicted to use split/map-reduce overflow mode, the API persists the user message, returns `202 Accepted`, and the frontend polls the chat-job status endpoint until the final assistant message is attached to the session.
 - Only one split-mode chat job may be active per session at a time; sending another message or changing contexts while that job is pending returns `409`.
-- Prompt budget defaults to `250000` tokens (`CHAT_PROMPT_TOKEN_CAP`) and switches to the overflow map-reduce path described below when direct chat would exceed the effective budget.
+- Prompt budget defaults to `chat.max_context_total_tokens` from `llm_config.yaml` and switches to the overflow map-reduce path described below when direct chat would exceed the effective budget.
 - `include_quote=false` on `/references` is the default for lightweight city-label rendering; quote payload is fetched on click using `include_quote=true`.
 
 ## Context chat overflow handling
@@ -630,8 +630,12 @@ Optional frontend env:
 
 ```
 NEXT_PUBLIC_API_BASE_URL=http://127.0.0.1:8000
+NEXT_PUBLIC_LOCAL_API_PORT=8000
 NEXT_PUBLIC_FRONTEND_MODE=standard
 ```
+
+`NEXT_PUBLIC_API_BASE_URL` should be set for deployed environments.
+If it is omitted, the frontend falls back to a local backend URL built from `NEXT_PUBLIC_LOCAL_API_PORT`.
 
 Frontend supports three city scope modes in the build form: all cities, predefined group, and manual selection.
 Frontend also supports two answer modes: `Aggregate Mode` and `City-by-City Mode` (sent as `analysis_mode` in run requests).
@@ -639,7 +643,7 @@ Clicking `Chat About the Answer` switches to a dedicated chat workspace (not a c
 Document and chat citations render as compact city labels; clicking a label loads and shows only the source quote.
 When `chat.followup_search_enabled` is `true`, the chat router may run a synchronous one-city markdown-only follow-up search, attach the resulting follow-up bundle to the session, and keep citations clickable for both base runs and chat-owned follow-up bundles.
 Follow-up search stays conservative: it never launches a multi-city refresh, and failed follow-up searches return a limitation message instead of a guessed answer.
-When chat needs a single city before searching, the backend now sends clarification metadata and the frontend opens a city-picker popup that can trigger the one-city follow-up search directly.
+When chat needs a single city before searching, the backend sends clarification metadata and the frontend opens a city-picker popup that resubmits the original question with the selected city directly into one-city follow-up search.
 When a direct chat prompt would overflow, the backend now falls back to an evidence-only map-reduce flow built from compact excerpt evidence and caches that stripped chat artifact under `output/<run_id>/chat_cache/evidence_chunks.json`.
 The parent/base run stays pinned in chat context selection, manual run selections may exceed the direct prompt cap, and auto-added follow-up bundles are still trimmed first.
 The `Load Previous Answer` picker reads `run_id` + `question` from `GET /api/v1/runs`, then loads selected run artifacts through the standard run endpoints.

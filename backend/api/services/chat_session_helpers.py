@@ -2,63 +2,54 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass
 from datetime import datetime
-from typing import Any, Literal
 import logging
+from typing import Any, Callable
 
-from fastapi import HTTPException, status
-
-from backend.api.models import ChatSessionResponse, ChatJobStatusResponse
+from backend.api.models import (
+    ChatContextSummary,
+    ChatFollowupBundleSummary,
+    ChatJobStatusResponse,
+    ChatMessage,
+    ChatSessionContextsResponse,
+    ChatSessionResponse,
+)
+from backend.api.services.chat_errors import ChatBaseContextUnavailableError
 from backend.api.services.chat_context_loader import (
-    LoadedContext,
-    LoadedFollowupBundle,
-    LoadedChatSource,
     load_context_for_run_id,
     load_followup_bundle,
 )
-from backend.api.services.context_chat import (
-    build_citation_catalog_token_cache,
-    estimate_context_window,
-    ContextChatPlan,
+from backend.api.services.context_chat import build_citation_catalog_token_cache
+from backend.api.services.models import (
+    ChatCitationEntry,
+    ContextWindowEstimate,
+    LoadedChatSource,
+    LoadedContext,
+    LoadedFollowupBundle,
+    PromptContextKind,
+    SessionPromptContextCache,
 )
-from backend.api.services.context_prompt_cache import PromptContextKind
-from backend.api.services.run_store import RunStore, SUCCESS_STATUSES
+from backend.api.services.chat_jobs import ChatJobRecord
+from backend.api.services.run_store import RunStore
 from backend.api.services.chat_memory import ChatMemoryStore
 from backend.utils.config import AppConfig
-from backend.utils.tokenization import count_tokens
-import json
 
 logger = logging.getLogger(__name__)
 
 _SESSION_PROMPT_CONTEXT_CACHE_KEY = "prompt_context_cache"
 
 
-@dataclass(frozen=True)
-class ChatCitationEntry:
-    """Deterministic chat citation mapping entry."""
-
-    ref_id: str
-    city_name: str
-    quote: str
-    partial_answer: str
-    source_type: Literal["run", "followup_bundle"]
-    source_id: str
-    source_ref_id: str
-
-
-@dataclass(frozen=True)
-class SessionPromptContextCache:
-    """Combined prompt-context cache for one exact session source selection."""
-
-    context_run_ids: list[str]
-    followup_bundle_ids: list[str]
-    mode: Literal["direct", "split"]
-    prompt_context_tokens: int
-    prompt_context_kind: PromptContextKind
-    citation_catalog_entry_count: int
-    citation_ref_ids_in_order: list[str]
-    citation_prefix_tokens: list[int]
+BuildContextSummaryFn = Callable[[LoadedContext], ChatContextSummary]
+BuildFollowupBundleSummaryFn = Callable[[LoadedFollowupBundle], ChatFollowupBundleSummary]
+BuildChatSourcesFn = Callable[
+    [list[LoadedContext], list[LoadedFollowupBundle]],
+    list[LoadedChatSource],
+]
+BuildCitationCatalogFn = Callable[[list[LoadedChatSource]], list[ChatCitationEntry]]
+EstimateContextWindowFn = Callable[
+    [str, list[dict[str, Any]], AppConfig, int, list[dict[str, str]] | None],
+    ContextWindowEstimate,
+]
 
 
 def as_datetime(value: object) -> datetime:
@@ -155,10 +146,8 @@ def as_pending_job(
     }
 
 
-def as_message(payload: object) -> Any:
+def as_message(payload: object) -> ChatMessage:
     """Convert stored message payload into API model."""
-    from backend.api.models import ChatMessage
-    
     if not isinstance(payload, dict):
         raise ValueError("Invalid message payload.")
     role = payload.get("role")
@@ -181,7 +170,7 @@ def as_message(payload: object) -> Any:
     )
 
 
-def as_chat_job_status_response(record: Any) -> ChatJobStatusResponse:
+def as_chat_job_status_response(record: ChatJobRecord) -> ChatJobStatusResponse:
     """Convert one persisted chat-job record into the polling response model."""
     return ChatJobStatusResponse(
         run_id=record.run_id,
@@ -298,12 +287,9 @@ def resolve_session_contexts(
     try:
         base_context = load_context_for_run_id(run_store, fallback_run_id, config)
     except ValueError as exc:
-        raise HTTPException(
-            status_code=status.HTTP_409_CONFLICT,
-            detail=(
-                "The base run context is no longer usable for chat. "
-                f"Fix run artifacts for `{fallback_run_id}` and retry."
-            ),
+        raise ChatBaseContextUnavailableError(
+            "The base run context is no longer usable for chat. "
+            f"Fix run artifacts for `{fallback_run_id}` and retry."
         ) from exc
 
     loaded_contexts: list[LoadedContext] = []
@@ -439,8 +425,8 @@ def build_session_prompt_context_cache(
     followup_bundle_ids: list[str],
     config: AppConfig,
     token_cap: int,
-    build_citation_catalog_fn,
-    estimate_context_window_fn,
+    build_citation_catalog_fn: BuildCitationCatalogFn,
+    estimate_context_window_fn: EstimateContextWindowFn,
 ) -> SessionPromptContextCache:
     """Compute the combined prompt-context cache for the active session sources."""
     citation_entries = build_citation_catalog_fn(sources)
@@ -464,11 +450,11 @@ def build_session_prompt_context_cache(
         for source in sources
     ]
     prompt_estimate = estimate_context_window_fn(
-        original_question=original_question,
-        contexts=context_models,
-        config=config,
-        token_cap=token_cap,
-        citation_catalog=llm_citation_catalog,
+        original_question,
+        context_models,
+        config,
+        token_cap,
+        llm_citation_catalog,
     )
     prompt_context_kind = normalize_prompt_context_kind(prompt_estimate.context_window_kind)
     if prompt_context_kind is None:
@@ -499,8 +485,8 @@ def get_or_build_session_prompt_context_cache(
     followup_bundle_ids: list[str],
     config: AppConfig,
     token_cap: int,
-    build_citation_catalog_fn,
-    estimate_context_window_fn,
+    build_citation_catalog_fn: BuildCitationCatalogFn,
+    estimate_context_window_fn: EstimateContextWindowFn,
 ) -> tuple[dict[str, object], SessionPromptContextCache]:
     """Return cached session prompt metrics or compute and persist them once."""
     cached = as_session_prompt_context_cache(
@@ -555,12 +541,12 @@ def build_session_contexts_response(
     store: ChatMemoryStore,
     config: AppConfig,
     token_cap: int,
-    build_context_summary_fn,
-    build_followup_bundle_summary_fn,
-    build_chat_sources_fn,
-    build_citation_catalog_fn,
-    estimate_context_window_fn,
-) -> Any:
+    build_context_summary_fn: BuildContextSummaryFn,
+    build_followup_bundle_summary_fn: BuildFollowupBundleSummaryFn,
+    build_chat_sources_fn: BuildChatSourcesFn,
+    build_citation_catalog_fn: BuildCitationCatalogFn,
+    estimate_context_window_fn: EstimateContextWindowFn,
+) -> ChatSessionContextsResponse:
     """Build session context payload for API response."""
     (
         selected_ids,
@@ -594,9 +580,6 @@ def build_session_contexts_response(
     total_tokens = sum(context.total_tokens for context in included_contexts) + sum(
         bundle.total_tokens for bundle in followup_bundles
     )
-    
-    from backend.api.models import ChatSessionContextsResponse
-    
     return ChatSessionContextsResponse(
         run_id=run_id,
         conversation_id=conversation_id,
@@ -621,7 +604,7 @@ def build_session_contexts_response(
 def as_session_response(payload: dict[str, object]) -> ChatSessionResponse:
     """Convert stored session payload into API model."""
     messages_raw = payload.get("messages")
-    message_models: list[dict[str, Any]] = []
+    message_models: list[ChatMessage] = []
     if isinstance(messages_raw, list):
         message_models = [as_message(item) for item in messages_raw]
 

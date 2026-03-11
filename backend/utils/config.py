@@ -36,25 +36,26 @@ class MarkdownResearcherConfig(AgentConfig):
     max_files: int = 200
     max_file_bytes: int = 5_000_000
     max_chunk_tokens: Optional[int] = None
-    chunk_overlap_tokens: int = 200
-    batch_max_chunks: int = 4
+    chunk_overlap_tokens: int
+    batch_max_chunks: int
     batch_max_input_tokens: Optional[int] = None
     batch_overhead_tokens: int = 600
-    max_workers: int = 2
-    request_backoff_base_seconds: float = 2.0
-    request_backoff_max_seconds: float = 10.0
+    max_workers: int
+    request_backoff_base_seconds: float
+    request_backoff_max_seconds: float
 
 
 class ChatConfig(AgentConfig):
     max_history_messages: int = 12
     max_context_total_tokens: int = 220_000
     min_prompt_token_cap: int = 20_000
-    provider_timeout_seconds: float = 50.0
+    provider_timeout_seconds: float
     prompt_token_buffer: int = 2_000
     multi_pass_threshold_tokens: int = 200_000
     multi_pass_chunk_tokens: int = 150_000
     followup_search_enabled: bool = False
     max_auto_followup_bundles: int = 3
+    followup_router_max_excerpts_per_source: int
 
 
 class AssumptionsReviewerConfig(AgentConfig):
@@ -87,8 +88,8 @@ class RetryConfig(BaseModel):
     """Shared retry policy for LLM and retrieval operations."""
 
     max_attempts: int = 5
-    backoff_base_seconds: float = 0.8
-    backoff_max_seconds: float = 8.0
+    backoff_base_seconds: float
+    backoff_max_seconds: float
 
 
 class AppConfig(BaseModel):
@@ -98,11 +99,9 @@ class AppConfig(BaseModel):
     sql_researcher: SqlResearcherConfig
     markdown_researcher: MarkdownResearcherConfig
     writer: AgentConfig
-    chat: ChatConfig = Field(default_factory=lambda: ChatConfig(model="openai/gpt-5.2"))
-    assumptions_reviewer: AssumptionsReviewerConfig = Field(
-        default_factory=lambda: AssumptionsReviewerConfig(model="openai/gpt-5.2")
-    )
-    retry: RetryConfig = Field(default_factory=RetryConfig)
+    chat: ChatConfig
+    assumptions_reviewer: AssumptionsReviewerConfig
+    retry: RetryConfig
     vector_store: VectorStoreConfig = Field(default_factory=VectorStoreConfig)
     openrouter_base_url: str = "https://openrouter.ai/api/v1"
     runs_dir: Path = Field(default_factory=lambda: Path("output"))

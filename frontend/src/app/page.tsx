@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 
 import { AssumptionsWorkspace } from "@/components/assumptions-workspace";
-import { ContextChatWorkspace } from "@/components/context-chat-workspace";
+import { ContextChatWorkspace } from "@/components/context-chat/context-chat-workspace";
 import { DevModeToggle } from "@/components/dev-mode-toggle";
 import { DevToolsPanel } from "@/components/dev-tools-panel";
 import { MarkdownWithReferences } from "@/components/markdown-with-references";
@@ -57,11 +57,19 @@ const TERMINAL_STATUSES: RunStatus[] = [
   "failed",
   "stopped",
 ];
+const RUN_STATUS_POLL_INTERVAL_MS = 2500;
 
 type CityScopeMode = "all" | "group" | "manual";
 type AnalysisMode = "aggregate" | "city_by_city";
 const LAST_RUN_ID_STORAGE_KEY = "last_run_id";
 const CONTROLS_COLLAPSED_STORAGE_KEY = "build_controls_collapsed";
+
+function formatRunOptionLabel(run: RunSummary): string {
+  const compactQuestion = run.question.replace(/\s+/g, " ").trim();
+  const preview =
+    compactQuestion.length > 56 ? `${compactQuestion.slice(0, 53)}...` : compactQuestion;
+  return `${run.run_id} | ${preview || "No question"}`;
+}
 
 export default function Home() {
   const [question, setQuestion] = useState("");
@@ -117,17 +125,11 @@ export default function Home() {
   }, [frontendMode, hasHydratedFrontendMode]);
 
   useEffect(() => {
-    if (typeof window === "undefined") {
-      return;
-    }
     const stored = window.localStorage.getItem(CONTROLS_COLLAPSED_STORAGE_KEY);
     setIsControlsCollapsed(stored === "1");
   }, []);
 
   useEffect(() => {
-    if (typeof window === "undefined") {
-      return;
-    }
     window.localStorage.setItem(
       CONTROLS_COLLAPSED_STORAGE_KEY,
       isControlsCollapsed ? "1" : "0",
@@ -162,9 +164,7 @@ export default function Home() {
       setRunOutput(outputPayload);
       setRunContext(contextPayload);
     }
-    if (typeof window !== "undefined") {
-      window.localStorage.setItem(LAST_RUN_ID_STORAGE_KEY, trimmedRunId);
-    }
+    window.localStorage.setItem(LAST_RUN_ID_STORAGE_KEY, trimmedRunId);
     setSelectedExistingRunId(trimmedRunId);
   }, []);
 
@@ -219,9 +219,6 @@ export default function Home() {
   }, [refreshRunList]);
 
   useEffect(() => {
-    if (typeof window === "undefined") {
-      return;
-    }
     const storedRunId = (window.localStorage.getItem(LAST_RUN_ID_STORAGE_KEY) ?? "").trim();
     if (!storedRunId) {
       return;
@@ -348,7 +345,7 @@ export default function Home() {
           }
           nextPollHandle = setTimeout(() => {
             pollOnce();
-          }, 2500);
+          }, RUN_STATUS_POLL_INTERVAL_MS);
         });
     };
 
@@ -456,9 +453,7 @@ export default function Home() {
       });
       setRunResponse(payload);
       setSelectedExistingRunId(payload.run_id);
-      if (typeof window !== "undefined") {
-        window.localStorage.setItem(LAST_RUN_ID_STORAGE_KEY, payload.run_id);
-      }
+      window.localStorage.setItem(LAST_RUN_ID_STORAGE_KEY, payload.run_id);
       void refreshRunList(payload.run_id);
       const initialStatus = await fetchRunStatus(payload.run_id);
       setRunStatus(initialStatus);
@@ -469,15 +464,6 @@ export default function Home() {
     } finally {
       setIsSubmitting(false);
     }
-  }
-
-  function formatRunOptionLabel(run: RunSummary): string {
-    const compactQuestion = run.question.replace(/\s+/g, " ").trim();
-    const preview =
-      compactQuestion.length > 56
-        ? `${compactQuestion.slice(0, 53)}...`
-        : compactQuestion;
-    return `${run.run_id} | ${preview || "No question"}`;
   }
 
   const isTerminal = !!statusValue && TERMINAL_STATUSES.includes(statusValue);
@@ -738,7 +724,7 @@ export default function Home() {
                 <p className="text-xs text-slate-600">
                   {analysisMode === "aggregate"
                     ? "One integrated answer across selected cities."
-                    : "Aswering one city section at a time; similarities at the end."}
+                    : "Answering one city section at a time; similarities at the end."}
                 </p>
               </div>
 

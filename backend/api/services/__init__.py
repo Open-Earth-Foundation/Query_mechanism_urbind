@@ -21,6 +21,10 @@ from backend.api.services.chat_followup_research import (
     followup_bundle_dir,
     run_chat_followup_search,
 )
+from backend.api.services.chat_errors import (
+    ChatBaseContextUnavailableError,
+    ChatNoContextSourcesError,
+)
 from backend.api.services.reference_artifacts import (
     build_reference_item,
     load_reference_records,
@@ -43,11 +47,8 @@ from backend.api.services.city_catalog import (
     load_city_groups,
 )
 from backend.api.services.context_chat import (
-    CitationCatalogTokenCache,
     build_citation_catalog_from_contexts,
     build_citation_catalog_token_cache,
-    ContextChatPlan,
-    ContextWindowEstimate,
     estimate_context_window,
     generate_context_chat_reply,
     load_context_bundle,
@@ -65,9 +66,6 @@ from backend.api.services.run_store import (
     RunStore,
 )
 from backend.api.services.chat_context_loader import (
-    LoadedContext,
-    LoadedFollowupBundle,
-    LoadedChatSource,
     load_context_for_record,
     load_context_for_run_id,
     available_contexts,
@@ -78,27 +76,35 @@ from backend.api.services.chat_context_loader import (
     resolve_context_bundle_path,
 )
 from backend.api.services.chat_session_helpers import (
-    ChatCitationEntry,
-    SessionPromptContextCache,
+    as_chat_citations,
+    as_chat_job_status_response,
+    as_chat_routing,
     as_datetime,
     as_message,
-    as_chat_citations,
-    as_chat_routing,
     as_pending_job,
-    as_chat_job_status_response,
-    build_chat_job_status_url,
-    selected_context_run_ids,
-    selected_followup_bundles,
-    pending_job_payload,
-    apply_followup_bundle_token_cap,
-    resolve_session_contexts,
-    normalize_prompt_context_kind,
     as_session_prompt_context_cache,
-    session_prompt_context_cache_payload,
+    as_session_response,
+    apply_followup_bundle_token_cap,
+    build_chat_job_status_url,
+    build_session_contexts_response,
     build_session_prompt_context_cache,
     get_or_build_session_prompt_context_cache,
-    build_session_contexts_response,
-    as_session_response,
+    normalize_prompt_context_kind,
+    pending_job_payload,
+    resolve_session_contexts,
+    selected_context_run_ids,
+    selected_followup_bundles,
+    session_prompt_context_cache_payload,
+)
+from backend.api.services.models import (
+    ChatCitationEntry,
+    CitationCatalogTokenCache,
+    ContextChatPlan,
+    ContextWindowEstimate,
+    LoadedChatSource,
+    LoadedContext,
+    LoadedFollowupBundle,
+    SessionPromptContextCache,
 )
 from backend.api.services.chat_reply_helpers import (
     build_chat_sources,
@@ -117,6 +123,8 @@ from backend.api.services.chat_reply_helpers import (
     log_chat_router_preflight,
     log_context_reply_plan,
     log_chat_request_summary,
+)
+from backend.api.services.chat_split_flow import (
     build_chat_job_processor,
     queue_split_context_chat_job,
 )
@@ -139,6 +147,8 @@ __all__ = [
     "CHAT_FOLLOWUP_CITY_UNAVAILABLE",
     "CHAT_FOLLOWUP_SEARCH_FAILED",
     "ChatFollowupSearchResult",
+    "ChatBaseContextUnavailableError",
+    "ChatNoContextSourcesError",
     "build_city_subset",
     "build_reference_item",
     "followup_bundle_dir",

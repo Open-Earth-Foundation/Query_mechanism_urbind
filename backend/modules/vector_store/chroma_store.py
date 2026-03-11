@@ -1,10 +1,11 @@
 from __future__ import annotations
 
+from importlib import import_module
 from pathlib import Path
 from typing import Any
 
 try:
-    import chromadb
+    chromadb = import_module("chromadb")
 except ImportError:  # pragma: no cover - exercised in environments without chromadb
     chromadb = None  # type: ignore[assignment]
 

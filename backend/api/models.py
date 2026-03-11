@@ -340,7 +340,6 @@ class SendChatMessageRequest(BaseModel):
 
     content: str = Field(min_length=1)
     clarification_city: str | None = None
-    clarification_question: str | None = None
 
 
 class SendChatMessageCompletedResponse(BaseModel):
