@@ -19,10 +19,6 @@ class _FakeRunResult:
 def _build_test_config() -> AppConfig:
     """Build the markdown researcher test config with required sections."""
     return build_test_app_config(
-        orchestrator_model="test",
-        sql_researcher_model="test",
-        markdown_researcher_model="test",
-        writer_model="test",
         markdown_researcher_overrides={
             "max_workers": 2,
             "request_backoff_base_seconds": 0.1,

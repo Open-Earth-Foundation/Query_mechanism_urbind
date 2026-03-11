@@ -45,10 +45,6 @@ def test_as_markdown_documents_maps_required_fields() -> None:
 def _build_test_config() -> AppConfig:
     """Build the retriever test config with current required sections."""
     config = build_test_app_config(
-        orchestrator_model="test",
-        sql_researcher_model="test",
-        markdown_researcher_model="test",
-        writer_model="test",
     )
     config.vector_store.retrieval_fallback_min_chunks_per_city_query = 2
     config.vector_store.retrieval_max_chunks_per_city_query = 3

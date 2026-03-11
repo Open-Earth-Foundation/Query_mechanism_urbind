@@ -212,6 +212,7 @@ def test_chat_overflow_uses_evidence_map_reduce_and_reuses_cache(
         return build_config(
             runs_dir=runs_dir,
             markdown_dir=markdown_dir,
+            followup_search_enabled=False,
             max_context_total_tokens=600,
             min_prompt_token_cap=0,
             prompt_token_buffer=150,

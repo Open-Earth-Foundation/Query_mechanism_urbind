@@ -28,10 +28,6 @@ from tests.support import build_test_app_config
 def _build_config(tmp_path: Path) -> AppConfig:
     """Build minimal config object for vector store tests."""
     return build_test_app_config(
-        orchestrator_model="test",
-        sql_researcher_model="test",
-        markdown_researcher_model="test",
-        writer_model="test",
         vector_store=VectorStoreConfig(
             enabled=True,
             chroma_persist_path=tmp_path / ".chroma",

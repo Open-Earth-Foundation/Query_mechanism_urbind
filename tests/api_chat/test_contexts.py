@@ -28,7 +28,11 @@ def test_chat_context_metrics_expose_prompt_context_tokens_for_excerpt_runs(
     markdown_dir.mkdir(parents=True, exist_ok=True)
 
     def _stub_load_config(_path: Path | None = None) -> AppConfig:
-        return build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+        return build_config(
+            runs_dir=runs_dir,
+            markdown_dir=markdown_dir,
+            followup_search_enabled=False,
+        )
 
     def _stub_run_pipeline(
         question: str,
@@ -107,7 +111,11 @@ def test_chat_context_update_rejects_unknown_context_run(
     markdown_dir.mkdir(parents=True, exist_ok=True)
 
     def _stub_load_config(_path: Path | None = None) -> AppConfig:
-        return build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+        return build_config(
+            runs_dir=runs_dir,
+            markdown_dir=markdown_dir,
+            followup_search_enabled=False,
+        )
 
     def _stub_run_pipeline(
         question: str,
@@ -156,7 +164,11 @@ def test_chat_update_contexts_keeps_parent_run_pinned(
     markdown_dir.mkdir(parents=True, exist_ok=True)
 
     def _stub_load_config(_path: Path | None = None) -> AppConfig:
-        return build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+        return build_config(
+            runs_dir=runs_dir,
+            markdown_dir=markdown_dir,
+            followup_search_enabled=False,
+        )
 
     def _stub_run_pipeline(
         question: str,
@@ -214,6 +226,7 @@ def test_chat_session_contexts_allow_extra_runs_when_selection_exceeds_direct_ca
         return build_config(
             runs_dir=runs_dir,
             markdown_dir=markdown_dir,
+            followup_search_enabled=False,
             max_context_total_tokens=120,
         )
 
@@ -310,7 +323,11 @@ def test_chat_contexts_lazy_backfill_bundle_cache_and_reuse_session_cache(
     markdown_dir.mkdir(parents=True, exist_ok=True)
 
     def _stub_load_config(_path: Path | None = None) -> AppConfig:
-        return build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+        return build_config(
+            runs_dir=runs_dir,
+            markdown_dir=markdown_dir,
+            followup_search_enabled=False,
+        )
 
     def _stub_run_pipeline(
         question: str,

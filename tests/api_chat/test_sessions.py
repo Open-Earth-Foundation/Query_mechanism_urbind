@@ -24,7 +24,11 @@ def test_chat_session_lifecycle(tmp_path: Path, monkeypatch: pytest.MonkeyPatch)
     markdown_dir.mkdir(parents=True, exist_ok=True)
 
     def _stub_load_config(_path: Path | None = None) -> AppConfig:
-        return build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+        return build_config(
+            runs_dir=runs_dir,
+            markdown_dir=markdown_dir,
+            followup_search_enabled=False,
+        )
 
     def _stub_run_pipeline(
         question: str,

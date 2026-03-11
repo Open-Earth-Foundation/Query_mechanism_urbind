@@ -28,9 +28,11 @@ def test_chat_supports_header_api_key_override(
     captured_key: dict[str, str | None] = {"value": None}
 
     def _stub_load_config(_path: Path | None = None) -> AppConfig:
-        return build_config(runs_dir=runs_dir, markdown_dir=markdown_dir).model_copy(
-            update={"enable_sql": True}
-        )
+        return build_config(
+            runs_dir=runs_dir,
+            markdown_dir=markdown_dir,
+            followup_search_enabled=False,
+        ).model_copy(update={"enable_sql": True})
 
     def _stub_run_pipeline(
         question: str,
@@ -107,7 +109,11 @@ def test_chat_builds_prompt_safe_citation_catalog_and_persists_mapping(
     captured_catalog: list[dict[str, str]] = []
 
     def _stub_load_config(_path: Path | None = None) -> AppConfig:
-        return build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+        return build_config(
+            runs_dir=runs_dir,
+            markdown_dir=markdown_dir,
+            followup_search_enabled=False,
+        )
 
     def _stub_run_pipeline(
         question: str,
@@ -206,7 +212,11 @@ def test_chat_retries_once_when_first_reply_has_no_valid_citations(
     call_log: list[bool] = []
 
     def _stub_load_config(_path: Path | None = None) -> AppConfig:
-        return build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+        return build_config(
+            runs_dir=runs_dir,
+            markdown_dir=markdown_dir,
+            followup_search_enabled=False,
+        )
 
     def _stub_run_pipeline(
         question: str,

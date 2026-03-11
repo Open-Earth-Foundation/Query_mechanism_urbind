@@ -32,14 +32,11 @@ def _build_test_config(
 ) -> AppConfig:
     """Build the orchestrator test config with the current required sections."""
     return build_test_app_config(
-        orchestrator_model="test",
-        sql_researcher_model="test",
-        markdown_researcher_model="test",
-        writer_model="test",
         runs_dir=runs_dir,
         markdown_dir=markdown_dir,
         source_db_path=source_db_path,
         enable_sql=enable_sql,
+        vector_store_overrides={"enabled": False},
         sql_researcher_overrides={"max_result_tokens": 100000},
     )
 

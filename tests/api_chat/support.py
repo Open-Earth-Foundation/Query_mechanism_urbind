@@ -20,28 +20,33 @@ def build_config(
     runs_dir: Path,
     markdown_dir: Path,
     *,
-    followup_search_enabled: bool = False,
-    max_auto_followup_bundles: int = 3,
-    max_context_total_tokens: int = 220_000,
-    min_prompt_token_cap: int = 20_000,
-    prompt_token_buffer: int = 2_000,
-    multi_pass_chunk_tokens: int = 150_000,
+    followup_search_enabled: bool | None = None,
+    max_auto_followup_bundles: int | None = None,
+    max_context_total_tokens: int | None = None,
+    min_prompt_token_cap: int | None = None,
+    prompt_token_buffer: int | None = None,
+    multi_pass_chunk_tokens: int | None = None,
 ) -> AppConfig:
-    """Build the default API chat test configuration."""
+    """Build API chat test config from llm_config.yaml with explicit scenario overrides."""
+    chat_overrides: dict[str, object] = {}
+    if followup_search_enabled is not None:
+        chat_overrides["followup_search_enabled"] = followup_search_enabled
+    if max_auto_followup_bundles is not None:
+        chat_overrides["max_auto_followup_bundles"] = max_auto_followup_bundles
+    if max_context_total_tokens is not None:
+        chat_overrides["max_context_total_tokens"] = max_context_total_tokens
+    if min_prompt_token_cap is not None:
+        chat_overrides["min_prompt_token_cap"] = min_prompt_token_cap
+    if prompt_token_buffer is not None:
+        chat_overrides["prompt_token_buffer"] = prompt_token_buffer
+    if multi_pass_chunk_tokens is not None:
+        chat_overrides["multi_pass_chunk_tokens"] = multi_pass_chunk_tokens
+
     return build_test_app_config(
-        assumptions_reviewer_model="openai/gpt-5.2",
         runs_dir=runs_dir,
         markdown_dir=markdown_dir,
         enable_sql=False,
-        chat_overrides={
-            "max_history_messages": 10,
-            "max_context_total_tokens": max_context_total_tokens,
-            "min_prompt_token_cap": min_prompt_token_cap,
-            "prompt_token_buffer": prompt_token_buffer,
-            "multi_pass_chunk_tokens": multi_pass_chunk_tokens,
-            "followup_search_enabled": followup_search_enabled,
-            "max_auto_followup_bundles": max_auto_followup_bundles,
-        },
+        chat_overrides=chat_overrides or None,
     )
 
 
