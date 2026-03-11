@@ -84,6 +84,7 @@ function CitationGroupToggle({ citations, isOpen, onToggle }: CitationGroupToggl
         <span className="citation-group-list">
           {citations.map((citation, index) => (
             <span key={index} className="citation-group-item">
+              {index > 0 ? <span className="citation-group-separator">,</span> : null}
               {citation}
             </span>
           ))}
@@ -167,6 +168,23 @@ function _buildCitationGroupId(
 interface CitationGroupStateHandlers {
   isGroupOpen: (groupId: string) => boolean;
   toggleGroup: (groupId: string) => void;
+  renderCitationRef: (refId: string, key: string) => ReactNode;
+}
+
+function _renderCitationNode(
+  node: ReactNode,
+  runIndex: number,
+  itemIndex: number,
+  groupStateHandlers?: CitationGroupStateHandlers,
+): ReactNode {
+  const refId = _extractCitationRefId(node);
+  if (!refId) {
+    return node;
+  }
+  if (!groupStateHandlers) {
+    return node;
+  }
+  return groupStateHandlers.renderCitationRef(refId, `${runIndex}-${itemIndex}`);
 }
 
 function _collapseCitationRuns(
@@ -206,12 +224,16 @@ function _collapseCitationRuns(
       break;
     }
 
+    const renderedRun = run.map((node, runItemIndex) =>
+      _renderCitationNode(node, index, runItemIndex, groupStateHandlers),
+    );
+
     if (run.length > 1) {
       const groupId = _buildCitationGroupId(nodes, run, index);
       collapsed.push(
         <CitationGroupToggle
           key={`citation-group-${groupId}`}
-          citations={run}
+          citations={renderedRun}
           isOpen={groupStateHandlers?.isGroupOpen(groupId) ?? false}
           onToggle={() => {
             groupStateHandlers?.toggleGroup(groupId);
@@ -219,7 +241,7 @@ function _collapseCitationRuns(
         />,
       );
     } else {
-      collapsed.push(current);
+      collapsed.push(renderedRun[0]);
     }
     index = cursor;
   }
@@ -611,6 +633,21 @@ export function MarkdownWithReferences({
     return pointer?.cityName ?? "Source";
   }
 
+  function renderCitationRef(refId: string, key: string): ReactNode {
+    return (
+      <button
+        key={`citation-${key}-${refId}`}
+        type="button"
+        className="citation-ref-link"
+        data-reference-link="true"
+        onClick={(event) => void handleReferenceClick(event, refId)}
+        title={refId}
+      >
+        <span className="citation-ref-city">{renderReferenceLabel(refId)}</span>
+      </button>
+    );
+  }
+
   function isCitationGroupOpen(groupId: string): boolean {
     return openCitationGroups[groupId] === true;
   }
@@ -641,6 +678,7 @@ export function MarkdownWithReferences({
                 {_collapseCitationRuns(children, {
                   isGroupOpen: isCitationGroupOpen,
                   toggleGroup: toggleCitationGroup,
+                  renderCitationRef,
                 })}
               </p>
             ),
@@ -649,6 +687,7 @@ export function MarkdownWithReferences({
                 {_collapseCitationRuns(children, {
                   isGroupOpen: isCitationGroupOpen,
                   toggleGroup: toggleCitationGroup,
+                  renderCitationRef,
                 })}
               </li>
             ),
@@ -663,6 +702,7 @@ export function MarkdownWithReferences({
                 {_collapseCitationRuns(children, {
                   isGroupOpen: isCitationGroupOpen,
                   toggleGroup: toggleCitationGroup,
+                  renderCitationRef,
                 })}
               </td>
             ),
@@ -672,17 +712,7 @@ export function MarkdownWithReferences({
                 href.startsWith(REFERENCE_HREF_PREFIX)
               ) {
                 const refId = href.slice(REFERENCE_HREF_PREFIX.length);
-                return (
-                  <button
-                    type="button"
-                    className="citation-ref-link"
-                    data-reference-link="true"
-                    onClick={(event) => void handleReferenceClick(event, refId)}
-                    title={refId}
-                  >
-                    <span className="citation-ref-city">{renderReferenceLabel(refId)}</span>
-                  </button>
-                );
+                return renderCitationRef(refId, refId);
               }
               return (
                 <a

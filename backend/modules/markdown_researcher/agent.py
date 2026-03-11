@@ -13,6 +13,7 @@ from openai import APIConnectionError
 
 from backend.models import ErrorInfo
 from backend.modules.markdown_researcher.models import (
+    MarkdownBatchFailure,
     MarkdownExcerpt,
     MarkdownResearchResult,
 )
@@ -22,8 +23,10 @@ from backend.modules.markdown_researcher.services import (
     split_documents_by_city,
 )
 from backend.modules.markdown_researcher.utils import (
+    DecisionValidationResult,
     coerce_markdown_result,
     format_batch_failure,
+    validate_batch_decisions,
 )
 from backend.services.agents import (
     build_model_settings,
@@ -38,7 +41,21 @@ from backend.utils.retry import (
     log_retry_event,
     log_retry_exhausted,
 )
+
 logger = logging.getLogger(__name__)
+
+
+def _dedupe_preserve_order(values: list[str]) -> list[str]:
+    """Return unique non-empty string values while preserving order."""
+    deduped: list[str] = []
+    seen: set[str] = set()
+    for value in values:
+        normalized = value.strip()
+        if not normalized or normalized in seen:
+            continue
+        seen.add(normalized)
+        deduped.append(normalized)
+    return deduped
 
 
 def build_markdown_agent(config: AppConfig, api_key: str) -> Agent:
@@ -109,6 +126,10 @@ def extract_markdown_excerpts(
     seen: set[tuple[str, str, str]] = set()
     first_error: ErrorInfo | None = None
     failed_batches: list[str] = []
+    collected_accepted_ids: list[str] = []
+    collected_rejected_ids: list[str] = []
+    collected_unresolved_ids: list[str] = []
+    batch_failures_payload: list[MarkdownBatchFailure] = []
     any_success = False
     max_turns_exceeded = False
 
@@ -131,10 +152,23 @@ def extract_markdown_excerpts(
         city_name: str,
         batch_index: int,
         batch: list[dict[str, object]],
-    ) -> tuple[str, int, list[MarkdownExcerpt], ErrorInfo | None, bool]:
+    ) -> tuple[
+        str,
+        int,
+        list[MarkdownExcerpt],
+        list[str],
+        list[str],
+        list[str],
+        MarkdownBatchFailure | None,
+        ErrorInfo | None,
+        bool,
+    ]:
         """Process one city batch and return excerpts."""
         excerpts: list[MarkdownExcerpt] = []
+        accepted_chunk_ids: list[str] = []
+        rejected_chunk_ids: list[str] = []
         error: ErrorInfo | None = None
+        failure_payload: MarkdownBatchFailure | None = None
         success = False
 
         chunks_payload = [
@@ -148,6 +182,9 @@ def extract_markdown_excerpts(
             }
             for document in batch
         ]
+        input_chunk_ids = _dedupe_preserve_order(
+            [str(item.get("chunk_id", "")).strip() for item in chunks_payload]
+        )
         payload = {
             "question": question,
             "city_name": city_name,
@@ -159,8 +196,10 @@ def extract_markdown_excerpts(
             backoff_max_seconds=config.retry.backoff_max_seconds,
         )
         max_attempts = retry_settings.max_attempts
+        markdown_max_turns = max(config.markdown_researcher.max_turns, 1)
         run_result = None
         output: MarkdownResearchResult | None = None
+        decision_validation: DecisionValidationResult | None = None
         retryable_bad_output_reason: str | None = None
 
         for attempt in range(1, max_attempts + 1):
@@ -169,9 +208,10 @@ def extract_markdown_excerpts(
                 run_result = run_agent_sync(
                     agent,
                     json.dumps(payload, ensure_ascii=False),
-                    max_turns=config.retry.max_attempts,
+                    max_turns=markdown_max_turns,
                     log_llm_payload=log_llm_payload,
                 )
+
                 # Get the final output - handle all format variations
                 final_output = run_result.final_output
                 output = coerce_markdown_result(final_output)
@@ -181,6 +221,34 @@ def extract_markdown_excerpts(
                 elif output.status == "error":
                     if output.error is None:
                         retryable_bad_output_reason = "status_error_without_error"
+                else:
+                    decision_validation = validate_batch_decisions(
+                        input_chunk_ids=input_chunk_ids,
+                        accepted_chunk_ids=output.accepted_chunk_ids,
+                        rejected_chunk_ids=output.rejected_chunk_ids,
+                        excerpts=output.excerpts,
+                    )
+                    if not decision_validation.is_valid:
+                        retryable_bad_output_reason = (
+                            "decision_invariant_failed:"
+                            + ",".join(decision_validation.violation_codes)
+                        )
+                        logger.warning(
+                            (
+                                "run_id=%s city=%s batch=%s malformed decision payload "
+                                "violations=%s overlap=%s unknown_accepted=%s "
+                                "unknown_rejected=%s missing=%s unknown_excerpt_sources=%s"
+                            ),
+                            run_id,
+                            city_name,
+                            batch_index,
+                            decision_validation.violation_codes,
+                            decision_validation.overlap_ids,
+                            decision_validation.unknown_accepted_ids,
+                            decision_validation.unknown_rejected_ids,
+                            decision_validation.missing_ids,
+                            decision_validation.unknown_excerpt_source_ids,
+                        )
 
                 if retryable_bad_output_reason and attempt < max_attempts:
                     delay_seconds = compute_retry_delay_seconds(attempt, retry_settings)
@@ -218,7 +286,23 @@ def extract_markdown_excerpts(
                     code="MARKDOWN_MAX_TURNS_EXCEEDED",
                     message="Markdown extraction exceeded max turns for this city batch.",
                 )
-                return city_name, batch_index, excerpts, error, success
+                failure_payload = MarkdownBatchFailure(
+                    city_name=city_name,
+                    batch_index=batch_index,
+                    reason="MARKDOWN_MAX_TURNS_EXCEEDED",
+                    unresolved_chunk_ids=input_chunk_ids,
+                )
+                return (
+                    city_name,
+                    batch_index,
+                    excerpts,
+                    accepted_chunk_ids,
+                    rejected_chunk_ids,
+                    input_chunk_ids,
+                    failure_payload,
+                    error,
+                    success,
+                )
             except Exception as exc:  # noqa: BLE001
                 if attempt < max_attempts and _is_retryable_error(exc):
                     delay_seconds = compute_retry_delay_seconds(attempt, retry_settings)
@@ -257,15 +341,33 @@ def extract_markdown_excerpts(
                 "Markdown %s batch %s returned invalid output (coercion failed). result.final_output=%s",
                 city_name,
                 batch_index,
-                run_result.final_output
-                if hasattr(run_result, "final_output")
-                else run_result,
+                (
+                    run_result.final_output
+                    if hasattr(run_result, "final_output")
+                    else run_result
+                ),
             )
             error = ErrorInfo(
                 code="MARKDOWN_OUTPUT_INVALID",
                 message="Markdown researcher did not return structured excerpts.",
             )
-            return city_name, batch_index, excerpts, error, success
+            failure_payload = MarkdownBatchFailure(
+                city_name=city_name,
+                batch_index=batch_index,
+                reason="invalid_output_after_retries",
+                unresolved_chunk_ids=input_chunk_ids,
+            )
+            return (
+                city_name,
+                batch_index,
+                excerpts,
+                accepted_chunk_ids,
+                rejected_chunk_ids,
+                input_chunk_ids,
+                failure_payload,
+                error,
+                success,
+            )
 
         if retryable_bad_output_reason == "status_error_without_error":
             logger.warning(
@@ -277,7 +379,23 @@ def extract_markdown_excerpts(
                 code="MARKDOWN_OUTPUT_ERROR_EMPTY",
                 message="Markdown researcher returned status=error without an error payload.",
             )
-            return city_name, batch_index, excerpts, error, success
+            failure_payload = MarkdownBatchFailure(
+                city_name=city_name,
+                batch_index=batch_index,
+                reason="status_error_without_error",
+                unresolved_chunk_ids=input_chunk_ids,
+            )
+            return (
+                city_name,
+                batch_index,
+                excerpts,
+                accepted_chunk_ids,
+                rejected_chunk_ids,
+                input_chunk_ids,
+                failure_payload,
+                error,
+                success,
+            )
 
         if output.status == "error":
             logger.warning(
@@ -295,16 +413,68 @@ def extract_markdown_excerpts(
                         "after retries."
                     ),
                 )
-            return city_name, batch_index, excerpts, error, success
+            failure_payload = MarkdownBatchFailure(
+                city_name=city_name,
+                batch_index=batch_index,
+                reason="agent_error_status",
+                unresolved_chunk_ids=input_chunk_ids,
+            )
+            return (
+                city_name,
+                batch_index,
+                excerpts,
+                accepted_chunk_ids,
+                rejected_chunk_ids,
+                input_chunk_ids,
+                failure_payload,
+                error,
+                success,
+            )
+        if decision_validation is None or not decision_validation.is_valid:
+            error = ErrorInfo(
+                code="MARKDOWN_DECISION_INVALID",
+                message="Markdown researcher returned invalid accepted/rejected decisions.",
+            )
+            failure_payload = MarkdownBatchFailure(
+                city_name=city_name,
+                batch_index=batch_index,
+                reason="invariant_validation_failed_after_retries",
+                unresolved_chunk_ids=input_chunk_ids,
+            )
+            return (
+                city_name,
+                batch_index,
+                excerpts,
+                accepted_chunk_ids,
+                rejected_chunk_ids,
+                input_chunk_ids,
+                failure_payload,
+                error,
+                success,
+            )
         success = True
+        accepted_chunk_ids.extend(decision_validation.accepted_ids)
+        rejected_chunk_ids.extend(decision_validation.rejected_ids)
         for excerpt in output.excerpts:
             excerpts.append(excerpt)
-        return city_name, batch_index, excerpts, error, success
+        return (
+            city_name,
+            batch_index,
+            excerpts,
+            accepted_chunk_ids,
+            rejected_chunk_ids,
+            [],
+            None,
+            error,
+            success,
+        )
 
     batch_max_chunks = max(config.markdown_researcher.batch_max_chunks, 1)
     batch_token_limit = resolve_batch_input_token_limit(config)
     for city_name, city_documents in sorted(documents_by_city.items()):
-        logger.info("Preparing markdown for city %s (%d chunks)", city_name, len(city_documents))
+        logger.info(
+            "Preparing markdown for city %s (%d chunks)", city_name, len(city_documents)
+        )
 
     # Build list of city-scoped batches under token/chunk limits.
     all_tasks = build_city_batches(
@@ -341,13 +511,25 @@ def extract_markdown_excerpts(
         futures = {}
         for city_name, batch_idx, batch in all_tasks:
             future = executor.submit(_process_city_batch, city_name, batch_idx, batch)
-            futures[future] = (city_name, batch_idx)
+            futures[future] = (city_name, batch_idx, batch)
 
         for future in as_completed(futures):
             try:
-                city_name, batch_idx, excerpts, error, success = future.result()
+                (
+                    city_name,
+                    batch_idx,
+                    excerpts,
+                    accepted_chunk_ids,
+                    rejected_chunk_ids,
+                    unresolved_chunk_ids,
+                    failure_payload,
+                    error,
+                    success,
+                ) = future.result()
                 if success:
                     any_success = True
+                    collected_accepted_ids.extend(accepted_chunk_ids)
+                    collected_rejected_ids.extend(rejected_chunk_ids)
                     for excerpt in excerpts:
                         key = (
                             excerpt.city_name.strip().lower(),
@@ -363,19 +545,48 @@ def extract_markdown_excerpts(
                     )
                     if error.code == "MARKDOWN_MAX_TURNS_EXCEEDED":
                         max_turns_exceeded = True
+                    if unresolved_chunk_ids:
+                        collected_unresolved_ids.extend(unresolved_chunk_ids)
+                    if failure_payload:
+                        batch_failures_payload.append(failure_payload)
                     if not first_error:
                         first_error = error
             except Exception as exc:  # noqa: BLE001
                 logger.exception("Markdown batch processing failed")
-                city_name, batch_idx = futures[future]
+                city_name, batch_idx, batch = futures[future]
+                unresolved_chunk_ids = _dedupe_preserve_order(
+                    [
+                        str(document.get("chunk_id", "")).strip()
+                        for document in batch
+                    ]
+                )
                 failed_batches.append(
                     format_batch_failure(city_name, batch_idx, type(exc).__name__)
+                )
+                if unresolved_chunk_ids:
+                    collected_unresolved_ids.extend(unresolved_chunk_ids)
+                batch_failures_payload.append(
+                    MarkdownBatchFailure(
+                        city_name=city_name,
+                        batch_index=batch_idx,
+                        reason=type(exc).__name__,
+                        unresolved_chunk_ids=unresolved_chunk_ids,
+                    )
                 )
                 if not first_error:
                     first_error = ErrorInfo(
                         code="MARKDOWN_BATCH_ERROR",
                         message=f"Markdown batch processing failed: {str(exc)}",
                     )
+
+    deduped_accepted_ids = _dedupe_preserve_order(collected_accepted_ids)
+    deduped_rejected_ids = _dedupe_preserve_order(collected_rejected_ids)
+    deduped_unresolved_ids = _dedupe_preserve_order(collected_unresolved_ids)
+    batch_failures_payload = [
+        item
+        for item in batch_failures_payload
+        if isinstance(item, MarkdownBatchFailure)
+    ]
 
     if any_success:
         logger.info(
@@ -387,13 +598,24 @@ def extract_markdown_excerpts(
             return MarkdownResearchResult(
                 status="success",
                 excerpts=collected,
+                accepted_chunk_ids=deduped_accepted_ids,
+                rejected_chunk_ids=deduped_rejected_ids,
+                unresolved_chunk_ids=deduped_unresolved_ids,
+                batch_failures=batch_failures_payload,
                 error=ErrorInfo(
                     code="MARKDOWN_PARTIAL_BATCH_FAILURE",
                     message="Some markdown city batches failed; returning partial results.",
                     details=failed_batches,
                 ),
             )
-        return MarkdownResearchResult(status="success", excerpts=collected)
+        return MarkdownResearchResult(
+            status="success",
+            excerpts=collected,
+            accepted_chunk_ids=deduped_accepted_ids,
+            rejected_chunk_ids=deduped_rejected_ids,
+            unresolved_chunk_ids=deduped_unresolved_ids,
+            batch_failures=batch_failures_payload,
+        )
 
     if failed_batches:
         message = "No excerpts extracted; all markdown batches failed."
@@ -404,6 +626,10 @@ def extract_markdown_excerpts(
         return MarkdownResearchResult(
             status="success",
             excerpts=[],
+            accepted_chunk_ids=deduped_accepted_ids,
+            rejected_chunk_ids=deduped_rejected_ids,
+            unresolved_chunk_ids=deduped_unresolved_ids,
+            batch_failures=batch_failures_payload,
             error=ErrorInfo(
                 code="MARKDOWN_ALL_BATCHES_FAILED",
                 message=message,
@@ -414,16 +640,26 @@ def extract_markdown_excerpts(
     if first_error:
         return MarkdownResearchResult(
             status="error",
+            accepted_chunk_ids=deduped_accepted_ids,
+            rejected_chunk_ids=deduped_rejected_ids,
+            unresolved_chunk_ids=deduped_unresolved_ids,
+            batch_failures=batch_failures_payload,
             error=first_error,
         )
 
     return MarkdownResearchResult(
         status="success",
         excerpts=[],
+        accepted_chunk_ids=deduped_accepted_ids,
+        rejected_chunk_ids=deduped_rejected_ids,
+        unresolved_chunk_ids=deduped_unresolved_ids,
+        batch_failures=batch_failures_payload,
         error=ErrorInfo(
             code="MARKDOWN_EMPTY_RESULT",
             message="Markdown researcher returned no excerpts.",
-            details=["No excerpts were produced and no explicit failures were captured."],
+            details=[
+                "No excerpts were produced and no explicit failures were captured."
+            ],
         ),
     )
 

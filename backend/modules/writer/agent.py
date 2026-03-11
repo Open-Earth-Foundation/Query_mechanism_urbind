@@ -12,7 +12,6 @@ from backend.modules.writer.utils.markdown_helpers import (
     append_sections,
     extract_city_coverage_sets,
     extract_markdown_bundle,
-    extract_missing_city_excerpts,
     extract_ref_city_mapping,
     extract_selected_city_names,
     render_cities_considered_section,
@@ -24,12 +23,6 @@ from backend.services.agents import (
     build_model_settings,
     build_openrouter_model,
     run_agent_sync,
-)
-from backend.tools.calculator import (
-    divide_numbers,
-    multiply_numbers,
-    subtract_numbers,
-    sum_numbers,
 )
 from backend.utils.city_normalization import format_city_display_name
 from backend.utils.config import AppConfig
@@ -68,26 +61,6 @@ def build_writer_agent(config: AppConfig, api_key: str, analysis_mode: str) -> A
         reasoning_effort=config.writer.reasoning_effort,
     )
 
-    @function_tool(name_override="sum_numbers", strict_mode=True)
-    def sum_numbers_tool(numbers: list[float]) -> float:
-        """Return arithmetic sum of provided numbers."""
-        return sum_numbers(numbers, source="writer")
-
-    @function_tool(name_override="subtract_numbers", strict_mode=True)
-    def subtract_numbers_tool(minuend: float, subtrahend: float) -> float:
-        """Return arithmetic subtraction of two numeric operands."""
-        return subtract_numbers(minuend, subtrahend, source="writer")
-
-    @function_tool(name_override="multiply_numbers", strict_mode=True)
-    def multiply_numbers_tool(numbers: list[float]) -> float:
-        """Return arithmetic product of provided numbers."""
-        return multiply_numbers(numbers, source="writer")
-
-    @function_tool(name_override="divide_numbers", strict_mode=True)
-    def divide_numbers_tool(dividend: float, divisor: float) -> float:
-        """Return arithmetic division of two numeric operands."""
-        return divide_numbers(dividend, divisor, source="writer")
-
     @function_tool
     def submit_writer_output(output: WriterOutput) -> WriterOutput:
         """Return structured writer output unchanged."""
@@ -99,14 +72,10 @@ def build_writer_agent(config: AppConfig, api_key: str, analysis_mode: str) -> A
         model=model,
         model_settings=settings,
         tools=[
-            sum_numbers_tool,
-            subtract_numbers_tool,
-            multiply_numbers_tool,
-            divide_numbers_tool,
             submit_writer_output,
         ],
         output_type=WriterOutput,
-        tool_use_behavior="run_llm_again",
+        tool_use_behavior="stop_on_first_tool",
     )
 
 
@@ -138,17 +107,21 @@ def write_markdown(
     log_llm_payload: bool = False,
     run_id: str | None = None,
 ) -> WriterOutput:
-    """Generate the final markdown answer with city-coverage guardrails."""
+    """Generate the final markdown answer with city-coverage guardrails.
+
+    Runs the writer once, then retries at most once more if citation coverage
+    is incomplete. Always returns the best available output.
+    """
     markdown_bundle = extract_markdown_bundle(context_bundle)
     selected_city_names = extract_selected_city_names(context_bundle, markdown_bundle)
     analysis_mode = resolve_analysis_mode(context_bundle)
     agent = build_writer_agent(config, api_key, analysis_mode=analysis_mode)
+    max_attempts = config.writer.max_coverage_attempts
     retry_settings = RetrySettings.bounded(
-        max_attempts=config.retry.max_attempts,
+        max_attempts=max_attempts,
         backoff_base_seconds=config.retry.backoff_base_seconds,
         backoff_max_seconds=config.retry.backoff_max_seconds,
     )
-    max_attempts = retry_settings.max_attempts
 
     previous_answer = ""
     missing_city_keys: list[str] = []
@@ -171,10 +144,6 @@ def write_markdown(
                     for city_key in missing_city_keys
                 ]
                 reconsideration_payload["missing_cities"] = missing_city_names
-                reconsideration_payload["missing_city_excerpts"] = extract_missing_city_excerpts(
-                    markdown_bundle,
-                    missing_city_keys,
-                )
             payload["reconsideration"] = reconsideration_payload
 
         output = _run_writer_once(
@@ -256,18 +225,16 @@ def write_markdown(
         )
         if attempt < max_attempts:
             delay_seconds = compute_retry_delay_seconds(attempt, retry_settings)
-            retry_error_type = "MissingCityCitationCoverage"
-            retry_error_message = (
-                f"Writer city citation coverage is {coverage_ratio}; retrying missing cities: "
-                + ", ".join(missing_city_names)
-            )
             log_retry_event(
                 operation="writer.output_reconsideration",
                 run_id=run_id,
                 attempt=attempt,
                 max_attempts=max_attempts,
-                error_type=retry_error_type,
-                error_message=retry_error_message,
+                error_type="MissingCityCitationCoverage",
+                error_message=(
+                    f"Writer city citation coverage is {coverage_ratio}; retrying missing cities: "
+                    + ", ".join(missing_city_names)
+                ),
                 next_backoff_seconds=delay_seconds,
                 context={
                     "missing_cities": missing_city_names,
@@ -281,18 +248,16 @@ def write_markdown(
                 time.sleep(delay_seconds)
             continue
 
-        exhausted_error_type = "MissingCityCitationCoverage"
-        exhausted_error_message = (
-            f"Writer city citation coverage remains {coverage_ratio}; missing cities: "
-            + ", ".join(missing_city_names)
-        )
         log_retry_exhausted(
             operation="writer.output_reconsideration",
             run_id=run_id,
             attempt=attempt,
             max_attempts=max_attempts,
-            error_type=exhausted_error_type,
-            error_message=exhausted_error_message,
+            error_type="MissingCityCitationCoverage",
+            error_message=(
+                f"Writer city citation coverage remains {coverage_ratio}; missing cities: "
+                + ", ".join(missing_city_names)
+            ),
             context={
                 "missing_cities": missing_city_names,
                 "coverage_confirmed": confirmed_city_count,

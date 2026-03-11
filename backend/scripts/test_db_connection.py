@@ -1,4 +1,4 @@
-﻿"""
+"""
 Brief: Test connectivity to the database using DATABASE_URL.
 
 Inputs:

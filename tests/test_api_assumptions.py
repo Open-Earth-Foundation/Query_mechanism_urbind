@@ -15,13 +15,12 @@ from backend.api.services.assumptions_review import (
 from backend.api.services.run_store import RunStore
 from backend.modules.writer.models import WriterOutput
 from backend.utils.config import (
-    AgentConfig,
+    WriterConfig,
     AppConfig,
     AssumptionsReviewerConfig,
     ChatConfig,
     MarkdownResearcherConfig,
     OrchestratorConfig,
-    RetryConfig,
     SqlResearcherConfig,
 )
 from backend.utils.paths import RunPaths, create_run_paths
@@ -33,23 +32,9 @@ def _build_config(runs_dir: Path, markdown_dir: Path) -> AppConfig:
             model="test-model", context_bundle_name="context_bundle.json"
         ),
         sql_researcher=SqlResearcherConfig(model="test-model"),
-        markdown_researcher=MarkdownResearcherConfig(
-            model="test-model",
-            chunk_overlap_tokens=2000,
-            batch_max_chunks=32,
-            max_workers=8,
-            request_backoff_base_seconds=0.5,
-            request_backoff_max_seconds=2.0,
-        ),
-        writer=AgentConfig(model="test-model"),
-        chat=ChatConfig(
-            model="openai/gpt-5.2",
-            max_history_messages=10,
-            provider_timeout_seconds=60.0,
-            followup_router_max_excerpts_per_source=50,
-        ),
-        assumptions_reviewer=AssumptionsReviewerConfig(model="openai/gpt-5.2"),
-        retry=RetryConfig(backoff_base_seconds=1.0, backoff_max_seconds=30.0),
+    markdown_researcher=MarkdownResearcherConfig(model="test-model"),
+    writer=WriterConfig(model="test-model"),
+    chat=ChatConfig(model="openai/gpt-5.2", max_history_messages=10),
         runs_dir=runs_dir,
         markdown_dir=markdown_dir,
         enable_sql=False,

@@ -173,6 +173,33 @@ def test_load_config_reads_markdown_reasoning_effort_from_yaml(
     assert config.markdown_researcher.reasoning_effort == "none"
 
 
+def test_load_config_reads_markdown_strict_decision_audit_from_yaml(
+    tmp_path: Path,
+) -> None:
+    """Markdown strict decision-audit flag is loaded when configured."""
+    config_path = tmp_path / "llm_config.yaml"
+    config_path.write_text(
+        "\n".join(
+            [
+                "orchestrator:",
+                "  model: test-model",
+                "sql_researcher:",
+                "  model: test-model",
+                "markdown_researcher:",
+                "  model: test-model",
+                "  strict_decision_audit: true",
+                "writer:",
+                "  model: test-model",
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    config = load_config(config_path)
+
+    assert config.markdown_researcher.strict_decision_audit is True
+
+
 def test_load_config_reads_agent_reasoning_effort_for_gpt_modules(
     tmp_path: Path,
 ) -> None:

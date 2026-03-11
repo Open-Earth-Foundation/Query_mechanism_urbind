@@ -44,6 +44,7 @@ class MarkdownResearcherConfig(AgentConfig):
     max_workers: int = 2
     request_backoff_base_seconds: float = 2.0
     request_backoff_max_seconds: float = 10.0
+    strict_decision_audit: bool = False
 
 
 class ChatConfig(AgentConfig):
@@ -57,6 +58,12 @@ class ChatConfig(AgentConfig):
     followup_search_enabled: bool = False
     max_auto_followup_bundles: int = 3
     followup_router_max_excerpts_per_source: int
+
+
+class WriterConfig(AgentConfig):
+    """Configuration for the writer agent."""
+
+    max_coverage_attempts: int = 2
 
 
 class AssumptionsReviewerConfig(AgentConfig):
@@ -99,10 +106,12 @@ class AppConfig(BaseModel):
     orchestrator: OrchestratorConfig
     sql_researcher: SqlResearcherConfig
     markdown_researcher: MarkdownResearcherConfig
-    writer: AgentConfig
-    chat: ChatConfig
-    assumptions_reviewer: AssumptionsReviewerConfig
-    retry: RetryConfig
+    writer: WriterConfig
+    chat: ChatConfig = Field(default_factory=lambda: ChatConfig(model="openai/gpt-5.2"))
+    assumptions_reviewer: AssumptionsReviewerConfig = Field(
+        default_factory=lambda: AssumptionsReviewerConfig(model="openai/gpt-5.2")
+    )
+    retry: RetryConfig = Field(default_factory=RetryConfig)
     vector_store: VectorStoreConfig = Field(default_factory=VectorStoreConfig)
     openrouter_base_url: str = "https://openrouter.ai/api/v1"
     runs_dir: Path = Field(default_factory=lambda: Path("output"))
@@ -239,6 +248,7 @@ __all__ = [
     "SqlResearcherConfig",
     "MarkdownResearcherConfig",
     "ChatConfig",
+    "WriterConfig",
     "AssumptionsReviewerConfig",
     "RetryConfig",
     "VectorStoreConfig",
