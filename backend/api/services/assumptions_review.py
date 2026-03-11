@@ -18,6 +18,7 @@ from backend.api.services.context_chat import load_context_bundle, load_final_do
 from backend.api.services.run_store import RunRecord, RunStore
 from backend.modules.writer.agent import write_markdown
 from backend.utils.config import AppConfig, get_openrouter_api_key
+from backend.utils.json_io import read_json, write_json
 
 logger = logging.getLogger(__name__)
 
@@ -120,7 +121,7 @@ def discover_missing_data_for_run(
                 for city, city_items in grouped.items()
             },
         }
-        _write_json(discovered_path, persisted)
+        write_json(discovered_path, persisted, default=str)
         _update_run_log_artifacts(
             run_store.runs_dir / run_record.run_id / "run.json",
             {"assumptions_discovered": str(discovered_path)},
@@ -205,16 +206,17 @@ def apply_assumptions_and_regenerate(
         assumptions_dir.mkdir(parents=True, exist_ok=True)
 
         edited_path = assumptions_dir / "edited.json"
-        _write_json(
+        write_json(
             edited_path,
             {
                 "run_id": run_record.run_id,
                 "edited_at": datetime.now(timezone.utc).isoformat(),
                 **payload.model_dump(),
             },
+            default=str,
         )
         revised_context_path = assumptions_dir / "revised_context_bundle.json"
-        _write_json(revised_context_path, revised_context_bundle)
+        write_json(revised_context_path, revised_context_bundle, default=str)
 
         revised_output_file_path = assumptions_dir / "final_with_assumptions.md"
         revised_output_file_path.write_text(rendered, encoding="utf-8")
@@ -271,10 +273,10 @@ def load_latest_assumptions_payload(run_store: RunStore, run_id: str) -> dict[st
 
     payload: dict[str, object] = {"run_id": run_id}
     if discovered_path.exists():
-        payload["discovered"] = _read_json(discovered_path)
+        payload["discovered"] = read_json(discovered_path)
         payload["discovered_path"] = str(discovered_path)
     if edited_path.exists():
-        payload["edited"] = _read_json(edited_path)
+        payload["edited"] = read_json(edited_path)
         payload["assumptions_path"] = str(edited_path)
     if revised_context_path.exists():
         payload["revised_context_bundle_path"] = str(revised_context_path)
@@ -547,30 +549,11 @@ def _assumptions_dir(run_store: RunStore, run_id: str) -> Path:
     return run_store.runs_dir / run_id / "assumptions"
 
 
-def _read_json(path: Path) -> object | None:
-    """Read JSON file content, returning None on parse errors."""
-    if not path.exists():
-        return None
-    try:
-        return json.loads(path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
-        return None
-
-
-def _write_json(path: Path, payload: object) -> None:
-    """Write JSON payload to disk with stable formatting."""
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(
-        json.dumps(payload, indent=2, ensure_ascii=True, default=str),
-        encoding="utf-8",
-    )
-
-
 def _update_run_log_artifacts(run_log_path: Path, updates: dict[str, str]) -> None:
     """Update run log artifact mapping with additional assumptions artifacts."""
     if not run_log_path.exists():
         return
-    payload = _read_json(run_log_path)
+    payload = read_json(run_log_path)
     if not isinstance(payload, dict):
         return
     artifacts = payload.get("artifacts")
@@ -579,7 +562,7 @@ def _update_run_log_artifacts(run_log_path: Path, updates: dict[str, str]) -> No
         payload["artifacts"] = artifacts
     for key, value in updates.items():
         artifacts[key] = value
-    _write_json(run_log_path, payload)
+    write_json(run_log_path, payload, default=str)
 
 
 __all__ = [

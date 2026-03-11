@@ -20,4 +20,21 @@ class ResearchQuestionRefinement(BaseModel):
     retrieval_queries: list[str] = Field(default_factory=list)
 
 
-__all__ = ["OrchestratorDecision", "ResearchQuestionRefinement"]
+class ChatFollowupDecision(BaseModel):
+    action: Literal[
+        "answer_from_context",
+        "search_single_city",
+        "out_of_scope",
+        "needs_city_clarification",
+    ]
+    reason: str
+    target_city: str | None = None
+    rewritten_question: str | None = None
+    confidence: float | None = None
+
+
+__all__ = [
+    "ChatFollowupDecision",
+    "OrchestratorDecision",
+    "ResearchQuestionRefinement",
+]

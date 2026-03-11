@@ -11,6 +11,7 @@ from backend.modules.vector_store.models import (
 )
 from backend.modules.vector_store.retriever import (
     as_markdown_documents,
+    list_indexed_city_names,
     retrieve_chunks_for_queries,
     retrieve_top_k_chunks,
 )
@@ -23,6 +24,7 @@ __all__ = [
     "build_markdown_index",
     "update_markdown_index",
     "ensure_index_up_to_date",
+    "list_indexed_city_names",
     "retrieve_chunks_for_queries",
     "retrieve_top_k_chunks",
     "as_markdown_documents",

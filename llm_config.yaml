@@ -1,7 +1,7 @@
 orchestrator:
   model: "openai/gpt-5.2"
   temperature: 0.0
-  reasoning_effort: "high"
+  reasoning_effort: "medium"
   context_bundle_name: "context_bundle.json"
   context_window_tokens: 400000
   input_token_reserve: 20000
@@ -11,7 +11,6 @@ sql_researcher:
   reasoning_effort: "high"
   context_window_tokens: 400000
   input_token_reserve: 2000
-  max_result_tokens: 100000
   pre_orchestrator_rounds: 2
 markdown_researcher:
   model: "x-ai/grok-4.1-fast"
@@ -53,11 +52,14 @@ chat:
   prompt_token_buffer: 2000
   multi_pass_threshold_tokens: 200000
   multi_pass_chunk_tokens: 150000
+  followup_search_enabled: true
+  max_auto_followup_bundles: 3
+  followup_router_max_history_messages: 6
+  followup_router_max_excerpts_per_source: 50
 assumptions_reviewer:
   model: "openai/gpt-5.2"
   temperature: 0.0
   reasoning_effort: "high"
-  max_output_tokens: 8000
 vector_store:
   enabled: true
   chroma_persist_path: ".chroma"

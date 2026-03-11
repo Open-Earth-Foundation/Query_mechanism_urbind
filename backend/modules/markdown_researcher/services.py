@@ -11,6 +11,8 @@ from backend.utils.tokenization import count_tokens, chunk_text, get_max_input_t
 
 logger = logging.getLogger(__name__)
 
+DEFAULT_MARKDOWN_CHUNK_TOKENS = 12_000
+
 
 def _chunk_source_path(path: Path, project_root: Path) -> str:
     """Return project-relative path for stable chunk identifiers."""
@@ -34,7 +36,7 @@ def _resolve_chunk_tokens(config: MarkdownResearcherConfig) -> int:
         return config.max_chunk_tokens
     if max_input_tokens is not None and max_input_tokens > 0:
         return max_input_tokens
-    return 12000
+    return DEFAULT_MARKDOWN_CHUNK_TOKENS
 
 
 def split_documents_by_city(
@@ -108,25 +110,42 @@ def load_markdown_documents(
     if len(files) > config.max_files:
         files = files[: config.max_files]
 
+    for path in files:
+        docs.extend(build_markdown_chunks_for_file(path, config))
+
+    return docs
+
+
+def build_markdown_chunks_for_file(
+    path: Path,
+    config: MarkdownResearcherConfig,
+) -> list[dict[str, object]]:
+    """Chunk one markdown file using the repository's deterministic chunk-id scheme."""
+    if not path.exists():
+        raise FileNotFoundError(f"Markdown file not found: {path}")
+
+    size = path.stat().st_size
+    if size > config.max_file_bytes:
+        logger.warning("Skipping large markdown file: %s", path)
+        return []
+
     project_root = Path(__file__).resolve().parents[3]
     max_chunk_tokens = _resolve_chunk_tokens(config)
-    for path in files:
-        size = path.stat().st_size
-        if size > config.max_file_bytes:
-            logger.warning("Skipping large markdown file: %s", path)
-            continue
-        city_name = path.stem
-        city_key = normalize_city_key(city_name)
-        content = path.read_text(encoding="utf-8")
-        source_path = _chunk_source_path(path, project_root)
-        chunks = chunk_text(content, max_chunk_tokens, config.chunk_overlap_tokens)
-        for chunk_index, chunk in enumerate(chunks):
-            chunk_id = build_chunk_id(
-                source_path=source_path,
-                chunk_index=chunk_index,
-                content_hash=compute_content_hash(chunk),
-            )
-            entry = {
+    city_name = path.stem
+    city_key = normalize_city_key(city_name)
+    content = path.read_text(encoding="utf-8")
+    source_path = _chunk_source_path(path, project_root)
+    chunks = chunk_text(content, max_chunk_tokens, config.chunk_overlap_tokens)
+    documents: list[dict[str, object]] = []
+
+    for chunk_index, chunk in enumerate(chunks):
+        chunk_id = build_chunk_id(
+            source_path=source_path,
+            chunk_index=chunk_index,
+            content_hash=compute_content_hash(chunk),
+        )
+        documents.append(
+            {
                 "path": str(path),
                 "city_name": city_name,
                 "city_key": city_key,
@@ -134,9 +153,9 @@ def load_markdown_documents(
                 "chunk_id": chunk_id,
                 "chunk_index": chunk_index,
             }
-            docs.append(entry)
+        )
 
-    return docs
+    return documents
 
 
 def _parse_chunk_index(value: object) -> int:
@@ -212,6 +231,7 @@ def build_city_batches(
 
 
 __all__ = [
+    "build_markdown_chunks_for_file",
     "build_city_batches",
     "resolve_batch_input_token_limit",
     "load_markdown_documents",

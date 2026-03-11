@@ -4,24 +4,17 @@ from __future__ import annotations
 
 import inspect
 import logging
-from typing import TYPE_CHECKING, Callable
-
-if TYPE_CHECKING:
-    from backend.modules.writer.models import WriterOutput
-    from backend.modules.markdown_researcher.models import MarkdownResearchResult
-    from backend.services.run_logger import RunLogger
-    from backend.utils.config import AppConfig
-    from backend.utils.paths import RunPaths
-    from backend.modules.sql_researcher.models import SqlQueryPlan
+from typing import Callable
 
 from backend.modules.orchestrator.utils.error_handlers import (
     detach_run_file_logger,
     handle_orchestration_error,
 )
 from backend.modules.orchestrator.utils.io import write_final_output
-
-logger = logging.getLogger(__name__)
-
+from backend.modules.writer.models import WriterOutput
+from backend.services.run_logger import RunLogger
+from backend.utils.config import AppConfig
+from backend.utils.paths import RunPaths
 
 def handle_write_decision(
     question: str,
@@ -68,6 +61,7 @@ def handle_write_decision(
             writer_output.content,
             paths,
             run_logger,
+            config,
             finish_reason="completed (write)",
         )
         run_logger.finalize(

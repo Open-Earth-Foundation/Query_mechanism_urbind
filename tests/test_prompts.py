@@ -21,3 +21,17 @@ def test_writer_city_by_city_prompt_mentions_per_city_requirements() -> None:
     assert "show the addition for the user" in content
     assert "Cities considered:" in content
     assert "Provide one clear section per city first." in content
+
+
+def test_chat_followup_router_prompt_uses_required_schema_sections() -> None:
+    prompt_path = Path("backend/prompts/chat_followup_router_system.md")
+    content = prompt_path.read_text(encoding="utf-8")
+    assert "<role>" in content
+    assert "<task>" in content
+    assert "<input>" in content
+    assert "<output>" in content
+    assert "<example_output>" in content
+    assert "submit_chat_followup_decision" in content
+    assert "selected_run_ids" not in content
+    assert "selected_followup_bundle_ids" not in content
+    assert "- `source_id`" not in content

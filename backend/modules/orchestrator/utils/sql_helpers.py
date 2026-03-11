@@ -7,9 +7,10 @@ from typing import Callable
 import psycopg
 
 from backend.modules.sql_researcher.models import SqlQueryPlan
+from backend.modules.sql_researcher.services import execute_queries
 from backend.services.db_client import DbClient
-from backend.utils.config import AppConfig
 from backend.services.run_logger import RunLogger
+from backend.utils.config import AppConfig
 from backend.utils.paths import RunPaths
 
 logger = logging.getLogger(__name__)
@@ -149,8 +150,6 @@ def execute_sql_plan(
     Returns:
         Tuple of updated SQL plan and results
     """
-    from backend.modules.sql_researcher.services import execute_queries
-
     full_results = execute_queries(
         db_client,
         sql_plan.queries,

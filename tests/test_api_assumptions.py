@@ -17,6 +17,7 @@ from backend.modules.writer.models import WriterOutput
 from backend.utils.config import (
     WriterConfig,
     AppConfig,
+    AssumptionsReviewerConfig,
     ChatConfig,
     MarkdownResearcherConfig,
     OrchestratorConfig,
@@ -26,6 +27,7 @@ from backend.utils.paths import RunPaths, create_run_paths
 
 
 def _build_config(runs_dir: Path, markdown_dir: Path) -> AppConfig:
+    """Build a minimal app config for assumptions API tests."""
     return AppConfig(
         orchestrator=OrchestratorConfig(
             model="test-model", context_bundle_name="context_bundle.json"
@@ -101,6 +103,7 @@ def test_assumptions_discover_returns_payload(
     markdown_dir = tmp_path / "documents"
     markdown_dir.mkdir(parents=True, exist_ok=True)
     config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    configured = config.model_copy(update={"enable_sql": True})
 
     app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
     with TestClient(app) as client:
@@ -112,8 +115,14 @@ def test_assumptions_discover_returns_payload(
         )
 
         monkeypatch.setattr(
-            "backend.api.routes.assumptions.discover_missing_data_for_run",
-            lambda **_: {
+            "backend.api.routes.assumptions.load_config",
+            lambda _path=None: configured,
+        )
+        def _stub_discover_missing_data_for_run(**kwargs: object) -> dict[str, object]:
+            config = kwargs["config"]
+            assert isinstance(config, AppConfig)
+            assert config.enable_sql is True
+            return {
                 "run_id": "run-assumptions",
                 "items": [
                     {
@@ -137,7 +146,11 @@ def test_assumptions_discover_returns_payload(
                     "merged_count": 1,
                     "added_in_verification": 0,
                 },
-            },
+            }
+
+        monkeypatch.setattr(
+            "backend.api.routes.assumptions.discover_missing_data_for_run",
+            _stub_discover_missing_data_for_run,
         )
 
         response = client.post("/api/v1/runs/run-assumptions/assumptions/discover")

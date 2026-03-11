@@ -14,7 +14,7 @@ from backend.api.services.assumptions_review import (
     load_latest_assumptions_payload,
 )
 from backend.api.services.run_store import RunRecord, RunStore, SUCCESS_STATUSES
-from backend.utils.config import AppConfig, load_config
+from backend.utils.config import AppConfig, load_cached_config, load_config
 
 router = APIRouter()
 
@@ -61,11 +61,13 @@ def _require_ready_run(run_id: str, request: Request) -> tuple[RunStore, RunReco
 
 
 def _load_api_config(request: Request) -> AppConfig:
-    """Load API configuration using app-level configured path."""
+    """Load API config and reuse a cached copy until the file changes."""
     config_path = getattr(request.app.state, "config_path", Path("llm_config.yaml"))
-    config = load_config(Path(config_path))
-    config.enable_sql = False
-    return config
+    return load_cached_config(
+        Path(config_path),
+        cache_owner=request.app.state,
+        loader=load_config,
+    )
 
 
 def _raise_llm_http_error(exc: Exception) -> None:

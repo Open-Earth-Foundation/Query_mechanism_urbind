@@ -24,6 +24,25 @@ Create `.env.local` or use `.env.example`:
 
 ```bash
 NEXT_PUBLIC_API_BASE_URL=http://127.0.0.1:8000
+NEXT_PUBLIC_LOCAL_API_PORT=8000
+NEXT_PUBLIC_FRONTEND_MODE=standard
 ```
 
-Backend API must be running at the configured base URL.
+`NEXT_PUBLIC_API_BASE_URL` should be set in deployed environments.
+When it is omitted, the frontend falls back to a local backend URL built from
+`NEXT_PUBLIC_LOCAL_API_PORT`.
+
+`NEXT_PUBLIC_FRONTEND_MODE` sets the default surface (`standard` or `dev`).
+The page header always shows a persistent browser toggle that lets users switch between modes without reloading or changing routes.
+
+## Dev mode
+
+`dev` mode keeps the same route and workflow, but reveals internal tooling:
+
+- `Assumptions Review` entry point from the generated document view
+- `Manage Contexts` button and token metrics inside the chat workspace
+- read-only `run_id` display with copy action
+- session-only OpenRouter API key override controls
+
+The selected mode is stored in browser `localStorage` until the user changes it.
+The API key override is not persisted in browser storage.

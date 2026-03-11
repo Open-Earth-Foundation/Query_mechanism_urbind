@@ -2,22 +2,16 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass
-from datetime import datetime
 from pathlib import Path
-from typing import Any
-import re
-import logging
-import time
 
-from fastapi import APIRouter, Header, HTTPException, Request, status
+from fastapi import APIRouter, Header, HTTPException, Query, Request, Response, status
 from openai import APIStatusError, APITimeoutError, AuthenticationError
 
 from backend.api.models import (
-    ChatCitation,
     ChatContextCatalogResponse,
     ChatContextSummary,
-    ChatMessage,
+    ChatFollowupBundleSummary,
+    ChatFollowupReferenceListResponse,
     ChatSessionContextsResponse,
     ChatSessionListResponse,
     ChatSessionResponse,
@@ -26,32 +20,47 @@ from backend.api.models import (
     SendChatMessageResponse,
     UpdateChatContextsRequest,
 )
-from backend.api.services import (
+from backend.api.services.chat_context_loader import (
+    fast_context_summary,
+    list_available_context_summaries,
+    load_followup_bundle,
+    validate_context_run_id,
+)
+from backend.api.services.chat_errors import (
+    ChatBaseContextUnavailableError,
+    ChatNoContextSourcesError,
+)
+from backend.api.services.chat_followup_research import followup_bundle_dir
+from backend.api.services.chat_jobs import ChatJobExecutor, ChatJobStore
+from backend.api.services.chat_memory import (
     ChatMemoryStore,
     ChatSessionExistsError,
     ChatSessionNotFoundError,
-    RunRecord,
-    RunStore,
-    SUCCESS_STATUSES,
-    generate_context_chat_reply,
-    load_context_bundle,
-    load_final_document,
-    resolve_chat_token_cap,
+    ChatSessionPendingJobError,
 )
+from backend.api.services.chat_send_service import process_send_chat_message
+from backend.api.services.chat_session_helpers import (
+    as_chat_job_status_response,
+    as_pending_job,
+    as_session_response,
+    build_session_contexts_response,
+    pending_job_payload,
+    selected_followup_bundles,
+)
+from backend.api.services.chat_reply_helpers import (
+    build_chat_citation_entries,
+    build_chat_sources,
+)
+from backend.api.services.context_chat import estimate_context_window, resolve_chat_token_cap
+from backend.api.services.reference_artifacts import (
+    build_reference_item,
+    load_reference_records,
+)
+from backend.api.services.run_store import RunRecord, RunStore, SUCCESS_STATUSES
 from backend.modules.orchestrator.utils.references import is_valid_ref_id
-from backend.utils.city_normalization import format_city_stem
-from backend.utils.config import AppConfig, load_config
-from backend.utils.retry import (
-    RetrySettings,
-    compute_retry_delay_seconds,
-    log_retry_event,
-    log_retry_exhausted,
-)
-from backend.utils.tokenization import count_tokens
+from backend.utils.config import AppConfig, load_cached_config, load_config
 
 router = APIRouter()
-logger = logging.getLogger(__name__)
-_REF_TOKEN_PATTERN = re.compile(r"\[(ref_[1-9]\d*)\]")
 
 
 def _resolve_api_key_override(raw: str | None) -> str | None:
@@ -62,53 +71,6 @@ def _resolve_api_key_override(raw: str | None) -> str | None:
     if not cleaned:
         return None
     return cleaned
-
-
-@dataclass(frozen=True)
-class _LoadedContext:
-    """Loaded context artifacts with token accounting."""
-
-    run_id: str
-    question: str
-    status: str
-    started_at: datetime
-    final_output_path: Path
-    context_bundle_path: Path
-    final_document: str
-    context_bundle: dict[str, Any]
-    document_tokens: int
-    bundle_tokens: int
-
-    @property
-    def total_tokens(self) -> int:
-        """Total tokens consumed by both context artifacts."""
-        return self.document_tokens + self.bundle_tokens
-
-    def to_summary(self) -> ChatContextSummary:
-        """Convert to API summary model."""
-        return ChatContextSummary(
-            run_id=self.run_id,
-            question=self.question,
-            status=self.status,  # type: ignore[arg-type]
-            started_at=self.started_at,
-            final_output_path=str(self.final_output_path),
-            context_bundle_path=str(self.context_bundle_path),
-            document_tokens=self.document_tokens,
-            bundle_tokens=self.bundle_tokens,
-            total_tokens=self.total_tokens,
-        )
-
-
-@dataclass(frozen=True)
-class _ChatCitationEntry:
-    """Deterministic chat citation mapping entry."""
-
-    ref_id: str
-    city_name: str
-    quote: str
-    partial_answer: str
-    source_run_id: str
-    source_ref_id: str
 
 
 def _get_run_store(request: Request) -> RunStore:
@@ -133,10 +95,36 @@ def _get_chat_memory_store(request: Request) -> ChatMemoryStore:
     return store
 
 
+def _get_chat_job_store(request: Request) -> ChatJobStore:
+    """Return chat job store from app state."""
+    store = getattr(request.app.state, "chat_job_store", None)
+    if store is None:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Chat job store is not initialized.",
+        )
+    return store
+
+
+def _get_chat_job_executor(request: Request) -> ChatJobExecutor:
+    """Return chat job executor from app state."""
+    executor = getattr(request.app.state, "chat_job_executor", None)
+    if not isinstance(executor, ChatJobExecutor):
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Chat job executor is not initialized.",
+        )
+    return executor
+
+
 def _load_request_config(request: Request) -> AppConfig:
-    """Load AppConfig using the config path resolved at API startup."""
+    """Load AppConfig and reuse a cached copy until the file changes."""
     config_path = getattr(request.app.state, "config_path", Path("llm_config.yaml"))
-    return load_config(Path(config_path))
+    return load_cached_config(
+        Path(config_path),
+        cache_owner=request.app.state,
+        loader=load_config,
+    )
 
 
 def _require_chat_ready_run(run_id: str, request: Request) -> tuple[RunStore, RunRecord]:
@@ -156,336 +144,6 @@ def _require_chat_ready_run(run_id: str, request: Request) -> tuple[RunStore, Ru
     return run_store, run_record
 
 
-def _resolve_final_output_path(run_store: RunStore, run_id: str, raw_path: Path | None) -> Path:
-    """Resolve final output path or raise when missing."""
-    run_dir = run_store.runs_dir / run_id
-    candidates: list[Path] = []
-    if raw_path is not None:
-        candidates.append(raw_path)
-        candidates.append(run_dir / raw_path.name)
-    candidates.append(run_dir / "final.md")
-    for candidate in candidates:
-        if candidate.exists():
-            return candidate
-    raise ValueError(f"Final output is missing for run `{run_id}`.")
-
-
-def _resolve_context_bundle_path(
-    run_store: RunStore, run_id: str, raw_path: Path | None
-) -> Path:
-    """Resolve context bundle path or raise when missing."""
-    run_dir = run_store.runs_dir / run_id
-    candidates: list[Path] = []
-    if raw_path is not None:
-        candidates.append(raw_path)
-        candidates.append(run_dir / raw_path.name)
-    candidates.append(run_dir / "context_bundle.json")
-    for candidate in candidates:
-        if candidate.exists():
-            return candidate
-    raise ValueError(f"Context bundle is missing for run `{run_id}`.")
-
-
-def _load_context_for_record(run_store: RunStore, run_record: RunRecord) -> _LoadedContext:
-    """Load context material for one completed run."""
-    final_path = _resolve_final_output_path(
-        run_store, run_record.run_id, run_record.final_output_path
-    )
-    context_path = _resolve_context_bundle_path(
-        run_store, run_record.run_id, run_record.context_bundle_path
-    )
-    final_document = load_final_document(final_path)
-    context_bundle = load_context_bundle(context_path)
-    return _LoadedContext(
-        run_id=run_record.run_id,
-        question=run_record.question,
-        status=run_record.status,
-        started_at=run_record.started_at,
-        final_output_path=final_path,
-        context_bundle_path=context_path,
-        final_document=final_document,
-        context_bundle=context_bundle,
-        document_tokens=count_tokens(final_document),
-        bundle_tokens=count_tokens(
-            context_path.read_text(encoding="utf-8")
-        ),
-    )
-
-
-def _load_context_for_run_id(run_store: RunStore, run_id: str) -> _LoadedContext:
-    """Load context material for a specific run id."""
-    run_record = run_store.get_run(run_id)
-    if run_record is None:
-        raise ValueError(f"Context run `{run_id}` was not found.")
-    if run_record.status not in SUCCESS_STATUSES:
-        raise ValueError(
-            f"Context run `{run_id}` is not ready (status: `{run_record.status}`)."
-        )
-    return _load_context_for_record(run_store, run_record)
-
-
-def _available_contexts(run_store: RunStore) -> list[_LoadedContext]:
-    """List all completed runs that have usable chat context artifacts."""
-    contexts: list[_LoadedContext] = []
-    for run_record in run_store.list_runs():
-        if run_record.status not in SUCCESS_STATUSES:
-            continue
-        try:
-            contexts.append(_load_context_for_record(run_store, run_record))
-        except ValueError:
-            continue
-    return contexts
-
-
-def _as_datetime(value: object) -> datetime:
-    """Parse session timestamp value."""
-    if isinstance(value, str):
-        return datetime.fromisoformat(value)
-    raise ValueError("Invalid timestamp in chat session payload.")
-
-
-def _as_message(payload: object) -> ChatMessage:
-    """Convert stored message payload into API model."""
-    if not isinstance(payload, dict):
-        raise ValueError("Invalid message payload.")
-    role = payload.get("role")
-    content = payload.get("content")
-    created_at = payload.get("created_at")
-    citation_warning = payload.get("citation_warning")
-    if role not in {"user", "assistant"}:
-        raise ValueError("Invalid message role.")
-    if not isinstance(content, str):
-        raise ValueError("Invalid message content.")
-    citations = _as_chat_citations(payload.get("citations"))
-    return ChatMessage(
-        role=role,
-        content=content,
-        created_at=_as_datetime(created_at),
-        citations=citations,
-        citation_warning=str(citation_warning) if isinstance(citation_warning, str) else None,
-    )
-
-
-def _as_chat_citations(value: object) -> list[ChatCitation] | None:
-    """Normalize optional assistant citation metadata from persisted messages."""
-    if not isinstance(value, list):
-        return None
-    citations: list[ChatCitation] = []
-    for item in value:
-        if not isinstance(item, dict):
-            continue
-        ref_id = str(item.get("ref_id", "")).strip()
-        city_name = str(item.get("city_name", "")).strip()
-        source_run_id = str(item.get("source_run_id", "")).strip()
-        source_ref_id = str(item.get("source_ref_id", "")).strip()
-        if not ref_id or not source_run_id or not source_ref_id:
-            continue
-        citations.append(
-            ChatCitation(
-                ref_id=ref_id,
-                city_name=city_name,
-                source_run_id=source_run_id,
-                source_ref_id=source_ref_id,
-            )
-        )
-    return citations if citations else None
-
-
-def _as_session_response(payload: dict[str, object]) -> ChatSessionResponse:
-    """Convert stored session payload into API model."""
-    messages_raw = payload.get("messages")
-    message_models: list[ChatMessage] = []
-    if isinstance(messages_raw, list):
-        message_models = [_as_message(item) for item in messages_raw]
-
-    run_id = payload.get("run_id")
-    conversation_id = payload.get("conversation_id")
-    if not isinstance(run_id, str) or not isinstance(conversation_id, str):
-        raise ValueError("Invalid session payload identifiers.")
-    return ChatSessionResponse(
-        run_id=run_id,
-        conversation_id=conversation_id,
-        created_at=_as_datetime(payload.get("created_at")),
-        updated_at=_as_datetime(payload.get("updated_at")),
-        messages=message_models,
-    )
-
-
-def _selected_context_run_ids(
-    session: dict[str, object], fallback_run_id: str
-) -> list[str]:
-    """Extract selected context run ids from session payload."""
-    raw = session.get("context_run_ids")
-    if not isinstance(raw, list):
-        return [fallback_run_id]
-    deduped: list[str] = []
-    seen: set[str] = set()
-    for item in raw:
-        if not isinstance(item, str):
-            continue
-        cleaned = item.strip()
-        if not cleaned or cleaned in seen:
-            continue
-        deduped.append(cleaned)
-        seen.add(cleaned)
-    if not deduped:
-        return [fallback_run_id]
-    return deduped
-
-
-def _apply_context_token_cap(
-    contexts: list[_LoadedContext], token_cap: int
-) -> tuple[list[_LoadedContext], list[str]]:
-    """Apply sequential token cap to selected contexts."""
-    included: list[_LoadedContext] = []
-    excluded: list[str] = []
-    running_total = 0
-    for context in contexts:
-        next_total = running_total + context.total_tokens
-        if next_total <= token_cap:
-            included.append(context)
-            running_total = next_total
-        else:
-            excluded.append(context.run_id)
-    return included, excluded
-
-
-def _resolve_session_contexts(
-    run_store: RunStore,
-    session: dict[str, object],
-    fallback_run_id: str,
-    token_cap: int,
-) -> tuple[list[str], list[_LoadedContext], list[str]]:
-    """Resolve selected contexts for a chat session with token cap applied."""
-    selected_ids = _selected_context_run_ids(session, fallback_run_id)
-    loaded_contexts: list[_LoadedContext] = []
-    excluded: list[str] = []
-    for context_run_id in selected_ids:
-        try:
-            loaded_contexts.append(_load_context_for_run_id(run_store, context_run_id))
-        except ValueError:
-            excluded.append(context_run_id)
-    included, cap_excluded = _apply_context_token_cap(loaded_contexts, token_cap)
-    excluded.extend(cap_excluded)
-    return selected_ids, included, excluded
-
-
-def _build_session_contexts_response(
-    run_id: str,
-    conversation_id: str,
-    run_store: RunStore,
-    session: dict[str, object],
-    token_cap: int,
-) -> ChatSessionContextsResponse:
-    """Build session context payload for API response."""
-    selected_ids, included_contexts, excluded_ids = _resolve_session_contexts(
-        run_store,
-        session,
-        fallback_run_id=run_id,
-        token_cap=token_cap,
-    )
-    total_tokens = sum(context.total_tokens for context in included_contexts)
-    return ChatSessionContextsResponse(
-        run_id=run_id,
-        conversation_id=conversation_id,
-        context_run_ids=selected_ids,
-        contexts=[context.to_summary() for context in included_contexts],
-        total_tokens=total_tokens,
-        token_cap=token_cap,
-        excluded_context_run_ids=excluded_ids,
-        is_capped=len(excluded_ids) > 0,
-    )
-
-
-def _build_chat_citation_entries(
-    contexts: list[_LoadedContext],
-) -> list[_ChatCitationEntry]:
-    """Build deterministic synthetic chat citations from selected run contexts."""
-    entries: list[_ChatCitationEntry] = []
-    synthetic_index = 1
-    for context in contexts:
-        markdown_payload = context.context_bundle.get("markdown")
-        if not isinstance(markdown_payload, dict):
-            continue
-        raw_excerpts = markdown_payload.get("excerpts")
-        if not isinstance(raw_excerpts, list):
-            continue
-        for excerpt_index, raw_excerpt in enumerate(raw_excerpts):
-            if not isinstance(raw_excerpt, dict):
-                continue
-            source_ref_id = str(raw_excerpt.get("ref_id", "")).strip()
-            if not source_ref_id:
-                source_ref_id = f"ref_{excerpt_index + 1}"
-            if not is_valid_ref_id(source_ref_id):
-                continue
-            quote = str(raw_excerpt.get("quote", "")).strip()
-            partial_answer = str(raw_excerpt.get("partial_answer", "")).strip()
-            if not quote and not partial_answer:
-                continue
-            entries.append(
-                _ChatCitationEntry(
-                    ref_id=f"ref_{synthetic_index}",
-                    city_name=format_city_stem(str(raw_excerpt.get("city_name", "")).strip()),
-                    quote=quote,
-                    partial_answer=partial_answer,
-                    source_run_id=context.run_id,
-                    source_ref_id=source_ref_id,
-                )
-            )
-            synthetic_index += 1
-    return entries
-
-
-def _build_llm_citation_catalog(
-    entries: list[_ChatCitationEntry],
-) -> list[dict[str, str]]:
-    """Build LLM-facing citation catalog with no internal identifiers."""
-    return [
-        {
-            "ref_id": entry.ref_id,
-            "city_name": entry.city_name,
-            "quote": entry.quote,
-            "partial_answer": entry.partial_answer,
-        }
-        for entry in entries
-    ]
-
-
-def _extract_ordered_ref_ids(content: str) -> list[str]:
-    """Extract citation refs preserving mention order with de-duplication."""
-    ordered: list[str] = []
-    seen: set[str] = set()
-    for match in _REF_TOKEN_PATTERN.finditer(content):
-        ref_id = match.group(1).strip()
-        if ref_id in seen:
-            continue
-        seen.add(ref_id)
-        ordered.append(ref_id)
-    return ordered
-
-
-def _resolve_assistant_citations(
-    content: str,
-    entries_by_ref_id: dict[str, _ChatCitationEntry],
-) -> tuple[list[dict[str, str]], bool]:
-    """Resolve assistant citations and return validity status."""
-    ordered_refs = _extract_ordered_ref_ids(content)
-    resolved: list[dict[str, str]] = []
-    for ref_id in ordered_refs:
-        entry = entries_by_ref_id.get(ref_id)
-        if entry is None:
-            continue
-        resolved.append(
-            {
-                "ref_id": entry.ref_id,
-                "city_name": entry.city_name,
-                "source_run_id": entry.source_run_id,
-                "source_ref_id": entry.source_ref_id,
-            }
-        )
-    return resolved, len(resolved) > 0
-
-
 @router.get(
     "/chat/contexts",
     response_model=ChatContextCatalogResponse,
@@ -494,12 +152,13 @@ def _resolve_assistant_citations(
 def list_chat_contexts(request: Request) -> ChatContextCatalogResponse:
     """List all available completed run contexts for chat selection."""
     run_store = _get_run_store(request)
-    contexts = _available_contexts(run_store)
     config = _load_request_config(request)
+    summaries = list_available_context_summaries(run_store, config)
+    token_cap = resolve_chat_token_cap(config)
     return ChatContextCatalogResponse(
-        contexts=[context.to_summary() for context in contexts],
-        total=len(contexts),
-        token_cap=resolve_chat_token_cap(config),
+        contexts=summaries,
+        total=len(summaries),
+        token_cap=token_cap,
     )
 
 
@@ -540,7 +199,7 @@ def create_chat_session(
         raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail=str(exc)) from exc
     except ValueError as exc:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(exc)) from exc
-    return _as_session_response(session)
+    return as_session_response(session)
 
 
 @router.get(
@@ -560,7 +219,33 @@ def get_chat_session(
         session = store.get_session(run_id, conversation_id)
     except ChatSessionNotFoundError as exc:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=str(exc)) from exc
-    return _as_session_response(session)
+    return as_session_response(session)
+
+
+@router.get(
+    "/runs/{run_id}/chat/sessions/{conversation_id}/jobs/{job_id}",
+    response_model=None,
+    name="get_chat_job_status",
+)
+def get_chat_job_status(
+    run_id: str,
+    conversation_id: str,
+    job_id: str,
+    request: Request,
+):
+    """Return persisted status for one queued split-mode chat job."""
+    _require_chat_ready_run(run_id, request)
+    store = _get_chat_job_store(request)
+    record = store.get_job(run_id, conversation_id, job_id)
+    if record is None:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=(
+                f"Chat job `{job_id}` was not found for conversation "
+                f"`{conversation_id}` in run `{run_id}`."
+            ),
+        )
+    return as_chat_job_status_response(record)
 
 
 @router.get(
@@ -581,7 +266,104 @@ def get_chat_session_contexts(
     except ChatSessionNotFoundError as exc:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=str(exc)) from exc
     config = _load_request_config(request)
-    return _build_session_contexts_response(run_id, conversation_id, run_store, session, resolve_chat_token_cap(config))
+    try:
+        return build_session_contexts_response(
+            run_id,
+            conversation_id,
+            run_store,
+            session,
+            store,
+            config,
+            resolve_chat_token_cap(config),
+            lambda context: context.to_summary(),
+            lambda bundle: bundle.to_summary(),
+            build_chat_sources,
+            build_chat_citation_entries,
+            estimate_context_window,
+        )
+    except ChatBaseContextUnavailableError as exc:
+        raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail=str(exc)) from exc
+
+
+@router.get(
+    "/runs/{run_id}/chat/sessions/{conversation_id}/followups/{bundle_id}/references",
+    response_model=ChatFollowupReferenceListResponse,
+    response_model_exclude_none=True,
+    name="list_chat_followup_references",
+)
+def list_chat_followup_references(
+    run_id: str,
+    conversation_id: str,
+    bundle_id: str,
+    request: Request,
+    ref_id: str | None = Query(
+        default=None,
+        description="Optional `ref_n` id filter. When omitted, all references are returned.",
+    ),
+    include_quote: bool = Query(
+        default=False,
+        description=(
+            "When false (default), only lightweight citation fields are returned. "
+            "Set true to include quote payload for click-to-inspect UX."
+        ),
+    ),
+) -> ChatFollowupReferenceListResponse:
+    """Return references for one persisted chat follow-up bundle."""
+    _run_store, _ = _require_chat_ready_run(run_id, request)
+    store = _get_chat_memory_store(request)
+    try:
+        session = store.get_session(run_id, conversation_id)
+    except ChatSessionNotFoundError as exc:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=str(exc)) from exc
+
+    normalized_ref_id = (ref_id or "").strip()
+    if normalized_ref_id and not is_valid_ref_id(normalized_ref_id):
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="ref_id must match format `ref_<positive_integer>`.",
+        )
+
+    known_bundle_ids = {bundle["bundle_id"] for bundle in selected_followup_bundles(session)}
+    if bundle_id not in known_bundle_ids:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Follow-up bundle `{bundle_id}` was not found for this session.",
+        )
+
+    artifact_dir = followup_bundle_dir(
+        runs_dir=_run_store.runs_dir,
+        run_id=run_id,
+        conversation_id=conversation_id,
+        bundle_id=bundle_id,
+    )
+    records = load_reference_records(artifact_dir, bundle_id)
+    if not records:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"No markdown references available for follow-up bundle `{bundle_id}`.",
+        )
+
+    items = [
+        build_reference_item(record=item, include_quote=include_quote)
+        for item in records
+        if is_valid_ref_id(str(item.get("ref_id", "")).strip())
+    ]
+    items.sort(key=lambda item: (item.excerpt_index, item.ref_id))
+    if normalized_ref_id:
+        items = [item for item in items if item.ref_id == normalized_ref_id]
+        if not items:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"Reference `{normalized_ref_id}` was not found for bundle `{bundle_id}`.",
+            )
+
+    return ChatFollowupReferenceListResponse(
+        run_id=run_id,
+        conversation_id=conversation_id,
+        bundle_id=bundle_id,
+        reference_count=len(items),
+        references=items,
+    )
 
 
 @router.put(
@@ -599,45 +381,43 @@ def update_chat_session_contexts(
     run_store, _ = _require_chat_ready_run(run_id, request)
     store = _get_chat_memory_store(request)
     try:
-        _ = store.get_session(run_id, conversation_id)
+        session = store.get_session(run_id, conversation_id)
     except ChatSessionNotFoundError as exc:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=str(exc)) from exc
+    pending_job = as_pending_job(run_id, conversation_id, pending_job_payload(session))
+    if pending_job is not None:
+        raise HTTPException(
+            status_code=status.HTTP_409_CONFLICT,
+            detail=(
+                "This chat session already has a pending long-context answer. "
+                "Wait for it to finish before changing contexts."
+            ),
+        )
 
     config = _load_request_config(request)
     token_cap = resolve_chat_token_cap(config)
 
-    available = {context.run_id: context for context in _available_contexts(run_store)}
-    requested: list[str] = []
-    seen: set[str] = set()
+    requested: list[str] = [run_id]
+    seen: set[str] = {run_id}
     for raw_id in payload.context_run_ids:
         cleaned = raw_id.strip()
         if not cleaned or cleaned in seen:
             continue
         requested.append(cleaned)
         seen.add(cleaned)
-    if not requested:
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail="context_run_ids must include at least one run id.",
-        )
 
-    missing = [run_id_value for run_id_value in requested if run_id_value not in available]
+    missing: list[str] = []
+    for run_id_value in requested:
+        try:
+            validate_context_run_id(run_store, run_id_value)
+        except ValueError:
+            missing.append(run_id_value)
     if missing:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail=(
                 "Some selected context runs are unavailable or not completed: "
                 + ", ".join(missing)
-            ),
-        )
-
-    total_tokens = sum(available[run_id_value].total_tokens for run_id_value in requested)
-    if total_tokens > token_cap:
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail=(
-                f"Selected contexts total {total_tokens} tokens, "
-                f"which exceeds the {token_cap} token cap."
             ),
         )
 
@@ -650,7 +430,60 @@ def update_chat_session_contexts(
     except ValueError as exc:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(exc)) from exc
 
-    return _build_session_contexts_response(run_id, conversation_id, run_store, session, token_cap)
+    # Build a lightweight response using per-run sidecar summaries.
+    # The combined session prompt cache is expensive to compute and only needed
+    # when a message is sent, so we skip it here and let it build lazily on demand.
+    context_summaries: list[ChatContextSummary] = []
+    excluded_context_ids: list[str] = []
+    for rid in requested:
+        try:
+            context_summaries.append(fast_context_summary(run_store, rid, config))
+        except ValueError:
+            excluded_context_ids.append(rid)
+
+    followup_summaries: list[ChatFollowupBundleSummary] = []
+    excluded_followup_ids: list[str] = []
+    running_prompt_tokens = sum(s.prompt_context_tokens for s in context_summaries)
+    for bundle_meta in selected_followup_bundles(session):
+        try:
+            loaded = load_followup_bundle(
+                run_store=run_store,
+                run_id=run_id,
+                conversation_id=conversation_id,
+                bundle_id=bundle_meta["bundle_id"],
+                config=config,
+                bundle_meta=bundle_meta,
+            )
+            next_total = running_prompt_tokens + loaded.prompt_context_tokens
+            if next_total <= token_cap:
+                followup_summaries.append(loaded.to_summary())
+                running_prompt_tokens = next_total
+            else:
+                excluded_followup_ids.append(bundle_meta["bundle_id"])
+        except ValueError:
+            excluded_followup_ids.append(bundle_meta["bundle_id"])
+
+    total_tokens = sum(s.total_tokens for s in context_summaries) + sum(
+        fb.total_tokens for fb in followup_summaries
+    )
+    return ChatSessionContextsResponse(
+        run_id=run_id,
+        conversation_id=conversation_id,
+        context_run_ids=requested,
+        contexts=context_summaries,
+        followup_bundles=followup_summaries,
+        total_tokens=total_tokens,
+        prompt_context_tokens=running_prompt_tokens,
+        prompt_context_kind=context_summaries[0].prompt_context_kind if context_summaries else None,
+        token_cap=token_cap,
+        excluded_context_run_ids=excluded_context_ids,
+        excluded_followup_bundle_ids=excluded_followup_ids,
+        is_capped=(
+            len(excluded_context_ids) > 0
+            or len(excluded_followup_ids) > 0
+            or running_prompt_tokens > token_cap
+        ),
+    )
 
 
 @router.post(
@@ -662,6 +495,7 @@ def send_chat_message(
     run_id: str,
     conversation_id: str,
     payload: SendChatMessageRequest,
+    response: Response,
     request: Request,
     x_openrouter_api_key: str | None = Header(
         default=None, alias="X-OpenRouter-Api-Key"
@@ -670,126 +504,36 @@ def send_chat_message(
     """Send chat message and return assistant response."""
     run_store, run_record = _require_chat_ready_run(run_id, request)
     store = _get_chat_memory_store(request)
+    config = _load_request_config(request)
+    chat_job_executor = _get_chat_job_executor(request)
+    api_key_override = _resolve_api_key_override(x_openrouter_api_key)
+
+    if not payload.content.strip():
+        raise HTTPException(
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+            detail="content must be a non-empty string.",
+        )
     try:
-        session = store.get_session(run_id, conversation_id)
+        result = process_send_chat_message(
+            run_id=run_id,
+            conversation_id=conversation_id,
+            payload=payload,
+            run_store=run_store,
+            run_record=run_record,
+            store=store,
+            chat_job_executor=chat_job_executor,
+            config=config,
+            api_key_override=api_key_override,
+        )
+        if result.queued:
+            response.status_code = status.HTTP_202_ACCEPTED
+        return result.response
     except ChatSessionNotFoundError as exc:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=str(exc)) from exc
-
-    config = _load_request_config(request)
-    config.enable_sql = False
-    token_cap = resolve_chat_token_cap(config)
-
-    _selected_ids, loaded_contexts, excluded_ids = _resolve_session_contexts(
-        run_store,
-        session,
-        fallback_run_id=run_id,
-        token_cap=token_cap,
-    )
-    if not loaded_contexts:
-        raise HTTPException(
-            status_code=status.HTTP_409_CONFLICT,
-            detail=(
-                "No usable context sources are selected for this session. "
-                "Open context manager and select at least one completed run."
-            ),
-        )
-
-    history: list[dict[str, str]] = []
-    messages = session.get("messages")
-    if isinstance(messages, list):
-        for item in messages:
-            if not isinstance(item, dict):
-                continue
-            role = item.get("role")
-            content = item.get("content")
-            if role in {"user", "assistant"} and isinstance(content, str):
-                history.append({"role": role, "content": content})
-
-    citation_entries = _build_chat_citation_entries(loaded_contexts)
-    citation_entries_by_ref_id = {entry.ref_id: entry for entry in citation_entries}
-    llm_citation_catalog = _build_llm_citation_catalog(citation_entries)
-
-    api_key_override = _resolve_api_key_override(x_openrouter_api_key)
-    chat_kwargs: dict[str, object] = {
-        "original_question": run_record.question,
-        "contexts": [
-            {
-                "run_id": context.run_id,
-                "question": context.question,
-                "final_document": context.final_document,
-                "context_bundle": context.context_bundle,
-            }
-            for context in loaded_contexts
-        ],
-        "history": history,
-        "user_content": payload.content,
-        "config": config,
-        "token_cap": token_cap,
-        "citation_catalog": llm_citation_catalog,
-        "run_id": run_id,
-    }
-    if api_key_override is not None:
-        chat_kwargs["api_key_override"] = api_key_override
-
-    assistant_citations: list[dict[str, str]] = []
-    assistant_citation_warning: str | None = None
-    try:
-        retry_settings = RetrySettings.bounded(
-            max_attempts=config.retry.max_attempts,
-            backoff_base_seconds=config.retry.backoff_base_seconds,
-            backoff_max_seconds=config.retry.backoff_max_seconds,
-        )
-        max_attempts = retry_settings.max_attempts
-        assistant_text = ""
-        has_valid_citations = not citation_entries
-        for attempt in range(1, max_attempts + 1):
-            attempt_kwargs = dict(chat_kwargs)
-            if attempt > 1:
-                attempt_kwargs["retry_missing_citation"] = True
-            assistant_text = generate_context_chat_reply(**attempt_kwargs)
-            assistant_citations, has_valid_citations = _resolve_assistant_citations(
-                assistant_text,
-                citation_entries_by_ref_id,
-            )
-            if has_valid_citations:
-                break
-            if attempt < max_attempts:
-                delay_seconds = compute_retry_delay_seconds(attempt, retry_settings)
-                log_retry_event(
-                    operation="chat.citation_coverage",
-                    run_id=run_id,
-                    attempt=attempt,
-                    max_attempts=max_attempts,
-                    error_type="MissingCitationCoverage",
-                    error_message=(
-                        "Assistant response is missing valid [ref_n] citations."
-                    ),
-                    next_backoff_seconds=delay_seconds,
-                    context={"conversation_id": conversation_id},
-                )
-                if delay_seconds > 0:
-                    time.sleep(delay_seconds)
-                continue
-            log_retry_exhausted(
-                operation="chat.citation_coverage",
-                run_id=run_id,
-                attempt=attempt,
-                max_attempts=max_attempts,
-                error_type="MissingCitationCoverage",
-                error_message=(
-                    "Assistant response is missing valid [ref_n] citations."
-                ),
-                context={"conversation_id": conversation_id},
-            )
-            assistant_citation_warning = (
-                "Assistant response is missing valid [ref_n] citations."
-            )
-            logger.warning(
-                "Context chat response missing valid [ref_n] citations run_id=%s conversation_id=%s attempts=%d",
-                run_id,
-                conversation_id,
-                max_attempts,
-            )
+    except ChatBaseContextUnavailableError as exc:
+        raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail=str(exc)) from exc
+    except ChatNoContextSourcesError as exc:
+        raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail=str(exc)) from exc
     except APITimeoutError as exc:
         raise HTTPException(
             status_code=status.HTTP_504_GATEWAY_TIMEOUT,
@@ -827,26 +571,8 @@ def send_chat_message(
                 "or configure server OPENROUTER_API_KEY."
             ),
         ) from exc
-    _, user_message, assistant_message = store.append_turn(
-        run_id=run_id,
-        conversation_id=conversation_id,
-        user_content=payload.content,
-        assistant_content=assistant_text,
-        assistant_citations=assistant_citations or None,
-        assistant_citation_warning=assistant_citation_warning,
-    )
-
-    if excluded_ids:
-        # Persist selected ids without unavailable/capped ids to keep session healthy.
-        filtered_ids = [context.run_id for context in loaded_contexts]
-        store.update_context_runs(run_id, conversation_id, filtered_ids or [run_id])
-
-    return SendChatMessageResponse(
-        run_id=run_id,
-        conversation_id=conversation_id,
-        user_message=_as_message(user_message),
-        assistant_message=_as_message(assistant_message),
-    )
+    except ChatSessionPendingJobError as exc:
+        raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail=str(exc)) from exc
 
 
 __all__ = ["router"]

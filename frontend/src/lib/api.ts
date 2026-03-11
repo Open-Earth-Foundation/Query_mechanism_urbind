@@ -1,3 +1,7 @@
+import { getApiBaseUrl } from "@/lib/api-runtime-config";
+
+export { getApiBaseUrl };
+
 export type RunStatus =
   | "queued"
   | "running"
@@ -77,6 +81,21 @@ export interface RunReferenceListResponse {
   references: RunReferenceListItem[];
 }
 
+export interface SourceChunkItem {
+  chunk_id: string;
+  content: string;
+  city_name?: string | null;
+  source_path?: string | null;
+  heading_path?: string | null;
+  block_type?: string | null;
+}
+
+export interface SourceChunkListResponse {
+  run_id: string;
+  chunk_count: number;
+  chunks: SourceChunkItem[];
+}
+
 export interface RunSummary {
   run_id: string;
   question: string;
@@ -138,12 +157,28 @@ export interface ApplyAssumptionsResponse {
 }
 
 export type ChatRole = "user" | "assistant";
+export type ChatJobStatus = "queued" | "running" | "completed" | "failed";
+export type ChatFollowupAction =
+  | "answer_from_context"
+  | "search_single_city"
+  | "out_of_scope"
+  | "needs_city_clarification";
+export type ChatCitationSourceType = "run" | "followup_bundle";
 
 export interface ChatCitation {
   ref_id: string;
   city_name: string;
-  source_run_id: string;
+  source_type: ChatCitationSourceType;
+  source_id: string;
   source_ref_id: string;
+}
+
+export interface ChatRoutingMetadata {
+  action: ChatFollowupAction;
+  reason: string;
+  target_city?: string | null;
+  bundle_id?: string | null;
+  pending_user_message?: string | null;
 }
 
 export interface ChatMessage {
@@ -152,6 +187,14 @@ export interface ChatMessage {
   created_at: string;
   citations?: ChatCitation[] | null;
   citation_warning?: string | null;
+  routing?: ChatRoutingMetadata | null;
+}
+
+export interface ChatJobHandle {
+  job_id: string;
+  job_number: number;
+  status: ChatJobStatus;
+  status_url: string;
 }
 
 export interface ChatSessionResponse {
@@ -159,6 +202,7 @@ export interface ChatSessionResponse {
   conversation_id: string;
   created_at: string;
   updated_at: string;
+  pending_job?: ChatJobHandle | null;
   messages: ChatMessage[];
 }
 
@@ -178,6 +222,8 @@ export interface ChatContextSummary {
   document_tokens: number;
   bundle_tokens: number;
   total_tokens: number;
+  prompt_context_tokens: number;
+  prompt_context_kind?: "citation_catalog" | "serialized_contexts" | null;
 }
 
 export interface ChatContextCatalogResponse {
@@ -186,22 +232,71 @@ export interface ChatContextCatalogResponse {
   token_cap: number;
 }
 
+export interface ChatFollowupBundleSummary {
+  bundle_id: string;
+  target_city: string;
+  excerpt_count: number;
+  total_tokens: number;
+  prompt_context_tokens: number;
+  prompt_context_kind?: "citation_catalog" | "serialized_contexts" | null;
+  created_at: string;
+}
+
 export interface ChatSessionContextsResponse {
   run_id: string;
   conversation_id: string;
   context_run_ids: string[];
   contexts: ChatContextSummary[];
+  followup_bundles: ChatFollowupBundleSummary[];
   total_tokens: number;
+  prompt_context_tokens: number;
+  prompt_context_kind?: "citation_catalog" | "serialized_contexts" | null;
   token_cap: number;
   excluded_context_run_ids: string[];
+  excluded_followup_bundle_ids: string[];
   is_capped: boolean;
 }
 
-export interface SendChatMessageResponse {
+export interface SendChatMessageCompletedResponse {
+  mode: "completed";
   run_id: string;
   conversation_id: string;
   user_message: ChatMessage;
   assistant_message: ChatMessage;
+}
+
+export interface ChatMessageJobAcceptedResponse {
+  mode: "queued";
+  run_id: string;
+  conversation_id: string;
+  user_message: ChatMessage;
+  job: ChatJobHandle;
+  routing?: ChatRoutingMetadata | null;
+}
+
+export type SendChatMessageResponse =
+  | SendChatMessageCompletedResponse
+  | ChatMessageJobAcceptedResponse;
+
+export interface ChatJobStatusResponse {
+  run_id: string;
+  conversation_id: string;
+  job_id: string;
+  job_number: number;
+  status: ChatJobStatus;
+  created_at: string;
+  started_at?: string | null;
+  completed_at?: string | null;
+  finish_reason?: string | null;
+  error?: RunError | null;
+}
+
+export interface ChatFollowupReferenceListResponse {
+  run_id: string;
+  conversation_id: string;
+  bundle_id: string;
+  reference_count: number;
+  references: RunReferenceListItem[];
 }
 
 function normalizeCityKey(value: string): string {
@@ -225,50 +320,20 @@ function normalizeCityKeys(values?: string[]): string[] | undefined {
   return normalized.length > 0 ? normalized : undefined;
 }
 
-const configuredBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL?.trim() ?? "";
-const LOCAL_API_BASE_URL = "http://127.0.0.1:8000";
-const DEFAULT_API_BASE_URL = "https://urbind-query-mechanism-api.openearth.dev";
 const DEFAULT_REQUEST_TIMEOUT_MS = 120_000;
+const CHAT_SEND_REQUEST_TIMEOUT_MS = 300_000;
 const RUN_LIST_REQUEST_TIMEOUT_MS = 12_000;
 const STATUS_REQUEST_TIMEOUT_MS = 10_000;
-
-function normalizeBaseUrl(baseUrl: string): string {
-  return baseUrl.replace(/\/+$/, "");
-}
-
-function resolveClientFallbackApiBaseUrl(): string {
-  const locationHost = globalThis.location?.hostname?.toLowerCase() ?? "";
-  if (locationHost === "localhost" || locationHost === "127.0.0.1") {
-    return LOCAL_API_BASE_URL;
-  }
-  if (locationHost.endsWith(".openearth.dev")) {
-    return DEFAULT_API_BASE_URL;
-  }
-  if (locationHost.length > 0) {
-    return `http://${locationHost}:8000`;
-  }
-  return DEFAULT_API_BASE_URL;
-}
-
-export const apiBaseUrl = normalizeBaseUrl(
-  configuredBaseUrl.length > 0 ? configuredBaseUrl : DEFAULT_API_BASE_URL,
-);
-
-export function getApiBaseUrl(): string {
-  if (configuredBaseUrl.length > 0) {
-    return normalizeBaseUrl(configuredBaseUrl);
-  }
-  if (typeof window !== "undefined") {
-    return normalizeBaseUrl(resolveClientFallbackApiBaseUrl());
-  }
-  return apiBaseUrl;
-}
 
 let userApiKey: string | null = null;
 
 export function setUserApiKey(key: string | null): void {
   const cleaned = key?.trim() ?? "";
   userApiKey = cleaned.length > 0 ? cleaned : null;
+}
+
+export function getUserApiKey(): string | null {
+  return userApiKey;
 }
 
 function buildHeaders(includeJsonContentType: boolean): HeadersInit {
@@ -428,6 +493,23 @@ export async function fetchRunReferences(
   return requestJson<RunReferenceListResponse>(path);
 }
 
+export async function fetchRunSourceChunks(
+  runId: string,
+  chunkIds: string[],
+): Promise<SourceChunkListResponse> {
+  const params = new URLSearchParams();
+  chunkIds.forEach((chunkId) => {
+    const normalized = chunkId.trim();
+    if (normalized.length > 0) {
+      params.append("chunk_id", normalized);
+    }
+  });
+  const suffix = params.toString();
+  const path =
+    `/api/v1/runs/${encodeURIComponent(runId)}/source-chunks${suffix ? `?${suffix}` : ""}`;
+  return requestJson<SourceChunkListResponse>(path);
+}
+
 export async function fetchCities(): Promise<CityListResponse> {
   return requestJson<CityListResponse>("/api/v1/cities");
 }
@@ -517,14 +599,58 @@ export async function sendChatMessage(
   runId: string,
   conversationId: string,
   content: string,
+  options?: {
+    clarificationCity?: string;
+  },
 ): Promise<SendChatMessageResponse> {
+  const body: Record<string, string> = { content };
+  if (options?.clarificationCity) {
+    body.clarification_city = options.clarificationCity;
+  }
   return requestJson<SendChatMessageResponse>(
     `/api/v1/runs/${encodeURIComponent(runId)}/chat/sessions/${encodeURIComponent(conversationId)}/messages`,
     {
       method: "POST",
-      body: JSON.stringify({ content }),
+      body: JSON.stringify(body),
     },
     true,
+    CHAT_SEND_REQUEST_TIMEOUT_MS,
   );
 }
 
+export async function fetchChatJobStatus(
+  runId: string,
+  conversationId: string,
+  jobId: string,
+  options?: { signal?: AbortSignal },
+): Promise<ChatJobStatusResponse> {
+  return requestJson<ChatJobStatusResponse>(
+    `/api/v1/runs/${encodeURIComponent(runId)}/chat/sessions/${encodeURIComponent(conversationId)}/jobs/${encodeURIComponent(jobId)}`,
+    { signal: options?.signal },
+    false,
+    STATUS_REQUEST_TIMEOUT_MS,
+  );
+}
+
+export async function fetchChatFollowupReferences(
+  runId: string,
+  conversationId: string,
+  bundleId: string,
+  options?: {
+    refId?: string;
+    includeQuote?: boolean;
+  },
+): Promise<ChatFollowupReferenceListResponse> {
+  const params = new URLSearchParams();
+  if (options?.refId) {
+    params.set("ref_id", options.refId);
+  }
+  if (options?.includeQuote) {
+    params.set("include_quote", "true");
+  }
+  const suffix = params.toString();
+  const path =
+    `/api/v1/runs/${encodeURIComponent(runId)}/chat/sessions/${encodeURIComponent(conversationId)}` +
+    `/followups/${encodeURIComponent(bundleId)}/references${suffix ? `?${suffix}` : ""}`;
+  return requestJson<ChatFollowupReferenceListResponse>(path);
+}

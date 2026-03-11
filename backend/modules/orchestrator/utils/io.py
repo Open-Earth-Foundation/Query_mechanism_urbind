@@ -3,16 +3,12 @@
 from __future__ import annotations
 
 import json
-import logging
 from pathlib import Path
-from typing import TYPE_CHECKING
 
-if TYPE_CHECKING:
-    from backend.services.run_logger import RunLogger
-    from backend.utils.paths import RunPaths
-
-logger = logging.getLogger(__name__)
-
+from backend.api.services.context_prompt_cache import compute_prompt_context_cache, write_prompt_context_cache
+from backend.services.run_logger import RunLogger
+from backend.utils.config import AppConfig
+from backend.utils.paths import RunPaths
 
 def write_json(path: Path, payload: object) -> None:
     """
@@ -48,6 +44,7 @@ def write_final_output(
     content: str,
     paths: RunPaths,
     run_logger: RunLogger,
+    config: AppConfig,
     finish_reason: str = "completed",
 ) -> None:
     """
@@ -66,6 +63,19 @@ def write_final_output(
     final_path = paths.final_output
     final_path.write_text(rendered_content, encoding="utf-8")
     run_logger.record_artifact("final_output", final_path)
+    prompt_context_tokens, prompt_context_kind = compute_prompt_context_cache(
+        question=question,
+        final_document=rendered_content,
+        context_bundle=run_logger.context_bundle,
+        config=config,
+    )
+    run_logger.context_bundle = write_prompt_context_cache(
+        context_bundle_path=paths.context_bundle,
+        markdown_excerpts_path=paths.markdown_excerpts,
+        context_bundle=run_logger.context_bundle,
+        prompt_context_tokens=prompt_context_tokens,
+        prompt_context_kind=prompt_context_kind,
+    )
 
 
 __all__ = [

@@ -14,15 +14,24 @@ import {
 } from "lucide-react";
 
 import { AssumptionsWorkspace } from "@/components/assumptions-workspace";
-import { ContextChatWorkspace } from "@/components/context-chat-workspace";
+import { ContextChatWorkspace } from "@/components/context-chat/context-chat-workspace";
+import { DevModeToggle } from "@/components/dev-mode-toggle";
+import { DevToolsPanel } from "@/components/dev-tools-panel";
 import { MarkdownWithReferences } from "@/components/markdown-with-references";
+import { SearchableCityPicker } from "@/components/searchable-city-picker";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 import { Textarea } from "@/components/ui/textarea";
+import {
+  FrontendMode,
+  getDefaultFrontendMode,
+  getDevFeatureFlags,
+  persistFrontendMode,
+  readStoredFrontendMode,
+} from "@/lib/frontend-mode";
 import { formatCityLabel } from "@/lib/utils";
 import {
   CityGroup,
@@ -48,17 +57,24 @@ const TERMINAL_STATUSES: RunStatus[] = [
   "failed",
   "stopped",
 ];
+const RUN_STATUS_POLL_INTERVAL_MS = 2500;
 
 type CityScopeMode = "all" | "group" | "manual";
 type AnalysisMode = "aggregate" | "city_by_city";
 const LAST_RUN_ID_STORAGE_KEY = "last_run_id";
 const CONTROLS_COLLAPSED_STORAGE_KEY = "build_controls_collapsed";
 
+function formatRunOptionLabel(run: RunSummary): string {
+  const compactQuestion = run.question.replace(/\s+/g, " ").trim();
+  const preview =
+    compactQuestion.length > 56 ? `${compactQuestion.slice(0, 53)}...` : compactQuestion;
+  return `${run.run_id} | ${preview || "No question"}`;
+}
+
 export default function Home() {
   const [question, setQuestion] = useState("");
   const [scopeMode, setScopeMode] = useState<CityScopeMode>("all");
   const [analysisMode, setAnalysisMode] = useState<AnalysisMode>("aggregate");
-  const [cityFilter, setCityFilter] = useState("");
   const [cities, setCities] = useState<string[]>([]);
   const [selectedCities, setSelectedCities] = useState<string[]>([]);
   const [cityGroups, setCityGroups] = useState<CityGroup[]>([]);
@@ -84,24 +100,36 @@ export default function Home() {
   const [chatOpen, setChatOpen] = useState(false);
   const [assumptionsOpen, setAssumptionsOpen] = useState(false);
   const [isControlsCollapsed, setIsControlsCollapsed] = useState(false);
+  const [frontendMode, setFrontendMode] = useState<FrontendMode>(getDefaultFrontendMode());
+  const [hasHydratedFrontendMode, setHasHydratedFrontendMode] = useState(false);
 
   const runId = runResponse?.run_id ?? null;
   const statusValue = runStatus?.status ?? runResponse?.status ?? null;
   const canFetchArtifacts = statusValue === "completed" || statusValue === "completed_with_gaps";
   const documentReady = !!runOutput?.content && canFetchArtifacts;
+  const devFeatures = useMemo(() => getDevFeatureFlags(frontendMode), [frontendMode]);
 
   useEffect(() => {
-    if (typeof window === "undefined") {
+    const storedMode = readStoredFrontendMode();
+    if (storedMode) {
+      setFrontendMode(storedMode);
+    }
+    setHasHydratedFrontendMode(true);
+  }, []);
+
+  useEffect(() => {
+    if (!hasHydratedFrontendMode) {
       return;
     }
+    persistFrontendMode(frontendMode);
+  }, [frontendMode, hasHydratedFrontendMode]);
+
+  useEffect(() => {
     const stored = window.localStorage.getItem(CONTROLS_COLLAPSED_STORAGE_KEY);
     setIsControlsCollapsed(stored === "1");
   }, []);
 
   useEffect(() => {
-    if (typeof window === "undefined") {
-      return;
-    }
     window.localStorage.setItem(
       CONTROLS_COLLAPSED_STORAGE_KEY,
       isControlsCollapsed ? "1" : "0",
@@ -136,9 +164,7 @@ export default function Home() {
       setRunOutput(outputPayload);
       setRunContext(contextPayload);
     }
-    if (typeof window !== "undefined") {
-      window.localStorage.setItem(LAST_RUN_ID_STORAGE_KEY, trimmedRunId);
-    }
+    window.localStorage.setItem(LAST_RUN_ID_STORAGE_KEY, trimmedRunId);
     setSelectedExistingRunId(trimmedRunId);
   }, []);
 
@@ -193,9 +219,6 @@ export default function Home() {
   }, [refreshRunList]);
 
   useEffect(() => {
-    if (typeof window === "undefined") {
-      return;
-    }
     const storedRunId = (window.localStorage.getItem(LAST_RUN_ID_STORAGE_KEY) ?? "").trim();
     if (!storedRunId) {
       return;
@@ -322,7 +345,7 @@ export default function Home() {
           }
           nextPollHandle = setTimeout(() => {
             pollOnce();
-          }, 2500);
+          }, RUN_STATUS_POLL_INTERVAL_MS);
         });
     };
 
@@ -364,14 +387,6 @@ export default function Home() {
       cancelled = true;
     };
   }, [runId, runStatus, canFetchArtifacts]);
-
-  const filteredCities = useMemo(() => {
-    const needle = cityFilter.trim().toLowerCase();
-    if (!needle) {
-      return cities;
-    }
-    return cities.filter((city) => city.toLowerCase().includes(needle));
-  }, [cities, cityFilter]);
 
   const selectedGroup = useMemo(() => {
     if (!selectedGroupId) {
@@ -438,9 +453,7 @@ export default function Home() {
       });
       setRunResponse(payload);
       setSelectedExistingRunId(payload.run_id);
-      if (typeof window !== "undefined") {
-        window.localStorage.setItem(LAST_RUN_ID_STORAGE_KEY, payload.run_id);
-      }
+      window.localStorage.setItem(LAST_RUN_ID_STORAGE_KEY, payload.run_id);
       void refreshRunList(payload.run_id);
       const initialStatus = await fetchRunStatus(payload.run_id);
       setRunStatus(initialStatus);
@@ -451,15 +464,6 @@ export default function Home() {
     } finally {
       setIsSubmitting(false);
     }
-  }
-
-  function formatRunOptionLabel(run: RunSummary): string {
-    const compactQuestion = run.question.replace(/\s+/g, " ").trim();
-    const preview =
-      compactQuestion.length > 56
-        ? `${compactQuestion.slice(0, 53)}...`
-        : compactQuestion;
-    return `${run.run_id} | ${preview || "No question"}`;
   }
 
   const isTerminal = !!statusValue && TERMINAL_STATUSES.includes(statusValue);
@@ -491,6 +495,7 @@ export default function Home() {
                 This flow is document-first. You submit a build run, wait for completion, review the generated document, then switch into context chat workspace.
               </p>
             </div>
+            <DevModeToggle mode={frontendMode} onModeChange={setFrontendMode} />
           </div>
         </header>
 
@@ -680,41 +685,14 @@ export default function Home() {
                 ) : null}
 
                 {scopeMode === "manual" ? (
-                  <>
-                    <Input
-                      id="city-filter"
-                      placeholder="Filter cities..."
-                      value={cityFilter}
-                      onChange={(event) => setCityFilter(event.target.value)}
-                    />
-                    <div className="max-h-40 overflow-y-auto rounded-md border border-slate-200 p-2">
-                      {isLoadingCities ? (
-                        <p className="text-sm text-slate-500">Loading cities...</p>
-                      ) : citiesError ? (
-                        <p className="text-sm text-red-600">{citiesError}</p>
-                      ) : filteredCities.length === 0 ? (
-                        <p className="text-sm text-slate-500">No cities found.</p>
-                      ) : (
-                        <div className="flex flex-wrap gap-2">
-                          {filteredCities.map((city) => {
-                            const selected = selectedCities.includes(city);
-                            return (
-                              <Button
-                                key={city}
-                                type="button"
-                                variant={selected ? "default" : "outline"}
-                                size="sm"
-                                onClick={() => toggleCity(city)}
-                                className="h-8 rounded-full px-3"
-                              >
-                                {formatCityLabel(city)}
-                              </Button>
-                            );
-                          })}
-                        </div>
-                      )}
-                    </div>
-                  </>
+                  <SearchableCityPicker
+                    cities={cities}
+                    selectedCities={selectedCities}
+                    onSelectCity={toggleCity}
+                    errorMessage={citiesError}
+                    isLoading={isLoadingCities}
+                    loadingMessage="Loading cities..."
+                  />
                 ) : null}
               </div>
 
@@ -746,7 +724,7 @@ export default function Home() {
                 <p className="text-xs text-slate-600">
                   {analysisMode === "aggregate"
                     ? "One integrated answer across selected cities."
-                    : "Aswering one city section at a time; similarities at the end."}
+                    : "Answering one city section at a time; similarities at the end."}
                 </p>
               </div>
 
@@ -800,12 +778,19 @@ export default function Home() {
                 ) : null}
                 {runError ? <p className="text-sm text-red-600">{runError}</p> : null}
               </div>
+
+              {devFeatures.showRunId || devFeatures.showApiKeyControls ? (
+                <>
+                  <Separator />
+                  <DevToolsPanel apiKeyIssue={hasApiKeyIssue} runId={runId} />
+                </>
+              ) : null}
               </CardContent>
             </Card>
           </div>
 
           <div className="min-w-0 flex-1">
-            {assumptionsOpen && documentReady && runId ? (
+            {devFeatures.showAssumptionsEntry && assumptionsOpen && documentReady && runId ? (
               <AssumptionsWorkspace
                 runId={runId}
                 enabled={documentReady}
@@ -816,6 +801,9 @@ export default function Home() {
                 runId={runId}
                 enabled={documentReady}
                 onClose={() => setChatOpen(false)}
+                showContextManager={devFeatures.showContextManager}
+                showDevDiagnostics={frontendMode === "dev"}
+                showTokenMetrics={devFeatures.showChatTokenMetrics}
               />
             ) : (
               <Card className="border-slate-300">
@@ -834,6 +822,20 @@ export default function Home() {
                     <>
                       <div className="mb-3 flex justify-end">
                         <div className="flex gap-2">
+                          {devFeatures.showAssumptionsEntry ? (
+                            <Button
+                              type="button"
+                              variant="outline"
+                              onClick={() => {
+                                setChatOpen(false);
+                                setAssumptionsOpen(true);
+                              }}
+                              disabled={!runId}
+                            >
+                              <Sparkles className="h-4 w-4" />
+                              Assumptions Review
+                            </Button>
+                          ) : null}
                           <Button
                             type="button"
                             onClick={() => {

@@ -50,12 +50,13 @@ Environment variables (`.env`):
 - `SOURCE_DB_PATH` (optional, default `data/source.db`): SQLite source DB path used when `DATABASE_URL` is not set.
 - `MARKDOWN_DIR` (optional, default `documents`): default directory scanned for markdown files.
 - `RUNS_DIR` (optional, default `output`): base directory for run artifacts.
+- `API_CHAT_JOB_WORKERS` (optional, default `1`): dedicated worker count for async split-mode chat jobs.
 - `LOG_LEVEL` (optional, default `INFO`): logging verbosity (`DEBUG`, `INFO`, `WARNING`, `ERROR`).
 - `OPENROUTER_BASE_URL` (optional, default `https://openrouter.ai/api/v1`): custom OpenRouter-compatible base URL.
-- `CHAT_PROMPT_TOKEN_CAP` (optional, default `250000`): token cap for context chat prompt assembly.
-- `CHAT_PROVIDER_TIMEOUT_SECONDS` (optional, default `50`): provider timeout for context chat.
 - `LLM_CONFIG_PATH` (optional, default `llm_config.yaml`): API config file path.
 - `CITY_GROUPS_PATH` (optional, default `backend/api/assets/city_groups.json`): city groups catalog JSON path.
+
+Chat prompt sizing, follow-up router history and excerpt caps, retry backoff, and provider timeouts now come from `llm_config.yaml`.
 - `VECTOR_STORE_ENABLED` (optional, default `false`): enables local Chroma markdown indexing flows.
 - `ANONYMIZED_TELEMETRY` (optional, default `FALSE`): disables Chroma anonymized telemetry when set to `FALSE`.
 - `CHROMA_PERSIST_PATH` (optional, default `.chroma`): local Chroma persistence directory.
@@ -171,6 +172,10 @@ chat:
   context_window_tokens: 400000
   input_token_reserve: 20000
   max_history_messages: 24
+  followup_search_enabled: false
+  max_auto_followup_bundles: 3
+  followup_router_max_history_messages: 6
+  followup_router_max_excerpts_per_source: 50
 assumptions_reviewer:
   model: "openai/gpt-5.2"
   temperature: 0.0
@@ -388,9 +393,10 @@ Core endpoints:
 - `GET /api/v1/runs/{run_id}/chat/sessions`
 - `POST /api/v1/runs/{run_id}/chat/sessions`
 - `GET /api/v1/runs/{run_id}/chat/sessions/{conversation_id}`
+- `GET /api/v1/runs/{run_id}/chat/sessions/{conversation_id}/jobs/{job_id}`
 - `GET /api/v1/runs/{run_id}/chat/sessions/{conversation_id}/contexts`
 - `PUT /api/v1/runs/{run_id}/chat/sessions/{conversation_id}/contexts`
-- `POST /api/v1/runs/{run_id}/chat/sessions/{conversation_id}/messages`
+- `POST /api/v1/runs/{run_id}/chat/sessions/{conversation_id}/messages` (`200` with `mode="completed"` for direct replies, `202` with `mode="queued"` for split-mode jobs)
 - `POST /api/v1/runs/{run_id}/assumptions/discover` (two-pass missing-data extraction + verification)
 - `POST /api/v1/runs/{run_id}/assumptions/apply` (apply edited assumptions and regenerate document; ephemeral by default)
 - `GET /api/v1/runs/{run_id}/assumptions/latest` (load latest assumptions artifacts for a run; only when persisted)
@@ -426,12 +432,199 @@ Context chat notes:
 
 - Run outputs are persisted under `output/<run_id>/final.md` and `output/<run_id>/context_bundle.json`.
 - Chat sessions persist under `output/<run_id>/chat/<conversation_id>.json`.
-- Context manager supports selecting multiple completed run contexts.
+- Split-mode chat jobs persist under `output/<run_id>/chat_jobs/<conversation_id>/<job_id>.json`.
+- Context manager supports selecting multiple completed run contexts; manual selections may exceed the direct prompt cap and rely on overflow handling when needed.
 - Chat builds a deterministic synthetic citation catalog from selected context bundles and requires assistant citations in `[ref_n]` format.
 - Chat prompt citation context contains only `ref_id`, `city_name`, `quote`, and `partial_answer` (no chunk ids and no internal source ids).
-- Assistant messages persist citation metadata (`source_run_id`, `source_ref_id`) for deterministic click-to-quote resolution in frontend.
-- Prompt budget defaults to `250000` tokens (`CHAT_PROMPT_TOKEN_CAP`) and switches to pooled excerpts if full context exceeds this budget.
+- Chat context APIs use `prompt_context_tokens` as the canonical context-size metric for UI warnings, token-cap decisions, and direct-vs-split planning; raw stored totals remain diagnostic only.
+- Assistant messages persist citation metadata (`source_type`, `source_id`, `source_ref_id`) for deterministic click-to-quote resolution in frontend.
+- When a turn is predicted to use split/map-reduce overflow mode, the API persists the user message, returns `202 Accepted`, and the frontend polls the chat-job status endpoint until the final assistant message is attached to the session.
+- Only one split-mode chat job may be active per session at a time; sending another message or changing contexts while that job is pending returns `409`.
+- Prompt budget defaults to `chat.max_context_total_tokens` from `llm_config.yaml` and switches to the overflow map-reduce path described below when direct chat would exceed the effective budget.
 - `include_quote=false` on `/references` is the default for lightweight city-label rendering; quote payload is fetched on click using `include_quote=true`.
+
+## Context chat overflow handling
+
+This chapter describes the full runtime path used when a chat turn is too large for a normal single-pass prompt.
+
+### Goal
+
+The system should still answer grounded chat questions even when the selected run context is too large to fit in one prompt. Instead of failing or sending the raw run artifacts unchanged, chat switches to an evidence-only map-reduce flow that keeps citations deterministic and frontend click-to-quote behavior intact.
+
+### Normal direct path
+
+For every chat turn, the backend first tries the direct path:
+
+1. Resolve chat context sources.
+2. Keep the parent/base run pinned.
+3. Include all manually selected run contexts, even when the combined selection exceeds the direct prompt cap.
+4. Add auto-generated follow-up bundles only while they fit after the pinned base run and any manually selected runs.
+5. Build a synthetic chat citation catalog from excerpt evidence across all included sources.
+6. Try to answer in one direct chat completion call.
+
+If that direct prompt fits, chat stays on the fast path and no overflow artifact is created.
+If it does not fit, the API now queues a split-mode chat job and returns immediately so the frontend can poll instead of waiting on a long-running HTTP request.
+
+### When overflow is triggered
+
+The overflow path is used only when the direct prompt would exceed the effective chat budget after normal history trimming.
+
+Two main cases trigger it:
+
+- Citation-backed direct chat cannot fit the full normalized citation catalog inside the prompt budget.
+- Full serialized run context is too large for the direct prompt threshold or still exceeds the effective token cap after history is trimmed.
+
+This keeps the direct path fast for normal cases and activates the more expensive flow only when needed.
+
+### Lazy chat artifact
+
+On the first overflowed turn for a run, the backend builds a cached compact evidence artifact at:
+
+`output/<run_id>/chat_cache/evidence_chunks.json`
+
+This is a lazy artifact:
+
+- It is created only if chat actually overflows.
+- It is a cache, not a new source of truth.
+- It is safe to reuse because completed run artifacts are treated as immutable.
+- It is rebuilt only when the active context selection or extracted evidence changes.
+- It is also rebuilt when the cache schema changes, so older trim-based cache files are not reused by newer overflow logic.
+
+The cache stores a source signature plus compact evidence chunks. The source signature is derived from the active context ids and normalized evidence items so the backend can tell whether an existing cache is still valid for the current chat source set.
+
+### What is kept and what is stripped
+
+Overflow mode is evidence-only by design. The prompt payload keeps only the fields the LLM actually needs for grounded answering:
+
+- `ref_id`
+- `city_name`
+- `quote`
+- `partial_answer`
+
+The overflow prompt intentionally strips prompt-noise and backend-only data, including:
+
+- raw `context_bundle` JSON serialization
+- full `final_document`
+- artifact paths such as `final`
+- status/debug/error metadata
+- retrieval bookkeeping such as `source_chunk_ids`
+
+This reduction is the main reason large contexts can still be answered reliably.
+
+### Evidence cache structure
+
+The cached artifact is organized as token-bounded chunks of evidence items. At a high level it looks like this:
+
+```json
+{
+  "schema_version": 2,
+  "source_signature": "...",
+  "evidence_count": 42,
+  "chunks": [
+    {
+      "chunk_id": "chunk_1",
+      "ref_ids": ["ref_1", "ref_2"],
+      "token_count": 1234,
+      "items": [
+        {
+          "ref_id": "ref_1",
+          "city_name": "Munich",
+          "quote": "...",
+          "partial_answer": "..."
+        }
+      ]
+    }
+  ]
+}
+```
+
+`token_count` stores the rendered prompt-token cost of each cached chunk. This lets split-mode decide quickly whether a chunk already fits the current map-pass budget.
+
+### Map step
+
+Once the compact evidence cache exists, the backend uses those cached chunks directly for the map step.
+
+If a cached chunk is larger than the current map-pass budget because the request budget shrank further, the backend tries one half split of that chunk:
+
+- left half of the chunk items
+- right half of the chunk items
+
+If both halves fit, they are used as two map blocks for that request.
+If either half still does not fit, the overflow job fails instead of trimming `city_name`, `quote`, or `partial_answer`.
+
+Each map pass:
+
+- receives one evidence block
+- is told which chunk number it is processing
+- is instructed to use only evidence from that block
+- must cite factual claims using only `[ref_n]` values present in that block
+
+This means the model never sees the full raw run payload during overflow mode. It sees only compact evidence records and produces partial grounded analyses per chunk.
+
+### Reduce step
+
+After all map passes finish, the backend merges the partial grounded analyses into a final answer.
+
+The reduce prompt:
+
+- uses only facts and citations that already appear in the partial map outputs
+- preserves valid `[ref_n]` citations on factual claims
+- merges duplicate statements
+- resolves contradictions by preferring the later corrected grounded summary when appropriate
+
+If the reduce prompt itself would become too large, the backend reduces recursively in batches until only one final answer remains. This is how the system handles very large evidence sets without assuming that a single reduce pass will fit.
+
+### Citation preservation
+
+Overflow mode does not break frontend citation behavior.
+
+The chat layer still uses the same synthetic `ref_n` scheme. After the final answer is generated, the backend resolves each synthetic citation back to its original source metadata:
+
+- `source_type`
+- `source_id`
+- `source_ref_id`
+
+Because of that mapping, the frontend can still render compact city labels and fetch the original quote on click, even when the answer came from overflow map-reduce instead of the direct prompt path.
+
+### Base-run pinning and token caps
+
+Overflow handling works together with pinned-base context selection.
+
+The parent/base run is always treated as mandatory:
+
+- it stays included even if it alone exceeds `chat.max_context_total_tokens`
+- manually selected extra runs remain included even when they push the selection above the direct prompt cap
+- auto-added follow-up bundles are trimmed after the base run and manual contexts
+
+This avoids a failure mode where the main report disappears from the chat context simply because additional sources were selected.
+
+When the base run alone exceeds the configured token cap:
+
+- the contexts response still includes the base run
+- `is_capped` becomes `true`
+- the UI shows that the selection exceeds the direct prompt cap and overflow handling will be used when needed
+
+### Empty-evidence case
+
+If overflow mode finds no usable compact evidence items, the backend still uses the LLM to answer. It does not guess missing facts. Instead, it asks the model to explain briefly that the current saved context does not provide extractable grounded evidence for the question.
+
+### Why this design exists
+
+This design keeps three things true at once:
+
+- normal chat stays fast when the prompt fits
+- very large run contexts still remain answerable
+- citations remain deterministic and clickable in the UI
+
+In practice, the most important optimization is not splitting the raw run JSON into arbitrary pieces. It is stripping the prompt down to compact evidence records first, then map-reducing over those records while preserving citation ids end-to-end.
+
+In the current implementation, that means:
+
+- build and cache full evidence-item chunks once
+- store per-chunk token counts in the cache
+- reuse those chunks across overflowed turns
+- split one oversized chunk in half once when a later request has a tighter budget
+- fail clearly if even a half split cannot fit
 
 Run API in Docker:
 
@@ -462,20 +655,35 @@ Optional frontend env:
 
 ```
 NEXT_PUBLIC_API_BASE_URL=http://127.0.0.1:8000
+NEXT_PUBLIC_LOCAL_API_PORT=8000
+NEXT_PUBLIC_FRONTEND_MODE=standard
 ```
+
+`NEXT_PUBLIC_API_BASE_URL` should be set for deployed environments.
+If it is omitted, the frontend falls back to a local backend URL built from `NEXT_PUBLIC_LOCAL_API_PORT`.
 
 Frontend supports three city scope modes in the build form: all cities, predefined group, and manual selection.
 Frontend also supports two answer modes: `Aggregate Mode` and `City-by-City Mode` (sent as `analysis_mode` in run requests).
 Clicking `Chat About the Answer` switches to a dedicated chat workspace (not a chat modal).
 Document and chat citations render as compact city labels; clicking a label loads and shows only the source quote.
+When `chat.followup_search_enabled` is `true`, the chat router may run a synchronous one-city markdown-only follow-up search, attach the resulting follow-up bundle to the session, and keep citations clickable for both base runs and chat-owned follow-up bundles.
+The follow-up router is intentionally lightweight: it sees a bounded payload with recent history plus compact context summaries, and each source summary may include only a capped subset of excerpts. This trim exists to keep the routing step cheap and stable; the router is only deciding whether the current context is clearly sufficient, whether a fresh one-city search is needed, whether the request is out of scope, or whether city clarification is required.
+This means the router is deliberately conservative. If the summarized excerpts are not clearly enough to answer from context, it should prefer a fresh one-city search instead of assuming the answer is absent.
+This trim applies only to the routing step. When chat actually answers from context, the answering path still uses the full loaded chat sources rather than the router's reduced summary payload.
+Follow-up search stays conservative: it never launches a multi-city refresh, and failed follow-up searches return a limitation message instead of a guessed answer.
+When chat needs a single city before searching, the backend sends clarification metadata and the frontend opens a city-picker popup that resubmits the original question with the selected city directly into one-city follow-up search.
+When a direct chat prompt would overflow, the backend now falls back to an evidence-only map-reduce flow built from compact excerpt evidence and caches that stripped chat artifact under `output/<run_id>/chat_cache/evidence_chunks.json`.
+The parent/base run stays pinned in chat context selection, manual run selections may exceed the direct prompt cap, and auto-added follow-up bundles are still trimmed first.
 The `Load Previous Answer` picker reads `run_id` + `question` from `GET /api/v1/runs`, then loads selected run artifacts through the standard run endpoints.
+`NEXT_PUBLIC_FRONTEND_MODE` sets the default frontend surface, and the page header always exposes a persistent browser toggle between `standard` and `dev`.
 
-Hidden but implemented features (buttons temporarily hidden):
+Dev-mode frontend features:
 
 - `Assumptions Review` workspace: `Find Missing Data` runs two LLM passes (extract + verification), missing items are editable by city, and `Regenerate` returns revised content without persisting assumptions by default.
 - `Manage Contexts` in chat workspace: switching/combining multiple completed run contexts with token-cap enforcement.
-- Frontend user-owned OpenRouter key controls: `OpenRouter API Key (Optional)`, `Use This Key`, and `Clear` are implemented but hidden in the current UI; API-level support remains available via `X-OpenRouter-Api-Key`.
-- Chat token metrics in UI (`total_tokens`, `token_cap`, and per-context token counts) are implemented but hidden for regular users; planned to be shown in a future dev mode.
+- Chat token metrics in UI (`prompt_context_tokens`, `token_cap`, and per-context context-token counts).
+- Read-only `run_id` display with a copy action for quick run identification.
+- Frontend user-owned OpenRouter key controls: `OpenRouter API Key (Optional)`, `Use This Key`, and `Clear`; the override stays in memory for the current tab and is not stored in localStorage.
 
 Example file is available at `frontend/.env.example`.
 
@@ -541,7 +749,7 @@ python -m backend.scripts.test_db_connection
 Artifacts are written under `output/<run_id>/`:
 
 - `run.json`: machine-readable run metadata (status, timestamps, artifacts, decisions), including `inputs.analysis_mode` and `artifacts.error_log` when available.
-- `run.log`: detailed runtime logs, including per-agent `LLM_USAGE` lines, retry reason lines (`RETRY_EVENT`/`RETRY_EXHAUSTED` with plain-text fields such as `reason`, `http_status`, `rate_limited`), and writer city-citation coverage checkpoints (`WRITER_CITATION_COVERAGE`, with `coverage_ratio` such as `33/33`).
+- `run.log`: detailed runtime logs, including per-agent `LLM_USAGE` lines, chat prompt-window diagnostics (`Context chat reply plan`, `Context chat direct request`, with fitted source ids and token-component counts), retry reason lines (`RETRY_EVENT`/`RETRY_EXHAUSTED` with plain-text fields such as `reason`, `http_status`, `rate_limited`), and writer city-citation coverage checkpoints (`WRITER_CITATION_COVERAGE`, with `coverage_ratio` such as `33/33`).
 - `error_log.txt`: extracted error-focused log view from `run.log` (`ERROR`, `CRITICAL`, and exhausted retry events).
 - `run_summary.txt`: human-readable consolidated report. Header includes `Started`, `Completed`, and explicit `Total runtime` in seconds, plus `LLM Usage` totals/per-agent. It also captures an input snapshot (`initial question`, `refined question`, `selected cities` planned/found, markdown dir/file/chunk/excerpt counts) and a `MARKDOWN_FAILURE_SUMMARY` aggregated from batch failures.
 - `context_bundle.json`: payload passed between agents (`sql`, `markdown`, `research_question`, `analysis_mode`, final path).

@@ -1,0 +1,223 @@
+import json
+from pathlib import Path
+
+import pytest
+
+from backend.api.services.chat_reply_helpers import build_router_payload
+from backend.api.services.models import LoadedChatSource
+from backend.modules.orchestrator import agent as orchestrator_agent
+from backend.modules.orchestrator.models import ChatFollowupDecision
+from backend.utils.config import (
+    AgentConfig,
+    AssumptionsReviewerConfig,
+    AppConfig,
+    ChatConfig,
+    MarkdownResearcherConfig,
+    OrchestratorConfig,
+    RetryConfig,
+    SqlResearcherConfig,
+)
+
+
+class _FakeRunResult:
+    def __init__(self, final_output: ChatFollowupDecision) -> None:
+        self.final_output = final_output
+
+
+def _markdown_researcher_config() -> MarkdownResearcherConfig:
+    return MarkdownResearcherConfig(
+        model="test-model",
+        chunk_overlap_tokens=2000,
+        batch_max_chunks=32,
+        max_workers=8,
+        request_backoff_base_seconds=0.5,
+        request_backoff_max_seconds=2.0,
+    )
+
+
+def _chat_config() -> ChatConfig:
+    return ChatConfig(
+        model="test-model",
+        provider_timeout_seconds=60.0,
+        followup_router_max_history_messages=6,
+        followup_router_max_excerpts_per_source=50,
+    )
+
+
+def _build_test_config(tmp_path: Path) -> AppConfig:
+    return AppConfig(
+        orchestrator=OrchestratorConfig(
+            model="test-model",
+            context_bundle_name="context_bundle.json",
+        ),
+        sql_researcher=SqlResearcherConfig(model="test-model"),
+        markdown_researcher=_markdown_researcher_config(),
+        writer=AgentConfig(model="test-model"),
+        chat=_chat_config(),
+        assumptions_reviewer=AssumptionsReviewerConfig(model="test-model"),
+        retry=RetryConfig(backoff_base_seconds=1.0, backoff_max_seconds=30.0),
+        runs_dir=tmp_path / "output",
+        markdown_dir=tmp_path / "documents",
+        enable_sql=False,
+    )
+
+
+@pytest.mark.parametrize(
+    ("decision", "expected_action"),
+    [
+        (
+            ChatFollowupDecision(
+                action="answer_from_context",
+                reason="Existing excerpts already answer the request.",
+                confidence=0.9,
+            ),
+            "answer_from_context",
+        ),
+        (
+            ChatFollowupDecision(
+                action="out_of_scope",
+                reason="The message is unrelated to the report context.",
+                confidence=0.95,
+            ),
+            "out_of_scope",
+        ),
+        (
+            ChatFollowupDecision(
+                action="search_single_city",
+                reason="Fresh Munich context is required.",
+                target_city="Munich",
+                rewritten_question="What does Munich report?",
+                confidence=0.8,
+            ),
+            "search_single_city",
+        ),
+        (
+            ChatFollowupDecision(
+                action="needs_city_clarification",
+                reason="A new search is needed but the city is ambiguous.",
+                confidence=0.7,
+            ),
+            "needs_city_clarification",
+        ),
+    ],
+)
+def test_route_chat_followup_returns_structured_decision(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+    decision: ChatFollowupDecision,
+    expected_action: str,
+) -> None:
+    config = _build_test_config(tmp_path)
+    payload = {
+        "user_message": "Tell me more about Munich.",
+        "original_question": "Build doc",
+        "history": [{"role": "user", "content": "Start here."}],
+        "contexts": [],
+    }
+    sentinel_agent = object()
+    captured_input: dict[str, object] = {}
+
+    monkeypatch.setattr(
+        orchestrator_agent,
+        "build_chat_followup_router_agent",
+        lambda *_args, **_kwargs: sentinel_agent,
+    )
+
+    def _fake_run_agent_sync(
+        agent: object,
+        input_text: str,
+        max_turns: int,
+        log_llm_payload: bool,
+    ) -> _FakeRunResult:
+        assert agent is sentinel_agent
+        assert max_turns == config.retry.max_attempts
+        assert not log_llm_payload
+        captured_input.update(json.loads(input_text))
+        return _FakeRunResult(decision)
+
+    monkeypatch.setattr(orchestrator_agent, "run_agent_sync", _fake_run_agent_sync)
+
+    result = orchestrator_agent.route_chat_followup(
+        payload=payload,
+        config=config,
+        api_key="test-key",
+    )
+
+    assert captured_input == payload
+    assert result.action == expected_action
+    assert result == decision
+
+
+def test_build_router_payload_bounds_history_and_omits_internal_ids() -> None:
+    source = LoadedChatSource(
+        source_type="run",
+        source_id="run-parent",
+        question="Build doc",
+        final_document="",
+        context_bundle={
+            "markdown": {
+                "selected_city_names": ["Munich"],
+                "inspected_city_names": ["Munich"],
+                "excerpts": [
+                    {
+                        "city_name": "Munich",
+                        "quote": "Munich quote",
+                        "partial_answer": "Munich partial answer",
+                    }
+                ],
+            }
+        },
+    )
+    payload = build_router_payload(
+        user_message="Tell me more about Munich.",
+        original_question="Build doc",
+        history=[
+            {"role": "user", "content": "First"},
+            {"role": "assistant", "content": "Second"},
+            {"role": "user", "content": "Third"},
+        ],
+        sources=[source],
+        max_history_messages=2,
+        max_excerpts_per_source=50,
+    )
+
+    assert payload["history"] == [
+        {"role": "assistant", "content": "Second"},
+        {"role": "user", "content": "Third"},
+    ]
+    assert "selected_run_ids" not in payload
+    assert "selected_followup_bundle_ids" not in payload
+    assert len(payload["contexts"]) == 1
+    context = payload["contexts"][0]
+    assert context["source_type"] == "run"
+    assert context["question"] == "Build doc"
+    assert "source_id" not in context
+
+
+def test_route_chat_followup_rejects_unstructured_output(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    config = _build_test_config(tmp_path)
+    sentinel_agent = object()
+
+    class _UnexpectedResult:
+        final_output = {"action": "answer_from_context"}
+
+    monkeypatch.setattr(
+        orchestrator_agent,
+        "build_chat_followup_router_agent",
+        lambda *_args, **_kwargs: sentinel_agent,
+    )
+    monkeypatch.setattr(
+        orchestrator_agent,
+        "run_agent_sync",
+        lambda *_args, **_kwargs: _UnexpectedResult(),
+    )
+
+    with pytest.raises(ValueError, match="structured decision"):
+        orchestrator_agent.route_chat_followup(
+            payload={"user_message": "Hello"},
+            config=config,
+            api_key="test-key",
+        )

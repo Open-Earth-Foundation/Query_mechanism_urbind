@@ -58,6 +58,48 @@ def _dedupe_preserve_order(values: list[str]) -> list[str]:
     return deduped
 
 
+def _validate_or_backfill_batch_decisions(
+    *,
+    output: MarkdownResearchResult,
+    input_chunk_ids: list[str],
+    strict_decision_audit: bool,
+) -> DecisionValidationResult:
+    """Validate batch decisions and backfill missing partitions in non-strict mode."""
+    accepted_chunk_ids = _dedupe_preserve_order(output.accepted_chunk_ids)
+    rejected_chunk_ids = _dedupe_preserve_order(output.rejected_chunk_ids)
+
+    if not strict_decision_audit:
+        input_id_set = set(input_chunk_ids)
+        excerpt_source_ids = _dedupe_preserve_order(
+            [
+                source_chunk_id.strip()
+                for excerpt in output.excerpts
+                for source_chunk_id in excerpt.source_chunk_ids
+                if source_chunk_id.strip() in input_id_set
+            ]
+        )
+        accepted_chunk_ids = _dedupe_preserve_order(
+            [*accepted_chunk_ids, *excerpt_source_ids]
+        )
+        accepted_id_set = set(accepted_chunk_ids)
+        rejected_chunk_ids = [
+            chunk_id
+            for chunk_id in rejected_chunk_ids
+            if chunk_id not in accepted_id_set
+        ]
+        decided_ids = accepted_id_set | set(rejected_chunk_ids)
+        rejected_chunk_ids.extend(
+            chunk_id for chunk_id in input_chunk_ids if chunk_id not in decided_ids
+        )
+
+    return validate_batch_decisions(
+        input_chunk_ids=input_chunk_ids,
+        accepted_chunk_ids=accepted_chunk_ids,
+        rejected_chunk_ids=rejected_chunk_ids,
+        excerpts=output.excerpts,
+    )
+
+
 def build_markdown_agent(config: AppConfig, api_key: str) -> Agent:
     """Build the markdown researcher agent with structured output and forced tool calls."""
     prompt_path = (
@@ -195,6 +237,7 @@ def extract_markdown_excerpts(
             backoff_base_seconds=config.retry.backoff_base_seconds,
             backoff_max_seconds=config.retry.backoff_max_seconds,
         )
+        strict_decision_audit = config.markdown_researcher.strict_decision_audit
         max_attempts = retry_settings.max_attempts
         markdown_max_turns = max(config.markdown_researcher.max_turns, 1)
         run_result = None
@@ -222,11 +265,10 @@ def extract_markdown_excerpts(
                     if output.error is None:
                         retryable_bad_output_reason = "status_error_without_error"
                 else:
-                    decision_validation = validate_batch_decisions(
+                    decision_validation = _validate_or_backfill_batch_decisions(
                         input_chunk_ids=input_chunk_ids,
-                        accepted_chunk_ids=output.accepted_chunk_ids,
-                        rejected_chunk_ids=output.rejected_chunk_ids,
-                        excerpts=output.excerpts,
+                        output=output,
+                        strict_decision_audit=strict_decision_audit,
                     )
                     if not decision_validation.is_valid:
                         retryable_bad_output_reason = (

@@ -109,6 +109,25 @@ class RunReferenceListResponse(BaseModel):
     references: list[RunReferenceItem]
 
 
+class SourceChunkItem(BaseModel):
+    """Single resolved markdown chunk used for source expansion UI."""
+
+    chunk_id: str
+    content: str
+    city_name: str | None = None
+    source_path: str | None = None
+    heading_path: str | None = None
+    block_type: str | None = None
+
+
+class SourceChunkListResponse(BaseModel):
+    """Response body for run-scoped source chunk lookup."""
+
+    run_id: str
+    chunk_count: int
+    chunks: list[SourceChunkItem]
+
+
 class RunSummary(BaseModel):
     """Minimal run metadata used by run picker UI."""
 
@@ -176,6 +195,14 @@ class CityGroupListResponse(BaseModel):
 
 
 ChatRole = Literal["user", "assistant"]
+ChatJobStatus = Literal["queued", "running", "completed", "failed"]
+ChatFollowupAction = Literal[
+    "answer_from_context",
+    "search_single_city",
+    "out_of_scope",
+    "needs_city_clarification",
+]
+ChatCitationSourceType = Literal["run", "followup_bundle"]
 
 
 class ChatCitation(BaseModel):
@@ -183,8 +210,19 @@ class ChatCitation(BaseModel):
 
     ref_id: str
     city_name: str
-    source_run_id: str
+    source_type: ChatCitationSourceType
+    source_id: str
     source_ref_id: str
+
+
+class ChatRoutingMetadata(BaseModel):
+    """Routing metadata persisted for assistant follow-up messages."""
+
+    action: ChatFollowupAction
+    reason: str
+    target_city: str | None = None
+    bundle_id: str | None = None
+    pending_user_message: str | None = None
 
 
 class ChatMessage(BaseModel):
@@ -195,6 +233,7 @@ class ChatMessage(BaseModel):
     created_at: datetime
     citations: list[ChatCitation] | None = None
     citation_warning: str | None = None
+    routing: ChatRoutingMetadata | None = None
 
 
 class CreateChatSessionRequest(BaseModel):
@@ -205,6 +244,15 @@ class CreateChatSessionRequest(BaseModel):
     conversation_id: str | None = None
 
 
+class ChatJobHandle(BaseModel):
+    """Minimal chat-job handle returned for polling and session resume."""
+
+    job_id: str
+    job_number: int
+    status: ChatJobStatus
+    status_url: str
+
+
 class ChatSessionResponse(BaseModel):
     """Response body with chat session metadata and transcript."""
 
@@ -212,6 +260,7 @@ class ChatSessionResponse(BaseModel):
     conversation_id: str
     created_at: datetime
     updated_at: datetime
+    pending_job: ChatJobHandle | None = None
     messages: list[ChatMessage]
 
 
@@ -235,6 +284,20 @@ class ChatContextSummary(BaseModel):
     document_tokens: int
     bundle_tokens: int
     total_tokens: int
+    prompt_context_tokens: int
+    prompt_context_kind: Literal["citation_catalog", "serialized_contexts"] | None = None
+
+
+class ChatFollowupBundleSummary(BaseModel):
+    """Auto-attached follow-up excerpt bundle for one chat session."""
+
+    bundle_id: str
+    target_city: str
+    excerpt_count: int
+    total_tokens: int
+    prompt_context_tokens: int
+    prompt_context_kind: Literal["citation_catalog", "serialized_contexts"] | None = None
+    created_at: datetime
 
 
 class ChatContextCatalogResponse(BaseModel):
@@ -260,9 +323,13 @@ class ChatSessionContextsResponse(BaseModel):
     conversation_id: str
     context_run_ids: list[str]
     contexts: list[ChatContextSummary]
+    followup_bundles: list[ChatFollowupBundleSummary] = Field(default_factory=list)
     total_tokens: int
+    prompt_context_tokens: int
+    prompt_context_kind: Literal["citation_catalog", "serialized_contexts"] | None = None
     token_cap: int
     excluded_context_run_ids: list[str]
+    excluded_followup_bundle_ids: list[str] = Field(default_factory=list)
     is_capped: bool
 
 
@@ -272,15 +339,56 @@ class SendChatMessageRequest(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     content: str = Field(min_length=1)
+    clarification_city: str | None = None
 
 
-class SendChatMessageResponse(BaseModel):
-    """Response body after assistant generates a reply."""
+class SendChatMessageCompletedResponse(BaseModel):
+    """Response body after assistant generates a synchronous reply."""
 
+    mode: Literal["completed"] = "completed"
     run_id: str
     conversation_id: str
     user_message: ChatMessage
     assistant_message: ChatMessage
+
+
+class ChatMessageJobAcceptedResponse(BaseModel):
+    """Response body after accepting one queued split-mode chat job."""
+
+    mode: Literal["queued"] = "queued"
+    run_id: str
+    conversation_id: str
+    user_message: ChatMessage
+    job: ChatJobHandle
+    routing: ChatRoutingMetadata | None = None
+
+
+SendChatMessageResponse = SendChatMessageCompletedResponse | ChatMessageJobAcceptedResponse
+
+
+class ChatJobStatusResponse(BaseModel):
+    """Response body for chat-job polling."""
+
+    run_id: str
+    conversation_id: str
+    job_id: str
+    job_number: int
+    status: ChatJobStatus
+    created_at: datetime
+    started_at: datetime | None = None
+    completed_at: datetime | None = None
+    finish_reason: str | None = None
+    error: RunError | None = None
+
+
+class ChatFollowupReferenceListResponse(BaseModel):
+    """Response body for one chat follow-up bundle reference list."""
+
+    run_id: str
+    conversation_id: str
+    bundle_id: str
+    reference_count: int
+    references: list[RunReferenceItem]
 
 
 __all__ = [
@@ -295,6 +403,8 @@ __all__ = [
     "RunReferenceResponse",
     "RunReferenceItem",
     "RunReferenceListResponse",
+    "SourceChunkItem",
+    "SourceChunkListResponse",
     "RunSummary",
     "RunListResponse",
     "MissingDataItem",
@@ -304,15 +414,25 @@ __all__ = [
     "CityGroup",
     "CityGroupListResponse",
     "ChatRole",
+    "ChatJobStatus",
+    "ChatFollowupAction",
+    "ChatCitationSourceType",
     "ChatCitation",
+    "ChatRoutingMetadata",
     "ChatMessage",
     "CreateChatSessionRequest",
+    "ChatJobHandle",
     "ChatSessionResponse",
     "ChatSessionListResponse",
     "ChatContextSummary",
+    "ChatFollowupBundleSummary",
     "ChatContextCatalogResponse",
     "UpdateChatContextsRequest",
     "ChatSessionContextsResponse",
     "SendChatMessageRequest",
+    "SendChatMessageCompletedResponse",
+    "ChatMessageJobAcceptedResponse",
     "SendChatMessageResponse",
+    "ChatJobStatusResponse",
+    "ChatFollowupReferenceListResponse",
 ]

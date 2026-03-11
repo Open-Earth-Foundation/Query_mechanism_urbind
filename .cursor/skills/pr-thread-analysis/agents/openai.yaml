@@ -1,0 +1,4 @@
+interface:
+  display_name: "PR Thread Analysis"
+  short_description: "Review unresolved PR threads"
+  default_prompt: "Use $pr-thread-analysis to explain unresolved PR review threads with exact quotes, current code snippets, and fix recommendations."

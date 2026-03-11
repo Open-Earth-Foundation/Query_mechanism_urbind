@@ -88,7 +88,6 @@ class RunExecutor:
         try:
             logger.info("Run execution started run_id=%s", run_id)
             config = load_config(Path(command.config_path) if command.config_path else None)
-            config.enable_sql = False
             base_markdown_dir = (
                 Path(command.markdown_path) if command.markdown_path else config.markdown_dir
             )

@@ -300,10 +300,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 0.75rem;
   margin-bottom: 0.5rem;
 }
 
+.citation-popover-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.citation-popover-action,
 .citation-popover-close {
   border: 1px solid #d9e2f2;
   border-radius: 0.4rem;
@@ -314,6 +320,11 @@ body {
   cursor: pointer;
 }
 
+.citation-popover-action:hover,
+.citation-popover-close:hover {
+  background: #eef4ff;
+}
+
 .citation-popover-body {
   font-size: 0.87rem;
   line-height: 1.5;
@@ -322,6 +333,46 @@ body {
 
 .citation-popover-body p {
   margin: 0;
+}
+
+.citation-popover-expanded {
+  margin-top: 0.7rem;
+  padding-top: 0.7rem;
+  border-top: 1px solid #e6edf8;
+}
+
+.citation-popover-chunks {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.citation-popover-chunk {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.citation-popover-chunk-label {
+  margin: 0;
+  font-size: 0.73rem;
+  font-weight: 600;
+  color: #4e5e76;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.citation-popover-chunk-content {
+  margin: 0;
+  padding: 0.65rem;
+  overflow-x: auto;
+  border: 1px solid #e6edf8;
+  border-radius: 0.45rem;
+  background: #f8fbff;
+  color: #1d2737;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: var(--font-source-serif), Georgia, serif;
 }
 
 .citation-popover-muted {
@@ -339,6 +390,7 @@ body {
 .chat-markdown {
   color: #1d2737;
   line-height: 1.65;
+  min-width: 0;
 }
 
 .chat-markdown > :first-child {
@@ -387,6 +439,17 @@ body {
   color: #0f4a9d;
   text-decoration: underline;
   text-underline-offset: 2px;
+}
+
+.chat-markdown .markdown-table-wrap {
+  max-width: 100%;
+  overscroll-behavior-x: contain;
+}
+
+.chat-markdown .markdown-table {
+  width: max-content;
+  min-width: 100%;
+  table-layout: auto;
 }
 
 .chat-thinking-dots {

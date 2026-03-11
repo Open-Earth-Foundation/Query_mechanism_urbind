@@ -7,13 +7,8 @@ import pytest
 
 from backend.modules.writer import agent as writer_agent
 from backend.modules.writer.models import WriterOutput
-from backend.utils.config import (
-    WriterConfig,
-    AppConfig,
-    MarkdownResearcherConfig,
-    OrchestratorConfig,
-    SqlResearcherConfig,
-)
+from backend.utils.config import AppConfig
+from tests.support import build_test_app_config
 
 
 class _FakeRunResult:
@@ -36,14 +31,8 @@ def _extract_coverage_payloads(records: list[logging.LogRecord]) -> list[dict[st
 
 
 def _build_test_config(tmp_path: Path) -> AppConfig:
-    return AppConfig(
-        orchestrator=OrchestratorConfig(
-            model="test-model",
-            context_bundle_name="context_bundle.json",
-        ),
-        sql_researcher=SqlResearcherConfig(model="test-model"),
-        markdown_researcher=MarkdownResearcherConfig(model="test-model"),
-        writer=WriterConfig(model="test-model"),
+    """Build the writer test config with the required agent sections."""
+    return build_test_app_config(
         runs_dir=tmp_path / "output",
         markdown_dir=tmp_path / "documents",
         enable_sql=False,

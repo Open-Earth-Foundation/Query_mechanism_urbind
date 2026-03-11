@@ -6,6 +6,7 @@ from pathlib import Path
 from agents import Agent, function_tool
 
 from backend.modules.orchestrator.models import (
+    ChatFollowupDecision,
     OrchestratorDecision,
     ResearchQuestionRefinement,
 )
@@ -89,6 +90,43 @@ def build_research_question_agent(config: AppConfig, api_key: str) -> Agent:
     )
 
 
+def build_chat_followup_router_agent(config: AppConfig, api_key: str) -> Agent:
+    """Build the orchestrator-style agent for chat follow-up routing."""
+    prompt_path = (
+        Path(__file__).resolve().parents[2]
+        / "prompts"
+        / "chat_followup_router_system.md"
+    )
+    instructions = load_prompt(prompt_path)
+    model = build_openrouter_model(
+        config.orchestrator.model,
+        api_key,
+        config.openrouter_base_url,
+        client_max_retries=max(config.retry.max_attempts - 1, 0),
+    )
+    settings = build_model_settings(
+        config.orchestrator.temperature,
+        config.orchestrator.max_output_tokens,
+        reasoning_effort=config.orchestrator.reasoning_effort,
+    )
+
+    @function_tool
+    def submit_chat_followup_decision(
+        decision: ChatFollowupDecision,
+    ) -> ChatFollowupDecision:
+        return decision
+
+    return Agent(
+        name="Chat Follow-up Router",
+        instructions=instructions,
+        model=model,
+        model_settings=settings,
+        tools=[submit_chat_followup_decision],
+        output_type=ChatFollowupDecision,
+        tool_use_behavior="stop_on_first_tool",
+    )
+
+
 def decide_next_action(
     question: str,
     context_bundle: dict,
@@ -120,6 +158,26 @@ def decide_next_action(
     if isinstance(output, OrchestratorDecision):
         return output
     raise ValueError("Orchestrator did not return a structured decision.")
+
+
+def route_chat_followup(
+    payload: dict[str, object],
+    config: AppConfig,
+    api_key: str,
+    log_llm_payload: bool = False,
+) -> ChatFollowupDecision:
+    """Return the structured routing decision for one chat follow-up message."""
+    agent = build_chat_followup_router_agent(config, api_key)
+    result = run_agent_sync(
+        agent,
+        json.dumps(payload, ensure_ascii=False),
+        max_turns=config.retry.max_attempts,
+        log_llm_payload=log_llm_payload,
+    )
+    output = result.final_output
+    if isinstance(output, ChatFollowupDecision):
+        return output
+    raise ValueError("Chat follow-up router did not return a structured decision.")
 
 
 def refine_research_question(
@@ -155,8 +213,10 @@ def refine_research_question(
 
 
 __all__ = [
+    "build_chat_followup_router_agent",
     "build_orchestrator_agent",
     "build_research_question_agent",
     "decide_next_action",
     "refine_research_question",
+    "route_chat_followup",
 ]
