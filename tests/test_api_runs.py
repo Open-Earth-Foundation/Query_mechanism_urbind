@@ -12,24 +12,14 @@ from fastapi.testclient import TestClient
 from backend.api.main import create_app
 from backend.api.services.run_store import TERMINAL_STATUSES
 from backend.modules.markdown_researcher.services import build_markdown_chunks_for_file
-from backend.utils.config import (
-    AgentConfig,
-    AppConfig,
-    MarkdownResearcherConfig,
-    OrchestratorConfig,
-    SqlResearcherConfig,
-)
+from backend.utils.config import AppConfig
 from backend.utils.paths import RunPaths, create_run_paths
+from tests.support import build_test_app_config
 
 
 def _build_config(runs_dir: Path, markdown_dir: Path) -> AppConfig:
-    return AppConfig(
-        orchestrator=OrchestratorConfig(
-            model="test-model", context_bundle_name="context_bundle.json"
-        ),
-        sql_researcher=SqlResearcherConfig(model="test-model"),
-        markdown_researcher=MarkdownResearcherConfig(model="test-model"),
-        writer=AgentConfig(model="test-model"),
+    """Build the API run test config with the required agent sections."""
+    return build_test_app_config(
         runs_dir=runs_dir,
         markdown_dir=markdown_dir,
         enable_sql=False,

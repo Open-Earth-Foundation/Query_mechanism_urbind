@@ -41,9 +41,9 @@ class MarkdownResearcherConfig(AgentConfig):
     batch_max_chunks: int
     batch_max_input_tokens: Optional[int] = None
     batch_overhead_tokens: int = 600
-    max_workers: int
-    request_backoff_base_seconds: float
-    request_backoff_max_seconds: float
+    max_workers: int = 2
+    request_backoff_base_seconds: float = 2.0
+    request_backoff_max_seconds: float = 10.0
 
 
 class ChatConfig(AgentConfig):

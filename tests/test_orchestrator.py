@@ -5,25 +5,43 @@ from pathlib import Path
 
 import pytest
 
-from backend.utils.config import (
-    AppConfig,
-    AgentConfig,
-    MarkdownResearcherConfig,
-    OrchestratorConfig,
-    SqlResearcherConfig,
-)
-from backend.modules.orchestrator.module import run_pipeline
-from backend.modules.orchestrator.models import (
-    ResearchQuestionRefinement,
-)
-from backend.modules.sql_researcher.models import SqlQuery, SqlQueryPlan
 from backend.modules.markdown_researcher.models import (
     MarkdownExcerpt,
     MarkdownResearchResult,
 )
+from backend.modules.orchestrator.models import (
+    ResearchQuestionRefinement,
+)
+from backend.modules.orchestrator.module import run_pipeline
+from backend.modules.sql_researcher.models import SqlQuery, SqlQueryPlan
 from backend.modules.vector_store.models import RetrievedChunk
 from backend.modules.writer.models import WriterOutput
+from backend.utils.config import (
+    AppConfig,
+)
 from backend.utils.logging_config import setup_logger
+from tests.support import build_test_app_config
+
+
+def _build_test_config(
+    *,
+    runs_dir: Path,
+    markdown_dir: Path,
+    source_db_path: Path,
+    enable_sql: bool,
+) -> AppConfig:
+    """Build the orchestrator test config with the current required sections."""
+    return build_test_app_config(
+        orchestrator_model="test",
+        sql_researcher_model="test",
+        markdown_researcher_model="test",
+        writer_model="test",
+        runs_dir=runs_dir,
+        markdown_dir=markdown_dir,
+        source_db_path=source_db_path,
+        enable_sql=enable_sql,
+        sql_researcher_overrides={"max_result_tokens": 100000},
+    )
 
 
 def _stub_sql_plan(
@@ -100,11 +118,7 @@ def test_run_pipeline_creates_artifacts(
     docs_dir.mkdir()
     (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
 
-    config = AppConfig(
-        orchestrator=OrchestratorConfig(model="test", context_bundle_name="context_bundle.json"),
-        sql_researcher=SqlResearcherConfig(model="test", max_result_tokens=100000),
-        markdown_researcher=MarkdownResearcherConfig(model="test"),
-        writer=AgentConfig(model="test"),
+    config = _build_test_config(
         runs_dir=tmp_path / "output",
         source_db_path=db_path,
         markdown_dir=docs_dir,
@@ -135,11 +149,7 @@ def test_run_pipeline_sql_disabled_skips_db(
     docs_dir.mkdir()
     (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
 
-    config = AppConfig(
-        orchestrator=OrchestratorConfig(model="test", context_bundle_name="context_bundle.json"),
-        sql_researcher=SqlResearcherConfig(model="test", max_result_tokens=100000),
-        markdown_researcher=MarkdownResearcherConfig(model="test"),
-        writer=AgentConfig(model="test"),
+    config = _build_test_config(
         runs_dir=tmp_path / "output",
         source_db_path=tmp_path / "missing.db",
         markdown_dir=docs_dir,
@@ -169,11 +179,7 @@ def test_run_pipeline_writes_output_with_sql_disabled(
     docs_dir.mkdir()
     (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
 
-    config = AppConfig(
-        orchestrator=OrchestratorConfig(model="test", context_bundle_name="context_bundle.json"),
-        sql_researcher=SqlResearcherConfig(model="test", max_result_tokens=100000),
-        markdown_researcher=MarkdownResearcherConfig(model="test"),
-        writer=AgentConfig(model="test"),
+    config = _build_test_config(
         runs_dir=tmp_path / "output",
         source_db_path=tmp_path / "missing.db",
         markdown_dir=docs_dir,
@@ -206,11 +212,7 @@ def test_run_pipeline_detaches_run_log_handler(
     docs_dir.mkdir()
     (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
 
-    config = AppConfig(
-        orchestrator=OrchestratorConfig(model="test", context_bundle_name="context_bundle.json"),
-        sql_researcher=SqlResearcherConfig(model="test", max_result_tokens=100000),
-        markdown_researcher=MarkdownResearcherConfig(model="test"),
-        writer=AgentConfig(model="test"),
+    config = _build_test_config(
         runs_dir=tmp_path / "output",
         source_db_path=tmp_path / "missing.db",
         markdown_dir=docs_dir,
@@ -268,11 +270,7 @@ def test_run_pipeline_refines_question_before_markdown(
     docs_dir.mkdir()
     (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
 
-    config = AppConfig(
-        orchestrator=OrchestratorConfig(model="test", context_bundle_name="context_bundle.json"),
-        sql_researcher=SqlResearcherConfig(model="test", max_result_tokens=100000),
-        markdown_researcher=MarkdownResearcherConfig(model="test"),
-        writer=AgentConfig(model="test"),
+    config = _build_test_config(
         runs_dir=tmp_path / "output",
         source_db_path=tmp_path / "missing.db",
         markdown_dir=docs_dir,
@@ -343,11 +341,7 @@ def test_run_pipeline_passes_selected_cities_to_question_refiner(
     docs_dir.mkdir()
     (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
 
-    config = AppConfig(
-        orchestrator=OrchestratorConfig(model="test", context_bundle_name="context_bundle.json"),
-        sql_researcher=SqlResearcherConfig(model="test", max_result_tokens=100000),
-        markdown_researcher=MarkdownResearcherConfig(model="test"),
-        writer=AgentConfig(model="test"),
+    config = _build_test_config(
         runs_dir=tmp_path / "output",
         source_db_path=tmp_path / "missing.db",
         markdown_dir=docs_dir,
@@ -391,11 +385,7 @@ def test_run_pipeline_end_to_end_propagates_query_markdown_and_writer_output(
     docs_dir.mkdir()
     (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
 
-    config = AppConfig(
-        orchestrator=OrchestratorConfig(model="test", context_bundle_name="context_bundle.json"),
-        sql_researcher=SqlResearcherConfig(model="test", max_result_tokens=100000),
-        markdown_researcher=MarkdownResearcherConfig(model="test"),
-        writer=AgentConfig(model="test"),
+    config = _build_test_config(
         runs_dir=tmp_path / "output",
         source_db_path=tmp_path / "missing.db",
         markdown_dir=docs_dir,
@@ -540,11 +530,7 @@ def test_run_pipeline_vector_store_enabled_uses_retriever(
     docs_dir.mkdir()
     (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
 
-    config = AppConfig(
-        orchestrator=OrchestratorConfig(model="test", context_bundle_name="context_bundle.json"),
-        sql_researcher=SqlResearcherConfig(model="test", max_result_tokens=100000),
-        markdown_researcher=MarkdownResearcherConfig(model="test"),
-        writer=AgentConfig(model="test"),
+    config = _build_test_config(
         runs_dir=tmp_path / "output",
         source_db_path=tmp_path / "missing.db",
         markdown_dir=docs_dir,

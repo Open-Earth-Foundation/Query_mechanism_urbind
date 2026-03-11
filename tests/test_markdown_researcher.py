@@ -6,13 +6,8 @@ from pytest import MonkeyPatch
 from backend.modules.markdown_researcher import agent as markdown_agent
 from backend.modules.markdown_researcher.agent import extract_markdown_excerpts
 from backend.modules.markdown_researcher.models import MarkdownExcerpt, MarkdownResearchResult
-from backend.utils.config import (
-    AgentConfig,
-    AppConfig,
-    MarkdownResearcherConfig,
-    OrchestratorConfig,
-    SqlResearcherConfig,
-)
+from backend.utils.config import AppConfig
+from tests.support import build_test_app_config
 
 
 class _FakeRunResult:
@@ -22,16 +17,17 @@ class _FakeRunResult:
 
 
 def _build_test_config() -> AppConfig:
-    return AppConfig(
-        orchestrator=OrchestratorConfig(model="test", context_bundle_name="context_bundle.json"),
-        sql_researcher=SqlResearcherConfig(model="test"),
-        markdown_researcher=MarkdownResearcherConfig(
-            model="test",
-            max_workers=2,
-            request_backoff_base_seconds=0.1,
-            request_backoff_max_seconds=0.1,
-        ),
-        writer=AgentConfig(model="test"),
+    """Build the markdown researcher test config with required sections."""
+    return build_test_app_config(
+        orchestrator_model="test",
+        sql_researcher_model="test",
+        markdown_researcher_model="test",
+        writer_model="test",
+        markdown_researcher_overrides={
+            "max_workers": 2,
+            "request_backoff_base_seconds": 0.1,
+            "request_backoff_max_seconds": 0.1,
+        },
     )
 
 

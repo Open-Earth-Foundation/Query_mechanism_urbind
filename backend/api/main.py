@@ -49,7 +49,7 @@ def _resolve_worker_count(max_workers: int | None) -> int:
     return max(1, max_workers)
 
 
-def _resolve_chat_job_worker_count(max_workers: int | None) -> int:
+def _resolve_chat_job_worker_count() -> int:
     """Resolve dedicated split-mode chat job workers."""
     env_value = os.getenv("API_CHAT_JOB_WORKERS")
     if env_value:
@@ -57,9 +57,7 @@ def _resolve_chat_job_worker_count(max_workers: int | None) -> int:
             return max(1, int(env_value))
         except ValueError:
             logger.warning("Invalid API_CHAT_JOB_WORKERS=%s; falling back to default.", env_value)
-    if max_workers is None:
-        return DEFAULT_API_CHAT_JOB_WORKERS
-    return max(1, max_workers)
+    return DEFAULT_API_CHAT_JOB_WORKERS
 
 
 def _resolve_markdown_dir(markdown_dir: Path | None) -> Path:
@@ -98,7 +96,7 @@ def create_app(
     setup_logger()
     resolved_runs_dir = _resolve_runs_dir(runs_dir)
     resolved_workers = _resolve_worker_count(max_workers)
-    resolved_chat_job_workers = _resolve_chat_job_worker_count(None)
+    resolved_chat_job_workers = _resolve_chat_job_worker_count()
     resolved_markdown_dir = _resolve_markdown_dir(markdown_dir)
     resolved_config_path = _resolve_config_path(config_path)
     resolved_city_groups_path = _resolve_city_groups_path(city_groups_path)

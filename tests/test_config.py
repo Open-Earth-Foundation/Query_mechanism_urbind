@@ -3,7 +3,7 @@ from pathlib import Path
 import pytest
 from pydantic import ValidationError
 
-from backend.utils.config import load_config
+from backend.utils.config import MarkdownResearcherConfig, load_config
 
 
 def _write_minimal_config(tmp_path: Path) -> Path:
@@ -56,6 +56,19 @@ def test_load_config_ignores_removed_vector_store_env_overrides(
     assert config.vector_store.embedding_chunk_tokens == 800
     assert config.vector_store.retrieval_max_distance == 1.0
     assert config.vector_store.embedding_max_input_tokens == 8000
+
+
+def test_markdown_researcher_config_applies_safe_runtime_defaults() -> None:
+    """Markdown researcher direct construction preserves safe defaults."""
+    config = MarkdownResearcherConfig(
+        model="test-model",
+        chunk_overlap_tokens=2000,
+        batch_max_chunks=32,
+    )
+
+    assert config.max_workers == 2
+    assert config.request_backoff_base_seconds == 2.0
+    assert config.request_backoff_max_seconds == 10.0
 
 
 def test_load_config_applies_chroma_persist_path_env_and_derives_manifest_path(
@@ -176,15 +189,25 @@ def test_load_config_reads_agent_reasoning_effort_for_gpt_modules(
                 "  reasoning_effort: high",
                 "markdown_researcher:",
                 "  model: x-ai/grok-4.1-fast",
+                "  chunk_overlap_tokens: 2000",
+                "  batch_max_chunks: 32",
+                "  max_workers: 8",
+                "  request_backoff_base_seconds: 0.5",
+                "  request_backoff_max_seconds: 2.0",
                 "writer:",
                 "  model: openai/gpt-5.2",
                 "  reasoning_effort: high",
                 "chat:",
                 "  model: openai/gpt-5.2",
                 "  reasoning_effort: high",
+                "  provider_timeout_seconds: 60.0",
+                "  followup_router_max_excerpts_per_source: 50",
                 "assumptions_reviewer:",
                 "  model: openai/gpt-5.2",
                 "  reasoning_effort: high",
+                "retry:",
+                "  backoff_base_seconds: 1.0",
+                "  backoff_max_seconds: 30.0",
             ]
         ),
         encoding="utf-8",

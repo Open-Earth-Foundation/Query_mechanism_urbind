@@ -1,6 +1,7 @@
 from pathlib import Path
 
 from backend.modules.markdown_researcher.services import (
+    _resolve_chunk_tokens,
     build_city_batches,
     load_markdown_documents,
     split_documents_by_city,
@@ -66,6 +67,17 @@ def test_load_markdown_documents_adds_stable_chunk_ids(tmp_path: Path) -> None:
     assert [doc["chunk_id"] for doc in first_docs] == [
         doc["chunk_id"] for doc in second_docs
     ]
+
+
+def test_resolve_chunk_tokens_uses_safe_fallback_without_model_limits() -> None:
+    config = MarkdownResearcherConfig(
+        model="test",
+        chunk_overlap_tokens=2000,
+        batch_max_chunks=32,
+        max_chunk_tokens=None,
+    )
+
+    assert _resolve_chunk_tokens(config) == 12_000
 
 
 def test_build_city_batches_respects_city_and_limits() -> None:

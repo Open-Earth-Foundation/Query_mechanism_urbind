@@ -11,6 +11,8 @@ from backend.utils.tokenization import count_tokens, chunk_text, get_max_input_t
 
 logger = logging.getLogger(__name__)
 
+DEFAULT_MARKDOWN_CHUNK_TOKENS = 12_000
+
 
 def _chunk_source_path(path: Path, project_root: Path) -> str:
     """Return project-relative path for stable chunk identifiers."""
@@ -34,9 +36,7 @@ def _resolve_chunk_tokens(config: MarkdownResearcherConfig) -> int:
         return config.max_chunk_tokens
     if max_input_tokens is not None and max_input_tokens > 0:
         return max_input_tokens
-    raise ValueError(
-        "Markdown researcher config must define max_chunk_tokens or a valid model input limit."
-    )
+    return DEFAULT_MARKDOWN_CHUNK_TOKENS
 
 
 def split_documents_by_city(

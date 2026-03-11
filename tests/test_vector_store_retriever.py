@@ -7,13 +7,8 @@ from backend.modules.vector_store.retriever import (
     retrieve_chunks_for_queries,
 )
 from backend.modules.vector_store.manifest import save_manifest
-from backend.utils.config import (
-    AgentConfig,
-    AppConfig,
-    MarkdownResearcherConfig,
-    OrchestratorConfig,
-    SqlResearcherConfig,
-)
+from backend.utils.config import AppConfig
+from tests.support import build_test_app_config
 
 
 def test_as_markdown_documents_maps_required_fields() -> None:
@@ -48,11 +43,12 @@ def test_as_markdown_documents_maps_required_fields() -> None:
 
 
 def _build_test_config() -> AppConfig:
-    config = AppConfig(
-        orchestrator=OrchestratorConfig(model="test", context_bundle_name="context_bundle.json"),
-        sql_researcher=SqlResearcherConfig(model="test"),
-        markdown_researcher=MarkdownResearcherConfig(model="test"),
-        writer=AgentConfig(model="test"),
+    """Build the retriever test config with current required sections."""
+    config = build_test_app_config(
+        orchestrator_model="test",
+        sql_researcher_model="test",
+        markdown_researcher_model="test",
+        writer_model="test",
     )
     config.vector_store.retrieval_fallback_min_chunks_per_city_query = 2
     config.vector_store.retrieval_max_chunks_per_city_query = 3
