@@ -11,17 +11,9 @@ import pytest
 from fastapi.testclient import TestClient
 
 from backend.api.services.chat_followup_research import followup_bundle_dir
-from backend.utils.config import (
-    AgentConfig,
-    AppConfig,
-    AssumptionsReviewerConfig,
-    ChatConfig,
-    MarkdownResearcherConfig,
-    OrchestratorConfig,
-    RetryConfig,
-    SqlResearcherConfig,
-)
+from backend.utils.config import AppConfig
 from backend.utils.paths import RunPaths, create_run_paths
+from tests.support import build_test_app_config
 
 
 def build_config(
@@ -36,38 +28,20 @@ def build_config(
     multi_pass_chunk_tokens: int = 150_000,
 ) -> AppConfig:
     """Build the default API chat test configuration."""
-    return AppConfig(
-        orchestrator=OrchestratorConfig(
-            model="test-model",
-            context_bundle_name="context_bundle.json",
-        ),
-        sql_researcher=SqlResearcherConfig(model="test-model"),
-        markdown_researcher=MarkdownResearcherConfig(
-            model="test-model",
-            chunk_overlap_tokens=2000,
-            batch_max_chunks=32,
-            max_workers=8,
-            request_backoff_base_seconds=0.5,
-            request_backoff_max_seconds=2.0,
-        ),
-        writer=AgentConfig(model="test-model"),
-        assumptions_reviewer=AssumptionsReviewerConfig(model="openai/gpt-5.2"),
-        chat=ChatConfig(
-            model="openai/gpt-5.2",
-            max_history_messages=10,
-            max_context_total_tokens=max_context_total_tokens,
-            min_prompt_token_cap=min_prompt_token_cap,
-            provider_timeout_seconds=60.0,
-            prompt_token_buffer=prompt_token_buffer,
-            multi_pass_chunk_tokens=multi_pass_chunk_tokens,
-            followup_search_enabled=followup_search_enabled,
-            max_auto_followup_bundles=max_auto_followup_bundles,
-            followup_router_max_excerpts_per_source=50,
-        ),
-        retry=RetryConfig(backoff_base_seconds=1.0, backoff_max_seconds=30.0),
+    return build_test_app_config(
+        assumptions_reviewer_model="openai/gpt-5.2",
         runs_dir=runs_dir,
         markdown_dir=markdown_dir,
         enable_sql=False,
+        chat_overrides={
+            "max_history_messages": 10,
+            "max_context_total_tokens": max_context_total_tokens,
+            "min_prompt_token_cap": min_prompt_token_cap,
+            "prompt_token_buffer": prompt_token_buffer,
+            "multi_pass_chunk_tokens": multi_pass_chunk_tokens,
+            "followup_search_enabled": followup_search_enabled,
+            "max_auto_followup_bundles": max_auto_followup_bundles,
+        },
     )
 
 
