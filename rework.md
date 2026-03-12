@@ -1,9 +1,5 @@
 # Query Input Rework
 
-## Goal
-
-Document the current query flow, capture what the Jira ticket plus Slack discussion are actually asking for, and outline how to implement the change without changing the retriever's internal behavior.
-
 ## Current state
 
 - The public run entrypoints currently accept a single user question.
@@ -35,38 +31,42 @@ Document the current query flow, capture what the Jira ticket plus Slack discuss
 
 - Follow-up chat research currently still uses the same automatic refinement approach.
   - File: `backend/api/services/chat_followup_research.py`
-  - This is related behavior, but the ticket and Slack discussion are focused on the main run flow.
+  - This is related behavior, but this rework is focused on the main run flow.
 
-## What the ticket and Slack conversation are saying
+## What we want to do
 
 - We are not changing the retriever logic.
   - The backend should still receive up to three queries and run retrieval exactly as it does now.
 
 - We are changing where those queries come from.
-  - Today:
-    - query 1 is LLM-adjusted
-    - query 2 is LLM-generated keyword-style retrieval input
-    - query 3 is LLM-generated evidence-style retrieval input
-  - Target:
-    - query 1 is the user's main query, used directly
-    - query 2 is an optional user-provided keyword query
-    - query 3 is an optional user-provided evidence or metrics query
+  - Standard mode:
+    - keep the current behavior where the backend refines the main question and generates the second and third retrieval queries
+  - Dev mode:
+    - input 1 is the user's main query, used directly
+    - input 2 is an optional user-provided second query
+    - input 3 is an optional user-provided third query
+  - In practice:
+    - the user-provided second and third inputs replace today's automatically generated keyword-style and evidence-style retrieval queries
 
-- The automatic LLM rewrite of the main user input should be removed from the main run path.
-  - That includes typo-fixing and city-name cleanup for the primary pipeline question.
+- The automatic LLM rewrite should no longer be the only path through the system.
+  - Standard mode should keep the current automatic query-generation path.
+  - Dev mode should use the primary user question as-is.
+  - In dev mode, that means removing typo-fixing and city-name cleanup from the retrieval-input generation path.
 
 - The "keywords" inputs are not a separate retrieval algorithm.
   - They map to the existing second and third retrieval queries.
   - The retriever still does one vector search per query.
 
-- The frontend should expose two additional input boxes.
-  - The user provides the main question plus optional query 2 and query 3.
-  - Because this is harder for non-technical users, the UI should add guidance text.
+- The frontend should add two more user inputs.
+  - Standard mode should keep those extra inputs hidden.
+  - Dev mode should show the main query plus optional query 2 and query 3.
+  - The UI should include guidance text because this is harder for non-technical users.
 
-- An optional `auto` mode was discussed.
-  - Manual/direct-input mode should be the default.
-  - An optional `auto` or dev-only mode could preserve the current LLM-generated behavior.
-  - That is an extension, not the core of the ticket.
+- A mode split is the clearest way to support both behaviors without changing retrieval.
+  - Standard mode should preserve the current generated-query behavior.
+  - Dev mode should switch to the new direct-input behavior.
+  - The existing frontend dev toggle should control both the visible inputs and the backend query-generation variant.
+  - If both behaviors need to coexist in the same backend contract, use an explicit mode field instead of inferring behavior from missing inputs.
 
 ## Recommended implementation
 
@@ -78,11 +78,12 @@ Document the current query flow, capture what the Jira ticket plus Slack discuss
   - Optional: query 3
 
 - Replace the current unconditional call to `refine_research_question(...)` in the main run path.
-  - Manual mode:
+  - Standard mode:
+    - keep today's refiner behavior
+    - continue generating retrieval queries from the main question
+  - Dev mode:
     - use the main question as the canonical research question
     - build `retrieval_queries` from the direct user inputs
-  - Optional auto mode:
-    - keep today's refiner, but call it only when the mode explicitly requests it
 
 - Keep the existing cleanup behavior that is still useful without an LLM.
   - trim whitespace
@@ -99,7 +100,9 @@ Document the current query flow, capture what the Jira ticket plus Slack discuss
 ### 2. API contract
 
 - Extend the run creation request model with optional second and third queries.
-- If auto mode is included now, add an explicit mode field rather than inferring behavior.
+- Add an explicit mode field so the backend can distinguish the standard and dev paths.
+  - `standard`: preserve the current behavior where the backend refines or generates retrieval queries from the main question.
+  - `dev`: use the provided query inputs directly.
 - Thread those values through the route and background executor into `run_pipeline(...)`.
 
 - Main files:
@@ -114,7 +117,7 @@ Document the current query flow, capture what the Jira ticket plus Slack discuss
   - `--question`
   - `--query-2`
   - `--query-3`
-  - optional `--query-mode manual|auto` if the toggle is included now
+  - optional `--query-mode standard|dev`
 
 - Update the top-level docstring and `argparse` help so the behavior is self-explanatory.
 
@@ -123,15 +126,23 @@ Document the current query flow, capture what the Jira ticket plus Slack discuss
 
 ### 4. Frontend
 
-- Add two optional inputs near the main question.
 - Keep the main question required.
-- Add help text that explains the role of each field in plain language.
-  - Main question: what answer the user wants
-  - Query 2: topic and initiative keywords
-  - Query 3: numbers, budgets, targets, timelines, evidence terms
 
-- If auto mode is included, manual should stay the default.
-- The existing frontend dev toggle is separate today, but it is a likely place to expose advanced behavior if product wants that.
+- Add two additional user inputs for the extra retrieval queries.
+  - Standard mode should hide query 2 and query 3 and keep the current generated-query behavior.
+  - Dev mode should show query 2 and query 3 and use them directly.
+  - Add help text that explains the role of each field in plain language.
+    - Main question: what answer the user wants
+    - Query 2: topic and initiative keywords
+    - Query 3: numbers, budgets, targets, timelines, evidence terms
+
+- Use the existing dev mode to expose advanced controls when needed.
+  - The toggle should switch between the standard and dev query flows.
+  - It can also expose any developer-facing query debugging controls.
+
+- Make the mode behavior explicit in the request payload.
+  - Standard mode should send `standard`.
+  - Dev mode should send `dev`.
 
 - Main files:
   - `frontend/src/app/page.tsx`
@@ -141,13 +152,13 @@ Document the current query flow, capture what the Jira ticket plus Slack discuss
 ### 5. Logging and artifacts
 
 - Current persisted naming still assumes a "refined question".
-- Once manual mode becomes default, those labels become misleading.
+- Those labels become misleading as soon as standard and dev modes coexist.
 - Update artifacts and logs so they clearly distinguish:
   - original question
   - retrieval query 1
   - retrieval query 2
   - retrieval query 3
-  - query source or mode, if we keep manual and auto side by side
+  - query source or mode, if we keep standard and dev side by side
 
 - Main files:
   - `backend/services/run_logger.py`
@@ -165,22 +176,3 @@ Document the current query flow, capture what the Jira ticket plus Slack discuss
   - `tests/test_orchestrator.py`
   - `tests/test_api_runs.py`
   - `tests/test_chat_followup_research.py` only if follow-up behavior changes
-
-## Recommended scope boundary
-
-- In-scope for this rework:
-  - main run pipeline
-  - run API contract
-  - run CLI contract
-  - frontend run form
-
-- Explicitly confirm whether chat follow-up search should stay on automatic refinement for now.
-  - It is currently a separate flow and was not directly covered in the Slack implementation notes.
-
-- If we want the lowest-risk rollout:
-  - first ship manual/direct-input mode
-  - then add optional auto mode as a follow-up if it is still wanted
-
-That sequencing matches the stated goal: keep retrieval behavior the same, but stop making the main run outcome depend on hidden LLM-generated query variants by default.
-
-###TODO app should be adding additional parameters in dev mode like showing us that option. For standard mode we keep current route of pregenerating queries
