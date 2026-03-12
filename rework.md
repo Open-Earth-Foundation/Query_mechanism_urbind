@@ -117,7 +117,10 @@
   - `--question`
   - `--query-2`
   - `--query-3`
-  - optional `--query-mode standard|dev`
+  ##########
+    ###### what would this be used for in the CLI? Its mostly a frontend dev toggle no?
+    ##########
+  - optional `--query-mode standard|dev` 
 
 - Update the top-level docstring and `argparse` help so the behavior is self-explanatory.
 
@@ -132,6 +135,9 @@
   - Standard mode should hide query 2 and query 3 and keep the current generated-query behavior.
   - Dev mode should show query 2 and query 3 and use them directly.
   - Add help text that explains the role of each field in plain language.
+    ########
+    ######## those examples for query 2 and query 3 are for the auto mode only. For the dev mode they code be anything the user envisions to be useful depending on the main query
+    ########
     - Main question: what answer the user wants
     - Query 2: topic and initiative keywords
     - Query 3: numbers, budgets, targets, timelines, evidence terms
@@ -176,3 +182,11 @@
   - `tests/test_orchestrator.py`
   - `tests/test_api_runs.py`
   - `tests/test_chat_followup_research.py` only if follow-up behavior changes
+ 
+
+
+############### Comments
+Additionally we need to make sure that when the user only passes one extra query, that the the second extra query is beeing ignored and the backend is only doing the retrieval based on 
+main and second query.
+Meaning only the main query is mandatory.
+The 2nd and 3rd queries are optional in backend AND frontend and if null (empty) should not lead to any retrieval
