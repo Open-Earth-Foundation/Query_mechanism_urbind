@@ -201,6 +201,64 @@ def test_writer_retries_when_city_citation_coverage_is_missing(
     )
 
 
+def test_writer_treats_city_name_aliases_as_one_city_for_coverage(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+    caplog: pytest.LogCaptureFixture,
+) -> None:
+    """Coverage should not split the same city across hyphen and underscore aliases."""
+    config = _build_test_config(tmp_path)
+    context_bundle: dict[str, object] = {
+        "markdown": {
+            "excerpt_count": 1,
+            "selected_city_names": ["Vitoria-Gasteiz", "Vitoria_Gasteiz"],
+            "excerpts": [
+                {
+                    "ref_id": "ref_1",
+                    "city_name": "Vitoria_Gasteiz",
+                    "city_key": "vitoria-gasteiz",
+                    "quote": "Vitoria evidence.",
+                    "partial_answer": "Vitoria evidence.",
+                }
+            ],
+        }
+    }
+
+    captured_inputs: list[dict[str, object]] = []
+    monkeypatch.setattr(writer_agent, "build_writer_agent", lambda *_args, **_kwargs: object())
+
+    def _fake_run_agent_sync(
+        _agent: object,
+        input_text: str,
+        log_llm_payload: bool,
+        **_kwargs: object,
+    ) -> _FakeRunResult:
+        del log_llm_payload
+        captured_inputs.append(json.loads(input_text))
+        return _FakeRunResult(WriterOutput(content="Vitoria summary [ref_1]"))
+
+    monkeypatch.setattr(writer_agent, "run_agent_sync", _fake_run_agent_sync)
+    caplog.set_level(logging.INFO, logger=writer_agent.__name__)
+
+    output = writer_agent.write_markdown(
+        question="Summarize Vitoria evidence.",
+        context_bundle=context_bundle,
+        config=config,
+        api_key="test-key",
+        log_llm_payload=False,
+        run_id="run-vitoria-alias",
+    )
+
+    assert len(captured_inputs) == 1
+    assert "reconsideration" not in captured_inputs[0]
+    assert "Vitoria summary [ref_1]" in output.content
+    coverage_payloads = _extract_coverage_payloads(caplog.records)
+    assert any(
+        payload.get("status") == "confirmed" and payload.get("coverage_ratio") == "1/1"
+        for payload in coverage_payloads
+    )
+
+
 def test_writer_appends_no_evidence_section_for_selected_city_without_excerpts(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,

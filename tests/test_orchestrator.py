@@ -12,7 +12,7 @@ from backend.modules.markdown_researcher.models import (
 from backend.modules.orchestrator.models import (
     ResearchQuestionRefinement,
 )
-from backend.modules.orchestrator.module import run_pipeline
+from backend.modules.orchestrator.module import _build_retrieval_queries, run_pipeline
 from backend.modules.sql_researcher.models import SqlQuery, SqlQueryPlan
 from backend.modules.vector_store.models import RetrievedChunk
 from backend.modules.writer.models import WriterOutput
@@ -97,6 +97,22 @@ def _reset_root_handlers() -> None:
     for handler in list(root_logger.handlers):
         root_logger.removeHandler(handler)
         handler.close()
+
+
+def test_build_retrieval_queries_trims_dedupes_case_insensitively_and_caps() -> None:
+    assert _build_retrieval_queries(
+        "  Main query  ",
+        "main query",
+        "  Second query  ",
+        "",
+        "SECOND QUERY",
+        "Third query",
+        "Fourth ignored query",
+    ) == [
+        "Main query",
+        "Second query",
+        "Third query",
+    ]
 
 
 def test_run_pipeline_creates_artifacts(
@@ -325,8 +341,27 @@ def test_run_pipeline_refines_question_before_markdown(
         research_payload["canonical_research_query"]
         == "For Munich, list concrete documented initiatives with direct evidence."
     )
+    assert research_payload["query_mode"] == "standard"
+    assert (
+        research_payload["retrieval_query_1"]
+        == "For Munich, list concrete documented initiatives with direct evidence."
+    )
+    assert research_payload["retrieval_query_2"] is None
+    assert research_payload["retrieval_query_3"] is None
     assert "research_question" not in research_payload
     assert "retrieval_query_variants" not in research_payload
+
+    run_log = json.loads(paths.run_log.read_text(encoding="utf-8"))
+    assert run_log["inputs"]["original_question"] == "What initiatives exist for Munich?"
+    assert (
+        run_log["inputs"]["canonical_research_query"]
+        == "For Munich, list concrete documented initiatives with direct evidence."
+    )
+    assert run_log["inputs"]["query_mode"] == "standard"
+    assert (
+        run_log["inputs"]["retrieval_query_1"]
+        == "For Munich, list concrete documented initiatives with direct evidence."
+    )
 
 
 def test_run_pipeline_passes_selected_cities_to_question_refiner(
@@ -637,3 +672,319 @@ def test_run_pipeline_vector_store_enabled_uses_retriever(
         "Munich initiatives charging retrofit policy",
         "Munich charging counts retrofit targets timeline metrics",
     ]
+
+
+def test_run_pipeline_standard_mode_normalizes_generated_retrieval_queries(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.setenv("OPENROUTER_API_KEY", "test")
+
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir()
+    (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
+
+    config = _build_test_config(
+        runs_dir=tmp_path / "output",
+        source_db_path=tmp_path / "missing.db",
+        markdown_dir=docs_dir,
+        enable_sql=False,
+    )
+    config.vector_store.enabled = True
+
+    captured: dict[str, object] = {}
+
+    def _fake_retrieve(
+        queries: list[str],
+        config: AppConfig,
+        docs_dir: Path,
+        selected_cities: list[str] | None,
+    ) -> tuple[list[RetrievedChunk], dict[str, object]]:
+        del config
+        captured["queries"] = queries
+        captured["docs_dir"] = docs_dir
+        captured["selected_cities"] = selected_cities
+        return (
+            [
+                RetrievedChunk(
+                    city_name="Munich",
+                    raw_text="Retriever chunk content",
+                    source_path="documents/Munich.md",
+                    heading_path="H1",
+                    block_type="paragraph",
+                    distance=0.111111,
+                    chunk_id="chunk-1",
+                    metadata={"city_key": "munich"},
+                )
+            ],
+            {"queries": queries, "per_city": []},
+        )
+
+    monkeypatch.setattr(
+        "backend.modules.orchestrator.module.retrieve_chunks_for_queries",
+        _fake_retrieve,
+    )
+
+    def _refine_with_messy_queries(
+        question: str,
+        config: AppConfig,
+        api_key: str,
+        **_kwargs: dict[str, object],
+    ) -> ResearchQuestionRefinement:
+        del question, config, api_key, _kwargs
+        return ResearchQuestionRefinement(
+            research_question="  For Munich, compare retrofit signals with evidence.  ",
+            retrieval_queries=[
+                "for munich, compare retrofit signals with evidence.",
+                "  Retrofit funding deadlines  ",
+                "",
+                "RETROFIT FUNDING DEADLINES",
+                "Third distinct query",
+                "Fourth ignored query",
+            ],
+        )
+
+    paths = run_pipeline(
+        question="What retrofit initiatives exist for Munich?",
+        config=config,
+        sql_plan_func=_stub_sql_plan,
+        markdown_func=_stub_markdown,
+        refine_question_func=_refine_with_messy_queries,
+        writer_func=_stub_writer,
+    )
+
+    expected_queries = [
+        "For Munich, compare retrofit signals with evidence.",
+        "Retrofit funding deadlines",
+        "Third distinct query",
+    ]
+
+    assert paths.final_output.exists()
+    assert captured["queries"] == expected_queries
+
+    research_payload = json.loads(paths.research_question.read_text(encoding="utf-8"))
+    assert research_payload["query_mode"] == "standard"
+    assert research_payload["canonical_research_query"] == expected_queries[0]
+    assert research_payload["retrieval_queries"] == expected_queries
+    assert research_payload["retrieval_query_1"] == expected_queries[0]
+    assert research_payload["retrieval_query_2"] == expected_queries[1]
+    assert research_payload["retrieval_query_3"] == expected_queries[2]
+
+    run_log = json.loads(paths.run_log.read_text(encoding="utf-8"))
+    assert run_log["inputs"]["original_question"] == (
+        "What retrofit initiatives exist for Munich?"
+    )
+    assert run_log["inputs"]["canonical_research_query"] == expected_queries[0]
+    assert run_log["inputs"]["query_mode"] == "standard"
+    assert run_log["inputs"]["retrieval_queries"] == expected_queries
+    assert run_log["inputs"]["retrieval_query_count"] == 3
+    assert run_log["inputs"]["retrieval_query_1"] == expected_queries[0]
+    assert run_log["inputs"]["retrieval_query_2"] == expected_queries[1]
+    assert run_log["inputs"]["retrieval_query_3"] == expected_queries[2]
+
+
+def test_run_pipeline_dev_mode_uses_direct_queries_and_ignores_blanks(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Dev mode should bypass refinement and drop blank optional retrieval queries."""
+    monkeypatch.setenv("OPENROUTER_API_KEY", "test")
+
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir()
+    (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
+
+    config = _build_test_config(
+        runs_dir=tmp_path / "output",
+        source_db_path=tmp_path / "missing.db",
+        markdown_dir=docs_dir,
+        enable_sql=False,
+    )
+    config.vector_store.enabled = True
+
+    captured: dict[str, object] = {}
+
+    def _fake_retrieve(
+        queries: list[str],
+        config: AppConfig,
+        docs_dir: Path,
+        selected_cities: list[str] | None,
+    ) -> tuple[list[RetrievedChunk], dict[str, object]]:
+        del config
+        captured["queries"] = queries
+        captured["docs_dir"] = docs_dir
+        captured["selected_cities"] = selected_cities
+        return (
+            [
+                RetrievedChunk(
+                    city_name="Munich",
+                    raw_text="Retriever chunk content",
+                    source_path="documents/Munich.md",
+                    heading_path="H1",
+                    block_type="paragraph",
+                    distance=0.111111,
+                    chunk_id="chunk-1",
+                    metadata={"city_key": "munich"},
+                )
+            ],
+            {"queries": queries, "per_city": []},
+        )
+
+    monkeypatch.setattr(
+        "backend.modules.orchestrator.module.retrieve_chunks_for_queries",
+        _fake_retrieve,
+    )
+
+    def _refine_should_not_run(
+        question: str,
+        config: AppConfig,
+        api_key: str,
+        **_kwargs: dict[str, object],
+    ) -> ResearchQuestionRefinement:
+        del question, config, api_key, _kwargs
+        raise AssertionError("Question refinement should not run in dev mode.")
+
+    paths = run_pipeline(
+        question="What are the strongest retrofit signals for Munich?",
+        config=config,
+        query_mode="dev",
+        query_2="retrofit funding deadlines and milestones",
+        query_3="   ",
+        sql_plan_func=_stub_sql_plan,
+        markdown_func=_stub_markdown,
+        refine_question_func=_refine_should_not_run,
+        writer_func=_stub_writer,
+    )
+
+    assert paths.final_output.exists()
+    assert captured["queries"] == [
+        "What are the strongest retrofit signals for Munich?",
+        "retrofit funding deadlines and milestones",
+    ]
+    assert captured["selected_cities"] is None
+
+    research_payload = json.loads(paths.research_question.read_text(encoding="utf-8"))
+    assert research_payload["query_mode"] == "dev"
+    assert research_payload["retrieval_queries"] == [
+        "What are the strongest retrofit signals for Munich?",
+        "retrofit funding deadlines and milestones",
+    ]
+    assert (
+        research_payload["retrieval_query_1"]
+        == "What are the strongest retrofit signals for Munich?"
+    )
+    assert (
+        research_payload["retrieval_query_2"]
+        == "retrofit funding deadlines and milestones"
+    )
+    assert research_payload["retrieval_query_3"] is None
+
+    run_log = json.loads(paths.run_log.read_text(encoding="utf-8"))
+    assert run_log["inputs"]["original_question"] == (
+        "What are the strongest retrofit signals for Munich?"
+    )
+    assert run_log["inputs"]["query_mode"] == "dev"
+    assert run_log["inputs"]["retrieval_query_1"] == (
+        "What are the strongest retrofit signals for Munich?"
+    )
+    assert run_log["inputs"]["retrieval_query_2"] == (
+        "retrofit funding deadlines and milestones"
+    )
+    assert run_log["inputs"]["retrieval_query_3"] is None
+
+
+def test_run_pipeline_dev_mode_dedupes_direct_queries_case_insensitively(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.setenv("OPENROUTER_API_KEY", "test")
+
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir()
+    (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
+
+    config = _build_test_config(
+        runs_dir=tmp_path / "output",
+        source_db_path=tmp_path / "missing.db",
+        markdown_dir=docs_dir,
+        enable_sql=False,
+    )
+    config.vector_store.enabled = True
+
+    captured: dict[str, object] = {}
+
+    def _fake_retrieve(
+        queries: list[str],
+        config: AppConfig,
+        docs_dir: Path,
+        selected_cities: list[str] | None,
+    ) -> tuple[list[RetrievedChunk], dict[str, object]]:
+        del config
+        captured["queries"] = queries
+        captured["docs_dir"] = docs_dir
+        captured["selected_cities"] = selected_cities
+        return (
+            [
+                RetrievedChunk(
+                    city_name="Munich",
+                    raw_text="Retriever chunk content",
+                    source_path="documents/Munich.md",
+                    heading_path="H1",
+                    block_type="paragraph",
+                    distance=0.111111,
+                    chunk_id="chunk-1",
+                    metadata={"city_key": "munich"},
+                )
+            ],
+            {"queries": queries, "per_city": []},
+        )
+
+    monkeypatch.setattr(
+        "backend.modules.orchestrator.module.retrieve_chunks_for_queries",
+        _fake_retrieve,
+    )
+
+    def _refine_should_not_run(
+        question: str,
+        config: AppConfig,
+        api_key: str,
+        **_kwargs: dict[str, object],
+    ) -> ResearchQuestionRefinement:
+        del question, config, api_key, _kwargs
+        raise AssertionError("Question refinement should not run in dev mode.")
+
+    paths = run_pipeline(
+        question="What are the strongest retrofit signals for Munich?",
+        config=config,
+        query_mode="dev",
+        query_2="  WHAT ARE THE STRONGEST RETROFIT SIGNALS FOR MUNICH?  ",
+        query_3="  retrofit funding deadlines and milestones  ",
+        sql_plan_func=_stub_sql_plan,
+        markdown_func=_stub_markdown,
+        refine_question_func=_refine_should_not_run,
+        writer_func=_stub_writer,
+    )
+
+    expected_queries = [
+        "What are the strongest retrofit signals for Munich?",
+        "retrofit funding deadlines and milestones",
+    ]
+
+    assert paths.final_output.exists()
+    assert captured["queries"] == expected_queries
+
+    research_payload = json.loads(paths.research_question.read_text(encoding="utf-8"))
+    assert research_payload["query_mode"] == "dev"
+    assert research_payload["canonical_research_query"] == expected_queries[0]
+    assert research_payload["retrieval_queries"] == expected_queries
+    assert research_payload["retrieval_query_1"] == expected_queries[0]
+    assert research_payload["retrieval_query_2"] == expected_queries[1]
+    assert research_payload["retrieval_query_3"] is None
+
+    run_log = json.loads(paths.run_log.read_text(encoding="utf-8"))
+    assert run_log["inputs"]["query_mode"] == "dev"
+    assert run_log["inputs"]["retrieval_queries"] == expected_queries
+    assert run_log["inputs"]["retrieval_query_count"] == 2
+    assert run_log["inputs"]["retrieval_query_1"] == expected_queries[0]
+    assert run_log["inputs"]["retrieval_query_2"] == expected_queries[1]
+    assert run_log["inputs"]["retrieval_query_3"] is None

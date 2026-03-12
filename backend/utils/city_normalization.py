@@ -4,11 +4,15 @@ import re
 
 
 _CITY_TOKEN_PATTERN = re.compile(r"[A-Za-z0-9]+")
+_CITY_KEY_SEPARATOR_PATTERN = re.compile(r"[\W_]+", flags=re.UNICODE)
 
 
 def normalize_city_key(value: str) -> str:
-    """Return a stable normalized city key for matching and filtering."""
-    return value.strip().casefold()
+    """Return a separator-agnostic normalized city key for matching and filtering."""
+    cleaned = value.strip().casefold()
+    if not cleaned:
+        return ""
+    return _CITY_KEY_SEPARATOR_PATTERN.sub("_", cleaned).strip("_")
 
 
 def normalize_city_keys(values: list[str] | None) -> list[str]:

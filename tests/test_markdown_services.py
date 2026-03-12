@@ -55,6 +55,24 @@ def test_load_markdown_documents_city_filter_is_case_insensitive(
     assert all(doc["city_key"] == "munich" for doc in docs)
 
 
+def test_load_markdown_documents_city_filter_matches_separator_variants(
+    tmp_path: Path,
+) -> None:
+    """Selected-city filtering should treat hyphens and underscores as the same city."""
+    (tmp_path / "Vitoria_Gasteiz.md").write_text("# Vitoria\n\nText", encoding="utf-8")
+    config = _build_markdown_config()
+
+    docs = load_markdown_documents(
+        tmp_path,
+        config,
+        selected_cities=["Vitoria-Gasteiz"],
+    )
+
+    assert docs
+    assert all(doc["city_name"] == "Vitoria_Gasteiz" for doc in docs)
+    assert all(doc["city_key"] == "vitoria_gasteiz" for doc in docs)
+
+
 def test_load_markdown_documents_adds_stable_chunk_ids(tmp_path: Path) -> None:
     (tmp_path / "Munich.md").write_text("# Munich\n\nAlpha\n\nBeta", encoding="utf-8")
     config = _build_markdown_config()

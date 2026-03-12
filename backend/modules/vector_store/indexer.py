@@ -213,8 +213,12 @@ def _iter_markdown_files(
     files = sorted(docs_dir.rglob("*.md"))
     if not selected_cities:
         return files
-    selected = {city.strip().casefold() for city in selected_cities if city.strip()}
-    return [path for path in files if path.stem.casefold() in selected]
+    selected = {
+        normalize_city_key(city)
+        for city in selected_cities
+        if isinstance(city, str) and city.strip()
+    }
+    return [path for path in files if normalize_city_key(path.stem) in selected]
 
 
 def _source_path(path: Path, project_root: Path) -> str:
@@ -558,7 +562,9 @@ def update_markdown_index(
     current_source_keys = set(current_source_map.keys())
     if selected_cities:
         selected_city_keys = {
-            city.strip().casefold() for city in selected_cities if city.strip()
+            normalize_city_key(city)
+            for city in selected_cities
+            if isinstance(city, str) and city.strip()
         }
         manifest_sources_in_scope = {
             source_path

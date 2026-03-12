@@ -1,18 +1,30 @@
 # Query Input Rework
 
+Status after current implementation:
+
+- Implemented:
+  - API request contract accepts `query_mode`, `query_2`, and `query_3`
+  - backend run execution trims blank optional queries and forwards direct-query mode into `run_pipeline(...)`
+  - `run_pipeline(...)` supports both `standard` and `dev` query flows
+  - frontend dev mode exposes optional query 2 and query 3 inputs
+  - run logs, run summaries, and `research_question.json` now use explicit query metadata instead of relying on "refined question" naming
+- Deferred:
+  - CLI remains unchanged
+
 ## Current state
 
-- The public run entrypoints currently accept a single user question.
+- The public run flow now has two modes.
   - API request model: `backend/api/models.py`
   - API route and executor wiring: `backend/api/routes/runs.py`, `backend/api/services/run_executor.py`
-  - CLI entrypoint: `backend/scripts/run_pipeline.py`
   - Frontend request type and form submission: `frontend/src/lib/api.ts`, `frontend/src/app/page.tsx`
+  - CLI entrypoint remains unchanged: `backend/scripts/run_pipeline.py`
 
-- The main pipeline does not use the user question as-is for retrieval.
-  - `backend/modules/orchestrator/module.py` starts with the raw `question`, then calls `refine_research_question(...)`.
+- The main pipeline now supports both automatic and direct retrieval-query sources.
+  - In `standard` mode, `backend/modules/orchestrator/module.py` still calls `refine_research_question(...)`.
   - That refinement step can:
     - lightly rewrite the main question
     - generate up to two additional retrieval queries
+  - In `dev` mode, the pipeline uses the main question directly and appends only non-empty direct query inputs.
   - The resulting values are persisted as `canonical_research_query` plus `retrieval_queries`.
 
 - The automatic refinement is implemented as an LLM call.
@@ -33,59 +45,59 @@
   - File: `backend/api/services/chat_followup_research.py`
   - This is related behavior, but this rework is focused on the main run flow.
 
-## What we want to do
+## Implemented behavior
 
 - We are not changing the retriever logic.
-  - The backend should still receive up to three queries and run retrieval exactly as it does now.
+  - The backend still receives up to three queries and runs retrieval exactly as it did before.
 
-- We are changing where those queries come from.
+- We changed where those queries come from.
   - Standard mode:
-    - keep the current behavior where the backend refines the main question and generates the second and third retrieval queries
+    - keeps the current behavior where the backend refines the main question and generates the second and third retrieval queries
   - Dev mode:
     - input 1 is the user's main query, used directly
     - input 2 is an optional user-provided second query
     - input 3 is an optional user-provided third query
   - In practice:
-    - the user-provided second and third inputs replace today's automatically generated keyword-style and evidence-style retrieval queries
+    - the user-provided second and third inputs replace today's automatically generated retrieval variants
 
-- The automatic LLM rewrite should no longer be the only path through the system.
-  - Standard mode should keep the current automatic query-generation path.
-  - Dev mode should use the primary user question as-is.
-  - In dev mode, that means removing typo-fixing and city-name cleanup from the retrieval-input generation path.
+- The automatic LLM rewrite is no longer the only path through the system.
+  - Standard mode keeps the automatic query-generation path.
+  - Dev mode uses the primary user question as-is.
+  - In dev mode, there is no LLM-based cleanup or rewrite before retrieval query construction.
 
 - The "keywords" inputs are not a separate retrieval algorithm.
   - They map to the existing second and third retrieval queries.
   - The retriever still does one vector search per query.
 
-- The frontend should add two more user inputs.
-  - Standard mode should keep those extra inputs hidden.
-  - Dev mode should show the main query plus optional query 2 and query 3.
-  - The UI should include guidance text because this is harder for non-technical users.
+- The frontend now has two more optional user inputs in dev mode.
+  - Standard mode keeps those extra inputs hidden.
+  - Dev mode shows the main query plus optional query 2 and query 3.
+  - The UI guidance text keeps the fields open-ended rather than prescribing a fixed schema.
 
-- A mode split is the clearest way to support both behaviors without changing retrieval.
-  - Standard mode should preserve the current generated-query behavior.
-  - Dev mode should switch to the new direct-input behavior.
-  - The existing frontend dev toggle should control both the visible inputs and the backend query-generation variant.
-  - If both behaviors need to coexist in the same backend contract, use an explicit mode field instead of inferring behavior from missing inputs.
+- A mode split is how both behaviors now coexist without changing retrieval.
+  - Standard mode preserves the current generated-query behavior.
+  - Dev mode switches to the direct-input behavior.
+  - The existing frontend dev toggle controls both the visible inputs and the backend query-generation variant.
+  - The backend contract uses an explicit mode field instead of inferring behavior from missing inputs.
 
-## Recommended implementation
+## Implementation details
 
 ### 1. Backend core
 
-- Change `run_pipeline(...)` so the main run flow can accept three explicit query inputs.
+- `run_pipeline(...)` now accepts three explicit query inputs.
   - Required: main user question
   - Optional: query 2
   - Optional: query 3
 
-- Replace the current unconditional call to `refine_research_question(...)` in the main run path.
+- The previous unconditional call to `refine_research_question(...)` is now conditional.
   - Standard mode:
-    - keep today's refiner behavior
-    - continue generating retrieval queries from the main question
+    - keeps today's refiner behavior
+    - continues generating retrieval queries from the main question
   - Dev mode:
-    - use the main question as the canonical research question
-    - build `retrieval_queries` from the direct user inputs
+    - uses the main question as the canonical research question
+    - builds `retrieval_queries` from the direct user inputs
 
-- Keep the existing cleanup behavior that is still useful without an LLM.
+- The shared cleanup behavior remains in place without an LLM.
   - trim whitespace
   - drop empty values
   - dedupe case-insensitively
@@ -99,11 +111,11 @@
 
 ### 2. API contract
 
-- Extend the run creation request model with optional second and third queries.
-- Add an explicit mode field so the backend can distinguish the standard and dev paths.
+- The run creation request model now includes optional second and third queries.
+- An explicit mode field distinguishes the standard and dev paths.
   - `standard`: preserve the current behavior where the backend refines or generates retrieval queries from the main question.
   - `dev`: use the provided query inputs directly.
-- Thread those values through the route and background executor into `run_pipeline(...)`.
+- Those values are threaded through the route and background executor into `run_pipeline(...)`.
 
 - Main files:
   - `backend/api/models.py`
@@ -112,17 +124,17 @@
 
 ### 3. CLI entrypoint
 
-- Extend the runnable script so local and benchmark-style testing can pass the extra queries directly.
-- Expected shape:
-  - `--question`
-  - `--query-2`
-  - `--query-3`
-  ##########
-    ###### what would this be used for in the CLI? Its mostly a frontend dev toggle no?
-    ##########
-  - optional `--query-mode standard|dev` 
-
-- Update the top-level docstring and `argparse` help so the behavior is self-explanatory.
+- Keep the current CLI unchanged for this scope.
+- Explicit decision: do not add `--query-mode`, `--query-2`, or `--query-3` to the CLI in this change.
+- Rationale:
+  - the `standard` vs `dev` split is primarily a frontend developer workflow
+  - the frontend already has a visible mode toggle and different input behavior
+  - the CLI does not need to mirror that toggle unless terminal users must explicitly exercise both backend paths
+- Revisit CLI support only if we later have a concrete use case such as:
+  - local debugging of direct-query retrieval behavior
+  - scripted comparison of `standard` vs `dev`
+  - benchmark runs that need deterministic direct-query inputs
+- If that need appears later, prefer adding explicit CLI support as a separate, intentional follow-up rather than expanding the current scope now.
 
 - Main file:
   - `backend/scripts/run_pipeline.py`
@@ -131,24 +143,23 @@
 
 - Keep the main question required.
 
-- Add two additional user inputs for the extra retrieval queries.
-  - Standard mode should hide query 2 and query 3 and keep the current generated-query behavior.
-  - Dev mode should show query 2 and query 3 and use them directly.
-  - Add help text that explains the role of each field in plain language.
-    ########
-    ######## those examples for query 2 and query 3 are for the auto mode only. For the dev mode they code be anything the user envisions to be useful depending on the main query
-    ########
-    - Main question: what answer the user wants
-    - Query 2: topic and initiative keywords
-    - Query 3: numbers, budgets, targets, timelines, evidence terms
+- Dev mode now adds two additional user inputs for the extra retrieval queries.
+  - Standard mode hides query 2 and query 3 and keeps the current generated-query behavior.
+  - Dev mode shows query 2 and query 3 and uses only the non-empty values directly.
+  - Query 2 and query 3 stay optional in both backend and frontend.
+  - Empty or null query 2/query 3 values are ignored and do not trigger retrieval work on their own.
+  - Help text explains these fields in plain language without implying a fixed schema.
+    - Main question: the required question the user wants answered.
+    - Query 2 and query 3: optional retrieval phrasings that can be anything the user thinks will help find better evidence for the main question in dev mode.
+    - Examples should be illustrative only, not prescriptive.
 
 - Use the existing dev mode to expose advanced controls when needed.
-  - The toggle should switch between the standard and dev query flows.
+  - The toggle switches between the standard and dev query flows.
   - It can also expose any developer-facing query debugging controls.
 
 - Make the mode behavior explicit in the request payload.
-  - Standard mode should send `standard`.
-  - Dev mode should send `dev`.
+  - Standard mode sends `standard`.
+  - Dev mode sends `dev`.
 
 - Main files:
   - `frontend/src/app/page.tsx`
@@ -157,14 +168,16 @@
 
 ### 5. Logging and artifacts
 
-- Current persisted naming still assumes a "refined question".
-- Those labels become misleading as soon as standard and dev modes coexist.
-- Update artifacts and logs so they clearly distinguish:
+- This area is now implemented for the main run flow.
+- `research_question.json` records:
   - original question
+  - canonical research query
+  - query mode
   - retrieval query 1
   - retrieval query 2
   - retrieval query 3
-  - query source or mode, if we keep standard and dev side by side
+- `run_logger` now records the same query metadata in structured run inputs and in the text run summary.
+- `RunStore` still supports older stored runs that only have `initial_question` and `refined_question`, but new runs use the explicit query-field naming.
 
 - Main files:
   - `backend/services/run_logger.py`
@@ -173,20 +186,18 @@
 
 ### 6. Tests
 
-- Update pipeline tests that currently assume automatic refinement.
-- Add API tests for the new request fields.
-- Update CLI tests or script coverage if the runnable interface changes.
+- Pipeline and API regression tests now cover the new request fields and optional-query behavior.
+- The new cases specifically verify:
+  - dev mode bypasses refinement
+  - blank optional queries are ignored
+  - retrieval queries are trimmed before use
+  - retrieval queries are deduped case-insensitively
+  - retrieval queries are capped to the supported maximum of three
+  - a run can proceed with only the main question plus one extra query
+- Only add CLI tests if the runnable interface changes in a follow-up.
 - Only touch follow-up research tests if that flow is explicitly brought into scope.
 
 - Main files:
   - `tests/test_orchestrator.py`
   - `tests/test_api_runs.py`
   - `tests/test_chat_followup_research.py` only if follow-up behavior changes
- 
-
-
-############### Comments
-Additionally we need to make sure that when the user only passes one extra query, that the the second extra query is beeing ignored and the backend is only doing the retrieval based on 
-main and second query.
-Meaning only the main query is mandatory.
-The 2nd and 3rd queries are optional in backend AND frontend and if null (empty) should not lead to any retrieval

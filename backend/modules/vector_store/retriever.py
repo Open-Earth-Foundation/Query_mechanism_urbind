@@ -486,7 +486,9 @@ def as_markdown_documents(chunks: list[RetrievedChunk]) -> list[dict[str, object
         city_key = chunk.metadata.get("city_key")
         if not isinstance(city_key, str) or not city_key.strip():
             raise ValueError("Retrieved chunk is missing required metadata.city_key.")
-        resolved_city_key = str(city_key).strip()
+        resolved_city_key = normalize_city_key(str(city_key))
+        if not resolved_city_key:
+            raise ValueError("Retrieved chunk city_key resolves to an empty value.")
         documents.append(
             {
                 "path": chunk.source_path,

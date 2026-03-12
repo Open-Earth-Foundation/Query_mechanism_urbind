@@ -12,7 +12,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Literal
 
-from backend.api.models import RunError, RunStatus
+from backend.api.models import QueryMode, RunError, RunStatus
 from backend.api.services.city_catalog import build_city_subset
 from backend.api.services.run_store import RunRecord, RunStore, TERMINAL_STATUSES
 from backend.modules.orchestrator.module import run_pipeline
@@ -29,6 +29,9 @@ class StartRunCommand:
     """Parameters needed to submit a pipeline run."""
 
     question: str
+    query_mode: QueryMode = "standard"
+    query_2: str | None = None
+    query_3: str | None = None
     requested_run_id: str | None = None
     cities: list[str] | None = None
     config_path: str | None = None
@@ -36,6 +39,14 @@ class StartRunCommand:
     log_llm_payload: bool = False
     api_key: str | None = None
     analysis_mode: Literal["aggregate", "city_by_city"] = "aggregate"
+
+
+def _normalize_optional_query(value: str | None) -> str | None:
+    """Trim one optional direct retrieval query and collapse blanks to None."""
+    if value is None:
+        return None
+    cleaned = value.strip()
+    return cleaned or None
 
 
 class RunExecutor:
@@ -52,6 +63,9 @@ class RunExecutor:
         normalized_cities = normalize_city_keys(command.cities)
         resolved_command = StartRunCommand(
             question=command.question,
+            query_mode=command.query_mode,
+            query_2=_normalize_optional_query(command.query_2),
+            query_3=_normalize_optional_query(command.query_3),
             requested_run_id=command.requested_run_id,
             cities=normalized_cities or None,
             config_path=command.config_path,
@@ -64,12 +78,18 @@ class RunExecutor:
             question=resolved_command.question, requested_run_id=resolved_command.requested_run_id
         )
         logger.info(
-            "Run accepted run_id=%s cities=%s config_path=%s markdown_path=%s analysis_mode=%s log_llm_payload=%s api_key_override=%s",
+            "Run accepted run_id=%s cities=%s config_path=%s markdown_path=%s analysis_mode=%s query_mode=%s explicit_query_count=%d log_llm_payload=%s api_key_override=%s",
             record.run_id,
             len(resolved_command.cities) if resolved_command.cities else "all",
             resolved_command.config_path,
             resolved_command.markdown_path,
             resolved_command.analysis_mode,
+            resolved_command.query_mode,
+            sum(
+                1
+                for query in (resolved_command.query_2, resolved_command.query_3)
+                if query is not None
+            ),
             resolved_command.log_llm_payload,
             resolved_command.api_key is not None,
         )
@@ -134,6 +154,12 @@ class RunExecutor:
                 "log_llm_payload": command.log_llm_payload,
                 "selected_cities": command.cities,
             }
+            if command.query_mode != "standard":
+                pipeline_kwargs["query_mode"] = command.query_mode
+            if command.query_2 is not None:
+                pipeline_kwargs["query_2"] = command.query_2
+            if command.query_3 is not None:
+                pipeline_kwargs["query_3"] = command.query_3
             if command.api_key is not None:
                 pipeline_kwargs["api_key_override"] = command.api_key
             pipeline_kwargs["analysis_mode"] = command.analysis_mode

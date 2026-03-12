@@ -723,6 +723,14 @@ It includes exact build/push commands and `kubectl` apply steps for the manifest
 Automated development workflow is available at `.github/workflows/develop.yml`.
 It runs tests for PRs targeting `main` and for pushes to `main`; image build and EKS deploy run only on `main` branch runs (push/manual dispatch).
 
+TODO: production CORS hardening
+
+- Restrict `API_CORS_ORIGINS` in `k8s/backend-configmap.yml` to the deployed frontend origin(s) only, for example `https://urbind-query-mechanism.openearth.dev`.
+- Remove local-only origins such as `http://localhost:3000`, `http://127.0.0.1:3000`, and private LAN hosts from the production ConfigMap.
+- Update `backend/api/main.py` so a missing or empty `API_CORS_ORIGINS` fails closed in deployed environments instead of falling back to `["*"]`.
+- Keep wildcard or localhost-friendly CORS settings only in local Docker/dev configuration.
+- Ensure the deployed frontend sets `NEXT_PUBLIC_API_BASE_URL` explicitly so backend host mismatches are not confused with CORS failures.
+
 Required repository secrets:
 
 - `AWS_ACCESS_KEY_ID_EKS_DEV_USER`

@@ -50,6 +50,50 @@ def test_run_logger_persists_analysis_mode_in_inputs_and_context(tmp_path: Path)
     assert context_payload["analysis_mode"] == "city_by_city"
 
 
+def test_run_logger_persists_query_inputs_in_log_context_and_summary(tmp_path: Path) -> None:
+    paths = create_run_paths(tmp_path, "run-logger-queries", "context_bundle.json")
+    logger = RunLogger(paths, "Original question")
+    paths.base_dir.mkdir(parents=True, exist_ok=True)
+    paths.final_output.write_text("# Final\nAnswer", encoding="utf-8")
+
+    logger.update_query_inputs(
+        original_question="Original question",
+        canonical_research_query="Canonical research query",
+        retrieval_queries=[
+            "Canonical research query",
+            "Complementary retrieval query",
+        ],
+        query_mode="dev",
+    )
+    logger.finalize("completed", final_output_path=paths.final_output, finish_reason="completed")
+
+    run_payload = json.loads(paths.run_log.read_text(encoding="utf-8"))
+    context_payload = json.loads(paths.context_bundle.read_text(encoding="utf-8"))
+    run_summary = paths.run_summary.read_text(encoding="utf-8")
+
+    assert run_payload["inputs"]["original_question"] == "Original question"
+    assert run_payload["inputs"]["canonical_research_query"] == "Canonical research query"
+    assert run_payload["inputs"]["query_mode"] == "dev"
+    assert run_payload["inputs"]["retrieval_query_1"] == "Canonical research query"
+    assert run_payload["inputs"]["retrieval_query_2"] == "Complementary retrieval query"
+    assert run_payload["inputs"]["retrieval_query_3"] is None
+
+    assert context_payload["original_question"] == "Original question"
+    assert context_payload["research_question"] == "Canonical research query"
+    assert context_payload["query_mode"] == "dev"
+    assert context_payload["retrieval_queries"] == [
+        "Canonical research query",
+        "Complementary retrieval query",
+    ]
+
+    assert "Original question: Original question" in run_summary
+    assert "Query mode: dev" in run_summary
+    assert "Canonical research query: Canonical research query" in run_summary
+    assert "Retrieval query 1: Canonical research query" in run_summary
+    assert "Retrieval query 2: Complementary retrieval query" in run_summary
+    assert "Retrieval query 3: (none)" in run_summary
+
+
 def test_run_logger_parses_plain_text_retry_payloads(tmp_path: Path) -> None:
     paths = create_run_paths(tmp_path, "run-logger-retry-text", "context_bundle.json")
     logger = RunLogger(paths, "Why retries happened?")

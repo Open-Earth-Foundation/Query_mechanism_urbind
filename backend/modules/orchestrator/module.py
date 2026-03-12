@@ -73,6 +73,29 @@ def _dedupe_preserve_order(values: list[str]) -> list[str]:
     return deduped
 
 
+def _build_retrieval_queries(
+    *queries: str | None,
+    limit: int = 3,
+) -> list[str]:
+    """Normalize, de-duplicate, and cap retrieval queries while preserving order."""
+    normalized: list[str] = []
+    seen: set[str] = set()
+    for query in queries:
+        if query is None:
+            continue
+        candidate = query.strip()
+        if not candidate:
+            continue
+        key = candidate.casefold()
+        if key in seen:
+            continue
+        seen.add(key)
+        normalized.append(candidate)
+        if len(normalized) >= limit:
+            break
+    return normalized
+
+
 def _collect_markdown_decision_artifacts(
     markdown_chunks: list[dict[str, object]],
     markdown_result: MarkdownResearchResult,
@@ -207,6 +230,9 @@ def run_pipeline(
     log_llm_payload: bool = True,
     selected_cities: list[str] | None = None,
     analysis_mode: Literal["aggregate", "city_by_city"] = "aggregate",
+    query_mode: Literal["standard", "dev"] = "standard",
+    query_2: str | None = None,
+    query_3: str | None = None,
     api_key_override: str | None = None,
     sql_plan_func: Callable[..., SqlQueryPlan] = plan_sql_queries,
     markdown_func: Callable[..., MarkdownResearchResult] = extract_markdown_excerpts,
@@ -227,6 +253,9 @@ def run_pipeline(
         log_llm_payload: Whether to log full LLM request/response payloads
         selected_cities: Optional list of city names to limit markdown document loading
         analysis_mode: Writer synthesis mode ("aggregate" | "city_by_city")
+        query_mode: Retrieval query mode ("standard" uses refinement, "dev" uses direct inputs)
+        query_2: Optional second direct retrieval query used in dev mode
+        query_3: Optional third direct retrieval query used in dev mode
         api_key_override: Optional per-run API key override
         sql_plan_func: SQL planning function (default: plan_sql_queries)
         markdown_func: Markdown extraction function (default: extract_markdown_excerpts)
@@ -255,56 +284,63 @@ def run_pipeline(
     run_logger.record_artifact("context_bundle", paths.context_bundle)
     run_log_handler = attach_run_file_logger(paths.base_dir)
 
-    # First step in the chain: rewrite the user question into a research-ready form.
-    canonical_research_query = question
-    retrieval_queries: list[str] = [canonical_research_query]
-    try:
-        refinement = refine_question_func(
-            question,
-            config,
-            api_key,
-            selected_cities=selected_cities,
-            log_llm_payload=log_llm_payload,
+    canonical_research_query = question.strip() or question
+    retrieval_queries: list[str]
+    if query_mode == "dev":
+        retrieval_queries = _build_retrieval_queries(
+            canonical_research_query,
+            query_2,
+            query_3,
+        ) or [canonical_research_query]
+        logger.info(
+            "Using direct retrieval queries for run_id=%s query_count=%d",
+            run_id_value,
+            len(retrieval_queries),
         )
-        candidate = refinement.research_question.strip()
-        if candidate:
-            canonical_research_query = candidate
-        else:
-            logger.warning(
-                "Research question refinement returned empty output; using original question."
+    else:
+        # Standard mode keeps the current research-question refinement flow.
+        retrieval_queries = [canonical_research_query]
+        try:
+            refinement = refine_question_func(
+                question,
+                config,
+                api_key,
+                selected_cities=selected_cities,
+                log_llm_payload=log_llm_payload,
             )
-        retrieval_query_candidates = [
-            query.strip() for query in refinement.retrieval_queries
-        ]
-        combined_queries = [canonical_research_query] + [
-            candidate_query
-            for candidate_query in retrieval_query_candidates
-            if candidate_query
-        ]
-        deduped_queries: list[str] = []
-        seen_queries: set[str] = set()
-        for query_candidate in combined_queries:
-            key = query_candidate.casefold()
-            if key in seen_queries:
-                continue
-            seen_queries.add(key)
-            deduped_queries.append(query_candidate)
-            if len(deduped_queries) >= 3:
-                break
-        retrieval_queries = deduped_queries or [canonical_research_query]
-    except (ValueError, RuntimeError, OSError, KeyError, TypeError) as exc:
-        logger.warning(
-            "Research question refinement failed; using original question. error=%s",
-            exc,
-        )
+            candidate = refinement.research_question.strip()
+            if candidate:
+                canonical_research_query = candidate
+            else:
+                logger.warning(
+                    "Research question refinement returned empty output; using original question."
+                )
+            retrieval_queries = _build_retrieval_queries(
+                canonical_research_query,
+                *refinement.retrieval_queries,
+            ) or [canonical_research_query]
+        except (ValueError, RuntimeError, OSError, KeyError, TypeError) as exc:
+            logger.warning(
+                "Research question refinement failed; using original question. error=%s",
+                exc,
+            )
 
-    run_logger.update_research_question(canonical_research_query)
+    run_logger.update_query_inputs(
+        original_question=question,
+        canonical_research_query=canonical_research_query,
+        retrieval_queries=retrieval_queries,
+        query_mode=query_mode,
+    )
     write_json(
         paths.research_question,
         {
             "original_question": question,
+            "query_mode": query_mode,
             "canonical_research_query": canonical_research_query,
             "retrieval_queries": retrieval_queries,
+            "retrieval_query_1": retrieval_queries[0] if len(retrieval_queries) >= 1 else None,
+            "retrieval_query_2": retrieval_queries[1] if len(retrieval_queries) >= 2 else None,
+            "retrieval_query_3": retrieval_queries[2] if len(retrieval_queries) >= 3 else None,
         },
     )
     run_logger.record_artifact("research_question", paths.research_question)
@@ -615,16 +651,16 @@ def run_pipeline(
             )
         inspected_cities = sorted(
             {
-                str(document.get("city_key", "")).strip()
+                normalize_city_key(str(document.get("city_key", "")).strip())
                 for document in markdown_chunks
-                if str(document.get("city_key", "")).strip()
+                if normalize_city_key(str(document.get("city_key", "")).strip())
             }
         )
         markdown_bundle["inspected_cities"] = inspected_cities
         # Display names for evidence header (e.g. "Aachen" not "aachen")
         key_to_name: dict[str, str] = {}
         for document in markdown_chunks:
-            key = str(document.get("city_key", "")).strip()
+            key = normalize_city_key(str(document.get("city_key", "")).strip())
             name = document.get("city_name")
             if key and key not in key_to_name:
                 key_to_name[key] = (

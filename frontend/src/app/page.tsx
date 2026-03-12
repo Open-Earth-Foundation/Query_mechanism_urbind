@@ -73,6 +73,8 @@ function formatRunOptionLabel(run: RunSummary): string {
 
 export default function Home() {
   const [question, setQuestion] = useState("");
+  const [query2, setQuery2] = useState("");
+  const [query3, setQuery3] = useState("");
   const [scopeMode, setScopeMode] = useState<CityScopeMode>("all");
   const [analysisMode, setAnalysisMode] = useState<AnalysisMode>("aggregate");
   const [cities, setCities] = useState<string[]>([]);
@@ -108,6 +110,7 @@ export default function Home() {
   const canFetchArtifacts = statusValue === "completed" || statusValue === "completed_with_gaps";
   const documentReady = !!runOutput?.content && canFetchArtifacts;
   const devFeatures = useMemo(() => getDevFeatureFlags(frontendMode), [frontendMode]);
+  const showDirectQueryControls = frontendMode === "dev";
 
   useEffect(() => {
     const storedMode = readStoredFrontendMode();
@@ -448,6 +451,9 @@ export default function Home() {
     try {
       const payload = await startRun({
         question: trimmed,
+        query_mode: showDirectQueryControls ? "dev" : "standard",
+        query_2: showDirectQueryControls ? query2 : undefined,
+        query_3: showDirectQueryControls ? query3 : undefined,
         cities: scopeMode === "all" ? undefined : scopedCities,
         analysis_mode: analysisMode,
       });
@@ -543,6 +549,46 @@ export default function Home() {
                   className="min-h-32"
                 />
               </div>
+
+              {showDirectQueryControls ? (
+                <div className="space-y-3 rounded-md border border-slate-200 bg-slate-50 p-3">
+                  <div className="space-y-1">
+                    <div className="flex items-center justify-between">
+                      <Label className="text-sm font-medium text-slate-800">
+                        Direct retrieval queries
+                      </Label>
+                      <Badge variant="outline">Dev Mode</Badge>
+                    </div>
+                    <p className="text-xs text-slate-600">
+                      Optional inputs for the retriever. Leave either field blank to ignore it.
+                      In dev mode these can be any useful retrieval phrasings, not just keyword or
+                      metrics-only queries.
+                    </p>
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="query-2">Retrieval query 2 (optional)</Label>
+                    <Textarea
+                      id="query-2"
+                      placeholder="Example: a narrower or complementary phrasing of the main question"
+                      value={query2}
+                      onChange={(event) => setQuery2(event.target.value)}
+                      className="min-h-20"
+                    />
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="query-3">Retrieval query 3 (optional)</Label>
+                    <Textarea
+                      id="query-3"
+                      placeholder="Example: another retrieval angle you want to test directly"
+                      value={query3}
+                      onChange={(event) => setQuery3(event.target.value)}
+                      className="min-h-20"
+                    />
+                  </div>
+                </div>
+              ) : null}
 
               <div className="space-y-2">
                 <div className="flex items-center justify-between">

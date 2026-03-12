@@ -105,8 +105,12 @@ def load_markdown_documents(
     docs: list[dict[str, object]] = []
     files = sorted(markdown_dir.rglob("*.md"))
     if selected_cities:
-        requested = {city.strip().casefold() for city in selected_cities if city.strip()}
-        files = [path for path in files if path.stem.casefold() in requested]
+        requested = {
+            normalize_city_key(city)
+            for city in selected_cities
+            if isinstance(city, str) and city.strip()
+        }
+        files = [path for path in files if normalize_city_key(path.stem) in requested]
     if len(files) > config.max_files:
         files = files[: config.max_files]
 

@@ -9,6 +9,7 @@ export type RunStatus =
   | "completed_with_gaps"
   | "failed"
   | "stopped";
+export type QueryMode = "standard" | "dev";
 
 export interface RunError {
   code: string;
@@ -17,6 +18,9 @@ export interface RunError {
 
 export interface CreateRunRequest {
   question: string;
+  query_mode?: QueryMode;
+  query_2?: string;
+  query_3?: string;
   run_id?: string;
   cities?: string[];
   analysis_mode?: "aggregate" | "city_by_city";
@@ -320,6 +324,11 @@ function normalizeCityKeys(values?: string[]): string[] | undefined {
   return normalized.length > 0 ? normalized : undefined;
 }
 
+function normalizeOptionalText(value?: string | null): string | undefined {
+  const cleaned = value?.trim();
+  return cleaned ? cleaned : undefined;
+}
+
 const DEFAULT_REQUEST_TIMEOUT_MS = 120_000;
 const CHAT_SEND_REQUEST_TIMEOUT_MS = 300_000;
 const RUN_LIST_REQUEST_TIMEOUT_MS = 12_000;
@@ -419,6 +428,9 @@ export async function fetchRuns(options?: { signal?: AbortSignal }): Promise<Run
 export async function startRun(payload: CreateRunRequest): Promise<CreateRunResponse> {
   const normalizedPayload: CreateRunRequest = {
     ...payload,
+    query_mode: payload.query_mode ?? "standard",
+    query_2: normalizeOptionalText(payload.query_2),
+    query_3: normalizeOptionalText(payload.query_3),
     cities: normalizeCityKeys(payload.cities),
   };
   return requestJson<CreateRunResponse>(

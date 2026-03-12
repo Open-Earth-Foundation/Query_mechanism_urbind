@@ -162,12 +162,19 @@ def extract_ref_city_mapping(
     for excerpt in excerpts:
         ref_id = str(excerpt.get("ref_id", "")).strip()
         city_name = str(excerpt.get("city_name", "")).strip()
+        raw_city_key = str(excerpt.get("city_key", "")).strip()
         if not ref_id or not is_valid_ref_id(ref_id):
             continue
+        city_key_value = normalize_city_key(raw_city_key)
         city_display = city_display_name(city_name)
-        city_key_value = city_key(city_display)
+        if not city_key_value:
+            city_key_value = city_key(city_display)
         if not city_key_value:
             continue
+        if not city_display:
+            city_display = format_city_display_name(city_key_value) or format_city_stem(
+                city_key_value
+            )
         ref_to_city_key[ref_id] = city_key_value
         city_display_by_key.setdefault(city_key_value, city_display)
     return ref_to_city_key, city_display_by_key

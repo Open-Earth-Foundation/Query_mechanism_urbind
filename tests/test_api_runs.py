@@ -201,6 +201,61 @@ def test_api_run_lifecycle_success(tmp_path: Path, monkeypatch: pytest.MonkeyPat
         assert isinstance(context_payload["context_bundle"], dict)
 
 
+def test_api_run_lifecycle_dev_mode_ignores_blank_optional_queries(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """API runs should trim optional direct queries and omit blank ones."""
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+
+    def _stub_load_config(_path: Path | None = None) -> AppConfig:
+        return _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+
+    def _stub_run_pipeline(
+        question: str,
+        config: AppConfig,
+        run_id: str | None = None,
+        log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        query_mode: str = "standard",
+        query_2: str | None = None,
+        query_3: str | None = None,
+        api_key_override: str | None = None,
+        selected_cities: list[str] | None = None,
+    ) -> RunPaths:
+        assert config.enable_sql is False
+        assert run_id is not None
+        assert isinstance(log_llm_payload, bool)
+        assert analysis_mode == "aggregate"
+        assert query_mode == "dev"
+        assert query_2 == "retrofit milestones and deadlines"
+        assert query_3 is None
+        assert api_key_override is None
+        assert selected_cities is None
+        return _write_success_artifacts(question=question, run_id=run_id, config=config)
+
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+
+    app = create_app(runs_dir=runs_dir, max_workers=2)
+    with TestClient(app) as client:
+        start = client.post(
+            "/api/v1/runs",
+            json={
+                "question": "What are the key retrofit initiatives?",
+                "run_id": "run-dev-mode",
+                "query_mode": "dev",
+                "query_2": "  retrofit milestones and deadlines  ",
+                "query_3": "   ",
+            },
+        )
+        assert start.status_code == 202
+        terminal = _poll_until_terminal(client, "run-dev-mode")
+        assert terminal["status"] == "completed"
+
+
 def test_api_get_run_reference_returns_record_from_references_artifact(
     tmp_path: Path,
 ) -> None:
@@ -749,7 +804,7 @@ def test_api_list_runs_reads_artifact_folders(tmp_path: Path) -> None:
         )
 
 
-def test_api_list_runs_reads_question_from_inputs_when_root_question_missing(
+def test_api_list_runs_reads_question_from_original_question_when_root_question_missing(
     tmp_path: Path,
 ) -> None:
     runs_dir = tmp_path / "output"
@@ -760,6 +815,43 @@ def test_api_list_runs_reads_question_from_inputs_when_root_question_missing(
     run_dir.mkdir(parents=True, exist_ok=True)
     run_payload = {
         "run_id": "run-inputs-question",
+        "inputs": {
+            "original_question": "Question sourced from inputs.original_question",
+            "canonical_research_query": "Canonical fallback question",
+        },
+        "status": "completed",
+        "started_at": datetime.now(timezone.utc).isoformat(),
+        "completed_at": datetime.now(timezone.utc).isoformat(),
+    }
+    (run_dir / "run.json").write_text(
+        json.dumps(run_payload, ensure_ascii=True, indent=2),
+        encoding="utf-8",
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get("/api/v1/runs")
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["total"] == 1
+        assert payload["runs"][0]["run_id"] == "run-inputs-question"
+        assert (
+            payload["runs"][0]["question"]
+            == "Question sourced from inputs.original_question"
+        )
+
+
+def test_api_list_runs_reads_question_from_legacy_inputs_when_root_question_missing(
+    tmp_path: Path,
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+
+    run_dir = runs_dir / "run-legacy-inputs-question"
+    run_dir.mkdir(parents=True, exist_ok=True)
+    run_payload = {
+        "run_id": "run-legacy-inputs-question",
         "inputs": {
             "initial_question": "Question sourced from inputs.initial_question",
             "refined_question": "Refined fallback question",
@@ -779,7 +871,7 @@ def test_api_list_runs_reads_question_from_inputs_when_root_question_missing(
         assert response.status_code == 200
         payload = response.json()
         assert payload["total"] == 1
-        assert payload["runs"][0]["run_id"] == "run-inputs-question"
+        assert payload["runs"][0]["run_id"] == "run-legacy-inputs-question"
         assert (
             payload["runs"][0]["question"]
             == "Question sourced from inputs.initial_question"

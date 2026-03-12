@@ -153,9 +153,18 @@ def _extract_question_from_run_log(run_log: dict[str, Any]) -> str:
 
     inputs_raw = run_log.get("inputs")
     if isinstance(inputs_raw, dict):
+        original_question = inputs_raw.get("original_question")
+        if isinstance(original_question, str) and original_question.strip():
+            return original_question.strip()
         initial_question = inputs_raw.get("initial_question")
         if isinstance(initial_question, str) and initial_question.strip():
             return initial_question.strip()
+        canonical_research_query = inputs_raw.get("canonical_research_query")
+        if (
+            isinstance(canonical_research_query, str)
+            and canonical_research_query.strip()
+        ):
+            return canonical_research_query.strip()
         refined_question = inputs_raw.get("refined_question")
         if isinstance(refined_question, str) and refined_question.strip():
             return refined_question.strip()
