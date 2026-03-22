@@ -1,5 +1,9 @@
-from backend.benchmarks.gold_recall import (
+from backend.benchmarks.gold_recall.judge import (
     FACT_JUDGE_MODEL,
+    build_fact_judge_agent,
+    judge_fact_presence,
+)
+from backend.benchmarks.gold_recall.models import (
     FactJudgeDecision,
     FactPresenceJudgement,
     GoldBenchmarkCase,
@@ -12,25 +16,14 @@ from backend.benchmarks.gold_recall import (
     StageARetrievalMetrics,
     StageBExtractionMetrics,
     StageCWriterMetrics,
-    build_fact_judge_agent,
-    judge_fact_presence,
+)
+from backend.benchmarks.gold_recall.runner import (
     load_gold_benchmark_dataset,
     run_recall_benchmark,
-)
-from backend.benchmarks.runner import (
-    BenchmarkMarkdownConfig,
-    BenchmarkModeConfig,
-    BenchmarkQuestionResult,
-    BenchmarkReport,
-    run_retrieval_strategy_benchmark,
 )
 
 __all__ = [
     "FACT_JUDGE_MODEL",
-    "BenchmarkMarkdownConfig",
-    "BenchmarkModeConfig",
-    "BenchmarkQuestionResult",
-    "BenchmarkReport",
     "FactJudgeDecision",
     "FactPresenceJudgement",
     "GoldBenchmarkCase",
@@ -46,6 +39,5 @@ __all__ = [
     "build_fact_judge_agent",
     "judge_fact_presence",
     "load_gold_benchmark_dataset",
-    "run_retrieval_strategy_benchmark",
     "run_recall_benchmark",
 ]

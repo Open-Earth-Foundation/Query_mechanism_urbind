@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "cases": [
+    {
+      "case_id": "sample_case",
+      "question": "What does Sample City plan for solar, retrofits, and district heating?",
+      "gold_chunk_ids": [
+        "chunk-seed-1",
+        "chunk-fallback-1",
+        "chunk-neighbor-1",
+        "chunk-miss-1"
+      ],
+      "gold_facts": [
+        "Sample City plans 500 rooftop solar installations by 2030.",
+        "Sample City allocated EUR 2 million for retrofit grants.",
+        "Sample City will expand district heating to 12,000 households."
+      ],
+      "gold_city": [
+        "Sample City"
+      ],
+      "cached_run_dir": "sample_run_1"
+    }
+  ]
+}
