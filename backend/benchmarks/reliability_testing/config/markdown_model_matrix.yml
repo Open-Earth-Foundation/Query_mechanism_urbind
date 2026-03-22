@@ -1,0 +1,48 @@
+# WARNING:
+# This benchmark can burn a very large number of tokens and become expensive fast.
+# It runs retrieval once, then replays the markdown stage across every enabled model
+# for all selected cities and batches. Before running:
+# - prefer a small city subset with `selected_cities` or CLI `--city`
+# - prefer a short model list
+# - avoid long-thinking / high-output models unless explicitly needed
+# - inspect current OpenRouter pricing first
+question: |-
+  What total capital expenditure (CAPEX) related to EV transition is identified or inferable in the CCCs, broken down into: Vehicle procurement, Charging infrastructure, Grid upgrades, Digital mobility integration What proportion is already financed vs. unfunded?
+
+  Start answer with a table
+retrieval_queries:
+  - |-
+    What total capital expenditure (CAPEX) related to EV transition is identified or inferable in the CCCs, broken down into: Vehicle procurement, Charging infrastructure, Grid upgrades, Digital mobility integration What proportion is already financed vs. unfunded?
+
+    Start answer with a table
+  - vehicle investment cars electric cars
+  - charging infrastructure chargers
+selected_cities: []
+payload_capture_mode: failed_only
+markdown_defaults:
+  max_turns: 10
+  batch_max_chunks: 32
+  max_workers: 8
+  reasoning_effort: low
+models:
+  - id: x-ai/grok-4.1-fast
+    enabled: true
+    reasoning_effort: low
+  - id: openai/gpt-5-nano
+    enabled: true
+    reasoning_effort: null
+  - id: openai/gpt-oss-120b
+    enabled: true
+    reasoning_effort: null
+  - id: meta-llama/llama-4-maverick
+    enabled: true
+    reasoning_effort: null
+  - id: qwen/qwen3.5-flash-02-23
+    enabled: true
+    reasoning_effort: null
+  - id: z-ai/glm-4.7-flash
+    enabled: true
+    reasoning_effort: null
+  - id: upstage/solar-pro-3
+    enabled: true
+    reasoning_effort: null

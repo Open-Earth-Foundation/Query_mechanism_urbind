@@ -150,7 +150,14 @@ def test_markdown_payload_batches_keep_city_chunk_integrity(
     def _fake_run_agent_sync(_agent: object, input_data: str, **_kwargs: object) -> _FakeRunResult:
         payload = json.loads(input_data)
         captured_payloads.append(payload)
-        return _FakeRunResult(MarkdownResearchResult(excerpts=[]))
+        chunk_ids = [str(chunk["chunk_id"]) for chunk in payload["chunks"]]
+        return _FakeRunResult(
+            MarkdownResearchResult(
+                accepted_chunk_ids=chunk_ids,
+                rejected_chunk_ids=[],
+                excerpts=[],
+            )
+        )
 
     monkeypatch.setattr(markdown_agent, "run_agent_sync", _fake_run_agent_sync)
 
@@ -173,3 +180,110 @@ def test_markdown_payload_batches_keep_city_chunk_integrity(
             seen_chunk_ids.append(chunk["chunk_id"])
 
     assert seen_chunk_ids == ["a1", "a2", "a3", "b1"]
+
+
+def test_markdown_payload_capture_failed_only_records_failed_batches(
+    monkeypatch: MonkeyPatch,
+) -> None:
+    config = _build_test_config()
+    documents = [
+        {
+            "path": "A.md",
+            "city_name": "A",
+            "city_key": "a",
+            "content": "alpha",
+            "chunk_id": "a1",
+        },
+        {
+            "path": "B.md",
+            "city_name": "B",
+            "city_key": "b",
+            "content": "beta",
+            "chunk_id": "b1",
+        },
+    ]
+    captured_payloads: list[dict[str, object]] = []
+
+    monkeypatch.setattr(markdown_agent, "build_markdown_agent", lambda *_args, **_kwargs: object())
+
+    def _fake_run_agent_sync(_agent: object, input_data: str, **_kwargs: object) -> _FakeRunResult:
+        payload = json.loads(input_data)
+        if payload["city_name"] == "a":
+            return _FakeRunResult(
+                MarkdownResearchResult(
+                    accepted_chunk_ids=["a1"],
+                    rejected_chunk_ids=[],
+                    excerpts=[],
+                )
+            )
+        raise MaxTurnsExceeded("max turns")
+
+    monkeypatch.setattr(markdown_agent, "run_agent_sync", _fake_run_agent_sync)
+
+    result = extract_markdown_excerpts(
+        "question?",
+        documents,
+        config,
+        api_key="test",
+        batch_payload_mode="failed_only",
+        batch_payload_recorder=captured_payloads.append,
+    )
+
+    assert result.status == "success"
+    assert len(captured_payloads) == 1
+    failed_batch_payload = captured_payloads[0]
+    assert failed_batch_payload["city_name"] == "b"
+    attempts = failed_batch_payload["attempts"]
+    assert isinstance(attempts, list)
+    assert attempts[0]["outcome"] == "max_turns_exceeded"
+
+
+def test_markdown_payload_capture_all_records_success_and_failure(
+    monkeypatch: MonkeyPatch,
+) -> None:
+    config = _build_test_config()
+    documents = [
+        {
+            "path": "A.md",
+            "city_name": "A",
+            "city_key": "a",
+            "content": "alpha",
+            "chunk_id": "a1",
+        },
+        {
+            "path": "B.md",
+            "city_name": "B",
+            "city_key": "b",
+            "content": "beta",
+            "chunk_id": "b1",
+        },
+    ]
+    captured_payloads: list[dict[str, object]] = []
+
+    monkeypatch.setattr(markdown_agent, "build_markdown_agent", lambda *_args, **_kwargs: object())
+
+    def _fake_run_agent_sync(_agent: object, input_data: str, **_kwargs: object) -> _FakeRunResult:
+        payload = json.loads(input_data)
+        if payload["city_name"] == "a":
+            return _FakeRunResult(
+                MarkdownResearchResult(
+                    accepted_chunk_ids=["a1"],
+                    rejected_chunk_ids=[],
+                    excerpts=[],
+                )
+            )
+        raise MaxTurnsExceeded("max turns")
+
+    monkeypatch.setattr(markdown_agent, "run_agent_sync", _fake_run_agent_sync)
+
+    result = extract_markdown_excerpts(
+        "question?",
+        documents,
+        config,
+        api_key="test",
+        batch_payload_mode="all",
+        batch_payload_recorder=captured_payloads.append,
+    )
+
+    assert result.status == "success"
+    assert [payload["city_name"] for payload in captured_payloads] == ["a", "b"]

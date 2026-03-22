@@ -4,8 +4,10 @@ import json
 import logging
 import threading
 import time
+from collections.abc import Callable
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
+from typing import Literal
 
 from agents import Agent, function_tool
 from agents.exceptions import MaxTurnsExceeded, ModelBehaviorError
@@ -105,6 +107,8 @@ def extract_markdown_excerpts(
     api_key: str,
     log_llm_payload: bool = False,
     run_id: str | None = None,
+    batch_payload_mode: Literal["off", "failed_only", "all"] = "off",
+    batch_payload_recorder: Callable[[dict[str, object]], None] | None = None,
 ) -> MarkdownResearchResult:
     """Extract markdown excerpts relevant to the question with graceful partial-failure handling."""
     _thread_local = threading.local()
@@ -170,6 +174,10 @@ def extract_markdown_excerpts(
         error: ErrorInfo | None = None
         failure_payload: MarkdownBatchFailure | None = None
         success = False
+        payload_capture_enabled = (
+            batch_payload_recorder is not None and batch_payload_mode != "off"
+        )
+        attempt_payloads: list[dict[str, object]] = []
 
         chunks_payload = [
             {
@@ -202,7 +210,38 @@ def extract_markdown_excerpts(
         decision_validation: DecisionValidationResult | None = None
         retryable_bad_output_reason: str | None = None
 
+        def _capture_batch_payload(
+            *,
+            success_value: bool,
+            failure_reason: str | None,
+            error_code: str | None = None,
+        ) -> None:
+            if not payload_capture_enabled or batch_payload_recorder is None:
+                return
+            if batch_payload_mode == "failed_only" and success_value:
+                return
+            batch_payload_recorder(
+                {
+                    "question": question,
+                    "city_name": city_name,
+                    "batch_index": batch_index,
+                    "success": success_value,
+                    "failure_reason": failure_reason,
+                    "error_code": error_code,
+                    "input_chunk_ids": input_chunk_ids,
+                    "chunk_count": len(input_chunk_ids),
+                    "request_payload": payload,
+                    "attempts": attempt_payloads,
+                }
+            )
+
         for attempt in range(1, max_attempts + 1):
+            attempt_events: list[dict[str, object]] = []
+
+            def _record_attempt_event(event: dict[str, object]) -> None:
+                if payload_capture_enabled:
+                    attempt_events.append(dict(event))
+
             try:
                 agent = _get_thread_agent()
                 run_result = run_agent_sync(
@@ -210,6 +249,9 @@ def extract_markdown_excerpts(
                     json.dumps(payload, ensure_ascii=False),
                     max_turns=markdown_max_turns,
                     log_llm_payload=log_llm_payload,
+                    payload_recorder=(
+                        _record_attempt_event if payload_capture_enabled else None
+                    ),
                 )
 
                 # Get the final output - handle all format variations
@@ -250,6 +292,23 @@ def extract_markdown_excerpts(
                             decision_validation.unknown_excerpt_source_ids,
                         )
 
+                attempt_payloads.append(
+                    {
+                        "attempt": attempt,
+                        "outcome": (
+                            "retryable_bad_output"
+                            if retryable_bad_output_reason
+                            else "success"
+                        ),
+                        "error_type": (
+                            "RetryableBadOutput"
+                            if retryable_bad_output_reason
+                            else None
+                        ),
+                        "error_message": retryable_bad_output_reason,
+                        "events": attempt_events,
+                    }
+                )
                 if retryable_bad_output_reason and attempt < max_attempts:
                     delay_seconds = compute_retry_delay_seconds(attempt, retry_settings)
                     log_retry_event(
@@ -276,7 +335,16 @@ def extract_markdown_excerpts(
                         context={"city_name": city_name, "batch_index": batch_index},
                     )
                 break
-            except MaxTurnsExceeded:
+            except MaxTurnsExceeded as exc:
+                attempt_payloads.append(
+                    {
+                        "attempt": attempt,
+                        "outcome": "max_turns_exceeded",
+                        "error_type": type(exc).__name__,
+                        "error_message": str(exc),
+                        "events": attempt_events,
+                    }
+                )
                 logger.warning(
                     "Markdown extraction for %s batch %s hit max turns limit.",
                     city_name,
@@ -292,6 +360,11 @@ def extract_markdown_excerpts(
                     reason="MARKDOWN_MAX_TURNS_EXCEEDED",
                     unresolved_chunk_ids=input_chunk_ids,
                 )
+                _capture_batch_payload(
+                    success_value=False,
+                    failure_reason=failure_payload.reason,
+                    error_code=error.code,
+                )
                 return (
                     city_name,
                     batch_index,
@@ -304,6 +377,15 @@ def extract_markdown_excerpts(
                     success,
                 )
             except Exception as exc:  # noqa: BLE001
+                attempt_payloads.append(
+                    {
+                        "attempt": attempt,
+                        "outcome": "exception",
+                        "error_type": type(exc).__name__,
+                        "error_message": str(exc),
+                        "events": attempt_events,
+                    }
+                )
                 if attempt < max_attempts and _is_retryable_error(exc):
                     delay_seconds = compute_retry_delay_seconds(attempt, retry_settings)
                     log_retry_event(
@@ -357,6 +439,11 @@ def extract_markdown_excerpts(
                 reason="invalid_output_after_retries",
                 unresolved_chunk_ids=input_chunk_ids,
             )
+            _capture_batch_payload(
+                success_value=False,
+                failure_reason=failure_payload.reason,
+                error_code=error.code,
+            )
             return (
                 city_name,
                 batch_index,
@@ -384,6 +471,11 @@ def extract_markdown_excerpts(
                 batch_index=batch_index,
                 reason="status_error_without_error",
                 unresolved_chunk_ids=input_chunk_ids,
+            )
+            _capture_batch_payload(
+                success_value=False,
+                failure_reason=failure_payload.reason,
+                error_code=error.code,
             )
             return (
                 city_name,
@@ -419,6 +511,11 @@ def extract_markdown_excerpts(
                 reason="agent_error_status",
                 unresolved_chunk_ids=input_chunk_ids,
             )
+            _capture_batch_payload(
+                success_value=False,
+                failure_reason=failure_payload.reason,
+                error_code=error.code,
+            )
             return (
                 city_name,
                 batch_index,
@@ -441,6 +538,11 @@ def extract_markdown_excerpts(
                 reason="invariant_validation_failed_after_retries",
                 unresolved_chunk_ids=input_chunk_ids,
             )
+            _capture_batch_payload(
+                success_value=False,
+                failure_reason=failure_payload.reason,
+                error_code=error.code,
+            )
             return (
                 city_name,
                 batch_index,
@@ -457,6 +559,7 @@ def extract_markdown_excerpts(
         rejected_chunk_ids.extend(decision_validation.rejected_ids)
         for excerpt in output.excerpts:
             excerpts.append(excerpt)
+        _capture_batch_payload(success_value=True, failure_reason=None)
         return (
             city_name,
             batch_index,

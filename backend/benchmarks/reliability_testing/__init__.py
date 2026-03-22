@@ -1,17 +1,12 @@
-from backend.benchmarks.runner import (
-    BenchmarkMarkdownConfig,
-    BenchmarkModeConfig,
-    BenchmarkQuestionResult,
-    BenchmarkReport,
-    run_retrieval_strategy_benchmark,
-)
-from backend.benchmarks.reliability_testing import (
-    DEFAULT_MATRIX_CONFIG_PATH,
+from backend.benchmarks.reliability_testing.models import (
     ReliabilityBenchmarkMatrix,
     ReliabilityBenchmarkReport,
     ReliabilityMarkdownDefaults,
     ReliabilityModelConfig,
     ReliabilityModelResult,
+)
+from backend.benchmarks.reliability_testing.runner import (
+    DEFAULT_MATRIX_CONFIG_PATH,
     load_reliability_matrix,
     run_markdown_reliability_benchmark,
     select_benchmark_models,
@@ -19,10 +14,6 @@ from backend.benchmarks.reliability_testing import (
 
 __all__ = [
     "DEFAULT_MATRIX_CONFIG_PATH",
-    "BenchmarkMarkdownConfig",
-    "BenchmarkModeConfig",
-    "BenchmarkQuestionResult",
-    "BenchmarkReport",
     "ReliabilityBenchmarkMatrix",
     "ReliabilityBenchmarkReport",
     "ReliabilityMarkdownDefaults",
@@ -30,6 +21,5 @@ __all__ = [
     "ReliabilityModelResult",
     "load_reliability_matrix",
     "run_markdown_reliability_benchmark",
-    "run_retrieval_strategy_benchmark",
     "select_benchmark_models",
 ]

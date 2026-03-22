@@ -6,7 +6,7 @@ import json
 import logging
 import sys
 import threading
-from collections.abc import Mapping, Sequence
+from collections.abc import Callable, Mapping, Sequence
 from typing import Any, Literal
 
 import httpx
@@ -438,6 +438,57 @@ class LlmPayloadLoggingHooks(RunHooksBase[Any, Agent[Any]]):
         self._log_payload(payload)
 
 
+class LlmPayloadCaptureHooks(RunHooksBase[Any, Agent[Any]]):
+    """Capture full LLM payloads in memory for caller-managed persistence."""
+
+    def __init__(self, recorder: Callable[[dict[str, Any]], None]) -> None:
+        self._recorder = recorder
+        self._turn = 0
+
+    async def on_llm_start(
+        self,
+        context: RunContextWrapper[Any],
+        agent: Agent[Any],
+        system_prompt: str | None,
+        input_items: list[TResponseInputItem],
+    ) -> None:
+        del context
+        self._turn += 1
+        self._recorder(
+            {
+                "event": "llm_start",
+                "turn": self._turn,
+                "agent": agent.name,
+                "system_prompt": _safe_serialize(system_prompt),
+                "input_items": _safe_serialize(input_items),
+            }
+        )
+
+    async def on_llm_end(
+        self,
+        context: RunContextWrapper[Any],
+        agent: Agent[Any],
+        response: ModelResponse,
+    ) -> None:
+        del context
+        assistant_text: list[str] = []
+        for output in response.output:
+            assistant_text.extend(_extract_text_from_output_item(output))
+        self._recorder(
+            {
+                "event": "llm_end",
+                "turn": self._turn,
+                "agent": agent.name,
+                "response": {
+                    "response_id": response.response_id,
+                    "usage": _safe_serialize(response.usage),
+                    "assistant_text": assistant_text,
+                    "output": _safe_serialize(response.output),
+                },
+            }
+        )
+
+
 def build_model_settings(
     temperature: float | None,
     max_output_tokens: int | None,
@@ -471,6 +522,7 @@ def run_agent_sync(
     input_data: str,
     max_turns: int = 10,
     log_llm_payload: bool = False,
+    payload_recorder: Callable[[dict[str, Any]], None] | None = None,
 ) -> RunResult:
     """Run an agent synchronously with optional max_turns limit.
 
@@ -479,6 +531,7 @@ def run_agent_sync(
         input_data: The input data as a JSON string
         max_turns: Maximum number of turns before gracefully stopping
         log_llm_payload: Whether to log full LLM request/response payloads
+        payload_recorder: Optional callback receiving structured request/response payloads
 
     Returns:
         The agent's final output
@@ -489,6 +542,8 @@ def run_agent_sync(
     hooks_list: list[RunHooksBase[Any, Agent[Any]]] = [LlmUsageLoggingHooks()]
     if log_llm_payload:
         hooks_list.append(LlmPayloadLoggingHooks())
+    if payload_recorder is not None:
+        hooks_list.append(LlmPayloadCaptureHooks(payload_recorder))
     hooks: RunHooksBase[Any, Agent[Any]] | None = CompositeRunHooks(hooks_list)
 
     loop = getattr(_thread_local, "loop", None)

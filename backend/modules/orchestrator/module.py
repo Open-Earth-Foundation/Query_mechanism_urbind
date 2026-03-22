@@ -23,7 +23,7 @@ from backend.modules.orchestrator.models import (
 )
 from backend.modules.orchestrator.utils import (
     attach_run_file_logger,
-    build_markdown_references,
+    build_markdown_artifacts,
     collect_identifiers,
     fetch_city_list,
     handle_write_decision,
@@ -53,24 +53,10 @@ from backend.services.db_client import DbClient, get_db_client
 from backend.services.run_logger import RunLogger
 from backend.services.schema_registry import load_schema
 from backend.utils.config import AppConfig, get_openrouter_api_key
-from backend.utils.city_normalization import format_city_stem, normalize_city_key
 from backend.utils.paths import RunPaths, build_run_id, create_run_paths
 from backend.utils.tokenization import count_tokens
 
 logger = logging.getLogger(__name__)
-
-
-def _dedupe_preserve_order(values: list[str]) -> list[str]:
-    """Return unique non-empty values while preserving order."""
-    deduped: list[str] = []
-    seen: set[str] = set()
-    for value in values:
-        normalized = value.strip()
-        if not normalized or normalized in seen:
-            continue
-        seen.add(normalized)
-        deduped.append(normalized)
-    return deduped
 
 
 def _build_retrieval_queries(
@@ -94,133 +80,6 @@ def _build_retrieval_queries(
         if len(normalized) >= limit:
             break
     return normalized
-
-
-def _collect_markdown_decision_artifacts(
-    markdown_chunks: list[dict[str, object]],
-    markdown_result: MarkdownResearchResult,
-) -> tuple[dict[str, object], dict[str, object], dict[str, object]]:
-    """Build accepted/rejected id artifacts and a run-level decision audit."""
-
-    batch_failures_payload = [
-        failure.model_dump() for failure in markdown_result.batch_failures
-    ]
-
-    retrieved_ids = _dedupe_preserve_order(
-        [str(document.get("chunk_id", "")).strip() for document in markdown_chunks]
-    )
-    retrieved_set = set(retrieved_ids)
-
-    accepted_ids = _dedupe_preserve_order(markdown_result.accepted_chunk_ids)
-    rejected_ids = _dedupe_preserve_order(markdown_result.rejected_chunk_ids)
-    unresolved_ids = _dedupe_preserve_order(markdown_result.unresolved_chunk_ids)
-    accepted_set = set(accepted_ids)
-    rejected_set = set(rejected_ids)
-    unresolved_set = set(unresolved_ids)
-
-    overlap_decision_ids = {
-        chunk_id
-        for chunk_id in accepted_set
-        if chunk_id in rejected_set or chunk_id in unresolved_set
-    } | {chunk_id for chunk_id in rejected_set if chunk_id in unresolved_set}
-
-    unknown_decision_ids = _dedupe_preserve_order(
-        [
-            chunk_id
-            for chunk_id in accepted_ids + rejected_ids + unresolved_ids
-            if chunk_id not in retrieved_set
-        ]
-    )
-    unknown_decision_set = set(unknown_decision_ids)
-
-    excerpt_source_ids: list[str] = []
-    for excerpt in markdown_result.excerpts:
-        excerpt_source_ids.extend(
-            [
-                source_chunk_id.strip()
-                for source_chunk_id in excerpt.source_chunk_ids
-                if source_chunk_id.strip()
-            ]
-        )
-    unknown_excerpt_source_ids = _dedupe_preserve_order(
-        [
-            source_chunk_id
-            for source_chunk_id in excerpt_source_ids
-            if source_chunk_id not in accepted_set
-        ]
-    )
-
-    decided_valid_ids = {
-        chunk_id
-        for chunk_id in accepted_set | rejected_set | unresolved_set
-        if chunk_id in retrieved_set and chunk_id not in unknown_decision_set
-    }
-    missing_chunk_ids = [
-        chunk_id for chunk_id in retrieved_ids if chunk_id not in decided_valid_ids
-    ]
-
-    city_by_chunk_id: dict[str, str] = {}
-    for chunk in markdown_chunks:
-        chunk_id = str(chunk.get("chunk_id", "")).strip()
-        if not chunk_id:
-            continue
-        city_key = str(chunk.get("city_key", "")).strip()
-        if not city_key:
-            city_name = str(chunk.get("city_name", "")).strip()
-            city_key = normalize_city_key(city_name) if city_name else ""
-        city_by_chunk_id[chunk_id] = city_key or "unknown"
-
-    accepted_by_city: dict[str, list[str]] = {}
-    for chunk_id in accepted_ids:
-        city_key = city_by_chunk_id.get(chunk_id, "unknown")
-        accepted_by_city.setdefault(city_key, []).append(chunk_id)
-
-    rejected_by_city: dict[str, list[str]] = {}
-    for chunk_id in rejected_ids:
-        city_key = city_by_chunk_id.get(chunk_id, "unknown")
-        rejected_by_city.setdefault(city_key, []).append(chunk_id)
-
-    invariant_ok = not (
-        overlap_decision_ids
-        or unknown_decision_ids
-        or missing_chunk_ids
-        or unknown_excerpt_source_ids
-    )
-    artifact_status = (
-        "complete"
-        if invariant_ok and not markdown_result.batch_failures and not unresolved_ids
-        else "partial"
-    )
-
-    accepted_artifact = {
-        "status": artifact_status,
-        "accepted_chunk_ids": accepted_ids,
-        "accepted_by_city": accepted_by_city,
-        "counts": {
-            "accepted": len(accepted_ids),
-        },
-    }
-    rejected_artifact = {
-        "status": artifact_status,
-        "rejected_chunk_ids": rejected_ids,
-        "rejected_by_city": rejected_by_city,
-        "counts": {
-            "rejected": len(rejected_ids),
-        },
-    }
-    audit_artifact = {
-        "retrieved_total": len(retrieved_ids),
-        "accepted_total": len(accepted_ids),
-        "rejected_total": len(rejected_ids),
-        "unresolved_total": len(unresolved_ids),
-        "invariant_ok": invariant_ok,
-        "missing_chunk_ids": missing_chunk_ids,
-        "unknown_decision_ids": unknown_decision_ids,
-        "unknown_excerpt_source_ids": unknown_excerpt_source_ids,
-        "overlap_decision_ids": sorted(overlap_decision_ids),
-        "batch_failures": batch_failures_payload,
-    }
-    return accepted_artifact, rejected_artifact, audit_artifact
 
 
 def run_pipeline(
@@ -604,15 +463,29 @@ def run_pipeline(
     markdown_chunks = markdown_payload["markdown_chunks"]
     markdown_result = markdown_payload["result"]
     if isinstance(markdown_result, MarkdownResearchResult):
-        markdown_bundle = markdown_result.model_dump()
-        (
-            accepted_artifact,
-            rejected_artifact,
-            decision_audit_artifact,
-        ) = _collect_markdown_decision_artifacts(markdown_chunks, markdown_result)
-        write_json(paths.markdown_accepted_excerpts, accepted_artifact)
-        write_json(paths.markdown_rejected_excerpts, rejected_artifact)
-        write_json(paths.markdown_decision_audit, decision_audit_artifact)
+        markdown_artifacts = build_markdown_artifacts(
+            markdown_chunks=markdown_chunks,
+            markdown_result=markdown_result,
+            run_id=run_id_value,
+            markdown_source_mode=str(
+                markdown_payload.get("markdown_source_mode", "standard_chunking")
+            ),
+            analysis_mode=analysis_mode,
+            retrieval_queries=list(markdown_payload.get("retrieval_queries", [])),
+            selected_cities=selected_cities,
+        )
+        write_json(
+            paths.markdown_accepted_excerpts,
+            markdown_artifacts.accepted_payload,
+        )
+        write_json(
+            paths.markdown_rejected_excerpts,
+            markdown_artifacts.rejected_payload,
+        )
+        write_json(
+            paths.markdown_decision_audit,
+            markdown_artifacts.decision_audit_payload,
+        )
         run_logger.record_artifact(
             "markdown_accepted_excerpts",
             paths.markdown_accepted_excerpts,
@@ -627,98 +500,27 @@ def run_pipeline(
         )
         logger.info(
             "markdown_decision_audit accepted=%d rejected=%d unresolved=%d invariant_ok=%s",
-            int(decision_audit_artifact["accepted_total"]),
-            int(decision_audit_artifact["rejected_total"]),
-            int(decision_audit_artifact["unresolved_total"]),
-            bool(decision_audit_artifact["invariant_ok"]),
+            int(markdown_artifacts.decision_audit_payload["accepted_total"]),
+            int(markdown_artifacts.decision_audit_payload["rejected_total"]),
+            int(markdown_artifacts.decision_audit_payload["unresolved_total"]),
+            bool(markdown_artifacts.decision_audit_payload["invariant_ok"]),
         )
-        markdown_bundle["decision_audit"] = {
-            "accepted_total": decision_audit_artifact["accepted_total"],
-            "rejected_total": decision_audit_artifact["rejected_total"],
-            "unresolved_total": decision_audit_artifact["unresolved_total"],
-            "invariant_ok": decision_audit_artifact["invariant_ok"],
-            "status": accepted_artifact["status"],
-        }
-        source_mode = str(
-            markdown_payload.get("markdown_source_mode", "standard_chunking")
+        write_json(paths.markdown_references, markdown_artifacts.references_payload)
+        run_logger.record_artifact(
+            "markdown_references",
+            paths.markdown_references,
         )
-        markdown_bundle["retrieval_mode"] = source_mode
-        markdown_bundle["analysis_mode"] = analysis_mode
-        if source_mode == "vector_store_retrieval":
-            markdown_bundle["retrieval_queries"] = markdown_payload.get(
-                "retrieval_queries",
-                [],
-            )
-        inspected_cities = sorted(
-            {
-                normalize_city_key(str(document.get("city_key", "")).strip())
-                for document in markdown_chunks
-                if normalize_city_key(str(document.get("city_key", "")).strip())
-            }
-        )
-        markdown_bundle["inspected_cities"] = inspected_cities
-        # Display names for evidence header (e.g. "Aachen" not "aachen")
-        key_to_name: dict[str, str] = {}
-        for document in markdown_chunks:
-            key = normalize_city_key(str(document.get("city_key", "")).strip())
-            name = document.get("city_name")
-            if key and key not in key_to_name:
-                key_to_name[key] = (
-                    format_city_stem(str(name).strip())
-                    if name
-                    else format_city_stem(key)
-                )
-        markdown_bundle["inspected_city_names"] = [
-            key_to_name[k] for k in inspected_cities if k in key_to_name
-        ]
-        selected_city_keys = sorted(
-            {
-                normalize_city_key(city)
-                for city in (selected_cities or [])
-                if isinstance(city, str) and city.strip()
-            }
-        )
-        markdown_bundle["selected_cities"] = selected_city_keys
-        if selected_city_keys:
-            markdown_bundle["selected_city_names"] = [
-                key_to_name.get(key, format_city_stem(key))
-                for key in selected_city_keys
-            ]
-        else:
-            markdown_bundle["selected_city_names"] = markdown_bundle[
-                "inspected_city_names"
-            ]
-        excerpts = markdown_bundle.get("excerpts", [])
-        if isinstance(excerpts, list):
-            excerpt_entries = [
-                excerpt for excerpt in excerpts if isinstance(excerpt, dict)
-            ]
-            enriched_excerpts, references_payload = build_markdown_references(
-                run_id=run_id_value,
-                excerpts=excerpt_entries,
-            )
-            markdown_bundle["excerpts"] = enriched_excerpts
-            markdown_bundle["excerpt_count"] = len(enriched_excerpts)
-            write_json(paths.markdown_references, references_payload)
-            run_logger.record_artifact(
-                "markdown_references",
-                paths.markdown_references,
-            )
-        else:
-            markdown_bundle["excerpts"] = []
-            markdown_bundle["excerpt_count"] = 0
-
-        write_json(paths.markdown_excerpts, markdown_bundle)
+        write_json(paths.markdown_excerpts, markdown_artifacts.excerpts_payload)
         run_logger.record_artifact("markdown_excerpts", paths.markdown_excerpts)
-        run_logger.update_markdown_bundle(markdown_bundle)
+        run_logger.update_markdown_bundle(markdown_artifacts.excerpts_payload)
         if config.markdown_researcher.strict_decision_audit and not bool(
-            decision_audit_artifact["invariant_ok"]
+            markdown_artifacts.decision_audit_payload["invariant_ok"]
         ):
             run_logger.record_decision(
                 {
                     "code": "MARKDOWN_DECISION_AUDIT_FAILED",
                     "message": "Strict markdown decision audit failed.",
-                    "decision_audit": decision_audit_artifact,
+                    "decision_audit": markdown_artifacts.decision_audit_payload,
                 }
             )
             run_logger.finalize(

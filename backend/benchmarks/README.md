@@ -9,6 +9,7 @@ This folder contains benchmark-only setup, separate from normal runtime settings
 - `config/base.env`: shared settings applied to both benchmark modes.
 - `config/mode_standard.env`: overrides for standard chunking runs.
 - `config/mode_vector.env`: overrides for vector-store runs.
+- `reliability_testing/config/markdown_model_matrix.yml`: markdown-only reliability matrix used by `python -m backend.scripts.run_markdown_reliability_benchmark`.
 
 ## Override order
 
@@ -41,5 +42,17 @@ If a key appears in both, the mode-specific value wins.
   counters (rate limits, retry exhausted, max-turns, and non-working calls).
 - Failed runs are kept in the report with error details and issue counters, and
   benchmark execution continues with remaining runs.
+- The reliability benchmark under `reliability_testing/` freezes retrieval once and
+  compares only markdown-stage behavior across multiple OpenRouter models. Its
+  outputs are written under `output/reliability_testing/<benchmark_id>/`.
+  It writes `progress.json` plus refreshed `benchmark_report.json/.md` snapshots
+  during execution, and each completed model gets a `model_result.json`.
+  It can consume a large amount of tokens and become expensive quickly, so start
+  with a small city subset and a short model list.
+  Keep expensive or experimental models in the matrix with `enabled: false` and
+  opt into them explicitly with `--model` when needed.
+  Use `selected_cities` in the matrix or repeatable `--city` flags on
+  `python -m backend.scripts.run_markdown_reliability_benchmark` to run a
+  smaller city subset.
 - For ad-hoc comparison of two files, use:
   `python -m backend.scripts.judge_final_outputs --left-final <path_a> --right-final <path_b> --question "..."`

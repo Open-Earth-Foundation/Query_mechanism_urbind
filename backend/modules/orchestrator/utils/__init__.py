@@ -8,6 +8,11 @@ from backend.modules.orchestrator.utils.handlers import (
     handle_write_decision,
 )
 from backend.modules.orchestrator.utils.logging_helpers import attach_run_file_logger
+from backend.modules.orchestrator.utils.markdown_artifacts import (
+    MarkdownArtifacts,
+    build_markdown_artifacts,
+    collect_markdown_decision_artifacts,
+)
 from backend.modules.orchestrator.utils.references import (
     REF_ID_PATTERN,
     build_markdown_references,
@@ -27,7 +32,10 @@ __all__ = [
     "handle_task_error",
     "handle_write_decision",
     "attach_run_file_logger",
+    "MarkdownArtifacts",
+    "build_markdown_artifacts",
     "build_markdown_references",
+    "collect_markdown_decision_artifacts",
     "is_valid_ref_id",
     "REF_ID_PATTERN",
     "collect_identifiers",

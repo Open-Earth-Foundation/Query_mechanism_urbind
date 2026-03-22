@@ -356,6 +356,62 @@ Outputs are written to `output/benchmarks/<benchmark_id>/`:
 - `benchmark_report.md`: human-readable summary with runtime/tokens/sec, judge score summaries, and LLM issue counters.
 - `runs/<mode>/<run_id>/...`: original pipeline artifacts for each benchmark run.
 
+## Markdown reliability benchmark
+
+Use this benchmark to isolate markdown-stage reliability for one frozen retrieval corpus. It runs retrieval once from a YAML-defined question/query set, then replays only the markdown researcher across a model matrix under `backend/benchmarks/reliability_testing/`.
+
+Warning: this benchmark can burn a lot of tokens and cost real money because it runs the markdown stage across every enabled model and batch. Start with a few cities and a short model list.
+
+- Matrix config: `backend/benchmarks/reliability_testing/config/markdown_model_matrix.yml`
+- Runner script: `python -m backend.scripts.run_markdown_reliability_benchmark`
+- Default output root: `output/reliability_testing/<benchmark_id>/`
+- City scoping: set `selected_cities` in the matrix, or override it per run with repeatable `--city`.
+- High-cost models can stay in the matrix with `enabled: false`; they will not run unless you explicitly target them with `--model`.
+
+Example:
+
+```bash
+python -m backend.scripts.run_markdown_reliability_benchmark \
+  --benchmark-id ev_markdown_reliability \
+  --model x-ai/grok-4.1-fast \
+  --model openai/gpt-5-nano
+```
+
+Ten-city example:
+
+```bash
+python -m backend.scripts.run_markdown_reliability_benchmark \
+  --benchmark-id ev_reliability_10_cities \
+  --city Aachen \
+  --city Leipzig \
+  --city Mannheim \
+  --city Munich \
+  --city Oslo \
+  --city Lisbon \
+  --city Porto \
+  --city Turin \
+  --city Zaragoza \
+  --city "Vitoria Gasteiz"
+```
+
+What it writes:
+
+- `progress.json`: live benchmark progress, including the current model and completed-model count.
+- `retrieval.json`: the frozen retrieved chunk corpus reused across all models.
+- `batches.json`: the deterministic city-batch plan derived from that corpus.
+- `benchmark_report.json` and `benchmark_report.md`: per-model reliability metrics and rollups. These are refreshed after each model.
+- `<model_slug>/run.log` and `<model_slug>/error_log.txt`: per-model execution logs.
+- `<model_slug>/model_result.json`: per-model summary written as soon as that model finishes.
+- `<model_slug>/markdown/excerpts.json`, `accepted_excerpts.json`, `rejected_excerpts.json`, `decision_audit.json`, `references.json`
+- `<model_slug>/markdown/failed_batch_payloads.json`: raw failed-batch payload captures when payload capture is enabled in the matrix.
+
+The benchmark is vector-store-retrieval-only and markdown-only:
+
+- it does not run SQL
+- it does not run the writer
+- it does not rebuild the vector index
+- it keeps retrieval queries, retrieved chunks, and markdown batching fixed so model reliability is the only variable
+
 Standalone judge command for any two outputs:
 
 ```
