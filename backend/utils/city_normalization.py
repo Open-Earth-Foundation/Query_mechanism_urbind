@@ -30,6 +30,22 @@ def normalize_city_keys(values: list[str] | None) -> list[str]:
     return normalized
 
 
+def dedupe_city_labels(values: list[str] | None) -> list[str]:
+    """De-duplicate city labels by normalized key while preserving display text."""
+    if not values:
+        return []
+    deduped: list[str] = []
+    seen: set[str] = set()
+    for value in values:
+        cleaned = value.strip()
+        key = normalize_city_key(cleaned)
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        deduped.append(cleaned)
+    return deduped
+
+
 def format_city_stem(value: str) -> str:
     """Title-case city stem while preserving separators such as `_` and `-`."""
     cleaned = value.strip()
@@ -55,6 +71,7 @@ def format_city_display_name(value: str) -> str:
 __all__ = [
     "normalize_city_key",
     "normalize_city_keys",
+    "dedupe_city_labels",
     "format_city_stem",
     "format_city_display_name",
 ]

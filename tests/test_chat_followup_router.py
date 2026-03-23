@@ -6,7 +6,6 @@ import pytest
 from backend.modules.orchestrator import agent as orchestrator_agent
 from backend.modules.orchestrator.models import ChatFollowupDecision
 from backend.utils.config import (
-    AgentConfig,
     AssumptionsReviewerConfig,
     AppConfig,
     ChatConfig,
@@ -14,6 +13,7 @@ from backend.utils.config import (
     OrchestratorConfig,
     RetryConfig,
     SqlResearcherConfig,
+    WriterConfig,
 )
 
 
@@ -49,7 +49,7 @@ def _build_test_config(tmp_path: Path) -> AppConfig:
         ),
         sql_researcher=SqlResearcherConfig(model="test-model"),
         markdown_researcher=_markdown_researcher_config(),
-        writer=AgentConfig(model="test-model"),
+        writer=WriterConfig(model="test-model"),
         chat=_chat_config(),
         assumptions_reviewer=AssumptionsReviewerConfig(model="test-model"),
         retry=RetryConfig(backoff_base_seconds=1.0, backoff_max_seconds=30.0),

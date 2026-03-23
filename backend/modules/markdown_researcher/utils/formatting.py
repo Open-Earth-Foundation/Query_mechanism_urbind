@@ -14,8 +14,15 @@ def extract_city_name(document: dict[str, str]) -> str:
     return ""
 
 
-def format_batch_failure(city_name: str, batch_index: int, reason: str) -> str:
+def format_batch_failure(
+    city_name: str,
+    batch_index: int,
+    reason: str,
+    split_path: str | None = None,
+) -> str:
     """Build a compact failure marker for a city batch."""
+    if split_path:
+        return f"{city_name}#batch{batch_index}[{split_path}]: {reason}"
     return f"{city_name}#batch{batch_index}: {reason}"
 
 

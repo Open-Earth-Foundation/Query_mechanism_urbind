@@ -19,6 +19,7 @@ class MarkdownBatchFailure(BaseModel):
 
     city_name: str
     batch_index: int
+    split_path: str | None = None
     reason: str
     unresolved_chunk_ids: list[str] = Field(default_factory=list)
 

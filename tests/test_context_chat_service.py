@@ -12,7 +12,6 @@ import backend.api.services.prompts.context_chat as context_chat_prompts
 import backend.api.services.utils.context_chat as context_chat_utils
 from backend.api.services import context_chat
 from backend.utils.config import (
-    AgentConfig,
     AssumptionsReviewerConfig,
     AppConfig,
     ChatConfig,
@@ -20,6 +19,7 @@ from backend.utils.config import (
     OrchestratorConfig,
     RetryConfig,
     SqlResearcherConfig,
+    WriterConfig,
     load_config,
 )
 from backend.utils.retry import RetrySettings
@@ -65,7 +65,7 @@ def _app_config(
         orchestrator=OrchestratorConfig(model="test-model", context_bundle_name="context_bundle.json"),
         sql_researcher=SqlResearcherConfig(model="test-model"),
         markdown_researcher=_markdown_researcher_config(),
-        writer=AgentConfig(model="test-model"),
+        writer=WriterConfig(model="test-model"),
         chat=chat or _chat_config(),
         assumptions_reviewer=AssumptionsReviewerConfig(model="test-model"),
         retry=RetryConfig(backoff_base_seconds=1.0, backoff_max_seconds=30.0),

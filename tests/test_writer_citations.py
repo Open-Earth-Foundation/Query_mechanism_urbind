@@ -7,6 +7,10 @@ import pytest
 
 from backend.modules.writer import agent as writer_agent
 from backend.modules.writer.models import WriterOutput
+from backend.modules.writer.utils.markdown_helpers import (
+    extract_cited_ref_ids,
+    normalize_reference_citations,
+)
 from backend.utils.config import AppConfig
 from tests.support import build_test_app_config
 
@@ -37,6 +41,15 @@ def _build_test_config(tmp_path: Path) -> AppConfig:
         markdown_dir=tmp_path / "documents",
         enable_sql=False,
     )
+
+
+def test_normalize_reference_citations_canonicalizes_compact_tokens() -> None:
+    content = "Munich [ref1] Berlin [ ref2 ] Keep [note] Invalid [ref_0]"
+
+    normalized = normalize_reference_citations(content)
+
+    assert normalized == "Munich [ref_1] Berlin [ref_2] Keep [note] Invalid [ref_0]"
+    assert extract_cited_ref_ids(normalized) == {"ref_1", "ref_2"}
 
 
 def test_writer_logs_warning_when_citations_missing(
@@ -195,6 +208,70 @@ def test_writer_retries_when_city_citation_coverage_is_missing(
         payload.get("status") == "retrying" and payload.get("coverage_ratio") == "1/2"
         for payload in coverage_payloads
     )
+    assert any(
+        payload.get("status") == "confirmed" and payload.get("coverage_ratio") == "2/2"
+        for payload in coverage_payloads
+    )
+
+
+def test_writer_normalizes_compact_reference_tokens_before_coverage_checks(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+    caplog: pytest.LogCaptureFixture,
+) -> None:
+    config = _build_test_config(tmp_path)
+    context_bundle: dict[str, object] = {
+        "markdown": {
+            "excerpt_count": 2,
+            "selected_city_names": ["Munich", "Berlin"],
+            "excerpts": [
+                {
+                    "ref_id": "ref_1",
+                    "city_name": "Munich",
+                    "quote": "Munich charging evidence.",
+                    "partial_answer": "Munich charging evidence.",
+                },
+                {
+                    "ref_id": "ref_2",
+                    "city_name": "Berlin",
+                    "quote": "Berlin charging evidence.",
+                    "partial_answer": "Berlin charging evidence.",
+                },
+            ],
+        }
+    }
+
+    captured_inputs: list[dict[str, object]] = []
+    monkeypatch.setattr(writer_agent, "build_writer_agent", lambda *_args, **_kwargs: object())
+
+    def _fake_run_agent_sync(
+        _agent: object,
+        input_text: str,
+        log_llm_payload: bool,
+        **_kwargs: object,
+    ) -> _FakeRunResult:
+        del log_llm_payload
+        captured_inputs.append(json.loads(input_text))
+        return _FakeRunResult(WriterOutput(content="Munich update [ref1]\nBerlin update [ref2]"))
+
+    monkeypatch.setattr(writer_agent, "run_agent_sync", _fake_run_agent_sync)
+    caplog.set_level(logging.INFO)
+
+    output = writer_agent.write_markdown(
+        question="Summarize city charging evidence.",
+        context_bundle=context_bundle,
+        config=config,
+        api_key="test-key",
+        log_llm_payload=False,
+        run_id="run-writer-compact-refs",
+    )
+
+    assert len(captured_inputs) == 1
+    assert "[ref_1]" in output.content
+    assert "[ref_2]" in output.content
+    assert "[ref1]" not in output.content
+    assert "[ref2]" not in output.content
+    coverage_payloads = _extract_coverage_payloads(caplog.records)
     assert any(
         payload.get("status") == "confirmed" and payload.get("coverage_ratio") == "2/2"
         for payload in coverage_payloads

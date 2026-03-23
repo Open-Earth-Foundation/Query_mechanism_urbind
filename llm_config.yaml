@@ -81,7 +81,7 @@ vector_store:
   auto_update_on_run: false
   index_manifest_path: ".chroma/index_manifest.json"
 retry:
-  max_attempts: 5
+  max_attempts: 3
   backoff_base_seconds: 1.0
   backoff_max_seconds: 30.0
 openrouter_base_url: "https://openrouter.ai/api/v1"
