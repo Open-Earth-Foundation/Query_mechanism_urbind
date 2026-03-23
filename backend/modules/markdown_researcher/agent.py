@@ -5,6 +5,7 @@ import logging
 import threading
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from dataclasses import dataclass, field
 from pathlib import Path
 
 from agents import Agent, function_tool
@@ -20,6 +21,7 @@ from backend.modules.markdown_researcher.models import (
 from backend.modules.markdown_researcher.services import (
     build_city_batches,
     resolve_batch_input_token_limit,
+    split_batch_documents,
     split_documents_by_city,
 )
 from backend.modules.markdown_researcher.utils import (
@@ -43,6 +45,39 @@ from backend.utils.retry import (
 )
 
 logger = logging.getLogger(__name__)
+
+MARKDOWN_SPLIT_CHILD_ATTEMPTS = 1
+MARKDOWN_SPLIT_MAX_DEPTH = 2
+
+
+@dataclass
+class _BatchAttemptResult:
+    """Outcome for one batch shape after exhausting its local attempt budget."""
+
+    success: bool
+    excerpts: list[MarkdownExcerpt] = field(default_factory=list)
+    accepted_chunk_ids: list[str] = field(default_factory=list)
+    rejected_chunk_ids: list[str] = field(default_factory=list)
+    unresolved_chunk_ids: list[str] = field(default_factory=list)
+    error: ErrorInfo | None = None
+    failure_reason: str | None = None
+    max_turns_exceeded: bool = False
+    split_eligible: bool = False
+
+
+@dataclass
+class _BatchExecutionResult:
+    """Aggregate outcome for one top-level batch after optional split recovery."""
+
+    excerpts: list[MarkdownExcerpt] = field(default_factory=list)
+    accepted_chunk_ids: list[str] = field(default_factory=list)
+    rejected_chunk_ids: list[str] = field(default_factory=list)
+    unresolved_chunk_ids: list[str] = field(default_factory=list)
+    batch_failures: list[MarkdownBatchFailure] = field(default_factory=list)
+    failed_markers: list[str] = field(default_factory=list)
+    error: ErrorInfo | None = None
+    any_success: bool = False
+    max_turns_exceeded: bool = False
 
 
 def _dedupe_preserve_order(values: list[str]) -> list[str]:
@@ -148,29 +183,61 @@ def extract_markdown_excerpts(
             return True
         return False
 
-    def _process_city_batch(
+    def _render_split_path(split_path: tuple[int, ...]) -> str | None:
+        """Render one split lineage path for logs and failure payloads."""
+        if not split_path:
+            return None
+        return ".".join(str(part) for part in split_path)
+
+    def _finalize_failed_batch(
+        city_name: str,
+        batch_index: int,
+        attempt_result: _BatchAttemptResult,
+        split_path: tuple[int, ...],
+    ) -> _BatchExecutionResult:
+        """Convert one exhausted batch attempt into a final leaf failure payload."""
+        split_label = _render_split_path(split_path)
+        reason = attempt_result.failure_reason or (
+            attempt_result.error.code
+            if attempt_result.error is not None
+            else "MARKDOWN_BATCH_FAILURE"
+        )
+        error = attempt_result.error or ErrorInfo(
+            code="MARKDOWN_BATCH_FAILURE",
+            message="Markdown batch failed without an explicit error payload.",
+        )
+        return _BatchExecutionResult(
+            unresolved_chunk_ids=list(attempt_result.unresolved_chunk_ids),
+            batch_failures=[
+                MarkdownBatchFailure(
+                    city_name=city_name,
+                    batch_index=batch_index,
+                    split_path=split_label,
+                    reason=reason,
+                    unresolved_chunk_ids=list(attempt_result.unresolved_chunk_ids),
+                )
+            ],
+            failed_markers=[
+                format_batch_failure(
+                    city_name,
+                    batch_index,
+                    error.code,
+                    split_label,
+                )
+            ],
+            error=error,
+            max_turns_exceeded=attempt_result.max_turns_exceeded,
+        )
+
+    def _run_batch_attempts(
         city_name: str,
         batch_index: int,
         batch: list[dict[str, object]],
-    ) -> tuple[
-        str,
-        int,
-        list[MarkdownExcerpt],
-        list[str],
-        list[str],
-        list[str],
-        MarkdownBatchFailure | None,
-        ErrorInfo | None,
-        bool,
-    ]:
-        """Process one city batch and return excerpts."""
-        excerpts: list[MarkdownExcerpt] = []
-        accepted_chunk_ids: list[str] = []
-        rejected_chunk_ids: list[str] = []
-        error: ErrorInfo | None = None
-        failure_payload: MarkdownBatchFailure | None = None
-        success = False
-
+        *,
+        max_attempts: int,
+        split_path: tuple[int, ...] = (),
+    ) -> _BatchAttemptResult:
+        """Execute one batch shape with the provided attempt budget."""
         chunks_payload = [
             {
                 "chunk_id": str(document.get("chunk_id", "")),
@@ -190,8 +257,13 @@ def extract_markdown_excerpts(
             "city_name": city_name,
             "chunks": chunks_payload,
         }
+        split_label = _render_split_path(split_path)
+        split_display = split_label or "root"
+        retry_context = {"city_name": city_name, "batch_index": batch_index}
+        if split_label is not None:
+            retry_context["split_path"] = split_label
         retry_settings = RetrySettings.bounded(
-            max_attempts=config.retry.max_attempts,
+            max_attempts=max_attempts,
             backoff_base_seconds=config.retry.backoff_base_seconds,
             backoff_max_seconds=config.retry.backoff_max_seconds,
         )
@@ -235,13 +307,15 @@ def extract_markdown_excerpts(
                         )
                         logger.warning(
                             (
-                                "run_id=%s city=%s batch=%s malformed decision payload "
+                                "run_id=%s city=%s batch=%s split=%s "
+                                "malformed decision payload "
                                 "violations=%s overlap=%s unknown_accepted=%s "
                                 "unknown_rejected=%s missing=%s unknown_excerpt_sources=%s"
                             ),
                             run_id,
                             city_name,
                             batch_index,
+                            split_display,
                             decision_validation.violation_codes,
                             decision_validation.overlap_ids,
                             decision_validation.unknown_accepted_ids,
@@ -260,7 +334,7 @@ def extract_markdown_excerpts(
                         error_type="RetryableBadOutput",
                         error_message=retryable_bad_output_reason,
                         next_backoff_seconds=delay_seconds,
-                        context={"city_name": city_name, "batch_index": batch_index},
+                        context=retry_context,
                     )
                     if delay_seconds > 0:
                         time.sleep(delay_seconds)
@@ -273,35 +347,51 @@ def extract_markdown_excerpts(
                         max_attempts=max_attempts,
                         error_type="RetryableBadOutput",
                         error_message=retryable_bad_output_reason,
-                        context={"city_name": city_name, "batch_index": batch_index},
+                        context=retry_context,
                     )
                 break
-            except MaxTurnsExceeded:
+            except MaxTurnsExceeded as exc:
+                error_message = "Markdown extraction exceeded max turns for this city batch."
+                if attempt < max_attempts:
+                    delay_seconds = compute_retry_delay_seconds(attempt, retry_settings)
+                    log_retry_event(
+                        operation="markdown.batch_extraction",
+                        run_id=run_id,
+                        attempt=attempt,
+                        max_attempts=max_attempts,
+                        error_type=type(exc).__name__,
+                        error_message=error_message,
+                        next_backoff_seconds=delay_seconds,
+                        context=retry_context,
+                    )
+                    if delay_seconds > 0:
+                        time.sleep(delay_seconds)
+                    continue
                 logger.warning(
-                    "Markdown extraction for %s batch %s hit max turns limit.",
+                    "Markdown extraction for %s batch %s split=%s hit max turns limit.",
                     city_name,
                     batch_index,
+                    split_display,
                 )
-                error = ErrorInfo(
-                    code="MARKDOWN_MAX_TURNS_EXCEEDED",
-                    message="Markdown extraction exceeded max turns for this city batch.",
+                log_retry_exhausted(
+                    operation="markdown.batch_extraction",
+                    run_id=run_id,
+                    attempt=attempt,
+                    max_attempts=max_attempts,
+                    error_type=type(exc).__name__,
+                    error_message=error_message,
+                    context=retry_context,
                 )
-                failure_payload = MarkdownBatchFailure(
-                    city_name=city_name,
-                    batch_index=batch_index,
-                    reason="MARKDOWN_MAX_TURNS_EXCEEDED",
+                return _BatchAttemptResult(
+                    success=False,
                     unresolved_chunk_ids=input_chunk_ids,
-                )
-                return (
-                    city_name,
-                    batch_index,
-                    excerpts,
-                    accepted_chunk_ids,
-                    rejected_chunk_ids,
-                    input_chunk_ids,
-                    failure_payload,
-                    error,
-                    success,
+                    error=ErrorInfo(
+                        code="MARKDOWN_MAX_TURNS_EXCEEDED",
+                        message=error_message,
+                    ),
+                    failure_reason="MARKDOWN_MAX_TURNS_EXCEEDED",
+                    max_turns_exceeded=True,
+                    split_eligible=len(batch) > 1,
                 )
             except Exception as exc:  # noqa: BLE001
                 if attempt < max_attempts and _is_retryable_error(exc):
@@ -314,7 +404,7 @@ def extract_markdown_excerpts(
                         error_type=type(exc).__name__,
                         error_message=str(exc),
                         next_backoff_seconds=delay_seconds,
-                        context={"city_name": city_name, "batch_index": batch_index},
+                        context=retry_context,
                     )
                     if delay_seconds > 0:
                         time.sleep(delay_seconds)
@@ -327,81 +417,79 @@ def extract_markdown_excerpts(
                         max_attempts=max_attempts,
                         error_type=type(exc).__name__,
                         error_message=str(exc),
-                        context={"city_name": city_name, "batch_index": batch_index},
+                        context=retry_context,
+                    )
+                    return _BatchAttemptResult(
+                        success=False,
+                        unresolved_chunk_ids=input_chunk_ids,
+                        error=ErrorInfo(
+                            code="MARKDOWN_RETRYABLE_FAILURE",
+                            message=(
+                                "Markdown extraction exhausted retryable failures for this batch."
+                            ),
+                            details=str(exc),
+                        ),
+                        failure_reason=type(exc).__name__,
+                        split_eligible=len(batch) > 1,
                     )
                 logger.exception(
-                    "Markdown %s batch %s failed with non-retryable error.",
+                    "Markdown %s batch %s split=%s failed with non-retryable error.",
                     city_name,
                     batch_index,
+                    split_display,
                 )
                 raise
 
         if output is None:
             logger.warning(
-                "Markdown %s batch %s returned invalid output (coercion failed). result.final_output=%s",
+                (
+                    "Markdown %s batch %s split=%s returned invalid output "
+                    "(coercion failed). result.final_output=%s"
+                ),
                 city_name,
                 batch_index,
+                split_display,
                 (
                     run_result.final_output
                     if hasattr(run_result, "final_output")
                     else run_result
                 ),
             )
-            error = ErrorInfo(
-                code="MARKDOWN_OUTPUT_INVALID",
-                message="Markdown researcher did not return structured excerpts.",
-            )
-            failure_payload = MarkdownBatchFailure(
-                city_name=city_name,
-                batch_index=batch_index,
-                reason="invalid_output_after_retries",
+            return _BatchAttemptResult(
+                success=False,
                 unresolved_chunk_ids=input_chunk_ids,
-            )
-            return (
-                city_name,
-                batch_index,
-                excerpts,
-                accepted_chunk_ids,
-                rejected_chunk_ids,
-                input_chunk_ids,
-                failure_payload,
-                error,
-                success,
+                error=ErrorInfo(
+                    code="MARKDOWN_OUTPUT_INVALID",
+                    message="Markdown researcher did not return structured excerpts.",
+                ),
+                failure_reason="invalid_output_after_retries",
+                split_eligible=len(batch) > 1,
             )
 
         if retryable_bad_output_reason == "status_error_without_error":
             logger.warning(
-                "Markdown %s batch %s returned status=error with empty error payload.",
+                "Markdown %s batch %s split=%s returned status=error with empty error payload.",
                 city_name,
                 batch_index,
+                split_display,
             )
-            error = ErrorInfo(
-                code="MARKDOWN_OUTPUT_ERROR_EMPTY",
-                message="Markdown researcher returned status=error without an error payload.",
-            )
-            failure_payload = MarkdownBatchFailure(
-                city_name=city_name,
-                batch_index=batch_index,
-                reason="status_error_without_error",
+            return _BatchAttemptResult(
+                success=False,
                 unresolved_chunk_ids=input_chunk_ids,
-            )
-            return (
-                city_name,
-                batch_index,
-                excerpts,
-                accepted_chunk_ids,
-                rejected_chunk_ids,
-                input_chunk_ids,
-                failure_payload,
-                error,
-                success,
+                error=ErrorInfo(
+                    code="MARKDOWN_OUTPUT_ERROR_EMPTY",
+                    message="Markdown researcher returned status=error without an error payload.",
+                ),
+                failure_reason="status_error_without_error",
+                split_eligible=len(batch) > 1,
             )
 
         if output.status == "error":
             logger.warning(
-                "Markdown %s batch %s returned error: %s",
+                "Markdown %s batch %s split=%s returned error: %s",
                 city_name,
                 batch_index,
+                split_display,
                 output.error,
             )
             error = output.error
@@ -413,61 +501,118 @@ def extract_markdown_excerpts(
                         "after retries."
                     ),
                 )
-            failure_payload = MarkdownBatchFailure(
-                city_name=city_name,
-                batch_index=batch_index,
-                reason="agent_error_status",
+            return _BatchAttemptResult(
+                success=False,
                 unresolved_chunk_ids=input_chunk_ids,
-            )
-            return (
-                city_name,
-                batch_index,
-                excerpts,
-                accepted_chunk_ids,
-                rejected_chunk_ids,
-                input_chunk_ids,
-                failure_payload,
-                error,
-                success,
+                error=error,
+                failure_reason="agent_error_status",
+                split_eligible=len(batch) > 1,
             )
         if decision_validation is None or not decision_validation.is_valid:
-            error = ErrorInfo(
-                code="MARKDOWN_DECISION_INVALID",
-                message="Markdown researcher returned invalid accepted/rejected decisions.",
-            )
-            failure_payload = MarkdownBatchFailure(
-                city_name=city_name,
-                batch_index=batch_index,
-                reason="invariant_validation_failed_after_retries",
+            return _BatchAttemptResult(
+                success=False,
                 unresolved_chunk_ids=input_chunk_ids,
+                error=ErrorInfo(
+                    code="MARKDOWN_DECISION_INVALID",
+                    message="Markdown researcher returned invalid accepted/rejected decisions.",
+                ),
+                failure_reason="invariant_validation_failed_after_retries",
+                split_eligible=len(batch) > 1,
             )
-            return (
-                city_name,
-                batch_index,
-                excerpts,
-                accepted_chunk_ids,
-                rejected_chunk_ids,
-                input_chunk_ids,
-                failure_payload,
-                error,
-                success,
-            )
-        success = True
-        accepted_chunk_ids.extend(decision_validation.accepted_ids)
-        rejected_chunk_ids.extend(decision_validation.rejected_ids)
-        for excerpt in output.excerpts:
-            excerpts.append(excerpt)
-        return (
+
+        return _BatchAttemptResult(
+            success=True,
+            excerpts=list(output.excerpts),
+            accepted_chunk_ids=list(decision_validation.accepted_ids),
+            rejected_chunk_ids=list(decision_validation.rejected_ids),
+        )
+
+    def _process_city_batch(
+        city_name: str,
+        batch_index: int,
+        batch: list[dict[str, object]],
+        *,
+        max_attempts: int,
+        split_depth: int = 0,
+        split_path: tuple[int, ...] = (),
+    ) -> _BatchExecutionResult:
+        """Process one city batch and optionally recover by recursively halving it."""
+        attempt_result = _run_batch_attempts(
             city_name,
             batch_index,
-            excerpts,
-            accepted_chunk_ids,
-            rejected_chunk_ids,
-            [],
-            None,
-            error,
-            success,
+            batch,
+            max_attempts=max_attempts,
+            split_path=split_path,
         )
+        if attempt_result.success:
+            return _BatchExecutionResult(
+                excerpts=list(attempt_result.excerpts),
+                accepted_chunk_ids=list(attempt_result.accepted_chunk_ids),
+                rejected_chunk_ids=list(attempt_result.rejected_chunk_ids),
+                any_success=True,
+            )
+
+        can_split = (
+            attempt_result.split_eligible
+            and len(batch) > 1
+            and split_depth < MARKDOWN_SPLIT_MAX_DEPTH
+        )
+        if not can_split:
+            return _finalize_failed_batch(
+                city_name,
+                batch_index,
+                attempt_result,
+                split_path,
+            )
+
+        split_label = _render_split_path(split_path) or "root"
+        left_batch, right_batch = split_batch_documents(batch)
+        logger.info(
+            (
+                "run_id=%s city=%s batch=%s split=%s splitting failed markdown batch "
+                "at depth=%d into child_sizes=(%d,%d)"
+            ),
+            run_id,
+            city_name,
+            batch_index,
+            split_label,
+            split_depth + 1,
+            len(left_batch),
+            len(right_batch),
+        )
+        child_results = [
+            _process_city_batch(
+                city_name,
+                batch_index,
+                left_batch,
+                max_attempts=MARKDOWN_SPLIT_CHILD_ATTEMPTS,
+                split_depth=split_depth + 1,
+                split_path=split_path + (1,),
+            ),
+            _process_city_batch(
+                city_name,
+                batch_index,
+                right_batch,
+                max_attempts=MARKDOWN_SPLIT_CHILD_ATTEMPTS,
+                split_depth=split_depth + 1,
+                split_path=split_path + (2,),
+            ),
+        ]
+        aggregate = _BatchExecutionResult(error=attempt_result.error)
+        for child_result in child_results:
+            aggregate.excerpts.extend(child_result.excerpts)
+            aggregate.accepted_chunk_ids.extend(child_result.accepted_chunk_ids)
+            aggregate.rejected_chunk_ids.extend(child_result.rejected_chunk_ids)
+            aggregate.unresolved_chunk_ids.extend(child_result.unresolved_chunk_ids)
+            aggregate.batch_failures.extend(child_result.batch_failures)
+            aggregate.failed_markers.extend(child_result.failed_markers)
+            aggregate.any_success = aggregate.any_success or child_result.any_success
+            aggregate.max_turns_exceeded = (
+                aggregate.max_turns_exceeded or child_result.max_turns_exceeded
+            )
+            if aggregate.error is None and child_result.error is not None:
+                aggregate.error = child_result.error
+        return aggregate
 
     batch_max_chunks = max(config.markdown_researcher.batch_max_chunks, 1)
     batch_token_limit = resolve_batch_input_token_limit(config)
@@ -510,27 +655,23 @@ def extract_markdown_excerpts(
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         futures = {}
         for city_name, batch_idx, batch in all_tasks:
-            future = executor.submit(_process_city_batch, city_name, batch_idx, batch)
+            future = executor.submit(
+                _process_city_batch,
+                city_name,
+                batch_idx,
+                batch,
+                max_attempts=config.retry.max_attempts,
+            )
             futures[future] = (city_name, batch_idx, batch)
 
         for future in as_completed(futures):
             try:
-                (
-                    city_name,
-                    batch_idx,
-                    excerpts,
-                    accepted_chunk_ids,
-                    rejected_chunk_ids,
-                    unresolved_chunk_ids,
-                    failure_payload,
-                    error,
-                    success,
-                ) = future.result()
-                if success:
+                result = future.result()
+                if result.any_success:
                     any_success = True
-                    collected_accepted_ids.extend(accepted_chunk_ids)
-                    collected_rejected_ids.extend(rejected_chunk_ids)
-                    for excerpt in excerpts:
+                    collected_accepted_ids.extend(result.accepted_chunk_ids)
+                    collected_rejected_ids.extend(result.rejected_chunk_ids)
+                    for excerpt in result.excerpts:
                         key = (
                             excerpt.city_name.strip().lower(),
                             excerpt.quote.strip(),
@@ -539,18 +680,16 @@ def extract_markdown_excerpts(
                         if key not in seen:
                             seen.add(key)
                             collected.append(excerpt)
-                elif error:
-                    failed_batches.append(
-                        format_batch_failure(city_name, batch_idx, error.code)
-                    )
-                    if error.code == "MARKDOWN_MAX_TURNS_EXCEEDED":
-                        max_turns_exceeded = True
-                    if unresolved_chunk_ids:
-                        collected_unresolved_ids.extend(unresolved_chunk_ids)
-                    if failure_payload:
-                        batch_failures_payload.append(failure_payload)
-                    if not first_error:
-                        first_error = error
+                if result.failed_markers:
+                    failed_batches.extend(result.failed_markers)
+                if result.max_turns_exceeded:
+                    max_turns_exceeded = True
+                if result.unresolved_chunk_ids:
+                    collected_unresolved_ids.extend(result.unresolved_chunk_ids)
+                if result.batch_failures:
+                    batch_failures_payload.extend(result.batch_failures)
+                if result.error is not None and not first_error:
+                    first_error = result.error
             except Exception as exc:  # noqa: BLE001
                 logger.exception("Markdown batch processing failed")
                 city_name, batch_idx, batch = futures[future]

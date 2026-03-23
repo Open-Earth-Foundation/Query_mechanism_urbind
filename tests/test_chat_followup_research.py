@@ -11,7 +11,6 @@ from backend.modules.markdown_researcher.models import (
 from backend.modules.orchestrator.models import ResearchQuestionRefinement
 from backend.modules.vector_store.models import RetrievedChunk
 from backend.utils.config import (
-    AgentConfig,
     AppConfig,
     AssumptionsReviewerConfig,
     ChatConfig,
@@ -19,6 +18,7 @@ from backend.utils.config import (
     OrchestratorConfig,
     RetryConfig,
     SqlResearcherConfig,
+    WriterConfig,
 )
 
 
@@ -37,7 +37,7 @@ def _build_test_config(tmp_path: Path, *, vector_store_enabled: bool) -> AppConf
             request_backoff_base_seconds=0.5,
             request_backoff_max_seconds=2.0,
         ),
-        writer=AgentConfig(model="test-model"),
+        writer=WriterConfig(model="test-model"),
         chat=ChatConfig(
             model="test-model",
             provider_timeout_seconds=60.0,

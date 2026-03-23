@@ -4,6 +4,7 @@ from backend.modules.markdown_researcher.services import (
     _resolve_chunk_tokens,
     build_city_batches,
     load_markdown_documents,
+    split_batch_documents,
     split_documents_by_city,
 )
 from backend.utils.config import MarkdownResearcherConfig
@@ -141,3 +142,29 @@ def test_build_city_batches_keeps_oversized_chunk_singleton() -> None:
 
     batch_ids = [[str(doc["chunk_id"]) for doc in batch] for _city, _idx, batch in batches]
     assert batch_ids == [["l1"], ["l2"], ["l3"]]
+
+
+def test_split_batch_documents_keeps_order_and_balances_odd_sizes() -> None:
+    """Child batches should preserve order and differ by at most one chunk."""
+    batch = [
+        {"chunk_id": "c1"},
+        {"chunk_id": "c2"},
+        {"chunk_id": "c3"},
+        {"chunk_id": "c4"},
+        {"chunk_id": "c5"},
+    ]
+
+    left, right = split_batch_documents(batch)
+
+    assert [str(doc["chunk_id"]) for doc in left] == ["c1", "c2", "c3"]
+    assert [str(doc["chunk_id"]) for doc in right] == ["c4", "c5"]
+
+
+def test_split_batch_documents_rejects_singleton_batches() -> None:
+    """Singleton batches are final leaves and should not be split again."""
+    try:
+        split_batch_documents([{"chunk_id": "only"}])
+    except ValueError as exc:
+        assert str(exc) == "Cannot split a batch with fewer than 2 documents."
+    else:
+        raise AssertionError("Expected singleton split to raise ValueError.")

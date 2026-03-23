@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+import re
 
 from backend.modules.orchestrator.utils.references import is_valid_ref_id
 from backend.utils.city_normalization import (
@@ -14,6 +15,8 @@ from backend.utils.city_normalization import (
 logger = logging.getLogger(__name__)
 CITIES_CONSIDERED_HEADER = "## Cities considered"
 NO_EVIDENCE_HEADER = "## Cities with no important evidence found"
+BRACKET_TOKEN_PATTERN = re.compile(r"\[([^\[\]\n]+)\]")
+COMPACT_REF_ID_PATTERN = re.compile(r"^ref([1-9]\d*)$")
 
 
 def is_generated_footer_header(line: str) -> bool:
@@ -198,9 +201,40 @@ def extract_reference_tokens(content: str) -> set[str]:
     return tokens
 
 
+def normalize_reference_token(token: str) -> str:
+    """Return the canonical ``ref_n`` form for supported citation tokens."""
+    candidate = token.strip()
+    if is_valid_ref_id(candidate):
+        return candidate
+    compact_match = COMPACT_REF_ID_PATTERN.fullmatch(candidate)
+    if compact_match:
+        return f"ref_{compact_match.group(1)}"
+    return candidate
+
+
+def normalize_reference_citations(content: str) -> str:
+    """Canonicalize compact writer citations like ``[ref43]`` to ``[ref_43]``."""
+
+    def _replace(match: re.Match[str]) -> str:
+        token = match.group(1)
+        normalized = normalize_reference_token(token)
+        if normalized == token.strip() and normalized == token:
+            return match.group(0)
+        if normalized.startswith("ref_") and is_valid_ref_id(normalized):
+            return f"[{normalized}]"
+        return match.group(0)
+
+    return BRACKET_TOKEN_PATTERN.sub(_replace, content)
+
+
 def extract_cited_ref_ids(content: str) -> set[str]:
     """Extract unique valid [ref_n] tokens from generated markdown."""
-    return {token for token in extract_reference_tokens(content) if is_valid_ref_id(token)}
+    cited_ref_ids: set[str] = set()
+    for token in extract_reference_tokens(content):
+        normalized = normalize_reference_token(token)
+        if is_valid_ref_id(normalized):
+            cited_ref_ids.add(normalized)
+    return cited_ref_ids
 
 
 def extract_city_coverage_sets(
@@ -360,6 +394,7 @@ __all__ = [
     "extract_missing_coverage",
     "extract_ref_city_mapping",
     "extract_selected_city_names",
+    "normalize_reference_citations",
     "render_cities_considered_section",
     "render_no_evidence_section",
     "resolve_analysis_mode",

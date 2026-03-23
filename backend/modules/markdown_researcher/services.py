@@ -234,10 +234,26 @@ def build_city_batches(
     return tasks
 
 
+def split_batch_documents(
+    batch: list[dict[str, object]],
+) -> tuple[list[dict[str, object]], list[dict[str, object]]]:
+    """Split one batch into two near-even child batches while preserving order."""
+    if len(batch) < 2:
+        raise ValueError("Cannot split a batch with fewer than 2 documents.")
+
+    midpoint = (len(batch) + 1) // 2
+    left = batch[:midpoint]
+    right = batch[midpoint:]
+    if not left or not right:
+        raise ValueError("Split produced an empty child batch.")
+    return left, right
+
+
 __all__ = [
     "build_markdown_chunks_for_file",
     "build_city_batches",
     "resolve_batch_input_token_limit",
     "load_markdown_documents",
+    "split_batch_documents",
     "split_documents_by_city",
 ]

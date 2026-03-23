@@ -14,6 +14,7 @@ from backend.modules.writer.utils.markdown_helpers import (
     extract_markdown_bundle,
     extract_ref_city_mapping,
     extract_selected_city_names,
+    normalize_reference_citations,
     render_cities_considered_section,
     render_no_evidence_section,
     resolve_analysis_mode,
@@ -152,6 +153,7 @@ def write_markdown(
             max_turns=config.writer.max_turns,
             log_llm_payload=log_llm_payload,
         )
+        normalized_content = normalize_reference_citations(output.content)
 
         (
             required_city_keys,
@@ -159,7 +161,7 @@ def write_markdown(
             no_evidence_keys,
             city_display_by_key,
         ) = extract_city_coverage_sets(
-            content=output.content,
+            content=normalized_content,
             markdown_bundle=markdown_bundle,
             selected_city_names=selected_city_names,
         )
@@ -172,7 +174,7 @@ def write_markdown(
         ]
         cities_considered = selected_city_names or sorted(city_display_by_key.values())
         content = append_sections(
-            output.content,
+            normalized_content,
             [
                 render_no_evidence_section(no_evidence_names),
                 render_cities_considered_section(cities_considered),
