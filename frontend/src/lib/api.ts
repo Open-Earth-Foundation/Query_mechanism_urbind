@@ -304,7 +304,11 @@ export interface ChatFollowupReferenceListResponse {
 }
 
 function normalizeCityKey(value: string): string {
-  return value.trim().toLocaleLowerCase();
+  const cleaned = value.trim().toLowerCase();
+  if (!cleaned) {
+    return "";
+  }
+  return cleaned.replace(/[^\p{L}\p{N}]+/gu, "_").replace(/^_+|_+$/g, "");
 }
 
 function normalizeCityKeys(values?: string[]): string[] | undefined {
@@ -314,12 +318,13 @@ function normalizeCityKeys(values?: string[]): string[] | undefined {
   const normalized: string[] = [];
   const seen = new Set<string>();
   values.forEach((value) => {
-    const key = normalizeCityKey(value);
+    const cleaned = value.trim();
+    const key = normalizeCityKey(cleaned);
     if (!key || seen.has(key)) {
       return;
     }
     seen.add(key);
-    normalized.push(key);
+    normalized.push(cleaned);
   });
   return normalized.length > 0 ? normalized : undefined;
 }

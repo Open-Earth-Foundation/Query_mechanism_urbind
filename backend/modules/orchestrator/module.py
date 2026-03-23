@@ -319,9 +319,13 @@ def run_pipeline(
                 canonical_research_query,
                 *refinement.retrieval_queries,
             ) or [canonical_research_query]
-        except (ValueError, RuntimeError, OSError, KeyError, TypeError) as exc:
+        except Exception as exc:  # noqa: BLE001 - question refinement is best-effort
             logger.warning(
-                "Research question refinement failed; using original question. error=%s",
+                (
+                    "Research question refinement failed; using original question. "
+                    "error_type=%s error=%s"
+                ),
+                type(exc).__name__,
                 exc,
             )
 

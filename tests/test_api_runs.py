@@ -1120,7 +1120,7 @@ def test_api_run_filters_markdown_by_selected_cities(
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert api_key_override is None
-        assert selected_cities == ["berlin"]
+        assert selected_cities == ["Berlin"]
         captured_files.extend(
             sorted(path.name for path in config.markdown_dir.rglob("*.md"))
         )
@@ -1148,6 +1148,51 @@ def test_api_run_filters_markdown_by_selected_cities(
         assert listed_ids == ["run-berlin"]
 
     assert captured_files == ["Berlin.md"]
+
+
+def test_api_run_preserves_display_city_names_while_deduping_aliases(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    (markdown_dir / "Istanbul.md").write_text("# Istanbul", encoding="utf-8")
+
+    def _stub_load_config(_path: Path | None = None) -> AppConfig:
+        return _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+
+    def _stub_run_pipeline(
+        question: str,
+        config: AppConfig,
+        run_id: str | None = None,
+        log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
+        selected_cities: list[str] | None = None,
+    ) -> RunPaths:
+        assert run_id is not None
+        assert isinstance(log_llm_payload, bool)
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
+        assert selected_cities == ["Istanbul"]
+        return _write_success_artifacts(question=question, run_id=run_id, config=config)
+
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        start = client.post(
+            "/api/v1/runs",
+            json={
+                "question": "Only Istanbul please",
+                "run_id": "run-istanbul",
+                "cities": ["Istanbul", "ISTANBUL"],
+            },
+        )
+        assert start.status_code == 202
+        terminal = _poll_until_terminal(client, "run-istanbul")
+        assert terminal["status"] == "completed"
 
 
 def test_api_run_analysis_mode_defaults_and_passes_explicit_value(

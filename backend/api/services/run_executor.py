@@ -17,7 +17,7 @@ from backend.api.services.city_catalog import build_city_subset
 from backend.api.services.run_store import RunRecord, RunStore, TERMINAL_STATUSES
 from backend.modules.orchestrator.module import run_pipeline
 from backend.services.error_log_artifact import write_error_log_artifact
-from backend.utils.city_normalization import normalize_city_keys
+from backend.utils.city_normalization import dedupe_city_labels
 from backend.utils.config import load_config
 from backend.utils.paths import RunPaths
 
@@ -60,7 +60,7 @@ class RunExecutor:
 
     def submit(self, command: StartRunCommand) -> RunRecord:
         """Create queued run state and dispatch worker thread."""
-        normalized_cities = normalize_city_keys(command.cities)
+        normalized_cities = dedupe_city_labels(command.cities)
         resolved_command = StartRunCommand(
             question=command.question,
             query_mode=command.query_mode,
