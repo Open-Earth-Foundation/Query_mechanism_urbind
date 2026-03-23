@@ -28,6 +28,7 @@ from backend.utils.paths import RunPaths, create_run_paths
 
 
 def _build_config(runs_dir: Path, markdown_dir: Path) -> AppConfig:
+    """Build a minimal app config for assumptions API tests."""
     return AppConfig(
         orchestrator=OrchestratorConfig(
             model="test-model", context_bundle_name="context_bundle.json"

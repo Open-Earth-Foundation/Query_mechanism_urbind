@@ -54,6 +54,7 @@ chat:
   multi_pass_chunk_tokens: 150000
   followup_search_enabled: true
   max_auto_followup_bundles: 3
+  followup_router_max_history_messages: 6
   followup_router_max_excerpts_per_source: 50
 assumptions_reviewer:
   model: "openai/gpt-5.2"
