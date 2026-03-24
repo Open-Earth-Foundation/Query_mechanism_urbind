@@ -5,10 +5,10 @@
       "case_id": "vehicle_targets_cross_ccc",
       "question": "Across the CCCs, what is the total number of vehicles explicitly targeted for electrification, disaggregated by: Municipal light-duty fleets, Public buses, School buses, Waste/logistics fleets, Taxis & ride-hailing, Private vehicles (via % targets or bans). Answer first with a table with the totals per category accumulated to the last year provided and also note the associated target years, add in text form further complementary details.",
       "gold_chunk_ids": [
-        "chunk_3dfc739432ed4a46375c9590",
-        "chunk_f646bb7814402010bdef0023",
-        "chunk_615bf1c05b556683de264066",
-        "chunk_10a83b62adb92f41532abfc8"
+        "chunk_83d9af11e8d6454968c298bd",
+        "chunk_372303fa8109df61c1e1a008",
+        "chunk_1285c791050ded4a2fcc6ed5",
+        "chunk_f611fc6bdd97a8bc0a5b2015"
       ],
       "gold_facts": [
         "Aarhus targets its municipal fleet of passenger cars and small vans to be fossil-free by 2025.",
@@ -20,83 +20,94 @@
         "Aarhus",
         "Copenhagen"
       ],
-      "selected_cities": []
+      "selected_cities": [
+        "Aarhus",
+        "Copenhagen"
+      ],
+      "cached_run_dir": "../../output/benchmarks/recall/benchmark_audit_vehicle/runs/vehicle_targets_cross_ccc"
     },
     {
       "case_id": "charging_targets_cross_ccc",
       "question": "What charging infrastructure volume targets by 2030 or beyond are explicitly referenced or inferable in the CCCs, including:\nPublic charging points (AC vs DC), Depot charging infrastructure, Bus charging depots, Fast charging corridors, Residential on-street charging.",
       "gold_chunk_ids": [
-        "chunk_d67321abd8d5a4993b5633ad",
-        "chunk_9ebd4729c9350cd145352d23",
-        "chunk_7a3b5f316d9f73e7187b10fc",
-        "chunk_f2465891b903f1f08984486f"
+        "chunk_a4bb24a0fb64bdb655834835",
+        "chunk_85f905eb95303c232bffbe53"
       ],
       "gold_facts": [
         "Aachen targets approximately 2,400 charging points by 2030.",
-        "Aachen plans to replace 60 ASEAG buses with emission-free buses by 2030, requiring charging infrastructure.",
-        "Aachen targets 70% electrification of its bus fleet by 2030.",
-        "Aachen requires approximately EUR 49.5 million of CAPEX for about 1,800 new charging points by 2030."
+        "Aachen currently has around 540 publicly accessible charging points as of August 2023.",
+        "Aachen states that roughly 1,600 to 1,800 new charging points will need to be installed by 2030.",
+        "Aachen's planned charging points include AC, DC, and HPC technologies."
       ],
       "gold_city": [
         "Aachen"
       ],
-      "selected_cities": []
+      "selected_cities": [
+        "Aachen"
+      ],
+      "cached_run_dir": "../../output/benchmarks/recall/benchmark_cache_charging_targets_v2/runs/charging_targets_cross_ccc"
     },
     {
       "case_id": "capex_cross_ccc",
       "question": "What total capital expenditure (CAPEX) related to EV transition is identified or inferable in the CCCs, broken down into: Vehicle procurement, Charging infrastructure, Grid upgrades, Digital mobility integration What proportion is already financed vs. unfunded?\n\nStart answer with a table",
       "gold_chunk_ids": [
-        "chunk_074f100daae6b232e72c8a3c",
-        "chunk_d715d9a517abaa7fe5558a72",
-        "chunk_f2465891b903f1f08984486f",
-        "chunk_9ebd4729c9350cd145352d23"
+        "chunk_b020075d4509c396c9514a41",
+        "chunk_2257287203c00b47a828d596",
+        "chunk_85f905eb95303c232bffbe53",
+        "chunk_ef9224e609898b561083f176"
       ],
       "gold_facts": [
         "Amsterdam budgets a financed EUR 1 million subsidy for low-income owners to scrap combustion mopeds and motorised bikes.",
         "Aachen estimates additional CAPEX of EUR 715.1 million in the target scenario for climate-friendly drives and fuels.",
         "Aachen requires EUR 49.5 million of charging-infrastructure CAPEX for about 1,800 new charging points by 2030.",
-        "Aachen estimates roughly EUR 2 million per year of additional CAPEX to procure six electric buses annually toward replacing 60 ASEAG buses by 2030."
+        "Aachen estimates roughly EUR 2 million per year of additional CAPEX to procure six electric buses for ASEAG."
       ],
       "gold_city": [
         "Amsterdam",
         "Aachen"
       ],
-      "selected_cities": []
+      "selected_cities": [
+        "Amsterdam",
+        "Aachen"
+      ],
+      "cached_run_dir": "../../output/benchmarks/recall/benchmark_cache_capex_v2/runs/capex_cross_ccc"
     },
     {
       "case_id": "regulatory_levers_cross_ccc",
       "question": "What regulatory levers are cities deploying that create forced market demand, such as:  ICE vehicle phase-out dates, Zero-emission zones (ZEZ), Public procurement mandates, Taxi electrification mandates, Fossil-fuel vehicle access restrictions  Are these legally binding or aspirational?  Answer first with a table by category and across all cities, and then provide further complementary details.",
       "gold_chunk_ids": [
-        "chunk_8ac3b8e6bae57c5d5d7e9755",
-        "chunk_7645d59207880daf3007fb0e",
-        "chunk_b27213f503daadf63fc59be0",
-        "chunk_77ed00006951797068204756"
+        "chunk_78e2c37e2da3cffbbf266e1e",
+        "chunk_1c8f38d1c0d97f91249e25f5",
+        "chunk_6d7b6024943315cc6c86134a",
+        "chunk_5df6d12bca4fec794cf648df"
       ],
       "gold_facts": [
         "Aachen introduced an environmental zone in 2016 as a fossil-fuel vehicle access restriction.",
-        "Aachen's legally binding Clean Air Plan, updated in 2022, mandates early procurement of electric buses.",
+        "Aachen's IKSK 2020 includes procurement support leading to 14 electric buses and a plan to replace 60 buses with emission-free buses by 2030.",
         "Aachen aims to establish zero-emission zones allowing only locally emission-free cars.",
-        "Aachen plans to establish a zero-emission zone starting in 2024 on a long-term basis."
+        "Aachen's IKSK 2.0 containing zero-emission zone plans is not yet politically decided and is therefore aspirational."
       ],
       "gold_city": [
         "Aachen"
       ],
-      "selected_cities": []
+      "selected_cities": [
+        "Aachen"
+      ],
+      "cached_run_dir": "../../output/benchmarks/recall/benchmark_cache_regulatory_v3/runs/regulatory_levers_cross_ccc"
     },
     {
       "case_id": "charging_and_retrofits_leipzig_munster",
       "question": "Aggregate and compare all EV charging and building retrofit initiatives with quantified targets and budgets.",
       "gold_chunk_ids": [
         "chunk_2d0d4e503166abc56e53f479",
-        "chunk_41d42e9337aebdc28bb0ffd5",
-        "chunk_b5af27515feb9db5aaccb598",
-        "chunk_a176127c0b7ec0d77a0b65e9",
+        "chunk_3141326192c8432a65b05c34",
+        "chunk_d6a8f43678f6595112f05247",
         "chunk_5afa759b2e6d1dfce100412f"
       ],
       "gold_facts": [
         "Leipzig requires approximately 3% annual renovation rates across private, municipal, and commercial buildings.",
-        "Leipzig targets roughly 1,000 to 1,500 kWp of photovoltaic systems annually on municipal roofs.",
-        "Munster currently allocates around EUR 1 million per year for photovoltaic systems on municipal buildings.",
+        "Leipzig targets 20 photovoltaic systems with 1 MWp annually on municipal roofs.",
+        "Munster's deep renovation of municipal buildings totals around EUR 320 million with an estimated annual budget of EUR 10 million.",
         "Munster's bus electrification project costs approximately EUR 21.3 million from 2024 to 2028."
       ],
       "gold_city": [
@@ -106,20 +117,22 @@
       "selected_cities": [
         "Leipzig",
         "Munster"
-      ]
+      ],
+      "cached_run_dir": "../../output/benchmarks/recall/benchmark_cache_leipzig_munster_v2/runs/charging_and_retrofits_leipzig_munster"
     },
     {
       "case_id": "quantified_charging_targets_munster",
       "question": "Summarize the most concrete quantified charging targets, budgets, and implementation timelines across all available regions.",
       "gold_chunk_ids": [
         "chunk_2541251665698d3aa3c2c335",
+        "chunk_28daa3e8d285084dfe9ec3a1",
         "chunk_c9436122edbf9c3e9167983a",
         "chunk_4ac6cde3fb9badc9d5b9882e",
         "chunk_5afa759b2e6d1dfce100412f"
       ],
       "gold_facts": [
         "Munster's progres.nrw scheme funds up to 40% of costs, capped at EUR 15,000 per point, for commercial EV charging points of at least 50 kW.",
-        "Munster had 38 electric buses at the end of 2022 and targets electrifying 100% of 116 owned buses and 60% of about 100 rented buses by 2029.",
+        "Munster's excerpts agree on electrifying 100% of 116 owned buses by 2029, but conflict on the rented-bus target, stating either around 100 rented buses or 60% of roughly 100 rented buses.",
         "Munster tendered 16 packages of four public charging locations each in October 2023.",
         "Munster's public-bus electrification project, including charging infrastructure, has a budget of approximately EUR 21.3 million from 2024 to 2028."
       ],
@@ -129,19 +142,20 @@
       "selected_cities": [
         "Leipzig",
         "Munster"
-      ]
+      ],
+      "cached_run_dir": "../../output/benchmarks/recall/benchmark_cache_quantified_munster_v2/runs/quantified_charging_targets_munster"
     },
     {
       "case_id": "charging_targets_germany_seven_cities",
       "question": "For Aachen, Dresden, Heidelberg, Leipzig, Mannheim, Munich, and Munster, list the most concrete quantified charging targets, budgets, and timelines.",
       "gold_chunk_ids": [
-        "chunk_d67321abd8d5a4993b5633ad",
-        "chunk_f2465891b903f1f08984486f"
+        "chunk_85f905eb95303c232bffbe53",
+        "chunk_be39499b7e27572b86bd6a82"
       ],
       "gold_facts": [
         "Aachen targets approximately 2,400 EV charging points by 2030.",
         "Aachen plans to install around 1,600 new EV charging points by 2030.",
-        "Aachen estimates EUR 49.5 million of total investment for those 1,600 new EV charging points.",
+        "Aachen estimates EUR 49.5 million of total investment for new EV charging points by 2030.",
         "Aachen's funding for EV charging infrastructure is approximately EUR 5.94 million from 2025 to 2030."
       ],
       "gold_city": [
@@ -155,43 +169,50 @@
         "Mannheim",
         "Munich",
         "Munster"
-      ]
+      ],
+      "cached_run_dir": "../../output/benchmarks/recall/benchmark_cache_germany7/runs/charging_targets_germany_seven_cities"
     },
     {
       "case_id": "krakow_vehicle_targets",
       "question": "For Krakow’s Climate City Contract (CCC), what explicit vehicle electrification targets (counts, percentages, or bans) are stated for municipal light-duty fleets, public buses, school buses, waste/logistics fleets, taxis and ride-hailing, and private vehicles, including target years?",
       "gold_chunk_ids": [
         "chunk_af0660a148889a86e187d5dc",
-        "chunk_2e0dfbe8f46059e4ed33c36b",
-        "chunk_382b5bbeb3e68cb54c1e2ef3"
+        "chunk_f6f6fd742a99a8bf81fc70a7"
       ],
       "gold_facts": [
         "Krakow targets a 74% share of electric buses in public transport by 2040, equivalent to roughly 452 new electric buses.",
         "Krakow targets a 34% share of electric passenger cars by 2040, equivalent to about 124,388 electric vehicles.",
         "Krakow targets 60% electric light trucks and 30% electric heavy trucks by 2040, equivalent to about 35,565 light trucks and 4,028 heavy trucks.",
-        "Krakow's Climate City Contract includes a long-term programme for electric mobility infrastructure, including new charging stations for electric buses."
+        "Krakow's Climate City Contract includes expansion of the public transport fleet towards zero-emission."
       ],
       "gold_city": [
         "Krakow"
       ],
       "selected_cities": [
         "Krakow"
-      ]
+      ],
+      "cached_run_dir": "../../output/benchmarks/recall/benchmark_cache_krakow/runs/krakow_vehicle_targets"
     },
     {
       "case_id": "munich_wroclaw_nzc_strategy",
       "question": "How does Munich’s net-zero (NZC) strategy compare with Wroclaw’s in terms of key actions, targets, and implementation progress?",
       "gold_chunk_ids": [
-        "chunk_d29f8d5505584b9616e420ee",
-        "chunk_4be8d48c6266dfe2ff68f913",
-        "chunk_218649ca69a94eabf7aba734",
-        "chunk_094ce79f0f4f36f5c7ff9e3e"
+        "chunk_08e722342c040b95c6e36d9a",
+        "chunk_ebb681b4f0e29b5e25f23398",
+        "chunk_ca8ff6a7143157b3727889c5",
+        "chunk_3443a1075ca150dca3d83665",
+        "chunk_7a96d19dc627e14f7af842cd",
+        "chunk_0b297853ed3c22a61885ffc3",
+        "chunk_432a27b740f576cabfaf051d"
       ],
       "gold_facts": [
         "Munich's official political target is climate neutrality across the entire city territory by 2035.",
         "Munich's Mobility Strategy 2035 targets 80% emission-free traffic by 2025 and climate-neutral traffic by 2035.",
         "Munich's transformation plan targets decarbonization of district heating by 2040 using deep geothermal energy.",
-        "Munich aims to increase the energy-efficient building refurbishment rate to 2.5% annually."
+        "Munich aims to increase the energy-efficient building refurbishment rate to 2.5% annually.",
+        "Wroclaw declares climate neutrality by 2050 at the latest and sets a path to reduce GHG emissions by 80% by 2030.",
+        "Wroclaw identifies key climate action areas as electricity and heat production, building renovation, and transport.",
+        "Wroclaw established an Interdepartmental Team in 2022 for cross-departmental climate transition coordination."
       ],
       "gold_city": [
         "Munich",
@@ -200,29 +221,31 @@
       "selected_cities": [
         "Munich",
         "Wroclaw"
-      ]
+      ],
+      "cached_run_dir": "../../output/benchmarks/recall/benchmark_audit_munich_wroclaw/runs/munich_wroclaw_nzc_strategy"
     },
     {
       "case_id": "aachen_current_initiatives",
       "question": "What key information and current initiatives are available for the selected city?",
       "gold_chunk_ids": [
-        "chunk_09854fe88294c5292da29f8e",
-        "chunk_f142af3178d538b343afda1f",
-        "chunk_b30c0e81328c5daa2c176c21",
-        "chunk_6e07700155aa79ce029c772c"
+        "chunk_6fe0b185ec02b0cc7a606b48",
+        "chunk_6befed5b664328a83da4e19f",
+        "chunk_b2aa885bb0e68c3f1e86886e",
+        "chunk_d2868a7e192ab9df6478dbbe"
       ],
       "gold_facts": [
-        "Aachen is implementing multi-project management to coordinate and accelerate subprojects for its greenhouse-gas budget and climate-neutrality work.",
-        "Aachen plans a dashboard for monitoring and controlling climate activities, introduced in 2024.",
-        "Aachen is establishing a Climate Fund in 2024 to finance local climate-protection projects based on CO2 savings.",
-        "Aachen is implementing comprehensive funding management to identify and apply for national and EU funding opportunities."
+        "Aachen's Department 36 annually records implementation status of municipal measures and prepares CO2 emissions balance sheets.",
+        "Aachen's Transition Team focuses on prioritising and implementing IKSK 2.0 and IKSK 2020 measures, governance, monitoring, and citizen involvement.",
+        "Aachen is establishing an Urban Data Working Group and Urban Data Coordinator role to pool urban data for planning.",
+        "Aachen outlines a 2024-2030 timeline for multi-project management, monitoring, transformation strategy, climate funds, and subsidy management."
       ],
       "gold_city": [
         "Aachen"
       ],
       "selected_cities": [
         "Aachen"
-      ]
+      ],
+      "cached_run_dir": "../../output/benchmarks/recall/benchmark_cache_aachen_current/runs/aachen_current_initiatives"
     }
   ]
 }
