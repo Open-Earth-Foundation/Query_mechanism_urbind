@@ -471,6 +471,42 @@ def test_run_pipeline_falls_back_when_question_refinement_hits_max_turns(
     assert research_payload["retrieval_queries"] == [input_question]
 
 
+def test_run_pipeline_propagates_unexpected_refinement_errors(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    monkeypatch.setenv("OPENROUTER_API_KEY", "test")
+
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir()
+    (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
+
+    config = _build_test_config(
+        runs_dir=tmp_path / "output",
+        source_db_path=tmp_path / "missing.db",
+        markdown_dir=docs_dir,
+        enable_sql=False,
+    )
+
+    def _refine_raises_runtime_error(
+        question: str,
+        config: AppConfig,
+        api_key: str,
+        **_kwargs: dict[str, object],
+    ) -> ResearchQuestionRefinement:
+        del question, config, api_key, _kwargs
+        raise RuntimeError("boom")
+
+    with pytest.raises(RuntimeError, match="boom"):
+        run_pipeline(
+            question="What initiatives exist for Munich?",
+            config=config,
+            sql_plan_func=_stub_sql_plan,
+            markdown_func=_stub_markdown,
+            refine_question_func=_refine_raises_runtime_error,
+            writer_func=_stub_writer,
+        )
+
+
 def test_run_pipeline_end_to_end_propagates_query_markdown_and_writer_output(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:

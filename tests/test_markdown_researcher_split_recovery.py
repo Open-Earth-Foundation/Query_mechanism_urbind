@@ -1,4 +1,5 @@
 import json
+import logging
 
 from agents.exceptions import MaxTurnsExceeded, ModelBehaviorError
 from pytest import MonkeyPatch
@@ -242,3 +243,52 @@ def test_markdown_non_retryable_failures_do_not_split(
     assert len(result.batch_failures) == 1
     assert result.batch_failures[0].split_path is None
     assert call_counts == {("c1", "c2", "c3", "c4"): 1}
+
+
+def test_markdown_logs_failure_points_for_split_recovery(
+    monkeypatch: MonkeyPatch,
+    caplog,
+) -> None:
+    """Failed parent and leaf batches should emit summary logs with split lineage."""
+    config = _build_config()
+    documents = _build_documents()
+
+    monkeypatch.setattr(
+        markdown_agent,
+        "build_markdown_agent",
+        lambda *_args, **_kwargs: object(),
+    )
+
+    def _fake_run_agent_sync(_agent: object, input_data: str, **_kwargs: object) -> _FakeRunResult:
+        payload = json.loads(input_data)
+        chunk_ids = tuple(str(chunk["chunk_id"]) for chunk in payload["chunks"])
+        if chunk_ids == ("c1", "c2", "c3", "c4"):
+            raise ModelBehaviorError("parent failure")
+        if chunk_ids == ("c1", "c2"):
+            return _FakeRunResult(
+                MarkdownResearchResult(
+                    excerpts=[],
+                    rejected_chunk_ids=["c1", "c2"],
+                )
+            )
+        if chunk_ids == ("c3", "c4"):
+            raise ModelBehaviorError("child failure")
+        if chunk_ids == ("c3",):
+            return _FakeRunResult(
+                MarkdownResearchResult(
+                    excerpts=[],
+                    rejected_chunk_ids=["c3"],
+                )
+            )
+        if chunk_ids == ("c4",):
+            raise ModelBehaviorError("leaf failure")
+        raise AssertionError(f"Unexpected chunk ids: {chunk_ids}")
+
+    monkeypatch.setattr(markdown_agent, "run_agent_sync", _fake_run_agent_sync)
+    caplog.set_level(logging.WARNING, logger=markdown_agent.__name__)
+
+    extract_markdown_excerpts("question?", documents, config, api_key="test")
+
+    messages = [record.message for record in caplog.records]
+    assert any("split=root markdown batch failed" in message for message in messages)
+    assert any("split=2.2 markdown batch failed" in message for message in messages)

@@ -8,6 +8,7 @@ from typing import Callable, Literal
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import psycopg
+from agents.exceptions import MaxTurnsExceeded
 
 from backend.modules.markdown_researcher.agent import extract_markdown_excerpts
 from backend.modules.markdown_researcher.models import MarkdownResearchResult
@@ -319,7 +320,7 @@ def run_pipeline(
                 canonical_research_query,
                 *refinement.retrieval_queries,
             ) or [canonical_research_query]
-        except Exception as exc:  # noqa: BLE001 - question refinement is best-effort
+        except (MaxTurnsExceeded, ValueError) as exc:
             logger.warning(
                 (
                     "Research question refinement failed; using original question. "

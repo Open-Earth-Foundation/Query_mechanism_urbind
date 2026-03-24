@@ -594,6 +594,20 @@ def extract_markdown_excerpts(
                 any_success=True,
             )
 
+        split_label = _render_split_path(split_path) or "root"
+        logger.warning(
+            (
+                "run_id=%s city=%s batch=%s split=%s markdown batch failed "
+                "reason=%s split_eligible=%s unresolved_chunk_ids=%s"
+            ),
+            run_id,
+            city_name,
+            batch_index,
+            split_label,
+            attempt_result.failure_reason or "unknown",
+            attempt_result.split_eligible,
+            attempt_result.unresolved_chunk_ids,
+        )
         can_split = (
             attempt_result.split_eligible
             and len(batch) > 1
@@ -607,7 +621,6 @@ def extract_markdown_excerpts(
                 split_path,
             )
 
-        split_label = _render_split_path(split_path) or "root"
         left_batch, right_batch = split_batch_documents(batch)
         logger.info(
             (

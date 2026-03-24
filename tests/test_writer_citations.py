@@ -52,6 +52,19 @@ def test_normalize_reference_citations_canonicalizes_compact_tokens() -> None:
     assert extract_cited_ref_ids(normalized) == {"ref_1", "ref_2"}
 
 
+def test_normalize_reference_citations_logs_warning_for_rewrites(
+    caplog: pytest.LogCaptureFixture,
+) -> None:
+    caplog.set_level(logging.WARNING, logger="backend.modules.writer.utils.markdown_helpers")
+
+    normalized = normalize_reference_citations("Munich [ref1] Berlin [ref2]")
+
+    assert normalized == "Munich [ref_1] Berlin [ref_2]"
+    assert any(
+        "Normalized compact reference citations" in record.message for record in caplog.records
+    )
+
+
 def test_writer_logs_warning_when_citations_missing(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
