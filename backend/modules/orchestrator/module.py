@@ -300,6 +300,8 @@ def run_pipeline(
         )
     else:
         # Standard mode keeps the current research-question refinement flow.
+        # TODO(piotr, Mirco): Revisit whether standard-mode refinement failures
+        # should fail fast instead of falling back to the original question.
         retrieval_queries = [canonical_research_query]
         try:
             refinement = refine_question_func(
