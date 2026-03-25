@@ -3,8 +3,30 @@
 from __future__ import annotations
 
 import json
+from functools import lru_cache
+from pathlib import Path
+from string import Template
 
 from backend.api.services.models import ChatContextSource
+from backend.utils.prompts import load_prompt
+
+_PROMPTS_DIR = Path(__file__).resolve().parents[3] / "prompts"
+
+
+@lru_cache(maxsize=None)
+def _load_prompt_template(template_name: str) -> Template:
+    """Load one markdown prompt template from the shared prompt directory."""
+    prompt_path = _PROMPTS_DIR / template_name
+    return Template(load_prompt(prompt_path))
+
+
+def _render_prompt_template(template_name: str, **substitutions: object) -> str:
+    """Render one markdown prompt template with stringified substitutions."""
+    normalized_substitutions = {
+        key: str(value)
+        for key, value in substitutions.items()
+    }
+    return _load_prompt_template(template_name).substitute(normalized_substitutions)
 
 
 def build_system_prompt_header(
@@ -12,30 +34,16 @@ def build_system_prompt_header(
     retry_missing_citation: bool,
 ) -> str:
     """Build the stable system prompt prefix for one context-chat turn."""
+    retry_note_block = ""
     if retry_missing_citation:
-        retry_note = (
-            "Prior response failed citation requirements. Rewrite the full answer and ensure "
-            "every factual claim is immediately followed by one or more valid [ref_n] citations.\n"
+        retry_note_block = (
+            "- Prior response failed citation requirements. Rewrite the full answer and ensure "
+            "every factual claim is immediately followed by one or more valid [ref_n] citations."
         )
-    else:
-        retry_note = ""
-    stripped_original_question = original_question.strip()
-    return (
-        "You are the Context Analyst for a document-builder workflow.\n"
-        "Your job is to answer follow-up questions using only the supplied context sources.\n"
-        "Each source comes from a completed run and includes curated citation evidence.\n\n"
-        "Rules:\n"
-        "1. Ground every factual claim in provided context sources.\n"
-        "2. If information is missing or uncertain, say so clearly.\n"
-        "3. Compare sources when useful and call out contradictions.\n"
-        "4. Always respond in valid markdown. Prefer headings, bullets, and tables for numeric data.\n"
-        "5. Never mention internal paths or backend implementation details.\n"
-        "6. If a citation evidence catalog is provided, cite factual claims using only [ref_n] tokens present in that catalog.\n"
-        "7. Do not invent references and do not use any citation format other than [ref_n].\n"
-        "8. If no citation evidence catalog entries are available for this turn, explain that you cannot provide a fully grounded cited answer.\n\n"
-        "9. If arithmetic is needed and calculator tools are available, use them instead of mental math.\n\n"
-        f"{retry_note}"
-        f"Original build question:\n{stripped_original_question}"
+    return _render_prompt_template(
+        "context_chat_system.md",
+        original_question=original_question.strip(),
+        retry_note_block=retry_note_block,
     )
 
 
@@ -52,15 +60,12 @@ def compose_evidence_map_prompt(
     total_chunks: int,
 ) -> str:
     """Build the system prompt for one evidence map step."""
-    return (
-        f"{prompt_header}\n\n"
-        f"You are analyzing evidence chunk {chunk_index} of {total_chunks} for a larger map-reduce answer.\n"
-        "Use only the evidence items below.\n"
-        "Cite every factual claim with one or more [ref_n] tokens that appear in this chunk.\n"
-        "Do not invent citations and do not use any citation format other than [ref_n].\n"
-        "If this chunk is not relevant to the latest user question, say so briefly.\n\n"
-        "Evidence chunk:\n"
-        f"{evidence_block or '- No evidence items available in this chunk.'}"
+    return _render_prompt_template(
+        "context_chat_evidence_map_system.md",
+        prompt_header=prompt_header,
+        chunk_index=chunk_index,
+        total_chunks=total_chunks,
+        evidence_block=evidence_block or "- No evidence items available in this chunk.",
     )
 
 
@@ -73,23 +78,21 @@ def compose_evidence_reduce_prompt(
     batch_count: int,
 ) -> str:
     """Build the system prompt for one reduce batch."""
-    return (
-        f"{prompt_header}\n\n"
-        f"You are merging map-reduce summaries at reduce stage {stage_index}, batch {batch_index} of {batch_count}.\n"
-        "Use only facts and [ref_n] citations already present in the partial analyses below.\n"
-        "Preserve valid citations on factual claims, merge duplicates, and remove contradictions when later analyses correct earlier ones.\n"
-        "Do not invent new citations and do not drop necessary citations.\n\n"
-        "Partial analyses:\n"
-        f"{analyses_block}"
+    return _render_prompt_template(
+        "context_chat_evidence_reduce_system.md",
+        prompt_header=prompt_header,
+        stage_index=stage_index,
+        batch_index=batch_index,
+        batch_count=batch_count,
+        analyses_block=analyses_block,
     )
 
 
 def compose_empty_evidence_prompt(prompt_header: str) -> str:
     """Build the overflow fallback prompt when no compact evidence items exist."""
-    return (
-        f"{prompt_header}\n\n"
-        "No compact evidence items are available for the selected context sources in overflow mode.\n"
-        "Explain briefly that the current saved context does not provide extractable evidence for a grounded answer."
+    return _render_prompt_template(
+        "context_chat_empty_evidence_system.md",
+        prompt_header=prompt_header,
     )
 
 

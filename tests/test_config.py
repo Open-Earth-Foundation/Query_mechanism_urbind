@@ -313,13 +313,16 @@ def test_load_config_reads_required_chat_defaults_from_yaml(tmp_path: Path) -> N
     assert not config.chat.followup_search_enabled
     assert config.chat.max_auto_followup_bundles == 3
     assert config.chat.provider_timeout_seconds == 60.0
+    assert config.chat.followup_router_max_history_messages == 6
     assert config.chat.followup_router_max_excerpts_per_source == 50
     assert config.retry.backoff_base_seconds == 1.0
     assert config.retry.backoff_max_seconds == 30.0
 
 
-def test_load_config_requires_chat_and_assumptions_sections(tmp_path: Path) -> None:
-    """Chat and assumptions reviewer sections must be present in llm_config.yaml."""
+def test_load_config_applies_chat_and_assumptions_defaults_when_sections_missing(
+    tmp_path: Path,
+) -> None:
+    """Missing chat and assumptions sections fall back to safe model defaults."""
     config_path = tmp_path / "llm_config.yaml"
     config_path.write_text(
         "\n".join(
@@ -345,8 +348,46 @@ def test_load_config_requires_chat_and_assumptions_sections(tmp_path: Path) -> N
         encoding="utf-8",
     )
 
-    with pytest.raises(ValidationError):
-        load_config(config_path)
+    config = load_config(config_path)
+
+    assert config.chat.model == "openai/gpt-5.2"
+    assert config.chat.provider_timeout_seconds == 60.0
+    assert config.chat.followup_router_max_history_messages == 6
+    assert config.chat.followup_router_max_excerpts_per_source == 50
+    assert config.assumptions_reviewer.model == "openai/gpt-5.2"
+
+
+def test_load_config_applies_retry_defaults_when_section_missing(
+    tmp_path: Path,
+) -> None:
+    """Missing retry config falls back to RetryConfig defaults."""
+    config_path = tmp_path / "llm_config.yaml"
+    config_path.write_text(
+        "\n".join(
+            [
+                "orchestrator:",
+                "  model: test-model",
+                "sql_researcher:",
+                "  model: test-model",
+                "markdown_researcher:",
+                "  model: test-model",
+                "  chunk_overlap_tokens: 2000",
+                "  batch_max_chunks: 32",
+                "  max_workers: 8",
+                "  request_backoff_base_seconds: 0.5",
+                "  request_backoff_max_seconds: 2.0",
+                "writer:",
+                "  model: test-model",
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    config = load_config(config_path)
+
+    assert config.retry.max_attempts == 5
+    assert config.retry.backoff_base_seconds == 1.0
+    assert config.retry.backoff_max_seconds == 30.0
 
 
 def test_load_config_reads_central_retry_settings_from_yaml(tmp_path: Path) -> None:

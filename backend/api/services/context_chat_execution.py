@@ -15,7 +15,7 @@ from backend.tools.calculator import (
     subtract_numbers,
     sum_numbers,
 )
-from backend.utils.config import AppConfig, get_openrouter_api_key
+from backend.utils.config import AppConfig, resolve_openrouter_api_key
 from backend.utils.retry import RetrySettings, call_with_retries
 
 logger = logging.getLogger("backend.api.services.context_chat")
@@ -114,11 +114,7 @@ CHAT_TOOL_DEFINITIONS: list[dict[str, object]] = [
 def create_chat_client(config: AppConfig, api_key_override: str | None) -> OpenAI:
     """Build the OpenAI client used for one context-chat request."""
     timeout = config.chat.provider_timeout_seconds
-    api_key = (
-        api_key_override.strip()
-        if isinstance(api_key_override, str) and api_key_override.strip()
-        else get_openrouter_api_key()
-    )
+    api_key = resolve_openrouter_api_key(api_key_override, allow_missing=True)
     return OpenAI(
         api_key=api_key,
         base_url=config.openrouter_base_url,

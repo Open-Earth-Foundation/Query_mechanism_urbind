@@ -233,18 +233,16 @@ def build_router_payload(
     user_message: str,
     original_question: str,
     history: list[dict[str, str]],
-    selected_run_ids: list[str],
-    followup_bundles: list[LoadedFollowupBundle],
     sources: list[LoadedChatSource],
+    max_history_messages: int,
     max_excerpts_per_source: int,
 ) -> dict[str, object]:
     """Build the compact payload sent to the follow-up router."""
+    bounded_history = history[-max_history_messages:] if max_history_messages > 0 else []
     return {
         "user_message": user_message,
         "original_question": original_question,
-        "history": history,
-        "selected_run_ids": selected_run_ids,
-        "selected_followup_bundle_ids": [bundle.bundle_id for bundle in followup_bundles],
+        "history": bounded_history,
         "contexts": [
             _build_router_context_payload(
                 source,
@@ -276,7 +274,6 @@ def _build_router_context_payload(
     capped_excerpts = excerpts[: max(1, max_excerpts_per_source)]
     return {
         "source_type": source.source_type,
-        "source_id": source.source_id,
         "question": source.question,
         "selected_city_names": selected_city_names,
         "inspected_city_names": inspected_city_names,
@@ -337,7 +334,6 @@ def log_chat_router_preflight(
             context_summaries.append(
                 {
                     "source_type": item.get("source_type"),
-                    "source_id": item.get("source_id"),
                     "excerpt_count": item.get("excerpt_count"),
                     "payload_tokens": rendered_tokens,
                 }

@@ -56,7 +56,7 @@ Environment variables (`.env`):
 - `LLM_CONFIG_PATH` (optional, default `llm_config.yaml`): API config file path.
 - `CITY_GROUPS_PATH` (optional, default `backend/api/assets/city_groups.json`): city groups catalog JSON path.
 
-Chat prompt sizing, follow-up router excerpt caps, retry backoff, and provider timeouts now come from `llm_config.yaml`.
+Chat prompt sizing, follow-up router history and excerpt caps, retry backoff, and provider timeouts now come from `llm_config.yaml`.
 - `VECTOR_STORE_ENABLED` (optional, default `false`): enables local Chroma markdown indexing flows.
 - `ANONYMIZED_TELEMETRY` (optional, default `FALSE`): disables Chroma anonymized telemetry when set to `FALSE`.
 - `CHROMA_PERSIST_PATH` (optional, default `.chroma`): local Chroma persistence directory.
@@ -180,6 +180,8 @@ chat:
   max_history_messages: 24
   followup_search_enabled: false
   max_auto_followup_bundles: 3
+  followup_router_max_history_messages: 6
+  followup_router_max_excerpts_per_source: 50
 assumptions_reviewer:
   model: "openai/gpt-5.2"
   temperature: 0.0
@@ -717,6 +719,9 @@ Frontend also supports two answer modes: `Aggregate Mode` and `City-by-City Mode
 Clicking `Chat About the Answer` switches to a dedicated chat workspace (not a chat modal).
 Document and chat citations render as compact city labels; clicking a label loads and shows only the source quote.
 When `chat.followup_search_enabled` is `true`, the chat router may run a synchronous one-city markdown-only follow-up search, attach the resulting follow-up bundle to the session, and keep citations clickable for both base runs and chat-owned follow-up bundles.
+The follow-up router is intentionally lightweight: it sees a bounded payload with recent history plus compact context summaries, and each source summary may include only a capped subset of excerpts. This trim exists to keep the routing step cheap and stable; the router is only deciding whether the current context is clearly sufficient, whether a fresh one-city search is needed, whether the request is out of scope, or whether city clarification is required.
+This means the router is deliberately conservative. If the summarized excerpts are not clearly enough to answer from context, it should prefer a fresh one-city search instead of assuming the answer is absent.
+This trim applies only to the routing step. When chat actually answers from context, the answering path still uses the full loaded chat sources rather than the router's reduced summary payload.
 Follow-up search stays conservative: it never launches a multi-city refresh, and failed follow-up searches return a limitation message instead of a guessed answer.
 When chat needs a single city before searching, the backend sends clarification metadata and the frontend opens a city-picker popup that resubmits the original question with the selected city directly into one-city follow-up search.
 When a direct chat prompt would overflow, the backend now falls back to an evidence-only map-reduce flow built from compact excerpt evidence and caches that stripped chat artifact under `output/<run_id>/chat_cache/evidence_chunks.json`.

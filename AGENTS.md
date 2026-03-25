@@ -189,8 +189,9 @@ Skills included:
 - `simplify-after-change`: **Mandatory** after any code change. Simplifies the changed code, removes unnecessary complexity, and keeps behavior identical.
 - `docs-after-change`: **Mandatory** after any code change. Keeps docstrings/README/architecture accurate.
 - `script-quality-gate`: Use when adding/changing a runnable script or CLI entrypoint.
-- `prompt-schema-authoring`: Use when creating/updating agent prompts to enforce `<role>/<task>/<input>/<output>` structure and model-aligned output contracts.
+- `prompt-schema-authoring`: **Mandatory** when creating or updating prompt files. Trigger it automatically unless it is already active for the turn, and use it to enforce `<role>/<task>/<input>/<output>` structure and model-aligned output contracts.
 - `repo-doc-audit`: One-off full repo documentation audit (**manual** via `/repo-doc-audit`).
+- `pr-thread-analysis`: Review unresolved or open PR review threads against the current branch, quoting the exact comment, showing the relevant code, and stating whether a fix is still needed.
 
 ### Mandatory after code changes
 
@@ -200,6 +201,12 @@ After **any code change** (add/edit/delete/rename), you must apply BOTH skills b
 2. `docs-after-change`
 
 If you intentionally skip a mandatory skill, leave a one-line justification in your response message.
+
+### Mandatory for prompt changes
+
+Whenever you create or edit a prompt under `*/prompts/`, you must trigger `prompt-schema-authoring` unless that skill is already active for the current turn.
+
+If you intentionally skip it, leave a one-line justification in your response message.
 
 ---
 

@@ -1,11 +1,16 @@
 ---
 name: prompt-schema-authoring
-description: Create or update agent system prompts in this repository using the required `<role>`, `<task>`, `<input>`, and `<output>` structure with explicit, model-aligned field contracts. Use when editing `app/prompts/*_system.md` or introducing a new prompt.
+description: Mandatory when creating or updating prompt files in this repository. Use it to enforce the required `<role>`, `<task>`, `<input>`, and `<output>` structure with explicit, model-aligned field contracts.
 ---
 
 # prompt-schema-authoring
 
 Use this skill to keep prompts explicit, contract-driven, and context-efficient.
+
+## Triggering rule
+
+- Trigger this skill whenever you create or edit a prompt under `*/prompts/`.
+- If the skill is already active for the current turn, do not re-trigger it; just keep following it.
 
 ## Workflow
 

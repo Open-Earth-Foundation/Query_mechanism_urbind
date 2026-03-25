@@ -213,7 +213,8 @@ def normalize_reference_token(token: str) -> str:
 
 
 def normalize_reference_citations(content: str) -> str:
-    """Canonicalize compact writer citations like ``[ref43]`` to ``[ref_43]``."""
+    """Canonicalize compact writer citations and warn when rewrites occur."""
+    rewritten_tokens: list[tuple[str, str]] = []
 
     def _replace(match: re.Match[str]) -> str:
         token = match.group(1)
@@ -221,10 +222,19 @@ def normalize_reference_citations(content: str) -> str:
         if normalized == token.strip() and normalized == token:
             return match.group(0)
         if normalized.startswith("ref_") and is_valid_ref_id(normalized):
+            rewritten_tokens.append((token, normalized))
             return f"[{normalized}]"
         return match.group(0)
 
-    return BRACKET_TOKEN_PATTERN.sub(_replace, content)
+    normalized_content = BRACKET_TOKEN_PATTERN.sub(_replace, content)
+    if rewritten_tokens:
+        unique_rewrites = sorted({f"{source}->{target}" for source, target in rewritten_tokens})
+        logger.warning(
+            "Normalized compact reference citations rewrite_count=%d rewrites=%s",
+            len(rewritten_tokens),
+            ", ".join(unique_rewrites[:10]),
+        )
+    return normalized_content
 
 
 def extract_cited_ref_ids(content: str) -> set[str]:

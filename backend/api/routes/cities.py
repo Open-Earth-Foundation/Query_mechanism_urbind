@@ -7,7 +7,7 @@ from pathlib import Path
 from fastapi import APIRouter, Request
 
 from backend.api.models import CityGroupListResponse, CityListResponse
-from backend.api.services import list_city_names, load_city_groups
+from backend.api.services.city_catalog import list_city_names, load_city_groups
 
 router = APIRouter()
 
