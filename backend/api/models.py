@@ -16,6 +16,7 @@ RunStatus = Literal[
     "stopped",
 ]
 AnalysisMode = Literal["aggregate", "city_by_city"]
+QueryMode = Literal["standard", "dev"]
 
 
 class RunError(BaseModel):
@@ -31,6 +32,9 @@ class CreateRunRequest(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     question: str = Field(min_length=1)
+    query_mode: QueryMode = "standard"
+    query_2: str | None = None
+    query_3: str | None = None
     run_id: str | None = None
     cities: list[str] | None = None
     config_path: str | None = None

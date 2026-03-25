@@ -5,7 +5,6 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from backend.api.services.context_prompt_cache import compute_prompt_context_cache, write_prompt_context_cache
 from backend.services.run_logger import RunLogger
 from backend.utils.config import AppConfig
 from backend.utils.paths import RunPaths
@@ -57,6 +56,11 @@ def write_final_output(
         run_logger: Logger for recording artifacts
         finish_reason: Finish reason for the output
     """
+    from backend.api.services.context_prompt_cache import (
+        compute_prompt_context_cache,
+        write_prompt_context_cache,
+    )
+
     question_header = f"# Question\n{question}\n\n"
     finish_note = f"\n\n---\nFinish reason: {finish_reason}\n"
     rendered_content = f"{question_header}{content}{finish_note}"

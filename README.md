@@ -181,7 +181,7 @@ assumptions_reviewer:
   temperature: 0.0
   max_output_tokens: 8000
 retry:
-  max_attempts: 5
+  max_attempts: 3
   backoff_base_seconds: 0.8
   backoff_max_seconds: 8.0
 openrouter_base_url: "https://openrouter.ai/api/v1"
@@ -224,6 +224,9 @@ How this influences runtime behavior:
 - SQL truncation is recorded as `truncation_applied` in the SQL bundle and `truncated` in SQL result items.
 - Full SQL output is still written to `output/<run_id>/sql/results_full.json`; capped SQL is written to `output/<run_id>/sql/results.json`.
 - Markdown content is chunked first, then batched by token budget. Chunks larger than the current batch budget are skipped.
+- Each original markdown batch gets `retry.max_attempts` total tries.
+- If an original markdown batch still fails with a retryable markdown extraction error, only that failing batch is recursively halved up to two split rounds.
+- Each split child batch gets exactly one try; successful child branches are kept immediately, and only final failed leaves remain unresolved.
 - Oversized markdown files are skipped when they exceed `max_file_bytes`.
 
 Visibility and warnings:
@@ -326,7 +329,7 @@ Useful flags:
 - `--markdown-option 16:8 --markdown-option 32:4 --markdown-option 32:8` — run explicit markdown benchmark options (`batch_max_chunks:max_workers`).
 - The benchmark runs every question in the questions file; `--repetitions N` runs each question N times per mode and markdown option (total runs = questions × repetitions × modes × markdown_options).
 
-**Vector-only reproducibility (same query and same revised retrieval queries):** To run the vector strategy multiple times with the exact same question and the exact same refined retrieval queries (e.g. to check outcome stability):
+**Vector-only reproducibility (same query and same retrieval queries):** To run the vector strategy multiple times with the exact same question, canonical research query, and retrieval queries (e.g. to check outcome stability):
 
 1. Run the pipeline once to get a run with the desired question and cities, e.g. `python -m backend.scripts.run_pipeline --question "What does Aachen do for PV rooftop?" --city Aachen --markdown-path documents`. Note the run id and open `output/<run_id>/research_question.json`.
 2. Create a one-line questions file (e.g. `my_questions.txt`) containing exactly the `original_question` from that run.
@@ -337,7 +340,7 @@ Useful flags:
    python -m backend.scripts.run_retrieval_benchmark --questions-file my_questions.txt --query-overrides my_overrides.json --mode vector_store --repetitions 5 --city Aachen
    ```
 
-   Each run will use the same refined question and retrieval queries; only retrieval, extraction, and writing are re-executed. Compare `output/benchmarks/<benchmark_id>/runs/vector_store/*/final.md` (and optionally `retrieval.json`, `excerpts.json`) across repetitions.
+   Each run will use the same canonical research query and retrieval queries; only retrieval, extraction, and writing are re-executed. Compare `output/benchmarks/<benchmark_id>/runs/vector_store/*/final.md` (and optionally `retrieval.json`, `excerpts.json`) across repetitions.
 
 Benchmark behavior notes:
 
@@ -728,6 +731,14 @@ It includes exact build/push commands and `kubectl` apply steps for the manifest
 Automated development workflow is available at `.github/workflows/develop.yml`.
 It runs tests for PRs targeting `main` and for pushes to `main`; image build and EKS deploy run only on `main` branch runs (push/manual dispatch).
 
+TODO: production CORS hardening
+
+- Restrict `API_CORS_ORIGINS` in `k8s/backend-configmap.yml` to the deployed frontend origin(s) only, for example `https://urbind-query-mechanism.openearth.dev`.
+- Remove local-only origins such as `http://localhost:3000`, `http://127.0.0.1:3000`, and private LAN hosts from the production ConfigMap.
+- Update `backend/api/main.py` so a missing or empty `API_CORS_ORIGINS` fails closed in deployed environments instead of falling back to `["*"]`.
+- Keep wildcard or localhost-friendly CORS settings only in local Docker/dev configuration.
+- Ensure the deployed frontend sets `NEXT_PUBLIC_API_BASE_URL` explicitly so backend host mismatches are not confused with CORS failures.
+
 Required repository secrets:
 
 - `AWS_ACCESS_KEY_ID_EKS_DEV_USER`
@@ -749,20 +760,22 @@ python -m backend.scripts.test_db_connection
 Artifacts are written under `output/<run_id>/`:
 
 - `run.json`: machine-readable run metadata (status, timestamps, artifacts, decisions), including `inputs.analysis_mode` and `artifacts.error_log` when available.
-- `run.log`: detailed runtime logs, including per-agent `LLM_USAGE` lines, chat prompt-window diagnostics (`Context chat reply plan`, `Context chat direct request`, with fitted source ids and token-component counts), retry reason lines (`RETRY_EVENT`/`RETRY_EXHAUSTED` with plain-text fields such as `reason`, `http_status`, `rate_limited`), and writer city-citation coverage checkpoints (`WRITER_CITATION_COVERAGE`, with `coverage_ratio` such as `33/33`).
+- `run.log`: detailed runtime logs, including per-agent `LLM_USAGE` lines, chat prompt-window diagnostics (`Context chat reply plan`, `Context chat direct request`, with fitted source ids and token-component counts), retry reason lines (`RETRY_EVENT`/`RETRY_EXHAUSTED` with plain-text fields such as `reason`, `http_status`, `rate_limited`, and markdown split lineage when applicable), and writer city-citation coverage checkpoints (`WRITER_CITATION_COVERAGE`, with `coverage_ratio` such as `33/33`).
 - `error_log.txt`: extracted error-focused log view from `run.log` (`ERROR`, `CRITICAL`, and exhausted retry events).
-- `run_summary.txt`: human-readable consolidated report. Header includes `Started`, `Completed`, and explicit `Total runtime` in seconds, plus `LLM Usage` totals/per-agent. It also captures an input snapshot (`initial question`, `refined question`, `selected cities` planned/found, markdown dir/file/chunk/excerpt counts) and a `MARKDOWN_FAILURE_SUMMARY` aggregated from batch failures.
-- `context_bundle.json`: payload passed between agents (`sql`, `markdown`, `research_question`, `analysis_mode`, final path).
-- `research_question.json`: orchestrator-refined research payload. Includes:
+- `run_summary.txt`: human-readable consolidated report. Header includes `Started`, `Completed`, and explicit `Total runtime` in seconds, plus `LLM Usage` totals/per-agent. It also captures an input snapshot (`original question`, `query mode`, `canonical research query`, `retrieval query 1..3`, `selected cities` planned/found, markdown dir/file/chunk/excerpt counts) and a `MARKDOWN_FAILURE_SUMMARY` aggregated from batch failures.
+- `context_bundle.json`: payload passed between agents (`sql`, `markdown`, `original_question`, `research_question`, `query_mode`, `retrieval_queries`, `analysis_mode`, final path).
+- `research_question.json`: run query metadata payload. Includes:
   - `original_question`: raw user question.
-  - `canonical_research_query`: canonical refined question.
+  - `query_mode`: `standard` or `dev`.
+  - `canonical_research_query`: canonical research query used downstream.
   - `retrieval_queries`: retrieval-ready query list where index `0` is always `canonical_research_query`.
+  - `retrieval_query_1` / `retrieval_query_2` / `retrieval_query_3`: explicit query slots written for easier inspection and reproducibility.
 - `schema_summary.json` (when SQL is enabled): schema digest derived from `backend/db_models/`.
 - `city_list.json` (when SQL is enabled): city names fetched from the source DB.
 - `sql/queries.json` (when SQL is enabled): SQL plan generated by the SQL researcher.
 - `sql/results_full.json` (when SQL is enabled): uncapped SQL execution results.
 - `sql/results.json` (when SQL is enabled): token-capped SQL results sent downstream.
-- `markdown/excerpts.json`: markdown researcher evidence bundle. Includes `excerpts` (items with `quote`, `city_name`, `partial_answer`), explicit decision fields (`accepted_chunk_ids`, `rejected_chunk_ids`, `unresolved_chunk_ids`, `batch_failures`), `inspected_cities` (normalized backend city keys present in inspected markdown inputs), and `excerpt_count` (count of extracted excerpts).
+- `markdown/excerpts.json`: markdown researcher evidence bundle. Includes `excerpts` (items with `quote`, `city_name`, `partial_answer`), explicit decision fields (`accepted_chunk_ids`, `rejected_chunk_ids`, `unresolved_chunk_ids`, `batch_failures`), `inspected_cities` (normalized backend city keys present in inspected markdown inputs), and `excerpt_count` (count of extracted excerpts). When split recovery is triggered, successful child-batch evidence and decisions are kept, and only final failed leaf chunks remain unresolved.
 - `markdown/accepted_excerpts.json`: IDs-only positive decision artifact with accepted chunk IDs and accepted-per-city grouping.
 - `markdown/rejected_excerpts.json`: IDs-only negative decision artifact with rejected chunk IDs and rejected-per-city grouping.
 - `markdown/decision_audit.json`: run-level reconciliation counters and diagnostics (`retrieved_total`, accepted/rejected/unresolved totals, invariant status, and mismatch details).
@@ -783,7 +796,7 @@ Artifacts are written under `output/<run_id>/`:
 - `inspected_cities` (bundle-level): normalized backend city keys inspected by markdown extraction.
 - `excerpt_count` (bundle-level): number of extracted excerpts included in the bundle.
 - `accepted_chunk_ids` / `rejected_chunk_ids` / `unresolved_chunk_ids` (bundle-level): explicit three-state chunk decision outputs from markdown extraction.
-- `batch_failures` (bundle-level): structured per-batch failure entries for unresolved decisions.
+- `batch_failures` (bundle-level): structured per-batch failure entries for unresolved final leaf decisions. Exhausting the original parent batch does not appear here by itself if split children recover the evidence. Entries may include `split_path` to show which recursive child branch failed.
 
 - `chat/<conversation_id>.json` (created when context chat sessions are used)
 - `assumptions/discovered.json` (two-pass extraction output; only when `persist_artifacts=true`)

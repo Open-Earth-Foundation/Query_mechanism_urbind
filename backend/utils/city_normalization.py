@@ -4,11 +4,15 @@ import re
 
 
 _CITY_TOKEN_PATTERN = re.compile(r"[A-Za-z0-9]+")
+_CITY_KEY_SEPARATOR_PATTERN = re.compile(r"[\W_]+", flags=re.UNICODE)
 
 
 def normalize_city_key(value: str) -> str:
-    """Return a stable normalized city key for matching and filtering."""
-    return value.strip().casefold()
+    """Return a separator-agnostic normalized city key for matching and filtering."""
+    cleaned = value.strip().casefold()
+    if not cleaned:
+        return ""
+    return _CITY_KEY_SEPARATOR_PATTERN.sub("_", cleaned).strip("_")
 
 
 def normalize_city_keys(values: list[str] | None) -> list[str]:
@@ -24,6 +28,22 @@ def normalize_city_keys(values: list[str] | None) -> list[str]:
         seen.add(key)
         normalized.append(key)
     return normalized
+
+
+def dedupe_city_labels(values: list[str] | None) -> list[str]:
+    """De-duplicate city labels by normalized key while preserving display text."""
+    if not values:
+        return []
+    deduped: list[str] = []
+    seen: set[str] = set()
+    for value in values:
+        cleaned = value.strip()
+        key = normalize_city_key(cleaned)
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        deduped.append(cleaned)
+    return deduped
 
 
 def format_city_stem(value: str) -> str:
@@ -51,6 +71,7 @@ def format_city_display_name(value: str) -> str:
 __all__ = [
     "normalize_city_key",
     "normalize_city_keys",
+    "dedupe_city_labels",
     "format_city_stem",
     "format_city_display_name",
 ]

@@ -378,6 +378,74 @@ def test_retrieve_chunks_for_queries_uses_manifest_cities_when_not_selected(
     assert meta["cities"] == ["munich"]
 
 
+def test_retrieve_chunks_for_queries_dedupes_manifest_city_aliases(
+    monkeypatch,
+    tmp_path,
+) -> None:
+    """Manifest entries that differ only by separator style should map to one city."""
+    config = _build_test_config()
+    config.vector_store.index_manifest_path = tmp_path / "index_manifest.json"
+    save_manifest(
+        config.vector_store.index_manifest_path,
+        {
+            "files": {
+                "documents/vitoria-gasteiz.md": {"file_hash": "h1", "chunk_ids": ["chunk-1"]},
+                "documents/Vitoria_Gasteiz.md": {"file_hash": "h2", "chunk_ids": ["chunk-2"]},
+            }
+        },
+    )
+
+    query_calls: list[dict[str, object]] = []
+
+    class _FakeStore:
+        def query_by_embedding(self, query_embeddings, n_results, where):
+            del query_embeddings, n_results
+            query_calls.append(where)
+            assert where == {"city_key": "vitoria_gasteiz"}
+            return {
+                "ids": [["chunk-1"]],
+                "metadatas": [[
+                    {
+                        "city_name": "Vitoria_Gasteiz",
+                        "city_key": "vitoria-gasteiz",
+                        "raw_text": "alias chunk",
+                        "source_path": "documents/Vitoria_Gasteiz.md",
+                        "heading_path": "H1",
+                        "block_type": "paragraph",
+                        "chunk_index": 1,
+                    },
+                ]],
+                "distances": [[0.1]],
+            }
+
+        def get(self, where, limit):
+            del where, limit
+            return {"ids": [], "metadatas": []}
+
+    monkeypatch.setattr(
+        retriever_module,
+        "_embed_queries",
+        lambda queries, config: {query: [0.01, 0.02] for query in queries},  # noqa: ARG005
+    )
+    monkeypatch.setattr(
+        retriever_module,
+        "ChromaStore",
+        lambda persist_path, collection_name: _FakeStore(),  # noqa: ARG005
+    )
+
+    chunks, meta = retrieve_chunks_for_queries(
+        queries=["original question"],
+        config=config,
+        docs_dir=tmp_path / "documents",
+        selected_cities=None,
+    )
+
+    assert len(query_calls) == 1
+    assert meta["cities"] == ["vitoria_gasteiz"]
+    assert [chunk.chunk_id for chunk in chunks] == ["chunk-1"]
+    assert as_markdown_documents(chunks)[0]["city_key"] == "vitoria_gasteiz"
+
+
 def test_retrieve_chunks_for_queries_fails_fast_when_manifest_missing(
     monkeypatch,
     tmp_path,

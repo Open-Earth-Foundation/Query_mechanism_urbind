@@ -21,6 +21,7 @@ from backend.utils.config import (
     ChatConfig,
     MarkdownResearcherConfig,
     OrchestratorConfig,
+    RetryConfig,
     SqlResearcherConfig,
 )
 from backend.utils.paths import RunPaths, create_run_paths
@@ -33,9 +34,20 @@ def _build_config(runs_dir: Path, markdown_dir: Path) -> AppConfig:
             model="test-model", context_bundle_name="context_bundle.json"
         ),
         sql_researcher=SqlResearcherConfig(model="test-model"),
-        markdown_researcher=MarkdownResearcherConfig(model="test-model"),
+        markdown_researcher=MarkdownResearcherConfig(
+            model="test-model",
+            chunk_overlap_tokens=2000,
+            batch_max_chunks=32,
+        ),
         writer=WriterConfig(model="test-model"),
-        chat=ChatConfig(model="openai/gpt-5.2", max_history_messages=10),
+        chat=ChatConfig(
+            model="openai/gpt-5.2",
+            max_history_messages=10,
+            provider_timeout_seconds=60.0,
+            followup_router_max_excerpts_per_source=50,
+        ),
+        assumptions_reviewer=AssumptionsReviewerConfig(model="openai/gpt-5.2"),
+        retry=RetryConfig(backoff_base_seconds=1.0, backoff_max_seconds=30.0),
         runs_dir=runs_dir,
         markdown_dir=markdown_dir,
         enable_sql=False,

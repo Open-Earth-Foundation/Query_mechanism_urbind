@@ -132,12 +132,14 @@ def create_run(
 ) -> CreateRunResponse:
     """Queue a new asynchronous run."""
     logger.info(
-        "API create_run received run_id=%s cities=%s config_path=%s markdown_path=%s analysis_mode=%s api_key_override=%s",
+        "API create_run received run_id=%s cities=%s config_path=%s markdown_path=%s analysis_mode=%s query_mode=%s explicit_query_count=%d api_key_override=%s",
         payload.run_id,
         len(payload.cities) if payload.cities else "all",
         payload.config_path,
         payload.markdown_path,
         payload.analysis_mode,
+        payload.query_mode,
+        sum(1 for query in (payload.query_2, payload.query_3) if query and query.strip()),
         x_openrouter_api_key is not None,
     )
     run_executor = _get_run_executor(request)
@@ -146,6 +148,9 @@ def create_run(
         record = run_executor.submit(
             StartRunCommand(
                 question=payload.question,
+                query_mode=payload.query_mode,
+                query_2=payload.query_2,
+                query_3=payload.query_3,
                 requested_run_id=payload.run_id,
                 cities=payload.cities,
                 config_path=payload.config_path,

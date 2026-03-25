@@ -5,7 +5,7 @@ from __future__ import annotations
 import re
 from collections.abc import Mapping
 
-from backend.utils.city_normalization import format_city_stem
+from backend.utils.city_normalization import format_city_stem, normalize_city_key
 
 REF_ID_PATTERN = re.compile(r"^ref_[1-9]\d*$")
 
@@ -45,11 +45,13 @@ def build_markdown_references(
         ref_id = f"ref_{excerpt_index + 1}"
         source_chunk_ids = _coerce_source_chunk_ids(excerpt.get("source_chunk_ids"))
         city_name = format_city_stem(str(excerpt.get("city_name", "")))
+        city_key = normalize_city_key(str(excerpt.get("city_key", "")).strip() or city_name)
         quote = str(excerpt.get("quote", ""))
         partial_answer = str(excerpt.get("partial_answer", ""))
 
         enriched_excerpt = dict(excerpt)
         enriched_excerpt["ref_id"] = ref_id
+        enriched_excerpt["city_key"] = city_key
         enriched_excerpt["source_chunk_ids"] = source_chunk_ids
         updated_excerpts.append(enriched_excerpt)
 

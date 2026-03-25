@@ -150,7 +150,14 @@ def test_markdown_payload_batches_keep_city_chunk_integrity(
     def _fake_run_agent_sync(_agent: object, input_data: str, **_kwargs: object) -> _FakeRunResult:
         payload = json.loads(input_data)
         captured_payloads.append(payload)
-        return _FakeRunResult(MarkdownResearchResult(excerpts=[]))
+        return _FakeRunResult(
+            MarkdownResearchResult(
+                excerpts=[],
+                rejected_chunk_ids=[
+                    str(chunk["chunk_id"]) for chunk in payload["chunks"]
+                ],
+            )
+        )
 
     monkeypatch.setattr(markdown_agent, "run_agent_sync", _fake_run_agent_sync)
 
