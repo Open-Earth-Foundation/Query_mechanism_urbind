@@ -267,6 +267,8 @@ def run_pipeline(
         Run paths containing output artifacts
 
     Raises:
+        ValueError: When standard-mode research-question refinement fails or
+            returns an empty research question.
         Exception: Any unexpected exception from the write phase is re-raised after
             ``run_logger.finalize("failed")`` and log handler teardown have run, so
             that ``error_log.txt`` and ``run.json`` are always written on failure.
@@ -285,6 +287,26 @@ def run_pipeline(
     run_logger.record_artifact("context_bundle", paths.context_bundle)
     run_log_handler = attach_run_file_logger(paths.base_dir)
 
+    def _fail_research_question_refinement(
+        message: str, exc: Exception | None = None
+    ) -> None:
+        run_logger.record_decision(
+            {
+                "status": "error",
+                "run_id": run_id_value,
+                "reason": "Research question refinement failed",
+                "error": {
+                    "code": "RESEARCH_QUESTION_REFINEMENT_ERROR",
+                    "message": message,
+                },
+            }
+        )
+        run_logger.finalize("failed", finish_reason="research_question_refinement_failed")
+        detach_run_file_logger(run_log_handler)
+        if exc is None:
+            raise ValueError(message)
+        raise ValueError(message) from exc
+
     canonical_research_query = question.strip() or question
     retrieval_queries: list[str]
     if query_mode == "dev":
@@ -300,8 +322,11 @@ def run_pipeline(
         )
     else:
         # Standard mode keeps the current research-question refinement flow.
-        # TODO(piotr, Mirco): Revisit whether standard-mode refinement failures
-        # should fail fast instead of falling back to the original question.
+        # We decided to fail fast and surface a user-facing message for now
+        # because we are not aligned yet on whether falling back is correct.
+        refinement_failure_message = (
+            "Could not prepare the research query for this request. Please try again."
+        )
         retrieval_queries = [canonical_research_query]
         try:
             refinement = refine_question_func(
@@ -311,26 +336,32 @@ def run_pipeline(
                 selected_cities=selected_cities,
                 log_llm_payload=log_llm_payload,
             )
-            candidate = refinement.research_question.strip()
-            if candidate:
-                canonical_research_query = candidate
-            else:
-                logger.warning(
-                    "Research question refinement returned empty output; using original question."
-                )
-            retrieval_queries = _build_retrieval_queries(
-                canonical_research_query,
-                *refinement.retrieval_queries,
-            ) or [canonical_research_query]
         except (MaxTurnsExceeded, ValueError) as exc:
+            if False:
+                logger.warning(
+                    (
+                        "Research question refinement failed; using original question. "
+                        "error_type=%s error=%s"
+                    ),
+                    type(exc).__name__,
+                    exc,
+                )
+            _fail_research_question_refinement(refinement_failure_message, exc)
+
+        candidate = refinement.research_question.strip()
+        if candidate:
+            canonical_research_query = candidate
+        elif False:
             logger.warning(
-                (
-                    "Research question refinement failed; using original question. "
-                    "error_type=%s error=%s"
-                ),
-                type(exc).__name__,
-                exc,
+                "Research question refinement returned empty output; using original question."
             )
+        else:
+            _fail_research_question_refinement(refinement_failure_message)
+
+        retrieval_queries = _build_retrieval_queries(
+            canonical_research_query,
+            *refinement.retrieval_queries,
+        ) or [canonical_research_query]
 
     run_logger.update_query_inputs(
         original_question=question,
