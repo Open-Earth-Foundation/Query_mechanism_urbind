@@ -409,7 +409,7 @@ def test_run_pipeline_passes_selected_cities_to_question_refiner(
     assert captured["selected_cities"] == ["Munich", "Leipzig"]
 
 
-def test_run_pipeline_falls_back_when_question_refinement_hits_max_turns(
+def test_run_pipeline_fails_fast_when_question_refinement_hits_max_turns(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
     monkeypatch.setenv("OPENROUTER_API_KEY", "test")
@@ -426,7 +426,9 @@ def test_run_pipeline_falls_back_when_question_refinement_hits_max_turns(
     )
 
     input_question = "What initiatives exist for Munich?"
-    observed: dict[str, object] = {}
+    expected_message = (
+        "Could not prepare the research query for this request. Please try again."
+    )
 
     def _refine_raises_max_turns(
         question: str,
@@ -445,30 +447,57 @@ def test_run_pipeline_falls_back_when_question_refinement_hits_max_turns(
         **_kwargs: dict[str, object],
     ) -> MarkdownResearchResult:
         del documents, config, api_key, _kwargs
-        observed["markdown_question"] = question
         return MarkdownResearchResult(excerpts=[])
 
-    paths = run_pipeline(
-        question=input_question,
-        config=config,
-        sql_plan_func=_stub_sql_plan,
-        markdown_func=_markdown_observes_question,
-        refine_question_func=_refine_raises_max_turns,
-        writer_func=_stub_writer,
+    with pytest.raises(ValueError, match=expected_message):
+        run_pipeline(
+            question=input_question,
+            config=config,
+            sql_plan_func=_stub_sql_plan,
+            markdown_func=_markdown_observes_question,
+            refine_question_func=_refine_raises_max_turns,
+            writer_func=_stub_writer,
+        )
+
+
+def test_run_pipeline_fails_fast_when_question_refinement_returns_empty_question(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    monkeypatch.setenv("OPENROUTER_API_KEY", "test")
+
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir()
+    (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
+
+    config = _build_test_config(
+        runs_dir=tmp_path / "output",
+        source_db_path=tmp_path / "missing.db",
+        markdown_dir=docs_dir,
+        enable_sql=False,
     )
 
-    assert paths.final_output.exists()
-    assert observed["markdown_question"] == input_question
+    expected_message = (
+        "Could not prepare the research query for this request. Please try again."
+    )
 
-    run_log = json.loads(paths.run_log.read_text(encoding="utf-8"))
-    assert run_log["status"] == "completed"
-    assert run_log["completed_at"] is not None
-    assert run_log["inputs"]["canonical_research_query"] == input_question
-    assert run_log["inputs"]["retrieval_queries"] == [input_question]
+    def _refine_with_empty_question(
+        question: str,
+        config: AppConfig,
+        api_key: str,
+        **_kwargs: dict[str, object],
+    ) -> ResearchQuestionRefinement:
+        del question, config, api_key, _kwargs
+        return ResearchQuestionRefinement(research_question="   ", retrieval_queries=[])
 
-    research_payload = json.loads(paths.research_question.read_text(encoding="utf-8"))
-    assert research_payload["canonical_research_query"] == input_question
-    assert research_payload["retrieval_queries"] == [input_question]
+    with pytest.raises(ValueError, match=expected_message):
+        run_pipeline(
+            question="What initiatives exist for Munich?",
+            config=config,
+            sql_plan_func=_stub_sql_plan,
+            markdown_func=_stub_markdown,
+            refine_question_func=_refine_with_empty_question,
+            writer_func=_stub_writer,
+        )
 
 
 def test_run_pipeline_propagates_unexpected_refinement_errors(
