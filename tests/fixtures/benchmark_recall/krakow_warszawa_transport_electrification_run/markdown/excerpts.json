@@ -1,0 +1,75 @@
+{
+  "status": "success",
+  "excerpts": [
+    {
+      "quote": "Increase in the share of electric buses in public transport from 4% to 74% (2040). Approx. 452 new electrically powered buses.",
+      "city_name": "krakow",
+      "partial_answer": "Krakow's Climate City Contract targets increasing the share of electric buses in public transport from 4% to 74% by 2040 with approx. 452 new electric buses.",
+      "source_chunk_ids": [
+        "chunk_af0660a148889a86e187d5dc"
+      ],
+      "ref_id": "ref_1",
+      "city_key": "krakow"
+    },
+    {
+      "quote": "Installation of at least 150 new public charging stations in the first five years of the programme.",
+      "city_name": "krakow",
+      "partial_answer": "Krakow plans installation of at least 150 new public charging stations in the first five years of its electric mobility programme.",
+      "source_chunk_ids": [
+        "chunk_21589c0fee371c9e14058a88"
+      ],
+      "ref_id": "ref_2",
+      "city_key": "krakow"
+    },
+    {
+      "quote": "Creation of 2 pantograph stations for charging electric buses on Luzycka Street and 2 pantograph stations on Stojalowskiego Street. It is also planned to build 1 pantograph station for charging electric buses on Rydygiera Street.",
+      "city_name": "krakow",
+      "partial_answer": "Krakow plans to create 2 pantograph stations on Luzycka Street, 2 on Stojalowskiego Street, and 1 on Rydygiera Street for charging electric buses.",
+      "source_chunk_ids": [
+        "chunk_aab38f975a587c0f00e2477d"
+      ],
+      "ref_id": "ref_3",
+      "city_key": "krakow"
+    },
+    {
+      "quote": "Warsaw is steadily increasing the level of electrifying public transport. There are currently more than 160 electric buses, 70 hybrid buses, and 418 gas-powered buses operating in Warsaw. In 2023, the Public Transport Authority signed a contract for the purchase of additional 12 electric buses. This trend will continue, with an increased number of lines served by electric buses in the mission districts. The city is also testing hydrogen-powered buses.",
+      "city_name": "warszawa",
+      "partial_answer": "Warszawa operates more than 160 electric buses city-wide, signed a contract in 2023 for purchasing 12 additional electric buses, plans to increase electric bus lines in the mission districts, and is testing hydrogen-powered buses.",
+      "source_chunk_ids": [
+        "chunk_352cd2992198e43f63c2046a"
+      ],
+      "ref_id": "ref_4",
+      "city_key": "warszawa"
+    },
+    {
+      "quote": "expansion of the public transport network (zero-emission buses, metro, trams). Including purchasing modern, energy-efficient low-floor trams, replacing the bus fleet with electric/hydrogen vehicles",
+      "city_name": "warszawa",
+      "partial_answer": "Warszawa plans expansion of public transport including replacement of the bus fleet with electric and hydrogen vehicles to reduce emissions in the mission districts.",
+      "source_chunk_ids": [
+        "chunk_0f84fce506f28ba06d7dd56d"
+      ],
+      "ref_id": "ref_5",
+      "city_key": "warszawa"
+    },
+    {
+      "quote": "Buses - there will be 202 electric buses in the citywide fleet by 2025, and the need for further fleet replacement has been identified, especially for the Praga-Poludnie and Ursynow districts. Costs of building charging infrastructure on 48 loops (all loops in two districts): PLN 28 800 000 / EUR 6 400 000.",
+      "city_name": "warszawa",
+      "partial_answer": "Warszawa targets 202 electric buses citywide by 2025, identifies further replacement needs in Praga-Poludnie and Ursynow, and plans charging infrastructure on 48 loops costing PLN 28,800,000.",
+      "source_chunk_ids": [
+        "chunk_d4ec7d0e245e9ea3c2d964bf"
+      ],
+      "ref_id": "ref_6",
+      "city_key": "warszawa"
+    },
+    {
+      "quote": "Estimated greenhouse gas emission reductions (total) by source sector 144,555 tCO2e. Estimated cost: PLN 979 840 000 / EUR 217 742 222.",
+      "city_name": "warszawa",
+      "partial_answer": "Warszawa's bus-electrification package totals PLN 979,840,000 with expected reductions of 144,555 tCO2e.",
+      "source_chunk_ids": [
+        "chunk_d4ec7d0e245e9ea3c2d964bf"
+      ],
+      "ref_id": "ref_7",
+      "city_key": "warszawa"
+    }
+  ]
+}

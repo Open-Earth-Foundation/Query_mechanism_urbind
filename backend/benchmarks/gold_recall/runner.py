@@ -2,10 +2,12 @@ from __future__ import annotations
 
 import logging
 import statistics
+import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from backend.api.services.source_chunks import load_source_chunks
 from backend.benchmarks.gold_recall.judge import FACT_JUDGE_MODEL, judge_fact_presence
 from backend.benchmarks.gold_recall.models import (
     FactPresenceJudgement,
@@ -40,6 +42,13 @@ def _mean(values: list[float]) -> float:
     if not values:
         return 0.0
     return statistics.fmean(values)
+
+
+def _normalize_chunk_text(value: str) -> str:
+    """Normalize chunk text for canonical fallback matching."""
+    normalized = unicodedata.normalize("NFKC", value)
+    collapsed = " ".join(normalized.split())
+    return collapsed.casefold()
 
 
 def load_gold_benchmark_dataset(path: Path) -> GoldBenchmarkDataset:
@@ -214,6 +223,89 @@ def _collect_excerpt_source_ids(excerpts_payload: dict[str, Any]) -> set[str]:
     return source_chunk_ids
 
 
+def _load_chunk_text_map(
+    *,
+    run_dir: Path,
+    config: AppConfig,
+    chunk_ids: set[str],
+) -> dict[str, str]:
+    """Resolve normalized text for the requested chunk ids."""
+    normalized_ids = {chunk_id.strip() for chunk_id in chunk_ids if chunk_id.strip()}
+    if not normalized_ids:
+        return {}
+
+    try:
+        chunks = load_source_chunks(
+            run_dir=run_dir,
+            markdown_dir=Path("documents"),
+            config=config,
+            chunk_ids=sorted(normalized_ids),
+        )
+    except Exception as exc:  # noqa: BLE001
+        logger.warning("Failed to resolve chunk text for benchmark scoring: %s", exc)
+        return {}
+
+    text_map: dict[str, str] = {}
+    for chunk in chunks:
+        if not chunk.content.strip():
+            continue
+        text_map[chunk.chunk_id] = _normalize_chunk_text(chunk.content)
+    return text_map
+
+
+def _build_text_match_index(text_map: dict[str, str]) -> dict[str, list[str]]:
+    """Index chunk ids by normalized chunk text."""
+    index: dict[str, list[str]] = {}
+    for chunk_id, normalized_text in text_map.items():
+        if not normalized_text:
+            continue
+        index.setdefault(normalized_text, []).append(chunk_id)
+    return index
+
+
+def _find_containing_text_match(
+    normalized_text: str,
+    target_text_map: dict[str, str],
+) -> str | None:
+    """Return the first chunk whose normalized text contains the canonical text."""
+    if not normalized_text:
+        return None
+    for chunk_id, target_text in target_text_map.items():
+        if normalized_text in target_text:
+            return chunk_id
+    return None
+
+
+def _match_gold_chunks(
+    *,
+    gold_chunk_ids: list[str],
+    gold_chunk_texts: list[str] | None,
+    target_index: dict[str, dict[str, Any]],
+    target_text_index: dict[str, list[str]],
+    target_text_map: dict[str, str],
+) -> dict[int, str]:
+    """Match gold chunks to retrieval chunks by id, exact text, or excerpt containment."""
+    matches: dict[int, str] = {}
+    for idx, gold_chunk_id in enumerate(gold_chunk_ids):
+        if gold_chunk_id in target_index:
+            matches[idx] = gold_chunk_id
+            continue
+        if gold_chunk_texts is None:
+            continue
+        normalized_text = _normalize_chunk_text(gold_chunk_texts[idx])
+        candidate_ids = target_text_index.get(normalized_text, [])
+        if candidate_ids:
+            matches[idx] = candidate_ids[0]
+            continue
+        containing_match = _find_containing_text_match(
+            normalized_text,
+            target_text_map,
+        )
+        if containing_match is not None:
+            matches[idx] = containing_match
+    return matches
+
+
 def _build_stage_b_candidate_text(excerpts_payload: dict[str, Any]) -> str:
     """Build the text judged for markdown-stage fact extraction."""
     excerpts = excerpts_payload.get("excerpts", [])
@@ -270,24 +362,55 @@ def _judge_stage_facts(
 def _build_chunk_diagnostics(
     *,
     gold_chunk_ids: list[str],
+    gold_chunk_texts: list[str] | None,
     seed_index: dict[str, dict[str, Any]],
     delivery_index: dict[str, dict[str, Any]],
+    seed_text_index: dict[str, list[str]],
+    delivery_text_index: dict[str, list[str]],
+    seed_text_map: dict[str, str],
+    delivery_text_map: dict[str, str],
 ) -> list[RetrievalChunkDiagnostic]:
     """Classify every gold chunk as seed-hit, neighbor-only, fallback, or miss."""
     diagnostics: list[RetrievalChunkDiagnostic] = []
-    for chunk_id in gold_chunk_ids:
-        seed_chunk = seed_index.get(chunk_id)
-        delivery_chunk = delivery_index.get(chunk_id)
+    seed_matches = _match_gold_chunks(
+        gold_chunk_ids=gold_chunk_ids,
+        gold_chunk_texts=gold_chunk_texts,
+        target_index=seed_index,
+        target_text_index=seed_text_index,
+        target_text_map=seed_text_map,
+    )
+    delivery_matches = _match_gold_chunks(
+        gold_chunk_ids=gold_chunk_ids,
+        gold_chunk_texts=gold_chunk_texts,
+        target_index=delivery_index,
+        target_text_index=delivery_text_index,
+        target_text_map=delivery_text_map,
+    )
+
+    for idx, chunk_id in enumerate(gold_chunk_ids):
+        matched_seed_id = seed_matches.get(idx)
+        matched_delivery_id = delivery_matches.get(idx)
+        seed_chunk = seed_index.get(matched_seed_id) if matched_seed_id else None
+        delivery_chunk = (
+            delivery_index.get(matched_delivery_id) if matched_delivery_id else None
+        )
         if seed_chunk is not None:
             provenance = seed_chunk.get("provenance", {})
-            selection_mode = (
+            raw_selection_mode = (
                 str(provenance.get("selection_mode", "")).strip() or None
             )
             bucket = (
                 "fallback_top_up_hit"
-                if selection_mode == "fallback_top_up"
+                if raw_selection_mode == "fallback_top_up"
                 else "seed_hit"
             )
+            selection_mode = raw_selection_mode
+            if matched_seed_id != chunk_id:
+                selection_mode = (
+                    f"text_fallback:{raw_selection_mode}"
+                    if raw_selection_mode
+                    else "text_fallback"
+                )
             seed_rank = provenance.get("seed_rank")
             diagnostics.append(
                 RetrievalChunkDiagnostic(
@@ -303,6 +426,8 @@ def _build_chunk_diagnostics(
             selection_mode = (
                 str(provenance.get("selection_mode", "")).strip() or None
             )
+            if matched_delivery_id != chunk_id:
+                selection_mode = "text_fallback"
             diagnostics.append(
                 RetrievalChunkDiagnostic(
                     chunk_id=chunk_id,
@@ -335,15 +460,89 @@ def _build_case_result(
     seed_index = _build_chunk_index(list(retrieval_payload.get("seed_chunks", [])))
     delivery_index = _build_chunk_index(list(retrieval_payload.get("chunks", [])))
     gold_chunk_ids = list(case.gold_chunk_ids)
-    gold_chunk_set = set(gold_chunk_ids)
+    gold_chunk_texts = list(case.gold_chunk_texts) if case.gold_chunk_texts else None
 
-    seed_hit_ids = gold_chunk_set & set(seed_index.keys())
-    delivery_hit_ids = gold_chunk_set & set(delivery_index.keys())
-    seed_precision_hits = seed_hit_ids
-    delivery_precision_hits = gold_chunk_set & set(delivery_index.keys())
+    delivery_chunk_ids_for_text = set(delivery_index.keys())
+    excerpt_source_ids = _collect_excerpt_source_ids(excerpts_payload)
+    reference_index = _build_reference_index(references_payload)
+    cited_ref_ids = extract_cited_ref_ids(final_text)
+    cited_source_chunk_ids: set[str] = set()
+    for ref_id in cited_ref_ids:
+        reference = reference_index.get(ref_id)
+        if reference is None:
+            continue
+        raw_chunk_ids = reference.get("source_chunk_ids", [])
+        if not isinstance(raw_chunk_ids, list):
+            continue
+        for raw_chunk_id in raw_chunk_ids:
+            if not isinstance(raw_chunk_id, str):
+                continue
+            chunk_id = raw_chunk_id.strip()
+            if chunk_id:
+                cited_source_chunk_ids.add(chunk_id)
+
+    chunk_text_map = _load_chunk_text_map(
+        run_dir=run_dir,
+        config=config,
+        chunk_ids=set(seed_index.keys())
+        | delivery_chunk_ids_for_text
+        | excerpt_source_ids
+        | cited_source_chunk_ids,
+    )
+    seed_text_map = {
+        chunk_id: text for chunk_id, text in chunk_text_map.items() if chunk_id in seed_index
+    }
+    delivery_text_map = {
+        chunk_id: text
+        for chunk_id, text in chunk_text_map.items()
+        if chunk_id in delivery_index
+    }
+    excerpt_text_map = {
+        chunk_id: text
+        for chunk_id, text in chunk_text_map.items()
+        if chunk_id in excerpt_source_ids
+    }
+    cited_text_map = {
+        chunk_id: text
+        for chunk_id, text in chunk_text_map.items()
+        if chunk_id in cited_source_chunk_ids
+    }
+    seed_text_index = _build_text_match_index(seed_text_map)
+    delivery_text_index = _build_text_match_index(delivery_text_map)
+    excerpt_text_index = _build_text_match_index(excerpt_text_map)
+    cited_text_index = _build_text_match_index(cited_text_map)
+
+    seed_matches = _match_gold_chunks(
+        gold_chunk_ids=gold_chunk_ids,
+        gold_chunk_texts=gold_chunk_texts,
+        target_index=seed_index,
+        target_text_index=seed_text_index,
+        target_text_map=seed_text_map,
+    )
+    delivery_matches = _match_gold_chunks(
+        gold_chunk_ids=gold_chunk_ids,
+        gold_chunk_texts=gold_chunk_texts,
+        target_index=delivery_index,
+        target_text_index=delivery_text_index,
+        target_text_map=delivery_text_map,
+    )
+    excerpt_matches = _match_gold_chunks(
+        gold_chunk_ids=gold_chunk_ids,
+        gold_chunk_texts=gold_chunk_texts,
+        target_index={chunk_id: {} for chunk_id in excerpt_source_ids},
+        target_text_index=excerpt_text_index,
+        target_text_map=excerpt_text_map,
+    )
+    cited_matches = _match_gold_chunks(
+        gold_chunk_ids=gold_chunk_ids,
+        gold_chunk_texts=gold_chunk_texts,
+        target_index={chunk_id: {} for chunk_id in cited_source_chunk_ids},
+        target_text_index=cited_text_index,
+        target_text_map=cited_text_map,
+    )
 
     matching_seed_ranks: list[int] = []
-    for chunk_id in seed_hit_ids:
+    for chunk_id in seed_matches.values():
         provenance = seed_index[chunk_id].get("provenance", {})
         seed_rank = provenance.get("seed_rank")
         if isinstance(seed_rank, int):
@@ -351,19 +550,24 @@ def _build_case_result(
 
     chunk_diagnostics = _build_chunk_diagnostics(
         gold_chunk_ids=gold_chunk_ids,
+        gold_chunk_texts=gold_chunk_texts,
         seed_index=seed_index,
         delivery_index=delivery_index,
+        seed_text_index=seed_text_index,
+        delivery_text_index=delivery_text_index,
+        seed_text_map=seed_text_map,
+        delivery_text_map=delivery_text_map,
     )
     stage_a = StageARetrievalMetrics(
-        retrieval_recall=_safe_ratio(len(seed_hit_ids), len(gold_chunk_ids)),
+        retrieval_recall=_safe_ratio(len(seed_matches), len(gold_chunk_ids)),
         retrieval_precision=_safe_ratio(
-            len(seed_precision_hits),
+            len(seed_matches),
             len(seed_index),
         ),
         mrr=(1.0 / float(min(matching_seed_ranks))) if matching_seed_ranks else 0.0,
-        delivery_recall=_safe_ratio(len(delivery_hit_ids), len(gold_chunk_ids)),
+        delivery_recall=_safe_ratio(len(delivery_matches), len(gold_chunk_ids)),
         delivery_precision=_safe_ratio(
-            len(delivery_precision_hits),
+            len(delivery_matches),
             len(delivery_index),
         ),
         seed_hit_count=sum(
@@ -384,7 +588,6 @@ def _build_case_result(
         ),
     )
 
-    excerpt_source_ids = _collect_excerpt_source_ids(excerpts_payload)
     stage_b_text = _build_stage_b_candidate_text(excerpts_payload)
     stage_b_judgements = _judge_stage_facts(
         stage="stage_b",
@@ -401,7 +604,7 @@ def _build_case_result(
     )
     stage_b = StageBExtractionMetrics(
         extraction_recall=_safe_ratio(
-            len(excerpt_source_ids & gold_chunk_set),
+            len(excerpt_matches),
             len(gold_chunk_ids),
         ),
         fact_extraction_rate=_safe_ratio(
@@ -423,29 +626,13 @@ def _build_case_result(
     stage_c_fact_hit_count = sum(
         1 for judgement in stage_c_judgements if judgement.is_hit
     )
-    reference_index = _build_reference_index(references_payload)
-    cited_ref_ids = extract_cited_ref_ids(final_text)
-    cited_source_chunk_ids: set[str] = set()
-    for ref_id in cited_ref_ids:
-        reference = reference_index.get(ref_id)
-        if reference is None:
-            continue
-        raw_chunk_ids = reference.get("source_chunk_ids", [])
-        if not isinstance(raw_chunk_ids, list):
-            continue
-        for raw_chunk_id in raw_chunk_ids:
-            if not isinstance(raw_chunk_id, str):
-                continue
-            chunk_id = raw_chunk_id.strip()
-            if chunk_id:
-                cited_source_chunk_ids.add(chunk_id)
     stage_c = StageCWriterMetrics(
         end_to_end_fact_recall=_safe_ratio(
             stage_c_fact_hit_count,
             len(case.gold_facts),
         ),
         citation_coverage=_safe_ratio(
-            len(cited_source_chunk_ids & gold_chunk_set),
+            len(cited_matches),
             len(gold_chunk_ids),
         ),
     )
@@ -466,8 +653,8 @@ def _build_case_result(
         stage_c=stage_c,
         loss_waterfall=LossWaterfall(
             gold_chunk_count=len(gold_chunk_ids),
-            seed_hit_chunk_count=len(seed_hit_ids),
-            delivery_hit_chunk_count=len(delivery_hit_ids),
+            seed_hit_chunk_count=len(seed_matches),
+            delivery_hit_chunk_count=len(delivery_matches),
             stage_b_fact_hit_count=stage_b_fact_hit_count,
             stage_c_fact_hit_count=stage_c_fact_hit_count,
         ),

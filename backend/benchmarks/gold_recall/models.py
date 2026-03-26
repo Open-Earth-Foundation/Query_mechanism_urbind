@@ -36,6 +36,7 @@ class GoldBenchmarkCase(BaseModel):
     case_id: str = Field(min_length=1)
     question: str = Field(min_length=1)
     gold_chunk_ids: list[str] = Field(min_length=1)
+    gold_chunk_texts: list[str] | None = None
     gold_facts: list[str] = Field(min_length=1)
     gold_city: list[str] = Field(min_length=1)
     selected_cities: list[str] | None = None
@@ -58,6 +59,26 @@ class GoldBenchmarkCase(BaseModel):
             return []
         normalized = _normalize_string_list(value)
         return normalized or None
+
+    @field_validator("gold_chunk_texts", mode="before")
+    @classmethod
+    def _validate_optional_chunk_texts(cls, value: object) -> list[str] | None:
+        """Normalize optional canonical chunk texts."""
+        if value is None:
+            return None
+        normalized = _normalize_string_list(value)
+        return normalized or None
+
+    @model_validator(mode="after")
+    def _validate_case(self) -> "GoldBenchmarkCase":
+        """Enforce per-case invariants."""
+        if self.gold_chunk_texts is not None and len(self.gold_chunk_texts) != len(
+            self.gold_chunk_ids
+        ):
+            raise ValueError(
+                "gold_chunk_texts must align 1:1 with gold_chunk_ids when provided."
+            )
+        return self
 
     def resolved_selected_cities(self) -> list[str]:
         """Return the cities that should be passed to the live pipeline."""

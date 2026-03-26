@@ -6,6 +6,7 @@ from pathlib import Path
 
 import pytest
 
+from backend.api.models import SourceChunkItem
 from backend.benchmarks.gold_recall.models import FactJudgeDecision
 from backend.benchmarks.gold_recall.runner import (
     load_gold_benchmark_dataset,
@@ -174,6 +175,198 @@ def test_run_recall_benchmark_rejects_cached_question_mismatch(
         )
 
 
+def test_run_recall_benchmark_uses_gold_chunk_text_fallback(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    gold_file = tmp_path / "text_fallback_gold.json"
+    gold_file.write_text(
+        json.dumps(
+            {
+                "version": 1,
+                "cases": [
+                    {
+                        "case_id": "sample_case",
+                        "question": "What does Sample City plan for solar, retrofits, and district heating?",
+                        "gold_chunk_ids": [
+                            "gold-text-seed",
+                            "gold-text-fallback",
+                            "gold-text-neighbor",
+                            "gold-text-miss",
+                        ],
+                        "gold_chunk_texts": [
+                            "Solar canonical chunk text",
+                            "Retrofit canonical chunk text",
+                            "District heating canonical chunk text",
+                            "Missing canonical chunk text",
+                        ],
+                        "gold_facts": [
+                            "Sample City plans 500 rooftop solar installations by 2030.",
+                            "Sample City allocated EUR 2 million for retrofit grants.",
+                            "Sample City will expand district heating to 12,000 households.",
+                        ],
+                        "gold_city": ["Sample City"],
+                        "cached_run_dir": str(
+                            FIXTURES_DIR / "benchmark_recall" / "sample_run_1"
+                        ),
+                    }
+                ],
+            }
+        ),
+        encoding="utf-8",
+    )
+
+    def _fake_load_source_chunks(*_args, **kwargs) -> list[SourceChunkItem]:
+        content_by_chunk_id = {
+            "chunk-seed-1": "Solar canonical chunk text",
+            "chunk-fallback-1": "Retrofit canonical chunk text",
+            "chunk-neighbor-1": "District heating canonical chunk text",
+            "chunk-nongold-1": "Non-gold chunk text",
+        }
+        chunk_ids = kwargs["chunk_ids"]
+        return [
+            SourceChunkItem(chunk_id=chunk_id, content=content_by_chunk_id[chunk_id])
+            for chunk_id in chunk_ids
+            if chunk_id in content_by_chunk_id
+        ]
+
+    monkeypatch.setattr(
+        "backend.benchmarks.gold_recall.runner.load_source_chunks",
+        _fake_load_source_chunks,
+    )
+
+    def _fake_judge(**kwargs) -> FactJudgeDecision:
+        stage = kwargs["stage_label"]
+        fact = kwargs["fact"]
+        yes_pairs = {
+            ("stage_b", "Sample City plans 500 rooftop solar installations by 2030."),
+            ("stage_b", "Sample City will expand district heating to 12,000 households."),
+            ("stage_c", "Sample City plans 500 rooftop solar installations by 2030."),
+            ("stage_c", "Sample City allocated EUR 2 million for retrofit grants."),
+        }
+        verdict = "YES" if (stage, fact) in yes_pairs else "NO"
+        return FactJudgeDecision(verdict=verdict, rationale=f"{stage}:{verdict}")
+
+    report = run_recall_benchmark(
+        benchmark_id="bench_text_fallback",
+        gold_file=gold_file,
+        output_dir=tmp_path / "output",
+        config_path=Path("llm_config.yaml"),
+        api_key_override="test-key",
+        judge_func=_fake_judge,
+    )
+
+    result = report.results[0]
+    assert result.stage_a.retrieval_recall == pytest.approx(0.5)
+    assert result.stage_a.delivery_recall == pytest.approx(0.75)
+    assert result.stage_b.extraction_recall == pytest.approx(0.5)
+    assert result.stage_c.citation_coverage == pytest.approx(0.5)
+    assert result.loss_waterfall.seed_hit_chunk_count == 2
+    assert result.loss_waterfall.delivery_hit_chunk_count == 3
+    assert {item.chunk_id: item.bucket for item in result.chunk_diagnostics} == {
+        "gold-text-seed": "seed_hit",
+        "gold-text-fallback": "fallback_top_up_hit",
+        "gold-text-neighbor": "neighbor_only_hit",
+        "gold-text-miss": "miss",
+    }
+
+
+def test_run_recall_benchmark_uses_gold_chunk_excerpt_fallback(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    gold_file = tmp_path / "excerpt_fallback_gold.json"
+    gold_file.write_text(
+        json.dumps(
+            {
+                "version": 1,
+                "cases": [
+                    {
+                        "case_id": "sample_case",
+                        "question": "What does Sample City plan for solar, retrofits, and district heating?",
+                        "gold_chunk_ids": [
+                            "gold-text-seed",
+                            "gold-text-fallback",
+                            "gold-text-neighbor",
+                            "gold-text-miss",
+                        ],
+                        "gold_chunk_texts": [
+                            "Solar canonical excerpt",
+                            "Retrofit canonical excerpt",
+                            "District heating canonical excerpt",
+                            "Missing canonical excerpt",
+                        ],
+                        "gold_facts": [
+                            "Sample City plans 500 rooftop solar installations by 2030.",
+                            "Sample City allocated EUR 2 million for retrofit grants.",
+                            "Sample City will expand district heating to 12,000 households.",
+                        ],
+                        "gold_city": ["Sample City"],
+                        "cached_run_dir": str(
+                            FIXTURES_DIR / "benchmark_recall" / "sample_run_1"
+                        ),
+                    }
+                ],
+            }
+        ),
+        encoding="utf-8",
+    )
+
+    def _fake_load_source_chunks(*_args, **kwargs) -> list[SourceChunkItem]:
+        content_by_chunk_id = {
+            "chunk-seed-1": "Prefix Solar canonical excerpt suffix",
+            "chunk-fallback-1": "Start Retrofit canonical excerpt end",
+            "chunk-neighbor-1": "District heating canonical excerpt surrounded",
+            "chunk-nongold-1": "Non-gold chunk text",
+        }
+        chunk_ids = kwargs["chunk_ids"]
+        return [
+            SourceChunkItem(chunk_id=chunk_id, content=content_by_chunk_id[chunk_id])
+            for chunk_id in chunk_ids
+            if chunk_id in content_by_chunk_id
+        ]
+
+    monkeypatch.setattr(
+        "backend.benchmarks.gold_recall.runner.load_source_chunks",
+        _fake_load_source_chunks,
+    )
+
+    def _fake_judge(**kwargs) -> FactJudgeDecision:
+        stage = kwargs["stage_label"]
+        fact = kwargs["fact"]
+        yes_pairs = {
+            ("stage_b", "Sample City plans 500 rooftop solar installations by 2030."),
+            ("stage_b", "Sample City will expand district heating to 12,000 households."),
+            ("stage_c", "Sample City plans 500 rooftop solar installations by 2030."),
+            ("stage_c", "Sample City allocated EUR 2 million for retrofit grants."),
+        }
+        verdict = "YES" if (stage, fact) in yes_pairs else "NO"
+        return FactJudgeDecision(verdict=verdict, rationale=f"{stage}:{verdict}")
+
+    report = run_recall_benchmark(
+        benchmark_id="bench_excerpt_fallback",
+        gold_file=gold_file,
+        output_dir=tmp_path / "output",
+        config_path=Path("llm_config.yaml"),
+        api_key_override="test-key",
+        judge_func=_fake_judge,
+    )
+
+    result = report.results[0]
+    assert result.stage_a.retrieval_recall == pytest.approx(0.5)
+    assert result.stage_a.delivery_recall == pytest.approx(0.75)
+    assert result.stage_b.extraction_recall == pytest.approx(0.5)
+    assert result.stage_c.citation_coverage == pytest.approx(0.5)
+    assert result.loss_waterfall.seed_hit_chunk_count == 2
+    assert result.loss_waterfall.delivery_hit_chunk_count == 3
+    assert {item.chunk_id: item.bucket for item in result.chunk_diagnostics} == {
+        "gold-text-seed": "seed_hit",
+        "gold-text-fallback": "fallback_top_up_hit",
+        "gold-text-neighbor": "neighbor_only_hit",
+        "gold-text-miss": "miss",
+    }
+
+
 def test_benchmark_recall_script_passes_cli_args(
     monkeypatch: pytest.MonkeyPatch,
     tmp_path: Path,
@@ -218,4 +411,4 @@ def test_benchmark_recall_script_passes_cli_args(
 
 def test_real_gold_fixture_contains_expected_case_count() -> None:
     dataset = load_gold_benchmark_dataset(REAL_GOLD_FILE)
-    assert 10 <= len(dataset.cases) <= 15
+    assert len(dataset.cases) == 9
