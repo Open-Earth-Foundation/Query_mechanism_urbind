@@ -154,7 +154,7 @@ def test_chat_builds_prompt_safe_citation_catalog_and_persists_mapping(
         assert isinstance(original_question, str)
         assert isinstance(contexts, list) and contexts
         assert isinstance(history, list)
-        assert config.chat.model == "openai/gpt-5.2"
+        assert config.chat.model == "openai/gpt-5.4-mini"
         assert token_cap == config.chat.max_context_total_tokens
         assert isinstance(citation_catalog, list) and citation_catalog
         assert citation_prefix_tokens is None or isinstance(citation_prefix_tokens, list)

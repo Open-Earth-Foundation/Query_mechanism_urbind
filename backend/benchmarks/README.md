@@ -35,7 +35,7 @@ If a key appears in both, the mode-specific value wins.
   with the currently available index.
 - To reduce run-to-run variance in retrieval behavior, the benchmark script can use
   fixed canonical + retrieval queries from `prompts/retrieval_query_overrides.json`.
-- Benchmark includes LLM-as-judge scoring (OpenRouter `openai/gpt-5.2`) for each
+- Benchmark includes LLM-as-judge scoring (OpenRouter `openai/gpt-5.4-mini`) for each
   standard-vs-vector pair on the same question/repetition/markdown option.
 - Benchmark report includes speed metrics (runtime + tokens/sec) and LLM issue
   counters (rate limits, retry exhausted, max-turns, and non-working calls).
@@ -70,7 +70,7 @@ the gold question exactly. Legacy runs without `seed_chunks[]` are rejected
 because they cannot support strict Stage A metrics.
 
 The fact judge is separate from the pairwise benchmark judge and defaults to
-OpenRouter `openai/gpt-5.2`.
+OpenRouter `openai/gpt-5.4-mini`.
 
 Outputs are written under `output/benchmarks/recall/<benchmark_id>/`:
 

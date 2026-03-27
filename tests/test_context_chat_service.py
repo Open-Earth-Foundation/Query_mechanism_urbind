@@ -48,7 +48,7 @@ def _markdown_researcher_config() -> MarkdownResearcherConfig:
 
 def _chat_config(**overrides: object) -> ChatConfig:
     return ChatConfig(
-        model="openai/gpt-5.2",
+        model="openai/gpt-5.4-mini",
         provider_timeout_seconds=60.0,
         followup_router_max_excerpts_per_source=50,
         **overrides,
@@ -362,7 +362,7 @@ def test_generate_context_chat_reply_forwards_reasoning_effort(
     )
 
     assert result == "ok"
-    assert captured_request_kwargs["model"] == "openai/gpt-5.2"
+    assert captured_request_kwargs["model"] == "openai/gpt-5.4-mini"
     assert captured_request_kwargs["reasoning_effort"] == "high"
 
 

@@ -14,7 +14,7 @@ from backend.services.agents import (
 from backend.utils.config import AppConfig
 from backend.utils.prompts import load_prompt
 
-FACT_JUDGE_MODEL = "openai/gpt-5.2"
+FACT_JUDGE_MODEL = "openai/gpt-5.4-mini"
 
 
 def build_fact_judge_agent(config: AppConfig, api_key: str) -> Agent:

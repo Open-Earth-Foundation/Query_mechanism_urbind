@@ -173,7 +173,7 @@ writer:
   context_window_tokens: 256000
   input_token_reserve: 2000
 chat:
-  model: "openai/gpt-5.2"
+  model: "openai/gpt-5.4-mini"
   temperature: 0.0
   context_window_tokens: 400000
   input_token_reserve: 20000
@@ -183,7 +183,7 @@ chat:
   followup_router_max_history_messages: 6
   followup_router_max_excerpts_per_source: 50
 assumptions_reviewer:
-  model: "openai/gpt-5.2"
+  model: "openai/gpt-5.4-mini"
   temperature: 0.0
   max_output_tokens: 8000
 retry:
@@ -357,7 +357,7 @@ Benchmark behavior notes:
 - The script always loads benchmark env files from `backend/benchmarks/config/`.
 - The benchmark is runtime-only; it does not build/update the vector index.
 - Vector mode uses the existing default Chroma store/collection unless overridden in your main environment.
-- The benchmark also runs LLM-as-judge scoring (`openai/gpt-5.2`) per matched standard-vs-vector run pair within the same markdown option.
+- The benchmark also runs LLM-as-judge scoring (`openai/gpt-5.4-mini`) per matched standard-vs-vector run pair within the same markdown option.
 - The benchmark report includes speed metrics (`runtime`, `tokens/sec`) and LLM issue counters (rate limits, retries exhausted, max-turns, and non-working calls).
 - Individual run failures are recorded and counted (instead of aborting the full matrix); summaries include success rate and failed run count.
 
@@ -409,7 +409,7 @@ Behavior notes:
   `question`, `gold_chunk_ids`, `gold_facts`, `gold_city`, optional
   `selected_cities`, and optional `cached_run_dir`.
 - Stage B and Stage C fact verification use an LLM fact judge
-  (`openai/gpt-5.2`) to handle paraphrases.
+  (`openai/gpt-5.4-mini`) to handle paraphrases.
 
 Outputs are written to `output/benchmarks/recall/<benchmark_id>/`:
 
