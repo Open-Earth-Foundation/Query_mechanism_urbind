@@ -454,38 +454,6 @@ def test_run_recall_benchmark_scores_live_run(tmp_path: Path) -> None:
     assert (tmp_path / "output" / "bench_sample" / "benchmark_report.md").exists()
 
 
-def test_run_recall_benchmark_rejects_missing_live_artifacts(tmp_path: Path) -> None:
-    gold_file = tmp_path / "sample_gold.json"
-    _write_gold_file(gold_file)
-
-    def _fake_run_pipeline(
-        *,
-        question: str,
-        config,
-        run_id: str,
-        log_llm_payload: bool,
-        selected_cities: list[str],
-    ) -> SimpleNamespace:
-        del question, log_llm_payload, selected_cities
-        run_dir = Path(config.runs_dir) / run_id
-        run_dir.mkdir(parents=True, exist_ok=True)
-        return SimpleNamespace(base_dir=run_dir)
-
-    with pytest.raises(ValueError, match="Expected a JSON object"):
-        run_recall_benchmark(
-            benchmark_id="bench_missing_artifacts",
-            gold_file=gold_file,
-            output_dir=tmp_path / "output",
-            config_path=Path("llm_config.yaml"),
-            api_key_override="test-key",
-            judge_func=lambda **_kwargs: FactJudgeDecision(
-                verdict="NO",
-                rationale="not used",
-            ),
-            run_pipeline_func=_fake_run_pipeline,
-        )
-
-
 def test_run_recall_benchmark_uses_gold_chunk_text_fallback(
     monkeypatch: pytest.MonkeyPatch,
     tmp_path: Path,
@@ -602,6 +570,38 @@ def test_run_recall_benchmark_uses_gold_chunk_excerpt_fallback(
         "chunk-neighbor-1": "neighbor_only_hit",
         "chunk-miss-1": "miss",
     }
+
+
+def test_run_recall_benchmark_rejects_missing_live_artifacts(tmp_path: Path) -> None:
+    gold_file = tmp_path / "sample_gold.json"
+    _write_gold_file(gold_file)
+
+    def _fake_run_pipeline(
+        *,
+        question: str,
+        config,
+        run_id: str,
+        log_llm_payload: bool,
+        selected_cities: list[str],
+    ) -> SimpleNamespace:
+        del question, log_llm_payload, selected_cities
+        run_dir = Path(config.runs_dir) / run_id
+        run_dir.mkdir(parents=True, exist_ok=True)
+        return SimpleNamespace(base_dir=run_dir)
+
+    with pytest.raises(ValueError, match="Expected a JSON object"):
+        run_recall_benchmark(
+            benchmark_id="bench_missing_artifacts",
+            gold_file=gold_file,
+            output_dir=tmp_path / "output",
+            config_path=Path("llm_config.yaml"),
+            api_key_override="test-key",
+            judge_func=lambda **_kwargs: FactJudgeDecision(
+                verdict="NO",
+                rationale="not used",
+            ),
+            run_pipeline_func=_fake_run_pipeline,
+        )
 
 
 def test_real_gold_fixture_contains_expected_case_count() -> None:
