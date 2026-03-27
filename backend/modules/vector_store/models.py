@@ -63,7 +63,12 @@ class IndexedChunk:
 
 @dataclass(frozen=True)
 class RetrievedChunkProvenance:
-    """Explain how one chunk entered the retrieval output."""
+    """Explain how one chunk entered the retrieval output.
+
+    We keep this explicit so retrieval artifacts can surface current vector DB
+    behavior: whether a chunk was a direct distance-qualified hit, a fallback
+    top-up, or a neighbor added only for local context.
+    """
 
     origin: RetrievalOrigin = "seed"
     selection_mode: RetrievalSelectionMode = "distance_qualified"
