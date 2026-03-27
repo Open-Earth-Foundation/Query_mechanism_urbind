@@ -22,7 +22,6 @@ The current fixture is still the old path-based format:
 - top-level keys are `version` and `cases`
 - there is no top-level `chunks` catalog yet
 - there is no `split_spec` yet
-- each case still carries a `cached_run_dir`
 - `gold_chunk_ids` are still runtime-style chunk ids such as `chunk_...`
 
 Each current case contains:
@@ -34,36 +33,16 @@ Each current case contains:
 - `gold_facts`
 - `gold_city`
 - `selected_cities`
-- `cached_run_dir`
 
 This means the benchmark is only partially self-contained today:
 
 - the scoring expectations live in the fixture
 - some cases may now include fixture-owned canonical chunk text or excerpts
-- cached-mode execution still depends on historical run folders
+- live execution still depends on runtime artifacts produced during the benchmark run
 - chunk identity still follows current runtime ids rather than canonical
   benchmark-owned ids
 
 ## Current Benchmark Flow
-
-Today the benchmark can run in two practical modes.
-
-### 1. Cached-mode verification
-
-The runner reads `cached_run_dir` from the fixture and scores a previously
-generated run.
-
-This is useful for:
-
-- fast fixture verification
-- comparing scoring logic without rerunning the pipeline
-
-This is limited because:
-
-- it depends on external run artifacts
-- the fixture is not portable by itself
-
-### 2. Live benchmark execution
 
 The runner executes the live pipeline for the case question and selected cities,
 then scores the run against the fixture's `gold_chunk_ids` and `gold_facts`.
@@ -127,7 +106,6 @@ The current setup is already useful because:
 
 The current setup still has important structural weaknesses:
 
-- `cached_run_dir` keeps cached-mode verification tied to `output/` artifacts
 - runtime chunk ids are used as benchmark ids
 - there is no canonical chunk catalog inside the fixture
 - the benchmark cannot yet validate chunk text directly from fixture-owned data
@@ -142,7 +120,7 @@ The target design is:
 - one versioned fixture schema
 - one canonical benchmark-owned chunk catalog
 - chunk text embedded directly in the fixture
-- no dependency on `cached_run_dir`
+- no dependency on historical cached runs
 - no dependency on external `output/` folders for scoring
 - stable benchmark chunk ids that are independent from production vector-store
   ids
@@ -191,7 +169,6 @@ This document is not saying the migration is complete.
 
 What remains deferred:
 
-- replacing `cached_run_dir`
 - materializing a canonical chunk catalog
 - changing the fixture to `version: 2`
 - mapping runtime artifacts to benchmark-owned chunk ids
@@ -215,7 +192,6 @@ When we choose to do the migration, the intended order is:
 ### Phase 3: Update scoring
 
 - score against canonical chunk ids instead of runtime vector ids
-- stop requiring `cached_run_dir` for benchmark validity
 
 ### Phase 4: Remove the old path-based dependency
 
@@ -227,7 +203,7 @@ For now, the benchmark should be maintained as:
 
 - a high-quality `version: 1` gold fixture
 - live-run capable
-- explicit about its dependency on current runtime chunk ids and cached runs
+- explicit about its dependency on current runtime chunk ids and live run artifacts
 
 Later, it should be upgraded into:
 

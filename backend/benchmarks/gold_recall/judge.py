@@ -2,23 +2,23 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
-
-from agents import Agent, function_tool
+from typing import TYPE_CHECKING
 
 from backend.benchmarks.gold_recall.models import FactJudgeDecision
-from backend.services.agents import (
-    build_model_settings,
-    build_openrouter_model,
-    run_agent_sync,
-)
 from backend.utils.config import AppConfig
 from backend.utils.prompts import load_prompt
 
 FACT_JUDGE_MODEL = "openai/gpt-5.4-mini"
 
+if TYPE_CHECKING:
+    from agents import Agent
+
 
 def build_fact_judge_agent(config: AppConfig, api_key: str) -> Agent:
     """Build the LLM-as-judge agent used for fact presence checks."""
+    from agents import Agent, function_tool
+    from backend.services.agents import build_model_settings, build_openrouter_model
+
     prompt_path = (
         Path(__file__).resolve().parents[2]
         / "prompts"
@@ -66,6 +66,8 @@ def judge_fact_presence(
     log_llm_payload: bool = False,
 ) -> FactJudgeDecision:
     """Judge whether one gold fact is stated or directly implied in candidate text."""
+    from backend.services.agents import run_agent_sync
+
     agent = build_fact_judge_agent(config, api_key)
     payload = {
         "question": question,

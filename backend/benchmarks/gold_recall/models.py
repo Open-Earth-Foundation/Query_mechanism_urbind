@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Literal
 
-from pydantic import BaseModel, Field, field_validator, model_validator
+from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
 
 ChunkBucket = Literal["seed_hit", "neighbor_only_hit", "fallback_top_up_hit", "miss"]
@@ -33,6 +33,8 @@ def _normalize_string_list(value: object) -> list[str]:
 class GoldBenchmarkCase(BaseModel):
     """One manually curated benchmark question and its gold answers."""
 
+    model_config = ConfigDict(extra="forbid")
+
     case_id: str = Field(min_length=1)
     question: str = Field(min_length=1)
     gold_chunk_ids: list[str] = Field(min_length=1)
@@ -40,7 +42,6 @@ class GoldBenchmarkCase(BaseModel):
     gold_facts: list[str] = Field(min_length=1)
     gold_city: list[str] = Field(min_length=1)
     selected_cities: list[str] | None = None
-    cached_run_dir: str | None = None
 
     @field_validator("gold_chunk_ids", "gold_facts", "gold_city", mode="before")
     @classmethod
@@ -89,6 +90,8 @@ class GoldBenchmarkCase(BaseModel):
 
 class GoldBenchmarkDataset(BaseModel):
     """Versioned gold benchmark input file."""
+
+    model_config = ConfigDict(extra="forbid")
 
     version: int
     cases: list[GoldBenchmarkCase] = Field(min_length=1)
@@ -174,7 +177,6 @@ class RecallBenchmarkCaseResult(BaseModel):
     question: str
     gold_city: list[str]
     selected_cities: list[str]
-    used_cached_run: bool
     run_dir: str
     retrieval_path: str
     excerpts_path: str

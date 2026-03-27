@@ -61,13 +61,11 @@ to measure information loss across retrieval, markdown extraction, and final wri
 
 Gold fixtures live in `tests/fixtures/benchmark_gold.json` and use the versioned
 schema `{"version": 1, "cases": [...]}` with `case_id`, `question`,
-`gold_chunk_ids`, `gold_facts`, `gold_city`, and optional `selected_cities` plus
-`cached_run_dir`.
+`gold_chunk_ids`, `gold_facts`, `gold_city`, and optional `selected_cities`.
 
-Cached runs must contain `markdown/retrieval.json`, `markdown/excerpts.json`,
-`markdown/references.json`, and `final.md`, and the cached question must match
-the gold question exactly. Legacy runs without `seed_chunks[]` are rejected
-because they cannot support strict Stage A metrics.
+Every benchmark case executes the live pipeline and is then scored from the
+freshly produced `markdown/retrieval.json`, `markdown/excerpts.json`,
+`markdown/references.json`, and `final.md` artifacts.
 
 The fact judge is separate from the pairwise benchmark judge and defaults to
 OpenRouter `openai/gpt-5.4-mini`.
@@ -76,4 +74,4 @@ Outputs are written under `output/benchmarks/recall/<benchmark_id>/`:
 
 - `benchmark_report.json`
 - `benchmark_report.md`
-- `runs/<case_id>/...` for any case executed live
+- `runs/<case_id>/...` for each benchmark case

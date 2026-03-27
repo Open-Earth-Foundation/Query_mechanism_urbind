@@ -29,8 +29,7 @@
       "selected_cities": [
         "Aarhus",
         "Copenhagen"
-      ],
-      "cached_run_dir": "../../output/benchmarks/recall/benchmark_audit_vehicle/runs/vehicle_targets_cross_ccc"
+      ]
     },
     {
       "case_id": "capex_cross_ccc",
@@ -252,8 +251,7 @@
       ],
       "selected_cities": [
         "Krakow"
-      ],
-      "cached_run_dir": "../../output/benchmarks/recall/krakow_cases_textfallback_20260326/runs/krakow_vehicle_targets"
+      ]
     },
     {
       "case_id": "krakow_warszawa_transport_electrification",
@@ -289,8 +287,7 @@
       "selected_cities": [
         "Krakow",
         "Warszawa"
-      ],
-      "cached_run_dir": "benchmark_recall/krakow_warszawa_transport_electrification_run"
+      ]
     }
   ]
 }

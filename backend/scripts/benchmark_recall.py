@@ -8,12 +8,11 @@ Inputs:
   - `--output-dir`: Root directory for benchmark artifacts (default: `output/benchmarks/recall`).
   - `--config`: Path to `llm_config.yaml` used for live pipeline runs and fact judging.
   - `--case-id`: Optional repeatable gold case filter.
-  - `--run-live`: Ignore `cached_run_dir` entries and execute live pipeline runs instead.
   - `--log-llm-payload`: Enable or disable full LLM payload logs for live runs and fact judging.
 - Files/paths:
   - The gold file must match the schema `{"version": 1, "cases": [...]}` and contain
     `case_id`, `question`, `gold_chunk_ids`, `gold_facts`, `gold_city`, and optional
-    `selected_cities` plus `cached_run_dir`.
+    `selected_cities`.
 - Env vars:
   - `OPENROUTER_API_KEY` is required because Stage B and Stage C fact recall are judged with an LLM.
 
@@ -24,7 +23,7 @@ Outputs:
 
 Usage (from project root):
 - python -m backend.scripts.benchmark_recall --gold-file tests/fixtures/benchmark_gold.json
-- python -m backend.scripts.benchmark_recall --gold-file tests/fixtures/benchmark_gold.json --case-id sample_case --run-live
+- python -m backend.scripts.benchmark_recall --gold-file tests/fixtures/benchmark_gold.json --case-id sample_case
 """
 
 from __future__ import annotations
@@ -66,11 +65,6 @@ def parse_args() -> argparse.Namespace:
         help="Optional repeatable gold case filter.",
     )
     parser.add_argument(
-        "--run-live",
-        action="store_true",
-        help="Ignore cached_run_dir and execute live pipeline runs.",
-    )
-    parser.add_argument(
         "--log-llm-payload",
         action=argparse.BooleanOptionalAction,
         default=False,
@@ -94,7 +88,6 @@ def main() -> None:
         output_dir=Path(args.output_dir),
         config_path=Path(args.config),
         selected_case_ids=args.case_id or [],
-        run_live=args.run_live,
         log_llm_payload=args.log_llm_payload,
     )
     logger.info("Recall benchmark completed: %s", report.benchmark_id)

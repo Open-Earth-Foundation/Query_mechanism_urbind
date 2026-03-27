@@ -393,7 +393,6 @@ Useful flags:
 - `--output-dir output/benchmarks/recall`: change the benchmark output root.
 - `--config llm_config.yaml`: use a specific runtime config for live cases.
 - `--case-id <case_id>`: repeatable case filter.
-- `--run-live`: ignore `cached_run_dir` and rerun every case.
 - `--log-llm-payload` / `--no-log-llm-payload`: toggle full LLM payload logging.
 
 Behavior notes:
@@ -406,8 +405,8 @@ Behavior notes:
 - `delivery_recall` and `delivery_precision` are supplemental metrics computed
   from the final delivered `retrieval.json.chunks[]`.
 - The gold file schema is `{"version": 1, "cases": [...]}` with `case_id`,
-  `question`, `gold_chunk_ids`, `gold_facts`, `gold_city`, optional
-  `selected_cities`, and optional `cached_run_dir`.
+  `question`, `gold_chunk_ids`, `gold_facts`, `gold_city`, and optional
+  `selected_cities`.
 - Stage B and Stage C fact verification use an LLM fact judge
   (`openai/gpt-5.4-mini`) to handle paraphrases.
 
@@ -416,8 +415,7 @@ Outputs are written to `output/benchmarks/recall/<benchmark_id>/`:
 - `benchmark_report.json`: machine-readable per-case metrics, fact judgements,
   and loss waterfalls.
 - `benchmark_report.md`: concise human-readable summary.
-- `runs/<case_id>/...`: live pipeline artifacts for any case without a usable
-  cached run.
+- `runs/<case_id>/...`: live pipeline artifacts for each benchmark case.
 
 ## Run API (local)
 

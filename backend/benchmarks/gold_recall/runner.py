@@ -22,7 +22,6 @@ from backend.benchmarks.gold_recall.models import (
     StageBExtractionMetrics,
     StageCWriterMetrics,
 )
-from backend.modules.orchestrator.module import run_pipeline
 from backend.modules.writer.utils.markdown_helpers import extract_cited_ref_ids
 from backend.utils.config import AppConfig, get_openrouter_api_key, load_config
 from backend.utils.json_io import read_json_object, write_json
@@ -75,14 +74,6 @@ def _select_cases(
     return selected
 
 
-def _resolve_cached_run_dir(gold_file: Path, raw_run_dir: str) -> Path:
-    """Resolve a cached run directory relative to the gold file when needed."""
-    candidate = Path(raw_run_dir)
-    if candidate.is_absolute():
-        return candidate
-    return (gold_file.parent / candidate).resolve()
-
-
 def _require_json_object(path: Path) -> dict[str, Any]:
     """Read one JSON object or raise a validation error."""
     payload = read_json_object(path)
@@ -96,52 +87,6 @@ def _require_text(path: Path) -> str:
     if not path.exists():
         raise FileNotFoundError(f"Required artifact not found: {path}")
     return path.read_text(encoding="utf-8")
-
-
-def _extract_cached_question(run_dir: Path) -> str:
-    """Read the original question stored in a cached run directory."""
-    research_question_path = run_dir / "research_question.json"
-    if research_question_path.exists():
-        payload = _require_json_object(research_question_path)
-        original_question = str(payload.get("original_question", "")).strip()
-        if original_question:
-            return original_question
-
-    run_log_path = run_dir / "run.json"
-    if run_log_path.exists():
-        payload = _require_json_object(run_log_path)
-        inputs = payload.get("inputs")
-        if isinstance(inputs, dict):
-            original_question = str(inputs.get("original_question", "")).strip()
-            if original_question:
-                return original_question
-
-    raise ValueError(
-        f"Could not validate cached question for run directory: {run_dir}"
-    )
-
-
-def _validate_cached_run(case: GoldBenchmarkCase, run_dir: Path) -> None:
-    """Validate cached-run artifacts and question matching before scoring."""
-    if not run_dir.exists():
-        raise FileNotFoundError(f"Cached run directory not found: {run_dir}")
-
-    cached_question = _extract_cached_question(run_dir)
-    if cached_question != case.question:
-        raise ValueError(
-            f"Cached run question mismatch for case_id={case.case_id}: "
-            f"{cached_question!r} != {case.question!r}"
-        )
-
-    required_paths = [
-        run_dir / "markdown" / "retrieval.json",
-        run_dir / "markdown" / "excerpts.json",
-        run_dir / "markdown" / "references.json",
-        run_dir / "final.md",
-    ]
-    for path in required_paths:
-        if not path.exists():
-            raise FileNotFoundError(f"Required cached artifact not found: {path}")
 
 
 def _validate_retrieval_payload(payload: dict[str, Any], case_id: str) -> None:
@@ -452,7 +397,6 @@ def _build_case_result(
     api_key: str,
     log_llm_payload: bool,
     judge_func,
-    used_cached_run: bool,
 ) -> RecallBenchmarkCaseResult:
     """Compute all recall/precision metrics for one benchmark case."""
     _validate_retrieval_payload(retrieval_payload, case.case_id)
@@ -642,7 +586,6 @@ def _build_case_result(
         question=case.question,
         gold_city=list(case.gold_city),
         selected_cities=case.resolved_selected_cities(),
-        used_cached_run=used_cached_run,
         run_dir=str(run_dir),
         retrieval_path=str(run_dir / "markdown" / "retrieval.json"),
         excerpts_path=str(run_dir / "markdown" / "excerpts.json"),
@@ -731,7 +674,6 @@ def _render_report_markdown(report: RecallBenchmarkReport) -> str:
                 "",
                 f"- Question: {result.question}",
                 f"- Run dir: {result.run_dir}",
-                f"- Cached run: {'yes' if result.used_cached_run else 'no'}",
                 (
                     "- Waterfall: "
                     f"gold_chunks={result.loss_waterfall.gold_chunk_count}, "
@@ -764,17 +706,21 @@ def run_recall_benchmark(
     output_dir: Path,
     config_path: Path,
     selected_case_ids: list[str] | None = None,
-    run_live: bool = False,
     log_llm_payload: bool = False,
     api_key_override: str | None = None,
     judge_func=judge_fact_presence,
-    run_pipeline_func=run_pipeline,
+    run_pipeline_func=None,
 ) -> RecallBenchmarkReport:
     """Execute the rigorous recall benchmark against the gold dataset."""
     dataset = load_gold_benchmark_dataset(gold_file)
     cases = _select_cases(dataset, selected_case_ids or [])
     benchmark_root = output_dir / benchmark_id
     benchmark_root.mkdir(parents=True, exist_ok=True)
+
+    if run_pipeline_func is None:
+        from backend.modules.orchestrator.module import run_pipeline
+
+        run_pipeline_func = run_pipeline
 
     config = load_config(config_path)
     api_key = (
@@ -786,22 +732,16 @@ def run_recall_benchmark(
     results: list[RecallBenchmarkCaseResult] = []
     for case in cases:
         logger.info("Recall benchmark case_id=%s", case.case_id)
-        if case.cached_run_dir and not run_live:
-            run_dir = _resolve_cached_run_dir(gold_file, case.cached_run_dir)
-            _validate_cached_run(case, run_dir)
-            used_cached_run = True
-        else:
-            live_config = config.model_copy(deep=True)
-            live_config.runs_dir = benchmark_root / "runs"
-            run_paths = run_pipeline_func(
-                question=case.question,
-                config=live_config,
-                run_id=case.case_id,
-                log_llm_payload=log_llm_payload,
-                selected_cities=case.resolved_selected_cities(),
-            )
-            run_dir = run_paths.base_dir
-            used_cached_run = False
+        live_config = config.model_copy(deep=True)
+        live_config.runs_dir = benchmark_root / "runs"
+        run_paths = run_pipeline_func(
+            question=case.question,
+            config=live_config,
+            run_id=case.case_id,
+            log_llm_payload=log_llm_payload,
+            selected_cities=case.resolved_selected_cities(),
+        )
+        run_dir = run_paths.base_dir
 
         retrieval_payload = _require_json_object(run_dir / "markdown" / "retrieval.json")
         excerpts_payload = _require_json_object(run_dir / "markdown" / "excerpts.json")
@@ -821,7 +761,6 @@ def run_recall_benchmark(
                 api_key=api_key,
                 log_llm_payload=log_llm_payload,
                 judge_func=judge_func,
-                used_cached_run=used_cached_run,
             )
         )
 
