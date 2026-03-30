@@ -183,7 +183,7 @@ def _load_chunk_text_map(
     try:
         chunks = load_source_chunks(
             run_dir=run_dir,
-            markdown_dir=Path("documents"),
+            markdown_dir=config.markdown_dir,
             config=config,
             chunk_ids=sorted(normalized_ids),
         )
