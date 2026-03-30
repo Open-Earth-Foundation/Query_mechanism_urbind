@@ -30,6 +30,31 @@ def _normalize_string_list(value: object) -> list[str]:
     return normalized
 
 
+def _normalize_required_string(value: object) -> str:
+    """Normalize one required string field."""
+    if not isinstance(value, str):
+        raise ValueError("Expected a non-empty string.")
+    normalized = value.strip()
+    if not normalized:
+        raise ValueError("Expected a non-empty string.")
+    return normalized
+
+
+class GoldChunkAlternative(BaseModel):
+    """One accepted alternative runtime chunk for a canonical gold slot."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    chunk_id: str = Field(min_length=1)
+    chunk_text: str = Field(min_length=1)
+
+    @field_validator("chunk_id", "chunk_text", mode="before")
+    @classmethod
+    def _validate_required_string(cls, value: object) -> str:
+        """Normalize required chunk-id and chunk-text fields."""
+        return _normalize_required_string(value)
+
+
 class GoldBenchmarkCase(BaseModel):
     """One manually curated benchmark question and its gold answers."""
 
@@ -38,6 +63,7 @@ class GoldBenchmarkCase(BaseModel):
     case_id: str = Field(min_length=1)
     question: str = Field(min_length=1)
     gold_chunk_ids: list[str] = Field(min_length=1)
+    gold_chunk_alternatives: list[list[GoldChunkAlternative]] | None = None
     gold_chunk_texts: list[str] | None = None
     gold_facts: list[str] = Field(min_length=1)
     gold_city: list[str] = Field(min_length=1)
@@ -70,9 +96,37 @@ class GoldBenchmarkCase(BaseModel):
         normalized = _normalize_string_list(value)
         return normalized or None
 
+    @field_validator("gold_chunk_alternatives", mode="before")
+    @classmethod
+    def _validate_optional_chunk_alternatives(
+        cls,
+        value: object,
+    ) -> list[list[GoldChunkAlternative]] | None:
+        """Normalize optional accepted runtime chunk alternatives."""
+        if value is None:
+            return None
+        if not isinstance(value, list):
+            raise ValueError("Expected a list of alternative chunk lists.")
+
+        normalized_groups: list[list[GoldChunkAlternative]] = []
+        for raw_group in value:
+            if raw_group is None:
+                normalized_groups.append([])
+                continue
+            if not isinstance(raw_group, list):
+                raise ValueError("Expected a list of alternative chunk lists.")
+            normalized_groups.append(raw_group)
+        return normalized_groups
+
     @model_validator(mode="after")
     def _validate_case(self) -> "GoldBenchmarkCase":
         """Enforce per-case invariants."""
+        if self.gold_chunk_alternatives is not None and len(
+            self.gold_chunk_alternatives
+        ) != len(self.gold_chunk_ids):
+            raise ValueError(
+                "gold_chunk_alternatives must align 1:1 with gold_chunk_ids when provided."
+            )
         if self.gold_chunk_texts is not None and len(self.gold_chunk_texts) != len(
             self.gold_chunk_ids
         ):
@@ -86,6 +140,27 @@ class GoldBenchmarkCase(BaseModel):
         if self.selected_cities is not None:
             return list(self.selected_cities)
         return list(self.gold_city)
+
+    def resolved_gold_chunk_alternatives(self) -> list[list[GoldChunkAlternative]]:
+        """Return per-slot accepted alternative chunks without duplicate ids."""
+        if self.gold_chunk_alternatives is None:
+            return [[] for _ in self.gold_chunk_ids]
+
+        resolved: list[list[GoldChunkAlternative]] = []
+        for gold_chunk_id, alternatives in zip(
+            self.gold_chunk_ids,
+            self.gold_chunk_alternatives,
+            strict=True,
+        ):
+            seen = {gold_chunk_id}
+            cleaned_alternatives: list[GoldChunkAlternative] = []
+            for alternative in alternatives:
+                if alternative.chunk_id in seen:
+                    continue
+                seen.add(alternative.chunk_id)
+                cleaned_alternatives.append(alternative)
+            resolved.append(cleaned_alternatives)
+        return resolved
 
 
 class GoldBenchmarkDataset(BaseModel):
@@ -110,10 +185,11 @@ class GoldBenchmarkDataset(BaseModel):
 
 
 class RetrievalChunkDiagnostic(BaseModel):
-    """Per-gold-chunk retrieval diagnosis used in benchmark output."""
+    """Per-gold-slot retrieval diagnosis used in benchmark output."""
 
     chunk_id: str
     bucket: ChunkBucket
+    matched_chunk_id: str | None = None
     seed_rank: int | None = None
     selection_mode: str | None = None
 
@@ -230,6 +306,7 @@ __all__ = [
     "FactJudgeDecision",
     "FactJudgeStage",
     "FactPresenceJudgement",
+    "GoldChunkAlternative",
     "GoldBenchmarkCase",
     "GoldBenchmarkDataset",
     "LossWaterfall",

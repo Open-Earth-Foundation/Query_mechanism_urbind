@@ -12,7 +12,7 @@ Inputs:
 - Files/paths:
   - The gold file must match the schema `{"version": 1, "cases": [...]}` and contain
     `case_id`, `question`, `gold_chunk_ids`, `gold_facts`, `gold_city`, and optional
-    `selected_cities`.
+    `selected_cities`, `gold_chunk_texts`, and `gold_chunk_alternatives`.
 - Env vars:
   - `OPENROUTER_API_KEY` is required because Stage B and Stage C fact recall are judged with an LLM.
 

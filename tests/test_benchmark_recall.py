@@ -266,6 +266,8 @@ def _write_json(path: Path, payload: dict[str, Any]) -> None:
 def _write_gold_file(
     path: Path,
     *,
+    gold_chunk_ids: list[str] | None = None,
+    gold_chunk_alternatives: list[list[dict[str, str]]] | None = None,
     gold_chunk_texts: list[str] | None = None,
     extra_case_fields: dict[str, Any] | None = None,
 ) -> None:
@@ -273,11 +275,15 @@ def _write_gold_file(
     case_payload: dict[str, Any] = {
         "case_id": "sample_case",
         "question": SAMPLE_QUESTION,
-        "gold_chunk_ids": list(SAMPLE_GOLD_CHUNK_IDS),
+        "gold_chunk_ids": list(gold_chunk_ids or SAMPLE_GOLD_CHUNK_IDS),
         "gold_facts": list(SAMPLE_GOLD_FACTS),
         "gold_city": ["Sample City"],
         "selected_cities": ["Sample City"],
     }
+    if gold_chunk_alternatives is not None:
+        case_payload["gold_chunk_alternatives"] = [
+            [dict(item) for item in group] for group in gold_chunk_alternatives
+        ]
     if gold_chunk_texts is not None:
         case_payload["gold_chunk_texts"] = list(gold_chunk_texts)
     if extra_case_fields:
@@ -406,6 +412,21 @@ def test_load_gold_benchmark_dataset_rejects_legacy_cached_run_dir(
         load_gold_benchmark_dataset(gold_file)
 
 
+def test_load_gold_benchmark_dataset_rejects_misaligned_chunk_alternatives(
+    tmp_path: Path,
+) -> None:
+    gold_file = tmp_path / "bad_alternatives_gold.json"
+    _write_gold_file(
+        gold_file,
+        gold_chunk_alternatives=[
+            [{"chunk_id": "chunk-alt-1", "chunk_text": "Alternative text"}]
+        ],
+    )
+
+    with pytest.raises(ValueError, match="gold_chunk_alternatives"):
+        load_gold_benchmark_dataset(gold_file)
+
+
 def test_run_recall_benchmark_scores_live_run(tmp_path: Path) -> None:
     gold_file = tmp_path / "sample_gold.json"
     _write_gold_file(gold_file)
@@ -511,6 +532,138 @@ def test_run_recall_benchmark_uses_gold_chunk_text_fallback(
         "chunk-neighbor-1": "neighbor_only_hit",
         "chunk-miss-1": "miss",
     }
+
+
+def test_run_recall_benchmark_accepts_gold_chunk_alternatives(
+    tmp_path: Path,
+) -> None:
+    gold_file = tmp_path / "alternative_ids_gold.json"
+    _write_gold_file(
+        gold_file,
+        gold_chunk_ids=[
+            "chunk-seed-1",
+            "chunk-canonical-fallback",
+            "chunk-neighbor-1",
+            "chunk-miss-1",
+        ],
+        gold_chunk_alternatives=[
+            [],
+            [
+                {
+                    "chunk_id": "chunk-fallback-1",
+                    "chunk_text": "Retrofit canonical chunk text",
+                }
+            ],
+            [],
+            [],
+        ],
+    )
+
+    report = run_recall_benchmark(
+        benchmark_id="bench_alternative_ids",
+        gold_file=gold_file,
+        output_dir=tmp_path / "output",
+        config_path=Path("llm_config.yaml"),
+        api_key_override="test-key",
+        judge_func=_fake_judge,
+        run_pipeline_func=_make_sample_run_pipeline(),
+    )
+
+    result = report.results[0]
+    assert result.stage_a.retrieval_recall == pytest.approx(0.5)
+    assert result.stage_a.delivery_recall == pytest.approx(0.75)
+    assert result.stage_c.citation_coverage == pytest.approx(0.5)
+    assert result.loss_waterfall.seed_hit_chunk_count == 2
+    assert result.loss_waterfall.delivery_hit_chunk_count == 3
+    assert {item.chunk_id: item.matched_chunk_id for item in result.chunk_diagnostics} == {
+        "chunk-seed-1": "chunk-seed-1",
+        "chunk-canonical-fallback": "chunk-fallback-1",
+        "chunk-neighbor-1": "chunk-neighbor-1",
+        "chunk-miss-1": None,
+    }
+    assert {
+        item.chunk_id: item.selection_mode for item in result.chunk_diagnostics
+    } == {
+        "chunk-seed-1": "distance_qualified",
+        "chunk-canonical-fallback": "fallback_top_up",
+        "chunk-neighbor-1": "neighbor_context",
+        "chunk-miss-1": None,
+    }
+
+
+def test_run_recall_benchmark_uses_alternative_chunk_text_fallback(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    gold_file = tmp_path / "alternative_text_fallback_gold.json"
+    _write_gold_file(
+        gold_file,
+        gold_chunk_ids=[
+            "chunk-seed-1",
+            "chunk-canonical-fallback",
+            "chunk-neighbor-1",
+            "chunk-miss-1",
+        ],
+        gold_chunk_alternatives=[
+            [],
+            [
+                {
+                    "chunk_id": "chunk-alternative-canonical",
+                    "chunk_text": "Retrofit canonical chunk text",
+                }
+            ],
+            [],
+            [],
+        ],
+        gold_chunk_texts=[
+            "Solar canonical chunk text",
+            "Primary canonical text that will not match",
+            "District heating canonical chunk text",
+            "Missing canonical chunk text",
+        ],
+    )
+
+    def _fake_load_source_chunks(*_args, **kwargs) -> list[SourceChunkItem]:
+        content_by_chunk_id = {
+            "chunk-seed-1": "Solar canonical chunk text",
+            "chunk-fallback-1": "Retrofit canonical chunk text",
+            "chunk-neighbor-1": "District heating canonical chunk text",
+            "chunk-nongold-1": "Non-gold chunk text",
+        }
+        chunk_ids = kwargs["chunk_ids"]
+        return [
+            SourceChunkItem(chunk_id=chunk_id, content=content_by_chunk_id[chunk_id])
+            for chunk_id in chunk_ids
+            if chunk_id in content_by_chunk_id
+        ]
+
+    monkeypatch.setattr(
+        "backend.benchmarks.gold_recall.runner.load_source_chunks",
+        _fake_load_source_chunks,
+    )
+
+    report = run_recall_benchmark(
+        benchmark_id="bench_alternative_text_fallback",
+        gold_file=gold_file,
+        output_dir=tmp_path / "output",
+        config_path=Path("llm_config.yaml"),
+        api_key_override="test-key",
+        judge_func=_fake_judge,
+        run_pipeline_func=_make_sample_run_pipeline(),
+    )
+
+    result = report.results[0]
+    assert result.stage_a.retrieval_recall == pytest.approx(0.5)
+    assert result.loss_waterfall.seed_hit_chunk_count == 2
+    assert {item.chunk_id: item.matched_chunk_id for item in result.chunk_diagnostics} == {
+        "chunk-seed-1": "chunk-seed-1",
+        "chunk-canonical-fallback": "chunk-fallback-1",
+        "chunk-neighbor-1": "chunk-neighbor-1",
+        "chunk-miss-1": None,
+    }
+    assert {
+        item.chunk_id: item.selection_mode for item in result.chunk_diagnostics
+    }["chunk-canonical-fallback"] == "text_fallback:fallback_top_up"
 
 
 def test_run_recall_benchmark_uses_gold_chunk_excerpt_fallback(

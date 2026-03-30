@@ -29,7 +29,8 @@ Each current case contains:
 - `case_id`
 - `question`
 - `gold_chunk_ids`
-- optional `gold_chunk_texts` for canonical chunk-text or excerpt fallback matching
+- optional `gold_chunk_alternatives` for accepted runtime chunk alternatives
+- optional `gold_chunk_texts` for canonical chunk-text matching
 - `gold_facts`
 - `gold_city`
 - `selected_cities`
@@ -47,14 +48,22 @@ This means the benchmark is only partially self-contained today:
 The runner executes the live pipeline for the case question and selected cities,
 then scores the run against the fixture's `gold_chunk_ids` and `gold_facts`.
 
+When `gold_chunk_alternatives` is present for a case, each gold chunk slot can
+also accept those explicit runtime alternatives, and each alternative is stored
+in the fixture with both `chunk_id` and `chunk_text`.
+
 When `gold_chunk_texts` is present for a case, scoring can also fall back to
-canonical chunk-text matching or canonical excerpt containment when runtime chunk
-ids drift.
+canonical chunk-text matching, and the scorer still supports containment fallback
+when runtime chunk ids drift.
 
 This is useful for:
 
 - checking current retrieval behavior
 - measuring stage-by-stage information loss
+- keeping one canonical gold fact while accepting known equivalent chunks
+
+Per-case chunk diagnostics can therefore preserve the canonical benchmark slot
+while also reporting the runtime `matched_chunk_id` that satisfied it.
 
 This still depends on current runtime chunk ids matching what the fixture
 expects.
@@ -101,6 +110,7 @@ The current setup is already useful because:
 - live runs can be scored stage by stage
 - benchmark reports explain where evidence was lost
 - the fixture is easy to edit when refining case quality
+- cases can explicitly accept alternative runtime chunks for the same fact
 
 ## Current Limitations
 

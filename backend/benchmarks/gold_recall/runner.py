@@ -12,6 +12,7 @@ from backend.benchmarks.gold_recall.judge import FACT_JUDGE_MODEL, judge_fact_pr
 from backend.benchmarks.gold_recall.models import (
     FactPresenceJudgement,
     GoldBenchmarkCase,
+    GoldChunkAlternative,
     GoldBenchmarkDataset,
     LossWaterfall,
     RecallBenchmarkCaseResult,
@@ -221,33 +222,76 @@ def _find_containing_text_match(
     return None
 
 
+def _find_direct_chunk_match(
+    candidate_chunk_ids: list[str],
+    target_index: dict[str, dict[str, Any]],
+) -> str | None:
+    """Return the first accepted chunk id that exists in the target index."""
+    for candidate_chunk_id in candidate_chunk_ids:
+        if candidate_chunk_id in target_index:
+            return candidate_chunk_id
+    return None
+
+
+def _collect_match_texts(
+    *,
+    gold_chunk_text: str | None,
+    gold_chunk_alternatives: list[GoldChunkAlternative],
+) -> list[str]:
+    """Return de-duplicated canonical texts that may satisfy one gold slot."""
+    candidate_texts: list[str] = []
+    seen: set[str] = set()
+
+    for candidate_text in [
+        gold_chunk_text,
+        *[alternative.chunk_text for alternative in gold_chunk_alternatives],
+    ]:
+        if not candidate_text:
+            continue
+        normalized_text = _normalize_chunk_text(candidate_text)
+        if normalized_text in seen:
+            continue
+        seen.add(normalized_text)
+        candidate_texts.append(candidate_text)
+    return candidate_texts
+
+
 def _match_gold_chunks(
     *,
     gold_chunk_ids: list[str],
+    gold_chunk_alternatives: list[list[GoldChunkAlternative]],
     gold_chunk_texts: list[str] | None,
     target_index: dict[str, dict[str, Any]],
     target_text_index: dict[str, list[str]],
     target_text_map: dict[str, str],
-) -> dict[int, str]:
-    """Match gold chunks to retrieval chunks by id, exact text, or excerpt containment."""
-    matches: dict[int, str] = {}
+) -> dict[int, tuple[str, str]]:
+    """Match gold chunks to retrieval chunks by id or fallback text containment."""
+    matches: dict[int, tuple[str, str]] = {}
     for idx, gold_chunk_id in enumerate(gold_chunk_ids):
-        if gold_chunk_id in target_index:
-            matches[idx] = gold_chunk_id
-            continue
-        if gold_chunk_texts is None:
-            continue
-        normalized_text = _normalize_chunk_text(gold_chunk_texts[idx])
-        candidate_ids = target_text_index.get(normalized_text, [])
-        if candidate_ids:
-            matches[idx] = candidate_ids[0]
-            continue
-        containing_match = _find_containing_text_match(
-            normalized_text,
-            target_text_map,
+        direct_match = _find_direct_chunk_match(
+            [gold_chunk_id, *[alt.chunk_id for alt in gold_chunk_alternatives[idx]]],
+            target_index,
         )
-        if containing_match is not None:
-            matches[idx] = containing_match
+        if direct_match is not None:
+            matches[idx] = (direct_match, "direct_id")
+            continue
+        canonical_text = gold_chunk_texts[idx] if gold_chunk_texts is not None else None
+        for candidate_text in _collect_match_texts(
+            gold_chunk_text=canonical_text,
+            gold_chunk_alternatives=gold_chunk_alternatives[idx],
+        ):
+            normalized_text = _normalize_chunk_text(candidate_text)
+            candidate_ids = target_text_index.get(normalized_text, [])
+            if candidate_ids:
+                matches[idx] = (candidate_ids[0], "text_fallback")
+                break
+            containing_match = _find_containing_text_match(
+                normalized_text,
+                target_text_map,
+            )
+            if containing_match is not None:
+                matches[idx] = (containing_match, "text_fallback")
+                break
     return matches
 
 
@@ -307,6 +351,7 @@ def _judge_stage_facts(
 def _build_chunk_diagnostics(
     *,
     gold_chunk_ids: list[str],
+    gold_chunk_alternatives: list[list[GoldChunkAlternative]],
     gold_chunk_texts: list[str] | None,
     seed_index: dict[str, dict[str, Any]],
     delivery_index: dict[str, dict[str, Any]],
@@ -319,6 +364,7 @@ def _build_chunk_diagnostics(
     diagnostics: list[RetrievalChunkDiagnostic] = []
     seed_matches = _match_gold_chunks(
         gold_chunk_ids=gold_chunk_ids,
+        gold_chunk_alternatives=gold_chunk_alternatives,
         gold_chunk_texts=gold_chunk_texts,
         target_index=seed_index,
         target_text_index=seed_text_index,
@@ -326,6 +372,7 @@ def _build_chunk_diagnostics(
     )
     delivery_matches = _match_gold_chunks(
         gold_chunk_ids=gold_chunk_ids,
+        gold_chunk_alternatives=gold_chunk_alternatives,
         gold_chunk_texts=gold_chunk_texts,
         target_index=delivery_index,
         target_text_index=delivery_text_index,
@@ -333,8 +380,10 @@ def _build_chunk_diagnostics(
     )
 
     for idx, chunk_id in enumerate(gold_chunk_ids):
-        matched_seed_id = seed_matches.get(idx)
-        matched_delivery_id = delivery_matches.get(idx)
+        matched_seed = seed_matches.get(idx)
+        matched_delivery = delivery_matches.get(idx)
+        matched_seed_id = matched_seed[0] if matched_seed else None
+        matched_delivery_id = matched_delivery[0] if matched_delivery else None
         seed_chunk = seed_index.get(matched_seed_id) if matched_seed_id else None
         delivery_chunk = (
             delivery_index.get(matched_delivery_id) if matched_delivery_id else None
@@ -350,7 +399,7 @@ def _build_chunk_diagnostics(
                 else "seed_hit"
             )
             selection_mode = raw_selection_mode
-            if matched_seed_id != chunk_id:
+            if matched_seed is not None and matched_seed[1] == "text_fallback":
                 selection_mode = (
                     f"text_fallback:{raw_selection_mode}"
                     if raw_selection_mode
@@ -361,6 +410,7 @@ def _build_chunk_diagnostics(
                 RetrievalChunkDiagnostic(
                     chunk_id=chunk_id,
                     bucket=bucket,
+                    matched_chunk_id=matched_seed_id,
                     seed_rank=seed_rank if isinstance(seed_rank, int) else None,
                     selection_mode=selection_mode,
                 )
@@ -371,12 +421,13 @@ def _build_chunk_diagnostics(
             selection_mode = (
                 str(provenance.get("selection_mode", "")).strip() or None
             )
-            if matched_delivery_id != chunk_id:
+            if matched_delivery is not None and matched_delivery[1] == "text_fallback":
                 selection_mode = "text_fallback"
             diagnostics.append(
                 RetrievalChunkDiagnostic(
                     chunk_id=chunk_id,
                     bucket="neighbor_only_hit",
+                    matched_chunk_id=matched_delivery_id,
                     selection_mode=selection_mode,
                 )
             )
@@ -404,6 +455,7 @@ def _build_case_result(
     seed_index = _build_chunk_index(list(retrieval_payload.get("seed_chunks", [])))
     delivery_index = _build_chunk_index(list(retrieval_payload.get("chunks", [])))
     gold_chunk_ids = list(case.gold_chunk_ids)
+    gold_chunk_alternatives = case.resolved_gold_chunk_alternatives()
     gold_chunk_texts = list(case.gold_chunk_texts) if case.gold_chunk_texts else None
 
     delivery_chunk_ids_for_text = set(delivery_index.keys())
@@ -458,6 +510,7 @@ def _build_case_result(
 
     seed_matches = _match_gold_chunks(
         gold_chunk_ids=gold_chunk_ids,
+        gold_chunk_alternatives=gold_chunk_alternatives,
         gold_chunk_texts=gold_chunk_texts,
         target_index=seed_index,
         target_text_index=seed_text_index,
@@ -465,6 +518,7 @@ def _build_case_result(
     )
     delivery_matches = _match_gold_chunks(
         gold_chunk_ids=gold_chunk_ids,
+        gold_chunk_alternatives=gold_chunk_alternatives,
         gold_chunk_texts=gold_chunk_texts,
         target_index=delivery_index,
         target_text_index=delivery_text_index,
@@ -472,6 +526,7 @@ def _build_case_result(
     )
     excerpt_matches = _match_gold_chunks(
         gold_chunk_ids=gold_chunk_ids,
+        gold_chunk_alternatives=gold_chunk_alternatives,
         gold_chunk_texts=gold_chunk_texts,
         target_index={chunk_id: {} for chunk_id in excerpt_source_ids},
         target_text_index=excerpt_text_index,
@@ -479,6 +534,7 @@ def _build_case_result(
     )
     cited_matches = _match_gold_chunks(
         gold_chunk_ids=gold_chunk_ids,
+        gold_chunk_alternatives=gold_chunk_alternatives,
         gold_chunk_texts=gold_chunk_texts,
         target_index={chunk_id: {} for chunk_id in cited_source_chunk_ids},
         target_text_index=cited_text_index,
@@ -486,7 +542,7 @@ def _build_case_result(
     )
 
     matching_seed_ranks: list[int] = []
-    for chunk_id in seed_matches.values():
+    for chunk_id, _match_strategy in seed_matches.values():
         provenance = seed_index[chunk_id].get("provenance", {})
         seed_rank = provenance.get("seed_rank")
         if isinstance(seed_rank, int):
@@ -494,6 +550,7 @@ def _build_case_result(
 
     chunk_diagnostics = _build_chunk_diagnostics(
         gold_chunk_ids=gold_chunk_ids,
+        gold_chunk_alternatives=gold_chunk_alternatives,
         gold_chunk_texts=gold_chunk_texts,
         seed_index=seed_index,
         delivery_index=delivery_index,

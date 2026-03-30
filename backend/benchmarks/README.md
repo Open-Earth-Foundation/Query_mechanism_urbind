@@ -61,11 +61,23 @@ to measure information loss across retrieval, markdown extraction, and final wri
 
 Gold fixtures live in `tests/fixtures/benchmark_gold.json` and use the versioned
 schema `{"version": 1, "cases": [...]}` with `case_id`, `question`,
-`gold_chunk_ids`, `gold_facts`, `gold_city`, and optional `selected_cities`.
+`gold_chunk_ids`, `gold_facts`, `gold_city`, and optional `selected_cities`,
+`gold_chunk_texts`, and `gold_chunk_alternatives`.
+
+- `gold_chunk_texts` should hold the canonical chunk text for each gold slot.
+  The scorer still supports containment fallback, but the fixture should keep
+  the actual chunk text in JSON.
+- `gold_chunk_alternatives` lets one gold chunk slot accept specific
+  alternative runtime chunks without changing the benchmark denominator, while
+  storing both `chunk_id` and `chunk_text` in the fixture JSON.
 
 Every benchmark case executes the live pipeline and is then scored from the
 freshly produced `markdown/retrieval.json`, `markdown/excerpts.json`,
 `markdown/references.json`, and `final.md` artifacts.
+
+Per-case `benchmark_report.json` chunk diagnostics keep the canonical gold
+`chunk_id` and, when different, the `matched_chunk_id` that actually satisfied
+that benchmark slot.
 
 The fact judge is separate from the pairwise benchmark judge and defaults to
 OpenRouter `openai/gpt-5.4-mini`.

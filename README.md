@@ -406,7 +406,13 @@ Behavior notes:
   from the final delivered `retrieval.json.chunks[]`.
 - The gold file schema is `{"version": 1, "cases": [...]}` with `case_id`,
   `question`, `gold_chunk_ids`, `gold_facts`, `gold_city`, and optional
-  `selected_cities`.
+  `selected_cities`, `gold_chunk_texts`, and `gold_chunk_alternatives`.
+- `gold_chunk_alternatives` stores accepted equivalent runtime chunks explicitly
+  as `{chunk_id, chunk_text}` objects, so the fixture keeps both the chunk
+  number/id and the chunk text in JSON.
+- `gold_chunk_texts` should store the canonical chunk text for each gold slot.
+  The scorer still supports containment fallback, but the fixture data should
+  keep the actual chunk text in JSON.
 - Stage B and Stage C fact verification use an LLM fact judge
   (`openai/gpt-5.4-mini`) to handle paraphrases.
 
