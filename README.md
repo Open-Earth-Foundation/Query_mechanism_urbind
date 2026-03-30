@@ -361,6 +361,30 @@ Benchmark behavior notes:
 - The benchmark report includes speed metrics (`runtime`, `tokens/sec`) and LLM issue counters (rate limits, retries exhausted, max-turns, and non-working calls).
 - Individual run failures are recorded and counted (instead of aborting the full matrix); summaries include success rate and failed run count.
 
+### Speed / Chunk / Worker benchmark
+
+On March 30, 2026 we ran a stress comparison for the broad aggregate question
+`Aggregate and compare all EV charging and building retrofit initiatives with quantified targets and budgets.`
+under `output/benchmarks/full_retrieval_20260330_live/`.
+
+Standard chunking results for that question:
+
+- `b16_w8` (`batch_max_chunks=16`, `max_workers=8`): completed in about 17.6 minutes, used about 13.12M tokens, and writer citation coverage stopped at `94/102`.
+- `b32_w4` (`batch_max_chunks=32`, `max_workers=4`): completed in about 28.4 minutes, used about 13.14M tokens, and writer citation coverage reached `102/102`.
+- `b32_w8` (`batch_max_chunks=32`, `max_workers=8`): completed in about 14.6 minutes, used about 13.13M tokens, and writer citation coverage stopped at `40/102`.
+
+Interpretation:
+
+- `b32_w4` gave the best citation coverage in this broad aggregate benchmark.
+- `b32_w8` was much faster than `b32_w4`, but completeness was materially worse in that run.
+- `b16_w8` sat between them on speed and coverage.
+
+Current recommendation:
+
+- Keep the normal runtime configuration as it is today in `llm_config.yaml`: `batch_max_chunks=32` and `max_workers=8`.
+- We are not promoting `b32_w4` to the default from this benchmark alone, because normal runtime speed is also important and this benchmark is a heavy stress case rather than the only production workload.
+- Use `b32_w4` as a benchmark reference point when testing completeness on very broad aggregate questions.
+
 Outputs are written to `output/benchmarks/<benchmark_id>/`:
 
 - `benchmark_report.json`: machine-readable benchmark results.
