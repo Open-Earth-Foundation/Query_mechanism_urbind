@@ -35,7 +35,7 @@ If a key appears in both, the mode-specific value wins.
   with the currently available index.
 - To reduce run-to-run variance in retrieval behavior, the benchmark script can use
   fixed canonical + retrieval queries from `prompts/retrieval_query_overrides.json`.
-- Benchmark includes LLM-as-judge scoring (OpenRouter `openai/gpt-5.2`) for each
+- Benchmark includes LLM-as-judge scoring (OpenRouter `openai/gpt-5.4-mini`) for each
   standard-vs-vector pair on the same question/repetition/markdown option.
 - Benchmark report includes speed metrics (runtime + tokens/sec) and LLM issue
   counters (rate limits, retry exhausted, max-turns, and non-working calls).
@@ -43,3 +43,47 @@ If a key appears in both, the mode-specific value wins.
   benchmark execution continues with remaining runs.
 - For ad-hoc comparison of two files, use:
   `python -m backend.scripts.judge_final_outputs --left-final <path_a> --right-final <path_b> --question "..."`
+
+## Gold recall benchmark
+
+Use `python -m backend.scripts.benchmark_recall --gold-file tests/fixtures/benchmark_gold.json`
+to measure information loss across retrieval, markdown extraction, and final writing.
+
+- Stage A strict metrics (`retrieval_recall`, `retrieval_precision`, `mrr`) use
+  direct hits from `retrieval.json.seed_chunks[]`.
+- Stage A supplemental delivery metrics (`delivery_recall`,
+  `delivery_precision`) use the final delivered context in
+  `retrieval.json.chunks[]`.
+- Stage B uses `excerpts[].source_chunk_ids` for extraction recall and an LLM
+  fact judge for fact extraction rate.
+- Stage C uses an LLM fact judge on `final.md` plus citation coverage derived
+  from cited `ref_id` values mapped through `references.json`.
+
+Gold fixtures live in `tests/fixtures/benchmark_gold.json` and use the versioned
+schema `{"version": 1, "cases": [...]}` with `case_id`, `question`,
+`gold_chunk_ids`, `gold_facts`, `gold_city`, and optional `selected_cities`,
+`gold_chunk_texts`, and `gold_chunk_alternatives`.
+
+- `gold_chunk_texts` should hold the canonical chunk text for each gold slot.
+  The scorer still supports containment fallback, but the fixture should keep
+  the actual chunk text in JSON.
+- `gold_chunk_alternatives` lets one gold chunk slot accept specific
+  alternative runtime chunks without changing the benchmark denominator, while
+  storing both `chunk_id` and `chunk_text` in the fixture JSON.
+
+Every benchmark case executes the live pipeline and is then scored from the
+freshly produced `markdown/retrieval.json`, `markdown/excerpts.json`,
+`markdown/references.json`, and `final.md` artifacts.
+
+Per-case `benchmark_report.json` chunk diagnostics keep the canonical gold
+`chunk_id` and, when different, the `matched_chunk_id` that actually satisfied
+that benchmark slot.
+
+The fact judge is separate from the pairwise benchmark judge and defaults to
+OpenRouter `openai/gpt-5.4-mini`.
+
+Outputs are written under `output/benchmarks/recall/<benchmark_id>/`:
+
+- `benchmark_report.json`
+- `benchmark_report.md`
+- `runs/<case_id>/...` for each benchmark case

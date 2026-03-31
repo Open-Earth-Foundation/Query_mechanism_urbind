@@ -21,6 +21,9 @@ htmlcov/
 # Run artifacts
 output/
 .chroma/
+.chroma_*/
+tmp_pdf_extract/
+skills-lock.json
 
 # Cursor
 #  Cursor is an AI-powered code editor. `.cursorignore` specifies files/directories to

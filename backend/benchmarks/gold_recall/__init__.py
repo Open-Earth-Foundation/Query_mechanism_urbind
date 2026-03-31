@@ -1,4 +1,4 @@
-"""Public benchmark exports loaded lazily to avoid heavy import side effects."""
+"""Gold recall benchmark exports loaded lazily to avoid runtime-heavy imports."""
 
 from __future__ import annotations
 
@@ -9,22 +9,6 @@ _EXPORTS = {
     "FACT_JUDGE_MODEL": (
         "backend.benchmarks.gold_recall.judge",
         "FACT_JUDGE_MODEL",
-    ),
-    "BenchmarkMarkdownConfig": (
-        "backend.benchmarks.runner",
-        "BenchmarkMarkdownConfig",
-    ),
-    "BenchmarkModeConfig": (
-        "backend.benchmarks.runner",
-        "BenchmarkModeConfig",
-    ),
-    "BenchmarkQuestionResult": (
-        "backend.benchmarks.runner",
-        "BenchmarkQuestionResult",
-    ),
-    "BenchmarkReport": (
-        "backend.benchmarks.runner",
-        "BenchmarkReport",
     ),
     "FactJudgeDecision": (
         "backend.benchmarks.gold_recall.models",
@@ -90,15 +74,11 @@ _EXPORTS = {
         "backend.benchmarks.gold_recall.runner",
         "run_recall_benchmark",
     ),
-    "run_retrieval_strategy_benchmark": (
-        "backend.benchmarks.runner",
-        "run_retrieval_strategy_benchmark",
-    ),
 }
 
 
 def __getattr__(name: str):
-    """Resolve public benchmark exports on first access."""
+    """Resolve public gold-recall exports on first access."""
     try:
         module_name, attribute_name = _EXPORTS[name]
     except KeyError as exc:

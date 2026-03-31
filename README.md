@@ -83,6 +83,12 @@ When vector retrieval is enabled, retrieval runs per city and per query (origina
   - results are merged across queries within a city (dedupe by `chunk_id`, keep the smallest distance);
   - neighbor chunks are added by `chunk_index` window (same file/city);
   - optionally, `vector_store.retrieval_max_chunks_per_city` caps the final chunks per city after merge + neighbor expansion.
+- Retrieval artifacts now persist both layers explicitly:
+  - `seed_chunks[]` = unique direct hits before neighbor expansion and before per-city caps;
+  - `chunks[]` = the final delivered context after neighbor expansion and caps.
+- Strict Stage A benchmark metrics must use `seed_chunks[]`, not `chunks[]`.
+- Every serialized retrieval chunk now includes `chunk_index` plus `provenance`
+  (`origin`, `selection_mode`, `seed_rank`, `seed_query_ids`, `expanded_from_chunk_ids`).
 - `vector_store.retrieval_max_distance` is the strictness control:
   - smaller value = stricter matching, fewer chunks;
   - larger value = higher recall, more chunks.
@@ -167,7 +173,7 @@ writer:
   context_window_tokens: 256000
   input_token_reserve: 2000
 chat:
-  model: "openai/gpt-5.2"
+  model: "openai/gpt-5.4-mini"
   temperature: 0.0
   context_window_tokens: 400000
   input_token_reserve: 20000
@@ -177,7 +183,7 @@ chat:
   followup_router_max_history_messages: 6
   followup_router_max_excerpts_per_source: 50
 assumptions_reviewer:
-  model: "openai/gpt-5.2"
+  model: "openai/gpt-5.4-mini"
   temperature: 0.0
   max_output_tokens: 8000
 retry:
@@ -351,9 +357,33 @@ Benchmark behavior notes:
 - The script always loads benchmark env files from `backend/benchmarks/config/`.
 - The benchmark is runtime-only; it does not build/update the vector index.
 - Vector mode uses the existing default Chroma store/collection unless overridden in your main environment.
-- The benchmark also runs LLM-as-judge scoring (`openai/gpt-5.2`) per matched standard-vs-vector run pair within the same markdown option.
+- The benchmark also runs LLM-as-judge scoring (`openai/gpt-5.4-mini`) per matched standard-vs-vector run pair within the same markdown option.
 - The benchmark report includes speed metrics (`runtime`, `tokens/sec`) and LLM issue counters (rate limits, retries exhausted, max-turns, and non-working calls).
 - Individual run failures are recorded and counted (instead of aborting the full matrix); summaries include success rate and failed run count.
+
+### Speed / Chunk / Worker benchmark
+
+On March 30, 2026 we ran a stress comparison for the broad aggregate question
+`Aggregate and compare all EV charging and building retrofit initiatives with quantified targets and budgets.`
+under `output/benchmarks/full_retrieval_20260330_live/`.
+
+Standard chunking results for that question:
+
+- `b16_w8` (`batch_max_chunks=16`, `max_workers=8`): completed in about 17.6 minutes, used about 13.12M tokens, and writer citation coverage stopped at `94/102`.
+- `b32_w4` (`batch_max_chunks=32`, `max_workers=4`): completed in about 28.4 minutes, used about 13.14M tokens, and writer citation coverage reached `102/102`.
+- `b32_w8` (`batch_max_chunks=32`, `max_workers=8`): completed in about 14.6 minutes, used about 13.13M tokens, and writer citation coverage stopped at `40/102`.
+
+Interpretation:
+
+- `b32_w4` gave the best citation coverage in this broad aggregate benchmark.
+- `b32_w8` was much faster than `b32_w4`, but completeness was materially worse in that run.
+- `b16_w8` sat between them on speed and coverage.
+
+Current recommendation:
+
+- Keep the normal runtime configuration as it is today in `llm_config.yaml`: `batch_max_chunks=32` and `max_workers=8`.
+- We are not promoting `b32_w4` to the default from this benchmark alone, because normal runtime speed is also important and this benchmark is a heavy stress case rather than the only production workload.
+- Use `b32_w4` as a benchmark reference point when testing completeness on very broad aggregate questions.
 
 Outputs are written to `output/benchmarks/<benchmark_id>/`:
 
@@ -369,6 +399,53 @@ python -m backend.scripts.judge_final_outputs \
   --right-final output/<run_b>/final.md \
   --question "Compare charging and retrofit initiatives..."
 ```
+
+### Gold recall benchmark
+
+Use this benchmark to measure where information is lost across retrieval,
+markdown extraction, and final writing for a manually curated gold dataset.
+
+Command example:
+
+```
+python -m backend.scripts.benchmark_recall --gold-file tests/fixtures/benchmark_gold.json
+```
+
+Useful flags:
+
+- `--benchmark-id`: override the default UTC timestamp benchmark id.
+- `--output-dir output/benchmarks/recall`: change the benchmark output root.
+- `--config llm_config.yaml`: use a specific runtime config for live cases.
+- `--case-id <case_id>`: repeatable case filter.
+- `--log-llm-payload` / `--no-log-llm-payload`: toggle full LLM payload logging.
+
+Behavior notes:
+
+- This benchmark is not pairwise standard-vs-vector judging. It scores a single
+  run against gold chunks and gold facts.
+- Official Stage A metrics are strict seed retrieval:
+  `retrieval_recall`, `retrieval_precision`, and `mrr` are computed from
+  `retrieval.json.seed_chunks[]`.
+- `delivery_recall` and `delivery_precision` are supplemental metrics computed
+  from the final delivered `retrieval.json.chunks[]`.
+- The gold file schema is `{"version": 1, "cases": [...]}` with `case_id`,
+  `question`, `gold_chunk_ids`, `gold_facts`, `gold_city`, and optional
+  `selected_cities`, `gold_chunk_texts`, and `gold_chunk_alternatives`.
+- `gold_chunk_alternatives` stores accepted equivalent runtime chunks explicitly
+  as `{chunk_id, chunk_text}` objects, so the fixture keeps both the chunk
+  number/id and the chunk text in JSON.
+- `gold_chunk_texts` should store the canonical chunk text for each gold slot.
+  The scorer still supports containment fallback, but the fixture data should
+  keep the actual chunk text in JSON.
+- Stage B and Stage C fact verification use an LLM fact judge
+  (`openai/gpt-5.4-mini`) to handle paraphrases.
+
+Outputs are written to `output/benchmarks/recall/<benchmark_id>/`:
+
+- `benchmark_report.json`: machine-readable per-case metrics, fact judgements,
+  and loss waterfalls.
+- `benchmark_report.md`: concise human-readable summary.
+- `runs/<case_id>/...`: live pipeline artifacts for each benchmark case.
 
 ## Run API (local)
 
@@ -775,12 +852,12 @@ Artifacts are written under `output/<run_id>/`:
 - `sql/queries.json` (when SQL is enabled): SQL plan generated by the SQL researcher.
 - `sql/results_full.json` (when SQL is enabled): uncapped SQL execution results.
 - `sql/results.json` (when SQL is enabled): token-capped SQL results sent downstream.
-- `markdown/excerpts.json`: markdown researcher evidence bundle. Includes `excerpts` (items with `quote`, `city_name`, `partial_answer`), explicit decision fields (`accepted_chunk_ids`, `rejected_chunk_ids`, `unresolved_chunk_ids`, `batch_failures`), `inspected_cities` (normalized backend city keys present in inspected markdown inputs), and `excerpt_count` (count of extracted excerpts). When split recovery is triggered, successful child-batch evidence and decisions are kept, and only final failed leaf chunks remain unresolved.
+- `markdown/excerpts.json`: markdown researcher evidence bundle. Includes `excerpts` (items with `quote`, `city_name`, `partial_answer`, `source_chunk_ids`), explicit decision fields (`accepted_chunk_ids`, `rejected_chunk_ids`, `unresolved_chunk_ids`, `batch_failures`), `inspected_cities` (normalized backend city keys present in inspected markdown inputs), and `excerpt_count` (count of extracted excerpts). When split recovery is triggered, successful child-batch evidence and decisions are kept, and only final failed leaf chunks remain unresolved. Stage B extraction recall uses the union of `excerpts[].source_chunk_ids`.
 - `markdown/accepted_excerpts.json`: IDs-only positive decision artifact with accepted chunk IDs and accepted-per-city grouping.
 - `markdown/rejected_excerpts.json`: IDs-only negative decision artifact with rejected chunk IDs and rejected-per-city grouping.
 - `markdown/decision_audit.json`: run-level reconciliation counters and diagnostics (`retrieved_total`, accepted/rejected/unresolved totals, invariant status, and mismatch details).
-- `markdown/references.json`: run-local citation map generated from markdown excerpts. Includes sequential `ref_n` entries with `excerpt_index`, `city_name`, `quote`, `partial_answer`, and `source_chunk_ids`.
-- `markdown/retrieval.json` (when `VECTOR_STORE_ENABLED=true`): vector retrieval inputs and results summary. Includes the final retrieval query list, optional city filter, retrieval tuning metadata (cutoffs/caps), and per-chunk summaries (`chunk_id`, `city_name`, `city_key`, `source_path`, `heading_path`, `block_type`, `distance`).
+- `markdown/references.json`: run-local citation map generated from markdown excerpts. Includes sequential `ref_n` entries with `excerpt_index`, `city_name`, `quote`, `partial_answer`, and `source_chunk_ids`. Stage C citation coverage maps cited `ref_id` values in `final.md` back through these `source_chunk_ids`.
+- `markdown/retrieval.json` (when `VECTOR_STORE_ENABLED=true`): vector retrieval inputs and results summary. Includes the final retrieval query list, optional city filter, retrieval tuning metadata (cutoffs/caps), strict direct-hit `seed_chunks[]`, final delivered `chunks[]`, `meta.seed_retrieved_total_chunks`, `meta.neighbor_expanded_total_chunks`, and per-chunk summaries (`chunk_id`, `chunk_index`, `city_name`, `city_key`, `source_path`, `heading_path`, `block_type`, `distance`, `provenance`).
 - `markdown/batches.json`: markdown batching plan used for the markdown researcher calls. Includes per-city batch indices, estimated tokens, and chunk ordering fields (`path`, `chunk_index`, `chunk_id`), making it easy to inspect how chunks were grouped into LLM requests.
 - `final.md`: final delivered markdown output. Content format is:
   1. `# Question` heading with the original user question,
@@ -792,6 +869,7 @@ Artifacts are written under `output/<run_id>/`:
 - `quote`: verbatim extracted supporting text from markdown.
 - `city_name`: city identifier for the excerpt.
 - `partial_answer`: concise fact grounded in the quote.
+- `source_chunk_ids`: chunk ids backing the excerpt, used for Stage B extraction recall and citation tracing.
 - `ref_id`: sequential run-local citation id (`ref_1`, `ref_2`, ...), used by writer output and frontend reference lookups.
 - `inspected_cities` (bundle-level): normalized backend city keys inspected by markdown extraction.
 - `excerpt_count` (bundle-level): number of extracted excerpts included in the bundle.

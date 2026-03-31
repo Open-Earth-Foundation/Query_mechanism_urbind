@@ -111,9 +111,11 @@ class AppConfig(BaseModel):
     sql_researcher: SqlResearcherConfig
     markdown_researcher: MarkdownResearcherConfig
     writer: WriterConfig
-    chat: ChatConfig = Field(default_factory=lambda: ChatConfig(model="openai/gpt-5.2"))
+    chat: ChatConfig = Field(
+        default_factory=lambda: ChatConfig(model="openai/gpt-5.4-mini")
+    )
     assumptions_reviewer: AssumptionsReviewerConfig = Field(
-        default_factory=lambda: AssumptionsReviewerConfig(model="openai/gpt-5.2")
+        default_factory=lambda: AssumptionsReviewerConfig(model="openai/gpt-5.4-mini")
     )
     retry: RetryConfig = Field(default_factory=RetryConfig)
     vector_store: VectorStoreConfig = Field(default_factory=VectorStoreConfig)

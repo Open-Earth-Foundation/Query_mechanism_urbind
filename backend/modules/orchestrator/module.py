@@ -46,6 +46,7 @@ from backend.modules.sql_researcher.services import (
 from backend.modules.vector_store.indexer import update_markdown_index
 from backend.modules.vector_store.retriever import (
     as_markdown_documents,
+    build_retrieval_artifact,
     retrieve_chunks_for_queries,
 )
 from backend.modules.writer.agent import write_markdown
@@ -474,24 +475,12 @@ def run_pipeline(
                 **retrieval_kwargs
             )
             markdown_chunks = as_markdown_documents(retrieved_chunks)
-            retrieval_payload = {
-                "queries": retrieval_queries,
-                "selected_cities": selected_cities or [],
-                "retrieved_count": len(retrieved_chunks),
-                "meta": retrieval_meta,
-                "chunks": [
-                    {
-                        "chunk_id": chunk.chunk_id,
-                        "city_name": chunk.city_name,
-                        "city_key": str(chunk.metadata.get("city_key", "")),
-                        "source_path": chunk.source_path,
-                        "heading_path": chunk.heading_path,
-                        "block_type": chunk.block_type,
-                        "distance": chunk.distance,
-                    }
-                    for chunk in retrieved_chunks
-                ],
-            }
+            retrieval_payload = build_retrieval_artifact(
+                queries=retrieval_queries,
+                selected_cities=selected_cities,
+                final_chunks=retrieved_chunks,
+                retrieval_meta=retrieval_meta,
+            )
             retrieval_path = paths.markdown_dir / "retrieval.json"
             write_json(retrieval_path, retrieval_payload)
             run_logger.record_artifact("markdown_retrieval", retrieval_path)

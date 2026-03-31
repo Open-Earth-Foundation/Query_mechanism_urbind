@@ -1,0 +1,3 @@
+interface:
+  display_name: "Markdown Artifact QA"
+  short_description: "Review markdown artifacts and propose exact cleanup fixes"

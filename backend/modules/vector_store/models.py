@@ -5,6 +5,12 @@ from typing import Literal, Protocol
 
 
 BlockType = Literal["paragraph", "table", "list", "code"]
+RetrievalOrigin = Literal["seed", "neighbor"]
+RetrievalSelectionMode = Literal[
+    "distance_qualified",
+    "fallback_top_up",
+    "neighbor_context",
+]
 
 
 class EmbeddingProvider(Protocol):
@@ -56,6 +62,22 @@ class IndexedChunk:
 
 
 @dataclass(frozen=True)
+class RetrievedChunkProvenance:
+    """Explain how one chunk entered the retrieval output.
+
+    We keep this explicit so retrieval artifacts can surface current vector DB
+    behavior: whether a chunk was a direct distance-qualified hit, a fallback
+    top-up, or a neighbor added only for local context.
+    """
+
+    origin: RetrievalOrigin = "seed"
+    selection_mode: RetrievalSelectionMode = "distance_qualified"
+    seed_rank: int | None = None
+    seed_query_ids: list[str] = field(default_factory=list)
+    expanded_from_chunk_ids: list[str] = field(default_factory=list)
+
+
+@dataclass(frozen=True)
 class RetrievedChunk:
     city_name: str
     raw_text: str
@@ -64,4 +86,8 @@ class RetrievedChunk:
     block_type: str
     distance: float
     chunk_id: str
+    chunk_index: int | None = None
     metadata: dict[str, str | int | float | bool | None] = field(default_factory=dict)
+    provenance: RetrievedChunkProvenance = field(
+        default_factory=RetrievedChunkProvenance
+    )
