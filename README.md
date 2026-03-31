@@ -46,17 +46,18 @@ Environment variables (`.env`):
 - `OPENROUTER_API_KEY` (required): API key used for all LLM calls via OpenRouter.
 - `MARKDOWN_DIR` (optional, default `documents`): default directory scanned for markdown files.
 - `RUNS_DIR` (optional, default `output`): base directory for run artifacts.
+- `LOG_LEVEL` (optional, default `INFO`): logging verbosity (`DEBUG`, `INFO`, `WARNING`, `ERROR`).
+- `OPENROUTER_BASE_URL` (optional, default `https://openrouter.ai/api/v1`): override for OpenRouter-compatible backends.
 - `LLM_CONFIG_PATH` (optional, default `llm_config.yaml`): API config file path.
 - `CITY_GROUPS_PATH` (optional, default `backend/api/assets/city_groups.json`): city groups catalog JSON path.
-
-Chat prompt sizing, follow-up router history and excerpt caps, retry backoff, and provider timeouts now come from `llm_config.yaml`.
-
 - `VECTOR_STORE_ENABLED` (optional, default `false`): enables local Chroma markdown indexing flows.
+- `ANONYMIZED_TELEMETRY` (optional, default `FALSE`): disables Chroma anonymized telemetry when set to `FALSE`.
 - `CHROMA_PERSIST_PATH` (optional, default `.chroma`): local Chroma persistence directory.
 - `CHROMA_COLLECTION_NAME` (optional, default `markdown_chunks`): Chroma collection used for markdown chunks.
-- Vector-store embedding and retrieval tuning is configured in `llm_config.yaml`
-  CLI flags override `.env` values for a given run (for example `--markdown-path`).
-  Use `--city` (repeatable) to load markdown only for selected city files. City filters are normalized case-insensitively to backend `city_key` values (for example `Munich`, `MUNICH`, and `munich` all resolve to `munich`).
+
+Chat prompt sizing, follow-up router history and excerpt caps, retry backoff, provider timeouts, and vector-store retrieval tuning all come from `llm_config.yaml`.
+CLI flags override `.env` values for a given run (for example `--markdown-path`).
+Use `--city` (repeatable) to load markdown only for selected city files. City filters are normalized case-insensitively to backend `city_key` values (for example `Munich`, `MUNICH`, and `munich` all resolve to `munich`).
 
 Example `.env.example` is provided. Use `llm_config.yaml` as the source of truth for vector-store and markdown batching tuning.
 
@@ -66,11 +67,11 @@ Default output directory is `output/` (unless overridden by `RUNS_DIR`).
 
 When vector retrieval is enabled, retrieval runs per city and per query (original + refined variants), then merges and expands context.
 
-- For each (city × query), the retriever:
+- For each (city x query), the retriever:
   - fetches up to `vector_store.retrieval_max_chunks_per_city_query` candidates from Chroma (ranked by increasing distance);
   - if `vector_store.retrieval_max_distance` is set, it first keeps only candidates with `distance <= cutoff`;
   - if fewer than `vector_store.retrieval_fallback_min_chunks_per_city_query` pass the cutoff, it **tops up** with the next-best candidates (above the cutoff) until it reaches the fallback minimum (or runs out of candidates).
-- After per-(city × query) retrieval:
+- After per-(city x query) retrieval:
   - results are merged across queries within a city (dedupe by `chunk_id`, keep the smallest distance as chunk distance metadata);
   - neighbor chunks are added by `chunk_index` window (same file/city);
   - optionally, `vector_store.retrieval_max_chunks_per_city` caps the final chunks per city after merge + neighbor expansion.
@@ -84,9 +85,9 @@ When vector retrieval is enabled, retrieval runs per city and per query (origina
   - smaller value = stricter matching, fewer chunks;
   - larger value = higher recall, more chunks.
 
-Important distinction between the “max” knobs:
+Important distinction between the "max" knobs:
 
-- `vector_store.retrieval_max_chunks_per_city_query` controls the **candidate pool size per (city × query)** _before_ distance filtering/top-up.
+- `vector_store.retrieval_max_chunks_per_city_query` controls the **candidate pool size per (city x query)** _before_ distance filtering/top-up.
   - If this is too small, you may not have enough candidates to top up to the fallback minimum.
 - `vector_store.retrieval_max_chunks_per_city` controls the **final per-city cap** _after_ query-merge and neighbor expansion.
   - Use it as a latency/cost guardrail; setting it too low can drop context neighbors or even primary hits with weaker distances.
@@ -120,7 +121,7 @@ If key authentication fails:
 - chat endpoints return `401` with a key-specific message
 - UI surfaces the error so backend credentials can be fixed and the run retried.
 
-Example in `llm_config.yaml`
+See the checked-in example config at [`llm_config.yaml`](llm_config.yaml).
 
 ### How token and size limits are applied
 
@@ -634,7 +635,13 @@ Run API in Docker:
 
 ```bash
 docker build -f backend/Dockerfile -t query-mechanism-backend .
-docker run -it --rm -p 8000:8000 --env-file .env query-mechanism-backend
+docker run -it --rm -p 8000:8000 \
+  --env-file .env \
+  -v ${PWD}/documents:/data/documents \
+  -v ${PWD}/output:/data/output \
+  -v ${PWD}/llm_config.yaml:/data/config/llm_config.yaml:ro \
+  -v ${PWD}/backend/api/assets/city_groups.json:/data/config/city_groups.json:ro \
+  query-mechanism-backend
 ```
 
 ## Run frontend (shadcn/Next.js)
@@ -737,6 +744,11 @@ Required repository secrets:
 - `AWS_SECRET_ACCESS_KEY_EKS_DEV_USER`
 - `EKS_DEV_NAME`
 - `OPENROUTER_API_KEY`
+
+Optional repository variables:
+
+- `EKS_DEV_REGION` (default `us-east-1`)
+- `FRONTEND_API_BASE_URL` (default `https://urbind-query-mechanism-api.openearth.dev`)
 
 Artifacts are written under `output/<run_id>/`:
 

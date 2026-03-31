@@ -39,7 +39,6 @@ def _build_test_config(tmp_path: Path) -> AppConfig:
     return build_test_app_config(
         runs_dir=tmp_path / "output",
         markdown_dir=tmp_path / "documents",
-        enable_sql=False,
     )
 
 

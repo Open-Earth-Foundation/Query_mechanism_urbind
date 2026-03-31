@@ -46,7 +46,6 @@ class RunLogger:
             "artifacts": {},
         }
         self.context_bundle: dict[str, Any] = {
-            "sql": None,
             "markdown": None,
             "original_question": question,
             "research_question": question,
@@ -63,7 +62,6 @@ class RunLogger:
     def _ensure_dirs(self) -> None:
         """Create the per-run artifact directories."""
         self.run_paths.base_dir.mkdir(parents=True, exist_ok=True)
-        self.run_paths.sql_dir.mkdir(parents=True, exist_ok=True)
         self.run_paths.markdown_dir.mkdir(parents=True, exist_ok=True)
 
     def write_run_log(self) -> None:
@@ -92,26 +90,6 @@ class RunLogger:
         if payload is None:
             return "(missing)"
         return json.dumps(payload, indent=2, ensure_ascii=False, default=str)
-
-    def _summarize_sql_results(self, payload: object | None) -> str:
-        if not isinstance(payload, list):
-            return "(missing)"
-        lines: list[str] = []
-        for result in payload:
-            if not isinstance(result, dict):
-                continue
-            query_id = result.get("query_id")
-            row_count = result.get("row_count")
-            columns = result.get("columns", [])
-            rows = result.get("rows", [])
-            error = None
-            if columns == ["error"] and rows:
-                error = rows[0][0]
-            lines.append(
-                f"- {query_id}: rows={row_count}, columns={columns}"
-                + (f" | error={error}" if error else "")
-            )
-        return "\n".join(lines) if lines else "(empty)"
 
     def _summarize_markdown_failures(self, payload: object | None) -> dict[str, Any] | None:
         """Build an aggregate failure summary from markdown error details."""
@@ -389,43 +367,6 @@ class RunLogger:
         lines.append(self._format_json(self.context_bundle))
         lines.append("")
 
-        schema_payload = self._read_json_file(self.run_paths.schema_summary)
-        lines.append("SCHEMA_SUMMARY")
-        lines.append(self._format_json(schema_payload))
-        lines.append("")
-
-        city_payload = self._read_json_file(self.run_paths.city_list)
-        lines.append("CITY_LIST")
-        lines.append(self._format_json(city_payload))
-        lines.append("")
-
-        sql_queries = self._read_json_file(self.run_paths.sql_queries)
-        lines.append("SQL_QUERIES (LLM)")
-        lines.append(self._format_json(sql_queries))
-        lines.append("")
-
-        sql_rounds_path = self.run_paths.sql_dir / "rounds.json"
-        sql_rounds = self._read_json_file(sql_rounds_path)
-        lines.append("SQL_ROUNDS (LLM)")
-        lines.append(self._format_json(sql_rounds))
-        lines.append("")
-
-        sql_results = self._read_json_file(self.run_paths.sql_results)
-        lines.append("SQL_RESULTS_SUMMARY")
-        lines.append(self._summarize_sql_results(sql_results))
-        lines.append("")
-
-        if self.run_paths.sql_results.exists():
-            lines.append("SQL_RESULTS (CAPPED)")
-            lines.append(self._read_text_file(self.run_paths.sql_results))
-            lines.append("")
-
-        sql_results_full_path = self.run_paths.sql_results_full
-        if sql_results_full_path.exists():
-            lines.append("SQL_RESULTS_FULL")
-            lines.append(self._read_text_file(sql_results_full_path))
-            lines.append("")
-
         markdown_payload = self._read_json_file(self.run_paths.markdown_excerpts)
         lines.append("MARKDOWN_EXCERPTS (LLM)")
         lines.append(self._format_json(markdown_payload))
@@ -453,11 +394,6 @@ class RunLogger:
         """Register one artifact path in the structured run log."""
         self.run_log["artifacts"][name] = str(path)
         self.write_run_log()
-
-    def update_sql_bundle(self, sql_payload: dict[str, Any]) -> None:
-        """Persist the SQL context bundle section."""
-        self.context_bundle["sql"] = sql_payload
-        self.write_context_bundle()
 
     def update_markdown_bundle(self, markdown_payload: dict[str, Any]) -> None:
         """Persist markdown payload and sync excerpt count in run inputs."""

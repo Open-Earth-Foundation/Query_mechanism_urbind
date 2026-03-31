@@ -307,7 +307,7 @@ After the first benchmark documented above, I reran the full suite after the mod
 Important comparison caveat:
 
 - the current config is not a markdown-only change
-- `orchestrator`, `sql_researcher`, `markdown_researcher`, `writer`, `chat`, and `assumptions_reviewer` are all now set to `openai/gpt-5.4-mini`
+- `orchestrator`, `markdown_researcher`, `writer`, `chat`, and `assumptions_reviewer` are all now set to `openai/gpt-5.4-mini`
 - this chapter therefore compares the earlier benchmarked config against the current full `gpt-5.4-mini` config state, not an isolated markdown-agent A/B test
 
 New run artifact:

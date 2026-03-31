@@ -22,7 +22,6 @@ def _build_config(runs_dir: Path, markdown_dir: Path) -> AppConfig:
     return build_test_app_config(
         runs_dir=runs_dir,
         markdown_dir=markdown_dir,
-        enable_sql=False,
     )
 
 
@@ -31,7 +30,6 @@ def _write_success_artifacts(question: str, run_id: str, config: AppConfig) -> R
     paths.base_dir.mkdir(parents=True, exist_ok=True)
 
     context_bundle = {
-        "sql": None,
         "markdown": {"status": "success", "excerpts": []},
         "drafts": [],
         "final": str(paths.final_output),
@@ -164,7 +162,6 @@ def test_api_run_lifecycle_success(tmp_path: Path, monkeypatch: pytest.MonkeyPat
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
     ) -> RunPaths:
-        assert config.enable_sql is False
         assert run_id is not None
         assert isinstance(log_llm_payload, bool)
         assert analysis_mode == "aggregate"
@@ -225,7 +222,6 @@ def test_api_run_lifecycle_dev_mode_ignores_blank_optional_queries(
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
     ) -> RunPaths:
-        assert config.enable_sql is False
         assert run_id is not None
         assert isinstance(log_llm_payload, bool)
         assert analysis_mode == "aggregate"

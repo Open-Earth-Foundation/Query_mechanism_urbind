@@ -27,12 +27,6 @@ class OrchestratorConfig(AgentConfig):
     context_bundle_name: str = "context_bundle.json"
 
 
-class SqlResearcherConfig(AgentConfig):
-    max_result_tokens: int = 100000
-    max_rows: int = 10000
-    pre_orchestrator_rounds: int = 2
-
-
 class MarkdownResearcherConfig(AgentConfig):
     max_files: int = 200
     max_file_bytes: int = 5_000_000
@@ -108,9 +102,6 @@ class AppConfig(BaseModel):
     model_config = ConfigDict(arbitrary_types_allowed=True)
 
     orchestrator: OrchestratorConfig
-    sql_researcher: SqlResearcherConfig = Field(
-        default_factory=lambda: SqlResearcherConfig(model="openai/gpt-5.4-mini")
-    )
     markdown_researcher: MarkdownResearcherConfig
     writer: WriterConfig
     chat: ChatConfig = Field(
@@ -123,10 +114,7 @@ class AppConfig(BaseModel):
     vector_store: VectorStoreConfig = Field(default_factory=VectorStoreConfig)
     openrouter_base_url: str = "https://openrouter.ai/api/v1"
     runs_dir: Path = Field(default_factory=lambda: Path("output"))
-    source_db_path: Path = Field(default_factory=lambda: Path("data/source.db"))
-    source_db_url: str | None = None
     markdown_dir: Path = Field(default_factory=lambda: Path("documents"))
-    enable_sql: bool = False
 
     @field_validator("writer", mode="before")
     @classmethod
@@ -160,29 +148,18 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
     config = AppConfig.model_validate(raw)
 
     runs_dir = os.getenv("RUNS_DIR")
-    source_db_path = os.getenv("SOURCE_DB_PATH")
     markdown_dir = os.getenv("MARKDOWN_DIR")
     openrouter_base_url = os.getenv("OPENROUTER_BASE_URL")
-    database_url = os.getenv("DATABASE_URL")
-    enable_sql = os.getenv("ENABLE_SQL")
     vector_store_enabled = os.getenv("VECTOR_STORE_ENABLED")
     chroma_persist_path = os.getenv("CHROMA_PERSIST_PATH")
     chroma_collection_name = os.getenv("CHROMA_COLLECTION_NAME")
 
     if runs_dir:
         config.runs_dir = Path(runs_dir)
-    if source_db_path:
-        config.source_db_path = Path(source_db_path)
     if markdown_dir:
         config.markdown_dir = Path(markdown_dir)
     if openrouter_base_url:
         config.openrouter_base_url = openrouter_base_url
-    if database_url:
-        config.source_db_url = database_url
-    if enable_sql is not None:
-        parsed = _parse_env_bool(enable_sql)
-        if parsed is not None:
-            config.enable_sql = parsed
     if vector_store_enabled is not None:
         parsed = _parse_env_bool(vector_store_enabled)
         if parsed is not None:
@@ -265,19 +242,9 @@ def get_openrouter_api_key() -> str:
     return resolve_openrouter_api_key()
 
 
-def get_database_url() -> str:
-    """Return the configured database URL or raise when missing."""
-    load_dotenv()
-    database_url = os.getenv("DATABASE_URL")
-    if not database_url:
-        raise EnvironmentError("DATABASE_URL is not set in the environment.")
-    return database_url
-
-
 __all__ = [
     "AgentConfig",
     "OrchestratorConfig",
-    "SqlResearcherConfig",
     "MarkdownResearcherConfig",
     "ChatConfig",
     "WriterConfig",
@@ -289,5 +256,4 @@ __all__ = [
     "load_cached_config",
     "resolve_openrouter_api_key",
     "get_openrouter_api_key",
-    "get_database_url",
 ]

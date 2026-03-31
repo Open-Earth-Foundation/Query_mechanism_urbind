@@ -112,11 +112,10 @@ class RunExecutor:
                 Path(command.markdown_path) if command.markdown_path else config.markdown_dir
             )
             logger.info(
-                "Run config resolved run_id=%s runs_dir=%s markdown_dir=%s sql_enabled=%s",
+                "Run config resolved run_id=%s runs_dir=%s markdown_dir=%s",
                 run_id,
                 config.runs_dir,
                 base_markdown_dir,
-                config.enable_sql,
             )
             if command.cities:
                 subset_dir = _prepare_selected_markdown_dir(config.runs_dir, run_id)

@@ -14,8 +14,7 @@ Never output free text outside the tool call.
 <input>
 Input is a JSON object with:
 - `question` (str)
-- `context_bundle` (object): contains SQL and markdown outputs; SQL may be null if disabled
-- `sql_enabled` (bool): informational only; SQL research is already finished before this decision
+- `context_bundle` (object): contains markdown outputs
 - `context_window_tokens` (optional int)
 - `max_input_tokens` (optional int)
 </input>
@@ -32,13 +31,13 @@ The tool argument must match `OrchestratorDecision`:
 - `error` (`ErrorInfo` | `null`)
 
 Action policy:
-- SQL/markdown research is already executed before this decision.
+- Markdown research is already executed before this decision.
 - Prefer `write` when available evidence supports an answer.
 - Use `stop` only when the question cannot be answered at all.
 
 Evidence policy:
 - Treat `context_bundle.markdown.status="success"` with non-null `error` as partial coverage, not hard failure.
-- If SQL/markdown show no matches, `write` is still valid if the answer can clearly state absence of evidence.
+- If markdown shows no matches, `write` is still valid if the answer can clearly state absence of evidence.
 - For plan/initiative/policy questions, require concrete details before considering coverage sufficient.
 
 If token limits are provided, keep `reason` concise and focused.
@@ -48,7 +47,7 @@ If token limits are provided, keep `reason` concise and focused.
 {
   "status": "success",
   "action": "write",
-  "reason": "Available markdown and SQL evidence are sufficient to produce a grounded response.",
+  "reason": "Available markdown evidence is sufficient to produce a grounded response.",
   "confidence": 0.83,
   "error": null
 }
