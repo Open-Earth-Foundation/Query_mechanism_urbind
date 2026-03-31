@@ -745,3 +745,112 @@ def test_retrieve_chunks_for_queries_merges_seed_query_ids_and_prefers_qualified
     assert seed_chunks["chunk-1"].provenance.seed_rank == 1
     assert seed_chunks["chunk-3"].provenance.seed_rank == 2
     assert seed_chunks["chunk-2"].provenance.selection_mode == "fallback_top_up"
+
+
+def test_retrieve_chunks_for_queries_rrf_boosts_multi_query_hits(
+    monkeypatch,
+    tmp_path,
+) -> None:
+    config = _build_test_config()
+    config.vector_store.context_window_chunks = 0
+    config.vector_store.table_context_window_chunks = 0
+    config.vector_store.retrieval_merge_strategy = "rrf"
+    config.vector_store.retrieval_rrf_k = 60
+    config.vector_store.index_manifest_path = tmp_path / "index_manifest.json"
+    save_manifest(
+        config.vector_store.index_manifest_path,
+        {
+            "files": {
+                "documents/Munich.md": {
+                    "file_hash": "h1",
+                    "chunk_ids": ["chunk-1", "chunk-2", "chunk-3"],
+                }
+            }
+        },
+    )
+
+    class _FakeStore:
+        def query_by_embedding(self, query_embeddings, n_results, where):
+            del query_embeddings, n_results
+            assert where == {"city_key": "munich"}
+            if not hasattr(self, "call_count"):
+                self.call_count = 0
+            self.call_count += 1
+            if self.call_count == 1:
+                return {
+                    "ids": [["chunk-1", "chunk-2"]],
+                    "metadatas": [[
+                        {
+                            "city_name": "Munich",
+                            "city_key": "munich",
+                            "raw_text": "single-query chunk",
+                            "source_path": "documents/Munich.md",
+                            "heading_path": "H1",
+                            "block_type": "paragraph",
+                            "chunk_index": 1,
+                        },
+                        {
+                            "city_name": "Munich",
+                            "city_key": "munich",
+                            "raw_text": "shared chunk first hit",
+                            "source_path": "documents/Munich.md",
+                            "heading_path": "H1",
+                            "block_type": "paragraph",
+                            "chunk_index": 2,
+                        },
+                    ]],
+                    "distances": [[0.01, 0.02]],
+                }
+            return {
+                "ids": [["chunk-2", "chunk-3"]],
+                "metadatas": [[
+                    {
+                        "city_name": "Munich",
+                        "city_key": "munich",
+                        "raw_text": "shared chunk second hit",
+                        "source_path": "documents/Munich.md",
+                        "heading_path": "H1",
+                        "block_type": "paragraph",
+                        "chunk_index": 2,
+                    },
+                    {
+                        "city_name": "Munich",
+                        "city_key": "munich",
+                        "raw_text": "second-query chunk",
+                        "source_path": "documents/Munich.md",
+                        "heading_path": "H1",
+                        "block_type": "paragraph",
+                        "chunk_index": 3,
+                    },
+                ]],
+                "distances": [[0.02, 0.03]],
+            }
+
+        def get(self, where, limit):
+            del where, limit
+            return {"ids": [], "metadatas": []}
+
+    monkeypatch.setattr(
+        retriever_module,
+        "_embed_queries",
+        lambda queries, config: {query: [0.01, 0.02] for query in queries},  # noqa: ARG005
+    )
+    monkeypatch.setattr(
+        retriever_module,
+        "ChromaStore",
+        lambda persist_path, collection_name: _FakeStore(),  # noqa: ARG005
+    )
+
+    chunks, meta = retrieve_chunks_for_queries(
+        queries=["original question", "metrics query"],
+        config=config,
+        docs_dir=tmp_path / "documents",
+        selected_cities=["Munich"],
+    )
+
+    assert [chunk.chunk_id for chunk in chunks] == ["chunk-2", "chunk-1", "chunk-3"]
+    assert meta["merge_strategy"] == "rrf"
+    assert meta["rrf_k"] == 60
+    seed_chunks = {chunk.chunk_id: chunk for chunk in meta["seed_chunks"]}
+    assert seed_chunks["chunk-2"].provenance.seed_query_ids == ["q1", "q2"]
+    assert seed_chunks["chunk-2"].provenance.seed_rank == 1

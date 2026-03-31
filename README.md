@@ -61,7 +61,7 @@ Chat prompt sizing, follow-up router history and excerpt caps, retry backoff, an
 - `ANONYMIZED_TELEMETRY` (optional, default `FALSE`): disables Chroma anonymized telemetry when set to `FALSE`.
 - `CHROMA_PERSIST_PATH` (optional, default `.chroma`): local Chroma persistence directory.
 - `CHROMA_COLLECTION_NAME` (optional, default `markdown_chunks`): Chroma collection used for markdown chunks.
-- Vector-store embedding and retrieval tuning is configured in `llm_config.yaml` under `vector_store.*` (for example `embedding_model`, `embedding_max_input_tokens`, `retrieval_max_distance`, `auto_update_on_run`, `index_manifest_path`).
+- Vector-store embedding and retrieval tuning is configured in `llm_config.yaml` under `vector_store.*` (for example `embedding_model`, `embedding_max_input_tokens`, `retrieval_max_distance`, `retrieval_merge_strategy`, `retrieval_rrf_k`, `auto_update_on_run`, `index_manifest_path`).
 
 CLI flags override `.env` values for a given run (for example `--db-path`, `--db-url`, `--markdown-path`, `--enable-sql`).
 Use `--city` (repeatable) to load markdown only for selected city files. City filters are normalized case-insensitively to backend `city_key` values (for example `Munich`, `MUNICH`, and `munich` all resolve to `munich`).
@@ -80,7 +80,10 @@ When vector retrieval is enabled, retrieval runs per city and per query (origina
   - if `vector_store.retrieval_max_distance` is set, it first keeps only candidates with `distance <= cutoff`;
   - if fewer than `vector_store.retrieval_fallback_min_chunks_per_city_query` pass the cutoff, it **tops up** with the next-best candidates (above the cutoff) until it reaches the fallback minimum (or runs out of candidates).
 - After per-(city × query) retrieval:
-  - results are merged across queries within a city (dedupe by `chunk_id`, keep the smallest distance);
+  - results are merged across queries within a city (dedupe by `chunk_id`, keep the smallest distance as chunk distance metadata);
+  - final seed ranking uses `vector_store.retrieval_merge_strategy`:
+    - `best_distance` (default): order direct hits by smallest distance
+    - `rrf`: order direct hits with reciprocal-rank fusion across query families so repeated hits rise
   - neighbor chunks are added by `chunk_index` window (same file/city);
   - optionally, `vector_store.retrieval_max_chunks_per_city` caps the final chunks per city after merge + neighbor expansion.
 - Retrieval artifacts now persist both layers explicitly:
@@ -193,6 +196,8 @@ retry:
 openrouter_base_url: "https://openrouter.ai/api/v1"
 enable_sql: false
 ```
+
+For retrieval experiments, add optional vector-store settings such as `retrieval_merge_strategy: "rrf"` and `retrieval_rrf_k: 60` under `vector_store`.
 
 ### How token and size limits are applied
 
@@ -857,7 +862,7 @@ Artifacts are written under `output/<run_id>/`:
 - `markdown/rejected_excerpts.json`: IDs-only negative decision artifact with rejected chunk IDs and rejected-per-city grouping.
 - `markdown/decision_audit.json`: run-level reconciliation counters and diagnostics (`retrieved_total`, accepted/rejected/unresolved totals, invariant status, and mismatch details).
 - `markdown/references.json`: run-local citation map generated from markdown excerpts. Includes sequential `ref_n` entries with `excerpt_index`, `city_name`, `quote`, `partial_answer`, and `source_chunk_ids`. Stage C citation coverage maps cited `ref_id` values in `final.md` back through these `source_chunk_ids`.
-- `markdown/retrieval.json` (when `VECTOR_STORE_ENABLED=true`): vector retrieval inputs and results summary. Includes the final retrieval query list, optional city filter, retrieval tuning metadata (cutoffs/caps), strict direct-hit `seed_chunks[]`, final delivered `chunks[]`, `meta.seed_retrieved_total_chunks`, `meta.neighbor_expanded_total_chunks`, and per-chunk summaries (`chunk_id`, `chunk_index`, `city_name`, `city_key`, `source_path`, `heading_path`, `block_type`, `distance`, `provenance`).
+- `markdown/retrieval.json` (when `VECTOR_STORE_ENABLED=true`): vector retrieval inputs and results summary. Includes the final retrieval query list, optional city filter, retrieval tuning metadata (cutoffs/caps plus `merge_strategy` / `rrf_k`), strict direct-hit `seed_chunks[]`, final delivered `chunks[]`, `meta.seed_retrieved_total_chunks`, `meta.neighbor_expanded_total_chunks`, and per-chunk summaries (`chunk_id`, `chunk_index`, `city_name`, `city_key`, `source_path`, `heading_path`, `block_type`, `distance`, `provenance`).
 - `markdown/batches.json`: markdown batching plan used for the markdown researcher calls. Includes per-city batch indices, estimated tokens, and chunk ordering fields (`path`, `chunk_index`, `chunk_id`), making it easy to inspect how chunks were grouped into LLM requests.
 - `final.md`: final delivered markdown output. Content format is:
   1. `# Question` heading with the original user question,

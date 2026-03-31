@@ -160,10 +160,66 @@ def _copy_provenance(provenance: dict[str, Any] | None) -> dict[str, Any]:
     }
 
 
+def _copy_query_ranks(payload: dict[str, Any] | None) -> dict[str, int]:
+    """Copy one internal query-rank mapping, keeping the best rank per query."""
+    raw = payload if isinstance(payload, dict) else {}
+    query_ranks: dict[str, int] = {}
+    for query_id, rank in raw.items():
+        normalized_query_id = str(query_id).strip()
+        if not normalized_query_id or not isinstance(rank, int) or rank <= 0:
+            continue
+        current_rank = query_ranks.get(normalized_query_id)
+        if current_rank is None or rank < current_rank:
+            query_ranks[normalized_query_id] = rank
+    return query_ranks
+
+
+def _compute_rrf_score(query_ranks: dict[str, int], rrf_k: int) -> float:
+    """Return reciprocal-rank-fusion score for one chunk across queries."""
+    if not query_ranks:
+        return 0.0
+    denominator_base = max(rrf_k, 1)
+    return sum(
+        1.0 / (denominator_base + rank)
+        for rank in query_ranks.values()
+        if rank > 0
+    )
+
+
+def _merge_query_ranks(
+    current_query_ranks: dict[str, int],
+    incoming_query_ranks: dict[str, int],
+) -> dict[str, int]:
+    """Merge per-query ranks, keeping the best rank seen for each query."""
+    merged_query_ranks = dict(current_query_ranks)
+    for query_id, incoming_rank in incoming_query_ranks.items():
+        current_rank = merged_query_ranks.get(query_id)
+        if current_rank is None or incoming_rank < current_rank:
+            merged_query_ranks[query_id] = incoming_rank
+    return merged_query_ranks
+
+
+def _seed_row_sort_key(
+    row: dict[str, Any],
+    *,
+    merge_strategy: str,
+    rrf_k: int,
+) -> tuple[float, float, str]:
+    """Return deterministic sort key for one direct-hit row."""
+    distance = float(row.get("distance", float("inf")))
+    chunk_id = str(row.get("chunk_id", ""))
+    if merge_strategy == "rrf":
+        query_ranks = _copy_query_ranks(row.get("query_ranks"))
+        rrf_score = _compute_rrf_score(query_ranks, rrf_k)
+        return (-rrf_score, distance, chunk_id)
+    return (distance, 0.0, chunk_id)
+
+
 def _build_seed_row(
     row: dict[str, Any],
     *,
     query_id: str,
+    query_rank: int,
     selection_mode: str,
 ) -> dict[str, Any]:
     """Return one retrieved row annotated as a direct seed hit."""
@@ -175,6 +231,7 @@ def _build_seed_row(
         "seed_query_ids": [query_id],
         "expanded_from_chunk_ids": [],
     }
+    enriched["query_ranks"] = {query_id: query_rank}
     return enriched
 
 
@@ -187,13 +244,19 @@ def _selection_mode_priority(selection_mode: str) -> int:
     return 0
 
 
-def _assign_seed_ranks(rows_by_id: dict[str, dict[str, Any]]) -> None:
+def _assign_seed_ranks(
+    rows_by_id: dict[str, dict[str, Any]],
+    *,
+    merge_strategy: str,
+    rrf_k: int,
+) -> None:
     """Assign deterministic 1-based ranks to direct seed rows."""
     ranked_rows = sorted(
         rows_by_id.values(),
-        key=lambda row: (
-            float(row.get("distance", float("inf"))),
-            str(row.get("chunk_id", "")),
+        key=lambda row: _seed_row_sort_key(
+            row,
+            merge_strategy=merge_strategy,
+            rrf_k=rrf_k,
         ),
     )
     for index, row in enumerate(ranked_rows, start=1):
@@ -296,10 +359,15 @@ def _retrieve_for_city_query(
         },
     )
     rows = _extract_query_rows(payload)
+    query_ranks_by_chunk_id = {
+        str(row["chunk_id"]): query_rank
+        for query_rank, row in enumerate(rows, start=1)
+    }
     passing = [
         _build_seed_row(
             row,
             query_id=query_id,
+            query_rank=query_ranks_by_chunk_id[str(row["chunk_id"])],
             selection_mode="distance_qualified",
         )
         for row in rows
@@ -322,6 +390,7 @@ def _retrieve_for_city_query(
             _build_seed_row(
                 row,
                 query_id=query_id,
+                query_rank=query_ranks_by_chunk_id[chunk_id],
                 selection_mode="fallback_top_up",
             )
         )
@@ -337,11 +406,13 @@ def _merge_rows_best_distance(
         chunk_id = str(row["chunk_id"])
         current = target.get(chunk_id)
         incoming_provenance = _copy_provenance(row.get("provenance"))
+        incoming_query_ranks = _copy_query_ranks(row.get("query_ranks"))
         if current is None:
             target[chunk_id] = dict(row)
             continue
 
         current_provenance = _copy_provenance(current.get("provenance"))
+        current_query_ranks = _copy_query_ranks(current.get("query_ranks"))
         replace_current = float(row["distance"]) < float(current["distance"])
         merged = dict(row) if replace_current else dict(current)
         merged_provenance = (
@@ -358,6 +429,10 @@ def _merge_rows_best_distance(
         ):
             merged_provenance["selection_mode"] = incoming_mode
         merged["provenance"] = merged_provenance
+        merged["query_ranks"] = _merge_query_ranks(
+            current_query_ranks,
+            incoming_query_ranks,
+        )
         target[chunk_id] = merged
 
 
@@ -573,6 +648,8 @@ def retrieve_chunks_for_queries(
         config.vector_store.retrieval_max_chunks_per_city_query,
         fallback_min_chunks_per_city_query,
     )
+    retrieval_merge_strategy = config.vector_store.retrieval_merge_strategy
+    retrieval_rrf_k = max(config.vector_store.retrieval_rrf_k, 1)
 
     store = ChromaStore(
         persist_path=config.vector_store.chroma_persist_path,
@@ -618,14 +695,18 @@ def retrieve_chunks_for_queries(
         )
         per_city_stats.append(
             {
-                    "city_key": city_key,
+                "city_key": city_key,
                 "city_name": city_name,
                 "retrieved_unique_chunks": len(city_rows),
                 "query_stats": query_stats,
             }
         )
 
-    _assign_seed_ranks(rows_by_id)
+    _assign_seed_ranks(
+        rows_by_id,
+        merge_strategy=retrieval_merge_strategy,
+        rrf_k=retrieval_rrf_k,
+    )
     seed_chunks = [_to_retrieved_chunk(row) for row in rows_by_id.values()]
     seed_chunks.sort(
         key=lambda chunk: (
@@ -646,7 +727,18 @@ def retrieve_chunks_for_queries(
     )
 
     chunks = [_to_retrieved_chunk(row) for row in rows_by_id.values()]
-    chunks.sort(key=lambda chunk: chunk.distance)
+    if retrieval_merge_strategy == "rrf":
+        chunks.sort(
+            key=lambda chunk: (
+                chunk.provenance.seed_rank
+                if chunk.provenance.seed_rank is not None
+                else float("inf"),
+                chunk.distance,
+                chunk.chunk_id,
+            )
+        )
+    else:
+        chunks.sort(key=lambda chunk: chunk.distance)
 
     max_chunks_per_city = config.vector_store.retrieval_max_chunks_per_city
     if max_chunks_per_city is not None and max_chunks_per_city > 0:
@@ -667,6 +759,8 @@ def retrieve_chunks_for_queries(
             "queries": normalized_queries,
             "cities": city_keys,
             "per_city": per_city_stats,
+            "merge_strategy": retrieval_merge_strategy,
+            "rrf_k": retrieval_rrf_k,
             "max_distance": config.vector_store.retrieval_max_distance,
             "fallback_min_chunks_per_city_query": fallback_min_chunks_per_city_query,
             "max_chunks_per_city_query": max_chunks_per_city_query,

@@ -9,6 +9,7 @@ This folder contains benchmark-only setup, separate from normal runtime settings
 - `config/base.env`: shared settings applied to both benchmark modes.
 - `config/mode_standard.env`: overrides for standard chunking runs.
 - `config/mode_vector.env`: overrides for vector-store runs.
+- `retrieval_evidence_diversity_analysis.md`: retrieval-only diagnosis of current benchmark misses and prioritized fixes for query diversity, fusion, and chunk representation.
 
 ## Override order
 
