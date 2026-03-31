@@ -120,8 +120,6 @@ def test_load_config_reads_vector_store_settings_from_yaml(
                 "  embedding_model: custom-embedding-model",
                 "  retrieval_max_distance: 0.75",
                 "  retrieval_max_chunks_per_city_query: 42",
-                "  retrieval_merge_strategy: rrf",
-                "  retrieval_rrf_k: 75",
             ]
         ),
         encoding="utf-8",
@@ -132,8 +130,6 @@ def test_load_config_reads_vector_store_settings_from_yaml(
     assert config.vector_store.embedding_model == "custom-embedding-model"
     assert config.vector_store.retrieval_max_distance == 0.75
     assert config.vector_store.retrieval_max_chunks_per_city_query == 42
-    assert config.vector_store.retrieval_merge_strategy == "rrf"
-    assert config.vector_store.retrieval_rrf_k == 75
 
 
 def test_load_config_reads_markdown_reasoning_effort_from_yaml(

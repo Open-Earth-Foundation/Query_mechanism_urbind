@@ -85,8 +85,6 @@ class VectorStoreConfig(BaseModel):
     retrieval_fallback_min_chunks_per_city_query: int = 20
     retrieval_max_chunks_per_city_query: int = 60
     retrieval_max_chunks_per_city: int | None = 300
-    retrieval_merge_strategy: Literal["best_distance", "rrf"] = "best_distance"
-    retrieval_rrf_k: int = 60
     context_window_chunks: int = 0
     table_context_window_chunks: int = 1
     auto_update_on_run: bool = False
