@@ -61,6 +61,27 @@ body {
   margin: 0.55rem 0;
 }
 
+.document-markdown-rail {
+  font-size: 0.93rem;
+  line-height: 1.62;
+}
+
+.document-markdown-rail h1 {
+  font-size: 1.55rem;
+}
+
+.document-markdown-rail h2 {
+  font-size: 1.2rem;
+}
+
+.document-markdown-rail h3 {
+  font-size: 1.02rem;
+}
+
+.document-markdown-rail .document-question-heading + p {
+  font-size: 0.93rem;
+}
+
 .document-markdown ul,
 .document-markdown ol {
   padding-left: 1.2rem;
@@ -99,6 +120,11 @@ body {
   table-layout: fixed;
   font-size: 0.92em;
   line-height: 1.5;
+}
+
+.document-markdown-rail .markdown-table {
+  min-width: 640px;
+  font-size: 0.86em;
 }
 
 .document-markdown .markdown-table-head,

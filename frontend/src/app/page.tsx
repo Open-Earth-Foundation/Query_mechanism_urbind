@@ -1,6 +1,14 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import {
+  type CSSProperties,
+  type PointerEvent as ReactPointerEvent,
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import {
   AlertTriangle,
   CheckCircle2,
@@ -19,6 +27,7 @@ import { DevModeToggle } from "@/components/dev-mode-toggle";
 import { DevToolsPanel } from "@/components/dev-tools-panel";
 import { MarkdownWithReferences } from "@/components/markdown-with-references";
 import { SearchableCityPicker } from "@/components/searchable-city-picker";
+import { WriterDocumentRail } from "@/components/writer-document-rail";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -61,8 +70,24 @@ const RUN_STATUS_POLL_INTERVAL_MS = 2500;
 
 type CityScopeMode = "all" | "group" | "manual";
 type AnalysisMode = "aggregate" | "city_by_city";
+type WorkspaceRailMode = "controls" | "document";
 const LAST_RUN_ID_STORAGE_KEY = "last_run_id";
 const CONTROLS_COLLAPSED_STORAGE_KEY = "build_controls_collapsed";
+const DEFAULT_WRITER_RAIL_WIDTH_PX = 416;
+const MIN_WRITER_RAIL_WIDTH_PX = 320;
+const MAX_WRITER_RAIL_WIDTH_PX = 760;
+const MIN_WORKSPACE_CONTENT_WIDTH_PX = 480;
+
+function clampWriterRailWidth(width: number, viewportWidth: number): number {
+  const maxWidth = Math.min(
+    MAX_WRITER_RAIL_WIDTH_PX,
+    Math.max(
+      MIN_WRITER_RAIL_WIDTH_PX,
+      viewportWidth - MIN_WORKSPACE_CONTENT_WIDTH_PX - 96,
+    ),
+  );
+  return Math.min(Math.max(width, MIN_WRITER_RAIL_WIDTH_PX), maxWidth);
+}
 
 function formatRunOptionLabel(run: RunSummary): string {
   const compactQuestion = run.question.replace(/\s+/g, " ").trim();
@@ -102,8 +127,15 @@ export default function Home() {
   const [chatOpen, setChatOpen] = useState(false);
   const [assumptionsOpen, setAssumptionsOpen] = useState(false);
   const [isControlsCollapsed, setIsControlsCollapsed] = useState(false);
+  const [workspaceRailMode, setWorkspaceRailMode] =
+    useState<WorkspaceRailMode>("controls");
+  const [writerRailWidth, setWriterRailWidth] = useState(DEFAULT_WRITER_RAIL_WIDTH_PX);
+  const [isWriterRailResizing, setIsWriterRailResizing] = useState(false);
   const [frontendMode, setFrontendMode] = useState<FrontendMode>(getDefaultFrontendMode());
   const [hasHydratedFrontendMode, setHasHydratedFrontendMode] = useState(false);
+  const writerRailResizeRef = useRef<{ startX: number; startWidth: number } | null>(
+    null,
+  );
 
   const runId = runResponse?.run_id ?? null;
   const statusValue = runStatus?.status ?? runResponse?.status ?? null;
@@ -111,6 +143,54 @@ export default function Home() {
   const documentReady = !!runOutput?.content && canFetchArtifacts;
   const devFeatures = useMemo(() => getDevFeatureFlags(frontendMode), [frontendMode]);
   const showDirectQueryControls = frontendMode === "dev";
+  const workspaceUsesDocumentRail = documentReady && (chatOpen || assumptionsOpen);
+  const isWriterRailResizable =
+    workspaceUsesDocumentRail &&
+    workspaceRailMode === "document" &&
+    !isControlsCollapsed;
+  const writerRailStyle = useMemo<CSSProperties | undefined>(() => {
+    if (!isWriterRailResizable) {
+      return undefined;
+    }
+    return {
+      "--workspace-rail-width": `${writerRailWidth}px`,
+    } as CSSProperties;
+  }, [isWriterRailResizable, writerRailWidth]);
+
+  const activeRunSummary = useMemo(() => {
+    if (!runId) {
+      return null;
+    }
+    return availableRuns.find((run) => run.run_id === runId) ?? null;
+  }, [availableRuns, runId]);
+
+  const activeRunQuestion = useMemo(() => {
+    const summaryQuestion = activeRunSummary?.question?.trim();
+    if (summaryQuestion) {
+      return summaryQuestion;
+    }
+    const draftQuestion = question.trim();
+    if (draftQuestion && runId === runResponse?.run_id) {
+      return draftQuestion;
+    }
+    return null;
+  }, [activeRunSummary, question, runId, runResponse?.run_id]);
+
+  const workspaceRailTitle =
+    workspaceUsesDocumentRail && workspaceRailMode === "document"
+      ? "Writer Document"
+      : "Build Controls";
+  const workspaceRailDescription =
+    workspaceUsesDocumentRail && workspaceRailMode === "document"
+      ? "Keep the generated report open while you chat or review assumptions."
+      : "Select scope, trigger a build, or load a previous answer.";
+  const railToggleLabel = workspaceUsesDocumentRail
+    ? isControlsCollapsed
+      ? "Show Rail"
+      : "Hide Rail"
+    : isControlsCollapsed
+      ? "Show Controls"
+      : "Hide Controls";
 
   useEffect(() => {
     const storedMode = readStoredFrontendMode();
@@ -138,6 +218,62 @@ export default function Home() {
       isControlsCollapsed ? "1" : "0",
     );
   }, [isControlsCollapsed]);
+
+  useEffect(() => {
+    setWriterRailWidth(
+      clampWriterRailWidth(DEFAULT_WRITER_RAIL_WIDTH_PX, window.innerWidth),
+    );
+  }, []);
+
+  useEffect(() => {
+    const handleResize = (): void => {
+      setWriterRailWidth((current) =>
+        clampWriterRailWidth(current, window.innerWidth),
+      );
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!isWriterRailResizing) {
+      return;
+    }
+
+    document.body.style.cursor = "col-resize";
+    document.body.style.userSelect = "none";
+
+    const handlePointerMove = (event: PointerEvent): void => {
+      const origin = writerRailResizeRef.current;
+      if (!origin) {
+        return;
+      }
+      const nextWidth = origin.startWidth + event.clientX - origin.startX;
+      setWriterRailWidth(
+        clampWriterRailWidth(nextWidth, window.innerWidth),
+      );
+    };
+
+    const stopResizing = (): void => {
+      writerRailResizeRef.current = null;
+      setIsWriterRailResizing(false);
+      document.body.style.cursor = "";
+      document.body.style.userSelect = "";
+    };
+
+    window.addEventListener("pointermove", handlePointerMove);
+    window.addEventListener("pointerup", stopResizing);
+    window.addEventListener("pointercancel", stopResizing);
+    return () => {
+      window.removeEventListener("pointermove", handlePointerMove);
+      window.removeEventListener("pointerup", stopResizing);
+      window.removeEventListener("pointercancel", stopResizing);
+      document.body.style.cursor = "";
+      document.body.style.userSelect = "";
+    };
+  }, [isWriterRailResizing]);
 
   const hydrateRunById = useCallback(async (targetRunId: string): Promise<void> => {
     const trimmedRunId = targetRunId.trim();
@@ -204,8 +340,7 @@ export default function Home() {
     }
     setIsLoadingSelectedRun(true);
     setRunError(null);
-    setChatOpen(false);
-    setAssumptionsOpen(false);
+    openDocumentWorkspace();
     try {
       await hydrateRunById(trimmed);
     } catch (error) {
@@ -423,6 +558,48 @@ export default function Home() {
     );
   }
 
+  function openDocumentWorkspace(): void {
+    setChatOpen(false);
+    setAssumptionsOpen(false);
+    setWorkspaceRailMode("controls");
+    setIsWriterRailResizing(false);
+    writerRailResizeRef.current = null;
+  }
+
+  function openChatWorkspace(): void {
+    setAssumptionsOpen(false);
+    setChatOpen(true);
+    setWorkspaceRailMode("document");
+    setIsControlsCollapsed(false);
+  }
+
+  function openAssumptionsWorkspace(): void {
+    setChatOpen(false);
+    setAssumptionsOpen(true);
+    setWorkspaceRailMode("document");
+    setIsControlsCollapsed(false);
+  }
+
+  function startWriterRailResize(
+    event: ReactPointerEvent<HTMLButtonElement>,
+  ): void {
+    if (!isWriterRailResizable) {
+      return;
+    }
+    event.preventDefault();
+    writerRailResizeRef.current = {
+      startX: event.clientX,
+      startWidth: writerRailWidth,
+    };
+    setIsWriterRailResizing(true);
+  }
+
+  function resetWriterRailWidth(): void {
+    setWriterRailWidth(
+      clampWriterRailWidth(DEFAULT_WRITER_RAIL_WIDTH_PX, window.innerWidth),
+    );
+  }
+
   async function handleBuildDocument(): Promise<void> {
     const trimmed = question.trim();
     if (!trimmed || isSubmitting) {
@@ -445,8 +622,7 @@ export default function Home() {
     setRunContext(null);
     setRunResponse(null);
     setRunStatus(null);
-    setChatOpen(false);
-    setAssumptionsOpen(false);
+    openDocumentWorkspace();
 
     try {
       const payload = await startRun({
@@ -510,7 +686,7 @@ export default function Home() {
           variant="outline"
           size="sm"
           onClick={() => setIsControlsCollapsed((current) => !current)}
-          aria-label={isControlsCollapsed ? "Show controls panel" : "Hide controls panel"}
+          aria-label={isControlsCollapsed ? `Show ${workspaceRailTitle.toLowerCase()}` : `Hide ${workspaceRailTitle.toLowerCase()}`}
           className="group fixed left-0 top-1/2 z-40 h-10 w-10 -translate-y-1/2 justify-start gap-2 overflow-hidden rounded-l-none rounded-r-full border border-slate-300 bg-white/90 px-3 text-slate-700 shadow-sm backdrop-blur-sm transition-all duration-300 ease-out hover:w-40 focus-visible:w-40"
         >
           <span className="shrink-0">
@@ -521,24 +697,84 @@ export default function Home() {
             )}
           </span>
           <span className="max-w-0 overflow-hidden whitespace-nowrap text-xs font-medium opacity-0 transition-all duration-300 ease-out group-hover:max-w-24 group-hover:opacity-100 group-focus-visible:max-w-24 group-focus-visible:opacity-100">
-            {isControlsCollapsed ? "Show Controls" : "Hide Controls"}
+            {railToggleLabel}
           </span>
         </Button>
 
-        <main className="flex flex-col gap-6 lg:flex-row">
+        <main
+          className={`flex flex-col gap-6 lg:flex-row ${
+            isWriterRailResizing ? "lg:select-none" : ""
+          }`}
+        >
           <div
-            className={`overflow-hidden transition-[width,opacity,transform] duration-300 ease-in-out lg:shrink-0 ${
+            style={writerRailStyle}
+            className={`overflow-hidden lg:shrink-0 ${
+              isWriterRailResizing
+                ? "lg:transition-none"
+                : "transition-[width,opacity,transform] duration-300 ease-in-out"
+            } ${
               isControlsCollapsed
                 ? "lg:w-0 lg:-translate-x-4 lg:opacity-0 lg:pointer-events-none"
-                : "lg:w-[26rem] lg:translate-x-0 lg:opacity-100"
+                : isWriterRailResizable
+                  ? "lg:w-[var(--workspace-rail-width)] lg:translate-x-0 lg:opacity-100"
+                  : "lg:w-[26rem] lg:translate-x-0 lg:opacity-100"
             }`}
           >
             <Card className="h-fit border-slate-300">
               <CardHeader>
-                <CardTitle>Build Controls</CardTitle>
-                <CardDescription>Select scope and trigger a long-running build.</CardDescription>
+                <div className="flex flex-col gap-3">
+                  <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+                    <div>
+                      <CardTitle>{workspaceRailTitle}</CardTitle>
+                      <CardDescription>{workspaceRailDescription}</CardDescription>
+                    </div>
+                    {workspaceUsesDocumentRail ? (
+                      <div className="inline-flex rounded-full border border-slate-200 bg-slate-100 p-1">
+                        <button
+                          type="button"
+                          onClick={() => setWorkspaceRailMode("document")}
+                          className={`rounded-full px-3 py-1 text-xs font-medium transition ${
+                            workspaceRailMode === "document"
+                              ? "bg-white text-slate-900 shadow-sm"
+                              : "text-slate-600 hover:text-slate-900"
+                          }`}
+                        >
+                          Writer Doc
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => setWorkspaceRailMode("controls")}
+                          className={`rounded-full px-3 py-1 text-xs font-medium transition ${
+                            workspaceRailMode === "controls"
+                              ? "bg-white text-slate-900 shadow-sm"
+                              : "text-slate-600 hover:text-slate-900"
+                          }`}
+                        >
+                          Controls
+                        </button>
+                      </div>
+                    ) : null}
+                  </div>
+                  {workspaceUsesDocumentRail ? (
+                    <p className="text-xs text-slate-500">
+                      {workspaceRailMode === "document"
+                        ? "Switch the rail without dropping the chat session, then drag the divider to resize the writer view."
+                        : "Switch the rail between the original writer answer and the build inputs without dropping the chat session."}
+                    </p>
+                  ) : null}
+                </div>
               </CardHeader>
-              <CardContent className="space-y-5">
+              <CardContent className="space-y-4">
+                {workspaceUsesDocumentRail && workspaceRailMode === "document" && runOutput && runId ? (
+                  <WriterDocumentRail
+                    runId={runId}
+                    content={runOutput.content}
+                    question={activeRunQuestion}
+                    statusLabel={statusValue}
+                    onOpenFullDocument={openDocumentWorkspace}
+                  />
+                ) : (
+                  <div className="space-y-5">
               <div className="space-y-2">
                 <Label htmlFor="question">Question</Label>
                 <Textarea
@@ -831,22 +1067,44 @@ export default function Home() {
                   <DevToolsPanel apiKeyIssue={hasApiKeyIssue} runId={runId} />
                 </>
               ) : null}
+                  </div>
+                )}
               </CardContent>
             </Card>
           </div>
+
+          {isWriterRailResizable ? (
+            <div className="hidden lg:flex lg:w-4 lg:shrink-0 lg:items-stretch lg:justify-center">
+              <button
+                type="button"
+                aria-label="Resize writer document panel"
+                onPointerDown={startWriterRailResize}
+                onDoubleClick={resetWriterRailWidth}
+                className="group flex h-full w-4 cursor-col-resize items-center justify-center bg-transparent"
+              >
+                <span
+                  className={`h-full w-px rounded-full bg-slate-300 transition-colors ${
+                    isWriterRailResizing
+                      ? "bg-amber-500"
+                      : "group-hover:bg-slate-400"
+                  }`}
+                />
+              </button>
+            </div>
+          ) : null}
 
           <div className="min-w-0 flex-1">
             {devFeatures.showAssumptionsEntry && assumptionsOpen && documentReady && runId ? (
               <AssumptionsWorkspace
                 runId={runId}
                 enabled={documentReady}
-                onClose={() => setAssumptionsOpen(false)}
+                onClose={openDocumentWorkspace}
               />
             ) : chatOpen && documentReady && runId ? (
               <ContextChatWorkspace
                 runId={runId}
                 enabled={documentReady}
-                onClose={() => setChatOpen(false)}
+                onClose={openDocumentWorkspace}
                 showContextManager={devFeatures.showContextManager}
                 showDevDiagnostics={frontendMode === "dev"}
                 showTokenMetrics={devFeatures.showChatTokenMetrics}
@@ -858,7 +1116,7 @@ export default function Home() {
                     <div>
                       <CardTitle>Generated Document</CardTitle>
                       <CardDescription>
-                        The main answer is rendered as a report. Context chat opens as a dedicated workspace.
+                        The main answer is rendered as a report. Context chat keeps this report docked in the workspace rail.
                       </CardDescription>
                     </div>
                   </div>
@@ -872,10 +1130,7 @@ export default function Home() {
                             <Button
                               type="button"
                               variant="outline"
-                              onClick={() => {
-                                setChatOpen(false);
-                                setAssumptionsOpen(true);
-                              }}
+                              onClick={openAssumptionsWorkspace}
                               disabled={!runId}
                             >
                               <Sparkles className="h-4 w-4" />
@@ -884,10 +1139,7 @@ export default function Home() {
                           ) : null}
                           <Button
                             type="button"
-                            onClick={() => {
-                              setAssumptionsOpen(false);
-                              setChatOpen(true);
-                            }}
+                            onClick={openChatWorkspace}
                             disabled={!runId}
                           >
                             <MessageSquareText className="h-4 w-4" />

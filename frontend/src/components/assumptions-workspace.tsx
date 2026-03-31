@@ -174,7 +174,7 @@ export function AssumptionsWorkspace({
           <div className="flex flex-wrap items-center gap-2">
             <Button type="button" size="sm" variant="outline" onClick={onClose}>
               <ArrowLeft className="h-4 w-4" />
-              Back to Document
+              Open Full Document
             </Button>
             <Button
               type="button"
