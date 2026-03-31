@@ -5,13 +5,6 @@ orchestrator:
   context_bundle_name: "context_bundle.json"
   context_window_tokens: 400000
   input_token_reserve: 20000
-sql_researcher:
-  model: "openai/gpt-5.4-mini"
-  temperature: 0.0
-  reasoning_effort: "high"
-  context_window_tokens: 400000
-  input_token_reserve: 2000
-  pre_orchestrator_rounds: 2
 markdown_researcher:
   model: "openai/gpt-5.4-mini"
   temperature: 0.0
@@ -84,4 +77,3 @@ retry:
   backoff_base_seconds: 1.0
   backoff_max_seconds: 30.0
 openrouter_base_url: "https://openrouter.ai/api/v1"
-enable_sql: false
