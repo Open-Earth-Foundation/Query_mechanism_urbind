@@ -26,48 +26,48 @@ NET
 ZERO
 CITIES
 
-# Contents
+# Table of Contents
 
 ## COMMITMENT FOR 2030
-7
-C1 Introductory note ... 8
-C2 Target: Climate Neutrality by 2030 ... 10
-C3 Principles, Priorities, and the Participatory Process ... 14
-C4 Signatories and Stakeholder Commitments ... 15
-C5 2030 Lisbon Climate Contract ... 24
+
+- C1 Introductory note ... 8
+- C2 Target: Climate Neutrality by 2030 ... 10
+- C3 Principles, Priorities, and the Participatory Process ... 14
+- C4 Signatories and Stakeholder Commitments ... 15
+- C5 2030 Lisbon Climate Contract ... 24
 
 ## 2030 Action Plan
-5
-AP1 Introductory Note ... 26
-AP2 A shared, enriched Mission with over 20 years of initiatives valuing the Environment and Climate Action ... 26
-AP3 Part A — Current Status of Climate Action ... 35
-AP3 A-1 Baseline Greenhouse Gas (GHG) Emissions Inventory ... 36
-AP3 A-2 Current Policies and Strategy Assessment ... 39
-AP3 A-3 Systemic Barriers and Opportunities for Climate Neutrality by 2030 ... 46
-AP4 Part B — Pathways to Climate Neutrality by 2030 ... 49
-AP4 B-1 Climate Neutrality and Impact Scenarios ... 52
-AP4 B-2 Climate Neutrality Portfolio Project ... 59
-AP4 B-3 Monitoring, Evaluation, and Learning Indicators ... 70
-AP5 Part C — Promote Climate Neutrality by 2030 ... 77
-AP5 C-1 Organizational Innovation and Governance Interventions ... 77
-AP5 C-2 Social Interventions and Other Innovations ... 82
-AP5 C-3 Financing the Portfolio of Actions ... 83
-AP6 Perspectives and Next Steps ... 83
+
+- AP1 Introductory Note ... 26
+- AP2 A shared, enriched Mission with over 20 years of initiatives valuing the Environment and Climate Action ... 26
+- AP3 Part A — Current Status of Climate Action ... 35
+- AP3 A-1 Baseline Greenhouse Gas (GHG) Emissions Inventory ... 36
+- AP3 A-2 Current Policies and Strategy Assessment ... 39
+- AP3 A-3 Systemic Barriers and Opportunities for Climate Neutrality by 2030 ... 46
+- AP4 Part B — Pathways to Climate Neutrality by 2030 ... 49
+- AP4 B-1 Climate Neutrality and Impact Scenarios ... 52
+- AP4 B-2 Climate Neutrality Portfolio Project ... 59
+- AP4 B-3 Monitoring, Evaluation, and Learning Indicators ... 70
+- AP5 Part C — Promote Climate Neutrality by 2030 ... 77
+- AP5 C-1 Organizational Innovation and Governance Interventions ... 77
+- AP5 C-2 Social Interventions and Other Innovations ... 82
+- AP5 C-3 Financing the Portfolio of Actions ... 83
+- AP6 Perspectives and Next Steps ... 83
 
 # List of Figures
 
-Figure 1 — Climate Neutrality Scenario in 2030 (illustrative diagram) ... 10
-Figure 2 — Climate Change on the Lisbon Participates Platform — Commitments and Strategy in Numbers ... 15
-Figure 3 — Climate Change on the Lisbon Participates Platform — Commitments by Area of Intervention ... 16
-Figure 4 — Lisbon Sustainable Businesses Platform, in numbers (Commitments) ... 16
-Figure 5 — Lisbon Sustainable Businesses Platform, in numbers (Energy and Water) ... 17
-Figure 6 — Sustainable Development Goals ... 18
-Figure 7 — Lisbon Sustainable Platform, in Numbers ... 23
-Figure 8 — Integration Between Mitigation and Adaptation Measures by Sectors ... 34
-Figure 9 — Evolution of Energy Consumption and GHG Emissions (GPC Basic Report) ... 36
-Figure 10 — GPC Basic 2019 ... 38
-Figure 11 — GHG Evolution 2002-2019 ... 46
-Figure 12 — Planned / Current Sectoral Emissions Scenario — PAC Lisbon 2030 (CEN.NL) ... 50
+- Figure 1 — Climate Neutrality Scenario in 2030 (illustrative diagram) ... 10
+- Figure 2 — Climate Change on the Lisbon Participates Platform — Commitments and Strategy in Numbers ... 15
+- Figure 3 — Climate Change on the Lisbon Participates Platform — Commitments by Area of Intervention ... 16
+- Figure 4 — Lisbon Sustainable Businesses Platform, in numbers (Commitments) ... 16
+- Figure 5 — Lisbon Sustainable Businesses Platform, in numbers (Energy and Water) ... 17
+- Figure 6 — Sustainable Development Goals ... 18
+- Figure 7 — Lisbon Sustainable Platform, in Numbers ... 23
+- Figure 8 — Integration Between Mitigation and Adaptation Measures by Sectors ... 34
+- Figure 9 — Evolution of Energy Consumption and GHG Emissions (GPC Basic Report) ... 36
+- Figure 10 — GPC Basic 2019 ... 38
+- Figure 11 — GHG Evolution 2002-2019 ... 46
+- Figure 12 — Planned / Current Sectoral Emissions Scenario — PAC Lisbon 2030 (CEN.NL) ... 50
 
 Contrato Climático Cidade de Lisboa 2030 | Lisbon Climate City Contract 2030
 Version n.3 – March 2024
@@ -79,28 +79,28 @@ NET
 ZERO
 CITIES
 
-Figure 13 — Sectoral Emissions Scenario — Neutrality 2030 (N30) 51
-Figure 14—Lisbon Green Structure (Source: CML, 2023) 70
-Figure 15 — Governance Structure (adapted from PAC2030) 81
-Figure 16 — Spheres of Powers Associated With the Implementation of Measures 82
+- Figure 13 — Sectoral Emissions Scenario — Neutrality 2030 (N30) 51
+- Figure 14—Lisbon Green Structure (Source: CML, 2023) 70
+- Figure 15 — Governance Structure (adapted from PAC2030) 81
+- Figure 16 — Spheres of Powers Associated With the Implementation of Measures 82
 
 # List of Tables
 
-Table 1 — Existing/Planned Sectorial Emissions Scenario (Optimistic 2030 Lisbon PAC scenario) and Estimated Additional Reduction (2030 neutrality scenario) 11
-Table 2 — Systemic Transformation: Emissions Impact Sectors-Domains 21
-Table 3 — Major Planning Options (GOP 2023-2027) 30
-Table 4 — Lisbon: 2030 Urban Strategy for Climate Action 33
-Table 5 — Measures, Actions and Projects Classified by Area of Intervention 34
-Table 6 — 2019 GHG Emissions Inventory Summary (GPC Format) 36
-Table 7 — Systemic Transformation: Systemic Levers 56
-Table 8 — Direct and Indirect Impacts (co-benefits) 57
-Table 9 — Indirect impacts (co-benefits) 58
-Table 10 — Mitigation Actions, Measures and Projects 59
-Table 11 — Adaptation, Actions, Measures and Projects 62
-Table 12 — Transversal Actions, Measures and Projects 65
-Table 13 — Indicators Proposed by Sector: 73
+- Table 1 — Existing/Planned Sectorial Emissions Scenario (Optimistic 2030 Lisbon PAC scenario) and Estimated Additional Reduction (2030 neutrality scenario) 11
+- Table 2 — Systemic Transformation: Emissions Impact Sectors-Domains 21
+- Table 3 — Major Planning Options (GOP 2023-2027) 30
+- Table 4 — Lisbon: 2030 Urban Strategy for Climate Action 33
+- Table 5 — Measures, Actions and Projects Classified by Area of Intervention 34
+- Table 6 — 2019 GHG Emissions Inventory Summary (GPC Format) 36
+- Table 7 — Systemic Transformation: Systemic Levers 56
+- Table 8 — Direct and Indirect Impacts (co-benefits) 57
+- Table 9 — Indirect impacts (co-benefits) 58
+- Table 10 — Mitigation Actions, Measures and Projects 59
+- Table 11 — Adaptation, Actions, Measures and Projects 62
+- Table 12 — Transversal Actions, Measures and Projects 65
+- Table 13 — Indicators Proposed by Sector: 73
 
-Abbreviations and acronyms :
+# Abbreviations and acronyms
 
 |  AFOLU | Agriculture, Forestry and Other Land Use  |
 | --- | --- |
@@ -203,12 +203,12 @@ CITIES
 | WYD Lisbon 2023 | World Youth Day Lisbon 2023 |
 
 ## List of Attachments
-Lisbon Commitment Letter 2030
-Commitment for 2030
-Action Plan for 2030
-Greenhouse Gas Inventory
-Investment Plan for 2030
-Checklist
+- Lisbon Commitment Letter 2030
+- Commitment for 2030
+- Action Plan for 2030
+- Greenhouse Gas Inventory
+- Investment Plan for 2030
+- Checklist
 
 Contrato Climático Cidade de Lisboa 2030 | Lisbon Climate City Contract 2030
 Version n.3 – March 2024
@@ -288,10 +288,10 @@ substantial reductions in emissions by at least 80%, while increasing its carbon
 
 The Vision for Lisbon's climate transition is based on the following targets and objectives:
 
-Reduce GHG emissions by 80%, compared to 2002 (baseline), bringing the climate neutrality goal forward by 2030;
-Adapt the city to extreme climate events, by increasing its resilience to climate risks (both current and future), and its response capacity;
-Ensure a fair, inclusive transition, combating inequalities and mitigating energy poverty;
-Value participation in the "Mission 100 cities with a neutral impact on climate by 2030," as a strategy to attract new investments and talents.
+- Reduce GHG emissions by 80%, compared to 2002 (baseline), bringing the climate neutrality goal forward by 2030;
+- Adapt the city to extreme climate events, by increasing its resilience to climate risks (both current and future), and its response capacity;
+- Ensure a fair, inclusive transition, combating inequalities and mitigating energy poverty;
+- Value participation in the "Mission 100 cities with a neutral impact on climate by 2030," as a strategy to attract new investments and talents.
 
 To achieve this goal, Lisbon shall foster partnerships that facilitate commitments and shared responsibility for climate transition, actively involving public and private entities, research centres, Non-Governmental Organizations (NGOs), citizens, and the entire community. And it is in this context that the Sustainable Lisbon Platform (Lisbon Green Deal) plays a fundamental role.
 
@@ -324,9 +324,9 @@ Lisbon's approach to the 2030 climate neutrality target essentially aims to expl
 
 Lisbon's climate neutrality target for 2030 assumes a 80% reduction in GHG emissions compared to the reference year 2002 (Baseline), with the corresponding level of residual emissions equivalent to 20% of emissions compared to 2002. This option takes the following into account:
 
-GHG emission inventories (GPC methodology) and emission scenarios for 2030, prepared within the scope of current and planned climate policy instruments;
-The reduction targets already established within the scope of instruments already developed and in force (PAC2030);
-The need to define a set of additional measures (considering a joint strategy of mitigation, adaptation, and some transversal measures) in order to — together with the measures already implemented, under implementation, and planned — bring forward the neutrality target by 2030.
+- GHG emission inventories (GPC methodology) and emission scenarios for 2030, prepared within the scope of current and planned climate policy instruments;
+- The reduction targets already established within the scope of instruments already developed and in force (PAC2030);
+- The need to define a set of additional measures (considering a joint strategy of mitigation, adaptation, and some transversal measures) in order to — together with the measures already implemented, under implementation, and planned — bring forward the neutrality target by 2030.
 
 The 2030 climate neutrality target includes the entire Municipal territory, and covers the 'GPC BASIC' reporting level, including Scope 1, 2 and 3 emissions (waste).
 
@@ -374,7 +374,7 @@ Table 1 — Existing/Planned Sectorial Emissions Scenario (Optimistic 2030 Lisbo
 
 The city of Lisbon has a vision and ambition regarding its priorities in terms of climate action and respective strategic interventions:
 
-Recreate a new governance paradigm capable of promoting solutions that reduce dependence on personal vehicles in favour of public transport and a fair transition to a city model based on proximity and that leverages new soft mobility technologies.
+- Recreate a new governance paradigm capable of promoting solutions that reduce dependence on personal vehicles in favour of public transport and a fair transition to a city model based on proximity and that leverages new soft mobility technologies.
 
 Contrato Climático Cidade de Lisboa 2030 | Lisbon Climate City Contract 2030
 
@@ -388,33 +388,33 @@ NET
 ZERO
 CITIES
 
-Foster the development of an integrated, connected, accessible multimodal ecosystem, integrating active, public and shared transport modes, in order to make life easier for Lisbon residents, promoting efficient and comfortable mobility, focused on their needs, while being sustainable at the same time.
+- Foster the development of an integrated, connected, accessible multimodal ecosystem, integrating active, public and shared transport modes, in order to make life easier for Lisbon residents, promoting efficient and comfortable mobility, focused on their needs, while being sustainable at the same time.
 
-Reduce commuting traffic entering Lisbon, by building dissuasive parking lots on the outskirts of the city, evolving towards a more attractive and multimodal typology, in conjunction with neighbouring Municipalities.
+- Reduce commuting traffic entering Lisbon, by building dissuasive parking lots on the outskirts of the city, evolving towards a more attractive and multimodal typology, in conjunction with neighbouring Municipalities.
 
 Optimize school, university and business traffic flows:
-Adopt new work policies in CML institutions, with an impact on mobility standards;
-Promote new workplace mobility policies with major employers to reduce commuting and peaks during rush hours.
+- Adopt new work policies in CML institutions, with an impact on mobility standards;
+- Promote new workplace mobility policies with major employers to reduce commuting and peaks during rush hours.
 
-Promote electric mobility by increasing charging stations and dedicated locations for innovative projects.
+- Promote electric mobility by increasing charging stations and dedicated locations for innovative projects.
 
-Improve accessibility to public transport, continuing with the tariff changes already introduced, such as the creation of a single, low-cost metropolitan transport ticket, with free access for children up to 12 years of age and for citizens over 65.
+- Improve accessibility to public transport, continuing with the tariff changes already introduced, such as the creation of a single, low-cost metropolitan transport ticket, with free access for children up to 12 years of age and for citizens over 65.
 
-Adopt best practices in urban smart strategies, where data, technology and connectivity can allow more accurate planning, reaching a larger number of users.
+- Adopt best practices in urban smart strategies, where data, technology and connectivity can allow more accurate planning, reaching a larger number of users.
 
-Continue with the development of the Sustainable Lisbon Platform, the City's mobilization forum, Citizen's Council, with a view to co-deciding the city's shared sustainability goals, mobilizing citizens, Businesses, confederations from all sectors with relevant activity in the city, NGOs, neighbourhood associations, universities and school representatives at all levels of education.
+- Continue with the development of the Sustainable Lisbon Platform, the City's mobilization forum, Citizen's Council, with a view to co-deciding the city's shared sustainability goals, mobilizing citizens, Businesses, confederations from all sectors with relevant activity in the city, NGOs, neighbourhood associations, universities and school representatives at all levels of education.
 
 Keep implementing measures that promote energy transition through:
-Improved energy performance of buildings and other facilities;
-Increase the number of electric vehicles;
-Installation of LED lamps in all street lighting poles;
-Improve the thermal insulation of buildings, particularly residential buildings, reducing expenditure on electricity consumption and increasing the thermal well-being and environmental health of its inhabitants;
-Democratize access to the production of electrical energy from renewable sources, by encouraging the creation of producer cooperatives and supporting existing ones.
+- Improved energy performance of buildings and other facilities;
+- Increase the number of electric vehicles;
+- Installation of LED lamps in all street lighting poles;
+- Improve the thermal insulation of buildings, particularly residential buildings, reducing expenditure on electricity consumption and increasing the thermal well-being and environmental health of its inhabitants;
+- Democratize access to the production of electrical energy from renewable sources, by encouraging the creation of producer cooperatives and supporting existing ones.
 
 Continue with the Solar City programme, taking advantage of the city's natural potential for this resource, namely by:
-Increasing the installed capacity of photovoltaic solar energy;
-Promoting photovoltaic systems for self-consumption in social housing buildings, schools, and hospitals;
-Producing photovoltaic energy on municipal pilots and buildings/facilities to supply collective public transports.
+- Increasing the installed capacity of photovoltaic solar energy;
+- Promoting photovoltaic systems for self-consumption in social housing buildings, schools, and hospitals;
+- Producing photovoltaic energy on municipal pilots and buildings/facilities to supply collective public transports.
 
 Contrato Climático Cidade de Lisboa 2030 | Lisbon Climate City Contract 2030
 Version n.3 – March 2024
@@ -427,34 +427,34 @@ ZERO
 CITIES
 
 Establish the Lisbon Commitment for environmental and climate policies, programmes and actions in the city, namely by:
-operationalizing the Municipal Environmental Advisory Council;
-coordinating and promoting municipal environmental management with other public environmental policies at a regional, national and international level.
+- operationalizing the Municipal Environmental Advisory Council;
+- coordinating and promoting municipal environmental management with other public environmental policies at a regional, national and international level.
 
 Keep implementing the adaptation measures defined under the municipal climate action strategy, with emphasis on the integration of response measures to the heat island, temperature extremes (maximum and minimum), water scarcity, protection against inundations and floods, namely by:
-Consolidating and implementing nature based solutions (NBS) for water retention and re naturalize water lines;
-Adapting the city to climate change with measures from the "cool down the city" programme as a strategy to mitigate the effects of the "Urban Heat Island" by increasing soil permeability in the consolidated city with the presence of trees in streets and squares, and by reinforcing water masses;
-Continuing to establish rules that impose green roofs and encourage vertical gardens;
-Continuing with the "Water for All" Plan, by placing drinking fountains in all gardens, parks and squares;
-Continuing with the investment strategy in urban planning focused on concerns associated with climate change scenarios.
+- Consolidating and implementing nature based solutions (NBS) for water retention and re naturalize water lines;
+- Adapting the city to climate change with measures from the "cool down the city" programme as a strategy to mitigate the effects of the "Urban Heat Island" by increasing soil permeability in the consolidated city with the presence of trees in streets and squares, and by reinforcing water masses;
+- Continuing to establish rules that impose green roofs and encourage vertical gardens;
+- Continuing with the "Water for All" Plan, by placing drinking fountains in all gardens, parks and squares;
+- Continuing with the investment strategy in urban planning focused on concerns associated with climate change scenarios.
 
 Continuing with Water Efficiency measures, namely by:
-Monitoring water consumptions and controlling the quality of this resource (drinking, reclaimed, underground, recreational, ornamental and spring water);
-Implementing the recycled water programme for irrigation and street cleaning;
-Investing in new solutions for using rainwater and other water solutions.
+- Monitoring water consumptions and controlling the quality of this resource (drinking, reclaimed, underground, recreational, ornamental and spring water);
+- Implementing the recycled water programme for irrigation and street cleaning;
+- Investing in new solutions for using rainwater and other water solutions.
 
 Promote Environmental Enhancement and the Circular Economy in Lisbon, namely by:
-Adopting "Sustainable and Circular Public Procurement" in Lisbon City Council departments;
-Distinguishing hotels and restaurants that meet environmental and energy sustainability criteria, by creating a "Green Facility" award.
+- Adopting "Sustainable and Circular Public Procurement" in Lisbon City Council departments;
+- Distinguishing hotels and restaurants that meet environmental and energy sustainability criteria, by creating a "Green Facility" award.
 
-Introducing a municipal policy for reducing waste production.
+- Introducing a municipal policy for reducing waste production.
 
-Increasing recycling, improving the quality of materials, and reinforcing the concept of circular economy.
+- Increasing recycling, improving the quality of materials, and reinforcing the concept of circular economy.
 
-Strengthening the ongoing strategy of Education for Sustainability, and Fostering Climate Literacy.
+- Strengthening the ongoing strategy of Education for Sustainability, and Fostering Climate Literacy.
 
-Involving citizens in decision-making and promoting their participation in the design and experimentation of different adaptation solutions.
+- Involving citizens in decision-making and promoting their participation in the design and experimentation of different adaptation solutions.
 
-Taking actions, aimed at creating the necessary conditions to achieve climate resilience and contribute to the achievement of the European objectives of the "EU Mission for climate-
+Taking actions, aimed at creating the necessary conditions to achieve climate resilience and contribute to the achievement of the European objectives of the "EU Mission for climate-neutral and smart cities” and of the “Adaptation to Climate Change Mission,” with emphasis on:
 
 Contrato Climático Cidade de Lisboa 2030 | Lisbon Climate City Contract 2030
 Version n.3 – March 2024
@@ -467,26 +467,24 @@ NET
 ZERO
 CITIES
 
-neutral and smart cities” and of the “Adaptation to Climate Change Mission,” with emphasis on:
-
-Using the best available knowledge for carrying out analyses of current climate risks and those predicted to be amplified by climate change in the city of Lisbon, and promote public access to the results;
-Using such knowledge to support the community, citizens, entrepreneurs, researchers and political decision-makers in designing and implementing adaptation measures;
-Supporting the demonstration and application of innovative adaptation solutions;
-Participating in exchanges of experiences and collaborative activities with other cities and regions.
+- Using the best available knowledge for carrying out analyses of current climate risks and those predicted to be amplified by climate change in the city of Lisbon, and promote public access to the results;
+- Using such knowledge to support the community, citizens, entrepreneurs, researchers and political decision-makers in designing and implementing adaptation measures;
+- Supporting the demonstration and application of innovative adaptation solutions;
+- Participating in exchanges of experiences and collaborative activities with other cities and regions.
 
 # C3 Principles, Priorities, and the Participatory Process
 
 Fulfilling the commitments undertaken by Lisbon for climate neutrality by 2030, with a direct impact at national and international level, constitutes a quite ambitious strategy not only for the City, but also for the organization itself and its employees, all its inhabitants, workers, students, and also the visitors who seek it. By taking on these commitments, Lisbon is taking co-responsibility in meeting the decarbonization and climate change adaptation goals, which impose:
 
-Bringing forward to 2030 actions and measures defined by the PAC2030 for 2050;
-Implementing additional actions and measures to reinforce mitigation, adaptation and transversal interventions in response to current and future challenges;
-Rethinking the municipal budget, prioritizing planned actions and monitoring the respective implementation stages;
-Continuing with the integration of financing from public (own revenues, subsidies and contributions), EU, and private (including loans) sources into the multi-annual investment plan for the coming years;
-Prioritizing structuring projects, based on integrated, scalable and replicable actions, with scrupulously monitored schedules to allow for their timely completion;
-Pursuing the Lisbon Participates strategy, with specific, inclusive, innovative, diversified actions, allowing the involvement of citizens, Businesses, universities and other key actors in the construction of the Lisbon ecosystem;
-Continuing with the commitment aimed at Businesses and organizations, a strategy of joint mobilization in decision-making regarding the prioritization of investments and interventions to be followed;
-Continuing with the strategy of individual and social accountability;
-Making the Lisbon City Council more sustainable, resilient, a driver of change, and an accelerator of leadership.
+- Bringing forward to 2030 actions and measures defined by the PAC2030 for 2050;
+- Implementing additional actions and measures to reinforce mitigation, adaptation and transversal interventions in response to current and future challenges;
+- Rethinking the municipal budget, prioritizing planned actions and monitoring the respective implementation stages;
+- Continuing with the integration of financing from public (own revenues, subsidies and contributions), EU, and private (including loans) sources into the multi-annual investment plan for the coming years;
+- Prioritizing structuring projects, based on integrated, scalable and replicable actions, with scrupulously monitored schedules to allow for their timely completion;
+- Pursuing the Lisbon Participates strategy, with specific, inclusive, innovative, diversified actions, allowing the involvement of citizens, Businesses, universities and other key actors in the construction of the Lisbon ecosystem;
+- Continuing with the commitment aimed at Businesses and organizations, a strategy of joint mobilization in decision-making regarding the prioritization of investments and interventions to be followed;
+- Continuing with the strategy of individual and social accountability;
+- Making the Lisbon City Council more sustainable, resilient, a driver of change, and an accelerator of leadership.
 
 The joint commitment already includes the involvement of the Municipality of Lisbon, society and of citizens themselves, fundamental pieces for the implementation of the respective Climate City Contract based on the key principles of accountability, transparency, justice, inclusion, innovation, and co-creation.
 
@@ -700,10 +698,10 @@ International Organizations
 
 Investing in daily communication, the Municipality provides updated information on its official website through the following links:
 
-https://lp.lisboaparticipa.pt/compromisso/em-numeros
-https://lisboaparticipa.pt/pt/lisboa-sustentavel-empresas
-https://cidadania.lisboa.pt/participacao
-https://cidadania.lisboa.pt/participacao/conselho-de-cidadaos
+- https://lp.lisboaparticipa.pt/compromisso/em-numeros
+- https://lisboaparticipa.pt/pt/lisboa-sustentavel-empresas
+- https://cidadania.lisboa.pt/participacao
+- https://cidadania.lisboa.pt/participacao/conselho-de-cidadaos
 
 At the same time, alternative communication channels are available, with emphasis on Social Networks.
 
@@ -730,11 +728,11 @@ Figure 7 — Lisbon Sustainable Platform, in Numbers
 
 The next steps include:
 
-Strengthening the project team, with greater proximity in daily work;
-Investing in inclusive, fair participation;
-Reinforcing the commitments signed with and for the Municipality, both internal and external to the Municipality, based on what is proposed in this Lisbon Climate City Contract 2030;
-Increase monitoring based on KPIs to evaluate performance and innovation;
-The continued implementation of a communication plan aimed at different audiences, based on different channels.
+- Strengthening the project team, with greater proximity in daily work;
+- Investing in inclusive, fair participation;
+- Reinforcing the commitments signed with and for the Municipality, both internal and external to the Municipality, based on what is proposed in this Lisbon Climate City Contract 2030;
+- Increase monitoring based on KPIs to evaluate performance and innovation;
+- The continued implementation of a communication plan aimed at different audiences, based on different channels.
 
 ## Serving People
 
@@ -791,9 +789,9 @@ Lisbon, as a city and experimentation centre, has the responsibility, capacity, 
 
 Ensure that Lisbon becomes a sustainable, resilient, inclusive, fair city:
 
-requires continued, joint involvement, action and investment to exceed the agreed targets,
-ensures reinforcing the city's position,
-obliges us to do so with and for citizens.
+- requires continued, joint involvement, action and investment to exceed the agreed targets,
+- ensures reinforcing the city's position,
+- obliges us to do so with and for citizens.
 
 With this vision, Lisbon took up the commitment — along with its citizens, employees, residents, students, tourists and visitors — of reviewing the PAC2030, currently in force, and to implement a new Climate Contract. More ambitious, in terms of Action, Investment, Commitment and Involvement, in order to achieve climate neutrality by 2030. To this end, a strategy to reduce climate emissions by 80% by 2030, and a target of neutrality by 2050 is required.
 
@@ -805,9 +803,9 @@ Making change and serving people requires a commitment to keep making Lisbon int
 
 The commitments undertaken by Lisbon, within the scope of Climate Change, and the results of their implementation are as follows:
 
-In 2009, Lisbon signed the Covenant of Mayors, an initiative focused on mitigating emissions (Resolution No. 994/CM/2008, published in Municipal Bulletin No. 772);
-In 2014, Lisbon signed the Mayor's Adapt declaration an initiative aimed at adapting to climate change in urban areas (Resolution No. 468/CM/2014, published in Municipal Bulletin No. 1067);
-In 2015, Lisbon signed the Compact of Mayors initiative, the largest global platform of cities aimed at promoting the reduction of emissions, monitoring the progress achieved, and preparing for adaptation to climate change (Resolution No. 571/CM/2015, published in Municipal Bulletin No. 1128);
+- In 2009, Lisbon signed the Covenant of Mayors, an initiative focused on mitigating emissions (Resolution No. 994/CM/2008, published in Municipal Bulletin No. 772);
+- In 2014, Lisbon signed the Mayor's Adapt declaration an initiative aimed at adapting to climate change in urban areas (Resolution No. 468/CM/2014, published in Municipal Bulletin No. 1067);
+- In 2015, Lisbon signed the Compact of Mayors initiative, the largest global platform of cities aimed at promoting the reduction of emissions, monitoring the progress achieved, and preparing for adaptation to climate change (Resolution No. 571/CM/2015, published in Municipal Bulletin No. 1128);
 
 Contrato Climático Cidade de Lisboa 2030 | Lisbon Climate City Contract 2030
 Version n.3 – March 2024
@@ -820,15 +818,15 @@ NET
 ZERO
 CITIES
 
-In 2016, Lisbon signed the Covenant of Mayors for Climate and Energy, thus committing to reducing CO₂ emissions (and possibly other greenhouse gases) in its territory by at least 40% by 2030 (Resolution No. 331/CM/2016, published in Municipal Bulletin No. 1168);
-Also in 2016, it developed and approved the Local Action Plan for Biodiversity (PALB, 2016);
-In 2017, Lisbon approved the Municipal Strategy for Adaptation to Climate Change (EMAAC), in the context of the “ClimAdaPT.local” project, intending to integrate the strategy into municipal planning tools, as well as to empower municipal services and to integrate local actors (Resolution No. 232/AML/2017, published in the 4th Supplement to Municipal Bulletin No. 1224);
-In 2018, Lisbon approved the Action Plan for Sustainable Energy and Climate (PAESC), a mandatory instrument under the Global Covenant of Mayors for Energy and Climate. The PAESC brings together, frames and proposes, with regard to climate mitigation, a set of strategic objectives and targets in the areas of reducing emissions and primary energy consumption, and reviews the commitment to reduce CO₂ emissions by 60% by 2030 (Resolution No. 241/AML/2018, published in the 5th Supplement to Municipal Bulletin No. 1271);
-In 2019, Lisbon signed the “Deadline 2020 — Commitment to the Climate Action Plan” established by the C40 network to support the implementation of the Paris Agreement that establishes 2020 as a target for defining and starting to implement climate action plans to limit the increase in global average temperatures to 2°C compared to pre-industrial levels, and to make all efforts to limit the temperature increase to just 1.5°C (Resolution No. 007/AML/2019, published in the 2nd Supplement to Municipal Bulletin No. 1304);
-Also in 2019, Lisbon joined the C40 Cities Climate Leadership Network, following the approval of its application by the C40 Steering Committee, within which it committed to developing the PAC2030, an instrument focused on 4 major pillars — Mitigation; Adaptation; Benefits, Inclusion, Equity and Fair Transition; Governance, Resources and Mobilization (Resolution No. 183/AML/2019, published in the 2nd Supplement to Municipal Bulletin No. 1316);
-Also in 2019, on a regional scale, and within the specific scope of adaptation, the city of Lisbon — among the 18 municipalities in the Lisbon Metropolitan Area — signed the commitment to adapt the Metropolitan Area of Lisbon (AML) to climate change, according to the action principles of the Metropolitan Adaptation Plan to Climate Change. Recognizing the global climate emergency, the signatories consider that it is urgent to adapt the metropolitan territory to climate change and to reduce its vulnerabilities, as well as the exposure of communities to risks, acting in a continuous, articulated manner at intermunicipal level;
-For the purpose of submission to public consultation and subsequent submission to the Municipal Assembly, Lisbon has approved the PAC2030 in 2021, which reflects the “one-decade commitment” to making the Portuguese capital a “neutral, resilient, inclusive” city. This Plan reinforces the GHG reduction target for 2030, accelerating the initial path to neutrality by 2050. Lisbon thus establishes a more ambitious target of a 70% reduction of its emissions by 2030 compared to the base year of 2002 (Resolution No. 443/2021, published in the 1st Supplement to Municipal Bulletin No. 1429);
-In 2022, the PAC2030 was unanimously approved, a strategic instrument for the Municipality's climate policy and strategy in force;
+- In 2016, Lisbon signed the Covenant of Mayors for Climate and Energy, thus committing to reducing CO₂ emissions (and possibly other greenhouse gases) in its territory by at least 40% by 2030 (Resolution No. 331/CM/2016, published in Municipal Bulletin No. 1168);
+- Also in 2016, it developed and approved the Local Action Plan for Biodiversity (PALB, 2016);
+- In 2017, Lisbon approved the Municipal Strategy for Adaptation to Climate Change (EMAAC), in the context of the “ClimAdaPT.local” project, intending to integrate the strategy into municipal planning tools, as well as to empower municipal services and to integrate local actors (Resolution No. 232/AML/2017, published in the 4th Supplement to Municipal Bulletin No. 1224);
+- In 2018, Lisbon approved the Action Plan for Sustainable Energy and Climate (PAESC), a mandatory instrument under the Global Covenant of Mayors for Energy and Climate. The PAESC brings together, frames and proposes, with regard to climate mitigation, a set of strategic objectives and targets in the areas of reducing emissions and primary energy consumption, and reviews the commitment to reduce CO₂ emissions by 60% by 2030 (Resolution No. 241/AML/2018, published in the 5th Supplement to Municipal Bulletin No. 1271);
+- In 2019, Lisbon signed the “Deadline 2020 — Commitment to the Climate Action Plan” established by the C40 network to support the implementation of the Paris Agreement that establishes 2020 as a target for defining and starting to implement climate action plans to limit the increase in global average temperatures to 2°C compared to pre-industrial levels, and to make all efforts to limit the temperature increase to just 1.5°C (Resolution No. 007/AML/2019, published in the 2nd Supplement to Municipal Bulletin No. 1304);
+- Also in 2019, Lisbon joined the C40 Cities Climate Leadership Network, following the approval of its application by the C40 Steering Committee, within which it committed to developing the PAC2030, an instrument focused on 4 major pillars — Mitigation; Adaptation; Benefits, Inclusion, Equity and Fair Transition; Governance, Resources and Mobilization (Resolution No. 183/AML/2019, published in the 2nd Supplement to Municipal Bulletin No. 1316);
+- Also in 2019, on a regional scale, and within the specific scope of adaptation, the city of Lisbon — among the 18 municipalities in the Lisbon Metropolitan Area — signed the commitment to adapt the Metropolitan Area of Lisbon (AML) to climate change, according to the action principles of the Metropolitan Adaptation Plan to Climate Change. Recognizing the global climate emergency, the signatories consider that it is urgent to adapt the metropolitan territory to climate change and to reduce its vulnerabilities, as well as the exposure of communities to risks, acting in a continuous, articulated manner at intermunicipal level;
+- For the purpose of submission to public consultation and subsequent submission to the Municipal Assembly, Lisbon has approved the PAC2030 in 2021, which reflects the “one-decade commitment” to making the Portuguese capital a “neutral, resilient, inclusive” city. This Plan reinforces the GHG reduction target for 2030, accelerating the initial path to neutrality by 2050. Lisbon thus establishes a more ambitious target of a 70% reduction of its emissions by 2030 compared to the base year of 2002 (Resolution No. 443/2021, published in the 1st Supplement to Municipal Bulletin No. 1429);
+- In 2022, the PAC2030 was unanimously approved, a strategic instrument for the Municipality's climate policy and strategy in force;
 
 Contrato Climático Cidade de Lisboa 2030 | Lisbon Climate City Contract 2030
 Version n.3 – March 2024
@@ -841,13 +839,13 @@ NET
 ZERO
 CITIES
 
-That same year, Lisbon was selected to join the “EU Mission for climate-neutral and smart cities”, thus joining a group of 100 cities committed to finding joint solutions, and to positioning themselves at the forefront of innovation and of transition to climate neutrality by 2030.
+- That same year, Lisbon was selected to join the “EU Mission for climate-neutral and smart cities”, thus joining a group of 100 cities committed to finding joint solutions, and to positioning themselves at the forefront of innovation and of transition to climate neutrality by 2030.
 
-Also in 2022, Lisbon joined the "Mission Adaptation to Climate Change: challenges and opportunities for regions and communities," thus joining the first 118 regions and local authorities eligible to sign the Mission Charter.
+- Also in 2022, Lisbon joined the "Mission Adaptation to Climate Change: challenges and opportunities for regions and communities," thus joining the first 118 regions and local authorities eligible to sign the Mission Charter.
 
-In 2023, Lisbon is appointed as mentor city for the "Intelligent Cities Challenge community," a European Commission initiative that supports European cities in the green and digital transition of their local economies, through local green deals.
+- In 2023, Lisbon is appointed as mentor city for the "Intelligent Cities Challenge community," a European Commission initiative that supports European cities in the green and digital transition of their local economies, through local green deals.
 
-Within the scope of the 'Cities Mission,' Lisbon is preparing the approval of the Climate City Contract, which represents a set of commitments aimed at fulfilling the climate neutrality goals by 2030, co-created with various stakeholders and interested parties, and supported by the 2030 Action Plan for Climate Neutrality, by the 2030 Investment Plan for Climate Neutrality, and by the 2030 Investment Plan for Climate Neutrality. The Lisbon Climate City Contract 2030 is an updated, strategic, flexible document, aligned with the PAC2030 and with other key instruments of the Municipality, such as the current 'Major Planning Options' (GOP), and with other strategic guidelines for the region and the country, centred on climate action.
+- Within the scope of the 'Cities Mission,' Lisbon is preparing the approval of the Climate City Contract, which represents a set of commitments aimed at fulfilling the climate neutrality goals by 2030, co-created with various stakeholders and interested parties, and supported by the 2030 Action Plan for Climate Neutrality, by the 2030 Investment Plan for Climate Neutrality, and by the 2030 Investment Plan for Climate Neutrality. The Lisbon Climate City Contract 2030 is an updated, strategic, flexible document, aligned with the PAC2030 and with other key instruments of the Municipality, such as the current 'Major Planning Options' (GOP), and with other strategic guidelines for the region and the country, centred on climate action.
 
 Like other intersectoral action strategies adopted by the city of Lisbon, identified in the 'Climate-Neutral and Smart Cities Mission Call for Expression of Interest,' considered relevant to the area of climate action and for the reduction of GHG emissions, it is important to mention the Sustainable Urban Mobility Action Plan (PAMUS) and the strategy for Mobility 2030 (MOVE Lisbon). "The option for smarter mobility that ensures maximum accessibility with minimum impacts has become a critical commitment for Lisbon. The city has already implemented many measures promoting more sustainable mobility."
 
@@ -871,20 +869,20 @@ CITIES
 
 By joining the C40 city network in 2019, Lisbon committed itself to global mobilization and climate emergency, by signing the following documents:
 
-"Deadline 2020" — Commitment to the Climate Action Plan [Jan 2019];
-"Global Green New Deal" [Oct 2019];
-"C40 Clean Air Cities" Declaration [Oct 2019];
-"C40 Clean Air Accelerator" Declaration (2021);
-"C40 Renewable Energy Accelerator" Declaration (2022)
-"C40 Water Safe Cities Accelerator" Declaration (intended to be signed in Oct 2023).
+- "Deadline 2020" — Commitment to the Climate Action Plan [Jan 2019];
+- "Global Green New Deal" [Oct 2019];
+- "C40 Clean Air Cities" Declaration [Oct 2019];
+- "C40 Clean Air Accelerator" Declaration (2021);
+- "C40 Renewable Energy Accelerator" Declaration (2022)
+- "C40 Water Safe Cities Accelerator" Declaration (intended to be signed in Oct 2023).
 
 The European Commission, by officially launching five European Missions, and Lisbon, by embracing two of them, places in the hands of the city and of its citizens, some of the most ambitious challenges defined to date, namely the construction of "Smart Cities with a neutral impact on climate" and the local response to "Adaptation to Climate Change".
 
 Within the scope of Missions:
 
-On January 27, 2022, Lisbon signed the Commitment with the "EU Mission on Climate-Neutral Smart Cities";
-On December 15, 2022, Lisbon signed the City of Lisbon Charter for "Adaptation to Climate Change Mission";
-On April 13, 2023, Lisbon submitted the Letter of "Support to the Mission on Climate-Neutral and Smart Cities' to be addressed to the Project Group of Commissioners on Research and Innovation".
+- On January 27, 2022, Lisbon signed the Commitment with the "EU Mission on Climate-Neutral Smart Cities";
+- On December 15, 2022, Lisbon signed the City of Lisbon Charter for "Adaptation to Climate Change Mission";
+- On April 13, 2023, Lisbon submitted the Letter of "Support to the Mission on Climate-Neutral and Smart Cities' to be addressed to the Project Group of Commissioners on Research and Innovation".
 
 With extensive experience and strong involvement with the UN SDGs and with the seven clear goals and four action priorities to prevent new disaster risks and reduce existing ones defined in the Sendai Framework for Disaster Risk Reduction 2015-30, Lisbon believes that the success of European Missions requires a joint effort, which simultaneously feeds back into common public policies, to prioritize the intervention of new global solutions, in response to the call of the Paris Agreement.
 
@@ -892,9 +890,9 @@ On May 9, 2023, Lisbon reiterated its commitment to climate neutrality on Europe
 
 Other highlights:
 
-In 2018, Lisbon won the European Mobility Week, for larger municipalities, with the program presented at the European Mobility Week, with emphasis on promoting the use of bicycles in the city in several initiatives, with the opening of new bike sharing stations, of new, expanded bike lanes, and 800 new bike parking spaces, accompanied by an effective communications campaign.
-In 2020, Lisbon won the World Smart City Award with the investment made in the smart cities component, in terms of sharing data from smart technologies, including the Internet of Things (IOT) and Information Technologies (IT) to improve service efficiency, minimize the emission of polluting gases, and improve its citizens' quality of life.
-In 2020, Lisbon was awarded the 2020 European Green Capital award, as the result of an assessment conducted by a group of international experts on sustainability in the city. This
+- In 2018, Lisbon won the European Mobility Week, for larger municipalities, with the program presented at the European Mobility Week, with emphasis on promoting the use of bicycles in the city in several initiatives, with the opening of new bike sharing stations, of new, expanded bike lanes, and 800 new bike parking spaces, accompanied by an effective communications campaign.
+- In 2020, Lisbon won the World Smart City Award with the investment made in the smart cities component, in terms of sharing data from smart technologies, including the Internet of Things (IOT) and Information Technologies (IT) to improve service efficiency, minimize the emission of polluting gases, and improve its citizens' quality of life.
+- In 2020, Lisbon was awarded the 2020 European Green Capital award, as the result of an assessment conducted by a group of international experts on sustainability in the city. This award acknowledges the work that Lisbon has been developing over the last few decades towards a greener, people-friendly city, namely by monitoring the following indicators: Climate Change Mitigation, Climate Change Adaptation, Sustainable Urban Mobility, Sustainable Land Use, Nature and Biodiversity, Air Quality, Noise, Waste, Water, Green Growth and Eco-Innovation, Energy Performance, and Governance. It was the first time that a Southern European capital received this distinction.
 
 Contrato Climático Cidade de Lisboa 2030 | Lisbon Climate City Contract 2030
 Version n.3 – March 2024
@@ -910,18 +908,18 @@ NET
 ZERO
 CITIES
 
-award acknowledges the work that Lisbon has been developing over the last few decades towards a greener, people-friendly city, namely by monitoring the following indicators: Climate Change Mitigation, Climate Change Adaptation, Sustainable Urban Mobility, Sustainable Land Use, Nature and Biodiversity, Air Quality, Noise, Waste, Water, Green Growth and Eco-Innovation, Energy Performance, and Governance. It was the first time that a Southern European capital received this distinction.
 
-In 2022, Lisbon was internationally distinguished for its commitment to climate neutrality through the Covenant City in the Spotlight Awards (4th edition), in the Large Municipalities category. This award was established by the Covenant of Mayors for Climate and Energy — Europe, and it was awarded to Lisbon in recognition of the city's commitment, motivation and progress towards climate neutrality.
+
+- In 2022, Lisbon was internationally distinguished for its commitment to climate neutrality through the Covenant City in the Spotlight Awards (4th edition), in the Large Municipalities category. This award was established by the Covenant of Mayors for Climate and Energy — Europe, and it was awarded to Lisbon in recognition of the city's commitment, motivation and progress towards climate neutrality.
 
 # A city desired and idealized in the field of climate action
 
 Lisbon takes a clear position in what regards responding to Climate Change:
 
-it is actively engaged and committed to the future;
-it has the ambition of being a European reference city by 2030;
-it intends to benefit from the visibility and prestige that comes from participating in "Climate-Neutral and Smart Cities by 2030," which leverages the attraction of new investments and talents;
-it accepts the challenge of the Cities Mission, anticipating the ambition of achieving climate neutrality by 2030.
+- it is actively engaged and committed to the future;
+- it has the ambition of being a European reference city by 2030;
+- it intends to benefit from the visibility and prestige that comes from participating in "Climate-Neutral and Smart Cities by 2030," which leverages the attraction of new investments and talents;
+- it accepts the challenge of the Cities Mission, anticipating the ambition of achieving climate neutrality by 2030.
 
 Thus, the Municipality of Lisbon has been asserting itself as a greener and bluer city, of and for the people, which prioritizes climate action by accelerating the energy transition and the climate resilience of both natural and built systems.
 
@@ -1540,23 +1538,23 @@ NET ZERO CITIES
 
 The barriers that the city of Lisbon will face in achieving climate neutrality by 2030 are expected to be related to the following:
 
-Needs in terms of Human Resources;
-Lack of experience in combining funding sources (including public and private);
-Difficulties in involving the private financial sector;
-Difficulties in developing projects, due to procedural and financing difficulties;
-Collaboration issues between Departments, due to the existence of "silos" that must be overcome and each Department's priorities;
-Alignment between local needs (city), and funding for European and National programmes;
-Unpredictability of climate challenges and direct benefits in the short term (medium and long term vision);
-Prioritization of investment and actions;
-Regulatory and legal constraints;
-Lack of financing instruments dedicated to climate neutrality aimed at different recipients, without additional investment;
-Lack of financing policies to accelerate climate neutrality;
-Legal impositions;
-Fragmented responsibilities;
-Public procurement constraints;
-Lack of compatible information, and of centralized smart management systems;
-Lack of compatible platforms;
-Inconsistency between various types of projections, namely of GHG emissions, demographic, macroeconomic, and local climate scenario projections.
+- Needs in terms of Human Resources;
+- Lack of experience in combining funding sources (including public and private);
+- Difficulties in involving the private financial sector;
+- Difficulties in developing projects, due to procedural and financing difficulties;
+- Collaboration issues between Departments, due to the existence of "silos" that must be overcome and each Department's priorities;
+- Alignment between local needs (city), and funding for European and National programmes;
+- Unpredictability of climate challenges and direct benefits in the short term (medium and long term vision);
+- Prioritization of investment and actions;
+- Regulatory and legal constraints;
+- Lack of financing instruments dedicated to climate neutrality aimed at different recipients, without additional investment;
+- Lack of financing policies to accelerate climate neutrality;
+- Legal impositions;
+- Fragmented responsibilities;
+- Public procurement constraints;
+- Lack of compatible information, and of centralized smart management systems;
+- Lack of compatible platforms;
+- Inconsistency between various types of projections, namely of GHG emissions, demographic, macroeconomic, and local climate scenario projections.
 
 As an opportunity, it is worth highlighting the status achieved by all cities participating in this Cities Mission, which requires that each city makes a joint effort to overcome barriers and obstacles, while enabling the opportunity for pursuing the ambition of global climate neutrality.
 
@@ -1584,24 +1582,24 @@ As mentioned earlier, the participation model integrates different levels—loca
 
 ## Local Level:
 
-238 Commitments from Municipal Organic Units
-5 Municipal Businesses: Joint responsibility and commitments for shared management
-12 Organizations with municipal participation: Joint responsibility and commitments
-24 Parish Councils
-Citizens' Council
-Volunteer Bank for the City of Lisbon
-Other initiatives (Municipal Councils for Housing, Interculturality and Citizenship, Inclusion of Persons with Disabilities, Municipal Plan for Gender Equality, and Social Network of Lisbon)
+- 238 Commitments from Municipal Organic Units
+- 5 Municipal Businesses: Joint responsibility and commitments for shared management
+- 12 Organizations with municipal participation: Joint responsibility and commitments
+- 24 Parish Councils
+- Citizens' Council
+- Volunteer Bank for the City of Lisbon
+- Other initiatives (Municipal Councils for Housing, Interculturality and Citizenship, Inclusion of Persons with Disabilities, Municipal Plan for Gender Equality, and Social Network of Lisbon)
 
 ## National Level:
 
-260 Businesses and organizations
-Climate Action Protocols
+- 260 Businesses and organizations
+- Climate Action Protocols
 
 ## International Level:
 
-Twinning Agreements
-Cooperation and/or Friendship Agreements
-International Organizations
+- Twinning Agreements
+- Cooperation and/or Friendship Agreements
+- International Organizations
 
 ## AP4 Part B — Pathways to Climate Neutrality by 2030
 
@@ -2249,7 +2247,7 @@ Each time the Climate City Contract is reviewed, a status assessment will be car
 
 When reviewing and monitoring the plan, it is expected that follow-up and adjustment will be carried out on:
 
-the implementation of measures and respective actions;
+- the implementation of measures and respective actions;
 
 Contrato Climático Cidade de Lisboa 2030 | Lisbon Climate City Contract 2030
 
@@ -2261,10 +2259,10 @@ NET
 ZERO
 CITIES
 
-mitigation (GHG reduction), climate adaptation and sectoral targets (directly applicable), including reviewing the respective monitoring indicators and their deviations from what was defined;
-the costs of co-benefits associated with the various measures, namely in terms of reducing emissions, direct impact on climate adaptation, in terms of environment and public health (of humans and animals), of social, cultural, and economic inclusion, of resource efficiency, biodiversity and ecosystems;
-the involvement and commitments made;
-investment execution.
+- mitigation (GHG reduction), climate adaptation and sectoral targets (directly applicable), including reviewing the respective monitoring indicators and their deviations from what was defined;
+- the costs of co-benefits associated with the various measures, namely in terms of reducing emissions, direct impact on climate adaptation, in terms of environment and public health (of humans and animals), of social, cultural, and economic inclusion, of resource efficiency, biodiversity and ecosystems;
+- the involvement and commitments made;
+- investment execution.
 
 In terms of monitoring climate action, Lisbon periodically reports data related to climate mitigation and adaptation through the Sustainable Energy Action Plans (SECAP) reports, within the scope of the Covenant of Mayors and of the Carbon Disclosure Project (CDP Cities) platform, with special emphasis on the latter. Through this common reporting system, involving more than 850 cities, recorded information is shared between different international networks: Carbon Disclosure Project, ICLEI — Local Governments for Sustainability, C40 Cities, Global Covenant of Mayors and, more recently, the NetZeroCities.
 
@@ -2274,10 +2272,10 @@ As far as adaptation is concerned, monitoring variables in climate change scenar
 
 The following climate monitoring tools are worth highlighting:
 
-The Lisbon Smart Management Platform (PGIL), developed under the Sharing Cities project, to monitor environmental parameters in real time, in the city of Lisbon, relating to meteorology, air quality, noise and traffic counts, based on a network of 80 environmental stations and more than 650 sensors, mostly installed on public lighting posts. This monitoring began in 2020;
-Cataloguing flood data caused by precipitation and by direct tidal effects, a real-time monitoring platform for the city of Lisbon, with meteorological and tidal parameters, with the potential to model the city by using the capabilities offered by Geographic Information Systems (GISs);
-AML Climate, a meteorological monitoring and warning network developed across the Lisbon Metropolitan Area;
-Lisbon Observatories | Know to Reduce.
+- The Lisbon Smart Management Platform (PGIL), developed under the Sharing Cities project, to monitor environmental parameters in real time, in the city of Lisbon, relating to meteorology, air quality, noise and traffic counts, based on a network of 80 environmental stations and more than 650 sensors, mostly installed on public lighting posts. This monitoring began in 2020;
+- Cataloguing flood data caused by precipitation and by direct tidal effects, a real-time monitoring platform for the city of Lisbon, with meteorological and tidal parameters, with the potential to model the city by using the capabilities offered by Geographic Information Systems (GISs);
+- AML Climate, a meteorological monitoring and warning network developed across the Lisbon Metropolitan Area;
+- Lisbon Observatories | Know to Reduce.
 
 Monitoring the city's climate action also includes the involvement and monitoring of effective mobilization by the main agents and key actors in society. Within the scope of the Lisbon 2030 Commitment, a follow-up and monitoring programme is being developed for initiatives
 
@@ -2653,10 +2651,10 @@ The need for compatibility between information sources, platforms and indicators
 
 The next steps also envisage:
 
-Reinforcing the project team, representative of the Lisbon City Council universe, with the participation of key players from the city's different areas of intervention;
-reinforcing the commitments signed with and for the city, both internal and external to the municipality, based on what has been proposed in this Lisbon Climate City Contract 2030. Such reinforcement requires reviewing goals, measures, investment, as well as the partners involved;
-promoting participation with the development of a robust communication plan focused on the Climate Contract;
-monitoring the Lisbon Climate City Contract 2030 with evaluation and performance indicators.
+- Reinforcing the project team, representative of the Lisbon City Council universe, with the participation of key players from the city's different areas of intervention;
+- reinforcing the commitments signed with and for the city, both internal and external to the municipality, based on what has been proposed in this Lisbon Climate City Contract 2030. Such reinforcement requires reviewing goals, measures, investment, as well as the partners involved;
+- promoting participation with the development of a robust communication plan focused on the Climate Contract;
+- monitoring the Lisbon Climate City Contract 2030 with evaluation and performance indicators.
 
 As an experimentation and innovation centre for global climate action, Lisbon will continue the integrated, coordinated and timely implementation of various structural measures and actions throughout the city, and will reinforce investment (both own and external) in the city's adaptation to
 
@@ -2760,10 +2758,10 @@ Para alcançar a neutralidade climática é necessário igualar o total de emiss
 
 A visão para transição climática de Lisboa, assenta nas seguintes metas e objetivos:
 
-Reduzir as emissões de GEE em 80%, face a 2002, antecipando a neutralidade climática até 2030;
-Adaptar a cidade a eventos climáticos extremos, aumentando a sua resiliência aos riscos climáticos (atuais e futuros) e a sua capacidade de resposta;
-Garantir uma transição justa e inclusiva, combatendo as desigualdades e atenuando a pobreza energética;
-Valorizar a participação na "Missão 100 cidades com impacto neutro no clima até 2030", como estratégia potenciadora de atração de novos investimentos e talentos.
+- Reduzir as emissões de GEE em 80%, face a 2002, antecipando a neutralidade climática até 2030;
+- Adaptar a cidade a eventos climáticos extremos, aumentando a sua resiliência aos riscos climáticos (atuais e futuros) e a sua capacidade de resposta;
+- Garantir uma transição justa e inclusiva, combatendo as desigualdades e atenuando a pobreza energética;
+- Valorizar a participação na "Missão 100 cidades com impacto neutro no clima até 2030", como estratégia potenciadora de atração de novos investimentos e talentos.
 
 Para alcançar este desígnio, Lisboa deverá fomentar parcerias facilitadoras de compromissos e da responsabilidade partilhada para a transição climática, envolvendo ativamente entidades públicas e privadas, centros de investigação, ONG's, os cidadãos e toda a comunidade. E é neste contexto que a Plataforma Lisboa Sustentável (Compromisso Verde Lisboa) tem um papel fundamental.
 
@@ -2870,10 +2868,10 @@ To achieve neutrality climate change it is necessary to equalize the total GHG e
 
 Lisbon's climate transition vision is based on the following goals and objectives:
 
-Reduce GHG emissions by 80%, compared to 2002, bringing forward climate neutrality by 2030;
-Adapt the city to extreme climate events, increasing its resilience to climate risks (current and future) and its capacity to respond;
-Ensure a fair and inclusive transition, combating inequalities and alleviating energy poverty;
-Value participation in the “Mission 100 cities with a neutral impact on the climate by 2030”, as a strategy to attract new investments and talents.
+- Reduce GHG emissions by 80%, compared to 2002, bringing forward climate neutrality by 2030;
+- Adapt the city to extreme climate events, increasing its resilience to climate risks (current and future) and its capacity to respond;
+- Ensure a fair and inclusive transition, combating inequalities and alleviating energy poverty;
+- Value participation in the “Mission 100 cities with a neutral impact on the climate by 2030”, as a strategy to attract new investments and talents.
 
 To achieve this goal, Lisbon must foster partnerships that facilitate commitments and shared responsibility for the climate transition, actively involving public and private entities, research centers, NGOs, citizens and the entire community. And it is in this context that the Sustainable Lisbon Platform (Lisbon Green Commitment) plays a fundamental role.
 

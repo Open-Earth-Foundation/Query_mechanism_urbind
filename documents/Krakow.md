@@ -25,26 +25,26 @@ The content of this document reflects the author's point of view only. The Europ
 
 # Table of contents
 
-Disclaimer ... 3
-Table of contents ... 3
-Summary ... 4
-List of illustrations ... 5
-Table of tables ... 5
-Abbreviations and acronyms ... 6
-Introduction ... 8
-Part A - Current status of climate action ... 21
-Module A-1 Baseline greenhouse gas emissions inventory ... 21
-Module A-2 Evaluation of current strategies, policies and strategic management instruments 29
-Module A-3 Systemic barriers and opportunities for achieving climate neutrality in 2030 ... 61
-Part B - Pathways to achieve climate neutrality by 2030 ... 79
-Module B-1 Climate neutrality scenarios and impact pathways ... 79
-Module B-2 Designing a climate neutral portfolio ... 88
-Module B-3 Monitoring, evaluation and learning indicators ... 173
-Part C - Enabling climate neutrality by 2030 ... 187
-Module C-1 Innovation interventions in organisation and management ... 187
-Module C-2 Social innovation interventions ... 201
-Prospects and next steps ... 204
-Annexes ... 206
+- Disclaimer ... 3
+- Table of contents ... 3
+- Summary ... 4
+- List of illustrations ... 5
+- Table of tables ... 5
+- Abbreviations and acronyms ... 6
+- Introduction ... 8
+- Part A - Current status of climate action ... 21
+- Module A-1 Baseline greenhouse gas emissions inventory ... 21
+- Module A-2 Evaluation of current strategies, policies and strategic management instruments 29
+- Module A-3 Systemic barriers and opportunities for achieving climate neutrality in 2030 ... 61
+- Part B - Pathways to achieve climate neutrality by 2030 ... 79
+- Module B-1 Climate neutrality scenarios and impact pathways ... 79
+- Module B-2 Designing a climate neutral portfolio ... 88
+- Module B-3 Monitoring, evaluation and learning indicators ... 173
+- Part C - Enabling climate neutrality by 2030 ... 187
+- Module C-1 Innovation interventions in organisation and management ... 187
+- Module C-2 Social innovation interventions ... 201
+- Prospects and next steps ... 204
+- Annexes ... 206
 Kraków
 
 Roadmap for climate neutrality by 2030
@@ -63,14 +63,14 @@ The target adopted in the Climate Contract for Krakow is to reduce greenhouse ga
 
 However, the calculations of the Economic Model indicate that the total financial, direct and indirect benefits (reduced energy expenditure, health care, additional jobs, etc.) outweigh the costs of the transition. Emission reductions will overwhelmingly result from the implementation of national strategies, implemented by private actors: energy companies, businesses and building owners and managers. Eight key types of action on the road to climate neutrality:
 
-Decarbonisation of the district heating system;
-The development of citizen energy communities;
-Renovation of municipal public buildings;
-Modernisation of road and square lighting;
-The construction of the metro and the development of rail transport;
-Renovation of residential buildings and development sites;
-Increasing resilience to the effects of climate change;
-Involving citizens, entrepreneurs in city management.
+- Decarbonisation of the district heating system;
+- The development of citizen energy communities;
+- Renovation of municipal public buildings;
+- Modernisation of road and square lighting;
+- The construction of the metro and the development of rail transport;
+- Renovation of residential buildings and development sites;
+- Increasing resilience to the effects of climate change;
+- Involving citizens, entrepreneurs in city management.
 
 The document shows what needs to be done to achieve climate neutrality for the city, while recognising the scale and complexity of the challenge and the difficulties that implementation may encounter.
 Kraków
@@ -228,11 +228,11 @@ In order to achieve zero emissions for all buildings in the city, it is necessar
 
 In 2021, Krakow's first citizen assembly, the Krakow Climate Assembly, was held to discuss climate change and the city's climate neutrality. It was attended by a group of citizens, representative of the whole city in terms of socio-demographic and spatial characteristics: gender, age group, district of residence and education level. The aim of the Climate Assembly was:
 
-increasing the focus of public awareness discussions around the climate crisis;
-to build a climate transition supportive community of: residents, experts, community organisations and businesses;
-gathering a pool of ideas on energy efficiency and the use of renewable energy;
-to obtain recommendations for joint action by the city and residents;
-gaining broad acceptance for the city's transformation efforts.
+- increasing the focus of public awareness discussions around the climate crisis;
+- to build a climate transition supportive community of: residents, experts, community organisations and businesses;
+- gathering a pool of ideas on energy efficiency and the use of renewable energy;
+- to obtain recommendations for joint action by the city and residents;
+- gaining broad acceptance for the city's transformation efforts.
 
 The Krakow Climate Assembly was a success. The result of its work was the development 32 high quality recommendations which, according to the adopted assumptions, are binding for the Mayor of the City of Krakow.
 
@@ -255,14 +255,14 @@ The procedure for the conduct of public consultations in the Municipality of Kra
 
 An abbreviated description of this procedure is as follows:
 
-Initiation of consultations: Consultations can be initiated by the Mayor of the City of Krakow, the City Council, and various institutions, groups of residents, and NGOs.
-Requesting consultations: Persons or institutions interested in carrying out consultations shall submit an appropriate request to the Mayor, including a description of the subject of the consultation, a proposal for the form, a justification and possible annexes.
-Publicity of the consultation: The consultation is publicly announced and the nature of its conduct in a transparent manner takes into account the various forms of dialogue with residents and NGOs.
-Communicating the consultation: Information about the consultation is widely disseminated through various communication channels such as websites, notice boards and posters.
-Provision of information material: The organisational cell responsible for the consultation shall provide access to documents and factual information relating to the consultation.
-Duration of consultations: Consultations shall last at least 21 days and should be carried out at times convenient for residents and NGOs (e.g. the last five days of the consultation shall not take place on public holidays).
-Evaluation of the consultation: At the end of the consultation, the Mayor prepares a report containing the opinions and comments collected, which is made public and forwarded to the City Council.
-Introduction of changes: The resolution introduces procedures for bylaws for the introduction of amendments resulting from public consultations with both residents and NGOs.
+- Initiation of consultations: Consultations can be initiated by the Mayor of the City of Krakow, the City Council, and various institutions, groups of residents, and NGOs.
+- Requesting consultations: Persons or institutions interested in carrying out consultations shall submit an appropriate request to the Mayor, including a description of the subject of the consultation, a proposal for the form, a justification and possible annexes.
+- Publicity of the consultation: The consultation is publicly announced and the nature of its conduct in a transparent manner takes into account the various forms of dialogue with residents and NGOs.
+- Communicating the consultation: Information about the consultation is widely disseminated through various communication channels such as websites, notice boards and posters.
+- Provision of information material: The organisational cell responsible for the consultation shall provide access to documents and factual information relating to the consultation.
+- Duration of consultations: Consultations shall last at least 21 days and should be carried out at times convenient for residents and NGOs (e.g. the last five days of the consultation shall not take place on public holidays).
+- Evaluation of the consultation: At the end of the consultation, the Mayor prepares a report containing the opinions and comments collected, which is made public and forwarded to the City Council.
+- Introduction of changes: The resolution introduces procedures for bylaws for the introduction of amendments resulting from public consultations with both residents and NGOs.
 
 This brief characterisation shows that the process of public consultation in the Municipality of Krakow is based on transparency, openness to dialogue and the active involvement of residents and NGOs.
 
@@ -287,18 +287,18 @@ The initiative aimed at Krakow's business sector is in line with the city's stra
 
 To date, the following have signed up to the Climate Pact:
 
-ASTOR.
-AstraZeneca.
-BP.
-BWI Group.
-CANAL+.
-CH2M Poland Services.
-Columbus Energy.
-InPost.
-Jacobs.
-Lewiatan Confederation.
-Kraków Technology Park.
-Regional Expert Centre Southern Poland.
+- ASTOR.
+- AstraZeneca.
+- BP.
+- BWI Group.
+- CANAL+.
+- CH2M Poland Services.
+- Columbus Energy.
+- InPost.
+- Jacobs.
+- Lewiatan Confederation.
+- Kraków Technology Park.
+- Regional Expert Centre Southern Poland.
 
 2
 Kraków
@@ -307,10 +307,10 @@ Roadmap for climate neutrality by 2030
 
 O
 
-Shell.
-SIG.
-University of Economics.
-University of Agriculture.
+- Shell.
+- SIG.
+- University of Economics.
+- University of Agriculture.
 
 # Krakow at regional level
 
@@ -318,10 +318,10 @@ Krakow also expresses its ambitions by cooperating with higher-level bodies to a
 
 One of the aims of the project is to set up a network of climate and environmental advisors in 21 districts of Małopolska. The concept for the network was developed in cooperation with the districts during the technical assistance phase. The advisors are employed directly in the districts and cooperate with the Marshal's Office at regional level and with the municipalities (including the City of Kraków) at local level. The main task of the advisors is the effective implementation of the measures set out in the RPDKiE, including:
 
-implementation of activities in line with the LAPD;
-assisting municipalities in developing strategic energy and climate management documents and plans, and integrating these issues with other municipal plans and strategies;
-Supporting municipalities in applying for financing for RES installations, thermal modernisation of buildings, low-carbon construction, sustainable transport, energy reduction and adaptation to climate change;
-Apply for funding for climate change mitigation and adaptation measures at county level.
+- implementation of activities in line with the LAPD;
+- assisting municipalities in developing strategic energy and climate management documents and plans, and integrating these issues with other municipal plans and strategies;
+- Supporting municipalities in applying for financing for RES installations, thermal modernisation of buildings, low-carbon construction, sustainable transport, energy reduction and adaptation to climate change;
+- Apply for funding for climate change mitigation and adaptation measures at county level.
 
 In addition, Kraków is implementing remedial measures indicated for implementation in the Air Protection Programme for the Małopolskie Voivodeship, adopted by the Małopolskie Voivodeship Assembly on 20 November 2023. This programme is a binding act of local law and introduces remedial measures aimed at a gradual improvement of air quality in Małopolska, which is one of the one of the key elements of climate protection.
 
@@ -406,36 +406,36 @@ The unit responsible for the creation of the Climate Contract is the Department 
 
 As part of expert cooperation in the climate area, a special team called the Zero Emission Krakow Portfolio Advisory Team was established. These experts were presented with a preliminary version of the Climate Contract Action Plan for consultation, to which they introduced comments and suggestions and proposed some of the emission reduction measures in the Action Plan. The team consists of:
 
-Prof. Tomasz Bergier - AGH University of Science and Technology in Krakow;
-Anita Cieślicka - Energy Forum;
-Andrzej Guła - Krakow Smog Alarm;
-Włodzimierz Jakubas - SIG;
-Aleksandra Latocha - Trainer and facilitator;
-Justyna Linke - Hyperlocal;
-Monika Machowska - Kraków Technology Park;
-Grzegorz Majewski - Astor;
-Prof. Dr. Łukasz Mamica - Cracow University of Economics;
-Prof. Elżbieta Nachlik - Cracow University of Technology;
-Krzysztof Podgórski - MZP Lewiatan;
-D. Eng. arch. Kinga Racón Leja, Prof. PK - Cracow University of Technology;
-Agnieszka Rozwadowska - Columbus Energy;
-Katarzyna Stanislawiak - AstraZeneca;
+- Prof. Tomasz Bergier - AGH University of Science and Technology in Krakow;
+- Anita Cieślicka - Energy Forum;
+- Andrzej Guła - Krakow Smog Alarm;
+- Włodzimierz Jakubas - SIG;
+- Aleksandra Latocha - Trainer and facilitator;
+- Justyna Linke - Hyperlocal;
+- Monika Machowska - Kraków Technology Park;
+- Grzegorz Majewski - Astor;
+- Prof. Dr. Łukasz Mamica - Cracow University of Economics;
+- Prof. Elżbieta Nachlik - Cracow University of Technology;
+- Krzysztof Podgórski - MZP Lewiatan;
+- D. Eng. arch. Kinga Racón Leja, Prof. PK - Cracow University of Technology;
+- Agnieszka Rozwadowska - Columbus Energy;
+- Katarzyna Stanislawiak - AstraZeneca;
 Kraków
 
 Roadmap for climate neutrality by 2030
 
 O
 
-Agnieszka Sznyk - INNOWO;
-Prof. Barbara Worek - Jagiellonian University;
-Daniel Wrzoszczyk - Kraków Metropolia Association;
-Grzegorz Żebrowski - PGE Energia Ciepła.
+- Agnieszka Sznyk - INNOWO;
+- Prof. Barbara Worek - Jagiellonian University;
+- Daniel Wrzoszczyk - Kraków Metropolia Association;
+- Grzegorz Żebrowski - PGE Energia Ciepła.
 
 The work on the Contract was also assisted by a number of other external experts. A very strong substantive contribution was made by experts employed by NetZeroCities, in particular:
 
-Experts from the Technical University of Madrid, responsible for the preparation and development of the Economic Model, particularly Sean Murray and Julio Lumbreras.
-City Advisors consulting on progress, discussing difficult issues and problems, and organising training workshops for those responsible for the development of the Contract - Justyna Wieczorkiewicz-Molendo and Anna Sokolowska.
-Experts from the World Bank who provided numerous comments, amendments and advice affecting the readability of the Climate Contract, notably Marcel Ionescu-Heroiu, Ionut Tudor Maries, Codruta Nistor and Mariusz Krisztea.
+- Experts from the Technical University of Madrid, responsible for the preparation and development of the Economic Model, particularly Sean Murray and Julio Lumbreras.
+- City Advisors consulting on progress, discussing difficult issues and problems, and organising training workshops for those responsible for the development of the Contract - Justyna Wieczorkiewicz-Molendo and Anna Sokolowska.
+- Experts from the World Bank who provided numerous comments, amendments and advice affecting the readability of the Climate Contract, notably Marcel Ionescu-Heroiu, Ionut Tudor Maries, Codruta Nistor and Mariusz Krisztea.
 
 In addition, the work on the Contract was consulted with teams (transition teams) of other Polish cities participating in the mission - Łódź, Rzeszów, Warsaw and Wrocław. As part of this interaction/knowledge sharing, it was possible to develop a number of solutions taking into account nationwide specificities. It has also resulted in cooperation with authorities at national level, including individual ministries.
 
@@ -713,43 +713,43 @@ In the further development of the Climate Contract, the emission sectors will be
 The list of strategic management strategies, policies and instruments:
 
 Local:
-Development strategy for Krakow. This is where I want to live. Kraków 2030;
-Assumptions to the plan for supplying the Municipality of Krakow with heat, electricity and gas fuels for the years 2023-2038;
-Low Emission Management Plan for the Municipality of Krakow;
-Kraków Green Deal;
-City of Kraków Climate Change Adaptation Plan 2030;
-Environmental Protection Programme for the City of Krakow for 2020-2030;
-District Forestry Enhancement Programme of the City of Kraków for the period 2018 - 2040;
-Directions for the Development and Management of Green Areas in Krakow for 2019-2030;
-The Circular Strategy of the City of Krakow.
+- Development strategy for Krakow. This is where I want to live. Kraków 2030;
+- Assumptions to the plan for supplying the Municipality of Krakow with heat, electricity and gas fuels for the years 2023-2038;
+- Low Emission Management Plan for the Municipality of Krakow;
+- Kraków Green Deal;
+- City of Kraków Climate Change Adaptation Plan 2030;
+- Environmental Protection Programme for the City of Krakow for 2020-2030;
+- District Forestry Enhancement Programme of the City of Kraków for the period 2018 - 2040;
+- Directions for the Development and Management of Green Areas in Krakow for 2019-2030;
+- The Circular Strategy of the City of Krakow.
 
 Regional:
-Kraków Metropolis 2030 Strategy;
+- Kraków Metropolis 2030 Strategy;
 Kraków
 
 Roadmap for climate neutrality by 2030
 
 O
 
-Climate Strategy of the Krakow Metropolis 2024-2030;
-Sustainable mobility plan for Krakow Metropolis;
-Regional Climate and Energy Action Plan for the Małopolska Region;
-Air protection programme for the Małopolska voivodship.
+- Climate Strategy of the Krakow Metropolis 2024-2030;
+- Sustainable mobility plan for Krakow Metropolis;
+- Regional Climate and Energy Action Plan for the Małopolska Region;
+- Air protection programme for the Małopolska voivodship.
 
 National:
-Poland's Energy Policy until 2040;
-National Energy and Climate Plan 2021-2030;
-Long-term strategy for building renovation to 2050;
-Clean Air Programme;
-A strategy for district heating up to 2030 with an outlook to 2040.
+- Poland's Energy Policy until 2040;
+- National Energy and Climate Plan 2021-2030;
+- Long-term strategy for building renovation to 2050;
+- Clean Air Programme;
+- A strategy for district heating up to 2030 with an outlook to 2040.
 
 Union:
-European Green Deal;
-REPowerEU;
-Regulation (EU) 2020/852 of the European Parliament and of the Council of 18 June 2020 on establishing a framework to facilitate sustainable investment;
-Directive (EU) 2018/2001 of the European Parliament and of the Council of 11 December 2018 on the promotion of the use of energy from renewable sources (RED II Renewable Energy Directive);
-Directive of the European Parliament and of the Council on energy efficiency and amending Regulation (EU) 2023/955;
-Directive of the European Parliament and of the Council on the energy performance of buildings EPBD (recast) (COM(2021)0802 - C9-0469/2021 - 2021/0426(COD)).
+- European Green Deal;
+- REPowerEU;
+- Regulation (EU) 2020/852 of the European Parliament and of the Council of 18 June 2020 on establishing a framework to facilitate sustainable investment;
+- Directive (EU) 2018/2001 of the European Parliament and of the Council of 11 December 2018 on the promotion of the use of energy from renewable sources (RED II Renewable Energy Directive);
+- Directive of the European Parliament and of the Council on energy efficiency and amending Regulation (EU) 2023/955;
+- Directive of the European Parliament and of the Council on the energy performance of buildings EPBD (recast) (COM(2021)0802 - C9-0469/2021 - 2021/0426(COD)).
 
 Local
 
@@ -788,13 +788,13 @@ As part of the creation of this document, three different development scenarios 
 
 This scenario takes many assumptions from other already existing plans and strategies at national and EU level. The following changes are assumed in the planned future for Krakow:
 
-a slight decrease in population in the coming years, but a projected increase between 2040 and 2050;
-A gradual increase in the area of buildings complying with the highest energy standards;
-a decrease in the area of the building stock (excluding listed buildings) as a result of demolitions;
-planned thermo-modernisation of buildings in line with the Long Term Renewal Strategy (DSRB);
-Priority for thermomodernisation will be given to buildings with the highest thermal energy demand;
-new buildings within the range of the district heating network will be connected to it and those outside the range will use renewable energy sources;
-replacing light sources in street lighting with LED sources by 2048;
+- a slight decrease in population in the coming years, but a projected increase between 2040 and 2050;
+- A gradual increase in the area of buildings complying with the highest energy standards;
+- a decrease in the area of the building stock (excluding listed buildings) as a result of demolitions;
+- planned thermo-modernisation of buildings in line with the Long Term Renewal Strategy (DSRB);
+- Priority for thermomodernisation will be given to buildings with the highest thermal energy demand;
+- new buildings within the range of the district heating network will be connected to it and those outside the range will use renewable energy sources;
+- replacing light sources in street lighting with LED sources by 2048;
 2
 
 Kraków
@@ -803,12 +803,12 @@ Roadmap for climate neutrality by 2030
 
 O
 
-The development of electromobility will include the replacement of bus fleets and an increase in the proportion of electric vehicles;
-The increase in the number of LED luminaires will depend on the rate of growth of the building stock area;
-increasing the energy efficiency of equipment and technology in line with expertise;
-by 2050, electricity for buildings will come from renewable sources;
-European Energy Certificate Scheme (EECS-GoO) certificates are envisaged for electricity from 2050;
-Consideration of the potential for electricity from photovoltaic panels requires additional elaboration.
+- The development of electromobility will include the replacement of bus fleets and an increase in the proportion of electric vehicles;
+- The increase in the number of LED luminaires will depend on the rate of growth of the building stock area;
+- increasing the energy efficiency of equipment and technology in line with expertise;
+- by 2050, electricity for buildings will come from renewable sources;
+- European Energy Certificate Scheme (EECS-GoO) certificates are envisaged for electricity from 2050;
+- Consideration of the potential for electricity from photovoltaic panels requires additional elaboration.
 
 All these assumptions translate into the following forecast of changes in demand for energy carriers in the city area:
 
@@ -852,10 +852,10 @@ This document is the city's response to current environmental challenges. It con
 
 The Krakow Green Deal outlines actions that are supported in the city's 2022 budget and multi-year financial forecast. These actions are divided into the following areas:
 
-Buildings and Energy.
-Transport and Public Transport.
-Water Management.
-Natural Resources.
+- Buildings and Energy.
+- Transport and Public Transport.
+- Water Management.
+- Natural Resources.
 
 # City of Kraków Climate Change Adaptation Plan 2030
 
@@ -882,10 +882,10 @@ Significance: The task of the programme is to identify the necessary measures to
 
 Description: The programme sets out overarching objectives and priorities for environmental protection measures specific to individual environmental elements. In the area of climate protection, the programme addresses the following strategic objectives:
 
-the rational use and restoration of green and forest resources, ensuring their sustainability;
-Increasing the proportion of green areas in developed areas and creating development plans that take environmental aspects into account;
-improving the environmental awareness of Krakow's residents through environmental education and creating a positive image of environmental protection;
-protecting the air by maintaining and improving air quality, reducing energy consumption and increasing the use of renewable energy, and reducing greenhouse gas emissions.
+- the rational use and restoration of green and forest resources, ensuring their sustainability;
+- Increasing the proportion of green areas in developed areas and creating development plans that take environmental aspects into account;
+- improving the environmental awareness of Krakow's residents through environmental education and creating a positive image of environmental protection;
+- protecting the air by maintaining and improving air quality, reducing energy consumption and increasing the use of renewable energy, and reducing greenhouse gas emissions.
 
 The document focuses on a sustainable approach to environmental protection, covering areas from greening to rational energy use, with the aim of creating an environmentally friendly and sustainable urban space in Krakow.
 
@@ -906,10 +906,10 @@ Description: the District Programme for Increasing the Forest Cover of the City 
 
 The implementation of the programme is divided into four phases:
 
-Period 2018-2022: In the first stage, land was selected to be included in the programme for the period 2018-2040, and from this, the land on which the implementation of the programme will take place first (2018-2022) was selected, covering more than 459 ha of land. For the land to be afforested during this period, a detailed afforestation plan has been created of approximately 117 ha.
-Period 2023-2028: This phase is expected to lead to a significant increase in forest cover to around 6%. Afforestation work will continue on communal land and on those acquired by Krakow, including land that could not be included in the programme in period one.
-Period 2029-2034: A further increase in afforestation areas is planned, especially on private land as well as land acquired by the Municipality of Krakow.
-Period 2035-2040: the last phase assumes full implementation of the programme, achieving a forest cover of no less than 8%. Afforestation tasks will continue on land acquired by the Municipality of Krakow and may also include afforestation by private owners.
+- Period 2018-2022: In the first stage, land was selected to be included in the programme for the period 2018-2040, and from this, the land on which the implementation of the programme will take place first (2018-2022) was selected, covering more than 459 ha of land. For the land to be afforested during this period, a detailed afforestation plan has been created of approximately 117 ha.
+- Period 2023-2028: This phase is expected to lead to a significant increase in forest cover to around 6%. Afforestation work will continue on communal land and on those acquired by Krakow, including land that could not be included in the programme in period one.
+- Period 2029-2034: A further increase in afforestation areas is planned, especially on private land as well as land acquired by the Municipality of Krakow.
+- Period 2035-2040: the last phase assumes full implementation of the programme, achieving a forest cover of no less than 8%. Afforestation tasks will continue on land acquired by the Municipality of Krakow and may also include afforestation by private owners.
 
 The programme aims to increase the woodland areas in Krakow, which will contribute to improving the city's environment.
 
@@ -1036,31 +1036,31 @@ Description: The Regional Climate and Energy Action Plan for the Małopolska Reg
 
 The plan identifies the current level of greenhouse gas emissions and sets out priority courses of action. These are:
 
-reducing greenhouse gas emissions and increasing efficiency in the use of available resources;
-diversifying activities towards the promotion of low-carbon sources of energy generation;
-Increasing the share of RES installations in energy production between 2020 and 2030;
-low-carbon transformation of the region;
-exploiting synergies with other retrofit programmes to reduce energy consumption and emissions in the municipal sector and public buildings;
-improving the energy efficiency of existing buildings and developing a modern building sector that integrates technology with RES installations;
-the development of clean transport modes, including walking and cycling, electric scooters and electromobility;
-transforming the transport sector by building a modern transport system;
-reducing the production of waste and its deposition in the environment, using waste for energy purposes;
-Reducing demand for resources and energy by strengthening the circular economy;
-water efficiency, increased water retention and measures to prevent floods and droughts;
-Technological transformation in agriculture with adaptation to climate change;
-Adaptation of forests to climate change through afforestation of land and increased uptake of  $\mathrm{CO}_{2}$  by forests and protection of green spaces.
+- reducing greenhouse gas emissions and increasing efficiency in the use of available resources;
+- diversifying activities towards the promotion of low-carbon sources of energy generation;
+- Increasing the share of RES installations in energy production between 2020 and 2030;
+- low-carbon transformation of the region;
+- exploiting synergies with other retrofit programmes to reduce energy consumption and emissions in the municipal sector and public buildings;
+- improving the energy efficiency of existing buildings and developing a modern building sector that integrates technology with RES installations;
+- the development of clean transport modes, including walking and cycling, electric scooters and electromobility;
+- transforming the transport sector by building a modern transport system;
+- reducing the production of waste and its deposition in the environment, using waste for energy purposes;
+- Reducing demand for resources and energy by strengthening the circular economy;
+- water efficiency, increased water retention and measures to prevent floods and droughts;
+- Technological transformation in agriculture with adaptation to climate change;
+- Adaptation of forests to climate change through afforestation of land and increased uptake of  $\mathrm{CO}_{2}$  by forests and protection of green spaces.
 
 The plan is a regional response to the quantitative mitigation targets set by the European Union. It assumes:
 
-a reduction in greenhouse gas emissions of at least  $40\%$  (compared to 1990 levels), including for the non-ETS sectors (mainly transport, utilities and agriculture), as  $30\%$  compared to 2005 levels;
+- a reduction in greenhouse gas emissions of at least  $40\%$  (compared to 1990 levels), including for the non-ETS sectors (mainly transport, utilities and agriculture), as  $30\%$  compared to 2005 levels;
 Kraków
 
 Roadmap for climate neutrality by 2030
 
 O
 
-Increasing the share of energy from renewable sources to at least 32% of gross final energy consumption;
-achieving at least a 32.5% improvement in energy efficiency.
+- Increasing the share of energy from renewable sources to at least 32% of gross final energy consumption;
+- achieving at least a 32.5% improvement in energy efficiency.
 
 ## Air protection programme for the Małopolskie Voivodeship
 
@@ -1132,10 +1132,10 @@ issues, the draft PEP2040 also emphasises the importance of cyber security in th
 
 The main objectives of the NAPE for 2030 are:
 
-GHG emission reductions of 7% in non-ETS sectors compared to 2005.
-Achieve a share of renewable energy of 21-23% in gross final energy consumption, including a 14% share of RES in transport and an increase in the share of RES in heating and cooling.
-A 23% increase in energy efficiency compared to PRIMES2007 projections.
-Reduce the share of coal in electricity generation to 56-60%.
+- GHG emission reductions of 7% in non-ETS sectors compared to 2005.
+- Achieve a share of renewable energy of 21-23% in gross final energy consumption, including a 14% share of RES in transport and an increase in the share of RES in heating and cooling.
+- A 23% increase in energy efficiency compared to PRIMES2007 projections.
+- Reduce the share of coal in electricity generation to 56-60%.
 
 The document is currently being updated to accelerate the energy transition. Only a preliminary version is available (draft of 29.02.2024) containing only the WEM scenario, which is understood as the baseline scenario for the transformation under market-technical conditions, whose projections are realistic. In contrast, the WAM optimistic scenario remains in development. The most important changes in the context of achieving the mission objectives concern the energy system. The update of the plan assumes the use of 50.1 per cent of RES in electricity in gross final energy consumption and 32.1 per cent in heating and cooling. In addition, the update also forecasts an increase in the share of RES in the transport sector to 17.7% by 2030.
 
@@ -1143,11 +1143,11 @@ Linked to this document is the 'Development Plan for Meeting Current and Future 
 
 The plan sets out forecasts for the development of power grids across the country and forecasts for changes in the diversification of electricity generation. It analyses different scenarios for the development of the electricity system to identify investments that improve the reliability of energy supply. The plan includes:
 
-meeting targets for the share of energy from RES in final energy consumption;
-the construction of offshore wind farms in the Baltic Sea;
-building nuclear capacity;
-connection of new generation units;
-improving supply conditions, including minimising network congestion across the system.
+- meeting targets for the share of energy from RES in final energy consumption;
+- the construction of offshore wind farms in the Baltic Sea;
+- building nuclear capacity;
+- connection of new generation units;
+- improving supply conditions, including minimising network congestion across the system.
 
 The most important innovation is the construction of an HVDC line connecting the north and south of Poland, enabling the efficient transmission of energy. The aim of this investment is to enable the
 Kraków
@@ -1224,13 +1224,13 @@ The strategy for the district heating sector takes into account the need to guar
 
 **Description:** the European Green Deal is a strategic initiative of the European Union that was announced in December 2019. It aims to transform the European Union into a sustainable and climate-neutral economy by 2050, in order to combat climate change, protect the environment and promote economic growth and innovation. The European Green Deal covers a wide range of actions, including:
 
-reducing greenhouse gas emissions: Aims to achieve climate neutrality by 2050 by significantly reducing  $\mathrm{CO}_{2}$  and other greenhouse gas emissions;
-Industrial transformation: Supports industry towards sustainable production, including through investment in low-carbon and energy-efficient technologies;
-Sustainable mobility: Promotes public transport, electromobility and cycle- and pedestrian-friendly infrastructure to reduce emissions from the transport sector;
-building renovation: By investing in the thermal upgrading and energy efficiency of buildings, it aims to reduce emissions from the building sector;
-Sustainable agriculture: Focuses on environmentally sustainable agriculture and sustainable food production, reducing negative environmental impacts;
-protecting biodiversity: Encourages the protection and restoration of natural ecosystems and combats the challenges of biodiversity loss;
-renewable energy: Supports the development of renewable energy sources such as solar, wind, geothermal and hybrid energy to increase the share of clean energy in the total energy mix.
+- reducing greenhouse gas emissions: Aims to achieve climate neutrality by 2050 by significantly reducing  $\mathrm{CO}_{2}$  and other greenhouse gas emissions;
+- Industrial transformation: Supports industry towards sustainable production, including through investment in low-carbon and energy-efficient technologies;
+- Sustainable mobility: Promotes public transport, electromobility and cycle- and pedestrian-friendly infrastructure to reduce emissions from the transport sector;
+- building renovation: By investing in the thermal upgrading and energy efficiency of buildings, it aims to reduce emissions from the building sector;
+- Sustainable agriculture: Focuses on environmentally sustainable agriculture and sustainable food production, reducing negative environmental impacts;
+- protecting biodiversity: Encourages the protection and restoration of natural ecosystems and combats the challenges of biodiversity loss;
+- renewable energy: Supports the development of renewable energy sources such as solar, wind, geothermal and hybrid energy to increase the share of clean energy in the total energy mix.
 
 In addition, the 'Fit for 55' legislative package was announced in July 2021 to translate the EU's climate ambitions into concrete legislation. This is a set of suggested changes to climate, energy and transport legislation. It also introduces new legislation to bring EU law in line with its climate goals.
 Kraków
@@ -1247,13 +1247,13 @@ O
 
 **Description:** REPowerEU is the European Commission's plan to make Europe independent from Russian fossil fuels sooner than originally planned (by 2030). The plan was announced in July 2021 as part of the European Green Deal. It aims to accelerate the green transition by promoting sustainable energy sources and integrating energy markets in the European Union. REPowerEU includes a series of measures to rapidly reduce dependence on Russian fossil fuels and increase the resilience of the EU energy system. The main objectives of REPowerEU are:
 
-increasing the share of renewable energy sources in the EU energy mix;
-Introduce more ambitious targets for EU member states than those resulting from 'Fit For 55';
-improving the security of energy supply by increasing the flexibility and resilience of the energy system;
-Protecting consumers by ensuring safe, affordable and sustainable access to energy;
-introduction of new standards and energy requirements for buildings;
-supporting investment in energy infrastructure, including transmission networks and energy storage;
-Integration of EU energy markets to enhance competitiveness and security of supply.
+- increasing the share of renewable energy sources in the EU energy mix;
+- Introduce more ambitious targets for EU member states than those resulting from 'Fit For 55';
+- improving the security of energy supply by increasing the flexibility and resilience of the energy system;
+- Protecting consumers by ensuring safe, affordable and sustainable access to energy;
+- introduction of new standards and energy requirements for buildings;
+- supporting investment in energy infrastructure, including transmission networks and energy storage;
+- Integration of EU energy markets to enhance competitiveness and security of supply.
 
 ## Regulation (EU) 2020/852 of the European Parliament and of the Council of 18 June 2020 on establishing a framework to facilitate sustainable investment
 
@@ -1305,8 +1305,8 @@ O
 
 Article 26 of the Directive also gives a very important definition of an energy-efficient system. Such a system is understood as:
 
-until 31 December 2027, a system using at least 50% renewable energy, or at least 50% waste heat, or at least 75% heat from from cogeneration, or at least 50% a combination of such energy and heat;
-from 1 January 2028, a system using at least 50% renewable energy or at least 50% waste heat, at least 50% renewable energy and waste heat, at least 80% heat from high-efficiency cogeneration, or at least a combination of such heat injected into the grid, in which the share of renewable energy is at least 5% and the total share of renewable energy, waste heat or heat from high-efficiency cogeneration is at least 50%.
+- until 31 December 2027, a system using at least 50% renewable energy, or at least 50% waste heat, or at least 75% heat from from cogeneration, or at least 50% a combination of such energy and heat;
+- from 1 January 2028, a system using at least 50% renewable energy or at least 50% waste heat, at least 50% renewable energy and waste heat, at least 80% heat from high-efficiency cogeneration, or at least a combination of such heat injected into the grid, in which the share of renewable energy is at least 5% and the total share of renewable energy, waste heat or heat from high-efficiency cogeneration is at least 50%.
 
 Further changes to the definition are planned after the completion of the Mission 100 Climate Neutral and smart cities, from 1 January 2035.
 
@@ -2157,10 +2157,10 @@ Achieving climate neutrality for Krakow requires the involvement of all groups o
 
 Krakow engages with residents and stakeholders on the subject of pro-climate action through:
 
-direct meetings with representatives of Krakow's NGOs;
-implementation of citizens' assemblies;
-activities involving Kraków's businesses and universities;
-advisory and co-decision-making activities at the strategic level.
+- direct meetings with representatives of Krakow's NGOs;
+- implementation of citizens' assemblies;
+- activities involving Kraków's businesses and universities;
+- advisory and co-decision-making activities at the strategic level.
 
 # 1. Cooperation with Kraków's NGOs:
 
@@ -2197,9 +2197,9 @@ The Pact was established in 2022 to increase the involvement of businesses, publ
 
 The partners agree to take action to reduce global warming, to create climate strategies and to regularly inform the city of actions taken in line with the principles of the Pact. Assumptions of the Pact:
 
-Limiting global warming: A joint declaration of action to limit temperature increase below 2°C and preferably to 1.5°C;
-company climate strategies: Adhering companies commit to developing climate strategies within two years of joining the Pact;
-Annual reporting: the entities undertake to report annually on the status of implementation of their strategies to the Department of Municipal Affairs and Climate of the City of Krakow.
+- Limiting global warming: A joint declaration of action to limit temperature increase below 2°C and preferably to 1.5°C;
+- company climate strategies: Adhering companies commit to developing climate strategies within two years of joining the Pact;
+- Annual reporting: the entities undertake to report annually on the status of implementation of their strategies to the Department of Municipal Affairs and Climate of the City of Krakow.
 
 The Climate Pact is an expression of support for the City's efforts and active involvement in activities leading to climate neutrality. The initiative is also a platform for the exchange of experience between partners involved in pro-climate activities, the promotion of climate-friendly solutions and, ultimately, the reduction of greenhouse gas emissions. The inclusion of more partners shows that Krakow's climate transformation can and should be discussed and acted upon together.
 
@@ -5232,23 +5232,23 @@ The involvement of the parties was therefore considerable and, it seems, above s
 
 Krakow Climate Assembly pages (alphabetical order):
 
-AGH University of Science and Technology (Prof. Piotr Kleczkowski);
-Business Centre Club Małopolska Lodge;
-European Clean Air Centre;
-Extinction Rebellion;
-Krakow City of Startups Foundation;
-Open Plan Foundation;
-Scientific Circle of the Challenges of the Green Deal (Cracow University of Economics);
-Left Together;
-Youth Climate Strike;
-Polish Zero Waste Association;
-Cooperative "Krakow Social Power Plant";
-Housing Cooperative "Na Kozłowce";
-Better City Association;
-Poland 2050 Association;
-Faculty of Biology, Jagiellonian University (Dr Joanna Kajzer-Bonk);
-Earth Is Us (informal group);
-Union of Associations Polish Green Network.
+- AGH University of Science and Technology (Prof. Piotr Kleczkowski);
+- Business Centre Club Małopolska Lodge;
+- European Clean Air Centre;
+- Extinction Rebellion;
+- Krakow City of Startups Foundation;
+- Open Plan Foundation;
+- Scientific Circle of the Challenges of the Green Deal (Cracow University of Economics);
+- Left Together;
+- Youth Climate Strike;
+- Polish Zero Waste Association;
+- Cooperative "Krakow Social Power Plant";
+- Housing Cooperative "Na Kozłowce";
+- Better City Association;
+- Poland 2050 Association;
+- Faculty of Biology, Jagiellonian University (Dr Joanna Kajzer-Bonk);
+- Earth Is Us (informal group);
+- Union of Associations Polish Green Network.
 
 Despite the challenges of COVID-19, the Krakow Climate Assembly managed to run smoothly, including maintaining the correct structure of the Assembly. During the final vote on the recommendations, a group of not only 60 people from the core membership was present, but also several people from the from the reserve group.
 
@@ -5580,13 +5580,13 @@ Anna Sokolowska (City Advisor).
 # World Bank experts.
 
 ## On the part of the City of Kraków:
-Department of Utilities and Climate,
-Department of Strategy, Planning and Investment Monitoring,
-Air Quality Division,
-Urban Greening Authority,
-Representatives of the Zero Emission Krakow Portfolio Council,
-Representatives of the Advisory Panel of the "Zero Emission Krakow" Portfolio Board,
-Other representatives of Krakow City Hall departments, municipal organisational units and municipal companies of the Municipality of Krakow.
+- Department of Utilities and Climate,
+- Department of Strategy, Planning and Investment Monitoring,
+- Air Quality Division,
+- Urban Greening Authority,
+- Representatives of the Zero Emission Krakow Portfolio Council,
+- Representatives of the Advisory Panel of the "Zero Emission Krakow" Portfolio Board,
+- Other representatives of Krakow City Hall departments, municipal organisational units and municipal companies of the Municipality of Krakow.
 Kraków
 Commitments to climate neutrality
 by 2030
@@ -5598,14 +5598,14 @@ The content of this document reflects the views only of the author. The European
 
 # Table of contents
 
-Introduction ... 4
-Goal: Climate neutrality by 2030 ... 9
-Key strategic priorities and interventions ... 13
-Principles and process ... 16
-Signatories ... Błąd! Nie zdefiniowano zakładki.
-Contract signatures ... 21
+- Introduction ... 4
+- Goal: Climate neutrality by 2030 ... 9
+- Key strategic priorities and interventions ... 13
+- Principles and process ... 16
+- Signatories ... Błąd! Nie zdefiniowano zakładki.
+- Contract signatures ... 21
 
-Annex: Individual commitments of the signatories ... Błąd! Nie zdefiniowano zakładki.
+- Annex: Individual commitments of the signatories ... Błąd! Nie zdefiniowano zakładki.
 Kraków
 
 Commitments to climate neutrality by 2030
@@ -5624,11 +5624,11 @@ The current "Kraków Development Strategy. This is where I want to live. Kraków
 
 Krakow also aspires to be a smart city in a wide range of aspects of city functioning, including:
 
-**Environment**: Krakow optimises energy consumption, protects the climate, reduces emissions and manages resources sustainably using modern technologies.
-**Governance**: smart governance is about competence, public participation, transparency and high quality public services. It also includes integrated governance with the participation of all residents and cooperation between the public and private sectors.
-**Quality of life**: The city provides residents with a welcoming living environment, access to public services (including online), education, health care, care for seniors, modern infrastructure, safety, a rich cultural offer and urban greenery.
-**Mobility**: the city has an integrated and safe transport system, using information and communication technologies to create an efficient network of connections.
-**Economy**: The smart economy is based on modern services, industry and R&amp;D sectors, supports creative industries, demonstrates innovation, labour market flexibility and effective cooperation between science and business.
+- **Environment**: Krakow optimises energy consumption, protects the climate, reduces emissions and manages resources sustainably using modern technologies.
+- **Governance**: smart governance is about competence, public participation, transparency and high quality public services. It also includes integrated governance with the participation of all residents and cooperation between the public and private sectors.
+- **Quality of life**: The city provides residents with a welcoming living environment, access to public services (including online), education, health care, care for seniors, modern infrastructure, safety, a rich cultural offer and urban greenery.
+- **Mobility**: the city has an integrated and safe transport system, using information and communication technologies to create an efficient network of connections.
+- **Economy**: The smart economy is based on modern services, industry and R&amp;D sectors, supports creative industries, demonstrates innovation, labour market flexibility and effective cooperation between science and business.
 
 Kraków's vision and mission are focused on creating a sustainable, innovative and resident-friendly city, ready for the challenges of the future and able to adapt to change.
 

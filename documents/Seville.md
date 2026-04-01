@@ -16,74 +16,51 @@ Climate City Contract. Seville
 
 # Index
 
-Index ... 2
-Introduction ... 4
-
-## Seville's commitment to climate neutrality ... 7
-Introduction ... 7
-Climate neutrality target for 2030 ... 9
-Strategic priorities and interventions ... 15
-Road traffic ... 15
-Electricity consumption ... 18
-Consumption of miscellaneous fuels and waste ... 20
-Emissions offsets ... 22
-Strategic interventions ... 24
-Principles and process ... 28
-
-## Government of Spain's support for climate neutrality in Mission cities ... 36
-
-## Monitoring, updating and amending the Climate City Contract and its Annexes ... 37
-
-## Annex 1: Climate Neutrality Action Plan of the Seville ... 39
-Introduction ... 39
-Work process ... 41
-
-## PART A - CURRENT STATE OF CLIMATE ACTION ... 43
-MODULE A-1: Baseline greenhouse gas emissions inventory ... 43
-MODULE A-2: Evaluation of current policies and strategies ... 49
-MODULE A-3: Systemic barriers to climate neutrality by 2030 ... 61
-
-## PART B - PATHWAYS TO CLIMATE NEUTRALITY BY 2030 ... 68
-MODULE B-1: Climate Neutral Scenarios and Impact Pathways ... 68
-MODULE B-2: Portfolio of transformative actions ... 71
-MODULE B-3: Monitoring, evaluation and learning indicators ... 92
-Climate City Contract. Seville
-
-# PART C - ACHIEVING CLIMATE NEUTRALITY BY 2030
-7
-MODULE C-1: Organisational and governance innovation interventions 97
-MODULE C-2: Social and other innovation actions 102
-MODULE C-3: Equity portfolio financing (Economic Case) 108
-
-# PERSPECTIVES AND NEXT STEPS
-0
-
-## Annex 2: Climate Investment Plan For The City Of Seville
-5
-
-# PART A - CURRENT STATE OF CLIMATE INVESTMENT
-5
-MODULE A-1: Existing funding for climate action 115
-MODULE A-2: Strategic financial policy assessment 117
-MODULE A-3: Understanding the financial barriers to the proper allocation of capital 126
-
-# PART B - INVESTMENT PATHWAYS TOWARDS CLIMATE NEUTRALITY BY 2030
-8
-MODULE B-1: Cost scenarios towards climate neutrality 128
-MODULE B-2: Capital planning of the climate neutral portfolio 130
-MODULE B-3: Economic and financial indicators for monitoring, evaluation, and learning 131
-
-# PART C - CONDITIONS FOR CLIMATE NEUTRALITY IN 2030
-4
-MODULE C-1: Climate policies for raising and deploying capital 134
-MODULE C-2: Risk identification and mitigation 136
-MODULE C-3: Capacity building and stakeholder involvement 141
-
-# PERSPECTIVES AND NEXT STEPS
-4
-
-## Annex 3: Individual Signatory Commitments
-8
+- Index ... 2
+- Introduction ... 4
+- Seville's commitment to climate neutrality ... 7
+- Introduction ... 7
+- Climate neutrality target for 2030 ... 9
+- Strategic priorities and interventions ... 15
+- Road traffic ... 15
+- Electricity consumption ... 18
+- Consumption of miscellaneous fuels and waste ... 20
+- Emissions offsets ... 22
+- Strategic interventions ... 24
+- Principles and process ... 28
+- Government of Spain's support for climate neutrality in Mission cities ... 36
+- Monitoring, updating and amending the Climate City Contract and its Annexes ... 37
+- Annex 1: Climate Neutrality Action Plan of the Seville ... 39
+- Introduction ... 39
+- Work process ... 41
+- PART A - CURRENT STATE OF CLIMATE ACTION ... 43
+- MODULE A-1: Baseline greenhouse gas emissions inventory ... 43
+- MODULE A-2: Evaluation of current policies and strategies ... 49
+- MODULE A-3: Systemic barriers to climate neutrality by 2030 ... 61
+- PART B - PATHWAYS TO CLIMATE NEUTRALITY BY 2030 ... 68
+- MODULE B-1: Climate Neutral Scenarios and Impact Pathways ... 68
+- MODULE B-2: Portfolio of transformative actions ... 71
+- MODULE B-3: Monitoring, evaluation and learning indicators ... 92
+- PART C - ACHIEVING CLIMATE NEUTRALITY BY 2030 ... 97
+- MODULE C-1: Organisational and governance innovation interventions ... 97
+- MODULE C-2: Social and other innovation actions ... 102
+- MODULE C-3: Equity portfolio financing (Economic Case) ... 108
+- PERSPECTIVES AND NEXT STEPS ... 110
+- Annex 2: Climate Investment Plan For The City Of Seville ... 115
+- PART A - CURRENT STATE OF CLIMATE INVESTMENT ... 115
+- MODULE A-1: Existing funding for climate action ... 115
+- MODULE A-2: Strategic financial policy assessment ... 117
+- MODULE A-3: Understanding the financial barriers to the proper allocation of capital ... 126
+- PART B - INVESTMENT PATHWAYS TOWARDS CLIMATE NEUTRALITY BY 2030 ... 128
+- MODULE B-1: Cost scenarios towards climate neutrality ... 128
+- MODULE B-2: Capital planning of the climate neutral portfolio ... 130
+- MODULE B-3: Economic and financial indicators for monitoring, evaluation, and learning ... 131
+- PART C - CONDITIONS FOR CLIMATE NEUTRALITY IN 2030 ... 134
+- MODULE C-1: Climate policies for raising and deploying capital ... 134
+- MODULE C-2: Risk identification and mitigation ... 136
+- MODULE C-3: Capacity building and stakeholder involvement ... 141
+- PERSPECTIVES AND NEXT STEPS ... 144
+- Annex 3: Individual Signatory Commitments ... 148
 Climate City Contract. Seville
 
 # Introduction

@@ -201,7 +201,9 @@ export default function Home() {
   const [workspaceRailMode, setWorkspaceRailMode] =
     useState<WorkspaceRailMode>("controls");
   const [selectedCccCity, setSelectedCccCity] = useState<string | null>(null);
-  const [cccDocument, setCccDocument] = useState<CityMarkdownResponse | null>(null);
+  const [cccDocumentCache, setCccDocumentCache] = useState<
+    Record<string, CityMarkdownResponse>
+  >({});
   const [isLoadingCccDocument, setIsLoadingCccDocument] = useState(false);
   const [cccDocumentError, setCccDocumentError] = useState<string | null>(null);
   const [writerRailWidth, setWriterRailWidth] = useState(DEFAULT_WRITER_RAIL_WIDTH_PX);
@@ -260,6 +262,9 @@ export default function Home() {
     () => pickFirstAvailableCity(runContextCityNames, cities),
     [cities, runContextCityNames],
   );
+  const selectedCccCityKey = selectedCccCity
+    ? normalizeCitySelectionKey(selectedCccCity)
+    : "";
 
   const workspaceRailTitle =
     workspaceUsesDocumentRail && workspaceRailMode === "document"
@@ -579,11 +584,13 @@ export default function Home() {
     ) {
       return;
     }
-    if (
-      cccDocument &&
-      normalizeCitySelectionKey(cccDocument.city_name) ===
-        normalizeCitySelectionKey(selectedCccCity)
-    ) {
+
+    if (!selectedCccCityKey) {
+      return;
+    }
+    if (cccDocumentCache[selectedCccCityKey]) {
+      setIsLoadingCccDocument(false);
+      setCccDocumentError(null);
       return;
     }
 
@@ -597,7 +604,14 @@ export default function Home() {
         if (cancelled) {
           return;
         }
-        setCccDocument(payload);
+        const cacheKey = normalizeCitySelectionKey(payload.city_name);
+        if (!cacheKey) {
+          throw new Error("CCC markdown response did not include a valid city name.");
+        }
+        setCccDocumentCache((current) => ({
+          ...current,
+          [cacheKey]: payload,
+        }));
       })
       .catch((error) => {
         if (cancelled) {
@@ -606,7 +620,6 @@ export default function Home() {
         if (error instanceof DOMException && error.name === "AbortError") {
           return;
         }
-        setCccDocument(null);
         setCccDocumentError(
           error instanceof Error ? error.message : "Failed to load CCC markdown.",
         );
@@ -622,9 +635,10 @@ export default function Home() {
       controller.abort();
     };
   }, [
-    cccDocument,
+    cccDocumentCache,
     documentReady,
     selectedCccCity,
+    selectedCccCityKey,
     workspaceRailMode,
     workspaceUsesDocumentRail,
   ]);
@@ -849,13 +863,9 @@ export default function Home() {
     /api key|authentication|unauthorized|401|403/i.test(
       runStatus?.error?.message ?? "",
     );
-  const activeCccDocument =
-    cccDocument &&
-    selectedCccCity &&
-    normalizeCitySelectionKey(cccDocument.city_name) ===
-      normalizeCitySelectionKey(selectedCccCity)
-      ? cccDocument
-      : null;
+  const activeCccDocument = selectedCccCityKey
+    ? cccDocumentCache[selectedCccCityKey] ?? null
+    : null;
 
   return (
     <div className="min-h-screen bg-[radial-gradient(circle_at_20%_20%,#f8edd6_0%,#f2f6f6_45%,#eef2ff_100%)] px-4 py-8 md:px-8">

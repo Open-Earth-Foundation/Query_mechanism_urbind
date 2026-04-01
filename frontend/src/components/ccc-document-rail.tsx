@@ -2,7 +2,7 @@
 
 import { FileText, Loader2 } from "lucide-react";
 
-import { MarkdownWithReferences } from "@/components/markdown-with-references";
+import { CccMarkdownViewer } from "@/components/ccc-markdown-viewer";
 import { SearchableCityPicker } from "@/components/searchable-city-picker";
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -85,11 +85,9 @@ export function CccDocumentRail({
             <div className="p-4 text-sm text-red-600">{contentError}</div>
           ) : content ? (
             <article className="document-markdown document-markdown-rail p-4">
-              <MarkdownWithReferences
+              <CccMarkdownViewer
+                key={`${selectedCity ?? "ccc"}:${content.length}`}
                 content={content}
-                runId={null}
-                prefetchRunReferences={false}
-                hideImages
               />
             </article>
           ) : (
