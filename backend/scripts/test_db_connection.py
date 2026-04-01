@@ -18,7 +18,10 @@ from __future__ import annotations
 import argparse
 import logging
 
-import psycopg
+try:
+    import psycopg
+except ModuleNotFoundError:
+    psycopg = None
 
 from backend.services.db_client import normalize_database_url
 from backend.utils.config import get_database_url
@@ -39,6 +42,12 @@ def parse_args() -> argparse.Namespace:
 
 def check_connection(database_url: str) -> None:
     """Attempt to connect and run a simple query."""
+    if psycopg is None:
+        raise ModuleNotFoundError(
+            "psycopg is required to test PostgreSQL connectivity. Install project "
+            "dependencies with `uv sync --group dev`."
+        )
+
     normalized_url = normalize_database_url(database_url)
     logger.info("Testing database connection")
 

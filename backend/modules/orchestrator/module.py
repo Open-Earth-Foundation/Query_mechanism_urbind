@@ -7,7 +7,6 @@ from pathlib import Path
 from typing import Callable, Literal
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-import psycopg
 from agents.exceptions import MaxTurnsExceeded
 
 from backend.modules.markdown_researcher.agent import extract_markdown_excerpts
@@ -51,7 +50,11 @@ from backend.modules.vector_store.retriever import (
 )
 from backend.modules.writer.agent import write_markdown
 from backend.modules.writer.models import WriterOutput
-from backend.services.db_client import DbClient, get_db_client
+from backend.services.db_client import (
+    POSTGRES_DATABASE_ERRORS,
+    DbClient,
+    get_db_client,
+)
 from backend.services.run_logger import RunLogger
 from backend.services.schema_registry import load_schema
 from backend.utils.config import AppConfig, get_openrouter_api_key
@@ -60,6 +63,7 @@ from backend.utils.paths import RunPaths, build_run_id, create_run_paths
 from backend.utils.tokenization import count_tokens
 
 logger = logging.getLogger(__name__)
+CITY_LIST_FETCH_ERRORS = (sqlite3.OperationalError, OSError, *POSTGRES_DATABASE_ERRORS)
 
 
 def _dedupe_preserve_order(values: list[str]) -> list[str]:
@@ -402,7 +406,7 @@ def run_pipeline(
         db_client = get_db_client(config.source_db_path, config.source_db_url)
         try:
             city_names = fetch_city_list(db_client)
-        except (sqlite3.OperationalError, psycopg.DatabaseError, OSError) as e:
+        except CITY_LIST_FETCH_ERRORS as e:
             logger.warning("Failed to fetch city list: %s", e)
         write_json(paths.city_list, city_names)
         run_logger.record_artifact("city_list", paths.city_list)

@@ -1,8 +1,10 @@
 import sqlite3
+import tomllib
+from pathlib import Path
 
 import pytest
 
-from backend.services.db_client import SQLiteClient, get_db_client, is_select_query
+from backend.services.db_client import PostgresClient, SQLiteClient, get_db_client, is_select_query
 
 
 def test_is_select_query() -> None:
@@ -36,3 +38,19 @@ def test_get_db_client_prefers_sqlite(tmp_path) -> None:
     db_path.write_text("", encoding="utf-8")
     client = get_db_client(db_path, None)
     assert isinstance(client, SQLiteClient)
+
+
+def test_postgres_client_requires_psycopg(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setattr("backend.services.db_client.psycopg", None)
+    client = PostgresClient("postgresql://example")
+
+    with pytest.raises(ModuleNotFoundError, match="psycopg is required"):
+        client.connect()
+
+
+def test_pyproject_declares_psycopg_dependency() -> None:
+    pyproject_path = Path(__file__).resolve().parents[1] / "pyproject.toml"
+    pyproject = tomllib.loads(pyproject_path.read_text(encoding="utf-8"))
+    dependencies = pyproject["project"]["dependencies"]
+
+    assert any(dependency.startswith("psycopg[") for dependency in dependencies)

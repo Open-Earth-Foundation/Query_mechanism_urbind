@@ -4,16 +4,15 @@ import logging
 import sqlite3
 from typing import Callable
 
-import psycopg
-
 from backend.modules.sql_researcher.models import SqlQueryPlan
 from backend.modules.sql_researcher.services import execute_queries
-from backend.services.db_client import DbClient
+from backend.services.db_client import DbClient, POSTGRES_DATABASE_ERRORS
 from backend.services.run_logger import RunLogger
 from backend.utils.config import AppConfig
 from backend.utils.paths import RunPaths
 
 logger = logging.getLogger(__name__)
+CITY_LIST_QUERY_ERRORS = (sqlite3.OperationalError, ValueError, *POSTGRES_DATABASE_ERRORS)
 
 
 def fetch_city_list(db_client: DbClient, max_rows: int = 500) -> list[str]:
@@ -38,7 +37,7 @@ def fetch_city_list(db_client: DbClient, max_rows: int = 500) -> list[str]:
     for sql in queries:
         try:
             columns, rows = db_client.query(sql)
-        except (sqlite3.OperationalError, psycopg.DatabaseError, ValueError) as e:
+        except CITY_LIST_QUERY_ERRORS as e:
             logger.debug("City list query attempt failed: %s", e)
             continue
         if not columns or not rows:
