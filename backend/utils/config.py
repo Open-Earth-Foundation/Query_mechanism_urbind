@@ -108,7 +108,9 @@ class AppConfig(BaseModel):
     model_config = ConfigDict(arbitrary_types_allowed=True)
 
     orchestrator: OrchestratorConfig
-    sql_researcher: SqlResearcherConfig
+    sql_researcher: SqlResearcherConfig = Field(
+        default_factory=lambda: SqlResearcherConfig(model="openai/gpt-5.4-mini")
+    )
     markdown_researcher: MarkdownResearcherConfig
     writer: WriterConfig
     chat: ChatConfig = Field(
