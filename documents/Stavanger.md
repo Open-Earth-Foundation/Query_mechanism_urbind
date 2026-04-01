@@ -15,62 +15,57 @@ Climate Neutrality Action Plan
 
 # Table of Contents
 
-Table of Contents ... 3
-Summary ... 5
-List of figures ... 5
-List of tables ... 5
-Abbreviations and acronyms ... 5
-Introduction ... 7
-Target ... 11
-Part A – Current State of Climate Action ... 14
-Module A-1 Greenhouse Gas Emissions Baseline Inventory ... 14
-Greenhouse gas Inventory ... 14
-Forestry and other land use ... 16
-Emission inventory for Stavanger per emission sector ... 17
-Road Transport ... 17
-Waterborne Navigation ... 17
-Other mobile combustion ... 17
-Heating ... 17
-Aviation ... 18
-Waste and wastewater ... 18
-Energy supply and Waste incineration ... 18
-Industry, oil and gas ... 19
-Agriculture ... 19
-Baseline trajectory ... 19
-Stavanger Climate Budget ... 21
-Other Identified Measures ... 24
-CO₂ sequestration ... 25
-Emission gap and residual emissions ... 26
-Module A-2 Current Policies and Strategies Assessment ... 31
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality ... 48
-Part B – Pathways towards Climate Neutrality by 2030 ... 70
-Module B-1 Climate Neutrality Scenarios and Impact Pathways ... 70
-Description of impact pathways ... 76
-Energy systems ... 76
-Road Mobility &amp; transport ... 76
-Waste &amp; circular economy ... 78
-Built environment ... 80
-Agriculture ... 80
-City of Stavanger
-Climate Neutrality Action Plan
-4
-
-Waterborne Navigation ... 82
-Other impact sectors ... 84
-Module B-2 Climate Neutrality Portfolio Design ... 84
-B-2.2: Individual action outlines ... 88
-B-2.3 Summary strategy for residual emissions ... 110
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 118
-Part C – Enabling Climate Neutrality by 2030 ... 126
-Module C-1 Governance Innovation Interventions ... 126
-Module C-2 Social Innovation Interventions ... 128
-Outlook and next steps ... 142
-Annexes ... 143
-City of Stavanger
-
-Climate Neutrality Action Plan
-
-#
+- Summary
+- List of figures
+- List of tables
+- Abbreviations and acronyms
+- Introduction
+- Target
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Greenhouse gas Inventory
+- Forestry and other land use
+- Emission inventory for Stavanger per emission sector
+- Road Transport
+- Waterborne Navigation
+- Other mobile combustion
+- Heating
+- Aviation
+- Waste and wastewater
+- Energy supply and Waste incineration
+- Industry, oil and gas
+- Agriculture
+- Baseline trajectory
+- Stavanger Climate Budget
+- Other Identified Measures
+- CO₂ sequestration
+- Emission gap and residual emissions
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Description of impact pathways
+- Energy systems
+- Road Mobility &amp; transport
+- Waste &amp; circular economy
+- Built environment
+- Agriculture
+- City of Stavanger
+- Climate Neutrality Action Plan
+- Waterborne Navigation
+- Other impact sectors
+- Module B-2 Climate Neutrality Portfolio Design
+- B-2.2: Individual action outlines
+- B-2.3 Summary strategy for residual emissions
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- Module C-2 Social Innovation Interventions
+- Outlook and next steps
+- Annexes
+- City of Stavanger
+- Climate Neutrality Action Plan
+- #
 
 # Summary
 
@@ -3319,20 +3314,15 @@ Climate-Neutrality Commitments
 
 # Table of contents
 
-Table of contents ... 2
-Introduction ... 3
-Goal: Climate neutrality by 2030 ... 3
-Strategic priorities ... 5
-Process and principles ... 10
-Signatories Partners ... 12
-Signatories Supporters ... 13
-
-![img-15.jpeg](img-15.jpeg)
-City of Stavanger
-
-Climate-Neutrality Commitments
-
-3
+- Introduction
+- Goal: Climate neutrality by 2030
+- Strategic priorities
+- Process and principles
+- Signatories Partners
+- Signatories Supporters
+- ![img-15.jpeg](img-15.jpeg)
+- City of Stavanger
+- Climate-Neutrality Commitments
 
 # Introduction
 

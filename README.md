@@ -381,6 +381,7 @@ Core endpoints:
 - `GET /api/v1/runs/{run_id}/references` (canonical citation endpoint; supports optional query params `ref_id` and `include_quote`)
 - `GET /api/v1/runs/{run_id}/references/{ref_id}` (compatibility alias for one reference with quote payload)
 - `GET /api/v1/cities` (city names from markdown filenames in `MARKDOWN_DIR`, without `.md`)
+- `GET /api/v1/cities/{city_name}/markdown` (concatenated raw CCC markdown for one normalized city name, including contributing source paths)
 - `GET /api/v1/city-groups` (predefined city groups filtered to currently available markdown cities)
 - `GET /api/v1/chat/contexts` (catalog of completed run contexts with token counts)
 - `GET /api/v1/runs/{run_id}/chat/sessions`

@@ -17,49 +17,47 @@ Climate Neutrality Action Plan
 
 # Table of contents
 
-List of Figures ... 3
-Abbreviations and acronyms ... 3
-Introduction ... 4
-Citizen Engagement ... 4
-Renewable energy ... 5
-Transportation ... 5
-Waste ... 6
-Growth &amp; the Building Sector ... 6
-Other Scope 3 Emissions ... 7
-Tourism ... 7
-2030 Climate Neutrality Target ... 8
-Formal Procedures and Planning Frameworks ... 8
-The Role of this CCC and Connection with Current Climate Action Plan ... 8
-Part A – Current State of Climate Action ... 11
-Module A-1 Greenhouse Gas Emissions Baseline Inventory ... 11
-Module A-2 Current Policies and Strategies Assessment ... 16
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality ... 23
-A.3.1 Description of urban systems, systemic barriers, and opportunities ... 23
-A.3.2 Critical Stakeholders ... 26
-A.3.3 Crucial External Stakeholders: ... 29
-Part B – Pathways Towards Climate Neutrality by 2030 ... 30
-Module B-1 Climate Neutrality Scenarios and Impact Pathways ... 30
-B.1.1 Description of impact pathways ... 32
-B.1.2 Estimated reduction from current Reykjavik CAP ... 32
-B.1.3 Estimated impacts of CCC actions ... 34
-B.1.4 Direct impacts estimated from NZC Economic model ... 34
-B.1.5 Co-benefits and indirect impacts ... 35
-Module B-2 Climate Neutrality Portfolio Design ... 37
-Involvement of stakeholders and participants on new actions ... 40
-B.2.1 Summary Strategy for Residual Emissions ... 58
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 60
-Part C – Enabling Climate Neutrality by 2030 ... 66
-Module C-1 Governance Innovation Interventions ... 66
-C.1.1 Description of the governance model for climate neutrality ... 66
-Module C-2 Social Innovation Interventions ... 75
-C.2.1 General Overview and History of Participation in Reykjavík ... 75
-Outlook and Next Steps ... 79
-References ... 80
-City of Reykjavik
-
-Climate Neutrality Action Plan
-
-C
+- List of Figures
+- Abbreviations and acronyms
+- Introduction
+- Citizen Engagement
+- Renewable energy
+- Transportation
+- Waste
+- Growth &amp; the Building Sector
+- Other Scope 3 Emissions
+- Tourism
+- 2030 Climate Neutrality Target
+- Formal Procedures and Planning Frameworks
+- The Role of this CCC and Connection with Current Climate Action Plan
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- A.3.1 Description of urban systems, systemic barriers, and opportunities
+- A.3.2 Critical Stakeholders
+- A.3.3 Crucial External Stakeholders:
+- Part B – Pathways Towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- B.1.1 Description of impact pathways
+- B.1.2 Estimated reduction from current Reykjavik CAP
+- B.1.3 Estimated impacts of CCC actions
+- B.1.4 Direct impacts estimated from NZC Economic model
+- B.1.5 Co-benefits and indirect impacts
+- Module B-2 Climate Neutrality Portfolio Design
+- Involvement of stakeholders and participants on new actions
+- B.2.1 Summary Strategy for Residual Emissions
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- C.1.1 Description of the governance model for climate neutrality
+- Module C-2 Social Innovation Interventions
+- C.2.1 General Overview and History of Participation in Reykjavík
+- Outlook and Next Steps
+- References
+- City of Reykjavik
+- Climate Neutrality Action Plan
+- C
 
 # List of Figures
 
@@ -1931,16 +1929,15 @@ O
 
 # Table of Contents
 
-Table of Contents ... 2
-Introduction ... 3
-Goal: Climate Neutrality by 2030 ... 4
-Strategic Priorities ... 5
-Key Strategic Priorities: ... 5
-Process and Principles ... 5
-Signatories ... 7
-Contract with Signatures ... 8
-City of Reykjavik
-Climate-Neutrality Commitments
+- Introduction
+- Goal: Climate Neutrality by 2030
+- Strategic Priorities
+- Key Strategic Priorities:
+- Process and Principles
+- Signatories
+- Contract with Signatures
+- City of Reykjavik
+- Climate-Neutrality Commitments
 
 # 1 Introduction
 

@@ -9,15 +9,8 @@ EU MISSION PLATFORM | CLIMATE NEUTRAL AND SMART CITIES
 
 ![img-0.jpeg](img-0.jpeg)
 
-Ville de Differdange
-
 NetZeroCities has received funding from the H2020 Research and Innovation Programme under the grant agreement n°101036519.
-Ville de Differdange
-^{}[]
-Net Zero
-Déifférdange 2030
-^{}[]
-This document was written in close collaboration by
+This document was written in close collaboration by:
 
 City of Differdange
 EVERARD Consulting &amp; Communication
@@ -38,39 +31,27 @@ Steve Faltz
 Diego Fallah
 Max Felten
 
-2
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-C
-
 # Table of contents
 
-Summary ... 5
-Introduction ... 6
-Work process ... 9
-Part A – Current state of climate action ... 13
-Module A-1 Greenhouse Gas Emissions Baseline Inventory ... 13
-Module A-2 Current Policies and Strategies Assessment ... 18
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality ... 41
-Part B – Pathways towards Climate Neutrality by 2030 ... 51
-Module B-1 Climate Neutrality Scenarios and Impact Pathways ... 51
-Module B-2 Climate Neutrality Portfolio Design ... 130
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 397
-Part C – Enabling Climate Neutrality by 2030 ... 460
-Module C-1 Organisational and Governance Innovation Interventions ... 460
-Module C-2 Social and Other Innovation Interventions ... 474
-Module C-3 Financing of Action Portfolio ... 488
-Outlook and Next Steps ... 510
-Annexes ... 514
-Plan de financement détaillé: ... 514
-Ville de Differdange
-^{}[]
-Net Zero
-Déliferdang 2030
-^{}[]
-List of figures
-/
+- Summary
+- Introduction
+- Work process
+- Part A – Current state of climate action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Organisational and Governance Innovation Interventions
+- Module C-2 Social and Other Innovation Interventions
+- Module C-3 Financing of Action Portfolio
+- Outlook and Next Steps
+- Annexes
+- Plan de financement détaillé:
+
 # List of tables
 
 A-1.1: Final energy use by source sectors ... 13
@@ -92,12 +73,6 @@ Mobility systems ... 47
 City planning systems ... 48
 The indicators: ... 397
 Finance plan ... 488
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
 
 # 1 Summary
 
@@ -109,17 +84,11 @@ Preliminary estimates suggested that base emissions averaged 1,254,721 tons, mai
 
 Module B-1 provides a complete list of strategies to accomplish climate neutrality, shedding light on ways by which the emissions gap can be lessened. These strategies are expressed quantitatively in terms of the projected emissions impact of each action cluster and qualitatively through an articulation between interventions on a sequence from initial outcome to subsequent ones. These strategies compose basic action plan structure for Module B-2.
 
-At its core, the Action Plan is a 152-action portfolio designed to dismantle systemic barriers and spur activity in alignment with strategies outlined in Module B-1. This first group of actions is expected to cut emissions by approximately 150,000 tons and could drive even more reductions as additional assessments are carried out. While these fell short of full climate neutrality — which is still the goal for all Amazon operations worldwide by 2040 under The Climate Pledge, there remains more to do through even further expansion. The portfolio also features 152 projects around exploring how to do this at scale along with an array of work.
+At its core, the Action Plan is a 152-action portfolio designed to dismantle systemic barriers and spur activity in alignment with strategies outlined in Module B-1. This first group of actions is expected to cut emissions by approximately 150,000 tons and could drive even more reductions as additional assessments are carried out. While this first iteration still falls short of full climate neutrality, it establishes an implementation base that can be expanded in future updates. The portfolio also includes exploratory projects intended to show how these measures can be scaled over time.
 
 152 enabling actions that support the portfolio enable strategies to be implemented. Elaborated in Modules C-1 and 2; these actions are related, but aimed primarily at local collaboration within the city boundaries (institutional governance innovations) seeking to catalyze just transitions (social innovation), while internal municipal policy is identified as a critical entry point for them.
 
-The Action Plan will be implemented through a structured portfolio management process and refined overtime as we learn more from our work and the world around us. A biennial update of the Action Plan with monitor, record and detail progress.
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
+The Action Plan will be implemented through a structured portfolio management process and refined over time as we learn more from our work and the world around us. The Action Plan will be updated every two years to monitor, record and detail progress.
 
 # 2 Introduction
 
@@ -140,12 +109,6 @@ Additional information to be created or obtained for the CCC Action Plan that is
 This first version of the CCC Action Plan covers the following objectives:
 
 According to the request for expression of interest (EoI) submitted by the city of Differdange for the Mission of Cities, the city aims to achieve climate neutrality by 2030. This includes climate change adaptation, accessibility, healthcare and equity. To achieve this goal, Differdange plans to increase the use of renewable energy, promote sustainable mobility, improve the energy efficiency of buildings and reduce waste.
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
 
 The city works closely with private actors, including large industries, even though it has designated them as exclusion sectors. These actors will not be able to achieve climate neutrality by 2030, but they are an integral part of the process. Differdange plans to work closely with all participants and engage in international collaboration to overcome challenges beyond 2030. This underlines the importance of a fair transition that includes everyone.
 
@@ -168,20 +131,10 @@ The areas concerned mainly include forests, rich in carbon, stored in trees, soi
 The objective of the inventory is to measure emissions and removals from different carbon pools, including living biomass, dead wood, litter and soil organic matter. This inventory takes into account all greenhouse gases associated with the sector, including CO2, methane (CH4) and nitrous oxide (N2O). When the sector absorbs more CO2 than it emits, it is considered a carbon sink, thus generating negative emissions.
 
 Another point that could be integrated is the IPPU, the "Industrial processes and use of products". The term 'Industrial Processes and Product Use' refers to industrial activities and practices that produce greenhouse gases, as defined by the Intergovernmental Panel on Climate Change (IPCC). This
-Ville de Differdange
-Net Zero
-Delfferdange 2030
-8
 
 includes a variety of industrial processes such as the production of cement, lime, steel, adipic acid, nitric acid, aluminium, magnesium, as well as emissions of gases such as sulphur hexafluoride (SF6) from electrical equipment. It also includes emissions of perfluorocarbons (PFCs), hydrofluorocarbons (HFCs) and SF6 associated with the production of semiconductors and the use of substitutes for ozone-depleting substances.
 
 Despite the existence of recommendations, good practices for these processes, some activities such as the use of limestone and dolomite, the production of sodium carbonate, ammonia, carbide, as well as the manufacture of various chemicals and metals, are not yet regulated by specific guidelines. The IPCC recommends the application of the general principles of its recommendations to these processes not specifically covered.
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
 
 # 3 Work process
 
@@ -210,13 +163,6 @@ Representatives of the team also met twice with the municipality-syndicate Pro-S
 # Understanding the System
 
 This segment provides a summary of the methodologies applied across various modules in the current phase of the Climate Transition Map:
-Ville de Differdange
-
-Net Zero
-Déiffreding
-0
-
-C
 
 # Module A-1: Greenhouse Gas Emissions Baseline Inventory
 
@@ -238,14 +184,6 @@ Insights were obtained from dialogues with practitioners and experts during the 
 The initial step towards defining a pathway to climate neutrality involved mapping actions from existing plans, such as the Sustainable Urban Mobility Plan (SUMP), the Cities' Energy Plan, the Pacte climat, the Plan national intégré en matière d'énergie et de climat (PNEC), the Plan national de Mobilité 2035 (PNM2035) and the Programme directeur d'aménagement du territoire (PDAT). Actions were organized into clusters within a unified framework, estimating the emissions reduction potential for each, which helped in assessing the necessary scale of reduction to achieve climate neutrality by 2030.
 Alongside the quantitative analysis, an impact framework was developed by defining interventions and identifying changes levers along with early and late outcomes. This was achieved through close collaboration with the portfolio-design process and consultations with domain-specific experts and practitioners in close collaboration with EVERARD Consulting &amp; Communication. Suitable indicators were selected to accompany the identified outcomes and impacts, using both the set provided by NetZeroCities and independently defined indicators.
 
-0
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
-
 # Co-Designing a Portfolio
 
 The development of the portfolio of actions constituted a significant portion of our efforts, given its pivotal role in the Differdange team's strategy.
@@ -265,12 +203,6 @@ The interplay between these tracks gradually shaped the portfolio of actions det
 At the portfolio level, our goal was to achieve a representative selection of actions. Our approach recognizes that many upcoming challenges will emerge through a continuous process of discovery and experimentation.
 
 The concept of representativity was also applied in other dimensions of our portfolio, aiming to ensure a balance in terms of geographic coverage, ecosystem involvement, and the activation of systemic levers. These design principles not only shaped our current efforts but will also guide the ongoing management and evolution of the portfolio.
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
 
 # Applying to the pilot cities call
 
@@ -280,10 +212,6 @@ Building a strong mandate: The development of the proposal deepened our understa
 Understanding the system: Crafting the proposal provided a detailed opportunity to identify and map out the obstacles to decarbonizing Differdange's energy systems, the reduction in waste production and the reduction of individual motorized traffic which was the focus of our proposal.
 Co-designing a portfolio: The barrier analysis directly informed the design of pilot activities tailored to the energy systems domain, as well as broader activities applicable across multiple emissions domains. This process laid the groundwork for the preliminary content of our action portfolio, integrating domain-specific and wide-reaching interventions.
 
-2
-Ville de Differdange
-Net Zero Delfferdang 2020
-C
 
 # 4 Part A – Current state of climate action
 
@@ -308,11 +236,6 @@ C
 |  Diesel cars | 45588 MWh/year |  |   |
 |  Electric cars |  | 141 MWh/year |   |
 |  Diesel light duty vehicles | 26271 MWh/year |  |   |
-Ville de Differdange
-0
-Net Zero
-Deliberdange 2000
-4
 
 |  Electric light duty vehicles |  | 31 MWh/year |   |
 | --- | --- | --- | --- |
@@ -323,11 +246,6 @@ Deliberdange 2000
 |  Waste | / | / | /  |
 |  Industrial Process and ProductUse (IPPU) | (No public information) |  |   |
 |  Agricultural, Forestry and Land Use (AFOLU) | Included in single family homes / transport / waste as the AFOLU activity in Differdange is managed by small family productions |  |   |
-Ville de Differdange
-0
-Net Zero
-Deliberdange
-0
 
 A-1.2: Emission factors applied
 Unit: gCO2e/kWh
@@ -373,13 +291,6 @@ Secondary energy
 
 ¹ The gases are referenced following the IPCC methodology. If indications to gases are missing, the city does not (yet) have the data.
 
-5
-Ville de Differdange
-0
-Net Zero
-Delftredeng
-0
-
 |  Current grid mix | 188 | g CO2e / kWh  |
 | --- | --- | --- |
 |  Future grid mix | 0 | g CO2e / kWh  |
@@ -410,13 +321,6 @@ Delftredeng
 |  Compostable waste | 179,520 | g CO2e / metric ton  |
 |  Digestible waste | 22,800 | g CO2e / metric ton  |
 
-6
-Ville de Differdange
-0
-Net Zero
-Déliferdang 2020
-C
-
 A-1.3: GHG emissions by source sectors
 Base year | 2022
 Unit | tCO2e/year
@@ -444,12 +348,6 @@ Sector: Agricultural, Forestry and Land Use (AFOLU)
 
 Currently the city of Differdange is not in possession of this information, Differdange plans to be able to have this information by Q2 2025.
 
-7
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-C
-
 # 4.2 Module A-2 Current Policies and Strategies Assessment
 
 |  A-2.1: List of Relevant Policies, Strategies and Regulations  |   |
@@ -460,9 +358,6 @@ C
 |  National Waste and Resource Management Plan (NWRMP) | The National Waste and Resource Management Plan (PNGDR) is a strategic framework aimed at improving waste management in France through reuse, re-use, and recycling, while minimising environmental impacts and promoting a circular economy. Adopted in 2018 and currently under review, the plan aligns local initiatives with national and international directives, with specific measures to reduce waste and protect natural resources.  |
 |  Naturpakt | The 'Naturpakt' is a collaborative strategy between the State and municipalities to promote biodiversity and natural resource management, with a particular focus on preserving urban, aquatic and forest areas. Cities participating in the pact, which includes a certification system similar to that of the Climate Pact, commit to adopting sustainable environmental measures, in return receiving financial support and expertise to help them achieve these objectives by 2030.  |
 |  NECP | Luxembourg's National Integrated Energy and Climate Plan (PNEC) is a key strategy that sets out guidelines for achieving ambitious energy and climate goals by 2030, including reducing greenhouse gas emissions by 55%, increasing the share of renewable energy to 25%, and improving energy efficiency by between 40% and 44%. Officially adopted on 20 May 2020 following a public consultation, the NECP has been positively received, guiding the future development of initiatives to ensure its effective implementation between 2020 and 2030.  |
-Ville de Differdange
-Net Zero Delferdange 2030
-9
 
 |  Ouni Pestiziden | The ‘Ouni Pestiziden’ initiative has been working for over fifteen years to abolish the use of pesticides in public spaces, private homes and the agricultural sector, by raising awareness and offering technical support to various stakeholders. It has evolved from an initial project into a well-structured campaign, marked by extensive partnerships, educational initiatives such as the ‘Week without Pesticides’, and legislative successes, including the 2016 ban on pesticides in public spaces, making a significant contribution to preserving quality of life and biodiversity.  |
 | --- | --- |
@@ -471,9 +366,6 @@ Net Zero Delferdange 2030
 |  Communal regulations | Communal regulations in Luxembourg stem from communal autonomy, established by the Constitution and the Communal Law of 1988, allowing communes to manage their own affairs through elected councils. These regulations, governed by principles of legality and subject to state supervision to ensure compliance with national legislation, have a direct impact on local finances and resource management, particularly in the waste sector, where communes do not manage inert, hazardous or industrial waste.  |
 |  Resource concept | The concept of resources in Differdange focuses on optimizing the use of resources through improved management and integrated recovery, with an emphasis on reducing waste production and improving its quality through selective collection and efficient recycling. This strategic plan aims to reduce environmental impact by transforming waste into useful resources, promoting a circular economy and supporting initiatives to reduce waste at source, which should result in more efficient waste management and a significant reduction in waste sent to landfill.  |
 |  PAP/PAG | The Plans d'Aménagement Général (PAG) and Plans d'Aménagement Particulier (PAP) are Luxembourg local regulations that structure land use in dedicated areas and detail development for specific sectors respectively, aligned with sustainable development standards. The PAG organizes human activity for the balanced development of municipalities, while the PAP specifies planning rules for specific areas, with tailored  |
-Ville de Differdange
-Net Zero Delfferdang 2030
-0
 
 |   | approaches for new and existing neighbourhoods, aimed at optimizing quality of life and urban sustainability.  |
 | --- | --- |
@@ -486,11 +378,6 @@ Net Zero Delfferdang 2030
 |  European regulations | European directives aim to transform waste management in the European Union, which generates 2.2 billion tonnes of waste annually, by encouraging recycling and limiting landfill to support a circular economy. The directives, which are part of initiatives such as the Green Pact for Europe, impose strict rules on recycling, reusing packaging, reducing the use of hazardous chemicals, and combating programmed obsolescence to promote sustainable practices and reduce environmental impact in key sectors such as plastics, textiles and electronics.  |
 |  Fusilli | The FUSILLI project, funded by Horizon 2020, aims to transform city food systems into sustainable models in alignment with FOOD2030, bringing together 34 international partners to remove barriers to integrated food policies. This network of 12 cities is developing ‘Food 2030 Living Labs’ to pilot innovations across the entire food chain, reducing waste and promoting local production, thereby reducing CO2 emissions and supporting the regional economy while improving access to quality food.  |
 |  European Mobility Week | European Mobility Week, organised by the European Commission, is a major annual awareness-raising campaign  |
-Ville de Differdange
-1
-Net Zero
-Delfferdange 2030
-C
 
 promoting sustainable urban mobility. Every year, from 16 to 22 September, it encourages people to adopt greener and smarter means of transport, culminating in Car Free Day, encouraging local authorities to test innovations in urban planning and technology while assessing air quality and gathering public feedback.
 European Green Deal | A blueprint for transforming Europe into the first climate-neutral continent by 2050
@@ -499,15 +386,6 @@ National
 City of Differdange
 International initiatives
 European Union
-Ville de Differdange
-
-C
-
-Net Zero
-
-Delfferdange 2030
-
-C
 
 # A-2.2: Description and Assessment of Policies
 
@@ -532,12 +410,6 @@ During the official ceremony to celebrate the 20th anniversary of the Syndicat P
 The member municipalities of PRO-SUD thus declare their intention to work together to define a regional "climate neutral" approach. The 11 municipalities (Bettembourg, Differdange, Dudelange, Esch-sur-Alzette, Käerjeng, Kayl, Mondercange, Pétange, Rumelange, Sanem and Schifflange) will work together with all actors (private and public), building on the tools, programs and initiatives already launched, while improving the quality of life of citizens.
 
 "To achieve the energy transition, we cannot act alone, without support. Most of the carbon emissions, 40%, come from mobility problems, and you can't solve this type of problem by being a municipality alone. It is at least a regional problem, if not national and cross-border," said Georges Mischo, President of the Syndicat PRO-SUD, at the ceremony Friday evening.
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-3
 
 Claude Turmes, Minister of Energy and Spatial Planning, emphasised that “close and concerted cooperation between the different levels of governance, in the sense of a multi-level and multi-sectoral territorial governance, is the guarantee of an effective integrated implementation of the objectives of the government’s climate and energy policy and the objectives of sustainable spatial planning.”
 
@@ -556,12 +428,6 @@ The National Integrated Energy and Climate Plan (PNEC) sets ambitious targets fo
 On the mobility front, the National Mobility Plan 2035 (PNM 2035) envisages proactive management of future transport needs, based on collaboration between the State, municipalities and citizens. This plan aims to optimise the flow of people and modes of transport, thereby reducing congestion and promoting more sustainable mobility.
 
 Finally, the Master Plan for Territorial Development (PDAT) provides a strategic framework for territorial development up to 2050. This programme focuses on the balanced management of spatial planning, the reduction of land artificialisation and cross-border cooperation. It incorporates far-reaching ecological considerations to ensure the best possible quality of life while meeting today's environmental challenges.
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
 
 # ASSESSMENT OF POLICIES
 
@@ -574,12 +440,6 @@ A further observation highlights that although Differdange has ambitious environ
 Finally, there is an increasing recognition of the necessity for enhanced collaboration across various sectors and departments within the city's governance framework and the broader community. To effectively address this implementation gap, it is essential to embed climate considerations across diverse policy areas comprehensively. This would involve a more integrated approach to climate action within all municipal departments, promoting robust inter-departmental cooperation. Such strategic alignment forms a key component of Differdange's participation in the Pilot Cities Programme.
 
 Moreover, the need for a stronger alignment of efforts and the catalyzation of collective actions among all relevant stakeholders is clear. Although Differdange benefits from a robust governance model, exemplified by its established platform for structured cooperation aimed at expediting the net-zero transition, the urgency for stakeholders to shift from general promises to specific, actionable commitments has become more pronounced. The Climate Contract of the City of Differdange is designed as a pivotal measure in this context, marking the commencement of a phased strategy to enhance both ambition and accountability incrementally.
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
 
 # Local policy: Assessment by emissions domain
 
@@ -602,12 +462,6 @@ Despite these efforts, there remains a need for a more integrated approach in th
 ## 3. Transportation and mobility
 
 Differdange has made significant strides in enhancing public transport and promoting electric mobility, crucial steps towards reducing the city's transport-related emissions. Modernizing public transport and expanding electric vehicle use are central to the city's strategy, yet the full potential of these initiatives
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
 
 is yet to be realized, primarily due to challenges in comprehensive adoption and support from all stakeholders.
 
@@ -628,12 +482,6 @@ The city faces challenges in fully realizing the potential of its green urban pl
 Differdange is actively pursuing carbon offset and compensation strategies to meet its climate targets. Local initiatives, such as the development of green facades and the expansion of urban forestry projects, play a vital role in offsetting carbon emissions locally. These efforts not only help mitigate the impact of remaining emissions but also enhance the urban landscape. Furthermore, the city is investing in regional and international carbon capture and storage projects to provide further offsetting capabilities, which are crucial for meeting the more stringent aspects of its climate commitments.
 
 The effectiveness of these offset measures depends significantly on the scale and continuity of the projects. While local initiatives are impactful, the broader adoption and integration of international carbon offset projects could accelerate Differdange's progress towards its net-zero ambitions. However,
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
 
 these international efforts must be carefully chosen to ensure they align with global sustainability standards and deliver tangible benefits.
 
@@ -656,12 +504,6 @@ While these research initiatives are promising, their success hinges on comprehe
 Furthermore, alongside these mitigation efforts, Differdange recognizes the importance of adaptation strategies. Developing resilience against the already evident impacts of climate change is as crucial as mitigation. This dual approach ensures that the city not only reduces its carbon footprint but also protects its community and infrastructure from the adverse effects of climate change.
 
 Each of these domains represents a critical area of focus for Differdange as it strives to meet its ambitious climate goals. While the city has laid a solid foundation with its current policies and initiatives, the true test will lie in its ability to enhance execution, expand collaborative efforts, and ensure that all sectors of the community are actively involved in the climate action framework.
-Ville de Differdange
-^{}[]
-Net Zero
-Déifférdange 2030
-^{}[]
-C
 
 # Local policy: Assessment by systemic lever
 
@@ -688,11 +530,6 @@ Community engagement: The policy strongly encourages citizen engagement and comm
 ### 4. Infrastructure and urban services:
 
 Infrastructure improvements: Differdange's local initiatives, such as the adaptation of the recycling park, illustrates a practical commitment to improving waste management infrastructure. These improvements are essential to strengthen the city's capacity to treat and reduce waste in an environmentally responsible manner, in line with the objectives set out in the LSAP-CSV coalition plan.
-Ville de Differdange
-^{}[]
-Net Zero
-Déifférdange 2030
-^{}[]
 Development of standards and policies: The active participation of Differdange's political representatives in trade unions and national decision-making forums demonstrates a proactive approach to influencing and adapting waste management policies at a higher level. This strategic presence aims to align local standards with regional and national guidelines, ensuring consistent and effective waste management.
 Political and Regulatory Engagement: By being represented on key decision-making bodies, Differdange can not only monitor but also drive changes in environmental legislation that directly benefit its local sustainability policies. This allows the city to remain at the forefront of best practice in sustainable development and resource management.
 
@@ -714,12 +551,6 @@ Collaboration with SudEnergie: Specifically for the decarbonisation of heating s
 # 1. Urban infrastructure and services
 
 Infrastructure improvements: Differdange has taken significant steps to enhance its infrastructural capabilities to support environmental goals. The adaptation of the recycling park and upgrades in waste management services directly align with the city's ambitions to improve its resource efficiency and waste handling, which are crucial components of the LSAP-CSV coalition program.
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
 
 Development of standards and policies: The city's active participation in regulatory bodies and efforts to influence policy directions demonstrate a strategic approach to embedding sustainability into local governance. By placing representatives in decision-making positions, Differdange ensures that its sustainability principles are advocated at higher levels of governance, potentially impacting regional and national policies.
 Adaptation and synergy: Amendments to the General Development Plan (PAG) and Specific Development Plan (PAP), as well as adjustments to traffic regulations, illustrates Differdange's commitment to integrating sustainability into the urban fabric. These actions create a conducive environment for the sustainable evolution of the city, fostering ecological construction and urban development practices that are aligned with carbon-neutral objectives.
@@ -743,12 +574,6 @@ The focus on thoughtful urban planning facilitates the creation of infrastructur
 Differdange's active political participation in setting ambitious targets for carbon neutrality by 2030 influences local and potentially national urban planning policies by prioritizing sustainability.
 The involvement of municipal representatives in decision-making committees helps steer urban development policies towards more sustainable practices, ensuring that the town's development aligns with broader environmental goals.
 This political engagement fosters strategic partnerships and aligns local urban development policies with regional and international sustainability standards.
-Ville de Differdange
-^{}[]
-Net Zero
-Déifférdange 2030
-^{}[]
-^{}[]
 # Strategic cooperation:
 
 Differdange's policies promote collaborations with regional and international partners to integrate best practices in sustainable urban development.
@@ -776,11 +601,6 @@ The city uses various media to communicate the importance of sustainable mobilit
 By educating and engaging the community, Differdange ensures that its policies are supported by the residents, fostering a collective approach to achieving its mobility and environmental goals.
 
 # Compensation
-Ville de Differdange
-^{}[]
-Net Zero
-Déifférdange 2030
-^{}[]
 Local and regional offsets: Differdange's local policy supports the planting of urban trees and the creation of green façades as part of its broader strategy to offset carbon emissions, aligning with the systemic lever of implementing local offsets.
 International offsets: The city's environmental policies include participating in international carbon capture and storage projects, which complements its local efforts to achieve carbon neutrality, reflecting the systemic lever of international cooperation for compensation.
 
@@ -793,14 +613,6 @@ Policy development: Differdange's development of policies that facilitate climat
 
 Innovative social programs: Differdange fosters social cohesion through environmental projects like community gardens, aligning with the systemic lever of promoting innovative social programs that integrate environmental and social goals.
 Stakeholder engagement: The city's strong governance model facilitates stakeholder engagement by encouraging diverse community participation in environmental initiatives, thus enhancing social innovation and broad-based support for sustainability.
-
-2
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
 
 # Opportunities:
 
@@ -833,25 +645,11 @@ A commitment to soft mobility, supported by appropriate infrastructure, can tran
 ## Optimised network infrastructure
 
 The city's high-performance networks, including broadband internet, gas, district heating and electricity, provide a solid foundation for integrating advanced technological solutions into the day-to-day management of the city. These infrastructures enable the efficient implementation of intelligent energy and waste management systems.
-Ville de Differdange
-^{}[]
-Net Zero
-Déifférdange 2030
-^{}[]
-^{}[]
 # Public-private partnerships and investment
 
 Public-private partnerships (PPPs) and private investment offer financial resources and technical expertise that can accelerate the deployment of sustainable infrastructure projects. These collaborations can also introduce innovations in waste management, building energy efficiency and public transport systems.
 
 In conclusion, the combination of these opportunities with a coherent strategy and a clear vision can enable Differdange not only to achieve but to surpass the objectives of the Net Zero Cities mission. However, this requires meticulous coordination, strong commitment from all stakeholders and continued investment in green technologies and infrastructure. By actively engaging its population in this transformation process, Differdange can become a model of sustainable urban development.
-
-4
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
 
 # Global strategy that integrates various means of communication and engagement - Ways of achieving collective understanding
 
@@ -880,12 +678,6 @@ Financial instruments such as environmental taxes and subsidies for clean techno
 # Projects and changes
 
 Specific projects such as the development of new public transport infrastructure, the energy renovation of public buildings, or the creation of innovative sorting centres are essential to achieving Differdange's
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-6
 
 vision. These projects must be designed to maximize their environmental and social impact, and managed with total transparency to maintain public confidence.
 
@@ -904,12 +696,6 @@ Community involvement is also vital. Projects must be designed with a strong con
 Finally, it is crucial that Differdange continues to take a proactive and preventative approach to managing environmental and social risks. This includes putting in place robust systems for monitoring, evaluating and continually adjusting the policies and actions in place. By being attentive to changes in the global environment and remaining flexible and responsive, Differdange can not only achieve its carbon neutrality objectives, but also serve as a model for other cities around the world.
 
 So, by fully exploiting these opportunities, focusing on systemic levers, and implementing strategies based on an integrated and participatory approach, Differdange can realize its vision of a sustainable and resilient city for current and future generations.
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
 
 # Monitoring
 
@@ -941,14 +727,6 @@ The involvement of stakeholders, including local businesses, non-governmental or
 
 # Number of projects completed
 
-7
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-8
-
 Tracking the number of projects completed provides a quantifiable view of progress towards sustainable development goals. This not only allows us to celebrate successes but also to identify areas requiring further attention.
 
 ## Invoices and waste management
@@ -970,12 +748,7 @@ In summary, the adoption of rigorous and diversified monitoring practices enable
 **Encouraging innovation and adaptation:** Continuous monitoring of environmental trends and the results of initiatives enables the city to adapt quickly to changes and emerging challenges. This responsiveness is crucial in a context of rapid climate change and constant technological innovation.
 
 Monitoring strategies are not just tools for measuring progress, but catalysts for continuous improvement. They allow gaps to be identified, successes to be highlighted, and resources to be strategically redirected to reinforce the positive impacts of environmental policies. As a result, Differdange, armed with these tools and approaches, is better equipped to transform its environmental challenges into opportunities for sustainable development, while moving resolutely towards achieving the objectives of its ambitious carbon neutrality plan.
-Ville de Differdange
 
-Net Zero
-Delfferdang 2030
-
-C
 
 a-2.3: Gap Emissions
 
@@ -987,21 +760,11 @@ a-2.3: Gap Emissions
 |  Transport |  |  |  |  |  |  |  |  |  |  |   |
 |  Waste |  |  |  |  |  |  |  |  |  |  |   |
 
-9
-Ville de Differdange
-Net Zero Delferdang 2000
-0
 
 |  Industrial Process and Product Use (IPPU) |  |  |  |  |  |  |  |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 % of our emissions are emitted by our industrial complexes, we cannot estimate a gap.
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
 
 # 4.3 Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
 
@@ -1034,14 +797,6 @@ Emissions domain waste systems
 Interest: 1-5, 1 being lowest, 5 being highest level of interest
 Influence: 1-5, 1 being lowest, 5 being highest level of influence
 
-1
-Ville de Differdange
-
-Net Zero
-Delfferdange 2030
-
-C
-
 Emissions domain energy systems
 
 |   | Stakeholders | Interest | Influence  |
@@ -1071,12 +826,6 @@ Emissions domain energy systems
 Interest: 1-5, 1 being lowest, 5 being highest level of interest
 Influence: 1-5, 1 being lowest, 5 being highest level of influence
 
-2
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Emissions domain mobility systems
 
 |   | Stakeholders | Interest | Influence  |
@@ -1111,12 +860,6 @@ Emissions domain mobility systems
 Interest: 1-5, 1 being lowest, 5 being highest level of interest
 Influence: 1-5, 1 being lowest, 5 being highest level of influence
 Emissions domain city planning (green infrastructure and nature-based solutions) systems
-Ville de Differdange
-
-Net Zero
-Delfferdange 2030
-
-C
 
 |   | Stakeholders | Interest | Influence  |
 | --- | --- | --- | --- |
@@ -1137,14 +880,6 @@ Influence: 1-5, 1 being lowest, 5 being highest level of influence
 
 Throughout the development of the Climate City Contract (CCC), Differdange reached out to various stakeholders for their input and potential commitment. Many expressed a preference to review the finalized document before confirming their involvement. Despite this, the city remains confident in gaining the necessary support from these stakeholders. To formalize this, a significant event is planned for 2025, where all key stakeholders will be invited to officially sign the CCC.
 
-4
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
-
 A-3.2: Description of Systemic Barriers and Opportunities – Textual Elements
 
 |  Energy systems  |   |
@@ -1160,12 +895,6 @@ A-3.2: Description of Systemic Barriers and Opportunities – Textual Elements
 |  Economic interests at odds with the mission: | Economic interests that are not aligned with energy sustainability goals can prevent or slow down the implementation of environmentally friendly energy policies, such as support for renewable energies or investments in energy efficiency.  |
 |  Environmental protection and climate protection sometimes conflict: | Sometimes, environmental protection strategies can come into conflict with climate protection measures, especially in the energy context, where certain solutions may benefit the climate but be less favourable to the local environment (e.g. certain forms of biomass).  |
 
-5
-Ville de Differdange
-Net Zero
-Delfferdange 2030
-6
-
 |  Waste management systems  |   |
 | --- | --- |
 |  Barrier | Description  |
@@ -1175,10 +904,6 @@ Delfferdange 2030
 |  The collective mentality is not yet ready to accept the necessary changes: | Cultural resistance or a lack of awareness of the benefits of recycling and waste reduction can limit the adoption of sustainable behaviour by citizens.  |
 |  Different political interests complicate the process: | Differences between political parties or within government can hamper the implementation of coherent waste management policies, especially if they require significant investment or major legislative changes.  |
 |  Constraints linked to the implementation of PPPs (Public-Private Partnerships) hampers the implementation of projects: | Challenges related to financing and public market requirements in PPPs can limit the city's ability to launch or expand innovative waste management projects that require collaboration between the public and private sectors.  |
-Ville de Differdange
-Net Zero
-Delfferdange 2030
-7
 
 |  Mobility systems  |   |
 | --- | --- |
@@ -1192,12 +917,7 @@ Delfferdange 2030
 |  We are facing two-speed development - we are losing the majority of the population as we move forward: | This divergence can create inequalities in access to mobility solutions and reduce the effectiveness of public policies.  |
 |  The mobility network is dense and difficult to change: | The existence of old and heavy infrastructure can complicate projects to renovate or extend transport networks, requiring major investment and complex planning.  |
 |  There is an international shortage of materials and rising prices: | This can affect the construction or maintenance of transport infrastructure, as well as the transition to EVs, increasing costs and delaying projects.  |
-Ville de Differdange
-0
-Net Zero
 Dérifferdeng
-0
-C
 
 |  City planning systems  |   |
 | --- | --- |
@@ -1211,14 +931,6 @@ C
 |  We have reached a plateau where change becomes more difficult or stagnant: | Reaching a level of saturation in urban planning innovations or improvements can make it difficult to make further progress without renewed efforts or new approaches.  |
 |  The city is partly made up of old buildings: | Integrating green infrastructure into existing structures can be complicated and costly, requiring creative and adaptive solutions.  |
 |  Limited public space: | The scarcity of space available for new green developments or for the ecological renovation of existing spaces can limit the options for expanding green infrastructure.  |
-
-8
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
 
 # A-3.3: Description or Visualisation of Participatory Model for the City Climate Neutrality
 
@@ -1242,12 +954,6 @@ This workshop, held on 20 April 2024, brought together citizens and experts to d
 
 The third workshop, on 8 June 2024, focused on urban mobility. Participants used an interactive map to identify and discuss critical mobility issues in Differdange. They identified a number of problems, such as the lack of safe cycle paths and the need for better coordination of public transport. The discussions led to proposals to improve safety for pedestrians and cyclists and to reduce dependence
 
-9
-Ville de Differdange
-^{}[]
-Net Zero
-Déifférdange 2030
-^{}[]
 on private vehicles. The workshop also looked at ways of encouraging the use of public transport and integrating soft mobility more effectively into urban planning.
 
 # Effects on systemic levers and impact pathways
@@ -1270,12 +976,6 @@ The focus on mobility demonstrated the importance of developing alternatives to 
 
 In summary, the participatory workshops in Differdange played a crucial role in developing strategies to achieve climate neutrality. Serious collaboration with EVERARD Consulting &amp; Communication not only facilitated a fruitful dialogue, but also helped to align the town's actions with the aspirations of its citizens. These initiatives, if well implemented, could serve as a model for other cities seeking to become more sustainable communities.
 
-0
-Ville de Differdange
-^{}[]
-Net Zero
-Déifférdange 2030
-^{}[]
 # 5 Part B – Pathways towards Climate Neutrality by 2030
 
 ## 5.1 Module B-1 Climate Neutrality Scenarios and Impact Pathways
@@ -1290,12 +990,6 @@ Co2 Offsetting (CO)
 Climate adaptation (CA)
 Social innovation (SI)
 
-1
-Ville de Differdange
-^{}[]
-Net Zero
-Déifférdange 2030
-^{}[]
 Within these Fields of Action, the city defined several themes, that help categorize the different approaches and systemic levers.
 
 |  WM | 1 | Reducing food waste  |
@@ -1331,27 +1025,11 @@ Within these Fields of Action, the city defined several themes, that help catego
 |  SI | 3 | Communication  |
 |  SI | 4 | EU projects  |
 
-2
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
-
 B-1.1: Impact Pathways
 
 |  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (co-benefits)  |
 | --- | --- | --- | --- | --- | --- |
 |  Waste management and circular economy | WM 1. Reducing food waste | In Differdange, efforts to reduce food waste over the first couple of years have focused on enhancing citizen engagement and optimizing waste management with AI-enhanced smart bins. A local startup has shown that reducing kitchen waste by up to 50% is achievable through data-driven strategies. Additionally, the city has increased its commitment to local produce and organic farming, supplementing these efforts with educational initiatives to foster a community-wide commitment to sustainability. | Differdange aims to solidify food waste initiatives into lasting practices. An advisory council could formalize, enhancing the role of food systems in policy discussions and securing pilot projects as permanent strategies. Expected outcomes include a doubling of local food production and improved storage facilities, fostering longer-lasting, quality food supplies. Moreover, a shift towards "rescued food" is anticipated to alter public attitudes and behaviors, significantly increasing the use of seasonal vegetables in public dining facilities, reflecting a broader commitment to sustainable consumption. | The systemic approach to reducing food waste in Differdange has enabled substantial environmental improvements, achieving up to a 50% reduction in waste. By prioritizing local production, the city minimizes greenhouse gas emissions associated with imported goods and enhances local product preservation. Bulk purchasing and efficient energy use further decrease carbon footprints. These efforts result in significant reductions in organic waste and indirect emissions (scope 2), although the exact greenhouse gas reductions are not quantifiable. | As part of the reduction of food waste (WM 1.1.), Differdange encourages a holistic approach to achieve significant indirect impacts. Food advice stimulates policies for GHG reductions, strengthening commitment at all levels, from kitchen to policy. Increased awareness, coupled with improved nutrition through greater use of local and seasonal produce, boosts public health and saves citizens money. These combined efforts not only improve food quality, but also raise overall environmental awareness.  |
-
-3
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
 
 B-1.1: Impact Pathways
 
@@ -1361,12 +1039,6 @@ B-1.1: Impact Pathways
 
 B-1.1: Impact Pathways
 
-4
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
 Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (co-benefits)
 Waste management and circular economy | WM 3. Improving the efficiency of waste processing | Differdange plans to initiate various investments and feasibility studies to optimise waste management and the production of recyclable materials, while integrating new adapted machinery. A significant increase in the recycling rate for waste, particularly construction waste, is planned, with a particular focus on improving sorting in residential buildings. Redirected waste will benefit from a better quality of treatment. Efforts to raise awareness of recycling and reuse through education and the sharing of best practice are also envisaged, notably through targeted campaigns and the recovery of green waste to create areas of biodiversity, thereby reducing greenhouse gas emissions and logistical costs. | In the near future, Differdange is moving towards a significant increase in the production of thermal and electrical energy, strengthening its position as a leader in the local energy transition. Politicians will actively promote this project, aiming for a significant increase in the rate of recycling of problematic waste. A review of the recycling system is planned to reduce the weight of packaging and redesign it.
 
@@ -1375,56 +1047,28 @@ A new local resale point for second-hand products will help to enrich the circul
 
 B-1.1: Impact Pathways
 
-5
-Ville de Differdange
-Net Zero
-Déliferdang 2000
-
 |  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (co-benefits)  |
 | --- | --- | --- | --- | --- | --- |
 |  Waste management and circular economy | WM 4. Circular economy | The marketing of second-hand products, including bicycles, furniture and children's items such as clothes and toys, will be expanded, promoting sustainable consumption. At the same time, the city will adjust the specifications for future tenders, establishing strict constraints aligned with the VDD's sustainability objectives. These adjustments will also be supported by an improved cultural offering and the active promotion of green projects. In addition, the establishment of a local social network will strengthen cohesion and citizenship by encouraging exchanges between residents. | As part of the move towards a circular economy, the VDD has stepped up its efforts to promote the reuse of clothing and toys, as well as the refurbishment of furniture. A precise inventory of usable materials and reusable resources has been drawn up to optimize building renovation and demolition operations. By following strict guidelines, the VDD aims to meet the essential conditions for achieving its waste management objectives, ensuring that resources are used intelligently, economically and sustainably. In addition, the emphasis has been placed on access to culture and improving literacy. A platform for exchanging services and products has also been set up, facilitating the organisation of events and the dissemination of information, thereby helping to beautify the neighbourhoods. | As part of an emerging circular economy, avoiding the production of furniture and other goods by reintegrating them from resources already in circulation can significantly reduce greenhouse gas (GHG) emissions, thanks to the reduction in transport distances and associated logistics. Minimising the production of construction materials and reducing waste, particularly packaging waste, also helps to adapt urban infrastructures to ecological imperatives. The exchange of goods encourages a change in mentality and supports ecological initiatives, thereby multiplying the environmental benefits, while optimised management of green waste and other logistical reductions consolidates the overall reduction in greenhouse gases. | Through the circular economy initiative, job creation and targeted training are helping people back into work, while changing attitudes are encouraging the purchase of repairable and sustainable products. Design offices and architects are adopting these principles right from the project planning stage, helping to reduce construction costs. This transition towards sustainability is also helping to enrich general culture, strengthen social cohesion and beautify neighbourhoods, testifying to the positive societal impact of these changes.  |
-
-6
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-7
 
 B-1.1: Impact Pathways
 
 |  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (co-benefits)  |
 | --- | --- | --- | --- | --- | --- |
 |  Waste management and circular economy | WM 5. Organisational Optimisation | The marketing of second-hand products, including bicycles, furniture and children's items such as clothes and toys, will be expanded, promoting sustainable consumption. At the same time, the city will adjust the specifications for future tenders, establishing strict constraints aligned with the VDD's sustainability objectives. These adjustments will also be supported by an improved cultural offering and the active promotion of green projects. In addition, the establishment of a local social network will strengthen cohesion and citizenship by encouraging exchanges between residents. | As part of the move towards a circular economy, the VDD has stepped up its efforts to promote the reuse of clothing and toys, as well as the refurbishment of furniture. A precise inventory of usable materials and reusable resources has been drawn up to optimize building renovation and demolition operations. By following strict guidelines, the VDD aims to meet the essential conditions for achieving its waste management objectives, ensuring that resources are used intelligently, economically and sustainably. In addition, the emphasis has been placed on access to culture and improving literacy. A platform for exchanging services and products has also been set up, facilitating the organisation of events and the dissemination of information, thereby helping to beautify the neighbourhoods. | As part of an emerging circular economy, avoiding the production of furniture and other goods by reintegrating them from resources already in circulation can significantly reduce greenhouse gas (GHG) emissions, thanks to the reduction in transport distances and associated logistics. Minimising the production of construction materials and reducing waste, particularly packaging waste, also helps to adapt urban infrastructures to ecological imperatives. The exchange of goods encourages a change in mentality and supports ecological initiatives, thereby multiplying the environmental benefits, while optimised management of green waste and other logistical reductions consolidates the overall reduction in greenhouse gases. | Through the circular economy initiative, job creation and targeted training are helping people back into work, while changing attitudes are encouraging the purchase of repairable and sustainable products. Design offices and architects are adopting these principles right from the project planning stage, helping to reduce construction costs. This transition towards sustainability is also helping to enrich general culture, strengthen social cohesion and beautify neighbourhoods, testifying to the positive societal impact of these changes.  |
-Ville de Differdange
-Net Zero
-Delfferdange 2030
-C
 
 B-1.1: Impact Pathways
 
 |  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (co-benefits)  |
 | --- | --- | --- | --- | --- | --- |
 |  Waste management and circular economy | WM 6. Organisational Optimisation | The city aims to change the citizens' mentality by organising in situ clean-up events in the adjacent forests and in the city itself that involve interested inhabitants. Differdange also plans to drawup an inventory of the current situation and of littering hotspots. | The later outcomes should be a significant reduction of littering as well as an optimization of the cleaning tours and consequently a heightened efficiency. | The immediate impacts are a reduction of waste in the open through the cleaning events and a reduction of the cleaning costs for the city. | The indirect benefits are a reduction of harmful products accumulating in nature as well as less littering in the city itself.  |
-Ville de Differdange
-Net Zero
 Délibération 2030
-C
 
 B-1.1: Impact Pathways
 
 |  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (co-benefits)  |
 | --- | --- | --- | --- | --- | --- |
 |  Waste management and circular economy | MS 1. Home improvements | In Differdange, the home improvement program envisages partial or complete renovations for around 4,150 single-family homes. Annually, 6.6% of these units, or around 300 homes, could undergo renovations, reducing gas consumption by around 741 m3 per unit. Over two years, between 80 and 100 homes could benefit from these improvements. Of these homes, 227 are rated between A and D in terms of energy efficiency, and 910 require renovations. It is anticipated that 10 homes per year will undergo renovations, which would represent up to 70 homes renovated over an annual period, with a forecast of 20 units in the first two years. | Potential of 300 units per year, so 600 units. Each renovation is directly dependent on state subsidies. For the residencies, Differdange aims for 20 buildings. | This action reduces gas consumption by: 1,556,100 m3/year in the case of 300 units/year. | Improved quality of life and a degree of independence from fossil fuels.  |
-
-9
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
 
 B-1.1: Impact Pathways
 
@@ -1433,25 +1077,11 @@ Waste management and circular economy | MS 2. Decarbonisation | Currently, there
 
 The second phase of the project will include the implementation of an energy concept designed to be economically viable, based on the results of the first phase. This will lead to the installation of advanced systems for the decarbonisation of the district heating network in Oberkorn. This phase will also include the actual installation of connections and the gradual replacement of maintenance equipment such as hedge trimmers, lawnmowers and | In Differdange, a major decarbonisation initiative aims to achieve a substantial reduction in gas consumption, with estimated savings of 2.6 million m3 annually for 50% of the 3,061 targeted residential units. In addition, the connection of 275 homes to district heating would save 350,000 m3 of gas each year. The heat pumps installed could reduce gas consumption by 500,000 m3 annually. Together, these measures would contribute to a significant reduction in greenhouse gas emissions, estimated at 1 million m3 of gas saved. In addition, the energy efficiency of the district heating network would be improved by reducing the use of biomass, and a reduction in greenhouse gas emissions would be achieved by reducing dependence on imported fossil fuels. | The city of Differdange's decarbonization efforts are set to enhance residents' quality of life and foster a degree of independence from fossil fuels. Through innovative agreements with Sudenergie, the replacement of traditional heating systems with heat pumps will be facilitated without requiring individual investment, furthering the city's transition to sustainable energy sources. These measures not only promised a quieter urban environment but also significant reductions in energy consumption, aligning with broader environmental goals.  |
 
-0
-Ville de Differdange
-Net Zero
-Delfferdange 2000
-C
-
 |   |  |  | chainsaws, to further reduce the carbon footprint. |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  B-1.1: Impact Pathways  |   |   |   |   |   |
 |  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (co-benefits)  |
 |  Waste management and circular economy | MS 3. Energy production | Concerning energy production through solar panels on public buildings, Differdange plans studies and aims for a realisation of 50% of the potential. The installation of the first wind turbine awaits authorisation from public authorities. Differdange is planning the implementation of pellet heating for the project “Aalt Spidol” by decommissioning five gas boilers and replacing them with a pellet boiler in the form of a container, purchased by the municipality. | Differdange aims for the remaining 50% of potential to be realised, concerning nergy production through solar panels on public buildings and for implementing the wind turbine project. In Niederkorn, a pellet plant district heating for the public service site and future shopping centre will be implemented. The project “Aalt Spidol” should be widened to allow the development of an energy concept for the entire site, including the use of mine water. | Reducing greenhouse gas emissions by saving imported fossil fuels. | Local production of renewable energy.  |
-
-1
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
 
 B-1.1: Impact Pathways
 
@@ -1459,25 +1089,11 @@ B-1.1: Impact Pathways
 | --- | --- | --- | --- | --- | --- |
 |  Waste management and circular economy | MS 4. Energy savings | Building renovations and the decarbonization of heating systems are underway. Differdange is working with a partner to optimize its district heating networks. The town will be carrying out feasibility studies for the development of agro-photovoltaics and will be upgrading all its urban lighting to LEDs. This will incorporate LED lighting for sports facilities. | The objectives set in the early outcomes should come to terms in the late outcomes. | Differdange is targeting substantial energy savings thanks to a number of initiatives. Firstly, a significant reduction in greenhouse gases is estimated at 80,000 m3 of gas saved annually. The city is also encouraging households to connect to the district heating network, thereby reducing dependence on imported fossil fuels and further cutting greenhouse gas emissions. The use of LEDs for urban lighting, with options for modulating intensity after midnight, contributes to a reduction in CO2. Taken together, these measures aim to achieve a significant reduction in energy consumption. | The City of Differdange's 'Energy Savings' approach aims to significantly improve citizens' quality of life while increasing their independence from fossil fuels. This initiative makes district heating networks more attractive and encourages synergies with agroforestry projects. In the medium term, we expect to see a significant reduction in maintenance costs, expenditure on equipment, in particular the replacement of lighting units, and general operating costs. In addition, this strategy encourages easier and more flexible use of energy resources, thereby optimizing the city's overall energy efficiency.  |
 
-2
-Ville de Differdange
-
-Net Zero
-Delfferdange 2030
-
-C
-
 B-1.1: Impact Pathways
 
 Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (co-benefits)
 Waste management and circular economy | UP 1. Architecture – Public buildings | Differdange is planning to revise its Urban Development Plan (PDU). This initiative aims to significantly transform the urban planning and architecture of public buildings to improve the quality of life of its residents. The first stages will include detailed planning and in-depth studies to ensure that future developments are both environmentally sustainable and adapted to the needs of the community.
 By placing particular emphasis on sustainable construction and infrastructure, Differdange hopes not only to reduce its carbon footprint but also to create more pleasant and functional urban spaces. These changes are likely to include the renovation of existing buildings, the construction of new energy-efficient public buildings, and the creation of green areas. | The objectives set in the early outcomes should come to terms in the late outcomes. | The direct impacts aimed for are a reduction of GHG emissions. | The indirect impacts would be a better quality of life for the citizens.  |
-
-3
-Ville de Differdange
-Net Zero
-Déliferdang 2000
-C
 
 B-1.1: Impact Pathways
 
@@ -1485,33 +1101,15 @@ B-1.1: Impact Pathways
 | --- | --- | --- | --- | --- | --- |
 |  Waste management and circular economy | UP 2. Urban Spacesspaces | In the first 1-2 years of the Sustainable Urban Spaces initiative, the town of Differdange could start by reconfiguring small public spaces to incorporate green areas and benches that encourages relaxation and social interaction. This could include the installation of new planting and improved lighting to increase the use and safety of spaces after sunset. Awareness-raising campaigns could also be launched to encourage community involvement in maintaining and enhancing the renovated spaces. | Within 3 to 4 years, the late changes under the ‘Espaces Urbains Durables’ project in Differdange could include a significant increase in urban biodiversity thanks to the increased greening of public spaces. The redeveloped areas could become active social hubs, improving community cohesion and quality of life. There could also be a reduction in urban heat islands, contributing to more pleasant ambient temperatures in the city during the summer months. In addition, the expansion of pedestrian areas and cycle lanes could encourage more sustainable mobility, reducing dependence on motor vehicles and the associated CO2 emissions. | Significant increase in urban biodiversity thanks to the increased greening of public spaces. The redeveloped areas could become active social hubs, improving community cohesion and quality of life. There could also be a reduction in urban heat islands, contributing to more pleasant ambient temperatures in the city during the summer months. In addition, the expansion of pedestrian areas and cycle lanes could encourage more sustainable mobility, reducing dependence on motor vehicles and the associated CO2 emissions. | Enriching community interaction through better public spaces, enhancing social cohesion. This urban revitalization is also poised to boost the local economy by attracting businesses and tourists, while increased greenery and reduced pollution promised significant health benefits. Property values may rise due to the improved attractiveness of the area, which in turn could increase municipal revenues.  |
 
-4
-Ville de Differdange
-Net Zero
-Delfferdange 2000
-C
-
 B-1.1: Impact Pathways
 
 |  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (co-benefits)  |
 | --- | --- | --- | --- | --- | --- |
 |  Waste management and circular economy | UP 3. Architecture – Private buildings | Differdange is planning to revise its building regulations (PAG). The rules in place define the prohibition of certain materials and the percentage of spaces that can be saddled. | Tightening the rules, becoming more restrictive. | No direct impact. | Encourages more sustainable construction and renovation of existing buildings.  |
 
-5
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdang 2030
-^{}[]
 B-1.1: Impact Pathways
 |  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (co-benefits)  |
 | --- | --- | --- | --- | --- | --- |
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
 
 Mobility and transport | MT 1 - Public transport - bus | The existing project aims to adapt and improve the transport network to enhance its performance through an iterative approach. The goal is to increase the use of electric buses, reduce individual motorized mobility, and collaborate with RGTR, TICE, CFL, and VDL to optimize the service offering.
 
@@ -1528,23 +1126,11 @@ B-1.1: Impact Pathways
 |  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (co-benefits)  |
 | --- | --- | --- | --- | --- | --- |
 
-7
-Ville de Differdange
-
-Net Zero
-Delfferdange 2030
-
 Mobility and transport | MT 2- Public transport – train | The project involves updating the platforms at the Niederkorn stop and intensifying studies for connecting Line 60 to Line 70 within the railway triangle between Bascharage and Niederkorn.
 
 It includes political advocacy for a tram system in the southern municipalities, raising awareness and generating interest, along with ongoing lobbying efforts | The project involves upgrading the platforms at Differdange station to ensure compliance.
 
 It includes connecting the Differdange line (line 60) with line 70 (Pétange-Rodange), which will result in significant time savings. This initiative is part of the PNM 2035 plan and may involve further studies. | The project aims to increase train usage by significantly reducing travel time to the capital. This will have a major impact on decreasing car trips between urban centers. | Improving quality of life.  |
-
-8
-Ville de Differdange
-Net Zero
-Déliferdang 2030
-C
 
 B-1.1: Impact Pathways
 
@@ -1558,24 +1144,12 @@ It will also reduce the number of stationary vehicles in public spaces by cuttin
 
 The initiative will also improve air quality, reduce noise, boost employee morale, and promote health through a smaller car fleet. Overall, it seeks to create a positive impact on the environment and community well-being.  |
 
-9
-Ville de Differdange
-Net Zero Delferdang 2000
-C
 
 B-1.1: Impact Pathways
 
 Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (co-benefits)
 Mobility and transport | MT 5
 Soft mobility | Expand the existing network and integrate new sites. Implement a pilot project for a pedibus. Develop a "green network" with walkways and connections between neighborhoods at different levels to facilitate active mobility and inter-neighborhood connectivity. | Iterative adaptation of the system. Expansion of the pedibus service. Continuous refinement and adjustment of the system | Reduction of motorized traffic, including decreasing "parent taxi" traffic in front of schools. | Positive impact on health and increased awareness of pedestrian mobility, including educating young people about sustainable transport options.  |
-
-0
-Ville de Differdange
-
-Net Zero
-Delfferdange 2000
-
-C
 
 B-1.1: Impact Pathways
 
@@ -1584,10 +1158,6 @@ Mobility and transport | MT 7 Logistics | Feasibility and planning studies are c
 This approach aims to optimize the movement of goods and reduce traffic congestion, enhancing urban transport and delivery systems. | Reduction of greenhouse gases in the city by decreasing the number of semi-trucks refers to lowering emissions in urban areas by reducing the presence of large trucks.
 This strategy helps cut down pollution and improve air quality within the city. | Improvement of air quality and noise reduction focuses on enhancing environmental conditions by reducing pollution and noise levels.
 It also involves freeing up public spaces used for deliveries and optimizing storage areas within buildings.  |
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
 
 B-1.1: Impact Pathways
 
@@ -1607,14 +1177,6 @@ While it aims to store GHG effectively, it does not have any direct impact in ot
 
 It includes using wood for furniture and other products to sequester CO2, establishing green corridors, and creating microclimates for agricultural areas. Additionally, it provides drilling for livestock, helps absorb excess fertilizers, and combats insect population decline. The project focuses on building a sustainable economic sector, creating jobs, and clarifying feasibility. It also emphasizes CO2 emission compensation and local business accountability.  |
 
-2
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
-
 B-1.1: Impact Pathways
 
 Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (co-benefits)
@@ -1624,13 +1186,6 @@ This approach focuses on pooling resources, sharing best practices, and coordina
 This can be achieved by investing in carbon reduction projects, supporting renewable energy initiatives, or purchasing carbon credits.
 The goal is to balance out the emissions generated and contribute to overall climate sustainability by mitigating the environmental impact of our operations.  |
 
-3
-Ville de Differdange
-
-Net Zero
-Delfferdang 2000
-
-C
 
 B-1.1: Impact Pathways
 
@@ -1638,10 +1193,6 @@ Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (
 Compensation | CO3.1 International offsetting | The project involves lobbying the government to formalize national and international legislation for Carbon Capture and Storage (CCS) and Carbon Capture and Utilization (CCU).
 It also includes reaching out to European cities seeking investors for these initiatives. | The project includes establishing contracts with international Carbon Capture and Storage (CCS) projects, such as those in the Netherlands or Norway.
 It involves cooperation agreements and calculations for CO2eq compensation benefits. | No direct impact. | The focus is on compensating for our CO2 emissions through various measures and strategies.  |
-Ville de Differdange
-Net Zero
-Delfferdange 2030
-C
 
 B-1.1: Impact Pathways
 
@@ -1650,12 +1201,6 @@ B-1.1: Impact Pathways
 |  Compensation | CO4.1 Purchase of international offset certificates (maximum 20% of remaining emissions) | The goal is not to rely on this method as a solution that merely uses money to solve problems. | / | No direct impact. | The focus is on compensating for our CO2 emissions through various measures and strategies.  |
 |   |   |  However, it does provide a degree of flexibility in calculations. This approach allows adaptability in managing and addressing issues, but it should not be seen as a primary or sole solution.  |   |   |   |
 
-5
-Ville de Differdange
-C
-Net Zero
-Delfferdang 2030
-C
 
 B-1.1: Impact Pathways
 
@@ -1663,12 +1208,6 @@ B-1.1: Impact Pathways
 | --- | --- | --- | --- | --- | --- |
 |  Climate adaptation | CA 1.1. Urban development - mineral public squares | The plan involves conducting studies and planning, with the goal of purchasing 5 devices per year. | Implementation of proposed measures includes reducing the temperature of mineralized public spaces. | Tree planting can reduce CO2, with each device compensating 80 kg of CO2eq per year. | Improving quality of life.  |
 
-6
-Ville de Differdange
-C
-Net Zero
-Delfferdang 2030
-C
 
 B-1.1: Impact Pathways
 
@@ -1677,24 +1216,12 @@ Climate adaptation | CA 2.1. Urban development - natural public squares | Planni
 This involves evaluating and developing strategies to expand urban greenery and modify current spaces to withstand and mitigate climate change's effects.
 The goal is to enhance environmental resilience, improve quality of life, and promote sustainable urban development. | Implementation of proposed measures, including tiny forests, green corridors, and water fountains. | Possible reduction of CO2 through tree planting. | Improvement in quality of life.  |
 
-7
-Ville de Differdange
-0
-Net Zero
-Delferdange 2000
-8
 
 B-1.1: Impact Pathways
 
 |  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (co-benefits)  |
 | --- | --- | --- | --- | --- | --- |
 |  Climate adaptation | CA 3.1. Private developments |  |  |  |   |
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
 
 B-1.1: Impact Pathways
 
@@ -1709,14 +1236,6 @@ Over the next three to four years, Differdange will focus on implementing green 
 
 Community commitment will strengthen social cohesion, while local energy resilience and reduced costs will enhance sustainability. Urban revitalization will make neighborhoods safer and more pleasant, boosting local economy. Enhanced cleanliness, recycling initiatives, and increased environmental awareness will further support a healthier and more resilient community.  |
 
-9
-Ville de Differdange
-Net Zero Delferdang 2000
-0
-Ville de Differdange
-Net Zero
-Delfferdange 2030
-C
 
 B-1.1: Impact Pathways
 
@@ -1724,11 +1243,6 @@ B-1.1: Impact Pathways
 | --- | --- | --- | --- | --- | --- |
 |  Social innovation | SI 2.1. Awareness Raising | This is a one-time, time-limited action to raise awareness about waste management issues during the back-to-school period and inform citizens about the participatory workshop scheduled for October 2024. | / | We are raising citizens' awareness about the issue. | The project is increasing the city's reputation for waste management.  |
 
-1
-Ville de Differdange
-
-Net Zero
-Delfferdang 2030
 
 B-1.1: Impact Pathways
 
@@ -1745,10 +1259,6 @@ While the city's website initially has a broader reach than the dedicated site, 
 
 Fostering a culture of sustainability and societal resilience within the community, enhancing local capacities, and encouraging social innovation through the interactivity and collaboration facilitated by the site  |
 
-2
-Ville de Differdange
-Net Zero Delfferdang 2000
-3
 
 B-1.1: Impact Pathways
 
@@ -1756,16 +1266,8 @@ B-1.1: Impact Pathways
 | --- | --- | --- | --- | --- | --- |
 |  Social innovation | SI 4.2.EU Projects | Implementation of the mobile app will be followed by an analysis of the city's heating energy situation. | There will be an increase in local energy production projects, such as energy communities and opportunities to attract third-party investors. | The focus is on the decarbonization of energy production and heating systems. Efforts will include raising public awareness about these issues. | The focus is on enhancing community spirit and fostering new collaborations.  |
 |   |   |  This includes exploring a new approach to district heating networks in Differdange. | Additionally, an overview and planning of a new approach to heating within the city will be undertaken.  |   |   |
-Ville de Differdange
-Net Zero Delfferdang 2030
-4
 
 The different systemic levers and actions can be found underneath in a detailed form.
-Ville de Differdange
-^{}[]
-Net Zero
-Déifférdange 2020
-^{}[]
 # Systemic levers and actions:
 
 Here are the various measures taken within this framework.
@@ -1785,11 +1287,6 @@ Moreover, the city promotes food preservation and sharing through collaboration 
 Differdange is taking significant steps to minimize environmental impact through economic and infrastructural strategies aimed at better waste management. The introduction of waste taxes is a key move designed to incentivize less polluting production practices among businesses and individuals alike. This economic measure is intended to reduce waste generation and encourages more sustainable consumption patterns across the community.
 
 In parallel, the city is also adapting its recycling infrastructures to enhance the management of food waste specifically. Adjustments to recycling facilities are being made to ensure that they are well-equipped to handle and process food waste more efficiently. This not only helps in reducing the environmental footprint but also supports the broader goal of sustainable waste management within the city. Together, these measures represent a proactive approach to waste reduction and resource conservation in Differdange.
-Ville de Differdange
-0
-Net Zero
-Déliferdang
-0
 
 # WM 2.2 Promote reuse
 
@@ -1807,12 +1304,6 @@ Differdange is innovating waste management through several impactful initiatives
 
 Complementing these waste management strategies, Differdange promotes reuse through a second-hand shop located within the recycling park. This shop encourages the community to buy and sell used goods, thereby reducing the need for new products and extending the life cycle of existing items. This initiative not only helps in waste reduction but also fosters a culture of sustainability and responsible consumption within the community. Together, these
 
-6
-Ville de Differdange
-^{}[]
-Net Zero
-Déifférdange 2030
-^{}[]
 measures showcase Differdange's commitment to innovative and sustainable waste management practices.
 
 # WM 3:
@@ -1847,14 +1338,6 @@ Utilizes trees felled by storms that would otherwise decompose in the forest, tu
 
 WM 3.8 SIACH Involvement:
 
-7
-Ville de Differdange
-
-Net Zero
-Déifférdange 2020
-
-C
-
 The Intercommunal Syndicate for the Sanitation of the Chiers Basin focuses on the proper treatment and disposal of wastewater and related waste products.
 
 WM 3.9 Ecotrel:
@@ -1879,13 +1362,6 @@ WM 4:
 
 WM 4.1 CIGL — Vélosbuttek:
 This initiative, managed by the non-profit CIGL (Centre d'Initiative et de Gestion Local), offers a bike shop that employs individuals looking for work, providing them with job training and opportunities. It reflects the city's goal of combining social support with sustainable transport solutions.
-
-8
-Ville de Differdange
-0
-Net Zero
-Déliferdang 2000
-C
 
 WM 4.2 CIGL — Butzebuttik:
 
@@ -1915,11 +1391,6 @@ WM 4.8 Circular Project for Plant Bulbs:
 
 This innovative project focuses on the reuse and sharing of plant bulbs used by the municipality, facilitating community gardening efforts and promoting green spaces.
 
-9
-Ville de Differdange
-Net Zero Delfferdange 2030
-0
-
 # WM 5:
 
 WM 5.1. Gedeco - Association of Municipal Waste Managers:
@@ -1947,17 +1418,6 @@ Similar to Bëschbotz, this program focuses on urban spaces, organizing street c
 WM 6.3. Littering monitoring using an intelligent recognition system:
 
 This idea proposes the use of advanced technology to monitor littering. The system would use intelligent recognition technologies to identify and manage litter in public areas, thus allowing for a more efficient and data-driven approach to tackling litter issues.
-Ville de Differdange
-
-C
-
-Net Zero
-
-Delfferdange
-
-0
-
-C
 
 |  MS | 1 | Home improvements  |
 | --- | --- | --- |
@@ -1987,10 +1447,6 @@ The project to connect residential units to district heating fuelled by pellets 
 
 MS 2.3. Replacement of heating systems in collective residences
 
-1
-Ville de Differdange
-Net Zero Delfferdang 2030
-2
 
 Differdange plans to replace fossil-fuel heating systems in collective residences with renewable energy alternatives, such as geothermal or biomass, to further reduce greenhouse gas emissions.
 
@@ -2019,11 +1475,6 @@ With the commitment of citizens, Differdange plans to develop a wind farm. This 
 MS 3.3. Niederkorn pellet plant:
 
 A district heating system will be set up in Niederkorn, supplying public buildings and a future shopping centre with energy produced from pellets. This demonstrates the town's commitment to using renewable resources for its major energy needs.
-Ville de Differdange
-0
-Net Zero
-Delfferdange 2000
-C
 
 MS 3.4. Pellet boiler house at Aalt Spidol:
 
@@ -2053,9 +1504,6 @@ Differdange is also upgrading lighting systems in sports facilities, replacing h
 
 |  UP | 1 | Architecture - public buildings  |
 | --- | --- | --- |
-Ville de Differdange
-
-Net Zero Delfferdange 2000
 
 |  UP | 2 | Urban spaces  |
 | --- | --- | --- |
@@ -2091,11 +1539,6 @@ With regard to the architecture of private buildings, the city relies on the PAG
 # MT 1:
 
 Differdange takes a proactive approach to public transport management, integrating various initiatives to improve the accessibility and sustainability of urban transport. The DiffBus project is a perfect example of this initiative, offering a free electric bus service linking various districts to key infrastructures, operating every working day. At the same time, the city is developing a general public transport concept, although its role remains advisory to the Ministry of Mobility.
-Ville de Differdange
-0
-Net Zero
-Déliferdang
-0
 
 MT 4:
 
@@ -2112,12 +1555,6 @@ Moreover, Differdange is enhancing the infrastructure for pedestrians with impro
 MT 6:
 
 Differdange is determined to promote soft mobility by integrating various initiatives aimed at facilitating and encouraging non-motorised travel. The town has developed extensive cycle
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
 
 paths to ensure safe and efficient journeys for cyclists. In addition, the Vël'OK program provides self-service bicycles, increasing accessibility to environmentally-friendly transport options. Bike Boxes offer secure parking solutions for bicycles, facilitating the transition between different modes of transport and reducing the risk of theft.
 
@@ -2142,15 +1579,6 @@ Differdange aims to modernise its urban logistics by creating decentralised hubs
 # CO 1.1. Citizen Compensation:
 
 The city offers subsidies for green facades and roofs, providing fruit trees to residents, and subsidies for demolishing stone gardens. These initiatives encourage residents to participate in urban greening efforts, enhancing local biodiversity and reducing urban heat island effects.
-Ville de Differdange
-
-C
-
-Net Zero
-Delfferdange
-0
-
-C
 
 CO 1.2. Building Regulation Adaptation:
 
@@ -2178,14 +1606,6 @@ Scalability of actions: The city plans to scale up these offsetting actions to a
 
 Long-term support: Differdange's commitment goes beyond immediate actions, with a plan to continually support and expand offset efforts in the ProSud region, to create a lasting impact on the local climate and environment.
 
-8
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
-
 # CO 3:
 
 CO 3.1. International offsetting:
@@ -2210,12 +1630,6 @@ CA 1.1. Urban planning - Mineral public squares:
 Improving adaptation to the climate and quality of life is achieved by cooling mineral public squares using advanced technical solutions. This approach seeks not only to reduce the effects of the urban heat island but also to make these spaces more pleasant for the public.
 
 # AC 2:
-Ville de Differdange
-
-Net Zero
-Déifférdange 2020
-
-C
 
 CA 2.1. Urban planning - Natural public squares:
 
@@ -2246,12 +1660,6 @@ SI 1:
 SI 1.1. Thematic Workshops:
 
 These workshops engage citizens on various aspects of sustainability, aiming to collectively shape the city's future. In 2023, a workshop titled "Benchmark: Living Sustainably in Differdange" will initiate discussions. Subsequent workshops in 2024 will focus on "Energy: Together Towards Net Zero!" and "Mobility: Together Towards Net Zero!" targeting zero-net solutions in energy and transport. The theme continues with "Waste: Together Towards Net Zero Waste Management!" Additionally, a 2025 workshop "Compensation: How, Why,
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
 
 When? Achieving Net Zero in Differdange by 2030" will delve into compensation strategies for reaching net-zero emissions. "Mobility II: Reinventing Mobility!" and "Zukunftswerkstatt - Workshop of the Future: Together Towards a Net Zero Future!" scheduled for 2025-2026, are designed to revisit and innovate mobility strategies and broader sustainability goals.
 
@@ -2279,11 +1687,6 @@ SI 3.1 Online communication:
 
 Differdange has put in place a digital strategy including the creation of a specific landing page for the Net Zero 2030 project (www.netzero2030.lu) planned for 2024, designed to centralise all information and progress related to this project. A dedicated website covering all the projects in the action plan for 2024-2025 will also be developed. At the same time, the city is regularly updating its official website (www.differdange.lu) with content relating to the various municipal initiatives. In addition, social media, especially Facebook and Instagram, are actively used to disseminate information and engage the local community.
 
-1
-Ville de Differdange
-Net Zero Delfferdange 2030
-2
-
 SI 3.2 Press articles:
 
 The city also communicates through traditional media by sending out regular press releases and arranging interviews with journalists. These efforts aim to keep the public informed and engaged, and to ensure widespread media coverage of developments related to its social innovation projects.
@@ -2305,9 +1708,6 @@ SI 4.2 Heat bridge:
 As part of the "Life" European project, Differdange is conducting a thorough analysis of its current heating energy situation to identify inefficiencies and areas for improvement.
 
 The project aims to redesign the city's heating networks, implementing innovative solutions to enhance the sustainability and efficiency of the city's heating infrastructure.
-Ville de Differdange
-Net Zero Delfferdang 2000
-C
 
 # Module B-2 Climate Neutrality Portfolio Design
 
@@ -2323,10 +1723,6 @@ C
 |  5 | Idea: Ground fridge | Ground fridge is a modern take on the traditional root cellar, designed to keep produce fresh without using electricity. It serves as a practical solution for those looking to store fresh produce sustainably, offering a convenient, movable setup that can be placed wherever needed.  |
 |  6 | Idea: Food sharing fridge | A food sharing fridge is an innovative community-based solution that allows individuals to share surplus food. It is designed for those committed to reducing food waste and fostering communal support by providing a space where anyone can leave or take food. This initiative not only helps in minimizing food waste but also assists in strengthening local connections through shared resources. Ideal for urban environments, it acts as a communal pantry accessible to all, promoting sustainability and mutual aid within communities.  |
 |  7 | What food when? - Campaign | Communication campaign in the DiffMag on the foods to consume during this month.  |
-Ville de Differdange
-
-Net Zero
-Déliferdang 2030
 
 |  8 | Workshops on food waste | Workshops on food waste with SOS Faim and MicroTarians once a month  |
 | --- | --- | --- |
@@ -2337,11 +1733,7 @@ Déliferdang 2030
 |  12 | Repair Cafés | The concept of "Repair Café" effectively contributes to waste reduction by encouraging the repair of used items rather than their replacement. These community workshops, where volunteers help repair household items, electronics and more, extend the life of products and raise awareness of the importance of recycling and conserving resources.  |
 |  13 | Idea: Sharing platform | Online sharing platforms effectively reduce waste by promoting the shared use of goods rather than their individual acquisition. By connecting individuals willing to lend or borrow items, these platforms extend the life of products and reduce the need to produce new goods.  |
 
-4
-Ville de Differdange
-Net Zero
 Délibération 2000
-C
 
 |   |  | This process not only helps to reduce waste but also raises awareness among users of more responsible and sustainable consumption.  |
 | --- | --- | --- |
@@ -2352,12 +1744,7 @@ C
 |  18 | Idea: Waste compactors | The use of waste compactors in public garbage cans is an effective approach to increase waste storage capacity and reduce collection frequency. These devices make it possible to compress waste on site, reducing its volume and minimizing the visual impact of accumulated waste. As a result, public spaces remain cleaner and more enjoyable for the community, while optimizing resources devoted to waste management.  |
 |  19 | Idea: Garbage fill level sensors | The establishment of a second-hand store within the Differdange recycling park offers an innovative solution to reuse objects instead of throwing them away. This initiative encourages responsible consumption, reduces waste and supports the local economy by offering products at a lower cost. It is also a place of awareness where citizens can learn about the importance of recycling and reuse for sustainable development.  |
 
-5
-Ville de Differdange
-
-Net Zero
 Délibération
-0
 
 20 | Second-hand store in the recycling park | Establishing a second-hand shop within Differdange’s recycling park could significantly contribute to waste reduction and support the city’s objectives under the 100 Net Zero Cities mission. By facilitating the reuse of items, the shop would directly decrease the volume of waste heading to landfills and incinerators, promoting a more circular economy. This initiative would not only extend the life cycle of products but also reduce the demand for new resources, lowering the overall carbon footprint associated with production, transport, and disposal.
 
@@ -2366,14 +1753,8 @@ WM 3 Improving the efficiency of waste processing
 22 | Sidor | The city of Differdange, politically represented in the SIDOR trade union, seeks to influence management to invest in new technologies or at least carry out a feasibility study. The objective is to increase the energy efficiency of waste incineration, thus optimizing the production of thermal and electrical energy. This approach is part of a vision of continuous improvement of the union’s environmental performance.
 23 | Idea: Sidor — installation of a hydrogen station next to the incineration site | The City, politically represented in the union’s office, strives to influence management to support its initiatives. Emphasis is placed on carrying out a feasibility study and lobbying efforts. The ultimate objective is to obtain a political decision favourable to the project. This approach aims to strengthen the City’s commitment to supporting and developing projects of common interest.
 
-6
-Ville de Differdange
-C
 Net
 Zero
-Delftredang
-0
-C
 
 |  24 | SuperDrecksKësch – problematic waste management | VDD plays a purely advisory role by providing feedback and developing ideas and projects in collaboration with SDK. It also benefits from the services offered. The short-term goal is to increase the recycling rate of problematic waste, focusing on solutions for residential buildings and integrating SDK guidelines. The goal is to increase the recycling rate of problematic waste and change attitudes towards the purchase of problematic products upstream.  |
 | --- | --- | --- |
@@ -2384,14 +1765,8 @@ C
 |  29 | SIACH | The City, with its representatives in the union office, will try to influence management to direct decisions toward investments in facilities. A feasibility study will be launched to assess these investments. This should improve the quality of treated water, identify sustainable solutions for sewage sludge disposal and reduce methane leakage.  |
 |  30 | Ecotrel | The City could strengthen its commitment to the national "Social ReUse" initiative by developing local approaches. In the short term, it would be  |
 
-7
-Ville de Differdange
-C
 Net
 Zero
-Delfferdange
-0
-C
 
 |   |  | possible to request the opening of a local resale point, instead of Helmsange. This would establish a local point of sale, expand the supply of second-hand products, and thus strengthen the local circular economy.  |
 | --- | --- | --- |
@@ -2402,12 +1777,7 @@ C
 |  35 | Benjeshecken – Recovery of green waste in situ | This involves the creation of hedgerows from pruning waste, which provides habitat for wildlife and aids in seed dispersal, enhancing local biodiversity.  |
 |  WM 4 – Circular economy |   |   |
 
-8
-Ville de Differdange
-0
-Net Zero
 Délibération ZOND
-C
 
 |  36 | CIGL — Vélosbuttek | The VDD will launch second-hand bicycles on the market. This project will contribute to the increase in services offered by the VDD and promote an increased culture of bicycle use.  |
 | --- | --- | --- |
@@ -2419,14 +1789,6 @@ C
 |  42 | HOPLR | A local social network will be set up to strengthen citizenship and foster exchanges between citizens. In the medium term, we will develop an integrated platform for services, product exchange, event organisation and information dissemination.  |
 |  43 | Idea: Plant bulb circularity project | The City proposes the reuse of perennial plants by distributing bulbs to citizens at the end of each season. This project will aim to reduce green waste, increase citizen satisfaction and increase biodiversity.  |
 
-9
-Ville de Differdange
-
-Net Zero
-Déliferdang 2000
-
-C
-
 |  WM 5 – Organisational Optimisation |   |   |
 | --- | --- | --- |
 |  44 | Gedeco — Association of Municipal Waste Managers | The VDD participates in the discussion of legislative and technical texts, while advising the national government. We are considering joining the European association Municipal Waste Europe (MWE). We aim to integrate Gedeco's ideas into future Grand Ducal regulations, thus establishing a stronger link between legislators and local (municipal) implementers.  |
@@ -2435,12 +1797,6 @@ C
 |  WM 6 - Littering |   |   |
 |  47 | Bëschbotz | The VDD project aims to change citizens' perceptions of littering. Efforts will be focused on awareness campaigns and educational initiatives to change attitudes towards waste management. After 3 to 4 years, these mentality changes should lead to a significant reduction in littering behaviors, illustrating an improvement in environmental awareness and cleanliness practices among the population.  |
 |  48 | CleanChallenge | The VDD project focuses on sensitizing high school students to the challenges of littering. The focus will be on initiatives to change the mindset of young people on this subject, through educational campaigns and awareness-raising programmes. In the longer term, this shift in mentality is expected to result in a significant decrease in littering  |
-
-0
-Ville de Differdange
-Net Zero
-Déliferdang 2030
-C
 
 |   |  | behaviours, reflecting increased awareness and commitment to cleanliness and waste management.  |
 | --- | --- | --- |
@@ -2452,12 +1808,6 @@ C
 |  MS 2 - Decarbonisation |   |   |
 |  52 | Decarbonization of heating systems in single-family homes Request for subsidies from the State in collaboration with the Klima Agency | In collaboration with SudEnergie, we aim to decarbonize heating systems. In 2021, 13 units were connected to district heating, with a projected total of 1,315 units by 2030, of which 451 in Mathendal and about 300 in Woiwer. We plan to install heat pumps in about 10-12  |
 
-1
-Ville de Differdange
-Net Zero
-Déliferdang 2030
-C
-
 |   |  | residences per year, representing 30% of the potential of the 300 units. We will continue to install 10-12 residences per year.  |
 | --- | --- | --- |
 |  53 | Switch to pellet district heating or biomass of dwelling-house units Connecting dwelling-houses to district heating | The objective is to increase the connection of homes to district heating in 5 networks, with 90 new units planned in the short term. In total, 275 units will be connected in the coming years, increasing the use of district heating.  |
@@ -2466,12 +1816,6 @@ C
 |  56 | Connection of funicular tray, blast furnace and CreativeHub 1535 to Arcelor Mittal energy recovery Use of residual energy from the steel industry. | The joint project of VDD, LuxEnergie and Arcelor Mittal foresees in-depth studies to assess the technical feasibility. Late results will aim to implement the connection based on the findings of these studies.  |
 |  57 | Idea: Decarbonisation of small maintenance equipment | A political decision has been taken to upgrade maintenance equipment. In the long term, this will lead to the gradual replacement of appliances such as hedge trimmers, mowers and chainsaws, favouring more environmentally friendly alternatives.  |
 |  MS 3 – Energy production |   |   |
-
-2
-Ville de Differdange
-
-Net Zero
-Déliberdang 2000
 
 |  58 | Production of solar energy on the real estate assets of the VDD Find private partners to finance, carry out and operate the implementation of the project. | The project foresees the carrying out of studies and the execution of 50% of the potential in the first years. The ultimate goal is to complete the remaining 50%, thus ensuring full implementation.  |
 | --- | --- | --- |
@@ -2483,11 +1827,6 @@ Déliberdang 2000
 |  63 | Optimization of district heating networks in collaboration with a private partner Find a private partner to expand, optimize and operate district heating networks in the City's territory. | VDD is working to technically optimize the existing network, while negotiating with a private partner to support this approach. In the short term, studies will be carried out on optimisation. Within 3-4 years, the implementation of the improvements will be carried out to increase the efficiency of the network.  |
 |  64 | Idea: Solar energy production on agricultural land/areas of the VDD Find private partners to finance, carry out and operate the implementation of the project in collaboration with the competent state authorities. | The VDD initiates a project with the objective of assessing the feasibility of the planned actions. The first years will be dedicated to carrying out feasibility studies. In the longer term, the first concrete steps will be taken to ensure the success of the project.  |
 
-3
-Ville de Differdange
-0
-Net Zero
-Dofferdang 2000
 
 65 | Urban lighting - transition to smart LED lighting Apply for a grant from the State and establish a global tender to convert all light points into smart LEDs. | The VDD aims to modernise street lighting by integrating smart LEDs. The goal is to plan the transition to this technology. Ultimately, the VDD aims to equip its entire network with smart LEDs, thus enabling a more economical and sustainable management of urban lighting.
 66 | Lighting of sports fields - replacement of halogenic headlights with LED headlights. | The first changes are aimed at preparing the transition to smart LEDs. The goal is to achieve this complete transition to smart LEDs within 3 to 4 years, with full implementation of this advanced technology by this time.
@@ -2501,11 +1840,6 @@ Dofferdang 2000
 **Mobility and transport**
 **MT 1 - Public transport - bus**
 
-4
-Ville de Differdange
-0
-Net Zero
-Dofferdang
 
 |  70 | DiffBus - VDD project | This project foresees an adaptation of the transmission network to improve its performance. This iterative approach aims to increase use by citizens and reduce individual motorised mobility by promoting electric buses. The aim is to maintain the attractiveness of the network and encourage regular use, thus consolidating the environmental and social benefits of this initiative.  |
 | --- | --- | --- |
@@ -2515,11 +1849,6 @@ Dofferdang
 |  74 | Dinola - VDD Project. Address-to-address transport service on request. | The VDD project provides for the establishment of an address-to-address service on request. The project will start with the purchase of a new electric bus. The service will be expanded to cover a wider territory, responding to growing demand and improving mobility in the region.  |
 |  75 | Adapto - Advisory role only to the MMTP. | The VDD’s advisory role to the MMTP focuses on promoting the electrification of the bus fleet serving the territory of Differdange. The VDD will actively seek the electrification of these buses. The objective is  |
 
-5
-Ville de Differdange
-0
-Net Zero
-Dofferdang
 
 |   |  | to have implemented the complete electrification of this park, thus contributing to a more sustainable mobility in the region.  |
 | --- | --- | --- |
@@ -2533,12 +1862,7 @@ Dofferdang
 |  MT 3 - Motorised transport - reduction  |   |   |
 |  82 | Idea: Car sharing - Reduction of individual motorized transport | For the idea of **car sharing**, the first changes will consist in a political positioning in favor of the establishment of a car sharing system for the southern municipalities, accompanied by a campaign of  |
 
-6
-Ville de Differdange
-0
-Net Zero
 Délibération ZOND
-7
 
 |   |  | awareness and creation of desire around the concept. This lobbying work aims to prepare the ground for the adoption of this mobility solution. In the longer term, the results could include possible feasibility studies for the project.  |
 | --- | --- | --- |
@@ -2547,10 +1871,6 @@ Délibération ZOND
 |  85 | Day without cars 22 September | The Car-Free Day, scheduled for September 22, aims to increase the frequency of this event. The late results will aim to define specific areas of the city that could be transformed into car-free areas, in order to promote sustainable transport alternatives and improve urban air quality.  |
 |  86 | PARKing Day, 20 September - Reimagining public space | PARKing Day, scheduled for 20 September, will be actively supported by the City in the first 1-2 years. Late results will include an assessment of citizens’ outcomes and feedback to reassess and potentially redesign the use of public space, aiming to optimise its use for similar initiatives in the future.  |
 |  87 | Provision of bicycle spaces during the construction of the new City car park at the entrance to the city. Reduce motorised traffic within the city | During the construction of the new City Parking at the entrance of the city, bicycle spaces will be integrated. Plans will be developed and work could begin. In the long term, the project will be completed and the bicycle spaces will be put into operation, promoting safe access for cyclists.  |
-Ville de Differdange
-0
-Net Zero
-Dofferdang 2000
 
 |  88 | Channel and reduce flows through the guidance system to public car parks. | Adaptation of the existing guidance system to a more efficient system. Iterative adaptation of the system to new realities. Reduced traffic in search of a parking space.  |
 | --- | --- | --- |
@@ -2563,14 +1883,8 @@ Dofferdang 2000
 |  MT 5 - Soft mobility – empowering walkability  |   |   |
 |  94 | Pedestrian guidance system | To improve urban accessibility, the pedestrian guidance system project plans to expand the existing network and incorporate new sites.  |
 
-8
-Ville de Differdange
-C
 Net
 Zero
-Delfferdange
-0
-C
 
 |   |  | Expected results will include an iterative adaptation of the system to refine and optimize guidance based on feedback and user needs.  |
 | --- | --- | --- |
@@ -2582,14 +1896,7 @@ C
 |  99 | Cycle paths | The cycle path development project starts with a targeted improvement of the existing network. The aim is to widen and optimise cycling networks to enhance connectivity and further encourage cycling.  |
 |  100 | Vël’OK - Bike sharing - Bike sharing scheme | The Vël’OK project starts with the electrification of the fleet and the expansion of existing stations, planned for the first 1-2 years. The aim is to add 3-4 new stations per year, with the aim of covering the entire municipal territory by 2026.  |
 
-9
-Ville de Differdange
-
-Net Zero
 Délibération
-0
-
-0
 
 |  101 | Bike Boxes | The Bike Boxes project provides for the addition of bicycle parking boxes on school sites. In the medium term, the system will be adjusted iteratively to meet growing needs.  |
 | --- | --- | --- |
@@ -2602,10 +1909,7 @@ Délibération
 |  108 | Subsidies for the purchase of electric vehicles and infrastructure (booths) | The changes include the maintenance of existing subsidies for the purchase of electric vehicles and charging infrastructure. A reassessment of the subsidies will be carried out to adjust the aid according to needs and market developments.  |
 |  MT 7 - Logistics |   |   |
 |  109 | Approach of "big players" (Post, CFL ...) for the establishment of these hubs and for their operation. | Differdange aims to modernize its urban logistics by creating decentralized hubs at the entrances to the city. This initiative involves  |
-Ville de Differdange
-Net Zero
 Délibération 2000
-C
 
 |   |  | working with major players such as the Post Office and the CFL to set up and manage these hubs. The main objective is to decarbonise last-mile logistics, promoting solutions such as cargo bikes and other eco-responsible transport alternatives. These hubs will serve as collection and distribution points to optimize transport flows and reduce associated emissions, as part of a broader vision of sustainable mobility and reducing the city's carbon footprint.  |
 | --- | --- | --- |
@@ -2617,10 +1921,6 @@ C
 |  113 | Offering fruit trees to citizens | The city offers fruit trees to citizens.  |
 |  114 | Subsidies for the demolition of stone gardens | The city encourages the demolition of stone gardens through subsidies under the DiffPrimes program.  |
 
-1
-Ville de Differdange
-
-Net Zero
 Délibération ZOND
 
 |  115 | Idea: PV and/or green roof carports | The city could encourage the installation of green roofs or photovoltaic panels on carports through subsidies under the DiffPrimes program.  |
@@ -2632,12 +1932,6 @@ Délibération ZOND
 |  120 | Creation of the carbon capture facility. | The city is considering the creation of a carbon capture facility in partnership with ArcelorMittal. The next 1-2 years will be dedicated to feasibility studies to assess the viability of the project. This collaboration will continue over 3-4 years with in-depth studies, aiming to establish an effective solution to reduce CO2 emissions, thus strengthening the city’s commitment to the green transition.  |
 |  121 | Storage of CO2 in tar - Karpp-Kneipp pilot project for future road renewal | The Karpp-Kneipp pilot project aims to prepare the future renewal of the city’s roads. The first years will be devoted to a feasibility study and the establishment of a pilot street to test new approaches. The aim is to systematize these new methods for all road and road renovations,  |
 
-2
-Ville de Differdange
-Net Zero
-Delfferdange 2000
-C
-
 |   |  | bringing sustainable and innovative improvements to urban infrastructure.  |
 | --- | --- | --- |
 |  122 | CO2 storage in concrete (CCU) - Set as standard in municipal tender dossiers | The city is committed to integrating a new standard into municipal tender dossiers, aimed at promoting the use of CCU concrete. The "Leitfaden" will be adapted to reflect this change. In the longer term, within 3 to 4 years, all new concrete constructions will have to be made with CCU concrete, promoting more sustainable construction practices.  |
@@ -2646,14 +1940,6 @@ C
 |  125 | Subsidy for citizens / contractors using timber | The city is introducing a subsidy to encourage citizens and entrepreneurs to use timber. The Diff Primes catalogue will be adjusted to include these new aids. The aim is to increase the compensation share for timber construction projects, thus supporting more sustainable and environmentally friendly construction practices.  |
 |  126 | Creation of a municipal system for the sale of local certificates with sale to the private sector | The city is considering the creation of a communal system for the sale of local CO2 storage certificates for the private sector. A census of all existing and planned CO2 storage projects will be carried out, accompanied by the development of the necessary steps and the registration of projects. The system will enable the sale of certificates and ensure rigorous monitoring to ensure their compliance and effectiveness.  |
 |  CO 2 - Regional offsetting |   |   |
-
-3
-Ville de Differdange
-
-Net Zero
-Déliferdang 2050
-
-C
 
 |  127 | Plan compensation actions in the ProSud / TNT region - Think about scaling. 2050 in the ProSud region. | The city plans for the long term by considering the extension of carbon capture and storage (CCS) initiatives by 2050 in the ProSud region. The objective will be to sensitize the member municipalities of ProSud to the importance of collaborating on these projects. The aim will be to develop synergies between municipalities in order to maximise the effectiveness of actions to reduce CO2 emissions.  |
 | --- | --- | --- |
@@ -2665,14 +1951,7 @@ C
 |  **Climate adaptation**  |   |   |
 |  **CA 1 - Urban development - mineral public squares**  |   |   |
 
-4
-Ville de Differdange
-
-Net Zero
 Délibération
-0
-
-5
 
 |  131 | Public places belonging to the VDD | The city of Differdange focuses on improving its public squares. Planning and studies will be carried out to identify the best development solutions. The proposed measures will be implemented, transforming these spaces into more welcoming and sustainable places to live for citizens.  |
 | --- | --- | --- |
@@ -2684,13 +1963,8 @@ Délibération
 |  135 | Adapt building regulations encouraging entrepreneurs to build sustainably (e.g. a green facade gives the right to add a floor) | The city of Differdange is leading entrepreneurs to adopt climate adaptation measures thanks to the change in building regulations.  |
 |  136 | Promotion of forest baths by installing boxes to collect smartphones at the entrance of the forest and by setting up a bathtub in the forest to create an "instagrammable" place. | The promotion of forest bathing includes installing boxes to collect smartphones at the entrance to the forest and setting up a bathtub to create an "instagrammable" place. The first changes involve the installation of this equipment. In the long term, the objective is to increase the number of people enjoying forest bathing and to promote a change of mentality towards these practices.  |
 |  137 | European Interreg project – Cool Neighborhoods | As part of the European Interreg project, the first changes are the creation of a green facade in a school located in the center of the city. In  |
-Ville de Differdange
 
-Net Zero
 Délibération
-0
-
-6
 
 |   |  | the long term, this project aims to raise public awareness of environmental issues related to urban planning.  |
 | --- | --- | --- |
@@ -2700,10 +1974,6 @@ Délibération
 |  139 | Energy: Together towards net zero energy! (2024) | The project "Energy: Together towards net-zero energy!" launched in 2024 aims to mobilize the community around the energy transition. Collaborative workshops and educational sessions will be organized to raise participants' awareness of energy issues and generate citizen interest. The aim is to turn this interest into concrete actions, with increased adoption of sustainable energy solutions by residents, leading to a visible reduction in emissions and an improvement in local energy efficiency.  |
 |  140 | Mobility: together towards net-zero mobility! (2024) | The project "Mobility: together towards net-zero mobility!" launched in 2024 aims to engage citizens in the transition towards more sustainable modes of transport. Collaborative workshops and awareness campaigns will be organised to inform participants of the challenges and encourage their involvement. The aim is to set new sustainable mobility standards with increased adoption of public transport, cycling and walking, thereby reducing the use of personal vehicles and improving urban mobility while enhancing citizen participation in planning decisions.  |
 |  141 | Waste: together towards net-zero waste management! (2024) | The project "Waste: together towards net-zero waste management!" launched in 2024 focuses on improving waste management. Educational sessions and collaborative workshops will be organized to raise awareness of the issues and stimulate citizen interest. The aim is to strengthen the reduction, reuse and recycling of waste by citizens and  |
-Ville de Differdange
-
-Net Zero
-Déliberdang 2030
 
 |   |  | local businesses, leading to a shift towards more sustainable and integrated waste management practices in the daily lives of residents.  |
 | --- | --- | --- |
@@ -2712,14 +1982,7 @@ Déliberdang 2030
 |  144 | Zukunftswerkstatt - Workshop of the future: All together towards a net-zero future! (2025-2026) | The project "Zukunftswerkstatt - Workshop of the future: All together towards a net-zero future!" for 2025-2026 aims to mobilize all population groups around a common mission of sustainability. Targeted workshops will be organised to engage citizens, create integrated networks and train multipliers and influencers within each group. A culture of sustainability will be firmly rooted in the community, with sustainable development initiatives regularly put in place and supported, and strengthening local policies aimed at total carbon neutrality.  |
 |  145 | Mobility: online survey (2024) | In 2024, the city will launch an online mobility survey to identify key bottlenecks and opportunities for improvement. The data will be analysed to implement quick results-based solutions and increase citizen engagement through regular feedback. These efforts will lead to substantial improvements in urban planning and mobility management in  |
 
-7
-Ville de Differdange
-
-Net Zero
 Délibération
-0
-
-8
 
 |   |  | Differdange, based on concrete data and continuous feedback from citizens.  |
 | --- | --- | --- |
@@ -2731,13 +1994,8 @@ Délibération
 |  149 | Dedicated website - Creation of a landing page dedicated to the project (2024) - www.netzero2030.lu | In 2024, a landing page dedicated to the "Net Zero 2030" project will be launched on www.netzero2030.lu. This page will serve as a focal point to provide information, regular updates and educational resources to engage the public. The site will evolve into a comprehensive portal, with interactive features, progress reports and a hub for all project initiatives, increasing long-term engagement and visibility.  |
 |  150 | Development of a dedicated website listing all the projects selected in the action plan (2024-2025) | Between 2024 and 2025, a dedicated website will be developed to centralize all projects of the Net Zero action plan. The site will provide detailed information on each project, serving as a platform for education and public engagement. The site will become an essential resource for the community, decision-makers and partners, facilitating collaboration and transparency of initiatives and successes.  |
 |  151 | Website of the City of Differdange - Content creation for the odfficial website of the City of Differdange (www.differdange.lu) | Content will be created for the official website of the city of Differdange (www.differdange.lu), reflecting the information of the dedicated site. Links will be established to the full site, thus integrating the contents in a fluid and consistent way.  |
-Ville de Differdange
 
-Net Zero
 Délibération
-0
-
-9
 
 |  152 | Social media - Use of Facebook and Instagram accounts of the City of Differdange | The wide-ranging Facebook and Instagram accounts of the City of Differdange will be used for the mission. There is no plan to create accounts dedicated specifically to this mission in the first two years.  |
 | --- | --- | --- |
@@ -2747,10 +2005,6 @@ Délibération
 |  SI 4 – EU Projects |   |   |
 |  156 | ClimaBorough | Simplifying investment in renewable energy starts with the implementation of a mobile application. In the longer term, this initiative aims to increase the number of energy production projects at the local level, such as energy production communities and attracting third-party investors for these projects.  |
 |  157 | Heat bridge | As part of the European project "Life", the first changes include an analysis of the energy situation of heating and the adoption of a new approach for heating networks in Differdange. The project aims to develop an overview and design a new strategy for district heating, with a direct impact on decarbonisation and emission reduction.  |
-Ville de Differdange
-Net Zero
-Déliferdang 2020
-C
 
 # 5.2 Module B-2 Climate Neutrality Portfolio Design
 
@@ -2764,11 +2018,6 @@ Differdange has implemented a comprehensive approach to addressing local food is
 Moreover, the city promotes food preservation and sharing through collaboration with a local cannery and the installation of shared underground refrigerators that help keep food fresh for longer periods. Complementing these practical measures are educational campaigns run in the local magazine, alongside workshops for children that teach them about the origins of food and the importance of respecting our food sources. Through these multifaceted efforts, Differdange is actively working towards a more sustainable and conscious approach to food consumption and waste.  |
 Reference to impact pathway | Field of action | Waste and circular economy
 Systemic lift | Reduction of food waste
-Ville de Differdange
-0
-Net Zero
-Dépferdange 2000
-C
 
 Outcome (according to module B-1.1) | In Differdange, initial food waste reduction efforts have focused on citizen engagement and AI-enhanced smart bins, achieving up to 50% kitchen waste reduction. The city is also supporting local produce and organic farming through educational programs.
 
@@ -2781,12 +2030,6 @@ Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
 GHG emissions reduction estimate (total) per emission source sector | /
 Total costs and costs by CO2e unit | /
-
-1
-Ville de Differdange
-Net Zero
-Delfferdange 2030
-C
 
 # B-2.2: Individual action outlines
 
@@ -2806,13 +2049,6 @@ Outcome (according to module B-1.1) | In Differdange, initial food waste reducti
 
 Future plans include formalizing these initiatives with an advisory council, doubling local food production, and improving storage. The goal is to |
 
-2
-Ville de Differdange
-0
-Net Zero
-Déliferdang 2030
-3
-
 |   |  | integrate sustainable practices into long-term strategies, increase the use of seasonal vegetables in public dining, and shift public attitudes towards rescued food.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Ecological service  |
@@ -2823,10 +2059,6 @@ Déliferdang 2030
 |   |  Removed/substituted energy, volume or fuel type | /  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | /  |
 |   |  Total costs and costs by CO2e unit | /  |
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-4
 
 # B-2.2: Individual action outlines
 
@@ -2843,11 +2075,6 @@ Systemic lift | Reduction of food waste
 Outcome (according to module B-1.1) | In Differdange, initial food waste reduction efforts have focused on citizen engagement and AI-enhanced smart bins, achieving up to 50% kitchen waste reduction. The city is also supporting local produce and organic farming through educational programs.
 
 Future plans include formalizing these initiatives with an advisory council, doubling local food production, and improving storage. The goal is to integrate sustainable practices into long-term strategies, increase the use of seasonal vegetables in |
-Ville de Differdange
-0
-Net Zero
-DépPerdang 2030
-5
 
 |   |  | public dining, and shift public attitudes towards rescued food.  |
 | --- | --- | --- |
@@ -2859,10 +2086,6 @@ DépPerdang 2030
 |   |  Removed/substituted energy, volume or fuel type | /  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | /  |
 |   |  Total costs and costs by CO2e unit | /  |
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-6
 
 # B-2.2: Individual action outlines
 
@@ -2880,11 +2103,6 @@ Systemic lift | Reduction of food waste
 Outcome (according to module B-1.1) | In Differdange, initial food waste reduction efforts have focused on citizen engagement and AI-enhanced smart bins, achieving up to 50% kitchen waste reduction. The city is also supporting local produce and organic farming through educational programs.
 
 Future plans include formalizing these initiatives with an advisory council, doubling local food production, and improving storage. The goal is to integrate sustainable practices into long-term  |
-Ville de Differdange
-0
-Net Zero
-Déliferdang
-0
 |   |  | strategies, increase the use of seasonal vegetables in public dining, and shift public attitudes towards rescued food.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Ecological service  |
@@ -2895,11 +2113,6 @@ Déliferdang
 |   | Removed/substituted energy, volume or fuel type | /  |
 |   | GHG emissions reduction estimate (total) per emission source sector | /  |
 |   | Total costs and costs by CO2e unit | /  |
-7
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-8
 
 # B-2.2: Individual action outlines
 
@@ -2916,11 +2129,6 @@ Moreover, the city promotes food preservation and sharing through collaboration 
 Reference to impact pathway | Field of action | Waste and circular economy
 Systemic lift | Reduction of food waste
 Outcome (according to module B-1.1) | In Differdange, initial food waste reduction efforts have focused on citizen engagement and AI-enhanced smart bins, achieving up to 50% kitchen waste reduction. The city is also supporting local
-Ville de Differdange
-0
-Net Zero
-Dépferdange 2000
-9
 
 produce and organic farming through educational programs.
 Future plans include formalizing these initiatives with an advisory council, doubling local food production, and improving storage. The goal is to integrate sustainable practices into long-term strategies, increase the use of seasonal vegetables in public dining, and shift public attitudes towards rescued food.  |
@@ -2932,10 +2140,6 @@ Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
 GHG emissions reduction estimate (total) per emission source sector | /
 Total costs and costs by CO2e unit | /
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-0
 
 # B-2.2: Individual action outlines
 
@@ -2949,11 +2153,6 @@ Differdange has implemented a comprehensive approach to addressing local food is
 
 Moreover, the city promotes food preservation and sharing through collaboration with a local cannery and the installation of shared underground refrigerators that help keep food fresh for longer periods. Complementing these practical measures are educational campaigns run in the local magazine, alongside workshops for children that teach them about the origins of food and the importance of respecting our food sources. Through these multifaceted efforts, Differdange is actively working towards a more sustainable and conscious approach to food consumption and waste.  |
 Field of action | Waste and circular economy
-Ville de Differdange
-0
-Net Zero
-Dédiendang 2030
-C
 
 |  Reference to impact pathway | Systemic lift | Reduction of food waste  |
 | --- | --- | --- |
@@ -2963,12 +2162,6 @@ C
 |   |  Removed/substituted energy, volume or fuel type | /  |
 |  Impact | GHG emissions reduction estimate (total) per emission source sector | /  |
 |   |  Total costs and costs by CO2e unit | /  |
-
-1
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-2
 
 # B-2.2: Individual action outlines
 
@@ -2987,12 +2180,6 @@ Systemic lift | Reduction of food waste
 Outcome (according to module B-1.1) | In Differdange, initial food waste reduction efforts have focused on citizen engagement and AI-enhanced smart bins, achieving up to 50% kitchen waste reduction. The city is also supporting local produce and organic farming through educational programs.
 
 Future plans include formalizing these initiatives with an advisory council, doubling local food production, and improving storage. The goal is to |
-Ville de Differdange
-0
-Net Zero
-Dépferdange
-0
-3
 
 |   |  | integrate sustainable practices into long-term strategies, increase the use of seasonal vegetables in public dining, and shift public attitudes towards rescued food.  |
 | --- | --- | --- |
@@ -3004,10 +2191,6 @@ Dépferdange
 |   |  Removed/substituted energy, volume or fuel type | /  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | /  |
 |   |  Total costs and costs by CO2e unit | /  |
-Ville de Differdange
-Net Zero
-Déifférdange 2020
-4
 
 # B-2.2: Individual action outlines
 
@@ -3025,11 +2208,6 @@ Systemic lift | Reduction of food waste
 Outcome (according to module B-1.1) | In Differdange, initial food waste reduction efforts have focused on citizen engagement and AI-enhanced smart bins, achieving up to 50% kitchen waste reduction. The city is also supporting local produce and organic farming through educational programs.
 
 Future plans include formalizing these initiatives with an advisory council, doubling local food production, and improving storage. The goal is to integrate sustainable practices into long-term  |
-Ville de Differdange
-0
-Net Zero
-Déliferdang 2030
-5
 
 |   |  | strategies, increase the use of seasonal vegetables in public dining, and shift public attitudes towards rescued food.  |
 | --- | --- | --- |
@@ -3041,10 +2219,6 @@ Déliferdang 2030
 |   |  Removed/substituted energy, volume or fuel type | /  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | /  |
 |   |  Total costs and costs by CO2e unit | /  |
-Ville de Differdange
-Net Zero
-Déifférdange 2020
-6
 
 # B-2.2: Individual action outlines
 
@@ -3063,11 +2237,6 @@ Systemic lift | Reduction of food waste
 Outcome (according to module B-1.1) | In Differdange, initial food waste reduction efforts have focused on citizen engagement and AI-enhanced smart bins, achieving up to 50% kitchen waste reduction. The city is also supporting local produce and organic farming through educational programs.
 
 Future plans include formalizing these initiatives with an advisory council, doubling local food production, and improving storage. The goal is to integrate sustainable practices into long-term |
-Ville de Differdange
-0
-Net Zero
-Déliferdang 2030
-7
 
 |   |  | strategies, increase the use of seasonal vegetables in public dining, and shift public attitudes towards rescued food.  |
 | --- | --- | --- |
@@ -3079,11 +2248,6 @@ Déliferdang 2030
 |   |  Removed/substituted energy, volume or fuel type | /  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | /  |
 |   |  Total costs and costs by CO2e unit | /  |
-Ville de Differdange
-0
-Net Zero
-Dédfferdange 2000
-8
 
 # B-2.2: Individual action outlines
 
@@ -3097,11 +2261,6 @@ Differdange is taking significant steps to minimize environmental impact through
 
 In parallel, the city is also adapting its recycling infrastructures to enhance the management of food waste specifically. Adjustments to recycling facilities are being made to ensure that they are well-equipped to handle and process food waste more efficiently. This not only helps in reducing the environmental footprint but also supports the broader goal of sustainable waste management within the city. Together, these measures represent a proactive approach to waste reduction and resource conservation in Differdange.  |
 Field of action | Waste and circular economy
-Ville de Differdange
-0
-Net Zero
-Dépferdange
-0
 
 B-2.2: Individual action outlines
 (fill out one sheet per intervention/project)
@@ -3118,12 +2277,6 @@ Removed/substituted energy, volume or fuel type | /
 GHG emissions reduction estimate (total) per emission source sector | /
 Total costs and costs by CO2e unit | /
 
-9
-Ville de Differdange
-0
-Net Zero
-Dépferdange 2000
-0
 
 Action description | The overhaul of the recycling park aims to optimise waste separation and reduction. By modernising facilities and improving sorting processes, the city can significantly reduce the amount of waste sent to landfill, thereby promoting a more sustainable and responsible life cycle for materials. Redirecting waste to professional waste collectors. The service to the recycling park should improve for citizens through the reduction of professional waste.
 
@@ -3133,11 +2286,6 @@ In parallel, the city is also adapting its recycling infrastructures to enhance 
 Reference to impact pathway | Field of action | Waste and circular economy
 Systemic lift | Reducing the mass of waste
 Outcome (according to module B-1.1) | In Differdange, initial food waste reduction efforts have successfully used citizen engagement and AI-enhanced smart bins to cut kitchen waste by up to 50%. The city is also promoting local and organic farming through education. Future plans include formalizing these initiatives, doubling local food production, and improving storage, with a focus on integrating sustainable practices, increasing seasonal vegetable use in public dining, and shifting attitudes towards rescued food.
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 |  Implementation | Responsible bodies/person for implementation | Ecological service  |
 | --- | --- | --- |
 |   |  Action scale & addressed entities | VDD  |
@@ -3147,11 +2295,6 @@ Delfferdange 2030
 |   |  Removed/substituted energy, volume or fuel type | /  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | /  |
 |   |  Total costs and costs by CO2e unit | /  |
-1
-Ville de Differdange
-Net Zero
-Déliferdange 2030
-C
 
 # B-2.2: Individual action outlines
 
@@ -3169,13 +2312,6 @@ Reference to impact pathway | Field of action | Waste and circular economy
 Systemic lift | Reducing the mass of waste
 Outcome (according to module B-1.1) | In Differdange, initial food waste reduction efforts have successfully used citizen engagement and AI-enhanced smart bins to cut kitchen waste by up to 50%. The city is also promoting local and organic farming through education. Future plans include formalizing these initiatives, doubling local food
 
-2
-Ville de Differdange
-0
-Net Zero
-Dépferdange
-0
-3
 
 |   |  | production, and improving storage, with a focus on integrating sustainable practices, increasing seasonal vegetable use in public dining, and shifting attitudes towards rescued food.  |
 | --- | --- | --- |
@@ -3187,10 +2323,6 @@ Dépferdange
 |   |  Removed/substituted energy, volume or fuel type | /  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | /  |
 |   |  Total costs and costs by CO2e unit | /  |
-Ville de Differdange
-Net Zero
-Déliferdang 2020
-C
 
 # B-2.2: Individual action outlines
 
@@ -3208,12 +2340,6 @@ Reference to impact pathway | Field of action | Waste and circular economy
 Systemic lift | Reducing the mass of waste
 Outcome (according to module B-1.1) | In Differdange, initial food waste reduction efforts have successfully used citizen engagement and AI-enhanced smart bins to cut kitchen waste by up to 50%. The city is also promoting local and organic farming through education. Future plans include
 
-4
-Ville de Differdange
-0
-Net Zero
-Delftreding 2000
-5
 
 |   |  | formalizing these initiatives, doubling local food production, and improving storage, with a focus on integrating sustainable practices, increasing seasonal vegetable use in public dining, and shifting attitudes towards rescued food.  |
 | --- | --- | --- |
@@ -3225,10 +2351,6 @@ Delftreding 2000
 |   |  Removed/substituted energy, volume or fuel type | /  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | /  |
 |   |  Total costs and costs by CO2e unit | /  |
-Ville de Differdange
-Net Zero
-Delfferdange 2030
-6
 
 # B-2.2: Individual action outlines
 
@@ -3245,23 +2367,13 @@ Action scale & addressed entities | City-wide
 Involved stakeholders | National stakeholders
 Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
-Ville de Differdange
-0
-Net Zero
-Deliberdange
-0
 
 |   | Removed/substituted energy, volume or fuel type | /  |
 | --- | --- | --- |
 |   |  GHG emissions reduction estimate (total) per emission source sector | /  |
 |   |  Total costs and costs by CO2e unit | /  |
 
-7
-Ville de Differdange
-0
-Net Zero
 Dóttérdeng 2090
-C
 
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
@@ -3279,20 +2391,9 @@ C
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
 
-8
-Ville de Differdange
-0
-Net Zero
-Déliferdang 2000
-9
-
 |   | GHG emissions reduction estimate (total) per emission source sector | /  |
 | --- | --- | --- |
 |   | Total costs and costs by CO2e unit | /  |
-Ville de Differdange
-Net Zero
-Delfferdange 2030
-0
 
 # B-2.2: Individual action outlines
 
@@ -3307,11 +2408,6 @@ Outcome (according to module B-1.1) | In the early stages, Differdange will focu
 Implementation | Responsible bodies/person for implementation | Ecological service
 Action scale & addressed entities | Citizens, local businesses
 Involved stakeholders | ProSud
-Ville de Differdange
-0
-Net Zero
-Deliberdange
-0
 
 |   | Comments on implementation | /  |
 | --- | --- | --- |
@@ -3319,12 +2415,6 @@ Deliberdange
 |   |  Removed/substituted energy, volume or fuel type | /  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | /  |
 |   |  Total costs and costs by CO2e unit | /  |
-
-1
-Ville de Differdange
-Net Zero
-Delfferdange 2030
-2
 
 # B-2.2: Individual action outlines
 
@@ -3340,11 +2430,6 @@ Delfferdange 2030
 |  Implementation | Responsible bodies/person for implementation | Ecological service  |
 |   |  Action scale & addressed entities | City-wide  |
 |   |  Involved stakeholders |   |
-Ville de Differdange
-0
-Net Zero
-Deliberdang 2030
-3
 
 |   | Comments on implementation | /  |
 | --- | --- | --- |
@@ -3352,10 +2437,6 @@ Deliberdang 2030
 |   |  Removed/substituted energy, volume or fuel type | /  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | /  |
 |   |  Total costs and costs by CO2e unit | /  |
-Ville de Differdange
-Net Zero
-Dédferdange 2020
-C
 
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
@@ -3369,12 +2450,6 @@ C
 |  Implementation | Responsible bodies/person for implementation | Ecological service  |
 |   |  Action scale & addressed entities | City-wide  |
 
-4
-Ville de Differdange
-0
-Net Zero
-Delftreding
-0
 
 |   | Involved stakeholders | /  |
 | --- | --- | --- |
@@ -3384,12 +2459,7 @@ Delftreding
 |   | GHG emissions reduction estimate (total) per emission source sector | /  |
 |   | Total costs and costs by CO2e unit | /  |
 
-5
-Ville de Differdange
-0
-Net Zero
 Dóttérdeng 2090
-C
 
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
@@ -3403,13 +2473,6 @@ C
 |  Implementation | Responsible bodies/person for implementation | Ecological service  |
 |   |  Action scale & addressed entities | City-wide  |
 
-6
-Ville de Differdange
-0
-Net Zero
-Deliberdang 2030
-7
-
 |   | Involved stakeholders | /  |
 | --- | --- | --- |
 |   |  Comments on implementation | /  |
@@ -3417,10 +2480,6 @@ Deliberdang 2030
 |   |  Removed/substituted energy, volume or fuel type | /  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | /  |
 |   |  Total costs and costs by CO2e unit | /  |
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-8
 
 # B-2.2: Individual action outlines
 
@@ -3435,11 +2494,6 @@ Moreover, such a shop would raise community awareness about sustainable consumpt
 Reference to impact pathway | Field of action | Waste and circular economy
 Systemic lift | Reducing the mass of waste
 Outcome (according to module B-1.1) | In the early stages, Differdange will focus on fostering a change in mentality towards sustainability, alongside introducing services that promote repair and reuse of items to reduce waste. Measures such as taxes and smart waste bin locks will be implemented to encourage citizens and businesses to generate waste. The city also plans to install waste compressing bins and sensors in public areas to manage waste more efficiently. Over the following years, waste taxation will be adjusted to new standards, which may include taxing previously untaxed waste types. Improvements in waste
-Ville de Differdange
-0
-Net Zero
-Dépferdange 2000
-9
 
 |   |  | collection and sorting will enhance recycling efforts, especially for construction waste. The city will promote the use of longer-lasting products and strengthen community bonds. Efforts to reduce packaging waste will be intensified through reforms and logistical improvements in waste collection, leading to significant cost savings for both citizens and management services, and fostering a mentality that benefits both the economy and the environment.  |
 | --- | --- | --- |
@@ -3451,10 +2505,6 @@ Dépferdange 2000
 |   |  Removed/substituted energy, volume or fuel type | /  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | /  |
 |   |  Total costs and costs by CO2e unit | /  |
-Ville de Differdange
-Net Zero
-Dépfferdange 2020
-0
 
 B-2.2: Individual action outlines
 
@@ -3472,19 +2522,10 @@ B-2.2: Individual action outlines
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-Ville de Differdange
-0
-Net Zero
-Déliferdang 2000
-1
 
 |   | GHG emissions reduction estimate (total) per emission source sector | /  |
 | --- | --- | --- |
 |   | Total costs and costs by CO2e unit | /  |
-Ville de Differdange
-Net Zero
-Dèfferdang 2020
-C
 
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
@@ -3503,17 +2544,9 @@ C
 |   |  Removed/substituted energy, volume or fuel type | /  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | /  |
 
-2
-Ville de Differdange
-Net Zero Delfferdang 2030
-3
 
 |   | Total costs and costs by CO2e unit | /  |
 | --- | --- | --- |
-Ville de Differdange
-Net Zero
-Dédferdange 2020
-C
 
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
@@ -3531,20 +2564,9 @@ C
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
 
-4
-Ville de Differdange
-0
-Net Zero
-Déliferdang 2000
-5
-
 |   | GHG emissions reduction estimate (total) per emission source sector | /  |
 | --- | --- | --- |
 |   | Total costs and costs by CO2e unit | /  |
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-6
 
 B-2.2: Individual action outlines
 
@@ -3564,19 +2586,6 @@ B-2.2: Individual action outlines
 |   |  Removed/substituted energy, volume or fuel type | /  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | /  |
 |   |  Total costs and costs by CO2e unit | /  |
-Ville de Differdange
-5
-Net Zero
-Deliberdang 2030
-7
-Ville de Differdange
-5
-Net Zero Deliberdang 2030
-8
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-9
 
 # B-2.2: Individual action outlines
 
@@ -3597,15 +2606,6 @@ Déifférdange 2030
 |   |  Removed/substituted energy, volume or fuel type | /  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | /  |
 |   |  Total costs and costs by CO2e unit | /  |
-Ville de Differdange
-5
-Net Zero
-Deliberdang 2030
-0
-Ville de Differdange
-Net Zero
-Delfferdange 2030
-1
 
 # B-2.2: Individual action outlines
 
@@ -3626,15 +2626,6 @@ Delfferdange 2030
 |   |  Removed/substituted energy, volume or fuel type | /  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | /  |
 |   |  Total costs and costs by CO2e unit | /  |
-Ville de Differdange
-5
-Net Zero
-Deliberdang 2030
-2
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-3
 
 # B-2.2: Individual action outlines
 
@@ -3655,16 +2646,6 @@ Déifférdange 2030
 |   |  Removed/substituted energy, volume or fuel type | /  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | /  |
 |   |  Total costs and costs by CO2e unit | /  |
-Ville de Differdange
-5
-Net Zero
-Deliberdang 2030
-4
-Ville de Differdange
-0
-Net Zero
-Dédiendang 2000
-5
 
 B-2.2: Individual action outlines
 
@@ -3684,15 +2665,6 @@ B-2.2: Individual action outlines
 |   |  Removed/substituted energy, volume or fuel type | /  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | /  |
 |   |  Total costs and costs by CO2e unit | /  |
-Ville de Differdange
-5
-Net Zero
-Deliberdang 2030
-6
-Ville de Differdange
-Net Zero
-Dédferdange 2020
-7
 
 # B-2.2: Individual action outlines
 
@@ -3711,21 +2683,11 @@ Dédferdange 2020
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-Ville de Differdange
-0
-Net Zero
-Déliferdang
-0
 
 |   | GHG emissions reduction estimate (total) per emission source sector | /  |
 | --- | --- | --- |
 |   | Total costs and costs by CO2e unit | /  |
 
-8
-Ville de Differdange
-Net Zero
-Dèfferdang 2020
-C
 
 # B-2.2: Individual action outlines
 
@@ -3745,25 +2707,9 @@ C
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
 
-9
-Ville de Differdange
-0
-Net Zero
-Déliferdang 2000
-0
-
 |   | GHG emissions reduction estimate (total) per emission source sector | /  |
 | --- | --- | --- |
 |   | Total costs and costs by CO2e unit | /  |
-Ville de Differdange
-5
-Net Zero
-Deliberdang 2030
-1
-Ville de Differdange
-Net Zero
-Delfferdange 2030
-2
 
 # B-2.2: Individual action outlines
 
@@ -3784,15 +2730,6 @@ Delfferdange 2030
 |   |  Removed/substituted energy, volume or fuel type | /  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | /  |
 |   |  Total costs and costs by CO2e unit | /  |
-Ville de Differdange
-5
-Net Zero
-Deliberdang 2030
-3
-Ville de Differdange
-Net Zero
-Dèfferdang 2020
-4
 
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
@@ -3811,20 +2748,6 @@ Dèfferdang 2020
 |   |  Removed/substituted energy, volume or fuel type | /  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | /  |
 |   |  Total costs and costs by CO2e unit | /  |
-Ville de Differdange
-5
-Net Zero
-Deliberdang 2030
-5
-Ville de Differdange
-5
-Net Zero
-Deliberdang 2030
-6
-Ville de Differdange
-Net Zero
-Déliferdang 2020
-C
 
 # B-2.2: Individual action outlines
 
@@ -3845,22 +2768,6 @@ Removed/substituted energy, volume or fuel type | /
 GHG emissions reduction estimate (total) per emission source sector | /
 Total costs and costs by CO2e unit | /
 
-7
-Ville de Differdange
-5
-Net Zero
-Deliberdang 2030
-8
-Ville de Differdange
-5
-Net Zero
-Deliberdang 2030
-9
-Ville de Differdange
-Net Zero
-Déliferdang 2020
-C
-
 # B-2.2: Individual action outlines
 
 (fill out one sheet per intervention/project)
@@ -3878,20 +2785,9 @@ Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
 
-0
-Ville de Differdange
-2
-Net Zero
-Déliferdang 2030
-C
-
 |   | GHG emissions reduction estimate (total) per emission source sector | /  |
 | --- | --- | --- |
 |   |  Total costs and costs by CO2e unit | /  |
-Ville de Differdange
-Net Zero
-Delfferdange 2030
-2
 
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
@@ -3910,15 +2806,6 @@ Delfferdange 2030
 |   |  Removed/substituted energy, volume or fuel type | /  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | /  |
 |   |  Total costs and costs by CO2e unit | /  |
-Ville de Differdange
-3
-Net Zero
-Deliberdang 2030
-Ville de Differdange
-0
-Net Zero
-Dédferdange 2030
-4
 
 B-2.2: Individual action outlines
 
@@ -3938,14 +2825,6 @@ B-2.2: Individual action outlines
 |   | Removed/substituted energy, volume or fuel type | /  |
 |   | GHG emissions reduction estimate (total) per emission source sector | /  |
 |   | Total costs and costs by CO2e unit | /  |
-Ville de Differdange
-5
-Net Zero
-Deliberdang 2030
-Ville de Differdange
-Net Zero
-Déliferdang 2020
-C
 
 # B-2.2: Individual action outlines
 
@@ -3965,12 +2844,6 @@ Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
 GHG emissions reduction estimate (total) per emission source sector | /
 
-6
-Ville de Differdange
-0
-Net Zero
-Dépferdange 2000
-7
 
 B-2.2: Individual action outlines
 (fill out one sheet per intervention/project)
@@ -3987,10 +2860,6 @@ Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
 GHG emissions reduction estimate (total) per emission source sector | /
-Ville de Differdange
-Net Zero
-Delfferdange 2030
-8
 
 B-2.2: Individual action outlines
 
@@ -4008,12 +2877,6 @@ Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
 GHG emissions reduction estimate (total) per emission source sector | /
-Ville de Differdange
-9
-Ville de Differdange
-Net Zero
-Déliferdang 2020
-C
 
 # B-2.2: Individual action outlines
 
@@ -4033,12 +2896,6 @@ Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
 GHG emissions reduction estimate (total) per emission source sector | /
 
-0
-Ville de Differdange
-Net Zero
-Delfferdange 2030
-1
-
 B-2.2: Individual action outlines
 
 (fill out one sheet per intervention/project)
@@ -4055,11 +2912,6 @@ Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
 GHG emissions reduction estimate (total) per emission source sector | /
-Ville de Differdange
-0
-Net Zero
-Dédiendang 2000
-2
 
 B-2.2: Individual action outlines
 
@@ -4078,10 +2930,6 @@ B-2.2: Individual action outlines
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | /  |
-Ville de Differdange
-Net Zero
-Déliferdang 2020
-C
 
 B-2.2: Individual action outlines
 (fill out one sheet per intervention/project)
@@ -4098,16 +2946,6 @@ Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
 GHG emissions reduction estimate (total) per emission source sector | /
-
-3
-Ville de Differdange
-4
-Net Zero
-Deliberdang 2030
-Ville de Differdange
-Net Zero
-Déliferdang 2020
-C
 
 # B-2.2: Individual action outlines
 
@@ -4126,22 +2964,6 @@ Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
 GHG emissions reduction estimate (total) per emission source sector | /
-
-5
-Ville de Differdange
-6
-Net Zero
-Deliberdang 2030
-6
-Ville de Differdange
-7
-Net Zero
-Deliberdang 2030
-^{}[]
-Ville de Differdange
-Net Zero
-Déliferdang 2020
-C
 
 # B-2.2: Individual action outlines
 
@@ -4162,23 +2984,6 @@ C
 |   |  Removed/substituted energy, volume or fuel type | /  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | /  |
 
-8
-Ville de Differdange
-9
-Net Zero
-Deliberdang 2030
-C
-
-Ville de Differdange
-0
-Net Zero
-Deliberdang 2030
-0
-Ville de Differdange
-Net Zero
-Delfferdange 2030
-1
-
 # B-2.2: Individual action outlines
 
 (fill out one sheet per intervention/project)
@@ -4196,18 +3001,7 @@ Delfferdange 2030
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-Ville de Differdange
-^{}[]
-Net Zero
-Deliberdang 2030
-^{}[]
 GHG emissions reduction estimate (total) per emission source sector | /
-2
-Ville de Differdange
-0
-Net Zero
-Dédiendang 2030
-3
 
 B-2.2: Individual action outlines
 
@@ -4225,10 +3019,6 @@ Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
 GHG emissions reduction estimate (total) per emission source sector | /
-Ville de Differdange
-Net Zero
-Delfferdange 2030
-4
 
 # B-2.2: Individual action outlines
 
@@ -4247,10 +3037,6 @@ Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
 GHG emissions reduction estimate (total) per emission source sector | /
-Ville de Differdange
-Net Zero
-Delfferdange 2030
-5
 
 # B-2.2: Individual action outlines
 
@@ -4269,10 +3055,6 @@ Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
 GHG emissions reduction estimate (total) per emission source sector | /
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-6
 
 # B-2.2: Individual action outlines
 
@@ -4287,20 +3069,11 @@ Outcome (according to module B-1.1) | In Differdange, the home improvement progr
 Implementation | Responsible bodies/person for implementation | Technical Service
 Action scale & addressed entities | Local
 Involved stakeholders | Klima Agency
-Ville de Differdange
-^{}[]
-Net Zero
 Delftstradeng 2030
-^{}[]
 Comments on implementation | Project is running
 Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
 GHG emissions reduction estimate (total) per emission source sector | This action reduces gas consumption by: 1,556,100 m3/year in the case of 300 units/year.
-7
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-8
 
 # B-2.2: Individual action outlines
 
@@ -4319,17 +3092,6 @@ Comments on implementation | Project is running
 Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
 GHG emissions reduction estimate (total) per emission source sector | /
-Ville de Differdange
-Net Zero Delfferdang 2030
-9
-Ville de Differdange
-0
-Net Zero
-Deliberdang 2030
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-1
 
 # B-2.2: Individual action outlines
 
@@ -4343,10 +3105,6 @@ Substance | Systemic lift | Decarbonisation
 Outcome (according to module B-1.1) | Currently, there are 361 single-family homes potentially convertible to heat pumps among new buildings, with projections for annual renovations impacting an additional 300 homes. This totals about 3,061 units, with an anticipated 17% (approximately 500 units) transitioning to heat pump technology. Additionally, the city plans to expand urban heating connections across five networks, totaling 275 units. Roughly 300 residences annually could see a 30% transition to heat pump technology, translating to 10-12 conversions per year. The first phase involves developing a geothermal energy concept for existing urban heating networks in Oberkorn. As part of the decarbonisation approach, the City of Differdange anticipates a significant change in heating systems, affecting around 17% of the total, or 500 units, which will be equipped with heat pumps. In addition, around 90 units will be connected to district heating networks in five separate areas, while 10 to 12 homes will make the switch each year.
 
 The second phase of the project will include the implementation of an energy concept designed to be economically viable, based on the results of the first phase. This will lead to the installation of advanced systems for the decarbonisation of the district heating network in Oberkorn. This phase will also include the actual installation of connections and the gradual replacement of  |
-Ville de Differdange
-0
-Net Zero
-Delftreding
 
 maintenance equipment such as hedge trimmers, lawnmowers and chainsaws, to further reduce the carbon footprint.
 Implementation | Responsible bodies/person for implementation | Technical Service
@@ -4356,17 +3114,6 @@ Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
 GHG emissions reduction estimate (total) per emission source sector | /
-
-2
-Ville de Differdange
-3
-Net Zero
-Deliberdang 2030
-3
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-4
 
 # B-2.2: Individual action outlines
 
@@ -4380,11 +3127,6 @@ Outcome (according to module B-1.1) | Systemic lift | Decarbonisation
 Outcome (according to module B-1.1) | Currently, there are 361 single-family homes potentially convertible to heat pumps among new buildings, with projections for annual renovations impacting an additional 300 homes. This totals about 3,061 units, with an anticipated 17% (approximately 500 units) transitioning to heat pump technology. Additionally, the city plans to expand urban heating connections across five networks, totaling 275 units. Roughly 300 residences annually could see a 30% transition to heat pump technology, translating to 10-12 conversions per year. The first phase involves developing a geothermal energy concept for existing urban heating networks in Oberkorn. As part of the decarbonisation approach, the City of Differdange anticipates a significant change in heating systems, affecting around 17% of the total, or 500 units, which will be equipped with heat pumps. In addition, around 90 units will be connected to district heating networks in five separate areas, while 10 to 12 homes will make the switch each year.
 
 The second phase of the project will include the implementation of an energy concept designed to be economically viable, based on the results of the first phase. This will lead to the installation of advanced systems for the decarbonisation of the district heating network in Oberkorn. This phase will also include the actual installation of connections and the gradual replacement of maintenance equipment such as hedge  |
-Ville de Differdange
-0
-Net Zero
-Delfferdange
-0
 
 |   |  | trimmers, lawnmowers and chainsaws, to further reduce the carbon footprint.  |
 | --- | --- | --- |
@@ -4395,16 +3137,6 @@ Delfferdange
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | /  |
-
-5
-Ville de Differdange
-6
-Net Zero
-Deliberdang 2030
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-7
 
 # B-2.2: Individual action outlines
 
@@ -4420,11 +3152,6 @@ This totals about 3,061 units, with an anticipated 17% (approximately 500 units)
 Additionally, the city plans to expand urban heating connections across five networks, totaling 275 units. Roughly 300 residences annually could see a 30% transition to heat pump technology, translating to 10-12 conversions per year. The first phase involves developing a geothermal energy concept for existing urban heating networks in Oberkorn. As part of the decarbonisation approach, the City of Differdange anticipates a significant change in heating systems, affecting around 17% of the total, or 500 units, which will be equipped with heat pumps. In addition, around 90 units will be connected to district heating networks in five separate areas, while 10 to 12 homes will make the switch each year.
 
 The second phase of the project will include the implementation of an energy concept designed to be economically viable, based on the results of the first phase. This will lead to the installation of advanced systems for the decarbonisation of the district heating network in Oberkorn. This phase will also include the actual installation of connections and the gradual replacement of maintenance equipment such as hedge  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 |   |  | trimmers, lawnmowers and chainsaws, to further reduce the carbon footprint.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Technical Service  |
@@ -4434,16 +3161,6 @@ Delfferdange 2030
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | /  |
-8
-Ville de Differdange
-9
-Net Zero
-Deliberdang 2030
-^{}[]
-Ville de Differdange
-Net Zero
-Déliferdange 2030
-C
 
 # B-2.2: Individual action outlines
 
@@ -4460,12 +3177,6 @@ Additionally, the city plans to expand urban heating connections across five net
 
 The second phase of the project will include the implementation of an energy concept designed to be economically viable, based on the results of the first phase. This will lead to the installation of advanced systems for the decarbonisation of the district heating network in Oberkorn. This phase will also include the actual installation of connections and the gradual replacement of maintenance equipment such as hedge  |
 
-0
-Ville de Differdange
-0
-Net Zero
-Delftreding 2000
-1
 
 trimmers, lawnmowers and chainsaws, to further reduce the carbon footprint.
 Implementation | Responsible bodies/person for implementation | Technical Service
@@ -4475,15 +3186,6 @@ Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
 GHG emissions reduction estimate (total) per emission source sector | /
-Ville de Differdange
-2
-Net Zero
-Deliberdang 2030
-2
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-3
 
 # B-2.2: Individual action outlines
 
@@ -4497,11 +3199,7 @@ Outcome (according to module B-1.1) | Systemic lift | Decarbonisation
 Outcome (B-1.1) | Currently, there are 361 single-family homes potentially convertible to heat pumps among new buildings, with projections for annual renovations impacting an additional 300 homes. This totals about 3,061 units, with an anticipated 17% (approximately 500 units) transitioning to heat pump technology. Additionally, the city plans to expand urban heating connections across five networks, totaling 275 units. Roughly 300 residences annually could see a 30% transition to heat pump technology, translating to 10-12 conversions per year. The first phase involves developing a geothermal energy concept for existing urban heating networks in Oberkorn. As part of the decarbonisation approach, the City of Differdange anticipates a significant change in heating systems, affecting around 17% of the total, or 500 units, which will be equipped with heat pumps. In addition, around 90 units will be connected to district heating networks in five separate areas, while 10 to 12 homes will make the switch each year.
 
 The second phase of the project will include the implementation of an energy concept designed to be economically viable, based on the results of the first phase. This will lead to the installation of advanced systems for the decarbonisation of the district heating network in Oberkorn. This  |
-Ville de Differdange
-0
-Net Zero
 Delftferdeng
-0
 |   |  | phase will also include the actual installation of connections and the gradual replacement of maintenance equipment such as hedge trimmers, lawnmowers and chainsaws, to further reduce the carbon footprint.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Technical Service  |
@@ -4510,15 +3208,6 @@ Delftferdeng
 |   | Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   | Removed/substituted energy, volume or fuel type | /  |
-4
-Ville de Differdange
-5
-Net Zero
-Deliberdang 2030
-Ville de Differdange
-Net Zero
-Déliferdange 2030
-C
 
 # B-2.2: Individual action outlines
 
@@ -4535,13 +3224,6 @@ Additionally, the city plans to expand urban heating connections across five net
 
 The second phase of the project will include the implementation of an energy concept designed to be economically viable, based on the results of the first phase. This will lead to the installation of advanced systems for the decarbonisation of the district heating network in Oberkorn. This phase will also include the actual installation of connections and the gradual replacement of maintenance equipment such as hedge  |
 
-6
-Ville de Differdange
-0
-Net Zero
-Déliferdang
-2
-
 |   |  | trimmers, lawnmowers and chainsaws, to further reduce the carbon footprint.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Technical Service  |
@@ -4551,12 +3233,6 @@ Déliferdang
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
 
-7
-Ville de Differdange
-0
-Net Zero
-Dálfferdang 2000
-8
 
 # B-2.2: Individual action outlines
 
@@ -4579,22 +3255,9 @@ Action scale & addressed entities | Local
 Involved stakeholders | /
 Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
-Ville de Differdange
-Net Zero Deliberdang 2030
-9
 
 |   | Removed/substituted energy, volume or fuel type | /  |
 | --- | --- | --- |
-Ville de Differdange
-0
-Net Zero
-Deliberdang 2030
-0
-Ville de Differdange
-1
-Net Zero
-Delfferdange 2030
-C
 
 # B-2.2: Individual action outlines
 
@@ -4617,22 +3280,9 @@ Action scale & addressed entities | Local
 Involved stakeholders | /
 Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
-Ville de Differdange
-Net Zero Deliberdang 2030
-2
 
 |   | Removed/substituted energy, volume or fuel type | /  |
 | --- | --- | --- |
-Ville de Differdange
-3
-Net Zero
-Deliberdang 2030
-^{}[]
-Ville de Differdange
-5
-Net Zero
-Delfferdange 2030
-4
 
 # B-2.2: Individual action outlines
 
@@ -4655,21 +3305,9 @@ Action scale & addressed entities | Local
 Involved stakeholders | /
 Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
-Ville de Differdange
-Net Zero Deliberdang 2030
-5
 
 |   | Removed/substituted energy, volume or fuel type | /  |
 | --- | --- | --- |
-Ville de Differdange
-6
-Net Zero
-Deliberdang 2030
-Ville de Differdange
-7
-Net Zero
-Delfferdange 2030
-C
 
 # B-2.2: Individual action outlines
 
@@ -4692,17 +3330,9 @@ Action scale & addressed entities | Local
 Involved stakeholders | /
 Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
-Ville de Differdange
-Net Zero Deliberdang 2030
-8
 
 |   | Removed/substituted energy, volume or fuel type | /  |
 | --- | --- | --- |
-Ville de Differdange
-0
-Net Zero
-Dépferdange 2000
-9
 
 B-2.2: Individual action outlines
 
@@ -4721,11 +3351,6 @@ Involved stakeholders | /
 Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
-Ville de Differdange
-0
-Net Zero
-Delfferdange 2030
-O
 
 # B-2.2: Individual action outlines
 
@@ -4744,10 +3369,6 @@ Involved stakeholders | /
 Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
-Ville de Differdange
-Net Zero
-Delfferdange 2030
-1
 
 B-2.2: Individual action outlines
 
@@ -4766,10 +3387,6 @@ Involved stakeholders | /
 Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
-Ville de Differdange
-Net Zero
-Delfferdange 2030
-2
 
 # B-2.2: Individual action outlines
 
@@ -4788,10 +3405,6 @@ Involved stakeholders | /
 Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
-Ville de Differdange
-Net Zero
-Delfferdange 2030
-3
 
 B-2.2: Individual action outlines
 
@@ -4810,11 +3423,6 @@ Involved stakeholders | /
 Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
-Ville de Differdange
-0
-Net Zero
-Dépferdange 2000
-4
 
 # B-2.2: Individual action outlines
 
@@ -4833,22 +3441,8 @@ Action scale & addressed entities | Local
 Involved stakeholders | /
 Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
-Ville de Differdange
-5
-Net Zero
-Deliberdang 2030
 
 Removed/substituted energy, volume or fuel type | /
-
-5
-Ville de Differdange
-6
-Net Zero
-Deliberdang 2030
-Ville de Differdange
-Net Zero
-Déifférdange 2020
-7
 
 # B-2.2: Individual action outlines
 
@@ -4868,19 +3462,6 @@ Involved stakeholders | /
 Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
-Ville de Differdange
-8
-Net Zero
-Deliberdang 2030
-Ville de Differdange
-9
-Net Zero
-Deliberdang 2030
-Ville de Differdange
-0
-Net Zero
-Ddifferdange 2000
-0
 
 # B-2.2: Individual action outlines
 
@@ -4899,16 +3480,9 @@ Action scale & addressed entities | Local
 Involved stakeholders | /
 Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
-Ville de Differdange
-Net Zero Deliberdang 2030
-1
 
 |   | Removed/substituted energy, volume or fuel type | /  |
 | --- | --- | --- |
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-2
 
 # B-2.2: Individual action outlines
 
@@ -4924,11 +3498,6 @@ Outcome (according to module B-1.1) | The existing project aims to adapt and imp
 The project includes the electrification of the network, in line with the UN Agenda 2030, with specific targets to electrify 77 lines and 500 buses by the end of 2023. By 2024, the network will feature 374 electric buses and 100 electrified lines. The VDD seeks to electrify RGTR lines passing through its territory and participating in future pilot projects. Specific actions include purchasing a new electric bus and updating 4 to 8 stops per year, with a pilot phase adding 5 more stops annually. A political decision will determine the level of participation in the project. The goal is to maintain attractiveness and increase regular use of the transport network. Planning has begun, focusing on adapting the network for 2030 through coordination between TICE (Southern region) and RGTR (National Road Transport Network) to improve the overall system.
 
 Initial steps include deploying electric buses and installing necessary infrastructure, with a broader aim of national network electrification and expanding the serviced territory. The project  |
-Ville de Differdange
-0
-Net Zero
-Déliferdang
-0
 |   |  | includes the electrification of the bus fleet and active participation. It also involves updating 4 to 8 stops annually and installing digital systems across the entire area.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Mobility and Traffic Service  |
@@ -4937,11 +3506,6 @@ Déliferdang
 |   | Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   | Removed/substituted energy, volume or fuel type | /  |
-3
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-4
 
 # B-2.2: Individual action outlines
 
@@ -4957,10 +3521,6 @@ Outcome (according to module B-1.1) | The existing project aims to adapt and imp
 The project includes the electrification of the network, in line with the UN Agenda 2030, with specific targets to electrify 77 lines and 500 buses by the end of 2023. By 2024, the network will feature 374 electric buses and 100 electrified lines. The VDD seeks to electrify RGTR lines passing through its territory and participating in future pilot projects. Specific actions include purchasing a new electric bus and updating 4 to 8 stops per year, with a pilot phase adding 5 more stops annually. A political decision will determine the level of participation in the project. The goal is to maintain attractiveness and increase regular use of the transport network. Planning has begun, focusing on adapting the network for 2030 through coordination between TICE (Southern region) and RGTR (National Road Transport Network) to improve the overall system.
 
 Initial steps include deploying electric buses and installing necessary infrastructure, with a broader aim of national network electrification and expanding the serviced territory. The project |
-Ville de Differdange
-5
-Net Zero
-Delftreding 2030
 
 |   |  | includes the electrification of the bus fleet and active participation. It also involves updating 4 to 8 stops annually and installing digital systems across the entire area.  |
 | --- | --- | --- |
@@ -4970,11 +3530,6 @@ Delftreding 2030
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-Ville de Differdange
-0
-Net Zero
-Dèfferdang 2030
-C
 
 # B-2.2: Individual action outlines
 
@@ -4989,11 +3544,6 @@ Outcome (according to module B-1.1) | The existing project aims to adapt and imp
 
 The project includes the electrification of the network, in line with the UN Agenda 2030, with specific targets to electrify 77 lines and 500 buses by the end of 2023. By 2024, the network will feature 374 electric buses and 100 electrified lines. The VDD seeks to electrify RGTR lines passing through its territory and participating in future pilot projects. Specific actions include purchasing a new electric bus and updating 4 to 8 stops per year, with a pilot phase adding 5 more stops annually. A political decision will determine the level of participation in the project. The goal is to maintain attractiveness and increase regular use of the transport network. Planning has begun, focusing on adapting the network for 2030 through coordination between TICE (Southern region) and RGTR (National Road Transport Network) to improve the overall system.  |
 
-6
-Ville de Differdange
-7
-Net Zero
-Delftreding 2030
 
 |   |  | Initial steps include deploying electric buses and installing necessary infrastructure, with a broader aim of national network electrification and expanding the serviced territory. The project includes the electrification of the bus fleet and active participation. It also involves updating 4 to 8 stops annually and installing digital systems across the entire area.  |
 | --- | --- | --- |
@@ -5003,10 +3553,6 @@ Delftreding 2030
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-8
 
 # B-2.2: Individual action outlines
 
@@ -5022,10 +3568,6 @@ Outcome (according to module B-1.1) | The existing project aims to adapt and imp
 The project includes the electrification of the network, in line with the UN Agenda 2030, with specific targets to electrify 77 lines and 500 buses by the end of 2023. By 2024, the network will feature 374 electric buses and 100 electrified lines. The VDD seeks to electrify RGTR lines passing through its territory and participating in future pilot projects. Specific actions include purchasing a new electric bus and updating 4 to 8 stops per year, with a pilot phase adding 5 more stops annually. A political decision will determine the level of participation in the project. The goal is to maintain attractiveness and increase regular use of the transport network. Planning has begun, focusing on adapting the network for 2030 through coordination between TICE (Southern region) and RGTR (National Road Transport Network) to improve the overall system.
 
 Initial steps include deploying electric buses and installing necessary infrastructure, with a broader |
-Ville de Differdange
-9
-Net Zero
-Delftreding 2030
 
 |   |  | aim of national network electrification and expanding the serviced territory. The project includes the electrification of the bus fleet and active participation. It also involves updating 4 to 8 stops annually and installing digital systems across the entire area.  |
 | --- | --- | --- |
@@ -5035,10 +3577,6 @@ Delftreding 2030
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-0
 
 # B-2.2: Individual action outlines
 
@@ -5054,11 +3592,6 @@ Outcome (according to module B-1.1) | The existing project aims to adapt and imp
 The project includes the electrification of the network, in line with the UN Agenda 2030, with specific targets to electrify 77 lines and 500 buses by the end of 2023. By 2024, the network will feature 374 electric buses and 100 electrified lines. The VDD seeks to electrify RGTR lines passing through its territory and participating in future pilot projects. Specific actions include purchasing a new electric bus and updating 4 to 8 stops per year, with a pilot phase adding 5 more stops annually. A political decision will determine the level of participation in the project. The goal is to maintain attractiveness and increase regular use of the transport network. Planning has begun, focusing on adapting the network for 2030 through coordination between TICE (Southern region) and RGTR (National Road Transport Network) to improve the overall system.
 
 Initial steps include deploying electric buses and installing necessary infrastructure, with a broader aim of national network electrification and expanding the serviced territory. The project includes the electrification of the bus fleet and active  |
-Ville de Differdange
-1
-Net Zero
-Delfferdange 2030
-C
 
 |   |  | participation. It also involves updating 4 to 8 stops annually and installing digital systems across the entire area.  |
 | --- | --- | --- |
@@ -5068,10 +3601,6 @@ C
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-Ville de Differdange
-Net Zero
-Déliferdang 2030
-C
 
 # B-2.2: Individual action outlines
 
@@ -5087,12 +3616,6 @@ The project includes the electrification of the network, in line with the UN Age
 
 Initial steps include deploying electric buses and installing necessary infrastructure, with a broader aim of national network electrification and expanding the serviced territory. The project includes the electrification of the bus fleet and active participation. It also involves updating 4 to 8 stops  |
 
-2
-Ville de Differdange
-0
-Net Zero
-Déliferdang
-0
 |   |  | annually and installing digital systems across the entire area.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Mobility and Traffic Service  |
@@ -5101,11 +3624,6 @@ Déliferdang
 |   | Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   | Removed/substituted energy, volume or fuel type | /  |
-3
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-4
 
 # B-2.2: Individual action outlines
 
@@ -5121,11 +3639,6 @@ Outcome (according to module B-1.1) | The existing project aims to adapt and imp
 The project includes the electrification of the network, in line with the UN Agenda 2030, with specific targets to electrify 77 lines and 500 buses by the end of 2023. By 2024, the network will feature 374 electric buses and 100 electrified lines. The VDD seeks to electrify RGTR lines passing through its territory and participating in future pilot projects. Specific actions include purchasing a new electric bus and updating 4 to 8 stops per year, with a pilot phase adding 5 more stops annually. A political decision will determine the level of participation in the project. The goal is to maintain attractiveness and increase regular use of the transport network. Planning has begun, focusing on adapting the network for 2030 through coordination between TICE (Southern region) and RGTR (National Road Transport Network) to improve the overall system.
 
 Initial steps include deploying electric buses and installing necessary infrastructure, with a broader aim of national network electrification and expanding the serviced territory. The project includes the electrification of the bus fleet and active  |
-Ville de Differdange
-0
-Net Zero
-Déliferdang
-0
 |   |  | participation. It also involves updating 4 to 8 stops annually and installing digital systems across the entire area.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Mobility and Traffic Service  |
@@ -5134,11 +3647,6 @@ Déliferdang
 |   | Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   | Removed/substituted energy, volume or fuel type | /  |
-5
-Ville de Differdange
-Net Zero
-Déliferdang 2030
-C
 
 # B-2.2: Individual action outlines
 
@@ -5154,13 +3662,6 @@ The project includes the electrification of the network, in line with the UN Age
 
 Initial steps include deploying electric buses and installing necessary infrastructure, with a broader aim of national network electrification and expanding the serviced territory. The project includes the electrification of the bus fleet and active participation. It also involves updating 4 to 8 stops  |
 
-6
-Ville de Differdange
-7
-Net Zero
-Delfferdange 2030
-C
-
 |   |  | annually and installing digital systems across the entire area.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Mobility and Traffic Service  |
@@ -5169,11 +3670,6 @@ C
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-Ville de Differdange
-0
-Net Zero
-Dédfferdange 2000
-8
 
 # B-2.2: Individual action outlines
 
@@ -5189,11 +3685,6 @@ Outcome (according to module B-1.1) | The existing project aims to adapt and imp
 The project includes the electrification of the network, in line with the UN Agenda 2030, with specific targets to electrify 77 lines and 500 buses by the end of 2023. By 2024, the network will feature 374 electric buses and 100 electrified lines. The VDD seeks to electrify RGTR lines passing through its territory and participating in future pilot projects. Specific actions include purchasing a new electric bus and updating 4 to 8 stops per year, with a pilot phase adding 5 more stops annually. A political decision will determine the level of participation in the project. The goal is to maintain attractiveness and increase regular use of the transport network. Planning has begun, focusing on adapting the network for 2030 through coordination between TICE (Southern region) and RGTR (National Road Transport Network) to improve the overall system.
 
 Initial steps include deploying electric buses and installing necessary infrastructure, with a broader aim of national network electrification and expanding the serviced territory. The project includes the electrification of the bus fleet and active participation. It also involves updating 4 to 8 stops  |
-Ville de Differdange
-9
-Net Zero
-Deliberdang 2020
-C
 
 |   |  | annually and installing digital systems across the entire area.  |
 | --- | --- | --- |
@@ -5203,10 +3694,6 @@ C
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-0
 
 # B-2.2: Individual action outlines
 
@@ -5232,10 +3719,6 @@ Removed/substituted energy, volume or fuel type | /
 # B-2.2: Individual action outlines
 
 (fill out one sheet per intervention/project)
-Ville de Differdange
-Net Zero
-Déliferdange 2030
-1
 
 Action outline | Action name | MT2 CFL - Railway triangle between Bascharage and Niederkorn - Intensification of the studies to connect line 60 to line 70.
 Typical action | Advisory
@@ -5254,10 +3737,6 @@ Involved stakeholders
 Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
-Ville de Differdange
-Net Zero
-Déliferdange 2030
-C
 
 # B-2.2: Individual action outlines
 
@@ -5280,12 +3759,6 @@ Comments on implementation | /
 General & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
 
-2
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-3
-
 # B-2.2: Individual action outlines
 
 (fill out one sheet per intervention/project)
@@ -5298,11 +3771,6 @@ Outcome (according to module B-1.1) | Systemic lift | Motorised transport - redu
 Outcome (according to module B-1.1) | The project involves advocating for a car-sharing system in southern municipalities, raising awareness, and generating interest through lobbying. It includes narrowing public roads at key city entry points and developing a traffic calming concept in alignment with SUMP reflections. The plan features increasing service frequency, supporting PARKing Day, and starting related construction. It also includes upgrading the existing guidance system to be more efficient, progressively replacing cars with electric vehicles, enhancing employee awareness of transport options, and decarbonizing the fleet. The overall goal is to improve traffic management and promote sustainable transport solutions. The project involves conducting studies and iteratively selecting traffic calming measures. Initial steps include implementing these measures and identifying areas suitable for car-free zones.
 
 Results and citizen feedback will be evaluated to adjust the use of public space. The project will be executed and put into service, with the system adaptively updated to new realities. It aims to progressively replace cars with electric vehicles, promote cycling and scooters among municipal employees, and decarbonize the fleet. Initial measures will be established and refined over time.  |
-Ville de Differdange
-^{}[]
-Net Zero
-Deliberdange 2030
-^{}[]
 |  Implementation | Responsible bodies/person for implementation | Mobility and Traffic Service  |
 | --- | --- | --- |
 |   |  Action scale & addressed entities | Local  |
@@ -5310,11 +3778,6 @@ Deliberdange 2030
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-4
-Ville de Differdange
-Net Zero
-Déliferdang 2020
-C
 
 # B-2.2: Individual action outlines
 
@@ -5329,12 +3792,6 @@ Outcome (according to module B-1.1) | The project involves advocating for a car-
 
 Results and citizen feedback will be evaluated to adjust the use of public space. The project will be executed and put into service, with the system adaptively updated to new realities. It aims to progressively replace cars with electric vehicles,  |
 
-5
-Ville de Differdange
-0
-Net Zero
-Delftreding 2010
-6
 
 |   |  | promote cycling and scooters among municipal employees, and decarbonize the fleet. Initial measures will be established and refined over time.  |
 | --- | --- | --- |
@@ -5344,10 +3801,6 @@ Delftreding 2010
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-Ville de Differdange
-Net Zero
-Déliferdang 2020
-C
 
 # B-2.2: Individual action outlines
 
@@ -5363,23 +3816,12 @@ Outcome (according to module B-1.1) | The project involves advocating for a car-
 Results and citizen feedback will be evaluated to adjust the use of public space. The project will be executed and put into service, with the system adaptively updated to new realities. It aims to progressively replace cars with electric vehicles, promote cycling and scooters among municipal employees, and decarbonize the fleet. Initial measures will be established and refined over time.  |
 Responsible bodies/person for implementation | Mobility and Traffic Service
 
-7
-Ville de Differdange
-^{}[]
-Net Zero
-Deliberdang 2030
-^{}[]
 |   | Action scale & addressed entities | Local  |
 | --- | --- | --- |
 |   |  Involved stakeholders |   |
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-8
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-9
 
 # B-2.2: Individual action outlines
 
@@ -5393,11 +3835,6 @@ Systemic lift | Motorised transport - reduction
 Outcome (according to module B-1.1) | The project involves advocating for a car-sharing system in southern municipalities, raising awareness, and generating interest through lobbying. It includes narrowing public roads at key city entry points and developing a traffic calming concept in alignment with SUMP reflections. The plan features increasing service frequency, supporting PARKing Day, and starting related construction. It also includes upgrading the existing guidance system to be more efficient, progressively replacing cars with electric vehicles, enhancing employee awareness of transport options, and decarbonizing the fleet. The overall goal is to improve traffic management and promote sustainable transport solutions. The project involves conducting studies and iteratively selecting traffic calming measures. Initial steps include implementing these measures and identifying areas suitable for car-free zones.
 
 Results and citizen feedback will be evaluated to adjust the use of public space. The project will be executed and put into service, with the system adaptively updated to new realities. It aims to progressively replace cars with electric vehicles, promote cycling and scooters among municipal employees, and decarbonize the fleet. Initial measures will be established and refined over time.  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delftreding 2030
-^{}[]
 |  Implementation | Responsible bodies/person for implementation | Mobility and Traffic Service  |
 | --- | --- | --- |
 |   |  Action scale & addressed entities | Local  |
@@ -5405,11 +3842,6 @@ Delftreding 2030
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-0
-Ville de Differdange
-Net Zero
-Déliferdang 2020
-C
 
 # B-2.2: Individual action outlines
 
@@ -5424,12 +3856,6 @@ Outcome (according to module B-1.1) | The project involves advocating for a car-
 Results and citizen feedback will be evaluated to adjust the use of public space. The project will be executed and put into service, with the system adaptively updated to new realities. It aims to progressively replace cars with electric vehicles, promote cycling and scooters among municipal
 conclusion criteria | and the project will be conducted in a way that will provide a safe and effective way to reduce the risk of cyclists.
 
-1
-Ville de Differdange
-0
-Net Zero
-Déliferdang
-0
 |   |  | employees, and decarbonize the fleet. Initial measures will be established and refined over time.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Mobility and Traffic Service  |
@@ -5438,11 +3864,6 @@ Déliferdang
 |   | Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   | Removed/substituted energy, volume or fuel type | /  |
-2
-Ville de Differdange
-Net Zero
-Déliferdang 2030
-C
 
 # B-2.2: Individual action outlines
 
@@ -5458,23 +3879,12 @@ Outcome (according to module B-1.1) | The project involves advocating for a car-
 Results and citizen feedback will be evaluated to adjust the use of public space. The project will be executed and put into service, with the system adaptively updated to new realities. It aims to progressively replace cars with electric vehicles, promote cycling and scooters among municipal employees, and decarbonize the fleet. Initial measures will be established and refined over time. |
 Implementation | Responsible bodies/person for implementation | Mobility and Traffic Service
 
-3
-Ville de Differdange
-^{}[]
-Net Zero
-Deliberdange 2030
-^{}[]
 |   | Action scale & addressed entities | Regional  |
 | --- | --- | --- |
 |   |  Involved stakeholders |   |
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-4
-Ville de Differdange
-Net Zero
-Déliferdang 2020
-C
 
 # B-2.2: Individual action outlines
 
@@ -5488,12 +3898,6 @@ Outcome (according to module B-1.1) | Systemic lift | Motorised transport - elec
 Outcome (according to module B-1.1) | In Differdange, the focus on modernizing the city's transport system through electrification is integral to reducing carbon emissions and enhancing urban mobility. The initiative includes several key aspects. The municipal fleet is transitioning to cleaner, sustainable energy sources, with an emphasis on electric and hydrogen-powered vehicles. This change also extends to two-wheeled transport options, providing city employees with electric bikes and scooters, which supports the adoption of green mobility practices within the urban core. For utility vehicles, efforts are being made to adopt lower-emission models as they become available, aligning with the overall goal of reducing the municipal operations' carbon footprint.
 Furthermore, the city is reconfiguring vehicle flows to limit traffic into the center, aiming to create a more pedestrian-friendly environment. This strategy is complemented by the redevelopment of the city center, which is being redesigned to encourage the use of alternative transport methods, thereby improving urban living quality and diminishing reliance on individual motorized transport. Through these comprehensive measures, Differdange is committed to a broad modernization of its transport  |
 
-5
-Ville de Differdange
-0
-Net Zero
-Déliferdang
-0
 |   |  | infrastructure, fostering a more sustainable and livable urban environment.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Mobility and Traffic Service  |
@@ -5502,12 +3906,7 @@ Déliferdang
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-6
-Ville de Differdange
-0
-Net Zero
 Dóttérdeng 2090
-C
 
 # B-2.2: Individual action outlines
 
@@ -5521,12 +3920,6 @@ Outcome (according to module B-1.1) | Systemic lift | Motorised transport - elec
 Outcome (according to module B-1.1) | In Differdange, the focus on modernizing the city's transport system through electrification is integral to reducing carbon emissions and enhancing urban mobility. The initiative includes several key aspects. The municipal fleet is transitioning to cleaner, sustainable energy sources, with an emphasis on electric and hydrogen-powered vehicles. This change also extends to two-wheeled transport options, providing city employees with electric bikes and scooters, which supports the adoption of green mobility practices within the urban core. For utility vehicles, efforts are being made to adopt lower-emission models as they become available, aligning with the overall goal of reducing the municipal operations' carbon footprint.
 Furthermore, the city is reconfiguring vehicle flows to limit traffic into the center, aiming to create a more pedestrian-friendly environment. This strategy is complemented by the redevelopment of the city center, which is being redesigned to encourage the use of alternative transport methods, thereby improving urban living quality and diminishing reliance on individual motorized transport. Through these comprehensive measures, Differdange is committed to a broad modernization of its transport  |
 
-7
-Ville de Differdange
-0
-Net Zero
-Déliferdang
-0
 |   |  | infrastructure, fostering a more sustainable and livable urban environment.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Mobility and Traffic Service  |
@@ -5535,15 +3928,6 @@ Déliferdang
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-8
-Ville de Differdange
-9
-Net Zero
-Deliberdang 2030
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-0
 
 # B-2.2: Individual action outlines
 
@@ -5557,11 +3941,6 @@ Systemic lift | Motorised transport - electrification
 Outcome (according to module B-1.1) | In Differdange, the focus on modernizing the city's transport system through electrification is integral to reducing carbon emissions and enhancing urban mobility. The initiative includes several key aspects. The municipal fleet is transitioning to cleaner, sustainable energy sources, with an emphasis on electric and hydrogen-powered vehicles. This change also extends to two-wheeled transport options, providing city employees with electric bikes and scooters, which supports the adoption of green mobility practices within the urban core. For utility vehicles, efforts are being made to adopt lower-emission models as they become available, aligning with the overall goal of reducing the municipal operations' carbon footprint.
 
 Furthermore, the city is reconfiguring vehicle flows to limit traffic into the center, aiming to create a more pedestrian-friendly environment. This strategy is complemented by the redevelopment of the city center, which is being redesigned to encourage the use of alternative transport methods, thereby improving urban living quality and diminishing reliance on individual motorized transport. Through these comprehensive measures, Differdange is committed to a broad modernization of its transport infrastructure, fostering a more sustainable and livable urban environment.  |
-Ville de Differdange
-^{}[]
-Net Zero
-Deliberdange 2030
-^{}[]
 |  Implementation | Responsible bodies/person for implementation | Mobility and Traffic Service  |
 | --- | --- | --- |
 |   |  Action scale & addressed entities | Local  |
@@ -5569,11 +3948,6 @@ Deliberdange 2030
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-1
-Ville de Differdange
-0
-Net Zero
-Dèfferdang 2000
 
 # B-2.2: Individual action outlines
 
@@ -5588,12 +3962,6 @@ Outcome (according to module B-1.1) | In Differdange, the focus on modernizing t
 
 Furthermore, the city is reconfiguring vehicle flows to limit traffic into the center, aiming to create a more pedestrian-friendly environment. This strategy is complemented by the redevelopment of the city center, which is being redesigned to encourage the use of alternative transport methods, thereby improving urban living quality and diminishing reliance on individual motorized transport. Through these comprehensive measures, Differdange is committed to a broad modernization of its transport infrastructure, fostering a more sustainable and livable urban environment. |
 
-2
-Ville de Differdange
-^{}[]
-Net Zero
-Deliberdange 2030
-^{}[]
 |  Implementation | Responsible bodies/person for implementation | Mobility and Traffic Service  |
 | --- | --- | --- |
 |   |  Action scale & addressed entities | Local  |
@@ -5601,12 +3969,6 @@ Deliberdange 2030
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-3
-Ville de Differdange
-0
-Net Zero
-Dálfferdang 2000
-4
 
 # B-2.2: Individual action outlines
 
@@ -5620,11 +3982,6 @@ Systemic lift | Motorised transport - electrification
 Outcome (according to module B-1.1) | In Differdange, the focus on modernizing the city's transport system through electrification is integral to reducing carbon emissions and enhancing urban mobility. The initiative includes several key aspects. The municipal fleet is transitioning to cleaner, sustainable energy sources, with an emphasis on electric and hydrogen-powered vehicles. This change also extends to two-wheeled transport options, providing city employees with electric bikes and scooters, which supports the adoption of green mobility practices within the urban core. For utility vehicles, efforts are being made to adopt lower-emission models as they become available, aligning with the overall goal of reducing the municipal operations' carbon footprint.
 
 Furthermore, the city is reconfiguring vehicle flows to limit traffic into the center, aiming to create a more pedestrian-friendly environment. This strategy is complemented by the redevelopment of the city center, which is being redesigned to encourage the use of alternative transport methods, thereby improving urban living quality and diminishing reliance on individual motorized transport. Through these comprehensive measures, Differdange is committed to a broad modernization of its transport |
-Ville de Differdange
-0
-Net Zero
-Déliferdang
-0
 |   |  | infrastructure, fostering a more sustainable and livable urban environment.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Mobility and Traffic Service  |
@@ -5633,12 +3990,6 @@ Déliferdang
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-5
-Ville de Differdange
-0
-Net Zero
-Dédiendang 2030
-6
 
 # B-2.2: Individual action outlines
 
@@ -5657,13 +4008,8 @@ Dédiendang 2030
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-Ville de Differdange
-C
 Net
 Zero
-Delfferdange
-0
-C
 
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
@@ -5681,12 +4027,6 @@ C
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
 
-7
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 B-2.2: Individual action outlines
 |  (fill out one sheet per intervention/project)  |   |   |
 | --- | --- | --- |
@@ -5702,12 +4042,6 @@ B-2.2: Individual action outlines
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-8
-Ville de Differdange
-0
-Net Zero
-Dédiendang 2000
-9
 
 # B-2.2: Individual action outlines
 
@@ -5726,10 +4060,6 @@ Dédiendang 2000
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-Ville de Differdange
-Net Zero
-Dédferdange 2020
-0
 
 # B-2.2: Individual action outlines
 
@@ -5748,10 +4078,6 @@ Dédferdange 2020
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-Ville de Differdange
-Net Zero
-Déliferdang 2020
-C
 
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
@@ -5768,11 +4094,6 @@ C
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 B-2.2: Individual action outlines
 |  (fill out one sheet per intervention/project)  |   |   |
 | --- | --- | --- |
@@ -5788,11 +4109,6 @@ B-2.2: Individual action outlines
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  (fill out one sheet per intervention/project)  |   |   |
@@ -5808,11 +4124,6 @@ Delfferdange 2030
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  (fill out one sheet per intervention/project)  |   |   |
@@ -5828,10 +4139,6 @@ Delfferdange 2030
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-Ville de Differdange
-Net Zero
-Déliferdang 2020
-C
 
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
@@ -5848,12 +4155,6 @@ C
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-
-5
-Ville de Differdange
-Net Zero
-Déliferdang 2020
-C
 
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
@@ -5873,12 +4174,6 @@ C
 |  B-2.2: Individual action outlines  |   |   |
 |  (fill out one sheet per intervention/project)  |   |   |
 
-6
-Ville de Differdange
-0
-Net Zero
-Dépferdange
-0
 
 Action outline | Action name | MT 7 – Logistics - Vision: decarbonization of “last mile” logistics by promoting cargo bike or other solutions.
 Typical action | Lobbying and governance
@@ -5892,17 +4187,6 @@ Involved stakeholders
 Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
-
-7
-Ville de Differdange
-8
-Net Zero
-Deliberdang 2030
-^{}[]
-Ville de Differdange
-Net Zero
-Déliferdang 2020
-C
 
 # B-2.2: Individual action outlines
 
@@ -5921,12 +4205,6 @@ The project also includes adapting guidelines and catalogs, and compiling existi
 
 It includes geological feasibility studies and collaboration with ArcelorMittal. The project also involves systemic changes in road and path renovations, ensuring all new concrete constructions use carbon-captured concrete (CCU) and all new wooden constructions use CCU wood.  |
 
-9
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 |   |  | Additionally, it aims to increase carbon compensation in construction, sell certificates, and monitor compliance.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Ecological service  |
@@ -5935,11 +4213,6 @@ Delfferdange 2030
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-0
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-1
 
 # B-2.2: Individual action outlines
 
@@ -5959,11 +4232,6 @@ The project also includes adapting guidelines and catalogs, and compiling existi
 It includes geological feasibility studies and collaboration with ArcelorMittal. The project also involves systemic changes in road and path renovations, ensuring all new concrete constructions use carbon-captured concrete (CCU) and all new wooden constructions use CCU wood.
 
 Additionally, it aims to increase carbon compensation in construction, sell certificates, and monitor compliance.  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delftreding 2030
-^{}[]
 |  Implementation | Responsible bodies/person for implementation | Ecological service  |
 | --- | --- | --- |
 |   |  Action scale & addressed entities | Local  |
@@ -5971,11 +4239,6 @@ Delftreding 2030
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-2
-Ville de Differdange
-Net Zero
-Déliferdang 2020
-C
 
 # B-2.2: Individual action outlines
 
@@ -5997,23 +4260,12 @@ It includes geological feasibility studies and collaboration with ArcelorMittal.
 Additionally, it aims to increase carbon compensation in construction, sell certificates, and monitor compliance.  |
 Implementation | Responsible bodies/person for implementation | Ecological service
 
-3
-Ville de Differdange
-^{}[]
-Net Zero
-Deliberdang 2030
-^{}[]
 |   | Action scale & addressed entities | Local  |
 | --- | --- | --- |
 |   |  Involved stakeholders |   |
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-4
-Ville de Differdange
-Net Zero
-Déliferdang 2020
-C
 
 # B-2.2: Individual action outlines
 
@@ -6034,12 +4286,6 @@ It includes geological feasibility studies and collaboration with ArcelorMittal.
 
 Additionally, it aims to increase carbon compensation in construction, sell certificates, and monitor compliance.  |
 
-5
-Ville de Differdange
-^{}[]
-Net Zero
-Delftreding 2030
-^{}[]
 |  Implementation | Responsible bodies/person for implementation | Ecological service  |
 | --- | --- | --- |
 |   |  Action scale & addressed entities | Local  |
@@ -6047,11 +4293,6 @@ Delftreding 2030
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-6
-Ville de Differdange
-Net Zero
-Déliferdang 2020
-C
 
 # B-2.2: Individual action outlines
 
@@ -6072,12 +4313,6 @@ It includes geological feasibility studies and collaboration with ArcelorMittal.
 
 Additionally, it aims to increase carbon compensation in construction, sell certificates, and monitor compliance.  |
 
-7
-Ville de Differdange
-^{}[]
-Net Zero
-Delftreding 2030
-^{}[]
 |  Implementation | Responsible bodies/person for implementation | Ecological service  |
 | --- | --- | --- |
 |   |  Action scale & addressed entities | Local  |
@@ -6085,11 +4320,6 @@ Delftreding 2030
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-8
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-9
 
 # B-2.2: Individual action outlines
 
@@ -6107,11 +4337,6 @@ The project involves informational evenings, motivating farmers, supporting mark
 The project also includes adapting guidelines and catalogs, and compiling existing and planned CO2 storage projects for detailed development and registration. The project aims to promote green facades for 500 buildings. It focuses on capturing greenhouse gases through tree growth and establishing a recognized supply chain for green products, with both national and international recognition.
 
 It includes geological feasibility studies and collaboration with ArcelorMittal. The project also involves systemic changes in road and path renovations, ensuring all new concrete constructions use carbon-captured concrete (CCU) and all new wooden constructions use CCU wood.  |
-Ville de Differdange
-0
-Net Zero
-Déliferdang
-0
 |   |  | Additionally, it aims to increase carbon compensation in construction, sell certificates, and monitor compliance.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Ecological service  |
@@ -6120,11 +4345,6 @@ Déliferdang
 |   | Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   | Removed/substituted energy, volume or fuel type | /  |
-0
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-1
 
 # B-2.2: Individual action outlines
 
@@ -6142,11 +4362,6 @@ The project involves informational evenings, motivating farmers, supporting mark
 The project also includes adapting guidelines and catalogs, and compiling existing and planned CO2 storage projects for detailed development and registration. The project aims to promote green facades for 500 buildings. It focuses on capturing greenhouse gases through tree growth and establishing a recognized supply chain for green products, with both national and international recognition.
 
 It includes geological feasibility studies and collaboration with ArcelorMittal. The project also involves systemic changes in road and path renovations, ensuring all new concrete constructions use carbon-captured concrete (CCU) and all new wooden constructions use CCU wood. |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 |   |  | Additionally, it aims to increase carbon compensation in construction, sell certificates, and monitor compliance.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Ecological service  |
@@ -6155,11 +4370,6 @@ Delfferdange 2030
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-2
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-C
 
 B-2.2: Individual action outlines
 (fill out one sheet per intervention/project)
@@ -6173,12 +4383,6 @@ The project involves informational evenings, motivating farmers, supporting mark
 The project also includes adapting guidelines and catalogs, and compiling existing and planned CO2 storage projects for detailed development and registration. The project aims to promote green facades for 500 buildings. It focuses on capturing greenhouse gases through tree growth and establishing a recognized supply chain for green products, with both national and international recognition.
 It includes geological feasibility studies and collaboration with ArcelorMittal. The project also involves systemic changes in road and path  |
 
-3
-Ville de Differdange
-0
-Net Zero
-Dépferdange
-0
 renovations, ensuring all new concrete constructions use carbon-captured concrete (CCU) and all new wooden constructions use CCU wood.
 
 Additionally, it aims to increase carbon compensation in construction, sell certificates, and monitor compliance.  |
@@ -6188,11 +4392,6 @@ Involved stakeholders
 Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
-4
-Ville de Differdange
-Net Zero
-Déifférdange 2020
-C
 
 # B-2.2: Individual action outlines
 
@@ -6211,12 +4410,6 @@ The project also includes adapting guidelines and catalogs, and compiling existi
 
 It includes geological feasibility studies and collaboration with ArcelorMittal. The project also involves systemic changes in road and path renovations, ensuring all new concrete constructions use carbon-captured concrete (CCU) and all new wooden constructions use CCU wood.  |
 
-5
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 |   |  | Additionally, it aims to increase carbon compensation in construction, sell certificates, and monitor compliance.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Ecological service  |
@@ -6225,11 +4418,6 @@ Delfferdange 2030
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-6
-Ville de Differdange
-Net Zero
-Déliferdang 2020
-C
 
 # B-2.2: Individual action outlines
 
@@ -6248,12 +4436,6 @@ The project also includes adapting guidelines and catalogs, and compiling existi
 
 It includes geological feasibility studies and collaboration with ArcelorMittal. The project also involves systemic changes in road and path renovations, ensuring all new concrete constructions use carbon-captured concrete (CCU) and all new wooden constructions use CCU wood.  |
 
-7
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 |   |  | Additionally, it aims to increase carbon compensation in construction, sell certificates, and monitor compliance.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Ecological service  |
@@ -6262,11 +4444,6 @@ Delfferdange 2030
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-8
-Ville de Differdange
-Net Zero
-Déliferdang 2020
-C
 
 # B-2.2: Individual action outlines
 
@@ -6285,12 +4462,6 @@ The project also includes adapting guidelines and catalogs, and compiling existi
 
 It includes geological feasibility studies and collaboration with ArcelorMittal. The project also involves systemic changes in road and path renovations, ensuring all new concrete constructions use carbon-captured concrete (CCU) and all new wooden constructions use CCU wood.  |
 
-9
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 |   |  | Additionally, it aims to increase carbon compensation in construction, sell certificates, and monitor compliance.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Ecological service  |
@@ -6299,11 +4470,6 @@ Delfferdange 2030
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-0
-Ville de Differdange
-Net Zero
-Déliferdang 2020
-C
 
 # B-2.2: Individual action outlines
 
@@ -6322,12 +4488,6 @@ The project also includes adapting guidelines and catalogs, and compiling existi
 
 It includes geological feasibility studies and collaboration with ArcelorMittal. The project also involves systemic changes in road and path renovations, ensuring all new concrete constructions use carbon-captured concrete (CCU) and all new wooden constructions use CCU wood.  |
 
-1
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 |   |  | Additionally, it aims to increase carbon compensation in construction, sell certificates, and monitor compliance.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Ecological service  |
@@ -6336,11 +4496,6 @@ Delfferdange 2030
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-2
-Ville de Differdange
-Net Zero
-Déliferdang 2020
-C
 
 # B-2.2: Individual action outlines
 
@@ -6359,12 +4514,6 @@ The project also includes adapting guidelines and catalogs, and compiling existi
 
 It includes geological feasibility studies and collaboration with ArcelorMittal. The project also involves systemic changes in road and path renovations, ensuring all new concrete constructions use carbon-captured concrete (CCU) and all new wooden constructions use CCU wood.  |
 
-3
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 |   |  | Additionally, it aims to increase carbon compensation in construction, sell certificates, and monitor compliance.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Ecological service  |
@@ -6373,11 +4522,6 @@ Delfferdange 2030
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-4
-Ville de Differdange
-Net Zero
-Déliferdang 2020
-C
 
 # B-2.2: Individual action outlines
 
@@ -6396,12 +4540,6 @@ The project also includes adapting guidelines and catalogs, and compiling existi
 
 It includes geological feasibility studies and collaboration with ArcelorMittal. The project also involves systemic changes in road and path renovations, ensuring all new concrete constructions use carbon-captured concrete (CCU) and all new wooden constructions use CCU wood.  |
 
-5
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 |   |  | Additionally, it aims to increase carbon compensation in construction, sell certificates, and monitor compliance.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Ecological service  |
@@ -6410,11 +4548,6 @@ Delfferdange 2030
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-6
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-C
 
 # B-2.2: Individual action outlines
 
@@ -6433,12 +4566,6 @@ The project also includes adapting guidelines and catalogs, and compiling existi
 
 It includes geological feasibility studies and collaboration with ArcelorMittal. The project also involves systemic changes in road and path renovations, ensuring all new concrete constructions  |
 
-7
-Ville de Differdange
-0
-Net Zero
-Déliferdang
-0
 use carbon-captured concrete (CCU) and all new wooden constructions use CCU wood.
 
 Additionally, it aims to increase carbon compensation in construction, sell certificates, and monitor compliance.  |
@@ -6448,11 +4575,6 @@ Involved stakeholders
 Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
-8
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-9
 
 # B-2.2: Individual action outlines
 
@@ -6472,19 +4594,9 @@ Implementation | Responsible bodies/person for implementation | Ecological servi
 Action scale & addressed entities | Regional
 Involved stakeholders
 Comments on implementation | /
-Ville de Differdange
-^{}[]
-Net Zero
-Deliberdang 2030
-^{}[]
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 | --- | --- | --- |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-0
-Ville de Differdange
-Net Zero
-Déifférdange 2020
-C
 
 # B-2.2: Individual action outlines
 
@@ -6505,12 +4617,6 @@ Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
 
-1
-Ville de Differdange
-Net Zero
-Déliferdang 2020
-C
-
 # B-2.2: Individual action outlines
 
 (fill out one sheet per intervention/project)
@@ -6529,12 +4635,6 @@ Involved stakeholders
 Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
-
-2
-Ville de Differdange
-Net Zero
-Déifférdange 2020
-C
 
 # B-2.2: Individual action outlines
 
@@ -6555,16 +4655,6 @@ Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
 
-3
-Ville de Differdange
-4
-Net Zero
-Deliberdang 2030
-Ville de Differdange
-0
-Net Zero
-Dálfferdang 2000
-5
 
 B-2.2: Individual action outlines
 
@@ -6582,11 +4672,6 @@ B-2.2: Individual action outlines
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-Ville de Differdange
-0
-Net Zero
-DédiFerdang 2090
-6
 
 # B-2.2: Individual action outlines
 
@@ -6605,11 +4690,6 @@ DédiFerdang 2090
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-Ville de Differdange
-0
-Net Zero
-Dófferdang 2000
-C
 
 B-2.2: Individual action outlines
 (fill out one sheet per intervention/project)
@@ -6632,13 +4712,6 @@ Removed/substituted energy, volume or fuel type | /
 B-2.2: Individual action outlines
 (fill out one sheet per intervention/project)
 
-7
-Ville de Differdange
-0
-Net Zero
-Déliferdang 2030
-C
-
 Action outline | Action name | CA 3.1. Enforce climate adaptation measures at the level of home/residence owners
 Reference to impact pathway | Typical action | Governance
 Action description | The city of Differdange is leading citizens to adopt climate adaptation measures thanks to changing building regulations.
@@ -6654,12 +4727,6 @@ Comments on implementation | /
 Generated renewable energy (if applicable) | /
 Other | Removed/substituted energy, volume or fuel type | /
 
-8
-Ville de Differdange
-0
-Net Zero
-Dóttérdang 2000
-9
 
 # B-2.2: Individual action outlines
 
@@ -6680,10 +4747,6 @@ Involved stakeholders
 Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-0
 
 # B-2.2: Individual action outlines
 
@@ -6702,16 +4765,9 @@ Action scale & addressed entities | Local
 Involved stakeholders
 Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
-Ville de Differdange
-Net Zero Deliberdang 2030
-1
 
 |   | Removed/substituted energy, volume or fuel type | /  |
 | --- | --- | --- |
-Ville de Differdange
-Net Zero
-Déliferdang 2020
-C
 
 # B-2.2: Individual action outlines
 
@@ -6732,12 +4788,7 @@ Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
 
-2
-Ville de Differdange
-0
-Net Zero
 Dóttérdeng 2090
-C
 
 # B-2.2: Individual action outlines
 
@@ -6759,23 +4810,12 @@ Implementation | Responsible bodies/person for implementation | Ecological servi
 Action scale & addressed entities | Local
 Involved stakeholders | EVERARD Consulting & Communication
 
-3
-Ville de Differdange
-^{}[]
-Net Zero
-Deliberdang 2030
-^{}[]
 |   | Comments on implementation | /  |
 | --- | --- | --- |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-4
-Ville de Differdange
-C
 Net
 Zero
-Delftreding 2030
-C
 
 B-2.2: Individual action outlines
 
@@ -6794,12 +4834,6 @@ B-2.2: Individual action outlines
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
 
-5
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 B-2.2: Individual action outlines
 |  (fill out one sheet per intervention/project)  |   |   |
 | --- | --- | --- |
@@ -6815,10 +4849,6 @@ B-2.2: Individual action outlines
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-Ville de Differdange
-Net Zero
-Dédiendang 2020
-7
 
 # B-2.2: Individual action outlines
 
@@ -6837,10 +4867,6 @@ Dédiendang 2020
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-8
 
 # B-2.2: Individual action outlines
 
@@ -6861,19 +4887,9 @@ Media Service |
 Action scale & addressed entities | Local
 Involved stakeholders | EVERARD Consulting & Communication
 Comments on implementation | /
-Ville de Differdange
-^{}[]
-Net Zero
-Deliberdang 2030
-^{}[]
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 | --- | --- | --- |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-9
-Ville de Differdange
-Net Zero
-Déifférdange 2020
-0
 
 # B-2.2: Individual action outlines
 
@@ -6891,23 +4907,12 @@ A dedicated website will be developed to provide detailed information on all Net
 The site will become a key resource for the community, decision-makers, and partners, facilitating collaboration and transparency about ongoing initiatives and successes. Links to the full site will be provided |
 Implementation | Responsible bodies/person for implementation | Ecological service
 Media Service |
-Ville de Differdange
-^{}[]
-Net Zero
-Deliberdange 2030
-^{}[]
 |   | Action scale & addressed entities | Local  |
 | --- | --- | --- |
 |   |  Involved stakeholders | EVERARD Consulting & Communication  |
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-1
-Ville de Differdange
-0
-Net Zero
-Dóttérdang 2000
-2
 
 # B-2.2: Individual action outlines
 
@@ -6927,20 +4932,10 @@ Implementation | Responsible bodies/person for implementation | Ecological servi
 Media Service |
 Action scale & addressed entities | Local
 Involved stakeholders | EVERARD Consulting & Communication
-Ville de Differdange
-^{}[]
-Net Zero
-Deliberdang 2030
-^{}[]
 |   | Comments on implementation | /  |
 | --- | --- | --- |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-3
-Ville de Differdange
-Net Zero
-Déifférdange 2020
-4
 
 # B-2.2: Individual action outlines
 
@@ -6961,19 +4956,9 @@ Media Service  |
 Action scale & addressed entities | Local
 Implement on | Involved stakeholders | EVERARD Consulting & Communication
 Comments on implementation | /
-Ville de Differdange
-^{}[]
-Net Zero
-Deliberdang 2030
-^{}[]
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 | --- | --- | --- |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-5
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-6
 
 # B-2.2: Individual action outlines
 
@@ -6995,16 +4980,9 @@ Action scale & addressed entities | Local
 Involved stakeholders | EVERARD Consulting & Communication
 Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
-Ville de Differdange
-Net Zero Deliberdang 2030
-7
 
 |   | Removed/substituted energy, volume or fuel type | /  |
 | --- | --- | --- |
-Ville de Differdange
-Net Zero
-Déifférdange 2020
-8
 
 # B-2.2: Individual action outlines
 
@@ -7025,19 +5003,9 @@ Media Service  |
 Action scale & addressed entities | Local
 Involved stakeholders | EVERARD Consulting & Communication
 Comments on implementation | /
-Ville de Differdange
-^{}[]
-Net Zero
-Deliberdang 2030
-^{}[]
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 | --- | --- | --- |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-9
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-0
 
 # B-2.2: Individual action outlines
 
@@ -7056,21 +5024,11 @@ The site will become a key resource for the community, decision-makers, and part
 Implementation | Responsible bodies/person for implementation | Ecological service
 Media Service  |
 Action scale & addressed entities | Local
-Ville de Differdange
-^{}[]
-Net Zero
-Deliberdang 2030
-^{}[]
 |   | Involved stakeholders | EVERARD Consulting & Communication  |
 | --- | --- | --- |
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
-1
-Ville de Differdange
-Net Zero
-Déifférdange 2020
-2
 
 # B-2.2: Individual action outlines
 
@@ -7090,10 +5048,6 @@ Involved stakeholders
 Comments on implementation | /
 Impact & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
-Ville de Differdange
-Net Zero
-Déliferdang 2020
-C
 
 # B-2.2: Individual action outlines
 
@@ -7114,14 +5068,6 @@ Comments on implementation | /
 General & cost | Generated renewable energy (if applicable) | /
 Removed/substituted energy, volume or fuel type | /
 
-3
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
-
 # B-2.3. Summary strategy for residual emissions
 
 In the context of Differdange's Climate City Contract and the overarching goal of achieving net-zero emissions, we recognize that while the bulk of emissions can be mitigated through direct reduction strategies, certain residual emissions will remain. To manage these residual emissions, our approach focuses on a combination of ambitious offsetting projects, structural urban changes, and cross-sector collaboration to close the gap towards net-zero.
@@ -7141,14 +5087,6 @@ Alongside nature-based approaches, the adoption of innovative technological solu
 Initial results over the first two years will focus on energy audits, pilot projects, and the replacement of outdated equipment, which will lead to measurable emission reductions. As these projects scale, especially in the 3-4 year timeframe, the focus will shift to more widespread implementation, covering both public and private buildings.
 
 This technological pathway will directly reduce the city's carbon footprint by lowering energy consumption, while indirect impacts will include the creation of local green jobs, the stimulation of the green economy, and higher levels of energy independence for the municipality.
-
-4
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
 
 # Enhancing the Circular Economy
 
@@ -7172,22 +5110,10 @@ In the short term, rapid implementation of green infrastructure, energy-efficien
 
 The result will be a city that not only offsets its residual emissions but also creates a healthier, more resilient, and economically robust environment for its residents.
 
-5
-Ville de Differdange
-^{}[]
-Net Zero
-Déifférdange 2030
-^{}[]
 # Conclusion
 
 The City of Differdange is committed to a comprehensive strategy to offset residual emissions as part of its journey to net-zero. By leveraging a combination of nature-based solutions, cutting-edge technology, a strengthened circular economy, and robust partnerships for carbon offsetting, the city is ensuring that its long-term climate ambitions are fully realized. This multifaceted approach not only addresses immediate emissions but also fosters broader social, economic, and environmental benefits, creating a more sustainable future for all.
 
-6
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 # 5.3 Module B-3 Indicators for Monitoring, Evaluation and Learning
 
 The indicators:
@@ -7212,9 +5138,6 @@ This measures how many energy and climate-related consultations are provided to 
 “Enercoach” assesses the energy performance of the municipality.
 Document - Distribution of Total Electricity Consumption in the Municipality
 This involves documenting how total electricity consumption is distributed across different sectors or areas within the municipality.
-Ville de Differdange
-Net Zero Delfterdang 2030
-C
 
 Total Municipal Electricity Consumption (centrally recorded) (kWh)
 This measures the total electricity consumption within the municipality that is centrally monitored.
@@ -7241,13 +5164,6 @@ This compares the number of inspections related to energy efficiency at construc
 Reduction of CO2 Emissions / Energy Reference Area
 This measures the reduction in CO2 emissions per unit of energy reference area in the municipality.
 CO2 Emissions / Households (kg CO2/Household)
-
-8
-Ville de Differdange
-0
-Net Zero
-Delfferdange 2000
-C
 
 This indicates the average CO2 emissions per household within the municipality.
 **Energy Efficiency Class for Street Lighting**
@@ -7277,12 +5193,6 @@ This tracks the amount of non-recyclable waste generated per capita.
 **Annual Result of the Evaluation Matrix (issued by AEV)**
 This refers to an annual evaluation of the municipality's performance, possibly in relation to environmental or energy criteria, issued by an agency like AEV.
 
-9
-Ville de Differdange
-Net Zero
-Déifférdange 2020
-C
-
 **Chargy Charging Stations (individual charging opportunities) / 1,000 Residents**
 This measures the availability of charging stations for electric vehicles per 1,000 residents in the municipality.
 **% of Attraction Points with Sufficient Bicycle Parking Facilities**
@@ -7309,12 +5219,6 @@ This tracks the number of participants in certain programs, activities, or initi
 This measures the proportion of participants in climate or energy initiatives who are not directly involved in the municipal government or advisory bodies.
 **Number of Actions per Year (The municipality informs, raises awareness, and motivates the local population to integrate energy and climate-related criteria into their decision-making to achieve a sustainable lifestyle)**
 
-0
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 This tracks the number of actions or initiatives the municipality undertakes annually to educate and engage the local population on energy and climate issues.
 **Annual Funding Distributed per Capita**
 This measures the amount of funding distributed by the municipality per resident annually.
@@ -7333,11 +5237,6 @@ This measures how much of a particular plan or concept has been put into practic
 **Implementation Rate of the Energy Plan**
 This tracks the percentage of the energy plan that has been implemented.
 **Proportion of Renovated Areas According to National Subsidy Regulations per Capita / Building**
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 # B-3.2.: Metadata Indicator
 
 Indicator: Proportion of Renewable Energy for Heating Used by the Municipality / Total Heating Consumption
@@ -7359,11 +5258,6 @@ Indicator: Proportion of Renewable Energy for Heating Used by the Municipality /
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Annual energy report, climate action plan updates  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Municipal Heating Consumption / Energy Reference Area
 
 |  Indicator name | Municipal Heating Consumption / Energy Reference Area  |
@@ -7383,11 +5277,6 @@ Indicator: Municipal Heating Consumption / Energy Reference Area
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Energy efficiency reports, building performance reviews  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP, SCIS  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Municipal Electricity Consumption / Energy Reference Area
 
 |  Indicator name | Municipal Electricity Consumption / Energy Reference Area  |
@@ -7407,11 +5296,6 @@ Indicator: Municipal Electricity Consumption / Energy Reference Area
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Energy efficiency reports, building performance reviews  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP, SCIS  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Installed PV Capacity (kWp) / PV Potential (kWp)
 |  Indicator name | Installed PV Capacity (kWp) / PV Potential (kWp)  |
 | --- | --- |
@@ -7430,12 +5314,6 @@ Indicator: Installed PV Capacity (kWp) / PV Potential (kWp)
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Renewable energy potential reports, PV installation reviews  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP, SCIS  |
-Ville de Differdange
-
-Net Zero
-Delfferdange 2030
-
-C
 
 Indicator: Household Water Consumption per Year (L/Capita/Day)
 
@@ -7456,11 +5334,6 @@ Indicator: Household Water Consumption per Year (L/Capita/Day)
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Water consumption reports, sustainability assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Proportion of Electric Vehicles in the Municipal Fleet
 
 |  Indicator name | Proportion of Electric Vehicles in the Municipal Fleet  |
@@ -7480,11 +5353,6 @@ Indicator: Proportion of Electric Vehicles in the Municipal Fleet
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Fleet management reports, sustainability assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Progress Toward Climate Pact Goal Achievement
 
 |  Indicator name | Progress Toward Climate Pact Goal Achievement  |
@@ -7505,14 +5373,6 @@ Indicator: Progress Toward Climate Pact Goal Achievement
 |  Deliverables describing the indicator | Climate Pact progress reports, sustainability assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP, national climate agreements  |
 
-8
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
-
 Indicator: Number of Consultations by "Klima-Agence (MyEnergy)" per 1,000 Residents per Year
 
 |  Indicator name | Number of Consultations by "Klima-Agence (MyEnergy)" per 1,000 Residents per Year  |
@@ -7532,11 +5392,6 @@ Indicator: Number of Consultations by "Klima-Agence (MyEnergy)" per 1,000 Reside
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Public engagement reports, energy efficiency assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: "Enercoach" Report
 
 |  Indicator name | "Enercoach" Report  |
@@ -7556,11 +5411,6 @@ Indicator: "Enercoach" Report
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | "Enercoach" Report, energy performance analysis  |
 |  Other indicator systems using this indicator | Specific to "Enercoach"  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Document - Distribution of Total Electricity Consumption in the Municipality
 
 |  Indicator name | Document - Distribution of Total Electricity Consumption in the Municipality  |
@@ -7580,12 +5430,6 @@ Indicator: Document - Distribution of Total Electricity Consumption in the Munic
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Distribution report, energy consumption documentation  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP, SCIS  |
-Ville de Differdange
-
-Net Zero
-Delfferdange 2030
-
-C
 
 Indicator: Total Municipal Electricity Consumption (centrally recorded) (kWh)
 
@@ -7606,11 +5450,6 @@ Indicator: Total Municipal Electricity Consumption (centrally recorded) (kWh)
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Energy consumption report, sustainability assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Street Lighting Electricity Consumption (centrally recorded) (kWh)
 
 |  Indicator name | Street Lighting Electricity Consumption (centrally recorded) (kWh)  |
@@ -7630,11 +5469,6 @@ Indicator: Street Lighting Electricity Consumption (centrally recorded) (kWh)
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Public lighting reports, energy consumption analysis  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Total Household Electricity Consumption (centrally recorded) (kWh)
 |  Indicator name | Total Household Electricity Consumption (centrally recorded) (kWh)  |
 | --- | --- |
@@ -7653,11 +5487,6 @@ Indicator: Total Household Electricity Consumption (centrally recorded) (kWh)
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Energy consumption reports, sustainability assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Electricity Production in the Municipality (centrally recorded) (kWh)
 
 |  Indicator name | Electricity Production in the Municipality (centrally recorded) (kWh)  |
@@ -7677,11 +5506,6 @@ Indicator: Electricity Production in the Municipality (centrally recorded) (kWh)
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Energy production reports, sustainability assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Proportion of Renewable Electricity Purchased / Total Household Electricity Consumption
 
 |  Indicator name | Proportion of Renewable Electricity Purchased / Total Household Electricity Consumption  |
@@ -7701,11 +5525,6 @@ Indicator: Proportion of Renewable Electricity Purchased / Total Household Elect
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Renewable energy purchase reports, sustainability assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: CO2 Balance Based on EcoRegion/Ecospeed or Comparable Accounting Tools
 
 |  Indicator name | CO2 Balance Based on EcoRegion/Ecospeed or Comparable Accounting Tools  |
@@ -7725,12 +5544,6 @@ Indicator: CO2 Balance Based on EcoRegion/Ecospeed or Comparable Accounting Tool
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | CO2 balance reports, sustainability assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-
-Net Zero
-Déliferdang 2030
-
-C
 
 Indicator: Proportion of Residents with Access to an Early Warning System
 
@@ -7751,11 +5564,6 @@ Indicator: Proportion of Residents with Access to an Early Warning System
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Emergency preparedness reports, safety assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Waste Reduction: Total Municipal Waste (kg/Capita)
 |  Indicator name | Waste Reduction: Total Municipal Waste (kg/Capita)  |
 | --- | --- |
@@ -7774,12 +5582,6 @@ Indicator: Waste Reduction: Total Municipal Waste (kg/Capita)
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Waste reduction reports, sustainability assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
 
 Indicator: Waste Separation: Proportion of Residual Waste (not recyclable) from Total Municipal Waste (%)
 
@@ -7800,11 +5602,6 @@ Indicator: Waste Separation: Proportion of Residual Waste (not recyclable) from 
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Waste separation reports, recycling assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Number of As-Built Energy Certificate Inspections Compared to Number of Building Permits per Year
 |  Indicator name | Number of As-Built Energy Certificate Inspections Compared to Number of Building Permits per Year  |
 | --- | --- |
@@ -7823,12 +5620,6 @@ Indicator: Number of As-Built Energy Certificate Inspections Compared to Number 
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Inspection reports, building efficiency assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-
-Net Zero
-Delfferdange 2030
-
-C
 
 Indicator: Number of Energy Efficiency Site Inspections Compared to Number of Building Permits per Year (if no inspections, still note number of permits)
 
@@ -7849,11 +5640,6 @@ Indicator: Number of Energy Efficiency Site Inspections Compared to Number of Bu
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Inspection reports, building efficiency assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Reduction of CO2 Emissions / Energy Reference Area
 |  Indicator name | Reduction of CO2 Emissions / Energy Reference Area  |
 | --- | --- |
@@ -7872,11 +5658,6 @@ Indicator: Reduction of CO2 Emissions / Energy Reference Area
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Emission reduction reports, sustainability assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: CO2 Emissions / Households (kg CO2/Household)
 |  Indicator name | CO2 Emissions / Households (kg CO2/Household)  |
 | --- | --- |
@@ -7895,11 +5676,6 @@ Indicator: CO2 Emissions / Households (kg CO2/Household)
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Household emissions reports, sustainability assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Energy Efficiency Class for Street Lighting
 
 |  Indicator name | Energy Efficiency Class for Street Lighting  |
@@ -7919,11 +5695,6 @@ Indicator: Energy Efficiency Class for Street Lighting
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Energy efficiency assessments, sustainability reports  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Water Consumption of Municipal Buildings / Energy Reference Area
 |  Indicator name | Water Consumption of Municipal Buildings / Energy Reference Area  |
 | --- | --- |
@@ -7942,11 +5713,6 @@ Indicator: Water Consumption of Municipal Buildings / Energy Reference Area
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Water consumption reports, sustainability assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Number of Active Members of Energy Cooperatives in the Municipality
 
 |  Indicator name | Number of Active Members of Energy Cooperatives in the Municipality  |
@@ -7966,11 +5732,6 @@ Indicator: Number of Active Members of Energy Cooperatives in the Municipality
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Cooperative activity reports, sustainability assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Number of Energy Cooperatives
 |  Indicator name | Number of Energy Cooperatives  |
 | --- | --- |
@@ -7989,11 +5750,6 @@ Indicator: Number of Energy Cooperatives
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Cooperative activity reports, sustainability assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Capacity of Installations Operated by Energy Cooperatives
 
 |  Indicator name | Capacity of Installations Operated by Energy Cooperatives  |
@@ -8013,11 +5769,6 @@ Indicator: Capacity of Installations Operated by Energy Cooperatives
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Energy production reports, sustainability assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Installed PV Capacity per Capita (kWp)
 |  Indicator name | Installed PV Capacity per Capita (kWp)  |
 | --- | --- |
@@ -8036,11 +5787,6 @@ Indicator: Installed PV Capacity per Capita (kWp)
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | PV installation reports, sustainability assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Water Leakage Rate
 
 |  Indicator name | Water Leakage Rate  |
@@ -8060,11 +5806,6 @@ Indicator: Water Leakage Rate
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Water leakage reports, sustainability assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Proportion of Green Spaces in Urban Areas Compared to Total Urban Area
 
 |  Indicator name | Proportion of Green Spaces in Urban Areas Compared to Total Urban Area  |
@@ -8084,11 +5825,6 @@ Indicator: Proportion of Green Spaces in Urban Areas Compared to Total Urban Are
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Green space reports, urban sustainability assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Proportion of the Municipal Area with Separate Systems or Retention and Infiltration Systems (Wastewater/Rainwater)
 
 |  Indicator name | Proportion of the Municipal Area with Separate Systems or Retention and Infiltration Systems (Wastewater/Rainwater)  |
@@ -8108,12 +5844,6 @@ Indicator: Proportion of the Municipal Area with Separate Systems or Retention a
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Infrastructure assessments, urban sustainability reports  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
 
 Indicator: Population Connection Rate to Biowaste Collection
 
@@ -8134,12 +5864,6 @@ Indicator: Population Connection Rate to Biowaste Collection
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Waste management reports, sustainability assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-
-Net Zero
-Déliferdang 2030
-
-C
 
 Indicator: Annual Per Capita Collection of Municipal Waste ("Monopoly Waste")
 
@@ -8160,11 +5884,6 @@ Indicator: Annual Per Capita Collection of Municipal Waste ("Monopoly Waste")
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Waste collection reports, sustainability assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Residual Waste Generation in kg/Capita
 |  Indicator name | Residual Waste Generation in kg/Capita  |
 | --- | --- |
@@ -8183,11 +5902,6 @@ Indicator: Residual Waste Generation in kg/Capita
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Waste generation reports, sustainability assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Annual Result of the Evaluation Matrix (issued by AEV)
 
 |  Indicator name | Annual Result of the Evaluation Matrix (issued by AEV)  |
@@ -8207,11 +5921,6 @@ Indicator: Annual Result of the Evaluation Matrix (issued by AEV)
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Annual evaluation reports, performance reviews  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Chargy Charging Stations (individual charging opportunities) / 1,000 Residents
 |  Indicator name | Chargy Charging Stations (individual charging opportunities) / 1,000 Residents  |
 | --- | --- |
@@ -8230,12 +5939,6 @@ Indicator: Chargy Charging Stations (individual charging opportunities) / 1,000 
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Transportation sustainability reports, infrastructure assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
 
 Indicator: % of Attraction Points with Sufficient Bicycle Parking Facilities
 
@@ -8256,11 +5959,6 @@ Indicator: % of Attraction Points with Sufficient Bicycle Parking Facilities
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Urban mobility reports, sustainability assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Total Number of Parking Spaces
 |  Indicator name | Total Number of Parking Spaces  |
 | --- | --- |
@@ -8278,11 +5976,6 @@ Indicator: Total Number of Parking Spaces
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Urban infrastructure reports, parking assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Number of Climate Team Meetings per Year
 |  Indicator name | Number of Climate Team Meetings per Year  |
 | --- | --- |
@@ -8300,12 +5993,6 @@ Indicator: Number of Climate Team Meetings per Year
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Governance reports, climate action updates  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-
-Net Zero
-Delfferdange 2030
-
-C
 
 Indicator: Media Articles per Year on All Aspects of the Climate Pact
 
@@ -8325,11 +6012,6 @@ Indicator: Media Articles per Year on All Aspects of the Climate Pact
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Communication reports, public relations assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: % of Events Held as Green Events / Total Events
 |  Indicator name | % of Events Held as Green Events / Total Events  |
 | --- | --- |
@@ -8348,11 +6030,6 @@ Indicator: % of Events Held as Green Events / Total Events
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Event sustainability assessments, green event reports  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Funding Provided to Support Sustainable Construction Practices
 |  Indicator name | Funding Provided to Support Sustainable Construction Practices  |
 | --- | --- |
@@ -8371,11 +6048,6 @@ Indicator: Funding Provided to Support Sustainable Construction Practices
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Budget reports, sustainable construction assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Climate Bonus Subsidies
 |  Indicator name | Climate Bonus Subsidies  |
 | --- | --- |
@@ -8394,12 +6066,6 @@ Indicator: Climate Bonus Subsidies
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Budget carry-overs, climate action assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
 
 Indicator: Sustainably Managed Forest Area (% of Total Forest Area)
 
@@ -8420,11 +6086,6 @@ Indicator: Sustainably Managed Forest Area (% of Total Forest Area)
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Forestry reports, sustainability assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Organically Farmed Agricultural Area (% of Total Agricultural Area)
 |  Indicator name | Organically Farmed Agricultural Area (% of Total Agricultural Area)  |
 | --- | --- |
@@ -8443,11 +6104,6 @@ Indicator: Organically Farmed Agricultural Area (% of Total Agricultural Area)
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Agricultural reports, sustainability assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Number of Participants
 |  Indicator name | Number of Participants  |
 | --- | --- |
@@ -8465,12 +6121,6 @@ Indicator: Number of Participants
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Participation reports, community engagement assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
 
 Indicator: Percentage of Participants Not Part of the Municipal Team (Elected Representatives, Departments), a Consulting Committee, or the Climate Team
 
@@ -8490,11 +6140,6 @@ Indicator: Percentage of Participants Not Part of the Municipal Team (Elected Re
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Participation reports, community engagement assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Number of Actions per Year
 
 |  Indicator name | Number of Actions per Year  |
@@ -8513,11 +6158,6 @@ Indicator: Number of Actions per Year
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Action reports, community engagement assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Annual Funding Distributed per Capita
 |  Indicator name | Annual Funding Distributed per Capita  |
 | --- | --- |
@@ -8536,11 +6176,6 @@ Indicator: Annual Funding Distributed per Capita
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Budget reports, sustainability funding assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Priority Indicators Derived from Section 2.a. (1.1.3 in KP 2.0)
 
 |  Indicator name | Priority Indicators Derived from Section 2.a. (1.1.3 in KP 2.0)  |
@@ -8560,11 +6195,6 @@ Indicator: Priority Indicators Derived from Section 2.a. (1.1.3 in KP 2.0)
 |  Suggested collection interval | Annually or as specified in the KP 2.0 document  |
 |  Deliverables describing the indicator | Annual reports on priority indicators, progress assessments related to KP 2.0  |
 |  Other indicator systems using this indicator | Possibly Covenant of Mayors, CDP, or other relevant climate or sustainability reporting systems  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Proportion of the Population Benefiting from the Measures
 
 |  Indicator name | Proportion of the Population Benefiting from the Measures  |
@@ -8584,11 +6214,6 @@ Indicator: Proportion of the Population Benefiting from the Measures
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Benefit reports, impact assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Implementation Rate of the Concept Measures (%)
 
 |  Indicator name | Implementation Rate of the Concept Measures (%)  |
@@ -8608,11 +6233,6 @@ Indicator: Implementation Rate of the Concept Measures (%)
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Implementation progress reports, annual assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Nutrient Balance
 
 |  Indicator name | Nutrient Balance  |
@@ -8633,12 +6253,6 @@ Indicator: Nutrient Balance
 |  Deliverables describing the indicator | Nutrient balance reports, environmental assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
 
-5
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Resources Used per Capita
 |  Indicator name | Resources Used per Capita  |
 | --- | --- |
@@ -8657,11 +6271,6 @@ Indicator: Resources Used per Capita
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Resource use reports, sustainability assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Implementation Rate of the Concept
 
 |  Indicator name | Implementation Rate of the Concept  |
@@ -8682,12 +6291,6 @@ Indicator: Implementation Rate of the Concept
 |  Deliverables describing the indicator | Progress reports, implementation assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
 
-7
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Implementation Rate of the Energy Plan
 
 |  Indicator name | Implementation Rate of the Energy Plan  |
@@ -8708,12 +6311,6 @@ Indicator: Implementation Rate of the Energy Plan
 |  Deliverables describing the indicator | Energy plan progress reports, implementation assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
 
-8
-Ville de Differdange
-^{}[]
-Net Zero
-Delfferdange 2030
-^{}[]
 Indicator: Proportion of Renovated Areas According to National Subsidy Regulations per Capita / Building
 
 |  Indicator name | Proportion of Renovated Areas According to National Subsidy Regulations per Capita / Building  |
@@ -8733,9 +6330,6 @@ Indicator: Proportion of Renovated Areas According to National Subsidy Regulatio
 |  Suggested collection interval | Annually  |
 |  Deliverables describing the indicator | Renovation compliance reports, subsidy regulation assessments  |
 |  Other indicator systems using this indicator | Covenant of Mayors, CDP  |
-Ville de Differdange
-Net Zero Deliberdange 2030
-0
 
 # 6 Part C – Enabling Climate Neutrality by 2030
 
@@ -8745,9 +6339,6 @@ Internal climate policy
 Regional collaboration
 External climate policy
 Monitoring
-Ville de Differdange
-Net Zero Delfferdang 2030
-C
 
 # Internal city climate policy
 
@@ -8758,9 +6349,6 @@ C
 |   | Contact | Luc Arend  |
 |   | Stakeholders involved and role of each stakeholder | All departments of the city – exchange and coordination  |
 |   | Commitments | The City of Differdange is committed to integrating climate objectives throughout its municipal policies. When it comes to decision-making, it's crucial to focus on and prioritize projects that benefit both climate goals and other policy areas, creating a "win-win" scenario. Differdange aims to  |
-Ville de Differdange
-Net Zero Delfterdang 2030
-2
 
 implement impactful projects that inspire and accelerate progress, ensuring that those who can deliver significant emission reductions—either immediately or after being scaled up—are prioritized.
 
@@ -8769,26 +6357,15 @@ To support this effort, Differdange dedicates resources to seek funding opportun
 Monitoring and evaluation play a central role in ensuring the city's climate commitments are met. Differdange will outline a clear path towards climate neutrality, detailing expected emission reductions for specific timeframes and defining the actions required to achieve these targets. Regular monitoring allows the city to adjust its strategies if necessary and ensure that its measures are effectively driving progress towards its climate objectives. This structured and results-driven approach ensures that Differdange stays on track to meet its climate commitments.  |
 Enabling Impact | Collaborating and adopting an integrated approach in Differdange creates synergies that lead to greater efficiency in implementing climate policies. This method not only improves internal coordination, but also enhances the visibility and credibility of the city's climate efforts, both within the community and to external stakeholders. By working together across departments and aligning objectives, Differdange can achieve stronger, more cohesive results that resonate with citizens and third parties, fostering broader support for its climate initiatives.
 Co-benefits | Differdange's climate policy intervention takes a comprehensive and integrated approach that spans all city departments, embedding climate action into both direct and less obvious areas like culture, sports, communication, and finance. This cross-
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-3
 
 |   | departmental collaboration is critical in ensuring that all sectors contribute to the shared goal of climate neutrality. The city's historical efforts, including the Climate Action Plan and other strategic urban initiatives, have laid the groundwork for this holistic approach, facilitating cooperation across different fields of municipal policy. The climate strategy is designed to generate early, visible changes within the first 1-2 years, focusing on projects that provide both climate and societal benefits. Differdange is prioritizing "win-win" projects, such as improving energy efficiency in public buildings and enhancing sustainable mobility, that will not only reduce emissions but also improve quality of life for residents. These initiatives are aligned with systemic levers for early action, creating immediate impacts while setting the stage for more significant transformations in the future. Over the next 3-4 years, Differdange will continue to scale up its climate interventions. Projects such as transitioning heating systems in public buildings and increasing urban green spaces are expected to produce late-stage outcomes that contribute significantly to emission reductions. By fostering collaboration between departments and prioritizing impactful actions, the city is ensuring that the emission reduction pathways are followed effectively. These actions will deliver sustained reductions in GHG emissions, particularly through the optimization of heating systems and the creation of green infrastructure to combat urban heat islands. One of the key aspects of Differdange's strategy is its commitment to detailed monitoring and evaluation. By establishing clear reduction targets and timelines, the city ensures that climate goals are both measurable and adaptable. This approach enables Differdange to fine-tune its strategies as needed, ensuring that the measures are continuously optimized for maximum impact.  |
 | --- | --- |
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-4
 
 In terms of direct impacts, Differdange's focus on reducing energy consumption and transitioning to renewable energy sources will result in significant emission reductions. Projects such as optimizing urban heating networks and replacing traditional energy systems with renewable alternatives, including heat pumps, will have an immediate effect on reducing the city's overall carbon footprint.
 
 In addition to these direct emission reductions, the intervention also brings a range of indirect benefits. The creation of more green spaces, improved air quality, and reduced noise pollution will enhance the wellbeing of residents, making the city more attractive and livable. Moreover, the integrated approach fosters broader societal engagement, as departments align their objectives with climate goals, leading to more cohesive urban development and greater support from citizens and external stakeholders.
 
 By working across sectors, adopting a holistic approach, and prioritizing impactful projects, Differdange's climate policy ensures that the city is on track to meet its climate neutrality commitments while simultaneously improving the quality of life for its residents. This strategy not only addresses short-term goals but also lays the foundation for long-term sustainability and resilience.  |
-Ville de Differdange
-Net Zero Delfferdang 2030
-C
 
 # Regional Collaboration
 
@@ -8797,9 +6374,6 @@ C
 |   | Description: Differdange is not an isolated city; it is deeply connected to its surrounding region through its geography, history, and shared challenges. Climate change, just like the economic and social forces shaping the city, extends beyond the boundaries of Differdange, requiring regional cooperation to implement effective solutions. This is where the collaboration with neighboring municipalities through the Syndicat intercommunal Pro-Sud becomes essential. The Pro-Sud union, consisting of 11 municipalities, provides a platform to develop innovative projects with a regional, national, and even cross-border reach. Its mission focuses on sustainable development and enhancing the identity of the southern region of Luxembourg. Differdange's involvement in Pro-Sud is crucial for addressing climate change and regional challenges like urbanization, transport, and sustainable land use. The city seeks to promote a balanced relationship between humans and nature through projects like the Minett UNESCO Biosphere. The biosphere reserve offers an opportunity to experiment with new territorial management approaches and to study the impact of industrial legacies on the environment. Once shaped by iron ore extraction and industry, this region is now a living laboratory for biodiversity recovery and sustainable urban renewal. In addition to Pro-Sud, Differdange works closely with the TNT (Territoire Naturel Transfrontalier), a collaboration across three valleys (Chiers, Moulaine, and Alzette) shared by Luxembourg, Belgium, and France. This partnership focuses on improving the environment through community-based actions, leveraging the shared industrial history to create a more sustainable future. Through these regional collaborations, Differdange can scale up its climate actions, benefiting from economies of scale and collective expertise. By integrating these efforts into broader regional and international initiatives, the city is better positioned to achieve its Net Zero Cities objectives, fostering a more sustainable and livable future for its residents.  |   |
 |   | Responsible organization/entity | Ecological service  |
 |   | Contact | Luc Arend  |
-Ville de Differdange
-0
-Net Zero
 Dèfferdèng 2000
 
 Stakeholders involved and role of each stakeholder | The partnering municipalities: Bettembourg, Dudelange, Esch-sur-Alzette, Käerjeng, Kayl, Mondercange, Pétange, Rumelange, Sanem and Schifflange for Pro-Sud and Herserange, Hussigny, Saulnes and Haucourt for TNT.
@@ -8808,31 +6382,16 @@ Enabling Impact | The intervention, which focuses on enhancing regional cooperat
 
 Direct impacts on emission reductions will be realized through improved coordination, allowing for better integration of carbon-neutral practices and renewable energy initiatives across municipalities. For instance, Differdange will contribute to the significant reduction of GHG emissions through coordinated actions that align with both regional and national climate goals. Indirect impacts or co-benefits include fostering a stronger community bond and improving public health and environmental awareness, as listed under the “Civic participation” and “Awareness raising” sections of Module B-1. The cross-departmental collaboration also supports  |
 
-6
-Ville de Differdange
-0
-Net Zero
-Dépfferdange
-0
 
 the adoption of innovative climate policies that are sustainable and socially inclusive, aligning with the city's long-term climate neutrality goals.
 
 In sum, the intervention will play a critical role in achieving both short-term operational improvements and long-term strategic goals as outlined in Module B-1. By fostering regional collaboration and leveraging synergies, Differdange is well-positioned to meet its climate commitments.  |
-
-7
-Ville de Differdange
-Net Zero Delfferdange 2030
-C
 
 # External climate policy
 
 |   | Intervention  |
 | --- | --- |
 |   | Description: The City of Differdange plays a crucial role in shaping external climate policy through its consultative and representative positions in various intercommunal entities and regional bodies. Differdange is working closely with the Ministère des transports et des travaux publics, that are in charge of all public transport that is done with buses as well as the MAAS offers for people with disabilities or elderly people. The city also agrees with the Chemins de fer Luxembourgeois (CFL) that are in charge of rail transport and Luxtram, that are in charge of Luxembourg's trams. Also the ministries cited under the section "Stakeholders" are partners of the city and will be confronted with the visions and missions of the city in the objective of changing external policy. Differdange holds political representation in Sidor (waste incineration), where the city's representatives influence strategic decisions, pushing for investments in new machinery and feasibility studies to optimize waste management, energy efficiency, and emissions reduction. The city aims to make waste management more sustainable by exploring ways to increase energy output and reduce waste, while lifting Sidor's capabilities to provide electricity and heating to thousands of households. In SuperDrecksKësch (SDK), Differdange's consultative role allows the city to collaborate on developing sustainable waste management initiatives. SDK focuses on waste prevention, reuse, and recycling in line with EU guidelines, and Differdange benefits from these strategies without having direct decision-making power. The city also consults with Valorlux, focusing on reducing packaging waste and optimizing local recycling efforts. Although Differdange cannot influence national policies, it actively identifies potential areas for local improvement in waste reduction. On the TICE (regional transport) board, Differdange's representatives work towards enhancing the public transport network, with a focus on electrifying buses to align with the city's broader sustainability goals. Through these efforts, Differdange contributes to reducing emissions and improving regional mobility.  |
-Ville de Differdange
-Net Zero
-Déifférdange 2020
-C
 
 In Minett Kompost, Differdange’s representation on the board allows the city to push for infrastructure investments aimed at increasing compost and biogas production, further reducing methane emissions.
 
@@ -8854,20 +6413,9 @@ The intervention described helps achieve the objectives outlined in Module B-1 o
 
 For instance, Differdange’s representation in Sidor (waste incineration) enables the city to influence investments that enhance energy efficiency, reduce emissions, and optimize waste management. This aligns with the short- and long-term priorities by reducing emissions in the waste management sector, thus contributing to overall climate neutrality. Additionally, the city’s engagement with  |
 
-9
-Ville de Differdange
-0
-Net Zero
-DépPerdang 2000
-C
 
 |   | SDK (SuperDrecksKëscht) supports waste prevention, reuse, and recycling initiatives. While Differdange does not have direct decision-making power here, the consultative role helps identify synergies for improving local waste reduction practices, furthering short-term waste reduction goals. Through its consultative role with Valorlux, Differdange targets the reduction of packaging waste, contributing directly to emission reductions related to material use and waste. The involvement in regional transport through TICE and efforts to electrify buses also directly reduce emissions from the transport sector, addressing both immediate and future transport-related climate goals. These initiatives are linked to the pathways for reducing transport emissions outlined in Module B-1, ensuring that Differdange's actions are aligned with the climate neutrality commitments. In the context of Minett Kompost and SIACH, Differdange actively influences projects that address methane emissions and wastewater treatment. These efforts contribute to reducing greenhouse gases (GHGs) by improving waste treatment and resource recovery infrastructure. Furthermore, Differdange's stake in SudEnergie ensures that renewable energy development is prioritized, contributing to decarbonisation efforts and aligning with both short- and long-term emission reduction targets. Overall, these external commitments enable Differdange to shape regional and national policies that support climate neutrality. By aligning its external policy efforts with the systemic levers described in Module B-1, Differdange can ensure that its climate objectives are met in a collaborative and integrated manner, driving progress towards Net Zero.  |
 | --- | --- |
-
-0
-Ville de Differdange
-Net Zero Delfferdange 2030
-C
 
 # Monitoring
 
@@ -8880,10 +6428,6 @@ C
 |   | To foster a culture of learning and adaptation, Differdange will host regular review sessions involving city planners, project managers, and external experts. These sessions will focus on discussing outcomes, sharing best practices, and integrating new insights into existing and future projects. Such collaborative reviews will ensure that the city remains at the forefront of climate action innovation.  |
 |   | Furthermore, the city recognizes the importance of community involvement in achieving its climate goals. Therefore, it will engage citizens and local organizations through workshops and public forums to gather feedback and encourage community-driven climate actions. This participatory approach will not only enhance public awareness of the city's climate policies but also ensure that the community's needs and suggestions are considered in policy formulation and project execution.  |
 |   | Through these comprehensive monitoring and evaluation practices, Differdange aims to not only track the effectiveness of its climate strategies but also create an adaptive  |
-Ville de Differdange
-0
-Net Zero
-Dépferdange 2000
 
 and responsive framework that supports sustained climate action. This systematic approach will help the city refine its strategies continually, ensuring that Differdange can meet its ambitious climate goals while fostering a resilient and sustainable urban environment.
 **Responsible organization/entity**Ecological service
@@ -8894,18 +6438,9 @@ and responsive framework that supports sustained climate action. This systematic
 
 To guarantee the success of these innovative projects, Differdange has established a systematic monitoring and evaluation framework. This involves regular assessment phases that check the efficiency and effectiveness of implemented strategies, ensuring they align with set environmental goals and contributing positively to the city's climate objectives. Regular updates and iterative feedback loops help refine these strategies, ensuring that the city not only meets but potentially exceeds its sustainability targets.  |
 
-2
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-3
-
 Moreover, the city recognizes the importance of adaptation strategies alongside mitigation efforts. By focusing on increasing resilience against climate impacts, Differdange ensures a balanced approach to its climate action plan. This holistic view supports the city's broader goals of sustainability and environmental stewardship, ensuring that both current and future generations enjoy a high quality of life while maintaining ecological balance.
 
 This strategic approach to monitoring and evaluating climate action underscores Differdange's commitment to transparent and accountable governance in its journey towards climate neutrality. By integrating these practices into its operational framework, the city fosters a culture of continuous improvement and environmental responsibility, setting a benchmark for others in the region.  |
-Ville de Differdange
-Net Zero Deliberdange 2030
-4
 
 ## 6.2 Module C-2 Social and Other Innovation Interventions
 
@@ -8913,10 +6448,6 @@ Food Council
 Communication and storytelling
 Civic participation
 Digital twin
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-C
 
 # Food Council
 
@@ -8928,23 +6459,12 @@ C
 |   | Stakeholders involved and role of each stakeholder | Citizens  |
 |   | Commitments | In sustaining the Food Council initially established under the Interreg Project Fusilli, which concludes this year, the City of Differdange is committed to several pivotal measures to ensure its continuity and impact on the city's climate strategy. First, Differdange will formally integrate the council within its governance structure, ensuring it remains a key component of municipal policymaking, particularly in sustainability and waste management. The city also pledges to enhance citizen participation by continuing to foster platforms that encourage community involvement, thereby deepening civic engagement and ownership of local environmental efforts.  |
 
-5
-Ville de Differdange
-Net Zero
-Déifférdange 2020
-C
-
 Furthermore, Differdange is dedicated to supporting ongoing projects like the AI-enhanced waste bins and seeks to broaden these initiatives to amplify their environmental benefits. This includes securing necessary funding and exploring new project expansions. The city also commits to a systematic approach to monitoring and evaluating the council's effectiveness, ensuring that it not only meets but adapts to evolving environmental goals. Through these commitments, Differdange aims to promote a sustainable, inclusive governance model that aligns with its long-term objectives under the 100 Net Zero Cities mission, effectively addressing immediate and future environmental challenges.
 Enabling Impact | The Food Council, as envisaged by Differdange, is a transformative approach aimed at embedding citizen participation into the fabric of local governance. Initially piloted within the Interreg Project Fusilli, which concludes this year, the council has been a platform for civil society engagement and innovation in waste management through initiatives like AI-enhanced smart bins for pilot waste reduction projects.
 
 The continuation of the Food Council beyond the lifespan of Fusilli symbolizes a commitment to not just maintain, but to elevate the role of citizens in decision-making processes from the ground up. This commitment will help institutionalize the importance of food systems in local policy debates, transitioning pilot projects into permanent solutions, and enhancing the participation of citizens in the governance process.
 
 The primary outputs of the council include significant strides in food waste reduction and the exploration of artificial intelligence to improve waste management—efforts that align perfectly with Differdange's broader environmental goals. By making the Food Council a permanent fixture, the city ensures that these innovative approaches to sustainability are not just temporary experiments but enduring features of the municipal policy landscape. This ensures continuous improvement in waste management practices and helps embed sustainability into the cultural and operational ethos of Differdange.  |
-
-6
-Ville de Differdange
-Net Zero Delfferdange 2030
-C
 
 # Communication and storytelling
 
@@ -8956,10 +6476,6 @@ C
 |   | Stakeholders involved and role of each stakeholder | EVERARD Consulting & Communication – support and expertise  |
 |   | Commitments | The City of Differdange is actively embracing a communication and storytelling approach to engage and inspire its community towards achieving climate goals. This strategic commitment involves consistently delivering targeted messages and  |
 |   |  | information to ensure that the community is fully informed, involved, and supported.  |
-Ville de Differdange
-0
-Net Zero
-Déifférdange 2000
 
 narratives through various media channels, including the city's own monthly magazine and several social media platforms. These channels are vital for sharing success stories, educational content, and updates on local sustainability initiatives, thereby fostering a strong connection between the city's environmental objectives and the daily lives of its residents.
 
@@ -8970,18 +6486,9 @@ Enabling Impact | The City of Differdange's commitment to using communication an
 
 The document B-1 emphasizes that early changes in systemic levers, such as enhancing citizen engagement through information dissemination, can lead to significant late outcomes, including a more informed and active community that adopts sustainable practices widely. This correlates well with Differdange's strategy to use storytelling to cement a communal commitment to sustainability, thus potentially leading to a reduction in greenhouse  |
 
-8
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-
 |   |  | gas emissions through increased public participation in local sustainability initiatives. Furthermore, by aligning its communication efforts with educational content and success stories of local initiatives, the city hopes to embed sustainability into the daily lives of its residents, reflecting a key goal outlined in the document to integrate eco-friendly practices deeply into community behavior. This method not only aims to educate and empower citizens but also ensures ongoing participation and support for the city's climate goals, driving towards the systemic and lasting change envisioned in the strategic document.  |
 | --- | --- | --- |
 
-9
-Ville de Differdange
-Net Zero Delfferdang 2030
-C
 
 # Civic participation
 
@@ -8990,10 +6497,6 @@ C
 |   | Description: The City of Differdange is actively cultivating a robust culture of civic participation as part of its environmental and sustainability mission. Recognizing the rich multicultural fabric of its community, Differdange is dedicated to inclusive engagement, ensuring that all segments of the population are represented and active in shaping the city's future. This commitment to inclusivity is critical in fostering a collective ownership and responsibility towards achieving sustainability goals. To facilitate this, Differdange plans to organize four to five major thematic workshops each year that directly address various aspects of climate action and sustainability. These workshops are designed to educate, engage, and empower citizens, providing them with the knowledge and tools needed to contribute meaningfully to the city's climate objectives. The themes are carefully chosen to reflect the immediate environmental priorities and opportunities for impactful community involvement. In addition to these thematic workshops, a series of focused sessions will delve deeper into specific climate-related topics. These sessions aim to harness the community's collective expertise and enthusiasm, turning ideas into actionable strategies that align with Differdange's goal of a sustainable future. Complementing the workshops, Differdange is also rolling out a diverse program of actions and interventions designed to spark public interest and participation. This program includes events, exhibitions, conferences, and interactive activities such as public quizzes and games that are not only educational but also engaging. Each event is an opportunity to bring the community together, celebrate cultural diversity, and encourage a unified approach to the city's sustainability challenges. Through these concerted efforts in civic participation, Differdange is not just informing its citizens but actively involving them in the journey towards sustainability, making the city's environmental mission a shared endeavour.  |   |
 |   | Responsible organization/entity | Ecological service  |
 |   | Contact | Luc Arend  |
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-C
 
 Stakeholders involved and role of each stakeholder | EVERARD Consulting & Communication – planning, organisation and implementation
 **Commitments** | Differdange is deeply committed to ensuring robust civic participation in its climate initiatives, aiming to fully engage its multicultural community. The city has pledged to organize a series of thematic workshops, complemented by a range of engaging activities such as events, exhibitions, and interactive games to foster broad community involvement. These efforts are designed to be accessible and inclusive, accommodating the diverse needs of all residents and overcoming any barriers to participation, such as language or accessibility challenges. Additionally, Differdange is dedicated to providing ongoing support for these initiatives, ensuring they are responsive to community feedback and effectively monitored for impact. This approach not only aims to educate and empower residents but also to ensure that every individual feels a part of the city's mission towards sustainability, thereby enhancing the collective commitment to achieving climate goals.
@@ -9003,20 +6506,10 @@ To achieve this, the city plans to organize 4-5 large thematic workshops, each a
 
 In addition to the workshops, Differdange will implement a range of supplementary actions and events to raise awareness and encourage broader participation. These will include exhibitions, conferences, pub quizzes, and games, designed to  |
 
-1
-Ville de Differdange
-0
-Net Zero
-Delftreding 2000
-C
 
 |   | capture the attention of the public and inspire a deeper connection to the mission. This multi-faceted approach ensures that climate action is not only a municipal responsibility but also a community-wide effort that resonates across all demographic groups. The city's commitment to inclusivity and engagement reflects its understanding that lasting change can only be achieved when citizens feel directly involved in and responsible for the outcomes of the initiatives. By involving its residents in decision-making and providing them with platforms to contribute, Differdange is laying the groundwork for a more resilient and sustainable future. Through this initiative, Differdange not only aims to reduce emissions and promote sustainable behaviours but also to strengthen the social fabric of the community, ensuring that all voices are heard and that every resident plays a role in the city's mission to achieve climate neutrality.  |
 | --- | --- |
 
-2
-Ville de Differdange
-Net Zero Delftredeng 2030
-C
 
 # Digital twin
 
@@ -9027,9 +6520,6 @@ C
 |   | Contact | Luc Arend  |
 |   | Stakeholders involved and role of each stakeholder | LIST  |
 |   | Commitments | As Differdange moves towards creating a Digital Twin in collaboration with the Luxembourg Institute for Science and Technology (LIST), the city is setting forth several commitments to ensure the project's success. First, Differdange will engage in  |
-Ville de Differdange
-0
-Net Zero
 Dóttérdeng 2000
 
 active collaboration with LIST, contributing essential urban data and participating in the development process to ensure the Digital Twin accurately reflects the city's needs and features. Financially, the city is dedicated to allocating sufficient funds for the development, deployment, and ongoing maintenance of the Digital Twin, recognizing this as a vital investment in its technological and urban planning future.
@@ -9040,12 +6530,6 @@ Finally, Differdange sees the Digital Twin not just as a tool for immediate urba
 Enabling Impact | The intervention focusing on developing a Digital Twin in collaboration with the Luxembourg Institute for Science and Technology (LIST) is strategically positioned to amplify Differdange's capacity for systemic planning and operational efficiency. This forward-thinking initiative promises to harness high-resolution digital replication to streamline city planning, improve infrastructure management, and enhance environmental monitoring.
 
 The city's commitments to this project reflect a proactive approach to adopting advanced technologies for urban development. By investing in a digital twin, Differdange is set to revolutionize its urban planning and management systems. This commitment not only underscores the city's dedication to technological innovation but also aligns with broader environmental goals, aiming to significantly reduce urban footprints through  |
-
-4
-Ville de Differdange
-Net Zero
-Déifférdange 2030
-C
 
 improved planning accuracy and resource management.
 
@@ -9064,14 +6548,6 @@ The social innovation approaches listed in the CCC, specifically the Food Counci
 
 **Energy Systems**:
 **Barrier**: Lack of manpower, legislative hurdles, material shortages, and political conflicts.
-
-5
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
 
 Social Innovation Link: The Digital Twin can simulate energy consumption and potential improvements without the immediate need for extensive manpower. By providing data-driven insights, it could streamline legislative processes and planning for energy infrastructure. Civic Participation workshops could be used to align political interests and increase public support for energy initiatives.
 
@@ -9097,25 +6573,11 @@ Several more actions from the action plan can be considered as "Social Innovatio
 Repair Cafés and Sharing Platforms - These actions encourage the reuse of items and promote a circular economy by providing spaces for community members to engage in sustainability practices directly. They facilitate social interaction and reduce waste, linking community behaviour to broader environmental goals.
 Second-hand Shop in the Recycling Park - Encourages reuse and recycling, providing a tangible space for community members to engage in sustainable consumption practices. This
 
-6
-Ville de Differdange
-^{}[]
-Net Zero
-Déifférdange 2030
-^{}[]
 initiative also serves as an educational platform about the benefits of waste reduction and recycling.
 
 Dedicated Environmental Platforms - These digital platforms are intended to keep the community informed and engaged, making them part of the ongoing sustainability dialogues and actions, enhancing transparency, and encouraging active participation.
 
 Each of these initiatives addresses one or more systemic barriers by promoting new forms of social practices, enhancing public engagement, and integrating community insights into municipal decision-making processes. They aim to shift collective mindsets, improve coordination among various sectors, and directly engage with the systemic challenges listed in your barriers, such as siloing, legislative complexities, and cultural resistance to change.
-
-7
-Ville de Differdange
-
-Net Zero
-Delfferdange 2000
-
-C
 
 # 6.3 Module C-3 Financing of Action Portfolio
 
@@ -9138,10 +6600,6 @@ Finance plan
 |  9 | Where does the food come from? |  | Ecological service | GHGs are reduced through a deeper understanding of food production – non-quantifiable. |   |
 |  WM 2 Reducing the volume of waste |   |  |  |  |   |
 
-8
-Ville de Differdange
-
-Net Zero
 Délibération ZOND
 
 |  10 | Taxes on waste |  | Ecological service | Reduction of the overall mass of waste. |   |
@@ -9155,9 +6613,6 @@ Délibération ZOND
 |  17 | Idea: Waste locks in residential buildings. |  | Ecological service | Fewer GHGs due to reduced waste volume. | 20.000 € / per year  |
 |  18 | Idea: Waste compactors |  | Ecological service | GHG reduction due to reduced touring. Indeed, the garbage cans will not have to be emptied ten times less often. |   |
 
-9
-Ville de Differdange
-0
 |  19 | Idea: Garbage fill level sensors |  | Ecological service | Reduction of the overall mass of waste. | €20 000  |
 | --- | --- | --- | --- | --- | --- |
 |  20 | Second-hand store in the recycling park |  | Ecological service | Reduction of the overall mass of waste. |   |
@@ -9169,8 +6624,6 @@ Ville de Differdange
 |  25 | Minett Kompost – Optimisation |  | Ecological service | Reduction of GHGs directly proportional to the amount of methane avoided and recovery leading to a substitution of fossil fuels and carbon sequestration in compost. |   |
 |  26 | Introduce a system of instructions on packaging |  | Ecological service | Reduction of GHGs directly proportional to the recycling rate. |   |
 |  27 | Béckléck – use of trees felled by storms and condemned to decay in the forest. |  | Ecological service | Carbon-neutral energy production. |   |
-Ville de Differdange
-1
 |  28 | SIACH |  | Ecological service | Reduction of GHGs directly proportional to the amount of methane avoided. Reduction of GHGs due to better treatment of sewage waste. |   |
 | --- | --- | --- | --- | --- | --- |
 |  29 | Ecotrel |  | Ecological service | Avoiding the production of recovered products in the circular economy. GHG savings due to reduced logistics distances. |   |
@@ -9182,12 +6635,6 @@ Ville de Differdange
 |  WM 4 – Circular economy |  |  |  |  |   |
 |  35 | CIGL — Vélosbuttek |  | Ecological service | Avoiding the production of recovered bicycles in the circular economy. GHG savings due to reduced logistics distances. More bicycles, less individual motorized mobility. |   |
 |  36 | CIGL — Butzebuttik |  | Ecological service | Avoid the production of clothes and toys, as they are recovered in the |   |
-Ville de Differdange
-
-Net Zero
-Delfferdange 2000
-
-C
 
 |   |  |  | Circular economy. GHG savings due to reduced logistics distances. |   |
 | --- | --- | --- | --- | --- |
@@ -9201,12 +6648,6 @@ C
 |  WM 5 – Organisational Optimisation  |   |   |   |   |
 |  44 | Gedeco — Association of Municipal Waste Managers |  | Ecological service | Not noticeable.  |
 |  45 | Idea: Purchasing centre |  | Ecological service | Purchase of eco-responsible products – products will be less GHG-emitting during production  |
-
-2
-Ville de Differdange
-
-Net Zero
-Delfferdange 2000
 
 |   |  |  |  | and more suitable for recycling after use. |   |
 | --- | --- | --- | --- | --- | --- |
@@ -9222,14 +6663,6 @@ Delfferdange 2000
 |  MS 2 - Decarbonisation |   |  |  |  |   |
 |  52 | Decarbonization of heating systems in single-family homes Request for subsidies from the State in collaboration with the Klima Agency |  | Technical Service - New Works and Maintenance | This action reduces gas consumption by: 2,600,000 m3/year, in the case of a remediation of 50% of the 3,061 potential units. | € 15.000.000  |
 
-3
-Ville de Differdange
-
-Net Zero
-Delfferdange 2000
-
-C
-
 |  53 | Switch to pellet district heating or biomass of dwelling-house units Connecting dwelling-houses to district heating |  | Technical Service - New Works and Maintenance | This action reduces gas consumption by: 350,000 m3/year in the case of the 275 connected houses. | €150 000  |
 | --- | --- | --- | --- | --- | --- |
 |  54 | Decarbonisation of residential heating systems Replace fossil heating systems with renewable energy fuel systems |  | Technical Service - New Works and Maintenance | Heat pumps can reduce gas consumption by around 500,000 m3 per year. | €5 000 000  |
@@ -9239,12 +6672,7 @@ C
 |  MS 3 – Energy production |   |  |  |  |   |
 |  58 | Production of solar energy on the real estate assets of the VDD Find private partners to finance, carry out and operate the implementation of the project. |  | Technical Service - New Works and Maintenance | Reduction of GHGs by saving imported fossil fuels. | €3.750.000  |
 
-4
-Ville de Differdange
-
-Net Zero
 Délibération
-0
 
 59 | Wind energy production
 Establishment of a wind farm
@@ -9259,12 +6687,6 @@ MS 4 – Energy savings
 63 | Optimization of district heating networks in collaboration with a private partner Find a private partner to expand, optimize and operate district heating networks in the City's territory. | Technical Service - New Works and Maintenance | Encourage more households to opt for a connection to the district heating network. | €500 000
 64 | Idea: Solar energy production on agricultural land/areas of the VDD Find private partners to finance, carry out and operate the implementation of the project in collaboration with the competent state authorities. | Technical Service - New Works and Maintenance | Reduction of GHGs by saving imported fossil fuels. | €2 500 000
 
-5
-Ville de Differdange
-
-Net Zero
-Déliferdang 2000
-
 |  65 | Urban lighting - transition to smart LED lighting Apply for a grant from the State and establish a global tender to convert all light points into smart LEDs. |  | Technical Service - New Works and Maintenance | CO2 reduction by reducing the energy required to operate the LEDs. Also, possibility to vary the light intensity after midnight, for example. | €4 000 000  |
 | --- | --- | --- | --- | --- | --- |
 |  66 | Lighting of sports fields - replacement of halogenic headlights with LED headlights. |  | Technical Service - New Works and Maintenance | Substantial energy saving. | €760.000  |
@@ -9273,11 +6695,6 @@ Déliferdang 2000
 |  67 | Urban Development Plan (UDP) |  | Urban development | CO2 reduction |   |
 |  UP 2 – Urban spaces |   |  |  |  |   |
 |  68 | Rearranging urban spaces |  | Urban development | Significant reduction of CO2 through several direct initiatives. The increase in vegetated areas helps to capture atmospheric CO2, thus improving urban air quality. Expansion of pedestrian spaces and cycling infrastructure reduces reliance on motor vehicles, reducing greenhouse gas emissions. In addition, the reduction of heat islands through smart urban planning reduces the need for air conditioning, which also contributes to lower energy consumption and CO2 emissions. These improvements, in synergy with the |   |
-
-6
-Ville de Differdange
-
-7
 
 |   |  |  |  | city's sustainability policies, form an effective framework to mitigate climate impact and improve the well-being of residents. |   |
 | --- | --- | --- | --- | --- | --- |
@@ -9291,9 +6708,6 @@ Ville de Differdange
 |  73 | RGTR - Advisory role only to the MMTP. |  | Traffic and Mobility Service | Replacement of diesel buses by electric buses - GHG reduction. |   |
 |  74 | Dinola - VDD Project. Address-to-address transport service on request. |  | Traffic and Mobility Service | Replacement of diesel buses by electric buses - GHG reduction. | 170.000 € / per year  |
 |  75 | Adapto - Advisory role only to the MMTP. |  | Traffic and Mobility Service | Reduction of GHG emissions by reducing individual motorised |   |
-Ville de Differdange
-
-8
 
 |   |  |  |  | mobility through the use of electric buses. |   |
 | --- | --- | --- | --- | --- | --- |
@@ -9307,9 +6721,7 @@ Ville de Differdange
 |  MT 3 - Motorised transport - reduction |  |  |  |  |   |
 |  82 | Idea: Car sharing - Reduction of individual motorized transport |  | Traffic and Mobility Service | Huge impact on reducing the number of vehicles between urban centres. Provision of electric cars. | 300,000 € / per year  |
 |  83 | Adaptation of the public road at the entrance to the main roads of the city - Discouraging individual motorised transport |  | Traffic and Mobility Service | Reduced car traffic due to increased difficulty of passage. | €3 000 000  |
-Ville de Differdange
 
-Net Zero
 Délibération ZOND
 
 |  84 | Redevelopment of the city centre through measures in the field of urban planning to make it more attractive to alternative modes of transport and subsequently increase the quality of life for citizens. |  | Traffic and Mobility Service | Reduced car traffic due to increased difficulty of passage. |   |
@@ -9322,11 +6734,6 @@ Délibération ZOND
 |  89 | Municipal fleet - service vehicles - Fleet specific to the VDD. Fleet electrification or switch to hydrogen. |  | Traffic and Mobility Service | Reduction of GHG emissions by reducing motorised combustion mobility by electric vehicles. | Multi-annual budget  |
 |  90 | Municipal fleet - bicycles and service scooters - The VDD provides an electrified two- |  | Traffic and Mobility Service | Until all vehicles are electric, there is a significant reduction in GHGs on each journey. | 15.000 € / per year  |
 
-9
-Ville de Differdange
-
-0
-
 |   | wheeled mobility fleet. The decision on use remains specific to the employees of the municipality. |  |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  91 | Municipal fleet - commercial vehicles - Fleet specific to the VDD. Decarbonisation of the fleet to the extent possible and of the supply of suitable vehicles. |  | Traffic and Mobility Service | Reducing GHG emissions by reducing combustion-fuelled motorised mobility by electric or hydrogen-powered vehicles. | Multi-annual budget  |
@@ -9336,11 +6743,6 @@ Ville de Differdange
 |  94 | Pedestrian guidance system |  | Traffic and Mobility Service | Reduced motorized traffic. | €50 000  |
 |  95 | Increase in the percentage of children walking to school: Pedibus |  | Traffic and Mobility Service | Reduced motorized "parent taxi" traffic in front of schools. | 1.500 € / per year  |
 |  96 | Dry Schoulwee |  | Traffic and Mobility Service | Reduced motorized "parent taxi" traffic in front of schools. | €900 000  |
-Ville de Differdange
-1
-Net Zero
-Delftendang 2000
-C
 
 |  97 | Lighting of pedestrian crossings |  | Traffic and Mobility Service | / |   |
 | --- | --- | --- | --- | --- | --- |
@@ -9355,9 +6757,6 @@ C
 |  105 | European Mobility Week |  | Traffic and Mobility Service |  | 10 000 € / per year  |
 |  106 | Citizens' workshops |  | Traffic and Mobility Service |  | €60 000 / per year  |
 |  107 | Provision of recharging points. |  | Traffic and Mobility Service | Reduction of combustion engine vehicles. |   |
-Ville de Differdange
-
-2
 
 |  108 | Subsidies for the purchase of electric vehicles and infrastructure (booths) |  | Traffic and Mobility Service | Reduction of combustion engine vehicles. | 16.000 € / per year  |
 | --- | --- | --- | --- | --- | --- |
@@ -9373,13 +6772,8 @@ Ville de Differdange
 |  115 | Idea: PV and/or green roof carports |  | Ecological service | GHG capture if deciduous plants are used. |   |
 |  116 | Idea: Adaptation of the Regulation in the context of green facades. |  | Ecological service | GHG capture if deciduous plants are used. |   |
 |  117 | VDD and LIST collaboration |  | Ecological service |  | €120 000  |
-Ville de Differdange
-C
 Net
 Zero
-Delftredang
-0
-C
 
 |  118 | Idea: Supporting local farmers in the creation of a natural insulation production chain. (Hungary, straw, elephant grass, etc.) |  | Ecological service | GHG capture | €20 000  |
 | --- | --- | --- | --- | --- | --- |
@@ -9393,14 +6787,8 @@ C
 |  126 | Creation of a municipal system for the sale of local certificates with sale to the private sector |  | Ecological service | GHG capture / certification | €40 000  |
 |  CO 2 - Regional offsetting |   |  |  |  |   |
 
-3
-Ville de Differdange
-C
 Net
 Zero
-Delftredang
-0
-C
 
 |  127 | Think about scaling. 2050 in the ProSud region. |  | Ecological service | / | €420.000  |
 | --- | --- | --- | --- | --- | --- |
@@ -9417,11 +6805,6 @@ C
 |  133 | Public places belonging to the VDD |  | Ecological service | Possible CO2 reduction when planting trees. |   |
 |  CA 3 - Private developments |   |  |  |  |   |
 
-4
-Ville de Differdange
-
-5
-
 134 | Strengthen climate adaptation measures at the level of home owners / residences | Ecological service | /
 135 | Adapt building regulations encouraging entrepreneurs to build sustainably (e.g. a green facade gives the right to add a floor) | Ecological service | /
 136 | Promotion of forest baths by installing boxes to collect smartphones at the entrance of the forest and by setting up a bathtub in the forest to create an "instagrammabel" place. | Ecological service | / | €10 000
@@ -9432,10 +6815,6 @@ SI 1 – Civic Participation
 EVERARD
 Consulting & Communication | Reducing CO2 emissions through increased adoption of sustainable behaviours among citizens, such as increased use of public transport, carpooling, and energy efficiency improvements in homes and local businesses. | €70 000 / per year  |
 139 | Energy: Together towards net zero energy! (2024) | Ecological service | Direct reduction of greenhouse gas emissions through the | Incl.
-Ville de Differdange
-Net Zero
-Delfferdange 2030
-C
 
 EVERARD
 Consulting & Communication | implementation of renewable technologies and energy efficiency improvements in residential and commercial buildings. Increased local production of green energy, reducing dependence on fossil fuels. |   |
@@ -9453,11 +6832,6 @@ Consulting & Communication | Offsetting programs, capture greenhouse gases, alig
 EVERARD
 Consulting & Communication | Reduced greenhouse gas emissions through increased use of public transport, bicycles and pedestrian lanes. The new mobility policies will | Incl.  |
 
-6
-Ville de Differdange
-
-7
-
 |   |  |  |  | have helped to reduce the carbon footprint of daily travel. |   |
 | --- | --- | --- | --- | --- | --- |
 |  144 | Zukunftswerkstatt - Workshop of the future: All together towards a net-zero future! (2025-2026) |  | Ecological service EVERARD Consulting & Communication | Significant reductions in CO2 emissions through supported community projects such as energy renovation, the adoption of renewable energy, and sustainable mobility practices. | Incl.  |
@@ -9468,9 +6842,6 @@ Ville de Differdange
 |  148 | Participatory budgets |  | Communal Council | Raising citizens' awareness of the problem. | €50,000 / per project  |
 |  SI 3 - Communication |  |  |  |  |   |
 |  149 | Dedicated website - Creation of a landing page dedicated to the project (2024) - www.netzero2030.lu |  | Ecological service Media and Communication Service EVERARD Consulting & Communication | Increased adoption of recommended sustainable practices through the site, leading to reduced emissions through improved information and awareness. | €10 000  |
-Ville de Differdange
-
-8
 
 |  150 | Development of a dedicated website listing all the projects selected in the action plan (2024-2025) |  | Ecological service Media and Communication Service EVERARD Consulting & Communication | Reduced emissions through better project coordination and effective implementation based on improved access to best practices and technologies shared on the site. | €40 000  |
 | --- | --- | --- | --- | --- | --- |
@@ -9478,21 +6849,12 @@ Ville de Differdange
 |  152 | Social media - Use of Facebook and Instagram accounts of the City of Differdange |  | Ecological service Media and Communication Service EVERARD Consulting & Communication | Awareness and information of citizens on the progress of the mission and the issues and challenges of the city. |   |
 |  153 | Sending press releases |  | Ecological service Media and Communication Service EVERARD Consulting & Communication | Increased adoption of recommended sustainable practices through the site, leading to reduced emissions through improved information and awareness. |   |
 |  154 | Interviews with journalists |  | Communal Council | / |   |
-Ville de Differdange
-
-9
 
 |  155 | Monthly magazine of the City of Differdange. Articles about the mission in each edition. |  | Ecological service Media and Communication Service EVERARD Consulting & Communication | Creation of an image of the mission and increase of the notoriety of the municipality. Raising citizens' awareness of the problem. |   |
 | --- | --- | --- | --- | --- | --- |
 |  **SI 4 – EU Projects** |   |  |  |  |   |
 |  156 | ClimaBorough |  | Ecological service | Decarbonisation of energy production. Raising citizens' awareness of the problem. | €400 000  |
 |  157 | Heat bridge |  | Ecological service Technical Service - New Works and Maintenance | Decarbonisation of heating. |   |
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
 
 # 7 Outlook and Next Steps
 
@@ -9510,14 +6872,6 @@ The transition framework also incorporates mechanisms for continuous learning an
 
 Through these comprehensive steps, Differdange is demonstrating a proactive and structured approach to environmental stewardship, actively involving its citizens in the transformation process, and setting a robust foundation for achieving its goal of carbon neutrality by 2030. This strategic framework highlights Differdange's commitment to effective management practices and its dedication to leading by example in sustainable urban development.
 
-0
-Ville de Differdange
-
-Net Zero
-Déifférdange 2030
-
-C
-
 Catalyzing Investment: To back the implementation effectively, Differdange plans to deepen its engagement with the financial sector and the national government to unlock necessary investments. This may include developing new financial tools or infrastructures like a city fund, enhancing skills in climate finance, building robust business cases, and fostering collaborations with other cities to exchange best practices.
 
 To effectively back the implementation of its climate actions, the city of Differdange is focusing on catalyzing investment by deepening its engagement with both the financial sector and the national government. The city is poised to unlock the necessary investments through a series of strategic initiatives, which may include developing new financial tools or infrastructures like a dedicated city fund tailored to support environmental initiatives. These efforts aim to enhance the city's capabilities in climate finance and involve constructing robust business cases to attract further funding.
@@ -9531,14 +6885,6 @@ Collaborations are being strengthened not only locally with the multi-municipali
 These comprehensive measures illustrate Differdange's proactive approach to securing the financial support necessary for the successful execution of its ambitious climate action plan. By building partnerships, enhancing financial acumen, and innovating in municipal financing, Differdange is setting a strong foundation for achieving its target of becoming a carbon-neutral city by 2030.
 
 Governance and Capacity Building: Alongside portfolio management and investment strategies, Differdange will strengthen its governance structures related to the Mission. This might involve forming a hybrid team combining city and ecosystem capacities and expanding resources to support the Climate City Contract's objectives.
-
-1
-Ville de Differdange
-
-Net Zero
-Déifférdange 2020
-
-C
 
 To strengthen its governance and capacity building in alignment with the Climate City Contract, the city of Differdange is undertaking a comprehensive review of its internal organizational structures. This review is aimed at optimizing the implementation of climate actions, ensuring that administrative processes are streamlined and free from departmental frictions and bottlenecks. Given the small size of Differdange's administration, which operates with a limited number of staff, the smooth functioning of workflows is particularly crucial.
 
@@ -9557,14 +6903,6 @@ Monitoring Commitments: Differdange intends to establish mechanisms to ensure tr
 These mechanisms will be defined in the course of 2025 within the team that pilots the mission in Differdange.
 
 Outreach to Citizens: A public campaign will be launched to raise awareness about the Climate City Contract, aiming to reach a broader demographic. This will complement ongoing civic engagement efforts that involve citizens in various actions within the portfolio.
-
-2
-Ville de Differdange
-
-Net Zero
-Déifférdange 2020
-
-3
 
 Differdange is advancing its outreach to citizens by launching a comprehensive public campaign aimed at raising awareness about the Climate City Contract and its significance. This campaign is designed to engage a broader demographic, enriching the city's ongoing efforts to involve the community in various sustainability actions outlined in the portfolio.
 
@@ -9596,12 +6934,9 @@ EU MISSION PLATFORM | CLIMATE NEUTRAL AND SMART CITIES
 
 V2.1
 
-Document reflects only the author's view. The European Commission is not that may be made of the information it contains.
+The content of this document reflects only the author's view. The European Commission is not responsible for any use that may be made of the information it contains.
 
 NetZeroCities has received funding from the H2020 Research and Innovation Programme under the grant agreement n°101036519.
-Ville de Differdange
-Climate Neutrality Investment Plan
-2
 
 Document history
 Date | Version | Author | Changes
@@ -9610,16 +6945,10 @@ June 2023 | V2 | BwB | The template was amended to include a front-page note ‘
 November 2023 | V2.1 | BwB | The template has been amended based on the experiences of Window 1 and Window 2 cities, with input from City Advisors, consortium partners, the European Commission and the EIB.
 
 Headline changes to the document include the introduction of tables 1, 7, 8 and 15 to provide more granular detail on the city’s climate action history and prospective investments. Table guidelines have been provided for all tables to provide clarity on what data is required, and a task goal for each task identifies the key outcomes of each task within the IP.  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-3
 
 The IP template is to be followed closely, and cities should fill in every section to the level of detail that they have, remaining mindful of the CCC Checklist and guidance documents. If it is not possible to complete a section, please state why it cannot be filled out as opposed to leaving the section blank.
 
 Given sections of the Investment Plan require insight into municipal budgets and the forecasted costs of climate actions, it is recommended to share this resource with the municipal Finance or Treasury teams as soon as possible to begin work on the document (particularly A1, A2, B1, B2 and B3).
-Ville de Differdange
-Climate Neutrality Investment Plan
-4
 
 # Disclaimer
 
@@ -9627,22 +6956,19 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of contents
 
-Glossary of Terms ... 5
-
-Part A – Current State of Climate Investment ... 6
-Module IP-A1: Existing Climate Action Funding and Financing ... 6
-Module IP-A2: Strategic Funding and Financing Evaluation ... 8
-Module IP-A3: Barriers to Climate Investment ... 11
-
-Part B – Investment Pathways towards Climate Neutrality by 2030 ... 16
-Module IP-B1: Cost Scenarios for Climate Neutrality ... 16
-Module IP-B2: Capital Planning for Climate Neutrality ... 64
-Module IP-B3: Economic and Financial Indicators for Monitoring, Evaluation and Learning 75
-
-Part C – Enabling Financial Conditions for Climate Neutrality by 2030 ... 82
-Module IP-C1: Climate Policies for Capital Formation and Deployment ... 82
-Module IP-C2: Identification and Mitigation of Risks ... 87
-Module IP-C3: Capacity Building and Stakeholder Engagement for Capital and Investment Planning ... 92
+- Glossary of Terms
+- Part A – Current State of Climate Investment
+- Module IP-A1: Existing Climate Action Funding and Financing
+- Module IP-A2: Strategic Funding and Financing Evaluation
+- Module IP-A3: Barriers to Climate Investment
+- Part B – Investment Pathways towards Climate Neutrality by 2030
+- Module IP-B1: Cost Scenarios for Climate Neutrality
+- Module IP-B2: Capital Planning for Climate Neutrality
+- Module IP-B3: Economic and Financial Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Financial Conditions for Climate Neutrality by 2030
+- Module IP-C1: Climate Policies for Capital Formation and Deployment
+- Module IP-C2: Identification and Mitigation of Risks
+- Module IP-C3: Capacity Building and Stakeholder Engagement for Capital and Investment Planning
 
 # List of tables
 
@@ -9661,9 +6987,6 @@ Table 12: List of Climate Policies to Enable Capital Deployment ... 83
 Table 13: Climate Investment Plan Risk Framework ... 89
 Table 14: Stakeholder Engagement Mapping ... 93
 Table 15: Stakeholder Activity Cost ... 94
-Ville de Differdange
-Climate Neutrality Investment Plan
-5
 
 # Glossary of Terms
 
@@ -9675,9 +6998,6 @@ Climate Neutrality Investment Plan
 |  MEL | Monitoring Evaluation & Learning  |
 |  MRV | Monitoring Reporting Verification  |
 |  WP | Work Package  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-6
 
 # 1 Part A – Current State of Climate Investment
 
@@ -9687,14 +7007,12 @@ Part A ‘Current State of Climate Investment’ is the **structural element** o
 
 This section represents the initial step of the 2030 Climate City Investment Plan and will require an evaluation and assessment of previous and existing funding and financing for climate activities by field of action. The purpose of this task is to assess the city’s history of climate actions to date – including past failures and successes – to establish the baseline for climate actions in the future. These past actions should be broken down to the project level where possible and grouped as per the fields of action identified in the Action Plan. A full breakdown of historic climate initiatives and their financing is recommended, including historic budget data for the past 3–5 years.
 
-**Task Goals:** This task will help the city to collate all historical climate actions and initiatives – assessing previous successes and any issues that arose. By establishing a baseline for climate action, the city can then track their future development and the implementation of their Climate Action and Investment Plans.
 
 ### Model IP-A1
 
 **Guiding questions:**
 
 Have you already engaged in climate budgeting and – if so – what is the city’s historical track record with climate actions and projects?
-Do you have sufficient data on each field of action and is data collection carried out internally within the finance department?
 Has the city engaged in any PPPs or has there been any significant private sector engagement in recent years, and what is the current status of these projects? If not, why not – is this a political or regulatory hurdle?
 
 ### A-1.1: Textual Element
@@ -9708,15 +7026,9 @@ In terms of public-private partnerships (PPPs) and private sector engagement, Di
 The current status of these projects varies, with some advancing towards implementation and others in the planning stages. Each project under these partnerships is being closely monitored to ensure alignment with the broader objectives of Differdange’s climate action plan. The city remains committed to refining its approach to PPPs, learning from experiences to optimize future collaborations.
 
 Overall, Differdange is actively working to strengthen its climate action framework by enhancing financial policies, improving data collection and management, and fostering private sector involvement. By addressing these
-Ville de Differdange
-
-Climate Neutrality Investment Plan
-
-7
 
 foundational elements, the city aims to establish a robust baseline for monitoring, evaluating, and learning from its climate initiatives, ensuring the effective implementation of its Climate Action and Investment Plans going forward.
 
-Table 1 Guidelines: Please provide municipal budget data for the past five years from baseline (the most recent budgetary year) – this should be the approved budget for the current year and the real expenditure for the previous four years. If the city has a split operating/current expenditure and capital expenditure identified in their budget, please include both. As a minimum, please include city budget data, but consider also adding the budget for municipally-owned companies and clearly distinguishing where this is the case via an extra row.
 
 Table 1: Historical Municipal Budget and Budget for Climate Actions
 
@@ -9726,7 +7038,6 @@ Table 1: Historical Municipal Budget and Budget for Climate Actions
 |  Municipal Budget for Climate Actions & Projects (€) | N/A | N/A | 13.329.889 | 15.701.881 | 17.926.000  |
 |  % of Municipal Budget for Climate Actions & Projects (%) | N/A % | N/A % | 5.97% | 5.4% | 7.35%  |
 
-Table 2 Guidelines: Please provide historical budget data for all climate actions and projects that the city has undertaken in the past three years from baseline (the most recent budgetary year). Please provide some indication in the textual element as to the requirements for projects to be considered as a climate action (for example, following the EU Taxonomy for Sustainable Finance). This should be in € as well as % of overall budget.
 
 Table 2: Finance Sources by Field of Actions, for Years 2023 to 2025
 
@@ -9745,9 +7056,6 @@ Table 2: Finance Sources by Field of Actions, for Years 2023 to 2025
 |   |  Pacte climat | €71.955 | €285,000 | €365,000  |
 |   |  Éclairage urbain—transition vers un éclairage LED intelligent |  |  | €600,000  |
 |   |  Chauffage bois combustible | €600.556 | €430,000 | €535,000  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-C
 
 Projet géothermie | €700.000
 Étude netzero | €56.876 | €183.123 | €130.000
@@ -9768,20 +7076,11 @@ Total in € | €13.329.889 | €15.701.881 | €17.926.000
 
 This section requires an evaluation of the city's existing financial policies to understand how they are currently managing the capital allocation towards climate neutrality. This will include strategies in place and what the city has at its disposal to facilitate the transition. The form of capital it has access to and which are specific to their climate neutrality targets should be identified, and the current debt level of the city and any legislative requirements for new debt issuance should be outlined
 
-**Task Goals:** By identifying the existing income and capital sources to the city – as well as potential for future capital sources – the city can start to identify ways to fund the climate actions and initiatives identified within the Climate Action Plan.
 
 |  Model IP-A2  |
 | --- |
 |  Guiding questions:  |
 
-8
-Ville de Differdange
-
-Climate Neutrality Investment Plan
-
-9
-
-Do you have a clear overview of public sources of capital as well as private funding and financing sources? If yes, how detailed and accurate is it?
 To which aspects of this module does the municipality have the internal capacity to delve into detail on? Given some of these sources of finance may be combined to deliver on actions and priorities defined in the Action Plan.
 
 # A-2.1: Textual Element
@@ -9794,7 +7093,6 @@ As for the internal capacity to delve into detailed financial analysis and plann
 
 In summary, while Differdange has a good grasp on managing its public financing and navigating known funding mechanisms, it acknowledges the need for improved internal capabilities and data availability to better integrate and leverage both public and private financing for its climate initiatives. This ongoing development will be crucial as the city seeks to expand its actions under the Climate Action Plan and ensure sustainable funding and financing mechanisms are in place to support these initiatives over the long term.
 
-Table 3 Guidelines: Please identify and list all recurring city income sources for the city (e.g. local taxation revenue, deferred funding from the national or state level, profits generated by municipally-owned companies).
 
 Table 3: List of Income Sources for the City
 
@@ -9808,12 +7106,6 @@ Table 3: List of Income Sources for the City
 |  Taxes, subvention | 11.000.000 | 3.78%  |
 |  Participation, État fon. MR et commune | 18.000.000 | 6,19 %  |
 
-Table 4 Guidelines: Please identify and list all extraordinary capital sources for the city (e.g. EU grants and funding, loans from organizations like the EIB or Municipal Banks, PPPs). Give details as to when the capital was granted to the city, how much of it is left, and any specific projects to spend it.
-Ville de Differdange
-
-Climate Neutrality Investment Plan
-
-0
 
 Table 4: List of Capital Sources for the City
 
@@ -9834,9 +7126,6 @@ Total EU funding : € 11.037.882,75  |
 Just Transition Fund (Decarbonisation avec la geothermie): | €1.978.000 euros
 No money has been received yet. | Public | The Just Transition Fund (JTF) is an EU initiative aimed at mitigating the socio-economic impacts of the transition to a carbon-neutral economy. With €19.2 billion allocated for 2021-2027, it supports regions heavily reliant on carbon-intensive industries through economic diversification, workforce reskilling, and infrastructure investments.
 Geothermal energy is a key solution within this transition, offering a stable, renewable energy source for heating, cooling, and electricity  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-1
 
 |   |  |  | production. The JTF can fund **geothermal projects** by supporting SMEs, financing infrastructure, and fostering skills development. Former mining and industrial sites can be repurposed into **geothermal hubs**, driving local innovation and energy independence. To maximize impact, **local authorities** must align projects with JTF sustainability criteria, focusing on environmental and social benefits. The fund provides an opportunity to scale geothermal energy while fostering **regional economic revitalization**.  |
 | --- | --- | --- | --- |
@@ -9847,7 +7136,6 @@ Climate Neutrality Investment Plan
 
 This section requires evaluation and identification of the range of structural, policy, economic, and financial barriers for capital deployment in support of climate action.
 
-**Task Goals:** By listing the current barriers to climate investment, cities can start to identify solutions to overcome these barriers and facilitate further capital flows. This could involve collaborating to enact new policy, or identifying external stakeholders that can help to overcome structural and financial barriers.
 
 ### Model IP-A3
 
@@ -9859,11 +7147,6 @@ For which of the identified barriers can other stakeholders provide support?
 ### A-3.1: Textual element
 
 The City of Differdange acknowledges the challenges in evaluating and identifying the structural, policy, economic, and financial barriers for capital deployment in support of our climate action initiatives. At this stage,
-Ville de Differdange
-
-Climate Neutrality Investment Plan
-
-2
 
 we face significant constraints due to limited internal capacity and the absence of comprehensive data necessary to fully articulate these barriers.
 
@@ -9875,7 +7158,6 @@ In light of these circumstances, Differdange seeks understanding and patience fr
 
 Despite these challenges, the commitment within our municipal departments and political leadership to the climate mission is unwavering. The city is actively exploring solutions to bolster our internal capacities, potentially through partnerships or by securing external support that could provide the necessary expertise and resources. We anticipate that future collaborations, as part of the Mission Platform and with other stakeholders, will enable us to overcome these barriers and facilitate the capital flows essential for our climate initiatives.
 
-Table 5 Guidelines: Please provide an exhaustive list of all barriers to climate investment and any potential solutions (including the stakeholders involved) to overcome these barriers.
 
 Table 5: Barriers to Climate Investment
 
@@ -9883,26 +7165,17 @@ Table 5: Barriers to Climate Investment
 | --- | --- | --- | --- |
 |  Internal Capacity Limitations | Structural/Financial | Limited financial resources for hiring and training personnel with expertise in climate finance, project management, and technical implementation hinder the ability to secure and manage climate investments effectively. This leads to missed opportunities for funding and inefficient use of existing resources. | Local government, municipal financial departments, climate advisory bodies, Mission Platform for capacity building.  |
 |  Complex Legislation and Bureaucratic Procedures | Policy/Financial | Regulatory complexity increases compliance costs and delays investment in climate initiatives. Lengthy approval processes, permitting, and interdepartmental | National and regional regulatory bodies, municipal governments, investors, legal advisors.  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-3
 
 |   |  | misalignment create financial burdens that deter private investors and increase project risk. |   |
 | --- | --- | --- | --- |
 |  Funding and Financial Constraints | *Financial* | Municipal budgets often prioritize essential services, leaving limited funds for climate projects. Dependence on state and EU funding makes financing unpredictable, while limited access to alternative financing mechanisms such as green bonds or climate funds constrains investment capacity. | Municipal government, financial institutions, private investors, EU funding bodies, Mission Platform for financial innovation.  |
 |  Stakeholder Engagement Challenges | *Structural/Financial* | Limited financial resources are allocated for stakeholder engagement activities, which results in a lack of private sector participation and missed co-financing opportunities. Insufficient engagement with businesses and citizens can lead to low adoption rates for climate projects. Budget always has to be voted 0ne year in advance. This makes the process unflexible. | Local businesses, financial institutions, NGOs, community organizations, public-private partnerships.  |
 |  Technological Limitations and High Initial Costs | *Economic/Financial* | High upfront costs of innovative climate technologies (e.g., renewable energy, energy efficiency, waste management systems) deter investment. Lack of financial incentives or risk-sharing mechanisms further discourages early adoption and pilot programs. | Private sector, technology providers, venture capital, research institutions, EU funding programs.  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-4
 
 |  Public Perception and Cultural Resistance | Social/Financial | Financial concerns related to climate action (e.g., increased costs for businesses, potential economic disruptions) lead to resistance from the public and local industries. Without sufficient funding for public awareness and transition support programs, climate policies may face opposition, reducing investment attractiveness. | Municipal authorities, community leaders, businesses, citizens, educational institutions, Mission Platform for communication strategy development.  |
 | --- | --- | --- | --- |
 |  Risk Aversion in Private Investment | Economic/Financial | Climate projects often require long-term capital investments with uncertain returns, making them less attractive to traditional investors. The perceived risk associated with innovative solutions, regulatory changes, and evolving market conditions leads to reluctance from financial institutions and private investors. A lack of financial instruments such as risk guarantees, blended finance, or concessional loans further discourages private sector involvement. | Private investors, financial institutions, municipal and national governments, development banks, Mission Platform for investment de-risking mechanisms.  |
 |  Fragmentation of Climate Funding Sources | Financial/Structural | Climate investment relies on multiple funding streams from municipal budgets, national programs, EU funds, and private investments, which are often uncoordinated. This fragmentation creates inefficiencies in accessing and utilizing financial resources, leading to missed opportunities and delays in project implementation. A lack of centralized financial | Municipal financial departments, EU funding bodies, private sector, investment funds, Mission Platform for financial coordination and strategy development.  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-5
 
 planning and
 management reduces
@@ -9910,11 +7183,6 @@ the ability to
 strategically align
 funding with long-term
 climate objectives. |   |
-Ville de Differdange
-
-Climate Neutrality Investment Plan
-
-7
 
 Given this context, Differdange currently lacks the detailed budgetary framework that would allow for comprehensive long-term cost projections as required in Table 6 of the Climate Neutrality Action Plan. Specifically, the city does not employ a standardized costing methodology, nor does it engage in macroeconomic forecasting or detailed capital expenditure planning (capex) on a project-by-project basis that could provide the level of detail expected for implementation costs or operational expenditures over a multi-year timeline.
 
@@ -9924,14 +7192,8 @@ In recognizing these challenges, Differdange is actively seeking support from ex
 
 As we move forward, Differdange remains committed to transparency and responsible fiscal management. We intend to refine our budgeting approach to include more detailed financial planning as our capacity develops, ensuring that we continue to advance towards our climate neutrality goals responsibly and effectively.
 
-Table 6 Guidelines: Please provide a breakdown of all the anticipated costs of the climate actions identified in the Action Plan – it is encouraged that this covers the period from the present day to 2030. In each instance, please provide the absolute capex and operational costs. Implementation Costs/Capital Expenditure is the cost to develop and implement the project. Operational Expenditure is the expected annual running costs of the project once completed or operational (include annual costs and any cost savings from the project). Direct Impacts is, in this case, the CO2e reduction per annum forecasted by the project, and the indirect impacts are ideally the monetized co-benefits (or a qualitative assessment).
 
 To support the analysis below, please provide a methodology and all assumptions for your workings as an annexe. This should include unit costs benchmarking, a baseline year for cost estimates and the methodology for both direct and indirect benefits of GHG reduction.
-Ville de Differdange
-
-Climate Neutrality Investment Plan
-
-#
 
 Table 6: Sectorial Costing
 
@@ -9945,9 +7207,6 @@ Differdange's situation is that the territorial proportions are 1/3 industry, 1/
 |  2 | Intelligent waste bins in public kitchens. |  | €15,000/year | Up to 50% food waste reduction. |  | Raising awareness among chefs and kitchen staff, as  |
 
 N/A
-Ville de Differdange
-Climate Neutrality Investment Plan
-9
 
 |   |  |  |  |  |  | well as at a political level. Communication with the public too.  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -9956,9 +7215,6 @@ Climate Neutrality Investment Plan
 |  5 | Idea: Ground fridge | €15,000 |  | Energy savings and bulk purchase of vegetables. |  | Energy savings and bulk purchase of vegetables.  |
 |  6 | Idea: Food sharing fridge |  |  | Reduction of food waste – reduction of carbon footprint and reduction of organic waste. |  | Savings for citizens.  |
 |  7 | What food when? – Campaign |  |  | Scope reduction 2. |  | Better, healthier, seasonal food,  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-0
 
 |   |  |  |  |  |  | raising awareness among the public and civil servants alike. Savings thanks to lower prices for seasonal vegetables.  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -9966,18 +7222,12 @@ Climate Neutrality Investment Plan
 |  9 | Where does the food come from? |  |  | GHGs are reduced through a deeper understanding of food production – non-quantifiable. |  | Improving public health.  |
 |  WM 2 Reducing the volume of waste |   |  |  |  |  |   |
 |  10 | Taxes on waste |  |  | Reduction of the overall mass of waste. |  | The municipality’s revenue will increase in order to cover part of the costs associated with waste management. In the case of waste reduction, the number of collection  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-1
 
 |   |  |  |  |  |  | rounds could be reduced and GHGs in relation to lorries will decrease. Litter may appear.  |
 | --- | --- | --- | --- | --- | --- | --- |
 |  11 | Adaptation of the recycling park | €300,000 |  | Reduction of the overall mass of waste. Improved waste quality at the recycling park. |  | Redirecting waste to take-back firms for waste from professional construction sites. The service to the recycling park should improve for citizens through the reduction of professional waste.  |
 |  12 | Repair Cafés |  |  | Reduction of GHGs that correspond to the tonnage emitted during production emitted during the production of products. |  | Education leading to a better understanding of how to repair products. The social cohesion aspect.  |
 |  13 | Idea: Sharing platform |  |  | Reduction of GHGs that correspond to the tonnage |  |   |
-Ville de Differdange
-Climate Neutrality Investment Plan
-2
 
 |   |  |  |  | emitted during production emitted during the production of products. |  | Saving money.  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -9985,9 +7235,6 @@ Climate Neutrality Investment Plan
 |  15 | Distribution of plates, cutlery and the reusable dish to each inhabitant |  | €50,000/per year | Reduction of packaging waste. |  | Reducing the materials needed for festivities.  |
 |  16 | Implementation of a deposit system in the gastronomy sector and public festivities at ProSud level | €75,000 |  | Reduction of packaging waste. |  | Reducing the materials needed for festivities.  |
 |  17 | Idea: Waste locks in residential buildings. |  | €20,000/per year | Fewer GHGs due to reduced waste volume. |  | Moins de camions, moins de poids. Meilleure qualité des déchets.  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-3
 
 |  18 | Idea: Waste compactors |  |  | GHG reduction due to reduced touring. Indeed, the garbage cans will not have to be emptied ten times less often. |  | Reducing truck mileage.  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -9998,9 +7245,6 @@ Climate Neutrality Investment Plan
 |  22 | Idea: Sidor – installation of a hydrogen station next to the incineration site |  |  | Negligible |  | Raising awareness of the issue – changing the fleet of refuse collection lorries nationwide.  |
 |  23 | SuperDrecksKësch – problematic waste management |  |  | Reducing the carbon footprint of problematic waste. |  | Change of mentality. Potential savings. Recycling of materials.  |
 |  24 | Valorlux – a non-profit association entrusted by the State with the |  |  | The weight of packaging has already decreased since the beginning of this reflection. |  | Change in consumer mentality  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-4
 
 |   | management of packaging waste (PMC) and cigarette butts |  |  | Less fuel needed for logistics and less material needed for packaging production. |  | towards buying products in bulk.  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -10009,9 +7253,6 @@ Climate Neutrality Investment Plan
 |  27 | Béckléck – use of trees felled by storms and condemned to decay in the forest. |  |  | Carbon-neutral energy production. |  | Job creation, promoting the forest and Ardennes horses. Marketing opportunities.  |
 |  28 | SIACH |  |  | Reduction of GHGs directly proportional to the amount of methane avoided. Reduction of GHGs due to better treatment of sewage waste. |  | Improved water quality in the Chier. Expansion of existing heat recovery system (heating of buildings).  |
 |  29 | Ecotrel |  |  | Avoiding the production of recovered products in the circular economy. GHG |  | Raising awareness of the subject and  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-5
 
 |   |  |  |  | savings due to reduced logistics distances. |  | the social aspect.  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -10019,9 +7260,6 @@ Climate Neutrality Investment Plan
 |  31 | EcoTec – Wood recycling through Kronospan |  |  | Recycling of wood waste. |  | Material and energy substitution at the Kronospan production facility.  |
 |  32 | EcoTec – Cumbersome waste sorting |  |  | GHG reduction potential due to increased recycling quotas. |  | Various channels could pay for themselves and even generate profits, making recycling less expensive.  |
 |  33 | EcoTec – Management of the recycling park |  |  | Substitution of materials put back into the production cycle through recycling. |  | Changing attitudes and promoting the recycling park as a place to meet and organize services such as Repair Cafés, etc.  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-6
 
 |  34 | Benjeshecken – Recovery of green waste in situ |  |  | Economics of transport and fossil fuels. |  | Creation of biotopes.  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -10029,9 +7267,6 @@ Climate Neutrality Investment Plan
 |  35 | CIGL – Vélosbuttek |  |  | Avoiding the production of recovered bicycles in the circular economy. GHG savings due to reduced logistics distances. More bicycles, less individual motorized mobility. |  | Improved quality of life. Job creation and back-to-work training.  |
 |  36 | CIGL – Butzebuttik |  |  | Avoid the production of clothes and toys, as they are recovered in the circular economy. GHG savings due to reduced logistics distances. |  | Important social aspect. Job creation and back-to-work training. Change of mentality towards the purchase of repairable products with a longer lifespan.  |
 |  37 | CIGL – Occasiousbuttik |  |  | Avoid the production of furniture, as it is recovered in the circular economy. GHG savings due to reduced logistics distances. |  | Job creation and back-to-work training. Changing attitudes towards the purchase of repairable products with a longer lifespan.  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-7
 
 |  38 | Idea: Circular economy in the construction sector – use of BIM software |  |  | Avoid production of building materials, logistics, etc. |  | A change of mentality among design offices and architects, and potential reductions in construction costs.  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -10041,9 +7276,6 @@ Climate Neutrality Investment Plan
 |  42 | Idea: Plant bulb circularity project |  |  | Reduction of green waste, reduction of logistics GHGs, reduction of packaging. |  | Neighbourhood beautification.  |
 |  43 | Idea: Zero-emission waste collection truck | 8.000.000 over 12 years |  | GHG reduction |  | Bettering of the air quality.  |
 |  WM 5 – Organizational Optimization |   |  |  |  |  |   |
-Ville de Differdange
-Climate Neutrality Investment Plan
-8
 
 |  44 | Gedeco – Association of Municipal Waste Managers |  |  | Not noticeable. |  | Improving waste management at the national level.  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -10052,9 +7284,6 @@ Climate Neutrality Investment Plan
 |  WM 6 – Littering |   |  |  | Ecological service |  |   |
 |  47 | Bëschbotz |  |  | Less waste in forests as a result of clean-up actions. |  | Less impact on nature, to avoid harmful products accumulating in nature.  |
 |  48 | CleanChallenge |  |  | Less waste in the City as a result of clean-up actions. |  | Less impact on nature, to avoid harmful products accumulating in nature.  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-9
 
 |  49 | Monitoring Littering with an Intelligent Reconciliation System |  |  | Cost reduction and load optimization |  | Less waste in the City.  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -10066,9 +7295,6 @@ Climate Neutrality Investment Plan
 |  52 | Decarbonization of heating systems in single-family homes Request for subsidies from the State in collaboration with the Klima Agency |  | €15.000.000 | This action reduces gas consumption by: 2,600,000 m3/year, in the case of the remediation of 50% of the 3,061 potential units. |  | Improved quality of life and a degree of independence from fossil fuels.  |
 |  53 | Switch to pellet district heating or biomass of dwelling-house units Connecting dwelling houses to district heating |  | €150,000 | This action reduces gas consumption by: 350,000 m3/year in the case of the 275 connected houses. |  | Improved quality of life and a degree of independence from fossil fuels.  |
 |  54 | Decarbonization of residential heating systems Replace fossil heating systems with |  | €5,000,000 | Heat pumps can reduce gas consumption by around 500,000 m3 per year. |  | New concepts with Sudenergie for replacing boilers with heat  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-0
 
 |   | renewable energy fuel systems |  |  |  |  | pumps in the form of a contracting arrangement will enable homes to decarbonize without individual investment.  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -10077,9 +7303,6 @@ Climate Neutrality Investment Plan
 |  57 | Idea: Decarbonization of small maintenance equipment |  |  | Reduction of GHGs by saving imported fossil fuels. |  | Massive noise reduction in the city.  |
 |  MS 3 – Energy production |   |  |  |  |  |   |
 |  58 | Production of solar energy on the real estate assets of the VDD Find private |  | €3.750.000 | Reduction of GHGs by saving imported fossil fuels. |  | Local production of renewable energy.  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-1
 
 |   | partners to finance, carry out and operate the implementation of the project. |  |  |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -10089,9 +7312,6 @@ Climate Neutrality Investment Plan
 |  MS 4 – Energy savings |   |  |  |  |  |   |
 |  62 | Improving the efficiency of the building stock of the City of Differdange Idea: Renovation of the City’s heritage and replacement of heating systems (decarbonization). |  | €3,000,000 | GHG reduction. Estimate: 80,000 m3 of gas saved. |  | Improved quality of life and a degree of independence from fossil fuels.  |
 |  63 | Optimization of district heating networks in collaboration with a private partner Find a private partner to expand, optimize and operate district heating networks in the City’s territory. |  | €500,000 | Encourage more households to opt for a connection to the district heating network. |  | Increasing the attractiveness of district heating networks.  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-2
 
 |  64 | Idea: Solar energy production on agricultural land/areas of the VDD Find private partners to finance, carry out and operate the implementation of the project in collaboration with the competent state authorities. |  | €2,500,000 | Reduction of GHGs by saving imported fossil fuels. |  | Possible synergy with agroforestry projects.  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -10101,15 +7321,9 @@ Climate Neutrality Investment Plan
 |  UP 1 – Architecture – public buildings |   |  |  |  |  |   |
 |  67 | Urban Development Plan (UDP) |  | Urban development | CO2 reduction |  | Improved quality of life.  |
 |  UP 2 – Urban spaces |   |  |  |  |  |   |
-Ville de Differdange
-Climate Neutrality Investment Plan
-3
 
 |  68 | Rearranging urban spaces |  | Urban development | Significant reduction of CO2 through several direct initiatives. The increase in vegetated areas helps to capture atmospheric CO2, thus improving urban air quality. Expansion of pedestrian spaces and cycling infrastructure reduces reliance on motor vehicles, reducing greenhouse gas emissions. In addition, the reduction of heat islands through smart urban planning reduces the need for air conditioning, which also contributes to lower energy consumption and CO2 emissions. These improvements, in synergy with the city's sustainability policies, form an effective framework to mitigate climate impacts and improve the well-being of residents. |  | Enrich community interaction through better public spaces, thereby strengthening social cohesion. This urban regeneration is also likely to boost the local economy by attracting businesses and tourists, while the increased greenery and reduced pollution promise significant health benefits. Property values could rise as a result of the area’s increased attractiveness, which in turn could boost municipal revenues.  |
 | --- | --- | --- | --- | --- | --- | --- |
-Ville de Differdange
-Climate Neutrality Investment Plan
-4
 
 |  UP 1 – Architecture – private buildings |   |  |  | No direct impact. |  | Encourage more sustainable construction and renovation of existing buildings.  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -10120,9 +7334,6 @@ Climate Neutrality Investment Plan
 |  71 | General concept of public transport – Advisory role only to the MMTP. |  |  |  |  | Improved coexistence between the various entities and more in-depth discussions during future planning.  |
 |  72 | TICE – The City has political representatives in the union office and will try to influence management in this direction. |  | 5.400.000 €/per year Participation TICE €52,000/per year Capital contribution | Improving the attractiveness of supply by reducing GHG emissions by reducing individual motorized mobility. |  | Better service for residents.  |
 |  73 | RGTR – Advisory role only to the MMTP. |  |  | Replacement of diesel buses by electric buses – GHG reduction. |  | Better air quality and noise reduction.  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-5
 
 |  74 | Dinola – VDD Project. Address-to-address transport service on request. |  | €170,000/per year | Replacement of diesel buses by electric buses – GHG reduction. |  | Better air quality and noise reduction.  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -10133,9 +7344,6 @@ Climate Neutrality Investment Plan
 |  MT 2 – Public transport – rails |  |  |  |  |  |   |
 |  79 | CFL – Advisory role only to the MMTP. |  |  |  |  | Improving the quality of life.  |
 |  80 | CFL – Niederkorn judgment |  |  | Increase in train use as a result of the significant reduction in the travel time needed to reach the capital. |  | Improving the quality of life.  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-6
 
 |  81 | Luxtram – Advisory role only to Luxtram. |  |  | Huge impact on reducing car travel between urban centres. |  | Improving the quality of life.  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -10145,9 +7353,6 @@ Climate Neutrality Investment Plan
 |  84 | Redevelopment of the city centre through measures in the field of urban planning to make it more attractive to alternative modes of transport and subsequently increase the quality of life for citizens. |  |  | Reduced car traffic due to increased difficulty of passage. |  | Improving quality of life, road safety.  |
 |  85 | Day without cars 22 September |  | €1,500/per year | Reduced car traffic due to increased difficulty of passage. |  | Improved quality of life, road safety.  |
 |  86 | PARKing Day, 20 September – Reimagining public space |  | €1,500/per year | Reduction of the number of inert vehicles in public spaces due to the reduction of temporary or permanent parking spaces. Reduced |  | Improved quality of life, road safety, increased attractiveness of urban areas.  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-7
 
 |   |  |  |  | traffic in search of a parking space. |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -10156,9 +7361,6 @@ Climate Neutrality Investment Plan
 |  MT 4 – Motorized transport – electrification |  |  |  |  |  |   |
 |  89 | Municipal fleet – service vehicles – Fleet specific to the VDD. Fleet electrification or switch to hydrogen. |  | Multi-annual budget | Reduction of GHG emissions by reducing motorized combustion mobility by electric vehicles. |  | Savings in fuel and maintenance costs. Positive image for the city. Improved air quality and noise reduction.  |
 |  90 | Municipal fleet – bicycles and service scooters – The VDD provides an electrified two-wheeled mobility fleet. The decision on use remains specific to the employees of the municipality. |  | €15,000/per year | Until all vehicles are electric, there is a significant reduction in GHGs on each journey. |  | Improved employee morale, reduced car fleet, improved health.  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-8
 
 |  91 | Municipal fleet – commercial vehicles – Fleet specific to the VDD. Decarbonization of the fleet to the extent possible and of the supply of suitable vehicles. |  | Multi-annual budget | Reducing GHG emissions by reducing combustion-fuelled motorized mobility by electric or hydrogen-powered vehicles. |  | Savings in fuel and maintenance costs. Positive image for the city. Improved air quality and noise reduction.  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -10167,9 +7369,6 @@ Climate Neutrality Investment Plan
 |  MT 5 – Soft mobility – empowering walkability |   |  |  |  |  |   |
 |  94 | Pedestrian guidance system |  | €50,000 | Reduced motorized traffic. |  | Positive impact on health and awareness of pedestrian mobility.  |
 |  95 | Increase in the percentage of children walking to school: pedibus |  | €1,500/per year | Reduced motorized ‘parent taxi’ traffic in front of schools. |  | Positive impact on health and awareness of  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-9
 
 |   |  |  |  |  |  | pedestrian mobility. Raising young people’s awareness of soft mobility.  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -10179,9 +7378,6 @@ Climate Neutrality Investment Plan
 |  MT 6 – Soft mobility – empowering soft mobility |   |  |  |  |  |   |
 |  99 | Cycle paths |  | €300,000 | Reduced motorized traffic. |  | Positive impact on health and awareness of cycling.  |
 |  100 | Vél’OK – Bike sharing – Bike sharing scheme |  | €400,000/per year | Reduction of GHG emissions by reducing individual |  | Improved quality of life, health benefits,  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-0
 
 |   |  |  |  | motorized mobility through the use of bicycles. |  | change of mentality.  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -10192,9 +7388,6 @@ Climate Neutrality Investment Plan
 |  105 | European Mobility Week |  | €10,000/per year |  |  | Change of mentality.  |
 |  106 | Citizens’ workshops |  | €60,000/per year |  |  | Civic participation.  |
 |  107 | Provision of recharging points. |  |  | Reduction of combustion engine vehicles. |  | Positive impact on health and awareness of cycling.  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-1
 
 |  108 | Subsidies for the purchase of electric vehicles and infrastructure (booths) |  | €16,000/per year | Reduction of combustion engine vehicles. |  | Improved quality of life, health benefits, change of mentality.  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -10204,9 +7397,6 @@ Climate Neutrality Investment Plan
 |  Co2 Offsetting |  |  |  |  |  |   |
 |  CO 1 – Local offsetting (40% of remaining emissions) |  |  |  |  |  |   |
 |  111 | Subsidies for green facades |  | €20,000/per year | GHG capture if deciduous plants are used. |  | Use of wood for furniture and other products. Immobilization of CO2. Virreiderroll als Stad. Creation of green corridors.  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-2
 
 |   |  |  |  |  |  | Fodder for livestock (leaves), creation of a microclimate for agricultural land. Trees consume surplus fertilizer distributed on the land. Helps prevent insect population decline.  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -10216,18 +7406,12 @@ Climate Neutrality Investment Plan
 |  115 | Idea: PV and/or green roof carports |  |  | GHG capture if deciduous plants are used. |  | Offsetting our CO2 emissions.  |
 |  116 | Idea: Adaptation of the Regulation in the context of green facades. |  |  | GHG capture if deciduous plants are used. |  | Offsetting our CO2 emissions.  |
 |  117 | Agroforestry – VDD and LIST collaboration |  | €120,000 |  |  | Offsetting our CO2 emissions.  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-3
 
 |  118 | Idea: Supporting local farmers in the creation of a natural insulation production chain. (Hungary, straw, elephant grass, etc.) |  | €20,000 | GHG capture |  | Offsetting our CO2 emissions.  |
 | --- | --- | --- | --- | --- | --- | --- |
 |  119 | Carbon capture (CCS) – Direct CO2 storage |  | €100,000 | GHG capture |  | Offsetting our CO2 emissions.  |
 |  120 | Creation of the carbon capture facility. |  |  | GHG capture |  | Creation of an operating framework. Local responsibility for companies.  |
 |  121 | Storage of CO2 in tar – Karpp-Kneiff pilot project for future road renewal |  |  | GHG capture |  | Use of wood for furniture and other products. Immobilization of CO2. Virreiderroll als Stad. Creation of green corridors. Fodder for livestock (leaves), creation of a microclimate for agricultural land. Trees consume surplus fertilizer distributed on the land. Helps prevent insect population decline.  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-4
 
 |  122 | CO2 storage in concrete (CCU) – Set as standard in municipal tender dossiers |  |  | GHG capture |  | Creation of a sustainable economic sector. Job creation.  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -10240,9 +7424,6 @@ Climate Neutrality Investment Plan
 |  CO 3 – International offsetting |   |  |  |  |  |   |
 |  128 | Investment in European CCS and CCU projects (Netherlands/Norway) |  |  | GHG capture |  | Increased quality of life.  |
 |  129 | Cooperation on CCS/CCU projects with other pilot cities lacking money, but rich in territorial capacity. Finding international synergies |  |  | GHG capture |  | Increased quality of life.  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-5
 
 CO 4 – Purchase of international offset certificates (maximum 20% of remaining emissions)
 130 | Financing of CO2eq offsetting projects in non-EU countries | GHG capture
@@ -10254,9 +7435,6 @@ CA 2 – Urban development – natural public squares
 CA 3 – Private developments
 134 | Strengthen climate adaptation measures at the level of home owners/residences | / | Increased quality of life.
 135 | Adapt building regulations encouraging entrepreneurs to build sustainably (e.g. a green facade gives the right to add a floor) | / | Increased quality of life.
-Ville de Differdange
-Climate Neutrality Investment Plan
-6
 
 |  136 | Promotion of forest baths by installing boxes to collect smartphones at the entrance of the forest and by setting up a bathtub in the forest to create an ‘instagrammabel’ place. |  | €10,000 | / | €10,000 | Increased quality of life.  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -10264,39 +7442,24 @@ Climate Neutrality Investment Plan
 |  Social innovation |   |   |   |   |   |   |
 |  SI 1 — Civic Participation |   |  |  |  |  |   |
 |  138 | Benchmark: Living sustainably in Differdange (2023) |  | €70,000/per year | Reducing CO2 emissions through increased adoption of sustainable behaviours among citizens, such as increased use of public transport, carpooling, and energy efficiency improvements in homes and local businesses. |  | Improved quality of life with public health benefits from reduced air and noise pollution. Strengthening the social fabric through community engagement and environmental education, fostering a more informed and resilient society.  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-7
 
 |  139 | Energy: Together towards net zero energy! (2024) |  | Incl. | Direct reduction of greenhouse gas emissions through the implementation of renewable technologies and energy efficiency improvements in residential and commercial buildings. Increased local production of green energy, reducing dependence on fossil fuels. |  | Improving local energy resilience and reducing energy costs for households and businesses. Increased environmental awareness and social cohesion through community engagement in sustainable initiatives. Strengthening the local economy through the development of green sectors and the creation of sustainable jobs.  |
 | --- | --- | --- | --- | --- | --- | --- |
 |  140 | Mobility: together towards net-zero mobility! (2024) |  | Incl. | Measurable reduction in CO2 and other pollutant emissions through a reduction in motorized traffic and an increase in the use of public and non-motorized transport. Establishment of |  | Improving public health through better air quality and increased physical activity among residents. Increased  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-8
 
 |   |  |  |  | infrastructure promoting electric vehicles and bike and car sharing systems, contributing to a less polluted city. |  | equitable access to services and resources, reducing social inequalities. Revitalizing urban spaces, making neighbourhoods safer and more pleasant, and stimulating the local economy by increasing commercial activity in pedestrianized areas.  |
 | --- | --- | --- | --- | --- | --- | --- |
 |  141 | Waste: together towards net-zero waste management! (2024) |  | Incl. | Significant reduction in greenhouse gas emissions through optimized waste management. Increased recycling and energy recovery, contributing to less dependence on raw materials and fossil fuels. |  | Improved cleanliness and urban hygiene, contributing to a healthier environment and a better quality of life. Increased public awareness of the environmental and social impacts of waste  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-9
 
 |   |  |  |  |  |  | management, fostering a culture of environmental responsibility. Strengthening the local economy by promoting recycling initiatives and businesses.  |
 | --- | --- | --- | --- | --- | --- | --- |
 |  142 | Compensation: How, why, when? Achieving Net Zero in Differdange by 2030. (2025) |  | Incl. | Offsetting programs, capture greenhouse gases, aligning Differdange with its carbon neutrality goals for 2030. |  | Increased public awareness of the importance of biodiversity and environmental protection.  |
 |  143 | Mobility II: Let’s reinvent mobility! (2025) |  | Incl. | Reduced greenhouse gas emissions through increased use of public transport, bicycles and pedestrian lanes. The new mobility policies will have helped to reduce the carbon footprint of daily travel. |  | Improved public health through reduced air pollution and increased physical activity. Greater social cohesion through less congested public spaces that are more user-  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-0
 
 |   |  |  |  |  |  | friendly for all road users.  |
 | --- | --- | --- | --- | --- | --- | --- |
 |  144 | Zukunftswerkstatt – Workshop of the future: All together towards a net-zero future! (2025–2026) |  | Incl. | Significant reductions in CO2 emissions through supported community projects such as energy renovation, the adoption of renewable energy, and sustainable mobility practices. |  | Increased civic engagement and community resilience. Improved quality of life through better air quality, increased green spaces, and local economic opportunities focused on sustainability.  |
 |  145 | Mobility: online survey (2024) |  | Incl. | Reducing congestion and optimizing routes, leading to lower fuel consumption and CO2 emissions. |  | Improved quality of life through smoother traffic flow and increased mobility. Strengthening social cohesion by taking account of citizens’ opinions and needs in transport policies.  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-1
 
 |  SI 2 — Awareness raising |  |  |  |  |   |
 | --- | --- | --- | --- | --- | --- |
@@ -10305,9 +7468,6 @@ Climate Neutrality Investment Plan
 |  148 | Participatory budgets | €50,000/per project | Raising citizens’ awareness of the problem. |  | Increased awareness of the importance of biodiversity and environmental protection among citizens.  |
 |  SI 3 — Communication |  |  |  |  |   |
 |  149 | Dedicated website – Creation of a landing page dedicated to the project (2024) – www.netzero2030.lu | €10,000 | Increased adoption of recommended sustainable practices through the site, leading to reduced emissions through improved information and awareness. |  | Strengthening community awareness and education on climate change, improving access to information, and stimulating local innovation through a  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-2
 
 |   |  |  |  |  |  | common platform.  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -10315,9 +7475,6 @@ Climate Neutrality Investment Plan
 |  151 | Website of the City of Differdange – Content creation for the official website of the City of Differdange (www.differdange.lu) |  |  | The city site has a larger reach than the dedicated site in the early years. |  | /  |
 |  152 | Social media – Use of Facebook and Instagram accounts of the City of Differdange |  |  | Awareness and information of citizens on the progress of the mission and the issues and challenges of the city. |  | /  |
 |  153 | Sending press releases |  |  | Increased adoption of recommended sustainable practices through the site, |  | /  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-3
 
 |   |  |  |  | leading to reduced emissions through improved information and awareness. |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -10329,13 +7486,7 @@ Climate Neutrality Investment Plan
 
 *Referring to the Action Plan
 **Indicative indicators
-Ville de Differdange
 
-Climate Neutrality Investment Plan
-
-4
-
-Table 7 Guidelines: Please fill the following table in with the largest and/or most capital-intensive projects that have been established within the Action Plan and Investment Plan (in Table 6). For these projects, provide the below details including the proposed or envisaged funding structure and a description of the project including development timelines and current status.
 
 Table 7: Capital Intensive Projects
 
@@ -10355,9 +7506,6 @@ Current Status: Given these complexities, the city has not yet finalized the dec
 Differdange currently lacks the detailed budgetary framework that would allow for macroeconomic forecasting or detailed capital expenditure planning (capex) on a project-by-project basis that could provide the level of detail expected for implementation costs or operational expenditures over a multi-year timeline.
 
 Moreover, the municipal team, while highly motivated and committed to achieving the city's climate objectives, does not include specialists in complex financial modelling or cost-effectiveness analysis. As a result, Differdange is not equipped to calculate the direct impacts on CO2e reduction per annum.
-Ville de Differdange
-Climate Neutrality Investment Plan
-5
 
 Fields of Action | Action/Indicator | Capex (€m) | Opex (€m) | Cost Effectiveness (EUR/tCO2e) | Investment (Split by Stakeholders)
 Energy | Zesumme renovëleren project Energy renovation of existing single-family houses | 30 €m | N/A €m | ...EUR/tCO2e | State investment (50%)
@@ -10381,9 +7529,6 @@ Average of 6 households per residence:
 The project 'Energy Renovation of Residences' is an ambitious initiative by the Ville de Differdange, currently in the conceptual stage, aiming to enhance the energy efficiency of 910 residential units. With an objective to renovate 50% of these units, the project seeks to provide substantial subsidies ranging from €5,000 to €15,000 for upgrades on facades, cellars, and attics.
 
 **Benefits of Renovating Residences**  |   |   |   |
-Ville de Differdange
-Climate Neutrality Investment Plan
-6
 
 The benefits of this energy renovation project are multifaceted: 1. **Energy Efficiency**: Upgrading insulation and heating systems in residences can significantly reduce energy consumption, leading to lower utility bills and increased comfort for residents. 2. **Environmental Impact**: Improved energy efficiency contributes to reduced greenhouse gas emissions, aligning with broader climate action goals to achieve carbon neutrality by 2030. 3. **Property Value**: Renovated properties often see an increase in market value, making this a financially beneficial investment for homeowners. 4. **Community Revitalization**: Systematic renovations can enhance the overall aesthetic and functionality of neighbourhoods, fostering a sense of pride and community among residents.
 **Challenges of the Project** However, the project also faces several challenges: 1. **Coordination and Consent**: Energy renovations in multi-unit dwellings require coordination among all homeowners. Property rights issues, such as gaining consent from multiple parties, can complicate project implementation. 2. **Financial Investment**: While subsidies cover a significant portion of the renovation costs, the financial burden on homeowners can still be substantial, especially in the current economic climate with rising material costs. 3. **Finding a Suitable Implementation Partner**: As the project is still seeking an implementation partner, there’s an element of uncertainty in project execution and expertise. 4. **Technical and Logistical Constraints**: Adapting older buildings to modern energy standards can be technically challenging and may require innovative solutions to integrate new technologies with existing structures.  |
@@ -10392,9 +7537,6 @@ Energy | Decarbonization of heating systems in single-family homes Request for s
 **Project Description**: The Ville de Differdange (VDD) is spearheading a transformative project aimed at decarbonizing heating systems within single-family homes. This initiative, in collaboration with the Klima Agence, focuses on the installation of heat pumps, with the State offering subsidies up to €5,000 per unit. The project’s goal is to retrofit 1,000 homes, representing 25% of the eligible residences in the area, thereby significantly reducing the carbon footprint of the community.
 **Benefits of Heat Pumps**
 **Energy Efficiency**: Heat pumps are known for their efficiency, as they use less electrical energy than the heat they produce. This can lead to significant reductions in home energy costs over time. 2. **Environmental Impact**: By utilizing electricity and transferring heat rather than generating it through combustion, heat pumps can significantly reduce greenhouse gas emissions compared to traditional fossil fuel-based heating systems. 3. **Versatility**: Heat pumps provide both heating in the winter and cooling in the summer, enhancing comfort throughout the year.  |   |   |   |
-Ville de Differdange
-Climate Neutrality Investment Plan
-7
 
 **Long-term Savings**: Although the initial investment is higher, the operational costs of heat pumps are lower compared to traditional systems, leading to long-term savings for homeowners.
 
@@ -10418,9 +7560,6 @@ Investments to be made by households (balance). Average of 6 households per resi
 **Long-Term Cost Savings:** Although the initial investment can be higher, the operational cost savings and subsidies offered make heat pumps an economically viable option for homeowners.
 **Improved Air Quality:** By eliminating combustion-based systems, heat pumps contribute to improving indoor and outdoor air quality.
 **Challenges:**  |   |   |   |
-Ville de Differdange
-Climate Neutrality Investment Plan
-8
 
 1. Upfront Costs: Even with subsidies, the initial installation costs for heat pumps may deter some homeowners, particularly those with limited financial resources.
 Technical Requirements: Many older homes may require additional renovations (e.g. enhanced insulation, upgraded electrical systems) to maximize the efficiency of heat pump systems, increasing project complexity.
@@ -10448,9 +7587,6 @@ Decarbonization of the Oberkorn District Heating Network
 Sustainability: Geothermal energy is a renewable resource that offers a constant and uninterrupted supply of heat, making it a more sustainable alternative to fossil fuels.
 Reduction in Emissions: By replacing cogeneration systems that typically rely on fossil fuels, geothermal energy can drastically cut greenhouse gas emissions, contributing to climate change mitigation efforts.
 Cost Efficiency: Over the long term, geothermal energy can prove to be cost-effective due to lower maintenance requirements and the stability of energy supply prices.  |   |   |   |
-Ville de Differdange
-Climate Neutrality Investment Plan
-9
 
 **Energy Security**: Geothermal systems reduce dependency on imported fuels, enhancing energy security and stability for the local community.
 
@@ -10477,9 +7613,6 @@ Energy | Improving the efficiency of the building stock of the City of Differdan
 **Energy Efficiency:** Upgraded buildings will consume less energy for heating, cooling, and lighting, resulting in lower energy costs and reduced environmental impact.
 **Carbon Reduction:** By decarbonizing heating systems, the project directly contributes to the reduction of greenhouse gas emissions, supporting the city's commitments to climate action goals.
 **Enhanced Property Value:** Renovated facilities are likely to see an increase in property value, providing long-term financial benefits to the city.  |   |   |   |
-Ville de Differdange
-Climate Neutrality Investment Plan
-0
 
 **Improved Occupant Comfort**: Enhanced building envelopes and modern heating systems will improve indoor air quality and thermal comfort for occupants.
 
@@ -10507,9 +7640,6 @@ Project Description:
 • **Subsidy Application**: The city will seek financial support from state subsidies to help mitigate the costs associated with upgrading to smart LED lighting.
 • **Global Tender Process**: A global tender will be issued to select the most suitable technology providers for supplying and installing the smart LED systems.
 **Integration of LoRaWAN Technology:** To enhance the functionality and management of the lighting system, Differdange plans to incorporate LoRaWAN technology. This low-power, wide-area networking protocol enables remote control and monitoring of the LED lights, facilitating:  |   |   |   |
-Ville de Differdange
-Climate Neutrality Investment Plan
-1
 
 • Adjustable Lighting: Ability to modify lighting intensity and schedules remotely, adapting to different urban needs and events.
 • Efficient Maintenance: Real-time monitoring capabilities to swiftly address maintenance needs and reduce downtime.
@@ -10532,9 +7662,6 @@ The Roads and Bridges Administration invests €5,000,000 as a single investment
 **Project Overview:** This strategic intervention involves modifying the urban layout, particularly targeting rue de Soleuvre, to interrupt traffic flows that lead directly into the city centre. This redesign is intended to encourage the use of alternative transport modes and reduce reliance on private vehicles.
 **Investment Details:** An investment of €9,000,000 has been allocated for the development and restructuring of rue de Soleuvre. This significant financial commitment underscores the city’s dedication to transforming its transportation infrastructure.
 **Key Actions:**  |   |   |   |
-Ville de Differdange
-Climate Neutrality Investment Plan
-2
 
 Redesigning Street Layouts: The project involves altering road configurations to limit vehicle access to the city centre, effectively discouraging the use of cars for inner-city travel.
 Enhancing Public Transport and Mobility Options: Simultaneously, improvements will be made to public transport facilities and other mobility options to ensure that residents and visitors have viable alternatives to private car use.
@@ -10561,9 +7688,6 @@ The Roads and Bridges Administration invests €5,000,000 as a single investment
 **Objective:** The city of Differdange is undertaking an ambitious project to redevelop its city centre, focusing on urban planning measures that promote alternative modes of transportation. This initiative aims to enhance the overall quality of life for its residents by creating a more attractive, accessible, and sustainable urban environment.
 **Project Overview:** This comprehensive redevelopment plan involves the strategic redesign of city centre spaces to better accommodate pedestrians, cyclists, and public transit users, thereby reducing the reliance on individual motorized transport. The project prioritizes environmental sustainability and seeks to foster a vibrant urban core that supports economic and social activities.
 **Key Actions:**  |   |   |   |
-Ville de Differdange
-Climate Neutrality Investment Plan
-3
 
 • Pedestrianization of Key Areas: Certain sections of the city centre will be converted into pedestrian-only zones, providing safe, car-free areas that encourage walking and other forms of non-motorized travel.
 • Enhanced Cycling Infrastructure: The introduction of new bike lanes and secure bicycle parking facilities to encourage cycling as a primary mode of transportation.
@@ -10585,9 +7709,6 @@ Climate adaptation | Adaptation to climate change and improvement of quality of 
 **Adaptation to Climate Change and Improvement of Quality of Life – Mineral Public Squares**
 **Objective:** The City of Differdange is dedicated to enhancing its public squares to foster resilience against climate change while simultaneously improving the quality of life for its residents. This initiative aims to transform mineral public squares into sustainable, functional, and aesthetically pleasing urban spaces.
 **Project Overview:** This long-term project focuses on upgrading several key public squares owned by the Ville de Differdange (VDD), using environmentally sustainable designs and materials that contribute to climate adaptation and enhance urban liveability. The project is allocated a budget of €500,000 annually  |   |   |   |
-Ville de Differdange
-Climate Neutrality Investment Plan
-4
 
 until 2030, underscoring the city's commitment to continuous improvement in its urban landscape.
 
@@ -10611,10 +7732,6 @@ until 2030, underscoring the city's commitment to continuous improvement in its 
 
 This section will include a definition of the city's capital goals and how to achieve them. As the implementation of its programme starts, the below sources of capital can be laid out as a starting point. These should be aligned with the city's goals and relevant to the actions selected. Ideally, this will be a target and the city will optimize towards.
 
-**Task Goals:** This exercise forces cities to identify the funding and financing gaps within their Investment Plans so as to begin the process of securing additional and (in most cases) external funding and financing for climate actions. This exercise encourages cities to begin the process of identifying potential capital solutions on the project level.
-Ville de Differdange
-Climate Neutrality Investment Plan
-5
 
 # Model IP-B2
 
@@ -10622,7 +7739,6 @@ Climate Neutrality Investment Plan
 What are the existing resources already available for each action or project (e.g. public contributions, existing funding or investments secured)?
 How much of the budget is available for climate investment, and is the municipality operating at a surplus or deficit?
 How can you optimize use of both public funding and private investment capital to ensure capital deployment for all costs identified to reach the climate neutrality goal?
-Do you have experience on creating a pipeline of projects with the involvement of the private sector?
 
 ## Textual element
 
@@ -10645,19 +7761,13 @@ Despite Differdange's current limited experience in fostering a project pipeline
 Differdange's approach to financial planning for climate action is both dynamic and forward thinking. The city understands the critical need for sustainable financial strategies that not only support immediate climate action goals but also ensure long-term fiscal health. This involves rigorous planning, ongoing assessments of financial flows, and a keen openness to adapting strategies as needed to meet both current and emergent environmental challenges.
 
 The city's journey toward a sustainable future is framed by a clear vision and a strategic approach to financial management. With each step forward, Differdange demonstrates a commitment to not just meeting but exceeding its climate goals, supported by a financial strategy that is both robust and responsive to the city's evolving needs. This strategic financial management ensures that Differdange remains a model of sustainable urban development, committed to achieving its objectives with precision and proactive governance.
-#
 
 Ville de
-
-Differdange
 
 Climate Neutrality
 
 Investment Plan
 
-#
-
-Table 8 Guidelines: For each identified action, please identify the costs to all stakeholders including private citizens and the private sector or municipally-owned companies. The actions from Section B1 and the Action Plan should all be referenced here in similar detail.
 
 # Table 8: Capital Planning by Stakeholder
 
@@ -10682,11 +7792,6 @@ The most detail the city is able to communicate at this point in time can be fou
 |   |  |  | Specification of levels, levels and reusable tableware to each resident | 100% city. | / | per year |  |  |  |  |  |  |  |  |   |   |
 |   |  |  | Implementation of a deposit system in the gastronomy and public factories sector of the Prefood level | Pilot project led by the municipality. | 75,000 | Unique |  |  |  | Objection: operating costs during implementation taken over by the private sector. |  |  |  |  |   |   |
 |   |  | Pilot projects with the aim of experimenting on efficient waste management | Idea: Wastewater in residential buildings |  |  |  | Subsidiation of the city for the installation of locks. | 20,000 | per year |  |  |  |  |  |   |   |
-Ville de Differdange
-
-Climate Neutrality Investment Plan
-
-7
 
 | ID | Impact Pathways | Theme | Approach | Systemic Issues | Cost to municipality | Budgetary requirements | Frequency | Financial approach 2 – PPF | Budgetary requirements | Frequency | Financial approach 3 – Work parts | Budgetary requirements | Frequency | Financial approach 4 – Social activity | Budgetary requirements | Frequency |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -10709,11 +7814,6 @@ Climate Neutrality Investment Plan
 | 17 |  |  | Berjenhocton – Fabrication of green waste in situ | VDD project. | 100% city. | 0 |  |  |  |  |  |  |  |  |  |  |
 | 18 |  |  | Circular economy | CGIL – Infrastructure | VDD project |  | CGIL |  | Cooperation between city and CGIL. |  |  |  |  |  |  |  |
 | 19 |  |  | CGIL – Butorbuttik | VDD project. |  | CGIL |  | Cooperation between city and CGIL. |  |  |  |  |  |  |  |  |
-Ville de Differdange
-
-Climate Neutrality Investment Plan
-
-8
 
 |  Impact Pathways | Theme | Approach | Systemic Issues | Cost to municipality | Budgetary requirements | Frequency | Financial approach 2 - FPM | Budgetary requirements | Frequency | Financial approach 4 - Good party | Budgetary requirements | Frequency | Financial approach 4 - Households | Budgetary requirements | Frequency  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -10735,11 +7835,6 @@ Climate Neutrality Investment Plan
 |   |  | Switching to paths or biomass district heating for residential house units Connecting residential houses to district heating. | VOD project |  |  |  |  |  |  | Connection of 50 units over 6 years, connection costs €30,000, costs covered by the network manager. | 250,000 | per year over 6 years |  |  |   |
 |   |  | Decarbonization of heating systems in current residences Replace fossil heating systems with renewable energy fuel systems. | Idea: In collaboration with SudDrangle or other partners, decarbonize the heating systems of current residences. | Subsidies for sanitation – maximum €5,000 (heat pump); ideal objective: sanitation of 100 units (2.5%) | 833,333 | per year over 6 years |  |  |  | Sanitation of 100 units over 6 years, sanitation costs €50,000 per heat pump. 50%. | 208,333 | per year over 6 years | Investments to be made by households (balance) Average of 6 households per residence. | 55,555 | per year over 6 years  |
 |   |  | Decarbonization of the (diarrhoea district heating network Decarbonization with geothermal energy replacing Cogeneration (BVRM)) | VOD FEDER project | Total investment of 4,000,000; the city will carry 50%, so 2,000,000. | 666,000 | per year over 3 years |  |  |  | Costs covered by FEDER 50%, therefrom 2,000,000 | 666,000 | Per year over 3 years |  |  |   |
-Ville de Differdange
-
-Climate Neutrality Investment Plan
-
-9
 
 |  Project Pathways | Theme | Approach | Systemic Issues | Cost to municipality | Budgetary requirements | Frequency | Financial approach 2 – 499 | Budgetary requirements | Frequency | Financial approach 3 – third party | Budgetary requirements | Frequency | Financial approach 4 – households | Budgetary requirements | Frequency  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -10758,11 +7853,6 @@ Climate Neutrality Investment Plan
 |  Mobility and transport | Public transport – buses | Diffibus | VOD project | Costs borne by the VOD; €2,600,000; existing budget. | €2,600,000 | Per year |  |  |  |  |  |  |  |  |   |
 |   |  | General concept of public transport | Only an advisory role with the expert. | / |  |  |  |  |  |  |  |  |  |  |   |
 |   |  | TICE | The City has political representatives in the union office and will try to influence management in this direction. | TICE participation, existing budget. | €5,400,000 | Per year |  |  |  |  |  |  |  |  |   |
-Ville de Differdange
-
-Climate Neutrality Investment Plan
-
-0
 
 |   | Impact Pathways | Theme | Approach | Systemic Issues | Cost to municipality | Budgetary requirements | Frequency | Financial approach 2 - PPR | Budgetary requirements | Frequency | Financial approach 4 - Work party | Budgetary requirements | Frequency | Financial approach 6 - Households | Budgetary requirements | Frequency  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -10791,11 +7881,6 @@ Climate Neutrality Investment Plan
 |  23 |  |  | Reduce motorized traffic within the city | Provision of spaces for bicycles during the construction of the new City parking lot at the entrance to the city. | Adaptation of the project | €100,000 | Single investment | Partner of the Trulsas project. |  |  |  |  |  |  |  |   |
 |  24 |  |  |  | Channel and reduce flows through the guidance system towards public car parks. | Project in progress, existing budget, change of operation, launch costs | €50,000 | Single investment |  |  |  |  |  |  |  |  |   |
 |  25 |  | Soft mobility | Encourage pedestrian mobility | Pedestrian guidance system | Studies over 3 years, then first stages of implementation. | €50,000 | Over 3 years |  |  |  |  |  |  |  |  |   |
-Ville de Differdange
-
-Climate Neutrality Investment Plan
-
-1
 
 |  Impact Pathways | Theme | Approach | Systemic Issues | Cost to municipality | Budgetors' requirements | Frequency | Financial approach 2 - PPP | Budgetors' requirements | Frequency | Financial approach 3 - third party | Budgetors' requirements | Frequency | Financial approach 4 - households | Budgetors' requirements | Frequency  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -10824,11 +7909,6 @@ Climate Neutrality Investment Plan
 |   |  |  | Ideo: Supporting local farmers in the creation of a natural insulating production sector. (Hemp, straw, elephant grass, etc.) |  |  |  | 100% VDD; fixed purchase prices and purchase guarantee for farmers. The project will have to support itself later through the sale of products. | 20000 | Single investment for VDD for a study; creation of the production chain by a third party. |  |  |  |  |  |   |
 |   |  | Carbon sink (CCS) | Direct CO2 storage |  |  |  |  |  |  | Studies to change the law after 2030. | 100000 | unique |  |  |   |
 |   |  |  | Creation of the carbon capture installation. |  |  |  |  |  |  |  |  |  |  |  |   |
-Ville de Differdange
-
-Climate Neutrality Investment Plan
-
-2
 
 |  Impact Pathways | Theme | Approach | Systemic Issues | Cost to municipality | Budgetors requirements | Frequency | Financial approach 2 – PPP | Budgetors requirements | Frequency | Financial approach 3 – third party | Budgetors requirements | Frequency | Financial approach 4 – households | Budgetors requirements | Frequency  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -10850,11 +7930,6 @@ Climate Neutrality Investment Plan
 |   |  | Promote forest bathing and water games on hiking trails | Promotion of forest bathing by installing boxes to collect smartphones at the entrance to the forest and by setting up a bathtub in the forest to create an "Instagramnubel" place. | 100% VOD. Possible subsidies from the Ministry of Tourism. | €10,000 | Unique |  |  |  | State subsidies 50% | €5,000 | Unique |  |  |   |
 |   |  | "Climapath Assison 2025" | Conference on the 2021 climate (part - Theme: Climate adaptation | VOD budget - Catering, events, questionnaires, etc. | €50,000 | For 2025 |  |  |  | The work within the framework of the foundations offered by the Center for Ecological Learning Luxembourg (CEEL) is taken over by the State. |  |  |  |  |   |
 |   |  | Cool Neighborhoods | European Interreg project | 100% VOD pre-financing. | €100,000 | Unique |  |  |  | Interreg reimbursement | €80,000 | Unique |  |  |   |
-Ville de Differdange
-
-Climate Neutrality Investment Plan
-
-3
 
 |  Project Pathways | Theme | Approach | Systemic Issues | Cost to municipality | Budgetary requirements | Frequency | Financial approach 2 - FFP | Budgetary requirements | Frequency | Financial approach 3 - Hicd party | Budgetary requirements | Frequency | Financial approach 4 - Households | Budgetary requirements | Frequency  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -10878,13 +7953,7 @@ Climate Neutrality Investment Plan
 |   |  |  | Magazine "DiffMag" | Monthly magazine of the City of Differdange: Mission articles in each edition | 100% VOD, existing budget |  |  |  |  |  |  |  |  |  |   |
 |   |  | Other European projects | Climafonough | Simplification of investment in renewable energies |  |  |  |  |  | 100% EU | €400,000 | Unique |  |  |   |
 |   |  |  | Host bridge | European project "LIBI" |  |  |  |  |  | 100% EU |  |  |  |  |   |
-Ville de Differdange
 
-Climate Neutrality Investment Plan
-
-4
-
-Table 9 Guidelines: For each identified action from the Action Plan, please identify the costs specifically to the municipality and what percentage of costs is currently covered. For any actions that will be funded in full or in part by other stakeholders (e.g. private sector, loans, grant funding), please identify where these costs will come from if a source has been identified.
 
 Table 9: Capital Planning
 
@@ -10912,9 +7981,6 @@ Table 9: Capital Planning
 |  Compensation | Local compensation | 420.000 |  | 340.000 | 100%  |
 |   | Regional compensation | 30.000 |  | 390.000 | 100%  |
 |   | International compensation | 300€/ton |  |  | 100%  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-5
 
 |   | Purchase of international offset certificates | 16€/ton |  |  | 100%  |
 | --- | --- | --- | --- | --- | --- |
@@ -10924,13 +7990,11 @@ Climate Neutrality Investment Plan
 |   | Communication | 50.000 |  |  | 100%  |
 |   | Other European projects | 0 |  | 400.000 | 100%  |
 
-Please refer to table 8. Detailed information is contained in that table. All projects that have been planned and calculated up to this date are covered at 100%. If the projects are still in the conceptualization or idea phase, the capital planning will be added to this document in further iterations.
 
 ## 2.3 Module IP-B3: Economic and Financial Indicators for Monitoring, Evaluation and Learning
 
 A range of financial policies need to be considered to execute the actions laid out in the 2030 Climate Neutrality Action Plan. The city's financial policies should align with their current process and capital allocation. This will depend on the actions selected and be drawn from possible financial tools to assist the transition.
 
-**Task Goals:** A strong and robust monitoring, evaluation and learning framework is crucial for internal monitoring of the implementation of climate actions, as well as a requirement for securing external capital where any private actor would require the ability to monitor the project implementation and progress towards benchmarks and targets. By developing this framework now, cities can fully track their progress through the NetZeroCities Mission.
 
 Model IP-B3
 Guiding questions:
@@ -10943,11 +8007,6 @@ B-3.1: Textual element
 Differdange's approach to monitoring and evaluating its climate initiatives is structured around a developing framework that emphasizes transparency, accountability, and continual improvement. While the city is committed to establishing this framework, it is currently in the process of integrating all necessary components to capture both the progress and the lessons learned from various innovative practices and experiments conducted under the city's climate action plan.
 
 As part of this developing system, Differdange is focusing on setting up regular reporting mechanisms for the status of all its climate-related projects. Future reports are intended to detail advances in initiatives such  |
-Ville de Differdange
-
-Climate Neutrality Investment Plan
-
-6
 
 as agroforestry and advanced carbon storage techniques, assessing both their effectiveness and their contribution towards the city's overall emission reduction targets. These reports will employ quantitative metrics, such as the amount of carbon captured or the reduction in emissions compared to baseline levels, alongside qualitative assessments of the implementation process.
 
@@ -10959,7 +8018,6 @@ The city also recognizes the critical role of community involvement in achieving
 
 Through the gradual implementation of these comprehensive monitoring and evaluation practices, Differdange aims to not only track the effectiveness of its climate strategies but also create an adaptive and responsive framework that supports sustained climate action. This systematic approach will assist the city in refining its strategies continually, ensuring that Differdange can meet its ambitious climate goals while fostering a resilient and sustainable urban environment.
 
-Table 10 Guidelines: Please develop some project- and sector-level economic indicators as well as some cross-cutting indicators to monitor the implementation of the Investment Plan and identified projects. If you are having trouble conceptualizing these indicators, please utilize the Indicators Guidebook which can be found on the NetZeroCities portal.
 
 Table 10: Economic Indicators by Sector
 
@@ -10972,9 +8030,6 @@ Table 10: Economic Indicators by Sector
 |   |  Share of trips made by cycling, and walking (% of total trips. | Percentage (%) | 1%/18% | 15%/30%  |
 |   |  Kilometres of dedicated bike lanes built annually. | Number | 4.8 km | 20 km  |
 |   |  Percentage of last-mile delivery completed by zero-emission vehicles. | Percentage (%) | 0% | 20%  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-7
 
 (Reduction in heavy vehicle traffic in urban areas (%))
 Built Environment | Funding Provided to Support Sustainable Construction Practices | Monetary value (€, $, etc.) | ... | ...
@@ -10990,9 +8045,6 @@ Total Household Electricity Consumption (centrally recorded) (kWh) | kWh | 29.80
 Electricity Production in the Municipality (centrally recorded) (kWh) | kWh | 8.464.000
 Proportion of Renewable Electricity Purchased/Total Household Electricity Consumption | Percentage (%)
 Energy Efficiency Class for Street Lighting | Energy efficiency class (e.g. A+, A, B, etc.) | B
-Ville de Differdange
-Climate Neutrality Investment Plan
-8
 
 Number of Active Members of Energy Cooperatives in the Municipality | Number of members | 100
 Number of Energy Cooperatives | Number of cooperatives | 3
@@ -11008,9 +8060,6 @@ Proportion of the Municipal Area with Separate Systems or Retention and Infiltra
 Waste and Circular Economy | Household Water Consumption per Year (L/Capita/Day) | Litres per capita per day (L/Capita/Day) | ... | ...
 Progress Toward Climate Pact Goal Achievement | Percentage (%) | 50% | 75%
 Number of Consultations by 'Klima- | Consultations per 1,000 residents | 5 | 10
-Ville de Differdange
-Climate Neutrality Investment Plan
-9
 
 |   | Agence (MyEnergy)' per 1,000 Residents per Year |  |  |   |
 | --- | --- | --- | --- | --- |
@@ -11030,13 +8079,7 @@ Climate Neutrality Investment Plan
 |   | Number of Climate Team Meetings per Year | Number | 5 | 10  |
 |   | Media Articles per Year on All Aspects of the Climate Pact | Number | 15 | 25  |
 |   | % of Events Held as Green Events/Total Events | Percentage (%) | NA | 100  |
-Ville de Differdange
 
-Climate Neutrality Investment Plan
-
-0
-
-Table 11 Guidelines: Please develop some project- and sector-level financial indicators as well as some cross-cutting indicators to monitor the implementation of the Investment Plan and identified projects. If you are having trouble conceptualizing these indicators, please utilize the Indicators Guidebook which can be found on the NetZeroCities portal.
 
 Table 11: Financial Indicators by Sector
 
@@ -11045,9 +8088,6 @@ Table 11: Financial Indicators by Sector
 |  Transportation | Investment in Sustainable mobility infrastructure | €  |
 |   |  Public Transport operating costs | €  |
 |   |  Annual Street infrastructure costs | €  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-1
 
 Built Environment | Annual Funding for energy Efficiency in buildings | €
 Energy Systems | PPP Funding | Number of PPP projects
@@ -11068,9 +8108,6 @@ Reduced Fossil Fuel Expenditures | €
 Long-term financial indicators | Cost of Inaction | €
 Lifecycle cost of major climate projects | €
 Return of investment on green projects | %
-Ville de Differdange
-Climate Neutrality Investment Plan
-C
 
 # 3 Part C – Enabling Financial Conditions for Climate Neutrality by 2030
 
@@ -11080,7 +8117,6 @@ Part C ‘Enabling Conditions for Climate Neutrality by 2030’ is the third sec
 
 The allocation of capital will need to be optimized between both public and private sources across the portfolio outlined in the Action Plan to meet the cost of the actions identified for reaching climate neutrality over time.
 
-**Task Goals:** Tied to A3, this exercise is an opportunity for cities to identify existing and potential policies to help facilitate capital flows towards climate actions. This could be focused on high-level municipal actions such as the ability to issue green municipal bonds, through to increasing parking fares in the city centre to raise funds for climate actions. If including EU-wide and national policies, please explain the direct impact for the city of these actions. Although linked to the Action Plan exercise, please use this as an opportunity to identify climate policies that specifically support capital formation and deployment.
 
 ### Model IP-C1
 
@@ -11101,13 +8137,6 @@ The Transition Team, which includes department chiefs and an external consultant
 #### Existing Policies Supporting Climate Initiatives
 
 Differdange has adopted several strategic policies and initiatives that support its climate action goals. Just to name a few:
-#
-
-Ville de Differdange
-
-Climate Neutrality Investment Plan
-
-#
 
 Climate Pact: Supported by Luxembourg's Ministry for the Environment and managed by Klima-Agence, this pact involves municipalities in sustainable energy transition initiatives, backed by state funding for climate consultancy.
 Waste Legislation and National Waste and Resource Management Plan: These legislative frameworks promote reduction, reuse, and recycling, aligning with European directives to enhance waste management efficiency.
@@ -11122,7 +8151,6 @@ While Differdange has established a solid foundation for policy-driven climate a
 
 In conclusion, Differdange's strategic policy framework and its commitment to integrated and sustainable climate action set a strong foundation for achieving climate neutrality. The ongoing development of financial strategies and the enhancement of collaborative policy frameworks are essential to ensure the successful implementation of the city's ambitious climate goals by 2030.
 
-Table 12 Guidelines: Please identify and describe any potential policies to support capital facilitation and deployment in the city, describing the policy, its current status or stage of development, and the intended outcome (e.g. increased parking fares to deter driving but also raising capital for additional climate actions). For city-level policies, please include some quantifiable range as to the amount of capital raised by intended policies.
 
 Table 12: List of Climate Policies to Enable Capital Deployment
 
@@ -11130,9 +8158,6 @@ Table 12: List of Climate Policies to Enable Capital Deployment
 | --- | --- | --- | --- |
 |  Climate Pact | In process | The Climate Pact, supported by Luxembourg's Ministry for the Environment, Climate and Sustainable Development and managed by Klima-Agence, commits municipalities to adopting European Energy Award measures to promote a sustainable energy transition, with state funding for climate consultancy and rewards according to certification levels. Aiming for a 55% reduction in greenhouse gas emissions by 2030 compared to 2005, and carbon neutrality by 2050, the pact involves initiatives in renewable | Evaluation of implemented projects. The city gets a medal and receives a budget according to the number of inhabitants. The state provides direct financial support for climate consulting and rewards municipalities based on certification levels. This funding incentivizes investment in local energy transition projects and climate-neutral initiatives.  |
 |   |  | economy, environmental, and environmental health, and the need for a 55% reduction in greenhouse gas emissions by 2030. The project is designed to support the European Commission's 2030 climate plan and the 2030 climate plan is a key step in the development of climate change policies. The project is designed to support the European Commission's 2030 climate plan and the 2030 climate plan is a key step in the development of climate change policies. |   |
-Ville de Differdange
-Climate Neutrality Investment Plan
-4
 
 |   |  | energy, circular economy and air quality, reinforcing the municipal commitment to responsible energy management. |   |
 | --- | --- | --- | --- |
@@ -11140,9 +8165,6 @@ Climate Neutrality Investment Plan
 |  Waste Legislation | In Process | The revised 2022 Waste Management Law aligns national policies with European directives to minimize waste production and promote recycling. It establishes ambitious targets for reducing food waste, plastic pollution, and organic waste, supporting circular economy principles. | Reducing landfill reliance and enhancing waste recovery channels attract investment in recycling infrastructure, composting facilities, and waste-to-energy projects, fostering new revenue streams in waste management.  |
 |  National Waste and Resource Management Plan (NWRMP) | In Process | The National Waste and Resource Management Plan (PNGDR) sets waste reduction and circular economy strategies, supporting reuse, recycling, and sustainable resource management. | Directs financial flows towards infrastructure investments in waste reduction, promoting public-private partnerships for resource recovery and recycling initiatives.  |
 |  NECP (National Energy and Climate Plan) | In Process | Luxembourg’s NECP outlines strategies to cut GHG emissions by 55%, expand renewable energy to 25%, and enhance energy efficiency by up to 44% by 2030. The plan supports policy-driven investment in sustainable energy infrastructure. | Drives capital investment in renewable energy projects, energy efficiency measures, and smart grid technologies through funding mechanisms, state grants, and EU incentives.  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-5
 
 |  Ouni Pestiziden | In Process | A national initiative eliminating pesticides in public spaces, agriculture, and households through awareness campaigns and policy measures, improving biodiversity and environmental health. | Reduces municipal pesticide expenses while redirecting financial resources to sustainable land management practices and alternative pest control solutions, fostering new market opportunities in green landscaping.  |
 | --- | --- | --- | --- |
@@ -11151,9 +8173,6 @@ Climate Neutrality Investment Plan
 |  Communal Regulations | In Process | Local government autonomy allows municipalities to enact regulations supporting climate neutrality, particularly in waste management, building energy standards, and emissions reduction. | Facilitates capital allocation for local sustainability projects by enabling fee structures (e.g., waste tariffs), enforcing energy efficiency standards, and encouraging sustainable development policies.  |
 |  Resource Concept | In Process | A Differdange-specific strategy focusing on efficient resource management, selective waste collection, and recycling, reducing waste production while optimizing recovery. | Stimulates investment in recycling infrastructure and creates cost savings by reducing landfill fees, contributing to municipal financial sustainability.  |
 |  PAP/PAG (Land Use Plans) | In Process | The General and Special Development Plans (PAG/PAP) regulate land use and urban development, incorporating sustainability criteria for climate-conscious urban planning. | Influences land value and attracts investment in sustainable real estate development, promoting energy-efficient buildings and low-carbon construction.  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-6
 
 |  Sustainable Urban Mobility Plan (SUMP) | In Process | EU-recommended framework for cities to improve urban mobility by reducing congestion, air pollution, and road safety risks while integrating climate-friendly transport solutions. | Unlocks EU funding and national grants for mobility infrastructure, supporting projects in public transit expansion, pedestrianization, and bike-sharing systems.  |
 | --- | --- | --- | --- |
@@ -11163,9 +8182,6 @@ Climate Neutrality Investment Plan
 |  FSC-PEFC Forest Certification | In Process | International forest management certifications ensuring sustainable forestry practices that balance ecological, economic, and social aspects. | Creates financial incentives for sustainable forest management and enhances the market value of certified wood products.  |
 |  Fairtrade | In Process | Differdange’s Fairtrade certification demonstrates commitment to ethical trade, sustainability, and corporate social responsibility in procurement and local economy initiatives. | Encourages local economic development by supporting ethical supply chains, attracting sustainability-driven investors and businesses.  |
 |  European Regulations | In Process | F. ex.: EU waste management directives promote recycling, landfill reduction, and sustainable practices across multiple industries. | Facilitates EU funding opportunities for compliance-driven waste management infrastructure investments.  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-7
 
 |  FUSILLI | In development to keep funded after EU funding ended. | A Horizon 2020 project supporting sustainable urban food systems through pilot programs on local food production, waste reduction, and CO2 reduction. | Attracts EU research and development funding into Differdange’s sustainable food projects, fostering green economic growth.  |
 | --- | --- | --- | --- |
@@ -11178,13 +8194,7 @@ More policies will be added in future iterations if the necessity occurs.
 ## 3.2 Module IP-C2: Identification and Mitigation of Risks
 
 The risks relevant to the implementation of an Investment Plan should be considered, which may impact the ambition to achieve climate neutrality, mitigation techniques should be identified where necessary and where possible, these should align with the financial policies selected.
-Ville de Differdange
 
-Climate Neutrality Investment Plan
-
-8
-
-Task Goals: All projects identified in the Climate Action Plan will have potential risks regarding funding and financing – for example, a project overshooting cost estimates. By establishing a risk management framework and developing risk mitigation at both the sector and project level, cities can ensure they are equipped to identify any problems quickly, and sufficiently deal with these problems once they arise.
 
 ## Model IP-C2
 
@@ -11217,15 +8227,9 @@ To move towards a more advanced risk management system, Differdange is actively 
 The city plans to develop its risk management framework by incorporating detailed regular reviews and updates that adapt to new challenges and opportunities as they arise. This will involve training for internal teams and possibly expanding the role of external consultants to ensure continuous improvement in risk management practices. The goal is to create a dynamic, responsive framework capable of supporting Differdange's ambitious climate goals effectively.
 
 While Differdange currently relies on a conservative and somewhat fragmented approach to risk management, there is a clear directive to enhance these practices. By establishing a more structured and comprehensive system with the support of the NetZeroCities mission, Differdange aims to safeguard its investments and
-Ville de Differdange
-
-Climate Neutrality Investment Plan
-
-C
 
 ensure the successful implementation of its climate action initiatives. This strategic shift will not only address the immediate needs for risk management but also set a sustainable foundation for future climate actions.
 
-Table 13 Guidelines: Please identify potential risks, routes to monitoring these risks, and a mitigation plan to prevent risk escalation. This should be completed for the project- and sector-level as well as city-wide risks. Instead of simply listing risks, this is an opportunity for cities to outline a risk management framework (including identifying high, medium and low priority risks), the likelihood of all risks and any residual risks following mitigation actions.
 
 Table 13: Climate Investment Plan Risk Framework
 
@@ -11236,9 +8240,6 @@ Table 13: Climate Investment Plan Risk Framework
 |  Built Environment | Built environment projects | Lack of Skilled Labour | Shortage in labour can slow down infrastructure projects, such as public transport enhancements | High | Develop partnerships with technical schools and universities to ensure a steady supply of qualified professionals  |
 |   |  ... | Legislative and Administrative Barriers | Complex regulations can delay the adoption of green building standards. | Low | Work with legal experts to streamline approval processes and advocate for more supportive legislation.  |
 |   |  Renovations | Old Building Stock | Challenges in integrating modern energy solutions into historic or older buildings. | Medium | Implement incentive programs for retrofitting older buildings with energy-efficient technologies.  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-0
 
 Greening | Limited Public Space | Constraints in expanding green infrastructure due to limited availability of land. | Low | Utilize vertical greening and rooftop gardens to overcome space limitations.
 Energy | Energy projects | Lack of Skilled Labour | Shortage in labour can slow down infrastructure projects, such as public transport enhancements | High | Develop partnerships with technical schools and universities to ensure a steady supply of qualified professionals
@@ -11248,9 +8249,6 @@ Conflict Between Environmental and Climate Protection | Choices that benefit the
 Green infrastructure and Nature Based Solutions | Planning | Integration into Urban Planning | Siloed operations can hinder coherent development of green infrastructure. | Medium | Foster interdisciplinary teams across departments to ensure cohesive planning.
 Space | Public Space Limitations | Restricted space for new developments. | Low | Innovative design solutions like multi-use green spaces that serve both recreational and ecological functions.
 Waste and Circular Economy | Waste management projects | Lack of Skilled Labour | Shortage in labour can slow down infrastructure | High | Develop partnerships with technical schools and
-Ville de Differdange
-Climate Neutrality Investment Plan
-1
 
 |   |  |  | projects, such as public transport enhancements |  | universities to ensure a steady supply of qualified professionals  |
 | --- | --- | --- | --- | --- | --- |
@@ -11259,15 +8257,11 @@ Climate Neutrality Investment Plan
 |  City-Wide Risks (Cross-Cutting) |  | Substantial Delays Due to Elections – a problem at the start of the mission. Elected officials should be in office until 2028, when the next elections will take place. | Delays in decision-making and fund allocation can stall projects. | High | Establish contingency plans that account for electoral cycles and ensure continuity of transportation projects regardless of political changes.  |
 |   |   | Collective Mentality Resistance | Public resistance to new policies or technologies. | High | Public Engagement: Increase community outreach and education to shift public opinion and gain support for climate actions.  |
 |   |   | Political and Economic Interests | Conflicting interests can derail climate initiatives. | Medium | Stakeholder Alignment: Regular consultations with political and economic stakeholders to find common ground and cooperative strategies.  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-2
 
 # 3.3 Module IP-C3: Capacity Building and Stakeholder Engagement for Capital and Investment Planning
 
 Internal capacity and capabilities should be assessed and developed, working with both internal and external stakeholders to accelerate the transition to climate neutrality by 2030. This stakeholder mapping and identification of engagement pathways are tied to the Action Plan exercise but should focus on financial and investment-focused stakeholders including (but not limited to) municipal banks, private sector companies that must invest to decarbonize their assets and all private capital providers or funding organizations. For non-financial stakeholders, provide a breakdown of costs for any stakeholder incentive schemes such as transport subsidies or funding for retrofitting of residential properties.
 
-**Task Goals:** The first element of this task is an opportunity for cities to assess internal capacity and identify any knowledge or resource gaps within the Transition Team. This should be clearly outlined in the text as well as any plans to overcome these gaps.
 
 For the stakeholder engagement exercise, cities should use this exercise to identify any potential stakeholders that can support the financing and development of their Climate Action Plan. As has been documented, the local authority accounts for a small proportion of emissions within the city and private stakeholders must also invest to decarbonize their emitting assets. By identifying these stakeholders early, cities can facilitate engagement optimally. Cities can take the same approach to this task as the similar task within the Climate Action Plan, but focus on financial actors (i.e. any stakeholder that can deploy funds for proposed climate investments – whether to public projects or their own corporate actions) or the costs associated with interacting with the non-financial actors (e.g. incentive schemes for citizen behavioural shift).
 
@@ -11277,7 +8271,6 @@ For the stakeholder engagement exercise, cities should use this exercise to iden
 Is your Transition Team well resourced and does it have the necessary skillsets to develop a robust Investment Plan?
 Have you identified the capacity gaps (both knowledge and personnel) in your Transition Team to develop and implement the Plan?
 Have you identified relevant stakeholders to develop an Investment Plan in your city?
-Do you have a clear engagement strategy for relevant stakeholders?
 
 ## C-3.1: Textual element
 
@@ -11286,17 +8279,11 @@ In the development of the Investment Plan for Differdange, the city faces consid
 Firstly, the Transition Team's experience in completing this Investment Plan has starkly highlighted the existing capacity gaps. The team, pushed to its limits, struggled with the absence of necessary data, which had never been collected due to any prior requirement. Furthermore, the intricate level of financial detail required by the Investment Plan exceeded the granularity of Differdange's usual budgetary practices. Clearly, the city's current resource allocation and the skill set of the Transition Team are inadequate for the demands of such detailed financial planning. Recognizing these deficiencies, Differdange has embarked on an internal analysis conducted by Deloitte to better organize departmental responsibilities and missions. Additionally, the city has made a strategic move by hiring a new staff member specialized in managing EU projects, indicating a step towards enhancing its administrative capacity for climate-related projects.
 
 Regarding stakeholder engagement, Differdange has successfully identified key financial and non-financial stakeholders crucial for the climate mission. The planned onboarding of these stakeholders in 2025 is pivotal. It is expected that by then, the administrative groundwork of the mission will be set, allowing for effective engagement. The city aims to host major events to not only present the mission and its associated projects but also to actively involve stakeholders in areas pertinent to them. This strategy, however, is hampered by the
-Ville de Differdange
-
-Climate Neutrality Investment Plan
-
-3
 
 persistent issue of limited manpower, a significant challenge for a small city like Differdange. Nevertheless, the commitment to overcoming these obstacles is evident, as the city pledges to utilize all available resources to ensure the successful implementation of its climate strategies.
 
 Differdange's approach to stakeholder engagement is expected to evolve as the city enhances its internal capabilities. The ongoing efforts to increase staffing and improve organizational structures are steps towards developing a robust framework capable of supporting ambitious climate actions. By addressing these internal and external challenges head-on, Differdange is laying the groundwork for a sustainable and inclusive approach to achieving climate neutrality, demonstrating resilience and proactive governance in the face of substantial obstacles.
 
-Table 14 Guidelines: Please identify any financial stakeholders – private sector companies, commercial banks and lending organizations – that the city has an existing or future relationship with, including the level of influence and interest, and the type of engagement. If they are linked to a specific climate action or project, please list that here as well as the required investment from the stakeholder.
 
 Table 14: Stakeholder Engagement Mapping
 
@@ -11313,15 +8300,7 @@ Table 14: Stakeholder Engagement Mapping
 |  Arcelor Mittal | % of investment | Industry | High | Medium | TBA  |
 |  SUDenergie | €1.800.000 at least | Business | Medium | High | Financial support and planning  |
 |  LUX ENERGY | % of investment | Business | Medium | High | Financial support and planning  |
-#
 
-Ville de Differdange
-
-Climate Neutrality Investment Plan
-
-#
-
-Table 15 Guidelines: For any engagement or incentive schemes involving non-financial actors, please list these below and identify any specific costs to the city for conducting these (e.g. reduced transport fares to encourage modal shift).
 
 Table 15: Stakeholder Activity Cost
 
@@ -11344,9 +8323,6 @@ Table 15: Stakeholder Activity Cost
 |  Inhabitants | Bike Boxes | €100,000/year  |
 |  Inhabitants | Raising awareness of active mobility – SurvCoin | €50,000/year over 6 years  |
 |  Inhabitants | Subsidies when purchasing electric vehicles and infrastructure (terminals) | €16,000/year  |
-Ville de Differdange
-Climate Neutrality Investment Plan
-5
 
 |  Households | Subsidies for green facades | €20,000/year  |
 | --- | --- | --- |
@@ -11357,9 +8333,6 @@ Climate Neutrality Investment Plan
 |  Inhabitants | Thematic workshops | €70,000/year  |
 |  Inhabitants | Waste Museum (2024) | €6,000  |
 |  Inhabitants | Participatory budget | €50,000 per project  |
-City of
-
-Differdange
 
 District from Luxembourg
 
@@ -11453,8 +8426,6 @@ mail@differdange.lu
 ,, Ville de
 •t
 Climate-Neutrality Commitments
-O
-Differdange
 
 ![img-0.jpeg](img-0.jpeg)
 
@@ -11477,14 +8448,6 @@ SEE AND APPROVE
 by the Municipal Council f¹lat('A 'S¹iOZ3
 
 ![img-2.jpeg](img-2.jpeg)
-City of
-\star \star \star
-Climate-Neutrality
-Commitments
-1
-1
-
-# Differdange
 
 ## Disclaimer
 
@@ -11492,29 +8455,15 @@ The content of this document reflects the views of the author only. The European
 
 ## Table of contents
 
-Introduction ... 3
-Objective: climate neutrality by 2030 ... 4
-Key priorities and strategic interventions ... 5
-Principles and processes ... 5
-Contract with signatures ... 7
-Signatories ... 8
-
-Annex: Individual commitments of signatories. ... 9
-City of
-
-#
-
-Differdange
-
-Climate-Neutrality
-
-Commitments
-
-O
+- Introduction
+- Objective: climate neutrality by 2030
+- Key priorities and strategic interventions
+- Principles and processes
+- Contract with signatures
+- Signatories
+- Annex: Individual commitments of signatories
 
 # 1 Introduction
-
-Explain your city's motivation to join the EU mission "100 smart and climate-neutral cities by 2030" and highlight your city's current climate action commitments. You can also include the objectives of this document.
 
 # Text of the City of Differdange:
 
@@ -11529,17 +8478,7 @@ Overall, the city of Differdange is committed to taking bold action to combat cl
 Differdange is committed to achieving this goal by implementing various sustainable development policies and promoting sustainable initiatives. To demonstrate its commitment to climate action, the city of Differdange was able to show its involvement in several initiatives, including Klimapakt, Climaborough, CIPU, Klimabündnis, and FUSILLI. Klimapakt is a platform that brings together municipalities and other stakeholders in Luxembourg to work on climate change mitigation and adaptation. Climaborough is a project that focuses on developing citizen participation in the financing of energy production facilities and on cooperation with industry. CIPU is the national platform for urban policy and planning that functions as an information platform with the aim of increasing awareness of spatial planning in Luxembourg at the international level. With nearly 2,000 members from 27 European countries, Klimabündnis is the world's largest network of cities dedicated to climate protection. FUSILLI is a project that aims to promote the transformation of the urban food system through the implementation of an innovative living laboratory. The project aims to address the challenges of the transition to sustainable food systems in nearby urban, peri-urban and rural areas by creating a knowledge-sharing and learning network between 12 cities.
 
 This "Climate City Contract" (CCC) is a document that describes the commitments of the city of Differdange in terms of climate action. The CCC aims to build a partnership between the city and its citizens to work together towards a carbon-neutral and climate-resilient future. The document includes measures such as improving the energy efficiency of buildings, promoting sustainable mobility, supporting renewable energy and reducing waste.
-City of
 
-+
-
-Differdange
-
-Climate-Neutrality
-
-Commitments
-
-O
 
 Through this contract, the city of Differdange aims to achieve its goal of becoming a climate-neutral and smart city by 2030.
 
@@ -11558,15 +8497,6 @@ In terms of adaptation to climate change, the city of Differdange plans to devel
 Regarding health care, the city plans to promote healthy lifestyles. This includes measures to reduce air pollution, promote active lifestyles and improve access to green spaces.
 
 Overall, the city of Differdange is committed to achieving climate neutrality by 2030, while addressing the challenges of climate change adaptation, accessibility, healthcare and equity. The city recognises the need for collaboration and stakeholder engagement, especially in the areas of exclusion, and is committed to a just transition through deep civic participation.
-City of
-
-Climate-Neutrality
-
-Commitments
-
-#
-
-# Differdange
 
 ## 3 Key Priorities and Strategic Interventions
 
@@ -11592,37 +8522,20 @@ These systemic strategic priorities will have a profound impact on reducing GHG 
 
 ## 4 Principles and processes
 
-Highlight key principles that will guide your city in implementing its climate city contract, such as accountability, transparency, or openness to new approaches. The process must encompass principles such as co-creation, innovation, multi-stakeholder and citizen engagement, and must be systemic and demand-driven in nature. It must also be based on monitoring and common learning. The Commitments Guidance Document provides more specific guidance on how to incorporate these principles into your own process.
-
 ## Text of the City of Differdange:
-City of
-。
-Climate-Neutrality
-Commitments
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Differdange
 
 The City of Differdange's Climate City Contract (CCC) is guided by several key principles that are essential to the successful implementation of this ambitious plan. These principles include accountability, transparency and openness to new approaches, ensuring that the actions undertaken by the city to achieve climate neutrality are visible and accessible to all stakeholders.
 
-The CCC implementation process is based on principles such as cc-creation, innovation and multi-stakeholder and citizen engagement. This approach ensures that the city's efforts towards climate neutrality are systemic and demand-driven, taking into account the needs and perspectives of all stakeholders. The process will also be based on monitoring and common learning, which will make it possible to continuously improve and adapt the plan if necessary.
+The CCC implementation process is based on principles such as co-creation, innovation and multi-stakeholder and citizen engagement. This approach ensures that the city's efforts towards climate neutrality are systemic and demand-driven, taking into account the needs and perspectives of all stakeholders. The process will also be based on monitoring and common learning, which will make it possible to continuously improve and adapt the plan if necessary.
 
-To ensure inclusiveness, the city plans to publish an annual report on broadcasts, regularly offer civic participation workshops and make all documents available digitally in different languages, as well as in plain language. This will allow citizens to understand and engage in the process, thereby promoting transparency and accountability.
+To ensure inclusiveness, the city plans to publish an annual progress report, regularly offer civic participation workshops and make all documents available digitally in different languages, as well as in plain language. This will allow citizens to understand and engage in the process, thereby promoting transparency and accountability.
 
 As a model for its citizens and its region, the city of Differdange is committed to ensuring transparency in the collaboration between municipal services. This will facilitate a coordinated approach to achieving climate neutrality, ensuring that all actions are aligned and contribute to the overall goal.
 
-In summary, the principles and process that guide the CCC of the city of Differdange are based on inclusion, transparency and cc-creation, ensuring that all stakeholders are engaged in the journey towards climate neutrality. By adopting a systemic and demand-driven approach, the city aims to become a model for other cities in the region and the nation.
-
-6
-**City of**
-
-Climate-Neutrality
-
-Commitments
-
-(J)
+In summary, the principles and process that guide the CCC of the city of Differdange are based on inclusion, transparency and co-creation, ensuring that all stakeholders are engaged in the journey towards climate neutrality. By adopting a systemic and demand-driven approach, the city aims to become a model for other cities in the region and the nation.
 
 # 6 Signatories
 
-Include a list of stakeholders who are committed to helping your city achieve its goal of climate neutrality by 2030. Detailed commitments and agreements between individuals or groups of stakeholders should be annexed to this commitment document. This list is likely to grow over time.
 
 ACL
 Administration

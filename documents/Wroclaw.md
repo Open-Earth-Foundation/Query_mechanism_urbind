@@ -12,27 +12,26 @@ EU MISSION PLATFORM | CLIMATE NEUTRAL AND SMART CITIES
 NetZeroCities has received funding from the H2020 Research and Innovation Programmeme under the grant agreement n°101036519.
 # Table of Contents
 
-Table of Contents ... 3
-Summary ... 4
-List of figures ... 4
-List of tables ... 4
-Abbreviations and acronyms ... 5
-Introduction ... 6
-Part A – Current State of Climate Action ... 16
-Module A-1 Greenhouse Gas Emissions Baseline Inventory ... 16
-Module A-2 Current Policies and Strategies Assessment ... 36
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality ... 50
-Part B – Pathways towards Climate Neutrality by 2030 ... 76
-Module B-1 Climate Neutrality Scenarios and Impact Pathways ... 76
-Module B-2 Climate Neutrality Portfolio Design ... 93
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 124
-Part C – Enabling Climate Neutrality by 2030 ... 132
-Module C-1 Governance Innovation Interventions ... 132
-Module C-2 Social Innovation Interventions ... 149
-Outlook and next steps ... 164
-Annexes ... 167
-Appendix: Estates of Wroclaw ... 167
-Climate Neutrality Action Plan
+- Summary
+- List of figures
+- List of tables
+- Abbreviations and acronyms
+- Introduction
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- Module C-2 Social Innovation Interventions
+- Outlook and next steps
+- Annexes
+- Appendix: Estates of Wroclaw
+- Climate Neutrality Action Plan
 
 # Summary
 
@@ -2878,19 +2877,14 @@ Climate-Neutrality Commitments
 
 # Table of contents
 
-Table of contents 2
-
-Introduction 3
-Goal: Climate neutrality by 2030 10
-Strategic priorities 13
-Process and underlying principles 19
-Signatories 24
-Contract with signatures 25
-
-Appendix 1: Individual / Cluster Signatory Commitments 26
-Climate-Neutrality Commitments
-
-3
+- Introduction
+- Goal: Climate neutrality by 2030
+- Strategic priorities
+- Process and underlying principles
+- Signatories
+- Contract with signatures
+- Appendix 1: Individual / Cluster Signatory Commitments
+- Climate-Neutrality Commitments
 
 # 1 Introduction
 

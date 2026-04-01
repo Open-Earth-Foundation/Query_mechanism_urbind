@@ -37,25 +37,24 @@ Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality
 
 # Table of contents
 
-Table of Contents... 02
-Summary... 02
-List of figures... 04
-Abbreviations and acronyms... 05
-Introduction... 06
-Work Process... 09
-Part A – Current State of Climate Action... 17
-Module A-1 Greenhouse Gas Emissions Baseline Inventory... 17
-Module A-2 Current Policies and Strategies Assessment... 35
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality... 60
-Part B – Pathways towards Climate Neutrality by 2030... 67
-Module B-1 Climate Neutrality Scenarios and Impact Pathways... 67
-Module B-2 Climate Neutrality Portfolio Design... 75
-Module B-3 Indicators for Monitoring, Evaluation and Learning... 173
-Part C – Enabling Climate Neutrality by 2030... 174
-Module C-1 Governance Innovation Interventions... 174
-Module C-2 Social Innovation Interventions... 188
-Outlook and next steps... 204
-Annexes... 207
+- Summary
+- List of figures
+- Abbreviations and acronyms
+- Introduction
+- Work Process
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- Module C-2 Social Innovation Interventions
+- Outlook and next steps
+- Annexes
 
 # Summary
 
@@ -5415,12 +5414,11 @@ Climate City Contract | 2030 Climate Neutrality Commitments | Climate Neutrality
 
 # Table of contents
 
-Table of contents 2
-Introduction 2
-Goal: Climate neutrality by 2030 3
-Strategic prioritie 7
-Process and underlying principles 12
-Signatories 14
+- Introduction
+- Goal: Climate neutrality by 2030
+- Strategic prioritie
+- Process and underlying principles
+- Signatories
 
 # 1. Introduction
 

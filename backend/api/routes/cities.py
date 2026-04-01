@@ -4,10 +4,18 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from fastapi import APIRouter, Request
+from fastapi import APIRouter, HTTPException, Request, status
 
-from backend.api.models import CityGroupListResponse, CityListResponse
-from backend.api.services.city_catalog import list_city_names, load_city_groups
+from backend.api.models import (
+    CityGroupListResponse,
+    CityListResponse,
+    CityMarkdownResponse,
+)
+from backend.api.services.city_catalog import (
+    list_city_names,
+    load_city_groups,
+    load_city_markdown,
+)
 
 router = APIRouter()
 
@@ -47,6 +55,28 @@ def get_city_groups(request: Request) -> CityGroupListResponse:
         groups=groups,
         total=len(groups),
         groups_path=str(groups_path),
+    )
+
+
+@router.get("/cities/{city_name}/markdown", response_model=CityMarkdownResponse)
+def get_city_markdown(city_name: str, request: Request) -> CityMarkdownResponse:
+    """Return concatenated markdown source content for one city."""
+    markdown_dir = getattr(request.app.state, "markdown_dir", Path("documents"))
+    if not isinstance(markdown_dir, Path):
+        markdown_dir = Path(str(markdown_dir))
+
+    city_markdown = load_city_markdown(markdown_dir, city_name)
+    if city_markdown is None:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"City markdown for `{city_name}` was not found.",
+        )
+
+    resolved_city_name, content, source_paths = city_markdown
+    return CityMarkdownResponse(
+        city_name=resolved_city_name,
+        content=content,
+        source_paths=[str(path) for path in source_paths],
     )
 
 

@@ -16,79 +16,65 @@ Climate Neutrality Action Plan
 
 # Table of Contents
 
-Summary...7
-List of figures...11
-List of tables...12
-Abbreviations and acronyms...12
-Introduction...16
-Vision...16
-Part A – Current State of Climate Action...19
-Module A-1 Greenhouse Gas Emissions Baseline Inventory...21
-Infrastructure...21
-Built environment...21
-Energy infrastructure...25
-Mobility...31
-Utilities...36
-Emissions...37
-Households...45
-Services...46
-Mobility...48
-Industry...49
-Agriculture...50
-Module A-2 Current Policies and Strategies Assessment...52
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality...75
-Legislative and political...75
-Barriers...75
-Opportunities...78
-Technical...79
-Barriers...79
-Opportunities...82
-Governance...84
-Climate Neutrality Action Plan
-
-Barrier...84
-Opportunities...84
-
-Climate risks and hazards...85
-
-Key hazards...86
-
-Extreme temperatures...86
-Flash flood...87
-Gale force wind...87
-Landslide...88
-River flood...89
-
-Outlook...90
-Impacts...92
-
-Part B – Pathways towards Climate Neutrality by 2030...94
-
-Module B-1 Climate Neutrality Scenarios and Impact Pathways – summary...95
-
-Impact Pathways – Built environment...101
-
-Summary of Actions and Implementation Environment...102
-Spatial planning as a structural enabler of 90% by 2030...104
-Implementation risks and systemic responses...106
-Opportunity-driven transition...107
-Institutional architecture and stakeholder engagement...107
-Financial and institutional readiness...108
-
-Transport Sector – impact pathways...120
-
-Assumptions and data sources: Foundations of Zagreb's transport emissions reduction modeling...123
-
-Waste – From Liability to Circular Asset...137
-
-Strategic vision: waste as part of climate neutrality...137
-Mitigation impact and residuals...138
-Assumptions and data sources...139
-Governance and planning integration...139
-Financing and circular economy role...140
-Climate Neutrality Action Plan
-
-Residuals strategy for waste and Outlook... 140
+- Summary
+- List of figures
+- List of tables
+- Abbreviations and acronyms
+- Introduction
+- Vision
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Infrastructure
+- Built environment
+- Energy infrastructure
+- Mobility
+- Utilities
+- Emissions
+- Households
+- Services
+- Mobility
+- Industry
+- Agriculture
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Legislative and political
+- Barriers
+- Opportunities
+- Technical
+- Barriers
+- Opportunities
+- Governance
+- Climate Neutrality Action Plan
+- Barrier
+- Opportunities
+- Climate risks and hazards
+- Key hazards
+- Extreme temperatures
+- Flash flood
+- Gale force wind
+- Landslide
+- River flood
+- Outlook
+- Impacts
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways – summary
+- Impact Pathways – Built environment
+- Summary of Actions and Implementation Environment
+- Spatial planning as a structural enabler of 90% by 2030
+- Implementation risks and systemic responses
+- Opportunity-driven transition
+- Institutional architecture and stakeholder engagement
+- Financial and institutional readiness
+- Transport Sector – impact pathways
+- Assumptions and data sources: Foundations of Zagreb's transport emissions reduction modeling
+- Waste – From Liability to Circular Asset
+- Strategic vision: waste as part of climate neutrality
+- Mitigation impact and residuals
+- Assumptions and data sources
+- Governance and planning integration
+- Financing and circular economy role
+- Climate Neutrality Action Plan
+- Residuals strategy for waste and Outlook
 
 ## 3.1.4 Industry – reflection... 141
 
@@ -5623,15 +5609,13 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of contents
 
-Introduction...1
-Goal: Climate neutrality by 2030 ...6
-Key priorities and strategic interventions...8
-Principles and process...10
-Signatory on behalf of the City of Zagreb...12
-Contract with signatures...13
-Climate-Neutrality Commitments – City of Zagreb
-
-1
+- Introduction
+- Goal: Climate neutrality by 2030
+- Key priorities and strategic interventions
+- Principles and process
+- Signatory on behalf of the City of Zagreb
+- Contract with signatures
+- Climate-Neutrality Commitments – City of Zagreb
 
 # 1 Introduction
 

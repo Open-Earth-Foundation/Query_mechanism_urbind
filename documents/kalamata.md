@@ -21,34 +21,30 @@ O
 
 # Table of Contents
 
-Table of Contents ... 2
-Summary ... 3
-Image Catalog ... 7
-List of Tables ... 8
-Abbreviations and acronyms ... 12
-Introduction ... 13
-Working Process ... 16
-Part A – State of play of climate action ... 20
-Section A-1 Basic greenhouse gas emission inventory ... 20
-Module A-2 Evaluation of Current Policies and Strategies ... 35
-Section A-3: Systemic barriers and opportunities for climate neutrality by 2030 ... 47
-Part B – Trajectory towards climate neutrality by 2030 ... 73
-Section B-1 Climate neutrality scenarios and impact pathways ... 91
-Section B-2: Table of Climate Neutrality Portfolios ... 162
-Module B-3 Monitoring, Evaluation and Learning Indicators ... 163
-Part C – Facilitating climate neutrality by 2030 ... 186
-Module C-1 Innovation Interventions in Organizations and Governance ... 186
-Section C-2 Social and Other Innovative Interventions ... 194
-Section C-3 Financing of portfolios of actions ... 198
-Outlook and next steps ... 200
-Appendixes ... 201
-KALAMATA The mission of the
-
-KALAMATA
-
-Climate Neutrality Action Plan
-
-#
+- Summary
+- Image Catalog
+- List of Tables
+- Abbreviations and acronyms
+- Introduction
+- Working Process
+- Part A – State of play of climate action
+- Section A-1 Basic greenhouse gas emission inventory
+- Module A-2 Evaluation of Current Policies and Strategies
+- Section A-3: Systemic barriers and opportunities for climate neutrality by 2030
+- Part B – Trajectory towards climate neutrality by 2030
+- Section B-1 Climate neutrality scenarios and impact pathways
+- Section B-2: Table of Climate Neutrality Portfolios
+- Module B-3 Monitoring, Evaluation and Learning Indicators
+- Part C – Facilitating climate neutrality by 2030
+- Module C-1 Innovation Interventions in Organizations and Governance
+- Section C-2 Social and Other Innovative Interventions
+- Section C-3 Financing of portfolios of actions
+- Outlook and next steps
+- Appendixes
+- KALAMATA The mission of the
+- KALAMATA
+- Climate Neutrality Action Plan
+- #
 
 # Summary
 
@@ -8654,19 +8650,15 @@ The content of this document reflects only the author's view. The European Commi
 
 ## Table of contents
 
-Introduction ... 5
-Goal: Climate neutrality by 2030 ... 7
-Key priorities and strategic interventions ... 10
-Principles and process ... 13
-Signatories ... **Σφάλμα! Δεν έχει οριστεί σελιδοδείκτης.**
-Contract with signatures ... 23
-
-Appendix: Individual Signatory Commitments ... 24
-Add your logo here
-
-Climate-Neutrality Commitments
-
-O
+- Introduction
+- Goal: Climate neutrality by 2030
+- Key priorities and strategic interventions
+- Principles and process
+- Signatories ... **Σφάλμα! Δεν έχει οριστεί σελιδοδείκτης.**
+- Contract with signatures
+- Appendix: Individual Signatory Commitments
+- Add your logo here
+- Climate-Neutrality Commitments
 
 # 1 Introduction
 

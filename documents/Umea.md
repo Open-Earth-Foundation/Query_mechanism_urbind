@@ -21,30 +21,26 @@ O
 
 # Table of Contents
 
-Table of Contents ... 6
-Summary ... 7
-List of figures ... 8
-List of tables ... 8
-Abbreviations and acronyms ... 8
-Introduction ... 10
-Part A – Current State of Climate Action ... 20
-Module A-1 Greenhouse Gas Emissions Baseline Inventory ... 20
-Module A-2 Current Policies and Strategies Assessment ... 29
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality ... 41
-Part B – Pathways towards Climate Neutrality by 2030 ... 54
-Module B-1 Climate Neutrality Scenarios and Impact Pathways ... 54
-Module B-2 Climate Neutrality Portfolio Design ... 57
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 65
-Part C – Enabling Climate Neutrality by 2030 ... 81
-Module C-1 Governance Innovation Interventions ... 81
-Module C-2 Social Innovation Interventions ... 86
-Outlook and next steps ... 91
-Annexes ... 92
-UMEA KOMMUN
-
-Climate Neutrality Action Plan
-
-O
+- Summary
+- List of figures
+- List of tables
+- Abbreviations and acronyms
+- Introduction
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- Module C-2 Social Innovation Interventions
+- Outlook and next steps
+- Annexes
+- UMEA KOMMUN
+- Climate Neutrality Action Plan
 
 # Summary
 
@@ -4230,21 +4226,16 @@ O
 
 # Table of contents
 
-Table of contents ... 2
-Introduction ... 3
-Goal: Climate neutrality by 2030 ... 6
-Strategic priorities ... 8
-Process and principles ... 10
-Signatories ... 19
-Appendix 1a: Individual / Cluster Signatory Commitments ... 26
-Appendix 1b: Individual / Cluster Signatory Commitments ... 26
-
-The content of this document reflects only the author's view. The European Commission is not responsible for any use that may be made of the information it contains.
-UMEA KOMMUN
-
-Climate-Neutrality Commitments
-
-O
+- Introduction
+- Goal: Climate neutrality by 2030
+- Strategic priorities
+- Process and principles
+- Signatories
+- Appendix 1a: Individual / Cluster Signatory Commitments
+- Appendix 1b: Individual / Cluster Signatory Commitments
+- The content of this document reflects only the author's view. The European Commission is not responsible for any use that may be made of the information it contains
+- UMEA KOMMUN
+- Climate-Neutrality Commitments
 
 # 1 Introduction
 

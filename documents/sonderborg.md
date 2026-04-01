@@ -28,34 +28,27 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of Contents
 
-Table of Contents ... 2
-Introduction ... 8
-Work Process ... 12
-Part A – Current State of Climate Action ... 15
-Module A-1 Greenhouse Gas Emissions Baseline Inventory ... 15
-Module A-2 Current Policies and Strategies Assessment ... 23
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality ... 30
-Part B – Pathways towards Climate Neutrality by 2030 ... 35
-Module B-1 Climate Neutrality Scenarios and Impact Pathways ... 35
-Module B-2 Climate Neutrality Portfolio Design ... 42
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 49
-Part C – Enabling Climate Neutrality by 2030 ... 59
-Module C-1 Organisational and Governance Innovation Interventions ... 59
-Module C-2 Social and Other Innovation Interventions ... 60
-Module C-3 Financing of Action Portfolio ... 69
-Outlook and next steps ... 71
-How the ProjectZero engine fuels Sonderborg's climate transition ... 74
-0
-
-Sønderborg
-
-Udgå i verdensklasse
-
-Climate Neutrality
-
-Action Plan
-
-#
+- Introduction
+- Work Process
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Organisational and Governance Innovation Interventions
+- Module C-2 Social and Other Innovation Interventions
+- Module C-3 Financing of Action Portfolio
+- Outlook and next steps
+- How the ProjectZero engine fuels Sonderborg's climate transition
+- Sønderborg
+- Udgå i verdensklasse
+- Climate Neutrality
+- Action Plan
+- #
 
 # Summary and background
 

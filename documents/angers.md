@@ -14,27 +14,24 @@ NetZeroCities has received funding from the H2020 Research and Innovation Progra
 
 # Table of contents
 
-Table of contents ... 2
-Summary ... 3
-List of figures ... 4
-List of tables ... 5
-Abbreviations and acronyms ... 6
-Introduction ... 7
-Part A - Current state of climate action ... 19
-Module A-1 Baseline inventory of greenhouse gas emissions ... 19
-Module A-2 Assessment of current policies and strategies ... 23
-Module A-3 Systemic obstacles and opportunities for climate neutrality by 2030 ... 33
-Part B - Pathways to climate neutrality by 2030 ... 43
-Module B-1 Climate neutrality scenarios and impact pathways ... 43
-Module B-2 Designing a climate neutral portfolio ... 60
-... 62
-kt ... 67
-Module B-3 Monitoring, evaluation and learning indicators ... 70
-Part C - Achieving climate neutrality by 2030 ... 78
-Module C-1 Innovative interventions in governance ... 78
-Module C-2 Social innovation interventions ... 88
-Outlook and next steps ... 91
-Appendices ... 92
+- Summary
+- List of figures
+- List of tables
+- Abbreviations and acronyms
+- Introduction
+- Part A - Current state of climate action
+- Module A-1 Baseline inventory of greenhouse gas emissions
+- Module A-2 Assessment of current policies and strategies
+- Module A-3 Systemic obstacles and opportunities for climate neutrality by 2030
+- Part B - Pathways to climate neutrality by 2030
+- Module B-1 Climate neutrality scenarios and impact pathways
+- Module B-2 Designing a climate neutral portfolio
+- Module B-3 Monitoring, evaluation and learning indicators
+- Part C - Achieving climate neutrality by 2030
+- Module C-1 Innovative interventions in governance
+- Module C-2 Social innovation interventions
+- Outlook and next steps
+- Appendices
 
 NetZeroCities has received funding from the H2020 Research and Innovation Programme under the grant agreement n°101036519.
 # Summary

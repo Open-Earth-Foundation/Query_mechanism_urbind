@@ -19,99 +19,54 @@ Climate Neutrality Action Plan
 
 # Table of Contents
 
-Table of Contents 2
-
-List of figures 3
-
-List of tables 3
-
-Abbreviations and acronyms 4
-
-Summary 4
-
-Introduction 5
-
-Demography &amp; Economy 5
-
-Energy Independence 5
-
-Resilience &amp; Climate Neutrality Goals 6
-
-Building the Climate Action Plan 6
-
-The City's Challenges 7
-
-Climate Neutrality Goal, Emission Domains &amp; City's Boundaries 7
-
-Collaborators &amp; Stakeholders 7
-
-Regulations, Existing Plans and CCC as a Holistic Framework 7
-
-Part A – Current State of Climate Action 9
-
-Module A-1 Greenhouse Gas Emissions Baseline Inventory 9
-
-GHG Emissions Baseline inventory 9
-
-Module A-2 Current Policies and Strategies Assessment 15
-
-A-2.1: Description &amp; assessment of policies 15
-
-Policies &amp; Regulation 15
-
-Strategies and Action Plans 16
-
-Calculation of BAU Scenario 16
-
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality 19
-
-A-3.1: Description of urban systems, systemic barriers, and opportunities 19
-
-Stakeholders Analysis 19
-
-Barriers and Opportunities 26
-
-Opportunities &amp; Unexploited Resources 28
-
-Monitoring 29
-
-Part B – Pathways towards Climate Neutrality by 2030 30
-
-Module B-1 Climate Neutrality Scenarios and Impact Pathways 30
-
-B-1.2: Description of impact pathways 35
-
-Module B-2 Climate Neutrality Portfolio Design 36
-
-B-2.3: Summary strategy for residual emissions 42
-Eilat's
-
-Climate Neutrality Action Plan
-
-#
-
-Module B-3 Indicators for Monitoring, Evaluation and Learning 43
-
-B-3.2: Indicator Metadata 43
-
-Part C - Enabling Climate Neutrality by 2030 48
-
-Module C-1 Governance Innovation Interventions 48
-
-C-1.1: Description of the participatory governance model for climate neutrality 48
-
-Governance 48
-
-Participation Strategy 49
-
-Module C-2 Social Innovation Interventions 56
-
-C.2.1 Relations between social innovations, systems, and impact pathways 56
-C-2.2: Description of social innovation interventions 58
-
-Outlook and next steps 59
-Plans for next CCC and CCC Action Plan iteration 59
-Annexes 62
+- List of figures
+- List of tables
+- Abbreviations and acronyms
+- Summary
+- Introduction
+- Demography &amp; Economy
+- Energy Independence
+- Resilience &amp; Climate Neutrality Goals
+- Building the Climate Action Plan
+- The City's Challenges
+- Climate Neutrality Goal, Emission Domains &amp; City's Boundaries
+- Collaborators &amp; Stakeholders
+- Regulations, Existing Plans and CCC as a Holistic Framework
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- GHG Emissions Baseline inventory
+- Module A-2 Current Policies and Strategies Assessment
+- A-2.1: Description &amp; assessment of policies
+- Policies &amp; Regulation
+- Strategies and Action Plans
+- Calculation of BAU Scenario
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- A-3.1: Description of urban systems, systemic barriers, and opportunities
+- Stakeholders Analysis
+- Barriers and Opportunities
+- Opportunities &amp; Unexploited Resources
+- Monitoring
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- B-1.2: Description of impact pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- B-2.3: Summary strategy for residual emissions
+- Eilat's
+- Climate Neutrality Action Plan
+- #
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- B-3.2: Indicator Metadata
+- Part C - Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- C-1.1: Description of the participatory governance model for climate neutrality
+- Governance
+- Participation Strategy
+- Module C-2 Social Innovation Interventions
+- C.2.1 Relations between social innovations, systems, and impact pathways
+- C-2.2: Description of social innovation interventions
+- Outlook and next steps
+- Plans for next CCC and CCC Action Plan iteration
+- Annexes
 
 # List of figures
 
@@ -1344,48 +1299,39 @@ O
 
 # Table of contents
 
-Abbreviations and acronyms ... 2
-
-Introduction ... 4
-Goal: Climate neutrality by 2030 ... 5
-Strategic priorities ... 5
-a. Stakeholders ... 7
-i. Co-Benefits ... 12
-Residents and Community Groups ... 12
-Local Businesses and Entrepreneurs ... 13
-Educational Institutions and Research Bodies ... 13
-Government and Public Sector ... 13
-Tourism and Hospitality Sector ... 13
-Process and Principles ... 13
-Signatories ... 15
-
-Abbreviations and acronyms
-
-|  Definition | Abbreviations and acronyms  |
-| --- | --- |
-|  Eilat’s Economic Development Company | EEC  |
-|  Climate Action Plan | CAP  |
-|  Private-Public Partnership | PPP  |
-|  Decarbonisation Pilot, part of the 2nd cohort of the NZC Call for Pilot Cities, aimed at creating the governance infrastructure and technological proof of concept to reach accelerated decarbonisation in the tourism industry. | TourZero  |
-|  Israel Electricity Company | IEC  |
-|  Action Plan | AP  |
-|  Investment Plan | IP  |
-|  Key Performance Indicator | KPI  |
-|  Monitoring Evaluation & Learning | MEL  |
-|  Monitoring Reporting Verification | MRV  |
-| --- | --- |
-|  Work Package | WP  |
-|  Electric Transportation Plan | ETP  |
-|  Photovoltaics | PV  |
-Eilat
-
-0
-
-Commitments
-
-Climate-Neutrality
-
-O
+- Abbreviations and acronyms
+- Introduction
+- Goal: Climate neutrality by 2030
+- Strategic priorities
+- a. Stakeholders
+- i. Co-Benefits
+- Residents and Community Groups
+- Local Businesses and Entrepreneurs
+- Educational Institutions and Research Bodies
+- Government and Public Sector
+- Tourism and Hospitality Sector
+- Process and Principles
+- Signatories
+- Abbreviations and acronyms
+- | Definition | Abbreviations and acronyms |
+- | --- | --- |
+- | Eilat’s Economic Development Company | EEC |
+- | Climate Action Plan | CAP |
+- | Private-Public Partnership | PPP |
+- | Decarbonisation Pilot, part of the 2nd cohort of the NZC Call for Pilot Cities, aimed at creating the governance infrastructure and technological proof of concept to reach accelerated decarbonisation in the tourism industry. | TourZero |
+- | Israel Electricity Company | IEC |
+- | Action Plan | AP |
+- | Investment Plan | IP |
+- | Key Performance Indicator | KPI |
+- | Monitoring Evaluation & Learning | MEL |
+- | Monitoring Reporting Verification | MRV |
+- | --- | --- |
+- | Work Package | WP |
+- | Electric Transportation Plan | ETP |
+- | Photovoltaics | PV |
+- Eilat
+- Commitments
+- Climate-Neutrality
 
 # 1 Introduction
 
@@ -1791,66 +1737,54 @@ Thank you Reut Parnes, Avigail Ben Yohanan, and Arava Institute for Environmenta
 5
 # TABLE OF CONTENTS
 
-ABSTRACT... iii
-ACKNOWLEDGEMENTS... iv
-AUTHORSHIP PAGE... v
-TABLE OF CONTENTS... vi
-TABLE OF FIGURES... viii
-TABLE OF TABLES... ix
-CHAPTER 1: Introduction... 1
-CHAPTER 2: The Global Covenant of Mayors... 3
-Baseline Emissions Inventory... 4
-Sustainable Energy Action Plan (2018)... 5
-Implementation of Solar Power in Eilat... 5
-Additional Measures... 7
-Introduction to the Monitoring Emissions Inventory... 8
-MONITORING EMISSIONS INVENTORY 2021... 9
-CHAPTER 3: Electric Power... 10
-Methods... 10
-Power Demand in Eilat... 10
-Photovoltaics... 12
-Modeling Photovoltaic Performance... 14
-Calculating Carbon Emissions... 15
-Results... 18
-Photovoltaics... 18
-Emissions... 20
-Discussion... 25
-Reduction Measures... 25
-7
+- ABSTRACT... iii
+- ACKNOWLEDGEMENTS... iv
+- AUTHORSHIP PAGE... v
+- TABLE OF FIGURES... viii
+- TABLE OF TABLES... ix
+- CHAPTER 1: Introduction
+- CHAPTER 2: The Global Covenant of Mayors
+- Baseline Emissions Inventory
+- Sustainable Energy Action Plan (2018)
+- Implementation of Solar Power in Eilat
+- Additional Measures
+- Introduction to the Monitoring Emissions Inventory
+- MONITORING EMISSIONS INVENTORY 2021
+- CHAPTER 3: Electric Power
+- Methods
+- Power Demand in Eilat
+- Photovoltaics
+- Modeling Photovoltaic Performance
+- Calculating Carbon Emissions
+- Results
+- Photovoltaics
+- Emissions
+- Discussion
+- Reduction Measures
+- Limitations
+- Improvements to Computations
+- CHAPTER 4: Transportation
+- Transportation Methods
+- Explanation of BEI Estimation
+- Explanation of EEA Estimation Method
+- Transportation Results
+- BEI Estimation Method Results: Scenario 1
+- EEA Estimation Results: Scenario 2
+- EEA Estimation Results: Scenario 3
+- Discussion of Results
+- CHAPTER 5: Waste
+- Methods
+- Overview of Waste Methods
+- Results
+- Discussion
+- CHAPTER 6: Combining Results
+- Emissions Models
+- Final Conclusion of Results
+- Updated Emission Reduction Measures
+- REFERENCES
+- Appendix A
+- Appendix B
 
-Limitations ... 26
-Improvements to Computations ... 27
-
-CHAPTER 4: Transportation ... 28
-
-Transportation Methods ... 28
-Explanation of BEI Estimation ... 30
-Explanation of EEA Estimation Method ... 31
-
-Transportation Results ... 32
-BEI Estimation Method Results: Scenario 1 ... 32
-EEA Estimation Results: Scenario 2 ... 33
-EEA Estimation Results: Scenario 3 ... 35
-Discussion of Results ... 36
-
-CHAPTER 5: Waste ... 39
-
-Methods ... 39
-Overview of Waste Methods ... 39
-
-Results ... 42
-Discussion ... 43
-
-CHAPTER 6: Combining Results ... 45
-
-Emissions Models ... 45
-Final Conclusion of Results ... 48
-Updated Emission Reduction Measures ... 49
-
-REFERENCES ... 50
-
-Appendix A ... 53
-Appendix B ... 53
 # TABLE OF FIGURES
 
 Figure 1. Greenhouse Gas Reporting Scopes 4

@@ -17,30 +17,25 @@ O
 
 # Table of Contents
 
-Table of Contents ... 2
-Summary ... 3
-List of figures ... 3
-List of tables ... 4
-
-Introduction ... 6
-Part A – Current State of Climate Action ... 9
-Module A-1 Greenhouse Gas Emissions Baseline Inventory ... 9
-Module A-2 Current Policies and Strategies Assessment ... 15
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality ... 27
-Part B – Pathways towards Climate Neutrality by 2030 ... 42
-Module B-1 Climate Neutrality Scenarios and Impact Pathways ... 42
-Module B-2 Climate Neutrality Portfolio Design ... 46
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 73
-Part C – Enabling Climate Neutrality by 2030 ... 87
-Module C-1 Governance Innovation Interventions ... 87
-Module C-2 Social Innovation Interventions ... 94
-Outlook and next steps ... 98
-Annexes ... 99
-Add your logo here
-
-Climate Neutrality Action Plan
-
-O
+- Summary
+- List of figures
+- List of tables
+- Introduction
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- Module C-2 Social Innovation Interventions
+- Outlook and next steps
+- Annexes
+- Add your logo here
+- Climate Neutrality Action Plan
 
 # Summary
 
@@ -2881,21 +2876,16 @@ O
 
 # Table of contents
 
-Table of contents ... 4
-Introduction ... 5
-Goal: Climate neutrality by 2030 ... 5
-Strategic priorities ... 6
-Process and underlying principles ... 6
-Signatories ... 8
-Sample contract with signatures ... Virhe. Kirjanmerkkiä ei ole määritetty.
-Appendix 1: Individual / Cluster Signatory Commitments (to be added before submitting the Climate City Contract) ... 10
-Helsinki
-
-Climate-Neutrality
-
-Commitments
-
-O
+- Introduction
+- Goal: Climate neutrality by 2030
+- Strategic priorities
+- Process and underlying principles
+- Signatories
+- Sample contract with signatures ... Virhe. Kirjanmerkkiä ei ole määritetty
+- Appendix 1: Individual / Cluster Signatory Commitments (to be added before submitting the Climate City Contract)
+- Helsinki
+- Climate-Neutrality
+- Commitments
 
 # 1 Introduction
 

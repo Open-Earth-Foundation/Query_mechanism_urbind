@@ -22,28 +22,24 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of Contents
 
-Table of Contents...2
-Introduction...6
-Work Process...8
-Part A – Current State of Climate Action...12
-Module A-1 Greenhouse Gas Emissions Baseline Inventory...12
-Module A-2 Current Policies and Strategies Assessment...20
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality...29
-Part B – Pathways towards Climate Neutrality by 2030...36
-Module B-1 Climate Neutrality Scenarios and Impact Pathways...36
-Module B-2 Climate Neutrality Portfolio Design...42
-Module B-3 Indicators for Monitoring, Evaluation and Learning...48
-Part C – Enabling Climate Neutrality by 2030...62
-Module C-1 Organisational and Governance Innovation Interventions...62
-Module C-2 Social and Other Innovation Interventions...66
-Module C-3 Financing of Action Portfolio...71
-Outlook and next steps...74
-Annexes...76
-TAMPERE
-
-Climate Neutrality Action Plan
-
-O
+- Introduction
+- Work Process
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Organisational and Governance Innovation Interventions
+- Module C-2 Social and Other Innovation Interventions
+- Module C-3 Financing of Action Portfolio
+- Outlook and next steps
+- Annexes
+- TAMPERE
+- Climate Neutrality Action Plan
 
 # Summary
 
@@ -1798,25 +1794,19 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of contents
 
-Introduction ... 1
-Goal: Climate neutrality by 2030 ... 2
-Key priorities and strategic interventions ... 3
-Principles and process ... 4
-Signatories ... 7
-Contract with signatures ... 10
-
-Appendix: Individual Signatory Commitments ... 11
-Appendix: Individual Signatory Commitments – The University of Tampere ... 13
-Appendix: Individual Signatory Commitments – The Tampere University of Applied Sciences Ltd. ... 20
-1
-
-TAMPERE
-
-Climate-Neutrality
-
-Commitments
-
-#
+- Introduction
+- Goal: Climate neutrality by 2030
+- Key priorities and strategic interventions
+- Principles and process
+- Signatories
+- Contract with signatures
+- Appendix: Individual Signatory Commitments
+- Appendix: Individual Signatory Commitments – The University of Tampere
+- Appendix: Individual Signatory Commitments – The Tampere University of Applied Sciences Ltd
+- TAMPERE
+- Climate-Neutrality
+- Commitments
+- #
 
 # 1 Introduction
 
@@ -2222,27 +2212,27 @@ CLIMATE NEUTRAL TAMPERE 2030
 
 # TABLE OF CONTENTS
 
-PREFACE 3
-INTRODUCTION 4
-SUMMARY 6
-HOW TO READ THIS ROADMAP 8
-DEFINITIONS AND ABBREVIATIONS 10
-SECTION 1. TAMPERE'S CLIMATE GOALS 14
-SECTION 2. ROADMAP UPDATE 18
-SECTION 3. WHERE WE ARE NOW 20
-SECTION 4. ROADMAP 24
-THEME 0. 26
-THEME 1. 30
-THEME 2. 46
-THEME 3. 70
-THEME 4. 86
-THEME 5. 94
-THEME 6. 114
-SECTION 5. EMISSION PROJECTION AND COSTS 128
-SECTION 6. CONCLUSION 139
-REFERENCES 150
-ROADMAP AUTHORS 152
-MEASURES REMOVED DURING UPDATE PROCESS 154
+- PREFACE
+- INTRODUCTION
+- SUMMARY
+- HOW TO READ THIS ROADMAP
+- DEFINITIONS AND ABBREVIATIONS
+- SECTION 1. TAMPERE'S CLIMATE GOALS
+- SECTION 2. ROADMAP UPDATE
+- SECTION 3. WHERE WE ARE NOW
+- SECTION 4. ROADMAP
+- THEME 0
+- THEME 1
+- THEME 2
+- THEME 3
+- THEME 4
+- THEME 5
+- THEME 6
+- SECTION 5. EMISSION PROJECTION AND COSTS
+- SECTION 6. CONCLUSION
+- REFERENCES
+- ROADMAP AUTHORS
+- MEASURES REMOVED DURING UPDATE PROCESS
 
 # PREFACE
 

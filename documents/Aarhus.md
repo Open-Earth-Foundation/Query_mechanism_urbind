@@ -15,25 +15,24 @@ NetZeroCities has received funding from the H2020 Research and Innovation Progra
 
 # Table of Contents
 
-Table of Contents ... 2
-Summary ... 3
-List of figures ... 4
-List of tables ... 4
-Abbreviations and acronyms ... 5
-Introduction ... 6
-Part A – Current State of Climate Action ... 12
-Module A-1 Greenhouse Gas Emissions Baseline Inventory ... 12
-Module A-2 Current Policies and Strategies Assessment ... 19
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality ... 31
-Part B – Pathways towards Climate Neutrality by 2030 ... 41
-Module B-1 Climate Neutrality Scenarios and Impact Pathways ... 45
-Module B-2 Climate Neutrality Portfolio Design ... 57
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 78
-Part C – Enabling Climate Neutrality by 2030 ... 85
-Module C-1 Governance Innovation Interventions ... 86
-Module C-2 Social Innovation Interventions ... 89
-Outlook and next steps ... 97
-Additional sources of information ... 98
+- Summary
+- List of figures
+- List of tables
+- Abbreviations and acronyms
+- Introduction
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- Module C-2 Social Innovation Interventions
+- Outlook and next steps
+- Additional sources of information
 
 # Summary
 
@@ -1869,14 +1868,13 @@ Climate-Neutrality Commitments
 
 # Table of contents
 
-Table of contents ... 2
-Introduction ... 3
-Goal: Climate neutrality by 2030 ... 6
-Strategic priorities ... 10
-Process and underlying principles ... 14
-Signatories ... 17
-Appendix 1: Individual / Cluster Signatory Commitments (to be added before submitting the Climate City Contract) ... 20
-Climate-Neutrality Commitments
+- Introduction
+- Goal: Climate neutrality by 2030
+- Strategic priorities
+- Process and underlying principles
+- Signatories
+- Appendix 1: Individual / Cluster Signatory Commitments (to be added before submitting the Climate City Contract)
+- Climate-Neutrality Commitments
 
 # 1 Introduction
 

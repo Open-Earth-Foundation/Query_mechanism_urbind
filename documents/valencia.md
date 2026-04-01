@@ -817,24 +817,24 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of Contents
 
-ANNEX I. 2030 CLIMATE NEUTRALITY ACTION PLAN OF THE CITY OF VALENCIA ...4
-INTRODUCTION...4
-How will we do it? València's perspective...4
-WORK PROCESS...5
-How is this ambition addressed in the following Action Plan?...7
-PART A - CURRENT STATE OF CLIMATE ACTION...9
-MODULE A-1: Greenhouse Gas Emissions Baseline inventory...9
-MODULE A-2: Current Policies and Strategies Assessment...21
-MODULE A-3: Systemic barriers and opportunities to 2030 climate neutrality...34
-PART B - PATHWAYS TOWARDS CLIMATE NEUTRALITY BY 2030...55
-MODULE B-1: Climate Neutral Scenarios and Impact Pathways...55
-MODULE B-2: Climate Neutrality Portfolio Design...71
-MODULE B-3: Indicators for Monitoring, Evaluation and Learning...227
-PART C - ENABLING CLIMATE NEUTRALITY BY 2030...233
-MODULE C-1: Organisational and Governance Innovation Interventions...233
-MODULE C-2: Social and other innovation interventions...238
-MODULE C-3: Financing of Action Portfolio (Economic Case)...244
-OUTLOOK AND NEXT STEPS...253
+- ANNEX I. 2030 CLIMATE NEUTRALITY ACTION PLAN OF THE CITY OF VALENCIA
+- INTRODUCTION
+- How will we do it... València's perspective
+- WORK PROCESS
+- How is this ambition addressed in the following Action Plan
+- PART A - CURRENT STATE OF CLIMATE ACTION
+- MODULE A-1: Greenhouse Gas Emissions Baseline inventory
+- MODULE A-2: Current Policies and Strategies Assessment
+- MODULE A-3: Systemic barriers and opportunities to 2030 climate neutrality
+- PART B - PATHWAYS TOWARDS CLIMATE NEUTRALITY BY 2030
+- MODULE B-1: Climate Neutral Scenarios and Impact Pathways
+- MODULE B-2: Climate Neutrality Portfolio Design
+- MODULE B-3: Indicators for Monitoring, Evaluation and Learning
+- PART C - ENABLING CLIMATE NEUTRALITY BY 2030
+- MODULE C-1: Organisational and Governance Innovation Interventions
+- MODULE C-2: Social and other innovation interventions
+- MODULE C-3: Financing of Action Portfolio (Economic Case)
+- OUTLOOK AND NEXT STEPS
 
 # Index of Figures
 

@@ -15,29 +15,25 @@ NetZeroCities has received funding from the H2020 Research and Innovation Progra
 
 # Table of Contents
 
-Table of Contents ... 2
-Summary ... 3
-List of figures ... 4
-List of tables ... 4
-Abbreviations and acronyms ... 5
-Introduction ... 6
-Part A – Current State of Climate Action ... 11
-Module A-1 Greenhouse Gas Emissions Baseline Inventory ... 11
-Module A-2 Current Policies and Strategies Assessment ... 18
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality ... 25
-Part B – Pathways towards Climate Neutrality by 2030 ... 34
-Module B-1 Climate Neutrality Scenarios and Impact Pathways ... 34
-Module B-2 Climate Neutrality Portfolio Design ... 48
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 86
-Part C – Enabling Climate Neutrality by 2030 ... 102
-Module C-1 Governance Innovation Interventions ... 102
-Module C-2 Social Innovation Interventions ... 104
-Outlook and next steps ... 105
-Annexes ... 106
-
-Bristol One City Climate Action Plan
-
-O
+- Summary
+- List of figures
+- List of tables
+- Abbreviations and acronyms
+- Introduction
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- Module C-2 Social Innovation Interventions
+- Outlook and next steps
+- Annexes
+- Bristol One City Climate Action Plan
 
 # Summary
 
@@ -2215,17 +2211,13 @@ Bristol One City Climate Neutrality Commitments
 
 # Table of contents
 
-Table of contents ... 2
-Introduction ... 3
-Goal: Climate neutrality by 2030 ... 6
-Strategic priorities ... 6
-Process and principles ... 8
-Signatories ... 9
-Contract with signatures ... 10
-
-Bristol One City Climate Neutrality Commitments
-
-O
+- Introduction
+- Goal: Climate neutrality by 2030
+- Strategic priorities
+- Process and principles
+- Signatories
+- Contract with signatures
+- Bristol One City Climate Neutrality Commitments
 
 # 1 Introduction
 

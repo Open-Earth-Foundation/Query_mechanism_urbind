@@ -26,28 +26,24 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of Contents
 
-Table of Contents ... 2
-Introduction ... 7
-Work Process ... 8
-Part A – Current State of Climate Action ... 12
-Module A-1 Greenhouse Gas Emissions Baseline Inventory ... 12
-Module A-2 Current Policies and Strategies Assessment ... 17
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality ... 21
-Part B – Pathways towards Climate Neutrality by 2030 ... 30
-Module B-1 Climate Neutrality Scenarios and Impact Pathways ... 30
-Module B-2 Climate Neutrality Portfolio Design ... 34
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 39
-Part C – Enabling Climate Neutrality by 2030 ... 41
-Module C-1 Organisational and Governance Innovation Interventions ... 41
-Module C-2 Social and Other Innovation Interventions ... 43
-Module C-3 Financing of Action Portfolio ... 44
-Outlook and next steps ... 45
-Annexes ... 45
-Stockholmsstad
-
-Climate Neutrality Action Plan
-
-O
+- Introduction
+- Work Process
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Organisational and Governance Innovation Interventions
+- Module C-2 Social and Other Innovation Interventions
+- Module C-3 Financing of Action Portfolio
+- Outlook and next steps
+- Annexes
+- Stockholmsstad
+- Climate Neutrality Action Plan
 
 # Summary
 
@@ -1081,14 +1077,14 @@ The content of this document reflects only the author's view. The European Commi
 
 ## Table of contents
 
-Introduction ... 1
-Goal: Climate neutrality by 2030 ... 2
-Key priorities and strategic interventions ... 3
-Principles and process ... 6
-Signatories ... 10
-Contract with signatures ... 12
+- Introduction
+- Goal: Climate neutrality by 2030
+- Key priorities and strategic interventions
+- Principles and process
+- Signatories
+- Contract with signatures
+- Appendix: Individual Signatory Commitments
 
-Appendix: Individual Signatory Commitments ... 13
 # 1 Introduction
 
 Explain your city's motivation to join the EU Mission "100 climate-neutral and smart cities by 2030" and highlight your city's present commitments to climate action. You may also want to include the aims of this document.

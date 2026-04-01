@@ -20,28 +20,24 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of Contents
 
-Table of Contents ... 2
-Introduction ... 4
-Work Process ... 6
-Part A – Current State of Climate Action ... 12
-Module A-1 Greenhouse Gas Emissions Baseline Inventory ... 12
-Module A-2 Current Policies and Strategies Assessment ... 25
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality ... 38
-Part B – Pathways towards Climate Neutrality by 2030 ... 52
-Module B-1 Climate Neutrality Scenarios and Impact Pathways ... 52
-Module B-2 Climate Neutrality Portfolio Design ... 67
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 148
-Part C – Enabling Climate Neutrality by 2030 ... 158
-Module C-1 Organisational and Governance Innovation Interventions ... 158
-Module C-2 Social and Other Innovation Interventions ... 164
-Module C-3 Financing of Action Portfolio ... 165
-Outlook and next steps ... 167
-Annexes ... 167
-STADT MANNHEIM
-
-Climate Neutrality Action Plan
-
-O
+- Introduction
+- Work Process
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Organisational and Governance Innovation Interventions
+- Module C-2 Social and Other Innovation Interventions
+- Module C-3 Financing of Action Portfolio
+- Outlook and next steps
+- Annexes
+- STADT MANNHEIM
+- Climate Neutrality Action Plan
 
 # Summary
 
@@ -5248,21 +5244,16 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of contents
 
-Introduction ... 1
-Goal: Climate neutrality by 2030 ... 3
-Key priorities and strategic interventions ... 6
-Principles and process ... 13
-Signatories ... 16
-Contract with signatures ... 31
-
-Appendix: Individual Signatory Commitments ... 32
-STADT MANNHEIM
-
-Climate-Neutrality
-
-Commitments
-
-O
+- Introduction
+- Goal: Climate neutrality by 2030
+- Key priorities and strategic interventions
+- Principles and process
+- Signatories
+- Contract with signatures
+- Appendix: Individual Signatory Commitments
+- STADT MANNHEIM
+- Climate-Neutrality
+- Commitments
 
 # 1 Introduction
 

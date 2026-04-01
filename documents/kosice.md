@@ -18,30 +18,26 @@ O
 
 # Table of Contents
 
-Table of Contents ... 2
-Summary ... 3
-List of figures ... 4
-List of tables ... 4
-Abbreviations and acronyms ... 4
-Introduction ... 5
-Part A – Current State of Climate Action ... 9
-Module A-1 Greenhouse Gas Emissions Baseline Inventory ... 9
-Module A-2 Current Policies and Strategies Assessment ... 14
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality ... 21
-Part B – Pathways towards Climate Neutrality by 2030 ... 26
-Module B-1 Climate Neutrality Scenarios and Impact Pathways ... 26
-Module B-2 Climate Neutrality Portfolio Design ... 33
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 52
-Part C – Enabling Climate Neutrality by 2030 ... 62
-Module C-1 Governance Innovation Interventions ... 65
-Module C-2 Social Innovation Interventions ... 68
-Outlook and next steps ... 70
-Annexes ... 71
-KOSICE
-
-Climate Neutrality Action Plan
-
-O
+- Summary
+- List of figures
+- List of tables
+- Abbreviations and acronyms
+- Introduction
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- Module C-2 Social Innovation Interventions
+- Outlook and next steps
+- Annexes
+- KOSICE
+- Climate Neutrality Action Plan
 
 # Summary
 
@@ -1913,18 +1909,14 @@ O
 
 # Table of contents
 
-Table of contents ... 3
-Introduction ... 4
-Goal: Climate neutrality by 2030 ... 6
-Strategic priorities ... 7
-Process and principles ... 8
-Signatories ... 10
-Signatures ... 13
-KOŠICE
-
-Climate-Neutrality Commitments
-
-O
+- Introduction
+- Goal: Climate neutrality by 2030
+- Strategic priorities
+- Process and principles
+- Signatories
+- Signatures
+- KOŠICE
+- Climate-Neutrality Commitments
 
 # 1 Introduction
 

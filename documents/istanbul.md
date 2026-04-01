@@ -20,43 +20,30 @@ O
 
 # Table of Contents
 
-Introduction 7
-(A) Current State of Climate Action 9
-
-(A-1) Greenhouse Gas Emissions Baseline Inventory 9
-
-Inventory Modelling Methodology 9
-GHG Emissions 10
-Istanbul's Journey Towards Climate Neutrality 13
-
-(A-2) Current Policies and Strategies Assessment 19
-(A-3) Systemic Barriers and Opportunities to 2030 Climate Neutrality 25
-
-Systems and Systematic Barriers 25
-
-Transportation 25
-Energy 26
-Wastewater and Waste System 27
-
-Systems and Systematic Opportunities 27
-
-(B) Pathways towards Climate Neutrality by 2030 31
-
-(B-1) Climate Neutrality Scenarios and Impact Pathways 32
-(B-2) Climate Neutrality Portfolio Design 37
-(B-3) Indicators for Monitoring, Evaluation and Learning 68
-
-(C) Enabling Climate Neutrality by 2030 79
-
-(C-1) Governance Innovation Interventions 79
-(C-2) Social Innovation Interventions 90
-
-Outlook and next steps 93
-ISTANBUL METROPOLITAN MUNICIPALITY
-
-Climate Neutrality Action Plan
-
-C
+- Introduction
+- (A) Current State of Climate Action
+- (A-1) Greenhouse Gas Emissions Baseline Inventory
+- Inventory Modelling Methodology
+- GHG Emissions
+- Istanbul's Journey Towards Climate Neutrality
+- (A-2) Current Policies and Strategies Assessment
+- (A-3) Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Systems and Systematic Barriers
+- Transportation
+- Energy
+- Wastewater and Waste System
+- Systems and Systematic Opportunities
+- (B) Pathways towards Climate Neutrality by 2030
+- (B-1) Climate Neutrality Scenarios and Impact Pathways
+- (B-2) Climate Neutrality Portfolio Design
+- (B-3) Indicators for Monitoring, Evaluation and Learning
+- (C) Enabling Climate Neutrality by 2030
+- (C-1) Governance Innovation Interventions
+- (C-2) Social Innovation Interventions
+- Outlook and next steps
+- ISTANBUL METROPOLITAN MUNICIPALITY
+- Climate Neutrality Action Plan
+- C
 
 # List of Figures
 
@@ -2935,22 +2922,17 @@ Climate-Neutrality Commitments
 
 # Table of Contents
 
-Introduction 4
-Goal: Climate Neutrality by 2030 7
-Strategic Priorities 8
-Process and Principles 10
-
-Systemic Work Process 10
-Monitoring and Updating the CCC 10
-Guiding Principles 11
-
-Signatories 13
-Contract with Signatures 19
-ISTANBUL METROPOLITAN MUNICIPALITY
-
-Climate-Neutrality Commitments
-
-O
+- Introduction
+- Goal: Climate Neutrality by 2030
+- Strategic Priorities
+- Process and Principles
+- Systemic Work Process
+- Monitoring and Updating the CCC
+- Guiding Principles
+- Signatories
+- Contract with Signatures
+- ISTANBUL METROPOLITAN MUNICIPALITY
+- Climate-Neutrality Commitments
 
 # Abbreviations and Acronyms
 

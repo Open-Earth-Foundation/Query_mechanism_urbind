@@ -74,59 +74,31 @@ Prof. Tao Huang (scientific methodology and IT supervisor), Dr. Arch. Monica Nas
 Dr. Massimiliano Alberici, Dr. Caterina Barioglio, Arch. Irene Carrozzo, Dr. Pietro Colella, Dr. Claudia Concaro, Dr. Erminia Consiglio, Dr. Luca Ferraris, Eng. Vittorio Giordano, Dr. Mahmood Hosseini, Eng. Lorenzo Solida (Research Team)
 # Table of Contents
 
-0
-
-p.09 Summary
-p.15 List of figures
-p.16 List of tables
-p.18 Abbreviations and acronyms
-
-1
-
-p.22 Introduction
-
-2
-
-p.28 Work Process
-
-P1 – Process governance
-P2 – City's actors' involvement and Transition co-design
-P3 – Science-based support to the city
-
-3
-
-p.46 Part A – The starting point for Torino: current state of emissions and climate actions
-
-Module A-1 Greenhouse Gas Emissions Baseline Inventory
-Module A-2 Current Policies and Strategies Assessment
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
-
-4
-
-p.118 Part B – The target and the way to go for Torino: Pathways towards Climate Neutrality by 2030
-
-Module B-1 Climate Neutrality Scenarios and Impact Pathways
-Module B-2 Climate Neutrality Portfolio Design
-Module B-3 Indicators for Monitoring, Evaluation and Learning
-
-5
-
-p.188 Part C – The enablers for Torino's Climate Neutrality by 2030
-
-Module C-1 Governance Innovation Interventions
-Module C-2 Social Innovation Interventions
-
-6
-
-p.230 Outlook and next steps
-
-7
-
-p.232 Annex I - List of Micro-Actions
-p. 250 Annex II - Participatory Model
-Climate Neutrality Action Plan | Città di Torino
-
-Climate Neutrality Action Plan | Città di Torino
+- p.09 Summary
+- p.15 List of figures
+- p.16 List of tables
+- p.18 Abbreviations and acronyms
+- p.22 Introduction
+- p.28 Work Process
+- P1 – Process governance
+- P2 – City's actors' involvement and Transition co-design
+- P3 – Science-based support to the city
+- p.46 Part A – The starting point for Torino: current state of emissions and climate actions
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- p.118 Part B – The target and the way to go for Torino: Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- p.188 Part C – The enablers for Torino's Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- Module C-2 Social Innovation Interventions
+- p.230 Outlook and next steps
+- p.232 Annex I - List of Micro-Actions
+- p. 250 Annex II - Participatory Model
+- Climate Neutrality Action Plan | Città di Torino
+- Climate Neutrality Action Plan | Città di Torino
 
 # Summary
 
@@ -6125,13 +6097,13 @@ Prof. Tao Huang (scientific methodology and IT supervisor), Dr. Arch. Monica Nas
 Dr. Massimiliano Alberici, Dr. Caterina Barioglio, Arch. Irene Carrozzo, Dr. Pietro Colella, Dr. Claudia Concaro, Dr. Erminia Consiglio, Dr. Luca Ferraris, Eng. Vittorio Giordano, Dr. Mahmood Hosseini, Eng. Lorenzo Solida (Research Team)
 # Table of Contents
 
-p.11 Introduction
-p.17 Goal: Climate neutrality by 2030
-p.19 Strategic priorities and interventions
-p.21 Vision and principles for an integrated framework for (environmental) sustainability
-p.31 Signatories, Main Partners, Supporters
-p.40 Annex: Individual Signatory Commitments
-Climate Neutrality Commitments | Città di Torino
+- p.11 Introduction
+- p.17 Goal: Climate neutrality by 2030
+- p.19 Strategic priorities and interventions
+- p.21 Vision and principles for an integrated framework for (environmental) sustainability
+- p.31 Signatories, Main Partners, Supporters
+- p.40 Annex: Individual Signatory Commitments
+- Climate Neutrality Commitments | Città di Torino
 
 # I. Introduction
 

@@ -29,28 +29,26 @@ O
 
 # Table of Contents
 
-List of Figures ... 6
-List of Tables ... 6
-Abbreviations and acronyms ... 6
-Introduction ... 9
-Part A - Current Status of Climate Action ... 13
-Module A-1 Baseline GHG emissions inventory ... 13
-Module A-2 Analysis of existing policies and strategies ... 27
-Module A-3 System Barriers and Opportunities for Climate Neutrality ... 40
-Part B - Pathway to climate neutrality by 2030 ... 62
-Module B-1 Climate neutrality scenarios and impacts ... 62
-Module B-2 Design of the Climate Neutrality Portfolio ... 72
-Module B-3 Monitoring, assessment and learning indicators ... 94
-Part C - Pathway to achieving climate neutrality by 2030 ... 104
-Module C-1 Actions for Governance Innovation ... 105
-Module C-2 Actions for Social Innovation ... 113
-Scenarios and Next Steps ... 126
-Annexes ... 128
-ROMA
-
-Climate Neutrality Action Plan
-
-C
+- List of Figures
+- List of Tables
+- Abbreviations and acronyms
+- Introduction
+- Part A - Current Status of Climate Action
+- Module A-1 Baseline GHG emissions inventory
+- Module A-2 Analysis of existing policies and strategies
+- Module A-3 System Barriers and Opportunities for Climate Neutrality
+- Part B - Pathway to climate neutrality by 2030
+- Module B-1 Climate neutrality scenarios and impacts
+- Module B-2 Design of the Climate Neutrality Portfolio
+- Module B-3 Monitoring, assessment and learning indicators
+- Part C - Pathway to achieving climate neutrality by 2030
+- Module C-1 Actions for Governance Innovation
+- Module C-2 Actions for Social Innovation
+- Scenarios and Next Steps
+- Annexes
+- ROMA
+- Climate Neutrality Action Plan
+- C
 
 # List of Figures
 
@@ -4465,34 +4463,28 @@ Climate-Neutrality Commitments
 
 # Table of Contents
 
-Introduction 5
-Climate City Contract's Stakeholder Engagement 8
-Climate neutrality actions and investments 9
-The Climate City Contract's 2030 decarbonisation target 13
-Strategic Priorities 15
-
-Growth in renewable energy production 15
-Integrated and zero-emission mobility 16
-Power grid adaptation and resilience 17
-Energy and social regeneration of urban areas 17
-Sustainable waste and material management 17
-Green Procurement 17
-
-Principles at the heart of the path to climate neutrality 19
-
-Climate Governance Innovation 19
-Integrated Approach to Climate Mitigation and Adaptation Policies 19
-An Inclusive Transformation of the City 19
-
-The process towards climate neutrality 21
-Barriers and challenges for the implementation of the Climate City Contract 22
-
-Resources to finance decarbonisation 22
-Ancient Rome, the archaeological finds 25
-Building strong institutional cooperation 26
-Training for green jobs 26
-
-Signatures 28
+- Introduction
+- Climate City Contract's Stakeholder Engagement
+- Climate neutrality actions and investments
+- The Climate City Contract's 2030 decarbonisation target
+- Strategic Priorities
+- Growth in renewable energy production
+- Integrated and zero-emission mobility
+- Power grid adaptation and resilience
+- Energy and social regeneration of urban areas
+- Sustainable waste and material management
+- Green Procurement
+- Principles at the heart of the path to climate neutrality
+- Climate Governance Innovation
+- Integrated Approach to Climate Mitigation and Adaptation Policies
+- An Inclusive Transformation of the City
+- The process towards climate neutrality
+- Barriers and challenges for the implementation of the Climate City Contract
+- Resources to finance decarbonisation
+- Ancient Rome, the archaeological finds
+- Building strong institutional cooperation
+- Training for green jobs
+- Signatures
 
 # Note
 

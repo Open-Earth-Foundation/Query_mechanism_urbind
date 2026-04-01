@@ -18,74 +18,53 @@ N
 
 # Table of Contents
 
-Table of Contents 3
-
-Summary 5
-
-List of figures 5
-
-List of tables. 5
-
-Abbreviations and acronyms 6
-
-Introduction 10
-Part A – Current State of Climate Action 11
-
-Module A-1 Greenhouse Gas Emissions Baseline Inventory 11
-Module A-2 Current Policies and Strategies Assessment 17
-
-EU and national level 17
-Regional level 18
-Local level 18
-The challenge towards climate neutrality 20
-
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality 22
-
-Reducing energy consumption 22
-Fostering green mobility 23
-Building a green energy system 25
-Carbon capture activities 26
-
-Part B – Pathways towards Climate Neutrality by 2030 26
-
-Module B-1 Climate Neutrality Scenarios and Impact Pathways 26
-
-Reducing energy consumption 30
-Fostering green mobility 31
-Building a green energy system 32
-Carbon capture activities 34
-
-Module B-2 Climate Neutrality Portfolio Design 35
-
-CPH 2025 Climate Action plan initiatives 35
-Looking towards the Climate Action 2035 plan 41
-
-Reducing energy consumption 41
-Fostering green mobility 42
-Building a green energy system 42
-Carbon capture activities 43
-Cross-cutting activities 43
-
-Module B-3 Indicators for Monitoring, Evaluation and Learning 43
-
-Part C – Enabling Climate Neutrality by 2030 54
-
-Module C-1 Governance Innovation Interventions 55
-
-Efficient execution and planning 55
-Involving citizens in the decision-making process 57
-Climate Neutrality Action Plan
-
-Facilitating cross-border and international cooperation 59
-Module C-2 Social Innovation Interventions 60
-Engaging residents and owners 60
-Engaging local communities 62
-Engaging school children 64
-Working with institutions and the private sector 65
-Working with the consultancy and research community 67
-Outlook and next steps 67
-Additional Sources of information 68
-Climate Neutrality Action Plan
+- Summary
+- List of figures
+- List of tables
+- Abbreviations and acronyms
+- Introduction
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- EU and national level
+- Regional level
+- Local level
+- The challenge towards climate neutrality
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Reducing energy consumption
+- Fostering green mobility
+- Building a green energy system
+- Carbon capture activities
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Reducing energy consumption
+- Fostering green mobility
+- Building a green energy system
+- Carbon capture activities
+- Module B-2 Climate Neutrality Portfolio Design
+- CPH 2025 Climate Action plan initiatives
+- Looking towards the Climate Action 2035 plan
+- Reducing energy consumption
+- Fostering green mobility
+- Building a green energy system
+- Carbon capture activities
+- Cross-cutting activities
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- Efficient execution and planning
+- Involving citizens in the decision-making process
+- Climate Neutrality Action Plan
+- Facilitating cross-border and international cooperation
+- Module C-2 Social Innovation Interventions
+- Engaging residents and owners
+- Engaging local communities
+- Engaging school children
+- Working with institutions and the private sector
+- Working with the consultancy and research community
+- Outlook and next steps
+- Additional Sources of information
+- Climate Neutrality Action Plan
 
 # Summary
 
@@ -1920,30 +1899,21 @@ Climate-Neutrality Commitments
 
 # Table of contents
 
-Table of contents 3
-
-Introduction 4
-
-Status 6
-
-Climate neutrality by 2030 6
-
-Strategic priorities 8
-
-Reducing energy consumption 9
-Fostering green mobility 9
-Building a flexible energy system 11
-Carbon capture activities 12
-Climate actions after 2025 12
-Involvement and engagement of stakeholders 15
-
-Process and principles 19
-Signatories 21
-
-Appendix 1: Individual / Cluster Signatory Commitments 23
-Climate-Neutrality Commitments
-
-#
+- Introduction
+- Status
+- Climate neutrality by 2030
+- Strategic priorities
+- Reducing energy consumption
+- Fostering green mobility
+- Building a flexible energy system
+- Carbon capture activities
+- Climate actions after 2025
+- Involvement and engagement of stakeholders
+- Process and principles
+- Signatories
+- Appendix 1: Individual / Cluster Signatory Commitments
+- Climate-Neutrality Commitments
+- #
 
 # 1 Introduction
 

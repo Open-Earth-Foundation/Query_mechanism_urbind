@@ -22,6 +22,7 @@ import {
 } from "lucide-react";
 
 import { AssumptionsWorkspace } from "@/components/assumptions-workspace";
+import { CccDocumentRail } from "@/components/ccc-document-rail";
 import { ContextChatWorkspace } from "@/components/context-chat/context-chat-workspace";
 import { DevModeToggle } from "@/components/dev-mode-toggle";
 import { DevToolsPanel } from "@/components/dev-tools-panel";
@@ -44,6 +45,7 @@ import {
 import { formatCityLabel } from "@/lib/utils";
 import {
   CityGroup,
+  CityMarkdownResponse,
   CreateRunResponse,
   RunContextResponse,
   RunOutputResponse,
@@ -51,6 +53,7 @@ import {
   RunStatus,
   RunStatusResponse,
   fetchCities,
+  fetchCityMarkdown,
   fetchCityGroups,
   fetchRuns,
   fetchRunContext,
@@ -70,8 +73,9 @@ const RUN_STATUS_POLL_INTERVAL_MS = 2500;
 
 type CityScopeMode = "all" | "group" | "manual";
 type AnalysisMode = "aggregate" | "city_by_city";
-type WorkspaceRailMode = "controls" | "document";
+type WorkspaceRailMode = "controls" | "document" | "ccc";
 const LAST_RUN_ID_STORAGE_KEY = "last_run_id";
+const LAST_CCC_CITY_STORAGE_KEY = "last_ccc_city";
 const CONTROLS_COLLAPSED_STORAGE_KEY = "build_controls_collapsed";
 const DEFAULT_WRITER_RAIL_WIDTH_PX = 416;
 const MIN_WRITER_RAIL_WIDTH_PX = 320;
@@ -94,6 +98,73 @@ function formatRunOptionLabel(run: RunSummary): string {
   const preview =
     compactQuestion.length > 56 ? `${compactQuestion.slice(0, 53)}...` : compactQuestion;
   return `${run.run_id} | ${preview || "No question"}`;
+}
+
+function normalizeCitySelectionKey(value: string): string {
+  const cleaned = value.trim().toLowerCase();
+  if (!cleaned) {
+    return "";
+  }
+  return cleaned.replace(/[^\p{L}\p{N}]+/gu, "_").replace(/^_+|_+$/g, "");
+}
+
+function isObjectRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null;
+}
+
+function readStringArray(value: unknown): string[] {
+  if (!Array.isArray(value)) {
+    return [];
+  }
+  return value
+    .filter((item): item is string => typeof item === "string")
+    .map((item) => item.trim())
+    .filter((item) => item.length > 0);
+}
+
+function extractRunContextCityNames(runContext: RunContextResponse | null): string[] {
+  if (!runContext) {
+    return [];
+  }
+  const markdownBundle = runContext.context_bundle.markdown;
+  if (!isObjectRecord(markdownBundle)) {
+    return [];
+  }
+
+  const orderedCandidates = [
+    ...readStringArray(markdownBundle.selected_city_names),
+    ...readStringArray(markdownBundle.inspected_city_names),
+  ];
+  const uniqueCityNames: string[] = [];
+  const seen = new Set<string>();
+
+  orderedCandidates.forEach((city) => {
+    const key = normalizeCitySelectionKey(city);
+    if (!key || seen.has(key)) {
+      return;
+    }
+    seen.add(key);
+    uniqueCityNames.push(city);
+  });
+
+  return uniqueCityNames;
+}
+
+function pickFirstAvailableCity(candidates: string[], availableCities: string[]): string | null {
+  if (candidates.length === 0 || availableCities.length === 0) {
+    return null;
+  }
+
+  const availableByKey = new Map(
+    availableCities.map((city) => [normalizeCitySelectionKey(city), city]),
+  );
+  for (const candidate of candidates) {
+    const resolved = availableByKey.get(normalizeCitySelectionKey(candidate));
+    if (resolved) {
+      return resolved;
+    }
+  }
+  return null;
 }
 
 export default function Home() {
@@ -129,6 +200,10 @@ export default function Home() {
   const [isControlsCollapsed, setIsControlsCollapsed] = useState(false);
   const [workspaceRailMode, setWorkspaceRailMode] =
     useState<WorkspaceRailMode>("controls");
+  const [selectedCccCity, setSelectedCccCity] = useState<string | null>(null);
+  const [cccDocument, setCccDocument] = useState<CityMarkdownResponse | null>(null);
+  const [isLoadingCccDocument, setIsLoadingCccDocument] = useState(false);
+  const [cccDocumentError, setCccDocumentError] = useState<string | null>(null);
   const [writerRailWidth, setWriterRailWidth] = useState(DEFAULT_WRITER_RAIL_WIDTH_PX);
   const [isWriterRailResizing, setIsWriterRailResizing] = useState(false);
   const [frontendMode, setFrontendMode] = useState<FrontendMode>(getDefaultFrontendMode());
@@ -136,6 +211,7 @@ export default function Home() {
   const writerRailResizeRef = useRef<{ startX: number; startWidth: number } | null>(
     null,
   );
+  const cccRunDefaultRef = useRef<string | null>(null);
 
   const runId = runResponse?.run_id ?? null;
   const statusValue = runStatus?.status ?? runResponse?.status ?? null;
@@ -146,7 +222,7 @@ export default function Home() {
   const workspaceUsesDocumentRail = documentReady && (chatOpen || assumptionsOpen);
   const isWriterRailResizable =
     workspaceUsesDocumentRail &&
-    workspaceRailMode === "document" &&
+    workspaceRailMode !== "controls" &&
     !isControlsCollapsed;
   const writerRailStyle = useMemo<CSSProperties | undefined>(() => {
     if (!isWriterRailResizable) {
@@ -176,14 +252,27 @@ export default function Home() {
     return null;
   }, [activeRunSummary, question, runId, runResponse?.run_id]);
 
+  const runContextCityNames = useMemo(
+    () => extractRunContextCityNames(runContext),
+    [runContext],
+  );
+  const preferredRunCccCity = useMemo(
+    () => pickFirstAvailableCity(runContextCityNames, cities),
+    [cities, runContextCityNames],
+  );
+
   const workspaceRailTitle =
     workspaceUsesDocumentRail && workspaceRailMode === "document"
       ? "Writer Document"
-      : "Build Controls";
+      : workspaceUsesDocumentRail && workspaceRailMode === "ccc"
+        ? "CCC Source"
+        : "Build Controls";
   const workspaceRailDescription =
     workspaceUsesDocumentRail && workspaceRailMode === "document"
       ? "Keep the generated report open while you chat or review assumptions."
-      : "Select scope, trigger a build, or load a previous answer.";
+      : workspaceUsesDocumentRail && workspaceRailMode === "ccc"
+        ? "Browse raw Climate City Contracts without dropping the active workspace."
+        : "Select scope, trigger a build, or load a previous answer.";
   const railToggleLabel = workspaceUsesDocumentRail
     ? isControlsCollapsed
       ? "Show Rail"
@@ -446,6 +535,101 @@ export default function Home() {
   }, [cityGroups, selectedGroupId]);
 
   useEffect(() => {
+    if (cities.length === 0) {
+      return;
+    }
+    if (selectedCccCity && pickFirstAvailableCity([selectedCccCity], cities)) {
+      return;
+    }
+
+    const storedCity =
+      typeof window === "undefined"
+        ? null
+        : window.sessionStorage.getItem(LAST_CCC_CITY_STORAGE_KEY);
+    const fallbackCity =
+      pickFirstAvailableCity(storedCity ? [storedCity] : [], cities) ?? cities[0];
+    setSelectedCccCity(fallbackCity);
+  }, [cities, selectedCccCity]);
+
+  useEffect(() => {
+    if (!selectedCccCity || typeof window === "undefined") {
+      return;
+    }
+    window.sessionStorage.setItem(LAST_CCC_CITY_STORAGE_KEY, selectedCccCity);
+  }, [selectedCccCity]);
+
+  useEffect(() => {
+    if (!runId || !preferredRunCccCity) {
+      return;
+    }
+    const appliedKey = `${runId}:${normalizeCitySelectionKey(preferredRunCccCity)}`;
+    if (cccRunDefaultRef.current === appliedKey) {
+      return;
+    }
+    cccRunDefaultRef.current = appliedKey;
+    setSelectedCccCity(preferredRunCccCity);
+  }, [preferredRunCccCity, runId]);
+
+  useEffect(() => {
+    if (
+      !documentReady ||
+      !workspaceUsesDocumentRail ||
+      workspaceRailMode !== "ccc" ||
+      !selectedCccCity
+    ) {
+      return;
+    }
+    if (
+      cccDocument &&
+      normalizeCitySelectionKey(cccDocument.city_name) ===
+        normalizeCitySelectionKey(selectedCccCity)
+    ) {
+      return;
+    }
+
+    let cancelled = false;
+    const controller = new AbortController();
+    setIsLoadingCccDocument(true);
+    setCccDocumentError(null);
+
+    fetchCityMarkdown(selectedCccCity, { signal: controller.signal })
+      .then((payload) => {
+        if (cancelled) {
+          return;
+        }
+        setCccDocument(payload);
+      })
+      .catch((error) => {
+        if (cancelled) {
+          return;
+        }
+        if (error instanceof DOMException && error.name === "AbortError") {
+          return;
+        }
+        setCccDocument(null);
+        setCccDocumentError(
+          error instanceof Error ? error.message : "Failed to load CCC markdown.",
+        );
+      })
+      .finally(() => {
+        if (!cancelled) {
+          setIsLoadingCccDocument(false);
+        }
+      });
+
+    return () => {
+      cancelled = true;
+      controller.abort();
+    };
+  }, [
+    cccDocument,
+    documentReady,
+    selectedCccCity,
+    workspaceRailMode,
+    workspaceUsesDocumentRail,
+  ]);
+
+  useEffect(() => {
     if (!runId || !statusValue || !["queued", "running"].includes(statusValue)) {
       setIsPolling(false);
       return;
@@ -558,6 +742,11 @@ export default function Home() {
     );
   }
 
+  function selectCccCity(city: string): void {
+    setSelectedCccCity(city);
+    setCccDocumentError(null);
+  }
+
   function openDocumentWorkspace(): void {
     setChatOpen(false);
     setAssumptionsOpen(false);
@@ -660,6 +849,13 @@ export default function Home() {
     /api key|authentication|unauthorized|401|403/i.test(
       runStatus?.error?.message ?? "",
     );
+  const activeCccDocument =
+    cccDocument &&
+    selectedCccCity &&
+    normalizeCitySelectionKey(cccDocument.city_name) ===
+      normalizeCitySelectionKey(selectedCccCity)
+      ? cccDocument
+      : null;
 
   return (
     <div className="min-h-screen bg-[radial-gradient(circle_at_20%_20%,#f8edd6_0%,#f2f6f6_45%,#eef2ff_100%)] px-4 py-8 md:px-8">
@@ -674,7 +870,9 @@ export default function Home() {
                 Build the answer as a report, then explore it.
               </h1>
               <p className="mt-2 max-w-3xl text-sm text-slate-600 md:text-base">
-                This flow is document-first. You submit a build run, wait for completion, review the generated document, then switch into context chat workspace.
+                This flow is document-first. You submit a build run, wait for
+                completion, review the generated document, then switch into
+                context chat workspace.
               </p>
             </div>
             <DevModeToggle mode={frontendMode} onModeChange={setFrontendMode} />
@@ -743,6 +941,17 @@ export default function Home() {
                         </button>
                         <button
                           type="button"
+                          onClick={() => setWorkspaceRailMode("ccc")}
+                          className={`rounded-full px-3 py-1 text-xs font-medium transition ${
+                            workspaceRailMode === "ccc"
+                              ? "bg-white text-slate-900 shadow-sm"
+                              : "text-slate-600 hover:text-slate-900"
+                          }`}
+                        >
+                          CCC
+                        </button>
+                        <button
+                          type="button"
                           onClick={() => setWorkspaceRailMode("controls")}
                           className={`rounded-full px-3 py-1 text-xs font-medium transition ${
                             workspaceRailMode === "controls"
@@ -755,11 +964,11 @@ export default function Home() {
                       </div>
                     ) : null}
                   </div>
-                  {workspaceUsesDocumentRail ? (
+                  {workspaceUsesDocumentRail && workspaceRailMode !== "ccc" ? (
                     <p className="text-xs text-slate-500">
                       {workspaceRailMode === "document"
                         ? "Switch the rail without dropping the chat session, then drag the divider to resize the writer view."
-                        : "Switch the rail between the original writer answer and the build inputs without dropping the chat session."}
+                        : "Switch the rail between the generated answer, source CCCs, and build inputs without dropping the chat session."}
                     </p>
                   ) : null}
                 </div>
@@ -772,6 +981,18 @@ export default function Home() {
                     question={activeRunQuestion}
                     statusLabel={statusValue}
                     onOpenFullDocument={openDocumentWorkspace}
+                  />
+                ) : workspaceUsesDocumentRail && workspaceRailMode === "ccc" ? (
+                  <CccDocumentRail
+                    cities={cities}
+                    selectedCity={selectedCccCity}
+                    onSelectCity={selectCccCity}
+                    content={activeCccDocument?.content ?? null}
+                    sourcePaths={activeCccDocument?.source_paths ?? []}
+                    isLoadingCities={isLoadingCities}
+                    citiesError={citiesError}
+                    isLoadingContent={isLoadingCccDocument}
+                    contentError={cccDocumentError}
                   />
                 ) : (
                   <div className="space-y-5">
