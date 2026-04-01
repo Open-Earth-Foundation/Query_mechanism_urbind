@@ -32,6 +32,7 @@ skills-lock.json
 .cursorignore
 .cursorindexingignore
 .codex-scratch/
+.agents/
 .cursor/*
 !.cursor/skills/
 !.cursor/skills/**
