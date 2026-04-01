@@ -40,46 +40,46 @@ Climate Neutrality Action Plan
 
 # List of figures
 
-Fig. S1: Overview of contents and relationship of the different parts in CCC Action Plan 4
-Fig. I1: Wheel of development goals in Trondheimsløftet 7
-Fig. I2: NZC Climate Transition Map 9
-Fig. I3: The Theory of Change framework, NetZeroCities 10
-Fig. I4: Map over Trondheim Municipality 16
-Fig. A1a: GHG emissions reduction potential - baseline 2009 29
-Fig. A1b: GHG emissions reduction potential - baseline 2022 29
-Fig. A2: Systems and systemic levers in the NZC Theory of Change 33
-Fig. B1: Five focus areas in Trondheim's climate transition 40
-Fig. B2: Energy systems and other focus areas 42
-Fig. B3: Mobility and transport and other focus areas 45
-Fig. B4: Built environment and other focus areas 47
-Fig. B5: The waste hierarchy and a rough idea of a circular economy. 47
-Fig. B6: Waste and circular economy and other focus areas 49
-Fig. B7: Examples of ecosystem services that we rely upon 50
-Fig. B8: Residual emissions 2030 in scope 1-3, Trondheim model 98
-Fig. B9: The carbon cycles 99
-Fig. B10: Short-term (2030) and long-term (2050) compensation strategy 100
-Fig. C1: The participatory ladder for citizen engagement 123
-Fig. C2: Example of target group assessment - family with small children 124
-Fig. O1: Selected milestones 2022-2030 126
+- Fig. S1: Overview of contents and relationship of the different parts in CCC Action Plan 4
+- Fig. I1: Wheel of development goals in Trondheimsløftet 7
+- Fig. I2: NZC Climate Transition Map 9
+- Fig. I3: The Theory of Change framework, NetZeroCities 10
+- Fig. I4: Map over Trondheim Municipality 16
+- Fig. A1a: GHG emissions reduction potential - baseline 2009 29
+- Fig. A1b: GHG emissions reduction potential - baseline 2022 29
+- Fig. A2: Systems and systemic levers in the NZC Theory of Change 33
+- Fig. B1: Five focus areas in Trondheim's climate transition 40
+- Fig. B2: Energy systems and other focus areas 42
+- Fig. B3: Mobility and transport and other focus areas 45
+- Fig. B4: Built environment and other focus areas 47
+- Fig. B5: The waste hierarchy and a rough idea of a circular economy. 47
+- Fig. B6: Waste and circular economy and other focus areas 49
+- Fig. B7: Examples of ecosystem services that we rely upon 50
+- Fig. B8: Residual emissions 2030 in scope 1-3, Trondheim model 98
+- Fig. B9: The carbon cycles 99
+- Fig. B10: Short-term (2030) and long-term (2050) compensation strategy 100
+- Fig. C1: The participatory ladder for citizen engagement 123
+- Fig. C2: Example of target group assessment - family with small children 124
+- Fig. O1: Selected milestones 2022-2030 126
 
 # List of tables
 
-Table I-1.1: Sectors and scopes of the climate neutrality targets 15
-Table A-1.1: Final energy use by source sectors 18
-Table A-1.2: Emission factors applied 19
-Table A-1.3a: GHG emissions by source sectors - 2022 19
-Table A-1.3b: GHG emissions by source sectors - 2030 BAU 20
-Table A-1.4: GHG emissions by activity in source sectors 20
-Table A-2.1: List of relevant policies, strategies &amp; regulations 22
-Table A-2.3a: Emission inventory - Trondheim model 31
-Table A-2.3b: Emission inventory - NZC economic model 32
-Table A-3.1 Overview of municipal functions in climate transition 37
-Table A-3.2: Stakeholder mapping in quadruple-helix 38
-Table B-1.1: List of impact pathways 52
-Table B-2.1: Description of action portfolios 64
-Tables B-2.2-X: Individual action outlines 67
-Table B-3.1: Overview of indicators 102
-Tables B-3.2-X: Metadata tables for each indicator selected 106
+- Table I-1.1: Sectors and scopes of the climate neutrality targets 15
+- Table A-1.1: Final energy use by source sectors 18
+- Table A-1.2: Emission factors applied 19
+- Table A-1.3a: GHG emissions by source sectors - 2022 19
+- Table A-1.3b: GHG emissions by source sectors - 2030 BAU 20
+- Table A-1.4: GHG emissions by activity in source sectors 20
+- Table A-2.1: List of relevant policies, strategies &amp; regulations 22
+- Table A-2.3a: Emission inventory - Trondheim model 31
+- Table A-2.3b: Emission inventory - NZC economic model 32
+- Table A-3.1 Overview of municipal functions in climate transition 37
+- Table A-3.2: Stakeholder mapping in quadruple-helix 38
+- Table B-1.1: List of impact pathways 52
+- Table B-2.1: Description of action portfolios 64
+- Tables B-2.2-X: Individual action outlines 67
+- Table B-3.1: Overview of indicators 102
+- Tables B-3.2-X: Metadata tables for each indicator selected 106
 TRONDHEIM MUNICIPALITY
 
 Climate Neutrality Action Plan
@@ -312,31 +312,31 @@ Climate Neutrality Action Plan
 
 In order to achieve the above-mentioned goals, 9 focus areas were mapped out with specific actions towards 2030:
 
-) Nature and land use: We aim to develop an area-neutral, attractive, and climate-resilient city.
-) Energy and power: We will phase out fossil energy, increase local renewable energy production, and utilise energy resources smartly and flexibly.
-) Mobility and transport: We will streamline and modernise the transportation sector and make it nearly emission-free.
-) Buildings and constructions: We will develop buildings and infrastructure for a climate-resilient, emission-free, and circular future.
-) Consumption and waste: We will develop a circular city where we preserve resources and reduce our consumption.
-) Carbon sequestration for climate neutrality: We will compensate for the direct emissions we cannot eliminate.
-) Climate adaptation and civil preparedness: Together we shall make the city and nature more climate resilient.
-) Just transition and public health: We will promote equity and solidarity in the fight against climate change.
-) Business and workforce: We will be a driver for value creation that safeguards environmental and social sustainability.
+- Nature and land use: We aim to develop an area-neutral, attractive, and climate-resilient city.
+- Energy and power: We will phase out fossil energy, increase local renewable energy production, and utilise energy resources smartly and flexibly.
+- Mobility and transport: We will streamline and modernise the transportation sector and make it nearly emission-free.
+- Buildings and constructions: We will develop buildings and infrastructure for a climate-resilient, emission-free, and circular future.
+- Consumption and waste: We will develop a circular city where we preserve resources and reduce our consumption.
+- Carbon sequestration for climate neutrality: We will compensate for the direct emissions we cannot eliminate.
+- Climate adaptation and civil preparedness: Together we shall make the city and nature more climate resilient.
+- Just transition and public health: We will promote equity and solidarity in the fight against climate change.
+- Business and workforce: We will be a driver for value creation that safeguards environmental and social sustainability.
 
 These 9 focus areas serve as the foundation of the Trondheim Climate City Contract, with a bit of restructuring. The climate actions will be categorised and elaborated in five focus areas or impact pathways in accordance with the NetZeroCities Theory of Change framework, while the remaining are included as either enabling factors or co-benefits.
 
-) Energy systems
-) Mobility and transport
-) Built environment
-) Waste and circular economy
-) Viable nature
+- Energy systems
+- Mobility and transport
+- Built environment
+- Waste and circular economy
+- Viable nature
 
 ## Other climate-related instruments in Trondheim’s policy landscape
 
 Trondheim’s climate planning consists mainly of the following elements:
 
-(1) Trondheimsløftet: municipal master plan, societal section
-(2) Klimaløftene: a theme plan for energy and climate
-(3) Climate budget in the annual budget plan
+- (1) Trondheimsløftet: municipal master plan, societal section
+- (2) Klimaløftene: a theme plan for energy and climate
+- (3) Climate budget in the annual budget plan
 
 In addition, there are many other policy instruments that are of high relevance and come into interplay. Module A-2 in this document will provide a more detailed description and assessment. Some examples can be mentioned here.
 
@@ -2556,9 +2556,7 @@ SESAM: Engineering and construction phase adapted for future development.
 | --- | --- | --- |
 |   | Action scale & addressed entities | Mid-Norway (53 municipalities)  |
 |   | Involved stakeholders | Seven waste management companies  |
-|   | Comments on implementation – consider mentioning resources, timelines, milestones | 1) Location
-) Finance and investment plan,
-) support and agreement with cooperating municipalities in the region.  |
+|   | Comments on implementation – consider mentioning resources, timelines, milestones | 1) Location<br>) Finance and investment plan,<br>) support and agreement with cooperating municipalities in the region.  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   | Removed/substituted energy, volume, or fuel type | Plastic waste will be sorted out for material recovery before incineration.  |
 |   | GHG emissions reduction estimate (total) per emission source sector | 7,300 tons CO2e  |
@@ -3926,10 +3924,10 @@ Fig. C1: The participatory ladder for citizen engagement
 
 In 2019, the Trondheim City Council adopted "Trondheim - the co-created municipality", with the aim to put more focus on participatory mechanisms. This is also to be applied for the climate transition.
 
-Annual climate survey. Since 2017, Trondheim Municipality has conducted an annual climate survey to get an update about the public opinions on the climate transition. The questionnaire covers the respondents' attitudes about climate change, their support for Trondheim's climate measures and the individual behaviours within certain focus area(s). The results over years are comparable and provide important insights.
-Participatory citizen consultation (when making municipal plans). The revision of Klimaløftene, the municipal energy and climate plan, included many rounds of consultations with the citizens and citizen groups. The activities are still in the lower steps of the participatory ladder: information and dialogues.
-Citizen panel. This mechanism will be (re)designed and tested in the Pilot Cities project connected to CCS at the waste-to-energy plant, a key action for our climate neutrality.
-Trondheim Green Life. This is a proposed action in Trondheim's first CCC, in order to engage the citizens in making Trondheim a greener and more circular city. As a start, Trondheim Municipality shall publish the climate and environment status in a more citizen-friendly way. We shall then invite citizens to co-create green solutions that have an impact on their everyday life. Environmental NGOs can be good partners for this.
+- Annual climate survey. Since 2017, Trondheim Municipality has conducted an annual climate survey to get an update about the public opinions on the climate transition. The questionnaire covers the respondents' attitudes about climate change, their support for Trondheim's climate measures and the individual behaviours within certain focus area(s). The results over years are comparable and provide important insights.
+- Participatory citizen consultation (when making municipal plans). The revision of Klimaløftene, the municipal energy and climate plan, included many rounds of consultations with the citizens and citizen groups. The activities are still in the lower steps of the participatory ladder: information and dialogues.
+- Citizen panel. This mechanism will be (re)designed and tested in the Pilot Cities project connected to CCS at the waste-to-energy plant, a key action for our climate neutrality.
+- Trondheim Green Life. This is a proposed action in Trondheim's first CCC, in order to engage the citizens in making Trondheim a greener and more circular city. As a start, Trondheim Municipality shall publish the climate and environment status in a more citizen-friendly way. We shall then invite citizens to co-create green solutions that have an impact on their everyday life. Environmental NGOs can be good partners for this.
 TRONDHEIM MUNICIPALITY
 
 Climate Neutrality Action Plan
@@ -4070,8 +4068,8 @@ Climate Neutrality Commitments
 
 # Related attachments:
 
-National statement_Trondheim CCC
-Local and regional statements_Trondheim CCC
+- National statement_Trondheim CCC
+- Local and regional statements_Trondheim CCC
 TRONDHEIM MUNICIPALITY
 Climate Neutrality Commitments
 2
@@ -4088,21 +4086,21 @@ In November 2019, the Trondheim City Council made this declaration: "Global warm
 
 In the same political proposal, the following action points were adopted:
 
-Responsibility for the municipality's climate efforts must be placed at the top leadership level.
-All municipal departments must prepare their own plans that show how they will contribute to achieving the municipality's climate goals. The plans must show concrete measures and their effect.
-Consideration of the climate and natural diversity must weigh heavily in all cases.
-The citizens of Trondheim must be actively involved in the design and implementation of climate measures.
-Trondheim Municipality is to actively exchange experiences with the business communities about green solutions.
+- Responsibility for the municipality's climate efforts must be placed at the top leadership level.
+- All municipal departments must prepare their own plans that show how they will contribute to achieving the municipality's climate goals. The plans must show concrete measures and their effect.
+- Consideration of the climate and natural diversity must weigh heavily in all cases.
+- The citizens of Trondheim must be actively involved in the design and implementation of climate measures.
+- Trondheim Municipality is to actively exchange experiences with the business communities about green solutions.
 
 The European Commission launched the call for the EU Mission for 100 climate-neutral and smart cities by 2030, also known as the Cities Mission, in autumn 2021. The Cities Mission takes a cross-sectoral and demand-led approach, creating synergies between existing initiatives and basing its activities on the actual needs of cities. This approach matches well with what Trondheim needs, and the timing was good. Trondheim was about to start the revision of the municipal energy and climate plan, for the fourth version. The methodology and resources at EU level could come in useful. The City Council decided that Trondheim send in an Expression of Interest.
 
 These were some advantages for Trondheim to join the Cities Mission:
 
-Trondheim has the ambition to be an international front-runner in climate and environment.
-Climate neutrality should be a new goal for Trondheim to aim for, which may strengthen our existing efforts in carbon capture and storage (CCS) and help explore potentials within land use, agriculture and forestry.
-The participation may enhance our knowledge about climate management and improve our processes for stakeholder and citizen engagement.
-We may incorporate Cities Mission in multi-level governance and be active in the development of necessary (policy) instruments for change.
-Innovation has been a keyword for Trondheim. EU Cities Mission is an important platform for the institutions within research and innovation to joint force in relevant projects.
+- Trondheim has the ambition to be an international front-runner in climate and environment.
+- Climate neutrality should be a new goal for Trondheim to aim for, which may strengthen our existing efforts in carbon capture and storage (CCS) and help explore potentials within land use, agriculture and forestry.
+- The participation may enhance our knowledge about climate management and improve our processes for stakeholder and citizen engagement.
+- We may incorporate Cities Mission in multi-level governance and be active in the development of necessary (policy) instruments for change.
+- Innovation has been a keyword for Trondheim. EU Cities Mission is an important platform for the institutions within research and innovation to joint force in relevant projects.
 
 In April 2022, the European Commission announced the 112 cities selected to participate in the EU Cities Mission. The designated cities, 100 coming from all 27 EU countries and 12 coming from Horizon Europe associated countries, are receiving tailor-made advice and support from the mission platform managed by NetZeroCities to reach climate neutrality by 2030 and inspire other cities to follow suit by 2050. Three Norwegian cities were selected: Oslo, Stavanger and Trondheim.
 TRONDHEIM MUNICIPALITY

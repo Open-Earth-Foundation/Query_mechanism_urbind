@@ -17,72 +17,37 @@ Valladolid
 
 # Index
 
-Introduction ... 5
-
-Commitment of the city of Valladolid to climate neutrality ... 8
-
-Introduction ... 8
-
-The Mission 100 climate-neutral and smart cities by 2030 in a context of triple crisis ... 8
-
-Valladolid Mission: Our commitment and motivation for the Climate Mission ... 8
-
-Conclusion ... 10
-
-Climate neutrality target for 2030 ... 11
-
-Goal: complete neutrality by 2030 ... 11
-
-Valladolid's climate neutrality, an ambitious goal that starts from a long way off ... 12
-
-Valladolid's climate neutrality by 2030 - Closing the gap ... 14
-
-The benefits of the Valladolid Climate Mission ... 15
-
-Strategic priorities and interventions ... 17
-
+- Introduction ... 5
+- Commitment of the city of Valladolid to climate neutrality ... 8
+- Introduction ... 8
+- The Mission 100 climate-neutral and smart cities by 2030 in a context of triple crisis ... 8
+- Valladolid Mission: Our commitment and motivation for the Climate Mission ... 8
+- Conclusion ... 10
+- Climate neutrality target for 2030 ... 11
+- Goal: complete neutrality by 2030 ... 11
+- Valladolid's climate neutrality, an ambitious goal that starts from a long way off ... 12
+- Valladolid's climate neutrality by 2030 - Closing the gap ... 14
+- The benefits of the Valladolid Climate Mission ... 15
+- Strategic priorities and interventions ... 17
 - Sustainable refurbishment and comprehensive energy efficiency measures ... 17
-
 - Sustainable and safe urban and metropolitan mobility ... 18
-
 - Circular economy for sustainable consumption and production ... 18
-
 - Renaturalising the city ... 18
-
 - Governance for Climate Neutrality ... 19
-
-Principles and process ... 20
-
+- Principles and process ... 20
 - Just transition, "no-one left behind" ... 20
-
 - Beyond a short-sighted and partisan agreement ... 20
-
 - Co-creation with the ecosystem ... 21
-
 - Cooperation at regional, state and cross-border level ... 21
-
 - Strengthening our regulatory capacities and our financial and institutional framework ... 21
-
 - A learning journey ... 22
-
-Government of Spain's support for climate neutrality in Mission cities ... 23
-
-Climate City Contract - Valladolid
-Ayuntamiento de Valladolid
-
-f
-
-Support from the Junta de Castilla y León for the climate neutrality of the city of Valladolid ... 23
-
-The Junta de Castilla y León as a key player in the climate neutrality of the city of Valladolid ... 23
-
-Monitoring, updating and amending the Climate City Contract and its Annexes ... 29
-
-Annex 1 - Climate Action Plan
-
-Annex 2 - Climate Investment Plan
-
-Annex 3 - Accession of organisations
+- Government of Spain's support for climate neutrality in Mission cities ... 23
+- Support from the Junta de Castilla y León for the climate neutrality of the city of Valladolid ... 23
+- The Junta de Castilla y León as a key player in the climate neutrality of the city of Valladolid ... 23
+- Monitoring, updating and amending the Climate City Contract and its Annexes ... 29
+- Annex 1 - Climate Action Plan
+- Annex 2 - Climate Investment Plan
+- Annex 3 - Accession of organisations
 
 Climate City Contract - Valladolid
 Ajuntamento de Valladolid

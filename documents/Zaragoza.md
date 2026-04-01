@@ -1,7 +1,6 @@
 Zaragoza
 AYUNTAMIENTO
 citiES
-0
 
 # Zaragoza Climate City Contract
 
@@ -11,94 +10,87 @@ citiES 2030
 ![img-1.jpeg](img-1.jpeg)
 
 Zaragoza
-3
 
 # Index
 
-Index...3
-Introduction...6
-Zaragoza's commitment to climate neutrality...9
-Introduction...9
-Goal: Climate neutrality by 2030...12
-Key priorities and strategic interventions...15
-Principles and process...19
-Government of Spain's support for climate neutrality in Mission cities..23
-Support from the Autonomous Community of Aragon for the climate neutrality of the city of Zaragoza...23
-Monitoring, updating, and amending the Climate City Contract and its Annexes...24
-Annex I: Zaragoza City Climate Action Plan...32
-Introduction...32
-Work process...33
-PART A - Current State of Climate Action...35
-Module A-1: Greenhouse Gas Emissions Baseline Inventory...39
-Module A-2: Current Policies and Strategies Assessment...47
-Module A-3: Systemic Barriers and Opportunities to 2030 Climate Neutrality...52
-PART B - Pathways towards Climate Neutrality by 2030...56
-MODULE B-1: Climate Neutrality Scenarios and Impact Pathways...78
-MODULE B-2: Climate Neutrality Portfolio Design...56
-MODULE B-3: Indicators for Monitoring, Evaluation and Learning...75
-PART C - Enbling Climate Neutrality by 2030...78
-MODULE C-1: Organisational and Governance Innovation Interventions...82
-MODULE C-2: Social and other Innovation Interventions...84
+- Index...3
+- Introduction...6
+- Zaragoza's commitment to climate neutrality...9
+- Introduction...9
+- Goal: Climate neutrality by 2030...12
+- Key priorities and strategic interventions...15
+- Principles and process...19
+- Government of Spain's support for climate neutrality in Mission cities..23
+- Support from the Autonomous Community of Aragon for the climate neutrality of the city of Zaragoza...23
+- Monitoring, updating, and amending the Climate City Contract and its Annexes...24
+- Annex I: Zaragoza City Climate Action Plan...32
+- Introduction...32
+- Work process...33
+- PART A - Current State of Climate Action...35
+- Module A-1: Greenhouse Gas Emissions Baseline Inventory...39
+- Module A-2: Current Policies and Strategies Assessment...47
+- Module A-3: Systemic Barriers and Opportunities to 2030 Climate Neutrality...52
+- PART B - Pathways towards Climate Neutrality by 2030...56
+- MODULE B-1: Climate Neutrality Scenarios and Impact Pathways...78
+- MODULE B-2: Climate Neutrality Portfolio Design...56
+- MODULE B-3: Indicators for Monitoring, Evaluation and Learning...75
+- PART C - Enbling Climate Neutrality by 2030...78
+- MODULE C-1: Organisational and Governance Innovation Interventions...82
+- MODULE C-2: Social and other Innovation Interventions...84
 
-Climate City Contract - Zaragoza
-4
 
-MODULE C-3: Financing of Action Portfolio (Economic Case) 86
+- MODULE C-3: Financing of Action Portfolio (Economic Case) 86
 
-OUTLOOK AND NEXT STEPS 89
+- OUTLOOK AND NEXT STEPS 89
 
-Annex II: Zaragoza City Climate Investment Plan 94
+- Annex II: Zaragoza City Climate Investment Plan 94
 
-PART A - Current State of Climate Investment 94
-Module IP-A1: Existing Climate Action Funding and Financing 94
-Module IP-A2: Strategic Funding and Financing Evaluation 95
-Module IP-A3: Barriers to Climate Investment 98
+- PART A - Current State of Climate Investment 94
+- Module IP-A1: Existing Climate Action Funding and Financing 94
+- Module IP-A2: Strategic Funding and Financing Evaluation 95
+- Module IP-A3: Barriers to Climate Investment 98
 
-PART B - Investment Pathways towards Climate Neutrality by 2030 100
-Module IP-B1: Cost Scenarios for Climate Neutrality 100
-Module IP-B2: Capital Planning for Climate Neutrality 102
-Module IP-B3: Economic and Financial Indicators for Monitoring, Evaluation and Learning 106
+- PART B - Investment Pathways towards Climate Neutrality by 2030 100
+- Module IP-B1: Cost Scenarios for Climate Neutrality 100
+- Module IP-B2: Capital Planning for Climate Neutrality 102
+- Module IP-B3: Economic and Financial Indicators for Monitoring, Evaluation and Learning 106
 
-PART C - Enabling Financial Conditions for Climate Neutrality by 2030 109
-Module IP-C1: Climate Policies for Capital Formation and Deployment 109
-Module IP-C2: Identification and Mitigation of Risks 111
-Module IP-C3: Capacity Building and Stakeholder Engagement for Capital and Investment Planning 115
+- PART C - Enabling Financial Conditions for Climate Neutrality by 2030 109
+- Module IP-C1: Climate Policies for Capital Formation and Deployment 109
+- Module IP-C2: Identification and Mitigation of Risks 111
+- Module IP-C3: Capacity Building and Stakeholder Engagement for Capital and Investment Planning 115
 
-Annex III: City stakeholders' commitments 128
-Other actors 128
-Commitments from other actors 128
+- Annex III: City stakeholders' commitments 128
+- Other actors 128
+- Commitments from other actors 128
 
-Climate City Contract - Zaragoza
-↑
 
 # Figures
 
-Figure 1. Zaragoza's roadmap to climate neutrality... 10
-Figure 2. Main decarbonisation sectors... 12
-Figure 3. CO₂ emission reductions (in ktons of CO₂ per year) distributed by sub-sectors of action... 13
-Figure 4. Conclusions of the economic case for the city of Zaragoza... 14
-Figure 5. The Action Plan's action sub-sectors address 99% of the total Scope 1 and 2 emissions... 15
+- Figure 1. Zaragoza's roadmap to climate neutrality... 10
+- Figure 2. Main decarbonisation sectors... 12
+- Figure 3. CO₂ emission reductions (in ktons of CO₂ per year) distributed by sub-sectors of action... 13
+- Figure 4. Conclusions of the economic case for the city of Zaragoza... 14
+- Figure 5. The Action Plan's action sub-sectors address 99% of the total Scope 1 and 2 emissions... 15
 
 # Abbreviations
 
-CCC - Climate City Contract
-CAP - Climate Action Plan
-CIP - Climate Investment Plan
-ZEI 2019 - Monitoring Emissions Inventory 2019
-BEI 2005 - Baseline Emission Inventory 2005
-BAU 2030 - Business as Usual scenario 2030
-EMCD - Economic Model for Cities' Decarbonisation
-SECAP - Sustainable Energy and Climate Action Plan
-SUMP - Sustainable Urban Mobility Plan
-PNIEC - Spanish integrated Energy and Climate Plan
-ECAZ 3.0 - Zaragoza Climate Change, Air Quality and Health Strategy
-EACC - Aragonese Climate Change Strategy 2030
-PACCZ - Zaragoza Climate Change Adaptation Action Plan
-CitiES 2030 - Collaborative Platform for the Climate Neutrality of Spanish Cities
-GHG - Greenhouse Gases
+- CCC - Climate City Contract
+- CAP - Climate Action Plan
+- CIP - Climate Investment Plan
+- ZEI 2019 - Monitoring Emissions Inventory 2019
+- BEI 2005 - Baseline Emission Inventory 2005
+- BAU 2030 - Business as Usual scenario 2030
+- EMCD - Economic Model for Cities' Decarbonisation
+- SECAP - Sustainable Energy and Climate Action Plan
+- SUMP - Sustainable Urban Mobility Plan
+- PNIEC - Spanish integrated Energy and Climate Plan
+- ECAZ 3.0 - Zaragoza Climate Change, Air Quality and Health Strategy
+- EACC - Aragonese Climate Change Strategy 2030
+- PACCZ - Zaragoza Climate Change Adaptation Action Plan
+- CitiES 2030 - Collaborative Platform for the Climate Neutrality of Spanish Cities
+- GHG - Greenhouse Gases
 
-Climate City Contract - Zaragoza
-Climate City Contract - Zaragoza
 
 # Introduction
 
@@ -111,7 +103,6 @@ The EU Mission "100 Climate Neutral and Smart Cities by 2030" aims to support th
 In Spain, on September 8th 2021, the Government of Spain and the City Councils of Barcelona, Madrid, Seville and Valencia signed the Declaration "Climate Neutral Cities in 2030" (annexed to this Contract), as a boost to the commitments and initiatives of the signatory cities and as governmental support for the transformation of these cities to achieve climate neutrality and improve their resilience. Following the path opened, the City Councils of Soria, Valladolid, Vitoria-Gasteiz and Zaragoza adhered to the Declaration on December 13th.
 
 In addition, on September 15th 2021, the Plenary of the Senate approved a motion urging the Government to push for climate neutrality of cities in the framework of the European Cities Mission. The motion recognises the fundamental role of cities in the response to the climate emergency and highlights the opportunity to accelerate the necessary and cross-cutting changes to make cities climate neutral by 2030. It also values that the different territorial administrations promote and facilitate the climate neutrality of Spanish cities through their incorporation into the Mission of Cities and through the development of transformation projects.
-Climate City Contract - Zaragoza
 
 In this regard, on November 25th 2021, the Cities Mission launched a call for expression of interest addressed to European cities with more than 50,000 inhabitants interested in participating. Of the 377 that applied, 100 were selected from the EU-27, including the Spanish cities of Barcelona, Madrid, Sevilla, Valencia, Valladolid, Vitoria-Gasteiz and Zaragoza.
 
@@ -123,19 +114,13 @@ In particular, it recognises that the Mission cannot succeed without being firml
 
 Furthermore, it integrates the city's own qualities and heritage, which guarantee the local dimension of the transition to climate neutrality, but also its inclusive character, in line with the values of the New European Bauhaus (art/culture, sustainability and society). It fosters a sense of ownership by the city's inhabitants and professional actors, showing that their unique contributions are relevant and that the fulfilment of this contract will result in a better quality of life and a better environment for all.
 
-On the other hand, it is configured in the framework of an iterative process, as a document that will be subject to monitoring and updating, both through the signing of addenda and other accession documents, thus bringing together other actors necessary for the city to achieve the established goal of climate neutrality. In particular,
-
-7
-↑
-
-the commitments contained therein may be expanded or updated to effectively contribute to the achievement of climate neutrality in the city.
+On the other hand, it is configured in the framework of an iterative process, as a document that will be subject to monitoring and updating, both through the signing of addenda and other accession documents, thus bringing together other actors necessary for the city to achieve the established goal of climate neutrality. In particular, the commitments contained therein may be expanded or updated to effectively contribute to the achievement of climate neutrality in the city.
 
 The document is divided into several parts: one concerning the cities' commitment to achieve climate neutrality in the city; another concerning the institutional support and coordination of the different public administrations; another part concerning its monitoring and updating; and a final part comprising the annexes corresponding to the Climate Action Plan, the Climate Investment Plan and the City Stakeholders' Commitments, which follow the models elaborated by NetZeroCities¹.
 
 ¹ The NetZeroCities project is part of the Horizon 2020 Research and Innovation Programme and provides the necessary technical, regulatory and financial assistance to the cities of the European Cities Mission (https://netzerocities.eu/the-nzc-project/).
 
-Climate City Contract - Zaragoza
-Zaragoza's commitment to climate neutrality
+# Zaragoza's commitment to climate neutrality
 
 # Introduction
 
@@ -149,8 +134,6 @@ This is a challenge for the transformation of the city in the coming years, but 
 
 Thanks to the work done in recent years, the city of Zaragoza is on its path to become more sustainable and has strived to reduce its emissions significantly over the last decade. In this sense, this Climate City Contract builds on the strong foundations that the city has been building for sustainability, with strategies and plans in the implementation phase that have been key to reach this point.
 
-Climate City Contract - Zaragoza
-#
 
 Among these policies, we can highlight the Zaragoza Climate Change, Air Quality and Health Strategy (ECAZ 3.0), the Aragonese Climate Change Strategy 2030 (EACC), the Action Plan for Climate and Sustainable Energy (SECAP) of the Municipality of Zaragoza 2030, the Zaragoza Sustainable Urban Mobility Plan (SUMP), the Zaragoza Green Infrastructure Master Plan, the Zaragoza Sustainable and Healthy Food Strategy, as well as the recent Zaragoza Urban Agenda, among others.
 
@@ -163,8 +146,6 @@ It is also important to highlight that Zaragoza is an active member of numerous 
 
 At a national level, Zaragoza is also present in the FEMP's Spanish Network of Cities for Climate, in the Mirror Group of the Mission of Cities in Spain, as well as in the recently created Collaborative Platform for the Climate Neutrality of Spanish Cities (citiES 2030). The city is also exploring synergies with regional initiatives such as the Aragon
 
-Climate City Contract - Zaragoza
-Climate City Contract - Zaragoza
 
 Circular Strategy, with the aim of creating a political, economic and social framework to enable the transition to an innovative circular economy, or the EU Mission on Adaptation to Climate Change where Aragon Region is taking place.
 
@@ -178,8 +159,6 @@ Likewise, thanks to the active connection between the main national platform (Co
 
 To this end, this Climate City Contract is a living and evolving document. Although it suffers from some uncertainty inherent to the very process and concept of this Mission, its intention is to establish the main objectives, priorities and key principles to achieve climate neutrality in Zaragoza by 2030. This is therefore the first iteration of a document that will be updated on a regular basis to reflect the city's cycle of actions, to flesh out aspects of both the Action and Investment Plans with new information, as well as to respond to possible changes in a constantly evolving socio-economic ecosystem.
 
-1
-#
 
 # Goal: Climate neutrality by 2030
 
@@ -196,8 +175,6 @@ For proper implementation and monitoring, the Climate Action Plan (CAP) of this 
 
 In this regard, a number of sectors, also shown in Figure 2, are identified as having the greatest decarbonisation potential:
 
-Climate City Contract - Zaragoza
-#
 
 + transport;
 + buildings and their heating;
@@ -213,12 +190,7 @@ Figure 3.  $\mathrm{CO}_{2}$  emission reductions (in ktons of  $\mathrm{CO}_{2}
 
 With an initial investment estimated at €3,925 million between 2020 and 2030 (corresponding to €6,887 per capita), benefits of €6,223 million are projected between 2020 and 2050. Specifically, the economic case analysed yields a return on investment (ROI) of  $59\%$ .
 
-The expected benefits up to 2050 are distributed as follows:  $82\%$  direct benefits (5,127 million euros) and  $18\%$  (1,097 million euros) co-benefits, including improvements in
-
-Climate City Contract - Zaragoza
-#
-
-employment, welfare, health and time savings, among others. Figure 4 shows the return on investment and its distribution.
+The expected benefits up to 2050 are distributed as follows:  $82\%$  direct benefits (5,127 million euros) and  $18\%$  (1,097 million euros) co-benefits, including improvements in employment, welfare, health and time savings, among others. Figure 4 shows the return on investment and its distribution.
 
 It is envisaged that the reduction in these sectors with the levers for action, which are described in more detail in the following section and throughout the Action Plan, will achieve the ambitious target within the set timeframe. At the same time, the city is committed to making this transition in a fair way and leaving no one behind.
 
@@ -231,8 +203,6 @@ Figure 4. Conclusions of the economic case for the city of Zaragoza.
 
 In short, the diversity and complementarity of Zaragoza's initiatives make the city an ideal centre of experimentation and innovation to develop solutions that can be easily replicated in other cities, contributing to make all cities in the European Union climate neutral by 2050.
 
-Climate City Contract - Zaragoza
-#
 
 # Key priorities and strategic interventions
 
@@ -240,9 +210,9 @@ Zaragoza has analysed the current state of play regarding the city's emissions a
 
 These three priority pillars are as follows:
 
-sustainable and intelligent mobility
-renaturalisation and circular economy
-energy and efficiency
+- sustainable and intelligent mobility
+- renaturalisation and circular economy
+- energy and efficiency
 
 With these overall sustainability priorities for the city, the CAP defines a series of actions towards climate neutrality that aim to tackle the city's main emitting sectors and thus achieve the city's objectives described in the previous section.
 
@@ -251,8 +221,6 @@ Specifically, in the model study prepared for Zaragoza, these priorities have be
 ![img-6.jpeg](img-6.jpeg)
 Figure 5. The Action Plan's action sub-sectors address  $99\%$  of the total Scope 1 and 2 emissions.
 
-Climate City Contract - Zaragoza
-Climate City Contract - Zaragoza
 
 For example, in the mobility and transport sectors, which represents one of the highest percentages of emissions, the city aims to reduce an average of 274,000 tonnes of $\mathrm{CO}_{2}$ annually, thanks to a set of interventions that include, among other measures from Zaragoza's Sustainable Urban Mobility Plan:
 
@@ -268,12 +236,7 @@ In terms of energy and energy efficiency in buildings, a significant annual aver
 + the design and promotion of renewable energy communities and solar parks such as the one already implemented in the Actur neighbourhood through the installation of roofs on social rental buildings, public and private housing;
 + creation of a business-oriented energy community in an industrial park with the same cadastral reference in the MercaEnergy project;
 + "Balsas Positivo", an urban regeneration project supported by two recently funded Horizon Europe initiatives (INCUBE and CHRONICLE) aims to accelerate the pace of social housing rehabilitation and promote a replicable strategy for other types of buildings;
-+ The development of "energy positive districts", such as the one that will be carried out thanks to the NEUTRALPATH project, financed through Horizon Europe, where Zaragoza is a lighthouse city that will develop a neighbourhood with positive energy generation on an annual basis thanks to the incorporation of low temperature district heating that covers the thermal demands with geothermal
-
-6
-#
-
-exploitation and photovoltaic solar contribution. In addition, the use of electric vehicles as energy consumers and storers is foreseen.
++ The development of "energy positive districts", such as the one that will be carried out thanks to the NEUTRALPATH project, financed through Horizon Europe, where Zaragoza is a lighthouse city that will develop a neighbourhood with positive energy generation on an annual basis thanks to the incorporation of low temperature district heating that covers the thermal demands with geothermal exploitation and photovoltaic solar contribution. In addition, the use of electric vehicles as energy consumers and storers is foreseen.
 
 Furthermore, the "El Bosque de los Zaragozanos" initiative focuses on nature-based solutions and is conceived as a space of opportunity to coexist in harmony with the territory, aligned with a global Green Infrastructure strategy in which urban areas merge with their territory, committed to a sustainable, healthy and resilient city.
 
@@ -285,12 +248,7 @@ By its nature and taking into account a wide range of factors, this Contract see
 
 In the previous section Figure 4, reference was made to the  $59\%$  return on the initial investment (estimated at 3,925 million euros), which will generate benefits of approximately 6,223 million euros by 2050. Specifically,  $18\%$  of this total (1,097 million euros) will revert as co-benefits, including improvements in employment, welfare, health and time savings, among others.
 
-For example, energy efficiency actions on the building stock will have the associated effect of improving the quality of housing, especially in the most vulnerable buildings
-
-Climate City Contract - Zaragoza
-Climate City Contract - Zaragoza
-
-and areas of the city, and will also improve the conditions of access to energy, reducing situations of energy poverty.
+For example, energy efficiency actions on the building stock will have the associated effect of improving the quality of housing, especially in the most vulnerable buildings and areas of the city, and will also improve the conditions of access to energy, reducing situations of energy poverty.
 
 On the other hand, the evolution in mobility will have a direct effect on the city's air quality and acoustic impact, due to the reduction in demand and the penetration of new technologies. The incorporation of new behaviours such as teleworking or the development of proximity urbanism will lead to a reduction in travel demand and will increase the presence of non-motorised modes such as pedestrians and cyclists.
 
@@ -302,8 +260,7 @@ Finally, in addition to the mitigation actions outlined above, which focus on re
 
 The Climate Neutrality Action Plan 2030 then describes these interventions along with all those that are foreseen to be necessary to reach the goal of neutrality by 2030. Finally, the Contract also includes a corresponding Investment Plan which sets out the broad outlines of how the necessary funding will be secured to achieve the ambitious targets set for the city.
 
-8
-Principle and process
+# Principle and process
 
 The Climate Action Plan and its subsequent Climate Investment Plan have been carried out following the preparation of a diagnosis of the city's emissions situation, in which the main challenges posed by the different policies, plans, programmes and actions with an impact on Zaragoza's urban model, presented throughout the different sections of this Contract, were identified and analysed.
 
@@ -313,12 +270,7 @@ As a consequence, the Climate City Contract is based on the reality of the city 
 
 In this sense, Zaragoza has developed structural processes that aim to involve citizens in decision-making and in the implementation of public policies in order to achieve a fairer and more sustainable city. In the area of citizen participation, Zaragoza has promoted the creation of various mechanisms for consultation and dialogue with citizens, through the creation of sectoral councils and the holding of popular consultations. For example, the city will support the Mission process in other advances already achieved, such as those of the Data Government, having as a direct consequence the promotion of a common space for the exchange of data between public and private administrations and social agents. In this way, it seeks to foster citizen co-responsibility in the management of the city, and to promote transparency and accountability.
 
-The search for cooperation at regional, national and international levels also remains a key element in Zaragoza's principles within the scope of this Contract. In this sense, the city has worked on the implementation of a multi-level governance that allows for a
-
-Climate City Contract - Zaragoza
-Climate City Contract - Zaragoza
-
-more effective and coordinated management of resources and public policies. In addition, shared learning and co-creation has been promoted, with special emphasis on active participation in working platforms directly related to the implementation of the European Mission for Smart and Climate Neutral Cities such as NetZeroCities and citiES 2030.
+The search for cooperation at regional, national and international levels also remains a key element in Zaragoza's principles within the scope of this Contract. In this sense, the city has worked on the implementation of a multi-level governance that allows for a more effective and coordinated management of resources and public policies. In addition, shared learning and co-creation has been promoted, with special emphasis on active participation in working platforms directly related to the implementation of the European Mission for Smart and Climate Neutral Cities such as NetZeroCities and citiES 2030.
 
 Internal capacity building has also been a priority for the city of Zaragoza. To this end, training and capacity building spaces have been created for public employees to improve their skills and knowledge in environmental management and citizen participation.
 
@@ -326,12 +278,7 @@ Also within the framework of this Contract, Zaragoza considers climate justice a
 
 The measures proposed in the CAP have the consensus of different public and private actors and are endorsed by the whole of Zaragozan society through a broad participatory process and with an exercise of transversal and multilevel governance. The processes and public policies for adaptation and mitigation to climate change set out in this Contract are constructed in such a way as to enable the effective participation of all public and private actors. This not only affects decision-making, which pursues a participatory model for citizens and civil society, but also the management of potential conflicts and the reaching of consensus on the basis of clearly defined responsibilities, goals and objectives at the different levels of government involved in the Action Plan.
 
-This process represents an important improvement in governance as it involves the work of all areas of the City Council with a holistic and transversal approach. With this objective in mind, the City Council has established an interdepartmental working group for the preparation of this Contract, under the leadership of the Directorate General for European Funds, as a key integrating and energising element of the Mission. Its functions also include the identification of opportunities and strategic advice on fundraising, the leadership and coordination of cross-cutting initiatives related to the
-
-0
-Climate City Contract - Zaragoza
-
-Mission, as well as the coordination of knowledge and dissemination of city projects. It is flexible and open, so it can be modified, renewed and completed whenever it is considered necessary, always from a strategic and comprehensive vision.
+This process represents an important improvement in governance as it involves the work of all areas of the City Council with a holistic and transversal approach. With this objective in mind, the City Council has established an interdepartmental working group for the preparation of this Contract, under the leadership of the Directorate General for European Funds, as a key integrating and energising element of the Mission. Its functions also include the identification of opportunities and strategic advice on fundraising, the leadership and coordination of cross-cutting initiatives related to the Mission, as well as the coordination of knowledge and dissemination of city projects. It is flexible and open, so it can be modified, renewed and completed whenever it is considered necessary, always from a strategic and comprehensive vision.
 
 The process for the implementation of the Action Plan of this Contract will be developed in several work blocks that basically comprise the following elements: an initial diagnosis, the design of strategic actions, their implementation, as well as their monitoring and possible correction, all of them accompanied by a communication and awareness-raising and training plan for citizens and the agents involved.
 
@@ -341,21 +288,15 @@ In addition, in order to strengthen communication and citizen participation in d
 
 Likewise, the implementation of this Contract seeks to be based on a principle of transparency, whereby the plans, programmes, strategies, initiatives and instruments adopted to achieve climate neutrality and the energy transition towards a low-carbon economy are carried out through open formulas and accessible channels that guarantee the participation of the social and economic agents concerned as well as the general public, through the relevant channels of communication, information and dissemination of the city of Zaragoza.
 
-On the other hand, the process will also follow a series of measures related to monitoring and tracking progress, which will be mainly based on measurable and verifiable climate action planning based on Zaragoza's baseline inventory of greenhouse gas emissions. A clear identification of the main actions and their descriptions within each action sector will be set and carried out, including interim indicators in line with their investment and capital needs, which will serve as a preliminary step to the creation and implementation of additional fundraising and financing measures in addition to the Investment Plan. In other words, all climate neutral action planning in Zaragoza will be based on co-creation processes: mobilising key
-
-1
-Climate City Contract - Zaragoza
-
-stakeholders, involving citizens in decisions that affect them and aligning actions to bring about a systemic change that leads to the rapid decarbonisation of the city. To this end, the Environment Sector Council will also be involved as it is a participatory, consultative, informative and advisory body. Its purpose and objectives are to facilitate the participation of citizens and to channel the information of associative entities in municipal matters relating to the environment.
+On the other hand, the process will also follow a series of measures related to monitoring and tracking progress, which will be mainly based on measurable and verifiable climate action planning based on Zaragoza's baseline inventory of greenhouse gas emissions. A clear identification of the main actions and their descriptions within each action sector will be set and carried out, including interim indicators in line with their investment and capital needs, which will serve as a preliminary step to the creation and implementation of additional fundraising and financing measures in addition to the Investment Plan. In other words, all climate neutral action planning in Zaragoza will be based on co-creation processes: mobilising key stakeholders, involving citizens in decisions that affect them and aligning actions to bring about a systemic change that leads to the rapid decarbonisation of the city. To this end, the Environment Sector Council will also be involved as it is a participatory, consultative, informative and advisory body. Its purpose and objectives are to facilitate the participation of citizens and to channel the information of associative entities in municipal matters relating to the environment.
 
 The degree of implementation of the challenges set out in this Climate City Contract will necessarily be associated with possible variations in the social and economic context accompanying the process. The full implementation and fulfilment of most of the proposed actions will require a high investment of economic and financial resources, both in the public and private spheres, as well as an explicit objective of social cohesion and inclusive development.
 
 Finally, it is worth noting that this is a completely open process, in which regular revisions will have to be made according to the reality and conditions of the continuously evolving city. To this end, Zaragoza will articulate its strategic approach based on the integral theory of change, following the general guidelines of the Mission Platform, NetZeroCities, to take advantage of social innovation and governance as horizontal factors to achieve success in all the city's climate neutral transformations.
 
-2
 ![img-7.jpeg](img-7.jpeg)
 
-# Zaragoza
+Zaragoza
 citiES 2030
 
 ![img-8.jpeg](img-8.jpeg)
@@ -377,35 +318,26 @@ In addition, Zaragoza will rely on the Collaborative Platform for the Climate Ne
 
 With the support of this Collaboration Platform, Zaragoza will develop training, learning and capacity building initiatives and facilitate citizen participation and activation processes. The city will receive support and accompaniment in the search for financing formulas and attraction of financial resources in their territories, also receiving support in the design of portfolios of transformative projects for mitigation and adaptation to climate change.
 
-Climate City Contract - Zaragoza
-Work process
+# Work process
 
 Overall, the Action Plan will build on and build upon the city's existing key climate action plans, seeking to expand and complement them with the goal of achieving climate neutrality by 2030.
 
 To ensure the participation of all the city's key stakeholders, the Action Plan will seek to be updated and adapted to the contributions received. To this end, Zaragoza will focus on the following objectives:
 
-Improve and develop functionalities in the Open Government Platform that adapt to new needs.
-Inform to all participating entities on the evolution of the Action Plan, its objectives and indicative development deadlines.
-Work by and for the network of actors involved in the Mission, encouraging the adhesion of new organisations to the city's ecosystem and gathering their real and concrete commitments for their active involvement.
-Participatory review, correct and validate relevant documents, and in particular those that require the mobilisation of local entities, ensuring that the opinion of the actors in the process is taken into account and that adequate feedback is obtained.
-Identificate relevant resources and projects to position them as strategic vectors of progress that can be leveraged and complemented alongside the CAP.
+- Improve and develop functionalities in the Open Government Platform that adapt to new needs.
+- Inform to all participating entities on the evolution of the Action Plan, its objectives and indicative development deadlines.
+- Work by and for the network of actors involved in the Mission, encouraging the adhesion of new organisations to the city's ecosystem and gathering their real and concrete commitments for their active involvement.
+- Participatory review, correct and validate relevant documents, and in particular those that require the mobilisation of local entities, ensuring that the opinion of the actors in the process is taken into account and that adequate feedback is obtained.
+- Identificate relevant resources and projects to position them as strategic vectors of progress that can be leveraged and complemented alongside the CAP.
 
 On the other hand, thanks to the connection of the Collaboration Platform for the Climate Neutrality of Spanish Cities (citiES 2030) with the European platform of the Mission for Climate Neutral and Smart Cities (NetZeroCities), which is one of the main instruments to put innovation at the service of the ecological and digital transition of cities, synergies and exchange with other pioneering European cities in the field will be facilitated.
 
 Likewise, Zaragoza will support the process of this Action Plan in its advances already achieved in the Data Government, conceiving data as a public good and strengthening an ecosystem of quality, georeferenced, interoperable and reusable data in the city. The direct consequence is the promotion of a common space for data exchange between public and private administrations and social agents.
 
-In this context, the work process sets the objective that results can be presented and collected following the principles of single data, structured, shared, accessible, geo-
-
-Climate City Contract - Zaragoza
-↑
-
-referenced, open, semantically described and with information on limitations for its use and always in full respect of privacy rules and anonymisation processes.
+In this context, the work process sets the objective that results can be presented and collected following the principles of single data, structured, shared, accessible, geo- referenced, open, semantically described and with information on limitations for its use and always in full respect of privacy rules and anonymisation processes.
 
 This is an Climate Action Plan that will focus on continuous development, with a strong adaptation to a constantly changing socio-economic environment. Further details of the process of the work (including timing and milestones) will therefore be included in subsequent iterations of this Climate City Contract.
 
-Climate City Contract - Zaragoza
-4
-#
 
 # PART A - Current State of Climate Action
 
@@ -420,8 +352,6 @@ The city has six emission inventories for the years 1991, 1996, 2005, 2015, 2018
 
 In terms of climate planning, Zaragoza has, on the one hand, the Zaragoza Climate Change, Air Quality and Health Strategy (ECAZ 3.0) of 2019, which establishes a mitigation target of  $40\%$  for all sectors by 2030 and, on the other hand, the SECAP 2030, which increases this target to  $55\%$  for the key sectors of the Covenant of Mayors. Zaragoza is currently progressing with the updating of the 2021 emissions inventory and the Climate Change Adaptation Plan (PACCZ).
 
-Climate City Contract - Zaragoza
-T
 
 In January 2022, the 2019 IES values and mitigation measures of the ECAZ 3.0 and SECAP 2030 served as the basis for Zaragoza's application to the EU Mission: Climate-Neutral and Smart Cities. The information presented below comes from two complementary sources. On the one hand, the ZEI 2019 as presented to the mission and, on the other hand, the results of the Economic Model for Cities' Decarbonisation built within the citiES2030 Platform.
 
@@ -434,26 +364,16 @@ Although the Climate City Contract is based on the results of the Economic Model
 |  SECAP | The SECAP is a key element of the Covenant of Mayors' commitment, as it describes a city's strategies and actions to reduce its greenhouse gas (GHG) emissions and improve its energy efficiency. In Zaragoza's SECAP 2030, the 2005 inventory is adopted as the Baseline Emission Inventory (BEI). However, the most recent inventory corresponds to the Zaragoza's Emission Inventory (ZEI) of 2019. Both the 2005 BEI and the 2019 BEI include emissions data from key sectors such as (specific sectors included in the SECAP per city, i.e. buildings, transport, industry, waste emissions and other sources). The SECAP relies on the emission inventory to set targets and develop emission reduction strategies in these key sectors over time.  |
 |  Economic Model for Cities' Decarbonisation (EMCD) | In addition, as part of the EIT Climate-KIC Deep Demonstration programme carried out in Madrid in 2020, an economic model was developed to identify the most cost-effective decarbonisation strategies for the city. This model developed by Material Economics has served as the basis for the development of a common tool for the 7 cities of the Spanish Platform for Climate Neutrality, citiES2030. Adapted in order to be used to complete different tables of the Climate City Contract, this model uses a life-cycle approach to assess the economic viability of different decarbonisation strategies. This means that not only upfront costs are taken into account, but also the recurring costs and benefits of each option over its entire lifetime. In addition, the model takes into account the various costs associated with decarbonisation, such as the cost of renewable energy deployment, the cost of energy efficiency measures and the cost of changes in transport systems, among others.  |
 
-Climate City Contract - Zaragoza
-Climate City Contract - Zaragoza
 |  Relationship between SECAP and the Economic Model | The Economic Model for Cities’ Decarbonisation (EMCD) is a useful tool for cities to develop strategies to reduce their emissions. By combining the SECAP emissions inventory with the costs and benefits provided by the Economic Model associated with different decarbonisation actions and strategies, cities can develop a comprehensive understanding of their emissions profile and identify the most cost-effective and efficient ways to reduce their carbon footprint. Both the economic model and the SECAP emissions inventory aim to provide cities with the information they need to develop effective strategies and actions to reduce GHG emissions and improve energy efficiency. While they use different approaches to calculating emissions, both tools are useful for cities to make the transition to a sustainable, low-carbon future.  |
 | --- | --- |
-|  Different approaches to emissions calculation between the SECAP and the EMCD | Thus, although both instruments share certain similarities, the EMCD and the SECAP inventory estimate GHG emissions differently. These different approaches in calculating emissions result in a different quantification of the city’s emissions between the two calculation methodologies. Although the final results are similar, the different approaches of the 2 methodologies result in two different emission inventories.
-In the case of Zaragoza, both the EMCD and the ZEI 2019 account for Scope 1 emissions (such as emissions from combustion in boilers, furnaces, vehicles, etc.) and Scope 2 emissions (i.e. electricity purchased and consumed).
-Scope 3 emissions from waste management are not considered when waste management takes place outside the boundaries of the municipality, as this is not the case for Zaragoza. But in the waste sector there is a big difference between the activity factors selected by the EMCD and those considered in the ZEI 2019 of the SECAP 2030.
-Other notable discrepancies are, on the one hand, the selection of a different Emission Factor for electricity, despite using values reported by Red Eléctrica España. On the other hand, the ZEI 2019 differs from the ME when considering the GHG absorption of urban trees.
-Another difference between the two approaches is the level of detail. The Economic Model for Cities’ Decarbonisation is more detailed and granular, providing a complete picture of the urban system and how emissions are generated and flow through it. The ZEI 2019 focuses more on specific sectors and follows a standardised format, making it easier to compare emissions between cities.  |
-|  BAU 2030 | The Economic Model uses a Business as Usual 2030 (BAU 2030) scenario as a reference to estimate the potential emission reductions that can be achieved through different decarbonisation strategies and actions. This scenario represents a projection of what the city’s emissions trajectory would look like if no additional decarbonisation measures beyond those already planned or underway were implemented. The BAU 2030 scenario provides a baseline against which to compare the cost-effectiveness of different decarbonisation strategies and actions. By comparing the costs and benefits of different decarbonisation pathways with the BAU 2030 scenario, the model can estimate the potential ROI (Return on Investment) of each strategy and action.
-By considering the potential return of investment of different decarbonisation strategies and actions, the Economic Model for Cities’ Decarbonisation can help cities identify the most cost-effective ways to achieve their emission reduction targets by ensuring that limited resources  |
-Climate City Contract - Zaragoza
-8
+|  Different approaches to emissions calculation between the SECAP and the EMCD | Thus, although both instruments share certain similarities, the EMCD and the SECAP inventory estimate GHG emissions differently. These different approaches in calculating emissions result in a different quantification of the city’s emissions between the two calculation methodologies. Although the final results are similar, the different approaches of the 2 methodologies result in two different emission inventories.<br>In the case of Zaragoza, both the EMCD and the ZEI 2019 account for Scope 1 emissions (such as emissions from combustion in boilers, furnaces, vehicles, etc.) and Scope 2 emissions (i.e. electricity purchased and consumed).<br>Scope 3 emissions from waste management are not considered when waste management takes place outside the boundaries of the municipality, as this is not the case for Zaragoza. But in the waste sector there is a big difference between the activity factors selected by the EMCD and those considered in the ZEI 2019 of the SECAP 2030.<br>Other notable discrepancies are, on the one hand, the selection of a different Emission Factor for electricity, despite using values reported by Red Eléctrica España. On the other hand, the ZEI 2019 differs from the ME when considering the GHG absorption of urban trees.<br>Another difference between the two approaches is the level of detail. The Economic Model for Cities’ Decarbonisation is more detailed and granular, providing a complete picture of the urban system and how emissions are generated and flow through it. The ZEI 2019 focuses more on specific sectors and follows a standardised format, making it easier to compare emissions between cities.  |
+|  BAU 2030 | The Economic Model uses a Business as Usual 2030 (BAU 2030) scenario as a reference to estimate the potential emission reductions that can be achieved through different decarbonisation strategies and actions. This scenario represents a projection of what the city’s emissions trajectory would look like if no additional decarbonisation measures beyond those already planned or underway were implemented. The BAU 2030 scenario provides a baseline against which to compare the cost-effectiveness of different decarbonisation strategies and actions. By comparing the costs and benefits of different decarbonisation pathways with the BAU 2030 scenario, the model can estimate the potential ROI (Return on Investment) of each strategy and action.<br>By considering the potential return of investment of different decarbonisation strategies and actions, the Economic Model for Cities’ Decarbonisation can help cities identify the most cost-effective ways to achieve their emission reduction targets by ensuring that limited resources  |
 
 |   | are allocated to strategies and actions that provide maximum value for the city and its residents.  |
 | --- | --- |
 |  How we fill in the Climate City Contract | In order to develop a comprehensive understanding of the city's emissions profile and identify the most cost-effective and efficient ways to reduce GHG emissions, Zaragoza's Climate City Contract makes extensive use of the emissions data provided by the Economic Model, so that the investments, costs and benefits presented in the model are consistent with the emissions resulting from the model. It has been considered appropriate to comment on the differences between the EMCD and the ZEI 2019 in the first 3 tables of Annex I (Climate Action Plan) in order to present the emissions inventory data of the SECAP. These are: A-1.1, A-1.2 and A-1.3. In addition, table A-1.4 is used to present the emissions resulting from the two calculation methodologies used. The ZEI 2019 results are also presented in the same format as requested for Zaragoza's application to the EU Mission: Climate-Neutral and Smart Cities. The rest of the quantitative tables of the model from table A-2.3 onwards present the data provided by the Economic Model for Cities' Decarbonisation.  |
-+
 
-Module A-1: Greenhouse Gas Emissions Baseline Inventory
+# Module A-1: Greenhouse Gas Emissions Baseline Inventory
 
 |  A-1.1: Final energy use by source sectors  |   |   |   |   |
 | --- | --- | --- | --- | --- |
@@ -473,23 +393,22 @@ Module A-1: Greenhouse Gas Emissions Baseline Inventory
 |  (Fuel type/energy used) | - | - | - | -  |
 |  Note: NE = Not Estimated; NO = Not Occurring, IE = Included elsewhere.  |   |   |   |   |
 
-Climate City Contract - Zaragoza
 F
 
 # A-1.2: Emission factors applied
 
 For the ZEI 2019 of the Zaragoza SECAP 2030, emissions of Carbon Dioxide (CO₂), Methane (CH4) and Nitrous Oxide (N2O) were calculated according to the following sources:
 
-IPCC Fifth Assessment Report (2013)
-EMEP/EEA air pollutant emission inventory guidebook 2019. Technical guidance to prepare national emission inventories. EEA Report No 13/2019
-JCR/CoM. Guidebook How to develop a Sustainable Energy and Climate Action Plan (SECAP). 2018.
-Red Eléctrica de España reports the emission factor directly in CO₂-eq.
-In 2019, public sector electricity purchases had a Renewable Guarantee of Origin.
+- IPCC Fifth Assessment Report (2013)
+- EMEP/EEA air pollutant emission inventory guidebook 2019. Technical guidance to prepare national emission inventories. EEA Report No 13/2019
+- JCR/CoM. Guidebook How to develop a Sustainable Energy and Climate Action Plan (SECAP). 2018.
+- Red Eléctrica de España reports the emission factor directly in CO₂-eq.
+- In 2019, public sector electricity purchases had a Renewable Guarantee of Origin.
 
 Some differences to highlight from the EMCD with respect to ZEI 2019:
 
-For the transport sector, emission factors for heavy duty vehicles will be equal to those reported by Madrid.
-In the ZEI 2019, the emission factor reported by Red Electrica España for the 2019 national electricity mix (0.19 T/MWh) was used. However, the Economic Model adopts the value reported for the 2018 mainland electricity mix as the same value (0.22 T/MWh) for all Spanish NZC cities.
+- For the transport sector, emission factors for heavy duty vehicles will be equal to those reported by Madrid.
+- In the ZEI 2019, the emission factor reported by Red Electrica España for the 2019 national electricity mix (0.19 T/MWh) was used. However, the Economic Model adopts the value reported for the 2018 mainland electricity mix as the same value (0.22 T/MWh) for all Spanish NZC cities.
 
 | EMISIONES Y FACTOR DE EMISION DE CO2 EQ. DE LA GENERACION (tCO2 eq. | tCO2 eq./MWh) | SISTEMA ELECTRICO: Peninsular |
 | --- | --- | --- |
@@ -530,8 +449,6 @@ Datos definitivos*: hasta el 31/12/20
 
 The Emission Factors (EF) used by the Economic Model are reported below. Although the EF of CO₂ is required by the EM, the results are reported in CO₂-eq. The EM does this conversion internally.
 
-Climate City Contract - Zaragoza
-+
 
 |  Issuing sector | Primary energy/ source of energy | Carbon dioxide (CO)2 | Methane (CH)4 | Nitrous oxide (N2O) | Hydrofluorocarbons and Perfluorocarbons | Sulphur hexafluoride (SF)6 | Nitrogen trifluoride (NF)3  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -543,8 +460,6 @@ Climate City Contract - Zaragoza
 |   |  Heating Production (Local Heating)(g/kWh) | 212 | - | - | - | - | -  |
 |  Electricity | (Emission factor of the national mix 2019)(g/kWh) | 222 | - | - | - | - | -  |
 
-Climate City Contract - Zaragoza
-+
 
 # A-1.3: Activity by source sectors (source: input data from the Economic Model for Cities' Decarbonisation)
 
@@ -569,8 +484,6 @@ Total waste collected is reported according to the document "Zaragoza 2020 Susta
 |  Electricity demand (GWh/year) | - | 1528 | -  |
 |  Waste |  |  |   |
 
-Climate City Contract - Zaragoza
-+
 
 |  Total, collected within the city (tonnes) | 231022 | - | -  |
 | --- | --- | --- | --- |
@@ -611,8 +524,6 @@ Waste: 25,416 ton  $\mathrm{CO}_{2}$ -eq additional to the ZEI 2019 attributed t
 |  Electricity |  | 354160 |  | 354160 | 20%  |
 |  Waste* | 45736 |  |  | 45736 | 3%  |
 
-Climate City Contract - Zaragoza
-+
 
 |  Other | 10000 |  |  | 10000 | 1%  |
 | --- | --- | --- | --- | --- | --- |
@@ -631,8 +542,6 @@ Climate City Contract - Zaragoza
 |  Total | 1351901 | 484061 | 16201 | 1852164 | 100%  |
 |  * Includes Scope 1 Waste (produced and processed in the city) and Scope 3 Waste (produced by the city, but processed outside) emissions.  |   |   |   |   |   |
 
-Climate City Contract - Zaragoza
-#
 
 # A-1.5: Graphics and charts
 
@@ -646,8 +555,6 @@ Economic Model for Cities' Decarbonisation.
 ![img-11.jpeg](img-11.jpeg)
 GHG EMISSIONS (KTON) BY SECTORS OF ORIGIN OF THE MOE
 
-Climate City Contract - Zaragoza
-Climate City Contract - Zaragoza
 
 # A-1.6: Description and assessment of the GHG baseline inventory
 
@@ -657,8 +564,6 @@ It has been considered appropriate to comment on the differences between the EM 
 
 In addition, table A-1.4 is used to present the emissions resulting from the two calculation methodologies used. The ZEI 2019 results are also presented in the same format as requested for Zaragoza's application to the EU Mission: Climate-Neutral and Smart Cities. The rest of the quantitative tables of the model from table A-2.3 present the data provided by the Economic Model.
 
-6
-#
 
 # Module A-2: Current Policies and Strategies Assessment
 
@@ -675,9 +580,6 @@ Relevant policies, strategies or initiatives or regulations at local, regional a
 |  Action plan | National | PNACC 2021-2030 | National planning tool for coordinated action on climate change | 81 lines of action across 18 areas of work  |
 |  Action plan | Local | Zaragoza SUMP | Improving the transport system and increasing the quality of the transport system | 14 strategies covering all aspects of urban mobility  |
 
-Climate City Contract - Zaragoza
-Climate City Contract - Zaragoza
-8
 
 |  Strategy | Local | Zaragoza Green Infrastructure Master Plan | Integration of natural processes into the urban environment | Vocation to become a municipal management tool for the next 20 years  |
 | --- | --- | --- | --- | --- |
@@ -688,7 +590,6 @@ Climate City Contract - Zaragoza
 |  Mission | EU | 100 Cities Mission | Commitment to solving important societal problems. | Transforming cities towards climate neutrality  |
 |  Policy | EU / World | Paris Agreement | Agreement to combat climate change and achieve a sustainable low-emission future | Limiting global temperature rise to below 2°C  |
 |  Action Plan | National | PNIEC – Spanish Integrated Energy and Climate Plan 2021-2030 | Nationa strategy coherent with the Paris Agreement and the EU Green Deal | Reduction of Spanish's net GHG emissions by 23% by 2030 in reference to 1990  |
-#
 
 # A-2.2: Description &amp; assessment of policies
 
@@ -704,12 +605,7 @@ Zaragoza Climate Change Adaptation Plan 2030 (PACCZ): This is drawn up as part o
 
 National Plan for Adaptation to Climate Change (PNACC) 2021-2030: Basic planning instrument to promote coordinated and coherent action against the effects of climate change in Spain. It sets out a series of guiding principles that should guide adaptation policies and measures. It also describes 81 lines of action to be developed in the different sectors through 18 areas of work.
 
-Sustainable Urban Mobility Plan (SUMP) of Zaragoza: Improvement of the transport system and the increase of its quality, updating the role of public and private, collective and individual modes of transport, taking into consideration the singularities of the city itself and its surroundings. In order to achieve safe, healthy, accessible, intermodal,
-
-Climate City Contract - Zaragoza
-+
-
-efficient and more environmentally friendly mobility in Zaragoza, 14 strategies have been defined to cover all aspects of urban mobility.
+Sustainable Urban Mobility Plan (SUMP) of Zaragoza: Improvement of the transport system and the increase of its quality, updating the role of public and private, collective and individual modes of transport, taking into consideration the singularities of the city itself and its surroundings. In order to achieve safe, healthy, accessible, intermodal, efficient and more environmentally friendly mobility in Zaragoza, 14 strategies have been defined to cover all aspects of urban mobility.
 
 **Green Infrastructure Master Plan for Zaragoza:** A strategy that aims to strengthen the existing lines of work for the conservation and recovery of sensitive environments (river territories, island forests, ravines in the steppe, etc.), and on the other hand to take a step forward in terms of the integration of natural processes within the urban environment, with the ambition of improving the quality of life of citizens and minimising the impacts that the city has on the territory of Zaragoza. Its vocation is to become a municipal management tool for the next 20 years.
 
@@ -727,8 +623,6 @@ efficient and more environmentally friendly mobility in Zaragoza, 14 strategies 
 
 **PNIEC 2021-20230:** Spain's National Integrated Energy and Climate Plan (PNIEC) aims for a 23% reduction in greenhouse gas (GHG) emissions compared to 1990 levels. This reduction target implies eliminating one out of every three tons of greenhouse gases currently emitted. This effort is consistent with an increase in ambition at the European level for 2030, as well as with the Paris Agreement.
 
-Climate City Contract - Zaragoza
-1
 
 |  A-2.3: Emissions Gap  |   |   |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -742,25 +636,19 @@ Climate City Contract - Zaragoza
 |  Total | 1852 | 100% | 370 | 20% | 1483 | 80% | 0 | 0%  |
 |  1 Residual emissions are those that cannot be reduced through climate action and are offset. Residual emissions can amount to a maximum of 20%, as indicated in the Mission Info Kit.2 the target for emission reductions in the "Others" sector is assumed to be the same as for the other 4 sectors  |   |   |   |   |   |   |   |   |
 
-Climate City Contract - Zaragoza
-#
 
-Module A-3: Systemic Barriers and Opportunities to 2030 Climate Neutrality
+# Module A-3: Systemic Barriers and Opportunities to 2030 Climate Neutrality
 
 |  A-3.1: Systems & stakeholder mapping  |   |   |   |   |
 | --- | --- | --- | --- | --- |
 |  Description of the system | Main actors involved | Web | Influence | Interests  |
-|  Social | Citizens, City Council, large resource-consuming companies, electricity companies. | - Mission Working Group
-Multi-actor platform
-Business networks (CEPYME, CEOE) | Public awareness and information | Improving communication and early warning systems  |
+|  Social | Citizens, City Council, large resource-consuming companies, electricity companies. | - Mission Working Group<br>Multi-actor platform<br>Business networks (CEPYME, CEOE) | Public awareness and information | Improving communication and early warning systems  |
 |  Behavioural |   |   | Raising awareness among the public and large consumers | Reduction of consumption  |
 |  Economic | City Council and private entities |   | Efficient resource management and investment attraction | Economic assessment of the impacts to be achieved  |
 |  Organisation | City Council |   | Creating spaces and instruments for inter-sectoral coordination | Improvements in coordination systems  |
 |  Green infrastructure | City Council and citizenship |   | Advances in planting and renaturation techniques | Establishment, progress and maintenance of green infrastructure  |
 |  Nature | All |   | Creation of biodiversity nodes and connectors. | Promoting and enhancing the value of the city's natural capital  |
 
-Climate City Contract - Zaragoza
-#
 
 # A-3.2: Description of systemic barriers
 
@@ -780,19 +668,11 @@ Behavioural: Mainly in terms of high resource demand habits (e.g. energy, water,
 
 Economic: Due to Zaragoza's ambitious climate target, very high investment needs are foreseen, especially in some sectors (e.g. urban planning, where comprehensive housing refurbishments require a high initial cost with a slow return on investment). Therefore, all organisations involved in the city will seek to mobilise resources in a way that promotes efficient management of infrastructure and human capital. Each action will seek to carry out an economic evaluation of the impacts achieved in order to attract and justify the economic investments made.
 
-Organisation: Due to the necessary multi-stakeholder participation and coordination between different areas, barriers can arise regarding the existing coordination mechanisms between different services in the city. In order to tackle this situation, the creation of spaces and instruments for intersectoral coordination is proposed. In this
-
-Climate City Contract - Zaragoza
-Climate City Contract - Zaragoza
-4
-
-sense, it is also relevant to develop contingency plans that integrate possible climate risks, as well as early detection mechanisms.
+Organisation: Due to the necessary multi-stakeholder participation and coordination between different areas, barriers can arise regarding the existing coordination mechanisms between different services in the city. In order to tackle this situation, the creation of spaces and instruments for intersectoral coordination is proposed. In this sense, it is also relevant to develop contingency plans that integrate possible climate risks, as well as early detection mechanisms.
 
 **Green infrastructure:** Due to its extreme climatic conditions in winter and summer, Zaragoza faces a demanding barrier in the establishment, progress and maintenance of its green infrastructure. To overcome this barrier, the best adapted species options will be considered and those characteristics will be studied that will allow improvements in planting and revegetation techniques to be achieved in the city.
 
 **Nature:** Without a proper environmental assessment, certain actions could produce changes in the city's ecosystem, leading to a simplification and destruction of habitats. To this end, the city will seek to promote biodiversity nodes and connectors between green areas and the different natural spaces in the city, favouring the conditions for the spontaneous appearance of fauna and flora. Likewise, the city will strengthen awareness programmes among citizens and, as far as possible, establish and/or strengthen alliances with entities that promote Zaragoza's natural capital.
-Climate City Contract - Zaragoza
-5
 
 # A-3.3: Description or visualisation of participatory model for the city climate neutrality
 
@@ -810,13 +690,12 @@ On the other hand, the complicity of the private sector, organised society and c
 
 In this context, the Action Plan sets as an objective the creation of collaborative platforms conceived as permanent participatory environments for the improvement of actions towards climate neutrality. In general, these collaborative platforms will have the following characteristics:
 
-Technical approach, focused on identifying weaknesses, threats, strengths and opportunities, and taking derived actions.
-Consultative approach, aimed at sharing information, opinions and approaches and obtaining feedback.
-Propositional Orientation, which includes the definition of concrete actions for the development of the city and allows the birth of concrete projects.
-Coordinated management of joint actions that can contribute to the success of the initiatives, allowing the synthesis of proposals.
-Practical model, based on simple and flexible tools and simple, predefined and clear consultation and participation cycles.
-Specialised organisation by subject area, thus allowing for greater efficiency and depth of discussion.
-+
+- Technical approach, focused on identifying weaknesses, threats, strengths and opportunities, and taking derived actions.
+- Consultative approach, aimed at sharing information, opinions and approaches and obtaining feedback.
+- Propositional Orientation, which includes the definition of concrete actions for the development of the city and allows the birth of concrete projects.
+- Coordinated management of joint actions that can contribute to the success of the initiatives, allowing the synthesis of proposals.
+- Practical model, based on simple and flexible tools and simple, predefined and clear consultation and participation cycles.
+- Specialised organisation by subject area, thus allowing for greater efficiency and depth of discussion.
 
 # PART B - Pathways towards Climate Neutrality by 2030
 
@@ -828,21 +707,13 @@ This module represents the core of the Climate Neutral Action Plan 2030, consist
 | --- | --- | --- |
 |  Sector | Portfolio description  |   |
 |   |  List of actions | Descriptions  |
-|  Transport | Reduction in the need for motorised transport | SECAP 2030 includes measure AM12 Curb urban sprawl, which involves a 10% reduction in transport demand. This would avoid emitting 43 kton CO2e and save 174 GWh per year.
-| Regarding BAU 2030, the reduction would need to be increased to 35%, to mitigate 94 kton CO2e per year.  |
+|  Transport | Reduction in the need for motorised transport | SECAP 2030 includes measure AM12 Curb urban sprawl, which involves a 10% reduction in transport demand. This would avoid emitting 43 kton CO2e and save 174 GWh per year.<br>Regarding BAU 2030, the reduction would need to be increased to 35%, to mitigate 94 kton CO2e per year.  |
 |   |  Bus electrification | The Zaragoza SUMP proposes measures that would reduce 186 kton CO2e and save 120 GWh annually.  |
-|   |  Car electrification | Based on the SUMP, the SECAP 2030 includes measure AM13 'Low Emission and Electric Mobility Plan'.
-In terms of the Economic Model, it is required:
-Electrify 32% of the passenger vehicle fleet by 2040 to mitigate 21 kton CO2e.
-Electrify 100% of the public transport vehicle fleet by 2030 to mitigate 21 kton CO2e.
-Electrify 15% of <3.5 ton trucks by 2040 to mitigate 21 kton CO2e and electrify 40% of >3.5 ton trucks by 2040 to mitigate 21 kton CO2e  |
+|   |  Car electrification | Based on the SUMP, the SECAP 2030 includes measure AM13 'Low Emission and Electric Mobility Plan'.<br>In terms of the Economic Model, it is required:<br>Electrify 32% of the passenger vehicle fleet by 2040 to mitigate 21 kton CO2e.<br>Electrify 100% of the public transport vehicle fleet by 2030 to mitigate 21 kton CO2e.<br>Electrify 15% of <3.5 ton trucks by 2040 to mitigate 21 kton CO2e and electrify 40% of >3.5 ton trucks by 2040 to mitigate 21 kton CO2e  |
 |   |  Electrification of trucks |   |
-|   |  Modal shift: shift to public and non-motorised transport | The Zaragoza SUMP proposes measures that would reduce 186 kton CO2e and save 120 GWh annually.
-| Based on the SUMP, the SECAP 2030 includes measures AM14 'Develop mobility actions aimed at improving citizens' health'; AM15 'Promote intermodality between modes of transport' and AM16 'Ensure accessibility to all mobility spaces and services'.  |
+|   |  Modal shift: shift to public and non-motorised transport | The Zaragoza SUMP proposes measures that would reduce 186 kton CO2e and save 120 GWh annually.<br>Based on the SUMP, the SECAP 2030 includes measures AM14 'Develop mobility actions aimed at improving citizens' health'; AM15 'Promote intermodality between modes of transport' and AM16 'Ensure accessibility to all mobility spaces and services'.  |
 |   |  Shared transport |   |
 
-Climate City Contract - Zaragoza
-+
 
 |   |  | In terms of the Economic Model, it is required: - achieve a modal shift to a 30% reduction in private vehicle passenger-km to mitigate 35 kton CO2e per year. - Increase transport efficiency by 15% with car sharing measures, this will mitigate 16 kton CO2e per year.  |
 | --- | --- | --- |
@@ -853,26 +724,16 @@ Climate City Contract - Zaragoza
 |   |  Low-emission heat generation (decarbonisation of heating) | The SECAP 2030 includes the measures AM5 (Promotion of thermal generation systems using renewable sources in housing), AM9 (Installation of thermal generation systems using renewable sources in municipal buildings) and AM11 (Promotion of thermal generation systems using renewable sources in the tertiary sector). Regarding BAU 2030, 67% of local heating is required to be produced with electricity.  |
 |  Electricity | Low-emission electricity generation | SECAP 2030 includes measures AM4 (Promotion of renewable electricity generation systems in housing), AM8 (Installation of renewable electricity generation systems in municipal buildings) and AM10 (Promotion of renewable electricity generation systems in the tertiary sector).  |
 
-Climate City Contract - Zaragoza
-+
 
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
-|  Action plan | Action name | PILLAR 1: SUSTAINABLE AND SMART MOBILITY
-| Reduction in the need for motorised transport  |
+|  Action plan | Action name | PILLAR 1: SUSTAINABLE AND SMART MOBILITY<br>Reduction in the need for motorised transport  |
 |   |  Action type | Technical interventions  |
-|   |  Action Description | SECAP 2030 includes measure AM12 Curb urban sprawl, which involves a 10% reduction in transport demand. This would avoid emitting 43 kton CO2e and save 174 GWh per year.
-
-Regarding BAU 2030, the reduction would need to be increased to 35%, to mitigate 94 kton CO2e per year.
-
-For the management and optimisation of urban transport, Zaragoza is working on:
-DiTRA (Digitalisation of urban traffic and reduction of its emissions) project based on a digital system for the control, management and reduction of real road traffic emissions.  |
+|   |  Action Description | SECAP 2030 includes measure AM12 Curb urban sprawl, which involves a 10% reduction in transport demand. This would avoid emitting 43 kton CO2e and save 174 GWh per year.<br>Regarding BAU 2030, the reduction would need to be increased to 35%, to mitigate 94 kton CO2e per year.<br>For the management and optimisation of urban transport, Zaragoza is working on:<br>DiTRA (Digitalisation of urban traffic and reduction of its emissions) project based on a digital system for the control, management and reduction of real road traffic emissions.  |
 |  Reference to impact pathway | Field of action | Reduction in the need for motorised transport  |
 |   |  Systemic lever | Technology / Infrastructure; Financing; Learning and Skills  |
 |   |  Short and medium-term changes | Articulate all the necessary infrastructure: green ring, cycle lanes, electric fleets, vehicle chargers, tram, etc., Generalise the availability of sustainable alternatives in a multimodal transport system, Adoption of new digital and mobility optimisation solutions.  |
 
-Climate City Contract - Zaragoza
-9
 
 |  Implementation | Responsible bodies/person for implementation | Urban Mobility Service.  |
 | --- | --- | --- |
@@ -881,124 +742,61 @@ Climate City Contract - Zaragoza
 |   |  Comments on implementation | -  |
 |  Impacts & costs | Generated renewable energy (if applicable) |   |
 |   |  Removed/substituted energy, volume or fuel type | Included in SECAP 2030: 174 GWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | Included in SECAP 2030: 43 tonnes GHG/year.
-| Result of the EMCD: 94 kton CO2e / year  |
+|   |  GHG emissions reduction estimate (total) per emission source sector | Included in SECAP 2030: 43 tonnes GHG/year.<br>Result of the EMCD: 94 kton CO2e / year  |
 |   |  Total costs and costs by CO2e unit |   |
 
-Climate City Contract - Zaragoza
-T
 
 # B-2.2: Individual Action Schemes
 
-|  Action plan | Action name | PILLAR 1: SUSTAINABLE AND SMART MOBILITY
-| Vehicle electrification  |
+|  Action plan | Action name | PILLAR 1: SUSTAINABLE AND SMART MOBILITY<br>Vehicle electrification  |
 | --- | --- | --- |
 |   |  Action type | Technical interventions  |
-|   |  Action Description | The Zaragoza SUMP proposes measures that would reduce 186 kton CO2e and save 120 GWh annually.
+|   |  Action Description | The Zaragoza SUMP proposes measures that would reduce 186 kton CO2e and save 120 GWh annually.<br>Based on the SUMP, the SECAP 2030 includes measure AM13 'Low Emission and Electric Mobility Plan'.<br>In terms of the Economic Model, it is required:<br>Electrify 32% of the passenger vehicle fleet by 2040 to mitigate 21 kton CO2e.<br>Electrify 100% of the public transport vehicle fleet by 2030 to mitigate 21 kton CO2e.<br>Electrify 15% of <3.5 ton trucks by 2040 to and electrify 40% of >3.5 ton trucks by 2040 to mitigate 21 kton CO2e.<br>Among the initiatives underway, the following stand out:<br>Electrification of the city bus fleet: The city is currently planning to acquire 202 electric buses by 2030. Installation of e-Bus charging infrastructure in Zaragoza's city bus depots: supply electricity to 260 100 kW chargers, one 300 kW emergency charger for electric buses in the depots, including SET and line. First phase: 75 100 kW chargers, one 300 kW emergency charger. Electrification of urban transport: 39,199,212 euros.<br>Adaptation of depots: 10,387,721.14. In a 2030 neutrality scenario, 100% of the fleet would need to be electrified.<br>In parallel, work is underway to promote the transformation of the taxi fleet to Electric Vehicles. The implementation of support for the electric and accessible transformation of taxi services (10% every two years until reaching 50% in 2030): The annual investment in this aspect is €200,000 for the renewal of the fleet to electric, with a contribution per vehicle of €10,000. With this budget availability, it will be possible to promote the changeover of 20 taxis per year. Taking into account that the taxi fleet exceeds 1,700 taxis, it is not possible that by 2030, with this investment, electric taxis will have been incorporated into the fleet. In the same way, €110,000 is invested every year for the incorporation of accessible and electric vehicles into the taxi fleet, which, in the case of acquiring a vehicle that fulfils both conditions, the aid amounts to €20,000 per vehicle.<br>In collaboration with CTAZ, the tender and subsequent management of the new transport service to Zaragoza airport is planned, consisting of an on-demand line, depending on the flights that are programmed and which will be provided with electric or fuel cell buses.  |
 
-Based on the SUMP, the SECAP 2030 includes measure AM13 'Low Emission and Electric Mobility Plan'.
 
-In terms of the Economic Model, it is required:
-Electrify 32% of the passenger vehicle fleet by 2040 to mitigate 21 kton CO2e.
-Electrify 100% of the public transport vehicle fleet by 2030 to mitigate 21 kton CO2e.
-Electrify 15% of <3.5 ton trucks by 2040 to and electrify 40% of >3.5 ton trucks by 2040 to mitigate 21 kton CO2e.
-
-Among the initiatives underway, the following stand out:
-Electrification of the city bus fleet: The city is currently planning to acquire 202 electric buses by 2030. Installation of e-Bus charging infrastructure in Zaragoza's city bus depots: supply electricity to 260 100 kW chargers, one 300 kW emergency charger for electric buses in the depots, including SET and line. First phase: 75 100 kW chargers, one 300 kW emergency charger. Electrification of urban transport: 39,199,212 euros.
-Adaptation of depots: 10,387,721.14. In a 2030 neutrality scenario, 100% of the fleet would need to be electrified.
-In parallel, work is underway to promote the transformation of the taxi fleet to Electric Vehicles. The implementation of support for the electric and accessible transformation of taxi services (10% every two years until reaching 50% in 2030): The annual investment in this aspect is €200,000 for the renewal of the fleet to electric, with a contribution per vehicle of €10,000. With this budget availability, it will be possible to promote the changeover of 20 taxis per year. Taking into account that the taxi fleet exceeds 1,700 taxis, it is not possible that by 2030, with this investment, electric taxis will have been incorporated into the fleet. In the same way, €110,000 is invested every year for the incorporation of accessible and electric vehicles into the taxi fleet, which, in the case of acquiring a vehicle that fulfils both conditions, the aid amounts to €20,000 per vehicle.
-In collaboration with CTAZ, the tender and subsequent management of the new transport service to Zaragoza airport is planned, consisting of an on-demand line, depending on the flights that are programmed and which will be provided with electric or fuel cell buses.  |
-
-Climate City Contract - Zaragoza
-+
-
-|   |  | - Finally, the capacity of tram L1 will be increased with the purchase of two new tram units, which will improve the frequency at peak times, reducing the current 5-minute frequency and increasing the line's transport capacity by up to 20%. Purchase price of the two tram units: €9,312,131 (excluding VAT).
-network of charging points to be put into operation consists of 37 locations spread across the city, including 89 semi-fast 22 kW chargers, 30 fast 50 kW chargers and 24 ultra-fast 150 kW chargers to be installed by 2023.
-concession of space in on-street car parks for the installation of photovoltaic generation plants. The proposal is to install 3.4 MW in total, with an approximate investment by the concessionaires of around 3.5 million euros. As this is a concession, the City Council has no expenditure, but it does have income.  |
+|   |  | - Finally, the capacity of tram L1 will be increased with the purchase of two new tram units, which will improve the frequency at peak times, reducing the current 5-minute frequency and increasing the line's transport capacity by up to 20%. Purchase price of the two tram units: €9,312,131 (excluding VAT).<br>network of charging points to be put into operation consists of 37 locations spread across the city, including 89 semi-fast 22 kW chargers, 30 fast 50 kW chargers and 24 ultra-fast 150 kW chargers to be installed by 2023.<br>concession of space in on-street car parks for the installation of photovoltaic generation plants. The proposal is to install 3.4 MW in total, with an approximate investment by the concessionaires of around 3.5 million euros. As this is a concession, the City Council has no expenditure, but it does have income.  |
 | --- | --- | --- |
-|  Reference to impact pathway | Field of action | Bus electrification
-Car electrification
-Electrification of trucks  |
+|  Reference to impact pathway | Field of action | Bus electrification<br>Car electrification<br>Electrification of trucks  |
 |   |  Systemic lever | Technology / Infrastructure; Financing; Learning and Skills  |
 |   |  Short and medium-term changes | Electrification of public transport, Generalising the availability of sustainable alternatives in a multimodal transport system, Introducing the right incentives to boost the mobility transition, Financial support for the purchase of electric taxis.  |
 |  Implementation | Responsible bodies/person for implementation | Urban Mobility Service.  |
 |   |  Action scale & addressed entities | Municipal  |
 |   |  Involved stakeholders | National government or agencies; Sub-national governments or agencies; Business and private sector  |
-|   |  Comments on implementation | If the cost is calculated at 2022 purchase prices for the 189 buses (185 to be renewed between now and 2030 and the 4 already in the fleet), the amount amounts to 111 million euros. If the objective is to renew the entire fleet by 2030, the cost would double, i.e. an estimated amount, at 2022 prices, of 220 million euros, to which should be added the cost of electrifying the depots for the entire fleet, which could amount to a total of 40 million euros.
-In terms of items implemented in 2002 for decarbonisation:
-million euros of municipal contribution to the share capital of the SEM for the purchase of the two new tram units.
-million for electrification of city bus depots.  |
+|   |  Comments on implementation | If the cost is calculated at 2022 purchase prices for the 189 buses (185 to be renewed between now and 2030 and the 4 already in the fleet), the amount amounts to 111 million euros. If the objective is to renew the entire fleet by 2030, the cost would double, i.e. an estimated amount, at 2022 prices, of 220 million euros, to which should be added the cost of electrifying the depots for the entire fleet, which could amount to a total of 40 million euros.<br>In terms of items implemented in 2002 for decarbonisation:<br>million euros of municipal contribution to the share capital of the SEM for the purchase of the two new tram units.<br>million for electrification of city bus depots.  |
 |  Impacts & costs | Generated renewable energy (if applicable) |   |
 |   |  Removed/substituted energy, volume or fuel type | The Zaragoza SUMP proposes measures that would save 120 GWh per year (total SUMP contribution, not only electrification).  |
 
-Climate City Contract - Zaragoza
-Climate City Contract - Zaragoza
-2
 
-|   | GHG emissions reduction estimate (total) per emission source sector | The Zaragoza SUMP proposes measures that would reduce 186 kton CO2e per year (total SUMP contribution, not only electrification).
-
-In terms of the Economic Model, it is required:
-Electrify 32% of the passenger vehicle fleet by 2040 to mitigate 21 kton CO2e.
-Electrify 100% of the public transport vehicle fleet by 2030 to mitigate 21 kton CO2e.
-Electrify 15% of <3.5 ton trucks by 2040 to and electrify 40% of >3.5 ton trucks by 2040 to mitigate 21 kton CO2e.  |
+|   | GHG emissions reduction estimate (total) per emission source sector | The Zaragoza SUMP proposes measures that would reduce 186 kton CO2e per year (total SUMP contribution, not only electrification).<br>In terms of the Economic Model, it is required:<br>Electrify 32% of the passenger vehicle fleet by 2040 to mitigate 21 kton CO2e.<br>Electrify 100% of the public transport vehicle fleet by 2030 to mitigate 21 kton CO2e.<br>Electrify 15% of <3.5 ton trucks by 2040 to and electrify 40% of >3.5 ton trucks by 2040 to mitigate 21 kton CO2e.  |
 | --- | --- | --- |
 |   | Total costs and costs by CO2e unit |   |
-T
 
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
-|  Action plan | Action name | PILLAR 1: SUSTAINABLE AND SMART MOBILITY
-| Modal shift and car sharing  |
+|  Action plan | Action name | PILLAR 1: SUSTAINABLE AND SMART MOBILITY<br>Modal shift and car sharing  |
 |   | Action type |   |
-|   | Action Description | The Zaragoza SUMP proposes measures that would reduce 186 kton CO2e and save 120 GWh annually.
+|   | Action Description | The Zaragoza SUMP proposes measures that would reduce 186 kton CO2e and save 120 GWh annually.<br>Based on the SUMP, the SECAP 2030 includes measures AM14 'Develop mobility actions aimed at improving citizens' health'; AM15 'Promote intermodality between modes of transport' and AM16 'Ensure accessibility to all mobility spaces and services'.<br>In terms of the Economic Model, it is required:<br>achieve a modal shift to a 30% reduction in private vehicle passenger-km to mitigate 35 kton CO2e per year.<br>Increase transport efficiency by 15% with car sharing measures, this will mitigate 16 kton CO2e per year.<br>Zaragoza is constantly extending its pedestrian and cycling infrastructure. Currently, the following are being implemented:<br>Bicycle lanes of Pablo Ruiz Picasso, Fray José Casanova, Almozara, Duquesa Villahermosa, Pedro III, Cesáreo Alierta and those that will connect with different industrial estates.<br>The development of Plaza Salamero and its surroundings, as well as the connections with the underground car park.<br>In addition, the construction of cycle lanes and metropolitan transport interchange areas in Zaragoza is planned. In line with the city's desire to expand the cycling infrastructure, it is collaborating with the Zaragoza Area Transport Consortium to obtain a European subsidy for the construction of several cycle lanes. Actions will also be developed to improve the connectivity of urban and metropolitan public transport in the municipality of Zaragoza. The length of all these lanes amounts to 35.5 km.<br>Also, a new public bicycle concession with station is being worked on. New public bicycle contract with station. The city will incorporate 218 stations and 2180 electric bicycles. Proposal to the second MITMA 2022 call for proposals. Investment required: €7,303,242.820 excluding VAT. 90% requested, i.e. €6,572,918.54. In case of being granted, the City Council will have to assume with its own funds 730,324.28 € plus VAT.<br>For the management and optimisation of urban transport, Zaragoza is working on:<br>MaaS (Mobility as a Service) platform. To promote the use of public transport. Investment through CTAZ (including Apps and validators).  |
 
-Based on the SUMP, the SECAP 2030 includes measures AM14 'Develop mobility actions aimed at improving citizens' health'; AM15 'Promote intermodality between modes of transport' and AM16 'Ensure accessibility to all mobility spaces and services'.
-
-In terms of the Economic Model, it is required:
-achieve a modal shift to a 30% reduction in private vehicle passenger-km to mitigate 35 kton CO2e per year.
-Increase transport efficiency by 15% with car sharing measures, this will mitigate 16 kton CO2e per year.
-
-Zaragoza is constantly extending its pedestrian and cycling infrastructure. Currently, the following are being implemented:
-Bicycle lanes of Pablo Ruiz Picasso, Fray José Casanova, Almozara, Duquesa Villahermosa, Pedro III, Cesáreo Alierta and those that will connect with different industrial estates.
-The development of Plaza Salamero and its surroundings, as well as the connections with the underground car park.
-In addition, the construction of cycle lanes and metropolitan transport interchange areas in Zaragoza is planned. In line with the city's desire to expand the cycling infrastructure, it is collaborating with the Zaragoza Area Transport Consortium to obtain a European subsidy for the construction of several cycle lanes. Actions will also be developed to improve the connectivity of urban and metropolitan public transport in the municipality of Zaragoza. The length of all these lanes amounts to 35.5 km.
-Also, a new public bicycle concession with station is being worked on. New public bicycle contract with station. The city will incorporate 218 stations and 2180 electric bicycles. Proposal to the second MITMA 2022 call for proposals. Investment required: €7,303,242.820 excluding VAT. 90% requested, i.e. €6,572,918.54. In case of being granted, the City Council will have to assume with its own funds 730,324.28 € plus VAT.
-
-For the management and optimisation of urban transport, Zaragoza is working on:
-MaaS (Mobility as a Service) platform. To promote the use of public transport. Investment through CTAZ (including Apps and validators).  |
-
-Climate City Contract - Zaragoza
-+
 
 |  |   |   |
 | --- | --- | --- |
-|  Reference to impact pathway | Field of action | Modal shift: shift to public and non-motorised transport
-| Shared transport  |
-|   |  Systemic lever | Technology / Infrastructure; Financing;
-| Learning and skills  |
+|  Reference to impact pathway | Field of action | Modal shift: shift to public and non-motorised transport<br>Shared transport  |
+|   |  Systemic lever | Technology / Infrastructure; Financing;<br>Learning and skills  |
 |   |  Short and medium-term changes | Articulate all the necessary infrastructure: green ring, cycle lanes, electric fleets, vehicle chargers, tram, etc., Generalise the availability of sustainable alternatives in a multimodal transport system.  |
 |  Implementation | Responsible bodies/person for implementation | Urban Mobility Service.  |
 |   |  Action scale & addressed entities | Municipal  |
 |   |  Involved stakeholders | National government or agencies; sub-national governments or agencies; business and the private sector; NGOs and civil society  |
-|   |  Comments on implementation | In terms of items implemented in 2002 for decarbonisation:
-| • 200,000 for the adaptation of the cycling network.  |
+|   |  Comments on implementation | In terms of items implemented in 2002 for decarbonisation:<br>• 200,000 for the adaptation of the cycling network.  |
 |  Impacts & costs | Generated renewable energy (if applicable) |   |
 |   |  Removed/substituted energy, volume or fuel type | The Zaragoza SUMP proposes measures that would save 120 GWh per year (total SUMP contribution, not just modal shift).  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | The Zaragoza SUMP proposes measures that would reduce 186 kton CO2e per year (Total contribution of the SUMP, not only by modal shift).
-In terms of the Economic Model, it is required:
-Modal shift: 35 kton CO2e per year.
-Carpooling: 16 kton CO2e per year.  |
+|   |  GHG emissions reduction estimate (total) per emission source sector | The Zaragoza SUMP proposes measures that would reduce 186 kton CO2e per year (Total contribution of the SUMP, not only by modal shift).<br>In terms of the Economic Model, it is required:<br>Modal shift: 35 kton CO2e per year.<br>Carpooling: 16 kton CO2e per year.  |
 |   |  Total costs and costs by CO2e unit |   |
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
-|  Action plan | Action name | PILLAR 1: SUSTAINABLE AND SMART MOBILITY
-| Optimisation of freight transport logistics  |
+|  Action plan | Action name | PILLAR 1: SUSTAINABLE AND SMART MOBILITY<br>Optimisation of freight transport logistics  |
 |   |  Action type |   |
-|   |  Action Description | The Zaragoza SUMP proposes measures that would reduce 186 kton CO2e and save 120 GWh annually.
-In urban logistics, a 10% reduction in travel distance through route optimisation is required to contribute to a mitigation of 63 kton CO2e compared to BAU 2030.  |
+|   |  Action Description | The Zaragoza SUMP proposes measures that would reduce 186 kton CO2e and save 120 GWh annually.<br>In urban logistics, a 10% reduction in travel distance through route optimisation is required to contribute to a mitigation of 63 kton CO2e compared to BAU 2030.  |
 
-Climate City Contract - Zaragoza
-+
 
 |  Among the strategies underway: - Regulated parking, ZBE, APR access control and loading and unloading control. The regulated parking concession consists of the concessionaire implementing regulated parking in different areas of the city. In this case, reaching some 25,000 spaces. This discourages the use of private vehicles. This concession will include the management system for the implementation of the ZBE. It will also control access to restricted streets in the historic centre and the management of loading and unloading, which will result in a better urban distribution of goods. The investment over the 10 years is around 15 million euros. The city council does not spend and collect the fee offered by the concessionaire.  |   |   |
 | --- | --- | --- |
@@ -1018,8 +816,6 @@ Climate City Contract - Zaragoza
 |  Action plan | Action name | PILLAR 2: ENERGY AND EFFICIENCY New near-zero energy buildings  |
 |   |  Action type | Technical interventions  |
 
-Climate City Contract - Zaragoza
-+
 
 |   | Action Description | Measure that does not exist in the SECAP 2030. Regarding BAU 2030, the economic model requires 80% of new buildings to be constructed according to the highest energy efficiency standards.  |
 | --- | --- | --- |
@@ -1036,57 +832,35 @@ Climate City Contract - Zaragoza
 |   |  Total costs and costs by CO2e unit |   |
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
-|  Action plan | Action name | PILLAR 2: ENERGY AND EFFICIENCY
-| Efficient lighting and appliances  |
+|  Action plan | Action name | PILLAR 2: ENERGY AND EFFICIENCY<br>Efficient lighting and appliances  |
 |   |  Action type | Technical interventions  |
 |   |  Action Description | Within the SECAP 2030, for municipal buildings and public lighting, measure AM6 (Strategy 2020 - (block I): optimisation of contracts and improvement of supply conditions) and measure AM7 (Strategy 2020 - (block II): energy savings, reduction of consumption and improvement of energy efficiency of electrical equipment) are considered.  |
 
-Climate City Contract - Zaragoza
-+
 
-|  With regard to BAU 2030, 100% of luminaires are required to be retrofitted between 2020 and 2030, in order to improve their efficiency by 40%.
-
-Among the projects underway by the City Council, the renovation of the lighting on the Integrated Path stands out:
-Condes de Aragón: 110 12 m columns with 136 luminaires. 144 poles and columns of various heights (from 10 to 4 m), with 292 LED luminaires Energy savings of up to 60% in consumption and 50% in installed power.
-Strategic city scale: under study
-PPA: bilateral 100% renewable energy contracting or Power Purchase Agreement  |   |   |
+|  With regard to BAU 2030, 100% of luminaires are required to be retrofitted between 2020 and 2030, in order to improve their efficiency by 40%.<br>Among the projects underway by the City Council, the renovation of the lighting on the Integrated Path stands out:<br>Condes de Aragón: 110 12 m columns with 136 luminaires. 144 poles and columns of various heights (from 10 to 4 m), with 292 LED luminaires Energy savings of up to 60% in consumption and 50% in installed power.<br>Strategic city scale: under study<br>PPA: bilateral 100% renewable energy contracting or Power Purchase Agreement  |   |   |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Efficient lighting and appliances  |
 |   |  Systemic lever | Technology / Infrastructure; Financing  |
 |   |  Short and medium-term changes | Implementation of mechanisms to save energy, avoiding losses. Efficient and solidarity-based use of available energy sources. Fight against energy poverty by incorporating vulnerable participants free of charge. Municipal aid for housing rehabilitation.  |
-|  Implementation | Responsible bodies/person for implementation | Zaragoza Housing
-| Town planning  |
+|  Implementation | Responsible bodies/person for implementation | Zaragoza Housing<br>Town planning  |
 |   |  Action scale & addressed entities | Urban scale  |
 |   |  Involved stakeholders | Government or national agencies; citizenship  |
 |   |  Comments on implementation | -  |
 |  Impacts & costs | Generated renewable energy (if applicable) |   |
 |   |  Removed/substituted energy, volume or fuel type |   |
-|   |  GHG emissions reduction estimate (total) per emission source sector | Included in SECAP 2030: 32 kton CO2e / year
-| ME result:48 kton CO2e / year  |
+|   |  GHG emissions reduction estimate (total) per emission source sector | Included in SECAP 2030: 32 kton CO2e / year<br>ME result:48 kton CO2e / year  |
 |   |  Total costs and costs by CO2e unit |   |
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
-|  Action plan | Action name | PILLAR 2: ENERGY AND EFFICIENCY
-Low-emission heat generation (decarbonisation of heating)  |
+|  Action plan | Action name | PILLAR 2: ENERGY AND EFFICIENCY<br>Low-emission heat generation (decarbonisation of heating)  |
 
-Climate City Contract - Zaragoza
-+
 
 |   | Action type | Technical interventions  |
 | --- | --- | --- |
-|   |  Action Description | The SECAP 2030 includes measures AM5 (Promotion of thermal generation systems using renewable sources in housing), AM9 (Installation of thermal generation systems using renewable sources in municipal buildings) and AM11 (Promotion of thermal generation systems using renewable sources in the tertiary sector). Mitigation of 27.7 kton CO2eq and 137 GWH/year is estimated.
-
-Regarding BAU 2030, 67% of local heating is required to be produced with electricity. This would mean a total mitigation of 631 kton CO2eq.
-
-Among the unique projects that Zaragoza City Council is carrying out, several actions stand out:
-The implementation of the first positive neighbourhood including different types of residential and educational buildings (NEUTRALPATH project) and a district heating with hydrothermal heating that will allow the removal of individual gas from residential buildings and the use of photovoltaic renewable energies placed on the roofs of the buildings.  |
+|   |  Action Description | The SECAP 2030 includes measures AM5 (Promotion of thermal generation systems using renewable sources in housing), AM9 (Installation of thermal generation systems using renewable sources in municipal buildings) and AM11 (Promotion of thermal generation systems using renewable sources in the tertiary sector). Mitigation of 27.7 kton CO2eq and 137 GWH/year is estimated.<br>Regarding BAU 2030, 67% of local heating is required to be produced with electricity. This would mean a total mitigation of 631 kton CO2eq.<br>Among the unique projects that Zaragoza City Council is carrying out, several actions stand out:<br>The implementation of the first positive neighbourhood including different types of residential and educational buildings (NEUTRALPATH project) and a district heating with hydrothermal heating that will allow the removal of individual gas from residential buildings and the use of photovoltaic renewable energies placed on the roofs of the buildings.  |
 |  Reference to impact pathway | Field of action | Low-emission heat generation (decarbonisation of heating)  |
 |   |  Systemic lever | Technology / Infrastructure; Governance and policy; Social innovation; Democracy and participation; Finance; Learning and skills; Democracy and participation.  |
-|   |  Short and medium-term changes | Install local renewable energy generation infrastructure.
-Promotion of the creation of local energy communities through the legal instrument of collective self-consumption.
-Implementation of mechanisms to save energy, avoiding losses.
-Efficient and solidarity-based use of available energy sources.
-Fight against energy poverty by incorporating vulnerable participants free of charge.  |
+|   |  Short and medium-term changes | Install local renewable energy generation infrastructure.<br>Promotion of the creation of local energy communities through the legal instrument of collective self-consumption.<br>Implementation of mechanisms to save energy, avoiding losses.<br>Efficient and solidarity-based use of available energy sources.<br>Fight against energy poverty by incorporating vulnerable participants free of charge.  |
 |  Implementation | Responsible bodies/person for implementation | City Council, companies.  |
 |   |  Action scale & addressed entities | Neighbourhood / Urban Scale.  |
 |   |  Involved stakeholders | Business and the private sector; NGOs, civil society  |
@@ -1094,85 +868,51 @@ Fight against energy poverty by incorporating vulnerable participants free of ch
 |  Impacts & costs | Generated renewable energy (if applicable) | Included in SECAP 2030: 137 GWh/year produced locally.  |
 |   |  Removed/substituted energy, volume or fuel type |   |
 
-Climate City Contract - Zaragoza
-Climate City Contract - Zaragoza
 
-|   | GHG emissions reduction estimate (total) per emission source sector | Included in SECAP 2030: 27.7 kton CO2e / year
-| Result of the EMCD: 631 kton CO2e / year  |
+|   | GHG emissions reduction estimate (total) per emission source sector | Included in SECAP 2030: 27.7 kton CO2e / year<br>Result of the EMCD: 631 kton CO2e / year  |
 | --- | --- | --- |
 |   | Total costs and costs by CO2e unit |   |
 |  **B-2.2: Individual Action Schemes**  |   |   |
 | --- | --- | --- |
-|  Action plan | Action name | PILLAR 2: ENERGY AND EFFICIENCY
-| Low-emission electricity generation  |
+|  Action plan | Action name | PILLAR 2: ENERGY AND EFFICIENCY<br>Low-emission electricity generation  |
 |   |  Action type | Technical interventions  |
-|   |  Action Description | The SECAP 2030 includes measures AM4 (Promotion of electricity generation systems using renewable sources in housing), AM8 (Installation of electricity generation systems using renewable sources in municipal buildings) and AM10 (Promotion of electricity generation systems using renewable sources in the tertiary sector). A mitigation of 6.8 kton CO2e/year and a production of 74 GWh/year is estimated.
+|   |  Action Description | The SECAP 2030 includes measures AM4 (Promotion of electricity generation systems using renewable sources in housing), AM8 (Installation of electricity generation systems using renewable sources in municipal buildings) and AM10 (Promotion of electricity generation systems using renewable sources in the tertiary sector). A mitigation of 6.8 kton CO2e/year and a production of 74 GWh/year is estimated.<br>To match the levels of renewable electricity production of the PNIEC 2030, the SECAP includes the measure AM3 "Promotion of the purchase of energy with Renewable Origin Certificates" which implies a mitigation of 120 kton CO2e/year.<br>In addition, the ECAZ 3.0 contains measure 27 "Promotion of renewable electricity generation systems in the industrial sector". A mitigation of 45.5 kton CO2e/year is estimated.<br>Regarding BAU 2030, 85% of the current electricity production from fossil sources is required to be replaced by renewable energies. This is a total required mitigation of 411 kton CO2e/year.<br>Among the projects being developed by Zaragoza City Council, the following stand out:<br>Barrios Solares Zaragoza: This is a renewable energy project based on solidarity and proximity. It includes the promotion of photovoltaic installations placed in a municipal space for collective self-consumption using the grid and in which neighbours and businesses can participate if they are located within the criteria established by RD 244, including being located within a radius of 500m. 7 Solar Neighbourhoods planned. Creation of a "Solar Neighbourhood" Office to raise awareness, inform and advise residents on energy issues: energy rehabilitation of homes, self-consumption, efficient habits and contract optimisation. 280 k€ per installation. 2 M€ for 7 installations. First Barrio Solar  |
 
-To match the levels of renewable electricity production of the PNIEC 2030, the SECAP includes the measure AM3 "Promotion of the purchase of energy with Renewable Origin Certificates" which implies a mitigation of 120 kton CO2e/year.
-
-In addition, the ECAZ 3.0 contains measure 27 "Promotion of renewable electricity generation systems in the industrial sector". A mitigation of 45.5 kton CO2e/year is estimated.
-
-Regarding BAU 2030, 85% of the current electricity production from fossil sources is required to be replaced by renewable energies. This is a total required mitigation of 411 kton CO2e/year.
-
-Among the projects being developed by Zaragoza City Council, the following stand out:
-Barrios Solares Zaragoza: This is a renewable energy project based on solidarity and proximity. It includes the promotion of photovoltaic installations placed in a municipal space for collective self-consumption using the grid and in which neighbours and businesses can participate if they are located within the criteria established by RD 244, including being located within a radius of 500m. 7 Solar Neighbourhoods planned. Creation of a "Solar Neighbourhood" Office to raise awareness, inform and advise residents on energy issues: energy rehabilitation of homes, self-consumption, efficient habits and contract optimisation. 280 k€ per installation. 2 M€ for 7 installations. First Barrio Solar  |
-+
-
-|   |  | Actur pilot; production 150 MWh per year.
-Production in municipal buildings: Zaragoza City Council has a pre-feasibility study of solar capacity for the installation of photovoltaic energy for self-consumption in municipal buildings. The city has a usable surface area of 214,571 m2 which would allow it to produce 28270 MWH per year.
-Solar energy community in MERCAZARAGOZA: The objective of the project is the implementation of a 1 MW photovoltaic installation in Zaragoza, which will be exploited by the MERCAENERGY, S. COOP. energy community and will make direct beneficiaries of this action, both at the energy, social and economic level, to the actors located in the same cadastral reference within the industrial estate.  |
+|   |  | Actur pilot; production 150 MWh per year.<br>Production in municipal buildings: Zaragoza City Council has a pre-feasibility study of solar capacity for the installation of photovoltaic energy for self-consumption in municipal buildings. The city has a usable surface area of 214,571 m2 which would allow it to produce 28270 MWH per year.<br>Solar energy community in MERCAZARAGOZA: The objective of the project is the implementation of a 1 MW photovoltaic installation in Zaragoza, which will be exploited by the MERCAENERGY, S. COOP. energy community and will make direct beneficiaries of this action, both at the energy, social and economic level, to the actors located in the same cadastral reference within the industrial estate.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Low-emission electricity generation  |
 |   |  Systemic lever | Technology / Infrastructure; Governance and Policy; Social Innovation; Democracy and Participation; Finance; Learning and Skills; Democracy and Participation.  |
 |   |  Short and medium-term changes | Installing local renewable energy generation infrastructure; Encouraging the creation of local energy communities through the legal instrument of collective self-consumption; Implementing mechanisms to save energy, avoiding losses; Efficient and solidarity-based use of available energy sources; Fighting energy poverty by incorporating vulnerable participants free of charge; Creating a "Barrio Solar" office to raise awareness, inform and advise neighbours on energy issues; Creating a "Barrio Solar" office to raise awareness, inform and advise neighbours on energy issues.  |
-|  Implementation | Responsible bodies/person for implementation | Solar neighbourhoods: EDP Solar, Zaragoza City Council and ECODES will form a consortium or similar legal entity to enable public-private collaboration and the constitution of an energy community.
-| Others: City Council, companies.  |
+|  Implementation | Responsible bodies/person for implementation | Solar neighbourhoods: EDP Solar, Zaragoza City Council and ECODES will form a consortium or similar legal entity to enable public-private collaboration and the constitution of an energy community.<br>Others: City Council, companies.  |
 |   |  Action scale & addressed entities | Neighbourhood / urban scale.  |
 |   |  Involved stakeholders | Business and private sector; NGOs, civil society.  |
 |   |  Comments on implementation | First pilot pilot Barrio Solar Actur: is the first renewable and solidarity-based solar neighbourhood in Spain, with a PV installation for shared self-consumption in residential buildings. Neighbours and businesses within 500 m of the installation participate and benefit from energy savings of around 30% on their bills.  |
 |  Impacts & costs | Generated renewable energy (if applicable) | Included in SECAP 2030: 74 GWh/year produced locally.  |
 |   |  Removed/substituted energy, volume or fuel type |   |
 
-Climate City Contract - Zaragoza
 中
 
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
-|  Action plan | Action name | PILLAR 3: RENATURALISATION AND CIRCULAR ECONOMY
-| Waste recycling  |
+|  Action plan | Action name | PILLAR 3: RENATURALISATION AND CIRCULAR ECONOMY<br>Waste recycling  |
 |   |  Action type | Technical interventions  |
-|   |  Action Description | ECAZ 3.0 includes measures 30 "Reducing food waste"; 31 "Collection, reuse and recycling of clothing"; 32 "Collection and reuse of electrical and electronic equipment"; and 33 "Use of organic waste for energy production and/or composting".
+|   |  Action Description | ECAZ 3.0 includes measures 30 "Reducing food waste"; 31 "Collection, reuse and recycling of clothing"; 32 "Collection and reuse of electrical and electronic equipment"; and 33 "Use of organic waste for energy production and/or composting".<br>Regarding BAU 2030, the EMCD requires a reduction of 10 kton CO2e due to waste recycling.<br>Among the projects underway, the following stand out:<br>Circular Biocarbon: This is a circular economy project that will build and operate Europe's first commercial industrial scale Municipal Solid Waste (MSW) biorefinery. The mission is to achieve a sustainable bioeconomy and optimise the management of solid urban waste and wastewater treatment plant (WWTP) sludge, which become resources, obtaining high added-value end products from them.<br>Some of the final products that can be obtained thanks to the valorisation of this waste will be: coated tools and mechanical moving parts with greater durability, night vision cameras, 5G technology telecommunications devices, biodegradable and compostable bags for waste collection, biodegradable mulching films for soil, biostimulants based on microalgae with fertilising properties, or tailor-made biofertilisers.<br>This circular economy initiative is a milestone for the whole of Europe, both in terms of its scale of implementation (industrial level) and its replicability. It will also be connected to other initiatives in the city, such as the Bosque de los Zaragozanos, which will benefit from the waste treated in this project.<br>Biowaste treatment CTRUZ and REDOL project: Subsidies for the promotion of the circular economy through actions in the prevention and management of household waste, within the framework of the PRTR. Actions for the implementation and improvement of the separate collection of bio-waste destined for  |
 
-Regarding BAU 2030, the EMCD requires a reduction of 10 kton CO2e due to waste recycling.
-
-Among the projects underway, the following stand out:
-Circular Biocarbon: This is a circular economy project that will build and operate Europe's first commercial industrial scale Municipal Solid Waste (MSW) biorefinery. The mission is to achieve a sustainable bioeconomy and optimise the management of solid urban waste and wastewater treatment plant (WWTP) sludge, which become resources, obtaining high added-value end products from them.
-Some of the final products that can be obtained thanks to the valorisation of this waste will be: coated tools and mechanical moving parts with greater durability, night vision cameras, 5G technology telecommunications devices, biodegradable and compostable bags for waste collection, biodegradable mulching films for soil, biostimulants based on microalgae with fertilising properties, or tailor-made biofertilisers.
-This circular economy initiative is a milestone for the whole of Europe, both in terms of its scale of implementation (industrial level) and its replicability. It will also be connected to other initiatives in the city, such as the Bosque de los Zaragozanos, which will benefit from the waste treated in this project.
-Biowaste treatment CTRUZ and REDOL project: Subsidies for the promotion of the circular economy through actions in the prevention and management of household waste, within the framework of the PRTR. Actions for the implementation and improvement of the separate collection of bio-waste destined for  |
-
-Climate City Contract - Zaragoza
-+
 
 |   |  | the Zaragoza urban waste treatment complex (CTRUZ). Line 1: Actions for the Implementation and Improvement of the Separate Collection of Bio-waste destined for the Zaragoza Urban Waste Treatment Complex (CTRUZ). Budget: 2,708,591€. Line 2: Actions for the Separation and Recycling at Source of Biowaste by means of domestic and community composting in the Zaragoza Metropolitan Area. Budget: 296,750€. Line 3: Construction and Improvement Actions in the Complex. Budget: 6,507,639.99€. Line 4: Acquisition of Mobile Clean Point. Budget: 150.000€.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Waste recycling  |
 |   |  Systemic lever | Technology / Infrastructure; Social innovation  |
 |   |  Short and medium-term changes |   |
-|  Implementation | Responsible bodies/person for implementation | Public Services
-Zaragoza City Council
-Circular Biocarbon: Urbaser  |
+|  Implementation | Responsible bodies/person for implementation | Public Services<br>Zaragoza City Council<br>Circular Biocarbon: Urbaser  |
 |   |  Action scale & addressed entities | Urban scale  |
 |   |  Involved stakeholders | Business and private sector  |
-|   |  Comments on implementation | The biorefinery will begin construction in 2022 on the premises of Urbaser's "Alfonso Maillo" R&D&I Centre and the Zaragoza Urban Waste Treatment Complex (CTRUZ) in the Recycling Technology Park (PTR).
-| The project will have a duration of 5 years and an overall budget of 123 million, of which the European Commission will finance a total of 15 million in the form of a grant.  |
+|   |  Comments on implementation | The biorefinery will begin construction in 2022 on the premises of Urbaser's "Alfonso Maillo" R&D&I Centre and the Zaragoza Urban Waste Treatment Complex (CTRUZ) in the Recycling Technology Park (PTR).<br>The project will have a duration of 5 years and an overall budget of 123 million, of which the European Commission will finance a total of 15 million in the form of a grant.  |
 |  Impacts & costs | Generated renewable energy (if applicable) |   |
 |   |  Removed/substituted energy, volume or fuel type |   |
-|   |  GHG emissions reduction estimate (total) per emission source sector | From ECAZ 3.0: 340 kton CO2e / year
-| Result of the EMCD: 10 kton CO2e / year  |
+|   |  GHG emissions reduction estimate (total) per emission source sector | From ECAZ 3.0: 340 kton CO2e / year<br>Result of the EMCD: 10 kton CO2e / year  |
 |   |  Total costs and costs by CO2e unit |   |
 
-Climate City Contract - Zaragoza
 B-2.3: Summary strategy for residual emissions
 
 # PILLAR 3: RENATURALISATION AND CIRCULAR ECONOMY
@@ -1201,8 +941,6 @@ Adaptation to climate change: To be an example of sustainable and ecological act
 
 Estimated costs: 28.4 M €.
 
-Climate City Contract - Zaragoza
-Climate City Contract - Zaragoza
 
 Green infrastructure plan: ecosystem services: Green infrastructure management action plan for Zaragoza - Ecosystem benefits: the ecosystem benefits that are currently being generated by the current Green Infrastructure have been assessed through the Baseline project for the city of Zaragoza. Based on these, a system of indicators associated with a spatial geographical representation has been generated, in order to facilitate decision-making when planning public space, specifically for Zaragoza, to measure, evaluate and specify improvement objectives for these benefits. They comprise a total of 26 ecosystemic indicators represented in 150x150 m grids and accompanied by a graphic representation by neighbourhood, in what are called ecosystemic wheels.
 
@@ -1210,8 +948,6 @@ It also supports the diagnosis and assessment in the implementation of high defi
 
 Other actions programmed as part of the management of the urban green infrastructure: Planting of empty tree pits with tree species to give cohesion and connectivity to the urban green fabric.
 
-4
-#
 
 # MODULE B-3: Indicators for Monitoring, Evaluation and Learning
 
@@ -1235,8 +971,6 @@ The following impact pathways come from the Economic Model for Cities' Decarboni
 |   | New near-zero energy buildings | 10 | percentage of new buildings constructed to the highest energy efficiency standards | 50% | 60% | 80%  |
 |   | Efficient lighting and appliances | 11 | Percentage of luminaires retrofitted between 2020 and 2030 (40% efficiency improvements) | 20% | 50% | 100%  |
 
-Climate City Contract - Zaragoza
-+
 
 |   | Low-emission heat generation (decarbonisation of heating) | 12 | Percentage of electric local heating | 10% | 30% | 67%  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1263,9 +997,6 @@ Indicator metadata will be included in future iterations of this Climate City Co
 |  Additional information |   |
 |  Planned data source |   |
 
-Climate City Contract - Zaragoza
-Climate City Contract - Zaragoza
-7
 
 |  Planned availability |   |
 | --- | --- |
@@ -1273,7 +1004,6 @@ Climate City Contract - Zaragoza
 |  References |   |
 |  Results describing the indicator |   |
 |  Other indicator systems using this indicator |   |
-#
 
 # MODULE B-1: Climate Neutrality Scenarios and Impact Pathways
 
@@ -1288,50 +1018,22 @@ Impact pathways, short- and long-term outcomes and direct and indirect impacts (
 |   |  Car electrification |   |   |   | 21 | - New economy around electric technologies.  |
 |   |  Bus electrification | Learning and skills |   |   | 24  |   |
 
-Climate City Contract - Zaragoza
-Climate City Contract - Zaragoza
-9
 
 |   | Optimisation of freight transport logistics |  |  | 63 |   |
 | --- | --- | --- | --- | --- | --- |
 |   |  Electrification of trucks |   |   | 21  |   |
-|  Buildings and Heating | Building renovations | Technology / Infrastructure
-Governance and policy
-Social innovation
-Democracy and participation
-Funding Learning and skills | - Install local renewable energy generation infrastructure.
-Continue with the energy rehabilitation of buildings and optimisation of energy consumption.
-Promotion of the creation of local energy communities through the legal instrument of collective self-consumption.
-Implementation of mechanisms to save energy, avoiding losses.
-Efficient and supportive use of available energy sources.
-Fighting fuel poverty by incorporating vulnerable participants free of charge.
-Municipal aid for housing rehabilitation.
-Creation of a "Barrio Solar" office to raise awareness, inform and advise neighbours on energy issues. | 69 | - Greater energy independence.
-Jobs associated with the maintenance of distributed infrastructure.
-Greater democratisation of the energy sector.  |
+|  Buildings and Heating | Building renovations | Technology / Infrastructure<br>Governance and policy<br>Social innovation<br>Democracy and participation<br>Funding Learning and skills | - Install local renewable energy generation infrastructure.<br>Continue with the energy rehabilitation of buildings and optimisation of energy consumption.<br>Promotion of the creation of local energy communities through the legal instrument of collective self-consumption.<br>Implementation of mechanisms to save energy, avoiding losses.<br>Efficient and supportive use of available energy sources.<br>Fighting fuel poverty by incorporating vulnerable participants free of charge.<br>Municipal aid for housing rehabilitation.<br>Creation of a "Barrio Solar" office to raise awareness, inform and advise neighbours on energy issues. | 69 | - Greater energy independence.<br>Jobs associated with the maintenance of distributed infrastructure.<br>Greater democratisation of the energy sector.  |
 |   |  New near-zero energy buildings |   |   | 32  |   |
 |   |  Efficient lighting and appliances |   |   | 48  |   |
 |   |  Low-emission heat generation (decarbonisation of heating) |   |   | 631  |   |
 |  Electricity | Low-emission electricity generation |  |  | 411 |   |
-|  Waste | Waste recycling | Technology / Infrastructure | - Increasing recycling capacity and waste recovery
-Promote the circular economy and the greening of urban space. | 10 | - Reduced water use.
-Green job creation.  |
-+
+|  Waste | Waste recycling | Technology / Infrastructure | - Increasing recycling capacity and waste recovery<br>Promote the circular economy and the greening of urban space. | 10 | - Reduced water use.<br>Green job creation.  |
 
 |   |  | Social innovation | - Valorisation of materials resulting from treatment. |  | Savings in raw materials.  |
 | --- | --- | --- | --- | --- | --- |
-|  Other | Renaturalisation | Governance and policy
-Social innovation
-Democracy and participation
-Funding | - Achieving territorial balance and urban renewal
-A renaturalisation of the city, changing the green management model, greening the city and its territory and connecting the city through nature (Zaragoza Natural).
-designing and implementing nature-based solutions
-Improving citizens' health and increasing biodiversity
-Collaborative projects open to citizens, companies, organisations, associations, etc. | -370 (-24 already absorbed by existing urban trees) | - Ecosystem services of green infrastructure
-Reduction of heat islands.  |
+|  Other | Renaturalisation | Governance and policy<br>Social innovation<br>Democracy and participation<br>Funding | - Achieving territorial balance and urban renewal<br>A renaturalisation of the city, changing the green management model, greening the city and its territory and connecting the city through nature (Zaragoza Natural).<br>designing and implementing nature-based solutions<br>Improving citizens' health and increasing biodiversity<br>Collaborative projects open to citizens, companies, organisations, associations, etc. | -370 (-24 already absorbed by existing urban trees) | - Ecosystem services of green infrastructure<br>Reduction of heat islands.  |
 
-Climate City Contract - Zaragoza
-B-1.2: Description of impact pathways
+# B-1.2: Description of impact pathways
 
 The city of Zaragoza has established 3 pillars to achieve the goal of climate neutrality by 2030. In relation to the results of the Economic Model, each of the pillars is described below:
 
@@ -1372,8 +1074,6 @@ Increasing recycling capacity and waste recovery
 Achieving territorial balance and urban renewal
 Improving citizens' health and increasing biodiversity
 
-Climate City Contract - Zaragoza
-#
 
 # PART C - Enbling Climate Neutrality by 2030
 
@@ -1390,8 +1090,6 @@ Summary table indicating organisational and governance actions and describing th
 |  #2 Open government and data governance | City quality data available for consultation and re-use according to transparency and accessibility criteria. | Zaragoza Open Government | City Council Companies | Digitised administration and new processes for governance, control and quality of sustainability data | Re-use of information by citizens, businesses and other organisations for new business and value-added services.  |
 |  #3 External Projection | Deployment of strategic plans based on cross-cutting public- | Outreach Office | City Council | Boosting sustainable actions aimed at promoting | Securing sources of funding, which contribute to the  |
 
-Climate City Contract - Zaragoza
-Climate City Contract - Zaragoza
 
 |   | private coordination. |  |  | Zaragoza abroad | present and future development of the city.  |
 | --- | --- | --- | --- | --- | --- |
@@ -1405,7 +1103,6 @@ Working and coordination group of the areas of Zaragoza City Council: Internal c
 Open government and data governance: Zaragoza City Council is currently one of the pioneers in the development of tools so that citizens, social agents and companies can know, explore, use and reuse the data it publishes on the Open Government Platform (GobiernoAbierto.zaragoza.es). It has participated in several leading national and international projects and has been awarded for its work in the field of open data policy. The tools provided to the public by Zaragoza City Council receive thousands of visits and respond to hundreds of queries each year. Among the most outstanding tools are the Catalogue of datasets, the APIs developed to consult different types of information, the visualisation service for data related to public procurement or the IDEZar spatial data portal. In this sense, Zaragoza seeks to provide all the parties involved in the Mission with a catalogue from which they can access the set of open data related to climate neutrality. Through this open data management, and provide a treatment of the information systems that not only generates wealth, but also develops and transmits a series of values such as quality, interoperability, participation, coordination, collaboration, transparency and accessibility. The management of the participatory processes will be carried out through the Idea Zaragoza tool.
 
 Outward projection: The Outward Projection Office aims to make a decisive contribution to the promotion of the city by compiling key signs of identity, past, present and future, identifying its strengths and weaknesses and deploying strategic plans based on transversal public-private coordination, which ensures sources of funding, to contribute to the present and future development of the city of Zaragoza. The objective is to promote actions aimed at the promotion of the city abroad, as well as the elaboration, coordination, development and monitoring of a strategic plan for the promotion of Zaragoza abroad in collaboration with other institutions and entities. This strategy defines among its main vectors urban innovation; culture and heritage; tourism and leisure; education and innovation; and economic and logistical development.
-#
 
 # MODULE C-2: Social and other Innovation Interventions
 
@@ -1414,16 +1111,10 @@ Summary table listing social and other innovation actions and describing their i
 |  C.2.1: Social innovation and other interventions  |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- |
 |  Intervention name | Description | Responsible entity/ dept./ person | Involved stakeholder | Enabling impact | Co-benefits  |
-|  #1 Right to energy | Concrete measures against fuel poverty, including an energy advice point. | Community Social Services
-| Zaragoza Housing | First Attention Programme; Zaragoza Housing; City Council; Citizenship | Citizens' energy advice through audits of habits, installations and characteristics of the home | Increased public awareness and expert advice on energy-saving measures  |
+|  #1 Right to energy | Concrete measures against fuel poverty, including an energy advice point. | Community Social Services<br>Zaragoza Housing | First Attention Programme; Zaragoza Housing; City Council; Citizenship | Citizens' energy advice through audits of habits, installations and characteristics of the home | Increased public awareness and expert advice on energy-saving measures  |
 |  #2 Zaragoza Activa | Fostering an entrepreneurial, innovative, creative and collaborative ecosystem | ZAC Network City Council | City Council, ZAC companies | Supports initiatives that generate economic activity, including some that promote neutrality. | New initiatives from local companies committed to climate neutrality and awareness raising  |
-|  #3 Climate empowerment | Social tools: education, communication, awareness-raising, training, capacity building and climate participation | City Council | City Council Technical Office for Participation and Transparency Environment and Sustainability Service
-European project participants
-Citizenship | Empower citizens to participate in climate neutral actions. | -Creating and fostering a social culture of climate neutrality
-Improving socio-environmental (climatic) determinants of health  |
+|  #3 Climate empowerment | Social tools: education, communication, awareness-raising, training, capacity building and climate participation | City Council | City Council Technical Office for Participation and Transparency Environment and Sustainability Service<br>European project participants<br>Citizenship | Empower citizens to participate in climate neutral actions. | -Creating and fostering a social culture of climate neutrality<br>Improving socio-environmental (climatic) determinants of health  |
 
-Climate City Contract - Zaragoza
-#
 
 # C-2.2: Description of social innovation interventions
 
@@ -1435,16 +1126,14 @@ Climate empowerment, understood as climate education, awareness raising, capacit
 
 To achieve this, climate neutral cities, as Zaragoza intends to do, must use the tools established by the Climate Empowerment Action such as education and communication on the climate crisis, training, public awareness, public participation, public access to information and cooperation between them on these elements. In this regard, municipal management plans, programmes and actions related to climate neutrality:
 
-incorporate clear and accessible information on the causes, consequences, solutions and possible actions and commitments for the visualisation and reduction of energy consumption and greenhouse gas emissions in everyday actions, promoting energy savings and efficiency.
-develop educational instruments, programmes and actions for different social sectors and educational levels, as well as communication, awareness-raising and sensitisation campaigns, programmes and tools.
-implement training tools that train different professional sectors with practical climate-neutral skills and competences;
-allow for participation in decision-making, through the legal instruments provided, involvement in the elaboration of plans and programmes, practical and concrete actions in which to involve citizens
-establish synergies and cooperation links with other climate-neutral cities for common learning and exchange of best practices and experiences.
+- incorporate clear and accessible information on the causes, consequences, solutions and possible actions and commitments for the visualisation and reduction of energy consumption and greenhouse gas emissions in everyday actions, promoting energy savings and efficiency.
+- develop educational instruments, programmes and actions for different social sectors and educational levels, as well as communication, awareness-raising and sensitisation campaigns, programmes and tools.
+- implement training tools that train different professional sectors with practical climate-neutral skills and competences;
+- allow for participation in decision-making, through the legal instruments provided, involvement in the elaboration of plans and programmes, practical and concrete actions in which to involve citizens
+- establish synergies and cooperation links with other climate-neutral cities for common learning and exchange of best practices and experiences.
 
 In short, the aim is to extend and reinforce sustainable and low-carbon lifestyles to all citizens and social sectors, which are facilitated and reinforced by strong public policies that facilitate and serve as a context, framework for action and positive reinforcement of citizen action for climate neutrality.
 
-Climate City Contract - Zaragoza
-#
 
 # MODULE C-3: Financing of Action Portfolio (Economic Case)
 
@@ -1457,8 +1146,6 @@ The following costs come from the Economic Model for Cities' Decarbonisation tha
 |  (list the actions in your portfolio of transformative projects in modules B-2, C-1 and C-2) | Assumptions 2030 | (indicate the entity and person responsible) |   | (indicate the start and end date of the activity) | (indicate the area to which the action belongs) | (indicate the impact of the action, e.g. GHG reduction/co-benefits) |   |   | (Indicate the total estimated cost of the action in €)  |
 |  Reduction in the need for motorised transport | 35% | reduction |  | 2020-2030 | Transport | 94 | € 1,179 | € 256 | € -  |
 
-Climate City Contract - Zaragoza
-Climate City Contract - Zaragoza
 
 |  Modal shift: shift to public and non-motorised transport | 30% | reduction in private vehicle passenger-km |  | 2020-2030 | Transport | 35 | € 148 | € 460 | € (120)  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1473,7 +1160,6 @@ Climate City Contract - Zaragoza
 |  Efficient lighting and appliances | 100% | of luminaires retrofitted between 2020 and 2030 (40% efficiency improvements) |  | 2020-2030 | Buildings and heating | 48 | € 618 | € 20 | € (457)  |
 |  Low-emission heat generation (decarbonisation of heating) | 67% | Percentage of electric local heating |  | 2020-2030 | Buildings and heating | 631 | € 703 | € 78 | € (1,465)  |
 
-7
 ![img-12.jpeg](img-12.jpeg)
 
 |  Low-emission electricity generation | 85% | Part of the current electricity production from fossil sources is replaced by renewable energies. |  | 2020-2030 | Electric | 411 | € 474 | € - | € (234)  |
@@ -1481,7 +1167,6 @@ Climate City Contract - Zaragoza
 |  Waste recycling |  |  |  | 2020-2030 | Waste | 10 | € 2 | € - | € (1)  |
 |  Total |  |  |  |  |  | 1475 | € 5,127 | € 1,097 | € (3,925)  |
 
-Climate City Contract - Zaragoza
 OUTLOOK AND NEXT STEPS
 
 The Climate City Contracts, as part of an iterative process of continuous improvement, will be reviewed within the next 2 years.
@@ -1490,27 +1175,23 @@ Subsequent iterations will develop in greater detail the projects that the city 
 
 The following are the next steps and plans in the process of reviewing and improving the Action Plan as part of the city's Climate City Contract.
 
-Improving and expanding the Economic Model: This refers to the review and adjustment of the current economic model with the aim of broadening its scope and refining its analysis so that it reflects even more accurately the ambition of the climate action plan and the associated capital and investment needs.
-Specification of the initiatives and projects included in the Action Plan: This involves identifying and defining in detail the different actions, initiatives and projects that form part of the Action Plan, with the aim of ensuring their financing and adequate implementation.
-Broaden interdepartmental collaboration to advance the implementation of the Climate Investment Plan: This refers to the need to promote greater collaboration between the different departments and work areas involved in the implementation of the Climate Investment Plan, in order to improve their coordination and increase their effectiveness.
-Obtain specific commitments from various entities within the framework of the Climate City Contract (Letters of Accession): The aim is to obtain the formal commitment of various entities and organisations within the framework of the Climate City Contract, through the signing of Letters of Accession, to support and collaborate in the achievement of the objectives and goals established therein.
-Development of a monitoring and evaluation plan: Key CCC indicators, data collection method and monitoring reporting requirements: This refers to the development of a detailed plan for monitoring and evaluation of the Climate City Contract, identifying the key indicators to be measured, the data collection
+- Improving and expanding the Economic Model: This refers to the review and adjustment of the current economic model with the aim of broadening its scope and refining its analysis so that it reflects even more accurately the ambition of the climate action plan and the associated capital and investment needs.
+- Specification of the initiatives and projects included in the Action Plan: This involves identifying and defining in detail the different actions, initiatives and projects that form part of the Action Plan, with the aim of ensuring their financing and adequate implementation.
+- Broaden interdepartmental collaboration to advance the implementation of the Climate Investment Plan: This refers to the need to promote greater collaboration between the different departments and work areas involved in the implementation of the Climate Investment Plan, in order to improve their coordination and increase their effectiveness.
+- Obtain specific commitments from various entities within the framework of the Climate City Contract (Letters of Accession): The aim is to obtain the formal commitment of various entities and organisations within the framework of the Climate City Contract, through the signing of Letters of Accession, to support and collaborate in the achievement of the objectives and goals established therein.
+- Development of a monitoring and evaluation plan: Key CCC indicators, data collection method and monitoring reporting requirements: This refers to the development of a detailed plan for monitoring and evaluation of the Climate City Contract, identifying the key indicators to be measured, the data collection
 
-Climate City Contract - Zaragoza
-Climate City Contract - Zaragoza
 
-method and the monitoring reporting requirements.
+- method and the monitoring reporting requirements.
 
-Implementation of the monitoring and evaluation process, including communication of the plan to participating cities and guidance on data collection and reporting: This is the implementation of the monitoring and evaluation plan, including communication of the plan to participating actors and entities and guidance on how to collect data and prepare the related monitoring reports.
+- Implementation of the monitoring and evaluation process, including communication of the plan to participating cities and guidance on data collection and reporting: This is the implementation of the monitoring and evaluation plan, including communication of the plan to participating actors and entities and guidance on how to collect data and prepare the related monitoring reports.
 
-Collection of baseline data on the key indicators identified in the M&amp;E plan: Refers to the collection of baseline data on the key indicators identified in the M&amp;E plan, in order to establish a basis for comparison for future measurement and analysis.
+- Collection of baseline data on the key indicators identified in the M&amp;E plan: Refers to the collection of baseline data on the key indicators identified in the M&amp;E plan, in order to establish a basis for comparison for future measurement and analysis.
 
-Analysis of reference indicators and degree of progress in achieving emission reduction targets: The aim is to analyse the benchmark indicators and assess the degree of progress in achieving the emission reduction targets set out in the Climate City Contract.
+- Analysis of reference indicators and degree of progress in achieving emission reduction targets: The aim is to analyse the benchmark indicators and assess the degree of progress in achieving the emission reduction targets set out in the Climate City Contract.
 
-Review of the Climate City Contracts based on the results of the evaluation process, including assessment of the effectiveness of the monitoring and evaluation process and identification of areas for improvement: Refers to the review of the Climate City Contracts based on the results of the evaluation process.
+- Review of the Climate City Contracts based on the results of the evaluation process, including assessment of the effectiveness of the monitoring and evaluation process and identification of areas for improvement: Refers to the review of the Climate City Contracts based on the results of the evaluation process.
 
-0
-7
 
 The timelines below are indicative and may be modified and adapted as deemed necessary, keeping the maximum timeframe for a 2nd version of the Climate City Contract to a maximum of 2 years.
 
@@ -1528,19 +1209,14 @@ The timelines below are indicative and may be modified and adapted as deemed nec
 |  T10 | Drafting of the 2nd version of the Climate Accords based on the results of the assessment and monitoring process | M16 | M24  |
 |  2ND CA | 2nd version Climate City Contract | M1 | M24  |
 
-Climate City Contract - Zaragoza
-T
 
 ![img-13.jpeg](img-13.jpeg)
 
-Climate City Contract - Zaragoza
-2
 citiES 2030
 
 ![img-14.jpeg](img-14.jpeg)
 
 # ANNEX 3: Individual Signatory Commitments
-8
 
 # Annex III: City stakeholders' commitments
 
@@ -1561,7 +1237,6 @@ Currently, through a series of sectoral events, the City Council is communicatin
 |  To date, there are two letter of support from REPSOL and CEPSA, which are included below. Future iterations of this Climate City Contract will include the list of organisations and their specific commitments that this entity makes in relation to the Climate City Contract.  |
 |  Given the proximity of the election period, it has not been considered appropriate to ask for endorsements, but agreements with business organisations such as CEOE and CEPYME are ready, which will be launched with the new corporation and will be included in the next iteration of this Agreement.  |
 
-Climate City Contract - Zaragoza
 ![img-15.jpeg](img-15.jpeg)
 
-# Zaragoza
+Zaragoza
