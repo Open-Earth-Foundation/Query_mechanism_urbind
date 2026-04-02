@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import inspect
 import logging
-from typing import Callable, Literal
+from typing import Callable, Literal, NoReturn
 
 from agents.exceptions import MaxTurnsExceeded
 
@@ -251,8 +251,8 @@ def run_pipeline(
         Run paths containing output artifacts
 
     Raises:
-        ValueError: When standard-mode research-question refinement fails or
-            returns an empty research question.
+        ValueError: When standard-mode research-question refinement fails,
+            raises, or returns an empty research question.
         Exception: Any unexpected exception from the write phase is re-raised after
             ``run_logger.finalize("failed")`` and log handler teardown have run, so
             that ``error_log.txt`` and ``run.json`` are always written on failure.
@@ -272,8 +272,10 @@ def run_pipeline(
     run_log_handler = attach_run_file_logger(paths.base_dir)
 
     def _fail_research_question_refinement(
-        message: str, exc: Exception | None = None
-    ) -> None:
+        message: str,
+        exc: Exception | None = None,
+    ) -> NoReturn:
+        """Finalize the run and raise a user-facing refinement failure."""
         run_logger.record_decision(
             {
                 "status": "error",
@@ -321,6 +323,12 @@ def run_pipeline(
                 log_llm_payload=log_llm_payload,
             )
         except (MaxTurnsExceeded, ValueError) as exc:
+            _fail_research_question_refinement(refinement_failure_message, exc)
+        except Exception as exc:
+            logger.exception(
+                "Unexpected error during research question refinement for run_id=%s",
+                run_id_value,
+            )
             _fail_research_question_refinement(refinement_failure_message, exc)
 
         candidate = refinement.research_question.strip()

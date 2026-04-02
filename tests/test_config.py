@@ -26,6 +26,8 @@ def _base_config_lines() -> list[str]:
         "  followup_router_max_excerpts_per_source: 50",
         "assumptions_reviewer:",
         "  model: openai/gpt-5.4-mini",
+        "benchmark_fact_judge:",
+        "  model: openai/gpt-5.4-mini",
         "retry:",
         "  backoff_base_seconds: 1.0",
         "  backoff_max_seconds: 30.0",
@@ -255,6 +257,8 @@ def test_load_config_applies_chat_and_assumptions_defaults_when_sections_missing
     assert config.chat.followup_router_max_history_messages == 6
     assert config.chat.followup_router_max_excerpts_per_source == 50
     assert config.assumptions_reviewer.model == "openai/gpt-5.4-mini"
+    assert config.benchmark_fact_judge.model == "openai/gpt-5.4-mini"
+    assert config.benchmark_fact_judge.max_output_tokens == 600
 
 
 def test_load_config_applies_retry_defaults_when_section_missing(tmp_path: Path) -> None:

@@ -351,6 +351,7 @@ def test_run_pipeline_fails_when_refinement_raises(
         runs_dir=tmp_path / "output",
         markdown_dir=docs_dir,
     )
+    run_id = "refinement-max-turns"
 
     def _raise_refinement_error(
         question: str,
@@ -365,7 +366,60 @@ def test_run_pipeline_fails_when_refinement_raises(
         run_pipeline(
             question="What initiatives exist for Munich?",
             config=config,
+            run_id=run_id,
             markdown_func=_stub_markdown,
             refine_question_func=_raise_refinement_error,
             writer_func=_stub_writer,
         )
+
+    run_dir = config.runs_dir / run_id
+    run_log = json.loads((run_dir / "run.json").read_text(encoding="utf-8"))
+    assert run_log["status"] == "failed"
+    assert run_log["finish_reason"] == "research_question_refinement_failed"
+    assert Path(run_log["artifacts"]["error_log"]).exists()
+    assert (run_dir / "run_summary.txt").exists()
+
+
+def test_run_pipeline_finalizes_when_refinement_raises_unexpected_error(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.setenv("OPENROUTER_API_KEY", "test")
+
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir()
+    (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
+
+    config = _build_test_config(
+        runs_dir=tmp_path / "output",
+        markdown_dir=docs_dir,
+    )
+    run_id = "refinement-runtime-error"
+
+    def _raise_refinement_error(
+        question: str,
+        config: AppConfig,
+        api_key: str,
+        **_kwargs: dict[str, object],
+    ) -> ResearchQuestionRefinement:
+        _ = question, config, api_key
+        raise RuntimeError("malformed model payload")
+
+    with pytest.raises(ValueError, match="Could not prepare the research query"):
+        run_pipeline(
+            question="What initiatives exist for Munich?",
+            config=config,
+            run_id=run_id,
+            markdown_func=_stub_markdown,
+            refine_question_func=_raise_refinement_error,
+            writer_func=_stub_writer,
+        )
+
+    run_dir = config.runs_dir / run_id
+    run_log = json.loads((run_dir / "run.json").read_text(encoding="utf-8"))
+    error_log = (run_dir / "error_log.txt").read_text(encoding="utf-8")
+
+    assert run_log["status"] == "failed"
+    assert run_log["finish_reason"] == "research_question_refinement_failed"
+    assert Path(run_log["artifacts"]["error_log"]).exists()
+    assert "RuntimeError: malformed model payload" in error_log

@@ -8,14 +8,15 @@ from backend.benchmarks.gold_recall.models import FactJudgeDecision
 from backend.utils.config import AppConfig
 from backend.utils.prompts import load_prompt
 
-FACT_JUDGE_MODEL = "openai/gpt-5.4-mini"
-
 if TYPE_CHECKING:
     from agents import Agent
 
 
 def build_fact_judge_agent(config: AppConfig, api_key: str) -> Agent:
-    """Build the LLM-as-judge agent used for fact presence checks."""
+    """Build the LLM-as-judge agent used for fact presence checks.
+
+    Model and generation settings come from ``config.benchmark_fact_judge``.
+    """
     from agents import Agent, function_tool
     from backend.services.agents import build_model_settings, build_openrouter_model
 
@@ -25,16 +26,17 @@ def build_fact_judge_agent(config: AppConfig, api_key: str) -> Agent:
         / "benchmark_fact_judge_system.md"
     )
     instructions = load_prompt(prompt_path)
+    judge_cfg = config.benchmark_fact_judge
     model = build_openrouter_model(
-        FACT_JUDGE_MODEL,
+        judge_cfg.model,
         api_key,
         config.openrouter_base_url,
         client_max_retries=max(config.retry.max_attempts - 1, 0),
     )
     settings = build_model_settings(
-        temperature=0.0,
-        max_output_tokens=600,
-        reasoning_effort="high",
+        temperature=judge_cfg.temperature,
+        max_output_tokens=judge_cfg.max_output_tokens,
+        reasoning_effort=judge_cfg.reasoning_effort,
     )
 
     @function_tool
@@ -87,4 +89,4 @@ def judge_fact_presence(
     raise ValueError("Fact judge did not return structured output.")
 
 
-__all__ = ["FACT_JUDGE_MODEL", "build_fact_judge_agent", "judge_fact_presence"]
+__all__ = ["build_fact_judge_agent", "judge_fact_presence"]

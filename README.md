@@ -353,8 +353,9 @@ Behavior notes:
 - `gold_chunk_texts` should store the canonical chunk text for each gold slot.
   The scorer still supports containment fallback, but the fixture data should
   keep the actual chunk text in JSON.
-- Stage B and Stage C fact verification use an LLM fact judge
-  (`openai/gpt-5.4-mini`) to handle paraphrases.
+- Stage B and Stage C fact verification use an LLM fact judge configured under
+  `benchmark_fact_judge` in `llm_config.yaml` (model, temperature,
+  `max_output_tokens`, `reasoning_effort`) to handle paraphrases.
 
 Outputs are written to `output/benchmarks/recall/<benchmark_id>/`:
 
