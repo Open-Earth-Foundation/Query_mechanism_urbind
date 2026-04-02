@@ -251,11 +251,13 @@ def run_pipeline(
         Run paths containing output artifacts
 
     Raises:
-        ValueError: When standard-mode research-question refinement fails,
-            raises, or returns an empty research question.
-        Exception: Any unexpected exception from the write phase is re-raised after
-            ``run_logger.finalize("failed")`` and log handler teardown have run, so
-            that ``error_log.txt`` and ``run.json`` are always written on failure.
+        ValueError: When standard-mode research-question refinement raises
+            ``MaxTurnsExceeded`` or ``ValueError``, or returns an empty
+            research question.
+        Exception: Any unexpected exception from research-question refinement or the
+            write phase is re-raised after ``run_logger.finalize("failed")`` and
+            log handler teardown have run, so that ``error_log.txt`` and
+            ``run.json`` are always written on failure.
     """
     api_key = (
         api_key_override.strip()
@@ -329,7 +331,23 @@ def run_pipeline(
                 "Unexpected error during research question refinement for run_id=%s",
                 run_id_value,
             )
-            _fail_research_question_refinement(refinement_failure_message, exc)
+            run_logger.record_decision(
+                {
+                    "status": "error",
+                    "run_id": run_id_value,
+                    "reason": "Unexpected research question refinement error",
+                    "error": {
+                        "code": "RESEARCH_QUESTION_REFINEMENT_UNEXPECTED_ERROR",
+                        "message": str(exc) or exc.__class__.__name__,
+                    },
+                }
+            )
+            run_logger.finalize(
+                "failed",
+                finish_reason="research_question_refinement_unexpected_error",
+            )
+            detach_run_file_logger(run_log_handler)
+            raise
 
         candidate = refinement.research_question.strip()
         if candidate:

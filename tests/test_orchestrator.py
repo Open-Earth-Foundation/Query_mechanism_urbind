@@ -384,6 +384,7 @@ def test_run_pipeline_finalizes_when_refinement_raises_unexpected_error(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
+    """Unexpected refinement errors should finalize the run and then re-raise."""
     monkeypatch.setenv("OPENROUTER_API_KEY", "test")
 
     docs_dir = tmp_path / "documents"
@@ -405,7 +406,7 @@ def test_run_pipeline_finalizes_when_refinement_raises_unexpected_error(
         _ = question, config, api_key
         raise RuntimeError("malformed model payload")
 
-    with pytest.raises(ValueError, match="Could not prepare the research query"):
+    with pytest.raises(RuntimeError, match="malformed model payload"):
         run_pipeline(
             question="What initiatives exist for Munich?",
             config=config,
@@ -420,6 +421,10 @@ def test_run_pipeline_finalizes_when_refinement_raises_unexpected_error(
     error_log = (run_dir / "error_log.txt").read_text(encoding="utf-8")
 
     assert run_log["status"] == "failed"
-    assert run_log["finish_reason"] == "research_question_refinement_failed"
+    assert run_log["finish_reason"] == "research_question_refinement_unexpected_error"
+    assert (
+        run_log["decisions"][-1]["error"]["code"]
+        == "RESEARCH_QUESTION_REFINEMENT_UNEXPECTED_ERROR"
+    )
     assert Path(run_log["artifacts"]["error_log"]).exists()
     assert "RuntimeError: malformed model payload" in error_log
