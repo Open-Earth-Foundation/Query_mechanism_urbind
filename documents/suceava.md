@@ -5624,15 +5624,13 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of Contents
 
-Introduction ... 4
-Goal: Climate neutrality by 2030 ... 7
-Key priorities and strategic interventions ... 9
-Principles and process ... 11
-Signatories ... 15
-Contract with signatures ... 16
-Climate-Neutrality Commitments
-
-O
+- Introduction
+- Goal: Climate neutrality by 2030
+- Key priorities and strategic interventions
+- Principles and process
+- Signatories
+- Contract with signatures
+- Climate-Neutrality Commitments
 
 # 1 Introduction
 

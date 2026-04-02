@@ -181,6 +181,14 @@ class CityListResponse(BaseModel):
     markdown_dir: str
 
 
+class CityMarkdownResponse(BaseModel):
+    """Response body for one city's raw markdown source document."""
+
+    city_name: str
+    content: str
+    source_paths: list[str]
+
+
 class CityGroup(BaseModel):
     """Predefined city group exposed to frontend selection."""
 

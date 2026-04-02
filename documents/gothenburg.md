@@ -22,30 +22,26 @@ O
 
 # Table of Contents
 
-Table of Contents ... 2
-Summary ... 3
-List of figures ... 7
-List of tables ... 7
-Abbreviations and acronyms ... 8
-Introduction ... 10
-Part A – Current State of Climate Action ... 25
-Module A-1 Greenhouse Gas Emissions Baseline Inventory ... 25
-Module A-2 Current Policies and Strategies Assessment ... 38
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality ... 57
-Part B – Pathways towards Climate Neutrality by 2030 ... 66
-Module B-1 Climate Neutrality Scenarios and Impact Pathways ... 68
-Module B-2 Climate Neutrality Portfolio Design ... 87
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 98
-Part C – Enabling Climate Neutrality by 2030 ... 113
-Module C-1 Governance Innovation Interventions ... 113
-Module C-2 Social Innovation Interventions ... 134
-Outlook and next steps ... 145
-Annexes ... 146
-City of Gothenburg
-
-Climate Neutrality Action Plan
-
-O
+- Summary
+- List of figures
+- List of tables
+- Abbreviations and acronyms
+- Introduction
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- Module C-2 Social Innovation Interventions
+- Outlook and next steps
+- Annexes
+- City of Gothenburg
+- Climate Neutrality Action Plan
 
 # Summary
 
@@ -3859,14 +3855,13 @@ Climate-Neutrality Commitments
 
 # Table of contents
 
-Table of contents ... 2
-Introduction ... 3
-Goal: Climate neutrality by 2030 ... 4
-Strategic priorities ... 5
-Process and principles ... 7
-Signatories ... 12
-City of Gothenburg
-Climate-Neutrality Commitments
+- Introduction
+- Goal: Climate neutrality by 2030
+- Strategic priorities
+- Process and principles
+- Signatories
+- City of Gothenburg
+- Climate-Neutrality Commitments
 
 # 1 Introduction
 

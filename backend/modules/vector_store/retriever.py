@@ -187,7 +187,9 @@ def _selection_mode_priority(selection_mode: str) -> int:
     return 0
 
 
-def _assign_seed_ranks(rows_by_id: dict[str, dict[str, Any]]) -> None:
+def _assign_seed_ranks(
+    rows_by_id: dict[str, dict[str, Any]],
+) -> None:
     """Assign deterministic 1-based ranks to direct seed rows."""
     ranked_rows = sorted(
         rows_by_id.values(),
@@ -296,6 +298,10 @@ def _retrieve_for_city_query(
         },
     )
     rows = _extract_query_rows(payload)
+    query_ranks_by_chunk_id = {
+        str(row["chunk_id"]): query_rank
+        for query_rank, row in enumerate(rows, start=1)
+    }
     passing = [
         _build_seed_row(
             row,
@@ -618,7 +624,7 @@ def retrieve_chunks_for_queries(
         )
         per_city_stats.append(
             {
-                    "city_key": city_key,
+                "city_key": city_key,
                 "city_name": city_name,
                 "retrieved_unique_chunks": len(city_rows),
                 "query_stats": query_stats,

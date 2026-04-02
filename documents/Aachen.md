@@ -18,81 +18,63 @@ Q
 
 # Table of Contents
 
-Summary 4
-
-List of figures 5
-
-List of tables 5
-
-List of mandatory tables. 6
-
-List of abbreviations 6
-
-Introduction 7
-
-Aachen - location and integration into the region 7
-Aachen - Socio-demographics 8
-Aachen - spatial structure and building stock 10
-Aachen - transport structure 11
-Aachen - Economic structure 12
-Aachen - Energetic structure 13
-Aachen - climate protection target for 2030 14
-Existing planning framework as a guard rail for the city of Aachen's climate protection policy 15
-The Integrated Climate Protection Concept 2020 (IKSK 2020) for Aachen 17
-The Integrated Climate Protection Concept 2030 (IKSK 2.0) for Aachen 19
-Relationship between the action plans from the CCC Action Plan, the IKSK 2020 and the IKSK 2.0 22
-Climate neutrality - a joint task for the entire urban society 23
-The Aachen Alliance for Change 24
-Work process for the development of the Climate City Contract Action Plan 29
-Implementation of the Action Plan and iterations of the Aachen Climate City Contract 31
-
-Part A - Current State of Climate Action 32
-
-Module A-1 Greenhouse Gas Emissions Baseline Inventory 32
-
-GhG Emissions Baseline inventory 32
-
-Module A-2 Current Policies and Strategies Assessment 35
-
-Description &amp; assessment of policies 35
-Determining the 2030 emissions gap for Aachen 52
-
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality 55
-
-(A-3.1) Description of urban systems, systemic barriers, and opportunities 55
-Area of influence consumption and role model 56
-Area of influence Supply and offer 57
-Area of influence Counselling and motivating 57
-Regulatory sphere of influence 57
-The challenge of monitoring greenhouse gas emissions 58
-Dependencies and obstacles to municipal climate protection 59
-Overall assessment of the Aachen network for climate protection 65
-stadtaachen
-
-Part B - Pathways towards Climate Neutrality by 2030... 68
-Module B-1 Climate Neutrality Scenarios and Impact Pathways' ... 68
-Module B-2 Climate Neutrality Portfolio Design ... 76
-Mobility... 76
-Buildings &amp; heating... 89
-Power generation, waste and AFOLU - Forestry, agriculture and land use ... 104
-Visualisation of the results of the economic model for the reduction of GHG emissions in 2030... 114
-Effects of the co-signatories' commitments on the path to climate neutrality ... 114
-(B-2.3) Summary strategy for residual emissions ... 115
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 118
-Monitoring and controlling instruments ... 130
-Indicator system ... 130
-Recording of indicators ... 131
-Part C - Enabling Climate Neutrality by 2030... 132
-Module C-1 Governance Innovation Interventions ... 132
-(C-1.1) Description or visualisation of the participatory governance model for climate neutrality .. 132
-Module C-2 Social Innovation Interventions ... 133
-(C-2.2) Description of social innovation interventions ... 134
-Outlook and next steps ... 135
-Plans for next CCC and CCC Action Plan iteration ... 135
-Appendix 1: Economic Model x Actions of the FRAME partners ... 136
-stadtaachen
-
-O
+- Summary
+- List of figures
+- List of tables
+- List of mandatory tables
+- List of abbreviations
+- Introduction
+- Aachen - location and integration into the region
+- Aachen - Socio-demographics
+- Aachen - spatial structure and building stock
+- Aachen - transport structure
+- Aachen - Economic structure
+- Aachen - Energetic structure
+- Aachen - climate protection target for 2030
+- Existing planning framework as a guard rail for the city of Aachen's climate protection policy
+- The Integrated Climate Protection Concept 2020 (IKSK 2020) for Aachen
+- The Integrated Climate Protection Concept 2030 (IKSK 2.0) for Aachen
+- Relationship between the action plans from the CCC Action Plan, the IKSK 2020 and the IKSK 2.0
+- Climate neutrality - a joint task for the entire urban society
+- The Aachen Alliance for Change
+- Work process for the development of the Climate City Contract Action Plan
+- Implementation of the Action Plan and iterations of the Aachen Climate City Contract
+- Part A - Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- GhG Emissions Baseline inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Description &amp; assessment of policies
+- Determining the 2030 emissions gap for Aachen
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- (A-3.1) Description of urban systems, systemic barriers, and opportunities
+- Area of influence consumption and role model
+- Area of influence Supply and offer
+- Area of influence Counselling and motivating
+- Regulatory sphere of influence
+- The challenge of monitoring greenhouse gas emissions
+- Dependencies and obstacles to municipal climate protection
+- Overall assessment of the Aachen network for climate protection
+- Part B - Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways'
+- Module B-2 Climate Neutrality Portfolio Design
+- Mobility
+- Buildings &amp; heating
+- Power generation, waste and AFOLU - Forestry, agriculture and land use
+- Visualisation of the results of the economic model for the reduction of GHG emissions in 2030
+- Effects of the co-signatories' commitments on the path to climate neutrality
+- (B-2.3) Summary strategy for residual emissions
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Monitoring and controlling instruments
+- Indicator system
+- Recording of indicators
+- Part C - Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- (C-1.1) Description or visualisation of the participatory governance model for climate neutrality
+- Module C-2 Social Innovation Interventions
+- (C-2.2) Description of social innovation interventions
+- Outlook and next steps
+- Plans for next CCC and CCC Action Plan iteration
+- Appendix 1: Economic Model x Actions of the FRAME partners
 
 # Summary
 
@@ -6035,96 +6017,83 @@ Councillor for Urban Development, Construction and Mobility
 
 # Table of contents
 
-Foreword ... 3
-
-Aachen's path to climate neutrality in 2030 ... 12
-The key results at a glance ... 14
-Governance ... 16
-Energy ... 18
-Building ... 20
-Mobility ... 21
-Economy ... 23
-Social transformation ... 25
-Compensation ... 27
-The common path: project organisation and networking ... 30
-The "IKSK 2020" ... 31
-Control and networking: The project team of the city of Aachen ... 33
-Shaping and activating: The IKSK team ... 34
-Understanding and anchoring: climate protection conference, climate council and political participation ... 35
-This is our starting point ... 36
-Aachen - location and integration into the region ... 37
-Sociodemographics ... 39
-Spatial structure and building stock ... 41
-Transport structure ... 42
-Economic structure ... 45
-Energetic structure ... 46
-Focus on the transformation ... 48
-Where do we want to go? ... 49
-What do we mean by transformation? ... 50
-Transformation task: creating governance structures ... 52
-Transformation task: accelerating processes ... 55
-Transformation task: Carrying out the implementation ... 56
-Transformation task: Bringing change to urban society on a broad scale ... 58
-Transformation challenge: limits to land and resource consumption ... 59
-Transformation challenge: acting with social responsibility ... 60
-Transformation benefits: Climate protection and services of general interest ... 61
-Clearly describe climate neutrality ... 62
-The goal of climate neutrality 63
-Determine the balance sheet limits 64
-The initial balance sheet 66
-Transferring the goals of the Paris Climate Agreement to Aachen 79
-
-Identifying the limits and scope of action of the City of Aachen 81
-
-Describing the municipal room for manoeuvre 82
-Room for manoeuvre Consumption and role model 84
-Room for manoeuvre Supply and offer 85
-Regulating room for manoeuvre 86
-Room for manoeuvre Advising and motivating 88
-Assessment of the room for manoeuvre 89
-
-Thinking from the goal - Climate-neutral Aachen 2030 scenario 91
-
-The development path to climate neutrality 95
-Development paths in the consumption sectors 98
-Derive a recommendation for an implementation strategy 102
-
-The IKSK 2023 Aachen's path to climate neutrality 103
-
-Structure of the strategy 104
-Portfolio plan at a glance (levels 1 and 2) 106
-Savings targets, areas of influence of the municipal family and contribution of the ICSK at a glance 108
-Governance 109
-Energy supply 118
-Building 131
-Mobility 142
-Economy 153
-Social transformation 165
-Compensation 184
-
-Cost-benefit analysis 193
-
-Methodological approach 194
-Estimate investment costs 195
-Regional added value 203
-Categorisation of the results 208
-
-Powerfully controlling the process 211
-
-What control tasks are there? 212
-Who can take over the control tasks? 216
-Decision-making processes 219
-Internal and external communication 220
-Anchoring in the organisational structure 221
-8
-
-Keeping an eye on the goal: Monitoring and controlling ...222
-Promoting an inherent dynamic: An overview of the administration's contribution to the Climate City Contract...225
-Overview of contributions of the fields of action to greenhouse gas reduction...226
-Overview of costs ...229
-Overview of time spent ...232
-Overview of schedules...235
-Conclusion...237
+- Foreword
+- Aachen's path to climate neutrality in 2030
+- The key results at a glance
+- Governance
+- Energy
+- Building
+- Mobility
+- Economy
+- Social transformation
+- Compensation
+- The common path: project organisation and networking
+- The "IKSK 2020"
+- Control and networking: The project team of the city of Aachen
+- Shaping and activating: The IKSK team
+- Understanding and anchoring: climate protection conference, climate council and political participation
+- This is our starting point
+- Aachen - location and integration into the region
+- Sociodemographics
+- Spatial structure and building stock
+- Transport structure
+- Economic structure
+- Energetic structure
+- Focus on the transformation
+- Where do we want to go
+- What do we mean by transformation
+- Transformation task: creating governance structures
+- Transformation task: accelerating processes
+- Transformation task: Carrying out the implementation
+- Transformation task: Bringing change to urban society on a broad scale
+- Transformation challenge: limits to land and resource consumption
+- Transformation challenge: acting with social responsibility
+- Transformation benefits: Climate protection and services of general interest
+- Clearly describe climate neutrality
+- The goal of climate neutrality
+- Determine the balance sheet limits
+- The initial balance sheet
+- Transferring the goals of the Paris Climate Agreement to Aachen
+- Identifying the limits and scope of action of the City of Aachen
+- Describing the municipal room for manoeuvre
+- Room for manoeuvre Consumption and role model
+- Room for manoeuvre Supply and offer
+- Regulating room for manoeuvre
+- Room for manoeuvre Advising and motivating
+- Assessment of the room for manoeuvre
+- Thinking from the goal - Climate-neutral Aachen 2030 scenario
+- The development path to climate neutrality
+- Development paths in the consumption sectors
+- Derive a recommendation for an implementation strategy
+- The IKSK 2023 Aachen's path to climate neutrality
+- Structure of the strategy
+- Portfolio plan at a glance (levels 1 and 2)
+- Savings targets, areas of influence of the municipal family and contribution of the ICSK at a glance
+- Governance
+- Energy supply
+- Building
+- Mobility
+- Economy
+- Social transformation
+- Compensation
+- Cost-benefit analysis
+- Methodological approach
+- Estimate investment costs
+- Regional added value
+- Categorisation of the results
+- Powerfully controlling the process
+- What control tasks are there
+- Who can take over the control tasks
+- Decision-making processes
+- Internal and external communication
+- Anchoring in the organisational structure
+- Keeping an eye on the goal: Monitoring and controlling
+- Promoting an inherent dynamic: An overview of the administration's contribution to the Climate City Contract
+- Overview of contributions of the fields of action to greenhouse gas reduction
+- Overview of costs
+- Overview of time spent
+- Overview of schedules
+- Conclusion
 
 # List of illustrations
 
@@ -11254,14 +11223,14 @@ info@wuppertalinst.org
 
 # Table of contents
 
-Contents of the Aachen Way climate-neutral 2030 work programme for the administration...1
-Governance...3
-Energy supply...32
-Building...54
-Mobility...74
-Economy...92
-Social transformation...119
-Compensation...131
+- Contents of the Aachen Way climate-neutral 2030 work programme for the administration
+- Governance
+- Energy supply
+- Building
+- Mobility
+- Economy
+- Social transformation
+- Compensation
 
 # The IKSK "Aachen: The path to climate neutrality 2030" is the administration's contribution to the Climate City Contract
 
@@ -15662,68 +15631,60 @@ This report may only be reproduced in unabridged form. Publication, even in extr
 
 # Table of contents
 
-List of illustrations 5
-List of tables 7
-List of abbreviations 9
-
-Reason for the concept 11
-Summary 13
-Description of the initial situation 21
-
-Inventory 22
-Framework conditions and mission statement 22
-Overview of strategic concepts 23
-Project milestones 24
-
-Impact analysis 24
-Method and framework conditions for municipal greenhouse gas balancing 24
-Final energy and greenhouse gas balancing 25
-Changes to the accounting system 29
-Balancing traffic-related emissions for Aachen 31
-Accounting for mobility to date 31
-CO2 emissions in the city of Aachen's sphere of influence 32
-
-Overall climate protection strategy Aachen 2030 37
-Pioneering strategies in existing concepts and action plans 37
-Adopted targets, target achievement and target paths 41
-Reduction targets and target achievement 41
-Opportunities and limits of municipal action against climate change 47
-Existing potential 50
-Potential in the 2030 strategy concept - status 2014 50
-Update of the calculations in 2019 52
-Potentials and scenarios for the transport sector 61
-
-Action programme with overview of measures 2025 65
-Presentation of the adopted action plans in various concepts 65
-4
-
-Important measures of the energy policy work programme 66
-Overview of the 2025 action plan 70
-Urban development planning 70
-Municipal buildings 71
-Energy supply 72
-Mobility 73
-Building refurbishment (private, commercial, non-municipal) 75
-Communication 75
-Economy 76
-Profile of measures 77
-Urban development planning 78
-Municipal buildings 86
-Energy supply 96
-Mobility 101
-Field of action 4.1: Reduction of car traffic in urban areas 102
-Field of action 4.2: Reduction of car traffic in regional transport 111
-Field of action 4.3: Reduction of vehicle emissions 119
-Building refurbishment 125
-Communication 130
-Economy 139
-Communication and participation 149
-Communication 149
-Participation 150
-Stabilisation and controlling 155
-References 157
-Appendix 159
-5
+- List of illustrations
+- List of tables
+- List of abbreviations
+- Reason for the concept
+- Summary
+- Description of the initial situation
+- Inventory
+- Framework conditions and mission statement
+- Overview of strategic concepts
+- Project milestones
+- Impact analysis
+- Method and framework conditions for municipal greenhouse gas balancing
+- Final energy and greenhouse gas balancing
+- Changes to the accounting system
+- Balancing traffic-related emissions for Aachen
+- Accounting for mobility to date
+- CO2 emissions in the city of Aachen's sphere of influence
+- Overall climate protection strategy Aachen 2030
+- Pioneering strategies in existing concepts and action plans
+- Adopted targets, target achievement and target paths
+- Reduction targets and target achievement
+- Opportunities and limits of municipal action against climate change
+- Existing potential
+- Potential in the 2030 strategy concept - status 2014
+- Update of the calculations in 2019
+- Potentials and scenarios for the transport sector
+- Action programme with overview of measures 2025
+- Presentation of the adopted action plans in various concepts
+- Important measures of the energy policy work programme
+- Overview of the 2025 action plan
+- Urban development planning
+- Municipal buildings
+- Energy supply
+- Mobility
+- Building refurbishment (private, commercial, non-municipal)
+- Communication
+- Economy
+- Profile of measures
+- Urban development planning
+- Municipal buildings
+- Energy supply
+- Mobility
+- Field of action 4.1: Reduction of car traffic in urban areas
+- Field of action 4.2: Reduction of car traffic in regional transport
+- Field of action 4.3: Reduction of vehicle emissions
+- Building refurbishment
+- Communication
+- Economy
+- Communication and participation
+- Communication
+- Participation
+- Stabilisation and controlling
+- References
+- Appendix
 
 # List of illustrations
 

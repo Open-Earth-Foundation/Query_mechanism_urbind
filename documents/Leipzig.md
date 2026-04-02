@@ -19,29 +19,25 @@ Climate Neutrality Action Plan
 
 # Table of Contents
 
-Table of Contents ... 2
-Summary ... 3
-List of figures ... 4
-List of tables ... 4
-Introduction ... 5
-Part A - Current State of Climate Action ... 17
-Module A-1 Greenhouse Gas Emissions Baseline Inventory ... 17
-Module A-2 Current Policies and Strategies Assessment ... 23
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality ... 41
-Part B - Pathways towards Climate Neutrality by 2030 ... 52
-Module B-1 Climate Neutrality Scenarios and Impact Pathways ... 52
-Module B-2 Climate Neutrality Portfolio Design ... 64
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 179
-Part C - Enabling Climate Neutrality by 2030 ... 210
-Module C -1 Governance Innovation Interventions ... 210
-Module C- 2 Social Innovation Interventions ... 219
-Outlook and next steps ... 241
-Annexes ... 242
-City of Leipzig
-
-Climate Neutrality Action Plan
-
-O
+- Summary
+- List of figures
+- List of tables
+- Introduction
+- Part A - Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B - Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C - Enabling Climate Neutrality by 2030
+- Module C -1 Governance Innovation Interventions
+- Module C- 2 Social Innovation Interventions
+- Outlook and next steps
+- Annexes
+- City of Leipzig
+- Climate Neutrality Action Plan
 
 # Summary
 
@@ -4948,15 +4944,14 @@ C
 
 # Table of contents
 
-Introduction ... 3
-Goal: climate neutrality by 2030 ... 7
-strategic priorities ... 12
-Process and principles ... 16
-Signatory ... 19
-Annexes ... 25
-
-Annex 1 - letter from the mayor ... 25
-Annex 2 - Preamble to the Climate City Contract ... 27
+- Introduction
+- Goal: climate neutrality by 2030
+- strategic priorities
+- Process and principles
+- Signatory
+- Annexes
+- Annex 1 - letter from the mayor
+- Annex 2 - Preamble to the Climate City Contract
 
 # List of tables
 

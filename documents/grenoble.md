@@ -25,42 +25,38 @@ Q
 
 # Table of Contents
 
-Table of Contents ... 2
-Summary ... 3
-List of figures ... 8
-List of tables ... 8
-Abbreviations and acronyms ... 9
-Introduction to the metropole and the climate city contract ... 10
-Work process according to the transition map ... 16
-Part A – Current State of Climate Action ... 23
-Module A-1 Greenhouse Gas Emissions Baseline Inventory ... 23
-The Observatory letter of 2023: summary and main lessons ... 27
-Details regarding the industrial sector and EU ETS ... 30
-Module A-2 Current Policies and Strategies Assessment ... 31
-Introduction to the French framework ... 31
-National strategies and plans ... 32
-Regional strategies and plans ... 33
-Local strategies and plans ... 33
-List of policies, strategies and regulations ... 34
-Evaluation of strategies, plans and regulations ... 40
-Emission gap ... 54
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality ... 57
-Part B – Pathways towards Climate Neutrality by 2030 ... 77
-Module B-1 Climate Neutrality Scenarios and Impact Pathways ... 77
-Module B-2 Climate Neutrality Portfolio Design ... 86
-Summary strategy for residual emissions ... 122
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 124
-Part C – Enabling Climate Neutrality by 2030 ... 140
-Module C-1 Governance Innovation Interventions ... 140
-Internal governance of Grenoble Alpes Metropole ... 141
-External partnership governance ... 144
-Module C-2 Social Innovation Interventions ... 160
-Outlook and next steps ... 170
-GRENOBLEALPES METROPOLE
-
-Climate Neutrality Action Plan
-
-O
+- Summary
+- List of figures
+- List of tables
+- Abbreviations and acronyms
+- Introduction to the metropole and the climate city contract
+- Work process according to the transition map
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- The Observatory letter of 2023: summary and main lessons
+- Details regarding the industrial sector and EU ETS
+- Module A-2 Current Policies and Strategies Assessment
+- Introduction to the French framework
+- National strategies and plans
+- Regional strategies and plans
+- Local strategies and plans
+- List of policies, strategies and regulations
+- Evaluation of strategies, plans and regulations
+- Emission gap
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Summary strategy for residual emissions
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- Internal governance of Grenoble Alpes Metropole
+- External partnership governance
+- Module C-2 Social Innovation Interventions
+- Outlook and next steps
+- GRENOBLEALPES METROPOLE
+- Climate Neutrality Action Plan
 
 # Summary
 
@@ -4221,23 +4217,17 @@ O
 
 # Table of contents
 
-Table of contents ... 2
-Introduction ... 3
-Commitment to climate neutrality ... 6
-Strategic priorities ... 9
-Process and principles ... 14
-Signatories ... 20
-Annexes ... 20
-Contract with signature ... 22
-1
-
-GRENOBLE ALPES
-
-MÉTROPOLE
-
-Climate-Neutrality Commitments
-
-#
+- Introduction
+- Commitment to climate neutrality
+- Strategic priorities
+- Process and principles
+- Signatories
+- Annexes
+- Contract with signature
+- GRENOBLE ALPES
+- MÉTROPOLE
+- Climate-Neutrality Commitments
+- #
 
 # 1 Introduction
 

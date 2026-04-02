@@ -18,30 +18,26 @@ Climate Neutrality Action Plan
 
 # Table of Contents
 
-Table of Contents ... 2
-Summary ... 3
-List of figures ... 7
-List of tables ... 7
-Abbreviations and acronyms ... 8
-Introduction ... 9
-Part A - Current State of Climate Action ... 19
-Module A-1 Greenhouse Gas Emissions Baseline Inventory ... 19
-Module A-2 Current Policies and Strategies Assessment ... 34
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality ... 48
-Part B - Pathways towards Climate Neutrality by 2030 ... 61
-Module B-1 Climate Neutrality Scenarios and Impact Pathways ... 61
-Module B-2 Climate Neutrality Portfolio Design ... 74
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 103
-Part C - Enabling Climate Neutrality by 2030 ... 108
-Module C-1 Governance Innovation Interventions ... 108
-Module C-2 Social Innovation Interventions ... 119
-Outlook and next steps ... 127
-Annexes ... 129
-MISKOLC
-
-Climate Neutrality Action Plan
-
-3
+- Summary
+- List of figures
+- List of tables
+- Abbreviations and acronyms
+- Introduction
+- Part A - Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B - Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C - Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- Module C-2 Social Innovation Interventions
+- Outlook and next steps
+- Annexes
+- MISKOLC
+- Climate Neutrality Action Plan
 
 # Summary
 
@@ -3925,17 +3921,14 @@ O
 
 # Table of contents
 
-Introduction ... 5
-Goal: Climate neutrality by 2030 ... 9
-Strategic priorities ... 12
-Principles and processes ... 19
-Signatories ... 24
-Signed commitments ... 28
-MISKOLC
-
-Climate Neutrality Commitments
-
-O
+- Introduction
+- Goal: Climate neutrality by 2030
+- Strategic priorities
+- Principles and processes
+- Signatories
+- Signed commitments
+- MISKOLC
+- Climate Neutrality Commitments
 
 # Mayor's welcome
 

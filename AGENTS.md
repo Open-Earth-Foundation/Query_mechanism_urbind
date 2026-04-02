@@ -184,6 +184,8 @@ __all__ = ["setup_logger"]
 
 This repo includes **project-level Cursor skills** under `.cursor/skills/` (version-controlled). These skills are available to anyone who checks out the repository and opens it in Cursor. See [Cursor Skills docs](https://cursor.com/docs/context/skills).
 
+For Codex-local usage, `.agents/` is treated as a generated local mirror and should not be committed. Keep `.cursor/skills/` as the repo source of truth and sync into `.agents/` locally when needed.
+
 Skills included:
 
 - `simplify-after-change`: **Mandatory** after any code change. Simplifies the changed code, removes unnecessary complexity, and keeps behavior identical.

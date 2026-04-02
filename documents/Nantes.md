@@ -18,25 +18,25 @@ NET ZERO CITIES
 
 # Table of contents
 
-Introduction...6
-Drafting of the Climate City Contract...11
-Part A – Current state of Climate Action...14
-A-1 Greenhouse Gas Emissions Baseline Inventory...14
-A-2 Current Policies and Strategies Assessment...20
-A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality...36
-Part B – Pathways towards Climate Neutrality by 2030...44
-B-1 Climate Neutrality Scenarios and Impact Pathways...44
-B-2 Climate Neutrality Portfolio Design...58
-B-3 Indicators for Monitoring, Evaluation and Learning...71
-Part C – Enabling Climate Neutrality by 2030...91
-C-1 Governance Innovations Interventions...91
-C-2 Social Innovation Interventions...98
-Part D – Outlook and next steps...104
-Part E – Annexes...105
-Annexe 1 – Action plan...105
-Mitigation...106
-Adaptation...180
-Annex 2 – French cities framework...191
+- Introduction...6
+- Drafting of the Climate City Contract...11
+- Part A – Current state of Climate Action...14
+- A-1 Greenhouse Gas Emissions Baseline Inventory...14
+- A-2 Current Policies and Strategies Assessment...20
+- A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality...36
+- Part B – Pathways towards Climate Neutrality by 2030...44
+- B-1 Climate Neutrality Scenarios and Impact Pathways...44
+- B-2 Climate Neutrality Portfolio Design...58
+- B-3 Indicators for Monitoring, Evaluation and Learning...71
+- Part C – Enabling Climate Neutrality by 2030...91
+- C-1 Governance Innovations Interventions...91
+- C-2 Social Innovation Interventions...98
+- Part D – Outlook and next steps...104
+- Part E – Annexes...105
+- Annexe 1 – Action plan...105
+- Mitigation...106
+- Adaptation...180
+- Annex 2 – French cities framework...191
 
 Nantes Métropole - Climate City Contract
 Nantes Métropole
@@ -4666,12 +4666,12 @@ O
 
 # Table of contents
 
-Table of contents...2
-Introduction...3
-Goal: Climate neutrality by 2030...6
-Strategic priorities...7
-Process and principles...14
-Sample contract with signatures...19
+- Table of contents...2
+- Introduction...3
+- Goal: Climate neutrality by 2030...6
+- Strategic priorities...7
+- Process and principles...14
+- Sample contract with signatures...19
 Nantes Métropole
 
 Climate-Neutrality Commitments

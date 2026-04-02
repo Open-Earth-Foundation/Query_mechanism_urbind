@@ -25,40 +25,25 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of Contents
 
-Table of Contents 4
-
-Introduction 6
-
-Work Process 7
-
-Part A - Current State of Climate Action 9
-
-Module A-1 Greenhouse Gas Emissions Baseline Inventory 9
-Module A-2 Current Policies and Strategies Assessment 16
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality 27
-
-Part B - Pathways towards Climate Neutrality by 2030 37
-
-Module B-1 Climate Neutrality Scenarios and Impact Pathways 37
-Module B-2 Climate Neutrality Portfolio Design 41
-Module B-3 Indicators for Monitoring, Evaluation and Learning 68
-
-Part C - Enabling Climate Neutrality by 2030 77
-
-Module C-1 Organisational and Governance Innovation Interventions 77
-Module C-2 Social and Other Innovation Interventions 79
-Module C-3 Financing of Action Portfolio 87
-
-Outlook and next steps 89
-
-Annexes 89
-0
-
-Heidelberg
-
-Climate Neutrality Action Plan
-
-#
+- Introduction
+- Work Process
+- Part A - Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B - Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C - Enabling Climate Neutrality by 2030
+- Module C-1 Organisational and Governance Innovation Interventions
+- Module C-2 Social and Other Innovation Interventions
+- Module C-3 Financing of Action Portfolio
+- Outlook and next steps
+- Annexes
+- Heidelberg
+- Climate Neutrality Action Plan
+- #
 
 # Summary
 
@@ -2003,19 +1988,15 @@ The content of this document reflects only the author's view. The European Commi
 
 ## Table of contents
 
-Introduction ... 3
-Goal: Climate neutrality by 2030 ... 4
-Key priorities and strategic interventions ... 5
-Principles and process ... 7
-Signatories ... 16
-Contract with signatures ... 20
-
-Appendix: Individual Signatory Commitments ... 21
-Heidelberg
-
-Climate-Neutrality Commitments
-
-O
+- Introduction
+- Goal: Climate neutrality by 2030
+- Key priorities and strategic interventions
+- Principles and process
+- Signatories
+- Contract with signatures
+- Appendix: Individual Signatory Commitments
+- Heidelberg
+- Climate-Neutrality Commitments
 
 # 1 Introduction
 

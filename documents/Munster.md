@@ -22,82 +22,65 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of Contents
 
-Table of Contents ... 2
-Summary ... 5
-List of figures ... 7
-List of tables ... 8
-Abbreviations and acronyms ... 9
-Introduction ... 11
-Work Process ... 17
-Part A - Current State of Climate Action ... 23
-Module A-1 Greenhouse Gas Emissions Baseline Inventory ... 23
-Energy and greenhouse gas inventory City of Münster ... 23
-Description and assessment of the 2021 energy and greenhouse gas inventory for City of Münster ... 29
-Core results ... 29
-Summary ... 36
-Module A-2 Current Policies and Strategies Assessment ... 38
-Description and assessment of climate protection-related policies ... 59
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality ... 67
-Scope for action by Münster society stakeholder groups and municipal sphere of influence ... 67
-Systemic environment and decision-making levels ... 67
-Building and deep renovation ... 70
-Climate-friendly decision-making by Münster society ... 71
-Work and business ... 72
-Energy supply and renewable energies ... 73
-Mobility ... 76
-Scope for action at a glance ... 77
-STADT MÜNSTER
-
-Climate Neutrality Action Plan
-
-"Münster is becoming a climate city" - citizen participation 86
-Citizen participation in the implementation of municipal climate protection measures 86
-Participation in the "Münster is becoming a climate city" process 89
-Participation in the Climate City Contract 91
-Climate dashboard: data at a glance 94
-
-Part B - Pathways to Climate Neutrality by 2030 95
-
-Module B-1 Climate Neutrality Scenarios and Impact Pathways 95
-
-Münster climate neutrality 2030: strategy and fields of action 95
-Münster climate neutrality 2030: scenario and impact pathways 105
-Münster climate neutrality scenario 2030: co-benefits 114
-
-Module B-2 Climate Neutrality Portfolio Design 115
-
-Münster climate neutrality 2030: List of the portfolio of measures 115
-Münster climate neutrality 2030: from project to principle - the step from planning to action and acceleration 132
-
-Anchoring and monitoring climate protection as a cross-sectional task in the Münster city group 132
-Energy production 133
-Building carbon reduction measures 154
-Mobility 164
-Climate budget 177
-Education and food 187
-Business and academia 202
-Waste 213
-Climate adaptation 214
-Agriculture 215
-
-Module B-3 Indicators for Monitoring, Evaluation and Learning 219
-
-Part C - Enabling Climate Neutrality by 2030 233
-
-Module C-1 Organisational and Governance Innovation Interventions 233
-Module C-2 Social and Other Innovation Interventions 243
-Module C-3 Financing of Action Portfolio 252
-STADT MÜNSTER
-Climate Neutrality Action Plan
-4
-
-Outlook and next steps ... 257
-Annexes and more information ... 257
-STADT MÜNSTER
-
-Climate Neutrality Action Plan
-
-5
+- Summary
+- List of figures
+- List of tables
+- Abbreviations and acronyms
+- Introduction
+- Work Process
+- Part A - Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Energy and greenhouse gas inventory City of Münster
+- Description and assessment of the 2021 energy and greenhouse gas inventory for City of Münster
+- Core results
+- Summary
+- Module A-2 Current Policies and Strategies Assessment
+- Description and assessment of climate protection-related policies
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Scope for action by Münster society stakeholder groups and municipal sphere of influence
+- Systemic environment and decision-making levels
+- Building and deep renovation
+- Climate-friendly decision-making by Münster society
+- Work and business
+- Energy supply and renewable energies
+- Mobility
+- Scope for action at a glance
+- STADT MÜNSTER
+- Climate Neutrality Action Plan
+- "Münster is becoming a climate city" - citizen participation
+- Citizen participation in the implementation of municipal climate protection measures
+- Participation in the "Münster is becoming a climate city" process
+- Participation in the Climate City Contract
+- Climate dashboard: data at a glance
+- Part B - Pathways to Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Münster climate neutrality 2030: strategy and fields of action
+- Münster climate neutrality 2030: scenario and impact pathways
+- Münster climate neutrality scenario 2030: co-benefits
+- Module B-2 Climate Neutrality Portfolio Design
+- Münster climate neutrality 2030: List of the portfolio of measures
+- Münster climate neutrality 2030: from project to principle - the step from planning to action and acceleration
+- Anchoring and monitoring climate protection as a cross-sectional task in the Münster city group
+- Energy production
+- Building carbon reduction measures
+- Mobility
+- Climate budget
+- Education and food
+- Business and academia
+- Waste
+- Climate adaptation
+- Agriculture
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C - Enabling Climate Neutrality by 2030
+- Module C-1 Organisational and Governance Innovation Interventions
+- Module C-2 Social and Other Innovation Interventions
+- Module C-3 Financing of Action Portfolio
+- STADT MÜNSTER
+- Climate Neutrality Action Plan
+- Outlook and next steps
+- Annexes and more information
+- STADT MÜNSTER
+- Climate Neutrality Action Plan
 
 # Summary
 
@@ -5629,20 +5612,15 @@ Climate-Neutrality Commitments
 
 # Table of contents
 
-Introduction ... 1
-Goal: Climate neutrality by 2030 ... 5
-Strategic priorities ... 9
-Process and principles ... 14
-Signatories ... 15
-Contract with signatures ... 54
-Appendixes ... 55
-STADT
-
-MÜNSTER
-
-Climate-Neutrality Commitments
-
-1
+- Introduction
+- Goal: Climate neutrality by 2030
+- Strategic priorities
+- Process and principles
+- Signatories
+- Contract with signatures
+- Appendixes
+- MÜNSTER
+- Climate-Neutrality Commitments
 
 # 1 Introduction
 

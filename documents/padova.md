@@ -20,24 +20,24 @@ O
 
 # Table of contents
 
-Summary...5
-List of figures...7
-List of tables...7
-Abbreviations and acronyms...8
-Introduction...10
-Part A – Current state of climate action...14
-Module A-1 Greenhouse gas emissions baseline inventory...14
-Module A-2 Description of current policies and strategies...25
-Module A-3 Systemic barriers and opportunities to 2030 climate neutrality...37
-Part B – Pathways to Climate Neutrality by 2030...46
-Module B-1 Climate neutrality scenarios and impact pathways...46
-Module B-2 Action Portfolio for Climate Neutrality...52
-Module B-3 Monitoring, evaluation and improvement indicators...82
-Part C – Enabling climate neutrality by 2030...95
-Module C-1 Governance innovation interventions...95
-Module C-2 Social innovation interventions...110
-Outlook and next steps...119
-Annexes...121
+- Summary...5
+- List of figures...7
+- List of tables...7
+- Abbreviations and acronyms...8
+- Introduction...10
+- Part A – Current state of climate action...14
+- Module A-1 Greenhouse gas emissions baseline inventory...14
+- Module A-2 Description of current policies and strategies...25
+- Module A-3 Systemic barriers and opportunities to 2030 climate neutrality...37
+- Part B – Pathways to Climate Neutrality by 2030...46
+- Module B-1 Climate neutrality scenarios and impact pathways...46
+- Module B-2 Action Portfolio for Climate Neutrality...52
+- Module B-3 Monitoring, evaluation and improvement indicators...82
+- Part C – Enabling climate neutrality by 2030...95
+- Module C-1 Governance innovation interventions...95
+- Module C-2 Social innovation interventions...110
+- Outlook and next steps...119
+- Annexes...121
 COMUNE di PADOVA
 
 Climate Neutrality Action Plan
@@ -3401,13 +3401,13 @@ O
 
 # Table of contents
 
-Introduction...4
-Goal: Climate neutrality by 2030...5
-Strategic priorities...5
-Process and principles...8
-Signatories...9
-Sample contract with signatures...17
-Appendix 1: Individual / Cluster Signatory Commitments (to be added before submitting the Climate City Contract...20
+- Introduction...4
+- Goal: Climate neutrality by 2030...5
+- Strategic priorities...5
+- Process and principles...8
+- Signatories...9
+- Sample contract with signatures...17
+- Appendix 1: Individual / Cluster Signatory Commitments (to be added before submitting the Climate City Contract...20
 COMUNE di PADOVA
 
 Climate-Neutrality Commitments

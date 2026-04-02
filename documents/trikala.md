@@ -19,35 +19,28 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of Contents
 
-Table of Contents...2
-Introduction...10
-Part A – Current State of Climate Action...16
-Module A-1 Greenhouse Gas Emissions Baseline Inventory...16
-Module A-2 Current Policies and Strategies Assessment...32
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality...53
-Part B – Pathways towards Climate Neutrality by 2030...73
-Module B-1 Climate Neutrality Scenarios and Impact Pathways...73
-Trikala 2030 Climate Neutrality Action Plan
-
-C
-
-Module B-2 Climate Neutrality Portfolio Design ... 103
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 306
-
-Part C – Enabling Climate Neutrality by 2030 ... 339
-Module C-1 Technical, Organisational and Governance Innovation Interventions ... 339
-Module C-2 Social and Other Innovation Interventions ... 373
-
-Outlook and next steps ... 390
-Annexes ... 392
-Annex 1 - Stakeholder engagement ... 392
-Preliminary participatory design ... 392
-Climate City Contract Design Phase ... 396
-TURNS 1895
-
-Trikala 2030 Climate Neutrality Action Plan
-
-C
+- Introduction
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Trikala 2030 Climate Neutrality Action Plan
+- C
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Technical, Organisational and Governance Innovation Interventions
+- Module C-2 Social and Other Innovation Interventions
+- Outlook and next steps
+- Annexes
+- Annex 1 - Stakeholder engagement
+- Preliminary participatory design
+- Climate City Contract Design Phase
+- TURNS 1895
+- Trikala 2030 Climate Neutrality Action Plan
+- C
 
 # Summary
 
@@ -6509,15 +6502,13 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of contents
 
-Introduction ... 1
-Goal: Climate neutrality by 2030 ... 5
-Strategic priorities ... 10
-Principles and process ... 16
-Signatories ... 22
-Contract with signatures ... 27
-O
-
-![img-50.jpeg](img-50.jpeg)
+- Introduction
+- Goal: Climate neutrality by 2030
+- Strategic priorities
+- Principles and process
+- Signatories
+- Contract with signatures
+- ![img-50.jpeg](img-50.jpeg)
 
 # Designing tomorrow's sustainable city
 
@@ -7031,60 +7022,51 @@ C
 Greenhouse Gases (GHG) Inventory
 # TABLE OF CONTENTS
 
-Introduction 1
+- Introduction
+- Trikala City
+- General information
+- Morphology and climate data
+- Local economy
+- Greenhouse Gases (GHG) Inventory
+- Overview
+- GPC
+- Reporting requirements
+- Inventory boundary
+- Emission factors
+- Emission units
+- Notation keys
+- Data quality and uncertainty
+- Stationary Energy
+- Stationary Energy sub-sectors
+- Residential buildings
+- Commercial buildings and facilities
+- Institutional buildings and facilities
+- Fugitive emissions from oil and natural gas systems
+- GHG Emissions from Stationary Energy sources
+- Transportation
+- Transportation sub-sectors
+- On-road transportation
+- Railways
+- GHG Emissions from Transportation sources
+- Waste
+- Waste sub-sectors
+- Solid waste disposal
+- Wastewater treatment
+- GHG Emissions from Waste sources
+- Industrial Processes and Product Use (IPPU)
+- IPPU sub-sectors
+- Lubricant use
+- Paraffin wax use
+- Urea use as catalyst
+- Solvent use
+- Substitutes for ODS
+- GHG Emissions from IPPU sources
+- Agriculture, Forestry and Other Land Use (AFOLU)
+- AFOLU sub-sectors
+- Forest Land
+- Summary
+- GHG Inventory results
 
-Trikala City 3
-General information 4
-Morphology and climate data 4
-Local economy 4
-
-Greenhouse Gases (GHG) Inventory 5
-Overview 6
-GPC 6
-Reporting requirements 8
-Inventory boundary 8
-Emission factors 11
-Emission units 12
-Notation keys 13
-Data quality and uncertainty 14
-
-Stationary Energy 15
-Stationary Energy sub-sectors 16
-Residential buildings 16
-Commercial buildings and facilities 16
-
-Institutional buildings and facilities 16
-Fugitive emissions from oil and natural gas systems 17
-GHG Emissions from Stationary Energy sources 23
-
-Transportation 26
-Transportation sub-sectors 27
-On-road transportation 27
-Railways 28
-GHG Emissions from Transportation sources 33
-
-Waste 35
-Waste sub-sectors 36
-Solid waste disposal 36
-Wastewater treatment 36
-GHG Emissions from Waste sources 39
-
-Industrial Processes and Product Use (IPPU) 41
-IPPU sub-sectors 42
-Lubricant use 42
-
-Paraffin wax use 42
-Urea use as catalyst 42
-Solvent use 43
-Substitutes for ODS 43
-GHG Emissions from IPPU sources 47
-
-Agriculture, Forestry and Other Land Use (AFOLU) 48
-AFOLU sub-sectors 49
-Forest Land 49
-
-Summary 52
-GHG Inventory results 53
 # 1. Introduction
 2
 

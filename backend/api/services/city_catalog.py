@@ -41,6 +41,29 @@ def index_city_markdown_files(markdown_dir: Path) -> dict[str, list[Path]]:
     return index
 
 
+def load_city_markdown(markdown_dir: Path, city_name: str) -> tuple[str, str, list[Path]] | None:
+    """Return canonical city name, concatenated markdown content, and source paths."""
+    city_key = normalize_city_key(city_name)
+    if not city_key:
+        return None
+
+    source_paths = index_city_markdown_files(markdown_dir).get(city_key, [])
+    if not source_paths:
+        return None
+
+    ordered_paths = sorted(
+        source_paths,
+        key=lambda path: (
+            len(path.relative_to(markdown_dir).parts),
+            path.relative_to(markdown_dir).as_posix().casefold(),
+        ),
+    )
+    content = "\n\n".join(
+        path.read_text(encoding="utf-8").rstrip("\n") for path in ordered_paths
+    )
+    return format_city_stem(ordered_paths[0].stem), content, ordered_paths
+
+
 def build_city_subset(
     source_markdown_dir: Path,
     target_markdown_dir: Path,
@@ -141,6 +164,7 @@ def _normalize_group_item(
 
 
 __all__ = [
+    "load_city_markdown",
     "list_city_names",
     "index_city_markdown_files",
     "build_city_subset",

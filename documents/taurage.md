@@ -15,27 +15,26 @@ Rytojų kuriame šiandien!
 
 # Table of Contents
 
-Summary...4
-List of figures...7
-List of tables...8
-Abbreviations and acronyms...9
-Introduction...10
-Part A – Current State of Climate Action...15
-Module A-1 Greenhouse Gas Emissions Baseline Inventory...15
-Module A-2 Current Policies and Strategies Assessment...28
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality...37
-Part B – Pathways towards Climate Neutrality by 2030...56
-Module B-1 Climate Neutrality Scenarios and Impact Pathways...56
-Module B-2 Climate Neutrality Portfolio Design...70
-Module B-3 Indicators for Monitoring, Evaluation and Learning...133
-Part C – Enabling Climate Neutrality by 2030...152
-Module C-1 Governance Innovation Interventions...152
-Module C-2 Social Innovation Interventions...161
-Outlook and next steps...171
-Tauragé
-Rytoju kuriamé Siandien!
-Climate Neutrality Action Plan
-O
+- Summary
+- List of figures
+- List of tables
+- Abbreviations and acronyms
+- Introduction
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- Module C-2 Social Innovation Interventions
+- Outlook and next steps
+- Tauragé
+- Rytoju kuriamé Siandien!
+- Climate Neutrality Action Plan
 
 # Summary
 
@@ -5010,17 +5009,15 @@ Tauragé District Municipality Climate Neutrality Commitments 2030
 
 # Table of contents
 
-Introduction ... 4
-Goal: Climate neutrality by 2030 ... 5
-Strategic priorities ... 6
-Process and principles ... 7
-Signatories ... 9
-
-Appendix 1: Individual / Cluster Signatory Commitments ... 11
-Tauragé
-Rytoju kuriamé šiandien!
-Tauragé District Municipality Climate Neutrality Commitments 2030
-4
+- Introduction
+- Goal: Climate neutrality by 2030
+- Strategic priorities
+- Process and principles
+- Signatories
+- Appendix 1: Individual / Cluster Signatory Commitments
+- Tauragé
+- Rytoju kuriamé šiandien!
+- Tauragé District Municipality Climate Neutrality Commitments 2030
 
 # 1 Introduction
 

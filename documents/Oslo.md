@@ -22,29 +22,26 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of Contents
 
-Table of Contents ... 2
-Introduction ... 5
-Part A – Current State of Climate Action ... 8
-Module A-1 Greenhouse Gas Emissions Baseline Inventory ... 8
-AFOLU and IPPU emissions ... 9
-Norwegian Environment Agency GHG inventory compared to Global Protocol for Community-Scale GHG Inventory (GPC) ... 9
-Scope 2 and 3 emissions ... 9
-Module A-2 Current Policies and Strategies Assessment ... 14
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality ... 38
-Part B – Pathways towards Climate Neutrality by 2030 ... 49
-Module B-1 and B2- Climate Neutrality Scenarios, Impact Pathways and Climate Neutrality Portfolio Design ... 49
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 65
-Part C – Enabling Climate Neutrality by 2030 ... 67
-Module C-1 Organisational and Governance Innovation Interventions ... 67
-Module C-2 Social and Other Innovation Interventions ... 72
-Module C-3 Financing of Action Portfolio ... 77
-Outlook and next steps ... 82
-Annexes ... 83
-Oslo
-
-Climate Neutrality Action Plan
-
-#
+- Introduction
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- AFOLU and IPPU emissions
+- Norwegian Environment Agency GHG inventory compared to Global Protocol for Community-Scale GHG Inventory (GPC)
+- Scope 2 and 3 emissions
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 and B2- Climate Neutrality Scenarios, Impact Pathways and Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Organisational and Governance Innovation Interventions
+- Module C-2 Social and Other Innovation Interventions
+- Module C-3 Financing of Action Portfolio
+- Outlook and next steps
+- Annexes
+- Oslo
+- Climate Neutrality Action Plan
+- #
 
 # Summary
 
@@ -2435,18 +2432,15 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of contents
 
-Introduction ... 2
-Goal: Climate neutrality by 2030 ... 4
-Strategic priorities ... 5
-Process and principles ... 6
-Contract with signatures ... 8
-
-Appendix I: Individual Signatory Commitments from the 'Business for Climate' initiative ... 9
-
-Appendix II: National support letter ... 11
-Oslo
-
-Climate-Neutrality Commitments
+- Introduction
+- Goal: Climate neutrality by 2030
+- Strategic priorities
+- Process and principles
+- Contract with signatures
+- Appendix I: Individual Signatory Commitments from the 'Business for Climate' initiative
+- Appendix II: National support letter
+- Oslo
+- Climate-Neutrality Commitments
 
 # 1 Introduction
 
@@ -2786,18 +2780,15 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of contents
 
-Introduction ... 2
-Goal: Climate neutrality by 2030 ... 4
-Strategic priorities ... 5
-Process and principles ... 6
-Contract with signatures ... 8
-
-Appendix I: Individual Signatory Commitments from the 'Business for Climate' initiative ... 9
-
-Appendix II: National support letter ... 11
-Oslo
-
-Climate-Neutrality Commitments
+- Introduction
+- Goal: Climate neutrality by 2030
+- Strategic priorities
+- Process and principles
+- Contract with signatures
+- Appendix I: Individual Signatory Commitments from the 'Business for Climate' initiative
+- Appendix II: National support letter
+- Oslo
+- Climate-Neutrality Commitments
 
 # 1 Introduction
 

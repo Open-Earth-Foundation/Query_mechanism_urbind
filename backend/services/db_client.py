@@ -5,9 +5,14 @@ import sqlite3
 from pathlib import Path
 from typing import Iterable, Protocol
 
-import psycopg
+try:
+    import psycopg
+except ModuleNotFoundError:
+    psycopg = None
 
 logger = logging.getLogger(__name__)
+
+POSTGRES_DATABASE_ERRORS = (psycopg.DatabaseError,) if psycopg is not None else ()
 
 
 def is_select_query(sql: str) -> bool:
@@ -68,6 +73,12 @@ class PostgresClient:
         self.database_url = database_url
 
     def connect(self) -> psycopg.Connection:
+        """Open a PostgreSQL connection for this client."""
+        if psycopg is None:
+            raise ModuleNotFoundError(
+                "psycopg is required for PostgreSQL connections. Install project "
+                "dependencies with `uv sync --group dev`."
+            )
         return psycopg.connect(normalize_database_url(self.database_url))
 
     def query(self, sql: str, params: Iterable | None = None) -> tuple[list[str], list[list[object]]]:
@@ -104,6 +115,7 @@ __all__ = [
     "DbClient",
     "SQLiteClient",
     "PostgresClient",
+    "POSTGRES_DATABASE_ERRORS",
     "get_db_client",
     "normalize_database_url",
     "is_select_query",

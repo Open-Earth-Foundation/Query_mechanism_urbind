@@ -20,43 +20,39 @@ Climate-Neutrality ACTION PLAN
 
 # Table of Contents
 
-Table of Contents ... 3
-Summary ... 5
-List of figures ... 6
-List of tables ... 6
-Abbreviations and acronyms ... 7
-Introduction ... 8
-Key data on the city ... 8
-Complementarity between the Climate City Contract Action Plan and existing plans ... 8
-Milan’s Climate Neutrality Target by 2030 ... 9
-Part A – Current State of Climate Action ... 10
-Module A-1 Greenhouse Gas Emissions Baseline Inventory ... 10
-Module A-2 Current Policies and Strategies Assessment ... 15
-A-2.1: List of relevant policies, strategies &amp; regulations ... 15
-A-2.2: Description &amp; assessment of policies in Milan ... 17
-A-2.3: Emissions gap ... 22
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality ... 24
-A-3.1: Description of systemic barriers ... 24
-Part B – Pathways towards Climate Neutrality by 2030 ... 38
-Module B-1 Climate Neutrality Scenarios and Impact Pathways ... 38
-Module B-2 Climate Neutrality Portfolio Design ... 43
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 73
-Part C – Enabling Climate Neutrality by 2030 ... 93
-Module C-1 Governance Innovation Interventions ... 93
-Module C-2 Social Innovation Interventions ... 102
-Module C-3 Financing of Action Portfolio ... 117
-Outlook and next steps ... 119
-Stakeholder Engagement: Follow-up and Integration of New Participants ... 119
-Expand and map the portfolio’s actions geographically ... 119
-Translate the city’s strategies in concrete action plans to close the remaining gap ... 120
-Developing a scenario of decarbonization of the entire building stock of the city ... 121
-Capitalizing on the Climate City Contract process and embedding Climate Budgeting Principles within the Municipality of Milan ... 122
-Climate City Contract Update and Monitoring Iterations ... 122
-Comune di Milano
-
-Climate-Neutrality ACTION PLAN
-
-5
+- Summary
+- List of figures
+- List of tables
+- Abbreviations and acronyms
+- Introduction
+- Key data on the city
+- Complementarity between the Climate City Contract Action Plan and existing plans
+- Milan’s Climate Neutrality Target by 2030
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- A-2.1: List of relevant policies, strategies &amp; regulations
+- A-2.2: Description &amp; assessment of policies in Milan
+- A-2.3: Emissions gap
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- A-3.1: Description of systemic barriers
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- Module C-2 Social Innovation Interventions
+- Module C-3 Financing of Action Portfolio
+- Outlook and next steps
+- Stakeholder Engagement: Follow-up and Integration of New Participants
+- Expand and map the portfolio’s actions geographically
+- Translate the city’s strategies in concrete action plans to close the remaining gap
+- Developing a scenario of decarbonization of the entire building stock of the city
+- Capitalizing on the Climate City Contract process and embedding Climate Budgeting Principles within the Municipality of Milan
+- Climate City Contract Update and Monitoring Iterations
+- Comune di Milano
+- Climate-Neutrality ACTION PLAN
 
 # Summary
 
@@ -2827,31 +2823,28 @@ C
 
 # Table of Contents
 
-Table of Contents ... 3
-List of figures ... 4
-List of tables ... 4
-Introduction ... 5
-Goal ... 8
-Milan, urban regeneration to mitigate climate change and improve urban resilience, considering social inclusion ... 10
-From the Expression of Interest to the redefinition of the geographic boundary corresponding to 2030 climate neutrality target ... 11
-Structuring and Co-Designing Milan's Climate Action Portfolio ... 13
-Co-benefits of Accelerating Climate Action ... 14
-Key-priorities and strategic interventions ... 16
-Enhancing the energy efficiency of buildings while reducing reliance on fossil fuels by promoting renewable energy sources (Priority 1) ... 16
-Mitigating the emission effects of urban transportation (Priority 2) ... 17
-Improving the green infrastructure of the city to mitigate GHG emissions and increasing its resilience to climate change (Priority 3) ... 18
-Minimizing waste production and food waste, as well as reducing the consumption of raw materials (Priority 4) ... 18
-Principles and process ... 19
-Building a Strong Mandate ... 19
-Participatory governance and Key Stakeholders for Accelerated Change ... 20
-Collaboratively design a portfolio by integrating existing policies, actions, and programs with new or accelerated interventions ... 22
-Learn &amp; Reflect: Taking Action for Successive Iterations of the Climate City Contract ... 24
-Contract with signatures ... 26
-Comune di Milano
-
-Climate-Neutrality Commitments
-
-C
+- List of figures
+- List of tables
+- Introduction
+- Goal
+- Milan, urban regeneration to mitigate climate change and improve urban resilience, considering social inclusion
+- From the Expression of Interest to the redefinition of the geographic boundary corresponding to 2030 climate neutrality target
+- Structuring and Co-Designing Milan's Climate Action Portfolio
+- Co-benefits of Accelerating Climate Action
+- Key-priorities and strategic interventions
+- Enhancing the energy efficiency of buildings while reducing reliance on fossil fuels by promoting renewable energy sources (Priority 1)
+- Mitigating the emission effects of urban transportation (Priority 2)
+- Improving the green infrastructure of the city to mitigate GHG emissions and increasing its resilience to climate change (Priority 3)
+- Minimizing waste production and food waste, as well as reducing the consumption of raw materials (Priority 4)
+- Principles and process
+- Building a Strong Mandate
+- Participatory governance and Key Stakeholders for Accelerated Change
+- Collaboratively design a portfolio by integrating existing policies, actions, and programs with new or accelerated interventions
+- Learn &amp; Reflect: Taking Action for Successive Iterations of the Climate City Contract
+- Contract with signatures
+- Comune di Milano
+- Climate-Neutrality Commitments
+- C
 
 # List of figures
 
@@ -5977,71 +5970,48 @@ O
 
 # Table of contents
 
-Introduction
-
-ACTIONS WITH DIRECT IMPACTS ON GHG EMISSIONS REDUCTION
-
-CLUSTER A - Companies partnered with the Municipality
-
-A2A
-ATM S.p.A (Azienda Trasporti Milanesi)
-Milano Ristorazione S.p.A.
-MM S.p.A.
-SEA S.p.A
-SoGeMi S.p.A.
-
-CLUSTER B – City universities
-
-Politecnico di Milano
-Università Bocconi
-Università Cattolica del Sacro Cuore – Milano
-Università degli Studi di Milano – Statale
-Università degli Studi di Milano – Bicocca
-
-CLUSTER C – Key-players in urban regeneration and real estate development
-
-Coima
-Convivio Development
-Invimit
-LendLease
-Nhood Services Italy
-REDO Sgr
-
-CLUSTER D – Housing cooperatives
-
-Abitare
-Delta Ecopolis
-
-CLUSTER E – Enabling actors (environmental associations, banking foundations, advisory boards and think-tanks)
-
-FAI – Fondo per l’Ambiente Italiano ETS
-
-ENABLING ACTIONS
-
-CLUSTER A - Companies partnered with the Municipality
-
-A2A
-MM S.p.A.
-
-CLUSTER D – Housing cooperatives
-
-Abitare
-
-CLUSTER E – Enabling actors (environmental associations, banking foundations, advisory boards and think-tanks)
-
-FAI – Fondo per l’Ambiente Italiano ETS
-Fondazione Cariplo
-Comune di Milano
-
-C
-
-Green Building Council
-Legambiente Lombardia
-
-APPENDIX - Templates
-Comune di Milano
-
-O
+- Introduction
+- ACTIONS WITH DIRECT IMPACTS ON GHG EMISSIONS REDUCTION
+- CLUSTER A - Companies partnered with the Municipality
+- A2A
+- ATM S.p.A (Azienda Trasporti Milanesi)
+- Milano Ristorazione S.p.A
+- MM S.p.A
+- SEA S.p.A
+- SoGeMi S.p.A
+- CLUSTER B – City universities
+- Politecnico di Milano
+- Università Bocconi
+- Università Cattolica del Sacro Cuore – Milano
+- Università degli Studi di Milano – Statale
+- Università degli Studi di Milano – Bicocca
+- CLUSTER C – Key-players in urban regeneration and real estate development
+- Coima
+- Convivio Development
+- Invimit
+- LendLease
+- Nhood Services Italy
+- REDO Sgr
+- CLUSTER D – Housing cooperatives
+- Abitare
+- Delta Ecopolis
+- CLUSTER E – Enabling actors (environmental associations, banking foundations, advisory boards and think-tanks)
+- FAI – Fondo per l’Ambiente Italiano ETS
+- ENABLING ACTIONS
+- CLUSTER A - Companies partnered with the Municipality
+- A2A
+- MM S.p.A
+- CLUSTER D – Housing cooperatives
+- Abitare
+- CLUSTER E – Enabling actors (environmental associations, banking foundations, advisory boards and think-tanks)
+- FAI – Fondo per l’Ambiente Italiano ETS
+- Fondazione Cariplo
+- Comune di Milano
+- C
+- Green Building Council
+- Legambiente Lombardia
+- APPENDIX - Templates
+- Comune di Milano
 
 # Introduction
 
@@ -24454,18 +24424,15 @@ Climate-Neutrality AP - Annex 3
 
 # Table of Contents
 
-Table of Contents ... 3
-Introduction ... 4
-Methodology ... 4
-Choice of the area and characterisation ... 5
-Decarbonisation scenario definition ... 9
-Results assessment ... 10
-Conclusions and next steps ... 13
-Comune di Milano
-
-Climate-Neutrality AP - Annex 3
-
-C
+- Introduction
+- Methodology
+- Choice of the area and characterisation
+- Decarbonisation scenario definition
+- Results assessment
+- Conclusions and next steps
+- Comune di Milano
+- Climate-Neutrality AP - Annex
+- C
 
 # 1. Introduction
 

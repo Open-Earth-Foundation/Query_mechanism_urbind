@@ -16,209 +16,209 @@ INDDIGO - April 2023
 
 # CONTENTS
 
-LIST OF FIGURES ...5
-LIST OF TABLES ...6
-ABBREVIATIONS AND ACRONYMS ...7
-INTRODUCTION ...9
-Marseille intends to become the laboratory where the Mediterranean carbon neutral, socially dynamic cities of tomorrow will be pioneered. ...9
-How the Climate City Contract interacts with the other framework documents ...12
-Content of the Action Plan Section of the Climate City Contract ...14
-The climate city contract's specific scope and focus ...15
-CLIMATE CITY CONTRACT ELABORATION PROCESS ...18
-involvement of all concerned parties ...18
-Principal phases ...20
-A1 - GREENHOUSE GAS EMISSIONS INVENTORY FOR 2019 ...20
-Overview of the Scope 1 and 2 emissions ...20
-Final energy consumption by sector and associated expenditure ...23
-Final energy consumption by activity sub-sector ...28
-Greenhouse gas emissions by business sector ...28
-Details by sector and demonstrations - Scope 1 and 2 ...29
-Transport ...29
-Residential ...36
-Service Sector ...40
-Industry ...44
-Power generation ...45
-Representation of the Marseille population's carbon footprint in terms of "Scope 3" emissions ...48
-Food industry ...48
-New-build housing construction ...48
-Waste products ...48
-Mobility ...49
-Scopes 1, 2 and 3 and carbon footprint per capita ...49
-Carbon sequestration ...50
-A2 - ASSESSMENT OF CURRENT STRATEGIES ...52
-A 2.1 and A 2.2 - Framework documents to be considered ...52
-A-2-3: Gaps to be bridged on the way to carbon neutrality: where are we starting from? Where are we going? 60
-Method ...60
-Current strategy trends: what gains? what are the gaps between here and carbon neutrality? ...61
-A3 - Systemic barriers and opportunities associated with achieving carbon neutrality ...62
+- LIST OF FIGURES ...5
+- LIST OF TABLES ...6
+- ABBREVIATIONS AND ACRONYMS ...7
+- INTRODUCTION ...9
+- Marseille intends to become the laboratory where the Mediterranean carbon neutral, socially dynamic cities of tomorrow will be pioneered. ...9
+- How the Climate City Contract interacts with the other framework documents ...12
+- Content of the Action Plan Section of the Climate City Contract ...14
+- The climate city contract's specific scope and focus ...15
+- CLIMATE CITY CONTRACT ELABORATION PROCESS ...18
+- involvement of all concerned parties ...18
+- Principal phases ...20
+- A1 - GREENHOUSE GAS EMISSIONS INVENTORY FOR 2019 ...20
+- Overview of the Scope 1 and 2 emissions ...20
+- Final energy consumption by sector and associated expenditure ...23
+- Final energy consumption by activity sub-sector ...28
+- Greenhouse gas emissions by business sector ...28
+- Details by sector and demonstrations - Scope 1 and 2 ...29
+- Transport ...29
+- Residential ...36
+- Service Sector ...40
+- Industry ...44
+- Power generation ...45
+- Representation of the Marseille population's carbon footprint in terms of "Scope 3" emissions ...48
+- Food industry ...48
+- New-build housing construction ...48
+- Waste products ...48
+- Mobility ...49
+- Scopes 1, 2 and 3 and carbon footprint per capita ...49
+- Carbon sequestration ...50
+- A2 - ASSESSMENT OF CURRENT STRATEGIES ...52
+- A 2.1 and A 2.2 - Framework documents to be considered ...52
+- A-2-3: Gaps to be bridged on the way to carbon neutrality: where are we starting from? Where are we going? 60
+- Method ...60
+- Current strategy trends: what gains? what are the gaps between here and carbon neutrality? ...61
+- A3 - Systemic barriers and opportunities associated with achieving carbon neutrality ...62
 City of Marseille
 Climate City Contract - Action Plan Section
 INDDIGO - April 2023
 /188
 
-Opportunities to achieve carbon neutrality: exploratory scenarios...62
-Conclusions of the exploratory scenarios and gaps to be bridged...66
-Thematic and systemic barriers...69
+- Opportunities to achieve carbon neutrality: exploratory scenarios...62
+- Conclusions of the exploratory scenarios and gaps to be bridged...66
+- Thematic and systemic barriers...69
 
-B - PATHWAYS TO CARBON NEUTRALITY IN 2030 ...70
-B.1-Scenarios for achieving carbon neutrality...70
-Reduction of scope 1 and 2 emissions...71
-B 1.3 Summary of the carbon offset strategy...74
+- B - PATHWAYS TO CARBON NEUTRALITY IN 2030 ...70
+- B.1-Scenarios for achieving carbon neutrality...70
+- Reduction of scope 1 and 2 emissions...71
+- B 1.3 Summary of the carbon offset strategy...74
 
-B2 - Carbon neutrality portfolio...75
-Organisation...75
-Overview and priorities...78
-Mobility and logistics...88
-Energy...109
-Buildings...119
-Circular Economy and Waste Management...127
-Nature in the city...136
-Urban agriculture and food...147
-Sea and coastline...154
-Education and Awareness...162
+- B2 - Carbon neutrality portfolio...75
+- Organisation...75
+- Overview and priorities...78
+- Mobility and logistics...88
+- Energy...109
+- Buildings...119
+- Circular Economy and Waste Management...127
+- Nature in the city...136
+- Urban agriculture and food...147
+- Sea and coastline...154
+- Education and Awareness...162
 
-B3-Indicators for steerage, evaluation, and learning...169
+- B3-Indicators for steerage, evaluation, and learning...169
 
-C - ACHIEVING CARBON NEUTRALITY BY 2030 ...169
-C1-Innovations in organisation and governance...169
-C2-Social and other innovations...175
+- C - ACHIEVING CARBON NEUTRALITY BY 2030 ...169
+- C1-Innovations in organisation and governance...169
+- C2-Social and other innovations...175
 
-ANNEXES...177
-Carbon storage data...177
-Details of the trend scenario...180
-Details of the exploratory scenarios...181
-Details for all sectors...181
-Mobility...182
-Residential...185
-Service Sector...186
+- ANNEXES...177
+- Carbon storage data...177
+- Details of the trend scenario...180
+- Details of the exploratory scenarios...181
+- Details for all sectors...181
+- Mobility...182
+- Residential...185
+- Service Sector...186
 
-Energy bill: source data...187
-Citizens' Assembly for the Future : key elements...187
+- Energy bill: source data...187
+- Citizens' Assembly for the Future : key elements...187
 # LIST OF FIGURES
 
-Figure 1 - Elaboration of the main territorial energy transition framework documents 13
-Figure 2 - Diagram illustrating the organisation of the action plan section of the CCC 15
-Figure 3 - Scope of emissions covered within the inventory - source INDDIGO 16
-Figure 4 - Diagram showing the program's overall governance 19
-Figure 5 - Greenhouse gas emissions by activity sub-sector - Scopes 1 and 2 - Marseille 2019 - ATMO Sud data 21
-Figure 6 - Energy consumption by activity sub-sector - Scopes 1 and 2 - Marseille 2019 - ATMO Sud data 21
-Figure 7 - The city of Marseille's energy expenditure - average costs since 2017 - INDDIGO 25
-Figure 8 - The city of Marseille's energy expenditure - average costs since January 2022 - INDDIGO 26
-Figure 9 - Table of energy expenditure increases by sector and energy type - INDDIGO 27
-Figure 10 - Transport sector energy consumption - Scopes 1 and 2 - Marseille 2019 - ATMO Sud data 29
-Figure 11 - Greenhouse gas emissions from transport - Scopes 1 and 2 - Marseille 2019 - ATMO Sud data 30
-Figure 12 - Energy consumption by the road transport sector by vehicle type - Marseille - 2019 - ATMO Sud data 30
-Figure 13 - GHG emissions from the road transport sector by vehicle type - Marseille - 2019 - ATMO Sud data 31
-Figure 14 - Road transport sector energy consumption by fuel type - Marseille - 2019 - ATMO Sud data 31
-Figure 15 - Road transport sector GHG emissions by fuel type - Marseille - 2019 - ATMO Sud data 32
-Figure 16 - GHG emissions from daily weekday travel to and from Marseille, and within its urban centre - by travel method (TC: Public Transport) - 2019 - AGAM data 33
-Figure 17 - The breakdown of daily weekday trips, to and from Marseille and within its urban centre, by transport method - 2019 - AGAM data 33
-Figure 18 - Identification of the GHG challenges for daily mobility - approach by catchment area in Marseille - source AGAM - 2019 35
-Figure 19 - Residential sector energy consumption, by use - Marseille - 2019 - ATMO Sud data 37
-Figure 20 - Residential sector greenhouse gas emissions, by use - Marseille - 2019 - ATMO Sud data 37
-Figure 21 - Heating consumption by energy vector - residential sector Marseille - 2019 - ATMO Sud data 38
-Figure 22 - GHG emissions from residential heating by energy vector - Marseille - 2019 - ATMO Sud data 38
-Figure 23 - Energy consumption by energy type - residential Marseille - 2019 - ATMO Sud data 39
-Figure 24 - GHG emissions from the residential sector by energy type - Marseille - 2019 - ATMO Sud data 40
-Figure 25 - Energy consumption by energy type - service sector - Marseille - 2019 - ATMO Sud data 41
-Figure 26 - Greenhouse gas emissions - service sector - Marseilles - 2019 - ATMO Sud data 42
-Figure 27 - Energy consumption by usage type - service sector - Marseille - 2019 - ATMO Sud and regional data 43
-Figure 28 - Energy consumption by energy type - service sector - Marseille - 2019 - ATMO Sud and regional data 43
-Figure 29 - Greenhouse gas emissions by energy type - service sector Marseille - 2019 - ATMO Sud and regional data 44
-Figure 30 - Breakdown of renewable energy production by sector - Marseille - 2019 - ATMO Sud data 45
-Figure 31 - Progress in Marseille's photovoltaic sector between 2009 and 2017 - ORECA data 46
-Figure 32 - Map of currently operating heat networks in Marseille - 2022 - source: City of Marseille 47
-Figure 33 - Breakdown of emissions by scope - Marseille - 2019 49
-Figure 34 - Relations between air-energy-climate framework documents in France - CEREMA (additional note: the SRCAE ceased to exist in 2019, the 2021 climate and resilience law creates a link between the Pluriannual Energy Programme and the SRADDET, the PDU have been replaced by PDM which must be compatible with the PCAET) 52
+- Figure 1 - Elaboration of the main territorial energy transition framework documents 13
+- Figure 2 - Diagram illustrating the organisation of the action plan section of the CCC 15
+- Figure 3 - Scope of emissions covered within the inventory - source INDDIGO 16
+- Figure 4 - Diagram showing the program's overall governance 19
+- Figure 5 - Greenhouse gas emissions by activity sub-sector - Scopes 1 and 2 - Marseille 2019 - ATMO Sud data 21
+- Figure 6 - Energy consumption by activity sub-sector - Scopes 1 and 2 - Marseille 2019 - ATMO Sud data 21
+- Figure 7 - The city of Marseille's energy expenditure - average costs since 2017 - INDDIGO 25
+- Figure 8 - The city of Marseille's energy expenditure - average costs since January 2022 - INDDIGO 26
+- Figure 9 - Table of energy expenditure increases by sector and energy type - INDDIGO 27
+- Figure 10 - Transport sector energy consumption - Scopes 1 and 2 - Marseille 2019 - ATMO Sud data 29
+- Figure 11 - Greenhouse gas emissions from transport - Scopes 1 and 2 - Marseille 2019 - ATMO Sud data 30
+- Figure 12 - Energy consumption by the road transport sector by vehicle type - Marseille - 2019 - ATMO Sud data 30
+- Figure 13 - GHG emissions from the road transport sector by vehicle type - Marseille - 2019 - ATMO Sud data 31
+- Figure 14 - Road transport sector energy consumption by fuel type - Marseille - 2019 - ATMO Sud data 31
+- Figure 15 - Road transport sector GHG emissions by fuel type - Marseille - 2019 - ATMO Sud data 32
+- Figure 16 - GHG emissions from daily weekday travel to and from Marseille, and within its urban centre - by travel method (TC: Public Transport) - 2019 - AGAM data 33
+- Figure 17 - The breakdown of daily weekday trips, to and from Marseille and within its urban centre, by transport method - 2019 - AGAM data 33
+- Figure 18 - Identification of the GHG challenges for daily mobility - approach by catchment area in Marseille - source AGAM - 2019 35
+- Figure 19 - Residential sector energy consumption, by use - Marseille - 2019 - ATMO Sud data 37
+- Figure 20 - Residential sector greenhouse gas emissions, by use - Marseille - 2019 - ATMO Sud data 37
+- Figure 21 - Heating consumption by energy vector - residential sector Marseille - 2019 - ATMO Sud data 38
+- Figure 22 - GHG emissions from residential heating by energy vector - Marseille - 2019 - ATMO Sud data 38
+- Figure 23 - Energy consumption by energy type - residential Marseille - 2019 - ATMO Sud data 39
+- Figure 24 - GHG emissions from the residential sector by energy type - Marseille - 2019 - ATMO Sud data 40
+- Figure 25 - Energy consumption by energy type - service sector - Marseille - 2019 - ATMO Sud data 41
+- Figure 26 - Greenhouse gas emissions - service sector - Marseilles - 2019 - ATMO Sud data 42
+- Figure 27 - Energy consumption by usage type - service sector - Marseille - 2019 - ATMO Sud and regional data 43
+- Figure 28 - Energy consumption by energy type - service sector - Marseille - 2019 - ATMO Sud and regional data 43
+- Figure 29 - Greenhouse gas emissions by energy type - service sector Marseille - 2019 - ATMO Sud and regional data 44
+- Figure 30 - Breakdown of renewable energy production by sector - Marseille - 2019 - ATMO Sud data 45
+- Figure 31 - Progress in Marseille's photovoltaic sector between 2009 and 2017 - ORECA data 46
+- Figure 32 - Map of currently operating heat networks in Marseille - 2022 - source: City of Marseille 47
+- Figure 33 - Breakdown of emissions by scope - Marseille - 2019 49
+- Figure 34 - Relations between air-energy-climate framework documents in France - CEREMA (additional note: the SRCAE ceased to exist in 2019, the 2021 climate and resilience law creates a link between the Pluriannual Energy Programme and the SRADDET, the PDU have been replaced by PDM which must be compatible with the PCAET) 52
 
 City of Marseille
 Climate City Contract - Action Plan Section
 INDDIGO - April 2023
-Figure 35 - Local, national and European targets for reducing GHG emissions - source: City of Marseille... 53
-Figure 36 - Methodological overview for estimating gains and gaps to be bridged - INDDIGO 60
-Figure 37 - changes to modal shares for the exploratory mobility scenario - source AGAM and INDDIGO 2022 63
-Figure 38 - Global and sector -specific illustration of the gaps on the way to carbon neutrality - GHG emissions
-Scopes 1 and 2 - Marseille - Data ATMO, AGAM, INDDIGO 67
-Figure 39 - Pathway to carbon neutrality for the city of Marseille by 2030 71
-Figure 40 - Distribution of land by soil type - Marseille - 2018 - Corine Land Cover data 178
-Figure 41 - CO2 stocks by soil type - Marseille - 2018 - Corine Land Cover and ALDO data 178
-Figure 42 - Annual sequestration flow - Marseille - 2018 - Corine Land Cover data and ALDO ratios, ADEME.. 179
+- Figure 35 - Local, national and European targets for reducing GHG emissions - source: City of Marseille... 53
+- Figure 36 - Methodological overview for estimating gains and gaps to be bridged - INDDIGO 60
+- Figure 37 - changes to modal shares for the exploratory mobility scenario - source AGAM and INDDIGO 2022 63
+- Figure 38 - Global and sector -specific illustration of the gaps on the way to carbon neutrality - GHG emissions
+  Scopes 1 and 2 - Marseille - Data ATMO, AGAM, INDDIGO 67
+- Figure 39 - Pathway to carbon neutrality for the city of Marseille by 2030 71
+- Figure 40 - Distribution of land by soil type - Marseille - 2018 - Corine Land Cover data 178
+- Figure 41 - CO2 stocks by soil type - Marseille - 2018 - Corine Land Cover and ALDO data 178
+- Figure 42 - Annual sequestration flow - Marseille - 2018 - Corine Land Cover data and ALDO ratios, ADEME.. 179
 
 ## LIST OF TABLES
 
-Table 1 - energy price trends - INDDIGO 25
-Table 2 - energy expenditure by sector and energy type - based on average energy costs since 2017 - INDDIGO 25
-Table 4 - energy expenditure by sector and energy type - based on average energy costs since January 2022 - INDDIGO 26
-Table 5 - trend gains and gaps to be bridges before reaching carbon neutrality by 2030, according to current policies - INDDIGO 61
-Table 6 - Emissions gains and residual gaps on the way to carbon neutrality in 2030, according to the exploratory scenarios - INDDIGO 68
-Table 7 - Evolution of modal shares projected in the Mobility Plan - AGAM data - Metropolis 182
-Table 8 - Evolution of modal shares projected in the exploratory scenario - source AGAM and INDDIGO... 182
-Table 9 - Carbon impacts of mobility actions included in the Climate City Contract, as applied to Marseille in the Mobility Plan scenario - INDDIGO 183
-Table 10 - Carbon impacts of the Climate City Contract's mobility actions as applied to Marseille in the exploratory scenario - INDDIGO 184
-Table 11 - Table of assumptions and calculations for the residential exploratory scenario - INDDIGO 185
-Table 12 - Table of assumptions and calculations for the service sector exploratory scenario - INDDIGO 186
+- Table 1 - energy price trends - INDDIGO 25
+- Table 2 - energy expenditure by sector and energy type - based on average energy costs since 2017 - INDDIGO 25
+- Table 4 - energy expenditure by sector and energy type - based on average energy costs since January 2022 - INDDIGO 26
+- Table 5 - trend gains and gaps to be bridges before reaching carbon neutrality by 2030, according to current policies - INDDIGO 61
+- Table 6 - Emissions gains and residual gaps on the way to carbon neutrality in 2030, according to the exploratory scenarios - INDDIGO 68
+- Table 7 - Evolution of modal shares projected in the Mobility Plan - AGAM data - Metropolis 182
+- Table 8 - Evolution of modal shares projected in the exploratory scenario - source AGAM and INDDIGO... 182
+- Table 9 - Carbon impacts of mobility actions included in the Climate City Contract, as applied to Marseille in the Mobility Plan scenario - INDDIGO 183
+- Table 10 - Carbon impacts of the Climate City Contract's mobility actions as applied to Marseille in the exploratory scenario - INDDIGO 184
+- Table 11 - Table of assumptions and calculations for the residential exploratory scenario - INDDIGO 185
+- Table 12 - Table of assumptions and calculations for the service sector exploratory scenario - INDDIGO 186
 
 City of Marseille
 Climate City Contract - Action Plan Section
 INDDIGO - April 2023
 # ABBREVIATIONS AND ACRONYMS
 
-ADEME: Ecological Transition Office
-AGAM: Marseille Conurbation Urban Planning Office
-AMU: Aix-Marseille University
-ANRU: National Urban Renewal Agency
-AOM: Mobility Organisation Authority
-APHM: Public Hospital Assistance - Marseille
-ATMO Sud: Air Quality Monitoring Body for the South of France
-BHNS: Bus with a High Level of Service (BHLS)
-CCC or CVC: Climate City Contract (CCC) or Contrat de Ville Climat (CVC)
-CO2: carbon dioxide
-CVC: Climate City Contract (see above)
-CENAQ: Electrical Connections for Docked Ships
-CIGALE: Consultation of Geolocalised Air Climate Energy Inventories (the CIGALE application is produced by ATMO Sud)
-CNRS: National Scientific Research Centre
-CSR: Refuse Derived Fuel (RDF)
-ENR: Renewable energy sources
-ENRR: Renewable and recycled energy sources
-ETP: Full Time Equivalent (FTE)
-GES: Greenhouse gases
-CNG: Natural Gas Vehicle
-GPMM: Marseille-Fos Port
-LPEC: Energy and climate programming law
-Métropole AMP: Aix-Marseille-Provence Metropolis
-OMR: Residual household waste
-OMS: World Health Organization (WHO)
-ORECA: Provence-Alpes-Côte d'Azur Region Energy, Climate and Air Observatory
-QPV: Priority Development Zone
-PCAEM: Metropolitan Climate Air and Energy Plan
-PCAET: Regional Climate Air and Energy Plan
-PDM: Mobility Plan
-PLH: Local Housing Plan
-PLU,i: Multiple-Council Local Urban Planning Program
-PM 2.5: Particulate Matter, or fine suspended particles with a diameter of 2.5 microns or less
-PM10: Particulate Matter, or fine suspended particles with a diameter of 10 microns or less
-PPA: Atmosphere Protection Plan
-PPE: Multiannual Energy Programming
-PREPA: National Air Pollution Emissions Reduction Plan
-REM: Metropolitan Express Network
-SCOT: Regional Coherence Scheme
-SNBC: National Low Carbon Strategy
-SRADDET: Regional Plan for Territorial Planning, Sustainable Development and Equality
+- ADEME: Ecological Transition Office
+- AGAM: Marseille Conurbation Urban Planning Office
+- AMU: Aix-Marseille University
+- ANRU: National Urban Renewal Agency
+- AOM: Mobility Organisation Authority
+- APHM: Public Hospital Assistance - Marseille
+- ATMO Sud: Air Quality Monitoring Body for the South of France
+- BHNS: Bus with a High Level of Service (BHLS)
+- CCC or CVC: Climate City Contract (CCC) or Contrat de Ville Climat (CVC)
+- CO2: carbon dioxide
+- CVC: Climate City Contract (see above)
+- CENAQ: Electrical Connections for Docked Ships
+- CIGALE: Consultation of Geolocalised Air Climate Energy Inventories (the CIGALE application is produced by ATMO Sud)
+- CNRS: National Scientific Research Centre
+- CSR: Refuse Derived Fuel (RDF)
+- ENR: Renewable energy sources
+- ENRR: Renewable and recycled energy sources
+- ETP: Full Time Equivalent (FTE)
+- GES: Greenhouse gases
+- CNG: Natural Gas Vehicle
+- GPMM: Marseille-Fos Port
+- LPEC: Energy and climate programming law
+- Métropole AMP: Aix-Marseille-Provence Metropolis
+- OMR: Residual household waste
+- OMS: World Health Organization (WHO)
+- ORECA: Provence-Alpes-Côte d'Azur Region Energy, Climate and Air Observatory
+- QPV: Priority Development Zone
+- PCAEM: Metropolitan Climate Air and Energy Plan
+- PCAET: Regional Climate Air and Energy Plan
+- PDM: Mobility Plan
+- PLH: Local Housing Plan
+- PLU,i: Multiple-Council Local Urban Planning Program
+- PM 2.5: Particulate Matter, or fine suspended particles with a diameter of 2.5 microns or less
+- PM10: Particulate Matter, or fine suspended particles with a diameter of 10 microns or less
+- PPA: Atmosphere Protection Plan
+- PPE: Multiannual Energy Programming
+- PREPA: National Air Pollution Emissions Reduction Plan
+- REM: Metropolitan Express Network
+- SCOT: Regional Coherence Scheme
+- SNBC: National Low Carbon Strategy
+- SRADDET: Regional Plan for Territorial Planning, Sustainable Development and Equality
 
 City of Marseille
 Climate City Contract - Action Plan Section
 INDDIGO - April 2023
-SRCAE : Regional Plan for Climate Air Energy (now integrated into the SRADDET)
+- SRCAE : Regional Plan for Climate Air Energy (now integrated into the SRADDET)
 
-S3REnR: Regional renewable energy grid connection schemes
+- S3REnR: Regional renewable energy grid connection schemes
 
-t CO2e: tonne of CO2 equivalent
+- t CO2e: tonne of CO2 equivalent
 
-TC: Public transport
+- TC: Public transport
 
-TCSP: Public transport on dedicated lanes
+- TCSP: Public transport on dedicated lanes
 
-ZIP : Industrial Port Zone
+- ZIP : Industrial Port Zone
 
 City of Marseille
 
@@ -239,8 +239,8 @@ Our common goal is to make Marseille the laboratory where the Mediterranean carb
 
 Marseille, and the Aix-Marseille Provence Metropolis in general, has strong physical characteristics which make it highly sensitive to climate change. The Mediterranean regions are experiencing a 25% higher rate of global warming than the terrestrial average, the same also applies to the Alpine regions. Marseille is thus doubly exposed:
 
-within its own region, with increased exposure to the consequences of climate change, involving physical risks (forest fires, torrential rains, etc.) and potential health consequences for its population (exposure to heat waves and ozone pollution during the hotter and windless periods of the year, which are often very hot).
-the increased consequences of global warming in the southern Alps, reducing snow cover in winter and accelerating the melting and disappearance of glaciers in summer, are putting the city's water supply at risk, both for domestic supply and for that of its industrial and agricultural sectors.
+- within its own region, with increased exposure to the consequences of climate change, involving physical risks (forest fires, torrential rains, etc.) and potential health consequences for its population (exposure to heat waves and ozone pollution during the hotter and windless periods of the year, which are often very hot).
+- the increased consequences of global warming in the southern Alps, reducing snow cover in winter and accelerating the melting and disappearance of glaciers in summer, are putting the city's water supply at risk, both for domestic supply and for that of its industrial and agricultural sectors.
 
 The region benefits from an attractive Mediterranean climate, although it can occasionally be subjected to more violent climate episodes. These climatic characteristics have a strong influence on the region: specific fauna and flora, major risks, renewable energy potential, impacts on air quality, etc. The Mediterranean climate is characterised by very dry summers and rains that can occasionally be very heavy in the spring and during the months of September and October. Cap Croisette, on the southern coast of Marseille, is the driest place in France with an annual rainfall of around 360 mm. In autumn and spring, severe thunderstorms can occur and cause major flooding in the river valleys and urban areas.
 
@@ -4639,23 +4639,23 @@ Marseille 2030 Climate Target Plan - Climate City Contract – Commitments - Pag
 
 # CONTENTS
 
-Introduction ...3
-Our motivations ...4
-Our commitments regarding the climate emergency ...4
-The aim of the Climate City Contract ...6
-2030 objective: aim for a drastic reduction in emissions and Marseille's adaptation to climate change ...7
-Key priorities and strategic interventions ...9
-Organisational principles ...11
-Process and schedule ...14
-Signature ...15
+- Introduction ...3
+- Our motivations ...4
+- Our commitments regarding the climate emergency ...4
+- The aim of the Climate City Contract ...6
+- 2030 objective: aim for a drastic reduction in emissions and Marseille's adaptation to climate change ...7
+- Key priorities and strategic interventions ...9
+- Organisational principles ...11
+- Process and schedule ...14
+- Signature ...15
 # 1. INTRODUCTION
 
 The Mediterranean is one of the most vulnerable regions as regards global climate change, which will only exacerbate already existing natural hazards (floods, forest fires, etc.), and is also one of the 34 biodiversity hotspots¹ in the world. Intensive and polluting human activities, combined with sea acidification and extreme temperatures, are damaging the Mediterranean's biodiversity and the health of its inhabitants. The Mediterranean has been a centre for economic, cultural and scientific exchange and for interaction in terms of migration since antiquity. This historic uniqueness has resulted in the emergence of a Mediterranean culture and an urban lifestyle of which Marseille is an archetypal example. Marseille epitomises the Mediterranean. From Massilia to the present day, the city has always been a key port and a place of welcome. It is a city of strong contrasts, ranging from new districts to a run-down historic city centre and very poor districts, and from high-tech industries to a survival economy.
 
 In order to meet the twofold challenge of drastically reducing its fossil fuel consumption while seriously addressing the city's social problems, Marseille is adopting a unique, innovative and ambitious perspective on two interconnected approaches:
 
-A top-down approach to sectoral public policies for the decarbonisation of the urban area using all the available technologies appropriate to our city and involving the inhabitants in order to encourage their support and inclusion,
-A bottom-up creative, cross-sectoral and human approach to an overall transformation of society which will result in energy sobriety as well as social cohesion and new shared wealth, and which is democratic in nature because it is supported by all the stakeholders in the area, who are being encouraged by the City, the Metropolis and the Region to form an ecosystem.
+- A top-down approach to sectoral public policies for the decarbonisation of the urban area using all the available technologies appropriate to our city and involving the inhabitants in order to encourage their support and inclusion,
+- A bottom-up creative, cross-sectoral and human approach to an overall transformation of society which will result in energy sobriety as well as social cohesion and new shared wealth, and which is democratic in nature because it is supported by all the stakeholders in the area, who are being encouraged by the City, the Metropolis and the Region to form an ecosystem.
 
 The hybrid solutions which Marseille will implement through this dual approach will bring about cultural, technical, industrial and behavioural changes. The roadmap followed by this region could become a model for the Mediterranean. Marseille must become an area where carbon resilience is embodied in proactive policies which combine significant investment in social issues with changes in usage and infrastructure. It is about turning the current vulnerabilities into genuine assets.
 
@@ -4673,15 +4673,15 @@ Marseille 2030 Climate Target Plan - Climate City Contract – Commitments - Pag
 
 In addition to the desire to intensify climate action, collectively joining the ‘100 smart and climate-neutral cities by 2030’ programme meets a range of expectations and aspirations. The motivations of the authorities to collectively make commitments in this document include:
 
-Organising climate-oriented local institutional cooperation: Although the application phase at the end of 2021 underlined the fact that a significant number of local stakeholders aspire to refocus their actions around prioritising the climate, it also underlined the advantage of setting up a method to drive initiatives forward. It was stressed that a collective commitment for the region and the climate (especially from the political sphere) aimed at prioritising cooperation and action regarding the challenge of climate change is necessary in order to involve the whole region in the transformations which need to be achieved.
+- Organising climate-oriented local institutional cooperation: Although the application phase at the end of 2021 underlined the fact that a significant number of local stakeholders aspire to refocus their actions around prioritising the climate, it also underlined the advantage of setting up a method to drive initiatives forward. It was stressed that a collective commitment for the region and the climate (especially from the political sphere) aimed at prioritising cooperation and action regarding the challenge of climate change is necessary in order to involve the whole region in the transformations which need to be achieved.
 
-Supporting the scaling up of transition initiatives brought about by the Marseille ecosystem by mobilising all available resources (community expertise, funding tools, etc.) and by enabling everyone to find their place in this transition.
+- Supporting the scaling up of transition initiatives brought about by the Marseille ecosystem by mobilising all available resources (community expertise, funding tools, etc.) and by enabling everyone to find their place in this transition.
 
-Setting up funding mechanisms to sustain climate action over the coming decades and mobilise a maximum amount of public (European, national and local) and private funding to support high-impact actions in Marseille.
+- Setting up funding mechanisms to sustain climate action over the coming decades and mobilise a maximum amount of public (European, national and local) and private funding to support high-impact actions in Marseille.
 
-Building the narrative of a carbon-neutral Marseille based on a shared collective vision which allows everyone to envisage themselves in a new low-carbon lifestyle and which outlines the evolution of the local economy which needs to take place.
+- Building the narrative of a carbon-neutral Marseille based on a shared collective vision which allows everyone to envisage themselves in a new low-carbon lifestyle and which outlines the evolution of the local economy which needs to take place.
 
-Guaranteeing that the transition deployed is fair and helps to combat social inequalities in the region.
+- Guaranteeing that the transition deployed is fair and helps to combat social inequalities in the region.
 
 # 3. OUR COMMITMENTS REGARDING THE CLIMATE EMERGENCY
 
@@ -4727,17 +4727,17 @@ This document constitutes the first version of the Climate City Contract, which 
 
 The Climate City Contract is based on a template provided by the Net Zero Cities mission and comprises 3 parts:
 
-The 'commitments' section, reflecting the motivations of the signatories, their strategic priorities and a formalisation of their way of working together.
-The 'action plan' section, detailing the carbon assessment, the strategic objectives set, an identification of the actions to be carried out and a list of identified projects contributing to the objectives.
-The 'funding plan' section which assesses macroscopically the financial resources already mobilised and, above all, the amount still to be committed, in order to achieve the shared 2030 objective.
+- The 'commitments' section, reflecting the motivations of the signatories, their strategic priorities and a formalisation of their way of working together.
+- The 'action plan' section, detailing the carbon assessment, the strategic objectives set, an identification of the actions to be carried out and a list of identified projects contributing to the objectives.
+- The 'funding plan' section which assesses macroscopically the financial resources already mobilised and, above all, the amount still to be committed, in order to achieve the shared 2030 objective.
 
 Marseille 2030 Climate Target Plan - Climate City Contract – Commitments - Page 6
 # 5. 2030 OBJECTIVE: AIM FOR A DRASTIC REDUCTION IN EMISSIONS AND MARSEILLE'S ADAPTATION TO CLIMATE CHANGE
 
 Europe's objective within the framework of the Smart and Carbon-Neutral Cities Mission is twofold:
 
-To create 100 carbon-neutral cities by 2030 by and for citizens (cities are responsible for 70% of GHGs);
-To ensure that these cities serve as centres of experimentation and innovation to enable all European cities to follow suit by 2050.
+- To create 100 carbon-neutral cities by 2030 by and for citizens (cities are responsible for 70% of GHGs);
+- To ensure that these cities serve as centres of experimentation and innovation to enable all European cities to follow suit by 2050.
 
 The challenge is immense: the current rate of reduction in the carbon footprint of France is in the order of 1% to 2% per year. A goal of carbon neutrality in 2050 requires a rate of 4% and carbon neutrality in 2030 requires a rate of 10% per year.
 
@@ -4752,15 +4752,15 @@ In order to achieve this ambitious goal, authorities are committed to making Mar
 Marseille 2030 Climate Target Plan - Climate City Contract – Commitments - Page 7
 While the focus of the European Mission is first and foremost on the issue of climate change mitigation - and therefore on associated greenhouse gas emissions - the collective commitment also covers the following objectives:
 
-Contributing to the reduction of poverty and to social empowerment will be inseparable from climate action. The region's greatest asset is the diversity of its population, with 111 village-like neighbourhoods each with a strong urban character and history. Marseille is a young and dynamic city in which civil society is seizing the challenges of the future through a widespread demonstration of democracy. The very strong involvement of citizens and associations is encouraging an urban model of social and ecological justice for the Marseille area. However, the region is socially fractured, with strong social inequalities. The rate of poverty reached 26% of the overall population, affecting children in particular and 38 neighbourhoods are designated as national priority neighbourhoods (QPV) because of their inhabitants' level of poverty. The approach must contribute to significantly reducing the rate of poverty in the region.
+- Contributing to the reduction of poverty and to social empowerment will be inseparable from climate action. The region's greatest asset is the diversity of its population, with 111 village-like neighbourhoods each with a strong urban character and history. Marseille is a young and dynamic city in which civil society is seizing the challenges of the future through a widespread demonstration of democracy. The very strong involvement of citizens and associations is encouraging an urban model of social and ecological justice for the Marseille area. However, the region is socially fractured, with strong social inequalities. The rate of poverty reached 26% of the overall population, affecting children in particular and 38 neighbourhoods are designated as national priority neighbourhoods (QPV) because of their inhabitants' level of poverty. The approach must contribute to significantly reducing the rate of poverty in the region.
 
-Combining adaptation to climate change and reduction of GHG emissions so that Marseille can enter a transition which prepares the city for climate change and prioritises adaptation in the investment choices made. This must become one of the fundamentals of the approach by identifying the requirements for adaptation in order to take into account the future climate on the one hand, and on the other hand, to avoid 'maladaptation'5. An assessment of vulnerabilities will have to be carried out as part of the process.
+- Combining adaptation to climate change and reduction of GHG emissions so that Marseille can enter a transition which prepares the city for climate change and prioritises adaptation in the investment choices made. This must become one of the fundamentals of the approach by identifying the requirements for adaptation in order to take into account the future climate on the one hand, and on the other hand, to avoid 'maladaptation'5. An assessment of vulnerabilities will have to be carried out as part of the process.
 
-Contributing to improving the region's energy resilience: in the context of the European energy crisis, sobriety and the fight against fuel poverty, in addition to directly contributing to decarbonisation, will help to improve the region's ability to withstand various crises. These approaches are also necessary in order to enter an era of regenerating ecosystems and reducing the use of natural resources.
+- Contributing to improving the region's energy resilience: in the context of the European energy crisis, sobriety and the fight against fuel poverty, in addition to directly contributing to decarbonisation, will help to improve the region's ability to withstand various crises. These approaches are also necessary in order to enter an era of regenerating ecosystems and reducing the use of natural resources.
 
-Improving the health of residents must be a priority in the development of public policies and projects deployed within the framework of the climate transition.
+- Improving the health of residents must be a priority in the development of public policies and projects deployed within the framework of the climate transition.
 
-Lastly, increasing employment in Marseille: the transition must create local jobs, enabling Marseille to significantly reduce its unemployment rate (17% in 2019, i.e. 8 percentage points higher than the national average).
+- Lastly, increasing employment in Marseille: the transition must create local jobs, enabling Marseille to significantly reduce its unemployment rate (17% in 2019, i.e. 8 percentage points higher than the national average).
 
 Adaptation which fails to reduce vulnerability, and instead increases it.
 
@@ -4775,64 +4775,64 @@ After an initial work phase, several committees focusing on various themes ident
 
 ## Priority 1 - Revolutionise the way people travel in Marseille (Transport &amp; Logistics Committee):
 
-Target high-emission passenger journeys: City-Metropolis journeys, city centre-Metropolis journeys, city centre - rest of Marseille journeys and internal Marseille journeys
-Accelerate the 'sobriety' drivers which have a strong potential impact between now and 2030 at a relatively controlled cost (cycling plan, traffic calming of public spaces, reserved lanes for public transport or car sharing, etc.).
-Secure funding for the development of major infrastructure projects (Metropolitan Mobility Plan, deployment of EV charging infrastructure, etc.) which are feasible between now and 2030, and for structuring projects with a post-2030 impact (particularly projects supported by the Region and its partners)
-Develop inclusive mobility and contribute to the opening up of the northern districts.
-Support the transition to low-carbon logistics (rail freight, logistics platforms, zero-emission vehicles, cyclo-logistics, etc.)
+- Target high-emission passenger journeys: City-Metropolis journeys, city centre-Metropolis journeys, city centre - rest of Marseille journeys and internal Marseille journeys
+- Accelerate the 'sobriety' drivers which have a strong potential impact between now and 2030 at a relatively controlled cost (cycling plan, traffic calming of public spaces, reserved lanes for public transport or car sharing, etc.).
+- Secure funding for the development of major infrastructure projects (Metropolitan Mobility Plan, deployment of EV charging infrastructure, etc.) which are feasible between now and 2030, and for structuring projects with a post-2030 impact (particularly projects supported by the Region and its partners)
+- Develop inclusive mobility and contribute to the opening up of the northern districts.
+- Support the transition to low-carbon logistics (rail freight, logistics platforms, zero-emission vehicles, cyclo-logistics, etc.)
 
 ## Priority 2 – Decarbonise the housing stock by combating fuel poverty and substandard housing (Housing Committee):
 
-Fight against soil artificialisation by favouring rehabilitation whenever possible
-Support and expand the energy renovation of private and social housing
-Support the rehabilitation of public tertiary buildings using a comprehensive and exemplary approach. To this end, the City of Marseille's school plan is a priority.
-Lead a network of public and private partners, draw up a common reference framework about sustainable construction and combat urban heat islands by acting in particular on the old city center within the framework of the Partnership Development Project (PPA)
-Take action on vocational training and the construction industry as a whole, and make the connection between employment supply and demand
+- Fight against soil artificialisation by favouring rehabilitation whenever possible
+- Support and expand the energy renovation of private and social housing
+- Support the rehabilitation of public tertiary buildings using a comprehensive and exemplary approach. To this end, the City of Marseille's school plan is a priority.
+- Lead a network of public and private partners, draw up a common reference framework about sustainable construction and combat urban heat islands by acting in particular on the old city center within the framework of the Partnership Development Project (PPA)
+- Take action on vocational training and the construction industry as a whole, and make the connection between employment supply and demand
 
 ## Priority 3 – Scale up sobriety, efficiency and renewable energies (Energy Committee)
 
-Deploy a strategy for energy sobriety in the region at different levels (individuals, organisations, region)
-Diversify the local energy mix and support an increase in the use of renewables in Marseille:
-Develop a large-scale plan for solar energy (photovoltaic and solar thermal)
-Develop heating and cooling networks
-Develop new economic &amp; energy models such as local energy communities
+- Deploy a strategy for energy sobriety in the region at different levels (individuals, organisations, region)
+- Diversify the local energy mix and support an increase in the use of renewables in Marseille:
+- Develop a large-scale plan for solar energy (photovoltaic and solar thermal)
+- Develop heating and cooling networks
+- Develop new economic &amp; energy models such as local energy communities
 
 ## Priority 4 – Reduce, Reuse, Sort and Recycle (Circular Economy &amp; Waste Committee)
-Take action to reduce waste at source (increase communication and support for behaviour change, facilitate composting)
-Develop reuse, local channels, recycling centres, returns deposits and the circular economy in general (including the construction sector)
-Improve sorting and implement the separate collection of bio-waste
-Develop the material and energy recovery of collected waste
+- Take action to reduce waste at source (increase communication and support for behaviour change, facilitate composting)
+- Develop reuse, local channels, recycling centres, returns deposits and the circular economy in general (including the construction sector)
+- Improve sorting and implement the separate collection of bio-waste
+- Develop the material and energy recovery of collected waste
 
 ## Priority 5 – Strengthen our Mediterranean model of a green city (Nature in the City Committee, Urban Agriculture &amp; Food Committee, Sea &amp; Coastal Committee):
 
-Nature in the city:
+- Nature in the city:
 
-Increase the tree stock, increase the resilience of the existing stock and restore the urban landscape in order to preserve the ecosystem services provided
-Preserve the green network and increase its density by creating new green spaces (continuous/discontinuous) and by ‘re-naturing’ the existing ones
-Improve biodiversity functioning through green, blue, dark and brown corridors and involve citizens in the associated projects
-‘Bitumen removal’ in order to return water to the soil and help reduce urban overheating
-Use nature-based management (sobriety and frugality)
+- Increase the tree stock, increase the resilience of the existing stock and restore the urban landscape in order to preserve the ecosystem services provided
+- Preserve the green network and increase its density by creating new green spaces (continuous/discontinuous) and by ‘re-naturing’ the existing ones
+- Improve biodiversity functioning through green, blue, dark and brown corridors and involve citizens in the associated projects
+- ‘Bitumen removal’ in order to return water to the soil and help reduce urban overheating
+- Use nature-based management (sobriety and frugality)
 
-Urban agriculture &amp; food:
+- Urban agriculture &amp; food:
 
-Plan to reclaim agricultural land: reclaim the 120 ha of unused agricultural land, install new farmers and develop agroecology and organic farming practices
-Increase access to local, sustainable, quality food which is accessible to all: short supply chains, out-of-home catering (RHD), food insecurity, urban vegetable gardens, collective gardens and the fight against food waste, etc.
-Make the city's school catering exemplary in terms of local distribution channels, organic products, zero plastic, reduction of waste
-Support innovative and emerging projects
+- Plan to reclaim agricultural land: reclaim the 120 ha of unused agricultural land, install new farmers and develop agroecology and organic farming practices
+- Increase access to local, sustainable, quality food which is accessible to all: short supply chains, out-of-home catering (RHD), food insecurity, urban vegetable gardens, collective gardens and the fight against food waste, etc.
+- Make the city's school catering exemplary in terms of local distribution channels, organic products, zero plastic, reduction of waste
+- Support innovative and emerging projects
 
-Sea &amp; coast
+- Sea &amp; coast
 
-Support a transition to low-carbon marinas and water sports centres
-Develop a peaceful, depolluted and ‘re-naturalized’ coastline
-Preserve and restore posidonia and marine biodiversity
-Protect a unique local feature: archipelagos and islands
-Conduct joint international action and the sharing of knowledge
-Act on upstream pollution (land-based waste collection devices, education, etc.) and organise pilot projects on cleaning up macro-waste at sea.
+- Support a transition to low-carbon marinas and water sports centres
+- Develop a peaceful, depolluted and ‘re-naturalized’ coastline
+- Preserve and restore posidonia and marine biodiversity
+- Protect a unique local feature: archipelagos and islands
+- Conduct joint international action and the sharing of knowledge
+- Act on upstream pollution (land-based waste collection devices, education, etc.) and organise pilot projects on cleaning up macro-waste at sea.
 
 ## Priority 6 – Raise awareness across the whole region (Education &amp; Awareness-Raising Committee)
 
-Create an educational pathway on the environment which includes an extensive component on climate issues (in particular within the framework of the Regional Educational Project)
-Organise the transformation of organisations and professional practices, particularly through training (local authority employees, citizens, companies, etc.)
+- Create an educational pathway on the environment which includes an extensive component on climate issues (in particular within the framework of the Regional Educational Project)
+- Organise the transformation of organisations and professional practices, particularly through training (local authority employees, citizens, companies, etc.)
 
 Marseille 2030 Climate Target Plan - Climate City Contract – Commitments - Page 10
 Marseille 2030 Climate Target Plan - Climate City Contract – Commitments - Page 11
@@ -4847,9 +4847,9 @@ The scientific requirements for staying on a 1.5°C global warming trajectory pr
 
 In order to ensure that this scientific requirement is indeed one of the guidelines of the approach, a scientific committee was set up in 2022. Its role is to guide the process in its main choices. In practical terms, the scientific committee, composed of some fifteen members (see appendices), can:
 
-Select subjects to put on the agenda for the approach, appoint experts to participate in the working committees,
-Advocate and recommend within the iterative process changes to the contract (in terms of content and method)
-Request regular evaluations of the programme's progress.
+- Select subjects to put on the agenda for the approach, appoint experts to participate in the working committees,
+- Advocate and recommend within the iterative process changes to the contract (in terms of content and method)
+- Request regular evaluations of the programme's progress.
 
 This scientific committee is also used as a means to increase the links between urban action and the world of research within the various projects.
 
@@ -4857,23 +4857,23 @@ This scientific committee is also used as a means to increase the links between 
 
 The process is initiated by the City of Marseille and piloted collectively with the Aix-Marseille-Provence Metropolis and the Région Sud. These authorities are actively involved in the various governance bodies (committees, etc.) particularly in order to:
 
-Organise the management and monitoring of actions and projects in the action plan
-Facilitate the implementation of the projects identified in the contract: share objectives and requirements, communicate information on the progress of the project, make use of the skills available to speed up the implementation of the projects, provide technical advice on sticking points, identify sources of funding, etc.
-Share expertise between authorities in order to make progress on different issues (e.g. cycling facilities, energy renovation, greening the city etc.)
-Collectively study the responses which can be given to external project leaders
+- Organise the management and monitoring of actions and projects in the action plan
+- Facilitate the implementation of the projects identified in the contract: share objectives and requirements, communicate information on the progress of the project, make use of the skills available to speed up the implementation of the projects, provide technical advice on sticking points, identify sources of funding, etc.
+- Share expertise between authorities in order to make progress on different issues (e.g. cycling facilities, energy renovation, greening the city etc.)
+- Collectively study the responses which can be given to external project leaders
 
 ## An opportunity to promote the region's vitality and creativity
 
 As mentioned in the introduction, the transformation of the region must combine a normative and plan-based approach - breaking down the annual carbon budgets to be respected into actions and projects - and a local creative approach - identifying and facilitating local initiatives which contribute directly to the objective. In the initial stages of the process, the region's stakeholders were sounded out on their willingness to get involved and a first series of projects was identified that they wished to carry out. The remainder of the process should contribute to:
 
-Mobilising local, national and European resources (public and private) to support local initiatives which are directly in line with the mission's objectives. For example, this support could take the form of:
-Engineering support to obtain funding,
-Setting up agreements to facilitate the roll-out of projects,
-Consideration of new solutions in public procurement,
-Unlocking direct funding,
-etc.
+- Mobilising local, national and European resources (public and private) to support local initiatives which are directly in line with the mission's objectives. For example, this support could take the form of:
+- Engineering support to obtain funding,
+- Setting up agreements to facilitate the roll-out of projects,
+- Consideration of new solutions in public procurement,
+- Unlocking direct funding,
+- etc.
 
-Setting up a working process allowing the involvement of the whole ecosystem in the formulation of their own objectives, the evolution of the approach's priorities, the practical implementation of actions and feedback on requirements. The governance involved at this stage in this first version of the contract remains to be decided.
+- Setting up a working process allowing the involvement of the whole ecosystem in the formulation of their own objectives, the evolution of the approach's priorities, the practical implementation of actions and feedback on requirements. The governance involved at this stage in this first version of the contract remains to be decided.
 
 ## A strong citizen involvement
 
@@ -4896,62 +4896,62 @@ Marseille 2030 Climate Target Plan - Climate City Contract – Commitments - Pag
 
 ## Steering Committee (City &amp; Metropolis &amp; Region)
 
-Co-chair: City, Metropolis, Région
-Members: elected officials, administration
-Role:
-Arbitrate the strategic orientations
-Validate the list of projects identified by each committee
-Quarterly or Semi-annual
+- Co-chair: City, Metropolis, Région
+- Members: elected officials, administration
+- Role:
+- Arbitrate the strategic orientations
+- Validate the list of projects identified by each committee
+- Quarterly or Semi-annual
 
 ## Scientific Committee
 
-Co-chair: City, Aix Marseille University
-Role:
-To recommend the main orientations of the CVC
-Take responsibility for climate issues
-Develop certain projects (citizens, investment fund)
-Identify the experts of the commissions
-Quarterly
+- Co-chair: City, Aix Marseille University
+- Role:
+- To recommend the main orientations of the CVC
+- Take responsibility for climate issues
+- Develop certain projects (citizens, investment fund)
+- Identify the experts of the commissions
+- Quarterly
 
 ## Citizens
 
-Citizens' Assembly for the Future
-involvement of the economic sphere to be defined
+- Citizens' Assembly for the Future
+- involvement of the economic sphere to be defined
 
-Municipal Youth Council, Metropolitan Youth Council
-Aix Marseille Provence Development Council
+- Municipal Youth Council, Metropolitan Youth Council
+- Aix Marseille Provence Development Council
 
 ## Marseille 2030 Team, role:
-Secretariat
-Links with the scientific council, citizens' assembly
-Ensure interactions with the European level
-Follow-up of flagship projects
+- Secretariat
+- Links with the scientific council, citizens' assembly
+- Ensure interactions with the European level
+- Follow-up of flagship projects
 
 ## Commissions
 
-Administration
-Project
-dippers
-Funders
+- Administration
+- Project
+- dippers
+- Funders
 
-Co-chair: City and Metropolis
-Members: elected officials, administration and ecosystem
-Role:
-Enrich the project portfolio
-Manage the projects
-Involve partners
+- Co-chair: City and Metropolis
+- Members: elected officials, administration and ecosystem
+- Role:
+- Enrich the project portfolio
+- Manage the projects
+- Involve partners
 
-To be defined by each commission
+- To be defined by each commission
 
 ## Commissions:
-Mobility &amp; logistics,
-Building decarbonisation,
-Energy transition,
-Circular economy and waste,
-Nature in the city,
-Urban agriculture and food,
-Sea and seacoast
-Education &amp; sensitisation
+- Mobility &amp; logistics,
+- Building decarbonisation,
+- Energy transition,
+- Circular economy and waste,
+- Nature in the city,
+- Urban agriculture and food,
+- Sea and seacoast
+- Education &amp; sensitisation
 Marseille 2030 Climate Target Plan - Climate City Contract – Commitments - Page 14
 
 # 8. PROCESS AND SCHEDULE
@@ -4976,16 +4976,16 @@ Then, provided that the Climate City Contract proves to be the right vehicle to 
 
 The Marseille 2030 Climate Target Plan approach is intended to be expanded in 2023 and 2024 along the following lines:
 
-Developing local institutional cooperation
-Conducting regular committees focusing on different themes and steering committees to monitor the implementation of the projects identified in the action plan
-Implementing internal project monitoring within the City of Marseille and regularly sharing progress to identify possible synergies between authorities or with the local ecosystem
-Mobilising funding mechanisms
-Facilitating a dialogue with the European Commission and the Net Zero Cities platform on the tools available to support local projects
-Developing an endowment fund to support a range of local projects
-Responding to calls for projects relating to the ‘100 Smart and Carbon-Neutral Cities in 2030’ programme
-Creating a collective narrative of a carbon-neutral Marseille which enables everyone to envisage themselves being part of the transformations to be carried out in the area
-Supporting local stakeholders developing projects addressing the challenge of climate change
-Ensuring that the transition is fair, in particular by leading a working group within the Citizens' Assembly for the Future dedicated to the transformation of Marseille as regards the challenge of climate change.
+- Developing local institutional cooperation
+- Conducting regular committees focusing on different themes and steering committees to monitor the implementation of the projects identified in the action plan
+- Implementing internal project monitoring within the City of Marseille and regularly sharing progress to identify possible synergies between authorities or with the local ecosystem
+- Mobilising funding mechanisms
+- Facilitating a dialogue with the European Commission and the Net Zero Cities platform on the tools available to support local projects
+- Developing an endowment fund to support a range of local projects
+- Responding to calls for projects relating to the ‘100 Smart and Carbon-Neutral Cities in 2030’ programme
+- Creating a collective narrative of a carbon-neutral Marseille which enables everyone to envisage themselves being part of the transformations to be carried out in the area
+- Supporting local stakeholders developing projects addressing the challenge of climate change
+- Ensuring that the transition is fair, in particular by leading a working group within the Citizens' Assembly for the Future dedicated to the transformation of Marseille as regards the challenge of climate change.
 Marseille 2030 Climate Target Plan - Climate City Contract – Commitments - Page 15
 
 # 9. SIGNATURE

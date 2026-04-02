@@ -15,25 +15,24 @@ NetZeroCities has received funding from the H2020 Research and Innovation Progra
 
 # Table of Contents
 
-Table of Contents ... 5
-Summary ... 6
-List of figures ... 7
-List of tables ... 7
-Abbreviations and acronyms ... 8
-Introduction ... 8
-Part A – Current State of Climate Action ... 18
-Module A-1 Greenhouse Gas Emissions Baseline Inventory ... 18
-Module A-2 Current Policies and Strategies Assessment ... 25
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality ... 36
-Part B – Pathways towards Climate Neutrality by 2030 ... 48
-Module B-1 Climate Neutrality Scenarios and Impact Pathways ... 48
-Module B-2 Climate Neutrality Portfolio Design ... 50
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 100
-Part C – Enabling Climate Neutrality by 2030 ... 127
-Module C-1 Governance Innovation Interventions ... 127
-Module C-2 Social Innovation Interventions ... 141
-Outlook and next steps ... 149
-Annexes ... 150
+- Summary
+- List of figures
+- List of tables
+- Abbreviations and acronyms
+- Introduction
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- Module C-2 Social Innovation Interventions
+- Outlook and next steps
+- Annexes
 
 # Summary
 
@@ -2568,15 +2567,16 @@ NET ZERO CITIES
 EU MISSION PLATFORM | CLIMATE NEUTRAL AND SMART CITIES
 # Table of contents
 
-Introduction...1
-Goal: Climate neutrality by 2030...4
-Strategic priorities...6
-Process and principles...8
-Monitoring and updating the CCC...8
-Citizen engagement...9
-Stakeholder engagement and mission-oriented innovation...9
-The Helsingborg Climate Agreement...11
-The Helsingborg Declaration...11
+- Introduction
+- Goal: Climate neutrality by 2030
+- Strategic priorities
+- Process and principles
+- Monitoring and updating the CCC
+- Citizen engagement
+- Stakeholder engagement and mission-oriented innovation
+- The Helsingborg Climate Agreement
+- The Helsingborg Declaration
+
 # 1. Introduction
 
 Helsingborg has committed to becoming climate neutral by 2030. We have signed a Climate Contract with national authorities in Sweden, as part of the Climate Neutral Cities 2030, run by Viable Cities. Helsingborg is also recognised as one of EU's strategic 100 (+12) Climate-Neutral and Smart Cities by 2030. We are now submitting an updated version of our Climate City Contract (CCC).

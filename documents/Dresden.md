@@ -6,156 +6,110 @@ City of Dresden
 Action Plan
 
 ![img-0.jpeg](img-0.jpeg)
-Dresden.
-DIG29GU
 
 The content of this document reflects only the author's view. The European Commission is not responsible for any use that may be of the information it contains.
 
 NetZeroCities has received funding from the H2020 Research and Innovation Programme under the grant agreement n°101036519.
-图
-
-Dresden. Diegen
-
-Dresden action plan for climate neutrality in 2030
-
-O
 
 # Table of contents
 
-Table of contents... 3
-List of illustrations... 5
-List of tables... 6
-List of the annex... 7
-Abbreviations and acronyms... 8
-Introduction... 9
-Dresden in general... 9
-Current climate neutrality target in Dresden and current resolutions: ... 17
-Other CCC-relevant strategies and projects: ... 20
-Development of CCC and integration of Dresden climate targets: ... 26
-Basics CCC:... 26
-Integration of Dresden climate targets and Ambition 2030: ... 27
-Participation and stakeholders... 28
-Part A - Current status of climate protection... 33
-Module A-1 Baseline inventory of greenhouse gas emissions... 33
-GHG accounting method... 33
-The published GHG inventory to 2018... 34
-Process for regularly updating the GHG inventory and expansion of emission sources. 38
-Tables on the current GHG inventory... 42
-Not yet published updated GHG inventory according to BISKO for 2019 - 2022... 46
-Module A-2 Evaluation of current policy guidelines and local climate protection strategy... 50
-Legal framework:... 50
-Local climate protection strategy: Dresden's target for reducing greenhouse gas emissions... 57
-Module A-3 Systemic obstacles and opportunities for climate neutrality in 2030... 72
-System description and analysis:... 72
-Analysing the framework conditions... 74
-Focus: Challenges in the building sector... 78
-Opportunities: Regional added value, cost savings and benefits... 81
-Part B - Pathways to climate neutrality by 2030... 85
-Module B-1 Climate neutrality scenarios and impact pathways... 85
-Module B-2 Climate neutrality portfolio design... 97
-Portfolio of measures of the IEK climate protection strategy (building energy)... 97
-图
-
-Dresden. 1
-
-Dresden action plan for climate neutrality in 2030
-
-O
-
-Portfolio of mobility measures 104
-Portfolio of measures for green infrastructure and climate change adaptation 110
-Action profiles - individual action plans 112
-Module B-3 Indicators for monitoring, evaluation and learning 154
-
-# 4 Part C - Enabling climate neutrality by 2030 163
-
-Module C-1 Governance 163
-
-Municipal climate protection structures: 164
-Multi-level governance: 168
-Involvement of relevant stakeholders: 169
-
-Module C-2 Social Innovations 176
-
-# 5 Outlook and next steps 183
-
-# 6 Attachments 184
-
-Decarbonisation concept for district heating 184
-
-Generation balance and emissions path 187
-Expansion and redensification 189
-
-Definition of green house gas neutrality 190
-In-depth categorisation of sectors according to BISKO 197
-Determination of GHG emissions from agriculture 198
-Parameter set for scenarios 199
-
-GHG emission factors 199
-Key figures for renewable energy potentials 205
-
-Calculation of the reduction path in the IEK 207
-Dresden. DRESD
-
-Dresden action plan for climate neutrality in 2030
-
-O
+- List of illustrations
+- List of tables
+- List of the annex
+- Abbreviations and acronyms
+- Introduction
+- Dresden in general
+- Current climate neutrality target in Dresden and current resolutions
+- Other CCC-relevant strategies and projects
+- Development of CCC and integration of Dresden climate targets
+- Basics CCC
+- Integration of Dresden climate targets and Ambition 2030
+- Participation and stakeholders
+- Part A - Current status of climate protection
+- Module A-1 Baseline inventory of greenhouse gas emissions
+- GHG accounting method
+- The published GHG inventory to 2018
+- Process for regularly updating the GHG inventory and expansion of emission sources.
+- Tables on the current GHG inventory
+- Not yet published updated GHG inventory according to BISKO for 2019 - 2022
+- Module A-2 Evaluation of current policy guidelines and local climate protection strategy
+- Legal framework
+- Local climate protection strategy: Dresden's target for reducing greenhouse gas emissions
+- Module A-3 Systemic obstacles and opportunities for climate neutrality in 2030
+- System description and analysis
+- Analysing the framework conditions
+- Focus: Challenges in the building sector
+- Opportunities: Regional added value, cost savings and benefits
+- Part B - Pathways to climate neutrality by 2030
+- Module B-1 Climate neutrality scenarios and impact pathways
+- Module B-2 Climate neutrality portfolio design
+- Portfolio of measures of the IEK climate protection strategy (building energy)
+- Portfolio of mobility measures
+- Portfolio of measures for green infrastructure and climate change adaptation
+- Action profiles - individual action plans
+- Module B-3 Indicators for monitoring, evaluation and learning
+- Part C - Enabling climate neutrality by 2030
+- Module C-1 Governance
+- Municipal climate protection structures
+- Multi-level governance
+- Involvement of relevant stakeholders
+- Module C-2 Social Innovations
+- Outlook and next steps
+- Attachments
+- Decarbonisation concept for district heating
+- Generation balance and emissions path
+- Expansion and redensification
+- Definition of green house gas neutrality
+- In-depth categorisation of sectors according to BISKO
+- Determination of GHG emissions from agriculture
+- Parameter set for scenarios
+- GHG emission factors
+- Key figures for renewable energy potentials
+- Calculation of the reduction path in the IEK
 
 # List of illustrations
 
-Figure 1-1 Population development from 1990 to 2022 (population with main residence in Dresden, according to population register) 10
-Figure 1-2: Building age structure of the flat in Dresden from 2017 11
-Illustration 1-3 Map of Dresden and its neighbourhoods, ©Themenstadtplan, City of Dresden 20
-Figure 1-4 CO₂ reduction path in the acceleration scenario until complete decarbonisation by the end of 2035 in thousand tCO₂ per year 23
-Figure 1-5 Controllable target values for setting the reduction path 28
-Figure 1-6 Stakeholder map from SNAP workshop, larger in App. 4 29
-Figure 1-7 Composition of the Round Table to support the IEK process 30
-Figure 2-1 Final energy consumption for the years 2013 to 2018 of the Dresden GHG inventory 35
-Figure 2-2: Final energy consumption in 2018 broken down by energy source and sector 35
-Figure 2-3 GHG emissions for the years 2013 to 2018 of the Dresden GHG inventory (BISKO) 36
-Figure 2-4: Greenhouse gas emissions 2018 in tCO₂_eq broken down by energy source and sector 37
-Figure 2-5 Development of GHG emissions in the city of Dresden (different accounting methods, since 2017 BISKO) 37
-Figure 2-6 Shares of energy and non-energy emissions at federal level 41
-Figure 2-7 Overview of the Fields of action for reducing greenhouse gases (own illustration) 58
-Figure 2-8 Scenarios considered in the IEK 61
-Figure 2-9 Functional diagram of the reduction path calculator and incoming data records 63
-Illustration 2-10 Projection of final energy demand by energy source (excluding mobility) 65
-Illustration 2-11 Projection of final energy demand divided by sector (excluding mobility) 66
-Figure 2-12 Expansion of local renewable electricity 66
-Figure 2-13 Development of GHG emissions by energy source for the reduction pathway target 67
-Figure 2-14 Development of GHG emissions by emission source for the reduction pathway target 67
-Figure 4-1 Organisational structures for climate protection in the City of Dresden 164
-Figure 4-2 View of the prototype (German) of the "ENERGIZE" board game 182
-6
-
-Dresden. Dresden
-
-Dresden action plan for climate neutrality in 2030
+- Figure 1-1 Population development from 1990 to 2022 (population with main residence in Dresden, according to population register)
+- Figure 1-2: Building age structure of the flat in Dresden from 2017
+- Illustration 1-3 Map of Dresden and its neighbourhoods, ©Themenstadtplan, City of Dresden
+- Figure 1-4 CO₂ reduction path in the acceleration scenario until complete decarbonisation by the end of 2035 in thousand tCO₂ per year
+- Figure 1-5 Controllable target values for setting the reduction path
+- Figure 1-6 Stakeholder map from SNAP workshop, larger in App. 4
+- Figure 1-7 Composition of the Round Table to support the IEK process
+- Figure 2-1 Final energy consumption for the years 2013 to 2018 of the Dresden GHG inventory
+- Figure 2-2: Final energy consumption in 2018 broken down by energy source and sector
+- Figure 2-3 GHG emissions for the years 2013 to 2018 of the Dresden GHG inventory (BISKO)
+- Figure 2-4: Greenhouse gas emissions 2018 in tCO₂_eq broken down by energy source and sector
+- Figure 2-5 Development of GHG emissions in the city of Dresden (different accounting methods, since 2017 BISKO)
+- Figure 2-6 Shares of energy and non-energy emissions at federal level
+- Figure 2-7 Overview of the Fields of action for reducing greenhouse gases (own illustration)
+- Figure 2-8 Scenarios considered in the IEK
+- Figure 2-9 Functional diagram of the reduction path calculator and incoming data records
+- Illustration 2-10 Projection of final energy demand by energy source (excluding mobility)
+- Illustration 2-11 Projection of final energy demand divided by sector (excluding mobility)
+- Figure 2-12 Expansion of local renewable electricity
+- Figure 2-13 Development of GHG emissions by energy source for the reduction pathway target
+- Figure 2-14 Development of GHG emissions by emission source for the reduction pathway target
+- Figure 4-1 Organisational structures for climate protection in the City of Dresden
+- Figure 4-2 View of the prototype (German) of the "ENERGIZE" board game
 
 # List of tables
 
-Table 6-3: Calculation of GHG-neutrality target values ... 193
-Table 6-4: Determination of the share of energy and non-energy CO emissions₂ ... 195
-Table 6-5: Derivation of the CO₂ budget (upper limit) for Dresden ... 196
-Table 6-6: Derivation of the CO₂ budget (lower limit) for Dresden ... 196
-Table 6-10: Assumed GHG emissions for hydrogen ... 203
-Table 6-11: Development of GHG emission factors for target scenarios ... 203
-Table 6-12: Development of GHG emission factors for reference scenario ... 204
-Table 6-13: Development of the key figures for RE potentials (wind and building-independent PV) for target scenarios ... 205
-Table 6-14: Development of the key figures for RE potentials (wind and building-independent PV) for the reference scenario ... 206
-Table 6-15: Allocation of Fields of action to the sectors (BISKO methodology) ... 208
-Table 6-16: Clustering of energy sources in the reduction path calculator for calculation model and evaluation ... 209
-Table 6-17: Allocation of the Fields of action to the energy sources considered therein ... 210
-Table 6-18: GHG reduction path for the mobility sector in the reduction path calculator ... 211
-图
+- Table 6-3: Calculation of GHG-neutrality target values
+- Table 6-4: Determination of the share of energy and non-energy CO emissions₂
+- Table 6-5: Derivation of the CO₂ budget (upper limit) for Dresden
+- Table 6-6: Derivation of the CO₂ budget (lower limit) for Dresden
+- Table 6-10: Assumed GHG emissions for hydrogen
+- Table 6-11: Development of GHG emission factors for target scenarios
+- Table 6-12: Development of GHG emission factors for reference scenario
+- Table 6-13: Development of the key figures for RE potentials (wind and building-independent PV) for target scenarios
+- Table 6-14: Development of the key figures for RE potentials (wind and building-independent PV) for the reference scenario
+- Table 6-15: Allocation of Fields of action to the sectors (BISKO methodology)
+- Table 6-16: Clustering of energy sources in the reduction path calculator for calculation model and evaluation
+- Table 6-17: Allocation of the Fields of action to the energy sources considered therein
+- Table 6-18: GHG reduction path for the mobility sector in the reduction path calculator
 
-Dresden. DREQED
-
-Dresden action plan for climate neutrality in 2030
-
-#
-
-List of the annex
+# List of the annex
 
 |  Appendix no | Title of the document | Source  |
 | --- | --- | --- |
@@ -164,11 +118,6 @@ List of the annex
 |  App. 3 | GHG-inventory (BISKO); 2022-01-14 - Bilanz_Auswertung 2010 - 2018.xlsx | Extracted Sheets from Klimaschutzplaner and Evaluation of GHG-inventory (BISKO)  |
 |  App. 4 | Dresden SUMP-VEP2025plus | CoD  |
 |  App. 5 | Summary EU-Project Neutral Path | CoD  |
-8
-
-Dresden. DRESD
-
-Dresden action plan for climate neutrality in 2030
 
 # Abbreviations and acronyms
 
@@ -186,13 +135,6 @@ The list of abbreviations and acronyms identifies the abbreviations (a short for
 |  IEuKK | Integrated Energy and Climate Protection Plan from 2013  |
 |  IEK | Integrated Energy and Climate Protection Plan from 2024  |
 |  COD | City of Dresden  |
-图
-
-Dresden. 1
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 # 1 Introduction
 
@@ -209,13 +151,6 @@ As at 31.12.2023, Dresden had 572,240 main residents and a population density of
 From January 1990 to 1998, the number of "population at the place of main residence" fell to just under 447,000 inhabitants due to emigration and relocation to neighbouring municipalities (see Figure 1-1). Out-migration and relocation to the surrounding area can be observed in two separate waves, with relocations to the surrounding area only occurring significantly in the mid-1990s as a result of increasing prosperity (particularly to enable home ownership). The incorporations carried out in 1997 and 1999 (25,483 people on 1 January 1999) partially or completely offset the aforementioned effects.
 
 Since 1999, the population has been increasing again due to significant migration surpluses and re-urbanisation. Alongside Munich and Bonn, Dresden's population is one of the fastest growing in Germany with an annual increase of around 0.68 Percent. A slight acceleration in growth was observed until 2006. In 2006, there was even a slight surplus of births and the number of "population at the place of main residence" exceeded the 500,000 mark. As a result, the population fluctuated by more than 50,000 inhabitants within a decade. In addition to the slowdown in suburbanisation in the first years of the 21st century and the relatively high birth rate, the reason given for the (recently accelerated) increase is the second home tax, which led to the conversion of many second homes into main residences.
-#
-
-Dresden. Dresden
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 ![img-0.jpeg](img-0.jpeg)
 Bevölkerungsentwicklung im Stadtgebiet Dresden
@@ -228,13 +163,6 @@ City policy is shaped by the City Council, the Mayor and the six specialised May
 # Building stock
 
 The building stock of the city of Dresden comprises around 70,000 buildings (see Figure 1-2). Of these, around 50 Percent are used for residential, 44 Percent for commercial and 1 Percent for public purposes. The use of the remaining 5 Percent cannot be precisely determined.
-#
-
-Dresden. Dresden
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 Figure 1-2: Building age structure of the flat in Dresden from 2017
 ![img-0.jpeg](img-0.jpeg)
@@ -247,9 +175,6 @@ The energy supply of Dresden's buildings accounts for approx. 48 Percent of the 
 In addition to the supply and supplier risks that can result from the high dependence on imports, Dresden is exposed to the price risks of fossil fuels on the international energy markets. This was particularly evident in the period from mid-2021 to mid-2023 for buildings supplied with natural gas and district heating. Future price risks arise primarily from CO2 pricing, which will increase, and further geopolitical conflicts. The use of local and climate-neutral energy sources will play a central role in realising a secure and affordable energy supply with the most stable prices possible in Dresden in the long term.
 
 To achieve this, the energy requirements of buildings must be gradually reduced and - where possible and necessary - made fit for the use of climate-neutral energy sources. The greatest challenges exist in particular in the part of the existing building stock where energy efficiency is lower than in new buildings. This is often due to lower insulation and sealing standards, which result in higher heat losses, and heat distribution systems in buildings that require higher flow temperatures and are therefore less efficient when using renewable energies (RE). In new buildings, on the other hand, the German government has set the course for climate neutrality with the Building Energy Act (GEG 2024) with the minimum standard KfW55 and the requirement of at least  $65\%$  RE from 1 January 2024 in new construction areas.
-Dresden. Dresden. Dresden action plan for climate neutrality in 2030
-
-2
 
 # Green space and urban development
 
@@ -260,11 +185,6 @@ Since 2000, there have been several floods of the century; heavy rainfall events
 The cultural landscape of the Dresden Elbe Valley was included in the UNESCO World Heritage Programme in 2006. For many Dresdeners, the Elbe Valley area, which is exposed to views, must not be disturbed. Conversely, this has an impact on infrastructure projects such as bridge construction (as a result of which Dresden lost its World Heritage title) and/or the construction of wind turbines and ground-mounted photovoltaics.
 
 The settlement area is made up of buildings and open spaces, recreational areas and cemeteries, so it cannot be equated with the actual degree of sealing, but it does represent the degree of urbanisation. Agricultural land in particular, on the other hand, is steadily decreasing. This is all the more problematic as this often involves high-quality soils. From a soil protection perspective, land consumption is still far too high and jeopardises the German government's goal of allowing only 30 hectares per day of land consumption by 2030. Broken down linearly to Dresden, the city is likely to take up around ten hectares a year. Aerial and satellite images are used to determine the actual land sealing across the entire area. From the long-term trend since 2010, it can be deduced that the heavily sealed areas (60 - 100 Percent) are increasing by around 46 hectares per year. This is taking place both at the expense of already moderately and lightly sealed areas with densification and gap development, as well as through the utilisation of open spaces. When land is utilised for development and sealing, particular emphasis is placed in urban land-use planning on space-saving construction and compliance with the specified floor area ratios of 1 and 2.
-Dresden. Dresden
-
-Dresden action plan for climate neutrality in 2030
-
-O
 
 ![img-0.jpeg](img-0.jpeg)
 Abb.: Flächennutzungsstatistik Dresden 2016 bis 2020
@@ -276,19 +196,15 @@ Dresden has a transport system that is efficient in its basic features and also 
 
 For example, the following should be emphasised:
 
-# (Extension) construction of motorways e.g. Expansion of the A 4 motorway in the city of Dresden including the new Elbe bridge, new construction of the A 17 Dresden - Prague motorway including the corresponding motorway feeder roads, # Complete expansion of new S-Bahn lines, new construction of S-Bahn stops, renovation of Dresden main station and Neustadt station as well as numerous other stations and stops, Construction of Terminal II at Dresden Airport including better connections to the road network and the S-Bahn # Construction and renovation of Elbe bridges in the city area, # Renovation/expansion of efficient transport trains in the main urban road network and numerous other public transport lines, # Construction of new tram lines, renovation of main inner-city roads with special consideration of local public transport, # Facilities for cycling and pedestrian traffic were built and improved (e.g. section-by-section construction of the new Elbe bridge) B. construction of new sections of the Elbe cycle path, gradual expansion of cycle paths as part of the main road network, marking of cycle lanes and hard shoulders in the main road network, construction of numerous new cycle parking facilities, barrier-free design of the footpath network and traffic-calming actions).
+- (Extension) construction of motorways, for example expansion of the A 4 motorway in the city of Dresden including the new Elbe bridge and construction of the A 17 Dresden-Prague motorway including the corresponding feeder roads
+- Complete expansion of new S-Bahn lines, new S-Bahn stops, renovation of Dresden main station and Neustadt station, and numerous other stations and stops
+- Construction of Terminal II at Dresden Airport including better connections to the road network and the S-Bahn
+- Construction and renovation of Elbe bridges in the city area
+- Renovation and expansion of efficient public transport routes in the main urban road network and numerous other public transport lines
+- Construction of new tram lines and renovation of main inner-city roads with special consideration of local public transport
+- Improvements for cycling and pedestrian traffic, including new sections of the Elbe cycle path, gradual expansion of cycle paths in the main road network, marked cycle lanes and hard shoulders, new cycle parking facilities, barrier-free footpaths, and traffic-calming actions
 
-Other projects realised include Realisation of underground car parks/parking garages in the city centre, development of a dynamic parking guidance system, expansion of the Dresden traffic control centre
-#
-
-Dresden. Diegeur
-
-Dresden action plan for climate neutrality in 2030
-
-#
-
-and the guidance and information system, development of the coach parking guidance system Truck guidance concept and truck city map
-
+Other projects realised include the construction of underground car parks and parking garages in the city centre, the development of a dynamic parking guidance system, the expansion of the Dresden traffic control centre, and the development of the coach parking guidance system, truck guidance concept, and truck city map.
 Today, Dresden is structurally very well integrated into the national and international transport networks:
 
 The city is directly connected to all neighbouring regional centres and metropolitan regions via the A 4, A 13 and A 17 motorways (Greater Berlin, Leipzig/Halle, Chemnitz and the Nuremberg metropolitan region, the Prague conurbation and Wroclaw).
@@ -304,10 +220,6 @@ In terms of pedestrian traffic, Dresden is integrated into national hiking trail
 Traffic in Dresden has increased in connection with the dynamic urban development of recent years. The city has succeeded in absorbing this significant increase in traffic primarily through environmental transport (public transport, cycle paths and footpaths). Motor vehicle traffic fell slightly despite the growing population. The main reasons for this are: i) distances have been shortened due to the increase in population density and the supply infrastructure for daily needs has improved, ii) road infrastructure close to the city has been improved, iii) further expansion of the S-Bahn, iv) the public transport system has been continuously optimised, v) the cycling infrastructure is being gradually expanded, vi) the importance and share of cycling has increased considerably, which is also due to a change in image
 
 The development of mobility and transport in recent years can be described on the basis of an excellent database that Dresden has at its disposal. One of the most important sources for this is the regular mobility survey "System repräsentativer Verkehrsbefragungen (SrV)" of the Technical University (TU Dresden). Dresden has been taking part in the survey, which is repeated every five years, since 1972. The most recent SrV survey took place in 2023. The results are expected at the end of 2024. In addition, a total of 42 permanent counting points spread across the entire city of Dresden automatically record motor vehicle traffic. Dresden's public transport operators collect data on the use of local public transport by systematically counting passengers. The following findings, among others, are derived from these and other statistics:
-#
-Dresden. Dresden
-Dresden action plan for climate neutrality in 2030
-#
 
 Der Anteil der täglichen Wege der Dresdner Bevölkerung im Umweltverbund steigt
 ![img-0.jpeg](img-0.jpeg)
@@ -316,13 +228,6 @@ Quelle: Haushaltserklärung SIV der TU Dresden, Anteil aller Wege der mobilen Dr
 Verkehrsmengen: ÖPNV erholt sich nach Corona, Radverkehr stabil, Kfz leicht rückläufig
 ![img-1.jpeg](img-1.jpeg)
 % Percent of all journeys in Dresden are made on foot, by bike or by public transport:
-#
-
-Dresden. Diegeur
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 # Die Mehrheit in Dresden wechselt öfters das Verkehrsmittel, Sharing-Angebote wirken unterstützend
 
@@ -331,38 +236,22 @@ Dresden action plan for climate neutrality in 2030
 The Transport Development Plan (VEP) 2025plus shows the current planning for the desired transport development of Dresden up to 2025 and beyond. The plan was drawn up between 2009 and 2014 with the involvement of the city administration, interest groups, institutional and regional partners, politicians, scientists and citizens and was adopted by the city council on 20 November 2014. The European Commission in Brussels honoured the Dresden 2025plus transport development plan with 2nd place in the SUMP Awards 2014 and 2018, the European prize for sustainable urban mobility planning (Sustainable Urban Mobility Plan). The city administration is currently working on the Dresden Mobility Plan 2035+ (DMP2035+). (For further information, see 1.3).
 
 ![img-1.jpeg](img-1.jpeg)
-0
 
 ![img-2.jpeg](img-2.jpeg)
-7
 
 ![img-3.jpeg](img-3.jpeg)
-7
 
 ![img-4.jpeg](img-4.jpeg)
-9
 
 ![img-5.jpeg](img-5.jpeg)
-0
 
 ![img-6.jpeg](img-6.jpeg)
-4
 
 ![img-7.jpeg](img-7.jpeg)
-3
 
 ![img-8.jpeg](img-8.jpeg)
-4
 
 ![img-9.jpeg](img-9.jpeg)
-seit 2021
-#
-
-Dresden. Dresden
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 Dresden has extensive foundations and preliminary work in transport development planning
 
@@ -378,41 +267,24 @@ The semiconductor industry is also of particular importance for Dresden's energy
 
 Dresden has been actively involved in climate protection for many years and set an important course for sustainable development at an early stage. As early as the 1990s, the city began networking at an international level and formulating ambitious climate targets. Through continuous actions, such as the preparation of climate protection reports and the establishment of the climate protection office, concrete steps were taken to reduce greenhouse gas emissions and combat climate change. Dresden's most important milestones on the road to climate-friendly urban development are listed below.
 
-Decision of the Conference of Aldermen on the subject of the resolution "Membership of City of Dresden in the International Council for Local Environmental Initiatives (ICLEI) and in the Saxon Network of Environmental Experts (SENU)
-图
-
-Dresden. Dresden
-
-Dresden action plan for climate neutrality in 2030
-
-O
-
-Accession of the City of Dresden to the Climate Alliance of European Cities for the preservation of the earth's atmosphere
-Signing of the Aalborg Charter and Heidelberg Declaration on Climate Protection (included, among other things, the goal of reducing CO2 emissions by at least 20% compared to the values of 1987 by the year 2005)
-The city council takes note of the climate report and instructs the mayor to strive for urban climate targets in the to strive for urban climate targets in preparatory and binding urban land-use planning
-City Council resolution on the "Municipal Framework Programme for the Reduction of emissions of carbon dioxide (CO2) and methane (CH4) [1st report on municipal climate protection climate protection in accordance with the Climate Alliance commitment]
-City Council resolution on "Local Agenda 21 for Dresden"
-Resolution of the City Council on the "Second report of the City of Dresden on reducing emissions of carbon dioxide (CO2) and on the fulfilment and continuation of the of the CO2 framework programme of 1998 [2nd report on municipal climate protection Climate Alliance]; with this resolution also a mandate to the Mayor the Mayor to implement the municipal climate protection concept with the aim of to better cope with the consequences of climate change that have already occurred
-Accession of the City of Dresden to the EUROCITIES city network
-City Council resolution on "3rd municipal climate protection report and future future action required to reduce carbon dioxide emissions" [3rd report on municipal climate protection protection in accordance with the Climate Alliance commitment]
-Signing of the "EUROCITIES Declaration on Climate Change"
-Establishment of the climate protection office as an organisational unit of the city administration
-Resolution of the Committee for the Environment and Municipal Economy to draw up an "Integrated Energy und Climate Protection Plan for the City of Dresden"
-City Council resolution on the "Dresden 2030 Integrated Energy and Climate Protection Plan"
-Accession of the City of Dresden to the European initiative "Covenant of Citizens for Climate and Energy"
+- Decision of the Conference of Aldermen on the resolution concerning the membership of the City of Dresden in the International Council for Local Environmental Initiatives (ICLEI) and in the Saxon Network of Environmental Experts (SENU)
+- Accession of the City of Dresden to the Climate Alliance of European Cities for the preservation of the earth's atmosphere
+- Signing of the Aalborg Charter and Heidelberg Declaration on Climate Protection, including the goal of reducing CO2 emissions by at least 20% compared to the values of 1987 by 2005
+- City Council takes note of the climate report and instructs the Mayor to strive for urban climate targets in preparatory and binding urban land-use planning
+- City Council resolution on the "Municipal Framework Programme for the Reduction of Emissions of Carbon Dioxide (CO2) and Methane (CH4)" [1st report on municipal climate protection in accordance with the Climate Alliance commitment]
+- City Council resolution on "Local Agenda 21 for Dresden"
+- Resolution of the City Council on the "Second report of the City of Dresden on reducing emissions of carbon dioxide (CO2) and on the fulfilment and continuation of the CO2 framework programme of 1998" [2nd report on municipal climate protection in accordance with the Climate Alliance commitment], together with a mandate to the Mayor to implement the municipal climate protection concept so the city can better cope with the consequences of climate change that have already occurred
+- Accession of the City of Dresden to the EUROCITIES city network
+- City Council resolution on the "3rd municipal climate protection report and future action required to reduce carbon dioxide emissions" [3rd report on municipal climate protection in accordance with the Climate Alliance commitment]
+- Signing of the "EUROCITIES Declaration on Climate Change"
+- Establishment of the climate protection office as an organisational unit of the city administration
+- Resolution of the Committee for the Environment and Municipal Economy to draw up an "Integrated Energy and Climate Protection Plan for the City of Dresden"
+- City Council resolution on the "Dresden 2030 Integrated Energy and Climate Protection Plan"
+- Accession of the City of Dresden to the European initiative "Covenant of Mayors for Climate and Energy"
 
 The Integrated Energy and Climate Protection Plan (IEuKK) from 2013 represents the City of Dresden's current resolutions on climate protection. The IEuKK set Dresden the target of reducing GHG emissions by 10% every five years from 2005 to 2030. Since 2013, the framework conditions, technological standards and market conditions have changed considerably (including developments in gas and energy prices and CO2 pricing) and awareness of advancing climate change and its social consequences has increased enormously. Against this background, the update of the Integrated Energy und Climate Protection Plan (IEuKK) from 2013 was initiated by the City Council resolution on motion A0011/19 (SR/007/2020) "Update of the climate protection goals of the City of Dresden" of 30 January 2020. The 2020 city council resolution set the goal of climate neutrality well before 2050. This was the first time that a concrete target for green house gas neutrality was set and a political mandate for achievable green house gas neutrality was introduced. Climate protection was named as a task of the highest priority, which should go hand in hand with municipal welfare and the social compatibility of actions.
 
 In addition to the application for the EU mission, which was initiated by the city administration, the 2035 target for Dresden's climate neutrality was demanded in 2022 via a citizens' petition by Dresden Zero.
-
-8
-#
-
-Dresden. DIREC
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 Dresden recognised the urgency and the objective was specified in the City Council resolution on V1818/22 (SR/045/2022) of 15 December 2022 "Decision on the admissibility of the DresdenZero citizens' petition: Climate neutrality for Dresden by 2035". (This is not a resolution).
 
@@ -435,13 +307,6 @@ Table 1- 1: Climate neutrality target by 2030 (exclusions)
 |   |  emissions from agriculture are included as a secondary balance | Inapplicable |   |
 |  Other |  |  |   |
 |  Geographical boundary | Corresponds to the administrative boundary of the city | Smaller than the administrative boundary of the city | Larger than the administrative boundary of the city  |
-#
-
-Dresden. Diegen
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 ![img-0.jpeg](img-0.jpeg)
 Illustration 1-3Map of Dresden and its neighbourhoods, ©Themenstadtplan, City of Dresden
@@ -451,13 +316,6 @@ Illustration 1-3Map of Dresden and its neighbourhoods, ©Themenstadtplan, City o
 # Municipal heat planning
 
 CoD has set itself the goal of making the complex transformation process towards an affordable, secure and climate-neutral heat supply manageable and creating planning security for all stakeholders involved by means of municipal heat planning. The result is the municipal heat planning with a corresponding action portfolio for implementation. Parallel processes, particularly in the area of the municipal energy supplier SachsenEnergie AG, and different perspectives of the urban society are brought together. This dovetailing of concepts relevant to energy and climate protection is essential and is to be ensured in particular through coordinated strategic network planning across all energy networks. This also includes a revision and concretisation of the future expansion and densification area for district heating on the basis of the heat transformation plan, as well as the integration of findings from the process of the gas grid area transformation plan and the electricity grid expansion plan.
-#
-
-Dresden. Dresden
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 ![img-0.jpeg](img-0.jpeg)
 
@@ -468,13 +326,6 @@ Parallel to the update of the IEK, the current Transport Development Plan 2025pl
 The DMP  $2035+$  is being developed in three phases. Phase I Objectives: Analysis and evaluation and definition of new key objectives; Phase II Scenarios: Fields of action and proposed actions, drafting development scenarios with evaluation of target achievement, drafting a preferred scenario with actions. Phase III Concept development: Mobility strategy for the period up to 2035 and beyond, drawing up actions up to 2035 in an action plan.
 
 The dovetailing of the IEK with the DMP2035+ is coordinated through strategic cooperation. The balancing of GHG emissions in the DMP 2035+ is carried out in accordance with the BISKO standard in order to balance congruently with the IEK. The starting year here is 2018 because 2018 serves as the year of analysis for the DMP 2035+ and data for both the transport model and CO2 emissions in the transport sector were already available at the time the concept was commissioned. For further information, see 3.2.2.
-#
-
-Dresden. 2022
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 ![img-0.jpeg](img-0.jpeg)
 Der Prozess des Mobilitätsplanes 2035+
@@ -492,13 +343,6 @@ INSEK-Dresden-2035-Fortschreibung-2022.pdf
 The conversion and expansion of the district heating system requires considerable financial and human resources, but these are limited. The individual potentials must therefore be examined and qualified for implementation step by step. Permanent monitoring of the economic feasibility of the individual decarbonisation potentials and the achievement of the target of complete decarbonisation of district heating in Dresden can be used to determine an optimal and constantly updated decarbonisation path. The basis for this continuous monitoring are scenarios and price time series from a fundamental model to map possible developments, which are adapted to the current political framework conditions, as well as a heat demand forecast for the city of Dresden.
 
 To decarbonise district heating, SachsenEnergie AG is currently planning the implementation of various potentials, which are presented as milestones up to the year 2045. In order to achieve green house gas
-#
-
-Dresden. Dresden
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 neutrality by 2035, an acceleration scenario was also drawn up, which forms the basis for the greenhouse gas reduction pathway presented in the IEK.
 
@@ -516,13 +360,6 @@ An overview can be found here: Adapting to the climate | City of Dresden
 # Heat action plan:
 
 The City of Dresden is currently drawing up a heat action plan to prevent health consequences and to respond to the increasing heat stress in the summer months as a result of climate change. This takes into account comprehensive intervention measures for health protection. Behavioural and situational preventative actions are intended to reduce heat stress and UV exposure and prevent damage to health. The heat action plan shows which municipal facilities are involved and when which actions take effect.
-#
-
-Dresden. 1
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 The content of the Heat Action Plan is based on the recommendations of the World Health Organisation (WHO). The German ad hoc working group "Health-related adaptation to climate change" (AG GAK) translated and adapted the recommendations for Germany, which in turn form the basis for the Dresden Heat Action Plan. The following key topics are being developed: Central coordination and interdisciplinary cooperation, Utilisation of the heat warning system, Information and communication, Reduction of indoor heat, Special attention to at-risk groups, Preparation of health and social systems, Long-term urban planning and construction, Monitoring and evaluation of actions.
 
@@ -550,13 +387,6 @@ https://www.dresden.de/media/pdf/stadtplanung/verkehr/GCP_Dresden.pdf
 # Smart City Strategy:
 
 Dresden's climate strategy is flanked by a smart city strategy and other European smart city and lighthouse projects. In 2019, the City of Dresden, in partnership with co-initiator Technische Universität Dresden, was selected as part of the Smart Cities model projects to utilise the opportunities offered by
-#
-
-Dresden. Dresden
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 information and networking technologies in the interests of sustainable and integrated urban development. Dresden is already one of the six most digitally advanced cities in Germany. Digital applications and concepts are intended to further strengthen Dresden: the Smart City pilot project aims to create intelligent neighbourhoods with a higher quality of life, participation and sustainability. Specifically, the Smart City Strategy formulated goals, Fields of action and action plans for the Smart City Dresden model project. It was developed by EB IT together with the WISSENSARCHITEKTUR Laboratory of Knowledge Architecture (TU Dresden), with the participation of experts from various specialist departments and relevant stakeholder groups from civil society, business and science. The actions proposed for implementation include the following projects:
 
@@ -583,13 +413,6 @@ The smart city and climate protection and energy measures of the City of Dresden
 NEUTRAL PATH: Path to climate neutrality through low-risk and fully replicable positive clean energy districts:
 
 A central project of the City of Dresden is the conception of an energy self-sufficient residential neighbourhood based on a geothermal energy management system in the east of Dresden as a continuation of sector coupling using the example of a pilot neighbourhood. The aim of the pilot project is to draw
-#
-
-Dresden. 1
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 up a concept for the complete planning of the energy system, the refurbishments and the new buildings as well as the model equipment of a property with the new type of energy system based on active façade elements. These pilot projects serve as Field tests, which act as neighbourhood-based "germ cells" for GHG-neutrality, test sites and are to be extended to the remaining urban areas. For more information, see Part B 3.2 Module B-2.
 
@@ -618,13 +441,6 @@ https://netzerocities.eu/pilot-cities-cohort-3-2024/
 # 1.4.1 Basics CCC:
 
 As shown above, the City of Dresden has strategies relevant to the CCC that have been developed in various participatory processes and are being implemented in pilot actions and innovative projects. The preparation of the Climate City Contract in Dresden overlaps in terms of content and timing with the
-#
-
-Dresden. Dresden
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 updating of relevant city strategies and integrates these into the Action and Investment Plan. The content of the Action Plan is based on the Integrated Energy and Climate Protection Concept (IEK) as the overarching climate protection strategy of the City of Dresden. The Climate Protection and Adaptation Unit is responsible for updating the plan. The creation of the CCC is coordinated across departments in the Office for Urban Strategy, International Affairs and Citizenship within the Mayor's portfolio.
 
@@ -641,13 +457,6 @@ Concerns about green hydrogen for industry and peak-load power plants in the urb
 Sufficient personnel capacities in craft businesses, planning offices, companies and administration to implement the necessary actions and projects by 2030.
 
 In parts of Dresden, neighbourhoods and various locations could already be greenhouse gas neutral before 2035 and serve as Field tests that can then achieve a scaling effect. These include the Neutral Path projects and other city neighbourhoods as well as parts of the city administration.
-#
-
-Dresden. Dresden
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 ![img-0.jpeg](img-0.jpeg)
 Zielvorgabe energiebedingte THG-Emissionen (Stadtgebiet Dresden)
@@ -662,13 +471,6 @@ According to the considerations set out in the IEK, a GHG-neutral city of Dresde
 Climate protection is a task for the entire city and requires actions from all city stakeholders from politics, business and science, from associations and interest groups and from citizens. For the city administration, this means on the one hand a stronger interdepartmental approach to the planning, implementation and evaluation of municipal actions. On the other hand, it is also important to promote the city-wide approach with regard to the participation and activation of important stakeholders and citizens. Concrete steps have already been taken with the establishment of a citizen participation statute adopted in 2019. The purpose of these statutes is to inform residents in good time about projects of the City of Dresden and to support citizens in preparing and submitting a recommendation for a decision by the City Council, the Mayor or the councils at the public level. Digital/online information is also provided on various citizen participation procedures in the City of Dresden and on current topics and dates.
 
 The participation of relevant stakeholders is and was a central element in the creation of specialised plans (see 1.3.). The following stakeholder groups and participation processes are in focus for the area of climate protection and energy supply:
-#
-
-Dresden. Dresden
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 # Stakeholder Impact Mapping:
 
@@ -683,13 +485,6 @@ As part of the development of the IEK, public participation was focussed on the 
 
 Scientific Advisory Board: The Scientific Advisory Board supported the expert work in the IEK by providing expert, scientific advice and contributing relevant experience, projects or innovative ideas to the process. It was made up of eight representatives from the scientific community and one former representative of the city administration. At the five meetings, the members contributed their expertise in the fields of energy, transport, climate protection, economics and social sciences. One representative of the advisory board acted as a representative for the Round Table. The "Heat Planning Competence Group" was founded by some members of the Advisory Board, supplemented by other experts, to discuss specialised issues relating to municipal heat planning.
 Round Table: In order to involve Dresden's diverse stakeholders in the IEK process, a Round Table was set up as a communication and discussion platform. The aim of the Round Table was to communicate and discuss the status of the IEK, continuously coordinate actions, recognise potential conflicts at an early stage and find solutions. The members were able to contribute their own ideas and projects and make recommendations. Around 35 representatives from Dresden City Council, the city administration, the business community, municipal investment companies, associations, institutions and initiatives took part in the five meetings of the Round Table. In spring 2023, it was decided to focus the content of the Round Table's work more strongly in specialised
-#
-
-Dresden. Dresdner
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 working groups. This included the topics of municipal heat planning, renewable energies and climate-neutral building stock.
 
@@ -701,13 +496,6 @@ Public participation: Idea finder: In the second half of 2021, citizens contribu
 Climate protection forum: In July 2021, the public climate protection forum "Aufbruch! With new energy for the climate" was held as a video conference in Dresden. This marked the start of public participation in updating the IEK. Five themed workshops were held together with stakeholders from the administration, (utility) companies, associations, the private sector, schools, etc.
 
 Participation of children and young people: Children from six different schools or after-school care centres in grades 3 and 4 were involved in the IEK by the Wirbelwind play mobile run by Outlaw gGmbH, initiated by the CoD's children and youth officer. Around 150 children took part via a questionnaire and in-depth workshops, which included a mental journey into the future, and described or drew their wishes, ideas and demands for the city and gave them to a symbolic dove for its "flight" to the town hall. For example, concrete projects were named that could be implemented directly in the schools and after-school care centres, such as the installation of solar panels on the roof, the economical use of energy, water and paper, better waste separation and fewer parent taxis. In the first half of the 2022/2023 school year, the Dresden Environmental Centre held two workshops in seven classes at different schools in grades 6, 7, 9 and 10. There is interest in a youth forum and other workshop formats in which the ideas and topics are taken up and explored in greater depth. In order to tackle more concrete solutions and projects in everyday school and private life, project days with specific tasks will be necessary in the future to deal with individual topics in greater depth.
-#
-
-Dresden. Diegeur
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 Participation: Development and creation of the Dresden Mobility Plan (DMP) 2035+:
 
@@ -723,21 +511,8 @@ Field tests: Field tests will also be carried out during the planning phase of t
 # Ongoing participation process as part of municipal heat planning:
 
 The planning of sustainable heat supply concepts involves the participation of those affected in order to take appropriate account of local needs and requirements and to be able to communicate the plans to the population. With regard to municipal heat planning, there is great public interest in being involved in concrete developments so that necessary investments can be planned well in advance. The City of Dresden has therefore initiated a participation process under the leadership of the Climate Protection and Climate Change Adaptation Department. Many other offices and administrative units of the City of Dresden are also involved. STESAD GmbH is responsible for the general coordination, stakeholder participation and public relations work. SachsenEnergie AG is involved as the operator of the district heating network in Dresden and SachsenNetze is involved for the gas and electricity network with the aim of dovetailing the infrastructure planning as closely as possible in the development process. In addition, the involvement and integration of a large number of other important players (stakeholders) is planned.
-#
-Dresden. Dresden
-Dresden action plan for climate neutrality in 2030
-O
 
 Citizens: The core element of the participation process is the heat turnaround dialogues. These consist of two general events at Dresden City Hall and local events in the individual neighbourhoods. A kick-off event took place in April 2024. In autumn 2024, seven local dialogue events are planned with citizens, stakeholders and interested parties in selected urban areas. The aim of the local dialogue events is to present the results of the municipal heat planning to date and to discuss the actions and neighbourhood profiles that have been developed. A public dialogue event is planned for the beginning of 2025 to present the draft municipal heat planning for the City of Dresden.
-
-2
-#
-
-Dresden. Dresden
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 # 2 Part A - Current status of climate protection
 
@@ -756,13 +531,6 @@ Since the 2017 reporting year, the state capital of Dresden, like many German ci
 CoD uses the Climate Alliance's climate protection planner to calculate GHG emissions in accordance with BISKO. The calculation logic is based on the territorial principle - only the emissions in the urban area are considered. By using the same methodology, it is possible to compare local authorities in Germany with each other. In contrast to the presentation up to 2016, the BISKO balance sheet is no longer recorded per inhabitant, but in absolute GHG emissions. The published figures are also not weather-adjusted. This is provided for in the BISKO system.
 
 In the BISKO system, the private households, trade/commerce/services/other and industry sectors as well as municipal facilities are included in the GHG inventory as sub-sectors of stationary energy and the transport sector. For the categorisation according to the GHG Protocol, the "stationary energy" sector corresponds to the "buildings" sector. The private households, trade/commerce/services/other and
-#
-
-Dresden. DIREC
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 industry and municipal facilities sectors include the energy requirements of buildings, while the industry sector is primarily characterised by expenditure on process energy.
 
@@ -775,13 +543,6 @@ In the context of the municipal GHG inventory in Dresden, commercial energy requ
 The current public GHG inventory shows the energy requirements and GHG emissions for the last five years. The following figures show the diagrams for final energy consumption (Figure 2-1) and GHG emissions (Figure 2-3) for the years 2013 to 2018 according to the BISKO methodology.
 
 ![img-0.jpeg](img-0.jpeg)
-#
-
-Dresden. Dresden
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 Final energy consumption in the city of Dresden barely fell between 2013 and 2018 (-2.5 % in 2018 compared to 2013). In the energy and green house gas inventory, there is a lack of clarity regarding non-pipeline-based energy sources in the stationary sector (heating oil, coal, liquid gas). To determine this consumption, which accounts for around  $4\%$  of energy consumption, data from district chimney sweeps is used, which is reported to the state office (LfULG) every five years and analysed there. The latest data from 2015 is shown in the balance sheet. Due to a lack of more recent data available from the City of Dresden in 2022, a constant number of combustion plants is taken into account in the balance sheet years up to 2018. The integration of more recent data could lead to a reduction in consumption, as the replacement of old heating systems with new ones and the associated efficiency gains are not taken into account in the figures shown here. This also has an impact on the GHG emissions shown below, as oil and coal heating systems are generally replaced with gas boilers or renewable energy systems, thereby reducing the GHG emissions caused. However, the trend shown of almost constant energy consumption is also accompanied by an average population growth of  $1\%$  per year. The largest share of energy consumption is in the business sector (trade and industry, as well as public, non-municipal facilities). This sector accounts for a total of  $47\%$  of final energy demand. Private households account for  $28\%$  of the final energy demand. Municipal buildings account for approx.  $2\%$ . This means that the stationary sector accounts for approx.  $77\%$  of the city's total final energy demand. The mobility/transport sector accounts for  $23\%$  of the final energy demand. The building energy sector requires approx.  $46\%$  of final energy. Process energy accounts for  $29\%$  of the city's final energy demand.
 
@@ -790,13 +551,6 @@ The energy sources used in the city (see Figure 2-2) are mainly natural gas with
 ![img-0.jpeg](img-0.jpeg)
 Figure 2-1Final energy consumption for the years 2013 to 2018 of the Dresden GHG inventory
 Figure 2-2 : Final energy consumption in 2018 broken down by energy source and sector
-#
-
-Dresden. Dresdner
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 ![img-0.jpeg](img-0.jpeg)
 Figure 2-3GHG emissions for the years 2013 to 2018 of the Dresden GHG inventory (BISKO)
@@ -804,13 +558,6 @@ Figure 2-3GHG emissions for the years 2013 to 2018 of the Dresden GHG inventory 
 GHG emissions in the city of Dresden fell slightly between 2013 and 2018 (-7.5% in 2018 compared to 2013). In 2018, total GHG emissions amounted to approx. 3.5 million tonnes CO2_eq. However, the trend shown of only slightly decreasing GHG emissions is also accompanied by an average population growth of 1% per year. The largest share of emissions is in the business sector (trade and industry, as well as public, non-municipal facilities). This sector accounts for a total of 51% of final energy demand. This is primarily due to the high electricity demand of the economy, especially industry, and the comparatively high specific emission factor of the reference electricity. Private households account for 24% of the final energy demand. Municipal buildings account for approx. 2%. This means that the stationary sector accounts for approx. 77% of the city's total final energy demand. The mobility/transport sector accounts for 23% of the final energy demand. The building energy sector is responsible for approx. 41% of GHG emissions. Process energy accounts for 34% of GHG emissions. District heating, which in Dresden is based almost entirely on the use of natural gas by means of combined heat and power generation, currently contributes to the fact that the share of building energy supply in GHG is lower than in energy demand.
 
 The energy sources causing GHG emissions in the city (see Figure 2-4 : Greenhouse gas emissions 2018 in tCO2,eq broken down by energy source and sectorFigure 2-4Figure 2-2) are mainly electricity with a share of approx.  $40\%$ , natural gas with a share of  $26\%$  and district heating with  $7\%$  of total emissions in the city area. It should be noted that almost  $100\%$  of district heating is generated from natural gas in CHP plants. The local electricity mix is also characterised by high proportions of natural gas CHP. Fossil fuels for mobility account for  $23\%$  of the city's emissions.
-#
-
-Dresden. Dresden
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 ![img-0.jpeg](img-0.jpeg)
 Treibhausgasemissionen nach BISKO 2018 (Energieträger, Sektoren) in Prozent der Gesamtemissionen
@@ -823,13 +570,6 @@ THG-Emission im Stadtgebiet Dresden
 Figure 2-5 Development of GHG emissions in the city of Dresden (different accounting methods, since 2017 BISKO)
 
 Emissions were significantly reduced from 1990 until the 2000s. This is largely due to the switch from coal to natural gas for heating and district heating. The construction of the "Nosserer Brücke" combined heat and power plant, which went into operation in 1995 and replaced the old lignite-fired power plant, made a major contribution to this. The reduction in GHG emissions has stagnated since the 2010s, although this is also due to population growth (see Figure 1-1), which overshadowed the savings effects.
-#
-
-Dresden. Dresdener
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 In contrast to other sectors, GHG emissions in the mobility sector in both Germany and Dresden have remained more or less the same since the 1990s. This is largely due to the fact that although engines have become more efficient, the efficiency gains have been eliminated as rebound effects due to growing transport performance and a sharp increase in vehicle weight and power. In addition, more than 93 Percent of the final energy demand for transport is still covered by fossil fuels (as of 2019).
 
@@ -846,10 +586,6 @@ Methane and nitrous oxide are mainly produced by cattle during digestion. In agr
 ### 2.1.3.1 Process for regularly updating the GHG inventory
 
 For the regular preparation of the annual green house gas inventory, the data stocks and recording system for the BISKO balance sheet and other subsidiary balances will be processed in 2024. Existing data and recording tables (Excel) will be used as part of the inventory processing. If necessary, the data collection tables are to be further developed, provided that the cost of further development does not exceed the cost of creating a new data collection system from scratch. Data recorded includes
-#
-Dresden. Dresden
-Dresden action plan for climate neutrality in 2030
-O
 
 Queries about energy demand and generation at the energy supplier (with the query centralised as far as possible),
 Queries on energy requirements of the city administration,
@@ -871,10 +607,6 @@ In view of these limitations, it is proposed to supplement the GHG inventory acc
 
 Subsidiary balance transport national principle (previously part of the GHG inventory until 2017),
 balance for emissions from agriculture,
-#
-Dresden. Dresden
-Dresden action plan for climate neutrality in 2030
-O
 
 balance for emissions from waste,
 Balance for local electricity mix,
@@ -893,13 +625,6 @@ It can be assumed that the BISKO methodology will be further developed to enable
 Figure 2-6 shows an overview of the shares of energy and non-energy emissions in the national GHG inventory in Germany². This shows that energy-related emissions account for the largest share of GHG emissions, but that non-energy-related emissions must also be taken into account for GHG-neutrality. For a large city like Dresden, the proportion of energy-related emissions is likely to be even higher than the German average due to its urban character. However, there is no data on this that can be analysed at municipal level. Therefore, only the nationwide statistics can be used to assess the impact.
 
 ²General information on the Federal Environment Agency website: https://www.umweltbundesamt.de/themen/klima-energie/treibhausgas-emissionen [accessed on 25 May 2023]; figures taken from greenhouse gas trend tables for 1990 to 2018: https://www.umweltbundesamt.de/sites/default/files/medien/361/dokumente/2019_01_15_em_entwicklung_in_d_trend-tabelle_thg_v0.6.1_f-gase.xlsx [accessed on 25 May 2023].
-#
-
-Dresden. 1
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 ![img-0.jpeg](img-0.jpeg)
 Figure 2-6Shares of energy and non-energy emissions at federal level
@@ -915,13 +640,6 @@ The preparation of a GHG inventory for the waste sector in accordance with the G
 With regard to the accounting framework, all direct GHG emissions caused by the direct incineration of waste or by landfills, although these hardly play a role in Germany any more, should be recorded. Indirect emissions from external sources, such as the production and disposal of products in waste, as well as transport in connection with waste management, should also be taken into account.
 
 To date, there is no established and standardised methodology for balancing GHG emissions from waste in a municipal context. The BISKO methodology used for the municipal GHG inventory only takes into account the GHG emission factor of district heating or the local electricity mix for the possible use of residual waste for heat and electricity production. Assessment methods for GHG emissions resulting from other forms of utilisation or not from the local incineration of residual waste do not yet exist. A standardised methodology (analogous to the BISKO methodology or as a further development of it) must first be agreed at a higher level. Standardisation leads to comparability between municipalities
-#
-
-Dresden. 1
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 and makes it possible to use standardised assessment factors. In particular, definitions of the interfaces (spatial, organisational, municipal/commercial) are required. A complicating factor here is that the waste management sector operates in supra-regional structures after collection.
 
@@ -944,10 +662,6 @@ Table 2- 1: A-1.1: Final energy consumption by source sector
 |   | Scope of application 1 | Scope of application 2 | Scope of application 3  |
 |  Building = Stationary energy3  |   |   |   |
 |  Renewable heat (biomass, solar thermal energy, environmental heat) | 168.626 | - | -  |
-#
-Dresden. Dresden
-Dresden action plan for climate neutrality in 2030
-O
 
 |  A-1.1: Final energy consumption by source sector  |   |   |   |
 | --- | --- | --- | --- |
@@ -970,15 +684,10 @@ O
 |  (fuel type/energy used) | Not applicable, as final energy requirements are included in stationary energy  |   |   |
 |  Agriculture, forestry and land use (AFOLU)  |   |   |   |
 |  (fuel type/energy used) | Not applicable, as final energy requirements are included in stationary energy  |   |   |
-#
-
-Dresden. Diegeur
 
 Dresden action plan for climate
 
 neutrality in 2030
-
-#
 
 Table 2- 2: A-1.2: Emission factors applied
 
@@ -1006,13 +715,6 @@ Table 2- : A-1.3: Greenhouse gas emissions by source sector
 |  Base year | 2018, 2021 (AFOLU)  |   |   |   |
 |  Unit | t CO2,eq/a  |   |   |   |
 |   | Scope of application 1 | Scope of application 2 | Scope of application 3 | Total  |
-#
-
-Dresden. 1
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 |  A-1.3: Greenhouse gas emissions by source sector  |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- |
@@ -1030,13 +732,6 @@ Dresden action plan for climate neutrality in 2030
 |  Total (BISKO method + subsidiary balance sheet for agriculture) |   | 2.010.868 | 1.650.514 |  | 3.661.381  |
 
 is not part of the city's BISKO balance sheet, but a secondary balance sheet that was prepared for the first time for 2021
-#
-
-Dresden. 1
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 Table 2-4: A-1.4: Activity by source sector
 
@@ -1062,26 +757,12 @@ Table 2-4: A-1.4: Activity by source sector
 # 2.1.5 Not yet published updated GHG inventory according to BISKO for 2019 - 2022
 
 The updated GHG inventory according to BISKO for the years 2019 to 2022 was available as at 30 August 2024. This could no longer be taken into account in the Action Plan in the given form, as the data in the
-#
-
-Dresden. Dresden
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 structure of the Table 2- are not available and cannot be presented without further adjustment. It is planned to present the balance sheet to the public in autumn 2024. For this reason, the figures for the GHG inventory - in the form in which the CoD has communicated to the public to date - are included here for information purposes. It should be noted that 2018 remains the base year of the IEK reduction pathway and the potentials shown continue to relate to this. The process described above (see 2.1.3) to prepare the database has been carried out in the form described below in order to update the BISKO balance sheet and ensure consistency. In the further process up to the end of the year, further details will be agreed with data providers and the updatability of the balance sheet will be ensured.
 
 The city of Dresden has prepared its GHG inventory in accordance with BISKO for the year 2022. The presentation covers the period from 2013 to 2022 and provides a consistent analysis of the city's greenhouse gas emissions over ten years. This is shown below for absolute emissions. It should be noted that there are changes to the historical values as a result of the revision of the data sources and consistency: The GHG inventories for the years 2013 to 2018 were adjusted retrospectively. This was necessary because a new data set from the chimney sweeps was available for 2021, which was combined with the data for 2015. This led to slight adjustments and a change in the timing of the non-pipe-based energy sources. In addition, new, more plausible values were taken into account in the energy consumption of the central heating and cogeneration plants, which also led to adjustments. Slight shifts were made in the allocation of sectors - in particular from industry to private households. In addition, a new data set for solar thermal systems was implemented.
 
 ![img-0.jpeg](img-0.jpeg)
-#
-
-Dresden. Diegen
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 ![img-0.jpeg](img-0.jpeg)
 Treibhausgasemissionen Dresden nach Sektoren (BISKO-Methodik)
@@ -1091,13 +772,6 @@ Treibhausgasemissionen Dresden nach Sektoren (BISKO-Methodik)
 # Key messages of the new balance sheet
 
 Stagnation of emissions: Greenhouse gas emissions in Dresden have only changed marginally since 2013. Over the entire period from 2013 to 2022, emissions have fallen by around  $8\%$ . This reduction is mainly due to improvements in the German electricity mix up to 2020. However, emissions
-#
-
-Dresden. Dresdner
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 rose again slightly in 2021 and 2022 due to external factors such as increased coal-fired power generation and reduced use of wind energy.
 
@@ -1120,12 +794,6 @@ The effects of the coronavirus pandemic on the GHG inventory are particularly no
 The balance sheet clearly shows that the actions taken to date have not been sufficient to significantly reduce emissions. The stagnation of emissions over a period of almost ten years emphasises the urgent need for further climate protection measures. The City of Dresden's Integrated Energy und Climate Protection Plan (IEK) is therefore a decisive instrument for implementing more ambitious actions and driving forward the transformation towards a climate-neutral city.
 
 The IEK will include actions that affect all sectors and promote both technical and behavioural changes. These include expanding renewable energies, improving energy efficiency in buildings and industry and promoting sustainable mobility. The progress made to date, such as the expansion of the district heating supply and the improvement of energy efficiency in municipal buildings, form a solid foundation that must be further expanded through the IEK in order to achieve the city's climate targets.
-#
-Dresden. DIREC
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 ## 2.2 Module A-2 Evaluation of current policy guidelines and local climate protection strategy
 
@@ -1147,11 +815,8 @@ Federation (KSG)^{7} | 1990 | 2030 | at least 65 %
 after 2050 | Negative GHG emissions
 Free State of Saxony
 (Energy and Climate Protection Programme 2021^{8}) |   |  | 2045 | Contribution to achieving the nationwide target of climate neutrality by 2045; no separate target  |
-#
-Dresden. Diegeur
 Dresden action plan for climate
 neutrality in 2030
-O
 
 List of relevant guidelines, strategies and regulations:
 
@@ -1169,15 +834,10 @@ Covenant
 Laws | The basic law is the Federal Climate Protection Act (see table above). Other important legislation is the Building Energy Act (GEG), which sets out requirements for the energy quality of buildings, the generation and use of energy, certificates, the use of renewable energies in buildings and, for local authorities, the use of renewable energies in new buildings and refurbishments. In addition, the law on heat planning and decarbonisation of heating networks obliges the federal states to implement municipal heat planning, including heat plans, by 30
 
 A link to an overview of all relevant EU Green Deal directives can be found here: European_green_deal.pdf (circulaw.nl)
-#
-
-Dresden. 2026
 
 Dresden action plan for climate
 
 neutrality in 2030
-
-#
 
 |   | June 2026 for municipalities with more than 100,000 inhabitants (i.e. mandatory for Dresden). Other relevant laws for cities are Renewable Energy Sources Act (EEG), Biomass Ordinance (BiomasseV), Combined Heat and Power Act (KWKG), Energy Industry Act (EnWG), Grid Expansion Acceleration Act (NABEG), Greenhouse Gas Emissions Trading Act (TEHG), Emissions Trading Ordinance 2030 (EHV 2030), Energy Consumption-Related Products Act (EVPG), Energy Tax Act (EnergieStG), Energy Consumption Labelling Act (EnVKG), Electricity Grid Charges Ordinance (StromNEV), Fuel Emissions Trading Act (BEHG), Electricity Tax Act (StromStG), Energy Services Act (EDL-G), National Action Plan on Energy Efficiency (NAPE).  |
 | --- | --- |
@@ -1186,15 +846,10 @@ neutrality in 2030
 |  National level  |   |
 |  Programme | In the Free State of Saxony, the strategic direction of energy and climate policy up to 2030 is set out in the Saxon Energy and Climate Programme. Although this programme does not formulate any reduction targets of its own, it refers to the national goal of achieving green house gas neutrality by 2045, which serves as the most important orientation.  |
 |  Relevance | The Free State of Saxony is one of the few federal states that does not have its own target for achieving green house gas neutrality, but merely supports the implementation of the national target. Similarly, there are no specific targets for Saxon municipalities to become greenhouse gas neutral in their own properties. The state administration has set itself the soft Politischer Rahmen Landesklimaschutzgesetze vorhanden nicht vorhanden in Erarbeitung Ziegelex für THG-Neumatik Land/Verwaltung 5 ? Vorbild- funktion  |
-#
-
-Dresden. 2020
 
 Dresden action plan for climate
 
 neutrality in 2030
-
-#
 
 |   | target of becoming "climate-conscious" - without specifying any quantitative targets. Source: IkKA - Instruments for municipal climate protection work (project by ifeu, Climate Alliance and IE Leipzig)  |
 | --- | --- |
@@ -1211,13 +866,6 @@ As a means to achieve net greenhouse gas neutrality by 2045, the housing constru
 # New construction as the basis of social housing
 
 Quantitatively, there are too little housing units in Germany. Speeding up in housing construction has become an urgent demand. The sector of new builts need adequate margins, in order to attract investors. As in the past, this can be achieved through subsidies for new construction projects, short depreciation periods or low-interest loans. In reality, the German housing policy has withdrawn from the provision of affordable housing for decades, thus depriving itself of its influence in shaping rental prices. Meanwhile, more financial investors have
-#
-
-Dresden. 1
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 flooded into the housing market. They bought into large portfolios and are interested in exploiting all opportunities for rent increases. As a consequence, every year, several tens of thousands of social housing units fall out of price control, and hardly any new ones are being built – affordable housing is becoming increasingly scarce.
 
@@ -1238,13 +886,6 @@ Due to the massive slump in new housing construction, the housing sector is stra
 The German Federal Building Energy Act and the revised Energy Performance of Buildings Directive (EPBD) aims to make all buildings in the European Union climate-neutral by 2050. To comply with this regulative framework, industry experts estimate that 45 percent of all buildings in the entire EU would have to be renovated in just nine years. At the moment, Germany is only managing to renovate one percent of the total building stock. Under the current conditions, it is impossible for the industry to cover the costs to finance necessary renovations. The costs of these obligations are translated into higher rents.
 
 Anyway, it does not work to solve the housing gap by (renovating) existing housing alone. There is great need for new housing construction to fill the gap. There is a price problem above all and price formation takes place in existing housing when new housing does not come emerge. Missing proper public funding, modernization costs due to renovation requirements are transferred to tenants as higher rents. Some urban researchers pose that climate-friendly renovation has partly become a displacement business for rent-seeking real estate companies. Low-income households are struggling with an enormous dilemma: heating costs that are too high and
-#
-
-Dresden. 2020
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 rents that are too high. They cannot cope with either. Existing tenants can be displaced and the apartments can be rented out again at high prices.
 
@@ -1265,15 +906,10 @@ In the City of Dresden, the European Regional Development Fund (ERDF) is particu
 # Example Dresden - Johannstadt/Pirnaische Vorstadt neighbourhood
 
 The Johannstadt/Pirnaische Vorstadt development area is an area that already benefited from ERDF funding in the last funding period 2024-2021. A neighbourhood-based energy, climate protection and climate adaptation
-#
-
-Dresden. 2020
 
 Dresden action plan for climate
 
 neutrality in 2030
-
-#
 
 concept was developed and examined to determine where the urban ecology could be improved and CO2 reduced. The result was a catalogue of actions. This was the basis for identifying and implementing the climate protection and climate adaptation measures, as well as improvements to the living environment and many other actions in the current 2021-2027 funding period. The current climate protection and climate adaptation measures consist of various sub-measures, such as the green roof of the new building of the adventure playground in Silbermannstraße or various PV systems on the buildings of the WGJ. Actions to improve the living environment also consist of various sub-measures, such as the creation of swale infiltration in the neighbourhood of the WGJ to protect against heavy rainfall events.
 
@@ -1304,13 +940,6 @@ Due to some bad experiences in the production of PV systems on existing municipa
 Some specialist departments have a staff shortage. Without the capacity of the specialised offices, it is very difficult or even impossible to implement the actions.
 
 ESF - European Social Fund
-#
-
-Dresden. DIREC
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 # 2.2.2 Local climate protection strategy: Dresden's target for reducing greenhouse gas emissions
 
@@ -1321,13 +950,6 @@ The further development of the Dresden Action Plan to tackle the challenges of c
 The reduction path designed as part of this process is not based solely on predefined target values, but also takes into account the specific potential for reducing greenhouse gas emissions. In particular, a high level of detail was achieved in the area of building energy supply through extensive, GIS data-supported analyses. Concrete plans and feasibility studies also already exist for the decarbonisation of district heating, which were used in the IEK. In other sectors such as industry, the pathway is based on assumptions of parameters, while a separate process is underway for the transport sector, which will be completed by 2025 and must be confirmed by a city council resolution. This process will take into account the greenhouse gas neutrality requirements and implement them accordingly.
 
 Until now, the Integrated Energy und Climate Protection Plan (IEuKK) from 2013 was valid and binding for Dresden. This envisaged reducing energy-related greenhouse gas emissions in the city area by around  $41\%$  by 2030 compared to 2005, which corresponds to a target of 3,300,780 tCO2 equivalents per year (cf. Table 6-1). With the continuation of the process from the IEuKK to the Integrated Energy und Climate Protection Plan (IEK), the goal of green house gas neutrality for Dresden by 2040 at the
-#
-
-Dresden. Dresden
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 latest was set. Some areas of the administration are even to be climate-neutral by 2035, while the expansion of renewable energies in the electricity sector in the city is to be driven forward by 2035. By 2040, only  $5\%$  of emissions should remain compared to 1990, with an interim target of  $20\%$  of 1990 emissions being set for 2030. As part of this update, a significant reduction in emissions is planned for 2030, which is to be reduced to the IEK target of 1,586,900  $\mathrm{tCO_2}$  equivalents per year.
 
@@ -1341,13 +963,6 @@ The IEuKK of 2013 focussed on the Fields of action electricity, heat, transport 
 
 ![img-0.jpeg](img-0.jpeg)
 Figure 2-7Overview of the Fields of action for reducing greenhouse gases (own illustration)
-#
-
-Dresden. 1
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 The Fields of action define strategic priorities with corresponding topics for action. This is done in varying degrees of detail in the IEK, whereby the focus is on providing at least an initial overview of all relevant areas. The orientation is based on the fundamental principles of climate protection:
 
@@ -1379,13 +994,6 @@ The following shows how the Fields of action of the IEK fit into the logic of th
 |  Waste and wastewater | Waste and wastewater management (non-energy share)  |
 |  Industrial process and product utilisation (IPPU) | Industrial processes and product utilisation (non-energy share)  |
 |  Agriculture, forestry and land use (AFOLU) |   |
-#
-
-Dresden. Dresdner
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 |  - | Grey energy, construction, consumption and nutrition  |
 | --- | --- |
@@ -1412,13 +1020,6 @@ Availability of raw materials (e.g.  $\mathsf{H}_2$ ) and materials (system comp
 technical progress and the transition to a sustainable economy.
 
 Figure 2-8 provides a brief description of the scenarios.
-#
-
-Dresden. 1
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 ![img-0.jpeg](img-0.jpeg)
 Figure 2-8 Scenarios considered in the IEK
@@ -1435,15 +1036,10 @@ Examination of the achievement of GHG-neutrality by 2035 and 2040 in the scenari
 Presentation of the difference between the resulting GHG emissions and the GHG neutrality target ("ambition gap") for the scenarios.
 
 In addition to the current GHG emissions (2018), the GHG reduction potentials from the potential analyses in the IEK and the assumed changes outside the urban area (scenario framework) are included in the reduction path. The reduction path is based on the calculation methodology used for the city's GHG inventory. This is based on the calculation of GHG emissions as the product of final energy demand and
-#
-
-Dresden. 1
 
 Dresden action plan for climate
 
 neutrality in 2030
-
-#
 
 specific GHG emission factor  $\left(\mathrm{CO}_{2}\right.$  equivalents) per energy source. The potentials can have a mathematical effect on the final energy demand or the specific GHG emissions (GHG emission factor). Table 2- shows the potentials and their mechanism of action for the reduction pathway.
 
@@ -1461,13 +1057,6 @@ Table 2- : Mechanisms of action of the analysed reduction potentials on the redu
 |  Switch to hydrogen as an energy source | Reduction in final energy demand for natural gas and other fossil fuels/other fuels Increase in final energy demand Hydrogen | ■ Process energy industry ■ Transport  |
 
 The mechanisms of action are stored accordingly in the reduction path calculator.
-#
-
-Dresden. Diegeur
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 An overview of data processing in the reduction path is shown in Figure 2-9. Further details on the reduction path calculator and a detailed schematic can be found in chapter 6.4 and 6.6. Extracts of the calculation tables can be found in Appendix App. 3.
 
@@ -1480,15 +1069,10 @@ Based on the scenario analyses, for which a target scenario for 2035 and a targe
 The implementation of the analysed potentials for reducing energy-related GHG emissions leads to a defined target state of GHG-neutrality with regard to energy-related GHG emissions, whereby the time component for the implementation of the potentials is not shown.
 
 Table 2- shows the framework conditions for the target scenario.
-#
-
-Dresden. 1
 
 Dresden action plan for climate
 
 neutrality in 2030
-
-#
 
 Table 2- : Framework conditions and scenario description for the target scenario
 
@@ -1506,13 +1090,6 @@ Table 2- : Framework conditions and scenario description for the target scenario
 |  Industrial processes | Complete switch from natural gas to H2 by 2040Efficiency potential: 1.6 % per year until 2040  |
 |  German electricity mix | Federal targets for RE expansion in the electricity sector will be achieved on time (80 % RE share in 2030)  |
 |  Mobility sector | GHG-neutrality as far as possible by 2040 (combination of DMP2035+ scenarios: scenario 2035 to 2030, then scenario 2045)  |
-#
-
-Dresden. Dresden
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 The expansion path of the renewable electricity potentials should be in line with the 2035 target scenario in order to meet the 80 Percent expansion target of the EEG 2023 and at the same time ensure greater municipal influence and reduce dependency on purchased electricity (federal electricity mix).
 
@@ -1524,13 +1101,6 @@ Summarising the above-mentioned potentials and temporal progressions, the reduct
 
 ![img-0.jpeg](img-0.jpeg)
 Illustration 2-10Projection of final energy demand by energy source (excluding mobility)
-#
-
-Dresden. Dresden
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 ![img-0.jpeg](img-0.jpeg)
 Endenergiebedarf nach Emissionsquellen (ohne Mobilität)
@@ -1539,13 +1109,6 @@ Illustration 2-11Projection of final energy demand divided by sector (excluding 
 ![img-1.jpeg](img-1.jpeg)
 Eingespeiste elektrische Energie lokale EE-Anlagen und bilanzieller Strombezug (summiert, ohne Mobilität)
 Figure 2-12Expansion of local renewable electricity
-#
-
-Dresden. Dresden
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 Treibhausgasemissionen nach Energieträgern (Nicht-BISKO: berechnet mit lokalem Strommix)
 Figure 2-13Development of GHG emissions by energy source for the reduction pathway target
@@ -1581,13 +1144,6 @@ Wohngebäude
 The reduction pathway scenarios make it clear that it is possible to achieve GHG-neutrality by 2040. In order to realise this goal, the urban potential identified as feasible, particularly in the energy sector, must be fully exploited.
 
 Complete energy self-sufficiency cannot be realised for Dresden. Nevertheless, there is considerable potential through the installation of local renewable energy systems for the provision of electricity,
-#
-
-Dresden. Diegeur
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 which is estimated at around 1,500 GWh/a. Tapping into this potential harbours several opportunities, including increasing the security of supply, making it more attractive for industrial settlements and promoting local value creation.
 
@@ -1612,13 +1168,6 @@ For 2030: A minimum reduction of 80 Percent of GHG emissions, based on the targe
 For 2035: A minimum reduction of 90 Percent of GHG emissions, as a further step towards the overall target by 2040.
 
 In order to achieve the target, the potential for renewable energies in the urban area identified in the IEK, particularly in the areas of wind energy and PV, is to be tapped by 2035. This includes the targeted utilisation and expansion of these renewable energy sources in the following stages (electricity generation from renewable energy plants, expansion target for 2040 already achieved, therefore no value).
-#
-
-Dresden. DIREC
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 The reduction and expansion targets are shown in Table 2-. The reduction target in Percent represents a rounded value for better clarity. The specific figures in tCO2_eq are taken from the values of the reduction pathway. These correspond to the exact values of -70.0% in 2025, -79.9% in 2030, -88.0% in 2035 and -95.8% in 2040 reduction compared to 1990 GHG emissions.
 
@@ -1636,13 +1185,6 @@ The (interim) targets are reviewed as part of monitoring and controlling with a 
 The GHG inventory is expanded to include the cumulative GHG emissions from 2020 to the respective review year in order to check the consumption of the  $\mathrm{CO}_{2}$  budget. This comprehensive review enables a targeted evaluation of progress and ensures that the (interim) targets set as part of the climate protection strategy are on track.
 
 Another significant step towards achieving the target is the endeavour to make the city administration GHG-neutral by the target year of 2035. This emphasises the commitment at municipal level not only to reduce GHG emissions in general, but also to lead by example in the administration itself.
-#
-
-Dresden. DISEGU
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 Table 2-6: Table A-2.1
 
@@ -1652,13 +1194,6 @@ Table 2-6: Table A-2.1
 |   | (absolute) (specify units) | (abso-lute) | (%)12 | (absolute) | (%) | (absolute) | (%) | (absolute) | (%) | (abso-lute) | (%)  |
 |  Buildings/stationary energy (basis 2018) | 2.787.193 | 1.527.837 | 54,8 | No subdivision |  | No subdivision |  | 1.527.837 | 54,8 | 1.259.356 | 45,2  |
 |  Transport (basis 2018) | 818.980 | 491.388 | 60,0 | No subdivision |  | No subdivision |  | 491.388 | 60,0 | 491.388 | 40,0  |
-#
-
-Dresden. DIEsQCD
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 |   | (1) Base emissions | (2) Emissions reduction target 2030 (interim target) |   | (3) Emissions reduction through other action plans by 2030 |   | (4) Emissions gap by 2030 (interim target) |   | (5) Emissions reduction through the CCC action plan to close the gap by 2030 (interim target) |   | (6) Residual emissions to almost zero by 2040  |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1668,9 +1203,6 @@ Dresden action plan for climate neutrality in 2030
 Explanations to the table:
 
 The reduction targets adopted in the IEuKK (Integrated Energy und Climate Protection Plan of 2013) are shown in column 3 of the table. This represents the current status of the climate protection strategy in Dresden, i.e. up to the adoption of the IEuK. Due to the connection and overlapping preparation of the CCC and the IEK, the figures for closing the emissions reduction by 2030 and the figures for closing the gap are the same.
-Dresden. Dresden. Dresdner
-
-Dresden action plan for climate neutrality in 2030
 
 Module A-3 Systemic obstacles and opportunities for climate neutrality in 2030
 
@@ -1689,15 +1221,10 @@ Research and development: Progress in research and development, particularly in 
 Natural conditions: Some natural conditions, such as local climate, geography or the availability of renewable resources, may be factors outside the direct control of a municipality.
 
 Despite these challenges, the CoD can play an active role by using its local resources and spheres of influence, promoting cooperation and exerting political pressure on other levels to create favourable framework conditions for climate protection.
-#
-
-Dresden. 1
 
 Dresden action plan for climate
 
 neutrality in 2030
-
-#
 
 Table 2- 7: A-3.2: System and stakeholder mapping
 
@@ -1717,11 +1244,8 @@ Table 2- 7: A-3.2: System and stakeholder mapping
 |  Research/Science | Sustainability initiatives (FFF, | means (citizens' petition) | High | Very high  |
 |   | sustainability initiatives (FFH, |  |  |   |
 |   | sustainability initiatives (FFH, |  |  |   |
-#
-Dresden. Dresden
 Dresden action plan for climate
 neutrality in 2030
-#
 
 # A-3.2: System and stakeholder mapping
 
@@ -1750,11 +1274,8 @@ As already indicated elsewhere, the City of Dresden can build on a number of opp
 |   | Opportunity  |
 |   | Establish and use data and controlling standards to prioritise climate protection measures.  |
 |   | Concrete and measurable goals ensure acceptance and control options  |
-#
-Dresden. Diegen
 Dresden action plan for climate
 neutrality in 2030
-O
 
 |   | Integration of climate protection into ongoing projects of the administration and urban society leads to the creation of methodological standards.  |
 | --- | --- |
@@ -1781,11 +1302,6 @@ O
 |   | Opportunities  |
 |   | Local value creation  |
 |   | Long-term security of energy supply without the threat of fossil fuel resource shortages  |
-6
-
-Dresden. DRESD
-
-Dresden action plan for climate neutrality in 2030
 
 |   | Reducing energy supply dependencies on external factors and global energy markets  |
 | --- | --- |
@@ -1833,9 +1349,6 @@ Dresden action plan for climate neutrality in 2030
 |   | Reservations about new technologies  |
 |   | Fossil fuels are too cheap compared to sustainable technologies  |
 |   | Opportunities  |
-#
-Dresden. Dresden
-Dresden action plan for climate neutrality in 2030
 ^{}[]
 
 |   | Cost savings through reduced energy consumption can facilitate the switch to renewable heating  |
@@ -1855,13 +1368,6 @@ Dresden action plan for climate neutrality in 2030
 At a good 30 Percent, the energy renovation status in Dresden is better than the national average. On the one hand, this is pleasing, as only a relatively small proportion of buildings are considered to be unrenovated and therefore urgently require energy-efficient refurbishment. On the other hand, the energy refurbishments of the last three decades mean that it is often not worthwhile from the building owner's or tenant's point of view, for example, to reinforce the façade insulation, retrofit panel heating or carry out other extensive energy refurbishments. In view of the income burdens that may result from additional extensive energy refurbishments, the acceptance of the actions, but also the limited capacities of the trades, it therefore does not seem advisable to demand extensive energy refurbishments to achieve high efficiency standards as an action in general. Such actions would have to be accompanied by a high level of public funding and would be difficult to implement due to the known shortage of skilled labour. Even if the highest possible energy efficiency standards would be desirable in principle, in view of the challenges outlined, it must be ensured that the building energy supply achieves GHG-neutrality by pragmatic and innovative means. This means that only as much energy refurbishment should be required as is necessary for the use of green district heating or the use of renewable energies in the form of heat pumps or neighbourhood heating networks, where possible in the building. If green hydrogen is available as a climate-neutral option for the building, this would be the benchmark.
 
 For all of the climate-neutral options mentioned, no or only relatively minor energy refurbishment measures need to be carried out on the outer shell or the building's heat distribution system due to the already relatively good state of refurbishment. These could be, for example, the replacement of individual radiators or simple sealing measures, usually with the aim of reducing the required maximum flow temperatures in the building to below $65^{\circ}\mathrm{C}$. Most greenhouse gas-neutral solutions can operate at this temperature. Nevertheless, this must be checked on a case-by-case basis by the specialised company or planner and should not be misunderstood as a general recommendation. In addition to switching to greenhouse gas-neutral heat generators, a key objective should be to maximise the overall energy efficiency of the building and thus save energy.
-#
-
-Dresden. Dresdener
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 By innovative means, we mean that so-called serial refurbishments could also be considered for suitable building types, for example. Serial refurbishment means the use of prefabricated façade or roof elements including the associated system technology (e.g. PV, heat pump modules) and their more efficient installation on or in existing buildings. The elements prefabricated off-site have such a high degree of prefabrication that the time required on site is significantly reduced compared to conventional refurbishment. These are currently on the rise, are also subsidised by the German government[13] and have several advantages. Firstly, they are usually more cost-effective than commissioning several specialist planners and individual trades. They also reduce interface management between the trades and the associated risks and, finally, they effectively counter the problem of skilled labour, as the time required is significantly reduced.
 
@@ -1874,15 +1380,10 @@ One approach that can be easily combined with sector coupling is the joint devel
 |  The challenges | Solution approaches | Instruments  |
 | --- | --- | --- |
 |  Ensuring building energy supply security | ■ Reduce the proportion of imported energy and diversify in terms of energy sources and suppliers ■ Switch from fossil fuels to energy sources that are as local and climate-neutral as possible | Municipal heat planning (KWP),  |
-#
-
-Dresden. 2020
 
 Dresden action plan for climate
 
 neutrality in 2030
-
-#
 
 |  The challenges | Solution approaches | Instruments  |
 | --- | --- | --- |
@@ -1892,13 +1393,6 @@ neutrality in 2030
 |  Decarbonisation of district heating | ■ Preparation of the heat transformation plan for the Dresden district heating network by SachsenEnergie AG ■ Utilise district heating system as an important flexibility player for the electricity grid→ Sector coupling, determine heat storage requirements/potentials | KWP, heat transformation plan  |
 |  Power grid expansion | ■ Guarantee initially through NAP ■ Determine storage requirements in the electricity distribution grid ■ Coordination in the KWP process | KWP, NAP  |
 |  Transformation of the natural gas grid | ■ Warranty initially by GTP ■ Interlocking with KWP ■ Clarifying the direction of concession contract and natural gas network development | KWP, GTP  |
-#
-
-Dresden. 1
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 # 2.3.4 Opportunities: Regional added value, cost savings and benefits
 
@@ -1907,13 +1401,6 @@ Climate protection aims to minimise the negative effects of climate change as fa
 # Avoidance of  $\mathrm{CO}_{2}$  costs
 
 Costs already have to be paid for the emission of greenhouse gases. A distinction must be made between European and national emissions trading. The European Union introduced the European Emissions Trading Scheme (EU ETS) in 2005 to reduce GHG emissions from power plants, industrial facilities and aviation in a cost-efficient manner. The quantity of available certificates is continuously decreasing, causing certificate prices to rise while demand for certificates remains the same or increases. The EU ETS allowance price is currently around 70 euros/ $\mathrm{t}_{\mathrm{CO}_{2\mathrm{e}}}$ . Since 2021, there has also been national emissions trading, which currently affects the transport and heating sectors and will also affect the waste sector from 2024. The Emissions Trading Authority (DEHSt) at the Federal Environment Agency is responsible for implementation. Currently, certificate prices are fixed and not determined on a market basis. In 2023, the national allowance price was 35 euros/ $\mathrm{t}_{\mathrm{CO}_{2\mathrm{e}}}$ . However, as part of the "Fit for 55"
-#
-
-Dresden. Dresden
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 package at European level, there are plans to also integrate the heating and transport sectors into a European certificate trading scheme, the "EU ETS 2", from 2027. $^{14}$
 
@@ -1926,13 +1413,6 @@ The damage cost approach published by the Federal Environment Agency (UBA) estim
 # Strengthening regional value creation
 
 Another sustainable benefit from an economic perspective is the increase in regional added value for Dresden and the region. This is because a large proportion of the investments listed will not only take place in Dresden, but will also be realised by regional companies from planning to construction. The fact that the additional plants and infrastructure have to be serviced and maintained also leads to long-term orders and jobs for the regional economy. Furthermore, Dresden will significantly reduce its energy imports and thus also the outflow of financial resources.
-#
-
-Dresden. Dresden
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 # Location advantage
 
@@ -1951,24 +1431,12 @@ To summarise, it can be stated at this point that the investments in Dresden's G
 # Social benefit
 
 The energy transition has the potential to make the energy supply more democratic at both an individual and international level. At an individual level, depending on individual circumstances, it can expand the
-4
-
-Dresden. DRESD
-
-Dresden action plan for climate neutrality in 2030
 
 opportunities for participation in the energy supply, although not everyone can benefit equally. This can increase the self-efficacy of individual groups and thus also the acceptance of actions. Internationally, this can reduce inequalities between countries and reduce dependencies on fossil resources. While the energy transition does not bring about complete democratisation in the political sense, it does make various aspects of energy supply more democratic.
 
 Last but not least, climate protection and climate change adaptation measures have an impact on the health, mortality and quality of life of the urban population. As a result of global warming, heat stress in the summer months is increasing enormously for residents in densely populated neighbourhoods. In order to prevent health consequences, the City of Dresden is currently drawing up a heat action plan. This takes into account comprehensive intervention measures for health protection. Behavioural and situational preventative actions are intended to reduce heat stress and UV exposure and prevent damage to health.
 
 Increasing weather changes and natural disasters also have an impact on the quality of life and health of the city's inhabitants. Climate protection is intended to mitigate the effects of climate change as far as possible.
-#
-
-Dresden. Dresdner
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 # 3 Part B - Pathways to climate neutrality by 2030
 
@@ -1996,13 +1464,6 @@ Various assumptions are included in the impact paths:
 
 Green hydrogen will not be available until after 2030 at the earliest, meaning that the switch to hydrogen for industrial applications will not be possible until after 2030.
 The GHG emission factor of natural gas will increase by 2026 due to increased shares of LNG, which has a higher emission factor than pipeline natural gas.
-#
-
-Dresden. Dresden
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 The share of district heating in building heating will increase to approx. 50% by 2040 (strong expansion, therefore also more total emissions from district heating than if no expansion takes place).
 The share of renewable energy in the urban area could reach 20% of total electricity demand by 2030 and 42% of total electricity demand by 2040. To achieve this, the potential for generating approx. 1,500 GWh/a from PV and wind energy would have to be utilised by 2035.
@@ -2014,15 +1475,10 @@ Wirkungspfade im zeitlichen Verlauf (Kumulierte THG-Reduktion)
 In the following, the impact paths are assigned to the respective Fields of action and the associated impacts are shown in numerical values. The original Table B-1.1 from the Actions Plan template has been split up in order to present direct impacts and indirect impacts clearly for the 2030 target and the 2040 target (GHG neutrality of 95% reduction). The early and late changes can be found separately in the following table.
 
 Explanation of the direct impacts (quantified): the figures given include a partial offset between 2018 (GHG inventory) and the start year 2021 for the building potential study in the energy requirements for electricity and their development; this is due to different data sources and models for analysing individual buildings. With the update of the 2019-2022 GHG inventory, there will be a validation option for the sum of the data sets. It can be assumed that there will be no deviation in the total across all emission sources in the stationary area, but that this may occur in the individual categories. To take this into account, the impact pathway for reducing the energy demand for buildings and process energy was summarised. It should be noted that the model still assumes an increase in industrial use up to 2035, which reduces the efficiency gains.
-#
-
-Dresden. 2020
 
 Dresden action plan for climate
 
 neutrality in 2030
-
-#
 
 Table 3- 1 Impact paths
 
@@ -2032,13 +1488,6 @@ Table 3- 1 Impact paths
 |   |  Conversion of electricity to renewable energies in the urban area and electricity supply | -1,326,000 tCO2.eq/a | -1,417,000 tCO2.eq/a | ■ Better air quality, improved quality of life ■ Regional added value ■ Job creation ■ Increasing independence from fossil fuels and external electricity supplies ■ Increased local market stability and resilience ■ Avoided environmental damage ■ Increased trade tax revenue ■ Favourable/stable electricity costs ■ Democratisation of the electricity supplier market  |
 |   |  Conversion from natural gas utilisation to green hydrogen (industrial applications) | approx. 0 tCO2.eq/a | -224,000 tCO2.eq/a | ■ Technology change incentivises efficiency improvements to reduce costs  |
 |   | Reduction of energy requirements for |  | -737,000 tCO2.eq/a | ■ Increasing road safety - Vision Zero is  |
-#
-
-Dresden. DIREC
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 |  Fields of action | Pathways of action | Direct impact (emissions reduction) from 2018 to 2030 | Direct effects (emission reductions) from 2018 to 2040 | Indirect effects (co-be-nets)  |
 | --- | --- | --- | --- | --- |
@@ -2047,13 +1496,6 @@ Dresden action plan for climate neutrality in 2030
 |  Waste and recycling management | Avoidance of waste | Currently not quantifiable | Currently not quantifiable | ■ Saving resources  |
 |   |  Reuse of waste products | Currently not quantifiable | Currently not quantifiable | ■ Stimulating new business models in the context of the circular economy  |
 |   |  Material and energy utilisation of unavoidable waste | Currently not quantifiable (partly included in the "Decarbonisation of district heating" impact pathway) | Currently not quantifiable | ■ Saving resources  |
-#
-
-Dresden. DIREC
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 Fields of action | Pathways of action | Direct impact (emissions reduction) from 2018 to 2030 | Direct effects (emission reductions) from 2018 to 2040 | Indirect effects (co-benefits)
 Energy utilisation of wastewater and wastewater treatment products | Currently not quantifiable | Currently not quantifiable | Saving energy and resources
@@ -2070,10 +1512,6 @@ Reduction in grid transformation costs due to low demand (avoidance of over-dime
 Reduction in energy demand for electricity (residential buildings, non-residential buildings and process energy) | +320,300 tCO2.eq/a
 Increase due to massive expansion as a result of industrial relocation and offset in | +170,000 tCO2.eq/a | Cost savings for private households, industry and commerce
 Reduction in grid transformation costs due to low demand  |
-#
-Dresden. DREQED
-Dresden action plan for climate neutrality in 2030
-#
 
 Fields of action | Pathways of action | Direct impact (emissions reduction) from 2018 to 2030 | Direct effects (emission reductions) from 2018 to 2040 | Indirect effects (co-benefits)
 model data between 2018 and 2021 | (avoidance of over-dimensioning)
@@ -2091,16 +1529,9 @@ Reduction of the quantities of climate-damaging gases used in production and pro
 Utilisation of processes for the capture of greenhouse gases | Currently not quantifiable | Currently not quantifiable
 Fields of action | Systemic levers | Early changes (1-2 years) | Late results (3-4 years)
 
-0
-#
-
-Dresden. 2020
-
 Dresden action plan for climate
 
 neutrality in 2030
-
-#
 
 |  Energy systems | Technology and infrastructure | Technological development will enable a wide range of applications (e.g. innovative PV systems such as PVT, thermal activation of external building walls, see Neutral Path). | Further technological development will, for example, increase the yield of existing technologies. It is also expected that technological development in highly innovative areas will reduce costs.  |
 | --- | --- | --- | --- |
@@ -2112,15 +1543,10 @@ neutrality in 2030
 |   |   | At federal level, the use of LNG gas must be limited and the origin of natural gas must be taken into account (higher emission factor than pipeline natural gas) |   |
 |   |   | Rethinking grid fee structures to distribute costs fairly |   |
 |   |  Finances | Financial support at regional, national and international level promotes | Financial support at regional, national and international level will promote actions in the  |
-#
-
-Dresden. 2020
 
 Dresden action plan for climate
 
 neutrality in 2030
-
-#
 
 actions in the energy system. In-come from energy sales is not sufficient for the necessary investments. | energy system. Income from energy sales is not sufficient for the necessary investments.
 Greater consideration of ecological and public welfare aspects in the planning of major projects (not just economic efficiency) | Climate-friendly actions must become the standard and also be financially covered
@@ -2132,13 +1558,6 @@ Knowledge and skills | Smart City strategy involving various relevant department
 Skilled labour campaign to increase planning and approval capacities | Increasing the attractiveness of engineering professions or other relevant disciplines (e.g. communication science)
 Mobility & Transport | Technology and infrastructure | The large-scale use of new technologies (electrification of buses and cars) will further improve the technologies and reduce costs. | Mass suitability of new drive types in lorry and heavy goods transport
 Politics and organisation | Development of suitable legal framework conditions for infrastructure development with a focus on eco-mobility and promotion of new | Governance and politics are making new forms of mobility the new standard (e.g. by rai-
-#
-
-Dresden. 2
-
-Dresden action plan for climate neutrality in 2030
-
-#
 
 |   |  | forms of mobility (e.g. sharing of- fers; new offers and on-demand ser- vices, intermodal links, multimobile apps, e-mobility with charging infra- structure, e-car sharing). | sing the hurdles for the regist- ration of new cars with com- bustion engines).  |
 | --- | --- | --- | --- |
@@ -2152,11 +1571,8 @@ Waste and recy- cling manage- ment, waste wa- ter | Technology and infrastructur
 Politics and organ- isation | Clear redution targets at state level in the KWG
 Finances | Revision of the wastewater charging system to create in- centives for water and water- saving behaviour and pro- cesses
 Knowledge and skills | Interdisciplinary cooperation be- tween specialisms leads to the con- solidation of the circular concept
-#
-Dresden. Dresden
 Dresden action plan for climate
 neutrality in 2030
-O
 
 (cradle-to-cradle) so that recyclability is already taken into account comprehensively in product design
 Green infrastructure and nature-based solutions | Technology and infrastructure | Multifaceted role: For some activities, technology will be a fundamental lever (e.g. CCU). Technological development will enable pilot studies. For other activities (e.g. reforestation projects, it will play a sub-ordinate role) | Technological development necessary to extend pilot studies to small-scale actions.
@@ -2169,12 +1585,8 @@ Knowledge and skills | Further improvement of nature-based and innovative soluti
 Built environment | Technology and infrastructure | Further development of new sustainable technologies in the building sector (for new buildings and refurbishment of existing buildings) | Availability of climate-friendly construction and refurbishment options
 Modular approach, system design increase speed of system replacement (heating replacement rate)
 
-4
-#
-Dresden. Dresden
 Dresden action plan for climate
 neutrality in 2030
-5
 
 |   |  |  | Standardisation regulations are adapted to innovative solutions and environmentally friendly technologies and avoid oversizing of systems  |
 | --- | --- | --- | --- |
@@ -2186,23 +1598,13 @@ neutrality in 2030
 |   |   | Social compatibility is taken into account when converting existing buildings |   |
 |   |  Social innovation | Development of programmes to ensure that sustainable housing is possible for all social groups. | Implementation of programmes that ensure that sustainable housing is possible for all social groups.  |
 |   |   | Introduction of the energy pilot in Dresden (EnAct4CleanCities) will help to bring information, advice and data simulation together in one place and, above all, enable owners to help drive the energy transition forward through their own actions. (One-Stop-Shop) | Strong anchoring of energy piloting in the general public  |
-6
-
-Dresden. DRESD
-
-Dresden action plan for climate neutrality in 2030
 
 |   | Democracy and participation | Development of participation processes. | The importance of environmentally friendly and sustainable living is recognised and supported by society.  |
 | --- | --- | --- | --- |
 |   | Knowledge and skills | Further improvement of green and sustainable construction methods | Continuous learning enables further improvements in the transition to green and sustainable living  |
 |   |  | Tradesman campaign (heating replacement rate) | Strengthening the reputation of the professional field of "installation" towards interdisciplinary and cross-disciplinary training  |
-#
-
-Dresden. Die2qCD
 
 Action plan for climate neutrality 2030
-
-#
 
 # 3.2 Module B-2 Climate neutrality portfolio design
 
@@ -2217,13 +1619,8 @@ Portfolio of measures of the IEK climate protection strategy (building energy)
 |  Overarching organisation and control | Organisation of climate protection work | O.1-01 | Establishment of a climate protection coordination centre | Mar 24 | Oct 25 | Flanking  |
 |   |  Organisation of climate protection work | O.1-02 | Establishment and stabilisation of a regular climate protection exchange format in the CoD | Mar 24 | Dec 27 | Flanking  |
 |   |  Organisation of climate protection work | O.1-03 | Implementation of a web-based climate protection platform in the CoD | Mar 24 | Sep 25 | Flanking  |
-#
-
-Dresden. Diezqcu
 
 Action plan for climate neutrality 2030
-
-#
 
 |  Fields of action | Package of measures | No. | Title of the actions | Start of the actions | End of the actions | Type of actions  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2234,8 +1631,6 @@ Action plan for climate neutrality 2030
 |   |  Participation concept and public relations work | O.2-05 | Climate Network CULTURE | Jan 24 | Dec 26 | Flanking  |
 |   |  Participation concept and public relations work | O.2-06 | Climate coaches | Jan 25 | Jan 27 | Flanking  |
 |   |  Monitoring the implementation of the IEK climate protection strategy | O.4-01 | Development of a methodology for evaluating actions | Dec 24 | Jun 26 | Flanking  |
-#
-Dresden. DiC2qCD
 Action plan for climate neutrality 2030
 C
 
@@ -2249,14 +1644,7 @@ C
 |   |  GHG-neutrality in the City Group | O.6-03 | Climate protection concepts of the municipal associated companies | Sep 24 | Oct 26 | Flanking  |
 |   |  Climate protection in urban land-use planning | O.7-01 | Climate protection in urban land-use planning | Sep 24 | consecutive | Regulation  |
 
-9
-#
-
-Dresden. Diezqcu
-
 Action plan for climate neutrality 2030
-
-#
 
 |  Fields of action | Package of measures | No. | Title of the actions | Start of the actions | End of the actions | Type of actions  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2271,11 +1659,7 @@ Action plan for climate neutrality 2030
 |   |  Energy efficiency | G.1-03 | Introduction of an energy management system (EnMS) for CoD | Sep 23 | Oct 27 | Flanking  |
 图
 
-Dresden. Diezqcu
-
 Action plan for climate neutrality 2030
-
-O
 
 |  Fields of action | Package of measures | No. | Title of the actions | Start of the actions | End of the actions | Type of actions  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2288,10 +1672,7 @@ O
 |   |  Expansion of PV power generation on the building | G.2-01 | Photovoltaic offensive CoD (buildings) | Jun 23 | Jun 33 | Direct  |
 |   |  Expansion of PV power generation on the building | G.2-02 | Solar film JOYNEXT Arena | n.a. |  | direct  |
 
-1
 图
-
-Dresden. D1c2qc0
 
 Action plan for climate neutrality 2030
 
@@ -2308,14 +1689,7 @@ C
 |   |  Municipal heat plan-ning | G.4-02 | Energy consulting programme | Jan 24 | consecutive | Information  |
 |   |  Municipal heat plan-ning | G.4-03 | Neighbourhood concepts | 2022-2023 | 2025 or 2029 | Flanking  |
 
-2
-#
-
-Dresden. Diezqu
-
 Action plan for climate neutrality 2030
-
-#
 
 |  Fields of action | Package of measures | No. | Title of the actions | Start of the actions | End of the actions | Type of actions  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2327,13 +1701,8 @@ Action plan for climate neutrality 2030
 |   |  Grey energy in the construction sector | K.1-02 | Applying the guidelines for sustainable buildings | 2021 | - | Flanking  |
 |   |  Sustainable procurement and purchasing | K.2-01 | Conserving resources through sustainable procurement, sustainable food supply and recycling | Jul 24 | Jun 28 | Direct  |
 |  Waste and wastewater management | Climate protection in waste management | A.1-01 | Preparation of a GHG inventory for the waste sector | Jan 25 | Dec 26 | Flanking  |
-#
-
-Dresden. Diezqui
 
 Action plan for climate neutrality 2030
-
-#
 
 |  Fields of action | Package of measures | No. | Title of the actions | Start of the actions | End of the actions | Type of actions  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2352,13 +1721,8 @@ Monitoring and performance monitoring of the installed systems in parallel: Esta
 # 3.2.2 Portfolio of mobility measures
 
 The IEK does not include any actions in the area of mobility. These measures are part of the Dresden Transport Development Plan (VEP) 2025plus for the Dresden Mobility Plan (DMP) 2035+, which is currently being updated (see 1.3). Based on jointly developed key objectives and various scenarios, a preferred scenario with actions will be developed there and the actions will be described in more detail. This is planned for 2025.
-#
-
-Dresden. Die2qu
 
 Action plan for climate neutrality 2030
-
-#
 
 In December 2022, the City Council adopted 14 key objectives for the DMP2035+. These form the basis for the evaluation of the scenarios and necessary actions.[17]
 
@@ -2376,13 +1740,8 @@ Economic efficiency: The transport system becomes crisis-proof, orientated towar
 Energy and space efficiency: Energy consumption for transport is significantly reduced. Transport facilities are built in a space-efficient manner.
 Innovation and technology: Dresden focuses on innovative traffic control, digitalisation and automation for sustainable, safe and energy-saving mobility.
 Mobility culture: Respect and mutual consideration characterise the way we work together. The needs of the individual and the common good are weighed up in a goal-orientated manner.
-#
-
-Dresden. Die2qu
 
 Action plan for climate neutrality 2030
-
-#
 
 In addition, a large number of actions are already being implemented in the area of mobility. The focal points are :
 
@@ -2394,8 +1753,6 @@ In addition, a large number of actions are already being implemented in the area
 |  Mobility | Cycling - strengthening the environmental network | Implementation of the cycling concept, including new cycle paths, surface improvements, priority cycle routes and cycle highways, parking facilities, B+R, cycle car parks at railway stations | 2017 | Ongoing | Infrastructural  |
 |  Mobility | Accessibility and pedestrian traffic - Strengthening the environmental network - | Implementation of the pedestrian traffic strategy for the long-term promotion of pedestrian traffic with a focus on the construction of new (roadside) footpaths and new crossing points | 2022 | Ongoing | Infrastructural  |
 图
-
-Dresden. D1c2qc0
 
 Action plan for climate neutrality 2030
 
@@ -2412,14 +1769,7 @@ C
 |  Mobility | Strengthening the environmental network | Promoting acceptance of climate-friendly mobility through pilot projects/transport trials/field tests to demonstrate practical feasibility | 2022 | Ongoing | Flanking  |
 |  Mobility | Strengthening the environmental network | Prioritise eco-mobility, modernise traffic management | 2015 | Ongoing | Flanking  |
 
-7
-#
-
-Dresden. Die2qu
-
 Action plan for climate neutrality 2030
-
-#
 
 # There are also two major projects:
 
@@ -2436,26 +1786,16 @@ Source: Road and civil engineering office
 With its greater capacity, the tram is intended to relieve bus traffic and make public transport more efficient and faster. With modern light rail vehicles, more passengers can be transported and travelling comfort is increased. In this way, even more people can be won over to climate-friendly modes of transport.
 
 The new routes will enable new direct connections and better links, for example to the TU campus, including from Gorbitz, Löbtau, Pieschen and Reick. Further information about the planned new connections can be found here.
-#
-
-Dresden. Die2960
 
 Action plan for climate neutrality 2030
-
-#
 
 In addition to the construction of new tram lines, the modernisation of centrally located connection points (e.g. Tharandter Straße central stop, Nürnberger Platz, Wasaplatz, Strehlen stop) is also taking place.
 
 # MOBILITIES4EU
 
 Innovative and cost-effective concepts for passenger mobility and freight transport, developed and implemented according to participatory and user-centred principles, are at the heart of the EU project MOBILITIES FOR EU. MOBILITIES FOR EU identifies innovative solutions for urban mobility that can accelerate the transformation of the urban transport sector and include electrification, automation and connectivity as key themes to achieve this goal. Seven European cities, most of which have committed to the 112 Mission Cities, form the core of the project. They are divided into pioneer and replication cities. Dresden, along with Madrid (Spain), is one of two pioneer cities that will test the effectiveness of 27 innovative mobility solutions in eleven pilot actions. The 27 solutions relate to innovations in both vehicles and the overarching infrastructure. Examples include autonomous medium-sized e-buses for transporting around 20 people and the development of a decentralised data ecosystem for autonomous mobility for automated driving. The demonstration includes a design phase, the deployment of the solutions and their evaluation to assess their impact and relevance for future expansion and replication. The implementation of new urban mobility solutions can only be effective if they meet the needs of city residents and other local stakeholders. Therefore, Urban Transport Labs (UT-Labs) will be set up in all seven project cities to involve these stakeholders and play an important role in the project. The labs are involved in all project phases, in particular in the co-design of pilot activities and in the planning of up-scaling and replication activities after the project period. The centrepiece of Dresden's participation in the EU project Mobilities for EU is the Urban Transport Lab - OSTRA Laboratory for Urban Mobility located in the project area. This innovation hub will promote cooperation between citizens, industry, science and administration in order to shape the future development of mobility. Our goal is to create accessible options that bring people together regardless of their personal abilities, ensuring inclusive and collaborative progress. Beyond the duration of the project, the lab will further develop Dresden's transport system and position the city as a pioneer for sustainable urban mobility. The Urban Transport Lab will open on 31 August 2024. Further milestones include the testing of a charging robot in the Ostragehege in autumn 2024 (with VW GI) and car park monitoring in the Ostragehege at the end of 2024/beginning of 2025. The project is scheduled to run for the next five years, during which the technologies will be deployed and monitored by a project consortium comprising 29 prestigious institutions from nine European countries, covering the different perspectives of academia, industry and the public sector. MOBILITIES FOR EU is funded under Horizon Europe - the European Commission's research and innovation funding programme - in collaboration with the two European partnerships CCAM and 2ZERO.
-#
-
-Dresden. Die2qu
 
 Action plan for climate neutrality 2030
-
-#
 
 # 3.2.3 Portfolio of measures for green infrastructure and climate change adaptation
 
@@ -2472,13 +1812,8 @@ Table 3- 2: Selected actions relating to the reduction of GHG from the draft cli
 |  M1.3-3: | Consistently apply the "Dresden builds green" guideline when planning buildings and open spaces. | Improving the CO2 binding effect of surfaces; natural cooling effects for buildings  |
 |  M1.4-1: | Reduce heat input in buildings through AM building actions. | Reducing overheating in buildings leads to a reduction in potential energy-related cooling requirements and the associated GHGs  |
 |  M1.4-2: | Reduce heat input in buildings through actions IN the building. | Reducing overheating in buildings leads to a reduction in potential energy-related cooling requirements and the associated GHGs  |
-#
-
-Dresden. DIV29CU
 
 Action plan for climate neutrality 2030
-
-#
 
 In addition, two major projects will be presented that pursue the goals of climate adaptation and climate protection:
 
@@ -2488,13 +1823,8 @@ M3.2-1 | Store, infiltrate and evaporate rainwater decentrally on the properties
 M3.2-3/ M1.1-5 | Reduce the sealing of urban spaces. | Improvement of the CO2 binding effect of land; relief of the wastewater network and sewage treatment plants leads to reduced energy use and GHG emissions from the sewage treatment plant
 M3.2-4/ M1.1-6 | Strengthen rainwater retention by greening buildings. | Relief of the wastewater network and sewage treatment plants leads to reduced energy consumption and GHG emissions from the sewage treatment plant
 Federal Garden Show (BUGA) 2033 in Dresden | With the signing of an implementation agreement between the City of Dresden and the Deutsche Bundesgartenschaugesellschaft (DBG) on Thursday, 13 June 2024, the joint plan for a Dresden Federal Garden Show in 2033 was sealed. This was preceded by a resolution of the city council with a clear majority in favour of holding the Federal Horticultural Show 2033 (BUGA). This was based on an initial sketch of ideas and then a feasibility study, which was completed by the end of September 2023. Local stakeholders, institutions and citizens were able to participate in the feasibility study. In addition to the agricultural development and use of the Südpark, a large part of the urban green space is qualified as a natural biotope area, which can be accessed on foot and by bike via an attractive network of paths. These also connect to the surrounding urban neighbourhoods and link the green and open spaces with each other. The BUGA represents a major contribution to the development of green infrastructure in Dresden in the context of climate change adaptation measures.
-#
-
-Dresden. Discopu
 
 Action plan for climate neutrality 2030
-
-#
 
 # 3.2.4 Action profiles - individual action plans
 
@@ -2503,13 +1833,8 @@ The system of actions in the IEK was carefully designed and should be retained. 
 The IEK is divided into three volumes, with Volume II containing the action portfolio. The focus of the IEK is on an action portfolio, which is characterised by concretely developed packages of measures and fact sheets agreed with the stakeholders. Its detailed presentation not only makes it easier to agree on the necessary next steps, but also facilitates the targeted implementation of the actions that form the prelude to achieving GHG-neutrality in Dresden. The independence of the action portfolio allows it to be used autonomously, in the sense that stakeholders can use the action portfolios for their own work independently of the concept.
 
 The updatable system of the action portfolio and the action profiles helps to ensure that the actions can be planned and updated over time. This structure supports the sustainable implementation of actions and provides scope for adjustments in the dynamic context of climate protection. In order to ensure effective controlling and enable transparent monitoring of success, the actions in the action portfolio (Volume II) are integrated directly into the climate protection monitoring software to be procured. This integration ensures that the implementation of the actions can be monitored promptly, precisely and conveniently and that it is possible to react to changing conditions. Aligning the fact sheets with the requirements of the Municipal Guidelines - Technical Annex ensures that the actions comply with current standards and regulations. This ensures that the actions listed fulfil the requirements for funding.
-#
-
-Dresden. Diego
 
 Action plan for climate neutrality 2030
-
-#
 
 The structure of the action portfolio and the action profiles envisaged in the IEK thus offers a starting point for a clear and practical guideline for the implementation of climate protection measures, which is to be continuously expanded over the next few years into an action programme that reflects the target pathway adopted by the city council to achieve GHG-neutrality. The municipal scope for action is to be made clear and recommendations for action for other stakeholders outside the CoD's remit are to be taken into account.
 
@@ -2532,13 +1857,8 @@ Table 3- : Overview of the Fields of action in the action portfolio
 |  FoA 5: Agriculture and forestry | L  |
 |  FoA 6: Waste and wastewater management | A  |
 |  FoA 7: Grey energy, construction, consumption and nutrition | K  |
-#
-
-Dresden. Diego
 
 Action plan for climate neutrality 2030
-
-#
 
 |  FoA 8: Technical GHG sinks | S  |
 | --- | --- |
@@ -2564,13 +1884,8 @@ G.1-01: First concrete action in action package G.1 (buildings)
 This systematic structure not only enables the action portfolio to be organised efficiently, but also makes it easier to search for, identify and implement specific climate protection measures. Each element in this hierarchy helps to present the large number of actions clearly and to facilitate their integration into the overall context of climate protection.
 
 Key measures are listed below. The IEK action portfolio is attached as an extra document to the CCC (Annex ...). All packages of measures and actions are listed there.
-#
-
-Dresden. Die2qu
 
 Action plan for climate neutrality 2030
-
-#
 
 Package of measures no.: G.3 | Building energy supply
 Title: Expansion and decarbonisation of district heating
@@ -2585,13 +1900,8 @@ Objective: The expansion and decarbonisation of district heating is to use the h
 No.: G.3-01 | Short title: Ring 30
 Building energy supply | Expansion and decarbonisation of district heating
 Type of actions: Direct | Priority: ●●●●
-#
-
-Dresden. Diego
 
 Action plan for climate neutrality 2030
-
-#
 
 |  No.: G.3-01 | Short title: Ring 30  |
 | --- | --- |
@@ -2599,13 +1909,8 @@ Action plan for climate neutrality 2030
 |  Description of the Together with Stadtreinigung Dresden GmbH, SachsenEnergie AG is planning the construction and operation of a waste treatment plant including a thermal waste utilisation plant in the form of a refuse-derived fuel (RDF) cogeneration plant. With the construction of our own plant in Dresden and its connection to CoD's central district heating network, up to 80% of the energy contained in residual waste can be utilised. By pretreating the waste, recyclable materials still contained in the residual waste can also be fed back into material cycles and a high-calorific substitute fuel can be produced for heat generation. The quantities generated on site are also disposed of safely on site. Natural gas previously used and imported from abroad will be proportionately substituted and the generation of heat decarbonised accordingly. As a result, this economical and ecological solution in municipal hands closes local material and energy cycles. In the future, this will make an important contribution to the affordability of waste disposal and energy supply for local people and create new jobs at the same time. The Hammerweg site, which has been used for waste management for decades and is located close to the conurbation, which is essential for district heating supply, will become a new focal point for this. A state-of-the-art RDF cogeneration plant will characterise the site in terms of energy management as a future component of a secure electricity and heat supply for CoD. There are currently plans to create processing capacities for non-hazardous waste with a capacity of up to 110,000 tonnes per year. The RDF will be thermally utilised in a new RDF cogeneration plant to be built with a combustion capacity of approx. 120,000 tonnes per year. The steam generated will be used to generate electricity and heat by means of an extraction condensing turbine. Innovative technologies in the turbine area and in the utilisation of waste heat potential are intended to achieve a fuel utilisation rate of up to 80%. The heat generated will be fed into the central district heating network of the city of Dresden as district heating.  |   |
 |  Objective Decarbonisation of Dresden's district heating generation and securing an affordable waste disposal and energy supply. By pretreating residual waste and bulky waste that is subject to disposal, recyclable materials are to be fed back into the material cycle and the substitute fuel produced in the RDF cogeneration plant is to be utilised in the best possible way to generate energy. Waste utilisation close to the conurbation should also ensure a considerable reduction in transport routes.  |   |
 |  Lead responsibility | Target group ■ Energy customers (heat and electricity)  |
-#
-
-Dresden. Die2qu
 
 Action plan for climate neutrality 2030
-
-#
 
 |  No.: G.3-01 | Short title: Ring 30  |
 | --- | --- |
@@ -2614,13 +1919,8 @@ Action plan for climate neutrality 2030
 |  Energy saving Indirect System yield | GHG reduction approx. 120,000 t CO2/a (own calculation SachsenEnergie AG; provisional values, as technical optimisation is still in progress) Positive effect ■ Reduction of transport routes ■ Decarbonisation of district heating  |
 |  One-off costs Investment sum: around 320 million euros (planning status 12/2023) | Ongoing costs will be supported in a later planning phase  |
 |  Personnel expenses will be implemented in a later planning phase.  |   |
-#
-
-Dresden. Die2qu
 
 Action plan for climate neutrality 2030
-
-#
 
 No.: G.3-01 | Short title: Ring 30
 Interactions of the actions and synergies
@@ -2636,11 +1936,7 @@ The project comprises the planning and construction of a heat pump system in the
 Objective: Use of environmental heat to decarbonise district heating.
 图
 
-Dresden. Discopu
-
 Action plan for climate neutrality 2030
-
-O
 
 |  No.: G.3-02 | Short title: Flusswasser-WP Weißeritz  |
 | --- | --- |
@@ -2673,13 +1969,8 @@ Reduce dependence on imports by utilising local energy sources  |
 One-off costs
 million euros | Current costs
 million euros/a  |
-#
-
-Dresden. Die2qu
 
 Action plan for climate neutrality 2030
-
-#
 
 No.: G.3-02 | Short title: Flusswasser-WP Weißeritz
 Personnel expenses Not specified
@@ -2698,11 +1989,7 @@ SachsenEnergie AG (DREWAG) | District heating customers
 Involved
 图
 
-Dresden. Die2qcu
-
 Action plan for climate neutrality 2030
-
-O
 
 |  No.: G.3-03 | Short title: Wastewater WP Kaditz  |
 | --- | --- |
@@ -2735,13 +2022,8 @@ Personnel expenses
 Not yet known.  |   |
 Interactions of the actions and synergies
 None  |   |
-#
-
-Dresden. Die2qu
 
 Action plan for climate neutrality 2030
-
-#
 
 No.: G.3-03 | Short title: Wastewater WP Kaditz
 Notes
@@ -2753,13 +2035,8 @@ Mine water heat pump
 Description: The aim of the project is the construction and operation of a heat pump system for green neighbourhood heating in Dresden-Gorbitz. The planned heating capacity is approx. 1 - 1.6 MWth. The mine water from the deep Elbe tunnel serves as the heat source. In a first planning step, the site fundamentals including the potential of the heat source for the provision of district heating were recorded and necessary preliminary investigations such as an exploratory borehole to determine the geological conditions were carried out. The design of the plant and the necessary peripherals will be specified in more detail in the more detailed planning stage. According to the current planning status, the construction of the plant can be divided into four sections. These include the excavation of a technical cavern in the deep Elbe tunnel, the installation of the mine water pipe from the surface to the cavern by means of boreholes, the construction of the mine water route from the borehole to the Q10 heat exchanger station (WÜS Q10) and the equipping of the empty WÜS Q10 with a heat pump and the necessary peripherals. In particular, permits are required for the necessary work, some of which must be carried out on the city's compensation areas. Care is taken to minimise the permanent use and sealing of green spaces. Furthermore, contractual agreements with WISMUT GmbH are a prerequisite for the utilisation of mine water heat.
 Objective: Use of environmental heat to decarbonise district heating.
 Lead responsibility SachsenEnergie AG (DREWAG) Involved | Target group ■ District heating customers
-#
-
-Dresden. Die2qu
 
 Action plan for climate neutrality 2030
-
-#
 
 |  No.: G.3-04 | Short title: WP Mine water  |
 | --- | --- |
@@ -2770,13 +2047,8 @@ Action plan for climate neutrality 2030
 |  Personnel expenses Not yet known  |   |
 |  Interactions of the actions and synergies None  |   |
 |  Notes  |   |
-#
-
-Dresden. Diezqcu
 
 Action plan for climate neutrality 2030
-
-#
 
 No.: G.3-04 | Short title: WP Mine water
 None
@@ -2788,13 +2060,8 @@ Description of the The construction of a new state data centre is planned at the
 Objective: Utilisation of unavoidable waste heat to decarbonise district heating.
 Lead responsibility SachsenEnergie AG (DREWAG) Involved Saxon property and construction management | Target group District heating customers
 Milestones 06/2024: Signing of a waste heat disposal contract 2027: Commissioning of the new state data centre 2028: Commissioning of the heat pump system | Duration of the actions 5 years Start of the actions 2024
-#
-
-Dresden. Die2qu
 
 Action plan for climate neutrality 2030
-
-#
 
 No.: G.3-05 | Short title: Waste heat LRZ
 End of the actions 2028
@@ -2805,13 +2072,8 @@ Interactions of the actions and synergies Also serves to legitimise the Fabrices
 Notes None
 Package of measures no.: G.4 | Fields of action Building energy supply
 Title: Municipal heat planning
-#
-
-Dresden. Diezqu
 
 Action plan for climate neutrality 2030
-
-#
 
 Package of measures no.: G.4
 
@@ -2837,13 +2099,8 @@ Objective: The primary objective of municipal heat planning is to develop a soci
 |  Type of action: Flanking | Priority: ●●●●  |
 |  Preparation of the municipal heat planning  |   |
 |  Description: The preparation of the first municipal heat planning for Dresden includes the following components in particular: - an inventory analysis  |   |
-#
-
-Dresden. Die2qu
 
 Action plan for climate neutrality 2030
-
-#
 
 |  No.: G.4-01 | Short title: Creation of KWP  |
 | --- | --- |
@@ -2851,13 +2108,8 @@ Action plan for climate neutrality 2030
 |  Objective: To draw up a municipal heat planning programme that sets out a realistic transformation path for Dresden's heat supply towards an affordable, secure and climate-neutral heat supply. The aim of this strategic plan is to increase planning security for building owners and users, as well as planning and authorising bodies.  |   |
 |  Lead responsibility Climate Protection and Climate Change Adaptation Unit Involved STESAD GmbH, SachsenEnergie AG, SachsenNetze GmbH, Office for Urban Planning and Mobility, Office for Urban Strategy, International Affairs and Citizenship, Environmental Agency, Office for Geodata and Cadastre, Office for Building Construction and Real Estate Management, Office for Economic Development, Monument Protection Authority, scientific institutions, business and trade associations, Dresden Municipal Hospital | Target group Building owners and users / tenants Commercial enterprises / industry Energy grid operator Planning and authorising bodies CoD Municipal property management  |
 |  Milestones | Duration of the actions 1.5 years  |
-#
-
-Dresden. Die2qu
 
 Action plan for climate neutrality 2030
-
-#
 
 |  No.: G.4-01 | Short title: Creation of KWP  |
 | --- | --- |
@@ -2866,13 +2118,8 @@ Action plan for climate neutrality 2030
 |  One-off costsapprox. 300,000 euros | Ongoing costsNot yet determinable, but recurring costs may arise for the use of the municipal heat planning tools and data updates.  |
 |  Personnel expenses1.5 FTEs for the Climate Protection and Climate Change Adaptation UnitAfter implementation: Costs not yet known  |   |
 |  Interactions of the actions and synergiesHeat transformation plan / expansion and decarbonisation of district heating, electricity grid expansion planning, gas grid transformation plan, electricity-heat sector coupling, determination of storage requirements, energy consulting programme  |   |
-#
-
-Dresden. Die2qu
 
 Action plan for climate neutrality 2030
-
-#
 
 No.: G.4-01 | Short title: Creation of KWP
 Notes
@@ -2887,11 +2134,7 @@ Climate Protection and Climate Change Adaptation Unit | Building owners and user
 Commercial enterprises / companies
 图
 
-Dresden. Die2qu
-
 Action plan for climate neutrality 2030
-
-O
 
 |  Involved SAENA, SachsenEnergie AG | Energy consultant  |
 | --- | --- |
@@ -2900,13 +2143,8 @@ O
 |  One-off costs approx. 50,000 euros | Ongoing costs approx. 150,000 Euro/a  |
 |  Personnel expenses ■ 0.2 FTE in the Climate Protection and Climate Change Adaptation Unit  |   |
 |  Interactions of the actions and synergies  |   |
-#
-
-Dresden. Die2qu
 
 Action plan for climate neutrality 2030
-
-#
 
 The municipal information and energy advice service for citizens, property owners and companies offers a central point of contact for actions to save energy, funding opportunities and the use of renewable energies in individual buildings or as a neighbourhood solution. In addition to the transformation of the heat supply and infrastructure, educating and advising the population and local businesses is another important focus on the path to climate neutrality in the City of Dresden.
 
@@ -2928,13 +2166,8 @@ Description: Neighbourhood heating concepts are a key pillar of the energy trans
 A key pillar of the energy transition in the heating sector are so-called "cold" local heating solutions or networks (lowering operating temperatures compared to conventional systems, thus enabling heat generation from renewable energies) and neighbourhood heating concepts (looking at entire neighbourhoods instead of individual buildings to improve the efficiency of the overall system).
 As part of the Geystraße neighbourhood concept, the existing and planned new buildings of the Olga-Körner nursing home run by the municipal company CULTUS gGmbH and the planned owner-occupied homes are to be connected to a "cold" local heating network. The heat will be extracted using geothermal probes and the brine pumped into the buildings will be raised to the required temperature level using brine-water heat pumps. The concept is rounded off by coupling with PV and solar thermal systems to power the heat pumps and regenerate the geothermal probes.
 The result will be a heating solution that enables a high degree of self-sufficiency and largely market-independent, stable prices.
-#
-
-Dresden. Diezqcu
 
 Action plan for climate neutrality 2030
-
-O
 
 |  No.: G.4-03 | Short title: Neighbourhood concepts  |
 | --- | --- |
@@ -2944,11 +2177,7 @@ O
 |  Milestones Geystrasse" project ■ Finalisation of preliminary planning Q1/2024 ■ Start of construction work on local heating network part of nursing home HY 2/2024 | Duration of the actions 3 years of the "Geystraße" project 6 years of the "WiD-Hosterwitz" project Start of the actions  |
 图
 
-Dresden. Diege
-
 Action plan for climate neutrality 2030
-
-O
 
 |  No.: G.4-03 | Short title: Neighbourhood concepts  |
 | --- | --- |
@@ -2966,14 +2195,7 @@ years of the "WiD-Hosterwitz" project  |
 ■ End of 2027 - first new-build completions possible
 ■ End of 2029 - Completion of buildings and internal developments |   |
 
-3
-#
-
-Dresden. Die2qu
-
 Action plan for climate neutrality 2030
-
-#
 
 |  No.: G.4-03 | Short title: Neighbourhood concepts  |
 | --- | --- |
@@ -2982,13 +2204,8 @@ Action plan for climate neutrality 2030
 |  Personnel expenses 0.05 FTE for managing the "Geystraße" project in the Climate Protection and Climate Change Adaptation Unit  |   |
 |  Interactions of the actions and synergies The City of Dresden (CoD) is planning a series of corresponding individual projects in order to test new heating solutions in practice and establish them on the market in the medium to long term together with the players at TU Dresden (Institute for Building Climatology, IBK), HTW Dresden and SachsenEnergie AG.  |   |
 |  Notes None  |   |
-#
-
-Dresden. Diego
 
 Action plan for climate neutrality 2030
-
-#
 
 Package of measures no.: G.5 | Fields of action Building energy supply
 Title: Dresden Hydrogen Agenda
@@ -2996,13 +2213,8 @@ Description: Hydrogen plays a central role in achieving GHG-neutrality in Dresde
 No.: O 1-01 | Short title: Central climate protection coordination
 Fields of action Overarching organisation and control | MaP: Organisation of overarching climate protection work
 Type of action: Flanking | Priority: ●●●●
-#
-
-Dresden. Die2qu
 
 Action plan for climate neutrality 2030
-
-#
 
 |  No.: O.1-01 | Short title: Central climate protection coordination  |
 | --- | --- |
@@ -3011,10 +2223,7 @@ Action plan for climate neutrality 2030
 |  Objective: Ensuring the accelerated implementation of climate protection measures  |   |
 |  Lead responsibility Environment and Climate, Law and Order Division Involved Office for Urban Strategy, International Affairs and Citizenship | Target group City administration  |
 |  Milestones ■ Q1/2024 Job application for DHH25/26 ■ Q4/2024 Confirmation of the establishment plan/budget ■ Q1/2025 Start of recruitment process with job description ■ Q3/2025 Start of work (at the latest) | Duration of the actions 2 years Start of the actions Q1/2024  |
-#
-Dresden. Discopu
 Action plan for climate neutrality 2030
-O
 
 No.: O.1-01 | Short title: Central climate protection coordination
 End of the actions
@@ -3037,14 +2246,7 @@ Notes
 No.: O.1-02 | Short title: Climate protection working meeting
 Fields of action Overarching organisation and control | MaP: Organisation of overarching climate protection work
 
-7
-#
-
-Dresden. Die2qu
-
 Action plan for climate neutrality 2030
-
-#
 
 |  No.: O.1-02 | Short title: Climate protection working meeting  |
 | --- | --- |
@@ -3056,13 +2258,8 @@ Action plan for climate neutrality 2030
 |  Climate Protection and Climate Change Adaptation Unit | City administration  |
 |  Involved |   |
 |  Initially participants of the PG IEK, later interested offices and in-house operations |   |
-#
-
-Dresden. Diezqu
 
 Action plan for climate neutrality 2030
-
-O
 
 |  No.: O.1-02 | Short title: Climate protection working meeting  |
 | --- | --- |
@@ -3072,13 +2269,8 @@ O
 |  Personnel expenses ■ approx. 10 person days per year for all participants  |   |
 |  Interactions of the actions and synergies None  |   |
 |  Notes None  |   |
-#
-
-Dresden. Die29cU
 
 Action plan for climate neutrality 2030
-
-#
 
 |  No.: O 1-03 | Short title: Climate protection platform  |
 | --- | --- |
@@ -3087,13 +2279,8 @@ Action plan for climate neutrality 2030
 |  Implementation of a web-based climate protection platform in the CoD  |   |
 |  Description: The climate protection activities and the climate protection strategy of the city of Dresden are to be dynamically developed, monitored and made accessible to the public using a web-based platform. There are already established solutions on the market such as Climate View, Kausal Watch, FutureProofed and GAIA. These platforms were developed specifically for monitoring/controlling and scenario modelling. The platform serves both as a tool for coordinating and harmonising internal work and between the organisational units involved, as well as for communicating progress to the public in a meaningful and interactive way. The city's climate protection efforts are made visible, which can increase public awareness of the objectives as well as the motivation for civic participation. The platform is a suitable tool for controlling actions quickly and permanently. The actions can be assigned to different persons responsible so that each person responsible for the action can enter the progress independently. It is also possible to set deadlines for reporting progress on actions. Thanks to an automated report, the implementation status of the actions of the urban climate protection strategy can be easily retrieved and presented to decision-makers as required (e.g. resolution control for the IEK, city council enquiries). The platform facilitates access to the city's climate protection strategy and its implementation and enables many stakeholders to obtain the desired information quickly and clearly. In the first step, the platform is to be used to map the reduction path of the IEK for Dresden, to show the GHG savings for the key measures (from the data of the reduction path calculator) and to underpin this with the actions from the action portfolio. Further actions are to be added on an ongoing basis. For the award process, requirements for the software (specification) are to be jointly formulated by potential measure sponsors. Subsequently, the climate protection platform is to be used permanently for controlling actions. Example: in 2023, the city of Dortmund published its climate plan on a climate protection platform. This can be found under the term "Dortmund Climate Barometer". Direct link: https://www.dortmund.de/themen/umwelt-nachhaltigkeit-und-klimaschutz/klimaschutz-und-klimafolgenanpassung/klimabarometer/  |   |
 |  Objective: Easy access to the city's climate protection strategy (transparency) for stakeholders in the city administration and associated companies  |   |
-#
-
-Dresden. Die2qu
 
 Action plan for climate neutrality 2030
-
-#
 
 |  No.: O.1-03 | Short title: Climate protection platform  |
 | --- | --- |
@@ -3101,13 +2288,8 @@ Action plan for climate neutrality 2030
 |  Lead responsibility Climate Protection and Climate Change Adaptation Unit Involved Digitalisation department, IT department, project sponsors: e.g. Office for Building Construction and Real Estate Management, Dresden Municipal Hospital, Office for Urban Planning and Mobility | Target group ■ City administration ■ Urban society (public access)  |
 |  Milestones ■ Q1/2024: Creation of basic specification for climate protection platform, coordination with offices as part of the PG IEK ■ Q1/2024: Award procedure / order of the digital solution ■ Q2/2024: First workshop with relevant stakeholders in the city administration on requirements, interfaces and responsibilities ■ From Q2/2024: Setting up the system and filling it with the reduction path and actions from the action portfolio ■ Q2/2025: Start of work with the climate protection platform | Duration of the actions 1.5 years Start of the actions Q1/2024 End of the actions Q3/2025  |
 |  Energy saving Indirect System yield | GHG reduction Indirect Positive effect  |
-#
-
-Dresden. Die2qu
 
 Action plan for climate neutrality 2030
-
-#
 
 No.: O.1-03 | Short title: Climate protection platform
 Indirect | Supporting action to realise the GHG reduction potential; disseminating the climate protection strategy throughout the administration, essential for monitoring actions
@@ -3118,13 +2300,8 @@ Notes None
 No.: O.2-01 | Short title: Climate Advisory Board
 Fields of action Overarching organisation and control | MaP: Participation concept and public relations work
 Type of action: Flanking | Priority: ●●●●
-#
-
-Dresden. Diezqcu
 
 Action plan for climate neutrality 2030
-
-#
 
 |  No.: O.2-01 | Short title: Climate Advisory Board  |
 | --- | --- |
@@ -3132,13 +2309,8 @@ Action plan for climate neutrality 2030
 |  Description: The Climate Advisory Board advises the City Council, its committees and the Mayor on all issues relating to climate protection and adaptation to climate change in the City of Dresden. The Climate Advisory Board comments on drafts and amendments to the City of Dresden's fundamental plans and programmes in the energy, mobility, housing and nature conservation sectors in good time before the City Council adopts its resolutions. The Climate Advisory Board also deals with the central issues of climate change adaptation in the City of Dresden. At the request of the City Council, one of its committees or the Mayor, the Climate Advisory Board comments on specific individual issues relating to climate protection or climate change adaptation in the City of Dresden. The composition of the Climate Advisory Board is regulated by corresponding statutes in conjunction with the main statutes. The parliamentary groups of the City Council, universities, companies and transport and environmental organisations are represented on the Climate Advisory Board. In connection with the establishment and coordination of the Climate Advisory Board, administrative expenses are incurred: ■ for the preparation and follow-up of meetings, ■ the preparation of documents for the Climate Advisory Board, ■ drafting and issuing the opinions of the Advisory Board and ■ the monitoring of meetings (minutes, etc.).  |   |
 |  Objective: ■ Acceleration of urban climate protection measures ■ Rapid implementation of decisions  |   |
 |  Lead responsibility Office for Urban Strategy, International Affairs and Citizenship | Target group ■ City Council, City Council committees, Mayor  |
-#
-
-Dresden. Diezqu
 
 Action plan for climate neutrality 2030
-
-#
 
 |  No.: O.2-01 | Short title: Climate Advisory Board  |
 | --- | --- |
@@ -3148,13 +2320,8 @@ Action plan for climate neutrality 2030
 |  Personnel expenses ■ at least 1.0 FTE for the office, ■ possibly also for other organisational units ■ The actual expense cannot yet be estimated and depends on the scope of the Climate Advisory Board's task in accordance with the pending resolution of the City Council.  |   |
 |  Interactions of the actions and synergies None  |   |
 |  Notes  |   |
-#
-
-Dresden. Die2qcu
 
 Action plan for climate neutrality 2030
-
-#
 
 No.: O.2-01 | Short title: Climate Advisory Board
 None
@@ -3165,13 +2332,8 @@ According to the municipal task system, climate protection is still a voluntary,
 Furthermore, there is no standardised definition of what qualifies as a climate protection measure in the municipal context. As a rule, climate protection measures also have a positive impact on other areas (energy saving, health aspects), making it difficult to draw a clear distinction. Climate protection is a cross-sectional task and should therefore be taken into account in all municipal activities, including the preparation of the municipal budget. This applies in particular to investments. If a climate protection measure is economically viable, it should also be implemented. Economical climate protection measures must not be dispensed with in order to secure the overall budget in the event of cost increases. For the preparation of future budgets, it should also be examined how climate protection can be made (more) visible in the municipal budget and which expenses and investments should be prioritised with regard to achieving GHG-neutrality or where municipal expenses and investments may be an obstacle or even counteract the municipal climate protection goals.
 In the future, the financing of actions in the area of climate protection will continue to compete with the financing of other municipal tasks. It is therefore important to examine alternative financing models and, if necessary, to make greater use of tried and tested solutions. The expansion of contracting solutions, for example, should be mentioned in this context. In addition, existing savings from the implementation of climate protection measures could be used to finance new climate investments as part of a fund model. Another possibility is an annual "climate budget". This budget could be based on the CO2 emissions of the CoD and a corresponding price per tonne of CO2. This "climate budget" would be available exclusively for financing climate protection measures.
 Another point is the fulfilment of municipal tasks in the form of municipal associated companies, which must also be increasingly involved in the implementation of climate protection actions (see also action O.6-03).
-#
-
-Dresden. Die2qu
 
 Action plan for climate neutrality 2030
-
-#
 
 There are already established procedures in the procurement process that have a positive impact on both climate protection and financial aspects. This applies, for example, to the life cycle assessment when analysing the economic viability of a purchase. These considerations should be focussed on even more in the future. In the future, it should also be examined whether it is possible to expand the criteria to include a climate protection assessment (including climate impact costs), which would lead to a more qualified assessment.
 
@@ -3191,13 +2353,8 @@ New findings, technologies and experiences can be integrated into the planning p
 The action programme is to be published (in a reduced form) in order to promote the participation and understanding of urban society. Publication not only serves to provide information, but also creates a basis for citizen feedback and participation.
 
 Responsibility for maintaining and implementing the actions lies with specific organisational units that contribute their expertise in the respective areas. These organisational units play a key role in the implementation of the actions and help to ensure that the set goals are achieved. The overall programme is continuously monitored and maintained by the Climate Protection and Adaptation Unit. This controlling ensures that the action programme is implemented efficiently, enables regular reviews of progress and helps to successfully achieve the overall goal of a greenhouse gas-neutral Dresden.
-#
-
-Dresden. Diego
 
 Action plan for climate neutrality 2030
-
-#
 
 |  No.: O.4-02 | Short title: Action programme  |
 | --- | --- |
@@ -3229,13 +2386,8 @@ Indirect
 Positive effect
 Concrete, measurable and controllable action steps for urban climate protection strategy  |
 One-off costs | Ongoing costs
-#
-
-Dresden. Die2qu
 
 Action plan for climate neutrality 2030
-
-#
 
 No.: O.4-02 | Short title: Action programme
 Not known | Not known
@@ -3250,13 +2402,8 @@ None
 Package of measures no.: 0.6 | Fields of action Overarching organisation and control
 Title: GHG-neutrality in the city group
 Description: The original municipal scope for action lies in the GHG-neutrality of its own properties and vehicle fleet as well as municipal emission sources. To this end, the goal of GHG-neutrality by 2035 is proposed for the CoD. This is in line with the approach taken by many local authorities or results in other federal states solely from the requirements of state laws. A separate implementation roadmap with corresponding concrete actions must be developed to realise this goal.
-#
-
-Dresden. Die2qu
 
 Action plan for climate neutrality 2030
-
-#
 
 Package of measures no.: 0.6 | Fields of action Overarching organisation and control
 The municipal associated companies are part of the City Group and should therefore also contribute to the municipal climate protection targets.
@@ -3268,11 +2415,7 @@ Initiation of the process towards GHG-neutral city administration
 Description: Operationalising the process of a greenhouse gas-neutral administration (GHG-NV) requires a clear, systematic procedure. The following preparatory steps are necessary to set up the process in the city administration of CoD: ■ Clarification of the relevant actors, responsibilities and organisational structures for achieving the GHG-NV target ■ Clarification of processes and coordination formats ■ Develop target image together with the organisational units involved ■ Clarification of system boundaries according to operational, financial control approach or proportional approach ■ Clarification of the accounting framework: which emission sources are to be included in the GHG-NV (data availability) ■ Clarification of the existence of GHG emission sources in the city administration (organisational units with properties, vehicle fleet, business trips, procurement, etc.) ■ Materiality assessment of the climate protection aspects of the administration ■ Development of an overarching roadmap ■ Clarification of how to deal with compensation ■ Submission of a template for GHG-N management in the DB-OB to confirm the work processes Setting up the process and creating a corresponding template for the DB-OB is to be supported by external consultants. This will make it possible to draw on experience from other municipalities that have already started such a process (e.g. Munich).
 图
 
-Dresden. D1c2qc0
-
 Action plan for climate neutrality 2030
-
-O
 
 |  No.: O.6-01 | Short title: GHG-N Administration  |
 | --- | --- |
@@ -3302,13 +2445,8 @@ None | GHG reduction
 Indirect
 Positive effect
 Specification of the direct municipal scope for action and realisation of the objective  |
-#
-
-Dresden. Die29cU
 
 Action plan for climate neutrality 2030
-
-#
 
 No.: O.6-01 | Short title: GHG-N Administration
 One-off costs Estimate approx. 15,000 euros for external consulting, no market survey available yet | Ongoing costs Not yet known
@@ -3318,13 +2456,8 @@ Notes The recruitment process for the coordination of the GHG-N administration m
 Package of measures no.: O.8 | Fields of action Overarching organisation and control
 Title: Monitoring and controlling concept
 Description: Controlling of the Integrated Energy and Climate Protection Plan (IEK) takes place in an agile process due to the tight time frame until the target year. By adopting the IEK, the city council commissions the city administration to initiate and implement the actions, which are continuously expanded and modified. Concrete interim targets of the city's climate protection strategy are linked to the target of a greenhouse gas-neutral Dresden and are reviewed two years after achievement when the respective GHG inventory is submitted. This assessment enables deviations to be identified and the climate protection strategy to be adjusted.
-#
-
-Dresden. Die2qu
 
 Action plan for climate neutrality 2030
-
-#
 
 # Package of measures no.: 0.8
 
@@ -3357,10 +2490,7 @@ Well-maintained data structure:
 Regular updating of the data framework required
 Updateability of data and assumptions on the reduction path
 Continuous monitoring as an accurate and relevant basis for adaptation requirements
-#
-Dresden. Die29eU
 Action plan for climate neutrality 2030
-O
 
 |  Package of measures no.: O.8 | Fields of action Overarching organisation and control  |
 | --- | --- |
@@ -3372,7 +2502,6 @@ O
 |  These tasks are carried out under the leadership of the Climate Protection and Adaptation Unit (2 FTEs of staff must be permanently earmarked for this). |   |
 |  **Objective:** Visualise the achievement of objectives (interim objectives) and the implementation status, show decision-makers what action is required |   |
 
-3
 Summarised strategy for residual emissions
 
 The residual emissions that will remain from 2030 until green house gas neutrality is achieved by 2040 in accordance with the target defined in the IEK are already presented in the Integrated Energy and Climate Protection Plan (IEK). The strategy for dealing with these residual emissions has therefore been comprehensively developed and integrated into the concept. A large part of this strategy has already been incorporated into the previous chapters, as the methodological approach to dealing with residual emissions was derived according to the same principles as the other actions.
@@ -3392,13 +2521,8 @@ In conclusion, it should be noted that technical (and natural) sinks are importa
 The evaluation of the city's climate protection strategy requires precise indicators that go beyond the BISKO balance sheet. The energy and GHG inventory already provides important indicators, especially when broken down into the commercial, industrial and private household sectors. This enables a detailed analysis of developments per consumer group.
 
 Reviewing the local expansion of RE to the electricity supply is another crucial aspect. This can be done by evaluating data on the feed-in of EEG plants and analysing the market master data register. This information provides insights into the progress of the integration of RE into the local electricity grid.
-#
-
-Dresden. Diezqur
 
 Action plan for climate neutrality 2030
-
-#
 
 Another indicator relates to the heat consumption of private households in relation to total living space. This indicator makes it possible to monitor developments in energy-efficient refurbishment and user behaviour. By analysing heat consumption in detail, it is possible to assess the extent to which actions to increase efficiency and change behaviour are being implemented.
 
@@ -3416,15 +2540,8 @@ Table 3- 3: List of indicators relevant for Dresden
 |  Total GHG emissions (BISKO) per capita | Result of the calculation of city-wide GHG emissions from final energy consumption (BISKO) in relation to residents with their main place of residence in Dresden (population register) | Shows trend towards a reduction in total emissions (final energy-based) adjusted for the effect of population growth | tCO2,eq/EW/a | Calculation result from BISKO balance sheet by climate protection planner  |
 |  GHG emissions from private households and residential buildings | Result of the calculation of GHG emissions from final energy consumption in relation to the private households sector (= residential buildings) | Shows trend towards a reduction in total emissions (final energy-based) in the residential building sector (efficiency and | tCO2,eq/a | Calculation result from BISKO balance sheet by climate protection planner  |
 |   |  | in the residential building sector (efficiency and |  |   |
-#
-
-Dresden. Diezqcu
 
 Action plan for climate neutrality
-
-0
-
-#
 
 |  Indicator name | Definition of | Effect | Unit | Data source  |
 | --- | --- | --- | --- | --- |
@@ -3433,15 +2550,8 @@ Action plan for climate neutrality
 |  GHG emissions from industry and process energy | Result of the calculation of GHG emissions from final energy consumption in relation to the industry sector (= process energy) | Shows trend towards reducing total emissions (final energy-based) in the area of process energy (efficiency and substitution) | tCO2.eq/a | Calculation result from BISKO balance sheet by climate protection planner  |
 |  GHG emissions from transport (BISKO) | Result of the calculation of GHG emissions from final energy consumption in relation to the industry sector (= process energy) | Shows trend towards reducing total emissions (final energy-based) in the transport sector (efficiency and substitution) | tCO2.eq/a | Calculation result from BISKO balance sheet by climate protection planner  |
 |  GHG emissions from fossil fuels Scope 1 (stationary) | Result of the calculation of GHG emissions from final energy consumption in relation to the energy sources (mainly natural gas, as well as heating oil and other fuels) for direct use (for Scope 2 emissions, this analysis is not yet possible with the existing tools, as fossil fuels are not analysed separately for heat and electricity in the climate protection planner) | Shows trend towards reducing emissions from the use of fossil fuels for heating buildings (efficiency and substitution, including weather influences) | tCO2.eq/a | Calculation result from BISKO balance sheet by climate protection planner  |
-#
-
-Dresden. Diezqur
 
 Action plan for climate neutrality
-
-0
-
-#
 
 |  Indicator name | Definition of | Effect | Unit | Data source  |
 | --- | --- | --- | --- | --- |
@@ -3451,15 +2561,8 @@ Action plan for climate neutrality
 |  Covering own requirements with PV | Figure that is compared with the reported feed-in quantities from an extrapolation (average full utilisation hours) of the installed systems via the market master register | shows the degree of self-sufficiency | GWh/a | Market master data register  |
 |  GHG emission factor reference electricity (national) | Mixing factor for reference electricity mix | shows degree of expansion of renewable energies outside the urban area | gCO2.eq/kWh | Input variable in climate protection planner (from ifeu data set)  |
 |  Local district heating emission factor | Value determined by entering the local systems for district heating | shows expansion Switch from fossil fuels to renewable energy sources or waste heat in district heating | gCO2.eq/kWh | Calculation result from the input of the energy balance of the local generation plants (HKW, HW)  |
-#
-
-Dresden. Diezqu
 
 Action plan for climate neutrality
-
-0
-
-#
 
 Indicator name | Definition of | Effect | Unit | Data source
 Cumulative GHG emissions from 2020 onwards | Total greenhouse gas emissions in the urban area (BISKO) | Comparison with Dresden CO residual budget2 | tCO2_eq | Totalling GHG emissions over time
@@ -3469,15 +2572,8 @@ Total GHG emissions (BISKO) | THG_Ges | All final energy-based emissions | tCO2_
 Total GHG emissions (BISKO) per capita | THG_Ges,pK | All final energy-based emissions | tCO2_eq/a | 5,07 | 4,17 | 2,79
 GHG emissions from private households and residential buildings | THG_PHH | Decarbonisation of district heating and expansion of district heating Conversion of electricity to renewable energies in the urban area and electricity supply Reduction in energy demand for heat Reduction in energy requirements Electricity Substitution of fossil fuels with renewable energy sources for decentralised building energy supply | tCO2_eq/a | 800.568 | 663.014 | 454.096
 GHG emissions from private trade/commerce/services and | THG_GHD | Decarbonisation of district heating and expansion of district heating Conversion of electricity to renewable energies in the urban area and electricity supply | tCO2_eq/a | 441.673 | 355.367 | 229.355
-#
-
-Dresden. Diezqu
 
 Action plan for climate neutrality
-
-0
-
-#
 
 8-3.1: Impact pathways
 Indicator name | Indicator no. | Results/Impacts treated | Unit | Target values 2025 | Target values 2027 | Target values 2030
@@ -3493,15 +2589,8 @@ Substitution of fossil fuels with renewable energy sources for decentralised bui
 GHG emissions from transport (BISKO) | THG_MOB | Reduction in energy requirements for mobility
 Substitution of fossil fuels with renewable energy sources | tCO2.eq/a | 712.513 | 558.545 | 327.592  |
 GHG emissions from fossil fuels | THG_fossstat | Conversion from natural gas utilisation to green hydrogen | tCO2.eq/a | 935.418 | 824.178 | 667.703
-#
-
-Dresden. Diezqu
 
 Action plan for climate neutrality
-
-0
-
-#
 
 |  8-3.1: Impact pathways |  |  |  |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -3512,15 +2601,8 @@ Action plan for climate neutrality
 |  Feed-in of renewable energies into the electricity grid (on balance) | EEV_EE,electricity | Conversion of electricity to renewable energies in the urban area and electricity supply | MWh/a | 97.737 | 170.829 | 411.153  |
 |  Own consumption covered by PV (balance sheet) | EEV_PV,eig | Conversion of electricity to renewable energies in the urban area | MWh/a | 138.792 | 193.779 | 276.260  |
 |  GHG emission factor reference | f_THG,electricity mix | Conversion of electricity to renewable energies in the urban area and electricity supply | g/kWh | 0,322 | 0,247 | 0,134  |
-#
-
-Dresden. Die2qCu
 
 Action plan for climate neutrality
-
-0
-
-#
 
 B-3.1: Impact pathways
 Indicator name | Indicator no. | Results/Impacts treated | Unit | Target values 2025 | Target values 2027 | Target values 2030
@@ -3535,15 +2617,8 @@ Definition of | Result of the calculation of city-wide GHG emissions from final 
 Calculation | Σ QEnergy carrier * fTHG,energy carrier + Σ AStrom * fTHG,electricity
 Indicator context
 Does the indicator measure direct effects (reduction in greenhouse gas emissions?) | Yes
-3
-
-Dresden. Diezqui
 
 Action plan for climate neutrality
-
-0
-
-O
 
 If so, which emission source sectors are measured? | Energy systems
 Built environment
@@ -3561,15 +2636,8 @@ Recommended collection interval | yearly
 References
 Services that describe the indicator
 Other indicator systems use this indicator
-#
-
-Dresden. Diezqcu
 
 Action plan for climate neutrality
-
-0
-
-#
 
 # 4 Part C - Enabling climate neutrality by 2030
 
@@ -3581,15 +2649,8 @@ Action plan for climate neutrality
 |  Climate Advisory Board | The Climate Advisory Board advises the Mayor and the City Council on all matters relating to climate protection and adaptation to climate change. |  | The city council's political groups are represented on the Climate Advisory Board, as are expert residents from universities, companies and transport and environmental organisations. | Participation by an informed population is increased, decisions are widely publicised | Other stakeholders are sensitised to municipal climate protection work and integrated into the municipal discourse and decision-making on climate-relevant positions.  |
 |  Climate Coordination Centre | Coordinates the city's climate protection measures | Recognise barriers from 2.3.3 at an early stage and take countermeasures | The management level of the city administration is involved, including the Mayor, Deputy Mayor and heads of office. | Enables transparency and traceability as well as control and a systemic perspective | Indirect effects: Supporting actions to realise the GHG reduction potential, bringing together various activities  |
 |  Climate steering group | Cross-divisional steering group (SG) Climate, | Recognise barriers from 2.3.3 at | Cross-divisional under the lea- | Enables transparency and traceability as well as | Indirect effects: Supporting actions to realise the GHG  |
-#
-
-Dresden. Discqur
 
 Action plan for climate neutrality
-
-0
-
-#
 
 # 4.1.1 Municipal climate protection structures:
 
@@ -3599,11 +2660,7 @@ Figure 4-1Organisational structures for climate protection in the City of Dresde
 The City Council commissioned the Mayor with the decision to restructure the divisions on 26 January 2023:
 图
 
-Dresden. Die2qCu
-
 Action plan for climate neutrality 2030
-
-O
 
 (1) to form a Climate Advisory Board to advise the City Council and city administration (Section 25 (10) of Dresden's main statutes; the City Council is currently deliberating on the proposal),
 (2) to establish a coordination centre to accelerate the implementation of climate protection measures and to achieve the mobility transition, including the planning of roads and transport routes (new Section 28a of Dresden's main statutes)
@@ -3627,13 +2684,8 @@ Ensure an overview of the various concepts and projects in the CoD with climate 
 Ensuring the acceleration of the central climate protection strategy (GHG-neutrality in accordance with the IEK resolution) in city administration projects. Coordination of the interfaces between the individual concepts and projects
 Submitting centralised funding applications for the entire city administration and its own companies (e.g. funding according to municipal guidelines)
 Ensuring the exchange of information between the various players in the CoD and relevant players in urban society
-#
-
-Dresden. Diezqcu
 
 Action plan for climate neutrality 2030
-
-#
 
 With regard to the associated companies, the Mayor or the Deputy Mayor representing him as Chairman of the Supervisory Board and the members of the City Council as elected members of the Supervisory Board can represent the interests of CoD to the extent permitted by their function.
 
@@ -3656,13 +2708,8 @@ The Climate Protection and Adaptation Unit is the central administrative unit fo
 The formation of project groups has proven to be an effective instrument for interdepartmental cooperation on key topics. These can involve co-operation between departments and municipal enterprises as well as municipal associated companies and other external players. Successful project group work requires the agreement of a common project objective, the appointment of a project manager and a joint working agreement with a project objective.
 
 In certain project phases, other participants may be involved. Project groups can be formed between those agreed or on behalf of the Mayor or Deputy Mayor. As a rule, the responsible Deputy Mayor or
-#
-
-Dresden. Diezqcu
 
 Action plan for climate neutrality 2030
-
-O
 
 head of department in charge coordinates and monitors the work of the project groups independently, unless special regulations are required. In order to be able to make proposals for acceleration and implementation as well as for technical controlling, the Climate Protection and Climate Change Adaptation Unit needs contact persons for queries and agreements in addition to those responsible in the hierarchy (Deputy Mayor, office and plant managers) in important OUs and operations. These contact persons communicate directly with the Climate Protection and Adaptation Unit, ensure communication within their organisational unit and prepare decisions at the necessary level in a binding and swift manner. It is proposed that they be designated as climate change officers for their respective organisational units.
 
@@ -3682,15 +2729,8 @@ Dresden Municipal Hospital
 Own operation of sports facilities Dresden
 
 The municipal investment companies prepare their own GHG inventory. The first balance sheet of the municipal investment companies is to be presented for the 2022 balance sheet year, initially focussing on Scope 1 and 2. On this basis, suitable actions to achieve GHG-neutrality by 2035 are to be developed
-#
-
-Dresden. Die2qCu
 
 Action plan for climate neutrality
-
-0
-
-#
 
 in line with the requirements for the city administration. The next step will be to expand the balance sheet to include Scope 3 and expand the actions accordingly.
 
@@ -3710,13 +2750,8 @@ Implement flexible grid fee structures for controllable loads (in accordance wit
 Limiting future increases in emissions from the German natural gas mix (influence of LNG gas and non-conventional natural gas sources) through contractually binding requirements for climate-friendly production conditions in producing countries and regular inspections of plants.
 
 https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2023/20231127_14a. 18/12/2023].
-#
-
-Dresden. Diezqur
 
 Action plan for climate neutrality 2030
-
-#
 
 ## 4.1.3 Involvement of relevant stakeholders:
 
@@ -3740,13 +2775,8 @@ Public relations work plays a decisive role in municipal climate protection, esp
 The integration of the city's climate protection strategy on a broad scale requires targeted and transparent communication. Various means are to be utilised for this, including press releases, potentially a regular newsletter, the constant updating of the website and the use of social media. Through these channels, the Integrated Energy and Climate Concept (IEK) will be presented to the public in a clear manner in order to inform citizens comprehensively about the IEK content.
 
 It is essential to actively involve the public in the process of implementing the IEK. This can be done through targeted information events and dialogue platforms where citizens are not only informed but also invited to contribute their opinions and ideas. Transparency in communication creates trust and enables the participatory organisation of municipal climate protection. Continuous and appealing public relations work thus not only promotes acceptance, but also the active participation of the population in the climate protection process.
-#
-
-Dresden. Diezqcu
 
 Action plan for climate neutrality 2030
-
-#
 
 Public relations projects:
 
@@ -3771,15 +2801,8 @@ Political groups (8 seats)
 Initiatives, associations and clubs (18 seats): ADAC Sachsen e. V. (2 seats), Architektenkammer Sachsen, Arbeitskreis Stadtplanung, DresdenZero, Dresden zu Fuß (local group of the German Pedestrian Traffic Association FUSS e. V.), Dresdner Taxigenossenschaft eG, Entwicklungsforum Dresden e. V., Fridays for Future Dresden, Dresden Chamber of Crafts, Dresden Chamber of Industry and Commerce, Saxony Chamber of Engineers, Landesarbeitsgemeinschaft Selbsthilfe Sachsen e. V., Lokale Agenda 21 für Dresden e. V., Dresden Police Headquarters, Dresden Senior Citizens' Advisory Council, TU Dresden Student Council, Umweltzentrum Dresden e. V., Verkehrsclub Deutschland e. V., Dresden local group
 Institutions (4 seats): DB Regio AG, Dresdner Verkehrsbetriebe AG, Verkehrsmuseum Dresden gGmbH, Verkehrsverbund Oberelbe GmbH
 Administration (2 seats)
-#
-
-Dresden. Die2qCu
 
 Action plan for climate neutrality
-
-0
-
-#
 
 # MOBIdialog 2035+: Mobilitätsdialog mit Vertretern aus Bürgerschaft, Politik, Verbänden und Fachplanung definiert Ziele, berät Maßnahmen und bereitet Entscheidung vor
 
@@ -3812,13 +2835,8 @@ Regular dialogue with companies is a strategic goal of the City of Dresden and p
 Sustainability round table with Dresden companies: The sustainability round table serves as an instrument for implementing the city's climate protection strategy (IEK) and the CCC as part of the EU city mission. The aim of the regulars' table is the exchange between municipal and business stakeholders (best practice examples, presentations, etc.), general commitment of companies to the climate neutrality target path, identification of relevant contributions to GHG reduction by individual companies, agreement on monitoring procedures, publicising progress towards climate neutrality).
 
 Information days for Dresden companies: As part of the long-established "Information Days for Dresden Companies" series of events, the topic of "Sustainability" was selected for the first time in 2023. An event on different topics will be held every quarter, with the topics being selected via a survey of Dresden's business community. The series of events organised by the City of Dresden's business service provides the city's companies with a unique opportunity to find out about topics relevant to climate protection and to enter into dialogue with each other. The series enables a
-#
-
-Dresden. Diezqcu
 
 Action plan for climate neutrality 2030
-
-#
 
 lively exchange of ideas, best practices and experiences between the participating companies. The focus is not only on providing information, but also on promoting interactive dialogue. Participants have the opportunity to learn from each other, discover synergies and develop sustainable solutions together. This framework is also intended to enable the CoD to identify the need for action and necessary support from the city administration in order to (re)organise the business location in a sustainable and future-proof manner. This series of events therefore not only emphasises the CoD's commitment to climate protection, but also strengthens networking and cooperation between local companies in order to jointly contribute to a sustainable and climate-friendly economy.
 
@@ -3839,13 +2857,8 @@ Support with social communication
 As part of the "Culture for Future" programme, the "Dresden Charter for Sustainability in the Cultural Sector" was created and signed by 37 municipal, state and independent cultural institutions. The central objective of this charter is to support a comprehensive sustainability transformation of the cultural sector. A sustainability strategy is to be successfully implemented in all of Dresden's cultural institutions by 2030. Significant changes must take place over the next three years within the Fields of action of energy efficiency/resource efficiency (themed year 2024), climate-friendly mobility (themed year 2025) and risk management (themed year 2026) in order to make cultural institutions fit for the future.
 
 This requires network management. This should look after the network and thus make the presence and explosive nature of the topic visible within the participating partners. It should continue, stabilise and further expand the cooperation and networking activities between the cultural institutions sponsored by the municipality and municipally funded stakeholders that have been initiated as part of "Culture for Future". Introduced exchange formats are to be further developed and the transfer of knowledge beyond Dresden is to be established.
-#
-
-Dresden. Diezqcu
 
 Action plan for climate neutrality 2030
-
-#
 
 The network management should also contribute to communication between the participating cultural institutions and their visitors and urban society and thus use cultural means to promote the necessary change in awareness and required individual behavioural changes, without which the climate crisis cannot be overcome. The network's work will be monitored and reported on continuously throughout its entire duration. All network content will be transferred to a digital platform and made available to the public for knowledge transfer. In addition, the network platform will bundle participation processes for projects and plans. It should offer the opportunity to present these ideas to a selected user group or the public in order to develop them further.
 
@@ -3865,15 +2878,8 @@ In order to actively satisfy the need for information on municipal heat planning
 ## Involvement of vulnerable groups
 
 According to the European Commission's "Fit for 55" climate package, part of the revenue from the emissions trading system for buildings and road transport is to be used as part of a climate social fund. Vulnerable groups are to be explicitly supported. At federal level, there is already a short study by the UBA, which offers a proposal for the definition and quantification of vulnerable households in Germany,
-#
-
-Dresden. Discqur
 
 Action plan for climate neutrality
-
-0
-
-#
 
 determines their CO2 cost burden and provides a cursory estimate of the investment requirements for building energy efficiency measures for vulnerable households. In Dresden, vulnerable groups and social aspects are considered in the context of municipal heat planning.
 
@@ -3886,15 +2892,8 @@ determines their CO2 cost burden and provides a cursory estimate of the investme
 |   | The City of Dresden is organising various information events to reach a broad public and enable dialogue on social aspects as well. A first so-called Heat Turning Dialogue I already took place on 15.04.2024, which covered a variety of topics including the affordability of hydrogen, for example. In addition, there will be on-site information events in parts of Dresden, particularly focussing on areas with critical framework conditions for a socially acceptable heat transformation. The preliminary conclusion will be the Heat Turning Dialogue II in the second quarter of 2025, at which the draft of the final municipal heat planning will be presented. In addition, the action portfolio (see point 5) must include information support, particularly for social aspects of the implementation of the municipal heat planning. The "Elo" energy pilot (see point 3) will be one instrument for this.  |
 |  3. setting up a municipal, digital energy guide to provide citizens with individual, localised information and options for action at the lowest possible threshold  |   |
 |   | The "Elo" energy pilot will be set up as a digital, interactive information platform in parallel to the heat planning process. Among other things, it will contain a digital energy twin that provides citizens with localised information. Using a kind of chatbot AI, it will also answer questions that are as personalised as possible, particularly on costs, subsidies, gradual conversions and refurbishment measures, in order to ensure affordability. It also refers the user to the right contact person from a strong local advisory network  |
-#
-
-Dresden. DicQCO
 
 Action plan for climate neutrality
-
-0
-
-#
 
 |   | for the relevant enquiry. These include the consumer advice centre, the Saxon Energy Agency (SAENA), energy consultants, funding and financing institutions and the heating network operator. The implementation of this action, which is also important from a social perspective, is made possible by the EU Pilot Call funding of the "EnAct4Cities" project. Implementation and continuation will be integrated into the municipal heat planning action programme (see point 5).  |
 | --- | --- |
@@ -3904,15 +2903,8 @@ Action plan for climate neutrality
 |   | On the basis of statistical distributions of income data, including from the municipal citizens' survey, we generate an indicator in combination with the determined current and future heating costs (see point 1) that forms the ratio between heating costs and statistical household income. The average for 2021 in Dresden is approx. 3.9%. In the future, it will rise to an average of around 4.5%, although there is a wide range. However, there are also individual buildings where this value rises to over 10%. Accordingly, the indicator is intended to help identify areas where a critical situation could arise from a social perspective as a result of the transformation of the heat supply.  |
 |  6. development of targeted actions for areas, buildings or, if applicable, groups of people in the target scenario that are assessed as critically or cost-intensively burdened on the basis of the indicator evaluation (see 4.)  |   |
 |   | When developing measures, which is an essential part of municipal heat planning, care is taken to ensure that social distortions are avoided as far as possible. In order to recognise this at an early stage, the spatially resolved "share of wallet" indicator from point 5 is used for orientation. This can indicate, for example, in which area a supplementary municipal subsidy for investments in a heating network or effective building refurbishment measures might be necessary or where the designation of future urban development areas, e.g. as part of ERDF funding or as a redevelopment area, makes sense. In addition, actions for the continuous provision of information to citizens, including on social aspects, as well as the implementation and continuation of the "Elo" energy pilot are included.  |
-#
-
-Dresden. Diezqur
 
 Action plan for climate neutrality
-
-0
-
-#
 
 # 4.2 Module C-2 Social Innovations
 
@@ -3924,15 +2916,8 @@ The following section presents some of the actions, projects and processes taken
 |  Citizens' laboratory as part of the future city process | Bürgerlabor Dresden is an interactive, central location in the heart of the city centre | Place for participation | City administration manages citizen lab | Rooms are available for exchange and joint learning | City administration and citizens engage in dialogue and can gain mutual understanding  |
 |  Mobile-O-Mat | Interactive digital systemic participation format | Involvement of the urban population in the development of actions | Created by the specialised office for mobility planning with relevant contractors, public relations office and citizens' laboratory | Input for urban actions in the area of transport | Obtaining a picture of the mood of the Dresden population, Creating cost awareness for actions  |
 |  Climate coaches | Personalised advice for citizens at home on possible CO2 savings | Population participation |  | Direct CO2 savings possible through specific advice | Cost efficiency for residents  |
-#
-
-Dresden. Diezqui
 
 Action plan for climate neutrality
-
-0
-
-#
 
 |  Neutral Path - Neighbourhoods | ENERGIZE (board game) | Population participation | Neutral Path project team - and residents from the Neutral Path neighbourhood | Families can be involved and sensitised to a relatively complex issue in a playful and low-threshold way | Understanding the connections can bring about a change in behaviour  |
 | --- | --- | --- | --- | --- | --- |
@@ -3951,15 +2936,8 @@ Future projects archive - Zukunftsstadt Dresden (zukunftsstadt-dresden.de)
 ![img-2.jpeg](img-2.jpeg)
 
 In addition to the implemented projects, the process has led to the development of structures for the city administration that are being continued today: Project funding from the municipal budget, the citizens' laboratory, the WerkStadtKoffer and the project factory.
-#
-
-Dresden. Diezqcu
 
 Action plan for climate neutrality
-
-0
-
-#
 
 The Bürger labor Dresden is an interactive, central location in the heart of the city centre: a transfer space for dialogue between the city administration and citizens. In this low-threshold and largely barrier-free space, new forms of participation and sustainable, innovative ideas for modern urban society are developed. The Bürger labor Dresden can be used free of charge by associations and initiatives.
 
@@ -3990,13 +2968,8 @@ accessibility and economic stability
 The Mobil-O-Mat simulates the effects of each decision and shows how these set goals are influenced. A certain value is stored for each action, which is paid into the four targets. Their status slowly changes colour in the display from grey to light green and dark green. The more completely the participants achieve the targets, the more balanced the planning for Dresden will be. With the Mobil-O-Mat, each participant has made a selection of measures and submitted their personal set of measures.
 
 Public participation with the Mobil-O-Mat is now complete. Over 6,600 people from Dresden and the region took the opportunity to playfully help shape the transport planning of the future. A quarter of
-#
-
-Dresden. Discqcu
 
 Action plan for climate neutrality 2030
-
-#
 
 the participants also provided valuable information on transport planning in the city of Dresden. In addition to the online participation of the Mobil-O-Mat, the Office for Urban Planning and Mobility offered six open discussions with transport experts in the Citizens' Lab. 25 people took advantage of the opportunity to play through the Mobil-O-Mat directly on site in the town hall, asking comprehension and technical questions and discussing current transport issues. The results of this public participation are incorporated into the Dresden Mobility Plan 2035+.
 
@@ -4015,13 +2988,8 @@ Since the fall of the Berlin Wall (1990), Dresden's neighbourhoods have develope
 The inner courtyard within Spreewalder Strasse, Prohliser Allee and Georg-Palitzsch-Strasse was selected as the pilot for an ideas workshop on residential courtyard design. Part of this residential courtyard is owned by the municipality and is available as an open space with development potential. The communal area in the inner courtyard is currently fenced off and not open to the public. An ideas workshop was held in September 2022 to design the inner courtyard.
 
 TU Dresden provided methodological support for the ideas workshop and used the digital tool U-Code. The inner courtyard and its features (e.g. large green areas) were digitally recorded and displayed on a screen for all participants to see during the ideas workshop. The aim of the event was to collect and develop ideas for the inner courtyard design together with the residents present and to visualise the results in a virtual 3D model at the same time. At the same time, actions for climate adaptation were examined.
-#
-
-Dresden. Discqcu
 
 Action plan for climate neutrality 2030
-
-#
 
 ![img-0.jpeg](img-0.jpeg)
 The residential courtyard from above © Stesad GmbH
@@ -4043,15 +3011,8 @@ The training and deployment of climate coaches in the city districts and localit
 # Foundation of a youth climate council by BUND
 
 As part of the updating of the energy and climate protection concept (IEK), school pupils were also involved. Based on this commitment, the idea was developed to formalise the participation of young people (14-17 years) and to establish a youth climate council that can contribute more effectively to the public discourse on climate protection. The project focuses on the intersection of promoting democracy, youth participation, climate protection and climate adaptation. The aim is to incorporate the ideas, wishes and visions of young people into the city's climate protection policy. The Youth Climate Council
-#
-
-Dresden. Diezqcu
 
 Action plan for climate neutrality
-
-0
-
-#
 
 builds on the work of climate working groups in schools, which are then represented on the Youth Climate Council. The project is supported by the Dresden Regional Group of the German Federation for the Environment and Nature Conservation (BUND), Saxony Regional Association. Discussions are currently being held with the city administration regarding the funding and implementation of the project.
 
@@ -4074,15 +3035,8 @@ Agora meeting in Dresden @ECSA
 As an innovative new tool for activating and involving citizens, a board game was created as part of the EU project NEUTRAL PATH: Energise.
 
 The aim is for players to engage with positive energy districts. By drawing various action cards, players learn behaviours and habits that save or waste energy. By using product and service cards on sustainable technologies or actions, players can actively transform their own district into a zero-energy district and win the game. The money available must also be used wisely.
-#
-
-Dresden. Diezqui
 
 Action plan for climate neutrality
-
-0
-
-#
 
 ![img-0.jpeg](img-0.jpeg)
 Figure 4-2View of the prototype (German) of the "ENERGIZE" board game
@@ -4101,15 +3055,8 @@ Climate protection can only succeed together. The City of Dresden is already wor
 ### Evaluation and monitoring
 
 As part of the further development of the monitoring and controlling concept of the City of Dresden, a set of indicators is being developed that enables a continuous and concrete review of the development of individual areas and is based on the indicators of the CCC and goes beyond the previous GHG inventory. The energy and GHG inventory already provides important indicators, especially when broken down into the commercial, industrial and private household sectors. This enables a detailed analysis of developments per consumer group, but must be further developed to include additional building blocks for describing green house gas neutrality in terms of the territorial principle. In the IEK, this topic is already described in the "Monitoring and controlling" package of measures. It states that monitoring and controlling must above all be systematised and transformed into a clear, continuous and consistent process. The indicators are updated annually together with the preparation of the GHG inventory and other monitoring and reporting instruments (e.g. resolution controls). This also includes digitising the monitoring of measures using a web-based climate protection platform.
-#
-
-Dresden. Die2qcu
 
 Action plan for climate neutrality
-
-0
-
-#
 
 # 6 Attachments
 
@@ -4138,15 +3085,8 @@ Deep geothermal energy,
 Electrode heating boiler,
 Heat accumulator,
 Electrolyser,
-#
-
-Dresden. Diezqcu
 
 Action plan for climate neutrality
-
-0
-
-#
 
 Conversion of existing CHP plants to hydrogen.
 
@@ -4168,15 +3108,8 @@ Table 6- : Overview of large heat pump projects, status
 |  TU Dresden | Water (computer waste heat) | 24.000 | 6.000 | 2.9 million € | 70% | Q4 2024  |
 |  National data centre | Water (computer waste heat) | 8.800 | 2.500 | 4.5 million € | 40% + operating subsidy | Q1 2028  |
 |  Kaditz (sewage treatment plant) | Water (treated wastewater) | 84.000 | 27.200 | 25 million € | 40% + operating subsidy | Q2 2030  |
-#
-
-Dresden. Diezqcu
 
 Action plan for climate neutrality
-
-0
-
-#
 
 Ring 30 - Waste treatment and recycling plant
 
@@ -4214,15 +3147,8 @@ As a result of the investigations carried out, a complete decarbonisation of Dre
 If all the decarbonisation potentials presented for district heating are implemented at a certain point in time, this results in a change in the district heating generation fleet over time. Illustration 6-2 shows the annual generation balance for the central district heating network in the years 2021 to 2045. The generation balance is the result of a deployment optimisation calculation, which uses a mathematical optimisation model to calculate the optimal operation of each individual generation unit based on the minimum total generation costs. In addition to technical plant parameters, the parameters included in the model are the hourly price time series of an energy industry scenario, the forecast development of heat demand and the temperature curves of environmental and waste heat sources.
 
 The future generation fleet of the centralised district heating network will be made up of various technologies. These will be utilised depending on the current electricity, CO_{2} and gas/hydrogen prices and thus work together optimally. When electricity prices are low, power-to-heat systems such as electrode boilers, large heat pumps and electrolysers can be operated economically and feed heat into the central district heating network. When electricity prices are high, the existing CHP plants, which will run on hydrogen in the long term, will be used primarily to provide heat in future. Heat from thermal waste utilisation, waste heat from industrial processes, deep geothermal energy and solar thermal energy can be provided independently of the electricity price due to low variable heat generation costs. By integrating large heat storage systems into the system, the generation and consumption of heat can be decoupled in terms of time, thus increasing the flexibility and efficiency of the district heating network.
-#
-
-Dresden. Die2qcu
 
 Action plan for climate neutrality
-
-0
-
-#
 
 Erzeugungsbilanz Dekarbonisierung
 ![img-0.jpeg](img-0.jpeg)
@@ -4234,13 +3160,8 @@ The path of  $\mathrm{CO}_{2}$  emissions can be calculated from the optimisatio
 Illustration 6-3CO $_2$  emissions in the baseline scenario and CO $_2$  emissions to be avoided in thousands of TCO $_2$  per year
 
 For a complete decarbonisation of Dresden's district heating by 2035 in this acceleration scenario, an additional 2,300 thousand tonnes of  $\mathrm{CO}_{2}$  must be saved compared to a base scenario (target year: 2045)
-#
-
-Dresden. Discqcu
 
 Action plan for climate neutrality 2030
-
-#
 
 (see Illustration 6-4). This corresponds to an additional saving of 300 thousand tonnes of  $\mathrm{CO}_{2}$  per year. Accelerated decarbonisation of district heating by 2035 is technically possible, but requires political and technical conditions that cannot be directly influenced. For example, the connection to the European Hydrogen Backbone and the availability of hydrogen at economically viable prices are already required in the early 1930s. Furthermore, industrial waste heat must be made available even more extensively for feeding into the district heating network and, last but not least, authorisation procedures must be significantly accelerated. In order to continue to guarantee the economic viability, social compatibility of the energy supply and security of supply, it can be assumed that additional funding will be required.
 
@@ -4250,15 +3171,8 @@ Illustration 6-4CO $_2$  reduction path in the acceleration scenario until compl
 # 6.1.2 Expansion and redensification
 
 In the more densely populated neighbourhoods of the city, where the potential for renewable energy is limited, the use of decarbonised district heating represents an important climate-neutral heating alternative to existing natural gas or heating oil solutions. This applies to buildings in existing district heating areas that still use a natural gas connection and to densely populated areas that are not yet part of the district heating supply area but could in principle have the prospect of being connected. A provisional district heating map with assumed expansion areas shows Illustration 6-5. This was used as the basis for the PotEEGeb study and determined that of around 13,300 buildings supplied with district heating in 2021, there is potential for growth of a good 4,000 buildings in the existing and expansion areas. As part of the heat transformation plan, SachsenEnergie AG is investigating which potential for densification and expansion can be realised for Dresden's district heating network. The results will be taken into account accordingly in municipal heat planning.
-#
-
-Dresden. Diezqcu
 
 Action plan for climate neutrality
-
-0
-
-#
 
 ![img-0.jpeg](img-0.jpeg)
 Illustration 6-5 District heating map with existing (red), expansion (green) and test areas (dark grey) of SachsenEnergie AG, as of October 2023
@@ -4272,13 +3186,8 @@ Dresden has the potential to completely decarbonise its district heating and it 
 The concept of climate neutrality is not clearly defined. Particularly in the municipal context, there are different definitions due to different accounting limits and local requirements compared to the global or national context.
 
 Definition of greenhouse gas (GHG) neutrality and climate neutrality:
-#
-
-Dresden. Diezqcu
 
 Action plan for climate neutrality 2030
-
-#
 
 Climate neutrality is a state in which human activities have no net effect on the climate system. These activities include climate-impacting emissions, actions aimed at removing greenhouse gases from the atmospheric cycle and human-induced activities that have regional or local biogeophysical effects.
 GHG-neutrality, on the other hand, "only" means net zero GHG emissions. Accordingly, the goal of climate neutrality requires a different and more ambitious policy than the goal of GHG-neutrality, as in addition to GHG emissions, all other effects of human activity on the climate must also be taken into account, e.g. land sealing by roads and settlements.
@@ -4299,15 +3208,8 @@ Rebound effects are minimised.
 Due to the city council's decision to focus the climate protection concept on a specific time target (V1818/22), it is necessary to deviate from the previously adopted definition in certain respects. This concerns the use of a  $\mathrm{CO}_{2}$  residual budget to describe the target. Due to the clear target for the year 2035 (alternatively 2040), the  $\mathrm{CO}_{2}$  residual budget can no longer be used as the sole target definition.
 
 GHG-neutrality in Dresden should therefore be described by the following parameters
-#
-
-Dresden. Die2qCu
 
 Action plan for climate neutrality
-
-0
-
-#
 
 the reduction of greenhouse gases by 95 Percent of the comparative level of GHG emissions from 1990 to the target year,
 a time target: 2035, alternatively 2040
@@ -4322,13 +3224,8 @@ Illustration 6-6Scheme for defining GHG-neutrality targets
 In addition, it is also important to set clear targets for the path to the goal, as compliance with the  $\mathrm{CO}_{2}$  residual budget and the achievement of the GHG neutrality target can only succeed if a significant gradual reduction is achieved starting from today.
 
 For information purposes, the  $\mathrm{CO}_{2}$  budget consumed by the time the target is reached is shown as part of the publication of the GHG inventory. The  $\mathrm{CO}_{2}$  budget varies with the number of inhabitants and is therefore a guideline value to show the approximation to the targets of the Paris Climate Agreement. In the IEK, the reduction path to be presented to achieve GHG-neutrality is checked for compliance with the  $\mathrm{CO}_{2}$  residual budget, but the  $\mathrm{CO}_{2}$  residual budget is not part of the target. Compliance with the  $\mathrm{CO}_{2}$
-#
-
-Dresden. Die2qCu
 
 Action plan for climate neutrality 2030
-
-#
 
 residual budget is to be ensured through the introduction of suitable, concrete interim targets. These are to be firmly defined as absolute GHG emissions and do not fluctuate with the number of inhabitants.
 
@@ -4355,13 +3252,8 @@ Table 6-1: Calculation of GHG-neutrality target values
 |  Historical values (starting point) |   |   |
 |  Population 1987/90 (p.e.) | 512.988 | GHG inventory calculation tables for CoD 1990 to 2016, internal document  |
 |  Energy-related GHG emissions 1987/90 per capita (without weather correction) in tCO2.eq/EW/a | 15,4 | GHG inventory calculation tables for CoD 1990 to 2016, internal document  |
-#
-
-Dresden. Diezqcu
 
 Action plan for climate neutrality 2030
-
-#
 
 |  Data for calculating the target values | Value | Source  |
 | --- | --- | --- |
@@ -4381,15 +3273,8 @@ There is no forecast for Dresden as to what unavoidable residual emissions would
 # Derivation of  $\mathrm{CO}_{2}$  budget
 
 In order to meet the Paris climate targets, humanity only has a certain budget of  $\mathrm{CO}_{2}$  emissions left (IPCC report,  $2018^{25}$ ). This budget is calculated for Germany according to the size of the population (SRU - German Advisory Council on the Environment) and a budget target for the CoD is derived from this. The lower limit for energy-related  $\mathrm{CO}_{2}$  emissions is 26.7 million tonnes to achieve a  $1.75^{\circ}\mathrm{C}$  target with a  $67\%$  probability. The upper limit for the energy-related  $\mathrm{CO}_{2}$  budget is approx. 41.6 million tonnes to achieve a  $1.75^{\circ}\mathrm{C}$  target with a  $67\%$  probability. Budgeting is based on the distribution methodology. While the global  $\mathrm{CO}_{2}$  budget was presented in the IPCC report in 2018 for different temperature rises and probabilities, the national budget distribution between the countries has not yet been bindingly
-#
-
-Dresden. Diezqcu
 
 Action plan for climate neutrality
-
-0
-
-#
 
 clarified. The countries therefore have a free hand in the interpretation. Different approaches are being discussed on how to deal with the budget consideration in relation to their own target formulation, which is primarily concerned with the question of fair distribution of the remaining budget. The German Advisory Council on the Environment recommends the population principle for Germany. The principle is based on the assumption that past emissions are not taken into account, but that the budget is assumed to be as ambitious as possible. Furthermore, an equal per capita emission right is assumed for every inhabitant of the earth. If the population increases, the budget would increase accordingly; if it decreases, the budget would decrease. This principle is also applied to Dresden. The calculated values can be found in Table 6-3 and Table 6-4.
 
@@ -4408,15 +3293,8 @@ Table 6-2: Determination of the share of energy and non-energy CO emissions2
 |  Agriculture | Non-energetic | 2.914 | 0,4 %  |
 |  Waste and wastewater | Non-energetic | - | 0,0 %  |
 |  Total |  | 755.362 | 100,0 %  |
-#
-
-Dresden. Discqur
 
 Action plan for climate neutrality
-
-0
-
-#
 
 Table 6-3Derivation of the  ${\mathrm{{CO}}}_{2}$  budget (upper limit) for Dresden
 
@@ -4438,13 +3316,8 @@ Table 6-4Derivation of the  ${\mathrm{{CO}}}_{2}$  budget (lower limit) for Dres
 | --- | --- | --- | --- |
 |  Global emissions budget 2018 | Gt | 420 | IPCC report25  |
 |  Germany's share of the world population | - | 1,10% | SRU, 2020, Achieving the Paris climate targets with the CO2 budget, Chapter 2  |
-#
-
-Dresden. Die2qCu
 
 Action plan for climate neutrality 2030
-
-#
 
 |  Emissions budget for Dresden with 1.5 °C target (and 67% target achievement) | Unit | Value | Source  |
 | --- | --- | --- | --- |
@@ -4467,15 +3340,8 @@ Private households: The sector includes all single and multi-person households (
 Industry: Manufacturing companies (industry and manufacturing trade) of manufacturing companies with 20 or more employees. This corresponds to the definition used by the statistical offices of the federal states to record energy consumption. It can be assumed that for other data providers (e.g. energy suppliers) the industry/manufacturing sector largely corresponds to the sectors as listed in the individual sections of the manufacturing sector.
 
 Municipal facilities: Defined here as the total energy consumption of municipal facilities. A differentiation between administrative buildings, municipal schools and day-care centres as well as street lighting
-#
-
-Dresden. Die2qcu
 
 Action plan for climate neutrality
-
-0
-
-#
 
 is desirable for the presentation of key figures in the municipal climate protection benchmark. This sector also includes other municipal buildings and the energy consumption of municipal infrastructure facilities, including water/wastewater, roads and waste.
 
@@ -4500,15 +3366,8 @@ Table 6- 7: Calculation steps for determining GHG emissions from livestock farmi
 |  CO2 equivalents in ton-nes per year (factor 25) | 2.788,28 | 88,34 | 232,42 | 7,90 | 766,80 | 0,86 | 3.885  |
 |  Ammonia emissions  |   |   |   |   |   |   |   |
 |  Average ammonia emis-sion factor (kg/pl/a) | 10 | 4 | 1 | 0 | 14 | 3 |   |
-#
-
-Dresden. Diezqui
 
 Action plan for climate neutrality
-
-0
-
-#
 
 In order to obtain a value for the emissions from the use of agricultural land, the calculation module was used that is included in the climate protection planner used by the CoD for balancing GHG at city level. By specifying the total area of agricultural land, GHG emissions can be determined on the basis of average values for Germany and the federal states. The area value of 9,473 ha results in 12,850 tonnes  $\mathrm{CO}_{2\mathrm{eq}}$  /a that are emitted by agricultural land use (excluding livestock farming).
 
@@ -4519,13 +3378,8 @@ In order to obtain a value for the emissions from the use of agricultural land, 
 There are various methods and observation areas according to which emission factors for greenhouse gases are determined. The CoD uses the emission factors provided by the climate protection planner for the city-wide GHG inventory. These are provided by ifeu on the basis of the GEMIS database and studies by the Federal Environment Agency via the climate protection planner[28]. These values are currently stored in the climate protection planner until 2021.
 
 Forecasts for the development of GHG emission factors are also required to map the development of GHG emissions. These forecasts come in part from the input of SachsenEnergie AG from its decarboni
-#
-
-Dresden. Diezqcu
 
 Action plan for climate neutrality 2030
-
-#
 
 sation concept and its underlying fundamental model, or the values are based on these forecasts. Specifically, this concerns the assumptions on the development of the German electricity mix and Dresden's district heating emissions.
 
@@ -4552,13 +3406,8 @@ Electricity power plant fleet 2045 (dena) (Table 7),  $13\mathrm{g / kWh}$  on t
 In the electricity mix factors used on the consumer side, no distinctions are made with regard to the withdrawal of electricity from different voltage levels. The influence of the conversion from MV to LV is therefore neglected in this analysis, as it will only have a minor influence on the overall emissions anyway.
 
 Linear interpolation is used between the above-mentioned base years.
-#
-
-Dresden. Discqcu
 
 Action plan for climate neutrality 2030
-
-#
 
 # Development of the natural gas emission factor
 
@@ -4580,15 +3429,8 @@ Table 6- : Shares of LNG in the gas mix according to ewi study and resulting GHG
 # Development of district heating emission factors
 
 For district heating, the developments in the final energy source mix of SachsenEnergie AG's decarbonisation concept were offset against the GHG emission factors used in the IEK. In order to take into account the proportionate GHG emissions for the provision of heat from CHP plants, an allocation factor was determined from the empirical data in the climate protection planner for the district heating generation plants. The district heating network losses, which were assumed to be  $15\%$ , were deducted from this factor. As a result, an allocation factor of  $57.47\%$  was used, which reflects the GHG emissions share of the heat supply from the CHP generation plants. For the sake of simplicity, this was also used for the
-#
-
-Dresden. Die2qcu
 
 Action plan for climate neutrality
-
-0
-
-O
 
 future hydrogen CHP plants. It was also assumed that the GHG emissions from the planned thermal waste utilisation of  $120\mathrm{gCO / kWh_{2eend}}$  would be eliminated for the target scenarios from 2040 and for the Ref_2045 scenario from 2045. The German electricity mix emission factors described above were applied to the electricity required by electrode boilers and large heat pumps in the district heating system. For solar thermal energy and deep geothermal energy in district heating generation, a simplified assumption of  $23\mathrm{gCO / kWh_{2eend}}$  was made. The district heating emission factors calculated from this are shown in Table 6-6 and in Table 6-7 can be seen.
 
@@ -4604,15 +3446,8 @@ Values for the GHG emission factors of renewable energies for 2018 and 2021 are 
 # Determination of hydrogen
 
 In the target scenarios and the Ref_2045 scenario, different GHG emissions are assumed for the use of hydrogen. These emission factors were also taken into account in the calculation of the district heating emission factors.
-#
-
-Dresden. Diezqui
 
 Action plan for climate neutrality
-
-0
-
-#
 
 For the IEK, the availability of imported green hydrogen from the MENA region was assumed for the target scenarios from 2030. For the reference scenario, on the other hand, it was assumed that only blue hydrogen will initially be available from 2035 and will develop into an equal mix of blue and green hydrogen by 2045. The emission factors used for the assessment are based on the results of an IINAS short study $^{32}$ . The GHG emission factors for hydrogen used for the various scenarios can be found in Table 6-5. This means that hydrogen already represents a significant GHG reduction compared to the specific GHG emissions of  $247\mathrm{gCO}_{2\mathrm{aq}} / \mathrm{kWh}$  associated with natural gas (pipeline natural gas).
 
@@ -4639,15 +3474,8 @@ Table 6-6 : Development of GHG emission factors for target scenarios
 |  Emission factor reference electricity mix | tCO2,eq/MW h | 0,544 | 0,472 | 0,134 |  |  | 0,015  |
 |  Emission factor local PV | tCO2,eq/MW h | 0,040 | 0,056 |  |  |  | 0,020  |
 |  Emission factor local wind energy | tCO2,eq/MW h | 0,010 | 0,018 |  |  |  | 0,005  |
-#
-
-Dresden. Diezqu
 
 Action plan for climate neutrality
-
-0
-
-#
 
 Table 6-7 : Development of GHG emission factors for reference scenario
 
@@ -4662,15 +3490,8 @@ Table 6-7 : Development of GHG emission factors for reference scenario
 |  Emission factor natural gas | tCO2.eq/MW h | 0,247 | 2025: 0,270 | 0,246 |  |  | 0,246  |
 |  Emission factor district heating | tCO2.eq/MW h | 0,160 | 0,155 | 0,142 | 0,123 | 0,082 | 0,021  |
 |  Emission factor other fossil fuels Heat utilisation | tCO2.eq/MW h | 0,318 |  |  |  |  | 0,318  |
-#
-
-Dresden. Diezqcu
 
 Action plan for climate neutrality
-
-0
-
-#
 
 # 6.5.2 Key figures for renewable energy potentials
 
@@ -4693,15 +3514,8 @@ Table 6-8 : Development of the key figures for RE potentials (wind and building-
 |  CAPEX PV noise barriers | €/kWP | 800,00 | 800,00 | 560,00 |  | 467,00 | 403,00  |
 |  CAPEX PV car parks | (kWh/a)/kWP | 1027,00 |  |  |  |  | 1027,00  |
 |  Yield factor PV Floating | (kWh/a)/kWP | 1113,72 |  |  |  |  | 1113,72  |
-#
-
-Dresden. Diezqui
 
 Action plan for climate neutrality
-
-0
-
-#
 
 Table 6-9 : Development of the key figures for RE potentials (wind and building-independent PV) for the reference scenario
 
@@ -4722,15 +3536,8 @@ Table 6-9 : Development of the key figures for RE potentials (wind and building-
 |  CAPEX PV Floating | €/kWP | 1000,00 | 1000,00 | 887,00 |  | 726,00 | 632,00  |
 |  CAPEX PV Agri | €/kWP | 750,00 | 750,00 | 665,00 |  | 545,00 | 474,00  |
 |  CAPEX PV Other | €/kWP | 665,00 | 665,00 | 590,00 |  | 483,00 | 420,00  |
-#
-
-Dresden. Diezqui
 
 Action plan for climate neutrality
-
-0
-
-#
 
 ## 6.6 Calculation of the reduction path in the IEK
 
@@ -4768,15 +3575,8 @@ CNG fossil
 Diesel
 Biogenic diesel
 LPG
-#
-
-Dresden. Diezqui
 
 Action plan for climate neutrality
-
-0
-
-#
 
 Electricity (transport application)
 
@@ -4809,15 +3609,8 @@ Table 6-10: Allocation of Fields of action to the sectors (BISKO methodology)
 In the evaluation in particular, the energy sources should be limited to the main GHG emitters so that the diagrams and tables are easy to read and understand. A higher degree of differentiation can be used in the calculation tool itself, but even there energy sources were summarised into meaningful groups (Table 6-11).
 
 The associated GHG emission factors for processing in the reduction path calculator were also calculated from the 2018 GHG inventory for the groups of energy sources formed - from the quotient of total GHG emissions and total final energy demand per group.
-#
-
-Dresden. Diezqui
 
 Action plan for climate neutrality
-
-0
-
-#
 
 Table 6-11Clustering of energy sources in the reduction path calculator for calculation model and evaluation
 
@@ -4843,15 +3636,8 @@ Table 6-11Clustering of energy sources in the reduction path calculator for calc
 |  Mobility  |   |   |   |   |   |
 |  Petrol | Petrol | BEN |  | Fossil fuels | BEN  |
 |  Biofuel | Petrol | BEN |  | Fossil fuels | BEN  |
-#
-
-Dresden. Diezqcu
 
 Action plan for climate neutrality
-
-0
-
-#
 
 To forecast the development of greenhouse gas emissions, the energy source hydrogen was introduced in addition to the energy sources set out in the climate protection planner. This is not yet available on a large scale and will only play a role from the 2030s onwards. Nevertheless, hydrogen is included in the reduction pathway.
 
@@ -4868,15 +3654,8 @@ In order to be able to map the substitution and reduction potentials pragmatical
 # Breakdown of final energy consumption by energy source
 
 For the use of heat pumps, the energy requirements are divided into environmental heat (renewable energy) and electrical drive energy (electricity). This is necessary because in future the greenhouse gas emission factor for the electricity purchased from the grid (German electricity mix) will be significantly lower than today. For the "heat pump" application, the electricity-related share of specific greenhouse gas emissions due to the electricity required for operation is comparatively high compared to other renewable energy applications such as wind, solar thermal and photovoltaics. In the case of wind, solar
-#
-
-Dresden. Diezqcu
 
 Action plan for climate neutrality
-
-0
-
-#
 
 thermal and photovoltaics, the influence of the electricity mix on the respective GHG emission factor comes primarily from the upstream chain (production, transport). For heat pump applications, the development of the GHG emission factor for the electricity mix is therefore taken into account by recording the energy flows separately as heating electricity and "emission-free" environmental heat.
 
@@ -4898,15 +3677,8 @@ Table 6-13 : GHG reduction path for the mobility sector in the reduction path ca
 ## Dealing with local renewable electricity producers
 
 By definition, the BISKO methodology applies the GHG emission factor of the German electricity mix to the final energy demand for electricity. From a physical/technical point of view, this is the correct approach, as a municipality can never be self-sufficient in terms of supply from the overarching electricity
-#
-
-Dresden. Die2qcu
 
 Action plan for climate neutrality
-
-0
-
-#
 
 grid. Due to the surplus or shortfall in electricity generation and fluctuating electricity demand, quantities of electricity are drawn from or fed into the higher-level grid at different times. This cannot be mapped in the municipal greenhouse gas balance, as the composition of the purchased electricity (specific GHG emissions) at the respective times for each municipality would also need to be known for a correct calculation.
 
@@ -4916,15 +3688,8 @@ The reduction path deviates from this agreement in that it is calculated using a
 Illustration 6-8System for taking local RE plants (local electricity mix) into account in the reduction path calculator
 
 In the calculation model, the yield values of the potential renewable energy systems (wind, building-independent PV and PV on/at buildings) are added together. The required reference electricity is the difference between the final energy demand for electricity and the yield of the local renewable energy systems for the respective year. The GHG emission factor of the local electricity mix is then calculated from the individual values. It should be noted that only the RE plants from the potential analysis are taken into account. Other electricity generation plants that exist in the urban area are included in the federal electricity mix. The electricity used by the building's own PV systems is included in the local electricity mix in the calculation model, as this corresponds to the system for calculating greenhouse gas emissions. The calculation method does not differentiate according to the voltage level at which the electricity is consumed. In reality, of course, this also has an impact on the loading and unloading of the electricity grid infrastructure. However, this cannot be mapped in this framework. However, in order to obtain indications of developments in relation to the electricity distribution grid, surplus electricity used by the company and surplus electricity fed into the grid are analysed and presented separately.
-#
-
-Dresden. Diezqcu
 
 Action plan for climate neutrality
-
-0
-
-#
 
 The reference electricity is valued with the GHG emission factor of the federal electricity mix. Theoretically, this factor would have to be adjusted for the yields from the renewable energy plants that are taken into account separately for the local electricity mix. However, the shift in the specific GHG emission factor of the federal electricity mix is negligible in the calculation model due to the magnitude of the local RE potential compared to the total electricity generation in Germany (0.3% of Germany's total net feed-in in 2022).
 
@@ -4934,15 +3699,8 @@ The local electricity mix factor (non-BISKO) is used to analyse the reduction pa
 Illustration 6-9 Comparison of the GHG emission factor for the local electricity mix and the federal electricity mix using the 2035 target scenario as an example
 
 This shows that the difference between the factors over time is small and therefore the non-BISKO method can be used for the evaluation. The visualisation of local efforts was given preference over adherence to the BISKO methodology due to its importance for the implementation of the energy transition. It should also be noted that this methodology is only used to calculate the GHG emitted and is not designed for forecasts. In future, both representations (BISKO with federal electricity mix and local electricity mix as a secondary balance) will be used to compare the reduction path with the current GHG inventory.
-#
-
-Dresden. Die2qcu
 
 Action plan for climate neutrality
-
-0
-
-#
 
 Diagram of the reduction path calculator system
 ![img-0.jpeg](img-0.jpeg)
@@ -5041,7 +3799,6 @@ Stefan Szuggat
 Head of City of Dresden Urban Planning Office
 |  ![img-0.jpeg](img-0.jpeg)  |   |   |
 | --- | --- | --- |
-7
 
 # 1. Why do we need a new SUMP now?
 
@@ -5091,7 +3848,6 @@ The city administration project group with representatives of the offices concer
 
 ![img-1.jpeg](img-1.jpeg)
 ↑ "fischelant mobil" poster on the Dresden Debate
-9
 
 ![img-0.jpeg](img-0.jpeg)
 ↑ New ways of involving the public on the SUMP 2025plus: the Dresden Debate Infobox
@@ -5150,7 +3906,6 @@ The Noise Reduction Master Plan (2008/draft 2014)
 → Population development in Dresden (red) and neighbouring districts (green) between 1990 and 2025
 
 ![img-1.jpeg](img-1.jpeg)
-1
 ![img-0.jpeg](img-0.jpeg)
 ↑ Urban and regional transport systems must be closely linked
 
@@ -5169,7 +3924,6 @@ Thirty-four sub-goals define these criteria in concrete terms. They form the bas
 → The sustainable modes of transport – rail, bus, walking and cycling – play a key role in achieving this SUMP
 
 ![img-1.jpeg](img-1.jpeg)
-2
 
 # 4. Defining the status of mobility and transport in Dresden
 
@@ -5251,7 +4005,6 @@ Klaus Kummer
 Member of the City of Dresden Senior Citizens Advisory Board
 
 ← Ongoing improvements to conditions on the main road network for cyclists and public transport (Pirnaischer Platz)
-4
 
 (Cars/1000 inhabitants)
 ![img-0.jpeg](img-0.jpeg)
@@ -5295,7 +4048,6 @@ $\uparrow$ Disabled-friendly facilities benefit all transport users
 ## Local public transport
 
 Also following a clear decline in the early 1990s, the share of public transport in the overall mix has stabilised again and is in fact increasing slightly at present. Given the current growth in population, it may be assumed that overall passenger numbers are set to increase significantly.
-5
 ![img-0.jpeg](img-0.jpeg)
 ← Development in average traffic volumes on the Elbe bridges in Dresden (individually and averaged over all bridges; Albertbrücke completely closed in 2014)
 
@@ -5323,7 +4075,6 @@ Further expansion of the S-Bahn in the Dresden conurbation, with connections to 
 The local public transport system has been constantly optimised
 The significance of cycling has increased considerably as a result of a change of image
 “哈，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，
-7
 
 ![img-0.jpeg](img-0.jpeg)
 
@@ -5339,7 +4090,6 @@ Train
 S-Bahn
 Tram
 Bicycle route
-8
 
 # 5. Deficits and challenges
 
@@ -5416,7 +4166,6 @@ IVAS Dresden
 
 ![img-2.jpeg](img-2.jpeg)
 $\downarrow$  Dresden's CarGoTram: innovative ideas for city logistics
-0
 
 # 6. How can we achieve the goals? Scenarios as pathways to the future
 
@@ -5451,7 +4200,6 @@ New S-Bahn stop in Stauffenbergallee and at Nossener Brücke
 Continued gradual expansion of foot-path and bicycle path network
 
 ![img-1.jpeg](img-1.jpeg)
-1
 Sharing not owning: new services also lead to changes in behaviour in Scenario C
 
 ![img-0.jpeg](img-0.jpeg)
@@ -5524,7 +4272,6 @@ Ensuring financial sustainability in the development of the transport system by 
 Improving the planning culture in Dresden by including stakeholders and the public in subsequent planning processes in a consensus-based manner (the production process of the SUMP has already generated real impetus in this area)
 
 ←Fig.:The modules of Dresden's mobility strategy
-3
 
 ![img-0.jpeg](img-0.jpeg)
 
@@ -5610,9 +4357,6 @@ The general financial conditions play a key role in the implementation of the me
 Ursula Strohbach
 Head of Traffic, IHK Dresden
 
-5
-6
-
 ![img-0.jpeg](img-0.jpeg)
 ↑ Alternative drive systems: Hybrid and electric engines help reduce the impact of traffic on the environment
 
@@ -5653,7 +4397,6 @@ Innovative ideas that promote cycling and walking are also called for (space-sav
 → Cyclists also need space: bicycle parking at Neustadt station
 
 ![img-2.jpeg](img-2.jpeg)
-7
 ![img-0.jpeg](img-0.jpeg)
 ← Tourist highlight, recreation, day-to-day cycling: functional mix on the Elbe bicycle path (Neustädter Elberadweg)
 
@@ -5678,7 +4421,6 @@ Local commuter
 Getting there quickly and safely in any weather: an efficient tram and bus system plays an important role in our day-to-day routines and helps us lead active lives. Cycling as an alternative: safe, clearly marked bicycle paths will help lots of people get to their destinations quickly and independently.
 
 Eric and Paul Thielemann (both 17)
-8
 
 # 9. Steps towards implementation
 
@@ -5718,7 +4460,6 @@ A large number of other areas of transport will be incorporated into this plan, 
 Prof. Reinhard Koettnitz
 Head of the City of Dresden Road Construction and Civil Engineering Office
 
-9
 “哈，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，
 # Video documentation
 
@@ -5762,7 +4503,6 @@ in der Beschlussfassung des Stadtrats vom 20.11.2014
 Auftraggeber: Landeshauptstadt Dresden
 Stadtplanungsamt
 Freiberger Straße 39
-Dresden
 
 Auftragnehmer: Ingenieurgruppe IVV GmbH &amp; Co. KG
 Oppenhoffallee 171, 52066 Aachen
@@ -5806,10 +4546,8 @@ Indikatoren für die Evaluierung 4
 Redaktionelle Änderungen 5
 
 ## TEIL A Grundlagen und Bestandsanalyse
-6
 
 ## 1. Grundlagen
-7
 
 Prozess der Verkehrsentwicklungsplanung in Dresden 7
 Leitziele der zukünftigen Verkehrsentwicklung 11
@@ -5817,7 +4555,6 @@ Struktur des VEP mit Mobilitätsstrategie und Handlungskonzept 12
 Informationen zum Beteiligungsprozess mit der „Dresdner Debatte“ zum VEP 14
 
 ## 2. Bestandsanalyse und Strukturprognosen
-7
 
 Vorliegende Dokumente und Materialien 17
 Wesentliche Analyseergebnisse 18
@@ -12130,8 +10867,6 @@ Office for Economic Development
 E-mail: neutralpath @dresden.de
 DRESDEN
 
-0
-
 NEUTRALPATH
 
 # PCED Pilotstandorte in Dresden
@@ -12237,8 +10972,6 @@ Amt für Wirtschaftsfoerderung
 E-Mail: neutralpath@dresden.de
 DRESDEN
 
-0
-
 NEUTRALPATH
 
 # PCED Pilotstandorte in Dresden
@@ -12264,38 +10997,25 @@ Commitment to climate protection and a liveable city of the future
 
 ![img-0.jpeg](img-0.jpeg)
 
-Dresden.
-Dresden
-
 The content of this document reflects only the author's view. The European Commission is not responsible for any use that may be made of the information it contains.
 
 NetZeroCities has received funding from the H2020 Research and Innovation
 Programme under the grant agreement n°101026510
-2
-
-Dresden. D1c2qcu
-
-Commitments to climate neutrality by 2030
 
 # Table of contents
 
-Table of contents... 2
-Introduction ... 3
-Goal: climate neutrality by 2030... 7
-The city's climate neutrality target for 2030... 7
-Additional benefits for the city through increased climate protection measures ... 10
-Strategic priorities or key measures ... 13
-Fields of action ... 13
-Priorities ... 15
-Key measures ... 15
-Process and principles in the CCC ... 18
-Declaration with signatures ... 21
-Signatory ... 22
-Statistics on the submitted commitments: ... 72
-#
-Dresden. D162960
-Commitments to climate neutrality by 2030
-O
+- Introduction
+- Goal: climate neutrality by 2030
+- The city's climate neutrality target for 2030
+- Additional benefits for the city through increased climate protection measures
+- Strategic priorities or key measures
+- Fields of action
+- Priorities
+- Key measures
+- Process and principles in the CCC
+- Declaration with signatures
+- Signatory
+- Statistics on the submitted commitments
 
 # 1 Introduction
 
@@ -12308,13 +11028,6 @@ The Saxon City of Dresden, located in the border triangle of Germany, the Czech 
 Today, Dresden is an important European city of culture. Its economy and population are developing dynamically. Also known as the "Gateway to Central Europe", it maintains close, historically grown relations with the neighbouring states to the east. It has the densest network of research institutions in Europe, is home to the only German university of excellence in the new federal states and is Europe's most important chip centre. Dresden is also an important location for "greentech" in Europe. A total of over 360 players in the state capital are involved in green technologies. These include around 70
 
 ¹Updating the climate protection targets of the City of Dresden/ Resolution A0011/19 https://ratsinfo.dresden.de/vo0050.asp?_kvonr=17764&amp;smclayout=d
-4
-
-Dresden. DLE2QGU
-
-Commitments to climate neutrality by 2030
-
-O
 
 research institutions and more than 270 companies: From start-ups, university spin-offs and SMEs to internationally active corporations. A greentech cluster that has already produced numerous internationally recognised technologies that also pay off economically: Double-digit increases in turnover are not uncommon in the local environmental technology companies. And in view of the diverse climatic challenges, strong growth can also be expected for greentech from Dresden in the coming years.
 
@@ -12329,12 +11042,6 @@ Climate protection played an important role in Dresden even before 2013. By join
 In 2020, the Dresden City Council instructed the Mayor to update and adapt the existing Integrated Energy and Climate Protection Plan from 2013 and to update it with new findings in its resolution (SR/007/2020) "Updating the climate protection goals of the City of Dresden". The City Council resolution also stipulated that "draft resolutions, in particular on construction projects, transport and energy
 图
 
-Dresden. DLE2QGU
-
-Commitments to climate neutrality by 2030
-
-O
-
 supply, must be examined for their impact on greenhouse gas emissions and the urban climate from 1 June 2020 and the results presented in the submission". The Environmental Agency (responsible for the area of urban climate) and the Climate Protection Unit (responsible for the topic of greenhouse gas emissions) have developed an assessment scheme accordingly and documented it in template V0657/20 "Climate impact assessment in draft resolutions".
 
 The Integrated Energy and Climate Protection Plan (IEK) was presented in January 2024. This was confirmed by the top management on 20 February 2024 and has now been submitted to the newly elected City Council on 9 June 2024 for political decision-making. In addition to the IEK, the City Council adopted the statutes for a new Climate Advisory Board of the City of Dresden at its meeting on 18 April 2024. The Climate Advisory Board will advise the City Council, its committees and the Mayor on all issues relating to climate protection and adaptation to climate change in the City of Dresden. It will be made up of representatives of the City Council as well as knowledgeable citizens from various relevant stakeholders in Dresden.
@@ -12346,10 +11053,6 @@ International networking has always played a key role in local development. Earl
 In 2020, Dresden joined many POLIS partners in committing to the European climate targets in the transport sector. In 2020, Dresden was one of the signatory cities of the "Pledge Letter", a declaration of intent for the local implementation of the "Green Deal". This was presented to the Vice-President of the European Commission, Frans Timmermans. With the POLIS Pledge Letter, the cities reaffirmed that the climate protection targets and the 55 Percent reduction in emissions required by 2030 can only be achieved if the transition to sustainable urban mobility is accelerated and substantial changes are implemented at many levels. On 21 March 2019 in Brussels, the EU Commissioner for Transport, Violeta Bulc, awarded the City of Dresden second place (together with Basel) in the "SUMP Award", the European prize for sustainable mobility. Dresden had applied for this award with its transport development plan and its multimodal priorities. Back in 2015, the City of Dresden was recognised for its strategic transport development planning with an emphatic award from the EU Commission for Transport. The Commissioner for Transport of the European Union, Ms Violeta Bulc, also honoured the work done in drawing up the transport development plan (VEP) of the City of Dresden and its contents in Brussels.
 
 The CoD has been a member of the Covenant of Mayors since 2016 and reports via the MyCovenant platform as part of the Sustainable Energy and Climate Action Plan (SECAP). This takes into account Dresden's integrated plans for climate protection, climate change adaptation and a secure, sustainable and affordable energy supply. As part of the current updates of the climate protection concept and the climate change adaptation concept, a joint report (SECAP) will be uploaded to MyCovenant for the end of 2024.
-#
-Dresden. DLE2QCU
-Commitments to climate neutrality by 2030
-O
 
 In January 2022, the Dresden City Council voted in favour of participating in the EU Green City Accord. With the Landscape Plan, the Integrated Urban Development Concept (INSEK), the Clean Air and Noise Action Plan, the Waste Management Concept and others, the City of Dresden has adopted and in some cases already implemented key resolutions that correspond in principle to the objectives of the Green City Accord and now reports regularly to the EU as part of the EU Green City Accord monitoring programme.
 
@@ -12358,10 +11061,6 @@ Dresden has already successfully participated in European collaborative projects
 At the beginning of 2022, the City of Dresden successfully applied for the EU city mission "100 climate neutral and smart cities by 2030". Participation in the EU city mission is a continuation of efforts to combine, test and implement innovation-driven approaches at local and international level. Existing potential is to be fully utilised and, together with partners from the public, science and business, key projects and decisive steps towards climate neutrality are to be taken.
 
 The city's goal of climate neutrality is not an end in itself. The consequences of global warming and climate change are also being felt in Dresden. By reducing greenhouse gases, protecting and strengthening the local ecosystem, expanding renewable energy and reducing dependence on gas, the city of Dresden aims to be robust and resilient for the future.
-#
-Dresden. D162960
-Commitments to climate neutrality by 2030
-O
 
 # 2 Goal: climate neutrality by 2030
 
@@ -12385,13 +11084,6 @@ Dependencies on other levels (e.g. existence of green hydrogen infrastructure, f
 Motion A0011/19 (SR/007/2020) "Updating the climate protection targets of the City of Dresden"
 
 City Council resolution on V1818/22 (SR/045/2022) of 15 December 2022 "Decision on the admissibility of the DresdenZero citizens' petition: Climate neutrality for Dresden by 2035
-#
-
-Dresden. D162960
-
-Commitments to climate neutrality by 2030
-
-#
 
 attributable.
 
@@ -12403,13 +11095,6 @@ Figure 1Reduction pathway to reduce greenhouse gases for Dresden by 2030 (interi
 The interim targets mentioned serve to ensure a sufficient reduction in greenhouse gases to limit global warming in accordance with the Paris Climate Agreement and to take into account the requirements of the Dresden Zero citizens' initiative with a high level of ambition in achieving GHG-neutrality.
 
 The reduction in greenhouse gases shown here is still subject to a decision by the city council. The path is therefore to be regarded as subject to this decision.
-#
-
-Dresden. D1c2qcu
-
-Commitments to climate neutrality by 2030
-
-#
 
 Table 1: Overview of the interim targets of the reduction path of the target to achieve GHG-neutrality in Dresden
 
@@ -12427,13 +11112,6 @@ On the one hand, this involves investments totalling billions and the creation o
 All of these developments are caught between the conflicting priorities of climate-neutral and resource-conserving development. Not least because of this, Dresden is a unique testing ground in Europe for the compatibility of central European objectives: Strengthening technological competitiveness and security of supply while simultaneously implementing the Green Deal and a climate-neutral smart Europe.
 
 Further and more detailed information on the climate protection strategy can be found in the Action Plan and in the CCC's Investment Plan.
-#
-
-Dresden. Dc2qcu
-
-Commitments to climate neutrality by 2030
-
-#
 
 # 2.2 Additional benefits for the city through increased climate protection measures
 
@@ -12445,8 +11123,6 @@ Climate protection aims to minimise the negative effects of climate change as fa
 |  Reduction of climate impact costs - ecological benefits according to the damage cost approach | The damage cost approach published by the Federal Environment Agency (UBA) estimates the amount of damage caused to society by GHG emissions and the resulting climate change. For GHG emissions emitted in 2022, this damage cost rate is estimated by the UBA at 237 euros/t CO2 and for 2050 at 286 euros/t CO2, but with a higher weighting of the prosperity of current generations compared to that of future generations (time preference 1 Percent). If the prosperity claim were weighted equally (0 Percent time preference), the cost rate for 2050 would rise to 865 Euro/t CO2. This clearly shows that not only the achievement of GHG-neutrality itself, but also the total emissions still emitted until GHG-neutrality is achieved cause considerable damage and must therefore be included in the analysis. Based on the damage cost rates for a higher weighting of the current level of prosperity (time preference 1 Percent) and in comparison between the target and the reference scenario, the acceleration of the federal target to achieve GHG-neutrality in 2045 alone results in a reduction in the damage amount of around 3.2 billion euros by achieving GHG-neutrality in 2040 and meeting the CO2 budget for the 1.75 °C target.  |
 |  Financial benefits and increased self-sufficiency | In addition to the benefits from Dresden's overall perspective, the operation of private renewable energy systems, such as PV roof or  |
 |   | energy systems, is also a key factor in the development of GHG. This is because the energy system is not only the source of energy, but also the source of energy. This is because the energy system is not only the source of energy, but also the source of energy. This is because the energy system is not only the source of energy, but also the source of energy. This is because the energy system is not only the source of energy, but also the source of energy. This is because the energy system is not only the source of energy, but also the source of energy. This is because the energy system is not only the source of energy, but also the source of energy. This is because the energy system is not only the source of energy, but also the source of energy. This is because the energy system is not only the source of energy, but also the source of energy. This is because the energy system is not only the source of energy.  |
-#
-Dresden. DLE200U
 Commitments to climate
 neutrality by 2030
 C
@@ -12458,10 +11134,6 @@ C
 |  Location advantage | Climate protection is playing an increasingly decisive role as a location factor for municipalities, particularly in terms of attracting large companies. Companies are attaching more and more importance to sustainable business practices and favour locations that offer a future-proof, climate-friendly infrastructure. Municipalities that pursue clear climate protection strategies and implement actions to reduce greenhouse gas emissions are signalling a willingness to innovate and a sense of responsibility. This can help to strengthen their image as an attractive business location and increase their competitiveness in global competition. Companies also benefit from sustainable location development, as it makes it easier for them to achieve their own climate targets and sustainability requirements. By creating climate-friendly framework conditions, a municipality not only secures its ecological future in the long term, but also attracts investors and companies that are active in sustainable growth markets.  |
 |  Increasing the security of supply | Dresden is currently over 95 Percent dependent on fossil fuels, especially natural gas, for its heat supply. This dependence on imports harbours financial and supply-related risks. Even if Dresden will continue to be dependent on energy imports, the aim is to increase resilience to external shocks through reduction and diversification. The IEK's proposed target path envisages reducing the dependence on  |
 
-1
-#
-Dresden. D162960
-Commitments to climate neutrality by 2030
 C
 
 Advantages | Description of the
@@ -12470,9 +11142,6 @@ Democratisation of the energy supply | The energy transition has the potential t
 Health and quality of life | Last but not least, climate protection and climate change adaptation measures have an impact on the health, mortality and quality of life of the urban population. As a result of global warming, heat stress in the summer months is increasing enormously for residents in densely populated neighbourhoods. In order to prevent health consequences, the City of Dresden is currently drawing up a heat action plan. This takes into account comprehensive intervention measures for health protection. Behavioural and situational preventive actions are intended to reduce heat stress and UV exposure and prevent damage to health. Dresden is working on a heat action plan for this purpose.
 Increasing weather changes and natural disasters also have an impact on the quality of life and health of the city's inhabitants. Climate protection is intended to mitigate the effects of climate change as far as possible.  |
 
-2
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
 ^{ a
@@ -12493,11 +11162,8 @@ In addition, the city has the potential to generate around 715 GWh of electricit
 The Fields of action "Expansion of renewable energies in the area" includes concrete potential analyses, in particular for PV systems and wind turbines, in order to increase generation from renewable energies. The corresponding analyses revealed potentials of 409 GWh/a for PV independent of buildings and 315 GWh/a for the use of wind energy. The building-independent PV potential is made up of photovoltaic systems on open spaces, car parks, agri-PV (combined use of agricultural land for farming and electricity generation) and floating PV (PV systems on bodies of water).
 3 | Mobility
 For the transport sector (Fields of action: mobility), which accounts for around 24 Percent of Dresden's GHG emissions, an in-depth analysis of potential, including the necessary
-#
-Dresden. DLE200U
 Commitments to climate
 neutrality by 2030
-O
 
 |   | development of measures, will be carried out as part of the Dresden Mobility Plan 2035+ (DMP 2035+). The necessary link between the two concepts will be ensured via a target for the transport sector in the reduction pathway of the IEK, which will be incorporated into the development of the DMP 2035+.  |
 | --- | --- |
@@ -12514,9 +11180,6 @@ O
 |  9 | Overarching organisation and control  |
 |   | On the one hand, the Fields of action of overarching organisation and control include proposals for effective climate protection work in the city administration. For example, the coordination centre approved by the city council will in future bring together issues relating to the city's  |
 
-4
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
 ^{ a
@@ -12546,11 +11209,8 @@ Over the next two to three years, the following key measures will be realised or
 |  1 | Building energy supply  |
 |  2023-2025 | Municipal heat planning  |
 |   | With municipal heat planning, CoD has set itself the goal of making the complex transformation process towards an affordable, secure and climate-neutral heat supply manageable and creating the highest possible degree of planning security for all stakeholders involved. Based on the local conditions, municipal heat planning  |
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 |   | should show how the heat supply can be gradually converted to the use of renewable energies or unavoidable waste heat in the future. The transition to a climate-neutral heat supply should be described as specifically as possible for each location.  |
 | --- | --- |
@@ -12563,12 +11223,6 @@ O
 |   | The prerequisite for the development of the wind energy potential in Dresden is the creation of the necessary legal planning basis as well as the information and participation of the population to create acceptance. In addition, a feasibility study on urban wind energy is planned by the Dresden Sports Facilities Authority. The Eigenbetrieb Sportstätten manages over 70 sports facilities (buildings, some with several outdoor sports facilities) in the City of Dresden, where small urban wind turbines could potentially be installed to contribute to the energy supply at the sports facilities. The installation of PV systems on municipal open spaces will also be promoted as part of the city's PV campaign. Among other things, pilot projects in the field of agri-PV are to be examined as part of the leasing of municipal land to third parties.  |
 |  3 | Transport (Fields of action: mobility)  |
 |  2023-2026 | Further development and finalisation of the Dresden Mobility Plan 2035+ (DMP35+)  |
-
-6
-#
-Dresden. D1c2qcu
-Commitments to climate neutrality by 2030
-O
 
 |   | The Dresden Mobility Plan 2035+ is a strategy for mobility and transport development in Dresden and continues the Transport Development Plan 2025plus adopted by the City Council in 2014. It is intended to be the roadmap for the future to enable safe, flexible, convenient and climate-friendly mobility. The forward-looking plan is being developed for the entire city and combines a wide range of concepts and resolutions passed by the city council. These include the integrated climate protection concept, the clean air plan and the cycling concept. In addition, the concept is being drawn up with extensive public participation.  |
 | --- | --- |
@@ -12584,13 +11238,6 @@ O
 # Key stakeholders:
 
 In order to achieve the goal of green house gas neutrality, the city administration is dependent on many players and their cooperation. As the operator of the district heating network in Dresden, SachsenEnergie AG and SachsenNetze for the gas and electricity network are involved with the aim of dovetailing infrastructure planning as closely as possible in the process of creating the IEK and municipal heat planning. The involvement and integration of a large number of other important players (stakeholders) is also relevant. These include the city council and city districts as well as local councils, companies, banks, representatives from industry and trade, representatives from the scientific community, trade unions, associations, initiatives, the housing sector, property owners, energy cooperatives, banks and citizens. These stakeholders are already involved in a wide range of formats, processes and structures in the City of Dresden (see action plan). As part of the CCC and future climate protection work in Dresden, existing participation formats with stakeholders in the city of Dresden will be docked onto, further networked and made visible. The focus is on cooperation with stakeholders who are expected to have the greatest potential for CO2 savings.
-#
-
-Dresden. Dc2qcu
-
-Commitments to climate neutrality by 2030
-
-#
 
 # 4 Process and principles in the CCC
 
@@ -12618,13 +11265,6 @@ Kooperationspartner unterschreiben eine Selbstverpflichtung zum Klimaschutz; Koo
 Unterstützende können auf Eigeninitiative hin relevante Beiträge zum Klimaschutz in den Prozess einreichen; im Unterschied zu den Kooperationspartnern handelt sich dabei um individuelle Beiträge, die die Unterstützenden eigenständig umsetzen können
 
 Possibly graphics - actors level B
-#
-
-Dresden. DLE2QCU
-
-Commitments to climate neutrality by 2030
-
-O
 
 The adoption of the IEK and the creation of the CCC are closely linked. A crucial point here is that public relations work on the climate protection strategy and the CCC can only begin once the IEK has been officially adopted by the city council. The first step is to involve relevant stakeholders before the actions are presented to the wider public. Following the resolution, a targeted campaign will be launched in order to obtain further, low-threshold commitments from the urban community (Level C - supporters). These actions are planned for the update of the Climate City Agreement in 2026. Further contributions and commitments from other stakeholders (core team, cooperation partners) are also expected.
 
@@ -12641,13 +11281,6 @@ Transparency of climate protection measures and their effectiveness is an import
 The CoD already works with the state and federal government in various forums and at various levels. Specifically, the CoD is active in the German Association of Cities and also in Saxon municipal associations and representative bodies. There is informal cooperation with the other German mission cities via the mission process, with regular jour fixe meetings. The German mission cities appear together under the label "stronGERcities". As a mouthpiece for the EU and federal level, this cooperation between the mission cities is to be stabilised. In addition, Dresden and Leipzig are already exchanging information with the state level on an informal level in order to jointly process experiences and findings from the European city mission process and make them effective for Saxony.
 
 # 6 Learning and capacity building
-#
-
-Dresden. Dc2qcu
-
-Commitments to climate neutrality by 2030
-
-#
 
 The transformation to a climate-neutral and resilient city of the future is a mammoth task. This requires expertise and knowledge, the search for new solutions and the acquisition of new knowledge about data, impacts, systems, players and new business models. In addition to an internal training programme, which is increasingly focusing on climate protection and climate change adaptation, the City of Dresden is also involved in intensive learning and capacity building as part of various European projects. In the EU project Neutral Path, the City of Dresden is an active partner in the capacity building programme. Through the EnAct4CleanCities pilot project, Dresden is actively exchanging ideas with the other Saxon mission city of Leipzig in order to exchange information on the modalities, challenges and possible solutions in the field of municipal heat planning. An exchange of knowledge with Saxon and international municipalities/cities is also planned as part of this pilot project. Acquired knowledge from the work on climate protection and within the framework of the EU City Mission will also be passed on in exchange with Ukrainian pilot cities as part of the Horizon Europe project U_CAN. These diverse exchange platforms enable extensive learning and adaptation of own solutions and strategies.
 
@@ -12657,10 +11290,6 @@ The CCC is a living document, just like the framework for action set out in the 
 
 ![img-0.jpeg](img-0.jpeg)
 Figure 3Diagram of the update process for the CCC
-#
-Dresden. D1c2qcu
-Commitments to climate neutrality by 2030
-O
 
 # 5 Declaration with signatures
 
@@ -12671,12 +11300,6 @@ Name
 Signature
 
 Mayor
-
-1
-#
-Dresden. D1c2qcu
-Commitments to climate neutrality by 2030
-O
 
 # 6 Signatory
 
@@ -12690,11 +11313,8 @@ Below is an overview of the contributions from urban society. These were submitt
 |  Volkswagen Sachsen GmbH - DIE GLAESERNE MANUFAKTUR | Manufacturing industry | Limited liability company (GmbH) | We have already made a voluntary commitment to become climate neutral**. To this end, we have created/are currently creating/will create a climate protection strategy that contains a plan of action and the path to green house gas neutrality. | X | X | X | X | - | X | -  |
 
 Areas of action for Dresden's stakeholders: 1: Buildings and energy efficiency2: Mobility3 : Waste and wastewater4 : Procurement, product manufacturing and services5 . Green infrastructure 6: Education - Communication - Society7 : Research, development and innovation
-#
-Dresden. D1c2qc1r
 Commitments to climate
 neutrality by 2030
-O
 
 |  Organisation | Economic sector / field of activity | Legal form | Climate protection strategy | Areas of action in climate protection^{6}  |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -12704,13 +11324,9 @@ O
 |  Institut für Luft- und Kältetechnik gemeinnützige Gesellschaft mbH | Science, research, development and education | Other | We have not yet committed ourselves to becoming climate-neutral, but we see climate protection and sustainability as a high priority and support the city's objectives with our contribution. | X | X | - | - | X | X | X  |
 |  MESSE DRESDEN GmbH | unpublished information | Limited liability company (GmbH) | We have not yet committed ourselves to becoming climate-neutral, but we see climate protection and sustainability as a high priority and support the city's objectives with our contribution. | X | X | X | X | X | X | X  |
 
-3
-#
-Dresden.
 D1c2qc1r
 Commitments to climate
 neutrality by 2030
-O
 
 |  Organisation | Economic sector / field of activity | Legal form | Climate protection strategy | Areas of action in climate protection^{6}  |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -12720,12 +11336,8 @@ O
 |  GEH8 Kunst Raum Ateliers | Health, culture and sport | Other | We have not yet committed ourselves to becoming climate-neutral, but we see climate protection and sustainability as a high priority and support the city's objectives with our contribution. | X | X | X | - | X | X | X  |
 |  SG Dynamo Dresden e.V. | Health, culture and sport | registered association (e.V.) | We have not yet committed ourselves to becoming climate-neutral, but we see climate protection and sustainability as a high priority and support the city's objectives with our contribution. | - | X | X | X | - | X | -  |
 
-4
-#
-Dresden. D1c2qc1r
 Commitments to climate
 neutrality by 2030
-O
 
 |  Organisation | Economic sector / field of activity | Legal form | Climate protection strategy | Areas of action in climate protection^{6}  |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -12735,12 +11347,8 @@ O
 |  STESAD GmbH | Construction and housing industry | Limited liability company (GmbH) | We have already made a voluntary commitment to become climate neutral**. To this end, we have created/are currently creating/will create a climate protection strategy that contains a plan of action and the path to green house gas neutrality. | X | X | - | - | X | X | -  |
 |  Musaik - Grenzenlos musizieren e.V. | unpublished information | registered association (e.V.) | We have not yet committed ourselves to becoming climate-neutral, but we see climate protection and sustainability as a high priority and | - | X | X | X | - | X | -  |
 
-5
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 |  Organisation | Economic sector / field of activity | Legal form | Climate protection strategy | Areas of action in climate protection^{6}  |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -12751,12 +11359,8 @@ O
 |  VON ARDENNE Holding SE & Co KGaA | Other | Other | We have not yet committed ourselves to becoming climate-neutral, but we see climate protection and sustainability as a high priority and support the city's objectives with our contribution. | X | X | X | - | - | X | -  |
 |  GlaxoSmithKline Standort Dresden | Health, culture and sport | Public limited company (AG) | We have already made a voluntary commitment to become climate neutral**. To this end, we have created/are currently creating/will | X | X | X | X | X | X | X  |
 
-6
-#
-Dresden. D1c2qc1r
 Commitments to climate
 neutrality by 2030
-O
 
 Organisation | Economic sector / field of activity | Legal form | Climate protection strategy | Areas of action in climate protection^{6}
 1 | 2 | 3 | 4 | 5 | 6 | 7
@@ -12767,9 +11371,6 @@ JOYNEXT GmbH | Science, research, development and education | Limited liability 
 Technische Universität Dresden | Science, research, development and education | Corporation, foundation or institution | We have already made a voluntary commitment to become climate neutral**. To this end, we have created/are currently creating/will create a climate protection strategy that contains a plan of action and the path to green house gas neutrality.
 TARGET YEAR: 2035 | X | X | X | X | X | X | X  |
 
-7
-#
-Dresden. D1c2qc1r
 Commitments to climate
 neutrality by 2030
 C
@@ -12782,12 +11383,8 @@ C
 |  Dresdner Sportclub 1898 e.V. | Health, culture and sport | registered association (e. V.) | We have not yet committed ourselves to becoming climate-neutral, but we see climate protection and sustainability as a high priority and support the city's objectives with our contribution. | X | X | - | - | - | - | -  |
 |  Leibniz-Institut für ökologische | Science, research, development and education | registered association (e. V.) | We have not yet committed ourselves to becoming climate-neutral, but we see climate protection and | X | X | X | X | X | X | X  |
 
-8
-#
-Dresden. D1c2qc1r
 Commitments to climate
 neutrality by 2030
-O
 
 |  Organisation | Economic sector / field of activity | Legal form | Climate protection strategy | Areas of action in climate protection^{6}  |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -12797,12 +11394,8 @@ O
 |  Dresden Zero | Civil society and NGOs | Other | We have not yet committed ourselves to becoming climate-neutral, but we see climate protection and sustainability as a high priority and support the city's objectives with our contribution. | - | - | - | - | - | X | -  |
 |  Advanced Mask Technology Center GmbH & Co. KG | Manufacturing industry | Limited liability company & limited partnership (GmbH & Co. KG) | We have already made a voluntary commitment to become climate neutral**. To this end, we have created/are currently creating/will create a climate protection strategy that contains a plan of action and the | X | X | X | X | - | X | -  |
 
-9
-#
-Dresden. D1c2qc1r
 Commitments to climate
 neutrality by 2030
-O
 
 Organisation | Economic sector / field of activity | Legal form | Climate protection strategy | Areas of action in climate protection^{6}
 1 | 2 | 3 | 4 | 5 | 6 | 7
@@ -12813,9 +11406,6 @@ Industrie- und Handelskammer Dresden | Associations and representations | Corpor
 DAS Environmental Expert GmbH | Manufacturing industry | Limited liability company (GmbH) | We have already made a voluntary commitment to reduce our greenhouse gas emissions by X % or tonnes by the year X. To this end, we have created / are currently creating / will create a climate protection strategy that contains a plan of action to achieve the target. TARGET YEAR: 2030 | X | X | X | - | - | X | X
 Vonovia | Construction and housing industry | Public limited company (AG) | We have already made a voluntary commitment to reduce our greenhouse | X | - | - | - | - | X | X
 
-0
-#
-Dresden. D1c2qc1
 Commitments to climate
 neutrality by 2030
 C
@@ -12827,11 +11417,8 @@ C
 |  Ev.-Luth. Kirchenbezirk Dresden Mitte | Other | Other | We have not yet committed ourselves to becoming climate-neutral, but we see climate protection and sustainability as a high priority and support the city's objectives with our contribution. | X | - | X | X | - | X | -  |
 |  Infineon Technologies Dresden GmbH & Co. KG | Manufacturing industry | Limited liability company & limited partnership (GmbH & Co. KG) | We have already made a voluntary commitment to become climate neutral**. To this end, we have created/are currently creating/will create a climate protection strategy that contains a plan of action and the path to green house gas neutrality. TARGET YEAR: 2030 | X | X | X | X | X | X | X  |
 |  Staatsschauspiel Dresden | Health, culture and sport | Other | We have already made a voluntary commitment to become climate neutral**. To this end, we have created/are currently creating/will create a climate protection strategy that contains a plan of action and | - | X | - | - | - | X | -  |
-#
-Dresden. D1c2qc1r
 Commitments to climate
 neutrality by 2030
-O
 
 Organisation | Economic sector / field of activity | Legal form | Climate protection strategy | Areas of action in climate protection^{3}
 1 | 2 | 3 | 4 | 5 | 6 | 7
@@ -12847,23 +11434,16 @@ The following table shows the actions mentioned by the Dresden stakeholders who 
 Name of the signatory (organisation) | actions
 Volkswagen Sachsen GmbH - DIE | See files in the attachment under "Public relations for the EU mission".
 In German: "regenerate+ Sustainability Strategy Volkswagen Group"  |
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 |  Name of the signatory (organisation) | actions  |
 | --- | --- |
 |  GLAESERNE MANUFAKTUR | The attachment in English is also already published on the Volkswagen Group website. Please select German or English for your documents.  |
 |  Novaled GmbH | The installation of PV systems on the existing roof areas in the order of 180 kWp by 12/2025 is planned for full self-consumption. A further 136 kWp are to be installed on carports yet to be built as so-called solar carports. After full commissioning, this action will lead to a total reduction of approx. 127 tCO2/a from 2028. GHG savings of at least 5%/year are already being achieved within energy management compared to the average (2020-2023). Compared to the base year 2020, 194 tonnes of CO2 have already been saved in Scope 1 and 2. Further actions have already been taken and are in line with our values. As part of Dresden's industrial landscape, Novaled is committed to supporting the important topic of climate protection as part of sustainability and the associated energy transformation. We have supported the Dresden Sustainability Round Table from the very beginning and have been happy to share our experiences, plans and ideas with the other industrial partners. This network is an important communication forum because we can only accomplish this mammoth task together. As a research institution and leading provider of organic materials developed in-house and innovative technologies for premium OLEDs for displays, luminaires and OSCs, we see it as our duty to not only focus on the performance of the end product right from the start of its life cycle, but also to accompany its manufacturing process from the laboratory specification through to production. We see our responsibility as extending beyond the factory gate and also take this into account in our supply chain. Novaled and our suppliers and business partners are equally committed to protecting the environment and the climate. This is anchored in our Code of Conduct. Natural resources are to be used sparingly and conserved wherever possible. The use and consumption of resources during production and the generation of waste of any kind, including water and energy, must be reduced to the necessary level or avoided. The use of natural resources shall be reduced through practices such as material conservation and substitution, sharing, maintenance, reuse, remanufacturing and recycling or upcycling. In addition, Novaled and its suppliers are committed to the continuous development and use of environmentally and climate-friendly products, processes and technologies. Applicable laws and regulations regarding the prohibition and restriction of certain substances in production must be strictly adhered to, and labelling for recycling and disposal must be carried out. Self-induced negative effects on the  |
 
-3
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 Name of the signatory (organisation) | actions
 environment and climate must be identified and prevented as quickly as possible.
@@ -12882,12 +11462,8 @@ Furthermore, the service life of a roof can be extended by several years because
 Another advantage is the sound reflection to the outside and inside. PV systems are already in operation on the roofs of KID properties or are in the planning stage.
 Existing system: Theatre Kraftwerk Mitte - 30 kWp  |
 
-4
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 Name of the signatory (organisation) | actions
 In planning: Kulturpalst Dresden approx. 200 kWp PV system on the flat roof of the Kulturpalast consisting of 580 monocrystalline glass-glass modules with black frames,
@@ -12911,12 +11487,8 @@ Cooling of data centres with water as a potential for waste heat utilisation
 Measurement of air-to-water and brine-to-water heat pumps at the PLWP test centre (certification in accordance with DIN EN ISO / IEC 17025)
 These focal points are to be maintained in the coming years. The goals of energy efficiency and sustainability  |
 
-5
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 Name of the signatory (organisation) | actions
 should take centre stage
@@ -12939,12 +11511,8 @@ energy consumption and energy efficiency improvement
 waste generation and recycling rates. -
 Mobility  |
 
-6
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 Name of the signatory (organisation) | actions
 - Current status: Job ticket, some of the vehicle fleet are electric cars, secure bicycle parking spaces are available
@@ -12963,11 +11531,8 @@ o Focus topic in annual research reports and publications
 o Goal: dedicated tab on the ILK homepage with the institute's own goals and current progress
 o Regular report on sustainability progress on social media  |
 MESSE DRESDEN GmbH | none yet, but are being actively focussed on
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 Name of the signatory (organisation) | actions
 Theaterpädagogisches Zentrum Sachsen e.V. | The key foundation and driving force behind our work is the promotion of participation. This value includes the promotion and safeguarding of diversity, sustainability and democracy. Participation of all people, regardless of age, gender identity, sexuality, origin, physical characteristics, health or social status, abilities and religion, means taking responsibility for diversity. Securing this in the long term - not only in an ecological sense, but also for society as a whole - is a requirement of sustainability. And democracy is not possible without participation, and participation is inconceivable without the participation of all in the joint shaping of life and society.
@@ -12982,12 +11547,8 @@ However, we also favour solutions in the area of digitality that ensure particip
 
 As transparency, data protection and self-determination are important to us, we only use services that are EU GDPR-compliant and do not have a business model based on the accumulation and use of private data. This is another reason - along with many other more ethical considerations - why we are not represented on social networks such as Facebook, Instagram and Twitter.  |
 
-8
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 Name of the signatory (organisation) | actions
 Ostrale - Zentrum für zeitgenössische Kunst e.V. | Mobility: Our employees, artists, etc. are expressly encouraged to cycle, walk or use public transport such as buses and trains for their daily commute. This not only promotes their health, but also helps to reduce their ecological footprint. For business trips, we place particular emphasis on using the train or bus instead of your own car or plane wherever possible in order to promote a more environmentally friendly and sustainable method of travelling. In this way, we contribute to climate protection and support the transport revolution.
@@ -13002,12 +11563,8 @@ Regional procurement: We are increasingly favouring local suppliers over large p
 
 Green infrastructure: As part of our sustainability initiative, we have rainwater collection points on all gutters and small roofs on the site. Our garden is intentionally planted with a variety of crops to promote biodiversity and support sustainable nutrition. These plants are watered exclusively with collected rainwater, which we obtain through our rainwater harvesting systems. In  |
 
-9
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 Name of the signatory (organisation) | actions
 addition, the energy required for irrigation is provided by solar power to further minimise our ecological footprint. In the entrance area of our premises, we have created a bed planted with endangered (red list) plants from our native Elbe meadows. Some of these plants are endangered and important for our local ecosystem diversity and find a protected environment here to develop and flourish. Visitors can discover these special plants and learn about their importance for nature conservation. Education and communication: We organise regular interactive workshops for kindergarten groups, school classes and students in our garden and greenhouse as well as guided tours as part of the biennials, which deal intensively with the topics of sustainability. We also offer special workshops for senior citizens, where they can share, expand and exchange their ecological knowledge with us. These educational initiatives not only promote an understanding of ecological issues among the youngest participants, but also create a valuable platform for intergenerational dialogue and learning from one another. Education and communication: We have set up a comprehensive educational trail on our site, consisting of 11 informative panels. These panels are dedicated to a variety of important topics, including the hedgehog hotel, the importance and promotion of biodiversity, regional diversity and the preservation of old cultivated plants. The educational trail has been designed to familiarise our visitors with these complex and important topics and to raise their awareness of environmental protection and sustainability. Each panel provides detailed information and illustrative examples to promote understanding and interest in nature conservation. We take selected topics of this complex content to the Biennale sites to inform visitors about these important aspects of our natural environment in a vivid and interactive way.
@@ -13017,12 +11574,8 @@ Organising a design competition to green a façade
 Organising a design competition to build an insect nesting aid
 Installing a cistern  |
 
-0
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 Name of the signatory (organisation) | actions
 Extensive planting measures with shrubs and trees on the site
@@ -13042,12 +11595,8 @@ If TRICERA nevertheless uses new stationary batteries, the company relies on lit
 
 When selecting products, we endeavour to achieve a high proportion of local value creation and production in the European Union and, above all, in Germany, where they are manufactured by suppliers in accordance with the high applicable environmental protection standards.  |
 
-1
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 Name of the signatory (organisation) | actions
 Consistent qualification of suppliers ensures that production is carried out in accordance with applicable labour and safety standards and that neither child nor forced labour is used.
@@ -13068,12 +11617,8 @@ Sustainable procurement
 Ecological, sustainable gifts
 Digitisation of forms  |
 
-2
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 Name of the signatory (organisation) | actions
 HTWD events with vegetarian catering only
@@ -13099,12 +11644,8 @@ Switch to natural electricity tariff in 2019 (CO2 savings potential compared to 
 Gradual conversion of the car fleet to e-mobility (according to a rough calculation, savings of approx. 4 t CO2/a after replacing 4 vehicles, production emissions are taken into account)
 Introduction of a flexible regulation for mobile working in April 2020, followed by a strong reduction in traffic-related emissions (commuting)  |
 
-3
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 Name of the signatory (organisation) | actions
 - Introduction of the job ticket
@@ -13126,12 +11667,8 @@ Wherever possible, promotion of sustainable construction processes (façade/roof
 Next step: focus also on circular construction, initial analyses together with Concular have taken place  |
 Musaik - Grenzenlos musizieren e.V. | For almost seven years, the music project Musaik - Grenzenlos musizieren e.V. has been an important point of socialisation for children and young people as well as the local population in Dresden-Prohlis. By learning to play an orchestral instrument and making music together in an orchestra, Musaik creates meeting spaces in which the pupils experience connection and community. The organisation creates a space in which barriers are overcome and cultural differences are perceived as
 
-4
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 Name of the signatory (organisation) | actions
 enrichment.
@@ -13150,12 +11687,8 @@ SOLARWATT GmbH | When SOLARWATT was founded in 1993, making an active contributi
 
 In the more than 30 years since then, we have equipped over 665,000 homes, commercial buildings, church roofs, supermarket car parks and other locations with modern photovoltaic systems.  |
 
-5
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 Name of the signatory (organisation) | actions
 For decades, these have been producing environmentally friendly electricity, most of which is also consumed locally. This not only saves enormous amounts of CO2 in power generation, but also means less strain on the entire power grid.
@@ -13171,12 +11704,8 @@ SOLARWATT is also committed to sustainable action locally. We support our employ
 In the Dresden region, SOLARWATT now has its own consulting and installation team and offers the entire service from production, quotation preparation and system planning to the installation of a photovoltaic system or heat pump solution from a single source.  |
 IG KURIS e. V./LVR Sachsen e. V. | IG KURIS e. V. supports all activities for a material-appropriate and sensible use of plastics in order to emphasise their technical, economic and ecological advantages and to promote an environmentally friendly circular economy. The interest group also acts in an advisory capacity and endeavours to network companies, authorities, associations and institutes. By organising events, the
 
-6
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 Name of the signatory (organisation) | actions
 association aims to make a targeted contribution to further training and knowledge transfer. The Interessengemeinschaft Kunststoffrecyclinginitiative Sachen e.V. is a member of the Landesverband der Recyclingwirtschaft Sachsen e. V.
@@ -13195,11 +11724,8 @@ VON ARDENNE has received an approved grant from the Sächsische Aufbaubank for t
 The realisation of the project will be ensured by an investment company of the VON ARDENNE Group - regenery GmbH. With this participation, we could gain many years of expertise in the field of energy consulting and the implementation of energy efficiency projects, especially in the industrial environment. We are also happy to offer this service to all other companies.
 https://www.regenery.tech/Über the existing energy efficiency project for the campus, further topics are being worked on whose CO2 effect has not yet been determined: -
 % of employees had a job ticket at the end of 2023 (status implemented)  |
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 Name of the signatory (organisation) | actions
 - expansion of bicycle parking spaces with charging facilities for e-bikes (status implemented)
@@ -13214,12 +11740,8 @@ The optimisation of the air conditioning systems will achieve a CO2 reduction of
 The expansion and modernisation of the QC laboratories should achieve a further annual CO2 reduction of 8,100 kg by the end of 2027.
 Annual update and further development of the CO2 roadmap and selection of CO2 reduction projects.  |
 
-8
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 Name of the signatory (organisation) | actions
 Deutsche Werkstätten Hellerau | Communication & participation:
@@ -13235,12 +11757,8 @@ Waste disposal is based on conscientious waste separation, whereby care is taken
 Mobility:
 Deutsche Werkstätten Hellerau is building on the increased use of public transport for commuting and business trips. The offer of railcards and the combined DVB job ticket with the Germany ticket are an integral part of more resource-efficient mobility. There is also a widely used range of job bikes.  |
 
-9
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 Name of the signatory (organisation) | actions
 A few years ago, the vehicle fleet was equipped with an electric car for short journeys, which is charged using electricity generated by the PV system.
@@ -13264,23 +11782,15 @@ Successive energy refurbishment of the TUD's unrenovated old buildings by the Sa
 Utilisation of waste heat from the high-performance computer to heat the Krone building; in future, waste heat is also to be fed into the Dresden district heating network of Sachsen Energie.
 Seven PV systems (yield 2022: 324 MWh) installed on TU Dresden buildings. Further expansion planned for new buildings and building renovations (via SIB)  |
 
-0
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 |  Name of the signatory (organisation) | actions  |
 | --- | --- |
 |   | 2) Mobility: - Job ticket for employees of the Free State of Saxony (job ticket as Germany ticket: 1,411, VVO job ticket: 227 [as at June/2024]) - Semester ticket and Mobibike use for students (as standard for students) - Cargo bikes for hire (5 so far) - Expansion and improved security of bicycle parking facilities (approx. 900 additional or improved parking facilities since 2012) - Implementation of mobility concept and car park management is in progress: https://tu-dresden.de/tu-dresden/nachhaltigkeit/mitmachen/nachhaltigkeit-im-hochschulalltag/mobilitaetsportal/parkraummanagement - Participation in city cycling - Regular mobility surveys and evaluations of business trips (frequency and choice of means of transport) are carried out to monitor actions. 3) Waste and waste water - Management according to the principles of waste avoidance, waste reduction, waste recycling and safe waste disposal - Use of a waste separation system in the buildings; separation of residual waste, packaging waste and paper/cardboard. Participation in various recycling programmes (collection of old mobile phones, reuse of discarded IT equipment) - Advice on environmentally friendly waste disposal; waste ABC on the Internet to provide information on the correct disposal methods - Separation warehouse for furniture, office supplies exchange for items that are no longer needed (i.e. furniture and office supplies that are no longer used are passed on) - Regular repair cafés on campus (mainly to avoid electronic waste) - "Borrowing instead of buying": The TUD offers various lending options, including crockery, cups, cargo bikes for transport, seating and cushions, technology rental via StuRa and student councils, technology platform: https://tu-dresden.de/tudresden/nachhaltigkeit/mitmachen/nachhaltigkeit-im-hochschulalltag/ausleihen-an-der-tud - Guide to sustainable events with checklists for implementation: https://tu-dresden.de/tudresden/nachhaltigkeit/mitmachen/nachhaltigkeit-im-hochschulalltag/ausleihen-an-der-tud  |
 
-1
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 |  Name of the signatory (organisation) | actions  |
 | --- | --- |
@@ -13288,12 +11798,8 @@ O
 |  4) Procurement | - Green electricity via SIB since 2023 (emission savings of more than 20,000 t/year in future according to electricity labelling) - Office supplies catalogue highlighting environmentally friendly products (e.g. Blue Angel products) - Switch to 100% recycled paper for A4 and A3 printing and copying paper from autumn 2024; reduction in paper consumption due to digitalisation (approx. 60% since 2012) - Project to take sustainability criteria into account in procurement processes and integration into the awarding process  |
 |  5) Green infrastructure | - conversion of mowing to lawns, partial mowing to create insect-friendly meadows, 10 sites (3.1 ha on the main campus in the city of Dresden; 4.5 ha with all external sites in Pirna-Copitz and Tharandt) - 50 tree sponsorships for planting trees on campus - participation in the "Gießkannenheld:innen" project, set up together with "Dresden gießt" and Stadtentwässerung to water the trees on campus - bird protection measures (nesting opportunities, application of bird protection on glass facades to prevent bird strikes) - Construction and installation of insect hotels6) Education - Communication - Society: - Development and adoption of TU Dresden's sustainability strategy (end of 2023): https://tu-dresden.de/tudresden/nachhaltigkeit/strategie-und-vision - Creation of a climate protection concept including development and implementation of climate protection measures (2024 - 2026); establishment of permanent climate protection management at TUD with the aim of gradually reducing greenhouse gas emissions associated with the operation of TU Dresden (goal: greenhouse gas-neutral operation by 2035), - Environmental Commission (since 1991) and various working groups as a driving force for greater environmental protection and sustainability at TUD ( https://tu-dresden.de/ku ) - Student Environmental Initiative tuuwi (since 1989): student environmental education (seminars and environmental ring  |
 
-2
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 Name of the signatory (organisation) | actions
 lectures), working groups on various environmental and sustainability topics: https://tuuwi.de/ - EMAS environmental management (since 2003): includes annual environmental reporting and the creation and implementation of an environmental programme (https://tu-dresden.de/tu-dresden/nachhaltigkeit/handlungsfelder/campus-und-betrieb/umweltmanagementsystem-1)
@@ -13307,12 +11813,8 @@ Networks and exchange formats (Sustainable Coffee Hour with the City of Dresden 
 ) Research, development and innovation in the field of climate protection:
 A large number of research projects at the TU deal with issues relating to climate protection. An exemplary presentation of projects can be found on the following website: https://tu-dresden.de/tu-dresden/nachhaltigkeit/handlungsfelder/forschung/forschungsprojekte-im-bereich-nachhaltigkeit - TUD is in first place worldwide in SDG 9 in the Times Higher Education (THE) Impact Ranking with 7 other universities in 2024  |
 
-3
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 Name of the signatory (organisation) | actions
 - As part of the Excellence Initiative, cluster projects are being applied for that focus in particular on sustainable construction and sustainability-oriented electronics.
@@ -13330,12 +11832,8 @@ Emissions Reduction: Select low-emission products and suppliers, e.g., vegan/veg
 Social Responsibility: Ensure suppliers practice ethical labour, fair wages, and safe conditions.
 Supply Chain Transparency: Verify social and environmental claims through supply chain transparency.  |
 
-4
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 Name of the signatory (organisation) | actions
 - Local Sourcing: Favour local suppliers to cut transportation emissions and support the local economy.
@@ -13358,12 +11856,8 @@ If water bottles are necessary (field trip), a sustainable brand must be used
 laptops
 UNU-FLORES purchases laptops with the maximum extended warranty period offered by the provider, including incidental damage insurance and worldwide next-business-day support. That way laptops can be used and maintained by the manufacturer until the end-of-life period according to the standards published by UNU's IT. Given frequent travels, the reliability and worldwide coverage of the warranty justify replacing laptops after the extended warranty period expires. Beyond the 5-year period, laptops that are in good shape shall be retained as spare laptops for temporary assignments, for colleagues that work exclusively from within the duty station (e.g., non travels), or as shared computers in meeting rooms. Otherwise, laptops are sold internally or donated to external organisations for a second life. The purchase of modular laptops is explored and supported.  |
 
-5
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 Name of the signatory (organisation) | actions
 Current Provider: Dell has been used at UNU-FLORES ever since its foundation with the compatibility of laptops and dockings/screens on all workstations. Dell is committed to becoming CO2 neutral by 2030, and offers a wide range of activities, such as plastic-free packaging, 94.5% packaging from recycled or renewable materials, and modular construction (concept Luna), including recycled materials for the frames.
@@ -13378,12 +11872,8 @@ UNU-FLORES follows the German system for waste separation. As the respective sig
 Paper and Cardboard: This category includes newspapers, magazines, cardboard packaging, and other paper-based materials. Only clean paper should go into that bin - plastic must be removed. Used paper towels and greasy paper belongs to the residual waste.
 Packaging Waste: Packaging materials such as plastic, metal, and Tetra Pak cartons are separated and collected for recycling.  |
 
-6
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 Name of the signatory (organisation) | actions
 - Biodegradable Waste / Residual Waste: Due to the limited selection of available waste bins in the building these categories are collected together. This category includes organic waste such as food scraps and compostable materials as well as non-recyclable or residual waste that cannot be sorted into other categories, including used paper towels.
@@ -13402,12 +11892,8 @@ Many employees cycle to work or use the job ticket. Charging facilities are avai
 
 Most of our waste is sent for recycling. Despite the high purity requirements in the production process, we have succeeded in reusing a required organic solvent in our production process after use and external reprocessing.  |
 
-7
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 Name of the signatory (organisation) | actions
 Our sustainability team and the GF Dresden environmental department regularly inform the workforce about topics and campaigns relating to sustainability and climate protection.
@@ -13429,12 +11915,8 @@ Leibniz-Institut für ökologische Raumentwicklung (IÖR) | The following action
 Photovoltaic system with a gross output of 38.5 kWp on the roof of the institute building covers 1/3 of the energy requirement
 certified green electricity and district heating from combined heat and power generation enable the building's entire energy requirement to be covered by renewable energies.  |
 
-8
-#
-Dresden. D1c2qc1r
 Commitments to climate
 neutrality by 2030
-O
 
 Name of the signatory (organisation) | actions
 - Reduction of primary energy demand by 25%, 30% better than the current regulations of the Energy Saving Ordinance, honoured by GreenBuilding Award. - Maintenance routine to optimise the operation of our technical building systems (e.g. hydraulic heating system balancing, air conditioning system check, filter replacement for ventilation systems) - appliances are switched off completely when not in use for long periods (at night, at weekends, during holiday periods, e.g. using power strips) - energy-efficient LED lighting - motion detectors in areas with short lighting times (e.g. corridors, sanitary areas). >> The Institute building is GHG-neutral in operation thanks to the above actions and the refurbished building envelope. - Climate-neutral procurement of office supplies since 2023 (use of recycled paper, certified printing paper for externally manufactured products (Blue Angel), recycling or reuse management for office furniture and IT, collective deliveries to save journeys (also financially due to travel flat rate) - Roof greening
@@ -13452,12 +11934,8 @@ IT/digitalisation
 Energy efficiency is an important criterion when purchasing new servers, computers, monitors and other technical equipment.
 Wherever possible, refurbished technology and virtualisation are used in the server area.  |
 
-9
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 Name of the signatory (organisation) | actions
 - Technology that can no longer be used at the institute is given to staff or organisations. Centralised lending means that less technology needs to be procured overall. - Floor printers instead of desktop printers / 2-sided printing by default - Digitisation of many processes ("paperless office")
@@ -13474,16 +11952,9 @@ Monitoring important consumption data (e.g. electricity, water, district heating
 Actions for the possible expansion of an energy-positive building envelope are being examined.
 As part of the pilot project "Climate-neutral research organisation", a comprehensive greenhouse gas (GHG) balance was drawn up, which takes into account the Greenhouse Gas Protocol standards (Scope 1/2/3). This allows all direct and indirect emissions to be analysed in order to develop strategies and further actions.  |
 
-0
-#
-
-Dresden. D1c2qcu
-
 Commitments to climate
 
 neutrality by 2030
-
-O
 
 |  Name of the signatory (organisation) | actions  |
 | --- | --- |
@@ -13497,11 +11968,8 @@ O
 |   |  EFW has been involved in a wide range of areas and dimensions for many years. A central pillar of this is our DIN EN ISO 14001:2015-certified environmental management system, which forms the framework for environmentally conscious production (not least with regard to building and energy efficiency as well as waste, waste water and hazardous substances) at the Dresden site. We are a member of the Saxony Environmental and Climate Alliance and took part in the SaBeNa project (Saxony's companies become sustainability experts) in 2021/2022.  |
 |   |  EFW actively supports actions to reduce CO2 and, in addition to solar power generated on our own hall roofs (currently 2 hall roofs; 1,300 square metres; 660 modules from Solarwatt; ~260,000kWh p.a.; further expansion planned), only uses green electricity from the local supplier (SachsenEnergie). We have several freely accessible charging points for electric vehicles and are planning further expansion in this area too. Our internal logistics/provision of materials is largely realised using electric vehicles.  |
 |   |  We support our employees by providing a JobTicket, the option of bike leasing, secure bicycle parking spaces and offer  |
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 Name of the signatory (organisation) | actions
 numerous flexible working time models, training programmes and health measures. In addition, it is a matter of course for us to get involved in the local community. We do this not least by supporting aid organisations, sports clubs and cultural institutions.
@@ -13515,12 +11983,8 @@ We are particularly proud of our initiative, which has been in place since 2021,
 We greatly appreciate the dialogue with representatives of the City of Dresden on sustainability issues to date, but also see opportunities for further intensification. We look forward to discussing specific topics and projects.  |
 Dresden Zero | The citizens' initiative DresdenZero aims to achieve climate neutrality in Dresden by 2035 in order to help combat climate change and preserve Dresden as a liveable and sustainable city for us and all future generations. The colourful, open and non-partisan group of Dresden citizens has committed the city of Dresden to this goal through a successful citizens' petition and is now supporting the identification and planning of necessary climate protection measures together with politicians, administration,
 
-2
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 Name of the signatory (organisation) | actions
 industry and citizens.
@@ -13538,12 +12002,8 @@ We have clearly regulated this in our business travel policy: Train journeys are
 Waste is disposed of professionally by external companies and recycled as far as possible.
 We are helping industry with the transformation to climate neutrality. With our innovative electrolysers, we produce green  |
 
-3
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 Name of the signatory (organisation) | actions
 hydrogen or synthesis gas, a mixture of hydrogen and carbon monoxide, from electricity, water vapour and CO2. Hydrogen and synthesis gas can be used as raw materials in industry or as energy sources in the transport and energy sector. We help industrial customers and climate-conscious companies to decarbonise their value chains: From logistics and the use of materials to energy supply.
@@ -13558,12 +12018,8 @@ The optimisation of water treatment and steam generation should achieve a CO2 re
 The expansion and modernisation of the QC laboratories should achieve a further annual CO2 reduction of 8,100 kg by the end of 2027.
 Annual update and further development of the CO2 roadmap and selection of CO2 reduction projects.  |
 
-4
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 Name of the signatory (organisation) | actions
 Industrie- und Handelskammer Dresden | The Dresden Chamber of Industry and Commerce is planning to install a photovoltaic system in 2025, which should enable a degree of self-sufficiency of 20 to 40 Percent. The exact size of the system depends on the final decisions of the Dresden Chamber of Industry and Commerce's general assembly. At the same time, the existing vehicle fleet will be converted to e-mobility, for which a corresponding charging infrastructure will be installed on the premises. In addition to our own climate protection measures on the premises, we provide our member companies in Dresden with comprehensive support in the areas of energy efficiency and renewable energies. A particular highlight of our offer is the IHK climate protection coaching programme. In this practice-oriented programme, we work together to develop concrete and tailor-made actions that not only reduce CO2 emissions, but also save costs in the long term. Our aim is to competently support companies in the region on their path to greater sustainability and climate neutrality and to provide them with practical solutions to minimise their ecological footprint.
@@ -13572,12 +12028,8 @@ Of course, our corporate activities themselves should also take another big step
 As an environmental company, DAS Environmental Experts GmbH sees itself as part of the community that is committed to climate protection.  |
 Vonovia | https://www.vonovia.com/nachhaltigkeit/handlungsfelder/umwelt-und-klima
 
-5
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 |  Name of the signatory (organisation) | actions  |
 | --- | --- |
@@ -13600,16 +12052,9 @@ Green electricity is also used in some cases.
 Working groups or committees for sustainability are active in ##[number] municipalities. They are committed to the development and implementation of more consistent sustainability and climate protection measures.
 In the future, there will also be a climate coordination organisation for the two church districts, which will bundle and effectively coordinate the climate protection efforts of the individual parishes.  |
 
-6
-#
-
-Dresden. D1c2qcu
-
 Commitments to climate
 
 neutrality by 2030
-
-O
 
 Name of the signatory (organisation) | actions
 One of our central events is the Ecumenical Energy Day. This annual event brings together representatives from various parishes, experts and committed parishioners to discuss current developments and innovative solutions in the field of renewable energy for the parishes.
@@ -13622,34 +12067,23 @@ As part of a series of workshops, employees from each department have defined th
 A theatre garden was planted in the inner courtyard of the Schauspielhaus.
 Through a pilot project with the ETC and Renew Culture, 3 productions are being monitored this season using the Theatre Green Book under sustainability points and their carbon footprint is being documented.Preamble to the sustainability mission statement of the Staatsschauspiel Dresden:
 The Staatsschauspiel Dresden has set itself the goal of considering the future-critical issue of sustainability as the basis for action in all  |
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 |  Name of the signatory (organisation) | actions  |
 | --- | --- |
 |   | processes. Sustainability is to be incorporated into the theatre's artistic work as well as becoming a cross-cutting theme throughout the entire company. Staatsschauspiel Dresden's sustainability mission statement is based on the 2030 Agenda, which was agreed by the international community (UN) in 2015 in the form of 17 Sustainable Development Goals (SDGs). The Staatsschauspiel considers seven of these goals to be a particular responsibility for its specific sphere of activity: health and well-being, quality education, gender equality, fewer inequalities, sustainable consumption and production, actions to protect the climate and partnerships to achieve the goals. We want to focus on these topics within our company and at the same time think in terms of society as a whole. We understand sustainability holistically - socially, ecologically and economically. On this basis, we will continuously reflect on and systematically improve our actions in a multi-year process. On the way to climate-friendly work at all levels, this paper forms a guideline both for the employees of the Staatsschauspiel Dresden and for guests who work for our theatre. It is also intended to be the basis for collaboration with external partners and a source of inspiration for our audiences. The ETC: ETC is the largest network of publicly funded theatres in Europe with 63 members in 31 countries. They organise a wide range of activities to create brilliant new theatre, support and promote theatre makers and fight for the European theatre sector in a political context. These activities are open to member theatres, theatre makers, artists across the continent and the theatre-going public. Green Theatre Committee of the ETC: The Green Theatre Committee is working to become a climate-neutral network by 2030. Founded in 2021, the Green Theatre Committee is made up of experts from the ETC network (including Joachim Klement, Staatsschauspiel Dresden) and external experts and contributes to the development of knowledge, analyses and guidelines on sustainability. It plays a key role in realising the ETC's ambitious goal of becoming a climate-neutral network by 2030, as set out in the ETC Sustainability Action Code. An important step in this sustainability journey is the creation of the ETC Theatre Green Book, a collaboration between ETC, Renew Culture and the renowned Theatre Green Book initiative. The ETC Theatre Green Book is a new version of the tool that guides theatres step by step towards net zero emissions - for their productions, buildings and operations. The ETC Theatre Green Book was tested and refined in the 2023/24 season by 9 ETC theatres from 7 countries. These "Focus Group" theatres were:  |
 
-8
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 |  Name of the signatory (organisation) | actions  |
 | --- | --- |
 |   | Young Vic (UK), Teatro Arriaga (Spain), Národní divadlo - National Theatre Prague (Czech Republic), Deutsches Theater Berlin (Germany); De Toneelmakerij (Netherlands); Staatsschauspiel Dresden (Germany), Théâtre de Liège (Belgium), Het Zuidelijk Toneel (Netherlands), Det Norske Teatret (Norway)  |
 |  Veolia Umweltservice Ost GmbH | Dear Sir or Madam, In the following text, we explain our desire and actions within the framework of a desired cooperation on the Dresden Climate City Agreement. At present, Veolia does not yet have a partnership with the city of Dresden that is explicitly dedicated to climate protection, but we would like to accompany the city of Dresden in its efforts towards climate neutrality as a partner. At a global level, we at Veolia, including our German subsidiaries, have committed to reducing our direct and indirect emissions (Scope 1 and 2) by 50% and Scope 3 emissions by 30% by 2032. Our long-term goal is to achieve net zero emissions by 2050, which includes reducing greenhouse gases by 90% and offsetting the remaining emissions. In Germany and Europe, we are focussing on phasing out coal-fired power generation by 2030 and investing EUR 1.6 billion in renewable energies and energy efficiency measures across the Group. Further steps include reducing emissions in our waste management and increasing the share of renewable energies. The global and Germany-wide targets are being implemented at the locations with different actions. In Dresden, our focus is primarily on helping our customers to achieve their sustainability goals. We support our customers in contributing to the circular economy with the recycling of various material flows and help them to utilise their maximum potential through training. Furthermore, we are currently not only a waste disposal partner of SG Dynamo Dresden, but are also working on their carbon footprint in accordance with the Greenhouse Gas (GHG) Protocol. The aim is to map the CO2 footprint for the year 2023, recognise reduction potential and jointly define actions to reduce greenhouse gas emissions. The aim is for this to result in similar regional commitments.  |
 
-9
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 Name of the signatory (organisation) | actions
 We also benefit from the actions of other Veolia sites in Germany and from the nationwide targets. For example, we are implementing a strategy at Group level in Germany to build photovoltaic systems on our buildings that we use ourselves in order to reduce our Scope 2 emissions. The first expansion stage of the PV system in Lengede has already been successfully completed and is expected to produce around 1 gigawatt hour of electricity per year. We primarily use this electricity ourselves and feed surplus energy into the public grid.
@@ -13660,12 +12094,8 @@ With our subsidiary ÖKOTEC Energiemanagement, we specialise in energy efficienc
 
 We are working to actively protect and promote biodiversity at our sites. We have set ourselves the goal of ending the use of pesticides by 2027. Similarly, all sites with more than one hectare of green space are to complete a charter for green space management, in which concrete actions for the protection and promotion of the diversity of habitats and species are agreed. This goes hand in hand with our comprehensive education and training strategy to reinforce our commitment to sustainability and compliance. Our internal Veolia Learning platform offers a wide range of training courses, both globally and specifically tailored to local needs.  |
 
-0
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 Name of the signatory (organisation) | actions
 A training catalogue accessible online bundles important offerings, including courses on compliance, data protection and sustainability. In addition, individual topics, e.g. with content and tips on ecological management of green spaces at locations, are shared specifically with our locations.
@@ -13685,12 +12115,8 @@ No concrete goals have been formulated to date, as we are trying to improve sust
 
 In terms of mobility, the first step towards an emission-free fleet has already been taken, as 2 of the 6 vehicles now have an electric drive, meaning that the majority of inner-city journeys can be made electrically. In addition, an electric cargo bike was purchased several years ago and another is being planned. There is also a desire among employees for a bicycle parking garage so that they can also park high-quality bicycles with a clear conscience and thus motivate more colleagues to cycle to work. The use of public transport is already prioritised for  |
 
-1
-#
-Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
-O
 
 Name of the signatory (organisation) | actions
 business trips, but is not always possible.
@@ -13705,15 +12131,10 @@ In our workshop, we traditionally work with polystyrene for sculptures. As this 
 In order to provide a quick overview of the submitted commitments, the following diagrams have been added to the tables above. These show the distribution of the cooperation partners across the area of activity and legal form, as well as the type of climate protection declaration and the areas of action addressed by their own actions (multiple answers possible).
 
 It can be seen that the companies and organisations that participate in the CCC with their commitment and support the city's climate protection efforts cover a wide range of activities.
-#
-
-Dresden. D1c2qcU
 
 Commitments to climate
 
 neutrality by 2030
-
-#
 
 ![img-0.jpeg](img-0.jpeg)
 Sector of activity
@@ -13746,30 +12167,20 @@ Gesellschaft mit beschränkter Haftung (GmbH)
 eingetragener Verein (e. V.)
 eingetragene Genossenschaft (e. G.)
 Körperschaft, Stiftung oder Anstalt
-#
-
-Dresden. D1c2qcu
 
 Commitments to climate
 
 neutrality by 2030
-
-#
 
 ![img-0.jpeg](img-0.jpeg)
 Figure 5: Number of employees at organisations that have submitted a climate protection declaration.
 
 ![img-1.jpeg](img-1.jpeg)
 Figure 6: Number of cooperation partners per type of climate protection strategy (climate protection declarations submitted)
-#
-
-Dresden. D102901
 
 Commitments to climate
 
 neutrality by 2030
-
-#
 
 ![img-0.jpeg](img-0.jpeg)
 Figure 7: Selected areas of action of the cooperation partners (submitted climate protection declarations)

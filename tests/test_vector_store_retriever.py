@@ -44,8 +44,7 @@ def test_as_markdown_documents_maps_required_fields() -> None:
 
 def _build_test_config() -> AppConfig:
     """Build the retriever test config with current required sections."""
-    config = build_test_app_config(
-    )
+    config = build_test_app_config()
     config.vector_store.retrieval_fallback_min_chunks_per_city_query = 2
     config.vector_store.retrieval_max_chunks_per_city_query = 3
     config.vector_store.retrieval_max_distance = 0.2
@@ -745,3 +744,4 @@ def test_retrieve_chunks_for_queries_merges_seed_query_ids_and_prefers_qualified
     assert seed_chunks["chunk-1"].provenance.seed_rank == 1
     assert seed_chunks["chunk-3"].provenance.seed_rank == 2
     assert seed_chunks["chunk-2"].provenance.selection_mode == "fallback_top_up"
+

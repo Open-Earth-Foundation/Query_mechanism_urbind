@@ -336,10 +336,11 @@ class RunLogger:
                 or self.context_bundle.get("research_question")
                 or "(missing)"
             )
-            query_mode = inputs.get("query_mode", self.context_bundle.get("query_mode", "standard"))
-            lines.append(
-                f"Original question: {original_question}"
+            query_mode = inputs.get(
+                "query_mode",
+                self.context_bundle.get("query_mode", "standard"),
             )
+            lines.append(f"Original question: {original_question}")
             lines.append(f"Query mode: {query_mode}")
             lines.append(f"Canonical research query: {canonical_research_query}")
             for index in range(1, 4):

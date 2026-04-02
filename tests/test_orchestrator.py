@@ -910,7 +910,6 @@ def test_run_pipeline_standard_mode_normalizes_generated_retrieval_queries(
     assert run_log["inputs"]["retrieval_query_2"] == expected_queries[1]
     assert run_log["inputs"]["retrieval_query_3"] == expected_queries[2]
 
-
 def test_run_pipeline_dev_mode_uses_direct_queries_and_ignores_blanks(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,

@@ -45,6 +45,77 @@ def test_cities_endpoint_returns_empty_for_missing_dir(tmp_path: Path) -> None:
         assert payload["markdown_dir"] == str(missing_markdown_dir)
 
 
+def test_city_markdown_endpoint_returns_city_content(tmp_path: Path) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    source_path = markdown_dir / "Munich.md"
+    source_path.write_text("# Munich\n\nClimate content", encoding="utf-8")
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get("/api/v1/cities/Munich/markdown")
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload == {
+            "city_name": "Munich",
+            "content": "# Munich\n\nClimate content",
+            "source_paths": [str(source_path)],
+        }
+
+
+def test_city_markdown_endpoint_matches_normalized_city_names(tmp_path: Path) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    (markdown_dir / "Vitoria_Gasteiz.md").write_text(
+        "# Vitoria Gasteiz\n\nContent",
+        encoding="utf-8",
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get("/api/v1/cities/Vitoria-Gasteiz/markdown")
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["city_name"] == "Vitoria_Gasteiz"
+        assert payload["content"] == "# Vitoria Gasteiz\n\nContent"
+
+
+def test_city_markdown_endpoint_concatenates_duplicate_city_files_in_path_order(
+    tmp_path: Path,
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    annex_dir = markdown_dir / "Annex"
+    annex_dir.mkdir(parents=True, exist_ok=True)
+    primary_path = markdown_dir / "Munich.md"
+    annex_path = annex_dir / "Munich.md"
+    primary_path.write_text("# Primary\n\nOne", encoding="utf-8")
+    annex_path.write_text("# Annex\n\nTwo", encoding="utf-8")
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get("/api/v1/cities/Munich/markdown")
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["content"] == "# Primary\n\nOne\n\n# Annex\n\nTwo"
+        assert payload["source_paths"] == [str(primary_path), str(annex_path)]
+
+
+def test_city_markdown_endpoint_returns_404_for_missing_city(tmp_path: Path) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    (markdown_dir / "Munich.md").write_text("# Munich", encoding="utf-8")
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get("/api/v1/cities/Berlin/markdown")
+        assert response.status_code == 404
+        assert response.json()["detail"] == "City markdown for `Berlin` was not found."
+
+
 def test_city_groups_endpoint_filters_to_available_cities(tmp_path: Path) -> None:
     runs_dir = tmp_path / "output"
     markdown_dir = tmp_path / "documents"

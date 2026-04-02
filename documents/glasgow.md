@@ -19,32 +19,27 @@ Climate Neutrality Action Plan
 
 # Table of Contents
 
-Table of Contents ... 7
-Summary ... 8
-List of figures ... 9
-List of tables ... 9
-Abbreviations and acronyms ... Error! Bookmark not defined.
-Introduction ... 10
-Part A – Current State of Climate Action ... 13
-Module A-1 Greenhouse Gas Emissions Baseline Inventory ... 14
-Module A-2 Current Policies and Strategies Assessment ... 24
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality ... 37
-Part B – Pathways towards Climate Neutrality by 2030 ... 46
-Module B-1 Climate Neutrality Scenarios and Impact Pathways ... 46
-Module B-2 Climate Neutrality Portfolio Design ... 53
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 71
-Part C – Enabling Climate Neutrality by 2030 ... 76
-Module C-1 Governance Innovation Interventions ... 76
-Module C-2 Social Innovation Interventions ... 84
-Outlook and next steps ... 90
-Annexes ... Error! Bookmark not defined.
-
-OFFICIAL
-Glasgow
-
-Climate Neutrality Action Plan
-
-O
+- Summary
+- List of figures
+- List of tables
+- Abbreviations and acronyms ... Error! Bookmark not defined
+- Introduction
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- Module C-2 Social Innovation Interventions
+- Outlook and next steps
+- Annexes ... Error! Bookmark not defined
+- OFFICIAL
+- Glasgow
+- Climate Neutrality Action Plan
 
 # Summary
 
@@ -1878,21 +1873,15 @@ Climate-Neutrality Commitments
 
 # Table of contents
 
-Table of contents 3
-
-Introduction 4
-Goal: Climate neutrality by 2030 7
-A Call to Action 8
-Strategic priorities 11
-Process and principles 14
-Signatories 17
-
-Appendix 1: Sustainable Glasgow Charter 19
-
-OFFICIAL
-Climate-Neutrality Commitments
-
-4
+- Introduction
+- Goal: Climate neutrality by 2030
+- A Call to Action
+- Strategic priorities
+- Process and principles
+- Signatories
+- Appendix 1: Sustainable Glasgow Charter
+- OFFICIAL
+- Climate-Neutrality Commitments
 
 # 1 Introduction
 

@@ -19,29 +19,28 @@ C
 
 # Table of Contents
 
-Table of Contents ... 6
-Summary ... 7
-List of figures ... 8
-List of tables ... 8
-Notes ... 9
-Introduction ... 10
-Part A – Current State of Climate Action ... 13
-Module A-1 Greenhouse Gas Emissions Baseline Inventory ... 13
-Module A-2 Current Policies and Strategies Assessment ... 24
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality ... 34
-Part B – Pathways towards Climate Neutrality by 2030 ... 45
-Module B-1 Climate Neutrality Scenarios and Impact Pathways ... 45
-Module B-2 Climate Neutrality Portfolio Design ... 49
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 70
-Part C – Enabling Climate Neutrality by 2030 ... 72
-Module C-1 Governance Innovation Interventions ... 72
-Module C-2 Social Innovation Interventions ... 78
-Outlook and next steps ... 84
-Annexes ... 84
-SCRAM
-COMUNE DI BERGAMO
-Climate Neutrality Action Plan
-C
+- Summary
+- List of figures
+- List of tables
+- Notes
+- Introduction
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- Module C-2 Social Innovation Interventions
+- Outlook and next steps
+- Annexes
+- SCRAM
+- COMUNE DI BERGAMO
+- Climate Neutrality Action Plan
+- C
 
 # Summary
 
@@ -2613,18 +2612,14 @@ Climate-Neutrality Commitments
 
 # Table of contents
 
-Table of contents ... 4
-Introduction ... 5
-Goal: Climate neutrality by 2030 ... 7
-Strategic priorities ... 8
-Process and principles ... 11
-Signatories ... 13
-Contract with signatures ... 18
-CERUE DU BERGAMO
-
-Climate-Neutrality Commitments
-
-O
+- Introduction
+- Goal: Climate neutrality by 2030
+- Strategic priorities
+- Process and principles
+- Signatories
+- Contract with signatures
+- CERUE DU BERGAMO
+- Climate-Neutrality Commitments
 
 # 1 Introduction
 

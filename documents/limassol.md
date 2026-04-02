@@ -24,152 +24,122 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of Contents
 
-Table of Contents 2
-
-Introduction 14
-
-Objectives and Principles 15
-
-Analysis 15
-Central Objective 15
-Principles 16
-
-Political Will, Overall Strategy, Priorities and Focus 16
-
-Drawing the master meta-plan 16
-From thematic areas of emissions to mitigation projects 17
-Guiding principles for project priorities 19
-
-Lemesos: Data, Focus, and Stakeholders 20
-
-Lemesos Fundamentals 20
-Geographic and Social Focus 20
-Stakeholders 22
-Co-workshops and the Lemesos Commons 23
-
-Implementation: Method, Projects, Synchronization, Work Progress, Timeline 26
-
-Governance and Participation 26
-Selection criteria for project implementation 29
-Three-year Plan (2023-2026) 29
-Intervention interdependencies and The Growing Spiral 30
-Work Progress and Timing 33
-
-Barriers, Opportunities, Risk Analysis 38
-
-Emission sources, solutions and barriers 38
-Opportunities 39
-Risk analysis 40
-
-Impact and KPI's 40
-
-Impact pathways 40
-Key Performance Indicators 41
-Monitoring, Evaluation and Learning 44
-
-Side effects and other issues 44
-Annex I: 2023-26 Exemplary Project summary 45
-Annex II: Short presentations of the thematic area Actions 50
-LIMASSOL2030
-Climate Neutrality Action Plan
-
-Energy ... 50
-Built Environment ... 52
-Mobility – Transportation ... 53
-Waste ... 55
-Coastal and Port ... 57
-Smart city (horizontal) actions ... 58
-
-Work Process ... 60
-Part A – Current State of Climate Action ... 65
-
-Module A-1 Greenhouse Gas Emissions Baseline Inventory ... 65
-A-1.1: Final energy use by source sectors ... 65
-A-1.2: Emission factors applied ... 66
-A-1.3: Activity by source sectors ... 68
-A-1.4: GHG emissions by source sectors ... 69
-A-1.5: Graphics and charts ... 70
-A-1.6: Description and assessment of GHG baseline inventory ... 77
-
-Module A-2 Current Policies and Strategies Assessment ... 77
-A-2.1: List of relevant policies, strategies &amp; regulations ... 77
-A-2.2: Description &amp; assessment of policies ... 85
-A-2.3: Emissions gap (kt CO2e) ... 86
-
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality ... 87
-A-3.1: Systems &amp; stakeholder mapping ... 87
-A-3.2: Description of systemic barriers – textual elements ... 89
-A-3.3: Description or visualisation of participatory model for the city climate neutrality – textual and visual elements ... 92
-
-Part B – Pathways towards Climate Neutrality by 2030 ... 95
-
-Module B-1 Climate Neutrality Scenarios and Impact Pathways ... 95
-B-1.1.1: Impact Pathways Energy Systems ... 95
-B1.1.2: Impact Pathways Built Environment_Action 1: Deep Energy Refurbishment of the Building Stock and Urban regeneration ... 99
-B1.1.3: Impact Pathways Built Environment_Action 2: Construction of New Buildings ... 105
-B1.1.4: Impact Pathways Transport and Mobility ... 111
-B-1.1.5: Impact Pathways Sustainable Municipal Solid Waste (MSW) Management; Circular Economy; Zero Waste ... 113
-B-1.2: Description of impact pathways– textual and visual elements ... 119
-
-Module B-2 Climate Neutrality Portfolio Design ... 144
-B-2.1: Description of action portfolios - textual or visual ... 144
-B-2.2.1: Energy Systems_Action 1: Change in electricity production mix (EA_0: Change Electricity Mix) ... 154
-B-2.2.2: Energy Systems_Action 2: Install a large-scale photovoltaics park and establish an energy community (EA_1: PV Park &amp; Energy Community) ... 157
-LIMASSOL2030
-Climate Neutrality Action Plan
-
-B-2.2.3: Energy Systems_Action 3: Install Fresnel systems to provide Industrial process heat (EA_2: Fresnel System) ... 160
-B-2.2.4: Energy Systems_Action 4: Renewables in residential buildings with behind-the-meter storage (with built environment) (EA_3: Residential RE with storage) ... 162
-B-2.2.5: Energy Systems_Action 5: Installation of heat pumps at commercial and residential buildings (with built environment) (EA_4: Heat Pumps-residential) ... 165
-B-2.2.6: Energy Systems_Action 6: Centralised RES generation and long-term storage to satisfy increased demand from Mission actions (EA_5: RES generation and long-term storage) ... 168
-B-2.2.7: Built Environment: Action1_Deep Building Renovation (BA_1: Deep building renovation) ... 172
-B-2.2.8: Built Environment: Action 2_New carbon-neutral Buildings (BA2_New carbon-neutral buildings) ... 177
-B-2.2.9: Built Environment: Action 3_Urban Regeneration (BA3_Urban regeneration) ... 181
-B-2.2.10: Mobility and Transport : Action 1_Implementation of Public Transportation Strategies (TA_1 : Public transportation strategies) ... 188
-B-2.2.11: Mobility and Transport : Action 2_ Enhancing Micro-mobility Modal Split (TA_2: Micromobility modal split) ... 190
-B-2.2.12: Mobility and Transport : Action 3_Development of Comprehensive Pedestrian Network (TA_3: Comprehensive Pedestrian Network) ... 192
-B-2.2.13: Mobility and Transport: Action 4_Establishment of Vehicle Electrification Strategies (TA_4: Vehicle Electrification) ... 194
-B-2.2.14: Mobility and Transport: Action 5_Strategies Improving the Efficiency of Freight Transportation (TA_5: Efficient Freight Transportation) ... 196
-B-2.2.15: Mobility and Transport: Action 6_Optimization of Transportation Demand (TDM Strategies) (TA_6 : TDM Strategies) ... 197
-B-2.2.16: Mobility and Transport: Action 7_Incorporation of Smart Technologies in Sustainable Transportation Strategies (TA_7: Smart Technologies in Sustainable Transportation) ... 199
-B-2.2.17: Waste Management and Circular Economy : Action 1_Waste segregation to remove organic waste for energy and fertilizer production (WA_1: Waste (organic) to energy) ... 203
-B-2.2.18: Waste Management and Circular Economy : Action 2_Zero waste production (circular economy) in Lemesos (WA_2: Zero waste production) ... 205
-B-2.2.19: Sea and Coastal: Action1_Design and Development of Cold Ironing Infrastructure for the Limassol Port (CA_1: Cold Ironing in the Limassol Port) ... 209
-B-2.2.20: Sea and Coastal: Action 2_Carbon Neutrality in Blue Infrastructure – The case of Limassol Marina (CA_2: Limassol Marina energy community) ... 212
-B-2.2.21: Coastal and Sea: Action 3_MERA (CA_3: MERA) ... 219
-B-2.2.22: Coastal and Sea: Action 4_RECONE (CA_4: RECONE) ... 223
-B-2.2.23: Coastal and Sea: Action 5_Assessing carbon stock and sinking potential of seagrass meadows in Limassol coastal waters and pilot restoration (CA_5: Seagrass meadows in Limassol-carbon sinking and meadow restoration) ... 232
-B-2.2.24: Coastal and Sea: Action 6_Wave Energy Harnessing for Water Desalination (CA_6: Wave energy production) ... 234
-B-2.3: Summary strategy for residual emissions ... 239
-
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 241
-B-3.1.: Impact Pathways ... 241
-LIMASSOL2030
-
-Climate Neutrality Action Plan
-
-B-3.2: Indicator Metadata ... 245
-Part C – Enabling Climate Neutrality by 2030 ... 269
-Module C-1 Organisational and Governance Innovation Interventions ... 269
-C.1.1: Enabling organisational and governance interventions ... 270
-C.1.1.a: Enabling digital ('smart') interventions ... 278
-C-1.2: Description of organisation and governance interventions – textual and visual elements 279
-C-1.2.a: Description of digitalization interventions – textual and visual elements ... 283
-Module C-2 Social and Other Innovation Interventions ... 286
-C.2.1: Enabling social innovation interventions (list of selected initiatives) ... 286
-C-2.2: Description of social innovation interventions – textual and visual elements ... 291
-Module C-3 Financing of Action Portfolio ... 293
-C-3.1: Summary of interventions with cost implication (to be unpacked in Investment Plan) ... 293
-Outlook and next steps ... 301
-Plans for next CCC and Action Plan iteration – textual elements ... 301
-Annexes ... 302
-#
-
-LIMSSOL2030
-
-Climate Neutrality Action Plan
-
-#
+- Introduction
+- Objectives and Principles
+- Analysis
+- Central Objective
+- Principles
+- Political Will, Overall Strategy, Priorities and Focus
+- Drawing the master meta-plan
+- From thematic areas of emissions to mitigation projects
+- Guiding principles for project priorities
+- Lemesos: Data, Focus, and Stakeholders
+- Lemesos Fundamentals
+- Geographic and Social Focus
+- Stakeholders
+- Co-workshops and the Lemesos Commons
+- Implementation: Method, Projects, Synchronization, Work Progress, Timeline
+- Governance and Participation
+- Selection criteria for project implementation
+- Three-year Plan (2023-2026)
+- Intervention interdependencies and The Growing Spiral
+- Work Progress and Timing
+- Barriers, Opportunities, Risk Analysis
+- Emission sources, solutions and barriers
+- Opportunities
+- Risk analysis
+- Impact and KPI's
+- Impact pathways
+- Key Performance Indicators
+- Monitoring, Evaluation and Learning
+- Side effects and other issues
+- Annex I: 2023-26 Exemplary Project summary
+- Annex II: Short presentations of the thematic area Actions
+- LIMASSOL2030
+- Climate Neutrality Action Plan
+- Energy
+- Built Environment
+- Mobility – Transportation
+- Waste
+- Coastal and Port
+- Smart city (horizontal) actions
+- Work Process
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- A-1.1: Final energy use by source sectors
+- A-1.2: Emission factors applied
+- A-1.3: Activity by source sectors
+- A-1.4: GHG emissions by source sectors
+- A-1.5: Graphics and charts
+- A-1.6: Description and assessment of GHG baseline inventory
+- Module A-2 Current Policies and Strategies Assessment
+- A-2.1: List of relevant policies, strategies &amp; regulations
+- A-2.2: Description &amp; assessment of policies
+- A-2.3: Emissions gap (kt CO2e)
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- A-3.1: Systems &amp; stakeholder mapping
+- A-3.2: Description of systemic barriers – textual elements
+- A-3.3: Description or visualisation of participatory model for the city climate neutrality – textual and visual elements
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- B-1.1.1: Impact Pathways Energy Systems
+- B1.1.2: Impact Pathways Built Environment_Action 1: Deep Energy Refurbishment of the Building Stock and Urban regeneration
+- B1.1.3: Impact Pathways Built Environment_Action 2: Construction of New Buildings
+- B1.1.4: Impact Pathways Transport and Mobility
+- B-1.1.5: Impact Pathways Sustainable Municipal Solid Waste (MSW) Management; Circular Economy; Zero Waste
+- B-1.2: Description of impact pathways– textual and visual elements
+- Module B-2 Climate Neutrality Portfolio Design
+- B-2.1: Description of action portfolios - textual or visual
+- B-2.2.1: Energy Systems_Action 1: Change in electricity production mix (EA_0: Change Electricity Mix)
+- B-2.2.2: Energy Systems_Action 2: Install a large-scale photovoltaics park and establish an energy community (EA_1: PV Park &amp; Energy Community)
+- LIMASSOL2030
+- Climate Neutrality Action Plan
+- B-2.2.3: Energy Systems_Action 3: Install Fresnel systems to provide Industrial process heat (EA_2: Fresnel System)
+- B-2.2.4: Energy Systems_Action 4: Renewables in residential buildings with behind-the-meter storage (with built environment) (EA_3: Residential RE with storage)
+- B-2.2.5: Energy Systems_Action 5: Installation of heat pumps at commercial and residential buildings (with built environment) (EA_4: Heat Pumps-residential)
+- B-2.2.6: Energy Systems_Action 6: Centralised RES generation and long-term storage to satisfy increased demand from Mission actions (EA_5: RES generation and long-term storage)
+- B-2.2.7: Built Environment: Action1_Deep Building Renovation (BA_1: Deep building renovation)
+- B-2.2.8: Built Environment: Action 2_New carbon-neutral Buildings (BA2_New carbon-neutral buildings)
+- B-2.2.9: Built Environment: Action 3_Urban Regeneration (BA3_Urban regeneration)
+- B-2.2.10: Mobility and Transport : Action 1_Implementation of Public Transportation Strategies (TA_1 : Public transportation strategies)
+- B-2.2.11: Mobility and Transport : Action 2_ Enhancing Micro-mobility Modal Split (TA_2: Micromobility modal split)
+- B-2.2.12: Mobility and Transport : Action 3_Development of Comprehensive Pedestrian Network (TA_3: Comprehensive Pedestrian Network)
+- B-2.2.13: Mobility and Transport: Action 4_Establishment of Vehicle Electrification Strategies (TA_4: Vehicle Electrification)
+- B-2.2.14: Mobility and Transport: Action 5_Strategies Improving the Efficiency of Freight Transportation (TA_5: Efficient Freight Transportation)
+- B-2.2.15: Mobility and Transport: Action 6_Optimization of Transportation Demand (TDM Strategies) (TA_6 : TDM Strategies)
+- B-2.2.16: Mobility and Transport: Action 7_Incorporation of Smart Technologies in Sustainable Transportation Strategies (TA_7: Smart Technologies in Sustainable Transportation)
+- B-2.2.17: Waste Management and Circular Economy : Action 1_Waste segregation to remove organic waste for energy and fertilizer production (WA_1: Waste (organic) to energy)
+- B-2.2.18: Waste Management and Circular Economy : Action 2_Zero waste production (circular economy) in Lemesos (WA_2: Zero waste production)
+- B-2.2.19: Sea and Coastal: Action1_Design and Development of Cold Ironing Infrastructure for the Limassol Port (CA_1: Cold Ironing in the Limassol Port)
+- B-2.2.20: Sea and Coastal: Action 2_Carbon Neutrality in Blue Infrastructure – The case of Limassol Marina (CA_2: Limassol Marina energy community)
+- B-2.2.21: Coastal and Sea: Action 3_MERA (CA_3: MERA)
+- B-2.2.22: Coastal and Sea: Action 4_RECONE (CA_4: RECONE)
+- B-2.2.23: Coastal and Sea: Action 5_Assessing carbon stock and sinking potential of seagrass meadows in Limassol coastal waters and pilot restoration (CA_5: Seagrass meadows in Limassol-carbon sinking and meadow restoration)
+- B-2.2.24: Coastal and Sea: Action 6_Wave Energy Harnessing for Water Desalination (CA_6: Wave energy production)
+- B-2.3: Summary strategy for residual emissions
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- B-3.1.: Impact Pathways
+- LIMASSOL2030
+- Climate Neutrality Action Plan
+- B-3.2: Indicator Metadata
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Organisational and Governance Innovation Interventions
+- C.1.1: Enabling organisational and governance interventions
+- C.1.1.a: Enabling digital ('smart') interventions
+- C-1.2: Description of organisation and governance interventions – textual and visual elements
+- C-1.2.a: Description of digitalization interventions – textual and visual elements
+- Module C-2 Social and Other Innovation Interventions
+- C.2.1: Enabling social innovation interventions (list of selected initiatives)
+- C-2.2: Description of social innovation interventions – textual and visual elements
+- Module C-3 Financing of Action Portfolio
+- C-3.1: Summary of interventions with cost implication (to be unpacked in Investment Plan)
+- Outlook and next steps
+- Plans for next CCC and Action Plan iteration – textual elements
+- Annexes
+- #
+- LIMSSOL2030
+- Climate Neutrality Action Plan
+- #
 
 # Summary
 
@@ -7019,34 +6989,25 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of contents
 
-Introduction 1
-Goal: Climate neutrality by 2030 1
-Key priorities and strategic interventions 3
-Principles and process 5
-
-Key principles 5
-Participation: Citizens, Marginalized Groups and Stakeholders 7
-
-Co-workshops: Participatory co-design solution workshops 7
-The Lemesos Commons: from solutions to projects 8
-Civic engagement: participation and challenges 8
-Socially marginalized groups 9
-Stakeholder Participation 10
-The Iterative, Agile Process of CCC Development 11
-
-Governance 12
-
-Contract with signatures, agreements and support 15
-Contract with signatures 42
-
-Appendices 43
-1
-
-LIMSSOL2030
-
-Climate-Neutrality Commitments
-
-#
+- Introduction
+- Goal: Climate neutrality by 2030
+- Key priorities and strategic interventions
+- Principles and process
+- Key principles
+- Participation: Citizens, Marginalized Groups and Stakeholders
+- Co-workshops: Participatory co-design solution workshops
+- The Lemesos Commons: from solutions to projects
+- Civic engagement: participation and challenges
+- Socially marginalized groups
+- Stakeholder Participation
+- The Iterative, Agile Process of CCC Development
+- Governance
+- Contract with signatures, agreements and support
+- Contract with signatures
+- Appendices
+- LIMSSOL2030
+- Climate-Neutrality Commitments
+- #
 
 # 1 Introduction
 

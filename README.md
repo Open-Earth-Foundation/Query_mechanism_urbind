@@ -1,12 +1,11 @@
 # Query Mechanism Urbind
 
-Multi-agent document builder that answers user questions by combining SQL data (optional; disabled by default) and Markdown sources. It orchestrates a SQL Researcher, Markdown Researcher, and Writer with OpenAI Agents, and logs every run artifact for inspection.
+Multi-agent document builder that answers user questions from Markdown sources. It orchestrates research-question refinement, markdown extraction, and writing with OpenAI Agents, and logs every run artifact for inspection.
 
 ## Requirements
 
 - Python 3.11+
 - Node.js 20+ (frontend)
-- Local SQLite source DB derived from `backend/db_models/` (required only when SQL is enabled)
 - `OPENROUTER_API_KEY` in environment
 
 ## Install
@@ -45,31 +44,23 @@ The `uv.lock` file is committed to ensure reproducible builds.
 Environment variables (`.env`):
 
 - `OPENROUTER_API_KEY` (required): API key used for all LLM calls via OpenRouter.
-- `ENABLE_SQL` (optional, default `false`): enables SQL mode by default for pipeline runs.
-- `DATABASE_URL` (optional): Postgres source database URL. When set, it is used instead of SQLite (`SOURCE_DB_PATH`). Also used by `python -m backend.scripts.test_db_connection`.
-- `SOURCE_DB_PATH` (optional, default `data/source.db`): SQLite source DB path used when `DATABASE_URL` is not set.
 - `MARKDOWN_DIR` (optional, default `documents`): default directory scanned for markdown files.
 - `RUNS_DIR` (optional, default `output`): base directory for run artifacts.
-- `API_CHAT_JOB_WORKERS` (optional, default `1`): dedicated worker count for async split-mode chat jobs.
-- `LOG_LEVEL` (optional, default `INFO`): logging verbosity (`DEBUG`, `INFO`, `WARNING`, `ERROR`).
-- `OPENROUTER_BASE_URL` (optional, default `https://openrouter.ai/api/v1`): custom OpenRouter-compatible base URL.
 - `LLM_CONFIG_PATH` (optional, default `llm_config.yaml`): API config file path.
 - `CITY_GROUPS_PATH` (optional, default `backend/api/assets/city_groups.json`): city groups catalog JSON path.
 
 Chat prompt sizing, follow-up router history and excerpt caps, retry backoff, and provider timeouts now come from `llm_config.yaml`.
+
 - `VECTOR_STORE_ENABLED` (optional, default `false`): enables local Chroma markdown indexing flows.
-- `ANONYMIZED_TELEMETRY` (optional, default `FALSE`): disables Chroma anonymized telemetry when set to `FALSE`.
 - `CHROMA_PERSIST_PATH` (optional, default `.chroma`): local Chroma persistence directory.
 - `CHROMA_COLLECTION_NAME` (optional, default `markdown_chunks`): Chroma collection used for markdown chunks.
-- Vector-store embedding and retrieval tuning is configured in `llm_config.yaml` under `vector_store.*` (for example `embedding_model`, `embedding_max_input_tokens`, `retrieval_max_distance`, `auto_update_on_run`, `index_manifest_path`).
-
-CLI flags override `.env` values for a given run (for example `--db-path`, `--db-url`, `--markdown-path`, `--enable-sql`).
-Use `--city` (repeatable) to load markdown only for selected city files. City filters are normalized case-insensitively to backend `city_key` values (for example `Munich`, `MUNICH`, and `munich` all resolve to `munich`).
+- Vector-store embedding and retrieval tuning is configured in `llm_config.yaml`
+  CLI flags override `.env` values for a given run (for example `--markdown-path`).
+  Use `--city` (repeatable) to load markdown only for selected city files. City filters are normalized case-insensitively to backend `city_key` values (for example `Munich`, `MUNICH`, and `munich` all resolve to `munich`).
 
 Example `.env.example` is provided. Use `llm_config.yaml` as the source of truth for vector-store and markdown batching tuning.
 
 Default output directory is `output/` (unless overridden by `RUNS_DIR`).
-Schema summary for SQL generation is derived from `backend/db_models/`.
 
 ### Vector retrieval sizing and thresholds
 
@@ -80,7 +71,7 @@ When vector retrieval is enabled, retrieval runs per city and per query (origina
   - if `vector_store.retrieval_max_distance` is set, it first keeps only candidates with `distance <= cutoff`;
   - if fewer than `vector_store.retrieval_fallback_min_chunks_per_city_query` pass the cutoff, it **tops up** with the next-best candidates (above the cutoff) until it reaches the fallback minimum (or runs out of candidates).
 - After per-(city × query) retrieval:
-  - results are merged across queries within a city (dedupe by `chunk_id`, keep the smallest distance);
+  - results are merged across queries within a city (dedupe by `chunk_id`, keep the smallest distance as chunk distance metadata);
   - neighbor chunks are added by `chunk_index` window (same file/city);
   - optionally, `vector_store.retrieval_max_chunks_per_city` caps the final chunks per city after merge + neighbor expansion.
 - Retrieval artifacts now persist both layers explicitly:
@@ -106,15 +97,6 @@ Distance scale note:
 - `0` means identical vectors; values above `0` are increasingly dissimilar.
 - A cutoff of `0` is the strictest setting and usually returns very few (often zero) chunks, not all chunks.
 
-How to estimate chunk counts:
-
-- **Minimum (practical):**
-  - per (city × query): approximately `min(vector_store.retrieval_fallback_min_chunks_per_city_query, available_chunks_total)`, before merge/neighbor expansion.
-- **Maximum (practical):**
-  - per (city × query): `vector_store.retrieval_max_chunks_per_city_query`, before merge/neighbor expansion;
-  - bounded by `vector_store.retrieval_max_chunks_per_city` if set;
-  - otherwise depends on distance cutoff + number of merged queries + neighbor expansion windows.
-
 Recommended tuning workflow:
 
 1. Start recall-friendly:
@@ -138,65 +120,11 @@ If key authentication fails:
 - chat endpoints return `401` with a key-specific message
 - UI surfaces the error so backend credentials can be fixed and the run retried.
 
-Example `llm_config.yaml`:
-
-```
-orchestrator:
-  model: "moonshotai/kimi-k2.5"
-  temperature: 0.0
-  context_bundle_name: "context_bundle.json"
-  context_window_tokens: 256000
-  input_token_reserve: 2000
-sql_researcher:
-  model: "moonshotai/kimi-k2.5"
-  temperature: 0.0
-  max_result_tokens: 100000
-  context_window_tokens: 256000
-  input_token_reserve: 2000
-markdown_researcher:
-  model: "openai/gpt-5-mini"
-  temperature: 0.0
-  # Optional Grok-only setting. Unsupported models/providers may reject requests.
-  # reasoning_effort: "none"
-  context_window_tokens: 400000
-  input_token_reserve: 2000
-  max_turns: 10
-  max_chunk_tokens: 120000
-  chunk_overlap_tokens: 200
-  batch_max_chunks: 32
-  batch_max_input_tokens: null
-  batch_overhead_tokens: 600
-  max_workers: 8
-writer:
-  model: "moonshotai/kimi-k2.5"
-  temperature: 0.0
-  context_window_tokens: 256000
-  input_token_reserve: 2000
-chat:
-  model: "openai/gpt-5.4-mini"
-  temperature: 0.0
-  context_window_tokens: 400000
-  input_token_reserve: 20000
-  max_history_messages: 24
-  followup_search_enabled: false
-  max_auto_followup_bundles: 3
-  followup_router_max_history_messages: 6
-  followup_router_max_excerpts_per_source: 50
-assumptions_reviewer:
-  model: "openai/gpt-5.4-mini"
-  temperature: 0.0
-  max_output_tokens: 8000
-retry:
-  max_attempts: 3
-  backoff_base_seconds: 0.8
-  backoff_max_seconds: 8.0
-openrouter_base_url: "https://openrouter.ai/api/v1"
-enable_sql: false
-```
+Example in `llm_config.yaml`
 
 ### How token and size limits are applied
 
-Shared input-budget logic (used by orchestrator, SQL researcher, markdown researcher, and writer):
+Shared input-budget logic (used by orchestrator, markdown researcher, and writer):
 
 ```text
 if max_input_tokens is set:
@@ -215,7 +143,6 @@ What each key controls:
 - `input_token_reserve`: Safety margin kept free for system/tool overhead; subtracted from the available input budget.
 - `max_output_tokens`: Output cap (when set) and also subtracted from input budget.
 - `max_input_tokens`: Hard override for input budget; if set, it takes precedence over the formula above.
-- `sql_researcher.max_result_tokens`: Hard cap for SQL rows included in the capped SQL bundle passed downstream.
 - `markdown_researcher.max_chunk_tokens`: Hard cap for each markdown chunk size.
 - `markdown_researcher.chunk_overlap_tokens`: Token overlap between neighboring chunks.
 - `markdown_researcher.max_turns`: Max LLM turns per markdown batch extraction call.
@@ -226,9 +153,6 @@ What each key controls:
 
 How this influences runtime behavior:
 
-- SQL results are token-capped in `cap_results()`. Once the cap is hit, remaining rows are excluded from the capped payload.
-- SQL truncation is recorded as `truncation_applied` in the SQL bundle and `truncated` in SQL result items.
-- Full SQL output is still written to `output/<run_id>/sql/results_full.json`; capped SQL is written to `output/<run_id>/sql/results.json`.
 - Markdown content is chunked first, then batched by token budget. Chunks larger than the current batch budget are skipped.
 - Each original markdown batch gets `retry.max_attempts` total tries.
 - If an original markdown batch still fails with a retryable markdown extraction error, only that failing batch is recursively halved up to two split rounds.
@@ -238,7 +162,6 @@ How this influences runtime behavior:
 Visibility and warnings:
 
 - Markdown budget/file skips emit warnings in logs.
-- SQL token-cap truncation currently does not emit a dedicated warning line; detect it via `truncation_applied`/`truncated` and by comparing `sql/results.json` vs `sql/results_full.json`.
 
 ## Run (local)
 
@@ -264,17 +187,9 @@ python -m backend.scripts.run_pipeline --question "What initiatives exist for Mu
   --no-log-llm-payload
 ```
 
-Enable SQL (SQLite):
+## Happy-path workflow
 
-```
-python -m backend.scripts.run_pipeline --enable-sql --question "What initiatives exist for Munich?" \
-  --db-path path/to/source.db \
-  --markdown-path documents
-```
-
-## Happy-path workflow (no SQL)
-
-High-level flow from user input to final output text when `ENABLE_SQL=false`:
+High-level flow from user input to final output text:
 
 ```mermaid
 flowchart TD
@@ -455,8 +370,6 @@ Start FastAPI backend:
 python -m uvicorn backend.api.main:app --host 0.0.0.0 --port 8000
 ```
 
-SQL is force-disabled in the API execution path for now.
-
 Core endpoints:
 
 - `GET /` (root health endpoint)
@@ -468,6 +381,7 @@ Core endpoints:
 - `GET /api/v1/runs/{run_id}/references` (canonical citation endpoint; supports optional query params `ref_id` and `include_quote`)
 - `GET /api/v1/runs/{run_id}/references/{ref_id}` (compatibility alias for one reference with quote payload)
 - `GET /api/v1/cities` (city names from markdown filenames in `MARKDOWN_DIR`, without `.md`)
+- `GET /api/v1/cities/{city_name}/markdown` (concatenated raw CCC markdown for one normalized city name, including contributing source paths)
 - `GET /api/v1/city-groups` (predefined city groups filtered to currently available markdown cities)
 - `GET /api/v1/chat/contexts` (catalog of completed run contexts with token counts)
 - `GET /api/v1/runs/{run_id}/chat/sessions`
@@ -706,21 +620,21 @@ In the current implementation, that means:
 - split one oversized chunk in half once when a later request has a tighter budget
 - fail clearly if even a half split cannot fit
 
+Run API locally:
+
+```bash
+python -m uvicorn backend.api.main:app --reload
+```
+
+The API will start on `http://localhost:8000` with auto-reload enabled for development.
+
+(Run from the project root, not from the backend directory.)
+
 Run API in Docker:
 
-```
+```bash
 docker build -f backend/Dockerfile -t query-mechanism-backend .
-docker run -it --rm -p 8000:8000 \
-  --env-file .env \
-  -e RUNS_DIR=/data/output \
-  -e MARKDOWN_DIR=/data/documents \
-  -e LLM_CONFIG_PATH=/data/config/llm_config.yaml \
-  -e CITY_GROUPS_PATH=/data/config/city_groups.json \
-  -v ${PWD}/documents:/data/documents \
-  -v ${PWD}/output:/data/output \
-  -v ${PWD}/llm_config.yaml:/data/config/llm_config.yaml:ro \
-  -v ${PWD}/backend/api/assets/city_groups.json:/data/config/city_groups.json:ro \
-  query-mechanism-backend
+docker run -it --rm -p 8000:8000 --env-file .env query-mechanism-backend
 ```
 
 ## Run frontend (shadcn/Next.js)
@@ -744,7 +658,8 @@ If it is omitted, the frontend falls back to a local backend URL built from `NEX
 
 Frontend supports three city scope modes in the build form: all cities, predefined group, and manual selection.
 Frontend also supports two answer modes: `Aggregate Mode` and `City-by-City Mode` (sent as `analysis_mode` in run requests).
-Clicking `Chat About the Answer` switches to a dedicated chat workspace (not a chat modal).
+Clicking `Chat About the Answer` opens a dedicated chat workspace and keeps the generated writer document available in the left rail for cross-reference.
+When the rail is in `Writer Doc` mode on desktop, a drag handle between the rail and the main workspace lets users resize the document view without leaving chat.
 Document and chat citations render as compact city labels; clicking a label loads and shows only the source quote.
 When `chat.followup_search_enabled` is `true`, the chat router may run a synchronous one-city markdown-only follow-up search, attach the resulting follow-up bundle to the session, and keep citations clickable for both base runs and chat-owned follow-up bundles.
 The follow-up router is intentionally lightweight: it sees a bounded payload with recent history plus compact context summaries, and each source summary may include only a capped subset of excerpts. This trim exists to keep the routing step cheap and stable; the router is only deciding whether the current context is clearly sufficient, whether a fresh one-city search is needed, whether the request is out of scope, or whether city clarification is required.
@@ -823,35 +738,19 @@ Required repository secrets:
 - `EKS_DEV_NAME`
 - `OPENROUTER_API_KEY`
 
-Optional repository variables:
-
-- `EKS_DEV_REGION` (default `us-east-1`)
-- `FRONTEND_API_BASE_URL` (default `https://urbind-query-mechanism-api.openearth.dev`)
-
-## Test DB connection
-
-```
-python -m backend.scripts.test_db_connection
-```
-
 Artifacts are written under `output/<run_id>/`:
 
 - `run.json`: machine-readable run metadata (status, timestamps, artifacts, decisions), including `inputs.analysis_mode` and `artifacts.error_log` when available.
 - `run.log`: detailed runtime logs, including per-agent `LLM_USAGE` lines, chat prompt-window diagnostics (`Context chat reply plan`, `Context chat direct request`, with fitted source ids and token-component counts), retry reason lines (`RETRY_EVENT`/`RETRY_EXHAUSTED` with plain-text fields such as `reason`, `http_status`, `rate_limited`, and markdown split lineage when applicable), and writer city-citation coverage checkpoints (`WRITER_CITATION_COVERAGE`, with `coverage_ratio` such as `33/33`).
 - `error_log.txt`: extracted error-focused log view from `run.log` (`ERROR`, `CRITICAL`, and exhausted retry events).
 - `run_summary.txt`: human-readable consolidated report. Header includes `Started`, `Completed`, and explicit `Total runtime` in seconds, plus `LLM Usage` totals/per-agent. It also captures an input snapshot (`original question`, `query mode`, `canonical research query`, `retrieval query 1..3`, `selected cities` planned/found, markdown dir/file/chunk/excerpt counts) and a `MARKDOWN_FAILURE_SUMMARY` aggregated from batch failures.
-- `context_bundle.json`: payload passed between agents (`sql`, `markdown`, `original_question`, `research_question`, `query_mode`, `retrieval_queries`, `analysis_mode`, final path).
+- `context_bundle.json`: payload passed between agents (`markdown`, `original_question`, `research_question`, `query_mode`, `retrieval_queries`, `analysis_mode`, final path).
 - `research_question.json`: run query metadata payload. Includes:
   - `original_question`: raw user question.
   - `query_mode`: `standard` or `dev`.
   - `canonical_research_query`: canonical research query used downstream.
   - `retrieval_queries`: retrieval-ready query list where index `0` is always `canonical_research_query`.
   - `retrieval_query_1` / `retrieval_query_2` / `retrieval_query_3`: explicit query slots written for easier inspection and reproducibility.
-- `schema_summary.json` (when SQL is enabled): schema digest derived from `backend/db_models/`.
-- `city_list.json` (when SQL is enabled): city names fetched from the source DB.
-- `sql/queries.json` (when SQL is enabled): SQL plan generated by the SQL researcher.
-- `sql/results_full.json` (when SQL is enabled): uncapped SQL execution results.
-- `sql/results.json` (when SQL is enabled): token-capped SQL results sent downstream.
 - `markdown/excerpts.json`: markdown researcher evidence bundle. Includes `excerpts` (items with `quote`, `city_name`, `partial_answer`, `source_chunk_ids`), explicit decision fields (`accepted_chunk_ids`, `rejected_chunk_ids`, `unresolved_chunk_ids`, `batch_failures`), `inspected_cities` (normalized backend city keys present in inspected markdown inputs), and `excerpt_count` (count of extracted excerpts). When split recovery is triggered, successful child-batch evidence and decisions are kept, and only final failed leaf chunks remain unresolved. Stage B extraction recall uses the union of `excerpts[].source_chunk_ids`.
 - `markdown/accepted_excerpts.json`: IDs-only positive decision artifact with accepted chunk IDs and accepted-per-city grouping.
 - `markdown/rejected_excerpts.json`: IDs-only negative decision artifact with rejected chunk IDs and rejected-per-city grouping.

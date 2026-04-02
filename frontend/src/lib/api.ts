@@ -116,6 +116,12 @@ export interface CityListResponse {
   markdown_dir: string;
 }
 
+export interface CityMarkdownResponse {
+  city_name: string;
+  content: string;
+  source_paths: string[];
+}
+
 export interface CityGroup {
   id: string;
   name: string;
@@ -529,6 +535,16 @@ export async function fetchRunSourceChunks(
 
 export async function fetchCities(): Promise<CityListResponse> {
   return requestJson<CityListResponse>("/api/v1/cities");
+}
+
+export async function fetchCityMarkdown(
+  cityName: string,
+  options?: { signal?: AbortSignal },
+): Promise<CityMarkdownResponse> {
+  return requestJson<CityMarkdownResponse>(
+    `/api/v1/cities/${encodeURIComponent(cityName)}/markdown`,
+    { signal: options?.signal },
+  );
 }
 
 export async function fetchCityGroups(): Promise<CityGroupListResponse> {

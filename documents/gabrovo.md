@@ -18,35 +18,29 @@ O
 
 # Table of Contents
 
-Table of Contents... 2
-Summary... 3
-List of figures... 5
-List of tables... 5
-Abbreviations and acronyms... 6
-Introduction... 7
-Part A – Current State of Climate Action... 16
-Module A-1 Greenhouse Gas Emissions Baseline Inventory... 16
-Module A-2 Current Policies and Strategies Assessment... 25
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality... 54
-Part B – Pathways towards Climate Neutrality by 2030... 83
-Module B-1 Climate Neutrality Scenarios and Impact Pathways... 83
-Module B-2 Climate Neutrality Portfolio Design... 96
-Module B-3 Indicators for Monitoring, Evaluation and Learning... 125
-Part C – Enabling Climate Neutrality by 2030... 129
-Module C-1 Governance Innovation Interventions... 130
-Module C-2 Social Innovation Interventions... 142
-Module C-3 Financing of Action Portfolio... 151
-Outlook and next steps... 152
-Annexes... 153
-3
-
-GABROVO
-
-MUNICIPALITY
-
-Climate Neutrality Action Plan
-
-#
+- Summary
+- List of figures
+- List of tables
+- Abbreviations and acronyms
+- Introduction
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- Module C-2 Social Innovation Interventions
+- Module C-3 Financing of Action Portfolio
+- Outlook and next steps
+- Annexes
+- GABROVO
+- MUNICIPALITY
+- Climate Neutrality Action Plan
+- #
 
 # Summary
 
@@ -4041,44 +4035,24 @@ Commitments
 
 # Table of contents
 
-Table of contents... 2
-
-Introduction... 3
-
-Goal: Climate neutrality by 2030... 8
-
-Energy Systems &amp; Built Environment... 8
-
-Mobility &amp; Transport... 9
-
-Waste &amp; Circular Economy... 10
-
-Green Infrastructure &amp; Nature-Based Solutions... 11
-
-Strategic priorities... 13
-
-Energy Systems &amp; Built Environment... 13
-
-Mobility &amp; Transport... 14
-
-Waste &amp; Circular Economy... 15
-
-Green Infrastructure &amp; Nature-Based Solutions... 16
-
-Process and principles... 17
-
-Signatories... 27
-
-Sample contract with signatures... 28
-
-Appendix 1: Individual / Cluster Signatory Commitments (to be added before submitting the Climate City Contract... 29
-0
-
-GABROVO MUNICIPALITY
-
-Climate-Neutrality Commitments
-
-C
+- Introduction
+- Goal: Climate neutrality by 2030
+- Energy Systems &amp; Built Environment
+- Mobility &amp; Transport
+- Waste &amp; Circular Economy
+- Green Infrastructure &amp; Nature-Based Solutions
+- Strategic priorities
+- Energy Systems &amp; Built Environment
+- Mobility &amp; Transport
+- Waste &amp; Circular Economy
+- Green Infrastructure &amp; Nature-Based Solutions
+- Process and principles
+- Signatories
+- Sample contract with signatures
+- Appendix 1: Individual / Cluster Signatory Commitments (to be added before submitting the Climate City Contract
+- GABROVO MUNICIPALITY
+- Climate-Neutrality Commitments
+- C
 
 # 1 Introduction
 

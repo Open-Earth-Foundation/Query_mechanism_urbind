@@ -11,91 +11,81 @@ G
 
 # Table of Contents
 
-Table of Contents ... 2
-List of tables ... 5
-List of figures ... 6
-Reading Guide ... 7
-The Groningen approach in a nutshell ... 9
-From society, by society, for society ... 9
-When and how do we reach climate-neutrality? ... 9
-So, what is Groningen doing to get to CO2 neutrality asap? ... 10
-Every silver lining has its cloud ... 13
-Introduction into Groningen ... 14
-Geography ... 14
-Energetic history ... 18
-Part A – Current State of Climate Action ... 23
-Scope of climate neutrality ... 23
-Greenhouse Gas Emissions Baseline Inventory ... 24
-Current Policies and Strategies Assessment ... 28
-European policies ... 28
-Policies on National Level ... 35
-Regional Policies ... 43
-Local policies ... 45
-Role of hydrogen ... 52
-Energy storage ... 52
-Involvement in Projects co-funded by the European Committee ... 53
-Stakeholder analysis ... 56
-Systemic Barriers and Opportunities to 2030 Climate Neutrality ... 60
-Diversion of the Expression of Interest ... 60
-Lack of capacity in the electric grid ... 61
-Logistical barriers: materials, equipment and personnel ... 67
-Financial barriers ... 70
-Regulatory barriers ... 72
-Gemeente Groningen
-Climate Neutrality Action Plan
-C
-
-Difference in goals between EU and Netherlands and Groningen 73
-
-Part B – Pathways towards Climate Neutrality by 2030 77
-The Energy Transition Model 77
-Berenschot model 78
-Emissions gap 82
-Climate Neutrality actions and pathways 83
-Actions 84
-Pathways 107
-Indicators for Monitoring, Evaluation and Learning 123
-
-Part C – Enabling Climate Neutrality by 2030 137
-Governance Innovation Interventions 137
-Based in society 137
-Participation 138
-Governance within the municipal organisation 141
-Multi-Level Governance 143
-Social Innovation Interventions 144
-Neighbourhood approach 145
-Healthy mobility 146
-Protein transition 148
-
-Outlook and next steps 149
-Policymaking 149
-Governance 150
-Mission orientation 150
-
-Appendices 151
-
-Appendix A: List of Policy Documents 152
-Appendix B: Joint statement of the Dutch cities on climate neutrality targets 155
-Summary 155
-Climate neutrality targets in the Dutch mission cities context 155
-Appendix C: Response to remarks by the JRC on the Groningen CCC (added Sept 5th 2025) 161
-Introduction 161
-Target formulation and emissions gap 162
-
-September 2024, with additional appendices Sept 2025
-Gemeente Groningen
-Climate Neutrality Action Plan
-C
-
-Residual emission strategy ... 166
-Local compensation and carbon storage ... 168
-Action quantification and narrative ... 170
-Appendix D: Report Energy Transition Model ... 173
-
-September 2024, with additional appendices Sept 2025
-Gemeente Groningen
-Climate Neutrality Action Plan
-C
+- List of tables
+- List of figures
+- Reading Guide
+- The Groningen approach in a nutshell
+- From society, by society, for society
+- When and how do we reach climate-neutrality
+- So, what is Groningen doing to get to CO2 neutrality asap
+- Every silver lining has its cloud
+- Introduction into Groningen
+- Geography
+- Energetic history
+- Part A – Current State of Climate Action
+- Scope of climate neutrality
+- Greenhouse Gas Emissions Baseline Inventory
+- Current Policies and Strategies Assessment
+- European policies
+- Policies on National Level
+- Regional Policies
+- Local policies
+- Role of hydrogen
+- Energy storage
+- Involvement in Projects co-funded by the European Committee
+- Stakeholder analysis
+- Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Diversion of the Expression of Interest
+- Lack of capacity in the electric grid
+- Logistical barriers: materials, equipment and personnel
+- Financial barriers
+- Regulatory barriers
+- Gemeente Groningen
+- Climate Neutrality Action Plan
+- C
+- Difference in goals between EU and Netherlands and Groningen
+- Part B – Pathways towards Climate Neutrality by 2030
+- The Energy Transition Model
+- Berenschot model
+- Emissions gap
+- Climate Neutrality actions and pathways
+- Actions
+- Pathways
+- Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Governance Innovation Interventions
+- Based in society
+- Participation
+- Governance within the municipal organisation
+- Multi-Level Governance
+- Social Innovation Interventions
+- Neighbourhood approach
+- Healthy mobility
+- Protein transition
+- Outlook and next steps
+- Policymaking
+- Governance
+- Mission orientation
+- Appendices
+- Appendix A: List of Policy Documents
+- Appendix B: Joint statement of the Dutch cities on climate neutrality targets
+- Summary
+- Climate neutrality targets in the Dutch mission cities context
+- Appendix C: Response to remarks by the JRC on the Groningen CCC (added Sept 5th 2025)
+- Introduction
+- Target formulation and emissions gap
+- September 2024, with additional appendices Sept 2025
+- Gemeente Groningen
+- Climate Neutrality Action Plan
+- C
+- Residual emission strategy
+- Local compensation and carbon storage
+- Action quantification and narrative
+- Appendix D: Report Energy Transition Model
+- September 2024, with additional appendices Sept 2025
+- Gemeente Groningen
+- Climate Neutrality Action Plan
+- C
 
 # List of tables
 
