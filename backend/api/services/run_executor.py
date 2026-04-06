@@ -192,6 +192,22 @@ class RunExecutor:
             if _looks_like_api_key_error(normalized_message):
                 error_code = "API_KEY_ERROR"
                 finish_reason = "api_key_error"
+            persisted_finish_reason, persisted_error = _load_persisted_failure_details(
+                self._run_store.runs_dir,
+                run_id,
+            )
+            if persisted_finish_reason is not None:
+                finish_reason = persisted_finish_reason
+            if persisted_error is not None:
+                error_code = persisted_error.code
+                normalized_message = persisted_error.message
+            if persisted_finish_reason is not None or persisted_error is not None:
+                logger.info(
+                    "Preserving persisted pipeline failure run_id=%s finish_reason=%s error_code=%s",
+                    run_id,
+                    finish_reason,
+                    error_code,
+                )
             run_log_path = _persist_executor_failure_artifacts(
                 runs_dir=self._run_store.runs_dir,
                 run_id=run_id,
@@ -216,6 +232,58 @@ def _normalize_error_message(message: str) -> str:
     cleaned = message.strip() or "Unknown execution error."
     cleaned = _MASKABLE_KEY_PATTERN.sub("sk-***", cleaned)
     return cleaned
+
+
+def _coerce_run_error(value: object) -> RunError | None:
+    """Normalize one persisted run error payload when present."""
+    if not isinstance(value, dict):
+        return None
+    code = value.get("code")
+    message = value.get("message")
+    if not isinstance(code, str) or not code.strip():
+        return None
+    if not isinstance(message, str):
+        return None
+    return RunError(
+        code=code.strip(),
+        message=_normalize_error_message(message),
+    )
+
+
+def _extract_run_log_error(run_log_payload: dict[str, object]) -> RunError | None:
+    """Return the most specific persisted error stored in ``run.json``."""
+    persisted_error = _coerce_run_error(run_log_payload.get("error"))
+    if persisted_error is not None:
+        return persisted_error
+
+    decisions = run_log_payload.get("decisions")
+    if not isinstance(decisions, list):
+        return None
+    for decision in reversed(decisions):
+        if not isinstance(decision, dict):
+            continue
+        decision_error = _coerce_run_error(decision.get("error"))
+        if decision_error is not None:
+            return decision_error
+    return None
+
+
+def _load_persisted_failure_details(
+    runs_dir: Path,
+    run_id: str,
+) -> tuple[str | None, RunError | None]:
+    """Load persisted failure details from ``run.json`` when already finalized."""
+    run_log_payload = _read_run_log_payload(runs_dir / run_id / "run.json")
+    if run_log_payload is None or run_log_payload.get("status") != "failed":
+        return None, None
+
+    finish_reason = run_log_payload.get("finish_reason")
+    normalized_finish_reason = (
+        finish_reason.strip()
+        if isinstance(finish_reason, str) and finish_reason.strip()
+        else None
+    )
+    return normalized_finish_reason, _extract_run_log_error(run_log_payload)
 
 
 def _looks_like_api_key_error(message: str) -> bool:
@@ -274,6 +342,7 @@ def _build_terminal_update(run_id: str, run_paths: RunPaths) -> TerminalUpdate:
             if isinstance(finish_value, str):
                 finish_reason = finish_value
 
+            error_payload = _extract_run_log_error(run_log_payload)
             artifacts = run_log_payload.get("artifacts")
             if isinstance(artifacts, dict):
                 final_output_path = _resolve_artifact_path(
@@ -281,6 +350,13 @@ def _build_terminal_update(run_id: str, run_paths: RunPaths) -> TerminalUpdate:
                 )
                 context_bundle_path = _resolve_artifact_path(
                     artifacts.get("context_bundle"), context_bundle_path
+                )
+            if status == "failed" and error_payload is not None:
+                logger.info(
+                    "Run failure details loaded run_id=%s finish_reason=%s error_code=%s",
+                    run_id,
+                    finish_reason,
+                    error_payload.code,
                 )
 
     if status == "failed" and error_payload is None:

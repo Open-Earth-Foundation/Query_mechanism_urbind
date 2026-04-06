@@ -1357,10 +1357,12 @@ export default function Home() {
                   {documentReady ? (
                     <>
                       <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
-                        <DocumentExportControls
-                          runId={runId}
-                          content={runOutput.content}
-                        />
+                        {runId ? (
+                          <DocumentExportControls
+                            runId={runId}
+                            content={runOutput.content}
+                          />
+                        ) : null}
                         <div className="flex flex-wrap gap-2">
                           {devFeatures.showAssumptionsEntry ? (
                             <Button

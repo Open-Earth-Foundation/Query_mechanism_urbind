@@ -826,6 +826,14 @@ docker compose up --build
 pytest
 ```
 
+Frontend build verification:
+
+```
+cd frontend
+npm ci
+npm run build
+```
+
 ## Async API smoke test (pre-frontend)
 
 Use this script to validate the async backend lifecycle contract before frontend integration:
