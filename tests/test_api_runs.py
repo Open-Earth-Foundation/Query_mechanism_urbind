@@ -4,9 +4,11 @@ import shutil
 import threading
 import time
 from datetime import datetime, timezone
+from io import BytesIO
 from pathlib import Path
 
 import pytest
+from docx import Document
 from fastapi.testclient import TestClient
 
 from backend.api.main import create_app
@@ -904,6 +906,41 @@ def test_api_output_and_context_resolve_stale_container_artifact_paths(
         context_response = client.get(f"/api/v1/runs/{run_id}/context")
         assert context_response.status_code == 200
         assert isinstance(context_response.json()["context_bundle"], dict)
+
+
+def test_api_docx_export_returns_word_document(tmp_path: Path) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    run_id = "run-docx-export"
+    paths = _write_success_artifacts(
+        question="Export run",
+        run_id=run_id,
+        config=config,
+    )
+    paths.final_output.write_text(
+        "# Export report\n\n"
+        "| City | Comment mode |\n"
+        "| --- | --- |\n"
+        "| Munich | Google Doc review |\n",
+        encoding="utf-8",
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get(f"/api/v1/runs/{run_id}/export/docx")
+        assert response.status_code == 200
+        assert (
+            response.headers["content-type"]
+            == "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        )
+        assert f'filename="{run_id}.docx"' in response.headers["content-disposition"]
+
+    document = Document(BytesIO(response.content))
+    assert document.paragraphs[0].text == "Export report"
+    assert len(document.tables) == 1
+    assert document.tables[0].rows[1].cells[0].text == "Munich"
 
 
 def test_api_list_runs_drops_entry_after_artifact_folder_is_deleted(tmp_path: Path) -> None:

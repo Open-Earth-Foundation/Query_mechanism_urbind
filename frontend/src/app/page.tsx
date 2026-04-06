@@ -26,6 +26,7 @@ import { CccDocumentRail } from "@/components/ccc-document-rail";
 import { ContextChatWorkspace } from "@/components/context-chat/context-chat-workspace";
 import { DevModeToggle } from "@/components/dev-mode-toggle";
 import { DevToolsPanel } from "@/components/dev-tools-panel";
+import { DocumentExportControls } from "@/components/document-export-controls";
 import { MarkdownWithReferences } from "@/components/markdown-with-references";
 import { SearchableCityPicker } from "@/components/searchable-city-picker";
 import { WriterDocumentRail } from "@/components/writer-document-rail";
@@ -1355,8 +1356,12 @@ export default function Home() {
                 <CardContent>
                   {documentReady ? (
                     <>
-                      <div className="mb-3 flex justify-end">
-                        <div className="flex gap-2">
+                      <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+                        <DocumentExportControls
+                          runId={runId}
+                          content={runOutput.content}
+                        />
+                        <div className="flex flex-wrap gap-2">
                           {devFeatures.showAssumptionsEntry ? (
                             <Button
                               type="button"
