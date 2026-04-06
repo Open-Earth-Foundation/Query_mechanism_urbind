@@ -20,6 +20,7 @@ INLINE_TOKEN_PATTERN = re.compile(
     r"(\*\*[^*]+\*\*|__[^_]+__|`[^`]+`|\*[^*]+\*|_[^_]+_|\[[^\]]+\]\([^)]+\))"
 )
 TABLE_ALIGNMENT_PATTERN = re.compile(r"^:?-{3,}:?$")
+EXPORT_CITATION_PATTERN = re.compile(r"(?:\s*\[ref_[^\]\s]+\](?!\())+")
 
 
 def markdown_to_docx_bytes(markdown: str) -> bytes:
@@ -215,6 +216,7 @@ def _add_fenced_code_block(
 
 def _append_inline_runs(paragraph: Paragraph, text: str) -> None:
     """Render simple inline markdown formatting into docx runs."""
+    text = _strip_export_citations(text)
     cursor = 0
     for match in INLINE_TOKEN_PATTERN.finditer(text):
         if match.start() > cursor:
@@ -234,6 +236,11 @@ def _append_inline_runs(paragraph: Paragraph, text: str) -> None:
         cursor = match.end()
     if cursor < len(text):
         paragraph.add_run(text[cursor:])
+
+
+def _strip_export_citations(text: str) -> str:
+    """Remove inline ``[ref_*]`` citation markers from export text."""
+    return EXPORT_CITATION_PATTERN.sub("", text).strip()
 
 
 def _normalize_inline_token_text(token: str) -> str:

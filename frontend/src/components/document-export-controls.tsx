@@ -16,6 +16,7 @@ interface DocumentExportControlsProps {
 }
 
 const EXPORT_FEEDBACK_RESET_MS = 2200;
+const EXPORT_REFERENCE_PATTERN = /(?:\s*\[ref_[^\]\s]+\](?!\())+/g;
 const EXPORT_MARKDOWN_COMPONENTS = {
   table: ({ children }: { children?: ReactNode }) => (
     <div className="markdown-table-wrap">
@@ -105,6 +106,10 @@ function buildRichClipboardHtml(fragmentHtml: string): string {
   ].join("");
 }
 
+function stripExportReferences(markdown: string): string {
+  return markdown.replace(EXPORT_REFERENCE_PATTERN, "").trim();
+}
+
 function triggerBlobDownload(blob: Blob, filename: string): void {
   const objectUrl = window.URL.createObjectURL(blob);
   const anchor = document.createElement("a");
@@ -123,6 +128,7 @@ export function DocumentExportControls({
   content,
   className,
 }: DocumentExportControlsProps) {
+  const exportContent = stripExportReferences(content);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [feedback, setFeedback] = useState<string | null>(null);
   const [activeAction, setActiveAction] = useState<"word" | "notion" | null>(null);
@@ -175,7 +181,7 @@ export function DocumentExportControls({
     }
 
     const richHtml = buildRichClipboardHtml(richSnapshot.innerHTML);
-    const plainText = richSnapshot.textContent?.trim() || content;
+    const plainText = richSnapshot.textContent?.trim() || exportContent;
 
     try {
       if (
@@ -286,7 +292,7 @@ export function DocumentExportControls({
             remarkPlugins={[remarkGfm]}
             components={EXPORT_MARKDOWN_COMPONENTS}
           >
-            {content}
+            {exportContent}
           </ReactMarkdown>
         </article>
       </div>

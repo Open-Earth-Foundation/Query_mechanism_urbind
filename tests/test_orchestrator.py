@@ -117,9 +117,11 @@ def test_run_pipeline_creates_artifacts(
     )
 
     assert paths.final_output.exists()
+    final_output = paths.final_output.read_text(encoding="utf-8")
     run_log = json.loads(paths.run_log.read_text(encoding="utf-8"))
     assert run_log["status"] == "completed"
     assert Path(run_log["artifacts"]["final_output"]).exists()
+    assert "Finish reason:" not in final_output
 
 
 def test_run_pipeline_detaches_run_log_handler(

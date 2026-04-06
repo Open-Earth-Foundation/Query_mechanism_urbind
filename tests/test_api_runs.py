@@ -921,9 +921,10 @@ def test_api_docx_export_returns_word_document(tmp_path: Path) -> None:
     )
     paths.final_output.write_text(
         "# Export report\n\n"
+        "Munich remains on schedule. [ref_1][ref_2]\n\n"
         "| City | Comment mode |\n"
         "| --- | --- |\n"
-        "| Munich | Google Doc review |\n",
+        "| Munich | Google Doc review [ref_3] |\n",
         encoding="utf-8",
     )
 
@@ -939,8 +940,10 @@ def test_api_docx_export_returns_word_document(tmp_path: Path) -> None:
 
     document = Document(BytesIO(response.content))
     assert document.paragraphs[0].text == "Export report"
+    assert document.paragraphs[1].text == "Munich remains on schedule."
     assert len(document.tables) == 1
     assert document.tables[0].rows[1].cells[0].text == "Munich"
+    assert document.tables[0].rows[1].cells[1].text == "Google Doc review"
 
 
 def test_api_list_runs_drops_entry_after_artifact_folder_is_deleted(tmp_path: Path) -> None:

@@ -379,6 +379,7 @@ Core endpoints:
 - `GET /api/v1/runs` (list discovered runs as `run_id` + `question`; refreshed from `RUNS_DIR/*/run.json` artifact folders on each request, plus currently queued/running in-memory runs)
 - `GET /api/v1/runs/{run_id}/status`
 - `GET /api/v1/runs/{run_id}/output`
+- `GET /api/v1/runs/{run_id}/export/docx` (Word export of `final.md`; inline `[ref_n]` citation tags are omitted from the exported document)
 - `GET /api/v1/runs/{run_id}/context`
 - `GET /api/v1/runs/{run_id}/references` (canonical citation endpoint; supports optional query params `ref_id` and `include_quote`)
 - `GET /api/v1/runs/{run_id}/references/{ref_id}` (compatibility alias for one reference with quote payload)
@@ -773,8 +774,7 @@ Artifacts are written under `output/<run_id>/`:
 - `markdown/batches.json`: markdown batching plan used for the markdown researcher calls. Includes per-city batch indices, estimated tokens, and chunk ordering fields (`path`, `chunk_index`, `chunk_id`), making it easy to inspect how chunks were grouped into LLM requests.
 - `final.md`: final delivered markdown output. Content format is:
   1. `# Question` heading with the original user question,
-  2. generated markdown answer body from the writer,
-  3. footer line `Finish reason: ...`.
+  2. generated markdown answer body from the writer.
 
 `markdown/excerpts.json` excerpt entries include:
 
