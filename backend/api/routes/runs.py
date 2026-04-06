@@ -23,6 +23,7 @@ from backend.api.models import (
     SourceChunkListResponse,
 )
 from backend.api.services.document_export import DOCX_MIME_TYPE, markdown_to_docx_bytes
+from backend.api.services.final_output import strip_legacy_finish_reason_footer
 from backend.api.services.reference_artifacts import (
     build_reference_item,
     load_reference_records,
@@ -244,6 +245,7 @@ def get_run_output(run_id: str, request: Request) -> RunOutputResponse:
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"Failed to read final output for run `{run_id}`: {exc}",
         ) from exc
+    content = strip_legacy_finish_reason_footer(content)
 
     return RunOutputResponse(
         run_id=record.run_id,

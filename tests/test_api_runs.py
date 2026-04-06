@@ -946,6 +946,34 @@ def test_api_docx_export_returns_word_document(tmp_path: Path) -> None:
     assert document.tables[0].rows[1].cells[1].text == "Google Doc review"
 
 
+def test_api_output_hides_legacy_finish_reason_footer(tmp_path: Path) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    run_id = "run-output-legacy-footer"
+    paths = _write_success_artifacts(
+        question="Legacy footer run",
+        run_id=run_id,
+        config=config,
+    )
+    paths.final_output.write_text(
+        "# Question\nLegacy footer run\n\n"
+        "# Answer\nVisible answer body.\n\n"
+        "---\n"
+        "Finish reason: completed (write)\n",
+        encoding="utf-8",
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get(f"/api/v1/runs/{run_id}/output")
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["content"] == "# Question\nLegacy footer run\n\n# Answer\nVisible answer body."
+        assert "Finish reason:" not in payload["content"]
+
+
 def test_api_list_runs_drops_entry_after_artifact_folder_is_deleted(tmp_path: Path) -> None:
     runs_dir = tmp_path / "output"
     markdown_dir = tmp_path / "documents"
