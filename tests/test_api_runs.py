@@ -4,9 +4,11 @@ import shutil
 import threading
 import time
 from datetime import datetime, timezone
+from io import BytesIO
 from pathlib import Path
 
 import pytest
+from docx import Document
 from fastapi.testclient import TestClient
 
 from backend.api.main import create_app
@@ -22,7 +24,6 @@ def _build_config(runs_dir: Path, markdown_dir: Path) -> AppConfig:
     return build_test_app_config(
         runs_dir=runs_dir,
         markdown_dir=markdown_dir,
-        enable_sql=False,
     )
 
 
@@ -31,7 +32,6 @@ def _write_success_artifacts(question: str, run_id: str, config: AppConfig) -> R
     paths.base_dir.mkdir(parents=True, exist_ok=True)
 
     context_bundle = {
-        "sql": None,
         "markdown": {"status": "success", "excerpts": []},
         "drafts": [],
         "final": str(paths.final_output),
@@ -102,6 +102,48 @@ def _write_started_artifacts_with_error_log_input(
     return paths
 
 
+def _write_failed_artifacts_with_decision_error(
+    *,
+    question: str,
+    run_id: str,
+    config: AppConfig,
+    finish_reason: str,
+    error_code: str,
+    error_message: str,
+) -> RunPaths:
+    """Persist a failed run.json with a structured decision error."""
+    paths = create_run_paths(config.runs_dir, run_id, config.orchestrator.context_bundle_name)
+    paths.base_dir.mkdir(parents=True, exist_ok=True)
+    run_log_payload = {
+        "run_id": run_id,
+        "question": question,
+        "status": "failed",
+        "started_at": datetime.now(timezone.utc).isoformat(),
+        "completed_at": datetime.now(timezone.utc).isoformat(),
+        "finish_reason": finish_reason,
+        "decisions": [
+            {
+                "status": "error",
+                "reason": "Persisted pipeline failure",
+                "error": {
+                    "code": error_code,
+                    "message": error_message,
+                },
+            }
+        ],
+        "artifacts": {},
+    }
+    paths.run_log.write_text(
+        json.dumps(run_log_payload, ensure_ascii=True, indent=2),
+        encoding="utf-8",
+    )
+    (paths.base_dir / "run.log").write_text(
+        "2026-01-01 00:00:01 worker.py:11 - ERROR - persisted pipeline failure",
+        encoding="utf-8",
+    )
+    return paths
+
+
 def _write_markdown_reference_artifacts(
     paths: RunPaths,
     references_payload: dict[str, object] | None = None,
@@ -164,7 +206,6 @@ def test_api_run_lifecycle_success(tmp_path: Path, monkeypatch: pytest.MonkeyPat
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
     ) -> RunPaths:
-        assert config.enable_sql is False
         assert run_id is not None
         assert isinstance(log_llm_payload, bool)
         assert analysis_mode == "aggregate"
@@ -225,7 +266,6 @@ def test_api_run_lifecycle_dev_mode_ignores_blank_optional_queries(
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
     ) -> RunPaths:
-        assert config.enable_sql is False
         assert run_id is not None
         assert isinstance(log_llm_payload, bool)
         assert analysis_mode == "aggregate"
@@ -910,6 +950,72 @@ def test_api_output_and_context_resolve_stale_container_artifact_paths(
         assert isinstance(context_response.json()["context_bundle"], dict)
 
 
+def test_api_docx_export_returns_word_document(tmp_path: Path) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    run_id = "run-docx-export"
+    paths = _write_success_artifacts(
+        question="Export run",
+        run_id=run_id,
+        config=config,
+    )
+    paths.final_output.write_text(
+        "# Export report\n\n"
+        "Munich remains on schedule. [ref_1][ref_2]\n\n"
+        "| City | Comment mode |\n"
+        "| --- | --- |\n"
+        "| Munich | Google Doc review [ref_3] |\n",
+        encoding="utf-8",
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get(f"/api/v1/runs/{run_id}/export/docx")
+        assert response.status_code == 200
+        assert (
+            response.headers["content-type"]
+            == "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        )
+        assert f'filename="{run_id}.docx"' in response.headers["content-disposition"]
+
+    document = Document(BytesIO(response.content))
+    assert document.paragraphs[0].text == "Export report"
+    assert document.paragraphs[1].text == "Munich remains on schedule."
+    assert len(document.tables) == 1
+    assert document.tables[0].rows[1].cells[0].text == "Munich"
+    assert document.tables[0].rows[1].cells[1].text == "Google Doc review"
+
+
+def test_api_output_hides_legacy_finish_reason_footer(tmp_path: Path) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    run_id = "run-output-legacy-footer"
+    paths = _write_success_artifacts(
+        question="Legacy footer run",
+        run_id=run_id,
+        config=config,
+    )
+    paths.final_output.write_text(
+        "# Question\nLegacy footer run\n\n"
+        "# Answer\nVisible answer body.\n\n"
+        "---\n"
+        "Finish reason: completed (write)\n",
+        encoding="utf-8",
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get(f"/api/v1/runs/{run_id}/output")
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["content"] == "# Question\nLegacy footer run\n\n# Answer\nVisible answer body."
+        assert "Finish reason:" not in payload["content"]
+
+
 def test_api_list_runs_drops_entry_after_artifact_folder_is_deleted(tmp_path: Path) -> None:
     runs_dir = tmp_path / "output"
     markdown_dir = tmp_path / "documents"
@@ -1030,6 +1136,133 @@ def test_api_failed_run(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None
 
         context_response = client.get("/api/v1/runs/run-failed/context")
         assert context_response.status_code == 409
+
+
+def test_api_failed_run_uses_persisted_decision_error(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    finish_reason = "research_question_refinement_failed"
+    error_code = "RESEARCH_QUESTION_REFINEMENT_ERROR"
+    error_message = (
+        "Could not prepare the research query for this request. Please try again."
+    )
+
+    def _stub_load_config(_path: Path | None = None) -> AppConfig:
+        return _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+
+    def _failed_run_pipeline(
+        question: str,
+        config: AppConfig,
+        run_id: str | None = None,
+        log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
+        selected_cities: list[str] | None = None,
+    ) -> RunPaths:
+        assert run_id is not None
+        assert isinstance(log_llm_payload, bool)
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
+        assert selected_cities is None
+        return _write_failed_artifacts_with_decision_error(
+            question=question,
+            run_id=run_id,
+            config=config,
+            finish_reason=finish_reason,
+            error_code=error_code,
+            error_message=error_message,
+        )
+
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr(
+        "backend.api.services.run_executor.run_pipeline", _failed_run_pipeline
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        start = client.post(
+            "/api/v1/runs",
+            json={"question": "Refinement failed", "run_id": "run-persisted-failure"},
+        )
+        assert start.status_code == 202
+        terminal = _poll_until_terminal(client, "run-persisted-failure")
+        assert terminal["status"] == "failed"
+        assert terminal["finish_reason"] == finish_reason
+        assert terminal["error"]["code"] == error_code
+        assert terminal["error"]["message"] == error_message
+
+
+def test_api_failed_run_preserves_persisted_failure_details_after_exception(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    finish_reason = "research_question_refinement_failed"
+    error_code = "RESEARCH_QUESTION_REFINEMENT_ERROR"
+    error_message = (
+        "Could not prepare the research query for this request. Please try again."
+    )
+
+    def _stub_load_config(_path: Path | None = None) -> AppConfig:
+        return _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+
+    def _failing_run_pipeline(
+        question: str,
+        config: AppConfig,
+        run_id: str | None = None,
+        log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
+        selected_cities: list[str] | None = None,
+    ) -> RunPaths:
+        assert run_id is not None
+        assert isinstance(log_llm_payload, bool)
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
+        assert selected_cities is None
+        _write_failed_artifacts_with_decision_error(
+            question=question,
+            run_id=run_id,
+            config=config,
+            finish_reason=finish_reason,
+            error_code=error_code,
+            error_message=error_message,
+        )
+        raise ValueError("generic executor wrapper failure")
+
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr(
+        "backend.api.services.run_executor.run_pipeline", _failing_run_pipeline
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        start = client.post(
+            "/api/v1/runs",
+            json={
+                "question": "Refinement failed with exception",
+                "run_id": "run-preserved-failure",
+            },
+        )
+        assert start.status_code == 202
+        terminal = _poll_until_terminal(client, "run-preserved-failure")
+        assert terminal["status"] == "failed"
+        assert terminal["finish_reason"] == finish_reason
+        assert terminal["error"]["code"] == error_code
+        assert terminal["error"]["message"] == error_message
+
+    run_log_payload = json.loads(
+        (runs_dir / "run-preserved-failure" / "run.json").read_text(encoding="utf-8")
+    )
+    assert run_log_payload["finish_reason"] == finish_reason
+    assert run_log_payload["error"]["code"] == error_code
+    assert run_log_payload["error"]["message"] == error_message
 
 
 def test_api_failed_run_writes_error_log_snapshot_for_executor_failures(

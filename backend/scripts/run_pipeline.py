@@ -5,9 +5,6 @@ Inputs:
 - --question: user question to answer
 - --run-id: optional run identifier
 - --config: path to llm_config.yaml
-- --enable-sql: enable SQL lookups (disabled by default)
-- --db-path: override source DB path
-- --db-url: override source DB URL
 - --markdown-path: override documents folder
 - --city: limit markdown loading to selected city names (repeatable)
 - --log-llm-payload: log full LLM request/response payloads (default: off)
@@ -21,7 +18,6 @@ Outputs:
 Usage (from project root):
 
 - python -m backend.scripts.run_pipeline --question "..."
-- python -m backend.scripts.run_pipeline --enable-sql --question "..." --db-path path/to/source.db
 - python -m backend.scripts.run_pipeline --question "..." --city Munich --city Leipzig
 """
 
@@ -46,13 +42,6 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--config", default="llm_config.yaml", help="Path to llm_config.yaml"
     )
-    parser.add_argument(
-        "--enable-sql",
-        action="store_true",
-        help="Enable SQL lookups (disabled by default).",
-    )
-    parser.add_argument("--db-path", help="Override source DB path.")
-    parser.add_argument("--db-url", help="Override source DB URL.")
     parser.add_argument("--markdown-path", help="Override markdown documents path.")
     parser.add_argument(
         "--city",
@@ -75,14 +64,8 @@ def main() -> None:
     setup_logger()
 
     config = load_config(Path(args.config))
-    if args.db_path:
-        config.source_db_path = Path(args.db_path)
-    if args.db_url:
-        config.source_db_url = args.db_url
     if args.markdown_path:
         config.markdown_dir = Path(args.markdown_path)
-    if args.enable_sql:
-        config.enable_sql = True
 
     logger.info("Starting pipeline")
     run_pipeline(

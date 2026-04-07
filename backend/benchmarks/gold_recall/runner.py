@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Any
 
 from backend.api.services.source_chunks import load_source_chunks
-from backend.benchmarks.gold_recall.judge import FACT_JUDGE_MODEL, judge_fact_presence
+from backend.benchmarks.gold_recall.judge import judge_fact_presence
 from backend.benchmarks.gold_recall.models import (
     FactPresenceJudgement,
     GoldBenchmarkCase,
@@ -826,7 +826,7 @@ def run_recall_benchmark(
         generated_at=datetime.now(timezone.utc).isoformat(),
         output_dir=str(benchmark_root),
         gold_file=str(gold_file),
-        judge_model=FACT_JUDGE_MODEL,
+        judge_model=config.benchmark_fact_judge.model,
         results=results,
         summary=_build_summary(results),
     )

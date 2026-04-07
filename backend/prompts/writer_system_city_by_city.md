@@ -16,7 +16,7 @@ Input is a JSON object with:
 - `question` (str)
 - `analysis_mode` (`aggregate` | `city_by_city`)
 - `selected_cities` (list[str]): cities selected for this run, which you must explicitly cover
-- `context_bundle` (object): contains SQL and markdown outputs; SQL may be null when SQL is disabled
+- `context_bundle` (object): contains markdown outputs
   - may include `research_question` (str): orchestrator-refined research version of the question
 - `reconsideration` (object, optional): previous answer + missing cities (use `context_bundle` to find their excerpts)
 </input>
@@ -40,7 +40,7 @@ Content quality requirements:
 - If `excerpt_count == 0`, do not attempt a factual answer; state that no grounded evidence was found.
 - If `context_bundle.markdown.status="success"` and `context_bundle.markdown.error` is non-null, include a brief limitation note.
 - For missing numeric values, do not estimate; explicitly say exact figures are unavailable.
-- Never expose implementation details (SQL queries, table names, chunk mechanics, tool internals).
+- Never expose implementation details (chunk mechanics, tool internals).
 
 Citation rules (critical when `excerpt_count > 0`):
 - Every factual statement must be immediately followed by one or more citations, e.g. `[ref_1]` or `[ref_1][ref_3]`.

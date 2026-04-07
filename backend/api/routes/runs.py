@@ -7,6 +7,7 @@ import logging
 from pathlib import Path
 
 from fastapi import APIRouter, Header, HTTPException, Query, Request, status
+from fastapi.responses import Response
 
 from backend.api.models import (
     CreateRunRequest,
@@ -21,6 +22,8 @@ from backend.api.models import (
     RunStatusResponse,
     SourceChunkListResponse,
 )
+from backend.api.services.document_export import DOCX_MIME_TYPE, markdown_to_docx_bytes
+from backend.api.services.final_output import strip_legacy_finish_reason_footer
 from backend.api.services.reference_artifacts import (
     build_reference_item,
     load_reference_records,
@@ -242,6 +245,7 @@ def get_run_output(run_id: str, request: Request) -> RunOutputResponse:
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"Failed to read final output for run `{run_id}`: {exc}",
         ) from exc
+    content = strip_legacy_finish_reason_footer(content)
 
     return RunOutputResponse(
         run_id=record.run_id,
@@ -249,6 +253,19 @@ def get_run_output(run_id: str, request: Request) -> RunOutputResponse:
         content=content,
         final_output_path=str(output_path),
     )
+
+
+@router.get(
+    "/runs/{run_id}/export/docx",
+    name="export_run_output_docx",
+)
+def export_run_output_docx(run_id: str, request: Request) -> Response:
+    """Return the final run output as a `.docx` download."""
+    output_response = get_run_output(run_id, request)
+    docx_bytes = markdown_to_docx_bytes(output_response.content)
+    filename = f"{run_id}.docx"
+    headers = {"Content-Disposition": f'attachment; filename="{filename}"'}
+    return Response(content=docx_bytes, media_type=DOCX_MIME_TYPE, headers=headers)
 
 
 @router.get(

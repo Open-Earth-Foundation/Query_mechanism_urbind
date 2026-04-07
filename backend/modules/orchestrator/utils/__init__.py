@@ -13,14 +13,6 @@ from backend.modules.orchestrator.utils.references import (
     build_markdown_references,
     is_valid_ref_id,
 )
-from backend.modules.orchestrator.utils.sql_helpers import (
-    collect_identifiers,
-    collect_sql_execution_errors,
-    execute_sql_plan,
-    fetch_city_list,
-    run_sql_rounds,
-    summarize_sql_results,
-)
 
 __all__ = [
     "handle_orchestration_error",
@@ -30,10 +22,4 @@ __all__ = [
     "build_markdown_references",
     "is_valid_ref_id",
     "REF_ID_PATTERN",
-    "collect_identifiers",
-    "collect_sql_execution_errors",
-    "execute_sql_plan",
-    "fetch_city_list",
-    "run_sql_rounds",
-    "summarize_sql_results",
 ]

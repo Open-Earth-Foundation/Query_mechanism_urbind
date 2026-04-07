@@ -7,6 +7,7 @@ import logging
 from pathlib import Path
 from typing import Any
 
+from backend.api.services.final_output import strip_legacy_finish_reason_footer
 from backend.utils.json_io import read_json_object, write_json
 
 logger = logging.getLogger("backend.api.services.context_chat")
@@ -22,7 +23,7 @@ def load_context_bundle(path: Path) -> dict[str, Any]:
 
 def load_final_document(path: Path) -> str:
     """Load a stored final markdown document from disk."""
-    return path.read_text(encoding="utf-8")
+    return strip_legacy_finish_reason_footer(path.read_text(encoding="utf-8"))
 
 
 def _read_json_object(path: Path) -> dict[str, object] | None:

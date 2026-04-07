@@ -22,7 +22,6 @@ from backend.utils.config import (
     MarkdownResearcherConfig,
     OrchestratorConfig,
     RetryConfig,
-    SqlResearcherConfig,
 )
 from backend.utils.paths import RunPaths, create_run_paths
 
@@ -33,7 +32,6 @@ def _build_config(runs_dir: Path, markdown_dir: Path) -> AppConfig:
         orchestrator=OrchestratorConfig(
             model="test-model", context_bundle_name="context_bundle.json"
         ),
-        sql_researcher=SqlResearcherConfig(model="test-model"),
         markdown_researcher=MarkdownResearcherConfig(
             model="test-model",
             chunk_overlap_tokens=2000,
@@ -50,7 +48,6 @@ def _build_config(runs_dir: Path, markdown_dir: Path) -> AppConfig:
         retry=RetryConfig(backoff_base_seconds=1.0, backoff_max_seconds=30.0),
         runs_dir=runs_dir,
         markdown_dir=markdown_dir,
-        enable_sql=False,
     )
 
 
@@ -60,7 +57,6 @@ def _write_success_artifacts(question: str, run_id: str, config: AppConfig) -> R
     paths.context_bundle.write_text(
         json.dumps(
             {
-                "sql": None,
                 "markdown": {"status": "success", "excerpts": []},
                 "drafts": [],
                 "final": str(paths.final_output),
@@ -115,7 +111,6 @@ def test_assumptions_discover_returns_payload(
     markdown_dir = tmp_path / "documents"
     markdown_dir.mkdir(parents=True, exist_ok=True)
     config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
-    configured = config.model_copy(update={"enable_sql": True})
 
     app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
     with TestClient(app) as client:
@@ -128,12 +123,11 @@ def test_assumptions_discover_returns_payload(
 
         monkeypatch.setattr(
             "backend.api.routes.assumptions.load_config",
-            lambda _path=None: configured,
+            lambda _path=None: config,
         )
         def _stub_discover_missing_data_for_run(**kwargs: object) -> dict[str, object]:
             config = kwargs["config"]
             assert isinstance(config, AppConfig)
-            assert config.enable_sql is True
             return {
                 "run_id": "run-assumptions",
                 "items": [
