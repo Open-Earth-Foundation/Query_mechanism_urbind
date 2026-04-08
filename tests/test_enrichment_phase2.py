@@ -27,7 +27,7 @@ from backend.modules.web_researcher.scraper import (
     ScrapeResult,
     scrape_url_simple,
 )
-from backend.modules.web_researcher.search import GoogleSearchClient, GoogleSearchResult
+from backend.modules.web_researcher.search import SerperSearchClient, SearchResult
 from backend.modules.web_researcher.search_planner import (
     plan_searches,
     _compute_budget,
@@ -62,23 +62,23 @@ def _make_config(**overrides: Any) -> Any:
 
 
 # ---------------------------------------------------------------------------
-# GoogleSearchClient
+# SerperSearchClient
 # ---------------------------------------------------------------------------
 
 
-class TestGoogleSearchClient:
+class TestSerperSearchClient:
     def test_no_credentials_returns_empty(self) -> None:
-        client = GoogleSearchClient(api_key="", cse_id="")
+        client = SerperSearchClient(api_key="")
         results = client.search("test query")
         assert results == []
         assert client.query_count == 0
 
     def test_successful_search(self) -> None:
-        client = GoogleSearchClient(api_key="key", cse_id="cse")
+        client = SerperSearchClient(api_key="key")
         mock_response = MagicMock()
         mock_response.status_code = 200
         mock_response.json.return_value = {
-            "items": [
+            "organic": [
                 {"title": "Test", "link": "https://example.com", "snippet": "A result"},
             ]
         }
@@ -88,7 +88,7 @@ class TestGoogleSearchClient:
             mock_httpx_instance = MagicMock()
             mock_httpx_instance.__enter__ = MagicMock(return_value=mock_httpx_instance)
             mock_httpx_instance.__exit__ = MagicMock(return_value=False)
-            mock_httpx_instance.get.return_value = mock_response
+            mock_httpx_instance.post.return_value = mock_response
             mock_httpx.return_value = mock_httpx_instance
 
             results = client.search("Dresden electric bus fleet")
@@ -105,10 +105,11 @@ class TestGoogleSearchClient:
 
 class TestFirecrawlScraper:
     def test_no_api_key_returns_failure(self) -> None:
-        scraper = FirecrawlScraper(api_key="")
-        result = scraper.scrape("https://example.com")
-        assert result.success is False
-        assert result.error == "no_api_key"
+        with patch.dict("os.environ", {"FIRECRAWL_API_KEY": ""}, clear=False):
+            scraper = FirecrawlScraper(api_key="")
+            result = scraper.scrape("https://example.com")
+            assert result.success is False
+            assert result.error == "no_api_key"
 
     def test_content_truncation(self) -> None:
         scraper = FirecrawlScraper(api_key="key")
@@ -249,7 +250,7 @@ class TestRelevanceChecker:
     def test_relevance_with_mocked_llm(self) -> None:
         config = _make_config()
         search_results = [
-            GoogleSearchResult("Electric bus report", "https://example.com", "50M EUR budget"),
+            SearchResult("Electric bus report", "https://example.com", "50M EUR budget"),
         ]
         mock_resp = _mock_openai_response(
             '[{"index": 0, "is_relevant": true, "reason": "Contains budget data"}]'
@@ -387,9 +388,9 @@ class TestSearchWorker:
         )
 
         # Mock all infrastructure
-        search_client = MagicMock(spec=GoogleSearchClient)
+        search_client = MagicMock(spec=SerperSearchClient)
         search_client.search.return_value = [
-            GoogleSearchResult("Report", "https://example.com/report", "50M EUR"),
+            SearchResult("Report", "https://example.com/report", "50M EUR"),
         ]
 
         scraper = MagicMock(spec=FirecrawlScraper)
@@ -405,7 +406,7 @@ class TestSearchWorker:
         # Mock relevance checker (all relevant)
         with patch("backend.modules.web_researcher.search_worker.check_relevance_batch") as mock_rel:
             mock_rel.return_value = [
-                (GoogleSearchResult("Report", "https://example.com/report", "50M EUR"), True),
+                (SearchResult("Report", "https://example.com/report", "50M EUR"), True),
             ]
             # Mock extractor
             with patch("backend.modules.web_researcher.search_worker.extract_fields_from_content") as mock_ext:

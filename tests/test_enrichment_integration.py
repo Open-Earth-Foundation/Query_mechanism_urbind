@@ -50,7 +50,8 @@ class TestEnrichmentConfig:
         assert ec.assumptions_estimator_model == ""
         assert ec.assumptions_estimator_temperature == 0.0
 
-    def test_load_config_with_enrichment_section(self, tmp_path: Path) -> None:
+    def test_load_config_with_enrichment_section(self, tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+        monkeypatch.setenv("WEB_RESEARCH_ENABLED", "")
         config_path = tmp_path / "llm_config.yaml"
         config_path.write_text(
             "\n".join([

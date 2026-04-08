@@ -12,7 +12,7 @@ from backend.modules.web_researcher.extractor import extract_fields_from_content
 from backend.modules.web_researcher.models import SearchBatch, WebFinding
 from backend.modules.web_researcher.relevance import check_relevance_batch
 from backend.modules.web_researcher.scraper import FirecrawlScraper
-from backend.modules.web_researcher.search import GoogleSearchClient
+from backend.modules.web_researcher.search import SerperSearchClient
 from backend.utils.config import AppConfig
 
 logger = logging.getLogger(__name__)
@@ -22,7 +22,7 @@ _MAX_URLS_PER_DOMAIN_PER_BATCH = 3
 
 def execute_search_batch(
     batch: SearchBatch,
-    search_client: GoogleSearchClient,
+    search_client: SerperSearchClient,
     scraper: FirecrawlScraper,
     deep_diver: DeepDiver,
     config: AppConfig,
@@ -164,7 +164,7 @@ def execute_search_batches(
     if not batches:
         return []
 
-    search_client = GoogleSearchClient()
+    search_client = SerperSearchClient()
     scraper = FirecrawlScraper()
     deep_diver = DeepDiver(
         scraper=scraper,

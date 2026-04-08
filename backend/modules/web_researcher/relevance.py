@@ -9,7 +9,7 @@ from typing import Any
 from openai import OpenAI
 from pydantic import BaseModel
 
-from backend.modules.web_researcher.search import GoogleSearchResult
+from backend.modules.web_researcher.search import SearchResult
 from backend.modules.web_researcher.utils.json_helpers import (
     extract_json_candidate,
     extract_message_text,
@@ -27,12 +27,12 @@ class RelevanceCheckOutput(BaseModel):
 
 
 def check_relevance_batch(
-    results: list[GoogleSearchResult],
+    results: list[SearchResult],
     target_fields: list[str],
     cities: list[str],
     config: AppConfig,
     api_key: str,
-) -> list[tuple[GoogleSearchResult, bool]]:
+) -> list[tuple[SearchResult, bool]]:
     """Check relevance of search results against target fields and cities.
 
     Returns list of (result, is_relevant) tuples.
@@ -102,7 +102,7 @@ def check_relevance_batch(
                     if isinstance(idx, int):
                         relevance_map[idx] = bool(relevant)
 
-        output: list[tuple[GoogleSearchResult, bool]] = []
+        output: list[tuple[SearchResult, bool]] = []
         for i, r in enumerate(results):
             output.append((r, relevance_map.get(i, True)))
 
