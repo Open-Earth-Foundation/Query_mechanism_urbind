@@ -53,6 +53,23 @@ class CreateRunResponse(BaseModel):
     context_url: str
 
 
+class PipelineStepItem(BaseModel):
+    """Single sub-item inside a pipeline progress step."""
+
+    text: str
+
+
+class PipelineStep(BaseModel):
+    """One step in the pipeline progress tracker."""
+
+    id: str
+    label: str
+    status: str
+    started_at: str | None = None
+    completed_at: str | None = None
+    items: list[PipelineStepItem] = Field(default_factory=list)
+
+
 class RunStatusResponse(BaseModel):
     """Response body for run status polling."""
 
@@ -62,6 +79,7 @@ class RunStatusResponse(BaseModel):
     completed_at: datetime | None = None
     finish_reason: str | None = None
     error: RunError | None = None
+    steps: list[PipelineStep] | None = None
 
 
 class RunOutputResponse(BaseModel):
@@ -407,6 +425,8 @@ __all__ = [
     "RunStatus",
     "AnalysisMode",
     "RunError",
+    "PipelineStepItem",
+    "PipelineStep",
     "CreateRunRequest",
     "CreateRunResponse",
     "RunStatusResponse",

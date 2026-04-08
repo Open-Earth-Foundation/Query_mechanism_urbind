@@ -11,6 +11,8 @@ from fastapi import APIRouter, Header, HTTPException, Query, Request, status
 from backend.api.models import (
     CreateRunRequest,
     CreateRunResponse,
+    PipelineStep,
+    PipelineStepItem,
     RunReferenceItem,
     RunReferenceListResponse,
     RunReferenceResponse,
@@ -194,6 +196,36 @@ def list_runs(request: Request) -> RunListResponse:
     return RunListResponse(runs=runs, total=len(runs))
 
 
+def _read_progress_steps(runs_dir: Path, run_id: str) -> list[PipelineStep] | None:
+    """Best-effort read of progress.json for a run directory."""
+    try:
+        progress_path = runs_dir / run_id / "progress.json"
+        if not progress_path.exists():
+            return None
+        data = json.loads(progress_path.read_text(encoding="utf-8"))
+        raw_steps = data.get("steps")
+        if not isinstance(raw_steps, list):
+            return None
+        return [
+            PipelineStep(
+                id=step["id"],
+                label=step["label"],
+                status=step.get("status", "running"),
+                started_at=step.get("started_at"),
+                completed_at=step.get("completed_at"),
+                items=[
+                    PipelineStepItem(text=item["text"])
+                    for item in step.get("items", [])
+                    if isinstance(item, dict) and "text" in item
+                ],
+            )
+            for step in raw_steps
+            if isinstance(step, dict) and "id" in step and "label" in step
+        ]
+    except Exception:
+        return None
+
+
 @router.get(
     "/runs/{run_id}/status",
     name="get_run_status",
@@ -209,6 +241,7 @@ def get_run_status(run_id: str, request: Request) -> RunStatusResponse:
             detail=f"Run `{run_id}` was not found.",
         )
 
+    steps = _read_progress_steps(run_store.runs_dir, run_id)
     return RunStatusResponse(
         run_id=record.run_id,
         status=record.status,
@@ -216,6 +249,7 @@ def get_run_status(run_id: str, request: Request) -> RunStatusResponse:
         completed_at=record.completed_at,
         finish_reason=record.finish_reason,
         error=record.error,
+        steps=steps,
     )
 
 

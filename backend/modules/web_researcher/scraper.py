@@ -6,6 +6,7 @@ import logging
 import os
 import threading
 from typing import Any
+from urllib.parse import urlparse
 
 import httpx
 
@@ -15,6 +16,20 @@ _FIRECRAWL_ENDPOINT = "https://api.firecrawl.dev/v1/scrape"
 _CONCURRENT_SCRAPE_LIMIT = 4
 _DEFAULT_TIMEOUT = 30.0
 _MAX_CONTENT_CHARS = 7000
+
+# File extensions that Firecrawl cannot meaningfully render.
+_SKIP_EXTENSIONS = frozenset({
+    ".pdf", ".doc", ".docx", ".xls", ".xlsx", ".ppt", ".pptx",
+    ".zip", ".tar", ".gz", ".rar", ".7z",
+    ".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp", ".bmp",
+    ".mp3", ".mp4", ".wav", ".avi", ".mov",
+})
+
+
+def _has_skip_extension(url: str) -> bool:
+    """Return True if the URL path ends with a non-scrapable file extension."""
+    path = urlparse(url).path.lower()
+    return any(path.endswith(ext) for ext in _SKIP_EXTENSIONS)
 
 
 class ScrapeResult:
@@ -63,6 +78,10 @@ class FirecrawlScraper:
         if not self.api_key:
             logger.warning("Firecrawl API key not configured; skipping scrape.")
             return ScrapeResult(url=url, success=False, error="no_api_key")
+
+        if _has_skip_extension(url):
+            logger.info("Skipping non-scrapable URL extension: %r", url)
+            return ScrapeResult(url=url, success=False, error="unsupported_file_type")
 
         with self._semaphore:
             return self._do_scrape(url, max_chars, timeout)

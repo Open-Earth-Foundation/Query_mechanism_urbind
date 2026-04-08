@@ -19,6 +19,7 @@ from backend.modules.web_researcher.utils.json_helpers import (
     extract_json_candidate,
     extract_message_text,
 )
+from backend.services.progress_tracker import ProgressTracker
 from backend.utils.config import AppConfig
 
 logger = logging.getLogger(__name__)
@@ -33,6 +34,7 @@ def run_assumptions_estimator(
     enriched_fields: list[EnrichedField],
     config: AppConfig,
     api_key: str,
+    progress: ProgressTracker | None = None,
 ) -> tuple[list[AssumptionRecord], list[NonEstimableRecord], str | None]:
     """Estimate values for remaining data gaps using a priority ladder.
 
@@ -47,6 +49,12 @@ def run_assumptions_estimator(
     if not fields_to_estimate:
         logger.info("Assumptions estimator: no gaps to estimate.")
         return [], [], None
+
+    if progress:
+        progress.add_item(
+            "assumptions",
+            f"{len(fields_to_estimate)} fields to estimate",
+        )
 
     # Separate non-estimable fields immediately (no LLM needed)
     non_estimable_field_names = set(gap_manifest.non_estimable_fields)
@@ -74,6 +82,13 @@ def run_assumptions_estimator(
         else:
             estimable_fields.append(field)
 
+    if progress and non_estimable_records:
+        for nr in non_estimable_records:
+            progress.add_item(
+                "assumptions",
+                f"{nr.city}: {nr.field_name} — non-estimable",
+            )
+
     if not estimable_fields:
         logger.info(
             "Assumptions estimator: all %d gaps are non-estimable.",
@@ -82,6 +97,8 @@ def run_assumptions_estimator(
         return [], non_estimable_records, None
 
     # Pass 1: generate estimates
+    if progress:
+        progress.add_item("assumptions", "Pass 1: generating estimates...")
     assumptions = _call_estimator(
         question=question,
         context_bundle=context_bundle,
@@ -92,8 +109,22 @@ def run_assumptions_estimator(
         pass_name="generate",
     )
 
+    if progress and assumptions:
+        for a in assumptions:
+            mid = a.estimate.get("mid", "?") if isinstance(a.estimate, dict) else "?"
+            progress.add_item(
+                "assumptions",
+                f"{a.city}: {a.field_name} ≈ {mid} ({a.confidence})",
+            )
+        progress.add_item(
+            "assumptions",
+            f"Pass 1 done: {len(assumptions)} estimates",
+        )
+
     # Pass 2: critique and revise (capped at 1 cycle)
     if assumptions:
+        if progress:
+            progress.add_item("assumptions", "Pass 2: critique & revise...")
         revised = _call_estimator(
             question=question,
             context_bundle=context_bundle,
@@ -106,6 +137,11 @@ def run_assumptions_estimator(
         )
         if revised:
             assumptions = revised
+            if progress:
+                progress.add_item(
+                    "assumptions",
+                    f"Pass 2 done: {len(assumptions)} revised estimates",
+                )
 
     # Check for saturation warning
     saturation_warning = _check_saturation(assumptions)

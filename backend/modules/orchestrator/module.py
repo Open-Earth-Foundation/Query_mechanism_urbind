@@ -56,6 +56,7 @@ from backend.services.db_client import (
     DbClient,
     get_db_client,
 )
+from backend.services.progress_tracker import ProgressTracker
 from backend.services.run_logger import RunLogger
 from backend.services.schema_registry import load_schema
 from backend.utils.config import AppConfig, get_openrouter_api_key
@@ -292,6 +293,7 @@ def run_pipeline(
     run_logger.update_analysis_mode(analysis_mode)
     run_logger.record_artifact("context_bundle", paths.context_bundle)
     run_log_handler = attach_run_file_logger(paths.base_dir)
+    progress = ProgressTracker(paths.base_dir)
 
     def _fail_research_question_refinement(
         message: str, exc: Exception | None = None
@@ -313,6 +315,7 @@ def run_pipeline(
             raise ValueError(message)
         raise ValueError(message) from exc
 
+    progress.start_step("question_refinement", "Refining research question")
     canonical_research_query = question.strip() or question
     retrieval_queries: list[str]
     if query_mode == "dev":
@@ -388,6 +391,10 @@ def run_pipeline(
         },
     )
     run_logger.record_artifact("research_question", paths.research_question)
+    progress.add_item("question_refinement", f"Research query: {canonical_research_query}")
+    for i, rq in enumerate(retrieval_queries, 1):
+        progress.add_item("question_refinement", f"Retrieval query {i}: {rq}")
+    progress.complete_step("question_refinement")
 
     sql_enabled = config.enable_sql
     schema_summary: dict = {}
@@ -567,6 +574,14 @@ def run_pipeline(
     sql_payload: dict[str, object] | None = None
     markdown_payload: dict[str, object] | None = None
 
+    if sql_enabled:
+        progress.start_step("sql_research", "Running SQL queries")
+    else:
+        progress.start_step("sql_research", "Running SQL queries")
+        progress.add_item("sql_research", "Skipped (SQL disabled)")
+        progress.complete_step("sql_research", status="skipped")
+    progress.start_step("markdown_research", "Searching markdown documents")
+
     with ThreadPoolExecutor(max_workers=2 if sql_enabled else 1) as executor:
         futures = {}
         if sql_enabled:
@@ -631,6 +646,10 @@ def run_pipeline(
             truncated=truncated,
         )
         run_logger.update_sql_bundle(sql_result.model_dump())
+        progress.add_item("sql_research", f"{len(sql_plan.queries)} queries planned")
+        total_rows = sum(len(r.rows) if hasattr(r, "rows") else 0 for r in full_results)
+        progress.add_item("sql_research", f"{total_rows} rows returned")
+        progress.complete_step("sql_research")
 
     # Process and log initial markdown results
     markdown_chunks = markdown_payload["markdown_chunks"]
@@ -743,6 +762,15 @@ def run_pipeline(
         write_json(paths.markdown_excerpts, markdown_bundle)
         run_logger.record_artifact("markdown_excerpts", paths.markdown_excerpts)
         run_logger.update_markdown_bundle(markdown_bundle)
+        progress.add_item(
+            "markdown_research",
+            f"{len(markdown_chunks)} chunks from {len(inspected_cities)} cities",
+        )
+        progress.add_item(
+            "markdown_research",
+            f"{markdown_bundle.get('excerpt_count', 0)} excerpts extracted",
+        )
+        progress.complete_step("markdown_research")
         if config.markdown_researcher.strict_decision_audit and not bool(
             decision_audit_artifact["invariant_ok"]
         ):
@@ -769,8 +797,11 @@ def run_pipeline(
         return paths
 
     # Write final output directly from the prepared context bundle.
+    progress.start_step("context_bundle", "Assembling context bundle")
     context_bundle = run_logger.context_bundle
     context_bundle["analysis_mode"] = analysis_mode
+    progress.add_item("context_bundle", "SQL + markdown evidence merged")
+    progress.complete_step("context_bundle")
 
     # --- Enrichment layer (gap analysis + web research + assumptions modelling) ---
     if config.enrichment.enabled:
@@ -781,11 +812,13 @@ def run_pipeline(
             run_logger=run_logger,
             config=config,
             api_key=api_key,
+            progress=progress,
         )
         run_logger.context_bundle = context_bundle
         run_logger.write_context_bundle()
     # --- END enrichment ---
 
+    progress.start_step("writer", "Generating final document")
     try:
         result = handle_write_decision(
             question,
@@ -798,11 +831,14 @@ def run_pipeline(
             log_llm_payload=log_llm_payload,
             writer_func=writer_func,
         )
+        progress.add_item("writer", "Document written")
+        progress.complete_step("writer")
         return result if result is not None else paths
     except Exception:
         logger.exception(
             "Unexpected error during write decision for run_id=%s", run_id_value
         )
+        progress.complete_step("writer", status="error")
         run_logger.finalize("failed", finish_reason="writer_unexpected_error")
         detach_run_file_logger(run_log_handler)
         raise

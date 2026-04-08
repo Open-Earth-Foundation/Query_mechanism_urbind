@@ -90,7 +90,12 @@ def check_relevance_batch(
 
         content = extract_message_text(response.choices[0].message.content)
         candidate = extract_json_candidate(content)
-        parsed = json.loads(candidate)
+        try:
+            parsed = json.loads(candidate)
+        except json.JSONDecodeError:
+            # LLM sometimes emits trailing text after valid JSON — parse
+            # only the first complete value and discard the rest.
+            parsed, _ = json.JSONDecoder().raw_decode(candidate)
 
         # Build relevance map
         relevance_map: dict[int, bool] = {}

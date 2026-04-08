@@ -23,6 +23,7 @@ import {
 
 import { AssumptionsWorkspace } from "@/components/assumptions-workspace";
 import { CccDocumentRail } from "@/components/ccc-document-rail";
+import { PipelineProgress } from "@/components/pipeline-progress";
 import { ContextChatWorkspace } from "@/components/context-chat/context-chat-workspace";
 import { DevModeToggle } from "@/components/dev-mode-toggle";
 import { DevToolsPanel } from "@/components/dev-tools-panel";
@@ -47,6 +48,7 @@ import {
   CityGroup,
   CityMarkdownResponse,
   CreateRunResponse,
+  PipelineStep,
   RunContextResponse,
   RunOutputResponse,
   RunSummary,
@@ -1260,12 +1262,17 @@ export default function Home() {
                 {!runId ? (
                   <p className="text-sm text-slate-500">No run submitted yet.</p>
                 ) : isLongWait ? (
-                  <div className="rounded-md border border-amber-200 bg-amber-50 p-3 text-sm text-amber-900">
-                    <div className="mb-2 flex items-center gap-2 font-medium">
-                      <CircleDashed className="h-4 w-4 animate-spin" />
-                      Build in progress
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-amber-200 bg-amber-50 p-3 text-sm text-amber-900">
+                      <div className="mb-2 flex items-center gap-2 font-medium">
+                        <CircleDashed className="h-4 w-4 animate-spin" />
+                        Build in progress
+                      </div>
+                      <p>Leave this page open. Document generation may take several minutes for broad questions.</p>
                     </div>
-                    <p>Leave this page open. Document generation may take several minutes for broad questions.</p>
+                    {devFeatures.showPipelineProgress && runStatus?.steps ? (
+                      <PipelineProgress steps={runStatus.steps} compact />
+                    ) : null}
                   </div>
                 ) : isTerminal ? (
                   <div className="rounded-md border border-slate-200 bg-slate-50 p-3 text-sm text-slate-700">
@@ -1290,6 +1297,9 @@ export default function Home() {
                   </div>
                 ) : null}
                 {runError ? <p className="text-sm text-red-600">{runError}</p> : null}
+                {devFeatures.showPipelineProgress && isTerminal && runStatus?.steps ? (
+                  <PipelineProgress steps={runStatus.steps} compact />
+                ) : null}
               </div>
 
               {devFeatures.showRunId || devFeatures.showApiKeyControls ? (
@@ -1391,12 +1401,16 @@ export default function Home() {
                         <Loader2 className="h-4 w-4 animate-spin" />
                         Generating document...
                       </div>
-                      <div className="space-y-2">
-                        <div className="h-2 animate-pulse rounded bg-slate-200" />
-                        <div className="h-2 w-11/12 animate-pulse rounded bg-slate-200" />
-                        <div className="h-2 w-10/12 animate-pulse rounded bg-slate-200" />
-                        <div className="h-2 w-8/12 animate-pulse rounded bg-slate-200" />
-                      </div>
+                      {devFeatures.showPipelineProgress && runStatus?.steps ? (
+                        <PipelineProgress steps={runStatus.steps} />
+                      ) : (
+                        <div className="space-y-2">
+                          <div className="h-2 animate-pulse rounded bg-slate-200" />
+                          <div className="h-2 w-11/12 animate-pulse rounded bg-slate-200" />
+                          <div className="h-2 w-10/12 animate-pulse rounded bg-slate-200" />
+                          <div className="h-2 w-8/12 animate-pulse rounded bg-slate-200" />
+                        </div>
+                      )}
                     </div>
                   ) : (
                     <div className="rounded-md border border-dashed border-slate-300 bg-white p-8 text-center text-slate-600">

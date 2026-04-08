@@ -37,6 +37,19 @@ export interface CreateRunResponse {
   context_url: string;
 }
 
+export interface PipelineStepItem {
+  text: string;
+}
+
+export interface PipelineStep {
+  id: string;
+  label: string;
+  status: string;
+  started_at?: string | null;
+  completed_at?: string | null;
+  items: PipelineStepItem[];
+}
+
 export interface RunStatusResponse {
   run_id: string;
   status: RunStatus;
@@ -44,6 +57,7 @@ export interface RunStatusResponse {
   completed_at?: string | null;
   finish_reason?: string | null;
   error?: RunError | null;
+  steps?: PipelineStep[] | null;
 }
 
 export interface RunOutputResponse {
