@@ -17,7 +17,10 @@ from backend.modules.web_researcher.context_merger import (
     merge_enrichment_into_context,
     serialize_enrichment_artifacts,
 )
+from backend.modules.web_researcher.freshness import check_freshness
 from backend.modules.web_researcher.gap_analysis import run_gap_analysis
+from backend.modules.web_researcher.search_planner import plan_searches
+from backend.modules.web_researcher.search_worker import execute_search_batches
 from backend.services.run_logger import RunLogger
 from backend.utils.config import AppConfig
 
@@ -56,13 +59,25 @@ def run_enrichment_pipeline(
         web_findings = []
         freshness_results = []
 
-        # Steps 6-8: Web Research (Phase 2 — only if enabled AND gaps found)
+        # Steps 6-8: Web Research (only if enabled AND gaps found)
         if config.enrichment.web_research_enabled and gap_manifest.city_gaps:
-            logger.info("Enrichment pipeline: web research enabled but not yet implemented (Phase 2).")
-            # Phase 2 will add:
-            # search_batches = plan_searches(gap_manifest, config)
-            # web_findings = execute_search_batches(search_batches, config, api_key)
-            # freshness_results = check_freshness(web_findings, context_bundle, config, api_key)
+            logger.info("Enrichment pipeline: starting web research.")
+            # Step 6: Search Planner → formulate queries
+            search_batches = plan_searches(gap_manifest, config, api_key)
+            # Step 6 cont: Search Workers → execute queries, scrape, extract
+            if search_batches:
+                web_findings = execute_search_batches(search_batches, config, api_key)
+                # Step 7: Freshness Checker → compare web vs CCC
+                if web_findings:
+                    freshness_results = check_freshness(
+                        web_findings, context_bundle, config, api_key
+                    )
+            logger.info(
+                "Web research complete: batches=%d findings=%d freshness=%d",
+                len(search_batches),
+                len(web_findings),
+                len(freshness_results),
+            )
 
         # Determine enriched field statuses (which are still_missing after web research)
         enriched_fields = compute_field_statuses(
