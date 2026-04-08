@@ -189,8 +189,8 @@ def list_runs(
     search: str | None = Query(
         default=None,
         description=(
-            "Optional picker search text matched against run question text and "
-            "selected city names."
+            "Optional picker search text matched against run id, compact picker "
+            "date/time, question text, and selected city names."
         ),
     ),
 ) -> RunListResponse:

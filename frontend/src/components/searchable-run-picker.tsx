@@ -6,6 +6,7 @@ import { Check, ChevronDown, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { RunSummary } from "@/lib/api";
+import { filterImmediateRunMatches } from "@/lib/run-picker-search";
 import { cn } from "@/lib/utils";
 
 interface SearchableRunPickerProps {
@@ -35,13 +36,14 @@ export function SearchableRunPicker({
   isLoading = false,
   popupClassName,
   placeholder = "Select a run",
-  searchPlaceholder = "Filter by question or city",
+  searchPlaceholder = "Filter by question, date, run ID, or city",
 }: SearchableRunPickerProps) {
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement | null>(null);
   const searchInputRef = useRef<HTMLInputElement | null>(null);
 
   const selectedRun = runs.find((run) => run.run_id === selectedRunId) ?? null;
+  const visibleRuns = filterImmediateRunMatches(runs, searchQuery);
   const triggerLabel =
     selectedRun !== null
       ? formatRunLabel(selectedRun)
@@ -146,9 +148,9 @@ export function SearchableRunPicker({
             aria-label="Available runs"
             className="mt-2 max-h-64 overflow-y-auto overscroll-contain pr-1"
           >
-            {runs.length > 0 ? (
+            {visibleRuns.length > 0 ? (
               <div className="grid gap-1">
-                {runs.map((run) => {
+                {visibleRuns.map((run) => {
                   const isSelected = run.run_id === selectedRunId;
                   return (
                     <Button

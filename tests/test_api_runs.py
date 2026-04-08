@@ -1033,6 +1033,43 @@ def test_api_list_runs_search_ranks_exact_question_phrase_before_token_match(
         ]
 
 
+def test_api_list_runs_search_numeric_fragment_matches_run_id_or_question_only(
+    tmp_path: Path,
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    _write_run_listing_artifact(
+        runs_dir,
+        run_id="20260326_1506",
+        started_at=datetime(2026, 3, 26, 15, 6, tzinfo=timezone.utc),
+        question="What initiatives exist for Munich?",
+    )
+    _write_run_listing_artifact(
+        runs_dir,
+        run_id="20260326_1511",
+        started_at=datetime(2026, 3, 26, 15, 11, tzinfo=timezone.utc),
+        question="What changed in project 1506 this quarter?",
+    )
+    _write_run_listing_artifact(
+        runs_dir,
+        run_id="gpt54mini-retrofit_rerun_dev-run3",
+        started_at=datetime(2026, 3, 27, 9, 0, tzinfo=timezone.utc),
+        question="What are the strongest retrofit initiatives in Munich?",
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get("/api/v1/runs?search=1506")
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["total"] == 2
+        assert [item["run_id"] for item in payload["runs"]] == [
+            "20260326_1506",
+            "20260326_1511",
+        ]
+
+
 def test_api_output_and_context_resolve_stale_container_artifact_paths(
     tmp_path: Path,
 ) -> None:

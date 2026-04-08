@@ -45,6 +45,7 @@ import {
   persistFrontendMode,
   readStoredFrontendMode,
 } from "@/lib/frontend-mode";
+import { filterImmediateRunMatches } from "@/lib/run-picker-search";
 import { formatCityLabel } from "@/lib/utils";
 import {
   CityGroup,
@@ -272,6 +273,10 @@ export default function Home() {
     ? normalizeCitySelectionKey(selectedCccCity)
     : "";
   const deferredRunSearchQuery = useDeferredValue(runSearchQuery);
+  const visibleRunOptions = useMemo(
+    () => filterImmediateRunMatches(availableRuns, runSearchQuery),
+    [availableRuns, runSearchQuery],
+  );
 
   const workspaceRailTitle =
     workspaceUsesDocumentRail && workspaceRailMode === "document"
@@ -1124,12 +1129,13 @@ export default function Home() {
                 </div>
                 <p className="text-xs text-slate-500">
                   {runSearchQuery.trim()
-                    ? `${availableRuns.length} matching runs.`
+                    ? `${visibleRunOptions.length} matching runs.`
                     : `${availableRuns.length} runs discovered in backend storage.`}
                 </p>
                 {runsError ? <p className="text-xs text-red-600">{runsError}</p> : null}
                 <p className="text-xs text-slate-500">
-                  Open the list to search by question or city. Minor city typos are tolerated.
+                  Open the list to search by question, date, run ID, or city. Minor city typos
+                  are tolerated.
                 </p>
                 <p className="text-xs text-slate-500">
                   Load a previous answer without re-running the full pipeline.

@@ -31,8 +31,10 @@ class _RunSearchDocument:
     """Normalized run metadata used for picker filtering and ranking."""
 
     record: RunRecord
+    run_id_text: str
     question: str
     picker_timestamp: str
+    picker_timestamp_text: str
     city_keys: tuple[str, ...]
     city_token_sets: tuple[frozenset[str], ...]
     question_text: str
@@ -78,8 +80,10 @@ def list_run_picker_entries(
 
 def _build_search_document(record: RunRecord) -> _RunSearchDocument:
     """Normalize one run record into a search-ready document."""
+    run_id_text = _normalize_text(record.run_id)
     question = record.question.strip()
     picker_timestamp = build_picker_timestamp(record.started_at)
+    picker_timestamp_text = _normalize_text(picker_timestamp)
     city_labels = _load_city_labels(record)
     city_keys = tuple(
         key
@@ -89,12 +93,14 @@ def _build_search_document(record: RunRecord) -> _RunSearchDocument:
     city_token_sets = tuple(frozenset(key.split("_")) for key in city_keys)
     question_text = _normalize_text(question)
     combined_tokens = frozenset(
-        _tokenize(" ".join([question, *city_labels]).strip())
+        _tokenize(" ".join([record.run_id, picker_timestamp, question, *city_labels]).strip())
     )
     return _RunSearchDocument(
         record=record,
+        run_id_text=run_id_text,
         question=question,
         picker_timestamp=picker_timestamp,
+        picker_timestamp_text=picker_timestamp_text,
         city_keys=city_keys,
         city_token_sets=city_token_sets,
         question_text=question_text,
@@ -187,10 +193,21 @@ def _score_document(
     search_key: str,
 ) -> _RunSearchScore | None:
     """Return a sortable score when a run matches the picker search."""
+    has_numeric_fragment = any(character.isdigit() for character in normalized_search)
     matched_tokens = sum(1 for token in search_tokens if token in document.combined_tokens)
-    if _has_exact_city_match(document, search_key, search_tokens):
+    if (
+        normalized_search in document.run_id_text
+        or normalized_search in document.picker_timestamp_text
+    ):
         return _RunSearchScore(
             tier=0,
+            matched_tokens=max(matched_tokens, 1),
+            fuzzy_city_score=0.0,
+        )
+
+    if _has_exact_city_match(document, search_key, search_tokens):
+        return _RunSearchScore(
+            tier=1,
             matched_tokens=max(matched_tokens, 1),
             fuzzy_city_score=1.0,
         )
@@ -198,28 +215,31 @@ def _score_document(
     fuzzy_city_score = _best_fuzzy_city_score(document, search_key, search_tokens)
     if fuzzy_city_score is not None:
         return _RunSearchScore(
-            tier=1,
+            tier=2,
             matched_tokens=max(matched_tokens, 1),
             fuzzy_city_score=fuzzy_city_score,
         )
 
     if normalized_search in document.question_text:
         return _RunSearchScore(
-            tier=2,
+            tier=3,
             matched_tokens=max(matched_tokens, 1),
             fuzzy_city_score=0.0,
         )
 
     if search_tokens and all(token in document.combined_tokens for token in search_tokens):
         return _RunSearchScore(
-            tier=3,
+            tier=4,
             matched_tokens=len(search_tokens),
             fuzzy_city_score=0.0,
         )
 
+    if has_numeric_fragment:
+        return None
+
     if matched_tokens > 0:
         return _RunSearchScore(
-            tier=4,
+            tier=5,
             matched_tokens=matched_tokens,
             fuzzy_city_score=0.0,
         )
