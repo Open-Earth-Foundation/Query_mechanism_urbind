@@ -195,6 +195,7 @@ export default function Home() {
   const [isPolling, setIsPolling] = useState(false);
   const [runError, setRunError] = useState<string | null>(null);
   const [availableRuns, setAvailableRuns] = useState<RunSummary[]>([]);
+  const [knownRunsById, setKnownRunsById] = useState<Record<string, RunSummary>>({});
   const [selectedExistingRunId, setSelectedExistingRunId] = useState("");
   const [runSearchQuery, setRunSearchQuery] = useState("");
   const [isLoadingRuns, setIsLoadingRuns] = useState(false);
@@ -246,8 +247,19 @@ export default function Home() {
     if (!runId) {
       return null;
     }
-    return availableRuns.find((run) => run.run_id === runId) ?? null;
-  }, [availableRuns, runId]);
+    return knownRunsById[runId] ?? availableRuns.find((run) => run.run_id === runId) ?? null;
+  }, [availableRuns, knownRunsById, runId]);
+
+  const selectedExistingRunSummary = useMemo(() => {
+    if (!selectedExistingRunId) {
+      return null;
+    }
+    return (
+      knownRunsById[selectedExistingRunId] ??
+      availableRuns.find((run) => run.run_id === selectedExistingRunId) ??
+      null
+    );
+  }, [availableRuns, knownRunsById, selectedExistingRunId]);
 
   const activeRunQuestion = useMemo(() => {
     const summaryQuestion = activeRunSummary?.question?.trim();
@@ -428,10 +440,17 @@ export default function Home() {
         if (runListAbortControllerRef.current !== controller) {
           return;
         }
+        setKnownRunsById((current) => {
+          const next = { ...current };
+          payload.runs.forEach((run) => {
+            next[run.run_id] = run;
+          });
+          return next;
+        });
         setAvailableRuns(payload.runs);
         setSelectedExistingRunId((current) => {
           const preferred = (preferredRunId ?? current).trim();
-          if (preferred && payload.runs.some((run) => run.run_id === preferred)) {
+          if (preferred) {
             return preferred;
           }
           if (payload.runs.length > 0) {
@@ -1108,6 +1127,7 @@ export default function Home() {
                   <SearchableRunPicker
                     id="existing-run"
                     runs={availableRuns}
+                    selectedRun={selectedExistingRunSummary}
                     selectedRunId={selectedExistingRunId}
                     searchQuery={runSearchQuery}
                     onSearchQueryChange={setRunSearchQuery}
@@ -1132,6 +1152,20 @@ export default function Home() {
                     ? `${visibleRunOptions.length} matching runs.`
                     : `${availableRuns.length} runs discovered in backend storage.`}
                 </p>
+                {selectedExistingRunSummary ? (
+                  <p className="text-xs text-slate-600">
+                    Selected run:{" "}
+                    <span className="font-medium text-slate-800">
+                      {formatRunOptionLabel(selectedExistingRunSummary)}
+                    </span>
+                    {runSearchQuery.trim() &&
+                    !visibleRunOptions.some(
+                      (run) => run.run_id === selectedExistingRunSummary.run_id,
+                    )
+                      ? " (kept selected while search is filtered)"
+                      : ""}
+                  </p>
+                ) : null}
                 {runsError ? <p className="text-xs text-red-600">{runsError}</p> : null}
                 <p className="text-xs text-slate-500">
                   Open the list to search by question, date, run ID, or city. Minor city typos

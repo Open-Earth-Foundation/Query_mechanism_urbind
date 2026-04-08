@@ -12,6 +12,7 @@ import { cn } from "@/lib/utils";
 interface SearchableRunPickerProps {
   id: string;
   runs: RunSummary[];
+  selectedRun?: RunSummary | null;
   selectedRunId: string;
   searchQuery: string;
   onSearchQueryChange: (value: string) => void;
@@ -27,6 +28,7 @@ interface SearchableRunPickerProps {
 export function SearchableRunPicker({
   id,
   runs,
+  selectedRun = null,
   selectedRunId,
   searchQuery,
   onSearchQueryChange,
@@ -42,11 +44,16 @@ export function SearchableRunPicker({
   const containerRef = useRef<HTMLDivElement | null>(null);
   const searchInputRef = useRef<HTMLInputElement | null>(null);
 
-  const selectedRun = runs.find((run) => run.run_id === selectedRunId) ?? null;
   const visibleRuns = filterImmediateRunMatches(runs, searchQuery);
+  const resolvedSelectedRun =
+    selectedRun ?? runs.find((run) => run.run_id === selectedRunId) ?? null;
+  const selectedRunHiddenByFilter =
+    !!searchQuery.trim() &&
+    !!resolvedSelectedRun &&
+    !visibleRuns.some((run) => run.run_id === resolvedSelectedRun.run_id);
   const triggerLabel =
-    selectedRun !== null
-      ? formatRunLabel(selectedRun)
+    resolvedSelectedRun !== null
+      ? formatRunLabel(resolvedSelectedRun)
       : isLoading && runs.length === 0
         ? "Loading runs..."
         : placeholder;
@@ -94,13 +101,20 @@ export function SearchableRunPicker({
         id={id}
         type="button"
         variant="outline"
-        className="h-11 w-full justify-between px-3 text-left font-normal"
+        className="h-auto min-h-11 w-full justify-between px-3 py-2 text-left font-normal"
         aria-expanded={isOpen}
         aria-haspopup="listbox"
         disabled={disabled}
         onClick={() => setIsOpen((current) => !current)}
       >
-        <span className="truncate">{triggerLabel}</span>
+        <span className="min-w-0 flex-1">
+          <span className="block truncate">{triggerLabel}</span>
+          {selectedRunHiddenByFilter ? (
+            <span className="mt-0.5 block text-[11px] text-slate-500">
+              Current search hides the selected run.
+            </span>
+          ) : null}
+        </span>
         <ChevronDown
           className={cn(
             "h-4 w-4 shrink-0 text-slate-500 transition-transform",
@@ -141,6 +155,13 @@ export function SearchableRunPicker({
               <Loader2 className="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 animate-spin text-slate-400" />
             ) : null}
           </div>
+
+          {selectedRunHiddenByFilter ? (
+            <div className="mt-2 rounded-md border border-amber-200 bg-amber-50 px-3 py-2 text-xs text-amber-900">
+              <span className="font-medium">Selected run kept:</span>{" "}
+              {formatRunLabel(resolvedSelectedRun)}
+            </div>
+          ) : null}
 
           <div
             role="listbox"
