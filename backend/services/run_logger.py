@@ -484,8 +484,8 @@ class RunLogger:
         """Capture markdown input snapshot for reproducible run summaries.
 
         ``markdown_chunks`` is expected to contain one entry per chunk.
-        ``markdown_source_mode`` identifies whether chunks came from standard
-        file chunking or vector store retrieval.
+        ``markdown_source_mode`` identifies the markdown loading strategy and
+        currently resolves to standard file chunking.
         """
         planned = sorted(
             {

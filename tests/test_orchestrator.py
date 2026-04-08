@@ -18,11 +18,10 @@ from tests.support import build_test_app_config
 
 
 def _build_test_config(*, runs_dir: Path, markdown_dir: Path) -> AppConfig:
-    """Build an orchestrator test config with vector retrieval disabled."""
+    """Build an orchestrator test config for markdown-only pipeline tests."""
     return build_test_app_config(
         runs_dir=runs_dir,
         markdown_dir=markdown_dir,
-        vector_store_overrides={"enabled": False},
     )
 
 

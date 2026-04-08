@@ -23,7 +23,6 @@ from backend.api.services.chat_memory import ChatMemoryStore
 from backend.api.services.run_executor import RunExecutor
 from backend.api.services.run_store import RunStore
 from backend.api.services.chat_split_flow import build_chat_job_processor
-from backend.utils.config import load_config
 from backend.utils.logging_config import setup_logger
 
 logger = logging.getLogger(__name__)
@@ -112,17 +111,6 @@ def create_app(
     @asynccontextmanager
     async def lifespan(app: FastAPI) -> AsyncIterator[None]:
         logger.info("API startup: initializing run store and worker pools")
-        if resolved_config_path.exists():
-            try:
-                startup_config = load_config(resolved_config_path)
-                mode = (
-                    "vector_store_retrieval"
-                    if startup_config.vector_store.enabled
-                    else "standard_chunking"
-                )
-                logger.info("API startup: markdown_source_mode=%s", mode)
-            except Exception as e:  # noqa: BLE001
-                logger.warning("API startup: could not load config for mode log: %s", e)
         run_store = RunStore(resolved_runs_dir)
         chat_memory_store = ChatMemoryStore(resolved_runs_dir)
         chat_job_store = ChatJobStore(resolved_runs_dir)

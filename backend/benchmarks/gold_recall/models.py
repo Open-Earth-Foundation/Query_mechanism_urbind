@@ -5,7 +5,7 @@ from typing import Literal
 from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
 
-ChunkBucket = Literal["seed_hit", "neighbor_only_hit", "fallback_top_up_hit", "miss"]
+ChunkBucket = Literal["delivered_hit", "miss"]
 FactJudgeVerdict = Literal["YES", "NO"]
 FactJudgeStage = Literal["stage_b", "stage_c"]
 
@@ -185,13 +185,13 @@ class GoldBenchmarkDataset(BaseModel):
 
 
 class RetrievalChunkDiagnostic(BaseModel):
-    """Per-gold-slot retrieval diagnosis used in benchmark output."""
+    """Per-gold-slot delivered-chunk diagnosis used in benchmark output."""
 
     chunk_id: str
     bucket: ChunkBucket
     matched_chunk_id: str | None = None
-    seed_rank: int | None = None
-    selection_mode: str | None = None
+    chunk_rank: int | None = None
+    match_strategy: str | None = None
 
 
 class FactPresenceJudgement(BaseModel):
@@ -209,16 +209,12 @@ class FactPresenceJudgement(BaseModel):
 
 
 class StageARetrievalMetrics(BaseModel):
-    """Stage A retrieval metrics for one benchmark case."""
+    """Stage A delivered-context metrics for one benchmark case."""
 
-    retrieval_recall: float = Field(ge=0.0, le=1.0)
-    retrieval_precision: float = Field(ge=0.0, le=1.0)
-    mrr: float = Field(ge=0.0, le=1.0)
     delivery_recall: float = Field(ge=0.0, le=1.0)
     delivery_precision: float = Field(ge=0.0, le=1.0)
-    seed_hit_count: int = Field(ge=0)
-    neighbor_only_hit_count: int = Field(ge=0)
-    fallback_top_up_hit_count: int = Field(ge=0)
+    mrr: float = Field(ge=0.0, le=1.0)
+    delivered_hit_count: int = Field(ge=0)
     miss_count: int = Field(ge=0)
 
 
@@ -240,7 +236,6 @@ class LossWaterfall(BaseModel):
     """Per-case loss waterfall that shows where information dropped."""
 
     gold_chunk_count: int = Field(ge=0)
-    seed_hit_chunk_count: int = Field(ge=0)
     delivery_hit_chunk_count: int = Field(ge=0)
     stage_b_fact_hit_count: int = Field(ge=0)
     stage_c_fact_hit_count: int = Field(ge=0)
@@ -254,7 +249,7 @@ class RecallBenchmarkCaseResult(BaseModel):
     gold_city: list[str]
     selected_cities: list[str]
     run_dir: str
-    retrieval_path: str
+    batches_path: str
     excerpts_path: str
     references_path: str
     final_output_path: str
@@ -271,11 +266,9 @@ class RecallBenchmarkSummary(BaseModel):
     """Aggregate rollup across all benchmark cases."""
 
     case_count: int = Field(ge=0)
-    retrieval_recall_mean: float = Field(ge=0.0, le=1.0)
-    retrieval_precision_mean: float = Field(ge=0.0, le=1.0)
-    mrr_mean: float = Field(ge=0.0, le=1.0)
     delivery_recall_mean: float = Field(ge=0.0, le=1.0)
     delivery_precision_mean: float = Field(ge=0.0, le=1.0)
+    mrr_mean: float = Field(ge=0.0, le=1.0)
     extraction_recall_mean: float = Field(ge=0.0, le=1.0)
     fact_extraction_rate_mean: float = Field(ge=0.0, le=1.0)
     end_to_end_fact_recall_mean: float = Field(ge=0.0, le=1.0)

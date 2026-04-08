@@ -90,37 +90,38 @@ def _require_text(path: Path) -> str:
     return path.read_text(encoding="utf-8")
 
 
-def _validate_retrieval_payload(payload: dict[str, Any], case_id: str) -> None:
-    """Validate that retrieval.json contains the strict seed-layer artifact data."""
-    seed_chunks = payload.get("seed_chunks")
-    chunks = payload.get("chunks")
-    if not isinstance(seed_chunks, list):
-        raise ValueError(
-            f"retrieval.json for case_id={case_id} is missing seed_chunks[]."
-        )
-    if not isinstance(chunks, list):
-        raise ValueError(f"retrieval.json for case_id={case_id} is missing chunks[].")
+def _load_delivered_chunks(payload: dict[str, Any], case_id: str) -> list[dict[str, Any]]:
+    """Flatten `batches.json` into an ordered list of delivered chunk records."""
+    batches = payload.get("batches")
+    if not isinstance(batches, list):
+        raise ValueError(f"batches.json for case_id={case_id} is missing batches[].")
 
-    for seed_chunk in seed_chunks:
-        if not isinstance(seed_chunk, dict):
-            raise ValueError(f"Invalid seed chunk payload in case_id={case_id}.")
-        provenance = seed_chunk.get("provenance")
-        if not isinstance(provenance, dict):
-            raise ValueError(
-                f"Seed chunk provenance missing in retrieval.json for case_id={case_id}."
+    delivered_chunks: list[dict[str, Any]] = []
+    for batch in batches:
+        if not isinstance(batch, dict):
+            continue
+        chunks = batch.get("chunks")
+        if not isinstance(chunks, list):
+            continue
+        for chunk in chunks:
+            if not isinstance(chunk, dict):
+                continue
+            chunk_id = str(chunk.get("chunk_id", "")).strip()
+            if not chunk_id:
+                continue
+            delivered_chunks.append(
+                {
+                    "chunk_id": chunk_id,
+                    "chunk_rank": len(delivered_chunks) + 1,
+                    "chunk_index": chunk.get("chunk_index"),
+                    "path": chunk.get("path"),
+                }
             )
-        if provenance.get("origin") != "seed":
-            raise ValueError(
-                f"Seed chunk origin must be 'seed' for case_id={case_id}."
-            )
-        if not isinstance(provenance.get("seed_rank"), int):
-            raise ValueError(
-                f"Seed chunk is missing seed_rank for case_id={case_id}."
-            )
+    return delivered_chunks
 
 
 def _build_chunk_index(chunks: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
-    """Index persisted retrieval chunk objects by chunk id."""
+    """Index persisted delivered chunk objects by chunk id."""
     index: dict[str, dict[str, Any]] = {}
     for chunk in chunks:
         if not isinstance(chunk, dict):
@@ -265,7 +266,7 @@ def _match_gold_chunks(
     target_text_index: dict[str, list[str]],
     target_text_map: dict[str, str],
 ) -> dict[int, tuple[str, str]]:
-    """Match gold chunks to retrieval chunks by id or fallback text containment."""
+    """Match gold chunks to delivered chunks by id or fallback text containment."""
     matches: dict[int, tuple[str, str]] = {}
     for idx, gold_chunk_id in enumerate(gold_chunk_ids):
         direct_match = _find_direct_chunk_match(
@@ -353,23 +354,12 @@ def _build_chunk_diagnostics(
     gold_chunk_ids: list[str],
     gold_chunk_alternatives: list[list[GoldChunkAlternative]],
     gold_chunk_texts: list[str] | None,
-    seed_index: dict[str, dict[str, Any]],
     delivery_index: dict[str, dict[str, Any]],
-    seed_text_index: dict[str, list[str]],
     delivery_text_index: dict[str, list[str]],
-    seed_text_map: dict[str, str],
     delivery_text_map: dict[str, str],
 ) -> list[RetrievalChunkDiagnostic]:
-    """Classify every gold chunk as seed-hit, neighbor-only, fallback, or miss."""
+    """Classify every gold chunk as delivered-hit or miss."""
     diagnostics: list[RetrievalChunkDiagnostic] = []
-    seed_matches = _match_gold_chunks(
-        gold_chunk_ids=gold_chunk_ids,
-        gold_chunk_alternatives=gold_chunk_alternatives,
-        gold_chunk_texts=gold_chunk_texts,
-        target_index=seed_index,
-        target_text_index=seed_text_index,
-        target_text_map=seed_text_map,
-    )
     delivery_matches = _match_gold_chunks(
         gold_chunk_ids=gold_chunk_ids,
         gold_chunk_alternatives=gold_chunk_alternatives,
@@ -380,55 +370,18 @@ def _build_chunk_diagnostics(
     )
 
     for idx, chunk_id in enumerate(gold_chunk_ids):
-        matched_seed = seed_matches.get(idx)
         matched_delivery = delivery_matches.get(idx)
-        matched_seed_id = matched_seed[0] if matched_seed else None
-        matched_delivery_id = matched_delivery[0] if matched_delivery else None
-        seed_chunk = seed_index.get(matched_seed_id) if matched_seed_id else None
-        delivery_chunk = (
-            delivery_index.get(matched_delivery_id) if matched_delivery_id else None
-        )
-        if seed_chunk is not None:
-            provenance = seed_chunk.get("provenance", {})
-            raw_selection_mode = (
-                str(provenance.get("selection_mode", "")).strip() or None
-            )
-            bucket = (
-                "fallback_top_up_hit"
-                if raw_selection_mode == "fallback_top_up"
-                else "seed_hit"
-            )
-            selection_mode = raw_selection_mode
-            if matched_seed is not None and matched_seed[1] == "text_fallback":
-                selection_mode = (
-                    f"text_fallback:{raw_selection_mode}"
-                    if raw_selection_mode
-                    else "text_fallback"
-                )
-            seed_rank = provenance.get("seed_rank")
+        if matched_delivery is not None:
+            matched_chunk_id, match_strategy = matched_delivery
+            delivery_chunk = delivery_index[matched_chunk_id]
+            chunk_rank = delivery_chunk.get("chunk_rank")
             diagnostics.append(
                 RetrievalChunkDiagnostic(
                     chunk_id=chunk_id,
-                    bucket=bucket,
-                    matched_chunk_id=matched_seed_id,
-                    seed_rank=seed_rank if isinstance(seed_rank, int) else None,
-                    selection_mode=selection_mode,
-                )
-            )
-            continue
-        if delivery_chunk is not None:
-            provenance = delivery_chunk.get("provenance", {})
-            selection_mode = (
-                str(provenance.get("selection_mode", "")).strip() or None
-            )
-            if matched_delivery is not None and matched_delivery[1] == "text_fallback":
-                selection_mode = "text_fallback"
-            diagnostics.append(
-                RetrievalChunkDiagnostic(
-                    chunk_id=chunk_id,
-                    bucket="neighbor_only_hit",
-                    matched_chunk_id=matched_delivery_id,
-                    selection_mode=selection_mode,
+                    bucket="delivered_hit",
+                    matched_chunk_id=matched_chunk_id,
+                    chunk_rank=chunk_rank if isinstance(chunk_rank, int) else None,
+                    match_strategy=match_strategy,
                 )
             )
             continue
@@ -440,7 +393,7 @@ def _build_case_result(
     *,
     case: GoldBenchmarkCase,
     run_dir: Path,
-    retrieval_payload: dict[str, Any],
+    batches_payload: dict[str, Any],
     excerpts_payload: dict[str, Any],
     references_payload: dict[str, Any],
     final_text: str,
@@ -450,10 +403,8 @@ def _build_case_result(
     judge_func,
 ) -> RecallBenchmarkCaseResult:
     """Compute all recall/precision metrics for one benchmark case."""
-    _validate_retrieval_payload(retrieval_payload, case.case_id)
-
-    seed_index = _build_chunk_index(list(retrieval_payload.get("seed_chunks", [])))
-    delivery_index = _build_chunk_index(list(retrieval_payload.get("chunks", [])))
+    delivered_chunks = _load_delivered_chunks(batches_payload, case.case_id)
+    delivery_index = _build_chunk_index(delivered_chunks)
     gold_chunk_ids = list(case.gold_chunk_ids)
     gold_chunk_alternatives = case.resolved_gold_chunk_alternatives()
     gold_chunk_texts = list(case.gold_chunk_texts) if case.gold_chunk_texts else None
@@ -480,14 +431,8 @@ def _build_case_result(
     chunk_text_map = _load_chunk_text_map(
         run_dir=run_dir,
         config=config,
-        chunk_ids=set(seed_index.keys())
-        | delivery_chunk_ids_for_text
-        | excerpt_source_ids
-        | cited_source_chunk_ids,
+        chunk_ids=delivery_chunk_ids_for_text | excerpt_source_ids | cited_source_chunk_ids,
     )
-    seed_text_map = {
-        chunk_id: text for chunk_id, text in chunk_text_map.items() if chunk_id in seed_index
-    }
     delivery_text_map = {
         chunk_id: text
         for chunk_id, text in chunk_text_map.items()
@@ -503,19 +448,10 @@ def _build_case_result(
         for chunk_id, text in chunk_text_map.items()
         if chunk_id in cited_source_chunk_ids
     }
-    seed_text_index = _build_text_match_index(seed_text_map)
     delivery_text_index = _build_text_match_index(delivery_text_map)
     excerpt_text_index = _build_text_match_index(excerpt_text_map)
     cited_text_index = _build_text_match_index(cited_text_map)
 
-    seed_matches = _match_gold_chunks(
-        gold_chunk_ids=gold_chunk_ids,
-        gold_chunk_alternatives=gold_chunk_alternatives,
-        gold_chunk_texts=gold_chunk_texts,
-        target_index=seed_index,
-        target_text_index=seed_text_index,
-        target_text_map=seed_text_map,
-    )
     delivery_matches = _match_gold_chunks(
         gold_chunk_ids=gold_chunk_ids,
         gold_chunk_alternatives=gold_chunk_alternatives,
@@ -541,48 +477,29 @@ def _build_case_result(
         target_text_map=cited_text_map,
     )
 
-    matching_seed_ranks: list[int] = []
-    for chunk_id, _match_strategy in seed_matches.values():
-        provenance = seed_index[chunk_id].get("provenance", {})
-        seed_rank = provenance.get("seed_rank")
-        if isinstance(seed_rank, int):
-            matching_seed_ranks.append(seed_rank)
+    matching_ranks: list[int] = []
+    for chunk_id, _match_strategy in delivery_matches.values():
+        chunk_rank = delivery_index[chunk_id].get("chunk_rank")
+        if isinstance(chunk_rank, int):
+            matching_ranks.append(chunk_rank)
 
     chunk_diagnostics = _build_chunk_diagnostics(
         gold_chunk_ids=gold_chunk_ids,
         gold_chunk_alternatives=gold_chunk_alternatives,
         gold_chunk_texts=gold_chunk_texts,
-        seed_index=seed_index,
         delivery_index=delivery_index,
-        seed_text_index=seed_text_index,
         delivery_text_index=delivery_text_index,
-        seed_text_map=seed_text_map,
         delivery_text_map=delivery_text_map,
     )
     stage_a = StageARetrievalMetrics(
-        retrieval_recall=_safe_ratio(len(seed_matches), len(gold_chunk_ids)),
-        retrieval_precision=_safe_ratio(
-            len(seed_matches),
-            len(seed_index),
-        ),
-        mrr=(1.0 / float(min(matching_seed_ranks))) if matching_seed_ranks else 0.0,
         delivery_recall=_safe_ratio(len(delivery_matches), len(gold_chunk_ids)),
         delivery_precision=_safe_ratio(
             len(delivery_matches),
             len(delivery_index),
         ),
-        seed_hit_count=sum(
-            1 for diagnostic in chunk_diagnostics if diagnostic.bucket == "seed_hit"
-        ),
-        neighbor_only_hit_count=sum(
-            1
-            for diagnostic in chunk_diagnostics
-            if diagnostic.bucket == "neighbor_only_hit"
-        ),
-        fallback_top_up_hit_count=sum(
-            1
-            for diagnostic in chunk_diagnostics
-            if diagnostic.bucket == "fallback_top_up_hit"
+        mrr=(1.0 / float(min(matching_ranks))) if matching_ranks else 0.0,
+        delivered_hit_count=sum(
+            1 for diagnostic in chunk_diagnostics if diagnostic.bucket == "delivered_hit"
         ),
         miss_count=sum(
             1 for diagnostic in chunk_diagnostics if diagnostic.bucket == "miss"
@@ -644,7 +561,7 @@ def _build_case_result(
         gold_city=list(case.gold_city),
         selected_cities=case.resolved_selected_cities(),
         run_dir=str(run_dir),
-        retrieval_path=str(run_dir / "markdown" / "retrieval.json"),
+        batches_path=str(run_dir / "markdown" / "batches.json"),
         excerpts_path=str(run_dir / "markdown" / "excerpts.json"),
         references_path=str(run_dir / "markdown" / "references.json"),
         final_output_path=str(run_dir / "final.md"),
@@ -653,7 +570,6 @@ def _build_case_result(
         stage_c=stage_c,
         loss_waterfall=LossWaterfall(
             gold_chunk_count=len(gold_chunk_ids),
-            seed_hit_chunk_count=len(seed_matches),
             delivery_hit_chunk_count=len(delivery_matches),
             stage_b_fact_hit_count=stage_b_fact_hit_count,
             stage_c_fact_hit_count=stage_c_fact_hit_count,
@@ -668,19 +584,13 @@ def _build_summary(results: list[RecallBenchmarkCaseResult]) -> RecallBenchmarkS
     """Build the aggregate metric summary for the full report."""
     return RecallBenchmarkSummary(
         case_count=len(results),
-        retrieval_recall_mean=_mean(
-            [result.stage_a.retrieval_recall for result in results]
-        ),
-        retrieval_precision_mean=_mean(
-            [result.stage_a.retrieval_precision for result in results]
-        ),
-        mrr_mean=_mean([result.stage_a.mrr for result in results]),
         delivery_recall_mean=_mean(
             [result.stage_a.delivery_recall for result in results]
         ),
         delivery_precision_mean=_mean(
             [result.stage_a.delivery_precision for result in results]
         ),
+        mrr_mean=_mean([result.stage_a.mrr for result in results]),
         extraction_recall_mean=_mean(
             [result.stage_b.extraction_recall for result in results]
         ),
@@ -710,11 +620,9 @@ def _render_report_markdown(report: RecallBenchmarkReport) -> str:
         "",
         "| Metric | Mean |",
         "| --- | ---: |",
-        f"| Retrieval recall | {report.summary.retrieval_recall_mean:.3f} |",
-        f"| Retrieval precision | {report.summary.retrieval_precision_mean:.3f} |",
-        f"| MRR | {report.summary.mrr_mean:.3f} |",
         f"| Delivery recall | {report.summary.delivery_recall_mean:.3f} |",
         f"| Delivery precision | {report.summary.delivery_precision_mean:.3f} |",
+        f"| MRR | {report.summary.mrr_mean:.3f} |",
         f"| Extraction recall | {report.summary.extraction_recall_mean:.3f} |",
         f"| Fact extraction rate | {report.summary.fact_extraction_rate_mean:.3f} |",
         f"| End-to-end fact recall | {report.summary.end_to_end_fact_recall_mean:.3f} |",
@@ -734,17 +642,15 @@ def _render_report_markdown(report: RecallBenchmarkReport) -> str:
                 (
                     "- Waterfall: "
                     f"gold_chunks={result.loss_waterfall.gold_chunk_count}, "
-                    f"seed_hits={result.loss_waterfall.seed_hit_chunk_count}, "
                     f"delivery_hits={result.loss_waterfall.delivery_hit_chunk_count}, "
                     f"stage_b_fact_hits={result.loss_waterfall.stage_b_fact_hit_count}, "
                     f"stage_c_fact_hits={result.loss_waterfall.stage_c_fact_hit_count}"
                 ),
                 (
                     "- Metrics: "
-                    f"retrieval_recall={result.stage_a.retrieval_recall:.3f}, "
-                    f"retrieval_precision={result.stage_a.retrieval_precision:.3f}, "
-                    f"mrr={result.stage_a.mrr:.3f}, "
                     f"delivery_recall={result.stage_a.delivery_recall:.3f}, "
+                    f"delivery_precision={result.stage_a.delivery_precision:.3f}, "
+                    f"mrr={result.stage_a.mrr:.3f}, "
                     f"extraction_recall={result.stage_b.extraction_recall:.3f}, "
                     f"fact_recall={result.stage_c.end_to_end_fact_recall:.3f}, "
                     f"citation_coverage={result.stage_c.citation_coverage:.3f}"
@@ -800,7 +706,7 @@ def run_recall_benchmark(
         )
         run_dir = run_paths.base_dir
 
-        retrieval_payload = _require_json_object(run_dir / "markdown" / "retrieval.json")
+        batches_payload = _require_json_object(run_dir / "markdown" / "batches.json")
         excerpts_payload = _require_json_object(run_dir / "markdown" / "excerpts.json")
         references_payload = _require_json_object(
             run_dir / "markdown" / "references.json"
@@ -810,7 +716,7 @@ def run_recall_benchmark(
             _build_case_result(
                 case=case,
                 run_dir=run_dir,
-                retrieval_payload=retrieval_payload,
+                batches_payload=batches_payload,
                 excerpts_payload=excerpts_payload,
                 references_payload=references_payload,
                 final_text=final_text,

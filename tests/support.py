@@ -9,7 +9,7 @@ from typing import TypeVar
 import yaml
 from pydantic import BaseModel
 
-from backend.utils.config import AppConfig, VectorStoreConfig
+from backend.utils.config import AppConfig
 
 ModelT = TypeVar("ModelT", bound=BaseModel)
 TEST_CONFIG_PATH = Path(__file__).resolve().parents[1] / "llm_config.yaml"
@@ -33,8 +33,6 @@ def build_test_app_config(
     *,
     runs_dir: Path = Path("output"),
     markdown_dir: Path = Path("documents"),
-    vector_store: VectorStoreConfig | None = None,
-    vector_store_overrides: dict[str, object] | None = None,
     orchestrator_overrides: dict[str, object] | None = None,
     markdown_researcher_overrides: dict[str, object] | None = None,
     writer_overrides: dict[str, object] | None = None,
@@ -56,9 +54,6 @@ def build_test_app_config(
         assumptions_reviewer_overrides,
     )
     config.retry = _apply_overrides(config.retry, retry_overrides)
-    config.vector_store = _apply_overrides(config.vector_store, vector_store_overrides)
-    if vector_store is not None:
-        config.vector_store = vector_store
     config.runs_dir = runs_dir
     config.markdown_dir = markdown_dir
     return config

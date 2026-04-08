@@ -5,10 +5,10 @@ flowchart TD
   API --> ORCH[Orchestrator run pipeline]
 
   ORCH -->|optional| QR[Query Refiner]
-  QR --> RET[Retriever]
-  ORCH -->|without query refiner| RET
+  QR --> MDLOAD[Markdown Chunk Loader]
+  ORCH -->|without query refiner| MDLOAD
 
-  RET -->|top k markdown chunks| MR[Markdown Researcher]
+  MDLOAD --> MR[Markdown Researcher]
   MR --> EX[Structured Excerpts]
   EX --> WR[Writer]
   WR --> RUN[(Run Store)]
@@ -26,28 +26,21 @@ flowchart TD
   CHATAPI --> CHATUI
 
   CHATAPI -->|optional one city follow up search| FROUTE[Chat Follow Up Router]
-  FROUTE --> FRET[Focused City Retrieval]
-  FRET --> FB[(Chat Owned Follow Up Bundle)]
+  FROUTE --> FLOAD[Focused City Markdown Loading]
+  FLOAD --> FB[(Chat Owned Follow Up Bundle)]
   FB --> LOAD
-
-  subgraph VS[Vector Store Layer]
-    IDX[Index Builder]
-    CH[(Chroma Store)]
-    IDX --> CH
-    RET --> CH
-    FRET --> CH
-  end
 
   subgraph DOCS[Markdown Corpus]
     MD[Markdown Documents]
   end
 
-  MD --> IDX
+  MD --> MDLOAD
+  MD --> FLOAD
 ```
 
 Notes:
 
 - The product remains document-first: chat starts only after a completed run has produced a saved final document and context bundle.
 - Context chat is run-scoped. It reuses persisted run artifacts, stores conversation state separately in chat memory, and can combine multiple completed run contexts in one session.
-- When the chat router needs narrower evidence, it can trigger a focused one-city follow-up retrieval and attach that result back into the active chat session as a chat-owned follow-up bundle.
+- When the chat router needs narrower evidence, it can trigger a focused one-city follow-up markdown search and attach that result back into the active chat session as a chat-owned follow-up bundle.
 - When a chat turn is predicted to require overflow map-reduce, the API now persists the user message, queues a split-mode chat job, and the frontend polls job status until the final assistant message is appended to chat memory.

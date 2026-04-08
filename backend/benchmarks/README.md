@@ -1,64 +1,49 @@
 # Benchmark Configuration
 
-This folder contains benchmark-only setup, separate from normal runtime settings.
+This folder contains benchmark-only prompts and documentation for the markdown-only
+runtime.
 
 ## Files
 
 - `prompts/retrieval_questions.txt`: benchmark questions.
-- `prompts/retrieval_query_overrides.json`: fixed canonical + retrieval queries per question (optional, recommended for stable chunk counts).
-- `config/base.env`: shared settings applied to both benchmark modes.
-- `config/mode_standard.env`: overrides for standard chunking runs.
-- `config/mode_vector.env`: overrides for vector-store runs.
-- `retrieval_evidence_diversity_analysis.md`: retrieval-only diagnosis of current benchmark misses and prioritized fixes for query diversity, fusion, and chunk representation.
+- `prompts/retrieval_query_overrides.json`: optional fixed canonical and retrieval
+  queries per benchmark question for stable reruns.
 
-## Override order
+## Markdown chunking benchmark
 
-The benchmark runner loads env files in this order for each mode:
+Use `python -m backend.scripts.run_retrieval_benchmark` to compare
+batching/concurrency settings for the standard markdown chunking pipeline.
 
-1. `config/base.env`
-2. mode-specific env (`config/mode_standard.env` or `config/mode_vector.env`)
+- Benchmark sizing is controlled with `--markdown-option <batch_max_chunks>:<max_workers>`.
+- Default markdown options are `16:8`, `32:4`, and `32:8`.
+- Query overrides can pin the canonical and retrieval queries so repeated runs use
+  the same prompt inputs.
+- Reports include runtime, token throughput, markdown chunk counts, excerpt counts,
+  and LLM issue counters.
+- Failed runs stay in the report with their error details so the remaining matrix can
+  continue.
 
-If a key appears in both, the mode-specific value wins.
+Outputs are written under `output/benchmarks/<benchmark_id>/`:
 
-## Notes
+- `benchmark_report.json`
+- `benchmark_report.md`
+- `runs/standard_chunking/<run_id>/...`
 
-- Vector benchmark mode uses the existing default Chroma store/collection unless
-  overridden in the main environment.
-- Vector-store retrieval/embedding tuning is read from `llm_config.yaml`
-  (`vector_store.*`), not benchmark env files.
-- Markdown researcher benchmark sizing/concurrency is configured from benchmark CLI
-  options (`--markdown-option <batch_max_chunks>:<max_workers>`).
-- Default benchmark markdown options are:
-  - `16:8`
-  - `32:4`
-  - `32:8`
-- Benchmark runs do not build/update vector index; they measure runtime behavior
-  with the currently available index.
-- To reduce run-to-run variance in retrieval behavior, the benchmark script can use
-  fixed canonical + retrieval queries from `prompts/retrieval_query_overrides.json`.
-- Benchmark includes LLM-as-judge scoring (OpenRouter `openai/gpt-5.4-mini`) for each
-  standard-vs-vector pair on the same question/repetition/markdown option.
-- Benchmark report includes speed metrics (runtime + tokens/sec) and LLM issue
-  counters (rate limits, retry exhausted, max-turns, and non-working calls).
-- Failed runs are kept in the report with error details and issue counters, and
-  benchmark execution continues with remaining runs.
-- For ad-hoc comparison of two files, use:
-  `python -m backend.scripts.judge_final_outputs --left-final <path_a> --right-final <path_b> --question "..."`
+For ad-hoc comparison of any two final documents, use
+`python -m backend.scripts.judge_final_outputs --left-final <path_a> --right-final <path_b> --question "..."`
 
 ## Gold recall benchmark
 
 Use `python -m backend.scripts.benchmark_recall --gold-file tests/fixtures/benchmark_gold.json`
-to measure information loss across retrieval, markdown extraction, and final writing.
+to measure information loss across delivered markdown chunks, markdown extraction,
+and final writing.
 
-- Stage A strict metrics (`retrieval_recall`, `retrieval_precision`, `mrr`) use
-  direct hits from `retrieval.json.seed_chunks[]`.
-- Stage A supplemental delivery metrics (`delivery_recall`,
-  `delivery_precision`) use the final delivered context in
-  `retrieval.json.chunks[]`.
-- Stage B uses `excerpts[].source_chunk_ids` for extraction recall and an LLM
-  fact judge for fact extraction rate.
-- Stage C uses an LLM fact judge on `final.md` plus citation coverage derived
-  from cited `ref_id` values mapped through `references.json`.
+- Stage A uses delivered chunks reconstructed from `markdown/batches.json` plus the
+  live markdown files. Metrics are `delivery_recall`, `delivery_precision`, and `mrr`.
+- Stage B uses `excerpts[].source_chunk_ids` for extraction recall and an LLM fact
+  judge for fact extraction rate.
+- Stage C uses an LLM fact judge on `final.md` plus citation coverage derived from
+  cited `ref_id` values mapped through `references.json`.
 
 Gold fixtures live in `tests/fixtures/benchmark_gold.json` and use the versioned
 schema `{"version": 1, "cases": [...]}` with `case_id`, `question`,
@@ -66,25 +51,16 @@ schema `{"version": 1, "cases": [...]}` with `case_id`, `question`,
 `gold_chunk_texts`, and `gold_chunk_alternatives`.
 
 - `gold_chunk_texts` should hold the canonical chunk text for each gold slot.
-  The scorer still supports containment fallback, but the fixture should keep
-  the actual chunk text in JSON.
-- `gold_chunk_alternatives` lets one gold chunk slot accept specific
-  alternative runtime chunks without changing the benchmark denominator, while
-  storing both `chunk_id` and `chunk_text` in the fixture JSON.
+- `gold_chunk_alternatives` lets one gold chunk slot accept specific alternative
+  runtime chunks without changing the benchmark denominator while still storing both
+  `chunk_id` and `chunk_text`.
 
-Every benchmark case executes the live pipeline and is then scored from the
-freshly produced `markdown/retrieval.json`, `markdown/excerpts.json`,
+Every benchmark case executes the live pipeline and is then scored from the freshly
+produced `markdown/batches.json`, `markdown/excerpts.json`,
 `markdown/references.json`, and `final.md` artifacts.
-
-Per-case `benchmark_report.json` chunk diagnostics keep the canonical gold
-`chunk_id` and, when different, the `matched_chunk_id` that actually satisfied
-that benchmark slot.
-
-The fact judge is separate from the pairwise benchmark judge and defaults to
-OpenRouter `openai/gpt-5.4-mini`.
 
 Outputs are written under `output/benchmarks/recall/<benchmark_id>/`:
 
 - `benchmark_report.json`
 - `benchmark_report.md`
-- `runs/<case_id>/...` for each benchmark case
+- `runs/<case_id>/...`

@@ -73,29 +73,6 @@ class BenchmarkFactJudgeConfig(BaseModel):
     max_output_tokens: int = 600
     reasoning_effort: ReasoningEffort | None = "high"
 
-
-class VectorStoreConfig(BaseModel):
-    enabled: bool = False
-    chroma_persist_path: Path = Field(default_factory=lambda: Path(".chroma"))
-    chroma_collection_name: str = "markdown_chunks"
-    embedding_model: str = "text-embedding-3-large"
-    embedding_max_input_tokens: int | None = 8000
-    embedding_batch_size: int = 100
-    embedding_chunk_tokens: int = 800
-    embedding_chunk_overlap_tokens: int = 80
-    table_row_group_max_rows: int = 25
-    retrieval_max_distance: float | None = 1.0
-    retrieval_fallback_min_chunks_per_city_query: int = 20
-    retrieval_max_chunks_per_city_query: int = 60
-    retrieval_max_chunks_per_city: int | None = 300
-    context_window_chunks: int = 0
-    table_context_window_chunks: int = 1
-    auto_update_on_run: bool = False
-    index_manifest_path: Path = Field(
-        default_factory=lambda: Path(".chroma/index_manifest.json")
-    )
-
-
 class RetryConfig(BaseModel):
     """Shared retry policy for LLM and retrieval operations.
 
@@ -123,7 +100,6 @@ class AppConfig(BaseModel):
         default_factory=lambda: BenchmarkFactJudgeConfig(model="openai/gpt-5.4-mini")
     )
     retry: RetryConfig = Field(default_factory=RetryConfig)
-    vector_store: VectorStoreConfig = Field(default_factory=VectorStoreConfig)
     openrouter_base_url: str = "https://openrouter.ai/api/v1"
     runs_dir: Path = Field(default_factory=lambda: Path("output"))
     markdown_dir: Path = Field(default_factory=lambda: Path("documents"))
@@ -135,18 +111,6 @@ class AppConfig(BaseModel):
         if isinstance(value, AgentConfig):
             return value.model_dump()
         return value
-
-
-def _parse_env_bool(value: str | None) -> bool | None:
-    """Parse a permissive environment boolean string."""
-    if value is None:
-        return None
-    normalized = value.strip().lower()
-    if normalized in {"1", "true", "yes", "y", "on"}:
-        return True
-    if normalized in {"0", "false", "no", "n", "off"}:
-        return False
-    return None
 
 
 def load_config(config_path: Optional[Path] = None) -> AppConfig:
@@ -162,9 +126,6 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
     runs_dir = os.getenv("RUNS_DIR")
     markdown_dir = os.getenv("MARKDOWN_DIR")
     openrouter_base_url = os.getenv("OPENROUTER_BASE_URL")
-    vector_store_enabled = os.getenv("VECTOR_STORE_ENABLED")
-    chroma_persist_path = os.getenv("CHROMA_PERSIST_PATH")
-    chroma_collection_name = os.getenv("CHROMA_COLLECTION_NAME")
 
     if runs_dir:
         config.runs_dir = Path(runs_dir)
@@ -172,19 +133,6 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
         config.markdown_dir = Path(markdown_dir)
     if openrouter_base_url:
         config.openrouter_base_url = openrouter_base_url
-    if vector_store_enabled is not None:
-        parsed = _parse_env_bool(vector_store_enabled)
-        if parsed is not None:
-            config.vector_store.enabled = parsed
-    if chroma_persist_path:
-        manifest_default = Path(".chroma/index_manifest.json")
-        config.vector_store.chroma_persist_path = Path(chroma_persist_path)
-        if config.vector_store.index_manifest_path == manifest_default:
-            config.vector_store.index_manifest_path = (
-                config.vector_store.chroma_persist_path / "index_manifest.json"
-            )
-    if chroma_collection_name:
-        config.vector_store.chroma_collection_name = chroma_collection_name
 
     return config
 
@@ -263,7 +211,6 @@ __all__ = [
     "AssumptionsReviewerConfig",
     "BenchmarkFactJudgeConfig",
     "RetryConfig",
-    "VectorStoreConfig",
     "AppConfig",
     "load_config",
     "load_cached_config",

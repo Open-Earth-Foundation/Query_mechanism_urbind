@@ -4,10 +4,12 @@ from backend.modules.markdown_researcher.services import (
     _resolve_chunk_tokens,
     build_city_batches,
     load_markdown_documents,
+    resolve_batch_input_token_limit,
     split_batch_documents,
     split_documents_by_city,
 )
 from backend.utils.config import MarkdownResearcherConfig
+from tests.support import build_test_app_config
 
 
 def _build_markdown_config() -> MarkdownResearcherConfig:
@@ -97,6 +99,20 @@ def test_resolve_chunk_tokens_uses_safe_fallback_without_model_limits() -> None:
     )
 
     assert _resolve_chunk_tokens(config) == 12_000
+
+
+def test_resolve_batch_input_token_limit_uses_markdown_chunk_budget() -> None:
+    """Adaptive batch limit is based on markdown chunk sizing, not vector settings."""
+    config = build_test_app_config(
+        markdown_researcher_overrides={
+            "max_chunk_tokens": 4000,
+            "batch_max_chunks": 3,
+            "batch_max_input_tokens": None,
+            "batch_overhead_tokens": 250,
+        }
+    )
+
+    assert resolve_batch_input_token_limit(config) == 12_250
 
 
 def test_build_city_batches_respects_city_and_limits() -> None:

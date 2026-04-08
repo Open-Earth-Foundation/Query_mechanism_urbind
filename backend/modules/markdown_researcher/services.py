@@ -4,7 +4,10 @@ import logging
 from pathlib import Path
 from typing import Callable
 
-from backend.modules.vector_store.manifest import build_chunk_id, compute_content_hash
+from backend.modules.markdown_researcher.utils.chunk_ids import (
+    build_chunk_id,
+    compute_content_hash,
+)
 from backend.utils.city_normalization import normalize_city_key
 from backend.utils.config import AppConfig, MarkdownResearcherConfig
 from backend.utils.tokenization import count_tokens, chunk_text, get_max_input_tokens
@@ -69,7 +72,7 @@ def resolve_batch_input_token_limit(config: AppConfig) -> int:
     configured_limit = config.markdown_researcher.batch_max_input_tokens
     max_chunks = max(config.markdown_researcher.batch_max_chunks, 1)
     overhead = max(config.markdown_researcher.batch_overhead_tokens, 0)
-    adaptive_limit = config.vector_store.embedding_chunk_tokens * max_chunks + overhead
+    adaptive_limit = _resolve_chunk_tokens(config.markdown_researcher) * max_chunks + overhead
     batch_limit = configured_limit if configured_limit is not None else adaptive_limit
 
     model_input_limit = get_max_input_tokens(

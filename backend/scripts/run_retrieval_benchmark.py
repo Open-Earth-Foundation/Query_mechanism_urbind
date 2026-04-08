@@ -1,5 +1,5 @@
 """
-Brief: Benchmark standard chunking versus vector-store retrieval.
+Brief: Benchmark markdown-only retrieval across batching/concurrency settings.
 
 Behavior: The benchmark runs every question from the questions file (not a single
 query repeated N times). For each question it runs that question `repetitions`
@@ -15,11 +15,10 @@ Inputs:
   - --benchmark-id: Optional benchmark id. Defaults to UTC timestamp when omitted.
   - --output-dir: Root output directory for benchmark artifacts (default: output/benchmarks).
   - --config: Path to llm_config.yaml (default: llm_config.yaml).
-  - --docs-dir: Markdown directory used by both benchmark modes (default: documents).
+  - --docs-dir: Markdown directory used by the benchmark runs (default: documents).
   - --questions-file: Newline-delimited benchmark questions file (default: backend/benchmarks/prompts/retrieval_questions.txt).
   - --city: Optional city filter; repeatable.
-  - --repetitions: Number of repetitions per question per mode (default: 1).
-  - --mode: Run only these modes; repeatable; choices: standard_chunking, vector_store. Default: both.
+  - --repetitions: Number of repetitions per question (default: 1).
   - --markdown-option: Markdown benchmark option in format `<batch_max_chunks>:<max_workers>`; repeatable.
     Default options are `16:8`, `32:4`, `32:8`.
   - --use-query-overrides/--no-use-query-overrides: Enable/disable fixed retrieval queries for benchmark stability (default: enabled).
@@ -39,9 +38,9 @@ Outputs:
 
 Usage (from project root):
 - python -m backend.scripts.run_retrieval_benchmark --city Munster --city Leipzig --city Mannheim
-- python -m backend.scripts.run_retrieval_benchmark --mode vector_store --repetitions 5 --questions-file my_questions.txt --query-overrides my_overrides.json --city Aachen
+- python -m backend.scripts.run_retrieval_benchmark --repetitions 5 --questions-file my_questions.txt --query-overrides my_overrides.json --city Aachen
 - python -m backend.scripts.run_retrieval_benchmark --markdown-option 16:8 --markdown-option 32:8
-- python -m backend.scripts.run_retrieval_benchmark --mode vector_store --repetitions 2
+- python -m backend.scripts.run_retrieval_benchmark --repetitions 2
   (uses default backend/benchmarks/prompts/retrieval_questions.txt and retrieval_query_overrides.json)
 """
 
@@ -60,9 +59,6 @@ from backend.benchmarks.runner import (
 from backend.utils.logging_config import setup_logger
 
 logger = logging.getLogger(__name__)
-DEFAULT_BASE_ENV_FILE = Path("backend/benchmarks/config/base.env")
-DEFAULT_STANDARD_ENV_FILE = Path("backend/benchmarks/config/mode_standard.env")
-DEFAULT_VECTOR_ENV_FILE = Path("backend/benchmarks/config/mode_vector.env")
 DEFAULT_QUERY_OVERRIDES_FILE = Path(
     "backend/benchmarks/prompts/retrieval_query_overrides.json"
 )
@@ -72,7 +68,7 @@ DEFAULT_MARKDOWN_OPTIONS = ("16:8", "32:4", "32:8")
 def parse_args() -> argparse.Namespace:
     """Parse CLI args."""
     parser = argparse.ArgumentParser(
-        description="Benchmark standard chunking vs vector-store retrieval."
+        description="Benchmark markdown chunking across batching and concurrency settings."
     )
     parser.add_argument(
         "--benchmark-id",
@@ -107,13 +103,7 @@ def parse_args() -> argparse.Namespace:
         "--repetitions",
         type=int,
         default=1,
-        help="Repetitions per question per mode.",
-    )
-    parser.add_argument(
-        "--mode",
-        action="append",
-        choices=["standard_chunking", "vector_store"],
-        help="Benchmark mode(s) to run. Default: both. Repeat to run multiple modes.",
+        help="Repetitions per question.",
     )
     parser.add_argument(
         "--markdown-option",
@@ -198,23 +188,7 @@ def main() -> None:
     setup_logger()
 
     benchmark_id = args.benchmark_id if args.benchmark_id else _default_benchmark_id()
-
-    all_mode_configs = [
-        BenchmarkModeConfig(
-            name="standard_chunking",
-            env_files=[DEFAULT_BASE_ENV_FILE, DEFAULT_STANDARD_ENV_FILE],
-        ),
-        BenchmarkModeConfig(
-            name="vector_store",
-            env_files=[DEFAULT_BASE_ENV_FILE, DEFAULT_VECTOR_ENV_FILE],
-        ),
-    ]
-    modes = args.mode or []
-    mode_configs = (
-        [m for m in all_mode_configs if m.name in modes]
-        if modes
-        else all_mode_configs
-    )
+    mode_configs = [BenchmarkModeConfig(name="standard_chunking", env_files=[])]
     raw_markdown_options = (
         list(args.markdown_option)
         if args.markdown_option

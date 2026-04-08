@@ -60,7 +60,7 @@ The tool argument must match `BenchmarkJudgeEvaluation` exactly:
 <example_output>
 {
   "left_label": "standard_chunking",
-  "right_label": "vector_store",
+  "right_label": "candidate_b",
   "left": {
     "factual_coverage": 4,
     "numeric_specificity": 3,

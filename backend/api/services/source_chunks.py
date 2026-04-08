@@ -3,15 +3,12 @@
 from __future__ import annotations
 
 import json
-import logging
 from pathlib import Path
 
 from backend.api.models import SourceChunkItem
 from backend.modules.markdown_researcher.services import build_markdown_chunks_for_file
-from backend.modules.vector_store.chroma_store import ChromaStore
 from backend.utils.config import AppConfig
 
-logger = logging.getLogger(__name__)
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
 
 
@@ -39,67 +36,20 @@ def load_source_chunks(
     if not normalized_chunk_ids:
         raise ValueError("At least one chunk_id query parameter is required.")
 
-    chunks_by_id = _load_vector_store_chunks(config, normalized_chunk_ids)
+    chunks_by_id = _load_markdown_chunks(
+        run_dir=run_dir,
+        markdown_dir=markdown_dir,
+        config=config,
+        chunk_ids=normalized_chunk_ids,
+    )
     missing_chunk_ids = [
         chunk_id for chunk_id in normalized_chunk_ids if chunk_id not in chunks_by_id
     ]
-    if missing_chunk_ids:
-        fallback_chunks = _load_markdown_chunks(run_dir, markdown_dir, config, missing_chunk_ids)
-        chunks_by_id.update(fallback_chunks)
-        missing_chunk_ids = [
-            chunk_id for chunk_id in normalized_chunk_ids if chunk_id not in chunks_by_id
-        ]
-
     if missing_chunk_ids:
         joined_ids = ", ".join(missing_chunk_ids)
         raise FileNotFoundError(f"Source chunks were not found: {joined_ids}.")
 
     return [chunks_by_id[chunk_id] for chunk_id in normalized_chunk_ids]
-
-
-def _load_vector_store_chunks(
-    config: AppConfig,
-    chunk_ids: list[str],
-) -> dict[str, SourceChunkItem]:
-    """Fetch chunk content directly from Chroma when the ids exist in the index."""
-    if not config.vector_store.enabled:
-        return {}
-
-    try:
-        store = ChromaStore(
-            persist_path=config.vector_store.chroma_persist_path,
-            collection_name=config.vector_store.chroma_collection_name,
-        )
-        payload = store.get(ids=chunk_ids, limit=max(len(chunk_ids), 1))
-    except Exception as exc:  # noqa: BLE001
-        logger.warning("Failed to read source chunks from vector store: %s", exc)
-        return {}
-
-    ids = payload.get("ids")
-    if not isinstance(ids, list):
-        return {}
-    metadatas = payload.get("metadatas")
-    documents = payload.get("documents")
-    metadata_rows = metadatas if isinstance(metadatas, list) else []
-    document_rows = documents if isinstance(documents, list) else []
-    resolved: dict[str, SourceChunkItem] = {}
-
-    for chunk_id, metadata, document in zip(ids, metadata_rows, document_rows, strict=False):
-        if not isinstance(chunk_id, str):
-            continue
-        metadata_payload = metadata if isinstance(metadata, dict) else {}
-        raw_text = metadata_payload.get("raw_text")
-        content = raw_text if isinstance(raw_text, str) else str(document or "")
-        resolved[chunk_id] = SourceChunkItem(
-            chunk_id=chunk_id,
-            content=content,
-            city_name=_coerce_optional_string(metadata_payload.get("city_name")),
-            source_path=_coerce_optional_string(metadata_payload.get("source_path")),
-            heading_path=_coerce_optional_string(metadata_payload.get("heading_path")),
-            block_type=_coerce_optional_string(metadata_payload.get("block_type")),
-        )
-
-    return resolved
 
 
 def _load_markdown_chunks(

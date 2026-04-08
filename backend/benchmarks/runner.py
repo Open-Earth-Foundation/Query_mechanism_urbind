@@ -14,11 +14,9 @@ from typing import Callable, Iterator
 
 from dotenv import dotenv_values
 
-from backend.benchmarks.judge import judge_final_outputs
-from backend.benchmarks.models import BenchmarkJudgeEvaluation
 from backend.modules.orchestrator.module import run_pipeline
 from backend.modules.orchestrator.models import ResearchQuestionRefinement
-from backend.utils.config import get_openrouter_api_key, load_config
+from backend.utils.config import load_config
 
 logger = logging.getLogger(__name__)
 
@@ -716,52 +714,6 @@ def _write_markdown_report(path: Path, report: BenchmarkReport) -> None:
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
-def _build_judge_pairs(
-    results: list[BenchmarkQuestionResult],
-) -> list[tuple[BenchmarkQuestionResult, BenchmarkQuestionResult]]:
-    """Pair standard and vector outputs by question+repetition+markdown config."""
-    by_key: dict[tuple[str, int, str], dict[str, BenchmarkQuestionResult]] = {}
-    for result in results:
-        if not result.success:
-            continue
-        if not Path(result.final_output_path).exists():
-            logger.warning(
-                "Skipping judge candidate with missing final output file: %s",
-                result.final_output_path,
-            )
-            continue
-        key = (result.question, result.repetition, result.markdown_config)
-        slot = by_key.setdefault(key, {})
-        slot[result.mode] = result
-    pairs: list[tuple[BenchmarkQuestionResult, BenchmarkQuestionResult]] = []
-    for key in sorted(by_key.keys()):
-        slot = by_key[key]
-        left = slot.get("standard_chunking")
-        right = slot.get("vector_store")
-        if left and right:
-            pairs.append((left, right))
-    return pairs
-
-
-def _summarize_judge_scores(
-    scores_by_group: dict[str, list[float]],
-    wins_by_group: dict[str, int],
-    ties_by_group: dict[str, int],
-) -> dict[str, dict[str, float]]:
-    """Aggregate judge scores into mean/median/win/tie stats."""
-    summary: dict[str, dict[str, float]] = {}
-    for group_name, scores in scores_by_group.items():
-        if not scores:
-            continue
-        summary[group_name] = {
-            "mean_judge_score": statistics.fmean(scores),
-            "median_judge_score": statistics.median(scores),
-            "wins": float(wins_by_group.get(group_name, 0)),
-            "ties": float(ties_by_group.get(group_name, 0)),
-        }
-    return summary
-
-
 def _run_benchmark_judging(
     *,
     results: list[BenchmarkQuestionResult],
@@ -772,103 +724,9 @@ def _run_benchmark_judging(
     dict[str, dict[str, float]],
     dict[str, dict[str, float]],
 ]:
-    """Run pairwise LLM-as-judge comparisons and aggregate score summaries."""
-    pairs = _build_judge_pairs(results)
-    if not pairs:
-        return [], {}, {}
-
-    config = load_config(config_path)
-    api_key = get_openrouter_api_key()
-    rows: list[dict[str, object]] = []
-    scores_by_mode: dict[str, list[float]] = {"standard_chunking": [], "vector_store": []}
-    wins_by_mode: dict[str, int] = {"standard_chunking": 0, "vector_store": 0}
-    ties_by_mode: dict[str, int] = {"standard_chunking": 0, "vector_store": 0}
-    scores_by_mode_config: dict[str, list[float]] = {}
-    wins_by_mode_config: dict[str, int] = {}
-    ties_by_mode_config: dict[str, int] = {}
-
-    for left, right in pairs:
-        try:
-            left_text = Path(left.final_output_path).read_text(encoding="utf-8")
-            right_text = Path(right.final_output_path).read_text(encoding="utf-8")
-            evaluation: BenchmarkJudgeEvaluation = judge_final_outputs(
-                question=left.question,
-                left_label=left.mode,
-                left_text=left_text,
-                right_label=right.mode,
-                right_text=right_text,
-                config=config,
-                api_key=api_key,
-                log_llm_payload=log_llm_payload,
-            )
-        except Exception:  # noqa: BLE001
-            logger.exception(
-                "Judge evaluation failed question=%s repetition=%d config=%s",
-                left.question,
-                left.repetition,
-                left.markdown_config,
-            )
-            continue
-        left_mode_config = _mode_config_key(left.mode, left.markdown_config)
-        right_mode_config = _mode_config_key(right.mode, right.markdown_config)
-        scores_by_mode[left.mode].append(float(evaluation.left.total_score))
-        scores_by_mode[right.mode].append(float(evaluation.right.total_score))
-        scores_by_mode_config.setdefault(left_mode_config, []).append(
-            float(evaluation.left.total_score)
-        )
-        scores_by_mode_config.setdefault(right_mode_config, []).append(
-            float(evaluation.right.total_score)
-        )
-        if evaluation.winner == "left":
-            wins_by_mode[left.mode] += 1
-            wins_by_mode_config[left_mode_config] = (
-                wins_by_mode_config.get(left_mode_config, 0) + 1
-            )
-        elif evaluation.winner == "right":
-            wins_by_mode[right.mode] += 1
-            wins_by_mode_config[right_mode_config] = (
-                wins_by_mode_config.get(right_mode_config, 0) + 1
-            )
-        else:
-            ties_by_mode[left.mode] += 1
-            ties_by_mode[right.mode] += 1
-            ties_by_mode_config[left_mode_config] = (
-                ties_by_mode_config.get(left_mode_config, 0) + 1
-            )
-            ties_by_mode_config[right_mode_config] = (
-                ties_by_mode_config.get(right_mode_config, 0) + 1
-            )
-
-        rows.append(
-            {
-                "question": left.question,
-                "repetition": left.repetition,
-                "markdown_config": left.markdown_config,
-                "batch_max_chunks": left.batch_max_chunks,
-                "max_workers": left.max_workers,
-                "left_label": evaluation.left_label,
-                "right_label": evaluation.right_label,
-                "left_total_score": evaluation.left.total_score,
-                "right_total_score": evaluation.right.total_score,
-                "winner": evaluation.winner,
-                "confidence": evaluation.confidence,
-                "comparative_rationale": evaluation.comparative_rationale,
-                "left_breakdown": evaluation.left.model_dump(),
-                "right_breakdown": evaluation.right.model_dump(),
-            }
-        )
-
-    judge_summary = _summarize_judge_scores(
-        scores_by_mode,
-        wins_by_mode,
-        ties_by_mode,
-    )
-    judge_mode_config_summary = _summarize_judge_scores(
-        scores_by_mode_config,
-        wins_by_mode_config,
-        ties_by_mode_config,
-    )
-    return rows, judge_summary, judge_mode_config_summary
+    """Return empty judge outputs for the markdown-only benchmark."""
+    _ = results, config_path, log_llm_payload
+    return [], {}, {}
 
 
 def run_retrieval_strategy_benchmark(

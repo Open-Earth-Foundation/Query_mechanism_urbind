@@ -18,12 +18,6 @@ from backend.modules.markdown_researcher.agent import extract_markdown_excerpts
 from backend.modules.markdown_researcher.services import load_markdown_documents
 from backend.modules.orchestrator.agent import refine_research_question
 from backend.modules.orchestrator.utils.references import build_markdown_references
-from backend.modules.vector_store.retriever import (
-    as_markdown_documents,
-    build_retrieval_artifact,
-    list_indexed_city_names,
-    retrieve_chunks_for_queries,
-)
 from backend.utils.city_normalization import format_city_display_name, normalize_city_key
 from backend.utils.config import AppConfig
 from backend.utils.json_io import write_json
@@ -95,9 +89,7 @@ def run_chat_followup_search(
         retrieval_queries = _dedupe_queries(
             [research_question, *refinement.retrieval_queries]
         )
-        documents, retrieval_payload, source_mode = _load_followup_documents(
-            research_question=research_question,
-            retrieval_queries=retrieval_queries,
+        documents, source_mode = _load_followup_documents(
             target_city=city_name,
             config=config,
         )
@@ -120,7 +112,6 @@ def run_chat_followup_search(
             research_question=research_question,
             retrieval_queries=retrieval_queries,
             source_mode=source_mode,
-            retrieval_payload=retrieval_payload,
             markdown_payload=markdown_result.model_dump(),
         )
     except (FileNotFoundError, OSError, ValueError) as exc:
@@ -154,7 +145,6 @@ def run_chat_followup_search(
             research_question=question.strip(),
             retrieval_queries=[question.strip()],
             source_mode="error",
-            retrieval_payload=None,
             markdown_payload=error_payload,
         )
 
@@ -174,35 +164,16 @@ def followup_bundle_dir(
 
 def _load_followup_documents(
     *,
-    research_question: str,
-    retrieval_queries: list[str],
     target_city: str,
     config: AppConfig,
-) -> tuple[list[dict[str, object]], dict[str, object] | None, str]:
+) -> tuple[list[dict[str, object]], str]:
     """Load one-city markdown documents for follow-up extraction."""
-    if config.vector_store.enabled:
-        chunks, retrieval_meta = retrieve_chunks_for_queries(
-            queries=retrieval_queries,
-            config=config,
-            docs_dir=config.markdown_dir,
-            selected_cities=[target_city],
-        )
-        documents = as_markdown_documents(chunks)
-        retrieval_payload = build_retrieval_artifact(
-            queries=retrieval_queries,
-            selected_cities=[target_city],
-            final_chunks=chunks,
-            retrieval_meta=retrieval_meta,
-        )
-        retrieval_payload["research_question"] = research_question
-        return documents, retrieval_payload, "vector_store_retrieval"
-
     documents = load_markdown_documents(
         config.markdown_dir,
         config.markdown_researcher,
         selected_cities=[target_city],
     )
-    return documents, None, "standard_chunking"
+    return documents, "standard_chunking"
 
 
 def _ensure_target_city_available(target_city: str, config: AppConfig) -> None:
@@ -215,16 +186,12 @@ def _ensure_target_city_available(target_city: str, config: AppConfig) -> None:
     if target_key in available_keys:
         return
 
-    if config.vector_store.enabled:
-        raise CityUnavailableError("Selected city is not available in the vector store index.")
     raise CityUnavailableError("Selected city is not available in markdown documents.")
 
 
 def _list_searchable_city_names(config: AppConfig) -> list[str]:
     """Return city names that can be searched in the current follow-up mode."""
     try:
-        if config.vector_store.enabled:
-            return list_indexed_city_names(config)
         return list_city_names(config.markdown_dir)
     except (FileNotFoundError, ValueError):
         return []
@@ -242,7 +209,6 @@ def _persist_followup_result(
     research_question: str,
     retrieval_queries: list[str],
     source_mode: str,
-    retrieval_payload: dict[str, object] | None,
     markdown_payload: dict[str, Any],
 ) -> ChatFollowupSearchResult:
     """Persist follow-up artifacts and return a compact result summary."""
@@ -292,13 +258,6 @@ def _persist_followup_result(
         ensure_ascii=False,
         default=str,
     )
-    if retrieval_payload is not None:
-        write_json(
-            bundle_dir / "markdown" / "retrieval.json",
-            retrieval_payload,
-            ensure_ascii=False,
-            default=str,
-        )
 
     prompt_context_tokens, prompt_context_kind = compute_prompt_context_cache(
         question=research_question,
@@ -358,8 +317,6 @@ def _classify_followup_error(exc: Exception) -> str:
         return CHAT_FOLLOWUP_CITY_UNAVAILABLE
     message = str(exc)
     if message.startswith("Selected city is not available"):
-        return CHAT_FOLLOWUP_CITY_UNAVAILABLE
-    if message.startswith("Selected cities are not indexed in vector store manifest:"):
         return CHAT_FOLLOWUP_CITY_UNAVAILABLE
     return CHAT_FOLLOWUP_SEARCH_FAILED
 

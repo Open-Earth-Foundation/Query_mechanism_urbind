@@ -30,12 +30,6 @@ from backend.modules.orchestrator.utils.error_handlers import (
 from backend.modules.orchestrator.utils.io import (
     write_json,
 )
-from backend.modules.vector_store.indexer import update_markdown_index
-from backend.modules.vector_store.retriever import (
-    as_markdown_documents,
-    build_retrieval_artifact,
-    retrieve_chunks_for_queries,
-)
 from backend.modules.writer.agent import write_markdown
 from backend.modules.writer.models import WriterOutput
 from backend.services.run_logger import RunLogger
@@ -382,44 +376,11 @@ def run_pipeline(
 
     def _run_initial_markdown() -> dict[str, object]:
         markdown_source_mode = "standard_chunking"
-        markdown_chunks: list[dict[str, object]]
-        if config.vector_store.enabled:
-            markdown_source_mode = "vector_store_retrieval"
-            if config.vector_store.auto_update_on_run:
-                update_markdown_index(
-                    config=config,
-                    docs_dir=config.markdown_dir,
-                    selected_cities=selected_cities,
-                    dry_run=False,
-                )
-            retrieval_kwargs: dict[str, object] = {
-                "queries": retrieval_queries,
-                "config": config,
-                "docs_dir": config.markdown_dir,
-                "selected_cities": selected_cities,
-            }
-            retriever_signature = inspect.signature(retrieve_chunks_for_queries)
-            if "run_id" in retriever_signature.parameters:
-                retrieval_kwargs["run_id"] = run_id_value
-            retrieved_chunks, retrieval_meta = retrieve_chunks_for_queries(
-                **retrieval_kwargs
-            )
-            markdown_chunks = as_markdown_documents(retrieved_chunks)
-            retrieval_payload = build_retrieval_artifact(
-                queries=retrieval_queries,
-                selected_cities=selected_cities,
-                final_chunks=retrieved_chunks,
-                retrieval_meta=retrieval_meta,
-            )
-            retrieval_path = paths.markdown_dir / "retrieval.json"
-            write_json(retrieval_path, retrieval_payload)
-            run_logger.record_artifact("markdown_retrieval", retrieval_path)
-        else:
-            markdown_chunks = load_markdown_documents(
-                config.markdown_dir,
-                config.markdown_researcher,
-                selected_cities=selected_cities,
-            )
+        markdown_chunks = load_markdown_documents(
+            config.markdown_dir,
+            config.markdown_researcher,
+            selected_cities=selected_cities,
+        )
         logger.info(
             "run_id=%s markdown_source_mode=%s",
             run_id_value,
@@ -542,11 +503,6 @@ def run_pipeline(
         )
         markdown_bundle["retrieval_mode"] = source_mode
         markdown_bundle["analysis_mode"] = analysis_mode
-        if source_mode == "vector_store_retrieval":
-            markdown_bundle["retrieval_queries"] = markdown_payload.get(
-                "retrieval_queries",
-                [],
-            )
         inspected_cities = sorted(
             {
                 normalize_city_key(str(document.get("city_key", "")).strip())

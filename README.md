@@ -1,4 +1,4 @@
-# Query Mechanism Urbind
+﻿# Query Mechanism Urbind
 
 Multi-agent document builder that answers user questions from Markdown sources. It orchestrates research-question refinement, markdown extraction, and writing with OpenAI Agents, and logs every run artifact for inspection.
 
@@ -50,62 +50,14 @@ Environment variables (`.env`):
 - `OPENROUTER_BASE_URL` (optional, default `https://openrouter.ai/api/v1`): override for OpenRouter-compatible backends.
 - `LLM_CONFIG_PATH` (optional, default `llm_config.yaml`): API config file path.
 - `CITY_GROUPS_PATH` (optional, default `backend/api/assets/city_groups.json`): city groups catalog JSON path.
-- `VECTOR_STORE_ENABLED` (optional, default `false`): enables local Chroma markdown indexing flows.
-- `ANONYMIZED_TELEMETRY` (optional, default `FALSE`): disables Chroma anonymized telemetry when set to `FALSE`.
-- `CHROMA_PERSIST_PATH` (optional, default `.chroma`): local Chroma persistence directory.
-- `CHROMA_COLLECTION_NAME` (optional, default `markdown_chunks`): Chroma collection used for markdown chunks.
 
-Chat prompt sizing, follow-up router history and excerpt caps, retry backoff, provider timeouts, and vector-store retrieval tuning all come from `llm_config.yaml`.
+Chat prompt sizing, follow-up router history and excerpt caps, retry backoff, provider timeouts, and markdown batching controls all come from `llm_config.yaml`.
 CLI flags override `.env` values for a given run (for example `--markdown-path`).
 Use `--city` (repeatable) to load markdown only for selected city files. City filters are normalized case-insensitively to backend `city_key` values (for example `Munich`, `MUNICH`, and `munich` all resolve to `munich`).
 
-Example `.env.example` is provided. Use `llm_config.yaml` as the source of truth for vector-store and markdown batching tuning.
+Example `.env.example` is provided. Use `llm_config.yaml` as the source of truth for markdown batching and model tuning.
 
 Default output directory is `output/` (unless overridden by `RUNS_DIR`).
-
-### Vector retrieval sizing and thresholds
-
-When vector retrieval is enabled, retrieval runs per city and per query (original + refined variants), then merges and expands context.
-
-- For each (city x query), the retriever:
-  - fetches up to `vector_store.retrieval_max_chunks_per_city_query` candidates from Chroma (ranked by increasing distance);
-  - if `vector_store.retrieval_max_distance` is set, it first keeps only candidates with `distance <= cutoff`;
-  - if fewer than `vector_store.retrieval_fallback_min_chunks_per_city_query` pass the cutoff, it **tops up** with the next-best candidates (above the cutoff) until it reaches the fallback minimum (or runs out of candidates).
-- After per-(city x query) retrieval:
-  - results are merged across queries within a city (dedupe by `chunk_id`, keep the smallest distance as chunk distance metadata);
-  - neighbor chunks are added by `chunk_index` window (same file/city);
-  - optionally, `vector_store.retrieval_max_chunks_per_city` caps the final chunks per city after merge + neighbor expansion.
-- Retrieval artifacts now persist both layers explicitly:
-  - `seed_chunks[]` = unique direct hits before neighbor expansion and before per-city caps;
-  - `chunks[]` = the final delivered context after neighbor expansion and caps.
-- Strict Stage A benchmark metrics must use `seed_chunks[]`, not `chunks[]`.
-- Every serialized retrieval chunk now includes `chunk_index` plus `provenance`
-  (`origin`, `selection_mode`, `seed_rank`, `seed_query_ids`, `expanded_from_chunk_ids`).
-- `vector_store.retrieval_max_distance` is the strictness control:
-  - smaller value = stricter matching, fewer chunks;
-  - larger value = higher recall, more chunks.
-
-Important distinction between the "max" knobs:
-
-- `vector_store.retrieval_max_chunks_per_city_query` controls the **candidate pool size per (city x query)** _before_ distance filtering/top-up.
-  - If this is too small, you may not have enough candidates to top up to the fallback minimum.
-- `vector_store.retrieval_max_chunks_per_city` controls the **final per-city cap** _after_ query-merge and neighbor expansion.
-  - Use it as a latency/cost guardrail; setting it too low can drop context neighbors or even primary hits with weaker distances.
-
-Distance scale note:
-
-- Do not assume distance is always in `[0, 1]`. It depends on collection metric and embedding characteristics.
-- `0` means identical vectors; values above `0` are increasingly dissimilar.
-- A cutoff of `0` is the strictest setting and usually returns very few (often zero) chunks, not all chunks.
-
-Recommended tuning workflow:
-
-1. Start recall-friendly:
-   - leave `vector_store.retrieval_max_distance` empty, or set a permissive value;
-   - set `vector_store.retrieval_fallback_min_chunks_per_city_query` to a meaningful fallback (for example 20-40).
-2. Run and inspect `output/<run_id>/markdown/retrieval.json` for returned distances and counts.
-3. Set/tighten `vector_store.retrieval_max_distance` based on observed distance distribution.
-4. Add `vector_store.retrieval_max_chunks_per_city` only if latency/cost grows too much.
 
 ## API key setup (important)
 
@@ -206,10 +158,8 @@ flowchart TD
 What each stage does:
 
 - Orchestrator receives the input question and creates a research-oriented question.
-- Extractor input source is configurable:
-  - default path: markdown files are token-chunked directly from disk;
-  - vector path (`VECTOR_STORE_ENABLED=true`): per-city, distance-thresholded chunks are retrieved from Chroma using explicit query embeddings.
-- Markdown researcher returns evidence excerpts selected from whichever chunk source was used.
+- Markdown files are token-chunked directly from disk and batched per city.
+- Markdown researcher returns evidence excerpts selected from those markdown chunks.
 - `markdown_chunk_count` tracks how many chunk inputs were processed; `excerpt_count` (also logged as `markdown_excerpt_count` in run metadata) tracks how many evidence snippets were extracted from those chunks.
 - Context bundle is updated with extracted evidence for downstream writing.
 - Orchestrator hands the prepared context bundle directly to the writer.
@@ -228,14 +178,12 @@ python -m backend.scripts.run_e2e_queries --question "What initiatives exist for
 
 ## Retrieval strategy benchmark
 
-Use this benchmark to compare standard markdown chunking (`VECTOR_STORE_ENABLED=false`) against vector-store retrieval (`VECTOR_STORE_ENABLED=true`) without changing normal runtime behavior.
-
-Configuration and prompts are intentionally separated under `backend/benchmarks/`. Benchmark env files select runtime mode (`standard_chunking` vs `vector_store`), while vector-store tuning remains in `llm_config.yaml` (`vector_store.*`).
+Use this benchmark to compare markdown batching and worker settings without
+changing normal runtime behavior.
 
 - `backend/benchmarks/prompts/retrieval_questions.txt`: benchmark question set.
-- `backend/benchmarks/config/base.env`: shared benchmark env.
-- `backend/benchmarks/config/mode_standard.env`: standard-mode toggle.
-- `backend/benchmarks/config/mode_vector.env`: vector-mode toggle.
+- `backend/benchmarks/prompts/retrieval_query_overrides.json`: optional fixed
+  canonical and retrieval queries per question.
 
 Command example:
 
@@ -247,35 +195,17 @@ Useful flags:
 
 - `--questions-file backend/benchmarks/prompts/retrieval_questions.txt`
 - `--repetitions 2`
-- `--mode vector_store` — run only vector retrieval (no standard chunking).
-- `--markdown-option 16:8 --markdown-option 32:4 --markdown-option 32:8` — run explicit markdown benchmark options (`batch_max_chunks:max_workers`).
-- The benchmark runs every question in the questions file; `--repetitions N` runs each question N times per mode and markdown option (total runs = questions × repetitions × modes × markdown_options).
-
-**Vector-only reproducibility (same query and same retrieval queries):** To run the vector strategy multiple times with the exact same question, canonical research query, and retrieval queries (e.g. to check outcome stability):
-
-1. Run the pipeline once to get a run with the desired question and cities, e.g. `python -m backend.scripts.run_pipeline --question "What does Aachen do for PV rooftop?" --city Aachen --markdown-path documents`. Note the run id and open `output/<run_id>/research_question.json`.
-2. Create a one-line questions file (e.g. `my_questions.txt`) containing exactly the `original_question` from that run.
-3. Create a query-overrides JSON (e.g. `my_overrides.json`) with one key: the same `original_question` string; value: `{"canonical_research_query": "<from research_question.json>", "retrieval_queries": [<from research_question.json>]}`. You can copy these fields from `research_question.json`.
-4. Run the benchmark in vector-only mode with fixed queries and several repetitions:
-
-   ```
-   python -m backend.scripts.run_retrieval_benchmark --questions-file my_questions.txt --query-overrides my_overrides.json --mode vector_store --repetitions 5 --city Aachen
-   ```
-
-   Each run will use the same canonical research query and retrieval queries; only retrieval, extraction, and writing are re-executed. Compare `output/benchmarks/<benchmark_id>/runs/vector_store/*/final.md` (and optionally `retrieval.json`, `excerpts.json`) across repetitions.
+- `--markdown-option 16:8 --markdown-option 32:4 --markdown-option 32:8` for explicit markdown benchmark options (`batch_max_chunks:max_workers`)
+- `--query-overrides my_overrides.json` to pin canonical and retrieval queries for stable reruns
 
 Benchmark behavior notes:
 
-- The benchmark runs all questions from the questions file (not a single query repeated N times).
-- Run IDs include repetition/question indices and markdown benchmark option, for example `vector_store_b32_w8_r01_q02_...`.
+- The benchmark runs all questions from the questions file, not a single query repeated N times.
+- Run IDs include repetition, question index, and markdown benchmark option, for example `standard_chunking_b32_w8_r01_q02_...`.
 - Default markdown benchmark options are `16:8`, `32:4`, and `32:8`.
 - For identical queries across all runs, use a one-line questions file.
-- The script always loads benchmark env files from `backend/benchmarks/config/`.
-- The benchmark is runtime-only; it does not build/update the vector index.
-- Vector mode uses the existing default Chroma store/collection unless overridden in your main environment.
-- The benchmark also runs LLM-as-judge scoring (`openai/gpt-5.4-mini`) per matched standard-vs-vector run pair within the same markdown option.
-- The benchmark report includes speed metrics (`runtime`, `tokens/sec`) and LLM issue counters (rate limits, retries exhausted, max-turns, and non-working calls).
-- Individual run failures are recorded and counted (instead of aborting the full matrix); summaries include success rate and failed run count.
+- The benchmark report includes runtime, tokens/sec, markdown chunk counts, excerpt counts, and LLM issue counters.
+- Individual run failures are recorded and counted instead of aborting the full matrix.
 
 ### Speed / Chunk / Worker benchmark
 
@@ -304,7 +234,7 @@ Current recommendation:
 Outputs are written to `output/benchmarks/<benchmark_id>/`:
 
 - `benchmark_report.json`: machine-readable benchmark results.
-- `benchmark_report.md`: human-readable summary with runtime/tokens/sec, judge score summaries, and LLM issue counters.
+- `benchmark_report.md`: human-readable summary with runtime, throughput, and LLM issue counters.
 - `runs/<mode>/<run_id>/...`: original pipeline artifacts for each benchmark run.
 
 Standalone judge command for any two outputs:
@@ -318,8 +248,8 @@ python -m backend.scripts.judge_final_outputs \
 
 ### Gold recall benchmark
 
-Use this benchmark to measure where information is lost across retrieval,
-markdown extraction, and final writing for a manually curated gold dataset.
+Use this benchmark to measure where information is lost across delivered markdown
+chunks, markdown extraction, and final writing for a manually curated gold dataset.
 
 Command example:
 
@@ -337,25 +267,12 @@ Useful flags:
 
 Behavior notes:
 
-- This benchmark is not pairwise standard-vs-vector judging. It scores a single
-  run against gold chunks and gold facts.
-- Official Stage A metrics are strict seed retrieval:
-  `retrieval_recall`, `retrieval_precision`, and `mrr` are computed from
-  `retrieval.json.seed_chunks[]`.
-- `delivery_recall` and `delivery_precision` are supplemental metrics computed
-  from the final delivered `retrieval.json.chunks[]`.
-- The gold file schema is `{"version": 1, "cases": [...]}` with `case_id`,
-  `question`, `gold_chunk_ids`, `gold_facts`, `gold_city`, and optional
-  `selected_cities`, `gold_chunk_texts`, and `gold_chunk_alternatives`.
-- `gold_chunk_alternatives` stores accepted equivalent runtime chunks explicitly
-  as `{chunk_id, chunk_text}` objects, so the fixture keeps both the chunk
-  number/id and the chunk text in JSON.
+- This benchmark scores a single run against gold chunks and gold facts.
+- Stage A metrics are `delivery_recall`, `delivery_precision`, and `mrr`, computed from delivered markdown chunks reconstructed from `markdown/batches.json` plus the source markdown files.
+- The gold file schema is `{"version": 1, "cases": [...]}` with `case_id`, `question`, `gold_chunk_ids`, `gold_facts`, `gold_city`, and optional `selected_cities`, `gold_chunk_texts`, and `gold_chunk_alternatives`.
+- `gold_chunk_alternatives` stores accepted equivalent runtime chunks explicitly as `{chunk_id, chunk_text}` objects.
 - `gold_chunk_texts` should store the canonical chunk text for each gold slot.
-  The scorer still supports containment fallback, but the fixture data should
-  keep the actual chunk text in JSON.
-- Stage B and Stage C fact verification use an LLM fact judge configured under
-  `benchmark_fact_judge` in `llm_config.yaml` (model, temperature,
-  `max_output_tokens`, `reasoning_effort`) to handle paraphrases.
+- Stage B and Stage C fact verification use an LLM fact judge configured under `benchmark_fact_judge` in `llm_config.yaml`.
 
 Outputs are written to `output/benchmarks/recall/<benchmark_id>/`:
 
@@ -757,7 +674,7 @@ Artifacts are written under `output/<run_id>/`:
 - `run.log`: detailed runtime logs, including per-agent `LLM_USAGE` lines, chat prompt-window diagnostics (`Context chat reply plan`, `Context chat direct request`, with fitted source ids and token-component counts), retry reason lines (`RETRY_EVENT`/`RETRY_EXHAUSTED` with plain-text fields such as `reason`, `http_status`, `rate_limited`, and markdown split lineage when applicable), and writer city-citation coverage checkpoints (`WRITER_CITATION_COVERAGE`, with `coverage_ratio` such as `33/33`).
 - `error_log.txt`: extracted error-focused log view from `run.log` (`ERROR`, `CRITICAL`, and exhausted retry events).
 - `run_summary.txt`: human-readable consolidated report. Header includes `Started`, `Completed`, and explicit `Total runtime` in seconds, plus `LLM Usage` totals/per-agent. It also captures an input snapshot (`original question`, `query mode`, `canonical research query`, `retrieval query 1..3`, `selected cities` planned/found, markdown dir/file/chunk/excerpt counts) and a `MARKDOWN_FAILURE_SUMMARY` aggregated from batch failures.
-- `context_bundle.json`: payload passed between agents (`markdown`, `original_question`, `research_question`, `query_mode`, `retrieval_queries`, `analysis_mode`, final path).
+- `context_bundle.json`: payload passed between agents (`markdown`, `original_question`, `research_question`, `query_mode`, `retrieval_queries`, `analysis_mode`, final path). The markdown payload preserves `source_mode` and `retrieval_mode`, both currently set to `standard_chunking`.
 - `research_question.json`: run query metadata payload. Includes:
   - `original_question`: raw user question.
   - `query_mode`: `standard` or `dev`.
@@ -769,7 +686,6 @@ Artifacts are written under `output/<run_id>/`:
 - `markdown/rejected_excerpts.json`: IDs-only negative decision artifact with rejected chunk IDs and rejected-per-city grouping.
 - `markdown/decision_audit.json`: run-level reconciliation counters and diagnostics (`retrieved_total`, accepted/rejected/unresolved totals, invariant status, and mismatch details).
 - `markdown/references.json`: run-local citation map generated from markdown excerpts. Includes sequential `ref_n` entries with `excerpt_index`, `city_name`, `quote`, `partial_answer`, and `source_chunk_ids`. Stage C citation coverage maps cited `ref_id` values in `final.md` back through these `source_chunk_ids`.
-- `markdown/retrieval.json` (when `VECTOR_STORE_ENABLED=true`): vector retrieval inputs and results summary. Includes the final retrieval query list, optional city filter, retrieval tuning metadata (cutoffs/caps), strict direct-hit `seed_chunks[]`, final delivered `chunks[]`, `meta.seed_retrieved_total_chunks`, `meta.neighbor_expanded_total_chunks`, and per-chunk summaries (`chunk_id`, `chunk_index`, `city_name`, `city_key`, `source_path`, `heading_path`, `block_type`, `distance`, `provenance`).
 - `markdown/batches.json`: markdown batching plan used for the markdown researcher calls. Includes per-city batch indices, estimated tokens, and chunk ordering fields (`path`, `chunk_index`, `chunk_id`), making it easy to inspect how chunks were grouped into LLM requests.
 - `final.md`: final delivered markdown output. Content format is:
   1. `# Question` heading with the original user question,
@@ -856,93 +772,10 @@ python -m backend.scripts.calculate_tokens --documents-dir documents --recursive
 python -m backend.scripts.temp_analyze --run-log output/<run_id>/run.log
 ```
 
-## Vector store indexing utilities
-
-Build markdown index from scratch:
-
-```
-python -m backend.scripts.build_markdown_index --docs-dir documents
-```
-
-The build now fails fast on embedding failures and exits non-zero before any collection reset or manifest write.
-
-Analyze retrieval distance distributions (to help choose `vector_store.retrieval_max_distance`):
-
-```
-python -m backend.scripts.analyze_retrieval_distances --runs-dir output
-python -m backend.scripts.analyze_retrieval_distances --city Munich --city Leipzig --thresholds "0.5,1.0,2.0" --show-per-run
-```
-
-How to use the output:
-
-- Start with `vector_store.retrieval_max_distance` empty (no distance filtering) and run a few representative queries.
-- Run the analysis script and look at the overall/per-city percentiles.
-- Pick a cutoff that keeps the bulk of “good” chunks (often somewhere around the p90–p99 region for your corpus), then iterate.
-
-Dry-run build that also writes chunks to JSON for inspection (no embeddings, no Chroma writes):
-
-```
-python -m backend.scripts.build_markdown_index --docs-dir documents --dry-run --write-chunks-json output/vector_index_dryrun/chunks.json
-```
-
-Incrementally update existing index:
-
-```
-python -m backend.scripts.update_markdown_index --docs-dir documents
-```
-
-The update now fails fast on embedding failures and exits non-zero before any delete/upsert/manifest-write commit.
-
-Check manifest and Chroma DB status:
-
-```
-python -m backend.scripts.check_vector_index
-python -m backend.scripts.check_vector_index --no-show-files
-```
-
-**Building the vector index on Kubernetes:** The backend and the one-off build Job share the same PVC mounted once at `/data` (no subPath). Both use the same `securityContext` (runAsUser 0, DAC_READ_SEARCH) so the Job can write `/data/chroma` and the backend can read it. Apply the Job from the repo root (see `k8s/backend-build-vector-index-job.yml` header for full steps):
-
-```bash
-kubectl scale deployment urbind-query-mechanism-backend --replicas=0
-kubectl apply -f k8s/backend-build-vector-index-job.yml
-kubectl logs job/urbind-query-mechanism-build-vector-index -f
-kubectl scale deployment urbind-query-mechanism-backend --replicas=1
-```
-
-Scaling down the backend to 0 ensures no concurrent reads/writes to the vector index.
-Paths on the PVC are `/data/output` (run artifacts) and `/data/chroma` (vector index and manifest). Restart the backend after the Job completes so it picks up the new index.
-The Job manifest includes disruption resilience for long runs (`karpenter.sh/do-not-disrupt: "true"`, `backoffLimit: 3`, and `podFailurePolicy` that ignores `DisruptionTarget` pod failures).
-
-Inspect indexed chunks:
-
-```
-python -m backend.scripts.inspect_markdown_index --city Munich --limit 20
-python -m backend.scripts.inspect_markdown_index --where block_type=table --limit 20
-python -m backend.scripts.inspect_markdown_index --show-id <chunk_id>
-```
-
-Run chunking benchmark (manual/long-running, not part of default test loop):
-
-```
-python -m backend.scripts.benchmark_chunking_strategy --docs-dir documents --sample-size 25 --seed 42
-```
-
-Benchmark outputs are written under `output/chunk_benchmarks/<timestamp>/`:
-
-- `benchmark.json`: full machine-readable metrics, counts, per-file stats, sampled docs.
-- `report.md`: human-readable summary with final score, metric breakdown, and sampled-document list.
-
-Metrics reported:
-
-- `final_accuracy_score`: **overall scalar score** in \[0, 1\], combining the individual metrics below using fixed weights.
-- `caption_linkage_rate`: **caption attachment quality** – fraction of source tables with `Table ...` captions whose caption text is attached as `table_title` on at least one table chunk.
-- `table_header_valid_rate`: **table structure quality** – fraction of table chunks whose `raw_text` parses as a valid markdown header row followed by a separator row.
-- `table_detection_rate`: **table recall proxy** – detected table chunks divided by the number of source tables, capped at 1.0 (can exceed 1.0 before capping when large tables are split into multiple chunks).
-- `heading_alignment_rate`: **section alignment quality** – fraction of chunks where `heading_path` matches the heading stack implied by the source at `start_line`.
-- `token_budget_compliance_rate`: **chunk-size budget compliance** – fraction of chunks whose `token_count` is within the configured chunk token budget.
-
 ## Common workflows
 
 - Update model names in `llm_config.yaml`.
 - Place markdown sources in `documents/` (e.g., `documents/Munich.md`).
 - Inspect per-run artifacts under `output/<run_id>/`.
+
+

@@ -1,27 +1,27 @@
 """
-Brief: Inspect accepted/rejected markdown decision chunk content for one run.
+Brief: Inspect accepted and rejected markdown decision chunks for one run.
 
 Inputs:
 - CLI args:
-  - --run-dir: Run artifact directory containing `markdown/` files (for example `output/20260306_1034`).
-  - --decision: Which decision set to inspect: `accepted`, `rejected`, or `both` (default: `both`).
-  - --limit: Optional maximum rows per decision set after filtering. Omit to dump all rows.
-  - --city: Optional city filter (case-insensitive city key or name).
-  - --show-content / --no-content: Include or hide chunk content text (default: show content).
-  - --max-content-chars: Maximum characters shown for content preview per chunk (default: 800).
-  - --output-file: Optional report file path. Defaults to `<run-dir>/markdown/decision_chunks_report.md`.
-  - --stdout: Also print the report text to stdout.
-  - --config: Path to llm config used to open Chroma store (default: `llm_config.yaml`).
+  - `--run-dir`: Run artifact directory containing `markdown/` files (for example `output/20260306_1034`).
+  - `--decision`: Which decision set to inspect: `accepted`, `rejected`, or `both` (default: `both`).
+  - `--limit`: Optional maximum rows per decision set after filtering. Omit to dump all rows.
+  - `--city`: Optional city filter (case-insensitive city key or display name).
+  - `--show-content` / `--no-content`: Include or hide chunk content text (default: show content).
+  - `--max-content-chars`: Maximum characters shown for content preview per chunk (default: `800`).
+  - `--output-file`: Optional report file path. Defaults to `<run-dir>/markdown/decision_chunks_report.md`.
+  - `--stdout`: Also print the report text to stdout.
+  - `--config`: Path to `llm_config.yaml` used to resolve markdown chunks (default: `llm_config.yaml`).
 - Files/paths:
   - `<run-dir>/markdown/accepted_excerpts.json`
   - `<run-dir>/markdown/rejected_excerpts.json`
-  - `<run-dir>/markdown/retrieval.json`
-  - Chroma collection configured in `llm_config.yaml` (`vector_store.*`).
+  - `<run-dir>/markdown/batches.json`
+  - Source markdown files referenced by those batch artifacts.
 - Env vars:
-  - Optional `.env` values consumed by `load_config` (for example `CHROMA_PERSIST_PATH`).
+  - Optional `.env` values consumed by `load_config` (for example `MARKDOWN_DIR`).
 
 Outputs:
-- Writes a compact, human-readable report file (`.md`) with retrieval metadata and optional chunk content.
+- Writes a compact human-readable report file (`.md`) with per-chunk metadata and optional chunk content.
 - Optionally prints the same report to stdout (`--stdout`).
 
 Usage (from project root):
@@ -31,14 +31,15 @@ Usage (from project root):
 from __future__ import annotations
 
 import argparse
-import json
 import logging
+from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Literal
+from typing import Any, Literal, Protocol
 
-from backend.modules.vector_store.chroma_store import ChromaStore
+from backend.api.services.source_chunks import load_source_chunks
 from backend.utils.city_normalization import normalize_city_key
-from backend.utils.config import load_config
+from backend.utils.config import AppConfig, load_config
+from backend.utils.json_io import read_json_object
 from backend.utils.logging_config import setup_logger
 
 logger = logging.getLogger(__name__)
@@ -46,10 +47,53 @@ logger = logging.getLogger(__name__)
 DecisionKind = Literal["accepted", "rejected"]
 
 
+class ChunkContentStore(Protocol):
+    """Minimal content lookup interface used by row collection."""
+
+    def get(self, ids: list[str], limit: int) -> dict[str, object]:
+        """Return metadata and documents for the requested chunk ids."""
+
+
+@dataclass(frozen=True)
+class MarkdownChunkStore:
+    """Resolve persisted chunk ids back into markdown content."""
+
+    run_dir: Path
+    markdown_dir: Path
+    config: AppConfig
+
+    def get(self, ids: list[str], limit: int) -> dict[str, object]:
+        """Return markdown chunk content in the legacy metadata/documents shape."""
+        requested_ids = list(ids[: max(limit, 0)]) if limit else list(ids)
+        if not requested_ids:
+            return {"metadatas": [], "documents": []}
+        try:
+            chunks = load_source_chunks(
+                run_dir=self.run_dir,
+                markdown_dir=self.markdown_dir,
+                config=self.config,
+                chunk_ids=requested_ids,
+            )
+        except FileNotFoundError:
+            return {"metadatas": [], "documents": []}
+
+        return {
+            "metadatas": [
+                {
+                    "raw_text": chunk.content,
+                    "city_name": chunk.city_name,
+                    "source_path": chunk.source_path,
+                }
+                for chunk in chunks
+            ],
+            "documents": [chunk.content for chunk in chunks],
+        }
+
+
 def parse_args() -> argparse.Namespace:
     """Parse CLI arguments."""
     parser = argparse.ArgumentParser(
-        description="Inspect accepted/rejected chunk decisions for a run."
+        description="Inspect accepted and rejected markdown chunk decisions for a run."
     )
     parser.add_argument(
         "--run-dir",
@@ -111,11 +155,9 @@ def parse_args() -> argparse.Namespace:
 
 def _read_json(path: Path) -> dict[str, Any]:
     """Load JSON file and validate top-level object shape."""
-    if not path.exists():
-        raise FileNotFoundError(f"File not found: {path.as_posix()}")
-    payload = json.loads(path.read_text(encoding="utf-8"))
-    if not isinstance(payload, dict):
-        raise ValueError(f"Expected object JSON at {path.as_posix()}")
+    payload = read_json_object(path, logger=logger, error_prefix="Failed to read JSON")
+    if payload is None:
+        raise FileNotFoundError(f"File not found or invalid JSON: {path.as_posix()}")
     return payload
 
 
@@ -139,14 +181,24 @@ def _decision_ids(payload: dict[str, Any], decision: DecisionKind) -> list[str]:
 def _normalize_retrieval_index(
     retrieval_payload: dict[str, Any],
 ) -> dict[str, dict[str, Any]]:
-    """Build chunk-id keyed retrieval metadata lookup map."""
-    chunks = retrieval_payload.get("chunks", [])
-    if not isinstance(chunks, list):
-        return {}
+    """Build a chunk-id keyed lookup map from batch or legacy chunk payloads."""
+    chunks: list[dict[str, Any]] = []
+    raw_chunks = retrieval_payload.get("chunks")
+    if isinstance(raw_chunks, list):
+        chunks.extend(item for item in raw_chunks if isinstance(item, dict))
+
+    raw_batches = retrieval_payload.get("batches")
+    if isinstance(raw_batches, list):
+        for batch in raw_batches:
+            if not isinstance(batch, dict):
+                continue
+            batch_chunks = batch.get("chunks")
+            if not isinstance(batch_chunks, list):
+                continue
+            chunks.extend(item for item in batch_chunks if isinstance(item, dict))
+
     index: dict[str, dict[str, Any]] = {}
     for item in chunks:
-        if not isinstance(item, dict):
-            continue
         chunk_id = str(item.get("chunk_id", "")).strip()
         if chunk_id:
             index[chunk_id] = item
@@ -154,7 +206,7 @@ def _normalize_retrieval_index(
 
 
 def _passes_city_filter(item: dict[str, Any], city_filter: str | None) -> bool:
-    """Return true when retrieval item matches optional city filter."""
+    """Return true when an item matches the optional city filter."""
     if not city_filter:
         return True
     requested_key = normalize_city_key(city_filter)
@@ -165,19 +217,19 @@ def _passes_city_filter(item: dict[str, Any], city_filter: str | None) -> bool:
 
 
 def _truncate(value: str, max_chars: int) -> str:
-    """Trim long text content for compact terminal output."""
+    """Trim long text content for compact report output."""
     if max_chars <= 0 or len(value) <= max_chars:
         return value
     return f"{value[:max_chars].rstrip()} ... [truncated]"
 
 
 def _default_output_path(run_dir: Path) -> Path:
-    """Return default report path for a run directory."""
+    """Return the default report path for a run directory."""
     return run_dir / "markdown" / "decision_chunks_report.md"
 
 
-def _chunk_content(store: ChromaStore, chunk_id: str) -> str:
-    """Fetch chunk raw text from Chroma metadata/document fields."""
+def _chunk_content(store: ChunkContentStore, chunk_id: str) -> str:
+    """Fetch chunk raw text from the content store."""
     payload = store.get(ids=[chunk_id], limit=1)
     metadatas = payload.get("metadatas", [])
     documents = payload.get("documents", [])
@@ -195,13 +247,13 @@ def _collect_rows(
     decision: DecisionKind,
     chunk_ids: list[str],
     retrieval_index: dict[str, dict[str, Any]],
-    store: ChromaStore,
+    store: ChunkContentStore,
     city_filter: str | None,
     show_content: bool,
     max_content_chars: int,
     limit: int | None,
 ) -> tuple[list[dict[str, str]], int]:
-    """Collect decision rows with retrieval metadata and optional content."""
+    """Collect decision rows with metadata and optional content."""
     rows: list[dict[str, str]] = []
     shown = 0
     missing_in_retrieval = 0
@@ -225,10 +277,12 @@ def _collect_rows(
                 "decision": decision,
                 "city_name": str(retrieval_item.get("city_name", "")),
                 "city_key": str(retrieval_item.get("city_key", "")),
-                "distance": str(retrieval_item.get("distance", "")),
-                "block_type": str(retrieval_item.get("block_type", "")),
                 "chunk_id": chunk_id,
-                "source_path": str(retrieval_item.get("source_path", "")),
+                "chunk_index": str(retrieval_item.get("chunk_index", "")),
+                "block_type": str(retrieval_item.get("block_type", "")),
+                "source_path": str(
+                    retrieval_item.get("source_path", retrieval_item.get("path", ""))
+                ),
                 "heading_path": str(retrieval_item.get("heading_path", "")),
                 "content": content,
             }
@@ -240,7 +294,7 @@ def _render_section(
     decision: DecisionKind,
     rows: list[dict[str, str]],
     total_ids: int,
-    missing_in_retrieval: int,
+    missing_in_index: int,
     include_content: bool,
 ) -> list[str]:
     """Render one decision section as markdown lines."""
@@ -252,7 +306,7 @@ def _render_section(
         lines.append(
             (
                 f"- [{row['index']}] city={row['city_name']} ({row['city_key']}) "
-                f"distance={row['distance']} block={row['block_type']} id={row['chunk_id']}"
+                f"chunk_index={row['chunk_index']} block={row['block_type']} id={row['chunk_id']}"
             )
         )
         lines.append(f"  - source: {row['source_path']}")
@@ -260,11 +314,11 @@ def _render_section(
         if include_content:
             lines.append(
                 "  - content: "
-                + (row["content"] if row["content"] else "<not found in vector store>")
+                + (row["content"] if row["content"] else "<chunk content not found>")
             )
     lines.append("")
     lines.append(
-        f"- Summary: total_ids={total_ids}, shown={len(rows)}, missing_in_retrieval={missing_in_retrieval}"
+        f"- Summary: total_ids={total_ids}, shown={len(rows)}, missing_in_index={missing_in_index}"
     )
     lines.append("")
     return lines
@@ -273,23 +327,23 @@ def _render_section(
 def main() -> None:
     """Script entry point."""
     args = parse_args()
-    setup_logger()
 
     run_dir = Path(args.run_dir)
     markdown_dir = run_dir / "markdown"
-    retrieval_path = markdown_dir / "retrieval.json"
+    batches_path = markdown_dir / "batches.json"
     accepted_path = markdown_dir / "accepted_excerpts.json"
     rejected_path = markdown_dir / "rejected_excerpts.json"
 
-    retrieval_payload = _read_json(retrieval_path)
+    batches_payload = _read_json(batches_path)
     accepted_payload = _read_json(accepted_path)
     rejected_payload = _read_json(rejected_path)
-    retrieval_index = _normalize_retrieval_index(retrieval_payload)
+    retrieval_index = _normalize_retrieval_index(batches_payload)
 
     config = load_config(Path(args.config))
-    store = ChromaStore(
-        persist_path=config.vector_store.chroma_persist_path,
-        collection_name=config.vector_store.chroma_collection_name,
+    store = MarkdownChunkStore(
+        run_dir=run_dir,
+        markdown_dir=config.markdown_dir,
+        config=config,
     )
     output_path = (
         Path(args.output_file)
@@ -326,7 +380,7 @@ def main() -> None:
                 decision="accepted",
                 rows=accepted_rows,
                 total_ids=len(accepted_ids),
-                missing_in_retrieval=accepted_missing,
+                missing_in_index=accepted_missing,
                 include_content=args.show_content,
             )
         )
@@ -347,7 +401,7 @@ def main() -> None:
                 decision="rejected",
                 rows=rejected_rows,
                 total_ids=len(rejected_ids),
-                missing_in_retrieval=rejected_missing,
+                missing_in_index=rejected_missing,
                 include_content=args.show_content,
             )
         )
@@ -359,4 +413,5 @@ def main() -> None:
 
 
 if __name__ == "__main__":
+    setup_logger()
     main()

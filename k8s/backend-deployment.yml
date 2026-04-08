@@ -18,7 +18,7 @@ spec:
       containers:
         - name: backend
           image: ghcr.io/open-earth-foundation/query_mechanism_urbind-backend:dev
-          # Same securityContext as build-vector-index Job so /data/chroma (and /data/output) are readable.
+          # Shared volume access for persisted run artifacts under /data/output.
           securityContext:
             runAsUser: 0
             runAsGroup: 0
