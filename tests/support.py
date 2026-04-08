@@ -9,7 +9,7 @@ from typing import TypeVar
 import yaml
 from pydantic import BaseModel
 
-from backend.utils.config import AppConfig, VectorStoreConfig
+from backend.utils.config import AppConfig, EnrichmentConfig, VectorStoreConfig
 
 ModelT = TypeVar("ModelT", bound=BaseModel)
 TEST_CONFIG_PATH = Path(__file__).resolve().parents[1] / "llm_config.yaml"
@@ -43,6 +43,7 @@ def build_test_app_config(
     writer_overrides: dict[str, object] | None = None,
     chat_overrides: dict[str, object] | None = None,
     assumptions_reviewer_overrides: dict[str, object] | None = None,
+    enrichment_overrides: dict[str, object] | None = None,
     retry_overrides: dict[str, object] | None = None,
 ) -> AppConfig:
     """Build a test AppConfig seeded from the repository llm_config.yaml."""
@@ -59,6 +60,7 @@ def build_test_app_config(
         config.assumptions_reviewer,
         assumptions_reviewer_overrides,
     )
+    config.enrichment = _apply_overrides(config.enrichment, enrichment_overrides)
     config.retry = _apply_overrides(config.retry, retry_overrides)
     config.vector_store = _apply_overrides(config.vector_store, vector_store_overrides)
     if vector_store is not None:

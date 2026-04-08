@@ -459,6 +459,11 @@ class RunLogger:
         self.context_bundle["sql"] = sql_payload
         self.write_context_bundle()
 
+    def update_enrichment_bundle(self, enrichment_payload: dict[str, Any]) -> None:
+        """Persist the enrichment context bundle section."""
+        self.context_bundle["enrichment"] = enrichment_payload
+        self.write_context_bundle()
+
     def update_markdown_bundle(self, markdown_payload: dict[str, Any]) -> None:
         """Persist markdown payload and sync excerpt count in run inputs."""
         self.context_bundle["markdown"] = markdown_payload

@@ -19,6 +19,12 @@ Input is a JSON object with:
 - `context_bundle` (object): contains SQL and markdown outputs; SQL may be null when SQL is disabled
   - may include `research_question` (str): orchestrator-refined research version of the question
 - `reconsideration` (object, optional): previous answer + missing cities (use `context_bundle` to find their excerpts)
+- `context_bundle.enrichment` (object, optional): automated gap analysis, web findings, and assumption estimates
+  - `assumptions` (list): model-estimated values with method/confidence/range/rationale
+  - `non_estimable` (list): gaps that could not be estimated, with Door Opener recommendations
+  - `web_findings` (list): values found via web research with source URLs
+  - `freshness_results` (list): CCC vs web comparison results
+  - `saturation_warning` (string, optional): warning if >60% of estimates used Method C
 </input>
 
 <output>
@@ -46,6 +52,14 @@ Content quality requirements:
   - State the method and basis (for example, using median/average of cities with evidence) and which cities are missing.
   - Keep observed totals and assumption-based totals separate.
   - If fewer than 2 cities have numeric evidence for that metric, do not estimate; state that evidence is insufficient.
+- If `context_bundle.enrichment` is present:
+  - Use enrichment.assumptions: label each with method and confidence, e.g. `(estimated; method: peer_city_proxy, confidence: MEDIUM, range: 8-10)`.
+  - Use enrichment.web_findings: cite web sources alongside CCC sources.
+  - For superseded values (freshness_results), note the update with provenance.
+  - For non_estimable items, acknowledge the gap and include the Door Opener recommendation.
+  - Keep observed values, web-sourced values, and estimated values clearly separated.
+  - If saturation_warning is present, include it as a methodological caveat.
+  - Never present estimated values as observed facts.
 - Never expose implementation details (SQL queries, table names, chunk mechanics, tool internals).
 
 Citation rules (critical when `excerpt_count > 0`):

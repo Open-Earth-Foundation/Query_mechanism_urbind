@@ -19,6 +19,12 @@ Input is a JSON object with:
 - `context_bundle` (object): contains SQL and markdown outputs; SQL may be null when SQL is disabled
   - may include `research_question` (str): orchestrator-refined research version of the question
 - `reconsideration` (object, optional): previous answer + missing cities (use `context_bundle` to find their excerpts)
+- `context_bundle.enrichment` (object, optional): automated gap analysis, web findings, and assumption estimates
+  - `assumptions` (list): model-estimated values with method/confidence/range/rationale
+  - `non_estimable` (list): gaps that could not be estimated, with Door Opener recommendations
+  - `web_findings` (list): values found via web research with source URLs
+  - `freshness_results` (list): CCC vs web comparison results
+  - `saturation_warning` (string, optional): warning if >60% of estimates used Method C
 </input>
 
 <output>
@@ -39,7 +45,10 @@ Content quality requirements:
   - Add cross-city similarities/comparison only in a final synthesis section after all city sections.
 - If `excerpt_count == 0`, do not attempt a factual answer; state that no grounded evidence was found.
 - If `context_bundle.markdown.status="success"` and `context_bundle.markdown.error` is non-null, include a brief limitation note.
-- For missing numeric values, do not estimate; explicitly say exact figures are unavailable.
+- If `context_bundle.enrichment` is present and contains an assumption for a missing field, cite it clearly as `(model assumption; method: <method_used>, confidence: <confidence>, range: <low>-<high>)`. Keep separate from observed evidence.
+- If `context_bundle.enrichment` contains web findings, cite with source URL.
+- For non-estimable items, state that figures are unavailable and include Door Opener recommendation.
+- If no enrichment data is available for a missing value, state that exact figures are unavailable.
 - Never expose implementation details (SQL queries, table names, chunk mechanics, tool internals).
 
 Citation rules (critical when `excerpt_count > 0`):

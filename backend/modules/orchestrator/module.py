@@ -42,6 +42,7 @@ from backend.modules.sql_researcher.services import (
     build_sql_research_result,
     cap_results,
 )
+from backend.modules.web_researcher.module import run_enrichment_pipeline
 from backend.modules.vector_store.indexer import update_markdown_index
 from backend.modules.vector_store.retriever import (
     as_markdown_documents,
@@ -770,6 +771,21 @@ def run_pipeline(
     # Write final output directly from the prepared context bundle.
     context_bundle = run_logger.context_bundle
     context_bundle["analysis_mode"] = analysis_mode
+
+    # --- Enrichment layer (gap analysis + web research + assumptions modelling) ---
+    if config.enrichment.enabled:
+        context_bundle = run_enrichment_pipeline(
+            question=question,
+            context_bundle=context_bundle,
+            base_dir=paths.base_dir,
+            run_logger=run_logger,
+            config=config,
+            api_key=api_key,
+        )
+        run_logger.context_bundle = context_bundle
+        run_logger.write_context_bundle()
+    # --- END enrichment ---
+
     try:
         result = handle_write_decision(
             question,
