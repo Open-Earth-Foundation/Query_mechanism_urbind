@@ -376,7 +376,7 @@ Core endpoints:
 
 - `GET /` (root health endpoint)
 - `POST /api/v1/runs`
-- `GET /api/v1/runs` (list discovered runs as `run_id` + `question`; refreshed from `RUNS_DIR/*/run.json` artifact folders on each request, plus currently queued/running in-memory runs)
+- `GET /api/v1/runs` (list discovered runs as `run_id` + `question` + `picker_timestamp`; supports optional `search` across question text and selected city names, refreshed from `RUNS_DIR/*/run.json` artifact folders on each request, plus currently queued/running in-memory runs)
 - `GET /api/v1/runs/{run_id}/status`
 - `GET /api/v1/runs/{run_id}/output`
 - `GET /api/v1/runs/{run_id}/export/docx` (Word export of `final.md`; inline `[ref_n]` citation tags are omitted from the exported document)
@@ -678,7 +678,7 @@ Follow-up search stays conservative: it never launches a multi-city refresh, and
 When chat needs a single city before searching, the backend sends clarification metadata and the frontend opens a city-picker popup that resubmits the original question with the selected city directly into one-city follow-up search.
 When a direct chat prompt would overflow, the backend now falls back to an evidence-only map-reduce flow built from compact excerpt evidence and caches that stripped chat artifact under `output/<run_id>/chat_cache/evidence_chunks.json`.
 The parent/base run stays pinned in chat context selection, manual run selections may exceed the direct prompt cap, and auto-added follow-up bundles are still trimmed first.
-The `Load Previous Answer` picker reads `run_id` + `question` from `GET /api/v1/runs`, then loads selected run artifacts through the standard run endpoints.
+The `Load Previous Answer` picker reads `run_id`, `question`, and `picker_timestamp` from `GET /api/v1/runs`, renders rows as `MMDD-HHMM | question preview` inside a searchable popup list, filters runs by question/city as you type, and then loads selected run artifacts through the standard run endpoints.
 `NEXT_PUBLIC_FRONTEND_MODE` sets the default frontend surface, and the page header always exposes a persistent browser toggle between `standard` and `dev`.
 
 Dev-mode frontend features:

@@ -100,8 +100,15 @@ export function DevToolsPanel({ apiKeyIssue, runId }: DevToolsPanelProps) {
 
         <Input
           id="user-api-key"
-          type="password"
+          type="text"
+          name="openrouter-api-key"
           autoComplete="off"
+          autoCorrect="off"
+          autoCapitalize="none"
+          spellCheck={false}
+          data-form-type="other"
+          data-lpignore="true"
+          data-1p-ignore="true"
           placeholder="sk-or-v1-..."
           value={apiKeyInput}
           onChange={(event) => setApiKeyInput(event.target.value)}

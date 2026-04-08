@@ -4,6 +4,7 @@ import {
   type CSSProperties,
   type PointerEvent as ReactPointerEvent,
   useCallback,
+  useDeferredValue,
   useEffect,
   useMemo,
   useRef,
@@ -29,6 +30,7 @@ import { DevToolsPanel } from "@/components/dev-tools-panel";
 import { DocumentExportControls } from "@/components/document-export-controls";
 import { MarkdownWithReferences } from "@/components/markdown-with-references";
 import { SearchableCityPicker } from "@/components/searchable-city-picker";
+import { SearchableRunPicker } from "@/components/searchable-run-picker";
 import { WriterDocumentRail } from "@/components/writer-document-rail";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -98,7 +100,8 @@ function formatRunOptionLabel(run: RunSummary): string {
   const compactQuestion = run.question.replace(/\s+/g, " ").trim();
   const preview =
     compactQuestion.length > 56 ? `${compactQuestion.slice(0, 53)}...` : compactQuestion;
-  return `${run.run_id} | ${preview || "No question"}`;
+  const pickerLabel = run.picker_timestamp || run.run_id;
+  return `${pickerLabel} | ${preview || "No question"}`;
 }
 
 function normalizeCitySelectionKey(value: string): string {
@@ -192,6 +195,7 @@ export default function Home() {
   const [runError, setRunError] = useState<string | null>(null);
   const [availableRuns, setAvailableRuns] = useState<RunSummary[]>([]);
   const [selectedExistingRunId, setSelectedExistingRunId] = useState("");
+  const [runSearchQuery, setRunSearchQuery] = useState("");
   const [isLoadingRuns, setIsLoadingRuns] = useState(false);
   const [runsError, setRunsError] = useState<string | null>(null);
   const [isLoadingSelectedRun, setIsLoadingSelectedRun] = useState(false);
@@ -215,6 +219,7 @@ export default function Home() {
     null,
   );
   const cccRunDefaultRef = useRef<string | null>(null);
+  const runListAbortControllerRef = useRef<AbortController | null>(null);
 
   const runId = runResponse?.run_id ?? null;
   const statusValue = runStatus?.status ?? runResponse?.status ?? null;
@@ -266,6 +271,7 @@ export default function Home() {
   const selectedCccCityKey = selectedCccCity
     ? normalizeCitySelectionKey(selectedCccCity)
     : "";
+  const deferredRunSearchQuery = useDeferredValue(runSearchQuery);
 
   const workspaceRailTitle =
     workspaceUsesDocumentRail && workspaceRailMode === "document"
@@ -404,10 +410,19 @@ export default function Home() {
 
   const refreshRunList = useCallback(
     async (preferredRunId?: string): Promise<void> => {
+      runListAbortControllerRef.current?.abort();
+      const controller = new AbortController();
+      runListAbortControllerRef.current = controller;
       setIsLoadingRuns(true);
       setRunsError(null);
       try {
-        const payload = await fetchRuns();
+        const payload = await fetchRuns({
+          search: deferredRunSearchQuery,
+          signal: controller.signal,
+        });
+        if (runListAbortControllerRef.current !== controller) {
+          return;
+        }
         setAvailableRuns(payload.runs);
         setSelectedExistingRunId((current) => {
           const preferred = (preferredRunId ?? current).trim();
@@ -420,12 +435,17 @@ export default function Home() {
           return "";
         });
       } catch (error) {
+        if (controller.signal.aborted) {
+          return;
+        }
         setRunsError(error instanceof Error ? error.message : "Failed to load runs.");
       } finally {
-        setIsLoadingRuns(false);
+        if (runListAbortControllerRef.current === controller) {
+          setIsLoadingRuns(false);
+        }
       }
     },
-    [],
+    [deferredRunSearchQuery],
   );
 
   async function handleLoadExistingRun(): Promise<void> {
@@ -450,6 +470,12 @@ export default function Home() {
   useEffect(() => {
     void refreshRunList();
   }, [refreshRunList]);
+
+  useEffect(() => {
+    return () => {
+      runListAbortControllerRef.current?.abort();
+    };
+  }, []);
 
   useEffect(() => {
     const storedRunId = (window.localStorage.getItem(LAST_RUN_ID_STORAGE_KEY) ?? "").trim();
@@ -1073,28 +1099,22 @@ export default function Home() {
                     Refresh
                   </Button>
                 </div>
-                <div className="flex gap-2">
-                  <select
+                <div className="flex items-start gap-2">
+                  <SearchableRunPicker
                     id="existing-run"
-                    value={selectedExistingRunId}
-                    onChange={(event) => setSelectedExistingRunId(event.target.value)}
-                    disabled={isLoadingRuns || availableRuns.length === 0}
-                    className="h-11 w-full rounded-md border border-slate-300 bg-white px-3 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-slate-300 disabled:cursor-not-allowed disabled:bg-slate-100"
-                  >
-                    {availableRuns.length === 0 ? (
-                      <option value="">
-                        {isLoadingRuns ? "Loading runs..." : "No runs found"}
-                      </option>
-                    ) : null}
-                    {availableRuns.map((run) => (
-                      <option key={run.run_id} value={run.run_id}>
-                        {formatRunOptionLabel(run)}
-                      </option>
-                    ))}
-                  </select>
+                    runs={availableRuns}
+                    selectedRunId={selectedExistingRunId}
+                    searchQuery={runSearchQuery}
+                    onSearchQueryChange={setRunSearchQuery}
+                    onSelectRun={setSelectedExistingRunId}
+                    formatRunLabel={formatRunOptionLabel}
+                    isLoading={isLoadingRuns}
+                    popupClassName="w-[calc(100%+5.5rem)]"
+                  />
                   <Button
                     type="button"
                     variant="outline"
+                    className="h-11 w-20 shrink-0"
                     onClick={() => void handleLoadExistingRun()}
                     disabled={isLoadingSelectedRun || !selectedExistingRunId.trim()}
                   >
@@ -1103,9 +1123,14 @@ export default function Home() {
                   </Button>
                 </div>
                 <p className="text-xs text-slate-500">
-                  {availableRuns.length} runs discovered in backend storage.
+                  {runSearchQuery.trim()
+                    ? `${availableRuns.length} matching runs.`
+                    : `${availableRuns.length} runs discovered in backend storage.`}
                 </p>
                 {runsError ? <p className="text-xs text-red-600">{runsError}</p> : null}
+                <p className="text-xs text-slate-500">
+                  Open the list to search by question or city. Minor city typos are tolerated.
+                </p>
                 <p className="text-xs text-slate-500">
                   Load a previous answer without re-running the full pipeline.
                 </p>

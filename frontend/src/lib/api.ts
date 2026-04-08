@@ -103,6 +103,7 @@ export interface SourceChunkListResponse {
 export interface RunSummary {
   run_id: string;
   question: string;
+  picker_timestamp: string;
 }
 
 export interface RunListResponse {
@@ -457,9 +458,18 @@ async function requestBlob(
   return await response.blob();
 }
 
-export async function fetchRuns(options?: { signal?: AbortSignal }): Promise<RunListResponse> {
+export async function fetchRuns(options?: {
+  signal?: AbortSignal;
+  search?: string;
+}): Promise<RunListResponse> {
+  const params = new URLSearchParams();
+  const search = options?.search?.trim();
+  if (search) {
+    params.set("search", search);
+  }
+  const suffix = params.toString();
   return requestJson<RunListResponse>(
-    "/api/v1/runs",
+    `/api/v1/runs${suffix ? `?${suffix}` : ""}`,
     { signal: options?.signal },
     false,
     RUN_LIST_REQUEST_TIMEOUT_MS,
