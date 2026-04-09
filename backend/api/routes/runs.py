@@ -6,7 +6,7 @@ import json
 import logging
 from pathlib import Path
 
-from fastapi import APIRouter, Header, HTTPException, Query, Request, status
+from fastapi import APIRouter, Header, HTTPException, Query, Request, Response, status
 
 from backend.api.models import (
     CreateRunRequest,
@@ -214,7 +214,15 @@ def _read_progress_steps(runs_dir: Path, run_id: str) -> list[PipelineStep] | No
                 started_at=step.get("started_at"),
                 completed_at=step.get("completed_at"),
                 items=[
-                    PipelineStepItem(text=item["text"])
+                    PipelineStepItem(
+                        text=item["text"],
+                        item_type=item.get("item_type"),
+                        title=item.get("title"),
+                        domain=item.get("domain"),
+                        url=item.get("url"),
+                        count=item.get("count"),
+                        metadata=item.get("metadata"),
+                    )
                     for item in step.get("items", [])
                     if isinstance(item, dict) and "text" in item
                 ],
@@ -480,6 +488,38 @@ def _resolve_run_reference_items(
             )
         return filtered
     return items
+
+
+@router.get(
+    "/runs/{run_id}/export/pdf",
+    name="export_run_pdf",
+    responses={200: {"content": {"application/pdf": {}}}},
+)
+def export_run_pdf(run_id: str, request: Request) -> Response:
+    """Export the completed run document as a formatted PDF."""
+    run_store, record = _require_completed_run(run_id, request)
+    output_path = _resolve_output_path(record.final_output_path, run_store.runs_dir, run_id)
+    if output_path is None or not output_path.exists():
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Final output is missing for run `{run_id}`.",
+        )
+    try:
+        markdown_content = output_path.read_text(encoding="utf-8")
+    except OSError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Failed to read final output for run `{run_id}`: {exc}",
+        ) from exc
+
+    from backend.api.services.pdf_export import markdown_to_pdf
+
+    pdf_bytes = markdown_to_pdf(markdown_content)
+    return Response(
+        content=pdf_bytes,
+        media_type="application/pdf",
+        headers={"Content-Disposition": f'attachment; filename="run_{run_id}.pdf"'},
+    )
 
 
 def _resolve_output_path(path: Path | None, runs_dir: Path, run_id: str) -> Path | None:

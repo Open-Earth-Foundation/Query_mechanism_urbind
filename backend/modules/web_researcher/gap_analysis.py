@@ -37,7 +37,7 @@ def run_gap_analysis(
     """
     client = OpenAI(api_key=api_key, base_url=config.openrouter_base_url)
     system_prompt = _build_system_prompt(config)
-    user_prompt = _build_user_prompt(question, context_bundle, config)
+    user_prompt = _build_user_prompt(question, context_bundle)
 
     for attempt in range(_MAX_RETRIES + 1):
         try:
@@ -104,14 +104,46 @@ def _build_system_prompt(config: AppConfig) -> str:
         "You are a data-gap analyst for urban climate action plans.\n"
         "Your task is to classify every field the user's question asks about and\n"
         "identify which cities are missing data for those fields.\n\n"
+        "FIELD DECOMPOSITION (critical — do this FIRST):\n"
+        "- Break compound questions into their granular sub-fields BEFORE classifying.\n"
+        "- If the question mentions sub-categories, types, modes, or variants, each\n"
+        "  one becomes its own field. Also add the aggregate total if asked.\n"
+        "- Always decompose: types, categories, sectors, modes, phases, fuel types,\n"
+        "  vehicle classes, infrastructure variants, etc.\n"
+        "- Use short snake_case names for fields.\n\n"
         "FIELD CLASSIFICATION (apply once per field, NOT per city):\n"
         '1. "estimable_numerical" — a concrete quantity (cost, count, capacity, area)\n'
         "   that can be estimated from peer city data or national averages.\n"
         '2. "derivable_from_ratio" — a value computable from another field the city\n'
         "   has, combined with a ratio observable in peers (e.g. per-unit cost from\n"
-        "   total cost and fleet size).\n"
+        "   total cost and fleet size, or charger count from fleet size using\n"
+        "   charger-to-vehicle ratios).\n"
         '3. "non_estimable" — qualitative, unique-to-city, or legally specific data\n'
-        "   (operator names, contract terms, specific policy text).\n\n"
+        "   (operator names, contract terms, specific policy text), OR quantities\n"
+        "   that depend heavily on local context (housing stock mix, street layout,\n"
+        "   local parking policy) where a per-capita or peer-city proxy would be\n"
+        "   misleading.\n\n"
+        "WORKED EXAMPLE:\n"
+        "Question: 'What charging infrastructure volume targets by 2030 are in the\n"
+        "CCCs — public charging points (AC vs DC), depot charging, bus charging\n"
+        "depots, fast corridors, residential on-street?'\n\n"
+        "Correct field decomposition & classification:\n"
+        "  depot_charger_count — derivable_from_ratio\n"
+        "    Rationale: Can be derived from fleet size using charger-to-vehicle\n"
+        "    ratios (e.g. 1 depot charger per 3–5 buses).\n"
+        "  bus_charging_depot_count — derivable_from_ratio\n"
+        "    Rationale: Typically 1 depot per 50–80 buses. Derivable from fleet data.\n"
+        "  fast_charging_corridor_points — estimable_numerical\n"
+        "    Rationale: Some cities report this. Estimable from peers but wide ranges.\n"
+        "  public_ac_charger_count — estimable_numerical\n"
+        "    Rationale: Reported by some cities and national registries.\n"
+        "  public_dc_charger_count — estimable_numerical\n"
+        "    Rationale: Same as AC — estimable with caveats.\n"
+        "  residential_onstreet_charging — non_estimable\n"
+        "    Rationale: Depends heavily on housing stock (apartment vs detached),\n"
+        "    street layout, and local parking policy. Per-capita proxy is misleading.\n\n"
+        "WRONG: collapsing all of the above into a single field like\n"
+        "'charging_infrastructure_targets'. Always decompose.\n\n"
         "PER-CITY GAP DETECTION:\n"
         "- For each city in the context, check every estimable/derivable field.\n"
         "- A field is blank if the context contains no concrete numeric value for it.\n"
@@ -142,7 +174,6 @@ def _build_system_prompt(config: AppConfig) -> str:
 def _build_user_prompt(
     question: str,
     context_bundle: dict[str, Any],
-    config: AppConfig,
 ) -> str:
     context_json = json.dumps(context_bundle, ensure_ascii=True, indent=2, default=str)
     research_question = context_bundle.get("research_question", question)
@@ -153,7 +184,7 @@ def _build_user_prompt(
         "```json\n"
         f"{context_json}\n"
         "```\n\n"
-        "Classify each field the question asks about, then list per-city gaps.\n"
+        "Decompose the question into granular fields, classify each, then list per-city gaps.\n"
         "Return only the JSON object described in your instructions.\n"
     )
 

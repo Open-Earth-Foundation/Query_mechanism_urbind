@@ -13,6 +13,7 @@ from backend.modules.web_researcher.models import SearchBatch, WebFinding
 from backend.modules.web_researcher.relevance import check_relevance_batch
 from backend.modules.web_researcher.scraper import FirecrawlScraper
 from backend.modules.web_researcher.search import SerperSearchClient
+from backend.services.progress_tracker import ProgressTracker
 from backend.utils.config import AppConfig
 
 logger = logging.getLogger(__name__)
@@ -155,6 +156,7 @@ def execute_search_batches(
     batches: list[SearchBatch],
     config: AppConfig,
     api_key: str,
+    progress: ProgressTracker | None = None,
 ) -> list[WebFinding]:
     """Execute all search batches through a bounded thread pool.
 
@@ -175,6 +177,9 @@ def execute_search_batches(
     all_findings: list[WebFinding] = []
     max_workers = min(config.enrichment.max_workers, len(batches))
 
+    # Map batch_id → batch for progress reporting
+    batch_by_id = {b.batch_id: b for b in batches}
+
     with ThreadPoolExecutor(max_workers=max_workers) as pool:
         futures = {
             pool.submit(
@@ -189,15 +194,47 @@ def execute_search_batches(
             for batch in batches
         }
 
+        completed_count = 0
         for future in as_completed(futures):
             batch_id = futures[future]
+            completed_count += 1
             try:
                 findings = future.result()
                 all_findings.extend(findings)
+                if progress:
+                    batch = batch_by_id.get(batch_id)
+                    cities_label = ", ".join(batch.cities[:3]) if batch else batch_id
+                    if batch and len(batch.cities) > 3:
+                        cities_label += f" +{len(batch.cities) - 3}"
+                    progress.add_item(
+                        "web_research",
+                        f"Batch {completed_count}/{len(batches)} ({cities_label}): {len(findings)} findings",
+                        item_type="batch_summary",
+                        count=len(findings),
+                        metadata={"cities": cities_label, "batch": f"{completed_count}/{len(batches)}"},
+                    )
+                    for f in findings:
+                        val = f"{f.value} {f.unit}" if f.unit else str(f.value)
+                        parsed_domain = urlparse(f.source_url).netloc.lower()
+                        progress.add_item(
+                            "web_research",
+                            f"  Found: {f.city} / {f.field} = {val} — {f.source_url}",
+                            item_type="search_result",
+                            title=f"{f.city} / {f.field} = {val}",
+                            domain=parsed_domain,
+                            url=f.source_url,
+                        )
             except Exception:
                 logger.warning(
                     "Search batch %s failed.", batch_id, exc_info=True
                 )
+                if progress:
+                    progress.add_item(
+                        "web_research",
+                        f"Batch {completed_count}/{len(batches)}: failed",
+                        item_type="batch_summary",
+                        metadata={"batch": f"{completed_count}/{len(batches)}", "error": True},
+                    )
 
     # Deduplicate findings by (city, field, source_url)
     seen: set[tuple[str, str, str]] = set()

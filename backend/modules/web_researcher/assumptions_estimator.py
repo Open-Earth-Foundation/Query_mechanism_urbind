@@ -51,6 +51,14 @@ def run_assumptions_estimator(
         return [], [], None
 
     if progress:
+        for f in fields_to_estimate:
+            progress.add_item(
+                "assumptions",
+                f"Gap: {f.city} / {f.field} ({f.status})",
+                item_type="gap",
+                title=f"{f.city} / {f.field}",
+                metadata={"city": f.city, "field": f.field, "status": f.status},
+            )
         progress.add_item(
             "assumptions",
             f"{len(fields_to_estimate)} fields to estimate",
@@ -87,6 +95,9 @@ def run_assumptions_estimator(
             progress.add_item(
                 "assumptions",
                 f"{nr.city}: {nr.field_name} — non-estimable",
+                item_type="field",
+                title=f"{nr.city}: {nr.field_name}",
+                metadata={"status": "non_estimable"},
             )
 
     if not estimable_fields:
@@ -98,7 +109,10 @@ def run_assumptions_estimator(
 
     # Pass 1: generate estimates
     if progress:
-        progress.add_item("assumptions", "Pass 1: generating estimates...")
+        progress.add_item(
+            "assumptions",
+            f"Estimating {len(estimable_fields)} fields via priority ladder...",
+        )
     assumptions = _call_estimator(
         question=question,
         context_bundle=context_bundle,
@@ -111,10 +125,28 @@ def run_assumptions_estimator(
 
     if progress and assumptions:
         for a in assumptions:
-            mid = a.estimate.get("mid", "?") if isinstance(a.estimate, dict) else "?"
+            mid = a.estimate.mid if hasattr(a.estimate, "mid") else (
+                a.estimate.get("mid", "?") if isinstance(a.estimate, dict) else "?"
+            )
+            low = a.estimate.low if hasattr(a.estimate, "low") else (
+                a.estimate.get("low", "?") if isinstance(a.estimate, dict) else "?"
+            )
+            high = a.estimate.high if hasattr(a.estimate, "high") else (
+                a.estimate.get("high", "?") if isinstance(a.estimate, dict) else "?"
+            )
             progress.add_item(
                 "assumptions",
-                f"{a.city}: {a.field_name} ≈ {mid} ({a.confidence})",
+                f"{a.city} / {a.field_name}: {mid} ({low}–{high}) "
+                f"[{a.method_used}, {a.confidence}]",
+                item_type="estimate",
+                title=f"{a.city} / {a.field_name}",
+                metadata={
+                    "method": a.method_used,
+                    "confidence": a.confidence,
+                    "mid": str(mid),
+                    "low": str(low),
+                    "high": str(high),
+                },
             )
         progress.add_item(
             "assumptions",
@@ -124,7 +156,7 @@ def run_assumptions_estimator(
     # Pass 2: critique and revise (capped at 1 cycle)
     if assumptions:
         if progress:
-            progress.add_item("assumptions", "Pass 2: critique & revise...")
+            progress.add_item("assumptions", "Reviewing estimates (critique pass)...")
         revised = _call_estimator(
             question=question,
             context_bundle=context_bundle,
@@ -138,6 +170,22 @@ def run_assumptions_estimator(
         if revised:
             assumptions = revised
             if progress:
+                for a in assumptions:
+                    mid = a.estimate.mid if hasattr(a.estimate, "mid") else (
+                        a.estimate.get("mid", "?") if isinstance(a.estimate, dict) else "?"
+                    )
+                    progress.add_item(
+                        "assumptions",
+                        f"Revised: {a.city} / {a.field_name}: {mid} [{a.method_used}, {a.confidence}]",
+                        item_type="estimate",
+                        title=f"{a.city} / {a.field_name}",
+                        metadata={
+                            "method": a.method_used,
+                            "confidence": a.confidence,
+                            "mid": str(mid),
+                            "revised": True,
+                        },
+                    )
                 progress.add_item(
                     "assumptions",
                     f"Pass 2 done: {len(assumptions)} revised estimates",

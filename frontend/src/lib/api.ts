@@ -37,8 +37,22 @@ export interface CreateRunResponse {
   context_url: string;
 }
 
+export type PipelineItemType =
+  | "query_group"
+  | "search_result"
+  | "field"
+  | "estimate"
+  | "gap"
+  | "batch_summary";
+
 export interface PipelineStepItem {
   text: string;
+  item_type?: PipelineItemType | null;
+  title?: string | null;
+  domain?: string | null;
+  url?: string | null;
+  count?: number | null;
+  metadata?: Record<string, unknown> | null;
 }
 
 export interface PipelineStep {
@@ -586,6 +600,34 @@ export async function applyRunAssumptions(
     },
     true,
   );
+}
+
+export async function downloadRunPdf(runId: string): Promise<void> {
+  const response = await fetch(
+    `${getApiBaseUrl()}/api/v1/runs/${encodeURIComponent(runId)}/export/pdf`,
+    { headers: buildHeaders(false) },
+  );
+  if (!response.ok) {
+    let message = `PDF export failed (${response.status})`;
+    try {
+      const payload = (await response.json()) as { detail?: unknown };
+      if (typeof payload.detail === "string" && payload.detail.trim().length > 0) {
+        message = payload.detail;
+      }
+    } catch {
+      // ignore
+    }
+    throw new Error(message);
+  }
+  const blob = await response.blob();
+  const url = URL.createObjectURL(blob);
+  const anchor = document.createElement("a");
+  anchor.href = url;
+  anchor.download = `run_${runId}.pdf`;
+  document.body.appendChild(anchor);
+  anchor.click();
+  document.body.removeChild(anchor);
+  URL.revokeObjectURL(url);
 }
 
 export async function fetchChatContextCatalog(): Promise<ChatContextCatalogResponse> {

@@ -13,6 +13,7 @@ import {
   AlertTriangle,
   CheckCircle2,
   CircleDashed,
+  Download,
   Loader2,
   MessageSquareText,
   PanelLeftClose,
@@ -54,6 +55,7 @@ import {
   RunSummary,
   RunStatus,
   RunStatusResponse,
+  downloadRunPdf,
   fetchCities,
   fetchCityMarkdown,
   fetchCityGroups,
@@ -208,6 +210,7 @@ export default function Home() {
   >({});
   const [isLoadingCccDocument, setIsLoadingCccDocument] = useState(false);
   const [cccDocumentError, setCccDocumentError] = useState<string | null>(null);
+  const [isExportingPdf, setIsExportingPdf] = useState(false);
   const [writerRailWidth, setWriterRailWidth] = useState(DEFAULT_WRITER_RAIL_WIDTH_PX);
   const [isWriterRailResizing, setIsWriterRailResizing] = useState(false);
   const [frontendMode, setFrontendMode] = useState<FrontendMode>(getDefaultFrontendMode());
@@ -1367,6 +1370,23 @@ export default function Home() {
                     <>
                       <div className="mb-3 flex justify-end">
                         <div className="flex gap-2">
+                          <Button
+                            type="button"
+                            variant="outline"
+                            onClick={() => {
+                              if (!runId || isExportingPdf) return;
+                              setIsExportingPdf(true);
+                              downloadRunPdf(runId)
+                                .catch((err) => {
+                                  setRunError(err instanceof Error ? err.message : "PDF export failed.");
+                                })
+                                .finally(() => setIsExportingPdf(false));
+                            }}
+                            disabled={!runId || isExportingPdf}
+                          >
+                            {isExportingPdf ? <Loader2 className="h-4 w-4 animate-spin" /> : <Download className="h-4 w-4" />}
+                            Export PDF
+                          </Button>
                           {devFeatures.showAssumptionsEntry ? (
                             <Button
                               type="button"

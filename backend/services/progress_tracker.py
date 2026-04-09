@@ -55,14 +55,41 @@ class ProgressTracker:
         except Exception:
             logger.debug("ProgressTracker.start_step failed", exc_info=True)
 
-    def add_item(self, step_id: str, text: str) -> None:
-        """Append a sub-item to an existing step and flush."""
+    def add_item(
+        self,
+        step_id: str,
+        text: str,
+        *,
+        item_type: str | None = None,
+        title: str | None = None,
+        domain: str | None = None,
+        url: str | None = None,
+        count: int | None = None,
+        metadata: dict[str, object] | None = None,
+    ) -> None:
+        """Append a sub-item to an existing step and flush.
+
+        Only non-None optional fields are written to keep progress.json compact.
+        """
         try:
             with self._lock:
                 idx = self._step_index.get(step_id)
                 if idx is None:
                     return
-                self._steps[idx]["items"].append({"text": text})
+                entry: dict[str, Any] = {"text": text}
+                if item_type is not None:
+                    entry["item_type"] = item_type
+                if title is not None:
+                    entry["title"] = title
+                if domain is not None:
+                    entry["domain"] = domain
+                if url is not None:
+                    entry["url"] = url
+                if count is not None:
+                    entry["count"] = count
+                if metadata is not None:
+                    entry["metadata"] = metadata
+                self._steps[idx]["items"].append(entry)
             self._flush()
         except Exception:
             logger.debug("ProgressTracker.add_item failed", exc_info=True)

@@ -57,6 +57,12 @@ class PipelineStepItem(BaseModel):
     """Single sub-item inside a pipeline progress step."""
 
     text: str
+    item_type: str | None = None
+    title: str | None = None
+    domain: str | None = None
+    url: str | None = None
+    count: int | None = None
+    metadata: dict[str, object] | None = None
 
 
 class PipelineStep(BaseModel):

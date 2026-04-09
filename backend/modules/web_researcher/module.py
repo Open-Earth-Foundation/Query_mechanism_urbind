@@ -48,23 +48,45 @@ def run_enrichment_pipeline(
         # Step 5: Gap Analysis
         if progress:
             progress.start_step("gap_analysis", "Analyzing data gaps")
+            progress.add_item("gap_analysis", "Classifying fields and detecting gaps...")
         logger.info("Enrichment pipeline: starting gap analysis.")
         gap_manifest = run_gap_analysis(question, context_bundle, config, api_key)
 
         if progress:
+            # Show each field with its classification
+            n_fields = len(gap_manifest.query_fields)
             for qf in gap_manifest.query_fields:
                 progress.add_item(
                     "gap_analysis",
-                    f"{qf.field} — {qf.classification}",
+                    f"Field: {qf.field} ({qf.classification})",
+                    item_type="field",
+                    title=qf.field,
+                    metadata={"classification": qf.classification},
                 )
-            progress.add_item("gap_analysis", f"{len(gap_manifest.query_fields)} fields classified")
-            gap_cities = [cg.city for cg in gap_manifest.city_gaps]
-            if gap_cities:
+            field_word = "field" if n_fields == 1 else "fields"
+            progress.add_item("gap_analysis", f"{n_fields} {field_word} classified")
+
+            # Show per-city gap summary with blank field counts
+            for cg in gap_manifest.city_gaps:
+                n_blank = len(cg.blank_fields)
+                n_stale = len(cg.stale_flags)
+                parts = []
+                if n_blank:
+                    parts.append(f"{n_blank} blank")
+                if n_stale:
+                    parts.append(f"{n_stale} stale")
+                detail = ", ".join(parts) if parts else "gap detected"
                 progress.add_item(
                     "gap_analysis",
-                    f"Gaps in: {', '.join(gap_cities)}",
+                    f"{cg.city}: {detail} [{cg.search_priority}]",
+                    item_type="gap",
+                    title=cg.city,
+                    count=n_blank + n_stale,
+                    metadata={"priority": cg.search_priority, "blank": n_blank, "stale": n_stale},
                 )
-            progress.add_item("gap_analysis", f"{len(gap_manifest.city_gaps)} gaps found")
+            n_gaps = len(gap_manifest.city_gaps)
+            gap_word = "city" if n_gaps == 1 else "cities"
+            progress.add_item("gap_analysis", f"{n_gaps} {gap_word} with gaps")
             progress.complete_step("gap_analysis")
 
         if not gap_manifest.city_gaps and not gap_manifest.query_fields:
@@ -90,6 +112,7 @@ def run_enrichment_pipeline(
         if config.enrichment.web_research_enabled and gap_manifest.city_gaps:
             if progress:
                 progress.start_step("web_research", "Running web research")
+                progress.add_item("web_research", "Planning search queries...")
             logger.info("Enrichment pipeline: starting web research.")
             # Step 6: Search Planner → formulate queries
             search_batches = plan_searches(gap_manifest, config, api_key)
@@ -99,19 +122,32 @@ def run_enrichment_pipeline(
                     "web_research",
                     f"{len(search_batches)} batches, {total_queries} queries planned",
                 )
-                for batch in search_batches:
-                    for query in batch.queries:
-                        progress.add_item("web_research", f"Query: {query}")
+                progress.add_item("web_research", "Executing searches...")
             # Step 6 cont: Search Workers → execute queries, scrape, extract
             if search_batches:
-                web_findings = execute_search_batches(search_batches, config, api_key)
+                web_findings = execute_search_batches(
+                    search_batches, config, api_key, progress=progress,
+                )
                 # Step 7: Freshness Checker → compare web vs CCC
                 if web_findings:
+                    if progress:
+                        progress.add_item("web_research", "Checking freshness vs CCC data...")
                     freshness_results = check_freshness(
                         web_findings, context_bundle, config, api_key
                     )
+                    if progress and freshness_results:
+                        n_superseded = sum(
+                            1 for r in freshness_results if r.classification == "superseded"
+                        )
+                        n_consistent = sum(
+                            1 for r in freshness_results if r.classification == "consistent"
+                        )
+                        progress.add_item(
+                            "web_research",
+                            f"Freshness: {n_consistent} consistent, {n_superseded} superseded",
+                        )
             if progress:
-                progress.add_item("web_research", f"{len(web_findings)} findings")
+                progress.add_item("web_research", f"{len(web_findings)} total findings")
                 progress.complete_step("web_research")
             logger.info(
                 "Web research complete: batches=%d findings=%d freshness=%d",
@@ -147,8 +183,19 @@ def run_enrichment_pipeline(
         )
 
         if progress:
-            progress.add_item("assumptions", f"{len(assumptions)} estimates")
-            progress.add_item("assumptions", f"{len(non_estimable)} non-estimable")
+            # Method breakdown summary
+            if assumptions:
+                from collections import Counter
+                method_counts = Counter(a.method_used for a in assumptions)
+                method_parts = [f"{m}: {c}" for m, c in method_counts.most_common()]
+                progress.add_item(
+                    "assumptions",
+                    f"{len(assumptions)} estimates ({', '.join(method_parts)})",
+                )
+            else:
+                progress.add_item("assumptions", "0 estimates")
+            if non_estimable:
+                progress.add_item("assumptions", f"{len(non_estimable)} non-estimable")
             progress.complete_step("assumptions")
 
         elapsed = time.monotonic() - start_time
