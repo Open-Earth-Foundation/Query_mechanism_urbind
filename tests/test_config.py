@@ -213,6 +213,10 @@ def test_load_config_reads_required_chat_defaults_from_yaml(tmp_path: Path) -> N
     """Chat settings come from YAML instead of hidden model defaults."""
     config = load_config(_write_config(tmp_path))
 
+    assert config.calculator.model == "openai/gpt-5.4-mini"
+    assert config.calculator.enabled is False
+    assert config.calculator.max_categories == 10
+    assert config.calculator.max_passes_per_category == 3
     assert config.chat.max_history_messages == 12
     assert not config.chat.followup_search_enabled
     assert config.chat.max_auto_followup_bundles == 3
@@ -252,6 +256,9 @@ def test_load_config_applies_chat_and_assumptions_defaults_when_sections_missing
 
     config = load_config(config_path)
 
+    assert config.calculator.model == "openai/gpt-5.4-mini"
+    assert config.calculator.enabled is False
+    assert config.calculator.max_workers == 4
     assert config.chat.model == "openai/gpt-5.4-mini"
     assert config.chat.provider_timeout_seconds == 60.0
     assert config.chat.followup_router_max_history_messages == 6
@@ -307,3 +314,27 @@ def test_load_config_reads_central_retry_settings_from_yaml(tmp_path: Path) -> N
     assert config.retry.max_attempts == 7
     assert config.retry.backoff_base_seconds == 0.25
     assert config.retry.backoff_max_seconds == 3.5
+
+
+def test_load_config_reads_calculator_settings_from_yaml(tmp_path: Path) -> None:
+    """Calculator config values are loaded from llm_config.yaml."""
+    config_path = _write_config(
+        tmp_path,
+        [
+            "calculator:",
+            "  enabled: true",
+            "  model: openai/gpt-5.4-mini",
+            "  reasoning_effort: high",
+            "  max_categories: 6",
+            "  max_passes_per_category: 2",
+            "  max_workers: 3",
+        ],
+    )
+
+    config = load_config(config_path)
+
+    assert config.calculator.enabled is True
+    assert config.calculator.reasoning_effort == "high"
+    assert config.calculator.max_categories == 6
+    assert config.calculator.max_passes_per_category == 2
+    assert config.calculator.max_workers == 3

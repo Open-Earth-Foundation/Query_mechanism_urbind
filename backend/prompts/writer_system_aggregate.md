@@ -18,6 +18,7 @@ Input is a JSON object with:
 - `selected_cities` (list[str]): cities selected for this run, which you must explicitly cover
 - `context_bundle` (object): contains markdown outputs
   - may include `research_question` (str): orchestrator-refined research version of the question
+  - may include `calculator` (object): grouped quantitative summary produced after markdown extraction
 - `reconsideration` (object, optional): previous answer + missing cities (use `context_bundle` to find their excerpts)
 </input>
 
@@ -31,6 +32,8 @@ The tool argument must match `WriterOutput`:
 Content quality requirements:
 - Start directly with the user-facing answer body (no operational metadata headers).
 - Ground all claims in `context_bundle`; do not invent facts.
+- When `context_bundle.calculator` contains grouped totals, treat it as the primary quantitative source and use raw markdown excerpts only as fallback for missing calculations.
+- When calculator groups include separate `current_total` and `target_total` values, keep them separate in the answer and label them clearly as current/observed versus planned/target.
 - When you report a subtotal or total, explicitly mention all numeric parts used in that calculation and show the addition for the user (for example `part_a + part_b + part_c = total`).
 - Explicitly consider all cities in `selected_cities` and ensure every city is addressed.
 - Aggregate style is required by default:

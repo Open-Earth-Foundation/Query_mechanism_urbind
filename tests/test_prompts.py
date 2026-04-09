@@ -5,6 +5,9 @@ def test_writer_aggregate_prompt_mentions_grouped_requirements() -> None:
     prompt_path = Path("backend/prompts/writer_system_aggregate.md")
     content = prompt_path.read_text(encoding="utf-8")
     assert "`analysis_mode` (`aggregate` | `city_by_city`)" in content
+    assert "may include `calculator` (object)" in content
+    assert "primary quantitative source" in content
+    assert "separate `current_total` and `target_total` values" in content
     assert "explicitly mention all numeric parts used in that calculation" in content
     assert "show the addition for the user" in content
     assert "Cities considered:" in content
@@ -17,6 +20,9 @@ def test_writer_city_by_city_prompt_mentions_per_city_requirements() -> None:
     prompt_path = Path("backend/prompts/writer_system_city_by_city.md")
     content = prompt_path.read_text(encoding="utf-8")
     assert "`analysis_mode` (`aggregate` | `city_by_city`)" in content
+    assert "may include `calculator` (object)" in content
+    assert "primary quantitative source" in content
+    assert "separate `current_total` and `target_total` values" in content
     assert "explicitly mention all numeric parts used in that calculation" in content
     assert "show the addition for the user" in content
     assert "Cities considered:" in content
@@ -35,3 +41,29 @@ def test_chat_followup_router_prompt_uses_required_schema_sections() -> None:
     assert "selected_run_ids" not in content
     assert "selected_followup_bundle_ids" not in content
     assert "- `source_id`" not in content
+
+
+def test_calculator_plan_prompt_uses_required_schema_sections() -> None:
+    prompt_path = Path("backend/prompts/calculator_plan_system.md")
+    content = prompt_path.read_text(encoding="utf-8")
+    assert "<role>" in content
+    assert "<task>" in content
+    assert "<input>" in content
+    assert "<output>" in content
+    assert "<example_output>" in content
+    assert "submit_calculation_plan" in content
+    assert "CalculationPlan" in content
+    assert "up to 10 additive calculation categories" in content
+
+
+def test_calculator_worker_prompt_uses_required_schema_sections() -> None:
+    prompt_path = Path("backend/prompts/calculator_worker_system.md")
+    content = prompt_path.read_text(encoding="utf-8")
+    assert "<role>" in content
+    assert "<task>" in content
+    assert "<input>" in content
+    assert "<output>" in content
+    assert "<example_output>" in content
+    assert "submit_calculation_worker_output" in content
+    assert "CalculationWorkerOutput" in content
+    assert "record_role" in content

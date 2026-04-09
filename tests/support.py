@@ -38,6 +38,7 @@ def build_test_app_config(
     orchestrator_overrides: dict[str, object] | None = None,
     markdown_researcher_overrides: dict[str, object] | None = None,
     writer_overrides: dict[str, object] | None = None,
+    calculator_overrides: dict[str, object] | None = None,
     chat_overrides: dict[str, object] | None = None,
     assumptions_reviewer_overrides: dict[str, object] | None = None,
     retry_overrides: dict[str, object] | None = None,
@@ -50,6 +51,7 @@ def build_test_app_config(
         markdown_researcher_overrides,
     )
     config.writer = _apply_overrides(config.writer, writer_overrides)
+    config.calculator = _apply_overrides(config.calculator, calculator_overrides)
     config.chat = _apply_overrides(config.chat, chat_overrides)
     config.assumptions_reviewer = _apply_overrides(
         config.assumptions_reviewer,

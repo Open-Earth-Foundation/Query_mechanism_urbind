@@ -36,6 +36,7 @@ class RunLogger:
                 "markdown_file_count": 0,
                 "markdown_chunk_count": 0,
                 "markdown_excerpt_count": 0,
+                "calculator_category_count": 0,
                 "markdown_source_mode": "standard_chunking",
                 "analysis_mode": "aggregate",
             },
@@ -53,6 +54,7 @@ class RunLogger:
             "retrieval_queries": [question],
             "final": None,
             "analysis_mode": "aggregate",
+            "calculator": None,
         }
 
         self._ensure_dirs()
@@ -63,6 +65,7 @@ class RunLogger:
         """Create the per-run artifact directories."""
         self.run_paths.base_dir.mkdir(parents=True, exist_ok=True)
         self.run_paths.markdown_dir.mkdir(parents=True, exist_ok=True)
+        self.run_paths.calculator_dir.mkdir(parents=True, exist_ok=True)
 
     def write_run_log(self) -> None:
         """Persist the structured run log JSON."""
@@ -375,6 +378,11 @@ class RunLogger:
         lines.append(self._format_json(self._summarize_markdown_failures(markdown_payload)))
         lines.append("")
 
+        calculator_payload = self._read_json_file(self.run_paths.calculator_summary)
+        lines.append("CALCULATOR_SUMMARY")
+        lines.append(self._format_json(calculator_payload))
+        lines.append("")
+
         final_output = self.run_log.get("artifacts", {}).get("final_output")
         lines.append("FINAL_OUTPUT (LLM)")
         if final_output:
@@ -403,6 +411,18 @@ class RunLogger:
         inputs = self.run_log.get("inputs")
         if isinstance(inputs, dict):
             inputs["markdown_excerpt_count"] = normalized_excerpt_count
+            self.run_log["inputs"] = inputs
+            self.write_run_log()
+        self.write_context_bundle()
+
+    def update_calculator_bundle(self, calculator_payload: dict[str, Any]) -> None:
+        """Persist calculator payload and sync category count in run inputs."""
+        self.context_bundle["calculator"] = calculator_payload
+        category_count = calculator_payload.get("category_count", 0)
+        normalized_category_count = category_count if isinstance(category_count, int) else 0
+        inputs = self.run_log.get("inputs")
+        if isinstance(inputs, dict):
+            inputs["calculator_category_count"] = normalized_category_count
             self.run_log["inputs"] = inputs
             self.write_run_log()
         self.write_context_bundle()

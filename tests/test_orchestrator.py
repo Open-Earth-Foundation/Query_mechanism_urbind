@@ -9,6 +9,7 @@ from backend.modules.markdown_researcher.models import (
     MarkdownExcerpt,
     MarkdownResearchResult,
 )
+from backend.modules.calculator.models import CalculationRunSummary
 from backend.modules.orchestrator.models import ResearchQuestionRefinement
 from backend.modules.orchestrator.module import _build_retrieval_queries, run_pipeline
 from backend.modules.writer.models import WriterOutput
@@ -69,6 +70,41 @@ def _stub_writer(
     return WriterOutput(content="# Answer\n\nStub")
 
 
+def _stub_calculator(
+    question: str,
+    context_bundle: dict,
+    config: AppConfig,
+    api_key: str,
+    *,
+    base_dir: Path,
+    **_kwargs: dict[str, object],
+) -> CalculationRunSummary:
+    """Return one deterministic empty calculator summary for pipeline tests."""
+    _ = question, context_bundle, config, api_key
+    calculator_dir = base_dir / "calculator"
+    calculator_dir.mkdir(parents=True, exist_ok=True)
+    summary = CalculationRunSummary(
+        status="empty",
+        note="No numeric categories for this test.",
+        selected_city_names=[],
+        category_count=0,
+        categories=[],
+    )
+    (calculator_dir / "plan.json").write_text(
+        json.dumps({"categories": [], "note": "No numeric categories for this test."}),
+        encoding="utf-8",
+    )
+    (calculator_dir / "manifest.json").write_text(
+        json.dumps({"status": "empty", "category_count": 0, "categories": []}),
+        encoding="utf-8",
+    )
+    (calculator_dir / "summary.json").write_text(
+        summary.model_dump_json(indent=2),
+        encoding="utf-8",
+    )
+    return summary
+
+
 def _reset_root_handlers() -> None:
     """Remove and close all handlers from the root logger."""
     root_logger = logging.getLogger()
@@ -114,13 +150,18 @@ def test_run_pipeline_creates_artifacts(
         markdown_func=_stub_markdown,
         refine_question_func=_stub_refine_question,
         writer_func=_stub_writer,
+        calculator_func=_stub_calculator,
     )
 
     assert paths.final_output.exists()
     final_output = paths.final_output.read_text(encoding="utf-8")
     run_log = json.loads(paths.run_log.read_text(encoding="utf-8"))
+    context_bundle = json.loads(paths.context_bundle.read_text(encoding="utf-8"))
     assert run_log["status"] == "completed"
     assert Path(run_log["artifacts"]["final_output"]).exists()
+    assert paths.calculator_dir.exists()
+    assert Path(run_log["artifacts"]["calculator_summary"]).exists()
+    assert isinstance(context_bundle["calculator"], dict)
     assert "Finish reason:" not in final_output
 
 
@@ -149,6 +190,7 @@ def test_run_pipeline_detaches_run_log_handler(
             markdown_func=_stub_markdown,
             refine_question_func=_stub_refine_question,
             writer_func=_stub_writer,
+            calculator_func=_stub_calculator,
         )
         first_run_log_path = str(first_paths.base_dir / "run.log")
         assert all(
@@ -165,6 +207,7 @@ def test_run_pipeline_detaches_run_log_handler(
             markdown_func=_stub_markdown,
             refine_question_func=_stub_refine_question,
             writer_func=_stub_writer,
+            calculator_func=_stub_calculator,
         )
         second_run_log_path = str(second_paths.base_dir / "run.log")
         assert all(
@@ -225,6 +268,7 @@ def test_run_pipeline_refines_question_before_markdown(
         markdown_func=_capture_markdown_question,
         refine_question_func=_refine_for_test,
         writer_func=_stub_writer,
+        calculator_func=_stub_calculator,
     )
 
     assert paths.final_output.exists()
@@ -286,6 +330,7 @@ def test_run_pipeline_passes_selected_cities_to_question_refiner(
         markdown_func=_stub_markdown,
         refine_question_func=_refine_with_selected_cities,
         writer_func=_stub_writer,
+        calculator_func=_stub_calculator,
     )
 
     assert captured["selected_cities"] == ["Munich", "Leipzig"]
@@ -326,6 +371,7 @@ def test_run_pipeline_dev_mode_uses_direct_queries(
         markdown_func=_capture_markdown_question,
         refine_question_func=_stub_refine_question,
         writer_func=_stub_writer,
+        calculator_func=_stub_calculator,
     )
 
     assert paths.final_output.exists()
@@ -372,6 +418,7 @@ def test_run_pipeline_fails_when_refinement_raises(
             markdown_func=_stub_markdown,
             refine_question_func=_raise_refinement_error,
             writer_func=_stub_writer,
+            calculator_func=_stub_calculator,
         )
 
     run_dir = config.runs_dir / run_id
@@ -416,6 +463,7 @@ def test_run_pipeline_finalizes_when_refinement_raises_unexpected_error(
             markdown_func=_stub_markdown,
             refine_question_func=_raise_refinement_error,
             writer_func=_stub_writer,
+            calculator_func=_stub_calculator,
         )
 
     run_dir = config.runs_dir / run_id

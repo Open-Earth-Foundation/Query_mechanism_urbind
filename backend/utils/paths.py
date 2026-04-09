@@ -37,12 +37,17 @@ class RunPaths:
     markdown_rejected_excerpts: Path
     markdown_decision_audit: Path
     markdown_references: Path
+    calculator_dir: Path
+    calculator_plan: Path
+    calculator_manifest: Path
+    calculator_summary: Path
     final_output: Path
 
 
 def create_run_paths(runs_dir: Path, run_id: str, context_bundle_name: str) -> RunPaths:
     base_dir = ensure_run_dir(runs_dir, run_id)
     markdown_dir = base_dir / "markdown"
+    calculator_dir = base_dir / "calculator"
 
     return RunPaths(
         base_dir=base_dir,
@@ -57,6 +62,10 @@ def create_run_paths(runs_dir: Path, run_id: str, context_bundle_name: str) -> R
         markdown_rejected_excerpts=markdown_dir / "rejected_excerpts.json",
         markdown_decision_audit=markdown_dir / "decision_audit.json",
         markdown_references=markdown_dir / "references.json",
+        calculator_dir=calculator_dir,
+        calculator_plan=calculator_dir / "plan.json",
+        calculator_manifest=calculator_dir / "manifest.json",
+        calculator_summary=calculator_dir / "summary.json",
         final_output=base_dir / "final.md",
     )
 

@@ -10,7 +10,8 @@ flowchart TD
 
   RET -->|top k markdown chunks| MR[Markdown Researcher]
   MR --> EX[Structured Excerpts]
-  EX --> WR[Writer]
+  EX --> CALC[Quantitative Calculator]
+  CALC --> WR[Writer]
   WR --> RUN[(Run Store)]
   RUN --> OUT[Generated Document]
 
@@ -48,6 +49,7 @@ flowchart TD
 Notes:
 
 - The product remains document-first: chat starts only after a completed run has produced a saved final document and context bundle.
+- The run pipeline now includes a calculator stage between excerpt extraction and writing; it plans additive categories, extracts typed numeric records, and computes deterministic grouped current and target totals before the writer composes the final document.
 - Context chat is run-scoped. It reuses persisted run artifacts, stores conversation state separately in chat memory, and can combine multiple completed run contexts in one session.
 - When the chat router needs narrower evidence, it can trigger a focused one-city follow-up retrieval and attach that result back into the active chat session as a chat-owned follow-up bundle.
 - When a chat turn is predicted to require overflow map-reduce, the API now persists the user message, queues a split-mode chat job, and the frontend polls job status until the final assistant message is appended to chat memory.

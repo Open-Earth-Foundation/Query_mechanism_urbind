@@ -61,6 +61,15 @@ class WriterConfig(AgentConfig):
     max_coverage_attempts: int = 2
 
 
+class CalculatorConfig(AgentConfig):
+    """Configuration for the quantitative calculator stage."""
+
+    enabled: bool = False
+    max_categories: int = 10
+    max_passes_per_category: int = 3
+    max_workers: int = 4
+
+
 class AssumptionsReviewerConfig(AgentConfig):
     """Configuration for two-pass missing-data discovery."""
 
@@ -113,6 +122,9 @@ class AppConfig(BaseModel):
     orchestrator: OrchestratorConfig
     markdown_researcher: MarkdownResearcherConfig
     writer: WriterConfig
+    calculator: CalculatorConfig = Field(
+        default_factory=lambda: CalculatorConfig(model="openai/gpt-5.4-mini")
+    )
     chat: ChatConfig = Field(
         default_factory=lambda: ChatConfig(model="openai/gpt-5.4-mini")
     )
@@ -260,6 +272,7 @@ __all__ = [
     "MarkdownResearcherConfig",
     "ChatConfig",
     "WriterConfig",
+    "CalculatorConfig",
     "AssumptionsReviewerConfig",
     "BenchmarkFactJudgeConfig",
     "RetryConfig",

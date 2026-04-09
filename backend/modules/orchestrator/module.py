@@ -6,6 +6,8 @@ from typing import Callable, Literal, NoReturn
 
 from agents.exceptions import MaxTurnsExceeded
 
+from backend.modules.calculator.agent import run_calculator_stage
+from backend.modules.calculator.models import CalculationRunSummary
 from backend.modules.markdown_researcher.agent import extract_markdown_excerpts
 from backend.modules.markdown_researcher.models import MarkdownResearchResult
 from backend.modules.markdown_researcher.services import (
@@ -226,6 +228,7 @@ def run_pipeline(
         ..., ResearchQuestionRefinement
     ] = refine_research_question,
     writer_func: Callable[..., WriterOutput] = write_markdown,
+    calculator_func: Callable[..., CalculationRunSummary] = run_calculator_stage,
 ) -> RunPaths:
     """
     Run the multi-agent document builder pipeline.
@@ -246,6 +249,7 @@ def run_pipeline(
         markdown_func: Markdown extraction function (default: extract_markdown_excerpts)
         refine_question_func: Question refinement function (default: refine_research_question)
         writer_func: Document writing function (default: write_markdown)
+        calculator_func: Calculator stage function (default: run_calculator_stage)
 
     Returns:
         Run paths containing output artifacts
@@ -637,6 +641,28 @@ def run_pipeline(
     # Write final output directly from the prepared context bundle.
     context_bundle = run_logger.context_bundle
     context_bundle["analysis_mode"] = analysis_mode
+    try:
+        calculator_summary = calculator_func(
+            question,
+            context_bundle,
+            config,
+            api_key,
+            base_dir=paths.base_dir,
+            log_llm_payload=log_llm_payload,
+        )
+        run_logger.record_artifact("calculator_plan", paths.calculator_plan)
+        run_logger.record_artifact("calculator_manifest", paths.calculator_manifest)
+        run_logger.record_artifact("calculator_summary", paths.calculator_summary)
+        run_logger.update_calculator_bundle(calculator_summary.model_dump())
+        context_bundle = run_logger.context_bundle
+    except (ValueError, RuntimeError, OSError) as exc:
+        return handle_task_error(
+            "calculator",
+            exc,
+            run_logger,
+            run_log_handler,
+            paths,
+        )
     try:
         result = handle_write_decision(
             question,

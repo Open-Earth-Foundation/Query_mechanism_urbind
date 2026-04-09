@@ -1,6 +1,6 @@
 # Query Mechanism Urbind
 
-Multi-agent document builder that answers user questions from Markdown sources. It orchestrates research-question refinement, markdown extraction, and writing with OpenAI Agents, and logs every run artifact for inspection.
+Multi-agent document builder that answers user questions from Markdown sources. It orchestrates research-question refinement, markdown extraction, an intermediate quantitative calculator stage, and final writing with OpenAI Agents, and logs every run artifact for inspection.
 
 ## Requirements
 
@@ -35,7 +35,8 @@ The `uv.lock` file is committed to ensure reproducible builds.
 - `llm_config.yaml` stores model names and settings.
 - Markdown researcher batching knobs are configured in `llm_config.yaml` under `markdown_researcher` (`batch_max_chunks`, `batch_max_input_tokens`, `batch_overhead_tokens`).
 - Retry policy is centralized in top-level `retry` in `llm_config.yaml` (`max_attempts`, `backoff_base_seconds`, `backoff_max_seconds`) and is shared across retry/backoff behavior for LLM calls and related operations.
-- Agent turn limits are configured per agent via `max_turns` (for example `markdown_researcher.max_turns`, `writer.max_turns`).
+- Agent turn limits are configured per agent via `max_turns` (for example `markdown_researcher.max_turns`, `calculator.max_turns`, `writer.max_turns`).
+- The quantitative calculator is gated by `calculator.enabled`; when set to `false`, the pipeline skips calculator LLM work, writes an empty calculator summary artifact, and the writer falls back to excerpt-only synthesis.
 - Optional `markdown_researcher.reasoning_effort` can be set for Grok reasoning control (for example `"none"`), but this is model/provider-specific and may fail on unsupported models.
 - Copy `.env.example` to `.env` and fill in values for your environment.
 - `.env` is loaded automatically via `python-dotenv` in the scripts.
@@ -125,7 +126,7 @@ See the checked-in example config at [`llm_config.yaml`](llm_config.yaml).
 
 ### How token and size limits are applied
 
-Shared input-budget logic (used by orchestrator, markdown researcher, and writer):
+Shared input-budget logic (used by orchestrator, markdown researcher, calculator, and writer):
 
 ```text
 if max_input_tokens is set:
@@ -199,8 +200,10 @@ flowchart TD
     C --> D[Load markdown documents]
     D --> E[Markdown extractor: extract_markdown_excerpts]
     E --> F[Store markdown bundle in context_bundle.json<br/>(excerpts + excerpt_count)]
-    F --> G[Writer: write_markdown]
-    G --> H[Write final.md and finalize run<br/>(writer includes evidence preface)]
+    F --> G[Calculator: plan categories, extract records,<br/>aggregate grouped totals]
+    G --> H[Store calculator summary in context_bundle.json<br/>(calculator + artifacts)]
+    H --> I[Writer: write_markdown]
+    I --> J[Write final.md and finalize run<br/>(writer includes evidence preface)]
 ```
 
 What each stage does:
@@ -211,7 +214,8 @@ What each stage does:
   - vector path (`VECTOR_STORE_ENABLED=true`): per-city, distance-thresholded chunks are retrieved from Chroma using explicit query embeddings.
 - Markdown researcher returns evidence excerpts selected from whichever chunk source was used.
 - `markdown_chunk_count` tracks how many chunk inputs were processed; `excerpt_count` (also logged as `markdown_excerpt_count` in run metadata) tracks how many evidence snippets were extracted from those chunks.
-- Context bundle is updated with extracted evidence for downstream writing.
+- Context bundle is updated with extracted evidence for downstream calculation and writing.
+- Calculator inspects the question plus excerpt evidence, proposes up to 10 additive categories, extracts typed numeric records per category, and computes deterministic grouped current and target totals in Python.
 - Orchestrator hands the prepared context bundle directly to the writer.
 - Writer uses the context bundle and writes final output text to `output/<run_id>/final.md`. The response starts with an evidence preface (based on `excerpt_count`); when `excerpt_count=0`, it returns a "no evidence found" response.
 
@@ -758,7 +762,7 @@ Artifacts are written under `output/<run_id>/`:
 - `run.log`: detailed runtime logs, including per-agent `LLM_USAGE` lines, chat prompt-window diagnostics (`Context chat reply plan`, `Context chat direct request`, with fitted source ids and token-component counts), retry reason lines (`RETRY_EVENT`/`RETRY_EXHAUSTED` with plain-text fields such as `reason`, `http_status`, `rate_limited`, and markdown split lineage when applicable), and writer city-citation coverage checkpoints (`WRITER_CITATION_COVERAGE`, with `coverage_ratio` such as `33/33`).
 - `error_log.txt`: extracted error-focused log view from `run.log` (`ERROR`, `CRITICAL`, and exhausted retry events).
 - `run_summary.txt`: human-readable consolidated report. Header includes `Started`, `Completed`, and explicit `Total runtime` in seconds, plus `LLM Usage` totals/per-agent. It also captures an input snapshot (`original question`, `query mode`, `canonical research query`, `retrieval query 1..3`, `selected cities` planned/found, markdown dir/file/chunk/excerpt counts) and a `MARKDOWN_FAILURE_SUMMARY` aggregated from batch failures.
-- `context_bundle.json`: payload passed between agents (`markdown`, `original_question`, `research_question`, `query_mode`, `retrieval_queries`, `analysis_mode`, final path).
+- `context_bundle.json`: payload passed between agents (`markdown`, `calculator`, `original_question`, `research_question`, `query_mode`, `retrieval_queries`, `analysis_mode`, final path).
 - `research_question.json`: run query metadata payload. Includes:
   - `original_question`: raw user question.
   - `query_mode`: `standard` or `dev`.
@@ -770,6 +774,11 @@ Artifacts are written under `output/<run_id>/`:
 - `markdown/rejected_excerpts.json`: IDs-only negative decision artifact with rejected chunk IDs and rejected-per-city grouping.
 - `markdown/decision_audit.json`: run-level reconciliation counters and diagnostics (`retrieved_total`, accepted/rejected/unresolved totals, invariant status, and mismatch details).
 - `markdown/references.json`: run-local citation map generated from markdown excerpts. Includes sequential `ref_n` entries with `excerpt_index`, `city_name`, `quote`, `partial_answer`, and `source_chunk_ids`. Stage C citation coverage maps cited `ref_id` values in `final.md` back through these `source_chunk_ids`.
+- `calculator/plan.json`: planner output for up to 10 additive calculator categories derived from the question plus excerpt evidence.
+- `calculator/manifest.json`: calculator stage status, per-category pass counts, stop reasons, and category artifact pointers.
+- `calculator/categories/<category_key>/pass_<n>.json`: raw worker outputs for each calculator pass.
+- `calculator/categories/<category_key>/records.json`: merged typed numeric records kept for that category.
+- `calculator/summary.json`: writer-facing grouped current and target totals, coverage, and supporting `ref_id` references derived from calculator records.
 - `markdown/retrieval.json` (when `VECTOR_STORE_ENABLED=true`): vector retrieval inputs and results summary. Includes the final retrieval query list, optional city filter, retrieval tuning metadata (cutoffs/caps), strict direct-hit `seed_chunks[]`, final delivered `chunks[]`, `meta.seed_retrieved_total_chunks`, `meta.neighbor_expanded_total_chunks`, and per-chunk summaries (`chunk_id`, `chunk_index`, `city_name`, `city_key`, `source_path`, `heading_path`, `block_type`, `distance`, `provenance`).
 - `markdown/batches.json`: markdown batching plan used for the markdown researcher calls. Includes per-city batch indices, estimated tokens, and chunk ordering fields (`path`, `chunk_index`, `chunk_id`), making it easy to inspect how chunks were grouped into LLM requests.
 - `final.md`: final delivered markdown output. Content format is:
