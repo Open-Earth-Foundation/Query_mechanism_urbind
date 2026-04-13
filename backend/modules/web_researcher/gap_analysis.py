@@ -171,11 +171,44 @@ def _build_system_prompt(config: AppConfig) -> str:
     )
 
 
+def _slim_context_for_gap_analysis(context_bundle: dict[str, Any]) -> dict[str, Any]:
+    """Strip retrieval metadata from the context bundle while keeping data values.
+
+    The gap analyst needs excerpt content and SQL results to identify gaps,
+    but it does not need chunk IDs, retrieval distances, batch plans, or
+    decision audit data.
+    """
+    slim: dict[str, Any] = {}
+    for key in ("research_question", "original_question", "analysis_mode", "query_mode"):
+        if key in context_bundle:
+            slim[key] = context_bundle[key]
+
+    # SQL: keep full results (usually compact)
+    if "sql" in context_bundle:
+        slim["sql"] = context_bundle["sql"]
+
+    # Markdown: keep excerpts and city lists, drop chunk-level metadata
+    markdown = context_bundle.get("markdown")
+    if isinstance(markdown, dict):
+        slim_md: dict[str, Any] = {}
+        for keep_key in (
+            "excerpts", "excerpt_count", "inspected_cities",
+            "inspected_city_names", "selected_cities", "selected_city_names",
+            "analysis_mode",
+        ):
+            if keep_key in markdown:
+                slim_md[keep_key] = markdown[keep_key]
+        slim["markdown"] = slim_md
+
+    return slim
+
+
 def _build_user_prompt(
     question: str,
     context_bundle: dict[str, Any],
 ) -> str:
-    context_json = json.dumps(context_bundle, ensure_ascii=True, indent=2, default=str)
+    slim = _slim_context_for_gap_analysis(context_bundle)
+    context_json = json.dumps(slim, ensure_ascii=False, indent=2, default=str)
     research_question = context_bundle.get("research_question", question)
     return (
         f"User question:\n{question.strip()}\n\n"

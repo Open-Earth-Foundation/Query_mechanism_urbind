@@ -58,8 +58,8 @@ enrichment:
   enabled: false
   web_research_enabled: false
   max_workers: 6
-  max_queries_per_batch: 10
-  max_total_queries_per_run: 50
+  max_queries_per_batch: 25
+  max_total_queries_per_run: 100
   max_retries_per_worker: 2
   max_deep_dives_per_run: 3
   max_pages_per_deep_dive: 10

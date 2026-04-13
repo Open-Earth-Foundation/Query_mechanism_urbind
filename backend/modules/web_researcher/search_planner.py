@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import logging
+import re
 import uuid
 from pathlib import Path
 from typing import Any
@@ -21,15 +22,93 @@ logger = logging.getLogger(__name__)
 
 _CITY_GROUPS_PATH = Path(__file__).resolve().parents[2] / "api" / "assets" / "city_groups.json"
 
+# ---------------------------------------------------------------------------
+# Source-type hints: pattern → likely document types
+# ---------------------------------------------------------------------------
+_SOURCE_HINTS: dict[str, list[str]] = {
+    "vehicle_count|fleet|bus_count|tram_count": [
+        "operator annual report", "fleet register",
+        "tender award notice", "subsidy application",
+    ],
+    "capex|investment|cost|budget|expenditure": [
+        "investment programme", "budget allocation",
+        "press release procurement", "funding announcement",
+    ],
+    "capacity|energy|power|charging|charger": [
+        "technical specification", "grid connection permit",
+        "energy agency report", "infrastructure register",
+    ],
+    "emissions|co2|ghg|carbon": [
+        "national GHG inventory", "city climate report",
+        "environmental agency database",
+    ],
+}
+
+# ---------------------------------------------------------------------------
+# Field category mapping for batch splitting
+# ---------------------------------------------------------------------------
+_FIELD_CATEGORIES: dict[str, list[str]] = {
+    "fleet_vehicle": ["vehicle", "fleet", "bus", "tram", "train", "ferry"],
+    "infrastructure": ["charger", "charging", "depot", "station", "capacity"],
+    "financial": ["capex", "opex", "cost", "budget", "investment", "expenditure", "funding"],
+    "emissions": ["emission", "co2", "ghg", "carbon"],
+}
+
+
+def _get_source_hints(target_fields: list[str]) -> list[str]:
+    """Return deduplicated source-type hints relevant to the given fields."""
+    hints: list[str] = []
+    joined = " ".join(target_fields).lower()
+    for pattern, sources in _SOURCE_HINTS.items():
+        if re.search(pattern, joined):
+            hints.extend(sources)
+    # Deduplicate while preserving order
+    seen: set[str] = set()
+    deduped: list[str] = []
+    for h in hints:
+        if h not in seen:
+            seen.add(h)
+            deduped.append(h)
+    return deduped
+
+
+def _categorize_fields(fields: list[str]) -> dict[str, list[str]]:
+    """Group fields into categories by keyword matching.
+
+    Fields that don't match any category go into ``"general"``.
+    """
+    categorized: dict[str, list[str]] = {}
+    for field in fields:
+        field_lower = field.lower()
+        matched = False
+        for category, keywords in _FIELD_CATEGORIES.items():
+            if any(kw in field_lower for kw in keywords):
+                categorized.setdefault(category, []).append(field)
+                matched = True
+                break
+        if not matched:
+            categorized.setdefault("general", []).append(field)
+
+    # Merge single-field categories back into general
+    to_merge: list[str] = []
+    for cat, cat_fields in list(categorized.items()):
+        if cat != "general" and len(cat_fields) == 1:
+            to_merge.append(cat)
+    for cat in to_merge:
+        categorized.setdefault("general", []).extend(categorized.pop(cat))
+
+    return categorized
+
 
 def plan_searches(
     gap_manifest: GapManifest,
     config: AppConfig,
     api_key: str,
+    question: str = "",
 ) -> list[SearchBatch]:
     """Formulate batched search queries from the gap manifest.
 
-    Groups queries by country/region, field type, and priority.
+    Groups queries by country/region, field category, and priority.
     Returns a list of ``SearchBatch`` objects ready for execution.
     On failure returns an empty list.
     """
@@ -76,47 +155,59 @@ def plan_searches(
         if not target_fields:
             continue
 
-        # Effort scaling per architecture doc
-        budget = _compute_budget(
-            blank_count=len(all_blank_fields),
-            stale_count=len(all_stale_fields),
-            city_count=len(batch_cities),
-            priority=max_priority,
-            config=config,
-        )
+        # Split target fields by category for focused batches
+        field_categories = _categorize_fields(target_fields)
 
-        # Use LLM to formulate search queries
-        queries = _formulate_queries(
-            cities=batch_cities,
-            target_fields=target_fields,
-            region=region,
-            priority=max_priority,
-            budget=budget,
-            config=config,
-            api_key=api_key,
-        )
+        for category, cat_fields in field_categories.items():
+            if total_queries >= max_total:
+                break
 
-        if not queries:
-            continue
+            # Effort scaling per architecture doc
+            cat_blank = [f for f in cat_fields if f in all_blank_fields]
+            cat_stale = [f for f in cat_fields if f in all_stale_fields]
 
-        remaining = max_total - total_queries
-        queries = queries[:remaining]
-        total_queries += len(queries)
+            budget = _compute_budget(
+                blank_count=len(cat_blank),
+                stale_count=len(cat_stale),
+                city_count=len(batch_cities),
+                priority=max_priority,
+                config=config,
+            )
 
-        # Determine search type
-        search_type = "missing_entirely" if all_blank_fields else "freshness_check"
-        if all_blank_fields and all_stale_fields:
-            search_type = "mixed"
+            # Use LLM to formulate search queries
+            queries = _formulate_queries(
+                cities=batch_cities,
+                target_fields=cat_fields,
+                region=region,
+                priority=max_priority,
+                budget=budget,
+                config=config,
+                api_key=api_key,
+                question_context=question,
+            )
 
-        batches.append(SearchBatch(
-            batch_id=f"batch_{uuid.uuid4().hex[:8]}",
-            cities=batch_cities[:8],  # max 8 cities per batch
-            target_fields=target_fields,
-            search_type=search_type,
-            queries=queries,
-            budget=budget,
-            priority=max_priority,
-        ))
+            if not queries:
+                continue
+
+            remaining = max_total - total_queries
+            queries = queries[:remaining]
+            total_queries += len(queries)
+
+            # Determine search type
+            search_type = "missing_entirely" if cat_blank else "freshness_check"
+            if cat_blank and cat_stale:
+                search_type = "mixed"
+
+            batch_id = f"batch_{region}_{category}_{uuid.uuid4().hex[:8]}"
+            batches.append(SearchBatch(
+                batch_id=batch_id,
+                cities=batch_cities[:8],  # max 8 cities per batch
+                target_fields=cat_fields,
+                search_type=search_type,
+                queries=queries,
+                budget=budget,
+                priority=max_priority,
+            ))
 
     logger.info(
         "Search planner: %d batches, %d total queries across %d regions.",
@@ -146,11 +237,15 @@ def _compute_budget(
         query_budget = min(10, max_per_batch)
         deep_dive = False
     elif blank_count > 0 and priority == "high":
-        # MISSING_ENTIRELY
-        query_budget = min(15, max_per_batch)
+        # MISSING_ENTIRELY — scale to gap surface area
+        gap_surface = blank_count * city_count
+        query_budget = min(
+            max(15, gap_surface * 2 // 3),  # ~2 queries per 3 gaps
+            max_per_batch,
+        )
         deep_dive = True
     elif city_count > 3 and blank_count > (city_count * 0.6):
-        # >60% cohort same gap → aggregate benchmarks
+        # >60% cohort same gap -> aggregate benchmarks
         query_budget = min(8, max_per_batch)
         deep_dive = False
     else:
@@ -172,11 +267,45 @@ def _formulate_queries(
     budget: dict[str, object],
     config: AppConfig,
     api_key: str,
+    question_context: str = "",
 ) -> list[str]:
     """Use LLM to formulate targeted search queries."""
     max_queries = budget.get("max_queries", 5)
 
     client = OpenAI(api_key=api_key, base_url=config.openrouter_base_url)
+
+    # Build source-type hints section
+    source_hints = _get_source_hints(target_fields)
+    source_hints_block = ""
+    if source_hints:
+        hint_lines = ", ".join(source_hints)
+        source_hints_block = (
+            f"\nRecommended source types for these fields:\n"
+            f"- {hint_lines}\n"
+            f"Target these document types in your queries.\n"
+        )
+
+    # Build question context section
+    question_block = ""
+    if question_context:
+        question_block = (
+            f"\nResearch context: {question_context}\n"
+            "Use this to understand what kind of data sources and "
+            "document types would contain these values.\n"
+        )
+
+    # Build variant instructions for high-priority batches
+    variant_block = ""
+    if priority == "high":
+        variant_block = (
+            "\nFor HIGH priority gaps, generate 2-3 variant queries per city+field:\n"
+            "- Variant A: target the operator/owner directly "
+            "(e.g. 'DVB Dresden fleet inventory 2025')\n"
+            "- Variant B: target procurement/tender data "
+            "(e.g. 'Dresden electric bus tender award')\n"
+            "- Variant C: target subsidy/funding records "
+            "(e.g. 'Saxony electric bus funding Dresden')\n"
+        )
 
     system_prompt = (
         "You are a search query formulator for urban climate data research.\n"
@@ -188,7 +317,10 @@ def _formulate_queries(
         "- Include the city name in each query.\n"
         "- Prefer government, operator, and official sources.\n"
         "- For cost data, include currency context (EUR, GBP, etc.).\n"
-        f"- Generate at most {max_queries} queries.\n\n"
+        f"- Generate at most {max_queries} queries.\n"
+        f"{question_block}"
+        f"{source_hints_block}"
+        f"{variant_block}\n"
         "OUTPUT: Return a JSON array of query strings. Nothing else.\n"
         'Example: ["Dresden electric bus fleet size 2024", "Dresden public transport capex budget"]\n'
     )
@@ -198,9 +330,11 @@ def _formulate_queries(
         f"Cities: {', '.join(cities)}\n"
         f"Target fields: {', '.join(target_fields)}\n"
         f"Priority: {priority}\n"
-        f"Max queries: {max_queries}\n\n"
-        "Generate search queries to find these data points.\n"
+        f"Max queries: {max_queries}\n"
     )
+    if question_context:
+        user_prompt += f"Research question: {question_context}\n"
+    user_prompt += "\nGenerate search queries to find these data points.\n"
 
     try:
         request_kwargs: dict[str, object] = {
@@ -245,7 +379,7 @@ def _load_city_groups() -> list[dict[str, Any]]:
 
 
 def _build_city_group_index(groups: list[dict[str, Any]]) -> dict[str, str]:
-    """Build a city → group_id index."""
+    """Build a city -> group_id index."""
     index: dict[str, str] = {}
     for group in groups:
         group_id = group.get("id", "unknown")

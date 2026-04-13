@@ -115,7 +115,7 @@ def run_enrichment_pipeline(
                 progress.add_item("web_research", "Planning search queries...")
             logger.info("Enrichment pipeline: starting web research.")
             # Step 6: Search Planner → formulate queries
-            search_batches = plan_searches(gap_manifest, config, api_key)
+            search_batches = plan_searches(gap_manifest, config, api_key, question=question)
             if progress:
                 total_queries = sum(len(b.queries) for b in search_batches)
                 progress.add_item(

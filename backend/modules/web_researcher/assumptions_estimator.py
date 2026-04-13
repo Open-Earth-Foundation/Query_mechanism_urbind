@@ -118,6 +118,7 @@ def run_assumptions_estimator(
         context_bundle=context_bundle,
         gap_manifest=gap_manifest,
         estimable_fields=estimable_fields,
+        all_enriched_fields=enriched_fields,
         config=config,
         api_key=api_key,
         pass_name="generate",
@@ -162,6 +163,7 @@ def run_assumptions_estimator(
             context_bundle=context_bundle,
             gap_manifest=gap_manifest,
             estimable_fields=estimable_fields,
+            all_enriched_fields=enriched_fields,
             config=config,
             api_key=api_key,
             pass_name="critique",
@@ -208,6 +210,7 @@ def _call_estimator(
     context_bundle: dict[str, Any],
     gap_manifest: GapManifest,
     estimable_fields: list[EnrichedField],
+    all_enriched_fields: list[EnrichedField],
     config: AppConfig,
     api_key: str,
     pass_name: str,
@@ -216,6 +219,8 @@ def _call_estimator(
     """Make a single LLM call for estimation or critique."""
     model = config.enrichment.assumptions_estimator_model or config.enrichment.model
     temperature = config.enrichment.assumptions_estimator_temperature
+
+    peer_reference = _build_peer_reference_table(all_enriched_fields, estimable_fields)
 
     client = OpenAI(api_key=api_key, base_url=config.openrouter_base_url)
     system_prompt = _build_system_prompt(pass_name)
@@ -226,6 +231,7 @@ def _call_estimator(
         estimable_fields=estimable_fields,
         pass_name=pass_name,
         prior_estimates=prior_estimates,
+        peer_reference=peer_reference,
     )
 
     request_kwargs: dict[str, object] = {
@@ -272,13 +278,20 @@ def _build_system_prompt(pass_name: str) -> str:
         "PRIORITY LADDER (apply in order — use the first method that applies):\n"
         "Method A (national_regional_average): City has the quantity but missing unit cost.\n"
         "  Use national/regional average unit costs. Confidence: HIGH, range: +/-15-20%.\n"
-        "Method B (peer_city_proxy): City has a related value + peers show a derivable ratio.\n"
-        "  Or city has KPI target + fleet size is knowable. Confidence: MEDIUM, range: +/-25-35%.\n"
+        "Method B (peer_city_proxy): Peer cities have resolved values for the same field.\n"
+        "  Ratio-scale from peers using city population, fleet size, or municipal employees.\n"
+        "  PREFER this over Method C when the \"Peer reference data\" section contains\n"
+        "  2+ resolved peer values for the target field.\n"
+        "  Example: If Munich (pop 1.5M) has 280 municipal vehicles and target city\n"
+        "  has pop 250K, estimate ≈ 280 × (250K/1.5M) = ~47, adjusted for local context.\n"
+        "  Confidence: MEDIUM, range: +/-25-35%.\n"
         "Method C (expert_heuristic_scaling): Use comparable same-country/region peer cities.\n"
         "  Minimum 3 same-country peers; if fewer, widen to same-GDP-tier (+/-30%). "
         "  Confidence: LOW, range: +/-40-50%.\n"
         "If none apply → mark as non-estimable (skip, do not estimate).\n\n"
         "RULES:\n"
+        "- When Peer reference data is provided, you MUST attempt Method B before falling\n"
+        "  back to Method C. Cite specific peer city values and scaling ratios used.\n"
         "- Never average across different asset types (separate reference pools).\n"
         "- Zero-data cities get a single summary record tagged VERY_LOW.\n"
         "- Every estimate MUST be a range (low/mid/high), never a point estimate.\n"
@@ -331,6 +344,42 @@ def _build_system_prompt(pass_name: str) -> str:
     return base
 
 
+def _build_context_summary(context_bundle: dict[str, Any]) -> dict[str, Any]:
+    """Extract a lightweight data summary from the context bundle for estimation.
+
+    The full context bundle can be 100K+ tokens (all markdown excerpts, SQL
+    results, retrieval metadata).  The estimator only needs a small fraction
+    of that — mainly data values and city metadata.
+    """
+    summary: dict[str, Any] = {}
+
+    for key in ("research_question", "original_question", "analysis_mode", "query_mode"):
+        if key in context_bundle:
+            summary[key] = context_bundle[key]
+
+    # SQL data: keep query intents and result rows, drop raw SQL text
+    sql_data = context_bundle.get("sql")
+    if isinstance(sql_data, dict):
+        condensed: list[dict[str, object]] = []
+        for q in sql_data.get("queries", []):
+            if isinstance(q, dict) and q.get("results"):
+                condensed.append({
+                    "intent": q.get("intent", ""),
+                    "results": q.get("results"),
+                })
+        if condensed:
+            summary["sql_data"] = condensed
+
+    # Markdown: city list + excerpt count — never the full excerpt text
+    markdown = context_bundle.get("markdown")
+    if isinstance(markdown, dict):
+        summary["cities_inspected"] = markdown.get("inspected_city_names", [])
+        summary["cities_selected"] = markdown.get("selected_city_names", [])
+        summary["excerpt_count"] = markdown.get("excerpt_count", 0)
+
+    return summary
+
+
 def _build_user_prompt(
     question: str,
     context_bundle: dict[str, Any],
@@ -338,8 +387,10 @@ def _build_user_prompt(
     estimable_fields: list[EnrichedField],
     pass_name: str,
     prior_estimates: list[AssumptionRecord] | None = None,
+    peer_reference: dict[str, list[dict[str, object]]] | None = None,
 ) -> str:
-    context_json = json.dumps(context_bundle, ensure_ascii=True, indent=2, default=str)
+    summary = _build_context_summary(context_bundle)
+    summary_json = json.dumps(summary, ensure_ascii=False, indent=2, default=str)
     gap_json = json.dumps(gap_manifest.model_dump(mode="json"), indent=2, default=str)
     fields_json = json.dumps(
         [f.model_dump(mode="json") for f in estimable_fields],
@@ -351,8 +402,28 @@ def _build_user_prompt(
         f"User question:\n{question.strip()}\n",
         f"Gap manifest:\n```json\n{gap_json}\n```\n",
         f"Fields needing estimation ({len(estimable_fields)}):\n```json\n{fields_json}\n```\n",
-        f"Context bundle:\n```json\n{context_json}\n```\n",
     ]
+
+    # Insert peer reference data prominently before the context summary
+    if peer_reference:
+        lines = [
+            "Peer reference data (resolved values from other cities for each target field):"
+        ]
+        for field_name, peers in peer_reference.items():
+            peer_strs = [
+                f"  {p['city']}: {p['value']} ({p['source']})" for p in peers
+            ]
+            lines.append(f"- {field_name}:")
+            lines.extend(peer_strs)
+        lines.append("")
+        lines.append(
+            "Use these as peer benchmarks for Method B (peer_city_proxy). "
+            "Ratio-scale by city population or municipal fleet size rather than "
+            "using flat benchmarks."
+        )
+        parts.append("\n".join(lines) + "\n")
+
+    parts.append(f"Data summary:\n```json\n{summary_json}\n```\n")
 
     if pass_name == "critique" and prior_estimates:
         prior_json = json.dumps(
@@ -373,6 +444,28 @@ def _build_user_prompt(
         )
 
     return "\n".join(parts)
+
+
+def _build_peer_reference_table(
+    all_enriched: list[EnrichedField],
+    estimable_fields: list[EnrichedField],
+) -> dict[str, list[dict[str, object]]]:
+    """Extract resolved peer values for each field needing estimation."""
+    fields_needing_estimation = {f.field for f in estimable_fields}
+
+    table: dict[str, list[dict[str, object]]] = {}
+    for ef in all_enriched:
+        if (
+            ef.field in fields_needing_estimation
+            and ef.status == "resolved"
+            and ef.value is not None
+        ):
+            table.setdefault(ef.field, []).append({
+                "city": ef.city,
+                "value": ef.value,
+                "source": ef.source,
+            })
+    return table
 
 
 def _check_saturation(assumptions: list[AssumptionRecord]) -> str | None:
