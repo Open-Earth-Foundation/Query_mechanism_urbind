@@ -61,6 +61,33 @@ def _write_success_artifacts(question: str, run_id: str, config: AppConfig) -> R
     return paths
 
 
+def _write_run_listing_artifact(
+    runs_dir: Path,
+    *,
+    run_id: str,
+    started_at: datetime,
+    question: str | None,
+    inputs: dict[str, object] | None = None,
+) -> None:
+    """Persist the minimal run.json payload needed by run-list endpoint tests."""
+    run_dir = runs_dir / run_id
+    run_dir.mkdir(parents=True, exist_ok=True)
+    payload: dict[str, object] = {
+        "run_id": run_id,
+        "status": "completed",
+        "started_at": started_at.isoformat(),
+        "completed_at": started_at.isoformat(),
+    }
+    if question is not None:
+        payload["question"] = question
+    if inputs is not None:
+        payload["inputs"] = inputs
+    (run_dir / "run.json").write_text(
+        json.dumps(payload, ensure_ascii=True, indent=2),
+        encoding="utf-8",
+    )
+
+
 def _write_config_file(path: Path, config: AppConfig) -> None:
     """Persist one test config as JSON-compatible YAML."""
     path.write_text(
@@ -916,6 +943,131 @@ def test_api_list_runs_reads_question_from_legacy_inputs_when_root_question_miss
             payload["runs"][0]["question"]
             == "Question sourced from inputs.initial_question"
         )
+
+
+def test_api_list_runs_returns_picker_timestamp(tmp_path: Path) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    started_at = datetime(2026, 3, 12, 19, 54, tzinfo=timezone.utc)
+    _write_run_listing_artifact(
+        runs_dir,
+        run_id="run-picker-time",
+        started_at=started_at,
+        question="Timestamped picker run",
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get("/api/v1/runs")
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["total"] == 1
+        assert payload["runs"][0]["picker_timestamp"] == "0312-1954"
+
+
+def test_api_list_runs_search_matches_selected_city_with_typo_tolerance(
+    tmp_path: Path,
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    _write_run_listing_artifact(
+        runs_dir,
+        run_id="run-leipzig",
+        started_at=datetime(2026, 3, 12, 19, 54, tzinfo=timezone.utc),
+        question="Charging rollout summary",
+        inputs={
+            "selected_cities_planned": [],
+            "selected_cities_found": ["leipzig"],
+        },
+    )
+    _write_run_listing_artifact(
+        runs_dir,
+        run_id="run-berlin",
+        started_at=datetime(2026, 3, 13, 8, 30, tzinfo=timezone.utc),
+        question="Charging rollout summary",
+        inputs={
+            "selected_cities_planned": [],
+            "selected_cities_found": ["berlin"],
+        },
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get("/api/v1/runs?search=leipzing")
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["total"] == 1
+        assert [item["run_id"] for item in payload["runs"]] == ["run-leipzig"]
+
+
+def test_api_list_runs_search_ranks_exact_question_phrase_before_token_match(
+    tmp_path: Path,
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    _write_run_listing_artifact(
+        runs_dir,
+        run_id="run-token-match",
+        started_at=datetime(2026, 3, 13, 9, 30, tzinfo=timezone.utc),
+        question="Buses electric financing options",
+    )
+    _write_run_listing_artifact(
+        runs_dir,
+        run_id="run-exact-phrase",
+        started_at=datetime(2026, 3, 12, 9, 30, tzinfo=timezone.utc),
+        question="Electric buses financing options",
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get("/api/v1/runs?search=electric+buses")
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["total"] == 2
+        assert [item["run_id"] for item in payload["runs"]] == [
+            "run-exact-phrase",
+            "run-token-match",
+        ]
+
+
+def test_api_list_runs_search_numeric_fragment_matches_run_id_or_question_only(
+    tmp_path: Path,
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    _write_run_listing_artifact(
+        runs_dir,
+        run_id="20260326_1506",
+        started_at=datetime(2026, 3, 26, 15, 6, tzinfo=timezone.utc),
+        question="What initiatives exist for Munich?",
+    )
+    _write_run_listing_artifact(
+        runs_dir,
+        run_id="20260326_1511",
+        started_at=datetime(2026, 3, 26, 15, 11, tzinfo=timezone.utc),
+        question="What changed in project 1506 this quarter?",
+    )
+    _write_run_listing_artifact(
+        runs_dir,
+        run_id="gpt54mini-retrofit_rerun_dev-run3",
+        started_at=datetime(2026, 3, 27, 9, 0, tzinfo=timezone.utc),
+        question="What are the strongest retrofit initiatives in Munich?",
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get("/api/v1/runs?search=1506")
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["total"] == 2
+        assert [item["run_id"] for item in payload["runs"]] == [
+            "20260326_1506",
+            "20260326_1511",
+        ]
 
 
 def test_api_output_and_context_resolve_stale_container_artifact_paths(

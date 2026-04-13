@@ -28,6 +28,7 @@ from backend.api.services.reference_artifacts import (
     build_reference_item,
     load_reference_records,
 )
+from backend.api.services.run_picker import list_run_picker_entries
 from backend.api.services.run_executor import RunExecutor, StartRunCommand
 from backend.api.services.run_store import (
     DuplicateRunIdError,
@@ -183,16 +184,27 @@ def create_run(
 
 
 @router.get("/runs", response_model=RunListResponse)
-def list_runs(request: Request) -> RunListResponse:
-    """List runs with run_id and original question."""
+def list_runs(
+    request: Request,
+    search: str | None = Query(
+        default=None,
+        description=(
+            "Optional picker search text matched against run id, compact picker "
+            "date/time, question text, and selected city names."
+        ),
+    ),
+) -> RunListResponse:
+    """List runs for the picker with compact timestamps and optional search."""
     run_store = _get_run_store(request)
     records = run_store.list_runs()
+    entries = list_run_picker_entries(records, search=search)
     runs = [
         RunSummary(
-            run_id=record.run_id,
-            question=record.question,
+            run_id=entry.run_id,
+            question=entry.question,
+            picker_timestamp=entry.picker_timestamp,
         )
-        for record in records
+        for entry in entries
     ]
     return RunListResponse(runs=runs, total=len(runs))
 
