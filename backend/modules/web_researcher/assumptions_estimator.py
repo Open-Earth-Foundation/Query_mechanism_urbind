@@ -42,6 +42,7 @@ def run_assumptions_estimator(
     api_key: str,
     progress: ProgressTracker | None = None,
     national_benchmarks: list[WebFinding] | None = None,
+    comparative_data: list[WebFinding] | None = None,
 ) -> tuple[list[AssumptionRecord], list[NonEstimableRecord], str | None]:
     """Estimate values for remaining data gaps using a priority ladder.
 
@@ -162,6 +163,7 @@ def run_assumptions_estimator(
         pass_name="generate",
         peer_reference=peer_reference,
         national_benchmarks=national_benchmarks,
+        comparative_data=comparative_data,
     )
 
     if progress and assumptions:
@@ -210,6 +212,7 @@ def run_assumptions_estimator(
             prior_estimates=assumptions,
             peer_reference=peer_reference,
             national_benchmarks=national_benchmarks,
+            comparative_data=comparative_data,
         )
         if revised:
             assumptions = revised
@@ -259,6 +262,7 @@ def _call_estimator(
     prior_estimates: list[AssumptionRecord] | None = None,
     peer_reference: dict[str, list[dict[str, object]]] | None = None,
     national_benchmarks: list[WebFinding] | None = None,
+    comparative_data: list[WebFinding] | None = None,
 ) -> list[AssumptionRecord]:
     """Make a single LLM call for estimation or critique."""
     model = config.enrichment.assumptions_estimator_model or config.enrichment.model
@@ -278,6 +282,7 @@ def _call_estimator(
         prior_estimates=prior_estimates,
         peer_reference=peer_reference,
         national_benchmarks=national_benchmarks,
+        comparative_data=comparative_data,
     )
 
     request_kwargs: dict[str, object] = {
@@ -334,7 +339,9 @@ def _build_system_prompt(pass_name: str) -> str:
         "  has pop 250K, estimate ≈ 280 × (250K/1.5M) = ~47, adjusted for local context.\n"
         "  Confidence: MEDIUM, range: +/-25-35%.\n"
         "Method C (expert_heuristic_scaling): Use comparable same-country/region peer cities.\n"
-        "  Minimum 3 same-country peers; if fewer, widen to same-GDP-tier (+/-30%). "
+        "  Use cross-country comparative data from the 'Cross-country comparative data' section\n"
+        "  when available. These are retrieved from real web searches.\n"
+        "  Minimum 3 same-country peers; if fewer, widen to same-GDP-tier (+/-30%).\n"
         "  Confidence: LOW, range: +/-40-50%.\n"
         "If none apply → mark as non-estimable (skip, do not estimate).\n\n"
         "RULES:\n"
@@ -468,6 +475,45 @@ def _format_national_benchmarks(
     return "\n".join(lines) + "\n"
 
 
+def _format_comparative_data(
+    comparative_data: list[WebFinding] | None,
+) -> str:
+    """Format cross-country comparative findings into a prompt section.
+
+    Returns an empty string if no comparative data is available.
+    """
+    if not comparative_data:
+        return ""
+
+    lines = ["Cross-country comparative data (retrieved from web search):"]
+    for finding in comparative_data:
+        val = f"{finding.value} {finding.unit}" if finding.unit else str(finding.value)
+        date_part = f", {finding.source_date}" if finding.source_date else ""
+        conf = finding.extraction_confidence
+        lines.append(
+            f"- {finding.field}: {finding.city} = {val} "
+            f"({finding.source_type}{date_part}) [conf: {conf}]"
+        )
+
+    lines.append("")
+    lines.append(
+        "USE for Method C when:\n"
+        "- Fewer than 3 same-country peers available, need cross-border comparison\n"
+        "- Scaling by per-capita or per-fleet-size ratios from international benchmarks\n"
+        "- Cite the specific report and normalized figure used"
+    )
+    lines.append("")
+    lines.append(
+        "DO NOT use when:\n"
+        "- Same-country peer data is available (prefer Method B)\n"
+        "- National benchmarks apply (prefer Method A)\n"
+        "- The field is not meaningfully comparable across countries\n"
+        "  (e.g. regulatory-specific costs, local subsidy structures)"
+    )
+
+    return "\n".join(lines) + "\n"
+
+
 def _build_user_prompt(
     question: str,
     context_bundle: dict[str, Any],
@@ -477,6 +523,7 @@ def _build_user_prompt(
     prior_estimates: list[AssumptionRecord] | None = None,
     peer_reference: dict[str, list[dict[str, object]]] | None = None,
     national_benchmarks: list[WebFinding] | None = None,
+    comparative_data: list[WebFinding] | None = None,
 ) -> str:
     summary = _build_context_summary(context_bundle)
     summary_json = json.dumps(summary, ensure_ascii=False, indent=2, default=str)
@@ -516,6 +563,11 @@ def _build_user_prompt(
     benchmarks_section = _format_national_benchmarks(national_benchmarks)
     if benchmarks_section:
         parts.append(benchmarks_section)
+
+    # Insert cross-country comparative data (between national benchmarks and data summary)
+    comparative_section = _format_comparative_data(comparative_data)
+    if comparative_section:
+        parts.append(comparative_section)
 
     parts.append(f"Data summary:\n```json\n{summary_json}\n```\n")
 

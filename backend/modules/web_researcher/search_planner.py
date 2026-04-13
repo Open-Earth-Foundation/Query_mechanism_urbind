@@ -221,10 +221,22 @@ def plan_searches(
     batches.extend(national_batches)
     total_queries += national_query_count
 
+    # Cross-country comparative batches for Method C grounding
+    comparative_batches, comparative_query_count = _plan_comparative_batches(
+        gap_manifest=gap_manifest,
+        region_gaps=region_gaps,
+        config=config,
+        api_key=api_key,
+        remaining_budget=max_total - total_queries,
+    )
+    batches.extend(comparative_batches)
+    total_queries += comparative_query_count
+
     logger.info(
-        "Search planner: %d batches (%d national), %d total queries across %d regions.",
+        "Search planner: %d batches (%d national, %d comparative), %d total queries across %d regions.",
         len(batches),
         len(national_batches),
+        len(comparative_batches),
         total_queries,
         len(region_gaps),
     )
@@ -541,6 +553,139 @@ def _formulate_national_benchmark_queries(
 
     except Exception:
         logger.warning("National benchmark query formulation failed.", exc_info=True)
+        return []
+
+
+def _plan_comparative_batches(
+    gap_manifest: GapManifest,
+    region_gaps: dict[str, list[dict[str, Any]]],
+    config: AppConfig,
+    api_key: str,
+    remaining_budget: int,
+) -> tuple[list[SearchBatch], int]:
+    """Generate cross-country comparative search batches for Method C grounding.
+
+    Groups estimable fields by category, then generates 1-2 queries per category
+    targeting cross-country comparison reports and per-capita indices.
+
+    Returns (batches, total_query_count).
+    """
+    if remaining_budget <= 0:
+        return [], 0
+
+    estimable_fields = [
+        fc.field
+        for fc in gap_manifest.query_fields
+        if fc.classification != "non_estimable"
+    ]
+    if not estimable_fields:
+        return [], 0
+
+    field_categories = _categorize_fields(estimable_fields)
+    all_regions = list(region_gaps.keys())
+
+    batches: list[SearchBatch] = []
+    total_queries = 0
+
+    for category, cat_fields in field_categories.items():
+        if total_queries >= remaining_budget:
+            break
+
+        queries = _formulate_comparative_queries(
+            category=category,
+            target_fields=cat_fields,
+            regions=all_regions,
+            config=config,
+            api_key=api_key,
+        )
+
+        if not queries:
+            continue
+
+        remaining = remaining_budget - total_queries
+        queries = queries[:min(2, remaining)]  # cap at 2 per category
+        total_queries += len(queries)
+
+        batch_id = f"batch_comparative_{category}_{uuid.uuid4().hex[:8]}"
+        batches.append(SearchBatch(
+            batch_id=batch_id,
+            cities=["cross_country"],
+            target_fields=cat_fields,
+            search_type="comparative_benchmark",
+            queries=queries,
+            budget={"max_queries": 2, "deep_dive_allowed": False},
+            priority="medium",
+        ))
+
+    return batches, total_queries
+
+
+def _formulate_comparative_queries(
+    category: str,
+    target_fields: list[str],
+    regions: list[str],
+    config: AppConfig,
+    api_key: str,
+) -> list[str]:
+    """Use LLM to generate queries for cross-country comparison reports.
+
+    Targets international benchmarks, per-capita/per-fleet indices, and
+    publications from organizations like UITP, C40, ICLEI, Bloomberg NEF.
+    """
+    client = OpenAI(api_key=api_key, base_url=config.openrouter_base_url)
+
+    system_prompt = (
+        "You are a search query formulator for cross-country comparative data.\n"
+        "Generate concise Google search queries (4-10 words each) to find\n"
+        "cross-country comparison reports, per-capita indices, and per-fleet\n"
+        "benchmarks from international organizations.\n\n"
+        "RULES:\n"
+        "- Target international comparison reports, NOT single-country data.\n"
+        "- Look for publications from UITP, C40, ICLEI, Bloomberg NEF, IEA, OECD.\n"
+        "- Use terms like 'comparison', 'benchmark', 'per capita', 'per 100k inhabitants'.\n"
+        "- Include the field category context (e.g. fleet, infrastructure, costs, emissions).\n"
+        "- Generate at most 2 queries.\n\n"
+        "OUTPUT: Return a JSON array of query strings. Nothing else.\n"
+        'Example: ["European electric bus fleet comparison per capita UITP 2024", '
+        '"C40 cities charging infrastructure benchmark report"]\n'
+    )
+
+    user_prompt = (
+        f"Field category: {category}\n"
+        f"Fields in this category: {', '.join(target_fields)}\n"
+        f"Regions in this run: {', '.join(regions)}\n"
+        "\nGenerate 1-2 search queries for cross-country comparison reports "
+        "and per-capita/per-fleet benchmarks covering these fields.\n"
+    )
+
+    try:
+        request_kwargs: dict[str, object] = {
+            "model": config.enrichment.model,
+            "messages": [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt},
+            ],
+            "temperature": 0.0,
+        }
+        if config.enrichment.reasoning_effort is not None:
+            request_kwargs["reasoning_effort"] = config.enrichment.reasoning_effort
+
+        response = client.chat.completions.create(**request_kwargs)
+        if not response.choices:
+            return []
+
+        content = extract_message_text(response.choices[0].message.content)
+        candidate = extract_json_candidate(content)
+        parsed = json.loads(candidate)
+
+        if isinstance(parsed, list):
+            queries = [str(q).strip() for q in parsed if isinstance(q, str) and q.strip()]
+            return queries[:2]
+
+        return []
+
+    except Exception:
+        logger.warning("Comparative query formulation failed.", exc_info=True)
         return []
 
 

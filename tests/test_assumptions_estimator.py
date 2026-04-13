@@ -11,6 +11,7 @@ from backend.modules.web_researcher.assumptions_estimator import (
     _build_system_prompt,
     _build_user_prompt,
     _check_anchor_sufficiency,
+    _format_comparative_data,
     _format_national_benchmarks,
 )
 from backend.modules.web_researcher.models import (
@@ -469,3 +470,159 @@ class TestSystemPromptMethodA:
         prompt = _build_system_prompt("generate")
         assert "National/regional benchmarks" in prompt
         assert "retrieved from real web searches" in prompt
+
+
+# ---------------------------------------------------------------------------
+# _format_comparative_data
+# ---------------------------------------------------------------------------
+
+class TestFormatComparativeData:
+    def test_returns_empty_string_for_none(self):
+        assert _format_comparative_data(None) == ""
+
+    def test_returns_empty_string_for_empty_list(self):
+        assert _format_comparative_data([]) == ""
+
+    def test_formats_single_finding(self):
+        findings = [
+            _wf("cross_country", "ev_bus_count", 12.5, "per 100k inhabitants",
+                 source_type="industry_report", source_date="2023"),
+        ]
+        result = _format_comparative_data(findings)
+
+        assert "Cross-country comparative data" in result
+        assert "ev_bus_count" in result
+        assert "cross_country = 12.5 per 100k inhabitants" in result
+        assert "industry_report" in result
+        assert "2023" in result
+        assert "conf: 0.9" in result
+
+    def test_formats_multiple_findings(self):
+        findings = [
+            _wf("cross_country", "ev_bus_count", 12.5, "per 100k",
+                 source_type="industry_report", source_date="2023"),
+            _wf("cross_country", "charging_capacity_kw", 45, "kW/charger avg",
+                 source_type="industry_report", source_date="2024",
+                 extraction_confidence=0.8),
+        ]
+        result = _format_comparative_data(findings)
+
+        assert "ev_bus_count" in result
+        assert "charging_capacity_kw" in result
+        assert "conf: 0.8" in result
+
+    def test_includes_usage_guidance(self):
+        findings = [_wf("cross_country", "ev_bus_count", 12.5, "per 100k")]
+        result = _format_comparative_data(findings)
+
+        assert "USE for Method C when" in result
+        assert "DO NOT use when" in result
+        assert "cross-border comparison" in result
+        assert "prefer Method B" in result
+        assert "prefer Method A" in result
+
+    def test_handles_finding_without_unit(self):
+        findings = [_wf("cross_country", "fleet_ratio", 0.15)]
+        result = _format_comparative_data(findings)
+
+        assert "cross_country = 0.15" in result
+
+    def test_handles_finding_without_date(self):
+        findings = [_wf("cross_country", "ev_bus_count", 12.5, "per 100k", source_date=None)]
+        result = _format_comparative_data(findings)
+
+        assert "government_report)" in result
+        assert "government_report, " not in result
+
+
+# ---------------------------------------------------------------------------
+# _build_user_prompt — comparative data section
+# ---------------------------------------------------------------------------
+
+class TestUserPromptComparativeData:
+    def test_comparative_data_appears_in_prompt(self):
+        comparative = [
+            _wf("cross_country", "ev_bus_count", 12.5, "per 100k inhabitants",
+                 source_type="industry_report", source_date="2023"),
+        ]
+        prompt = _build_user_prompt(
+            question="How many electric buses?",
+            context_bundle={"key": "val"},
+            gap_manifest=_minimal_gap_manifest(["ev_bus_count"]),
+            estimable_fields=[_ef("Dresden", "ev_bus_count", "still_missing")],
+            pass_name="generate",
+            comparative_data=comparative,
+        )
+
+        assert "Cross-country comparative data" in prompt
+        assert "ev_bus_count" in prompt
+        assert "cross_country" in prompt
+
+    def test_no_section_when_comparative_none(self):
+        prompt = _build_user_prompt(
+            question="Q",
+            context_bundle={"key": "val"},
+            gap_manifest=_minimal_gap_manifest(["ev_bus_count"]),
+            estimable_fields=[_ef("Dresden", "ev_bus_count", "still_missing")],
+            pass_name="generate",
+            comparative_data=None,
+        )
+
+        assert "Cross-country comparative data" not in prompt
+
+    def test_no_section_when_comparative_empty(self):
+        prompt = _build_user_prompt(
+            question="Q",
+            context_bundle={"key": "val"},
+            gap_manifest=_minimal_gap_manifest(["ev_bus_count"]),
+            estimable_fields=[_ef("Dresden", "ev_bus_count", "still_missing")],
+            pass_name="generate",
+            comparative_data=[],
+        )
+
+        assert "Cross-country comparative data" not in prompt
+
+    def test_comparative_between_national_and_data_summary(self):
+        peer_ref = {
+            "ev_bus_count": [
+                {"city": "Munich", "value": 100, "source": "ccc"},
+                {"city": "Hamburg", "value": 150, "source": "ccc"},
+            ],
+        }
+        national = [
+            _wf("Germany", "ev_bus_count", 120, "units"),
+        ]
+        comparative = [
+            _wf("cross_country", "ev_bus_count", 12.5, "per 100k inhabitants"),
+        ]
+        prompt = _build_user_prompt(
+            question="Q",
+            context_bundle={"key": "val"},
+            gap_manifest=_minimal_gap_manifest(["ev_bus_count"]),
+            estimable_fields=[_ef("Dresden", "ev_bus_count", "still_missing")],
+            pass_name="generate",
+            peer_reference=peer_ref,
+            national_benchmarks=national,
+            comparative_data=comparative,
+        )
+
+        peer_pos = prompt.index("Peer reference data")
+        national_pos = prompt.index("National/regional benchmarks")
+        comparative_pos = prompt.index("Cross-country comparative data")
+        data_pos = prompt.index("Data summary")
+        assert peer_pos < national_pos < comparative_pos < data_pos
+
+
+# ---------------------------------------------------------------------------
+# _build_system_prompt — Method C references comparative section
+# ---------------------------------------------------------------------------
+
+class TestSystemPromptMethodC:
+    def test_method_c_references_comparative_section(self):
+        prompt = _build_system_prompt("generate")
+        assert "Cross-country comparative data" in prompt
+        assert "retrieved from real web searches" in prompt
+
+    def test_method_c_in_critique_pass(self):
+        prompt = _build_system_prompt("critique")
+        assert "Cross-country comparative data" in prompt

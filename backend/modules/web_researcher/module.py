@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import logging
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Any
 
@@ -108,6 +109,7 @@ def run_enrichment_pipeline(
         web_findings = []
         freshness_results = []
         national_findings = []
+        comparative_findings = []
 
         # Steps 6-8: Web Research (only if enabled AND gaps found)
         if config.enrichment.web_research_enabled and gap_manifest.city_gaps:
@@ -124,25 +126,56 @@ def run_enrichment_pipeline(
                     f"{len(search_batches)} batches, {total_queries} queries planned",
                 )
                 progress.add_item("web_research", "Executing searches...")
-            # Split city-specific vs national benchmark batches
-            city_batches = [b for b in search_batches if b.search_type != "national_benchmark"]
+            # Split city-specific vs national vs comparative benchmark batches
+            city_batches = [b for b in search_batches if b.search_type not in ("national_benchmark", "comparative_benchmark")]
             national_batches = [b for b in search_batches if b.search_type == "national_benchmark"]
+            comparative_batches = [b for b in search_batches if b.search_type == "comparative_benchmark"]
 
-            # Step 6 cont: Search Workers → execute queries, scrape, extract
+            # Step 6 cont: Search Workers → execute all batch types in parallel
             national_findings = []
+            comparative_findings = []
+
+            batch_groups = {}
             if city_batches:
-                web_findings = execute_search_batches(
-                    city_batches, config, api_key, progress=progress,
-                )
+                batch_groups["city"] = city_batches
             if national_batches:
-                national_findings = execute_search_batches(
-                    national_batches, config, api_key, progress=progress,
-                )
-                if progress and national_findings:
-                    progress.add_item(
-                        "web_research",
-                        f"{len(national_findings)} national benchmark findings",
-                    )
+                batch_groups["national"] = national_batches
+            if comparative_batches:
+                batch_groups["comparative"] = comparative_batches
+
+            if batch_groups:
+                with ThreadPoolExecutor(max_workers=len(batch_groups)) as pool:
+                    futures = {
+                        pool.submit(
+                            execute_search_batches, batches, config, api_key, progress,
+                        ): label
+                        for label, batches in batch_groups.items()
+                    }
+                    for future in as_completed(futures):
+                        label = futures[future]
+                        try:
+                            findings = future.result()
+                        except Exception:
+                            logger.warning(
+                                "Batch group %s failed.", label, exc_info=True,
+                            )
+                            continue
+                        if label == "city":
+                            web_findings = findings
+                        elif label == "national":
+                            national_findings = findings
+                            if progress and national_findings:
+                                progress.add_item(
+                                    "web_research",
+                                    f"{len(national_findings)} national benchmark findings",
+                                )
+                        elif label == "comparative":
+                            comparative_findings = findings
+                            if progress and comparative_findings:
+                                progress.add_item(
+                                    "web_research",
+                                    f"{len(comparative_findings)} comparative benchmark findings",
+                                )
 
             if search_batches:
                 # Step 7: Freshness Checker → compare web vs CCC
@@ -199,6 +232,7 @@ def run_enrichment_pipeline(
             api_key=api_key,
             progress=progress,
             national_benchmarks=national_findings or None,
+            comparative_data=comparative_findings or None,
         )
 
         if progress:

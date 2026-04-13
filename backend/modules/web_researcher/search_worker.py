@@ -53,10 +53,10 @@ def execute_search_batch(
             if not results:
                 continue
 
-            # Step 2: Relevance check (skip for national benchmarks —
+            # Step 2: Relevance check (skip for national/comparative benchmarks —
             # they don't target specific cities so entity disambiguation
             # would incorrectly reject them)
-            if batch.search_type == "national_benchmark":
+            if batch.search_type in ("national_benchmark", "comparative_benchmark"):
                 checked = [(r, True) for r in results]
             else:
                 checked = check_relevance_batch(

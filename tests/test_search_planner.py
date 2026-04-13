@@ -16,8 +16,10 @@ from backend.modules.web_researcher.models import (
 from backend.modules.web_researcher.search_planner import (
     _categorize_fields,
     _compute_budget,
+    _formulate_comparative_queries,
     _formulate_national_benchmark_queries,
     _get_source_hints,
+    _plan_comparative_batches,
     _plan_national_benchmark_batches,
     plan_searches,
 )
@@ -327,8 +329,8 @@ class TestPlanSearches:
 
         batches = plan_searches(manifest, config, "test-key")
 
-        # Filter to city-specific batches (exclude national benchmark batches)
-        city_batches = [b for b in batches if b.search_type != "national_benchmark"]
+        # Filter to city-specific batches (exclude national/comparative benchmark batches)
+        city_batches = [b for b in batches if b.search_type not in ("national_benchmark", "comparative_benchmark")]
         assert len(city_batches) == 1
         # batch_id should be: batch_{region}_{category}_{hex}
         parts = city_batches[0].batch_id.split("_")
@@ -496,3 +498,244 @@ class TestPlanNationalBenchmarkBatches:
 
         assert batches == []
         assert count == 0
+
+
+# ---------------------------------------------------------------------------
+# _plan_comparative_batches
+# ---------------------------------------------------------------------------
+
+class TestPlanComparativeBatches:
+    @patch("backend.modules.web_researcher.search_planner.OpenAI")
+    def test_generates_batches_per_field_category(self, mock_openai_cls):
+        mock_client = MagicMock()
+        mock_openai_cls.return_value = mock_client
+        mock_client.chat.completions.create.return_value = _mock_openai_response(
+            '["European electric bus fleet comparison UITP 2024"]'
+        )
+
+        config = _make_config()
+        gap_manifest = GapManifest(
+            query_fields=[
+                FieldClassification(
+                    field="ev_bus_count",
+                    classification="estimable_numerical",
+                    searchable=True,
+                    rationale="test",
+                ),
+                FieldClassification(
+                    field="tram_fleet_total",
+                    classification="estimable_numerical",
+                    searchable=True,
+                    rationale="test",
+                ),
+                FieldClassification(
+                    field="total_capex_eur",
+                    classification="estimable_numerical",
+                    searchable=True,
+                    rationale="test",
+                ),
+                FieldClassification(
+                    field="opex_per_km",
+                    classification="estimable_numerical",
+                    searchable=True,
+                    rationale="test",
+                ),
+            ],
+            city_gaps=[],
+            non_estimable_fields=[],
+        )
+        region_gaps = {"dach": [{"city": "Dresden"}], "nordics": [{"city": "Helsinki"}]}
+
+        batches, count = _plan_comparative_batches(
+            gap_manifest=gap_manifest,
+            region_gaps=region_gaps,
+            config=config,
+            api_key="test-key",
+            remaining_budget=20,
+        )
+
+        # Should have one batch per category (fleet_vehicle, financial)
+        assert len(batches) == 2
+        for b in batches:
+            assert b.search_type == "comparative_benchmark"
+            assert b.cities == ["cross_country"]
+            assert b.budget["deep_dive_allowed"] is False
+            assert "comparative" in b.batch_id
+
+    @patch("backend.modules.web_researcher.search_planner.OpenAI")
+    def test_caps_at_2_queries_per_category(self, mock_openai_cls):
+        mock_client = MagicMock()
+        mock_openai_cls.return_value = mock_client
+        # LLM returns 3 queries but should be capped at 2
+        mock_client.chat.completions.create.return_value = _mock_openai_response(
+            '["q1", "q2", "q3"]'
+        )
+
+        config = _make_config()
+        gap_manifest = GapManifest(
+            query_fields=[
+                FieldClassification(
+                    field="ev_bus_count",
+                    classification="estimable_numerical",
+                    searchable=True,
+                    rationale="test",
+                ),
+                FieldClassification(
+                    field="tram_fleet_total",
+                    classification="estimable_numerical",
+                    searchable=True,
+                    rationale="test",
+                ),
+            ],
+            city_gaps=[],
+            non_estimable_fields=[],
+        )
+
+        batches, count = _plan_comparative_batches(
+            gap_manifest=gap_manifest,
+            region_gaps={"dach": [{"city": "Dresden"}]},
+            config=config,
+            api_key="test-key",
+            remaining_budget=20,
+        )
+
+        assert len(batches) == 1
+        assert len(batches[0].queries) <= 2
+        assert count <= 2
+
+    @patch("backend.modules.web_researcher.search_planner.OpenAI")
+    def test_respects_remaining_budget(self, mock_openai_cls):
+        mock_client = MagicMock()
+        mock_openai_cls.return_value = mock_client
+        mock_client.chat.completions.create.return_value = _mock_openai_response(
+            '["q1", "q2"]'
+        )
+
+        config = _make_config()
+        gap_manifest = GapManifest(
+            query_fields=[
+                FieldClassification(
+                    field="ev_bus_count",
+                    classification="estimable_numerical",
+                    searchable=True,
+                    rationale="test",
+                ),
+                FieldClassification(
+                    field="tram_fleet_total",
+                    classification="estimable_numerical",
+                    searchable=True,
+                    rationale="test",
+                ),
+            ],
+            city_gaps=[],
+            non_estimable_fields=[],
+        )
+
+        batches, count = _plan_comparative_batches(
+            gap_manifest=gap_manifest,
+            region_gaps={"dach": [{"city": "Dresden"}]},
+            config=config,
+            api_key="test-key",
+            remaining_budget=1,
+        )
+
+        assert count <= 1
+
+    def test_returns_empty_when_no_budget(self):
+        gap_manifest = GapManifest(
+            query_fields=[
+                FieldClassification(
+                    field="ev_bus_count",
+                    classification="estimable_numerical",
+                    searchable=True,
+                    rationale="test",
+                ),
+            ],
+            city_gaps=[],
+            non_estimable_fields=[],
+        )
+
+        batches, count = _plan_comparative_batches(
+            gap_manifest=gap_manifest,
+            region_gaps={"r": [{"city": "C"}]},
+            config=_make_config(),
+            api_key="test-key",
+            remaining_budget=0,
+        )
+
+        assert batches == []
+        assert count == 0
+
+    def test_returns_empty_when_all_non_estimable(self):
+        gap_manifest = GapManifest(
+            query_fields=[
+                FieldClassification(
+                    field="operator_name",
+                    classification="non_estimable",
+                    searchable=False,
+                    rationale="qualitative",
+                ),
+            ],
+            city_gaps=[],
+            non_estimable_fields=["operator_name"],
+        )
+
+        batches, count = _plan_comparative_batches(
+            gap_manifest=gap_manifest,
+            region_gaps={"r": [{"city": "C"}]},
+            config=_make_config(),
+            api_key="test-key",
+            remaining_budget=10,
+        )
+
+        assert batches == []
+        assert count == 0
+
+    @patch("backend.modules.web_researcher.search_planner._load_city_groups")
+    @patch("backend.modules.web_researcher.search_planner.OpenAI")
+    def test_plan_searches_includes_comparative_batches(
+        self, mock_openai_cls, mock_city_groups,
+    ):
+        mock_city_groups.return_value = []
+        mock_client = MagicMock()
+        mock_openai_cls.return_value = mock_client
+        # city queries, national queries, comparative queries
+        mock_client.chat.completions.create.side_effect = [
+            _mock_openai_response('["Dresden fleet register 2025"]'),
+            _mock_openai_response('["Germany electric bus unit cost 2024"]'),
+            _mock_openai_response('["European electric bus fleet comparison UITP"]'),
+        ]
+
+        config = _make_config(max_queries_per_batch=25, max_total_queries_per_run=100)
+        manifest = GapManifest(
+            query_fields=[
+                FieldClassification(
+                    field="ev_fleet_count",
+                    classification="estimable_numerical",
+                    searchable=True,
+                    rationale="test",
+                ),
+                FieldClassification(
+                    field="bus_count_electric",
+                    classification="estimable_numerical",
+                    searchable=True,
+                    rationale="test",
+                ),
+            ],
+            city_gaps=[
+                CityGap(
+                    city="Dresden",
+                    blank_fields=["ev_fleet_count", "bus_count_electric"],
+                    stale_flags=[],
+                    search_priority="high",
+                ),
+            ],
+            non_estimable_fields=[],
+        )
+
+        batches = plan_searches(manifest, config, "test-key")
+
+        comparative = [b for b in batches if b.search_type == "comparative_benchmark"]
+        assert len(comparative) >= 1
+        assert comparative[0].cities == ["cross_country"]
+        assert "comparative" in comparative[0].batch_id
