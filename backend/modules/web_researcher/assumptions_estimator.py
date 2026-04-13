@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import logging
+from collections import defaultdict
 from typing import Any
 
 from openai import OpenAI
@@ -13,6 +14,7 @@ from backend.modules.web_researcher.models import (
     EnrichedField,
     GapManifest,
     NonEstimableRecord,
+    WebFinding,
     _AssumptionsEnvelope,
 )
 from backend.modules.web_researcher.utils.json_helpers import (
@@ -25,6 +27,10 @@ from backend.utils.config import AppConfig
 logger = logging.getLogger(__name__)
 
 _METHOD_C_SATURATION_THRESHOLD = 0.60
+_MIN_PEER_ANCHORS_METHOD_B = 2
+_MIN_PEER_ANCHORS_METHOD_C = 3
+_MIN_PEER_CONFIDENCE = 0.7
+_MIN_AUTHORITATIVE_CONFIDENCE = 0.8
 
 
 def run_assumptions_estimator(
@@ -35,6 +41,7 @@ def run_assumptions_estimator(
     config: AppConfig,
     api_key: str,
     progress: ProgressTracker | None = None,
+    national_benchmarks: list[WebFinding] | None = None,
 ) -> tuple[list[AssumptionRecord], list[NonEstimableRecord], str | None]:
     """Estimate values for remaining data gaps using a priority ladder.
 
@@ -107,6 +114,37 @@ def run_assumptions_estimator(
         )
         return [], non_estimable_records, None
 
+    # Build peer reference once — used for anchor check and both LLM passes
+    peer_reference = _build_peer_reference_table(enriched_fields, estimable_fields)
+
+    # Anchor sufficiency: fields with too few peer values can't use Method B
+    # and are unlikely to produce reliable estimates.
+    estimable_fields, insufficient_records = _check_anchor_sufficiency(
+        peer_reference, estimable_fields,
+    )
+    non_estimable_records.extend(insufficient_records)
+
+    if progress and insufficient_records:
+        # Group by field so progress doesn't list every city×field pair
+        _insuf_by_field: dict[str, list[str]] = defaultdict(list)
+        for nr in insufficient_records:
+            _insuf_by_field[nr.field_name].append(nr.city)
+        for field_name, cities in _insuf_by_field.items():
+            city_list = ", ".join(cities)
+            progress.add_item(
+                "assumptions",
+                f"{field_name} — insufficient anchors ({len(cities)} cities: {city_list})",
+                item_type="field",
+                title=field_name,
+                metadata={"status": "insufficient_anchors", "cities": cities},
+            )
+
+    if not estimable_fields:
+        logger.info(
+            "Assumptions estimator: all remaining gaps have insufficient anchors.",
+        )
+        return [], non_estimable_records, None
+
     # Pass 1: generate estimates
     if progress:
         progress.add_item(
@@ -122,6 +160,8 @@ def run_assumptions_estimator(
         config=config,
         api_key=api_key,
         pass_name="generate",
+        peer_reference=peer_reference,
+        national_benchmarks=national_benchmarks,
     )
 
     if progress and assumptions:
@@ -168,6 +208,8 @@ def run_assumptions_estimator(
             api_key=api_key,
             pass_name="critique",
             prior_estimates=assumptions,
+            peer_reference=peer_reference,
+            national_benchmarks=national_benchmarks,
         )
         if revised:
             assumptions = revised
@@ -215,12 +257,15 @@ def _call_estimator(
     api_key: str,
     pass_name: str,
     prior_estimates: list[AssumptionRecord] | None = None,
+    peer_reference: dict[str, list[dict[str, object]]] | None = None,
+    national_benchmarks: list[WebFinding] | None = None,
 ) -> list[AssumptionRecord]:
     """Make a single LLM call for estimation or critique."""
     model = config.enrichment.assumptions_estimator_model or config.enrichment.model
     temperature = config.enrichment.assumptions_estimator_temperature
 
-    peer_reference = _build_peer_reference_table(all_enriched_fields, estimable_fields)
+    if peer_reference is None:
+        peer_reference = _build_peer_reference_table(all_enriched_fields, estimable_fields)
 
     client = OpenAI(api_key=api_key, base_url=config.openrouter_base_url)
     system_prompt = _build_system_prompt(pass_name)
@@ -232,6 +277,7 @@ def _call_estimator(
         pass_name=pass_name,
         prior_estimates=prior_estimates,
         peer_reference=peer_reference,
+        national_benchmarks=national_benchmarks,
     )
 
     request_kwargs: dict[str, object] = {
@@ -277,7 +323,9 @@ def _build_system_prompt(pass_name: str) -> str:
         "You produce model-estimated values for missing data fields using a strict priority ladder.\n\n"
         "PRIORITY LADDER (apply in order — use the first method that applies):\n"
         "Method A (national_regional_average): City has the quantity but missing unit cost.\n"
-        "  Use national/regional average unit costs. Confidence: HIGH, range: +/-15-20%.\n"
+        "  Use national/regional benchmarks from the 'National/regional benchmarks' section\n"
+        "  when available. These are retrieved from real web searches, not training data.\n"
+        "  Confidence: HIGH, range: +/-15-20%.\n"
         "Method B (peer_city_proxy): Peer cities have resolved values for the same field.\n"
         "  Ratio-scale from peers using city population, fleet size, or municipal employees.\n"
         "  PREFER this over Method C when the \"Peer reference data\" section contains\n"
@@ -380,6 +428,46 @@ def _build_context_summary(context_bundle: dict[str, Any]) -> dict[str, Any]:
     return summary
 
 
+def _format_national_benchmarks(
+    national_benchmarks: list[WebFinding] | None,
+) -> str:
+    """Format national/regional benchmark findings into a prompt section.
+
+    Returns an empty string if no benchmarks are available.
+    """
+    if not national_benchmarks:
+        return ""
+
+    lines = ["National/regional benchmarks (retrieved from web search):"]
+    for finding in national_benchmarks:
+        val = f"{finding.value} {finding.unit}" if finding.unit else str(finding.value)
+        date_part = f", {finding.source_date}" if finding.source_date else ""
+        conf = finding.extraction_confidence
+        lines.append(
+            f"- {finding.field}: {finding.city} avg = {val} "
+            f"({finding.source_type}{date_part}) [conf: {conf}]"
+        )
+
+    lines.append("")
+    lines.append(
+        "USE for Method A when:\n"
+        "- The city reports a quantity (e.g. fleet size) but is missing the unit cost\n"
+        "- Example: Dresden has 120 electric buses (CCC) but no procurement cost\n"
+        "  → Estimate: 120 × benchmark unit cost = total (±15-20%, HIGH confidence)"
+    )
+    lines.append("")
+    lines.append(
+        "DO NOT use when:\n"
+        "- The field is qualitative or city-specific (operator names, policy terms)\n"
+        "- The city has unusual local conditions that make national averages misleading\n"
+        "  (e.g. island logistics, extreme climate adaptation costs)\n"
+        "- Better peer city data exists in the 'Peer reference data' section\n"
+        "  (prefer Method B with exact peer values over Method A with averages)"
+    )
+
+    return "\n".join(lines) + "\n"
+
+
 def _build_user_prompt(
     question: str,
     context_bundle: dict[str, Any],
@@ -388,6 +476,7 @@ def _build_user_prompt(
     pass_name: str,
     prior_estimates: list[AssumptionRecord] | None = None,
     peer_reference: dict[str, list[dict[str, object]]] | None = None,
+    national_benchmarks: list[WebFinding] | None = None,
 ) -> str:
     summary = _build_context_summary(context_bundle)
     summary_json = json.dumps(summary, ensure_ascii=False, indent=2, default=str)
@@ -423,6 +512,11 @@ def _build_user_prompt(
         )
         parts.append("\n".join(lines) + "\n")
 
+    # Insert national/regional benchmarks (between peer reference and data summary)
+    benchmarks_section = _format_national_benchmarks(national_benchmarks)
+    if benchmarks_section:
+        parts.append(benchmarks_section)
+
     parts.append(f"Data summary:\n```json\n{summary_json}\n```\n")
 
     if pass_name == "critique" and prior_estimates:
@@ -446,11 +540,79 @@ def _build_user_prompt(
     return "\n".join(parts)
 
 
+def _check_anchor_sufficiency(
+    peer_reference: dict[str, list[dict[str, object]]],
+    estimable_fields: list[EnrichedField],
+) -> tuple[list[EnrichedField], list[NonEstimableRecord]]:
+    """Split fields into estimable vs insufficient-anchor.
+
+    A field passes if it has ``_MIN_PEER_ANCHORS_METHOD_B`` (2) peers,
+    or at least one authoritative CCC-sourced peer with confidence
+    >= ``_MIN_AUTHORITATIVE_CONFIDENCE``.  Fields below that threshold
+    are routed to non-estimable with a recommendation to find additional
+    anchor data.
+    """
+    sufficient: list[EnrichedField] = []
+    insufficient_records: list[NonEstimableRecord] = []
+
+    for field in estimable_fields:
+        peers = peer_reference.get(field.field, [])
+        if len(peers) >= _MIN_PEER_ANCHORS_METHOD_B:
+            sufficient.append(field)
+            continue
+
+        # Below Method B threshold — allow through only if at least one
+        # authoritative CCC-sourced peer has high confidence.
+        authoritative_peers = [
+            p for p in peers
+            if str(p.get("source", "")).lower() == "ccc"
+            and float(p.get("confidence", 0)) >= _MIN_AUTHORITATIVE_CONFIDENCE
+        ]
+        if authoritative_peers:
+            sufficient.append(field)
+            continue
+
+        insufficient_records.append(
+            NonEstimableRecord(
+                city=field.city,
+                field_name=field.field,
+                gap_description=f"Insufficient peer anchors for {field.field}",
+                explanation=(
+                    f"Only {len(peers)} peer value(s) available; "
+                    f"minimum {_MIN_PEER_ANCHORS_METHOD_B} needed for Method B "
+                    f"(peer proxy), {_MIN_PEER_ANCHORS_METHOD_C} for Method C "
+                    "(heuristic scaling), or at least 1 authoritative "
+                    f"CCC-sourced anchor with confidence >= "
+                    f"{_MIN_AUTHORITATIVE_CONFIDENCE}."
+                ),
+                recommendation=(
+                    "Search for operator fleet registries or municipal "
+                    "procurement records to establish additional anchors."
+                ),
+            )
+        )
+
+    if insufficient_records:
+        logger.info(
+            "Anchor sufficiency check: %d sufficient, %d insufficient.",
+            len(sufficient),
+            len(insufficient_records),
+        )
+
+    return sufficient, insufficient_records
+
+
 def _build_peer_reference_table(
     all_enriched: list[EnrichedField],
     estimable_fields: list[EnrichedField],
 ) -> dict[str, list[dict[str, object]]]:
-    """Extract resolved peer values for each field needing estimation."""
+    """Extract resolved peer values for each field needing estimation.
+
+    Only includes peers whose extraction confidence meets
+    ``_MIN_PEER_CONFIDENCE``.  CCC-sourced data defaults to 1.0
+    confidence; web-sourced data defaults to 0.5 unless provenance
+    carries an explicit ``extraction_confidence``.
+    """
     fields_needing_estimation = {f.field for f in estimable_fields}
 
     table: dict[str, list[dict[str, object]]] = {}
@@ -460,10 +622,15 @@ def _build_peer_reference_table(
             and ef.status == "resolved"
             and ef.value is not None
         ):
+            default_conf = 1.0 if ef.source == "ccc" else 0.5
+            confidence = float(ef.provenance.get("extraction_confidence", default_conf))
+            if confidence < _MIN_PEER_CONFIDENCE:
+                continue
             table.setdefault(ef.field, []).append({
                 "city": ef.city,
                 "value": ef.value,
                 "source": ef.source,
+                "confidence": confidence,
             })
     return table
 

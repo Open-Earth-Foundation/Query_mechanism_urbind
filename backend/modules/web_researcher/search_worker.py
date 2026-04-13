@@ -53,10 +53,15 @@ def execute_search_batch(
             if not results:
                 continue
 
-            # Step 2: Relevance check
-            checked = check_relevance_batch(
-                results, batch.target_fields, batch.cities, config, api_key
-            )
+            # Step 2: Relevance check (skip for national benchmarks —
+            # they don't target specific cities so entity disambiguation
+            # would incorrectly reject them)
+            if batch.search_type == "national_benchmark":
+                checked = [(r, True) for r in results]
+            else:
+                checked = check_relevance_batch(
+                    results, batch.target_fields, batch.cities, config, api_key
+                )
 
             # Step 3: Scrape relevant results
             for result, is_relevant in checked:

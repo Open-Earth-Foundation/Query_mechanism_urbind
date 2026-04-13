@@ -23,7 +23,27 @@ class RelevanceCheckOutput(BaseModel):
     """Structured output from relevance checker."""
 
     is_relevant: bool
+    entity_check: str  # "city_confirmed" | "likely_false_match" | "uncertain"
     reason: str
+
+
+def _build_entity_disambiguation_block(cities: list[str]) -> str:
+    """Return a user-prompt fragment reminding the LLM to disambiguate city names.
+
+    This fires for every batch — not limited to a hardcoded blocklist — so that
+    all cities get the entity-collision check.
+    """
+    city_list = ", ".join(cities)
+    return (
+        f"\nENTITY CHECK: For each result, confirm the mention of "
+        f"{city_list} refers to the city/municipality — not a person, "
+        "company, brand, product, or financial entity that shares the name. "
+        "City names frequently collide with corporations (e.g. Heidelberg → "
+        "HeidelbergCement), people (e.g. Munster → Gene Munster), auction/"
+        "trade platforms (e.g. Mannheim → Manheim Auctions), and cultural "
+        "references. Reject any result where the primary subject is one of "
+        "these non-municipal entities.\n"
+    )
 
 
 def check_relevance_batch(
@@ -63,13 +83,31 @@ def check_relevance_batch(
         "- Mark as irrelevant if it's clearly about a different topic, different city,\n"
         "  or contains only opinion/commentary without data.\n"
         "- When uncertain, mark as relevant (fail-open).\n\n"
+        "ENTITY DISAMBIGUATION (critical):\n"
+        "- Verify the city name in the result refers to the MUNICIPALITY, not a\n"
+        "  person, company, brand, or product with a similar name.\n"
+        "  Examples of FALSE MATCHES to reject:\n"
+        "  * 'Munster' as a financial analyst (Gene Munster / Loup Ventures)\n"
+        "  * 'Manheim' as Cox Automotive's vehicle auction brand\n"
+        "  * 'Heidelberg' as HeidelbergCement / Heidelberg Materials (the company)\n"
+        "  * 'Dresden' as a product line or model name\n"
+        "- Check whether the snippet describes municipal/city-level policy,\n"
+        "  procurement, or infrastructure — not corporate operations of a\n"
+        "  company that happens to share the city's name.\n"
+        "- If the URL domain suggests a non-municipal source (investing.com,\n"
+        "  autodealertoday, corporate newsrooms), apply extra scrutiny to\n"
+        "  confirm the content is about the city's transport/climate policy.\n\n"
         "OUTPUT: Return a JSON array of objects with 'index' (int), "
-        "'is_relevant' (bool), and 'reason' (str).\n"
+        "'is_relevant' (bool), 'entity_check' (str: 'city_confirmed' | "
+        "'likely_false_match' | 'uncertain'), and 'reason' (str).\n"
     )
+
+    entity_block = _build_entity_disambiguation_block(cities)
 
     user_prompt = (
         f"Cities: {', '.join(cities)}\n"
-        f"Target fields: {', '.join(target_fields)}\n\n"
+        f"Target fields: {', '.join(target_fields)}\n"
+        f"{entity_block}\n"
         "Search results:\n"
         f"```json\n{json.dumps(result_summaries, indent=2)}\n```\n"
     )
@@ -97,13 +135,17 @@ def check_relevance_batch(
             # only the first complete value and discard the rest.
             parsed, _ = json.JSONDecoder().raw_decode(candidate)
 
-        # Build relevance map
+        # Build relevance map — override is_relevant when entity check
+        # explicitly flags a false match.
         relevance_map: dict[int, bool] = {}
         if isinstance(parsed, list):
             for item in parsed:
                 if isinstance(item, dict):
                     idx = item.get("index")
                     relevant = item.get("is_relevant", True)
+                    entity_check = str(item.get("entity_check", "")).lower()
+                    if entity_check == "likely_false_match":
+                        relevant = False
                     if isinstance(idx, int):
                         relevance_map[idx] = bool(relevant)
 

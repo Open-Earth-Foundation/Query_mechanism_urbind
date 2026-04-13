@@ -251,7 +251,18 @@ class TestEnrichmentPipeline:
         assert "assumptions" in enrichment
         assert "meta" in enrichment
         assert enrichment["meta"]["gap_analyst_model"] == "test-model"
-        assert len(enrichment["assumptions"]) >= 1
+
+        # Single-city query with no peer data: the anchor sufficiency check
+        # correctly routes the field to non-estimable (insufficient anchors).
+        assert len(enrichment["assumptions"]) == 0
+        non_est = enrichment["non_estimable"]
+        assert len(non_est) >= 1
+        anchor_records = [
+            r for r in non_est
+            if "insufficient" in r.get("explanation", "").lower()
+            or "insufficient" in r.get("gap_description", "").lower()
+        ]
+        assert len(anchor_records) >= 1
 
         # Artifacts should be on disk
         enrichment_dir = run_paths.base_dir / "enrichment"

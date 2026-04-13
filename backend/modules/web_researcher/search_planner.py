@@ -209,9 +209,22 @@ def plan_searches(
                 priority=max_priority,
             ))
 
+    # National/regional benchmark batches for Method A grounding
+    national_batches, national_query_count = _plan_national_benchmark_batches(
+        gap_manifest=gap_manifest,
+        region_gaps=region_gaps,
+        city_groups=city_groups,
+        config=config,
+        api_key=api_key,
+        remaining_budget=max_total - total_queries,
+    )
+    batches.extend(national_batches)
+    total_queries += national_query_count
+
     logger.info(
-        "Search planner: %d batches, %d total queries across %d regions.",
+        "Search planner: %d batches (%d national), %d total queries across %d regions.",
         len(batches),
+        len(national_batches),
         total_queries,
         len(region_gaps),
     )
@@ -386,6 +399,149 @@ def _build_city_group_index(groups: list[dict[str, Any]]) -> dict[str, str]:
         for city in group.get("cities", []):
             index[city] = group_id
     return index
+
+
+def _plan_national_benchmark_batches(
+    gap_manifest: GapManifest,
+    region_gaps: dict[str, list[dict[str, Any]]],
+    city_groups: list[dict[str, Any]],
+    config: AppConfig,
+    api_key: str,
+    remaining_budget: int,
+) -> tuple[list[SearchBatch], int]:
+    """Generate national/regional benchmark search batches for Method A grounding.
+
+    For each region with estimable fields, uses the LLM to formulate 2-3
+    targeted queries for national/regional average unit costs and benchmarks.
+
+    Returns (batches, total_query_count).
+    """
+    if remaining_budget <= 0:
+        return [], 0
+
+    estimable_fields = [
+        fc.field
+        for fc in gap_manifest.query_fields
+        if fc.classification != "non_estimable"
+    ]
+    if not estimable_fields:
+        return [], 0
+
+    # Build group_id → city list lookup
+    group_cities: dict[str, list[str]] = {}
+    for group in city_groups:
+        group_id = group.get("id", "unknown")
+        group_cities[group_id] = group.get("cities", [])
+
+    batches: list[SearchBatch] = []
+    total_queries = 0
+
+    for region in region_gaps:
+        if total_queries >= remaining_budget:
+            break
+
+        cities_in_region = group_cities.get(region, [])
+        # Also include cities from the gaps themselves for country inference
+        gap_cities = [g["city"] for g in region_gaps[region]]
+        all_region_cities = list(set(cities_in_region) | set(gap_cities))
+
+        queries = _formulate_national_benchmark_queries(
+            region=region,
+            region_cities=all_region_cities,
+            target_fields=estimable_fields,
+            config=config,
+            api_key=api_key,
+        )
+
+        if not queries:
+            continue
+
+        remaining = remaining_budget - total_queries
+        queries = queries[:min(3, remaining)]  # cap at 3 per region
+        total_queries += len(queries)
+
+        batch_id = f"batch_{region}_national_{uuid.uuid4().hex[:8]}"
+        batches.append(SearchBatch(
+            batch_id=batch_id,
+            cities=[region],  # region name as the "city" for national benchmarks
+            target_fields=estimable_fields,
+            search_type="national_benchmark",
+            queries=queries,
+            budget={"max_queries": 3, "deep_dive_allowed": False},
+            priority="medium",
+        ))
+
+    return batches, total_queries
+
+
+def _formulate_national_benchmark_queries(
+    region: str,
+    region_cities: list[str],
+    target_fields: list[str],
+    config: AppConfig,
+    api_key: str,
+) -> list[str]:
+    """Use LLM to generate concise Google queries for national/regional benchmarks.
+
+    Targets average unit costs, fleet benchmarks, and infrastructure costs
+    at the national/regional level for grounding Method A estimates.
+    """
+    client = OpenAI(api_key=api_key, base_url=config.openrouter_base_url)
+
+    system_prompt = (
+        "You are a search query formulator for national/regional benchmark data.\n"
+        "Generate concise Google search queries (4-8 words each) to find\n"
+        "national or regional AVERAGE unit costs, fleet benchmarks, and\n"
+        "infrastructure cost benchmarks.\n\n"
+        "RULES:\n"
+        "- Target national averages, not city-specific data.\n"
+        "- Infer the country/countries from the city list provided.\n"
+        "- Use terms like 'national average', 'benchmark', 'unit cost'.\n"
+        "- Prefer government reports, industry associations, and statistical offices.\n"
+        "- For cost data, include currency context (EUR, GBP, etc.).\n"
+        "- Generate at most 3 queries.\n\n"
+        "OUTPUT: Return a JSON array of query strings. Nothing else.\n"
+        'Example: ["Germany electric bus procurement cost per unit 2024", '
+        '"Germany charging infrastructure cost benchmark report"]\n'
+    )
+
+    user_prompt = (
+        f"Region: {region}\n"
+        f"Cities in this region: {', '.join(region_cities[:10])}\n"
+        f"Target fields needing national benchmarks: {', '.join(target_fields)}\n"
+        "\nGenerate 2-3 search queries for national/regional average values "
+        "for these fields. Focus on unit costs and per-unit benchmarks.\n"
+    )
+
+    try:
+        request_kwargs: dict[str, object] = {
+            "model": config.enrichment.model,
+            "messages": [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt},
+            ],
+            "temperature": 0.0,
+        }
+        if config.enrichment.reasoning_effort is not None:
+            request_kwargs["reasoning_effort"] = config.enrichment.reasoning_effort
+
+        response = client.chat.completions.create(**request_kwargs)
+        if not response.choices:
+            return []
+
+        content = extract_message_text(response.choices[0].message.content)
+        candidate = extract_json_candidate(content)
+        parsed = json.loads(candidate)
+
+        if isinstance(parsed, list):
+            queries = [str(q).strip() for q in parsed if isinstance(q, str) and q.strip()]
+            return queries[:3]
+
+        return []
+
+    except Exception:
+        logger.warning("National benchmark query formulation failed.", exc_info=True)
+        return []
 
 
 __all__ = ["plan_searches"]

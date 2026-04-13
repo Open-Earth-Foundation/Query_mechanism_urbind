@@ -16,7 +16,9 @@ from backend.modules.web_researcher.models import (
 from backend.modules.web_researcher.search_planner import (
     _categorize_fields,
     _compute_budget,
+    _formulate_national_benchmark_queries,
     _get_source_hints,
+    _plan_national_benchmark_batches,
     plan_searches,
 )
 from tests.support import build_test_app_config
@@ -225,8 +227,8 @@ class TestPlanSearches:
 
         plan_searches(manifest, config, "test-key", question="How many electric buses in Dresden?")
 
-        # Verify the LLM was called with the question in the prompt
-        call_args = mock_client.chat.completions.create.call_args
+        # First LLM call is city-specific queries; use call_args_list[0]
+        call_args = mock_client.chat.completions.create.call_args_list[0]
         messages = call_args.kwargs.get("messages") or call_args[1].get("messages")
         system_msg = messages[0]["content"]
         user_msg = messages[1]["content"]
@@ -275,7 +277,8 @@ class TestPlanSearches:
 
         plan_searches(manifest, config, "test-key")
 
-        call_args = mock_client.chat.completions.create.call_args
+        # First LLM call is city-specific queries
+        call_args = mock_client.chat.completions.create.call_args_list[0]
         messages = call_args.kwargs.get("messages") or call_args[1].get("messages")
         system_msg = messages[0]["content"]
         assert "fleet register" in system_msg
@@ -299,7 +302,8 @@ class TestPlanSearches:
 
         plan_searches(manifest, config, "test-key")
 
-        call_args = mock_client.chat.completions.create.call_args
+        # First LLM call is city-specific queries
+        call_args = mock_client.chat.completions.create.call_args_list[0]
         messages = call_args.kwargs.get("messages") or call_args[1].get("messages")
         system_msg = messages[0]["content"]
         assert "Variant A" in system_msg
@@ -323,9 +327,172 @@ class TestPlanSearches:
 
         batches = plan_searches(manifest, config, "test-key")
 
-        assert len(batches) == 1
+        # Filter to city-specific batches (exclude national benchmark batches)
+        city_batches = [b for b in batches if b.search_type != "national_benchmark"]
+        assert len(city_batches) == 1
         # batch_id should be: batch_{region}_{category}_{hex}
-        parts = batches[0].batch_id.split("_")
+        parts = city_batches[0].batch_id.split("_")
         assert parts[0] == "batch"
         # region is "other" since no city_groups loaded
         assert parts[1] == "other"
+
+    @patch("backend.modules.web_researcher.search_planner._load_city_groups")
+    @patch("backend.modules.web_researcher.search_planner.OpenAI")
+    def test_plan_searches_includes_national_benchmark_batches(
+        self, mock_openai_cls, mock_city_groups,
+    ):
+        mock_city_groups.return_value = []
+        mock_client = MagicMock()
+        mock_openai_cls.return_value = mock_client
+        # First call: city queries; Second call: national benchmark queries
+        mock_client.chat.completions.create.side_effect = [
+            _mock_openai_response('["Dresden fleet register 2025"]'),
+            _mock_openai_response(
+                '["Germany electric bus unit cost 2024", "Germany charging infra benchmark"]'
+            ),
+        ]
+
+        config = _make_config(max_queries_per_batch=25, max_total_queries_per_run=100)
+        manifest = self._make_gap_manifest(
+            cities=["Dresden"],
+            fields=["ev_fleet_count"],
+        )
+
+        batches = plan_searches(manifest, config, "test-key")
+
+        national = [b for b in batches if b.search_type == "national_benchmark"]
+        city = [b for b in batches if b.search_type != "national_benchmark"]
+        assert len(national) >= 1
+        assert len(city) >= 1
+        assert "national" in national[0].batch_id
+        assert national[0].budget["deep_dive_allowed"] is False
+
+
+# ---------------------------------------------------------------------------
+# _plan_national_benchmark_batches
+# ---------------------------------------------------------------------------
+
+class TestPlanNationalBenchmarkBatches:
+    @patch("backend.modules.web_researcher.search_planner.OpenAI")
+    def test_generates_batches_for_regions(self, mock_openai_cls):
+        mock_client = MagicMock()
+        mock_openai_cls.return_value = mock_client
+        mock_client.chat.completions.create.return_value = _mock_openai_response(
+            '["Germany bus unit cost 2024", "Germany charging benchmark"]'
+        )
+
+        config = _make_config()
+        gap_manifest = GapManifest(
+            query_fields=[
+                FieldClassification(
+                    field="bus_procurement_unit_cost",
+                    classification="estimable_numerical",
+                    searchable=True,
+                    rationale="test",
+                ),
+            ],
+            city_gaps=[],
+            non_estimable_fields=[],
+        )
+        region_gaps = {"dach": [{"city": "Dresden"}]}
+        city_groups = [{"id": "dach", "cities": ["Dresden", "Munich"]}]
+
+        batches, count = _plan_national_benchmark_batches(
+            gap_manifest=gap_manifest,
+            region_gaps=region_gaps,
+            city_groups=city_groups,
+            config=config,
+            api_key="test-key",
+            remaining_budget=10,
+        )
+
+        assert len(batches) == 1
+        assert batches[0].search_type == "national_benchmark"
+        assert count == 2
+        assert batches[0].cities == ["dach"]
+        assert batches[0].budget["deep_dive_allowed"] is False
+
+    @patch("backend.modules.web_researcher.search_planner.OpenAI")
+    def test_respects_remaining_budget(self, mock_openai_cls):
+        mock_client = MagicMock()
+        mock_openai_cls.return_value = mock_client
+        mock_client.chat.completions.create.return_value = _mock_openai_response(
+            '["q1", "q2", "q3"]'
+        )
+
+        config = _make_config()
+        gap_manifest = GapManifest(
+            query_fields=[
+                FieldClassification(
+                    field="cost_field",
+                    classification="estimable_numerical",
+                    searchable=True,
+                    rationale="test",
+                ),
+            ],
+            city_gaps=[],
+            non_estimable_fields=[],
+        )
+
+        batches, count = _plan_national_benchmark_batches(
+            gap_manifest=gap_manifest,
+            region_gaps={"region_a": [{"city": "CityA"}]},
+            city_groups=[],
+            config=config,
+            api_key="test-key",
+            remaining_budget=2,
+        )
+
+        assert count <= 2
+
+    def test_returns_empty_when_no_budget(self):
+        gap_manifest = GapManifest(
+            query_fields=[
+                FieldClassification(
+                    field="cost_field",
+                    classification="estimable_numerical",
+                    searchable=True,
+                    rationale="test",
+                ),
+            ],
+            city_gaps=[],
+            non_estimable_fields=[],
+        )
+
+        batches, count = _plan_national_benchmark_batches(
+            gap_manifest=gap_manifest,
+            region_gaps={"r": [{"city": "C"}]},
+            city_groups=[],
+            config=_make_config(),
+            api_key="test-key",
+            remaining_budget=0,
+        )
+
+        assert batches == []
+        assert count == 0
+
+    def test_returns_empty_when_all_non_estimable(self):
+        gap_manifest = GapManifest(
+            query_fields=[
+                FieldClassification(
+                    field="operator_name",
+                    classification="non_estimable",
+                    searchable=False,
+                    rationale="qualitative",
+                ),
+            ],
+            city_gaps=[],
+            non_estimable_fields=["operator_name"],
+        )
+
+        batches, count = _plan_national_benchmark_batches(
+            gap_manifest=gap_manifest,
+            region_gaps={"r": [{"city": "C"}]},
+            city_groups=[],
+            config=_make_config(),
+            api_key="test-key",
+            remaining_budget=10,
+        )
+
+        assert batches == []
+        assert count == 0
