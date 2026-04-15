@@ -125,10 +125,7 @@ export function ContextChatWorkspace({
       return;
     }
     const handle = window.requestAnimationFrame(() => {
-      const viewport = root.querySelector<HTMLDivElement>("[data-radix-scroll-area-viewport]");
-      if (viewport) {
-        viewport.scrollTop = viewport.scrollHeight;
-      }
+      root.scrollTop = root.scrollHeight;
     });
     return () => window.cancelAnimationFrame(handle);
   }, [chatTurns.length, isSending, pendingJob, pendingPrompt]);
