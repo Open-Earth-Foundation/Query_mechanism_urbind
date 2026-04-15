@@ -39,6 +39,7 @@ Each `CalculationCategory` must include:
 - `year_policy` (`ignore_year` | `separate_by_year`): whether aggregation should split by year
 - `inclusion_rule` (str): what records belong in this category
 - `exclusion_rule` (str): what related records must not be counted
+- `sum_reported_total_into_target` (bool): whether `reported_total` records should be counted in `target_total` for this category
 
 Planning rules:
 - Create categories only when grounded numeric aggregation would help answer the question.
@@ -47,6 +48,8 @@ Planning rules:
 - Prefer category keys like `buses_added`, `total_ev_cars`, `capex_for_ev_chargers`.
 - Use `year_policy=separate_by_year` only when mixed years would make one merged total misleading.
 - Categories must be mutually distinct and non-overlapping where possible.
+- Set `sum_reported_total_into_target=true` only when the category is asking for planned/target totals and the evidence is likely to appear as city- or project-level totals that the worker should extract as `reported_total` rather than `target`.
+- Set `sum_reported_total_into_target=false` for categories where `reported_total` values would likely double-count finer addable records or should remain informational only.
 </output>
 
 <example_output>
@@ -60,7 +63,8 @@ Planning rules:
       "preferred_unit": "vehicles",
       "year_policy": "separate_by_year",
       "inclusion_rule": "Include explicit EV car counts or zero-emission private car counts.",
-      "exclusion_rule": "Exclude hybrids, percentages, total fleets, and charging-point counts."
+      "exclusion_rule": "Exclude hybrids, percentages, total fleets, and charging-point counts.",
+      "sum_reported_total_into_target": false
     }
   ],
   "note": "One additive EV-count category is supported by the provided evidence."

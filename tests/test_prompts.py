@@ -54,6 +54,7 @@ def test_calculator_plan_prompt_uses_required_schema_sections() -> None:
     assert "submit_calculation_plan" in content
     assert "CalculationPlan" in content
     assert "up to 10 additive calculation categories" in content
+    assert "sum_reported_total_into_target" in content
 
 
 def test_calculator_worker_prompt_uses_required_schema_sections() -> None:

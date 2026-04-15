@@ -23,7 +23,11 @@ def _build_test_config(tmp_path: Path) -> AppConfig:
     )
 
 
-def _build_category(*, year_policy: str = "ignore_year") -> CalculationCategory:
+def _build_category(
+    *,
+    year_policy: str = "ignore_year",
+    sum_reported_total_into_target: bool = False,
+) -> CalculationCategory:
     return CalculationCategory(
         category_key="total_ev_cars",
         label="Total EV Cars",
@@ -33,6 +37,7 @@ def _build_category(*, year_policy: str = "ignore_year") -> CalculationCategory:
         year_policy=year_policy,
         inclusion_rule="Include explicit EV car counts.",
         exclusion_rule="Exclude percentages and total fleets.",
+        sum_reported_total_into_target=sum_reported_total_into_target,
     )
 
 
@@ -156,6 +161,95 @@ def test_aggregate_category_records_respects_year_policy() -> None:
     assert years == {2025, 2030}
     for group in summary.categories[0].groups:
         assert group.target_total == pytest.approx(0.0)
+
+
+def test_aggregate_category_records_can_sum_reported_total_into_target() -> None:
+    summary = calculator_agent.aggregate_category_records(
+        categories=[_build_category(sum_reported_total_into_target=True)],
+        category_records={
+            "total_ev_cars": [
+                _build_record(
+                    city="Aachen",
+                    value=50,
+                    record_role="reported_total",
+                    ref_id="ref_1",
+                    note="reported total 1",
+                ),
+                _build_record(
+                    city="Munich",
+                    value=40,
+                    record_role="target",
+                    ref_id="ref_2",
+                    note="target 1",
+                ),
+            ]
+        },
+        selected_city_names=["Aachen", "Munich", "Berlin"],
+    )
+
+    group = summary.categories[0].groups[0]
+    assert group.current_total == pytest.approx(0.0)
+    assert group.target_total == pytest.approx(90.0)
+    assert group.current_record_count == 0
+    assert group.target_record_count == 2
+    assert group.cities_with_current_records == []
+    assert group.cities_with_target_records == ["Aachen", "Munich"]
+    assert group.cities_with_only_non_additive_records == []
+    assert group.cities_with_no_usable_records == ["Berlin"]
+    assert group.non_additive_records == []
+
+
+def test_aggregate_category_records_keeps_reported_total_non_additive_by_default() -> None:
+    summary = calculator_agent.aggregate_category_records(
+        categories=[_build_category()],
+        category_records={
+            "total_ev_cars": [
+                _build_record(
+                    city="Aachen",
+                    value=50,
+                    record_role="reported_total",
+                    ref_id="ref_1",
+                    note="reported total 1",
+                ),
+            ]
+        },
+        selected_city_names=["Aachen"],
+    )
+
+    group = summary.categories[0].groups[0]
+    assert group.current_total == pytest.approx(0.0)
+    assert group.target_total == pytest.approx(0.0)
+    assert len(group.non_additive_records) == 1
+
+
+def test_normalize_calculation_plan_enables_reported_total_for_monetary_investment() -> None:
+    category = CalculationCategory(
+        category_key="ev_infrastructure_investment",
+        label="EV Infrastructure Investment",
+        description="Monetary investment and funding figures for EV charging infrastructure.",
+        operation="sum",
+        preferred_unit="EUR",
+        year_policy="separate_by_year",
+        inclusion_rule="Include budgets, investment volumes, and total costs for EV charging infrastructure.",
+        exclusion_rule="Exclude vehicle purchase costs.",
+        sum_reported_total_into_target=False,
+    )
+
+    normalized = calculator_agent._normalize_calculation_plan(
+        CalculationPlan(categories=[category], note="One category.")
+    )
+
+    assert normalized.categories[0].sum_reported_total_into_target is True
+
+
+def test_normalize_calculation_plan_keeps_non_monetary_categories_unchanged() -> None:
+    category = _build_category(sum_reported_total_into_target=False)
+
+    normalized = calculator_agent._normalize_calculation_plan(
+        CalculationPlan(categories=[category], note="One category.")
+    )
+
+    assert normalized.categories[0].sum_reported_total_into_target is False
 
 
 def test_run_calculator_stage_writes_pass_artifacts_and_stops_on_done(

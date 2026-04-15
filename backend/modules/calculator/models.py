@@ -34,6 +34,7 @@ class CalculationCategory(BaseModel):
     year_policy: YearPolicy
     inclusion_rule: str
     exclusion_rule: str
+    sum_reported_total_into_target: bool = False
 
     @field_validator("category_key")
     @classmethod

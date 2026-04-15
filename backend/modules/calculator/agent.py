@@ -71,6 +71,22 @@ _CATEGORY_STOPWORDS = {
     "metric",
     "metrics",
 }
+_FINANCIAL_CATEGORY_TOKENS = {
+    "budget",
+    "budgets",
+    "capex",
+    "cost",
+    "costs",
+    "fund",
+    "funding",
+    "funds",
+    "investment",
+    "investments",
+    "spend",
+    "spending",
+    "subsidy",
+    "subsidies",
+}
 _PLANNER_MAX_EXCERPTS = 200
 _CATEGORY_MAX_CANDIDATE_EXCERPTS = 300
 
@@ -318,7 +334,7 @@ def plan_categories(
         raise ValueError("Calculator planner did not return a structured plan.")
     if len(output.categories) > config.calculator.max_categories:
         output.categories = output.categories[: config.calculator.max_categories]
-    return output
+    return _normalize_calculation_plan(output)
 
 
 def extract_category_records(
@@ -420,6 +436,44 @@ def _normalize_unit(unit: str) -> str:
     return re.sub(r"[^a-z0-9]+", "_", normalized).strip("_")
 
 
+def _category_semantic_tokens(category: CalculationCategory) -> set[str]:
+    """Return semantic category tokens used for deterministic plan normalization."""
+    source_text = " ".join(
+        [
+            category.category_key.replace("_", " "),
+            category.label,
+            category.description,
+            category.inclusion_rule,
+            category.exclusion_rule,
+        ]
+    ).lower()
+    return set(_WORD_PATTERN.findall(source_text))
+
+
+def _should_sum_reported_total_into_target(category: CalculationCategory) -> bool:
+    """Return whether reported totals should contribute to target aggregation."""
+    if category.sum_reported_total_into_target or category.operation != "sum":
+        return category.sum_reported_total_into_target
+    if not _normalize_unit(category.preferred_unit).startswith("eur"):
+        return False
+    return bool(_category_semantic_tokens(category) & _FINANCIAL_CATEGORY_TOKENS)
+
+
+def _normalize_calculation_plan(plan: CalculationPlan) -> CalculationPlan:
+    """Return planner categories with deterministic aggregation semantics applied."""
+    normalized_categories = [
+        category.model_copy(
+            update={
+                "sum_reported_total_into_target": _should_sum_reported_total_into_target(
+                    category
+                )
+            }
+        )
+        for category in plan.categories
+    ]
+    return plan.model_copy(update={"categories": normalized_categories})
+
+
 def _record_sort_key(record: CalculationRecord) -> tuple[str, int, str, float, str]:
     """Return a deterministic ordering key for extracted records."""
     return (
@@ -449,8 +503,10 @@ def _current_roles_for_category(category: CalculationCategory) -> set[str]:
 
 def _target_roles_for_category(category: CalculationCategory) -> set[str]:
     """Return the target/planned record roles allowed for a category."""
-    _ = category
-    return {"target"}
+    target_roles = {"target"}
+    if category.sum_reported_total_into_target:
+        target_roles.add("reported_total")
+    return target_roles
 
 
 def aggregate_category_records(
