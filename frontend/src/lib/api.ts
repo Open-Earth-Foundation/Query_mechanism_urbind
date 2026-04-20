@@ -602,34 +602,6 @@ export async function applyRunAssumptions(
   );
 }
 
-export async function downloadRunPdf(runId: string): Promise<void> {
-  const response = await fetch(
-    `${getApiBaseUrl()}/api/v1/runs/${encodeURIComponent(runId)}/export/pdf`,
-    { headers: buildHeaders(false) },
-  );
-  if (!response.ok) {
-    let message = `PDF export failed (${response.status})`;
-    try {
-      const payload = (await response.json()) as { detail?: unknown };
-      if (typeof payload.detail === "string" && payload.detail.trim().length > 0) {
-        message = payload.detail;
-      }
-    } catch {
-      // ignore
-    }
-    throw new Error(message);
-  }
-  const blob = await response.blob();
-  const url = URL.createObjectURL(blob);
-  const anchor = document.createElement("a");
-  anchor.href = url;
-  anchor.download = `run_${runId}.pdf`;
-  document.body.appendChild(anchor);
-  anchor.click();
-  document.body.removeChild(anchor);
-  URL.revokeObjectURL(url);
-}
-
 export async function fetchChatContextCatalog(): Promise<ChatContextCatalogResponse> {
   return requestJson<ChatContextCatalogResponse>("/api/v1/chat/contexts");
 }

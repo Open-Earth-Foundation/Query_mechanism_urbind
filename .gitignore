@@ -40,6 +40,7 @@ skills-lock.json
 frontend/.next
 frontend/node_modules
 .vscode/settings.json
+.idea/
 
 # Planing
 implementation-plan.md

@@ -27,6 +27,13 @@ from backend.utils.json_io import write_json
 logger = logging.getLogger(__name__)
 
 
+def _ensure_resolved_has_value(ef: EnrichedField) -> EnrichedField:
+    """Invariant: 'resolved' requires a non-null value."""
+    if ef.status == "resolved" and ef.value is None:
+        return ef.model_copy(update={"status": "partially_resolved"})
+    return ef
+
+
 def compute_field_statuses(
     gap_manifest: GapManifest,
     web_findings: list[WebFinding],
@@ -71,54 +78,16 @@ def compute_field_statuses(
 
             if wf and fr:
                 # Both web finding and freshness check exist
-                if fr.classification == "superseded":
-                    enriched_fields.append(
-                        EnrichedField(
-                            city=city,
-                            field=field,
-                            status="resolved",
-                            value=wf.value,
-                            source="web",
-                            provenance={
-                                "source_url": wf.source_url,
-                                "source_type": wf.source_type,
-                                "source_date": wf.source_date,
-                                "extraction_confidence": wf.extraction_confidence,
-                            },
-                            freshness_flag="superseded",
-                        )
+                if fr.classification == "cancelled":
+                    ef = EnrichedField(
+                        city=city,
+                        field=field,
+                        status="still_missing",
+                        source="none",
+                        freshness_flag="cancelled",
                     )
-                elif fr.classification == "consistent":
-                    enriched_fields.append(
-                        EnrichedField(
-                            city=city,
-                            field=field,
-                            status="resolved",
-                            value=fr.ccc_value or wf.value,
-                            source="ccc",
-                            provenance={"confirmed_by_web": wf.source_url},
-                            freshness_flag="consistent",
-                        )
-                    )
-                else:  # uncertain
-                    enriched_fields.append(
-                        EnrichedField(
-                            city=city,
-                            field=field,
-                            status="partially_resolved",
-                            value=fr.ccc_value,
-                            source="ccc",
-                            provenance={
-                                "web_alternative": wf.source_url,
-                                "web_value": str(wf.value) if wf.value is not None else None,
-                            },
-                            freshness_flag="uncertain",
-                        )
-                    )
-            elif wf and not fr:
-                # Web finding exists but no freshness check (no CCC value to compare)
-                enriched_fields.append(
-                    EnrichedField(
+                elif fr.classification == "superseded":
+                    ef = EnrichedField(
                         city=city,
                         field=field,
                         status="resolved",
@@ -127,10 +96,50 @@ def compute_field_statuses(
                         provenance={
                             "source_url": wf.source_url,
                             "source_type": wf.source_type,
+                            "source_date": wf.source_date,
                             "extraction_confidence": wf.extraction_confidence,
                         },
+                        freshness_flag="superseded",
                     )
+                elif fr.classification == "consistent":
+                    ef = EnrichedField(
+                        city=city,
+                        field=field,
+                        status="resolved",
+                        value=fr.ccc_value or wf.value,
+                        source="ccc",
+                        provenance={"confirmed_by_web": wf.source_url},
+                        freshness_flag="consistent",
+                    )
+                else:  # uncertain
+                    ef = EnrichedField(
+                        city=city,
+                        field=field,
+                        status="partially_resolved",
+                        value=fr.ccc_value,
+                        source="ccc",
+                        provenance={
+                            "web_alternative": wf.source_url,
+                            "web_value": str(wf.value) if wf.value is not None else None,
+                        },
+                        freshness_flag="uncertain",
+                    )
+                enriched_fields.append(_ensure_resolved_has_value(ef))
+            elif wf and not fr:
+                # Web finding exists but no freshness check (no CCC value to compare)
+                ef = EnrichedField(
+                    city=city,
+                    field=field,
+                    status="resolved",
+                    value=wf.value,
+                    source="web",
+                    provenance={
+                        "source_url": wf.source_url,
+                        "source_type": wf.source_type,
+                        "extraction_confidence": wf.extraction_confidence,
+                    },
                 )
+                enriched_fields.append(_ensure_resolved_has_value(ef))
             elif field in city_gap.stale_flags and field not in city_gap.blank_fields:
                 # Stale but present in CCC, no web update found
                 enriched_fields.append(

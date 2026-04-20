@@ -84,7 +84,10 @@ def check_freshness(
         "  Requires: web source has a timestamp, comes from a credible source\n"
         "  (government > operator > news > blog), and the difference is meaningful.\n"
         '- "uncertain" — values differ but it\'s unclear which is more accurate.\n'
-        "  Both should be preserved and flagged.\n\n"
+        "  Both should be preserved and flagged.\n"
+        '- "cancelled" — web source indicates the programme/project was cancelled,\n'
+        "  discontinued, or reversed (source_type is \"cancellation_notice\" or\n"
+        "  web_value is 0 with cancellation context). The CCC value is no longer valid.\n\n"
         "RULES:\n"
         "- Never classify as 'superseded' without a timestamp on the web source.\n"
         "- Government and operator sources outweigh news and blog sources.\n"
@@ -127,7 +130,7 @@ def check_freshness(
                     idx = item.get("index")
                     cls = item.get("classification", "uncertain")
                     reason = item.get("reason", "")
-                    if isinstance(idx, int) and cls in ("consistent", "superseded", "uncertain"):
+                    if isinstance(idx, int) and cls in ("consistent", "superseded", "uncertain", "cancelled"):
                         classification_map[idx] = (cls, reason)
 
         results: list[FreshnessResult] = []
@@ -161,30 +164,61 @@ def check_freshness(
         return _fallback_uncertain(findings_to_check)
 
 
+_CITY_COLUMN_CANDIDATES = ("city", "city_key", "city_name", "city_slug", "name")
+
+
 def _extract_ccc_values(context_bundle: dict[str, Any]) -> dict[tuple[str, str], str]:
     """Extract known CCC values from the context bundle for comparison.
 
-    Looks through markdown excerpts and SQL results for city+field values.
-    Returns a dict of (city_lower, field_lower) → value_string.
+    Walks ``context_bundle["sql"].results[]`` — each result has ``columns``
+    and ``rows``. Identifies the city column, then emits one
+    ``(city_lower, field_lower) → value_string`` entry per non-null cell in
+    every other column. Later writes win if the same key appears twice.
     """
     values: dict[tuple[str, str], str] = {}
 
-    # Extract from markdown excerpts if present
-    markdown = context_bundle.get("markdown")
-    if isinstance(markdown, dict):
-        excerpts = markdown.get("excerpts", [])
-        if isinstance(excerpts, list):
-            for excerpt in excerpts:
-                if not isinstance(excerpt, dict):
+    sql_data = context_bundle.get("sql")
+    if not isinstance(sql_data, dict):
+        return values
+
+    for result in sql_data.get("results", []) or []:
+        if not isinstance(result, dict):
+            continue
+        columns = result.get("columns")
+        rows = result.get("rows")
+        if not isinstance(columns, list) or not isinstance(rows, list):
+            continue
+
+        city_idx = _find_city_column(columns)
+        if city_idx is None:
+            continue
+
+        for row in rows:
+            if not isinstance(row, list) or len(row) != len(columns):
+                continue
+            city_cell = row[city_idx]
+            if not isinstance(city_cell, str) or not city_cell.strip():
+                continue
+            city_key = city_cell.strip().lower()
+
+            for col_idx, col_name in enumerate(columns):
+                if col_idx == city_idx or not isinstance(col_name, str):
                     continue
-                city = excerpt.get("city_key", "")
-                partial = excerpt.get("partial_answer", "")
-                if isinstance(city, str) and city.strip() and isinstance(partial, str):
-                    # Use the city key as a basic indicator that data exists
-                    # The actual field-level extraction would need schema awareness
-                    values.setdefault((city.strip().lower(), "_has_data"), partial[:200])
+                cell = row[col_idx]
+                if cell is None or (isinstance(cell, str) and not cell.strip()):
+                    continue
+                values[(city_key, col_name.strip().lower())] = str(cell)
 
     return values
+
+
+def _find_city_column(columns: list[Any]) -> int | None:
+    """Find the first column that names a city identifier."""
+    normalized = [c.strip().lower() if isinstance(c, str) else "" for c in columns]
+    for candidate in _CITY_COLUMN_CANDIDATES:
+        if candidate in normalized:
+            return normalized.index(candidate)
+    return None
 
 
 def _fallback_uncertain(

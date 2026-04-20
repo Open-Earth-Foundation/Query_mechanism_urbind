@@ -346,13 +346,10 @@ class TestPlanSearches:
         mock_city_groups.return_value = []
         mock_client = MagicMock()
         mock_openai_cls.return_value = mock_client
-        # First call: city queries; Second call: national benchmark queries
-        mock_client.chat.completions.create.side_effect = [
-            _mock_openai_response('["Dresden fleet register 2025"]'),
-            _mock_openai_response(
-                '["Germany electric bus unit cost 2024", "Germany charging infra benchmark"]'
-            ),
-        ]
+        # All LLM calls return valid queries (national + comparative run in parallel)
+        mock_client.chat.completions.create.return_value = _mock_openai_response(
+            '["Germany electric bus unit cost 2024", "Germany charging infra benchmark"]'
+        )
 
         config = _make_config(max_queries_per_batch=25, max_total_queries_per_run=100)
         manifest = self._make_gap_manifest(
@@ -363,7 +360,7 @@ class TestPlanSearches:
         batches = plan_searches(manifest, config, "test-key")
 
         national = [b for b in batches if b.search_type == "national_benchmark"]
-        city = [b for b in batches if b.search_type != "national_benchmark"]
+        city = [b for b in batches if b.search_type not in ("national_benchmark", "comparative_benchmark")]
         assert len(national) >= 1
         assert len(city) >= 1
         assert "national" in national[0].batch_id

@@ -138,6 +138,14 @@ Enrichment-specific rules (apply when `context_bundle.enrichment` is present):
 - If `saturation_warning` is present, include it as a methodological caveat in section 7.
 - Never present estimated values as observed facts.
 
+Concentration warnings (apply when aggregating numeric values):
+- If a single city contributes >60% of a category total, add a warning:
+  "⚠ [City] accounts for [X]% of this total. The aggregate is heavily
+  weighted by this single city's data."
+- If only 1 of N cities has a numeric value for a field, do not present
+  it as an aggregate total. Instead: "Only [City] reports a value ([X]);
+  other cities lack data for this field."
+
 No-enrichment fallback:
 - If `context_bundle.enrichment` is absent, produce only sections 1-3 (Executive Summary, Per-City Sections, Cross-City Synthesis).
 - If one or two cities are missing numeric values, you may provide an inline assumption-based estimate:

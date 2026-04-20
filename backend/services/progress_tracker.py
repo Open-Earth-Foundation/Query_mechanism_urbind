@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import json
 import logging
+import os
 import tempfile
 import threading
 import time
@@ -127,7 +128,7 @@ class ProgressTracker:
             try:
                 with open(fd, "w", encoding="utf-8") as fh:
                     json.dump(payload, fh)
-                Path(tmp_path).rename(target)
+                os.replace(tmp_path, target)
             except Exception:
                 # Clean up temp file on failure
                 try:

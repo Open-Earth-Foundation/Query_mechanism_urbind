@@ -354,14 +354,17 @@ class TestFreshnessChecker:
 
     def test_extract_ccc_values(self) -> None:
         context = {
-            "markdown": {
-                "excerpts": [
-                    {"city_key": "Dresden", "partial_answer": "50M EUR allocated"},
+            "sql": {
+                "results": [
+                    {
+                        "columns": ["city", "capex"],
+                        "rows": [["Dresden", 50]],
+                    }
                 ]
             }
         }
         values = _extract_ccc_values(context)
-        assert ("dresden", "_has_data") in values
+        assert values[("dresden", "capex")] == "50"
 
 
 # ---------------------------------------------------------------------------

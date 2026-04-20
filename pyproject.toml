@@ -17,8 +17,6 @@ dependencies = [
   "PyYAML==6.0.3",
   "python-dotenv==1.2.1",
   "tiktoken==0.12.0",
-  "fpdf2>=2.8.0",
-  "markdown>=3.7",
 ]
 
 [dependency-groups]
