@@ -18,6 +18,9 @@ htmlcov/
 .env
 .venv
 
+# Benchmark run outputs (dated reports at repo root)
+/gold_benchmark_report_*.md
+
 # Run artifacts
 output/
 .chroma/

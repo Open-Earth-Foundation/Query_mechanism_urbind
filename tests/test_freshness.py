@@ -1,103 +1,92 @@
-"""Regression tests for the freshness CCC extraction.
+"""Regression tests for the freshness markdown-based CCC extraction.
 
 Covers the bug where _extract_ccc_values() stored keys as (city, "_has_data")
 while check_freshness() looked them up as (city, field), effectively disabling
-the freshness gate.
+the freshness gate. The current extractor collects per-city markdown excerpts
+as prose evidence, and the LLM step is responsible for pulling structured
+values out of that evidence.
 """
 
 from __future__ import annotations
 
 from backend.modules.web_researcher.freshness import (
-    _extract_ccc_values,
-    _find_city_column,
+    _extract_ccc_evidence,
     check_freshness,
 )
 from backend.modules.web_researcher.models import WebFinding
 
 
-def _make_sql_bundle(columns: list[str], rows: list[list]) -> dict:
-    return {
-        "sql": {
-            "results": [
-                {
-                    "query_id": "q1",
-                    "columns": columns,
-                    "rows": rows,
-                    "row_count": len(rows),
-                    "elapsed_ms": 1,
-                    "token_count": 0,
-                }
-            ]
-        }
+def _make_markdown_bundle(excerpts: list[dict]) -> dict:
+    return {"markdown": {"excerpts": excerpts}}
+
+
+def _wf(city: str = "Dresden", field: str = "capex", **kw) -> WebFinding:
+    defaults = {
+        "city": city,
+        "field": field,
+        "value": 50,
+        "unit": "EUR_millions",
+        "source_url": "https://example.com",
+        "source_type": "government_report",
+        "source_date": "2025",
+        "extraction_confidence": 0.9,
     }
+    defaults.update(kw)
+    return WebFinding(**defaults)
 
 
-class TestFindCityColumn:
-    def test_prefers_city_over_name(self):
-        assert _find_city_column(["city", "name", "capex"]) == 0
+class TestExtractCccEvidence:
+    def test_collects_partial_answer_per_city(self):
+        bundle = _make_markdown_bundle([
+            {"city_key": "Dresden", "partial_answer": "Dresden allocated 45M EUR to climate capex."},
+            {"city_key": "Berlin", "partial_answer": "Berlin reports 120M EUR in capex."},
+        ])
+        evidence = _extract_ccc_evidence(bundle)
+        assert evidence["dresden"] == ["Dresden allocated 45M EUR to climate capex."]
+        assert evidence["berlin"] == ["Berlin reports 120M EUR in capex."]
 
-    def test_falls_back_to_city_key(self):
-        assert _find_city_column(["capex", "city_key", "year"]) == 1
+    def test_lowercases_city_key(self):
+        bundle = _make_markdown_bundle([
+            {"city_key": "DRESDEN", "partial_answer": "hello"},
+        ])
+        assert list(_extract_ccc_evidence(bundle)) == ["dresden"]
 
-    def test_case_insensitive(self):
-        assert _find_city_column(["CITY", "capex"]) == 0
+    def test_falls_back_to_quote_when_partial_answer_missing(self):
+        bundle = _make_markdown_bundle([
+            {"city_key": "Berlin", "quote": "Berlin allocated 120M EUR."},
+        ])
+        evidence = _extract_ccc_evidence(bundle)
+        assert evidence["berlin"] == ["Berlin allocated 120M EUR."]
 
-    def test_returns_none_when_absent(self):
-        assert _find_city_column(["capex", "year"]) is None
+    def test_skips_empty_city_or_text(self):
+        bundle = _make_markdown_bundle([
+            {"city_key": "", "partial_answer": "orphan"},
+            {"city_key": "Oslo", "partial_answer": "   "},
+            {"city_key": "Oslo", "partial_answer": "Oslo evidence"},
+        ])
+        evidence = _extract_ccc_evidence(bundle)
+        assert evidence == {"oslo": ["Oslo evidence"]}
 
+    def test_caps_excerpts_per_city(self):
+        excerpts = [
+            {"city_key": "Oslo", "partial_answer": f"snippet {i}"}
+            for i in range(20)
+        ]
+        evidence = _extract_ccc_evidence(_make_markdown_bundle(excerpts))
+        assert len(evidence["oslo"]) == 6  # _MAX_EXCERPTS_PER_CITY
 
-class TestExtractCccValues:
-    def test_extracts_city_field_value_from_sql(self):
-        bundle = _make_sql_bundle(
-            ["city", "capex", "ev_bus_count"],
-            [["Dresden", 50, 10], ["Berlin", 100, 20]],
-        )
-        values = _extract_ccc_values(bundle)
-        assert values[("dresden", "capex")] == "50"
-        assert values[("dresden", "ev_bus_count")] == "10"
-        assert values[("berlin", "capex")] == "100"
+    def test_truncates_long_excerpt(self):
+        long_text = "x" * 5000
+        bundle = _make_markdown_bundle([
+            {"city_key": "Oslo", "partial_answer": long_text},
+        ])
+        evidence = _extract_ccc_evidence(bundle)
+        assert len(evidence["oslo"][0]) == 800  # _MAX_EXCERPT_CHARS
 
-    def test_skips_null_cells(self):
-        bundle = _make_sql_bundle(
-            ["city", "capex", "ev_bus_count"],
-            [["Dresden", None, 10]],
-        )
-        values = _extract_ccc_values(bundle)
-        assert ("dresden", "capex") not in values
-        assert values[("dresden", "ev_bus_count")] == "10"
-
-    def test_skips_empty_city(self):
-        bundle = _make_sql_bundle(
-            ["city", "capex"],
-            [["", 50], ["   ", 60], ["Berlin", 70]],
-        )
-        values = _extract_ccc_values(bundle)
-        assert list(values) == [("berlin", "capex")]
-
-    def test_skips_result_without_city_column(self):
-        bundle = _make_sql_bundle(["year", "capex"], [[2024, 50]])
-        assert _extract_ccc_values(bundle) == {}
-
-    def test_handles_missing_sql_section(self):
-        assert _extract_ccc_values({}) == {}
-        assert _extract_ccc_values({"sql": None}) == {}
-
-    def test_lowercases_city_and_field(self):
-        bundle = _make_sql_bundle(["City", "CAPEX"], [["DRESDEN", 50]])
-        values = _extract_ccc_values(bundle)
-        assert values == {("dresden", "capex"): "50"}
-
-    def test_last_write_wins_on_duplicate_key(self):
-        bundle = {
-            "sql": {
-                "results": [
-                    {"columns": ["city", "capex"], "rows": [["Berlin", 100]]},
-                    {"columns": ["city", "capex"], "rows": [["Berlin", 200]]},
-                ]
-            }
-        }
-        values = _extract_ccc_values(bundle)
-        assert values[("berlin", "capex")] == "200"
+    def test_handles_missing_markdown_section(self):
+        assert _extract_ccc_evidence({}) == {}
+        assert _extract_ccc_evidence({"markdown": None}) == {}
+        assert _extract_ccc_evidence({"markdown": {"excerpts": None}}) == {}
 
 
 class TestCheckFreshnessShortCircuits:
@@ -106,36 +95,24 @@ class TestCheckFreshnessShortCircuits:
     def test_no_findings_returns_empty(self):
         assert check_freshness([], {}, config=None, api_key="") == []  # type: ignore[arg-type]
 
-    def test_no_sql_overlap_returns_empty_without_llm(self):
-        # Config/api_key are unused because the short-circuit fires before
-        # any LLM client is constructed.
-        wf = WebFinding(
-            city="Dresden",
-            field="capex",
-            value=50,
-            unit="EUR_millions",
-            source_url="https://example.com",
-            source_type="government_report",
-            source_date="2025",
-            extraction_confidence=0.9,
-        )
-        bundle = _make_sql_bundle(["city", "taxi_count"], [["Dresden", 200]])
-        assert check_freshness([wf], bundle, config=None, api_key="") == []  # type: ignore[arg-type]
+    def test_no_markdown_evidence_returns_empty_without_llm(self):
+        bundle = _make_markdown_bundle([])
+        assert check_freshness([_wf()], bundle, config=None, api_key="") == []  # type: ignore[arg-type]
 
-    def test_dresden_capex_repro_now_has_overlap(self):
-        """The reviewer's repro: Dresden/capex web finding + CCC Dresden/capex row
-        must now produce an overlap so classification runs."""
-        wf = WebFinding(
-            city="Dresden",
-            field="capex",
-            value=50,
-            unit="EUR_millions",
-            source_url="https://example.com",
-            source_type="government_report",
-            source_date="2025",
-            extraction_confidence=0.9,
-        )
-        bundle = _make_sql_bundle(["city", "capex"], [["Dresden", 30]])
-        values = _extract_ccc_values(bundle)
-        key = (wf.city.lower(), wf.field.lower())
-        assert values.get(key) == "30", "CCC value must be reachable by (city, field)"
+    def test_other_city_evidence_returns_empty(self):
+        """Web finding for Dresden, but markdown only has Berlin → no overlap."""
+        bundle = _make_markdown_bundle([
+            {"city_key": "Berlin", "partial_answer": "Berlin has 120M EUR."},
+        ])
+        assert check_freshness([_wf(city="Dresden")], bundle, config=None, api_key="") == []  # type: ignore[arg-type]
+
+    def test_dresden_capex_repro_has_overlap(self):
+        """The reviewer's repro: web finding for Dresden/capex + markdown excerpt
+        for Dresden must be reachable as overlapping evidence so classification
+        can run (short-circuits pre-LLM if no evidence; here evidence exists)."""
+        bundle = _make_markdown_bundle([
+            {"city_key": "Dresden", "partial_answer": "Dresden has allocated 45M EUR to climate capex."},
+        ])
+        evidence = _extract_ccc_evidence(bundle)
+        assert "dresden" in evidence, "Dresden evidence must be reachable by lowercased city key"
+        assert evidence["dresden"], "Must contain at least one non-empty excerpt"

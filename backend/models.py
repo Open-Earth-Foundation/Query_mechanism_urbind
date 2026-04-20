@@ -18,29 +18,6 @@ class BaseResult(BaseModel):
     error: ErrorInfo | None = None
 
 
-class SchemaForeignKey(BaseModel):
-    column: str
-    ref_table: str
-    ref_column: str
-
-
-class SchemaColumn(BaseModel):
-    name: str
-    type: str  # e.g., "String", "Text", "Numeric", "Integer", "Boolean", etc.
-
-
-class SchemaTable(BaseModel):
-    name: str
-    columns: list[str]  # kept for backward compatibility
-    columns_with_types: list[SchemaColumn] = []  # detailed column info
-    foreign_keys: list[SchemaForeignKey]
-    unique_constraints: list[list[str]]
-
-
-class SchemaSummary(BaseModel):
-    tables: list[SchemaTable]
-
-
 class RunMetadata(BaseModel):
     run_id: str
     question: str
@@ -53,9 +30,5 @@ class RunMetadata(BaseModel):
 __all__ = [
     "ErrorInfo",
     "BaseResult",
-    "SchemaForeignKey",
-    "SchemaColumn",
-    "SchemaTable",
-    "SchemaSummary",
     "RunMetadata",
 ]

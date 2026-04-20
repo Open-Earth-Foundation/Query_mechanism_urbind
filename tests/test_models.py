@@ -11,33 +11,10 @@ from backend.modules.orchestrator.models import (
     OrchestratorDecision,
     ResearchQuestionRefinement,
 )
-from backend.modules.sql_researcher.models import (
-    SqlQuery,
-    SqlQueryPlan,
-    SqlQueryResult,
-    SqlResearchResult,
-)
 from backend.modules.writer.models import WriterOutput
 
 
 def test_model_validation() -> None:
-    query = SqlQuery(query_id="q1", query="SELECT 1")
-    plan = SqlQueryPlan(queries=[query])
-    result = SqlQueryResult(
-        query_id="q1",
-        columns=["value"],
-        rows=[[1]],
-        row_count=1,
-        elapsed_ms=5,
-        token_count=3,
-    )
-    research = SqlResearchResult(
-        queries=[query],
-        results=[result],
-        total_token_count=3,
-        truncation_applied=False,
-    )
-
     excerpt = MarkdownExcerpt(
         quote="Munich has deployed 43 existing public chargers as of 2024.",
         city_name="Munich",
@@ -58,8 +35,6 @@ def test_model_validation() -> None:
 
     writer = WriterOutput(content="# Answer")
 
-    assert plan.queries[0].query == "SELECT 1"
-    assert research.total_token_count == 3
     assert md_result.excerpts[0].city_name == "Munich"
     assert decision.action == "write"
     assert refinement.research_question.startswith("For Munich")
@@ -87,4 +62,4 @@ def test_markdown_excerpt_accepts_quote_and_partial_answer_fields() -> None:
 
 def test_orchestrator_decision_rejects_legacy_actions() -> None:
     with pytest.raises(ValidationError):
-        OrchestratorDecision(action="run_sql", reason="Need more data")
+        OrchestratorDecision(action="draft", reason="Need more data")

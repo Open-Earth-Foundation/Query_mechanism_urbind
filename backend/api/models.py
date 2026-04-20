@@ -161,6 +161,7 @@ class RunSummary(BaseModel):
 
     run_id: str
     question: str
+    picker_timestamp: str
 
 
 class RunListResponse(BaseModel):

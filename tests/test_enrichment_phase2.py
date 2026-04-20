@@ -15,7 +15,7 @@ from backend.modules.web_researcher.deep_diver import (
     _normalize_url,
 )
 from backend.modules.web_researcher.extractor import extract_fields_from_content
-from backend.modules.web_researcher.freshness import check_freshness, _extract_ccc_values
+from backend.modules.web_researcher.freshness import check_freshness, _extract_ccc_evidence
 from backend.modules.web_researcher.models import (
     FreshnessResult,
     SearchBatch,
@@ -352,19 +352,17 @@ class TestFreshnessChecker:
         result = check_freshness(findings, {"markdown": None}, config, "key")
         assert result == []
 
-    def test_extract_ccc_values(self) -> None:
+    def test_extract_ccc_evidence(self) -> None:
         context = {
-            "sql": {
-                "results": [
-                    {
-                        "columns": ["city", "capex"],
-                        "rows": [["Dresden", 50]],
-                    }
+            "markdown": {
+                "excerpts": [
+                    {"city_key": "Dresden", "partial_answer": "Dresden allocated 50M EUR to climate capex."},
                 ]
             }
         }
-        values = _extract_ccc_values(context)
-        assert values[("dresden", "capex")] == "50"
+        evidence = _extract_ccc_evidence(context)
+        assert "dresden" in evidence
+        assert evidence["dresden"][0].startswith("Dresden allocated 50M EUR")
 
 
 # ---------------------------------------------------------------------------

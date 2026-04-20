@@ -412,19 +412,6 @@ def _build_context_summary(context_bundle: dict[str, Any]) -> dict[str, Any]:
         if key in context_bundle:
             summary[key] = context_bundle[key]
 
-    # SQL data: keep query intents and result rows, drop raw SQL text
-    sql_data = context_bundle.get("sql")
-    if isinstance(sql_data, dict):
-        condensed: list[dict[str, object]] = []
-        for q in sql_data.get("queries", []):
-            if isinstance(q, dict) and q.get("results"):
-                condensed.append({
-                    "intent": q.get("intent", ""),
-                    "results": q.get("results"),
-                })
-        if condensed:
-            summary["sql_data"] = condensed
-
     # Markdown: city list + excerpt count — never the full excerpt text
     markdown = context_bundle.get("markdown")
     if isinstance(markdown, dict):

@@ -2,6 +2,7 @@
 
 import { Maximize2, ScrollText } from "lucide-react";
 
+import { DocumentExportControls } from "@/components/document-export-controls";
 import { MarkdownWithReferences } from "@/components/markdown-with-references";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -42,10 +43,13 @@ export function WriterDocumentRail({
 
         <div className="mt-4 flex flex-wrap items-center justify-between gap-2">
           <Badge variant="secondary">Run {runId.slice(0, 8)}</Badge>
-          <Button type="button" size="sm" variant="outline" onClick={onOpenFullDocument}>
-            <Maximize2 className="h-4 w-4" />
-            Open Full View
-          </Button>
+          <div className="flex flex-wrap items-center justify-end gap-2">
+            <DocumentExportControls runId={runId} content={content} />
+            <Button type="button" size="sm" variant="outline" onClick={onOpenFullDocument}>
+              <Maximize2 className="h-4 w-4" />
+              Open Full View
+            </Button>
+          </div>
         </div>
       </div>
 

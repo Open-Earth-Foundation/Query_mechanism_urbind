@@ -18,7 +18,6 @@ from backend.utils.config import (
     MarkdownResearcherConfig,
     OrchestratorConfig,
     RetryConfig,
-    SqlResearcherConfig,
     WriterConfig,
     load_config,
 )
@@ -63,7 +62,6 @@ def _app_config(
 ) -> AppConfig:
     return AppConfig(
         orchestrator=OrchestratorConfig(model="test-model", context_bundle_name="context_bundle.json"),
-        sql_researcher=SqlResearcherConfig(model="test-model"),
         markdown_researcher=_markdown_researcher_config(),
         writer=WriterConfig(model="test-model"),
         chat=chat or _chat_config(),
@@ -71,7 +69,6 @@ def _app_config(
         retry=RetryConfig(backoff_base_seconds=1.0, backoff_max_seconds=30.0),
         runs_dir=runs_dir,
         markdown_dir=markdown_dir,
-        enable_sql=False,
     )
 
 
@@ -580,7 +577,6 @@ def test_load_or_build_evidence_cache_strips_prompt_noise_and_reuses_cache(
     config = load_config()
     config.runs_dir = tmp_path / "output"
     config.markdown_dir = Path("documents")
-    config.enable_sql = False
     normalized_contexts = [
         context_chat.ChatContextSource(
             run_id="run-1",

@@ -183,10 +183,6 @@ def _slim_context_for_gap_analysis(context_bundle: dict[str, Any]) -> dict[str, 
         if key in context_bundle:
             slim[key] = context_bundle[key]
 
-    # SQL: keep full results (usually compact)
-    if "sql" in context_bundle:
-        slim["sql"] = context_bundle["sql"]
-
     # Markdown: keep excerpts and city lists, drop chunk-level metadata
     markdown = context_bundle.get("markdown")
     if isinstance(markdown, dict):

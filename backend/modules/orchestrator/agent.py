@@ -139,7 +139,6 @@ def decide_next_action(
     payload = {
         "question": question,
         "context_bundle": context_bundle,
-        "sql_enabled": config.enable_sql,
         "context_window_tokens": config.orchestrator.context_window_tokens,
         "max_input_tokens": get_max_input_tokens(
             config.orchestrator.context_window_tokens,
