@@ -51,6 +51,22 @@ class TestExtractCccEvidence:
         ])
         assert list(_extract_ccc_evidence(bundle)) == ["dresden"]
 
+    def test_normalizes_multiword_city_key_with_underscore(self):
+        """city_key from markdown is already normalized (e.g. frankfurt_am_main)."""
+        bundle = _make_markdown_bundle([
+            {"city_key": "frankfurt_am_main", "partial_answer": "evidence"},
+        ])
+        evidence = _extract_ccc_evidence(bundle)
+        assert "frankfurt_am_main" in evidence
+
+    def test_falls_back_to_city_name_when_key_missing(self):
+        """Older bundles may only carry city_name; normalize it consistently."""
+        bundle = _make_markdown_bundle([
+            {"city_name": "Frankfurt am Main", "partial_answer": "evidence"},
+        ])
+        evidence = _extract_ccc_evidence(bundle)
+        assert "frankfurt_am_main" in evidence
+
     def test_falls_back_to_quote_when_partial_answer_missing(self):
         bundle = _make_markdown_bundle([
             {"city_key": "Berlin", "quote": "Berlin allocated 120M EUR."},
@@ -114,5 +130,19 @@ class TestCheckFreshnessShortCircuits:
             {"city_key": "Dresden", "partial_answer": "Dresden has allocated 45M EUR to climate capex."},
         ])
         evidence = _extract_ccc_evidence(bundle)
-        assert "dresden" in evidence, "Dresden evidence must be reachable by lowercased city key"
+        assert "dresden" in evidence, "Dresden evidence must be reachable by normalized key"
         assert evidence["dresden"], "Must contain at least one non-empty excerpt"
+
+    def test_multiword_city_lookup_matches_web_finding(self):
+        """Regression: web finding cities are display names (e.g. 'Frankfurt am Main'),
+        while excerpt city_keys are normalized ('frankfurt_am_main'). Both sides
+        must resolve to the same key via normalize_city_key so the freshness
+        lookup actually hits."""
+        from backend.utils.city_normalization import normalize_city_key
+
+        bundle = _make_markdown_bundle([
+            {"city_key": "frankfurt_am_main", "partial_answer": "Frankfurt allocated 200M EUR."},
+        ])
+        evidence = _extract_ccc_evidence(bundle)
+        wf = _wf(city="Frankfurt am Main", field="capex")
+        assert normalize_city_key(wf.city) in evidence

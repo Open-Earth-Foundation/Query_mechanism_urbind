@@ -13,6 +13,7 @@ from backend.modules.web_researcher.utils.json_helpers import (
     extract_json_candidate,
     extract_message_text,
 )
+from backend.utils.city_normalization import normalize_city_key
 from backend.utils.config import AppConfig
 
 logger = logging.getLogger(__name__)
@@ -51,7 +52,7 @@ def check_freshness(
 
     findings_to_check: list[tuple[WebFinding, list[str]]] = []
     for wf in web_findings:
-        excerpts = ccc_evidence.get(wf.city.strip().lower(), [])
+        excerpts = ccc_evidence.get(normalize_city_key(wf.city), [])
         if excerpts:
             findings_to_check.append((wf, excerpts))
 
@@ -200,10 +201,12 @@ def _extract_ccc_evidence(context_bundle: dict[str, Any]) -> dict[str, list[str]
     for excerpt in excerpts:
         if not isinstance(excerpt, dict):
             continue
-        city = excerpt.get("city_key", "")
-        if not isinstance(city, str) or not city.strip():
+        raw_city = excerpt.get("city_key") or excerpt.get("city_name") or ""
+        if not isinstance(raw_city, str):
             continue
-        city_key = city.strip().lower()
+        city_key = normalize_city_key(raw_city)
+        if not city_key:
+            continue
 
         text = excerpt.get("partial_answer") or excerpt.get("quote") or ""
         if not isinstance(text, str) or not text.strip():
