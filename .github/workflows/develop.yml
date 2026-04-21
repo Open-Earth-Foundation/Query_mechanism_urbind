@@ -210,6 +210,8 @@ jobs:
         run: |
           kubectl -n default create secret generic urbind-query-mechanism-backend-secrets \
             --from-literal=OPENROUTER_API_KEY="${{ secrets.OPENROUTER_API_KEY }}" \
+            --from-literal=SERPER_API_KEY="${{ secrets.SERPER_API_KEY }}" \
+            --from-literal=FIRECRAWL_API_KEY="${{ secrets.FIRECRAWL_API_KEY }}" \
             --dry-run=client -o yaml | kubectl apply -f -
 
       - name: Apply Kubernetes manifests
