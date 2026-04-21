@@ -24,6 +24,7 @@ import {
 
 import { AssumptionsWorkspace } from "@/components/assumptions-workspace";
 import { CccDocumentRail } from "@/components/ccc-document-rail";
+import { PipelineProgress } from "@/components/pipeline-progress";
 import { ContextChatWorkspace } from "@/components/context-chat/context-chat-workspace";
 import { DevModeToggle } from "@/components/dev-mode-toggle";
 import { DevToolsPanel } from "@/components/dev-tools-panel";
@@ -51,6 +52,7 @@ import {
   CityGroup,
   CityMarkdownResponse,
   CreateRunResponse,
+  PipelineStep,
   RunContextResponse,
   RunOutputResponse,
   RunSummary,
@@ -178,6 +180,8 @@ export default function Home() {
   const [query3, setQuery3] = useState("");
   const [scopeMode, setScopeMode] = useState<CityScopeMode>("all");
   const [analysisMode, setAnalysisMode] = useState<AnalysisMode>("aggregate");
+  const [enrichmentEnabled, setEnrichmentEnabled] = useState(true);
+  const [webResearchEnabled, setWebResearchEnabled] = useState(true);
   const [cities, setCities] = useState<string[]>([]);
   const [selectedCities, setSelectedCities] = useState<string[]>([]);
   const [cityGroups, setCityGroups] = useState<CityGroup[]>([]);
@@ -886,6 +890,8 @@ export default function Home() {
         query_3: showDirectQueryControls ? query3 : undefined,
         cities: scopeMode === "all" ? undefined : scopedCities,
         analysis_mode: analysisMode,
+        enrichment_enabled: enrichmentEnabled,
+        web_research_enabled: enrichmentEnabled && webResearchEnabled,
       });
       setRunResponse(payload);
       setSelectedExistingRunId(payload.run_id);
@@ -1307,6 +1313,49 @@ export default function Home() {
                 </p>
               </div>
 
+              <div className="space-y-3 rounded-md border border-slate-200 p-3">
+                <div className="flex items-center justify-between">
+                  <Label>Enrichment layer</Label>
+                  <Badge variant={enrichmentEnabled ? "secondary" : "outline"}>
+                    {enrichmentEnabled ? "On" : "Off"}
+                  </Badge>
+                </div>
+                <div className="flex items-center justify-between gap-2">
+                  <span className="text-sm text-slate-700">Assumptions + web research step</span>
+                  <Button
+                    type="button"
+                    size="sm"
+                    variant={enrichmentEnabled ? "default" : "outline"}
+                    onClick={() => setEnrichmentEnabled((v) => !v)}
+                  >
+                    {enrichmentEnabled ? "Disable" : "Enable"}
+                  </Button>
+                </div>
+                <div className="flex items-center justify-between gap-2">
+                  <span
+                    className={`text-sm ${enrichmentEnabled ? "text-slate-700" : "text-slate-400"}`}
+                  >
+                    Web research sub-step
+                  </span>
+                  <Button
+                    type="button"
+                    size="sm"
+                    variant={enrichmentEnabled && webResearchEnabled ? "default" : "outline"}
+                    disabled={!enrichmentEnabled}
+                    onClick={() => setWebResearchEnabled((v) => !v)}
+                  >
+                    {webResearchEnabled ? "Disable" : "Enable"}
+                  </Button>
+                </div>
+                <p className="text-xs text-slate-600">
+                  {enrichmentEnabled
+                    ? webResearchEnabled
+                      ? "Gap analysis, web research, and assumption estimates will run after CCC research."
+                      : "Gap analysis and assumption estimates will run; live web search is skipped."
+                    : "CCC excerpts only — no gap analysis, web research, or assumption estimates."}
+                </p>
+              </div>
+
               <Button
                 onClick={handleBuildDocument}
                 disabled={isSubmitting || !question.trim() || !hasValidScope}
@@ -1326,12 +1375,17 @@ export default function Home() {
                 {!runId ? (
                   <p className="text-sm text-slate-500">No run submitted yet.</p>
                 ) : isLongWait ? (
-                  <div className="rounded-md border border-amber-200 bg-amber-50 p-3 text-sm text-amber-900">
-                    <div className="mb-2 flex items-center gap-2 font-medium">
-                      <CircleDashed className="h-4 w-4 animate-spin" />
-                      Build in progress
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-amber-200 bg-amber-50 p-3 text-sm text-amber-900">
+                      <div className="mb-2 flex items-center gap-2 font-medium">
+                        <CircleDashed className="h-4 w-4 animate-spin" />
+                        Build in progress
+                      </div>
+                      <p>Leave this page open. Document generation may take several minutes for broad questions.</p>
                     </div>
-                    <p>Leave this page open. Document generation may take several minutes for broad questions.</p>
+                    {devFeatures.showPipelineProgress && runStatus?.steps ? (
+                      <PipelineProgress steps={runStatus.steps} compact />
+                    ) : null}
                   </div>
                 ) : isTerminal ? (
                   <div className="rounded-md border border-slate-200 bg-slate-50 p-3 text-sm text-slate-700">
@@ -1356,6 +1410,9 @@ export default function Home() {
                   </div>
                 ) : null}
                 {runError ? <p className="text-sm text-red-600">{runError}</p> : null}
+                {devFeatures.showPipelineProgress && isTerminal && runStatus?.steps ? (
+                  <PipelineProgress steps={runStatus.steps} compact />
+                ) : null}
               </div>
 
               {devFeatures.showRunId || devFeatures.showApiKeyControls ? (
@@ -1463,12 +1520,16 @@ export default function Home() {
                         <Loader2 className="h-4 w-4 animate-spin" />
                         Generating document...
                       </div>
-                      <div className="space-y-2">
-                        <div className="h-2 animate-pulse rounded bg-slate-200" />
-                        <div className="h-2 w-11/12 animate-pulse rounded bg-slate-200" />
-                        <div className="h-2 w-10/12 animate-pulse rounded bg-slate-200" />
-                        <div className="h-2 w-8/12 animate-pulse rounded bg-slate-200" />
-                      </div>
+                      {devFeatures.showPipelineProgress && runStatus?.steps ? (
+                        <PipelineProgress steps={runStatus.steps} />
+                      ) : (
+                        <div className="space-y-2">
+                          <div className="h-2 animate-pulse rounded bg-slate-200" />
+                          <div className="h-2 w-11/12 animate-pulse rounded bg-slate-200" />
+                          <div className="h-2 w-10/12 animate-pulse rounded bg-slate-200" />
+                          <div className="h-2 w-8/12 animate-pulse rounded bg-slate-200" />
+                        </div>
+                      )}
                     </div>
                   ) : (
                     <div className="rounded-md border border-dashed border-slate-300 bg-white p-8 text-center text-slate-600">

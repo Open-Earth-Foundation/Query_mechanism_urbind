@@ -27,6 +27,8 @@ export interface CreateRunRequest {
   config_path?: string;
   markdown_path?: string;
   log_llm_payload?: boolean;
+  enrichment_enabled?: boolean;
+  web_research_enabled?: boolean;
 }
 
 export interface CreateRunResponse {
@@ -37,6 +39,33 @@ export interface CreateRunResponse {
   context_url: string;
 }
 
+export type PipelineItemType =
+  | "query_group"
+  | "search_result"
+  | "field"
+  | "estimate"
+  | "gap"
+  | "batch_summary";
+
+export interface PipelineStepItem {
+  text: string;
+  item_type?: PipelineItemType | null;
+  title?: string | null;
+  domain?: string | null;
+  url?: string | null;
+  count?: number | null;
+  metadata?: Record<string, unknown> | null;
+}
+
+export interface PipelineStep {
+  id: string;
+  label: string;
+  status: string;
+  started_at?: string | null;
+  completed_at?: string | null;
+  items: PipelineStepItem[];
+}
+
 export interface RunStatusResponse {
   run_id: string;
   status: RunStatus;
@@ -44,6 +73,7 @@ export interface RunStatusResponse {
   completed_at?: string | null;
   finish_reason?: string | null;
   error?: RunError | null;
+  steps?: PipelineStep[] | null;
 }
 
 export interface RunOutputResponse {

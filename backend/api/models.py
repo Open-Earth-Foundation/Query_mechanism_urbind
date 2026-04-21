@@ -41,6 +41,8 @@ class CreateRunRequest(BaseModel):
     markdown_path: str | None = None
     log_llm_payload: bool = False
     analysis_mode: AnalysisMode = "aggregate"
+    enrichment_enabled: bool | None = None
+    web_research_enabled: bool | None = None
 
 
 class CreateRunResponse(BaseModel):
@@ -53,6 +55,29 @@ class CreateRunResponse(BaseModel):
     context_url: str
 
 
+class PipelineStepItem(BaseModel):
+    """Single sub-item inside a pipeline progress step."""
+
+    text: str
+    item_type: str | None = None
+    title: str | None = None
+    domain: str | None = None
+    url: str | None = None
+    count: int | None = None
+    metadata: dict[str, object] | None = None
+
+
+class PipelineStep(BaseModel):
+    """One step in the pipeline progress tracker."""
+
+    id: str
+    label: str
+    status: str
+    started_at: str | None = None
+    completed_at: str | None = None
+    items: list[PipelineStepItem] = Field(default_factory=list)
+
+
 class RunStatusResponse(BaseModel):
     """Response body for run status polling."""
 
@@ -62,6 +87,7 @@ class RunStatusResponse(BaseModel):
     completed_at: datetime | None = None
     finish_reason: str | None = None
     error: RunError | None = None
+    steps: list[PipelineStep] | None = None
 
 
 class RunOutputResponse(BaseModel):
@@ -408,6 +434,8 @@ __all__ = [
     "RunStatus",
     "AnalysisMode",
     "RunError",
+    "PipelineStepItem",
+    "PipelineStep",
     "CreateRunRequest",
     "CreateRunResponse",
     "RunStatusResponse",

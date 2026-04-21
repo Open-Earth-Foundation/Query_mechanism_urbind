@@ -65,6 +65,25 @@ class AssumptionsReviewerConfig(AgentConfig):
     """Configuration for two-pass missing-data discovery."""
 
 
+class EnrichmentConfig(AgentConfig):
+    """Config for web research enrichment and assumptions modelling layer."""
+
+    enabled: bool = False
+    # Web research sub-config
+    web_research_enabled: bool = False
+    max_workers: int = 6
+    max_queries_per_batch: int = 10
+    max_total_queries_per_run: int = 50
+    max_retries_per_worker: int = 2
+    max_deep_dives_per_run: int = 3
+    max_pages_per_deep_dive: int = 10
+    freshness_threshold_days: int = 730
+    max_fields_per_query: int = 20
+    # Assumptions estimator sub-config
+    assumptions_estimator_model: str = ""  # empty = same as self.model
+    assumptions_estimator_temperature: float = 0.0
+
+
 class BenchmarkFactJudgeConfig(BaseModel):
     """LLM-as-judge settings for gold recall fact-presence checks."""
 
@@ -119,6 +138,9 @@ class AppConfig(BaseModel):
     assumptions_reviewer: AssumptionsReviewerConfig = Field(
         default_factory=lambda: AssumptionsReviewerConfig(model="openai/gpt-5.4-mini")
     )
+    enrichment: EnrichmentConfig = Field(
+        default_factory=lambda: EnrichmentConfig(model="openai/gpt-5.4-mini", enabled=False)
+    )
     benchmark_fact_judge: BenchmarkFactJudgeConfig = Field(
         default_factory=lambda: BenchmarkFactJudgeConfig(model="openai/gpt-5.4-mini")
     )
@@ -162,6 +184,8 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
     runs_dir = os.getenv("RUNS_DIR")
     markdown_dir = os.getenv("MARKDOWN_DIR")
     openrouter_base_url = os.getenv("OPENROUTER_BASE_URL")
+    enrichment_enabled = os.getenv("ENRICHMENT_ENABLED")
+    web_research_enabled = os.getenv("WEB_RESEARCH_ENABLED")
     vector_store_enabled = os.getenv("VECTOR_STORE_ENABLED")
     chroma_persist_path = os.getenv("CHROMA_PERSIST_PATH")
     chroma_collection_name = os.getenv("CHROMA_COLLECTION_NAME")
@@ -172,6 +196,14 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
         config.markdown_dir = Path(markdown_dir)
     if openrouter_base_url:
         config.openrouter_base_url = openrouter_base_url
+    if enrichment_enabled is not None:
+        parsed = _parse_env_bool(enrichment_enabled)
+        if parsed is not None:
+            config.enrichment.enabled = parsed
+    if web_research_enabled is not None:
+        parsed = _parse_env_bool(web_research_enabled)
+        if parsed is not None:
+            config.enrichment.web_research_enabled = parsed
     if vector_store_enabled is not None:
         parsed = _parse_env_bool(vector_store_enabled)
         if parsed is not None:
@@ -261,6 +293,7 @@ __all__ = [
     "ChatConfig",
     "WriterConfig",
     "AssumptionsReviewerConfig",
+    "EnrichmentConfig",
     "BenchmarkFactJudgeConfig",
     "RetryConfig",
     "VectorStoreConfig",

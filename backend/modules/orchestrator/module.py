@@ -30,6 +30,7 @@ from backend.modules.orchestrator.utils.error_handlers import (
 from backend.modules.orchestrator.utils.io import (
     write_json,
 )
+from backend.modules.web_researcher.module import run_enrichment_pipeline
 from backend.modules.vector_store.indexer import update_markdown_index
 from backend.modules.vector_store.retriever import (
     as_markdown_documents,
@@ -38,6 +39,7 @@ from backend.modules.vector_store.retriever import (
 )
 from backend.modules.writer.agent import write_markdown
 from backend.modules.writer.models import WriterOutput
+from backend.services.progress_tracker import ProgressTracker
 from backend.services.run_logger import RunLogger
 from backend.utils.config import AppConfig, get_openrouter_api_key
 from backend.utils.city_normalization import format_city_stem, normalize_city_key
@@ -272,6 +274,7 @@ def run_pipeline(
     run_logger.update_analysis_mode(analysis_mode)
     run_logger.record_artifact("context_bundle", paths.context_bundle)
     run_log_handler = attach_run_file_logger(paths.base_dir)
+    progress = ProgressTracker(paths.base_dir)
 
     def _fail_research_question_refinement(
         message: str,
@@ -295,6 +298,7 @@ def run_pipeline(
             raise ValueError(message)
         raise ValueError(message) from exc
 
+    progress.start_step("question_refinement", "Refining research question")
     canonical_research_query = question.strip() or question
     retrieval_queries: list[str]
     if query_mode == "dev":
@@ -379,6 +383,10 @@ def run_pipeline(
         },
     )
     run_logger.record_artifact("research_question", paths.research_question)
+    progress.add_item("question_refinement", f"Research query: {canonical_research_query}")
+    for i, rq in enumerate(retrieval_queries, 1):
+        progress.add_item("question_refinement", f"Retrieval query {i}: {rq}")
+    progress.complete_step("question_refinement")
 
     def _run_initial_markdown() -> dict[str, object]:
         markdown_source_mode = "standard_chunking"
@@ -489,10 +497,13 @@ def run_pipeline(
             "markdown_source_mode": markdown_source_mode,
         }
 
+    progress.start_step("markdown_research", "Searching markdown documents")
+
     try:
         markdown_payload = _run_initial_markdown()
     except (ValueError, RuntimeError, OSError, KeyError) as exc:
         return handle_task_error("markdown", exc, run_logger, run_log_handler, paths)
+
     if not markdown_payload:
         run_logger.finalize("failed", finish_reason="markdown_extraction_failed")
         detach_run_file_logger(run_log_handler)
@@ -609,6 +620,15 @@ def run_pipeline(
         write_json(paths.markdown_excerpts, markdown_bundle)
         run_logger.record_artifact("markdown_excerpts", paths.markdown_excerpts)
         run_logger.update_markdown_bundle(markdown_bundle)
+        progress.add_item(
+            "markdown_research",
+            f"{len(markdown_chunks)} chunks from {len(inspected_cities)} cities",
+        )
+        progress.add_item(
+            "markdown_research",
+            f"{markdown_bundle.get('excerpt_count', 0)} excerpts extracted",
+        )
+        progress.complete_step("markdown_research")
         if config.markdown_researcher.strict_decision_audit and not bool(
             decision_audit_artifact["invariant_ok"]
         ):
@@ -635,8 +655,28 @@ def run_pipeline(
         return paths
 
     # Write final output directly from the prepared context bundle.
+    progress.start_step("context_bundle", "Assembling context bundle")
     context_bundle = run_logger.context_bundle
     context_bundle["analysis_mode"] = analysis_mode
+    progress.add_item("context_bundle", "SQL + markdown evidence merged")
+    progress.complete_step("context_bundle")
+
+    # --- Enrichment layer (gap analysis + web research + assumptions modelling) ---
+    if config.enrichment.enabled:
+        context_bundle = run_enrichment_pipeline(
+            question=question,
+            context_bundle=context_bundle,
+            base_dir=paths.base_dir,
+            run_logger=run_logger,
+            config=config,
+            api_key=api_key,
+            progress=progress,
+        )
+        run_logger.context_bundle = context_bundle
+        run_logger.write_context_bundle()
+    # --- END enrichment ---
+
+    progress.start_step("writer", "Generating final document")
     try:
         result = handle_write_decision(
             question,
@@ -649,11 +689,14 @@ def run_pipeline(
             log_llm_payload=log_llm_payload,
             writer_func=writer_func,
         )
+        progress.add_item("writer", "Document written")
+        progress.complete_step("writer")
         return result if result is not None else paths
     except Exception:
         logger.exception(
             "Unexpected error during write decision for run_id=%s", run_id_value
         )
+        progress.complete_step("writer", status="error")
         run_logger.finalize("failed", finish_reason="writer_unexpected_error")
         detach_run_file_logger(run_log_handler)
         raise

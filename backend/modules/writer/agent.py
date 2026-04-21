@@ -28,8 +28,11 @@ from backend.services.agents import (
 from backend.utils.city_normalization import format_city_display_name
 from backend.utils.config import AppConfig
 from backend.utils.prompts import load_prompt
+from openai import APIConnectionError, APIStatusError, APITimeoutError
+
 from backend.utils.retry import (
     RetrySettings,
+    call_with_retries,
     compute_retry_delay_seconds,
     log_retry_event,
     log_retry_exhausted,
@@ -100,6 +103,20 @@ def _run_writer_once(
     raise ValueError("Writer did not return structured output.")
 
 
+def _is_retryable_writer_error(exc: Exception) -> bool:
+    """Return True for transient errors worth retrying."""
+    # Malformed response body from provider (HTTP 200 but truncated JSON)
+    if isinstance(exc, json.JSONDecodeError):
+        return True
+    # Network-level transient errors
+    if isinstance(exc, (APIConnectionError, APITimeoutError)):
+        return True
+    # Provider-side server errors
+    if isinstance(exc, APIStatusError):
+        return exc.status_code in {408, 429, 500, 502, 503, 504}
+    return False
+
+
 def write_markdown(
     question: str,
     context_bundle: dict[str, object],
@@ -120,6 +137,12 @@ def write_markdown(
     max_attempts = config.writer.max_coverage_attempts
     retry_settings = RetrySettings.bounded(
         max_attempts=max_attempts,
+        backoff_base_seconds=config.retry.backoff_base_seconds,
+        backoff_max_seconds=config.retry.backoff_max_seconds,
+    )
+
+    api_retry_settings = RetrySettings.bounded(
+        max_attempts=config.retry.max_attempts,
         backoff_base_seconds=config.retry.backoff_base_seconds,
         backoff_max_seconds=config.retry.backoff_max_seconds,
     )
@@ -147,11 +170,17 @@ def write_markdown(
                 reconsideration_payload["missing_cities"] = missing_city_names
             payload["reconsideration"] = reconsideration_payload
 
-        output = _run_writer_once(
-            agent=agent,
-            payload=payload,
-            max_turns=config.writer.max_turns,
-            log_llm_payload=log_llm_payload,
+        output = call_with_retries(
+            lambda: _run_writer_once(
+                agent=agent,
+                payload=payload,
+                max_turns=config.writer.max_turns,
+                log_llm_payload=log_llm_payload,
+            ),
+            operation="writer.llm_call",
+            retry_settings=api_retry_settings,
+            should_retry=_is_retryable_writer_error,
+            run_id=run_id,
         )
         normalized_content = normalize_reference_citations(output.content)
 
