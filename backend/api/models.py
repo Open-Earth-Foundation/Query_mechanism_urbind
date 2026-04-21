@@ -41,6 +41,8 @@ class CreateRunRequest(BaseModel):
     markdown_path: str | None = None
     log_llm_payload: bool = False
     analysis_mode: AnalysisMode = "aggregate"
+    enrichment_enabled: bool | None = None
+    web_research_enabled: bool | None = None
 
 
 class CreateRunResponse(BaseModel):

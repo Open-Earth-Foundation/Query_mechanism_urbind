@@ -39,6 +39,8 @@ class StartRunCommand:
     log_llm_payload: bool = False
     api_key: str | None = None
     analysis_mode: Literal["aggregate", "city_by_city"] = "aggregate"
+    enrichment_enabled: bool | None = None
+    web_research_enabled: bool | None = None
 
 
 def _normalize_optional_query(value: str | None) -> str | None:
@@ -73,6 +75,8 @@ class RunExecutor:
             log_llm_payload=command.log_llm_payload,
             api_key=command.api_key,
             analysis_mode=command.analysis_mode,
+            enrichment_enabled=command.enrichment_enabled,
+            web_research_enabled=command.web_research_enabled,
         )
         record = self._run_store.create_queued_run(
             question=resolved_command.question, requested_run_id=resolved_command.requested_run_id
@@ -117,6 +121,11 @@ class RunExecutor:
                 config.runs_dir,
                 base_markdown_dir,
             )
+            if command.enrichment_enabled is not None:
+                config.enrichment.enabled = command.enrichment_enabled
+            if command.web_research_enabled is not None:
+                config.enrichment.web_research_enabled = command.web_research_enabled
+
             if command.cities:
                 subset_dir = _prepare_selected_markdown_dir(config.runs_dir, run_id)
                 copied_files = build_city_subset(

@@ -164,6 +164,8 @@ def create_run(
                 log_llm_payload=payload.log_llm_payload,
                 api_key=api_key_override,
                 analysis_mode=payload.analysis_mode,
+                enrichment_enabled=payload.enrichment_enabled,
+                web_research_enabled=payload.web_research_enabled,
             )
         )
     except DuplicateRunIdError as exc:

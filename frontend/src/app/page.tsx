@@ -180,6 +180,8 @@ export default function Home() {
   const [query3, setQuery3] = useState("");
   const [scopeMode, setScopeMode] = useState<CityScopeMode>("all");
   const [analysisMode, setAnalysisMode] = useState<AnalysisMode>("aggregate");
+  const [enrichmentEnabled, setEnrichmentEnabled] = useState(true);
+  const [webResearchEnabled, setWebResearchEnabled] = useState(true);
   const [cities, setCities] = useState<string[]>([]);
   const [selectedCities, setSelectedCities] = useState<string[]>([]);
   const [cityGroups, setCityGroups] = useState<CityGroup[]>([]);
@@ -888,6 +890,8 @@ export default function Home() {
         query_3: showDirectQueryControls ? query3 : undefined,
         cities: scopeMode === "all" ? undefined : scopedCities,
         analysis_mode: analysisMode,
+        enrichment_enabled: enrichmentEnabled,
+        web_research_enabled: enrichmentEnabled && webResearchEnabled,
       });
       setRunResponse(payload);
       setSelectedExistingRunId(payload.run_id);
@@ -1306,6 +1310,49 @@ export default function Home() {
                   {analysisMode === "aggregate"
                     ? "One integrated answer across selected cities."
                     : "Answering one city section at a time; similarities at the end."}
+                </p>
+              </div>
+
+              <div className="space-y-3 rounded-md border border-slate-200 p-3">
+                <div className="flex items-center justify-between">
+                  <Label>Enrichment layer</Label>
+                  <Badge variant={enrichmentEnabled ? "secondary" : "outline"}>
+                    {enrichmentEnabled ? "On" : "Off"}
+                  </Badge>
+                </div>
+                <div className="flex items-center justify-between gap-2">
+                  <span className="text-sm text-slate-700">Assumptions + web research step</span>
+                  <Button
+                    type="button"
+                    size="sm"
+                    variant={enrichmentEnabled ? "default" : "outline"}
+                    onClick={() => setEnrichmentEnabled((v) => !v)}
+                  >
+                    {enrichmentEnabled ? "Disable" : "Enable"}
+                  </Button>
+                </div>
+                <div className="flex items-center justify-between gap-2">
+                  <span
+                    className={`text-sm ${enrichmentEnabled ? "text-slate-700" : "text-slate-400"}`}
+                  >
+                    Web research sub-step
+                  </span>
+                  <Button
+                    type="button"
+                    size="sm"
+                    variant={enrichmentEnabled && webResearchEnabled ? "default" : "outline"}
+                    disabled={!enrichmentEnabled}
+                    onClick={() => setWebResearchEnabled((v) => !v)}
+                  >
+                    {webResearchEnabled ? "Disable" : "Enable"}
+                  </Button>
+                </div>
+                <p className="text-xs text-slate-600">
+                  {enrichmentEnabled
+                    ? webResearchEnabled
+                      ? "Gap analysis, web research, and assumption estimates will run after CCC research."
+                      : "Gap analysis and assumption estimates will run; live web search is skipped."
+                    : "CCC excerpts only — no gap analysis, web research, or assumption estimates."}
                 </p>
               </div>
 

@@ -27,6 +27,8 @@ export interface CreateRunRequest {
   config_path?: string;
   markdown_path?: string;
   log_llm_payload?: boolean;
+  enrichment_enabled?: boolean;
+  web_research_enabled?: boolean;
 }
 
 export interface CreateRunResponse {
