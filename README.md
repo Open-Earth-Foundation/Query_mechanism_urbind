@@ -34,6 +34,25 @@ The `uv.lock` file is committed to ensure reproducible builds.
 
 - `llm_config.yaml` stores model names and settings.
 - Markdown researcher batching knobs are configured in `llm_config.yaml` under `markdown_researcher` (`batch_max_chunks`, `batch_max_input_tokens`, `batch_overhead_tokens`).
+- Initiative extraction knobs are configured in `llm_config.yaml` under `initiative_extractor`
+  (`max_segment_tokens`, `segment_overlap_lines`, `max_workers`,
+  `prior_initiatives_max_tokens`, `action_heavy_initiative_threshold`,
+  `action_heavy_max_followup_calls`). This artifact-first extractor uses bounded
+  ordered segments and does not perform TEF classification or database writes. When
+  `prior_initiatives_max_tokens` is greater than zero, segments are processed in order so each LLM
+  call can see a token-capped list of already extracted canonical initiatives and avoid duplicates.
+  Initiative extraction does not split segments again based on how many initiatives the model returns;
+  if a segment returns more than the action-heavy threshold, follow-up calls reuse the same source
+  segment and show only initiatives already extracted from that segment until the model stops.
+  `semantic_dedupe_enabled` adds a second LLM dedupe pass over exact-deduped records so initiatives
+  with different names can still be merged when they describe the same real-world action.
+- TEF mapping knobs are configured in `llm_config.yaml` under `tef_mapper`
+  (`max_workers`, `review_confidence_threshold`, `close_alternative_delta`,
+  `min_transition_confidence`). The mapper is JSON-only: it reads initiative extraction artifacts,
+  runs sector, category, and Transition Element passes with stage-scoped prompts and four catalog JSON files,
+  and writes mapping artifacts without database writes or an LLM review pass. TEF sector,
+  subcategory, and subsubcategory catalog cards include prompt-ready routing definitions,
+  positive use signals, and avoid rules so the category router can compare sibling branches.
 - Retry policy is centralized in top-level `retry` in `llm_config.yaml` (`max_attempts`, `backoff_base_seconds`, `backoff_max_seconds`) and is shared across retry/backoff behavior for LLM calls and related operations.
 - Agent turn limits are configured per agent via `max_turns` (for example `markdown_researcher.max_turns`, `writer.max_turns`).
 - Optional `markdown_researcher.reasoning_effort` can be set for Grok reasoning control (for example `"none"`), but this is model/provider-specific and may fail on unsupported models.
@@ -186,6 +205,99 @@ python -m backend.scripts.run_pipeline --question "What initiatives exist for Mu
   --markdown-path documents \
   --no-log-llm-payload
 ```
+
+Extract city initiatives into inspectable JSONL artifacts without TEF classification:
+
+```
+python -m backend.scripts.extract_initiatives --markdown-path documents --city Krakow
+```
+
+The extractor writes to `output/initiative_extraction/<run_id>/` with source manifests, line-aware
+segments, raw per-segment extractions, exact-deduped initiatives, semantic duplicate groups, final
+deduplicated initiatives, review items, and a summary. `03_deduped/initiatives.jsonl` contains only
+the agreed canonical v1 initiative shape from `plan.md`; generated ids, source metadata, and audit
+fields are kept separately in `03_deduped/initiative_records.jsonl` for downstream mapping. Use `--run-id`, `--output-dir`,
+`--max-workers`, and `--log-llm-payload` to override run naming, artifact location, concurrency, and
+payload logging. `--max-workers` only affects extraction when prior-initiative context is disabled in
+config.
+
+Map extracted initiatives to TEF targets as JSON artifacts:
+
+```
+python -m backend.scripts.map_initiatives_to_tef \
+  --extraction-run-dir output/initiative_extraction/five_cities_20260421_002 \
+  --city Krakow
+```
+
+The TEF mapper reads `03_deduped/initiative_records.jsonl` from an extraction run so it can use
+pipeline-generated record ids while keeping the canonical extraction file clean. It writes to
+`output/tef_mapping/<run_id>/` with source manifests, input initiative rows,
+sector routes, recursive category routes, Transition Element mapping outputs, final mappings,
+manual-review items, numeric facts, TEF-grouped initiatives, metric rollups, and a summary. It
+loads only the active stage prompt and the catalog slice for that pass. Router prompts ask the
+model to follow the initiative's main causal shift, not to make a smaller supporting component
+primary only because it is explicitly named. Category routing continues through child categories
+before Transition Element matching, so parent categories that also have direct Transition
+Elements do not stop the route early. If the selected TEF leaf has no Transition Elements, the
+final mapping uses `target_type: "subcategory"` and the selected TEF path as `target_id`.
+The same subcategory fallback is used when the transition mapper finds no exact Transition
+Element match. A successful initiative mapping never drops the initiative solely because the TEF
+catalog has no precise Transition Element for it. If a category route returns a descendant of the
+current direct-child candidate, the mapper normalizes it to that direct child for the current pass
+and emits a manual-review item.
+
+### Krakow TEF source-of-truth assets
+
+The curated source-of-truth files for the Krakow CCC manual-scan baseline live in
+`assets/tef_mapping/`. This folder intentionally contains exactly two JSON files:
+
+- `all_correct_initiatives.json`: 58 Krakow CCC manual-scan source-of-truth initiatives
+  from `documents/Krakow.md`, Module B-2.2 outline of individual activities/actions/measures,
+  source lines `2590-4551`.
+- `all_correct_initiatives_mapped_to_tef.json`: the same 58 initiatives mapped to the
+  TEF framework.
+
+The initiative file comes from source run id `krakow_20260420` at
+`output/tef_mapping/krakow_20260420`. The mapped file comes from TEF mapping run id
+`krakow_manual_assets_tef_20260421_002` at
+`output/tef_mapping/krakow_manual_assets_tef_20260421_002`, using the mapper input
+adapted from `all_correct_initiatives.json`. The baseline is narrower than the later
+broader 98-record automated Krakow subset.
+
+Count scope: `Krakow=58`, with local-code prefixes `BIC=11`, `E=17`, `TR=16`,
+`GOZ=4`, and `I=10`. In the mapped file, all 58 initiatives have TEF mappings:
+78 final mapping rows, including 58 primary mapping rows. Those rows include 52
+Transition Element mappings and 26 TEF subcategory mappings. The mapped file also
+contains 100 review items, 66 mapping rows marked as needing review, 42 unique target
+ids, and 21 unique target paths.
+
+The benchmark audit records B-2.2 local-code coverage as complete, but does not treat
+the extraction as pixel-perfect for every source quantity or damaged Markdown section.
+Use `output/tef_mapping/krakow_20260420/extraction_benchmark_audit.md` for those
+precision caveats.
+
+TEF target fallback policy: use Transition Element mappings returned by the transition
+mapper. When the catalog has no Transition Elements or the transition mapper returns no
+exact Transition Element match, use the selected TEF subcategory path as the final
+target. Empty TEF targets are not allowed.
+
+The prompt-ready category guidance lives directly in `tef_mapping/catalog/subcategories.json`
+and `tef_mapping/catalog/subsubcategories.json`. Each category record carries its own
+`description` and `card_text`, including Routing Definition, Use This Category When, and
+Avoid This Category When sections. Transition Element candidate descriptions used by the
+mapper live in `tef_mapping/catalog/transition_elements.json`.
+
+Build or refresh numeric TEF rollups for an existing mapping run without LLM calls:
+
+```
+python -m backend.scripts.rollup_tef_numeric_facts \
+  --tef-run-dir output/tef_mapping/three_cities_tef_balanced_smoke_20260421_001 \
+  --extraction-run-dir output/initiative_extraction/three_cities_20260421_001
+```
+
+The rollup reads generated ids from `initiative_records.jsonl`, reads numbers only from the clean
+canonical `initiative` object inside each record, and writes `07_numeric_facts/` and
+`08_tef_groups/` artifacts.
 
 ## Happy-path workflow
 

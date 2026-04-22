@@ -47,6 +47,32 @@ class MarkdownResearcherConfig(AgentConfig):
     strict_decision_audit: bool = False
 
 
+class InitiativeExtractorConfig(AgentConfig):
+    """Configuration for full-document initiative extraction."""
+
+    max_files: int = 200
+    max_file_bytes: int = 5_000_000
+    max_segment_tokens: int = 50_000
+    segment_overlap_lines: int = 4
+    max_workers: int = 4
+    prior_initiatives_max_tokens: int = 20_000
+    semantic_dedupe_enabled: bool = True
+    semantic_dedupe_max_records_per_batch: int = 120
+    semantic_dedupe_max_input_tokens: int = 80_000
+    semantic_dedupe_confidence_threshold: float = 0.78
+    action_heavy_initiative_threshold: int = 3
+    action_heavy_max_followup_calls: int = 6
+
+
+class TefMapperConfig(AgentConfig):
+    """Configuration for JSON-only staged TEF mapping."""
+
+    max_workers: int = 4
+    review_confidence_threshold: float = 0.80
+    close_alternative_delta: float = 0.10
+    min_transition_confidence: float = 0.60
+
+
 class ChatConfig(AgentConfig):
     max_history_messages: int = 12
     max_context_total_tokens: int = 220_000
@@ -131,6 +157,12 @@ class AppConfig(BaseModel):
         default_factory=lambda: SqlResearcherConfig(model="openai/gpt-5.4-mini")
     )
     markdown_researcher: MarkdownResearcherConfig
+    initiative_extractor: InitiativeExtractorConfig = Field(
+        default_factory=lambda: InitiativeExtractorConfig(model="openai/gpt-5.4-mini")
+    )
+    tef_mapper: TefMapperConfig = Field(
+        default_factory=lambda: TefMapperConfig(model="openai/gpt-5.4-mini")
+    )
     writer: WriterConfig
     chat: ChatConfig = Field(
         default_factory=lambda: ChatConfig(model="openai/gpt-5.4-mini")
@@ -311,6 +343,8 @@ __all__ = [
     "OrchestratorConfig",
     "SqlResearcherConfig",
     "MarkdownResearcherConfig",
+    "InitiativeExtractorConfig",
+    "TefMapperConfig",
     "ChatConfig",
     "WriterConfig",
     "AssumptionsReviewerConfig",
