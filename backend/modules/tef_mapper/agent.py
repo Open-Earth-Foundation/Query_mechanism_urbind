@@ -49,6 +49,11 @@ RETRYABLE_ERROR_NAMES = {
     "ModelBehaviorError",
     "ValidationError",
 }
+STAGE_TOOL_NAMES = {
+    "sector": "submit_tef_sector_route",
+    "subsector": "submit_tef_subsector_route",
+    "transition": "submit_tef_transition_mapping",
+}
 
 
 def run_agent_sync(*args: Any, **kwargs: Any) -> Any:
@@ -93,6 +98,48 @@ def _is_retryable_error(exc: Exception) -> bool:
     return type(exc).__name__ in RETRYABLE_ERROR_NAMES or (
         isinstance(exc, RuntimeError) and "Event loop is closed" in str(exc)
     )
+
+
+def _get_field(value: object, key: str) -> object:
+    """Read a field from a dict-like or object-like SDK payload."""
+    if isinstance(value, dict):
+        return value.get(key)
+    return getattr(value, key, None)
+
+
+def _extract_stage_tool_output(
+    result: object,
+    tool_name: str,
+    output_model: type[TefSectorRoute] | type[TefSubsectorRoute] | type[TefTransitionMapping],
+) -> TefSectorRoute | TefSubsectorRoute | TefTransitionMapping | None:
+    """Extract structured tool-call arguments from the Agents SDK raw response."""
+    raw_responses = list(getattr(result, "raw_responses", []) or [])
+    for response in reversed(raw_responses):
+        output_items = _get_field(response, "output")
+        if not isinstance(output_items, list):
+            continue
+        for item in reversed(output_items):
+            if _get_field(item, "type") != "function_call":
+                continue
+            if _get_field(item, "name") != tool_name:
+                continue
+            arguments = _get_field(item, "arguments")
+            if not isinstance(arguments, str):
+                continue
+            return output_model.model_validate(json.loads(arguments))
+    return None
+
+
+def _coerce_stage_output(
+    output: object,
+    output_model: type[TefSectorRoute] | type[TefSubsectorRoute] | type[TefTransitionMapping],
+) -> TefSectorRoute | TefSubsectorRoute | TefTransitionMapping:
+    """Coerce final output into the expected TEF stage model."""
+    if isinstance(output, output_model):
+        return output
+    if isinstance(output, str) and output.strip().startswith("{"):
+        output = json.loads(output)
+    return output_model.model_validate(output)
 
 
 def _build_model(config: AppConfig, api_key: str) -> object:
@@ -270,10 +317,11 @@ def _run_stage(
             max_turns=max(config.tef_mapper.max_turns, 1),
             log_llm_payload=log_llm_payload,
         )
-        output = result.final_output
-        if isinstance(output, output_model):
-            return output
-        return output_model.model_validate(output)
+        return _extract_stage_tool_output(
+            result,
+            STAGE_TOOL_NAMES[stage],
+            output_model,
+        ) or _coerce_stage_output(result.final_output, output_model)
 
     return call_with_retries(
         call,

@@ -63,6 +63,26 @@ def _heading_for_line(lines: list[str], line_number: int) -> str | None:
     return " > ".join(headings[-3:])
 
 
+def _split_oversized_block(lines: list[str], max_tokens: int) -> list[list[str]]:
+    """Split one oversized line block into token-bounded line chunks."""
+    chunks: list[list[str]] = []
+    current: list[str] = []
+    current_tokens = 0
+
+    for line in lines:
+        line_tokens = max(count_tokens(line), 1)
+        if current and current_tokens + line_tokens > max_tokens:
+            chunks.append(current)
+            current = []
+            current_tokens = 0
+        current.append(line)
+        current_tokens += line_tokens
+
+    if current:
+        chunks.append(current)
+    return chunks
+
+
 def _make_segment(
     *,
     city_name: str,
@@ -133,13 +153,17 @@ def build_document_segments(
             current_tokens = 0
 
     for block_start, _block_end, block_lines in blocks:
-        block_tokens = count_tokens("\n".join(block_lines))
-        if current_lines and current_tokens + block_tokens > max_tokens:
-            flush()
-        if not current_lines:
-            current_start = block_start
-        current_lines.extend(block_lines)
-        current_tokens += block_tokens
+        sliced_blocks = _split_oversized_block(block_lines, max_tokens)
+        slice_start = block_start
+        for sliced_lines in sliced_blocks:
+            block_tokens = count_tokens("\n".join(sliced_lines))
+            if current_lines and current_tokens + block_tokens > max_tokens:
+                flush()
+            if not current_lines:
+                current_start = slice_start
+            current_lines.extend(sliced_lines)
+            current_tokens += block_tokens
+            slice_start += len(sliced_lines)
 
     flush()
     return segments

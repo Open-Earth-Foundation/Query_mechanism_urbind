@@ -29,7 +29,7 @@ initiative_extractor:
   context_window_tokens: 200000
   input_token_reserve: 10000
   max_turns: 5
-  max_segment_tokens: 50000
+  max_segment_tokens: 12000
   segment_overlap_lines: 4
   max_workers: 4
   prior_initiatives_max_tokens: 20000

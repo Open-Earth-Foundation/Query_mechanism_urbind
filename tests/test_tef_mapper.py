@@ -38,8 +38,13 @@ class _FakeAgent:
 class _FakeRunResult:
     """Minimal fake Agents result for TEF mapper tests."""
 
-    def __init__(self, final_output: object) -> None:
+    def __init__(
+        self,
+        final_output: object,
+        raw_responses: list[dict[str, object]] | None = None,
+    ) -> None:
         self.final_output = final_output
+        self.raw_responses = raw_responses or []
 
 
 def _record(
@@ -79,6 +84,55 @@ def _write_initiatives(path: Path, records: list[InitiativeExtractionRecord]) ->
         "\n".join(json.dumps(record.model_dump(mode="json")) for record in records) + "\n",
         encoding="utf-8",
     )
+
+
+def test_run_stage_prefers_function_call_arguments(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Mapper stages should read tool-call arguments when final output is a repr string."""
+    monkeypatch.setattr(tef_agent, "_get_thread_agent", lambda *_args: _FakeAgent("sector"))
+
+    route_payload = {
+        "sector": "energy",
+        "confidence": 0.91,
+        "needs_review": False,
+        "rationale": "The initiative changes district heating supply.",
+        "alternatives": [],
+    }
+
+    monkeypatch.setattr(
+        tef_agent,
+        "run_agent_sync",
+        lambda *_args, **_kwargs: _FakeRunResult(
+            "sector='energy' selected_path='' confidence=0.91 needs_review=False",
+            raw_responses=[
+                {
+                    "output": [
+                        {
+                            "type": "function_call",
+                            "name": "submit_tef_sector_route",
+                            "arguments": json.dumps(route_payload),
+                        }
+                    ]
+                }
+            ],
+        ),
+    )
+
+    route = tef_agent._run_stage(
+        stage="sector",
+        payload={"initiative": {}, "sectors": []},
+        output_model=TefSectorRoute,
+        config=build_test_app_config(),
+        api_key="test",
+        log_llm_payload=False,
+        run_id="test_run",
+        initiative_record_id="krakow:test",
+    )
+
+    assert isinstance(route, TefSectorRoute)
+    assert route.sector == "energy"
+    assert route.confidence == 0.91
 
 
 def _source_truth_record(row: dict[str, Any]) -> InitiativeExtractionRecord:

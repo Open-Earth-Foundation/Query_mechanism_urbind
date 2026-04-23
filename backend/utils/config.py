@@ -52,7 +52,7 @@ class InitiativeExtractorConfig(AgentConfig):
 
     max_files: int = 200
     max_file_bytes: int = 5_000_000
-    max_segment_tokens: int = 50_000
+    max_segment_tokens: int = 12_000
     segment_overlap_lines: int = 4
     max_workers: int = 4
     prior_initiatives_max_tokens: int = 20_000

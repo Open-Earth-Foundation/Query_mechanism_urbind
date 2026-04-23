@@ -34,6 +34,7 @@ from backend.modules.initiative_extractor.segmentation import (
 from backend.utils.city_normalization import normalize_city_key
 from backend.utils.config import AppConfig
 from backend.utils.json_io import write_json
+from backend.utils.markdown_files import list_markdown_files
 from backend.utils.prompts import load_prompt
 from backend.utils.retry import RetrySettings, compute_retry_delay_seconds, log_retry_event
 from backend.utils.tokenization import count_tokens
@@ -57,6 +58,9 @@ CANDIDATE_METADATA_FIELDS = {
 }
 SOURCE_QUOTE_FLAGS = {"source_quote_missing", "source_quote_not_found"}
 CITY_OVERRIDDEN_FLAG = "city_overridden_from_segment"
+LOCAL_CODE_PATTERN = re.compile(
+    r"\b([A-Z]{1,6}(?:[-.][A-Z0-9]{1,6})?[-.]\d+(?:[.-]\d+)*[A-Z]?)\b"
+)
 
 
 def run_agent_sync(*args: Any, **kwargs: Any) -> Any:
@@ -92,7 +96,7 @@ def _discover_markdown_files(
     """Discover selected markdown documents under a file or directory path."""
     if not markdown_path.exists():
         raise FileNotFoundError(f"Markdown path not found: {markdown_path}")
-    files = [markdown_path] if markdown_path.is_file() else sorted(markdown_path.rglob("*.md"))
+    files = [markdown_path] if markdown_path.is_file() else list_markdown_files(markdown_path)
     if selected_cities:
         requested = {normalize_city_key(city) for city in selected_cities}
         files = [path for path in files if normalize_city_key(path.stem) in requested]
@@ -454,6 +458,22 @@ def _default_source_ref(segment: InitiativeDocumentSegment) -> InitiativeSourceR
     )
 
 
+def _infer_document_local_code(
+    candidate: InitiativeExtractionCandidate,
+) -> str | None:
+    """Infer a source-local action code from the initiative name or quote when possible."""
+    if candidate.document_local_code:
+        return candidate.document_local_code
+
+    for value in (candidate.source_quote, candidate.initiative.initiative_name):
+        if not value:
+            continue
+        match = LOCAL_CODE_PATTERN.search(value)
+        if match:
+            return match.group(1)
+    return None
+
+
 def _normalize_candidate(
     candidate: InitiativeExtractionCandidate,
     segment: InitiativeDocumentSegment,
@@ -483,6 +503,7 @@ def _normalize_candidate(
     return candidate.model_copy(
         update={
             "initiative": initiative,
+            "document_local_code": _infer_document_local_code(candidate),
             "source_quote": source_quote,
             "source_refs": source_refs,
             "data_quality_flags": flags,
@@ -853,6 +874,8 @@ def _semantic_dedupe_payload(records: list[InitiativeExtractionRecord]) -> dict[
         "records": [
             {
                 "record_id": record.record_id,
+                "document_local_code": record.document_local_code,
+                "source_quote": record.source_quote,
                 **record.initiative.model_dump(mode="json"),
             }
             for record in records

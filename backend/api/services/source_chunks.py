@@ -10,6 +10,7 @@ from backend.api.models import SourceChunkItem
 from backend.modules.markdown_researcher.services import build_markdown_chunks_for_file
 from backend.modules.vector_store.chroma_store import ChromaStore
 from backend.utils.config import AppConfig
+from backend.utils.markdown_files import list_markdown_files
 
 logger = logging.getLogger(__name__)
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
@@ -120,7 +121,7 @@ def _load_markdown_chunks(
         if path is not None
     ]
     if not candidate_paths:
-        candidate_paths = sorted(markdown_dir.rglob("*.md"))
+        candidate_paths = list_markdown_files(markdown_dir)
 
     resolved: dict[str, SourceChunkItem] = {}
     remaining_ids = set(chunk_ids)

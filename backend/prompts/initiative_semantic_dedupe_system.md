@@ -20,6 +20,8 @@ Input is a JSON object with:
 
 Each record contains only:
 - `record_id` (str): stable artifact id for the extracted record.
+- `document_local_code` (str | null): source-local action code or identifier when available.
+- `source_quote` (str | null): concise exact quote that anchors the initiative in the source.
 - `city` (str): city name.
 - `initiative_name` (str): extracted initiative name.
 - `general_description` (str | null): descriptive summary.
@@ -52,6 +54,8 @@ Rules:
 - Use only `record_id` values present in the input.
 - Do not include a record as a duplicate of itself.
 - Prefer the more specific, complete, or source-local-code-backed record as `canonical_record_id` when that is visible from the record content.
+- Treat matching `document_local_code` values in the same city and source document as strong duplicate evidence unless the other fields clearly indicate different initiatives.
+- Use `source_quote` to distinguish umbrella summaries from concrete action rows. Prefer concrete action rows with stronger source grounding over generic summary rows.
 - Only group high-confidence duplicates. Leave ambiguous near-duplicates ungrouped and mention the ambiguity in `review_notes`.
 - Do not create TEF fields. Output must not include `tef`, `transition_element`, `sector_route`, `category`, `activity`, or similar classification fields.
 </output>

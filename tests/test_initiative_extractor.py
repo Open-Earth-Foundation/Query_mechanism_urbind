@@ -164,6 +164,7 @@ def test_prompt_contract_matches_runtime_payload_and_schema() -> None:
         if field_name == "city":
             continue
         assert f"`{field_name}`" in prompt
+    assert "`document_local_code`" in prompt
     assert "`source_quote`" in prompt
     assert "pipeline assigns `city` programmatically from input `city_name`" in prompt
     assert "Do not create `source_refs`" in prompt
@@ -171,6 +172,12 @@ def test_prompt_contract_matches_runtime_payload_and_schema() -> None:
     assert "Do not create TEF fields" in prompt
     assert "Each `InitiativeExtractionCandidate`" in prompt
     assert "`record_id`" in prompt
+    assert "formal city initiatives" in prompt
+    assert "workshop ideas" in prompt
+    assert "legislative amendment proposals" in prompt
+    assert "scope or activity labels" in prompt
+    assert "umbrella strategy, roadmap, contract, or action-plan documents" in prompt
+    assert "`document_local_code` belongs only on the outer `InitiativeExtractionCandidate`" in prompt
     assert "stop_initiative_extraction" in prompt
 
 
@@ -560,10 +567,14 @@ def test_semantic_dedupe_payload_uses_canonical_fields_only() -> None:
     payload = extractor_agent._semantic_dedupe_payload([record])
     item = payload["records"][0]
 
-    assert set(item) == {"record_id", *InitiativeExtraction.model_fields}
+    assert set(item) == {
+        "record_id",
+        "document_local_code",
+        "source_quote",
+        *InitiativeExtraction.model_fields,
+    }
     assert "source_refs" not in item
     assert "extraction_notes" not in item
-    assert "document_local_code" not in item
 
 
 def test_semantic_dedupe_prompt_contract_matches_payload_and_schema() -> None:

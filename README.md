@@ -63,7 +63,7 @@ The `uv.lock` file is committed to ensure reproducible builds.
 Environment variables (`.env`):
 
 - `OPENROUTER_API_KEY` (required): API key used for all LLM calls via OpenRouter.
-- `MARKDOWN_DIR` (optional, default `documents`): default directory scanned for markdown files.
+- `MARKDOWN_DIR` (optional, default `documents`): default directory scanned for top-level city markdown files. Runtime markdown discovery ignores subfolders under this directory.
 - `RUNS_DIR` (optional, default `output`): base directory for run artifacts.
 - `LLM_CONFIG_PATH` (optional, default `llm_config.yaml`): API config file path.
 - `CITY_GROUPS_PATH` (optional, default `backend/api/assets/city_groups.json`): city groups catalog JSON path.
@@ -233,7 +233,7 @@ python -m backend.scripts.map_initiatives_to_tef \
 
 By default, `map_initiatives_to_tef` first runs the initiative extractor and then maps the
 resulting `03_deduped/initiative_records.jsonl` to TEF targets. Omit `--city` to process all
-Markdown city files discovered under `--markdown-path`; repeat `--city` to process a selected
+top-level Markdown city files discovered under `--markdown-path`; repeat `--city` to process a selected
 list. Use `--extraction-output-dir`, `--extraction-run-id`, and `--extraction-max-workers` to
 control the extraction stage separately from TEF mapper `--output-dir`, `--run-id`, and
 `--max-workers`.
@@ -527,7 +527,7 @@ Core endpoints:
 - `GET /api/v1/runs/{run_id}/context`
 - `GET /api/v1/runs/{run_id}/references` (canonical citation endpoint; supports optional query params `ref_id` and `include_quote`)
 - `GET /api/v1/runs/{run_id}/references/{ref_id}` (compatibility alias for one reference with quote payload)
-- `GET /api/v1/cities` (city names from markdown filenames in `MARKDOWN_DIR`, without `.md`)
+- `GET /api/v1/cities` (city names from top-level markdown filenames in `MARKDOWN_DIR`, without `.md`)
 - `GET /api/v1/cities/{city_name}/markdown` (concatenated raw CCC markdown for one normalized city name, including contributing source paths)
 - `GET /api/v1/city-groups` (predefined city groups filtered to currently available markdown cities)
 - `GET /api/v1/chat/contexts` (catalog of completed run contexts with token counts)

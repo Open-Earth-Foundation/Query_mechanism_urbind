@@ -9,6 +9,12 @@ Read one ordered markdown segment and extract every initiative explicitly descri
 
 This is extraction only. Do not classify initiatives into TEF sectors, TEF categories, Transition Elements, activities, or any other taxonomy.
 
+Extract only formal city initiatives that are explicit in the segment. Valid initiatives include clearly named programmes, projects, policies, investments, and governance or support interventions when the segment presents them as real city actions, measures, or interventions.
+
+Do not extract non-initiatives. Non-extractable content includes workshop ideas, brainstorming outputs, communication tips, recommendations, legislative amendment proposals, generic appendix bullets, scope or activity labels, table row labels, and other guidance text that does not itself describe a concrete city initiative.
+
+Do not extract umbrella strategy, roadmap, contract, or action-plan documents as standalone initiatives just because they are named. Extract them only when the segment explicitly describes that named policy or programme as a discrete city initiative being adopted, funded, implemented, governed, or delivered.
+
 The document may be much larger than this segment. Extract only what is supported by the provided segment. If the segment contains no initiative, return an empty initiative list.
 
 Use `already_extracted_initiatives` only to avoid duplicates. It is not source evidence. If the current segment repeats, summarizes, or references an initiative that is already present there, do not extract it again. Extract only materially new initiatives from the current segment.
@@ -56,6 +62,7 @@ The `stop_initiative_extraction` tool argument must match `InitiativeSegmentStop
 
 Each `InitiativeExtractionCandidate` must include:
 - `initiative` (`InitiativeExtraction`): the canonical v1 initiative object.
+- `document_local_code` (str | null): source-local action code or identifier such as `E-11`, `TR-2`, `G-4`, or `BIC-1` when the segment ties that code to the extracted initiative. Preserve the code exactly as written. Use null when no code or local identifier is provided for that initiative in the current segment.
 - `source_quote` (str | null): one concise exact quote copied from `content` that supports the initiative. Use the shortest quote that makes the initiative findable in the original markdown. Use null only when no concise supporting quote is present in the current segment.
 
 Each nested `InitiativeExtraction` must include:
@@ -72,6 +79,10 @@ Each nested `InitiativeExtraction` must include:
 - `numbers.planned` (object): planned or target numeric facts.
 
 Rules:
+- Prefer specific formal interventions over generic labels. If the text is only a heading, scope label, action-category label, or workshop bullet without a concrete named city action, do not extract it.
+- Extract governance/support measures when they are explicit city interventions, such as a formal support programme, financing mechanism, governance body, advisory service, or implementation office.
+- Treat legislative amendment ideas, recommendations, and suggested future options as non-extractable unless the segment clearly states the city has adopted or is implementing them as a named initiative.
+- Preserve source-local action identifiers at the candidate wrapper level in `document_local_code` when available, but do not invent them.
 - Do not infer or populate `city`. The pipeline assigns `city` programmatically from input `city_name` before validation. If a `city` field is present anyway, it is ignored and overwritten.
 - Do not create `source_refs`. The pipeline assigns structured source references from segment metadata. Return only `source_quote` as citation text.
 - Missing source fields must be null. Never write prose such as "not present in extracted source segment" in canonical text fields.
@@ -81,7 +92,7 @@ Rules:
 - Do not invent normalized units. You may use clear snake_case keys, but values must remain faithful to the source.
 - Do not create TEF fields. Output must not include `tef`, `transition_element`, `sector_route`, `category`, `activity`, or similar classification fields.
 - Do not create source-location fields. Output must not include `source_refs`, `source_document`, `source_path`, `segment_id`, `start_line`, `end_line`, or `source_ref_id`.
-- Do not create pipeline fields. Output must not include `record_id`, `fact_id`, `extraction_run_id`, `tef_mapping_run_id`, `document_local_code`, or review/audit metadata. The pipeline generates those outside the canonical v1 initiative object.
+- Do not create pipeline fields inside nested `initiative`. Output must not include `record_id`, `fact_id`, `extraction_run_id`, `tef_mapping_run_id`, or review/audit metadata inside `initiative`. `document_local_code` belongs only on the outer `InitiativeExtractionCandidate`, never inside nested `initiative`.
 - Do not copy initiatives from `already_extracted_initiatives` into output. Use that list only to suppress duplicates.
 - In `dense_followup` mode, do not return a previously extracted initiative with a new title. Return only materially new initiatives or call `stop_initiative_extraction`.
 </output>
@@ -111,6 +122,7 @@ Rules:
           }
         }
       },
+      "document_local_code": "E-11",
       "source_quote": "Implementation of a local energy programme based on heat pumps with a capacity of approximately 1 MW."
     }
   ],
