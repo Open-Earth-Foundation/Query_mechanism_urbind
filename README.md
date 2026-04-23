@@ -37,15 +37,17 @@ The `uv.lock` file is committed to ensure reproducible builds.
 - Initiative extraction knobs are configured in `llm_config.yaml` under `initiative_extractor`
   (`max_segment_tokens`, `segment_overlap_lines`, `max_workers`,
   `prior_initiatives_max_tokens`, `action_heavy_initiative_threshold`,
-  `action_heavy_max_followup_calls`). This artifact-first extractor uses bounded
-  ordered segments and does not perform TEF classification or database writes. When
+  `action_heavy_max_followup_calls`). The default extraction budget sends up to
+  `20,000` source segment tokens and `10,000` prior-initiative tokens. This
+  artifact-first extractor uses bounded ordered segments and does not perform TEF
+  classification or database writes. When
   `prior_initiatives_max_tokens` is greater than zero, segments are processed in order so each LLM
   call can see a token-capped list of already extracted canonical initiatives and avoid duplicates.
   Initiative extraction does not split segments again based on how many initiatives the model returns;
   if a segment returns more than the action-heavy threshold, follow-up calls reuse the same source
   segment and show only initiatives already extracted from that segment until the model stops.
-  `semantic_dedupe_enabled` adds a second LLM dedupe pass over exact-deduped records so initiatives
-  with different names can still be merged when they describe the same real-world action.
+  `semantic_dedupe_enabled` defaults to on and runs the only persisted merge pass over
+  candidate records so initiatives are merged when they describe the same real-world action.
 - TEF mapping knobs are configured in `llm_config.yaml` under `tef_mapper`
   (`max_workers`, `review_confidence_threshold`, `close_alternative_delta`,
   `min_transition_confidence`). The mapper is JSON-only: it reads initiative extraction artifacts,
@@ -213,7 +215,7 @@ python -m backend.scripts.extract_initiatives --markdown-path documents --city K
 ```
 
 The extractor writes to `output/initiative_extraction/<run_id>/` with source manifests, line-aware
-segments, raw per-segment extractions, exact-deduped initiatives, semantic duplicate groups, final
+segments, raw per-segment extractions, candidate records, semantic duplicate groups, final
 deduplicated initiatives, review items, and a summary. `03_deduped/initiatives.jsonl` contains only
 the agreed canonical v1 initiative shape from `plan.md`; generated ids and quote-only audit
 citations are kept separately in `03_deduped/initiative_records.jsonl` for downstream mapping. Use
@@ -986,7 +988,7 @@ Smoke-test artifacts are written to `output/api_smoke_tests/<run_id>/`.
 
 ```
 python -m backend.scripts.analyze_run_tokens --run-log output/<run_id>/run.log
-python -m backend.scripts.calculate_tokens --documents-dir documents --recursive
+python -m backend.scripts.calculate_tokens --documents-dir documents
 python -m backend.scripts.temp_analyze --run-log output/<run_id>/run.log
 ```
 

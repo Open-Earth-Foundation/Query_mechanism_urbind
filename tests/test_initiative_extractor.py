@@ -445,12 +445,12 @@ def test_run_segment_once_drops_missing_quote_and_flags_review(
         extraction_mode="initial",
         already_extracted_scope="run",
     )
-    records, duplicate_reviews = extractor_agent._dedupe_candidates([result])
+    records = extractor_agent._build_candidate_records([result])
     review_items = extractor_agent._build_review_items(
         segments=[segment],
         raw_results=[result],
         records=records,
-        duplicate_reviews=duplicate_reviews,
+        duplicate_reviews=[],
         config=build_test_app_config(),
     )
 
@@ -459,8 +459,8 @@ def test_run_segment_once_drops_missing_quote_and_flags_review(
     assert any(item.review_type == "source_quote_missing_or_invalid" for item in review_items)
 
 
-def test_deduplication_merges_repeated_local_codes() -> None:
-    """Repeated local initiative codes should merge into one audit record."""
+def test_candidate_records_keep_repeated_local_codes() -> None:
+    """Repeated local initiative codes should stay separate before semantic dedupe."""
     raw_results = [
         InitiativeRawSegmentResult(
             segment_id="seg1",
@@ -476,17 +476,16 @@ def test_deduplication_merges_repeated_local_codes() -> None:
         ),
     ]
 
-    records, review_items = extractor_agent._dedupe_candidates(raw_results)
+    records = extractor_agent._build_candidate_records(raw_results)
 
-    assert len(records) == 1
-    assert records[0].document_local_code == "BIC-1"
-    assert len(records[0].source_refs) == 2
-    assert records[0].source_quote == "Initiative BIC-1"
-    assert {item.review_type for item in review_items} == {"duplicate_merged"}
+    assert len(records) == 2
+    assert {record.document_local_code for record in records} == {"BIC-1"}
+    assert len({record.record_id for record in records}) == 2
+    assert all(len(record.source_refs) == 1 for record in records)
 
 
-def test_deduplication_keeps_clearest_source_quote() -> None:
-    """Duplicate merges should preserve the more informative quote."""
+def test_semantic_merge_keeps_clearest_source_quote() -> None:
+    """Semantic duplicate merges should preserve the more informative quote."""
     raw_results = [
         InitiativeRawSegmentResult(
             segment_id="seg1",
@@ -507,7 +506,19 @@ def test_deduplication_keeps_clearest_source_quote() -> None:
         ),
     ]
 
-    records, _review_items = extractor_agent._dedupe_candidates(raw_results)
+    candidate_records = extractor_agent._build_candidate_records(raw_results)
+    records, _review_items = extractor_agent._apply_semantic_dedupe_groups(
+        candidate_records,
+        [
+            InitiativeSemanticDedupeGroup(
+                canonical_record_id=candidate_records[0].record_id,
+                duplicate_record_ids=[candidate_records[1].record_id],
+                confidence=0.9,
+                rationale="Both rows describe the same BIC-1 initiative.",
+            )
+        ],
+        build_test_app_config(),
+    )
 
     assert records[0].source_quote == (
         "Implementation of a local energy programme based on heat pumps"
@@ -789,8 +800,10 @@ def test_extraction_pipeline_writes_artifacts_with_fake_llm(
     run_dir = Path(result.output_dir)
     initiatives_path = run_dir / "03_deduped" / "initiatives.jsonl"
     initiative_records_path = run_dir / "03_deduped" / "initiative_records.jsonl"
+    candidate_records_path = run_dir / "03_deduped" / "candidate_records.jsonl"
     assert initiatives_path.exists()
     assert initiative_records_path.exists()
+    assert candidate_records_path.exists()
     assert result.deduped_initiatives_count == 2
     assert (run_dir / "01_segments" / "segments.jsonl").exists()
     assert (run_dir / "02_raw_extractions" / "raw_segment_extractions.jsonl").exists()

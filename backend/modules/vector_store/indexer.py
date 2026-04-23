@@ -210,7 +210,7 @@ def _iter_markdown_files(
     docs_dir: Path,
     selected_cities: list[str] | None = None,
 ) -> list[Path]:
-    """List markdown files optionally filtered by city stem."""
+    """List top-level markdown files optionally filtered by city stem."""
     files = list_markdown_files(docs_dir)
     if not selected_cities:
         return files

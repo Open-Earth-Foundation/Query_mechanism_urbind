@@ -12,7 +12,7 @@ from backend.utils.markdown_files import list_markdown_files
 
 
 def list_city_names(markdown_dir: Path) -> list[str]:
-    """Return unique city names based on markdown file stems."""
+    """Return unique city names based on top-level markdown file stems."""
     if not markdown_dir.exists():
         return []
 
@@ -27,7 +27,7 @@ def list_city_names(markdown_dir: Path) -> list[str]:
 
 
 def index_city_markdown_files(markdown_dir: Path) -> dict[str, list[Path]]:
-    """Index markdown files by city stem name (case-insensitive key)."""
+    """Index top-level markdown files by city stem name."""
     if not markdown_dir.exists():
         return {}
 

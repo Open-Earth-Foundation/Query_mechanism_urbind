@@ -109,7 +109,7 @@ def _load_markdown_chunks(
     config: AppConfig,
     chunk_ids: list[str],
 ) -> dict[str, SourceChunkItem]:
-    """Rebuild chunks from source markdown files using run-local path hints when available."""
+    """Rebuild chunks from hinted paths, falling back to top-level markdown files."""
     chunk_paths = _load_chunk_path_hints(run_dir)
     resolved_candidate_paths = (
         _resolve_candidate_path(chunk_paths.get(chunk_id), markdown_dir)

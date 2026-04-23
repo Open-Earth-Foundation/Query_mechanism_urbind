@@ -105,7 +105,7 @@ def run_chunking_benchmark(
     sample_size: int,
     seed: int,
 ) -> ChunkingBenchmarkResult:
-    """Run corpus chunking benchmark on a deterministic random subset."""
+    """Run a top-level markdown corpus benchmark on a deterministic random subset."""
     files = list_markdown_files(docs_dir)
     rng = random.Random(seed)
     chosen = files if sample_size <= 0 or sample_size >= len(files) else rng.sample(files, sample_size)

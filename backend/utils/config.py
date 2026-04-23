@@ -52,10 +52,10 @@ class InitiativeExtractorConfig(AgentConfig):
 
     max_files: int = 200
     max_file_bytes: int = 5_000_000
-    max_segment_tokens: int = 12_000
+    max_segment_tokens: int = 20_000
     segment_overlap_lines: int = 4
     max_workers: int = 4
-    prior_initiatives_max_tokens: int = 20_000
+    prior_initiatives_max_tokens: int = 10_000
     semantic_dedupe_enabled: bool = True
     semantic_dedupe_max_records_per_batch: int = 120
     semantic_dedupe_max_input_tokens: int = 80_000

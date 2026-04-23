@@ -93,7 +93,7 @@ def _discover_markdown_files(
     selected_cities: list[str] | None,
     config: AppConfig,
 ) -> list[Path]:
-    """Discover selected markdown documents under a file or directory path."""
+    """Discover selected markdown files without scanning directory subfolders."""
     if not markdown_path.exists():
         raise FileNotFoundError(f"Markdown path not found: {markdown_path}")
     files = [markdown_path] if markdown_path.is_file() else list_markdown_files(markdown_path)
@@ -747,20 +747,28 @@ def _normalize_title(value: str) -> str:
     return re.sub(r"[^a-z0-9]+", " ", value.casefold()).strip()
 
 
-def _record_id_for(candidate: InitiativeExtractionCandidate, source_document: str) -> str:
+def _record_id_for(
+    candidate: InitiativeExtractionCandidate,
+    source_document: str,
+    segment_id: str,
+    candidate_index: int,
+) -> str:
     """Build a deterministic record id for one candidate."""
     city_key = normalize_city_key(candidate.initiative.city) or "unknown_city"
     doc_slug = normalize_city_key(Path(source_document).stem) or "document"
+    occurrence_hash = sha1(  # noqa: S324
+        f"{source_document}|{segment_id}|{candidate_index}".encode("utf-8")
+    ).hexdigest()[:8]
     local_code = candidate.document_local_code
     if local_code:
         local_part = normalize_city_key(local_code) or local_code.casefold()
-        return f"{city_key}:{doc_slug}:{local_part}"
+        return f"{city_key}:{doc_slug}:{local_part}:{occurrence_hash}"
     title_hash = sha1(  # noqa: S324
         f"{city_key}|{doc_slug}|{_normalize_title(candidate.initiative.initiative_name)}".encode(
             "utf-8"
         )
     ).hexdigest()[:12]
-    return f"{city_key}:{doc_slug}:title_{title_hash}"
+    return f"{city_key}:{doc_slug}:title_{title_hash}:{occurrence_hash}"
 
 
 def _dedupe_key(candidate: InitiativeExtractionCandidate, source_document: str) -> tuple[str, str, str]:
@@ -1031,7 +1039,7 @@ def _semantic_dedupe_records(
     list[InitiativeSemanticDedupeGroup],
     list[InitiativeReviewItem],
 ]:
-    """Run semantic dedupe over exact-deduped records."""
+    """Run semantic dedupe over candidate records."""
     if not config.initiative_extractor.semantic_dedupe_enabled or len(records) < 2:
         return records, [], []
 
@@ -1070,18 +1078,15 @@ def _semantic_dedupe_records(
     return merged_records, groups, [*review_items, *merge_reviews]
 
 
-def _dedupe_candidates(
+def _build_candidate_records(
     raw_results: list[InitiativeRawSegmentResult],
-) -> tuple[list[InitiativeExtractionRecord], list[InitiativeReviewItem]]:
-    """Deduplicate raw candidates into stable initiative records."""
-    records_by_key: dict[tuple[str, str, str], InitiativeExtractionRecord] = {}
-    review_items: list[InitiativeReviewItem] = []
+) -> list[InitiativeExtractionRecord]:
+    """Convert raw candidates into stable initiative records without merging."""
+    records: list[InitiativeExtractionRecord] = []
     for raw in raw_results:
-        for candidate in raw.initiatives:
-            key = _dedupe_key(candidate, raw.source_document)
-            existing = records_by_key.get(key)
-            if existing is None:
-                record = InitiativeExtractionRecord(
+        for candidate_index, candidate in enumerate(raw.initiatives, start=1):
+            records.append(
+                InitiativeExtractionRecord(
                     initiative=candidate.initiative,
                     document_local_code=candidate.document_local_code,
                     source_quote=candidate.source_quote,
@@ -1091,24 +1096,16 @@ def _dedupe_candidates(
                     number_deferred=candidate.number_deferred,
                     number_uncertain=candidate.number_uncertain,
                     extraction_notes=candidate.extraction_notes,
-                    record_id=_record_id_for(candidate, raw.source_document),
+                    record_id=_record_id_for(
+                        candidate,
+                        raw.source_document,
+                        raw.segment_id,
+                        candidate_index,
+                    ),
                     source_document=raw.source_document,
-                )
-                records_by_key[key] = record
-                continue
-            records_by_key[key] = _merge_record(existing, candidate)
-            review_items.append(
-                InitiativeReviewItem(
-                    review_type="duplicate_merged",
-                    severity="info",
-                    message="Repeated initiative candidate merged into an existing record.",
-                    source_document=raw.source_document,
-                    segment_id=raw.segment_id,
-                    record_id=existing.record_id,
-                    document_local_code=candidate.document_local_code,
                 )
             )
-    return list(records_by_key.values()), review_items
+    return records
 
 
 def _content_has_meta_text(record: InitiativeExtractionRecord) -> bool:
@@ -1236,7 +1233,7 @@ def _write_run_artifacts(
     documents: list[Path],
     segments: list[InitiativeDocumentSegment],
     raw_results: list[InitiativeRawSegmentResult],
-    exact_records: list[InitiativeExtractionRecord],
+    candidate_records: list[InitiativeExtractionRecord],
     records: list[InitiativeExtractionRecord],
     semantic_groups: list[InitiativeSemanticDedupeGroup],
     review_items: list[InitiativeReviewItem],
@@ -1260,10 +1257,10 @@ def _write_run_artifacts(
         "documents_count": len(documents),
         "segments_count": len(segments),
         "raw_initiatives_count": sum(len(result.initiatives) for result in raw_results),
-        "exact_deduped_initiatives_count": len(exact_records),
+        "candidate_records_count": len(candidate_records),
         "deduped_initiatives_count": len(records),
         "semantic_duplicate_groups_count": len(semantic_groups),
-        "semantic_merged_duplicates_count": max(len(exact_records) - len(records), 0),
+        "semantic_merged_duplicates_count": max(len(candidate_records) - len(records), 0),
         "action_heavy_segments_count": sum(1 for result in raw_results if result.action_heavy),
         "action_heavy_followup_iterations_count": sum(
             max(result.extraction_iterations - 1, 0) for result in raw_results
@@ -1273,8 +1270,11 @@ def _write_run_artifacts(
     write_json(run_dir / "00_source" / "source_manifest.json", manifest, ensure_ascii=False)
     _write_jsonl(run_dir / "01_segments" / "segments.jsonl", segments)
     _write_jsonl(run_dir / "02_raw_extractions" / "raw_segment_extractions.jsonl", raw_results)
-    _write_jsonl(run_dir / "03_deduped" / "exact_initiatives.jsonl", _canonical_rows(exact_records))
-    _write_jsonl(run_dir / "03_deduped" / "exact_initiative_records.jsonl", exact_records)
+    _write_jsonl(
+        run_dir / "03_deduped" / "candidate_initiatives.jsonl",
+        _canonical_rows(candidate_records),
+    )
+    _write_jsonl(run_dir / "03_deduped" / "candidate_records.jsonl", candidate_records)
     _write_jsonl(run_dir / "03_deduped" / "semantic_duplicate_groups.jsonl", semantic_groups)
     _write_jsonl(run_dir / "03_deduped" / "initiatives.jsonl", _canonical_rows(records))
     _write_jsonl(run_dir / "03_deduped" / "initiative_records.jsonl", records)
@@ -1290,11 +1290,17 @@ def _write_run_artifacts(
                 "- `00_source/source_manifest.json`: source documents and run settings.",
                 "- `01_segments/segments.jsonl`: ordered line-aware document segments.",
                 "- `02_raw_extractions/raw_segment_extractions.jsonl`: per-segment model output.",
-                "- `03_deduped/exact_initiatives.jsonl`: canonical v1 initiatives after exact code/title dedupe.",
-                "- `03_deduped/exact_initiative_records.jsonl`: exact-deduped pipeline records with generated ids and source quotes.",
+                "- `03_deduped/candidate_initiatives.jsonl`: canonical v1 initiatives before semantic dedupe.",
+                (
+                    "- `03_deduped/candidate_records.jsonl`: pipeline records before "
+                    "semantic dedupe, with generated ids and source quotes."
+                ),
                 "- `03_deduped/semantic_duplicate_groups.jsonl`: semantic duplicate groups proposed by the LLM.",
                 "- `03_deduped/initiatives.jsonl`: final canonical v1 initiative objects.",
-                "- `03_deduped/initiative_records.jsonl`: final pipeline records with generated ids and quote-only source citations for TEF mapping.",
+                (
+                    "- `03_deduped/initiative_records.jsonl`: final pipeline records "
+                    "with generated ids and quote-only source citations for TEF mapping."
+                ),
                 "- `04_review/review_items.jsonl`: coverage and quality review items.",
                 "- `summary.json`: run counts.",
                 "",
@@ -1368,10 +1374,10 @@ def extract_initiatives(
                 raw_results.append(future.result())
 
     raw_results.sort(key=lambda result: result.segment_id)
-    exact_records, duplicate_reviews = _dedupe_candidates(raw_results)
-    exact_records.sort(key=lambda record: record.record_id)
+    candidate_records = _build_candidate_records(raw_results)
+    candidate_records.sort(key=lambda record: record.record_id)
     records, semantic_groups, semantic_reviews = _semantic_dedupe_records(
-        exact_records,
+        candidate_records,
         config,
         api_key,
         log_llm_payload=log_llm_payload,
@@ -1381,7 +1387,7 @@ def extract_initiatives(
         segments=segments,
         raw_results=raw_results,
         records=records,
-        duplicate_reviews=[*duplicate_reviews, *semantic_reviews],
+        duplicate_reviews=semantic_reviews,
         config=config,
     )
 
@@ -1391,7 +1397,7 @@ def extract_initiatives(
         documents=documents,
         segments=segments,
         raw_results=raw_results,
-        exact_records=exact_records,
+        candidate_records=candidate_records,
         records=records,
         semantic_groups=semantic_groups,
         review_items=review_items,
