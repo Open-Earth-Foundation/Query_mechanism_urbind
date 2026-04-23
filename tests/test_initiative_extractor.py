@@ -34,14 +34,16 @@ def _candidate(
     city: str = "Krakow",
     name: str | None = None,
     description: str | None = None,
+    source_quote: str | None = None,
     source_document: str = "Krakow.md",
     segment_id: str = "seg1",
 ) -> InitiativeExtractionCandidate:
     """Build a valid initiative candidate for tests."""
+    initiative_name = name or f"Initiative {code}"
     return InitiativeExtractionCandidate(
         initiative=InitiativeExtraction(
             city=city,
-            initiative_name=name or f"Initiative {code}",
+            initiative_name=initiative_name,
             general_description=description or f"Description for {code}.",
             objective_text="Reduce emissions.",
             implementation_text="Implement infrastructure.",
@@ -52,6 +54,7 @@ def _candidate(
             numbers={"current": {}, "planned": {"cost_pln": 1000}},
         ),
         document_local_code=code,
+        source_quote=source_quote or initiative_name,
         source_refs=[
             InitiativeSourceRef(
                 source_document=source_document,
@@ -88,12 +91,15 @@ def test_candidate_metadata_ignores_extra_fields() -> None:
                 "numbers": {"current": {}, "planned": {}},
             },
             "document_local_code": "BIC-7",
+            "source_quote": "Install heat pumps.",
             "tef_id": "should_be_ignored",
         }
     )
 
     assert candidate.document_local_code == "BIC-7"
+    assert candidate.source_quote == "Install heat pumps."
     assert "tef_id" not in candidate.model_dump(mode="json")
+    assert "source_refs" not in candidate.model_dump(mode="json")
 
 
 def test_segmenter_preserves_line_ranges_and_table_rows(tmp_path: Path) -> None:
@@ -155,9 +161,15 @@ def test_prompt_contract_matches_runtime_payload_and_schema() -> None:
     for field_name in InitiativeSegmentStop.model_fields:
         assert f"`{field_name}`" in prompt
     for field_name in InitiativeExtraction.model_fields:
+        if field_name == "city":
+            continue
         assert f"`{field_name}`" in prompt
+    assert "`source_quote`" in prompt
+    assert "pipeline assigns `city` programmatically from input `city_name`" in prompt
+    assert "Do not create `source_refs`" in prompt
+    assert "Return only `source_quote` as citation text" in prompt
     assert "Do not create TEF fields" in prompt
-    assert "Each `InitiativeExtractionCandidate`" not in prompt
+    assert "Each `InitiativeExtractionCandidate`" in prompt
     assert "`record_id`" in prompt
     assert "stop_initiative_extraction" in prompt
 
@@ -251,7 +263,6 @@ def test_tool_payload_normalization_recovers_common_shape_errors() -> None:
         "initiatives": [
             {
                 "initiative": {
-                    "city": "Krakow",
                     "initiative_name": "Dense segment initiative",
                     "general_description": "The city describes an initiative in a dense segment.",
                     "document_local_code": "BIC-99",
@@ -279,12 +290,166 @@ def test_tool_payload_normalization_recovers_common_shape_errors() -> None:
     result = extractor_agent._coerce_segment_output_payload(
         "submit_initiative_extractions",
         payload,
+        city_name="Krakow",
     )
 
     assert isinstance(result, InitiativeSegmentExtraction)
     candidate = result.initiatives[0]
-    assert candidate.initiative_name == "Dense segment initiative"
-    assert candidate.numbers.current == {}
+    assert candidate.initiative.city == "Krakow"
+    assert candidate.initiative.initiative_name == "Dense segment initiative"
+    assert candidate.initiative.numbers.current == {}
+
+
+def test_run_segment_once_overwrites_model_city_with_segment_city(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Extractor should use segment metadata as the city and source-ref truth."""
+    quote = "Developing business models for the development of EV charging stations"
+    segment = InitiativeDocumentSegment(
+        segment_id="rzeszow:rzeszow:seg0001:1-3",
+        city_name="Rzeszow",
+        source_document="Rzeszow.md",
+        source_path="documents/Rzeszow.md",
+        start_line=1,
+        end_line=3,
+        heading_path="Transport",
+        content=quote,
+        token_count=10,
+    )
+
+    monkeypatch.setattr(extractor_agent, "_get_thread_agent", lambda *_args: object())
+    monkeypatch.setattr(
+        extractor_agent,
+        "run_agent_sync",
+        lambda *_args, **_kwargs: _FakeRunResult(
+            InitiativeSegmentExtraction(
+                initiatives=[
+                    _candidate(
+                        code="MOB-1",
+                        city="Rzesow",
+                        name=quote,
+                        source_quote=quote,
+                        source_document="Wrong.md",
+                        segment_id="wrong:seg",
+                    )
+                ]
+            )
+        ),
+    )
+
+    result = extractor_agent._run_segment_once(
+        segment,
+        build_test_app_config(),
+        api_key="test",
+        log_llm_payload=False,
+        prior_initiatives=[],
+        extraction_mode="initial",
+        already_extracted_scope="run",
+    )
+
+    candidate = result.initiatives[0]
+    assert candidate.initiative.city == "Rzeszow"
+    assert len(candidate.source_refs) == 1
+    source_ref = candidate.source_refs[0]
+    assert source_ref.source_document == "Rzeszow.md"
+    assert source_ref.segment_id == "rzeszow:rzeszow:seg0001:1-3"
+    assert source_ref.start_line == 1
+    assert source_ref.end_line == 3
+    assert source_ref.section_heading == "Transport"
+    assert "city_overridden_from_segment" in candidate.data_quality_flags
+
+
+def test_run_segment_once_keeps_valid_quote_only_citation(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Extractor should keep a quote when it appears exactly in the segment."""
+    quote = "Name of the action | Heat pumps"
+    segment = InitiativeDocumentSegment(
+        segment_id="krakow:krakow:seg0001:1-3",
+        city_name="Krakow",
+        source_document="Krakow.md",
+        source_path="documents/Krakow.md",
+        start_line=1,
+        end_line=3,
+        heading_path="Transport",
+        content=f"| Description of operation | {quote} |",
+        token_count=10,
+    )
+
+    monkeypatch.setattr(extractor_agent, "_get_thread_agent", lambda *_args: object())
+    monkeypatch.setattr(
+        extractor_agent,
+        "run_agent_sync",
+        lambda *_args, **_kwargs: _FakeRunResult(
+            InitiativeSegmentExtraction(
+                initiatives=[_candidate(code="TR-1", source_quote=quote)]
+            )
+        ),
+    )
+
+    result = extractor_agent._run_segment_once(
+        segment,
+        build_test_app_config(),
+        api_key="test",
+        log_llm_payload=False,
+        prior_initiatives=[],
+        extraction_mode="initial",
+        already_extracted_scope="run",
+    )
+
+    assert result.initiatives[0].source_quote == quote
+    assert "source_quote_missing" not in result.initiatives[0].data_quality_flags
+    assert "source_quote_not_found" not in result.initiatives[0].data_quality_flags
+
+
+def test_run_segment_once_drops_missing_quote_and_flags_review(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Extractor should null invalid quotes before artifact writing."""
+    segment = InitiativeDocumentSegment(
+        segment_id="krakow:krakow:seg0001:1-3",
+        city_name="Krakow",
+        source_document="Krakow.md",
+        source_path="documents/Krakow.md",
+        start_line=1,
+        end_line=3,
+        heading_path="Transport",
+        content="Only source-backed quotes are valid.",
+        token_count=10,
+    )
+
+    monkeypatch.setattr(extractor_agent, "_get_thread_agent", lambda *_args: object())
+    monkeypatch.setattr(
+        extractor_agent,
+        "run_agent_sync",
+        lambda *_args, **_kwargs: _FakeRunResult(
+            InitiativeSegmentExtraction(
+                initiatives=[_candidate(code="TR-1", source_quote="Missing quote")]
+            )
+        ),
+    )
+
+    result = extractor_agent._run_segment_once(
+        segment,
+        build_test_app_config(),
+        api_key="test",
+        log_llm_payload=False,
+        prior_initiatives=[],
+        extraction_mode="initial",
+        already_extracted_scope="run",
+    )
+    records, duplicate_reviews = extractor_agent._dedupe_candidates([result])
+    review_items = extractor_agent._build_review_items(
+        segments=[segment],
+        raw_results=[result],
+        records=records,
+        duplicate_reviews=duplicate_reviews,
+        config=build_test_app_config(),
+    )
+
+    assert records[0].source_quote is None
+    assert "source_quote_not_found" in records[0].data_quality_flags
+    assert any(item.review_type == "source_quote_missing_or_invalid" for item in review_items)
 
 
 def test_deduplication_merges_repeated_local_codes() -> None:
@@ -309,7 +474,37 @@ def test_deduplication_merges_repeated_local_codes() -> None:
     assert len(records) == 1
     assert records[0].document_local_code == "BIC-1"
     assert len(records[0].source_refs) == 2
+    assert records[0].source_quote == "Initiative BIC-1"
     assert {item.review_type for item in review_items} == {"duplicate_merged"}
+
+
+def test_deduplication_keeps_clearest_source_quote() -> None:
+    """Duplicate merges should preserve the more informative quote."""
+    raw_results = [
+        InitiativeRawSegmentResult(
+            segment_id="seg1",
+            source_document="Krakow.md",
+            status="success",
+            initiatives=[_candidate(code="BIC-1", source_quote="Heat pumps")],
+        ),
+        InitiativeRawSegmentResult(
+            segment_id="seg2",
+            source_document="Krakow.md",
+            status="success",
+            initiatives=[
+                _candidate(
+                    code="BIC-1",
+                    source_quote="Implementation of a local energy programme based on heat pumps",
+                )
+            ],
+        ),
+    ]
+
+    records, _review_items = extractor_agent._dedupe_candidates(raw_results)
+
+    assert records[0].source_quote == (
+        "Implementation of a local energy programme based on heat pumps"
+    )
 
 
 def test_semantic_dedupe_merges_different_names() -> None:
@@ -389,6 +584,25 @@ def test_semantic_dedupe_prompt_contract_matches_payload_and_schema() -> None:
     assert "`canonical_record_id`" in prompt
     assert "`duplicate_record_ids`" in prompt
     assert "Do not create TEF fields" in prompt
+
+
+def test_semantic_dedupe_tool_schema_matches_prompt(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Semantic dedupe tool should expose prompt fields without a result wrapper."""
+    monkeypatch.setattr(
+        "backend.services.agents.build_openrouter_model",
+        lambda *_args, **_kwargs: "test-model",
+    )
+
+    agent = extractor_agent.build_initiative_semantic_dedupe_agent(
+        build_test_app_config(),
+        api_key="test",
+    )
+    schema = agent.tools[0].params_json_schema
+
+    assert set(schema["properties"]) == {"duplicate_groups", "review_notes"}
+    assert "result" not in schema["properties"]
 
 
 def test_process_segment_loops_action_heavy_segment_until_stop(
@@ -536,8 +750,16 @@ def test_extraction_pipeline_writes_artifacts_with_fake_llm(
         return _FakeRunResult(
             InitiativeSegmentExtraction(
                 initiatives=[
-                    _candidate(code="BIC-1", segment_id=segment_id).initiative,
-                    _candidate(code="BIC-2", segment_id=segment_id).initiative,
+                    _candidate(
+                        code="BIC-1",
+                        segment_id=segment_id,
+                        source_quote="Retrofit homes",
+                    ),
+                    _candidate(
+                        code="BIC-2",
+                        segment_id=segment_id,
+                        source_quote="Retrofit schools",
+                    ),
                 ],
             )
         )
@@ -573,9 +795,19 @@ def test_extraction_pipeline_writes_artifacts_with_fake_llm(
     assert set(rows[0]) == set(InitiativeExtraction.model_fields)
     assert "initiative" not in rows[0]
     assert "record_id" not in rows[0]
+    assert "source_quote" not in rows[0]
     assert "source_refs" not in rows[0]
     assert "record_id" in record_rows[0]
     assert "initiative" in record_rows[0]
+    assert "source_quote" in record_rows[0]
+    assert not {
+        "source_refs",
+        "source_path",
+        "segment_id",
+        "start_line",
+        "end_line",
+        "source_ref_id",
+    } & set(record_rows[0])
     assert "tef_id" not in json.dumps(rows)
 
 

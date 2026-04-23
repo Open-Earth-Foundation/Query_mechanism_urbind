@@ -47,6 +47,7 @@ RETRYABLE_ERROR_NAMES = {
 }
 CANDIDATE_METADATA_FIELDS = {
     "document_local_code",
+    "source_quote",
     "source_refs",
     "data_quality_flags",
     "number_context",
@@ -54,6 +55,8 @@ CANDIDATE_METADATA_FIELDS = {
     "number_uncertain",
     "extraction_notes",
 }
+SOURCE_QUOTE_FLAGS = {"source_quote_missing", "source_quote_not_found"}
+CITY_OVERRIDDEN_FLAG = "city_overridden_from_segment"
 
 
 def run_agent_sync(*args: Any, **kwargs: Any) -> Any:
@@ -124,13 +127,16 @@ def _get_field(value: object, key: str) -> object:
 def _coerce_segment_output_payload(
     tool_name: str,
     payload: object,
+    city_name: str | None = None,
 ) -> InitiativeSegmentExtraction | InitiativeSegmentStop:
     """Validate tool-call payloads against the matching segment output model."""
     if isinstance(payload, dict) and "result" in payload:
         payload = payload["result"]
     if tool_name == "stop_initiative_extraction":
         return InitiativeSegmentStop.model_validate(payload)
-    return InitiativeSegmentExtraction.model_validate(_normalize_segment_extraction_payload(payload))
+    return InitiativeSegmentExtraction.model_validate(
+        _normalize_segment_extraction_payload(payload, city_name)
+    )
 
 
 def _normalize_json_object(value: object) -> dict[str, JsonValue]:
@@ -142,7 +148,10 @@ def _normalize_json_object(value: object) -> dict[str, JsonValue]:
     return {"items": value}
 
 
-def _normalize_segment_extraction_payload(payload: object) -> object:
+def _normalize_segment_extraction_payload(
+    payload: object,
+    city_name: str | None = None,
+) -> object:
     """Repair common recoverable model shape errors before validation."""
     if not isinstance(payload, dict):
         return payload
@@ -158,19 +167,49 @@ def _normalize_segment_extraction_payload(payload: object) -> object:
             normalized_initiatives.append(item)
             continue
 
+        source_quote = _clean_source_quote(item.get("source_quote"))
         initiative = item.get("initiative") if isinstance(item.get("initiative"), dict) else item
+        if source_quote is None:
+            source_quote = _clean_source_quote(initiative.get("source_quote"))
+        raw_flags = item.get("data_quality_flags")
+        if not isinstance(raw_flags, list):
+            raw_flags = initiative.get("data_quality_flags")
+        data_quality_flags = list(raw_flags) if isinstance(raw_flags, list) else []
+        original_city = initiative.get("city")
 
         for field_name in CANDIDATE_METADATA_FIELDS:
             initiative.pop(field_name, None)
 
+        if city_name is not None:
+            if (
+                isinstance(original_city, str)
+                and original_city.strip()
+                and original_city.strip() != city_name
+            ):
+                data_quality_flags.append(CITY_OVERRIDDEN_FLAG)
+            initiative["city"] = city_name
         initiative["numbers"] = _normalize_numbers_payload(initiative.get("numbers"))
         for field_name in list(initiative):
             if field_name not in initiative_fields:
                 initiative.pop(field_name)
-        normalized_initiatives.append(initiative)
+        normalized_item: dict[str, object] = {
+            "initiative": initiative,
+            "source_quote": source_quote,
+        }
+        if data_quality_flags:
+            normalized_item["data_quality_flags"] = list(dict.fromkeys(data_quality_flags))
+        normalized_initiatives.append(normalized_item)
 
     payload["initiatives"] = normalized_initiatives
     return payload
+
+
+def _clean_source_quote(value: object) -> str | None:
+    """Return a trimmed source quote or None for blank/non-string values."""
+    if not isinstance(value, str):
+        return None
+    quote = value.strip()
+    return quote or None
 
 
 def _normalize_numbers_payload(value: object) -> dict[str, dict[str, JsonValue]]:
@@ -187,6 +226,7 @@ def _normalize_numbers_payload(value: object) -> dict[str, dict[str, JsonValue]]
 
 def _extract_segment_tool_output(
     result: object,
+    city_name: str | None = None,
 ) -> InitiativeSegmentExtraction | InitiativeSegmentStop | None:
     """Extract structured tool arguments from the Agents SDK raw response."""
     raw_responses = list(getattr(result, "raw_responses", []) or [])
@@ -203,11 +243,14 @@ def _extract_segment_tool_output(
             arguments = _get_field(item, "arguments")
             if not isinstance(arguments, str):
                 continue
-            return _coerce_segment_output_payload(tool_name, json.loads(arguments))
+            return _coerce_segment_output_payload(tool_name, json.loads(arguments), city_name)
     return None
 
 
-def _coerce_segment_output(output: object) -> InitiativeSegmentExtraction | InitiativeSegmentStop:
+def _coerce_segment_output(
+    output: object,
+    city_name: str | None = None,
+) -> InitiativeSegmentExtraction | InitiativeSegmentStop:
     """Coerce final output into one of the accepted segment output models."""
     if isinstance(output, (InitiativeSegmentExtraction, InitiativeSegmentStop)):
         return output
@@ -217,10 +260,10 @@ def _coerce_segment_output(output: object) -> InitiativeSegmentExtraction | Init
             if "initiatives" not in output and "reason" in output
             else "submit_initiative_extractions"
         )
-        return _coerce_segment_output_payload(tool_name, output)
+        return _coerce_segment_output_payload(tool_name, output, city_name)
     if isinstance(output, str) and output.strip().startswith("{"):
         payload = json.loads(output)
-        return _coerce_segment_output(payload)
+        return _coerce_segment_output(payload, city_name)
     raise TypeError(f"Unsupported initiative segment output type: {type(output).__name__}")
 
 
@@ -254,15 +297,14 @@ def build_initiative_extractor_agent(config: AppConfig, api_key: str) -> object:
         segment_data_quality_flags: list[str] | None = None,
         segment_notes: list[str] | None = None,
         error: dict[str, Any] | None = None,
-    ) -> InitiativeSegmentExtraction:
-        return InitiativeSegmentExtraction.model_validate(
-            {
-                "initiatives": initiatives or [],
-                "segment_data_quality_flags": segment_data_quality_flags or [],
-                "segment_notes": segment_notes or [],
-                "error": error,
-            }
-        )
+    ) -> dict[str, Any]:
+        """Return raw tool args so segment-scoped parsing can assign city."""
+        return {
+            "initiatives": initiatives or [],
+            "segment_data_quality_flags": segment_data_quality_flags or [],
+            "segment_notes": segment_notes or [],
+            "error": error,
+        }
 
     @function_tool(strict_mode=False)
     def stop_initiative_extraction(
@@ -314,9 +356,13 @@ def build_initiative_semantic_dedupe_agent(config: AppConfig, api_key: str) -> o
 
     @function_tool(strict_mode=False)
     def submit_semantic_dedupe(
-        result: InitiativeSemanticDedupeResult,
+        duplicate_groups: list[InitiativeSemanticDedupeGroup] | None = None,
+        review_notes: list[str] | None = None,
     ) -> InitiativeSemanticDedupeResult:
-        return result
+        return InitiativeSemanticDedupeResult(
+            duplicate_groups=duplicate_groups or [],
+            review_notes=review_notes or [],
+        )
 
     return Agent(
         name="Initiative Semantic Dedupe",
@@ -398,7 +444,7 @@ def _segment_payload(
 
 
 def _default_source_ref(segment: InitiativeDocumentSegment) -> InitiativeSourceRef:
-    """Build a fallback source ref for candidates missing one."""
+    """Build the canonical source ref from segment metadata."""
     return InitiativeSourceRef(
         source_document=segment.source_document,
         segment_id=segment.segment_id,
@@ -412,11 +458,32 @@ def _normalize_candidate(
     candidate: InitiativeExtractionCandidate,
     segment: InitiativeDocumentSegment,
 ) -> InitiativeExtractionCandidate:
-    """Backfill source refs and segment-level quality flags."""
-    source_refs = candidate.source_refs or [_default_source_ref(segment)]
-    flags = list(dict.fromkeys([*candidate.data_quality_flags, *detect_source_quality_flags(segment.content)]))
+    """Assign segment metadata and validate the quote-only citation."""
+    source_refs = [_default_source_ref(segment)]
+    source_quote = _clean_source_quote(candidate.source_quote)
+    quote_flags: list[str] = []
+    initiative = candidate.initiative
+    if source_quote is None:
+        quote_flags.append("source_quote_missing")
+    elif source_quote not in segment.content:
+        source_quote = None
+        quote_flags.append("source_quote_not_found")
+    if initiative.city != segment.city_name:
+        initiative = initiative.model_copy(update={"city": segment.city_name})
+        quote_flags.append(CITY_OVERRIDDEN_FLAG)
+    flags = list(
+        dict.fromkeys(
+            [
+                *candidate.data_quality_flags,
+                *quote_flags,
+                *detect_source_quality_flags(segment.content),
+            ]
+        )
+    )
     return candidate.model_copy(
         update={
+            "initiative": initiative,
+            "source_quote": source_quote,
             "source_refs": source_refs,
             "data_quality_flags": flags,
         },
@@ -451,7 +518,10 @@ def _run_segment_once(
         max_turns=max(config.initiative_extractor.max_turns, 1),
         log_llm_payload=log_llm_payload,
     )
-    output = _extract_segment_tool_output(result) or _coerce_segment_output(result.final_output)
+    output = _extract_segment_tool_output(
+        result,
+        segment.city_name,
+    ) or _coerce_segment_output(result.final_output, segment.city_name)
     if isinstance(output, InitiativeSegmentStop):
         flags = list(
             dict.fromkeys([*output.segment_data_quality_flags, *detect_source_quality_flags(segment.content)])
@@ -465,10 +535,7 @@ def _run_segment_once(
             extraction_complete=True,
             stop_reason=output.reason,
         )
-    initiatives = [
-        _normalize_candidate(InitiativeExtractionCandidate(initiative=item), segment)
-        for item in output.initiatives
-    ]
+    initiatives = [_normalize_candidate(item, segment) for item in output.initiatives]
     flags = list(
         dict.fromkeys([*output.segment_data_quality_flags, *detect_source_quality_flags(segment.content)])
     )
@@ -725,6 +792,20 @@ def _merge_dicts(
     return merged
 
 
+def _source_quote_score(value: str | None) -> int:
+    """Score a quote by useful word count, capped to avoid favoring huge excerpts."""
+    if not value:
+        return 0
+    return min(len(value.split()), 80)
+
+
+def _choose_source_quote(base: str | None, extra: str | None) -> str | None:
+    """Choose the clearest available source quote during duplicate merges."""
+    if _source_quote_score(extra) > _source_quote_score(base):
+        return extra
+    return base
+
+
 def _merge_record(
     base: InitiativeExtractionRecord,
     extra: InitiativeExtractionCandidate,
@@ -753,6 +834,7 @@ def _merge_record(
     return base.model_copy(
         update={
             "initiative": initiative,
+            "source_quote": _choose_source_quote(base.source_quote, extra.source_quote),
             "source_refs": [*base.source_refs, *extra.source_refs],
             "document_local_code": base.document_local_code or extra.document_local_code,
             "data_quality_flags": list(dict.fromkeys([*base.data_quality_flags, *extra.data_quality_flags])),
@@ -977,7 +1059,15 @@ def _dedupe_candidates(
             existing = records_by_key.get(key)
             if existing is None:
                 record = InitiativeExtractionRecord(
-                    **candidate.model_dump(mode="json"),
+                    initiative=candidate.initiative,
+                    document_local_code=candidate.document_local_code,
+                    source_quote=candidate.source_quote,
+                    source_refs=candidate.source_refs,
+                    data_quality_flags=candidate.data_quality_flags,
+                    number_context=candidate.number_context,
+                    number_deferred=candidate.number_deferred,
+                    number_uncertain=candidate.number_uncertain,
+                    extraction_notes=candidate.extraction_notes,
                     record_id=_record_id_for(candidate, raw.source_document),
                     source_document=raw.source_document,
                 )
@@ -1089,6 +1179,18 @@ def _build_review_items(
                 )
             )
         for flag in record.data_quality_flags:
+            if flag in SOURCE_QUOTE_FLAGS:
+                review_items.append(
+                    InitiativeReviewItem(
+                        review_type="source_quote_missing_or_invalid",
+                        message="Initiative source quote is missing or was not found in the source segment.",
+                        source_document=record.source_document,
+                        record_id=record.record_id,
+                        document_local_code=record.document_local_code,
+                        details={"flag": flag},
+                    )
+                )
+                continue
             review_items.append(
                 InitiativeReviewItem(
                     review_type="initiative_quality_flag",
@@ -1166,10 +1268,10 @@ def _write_run_artifacts(
                 "- `01_segments/segments.jsonl`: ordered line-aware document segments.",
                 "- `02_raw_extractions/raw_segment_extractions.jsonl`: per-segment model output.",
                 "- `03_deduped/exact_initiatives.jsonl`: canonical v1 initiatives after exact code/title dedupe.",
-                "- `03_deduped/exact_initiative_records.jsonl`: exact-deduped pipeline records with generated ids and audit metadata.",
+                "- `03_deduped/exact_initiative_records.jsonl`: exact-deduped pipeline records with generated ids and source quotes.",
                 "- `03_deduped/semantic_duplicate_groups.jsonl`: semantic duplicate groups proposed by the LLM.",
                 "- `03_deduped/initiatives.jsonl`: final canonical v1 initiative objects.",
-                "- `03_deduped/initiative_records.jsonl`: final pipeline records with generated ids and audit metadata for TEF mapping.",
+                "- `03_deduped/initiative_records.jsonl`: final pipeline records with generated ids and quote-only source citations for TEF mapping.",
                 "- `04_review/review_items.jsonl`: coverage and quality review items.",
                 "- `summary.json`: run counts.",
                 "",

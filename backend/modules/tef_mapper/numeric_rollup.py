@@ -29,6 +29,7 @@ class TefNumericFactRecord(BaseModel):
     source_document: str
     document_local_code: str | None = None
     initiative_name: str
+    source_quote: str | None = None
     target_type: TefTargetType
     target_id: str
     target_path: str
@@ -61,6 +62,7 @@ class TefGroupedInitiative(BaseModel):
     city: str
     source_document: str
     initiative_name: str
+    source_quote: str | None = None
     mapping_confidence: float
     is_primary_mapping: bool
     mapping_needs_review: bool
@@ -282,6 +284,7 @@ def build_numeric_facts(
                         source_document=record.source_document,
                         document_local_code=record.document_local_code,
                         initiative_name=record.initiative.initiative_name,
+                        source_quote=record.source_quote,
                         target_type=mapping.target_type,
                         target_id=mapping.target_id,
                         target_path=mapping.target_path,
@@ -333,6 +336,7 @@ def build_grouped_initiatives(
                 city=mapping.city,
                 source_document=mapping.source_document,
                 initiative_name=mapping.initiative_name,
+                source_quote=mapping.source_quote,
                 mapping_confidence=mapping.confidence,
                 is_primary_mapping=mapping.is_primary,
                 mapping_needs_review=mapping.needs_review,

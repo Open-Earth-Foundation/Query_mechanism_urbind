@@ -44,7 +44,7 @@ Use `submit_initiative_extractions` when returning zero or more initiative candi
 Use `stop_initiative_extraction` when `extraction_mode` is `dense_followup` and no additional distinct initiatives remain.
 
 The `submit_initiative_extractions` tool argument must match `InitiativeSegmentExtraction`:
-- `initiatives` (list[`InitiativeExtraction`]): zero or more canonical v1 initiative objects found in this segment.
+- `initiatives` (list[`InitiativeExtractionCandidate`]): zero or more initiative candidates found in this segment.
 - `segment_data_quality_flags` (list[str]): segment-level quality flags such as `source_section_truncated`, `ocr_artifacts`, `table_rows_split`, or `unit_ambiguous`.
 - `segment_notes` (list[str]): short audit notes about extraction limitations.
 - `error` (`ErrorInfo` | null): use null for normal completion.
@@ -54,8 +54,11 @@ The `stop_initiative_extraction` tool argument must match `InitiativeSegmentStop
 - `segment_data_quality_flags` (list[str]): segment-level quality flags noticed during the follow-up check.
 - `segment_notes` (list[str]): short audit notes about the dense follow-up check.
 
-Each `InitiativeExtraction` must include:
-- `city` (str): city name.
+Each `InitiativeExtractionCandidate` must include:
+- `initiative` (`InitiativeExtraction`): the canonical v1 initiative object.
+- `source_quote` (str | null): one concise exact quote copied from `content` that supports the initiative. Use the shortest quote that makes the initiative findable in the original markdown. Use null only when no concise supporting quote is present in the current segment.
+
+Each nested `InitiativeExtraction` must include:
 - `initiative_name` (str): initiative name from the source.
 - `general_description` (str | null): descriptive summary of what the initiative is.
 - `objective_text` (str | null): source objective, impact, or intended change text.
@@ -69,13 +72,16 @@ Each `InitiativeExtraction` must include:
 - `numbers.planned` (object): planned or target numeric facts.
 
 Rules:
+- Do not infer or populate `city`. The pipeline assigns `city` programmatically from input `city_name` before validation. If a `city` field is present anyway, it is ignored and overwritten.
+- Do not create `source_refs`. The pipeline assigns structured source references from segment metadata. Return only `source_quote` as citation text.
 - Missing source fields must be null. Never write prose such as "not present in extracted source segment" in canonical text fields.
 - Keep every number that is explicit in the source when it is relevant to the initiative.
 - Include currency equivalents when the source provides them.
 - Keep current facts in `numbers.current`; keep future targets, planned outputs, planned dates, and planned costs in `numbers.planned`.
 - Do not invent normalized units. You may use clear snake_case keys, but values must remain faithful to the source.
 - Do not create TEF fields. Output must not include `tef`, `transition_element`, `sector_route`, `category`, `activity`, or similar classification fields.
-- Do not create pipeline fields. Output must not include `record_id`, `fact_id`, `extraction_run_id`, `tef_mapping_run_id`, `source_refs`, `document_local_code`, or review/audit metadata. The pipeline generates those outside the canonical v1 initiative object.
+- Do not create source-location fields. Output must not include `source_refs`, `source_document`, `source_path`, `segment_id`, `start_line`, `end_line`, or `source_ref_id`.
+- Do not create pipeline fields. Output must not include `record_id`, `fact_id`, `extraction_run_id`, `tef_mapping_run_id`, `document_local_code`, or review/audit metadata. The pipeline generates those outside the canonical v1 initiative object.
 - Do not copy initiatives from `already_extracted_initiatives` into output. Use that list only to suppress duplicates.
 - In `dense_followup` mode, do not return a previously extracted initiative with a new title. Return only materially new initiatives or call `stop_initiative_extraction`.
 </output>
@@ -84,26 +90,28 @@ Rules:
 {
   "initiatives": [
     {
-      "city": "Example City",
-      "initiative_name": "Implementation of a local energy programme based on heat pumps with a capacity of approximately 1 MW.",
-      "general_description": "The city plans a local energy programme based on heat pumps to improve the district heating system.",
-      "objective_text": "Action to decarbonise the district heating system. Strong support for changing the structure of energy generation.",
-      "implementation_text": "The city plans a technical and infrastructure measure based on heat pumps.",
-      "planned_outputs_text": "Power is approximately 1 MW.",
-      "delivery_text": "The municipal heating company is responsible. The action supplies the city's energy system and involves businesses and residents.",
-      "funding_text": "Estimated investment outlay is PLN 7,000,000, approximately EUR 1,555,000.",
-      "timeline_text": "The planned timeframe runs from 2024 to 2028.",
-      "numbers": {
-        "current": {},
-        "planned": {
-          "capacity_mw": 1,
-          "start_year": 2024,
-          "end_year": 2028,
-          "emissions_reduction_tco2e": 3107,
-          "investment_cost_pln": 7000000,
-          "investment_cost_eur_approx": 1555000
+      "initiative": {
+        "initiative_name": "Implementation of a local energy programme based on heat pumps with a capacity of approximately 1 MW.",
+        "general_description": "The city plans a local energy programme based on heat pumps to improve the district heating system.",
+        "objective_text": "Action to decarbonise the district heating system. Strong support for changing the structure of energy generation.",
+        "implementation_text": "The city plans a technical and infrastructure measure based on heat pumps.",
+        "planned_outputs_text": "Power is approximately 1 MW.",
+        "delivery_text": "The municipal heating company is responsible. The action supplies the city's energy system and involves businesses and residents.",
+        "funding_text": "Estimated investment outlay is PLN 7,000,000, approximately EUR 1,555,000.",
+        "timeline_text": "The planned timeframe runs from 2024 to 2028.",
+        "numbers": {
+          "current": {},
+          "planned": {
+            "capacity_mw": 1,
+            "start_year": 2024,
+            "end_year": 2028,
+            "emissions_reduction_tco2e": 3107,
+            "investment_cost_pln": 7000000,
+            "investment_cost_eur_approx": 1555000
+          }
         }
-      }
+      },
+      "source_quote": "Implementation of a local energy programme based on heat pumps with a capacity of approximately 1 MW."
     }
   ],
   "segment_data_quality_flags": [],

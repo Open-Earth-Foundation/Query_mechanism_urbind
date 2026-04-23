@@ -52,6 +52,7 @@ def _record(
         record_id=record_id,
         source_document="Krakow.md",
         document_local_code="BIC-7",
+        source_quote="Approximately 1 MW heat-pump-based capacity.",
         initiative=InitiativeExtraction(
             city="Krakow",
             initiative_name=initiative_name,
@@ -424,6 +425,30 @@ def test_catalog_loader_finds_sector_and_heat_transitions() -> None:
     assert {item.tef_id for item in heat_candidates} >= {"district_heating_heat_pumps"}
 
 
+def test_sector_route_paths_are_hydrated_from_catalog() -> None:
+    """Sector route paths should be assigned by catalog lookup, not the LLM."""
+    catalog = TefCatalog(Path("tef_mapping"))
+    route = TefSectorRoute(
+        sector="energy",
+        selected_path="wrong-path",
+        confidence=0.82,
+        needs_review=False,
+        rationale="The initiative changes district heating supply.",
+        alternatives=[
+            {
+                "sector": "buildings",
+                "path": "also-wrong",
+                "confidence": 0.64,
+            }
+        ],
+    )
+
+    hydrated = tef_agent._hydrate_sector_route(route, catalog)
+
+    assert hydrated.selected_path == "5-energy"
+    assert hydrated.alternatives[0].path == "4-buildings"
+
+
 def test_waste_chp_transition_descriptions_distinguish_purpose() -> None:
     """Waste CHP candidates should separate diversion purpose from energy output."""
     catalog = TefCatalog(Path("tef_mapping"))
@@ -514,24 +539,29 @@ def test_category_cards_have_sector_style_routing_guidance() -> None:
     assert "city tram, light rail, and subway modal-shift initiatives" in (
         passenger_road_text
     )
-    assert "do not avoid road merely because a city project mentions tram track" in (
+    assert "existing tram/light-rail reconstruction" in passenger_road_text
+    assert "new or extended city tram/light-rail/subway modal-shift" in (
         passenger_road_text
     )
+    assert "use rail, not road" in passenger_road_text
     assert "Transport > Freight > Road" in freight_road.card_text
 
     passenger_rail = catalog.subcategories_by_path["1-transport/1a-mobility/1a2-rail"]
     freight_rail = catalog.subcategories_by_path["1-transport/1b-freight/1b2-rail"]
     assert "Mobility > Rail" in passenger_rail.card_text
-    assert "use road, not rail, for urban tram, light rail, or subway projects" in (
-        passenger_rail.card_text.casefold()
-    )
+    passenger_rail_text = passenger_rail.card_text.casefold()
+    assert "existing urban tram or light-rail reconstruction" in passenger_rail_text
+    assert "track reconstruction" in passenger_rail_text
+    assert "use road > light duty vehicles, not rail" in passenger_rail_text
     assert "Freight > Rail" in freight_rail.card_text
 
     light_duty = catalog.subcategories_by_path[
         "1-transport/1a-mobility/1a1-road/1a1a-light-duty-vehicles"
     ]
-    assert "trams, light rail and subway" in light_duty.card_text.casefold()
-    assert "shifts trips from private cars" in light_duty.card_text.casefold()
+    light_duty_text = light_duty.card_text.casefold()
+    assert "trams, light rail and subway" in light_duty_text
+    assert "shifts trips from private cars" in light_duty_text
+    assert "use mobility > rail" in light_duty_text
 
     soda_ash = catalog.subcategories_by_path["2-industry/2a-minerals/2a5-soda-ash"]
     assert "no-transition TEF category" in soda_ash.description
@@ -588,21 +618,72 @@ def test_mapper_loads_only_stage_scoped_payloads_and_maps_heat_pump(
         .read_text(encoding="utf-8")
         .splitlines()
     ]
+    input_rows = [
+        json.loads(line)
+        for line in (Path(result.output_dir) / "01_inputs" / "initiatives.jsonl")
+        .read_text(encoding="utf-8")
+        .splitlines()
+    ]
+    numeric_rows = [
+        json.loads(line)
+        for line in (
+            Path(result.output_dir)
+            / "07_numeric_facts"
+            / "initiative_numeric_facts.jsonl"
+        )
+        .read_text(encoding="utf-8")
+        .splitlines()
+    ]
+    grouped_rows = [
+        json.loads(line)
+        for line in (
+            Path(result.output_dir)
+            / "08_tef_groups"
+            / "tef_grouped_initiatives.jsonl"
+        )
+        .read_text(encoding="utf-8")
+        .splitlines()
+    ]
     assert final_rows[0]["target_type"] == "transition_element"
     assert final_rows[0]["target_id"] == "district_heating_heat_pumps"
     assert final_rows[0]["target_path"] == "5-energy/5a-energy-supply/5a2-heat"
-    assert (Path(result.output_dir) / "07_numeric_facts" / "initiative_numeric_facts.jsonl").exists()
+    assert input_rows[0]["source_quote"] == "Approximately 1 MW heat-pump-based capacity."
+    assert final_rows[0]["source_quote"] == "Approximately 1 MW heat-pump-based capacity."
+    assert numeric_rows[0]["source_quote"] == "Approximately 1 MW heat-pump-based capacity."
+    assert grouped_rows[0]["initiatives"][0]["source_quote"] == (
+        "Approximately 1 MW heat-pump-based capacity."
+    )
+    hidden_citation_fields = {
+        "source_refs",
+        "source_path",
+        "segment_id",
+        "start_line",
+        "end_line",
+        "source_ref_id",
+    }
+    assert not hidden_citation_fields & set(input_rows[0])
+    assert not hidden_citation_fields & set(final_rows[0])
+    assert not hidden_citation_fields & set(numeric_rows[0])
+    assert not hidden_citation_fields & set(grouped_rows[0]["initiatives"][0])
+    assert (
+        Path(result.output_dir) / "07_numeric_facts" / "initiative_numeric_facts.jsonl"
+    ).exists()
     assert (Path(result.output_dir) / "08_tef_groups" / "tef_grouped_initiatives.jsonl").exists()
     assert (Path(result.output_dir) / "08_tef_groups" / "tef_metric_rollups.json").exists()
 
     sector_payload = next(payload for stage, payload in calls if stage == "sector")
+    for _stage, payload in calls:
+        assert "source_quote" not in payload["initiative"]
     assert set(sector_payload) == {"initiative", "sectors"}
     assert "candidate_subcategories" not in sector_payload
     assert "candidate_transition_elements" not in sector_payload
 
     subsector_payloads = [payload for stage, payload in calls if stage == "subsector"]
     assert len(subsector_payloads) == 2
-    assert all(set(payload) == {"initiative", "selected_category", "candidate_subcategories"} for payload in subsector_payloads)
+    assert all(
+        set(payload) == {"initiative", "selected_category", "candidate_subcategories"}
+        for payload in subsector_payloads
+    )
     first_subsector_candidates = subsector_payloads[0]["candidate_subcategories"]
     energy_supply = next(
         candidate
@@ -908,6 +989,17 @@ def test_mapper_prefers_extraction_record_sidecar(tmp_path: Path) -> None:
     assert tef_agent._resolve_initiatives_path(tmp_path, None) == records_path
 
 
+def test_mapper_requires_extraction_record_sidecar(tmp_path: Path) -> None:
+    """Extraction-run discovery should not fall back to canonical v1 rows."""
+    deduped_dir = tmp_path / "03_deduped"
+    deduped_dir.mkdir(parents=True)
+    canonical_path = deduped_dir / "initiatives.jsonl"
+    records_path = deduped_dir / "initiative_records.jsonl"
+    canonical_path.write_text("{}\n", encoding="utf-8")
+
+    assert tef_agent._resolve_initiatives_path(tmp_path, None) == records_path
+
+
 def test_numeric_rollup_uses_clean_initiative_numbers_only() -> None:
     """Numeric facts should come from the clean v1 initiative object, not sidecar fields."""
     record = _record()
@@ -918,6 +1010,7 @@ def test_numeric_rollup_uses_clean_initiative_numbers_only() -> None:
         source_document=record.source_document,
         document_local_code=record.document_local_code,
         initiative_name=record.initiative.initiative_name,
+        source_quote=record.source_quote,
         target_type="transition_element",
         target_id="district_heating_heat_pumps",
         target_path="5-energy/5a-energy-supply/5a2-heat",
@@ -948,6 +1041,7 @@ def test_numeric_rollup_uses_clean_initiative_numbers_only() -> None:
         "transition_element:district_heating_heat_pumps"
     )
     assert capacity_fact.include_in_default_rollup is True
+    assert capacity_fact.source_quote == "Approximately 1 MW heat-pump-based capacity."
 
 
 def test_prompt_contracts_match_stage_models() -> None:
@@ -958,7 +1052,13 @@ def test_prompt_contracts_match_stage_models() -> None:
 
     assert "submit_tef_sector_route" in sector_prompt
     for field_name in TefSectorRoute.model_fields:
+        if field_name == "selected_path":
+            continue
         assert f"`{field_name}`" in sector_prompt
+    assert "`selected_path`" not in sector_prompt
+    assert "pipeline assigns sector paths from the TEF catalog" in sector_prompt
+    assert "transport-system energy storage" in sector_prompt
+    assert "landfill or waste-treatment site" in sector_prompt
 
     assert "submit_tef_subsector_route" in subsector_prompt
     for field_name in TefSubsectorRoute.model_fields:
@@ -966,6 +1066,15 @@ def test_prompt_contracts_match_stage_models() -> None:
     assert "main causal shift" in subsector_prompt
     assert "supporting component" in subsector_prompt
     assert "overall intervention and expected emissions impact" in subsector_prompt
+    assert "railway stops and integrated transfer nodes" in subsector_prompt
+    assert "tram fleet purchases" in subsector_prompt
+    assert "Energy > Other > Non Specified Energy Use" in subsector_prompt
+    assert "Building Stocks > Construction only for new construction" in subsector_prompt
+    assert "Land > Settlements" in subsector_prompt
+    assert "Waste > Solids > Composting" in subsector_prompt
+    assert "Manufacturing > Other only when no named manufacturing sibling" in (
+        subsector_prompt
+    )
 
     assert "submit_tef_transition_mapping" in transition_prompt
     for field_name in TefTransitionMapping.model_fields:
@@ -973,3 +1082,6 @@ def test_prompt_contracts_match_stage_models() -> None:
     assert "main causal shift" in transition_prompt
     assert "supporting component" in transition_prompt
     assert "overall intervention and expected emissions impact" in transition_prompt
+    assert "`district_heating_heat_pumps`" in transition_prompt
+    assert "`shift_to_electric_passenger_rail`" in transition_prompt
+    assert "`shift_to_composting_of_organic_waste`" in transition_prompt

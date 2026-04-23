@@ -10,4 +10,4 @@
 
 The source repository is licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0), as stated in the TEF repository README.
 
-Raw copied YAML files are preserved for internal mapping/reference traceability. Compact catalog files are generated from those YAML files and the TEF directory hierarchy.
+Upstream TEF YAML files are mapped into the compact JSON catalog files in this directory. Each Transition Element record preserves its upstream YAML source path in `tef_source_path` for reference traceability.

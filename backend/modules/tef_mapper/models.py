@@ -68,22 +68,22 @@ class TefTransitionElement(BaseModel):
 
 
 class TefSectorAlternative(BaseModel):
-    """Alternative TEF root sector considered by the sector router."""
+    """Alternative TEF root sector with path hydrated from the catalog."""
 
     model_config = ConfigDict(extra="forbid")
 
     sector: TefSectorKey
-    path: str
+    path: str = ""
     confidence: float = Field(ge=0.0, le=1.0)
 
 
 class TefSectorRoute(BaseModel):
-    """LLM output for root-sector routing."""
+    """Root-sector routing result with path hydrated from the catalog."""
 
     model_config = ConfigDict(extra="forbid")
 
     sector: TefSectorKey
-    selected_path: str
+    selected_path: str = ""
     confidence: float = Field(ge=0.0, le=1.0)
     needs_review: bool
     rationale: str
@@ -203,6 +203,7 @@ class TefFinalMappingRecord(BaseModel):
     source_document: str
     document_local_code: str | None = None
     initiative_name: str
+    source_quote: str | None = None
     target_type: TefTargetType
     target_id: str
     target_path: str

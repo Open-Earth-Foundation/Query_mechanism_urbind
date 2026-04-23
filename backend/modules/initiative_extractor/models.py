@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Any, Literal, TypeAlias
 
-from pydantic import BaseModel, ConfigDict, Field
+from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 from backend.models import ErrorInfo
 
@@ -58,7 +58,8 @@ class InitiativeExtractionCandidate(BaseModel):
 
     initiative: InitiativeExtraction
     document_local_code: str | None = None
-    source_refs: list[InitiativeSourceRef] = Field(default_factory=list)
+    source_quote: str | None = None
+    source_refs: list[InitiativeSourceRef] = Field(default_factory=list, exclude=True)
     data_quality_flags: list[str] = Field(default_factory=list)
     number_context: dict[str, JsonValue] = Field(default_factory=dict)
     number_deferred: dict[str, JsonValue] = Field(default_factory=dict)
@@ -71,10 +72,42 @@ class InitiativeSegmentExtraction(BaseModel):
 
     model_config = ConfigDict(extra="ignore")
 
-    initiatives: list[InitiativeExtraction] = Field(default_factory=list)
+    initiatives: list[InitiativeExtractionCandidate] = Field(default_factory=list)
     segment_data_quality_flags: list[str] = Field(default_factory=list)
     segment_notes: list[str] = Field(default_factory=list)
     error: ErrorInfo | None = None
+
+    @field_validator("initiatives", mode="before")
+    @classmethod
+    def wrap_bare_initiatives(cls, value: object) -> object:
+        """Accept old bare initiative rows while preferring candidate wrappers."""
+        if not isinstance(value, list):
+            return value
+        wrapped: list[object] = []
+        for item in value:
+            if isinstance(item, InitiativeExtraction):
+                wrapped.append({"initiative": item.model_dump(mode="json")})
+            elif isinstance(item, dict) and "initiative" not in item:
+                initiative = dict(item)
+                wrapped_item = {
+                    field_name: initiative.pop(field_name)
+                    for field_name in (
+                        "document_local_code",
+                        "source_quote",
+                        "source_refs",
+                        "data_quality_flags",
+                        "number_context",
+                        "number_deferred",
+                        "number_uncertain",
+                        "extraction_notes",
+                    )
+                    if field_name in initiative
+                }
+                wrapped_item["initiative"] = initiative
+                wrapped.append(wrapped_item)
+            else:
+                wrapped.append(item)
+        return wrapped
 
 
 class InitiativeSegmentStop(BaseModel):

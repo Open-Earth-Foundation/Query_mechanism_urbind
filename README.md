@@ -215,16 +215,34 @@ python -m backend.scripts.extract_initiatives --markdown-path documents --city K
 The extractor writes to `output/initiative_extraction/<run_id>/` with source manifests, line-aware
 segments, raw per-segment extractions, exact-deduped initiatives, semantic duplicate groups, final
 deduplicated initiatives, review items, and a summary. `03_deduped/initiatives.jsonl` contains only
-the agreed canonical v1 initiative shape from `plan.md`; generated ids, source metadata, and audit
-fields are kept separately in `03_deduped/initiative_records.jsonl` for downstream mapping. Use `--run-id`, `--output-dir`,
-`--max-workers`, and `--log-llm-payload` to override run naming, artifact location, concurrency, and
+the agreed canonical v1 initiative shape from `plan.md`; generated ids and quote-only audit
+citations are kept separately in `03_deduped/initiative_records.jsonl` for downstream mapping. Use
+`--run-id`, `--output-dir`, `--max-workers`, and `--log-llm-payload` to override run naming,
+artifact location, concurrency, and
 payload logging. `--max-workers` only affects extraction when prior-initiative context is disabled in
-config.
+config. The canonical `city` field and structured source references are assigned from source
+segment metadata, not inferred by the LLM. The LLM returns only `source_quote` for citation text.
 
-Map extracted initiatives to TEF targets as JSON artifacts:
+Run initiative extraction and TEF mapping as one artifact pipeline:
 
 ```
 python -m backend.scripts.map_initiatives_to_tef \
+  --markdown-path documents \
+  --city Krakow
+```
+
+By default, `map_initiatives_to_tef` first runs the initiative extractor and then maps the
+resulting `03_deduped/initiative_records.jsonl` to TEF targets. Omit `--city` to process all
+Markdown city files discovered under `--markdown-path`; repeat `--city` to process a selected
+list. Use `--extraction-output-dir`, `--extraction-run-id`, and `--extraction-max-workers` to
+control the extraction stage separately from TEF mapper `--output-dir`, `--run-id`, and
+`--max-workers`.
+
+Run mapping only against an existing extraction artifact when needed:
+
+```
+python -m backend.scripts.map_initiatives_to_tef \
+  --mapping-only \
   --extraction-run-dir output/initiative_extraction/five_cities_20260421_002 \
   --city Krakow
 ```
@@ -244,7 +262,24 @@ The same subcategory fallback is used when the transition mapper finds no exact 
 Element match. A successful initiative mapping never drops the initiative solely because the TEF
 catalog has no precise Transition Element for it. If a category route returns a descendant of the
 current direct-child candidate, the mapper normalizes it to that direct child for the current pass
-and emits a manual-review item.
+and emits a manual-review item. Sector paths are assigned from the TEF catalog after the model
+selects a sector key, so the sector router does not generate path fields. `source_quote` is copied
+through mapper input rows, final mappings, numeric facts, and TEF-grouped initiatives for
+search-back traceability, but mapper LLM passes do not receive it as classification evidence.
+
+Run the full Krakow TEF benchmark against the curated CCC source-truth mappings:
+
+```
+python -m backend.scripts.benchmark_krakow_tef_mapping --max-workers 3
+```
+
+The benchmark converts `assets/tef_mapping/all_correct_initiatives_mapped_to_tef.json`
+into mapper-ready initiative records, runs the TEF mapper, and compares final mappings
+against source truth. Outputs are written under
+`output/tef_benchmarks/krakow_tef_mapping/<benchmark_id>/`, including
+`00_inputs/initiatives.jsonl`, the standard `01_tef_mapping/` mapper artifacts,
+`02_comparison/tef_benchmark_issues.json`, `02_comparison/tef_benchmark_report.md`,
+and `benchmark_summary.json`. Use `--limit N` for a smoke check before a full run.
 
 ### Krakow TEF source-of-truth assets
 

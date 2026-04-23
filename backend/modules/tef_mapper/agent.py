@@ -120,7 +120,7 @@ def _build_settings(config: AppConfig) -> object:
 
 def build_sector_router_agent(config: AppConfig, api_key: str) -> object:
     """Build the sector-router agent and load only the sector prompt."""
-    from agents import Agent, AgentOutputSchema, function_tool
+    from agents import Agent, function_tool
 
     settings = _build_settings(config)
     settings.tool_choice = "submit_tef_sector_route"
@@ -129,7 +129,6 @@ def build_sector_router_agent(config: AppConfig, api_key: str) -> object:
     @function_tool(strict_mode=False)
     def submit_tef_sector_route(
         sector: str,
-        selected_path: str,
         confidence: float,
         needs_review: bool,
         rationale: str,
@@ -138,7 +137,6 @@ def build_sector_router_agent(config: AppConfig, api_key: str) -> object:
         return TefSectorRoute.model_validate(
             {
                 "sector": sector,
-                "selected_path": selected_path,
                 "confidence": confidence,
                 "needs_review": needs_review,
                 "rationale": rationale,
@@ -152,7 +150,6 @@ def build_sector_router_agent(config: AppConfig, api_key: str) -> object:
         model=_build_model(config, api_key),
         model_settings=settings,
         tools=[submit_tef_sector_route],
-        output_type=AgentOutputSchema(TefSectorRoute, strict_json_schema=False),
         tool_use_behavior="stop_on_first_tool",
     )
 
@@ -375,10 +372,27 @@ def _validate_sector_route(route: TefSectorRoute, catalog: TefCatalog) -> None:
             f"Sector route selected_path {route.selected_path!r} does not match "
             f"sector {route.sector!r} path {expected_path!r}."
         )
-    valid_paths = {sector.path for sector in catalog.sectors}
     for alternative in route.alternatives:
-        if alternative.path not in valid_paths:
-            raise ValueError(f"Unknown sector alternative path: {alternative.path}")
+        expected_alternative_path = catalog.sector_path(alternative.sector)
+        if alternative.path != expected_alternative_path:
+            raise ValueError(
+                f"Sector alternative path {alternative.path!r} does not match "
+                f"sector {alternative.sector!r} path {expected_alternative_path!r}."
+            )
+
+
+def _hydrate_sector_route(route: TefSectorRoute, catalog: TefCatalog) -> TefSectorRoute:
+    """Assign catalog paths for the selected sector and sector alternatives."""
+    alternatives = [
+        alternative.model_copy(update={"path": catalog.sector_path(alternative.sector)})
+        for alternative in route.alternatives
+    ]
+    return route.model_copy(
+        update={
+            "selected_path": catalog.sector_path(route.sector),
+            "alternatives": alternatives,
+        }
+    )
 
 
 def _validate_subsector_route(route: TefSubsectorRoute, candidate_paths: set[str]) -> None:
@@ -458,6 +472,7 @@ def _final_mapping_base(
         "source_document": record.source_document,
         "document_local_code": record.document_local_code,
         "initiative_name": record.initiative.initiative_name,
+        "source_quote": record.source_quote,
         "sector_route": sector_route.model_dump(mode="json"),
         "subsector_routes": [
             route_record.model_dump(mode="json") for route_record in subsector_routes
@@ -559,6 +574,7 @@ def _map_one_initiative(
             initiative_record_id=record.record_id,
         )
         assert isinstance(sector_route, TefSectorRoute)
+        sector_route = _hydrate_sector_route(sector_route, catalog)
         _validate_sector_route(sector_route, catalog)
         sector_route_record = TefSectorRouteRecord(
             initiative_record_id=record.record_id,
@@ -825,15 +841,12 @@ def _resolve_initiatives_path(
     extraction_run_dir: Path | None,
     initiatives_jsonl: Path | None,
 ) -> Path:
-    """Resolve the initiatives JSONL input path."""
+    """Resolve the initiative extraction records JSONL input path."""
     if initiatives_jsonl is not None:
         return initiatives_jsonl
     if extraction_run_dir is None:
         raise ValueError("Either extraction_run_dir or initiatives_jsonl is required.")
-    records_path = extraction_run_dir / "03_deduped" / "initiative_records.jsonl"
-    if records_path.exists():
-        return records_path
-    return extraction_run_dir / "03_deduped" / "initiatives.jsonl"
+    return extraction_run_dir / "03_deduped" / "initiative_records.jsonl"
 
 
 def _filter_initiatives(
@@ -935,14 +948,14 @@ def _write_run_artifacts(
                 "This folder contains JSON-only staged TEF mapping artifacts.",
                 "",
                 "- `00_source/source_manifest.json`: source run and mapper settings.",
-                "- `01_inputs/initiatives.jsonl`: initiative extraction records mapped in this run.",
+                "- `01_inputs/initiatives.jsonl`: initiative extraction records mapped in this run, including source quotes for traceability.",
                 "- `02_sector_routes/sector_routes.jsonl`: sector-routing outputs.",
                 "- `03_subsector_routes/subsector_routes.jsonl`: recursive subsector-routing outputs.",
                 "- `04_transition_mappings/transition_mappings.jsonl`: Transition Element mapper outputs.",
-                "- `05_final_mappings/final_mappings.jsonl`: durable final mappings.",
+                "- `05_final_mappings/final_mappings.jsonl`: durable final mappings with copied source quotes.",
                 "- `06_review/review_items.jsonl`: manual-review flags.",
-                "- `07_numeric_facts/initiative_numeric_facts.jsonl`: clean v1 initiative numbers joined to TEF mappings.",
-                "- `08_tef_groups/tef_grouped_initiatives.jsonl`: initiatives grouped by TEF target.",
+                "- `07_numeric_facts/initiative_numeric_facts.jsonl`: clean v1 initiative numbers joined to TEF mappings with copied source quotes.",
+                "- `08_tef_groups/tef_grouped_initiatives.jsonl`: initiatives grouped by TEF target with copied source quotes.",
                 "- `08_tef_groups/tef_metric_rollups.json`: additive metric rollups by TEF target.",
                 "- `summary.json`: run counts.",
                 "",

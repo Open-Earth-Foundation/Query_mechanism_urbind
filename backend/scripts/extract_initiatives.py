@@ -19,7 +19,7 @@ Outputs:
 - `01_segments/segments.jsonl`
 - `02_raw_extractions/raw_segment_extractions.jsonl`
 - `03_deduped/initiatives.jsonl` with canonical v1 initiative objects only
-- `03_deduped/initiative_records.jsonl` with generated ids and audit metadata for downstream mapping
+- `03_deduped/initiative_records.jsonl` with generated ids and source_quote audit citations
 - `04_review/review_items.jsonl`
 - `summary.json`
 - `README.md`
