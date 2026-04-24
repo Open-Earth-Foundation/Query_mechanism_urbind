@@ -33,12 +33,9 @@ def build_test_app_config(
     *,
     runs_dir: Path = Path("output"),
     markdown_dir: Path = Path("documents"),
-    source_db_path: Path = Path("data/source.db"),
-    enable_sql: bool | None = None,
     vector_store: VectorStoreConfig | None = None,
     vector_store_overrides: dict[str, object] | None = None,
     orchestrator_overrides: dict[str, object] | None = None,
-    sql_researcher_overrides: dict[str, object] | None = None,
     markdown_researcher_overrides: dict[str, object] | None = None,
     initiative_extractor_overrides: dict[str, object] | None = None,
     tef_mapper_overrides: dict[str, object] | None = None,
@@ -51,7 +48,6 @@ def build_test_app_config(
     """Build a test AppConfig seeded from the repository llm_config.yaml."""
     config = load_repo_test_config().model_copy(deep=True)
     config.orchestrator = _apply_overrides(config.orchestrator, orchestrator_overrides)
-    config.sql_researcher = _apply_overrides(config.sql_researcher, sql_researcher_overrides)
     config.markdown_researcher = _apply_overrides(
         config.markdown_researcher,
         markdown_researcher_overrides,
@@ -74,7 +70,4 @@ def build_test_app_config(
         config.vector_store = vector_store
     config.runs_dir = runs_dir
     config.markdown_dir = markdown_dir
-    config.source_db_path = source_db_path
-    if enable_sql is not None:
-        config.enable_sql = enable_sql
     return config

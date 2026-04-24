@@ -434,7 +434,6 @@ def _run_mode_question(
     """Run one benchmark question for one mode and collect metrics."""
     with _temporary_env(env_overrides):
         config = load_config(config_path)
-        config.enable_sql = False
         config.markdown_dir = docs_dir
         config.runs_dir = runs_dir
         config.markdown_researcher.batch_max_chunks = max(

@@ -14,7 +14,6 @@ from backend.utils.config import (
     MarkdownResearcherConfig,
     OrchestratorConfig,
     RetryConfig,
-    SqlResearcherConfig,
     WriterConfig,
 )
 
@@ -50,7 +49,6 @@ def _build_test_config(tmp_path: Path) -> AppConfig:
             model="test-model",
             context_bundle_name="context_bundle.json",
         ),
-        sql_researcher=SqlResearcherConfig(model="test-model"),
         markdown_researcher=_markdown_researcher_config(),
         writer=WriterConfig(model="test-model"),
         chat=_chat_config(),
@@ -58,7 +56,6 @@ def _build_test_config(tmp_path: Path) -> AppConfig:
         retry=RetryConfig(backoff_base_seconds=1.0, backoff_max_seconds=30.0),
         runs_dir=tmp_path / "output",
         markdown_dir=tmp_path / "documents",
-        enable_sql=False,
     )
 
 

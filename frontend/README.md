@@ -5,7 +5,7 @@ Next.js frontend using shadcn-style components for a document-first workflow:
 1. Select question and city scope.
 2. Trigger backend run and wait for completion.
 3. Read generated document.
-4. Optionally open the dedicated Context Chat workspace (backend memory persisted per run).
+4. Optionally open the dedicated Context Chat workspace, which keeps the writer document available in the left rail while chat memory stays persisted per run.
 5. In the docked left rail, switch between the generated writer document, raw CCC markdown by city, and build controls.
 
 ## Run locally

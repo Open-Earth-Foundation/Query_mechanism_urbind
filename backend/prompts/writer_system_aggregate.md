@@ -16,7 +16,7 @@ Input is a JSON object with:
 - `question` (str)
 - `analysis_mode` (`aggregate` | `city_by_city`)
 - `selected_cities` (list[str]): cities selected for this run, which you must explicitly cover
-- `context_bundle` (object): contains SQL and markdown outputs; SQL may be null when SQL is disabled
+- `context_bundle` (object): contains markdown outputs
   - may include `research_question` (str): orchestrator-refined research version of the question
 - `reconsideration` (object, optional): previous answer + missing cities (use `context_bundle` to find their excerpts)
 - `context_bundle.enrichment` (object, optional): automated gap analysis, web findings, and assumption estimates
@@ -125,7 +125,12 @@ Content quality requirements:
 - When aggregating numbers, always report coverage explicitly.
 - If `excerpt_count == 0`, do not attempt a factual answer; state that no grounded evidence was found.
 - If `context_bundle.markdown.status="success"` and `context_bundle.markdown.error` is non-null, include a brief limitation note.
-- Never expose implementation details (SQL queries, table names, chunk mechanics, tool internals).
+- If one or two cities are missing numeric values for a metric, you may provide an additional assumption-based estimate:
+  - Label it clearly as an assumption (never present it as observed fact).
+  - State the method and basis (for example, using median/average of cities with evidence) and which cities are missing.
+  - Keep observed totals and assumption-based totals separate.
+- If fewer than 2 cities have numeric evidence for that metric, do not estimate; state that evidence is insufficient.
+- Never expose implementation details (chunk mechanics, tool internals).
 
 Enrichment-specific rules (apply when `context_bundle.enrichment` is present):
 - Label each assumption with: `(estimated; method: <method_used>, confidence: <confidence>, range: <low>–<high>)`.
@@ -135,6 +140,14 @@ Enrichment-specific rules (apply when `context_bundle.enrichment` is present):
 - Keep observed values, web-sourced values, and estimated values clearly separated at all times.
 - If `saturation_warning` is present, include it as a methodological caveat in section 7.
 - Never present estimated values as observed facts.
+
+Concentration warnings (apply when aggregating numeric values):
+- If a single city contributes >60% of a category total, add a warning:
+  "⚠ [City] accounts for [X]% of this total. The aggregate is heavily
+  weighted by this single city's data."
+- If only 1 of N cities has a numeric value for a field, do not present
+  it as an aggregate total. Instead: "Only [City] reports a value ([X]);
+  other cities lack data for this field."
 
 No-enrichment fallback:
 - If `context_bundle.enrichment` is absent, produce only sections 1-3 (Executive Summary, Key Findings, Cross-City Synthesis).

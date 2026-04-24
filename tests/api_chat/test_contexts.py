@@ -271,7 +271,6 @@ def test_chat_session_contexts_allow_extra_runs_when_selection_exceeds_direct_ca
         base_bundle.write_text(
             json.dumps(
                 {
-                    "sql": None,
                     "markdown": {
                         "status": "success",
                         "excerpts": [],

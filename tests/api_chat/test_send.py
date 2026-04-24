@@ -32,7 +32,7 @@ def test_chat_supports_header_api_key_override(
             runs_dir=runs_dir,
             markdown_dir=markdown_dir,
             followup_search_enabled=False,
-        ).model_copy(update={"enable_sql": True})
+        )
 
     def _stub_run_pipeline(
         question: str,
@@ -45,7 +45,6 @@ def test_chat_supports_header_api_key_override(
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert selected_cities is None
-        assert config.enable_sql is True
         return write_success_artifacts(question, run_id, config)
 
     def _stub_generate_reply(
@@ -67,7 +66,6 @@ def test_chat_supports_header_api_key_override(
         assert citation_prefix_tokens is None or isinstance(citation_prefix_tokens, list)
         assert isinstance(retry_missing_citation, bool)
         assert run_id == "run-chat-header"
-        assert config.enable_sql is True
         captured_key["value"] = api_key_override
         return "Header key response"
 

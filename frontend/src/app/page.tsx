@@ -4,6 +4,7 @@ import {
   type CSSProperties,
   type PointerEvent as ReactPointerEvent,
   useCallback,
+  useDeferredValue,
   useEffect,
   useMemo,
   useRef,
@@ -13,7 +14,6 @@ import {
   AlertTriangle,
   CheckCircle2,
   CircleDashed,
-  Download,
   Loader2,
   MessageSquareText,
   PanelLeftClose,
@@ -28,8 +28,10 @@ import { PipelineProgress } from "@/components/pipeline-progress";
 import { ContextChatWorkspace } from "@/components/context-chat/context-chat-workspace";
 import { DevModeToggle } from "@/components/dev-mode-toggle";
 import { DevToolsPanel } from "@/components/dev-tools-panel";
+import { DocumentExportControls } from "@/components/document-export-controls";
 import { MarkdownWithReferences } from "@/components/markdown-with-references";
 import { SearchableCityPicker } from "@/components/searchable-city-picker";
+import { SearchableRunPicker } from "@/components/searchable-run-picker";
 import { WriterDocumentRail } from "@/components/writer-document-rail";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -44,6 +46,7 @@ import {
   persistFrontendMode,
   readStoredFrontendMode,
 } from "@/lib/frontend-mode";
+import { filterImmediateRunMatches } from "@/lib/run-picker-search";
 import { formatCityLabel } from "@/lib/utils";
 import {
   CityGroup,
@@ -54,7 +57,6 @@ import {
   RunSummary,
   RunStatus,
   RunStatusResponse,
-  downloadRunPdf,
   fetchCities,
   fetchCityMarkdown,
   fetchCityGroups,
@@ -100,7 +102,8 @@ function formatRunOptionLabel(run: RunSummary): string {
   const compactQuestion = run.question.replace(/\s+/g, " ").trim();
   const preview =
     compactQuestion.length > 56 ? `${compactQuestion.slice(0, 53)}...` : compactQuestion;
-  return `${run.run_id} | ${preview || "No question"}`;
+  const pickerLabel = run.picker_timestamp || run.run_id;
+  return `${pickerLabel} | ${preview || "No question"}`;
 }
 
 function normalizeCitySelectionKey(value: string): string {
@@ -176,6 +179,8 @@ export default function Home() {
   const [query3, setQuery3] = useState("");
   const [scopeMode, setScopeMode] = useState<CityScopeMode>("all");
   const [analysisMode, setAnalysisMode] = useState<AnalysisMode>("aggregate");
+  const [enrichmentEnabled, setEnrichmentEnabled] = useState(true);
+  const [webResearchEnabled, setWebResearchEnabled] = useState(true);
   const [cities, setCities] = useState<string[]>([]);
   const [selectedCities, setSelectedCities] = useState<string[]>([]);
   const [cityGroups, setCityGroups] = useState<CityGroup[]>([]);
@@ -193,7 +198,9 @@ export default function Home() {
   const [isPolling, setIsPolling] = useState(false);
   const [runError, setRunError] = useState<string | null>(null);
   const [availableRuns, setAvailableRuns] = useState<RunSummary[]>([]);
+  const [knownRunsById, setKnownRunsById] = useState<Record<string, RunSummary>>({});
   const [selectedExistingRunId, setSelectedExistingRunId] = useState("");
+  const [runSearchQuery, setRunSearchQuery] = useState("");
   const [isLoadingRuns, setIsLoadingRuns] = useState(false);
   const [runsError, setRunsError] = useState<string | null>(null);
   const [isLoadingSelectedRun, setIsLoadingSelectedRun] = useState(false);
@@ -209,7 +216,6 @@ export default function Home() {
   >({});
   const [isLoadingCccDocument, setIsLoadingCccDocument] = useState(false);
   const [cccDocumentError, setCccDocumentError] = useState<string | null>(null);
-  const [isExportingPdf, setIsExportingPdf] = useState(false);
   const [writerRailWidth, setWriterRailWidth] = useState(DEFAULT_WRITER_RAIL_WIDTH_PX);
   const [isWriterRailResizing, setIsWriterRailResizing] = useState(false);
   const [frontendMode, setFrontendMode] = useState<FrontendMode>(getDefaultFrontendMode());
@@ -218,6 +224,7 @@ export default function Home() {
     null,
   );
   const cccRunDefaultRef = useRef<string | null>(null);
+  const runListAbortControllerRef = useRef<AbortController | null>(null);
 
   const runId = runResponse?.run_id ?? null;
   const statusValue = runStatus?.status ?? runResponse?.status ?? null;
@@ -243,8 +250,19 @@ export default function Home() {
     if (!runId) {
       return null;
     }
-    return availableRuns.find((run) => run.run_id === runId) ?? null;
-  }, [availableRuns, runId]);
+    return knownRunsById[runId] ?? availableRuns.find((run) => run.run_id === runId) ?? null;
+  }, [availableRuns, knownRunsById, runId]);
+
+  const selectedExistingRunSummary = useMemo(() => {
+    if (!selectedExistingRunId) {
+      return null;
+    }
+    return (
+      knownRunsById[selectedExistingRunId] ??
+      availableRuns.find((run) => run.run_id === selectedExistingRunId) ??
+      null
+    );
+  }, [availableRuns, knownRunsById, selectedExistingRunId]);
 
   const activeRunQuestion = useMemo(() => {
     const summaryQuestion = activeRunSummary?.question?.trim();
@@ -269,6 +287,11 @@ export default function Home() {
   const selectedCccCityKey = selectedCccCity
     ? normalizeCitySelectionKey(selectedCccCity)
     : "";
+  const deferredRunSearchQuery = useDeferredValue(runSearchQuery);
+  const visibleRunOptions = useMemo(
+    () => filterImmediateRunMatches(availableRuns, runSearchQuery),
+    [availableRuns, runSearchQuery],
+  );
 
   const workspaceRailTitle =
     workspaceUsesDocumentRail && workspaceRailMode === "document"
@@ -407,14 +430,30 @@ export default function Home() {
 
   const refreshRunList = useCallback(
     async (preferredRunId?: string): Promise<void> => {
+      runListAbortControllerRef.current?.abort();
+      const controller = new AbortController();
+      runListAbortControllerRef.current = controller;
       setIsLoadingRuns(true);
       setRunsError(null);
       try {
-        const payload = await fetchRuns();
+        const payload = await fetchRuns({
+          search: deferredRunSearchQuery,
+          signal: controller.signal,
+        });
+        if (runListAbortControllerRef.current !== controller) {
+          return;
+        }
+        setKnownRunsById((current) => {
+          const next = { ...current };
+          payload.runs.forEach((run) => {
+            next[run.run_id] = run;
+          });
+          return next;
+        });
         setAvailableRuns(payload.runs);
         setSelectedExistingRunId((current) => {
           const preferred = (preferredRunId ?? current).trim();
-          if (preferred && payload.runs.some((run) => run.run_id === preferred)) {
+          if (preferred) {
             return preferred;
           }
           if (payload.runs.length > 0) {
@@ -423,12 +462,17 @@ export default function Home() {
           return "";
         });
       } catch (error) {
+        if (controller.signal.aborted) {
+          return;
+        }
         setRunsError(error instanceof Error ? error.message : "Failed to load runs.");
       } finally {
-        setIsLoadingRuns(false);
+        if (runListAbortControllerRef.current === controller) {
+          setIsLoadingRuns(false);
+        }
       }
     },
-    [],
+    [deferredRunSearchQuery],
   );
 
   async function handleLoadExistingRun(): Promise<void> {
@@ -453,6 +497,12 @@ export default function Home() {
   useEffect(() => {
     void refreshRunList();
   }, [refreshRunList]);
+
+  useEffect(() => {
+    return () => {
+      runListAbortControllerRef.current?.abort();
+    };
+  }, []);
 
   useEffect(() => {
     const storedRunId = (window.localStorage.getItem(LAST_RUN_ID_STORAGE_KEY) ?? "").trim();
@@ -839,6 +889,8 @@ export default function Home() {
         query_3: showDirectQueryControls ? query3 : undefined,
         cities: scopeMode === "all" ? undefined : scopedCities,
         analysis_mode: analysisMode,
+        enrichment_enabled: enrichmentEnabled,
+        web_research_enabled: enrichmentEnabled && webResearchEnabled,
       });
       setRunResponse(payload);
       setSelectedExistingRunId(payload.run_id);
@@ -1076,28 +1128,23 @@ export default function Home() {
                     Refresh
                   </Button>
                 </div>
-                <div className="flex gap-2">
-                  <select
+                <div className="flex items-start gap-2">
+                  <SearchableRunPicker
                     id="existing-run"
-                    value={selectedExistingRunId}
-                    onChange={(event) => setSelectedExistingRunId(event.target.value)}
-                    disabled={isLoadingRuns || availableRuns.length === 0}
-                    className="h-11 w-full rounded-md border border-slate-300 bg-white px-3 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-slate-300 disabled:cursor-not-allowed disabled:bg-slate-100"
-                  >
-                    {availableRuns.length === 0 ? (
-                      <option value="">
-                        {isLoadingRuns ? "Loading runs..." : "No runs found"}
-                      </option>
-                    ) : null}
-                    {availableRuns.map((run) => (
-                      <option key={run.run_id} value={run.run_id}>
-                        {formatRunOptionLabel(run)}
-                      </option>
-                    ))}
-                  </select>
+                    runs={availableRuns}
+                    selectedRun={selectedExistingRunSummary}
+                    selectedRunId={selectedExistingRunId}
+                    searchQuery={runSearchQuery}
+                    onSearchQueryChange={setRunSearchQuery}
+                    onSelectRun={setSelectedExistingRunId}
+                    formatRunLabel={formatRunOptionLabel}
+                    isLoading={isLoadingRuns}
+                    popupClassName="w-[calc(100%+5.5rem)]"
+                  />
                   <Button
                     type="button"
                     variant="outline"
+                    className="h-11 w-20 shrink-0"
                     onClick={() => void handleLoadExistingRun()}
                     disabled={isLoadingSelectedRun || !selectedExistingRunId.trim()}
                   >
@@ -1106,9 +1153,29 @@ export default function Home() {
                   </Button>
                 </div>
                 <p className="text-xs text-slate-500">
-                  {availableRuns.length} runs discovered in backend storage.
+                  {runSearchQuery.trim()
+                    ? `${visibleRunOptions.length} matching runs.`
+                    : `${availableRuns.length} runs discovered in backend storage.`}
                 </p>
+                {selectedExistingRunSummary ? (
+                  <p className="text-xs text-slate-600">
+                    Selected run:{" "}
+                    <span className="font-medium text-slate-800">
+                      {formatRunOptionLabel(selectedExistingRunSummary)}
+                    </span>
+                    {runSearchQuery.trim() &&
+                    !visibleRunOptions.some(
+                      (run) => run.run_id === selectedExistingRunSummary.run_id,
+                    )
+                      ? " (kept selected while search is filtered)"
+                      : ""}
+                  </p>
+                ) : null}
                 {runsError ? <p className="text-xs text-red-600">{runsError}</p> : null}
+                <p className="text-xs text-slate-500">
+                  Open the list to search by question, date, run ID, or city. Minor city typos
+                  are tolerated.
+                </p>
                 <p className="text-xs text-slate-500">
                   Load a previous answer without re-running the full pipeline.
                 </p>
@@ -1245,6 +1312,49 @@ export default function Home() {
                 </p>
               </div>
 
+              <div className="space-y-3 rounded-md border border-slate-200 p-3">
+                <div className="flex items-center justify-between">
+                  <Label>Enrichment layer</Label>
+                  <Badge variant={enrichmentEnabled ? "secondary" : "outline"}>
+                    {enrichmentEnabled ? "On" : "Off"}
+                  </Badge>
+                </div>
+                <div className="flex items-center justify-between gap-2">
+                  <span className="text-sm text-slate-700">Assumptions + web research step</span>
+                  <Button
+                    type="button"
+                    size="sm"
+                    variant={enrichmentEnabled ? "default" : "outline"}
+                    onClick={() => setEnrichmentEnabled((v) => !v)}
+                  >
+                    {enrichmentEnabled ? "Disable" : "Enable"}
+                  </Button>
+                </div>
+                <div className="flex items-center justify-between gap-2">
+                  <span
+                    className={`text-sm ${enrichmentEnabled ? "text-slate-700" : "text-slate-400"}`}
+                  >
+                    Web research sub-step
+                  </span>
+                  <Button
+                    type="button"
+                    size="sm"
+                    variant={enrichmentEnabled && webResearchEnabled ? "default" : "outline"}
+                    disabled={!enrichmentEnabled}
+                    onClick={() => setWebResearchEnabled((v) => !v)}
+                  >
+                    {webResearchEnabled ? "Disable" : "Enable"}
+                  </Button>
+                </div>
+                <p className="text-xs text-slate-600">
+                  {enrichmentEnabled
+                    ? webResearchEnabled
+                      ? "Gap analysis, web research, and assumption estimates will run after CCC research."
+                      : "Gap analysis and assumption estimates will run; live web search is skipped."
+                    : "CCC excerpts only — no gap analysis, web research, or assumption estimates."}
+                </p>
+              </div>
+
               <Button
                 onClick={handleBuildDocument}
                 disabled={isSubmitting || !question.trim() || !hasValidScope}
@@ -1367,25 +1477,14 @@ export default function Home() {
                 <CardContent>
                   {documentReady ? (
                     <>
-                      <div className="mb-3 flex justify-end">
-                        <div className="flex gap-2">
-                          <Button
-                            type="button"
-                            variant="outline"
-                            onClick={() => {
-                              if (!runId || isExportingPdf) return;
-                              setIsExportingPdf(true);
-                              downloadRunPdf(runId)
-                                .catch((err) => {
-                                  setRunError(err instanceof Error ? err.message : "PDF export failed.");
-                                })
-                                .finally(() => setIsExportingPdf(false));
-                            }}
-                            disabled={!runId || isExportingPdf}
-                          >
-                            {isExportingPdf ? <Loader2 className="h-4 w-4 animate-spin" /> : <Download className="h-4 w-4" />}
-                            Export PDF
-                          </Button>
+                      <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+                        {runId ? (
+                          <DocumentExportControls
+                            runId={runId}
+                            content={runOutput.content}
+                          />
+                        ) : null}
+                        <div className="flex flex-wrap gap-2">
                           {devFeatures.showAssumptionsEntry ? (
                             <Button
                               type="button"

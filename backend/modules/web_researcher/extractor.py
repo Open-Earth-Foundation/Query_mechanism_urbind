@@ -49,7 +49,18 @@ def extract_fields_from_content(
         "  press_release, news_article, academic_paper, industry_report, other.\n"
         "- extraction_confidence: 0.0-1.0 based on how clearly the value is stated.\n"
         "- source_date: extract the date of the data if mentioned (YYYY or YYYY-MM format).\n"
-        "- If a field is not found in the content, do NOT fabricate a value.\n\n"
+        "- If a field is not found in the content, do NOT fabricate a value.\n"
+        "- SEMANTIC ALIGNMENT: only extract values that genuinely describe the requested field.\n"
+        "  Do NOT extract:\n"
+        "  - Private vehicle registration stats as fleet vehicle counts\n"
+        "  - Policy targets or aspirations as current values\n"
+        "  - Regional/national figures as city-specific values (unless the field is national-level)\n"
+        "  - Passenger counts as vehicle counts\n"
+        '  Example: "100,000 registered EVs in Baden-Württemberg" is NOT a valid value for "ev_bus_count" for Mannheim.\n'
+        "- CANCELLATION SIGNALS: If a page states that a programme, project, or initiative\n"
+        "  was cancelled, discontinued, halted, or reversed, extract it as:\n"
+        '  value: 0, unit: "cancelled_programme", source_type: "cancellation_notice".\n'
+        "  This captures the signal that a previously reported value is no longer valid.\n\n"
         "OUTPUT JSON SCHEMA:\n"
         "```json\n"
         '{"findings": [\n'

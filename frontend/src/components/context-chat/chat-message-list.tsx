@@ -3,7 +3,6 @@ import { Loader2 } from "lucide-react";
 
 import { MarkdownWithReferences } from "@/components/markdown-with-references";
 import { Badge } from "@/components/ui/badge";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import { ChatRoutingMetadata } from "@/lib/api";
 import { cn } from "@/lib/utils";
 
@@ -104,9 +103,9 @@ export function ChatMessageList({
   const lastChatTurn = chatTurns.at(-1) ?? null;
 
   return (
-    <ScrollArea
+    <div
       ref={messageScrollAreaRef}
-      className="h-[52vh] rounded-md border border-slate-200 px-5 py-4"
+      className="h-[52vh] overflow-y-auto overflow-x-hidden rounded-md border border-slate-200 px-5 py-4"
     >
       {isBootstrapping ? (
         <div className="flex items-center gap-2 text-sm text-slate-600">
@@ -198,6 +197,6 @@ export function ChatMessageList({
           ) : null}
         </div>
       )}
-    </ScrollArea>
+    </div>
   );
 }

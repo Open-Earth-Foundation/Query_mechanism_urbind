@@ -31,12 +31,6 @@ class RunPaths:
     error_log: Path
     context_bundle: Path
     research_question: Path
-    schema_summary: Path
-    city_list: Path
-    sql_dir: Path
-    sql_queries: Path
-    sql_results: Path
-    sql_results_full: Path
     markdown_dir: Path
     markdown_excerpts: Path
     markdown_accepted_excerpts: Path
@@ -48,7 +42,6 @@ class RunPaths:
 
 def create_run_paths(runs_dir: Path, run_id: str, context_bundle_name: str) -> RunPaths:
     base_dir = ensure_run_dir(runs_dir, run_id)
-    sql_dir = base_dir / "sql"
     markdown_dir = base_dir / "markdown"
 
     return RunPaths(
@@ -58,12 +51,6 @@ def create_run_paths(runs_dir: Path, run_id: str, context_bundle_name: str) -> R
         error_log=base_dir / "error_log.txt",
         context_bundle=base_dir / context_bundle_name,
         research_question=base_dir / "research_question.json",
-        schema_summary=base_dir / "schema_summary.json",
-        city_list=base_dir / "city_list.json",
-        sql_dir=sql_dir,
-        sql_queries=sql_dir / "queries.json",
-        sql_results=sql_dir / "results.json",
-        sql_results_full=sql_dir / "results_full.json",
         markdown_dir=markdown_dir,
         markdown_excerpts=markdown_dir / "excerpts.json",
         markdown_accepted_excerpts=markdown_dir / "accepted_excerpts.json",

@@ -14,11 +14,10 @@ dependencies = [
   "httpx==0.28.1",
   "pydantic==2.12.5",
   "psycopg[binary]==3.3.2",
+  "python-docx==1.2.0",
   "PyYAML==6.0.3",
   "python-dotenv==1.2.1",
   "tiktoken==0.12.0",
-  "fpdf2>=2.8.0",
-  "markdown>=3.7",
 ]
 
 [dependency-groups]
