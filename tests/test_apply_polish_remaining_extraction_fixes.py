@@ -1,16 +1,23 @@
-from pathlib import Path
+from typing import Any
 
 from backend.scripts import apply_polish_remaining_extraction_fixes as extraction_fix_v2
 
 
-SOURCE_RECORDS_PATH = Path(
-    "output/initiative_extraction/"
-    "polish_cities_flow_test_20260423_001_audit_fixed/"
-    "03_deduped/initiative_records.jsonl"
-)
+ExtractionRecord = dict[str, Any]
 
 
-def _count_titles(records: list[dict], city: str, title: str) -> int:
+def _record(record_id: str, city: str, title: str) -> ExtractionRecord:
+    """Build the minimal extraction-record shape used by the rewrite logic."""
+    return {
+        "record_id": record_id,
+        "initiative": {
+            "city": city,
+            "initiative_name": title,
+        },
+    }
+
+
+def _count_titles(records: list[ExtractionRecord], city: str, title: str) -> int:
     """Count exact city-title matches in a list of extraction records."""
     return sum(
         1
@@ -22,7 +29,19 @@ def _count_titles(records: list[dict], city: str, title: str) -> int:
 
 def test_rewrite_records_adds_verified_remaining_initiatives_without_duplication() -> None:
     """The second-pass repair should add the verified gaps and keep existing records singular."""
-    source_records = extraction_fix_v2.load_records(SOURCE_RECORDS_PATH)
+    source_records = [
+        _record("source:wroclaw:change_the_stove", "Wroclaw", "Change the stove"),
+        _record(
+            "source:wroclaw:participatory_budget",
+            "Wroclaw",
+            "Wroclaw Participatory Budget",
+        ),
+        _record(
+            "source:lodz:neest",
+            "Lodz",
+            "NEEST - NetZero Emission and Environmentally Sustainable Territories",
+        ),
+    ]
 
     corrected_records, manifest = extraction_fix_v2.rewrite_records(source_records)
 
