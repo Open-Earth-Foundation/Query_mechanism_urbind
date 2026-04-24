@@ -1104,6 +1104,9 @@ def test_prompt_contracts_match_stage_models() -> None:
     subsector_prompt = tef_agent.SUBSECTOR_PROMPT.read_text(encoding="utf-8")
     transition_prompt = tef_agent.TRANSITION_PROMPT.read_text(encoding="utf-8")
 
+    for prompt in (sector_prompt, subsector_prompt, transition_prompt):
+        assert "TEF means Transition Element Framework" in prompt
+
     assert "submit_tef_sector_route" in sector_prompt
     for field_name in TefSectorRoute.model_fields:
         if field_name == "selected_path":
@@ -1139,3 +1142,50 @@ def test_prompt_contracts_match_stage_models() -> None:
     assert "`district_heating_heat_pumps`" in transition_prompt
     assert "`shift_to_electric_passenger_rail`" in transition_prompt
     assert "`shift_to_composting_of_organic_waste`" in transition_prompt
+
+
+def test_tef_user_prompt_templates_use_required_schema_sections() -> None:
+    """Catalog prompt templates should keep the same schema sections as runtime prompts."""
+    prompt_specs = [
+        (
+            Path("tef_mapping/prompts/sector_router_user_template.md"),
+            TefSectorRoute,
+            "submit_tef_sector_route",
+            ["{{initiative_toon}}", "{{sector_cards_toon}}"],
+            {"selected_path"},
+        ),
+        (
+            Path("tef_mapping/prompts/subcategory_router_user_template.md"),
+            TefSubsectorRoute,
+            "submit_tef_subsector_route",
+            [
+                "{{initiative_toon}}",
+                "{{selected_category_toon}}",
+                "{{candidate_subcategories_toon}}",
+            ],
+            set(),
+        ),
+        (
+            Path("tef_mapping/prompts/transition_ranker_user_template.md"),
+            TefTransitionMapping,
+            "submit_tef_transition_mapping",
+            [
+                "{{initiative_toon}}",
+                "{{selected_category_toon}}",
+                "{{candidate_transition_elements_toon}}",
+            ],
+            set(),
+        ),
+    ]
+
+    for prompt_path, output_model, tool_name, placeholders, excluded_fields in prompt_specs:
+        content = prompt_path.read_text(encoding="utf-8")
+        for section in ("<role>", "<task>", "<input>", "<output>", "<example_output>"):
+            assert section in content
+        assert "TEF means Transition Element Framework" in content
+        assert tool_name in content
+        for placeholder in placeholders:
+            assert placeholder in content
+        for field_name in output_model.model_fields:
+            if field_name not in excluded_fields:
+                assert f"`{field_name}`" in content

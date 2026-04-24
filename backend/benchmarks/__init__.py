@@ -93,7 +93,7 @@ _EXPORTS = {
 }
 
 
-def __getattr__(name: str):
+def __getattr__(name: str) -> object:
     """Resolve public benchmark exports on first access."""
     try:
         module_name, attribute_name = _EXPORTS[name]
