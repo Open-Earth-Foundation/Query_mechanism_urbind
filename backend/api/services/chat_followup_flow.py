@@ -24,7 +24,6 @@ from backend.api.services.models import (
 from backend.api.services.run_store import RunStore
 from backend.modules.orchestrator.agent import route_chat_followup
 from backend.modules.orchestrator.models import ChatFollowupDecision
-from backend.utils.city_normalization import normalize_city_key
 from backend.utils.config import AppConfig
 
 logger = logging.getLogger(__name__)
@@ -124,7 +123,7 @@ def refresh_followup_context(
             run_id=run_id,
             conversation_id=conversation_id,
             bundle_id=search_result.bundle_id,
-            city_key=normalize_city_key(search_result.target_city or target_city),
+            city_key=target_city.strip().casefold(),
             target_city=search_result.target_city,
             created_at=search_result.created_at.isoformat(),
             max_followup_bundles=config.chat.max_auto_followup_bundles,

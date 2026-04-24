@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useState, useRef, useEffect, useMemo } from "react";
 import {
   CheckCircle2,
   ChevronDown,
@@ -230,11 +230,6 @@ interface ItemGroup {
   header?: PipelineStepItem;
 }
 
-interface ManualStepToggle {
-  isOpen: boolean;
-  status: PipelineStep["status"];
-}
-
 function groupItems(items: PipelineStepItem[]): ItemGroup[] {
   const groups: ItemGroup[] = [];
   let currentFields: PipelineStepItem[] = [];
@@ -338,13 +333,18 @@ function groupItems(items: PipelineStepItem[]): ItemGroup[] {
 /* ------------------------------------------------------------------ */
 
 function StepPanel({ step }: { step: PipelineStep }) {
-  const [manualToggle, setManualToggle] = useState<ManualStepToggle | null>(null);
+  const [manualToggle, setManualToggle] = useState<boolean | null>(null);
+  const prevStatusRef = useRef(step.status);
+
+  useEffect(() => {
+    if (prevStatusRef.current !== "running" && step.status === "running") {
+      setManualToggle(null);
+    }
+    prevStatusRef.current = step.status;
+  }, [step.status]);
 
   const autoExpanded = step.status === "running";
-  const manualToggleApplies =
-    manualToggle !== null &&
-    !(step.status === "running" && manualToggle.status !== "running");
-  const isOpen = manualToggleApplies ? manualToggle.isOpen : autoExpanded;
+  const isOpen = manualToggle ?? autoExpanded;
 
   const itemGroups = useMemo(() => groupItems(step.items), [step.items]);
 
@@ -354,7 +354,7 @@ function StepPanel({ step }: { step: PipelineStep }) {
       <div className="absolute left-[9px] top-0 h-full w-px bg-slate-200" />
       <button
         type="button"
-        onClick={() => setManualToggle({ isOpen: !isOpen, status: step.status })}
+        onClick={() => setManualToggle((prev) => !(prev ?? autoExpanded))}
         className="group flex w-full items-center gap-2.5 rounded-md px-2 py-2 text-left transition hover:bg-slate-50"
       >
         <StepIcon status={step.status} />

@@ -18,7 +18,7 @@ from backend.benchmarks.judge import judge_final_outputs
 from backend.benchmarks.models import BenchmarkJudgeEvaluation
 from backend.modules.orchestrator.module import run_pipeline
 from backend.modules.orchestrator.models import ResearchQuestionRefinement
-from backend.utils.config import AppConfig, get_openrouter_api_key, load_config
+from backend.utils.config import get_openrouter_api_key, load_config
 
 logger = logging.getLogger(__name__)
 
@@ -193,12 +193,12 @@ def _build_fixed_refiner(
 
     def _refine(
         question: str,
-        config: AppConfig,
-        api_key: str,
-        selected_cities: list[str] | None = None,
-        log_llm_payload: bool = True,
+        config,  # noqa: ANN001
+        api_key: str,  # noqa: ARG001
+        selected_cities=None,  # noqa: ANN001, ARG001
+        log_llm_payload: bool = True,  # noqa: ARG001, FBT001
     ) -> ResearchQuestionRefinement:
-        del config, api_key, selected_cities, log_llm_payload
+        del config
         key = str(question).strip()
         if key not in overrides:
             raise KeyError(

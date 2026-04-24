@@ -7,7 +7,6 @@ from typing import Callable
 from backend.modules.vector_store.manifest import build_chunk_id, compute_content_hash
 from backend.utils.city_normalization import normalize_city_key
 from backend.utils.config import AppConfig, MarkdownResearcherConfig
-from backend.utils.markdown_files import list_markdown_files
 from backend.utils.tokenization import count_tokens, chunk_text, get_max_input_tokens
 
 logger = logging.getLogger(__name__)
@@ -92,11 +91,11 @@ def load_markdown_documents(
     """Load and chunk markdown files for the researcher input payload.
 
     Behavior:
-    - Discovers top-level ``*.md`` files under ``markdown_dir`` without scanning
-      document subfolders.
+    - Recursively discovers ``*.md`` files under ``markdown_dir``.
     - Optionally filters files by ``selected_cities`` (matched against ``Path.stem``,
       case-insensitive).
-    - Assigns ``city_name`` from ``Path.stem`` intentionally.
+    - Assigns ``city_name`` from ``Path.stem`` intentionally, so files with the
+      same stem in different subdirectories map to the same logical city.
     - Returns one entry per chunk with ``path``, ``city_name``, ``content``,
       deterministic ``chunk_id``, and file-local ``chunk_index``.
     """
@@ -104,7 +103,7 @@ def load_markdown_documents(
         raise FileNotFoundError(f"Markdown directory not found: {markdown_dir}")
 
     docs: list[dict[str, object]] = []
-    files = list_markdown_files(markdown_dir)
+    files = sorted(markdown_dir.rglob("*.md"))
     if selected_cities:
         requested = {
             normalize_city_key(city)

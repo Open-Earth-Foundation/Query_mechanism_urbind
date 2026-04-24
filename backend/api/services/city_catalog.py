@@ -8,16 +8,17 @@ from pathlib import Path
 from typing import Any
 
 from backend.utils.city_normalization import format_city_stem, normalize_city_key
-from backend.utils.markdown_files import list_markdown_files
 
 
 def list_city_names(markdown_dir: Path) -> list[str]:
-    """Return unique city names based on top-level markdown file stems."""
+    """Return unique city names based on markdown file stems."""
     if not markdown_dir.exists():
         return []
 
     names_by_key: dict[str, str] = {}
-    for markdown_file in list_markdown_files(markdown_dir):
+    for markdown_file in markdown_dir.rglob("*.md"):
+        if not markdown_file.is_file():
+            continue
         stem = markdown_file.stem
         key = normalize_city_key(stem)
         if not key:
@@ -27,12 +28,14 @@ def list_city_names(markdown_dir: Path) -> list[str]:
 
 
 def index_city_markdown_files(markdown_dir: Path) -> dict[str, list[Path]]:
-    """Index top-level markdown files by city stem name."""
+    """Index markdown files by city stem name (case-insensitive key)."""
     if not markdown_dir.exists():
         return {}
 
     index: dict[str, list[Path]] = {}
-    for markdown_file in list_markdown_files(markdown_dir):
+    for markdown_file in sorted(markdown_dir.rglob("*.md")):
+        if not markdown_file.is_file():
+            continue
         key = normalize_city_key(markdown_file.stem)
         index.setdefault(key, []).append(markdown_file)
     return index

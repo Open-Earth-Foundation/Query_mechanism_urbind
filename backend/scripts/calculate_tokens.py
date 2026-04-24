@@ -6,8 +6,8 @@ Inputs:
   - `--documents-dir`: Directory containing markdown documents to analyze.
   - `--prompt-path`: Optional prompt file included in per-request token estimates.
 - CLI args:
-  - `--documents-dir`: Directory of top-level `.md` files to scan.
-  - `--recursive`: Deprecated compatibility flag; subfolders are not scanned.
+  - `--documents-dir`: Directory of `.md` files to scan.
+  - `--recursive`: Scan markdown files recursively.
   - `--prompt-path`: Prompt file path for system prompt token counting.
   - `--num-batches`: Number of markdown request batches to model.
   - `--avg-output-tokens`: Average output tokens per batch for cost estimation.
@@ -21,7 +21,7 @@ Outputs:
 - Logs to stdout with per-file token counts, totals, and estimated run cost.
 
 Usage (from project root):
-- python -m backend.scripts.calculate_tokens --documents-dir documents
+- python -m backend.scripts.calculate_tokens --documents-dir documents --recursive
 """
 
 from __future__ import annotations
@@ -31,7 +31,6 @@ import logging
 from pathlib import Path
 
 from backend.utils.logging_config import setup_logger
-from backend.utils.markdown_files import list_markdown_files
 from backend.utils.tokenization import count_tokens
 
 logger = logging.getLogger(__name__)
@@ -50,7 +49,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--recursive",
         action="store_true",
-        help="Deprecated compatibility flag; subfolders are not scanned.",
+        help="Recursively scan markdown files under --documents-dir.",
     )
     parser.add_argument(
         "--prompt-path",
@@ -90,10 +89,8 @@ def parse_args() -> argparse.Namespace:
 
 
 def _collect_markdown_files(documents_dir: Path, recursive: bool) -> list[Path]:
-    """Return top-level markdown files; warn when deprecated recursion is requested."""
-    if recursive:
-        logger.warning("--recursive is deprecated; scanning top-level markdown files only.")
-    return list_markdown_files(documents_dir)
+    pattern = "**/*.md" if recursive else "*.md"
+    return sorted(path for path in documents_dir.glob(pattern) if path.is_file())
 
 
 def _read_token_count(path: Path) -> int:

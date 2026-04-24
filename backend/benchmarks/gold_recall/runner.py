@@ -3,7 +3,6 @@ from __future__ import annotations
 import logging
 import statistics
 import unicodedata
-from collections.abc import Callable
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -11,7 +10,6 @@ from typing import Any
 from backend.api.services.source_chunks import load_source_chunks
 from backend.benchmarks.gold_recall.judge import judge_fact_presence
 from backend.benchmarks.gold_recall.models import (
-    FactJudgeDecision,
     FactPresenceJudgement,
     GoldBenchmarkCase,
     GoldChunkAlternative,
@@ -28,7 +26,6 @@ from backend.benchmarks.gold_recall.models import (
 from backend.modules.writer.utils.markdown_helpers import extract_cited_ref_ids
 from backend.utils.config import AppConfig, get_openrouter_api_key, load_config
 from backend.utils.json_io import read_json_object, write_json
-from backend.utils.paths import RunPaths
 
 logger = logging.getLogger(__name__)
 
@@ -326,7 +323,7 @@ def _judge_stage_facts(
     config: AppConfig,
     api_key: str,
     log_llm_payload: bool,
-    judge_func: Callable[..., FactJudgeDecision],
+    judge_func,
 ) -> list[FactPresenceJudgement]:
     """Run the fact judge once per gold fact for the requested stage."""
     judgements: list[FactPresenceJudgement] = []
@@ -450,7 +447,7 @@ def _build_case_result(
     config: AppConfig,
     api_key: str,
     log_llm_payload: bool,
-    judge_func: Callable[..., FactJudgeDecision],
+    judge_func,
 ) -> RecallBenchmarkCaseResult:
     """Compute all recall/precision metrics for one benchmark case."""
     _validate_retrieval_payload(retrieval_payload, case.case_id)
@@ -768,8 +765,8 @@ def run_recall_benchmark(
     selected_case_ids: list[str] | None = None,
     log_llm_payload: bool = False,
     api_key_override: str | None = None,
-    judge_func: Callable[..., FactJudgeDecision] = judge_fact_presence,
-    run_pipeline_func: Callable[..., RunPaths] | None = None,
+    judge_func=judge_fact_presence,
+    run_pipeline_func=None,
 ) -> RecallBenchmarkReport:
     """Execute the rigorous recall benchmark against the gold dataset."""
     dataset = load_gold_benchmark_dataset(gold_file)

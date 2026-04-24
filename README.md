@@ -34,27 +34,6 @@ The `uv.lock` file is committed to ensure reproducible builds.
 
 - `llm_config.yaml` stores model names and settings.
 - Markdown researcher batching knobs are configured in `llm_config.yaml` under `markdown_researcher` (`batch_max_chunks`, `batch_max_input_tokens`, `batch_overhead_tokens`).
-- Initiative extraction knobs are configured in `llm_config.yaml` under `initiative_extractor`
-  (`max_segment_tokens`, `segment_overlap_lines`, `max_workers`,
-  `prior_initiatives_max_tokens`, `action_heavy_initiative_threshold`,
-  `action_heavy_max_followup_calls`). The default extraction budget sends up to
-  `20,000` source segment tokens and `10,000` prior-initiative tokens. This
-  artifact-first extractor uses bounded ordered segments and does not perform TEF
-  classification or database writes. When
-  `prior_initiatives_max_tokens` is greater than zero, segments are processed in order so each LLM
-  call can see a token-capped list of already extracted canonical initiatives and avoid duplicates.
-  Initiative extraction does not split segments again based on how many initiatives the model returns;
-  if a segment returns more than the action-heavy threshold, follow-up calls reuse the same source
-  segment and show only initiatives already extracted from that segment until the model stops.
-  `semantic_dedupe_enabled` defaults to on and runs the only persisted merge pass over
-  candidate records so initiatives are merged when they describe the same real-world action.
-- TEF mapping knobs are configured in `llm_config.yaml` under `tef_mapper`
-  (`max_workers`, `review_confidence_threshold`, `close_alternative_delta`,
-  `min_transition_confidence`). The mapper is JSON-only: it reads initiative extraction artifacts,
-  runs sector, category, and Transition Element passes with stage-scoped prompts and four catalog JSON files,
-  and writes mapping artifacts without database writes or an LLM review pass. TEF sector,
-  subcategory, and subsubcategory catalog cards include prompt-ready routing definitions,
-  positive use signals, and avoid rules so the category router can compare sibling branches.
 - Retry policy is centralized in top-level `retry` in `llm_config.yaml` (`max_attempts`, `backoff_base_seconds`, `backoff_max_seconds`) and is shared across retry/backoff behavior for LLM calls and related operations.
 - Agent turn limits are configured per agent via `max_turns` (for example `markdown_researcher.max_turns`, `writer.max_turns`).
 - Optional `markdown_researcher.reasoning_effort` can be set for Grok reasoning control (for example `"none"`), but this is model/provider-specific and may fail on unsupported models.
@@ -65,7 +44,7 @@ The `uv.lock` file is committed to ensure reproducible builds.
 Environment variables (`.env`):
 
 - `OPENROUTER_API_KEY` (required): API key used for all LLM calls via OpenRouter.
-- `MARKDOWN_DIR` (optional, default `documents`): default directory scanned for top-level city markdown files. Runtime markdown discovery ignores subfolders under this directory.
+- `MARKDOWN_DIR` (optional, default `documents`): default directory scanned for markdown files.
 - `RUNS_DIR` (optional, default `output`): base directory for run artifacts.
 - `LOG_LEVEL` (optional, default `INFO`): logging verbosity (`DEBUG`, `INFO`, `WARNING`, `ERROR`).
 - `OPENROUTER_BASE_URL` (optional, default `https://openrouter.ai/api/v1`): override for OpenRouter-compatible backends.
@@ -209,134 +188,6 @@ python -m backend.scripts.run_pipeline --question "What initiatives exist for Mu
   --no-log-llm-payload
 ```
 
-Extract city initiatives into inspectable JSONL artifacts without TEF classification:
-
-```
-python -m backend.scripts.extract_initiatives --markdown-path documents --city Krakow
-```
-
-The extractor writes to `output/initiative_extraction/<run_id>/` with source manifests, line-aware
-segments, raw per-segment extractions, candidate records, semantic duplicate groups, final
-deduplicated initiatives, review items, and a summary. `03_deduped/initiatives.jsonl` contains only
-the agreed canonical v1 initiative shape from `plan.md`; generated ids and quote-only audit
-citations are kept separately in `03_deduped/initiative_records.jsonl` for downstream mapping. Use
-`--run-id`, `--output-dir`, `--max-workers`, and `--log-llm-payload` to override run naming,
-artifact location, concurrency, and
-payload logging. `--max-workers` only affects extraction when prior-initiative context is disabled in
-config. The canonical `city` field and structured source references are assigned from source
-segment metadata, not inferred by the LLM. The LLM returns only `source_quote` for citation text.
-
-Run initiative extraction and TEF mapping as one artifact pipeline:
-
-```
-python -m backend.scripts.map_initiatives_to_tef \
-  --markdown-path documents \
-  --city Krakow
-```
-
-By default, `map_initiatives_to_tef` first runs the initiative extractor and then maps the
-resulting `03_deduped/initiative_records.jsonl` to TEF targets. Omit `--city` to process all
-top-level Markdown city files discovered under `--markdown-path`; repeat `--city` to process a selected
-list. Use `--extraction-output-dir`, `--extraction-run-id`, and `--extraction-max-workers` to
-control the extraction stage separately from TEF mapper `--output-dir`, `--run-id`, and
-`--max-workers`.
-
-Run mapping only against an existing extraction artifact when needed:
-
-```
-python -m backend.scripts.map_initiatives_to_tef \
-  --mapping-only \
-  --extraction-run-dir output/initiative_extraction/five_cities_20260421_002 \
-  --city Krakow
-```
-
-The TEF mapper reads `03_deduped/initiative_records.jsonl` from an extraction run so it can use
-pipeline-generated record ids while keeping the canonical extraction file clean. It writes to
-`output/tef_mapping/<run_id>/` with source manifests, input initiative rows,
-sector routes, recursive category routes, Transition Element mapping outputs, final mappings,
-manual-review items, numeric facts, TEF-grouped initiatives, metric rollups, and a summary. It
-loads only the active stage prompt and the catalog slice for that pass. Router prompts ask the
-model to follow the initiative's main causal shift, not to make a smaller supporting component
-primary only because it is explicitly named. Category routing continues through child categories
-before Transition Element matching, so parent categories that also have direct Transition
-Elements do not stop the route early. If the selected TEF leaf has no Transition Elements, the
-final mapping uses `target_type: "subcategory"` and the selected TEF path as `target_id`.
-The same subcategory fallback is used when the transition mapper finds no exact Transition
-Element match. A successful initiative mapping never drops the initiative solely because the TEF
-catalog has no precise Transition Element for it. If a category route returns a descendant of the
-current direct-child candidate, the mapper normalizes it to that direct child for the current pass
-and emits a manual-review item. Sector paths are assigned from the TEF catalog after the model
-selects a sector key, so the sector router does not generate path fields. `source_quote` is copied
-through mapper input rows, final mappings, numeric facts, and TEF-grouped initiatives for
-search-back traceability, but mapper LLM passes do not receive it as classification evidence.
-
-Run the full Krakow TEF benchmark against the curated CCC source-truth mappings:
-
-```
-python -m backend.scripts.benchmark_krakow_tef_mapping --max-workers 3
-```
-
-The benchmark converts `assets/tef_mapping/all_correct_initiatives_mapped_to_tef.json`
-into mapper-ready initiative records, runs the TEF mapper, and compares final mappings
-against source truth. Outputs are written under
-`output/tef_benchmarks/krakow_tef_mapping/<benchmark_id>/`, including
-`00_inputs/initiatives.jsonl`, the standard `01_tef_mapping/` mapper artifacts,
-`02_comparison/tef_benchmark_issues.json`, `02_comparison/tef_benchmark_report.md`,
-and `benchmark_summary.json`. Use `--limit N` for a smoke check before a full run.
-
-### Krakow TEF source-of-truth assets
-
-The curated source-of-truth files for the Krakow CCC manual-scan baseline live in
-`assets/tef_mapping/`. This folder intentionally contains exactly two JSON files:
-
-- `all_correct_initiatives.json`: 58 Krakow CCC manual-scan source-of-truth initiatives
-  from `documents/Krakow.md`, Module B-2.2 outline of individual activities/actions/measures,
-  source lines `2590-4551`.
-- `all_correct_initiatives_mapped_to_tef.json`: the same 58 initiatives mapped to the
-  TEF framework.
-
-The initiative file comes from source run id `krakow_20260420` at
-`output/tef_mapping/krakow_20260420`. The mapped file comes from TEF mapping run id
-`krakow_manual_assets_tef_20260421_002` at
-`output/tef_mapping/krakow_manual_assets_tef_20260421_002`, using the mapper input
-adapted from `all_correct_initiatives.json`. The baseline is narrower than the later
-broader 98-record automated Krakow subset.
-
-Count scope: `Krakow=58`, with local-code prefixes `BIC=11`, `E=17`, `TR=16`,
-`GOZ=4`, and `I=10`. In the mapped file, all 58 initiatives have TEF mappings:
-78 final mapping rows, including 58 primary mapping rows. Those rows include 52
-Transition Element mappings and 26 TEF subcategory mappings. The mapped file also
-contains 100 review items, 66 mapping rows marked as needing review, 42 unique target
-ids, and 21 unique target paths.
-
-The benchmark audit records B-2.2 local-code coverage as complete, but does not treat
-the extraction as pixel-perfect for every source quantity or damaged Markdown section.
-Use `output/tef_mapping/krakow_20260420/extraction_benchmark_audit.md` for those
-precision caveats.
-
-TEF target fallback policy: use Transition Element mappings returned by the transition
-mapper. When the catalog has no Transition Elements or the transition mapper returns no
-exact Transition Element match, use the selected TEF subcategory path as the final
-target. Empty TEF targets are not allowed.
-
-The prompt-ready category guidance lives directly in `tef_mapping/catalog/subcategories.json`
-and `tef_mapping/catalog/subsubcategories.json`. Each category record carries its own
-`description` and `card_text`, including Routing Definition, Use This Category When, and
-Avoid This Category When sections. Transition Element candidate descriptions used by the
-mapper live in `tef_mapping/catalog/transition_elements.json`.
-
-Build or refresh numeric TEF rollups for an existing mapping run without LLM calls:
-
-```
-python -m backend.scripts.rollup_tef_numeric_facts \
-  --tef-run-dir output/tef_mapping/three_cities_tef_balanced_smoke_20260421_001 \
-  --extraction-run-dir output/initiative_extraction/three_cities_20260421_001
-```
-
-The rollup reads generated ids from `initiative_records.jsonl`, reads numbers only from the clean
-canonical `initiative` object inside each record, and writes `07_numeric_facts/` and
-`08_tef_groups/` artifacts.
-
 ## Happy-path workflow
 
 High-level flow from user input to final output text:
@@ -348,11 +199,8 @@ flowchart TD
     C --> D[Load markdown documents]
     D --> E[Markdown extractor: extract_markdown_excerpts]
     E --> F[Store markdown bundle in context_bundle.json<br/>(excerpts + excerpt_count)]
-    F --> G{ENRICHMENT_ENABLED?}
-    G -->|no| H[Writer: write_markdown]
-    G -->|yes| I[Enrichment pipeline<br/>gap analysis + optional web research + freshness + assumptions]
-    I --> H
-    H --> J[Write final.md and finalize run<br/>(writer includes evidence preface)]
+    F --> G[Writer: write_markdown]
+    G --> H[Write final.md and finalize run<br/>(writer includes evidence preface)]
 ```
 
 What each stage does:
@@ -364,8 +212,7 @@ What each stage does:
 - Markdown researcher returns evidence excerpts selected from whichever chunk source was used.
 - `markdown_chunk_count` tracks how many chunk inputs were processed; `excerpt_count` (also logged as `markdown_excerpt_count` in run metadata) tracks how many evidence snippets were extracted from those chunks.
 - Context bundle is updated with extracted evidence for downstream writing.
-- When `ENRICHMENT_ENABLED=true`, the orchestrator runs the enrichment layer before writing. The layer classifies data gaps, optionally runs web research when `WEB_RESEARCH_ENABLED=true`, compares web findings against CCC evidence for freshness/conflict handling, and estimates assumptions only for fields still unresolved after evidence lookup.
-- When enrichment is disabled, the orchestrator hands the prepared CCC context bundle directly to the writer.
+- Orchestrator hands the prepared context bundle directly to the writer.
 - Writer uses the context bundle and writes final output text to `output/<run_id>/final.md`. The response starts with an evidence preface (based on `excerpt_count`); when `excerpt_count=0`, it returns a "no evidence found" response.
 
 ## End-to-end batch queries
@@ -536,7 +383,7 @@ Core endpoints:
 - `GET /api/v1/runs/{run_id}/context`
 - `GET /api/v1/runs/{run_id}/references` (canonical citation endpoint; supports optional query params `ref_id` and `include_quote`)
 - `GET /api/v1/runs/{run_id}/references/{ref_id}` (compatibility alias for one reference with quote payload)
-- `GET /api/v1/cities` (city names from top-level markdown filenames in `MARKDOWN_DIR`, without `.md`)
+- `GET /api/v1/cities` (city names from markdown filenames in `MARKDOWN_DIR`, without `.md`)
 - `GET /api/v1/cities/{city_name}/markdown` (concatenated raw CCC markdown for one normalized city name, including contributing source paths)
 - `GET /api/v1/city-groups` (predefined city groups filtered to currently available markdown cities)
 - `GET /api/v1/chat/contexts` (catalog of completed run contexts with token counts)
@@ -925,11 +772,6 @@ Artifacts are written under `output/<run_id>/`:
 - `markdown/references.json`: run-local citation map generated from markdown excerpts. Includes sequential `ref_n` entries with `excerpt_index`, `city_name`, `quote`, `partial_answer`, and `source_chunk_ids`. Stage C citation coverage maps cited `ref_id` values in `final.md` back through these `source_chunk_ids`.
 - `markdown/retrieval.json` (when `VECTOR_STORE_ENABLED=true`): vector retrieval inputs and results summary. Includes the final retrieval query list, optional city filter, retrieval tuning metadata (cutoffs/caps), strict direct-hit `seed_chunks[]`, final delivered `chunks[]`, `meta.seed_retrieved_total_chunks`, `meta.neighbor_expanded_total_chunks`, and per-chunk summaries (`chunk_id`, `chunk_index`, `city_name`, `city_key`, `source_path`, `heading_path`, `block_type`, `distance`, `provenance`).
 - `markdown/batches.json`: markdown batching plan used for the markdown researcher calls. Includes per-city batch indices, estimated tokens, and chunk ordering fields (`path`, `chunk_index`, `chunk_id`), making it easy to inspect how chunks were grouped into LLM requests.
-- `enrichment/gap_manifest.json` (when `ENRICHMENT_ENABLED=true`): query fields, city gaps, stale flags, and non-estimable fields detected from the CCC-derived context.
-- `enrichment/web_findings.json` (when web research returns findings): structured external findings with city, field, value, unit, source URL, source type, source date, and extraction confidence.
-- `enrichment/freshness_results.json` (when web findings overlap CCC evidence): conflict/freshness classifications such as `consistent`, `superseded`, `uncertain`, or `cancelled`.
-- `enrichment/assumptions.json` and `enrichment/non_estimable.json` (when enrichment runs): estimates for unresolved fields and fields that should remain unresolved.
-- `enrichment/enrichment_bundle.json` (when enrichment runs): the complete enrichment payload merged into `context_bundle.json` before the writer.
 - `final.md`: final delivered markdown output. Content format is:
   1. `# Question` heading with the original user question,
   2. generated markdown answer body from the writer.
@@ -1018,7 +860,7 @@ Smoke-test artifacts are written to `output/api_smoke_tests/<run_id>/`.
 
 ```
 python -m backend.scripts.analyze_run_tokens --run-log output/<run_id>/run.log
-python -m backend.scripts.calculate_tokens --documents-dir documents
+python -m backend.scripts.calculate_tokens --documents-dir documents --recursive
 python -m backend.scripts.temp_analyze --run-log output/<run_id>/run.log
 ```
 

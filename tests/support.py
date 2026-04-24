@@ -37,8 +37,6 @@ def build_test_app_config(
     vector_store_overrides: dict[str, object] | None = None,
     orchestrator_overrides: dict[str, object] | None = None,
     markdown_researcher_overrides: dict[str, object] | None = None,
-    initiative_extractor_overrides: dict[str, object] | None = None,
-    tef_mapper_overrides: dict[str, object] | None = None,
     writer_overrides: dict[str, object] | None = None,
     chat_overrides: dict[str, object] | None = None,
     assumptions_reviewer_overrides: dict[str, object] | None = None,
@@ -52,11 +50,6 @@ def build_test_app_config(
         config.markdown_researcher,
         markdown_researcher_overrides,
     )
-    config.initiative_extractor = _apply_overrides(
-        config.initiative_extractor,
-        initiative_extractor_overrides,
-    )
-    config.tef_mapper = _apply_overrides(config.tef_mapper, tef_mapper_overrides)
     config.writer = _apply_overrides(config.writer, writer_overrides)
     config.chat = _apply_overrides(config.chat, chat_overrides)
     config.assumptions_reviewer = _apply_overrides(

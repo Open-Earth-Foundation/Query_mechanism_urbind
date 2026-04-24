@@ -117,7 +117,7 @@ class ProgressTracker:
         return time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
 
     def _flush(self) -> None:
-        """Atomic write via tempfile + replace."""
+        """Atomic write via tempfile + rename."""
         try:
             with self._lock:
                 payload = {"version": _VERSION, "steps": list(self._steps)}
@@ -128,7 +128,7 @@ class ProgressTracker:
             try:
                 with open(fd, "w", encoding="utf-8") as fh:
                     json.dump(payload, fh)
-                Path(tmp_path).replace(target)
+                os.replace(tmp_path, target)
             except Exception:
                 # Clean up temp file on failure
                 try:

@@ -73,7 +73,7 @@ _EXPORTS = {
 }
 
 
-def __getattr__(name: str) -> object:
+def __getattr__(name: str):
     """Resolve public gold-recall exports on first access."""
     try:
         module_name, attribute_name = _EXPORTS[name]

@@ -88,20 +88,6 @@ def test_load_markdown_documents_adds_stable_chunk_ids(tmp_path: Path) -> None:
     ]
 
 
-def test_load_markdown_documents_ignores_subfolders(tmp_path: Path) -> None:
-    """Runtime markdown discovery should not scan document artifact subfolders."""
-    nested_dir = tmp_path / "tef_mapping"
-    nested_dir.mkdir()
-    (tmp_path / "Munich.md").write_text("# Munich\n\nText", encoding="utf-8")
-    (nested_dir / "Nested.md").write_text("# Nested\n\nIgnore me", encoding="utf-8")
-    config = _build_markdown_config()
-
-    docs = load_markdown_documents(tmp_path, config)
-
-    assert docs
-    assert {doc["city_name"] for doc in docs} == {"Munich"}
-
-
 def test_resolve_chunk_tokens_uses_safe_fallback_without_model_limits() -> None:
     config = MarkdownResearcherConfig(
         model="test",

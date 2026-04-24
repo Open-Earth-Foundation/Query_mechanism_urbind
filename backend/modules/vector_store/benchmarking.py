@@ -7,7 +7,6 @@ from pathlib import Path
 
 from backend.modules.vector_store.chunk_packer import pack_blocks
 from backend.modules.vector_store.markdown_blocks import parse_markdown_blocks
-from backend.utils.markdown_files import list_markdown_files
 
 _HEADING_RE = re.compile(r"^(#{1,6})\s+(.+?)\s*$")
 _TABLE_CAPTION_RE = re.compile(r"^\s*table\s+", re.IGNORECASE)
@@ -105,8 +104,8 @@ def run_chunking_benchmark(
     sample_size: int,
     seed: int,
 ) -> ChunkingBenchmarkResult:
-    """Run a top-level markdown corpus benchmark on a deterministic random subset."""
-    files = list_markdown_files(docs_dir)
+    """Run corpus chunking benchmark on a deterministic random subset."""
+    files = sorted(docs_dir.rglob("*.md"))
     rng = random.Random(seed)
     chosen = files if sample_size <= 0 or sample_size >= len(files) else rng.sample(files, sample_size)
     chosen = sorted(chosen)
