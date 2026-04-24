@@ -13,7 +13,7 @@ from pydantic import BaseModel, Field
 GapClassification = Literal["estimable_numerical", "derivable_from_ratio", "non_estimable"]
 EstimationMethod = Literal["national_regional_average", "peer_city_proxy", "expert_heuristic_scaling"]
 FieldStatus = Literal["resolved", "partially_resolved", "still_missing"]
-FreshnessClassification = Literal["consistent", "superseded", "uncertain"]
+FreshnessClassification = Literal["consistent", "superseded", "uncertain", "cancelled"]
 
 # ---------------------------------------------------------------------------
 # Gap Analysis models (Agent 1 output)

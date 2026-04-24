@@ -6,10 +6,6 @@ from importlib import import_module
 
 
 _EXPORTS = {
-    "FACT_JUDGE_MODEL": (
-        "backend.benchmarks.gold_recall.judge",
-        "FACT_JUDGE_MODEL",
-    ),
     "BenchmarkMarkdownConfig": (
         "backend.benchmarks.runner",
         "BenchmarkMarkdownConfig",

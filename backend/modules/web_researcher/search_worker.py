@@ -10,6 +10,7 @@ from urllib.parse import urlparse
 from backend.modules.web_researcher.deep_diver import DeepDiver
 from backend.modules.web_researcher.extractor import extract_fields_from_content
 from backend.modules.web_researcher.models import SearchBatch, WebFinding
+from backend.modules.web_researcher.post_extraction_validator import validate_findings
 from backend.modules.web_researcher.relevance import check_relevance_batch
 from backend.modules.web_researcher.scraper import FirecrawlScraper
 from backend.modules.web_researcher.search import SerperSearchClient
@@ -91,6 +92,7 @@ def execute_search_batch(
                     config=config,
                     api_key=api_key,
                 )
+                findings = validate_findings(findings, batch.cities)
                 all_findings.extend(findings)
 
         # Evaluate coverage
@@ -146,6 +148,7 @@ def execute_search_batch(
                     config=config,
                     api_key=api_key,
                 )
+                findings = validate_findings(findings, batch.cities)
                 all_findings.extend(findings)
 
     logger.info(

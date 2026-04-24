@@ -272,7 +272,6 @@ def _persist_followup_result(
         "target_city": target_city,
         "research_question": research_question,
         "retrieval_queries": retrieval_queries,
-        "sql": None,
         "final": None,
         "analysis_mode": "aggregate",
         "markdown": markdown_bundle,

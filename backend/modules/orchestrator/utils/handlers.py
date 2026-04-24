@@ -62,7 +62,6 @@ def handle_write_decision(
             paths,
             run_logger,
             config,
-            finish_reason="completed (write)",
         )
         run_logger.finalize(
             "completed",

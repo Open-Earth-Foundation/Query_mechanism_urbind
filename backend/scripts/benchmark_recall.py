@@ -6,7 +6,8 @@ Inputs:
   - `--gold-file`: Path to the versioned gold benchmark JSON file.
   - `--benchmark-id`: Optional benchmark id. Defaults to a UTC timestamp when omitted.
   - `--output-dir`: Root directory for benchmark artifacts (default: `output/benchmarks/recall`).
-  - `--config`: Path to `llm_config.yaml` used for live pipeline runs and fact judging.
+  - `--config`: Path to `llm_config.yaml` used for live pipeline runs and fact judging
+    (fact judge uses `benchmark_fact_judge` in that file).
   - `--case-id`: Optional repeatable gold case filter.
   - `--log-llm-payload`: Enable or disable full LLM payload logs for live runs and fact judging.
 - Files/paths:

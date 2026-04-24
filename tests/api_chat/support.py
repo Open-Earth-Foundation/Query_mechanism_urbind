@@ -45,7 +45,6 @@ def build_config(
     return build_test_app_config(
         runs_dir=runs_dir,
         markdown_dir=markdown_dir,
-        enable_sql=False,
         chat_overrides=chat_overrides or None,
     )
 
@@ -66,7 +65,6 @@ def write_success_artifacts(
     paths.context_bundle.write_text(
         json.dumps(
             {
-                "sql": None,
                 "markdown": {"status": "success", "excerpts": excerpts or []},
                 "drafts": [],
                 "final": str(paths.final_output),
@@ -169,7 +167,6 @@ def write_followup_bundle(
         "target_city": target_city,
         "research_question": f"What does {target_city} say?",
         "retrieval_queries": [f"{target_city} question"],
-        "sql": None,
         "final": None,
         "analysis_mode": "aggregate",
         "markdown": {

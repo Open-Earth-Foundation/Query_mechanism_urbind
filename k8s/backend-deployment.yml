@@ -39,6 +39,18 @@ spec:
                 secretKeyRef:
                   name: urbind-query-mechanism-backend-secrets
                   key: OPENROUTER_API_KEY
+            - name: SERPER_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: urbind-query-mechanism-backend-secrets
+                  key: SERPER_API_KEY
+                  optional: true
+            - name: FIRECRAWL_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: urbind-query-mechanism-backend-secrets
+                  key: FIRECRAWL_API_KEY
+                  optional: true
           volumeMounts:
             - name: output-volume
               mountPath: /data

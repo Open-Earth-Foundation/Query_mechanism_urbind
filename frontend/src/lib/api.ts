@@ -27,6 +27,8 @@ export interface CreateRunRequest {
   config_path?: string;
   markdown_path?: string;
   log_llm_payload?: boolean;
+  enrichment_enabled?: boolean;
+  web_research_enabled?: boolean;
 }
 
 export interface CreateRunResponse {
@@ -131,6 +133,7 @@ export interface SourceChunkListResponse {
 export interface RunSummary {
   run_id: string;
   question: string;
+  picker_timestamp: string;
 }
 
 export interface RunListResponse {
@@ -401,6 +404,21 @@ async function requestJson<T>(
   includeJsonContentType = false,
   timeoutMs = DEFAULT_REQUEST_TIMEOUT_MS,
 ): Promise<T> {
+  const response = await requestResponse(
+    path,
+    init,
+    includeJsonContentType,
+    timeoutMs,
+  );
+  return (await response.json()) as T;
+}
+
+async function requestResponse(
+  path: string,
+  init?: RequestInit,
+  includeJsonContentType = false,
+  timeoutMs = DEFAULT_REQUEST_TIMEOUT_MS,
+): Promise<Response> {
   const timeoutController = new AbortController();
   const externalSignal = init?.signal;
   const onExternalAbort = (): void => {
@@ -452,12 +470,36 @@ async function requestJson<T>(
     throw new Error(message);
   }
 
-  return (await response.json()) as T;
+  return response;
 }
 
-export async function fetchRuns(options?: { signal?: AbortSignal }): Promise<RunListResponse> {
+async function requestBlob(
+  path: string,
+  init?: RequestInit,
+  includeJsonContentType = false,
+  timeoutMs = DEFAULT_REQUEST_TIMEOUT_MS,
+): Promise<Blob> {
+  const response = await requestResponse(
+    path,
+    init,
+    includeJsonContentType,
+    timeoutMs,
+  );
+  return await response.blob();
+}
+
+export async function fetchRuns(options?: {
+  signal?: AbortSignal;
+  search?: string;
+}): Promise<RunListResponse> {
+  const params = new URLSearchParams();
+  const search = options?.search?.trim();
+  if (search) {
+    params.set("search", search);
+  }
+  const suffix = params.toString();
   return requestJson<RunListResponse>(
-    "/api/v1/runs",
+    `/api/v1/runs${suffix ? `?${suffix}` : ""}`,
     { signal: options?.signal },
     false,
     RUN_LIST_REQUEST_TIMEOUT_MS,
@@ -496,6 +538,10 @@ export async function fetchRunStatus(
 
 export async function fetchRunOutput(runId: string): Promise<RunOutputResponse> {
   return requestJson<RunOutputResponse>(`/api/v1/runs/${encodeURIComponent(runId)}/output`);
+}
+
+export async function downloadRunWordExport(runId: string): Promise<Blob> {
+  return requestBlob(`/api/v1/runs/${encodeURIComponent(runId)}/export/docx`);
 }
 
 export async function fetchRunContext(runId: string): Promise<RunContextResponse> {
@@ -600,34 +646,6 @@ export async function applyRunAssumptions(
     },
     true,
   );
-}
-
-export async function downloadRunPdf(runId: string): Promise<void> {
-  const response = await fetch(
-    `${getApiBaseUrl()}/api/v1/runs/${encodeURIComponent(runId)}/export/pdf`,
-    { headers: buildHeaders(false) },
-  );
-  if (!response.ok) {
-    let message = `PDF export failed (${response.status})`;
-    try {
-      const payload = (await response.json()) as { detail?: unknown };
-      if (typeof payload.detail === "string" && payload.detail.trim().length > 0) {
-        message = payload.detail;
-      }
-    } catch {
-      // ignore
-    }
-    throw new Error(message);
-  }
-  const blob = await response.blob();
-  const url = URL.createObjectURL(blob);
-  const anchor = document.createElement("a");
-  anchor.href = url;
-  anchor.download = `run_${runId}.pdf`;
-  document.body.appendChild(anchor);
-  anchor.click();
-  document.body.removeChild(anchor);
-  URL.revokeObjectURL(url);
 }
 
 export async function fetchChatContextCatalog(): Promise<ChatContextCatalogResponse> {

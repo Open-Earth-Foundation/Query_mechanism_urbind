@@ -13,9 +13,15 @@ from backend.modules.web_researcher.utils.json_helpers import (
     extract_json_candidate,
     extract_message_text,
 )
+from backend.utils.city_normalization import normalize_city_key
 from backend.utils.config import AppConfig
 
 logger = logging.getLogger(__name__)
+
+# Per-city excerpts are truncated to this length before being sent to the LLM
+# so a chatty markdown bundle doesn't blow up the prompt budget.
+_MAX_EXCERPT_CHARS = 800
+_MAX_EXCERPTS_PER_CITY = 6
 
 
 def check_freshness(
@@ -26,76 +32,84 @@ def check_freshness(
 ) -> list[FreshnessResult]:
     """Compare web findings against existing CCC data in the context bundle.
 
-    Classifies each CCC ↔ web pair as:
-    - **consistent** — web aligns with CCC. CCC stands.
+    CCC values live in the markdown bundle as prose excerpts. For each web
+    finding whose city has at least one excerpt, we pass the excerpts and the
+    web value to an LLM that extracts the CCC value (if present) and returns
+    one of four classifications:
+    - **consistent** — web aligns with the CCC excerpt. CCC stands.
     - **superseded** — web is newer and more specific. Web becomes primary.
     - **uncertain** — ambiguous. Both preserved, flagged for review.
+    - **cancelled** — web source indicates the programme was cancelled.
 
-    On failure, all web findings are treated as ``uncertain``.
+    Findings for cities with no markdown evidence are skipped (no overlap to
+    check against). On LLM failure, overlapping findings fall back to
+    ``uncertain``.
     """
     if not web_findings:
         return []
 
-    # Extract existing CCC values from context bundle for comparison
-    ccc_values = _extract_ccc_values(context_bundle)
+    ccc_evidence = _extract_ccc_evidence(context_bundle)
 
-    # Only check freshness for findings that have a corresponding CCC value
-    findings_to_check: list[tuple[WebFinding, str | None]] = []
+    findings_to_check: list[tuple[WebFinding, list[str]]] = []
     for wf in web_findings:
-        key = (wf.city.lower(), wf.field.lower())
-        ccc_val = ccc_values.get(key)
-        findings_to_check.append((wf, ccc_val))
+        excerpts = ccc_evidence.get(normalize_city_key(wf.city), [])
+        if excerpts:
+            findings_to_check.append((wf, excerpts))
 
-    # If no CCC values overlap, skip freshness check entirely
-    has_overlaps = any(ccc_val is not None for _, ccc_val in findings_to_check)
-    if not has_overlaps:
-        logger.info("Freshness check: no CCC overlaps, skipping.")
+    if not findings_to_check:
+        logger.info("Freshness check: no markdown CCC evidence for any web finding city, skipping.")
         return []
 
-    # Batch LLM call for freshness classification
     client = OpenAI(api_key=api_key, base_url=config.openrouter_base_url)
 
     comparison_items = []
-    for i, (wf, ccc_val) in enumerate(findings_to_check):
-        if ccc_val is None:
-            continue
+    for i, (wf, excerpts) in enumerate(findings_to_check):
         comparison_items.append({
             "index": i,
             "city": wf.city,
             "field": wf.field,
-            "ccc_value": ccc_val,
+            "markdown_excerpts": excerpts,
             "web_value": str(wf.value) if wf.value is not None else None,
             "web_source_url": wf.source_url,
             "web_source_type": wf.source_type,
             "web_source_date": wf.source_date,
         })
 
-    if not comparison_items:
-        return []
-
     system_prompt = (
         "You are a data freshness checker for urban climate action plans.\n"
-        "Compare CCC (Cities Climate Challenge) database values against\n"
-        "web-sourced values and classify each pair.\n\n"
+        "For each item you receive markdown excerpts sourced from the CCC\n"
+        "(Cities Climate Challenge) knowledge base alongside a web-sourced\n"
+        "value. Extract the CCC value relevant to the given field from the\n"
+        "excerpts (if any), then classify the web value against that CCC\n"
+        "value.\n\n"
         "CLASSIFICATIONS:\n"
-        '- "consistent" — web value aligns with CCC value (same order of magnitude,\n'
-        "  similar figure). CCC stands as primary.\n"
-        '- "superseded" — web value is clearly newer and more specific than CCC.\n'
-        "  Requires: web source has a timestamp, comes from a credible source\n"
-        "  (government > operator > news > blog), and the difference is meaningful.\n"
-        '- "uncertain" — values differ but it\'s unclear which is more accurate.\n'
-        "  Both should be preserved and flagged.\n\n"
+        '- "consistent" — web value aligns with the CCC excerpt (same order of\n'
+        "  magnitude, similar figure). CCC stands as primary.\n"
+        '- "superseded" — web value is clearly newer and more specific than the\n'
+        "  CCC excerpt. Requires: web source has a timestamp, comes from a\n"
+        "  credible source (government > operator > news > blog), and the\n"
+        "  difference is meaningful.\n"
+        '- "uncertain" — values differ but it\'s unclear which is more accurate,\n'
+        "  OR the excerpts do not contain a comparable value for this field.\n"
+        "  Both should be preserved and flagged.\n"
+        '- "cancelled" — web source indicates the programme/project was\n'
+        "  cancelled, discontinued, or reversed. The CCC value is no longer\n"
+        "  valid.\n\n"
         "RULES:\n"
         "- Never classify as 'superseded' without a timestamp on the web source.\n"
         "- Government and operator sources outweigh news and blog sources.\n"
         "- Small differences (<10%) should be 'consistent'.\n"
-        "- Large differences (>50%) need clear provenance to be 'superseded'.\n\n"
-        "OUTPUT: Return a JSON array of objects:\n"
-        '  [{"index": 0, "classification": "consistent|superseded|uncertain", "reason": "..."}]\n'
+        "- Large differences (>50%) need clear provenance to be 'superseded'.\n"
+        "- If the excerpts mention nothing about the field, set\n"
+        "  ccc_value_extracted to null and classification to 'uncertain'.\n\n"
+        "OUTPUT: Return a JSON array of objects, one per input item:\n"
+        '  [{"index": 0, "classification": "consistent|superseded|uncertain|cancelled",\n'
+        '    "ccc_value_extracted": "string or null",\n'
+        '    "reason": "..."}]\n'
     )
 
     user_prompt = (
-        "Compare these CCC vs web value pairs:\n"
+        "Classify each web finding against the paired CCC markdown excerpts:\n"
         f"```json\n{json.dumps(comparison_items, indent=2)}\n```\n"
     )
 
@@ -119,22 +133,24 @@ def check_freshness(
         candidate = extract_json_candidate(content)
         parsed = json.loads(candidate)
 
-        # Build classification map
-        classification_map: dict[int, tuple[str, str]] = {}
+        classification_map: dict[int, tuple[str, str, str | None]] = {}
         if isinstance(parsed, list):
             for item in parsed:
-                if isinstance(item, dict):
-                    idx = item.get("index")
-                    cls = item.get("classification", "uncertain")
-                    reason = item.get("reason", "")
-                    if isinstance(idx, int) and cls in ("consistent", "superseded", "uncertain"):
-                        classification_map[idx] = (cls, reason)
+                if not isinstance(item, dict):
+                    continue
+                idx = item.get("index")
+                cls = item.get("classification", "uncertain")
+                reason = item.get("reason", "")
+                ccc_extracted = item.get("ccc_value_extracted")
+                if isinstance(idx, int) and cls in ("consistent", "superseded", "uncertain", "cancelled"):
+                    ccc_val = str(ccc_extracted) if ccc_extracted not in (None, "") else None
+                    classification_map[idx] = (cls, reason, ccc_val)
 
         results: list[FreshnessResult] = []
-        for i, (wf, ccc_val) in enumerate(findings_to_check):
-            if ccc_val is None:
-                continue
-            cls, reason = classification_map.get(i, ("uncertain", "No classification returned"))
+        for i, (wf, _excerpts) in enumerate(findings_to_check):
+            cls, reason, ccc_val = classification_map.get(
+                i, ("uncertain", "No classification returned", None)
+            )
             results.append(FreshnessResult(
                 city=wf.city,
                 field=wf.field,
@@ -148,11 +164,13 @@ def check_freshness(
         consistent = sum(1 for r in results if r.classification == "consistent")
         superseded = sum(1 for r in results if r.classification == "superseded")
         uncertain = sum(1 for r in results if r.classification == "uncertain")
+        cancelled = sum(1 for r in results if r.classification == "cancelled")
         logger.info(
-            "Freshness check: %d consistent, %d superseded, %d uncertain.",
+            "Freshness check: %d consistent, %d superseded, %d uncertain, %d cancelled.",
             consistent,
             superseded,
             uncertain,
+            cancelled,
         )
         return results
 
@@ -161,44 +179,57 @@ def check_freshness(
         return _fallback_uncertain(findings_to_check)
 
 
-def _extract_ccc_values(context_bundle: dict[str, Any]) -> dict[tuple[str, str], str]:
-    """Extract known CCC values from the context bundle for comparison.
+def _extract_ccc_evidence(context_bundle: dict[str, Any]) -> dict[str, list[str]]:
+    """Collect per-city markdown excerpt snippets usable as CCC evidence.
 
-    Looks through markdown excerpts and SQL results for city+field values.
-    Returns a dict of (city_lower, field_lower) → value_string.
+    Returns ``{city_key_lower: [excerpt_text, ...]}``. Each excerpt is trimmed
+    to ``_MAX_EXCERPT_CHARS`` and each city keeps at most
+    ``_MAX_EXCERPTS_PER_CITY`` snippets so the downstream LLM prompt stays
+    bounded. CCC values in this pipeline live only in markdown prose; there
+    is no structured tabular source after the SQL layer was removed.
     """
-    values: dict[tuple[str, str], str] = {}
+    evidence: dict[str, list[str]] = {}
 
-    # Extract from markdown excerpts if present
     markdown = context_bundle.get("markdown")
-    if isinstance(markdown, dict):
-        excerpts = markdown.get("excerpts", [])
-        if isinstance(excerpts, list):
-            for excerpt in excerpts:
-                if not isinstance(excerpt, dict):
-                    continue
-                city = excerpt.get("city_key", "")
-                partial = excerpt.get("partial_answer", "")
-                if isinstance(city, str) and city.strip() and isinstance(partial, str):
-                    # Use the city key as a basic indicator that data exists
-                    # The actual field-level extraction would need schema awareness
-                    values.setdefault((city.strip().lower(), "_has_data"), partial[:200])
+    if not isinstance(markdown, dict):
+        return evidence
 
-    return values
+    excerpts = markdown.get("excerpts")
+    if not isinstance(excerpts, list):
+        return evidence
+
+    for excerpt in excerpts:
+        if not isinstance(excerpt, dict):
+            continue
+        raw_city = excerpt.get("city_key") or excerpt.get("city_name") or ""
+        if not isinstance(raw_city, str):
+            continue
+        city_key = normalize_city_key(raw_city)
+        if not city_key:
+            continue
+
+        text = excerpt.get("partial_answer") or excerpt.get("quote") or ""
+        if not isinstance(text, str) or not text.strip():
+            continue
+
+        bucket = evidence.setdefault(city_key, [])
+        if len(bucket) >= _MAX_EXCERPTS_PER_CITY:
+            continue
+        bucket.append(text.strip()[:_MAX_EXCERPT_CHARS])
+
+    return evidence
 
 
 def _fallback_uncertain(
-    findings_to_check: list[tuple[WebFinding, str | None]],
+    findings_to_check: list[tuple[WebFinding, list[str]]],
 ) -> list[FreshnessResult]:
-    """Fallback: mark all overlapping findings as uncertain."""
+    """Fallback: mark all overlapping findings as uncertain with no CCC value."""
     results: list[FreshnessResult] = []
-    for wf, ccc_val in findings_to_check:
-        if ccc_val is None:
-            continue
+    for wf, _excerpts in findings_to_check:
         results.append(FreshnessResult(
             city=wf.city,
             field=wf.field,
-            ccc_value=ccc_val,
+            ccc_value=None,
             web_value=str(wf.value) if wf.value is not None else None,
             classification="uncertain",
             reason="Freshness check failed; defaulting to uncertain.",

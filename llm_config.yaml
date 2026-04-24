@@ -91,6 +91,10 @@ enrichment:
   max_pages_per_deep_dive: 10
   freshness_threshold_days: 730
   max_fields_per_query: 20
+benchmark_fact_judge:
+  model: "openai/gpt-5.4-mini"
+  temperature: 0.0
+  reasoning_effort: "high"
 vector_store:
   enabled: true
   chroma_persist_path: ".chroma"

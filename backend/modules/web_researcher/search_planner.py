@@ -6,6 +6,7 @@ import json
 import logging
 import re
 import uuid
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from typing import Any
 
@@ -133,11 +134,9 @@ def plan_searches(
     max_total = config.enrichment.max_total_queries_per_run
     total_queries = 0
 
+    # --- Phase 1: Collect city batch specs (no LLM calls yet) ---
+    city_batch_specs: list[dict[str, Any]] = []
     for region, gaps in region_gaps.items():
-        if total_queries >= max_total:
-            break
-
-        # Determine batch profile and budget
         batch_cities = [g["city"] for g in gaps]
         all_blank_fields: set[str] = set()
         all_stale_fields: set[str] = set()
@@ -155,14 +154,9 @@ def plan_searches(
         if not target_fields:
             continue
 
-        # Split target fields by category for focused batches
         field_categories = _categorize_fields(target_fields)
 
         for category, cat_fields in field_categories.items():
-            if total_queries >= max_total:
-                break
-
-            # Effort scaling per architecture doc
             cat_blank = [f for f in cat_fields if f in all_blank_fields]
             cat_stale = [f for f in cat_fields if f in all_stale_fields]
 
@@ -174,61 +168,101 @@ def plan_searches(
                 config=config,
             )
 
-            # Use LLM to formulate search queries
-            queries = _formulate_queries(
-                cities=batch_cities,
-                target_fields=cat_fields,
-                region=region,
-                priority=max_priority,
-                budget=budget,
+            city_batch_specs.append({
+                "region": region,
+                "category": category,
+                "cat_fields": cat_fields,
+                "batch_cities": batch_cities,
+                "budget": budget,
+                "priority": max_priority,
+                "cat_blank": cat_blank,
+                "cat_stale": cat_stale,
+            })
+
+    # --- Phase 1: Fire all city query LLM calls in parallel ---
+    city_query_results: list[list[str]] = []
+    if city_batch_specs:
+        max_workers = min(len(city_batch_specs), 4)
+        with ThreadPoolExecutor(max_workers=max_workers) as pool:
+            futures = [
+                pool.submit(
+                    _formulate_queries,
+                    cities=spec["batch_cities"],
+                    target_fields=spec["cat_fields"],
+                    region=spec["region"],
+                    priority=spec["priority"],
+                    budget=spec["budget"],
+                    config=config,
+                    api_key=api_key,
+                    question_context=question,
+                )
+                for spec in city_batch_specs
+            ]
+            city_query_results = [f.result() for f in futures]
+
+    # --- Phase 1: Build city batches with budget cap (preserves ordering) ---
+    for spec, queries in zip(city_batch_specs, city_query_results):
+        if total_queries >= max_total:
+            break
+        if not queries:
+            continue
+
+        remaining = max_total - total_queries
+        queries = queries[:remaining]
+        total_queries += len(queries)
+
+        cat_blank = spec["cat_blank"]
+        cat_stale = spec["cat_stale"]
+        search_type = "missing_entirely" if cat_blank else "freshness_check"
+        if cat_blank and cat_stale:
+            search_type = "mixed"
+
+        batch_id = f"batch_{spec['region']}_{spec['category']}_{uuid.uuid4().hex[:8]}"
+        batches.append(SearchBatch(
+            batch_id=batch_id,
+            cities=spec["batch_cities"][:8],
+            target_fields=spec["cat_fields"],
+            search_type=search_type,
+            queries=queries,
+            budget=spec["budget"],
+            priority=spec["priority"],
+        ))
+
+    # --- Phase 2: National + comparative benchmark batches in parallel ---
+    remaining_budget = max_total - total_queries
+    national_batches: list[SearchBatch] = []
+    comparative_batches: list[SearchBatch] = []
+    national_query_count = 0
+    comparative_query_count = 0
+
+    if remaining_budget > 0:
+        # Pre-split budget: national gets priority (60%), comparative gets rest
+        national_budget = (remaining_budget + 1) // 2 + remaining_budget // 4  # ~75%
+        comparative_budget = remaining_budget - national_budget
+
+        with ThreadPoolExecutor(max_workers=2) as pool:
+            nat_future = pool.submit(
+                _plan_national_benchmark_batches,
+                gap_manifest=gap_manifest,
+                region_gaps=region_gaps,
+                city_groups=city_groups,
                 config=config,
                 api_key=api_key,
-                question_context=question,
+                remaining_budget=national_budget,
             )
+            comp_future = pool.submit(
+                _plan_comparative_batches,
+                gap_manifest=gap_manifest,
+                region_gaps=region_gaps,
+                config=config,
+                api_key=api_key,
+                remaining_budget=comparative_budget,
+            )
+            national_batches, national_query_count = nat_future.result()
+            comparative_batches, comparative_query_count = comp_future.result()
 
-            if not queries:
-                continue
-
-            remaining = max_total - total_queries
-            queries = queries[:remaining]
-            total_queries += len(queries)
-
-            # Determine search type
-            search_type = "missing_entirely" if cat_blank else "freshness_check"
-            if cat_blank and cat_stale:
-                search_type = "mixed"
-
-            batch_id = f"batch_{region}_{category}_{uuid.uuid4().hex[:8]}"
-            batches.append(SearchBatch(
-                batch_id=batch_id,
-                cities=batch_cities[:8],  # max 8 cities per batch
-                target_fields=cat_fields,
-                search_type=search_type,
-                queries=queries,
-                budget=budget,
-                priority=max_priority,
-            ))
-
-    # National/regional benchmark batches for Method A grounding
-    national_batches, national_query_count = _plan_national_benchmark_batches(
-        gap_manifest=gap_manifest,
-        region_gaps=region_gaps,
-        city_groups=city_groups,
-        config=config,
-        api_key=api_key,
-        remaining_budget=max_total - total_queries,
-    )
     batches.extend(national_batches)
     total_queries += national_query_count
-
-    # Cross-country comparative batches for Method C grounding
-    comparative_batches, comparative_query_count = _plan_comparative_batches(
-        gap_manifest=gap_manifest,
-        region_gaps=region_gaps,
-        config=config,
-        api_key=api_key,
-        remaining_budget=max_total - total_queries,
-    )
     batches.extend(comparative_batches)
     total_queries += comparative_query_count
 
@@ -445,26 +479,42 @@ def _plan_national_benchmark_batches(
         group_id = group.get("id", "unknown")
         group_cities[group_id] = group.get("cities", [])
 
+    # Collect per-region specs
+    region_specs: list[dict[str, Any]] = []
+    for region in region_gaps:
+        cities_in_region = group_cities.get(region, [])
+        gap_cities = [g["city"] for g in region_gaps[region]]
+        all_region_cities = list(set(cities_in_region) | set(gap_cities))
+        region_specs.append({
+            "region": region,
+            "region_cities": all_region_cities,
+        })
+
+    # Fire all national benchmark LLM calls in parallel
+    query_results: list[list[str]] = []
+    if region_specs:
+        max_workers = min(len(region_specs), 4)
+        with ThreadPoolExecutor(max_workers=max_workers) as pool:
+            futures = [
+                pool.submit(
+                    _formulate_national_benchmark_queries,
+                    region=spec["region"],
+                    region_cities=spec["region_cities"],
+                    target_fields=estimable_fields,
+                    config=config,
+                    api_key=api_key,
+                )
+                for spec in region_specs
+            ]
+            query_results = [f.result() for f in futures]
+
+    # Build batches with budget cap (preserves ordering)
     batches: list[SearchBatch] = []
     total_queries = 0
 
-    for region in region_gaps:
+    for spec, queries in zip(region_specs, query_results):
         if total_queries >= remaining_budget:
             break
-
-        cities_in_region = group_cities.get(region, [])
-        # Also include cities from the gaps themselves for country inference
-        gap_cities = [g["city"] for g in region_gaps[region]]
-        all_region_cities = list(set(cities_in_region) | set(gap_cities))
-
-        queries = _formulate_national_benchmark_queries(
-            region=region,
-            region_cities=all_region_cities,
-            target_fields=estimable_fields,
-            config=config,
-            api_key=api_key,
-        )
-
         if not queries:
             continue
 
@@ -472,10 +522,11 @@ def _plan_national_benchmark_batches(
         queries = queries[:min(3, remaining)]  # cap at 3 per region
         total_queries += len(queries)
 
+        region = spec["region"]
         batch_id = f"batch_{region}_national_{uuid.uuid4().hex[:8]}"
         batches.append(SearchBatch(
             batch_id=batch_id,
-            cities=[region],  # region name as the "city" for national benchmarks
+            cities=[region],
             target_fields=estimable_fields,
             search_type="national_benchmark",
             queries=queries,
@@ -584,21 +635,37 @@ def _plan_comparative_batches(
     field_categories = _categorize_fields(estimable_fields)
     all_regions = list(region_gaps.keys())
 
+    # Collect per-category specs
+    category_specs = [
+        {"category": category, "cat_fields": cat_fields}
+        for category, cat_fields in field_categories.items()
+    ]
+
+    # Fire all comparative LLM calls in parallel
+    query_results: list[list[str]] = []
+    if category_specs:
+        max_workers = min(len(category_specs), 4)
+        with ThreadPoolExecutor(max_workers=max_workers) as pool:
+            futures = [
+                pool.submit(
+                    _formulate_comparative_queries,
+                    category=spec["category"],
+                    target_fields=spec["cat_fields"],
+                    regions=all_regions,
+                    config=config,
+                    api_key=api_key,
+                )
+                for spec in category_specs
+            ]
+            query_results = [f.result() for f in futures]
+
+    # Build batches with budget cap (preserves ordering)
     batches: list[SearchBatch] = []
     total_queries = 0
 
-    for category, cat_fields in field_categories.items():
+    for spec, queries in zip(category_specs, query_results):
         if total_queries >= remaining_budget:
             break
-
-        queries = _formulate_comparative_queries(
-            category=category,
-            target_fields=cat_fields,
-            regions=all_regions,
-            config=config,
-            api_key=api_key,
-        )
-
         if not queries:
             continue
 
@@ -606,11 +673,12 @@ def _plan_comparative_batches(
         queries = queries[:min(2, remaining)]  # cap at 2 per category
         total_queries += len(queries)
 
+        category = spec["category"]
         batch_id = f"batch_comparative_{category}_{uuid.uuid4().hex[:8]}"
         batches.append(SearchBatch(
             batch_id=batch_id,
             cities=["cross_country"],
-            target_fields=cat_fields,
+            target_fields=spec["cat_fields"],
             search_type="comparative_benchmark",
             queries=queries,
             budget={"max_queries": 2, "deep_dive_allowed": False},
