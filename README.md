@@ -348,8 +348,11 @@ flowchart TD
     C --> D[Load markdown documents]
     D --> E[Markdown extractor: extract_markdown_excerpts]
     E --> F[Store markdown bundle in context_bundle.json<br/>(excerpts + excerpt_count)]
-    F --> G[Writer: write_markdown]
-    G --> H[Write final.md and finalize run<br/>(writer includes evidence preface)]
+    F --> G{ENRICHMENT_ENABLED?}
+    G -->|no| H[Writer: write_markdown]
+    G -->|yes| I[Enrichment pipeline<br/>gap analysis + optional web research + freshness + assumptions]
+    I --> H
+    H --> J[Write final.md and finalize run<br/>(writer includes evidence preface)]
 ```
 
 What each stage does:
@@ -361,7 +364,8 @@ What each stage does:
 - Markdown researcher returns evidence excerpts selected from whichever chunk source was used.
 - `markdown_chunk_count` tracks how many chunk inputs were processed; `excerpt_count` (also logged as `markdown_excerpt_count` in run metadata) tracks how many evidence snippets were extracted from those chunks.
 - Context bundle is updated with extracted evidence for downstream writing.
-- Orchestrator hands the prepared context bundle directly to the writer.
+- When `ENRICHMENT_ENABLED=true`, the orchestrator runs the enrichment layer before writing. The layer classifies data gaps, optionally runs web research when `WEB_RESEARCH_ENABLED=true`, compares web findings against CCC evidence for freshness/conflict handling, and estimates assumptions only for fields still unresolved after evidence lookup.
+- When enrichment is disabled, the orchestrator hands the prepared CCC context bundle directly to the writer.
 - Writer uses the context bundle and writes final output text to `output/<run_id>/final.md`. The response starts with an evidence preface (based on `excerpt_count`); when `excerpt_count=0`, it returns a "no evidence found" response.
 
 ## End-to-end batch queries
@@ -921,6 +925,11 @@ Artifacts are written under `output/<run_id>/`:
 - `markdown/references.json`: run-local citation map generated from markdown excerpts. Includes sequential `ref_n` entries with `excerpt_index`, `city_name`, `quote`, `partial_answer`, and `source_chunk_ids`. Stage C citation coverage maps cited `ref_id` values in `final.md` back through these `source_chunk_ids`.
 - `markdown/retrieval.json` (when `VECTOR_STORE_ENABLED=true`): vector retrieval inputs and results summary. Includes the final retrieval query list, optional city filter, retrieval tuning metadata (cutoffs/caps), strict direct-hit `seed_chunks[]`, final delivered `chunks[]`, `meta.seed_retrieved_total_chunks`, `meta.neighbor_expanded_total_chunks`, and per-chunk summaries (`chunk_id`, `chunk_index`, `city_name`, `city_key`, `source_path`, `heading_path`, `block_type`, `distance`, `provenance`).
 - `markdown/batches.json`: markdown batching plan used for the markdown researcher calls. Includes per-city batch indices, estimated tokens, and chunk ordering fields (`path`, `chunk_index`, `chunk_id`), making it easy to inspect how chunks were grouped into LLM requests.
+- `enrichment/gap_manifest.json` (when `ENRICHMENT_ENABLED=true`): query fields, city gaps, stale flags, and non-estimable fields detected from the CCC-derived context.
+- `enrichment/web_findings.json` (when web research returns findings): structured external findings with city, field, value, unit, source URL, source type, source date, and extraction confidence.
+- `enrichment/freshness_results.json` (when web findings overlap CCC evidence): conflict/freshness classifications such as `consistent`, `superseded`, `uncertain`, or `cancelled`.
+- `enrichment/assumptions.json` and `enrichment/non_estimable.json` (when enrichment runs): estimates for unresolved fields and fields that should remain unresolved.
+- `enrichment/enrichment_bundle.json` (when enrichment runs): the complete enrichment payload merged into `context_bundle.json` before the writer.
 - `final.md`: final delivered markdown output. Content format is:
   1. `# Question` heading with the original user question,
   2. generated markdown answer body from the writer.
