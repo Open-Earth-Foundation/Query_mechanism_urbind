@@ -41,7 +41,10 @@ NumericNormalizedUnit = Literal[
 NumericUnitRaw = Literal["tco2e_per_year", "tco2e", "mw", "mwh", "eur", "pln"]
 NumericAggregationMethod = Literal["sum", "none"]
 NumericUnitClassificationMethod = Literal["llm", "rule"]
-NumericUnitClassifier = Callable[["NumericUnitClassificationInput"], "NumericUnitClassification"]
+NumericUnitClassifier = Callable[
+    ["NumericUnitClassificationInput"],
+    "NumericUnitClassification",
+]
 
 logger = logging.getLogger(__name__)
 
@@ -64,6 +67,10 @@ NORMALIZED_UNIT_BY_RAW: dict[NumericUnitRaw, NumericNormalizedUnit] = {
     "mwh": "MWh",
     "eur": "EUR",
     "pln": "PLN",
+}
+RAW_UNIT_BY_NORMALIZED: dict[NumericNormalizedUnit, NumericUnitRaw] = {
+    normalized_unit: unit_raw
+    for unit_raw, normalized_unit in NORMALIZED_UNIT_BY_RAW.items()
 }
 
 
@@ -110,7 +117,8 @@ class NumericUnitClassification(BaseModel):
             raise ValueError(
                 f"normalized_unit {self.normalized_unit!r} is invalid for {self.metric_type!r}"
             )
-        if self.unit_raw is not None and NORMALIZED_UNIT_BY_RAW[self.unit_raw] != self.normalized_unit:
+        expected_unit_raw = RAW_UNIT_BY_NORMALIZED.get(self.normalized_unit)
+        if self.unit_raw != expected_unit_raw:
             raise ValueError("unit_raw must match normalized_unit")
         if self.aggregation_method == "sum" and not _is_additive(
             self.metric_type,

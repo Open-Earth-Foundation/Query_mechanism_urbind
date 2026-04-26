@@ -50,9 +50,10 @@ The `uv.lock` file is committed to ensure reproducible builds.
   candidate records so initiatives are merged when they describe the same real-world action.
 - TEF mapping knobs are configured in `llm_config.yaml` under `tef_mapper`
   (`max_workers`, `review_confidence_threshold`, `close_alternative_delta`,
-  `min_transition_confidence`). The mapper is JSON-only: it reads initiative extraction artifacts,
-  runs sector, category, and Transition Element passes with stage-scoped prompts and four catalog JSON files,
-  and writes mapping artifacts without database writes or an LLM review pass. TEF sector,
+  `min_transition_confidence`, `numeric_unit_classifier_enabled`). The mapper is JSON-only: it
+  reads initiative extraction artifacts, runs sector, category, Transition Element, and optional
+  numeric-unit classification passes with stage-scoped prompts and four catalog JSON files, and
+  writes mapping artifacts without database writes or an LLM review pass. TEF sector,
   subcategory, and subsubcategory catalog cards include prompt-ready routing definitions,
   positive use signals, and avoid rules so the category router can compare sibling branches.
 - Retry policy is centralized in top-level `retry` in `llm_config.yaml` (`max_attempts`, `backoff_base_seconds`, `backoff_max_seconds`) and is shared across retry/backoff behavior for LLM calls and related operations.
@@ -268,7 +269,11 @@ current direct-child candidate, the mapper normalizes it to that direct child fo
 and emits a manual-review item. Sector paths are assigned from the TEF catalog after the model
 selects a sector key, so the sector router does not generate path fields. `source_quote` is copied
 through mapper input rows, final mappings, numeric facts, and TEF-grouped initiatives for
-search-back traceability, but mapper LLM passes do not receive it as classification evidence.
+search-back traceability, but sector/category/Transition Element mapper LLM passes do not receive
+it as classification evidence. When `tef_mapper.numeric_unit_classifier_enabled` is true, numeric
+facts use a constrained Pydantic LLM classifier to choose only the supported metric types, units,
+and aggregation methods before default rollups are written; invalid or failed classifications fall
+back to rule-based unit inference and are marked for review.
 
 Run the full Krakow TEF benchmark against the curated CCC source-truth mappings:
 

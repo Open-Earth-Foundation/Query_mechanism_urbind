@@ -1018,7 +1018,7 @@ def _write_run_artifacts(
                 "- `04_transition_mappings/transition_mappings.jsonl`: Transition Element mapper outputs.",
                 "- `05_final_mappings/final_mappings.jsonl`: durable final mappings with copied source quotes.",
                 "- `06_review/review_items.jsonl`: manual-review flags.",
-                "- `07_numeric_facts/initiative_numeric_facts.jsonl`: clean v1 initiative numbers joined to TEF mappings with copied source quotes.",
+                "- `07_numeric_facts/initiative_numeric_facts.jsonl`: clean v1 initiative numbers joined to TEF mappings, with copied source quotes and numeric unit classification metadata.",
                 "- `08_tef_groups/tef_grouped_initiatives.jsonl`: initiatives grouped by TEF target with copied source quotes.",
                 "- `08_tef_groups/tef_metric_rollups.json`: additive metric rollups by TEF target.",
                 "- `summary.json`: run counts.",
