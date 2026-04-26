@@ -1275,6 +1275,8 @@ def test_numeric_unit_classifier_prompt_matches_model() -> None:
     for section in ("<role>", "<task>", "<input>", "<output>", "<example_output>"):
         assert section in prompt
     assert "submit_numeric_unit_classification" in prompt
+    for field_name in NumericUnitClassificationInput.model_fields:
+        assert f"`{field_name}`" in prompt
     for field_name in NumericUnitClassification.model_fields:
         if field_name == "method":
             continue
