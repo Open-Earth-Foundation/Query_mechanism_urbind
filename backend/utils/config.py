@@ -65,6 +65,7 @@ class TefMapperConfig(AgentConfig):
     review_confidence_threshold: float = 0.80
     close_alternative_delta: float = 0.10
     min_transition_confidence: float = 0.60
+    numeric_unit_classifier_enabled: bool = True
 
 
 class ChatConfig(AgentConfig):

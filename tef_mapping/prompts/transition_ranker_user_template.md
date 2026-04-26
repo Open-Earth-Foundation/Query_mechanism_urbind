@@ -10,21 +10,21 @@ Do not map to TEF activities, categories, sectors, or review decisions.
 </task>
 
 <input>
-Input is rendered TOON with:
+Input is rendered JSON with:
 - `initiative` (object): extracted initiative record with source metadata, canonical initiative fields, numbers, and extraction quality metadata.
 - `selected_category` (object): final TEF category metadata with prompt-ready card text.
 - `candidate_transition_elements` (list[object]): direct Transition Elements from the selected final category. Each candidate includes `tef_id`, labels, description, type, unit, shift fields, and carbon causal chains.
 
 <initiative>
-{{initiative_toon}}
+{{initiative_json}}
 </initiative>
 
 <selected_category>
-{{selected_category_toon}}
+{{selected_category_json}}
 </selected_category>
 
 <candidate_transition_elements>
-{{candidate_transition_elements_toon}}
+{{candidate_transition_elements_json}}
 </candidate_transition_elements>
 </input>
 

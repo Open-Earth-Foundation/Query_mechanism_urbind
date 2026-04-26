@@ -1,7 +1,7 @@
 {
   "metadata": {
     "scope": "Krakow CCC manual-scan source-of-truth initiatives mapped to the TEF framework",
-    "source_initiatives_file": "assets/tef_mapping/all_correct_initiatives.json",
+    "source_initiatives_file": "backend/benchmarks/tef_mapping/krakow_source_truth/all_correct_initiatives.json",
     "source_mapping_run_id": "krakow_manual_assets_tef_20260421_002",
     "source_mapping_run_dir": "output/tef_mapping/krakow_manual_assets_tef_20260421_002",
     "source_input_run_id": "krakow_manual_assets_20260421_001",

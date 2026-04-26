@@ -48,6 +48,7 @@ tef_mapper:
   review_confidence_threshold: 0.80
   close_alternative_delta: 0.10
   min_transition_confidence: 0.60
+  numeric_unit_classifier_enabled: true
 writer:
   model: "openai/gpt-5.4-mini"
   temperature: 0.0

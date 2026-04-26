@@ -276,7 +276,7 @@ Run the full Krakow TEF benchmark against the curated CCC source-truth mappings:
 python -m backend.scripts.benchmark_krakow_tef_mapping --max-workers 3
 ```
 
-The benchmark converts `assets/tef_mapping/all_correct_initiatives_mapped_to_tef.json`
+The benchmark converts `backend/benchmarks/tef_mapping/krakow_source_truth/all_correct_initiatives_mapped_to_tef.json`
 into mapper-ready initiative records, runs the TEF mapper, and compares final mappings
 against source truth. Outputs are written under
 `output/tef_benchmarks/krakow_tef_mapping/<benchmark_id>/`, including
@@ -287,7 +287,8 @@ and `benchmark_summary.json`. Use `--limit N` for a smoke check before a full ru
 ### Krakow TEF source-of-truth assets
 
 The curated source-of-truth files for the Krakow CCC manual-scan baseline live in
-`assets/tef_mapping/`. This folder intentionally contains exactly two JSON files:
+`backend/benchmarks/tef_mapping/krakow_source_truth/`. This folder intentionally contains
+exactly two JSON files:
 
 - `all_correct_initiatives.json`: 58 Krakow CCC manual-scan source-of-truth initiatives
   from `documents/Krakow.md`, Module B-2.2 outline of individual activities/actions/measures,

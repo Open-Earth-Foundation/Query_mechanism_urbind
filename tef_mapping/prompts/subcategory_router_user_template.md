@@ -10,21 +10,21 @@ Do not choose a Transition Element, activity, or review decision.
 </task>
 
 <input>
-Input is rendered TOON with:
+Input is rendered JSON with:
 - `initiative` (object): extracted initiative record with source metadata, canonical initiative fields, numbers, and extraction quality metadata.
 - `selected_category` (object): current TEF sector, subcategory, or subsubcategory metadata with prompt-ready card text.
 - `candidate_subcategories` (list[object]): direct child category cards for the current category. Each includes path, label, sector, description, transition counts, and prompt-ready card text.
 
 <initiative>
-{{initiative_toon}}
+{{initiative_json}}
 </initiative>
 
 <selected_category>
-{{selected_category_toon}}
+{{selected_category_json}}
 </selected_category>
 
 <candidate_subcategories>
-{{candidate_subcategories_toon}}
+{{candidate_subcategories_json}}
 </candidate_subcategories>
 </input>
 

@@ -19,12 +19,19 @@ from backend.modules.tef_mapper.models import (
     TefSubsectorRoute,
     TefTransitionMapping,
 )
-from backend.modules.tef_mapper.numeric_rollup import build_numeric_facts
+from backend.modules.tef_mapper.numeric_rollup import (
+    NUMERIC_UNIT_CLASSIFIER_PROMPT,
+    NumericUnitClassification,
+    NumericUnitClassificationInput,
+    build_numeric_facts,
+    classify_numeric_unit_with_rules,
+)
 from tests.support import build_test_app_config
 
-KRAKOW_SOURCE_TRUTH_PATH = Path("assets/tef_mapping/all_correct_initiatives.json")
-KRAKOW_TEF_SOURCE_TRUTH_PATH = Path(
-    "assets/tef_mapping/all_correct_initiatives_mapped_to_tef.json"
+KRAKOW_SOURCE_TRUTH_DIR = Path("backend/benchmarks/tef_mapping/krakow_source_truth")
+KRAKOW_SOURCE_TRUTH_PATH = KRAKOW_SOURCE_TRUTH_DIR / "all_correct_initiatives.json"
+KRAKOW_TEF_SOURCE_TRUTH_PATH = (
+    KRAKOW_SOURCE_TRUTH_DIR / "all_correct_initiatives_mapped_to_tef.json"
 )
 
 
@@ -1151,7 +1158,7 @@ def test_tef_user_prompt_templates_use_required_schema_sections() -> None:
             Path("tef_mapping/prompts/sector_router_user_template.md"),
             TefSectorRoute,
             "submit_tef_sector_route",
-            ["{{initiative_toon}}", "{{sector_cards_toon}}"],
+            ["{{initiative_json}}", "{{sector_cards_json}}"],
             {"selected_path"},
         ),
         (
@@ -1159,9 +1166,9 @@ def test_tef_user_prompt_templates_use_required_schema_sections() -> None:
             TefSubsectorRoute,
             "submit_tef_subsector_route",
             [
-                "{{initiative_toon}}",
-                "{{selected_category_toon}}",
-                "{{candidate_subcategories_toon}}",
+                "{{initiative_json}}",
+                "{{selected_category_json}}",
+                "{{candidate_subcategories_json}}",
             ],
             set(),
         ),
@@ -1170,9 +1177,9 @@ def test_tef_user_prompt_templates_use_required_schema_sections() -> None:
             TefTransitionMapping,
             "submit_tef_transition_mapping",
             [
-                "{{initiative_toon}}",
-                "{{selected_category_toon}}",
-                "{{candidate_transition_elements_toon}}",
+                "{{initiative_json}}",
+                "{{selected_category_json}}",
+                "{{candidate_transition_elements_json}}",
             ],
             set(),
         ),
@@ -1189,3 +1196,12 @@ def test_tef_user_prompt_templates_use_required_schema_sections() -> None:
         for field_name in output_model.model_fields:
             if field_name not in excluded_fields:
                 assert f"`{field_name}`" in content
+
+
+def test_tef_catalog_prompts_use_json_payloads() -> None:
+    """Catalog prompt templates should describe JSON payloads, not obsolete compact payloads."""
+    legacy_payload_format = "TO" + "ON"
+    for prompt_path in Path("tef_mapping/prompts").glob("*.md"):
+        content = prompt_path.read_text(encoding="utf-8")
+        assert legacy_payload_format not in content
+        assert legacy_payload_format.lower() not in content
