@@ -52,7 +52,6 @@ import {
   CityGroup,
   CityMarkdownResponse,
   CreateRunResponse,
-  PipelineStep,
   RunContextResponse,
   RunOutputResponse,
   RunSummary,

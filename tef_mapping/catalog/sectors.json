@@ -1,0 +1,62 @@
+[
+  {
+    "sector": "transport",
+    "path": "1-transport",
+    "path_code": "1",
+    "label": "Transport",
+    "description": "Movement of people and goods, including road, rail, aviation, waterborne transport, freight, mobility, vehicles, fuels, and transport efficiency.",
+    "total_transition_count": 72,
+    "child_subcategory_count": 3,
+    "card_text": "# Transport\n\n- TEF path: `1-transport`\n- Sector key: `transport`\n- Total transition elements: 72\n\n## Routing Definition\n\nMovement of people and goods, including road, rail, aviation, waterborne transport, freight, mobility, vehicles, fuels, and transport efficiency.\n\n## Use This Sector When\n\n- The initiative changes passenger or freight movement.\n- The initiative affects vehicles, buses, rail, aviation, shipping, roads, modal shift, charging for transport, or transport fuels.\n\n## Avoid This Sector When\n\n- The initiative primarily changes energy generation or heat supply rather than transport demand or vehicles.\n\n## Direct Subcategories\n\n- `1-transport/1a-mobility`: Mobility (40 transition elements)\n- `1-transport/1b-freight`: Freight (32 transition elements)\n- `1-transport/1c-other`: Other (0 transition elements)\n\n## Direct Transition Elements\n\n- None directly under this category\n"
+  },
+  {
+    "sector": "industry",
+    "path": "2-industry",
+    "path_code": "2",
+    "label": "Industry",
+    "description": "Industrial production, process emissions, manufacturing, mineral production, chemicals, metals, product use, electronics, and industrial fuel or material shifts.",
+    "total_transition_count": 24,
+    "child_subcategory_count": 4,
+    "card_text": "# Industry\n\n- TEF path: `2-industry`\n- Sector key: `industry`\n- Total transition elements: 24\n\n## Routing Definition\n\nIndustrial production, process emissions, manufacturing, mineral production, chemicals, metals, product use, electronics, and industrial fuel or material shifts.\n\n## Use This Sector When\n\n- The initiative changes industrial processes, materials, manufacturing, industrial heat, or industrial feedstocks.\n- The initiative targets cement, steel, chemicals, minerals, metals, product use, or industrial production equipment.\n\n## Avoid This Sector When\n\n- The initiative concerns residential/commercial building operation or municipal energy supply rather than industrial production.\n\n## Direct Subcategories\n\n- `2-industry/2a-minerals`: Minerals (6 transition elements)\n- `2-industry/2b-chemicals`: Chemicals (5 transition elements)\n- `2-industry/2c-metals`: Metals (6 transition elements)\n- `2-industry/2d-other`: Other (7 transition elements)\n\n## Direct Transition Elements\n\n- None directly under this category\n"
+  },
+  {
+    "sector": "afolu",
+    "path": "3-afolu",
+    "path_code": "3",
+    "label": "AFOLU",
+    "description": "Agriculture, forestry, livestock, land use, land-use change, managed soils, cropland, forest land, wetlands, settlements land, and biomass-related land emissions.",
+    "total_transition_count": 2,
+    "child_subcategory_count": 3,
+    "card_text": "# AFOLU\n\n- TEF path: `3-afolu`\n- Sector key: `afolu`\n- Total transition elements: 2\n\n## Routing Definition\n\nAgriculture, forestry, livestock, land use, land-use change, managed soils, cropland, forest land, wetlands, settlements land, and biomass-related land emissions.\n\n## Use This Sector When\n\n- The initiative changes land management, forests, cropland, grassland, wetlands, livestock, manure, soils, fertiliser, or agricultural practices.\n\n## Avoid This Sector When\n\n- The initiative is urban green infrastructure only when framed mainly as adaptation, public space, or building/energy work without land-use emissions relevance.\n\n## Direct Subcategories\n\n- `3-afolu/3a-livestock`: Livestock (1 transition elements)\n- `3-afolu/3b-land`: Land (0 transition elements)\n- `3-afolu/3c-aggregate-sources-other`: Aggregate Sources Other (1 transition elements)\n\n## Direct Transition Elements\n\n- None directly under this category\n"
+  },
+  {
+    "sector": "buildings",
+    "path": "4-buildings",
+    "path_code": "4",
+    "label": "Buildings",
+    "description": "Residential and non-residential building energy demand, HVAC, lighting, appliances, equipment, construction, retrofits, and building stock changes.",
+    "total_transition_count": 54,
+    "child_subcategory_count": 3,
+    "card_text": "# Buildings\n\n- TEF path: `4-buildings`\n- Sector key: `buildings`\n- Total transition elements: 54\n\n## Routing Definition\n\nResidential and non-residential building energy demand, HVAC, lighting, appliances, equipment, construction, retrofits, and building stock changes.\n\n## Use This Sector When\n\n- The initiative changes energy use or efficiency inside residential, commercial, institutional, or public buildings.\n- The initiative targets retrofits, insulation, HVAC, lighting, appliances, construction, or building stock performance.\n\n## Avoid This Sector When\n\n- The initiative primarily changes district heat or electricity supply outside the building, which may route to Energy.\n\n## Direct Subcategories\n\n- `4-buildings/4a-residential`: Residential (22 transition elements)\n- `4-buildings/4b-non-residential`: Non Residential (29 transition elements)\n- `4-buildings/4c-building-stocks`: Building Stocks (3 transition elements)\n\n## Direct Transition Elements\n\n- None directly under this category\n"
+  },
+  {
+    "sector": "energy",
+    "path": "5-energy",
+    "path_code": "5",
+    "label": "Energy",
+    "description": "Energy supply, electricity, heat, combined heat and power, fuels, hydrogen, petroleum refinement, energy transformation, transmission, storage, and fugitive emissions.",
+    "total_transition_count": 31,
+    "child_subcategory_count": 4,
+    "card_text": "# Energy\n\n- TEF path: `5-energy`\n- Sector key: `energy`\n- Total transition elements: 31\n\n## Routing Definition\n\nEnergy supply, electricity, heat, combined heat and power, fuels, hydrogen, petroleum refinement, energy transformation, transmission, storage, and fugitive emissions.\n\n## Use This Sector When\n\n- The initiative changes electricity generation, heat supply, district heating, CHP, hydrogen, fuel transformation, grid, storage, or energy supply mix.\n- The initiative adds renewable generation, heat-pump-based heat supply, residual heat, solar farms, wind, biogas, or grid/storage infrastructure.\n\n## Avoid This Sector When\n\n- The initiative only changes end-use building efficiency without changing energy supply.\n\n## Direct Subcategories\n\n- `5-energy/5a-energy-supply`: Energy Supply (24 transition elements)\n- `5-energy/5b-energy-transformation`: Energy Transformation (7 transition elements)\n- `5-energy/5c-energy-transmission-storage`: Energy Transmission Storage (0 transition elements)\n- `5-energy/5d-other`: Other (0 transition elements)\n\n## Direct Transition Elements\n\n- None directly under this category\n"
+  },
+  {
+    "sector": "waste",
+    "path": "6-waste",
+    "path_code": "6",
+    "label": "Waste",
+    "description": "Solid waste, wastewater, disposal, incineration, open burning, biological treatment, composting, landfill gas, recycling, and waste treatment changes.",
+    "total_transition_count": 4,
+    "child_subcategory_count": 2,
+    "card_text": "# Waste\n\n- TEF path: `6-waste`\n- Sector key: `waste`\n- Total transition elements: 4\n\n## Routing Definition\n\nSolid waste, wastewater, disposal, incineration, open burning, biological treatment, composting, landfill gas, recycling, and waste treatment changes.\n\n## Use This Sector When\n\n- The initiative changes waste collection, disposal, recycling, composting, wastewater treatment, landfill operations, or waste treatment emissions.\n\n## Avoid This Sector When\n\n- The initiative uses waste as an energy input and is primarily about energy supply; consider Energy as an alternative.\n\n## Direct Subcategories\n\n- `6-waste/6a-solids`: Solids (4 transition elements)\n- `6-waste/6b-non-solids`: Non Solids (0 transition elements)\n\n## Direct Transition Elements\n\n- None directly under this category\n"
+  }
+]
