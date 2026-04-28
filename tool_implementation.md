@@ -213,6 +213,40 @@ This staged tool visibility keeps the early context smaller and nudges the
 agent toward the intended workflow: narrow first, search second, expand only
 when justified, and save evidence instead of carrying everything in memory.
 
+### Concrete example: Krakow missing EV charging target
+
+Assume CCC does not provide a usable answer for
+`public_ev_chargers_2030_target` in Krakow.
+
+1. The agent starts with `get_tag_options`, `list_candidate_sources`,
+   `regex_search`, `list_evidence_candidates`, and
+   `mark_no_evidence_found`.
+2. It calls `get_tag_options` and then `list_candidate_sources` with filters
+   such as `cities=["Krakow"]`, `verticals=["mobility"]`, and optional TEF
+   tags.
+3. It runs `regex_search` over the selected `source_ids` with a narrow pattern
+   around charging targets and 2030.
+4. Once the first search returns hit IDs, the agent also gets access to
+   `expand_hits` and `add_evidence_candidates`.
+5. If the search returns many hits, the agent ignores weak ones, saves obvious
+   ones immediately, and selects only the strongest ambiguous hits for
+   expansion.
+6. If 3 hits need more context, it calls
+   `expand_hits(hit_ids=["h4", "h7", "h9"])`.
+7. If expanded hits `h7` and `h9` contain concrete Krakow targets, it saves
+   them with `add_evidence_candidates(...)`.
+8. If the field is still unresolved, it runs another `regex_search` with a
+   refined pattern. If relevant sources were searched and no usable evidence
+   was found, it calls `mark_no_evidence_found`.
+
+### Large review sets
+
+If the saved snippets or expansion results for one field exceed roughly 100k
+tokens in total, do not switch to a smaller model. Split the review set into
+batches of at most 50k tokens, review those batches in parallel agents, and
+merge the selected evidence back into the main run state. The parallel agents
+should review bounded snippet batches, not reopen the whole source corpus.
+
 ## Tool Schemas
 
 ### 1. `get_tag_options`
@@ -392,119 +426,6 @@ def mark_no_evidence_found(
 This records that relevant sources were searched but no usable snippet was
 found. It is useful downstream because "searched and not found" is different
 from "not searched".
-
-## Explicit Example Flow
-
-This example shows the real loop, not a simplified one-pass path. Assume the
-agent is filling a missing Krakow mobility field after CCC search returned no
-usable value.
-
-### Step 1: Initial tool surface
-
-The agent starts with:
-
-- `get_tag_options`
-- `list_candidate_sources`
-- `regex_search`
-- `list_evidence_candidates`
-- `mark_no_evidence_found`
-
-It does not yet see `expand_hits` or `add_evidence_candidates`.
-
-### Step 2: Discover the filter space
-
-The agent calls `get_tag_options` to see available cities, verticals, and TEF
-tags.
-
-### Step 3: Narrow candidate sources
-
-The agent calls `list_candidate_sources` with filters such as:
-
-- `cities=["Krakow"]`
-- `verticals=["mobility"]`
-- optionally matching TEF tags
-
-The response is source summaries only, not document text.
-
-### Step 4: First bounded search
-
-The agent calls `regex_search` over the selected `source_ids` with a fairly
-tight pattern and small context. Example search intent:
-
-- search for charging targets near 2030
-- return up to 100 hits
-- keep context small on the first pass
-
-After this first search returns, the agent now also gets:
-
-- `expand_hits`
-- `add_evidence_candidates`
-
-### Step 5: Triage hits
-
-Suppose `regex_search` returns 18 hits. The agent does not expand all 18. It
-reviews the compact snippets and makes a decision for each one:
-
-- ignore obvious duplicates or weak hits
-- save obvious evidence immediately
-- expand ambiguous but promising hits
-- run another `regex_search` if the first pattern was too broad
-
-### Step 6: Batched expansion
-
-If 3 hits look promising but need more context, the agent calls:
-
-```python
-expand_hits(hit_ids=["h4", "h7", "h9"])
-```
-
-This is the largest allowed expansion batch in one call.
-
-### Step 7: Save multiple evidence candidates at once
-
-If 2 expanded hits contain concrete values, the agent calls:
-
-```python
-add_evidence_candidates(
-    candidates=[
-        {
-            "hit_id": "h7",
-            "city": "Krakow",
-            "field": "public_ev_chargers_2030_target",
-            "reason": "Contains a concrete city-level 2030 target.",
-            "confidence": 0.92,
-        },
-        {
-            "hit_id": "h9",
-            "city": "Krakow",
-            "field": "public_ev_chargers_2030_target",
-            "reason": "Contains the same target in a clearer summary paragraph.",
-            "confidence": 0.88,
-        },
-    ]
-)
-```
-
-The evidence basket is now part of the run state. The agent can call
-`list_evidence_candidates` at any time to see what is already saved.
-
-### Step 8: Continue or stop
-
-If the field is still not resolved, the agent runs another `regex_search` with
-a refined pattern. If it exhausts the search budget without useful evidence, it
-calls `mark_no_evidence_found`.
-
-### Step 9: Large snippet review
-
-If the saved snippets or expansion results for one field exceed roughly 100k
-tokens in total, do not switch to a lightweight model. Instead:
-
-1. split the review set into batches of at most 50k tokens each;
-2. review those batches in parallel agents;
-3. merge the selected evidence back into the main run state.
-
-The parallel agents should review bounded snippet batches, not reopen the whole
-source corpus.
 
 ## Document Parsing and Search Index
 
