@@ -9,11 +9,19 @@ from typing import Any
 
 from openai import OpenAI
 
+from backend.modules.sources.manifest import load_manifest
+from backend.modules.web_researcher.data_lookups import (
+    find_matching_structured_lookups,
+)
 from backend.modules.web_researcher.models import (
     AssumptionRecord,
     EnrichedField,
+    EstimateRange,
+    FieldClassification,
+    FieldDecomposition,
     GapManifest,
     NonEstimableRecord,
+    StructuredLookupResult,
     WebFinding,
     _AssumptionsEnvelope,
 )
@@ -25,6 +33,126 @@ from backend.services.progress_tracker import ProgressTracker
 from backend.utils.config import AppConfig
 
 logger = logging.getLogger(__name__)
+
+
+def _structured_lookup_to_assumption(
+    lookup: StructuredLookupResult,
+) -> AssumptionRecord | None:
+    """Lift a deterministic lookup result into an AssumptionRecord.
+
+    Returns None when the lookup row is empty or non-numeric (the estimator
+    keeps the field for the LLM pass to handle).
+    """
+    if lookup.value is None:
+        return None
+    try:
+        numeric = float(lookup.value)
+    except (TypeError, ValueError):
+        return None
+
+    operators = lookup.extra.get("source_name") if isinstance(lookup.extra, dict) else None
+    source_name = str(operators) if operators else lookup.ingestion_id
+    unit = lookup.unit or ""
+    asof = lookup.asof or "current registry snapshot"
+
+    estimate = EstimateRange(low=numeric, mid=numeric, high=numeric)
+    return AssumptionRecord(
+        city=lookup.city,
+        field_name=lookup.field,
+        gap_description=f"Resolved deterministically from {source_name}.",
+        method_used="structured_lookup",
+        estimate=estimate,
+        confidence="HIGH",
+        reference_data=(
+            f"{source_name}: {numeric:g} {unit} ({asof})".strip()
+        ),
+        rationale=(
+            f"Direct lookup from {source_name} for {lookup.city} / {lookup.field}; "
+            "no estimation required."
+        ),
+        basis="structured_lookup",
+        is_replaceable=False,
+    )
+
+
+def _resolve_via_structured_lookups(
+    estimable_fields: list[EnrichedField],
+    gap_manifest: GapManifest,
+) -> tuple[list[AssumptionRecord], list[EnrichedField]]:
+    """Try to resolve gaps deterministically before invoking the LLM.
+
+    Returns ``(resolved_assumptions, remaining_fields)``.  Resolution is
+    keyed by ``(city, field)`` — fields not covered by any structured
+    lookup pass through unchanged.
+    """
+    if not estimable_fields:
+        return [], estimable_fields
+
+    # Find lookups for the (cities, fields) the estimator would otherwise estimate.
+    cities = sorted({field.city for field in estimable_fields})
+    decomposition = FieldDecomposition(
+        query_fields=[
+            FieldClassification(
+                field=fc.field,
+                classification=fc.classification,
+                searchable=fc.searchable,
+                rationale=fc.rationale,
+            )
+            for fc in gap_manifest.query_fields
+            if any(field.field == fc.field for field in estimable_fields)
+        ],
+        non_estimable_fields=list(gap_manifest.non_estimable_fields),
+    )
+    if not decomposition.query_fields:
+        return [], estimable_fields
+
+    try:
+        manifest = load_manifest()
+    except FileNotFoundError:
+        logger.info(
+            "Assumptions estimator: no sources manifest; skipping structured-lookup grounding."
+        )
+        return [], estimable_fields
+    except Exception:  # noqa: BLE001
+        logger.warning(
+            "Assumptions estimator: failed to load sources manifest", exc_info=True
+        )
+        return [], estimable_fields
+
+    try:
+        lookups = find_matching_structured_lookups(decomposition, cities, manifest)
+    except Exception:  # noqa: BLE001
+        logger.warning("Assumptions estimator: structured lookups raised", exc_info=True)
+        return [], estimable_fields
+
+    if not lookups:
+        return [], estimable_fields
+
+    resolved_index: dict[tuple[str, str], AssumptionRecord] = {}
+    for lookup in lookups:
+        record = _structured_lookup_to_assumption(lookup)
+        if record is None:
+            continue
+        resolved_index[(record.city, record.field_name)] = record
+
+    if not resolved_index:
+        return [], estimable_fields
+
+    resolved_assumptions: list[AssumptionRecord] = []
+    remaining: list[EnrichedField] = []
+    for field in estimable_fields:
+        record = resolved_index.get((field.city, field.field))
+        if record is not None:
+            resolved_assumptions.append(record)
+        else:
+            remaining.append(field)
+
+    logger.info(
+        "Assumptions estimator: structured lookups resolved %d/%d gap(s).",
+        len(resolved_assumptions),
+        len(estimable_fields),
+    )
+    return resolved_assumptions, remaining
 
 _METHOD_C_SATURATION_THRESHOLD = 0.60
 _MIN_PEER_ANCHORS_METHOD_B = 2
@@ -114,6 +242,34 @@ def run_assumptions_estimator(
             len(non_estimable_records),
         )
         return [], non_estimable_records, None
+
+    # Step 9: try deterministic structured lookups before any LLM call.
+    # Fields directly answered by a structured source (e.g. Bnetza) get a
+    # high-confidence ``method_used="structured_lookup"`` AssumptionRecord
+    # and are removed from the LLM-driven pass.
+    structured_assumptions, estimable_fields = _resolve_via_structured_lookups(
+        estimable_fields, gap_manifest
+    )
+    if progress and structured_assumptions:
+        for a in structured_assumptions:
+            progress.add_item(
+                "assumptions",
+                f"{a.city} / {a.field_name}: {a.estimate.mid} [structured_lookup, HIGH]",
+                item_type="estimate",
+                title=f"{a.city} / {a.field_name}",
+                metadata={
+                    "method": a.method_used,
+                    "confidence": a.confidence,
+                    "mid": str(a.estimate.mid),
+                },
+            )
+
+    if not estimable_fields:
+        logger.info(
+            "Assumptions estimator: all gaps resolved via structured lookups; "
+            "skipping LLM passes."
+        )
+        return structured_assumptions, non_estimable_records, None
 
     # Build peer reference once — used for anchor check and both LLM passes
     peer_reference = _build_peer_reference_table(enriched_fields, estimable_fields)
@@ -238,16 +394,21 @@ def run_assumptions_estimator(
                     f"Pass 2 done: {len(assumptions)} revised estimates",
                 )
 
-    # Check for saturation warning
+    # Combine deterministic lookup results with the LLM-produced ones.
+    final_assumptions = list(structured_assumptions) + list(assumptions)
+
+    # Saturation is only meaningful for LLM estimates — lookups have HIGH
+    # confidence by construction, so they shouldn't tilt the diagnostic.
     saturation_warning = _check_saturation(assumptions)
 
     logger.info(
-        "Assumptions estimator completed: assumptions=%d non_estimable=%d saturation=%s",
-        len(assumptions),
+        "Assumptions estimator completed: assumptions=%d (structured_lookup=%d) non_estimable=%d saturation=%s",
+        len(final_assumptions),
+        len(structured_assumptions),
         len(non_estimable_records),
         saturation_warning is not None,
     )
-    return assumptions, non_estimable_records, saturation_warning
+    return final_assumptions, non_estimable_records, saturation_warning
 
 
 def _call_estimator(

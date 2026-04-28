@@ -11,9 +11,15 @@ from pydantic import BaseModel, Field
 # Type literals
 # ---------------------------------------------------------------------------
 GapClassification = Literal["estimable_numerical", "derivable_from_ratio", "non_estimable"]
-EstimationMethod = Literal["national_regional_average", "peer_city_proxy", "expert_heuristic_scaling"]
+EstimationMethod = Literal[
+    "national_regional_average",
+    "peer_city_proxy",
+    "expert_heuristic_scaling",
+    "structured_lookup",
+]
 FieldStatus = Literal["resolved", "partially_resolved", "still_missing"]
 FreshnessClassification = Literal["consistent", "superseded", "uncertain", "cancelled"]
+# (SourceTier defined below alongside WebFinding so it stays close to its consumer.)
 
 # ---------------------------------------------------------------------------
 # Gap Analysis models (Agent 1 output)
@@ -40,9 +46,68 @@ class GapManifest(BaseModel):
     non_estimable_fields: list[str]
 
 
+class FieldDecomposition(BaseModel):
+    """Output of Phase 0 — fields decomposed and classified, no per-city detection.
+
+    Used by the new two-pass gap analyst flow (orchestrator Phase 0 + Phase 2).
+    Phase 1 fan-out runs between the decomposition and per-city gap detection
+    so that local data (markdown, structured lookups, vector benchmarks) can
+    enrich the context bundle before per-city gaps are computed.
+    """
+
+    query_fields: list[FieldClassification]
+    non_estimable_fields: list[str]
+
+
+class StructuredLookupResult(BaseModel):
+    """One (city, field) value resolved by a structured-lookup ingestion.
+
+    Emitted by Phase 1 fan-out and merged into ``context_bundle["phase1"]``
+    so that Phase 2 gap detection sees the values without an LLM call.
+    """
+
+    source_id: str
+    ingestion_id: str
+    city: str
+    field: str
+    value: float | int | str | None = None
+    unit: str | None = None
+    asof: str | None = None
+    extra: dict[str, object] = Field(default_factory=dict)
+
+
+class BenchmarkExcerptRecord(BaseModel):
+    """One benchmark excerpt retrieved by Phase 1 fan-out via similarity search."""
+
+    chunk_id: str
+    source_id: str
+    ingestion_id: str
+    source_path: str
+    tier: str
+    doc_slug: str
+    heading_path: str
+    block_type: str
+    raw_text: str
+    distance: float
+    chunk_index: int | None = None
+
+
+class Phase1Artefacts(BaseModel):
+    """Aggregate of everything Phase 1 fan-out produced for one run."""
+
+    structured_lookups: list[StructuredLookupResult] = Field(default_factory=list)
+    benchmark_excerpts: list[BenchmarkExcerptRecord] = Field(default_factory=list)
+    queried_cities: list[str] = Field(default_factory=list)
+    queried_fields: list[str] = Field(default_factory=list)
+    elapsed_seconds: float = 0.0
+
+
 # ---------------------------------------------------------------------------
 # Web Research models (Agent 3 output — Phase 2)
 # ---------------------------------------------------------------------------
+
+
+SourceTier = Literal["tier1", "open"]
 
 
 class WebFinding(BaseModel):
@@ -54,6 +119,9 @@ class WebFinding(BaseModel):
     source_type: str  # e.g. "operator_press_release", "government_report"
     source_date: str | None = None
     extraction_confidence: float
+    # Provenance — populated when the search worker uses the tier-1 pre-pass.
+    source_id: str | None = None
+    source_tier: SourceTier | None = None
 
 
 class SearchBatch(BaseModel):
@@ -92,6 +160,13 @@ class EnrichedField(BaseModel):
     status: FieldStatus
     value: str | float | int | None = None
     source: Literal["ccc", "web", "estimated", "none"] = "none"
+    # Populated when the field's value was resolved through a manifest-declared
+    # source (tier-1 web allowlist entry, structured lookup, or benchmark
+    # collection).  ``source_id`` references a stable handle in
+    # ``backend/data/sources_manifest.yaml`` or ``tier1_web_sources.yaml``;
+    # the writer uses this for human-readable attribution.
+    source_id: str | None = None
+    source_tier: SourceTier | None = None
     provenance: dict[str, object] = Field(default_factory=dict)
     freshness_flag: str | None = None
 
@@ -167,6 +242,15 @@ class _GapManifestEnvelope(BaseModel):
     non_estimable_fields: list[str] = Field(default_factory=list)
 
 
+class _FieldDecompositionEnvelope(BaseModel):
+    query_fields: list[FieldClassification] = Field(default_factory=list)
+    non_estimable_fields: list[str] = Field(default_factory=list)
+
+
+class _CityGapsEnvelope(BaseModel):
+    city_gaps: list[CityGap] = Field(default_factory=list)
+
+
 class _AssumptionsEnvelope(BaseModel):
     assumptions: list[AssumptionRecord] = Field(default_factory=list)
     non_estimable: list[NonEstimableRecord] = Field(default_factory=list)
@@ -180,6 +264,10 @@ __all__ = [
     "FieldClassification",
     "CityGap",
     "GapManifest",
+    "FieldDecomposition",
+    "StructuredLookupResult",
+    "BenchmarkExcerptRecord",
+    "Phase1Artefacts",
     "WebFinding",
     "SearchBatch",
     "FreshnessResult",
@@ -190,5 +278,7 @@ __all__ = [
     "EnrichmentMeta",
     "EnrichmentBundle",
     "_GapManifestEnvelope",
+    "_FieldDecompositionEnvelope",
+    "_CityGapsEnvelope",
     "_AssumptionsEnvelope",
 ]

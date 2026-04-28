@@ -19,7 +19,15 @@ from backend.modules.web_researcher.context_merger import (
     serialize_enrichment_artifacts,
 )
 from backend.modules.web_researcher.freshness import check_freshness
-from backend.modules.web_researcher.gap_analysis import run_gap_analysis
+from backend.modules.web_researcher.gap_analysis import (
+    decompose_fields,
+    detect_city_gaps,
+    run_gap_analysis,
+)
+from backend.modules.web_researcher.phase1_fanout import (
+    merge_phase1_into_bundle,
+    run_phase1_fanout,
+)
 from backend.modules.web_researcher.search_planner import plan_searches
 from backend.modules.web_researcher.search_worker import execute_search_batches
 from backend.services.progress_tracker import ProgressTracker
@@ -46,12 +54,37 @@ def run_enrichment_pipeline(
     start_time = time.monotonic()
 
     try:
-        # Step 5: Gap Analysis
+        # Step 5: Gap Analysis (split flow: Phase 0 → Phase 1 fan-out → Phase 2)
         if progress:
             progress.start_step("gap_analysis", "Analyzing data gaps")
             progress.add_item("gap_analysis", "Classifying fields and detecting gaps...")
         logger.info("Enrichment pipeline: starting gap analysis.")
-        gap_manifest = run_gap_analysis(question, context_bundle, config, api_key)
+
+        if config.enrichment.use_split_gap_flow:
+            # Phase 0: decompose without context.
+            decomposition = decompose_fields(question, config, api_key)
+            if progress:
+                progress.add_item(
+                    "gap_analysis",
+                    f"{len(decomposition.query_fields)} fields decomposed",
+                )
+            # Phase 1: gather local structured + benchmark data.
+            phase1_artefacts = run_phase1_fanout(decomposition, context_bundle)
+            context_bundle = merge_phase1_into_bundle(context_bundle, phase1_artefacts)
+            if progress:
+                progress.add_item(
+                    "gap_analysis",
+                    "Phase 1 local data: "
+                    f"{len(phase1_artefacts.structured_lookups)} lookup results, "
+                    f"{len(phase1_artefacts.benchmark_excerpts)} benchmark excerpts",
+                )
+            # Phase 2: per-city gap detection against the enriched bundle.
+            gap_manifest = detect_city_gaps(
+                question, decomposition, context_bundle, config, api_key
+            )
+        else:
+            # Legacy single-pass flow.
+            gap_manifest = run_gap_analysis(question, context_bundle, config, api_key)
 
         if progress:
             # Show each field with its classification

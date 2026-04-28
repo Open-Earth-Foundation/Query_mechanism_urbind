@@ -1,0 +1,132 @@
+# URBIND data sources manifest.
+#
+# Declares every external data source the pipeline can consume and the
+# ingestions derived from each source.  Ingestions transform upstream
+# inputs into runtime artefacts (markdown, parquet lookups, vector
+# collections, allowlist yaml).
+#
+# Schema is defined by `backend.modules.sources.manifest`.  Per-ingestion
+# state (timestamps, hashes, counts) lives separately under `.state/sources/`
+# and is gitignored.
+#
+# Top-level shape:
+#   version: int
+#   sources: [SourceConfig]
+#
+# SourceConfig:
+#   id: str                    # stable handle
+#   name: str                  # human-readable
+#   provider: github | local
+#   repo: str | null           # required when provider=github (e.g. "Owner/Repo")
+#   pinned_commit: str | null  # full sha; bumped manually or by an update CLI
+#   license: str | null
+#   ingestions: [IngestionConfig]
+#
+# IngestionConfig:
+#   id: str                    # stable handle, unique across the manifest
+#   kind: markdown_corpus | structured_lookup | vector_collection | web_allowlist
+#   inputs:
+#     paths: [str]             # upstream-relative paths (file or directory)
+#     formats: [str]           # e.g. [pdf], [xlsx], [markdown]
+#     excludes: [str]          # optional, upstream-relative
+#   output:                    # kind-specific; flexible
+#     path: str | null
+#     naming: str | null
+#     chroma_persist_path: str | null
+#     collection: str | null
+#   handler: str | null        # dotted python path to ingestion handler
+#   converter: str | null      # tool used (e.g. pymupdf4llm)
+#   embedder: str | null       # for vector_collection
+#   consumed_by: str | null    # runtime module that reads the artefact
+#   coverage:                  # kind-specific shape; describes what this source covers
+#     cities: [str] | null
+#     country: str | null
+#     countries: [str] | null
+#     fields: [str] | null
+#     scope: [str] | null
+
+version: 1
+sources:
+  - id: urbind_additional
+    name: URBIND Additional Documentation
+    provider: github
+    repo: Open-Earth-Foundation/urbind-additional-documentation
+    pinned_commit: c0a3993583068b73f57f1ad99023eb7727a4de14
+    license: see-upstream
+    ingestions:
+
+      # ─── Per-city PDFs → markdown beside CCCs ──────────────────────
+      - id: urbind_tier1_cities
+        kind: markdown_corpus
+        inputs:
+          paths: [tier-1-city-plans/]
+          formats: [pdf]
+        output:
+          path: documents/additional/
+          # Subdirectory per doc so filename stem stays equal to the city,
+          # which is what the markdown researcher matches against.
+          naming: "{city}_{slug}/{city}.md"
+        handler: ingest.pdf_to_markdown
+        converter: pymupdf4llm
+        consumed_by: markdown_researcher
+        coverage:
+          cities: [aachen, dresden, klagenfurt, leipzig, munich]
+
+      # ─── Cross-cutting PDFs → benchmark Chroma collection ──────────
+      # Tiers 2/3/4/5 cover national/European/think-tank/EU-programme
+      # material that is not per-city, so it goes into a *separate*
+      # Chroma persist path + collection from the existing CCC index.
+      - id: urbind_benchmarks
+        kind: vector_collection
+        inputs:
+          paths:
+            - tier-2-national-datasets/
+            - tier-3-european-databases/
+            - tier-4-think-tanks/
+            - tier-5-eu-programmes/
+          excludes:
+            - tier-2-national-datasets/bundesnetzagentur-ladesaeulenregister.xlsx
+            - tier-5-eu-programmes/web-platforms-index.md
+          formats: [pdf]
+        output:
+          chroma_persist_path: .chroma/benchmarks/
+          collection: urbind_benchmarks
+        handler: ingest.pdf_to_vector
+        converter: pymupdf4llm
+        embedder: text-embedding-3-large
+        consumed_by: vector_store.benchmark_retriever
+        coverage:
+          scope: [german_national, european, methodology, eu_programmes]
+
+      # ─── Bundesnetzagentur charging-station registry → parquet ─────
+      - id: bnetza_chargers
+        kind: structured_lookup
+        inputs:
+          paths: [tier-2-national-datasets/bundesnetzagentur-ladesaeulenregister.xlsx]
+          formats: [xlsx]
+        output:
+          path: data/lookups/bnetza_chargers.parquet
+        handler: ingest.bnetza_etl
+        consumed_by: web_researcher.data_lookups.bnetza
+        coverage:
+          country: DE
+          fields:
+            - public_ac_charger_count
+            - public_dc_charger_count
+            - public_charger_count
+            - charger_kw_total
+
+      # ─── Tier-1 web allowlist (curated, validated against upstream) ─
+      - id: urbind_web_allowlist
+        kind: web_allowlist
+        inputs:
+          paths:
+            - README.md
+            - tier-5-eu-programmes/web-platforms-index.md
+          formats: [markdown]
+        output:
+          path: backend/data/tier1_web_sources.yaml
+        handler: ingest.extract_web_allowlist
+        consumed_by: web_researcher.tier1_probe
+        # No structured coverage block here — coverage lives per-entry in
+        # the generated allowlist yaml.

@@ -109,9 +109,10 @@ Organize the output into the following sections. **Omit any section entirely (no
 - Condition: `enrichment` is present.
 - Comprehensive list of all sources used, tagged by type:
   - `[CCC]` — from `markdown.excerpts[].ref_id`
-  - `[Web]` — from `web_findings[].source_url`
-  - `[Estimate]` — from `assumptions[].reference_data`
-- Format: `[Tag] ref_id or URL — brief description`
+  - `[Tier-1]` — from `enriched_fields[]` whose `source_tier == "tier1"` or `assumptions[]` whose `method_used == "structured_lookup"`. Use `provenance.source_name` (or `extra.source_name` for assumptions) as the display label.
+  - `[Web]` — from `web_findings[].source_url` whose `source_tier == "open"` (or null)
+  - `[Estimate]` — from `assumptions[].reference_data` whose `method_used != "structured_lookup"`
+- Format: `[Tag] name or URL — brief description`
 
 **12. Cities considered:** *(system-generated — do NOT produce this section)*
 - This section is appended automatically by the system. Do not generate it yourself.
@@ -129,6 +130,10 @@ Content quality requirements:
 - If `context_bundle.markdown.status="success"` and `context_bundle.markdown.error` is non-null, include a brief limitation note.
 - For missing numeric values, do not estimate; explicitly say exact figures are unavailable.
 - Never expose implementation details (chunk mechanics, tool internals).
+
+Attribution rules:
+- When an `enriched_fields[]` entry has `source_tier == "tier1"` or its `provenance.source_name` is set, attribute the value inline by name on first mention (e.g. "159 DC chargers (per Bundesnetzagentur Ladesäulenkarte)"). Do not invent a name when only `source_id` is known and `provenance.source_name` is absent.
+- When an `assumptions[]` record has `method_used == "structured_lookup"`, present its value as observed (not estimated) and attribute by `reference_data` or `extra.source_name`.
 
 Enrichment-specific rules (apply when `context_bundle.enrichment` is present):
 - Label each assumption with: `(estimated; method: <method_used>, confidence: <confidence>, range: <low>–<high>)`.

@@ -21,7 +21,7 @@ Input is a JSON object with:
 - `reconsideration` (object, optional): previous answer + missing cities (use `context_bundle` to find their excerpts)
 - `context_bundle.enrichment` (object, optional): automated gap analysis, web findings, and assumption estimates
   - `gap_manifest` (object): `query_fields[]` with classification/rationale, `city_gaps[]` with blank/stale fields, `non_estimable_fields[]`
-  - `enriched_fields` (list): per city-field entries with `status` (resolved | partially_resolved | still_missing), `value`, `source` (ccc | web | estimated | none), `provenance`, `freshness_flag`
+  - `enriched_fields` (list): per city-field entries with `status` (resolved | partially_resolved | still_missing), `value`, `source` (ccc | web | estimated | none), `source_id` (handle into the manifest / tier-1 allowlist when known), `source_tier` (`tier1` | `open` | null), `provenance` (may include `source_name`), `freshness_flag`
   - `assumptions` (list): model-estimated values with `city`, `field_name`, `method_used`, `estimate` (low/mid/high), `confidence`, `reference_data`, `rationale`, `basis`
   - `non_estimable` (list): gaps that could not be estimated, with `city`, `field_name`, `explanation`, `recommendation` (Door Opener)
   - `web_findings` (list): values found via web research with `city`, `field`, `value`, `unit`, `source_url`, `source_type`, `source_date`, `extraction_confidence`
@@ -107,9 +107,10 @@ Organize the output into the following sections. **Omit any section entirely (no
 - Condition: `enrichment` is present.
 - Comprehensive list of all sources used, tagged by type:
   - `[CCC]` — from `markdown.excerpts[].ref_id`
-  - `[Web]` — from `web_findings[].source_url`
-  - `[Estimate]` — from `assumptions[].reference_data`
-- Format: `[Tag] ref_id or URL — brief description`
+  - `[Tier-1]` — from `enriched_fields[]` whose `source_tier == "tier1"` or `assumptions[]` whose `method_used == "structured_lookup"`. Use `provenance.source_name` (or `extra.source_name` for assumptions) as the display label.
+  - `[Web]` — from `web_findings[].source_url` whose `source_tier == "open"` (or null)
+  - `[Estimate]` — from `assumptions[].reference_data` whose `method_used != "structured_lookup"`
+- Format: `[Tag] name or URL — brief description`
 
 **12. Cities considered:** *(system-generated — do NOT produce this section)*
 - This section is appended automatically by the system. Do not generate it yourself.
@@ -131,6 +132,10 @@ Content quality requirements:
   - Keep observed totals and assumption-based totals separate.
 - If fewer than 2 cities have numeric evidence for that metric, do not estimate; state that evidence is insufficient.
 - Never expose implementation details (chunk mechanics, tool internals).
+
+Attribution rules:
+- When an `enriched_fields[]` entry has `source_tier == "tier1"` or its `provenance.source_name` is set, attribute the value inline by name on first mention (e.g. "159 DC chargers (per Bundesnetzagentur Ladesäulenkarte)"). Do not invent a name when only `source_id` is known and `provenance.source_name` is absent.
+- When an `assumptions[]` record has `method_used == "structured_lookup"`, present its value as observed (not estimated) and attribute by `reference_data` or `extra.source_name`.
 
 Enrichment-specific rules (apply when `context_bundle.enrichment` is present):
 - Label each assumption with: `(estimated; method: <method_used>, confidence: <confidence>, range: <low>–<high>)`.

@@ -34,6 +34,58 @@ def _ensure_resolved_has_value(ef: EnrichedField) -> EnrichedField:
     return ef
 
 
+def _build_source_name_index() -> dict[str, str]:
+    """Map ``source_id`` → human-readable name from the manifest + allowlist.
+
+    Best-effort: returns an empty dict when neither file is present yet so
+    runs without any ingestion still work.  The lookup is small and is
+    rebuilt per ``compute_field_statuses`` call (not hot enough to cache).
+    """
+    name_index: dict[str, str] = {}
+
+    try:  # noqa: SIM105 — keep failures isolated to each loader
+        from backend.modules.web_researcher.tier1_web import (
+            load_tier1_web_allowlist,
+        )
+
+        allowlist = load_tier1_web_allowlist()
+    except Exception:  # noqa: BLE001
+        allowlist = None
+
+    if allowlist is not None:
+        for source in allowlist.sources:
+            if source.id and source.name:
+                name_index[source.id] = source.name
+
+    try:
+        from backend.modules.sources.manifest import load_manifest
+
+        manifest = load_manifest()
+    except Exception:  # noqa: BLE001
+        manifest = None
+
+    if manifest is not None:
+        for source in manifest.sources:
+            if source.id and source.name and source.id not in name_index:
+                name_index[source.id] = source.name
+
+    return name_index
+
+
+def _attach_source_name(
+    provenance: dict[str, object], source_id: str | None, name_index: dict[str, str]
+) -> dict[str, object]:
+    """Return a new provenance dict with ``source_name`` populated when known."""
+    if not source_id:
+        return provenance
+    name = name_index.get(source_id)
+    if not name:
+        return provenance
+    enriched = dict(provenance)
+    enriched["source_name"] = name
+    return enriched
+
+
 def compute_field_statuses(
     gap_manifest: GapManifest,
     web_findings: list[WebFinding],
@@ -65,6 +117,11 @@ def compute_field_statuses(
     for fr in freshness_results:
         freshness_index[(fr.city.lower(), fr.field.lower())] = fr
 
+    # Source-id → human-readable name lookup, populated from the manifest +
+    # tier-1 allowlist when present.  Used to enrich provenance so the
+    # writer can attribute by name without re-resolving ids itself.
+    source_name_index = _build_source_name_index()
+
     enriched_fields: list[EnrichedField] = []
 
     for city_gap in gap_manifest.city_gaps:
@@ -93,12 +150,18 @@ def compute_field_statuses(
                         status="resolved",
                         value=wf.value,
                         source="web",
-                        provenance={
-                            "source_url": wf.source_url,
-                            "source_type": wf.source_type,
-                            "source_date": wf.source_date,
-                            "extraction_confidence": wf.extraction_confidence,
-                        },
+                        source_id=wf.source_id,
+                        source_tier=wf.source_tier,
+                        provenance=_attach_source_name(
+                            {
+                                "source_url": wf.source_url,
+                                "source_type": wf.source_type,
+                                "source_date": wf.source_date,
+                                "extraction_confidence": wf.extraction_confidence,
+                            },
+                            wf.source_id,
+                            source_name_index,
+                        ),
                         freshness_flag="superseded",
                     )
                 elif fr.classification == "consistent":
@@ -108,7 +171,13 @@ def compute_field_statuses(
                         status="resolved",
                         value=fr.ccc_value or wf.value,
                         source="ccc",
-                        provenance={"confirmed_by_web": wf.source_url},
+                        source_id=wf.source_id,
+                        source_tier=wf.source_tier,
+                        provenance=_attach_source_name(
+                            {"confirmed_by_web": wf.source_url},
+                            wf.source_id,
+                            source_name_index,
+                        ),
                         freshness_flag="consistent",
                     )
                 else:  # uncertain
@@ -118,10 +187,18 @@ def compute_field_statuses(
                         status="partially_resolved",
                         value=fr.ccc_value,
                         source="ccc",
-                        provenance={
-                            "web_alternative": wf.source_url,
-                            "web_value": str(wf.value) if wf.value is not None else None,
-                        },
+                        source_id=wf.source_id,
+                        source_tier=wf.source_tier,
+                        provenance=_attach_source_name(
+                            {
+                                "web_alternative": wf.source_url,
+                                "web_value": (
+                                    str(wf.value) if wf.value is not None else None
+                                ),
+                            },
+                            wf.source_id,
+                            source_name_index,
+                        ),
                         freshness_flag="uncertain",
                     )
                 enriched_fields.append(_ensure_resolved_has_value(ef))
@@ -133,11 +210,17 @@ def compute_field_statuses(
                     status="resolved",
                     value=wf.value,
                     source="web",
-                    provenance={
-                        "source_url": wf.source_url,
-                        "source_type": wf.source_type,
-                        "extraction_confidence": wf.extraction_confidence,
-                    },
+                    source_id=wf.source_id,
+                    source_tier=wf.source_tier,
+                    provenance=_attach_source_name(
+                        {
+                            "source_url": wf.source_url,
+                            "source_type": wf.source_type,
+                            "extraction_confidence": wf.extraction_confidence,
+                        },
+                        wf.source_id,
+                        source_name_index,
+                    ),
                 )
                 enriched_fields.append(_ensure_resolved_has_value(ef))
             elif field in city_gap.stale_flags and field not in city_gap.blank_fields:

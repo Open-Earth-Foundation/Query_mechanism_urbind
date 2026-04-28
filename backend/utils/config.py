@@ -96,6 +96,18 @@ class EnrichmentConfig(AgentConfig):
     """Config for web research enrichment and assumptions modelling layer."""
 
     enabled: bool = False
+    # Use the two-phase gap analyst (decompose → Phase 1 fan-out → detect)
+    # instead of the legacy single-pass run_gap_analysis.  Disabled by
+    # default so existing pipelines keep their current behaviour until
+    # opted in.
+    use_split_gap_flow: bool = False
+    # Have the search worker run site:<domain> queries against the curated
+    # tier-1 web allowlist before falling through to open Serper.  Off by
+    # default so existing pipelines keep current behaviour.
+    tier1_first_search: bool = False
+    # Confidence threshold above which a tier-1 finding is treated as
+    # "good enough" to skip the open Serper pass for that (city, field).
+    tier1_confidence_threshold: float = 0.6
     # Web research sub-config
     web_research_enabled: bool = False
     max_workers: int = 6
