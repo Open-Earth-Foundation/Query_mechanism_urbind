@@ -20,6 +20,7 @@ from backend.modules.orchestrator.agent import refine_research_question
 from backend.modules.orchestrator.utils.references import build_markdown_references
 from backend.modules.vector_store.retriever import (
     as_markdown_documents,
+    build_retrieval_artifact,
     list_indexed_city_names,
     retrieve_chunks_for_queries,
 )
@@ -187,25 +188,13 @@ def _load_followup_documents(
             selected_cities=[target_city],
         )
         documents = as_markdown_documents(chunks)
-        retrieval_payload = {
-            "research_question": research_question,
-            "queries": retrieval_queries,
-            "selected_cities": [target_city],
-            "retrieved_count": len(chunks),
-            "meta": retrieval_meta,
-            "chunks": [
-                {
-                    "chunk_id": chunk.chunk_id,
-                    "city_name": chunk.city_name,
-                    "city_key": str(chunk.metadata.get("city_key", "")),
-                    "source_path": chunk.source_path,
-                    "heading_path": chunk.heading_path,
-                    "block_type": chunk.block_type,
-                    "distance": chunk.distance,
-                }
-                for chunk in chunks
-            ],
-        }
+        retrieval_payload = build_retrieval_artifact(
+            queries=retrieval_queries,
+            selected_cities=[target_city],
+            final_chunks=chunks,
+            retrieval_meta=retrieval_meta,
+        )
+        retrieval_payload["research_question"] = research_question
         return documents, retrieval_payload, "vector_store_retrieval"
 
     documents = load_markdown_documents(
@@ -283,7 +272,6 @@ def _persist_followup_result(
         "target_city": target_city,
         "research_question": research_question,
         "retrieval_queries": retrieval_queries,
-        "sql": None,
         "final": None,
         "analysis_mode": "aggregate",
         "markdown": markdown_bundle,

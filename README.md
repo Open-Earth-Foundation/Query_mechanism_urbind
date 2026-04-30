@@ -1,12 +1,11 @@
 # Query Mechanism Urbind
 
-Multi-agent document builder that answers user questions by combining SQL data (optional; disabled by default) and Markdown sources. It orchestrates a SQL Researcher, Markdown Researcher, and Writer with OpenAI Agents, and logs every run artifact for inspection.
+Multi-agent document builder that answers user questions from Markdown sources. It orchestrates research-question refinement, markdown extraction, and writing with OpenAI Agents, and logs every run artifact for inspection.
 
 ## Requirements
 
 - Python 3.11+
 - Node.js 20+ (frontend)
-- Local SQLite source DB derived from `backend/db_models/` (required only when SQL is enabled)
 - `OPENROUTER_API_KEY` in environment
 
 ## Install
@@ -35,6 +34,28 @@ The `uv.lock` file is committed to ensure reproducible builds.
 
 - `llm_config.yaml` stores model names and settings.
 - Markdown researcher batching knobs are configured in `llm_config.yaml` under `markdown_researcher` (`batch_max_chunks`, `batch_max_input_tokens`, `batch_overhead_tokens`).
+- Initiative extraction knobs are configured in `llm_config.yaml` under `initiative_extractor`
+  (`max_segment_tokens`, `segment_overlap_lines`, `max_workers`,
+  `prior_initiatives_max_tokens`, `action_heavy_initiative_threshold`,
+  `action_heavy_max_followup_calls`). The default extraction budget sends up to
+  `20,000` source segment tokens and `10,000` prior-initiative tokens. This
+  artifact-first extractor uses bounded ordered segments and does not perform TEF
+  classification or database writes. When
+  `prior_initiatives_max_tokens` is greater than zero, segments are processed in order so each LLM
+  call can see a token-capped list of already extracted canonical initiatives and avoid duplicates.
+  Initiative extraction does not split segments again based on how many initiatives the model returns;
+  if a segment returns more than the action-heavy threshold, follow-up calls reuse the same source
+  segment and show only initiatives already extracted from that segment until the model stops.
+  `semantic_dedupe_enabled` defaults to on and runs the only persisted merge pass over
+  candidate records so initiatives are merged when they describe the same real-world action.
+- TEF mapping knobs are configured in `llm_config.yaml` under `tef_mapper`
+  (`max_workers`, `review_confidence_threshold`, `close_alternative_delta`,
+  `min_transition_confidence`, `numeric_unit_classifier_enabled`). The mapper is JSON-only: it
+  reads initiative extraction artifacts, runs sector, category, Transition Element, and optional
+  numeric-unit classification passes with stage-scoped prompts and four catalog JSON files, and
+  writes mapping artifacts without database writes or an LLM review pass. TEF sector,
+  subcategory, and subsubcategory catalog cards include prompt-ready routing definitions,
+  positive use signals, and avoid rules so the category router can compare sibling branches.
 - Retry policy is centralized in top-level `retry` in `llm_config.yaml` (`max_attempts`, `backoff_base_seconds`, `backoff_max_seconds`) and is shared across retry/backoff behavior for LLM calls and related operations.
 - Agent turn limits are configured per agent via `max_turns` (for example `markdown_researcher.max_turns`, `writer.max_turns`).
 - Writer prompt sizing and fallback batching are configured in `llm_config.yaml` under `writer` (`multi_pass_threshold_tokens`, `multi_pass_chunk_tokens`).
@@ -46,51 +67,50 @@ The `uv.lock` file is committed to ensure reproducible builds.
 Environment variables (`.env`):
 
 - `OPENROUTER_API_KEY` (required): API key used for all LLM calls via OpenRouter.
-- `ENABLE_SQL` (optional, default `false`): enables SQL mode by default for pipeline runs.
-- `DATABASE_URL` (optional): Postgres source database URL. When set, it is used instead of SQLite (`SOURCE_DB_PATH`). Also used by `python -m backend.scripts.test_db_connection`.
-- `SOURCE_DB_PATH` (optional, default `data/source.db`): SQLite source DB path used when `DATABASE_URL` is not set.
-- `MARKDOWN_DIR` (optional, default `documents`): default directory scanned for markdown files.
+- `MARKDOWN_DIR` (optional, default `documents`): default directory scanned for top-level city markdown files. Runtime markdown discovery ignores subfolders under this directory.
 - `RUNS_DIR` (optional, default `output`): base directory for run artifacts.
-- `API_CHAT_JOB_WORKERS` (optional, default `1`): dedicated worker count for async split-mode chat jobs.
 - `LOG_LEVEL` (optional, default `INFO`): logging verbosity (`DEBUG`, `INFO`, `WARNING`, `ERROR`).
-- `OPENROUTER_BASE_URL` (optional, default `https://openrouter.ai/api/v1`): custom OpenRouter-compatible base URL.
+- `OPENROUTER_BASE_URL` (optional, default `https://openrouter.ai/api/v1`): override for OpenRouter-compatible backends.
 - `LLM_CONFIG_PATH` (optional, default `llm_config.yaml`): API config file path.
 - `CITY_GROUPS_PATH` (optional, default `backend/api/assets/city_groups.json`): city groups catalog JSON path.
-
-Chat prompt sizing, follow-up router history and excerpt caps, retry backoff, and provider timeouts now come from `llm_config.yaml`.
 - `VECTOR_STORE_ENABLED` (optional, default `false`): enables local Chroma markdown indexing flows.
 - `ANONYMIZED_TELEMETRY` (optional, default `FALSE`): disables Chroma anonymized telemetry when set to `FALSE`.
 - `CHROMA_PERSIST_PATH` (optional, default `.chroma`): local Chroma persistence directory.
 - `CHROMA_COLLECTION_NAME` (optional, default `markdown_chunks`): Chroma collection used for markdown chunks.
-- Vector-store embedding and retrieval tuning is configured in `llm_config.yaml` under `vector_store.*` (for example `embedding_model`, `embedding_max_input_tokens`, `retrieval_max_distance`, `auto_update_on_run`, `index_manifest_path`).
 
-CLI flags override `.env` values for a given run (for example `--db-path`, `--db-url`, `--markdown-path`, `--enable-sql`).
+Chat prompt sizing, follow-up router history and excerpt caps, retry backoff, provider timeouts, and vector-store retrieval tuning all come from `llm_config.yaml`.
+CLI flags override `.env` values for a given run (for example `--markdown-path`).
 Use `--city` (repeatable) to load markdown only for selected city files. City filters are normalized case-insensitively to backend `city_key` values (for example `Munich`, `MUNICH`, and `munich` all resolve to `munich`).
 
 Example `.env.example` is provided. Use `llm_config.yaml` as the source of truth for vector-store and markdown batching tuning.
 
 Default output directory is `output/` (unless overridden by `RUNS_DIR`).
-Schema summary for SQL generation is derived from `backend/db_models/`.
 
 ### Vector retrieval sizing and thresholds
 
 When vector retrieval is enabled, retrieval runs per city and per query (original + refined variants), then merges and expands context.
 
-- For each (city × query), the retriever:
+- For each (city x query), the retriever:
   - fetches up to `vector_store.retrieval_max_chunks_per_city_query` candidates from Chroma (ranked by increasing distance);
   - if `vector_store.retrieval_max_distance` is set, it first keeps only candidates with `distance <= cutoff`;
   - if fewer than `vector_store.retrieval_fallback_min_chunks_per_city_query` pass the cutoff, it **tops up** with the next-best candidates (above the cutoff) until it reaches the fallback minimum (or runs out of candidates).
-- After per-(city × query) retrieval:
-  - results are merged across queries within a city (dedupe by `chunk_id`, keep the smallest distance);
+- After per-(city x query) retrieval:
+  - results are merged across queries within a city (dedupe by `chunk_id`, keep the smallest distance as chunk distance metadata);
   - neighbor chunks are added by `chunk_index` window (same file/city);
   - optionally, `vector_store.retrieval_max_chunks_per_city` caps the final chunks per city after merge + neighbor expansion.
+- Retrieval artifacts now persist both layers explicitly:
+  - `seed_chunks[]` = unique direct hits before neighbor expansion and before per-city caps;
+  - `chunks[]` = the final delivered context after neighbor expansion and caps.
+- Strict Stage A benchmark metrics must use `seed_chunks[]`, not `chunks[]`.
+- Every serialized retrieval chunk now includes `chunk_index` plus `provenance`
+  (`origin`, `selection_mode`, `seed_rank`, `seed_query_ids`, `expanded_from_chunk_ids`).
 - `vector_store.retrieval_max_distance` is the strictness control:
   - smaller value = stricter matching, fewer chunks;
   - larger value = higher recall, more chunks.
 
-Important distinction between the “max” knobs:
+Important distinction between the "max" knobs:
 
-- `vector_store.retrieval_max_chunks_per_city_query` controls the **candidate pool size per (city × query)** _before_ distance filtering/top-up.
+- `vector_store.retrieval_max_chunks_per_city_query` controls the **candidate pool size per (city x query)** _before_ distance filtering/top-up.
   - If this is too small, you may not have enough candidates to top up to the fallback minimum.
 - `vector_store.retrieval_max_chunks_per_city` controls the **final per-city cap** _after_ query-merge and neighbor expansion.
   - Use it as a latency/cost guardrail; setting it too low can drop context neighbors or even primary hits with weaker distances.
@@ -100,15 +120,6 @@ Distance scale note:
 - Do not assume distance is always in `[0, 1]`. It depends on collection metric and embedding characteristics.
 - `0` means identical vectors; values above `0` are increasingly dissimilar.
 - A cutoff of `0` is the strictest setting and usually returns very few (often zero) chunks, not all chunks.
-
-How to estimate chunk counts:
-
-- **Minimum (practical):**
-  - per (city × query): approximately `min(vector_store.retrieval_fallback_min_chunks_per_city_query, available_chunks_total)`, before merge/neighbor expansion.
-- **Maximum (practical):**
-  - per (city × query): `vector_store.retrieval_max_chunks_per_city_query`, before merge/neighbor expansion;
-  - bounded by `vector_store.retrieval_max_chunks_per_city` if set;
-  - otherwise depends on distance cutoff + number of merged queries + neighbor expansion windows.
 
 Recommended tuning workflow:
 
@@ -133,65 +144,11 @@ If key authentication fails:
 - chat endpoints return `401` with a key-specific message
 - UI surfaces the error so backend credentials can be fixed and the run retried.
 
-Example `llm_config.yaml`:
-
-```
-orchestrator:
-  model: "moonshotai/kimi-k2.5"
-  temperature: 0.0
-  context_bundle_name: "context_bundle.json"
-  context_window_tokens: 256000
-  input_token_reserve: 2000
-sql_researcher:
-  model: "moonshotai/kimi-k2.5"
-  temperature: 0.0
-  max_result_tokens: 100000
-  context_window_tokens: 256000
-  input_token_reserve: 2000
-markdown_researcher:
-  model: "openai/gpt-5-mini"
-  temperature: 0.0
-  # Optional Grok-only setting. Unsupported models/providers may reject requests.
-  # reasoning_effort: "none"
-  context_window_tokens: 400000
-  input_token_reserve: 2000
-  max_turns: 10
-  max_chunk_tokens: 120000
-  chunk_overlap_tokens: 200
-  batch_max_chunks: 32
-  batch_max_input_tokens: null
-  batch_overhead_tokens: 600
-  max_workers: 8
-writer:
-  model: "moonshotai/kimi-k2.5"
-  temperature: 0.0
-  context_window_tokens: 256000
-  input_token_reserve: 2000
-chat:
-  model: "openai/gpt-5.2"
-  temperature: 0.0
-  context_window_tokens: 400000
-  input_token_reserve: 20000
-  max_history_messages: 24
-  followup_search_enabled: false
-  max_auto_followup_bundles: 3
-  followup_router_max_history_messages: 6
-  followup_router_max_excerpts_per_source: 50
-assumptions_reviewer:
-  model: "openai/gpt-5.2"
-  temperature: 0.0
-  max_output_tokens: 8000
-retry:
-  max_attempts: 5
-  backoff_base_seconds: 0.8
-  backoff_max_seconds: 8.0
-openrouter_base_url: "https://openrouter.ai/api/v1"
-enable_sql: false
-```
+See the checked-in example config at [`llm_config.yaml`](llm_config.yaml).
 
 ### How token and size limits are applied
 
-Shared input-budget logic (used by orchestrator, SQL researcher, markdown researcher, and writer):
+Shared input-budget logic (used by orchestrator, markdown researcher, and writer):
 
 ```text
 if max_input_tokens is set:
@@ -210,7 +167,6 @@ What each key controls:
 - `input_token_reserve`: Safety margin kept free for system/tool overhead; subtracted from the available input budget.
 - `max_output_tokens`: Output cap (when set) and also subtracted from input budget.
 - `max_input_tokens`: Hard override for input budget; if set, it takes precedence over the formula above.
-- `sql_researcher.max_result_tokens`: Hard cap for SQL rows included in the capped SQL bundle passed downstream.
 - `markdown_researcher.max_chunk_tokens`: Hard cap for each markdown chunk size.
 - `markdown_researcher.chunk_overlap_tokens`: Token overlap between neighboring chunks.
 - `markdown_researcher.max_turns`: Max LLM turns per markdown batch extraction call.
@@ -223,16 +179,15 @@ What each key controls:
 
 How this influences runtime behavior:
 
-- SQL results are token-capped in `cap_results()`. Once the cap is hit, remaining rows are excluded from the capped payload.
-- SQL truncation is recorded as `truncation_applied` in the SQL bundle and `truncated` in SQL result items.
-- Full SQL output is still written to `output/<run_id>/sql/results_full.json`; capped SQL is written to `output/<run_id>/sql/results.json`.
 - Markdown content is chunked first, then batched by token budget. Chunks larger than the current batch budget are skipped.
+- Each original markdown batch gets `retry.max_attempts` total tries.
+- If an original markdown batch still fails with a retryable markdown extraction error, only that failing batch is recursively halved up to two split rounds.
+- Each split child batch gets exactly one try; successful child branches are kept immediately, and only final failed leaves remain unresolved.
 - Oversized markdown files are skipped when they exceed `max_file_bytes`.
 
 Visibility and warnings:
 
 - Markdown budget/file skips emit warnings in logs.
-- SQL token-cap truncation currently does not emit a dedicated warning line; detect it via `truncation_applied`/`truncated` and by comparing `sql/results.json` vs `sql/results_full.json`.
 
 ## Run (local)
 
@@ -258,17 +213,142 @@ python -m backend.scripts.run_pipeline --question "What initiatives exist for Mu
   --no-log-llm-payload
 ```
 
-Enable SQL (SQLite):
+Extract city initiatives into inspectable JSONL artifacts without TEF classification:
 
 ```
-python -m backend.scripts.run_pipeline --enable-sql --question "What initiatives exist for Munich?" \
-  --db-path path/to/source.db \
-  --markdown-path documents
+python -m backend.scripts.extract_initiatives --markdown-path documents --city Krakow
 ```
 
-## Happy-path workflow (no SQL)
+The extractor writes to `output/initiative_extraction/<run_id>/` with source manifests, line-aware
+segments, raw per-segment extractions, candidate records, semantic duplicate groups, final
+deduplicated initiatives, review items, and a summary. `03_deduped/initiatives.jsonl` contains only
+the agreed canonical v1 initiative shape from `plan.md`; generated ids and quote-only audit
+citations are kept separately in `03_deduped/initiative_records.jsonl` for downstream mapping. Use
+`--run-id`, `--output-dir`, `--max-workers`, and `--log-llm-payload` to override run naming,
+artifact location, concurrency, and
+payload logging. `--max-workers` only affects extraction when prior-initiative context is disabled in
+config. The canonical `city` field and structured source references are assigned from source
+segment metadata, not inferred by the LLM. The LLM returns only `source_quote` for citation text.
 
-High-level flow from user input to final output text when `ENABLE_SQL=false`:
+Run initiative extraction and TEF mapping as one artifact pipeline:
+
+```
+python -m backend.scripts.map_initiatives_to_tef \
+  --markdown-path documents \
+  --city Krakow
+```
+
+By default, `map_initiatives_to_tef` first runs the initiative extractor and then maps the
+resulting `03_deduped/initiative_records.jsonl` to TEF targets. Omit `--city` to process all
+top-level Markdown city files discovered under `--markdown-path`; repeat `--city` to process a selected
+list. Use `--extraction-output-dir`, `--extraction-run-id`, and `--extraction-max-workers` to
+control the extraction stage separately from TEF mapper `--output-dir`, `--run-id`, and
+`--max-workers`.
+
+Run mapping only against an existing extraction artifact when needed:
+
+```
+python -m backend.scripts.map_initiatives_to_tef \
+  --mapping-only \
+  --extraction-run-dir output/initiative_extraction/five_cities_20260421_002 \
+  --city Krakow
+```
+
+The TEF mapper reads `03_deduped/initiative_records.jsonl` from an extraction run so it can use
+pipeline-generated record ids while keeping the canonical extraction file clean. It writes to
+`output/tef_mapping/<run_id>/` with source manifests, input initiative rows,
+sector routes, recursive category routes, Transition Element mapping outputs, final mappings,
+manual-review items, numeric facts, TEF-grouped initiatives, metric rollups, and a summary. It
+loads only the active stage prompt and the catalog slice for that pass. Router prompts ask the
+model to follow the initiative's main causal shift, not to make a smaller supporting component
+primary only because it is explicitly named. Category routing continues through child categories
+before Transition Element matching, so parent categories that also have direct Transition
+Elements do not stop the route early. If the selected TEF leaf has no Transition Elements, the
+final mapping uses `target_type: "subcategory"` and the selected TEF path as `target_id`.
+The same subcategory fallback is used when the transition mapper finds no exact Transition
+Element match. A successful initiative mapping never drops the initiative solely because the TEF
+catalog has no precise Transition Element for it. If a category route returns a descendant of the
+current direct-child candidate, the mapper normalizes it to that direct child for the current pass
+and emits a manual-review item. Sector paths are assigned from the TEF catalog after the model
+selects a sector key, so the sector router does not generate path fields. `source_quote` is copied
+through mapper input rows, final mappings, numeric facts, and TEF-grouped initiatives for
+search-back traceability, but sector/category/Transition Element mapper LLM passes do not receive
+it as classification evidence. When `tef_mapper.numeric_unit_classifier_enabled` is true, numeric
+facts use a constrained Pydantic LLM classifier to choose only the supported metric types, units,
+and aggregation methods before default rollups are written; invalid or failed classifications fall
+back to rule-based unit inference and are marked for review.
+
+Run the full Krakow TEF benchmark against the curated CCC source-truth mappings:
+
+```
+python -m backend.scripts.benchmark_krakow_tef_mapping --max-workers 3
+```
+
+The benchmark converts `backend/benchmarks/tef_mapping/krakow_source_truth/all_correct_initiatives_mapped_to_tef.json`
+into mapper-ready initiative records, runs the TEF mapper, and compares final mappings
+against source truth. Outputs are written under
+`output/tef_benchmarks/krakow_tef_mapping/<benchmark_id>/`, including
+`00_inputs/initiatives.jsonl`, the standard `01_tef_mapping/` mapper artifacts,
+`02_comparison/tef_benchmark_issues.json`, `02_comparison/tef_benchmark_report.md`,
+and `benchmark_summary.json`. Use `--limit N` for a smoke check before a full run.
+
+### Krakow TEF source-of-truth assets
+
+The curated source-of-truth files for the Krakow CCC manual-scan baseline live in
+`backend/benchmarks/tef_mapping/krakow_source_truth/`. This folder intentionally contains
+exactly two JSON files:
+
+- `all_correct_initiatives.json`: 58 Krakow CCC manual-scan source-of-truth initiatives
+  from `documents/Krakow.md`, Module B-2.2 outline of individual activities/actions/measures,
+  source lines `2590-4551`.
+- `all_correct_initiatives_mapped_to_tef.json`: the same 58 initiatives mapped to the
+  TEF framework.
+
+The initiative file comes from source run id `krakow_20260420` at
+`output/tef_mapping/krakow_20260420`. The mapped file comes from TEF mapping run id
+`krakow_manual_assets_tef_20260421_002` at
+`output/tef_mapping/krakow_manual_assets_tef_20260421_002`, using the mapper input
+adapted from `all_correct_initiatives.json`. The baseline is narrower than the later
+broader 98-record automated Krakow subset.
+
+Count scope: `Krakow=58`, with local-code prefixes `BIC=11`, `E=17`, `TR=16`,
+`GOZ=4`, and `I=10`. In the mapped file, all 58 initiatives have TEF mappings:
+78 final mapping rows, including 58 primary mapping rows. Those rows include 52
+Transition Element mappings and 26 TEF subcategory mappings. The mapped file also
+contains 100 review items, 66 mapping rows marked as needing review, 42 unique target
+ids, and 21 unique target paths.
+
+The benchmark audit records B-2.2 local-code coverage as complete, but does not treat
+the extraction as pixel-perfect for every source quantity or damaged Markdown section.
+Use `output/tef_mapping/krakow_20260420/extraction_benchmark_audit.md` for those
+precision caveats.
+
+TEF target fallback policy: use Transition Element mappings returned by the transition
+mapper. When the catalog has no Transition Elements or the transition mapper returns no
+exact Transition Element match, use the selected TEF subcategory path as the final
+target. Empty TEF targets are not allowed.
+
+The prompt-ready category guidance lives directly in `tef_mapping/catalog/subcategories.json`
+and `tef_mapping/catalog/subsubcategories.json`. Each category record carries its own
+`description` and `card_text`, including Routing Definition, Use This Category When, and
+Avoid This Category When sections. Transition Element candidate descriptions used by the
+mapper live in `tef_mapping/catalog/transition_elements.json`.
+
+Build or refresh numeric TEF rollups for an existing mapping run without LLM calls:
+
+```
+python -m backend.scripts.rollup_tef_numeric_facts \
+  --tef-run-dir output/tef_mapping/three_cities_tef_balanced_smoke_20260421_001 \
+  --extraction-run-dir output/initiative_extraction/three_cities_20260421_001
+```
+
+The rollup reads generated ids from `initiative_records.jsonl`, reads numbers only from the clean
+canonical `initiative` object inside each record, and writes `07_numeric_facts/` and
+`08_tef_groups/` artifacts.
+
+## Happy-path workflow
+
+High-level flow from user input to final output text:
 
 ```mermaid
 flowchart TD
@@ -331,7 +411,7 @@ Useful flags:
 - `--markdown-option 16:8 --markdown-option 32:4 --markdown-option 32:8` — run explicit markdown benchmark options (`batch_max_chunks:max_workers`).
 - The benchmark runs every question in the questions file; `--repetitions N` runs each question N times per mode and markdown option (total runs = questions × repetitions × modes × markdown_options).
 
-**Vector-only reproducibility (same query and same revised retrieval queries):** To run the vector strategy multiple times with the exact same question and the exact same refined retrieval queries (e.g. to check outcome stability):
+**Vector-only reproducibility (same query and same retrieval queries):** To run the vector strategy multiple times with the exact same question, canonical research query, and retrieval queries (e.g. to check outcome stability):
 
 1. Run the pipeline once to get a run with the desired question and cities, e.g. `python -m backend.scripts.run_pipeline --question "What does Aachen do for PV rooftop?" --city Aachen --markdown-path documents`. Note the run id and open `output/<run_id>/research_question.json`.
 2. Create a one-line questions file (e.g. `my_questions.txt`) containing exactly the `original_question` from that run.
@@ -342,7 +422,7 @@ Useful flags:
    python -m backend.scripts.run_retrieval_benchmark --questions-file my_questions.txt --query-overrides my_overrides.json --mode vector_store --repetitions 5 --city Aachen
    ```
 
-   Each run will use the same refined question and retrieval queries; only retrieval, extraction, and writing are re-executed. Compare `output/benchmarks/<benchmark_id>/runs/vector_store/*/final.md` (and optionally `retrieval.json`, `excerpts.json`) across repetitions.
+   Each run will use the same canonical research query and retrieval queries; only retrieval, extraction, and writing are re-executed. Compare `output/benchmarks/<benchmark_id>/runs/vector_store/*/final.md` (and optionally `retrieval.json`, `excerpts.json`) across repetitions.
 
 Benchmark behavior notes:
 
@@ -353,9 +433,33 @@ Benchmark behavior notes:
 - The script always loads benchmark env files from `backend/benchmarks/config/`.
 - The benchmark is runtime-only; it does not build/update the vector index.
 - Vector mode uses the existing default Chroma store/collection unless overridden in your main environment.
-- The benchmark also runs LLM-as-judge scoring (`openai/gpt-5.2`) per matched standard-vs-vector run pair within the same markdown option.
+- The benchmark also runs LLM-as-judge scoring (`openai/gpt-5.4-mini`) per matched standard-vs-vector run pair within the same markdown option.
 - The benchmark report includes speed metrics (`runtime`, `tokens/sec`) and LLM issue counters (rate limits, retries exhausted, max-turns, and non-working calls).
 - Individual run failures are recorded and counted (instead of aborting the full matrix); summaries include success rate and failed run count.
+
+### Speed / Chunk / Worker benchmark
+
+On March 30, 2026 we ran a stress comparison for the broad aggregate question
+`Aggregate and compare all EV charging and building retrofit initiatives with quantified targets and budgets.`
+under `output/benchmarks/full_retrieval_20260330_live/`.
+
+Standard chunking results for that question:
+
+- `b16_w8` (`batch_max_chunks=16`, `max_workers=8`): completed in about 17.6 minutes, used about 13.12M tokens, and writer citation coverage stopped at `94/102`.
+- `b32_w4` (`batch_max_chunks=32`, `max_workers=4`): completed in about 28.4 minutes, used about 13.14M tokens, and writer citation coverage reached `102/102`.
+- `b32_w8` (`batch_max_chunks=32`, `max_workers=8`): completed in about 14.6 minutes, used about 13.13M tokens, and writer citation coverage stopped at `40/102`.
+
+Interpretation:
+
+- `b32_w4` gave the best citation coverage in this broad aggregate benchmark.
+- `b32_w8` was much faster than `b32_w4`, but completeness was materially worse in that run.
+- `b16_w8` sat between them on speed and coverage.
+
+Current recommendation:
+
+- Keep the normal runtime configuration as it is today in `llm_config.yaml`: `batch_max_chunks=32` and `max_workers=8`.
+- We are not promoting `b32_w4` to the default from this benchmark alone, because normal runtime speed is also important and this benchmark is a heavy stress case rather than the only production workload.
+- Use `b32_w4` as a benchmark reference point when testing completeness on very broad aggregate questions.
 
 Outputs are written to `output/benchmarks/<benchmark_id>/`:
 
@@ -372,6 +476,54 @@ python -m backend.scripts.judge_final_outputs \
   --question "Compare charging and retrofit initiatives..."
 ```
 
+### Gold recall benchmark
+
+Use this benchmark to measure where information is lost across retrieval,
+markdown extraction, and final writing for a manually curated gold dataset.
+
+Command example:
+
+```
+python -m backend.scripts.benchmark_recall --gold-file tests/fixtures/benchmark_gold.json
+```
+
+Useful flags:
+
+- `--benchmark-id`: override the default UTC timestamp benchmark id.
+- `--output-dir output/benchmarks/recall`: change the benchmark output root.
+- `--config llm_config.yaml`: use a specific runtime config for live cases.
+- `--case-id <case_id>`: repeatable case filter.
+- `--log-llm-payload` / `--no-log-llm-payload`: toggle full LLM payload logging.
+
+Behavior notes:
+
+- This benchmark is not pairwise standard-vs-vector judging. It scores a single
+  run against gold chunks and gold facts.
+- Official Stage A metrics are strict seed retrieval:
+  `retrieval_recall`, `retrieval_precision`, and `mrr` are computed from
+  `retrieval.json.seed_chunks[]`.
+- `delivery_recall` and `delivery_precision` are supplemental metrics computed
+  from the final delivered `retrieval.json.chunks[]`.
+- The gold file schema is `{"version": 1, "cases": [...]}` with `case_id`,
+  `question`, `gold_chunk_ids`, `gold_facts`, `gold_city`, and optional
+  `selected_cities`, `gold_chunk_texts`, and `gold_chunk_alternatives`.
+- `gold_chunk_alternatives` stores accepted equivalent runtime chunks explicitly
+  as `{chunk_id, chunk_text}` objects, so the fixture keeps both the chunk
+  number/id and the chunk text in JSON.
+- `gold_chunk_texts` should store the canonical chunk text for each gold slot.
+  The scorer still supports containment fallback, but the fixture data should
+  keep the actual chunk text in JSON.
+- Stage B and Stage C fact verification use an LLM fact judge configured under
+  `benchmark_fact_judge` in `llm_config.yaml` (model, temperature,
+  `max_output_tokens`, `reasoning_effort`) to handle paraphrases.
+
+Outputs are written to `output/benchmarks/recall/<benchmark_id>/`:
+
+- `benchmark_report.json`: machine-readable per-case metrics, fact judgements,
+  and loss waterfalls.
+- `benchmark_report.md`: concise human-readable summary.
+- `runs/<case_id>/...`: live pipeline artifacts for each benchmark case.
+
 ## Run API (local)
 
 Start FastAPI backend:
@@ -380,20 +532,20 @@ Start FastAPI backend:
 python -m uvicorn backend.api.main:app --host 0.0.0.0 --port 8000
 ```
 
-SQL is force-disabled in the API execution path for now.
-
 Core endpoints:
 
 - `GET /` (root health endpoint)
 - `POST /api/v1/runs`
-- `GET /api/v1/runs` (list discovered runs for the picker; returns successful runs by default and accepts `include_all=true` for dev/debug views that also include queued, running, failed, and stopped runs)
+- `GET /api/v1/runs` (list discovered runs as `run_id` + `question` + `status` + `picker_timestamp`; returns successful runs by default, accepts `include_all=true` for dev/debug views that also include queued, running, failed, and stopped runs, and supports optional `search` across run ids, compact picker dates/times, question text, and selected city names, refreshed from `RUNS_DIR/*/run.json` artifact folders on each request, plus currently queued/running in-memory runs)
 - `GET /api/v1/runs/{run_id}/status`
 - `GET /api/v1/runs/{run_id}/diagnostics` (developer-focused run warnings, retry summaries, writer citation coverage, and artifact pointers)
 - `GET /api/v1/runs/{run_id}/output`
+- `GET /api/v1/runs/{run_id}/export/docx` (Word export of `final.md`; inline `[ref_n]` citation tags are omitted from the exported document)
 - `GET /api/v1/runs/{run_id}/context`
 - `GET /api/v1/runs/{run_id}/references` (canonical citation endpoint; supports optional query params `ref_id` and `include_quote`)
 - `GET /api/v1/runs/{run_id}/references/{ref_id}` (compatibility alias for one reference with quote payload)
-- `GET /api/v1/cities` (city names from markdown filenames in `MARKDOWN_DIR`, without `.md`)
+- `GET /api/v1/cities` (city names from top-level markdown filenames in `MARKDOWN_DIR`, without `.md`)
+- `GET /api/v1/cities/{city_name}/markdown` (concatenated raw CCC markdown for one normalized city name, including contributing source paths)
 - `GET /api/v1/city-groups` (predefined city groups filtered to currently available markdown cities)
 - `GET /api/v1/chat/contexts` (catalog of completed run contexts with token counts)
 - `GET /api/v1/runs/{run_id}/chat/sessions`
@@ -632,16 +784,22 @@ In the current implementation, that means:
 - split one oversized chunk in half once when a later request has a tighter budget
 - fail clearly if even a half split cannot fit
 
+Run API locally:
+
+```bash
+python -m uvicorn backend.api.main:app --reload
+```
+
+The API will start on `http://localhost:8000` with auto-reload enabled for development.
+
+(Run from the project root, not from the backend directory.)
+
 Run API in Docker:
 
-```
+```bash
 docker build -f backend/Dockerfile -t query-mechanism-backend .
 docker run -it --rm -p 8000:8000 \
   --env-file .env \
-  -e RUNS_DIR=/data/output \
-  -e MARKDOWN_DIR=/data/documents \
-  -e LLM_CONFIG_PATH=/data/config/llm_config.yaml \
-  -e CITY_GROUPS_PATH=/data/config/city_groups.json \
   -v ${PWD}/documents:/data/documents \
   -v ${PWD}/output:/data/output \
   -v ${PWD}/llm_config.yaml:/data/config/llm_config.yaml:ro \
@@ -670,7 +828,8 @@ If it is omitted, the frontend falls back to a local backend URL built from `NEX
 
 Frontend supports three city scope modes in the build form: all cities, predefined group, and manual selection.
 Frontend also supports two answer modes: `Aggregate Mode` and `City-by-City Mode` (sent as `analysis_mode` in run requests).
-Clicking `Chat About the Answer` switches to a dedicated chat workspace (not a chat modal).
+Clicking `Chat About the Answer` opens a dedicated chat workspace and keeps the generated writer document available in the left rail for cross-reference.
+When the rail is in `Writer Doc` mode on desktop, a drag handle between the rail and the main workspace lets users resize the document view without leaving chat.
 Document and chat citations render as compact city labels; clicking a label loads and shows only the source quote.
 When `chat.followup_search_enabled` is `true`, the chat router may run a synchronous one-city markdown-only follow-up search, attach the resulting follow-up bundle to the session, and keep citations clickable for both base runs and chat-owned follow-up bundles.
 The follow-up router is intentionally lightweight: it sees a bounded payload with recent history plus compact context summaries, and each source summary may include only a capped subset of excerpts. This trim exists to keep the routing step cheap and stable; the router is only deciding whether the current context is clearly sufficient, whether a fresh one-city search is needed, whether the request is out of scope, or whether city clarification is required.
@@ -680,7 +839,7 @@ Follow-up search stays conservative: it never launches a multi-city refresh, and
 When chat needs a single city before searching, the backend sends clarification metadata and the frontend opens a city-picker popup that resubmits the original question with the selected city directly into one-city follow-up search.
 When a direct chat prompt would overflow, the backend now falls back to an evidence-only map-reduce flow built from compact excerpt evidence and caches that stripped chat artifact under `output/<run_id>/chat_cache/evidence_chunks.json`.
 The parent/base run stays pinned in chat context selection, manual run selections may exceed the direct prompt cap, and auto-added follow-up bundles are still trimmed first.
-The `Load Previous Answer` picker reads `run_id` + `question` from `GET /api/v1/runs`, then loads selected run artifacts through the standard run endpoints.
+The `Load Previous Answer` picker reads `run_id`, `question`, and `picker_timestamp` from `GET /api/v1/runs`, renders rows as `MMDD-HHMM | question preview` inside a searchable popup list, filters runs by run id, date/time, question text, or city as you type, and then loads selected run artifacts through the standard run endpoints.
 `NEXT_PUBLIC_FRONTEND_MODE` sets the default frontend surface, and the page header always exposes a persistent browser toggle between `standard` and `dev`.
 
 Dev-mode frontend features:
@@ -734,6 +893,14 @@ It includes exact build/push commands and `kubectl` apply steps for the manifest
 Automated development workflow is available at `.github/workflows/develop.yml`.
 It runs tests for PRs targeting `main` and for pushes to `main`; image build and EKS deploy run only on `main` branch runs (push/manual dispatch).
 
+TODO: production CORS hardening
+
+- Restrict `API_CORS_ORIGINS` in `k8s/backend-configmap.yml` to the deployed frontend origin(s) only, for example `https://urbind-query-mechanism.openearth.dev`.
+- Remove local-only origins such as `http://localhost:3000`, `http://127.0.0.1:3000`, and private LAN hosts from the production ConfigMap.
+- Update `backend/api/main.py` so a missing or empty `API_CORS_ORIGINS` fails closed in deployed environments instead of falling back to `["*"]`.
+- Keep wildcard or localhost-friendly CORS settings only in local Docker/dev configuration.
+- Ensure the deployed frontend sets `NEXT_PUBLIC_API_BASE_URL` explicitly so backend host mismatches are not confused with CORS failures.
+
 Required repository secrets:
 
 - `AWS_ACCESS_KEY_ID_EKS_DEV_USER`
@@ -746,50 +913,41 @@ Optional repository variables:
 - `EKS_DEV_REGION` (default `us-east-1`)
 - `FRONTEND_API_BASE_URL` (default `https://urbind-query-mechanism-api.openearth.dev`)
 
-## Test DB connection
-
-```
-python -m backend.scripts.test_db_connection
-```
-
 Artifacts are written under `output/<run_id>/`:
 
-- `run.json`: machine-readable run metadata (status, timestamps, artifacts, decisions), including `inputs.analysis_mode`, `artifacts.error_log`, and `writer_citation_coverage` when the writer confirms or partially misses city coverage.
-- `run.log`: detailed runtime logs, including per-agent `LLM_USAGE` lines, chat prompt-window diagnostics (`Context chat reply plan`, `Context chat direct request`, with fitted source ids and token-component counts), retry reason lines (`RETRY_EVENT`/`RETRY_EXHAUSTED` with plain-text fields such as `reason`, `http_status`, `rate_limited`), and writer city-citation coverage checkpoints (`WRITER_CITATION_COVERAGE`, with `coverage_ratio` such as `33/33`).
+- `run.json`: machine-readable run metadata (status, timestamps, artifacts, decisions), including `inputs.analysis_mode`, `artifacts.error_log` when available, and `writer_citation_coverage` when the writer confirms or partially misses city coverage.
+- `run.log`: detailed runtime logs, including per-agent `LLM_USAGE` lines, chat prompt-window diagnostics (`Context chat reply plan`, `Context chat direct request`, with fitted source ids and token-component counts), retry reason lines (`RETRY_EVENT`/`RETRY_EXHAUSTED` with plain-text fields such as `reason`, `http_status`, `rate_limited`, and markdown split lineage when applicable), and writer city-citation coverage checkpoints (`WRITER_CITATION_COVERAGE`, with `coverage_ratio` such as `33/33`).
 - `error_log.txt`: extracted error-focused log view from `run.log` (`ERROR`, `CRITICAL`, and exhausted retry events).
-- `run_summary.txt`: human-readable consolidated report. Header includes `Started`, `Completed`, and explicit `Total runtime` in seconds, plus `LLM Usage` totals/per-agent. It also captures an input snapshot (`initial question`, `refined question`, `selected cities` planned/found, markdown dir/file/chunk/excerpt counts) and a `MARKDOWN_FAILURE_SUMMARY` aggregated from batch failures.
-- `context_bundle.json`: payload passed between agents (`sql`, `markdown`, `research_question`, `analysis_mode`, final path).
-- `research_question.json`: orchestrator-refined research payload. Includes:
+- `run_summary.txt`: human-readable consolidated report. Header includes `Started`, `Completed`, and explicit `Total runtime` in seconds, plus `LLM Usage` totals/per-agent. It also captures an input snapshot (`original question`, `query mode`, `canonical research query`, `retrieval query 1..3`, `selected cities` planned/found, markdown dir/file/chunk/excerpt counts) and a `MARKDOWN_FAILURE_SUMMARY` aggregated from batch failures.
+- `context_bundle.json`: payload passed between agents (`markdown`, `original_question`, `research_question`, `query_mode`, `retrieval_queries`, `analysis_mode`, final path).
+- `research_question.json`: run query metadata payload. Includes:
   - `original_question`: raw user question.
-  - `canonical_research_query`: canonical refined question.
+  - `query_mode`: `standard` or `dev`.
+  - `canonical_research_query`: canonical research query used downstream.
   - `retrieval_queries`: retrieval-ready query list where index `0` is always `canonical_research_query`.
-- `schema_summary.json` (when SQL is enabled): schema digest derived from `backend/db_models/`.
-- `city_list.json` (when SQL is enabled): city names fetched from the source DB.
-- `sql/queries.json` (when SQL is enabled): SQL plan generated by the SQL researcher.
-- `sql/results_full.json` (when SQL is enabled): uncapped SQL execution results.
-- `sql/results.json` (when SQL is enabled): token-capped SQL results sent downstream.
-- `markdown/excerpts.json`: markdown researcher evidence bundle. Includes `excerpts` (items with `quote`, `city_name`, `partial_answer`), explicit decision fields (`accepted_chunk_ids`, `rejected_chunk_ids`, `unresolved_chunk_ids`, `batch_failures`), `inspected_cities` (normalized backend city keys present in inspected markdown inputs), and `excerpt_count` (count of extracted excerpts).
+  - `retrieval_query_1` / `retrieval_query_2` / `retrieval_query_3`: explicit query slots written for easier inspection and reproducibility.
+- `markdown/excerpts.json`: markdown researcher evidence bundle. Includes `excerpts` (items with `quote`, `city_name`, `partial_answer`, `source_chunk_ids`), explicit decision fields (`accepted_chunk_ids`, `rejected_chunk_ids`, `unresolved_chunk_ids`, `batch_failures`), `inspected_cities` (normalized backend city keys present in inspected markdown inputs), and `excerpt_count` (count of extracted excerpts). When split recovery is triggered, successful child-batch evidence and decisions are kept, and only final failed leaf chunks remain unresolved. Stage B extraction recall uses the union of `excerpts[].source_chunk_ids`.
 - `markdown/accepted_excerpts.json`: IDs-only positive decision artifact with accepted chunk IDs and accepted-per-city grouping.
 - `markdown/rejected_excerpts.json`: IDs-only negative decision artifact with rejected chunk IDs and rejected-per-city grouping.
 - `markdown/decision_audit.json`: run-level reconciliation counters and diagnostics (`retrieved_total`, accepted/rejected/unresolved totals, invariant status, and mismatch details).
-- `markdown/references.json`: run-local citation map generated from markdown excerpts. Includes sequential `ref_n` entries with `excerpt_index`, `city_name`, `quote`, `partial_answer`, and `source_chunk_ids`.
-- `markdown/retrieval.json` (when `VECTOR_STORE_ENABLED=true`): vector retrieval inputs and results summary. Includes the final retrieval query list, optional city filter, retrieval tuning metadata (cutoffs/caps), and per-chunk summaries (`chunk_id`, `city_name`, `city_key`, `source_path`, `heading_path`, `block_type`, `distance`).
+- `markdown/references.json`: run-local citation map generated from markdown excerpts. Includes sequential `ref_n` entries with `excerpt_index`, `city_name`, `quote`, `partial_answer`, and `source_chunk_ids`. Stage C citation coverage maps cited `ref_id` values in `final.md` back through these `source_chunk_ids`.
+- `markdown/retrieval.json` (when `VECTOR_STORE_ENABLED=true`): vector retrieval inputs and results summary. Includes the final retrieval query list, optional city filter, retrieval tuning metadata (cutoffs/caps), strict direct-hit `seed_chunks[]`, final delivered `chunks[]`, `meta.seed_retrieved_total_chunks`, `meta.neighbor_expanded_total_chunks`, and per-chunk summaries (`chunk_id`, `chunk_index`, `city_name`, `city_key`, `source_path`, `heading_path`, `block_type`, `distance`, `provenance`).
 - `markdown/batches.json`: markdown batching plan used for the markdown researcher calls. Includes per-city batch indices, estimated tokens, and chunk ordering fields (`path`, `chunk_index`, `chunk_id`), making it easy to inspect how chunks were grouped into LLM requests.
 - `final.md`: final delivered markdown output. Content format is:
   1. `# Question` heading with the original user question,
-  2. generated markdown answer body from the writer,
-  3. footer line `Finish reason: ...`.
+  2. generated markdown answer body from the writer.
 
 `markdown/excerpts.json` excerpt entries include:
 
 - `quote`: verbatim extracted supporting text from markdown.
 - `city_name`: city identifier for the excerpt.
 - `partial_answer`: concise fact grounded in the quote.
+- `source_chunk_ids`: chunk ids backing the excerpt, used for Stage B extraction recall and citation tracing.
 - `ref_id`: sequential run-local citation id (`ref_1`, `ref_2`, ...), used by writer output and frontend reference lookups.
 - `inspected_cities` (bundle-level): normalized backend city keys inspected by markdown extraction.
 - `excerpt_count` (bundle-level): number of extracted excerpts included in the bundle.
 - `accepted_chunk_ids` / `rejected_chunk_ids` / `unresolved_chunk_ids` (bundle-level): explicit three-state chunk decision outputs from markdown extraction.
-- `batch_failures` (bundle-level): structured per-batch failure entries for unresolved decisions.
+- `batch_failures` (bundle-level): structured per-batch failure entries for unresolved final leaf decisions. Exhausting the original parent batch does not appear here by itself if split children recover the evidence. Entries may include `split_path` to show which recursive child branch failed.
 
 - `chat/<conversation_id>.json` (created when context chat sessions are used)
 - `assumptions/discovered.json` (two-pass extraction output; only when `persist_artifacts=true`)
@@ -829,6 +987,14 @@ docker compose up --build
 pytest
 ```
 
+Frontend build verification:
+
+```
+cd frontend
+npm ci
+npm run build
+```
+
 ## Async API smoke test (pre-frontend)
 
 Use this script to validate the async backend lifecycle contract before frontend integration:
@@ -855,7 +1021,7 @@ Smoke-test artifacts are written to `output/api_smoke_tests/<run_id>/`.
 
 ```
 python -m backend.scripts.analyze_run_tokens --run-log output/<run_id>/run.log
-python -m backend.scripts.calculate_tokens --documents-dir documents --recursive
+python -m backend.scripts.calculate_tokens --documents-dir documents
 python -m backend.scripts.temp_analyze --run-log output/<run_id>/run.log
 ```
 

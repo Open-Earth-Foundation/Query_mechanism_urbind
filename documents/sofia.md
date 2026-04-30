@@ -19,80 +19,56 @@ Climate Neutrality Action Plan
 
 # Table of Contents
 
-Table of Contents 3
-
-Summary 5
-
-List of figures 5
-
-List of tables. 6
-
-Abbreviations and acronyms 6
-
-Introduction 8
-
-Administrative territories 8
-Administrative and political organization 9
-Demographic and Socio-economic characteristics 10
-
-Population 10
-Socio-economic characteristics 12
-
-Existing Climate Policies and Strategies 13
-Work process 14
-Next steps 23
-
-Part A – Current State of Climate Action 25
-
-Module A-1 Greenhouse Gas Emissions Baseline Inventory 25
-
-Scope and limits of the inventory 28
-Emission sources covered 28
-Direct and indirect emissions 29
-Data collection 31
-
-Uncertainty and precision 32
-
-Module A-2 Current Policies and Strategies Assessment 36
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality 63
-
-Description of Urban Systems, Systemic Barriers, and Opportunities for Sofia 63
-
-Relevant Systems and Key Stakeholders 63
-Barriers and Opportunities 69
-Monitoring and Data Collection 69
-
-Part B – Pathways towards Climate Neutrality by 2030 71
-
-Module B-1 Climate Neutrality Scenarios and Impact Pathways 71
-
-List of Impact Pathways 71
-Descriptions of Impact Pathways 71
-
-Sustainable Transport 71
-Building Energy Efficiency 71
-Waste Management 72
-Renewable Energy 72
-Climate Neutrality Action Plan of Sofia City
-
-4
-
-Green infrastructure &amp; nature based solutions ... 72
-Community Engagement ... 72
-Module B-2 Climate Neutrality Portfolio Design ... 74
-Individual action outlines ... 87
-Actions addressing emissions gap ... 87
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 117
-Stationary Energy ... 122
-Transport Sector ... 128
-Waste ... 130
-Part C – Enabling Climate Neutrality by 2030 ... 133
-Module C-1 Governance Innovation Interventions ... 133
-Module C-2 Social Innovation Interventions ... 137
-Outlook and next steps ... 139
-Climate Neutrality Action Plan
-
-#
+- Summary
+- List of figures
+- List of tables
+- Abbreviations and acronyms
+- Introduction
+- Administrative territories
+- Administrative and political organization
+- Demographic and Socio-economic characteristics
+- Population
+- Socio-economic characteristics
+- Existing Climate Policies and Strategies
+- Work process
+- Next steps
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Scope and limits of the inventory
+- Emission sources covered
+- Direct and indirect emissions
+- Data collection
+- Uncertainty and precision
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Description of Urban Systems, Systemic Barriers, and Opportunities for Sofia
+- Relevant Systems and Key Stakeholders
+- Barriers and Opportunities
+- Monitoring and Data Collection
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- List of Impact Pathways
+- Descriptions of Impact Pathways
+- Sustainable Transport
+- Building Energy Efficiency
+- Waste Management
+- Renewable Energy
+- Climate Neutrality Action Plan of Sofia City
+- Green infrastructure &amp; nature based solutions
+- Community Engagement
+- Module B-2 Climate Neutrality Portfolio Design
+- Individual action outlines
+- Actions addressing emissions gap
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Stationary Energy
+- Transport Sector
+- Waste
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- Module C-2 Social Innovation Interventions
+- Outlook and next steps
+- Climate Neutrality Action Plan
+- #
 
 # Summary
 
@@ -4366,19 +4342,15 @@ Climate-Neutrality Commitments
 
 # Table of contents
 
-Table of contents 2
-
-Introduction 3
-Goal: Climate neutrality by 2030 4
-Strategic priorities 7
-Process and principles 10
-Signatories 14
-Sample contract with signatures. Error! Bookmark not defined.
-
-Appendix 1: Individual / Cluster Signatory Commitments (to be added before submitting the Climate City Contract 16
-Climate-Neutrality Commitments
-
-#
+- Introduction
+- Goal: Climate neutrality by 2030
+- Strategic priorities
+- Process and principles
+- Signatories
+- Sample contract with signatures. Error! Bookmark not defined
+- Appendix 1: Individual / Cluster Signatory Commitments (to be added before submitting the Climate City Contract
+- Climate-Neutrality Commitments
+- #
 
 # 1 Introduction
 

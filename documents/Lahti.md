@@ -24,28 +24,24 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of Contents
 
-Table of Contents...2
-Introduction...5
-Work Process...7
-Part A – Current State of Climate Action...10
-Module A-1 Greenhouse Gas Emissions Baseline Inventory...10
-Module A-2 Current Policies and Strategies Assessment...23
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality...31
-Part B – Pathways towards Climate Neutrality by 2030...38
-Module B-1 Climate Neutrality Scenarios and Impact Pathways...38
-Module B-2 Climate Neutrality Portfolio Design...42
-Module B-3 Indicators for Monitoring, Evaluation and Learning...71
-Part C – Enabling Climate Neutrality by 2030...78
-Module C-1 Organisational and Governance Innovation Interventions...78
-Module C-2 Social and Other Innovation Interventions...80
-Module C-3 Financing of Action Portfolio...81
-Outlook and next steps...83
-Annexes...84
-Lahti
-
-Climate Neutrality Action Plan
-
-O
+- Introduction
+- Work Process
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Organisational and Governance Innovation Interventions
+- Module C-2 Social and Other Innovation Interventions
+- Module C-3 Financing of Action Portfolio
+- Outlook and next steps
+- Annexes
+- Lahti
+- Climate Neutrality Action Plan
 
 # Summary
 
@@ -2084,19 +2080,15 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of contents
 
-Introduction ... 1
-Goal: Climate neutrality by 2030 ... 2
-Key priorities and strategic interventions ... 3
-Principles and process ... 6
-Signatories ... 9
-Contract with signatures ... 11
-
-Appendix: Individual Signatory Commitments
-Lahti
-
-Climate-Neutrality Commitments
-
-O
+- Introduction
+- Goal: Climate neutrality by 2030
+- Key priorities and strategic interventions
+- Principles and process
+- Signatories
+- Contract with signatures
+- Appendix: Individual Signatory Commitments
+- Lahti
+- Climate-Neutrality Commitments
 
 # 1 Introduction
 

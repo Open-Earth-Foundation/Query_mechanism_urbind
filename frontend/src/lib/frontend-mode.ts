@@ -9,6 +9,7 @@ export interface FrontendDevFeatureFlags {
   showContextManager: boolean;
   showIncompleteRuns: boolean;
   showRunDiagnostics: boolean;
+  showPipelineProgress: boolean;
   showRunId: boolean;
 }
 
@@ -51,6 +52,7 @@ export function getDevFeatureFlags(mode: FrontendMode): FrontendDevFeatureFlags 
     showContextManager: enabled,
     showIncompleteRuns: enabled,
     showRunDiagnostics: enabled,
+    showPipelineProgress: enabled,
     showRunId: enabled,
   };
 }

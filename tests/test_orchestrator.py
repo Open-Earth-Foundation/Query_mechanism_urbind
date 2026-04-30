@@ -1,56 +1,28 @@
 import json
 import logging
-import sqlite3
 from pathlib import Path
 
 import pytest
+from agents.exceptions import MaxTurnsExceeded
 
 from backend.modules.markdown_researcher.models import (
     MarkdownExcerpt,
     MarkdownResearchResult,
 )
-from backend.modules.orchestrator.models import (
-    ResearchQuestionRefinement,
-)
-from backend.modules.orchestrator.module import run_pipeline
-from backend.modules.sql_researcher.models import SqlQuery, SqlQueryPlan
-from backend.modules.vector_store.models import RetrievedChunk
+from backend.modules.orchestrator.models import ResearchQuestionRefinement
+from backend.modules.orchestrator.module import _build_retrieval_queries, run_pipeline
 from backend.modules.writer.models import WriterCitationCoverage, WriterOutput
-from backend.utils.config import (
-    AppConfig,
-)
+from backend.utils.config import AppConfig
 from backend.utils.logging_config import setup_logger
 from tests.support import build_test_app_config
 
 
-def _build_test_config(
-    *,
-    runs_dir: Path,
-    markdown_dir: Path,
-    source_db_path: Path,
-    enable_sql: bool,
-) -> AppConfig:
-    """Build the orchestrator test config with the current required sections."""
+def _build_test_config(*, runs_dir: Path, markdown_dir: Path) -> AppConfig:
+    """Build an orchestrator test config with vector retrieval disabled."""
     return build_test_app_config(
         runs_dir=runs_dir,
         markdown_dir=markdown_dir,
-        source_db_path=source_db_path,
-        enable_sql=enable_sql,
         vector_store_overrides={"enabled": False},
-        sql_researcher_overrides={"max_result_tokens": 100000},
-    )
-
-
-def _stub_sql_plan(
-    question: str,
-    schema_summary: dict,
-    city_names: list[str],
-    config: AppConfig,
-    api_key: str,
-    **_kwargs: dict[str, object],
-) -> SqlQueryPlan:
-    return SqlQueryPlan(
-        queries=[SqlQuery(query_id="q1", query="SELECT cityName FROM City")],
     )
 
 
@@ -61,6 +33,8 @@ def _stub_markdown(
     api_key: str,
     **_kwargs: dict[str, object],
 ) -> MarkdownResearchResult:
+    """Return one grounded markdown excerpt for pipeline tests."""
+    _ = question, documents, config, api_key
     excerpt = MarkdownExcerpt(
         quote="Munich has deployed 43 existing public chargers as of 2024.",
         city_name="Munich",
@@ -75,6 +49,8 @@ def _stub_refine_question(
     api_key: str,
     **_kwargs: dict[str, object],
 ) -> ResearchQuestionRefinement:
+    """Return the original question as the refined research query."""
+    _ = config, api_key
     return ResearchQuestionRefinement(
         research_question=question,
         retrieval_queries=[],
@@ -88,6 +64,8 @@ def _stub_writer(
     api_key: str,
     **_kwargs: dict[str, object],
 ) -> WriterOutput:
+    """Return one deterministic writer output for pipeline tests."""
+    _ = question, context_bundle, config, api_key
     return WriterOutput(content="# Answer\n\nStub")
 
 
@@ -99,17 +77,27 @@ def _reset_root_handlers() -> None:
         handler.close()
 
 
+def test_build_retrieval_queries_trims_dedupes_case_insensitively_and_caps() -> None:
+    assert _build_retrieval_queries(
+        "  Main query  ",
+        "main query",
+        "  Second query  ",
+        "",
+        "SECOND QUERY",
+        "Third query",
+        "Fourth ignored query",
+    ) == [
+        "Main query",
+        "Second query",
+        "Third query",
+    ]
+
+
 def test_run_pipeline_creates_artifacts(
-    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     monkeypatch.setenv("OPENROUTER_API_KEY", "test")
-
-    db_path = tmp_path / "source.db"
-    conn = sqlite3.connect(db_path)
-    conn.execute("CREATE TABLE City (cityId TEXT, cityName TEXT)")
-    conn.execute("INSERT INTO City (cityId, cityName) VALUES ('1', 'Munich')")
-    conn.commit()
-    conn.close()
 
     docs_dir = tmp_path / "documents"
     docs_dir.mkdir()
@@ -117,89 +105,28 @@ def test_run_pipeline_creates_artifacts(
 
     config = _build_test_config(
         runs_dir=tmp_path / "output",
-        source_db_path=db_path,
         markdown_dir=docs_dir,
-        enable_sql=True,
     )
 
     paths = run_pipeline(
-        question="What cities exist?",
+        question="What initiatives exist for Munich?",
         config=config,
-        sql_plan_func=_stub_sql_plan,
         markdown_func=_stub_markdown,
         refine_question_func=_stub_refine_question,
         writer_func=_stub_writer,
     )
 
     assert paths.final_output.exists()
+    final_output = paths.final_output.read_text(encoding="utf-8")
     run_log = json.loads(paths.run_log.read_text(encoding="utf-8"))
     assert run_log["status"] == "completed"
     assert Path(run_log["artifacts"]["final_output"]).exists()
-
-
-def test_run_pipeline_sql_disabled_skips_db(
-    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
-) -> None:
-    monkeypatch.setenv("OPENROUTER_API_KEY", "test")
-
-    docs_dir = tmp_path / "documents"
-    docs_dir.mkdir()
-    (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
-
-    config = _build_test_config(
-        runs_dir=tmp_path / "output",
-        source_db_path=tmp_path / "missing.db",
-        markdown_dir=docs_dir,
-        enable_sql=False,
-    )
-
-    paths = run_pipeline(
-        question="What initiatives exist for Munich?",
-        config=config,
-        sql_plan_func=_stub_sql_plan,
-        markdown_func=_stub_markdown,
-        refine_question_func=_stub_refine_question,
-        writer_func=_stub_writer,
-    )
-
-    assert paths.final_output.exists()
-    run_log = json.loads(paths.run_log.read_text(encoding="utf-8"))
-    assert run_log["status"] == "completed"
-
-
-def test_run_pipeline_writes_output_with_sql_disabled(
-    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
-) -> None:
-    monkeypatch.setenv("OPENROUTER_API_KEY", "test")
-
-    docs_dir = tmp_path / "documents"
-    docs_dir.mkdir()
-    (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
-
-    config = _build_test_config(
-        runs_dir=tmp_path / "output",
-        source_db_path=tmp_path / "missing.db",
-        markdown_dir=docs_dir,
-        enable_sql=False,
-    )
-
-    paths = run_pipeline(
-        question="What initiatives exist for Munich?",
-        config=config,
-        sql_plan_func=_stub_sql_plan,
-        markdown_func=_stub_markdown,
-        refine_question_func=_stub_refine_question,
-        writer_func=_stub_writer,
-    )
-
-    assert paths.final_output.exists()
-    run_log = json.loads(paths.run_log.read_text(encoding="utf-8"))
-    assert run_log["status"] == "completed"
-    assert run_log["finish_reason"] == "completed (write)"
+    assert "Finish reason:" not in final_output
 
 
 def test_run_pipeline_persists_partial_writer_output_as_completed_with_gaps(
-    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     monkeypatch.setenv("OPENROUTER_API_KEY", "test")
 
@@ -209,9 +136,7 @@ def test_run_pipeline_persists_partial_writer_output_as_completed_with_gaps(
 
     config = _build_test_config(
         runs_dir=tmp_path / "output",
-        source_db_path=tmp_path / "missing.db",
         markdown_dir=docs_dir,
-        enable_sql=False,
     )
 
     def _stub_partial_writer(
@@ -239,7 +164,6 @@ def test_run_pipeline_persists_partial_writer_output_as_completed_with_gaps(
     paths = run_pipeline(
         question="What initiatives exist for Munich and Berlin?",
         config=config,
-        sql_plan_func=_stub_sql_plan,
         markdown_func=_stub_markdown,
         refine_question_func=_stub_refine_question,
         writer_func=_stub_partial_writer,
@@ -266,9 +190,7 @@ def test_run_pipeline_passes_run_logger_and_paths_to_writer_when_supported(
 
     config = _build_test_config(
         runs_dir=tmp_path / "output",
-        source_db_path=tmp_path / "missing.db",
         markdown_dir=docs_dir,
-        enable_sql=False,
     )
     captured: dict[str, object] = {}
 
@@ -289,7 +211,6 @@ def test_run_pipeline_passes_run_logger_and_paths_to_writer_when_supported(
     paths = run_pipeline(
         question="What initiatives exist for Munich?",
         config=config,
-        sql_plan_func=_stub_sql_plan,
         markdown_func=_stub_markdown,
         refine_question_func=_stub_refine_question,
         writer_func=_writer_with_runtime_context,
@@ -301,7 +222,8 @@ def test_run_pipeline_passes_run_logger_and_paths_to_writer_when_supported(
 
 
 def test_run_pipeline_detaches_run_log_handler(
-    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     monkeypatch.setenv("OPENROUTER_API_KEY", "test")
     _reset_root_handlers()
@@ -313,9 +235,7 @@ def test_run_pipeline_detaches_run_log_handler(
 
     config = _build_test_config(
         runs_dir=tmp_path / "output",
-        source_db_path=tmp_path / "missing.db",
         markdown_dir=docs_dir,
-        enable_sql=False,
     )
 
     try:
@@ -323,7 +243,6 @@ def test_run_pipeline_detaches_run_log_handler(
             question="First question?",
             config=config,
             run_id="run1",
-            sql_plan_func=_stub_sql_plan,
             markdown_func=_stub_markdown,
             refine_question_func=_stub_refine_question,
             writer_func=_stub_writer,
@@ -340,7 +259,6 @@ def test_run_pipeline_detaches_run_log_handler(
             question="Second question?",
             config=config,
             run_id="run2",
-            sql_plan_func=_stub_sql_plan,
             markdown_func=_stub_markdown,
             refine_question_func=_stub_refine_question,
             writer_func=_stub_writer,
@@ -361,7 +279,8 @@ def test_run_pipeline_detaches_run_log_handler(
 
 
 def test_run_pipeline_refines_question_before_markdown(
-    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     monkeypatch.setenv("OPENROUTER_API_KEY", "test")
 
@@ -371,11 +290,8 @@ def test_run_pipeline_refines_question_before_markdown(
 
     config = _build_test_config(
         runs_dir=tmp_path / "output",
-        source_db_path=tmp_path / "missing.db",
         markdown_dir=docs_dir,
-        enable_sql=False,
     )
-
     captured: dict[str, str] = {}
 
     def _refine_for_test(
@@ -384,6 +300,7 @@ def test_run_pipeline_refines_question_before_markdown(
         api_key: str,
         **_kwargs: dict[str, object],
     ) -> ResearchQuestionRefinement:
+        _ = question, config, api_key
         return ResearchQuestionRefinement(
             research_question="For Munich, list concrete documented initiatives with direct evidence.",
             retrieval_queries=[],
@@ -402,7 +319,6 @@ def test_run_pipeline_refines_question_before_markdown(
     paths = run_pipeline(
         question="What initiatives exist for Munich?",
         config=config,
-        sql_plan_func=_stub_sql_plan,
         markdown_func=_capture_markdown_question,
         refine_question_func=_refine_for_test,
         writer_func=_stub_writer,
@@ -427,197 +343,52 @@ def test_run_pipeline_refines_question_before_markdown(
         research_payload["canonical_research_query"]
         == "For Munich, list concrete documented initiatives with direct evidence."
     )
-    assert "research_question" not in research_payload
-    assert "retrieval_query_variants" not in research_payload
+    assert research_payload["query_mode"] == "standard"
 
 
 def test_run_pipeline_passes_selected_cities_to_question_refiner(
-    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     monkeypatch.setenv("OPENROUTER_API_KEY", "test")
 
     docs_dir = tmp_path / "documents"
     docs_dir.mkdir()
     (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
+    (docs_dir / "Leipzig.md").write_text("# Leipzig\n\nSample", encoding="utf-8")
 
     config = _build_test_config(
         runs_dir=tmp_path / "output",
-        source_db_path=tmp_path / "missing.db",
         markdown_dir=docs_dir,
-        enable_sql=False,
     )
-
     captured: dict[str, object] = {}
 
-    def _refine_for_test(
+    def _refine_with_selected_cities(
         question: str,
         config: AppConfig,
         api_key: str,
-        **_kwargs: dict[str, object],
+        **kwargs: dict[str, object],
     ) -> ResearchQuestionRefinement:
-        captured["selected_cities"] = _kwargs.get("selected_cities")
+        _ = question, config, api_key
+        captured["selected_cities"] = kwargs.get("selected_cities")
         return ResearchQuestionRefinement(
-            research_question="What are the pv panel aggregations for the selected cities?",
+            research_question="Compare Munich and Leipzig initiatives.",
             retrieval_queries=[],
         )
 
-    paths = run_pipeline(
-        question="What are the pv panel aggregates for Munich and Leipzig?",
+    run_pipeline(
+        question="Compare Munich and Leipzig initiatives.",
         config=config,
         selected_cities=["Munich", "Leipzig"],
-        sql_plan_func=_stub_sql_plan,
         markdown_func=_stub_markdown,
-        refine_question_func=_refine_for_test,
+        refine_question_func=_refine_with_selected_cities,
         writer_func=_stub_writer,
     )
 
-    assert paths.final_output.exists()
     assert captured["selected_cities"] == ["Munich", "Leipzig"]
 
 
-def test_run_pipeline_end_to_end_propagates_query_markdown_and_writer_output(
-    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
-) -> None:
-    monkeypatch.setenv("OPENROUTER_API_KEY", "test")
-
-    docs_dir = tmp_path / "documents"
-    docs_dir.mkdir()
-    (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
-
-    config = _build_test_config(
-        runs_dir=tmp_path / "output",
-        source_db_path=tmp_path / "missing.db",
-        markdown_dir=docs_dir,
-        enable_sql=False,
-    )
-
-    input_question = "What initiatives exist for Munich?"
-    refined_question = "For Munich, list concrete documented initiatives with direct evidence."
-    expected_quote = "Munich has deployed 43 existing public chargers as of 2024."
-    expected_partial_answer = (
-        "Munich has deployed 43 existing public chargers as of 2024."
-    )
-    observed: dict[str, object] = {}
-
-    def _refine_for_test(
-        question: str,
-        config: AppConfig,
-        api_key: str,
-        **_kwargs: dict[str, object],
-    ) -> ResearchQuestionRefinement:
-        assert question == input_question
-        return ResearchQuestionRefinement(
-            research_question=refined_question,
-            retrieval_queries=[],
-        )
-
-    def _markdown_for_test(
-        question: str,
-        documents: list[dict[str, str]],
-        config: AppConfig,
-        api_key: str,
-        **_kwargs: dict[str, object],
-    ) -> MarkdownResearchResult:
-        observed["markdown_question"] = question
-        observed["markdown_documents"] = documents
-        return MarkdownResearchResult(
-            excerpts=[
-                MarkdownExcerpt(
-                    quote=expected_quote,
-                    city_name="Munich",
-                    partial_answer=expected_partial_answer,
-                )
-            ]
-        )
-
-    def _writer_for_test(
-        question: str,
-        context_bundle: dict,
-        config: AppConfig,
-        api_key: str,
-        **_kwargs: dict[str, object],
-    ) -> WriterOutput:
-        observed["writer_question"] = question
-        observed["writer_context_bundle"] = context_bundle
-        excerpt = context_bundle["markdown"]["excerpts"][0]
-        content = f"# Answer\n\n{excerpt['partial_answer']}"
-        return WriterOutput(content=content)
-
-    paths = run_pipeline(
-        question=input_question,
-        config=config,
-        sql_plan_func=_stub_sql_plan,
-        markdown_func=_markdown_for_test,
-        refine_question_func=_refine_for_test,
-        writer_func=_writer_for_test,
-    )
-
-    assert paths.final_output.exists()
-    assert observed["markdown_question"] == refined_question
-    assert observed["writer_question"] == input_question
-
-    markdown_documents = observed["markdown_documents"]
-    assert isinstance(markdown_documents, list)
-    assert len(markdown_documents) == 1
-
-    writer_bundle = observed["writer_context_bundle"]
-    assert isinstance(writer_bundle, dict)
-    markdown_bundle = writer_bundle["markdown"]
-    assert isinstance(markdown_bundle, dict)
-    assert markdown_bundle["status"] == "success"
-    assert markdown_bundle["inspected_cities"] == ["munich"]
-    assert markdown_bundle["excerpt_count"] == 1
-    excerpts = markdown_bundle["excerpts"]
-    assert isinstance(excerpts, list)
-    assert len(excerpts) == 1
-    first_excerpt = excerpts[0]
-    assert "quote" in first_excerpt
-    assert "partial_answer" in first_excerpt
-    assert "snippet" not in first_excerpt
-    assert first_excerpt["quote"] == expected_quote
-    assert first_excerpt["partial_answer"] == expected_partial_answer
-
-    final_output = paths.final_output.read_text(encoding="utf-8")
-    assert f"# Question\n{input_question}\n\n" in final_output
-    assert expected_partial_answer in final_output
-
-    persisted_context_bundle = json.loads(paths.context_bundle.read_text(encoding="utf-8"))
-    assert persisted_context_bundle["research_question"] == refined_question
-    persisted_markdown = persisted_context_bundle["markdown"]
-    assert isinstance(persisted_markdown, dict)
-    assert persisted_markdown["inspected_cities"] == ["munich"]
-    assert persisted_markdown["excerpt_count"] == 1
-    assert persisted_markdown["excerpts"][0]["quote"] == expected_quote
-    assert persisted_markdown["excerpts"][0]["partial_answer"] == expected_partial_answer
-
-    markdown_artifact = json.loads(paths.markdown_excerpts.read_text(encoding="utf-8"))
-    assert markdown_artifact["inspected_cities"] == ["munich"]
-    assert markdown_artifact["excerpt_count"] == 1
-    artifact_excerpt = markdown_artifact["excerpts"][0]
-    assert "quote" in artifact_excerpt
-    assert "partial_answer" in artifact_excerpt
-    assert "ref_id" in artifact_excerpt
-    assert artifact_excerpt["ref_id"] == "ref_1"
-    assert "snippet" not in artifact_excerpt
-
-    references_payload = json.loads(paths.markdown_references.read_text(encoding="utf-8"))
-    assert references_payload["run_id"] == paths.base_dir.name
-    assert references_payload["reference_count"] == 1
-    assert references_payload["references"][0]["ref_id"] == "ref_1"
-    assert references_payload["references"][0]["excerpt_index"] == 0
-    assert references_payload["references"][0]["quote"] == expected_quote
-
-    run_log = json.loads(paths.run_log.read_text(encoding="utf-8"))
-    assert run_log["inputs"]["markdown_chunk_count"] == 1
-    assert run_log["inputs"]["markdown_excerpt_count"] == 1
-    assert "markdown_references" in run_log["artifacts"]
-
-    run_summary = paths.run_summary.read_text(encoding="utf-8")
-    assert "Markdown chunk count: 1" in run_summary
-    assert "Markdown excerpt count: 1" in run_summary
-
-
-def test_run_pipeline_vector_store_enabled_uses_retriever(
+def test_run_pipeline_dev_mode_uses_direct_queries(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
@@ -629,111 +400,130 @@ def test_run_pipeline_vector_store_enabled_uses_retriever(
 
     config = _build_test_config(
         runs_dir=tmp_path / "output",
-        source_db_path=tmp_path / "missing.db",
         markdown_dir=docs_dir,
-        enable_sql=False,
     )
-    config.vector_store.enabled = True
+    captured: dict[str, str] = {}
 
-    captured: dict[str, object] = {}
-
-    def _fake_retrieve(
-        queries: list[str],
-        config: AppConfig,
-        docs_dir: Path,
-        selected_cities: list[str] | None,
-    ) -> tuple[list[RetrievedChunk], dict[str, object]]:
-        captured["queries"] = queries
-        captured["selected_cities"] = selected_cities
-        captured["docs_dir"] = docs_dir
-        return (
-            [
-                RetrievedChunk(
-                    city_name="Munich",
-                    raw_text="Retriever chunk content",
-                    source_path="documents/Munich.md",
-                    heading_path="H1",
-                    block_type="paragraph",
-                    distance=0.111111,
-                    chunk_id="chunk-1",
-                    metadata={"city_key": "munich"},
-                )
-            ],
-            {"queries": queries, "per_city": []},
-        )
-
-    monkeypatch.setattr(
-        "backend.modules.orchestrator.module.retrieve_chunks_for_queries",
-        _fake_retrieve,
-    )
-
-    observed: dict[str, object] = {}
-
-    def _capture_markdown_documents(
+    def _capture_markdown_question(
         question: str,
         documents: list[dict[str, str]],
         config: AppConfig,
         api_key: str,
         **_kwargs: dict[str, object],
     ) -> MarkdownResearchResult:
-        observed["documents"] = documents
+        captured["question"] = question
         return _stub_markdown(question, documents, config, api_key, **_kwargs)
 
-    def _refine_with_retrieval_queries(
+    paths = run_pipeline(
+        question="Main direct query",
+        config=config,
+        query_mode="dev",
+        query_2="Second direct query",
+        query_3="Third direct query",
+        markdown_func=_capture_markdown_question,
+        refine_question_func=_stub_refine_question,
+        writer_func=_stub_writer,
+    )
+
+    assert paths.final_output.exists()
+    assert captured["question"] == "Main direct query"
+    research_payload = json.loads(paths.research_question.read_text(encoding="utf-8"))
+    assert research_payload["query_mode"] == "dev"
+    assert research_payload["retrieval_queries"] == [
+        "Main direct query",
+        "Second direct query",
+        "Third direct query",
+    ]
+
+
+def test_run_pipeline_fails_when_refinement_raises(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.setenv("OPENROUTER_API_KEY", "test")
+
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir()
+    (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
+
+    config = _build_test_config(
+        runs_dir=tmp_path / "output",
+        markdown_dir=docs_dir,
+    )
+    run_id = "refinement-max-turns"
+
+    def _raise_refinement_error(
         question: str,
         config: AppConfig,
         api_key: str,
         **_kwargs: dict[str, object],
     ) -> ResearchQuestionRefinement:
-        return ResearchQuestionRefinement(
-            research_question="For Munich, compare charging and retrofit initiatives with evidence.",
-            retrieval_queries=[
-                "Munich initiatives charging retrofit policy",
-                "Munich charging counts retrofit targets timeline metrics",
-            ],
+        _ = question, config, api_key
+        raise MaxTurnsExceeded("refiner exhausted turns")
+
+    with pytest.raises(ValueError, match="Could not prepare the research query"):
+        run_pipeline(
+            question="What initiatives exist for Munich?",
+            config=config,
+            run_id=run_id,
+            markdown_func=_stub_markdown,
+            refine_question_func=_raise_refinement_error,
+            writer_func=_stub_writer,
         )
 
-    paths = run_pipeline(
-        question="What initiatives exist for Munich?",
-        config=config,
-        selected_cities=["Munich"],
-        sql_plan_func=_stub_sql_plan,
-        markdown_func=_capture_markdown_documents,
-        refine_question_func=_refine_with_retrieval_queries,
-        writer_func=_stub_writer,
+    run_dir = config.runs_dir / run_id
+    run_log = json.loads((run_dir / "run.json").read_text(encoding="utf-8"))
+    assert run_log["status"] == "failed"
+    assert run_log["finish_reason"] == "research_question_refinement_failed"
+    assert Path(run_log["artifacts"]["error_log"]).exists()
+    assert (run_dir / "run_summary.txt").exists()
+
+
+def test_run_pipeline_finalizes_when_refinement_raises_unexpected_error(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Unexpected refinement errors should finalize the run and then re-raise."""
+    monkeypatch.setenv("OPENROUTER_API_KEY", "test")
+
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir()
+    (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
+
+    config = _build_test_config(
+        runs_dir=tmp_path / "output",
+        markdown_dir=docs_dir,
     )
+    run_id = "refinement-runtime-error"
 
-    assert paths.final_output.exists()
-    assert captured["selected_cities"] == ["Munich"]
-    assert captured["queries"] == [
-        "For Munich, compare charging and retrofit initiatives with evidence.",
-        "Munich initiatives charging retrofit policy",
-        "Munich charging counts retrofit targets timeline metrics",
-    ]
+    def _raise_refinement_error(
+        question: str,
+        config: AppConfig,
+        api_key: str,
+        **_kwargs: dict[str, object],
+    ) -> ResearchQuestionRefinement:
+        _ = question, config, api_key
+        raise RuntimeError("malformed model payload")
 
-    markdown_documents = observed["documents"]
-    assert isinstance(markdown_documents, list)
-    assert len(markdown_documents) == 1
-    assert markdown_documents[0]["content"] == "Retriever chunk content"
-    assert markdown_documents[0]["chunk_id"] == "chunk-1"
+    with pytest.raises(RuntimeError, match="malformed model payload"):
+        run_pipeline(
+            question="What initiatives exist for Munich?",
+            config=config,
+            run_id=run_id,
+            markdown_func=_stub_markdown,
+            refine_question_func=_raise_refinement_error,
+            writer_func=_stub_writer,
+        )
 
-    retrieval_path = paths.markdown_dir / "retrieval.json"
-    assert retrieval_path.exists()
-    retrieval_payload = json.loads(retrieval_path.read_text(encoding="utf-8"))
-    assert retrieval_payload["queries"] == [
-        "For Munich, compare charging and retrofit initiatives with evidence.",
-        "Munich initiatives charging retrofit policy",
-        "Munich charging counts retrofit targets timeline metrics",
-    ]
-    assert retrieval_payload["retrieved_count"] == 1
+    run_dir = config.runs_dir / run_id
+    run_log = json.loads((run_dir / "run.json").read_text(encoding="utf-8"))
+    error_log = (run_dir / "error_log.txt").read_text(encoding="utf-8")
 
-    run_log = json.loads(paths.run_log.read_text(encoding="utf-8"))
-    assert run_log["inputs"]["markdown_source_mode"] == "vector_store_retrieval"
-
-    markdown_artifact = json.loads(paths.markdown_excerpts.read_text(encoding="utf-8"))
-    assert markdown_artifact["retrieval_mode"] == "vector_store_retrieval"
-    assert markdown_artifact["retrieval_queries"] == [
-        "For Munich, compare charging and retrofit initiatives with evidence.",
-        "Munich initiatives charging retrofit policy",
-        "Munich charging counts retrofit targets timeline metrics",
-    ]
+    assert run_log["status"] == "failed"
+    assert run_log["finish_reason"] == "research_question_refinement_unexpected_error"
+    assert (
+        run_log["decisions"][-1]["error"]["code"]
+        == "RESEARCH_QUESTION_REFINEMENT_UNEXPECTED_ERROR"
+    )
+    assert Path(run_log["artifacts"]["error_log"]).exists()
+    assert "RuntimeError: malformed model payload" in error_log

@@ -18,122 +18,114 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of Contents
 
-Disclaimer 2
-Table of Contents 2
-Summary 6
-List of figures 8
-List of tables 9
-Abbreviations and acronyms 10
-Introduction 11
-Work Process 16
-Part A – Current State of Climate Action 20
-Module A-1 Greenhouse Gas Emissions Baseline Inventory 20
-A-1.1: Final energy use by source sectors 20
-A-1.2: Emission factors applied 21
-A-1.3: Activity by source sectors 22
-A-1.4: GHG emissions by source sectors 24
-A-1.5: Graphics and charts 25
-A-1.6: Description and assessment of GHG baseline inventory 34
-Module A-2 Current Policies and Strategies Assessment 38
-A-2.1: List of relevant policies, strategies &amp; regulations 38
-A-2.2: Description &amp; assessment of policies 42
-A-2.3: Emissions gap 46
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality 47
-A-3.1: Systems &amp; stakeholder mapping 47
-A-3.2: Description of systemic barriers 52
-A-3.3: Description or visualisation of participatory model for the city climate neutrality – textual and visual elements 56
-Part B – Pathways towards Climate Neutrality by 2030 59
-Module B-1 Climate Neutrality Scenarios and Impact Pathways 59
-
-Climate Neutrality Action Plan of the Municipality of Kozani
-Climate Neutrality Action Plan of the Municipality of Kozani
-
-|  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
-| --- | --- | --- |
-|  B-1.1: Impact Pathways | 60 |   |
-|  B-1.2: Description of impact pathways – textual and visual elements | 75 |   |
-|  Module B-2 Climate Neutrality Portfolio Design | 92 |   |
-|  B-2.1: Description of action portfolios - textual or visual | 92 |   |
-|  B-2.2: Individual action outlines | 98 |   |
-|  7MW Photovoltaic Power Plant by the Energy Community of the Municipality of Kozani | 99 |   |
-|  Energy Upgrading of the Public Lighting | 100 |   |
-|  Renewable Energy Systems | 102 |   |
-|  Building Integrated Renewable Energy Systems | 104 |   |
-|  Covering District Heating Thermal Needs with Green Energy | 105 |   |
-|  Deep Energy Retrofit of Residences | 108 |   |
-|  Deep Energy Retrofit of Municipal buildings | 110 |   |
-|  Deep energy retrofit of School buildings | 111 |   |
-|  Deep energy retrofit of the sports facilities of the Municipality of Kozani | 113 |   |
-|  Deep energy retrofit of the Tertiary Sector Buildings | 115 |   |
-|  Smart Energy Management | 117 |   |
-|  Penetration of vehicles fuelled by CNG and LPG | 121 |   |
-|  Replacement of municipal vehicles with EV with RES installation of charging stations and GPS management | 125 |   |
-|  Replacement of private vehicles with EV using RES | 129 |   |
-|  Replacement of heavy-duty vehicles with hydrogen technology | 133 |   |
-|  Zone with low emissions of air pollutants with priority on the use of EVs | 136 |   |
-|  Upgrade of Public Transportation System | 139 |   |
-|  Enhancement of Urban Logistics | 143 |   |
-|  Promotion of Cycling | 146 |   |
-|  Promotion of Walkability | 149 |   |
-|  Implementation of Smart Systems for Mobility | 154 |   |
-|  Smart Mobility Systems for Citizens | 157 |   |
-|  Infrastructure Upgrade to Enhance Mobility | 160 |   |
-|  Awareness Raising Campaign for Citizens | 165 |   |
-|  Educational Seminars – Eco-Driving | 168 |   |
-|  Mobility Incentives & Prevention | 171 |   |
-|  Sorting at Source | 174 |   |
-Climate Neutrality Action Plan of the Municipality of Kozani
-
-|  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
-| --- | --- | --- |
-|  Circular Economy Upgrade of Municipal Entities | 179 |   |
-|  Awareness raising campaign for Circular Economy & Waste | 183 |   |
-|  Kozani Water Supply Networks Upgrade | 186 |   |
-|  Agriculture/Forestry | 189 |   |
-|  Smart Parks – Smart Benches | 190 |   |
-|  Digital organization and management platform for work-flows, processes, cases and documents. | 193 |   |
-|  Smart City Guide | 196 |   |
-|  Application of the Municipality's Electronic Appointments | 199 |   |
-|  Smart city platform | 201 |   |
-|  B-2.3: Summary strategy for residual emission | 203 |   |
-|  Module B-3 Indicators for Monitoring, Evaluation and Learning | 204 |   |
-|  B-3.1: Impact Pathways | 204 |   |
-|  B-3.2: Indicator Metadata | 206 |   |
-|  DH1 – CO₂ emissions from DH | 206 |   |
-|  RB – CO₂ emissions from residencies | 207 |   |
-|  MB – CO₂ emissions from Municipal buildings | 208 |   |
-|  PL – CO₂ emissions from Public Lighting | 209 |   |
-|  TB – CO₂ emissions from tertiary sector buildings | 210 |   |
-|  MOB – CO₂ emissions from transport | 211 |   |
-|  WCE – CO₂ emissions from waste | 212 |   |
-|  AF – CO₂ emissions from agriculture | 213 |   |
-|  RE1 – Local renewable energy production | 214 |   |
-|  DHF – CO₂ emissions factor for DH | 215 |   |
-|  RE2 – CO₂ emissions factor for electricity | 216 |   |
-|  REM – Residual emissions | 217 |   |
-|  Part C – Enabling Climate Neutrality by 2030 | 219 |   |
-|  Module C-1 Organisational and Governance Innovation Interventions | 219 |   |
-|  C.1.1: Enabling organisational and governance interventions | 219 |   |
-|  C-1.2: Description of organisation and governance interventions – textual and visual elements | 223 |   |
-|  Module C-2 Social and Other Innovation Interventions | 230 |   |
-|  C.2.1: Enabling social innovation interventions | 230 |   |
-|  C-2.2: Description of social innovation interventions – textual and visual elements | 233 |   |
-Climate Neutrality Action Plan of the Municipality of Kozani
-
-|  ΔΗΜΟΣ ΚΟΖΑΝΗΣ
-| Municipality of Kozani | 2030 Climate Neutrality Action Plan |   |
-| --- | --- | --- |
-|  Module C-3 Financing of Action Portfolio |  | 236  |
-|  Outlook and next steps |  | 240  |
-|  Plans for next CCC and Action Plan iteration – textual elements |  | 240  |
-|  Annexes |  | 240  |
-
-5
-ΔΗΜΟΣ ΚΟΖΑΝΗΣ Municipality of Kozani
-Climate Neutrality Action Plan
-O
+- Disclaimer
+- Summary
+- List of figures
+- List of tables
+- Abbreviations and acronyms
+- Introduction
+- Work Process
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- A-1.1: Final energy use by source sectors
+- A-1.2: Emission factors applied
+- A-1.3: Activity by source sectors
+- A-1.4: GHG emissions by source sectors
+- A-1.5: Graphics and charts
+- A-1.6: Description and assessment of GHG baseline inventory
+- Module A-2 Current Policies and Strategies Assessment
+- A-2.1: List of relevant policies, strategies &amp; regulations
+- A-2.2: Description &amp; assessment of policies
+- A-2.3: Emissions gap
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- A-3.1: Systems &amp; stakeholder mapping
+- A-3.2: Description of systemic barriers
+- A-3.3: Description or visualisation of participatory model for the city climate neutrality – textual and visual elements
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Climate Neutrality Action Plan of the Municipality of Kozani
+- Climate Neutrality Action Plan of the Municipality of Kozani
+- | ΔΗΜΟΣ ΚΟΖΑΝΗΣ
+- | Municipality of Kozani | 2030 Climate Neutrality Action Plan | |
+- | --- | --- | --- |
+- | B-1.1: Impact Pathways | 60 | |
+- | B-1.2: Description of impact pathways – textual and visual elements | 75 | |
+- | Module B-2 Climate Neutrality Portfolio Design | 92 | |
+- | B-2.1: Description of action portfolios - textual or visual | 92 | |
+- | B-2.2: Individual action outlines | 98 | |
+- | 7MW Photovoltaic Power Plant by the Energy Community of the Municipality of Kozani | 99 | |
+- | Energy Upgrading of the Public Lighting | 100 | |
+- | Renewable Energy Systems | 102 | |
+- | Building Integrated Renewable Energy Systems | 104 | |
+- | Covering District Heating Thermal Needs with Green Energy | 105 | |
+- | Deep Energy Retrofit of Residences | 108 | |
+- | Deep Energy Retrofit of Municipal buildings | 110 | |
+- | Deep energy retrofit of School buildings | 111 | |
+- | Deep energy retrofit of the sports facilities of the Municipality of Kozani | 113 | |
+- | Deep energy retrofit of the Tertiary Sector Buildings | 115 | |
+- | Smart Energy Management | 117 | |
+- | Penetration of vehicles fuelled by CNG and LPG | 121 | |
+- | Replacement of municipal vehicles with EV with RES installation of charging stations and GPS management | 125 | |
+- | Replacement of private vehicles with EV using RES | 129 | |
+- | Replacement of heavy-duty vehicles with hydrogen technology | 133 | |
+- | Zone with low emissions of air pollutants with priority on the use of EVs | 136 | |
+- | Upgrade of Public Transportation System | 139 | |
+- | Enhancement of Urban Logistics | 143 | |
+- | Promotion of Cycling | 146 | |
+- | Promotion of Walkability | 149 | |
+- | Implementation of Smart Systems for Mobility | 154 | |
+- | Smart Mobility Systems for Citizens | 157 | |
+- | Infrastructure Upgrade to Enhance Mobility | 160 | |
+- | Awareness Raising Campaign for Citizens | 165 | |
+- | Educational Seminars – Eco-Driving | 168 | |
+- | Mobility Incentives & Prevention | 171 | |
+- | Sorting at Source | 174 | |
+- Climate Neutrality Action Plan of the Municipality of Kozani
+- | ΔΗΜΟΣ ΚΟΖΑΝΗΣ
+- | Municipality of Kozani | 2030 Climate Neutrality Action Plan | |
+- | --- | --- | --- |
+- | Circular Economy Upgrade of Municipal Entities | 179 | |
+- | Awareness raising campaign for Circular Economy & Waste | 183 | |
+- | Kozani Water Supply Networks Upgrade | 186 | |
+- | Agriculture/Forestry | 189 | |
+- | Smart Parks – Smart Benches | 190 | |
+- | Digital organization and management platform for work-flows, processes, cases and documents. | 193 | |
+- | Smart City Guide | 196 | |
+- | Application of the Municipality's Electronic Appointments | 199 | |
+- | Smart city platform | 201 | |
+- | B-2.3: Summary strategy for residual emission | 203 | |
+- | Module B-3 Indicators for Monitoring, Evaluation and Learning | 204 | |
+- | B-3.1: Impact Pathways | 204 | |
+- | B-3.2: Indicator Metadata | 206 | |
+- | DH1 – CO₂ emissions from DH | 206 | |
+- | RB – CO₂ emissions from residencies | 207 | |
+- | MB – CO₂ emissions from Municipal buildings | 208 | |
+- | PL – CO₂ emissions from Public Lighting | 209 | |
+- | TB – CO₂ emissions from tertiary sector buildings | 210 | |
+- | MOB – CO₂ emissions from transport | 211 | |
+- | WCE – CO₂ emissions from waste | 212 | |
+- | AF – CO₂ emissions from agriculture | 213 | |
+- | RE1 – Local renewable energy production | 214 | |
+- | DHF – CO₂ emissions factor for DH | 215 | |
+- | RE2 – CO₂ emissions factor for electricity | 216 | |
+- | REM – Residual emissions | 217 | |
+- | Part C – Enabling Climate Neutrality by 2030 | 219 | |
+- | Module C-1 Organisational and Governance Innovation Interventions | 219 | |
+- | C.1.1: Enabling organisational and governance interventions | 219 | |
+- | C-1.2: Description of organisation and governance interventions – textual and visual elements | 223 | |
+- | Module C-2 Social and Other Innovation Interventions | 230 | |
+- | C.2.1: Enabling social innovation interventions | 230 | |
+- | C-2.2: Description of social innovation interventions – textual and visual elements | 233 | |
+- Climate Neutrality Action Plan of the Municipality of Kozani
+- | ΔΗΜΟΣ ΚΟΖΑΝΗΣ
+- | Municipality of Kozani | 2030 Climate Neutrality Action Plan | |
+- | --- | --- | --- |
+- | Module C-3 Financing of Action Portfolio | | 236 |
+- | Outlook and next steps | | 240 |
+- | Plans for next CCC and Action Plan iteration – textual elements | | 240 |
+- | Annexes | | 240 |
+- ΔΗΜΟΣ ΚΟΖΑΝΗΣ Municipality of Kozani
+- Climate Neutrality Action Plan
 
 # Summary
 
@@ -5090,13 +5082,13 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of Contents
 
-Introduction ... 1
-Goal: Climate neutrality by 2030 ... 6
-Key priorities and strategic interventions ... 11
-Principles and process ... 17
-Signatories ... 25
-Contract with signatures ... 27
-Appendices ... 31
+- Introduction
+- Goal: Climate neutrality by 2030
+- Key priorities and strategic interventions
+- Principles and process
+- Signatories
+- Contract with signatures
+- Appendices
 
 # Table of Figures
 

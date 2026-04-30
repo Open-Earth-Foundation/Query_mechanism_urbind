@@ -18,24 +18,27 @@ Climate Neutrality Action Plan
 
 O
 
-Summary 3
-List of figures 4
-List of tables 4
-Abbreviations and acronyms 5
-Introduction 7
-Part A – Current State of Climate Action 22
-Module A-1 Greenhouse Gas Emissions Baseline Inventory 23
-Module A-2 Current Policies and Strategies Assessment 37
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality 71
-Part B – Pathways towards Climate Neutrality by 2030 93
-Module B-1 Climate Neutrality Scenarios and Impact Pathways 93
-Module B-2 Climate Neutrality Portfolio Design 115
-Module B-3 Indicators for Monitoring, Evaluation and Learning 135
-Part C – Enabling Climate Neutrality by 2030 156
-Module C-1 Governance Innovation Interventions 156
-Module C-2 Social Innovation Interventions 177
-Outlook and next steps 188
-Annexes 192
+# Table of Contents
+
+- Summary 3
+- List of figures 4
+- List of tables 4
+- Abbreviations and acronyms 5
+- Introduction 7
+- Part A – Current State of Climate Action 22
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory 23
+- Module A-2 Current Policies and Strategies Assessment 37
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality 71
+- Part B – Pathways towards Climate Neutrality by 2030 93
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways 93
+- Module B-2 Climate Neutrality Portfolio Design 115
+- Module B-3 Indicators for Monitoring, Evaluation and Learning 135
+- Part C – Enabling Climate Neutrality by 2030 156
+- Module C-1 Governance Innovation Interventions 156
+- Module C-2 Social Innovation Interventions 177
+- Outlook and next steps 188
+- Annexes 192
+
 # Summary
 
 This Action Plan is developed as part of the City Climate Contract, reflecting the City's ambition to become climate neutral. The Action Plan elaborates on the strategic priorities defined in the Commitments template and, following the action plan template, describes the current state of climate action in Liberec, including the GHG emission inventory. It outlines pathways towards climate neutrality by 2030, featuring a portfolio of actions aligned with these pathways, a section dedicated to monitoring, evaluation, and learning, as well as a list of governance and social innovations enabling climate neutrality by 2030. This document was developed with the engagement of various key stakeholders, including citizens. An integral part of the Action Plan is the investment plan, which details the financial resources necessary for its implementation and identifies the relevant financial stakeholders.

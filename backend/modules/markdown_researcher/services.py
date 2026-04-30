@@ -7,6 +7,7 @@ from typing import Callable
 from backend.modules.vector_store.manifest import build_chunk_id, compute_content_hash
 from backend.utils.city_normalization import normalize_city_key
 from backend.utils.config import AppConfig, MarkdownResearcherConfig
+from backend.utils.markdown_files import list_markdown_files
 from backend.utils.tokenization import count_tokens, chunk_text, get_max_input_tokens
 
 logger = logging.getLogger(__name__)
@@ -91,11 +92,11 @@ def load_markdown_documents(
     """Load and chunk markdown files for the researcher input payload.
 
     Behavior:
-    - Recursively discovers ``*.md`` files under ``markdown_dir``.
+    - Discovers top-level ``*.md`` files under ``markdown_dir`` without scanning
+      document subfolders.
     - Optionally filters files by ``selected_cities`` (matched against ``Path.stem``,
       case-insensitive).
-    - Assigns ``city_name`` from ``Path.stem`` intentionally, so files with the
-      same stem in different subdirectories map to the same logical city.
+    - Assigns ``city_name`` from ``Path.stem`` intentionally.
     - Returns one entry per chunk with ``path``, ``city_name``, ``content``,
       deterministic ``chunk_id``, and file-local ``chunk_index``.
     """
@@ -103,10 +104,14 @@ def load_markdown_documents(
         raise FileNotFoundError(f"Markdown directory not found: {markdown_dir}")
 
     docs: list[dict[str, object]] = []
-    files = sorted(markdown_dir.rglob("*.md"))
+    files = list_markdown_files(markdown_dir)
     if selected_cities:
-        requested = {city.strip().casefold() for city in selected_cities if city.strip()}
-        files = [path for path in files if path.stem.casefold() in requested]
+        requested = {
+            normalize_city_key(city)
+            for city in selected_cities
+            if isinstance(city, str) and city.strip()
+        }
+        files = [path for path in files if normalize_city_key(path.stem) in requested]
     if len(files) > config.max_files:
         files = files[: config.max_files]
 
@@ -230,10 +235,26 @@ def build_city_batches(
     return tasks
 
 
+def split_batch_documents(
+    batch: list[dict[str, object]],
+) -> tuple[list[dict[str, object]], list[dict[str, object]]]:
+    """Split one batch into two near-even child batches while preserving order."""
+    if len(batch) < 2:
+        raise ValueError("Cannot split a batch with fewer than 2 documents.")
+
+    midpoint = (len(batch) + 1) // 2
+    left = batch[:midpoint]
+    right = batch[midpoint:]
+    if not left or not right:
+        raise ValueError("Split produced an empty child batch.")
+    return left, right
+
+
 __all__ = [
     "build_markdown_chunks_for_file",
     "build_city_batches",
     "resolve_batch_input_token_limit",
     "load_markdown_documents",
+    "split_batch_documents",
     "split_documents_by_city",
 ]

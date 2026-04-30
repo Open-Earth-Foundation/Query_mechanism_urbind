@@ -25,26 +25,23 @@ Climate Neutrality Action Plan
 
 # Table of Contents
 
-Table of Contents ... 3
-Summary ... 4
-Abbreviations and acronyms ... 5
-Introduction ... 6
-Part A – Current State of Climate Action ... 9
-Module A-1 Greenhouse Gas Emissions Baseline Inventory ... 9
-Module A-2 Current Policies and Strategies Assessment ... 14
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality ... 20
-Part B – Pathways towards Climate Neutrality by 2030 ... 31
-Module B-1 Climate Neutrality Scenarios and Impact Pathways ... 31
-Module B-2 Climate Neutrality Portfolio Design ... 34
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 53
-Part C – Enabling Climate Neutrality by 2030 ... 60
-Module C-1 Governance Innovation Interventions ... 60
-Module C-2 Social Innovation Interventions ... 58
-Outlook and next steps ... 70
-Annexes ... 71
-Climate Neutrality Action Plan
-
-O
+- Summary
+- Abbreviations and acronyms
+- Introduction
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- Module C-2 Social Innovation Interventions
+- Outlook and next steps
+- Annexes
+- Climate Neutrality Action Plan
 
 # Summary
 
@@ -1903,19 +1900,14 @@ Climate-Neutrality Commitments
 
 # Table of contents
 
-Table of contents 2
-
-Introduction 3
-Goal: Climate neutrality by 2030 6
-Strategic priorities 6
-Process and underlying principles 7
-Signatories 13
-Sample contract with signatures 19
-
-Appendix 1: Individual / Cluster Signatory Commitments (to be added before submitting the Climate City Contract).
-Climate-Neutrality Commitments
-
-4
+- Introduction
+- Goal: Climate neutrality by 2030
+- Strategic priorities
+- Process and underlying principles
+- Signatories
+- Sample contract with signatures
+- Appendix 1: Individual / Cluster Signatory Commitments (to be added before submitting the Climate City Contract)
+- Climate-Neutrality Commitments
 
 # 1 Introduction
 

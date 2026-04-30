@@ -8,14 +8,13 @@ from backend.api.services.models import LoadedChatSource
 from backend.modules.orchestrator import agent as orchestrator_agent
 from backend.modules.orchestrator.models import ChatFollowupDecision
 from backend.utils.config import (
-    AgentConfig,
     AssumptionsReviewerConfig,
     AppConfig,
     ChatConfig,
     MarkdownResearcherConfig,
     OrchestratorConfig,
     RetryConfig,
-    SqlResearcherConfig,
+    WriterConfig,
 )
 
 
@@ -50,15 +49,13 @@ def _build_test_config(tmp_path: Path) -> AppConfig:
             model="test-model",
             context_bundle_name="context_bundle.json",
         ),
-        sql_researcher=SqlResearcherConfig(model="test-model"),
         markdown_researcher=_markdown_researcher_config(),
-        writer=AgentConfig(model="test-model"),
+        writer=WriterConfig(model="test-model"),
         chat=_chat_config(),
         assumptions_reviewer=AssumptionsReviewerConfig(model="test-model"),
         retry=RetryConfig(backoff_base_seconds=1.0, backoff_max_seconds=30.0),
         runs_dir=tmp_path / "output",
         markdown_dir=tmp_path / "documents",
-        enable_sql=False,
     )
 
 

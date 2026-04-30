@@ -8,17 +8,16 @@ from pathlib import Path
 from typing import Any
 
 from backend.utils.city_normalization import format_city_stem, normalize_city_key
+from backend.utils.markdown_files import list_markdown_files
 
 
 def list_city_names(markdown_dir: Path) -> list[str]:
-    """Return unique city names based on markdown file stems."""
+    """Return unique city names based on top-level markdown file stems."""
     if not markdown_dir.exists():
         return []
 
     names_by_key: dict[str, str] = {}
-    for markdown_file in markdown_dir.rglob("*.md"):
-        if not markdown_file.is_file():
-            continue
+    for markdown_file in list_markdown_files(markdown_dir):
         stem = markdown_file.stem
         key = normalize_city_key(stem)
         if not key:
@@ -28,17 +27,38 @@ def list_city_names(markdown_dir: Path) -> list[str]:
 
 
 def index_city_markdown_files(markdown_dir: Path) -> dict[str, list[Path]]:
-    """Index markdown files by city stem name (case-insensitive key)."""
+    """Index top-level markdown files by city stem name."""
     if not markdown_dir.exists():
         return {}
 
     index: dict[str, list[Path]] = {}
-    for markdown_file in sorted(markdown_dir.rglob("*.md")):
-        if not markdown_file.is_file():
-            continue
+    for markdown_file in list_markdown_files(markdown_dir):
         key = normalize_city_key(markdown_file.stem)
         index.setdefault(key, []).append(markdown_file)
     return index
+
+
+def load_city_markdown(markdown_dir: Path, city_name: str) -> tuple[str, str, list[Path]] | None:
+    """Return canonical city name, concatenated markdown content, and source paths."""
+    city_key = normalize_city_key(city_name)
+    if not city_key:
+        return None
+
+    source_paths = index_city_markdown_files(markdown_dir).get(city_key, [])
+    if not source_paths:
+        return None
+
+    ordered_paths = sorted(
+        source_paths,
+        key=lambda path: (
+            len(path.relative_to(markdown_dir).parts),
+            path.relative_to(markdown_dir).as_posix().casefold(),
+        ),
+    )
+    content = "\n\n".join(
+        path.read_text(encoding="utf-8").rstrip("\n") for path in ordered_paths
+    )
+    return format_city_stem(ordered_paths[0].stem), content, ordered_paths
 
 
 def build_city_subset(
@@ -141,6 +161,7 @@ def _normalize_group_item(
 
 
 __all__ = [
+    "load_city_markdown",
     "list_city_names",
     "index_city_markdown_files",
     "build_city_subset",

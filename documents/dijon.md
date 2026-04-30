@@ -18,27 +18,23 @@ O
 
 # Table of Contents
 
-Table of Contents ... 2
-Summary ... 3
-Introduction ... 6
-Part A – Current State of Climate Action ... 27
-Module A-1 Greenhouse Gas Emissions Baseline Inventory ... 27
-Module A-2 Current Policies and Strategies Assessment ... 34
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality ... 46
-Part B – Pathways towards Climate Neutrality by 2030 ... 56
-Module B-1 Climate Neutrality Scenarios and Impact Pathways ... 56
-Module B-2 Climate Neutrality Portfolio Design ... 246
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 264
-Part C – Enabling Climate Neutrality by 2030 ... 269
-Module C-1 Governance Innovation Interventions ... 269
-Module C-2 Social Innovation Interventions ... 282
-Outlook and next steps ... 288
-Annexes ... 293
-DIJON METROPOLE
-
-Climate Neutrality Action Plan
-
-O
+- Summary
+- Introduction
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- Module C-2 Social Innovation Interventions
+- Outlook and next steps
+- Annexes
+- DIJON METROPOLE
+- Climate Neutrality Action Plan
 
 # Summary
 

@@ -20,38 +20,38 @@ Climate Neutrality Action Plan
 ^{}[]
 # Table of Contents
 
-Table of Contents ... 2
-List of figures ... 3
-List of tables ... 3
-Abbreviations and acronyms ... 4
-Reader's Guide ... 5
-Introduction ... 9
-Part A – Current State of Climate Action ... 23
-Module A-1 Greenhouse Gas Emissions Baseline Inventory ... 23
-Module A-2 Current Policies and Strategies Assessment ... 29
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality ... 42
-Part B – Pathways towards Climate Neutrality by 2030 ... 51
-Module B-1 Climate Neutrality Scenarios and Impact Pathways ... 52
-Module B-2 Climate Neutrality Portfolio Design ... 61
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 71
-Part C – Enabling Climate Neutrality by 2030 ... 75
-Module C-1 Governance Innovation Interventions ... 75
-Module C-2 Social Innovation Interventions ... 78
-Outlook and next steps ... 80
-Annexes ... 82
-B1: Description of the 22 Missions ... 82
-B2: Process: dialogue with the cities ... 82
-B3: Baseline and gap analysis 2023 ... 82
-Annex B1: Description of the 22 Missions ... 83
-Annex B2: Process: dialogue with the cities ... 106
-New Annex: Request for clarification and for additional information by EC/JRC July-September 2025*
-*NB This Annex is uploaded as a separate document in the NZC-portal and not included in this document.
-Gemeente Helmond
-^{}[]
-^{}[]
-EINDHOVEN
-Climate Neutrality Action Plan
-^{}[]
+- List of figures
+- List of tables
+- Abbreviations and acronyms
+- Reader's Guide
+- Introduction
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- Module C-2 Social Innovation Interventions
+- Outlook and next steps
+- Annexes
+- B1: Description of the 22 Missions
+- B2: Process: dialogue with the cities
+- B3: Baseline and gap analysis 2023
+- Annex B1: Description of the 22 Missions
+- Annex B2: Process: dialogue with the cities
+- New Annex: Request for clarification and for additional information by EC/JRC July-September 2025*
+- *NB This Annex is uploaded as a separate document in the NZC-portal and not included in this document
+- Gemeente Helmond
+- ^{}[]
+- ^{}[]
+- EINDHOVEN
+- Climate Neutrality Action Plan
+- ^{}[]
+
 # List of figures
 
 The list of figures identifies the titles and locations (page numbers) of all visual elements: figures, drawings, photos, maps, etc. used in the CCC Action Plan.
@@ -3260,25 +3260,17 @@ Climate Neutrality Action Plan
 ^{}[]
 # Table of Contents
 
-Table of Contents...2
-Introduction...3
-Goal: Climate neutrality by 2030...4
-Key priorities and strategic interventions...6
-Principles and process...9
-Signatories...13
-Annex A1: Letter of support...14
-
-^{}[]
-NetZeroCities has received funding from the H2020 Research and Innovation Programme under the grant agreement n°101036519.
-Gemeente Helmond
-
-3
-
-EINDHOVEN
-
-Climate Neutrality Action Plan
-
-O
+- Introduction
+- Goal: Climate neutrality by 2030
+- Key priorities and strategic interventions
+- Principles and process
+- Signatories
+- Annex A1: Letter of support
+- ^{}[]
+- NetZeroCities has received funding from the H2020 Research and Innovation Programme under the grant agreement n°101036519
+- Gemeente Helmond
+- EINDHOVEN
+- Climate Neutrality Action Plan
 
 # 1.1 Introduction
 

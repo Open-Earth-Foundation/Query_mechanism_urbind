@@ -15,6 +15,7 @@ from backend.api.services.chat_followup_research import (
     ChatFollowupSearchResult,
 )
 from backend.modules.orchestrator.models import ChatFollowupDecision
+from backend.utils.city_normalization import normalize_city_key
 from backend.utils.config import AppConfig
 from backend.utils.paths import RunPaths
 from tests.api_chat.support import (
@@ -854,7 +855,7 @@ def test_chat_followup_same_city_search_replaces_previous_bundle(
         log_llm_payload: bool = False,
     ) -> ChatFollowupSearchResult:
         _ = question, config, api_key, log_llm_payload
-        bundle_id = f"fup_chat_{turn_index:03d}_munich"
+        bundle_id = f"fup_chat_{turn_index:03d}_{normalize_city_key(target_city)}"
         write_followup_bundle(
             runs_dir=runs_dir,
             run_id=run_id,
@@ -900,16 +901,29 @@ def test_chat_followup_same_city_search_replaces_previous_bundle(
         assert contexts[-1]["run_id"].startswith("fup_chat_")
         return f"{user_content} [ref_1]"
 
+    def _stub_route_chat_followup(
+        payload: dict[str, object],
+        config: AppConfig,
+        api_key: str,
+        log_llm_payload: bool = False,
+    ) -> ChatFollowupDecision:
+        _ = config, api_key, log_llm_payload
+        if payload["user_message"] == "Tell me more about Cluj_Napoca.":
+            target_city = "Cluj_Napoca"
+        else:
+            target_city = "Cluj Napoca"
+        return ChatFollowupDecision(
+            action="search_single_city",
+            reason="Need fresh context for Cluj Napoca.",
+            target_city=target_city,
+            rewritten_question="What does Cluj Napoca report?",
+        )
+
     patch_api_config_loaders(monkeypatch, _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
     monkeypatch.setattr(
         "backend.api.services.chat_followup_flow.route_chat_followup",
-        lambda payload, config, api_key, log_llm_payload=False: ChatFollowupDecision(
-            action="search_single_city",
-            reason="Need fresh context for Munich.",
-            target_city="Munich",
-            rewritten_question="What does Munich report?",
-        ),
+        _stub_route_chat_followup,
     )
     monkeypatch.setattr(
         "backend.api.services.chat_followup_flow.run_chat_followup_search",
@@ -934,17 +948,20 @@ def test_chat_followup_same_city_search_replaces_previous_bundle(
 
         first_send = client.post(
             f"/api/v1/runs/run-chat-replace-followup/chat/sessions/{conversation_id}/messages",
-            json={"content": "Tell me more about Munich."},
+            json={"content": "Tell me more about Cluj_Napoca."},
         )
         assert first_send.status_code == 200
 
         second_send = client.post(
             f"/api/v1/runs/run-chat-replace-followup/chat/sessions/{conversation_id}/messages",
-            json={"content": "Refresh Munich again."},
+            json={"content": "Refresh Cluj Napoca again."},
         )
         assert second_send.status_code == 200
         second_payload = second_send.json()
-        assert second_payload["assistant_message"]["routing"]["bundle_id"] == "fup_chat_002_munich"
+        assert (
+            second_payload["assistant_message"]["routing"]["bundle_id"]
+            == "fup_chat_002_cluj_napoca"
+        )
 
         session_contexts = client.get(
             f"/api/v1/runs/run-chat-replace-followup/chat/sessions/{conversation_id}/contexts"
@@ -952,5 +969,5 @@ def test_chat_followup_same_city_search_replaces_previous_bundle(
         assert session_contexts.status_code == 200
         contexts_payload = session_contexts.json()
         assert [bundle["bundle_id"] for bundle in contexts_payload["followup_bundles"]] == [
-            "fup_chat_002_munich"
+            "fup_chat_002_cluj_napoca"
         ]

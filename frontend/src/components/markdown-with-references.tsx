@@ -49,6 +49,7 @@ interface MarkdownWithReferencesProps {
   className?: string;
   chatCitations?: ChatCitation[] | null;
   prefetchRunReferences?: boolean;
+  hideImages?: boolean;
 }
 
 const REFERENCE_TOKEN_PATTERN = /\[(ref_\d+)\](?!\()|(?<![\w[/])(ref_\d+)\b/g;
@@ -263,6 +264,18 @@ function _toPlainText(node: ReactNode): string {
   return "";
 }
 
+function _hasVisibleNode(nodes: ReactNode[]): boolean {
+  return nodes.some((node) => {
+    if (_isWhitespaceTextNode(node)) {
+      return false;
+    }
+    if (Array.isArray(node)) {
+      return _hasVisibleNode(node);
+    }
+    return node !== null && node !== undefined && node !== false;
+  });
+}
+
 function _toReferenceMarkdown(content: string): string {
   return content.replace(
     REFERENCE_TOKEN_PATTERN,
@@ -327,6 +340,7 @@ export function MarkdownWithReferences({
   className,
   chatCitations,
   prefetchRunReferences = true,
+  hideImages = false,
 }: MarkdownWithReferencesProps) {
   const popoverRef = useRef<HTMLDivElement | null>(null);
   const activePopoverRef = useRef<ReferencePopoverState | null>(null);
@@ -674,13 +688,17 @@ export function MarkdownWithReferences({
               return <h1>{children}</h1>;
             },
             p: ({ children }) => (
-              <p>
-                {_collapseCitationRuns(children, {
+              (() => {
+                const collapsedChildren = _collapseCitationRuns(children, {
                   isGroupOpen: isCitationGroupOpen,
                   toggleGroup: toggleCitationGroup,
                   renderCitationRef,
-                })}
-              </p>
+                });
+                if (!_hasVisibleNode(collapsedChildren)) {
+                  return null;
+                }
+                return <p>{collapsedChildren}</p>;
+              })()
             ),
             li: ({ children }) => (
               <li>
@@ -724,6 +742,7 @@ export function MarkdownWithReferences({
                 </a>
               );
             },
+            img: hideImages ? () => null : undefined,
           }}
         >
           {markdownContent}

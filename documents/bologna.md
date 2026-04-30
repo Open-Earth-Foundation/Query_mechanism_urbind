@@ -30,44 +30,32 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of Contents
 
-Abstract... 4
-
-Introduction... 9
-The city of Bologna: historical elements, demographic, socio-economic and territorial characteristics ... 9
-Climate change: mitigation and adaptation at the local level... 11
-Strategic directions for the local climate transition ... 14
-The 2030 climate neutrality objective ... 15
-
-Work process ... 18
-
-Part A – Current State of Climate Action... 25
-Module A-1 Greenhouse Gas Emissions Baseline Inventory... 25
-Module A-2 Current Policies and Strategies Assessment... 35
-European regulatory framework on energy and climate by 2030... 38
-National, regional and local energy and climate framework for 2030... 40
-Need for action on policies, strategies and regulations to enable neutrality... 53
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality... 58
-Stakeholder Analysis... 58
-Description of systemic barriers and opportunities ... 66
-
-Part B – Pathways towards Climate Neutrality by 2030... 76
-Module B-1 Climate Neutrality Scenarios and Impact Pathways... 89
-Module B-2 Climate Neutrality Portfolio Design... 97
-Module B-3 Indicators for Monitoring, Evaluation and Learning... 123
-
-Part C – Enabling Climate Neutrality by 2030... 127
-Module C-1 Governance Innovation Interventions... 127
-Module C-2 Social Innovation Interventions... 153
-Module C-3 Financing the portfolio... 167
-
-Outlook and next steps... 168
-
-Annexes... 169
-Comune di Bologna
-
-Climate Neutrality Action Plan
-
-O
+- Abstract
+- Introduction
+- The city of Bologna: historical elements, demographic, socio-economic and territorial characteristics
+- Climate change: mitigation and adaptation at the local level
+- Strategic directions for the local climate transition
+- The 2030 climate neutrality objective
+- Work process
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- European regulatory framework on energy and climate by 2030
+- National, regional and local energy and climate framework for 2030
+- Need for action on policies, strategies and regulations to enable neutrality
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Stakeholder Analysis
+- Description of systemic barriers and opportunities
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- Module C-2 Social Innovation Interventions
+- Module C-3 Financing the portfolio
+- Outlook and next steps
+- Annexes
 
 # Abstract
 
@@ -6811,18 +6799,13 @@ Climate-Neutrality Commitments
 
 # Table of contents
 
-The Vision of "Bologna Missione Clima" ... 3
-Introduction ... 6
-Goal: Climate neutrality by 2030 ... 9
-Strategic priorities ... 10
-Process and underlying principles ... 14
-Signatories ... 18
-Appendix 1: Individual Signatory Commitments ... 20
-Comune di Bologna
-
-Climate-Neutrality Commitments
-
-O
+- The Vision of "Bologna Missione Clima"
+- Introduction
+- Goal: Climate neutrality by 2030
+- Strategic priorities
+- Process and underlying principles
+- Signatories
+- Appendix 1: Individual Signatory Commitments
 
 # The Vision of “Bologna Missione Clima”
 

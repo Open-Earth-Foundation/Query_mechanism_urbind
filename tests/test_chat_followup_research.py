@@ -11,14 +11,13 @@ from backend.modules.markdown_researcher.models import (
 from backend.modules.orchestrator.models import ResearchQuestionRefinement
 from backend.modules.vector_store.models import RetrievedChunk
 from backend.utils.config import (
-    AgentConfig,
     AppConfig,
     AssumptionsReviewerConfig,
     ChatConfig,
     MarkdownResearcherConfig,
     OrchestratorConfig,
     RetryConfig,
-    SqlResearcherConfig,
+    WriterConfig,
 )
 
 
@@ -28,7 +27,6 @@ def _build_test_config(tmp_path: Path, *, vector_store_enabled: bool) -> AppConf
             model="test-model",
             context_bundle_name="context_bundle.json",
         ),
-        sql_researcher=SqlResearcherConfig(model="test-model"),
         markdown_researcher=MarkdownResearcherConfig(
             model="test-model",
             chunk_overlap_tokens=2000,
@@ -37,7 +35,7 @@ def _build_test_config(tmp_path: Path, *, vector_store_enabled: bool) -> AppConf
             request_backoff_base_seconds=0.5,
             request_backoff_max_seconds=2.0,
         ),
-        writer=AgentConfig(model="test-model"),
+        writer=WriterConfig(model="test-model"),
         chat=ChatConfig(
             model="test-model",
             provider_timeout_seconds=60.0,
@@ -47,7 +45,6 @@ def _build_test_config(tmp_path: Path, *, vector_store_enabled: bool) -> AppConf
         retry=RetryConfig(backoff_base_seconds=1.0, backoff_max_seconds=30.0),
         runs_dir=tmp_path / "output",
         markdown_dir=tmp_path / "documents",
-        enable_sql=True,
         vector_store={
             "enabled": vector_store_enabled,
         },
@@ -142,7 +139,6 @@ def test_run_chat_followup_search_uses_vector_store_retrieval_and_persists_artif
     assert result.excerpt_count == 1
     assert result.target_city == "Munich"
     assert result.total_tokens > 0
-    assert config.enable_sql is True
 
     bundle_dir = chat_followup_research.followup_bundle_dir(
         runs_dir=config.runs_dir,

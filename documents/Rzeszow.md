@@ -21,41 +21,27 @@ Climate Neutrality Action Plan
 
 # Table of Contents
 
-Table of Contents 2
-
-Summary 3
-
-List of figures 5
-
-List of tables 5
-
-Abbreviations and acronyms 6
-
-Introduction 7
-Part A - Current State of Climate Action 11
-
-Module A-1 Greenhouse Gas Emissions Baseline Inventory 131
-Module A-2 Current Policies and Strategies Assessment 21
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality 45
-
-Part B - Pathways towards Climate Neutrality by 2030 75
-
-Module B-1 Climate Neutrality Scenarios and Impact Pathways 75
-Module B-2 Climate Neutrality Portfolio Design 87
-Module B-3 Indicators for Monitoring, Evaluation and Learning 1477
-
-Part C - Enabling Climate Neutrality by 2030 156
-
-Module C-1 Governance Innovation Interventions 156
-Module C-2 Social Innovation Interventions 1733
-
-Outlook and next steps 1811
-Annexes 182
-rzeszów capital of innovation
-
-Climate Neutrality Action Plan
-
-#
+- Summary
+- List of figures
+- List of tables
+- Abbreviations and acronyms
+- Introduction
+- Part A - Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B - Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning 1477
+- Part C - Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- Module C-2 Social Innovation Interventions 1733
+- Outlook and next steps 1811
+- Annexes
+- rzeszów capital of innovation
+- Climate Neutrality Action Plan
+- #
 
 # Summary
 
@@ -4820,21 +4806,16 @@ Climate-Neutrality Commitments
 
 # Table of contents
 
-Table of contents 2
-
-Introduction 3
-Goal: Climate neutrality by 2030 8
-Strategic priorities 9
-Process and underlying principles 12
-Signatories 14
-Sample contract with signatures Błąd! Nie zdefiniowano zakładki.
-
-Appendix 1: Individual / Cluster Signatory Commitments (to be added before submitting the Climate City Contract). Błąd! Nie zdefiniowano zakładki.
-rzeszów capital of innovation
-
-Climate-Neutrality Commitments
-
-#
+- Introduction
+- Goal: Climate neutrality by 2030
+- Strategic priorities
+- Process and underlying principles
+- Signatories
+- Sample contract with signatures Błąd! Nie zdefiniowano zakładki
+- Appendix 1: Individual / Cluster Signatory Commitments (to be added before submitting the Climate City Contract). Błąd! Nie zdefiniowano zakładki
+- rzeszów capital of innovation
+- Climate-Neutrality Commitments
+- #
 
 # 1 Introduction
 

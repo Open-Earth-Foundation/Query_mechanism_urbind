@@ -19,6 +19,7 @@ from backend.modules.writer.utils.markdown_helpers import (
     extract_markdown_excerpts,
     extract_ref_city_mapping,
     extract_selected_city_names,
+    normalize_reference_citations,
     render_cities_considered_section,
     render_no_evidence_section,
     resolve_analysis_mode,
@@ -43,8 +44,11 @@ from backend.utils.config import AppConfig
 from backend.utils.json_io import write_json
 from backend.utils.paths import RunPaths
 from backend.utils.prompts import load_prompt
+from openai import APIConnectionError, APIStatusError, APITimeoutError
+
 from backend.utils.retry import (
     RetrySettings,
+    call_with_retries,
     compute_retry_delay_seconds,
     log_retry_event,
     log_retry_exhausted,
@@ -144,6 +148,17 @@ def _run_writer_once(
     raise ValueError("Writer did not return structured output.")
 
 
+def _is_retryable_writer_error(exc: Exception) -> bool:
+    """Return True for transient writer/provider errors worth retrying."""
+    if isinstance(exc, json.JSONDecodeError):
+        return True
+    if isinstance(exc, (APIConnectionError, APITimeoutError)):
+        return True
+    if isinstance(exc, APIStatusError):
+        return exc.status_code in {408, 429, 500, 502, 503, 504}
+    return False
+
+
 def _build_citation_coverage(
     *,
     status: str,
@@ -177,13 +192,14 @@ def _prepare_writer_content(
 ) -> tuple[str, list[str], list[str], dict[str, str], int, int, str]:
     """Append canonical footer sections and compute citation coverage for one draft."""
     markdown_bundle = extract_markdown_bundle(context_bundle)
+    normalized_content = normalize_reference_citations(content)
     (
         required_city_keys,
         missing_coverage_keys,
         no_evidence_keys,
         city_display_by_key,
     ) = extract_city_coverage_sets(
-        content=content,
+        content=normalized_content,
         markdown_bundle=markdown_bundle,
         selected_city_names=selected_city_names,
     )
@@ -196,7 +212,7 @@ def _prepare_writer_content(
     ]
     cities_considered = selected_city_names or sorted(city_display_by_key.values())
     prepared_content = append_sections(
-        content,
+        normalized_content,
         [
             render_no_evidence_section(no_evidence_names),
             render_cities_considered_section(cities_considered),
@@ -267,6 +283,12 @@ def _write_markdown_single_bundle(
         backoff_max_seconds=config.retry.backoff_max_seconds,
     )
 
+    api_retry_settings = RetrySettings.bounded(
+        max_attempts=config.retry.max_attempts,
+        backoff_base_seconds=config.retry.backoff_base_seconds,
+        backoff_max_seconds=config.retry.backoff_max_seconds,
+    )
+
     previous_answer = ""
     missing_city_keys: list[str] = []
 
@@ -288,11 +310,17 @@ def _write_markdown_single_bundle(
             selected_city_names=selected_city_names,
             reconsideration=reconsideration_payload,
         )
-        output = _run_writer_once(
-            agent=agent,
-            payload=payload,
-            max_turns=config.writer.max_turns,
-            log_llm_payload=log_llm_payload,
+        output = call_with_retries(
+            lambda: _run_writer_once(
+                agent=agent,
+                payload=payload,
+                max_turns=config.writer.max_turns,
+                log_llm_payload=log_llm_payload,
+            ),
+            operation="writer.llm_call",
+            retry_settings=api_retry_settings,
+            should_retry=_is_retryable_writer_error,
+            run_id=run_id,
         )
 
         (

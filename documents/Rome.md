@@ -29,73 +29,71 @@ O
 
 # Table of Contents
 
-List of Figures ... 6
-List of Tables ... 6
-Abbreviations and acronyms ... 6
-Introduction ... 9
-Part A - Current Status of Climate Action ... 13
-Module A-1 Baseline GHG emissions inventory ... 13
-Module A-2 Analysis of existing policies and strategies ... 27
-Module A-3 System Barriers and Opportunities for Climate Neutrality ... 40
-Part B - Pathway to climate neutrality by 2030 ... 62
-Module B-1 Climate neutrality scenarios and impacts ... 62
-Module B-2 Design of the Climate Neutrality Portfolio ... 72
-Module B-3 Monitoring, assessment and learning indicators ... 94
-Part C - Pathway to achieving climate neutrality by 2030 ... 104
-Module C-1 Actions for Governance Innovation ... 105
-Module C-2 Actions for Social Innovation ... 113
-Scenarios and Next Steps ... 126
-Annexes ... 128
-ROMA
-
-Climate Neutrality Action Plan
-
-C
+- List of Figures
+- List of Tables
+- Abbreviations and acronyms
+- Introduction
+- Part A - Current Status of Climate Action
+- Module A-1 Baseline GHG emissions inventory
+- Module A-2 Analysis of existing policies and strategies
+- Module A-3 System Barriers and Opportunities for Climate Neutrality
+- Part B - Pathway to climate neutrality by 2030
+- Module B-1 Climate neutrality scenarios and impacts
+- Module B-2 Design of the Climate Neutrality Portfolio
+- Module B-3 Monitoring, assessment and learning indicators
+- Part C - Pathway to achieving climate neutrality by 2030
+- Module C-1 Actions for Governance Innovation
+- Module C-2 Actions for Social Innovation
+- Scenarios and Next Steps
+- Annexes
+- ROMA
+- Climate Neutrality Action Plan
+- C
 
 # List of Figures
 
-Figure 1: Emissions 2019 divided by scopes and sectors [tCO₂eq] 19
-Figure 2: Emissions 2019 divided by sectors, in percentage 19
-Figure 3: Emissions 2019 divided by sub-sectors, in percentage 20
-Figure 4: Emissions by energy vectors/emitting gases 21
-Figure 5: Timeline and pathway of Roma Capitale toward climate neutrality 28
-Figure 6: Score of the Carbon Disclosure Project 30
-Figure 7: Number of external stakeholders by category 60
-Figure 8: Number of actions per system identified in the stakeholder mapping and NZC sector 61
-Figure 9: The five steps of the causal chain in the Theory of Change 62
-Figure 10: Theory of Change applied to the "right to housing" 63
-Figure 11: Systemic levers 64
-Figure 12: ToC - Electrification and decarbonization 65
-Figure 13: ToC - Energy renovation of private and industrial buildings 66
-Figure 14: ToC - Sustainable and soft mobility 67
-Figure 15: ToC - Waste management 68
-Figure 16: ToC - Green heritage 69
-Figure 17: Number of actions per sector 74
-Figure 18: Correlation between sector and category through the number of actions 77
-Figure 19: Correlation between sector and category through emission reductions 77
-Figure 20: Visual overview of baseline reduction components 89
-Figure 21: Social and governance innovation ecosystem 104
+- Figure 1: Emissions 2019 divided by scopes and sectors [tCO₂eq] 19
+- Figure 2: Emissions 2019 divided by sectors, in percentage 19
+- Figure 3: Emissions 2019 divided by sub-sectors, in percentage 20
+- Figure 4: Emissions by energy vectors/emitting gases 21
+- Figure 5: Timeline and pathway of Roma Capitale toward climate neutrality 28
+- Figure 6: Score of the Carbon Disclosure Project 30
+- Figure 7: Number of external stakeholders by category 60
+- Figure 8: Number of actions per system identified in the stakeholder mapping and NZC sector 61
+- Figure 9: The five steps of the causal chain in the Theory of Change 62
+- Figure 10: Theory of Change applied to the "right to housing" 63
+- Figure 11: Systemic levers 64
+- Figure 12: ToC - Electrification and decarbonization 65
+- Figure 13: ToC - Energy renovation of private and industrial buildings 66
+- Figure 14: ToC - Sustainable and soft mobility 67
+- Figure 15: ToC - Waste management 68
+- Figure 16: ToC - Green heritage 69
+- Figure 17: Number of actions per sector 74
+- Figure 18: Correlation between sector and category through the number of actions 77
+- Figure 19: Correlation between sector and category through emission reductions 77
+- Figure 20: Visual overview of baseline reduction components 89
+- Figure 21: Social and governance innovation ecosystem 104
 
 # List of Tables
 
-Table 1: Baseline emissions inventory 22
-Table 2: IPPU: Emissions values divided by sectors 24
-Table 3: Surface and CO₂ absorption of extra-urban forestry 25
-Table 4: Number and tCO₂ absorption value of trees 25
-Table 5: List of policies and related interventions 32
-Table 6: Emission Gap 39
-Table 7: Stakeholders mapping 45
-Table 8: Number of portfolio actions by category 74
-Table 9: Overview of the actions contained in the portfolio 76
-Table 10: Overview of the measurable actions realised or in progress 79
-Table 11: Overview of measurable action under study 79
-Table 12: Overview of behavioural and policy actions 80
-Table 13: CCC strategies for achieving climate neutrality 82
-Table 14: Enhanced CCC strategies for achieving climate neutrality 83
-Table 15: Climate Adaptation Initiatives by Involved Stakeholders 93
-Table 16: Main digitisation projects and their respective impacts on the governance of change 112
-Table 17: Social innovation and impact pathways 114
-Table 18: Neighbourhoods committees 121
+- Table 1: Baseline emissions inventory 22
+- Table 2: IPPU: Emissions values divided by sectors 24
+- Table 3: Surface and CO₂ absorption of extra-urban forestry 25
+- Table 4: Number and tCO₂ absorption value of trees 25
+- Table 5: List of policies and related interventions 32
+- Table 6: Emission Gap 39
+- Table 7: Stakeholders mapping 45
+- Table 8: Number of portfolio actions by category 74
+- Table 9: Overview of the actions contained in the portfolio 76
+- Table 10: Overview of the measurable actions realised or in progress 79
+- Table 11: Overview of measurable action under study 79
+- Table 12: Overview of behavioural and policy actions 80
+- Table 13: CCC strategies for achieving climate neutrality 82
+- Table 14: Enhanced CCC strategies for achieving climate neutrality 83
+- Table 15: Climate Adaptation Initiatives by Involved Stakeholders 93
+- Table 16: Main digitisation projects and their respective impacts on the governance of change 112
+- Table 17: Social innovation and impact pathways 114
+- Table 18: Neighbourhoods committees 121
 
 # Abbreviations and acronyms
 
@@ -236,16 +234,16 @@ of CO₂eq emissions such as buildings and transport. More details will be provi
 
 Main strategic choices of Roma Capitale:
 
-Growth in production from renewable sources: this measure includes the installation of photovoltaic systems on civil buildings, parking lots and shelters; it also estimates the agrivoltaic potential in the municipal area.
-Efficiency of buildings and electrification of thermal systems: the interventions concern the efficiency of envelopes, electrification of heating systems, implementation of energy consumption management systems, installation of renewable energy source systems for residential, social housing, industrial and tertiary sector buildings.
-Integrated and zero-emission mobility: the strategy proposed in the CCC focuses on the electrification of the vehicle fleet in line with the principles defined by the PNIEC and the enhancement of smart working for all public and private employees.
-Green energy: the estimate recognises partial coverage with green energy of total electricity consumption for the tertiary sector
+- Growth in production from renewable sources: this measure includes the installation of photovoltaic systems on civil buildings, parking lots and shelters; it also estimates the agrivoltaic potential in the municipal area.
+- Efficiency of buildings and electrification of thermal systems: the interventions concern the efficiency of envelopes, electrification of heating systems, implementation of energy consumption management systems, installation of renewable energy source systems for residential, social housing, industrial and tertiary sector buildings.
+- Integrated and zero-emission mobility: the strategy proposed in the CCC focuses on the electrification of the vehicle fleet in line with the principles defined by the PNIEC and the enhancement of smart working for all public and private employees.
+- Green energy: the estimate recognises partial coverage with green energy of total electricity consumption for the tertiary sector
 
 As they will be presented in the following chapters, the strategies must be identified as part of an ambitious path that the Administration is committed to undertaking in the coming years: the estimates relating to the interventions will be validated over the years on the basis of the actual feedback that the Municipality will be able to collect during the process. The perspective for the future of climate goals focuses on the transversal involvement of social and economic actors: through the meetings, already started with stakeholders, the discussion on strategies and individual actions envisaged will be opened thanks to roundtables, follow-up events, seminars that will make it possible to verify the feasibility of the projects and welcome new proposals. The main elements that will guide the Administration are therefore expressed as follow:
 
-Innovation in climate governance: the Administration wants to stimulate innovative forms of institutional governance by strengthening the relationship with European, national and regional institutions, with the Metropolitan City and municipal structures. Collaboration between structures and institutions and joint commitment to shared objectives are decisive factors for achieving climate neutrality targets. Work will be carried out on this point, reaffirming the central role of the Climate Office and the whole Transition Team in a co-designing and listening logic established at the beginning of the pathway to neutrality.
-An inclusive transformation of the city that puts degraded neighbourhoods and buildings at the centre of the work, abandoned public spaces in which the focus is on the care and wellbeing of the people and communities who inhabit the places, starting with the most fragile segments of the population. An inclusive approach in which no one is left behind is the most effective way to build consensus on the energy transition, to make it understand its benefits not only environmentally but also in economic and social terms.
-The integrated approach of climate policies: the transversal nature of the environmental issue emphasizes the need to cross-reference the mitigation policies put in place at different geographical levels (local, Regional, National, European) with the objectives of adaptation: the intertwining of the two issues is inextricable when intervening in neighbourhoods with forestation and adaptation interventions, on energy and infrastructure networks, and an integrated approach allows for more effective results.
+- Innovation in climate governance: the Administration wants to stimulate innovative forms of institutional governance by strengthening the relationship with European, national and regional institutions, with the Metropolitan City and municipal structures. Collaboration between structures and institutions and joint commitment to shared objectives are decisive factors for achieving climate neutrality targets. Work will be carried out on this point, reaffirming the central role of the Climate Office and the whole Transition Team in a co-designing and listening logic established at the beginning of the pathway to neutrality.
+- An inclusive transformation of the city that puts degraded neighbourhoods and buildings at the centre of the work, abandoned public spaces in which the focus is on the care and wellbeing of the people and communities who inhabit the places, starting with the most fragile segments of the population. An inclusive approach in which no one is left behind is the most effective way to build consensus on the energy transition, to make it understand its benefits not only environmentally but also in economic and social terms.
+- The integrated approach of climate policies: the transversal nature of the environmental issue emphasizes the need to cross-reference the mitigation policies put in place at different geographical levels (local, Regional, National, European) with the objectives of adaptation: the intertwining of the two issues is inextricable when intervening in neighbourhoods with forestation and adaptation interventions, on energy and infrastructure networks, and an integrated approach allows for more effective results.
 
 The application of these principles in continuity with the modalities that led to the current edition of the CCC will ensure transparency and good results from the path towards neutrality to 2030 of the city.
 
@@ -1296,11 +1294,11 @@ In order to identify the impact pathways linked to the portfolio of actions, the
 
 The five elements of the causal chain are listed and represented in the figure below:
 
-) The problem/need is related to the problem that the Administration wants to address and should ideally answer to the question "Why does the project/plan/initiative exist?"
-) The final results are the long-term results; these elements can be quantified through medium-long term KPIs
-) Intermediate results are the most immediate results that the Administration expects in the short term, and that represent a thermometer that detects the progress of the action itself in the long term
-) The products/tools with which the Administration acts
-) The activities that the Administration implements to respond to the need/problem that has emerged.
+- The problem/need is related to the problem that the Administration wants to address and should ideally answer to the question "Why does the project/plan/initiative exist?"
+- The final results are the long-term results; these elements can be quantified through medium-long term KPIs
+- Intermediate results are the most immediate results that the Administration expects in the short term, and that represent a thermometer that detects the progress of the action itself in the long term
+- The products/tools with which the Administration acts
+- The activities that the Administration implements to respond to the need/problem that has emerged.
 
 ![img-0.jpeg](img-0.jpeg)
 Figure 9: The five steps of the causal chain in the Theory of Change
@@ -1420,9 +1418,9 @@ Within the Theory of Change it is important to also highlight the direct impacts
 
 In the macro-action relating to the electrification and decarbonisation of the territory, the main impacts that the activities implemented by the Administration and the entire urban eco-system want to achieve are:
 
-) less dependence on non-renewable fossil sources
-) increase local energy production, to achieve energy independence.
-) increase the awareness of citizens and of trade associations on the electrification potential that involves them.
+- less dependence on non-renewable fossil sources
+- increase local energy production, to achieve energy independence.
+- increase the awareness of citizens and of trade associations on the electrification potential that involves them.
 
 To achieve these objectives, the presence of incentives and information desks is fundamental for transversal involvement and for the diffusion of efficient solutions. The incentives for the installation of new RES plants are fundamental but the indirect advantage on the bill that the individual citizen can obtain through a reconversion of their consumption should not be forgotten. The electrification objectives also concern the conversion of both, public and private fleet, and the implementation of the needed infrastructure.
 
@@ -1430,18 +1428,18 @@ The increase in electricity consumption raises the issue of the resilience of th
 
 The action related to the efficiency of civil and industrial buildings, defines the following direct impacts:
 
-) overcoming regulatory constraints for the efficiency of heritage buildings
-) reduction of energy consumption
-) increase in energy production from renewable sources.
+- overcoming regulatory constraints for the efficiency of heritage buildings
+- reduction of energy consumption
+- increase in energy production from renewable sources.
 
 Technological innovations, the improvement of materials, the definition of precise standards for efficiency promise great improvements in the coming years in this area which still represents the most relevant sector, in terms of emissions, for the city of Rome (60% of the baseline). The administration, also through raising the awareness of other entities in the private sector and associations, is also heavily investing.
 
 The mobility sector represents the second sector with the highest number of emissions (34% of the total baseline value) in Rome. Therefore, the topic of sustainable mobility has a high relevance for the Administration. The direct impacts that Roma Capitale aims for are:
 
-) reduction of emissions from fossil fuels because of reduced traffic
-) improvement of the LPT offer
-) reduction in private consumption from transport
-) development of sharing economy services.
+- reduction of emissions from fossil fuels because of reduced traffic
+- improvement of the LPT offer
+- reduction in private consumption from transport
+- development of sharing economy services.
 
 The Administration is working through awareness campaigns to increase the use of sustainable mobility also by public and private companies. The smart working solutions adopted by various companies have guaranteed an improvement in city livability thanks to a massive reduction in urban traffic. Numerous interventions of great impact are planned considering the events that the city of Rome is preparing to host (Jubilee 2025).
 
@@ -1454,16 +1452,16 @@ Climate Neutrality Action Plan
 
 Water and waste management is bound to the updating of legislation, not always in line with the modernization of the sector. Among the main impacts in which the Administration is investing are:
 
-) technological innovations for reducing the impact of emissions
-) reduction of waste sent to landfill
+- technological innovations for reducing the impact of emissions
+- reduction of waste sent to landfill
 
 The direct impacts that the Administration expects go in concert with the awareness, training and participation campaigns that it is carrying out (see Module C). These same objectives must involve the private sector equally.
 
 The green heritage in the city of Rome necessarily involves the updating of municipal plans: the complexity and heterogeneity of the urban green context requires a broad level of involvement of the public sector to guarantee coherent and long-term development. Among the direct impacts foreseen by the Administration for this macro-action are:
 
-) reduction of climate change gases and of climate impacts on central urban areas
-) increase in the municipal tree budget and green spaces
-) reduction of the phenomenon of heat waves
+- reduction of climate change gases and of climate impacts on central urban areas
+- increase in the municipal tree budget and green spaces
+- reduction of the phenomenon of heat waves
 
 The solutions implemented must also include innovative Natural Based Solutions that involve other entities operating in the sector: some of them have presented actions included in the portfolio of this Action Plan.
 ROMA
@@ -4465,34 +4463,28 @@ Climate-Neutrality Commitments
 
 # Table of Contents
 
-Introduction 5
-Climate City Contract's Stakeholder Engagement 8
-Climate neutrality actions and investments 9
-The Climate City Contract's 2030 decarbonisation target 13
-Strategic Priorities 15
-
-Growth in renewable energy production 15
-Integrated and zero-emission mobility 16
-Power grid adaptation and resilience 17
-Energy and social regeneration of urban areas 17
-Sustainable waste and material management 17
-Green Procurement 17
-
-Principles at the heart of the path to climate neutrality 19
-
-Climate Governance Innovation 19
-Integrated Approach to Climate Mitigation and Adaptation Policies 19
-An Inclusive Transformation of the City 19
-
-The process towards climate neutrality 21
-Barriers and challenges for the implementation of the Climate City Contract 22
-
-Resources to finance decarbonisation 22
-Ancient Rome, the archaeological finds 25
-Building strong institutional cooperation 26
-Training for green jobs 26
-
-Signatures 28
+- Introduction
+- Climate City Contract's Stakeholder Engagement
+- Climate neutrality actions and investments
+- The Climate City Contract's 2030 decarbonisation target
+- Strategic Priorities
+- Growth in renewable energy production
+- Integrated and zero-emission mobility
+- Power grid adaptation and resilience
+- Energy and social regeneration of urban areas
+- Sustainable waste and material management
+- Green Procurement
+- Principles at the heart of the path to climate neutrality
+- Climate Governance Innovation
+- Integrated Approach to Climate Mitigation and Adaptation Policies
+- An Inclusive Transformation of the City
+- The process towards climate neutrality
+- Barriers and challenges for the implementation of the Climate City Contract
+- Resources to finance decarbonisation
+- Ancient Rome, the archaeological finds
+- Building strong institutional cooperation
+- Training for green jobs
+- Signatures
 
 # Note
 
@@ -4569,17 +4561,17 @@ Rome's Climate City Contract has involved the city's economic and social actors 
 
 # 80 stakeholders have joined the Climate City Contract process in Rome:
 
-12 among Institutions, Bodies and State-controlled Companies based in Rome (Agenzia del Demanio, Autostrade per l'Italia, Banca d'Italia, Cassa depositi e prestiti, Cinecità, Istituto Nazionale della Prevenenza Sociale, Istituto Poligrafico e Zecca dello Stato, Leonardo, Poste Italiane, Rete Ferroviaria Italiana, SACE, Sport and Health).
-6 subsidiary and investee companies of Roma Capitale (Acea ATO2, Ama, Areti, Atac, Centro Agroalimentare di Roma, Risorse per Roma).
-8 Energy companies (Edison Next, Enel Sole, Enel X Way Italia, Enel X Italia, Engie, Eni, Siram, Terna).
-7 Research Institutions and Universities (CNR, ENEA, Ispra, Rome Botanical Garden, La Sapienza University, Tor Vergata University, Roma Tre University).
-1 Public Administration body operating in the health sector (ASL 1 Rome).
-4 Foundations (Banco dell'Energia, Bioparco di Roma, Marevivo, MAXXI).
-4 Credit Institutes (Banca Etica, BCC di Roma, Istituto per il Credito Sportivo, Unicredit)
-1 Business Association (Unindustria)
-28 among private companies, enterprises and cooperatives operating in different sectors (ABB, Aeroporti di Roma, Aisfor, Almaviva, Angelini Real Estate, AzzeroCO2, Basf Italia, Birra Peroni, Biscotti P. Gentilini, CER Confartigianato Lazio, Coopservice, Elettronica, Envision, Fassa, Hotel Eden, Ikea Italia, Intecs Solutions, Maire, Netgroup, NH collections Hotel, Radio Rock, Sensoworks, Servier Italia, Teicos, Toyota Motor Italia, Triumph Italy, UrbanV., Wind Tre),
-7 Third Sector organisations and Associations (A Sud, Greenpeace Italy, Green Building Council Italy, Kyoto Club, Rete Assist, Save the Children, WWF Italy)
-2 'extraterritorial' organisations: FAO (the Rome-based Food and Agriculture Organisation of the United Nations) and Fabbrica San Pietro (Institution of the Vatican City State).
+- 12 among Institutions, Bodies and State-controlled Companies based in Rome (Agenzia del Demanio, Autostrade per l'Italia, Banca d'Italia, Cassa depositi e prestiti, Cinecità, Istituto Nazionale della Prevenenza Sociale, Istituto Poligrafico e Zecca dello Stato, Leonardo, Poste Italiane, Rete Ferroviaria Italiana, SACE, Sport and Health).
+- 6 subsidiary and investee companies of Roma Capitale (Acea ATO2, Ama, Areti, Atac, Centro Agroalimentare di Roma, Risorse per Roma).
+- 8 Energy companies (Edison Next, Enel Sole, Enel X Way Italia, Enel X Italia, Engie, Eni, Siram, Terna).
+- 7 Research Institutions and Universities (CNR, ENEA, Ispra, Rome Botanical Garden, La Sapienza University, Tor Vergata University, Roma Tre University).
+- 1 Public Administration body operating in the health sector (ASL 1 Rome).
+- 4 Foundations (Banco dell'Energia, Bioparco di Roma, Marevivo, MAXXI).
+- 4 Credit Institutes (Banca Etica, BCC di Roma, Istituto per il Credito Sportivo, Unicredit)
+- 1 Business Association (Unindustria)
+- 28 among private companies, enterprises and cooperatives operating in different sectors (ABB, Aeroporti di Roma, Aisfor, Almaviva, Angelini Real Estate, AzzeroCO2, Basf Italia, Birra Peroni, Biscotti P. Gentilini, CER Confartigianato Lazio, Coopservice, Elettronica, Envision, Fassa, Hotel Eden, Ikea Italia, Intecs Solutions, Maire, Netgroup, NH collections Hotel, Radio Rock, Sensoworks, Servier Italia, Teicos, Toyota Motor Italia, Triumph Italy, UrbanV., Wind Tre),
+- 7 Third Sector organisations and Associations (A Sud, Greenpeace Italy, Green Building Council Italy, Kyoto Club, Rete Assist, Save the Children, WWF Italy)
+- 2 'extraterritorial' organisations: FAO (the Rome-based Food and Agriculture Organisation of the United Nations) and Fabbrica San Pietro (Institution of the Vatican City State).
 
 ![img-0.jpeg](img-0.jpeg)
 Figure 4. CCC Stakeholders by category

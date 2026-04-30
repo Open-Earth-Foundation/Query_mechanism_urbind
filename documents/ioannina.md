@@ -30,36 +30,31 @@ C
 
 # Table of Contents
 
-Table of Contents...4
-
-Introduction...8
-Work Process...32
-Part A – Current State of Climate Action...51
-Module A-1 Greenhouse Gas Emissions Baseline Inventory...51
-Module A-2 Current Policies and Strategies Assessment...68
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality...81
-Part B – Pathways towards Climate Neutrality by 2030...93
-Module B-1 Climate Neutrality Scenarios and Impact Pathways...93
-Module B-2 Climate Neutrality Portfolio Design...113
-Module B-3 Indicators for Monitoring, Evaluation and Learning...142
-Part C – Enabling Climate Neutrality by 2030...151
-Module C-1 Organisational and Governance Innovation Interventions...151
-Module C-2 Social and Other Innovation Interventions...157
-Module C-3 Financing of Action Portfolio...173
-Outlook and next steps...185
-Annexes...189
-Appendix I: Citizen's questionnaire...189
-Appendix II: Letters of Support...189
-Appendix III: Mobility &amp; transport planning...189
-Appendix IV: Individual Actions Outline...189
-Appendix V: Indicator Metadata...189
-
-City of Ioannina, Greece
-IOANNINA 2030
-
-Climate Neutrality Action Plan
-
-#
+- Introduction
+- Work Process
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Organisational and Governance Innovation Interventions
+- Module C-2 Social and Other Innovation Interventions
+- Module C-3 Financing of Action Portfolio
+- Outlook and next steps
+- Annexes
+- Appendix I: Citizen's questionnaire
+- Appendix II: Letters of Support
+- Appendix III: Mobility &amp; transport planning
+- Appendix IV: Individual Actions Outline
+- Appendix V: Indicator Metadata
+- City of Ioannina, Greece
+- IOANNINA 2030
+- Climate Neutrality Action Plan
+- #
 
 # Summary
 
@@ -5895,46 +5890,42 @@ Climate Neutrality Action Plan Appendix V: Indicator Metadata
 
 # Table of Contents
 
-Table of Contents...4
-B-3.2: Indicator Metadata...6
-Buildings Sector...6
-BL_CO2_PR_EL...6
-BL_MWh_PR_EL...7
-BL_CO2_PR_DS...7
-BL_CO2_PR_LPG...8
-BL_CO2_PR_NG...9
-BL_CO2_PR_FR/PL...10
-BL_CO2_PU_EL...11
-BL_MWh_PU_EL...11
-BL_MWh_ML_EL...12
-BL_CO2_ML_EL...13
-BL_CO2_PU_DS...14
-BL_CO2_SCH_DS...15
-Transport Sector...15
-TS_CO2_PU_DS...16
-TS_CO2_PU_GS...16
-TS_CO2_PR_FU...17
-TS_CO2_ICB_DS...18
-TS_CO2_CB_DS...19
-TS_CO2_LB_DS...20
-TS_CO2_IN/OUT_FUEL...20
-Waste Sector...21
-WS_CO2_PU_DIS...21
-WS_CO2_IN_DS...22
-WS_CO2_OUT_DS...23
-WT_CO2_PU_DS...24
-WT_CO2_PU_EL...24
-WT_MWh_PU_EL...25
-IPPU Sector...26
-IP_CO2_PR_DS...26
-IP_CO2_PR_LPG...27
-IP_CO2_PR_CNG...28
-4
-
-City of Ioannina, Greece
-Climate Neutrality Action Plan
-Appendix V: Indicator Metadata
-5
+- B-3.2: Indicator Metadata
+- Buildings Sector
+- BL_CO2_PR_EL
+- BL_MWh_PR_EL
+- BL_CO2_PR_DS
+- BL_CO2_PR_LPG
+- BL_CO2_PR_NG
+- BL_CO2_PR_FR/PL
+- BL_CO2_PU_EL
+- BL_MWh_PU_EL
+- BL_MWh_ML_EL
+- BL_CO2_ML_EL
+- BL_CO2_PU_DS
+- BL_CO2_SCH_DS
+- Transport Sector
+- TS_CO2_PU_DS
+- TS_CO2_PU_GS
+- TS_CO2_PR_FU
+- TS_CO2_ICB_DS
+- TS_CO2_CB_DS
+- TS_CO2_LB_DS
+- TS_CO2_IN/OUT_FUEL
+- Waste Sector
+- WS_CO2_PU_DIS
+- WS_CO2_IN_DS
+- WS_CO2_OUT_DS
+- WT_CO2_PU_DS
+- WT_CO2_PU_EL
+- WT_MWh_PU_EL
+- IPPU Sector
+- IP_CO2_PR_DS
+- IP_CO2_PR_LPG
+- IP_CO2_PR_CNG
+- City of Ioannina, Greece
+- Climate Neutrality Action Plan
+- Appendix V: Indicator Metadata
 
 # 5 AFOLU Sector
 
@@ -6986,18 +6977,15 @@ The content of this document reflects only the author's view. The European Commi
 
 ## Table of contents
 
-Introduction ... 5
-Goal: Climate neutrality by 2030 ... 7
-Key priorities and strategic interventions ... 8
-Principles and process ... 11
-Signatories ... 14
-Contract with signatures ... 18
-
-Appendix I: Individual Signatory Commitments ... 20
-Appendix II: Sustainable Urban Development Plan Funding ... 22
-Climate-Neutrality Commitments
-
-5
+- Introduction
+- Goal: Climate neutrality by 2030
+- Key priorities and strategic interventions
+- Principles and process
+- Signatories
+- Contract with signatures
+- Appendix I: Individual Signatory Commitments
+- Appendix II: Sustainable Urban Development Plan Funding
+- Climate-Neutrality Commitments
 
 # 1 Introduction
 

@@ -25,43 +25,28 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of Contents
 
-Table of Contents 2
-
-Summary 3
-
-List of figures 3
-
-List of tables 3
-
-Abbreviations and acronyms 3
-
-Introduction 4
-
-Part A – Current State of Climate Action 15
-
-Module A-1 Greenhouse Gas Emissions Baseline Inventory 33
-Module A-2 Current Policies and Strategies Assessment 59
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality 72
-
-Part B – Pathways towards Climate Neutrality by 2030 105
-
-Module B-1 Climate Neutrality Scenarios and Impact Pathways 105
-Module B-2 Climate Neutrality Portfolio Design 169
-Module B-3 Indicators for Monitoring, Evaluation and Learning 282
-
-Part C – Enabling Climate Neutrality by 2030 337
-
-Module C-1 Organisational and Governance Innovation Interventions 337
-Module C-2 Social and Other Innovation Interventions 341
-Module C-3 Financing of Action Portfolio 350
-
-Outlook and next steps 361
-Annexes 361
-COUNCIL OF PRATO
-
-Climate-Neutrality Commitments
-
-#
+- Summary
+- List of figures
+- List of tables
+- Abbreviations and acronyms
+- Introduction
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Organisational and Governance Innovation Interventions
+- Module C-2 Social and Other Innovation Interventions
+- Module C-3 Financing of Action Portfolio
+- Outlook and next steps
+- Annexes
+- COUNCIL OF PRATO
+- Climate-Neutrality Commitments
+- #
 
 # Summary
 

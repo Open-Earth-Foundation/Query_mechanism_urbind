@@ -16,6 +16,7 @@ RunStatus = Literal[
     "stopped",
 ]
 AnalysisMode = Literal["aggregate", "city_by_city"]
+QueryMode = Literal["standard", "dev"]
 
 
 class RunError(BaseModel):
@@ -31,12 +32,17 @@ class CreateRunRequest(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     question: str = Field(min_length=1)
+    query_mode: QueryMode = "standard"
+    query_2: str | None = None
+    query_3: str | None = None
     run_id: str | None = None
     cities: list[str] | None = None
     config_path: str | None = None
     markdown_path: str | None = None
     log_llm_payload: bool = False
     analysis_mode: AnalysisMode = "aggregate"
+    enrichment_enabled: bool | None = None
+    web_research_enabled: bool | None = None
 
 
 class CreateRunResponse(BaseModel):
@@ -49,6 +55,29 @@ class CreateRunResponse(BaseModel):
     context_url: str
 
 
+class PipelineStepItem(BaseModel):
+    """Single sub-item inside a pipeline progress step."""
+
+    text: str
+    item_type: str | None = None
+    title: str | None = None
+    domain: str | None = None
+    url: str | None = None
+    count: int | None = None
+    metadata: dict[str, object] | None = None
+
+
+class PipelineStep(BaseModel):
+    """One step in the pipeline progress tracker."""
+
+    id: str
+    label: str
+    status: str
+    started_at: str | None = None
+    completed_at: str | None = None
+    items: list[PipelineStepItem] = Field(default_factory=list)
+
+
 class RunStatusResponse(BaseModel):
     """Response body for run status polling."""
 
@@ -58,6 +87,7 @@ class RunStatusResponse(BaseModel):
     completed_at: datetime | None = None
     finish_reason: str | None = None
     error: RunError | None = None
+    steps: list[PipelineStep] | None = None
 
 
 class RunDiagnosticsArtifactPaths(BaseModel):
@@ -196,6 +226,7 @@ class RunSummary(BaseModel):
     run_id: str
     question: str
     status: RunStatus
+    picker_timestamp: str
 
 
 class RunListResponse(BaseModel):
@@ -238,6 +269,14 @@ class CityListResponse(BaseModel):
     cities: list[str]
     total: int
     markdown_dir: str
+
+
+class CityMarkdownResponse(BaseModel):
+    """Response body for one city's raw markdown source document."""
+
+    city_name: str
+    content: str
+    source_paths: list[str]
 
 
 class CityGroup(BaseModel):
@@ -458,6 +497,8 @@ __all__ = [
     "RunStatus",
     "AnalysisMode",
     "RunError",
+    "PipelineStepItem",
+    "PipelineStep",
     "CreateRunRequest",
     "CreateRunResponse",
     "RunStatusResponse",

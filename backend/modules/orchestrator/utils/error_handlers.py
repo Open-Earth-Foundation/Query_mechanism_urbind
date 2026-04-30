@@ -33,9 +33,9 @@ def handle_orchestration_error(
         run_logger: Logger for recording run artifacts
         run_log_handler: File handler for run logs
         paths: Run paths for output
-        error_code: Error code for classification (e.g., "SQL_EXECUTION_ERROR")
+        error_code: Error code for classification
         message: Human-readable error message
-        reason: Reason for finalization (e.g., "sql_execution_failed")
+        reason: Reason for finalization
         exc: The exception that occurred
 
     Returns:
@@ -63,10 +63,10 @@ def handle_task_error(
     paths: RunPaths,
 ) -> RunPaths:
     """
-    Handle errors from parallel task execution (SQL and Markdown).
+    Handle errors from orchestrator task execution.
 
     Args:
-        task_name: Name of the task that failed ("sql" or "markdown")
+        task_name: Name of the task that failed
         exc: The exception that occurred
         run_logger: Logger for recording run artifacts
         run_log_handler: File handler for run logs
@@ -75,17 +75,7 @@ def handle_task_error(
     Returns:
         The run paths for the failed run
     """
-    if task_name == "sql":
-        return handle_orchestration_error(
-            run_logger,
-            run_log_handler,
-            paths,
-            error_code="SQL_EXECUTION_ERROR",
-            message="SQL execution failed",
-            reason="sql_execution_failed",
-            exc=exc,
-        )
-    else:  # markdown
+    if task_name == "markdown":
         return handle_orchestration_error(
             run_logger,
             run_log_handler,
@@ -95,6 +85,17 @@ def handle_task_error(
             reason="markdown_extraction_failed",
             exc=exc,
         )
+
+    message = f"{task_name.capitalize()} task failed"
+    return handle_orchestration_error(
+        run_logger,
+        run_log_handler,
+        paths,
+        error_code=f"{task_name.upper()}_ERROR",
+        message=message,
+        reason=f"{task_name}_failed",
+        exc=exc,
+    )
 
 
 __all__ = ["detach_run_file_logger", "handle_orchestration_error", "handle_task_error"]

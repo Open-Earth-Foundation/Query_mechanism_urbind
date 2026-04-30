@@ -18,27 +18,24 @@ O
 
 # Table of Contents
 
-Table of Contents ... 2
-Summary ... 3
-List of figures ... 4
-List of tables ... 4
-Abbreviations and acronyms ... 4
-Part A – Current State of Climate Action ... 6
-Module A-1 Greenhouse Gas Emissions Baseline Inventory ... 6
-Module A-2 Current Policies and Strategies Assessment ... 15
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality ... 22
-Part B – Pathways towards Climate Neutrality by 2030 ... 33
-Module B-1 Climate Neutrality Scenarios and Impact Pathways ... 33
-Module B-2 Climate Neutrality Portfolio Design ... 51
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 77
-Part C – Enabling Climate Neutrality by 2030 ... 82
-Module C-1 Governance Innovation Interventions ... 82
-Module C-2 Social Innovation Interventions ... 88
-Outlook and next steps ... 91
-Annexes ... 91
-Climate Neutrality Action Plan
-
-O
+- Summary
+- List of figures
+- List of tables
+- Abbreviations and acronyms
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- Module C-2 Social Innovation Interventions
+- Outlook and next steps
+- Annexes
+- Climate Neutrality Action Plan
 
 # Summary
 
@@ -1348,19 +1345,14 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of contents
 
-Table of contents ... 2
-Introduction ... 4
-Articulation between PCAET and CCC ... 5
-Towards a resilient, carbon neutral, 100% renewable energy territory ... 6
-Strategic priorities ... 7
-Process and principles ... 10
-Signatories ... 12
-3
-Climate-Neutrality
-
-Commitments
-
-O
+- Introduction
+- Articulation between PCAET and CCC
+- Towards a resilient, carbon neutral, 100% renewable energy territory
+- Strategic priorities
+- Process and principles
+- Signatories
+- Climate-Neutrality
+- Commitments
 
 # 1 Introduction
 

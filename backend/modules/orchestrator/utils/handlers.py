@@ -105,7 +105,6 @@ def handle_write_decision(
             paths,
             run_logger,
             config,
-            finish_reason=finish_reason,
         )
         run_logger.finalize(
             terminal_status,

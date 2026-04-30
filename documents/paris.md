@@ -21,28 +21,24 @@ C
 
 # Table of Contents
 
-Table of Contents ... 2
-Summary ... 3
-Introduction ... 5
-Part A – Current State of Climate Action ... 11
-Module A-1 Greenhouse Gas Emissions Baseline Inventory ... 11
-Module A-2 Current Policies and Strategies Assessment ... 14
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality ... 27
-Part B – Pathways towards Climate Neutrality by 2030 ... 32
-Module B-1 Climate Neutrality Scenarios and Impact Pathways ... 32
-Module B-2 Climate Neutrality Portfolio Design ... 39
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 40
-Part C – Enabling Climate Neutrality by 2030 ... 41
-Module C-1 Governance Innovation Interventions ... 41
-Module C-2 Social Innovation Interventions ... 43
-Outlook and next steps ... 45
-PARIS
-
-Climate Neutrality Action Plan
-
-April 2025
-
-C
+- Summary
+- Introduction
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- Module C-2 Social Innovation Interventions
+- Outlook and next steps
+- PARIS
+- Climate Neutrality Action Plan
+- April 2025
+- C
 
 # Summary
 
@@ -1496,19 +1492,15 @@ C
 
 # Table of contents
 
-Introduction ... 3
-A mutual enrichment of the Climate City Contract and the Parisian Climate Action Plan ... 4
-Goal: make Paris a resilient, inclusive, carbon-neutral and 100% renewable energy city ... 4
-Key priorities and strategic interventions ... 6
-Principles and process ... 9
-Signatories ... 13
-PARIS
-
-Climate-Neutrality Commitments
-
-April 2025
-
-3
+- Introduction
+- A mutual enrichment of the Climate City Contract and the Parisian Climate Action Plan
+- Goal: make Paris a resilient, inclusive, carbon-neutral and 100% renewable energy city
+- Key priorities and strategic interventions
+- Principles and process
+- Signatories
+- PARIS
+- Climate-Neutrality Commitments
+- April 2025
 
 # 1 Introduction
 

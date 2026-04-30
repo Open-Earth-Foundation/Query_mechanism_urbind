@@ -33,48 +33,42 @@ Missions València 2030
 
 # Index
 
-Index ... 4
-Introduction ... 6
-Commitment of the city of València towards climate neutrality ... 9
-Introduction ... 9
-Goal: Climate neutrality by 2030 ... 10
-València's ambition towards climate neutrality by 2030 ... 12
-Lessons learnt ... 14
-Co-benefits of the mission ... 16
-Key priorities and strategic interventions ... 17
-Transition and systemic innovation ... 19
-Principles and process ... 22
-Social and political consensus ... 22
-A green and social pact for a just transition ... 23
-A collective journey that breaks down silos ... 24
-The Mission Alliance ... 28
-A continuous learning process ... 32
-Economic development based on innovation ... 32
-The process of co-creation and enrichment of the València Climate City Contract ... 34
-Government of Spain's support for climate neutrality in Mission cities ... 38
-Commitments of the Generalitat Valenciana towards climate neutrality in the city of València ... 39
-Monitoring, updating and amending the climate city contract and its annexes ... 43
-
-## Annex 1 - Climate Action Plan (CAP)
-
-Climate City Contract - València
-Annex 2 - Climate Investment Plan (CIP)
-
-# Annex 3 – Mission Alliance: València Multi-Actor Local Platform
-
-## (Appendix: Accession of organisations: Individual signatory commitments)
-
-## Figures
-
-Figure 1: València's systemic transition to climate neutrality... 18
-Figure 2: The six perspectives of València's strategic framework ... 23
-Figure 3: The helices of the València innovation ecosystem ... 26
-Figure 4: València Mission Transition Team Diagram ... 27
-Figure 5: València Mission Transition Team Components ... 28
-Figure 6: The València Mission Alliance ... 29
-Figure 7: The constellation of Climate Mission R&amp;I projects ... 30
-Figure 8: Levels of València's Climate City Contract engagement process ... 34
-Figure 9: Detail of the process of involvement with the València Climate City Contract ... 37
+- Index ... 4
+- Introduction ... 6
+- Commitment of the city of València towards climate neutrality ... 9
+- Introduction ... 9
+- Goal: Climate neutrality by 2030 ... 10
+- València's ambition towards climate neutrality by 2030 ... 12
+- Lessons learnt ... 14
+- Co-benefits of the mission ... 16
+- Key priorities and strategic interventions ... 17
+- Transition and systemic innovation ... 19
+- Principles and process ... 22
+- Social and political consensus ... 22
+- A green and social pact for a just transition ... 23
+- A collective journey that breaks down silos ... 24
+- The Mission Alliance ... 28
+- A continuous learning process ... 32
+- Economic development based on innovation ... 32
+- The process of co-creation and enrichment of the València Climate City Contract ... 34
+- Government of Spain's support for climate neutrality in Mission cities ... 38
+- Commitments of the Generalitat Valenciana towards climate neutrality in the city of València ... 39
+- Monitoring, updating and amending the climate city contract and its annexes ... 43
+- Annex 1 - Climate Action Plan (CAP)
+- Climate City Contract - València
+- Annex 2 - Climate Investment Plan (CIP)
+- Annex 3 – Mission Alliance: València Multi-Actor Local Platform
+- (Appendix: Accession of organisations: Individual signatory commitments)
+- Figures
+- Figure 1: València's systemic transition to climate neutrality... 18
+- Figure 2: The six perspectives of València's strategic framework ... 23
+- Figure 3: The helices of the València innovation ecosystem ... 26
+- Figure 4: València Mission Transition Team Diagram ... 27
+- Figure 5: València Mission Transition Team Components ... 28
+- Figure 6: The València Mission Alliance ... 29
+- Figure 7: The constellation of Climate Mission R&amp;I projects ... 30
+- Figure 8: Levels of València's Climate City Contract engagement process ... 34
+- Figure 9: Detail of the process of involvement with the València Climate City Contract ... 37
 
 Climate City Contract - València
 Climate City Contract - València
@@ -817,24 +811,24 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of Contents
 
-ANNEX I. 2030 CLIMATE NEUTRALITY ACTION PLAN OF THE CITY OF VALENCIA ...4
-INTRODUCTION...4
-How will we do it? València's perspective...4
-WORK PROCESS...5
-How is this ambition addressed in the following Action Plan?...7
-PART A - CURRENT STATE OF CLIMATE ACTION...9
-MODULE A-1: Greenhouse Gas Emissions Baseline inventory...9
-MODULE A-2: Current Policies and Strategies Assessment...21
-MODULE A-3: Systemic barriers and opportunities to 2030 climate neutrality...34
-PART B - PATHWAYS TOWARDS CLIMATE NEUTRALITY BY 2030...55
-MODULE B-1: Climate Neutral Scenarios and Impact Pathways...55
-MODULE B-2: Climate Neutrality Portfolio Design...71
-MODULE B-3: Indicators for Monitoring, Evaluation and Learning...227
-PART C - ENABLING CLIMATE NEUTRALITY BY 2030...233
-MODULE C-1: Organisational and Governance Innovation Interventions...233
-MODULE C-2: Social and other innovation interventions...238
-MODULE C-3: Financing of Action Portfolio (Economic Case)...244
-OUTLOOK AND NEXT STEPS...253
+- ANNEX I. 2030 CLIMATE NEUTRALITY ACTION PLAN OF THE CITY OF VALENCIA
+- INTRODUCTION
+- How will we do it... València's perspective
+- WORK PROCESS
+- How is this ambition addressed in the following Action Plan
+- PART A - CURRENT STATE OF CLIMATE ACTION
+- MODULE A-1: Greenhouse Gas Emissions Baseline inventory
+- MODULE A-2: Current Policies and Strategies Assessment
+- MODULE A-3: Systemic barriers and opportunities to 2030 climate neutrality
+- PART B - PATHWAYS TOWARDS CLIMATE NEUTRALITY BY 2030
+- MODULE B-1: Climate Neutral Scenarios and Impact Pathways
+- MODULE B-2: Climate Neutrality Portfolio Design
+- MODULE B-3: Indicators for Monitoring, Evaluation and Learning
+- PART C - ENABLING CLIMATE NEUTRALITY BY 2030
+- MODULE C-1: Organisational and Governance Innovation Interventions
+- MODULE C-2: Social and other innovation interventions
+- MODULE C-3: Financing of Action Portfolio (Economic Case)
+- OUTLOOK AND NEXT STEPS
 
 # Index of Figures
 

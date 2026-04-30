@@ -35,35 +35,35 @@ The content of this document reflects the author's view only. The European Commi
 
 # Contents
 
-Introduction 4
-Work process 7
+- Introduction 4
+- Work process 7
 
-The Climate Transition Map of the Municipality of Parma 7
-The sustainability of the Action Plan to 2030 11
+- The Climate Transition Map of the Municipality of Parma 7
+- The sustainability of the Action Plan to 2030 11
 
-Part A – Current status of climate action 13
+- Part A – Current status of climate action 13
 
-Form A-1 Baseline GHG Emissions Inventory 13
-Module A-2 Analysis of existing policies and strategies 22
-Module A-3 Systemic barriers and opportunities for climate neutrality in 2030 38
+- Form A-1 Baseline GHG Emissions Inventory 13
+- Module A-2 Analysis of existing policies and strategies 22
+- Module A-3 Systemic barriers and opportunities for climate neutrality in 2030 38
 
-Part B – The path to climate neutrality 50
+- Part B – The path to climate neutrality 50
 
-Module B-1 Climate neutrality scenarios and impact scenarios 50
-Module B-2 Design of the climate neutrality portfolio 61
-Module B-3 Indicators for monitoring, evaluation and learning 81
+- Module B-1 Climate neutrality scenarios and impact scenarios 50
+- Module B-2 Design of the climate neutrality portfolio 61
+- Module B-3 Indicators for monitoring, evaluation and learning 81
 
-Part C – Making climate neutrality possible by 2030 82
+- Part C – Making climate neutrality possible by 2030 82
 
-Module C-1 Organisational innovation and governance interventions 82
-Module C-2 Social and other innovative interventions 87
+- Module C-1 Organisational innovation and governance interventions 82
+- Module C-2 Social and other innovative interventions 87
 
-Outlook and next steps 88
-Attachments 89
+- Outlook and next steps 88
+- Attachments 89
 
-Annex 1 90
-Annex 2 91
-Annex 3 92
+- Annex 1 90
+- Annex 2 91
+- Annex 3 92
 4
 
 Comune di Parma
@@ -2385,12 +2385,12 @@ The content of this document reflects only the author's view. The European Commi
 
 ## Table of contents
 
-Introduction ... 3
-Goal: Climate neutrality by 2030 ... 3
-Key priorities and strategic interventions ... 4
-Principles and process ... 4
-Signatories ... 5
-Contract with signatures ... 9
+- Introduction ... 3
+- Goal: Climate neutrality by 2030 ... 3
+- Key priorities and strategic interventions ... 4
+- Principles and process ... 4
+- Signatories ... 5
+- Contract with signatures ... 9
 Comune di Parma
 
 Climate-Neutrality Commitments

@@ -22,45 +22,30 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of Contents
 
-Summary 3
-
-List of figures 4
-
-List of tables 5
-
-Abbreviations and acronyms 5
-
-Introduction 6
-Work Process 7
-Part A – Current State of Climate Action 13
-
-Module A-1 Greenhouse Gas Emissions Baseline Inventory 13
-Module A-2 Current Policies and Strategies Assessment 24
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality 30
-
-Part B – Pathways towards Climate Neutrality by 2030 38
-
-Module B-1 Climate Neutrality Scenarios and Impact Pathways 38
-Module B-2 Climate Neutrality Portfolio Design 47
-Module B-3 Indicators for Monitoring, Evaluation and Learning 67
-
-Part C – Enabling Climate Neutrality by 2030 72
-
-Module C-1 Organisational and Governance Innovation Interventions 72
-Module C-2 Social and Other Innovation Interventions 74
-Module C-3 Financing of Action Portfolio 76
-
-Outlook and next steps 78
-Annexes 79
-
-ANNEX 1: STEEP "System thinking" methodology 79
-
-The model and the co-production methodology 80
-FIRENZE
-
-Climate Neutrality Action Plan
-
-O
+- Summary
+- List of figures
+- List of tables
+- Abbreviations and acronyms
+- Introduction
+- Work Process
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Organisational and Governance Innovation Interventions
+- Module C-2 Social and Other Innovation Interventions
+- Module C-3 Financing of Action Portfolio
+- Outlook and next steps
+- Annexes
+- ANNEX 1: STEEP "System thinking" methodology
+- The model and the co-production methodology
+- FIRENZE
+- Climate Neutrality Action Plan
 
 # Summary
 
@@ -2030,14 +2015,13 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of contents
 
-Introduction ... 1
-Goal: Climate neutrality by 2030 ... 5
-Key priorities and strategic interventions ... 8
-Principles and process ... 10
-Signatories ... 12
-Contract with signatures ... 13
-
-Appendix: Individual Signatory Commitments
+- Introduction
+- Goal: Climate neutrality by 2030
+- Key priorities and strategic interventions
+- Principles and process
+- Signatories
+- Contract with signatures
+- Appendix: Individual Signatory Commitments
 
 # Abbreviations and acronyms
 
@@ -2386,13 +2370,10 @@ NetZeroCities has received funding from the H2020 Research and Innovation Progra
 
 # Table of contents
 
-Signatories ... 2
-Contract with signatures ... 3
-FIRENZE
-
-Climate-Neutrality Commitments
-
-O
+- Signatories
+- Contract with signatures
+- FIRENZE
+- Climate-Neutrality Commitments
 
 # 5 Signatories
 

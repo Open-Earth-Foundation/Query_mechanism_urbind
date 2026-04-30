@@ -8,122 +8,105 @@ Action plan
 
 # Table of contents
 
-Table of contents ... 2
-Abbreviations ... 5
-Introduction ... 6
-Why are we participating? ... 6
-The goals for our city of tomorrow ... 7
-Part A – The state of climate action in Amsterdam ... 10
-A-1 CO2 Emissions by the city of Amsterdam ... 10
-A-1.1 Geographical boundaries ... 10
-A-1.2 Methodology for calculating Amsterdam CO2 Emissions ... 11
-A-1.3 Scope 1, 2 and 3 CO2 emissions in Amsterdam ... 15
-A-1.4 Historical development of Amsterdam's CO2 emissions ... 16
-A-2 The policy context of Amsterdam's climate transition ... 20
-A-2.1 Analysis of current policy ... 21
-A-2.1.1 Local level and scale ... 22
-A-2.1.2 National and regional scale ... 28
-A-2.1.3 EU and international scale ... 34
-A-2.2 2030 CO2 reduction gap in Amsterdam ... 37
-A-3 Systemic barriers and opportunities for climate neutrality in Amsterdam ... 38
-A-3.1 Organisational and Financial ... 38
-A-3.2 Institutional and regulations ... 39
-A-3.3 Politics ... 39
-A-3.4 Technology ... 40
-A-3.5 Social aspects and behaviour ... 41
-Part B – The Amsterdam Impact Pathways ... 42
-Amsterdam Climate Action plan: Our city of tomorrow ... 42
-Impact pathways ... 42
-B-1 The transition to a sustainable energy system ... 45
-B-1.1 Built environment ... 46
-B-1.1.1 Accelerating energy-efficient homes and utility buildings ... 46
-B-1.1.2 Accelerating expansion and sustainability of heating and cooling facilities ... 53
-B-1.2 Electricity ... 61
-B-1.2.1 Making Amsterdam's energy mix more sustainable ... 62
-B-1.2.2 Innovating and expanding towards a smart and flexible power grid ... 63
-B-1.3 Port and Industry ... 65
-B-1.3.1 Accelerating industry sustainability: energy efficiency and electrification ... 66
-B-1.3.2 Working on the H2 economy ... 67
-B-1.3.3 Working on CCS in the city ... 70
-B-1.3.4 Working on the sustainable energy port ... 71
-
-B-1.3.5 Working towards a sustainable digital sector 73
-
-B-1.4 Mobility and Logistics 74
-
-B-1.4.1 Optimising public space for pedestrians, cyclists and public transport 75
-B-1.4.2 Facilitating, encouraging and regulating supply and use of shared mobility 77
-B-1.4.3 Facilitating and regulating full-fledged charging network 79
-B-1.4.4 Making private transport more sustainable (= passenger transport) 80
-B-1.4.5 Making public transport more sustainable 82
-B-1.4.6 Making logistics more sustainable 84
-
-B-2 The Food Transition 87
-
-B-2.1 More plant based 89
-B-2.2 Reducing food waste 91
-B-2.3 Making own organisation's food chain more sustainable 92
-B-2.4 Short Chains and Urban Farming 93
-B-2.5 Fair and Social Food 96
-
-B-3 The transition to a Circular Economy 99
-B-3.1 Together with the city 100
-
-B-3.1.1 Enabling entrepreneurs/SMEs to work circularly 100
-B-3.1.2 Social and resident initiatives 103
-B-3.1.3 Circular Port and Industry 105
-
-B-3.2 Accelerating circular value chains 107
-
-B-3.2.1 Food and organic waste streams 108
-B-3.2.2 Consumer goods 109
-B-3.2.3 Built environment 112
-B-3.2.4 Preconditions 116
-
-B-3.3 Waste-free city 118
-B-4 The transition to a nature-friendly, climate-adaptive city 121
-
-B-4.1 Climate adaptation 121
-
-B-4.1.1 Rain and flood risk reduction 121
-B-4.1.2 Heat and Drought 124
-B-4.1.3 Cooperation and knowledge sharing on climate adaptation 125
-
-B-4.2 A green, biodiverse, nature-inclusive and animal-friendly city 128
-
-B-4.2.1 Varied Greenery For All 128
-B-4.2.2 Greenery Contributes to Multiple Tasks 130
-B-2.4.3 We Work On Green Together 133
-B-2.4.4 Enhancing and Protecting Biodiversity 136
-B-2.4.5 Nature-inclusive Construction 138
-B-2.4.6 Improving animal welfare 139
-B-2.4.7 Addressing Infrastructural Ecological Bottlenecks 142
-B-2.4.8 Towards a Sustainable and Integrated Water System 143
-
-B-5 The transition to a sustainable municipal organisation 147
-
-B-5.1 Maximum energy reduction and maximum energy generation 148
-B-5.1.1 Buildings: Maximum energy reduction and maximum energy generation 149
-B-5.1.2 Public space: maximum energy reduction and maximum energy generation 150
-B-5.1.3 Municipal vehicle fleet: maximum energy reduction and maximum energy generation 152
-B-5.2 Carbon-neutral operations in 2030 154
-B-5.2.1 Making own organisation's food chain more sustainable 154
-B-5.3 Circular operations in 2030 and maximum circular use of materials in public spaces 156
-B-5.4 Climate-resilient buildings and (courtyard) areas 159
-B-5.4.1 Making the municipal organisation climate adaptive 159
-B-5.5 Sustainable thinking and action 161
-B Indicators for monitoring evaluation and learning 164
-Part C – Enabling acceleration of climate action 168
-C-1 Governance innovations 168
-C-1.1 Sustainable, Unless 168
-C-1.2 Strategic Coalitions with the city for sustainability 169
-C-1.3 Changing finance by financing change 169
-C-1.4 Active shareholdership for the sake of the sustainability challenge 169
-C-2 Doing it together and conversation with the city 171
-Looking ahead 173
-Annexes 174
-Annex 1: technical Q&amp;A JRC 174
-Colophon 175
+- Abbreviations
+- Introduction
+- Why are we participating?
+- The goals for our city of tomorrow
+- Part A – The state of climate action in Amsterdam
+- A-1 CO2 Emissions by the city of Amsterdam
+- A-1.1 Geographical boundaries
+- A-1.2 Methodology for calculating Amsterdam CO2 Emissions
+- A-1.3 Scope 1, 2 and 3 CO2 emissions in Amsterdam
+- A-1.4 Historical development of Amsterdam's CO2 emissions
+- A-2 The policy context of Amsterdam's climate transition
+- A-2.1 Analysis of current policy
+- A-2.1.1 Local level and scale
+- A-2.1.2 National and regional scale
+- A-2.1.3 EU and international scale
+- A-2.2 2030 CO2 reduction gap in Amsterdam
+- A-3 Systemic barriers and opportunities for climate neutrality in Amsterdam
+- A-3.1 Organisational and Financial
+- A-3.2 Institutional and regulations
+- A-3.3 Politics
+- A-3.4 Technology
+- A-3.5 Social aspects and behaviour
+- Part B – The Amsterdam Impact Pathways
+- Amsterdam Climate Action plan: Our city of tomorrow
+- Impact pathways
+- B-1 The transition to a sustainable energy system
+- B-1.1 Built environment
+- B-1.1.1 Accelerating energy-efficient homes and utility buildings
+- B-1.1.2 Accelerating expansion and sustainability of heating and cooling facilities
+- B-1.2 Electricity
+- B-1.2.1 Making Amsterdam's energy mix more sustainable
+- B-1.2.2 Innovating and expanding towards a smart and flexible power grid
+- B-1.3 Port and Industry
+- B-1.3.1 Accelerating industry sustainability: energy efficiency and electrification
+- B-1.3.2 Working on the H2 economy
+- B-1.3.3 Working on CCS in the city
+- B-1.3.4 Working on the sustainable energy port
+- B-1.3.5 Working towards a sustainable digital sector
+- B-1.4 Mobility and Logistics
+- B-1.4.1 Optimising public space for pedestrians, cyclists and public transport
+- B-1.4.2 Facilitating, encouraging and regulating supply and use of shared mobility
+- B-1.4.3 Facilitating and regulating full-fledged charging network
+- B-1.4.4 Making private transport more sustainable (= passenger transport)
+- B-1.4.5 Making public transport more sustainable
+- B-1.4.6 Making logistics more sustainable
+- B-2 The Food Transition
+- B-2.1 More plant based
+- B-2.2 Reducing food waste
+- B-2.3 Making own organisation's food chain more sustainable
+- B-2.4 Short Chains and Urban Farming
+- B-2.5 Fair and Social Food
+- B-3 The transition to a Circular Economy
+- B-3.1 Together with the city
+- B-3.1.1 Enabling entrepreneurs/SMEs to work circularly
+- B-3.1.2 Social and resident initiatives
+- B-3.1.3 Circular Port and Industry
+- B-3.2 Accelerating circular value chains
+- B-3.2.1 Food and organic waste streams
+- B-3.2.2 Consumer goods
+- B-3.2.3 Built environment
+- B-3.2.4 Preconditions
+- B-3.3 Waste-free city
+- B-4 The transition to a nature-friendly, climate-adaptive city
+- B-4.1 Climate adaptation
+- B-4.1.1 Rain and flood risk reduction
+- B-4.1.2 Heat and Drought
+- B-4.1.3 Cooperation and knowledge sharing on climate adaptation
+- B-4.2 A green, biodiverse, nature-inclusive and animal-friendly city
+- B-4.2.1 Varied Greenery For All
+- B-4.2.2 Greenery Contributes to Multiple Tasks
+- B-2.4.3 We Work On Green Together
+- B-2.4.4 Enhancing and Protecting Biodiversity
+- B-2.4.5 Nature-inclusive Construction
+- B-2.4.6 Improving animal welfare
+- B-2.4.7 Addressing Infrastructural Ecological Bottlenecks
+- B-2.4.8 Towards a Sustainable and Integrated Water System
+- B-5 The transition to a sustainable municipal organisation
+- B-5.1 Maximum energy reduction and maximum energy generation
+- B-5.1.1 Buildings: Maximum energy reduction and maximum energy generation
+- B-5.1.2 Public space: maximum energy reduction and maximum energy generation
+- B-5.1.3 Municipal vehicle fleet: maximum energy reduction and maximum energy generation
+- B-5.2 Carbon-neutral operations in 2030
+- B-5.2.1 Making own organisation's food chain more sustainable
+- B-5.3 Circular operations in 2030 and maximum circular use of materials in public spaces
+- B-5.4 Climate-resilient buildings and (courtyard) areas
+- B-5.4.1 Making the municipal organisation climate adaptive
+- B-5.5 Sustainable thinking and action
+- B Indicators for monitoring evaluation and learning
+- Part C – Enabling acceleration of climate action
+- C-1 Governance innovations
+- C-1.1 Sustainable, Unless
+- C-1.2 Strategic Coalitions with the city for sustainability
+- C-1.3 Changing finance by financing change
+- C-1.4 Active shareholdership for the sake of the sustainability challenge
+- C-2 Doing it together and conversation with the city
+- Looking ahead
+- Annexes
+- Annex 1: technical Q&amp;A JRC
+- Colophon
 
 # Abbreviations
 
@@ -3666,26 +3649,22 @@ The methodology of CE-Delft is available on their website
 
 # Table of contents
 
-Introduction 3
-Why are we participating? 5
-The Amsterdam approach 6
-
-The Amsterdam sustainable objectives 10
-What do we save by going sustainable now? 13
-
-Strategic priorities in sustainability 15
-The transition to a sustainable energy system 16
-The food transition 21
-The transition to a circular economy 22
-The transition to a nature-friendly, climate-adaptive city 23
-The transition to a sustainable municipal organisation 24
-
-Process and principles 27
-What happens next? 28
-What is the municipality doing differently now? 28
-Joint implementation and learnings 29
-
-Statements of support 32
+- Introduction
+- Why are we participating?
+- The Amsterdam approach
+- The Amsterdam sustainable objectives
+- What do we save by going sustainable now?
+- Strategic priorities in sustainability
+- The transition to a sustainable energy system
+- The food transition
+- The transition to a circular economy
+- The transition to a nature-friendly, climate-adaptive city
+- The transition to a sustainable municipal organisation
+- Process and principles
+- What happens next?
+- What is the municipality doing differently now?
+- Joint implementation and learnings
+- Statements of support
 # Introduction
 
 ![img-0.jpeg](img-0.jpeg)

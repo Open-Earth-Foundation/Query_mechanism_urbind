@@ -4,9 +4,11 @@ import shutil
 import threading
 import time
 from datetime import datetime, timezone
+from io import BytesIO
 from pathlib import Path
 
 import pytest
+from docx import Document
 from fastapi.testclient import TestClient
 
 from backend.api.main import create_app
@@ -22,7 +24,6 @@ def _build_config(runs_dir: Path, markdown_dir: Path) -> AppConfig:
     return build_test_app_config(
         runs_dir=runs_dir,
         markdown_dir=markdown_dir,
-        enable_sql=False,
     )
 
 
@@ -31,7 +32,6 @@ def _write_success_artifacts(question: str, run_id: str, config: AppConfig) -> R
     paths.base_dir.mkdir(parents=True, exist_ok=True)
 
     context_bundle = {
-        "sql": None,
         "markdown": {"status": "success", "excerpts": []},
         "drafts": [],
         "final": str(paths.final_output),
@@ -90,6 +90,33 @@ def _write_run_listing_artifacts(
     return paths
 
 
+def _write_run_listing_artifact(
+    runs_dir: Path,
+    *,
+    run_id: str,
+    started_at: datetime,
+    question: str | None,
+    inputs: dict[str, object] | None = None,
+) -> None:
+    """Persist the minimal run.json payload needed by run-list endpoint tests."""
+    run_dir = runs_dir / run_id
+    run_dir.mkdir(parents=True, exist_ok=True)
+    payload: dict[str, object] = {
+        "run_id": run_id,
+        "status": "completed",
+        "started_at": started_at.isoformat(),
+        "completed_at": started_at.isoformat(),
+    }
+    if question is not None:
+        payload["question"] = question
+    if inputs is not None:
+        payload["inputs"] = inputs
+    (run_dir / "run.json").write_text(
+        json.dumps(payload, ensure_ascii=True, indent=2),
+        encoding="utf-8",
+    )
+
+
 def _write_config_file(path: Path, config: AppConfig) -> None:
     """Persist one test config as JSON-compatible YAML."""
     path.write_text(
@@ -126,6 +153,48 @@ def _write_started_artifacts_with_error_log_input(
                 "2026-01-01 00:00:02 worker.py:12 - CRITICAL - aborting run",
             ]
         ),
+        encoding="utf-8",
+    )
+    return paths
+
+
+def _write_failed_artifacts_with_decision_error(
+    *,
+    question: str,
+    run_id: str,
+    config: AppConfig,
+    finish_reason: str,
+    error_code: str,
+    error_message: str,
+) -> RunPaths:
+    """Persist a failed run.json with a structured decision error."""
+    paths = create_run_paths(config.runs_dir, run_id, config.orchestrator.context_bundle_name)
+    paths.base_dir.mkdir(parents=True, exist_ok=True)
+    run_log_payload = {
+        "run_id": run_id,
+        "question": question,
+        "status": "failed",
+        "started_at": datetime.now(timezone.utc).isoformat(),
+        "completed_at": datetime.now(timezone.utc).isoformat(),
+        "finish_reason": finish_reason,
+        "decisions": [
+            {
+                "status": "error",
+                "reason": "Persisted pipeline failure",
+                "error": {
+                    "code": error_code,
+                    "message": error_message,
+                },
+            }
+        ],
+        "artifacts": {},
+    }
+    paths.run_log.write_text(
+        json.dumps(run_log_payload, ensure_ascii=True, indent=2),
+        encoding="utf-8",
+    )
+    (paths.base_dir / "run.log").write_text(
+        "2026-01-01 00:00:01 worker.py:11 - ERROR - persisted pipeline failure",
         encoding="utf-8",
     )
     return paths
@@ -193,7 +262,6 @@ def test_api_run_lifecycle_success(tmp_path: Path, monkeypatch: pytest.MonkeyPat
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
     ) -> RunPaths:
-        assert config.enable_sql is False
         assert run_id is not None
         assert isinstance(log_llm_payload, bool)
         assert analysis_mode == "aggregate"
@@ -228,6 +296,60 @@ def test_api_run_lifecycle_success(tmp_path: Path, monkeypatch: pytest.MonkeyPat
         context_payload = context_response.json()
         assert context_payload["status"] == "completed"
         assert isinstance(context_payload["context_bundle"], dict)
+
+
+def test_api_run_lifecycle_dev_mode_ignores_blank_optional_queries(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """API runs should trim optional direct queries and omit blank ones."""
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+
+    def _stub_load_config(_path: Path | None = None) -> AppConfig:
+        return _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+
+    def _stub_run_pipeline(
+        question: str,
+        config: AppConfig,
+        run_id: str | None = None,
+        log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        query_mode: str = "standard",
+        query_2: str | None = None,
+        query_3: str | None = None,
+        api_key_override: str | None = None,
+        selected_cities: list[str] | None = None,
+    ) -> RunPaths:
+        assert run_id is not None
+        assert isinstance(log_llm_payload, bool)
+        assert analysis_mode == "aggregate"
+        assert query_mode == "dev"
+        assert query_2 == "retrofit milestones and deadlines"
+        assert query_3 is None
+        assert api_key_override is None
+        assert selected_cities is None
+        return _write_success_artifacts(question=question, run_id=run_id, config=config)
+
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+
+    app = create_app(runs_dir=runs_dir, max_workers=2)
+    with TestClient(app) as client:
+        start = client.post(
+            "/api/v1/runs",
+            json={
+                "question": "What are the key retrofit initiatives?",
+                "run_id": "run-dev-mode",
+                "query_mode": "dev",
+                "query_2": "  retrofit milestones and deadlines  ",
+                "query_3": "   ",
+            },
+        )
+        assert start.status_code == 202
+        terminal = _poll_until_terminal(client, "run-dev-mode")
+        assert terminal["status"] == "completed"
 
 
 def test_api_get_run_reference_returns_record_from_references_artifact(
@@ -778,7 +900,7 @@ def test_api_list_runs_reads_artifact_folders(tmp_path: Path) -> None:
         )
 
 
-def test_api_list_runs_reads_question_from_inputs_when_root_question_missing(
+def test_api_list_runs_reads_question_from_original_question_when_root_question_missing(
     tmp_path: Path,
 ) -> None:
     runs_dir = tmp_path / "output"
@@ -790,8 +912,8 @@ def test_api_list_runs_reads_question_from_inputs_when_root_question_missing(
     run_payload = {
         "run_id": "run-inputs-question",
         "inputs": {
-            "initial_question": "Question sourced from inputs.initial_question",
-            "refined_question": "Refined fallback question",
+            "original_question": "Question sourced from inputs.original_question",
+            "canonical_research_query": "Canonical fallback question",
         },
         "status": "completed",
         "started_at": datetime.now(timezone.utc).isoformat(),
@@ -811,13 +933,47 @@ def test_api_list_runs_reads_question_from_inputs_when_root_question_missing(
         assert payload["runs"][0]["run_id"] == "run-inputs-question"
         assert (
             payload["runs"][0]["question"]
-            == "Question sourced from inputs.initial_question"
+            == "Question sourced from inputs.original_question"
         )
 
 
-def test_api_list_runs_hides_failed_runs_by_default(
+def test_api_list_runs_reads_question_from_legacy_inputs_when_root_question_missing(
     tmp_path: Path,
 ) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+
+    run_dir = runs_dir / "run-legacy-inputs-question"
+    run_dir.mkdir(parents=True, exist_ok=True)
+    run_payload = {
+        "run_id": "run-legacy-inputs-question",
+        "inputs": {
+            "initial_question": "Question sourced from inputs.initial_question",
+            "refined_question": "Refined fallback question",
+        },
+        "status": "completed",
+        "started_at": datetime.now(timezone.utc).isoformat(),
+        "completed_at": datetime.now(timezone.utc).isoformat(),
+    }
+    (run_dir / "run.json").write_text(
+        json.dumps(run_payload, ensure_ascii=True, indent=2),
+        encoding="utf-8",
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get("/api/v1/runs")
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["total"] == 1
+        assert payload["runs"][0]["run_id"] == "run-legacy-inputs-question"
+        assert (
+            payload["runs"][0]["question"]
+            == "Question sourced from inputs.initial_question"
+        )
+
+def test_api_list_runs_hides_failed_runs_by_default(tmp_path: Path) -> None:
     runs_dir = tmp_path / "output"
     markdown_dir = tmp_path / "documents"
     markdown_dir.mkdir(parents=True, exist_ok=True)
@@ -845,6 +1001,28 @@ def test_api_list_runs_hides_failed_runs_by_default(
         payload = response.json()
         assert payload["total"] == 1
         assert [item["run_id"] for item in payload["runs"]] == ["run-completed"]
+        assert payload["runs"][0]["status"] == "completed"
+        assert "picker_timestamp" in payload["runs"][0]
+
+
+def test_api_list_runs_returns_picker_timestamp(tmp_path: Path) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    _write_run_listing_artifact(
+        runs_dir,
+        run_id="run-picker-time",
+        started_at=datetime(2026, 3, 12, 19, 54, tzinfo=timezone.utc),
+        question="Timestamped picker run",
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get("/api/v1/runs")
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["total"] == 1
+        assert payload["runs"][0]["picker_timestamp"] == "0312-1954"
         assert payload["runs"][0]["status"] == "completed"
 
 
@@ -885,6 +1063,110 @@ def test_api_list_runs_include_all_returns_failed_runs_for_dev_mode(
             item for item in payload["runs"] if item["run_id"] == "run-failed"
         )
         assert failed_item["status"] == "failed"
+
+
+def test_api_list_runs_search_matches_selected_city_with_typo_tolerance(
+    tmp_path: Path,
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    _write_run_listing_artifact(
+        runs_dir,
+        run_id="run-leipzig",
+        started_at=datetime(2026, 3, 12, 19, 54, tzinfo=timezone.utc),
+        question="Charging rollout summary",
+        inputs={
+            "selected_cities_planned": [],
+            "selected_cities_found": ["leipzig"],
+        },
+    )
+    _write_run_listing_artifact(
+        runs_dir,
+        run_id="run-berlin",
+        started_at=datetime(2026, 3, 13, 8, 30, tzinfo=timezone.utc),
+        question="Charging rollout summary",
+        inputs={
+            "selected_cities_planned": [],
+            "selected_cities_found": ["berlin"],
+        },
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get("/api/v1/runs?search=leipzing")
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["total"] == 1
+        assert [item["run_id"] for item in payload["runs"]] == ["run-leipzig"]
+
+
+def test_api_list_runs_search_ranks_exact_question_phrase_before_token_match(
+    tmp_path: Path,
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    _write_run_listing_artifact(
+        runs_dir,
+        run_id="run-token-match",
+        started_at=datetime(2026, 3, 13, 9, 30, tzinfo=timezone.utc),
+        question="Buses electric financing options",
+    )
+    _write_run_listing_artifact(
+        runs_dir,
+        run_id="run-exact-phrase",
+        started_at=datetime(2026, 3, 12, 9, 30, tzinfo=timezone.utc),
+        question="Electric buses financing options",
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get("/api/v1/runs?search=electric+buses")
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["total"] == 2
+        assert [item["run_id"] for item in payload["runs"]] == [
+            "run-exact-phrase",
+            "run-token-match",
+        ]
+
+
+def test_api_list_runs_search_numeric_fragment_matches_run_id_or_question_only(
+    tmp_path: Path,
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    _write_run_listing_artifact(
+        runs_dir,
+        run_id="20260326_1506",
+        started_at=datetime(2026, 3, 26, 15, 6, tzinfo=timezone.utc),
+        question="What initiatives exist for Munich?",
+    )
+    _write_run_listing_artifact(
+        runs_dir,
+        run_id="20260326_1511",
+        started_at=datetime(2026, 3, 26, 15, 11, tzinfo=timezone.utc),
+        question="What changed in project 1506 this quarter?",
+    )
+    _write_run_listing_artifact(
+        runs_dir,
+        run_id="gpt54mini-retrofit_rerun_dev-run3",
+        started_at=datetime(2026, 3, 27, 9, 0, tzinfo=timezone.utc),
+        question="What are the strongest retrofit initiatives in Munich?",
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get("/api/v1/runs?search=1506")
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["total"] == 2
+        assert [item["run_id"] for item in payload["runs"]] == [
+            "20260326_1506",
+            "20260326_1511",
+        ]
 
 
 def test_api_run_diagnostics_returns_warning_and_error_artifacts(
@@ -1035,6 +1317,72 @@ def test_api_output_and_context_resolve_stale_container_artifact_paths(
         assert isinstance(context_response.json()["context_bundle"], dict)
 
 
+def test_api_docx_export_returns_word_document(tmp_path: Path) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    run_id = "run-docx-export"
+    paths = _write_success_artifacts(
+        question="Export run",
+        run_id=run_id,
+        config=config,
+    )
+    paths.final_output.write_text(
+        "# Export report\n\n"
+        "Munich remains on schedule. [ref_1][ref_2]\n\n"
+        "| City | Comment mode |\n"
+        "| --- | --- |\n"
+        "| Munich | Google Doc review [ref_3] |\n",
+        encoding="utf-8",
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get(f"/api/v1/runs/{run_id}/export/docx")
+        assert response.status_code == 200
+        assert (
+            response.headers["content-type"]
+            == "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        )
+        assert f'filename="{run_id}.docx"' in response.headers["content-disposition"]
+
+    document = Document(BytesIO(response.content))
+    assert document.paragraphs[0].text == "Export report"
+    assert document.paragraphs[1].text == "Munich remains on schedule."
+    assert len(document.tables) == 1
+    assert document.tables[0].rows[1].cells[0].text == "Munich"
+    assert document.tables[0].rows[1].cells[1].text == "Google Doc review"
+
+
+def test_api_output_hides_legacy_finish_reason_footer(tmp_path: Path) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    run_id = "run-output-legacy-footer"
+    paths = _write_success_artifacts(
+        question="Legacy footer run",
+        run_id=run_id,
+        config=config,
+    )
+    paths.final_output.write_text(
+        "# Question\nLegacy footer run\n\n"
+        "# Answer\nVisible answer body.\n\n"
+        "---\n"
+        "Finish reason: completed (write)\n",
+        encoding="utf-8",
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get(f"/api/v1/runs/{run_id}/output")
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["content"] == "# Question\nLegacy footer run\n\n# Answer\nVisible answer body."
+        assert "Finish reason:" not in payload["content"]
+
+
 def test_api_list_runs_drops_entry_after_artifact_folder_is_deleted(tmp_path: Path) -> None:
     runs_dir = tmp_path / "output"
     markdown_dir = tmp_path / "documents"
@@ -1157,6 +1505,133 @@ def test_api_failed_run(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None
         assert context_response.status_code == 409
 
 
+def test_api_failed_run_uses_persisted_decision_error(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    finish_reason = "research_question_refinement_failed"
+    error_code = "RESEARCH_QUESTION_REFINEMENT_ERROR"
+    error_message = (
+        "Could not prepare the research query for this request. Please try again."
+    )
+
+    def _stub_load_config(_path: Path | None = None) -> AppConfig:
+        return _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+
+    def _failed_run_pipeline(
+        question: str,
+        config: AppConfig,
+        run_id: str | None = None,
+        log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
+        selected_cities: list[str] | None = None,
+    ) -> RunPaths:
+        assert run_id is not None
+        assert isinstance(log_llm_payload, bool)
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
+        assert selected_cities is None
+        return _write_failed_artifacts_with_decision_error(
+            question=question,
+            run_id=run_id,
+            config=config,
+            finish_reason=finish_reason,
+            error_code=error_code,
+            error_message=error_message,
+        )
+
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr(
+        "backend.api.services.run_executor.run_pipeline", _failed_run_pipeline
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        start = client.post(
+            "/api/v1/runs",
+            json={"question": "Refinement failed", "run_id": "run-persisted-failure"},
+        )
+        assert start.status_code == 202
+        terminal = _poll_until_terminal(client, "run-persisted-failure")
+        assert terminal["status"] == "failed"
+        assert terminal["finish_reason"] == finish_reason
+        assert terminal["error"]["code"] == error_code
+        assert terminal["error"]["message"] == error_message
+
+
+def test_api_failed_run_preserves_persisted_failure_details_after_exception(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    finish_reason = "research_question_refinement_failed"
+    error_code = "RESEARCH_QUESTION_REFINEMENT_ERROR"
+    error_message = (
+        "Could not prepare the research query for this request. Please try again."
+    )
+
+    def _stub_load_config(_path: Path | None = None) -> AppConfig:
+        return _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+
+    def _failing_run_pipeline(
+        question: str,
+        config: AppConfig,
+        run_id: str | None = None,
+        log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
+        selected_cities: list[str] | None = None,
+    ) -> RunPaths:
+        assert run_id is not None
+        assert isinstance(log_llm_payload, bool)
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
+        assert selected_cities is None
+        _write_failed_artifacts_with_decision_error(
+            question=question,
+            run_id=run_id,
+            config=config,
+            finish_reason=finish_reason,
+            error_code=error_code,
+            error_message=error_message,
+        )
+        raise ValueError("generic executor wrapper failure")
+
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr(
+        "backend.api.services.run_executor.run_pipeline", _failing_run_pipeline
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        start = client.post(
+            "/api/v1/runs",
+            json={
+                "question": "Refinement failed with exception",
+                "run_id": "run-preserved-failure",
+            },
+        )
+        assert start.status_code == 202
+        terminal = _poll_until_terminal(client, "run-preserved-failure")
+        assert terminal["status"] == "failed"
+        assert terminal["finish_reason"] == finish_reason
+        assert terminal["error"]["code"] == error_code
+        assert terminal["error"]["message"] == error_message
+
+    run_log_payload = json.loads(
+        (runs_dir / "run-preserved-failure" / "run.json").read_text(encoding="utf-8")
+    )
+    assert run_log_payload["finish_reason"] == finish_reason
+    assert run_log_payload["error"]["code"] == error_code
+    assert run_log_payload["error"]["message"] == error_message
+
+
 def test_api_failed_run_writes_error_log_snapshot_for_executor_failures(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
@@ -1245,7 +1720,7 @@ def test_api_run_filters_markdown_by_selected_cities(
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert api_key_override is None
-        assert selected_cities == ["berlin"]
+        assert selected_cities == ["Berlin"]
         captured_files.extend(
             sorted(path.name for path in config.markdown_dir.rglob("*.md"))
         )
@@ -1273,6 +1748,51 @@ def test_api_run_filters_markdown_by_selected_cities(
         assert listed_ids == ["run-berlin"]
 
     assert captured_files == ["Berlin.md"]
+
+
+def test_api_run_preserves_display_city_names_while_deduping_aliases(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    (markdown_dir / "Istanbul.md").write_text("# Istanbul", encoding="utf-8")
+
+    def _stub_load_config(_path: Path | None = None) -> AppConfig:
+        return _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+
+    def _stub_run_pipeline(
+        question: str,
+        config: AppConfig,
+        run_id: str | None = None,
+        log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
+        selected_cities: list[str] | None = None,
+    ) -> RunPaths:
+        assert run_id is not None
+        assert isinstance(log_llm_payload, bool)
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
+        assert selected_cities == ["Istanbul"]
+        return _write_success_artifacts(question=question, run_id=run_id, config=config)
+
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        start = client.post(
+            "/api/v1/runs",
+            json={
+                "question": "Only Istanbul please",
+                "run_id": "run-istanbul",
+                "cities": ["Istanbul", "ISTANBUL"],
+            },
+        )
+        assert start.status_code == 202
+        terminal = _poll_until_terminal(client, "run-istanbul")
+        assert terminal["status"] == "completed"
 
 
 def test_api_run_analysis_mode_defaults_and_passes_explicit_value(

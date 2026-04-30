@@ -21,32 +21,31 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of contents
 
-Table of Contents...2
-Executive Summary...5
-Introduction...10
-Work Process...12
-Part A - Current State of Climate Action...15
-Module A-1: Greenhouse Gas Emissions Baseline Inventory...15
-Situation assessment...30
-Electricity production and consumption...30
-Natural gas supply and consumption...35
-District heating...37
-Urban structure and buildings of Pécs...40
-Transport sector...52
-Waste, waste water and drinking water management...60
-Green and blue infrastructure...65
-Module A-2: Current Policies and Strategies Assessment...67
-Module A-3: 2030 Systemic Barriers and Opportunities to 2030 Climate Neutrality...76
-Part B - Pathways towards Climate Neutrality by 2030...103
-Module B-1: Climate Neutrality Scenarios and Impact Pathways...103
-Module B-2: Climate Neutrality Portfolio Design...114
-Module B-3: Indicators for Monitoring, Evaluation and Learning...149
-Part C - Enabling Climate Neutrality by 2030...154
-Module C-1: Organization and Governance Innovation Interventions...154
-Module C-2: Social and Other Interventions...163
-Module C-3: Financing of Action Portfolio...168
-Outlook and next steps...177
-Annexes...179
+- Executive Summary
+- Introduction
+- Work Process
+- Part A - Current State of Climate Action
+- Module A-1: Greenhouse Gas Emissions Baseline Inventory
+- Situation assessment
+- Electricity production and consumption
+- Natural gas supply and consumption
+- District heating
+- Urban structure and buildings of Pécs
+- Transport sector
+- Waste, waste water and drinking water management
+- Green and blue infrastructure
+- Module A-2: Current Policies and Strategies Assessment
+- Module A-3: 2030 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B - Pathways towards Climate Neutrality by 2030
+- Module B-1: Climate Neutrality Scenarios and Impact Pathways
+- Module B-2: Climate Neutrality Portfolio Design
+- Module B-3: Indicators for Monitoring, Evaluation and Learning
+- Part C - Enabling Climate Neutrality by 2030
+- Module C-1: Organization and Governance Innovation Interventions
+- Module C-2: Social and Other Interventions
+- Module C-3: Financing of Action Portfolio
+- Outlook and next steps
+- Annexes
 
 # Abbreviations and acronyms
 
@@ -6325,19 +6324,16 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of contents
 
-Introduction...3
-Target: climate neutrality by 2030...6
-Key priorities and strategic interventions...8
-Principles and processes...11
-Signatories...14
-Contract with the signatories...31
-
-![img-0.jpeg](img-0.jpeg)
-C
-
-Climate neutral commitments
-
-#
+- Introduction
+- Target: climate neutrality by 2030
+- Key priorities and strategic interventions
+- Principles and processes
+- Signatories
+- Contract with the signatories
+- ![img-0.jpeg](img-0.jpeg)
+- C
+- Climate neutral commitments
+- #
 
 # Dear Fellow Citizens of Pécs,
 
@@ -6779,19 +6775,19 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of contents
 
-Glossary Terms...2
-Part A - Current State of Climate Investment...3
-Module IP-A1: Existing Climate Action Funding and Financing...3
-Module IP-A2: Strategic Funding and Financing Evaluation...8
-Module IP-A3: Barriers to Climate Investment...13
-Part B - Investment Pathways towards Climate Neutrality by 2030...16
-Module IP-B1: Cost Scenarios for Climate Neutrality...16
-Module IP-B2: Capital Planning for Climate Neutrality...27
-Module IP-B3: Economic and Financial Indicators for Monitoring, Evaluation and Learning...62
-Part C - Enabling Financial Conditions for Climate Neutrality by 2030...68
-Module IP-C1: Climate policies for capital formation and use...68
-Module IP-C2: Identification and Mitigation of Risks...75
-Module IP-C3: Capacity Building and Stakeholder Engagement for Capital and Investment planning...81
+- Glossary Terms
+- Part A - Current State of Climate Investment
+- Module IP-A1: Existing Climate Action Funding and Financing
+- Module IP-A2: Strategic Funding and Financing Evaluation
+- Module IP-A3: Barriers to Climate Investment
+- Part B - Investment Pathways towards Climate Neutrality by 2030
+- Module IP-B1: Cost Scenarios for Climate Neutrality
+- Module IP-B2: Capital Planning for Climate Neutrality
+- Module IP-B3: Economic and Financial Indicators for Monitoring, Evaluation and Learning
+- Part C - Enabling Financial Conditions for Climate Neutrality by 2030
+- Module IP-C1: Climate policies for capital formation and use
+- Module IP-C2: Identification and Mitigation of Risks
+- Module IP-C3: Capacity Building and Stakeholder Engagement for Capital and Investment planning
 
 # List of tables
 

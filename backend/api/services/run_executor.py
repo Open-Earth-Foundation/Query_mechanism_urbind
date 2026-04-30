@@ -12,12 +12,12 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Literal
 
-from backend.api.models import RunError, RunStatus
+from backend.api.models import QueryMode, RunError, RunStatus
 from backend.api.services.city_catalog import build_city_subset
 from backend.api.services.run_store import RunRecord, RunStore, TERMINAL_STATUSES
 from backend.modules.orchestrator.module import run_pipeline
 from backend.services.error_log_artifact import write_error_log_artifact
-from backend.utils.city_normalization import normalize_city_keys
+from backend.utils.city_normalization import dedupe_city_labels
 from backend.utils.config import load_config
 from backend.utils.paths import RunPaths
 
@@ -29,6 +29,9 @@ class StartRunCommand:
     """Parameters needed to submit a pipeline run."""
 
     question: str
+    query_mode: QueryMode = "standard"
+    query_2: str | None = None
+    query_3: str | None = None
     requested_run_id: str | None = None
     cities: list[str] | None = None
     config_path: str | None = None
@@ -36,6 +39,16 @@ class StartRunCommand:
     log_llm_payload: bool = False
     api_key: str | None = None
     analysis_mode: Literal["aggregate", "city_by_city"] = "aggregate"
+    enrichment_enabled: bool | None = None
+    web_research_enabled: bool | None = None
+
+
+def _normalize_optional_query(value: str | None) -> str | None:
+    """Trim one optional direct retrieval query and collapse blanks to None."""
+    if value is None:
+        return None
+    cleaned = value.strip()
+    return cleaned or None
 
 
 class RunExecutor:
@@ -49,9 +62,12 @@ class RunExecutor:
 
     def submit(self, command: StartRunCommand) -> RunRecord:
         """Create queued run state and dispatch worker thread."""
-        normalized_cities = normalize_city_keys(command.cities)
+        normalized_cities = dedupe_city_labels(command.cities)
         resolved_command = StartRunCommand(
             question=command.question,
+            query_mode=command.query_mode,
+            query_2=_normalize_optional_query(command.query_2),
+            query_3=_normalize_optional_query(command.query_3),
             requested_run_id=command.requested_run_id,
             cities=normalized_cities or None,
             config_path=command.config_path,
@@ -59,17 +75,25 @@ class RunExecutor:
             log_llm_payload=command.log_llm_payload,
             api_key=command.api_key,
             analysis_mode=command.analysis_mode,
+            enrichment_enabled=command.enrichment_enabled,
+            web_research_enabled=command.web_research_enabled,
         )
         record = self._run_store.create_queued_run(
             question=resolved_command.question, requested_run_id=resolved_command.requested_run_id
         )
         logger.info(
-            "Run accepted run_id=%s cities=%s config_path=%s markdown_path=%s analysis_mode=%s log_llm_payload=%s api_key_override=%s",
+            "Run accepted run_id=%s cities=%s config_path=%s markdown_path=%s analysis_mode=%s query_mode=%s explicit_query_count=%d log_llm_payload=%s api_key_override=%s",
             record.run_id,
             len(resolved_command.cities) if resolved_command.cities else "all",
             resolved_command.config_path,
             resolved_command.markdown_path,
             resolved_command.analysis_mode,
+            resolved_command.query_mode,
+            sum(
+                1
+                for query in (resolved_command.query_2, resolved_command.query_3)
+                if query is not None
+            ),
             resolved_command.log_llm_payload,
             resolved_command.api_key is not None,
         )
@@ -92,12 +116,16 @@ class RunExecutor:
                 Path(command.markdown_path) if command.markdown_path else config.markdown_dir
             )
             logger.info(
-                "Run config resolved run_id=%s runs_dir=%s markdown_dir=%s sql_enabled=%s",
+                "Run config resolved run_id=%s runs_dir=%s markdown_dir=%s",
                 run_id,
                 config.runs_dir,
                 base_markdown_dir,
-                config.enable_sql,
             )
+            if command.enrichment_enabled is not None:
+                config.enrichment.enabled = command.enrichment_enabled
+            if command.web_research_enabled is not None:
+                config.enrichment.web_research_enabled = command.web_research_enabled
+
             if command.cities:
                 subset_dir = _prepare_selected_markdown_dir(config.runs_dir, run_id)
                 copied_files = build_city_subset(
@@ -134,6 +162,12 @@ class RunExecutor:
                 "log_llm_payload": command.log_llm_payload,
                 "selected_cities": command.cities,
             }
+            if command.query_mode != "standard":
+                pipeline_kwargs["query_mode"] = command.query_mode
+            if command.query_2 is not None:
+                pipeline_kwargs["query_2"] = command.query_2
+            if command.query_3 is not None:
+                pipeline_kwargs["query_3"] = command.query_3
             if command.api_key is not None:
                 pipeline_kwargs["api_key_override"] = command.api_key
             pipeline_kwargs["analysis_mode"] = command.analysis_mode
@@ -167,6 +201,22 @@ class RunExecutor:
             if _looks_like_api_key_error(normalized_message):
                 error_code = "API_KEY_ERROR"
                 finish_reason = "api_key_error"
+            persisted_finish_reason, persisted_error = _load_persisted_failure_details(
+                self._run_store.runs_dir,
+                run_id,
+            )
+            if persisted_finish_reason is not None:
+                finish_reason = persisted_finish_reason
+            if persisted_error is not None:
+                error_code = persisted_error.code
+                normalized_message = persisted_error.message
+            if persisted_finish_reason is not None or persisted_error is not None:
+                logger.info(
+                    "Preserving persisted pipeline failure run_id=%s finish_reason=%s error_code=%s",
+                    run_id,
+                    finish_reason,
+                    error_code,
+                )
             run_log_path = _persist_executor_failure_artifacts(
                 runs_dir=self._run_store.runs_dir,
                 run_id=run_id,
@@ -191,6 +241,58 @@ def _normalize_error_message(message: str) -> str:
     cleaned = message.strip() or "Unknown execution error."
     cleaned = _MASKABLE_KEY_PATTERN.sub("sk-***", cleaned)
     return cleaned
+
+
+def _coerce_run_error(value: object) -> RunError | None:
+    """Normalize one persisted run error payload when present."""
+    if not isinstance(value, dict):
+        return None
+    code = value.get("code")
+    message = value.get("message")
+    if not isinstance(code, str) or not code.strip():
+        return None
+    if not isinstance(message, str):
+        return None
+    return RunError(
+        code=code.strip(),
+        message=_normalize_error_message(message),
+    )
+
+
+def _extract_run_log_error(run_log_payload: dict[str, object]) -> RunError | None:
+    """Return the most specific persisted error stored in ``run.json``."""
+    persisted_error = _coerce_run_error(run_log_payload.get("error"))
+    if persisted_error is not None:
+        return persisted_error
+
+    decisions = run_log_payload.get("decisions")
+    if not isinstance(decisions, list):
+        return None
+    for decision in reversed(decisions):
+        if not isinstance(decision, dict):
+            continue
+        decision_error = _coerce_run_error(decision.get("error"))
+        if decision_error is not None:
+            return decision_error
+    return None
+
+
+def _load_persisted_failure_details(
+    runs_dir: Path,
+    run_id: str,
+) -> tuple[str | None, RunError | None]:
+    """Load persisted failure details from ``run.json`` when already finalized."""
+    run_log_payload = _read_run_log_payload(runs_dir / run_id / "run.json")
+    if run_log_payload is None or run_log_payload.get("status") != "failed":
+        return None, None
+
+    finish_reason = run_log_payload.get("finish_reason")
+    normalized_finish_reason = (
+        finish_reason.strip()
+        if isinstance(finish_reason, str) and finish_reason.strip()
+        else None
+    )
+    return normalized_finish_reason, _extract_run_log_error(run_log_payload)
 
 
 def _looks_like_api_key_error(message: str) -> bool:
@@ -249,6 +351,7 @@ def _build_terminal_update(run_id: str, run_paths: RunPaths) -> TerminalUpdate:
             if isinstance(finish_value, str):
                 finish_reason = finish_value
 
+            error_payload = _extract_run_log_error(run_log_payload)
             artifacts = run_log_payload.get("artifacts")
             if isinstance(artifacts, dict):
                 final_output_path = _resolve_artifact_path(
@@ -256,6 +359,13 @@ def _build_terminal_update(run_id: str, run_paths: RunPaths) -> TerminalUpdate:
                 )
                 context_bundle_path = _resolve_artifact_path(
                     artifacts.get("context_bundle"), context_bundle_path
+                )
+            if status == "failed" and error_payload is not None:
+                logger.info(
+                    "Run failure details loaded run_id=%s finish_reason=%s error_code=%s",
+                    run_id,
+                    finish_reason,
+                    error_payload.code,
                 )
 
     if status == "failed" and error_payload is None:

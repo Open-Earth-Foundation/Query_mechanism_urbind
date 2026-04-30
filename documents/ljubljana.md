@@ -16,28 +16,26 @@ Climate Neutrality Action Plan
 
 # Table of Contents
 
-Table of Contents...4
-Summary...5
-List of figures...6
-List of tables...7
-Abbreviations and acronyms...8
-Introduction...11
-Part A – Current State of Climate Action...21
-Module A-1 Greenhouse Gas Emissions Baseline Inventory...21
-Module A-2 Current Policies and Strategies Assessment...37
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality...70
-Part B – Pathways towards Climate Neutrality by 2030...93
-Module B-1 Climate Neutrality Scenarios and Impact Pathways...93
-Module B-2 Climate Neutrality Portfolio Design...122
-Module B-3 Indicators for Monitoring, Evaluation and Learning...226
-Part C – Enabling Climate Neutrality by 2030...235
-Module C-1 Governance Innovation Interventions...235
-Module C-2 Social Innovation Interventions...248
-Outlook and next steps...273
-Annexes...275
-Climate Neutrality Action Plan
-
-#
+- Summary
+- List of figures
+- List of tables
+- Abbreviations and acronyms
+- Introduction
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- Module C-2 Social Innovation Interventions
+- Outlook and next steps
+- Annexes
+- Climate Neutrality Action Plan
+- #
 
 # Summary
 

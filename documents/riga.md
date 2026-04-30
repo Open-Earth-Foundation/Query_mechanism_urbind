@@ -24,35 +24,32 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of Contents
 
-Summary ... 3
-List of figures ... 5
-List of tables ... 5
-Abbreviations and acronyms ... 6
-Introduction ... 8
-Work process ... 8
-Part A — Current State of Climate Action ... 12
-Module A-1 Greenhouse Gas Emissions Baseline Inventory ... 12
-Module A-2 Current Policies and Strategies Assessment ... 20
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate-Neutrality ... 36
-Part B — Pathways towards Climate-Neutrality by 2030 ... 49
-Module B-1 Climate-Neutrality Scenarios and Impact Pathways ... 49
-Module B-2 Climate-Neutrality Portfolio Design ... 64
-B-2.2: Individual action outlines — Municipal infrastructure ... 66
-B-2.2: Individual action outlines — Energy production ... 80
-B-2.2: Individual action outlines — Multi-apartment residential buildings ... 90
-B-2.2: Individual action outlines — Transport and mobility ... 98
-B-2.2: Individual action outlines — Waste management and circular economy ... 110
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 120
-Part C — Enabling Climate-Neutrality by 2030 ... 140
-Module C-1 Governance Innovation Interventions ... 140
-Module C-2 Social Innovation Interventions ... 142
-Module C-3 Financing the measure portfolio ... 145
-Outlook and next steps ... 149
-RIGA
-
-Climate-Neutrality Action Plan
-
-O
+- Summary
+- List of figures
+- List of tables
+- Abbreviations and acronyms
+- Introduction
+- Work process
+- Part A — Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate-Neutrality
+- Part B — Pathways towards Climate-Neutrality by 2030
+- Module B-1 Climate-Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate-Neutrality Portfolio Design
+- B-2.2: Individual action outlines — Municipal infrastructure
+- B-2.2: Individual action outlines — Energy production
+- B-2.2: Individual action outlines — Multi-apartment residential buildings
+- B-2.2: Individual action outlines — Transport and mobility
+- B-2.2: Individual action outlines — Waste management and circular economy
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C — Enabling Climate-Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- Module C-2 Social Innovation Interventions
+- Module C-3 Financing the measure portfolio
+- Outlook and next steps
+- RIGA
+- Climate-Neutrality Action Plan
 
 # Summary
 

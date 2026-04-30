@@ -2,9 +2,13 @@
 
 from __future__ import annotations
 
+from typing import Any
 
-def __getattr__(name: str):
-    """Lazily expose the FastAPI app to avoid package import cycles."""
+__all__ = ["app", "create_app"]
+
+
+def __getattr__(name: str) -> Any:
+    """Lazily expose app exports to avoid package-import side effects."""
     if name == "app":
         from backend.api.main import app
 
@@ -14,6 +18,3 @@ def __getattr__(name: str):
 
         return create_app
     raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
-
-
-__all__ = ["app", "create_app"]

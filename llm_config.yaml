@@ -1,22 +1,13 @@
 orchestrator:
-  model: "openai/gpt-5.2"
+  model: "openai/gpt-5.4-mini"
   temperature: 0.0
   reasoning_effort: "medium"
   context_bundle_name: "context_bundle.json"
   context_window_tokens: 400000
   input_token_reserve: 20000
-sql_researcher:
-  model: "openai/gpt-5.2"
-  temperature: 0.0
-  reasoning_effort: "high"
-  context_window_tokens: 400000
-  input_token_reserve: 2000
-  pre_orchestrator_rounds: 2
 markdown_researcher:
-  model: "x-ai/grok-4.1-fast"
+  model: "openai/gpt-5.4-mini"
   temperature: 0.0
-  # Optional Grok-only setting. Do not set this for non-Grok models.
-  # Unsupported models/providers may reject the request if this is enabled.
   reasoning_effort: "low"
   context_window_tokens: 200000
   input_token_reserve: 10000
@@ -31,8 +22,35 @@ markdown_researcher:
   max_workers: 8
   request_backoff_base_seconds: 0.5
   request_backoff_max_seconds: 2.0
+initiative_extractor:
+  model: "openai/gpt-5.4-mini"
+  temperature: 0.0
+  reasoning_effort: "low"
+  context_window_tokens: 200000
+  input_token_reserve: 10000
+  max_turns: 5
+  max_segment_tokens: 20000
+  segment_overlap_lines: 4
+  max_workers: 4
+  prior_initiatives_max_tokens: 10000
+  semantic_dedupe_enabled: true
+  semantic_dedupe_max_records_per_batch: 120
+  semantic_dedupe_max_input_tokens: 80000
+  semantic_dedupe_confidence_threshold: 0.78
+  action_heavy_initiative_threshold: 3
+  action_heavy_max_followup_calls: 6
+tef_mapper:
+  model: "openai/gpt-5.4-mini"
+  temperature: 0.0
+  reasoning_effort: "low"
+  max_turns: 5
+  max_workers: 4
+  review_confidence_threshold: 0.80
+  close_alternative_delta: 0.10
+  min_transition_confidence: 0.60
+  numeric_unit_classifier_enabled: true
 writer:
-  model: "openai/gpt-5.2"
+  model: "openai/gpt-5.4-mini"
   temperature: 0.0
   reasoning_effort: "high"
   context_window_tokens: 400000
@@ -42,7 +60,7 @@ writer:
   multi_pass_threshold_tokens: 200000
   multi_pass_chunk_tokens: 200000
 chat:
-  model: "openai/gpt-5.2"
+  model: "openai/gpt-5.4-mini"
   temperature: 0.0
   reasoning_effort: "medium"
   context_window_tokens: 400000
@@ -59,7 +77,25 @@ chat:
   followup_router_max_history_messages: 6
   followup_router_max_excerpts_per_source: 50
 assumptions_reviewer:
-  model: "openai/gpt-5.2"
+  model: "openai/gpt-5.4-mini"
+  temperature: 0.0
+  reasoning_effort: "high"
+enrichment:
+  model: "openai/gpt-5.4-mini"
+  temperature: 0.0
+  reasoning_effort: "medium"
+  enabled: false
+  web_research_enabled: false
+  max_workers: 6
+  max_queries_per_batch: 25
+  max_total_queries_per_run: 100
+  max_retries_per_worker: 2
+  max_deep_dives_per_run: 3
+  max_pages_per_deep_dive: 10
+  freshness_threshold_days: 730
+  max_fields_per_query: 20
+benchmark_fact_judge:
+  model: "openai/gpt-5.4-mini"
   temperature: 0.0
   reasoning_effort: "high"
 vector_store:
@@ -84,8 +120,7 @@ vector_store:
   auto_update_on_run: false
   index_manifest_path: ".chroma/index_manifest.json"
 retry:
-  max_attempts: 5
+  max_attempts: 3
   backoff_base_seconds: 1.0
   backoff_max_seconds: 30.0
 openrouter_base_url: "https://openrouter.ai/api/v1"
-enable_sql: false

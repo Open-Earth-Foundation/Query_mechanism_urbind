@@ -27,12 +27,6 @@ class OrchestratorConfig(AgentConfig):
     context_bundle_name: str = "context_bundle.json"
 
 
-class SqlResearcherConfig(AgentConfig):
-    max_result_tokens: int = 100000
-    max_rows: int = 10000
-    pre_orchestrator_rounds: int = 2
-
-
 class MarkdownResearcherConfig(AgentConfig):
     max_files: int = 200
     max_file_bytes: int = 5_000_000
@@ -45,6 +39,33 @@ class MarkdownResearcherConfig(AgentConfig):
     request_backoff_base_seconds: float = 2.0
     request_backoff_max_seconds: float = 10.0
     strict_decision_audit: bool = False
+
+
+class InitiativeExtractorConfig(AgentConfig):
+    """Configuration for full-document initiative extraction."""
+
+    max_files: int = 200
+    max_file_bytes: int = 5_000_000
+    max_segment_tokens: int = 20_000
+    segment_overlap_lines: int = 4
+    max_workers: int = 4
+    prior_initiatives_max_tokens: int = 10_000
+    semantic_dedupe_enabled: bool = True
+    semantic_dedupe_max_records_per_batch: int = 120
+    semantic_dedupe_max_input_tokens: int = 80_000
+    semantic_dedupe_confidence_threshold: float = 0.78
+    action_heavy_initiative_threshold: int = 3
+    action_heavy_max_followup_calls: int = 6
+
+
+class TefMapperConfig(AgentConfig):
+    """Configuration for JSON-only staged TEF mapping."""
+
+    max_workers: int = 4
+    review_confidence_threshold: float = 0.80
+    close_alternative_delta: float = 0.10
+    min_transition_confidence: float = 0.60
+    numeric_unit_classifier_enabled: bool = True
 
 
 class ChatConfig(AgentConfig):
@@ -71,6 +92,34 @@ class WriterConfig(AgentConfig):
 
 class AssumptionsReviewerConfig(AgentConfig):
     """Configuration for two-pass missing-data discovery."""
+
+
+class EnrichmentConfig(AgentConfig):
+    """Config for web research enrichment and assumptions modelling layer."""
+
+    enabled: bool = False
+    # Web research sub-config
+    web_research_enabled: bool = False
+    max_workers: int = 6
+    max_queries_per_batch: int = 10
+    max_total_queries_per_run: int = 50
+    max_retries_per_worker: int = 2
+    max_deep_dives_per_run: int = 3
+    max_pages_per_deep_dive: int = 10
+    freshness_threshold_days: int = 730
+    max_fields_per_query: int = 20
+    # Assumptions estimator sub-config
+    assumptions_estimator_model: str = ""  # empty = same as self.model
+    assumptions_estimator_temperature: float = 0.0
+
+
+class BenchmarkFactJudgeConfig(BaseModel):
+    """LLM-as-judge settings for gold recall fact-presence checks."""
+
+    model: str
+    temperature: float = 0.0
+    max_output_tokens: int = 600
+    reasoning_effort: ReasoningEffort | None = "high"
 
 
 class VectorStoreConfig(BaseModel):
@@ -110,21 +159,31 @@ class AppConfig(BaseModel):
     model_config = ConfigDict(arbitrary_types_allowed=True)
 
     orchestrator: OrchestratorConfig
-    sql_researcher: SqlResearcherConfig
     markdown_researcher: MarkdownResearcherConfig
+    initiative_extractor: InitiativeExtractorConfig = Field(
+        default_factory=lambda: InitiativeExtractorConfig(model="openai/gpt-5.4-mini")
+    )
+    tef_mapper: TefMapperConfig = Field(
+        default_factory=lambda: TefMapperConfig(model="openai/gpt-5.4-mini")
+    )
     writer: WriterConfig
-    chat: ChatConfig = Field(default_factory=lambda: ChatConfig(model="openai/gpt-5.2"))
+    chat: ChatConfig = Field(
+        default_factory=lambda: ChatConfig(model="openai/gpt-5.4-mini")
+    )
     assumptions_reviewer: AssumptionsReviewerConfig = Field(
-        default_factory=lambda: AssumptionsReviewerConfig(model="openai/gpt-5.2")
+        default_factory=lambda: AssumptionsReviewerConfig(model="openai/gpt-5.4-mini")
+    )
+    enrichment: EnrichmentConfig = Field(
+        default_factory=lambda: EnrichmentConfig(model="openai/gpt-5.4-mini", enabled=False)
+    )
+    benchmark_fact_judge: BenchmarkFactJudgeConfig = Field(
+        default_factory=lambda: BenchmarkFactJudgeConfig(model="openai/gpt-5.4-mini")
     )
     retry: RetryConfig = Field(default_factory=RetryConfig)
     vector_store: VectorStoreConfig = Field(default_factory=VectorStoreConfig)
     openrouter_base_url: str = "https://openrouter.ai/api/v1"
     runs_dir: Path = Field(default_factory=lambda: Path("output"))
-    source_db_path: Path = Field(default_factory=lambda: Path("data/source.db"))
-    source_db_url: str | None = None
     markdown_dir: Path = Field(default_factory=lambda: Path("documents"))
-    enable_sql: bool = False
 
     @field_validator("writer", mode="before")
     @classmethod
@@ -158,29 +217,28 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
     config = AppConfig.model_validate(raw)
 
     runs_dir = os.getenv("RUNS_DIR")
-    source_db_path = os.getenv("SOURCE_DB_PATH")
     markdown_dir = os.getenv("MARKDOWN_DIR")
     openrouter_base_url = os.getenv("OPENROUTER_BASE_URL")
-    database_url = os.getenv("DATABASE_URL")
-    enable_sql = os.getenv("ENABLE_SQL")
+    enrichment_enabled = os.getenv("ENRICHMENT_ENABLED")
+    web_research_enabled = os.getenv("WEB_RESEARCH_ENABLED")
     vector_store_enabled = os.getenv("VECTOR_STORE_ENABLED")
     chroma_persist_path = os.getenv("CHROMA_PERSIST_PATH")
     chroma_collection_name = os.getenv("CHROMA_COLLECTION_NAME")
 
     if runs_dir:
         config.runs_dir = Path(runs_dir)
-    if source_db_path:
-        config.source_db_path = Path(source_db_path)
     if markdown_dir:
         config.markdown_dir = Path(markdown_dir)
     if openrouter_base_url:
         config.openrouter_base_url = openrouter_base_url
-    if database_url:
-        config.source_db_url = database_url
-    if enable_sql is not None:
-        parsed = _parse_env_bool(enable_sql)
+    if enrichment_enabled is not None:
+        parsed = _parse_env_bool(enrichment_enabled)
         if parsed is not None:
-            config.enable_sql = parsed
+            config.enrichment.enabled = parsed
+    if web_research_enabled is not None:
+        parsed = _parse_env_bool(web_research_enabled)
+        if parsed is not None:
+            config.enrichment.web_research_enabled = parsed
     if vector_store_enabled is not None:
         parsed = _parse_env_bool(vector_store_enabled)
         if parsed is not None:
@@ -263,23 +321,17 @@ def get_openrouter_api_key() -> str:
     return resolve_openrouter_api_key()
 
 
-def get_database_url() -> str:
-    """Return the configured database URL or raise when missing."""
-    load_dotenv()
-    database_url = os.getenv("DATABASE_URL")
-    if not database_url:
-        raise EnvironmentError("DATABASE_URL is not set in the environment.")
-    return database_url
-
-
 __all__ = [
     "AgentConfig",
     "OrchestratorConfig",
-    "SqlResearcherConfig",
     "MarkdownResearcherConfig",
+    "InitiativeExtractorConfig",
+    "TefMapperConfig",
     "ChatConfig",
     "WriterConfig",
     "AssumptionsReviewerConfig",
+    "EnrichmentConfig",
+    "BenchmarkFactJudgeConfig",
     "RetryConfig",
     "VectorStoreConfig",
     "AppConfig",
@@ -287,5 +339,4 @@ __all__ = [
     "load_cached_config",
     "resolve_openrouter_api_key",
     "get_openrouter_api_key",
-    "get_database_url",
 ]

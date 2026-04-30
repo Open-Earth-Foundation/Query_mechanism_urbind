@@ -18,35 +18,33 @@ Climate Neutrality Action Plan
 
 # Table of Contents
 
-Table of Contents ... 2
-Summary ... 3
-List of figures ... 4
-List of tables ... 4
-Abbreviations and acronyms ... 4
-Introduction ... 6
-Part A – Current State of Climate Action ... 10
-Module A-1 Greenhouse Gas Emissions Baseline Inventory ... 10
-Module A-2 Current Policies and Strategies Assessment ... 17
-Local level policies ... 17
-Regional level policies ... 19
-National level policies ... 20
-Quantification of the emission gap ... 20
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality ... 24
-Part B – Pathways towards Climate Neutrality by 2030 ... 37
-Module B-1 Climate Neutrality Scenarios and Impact Pathways ... 37
-Module B-2 Climate Neutrality Portfolio Design ... 51
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 80
-Part C – Enabling Climate Neutrality by 2030 ... 83
-Module C-1 Governance Innovation Interventions ... 83
-Internal Governance ... 83
-External governance ... 84
-Engaging Citizens in Bratislava's Climate Transition ... 87
-Energy poverty and just transition ... 89
-Module C-2 Social Innovation Interventions ... 90
-Outlook and next steps ... 93
-Climate Neutrality Action Plan
-
-#
+- Summary
+- List of figures
+- List of tables
+- Abbreviations and acronyms
+- Introduction
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Local level policies
+- Regional level policies
+- National level policies
+- Quantification of the emission gap
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- Internal Governance
+- External governance
+- Engaging Citizens in Bratislava's Climate Transition
+- Energy poverty and just transition
+- Module C-2 Social Innovation Interventions
+- Outlook and next steps
+- Climate Neutrality Action Plan
+- #
 
 # Summary
 
@@ -1560,16 +1558,13 @@ Climate-Neutrality Commitments
 
 # Table of contents
 
-Introduction ... 3
-Goal ... 4
-Strategic priorities ... 7
-Process and principles ... 9
-Signatories ... 12
-1
-
-Climate-Neutrality Commitments
-
-#
+- Introduction
+- Goal
+- Strategic priorities
+- Process and principles
+- Signatories
+- Climate-Neutrality Commitments
+- #
 
 # 1 Introduction
 

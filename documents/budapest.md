@@ -23,31 +23,26 @@ O
 
 # Table of Contents
 
-2
-Table of Contents 6
-Summary 7
-List of figures 8
-List of tables 8
-Abbreviations and acronyms 9
-Introduction 10
-Part A – Current State of Climate Action 18
-Module A-1 Greenhouse Gas Emissions Baseline Inventory 18
-Module A-2 Current Policies and Strategies Assessment 24
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality 31
-Part B – Pathways towards Climate Neutrality by 2030 40
-Module B-1 Climate Neutrality Scenarios and Impact Pathways 40
-Module B-2 Climate Neutrality Portfolio Design 46
-Module B-3 Indicators for Monitoring, Evaluation and Learning 79
-Part C – Enabling Climate Neutrality by 2030 86
-Module C-1 Governance Innovation Interventions 86
-Module C-2 Social Innovation Interventions 91
-Outlook and next steps 101
-Annexes 102
-BUDAPEST
-
-Climate Neutrality Action Plan
-
-O
+- Summary
+- List of figures
+- List of tables
+- Abbreviations and acronyms
+- Introduction
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- Module C-2 Social Innovation Interventions
+- Outlook and next steps
+- Annexes
+- BUDAPEST
+- Climate Neutrality Action Plan
 
 # Summary
 
@@ -2540,18 +2535,14 @@ Climate-Neutrality Commitments
 
 # Table of contents
 
-Table of contents ... 4
-Introduction ... 5
-Strategic priorities ... 7
-Process and principles ... 8
-Signatories ... 11
-Commitments ... 14
-Appendix 1: Individual / Cluster Signatory Commitments (to be added before submitting the Climate City Contract ... 15
-BUDAPEST
-
-Climate-Neutrality Commitments
-
-O
+- Introduction
+- Strategic priorities
+- Process and principles
+- Signatories
+- Commitments
+- Appendix 1: Individual / Cluster Signatory Commitments (to be added before submitting the Climate City Contract
+- BUDAPEST
+- Climate-Neutrality Commitments
 
 # Introduction
 

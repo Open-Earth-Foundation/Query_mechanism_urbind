@@ -125,10 +125,7 @@ export function ContextChatWorkspace({
       return;
     }
     const handle = window.requestAnimationFrame(() => {
-      const viewport = root.querySelector<HTMLDivElement>("[data-radix-scroll-area-viewport]");
-      if (viewport) {
-        viewport.scrollTop = viewport.scrollHeight;
-      }
+      root.scrollTop = root.scrollHeight;
     });
     return () => window.cancelAnimationFrame(handle);
   }, [chatTurns.length, isSending, pendingJob, pendingPrompt]);
@@ -344,7 +341,7 @@ export function ContextChatWorkspace({
                 Context Chat Workspace
               </CardTitle>
               <CardDescription>
-                Multi-context chat grounded in saved run outputs and context bundles.
+                Ask follow-up questions while the writer document stays available in the workspace rail.
               </CardDescription>
             </div>
             <div className="ml-auto flex flex-col items-end gap-2">
@@ -365,7 +362,7 @@ export function ContextChatWorkspace({
                 ) : null}
                 <Button type="button" size="sm" variant="outline" onClick={onClose}>
                   <ArrowLeft className="h-4 w-4" />
-                  Back to Document
+                  Open Full Document
                 </Button>
               </div>
             </div>

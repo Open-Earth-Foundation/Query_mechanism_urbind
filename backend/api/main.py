@@ -1,4 +1,4 @@
-"""FastAPI application entrypoint for async run lifecycle API."""
+"""FastAPI application entrypoint for async run lifecycle API"""
 
 from __future__ import annotations
 
@@ -53,7 +53,9 @@ def _resolve_chat_job_worker_count() -> int:
         try:
             return max(1, int(env_value))
         except ValueError:
-            logger.warning("Invalid API_CHAT_JOB_WORKERS=%s; falling back to default.", env_value)
+            logger.warning(
+                "Invalid API_CHAT_JOB_WORKERS=%s; falling back to default.", env_value
+            )
     return DEFAULT_API_CHAT_JOB_WORKERS
 
 
@@ -171,7 +173,11 @@ def create_app(
         allow_methods=["*"],
         allow_headers=["*"],
     )
-    logger.info("CORS allow_origins=%s allow_credentials=%s", allowed_origins, not using_wildcard)
+    logger.info(
+        "CORS allow_origins=%s allow_credentials=%s",
+        allowed_origins,
+        not using_wildcard,
+    )
     app.include_router(runs_router, prefix="/api/v1", tags=["runs"])
     app.include_router(cities_router, prefix="/api/v1", tags=["cities"])
     app.include_router(chat_router, prefix="/api/v1", tags=["chat"])

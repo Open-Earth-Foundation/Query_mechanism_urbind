@@ -7,11 +7,14 @@ import logging
 from pathlib import Path
 
 from fastapi import APIRouter, Header, HTTPException, Query, Request, status
+from fastapi.responses import Response
 
 from backend.api.models import (
     CreateRunRequest,
     CreateRunResponse,
     RunDiagnosticsResponse,
+    PipelineStep,
+    PipelineStepItem,
     RunReferenceItem,
     RunReferenceListResponse,
     RunReferenceResponse,
@@ -23,10 +26,13 @@ from backend.api.models import (
     SourceChunkListResponse,
 )
 from backend.api.services.run_diagnostics import build_run_diagnostics
+from backend.api.services.document_export import DOCX_MIME_TYPE, markdown_to_docx_bytes
+from backend.api.services.final_output import strip_legacy_finish_reason_footer
 from backend.api.services.reference_artifacts import (
     build_reference_item,
     load_reference_records,
 )
+from backend.api.services.run_picker import list_run_picker_entries
 from backend.api.services.run_executor import RunExecutor, StartRunCommand
 from backend.api.services.run_store import (
     DuplicateRunIdError,
@@ -134,12 +140,14 @@ def create_run(
 ) -> CreateRunResponse:
     """Queue a new asynchronous run."""
     logger.info(
-        "API create_run received run_id=%s cities=%s config_path=%s markdown_path=%s analysis_mode=%s api_key_override=%s",
+        "API create_run received run_id=%s cities=%s config_path=%s markdown_path=%s analysis_mode=%s query_mode=%s explicit_query_count=%d api_key_override=%s",
         payload.run_id,
         len(payload.cities) if payload.cities else "all",
         payload.config_path,
         payload.markdown_path,
         payload.analysis_mode,
+        payload.query_mode,
+        sum(1 for query in (payload.query_2, payload.query_3) if query and query.strip()),
         x_openrouter_api_key is not None,
     )
     run_executor = _get_run_executor(request)
@@ -148,6 +156,9 @@ def create_run(
         record = run_executor.submit(
             StartRunCommand(
                 question=payload.question,
+                query_mode=payload.query_mode,
+                query_2=payload.query_2,
+                query_3=payload.query_3,
                 requested_run_id=payload.run_id,
                 cities=payload.cities,
                 config_path=payload.config_path,
@@ -155,6 +166,8 @@ def create_run(
                 log_llm_payload=payload.log_llm_payload,
                 api_key=api_key_override,
                 analysis_mode=payload.analysis_mode,
+                enrichment_enabled=payload.enrichment_enabled,
+                web_research_enabled=payload.web_research_enabled,
             )
         )
     except DuplicateRunIdError as exc:
@@ -183,21 +196,68 @@ def list_runs(
         default=False,
         description="When true, include failed, stopped, queued, and running runs.",
     ),
+    search: str | None = Query(
+        default=None,
+        description=(
+            "Optional picker search text matched against run id, compact picker "
+            "date/time, question text, and selected city names."
+        ),
+    ),
 ) -> RunListResponse:
-    """List runs for the picker, hiding non-success runs by default."""
+    """List runs for the picker with search, compact timestamps, and status filtering."""
     run_store = _get_run_store(request)
     records = run_store.list_runs()
     if not include_all:
         records = [record for record in records if record.status in SUCCESS_STATUSES]
+    entries = list_run_picker_entries(records, search=search)
     runs = [
         RunSummary(
-            run_id=record.run_id,
-            question=record.question,
-            status=record.status,
+            run_id=entry.run_id,
+            question=entry.question,
+            status=entry.status,
+            picker_timestamp=entry.picker_timestamp,
         )
-        for record in records
+        for entry in entries
     ]
     return RunListResponse(runs=runs, total=len(runs))
+
+
+def _read_progress_steps(runs_dir: Path, run_id: str) -> list[PipelineStep] | None:
+    """Best-effort read of progress.json for a run directory."""
+    try:
+        progress_path = runs_dir / run_id / "progress.json"
+        if not progress_path.exists():
+            return None
+        data = json.loads(progress_path.read_text(encoding="utf-8"))
+        raw_steps = data.get("steps")
+        if not isinstance(raw_steps, list):
+            return None
+        return [
+            PipelineStep(
+                id=step["id"],
+                label=step["label"],
+                status=step.get("status", "running"),
+                started_at=step.get("started_at"),
+                completed_at=step.get("completed_at"),
+                items=[
+                    PipelineStepItem(
+                        text=item["text"],
+                        item_type=item.get("item_type"),
+                        title=item.get("title"),
+                        domain=item.get("domain"),
+                        url=item.get("url"),
+                        count=item.get("count"),
+                        metadata=item.get("metadata"),
+                    )
+                    for item in step.get("items", [])
+                    if isinstance(item, dict) and "text" in item
+                ],
+            )
+            for step in raw_steps
+            if isinstance(step, dict) and "id" in step and "label" in step
+        ]
+    except Exception:
+        return None
 
 
 @router.get(
@@ -215,6 +275,7 @@ def get_run_status(run_id: str, request: Request) -> RunStatusResponse:
             detail=f"Run `{run_id}` was not found.",
         )
 
+    steps = _read_progress_steps(run_store.runs_dir, run_id)
     return RunStatusResponse(
         run_id=record.run_id,
         status=record.status,
@@ -222,6 +283,7 @@ def get_run_status(run_id: str, request: Request) -> RunStatusResponse:
         completed_at=record.completed_at,
         finish_reason=record.finish_reason,
         error=record.error,
+        steps=steps,
     )
 
 
@@ -265,6 +327,7 @@ def get_run_output(run_id: str, request: Request) -> RunOutputResponse:
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"Failed to read final output for run `{run_id}`: {exc}",
         ) from exc
+    content = strip_legacy_finish_reason_footer(content)
 
     return RunOutputResponse(
         run_id=record.run_id,
@@ -272,6 +335,19 @@ def get_run_output(run_id: str, request: Request) -> RunOutputResponse:
         content=content,
         final_output_path=str(output_path),
     )
+
+
+@router.get(
+    "/runs/{run_id}/export/docx",
+    name="export_run_output_docx",
+)
+def export_run_output_docx(run_id: str, request: Request) -> Response:
+    """Return the final run output as a `.docx` download."""
+    output_response = get_run_output(run_id, request)
+    docx_bytes = markdown_to_docx_bytes(output_response.content)
+    filename = f"{run_id}.docx"
+    headers = {"Content-Disposition": f'attachment; filename="{filename}"'}
+    return Response(content=docx_bytes, media_type=DOCX_MIME_TYPE, headers=headers)
 
 
 @router.get(

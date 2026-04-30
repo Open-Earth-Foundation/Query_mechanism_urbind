@@ -9,6 +9,7 @@ export type RunStatus =
   | "completed_with_gaps"
   | "failed"
   | "stopped";
+export type QueryMode = "standard" | "dev";
 
 export interface RunError {
   code: string;
@@ -17,12 +18,17 @@ export interface RunError {
 
 export interface CreateRunRequest {
   question: string;
+  query_mode?: QueryMode;
+  query_2?: string;
+  query_3?: string;
   run_id?: string;
   cities?: string[];
   analysis_mode?: "aggregate" | "city_by_city";
   config_path?: string;
   markdown_path?: string;
   log_llm_payload?: boolean;
+  enrichment_enabled?: boolean;
+  web_research_enabled?: boolean;
 }
 
 export interface CreateRunResponse {
@@ -33,6 +39,33 @@ export interface CreateRunResponse {
   context_url: string;
 }
 
+export type PipelineItemType =
+  | "query_group"
+  | "search_result"
+  | "field"
+  | "estimate"
+  | "gap"
+  | "batch_summary";
+
+export interface PipelineStepItem {
+  text: string;
+  item_type?: PipelineItemType | null;
+  title?: string | null;
+  domain?: string | null;
+  url?: string | null;
+  count?: number | null;
+  metadata?: Record<string, unknown> | null;
+}
+
+export interface PipelineStep {
+  id: string;
+  label: string;
+  status: string;
+  started_at?: string | null;
+  completed_at?: string | null;
+  items: PipelineStepItem[];
+}
+
 export interface RunStatusResponse {
   run_id: string;
   status: RunStatus;
@@ -40,6 +73,7 @@ export interface RunStatusResponse {
   completed_at?: string | null;
   finish_reason?: string | null;
   error?: RunError | null;
+  steps?: PipelineStep[] | null;
 }
 
 export interface RunDiagnosticsArtifactPaths {
@@ -151,6 +185,7 @@ export interface SourceChunkListResponse {
 export interface RunSummary {
   run_id: string;
   question: string;
+  picker_timestamp: string;
   status: RunStatus;
 }
 
@@ -163,6 +198,12 @@ export interface CityListResponse {
   cities: string[];
   total: number;
   markdown_dir: string;
+}
+
+export interface CityMarkdownResponse {
+  city_name: string;
+  content: string;
+  source_paths: string[];
 }
 
 export interface CityGroup {
@@ -353,7 +394,11 @@ export interface ChatFollowupReferenceListResponse {
 }
 
 function normalizeCityKey(value: string): string {
-  return value.trim().toLocaleLowerCase();
+  const cleaned = value.trim().toLowerCase();
+  if (!cleaned) {
+    return "";
+  }
+  return cleaned.replace(/[^\p{L}\p{N}]+/gu, "_").replace(/^_+|_+$/g, "");
 }
 
 function normalizeCityKeys(values?: string[]): string[] | undefined {
@@ -363,14 +408,20 @@ function normalizeCityKeys(values?: string[]): string[] | undefined {
   const normalized: string[] = [];
   const seen = new Set<string>();
   values.forEach((value) => {
-    const key = normalizeCityKey(value);
+    const cleaned = value.trim();
+    const key = normalizeCityKey(cleaned);
     if (!key || seen.has(key)) {
       return;
     }
     seen.add(key);
-    normalized.push(key);
+    normalized.push(cleaned);
   });
   return normalized.length > 0 ? normalized : undefined;
+}
+
+function normalizeOptionalText(value?: string | null): string | undefined {
+  const cleaned = value?.trim();
+  return cleaned ? cleaned : undefined;
 }
 
 const DEFAULT_REQUEST_TIMEOUT_MS = 120_000;
@@ -406,6 +457,21 @@ async function requestJson<T>(
   includeJsonContentType = false,
   timeoutMs = DEFAULT_REQUEST_TIMEOUT_MS,
 ): Promise<T> {
+  const response = await requestResponse(
+    path,
+    init,
+    includeJsonContentType,
+    timeoutMs,
+  );
+  return (await response.json()) as T;
+}
+
+async function requestResponse(
+  path: string,
+  init?: RequestInit,
+  includeJsonContentType = false,
+  timeoutMs = DEFAULT_REQUEST_TIMEOUT_MS,
+): Promise<Response> {
   const timeoutController = new AbortController();
   const externalSignal = init?.signal;
   const onExternalAbort = (): void => {
@@ -457,16 +523,36 @@ async function requestJson<T>(
     throw new Error(message);
   }
 
-  return (await response.json()) as T;
+  return response;
+}
+
+async function requestBlob(
+  path: string,
+  init?: RequestInit,
+  includeJsonContentType = false,
+  timeoutMs = DEFAULT_REQUEST_TIMEOUT_MS,
+): Promise<Blob> {
+  const response = await requestResponse(
+    path,
+    init,
+    includeJsonContentType,
+    timeoutMs,
+  );
+  return await response.blob();
 }
 
 export async function fetchRuns(options?: {
   signal?: AbortSignal;
   includeAll?: boolean;
+  search?: string;
 }): Promise<RunListResponse> {
   const params = new URLSearchParams();
   if (options?.includeAll) {
     params.set("include_all", "true");
+  }
+  const search = options?.search?.trim();
+  if (search) {
+    params.set("search", search);
   }
   const suffix = params.toString();
   return requestJson<RunListResponse>(
@@ -480,6 +566,9 @@ export async function fetchRuns(options?: {
 export async function startRun(payload: CreateRunRequest): Promise<CreateRunResponse> {
   const normalizedPayload: CreateRunRequest = {
     ...payload,
+    query_mode: payload.query_mode ?? "standard",
+    query_2: normalizeOptionalText(payload.query_2),
+    query_3: normalizeOptionalText(payload.query_3),
     cities: normalizeCityKeys(payload.cities),
   };
   return requestJson<CreateRunResponse>(
@@ -512,6 +601,10 @@ export async function fetchRunDiagnostics(runId: string): Promise<RunDiagnostics
 
 export async function fetchRunOutput(runId: string): Promise<RunOutputResponse> {
   return requestJson<RunOutputResponse>(`/api/v1/runs/${encodeURIComponent(runId)}/output`);
+}
+
+export async function downloadRunWordExport(runId: string): Promise<Blob> {
+  return requestBlob(`/api/v1/runs/${encodeURIComponent(runId)}/export/docx`);
 }
 
 export async function fetchRunContext(runId: string): Promise<RunContextResponse> {
@@ -579,6 +672,16 @@ export async function fetchRunSourceChunks(
 
 export async function fetchCities(): Promise<CityListResponse> {
   return requestJson<CityListResponse>("/api/v1/cities");
+}
+
+export async function fetchCityMarkdown(
+  cityName: string,
+  options?: { signal?: AbortSignal },
+): Promise<CityMarkdownResponse> {
+  return requestJson<CityMarkdownResponse>(
+    `/api/v1/cities/${encodeURIComponent(cityName)}/markdown`,
+    { signal: options?.signal },
+  );
 }
 
 export async function fetchCityGroups(): Promise<CityGroupListResponse> {

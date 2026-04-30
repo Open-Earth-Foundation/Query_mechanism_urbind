@@ -9,6 +9,7 @@ from typing import Any
 from collections.abc import Mapping
 
 from backend.services.error_log_artifact import write_error_log_artifact
+from backend.utils.city_normalization import normalize_city_key
 from backend.utils.paths import RunPaths
 
 logger = logging.getLogger(__name__)
@@ -16,12 +17,19 @@ logger = logging.getLogger(__name__)
 
 class RunLogger:
     def __init__(self, run_paths: RunPaths, question: str) -> None:
+        """Initialize run-scoped structured and text artifacts."""
         self.run_paths = run_paths
         self.run_log: dict[str, Any] = {
             "run_id": run_paths.base_dir.name,
             "inputs": {
-                "initial_question": question,
-                "refined_question": question,
+                "original_question": question,
+                "canonical_research_query": question,
+                "query_mode": "standard",
+                "retrieval_queries": [question],
+                "retrieval_query_count": 1,
+                "retrieval_query_1": question,
+                "retrieval_query_2": None,
+                "retrieval_query_3": None,
                 "selected_cities_planned": [],
                 "selected_cities_found": [],
                 "markdown_dir": None,
@@ -38,9 +46,11 @@ class RunLogger:
             "artifacts": {},
         }
         self.context_bundle: dict[str, Any] = {
-            "sql": None,
             "markdown": None,
+            "original_question": question,
             "research_question": question,
+            "query_mode": "standard",
+            "retrieval_queries": [question],
             "final": None,
             "analysis_mode": "aggregate",
         }
@@ -50,17 +60,19 @@ class RunLogger:
         self.write_run_log()
 
     def _ensure_dirs(self) -> None:
+        """Create the per-run artifact directories."""
         self.run_paths.base_dir.mkdir(parents=True, exist_ok=True)
-        self.run_paths.sql_dir.mkdir(parents=True, exist_ok=True)
         self.run_paths.markdown_dir.mkdir(parents=True, exist_ok=True)
 
     def write_run_log(self) -> None:
+        """Persist the structured run log JSON."""
         self.run_paths.run_log.write_text(
             json.dumps(self.run_log, indent=2, ensure_ascii=False, default=str),
             encoding="utf-8",
         )
 
     def write_context_bundle(self) -> None:
+        """Persist the current context bundle JSON."""
         self.run_paths.context_bundle.write_text(
             json.dumps(self.context_bundle, indent=2, ensure_ascii=False, default=str),
             encoding="utf-8",
@@ -78,26 +90,6 @@ class RunLogger:
         if payload is None:
             return "(missing)"
         return json.dumps(payload, indent=2, ensure_ascii=False, default=str)
-
-    def _summarize_sql_results(self, payload: object | None) -> str:
-        if not isinstance(payload, list):
-            return "(missing)"
-        lines: list[str] = []
-        for result in payload:
-            if not isinstance(result, dict):
-                continue
-            query_id = result.get("query_id")
-            row_count = result.get("row_count")
-            columns = result.get("columns", [])
-            rows = result.get("rows", [])
-            error = None
-            if columns == ["error"] and rows:
-                error = rows[0][0]
-            lines.append(
-                f"- {query_id}: rows={row_count}, columns={columns}"
-                + (f" | error={error}" if error else "")
-            )
-        return "\n".join(lines) if lines else "(empty)"
 
     def _summarize_markdown_failures(self, payload: object | None) -> dict[str, Any] | None:
         """Build an aggregate failure summary from markdown error details."""
@@ -305,15 +297,35 @@ class RunLogger:
         return write_error_log_artifact(run_log_path, self.run_paths.error_log)
 
     def write_text_log(self) -> None:
+        """Write the human-readable run summary artifact."""
         lines: list[str] = []
         lines.append("RUN SUMMARY")
         lines.append(f"Run ID: {self.run_log.get('run_id')}")
         inputs = self.run_log.get("inputs", {})
         if isinstance(inputs, dict):
-            lines.append(
-                f"Question: {inputs.get('initial_question', '(missing)')}"
+            original_question = (
+                inputs.get("original_question")
+                or inputs.get("initial_question")
+                or "(missing)"
             )
-            lines.append(f"Refined question: {inputs.get('refined_question', self.context_bundle.get('research_question'))}")
+            canonical_research_query = (
+                inputs.get("canonical_research_query")
+                or inputs.get("refined_question")
+                or self.context_bundle.get("research_question")
+                or "(missing)"
+            )
+            query_mode = inputs.get(
+                "query_mode",
+                self.context_bundle.get("query_mode", "standard"),
+            )
+            lines.append(f"Original question: {original_question}")
+            lines.append(f"Query mode: {query_mode}")
+            lines.append(f"Canonical research query: {canonical_research_query}")
+            for index in range(1, 4):
+                lines.append(
+                    f"Retrieval query {index}: "
+                    f"{inputs.get(f'retrieval_query_{index}') or '(none)'}"
+                )
             lines.append(
                 "Selected cities (planned): "
                 f"{json.dumps(inputs.get('selected_cities_planned', []), ensure_ascii=False)}"
@@ -360,43 +372,6 @@ class RunLogger:
         lines.append(self._format_json(self.context_bundle))
         lines.append("")
 
-        schema_payload = self._read_json_file(self.run_paths.schema_summary)
-        lines.append("SCHEMA_SUMMARY")
-        lines.append(self._format_json(schema_payload))
-        lines.append("")
-
-        city_payload = self._read_json_file(self.run_paths.city_list)
-        lines.append("CITY_LIST")
-        lines.append(self._format_json(city_payload))
-        lines.append("")
-
-        sql_queries = self._read_json_file(self.run_paths.sql_queries)
-        lines.append("SQL_QUERIES (LLM)")
-        lines.append(self._format_json(sql_queries))
-        lines.append("")
-
-        sql_rounds_path = self.run_paths.sql_dir / "rounds.json"
-        sql_rounds = self._read_json_file(sql_rounds_path)
-        lines.append("SQL_ROUNDS (LLM)")
-        lines.append(self._format_json(sql_rounds))
-        lines.append("")
-
-        sql_results = self._read_json_file(self.run_paths.sql_results)
-        lines.append("SQL_RESULTS_SUMMARY")
-        lines.append(self._summarize_sql_results(sql_results))
-        lines.append("")
-
-        if self.run_paths.sql_results.exists():
-            lines.append("SQL_RESULTS (CAPPED)")
-            lines.append(self._read_text_file(self.run_paths.sql_results))
-            lines.append("")
-
-        sql_results_full_path = self.run_paths.sql_results_full
-        if sql_results_full_path.exists():
-            lines.append("SQL_RESULTS_FULL")
-            lines.append(self._read_text_file(sql_results_full_path))
-            lines.append("")
-
         markdown_payload = self._read_json_file(self.run_paths.markdown_excerpts)
         lines.append("MARKDOWN_EXCERPTS (LLM)")
         lines.append(self._format_json(markdown_payload))
@@ -416,10 +391,12 @@ class RunLogger:
         self.run_paths.run_summary.write_text("\n".join(lines), encoding="utf-8")
 
     def record_decision(self, decision: dict[str, Any]) -> None:
+        """Append one structured decision payload to the run log."""
         self.run_log["decisions"].append(decision)
         self.write_run_log()
 
     def record_artifact(self, name: str, path: Path) -> None:
+        """Register one artifact path in the structured run log."""
         self.run_log["artifacts"][name] = str(path)
         self.write_run_log()
 
@@ -433,8 +410,9 @@ class RunLogger:
         self.run_log["writer_multi_pass"] = payload
         self.write_run_log()
 
-    def update_sql_bundle(self, sql_payload: dict[str, Any]) -> None:
-        self.context_bundle["sql"] = sql_payload
+    def update_enrichment_bundle(self, enrichment_payload: dict[str, Any]) -> None:
+        """Persist the enrichment context bundle section."""
+        self.context_bundle["enrichment"] = enrichment_payload
         self.write_context_bundle()
 
     def update_markdown_bundle(self, markdown_payload: dict[str, Any]) -> None:
@@ -449,13 +427,58 @@ class RunLogger:
             self.write_run_log()
         self.write_context_bundle()
 
-    def update_research_question(self, research_question: str) -> None:
-        self.context_bundle["research_question"] = research_question
+    def update_query_inputs(
+        self,
+        *,
+        original_question: str,
+        canonical_research_query: str,
+        retrieval_queries: list[str],
+        query_mode: str,
+    ) -> None:
+        """Persist query-mode metadata in both run log inputs and context bundle."""
+        normalized_original_question = original_question.strip() or original_question
+        normalized_canonical_query = (
+            canonical_research_query.strip() or normalized_original_question
+        )
+        normalized_retrieval_queries = [
+            query.strip() for query in retrieval_queries if query.strip()
+        ]
+        if not normalized_retrieval_queries:
+            normalized_retrieval_queries = [normalized_canonical_query]
+        resolved_query_mode = query_mode.strip() if isinstance(query_mode, str) else ""
+        if not resolved_query_mode:
+            resolved_query_mode = "standard"
+
+        self.context_bundle["original_question"] = normalized_original_question
+        self.context_bundle["research_question"] = normalized_canonical_query
+        self.context_bundle["query_mode"] = resolved_query_mode
+        self.context_bundle["retrieval_queries"] = normalized_retrieval_queries
+
         inputs = self.run_log.get("inputs")
-        if isinstance(inputs, dict):
-            inputs["refined_question"] = research_question
-            self.run_log["inputs"] = inputs
-            self.write_run_log()
+        if not isinstance(inputs, dict):
+            inputs = {}
+        inputs["original_question"] = normalized_original_question
+        inputs["canonical_research_query"] = normalized_canonical_query
+        inputs["query_mode"] = resolved_query_mode
+        inputs["retrieval_queries"] = normalized_retrieval_queries
+        inputs["retrieval_query_count"] = len(normalized_retrieval_queries)
+        inputs["retrieval_query_1"] = (
+            normalized_retrieval_queries[0]
+            if len(normalized_retrieval_queries) >= 1
+            else None
+        )
+        inputs["retrieval_query_2"] = (
+            normalized_retrieval_queries[1]
+            if len(normalized_retrieval_queries) >= 2
+            else None
+        )
+        inputs["retrieval_query_3"] = (
+            normalized_retrieval_queries[2]
+            if len(normalized_retrieval_queries) >= 3
+            else None
+        )
+        self.run_log["inputs"] = inputs
+        self.write_run_log()
         self.write_context_bundle()
 
     def update_analysis_mode(self, analysis_mode: str) -> None:
@@ -493,9 +516,9 @@ class RunLogger:
         )
         found = sorted(
             {
-                str(doc.get("city_key", "")).strip()
+                normalize_city_key(str(doc.get("city_key", "")).strip())
                 for doc in markdown_chunks
-                if str(doc.get("city_key", "")).strip()
+                if normalize_city_key(str(doc.get("city_key", "")).strip())
             }
         )
         file_count = len(

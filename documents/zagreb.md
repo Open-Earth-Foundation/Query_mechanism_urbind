@@ -10,178 +10,122 @@ Climate Neutrality Action Plan of the City of Zagreb - A disruptive vision for m
 ![img-0.jpeg](img-0.jpeg)
 
 NetZeroCities has received funding from the H2020 Research and Innovation Programme under the grant agreement n°101036519.
-Climate Neutrality Action Plan
-
-2
-
 # Table of Contents
 
-Summary...7
-List of figures...11
-List of tables...12
-Abbreviations and acronyms...12
-Introduction...16
-Vision...16
-Part A – Current State of Climate Action...19
-Module A-1 Greenhouse Gas Emissions Baseline Inventory...21
-Infrastructure...21
-Built environment...21
-Energy infrastructure...25
-Mobility...31
-Utilities...36
-Emissions...37
-Households...45
-Services...46
-Mobility...48
-Industry...49
-Agriculture...50
-Module A-2 Current Policies and Strategies Assessment...52
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality...75
-Legislative and political...75
-Barriers...75
-Opportunities...78
-Technical...79
-Barriers...79
-Opportunities...82
-Governance...84
-Climate Neutrality Action Plan
+- Summary
+- List of figures
+- List of tables
+- Abbreviations and acronyms
+- Introduction
+- Vision
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Infrastructure
+- Built environment
+- Energy infrastructure
+- Mobility
+- Utilities
+- Emissions
+- Households
+- Services
+- Mobility
+- Industry
+- Agriculture
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Legislative and political
+- Barriers
+- Opportunities
+- Technical
+- Barriers
+- Opportunities
+- Governance
+- Barrier
+- Opportunities
+- Climate risks and hazards
+- Key hazards
+- Extreme temperatures
+- Flash flood
+- Gale force wind
+- Landslide
+- River flood
+- Outlook
+- Impacts
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways – summary
+- Impact Pathways – Built environment
+- Summary of Actions and Implementation Environment
+- Spatial planning as a structural enabler of 90% by 2030
+- Implementation risks and systemic responses
+- Opportunity-driven transition
+- Institutional architecture and stakeholder engagement
+- Financial and institutional readiness
+- Transport Sector – impact pathways
+- Assumptions and data sources: Foundations of Zagreb's transport emissions reduction modeling
+- Waste – From Liability to Circular Asset
+- Strategic vision: waste as part of climate neutrality
+- Mitigation impact and residuals
+- Assumptions and data sources
+- Governance and planning integration
+- Financing and circular economy role
+- Residuals strategy for waste and Outlook
 
-Barrier...84
-Opportunities...84
-
-Climate risks and hazards...85
-
-Key hazards...86
-
-Extreme temperatures...86
-Flash flood...87
-Gale force wind...87
-Landslide...88
-River flood...89
-
-Outlook...90
-Impacts...92
-
-Part B – Pathways towards Climate Neutrality by 2030...94
-
-Module B-1 Climate Neutrality Scenarios and Impact Pathways – summary...95
-
-Impact Pathways – Built environment...101
-
-Summary of Actions and Implementation Environment...102
-Spatial planning as a structural enabler of 90% by 2030...104
-Implementation risks and systemic responses...106
-Opportunity-driven transition...107
-Institutional architecture and stakeholder engagement...107
-Financial and institutional readiness...108
-
-Transport Sector – impact pathways...120
-
-Assumptions and data sources: Foundations of Zagreb's transport emissions reduction modeling...123
-
-Waste – From Liability to Circular Asset...137
-
-Strategic vision: waste as part of climate neutrality...137
-Mitigation impact and residuals...138
-Assumptions and data sources...139
-Governance and planning integration...139
-Financing and circular economy role...140
-Climate Neutrality Action Plan
-
-Residuals strategy for waste and Outlook... 140
-
-## 3.1.4 Industry – reflection... 141
-
-Strategic vision: Industry as both a challenge and an opportunity ... 141
-
-Baseline and residual challenge... 141
-
-Regulatory and corporate foundations... 141
-
-City as an active enabler... 142
-
-Industry as a driver of circularity and innovation... 142
-
-Residuals strategy for industry... 143
-
-Outlook: focus on industry as a strategic pillar... 143
-
-## 3.1.5 Agriculture... 145
-
-Agriculture and climate neutrality: small footprint, systemic significance ... 145
-
-Legislative and governance framework... 145
-
-Enabling practices and partnerships... 146
-
-Agriculture in the circular economy and resilience agenda... 146
-
-Residuals strategy for agriculture... 146
-
-Outlook... 147
-
-## 3.1.6 Residual emissions and removals outline – A structural component of Zagreb’s climate pathway... 148
-
-Residuals as a systemic challenge, not a side issue... 148
-
-Anchoring residuals in spatial planning (Green GUP)... 148
-
-Standards as guarantors of permanence and quality... 149
-
-Institutional architecture and governance... 149
-
-Financing residuals through mainstream investment... 150
-
-Social and economic co-benefits... 150
-
-Outlook: phasing down residuals, phasing up local removals... 151
-
-## 3.2 Module B-2 Climate Neutrality Portfolio Design... 154
-
-### 3.2.1 Horizontal measures portfolio - Policy developments – early stages (Years 1-2) – setting the enabling conditions... 154
-Climate Neutrality
-Action Plan
-
-Policy developments – setting the enabling conditions! ... 157
-Programme for the decarbonisation of the built environment ... 159
-Technology and assets – Early adoptions (1-2 years) ... 159
-Technology and assets – Later adoptions (3+ years) ... 167
-Programme for decarbonisation of water supply sector ... 170
-Governance and Policy early adoptions ... 170
-Water sector technology and assets measures ... 175
-Programme for the decarbonisation of mobility ... 186
-Early adoption policy measures (1-3 years) ... 186
-Late adoption policy measures (3+ years) ... 197
-Early adoption technological measures ... 218
-Late adoption technological measures (3+ years) ... 244
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 251
-Part C – Enabling Climate Neutrality by 2030 ... 261
-Module C-1 Governance Innovation Interventions ... 261
-Mainstreaming mitigation and adaptation activities ... 265
-Module C-2 Social Innovation Interventions ... 266
-An overview of catalytic Systemic Transformation Core Activities ... 273
-National-level systemic actions ... 273
-The NECPlatform project ... 273
-National-level platform for sustainable finance ... 273
-City of Zagreb's systemic transformation activities ... 274
-The INPLAN project ... 274
-The CROSS project ... 275
-The ZAGREEN project ... 276
-The digital Energy atlas of the City of Zagreb – where digitalisation meets energy transition ... 277
-PV Max project – significant deployment of PV powerplants ... 277
-ActGreen – Activating green courtyards for carbon neutrality ... 278
-Climate proofing of infrastructure projects ... 279
-Outlook and next steps ... 280
-Climate Neutrality Action Plan
-
-6
-
-Next Steps ... 281
-
-6
-Climate Neutrality Action Plan
-
-#
+- 3.1.4 Industry – reflection... 141
+- Strategic vision: Industry as both a challenge and an opportunity ... 141
+- Baseline and residual challenge... 141
+- Regulatory and corporate foundations... 141
+- City as an active enabler... 142
+- Industry as a driver of circularity and innovation... 142
+- Residuals strategy for industry... 143
+- Outlook: focus on industry as a strategic pillar... 143
+- 3.1.5 Agriculture... 145
+- Agriculture and climate neutrality: small footprint, systemic significance ... 145
+- Legislative and governance framework... 145
+- Enabling practices and partnerships... 146
+- Agriculture in the circular economy and resilience agenda... 146
+- Residuals strategy for agriculture... 146
+- Outlook... 147
+- 3.1.6 Residual emissions and removals outline – A structural component of Zagreb’s climate pathway... 148
+- Residuals as a systemic challenge, not a side issue... 148
+- Anchoring residuals in spatial planning (Green GUP)... 148
+- Standards as guarantors of permanence and quality... 149
+- Institutional architecture and governance... 149
+- Financing residuals through mainstream investment... 150
+- Social and economic co-benefits... 150
+- Outlook: phasing down residuals, phasing up local removals... 151
+- 3.2 Module B-2 Climate Neutrality Portfolio Design... 154
+- 3.2.1 Horizontal measures portfolio - Policy developments – early stages (Years 1-2) – setting the enabling conditions... 154
+- Policy developments – setting the enabling conditions! ... 157
+- Programme for the decarbonisation of the built environment ... 159
+- Technology and assets – Early adoptions (1-2 years) ... 159
+- Technology and assets – Later adoptions (3+ years) ... 167
+- Programme for decarbonisation of water supply sector ... 170
+- Governance and Policy early adoptions ... 170
+- Water sector technology and assets measures ... 175
+- Programme for the decarbonisation of mobility ... 186
+- Early adoption policy measures (1-3 years) ... 186
+- Late adoption policy measures (3+ years) ... 197
+- Early adoption technological measures ... 218
+- Late adoption technological measures (3+ years) ... 244
+- Module B-3 Indicators for Monitoring, Evaluation and Learning ... 251
+- Part C – Enabling Climate Neutrality by 2030 ... 261
+- Module C-1 Governance Innovation Interventions ... 261
+- Mainstreaming mitigation and adaptation activities ... 265
+- Module C-2 Social Innovation Interventions ... 266
+- An overview of catalytic Systemic Transformation Core Activities ... 273
+- National-level systemic actions ... 273
+- The NECPlatform project ... 273
+- National-level platform for sustainable finance ... 273
+- City of Zagreb's systemic transformation activities ... 274
+- The INPLAN project ... 274
+- The CROSS project ... 275
+- The ZAGREEN project ... 276
+- The digital Energy atlas of the City of Zagreb – where digitalisation meets energy transition ... 277
+- PV Max project – significant deployment of PV powerplants ... 277
+- ActGreen – Activating green courtyards for carbon neutrality ... 278
+- Climate proofing of infrastructure projects ... 279
+- Outlook and next steps ... 280
+- Next Steps ... 281
 
 # Summary
 
@@ -191,53 +135,39 @@ Zagreb is committed to becoming a leading example of urban sustainability and cl
 
 ## Key Elements of the Climate Action Plan are following:
 
-Climate Goals and Commitments: Zagreb is dedicated to achieving significant reductions in greenhouse gas emissions and reaching carbon neutrality by the target year, aligning with global commitments such as the Paris Agreement, surpassing national targets. This ambition reflects a comprehensive understanding of the challenges ahead, emphasizing the need for integrated mitigation and adaptation strategies that address the complex, interconnected nature of climate action.
+- Climate Goals and Commitments: Zagreb is dedicated to achieving significant reductions in greenhouse gas emissions and reaching carbon neutrality by the target year, aligning with global commitments such as the Paris Agreement, surpassing national targets. This ambition reflects a comprehensive understanding of the challenges ahead, emphasizing the need for integrated mitigation and adaptation strategies that address the complex, interconnected nature of climate action.
 
-Resilience and Adaptation: In response to increasing climate risks, including extreme weather events, flooding, and heatwaves, Zagreb's strategy integrates adaptation into urban planning and infrastructure development. By combining mitigation and adaptation efforts, the city ensures that resilience is embedded in all initiatives, reducing vulnerabilities and preparing the city to cope with the impacts of climate change.
-Climate Neutrality
-Action Plan
+- Resilience and Adaptation: In response to increasing climate risks, including extreme weather events, flooding, and heatwaves, Zagreb's strategy integrates adaptation into urban planning and infrastructure development. By combining mitigation and adaptation efforts, the city ensures that resilience is embedded in all initiatives, reducing vulnerabilities and preparing the city to cope with the impacts of climate change.
 
-# Disruptive Approach to Governance:
+## Disruptive Approach to Governance:
 
 Zagreb's approach to the development of the Climate City Contract is distinctly disruptive, moving away from business-as-usual practices. Unlike traditional models that often rely on a separate transition team, Zagreb has made climate action a shared responsibility across all city officials. There is no specific transition team in place; instead, all main city officials are required to incorporate climate-related issues into their agendas and daily operations. This approach ensures that climate action is not siloed but embedded into every decision and process. Notably, the Mayor of Zagreb serves as the Chief Climate Officer, underscoring the city's commitment to making climate action a top priority at the highest level of leadership.
 
-# Mainstreaming Climate Action Across All City Processes:
+## Mainstreaming Climate Action Across All City Processes:
 
 The Climate City Contract exercise revealed the importance of embedding climate considerations into all city functions, ensuring that the city's approach is comprehensive and cohesive:
 
-Integration into Urban Planning and Zoning: Climate resilience and sustainability are already embedded into urban planning, zoning, and land use regulations up to certain level, but more will be done in future iterations. This ensures that all developments align with the city's combined mitigation and adaptation goals, such as promoting low-carbon transport, energy-efficient buildings, and expanding green spaces to enhance urban cooling and flood management.
-Climate-Oriented Public Procurement: The will revise procurement policies to prioritize climate-friendly and resilient solutions, integrating both mitigation and adaptation considerations. By selecting low-emission vehicles, renewable energy systems, and resilient construction materials, Zagreb supports its broader climate strategy through every purchase.
-Incorporating Climate Risk into Budgeting and Financial Planning: Mainstreaming climate action involves integrating climate risk assessments into budgeting and financial planning processes. This ensures that financial decisions align with the city's combined mitigation and
-Climate Neutrality
-Action Plan
+- Integration into Urban Planning and Zoning: Climate resilience and sustainability are already embedded into urban planning, zoning, and land use regulations up to certain level, but more will be done in future iterations. This ensures that all developments align with the city's combined mitigation and adaptation goals, such as promoting low-carbon transport, energy-efficient buildings, and expanding green spaces to enhance urban cooling and flood management.
+- Climate-Oriented Public Procurement: The will revise procurement policies to prioritize climate-friendly and resilient solutions, integrating both mitigation and adaptation considerations. By selecting low-emission vehicles, renewable energy systems, and resilient construction materials, Zagreb supports its broader climate strategy through every purchase.
+- Incorporating Climate Risk into Budgeting and Financial Planning: Mainstreaming climate action involves integrating climate risk assessments into budgeting and financial planning processes. This ensures that financial decisions align with the city's combined mitigation and adaptation objectives, creating a unified approach to addressing the complexity of climate challenges.
 
-adaptation objectives, creating a unified approach to addressing the complexity of climate challenges.
+- Establishing Climate Action as a Cross-Cutting Priority: A dedicated climate task force will oversee the integration of climate considerations across all city departments, fostering collaboration and ensuring that every policy, program, and project is evaluated for its climate impact and contribution to both mitigation and adaptation goals, maximizing overall effectiveness.
 
-Establishing Climate Action as a Cross-Cutting Priority: A dedicated climate task force will oversee the integration of climate considerations across all city departments, fostering collaboration and ensuring that every policy, program, and project is evaluated for its climate impact and contribution to both mitigation and adaptation goals, maximizing overall effectiveness.
-
-Policy and Regulatory Adjustments: To support the combined approach of mitigation and adaptation, Zagreb is revising its policy and regulatory frameworks. This includes mandating green building standards that not only reduce energy use but also improve resilience to extreme weather, and updating zoning laws to promote climate-smart land use, fully implementing the climate proofing and monetisation aspects. The Climate City Contract has been instrumental in identifying these necessary policy shifts, underscoring the need for regulatory flexibility and innovation.
+- Policy and Regulatory Adjustments: To support the combined approach of mitigation and adaptation, Zagreb is revising its policy and regulatory frameworks. This includes mandating green building standards that not only reduce energy use but also improve resilience to extreme weather, and updating zoning laws to promote climate-smart land use, fully implementing the climate proofing and monetisation aspects. The Climate City Contract has been instrumental in identifying these necessary policy shifts, underscoring the need for regulatory flexibility and innovation.
 
 ## Enhanced Cooperation with Stakeholders:
 
-National Ministries: Zagreb's climate strategy involves close collaboration with national ministries, such as the Ministry of Green transition, Ministry of economy, Ministry of Finance, Ministry of transport, Ministry of regional development and EU funds and others to ensure local efforts are supported by national policies and resources. The Climate City Contract process highlighted the critical need for this alignment, enabling cohesive action across governance levels.
-Private Sector Engagement: The private sector plays a pivotal role in driving both emissions reductions and resilience-building. Through partnerships, incentives, and collaboration platforms, Zagreb aims to disrupt traditional business models and advance both mitigation and adaptation, as recognized in the comprehensive scope outlined by the Climate City Contract action plan.
-Citizen and Community Participation: Engaging citizens is central to Zagreb's climate action strategy. The city will actively involve residents in
-Climate Neutrality
-Action Plan
+- National Ministries: Zagreb's climate strategy involves close collaboration with national ministries, such as the Ministry of Green transition, Ministry of economy, Ministry of Finance, Ministry of transport, Ministry of regional development and EU funds and others to ensure local efforts are supported by national policies and resources. The Climate City Contract process highlighted the critical need for this alignment, enabling cohesive action across governance levels.
+- Private Sector Engagement: The private sector plays a pivotal role in driving both emissions reductions and resilience-building. Through partnerships, incentives, and collaboration platforms, Zagreb aims to disrupt traditional business models and advance both mitigation and adaptation, as recognized in the comprehensive scope outlined by the Climate City Contract action plan.
+- Citizen and Community Participation: Engaging citizens is central to Zagreb's climate action strategy. The city will actively involve residents in climate initiatives through education, outreach, and participatory processes, ensuring that the community understands and supports both mitigation efforts and adaptation measures. The Climate City Contract emphasized the importance of this inclusive approach, recognizing the role of citizens in the city's climate journey.
 
-climate initiatives through education, outreach, and participatory processes, ensuring that the community understands and supports both mitigation efforts and adaptation measures. The Climate City Contract emphasized the importance of this inclusive approach, recognizing the role of citizens in the city's climate journey.
+- Innovation and Technology: Leveraging innovative technologies that address both mitigation and adaptation needs is a key aspect of Zagreb's strategy. The Climate City Contract process identified opportunities for smart city initiatives, green infrastructure, and advanced energy systems, which are critical to addressing the complexity of achieving climate neutrality.
 
-Innovation and Technology: Leveraging innovative technologies that address both mitigation and adaptation needs is a key aspect of Zagreb's strategy. The Climate City Contract process identified opportunities for smart city initiatives, green infrastructure, and advanced energy systems, which are critical to addressing the complexity of achieving climate neutrality.
+- Social Equity and Inclusion: Ensuring a just transition is fundamental to Zagreb's climate strategy. By focusing on inclusive policies that address social disparities and create opportunities in the green economy, the city aims to ensure that all residents benefit from combined mitigation and adaptation efforts. The Climate City Contract highlighted the need for these efforts to be equitable and inclusive, ensuring that no one is left behind.
 
-Social Equity and Inclusion: Ensuring a just transition is fundamental to Zagreb's climate strategy. By focusing on inclusive policies that address social disparities and create opportunities in the green economy, the city aims to ensure that all residents benefit from combined mitigation and adaptation efforts. The Climate City Contract highlighted the need for these efforts to be equitable and inclusive, ensuring that no one is left behind.
+- Scaling Up Successful Initiatives: To maximize impact, Zagreb will expand successful pilot projects that integrate mitigation and adaptation across the city.
 
-Scaling Up Successful Initiatives: To maximize impact, Zagreb will expand successful pilot projects that integrate mitigation and adaptation across the city.
-
-Monitoring, Reporting, and Continuous Improvement: A robust monitoring and reporting framework will track progress on both mitigation and adaptation fronts. This transparent approach allows for continuous learning and adaptation, ensuring that the city's climate actions remain effective and responsive to evolving challenges. The Climate City Contract has provided a roadmap for ongoing evaluation and refinement, essential for navigating the complex path to climate neutrality. We have also developed our own index, index that will allow us to track the mainstreaming effect of mitigation and adaptation into all governance processes. This innovation will support the disruptive way of considering climate issues.
-
-0
-Climate Neutrality
-Action Plan
+- Monitoring, Reporting, and Continuous Improvement: A robust monitoring and reporting framework will track progress on both mitigation and adaptation fronts. This transparent approach allows for continuous learning and adaptation, ensuring that the city's climate actions remain effective and responsive to evolving challenges. The Climate City Contract has provided a roadmap for ongoing evaluation and refinement, essential for navigating the complex path to climate neutrality. We have also developed our own index, index that will allow us to track the mainstreaming effect of mitigation and adaptation into all governance processes. This innovation will support the disruptive way of considering climate issues.
 
 The Climate City Contract exercise has allowed Zagreb to recognize the full scope of efforts required to reach climate neutrality, highlighting the complexity of execution and the need for a unified, all-encompassing approach. By taking a disruptive path that moves away from business-as-usual models, Zagreb ensures that climate action is not the responsibility of a single team but is woven into the fabric of the city's governance. With the Mayor acting as the Chief Climate Officer, this approach underscores the city's commitment to prioritizing climate action at the highest level.
 
@@ -261,11 +191,7 @@ The next steps involve detailed implementation of the Climate Action Plan, secur
 |  Figure 12 | GHG emissions of the Services sector | 39  |
 |  Figure 13 | Energy consumption of the Mobility sector | 40  |
 |  Figure 14 | GHG emissions of the Mobility sector | 41  |
-Climate Neutrality
-Action Plan
-
 |  Figure 15 | Energy consumption of the Industrial sector | 42  |
-| --- | --- | --- |
 |  Figure 16 | GHG emissions of the Industrial sector | 42  |
 |  Figure 17 | Energy consumption of the Agricultural sector | 43  |
 |  Figure 18 | GHG emissions of the Agricultural sector | 43  |
@@ -296,11 +222,7 @@ Action Plan
 |  AEV | Autonomous electric vehicle  |
 |  CAB | Climate Awareness Bond  |
 |  CAPEX | Capital expenditures  |
-Climate Neutrality
-Action Plan
-
 |  CCC | Climate City Contract  |
-| --- | --- |
 |  DH | District heating  |
 |  DJF | December January February  |
 |  DSO | Distribution system operator  |
@@ -339,12 +261,7 @@ Action Plan
 |  KPI | Key performance indicator  |
 |  LED | Light-emitting diode  |
 
-3
-Climate Neutrality
-Action Plan
-
 |  LEZs | Expand low-emission zones  |
-| --- | --- |
 |  LIFE | Lifestyle for Environment  |
 |  LPG | Liquefied petroleum gas  |
 |  MAM | March April May  |
@@ -380,12 +297,7 @@ Action Plan
 |  TOD | Transit-oriented development  |
 |  TODDs | Transit-oriented development districts  |
 
-4
-Climate Neutrality
-Action Plan
-
 |  TPES | Total primary energy supply  |
-| --- | --- |
 |  TSO | Transmission system operator  |
 |  TVM | Ticket vending machine  |
 |  TWh | Terawatt-hour  |
@@ -395,11 +307,6 @@ Action Plan
 |  ZOV | Zagrebačke otpadne vode (engl. Zagreb Wastewater)  |
 |  ZSK | Zagrebački sunčani krovovi (engl. Zagreb Solar Roofs)  |
 |  WTE | Waste-to-energy  |
-
-5
-Climate Neutrality Action Plan
-
-1
 
 # 1 Introduction
 
@@ -412,26 +319,20 @@ As Mayor of Zagreb, my vision for our city is one where sustainability, resilien
 Zagreb's journey towards carbon neutrality by is not just about setting targets; it's about fundamentally reshaping how we operate as a city. Our approach is grounded in a holistic strategy that combines both mitigation and adaptation efforts, ensuring that we address climate challenges comprehensively. This means reducing our greenhouse gas emissions while simultaneously preparing our infrastructure, economy, and communities to withstand and adapt to the impacts of climate change.
 
 Our Climate Action Plan is a testament to our determination to move away from business-as-usual practices. By embracing a disruptive approach, we are embedding climate considerations into every facet of city governance. This is not the responsibility of a single department or team but a shared duty that spans across all levels of city administration. Each city official is tasked with integrating climate-related issues into their agendas and daily operations, reflecting our commitment to making climate action a core priority in all decision-making processes.
-Climate Neutrality Action Plan
 
-C
-
-# Leadership and Innovation: Leading by Example
+## Leadership and Innovation: Leading by Example
 
 As Chief Climate Officer, I am committed to leading this transformation with vision and determination. It is imperative that we demonstrate leadership not only in setting ambitious goals but also in pioneering innovative solutions. By adopting a disruptive model, we are breaking down silos and fostering a culture where climate action is seamlessly integrated into urban planning, public procurement, financial planning, and every other aspect of city management. We are leveraging cutting-edge technologies and innovative approaches to address both mitigation and adaptation needs. From smart city initiatives to green infrastructure projects, we are positioning Zagreb as a hub of sustainability and resilience. This approach will not only enhance our city's livability but also set a benchmark for other cities to follow.
 
-# Inclusive and Equitable Climate Action
+## Inclusive and Equitable Climate Action
 
 Our vision for Zagreb is inclusive and equitable. We understand that climate action must benefit all residents and address social disparities. As we pursue our climate goals, we are dedicated to ensuring that no one is left behind. By focusing on inclusive policies, we aim to create opportunities for all citizens in the green economy and ensure that vulnerable communities are protected and empowered.
 
 Engaging with citizens is central to our strategy. We will involve our residents in climate initiatives through education, outreach, and participatory processes, ensuring that our climate action plan reflects their needs and aspirations. This collaborative approach will foster a sense of ownership and shared responsibility, making our climate goals a collective endeavor.
 
-# Collaborative Approach: National and Global Engagement
+## Collaborative Approach: National and Global Engagement
 
-To achieve our climate objectives, we must work closely with national ministries, the private sector, and our citizens. Collaboration with national ministries will ensure that our local
-Climate Neutrality Action Plan
-
-actions are supported by national policies and resources, but also serve as an example for national level to undertake more bold initiatives. Engaging with the private sector will drive innovation and investment in climate solutions, while active citizen participation will strengthen our community's resilience and commitment to sustainability.
+To achieve our climate objectives, we must work closely with national ministries, the private sector, and our citizens. Collaboration with national ministries will ensure that our local actions are supported by national policies and resources, but also serve as an example for national level to undertake more bold initiatives. Engaging with the private sector will drive innovation and investment in climate solutions, while active citizen participation will strengthen our community's resilience and commitment to sustainability.
 
 Our approach is about more than just local actions; it's about contributing to global climate efforts and setting an example for others to follow. By aligning our strategies with national and global frameworks, we are positioning Zagreb as a leader in the international climate community.
 
@@ -446,13 +347,6 @@ This vision reflects our commitment to leading by example, embracing innovation,
 Mayor,
 
 Tomislav Tomašević
-图
-
-Climate Neutrality
-
-Action Plan
-
-#
 
 # 2 Part A – Current State of Climate Action
 
@@ -464,11 +358,6 @@ According to the 2021 census $^{2}$ , the City of Zagreb has 767,131 residents, 
 
 ![img-1.jpeg](img-1.jpeg)
 Figure 1 Demographic structure of the City of Zagreb population according to the 2021 census
-Climate Neutrality
-
-Action Plan
-
-#
 
 According to March 2022 data, a significant proportion of the employed population in the City of Zagreb holds educational qualifications from vocational high schools, constituting  $46.2\%$  of the total workforce, while  $33.3\%$  possess postgraduate degrees (Figure 2). The greatest number of individuals in Zagreb are employed in the wholesale and retail trade, repair of motor vehicles and motorcycles, and manufacturing sectors. As per 2022 data, the registered unemployment rate stood at  $3.1\%$ .
 
@@ -476,9 +365,6 @@ According to March 2022 data, a significant proportion of the employed populatio
 Figure 2 Statistics of employed individuals in legal entities in the City of Zagreb by gender and level of educational attainment
 
 The City of Zagreb, nestled at the foothills and southern slopes of the Medvednica mountain range and along the banks of the Sava River, experiences diverse microclimatic conditions. Zagreb enjoys a humid continental climate due to its location in the southwest part of the Pannonian Basin. However, recent times have witnessed alterations in the Köppen-Geiger climate classification across all meteorological stations within the City. These observations underscore the necessity for vigilant monitoring and adaptation to emerging conditions to ensure the City's resilience and sustainability for the future.
-Climate Neutrality Action Plan
-
-1
 
 # 2.1 Module A-1 Greenhouse Gas Emissions Baseline Inventory
 
@@ -493,9 +379,6 @@ The City of Zagreb owns over 1,000 buildings. This building stock includes kinde
 In the last 10 years, the City of Zagreb has carried out energy renovation of 80 public buildings, including 37 kindergartens, 18 primary schools, 4 secondary schools, 4 administration buildings / regional offices, 4 homes for the elderly and infirm, 8 health care buildings (health centers and hospital buildings), 2 sports buildings, 2 local self-government buildings. The mentioned buildings have a total area of 213,214 m². The energy renovation cost of these buildings is 62 million EUR.
 
 The series of earthquakes in northwestern Croatia in 2020 greatly impacted the building stock in the City of Zagreb, as many buildings were damaged due to the earthquakes. In accordance with the Law on Reconstruction, the City of Zagreb is solely responsible for the reconstruction of public buildings it owns, while the Government of the Republic of Croatia is responsible for the reconstruction of private houses, multi-apartment buildings, and other public buildings. The City of Zagreb prioritised the renovation of kindergartens, schools, and road infrastructure, and then the focus shifted to health and cultural buildings and city administration buildings.
-Climate Neutrality
-Action Plan
-C
 
 The City of Zagreb contracted 207 renovation projects for buildings it owns, of which 177 are currently completed, which amounts to more than 85%. At the same time, the buildings are not only renovated in solely part regarding construction but completely, which means that other important requirements for the building, including thermal protection and rational use of energy, have also been improved – all according to national regulation. The buildings were renovated with the funds made available to Croatia by the European Union as a sign of solidarity after the earthquakes in 2020. The City of Zagreb managed to use the funds with the great commitment of its city employees, who through eight calls for different types of buildings had to prepare projects according to the strict rules of the Law on Reconstruction and of the European Commission.
 
@@ -515,11 +398,6 @@ Table 1 Public lighting system in the City of Zagreb
 
 The whole public lighting system works around 4,200 hours every year which results in a total annual electricity consumption of around 78.5 GWh which generates around 9 million euros of annual expenses for electricity.
 
-2
-Climate Neutrality Action Plan
-
-3
-
 Since the public lighting system of the City of Zagreb is relatively large, but also outdated, the City of Zagreb recognised the importance and necessity of its public lighting system modernisation several years ago when a project called RePubLEEc was implemented in the period 2018-2021. This project, financed through ELENA (European Local Energy Assistance), had the aim to co-finance preparatory activities (technical and tender documentation) for the reconstruction and modernisation of at least 70% of the entire public lighting system in the City of Zagreb.
 
 Throughout the project, with the great help of REGEA, and due to several limitation factors, the City of Zagreb prepared a tender documentation for an Energy Performance Contract (EPC) for 40% of the public lighting system (around 51,000 luminaires), while the tender was published at the end of 2021.
@@ -528,18 +406,11 @@ The total value of this tender was set at around 28 million EUR. However, due to
 
 Except for EPC tender documentation, the City of Zagreb prepared and launched smaller reconstruction projects during 2019 - 2022. These smaller investment projects were primarily focused on older parts of the infrastructure that had to be realised due to other (in parallel) infrastructure modernisation programmes (like holistic reconstruction of streets and infrastructure on public roads). The overall investment of realised smaller investment projects is approximately 1,000,000 EUR.
 
-While a bigger investment project was not implemented, there is still a great need for a major renovation of the public lighting system in terms of not only replacing old luminaires
-Climate Neutrality
-Action Plan
+While a bigger investment project was not implemented, there is still a great need for a major renovation of the public lighting system in terms of not only replacing old luminaires with LED, but also changing the infrastructure such as lighting poles, electricity cables, as well as to integrate energy management and monitoring system.
 
-with LED, but also changing the infrastructure such as lighting poles, electricity cables, as well as to integrate energy management and monitoring system.
+### Energy infrastructure
 
-4
-Climate Neutrality Action Plan
-
-Energy infrastructure
-
-# EL-TO Zagreb
+#### EL-TO Zagreb
 
 EL-TO Zagreb, operated by HEP Proizvodnja Ltd (a daughter company of Croatian Energy Company – HEP Ltd) is a cogeneration heat and power plant built located in the western part of the city center. Initially built in 1907 for the electrification of the City of Zagreb, it operated as a typical thermal power plant, producing electricity only until 1954, when its utilisation in the heating sector started. Over the years, different blocks have been installed at the location, keeping up the energy needs, both in electricity and heat of the major city. As of today, 8 different production blocks are available with a nominal electricity power of 50 MWe and a nominal heat power of 200 MWt. Two blocks are classified as natural gas cogeneration blocks, two blocks are classified as typical thermal electricity production blocks (using natural gas or extra light fuel oil), while the other 4 are used for heating purposes only (using natural gas or extra light fuel oil). Production blocks can also participate in steam production with a nominal capacity of 80 MWt.
 
@@ -548,20 +419,18 @@ As it is a cogeneration power plant, its primary purpose is to produce electrici
 It is important to mention that, just as any other cogeneration power plant, EL-TO is defined by its work regime to produce a maximum amount of electric energy, while the heating energy is produced as a byproduct. If there is not enough heating energy to meet the heat demand, blocks mentioned above for the production of heating energy only are activated. This is also one of the reasons why EL-TO Zagreb also has a large water storage, which enables smoother optimisation of production units, especially during the night and in morning hours.
 
 Due to exceeded lifetime of several production blocks, EL-TO is currently in the process of modernisation of its production blocks where a brand new cogeneration block with a nominal electricity power of 150 MWe and a nominal heat power of 114 MWt has been built.
-Climate Neutrality Action Plan
 
 As a part of this modernisation project, a new 32,000 m³ water storage is planned which will have a thermal capacity of 1,000 MWh and an integrated 150 MW heater.
 
-## TE-TO Zagreb
+#### TE-TO Zagreb
 
 TE-TO Zagreb, operated by HEP Proizvodnja Ltd (a daughter company of Croatian Energy Company – HEP Ltd), is also a cogeneration heat and power plant built located in the east part of the City near the Sava River. Initially built in 1962, contrary to EL-TO, its purpose was immediately to meet both the electricity and heating needs of the eastern part of the City of Zagreb, where its nominal production capacity has increased over the years. As of today, 6 different production blocks are available with a nominal electricity power of 300 MWe and a nominal heat power of 508 MWt. Two blocks are classified as natural gas cogeneration blocks, one block is classified as typical thermal electricity production blocks (using natural gas or extra light fuel oil), while the other 4 are used for heating purposes only (using natural gas or extra light fuel oil). Production blocks can also participate in steam production with a nominal capacity of 246 MWt.
 
 As it is a cogeneration power plant, its primary purpose is to produce electricity and heating energy through a complex process of optimisation of different blocks based on energy needs. Apart from these, this power plant is also used as a vital production unit in auxiliary services provided to electricity distribution and transmission operators (tertiary balancing services). On a yearly basis, EL-TO produces around 900 GWh of heating energy, 1,650 GWh of electricity, and 200,000 tonnes of steam.
 
 Just as EL-TO Zagreb, this facility is also defined by its work regime to produce a maximum amount of electric energy, while the heating energy is produced as a byproduct. If there is not enough heating energy to meet the heat demand, the above-mentioned blocks for the production of heating energy only are activated. This is also one of the reasons why TE-TO Zagreb, just as EL-TO Zagreb, has a large water storage, which enables smoother optimisation of production units, especially during night and in morning hours. The thermal capacity of the water storage is 750 MWh, and it also has an integrated 150 MW heater.
-Climate Neutrality Action Plan
 
-# Central wastewater management facility
+#### Central wastewater management facility
 
 A very important aspect of high-density urban areas is management of waste-water due to an increased load for drainage and purification of sewage water. Having that in mind, the City of Zagreb established a company called Zagrebačke Otpadne Vode Ltd (engl. Zagreb Wastewater, ZOV) in 1998, whose integral purpose was to design, finance, build and operate a central waste-water management unit for the whole area of the City of Zagreb.
 
@@ -571,12 +440,7 @@ It should be mentioned that, as a part of this facility and its development, ZOV
 
 As of today, the company underwent a privatisation process after which companies WTE Wassertechnig GmbH and Westenergie Aqua GmbH have an equal ownership share of 48.5%, while a city-owned company Vodoprivreda Zagreb (engl. Water Management Zagreb) has a 3% ownership share. Although the concession agreement should have lasted until 2028, after which the facility would be transferred into the City of Zagreb's ownership, the agreement was canceled in 2024 due to several reasons where the most important one is that the land which was part of the concession agreement could be transferred in City of Zagreb's ownership before 2028 since the main waste management center is planned there.
 
-7
-Climate Neutrality Action Plan
-
-#
-
-# Integrated PV systems
+#### Integrated PV systems
 
 In the last several years, integrated PV systems have become one of the top priorities of the City of Zagreb's representatives since there were only 21 small-scale systems integrated on public buildings' roofs with a total power of 0.66 MWp. Most of these PV systems were installed to participate in the previous incentive systems (guaranteed purchase price).
 
@@ -588,32 +452,21 @@ As of today, the City of Zagreb and REGEA prepared technical documentation for a
 
 PV systems (1.43 MWp) were successfully installed through the EGP mechanism (EEA Grants), 16 PV systems are currently in the process of installation for which PPA was signed (1.7 MWp), while others are in different stages of development (obtaining permits, preparation for tender process or other). It is important to mention that the main factor that hinders this process is rooftops quality and complex administrative procedures.
 
-Apart from public buildings, city-owned company Zagreb Holding and Zagrebački Velesajam Ltd, as part of the business sector are also contributing to the programme. The Zagreb Holding and its connected companies identified 24 projects with a total power of
-Climate Neutrality Action Plan
-
-9
-
-around 33 MW which alone fulfill the programme's aim for this sector, while Zagrebački Velesajam Ltd is in the process of obtaining technical requirements from the electricity distribution company for its 3.3 MW PV system. It is important to mention that 2 PV systems that belong to this group have already been commissioned with a total power of 1 MW, while others will be published in a tender process by the end of this year after Zagreb Holding decides on the implementation model and financing schemes.
+Apart from public buildings, city-owned company Zagreb Holding and Zagrebački Velesajam Ltd, as part of the business sector are also contributing to the programme. The Zagreb Holding and its connected companies identified 24 projects with a total power of around 33 MW which alone fulfill the programme's aim for this sector, while Zagrebački Velesajam Ltd is in the process of obtaining technical requirements from the electricity distribution company for its 3.3 MW PV system. It is important to mention that 2 PV systems that belong to this group have already been commissioned with a total power of 1 MW, while others will be published in a tender process by the end of this year after Zagreb Holding decides on the implementation model and financing schemes.
 
 In 2022, the City of Zagreb established the company Zagrebački sunčani krovovi Ltd. (Zagreb Solar Roofs, ZSK) which has the main task of installing PV systems and storage systems, with the final objective to be able to supply green electricity primarily to public buildings owned by the City of Zagreb. The company is currently in the process of installing approximately 1.5 MW of building integrated PVs (planned by mid 2025), while it is planned to increase the capacity to over 20 MW by 2027.
 
-## Electricity network
+#### Electricity network
 
 The electricity network is one of the most developed infrastructures in the City of Zagreb, with more than 18,300 km of grid. It provides electricity to more than 570,000 points through 3,800 grid stations (total power 4,850 MVA). Every year, this electricity network is responsible for distributing around 16,900 GWh of electricity to end consumers, while the average distribution losses are around 7%. The reliability of the network, according to two main parameters – number of outages (SAIFI) and duration of outages (SAIDI), is the best among all parts of the country which is mostly due to the very dense and well-developed power distribution network, which enables various alternative power supply chains. However, several parts of the electricity grid are outdated and need to be modernised, while the whole grid is simply not ready for the "smart grid" concept due to a lack of digital measurement units, advanced regulation units and others. According to the investment strategy of the electricity distribution network operator (HEP ODS), most of the investments in the next decade will focus on digitalisation, the introduction of the "smart grid" concept, and an increase in the number of transformation units across the City. Regarding the spare capacity in the grid, for now, no major problems have been reported, which means that the grid can integrate a large share of renewable energy sources.
-Climate Neutrality Action Plan
 
-# DH network
+#### DH network
 
 The City of Zagreb relies on HEP Toplinarstvo Ltd for delivery of heat through its heat distribution network based on the long-term concession agreement. In total, around 100,000 end customers are supplied with high-temperature water or steam through a 227.3 km long heat distribution network. It should be mentioned that heat delivered through this network is produced in EL-TO and TE-TO Zagreb, the two main production units explained earlier. Until a few years ago, heat distribution network conditions were inadequate, with a high share of heat and water losses. In order to change that, HEP Toplinarstvo successfully applied for a large-scale EU project, "Revitalisation of district heating network," financed through the ITI mechanism. The project is still in its implementation phase where the final results will be a complete revitalisation of 1/3 of the total length (68.5 km). This project will result in a reduction of water losses by 47%, heat losses by 28%, and a number of urgent interventions by more than 90%. As a part of this project, HEP Toplinarstvo is also introducing an advanced management and control system for the heat distribution network to improve the security of supply and the overall energy efficiency of the grid. However, there are still several areas where the heat distribution network is outdated and needs to be revitalised. On the other hand, the biggest problem in the heat distribution network is probably the fact that heat exchanger units located at the site of end-consumers are not in the ownership of HEP Toplinarstvo but of those end-consumers. This directly impacts attempts to lower the inlet and outlet temperature in the heat distribution network and consequently decrease energy and water losses. It should also be mentioned that, due to the very long tradition of heat distribution network and district heating in general, there is a lack of individual meters in the system, which causes a very negative public perception since end customers do not pay for what they consume. However, this is a direct problem of current legislation in the heating sector.
 
-# Gas network
+#### Gas network
 
 Gas distribution is operated by a city-owned company, Gradska Plinara Zagreb Ltd (engl. City Gasworks Zagreb), based on obtained permits for this activity, but also on a long-term concession agreement with the City of Zagreb. This company has provided gas distribution services since 1862 and is the largest gas distribution company in the country. The gas network is very well developed and covers almost the whole area of the City. In total, there
-
-0
-Climate Neutrality
-Action Plan
-
 are around 4,000 km of gas pipelines through which Gradska Plinara Zagreb Ltd delivers gas to around 300,000 end consumers. Yearly, around 300,000,000 m³ of natural gas is distributed through the network. However, most of the gas distribution networks are relatively old and inefficient, with certain losses. This causes high maintenance costs. To back up that, a recent series of earthquakes in the City of Zagreb showed the aforementioned problem of inadequate and old gas network in the city center for which Gradska Plinara Zagreb Ltd had to invest major resources and time for reparations. On the other hand, only a few parts of the gas network were enhanced with digital measurement units, while for other parts, employees still had to do field inspections and register the consumption of each measurement unit. Also, several parts of the City have yet to be connected to the gas network due to the relatively high gasification costs.
 
 ## 2.1.1.3 Mobility
@@ -629,14 +482,10 @@ In 2022, 442,049 motor vehicles were registered, which is 3.4% more than in 2021
 ### Share of transport modes
 
 The results of a study on weekday travel demand show that car traffic is the City's most preferred form of transportation, with a share of 60%. Following car traffic is public transportation, which in the City of Zagreb includes buses, trams, cable car, and funicular,
+with a demand share of 37.7%. The lowest demand, with a share of 2.3%, is for bicycle traffic.⁶
 
 ⁴ Phase II of the Master Plan for the Transport System of the City of Zagreb, Zagreb County, and Krapina-Zagorje County
 ⁵ Statistical Yearbook of the City of Zagreb 2023
-Climate Neutrality
-Action Plan
-2
-
-with a demand share of 37.7%. The lowest demand, with a share of 2.3%, is for bicycle traffic.⁶
 
 Regarding the public transport statistics, in 2023, 158.7 million passengers were transported in the City of Zagreb, which is 7.0% less than in 2022, when 170.7 million passengers were transported. Trams transported 108.1 million passengers in 2023, 7.1% less than in 2022, when 116.3 million passengers were transported. Buses transported 49.7 million passengers, a decrease of 7.1% compared to 2022, when 53.5 million passengers were transported. In 2023, the funicular transported 522,000 passengers, which, compared to 2022, when 536,000 passengers were transported, represents a decrease of 2.7%.⁷
 
@@ -652,18 +501,13 @@ Various transport companies operate intercity lines, connecting Zagreb with all 
 
 ### Trams
 
-Tram traffic for passengers in the City of Zagreb was opened in 1881, and in 1910 the network was electrified. Tram traffic in the City of Zagreb operates as part of the ZET system, and the fleet consists of 263 tram vehicles, 142 of which are low-floor. In the City area, 15 daytime
+Tram traffic for passengers in the City of Zagreb was opened in 1881, and in 1910 the network was electrified. Tram traffic in the City of Zagreb operates as part of the ZET system, and the fleet consists of 263 tram vehicles, 142 of which are low-floor. In the City area, 15 daytime and 4 nighttime lines connect the City center with its eastern, western, and southern parts. The timetable for daytime trams depends on the time of day and season, with the highest frequency during peak rush hour. In addition to the regular daytime tram lines, four nighttime lines with fixed schedules also operate in the City. The nighttime tram lines cover all parts of the City and connect residential areas with the City center.
+
+In 2022, the length of the tram lines was 208 km, while the number of seats in trams amounted to 45,842. A total of 11,849,000 km were traveled, and 116,303,000 passengers were transported.⁹
 
 ⁶ Phase I of the Master Plan for the Transport System of the City of Zagreb, Zagreb County, and Krapina-Zagorje County
 ⁷ Press Release on Transportation for 2023
 ⁸ Statistical Yearbook of the City of Zagreb 2023
-Climate Neutrality
-Action Plan
-3
-
-and 4 nighttime lines connect the City center with its eastern, western, and southern parts. The timetable for daytime trams depends on the time of day and season, with the highest frequency during peak rush hour. In addition to the regular daytime tram lines, four nighttime lines with fixed schedules also operate in the City. The nighttime tram lines cover all parts of the City and connect residential areas with the City center.
-
-In 2022, the length of the tram lines was 208 km, while the number of seats in trams amounted to 45,842. A total of 11,849,000 km were traveled, and 116,303,000 passengers were transported.⁹
 
 ## Trains
 
@@ -678,9 +522,6 @@ International passenger traffic at the Zagreb hub is organized on 9 lines that r
 Cycling traffic in the City of Zagreb is on a slight rise, with its share amounting to slightly more than 3%. According to 2022 data, the total length of cycling lanes within the traffic network is 320 km, while the length of sports and recreational paths is 187 km.⁹
 
 ⁹ Statistical Yearbook of the City of Zagreb 2023
-Climate Neutrality
-Action Plan
-C
 
 The public bike system has been implemented in Zagreb, but it is not sufficiently developed or integrated with other forms of public transport. The public shared bike system has 22 stations where city bikes can be rented and returned. In collaboration with ZET, the City of Zagreb introduced the BoB – Bike on Bus service in October 2014, allowing citizens to transport their bicycles free of charge on three bus lines. The goal was to increase the number of bus and bicycle users and to encourage residents of the foothill areas to use bicycles.
 
@@ -702,11 +543,6 @@ A11 Zagreb-Sisak.
 
 These routes are used for domestic freight transport and have international significance, as most continue towards Central and Eastern Europe.
 
-4
-Climate Neutrality
-Action Plan
-C
-
 Zagreb has three road-rail container terminals: Vrapče, Jankomir, and Žitnjak. The Jankomir and Žitnjak terminals are smaller container terminals compared to Vrapče. They are located in industrial zones and are used for receiving, storing, customs clearance, repackaging, and dispatching goods.
 
 In the City of Zagreb in 2023, a total of 16.2 million tons of goods were transported, which is a 4.8% decrease compared to 2022, while compared to 2019, there was an increase of 0.6%, when a total of 16.1 million tons of goods were transported. In domestic transport, 14.1 million tons of goods were transported, a 4.3% decrease compared to 2022, and in international transport, 2.1 million tons of goods were transported, marking a decrease of 8.2%.¹⁰
@@ -720,11 +556,9 @@ Freight railway traffic in the area of the City of Zagreb operates on railway li
 The cargo terminal for air transport, whose primary function is the transshipment of cargo from air transport to road vehicles for further distribution, is located within Franjo Tuđman International Airport. The mentioned airport is a registered IATA cargo agent that provides services for the reception and dispatch of goods and mail and owns and operates its own cargo warehouses.
 
 The total cargo traffic at Zagreb Airport in 2023 amounted to 9,035 tons, a decrease of 3.5% compared to 2022 when the cargo traffic totaled 9,362 tons.¹⁰ The mentioned cargo traffic
+at Zagreb Airport refers to loaded and unloaded goods and mail in commercial operations, excluding passenger baggage, while cargo in direct transit is not included.
 
 ¹⁰ Press Release on Transportation for 2023
-Climate Neutrality Action Plan
-
-at Zagreb Airport refers to loaded and unloaded goods and mail in commercial operations, excluding passenger baggage, while cargo in direct transit is not included.
 
 ## 2.1.1.4 Utilities
 
@@ -737,10 +571,6 @@ The gas network consists of 137 permanent wells, a 10 km gas distribution networ
 ### Water distribution network
 
 The main source of drinking water in the City of Zagreb is the underground water of the Sava alluvium. Drinking water is obtained by pumping from the Zagreb aquifer and, for the western part of the City, from the Samobor - Zaprešić aquifer. These two aquifers are connected in one natural unity. After natural filtration, which lasts for weeks and months, the water in the wells is captured by pumps, disinfected preventively with gaseous chlorine, and distributed to consumers through the water supply network. The basic idea of the water supply system is lifting the water into water tanks, along with the distribution of water to
-
-6
-Climate Neutrality Action Plan
-
 consumers. Such a water supply system in Zagreb has been functioning since 1878 when the flow capacity was 53.2 L/s distributed along around 4km of water pipeline network. Today, water is pumped from 44 wells at 7 water pumping stations: Sašnjak, Žitnjak, Petruševec, Zapruđe, Mala Mlaka, Strmec, and Velika Gorica, with a total storage capacity of around 120,000 m³ (41% of daily needs), while the flow capacity is around 310,000 m³/day distributed along 3,900 km of water pipeline network. The water supply system is responsible for delivering fresh water to around 900,000 inhabitants. However, most of the water distribution network is more than 30 years old which results in around alarming 50% distribution losses. Also, the average level of underground water in the two aforementioned aquifers dropped by more than 3m in the last 20 years.
 
 ## 2.1.2 Emissions
@@ -750,15 +580,9 @@ This chapter looks closely at energy consumption and greenhouse gas emissions fo
 The total energy consumption of the City of Zagreb in 2019 was 12.424232 TWh. Among the sectors, Households are the largest consumers, accounting for 4.503281 TWh (36%), followed closely by Mobility and Services at 3.839586 TWh (31%) and 2.654058 TWh (22%), respectively. The industry sector contributed to 1.385279 TWh (11%), while the Agriculture sector registered the lowest consumption, amounting to 0.042028 TWh (less than 1%) (Table 2, Figure 3 and Figure 4).
 
 The highest energy consumption was attributed to Natural gas, accounting for 3.069947 TWh (25%). This was closely followed by Diesel and Electricity, contributing 2.869891 TWh (23%) and 2.766336 TWh (22%) respectively. District Heating represented 1.578307 TWh (13%), while Petrol accounted for 0.907917 TWh (7%). The utilisation of additional fuels,
+including Firewood, Light fuel oil, LPG, Biodiesel, Biomass, Solar, PNG, Geothermal and Coal, collectively constituted the remaining  $10\%$  of consumption (Table 2, Figure 3 and Figure 5).
 
 ¹¹ Energy Institute Hrvoje Požar, 'Energy-Climate Development Framework of the City of Zagreb until 2030 with a Perspective to 2050'
-Climate Neutrality
-
-Action Plan
-
-#
-
-including Firewood, Light fuel oil, LPG, Biodiesel, Biomass, Solar, PNG, Geothermal and Coal, collectively constituted the remaining  $10\%$  of consumption (Table 2, Figure 3 and Figure 5).
 
 Table 2 Energy consumption of the City of Zagreb in 2019
 
@@ -783,7 +607,6 @@ Table 2 Energy consumption of the City of Zagreb in 2019
 
 ![img-3.jpeg](img-3.jpeg)
 Figure 3 Energy consumption of the City of Zagreb in 2019
-Climate Neutrality Action Plan
 
 Energy balance
 
@@ -797,9 +620,6 @@ Figure 5 Energy balance per fuel
 Emissions were calculated using emission factors from the Guidelines on the methodology for calculating emissions factors and removing greenhouse gas emissions published by the Croatian Ministry of Economy and Sustainable Development in 2022$^{12}$.
 
 $^{12}$ Ministry of Economy and Sustainable Development, "Guide on the Methodology for Calculating Greenhouse Gas Emission and Removal Factors"
-
-9
-Climate Neutrality Action Plan
 
 The total GHG emissions of the City of Zagreb in 2019 were 2,927,203.98 tCO₂. Among the sectors, Mobility is the largest emitter, accounting for 1,112,494.44 tCO₂ (38%), followed closely by Households with 916,099.04 tCO₂ (31%). Services and Industry amount to 556,373.30 tCO₂ (19%) and 329,806.94 tCO₂ (11%), while Agriculture contributes 12,430.26 tCO₂ (less than 1%) (Table 3, Figure 6 and Figure 7).
 
@@ -827,26 +647,12 @@ Table 3 GHG emissions of the City of Zagreb in 2019
 |  PNG | 0.00 | 0.00 | 0.00 | 0.00 | 8,334.48 | 8,334.48  |
 |  Biodiesel | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00  |
 |  Total | 916,099.04 | 556,373.30 | 329,806.94 | 12,430.26 | 1,112,494.44 | 2,927,203.98  |
-图
-
-Climate Neutrality
-
-Action Plan
-
-#
 
 ![img-6.jpeg](img-6.jpeg)
 Figure 6 GHG emissions of the City of Zagreb in 2019
 
 ![img-7.jpeg](img-7.jpeg)
 Figure 7 GHG emissions inventory per sector
-图
-
-Climate Neutrality
-
-Action Plan
-
-#
 
 ![img-8.jpeg](img-8.jpeg)
 GHG Emissions inventory
@@ -857,7 +663,6 @@ The Climate City Contract (CCC) takes a comprehensive approach to its Greenhouse
 To address these gaps, the city is committed to enhancing its data collection and analysis capabilities. Efforts will focus on developing mechanisms to reliably map high-energy consumption regions, identify local areas with significant traffic congestion during peak hours, and further disaggregate emissions from transport categories such as cars, motorcycles, light trucks, heavy trucks, and buses.
 
 Although current limitations in data resolution exist, the city plans to strengthen its methodologies and collaborate with relevant stakeholders to ensure accurate, detailed, and actionable insights. This iterative process will support the continuous refinement of the GHG inventory, providing a robust foundation for informed decision-making and targeted climate action in the future.
-Climate Neutrality Action Plan
 
 Zagreb's extensive green infrastructure, which comprises approximately 72% of its urban area or about 46,152 hectares, presents a substantial potential in the context of AFOLU (Agriculture, Forestry, and Other Land Use) strategies for carbon sequestration. This preliminary estimate, suggesting that these green spaces could sequester around 461,520 tonnes of CO2 annually, based on an average of 10 tonnes per hectare per year, highlights the critical role of urban forestry and land use in mitigating climate change. However, this is a rough estimate that necessitates further refinement and more precise data collection to fully integrate these natural resources into Zagreb's Climate City Contract Action Plan. Enhanced monitoring and verification are required to ensure that these green spaces are accurately evaluated for their carbon offset capabilities, aligning with broader environmental sustainability goals. This approach will also support the development of targeted policies and practices that promote effective land management and urban planning strategies within the AFOLU framework.
 
@@ -865,23 +670,12 @@ The current scope of the Climate City Contract (CCC) does not include emissions 
 
 As part of future iterations of the CCC, a detailed plan to incorporate IPPU and AFOLU emissions into the GHG inventory will be developed. This plan will include:
 
-Baseline Data Development: Establishing methodologies for quantifying emissions from IPPU and AFOLU, including identifying key emission sources and determining appropriate data collection processes.
-Stakeholder Engagement: Collaborating with industry representatives, agricultural stakeholders, and forestry management entities to co-create actionable strategies and ensure accurate data inputs.
-Rationale and Action Plans: Outlining the rationale for including these sectors and developing targeted action plans to address emissions reduction and sustainable practices in industrial processes, agriculture, and land use management.
-Climate Neutrality Action Plan
-
-Policy Integration: Aligning these actions with national and international frameworks to enhance accountability and facilitate resource mobilization.
+- Baseline Data Development: Establishing methodologies for quantifying emissions from IPPU and AFOLU, including identifying key emission sources and determining appropriate data collection processes.
+- Stakeholder Engagement: Collaborating with industry representatives, agricultural stakeholders, and forestry management entities to co-create actionable strategies and ensure accurate data inputs.
+- Rationale and Action Plans: Outlining the rationale for including these sectors and developing targeted action plans to address emissions reduction and sustainable practices in industrial processes, agriculture, and land use management.
+- Policy Integration: Aligning these actions with national and international frameworks to enhance accountability and facilitate resource mobilization.
 
 The inclusion of IPPU and AFOLU will be guided by an iterative approach that builds on existing data while strengthening the city's capacity for comprehensive climate governance. By integrating these sectors, the CCC will advance its mission of fostering a sustainable, climate-resilient city.
-
-4
-图
-
-Climate Neutrality
-
-Action Plan
-
-#
 
 # 2.1.2.1 Households
 
@@ -889,13 +683,6 @@ In the City of Zagreb, Households have the highest share in energy consumption, 
 
 ![img-9.jpeg](img-9.jpeg)
 Figure 9 Energy consumption of the Household sector
-图
-
-Climate Neutrality
-
-Action Plan
-
-O
 
 ![img-10.jpeg](img-10.jpeg)
 Households
@@ -904,13 +691,6 @@ Figure 10 GHG emissions of the Household sector
 # 2.1.2.2 Services
 
 In the City of Zagreb, the Services sector accounts for  $22\%$  of total energy consumption and  $19\%$  of greenhouse gas emissions, equating to 2,654,057.7 MWh and 556,373.3 tCO2, respectively. Within this sector, Electricity stands out with the highest energy consumption and GHG emissions, with consumption totalling 1,294,612.1 MWh and emissions reaching 222,943.2 tCO2. Following closely behind is Natural gas, responsible for 813,445.1 MWh of energy consumption and emissions of 188,806.0 tCO2. District heating contributes to 261,250.2 MWh of energy consumption and emissions of 70,912.1 tCO2. Other fuels such as Light fuel oil, LPG, Firewood, and Solar make comparatively smaller contributions to both energy consumption and greenhouse gas emissions within the Services sector (Figure 11 and Figure 12).
-图
-
-Climate Neutrality
-
-Action Plan
-
-#
 
 ![img-11.jpeg](img-11.jpeg)
 Services
@@ -919,13 +699,6 @@ Figure 11 Energy consumption of the Services sector
 ![img-12.jpeg](img-12.jpeg)
 Services
 Figure 12 GHG emissions of the Services sector
-图
-
-Climate Neutrality
-
-Action Plan
-
-#
 
 # 2.1.2.3 Mobility
 
@@ -933,13 +706,6 @@ Mobility ranks as the second-largest energy consumer in the City of Zagreb, acco
 
 ![img-13.jpeg](img-13.jpeg)
 Figure 13 Energy consumption of the Mobility sector
-图
-
-Climate Neutrality
-
-Action Plan
-
-O
 
 ![img-14.jpeg](img-14.jpeg)
 Mobility
@@ -948,13 +714,6 @@ Figure 14 GHG emissions of the Mobility sector
 # 2.1.2.4 Industry
 
 The industry sector in the City of Zagreb exhibits the second-lowest energy consumption and greenhouse gas emissions, each constituting  $11\%$  of the total, amounting to 1,385,278.9 MWh and 329,806.9  $\mathrm{tCO}_{2}$ , respectively. Electricity is the primary energy source within this sector, accounting for 454,694.8 MWh of energy consumption, followed by District Heating with 410,083.7 MWh, Natural gas with 240,833.5 MWh, and Diesel with 223,028.0 MWh. In terms of emissions, District Heating leads with 111,310.6  $\mathrm{tCO}_{2}$ , followed by Electricity with 78,302.3  $\mathrm{tCO}_{2}$ , Diesel with 68,028.7  $\mathrm{tCO}_{2}$ , and Natural gas with 55,899.0  $\mathrm{tCO}_{2}$ . Other fuels such as Light fuel oil, Petrol, and LPG play a considerably smaller role in both energy consumption and greenhouse gas emissions within the Industry sector (Figure 15 and Figure 16).
-图
-
-Climate Neutrality
-
-Action Plan
-
-#
 
 ![img-15.jpeg](img-15.jpeg)
 Industry
@@ -967,13 +726,6 @@ Figure 16 GHG emissions of the Industrial sector
 # 2.1.2.5 Agriculture
 
 The agricultural sector in the City of Zagreb accounts for less than  $1\%$  of both energy consumption and GHG emissions, totalling 42,027.8 MWh and 12,430.3  $\mathrm{tCO}_{2}$ , respectively. Diesel is the predominant fuel within this sector, with energy consumption of 34,416.7 MWh and GHG emissions of 10,497.9  $\mathrm{tCO}_{2}$ . Other fuels such as Natural gas, Light fuel oil, Petrol, and Electricity play a significantly smaller role in both energy consumption and GHG emissions within the Agriculture sector (Figure 17 and Figure 18).
-图
-
-Climate Neutrality
-
-Action Plan
-
-#
 
 ![img-17.jpeg](img-17.jpeg)
 Agriculture
@@ -982,9 +734,6 @@ Figure 17 Energy consumption of the Agricultural sector
 ![img-18.jpeg](img-18.jpeg)
 Agriculture
 Figure 18 GHG emissions of the Agricultural sector
-Climate Neutrality Action Plan
-
-2
 
 ## 2.2 Module A-2 Current Policies and Strategies Assessment
 
@@ -994,21 +743,13 @@ In addition to the array of national laws and regulations, the Republic of Croat
 
 At the national level, legislation concerning climate encompasses a range of laws to mitigate climate change and protect the ozone layer. The Climate Change and Ozone Layer Protection Act delineates climate change mitigation, adaptation, and ozone layer protection responsibilities. It addresses key aspects such as greenhouse gas emission monitoring and reporting, emissions trading systems, aviation activities, substances harmful to the ozone layer, financing for climate mitigation and adaptation, and administrative oversight. Additionally, regulations like the Biofuel Quality Regulation set standards for the quality of biofuels on the domestic market, including assessment and compliance verification criteria. Furthermore, the Distribution plan for greenhouse gas emission quotas in Croatia and numerous other regulations contribute to the comprehensive legal framework to combat climate change and safeguard the environment.
 
-In the mobility sector, The Road Act, Road Traffic Safety Act, Railway Act, Railway Safety and Interoperability Act, Air Traffic Act, and Act on Transport in Regular and Occasional Coastal
-Climate Neutrality Action Plan
-
-3
-
-Maritime Traffic establish regulatory frameworks to enhance safety, efficiency, and sustainability in transportation. Additionally, the Act on Promoting Clean Vehicles in Road Transport encourages the adoption of low-emission and alternative fuel vehicles, further aligning the transportation sector with climate goals. These laws collectively address various aspects of transportation, including infrastructure development, safety standards, emissions reduction strategies, and promoting sustainable modes of transport, contributing to national efforts in combating climate change.
+In the mobility sector, The Road Act, Road Traffic Safety Act, Railway Act, Railway Safety and Interoperability Act, Air Traffic Act, and Act on Transport in Regular and Occasional Coastal Maritime Traffic establish regulatory frameworks to enhance safety, efficiency, and sustainability in transportation. Additionally, the Act on Promoting Clean Vehicles in Road Transport encourages the adoption of low-emission and alternative fuel vehicles, further aligning the transportation sector with climate goals. These laws collectively address various aspects of transportation, including infrastructure development, safety standards, emissions reduction strategies, and promoting sustainable modes of transport, contributing to national efforts in combating climate change.
 
 Regarding local and regional planning and associated responsibilities, the Spatial Planning Act establishes a structured system to ensure coherence and effectiveness in spatial development initiatives. Secondly, the Regional Development Act outlines policies and spatial plans vital for regional growth and sustainability. Additionally, the Act on Local and Regional Self-Government incorporates spatial and urban planning provisions, granting local and regional authorities the authority to manage their territories efficiently. Together, these laws provide a solid framework for spatial development, aligning local and regional plans with national strategies.
 
 Transitioning from national policies to local initiatives and strategies, The City of Zagreb was among the first European capital cities to join the Covenant of Mayors, a significant initiative launched by the European Commission in January 2008. Following a consultation process on the future of the Covenant of Mayors, the European Commission introduced a new integrated Covenant of Mayors for Climate and Energy on October 15, 2015, surpassing the set targets for 2020. The City of Zagreb has developed its Sustainable Energy and Climate Action Plan (SECAP), aligning its efforts with the Covenant's objectives and outlining specific strategies and actions to achieve these ambitious emission reduction targets. The indicative target for reducing  $\mathrm{CO}_{2}$  emissions by  $40\%$  compared to 2008 levels was set, amounting to 1,118,000 tons of  $\mathrm{CO}_{2}$  emissions for the City of Zagreb.
 
-Additionally, the City has developed the Energy-Climate Development Framework for the City of Zagreb until 2030, with a perspective towards 2050. This framework encompasses an analysis of two scenarios for developing the City's energy sector. The first scenario, termed the Reference Scenario, delineates future energy flow trends in line with anticipated technological advancements and structural changes in energy consumption and production primarily driven by market principles, with limited proactive involvement from the City of
-Climate Neutrality Action Plan
-
-Zagreb in shaping and implementing energy and climate measures. Conversely, the second scenario, the Climate Neutrality Scenario, assumes the implementation of active policies to support energy transition within the City of Zagreb. This scenario entails a model incorporating eleven elaborated measures across various sectors, each with defined activities. Also, the City of Zagreb is currently developing its Climate adaptation plan.
+Additionally, the City has developed the Energy-Climate Development Framework for the City of Zagreb until 2030, with a perspective towards 2050. This framework encompasses an analysis of two scenarios for developing the City's energy sector. The first scenario, termed the Reference Scenario, delineates future energy flow trends in line with anticipated technological advancements and structural changes in energy consumption and production primarily driven by market principles, with limited proactive involvement from the City of Zagreb in shaping and implementing energy and climate measures. Conversely, the second scenario, the Climate Neutrality Scenario, assumes the implementation of active policies to support energy transition within the City of Zagreb. This scenario entails a model incorporating eleven elaborated measures across various sectors, each with defined activities. Also, the City of Zagreb is currently developing its Climate adaptation plan.
 
 The progression from the SECAP to the Energy-Climate Development Framework demonstrates the City of Zagreb's evolving commitment to combating climate change and transitioning towards sustainability. With the initial focus on emission reduction targets set by the SECAP, the subsequent Energy-Climate Development Framework broadens the scope to encompass a longer-term vision, extending its perspective to 2050 and outlining proactive strategies for achieving climate neutrality. These documents reflect a growing ambition and dedication to environmental actions, moving from reduction targets to a comprehensive plan with different scenarios.
 
@@ -1016,12 +757,7 @@ Within the energy and climate planning framework, spatial planning documentation
 
 Moreover, the City of Zagreb is a member of several prominent associations committed to sustainable development and climate action. These include the above-mentioned Covenant of Mayors, Energy Cities, Eurocities, and ACR+ (Association of Cities and Regions for Sustainable Resource Management).
 
-In Croatia, the legal and policy landscape governing energy, mobility, and climate actions is predominantly centralized at the national level, leaving local and regional authorities with limited capacity to create and implement their own policies, yet they do, as the SECAPs and
-
-4
-Climate Neutrality Action Plan
-
-CCC are the examples on how cities are moving forward with ambition. This centralization stems from the overarching role of national legislation in shaping the country's climate, energy, and mobility strategies. Several key national policies, including the Energy Act, Renewable Energy Sources and High-Efficiency Cogeneration Act, and National Energy and Climate Plan (NECP), guide the overall approach to energy transitions and emissions reductions.
+In Croatia, the legal and policy landscape governing energy, mobility, and climate actions is predominantly centralized at the national level, leaving local and regional authorities with limited capacity to create and implement their own policies, yet they do, as the SECAPs and CCC are the examples on how cities are moving forward with ambition. This centralization stems from the overarching role of national legislation in shaping the country's climate, energy, and mobility strategies. Several key national policies, including the Energy Act, Renewable Energy Sources and High-Efficiency Cogeneration Act, and National Energy and Climate Plan (NECP), guide the overall approach to energy transitions and emissions reductions.
 
 National Level Policies and Regulations:
 
@@ -1033,11 +769,6 @@ The Act on Promoting Clean Vehicles in Road Transport and regulations such as th
 
 Climate Change Policy:
 At the national level, the Climate Change and Ozone Layer Protection Act and accompanying regulations outline efforts to monitor and report greenhouse gas (GHG) emissions, implement emissions trading systems, and tackle substances harmful to the ozone layer. The overarching goal is to align national climate actions with EU climate strategies and commitments.
-
-5
-Climate Neutrality Action Plan
-
-O
 
 Local and Regional Governance Challenges:
 
@@ -1051,33 +782,21 @@ Lack of Local Implementation Capacity: Regional and local governments are often 
 
 In summary, while Croatia's national policies provide a solid foundation for climate and energy action, local and regional authorities face challenges due to the centralized nature of governance. For the Climate City Contract to be successful, it will focus on leveraging national policies while addressing sector-specific gaps and enhancing local capacity for implementation.
 
-6
-Climate Neutrality
-Action Plan
 Policy overview:
 
 |  Climate Policy | Policy Status (Enacted, In Process, Development, etc.) | Description of the policy (sector, targeted audience, etc.) | Intended Outcome for Capital Formation  |
 | --- | --- | --- | --- |
 |  European green deal (EU LEVEL) | Enacted | The aim of The European Green Deal is sustainable EU's economy and transforming it into a resource-efficient and low-carbon system. It encompasses various policy initiatives and measures to address climate change, promote clean energy, enhance biodiversity, and foster a circular economy. | The goal is to achieve climate neutrality by 2050, meaning the EU aims to balance the amount of greenhouse gases emitted with the amount removed from the atmosphere. The European Green Deal also seeks to create green jobs, improve energy efficiency, and ensure a just transition for regions and industries most affected by the transformation.  |
 
-7
-Climate Neutrality
-Action Plan
-8
 
 |   |  |  | Relevant areas: Energy systems, Mobility & transport, built environment.  |
 | --- | --- | --- | --- |
 |  Energy efficiency directive (EU LEVEL) | Enacted | Energy Efficiency Directive aims to boost overall energy efficiency, align with the EU's 55% emission reduction target by 2030, and require EU countries, including, to collectively achieve an additional 11.7% reduction in energy consumption by 2030, with a focus on critical sectors. | Under the revised directive, and as part of their energy efficiency obligation schemes, EU countries will be required to achieve an average annual energy savings rate of 1.49% from 2024 to 2030, up from the 2021-2023 requirement of 0.8%, driving energy savings in critical sectors like buildings, industry, and transport. In addition, to underline the exemplary role to be played by the public sector, there is a new annual energy consumption  |
-Climate Neutrality
-Action Plan
-9
 
 |   |  |  | reduction target of 1.9% for the public sector as a whole and the annual 3% buildings renovation obligation is being extended to all levels of public administration.
 | Relevant areas: Energy systems  |
 | --- | --- | --- | --- |
 |  EU hydrogen strategy (EU LEVEL) | Enacted | The EU strategy on hydrogen (COM/2020/301) was adopted in 2020 and suggested policy action points in 5 areas: investment support; support production and demand; creating a hydrogen market and infrastructure; research and cooperation and international cooperation. | While the direct impact of the EU's hydrogen strategy on Zagreb's emissions reduction targets may vary based on the city's specific implementation plans and adoption of hydrogen technologies, integrating hydrogen into the energy mix (included in this Action plan)presents opportunities to  |
-Climate Neutrality
-Action Plan
 
 |   |  |  | transition towards cleaner energy sources, contributing to the city's emissions reduction objectives already for 2030.
 | Relevant areas: Energy systems, mobility  |
@@ -1086,118 +805,72 @@ Action Plan
 | Relevant areas: Energy systems, Mobility & transport, Built environment.  |
 |  Climate Change Adaptation Strategy | Enacted | This strategy aims to prepare Croatia to cope with and adapt to the impacts of climate change. It includes measures | Enhancing Croatia's ability to cope with climate-related hazards, reducing potential economic losses  |
 
-0
-Climate Neutrality
-Action Plan
-1
 
 |   |  | for mitigation as part of a broader approach to enhance resilience to climate-related hazards. | due to climate impacts, and improving infrastructure resilience.  |
 | --- | --- | --- | --- |
 |  Croatian Low Carbon Development Strategy | Enacted | This strategy outlines Croatia's framework for achieving significant reductions in greenhouse gas emissions across various sectors. It sets specific emission reduction targets in line with EU commitments and details the transition toward a low-carbon economy. | Supporting the transition to a low-carbon economy, fostering green investments, and driving technological innovation in renewable energy and emissions reduction technologies.  |
 |  Energy Development Strategy up to 2030 with a View to 2050 | Enacted | This strategic document sets forth a vision for the future of energy in Croatia, emphasizing the enhancement of energy independence, sustainability, and competitiveness. It focuses on increasing the share of renewable energy, improving energy efficiency, and reducing greenhouse gas emissions while ensuring energy security and fostering economic growth through green industries. | Increasing the share of renewable energy, improving energy efficiency, and reducing greenhouse gas emissions while ensuring energy security and fostering economic growth through green industries.  |
-Climate Neutrality
-Action Plan
-2
 
 |   |  | of renewable energy sources, improving energy efficiency, and reducing greenhouse gas emissions. |   |
 | --- | --- | --- | --- |
 |  Long-term strategy for the restoration of the national building fund until 2050 | Enacted | This strategy supports the renovation of residential and non-residential buildings, both public and private, aiming to transform the existing building stock into an energy-efficient and decarbonized fund by 2050. It sets long-term renovation goals and assesses required investments. | Identify effective measures for cost-efficient integral renovation, achieve a 55% reduction in greenhouse gas emissions by 2030 (compared to 1990 levels), and meet the Renovation Wave initiative’s goal of reducing emissions from buildings by 60%. Gradually increase the renovation rate from 0.7% to 4% of the total building stock by 2050. Enhance building resilience to seismic activity and integrate energy and seismic renovations.  |
-Climate Neutrality
-Action Plan
-3
 
 |  National Renewable Energy Action Plan | Enacted | This plan details Croatia's targets for increasing the contribution of renewable energies in its total energy mix, a key component in reducing CO2 emissions. It outlines specific actions and measures for the development of solar, wind, biomass, and hydroelectric energy projects. | Reducing CO2 emissions by increasing renewable energy production, driving investments in solar, wind, biomass, and hydropower projects, and supporting local green jobs in these industries.  |
 | --- | --- | --- | --- |
 |  Strategic Environmental Assessment (SEA) and Environmental Impact Assessment (EIA) Regulations | Enacted | These assessments are crucial for ensuring that any plans, programs, or projects that might significantly affect the environment are evaluated and mitigated as necessary, focusing on protecting biodiversity, reducing pollution, and promoting sustainable | Ensuring that development projects consider environmental impacts, leading to more sustainable land use and infrastructure development, and reducing the risk of ecological damage.  |
-Climate Neutrality
-Action Plan
-4
 
 |   |  | development practices. |   |
 | --- | --- | --- | --- |
 |  Transport development strategy of the Republic of Croatia for the period from 2017 to 2030 | Enacted | This strategy includes provisions for reducing emissions through improved public transport systems, promotion of electric vehicles, and development of cycling infrastructure. It aligns with broader goals of reducing the transport sector’s carbon footprint. | Reducing the carbon footprint of the transport sector, fostering the adoption of clean vehicles, and improving public transportation infrastructure, contributing to cleaner, more sustainable urban environments.  |
 |  Waste management plan of the Republic of Croatia for the period 2023 - 2028 | Enacted | While primarily focused on reducing waste and improving recycling rates, this plan contributes to climate change mitigation by reducing methane emissions from landfills and promoting energy recovery from waste. | Reducing methane emissions from landfills, increasing energy recovery from waste, and promoting circular economy practices, driving investments in recycling infrastructure and green waste management technologies.  |
 |  EU Emissions Trading System (EU ETS) Implementation | Enacted | Croatia adheres to this EU-wide system for trading greenhouse gas | Limiting CO2 emissions by enforcing caps and promoting  |
-Climate Neutrality
-Action Plan
-5
 
 |   |  | emission allowances. This cap-and-trade system covers the power generation, industrial sectors, and airlines, enforcing caps on CO2 emissions and requiring entities to hold sufficient emission allowances. | investment in cleaner technologies and emissions reduction strategies across covered sectors, contributing to overall emissions reduction targets.  |
 | --- | --- | --- | --- |
 |  Act on Environmental Protection | Enacted | This act serves as the foundation for environmental protection policies in Croatia, including climate change mitigation. It sets out general principles for environmental management, the responsibilities of public authorities and businesses, and the legal framework for pollution control, waste management, and air quality control. | Supporting the creation of a sustainable environment through pollution control, responsible waste management, and the enforcement of air quality standards, driving investment in green technologies and compliance solutions.  |
 |  Air Protection Act | Enacted | This act focuses specifically on the regulation of air | Reducing air pollution, improving public  |
-Climate Neutrality
-Action Plan
-6
 
 |   |  | quality and the reduction of air pollutants, including CO2 emissions. It provides measures for monitoring air quality, establishes emission limits, and outlines the responsibilities of local and national authorities in managing air pollution. | health, and ensuring compliance with national and EU air quality standards, promoting investment in cleaner technologies and monitoring systems.  |
 | --- | --- | --- | --- |
 |  Act on efficient use of energy in direct consumption | Enacted | Aimed at improving energy efficiency and promoting renewable energy sources, this legislation supports Croatia's commitments to reduce energy consumption and CO2 emissions. It includes provisions for energy audits, energy certification of buildings, and the promotion of energy-saving technologies. | Encouraging the integration of energy-efficient technologies and renewable energy sources in various sectors, building designs and industrial processes, supporting long-term energy savings and emissions reductions.  |
-Climate Neutrality
-Action Plan
-7
 
 |  Construction Act | Enacted | This act provides the general legal framework for construction in Croatia, including requirements for building permits, safety standards, and environmental considerations. It indirectly influences CO2 emissions by mandating compliance with energy efficiency standards in building designs. | Promotes investment in energy-efficient construction practices and ensures that new buildings adhere to high standards for environmental sustainability and safety.  |
 | --- | --- | --- | --- |
 |  Act on Energy Efficiency | Enacted | Directly targets the reduction of energy consumption in buildings, which is a significant component of CO2 emissions. This act includes measures such as the improvement of thermal insulation, installation of energy-efficient heating and cooling systems, and the use | Encourages capital investment in energy-efficient technologies and retrofitting of existing buildings to reduce energy consumption and greenhouse gas emissions.  |
-Climate Neutrality
-Action Plan
-8
 
 |   |  | of renewable energy sources in buildings. |   |
 | --- | --- | --- | --- |
 |  Law on renewable energy sources and high-efficiency cogeneration | Enacted | This act establishes the framework for promoting the use of renewable energy and high-efficiency cogeneration. It covers planning and incentives for producing and consuming electricity from renewable sources and high-efficiency cogeneration, including financial support and certification. The act aims to integrate renewable energy into the national grid and achieve sustainability goals. | The intended outcome is to increase the share of renewable energy in the national energy mix, reduce greenhouse gas emissions, and support energy transition projects. It aims to contribute to Croatia's climate goals and EU targets by encouraging investments in renewable energy and efficient technologies.  |
 |  Regulation on building energy inspection and energy certification | Enacted | Requires that new buildings, or major renovations to existing buildings, obtain an energy performance certificate. This regulation ensures | Improving building energy efficiency, reducing energy consumption, and promoting green building practices, leading to long-  |
-Climate Neutrality
-Action Plan
-9
 
 |   |  | that buildings adhere to energy efficiency standards and are rated according to their energy consumption and CO2 emissions. | term cost savings and lower  |
 | --- | --- | --- | --- |
 |  Technical regulation on the rational use of energy and thermal protection in buildings | Enacted | Sets requirements for the thermal insulation of buildings to reduce heating and cooling demands, directly affecting CO2 emissions. It covers aspects such as insulation materials, installation techniques, and performance criteria. | Improving building energy performance, lowering energy bills, and reducing emissions from the building sector, supporting investments in insulation materials and energy-efficient construction techniques.  |
 |  National Ordinance on Renewable Energy Sources | Enacted | Although broader than just the construction sector, this ordinance promotes the use of renewable energy sources within buildings, such as solar panels, biomass boilers, and geothermal heating | Increasing the share of renewables in building energy use, lowering carbon emissions, and fostering investments in renewable energy technologies for residential and  |
-Climate Neutrality
-Action Plan
-0
 
 |   |  | systems, which help reduce reliance on fossil fuels and lower CO2 emissions. | commercial properties.  |
 | --- | --- | --- | --- |
 |  Act on Road Transport | Enacted | Governs the operation of road transport and includes provisions for reducing environmental impact, such as promoting the use of cleaner vehicle technologies and enhancing the efficiency of transport operations. | Reducing emissions from road transport, encouraging the adoption of eco-friendly vehicles, and improving overall transport efficiency, leading to investment in cleaner transportation technologies.  |
 |  National plan for the development of bicycle transport for the period from 2023 to 2027 | Enacted | Aims to develop and expand cycling infrastructure across the country to encourage cycling as a low-carbon mode of transport. This program supports the construction of new bike lanes, bike parking facilities, and other infrastructure improvements to | Expanding bike lanes and infrastructure, reducing traffic congestion, and lowering transport-related emissions, supporting investments in cycling infrastructure and promoting sustainable urban mobility.  |
-Climate Neutrality
-Action Plan
 
 |   |  | make cycling safer and more accessible. |   |
 | --- | --- | --- | --- |
 |  Act on Promoting Clean Vehicles in Road Transport | Enacted | This act promotes the adoption of low-emission and alternative fuel vehicles in the road transport sector. It includes measures for developing infrastructure, setting safety standards, and implementing emissions reduction strategies. The act aims to support the transition to sustainable transportation modes. | The intended outcome is to reduce emissions from road transport, enhance infrastructure for clean vehicles, and encourage investments in sustainable transportation technologies. It aligns the sector with broader climate goals and contributes to overall national efforts to combat climate change.  |
 |  Regulation on the Promotion of Clean and Energy-Efficient Road Transport Vehicles | Enacted | This regulation supports the deployment of low-emission vehicles in road transport by setting minimum procurement targets for public service contracts and public service obligations. | Driving investment in clean transport vehicles and infrastructure, reducing emissions from public services, and encouraging the transition to low-emission mobility solutions.  |
 
-1
-Climate Neutrality
-Action Plan
-2
 
 |  Climate Change and Ozone Layer Protection Act | Enacted | Addresses climate change mitigation, adaptation, and ozone layer protection responsibilities. Includes greenhouse gas emission monitoring, emissions trading, aviation activities, and substances harmful to the ozone layer. | Mitigate climate change impacts, enhance climate resilience, regulate and reduce harmful emissions, and manage adaptation efforts.  |
 | --- | --- | --- | --- |
 |  Sustainable Energy and Climate Action Plan (SECAP) | Enacted | Developed in alignment with the Covenant of Mayors, SECAP outlines strategies to reduce CO2 emissions by 40% compared to 2008 levels. It targets the energy, mobility, and building sectors in Zagreb. | Reduction of 1,118,000 tons of CO2 emissions (40% compared to 1990), supporting sustainable urban development and contributing to long-term energy and climate resilience.  |
 |  Air Protection Program of the City of Zagreb for the Period 2022-2026 | Enacted | This program establishes goals, priorities, and measures for improving air quality | The intended outcome is to enhance air quality, reduce emissions, and support sustainable urban  |
-Climate Neutrality
-Action Plan
-3
 
 |   |  | in Zagreb. It addresses air quality assessments, emission reduction strategies, and continuous monitoring. It also considers current challenges such as the 2020 earthquake and COVID-19 impacts. The program integrates air protection with broader urban and environmental strategies, including transport and energy efficiency measures. | development. It aims to align air protection efforts with broader environmental and climate goals.  |
 | --- | --- | --- | --- |
 |  Energy-Climate Development Framework for the City of Zagreb until 2030 (with perspective to 2050) | Enacted | This framework proposes two scenarios: the Reference Scenario and the Climate Neutrality Scenario. The latter envisions active policies for energy transition, focusing on energy | Achieve climate neutrality by 2050, increase energy efficiency, and encourage investment in renewable energy and sustainable infrastructure projects.  |
-Climate Neutrality
-Action Plan
-4
 
 |  Climate Adaptation Plan for the City of Zagreb | Development | Currently under development, this plan focuses on adapting the city's infrastructure and services to cope with climate change impacts, including flood management, heatwaves, and other environmental risks. | Improved resilience to climate change, safeguarding public and private investments, and enhancing sustainable urban growth.  |
 | --- | --- | --- | --- |
 |  General Urban Development Plan of the City of Zagreb | In the process | This plan defines the spatial organization of Zagreb, covering the protection of natural, cultural, and historical values, land use, and urban planning measures. It integrates climate and sustainability goals into the city's urban development policies. | Efficient spatial development supporting sustainable growth, protecting cultural assets, and ensuring long-term urban resilience.  |
-Climate Neutrality
-Action Plan
-5
 
 ## 2.3 Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
 
@@ -1211,9 +884,7 @@ Furthermore, the national electricity and heat supply company, HEP Group, wholly
 
 ¹³ 2023 Country Report – Croatia, Commission Staff Working Document
 ¹⁴ Energy Without Russia: The Consequences of the Ukraine war and the EU Sanctions on the Energy Sector in Europe, Country Report Croatia
-Climate Neutrality Action Plan
 
-6
 
 access to all potential investors and producers, indicating persistent challenges in achieving a fully competitive energy market.
 
@@ -1222,7 +893,6 @@ Following the energy crisis, it is also necessary to examine the role of subsidi
 In the realm of legislative and political barriers in Croatia's energy sector, several obstacles hinder the seamless transition towards climate neutrality. One significant challenge lies in the underdeveloped energy market, particularly concerning electricity. The absence of a smart grid capable of real-time consumption monitoring constrains the integration of renewable energy sources by disrupting the effective balancing of production. The traditional grid infrastructure, designed primarily for centralised energy distribution, needs more flexibility and resilience to accommodate the decentralised nature of renewable energy generation. This limitation poses a barrier to the widespread adoption of renewables and the realisation of Croatia's renewable energy potential.
 
 Moreover, Croatia faces challenges in transitioning away from natural gas dependency. The well-established gas network, supported by subsidies and historical preferences, has traditionally been a dominant energy source. Yet, this historical reliance substantially challenges Croatia's aspirations of diversifying its energy portfolio and curbing carbon emissions. Although there is increasing acknowledgment of the need for sustainability and environmental responsibility, reducing reliance on natural gas requires significant investments in alternative energy sources and infrastructure upgrades. However, recent regulatory changes and evolving market dynamics, including increasing environmental awareness and EU directives, are reshaping investor sentiments. Despite the attractiveness
-Climate Neutrality Action Plan
 
 of natural gas due to its relatively low cost and convenience, concerns regarding its environmental impact and long-term sustainability are prompting a shift towards cleaner energy alternatives. On the regulatory front, Croatia has taken significant steps to promote sustainable energy practices. Building regulations requiring nearly Zero Energy Buildings (nZEB) for new constructions signify a commitment to energy efficiency and carbon reduction. These regulations mandate that in nZEB buildings, a minimum of 30% of the annual delivered energy must be sourced from renewable energy, preferably generated on-site or nearby.
 
@@ -1232,10 +902,7 @@ Additionally, the ownership structures of real estate pose another significant b
 
 In summary, Croatia's energy market presents significant dependencies and structural complexities, characterised by dominant state-owned entities and barriers to renewable
 
-7
-Climate Neutrality Action Plan
 
-O
 
 energy development. Addressing these issues will foster a more competitive, resilient, and sustainable energy landscape in Croatia.
 
@@ -1249,10 +916,6 @@ In addition, Croatia possesses considerable geothermal potential, particularly w
 
 Moreover, Croatia possesses significant untapped potential for photovoltaic (PV) installations, yet its current process is lengthy and complex, hindering progress. Despite recent expansions, PV capacity remains relatively low compared to other EU countries. However, there has been notable progress, with unofficial data suggesting a doubling of capacity in 2022. Expanding PV installations presents a critical opportunity for Croatia to
 
-8
-Climate Neutrality
-Action Plan
-9
 
 diversify its energy mix and expedite its transition to renewable energy sources¹⁵. However, the ongoing legal adjustments and developments have not accelerated the process; rather, they have further slowed it down¹⁶. Revision and optimisation of the current procedures are still necessary to streamline the process, offering investors greater clarity and confidence in the regulatory framework.
 
@@ -1268,9 +931,7 @@ Building Data and Registry - there is a need to improve the management system of
 
 ¹⁵ Energy Without Russia: The Consequences of the Ukraine war and the EU Sanctions on the Energy Sector in Europe, Country Report Croatia
 ¹⁶ Position paper: Obstacles in administrative procedures for the preparation and development of renewable energy projects in the Republic of Croatia
-Climate Neutrality Action Plan
 
-O
 
 many cases, there is not enough necessary data about buildings, and the databases currently used are not sufficiently functional.
 
@@ -1279,7 +940,6 @@ Ownership - barriers connected with ownership and permits, which is a major obst
 Reliance on EU grants - low energy costs in the past (before the Ukraine crisis) made renovation (energy renovation) of public buildings financially not viable (i.e., payback periods of over 20 years in the best-case scenarios) without a high level (50% or more) of grants/subsidies. This has been recognised as the most critical barrier, and as a result, within the 2014-2020 financial framework in Croatia, a total of 253,4 million EUR of grants/subsidies for public building renovation have been disbursed (the original allocation in the Croatian Operational Programme was 211 million EUR). The calls for application were closed within days of being open, indicating a very high demand in the public sector for grants/subsidies (i.e., obviously, the total amount of grants/subsidies, even though increased from the original plan, was not nearly sufficient to cover the demand). This directly leads to the following over-reliance of the public sector on grants and subsidies, available mostly through ESIF, leading to a reluctance at all levels (national, regional, local) to implement any other financial model (e.g., ESCO/EPC, energy supply contracting (PPA or similar), public-private partnership (PPP), green/white certificates, financial instruments, etc.) for the renovation of buildings.
 
 Technical documentation/Project design documentation preparation – Today, in Croatia, there is limited access to financial institutions or national funds to cover the costs of the technical preparation phase. This means that all local or regional authorities must secure funding from their budgets, posing a significant financial barrier. The ELENA assistance is used for the implementation of activities that cannot be implemented by current staff of the City of Zagreb, i.e., preparation of EPC documentation, preparation of Main Project Designs, technical and legal advice, and support in the preparation of the feasibility studies for energy management systems in buildings, etc. Receiving EIB/ELENA funding for this action,
-Climate Neutrality Action Plan
 
 through the ZA-GREEN project will significantly speed up the process of its realisation, which would provide instant benefits for the City of Zagreb (energy and cost savings).
 
@@ -1290,7 +950,6 @@ Lack of construction companies - The main risk related to the actual implementat
 Although the district heating and its heat distribution network is relatively well-developed in the City of Zagreb, most of the buildings are using individual gas heating systems due to multiple issues. Firstly, the price of heating delivered by district heating systems is heavily regulated by the Hrvatska energetska regulatorna agencija (engl. Croatian Regulatory Energy Agency, HERA). This means that HERA directly dictates the selling price of heat to end consumers, at a level that makes district heating systems completely non-competitive in comparison to the individual gas heating system. Secondly, according to the law, the price of gas is subsidies through several mechanisms, which makes it cheap and often the top pick for buildings that are built or renovated. In other words, it completely diminishes any economic feasibility of using any other source of heat but natural gas.
 
 Reliance of individual gas heating systems can also be ascribed to the fact that investment costs (CAPEX) in those systems are the lowest among all heating options for both new and renovated buildings, no matter the size. Another contributing factor is that, in comparison to district heating systems where the end customer must
-Climate Neutrality Action Plan
 
 pay relatively high connection costs, costs for connection on gas grid is relatively cheap.
 
@@ -1308,10 +967,6 @@ District heating systems present probably the best option to decarbonise large n
 
 Opportunity for end customers can also be found in the fact that, in connection to district heating systems, all maintenance costs become obligatory for the district
 
-2
-Climate Neutrality
-Action Plan
-C
 
 heating system operators. Since the optimisation of the whole system will come to one place (district heating system operators), management and control of one central system instead of numerous individual systems presents a massive opportunity in terms of additional energy/financial savings.
 
@@ -1323,9 +978,7 @@ Potential for renewable and waste energy utilisation (PV, geothermal, waste heat
 The City of Zagreb, as the largest city in the country, possesses a great potential for integration of various PV systems. The City of Zagreb has a fair insolation, which can result in a relatively high production of renewable electricity from PV systems (around 1000 kWh/kWp), which is better than most locations in, i.e., France or Germany.
 Apart from the installation of individual integrated PV systems (i.e., for each household or each company), which definitively presents a great way for decarbonisation, according to new EU and Croatian laws, energy communities are more and more popular where numerous incentives are organised among different actors. Croatian legislation identifies three types of energy communities. The most important one for the City of Zagreb is a community dedicated to multi-apartment buildings that foster the integration of PV systems on their rooftops and the sharing of produced electricity among more users.
 Also, perhaps the greatest opportunity for integration of PV systems is a recently changed Law on Electricity Market which introduced the so-called "net-metering" system, favourable for small scale systems installed in households.
-Climate Neutrality Action Plan
 
-4
 
 ## 2.3.3 Governance
 
@@ -1344,9 +997,6 @@ Despite the aforementioned barriers, the City of Zagreb has several opportunitie
 Zagreb Energy Atlas is an extensive GIS database that holds georeferenced data on all buildings located within the city, including their size, category, age, number of users, and energy and water consumption data for the past 6 years, alongside data on key energy infrastructure. This database is an invaluable resource for all planning activities as it can bridge the information gap and help assess key areas and fields of intervention.
 
 Likewise, linking energy and spatial planning is an innovative approach enabling the city to not just plan, but also enforce energy and climate measures as spatial plans are executive
-Climate Neutrality
-Action Plan
-5
 
 documents, alongside being planning ones as well. This integrated planning process provides a direct link between the proposed ambitions and methods to achieve them.
 
@@ -1366,13 +1016,9 @@ Table 4 Change in Köppen-Geiger climate classification for the City of Zagreb
 Given the specific geographical location of the City of Zagreb, situated on the banks of the Sava River and the southern slopes of the Medvednica mountain, coupled with its position within a region prone to seismic activity, the City faces many climate hazards. Furthermore,
 
 ¹⁷ Nimac, I. (2022) ‘Characteristics and Modeling of the Urban Heat Island,’ PhD Dissertation, University of Zagreb, Faculty of Science
-#
 
-Climate Neutrality
 
-Action Plan
 
-#
 
 Zagreb's urban morphology contributes to the development of urban heat islands, exacerbating the effects of rising temperatures. With the growing influence of climate change, these hazards are becoming more pronounced, posing significant challenges for urban planning and resilience efforts.
 
@@ -1390,9 +1036,6 @@ Figure 19 Anomalies of mean monthly air temperature in Zagreb (Grič) for the pe
 These trends have been observed in Zagreb as well, and their values vary depending on the location of the measuring station (Table 5), reflecting the influence of microclimatic conditions and the urban structure surrounding the stations.
 
 Table 5 Average change in the number of days/nights over 10 years in Zagreb (for the period 1961 - 2023)
-Climate Neutrality
-Action Plan
-7
 
 |   | Hot days > 30 °C) | (Tmax | Tropical nights (Tmin > 20 °C) | Icing days (Tmax < 0 °C) | Frost days (Tmin < 0 °C)  |
 | --- | --- | --- | --- | --- | --- |
@@ -1407,13 +1050,9 @@ In recent years, we have witnessed increasingly intense weather events that ofte
 ## 2.4.1.3 Gale force wind
 
 Figure 20 displays the average annual wind speed, while Figure 21 illustrates the number of days with stormy winds at the Grič station for the period from 1981 to 2023. There is a notable variability in the average wind speed. In the period from 2006 to 2015, there was an increase in the average annual wind speed (from 1.4 to 1.9 Beaufort) and an increase in the annual number of days with gale-force winds. However, from the year 2020 onwards, the figures show a decreasing trend. Despite the downward trends, the possibility of encountering gale-force and hurricane-force winds is not ruled out, as witnessed during the summer season of 2023.
-图
 
-Climate Neutrality
 
-Action Plan
 
-O
 
 ![img-20.jpeg](img-20.jpeg)
 Figure 20 Average annual wind speed (Bouf) in Zagreb (Grič) for the period from 1981 to 2023
@@ -1424,9 +1063,7 @@ Figure 21 Annual number of days with gale force wind (8 or more Bouf) in Zagreb 
 # 2.4.1.4 Landslide
 
 Climate conditions play a role in triggering landslides. Increased rainfall, especially after dry periods, can significantly impact soil stability. Intense rains can saturate the soil with water, increasing its weight and reducing friction among soil particles. This reduction in friction can
-Climate Neutrality Action Plan
 
-#
 
 lead to landslide initiation. Additionally, changes in climate conditions, such as extreme weather events, prolonged rainfall, or snowmelt, can increase the risk of landslides. Rising temperatures can accelerate ice and snow melting, adding extra stress to the soil and the potential for sliding.
 
@@ -1439,13 +1076,9 @@ The spatial development plan of the City of Zagreb designates a portion of the t
 # 2.4.1.5 River flood
 
 According to the Risk of Major Disasters Assessment for the Area of the City of Zagreb, the greatest risk of flooding arises from the potential breach of the Sava River levee during periods of high-water levels, as well as the potential failure of retention systems in the Medvednica area. Although short-term, heavy rainfall may lead to flash floods, their impact is anticipated to primarily be local, confined to smaller areas affected by stormy weather. This contrasts with a broader area of the City that would be affected by the failure of flood protection infrastructure.
-图
 
-Climate Neutrality
 
-Action Plan
 
-#
 
 ![img-22.jpeg](img-22.jpeg)
 Figure 22 Flood hazard map for the City of Zagreb
@@ -1455,13 +1088,9 @@ Figure 22 Flood hazard map for the City of Zagreb
 The provided text outlines the outcomes of climate modeling with a horizontal spatial resolution of  $12.5\mathrm{km}$  for the area of the City of Zagreb, according to the Eighth National Report of the Republic of Croatia under the United Nations Framework Convention on Climate Change. Climate projections are provided seasonally for the RCP4.5 climate change scenario for the climate period 2041-2070 (referred to as period P1). Climate change or deviations in climate parameters during the observed climate period are expressed as deviations from the average of these climate parameters in the "reference" period of 1981-2010 (denoted as P0).
 
 Table 6 indicates that global warming in the City of Zagreb will be reflected in the trend of increasing air temperatures (mean annual, minimum, and maximum air temperatures), as well as in the increase in the occurrence of warm temperature extremes (an increase in the
-图
 
-Climate Neutrality
 
-Action Plan
 
-#
 
 number of hot days and nights and the duration of warm periods) and a decrease in cold temperature extremes (a decrease in the number of cold days and the duration of cold periods). Climate projections for precipitation indicate a trend of decreasing annual precipitation, a reduction in the number of rainy periods, and an increase in the number of dry periods.
 
@@ -1493,8 +1122,6 @@ Investing in adaptation measures today will reduce the cost of addressing potent
 The following table outlines various risks and their potential influence, highlighting the significant challenges climate change poses on infrastructure, public health, water resources, biodiversity, and social vulnerability.
 
 Table 7 Assessment of climate change-induced risks
-Climate Neutrality
-Action Plan
 
 |  Risk | Potential impact | Probability | Impact level | Risk level  |
 | --- | --- | --- | --- | --- |
@@ -1511,8 +1138,6 @@ Action Plan
 |   |  Disruptions in essential services | Moderate | High | High  |
 |   |  Economic impacts on marginalised and vulnerable groups | Moderate | High | High  |
 
-3
-Climate Neutrality Action Plan
 
 # 3 Part B – Pathways towards Climate Neutrality by 2030
 
@@ -1532,9 +1157,7 @@ Waste sector is handled separately, on top of baseline emissions workout.
 |  2050 | 100% - net zero | 6,000 residuals | 6,000 | 2,924,000  |
 
 Note: The City's official 2019 baseline of 2.93 MtCO₂e covers energy-related emissions in buildings, transport, and local industry, plus agriculture. Waste-sector emissions (~85 ktCO₂e in 2019) are reported separately, consistent with SECAP methodology. They are fully addressed in the pathways and residuals strategy but not counted in the 2.93 Mt baseline.
-Climate Neutrality Action Plan
 
-5
 
 # 3.1 Module B-1 Climate Neutrality Scenarios and Impact Pathways – summary
 
@@ -1555,7 +1178,6 @@ This approach positions City of Zagreb not only to meet its 2050 neutrality targ
 # Credibility and Achievability of the Scenario
 
 The proposed modelled scenario is grounded in transparent assumptions, sector-specific pathways, and alignment with EU and national decarbonisation frameworks. It reflects realistic adoption dynamics, available technologies, and policy commitments, while integrating financial instruments already accessible to the City of Zagreb (e.g., EIB framework loans, EU funds, national programmes). Sensitivity testing has been applied to key drivers such as technology uptake, behavioural change, and investment pacing, ensuring robustness under different future conditions. Together, these elements confirm
-Climate Neutrality Action Plan
 
 that the scenario is both credible and achievable, providing a resilient pathway to climate neutrality by 2030 in line with the EU Cities Mission.
 
@@ -1572,9 +1194,6 @@ Mitigation Scenarios: Alternative mitigation scenarios outline different pathway
 Adaptation Scenarios: To address climate risks to the built environment and transport, adaptation scenarios define measures for resilience: green infrastructure, flood defences, building renovations, and land-use planning. All technical measures are designed to be climate-proofed, embedding resilience into Zagreb's mitigation actions. Zagreb has implemented climate proofing as mandatory for all city projects.
 
 Integrated Scenarios: Zagreb integrates mitigation, adaptation, and residuals management to deliver a holistic pathway. This ensures synergies between emission reduction, resilience-building, and neutralisation through forestry, bio-based construction, blue-green infrastructure, and certified removals.
-Climate Neutrality
-Action Plan
-7
 
 # 3. Broad Programmes and Stakeholder Enablement
 
@@ -1594,8 +1213,6 @@ Governance and Policy – Early adoptions (1-2 years)
 | --- | --- | --- | --- | --- | --- |
 |  Field of action | Systemic leaver | Action | Adresses (mitigation/adaptation/both) | Direct impacts | Indirect impacts  |
 |  Horizontal | Governance and policy | Spatial development plan revision that has energy transition and climate change adaptation standards built in | Both | Decrease of GHG emissions, increase of adaptive capacity | Better quality of life, better health prospects  |
-Climate Neutrality
-Action Plan
 
 |   | Introduction of building standards that overcome existing standards (above national level) for renovation and/or reconstruction of existing buildings and construction of new buildings | Both | Decrease of GHG emissions, increase of adaptive capacity, introduction of sustainable buildings standards | Better quality of life, better health prospects  |
 | --- | --- | --- | --- | --- |
@@ -1606,17 +1223,11 @@ Action Plan
 
 Implementing early policy adoptions via a horizontal approach is crucial for mainstreaming climate action and setting a strong foundation for both mitigation and adaptation efforts. These policies integrate climate considerations across all aspects of urban development, ensuring that sustainability becomes a core component of city planning and operations. For instance, adopting stringent building codes and energy performance standards not only reduces greenhouse gas emissions but also enhances the resilience of buildings to climate impacts, making them more energy-efficient and better prepared for future extreme weather events.
 
-8
-Climate Neutrality Action Plan
 
 Implementing urban green spaces and zoning policies contributes to urban resilience by reducing the heat island effect, increasing biodiversity, and providing natural buffers against climate-related impacts as well as improving population's well-being. Offering incentives for renewable energy installations, such as tax credits and subsidies, promotes the widespread adoption of clean energy solutions, reducing the city's reliance on fossil fuels and lowering overall emissions. Developing comprehensive climate action plans ensures that climate goals are integrated into all city projects and initiatives, providing a clear roadmap for coordinated and effective climate action.
 
 These early policy measures will collectively **mainstream climate action** into the city's governance framework, creating a supportive regulatory environment that encourages sustainable urban development, reduces emissions, and enhances resilience to climate impacts. By embedding climate considerations into the city's core operations and planning processes, these policies ensure long-term sustainability and resilience, benefiting both the environment and the community.
 
-9
-Climate Neutrality
-Action Plan
-0
 
 |  Later adoptions (3 + years)  |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- |
@@ -1629,11 +1240,8 @@ Governance and Policy – Later adoptions (3+ years)
 Explanation:
 
 By implementing later adoptions using the horizontal approach, we are focusing on mainstreaming climate action through governance and policy innovations. By climate-proofing the city budget and redesigning the city development strategy to fully integrate climate considerations, these measures ensure that all investments and development activities contribute to greenhouse gas savings and enhanced resilience. Our fiscal policies arent designed to enable planning and tracking the climate related spendings. We will pilot this in cooperation with the Ministry of finance to setup that system in the program of so called green budgeting. The program involves stakeholder engagement, policy review,
-Climate Neutrality
 
-Action Plan
 
-O
 
 training, pilot projects, and continuous monitoring and evaluation. These actions aim to achieve significant GHG savings, resilient investments, clear ownership and accountability, and a unified approach to climate action eliminating silos and fostering a culture where everyone participates as agents of change.
 
@@ -1653,7 +1261,6 @@ The built environment is Zagreb's largest emitting sector, with a 2019 baseline 
 This transformation is enabled through a balanced portfolio of policy measures ( $\approx$ 130  $\mathrm{ktCO}_{2}\mathrm{e}$ ) and technical measures ( $\approx$ 1.20  $\mathrm{MtCO}_{2}\mathrm{e}$ ). Policy measures include advanced building standards, spatial development plan revisions, mandatory climate proofing, and incentive frameworks. Technical measures comprise deep building renovations, district heating decarbonisation, electrification of heating with large-scale deployment of heat pumps, rooftop PV with storage, water system modernisation, and nature-based runoff management.
 
 Even with these ambitious measures,  $\sim 147$  ktCO $_2$ e of residual emissions remain in 2030. These are linked to transitional reliance on fossil backup in district heating, segments of the building stock that are harder to renovate, and lagging technology uptake. They represent around  $10\%$  of the sector's baseline.
-Climate Neutrality Action Plan
 
 All residuals are fully neutralised under Zagreb's Residual Emissions and Removals Strategy, through urban and peri-urban forestry, bio-based construction materials, soil carbon improvements, blue-green infrastructure, and, if required, certified removals. This ensures that net emissions in the built environment are zero from 2030 onwards.
 
@@ -1668,9 +1275,6 @@ The built environment thus becomes the cornerstone of Zagreb's climate neutralit
 The City of Zagreb is pursuing a comprehensive transformation of its built environment, recognising it not only as a source of emissions but also as a structural lever for systemic change. Buildings represent long-lived infrastructure that shapes energy demand, water use, mobility patterns, and vulnerability to climate impacts. For this reason, the pathway to climate neutrality places the built environment at its centre, treating it as a complex system that integrates spatial, social, and technical dimensions.
 
 The city's strategy combines direct emissions reductions with enabling infrastructure and regulatory measures. It addresses buildings, energy and water systems, and citizen behaviour, underpinned by a governance and investment framework that is already being deployed and scaled up.
-Climate Neutrality
-Action Plan
-3
 
 # A Phased, Resilient, and Accelerated Pathway
 
@@ -1691,8 +1295,6 @@ Deployment of district cooling systems in dense urban areas to address rising co
 Revitalisation of the urban water system, with pump upgrades, energy recovery, efficiency measures, and integration of solar power.
 Nature-based runoff management, including green roofs, permeable surfaces, and retention basins, reducing flood risk and energy demand in drainage systems.
 Smart energy and water management systems, enabling real-time monitoring, efficiency optimisation, and demand response.
-Climate Neutrality
-Action Plan
 
 Behavioural and awareness campaigns, promoting energy and water efficiency, low-carbon lifestyles, and citizen participation.
 Green urban development strategy actions, reinforcing building measures through spatial planning, regulatory tools, and participatory governance.
@@ -1713,7 +1315,6 @@ Designate green belts, permeable areas, and blue-green corridors as verified car
 Restrict development in climate-sensitive areas such as floodplains;
 Mandate green-blue infrastructure and passive cooling strategies for new developments and major retrofits;
 Enable compact, walkable, mixed-use urban form that reduces energy demand from transport and buildings.
-Climate Neutrality Action Plan
 
 By mainstreaming climate action into urban planning, the city unlocks synergies between land use, infrastructure, and decarbonisation, ensuring that spatial governance underpins both mitigation and the Residual Emissions and Removals Strategy.
 
@@ -1733,8 +1334,6 @@ All technical measures are designed not only to cut emissions but also to streng
 
 Heatwaves, through passive design (natural ventilation, solar shading, reflective surfaces, green roofs) that reduce indoor temperatures and cooling demand;
 Urban and pluvial flooding, via stormwater management, permeable pavements, vegetated swales, and rain gardens;
-Climate Neutrality
-Action Plan
 
 Water scarcity, through greywater reuse, rainwater harvesting, and efficient appliances;
 Extreme weather, with stronger facades, roofs, and glazing against wind, hail, snow, and heat stress.
@@ -1753,9 +1352,6 @@ Procurement inefficiencies: Adoption of framework agreements and cluster-based p
 
 These measures turn risks into drivers of green jobs, innovation, and inclusion, supporting a just transition.
 
-6
-Climate Neutrality
-Action Plan
 
 # Opportunity-driven transition
 
@@ -1778,10 +1374,6 @@ ESCOs, contractors, and technology providers deliver projects under innovative f
 Universities and vocational institutions build workforce capacity and co-design solutions.
 Civil society engages communities, ensuring inclusiveness, equity, and acceptance.
 
-7
-Climate Neutrality
-Action Plan
-8
 
 Flagship projects such as Zagrebački Sunčani Krovovi ("Zagreb Solar Roofs"), developed with REGEA, demonstrate this governance model in practice, installing municipal PV capacity while catalysing private rooftop investment through a digital solar mapping platform.
 
@@ -1803,9 +1395,6 @@ Overview of emissions reduction per measure till full decarbonization in 2030 is
 |  Comprehensive renovation of service buildings | Technical | 183.067  |
 |  Comprehensive renovation of residential buildings | Technical | 369.545  |
 |  District heating system expansion | Technical | 86.621  |
-Climate Neutrality
-Action Plan
-9
 
 |  District heating decarbonization (geothermal/heat pumps/solar PV) | Technical | 51.972  |
 | --- | --- | --- |
@@ -1829,7 +1418,6 @@ Action Plan
 |  Total |   | 1.325.266  |
 
 Despite achieving ~90% gross reductions in the built environment by 2030, approximately 147,000 tCO₂e of residual emissions remain. These residuals are primarily linked to transitional reliance on fossil-based backup in district heating systems, segments
-Climate Neutrality Action Plan
 
 of the building stock that are technically or financially harder to renovate by 2030, and lagging uptake of new heating technologies. Rather than being left unmanaged, these emissions are addressed through Zagreb's Residual Emissions and Removals Strategy, which combines verified local sinks (urban and peri-urban forestry, soil carbon improvements, blue-green infrastructure), carbon-storing construction materials, and, if needed, certified EU removals. This ensures that residuals are fully neutralised and that the built environment reaches net zero already in 2030, while continuing to shrink residuals to ~100 kt by 2040 and eliminating them entirely by 2050.
 
@@ -1840,7 +1428,6 @@ The emissions reduction model for Zagreb's built environment is based on sector-
 For public buildings, covering around 2.7 million m², the model assumes that by 2030 the stock will undergo deep renovation, achieving energy savings of at least 80 kWh per m² per year. At least 70% of energy demand in these buildings is expected to be supplied from renewable sources, setting a benchmark for the wider sector. In the service sector, which includes approximately 6.2 million m² of commercial and institutional space, at least half of the stock is assumed to be renovated by 2030 to medium- or deep-renovation standards, delivering energy savings of 50–70% depending on depth. The residential sector, which comprises 36.6 million m² of housing, is assumed to achieve deep renovation of 40–50% of its total area by 2030, with savings ranging from 50–70%. By 2050, the full stock is expected to meet nZEB or higher standards.
 
 In parallel with demand reduction, the model assumes a large-scale transformation of energy supply systems. The district heating (DH) network expands significantly, connecting around 50% of households and service buildings currently using individual gas boilers by 2030. At the same time, DH decarbonisation progresses rapidly, with 80–90% of current fossil-based generation replaced by industrial heat pumps, geothermal, solar, and
-Climate Neutrality Action Plan
 
 waste heat. By 2040, DH is expected to be fully decarbonised. The model also assumes large-scale heat pump deployment, with around 200,000 households switching to electric heating by 2030. In addition, at least 150 MWp of rooftop solar PV is installed by 2030, with integrated storage deployed across public and service facilities.
 
@@ -1848,10 +1435,6 @@ Despite these ambitious measures, residual emissions of about 147 ktCO₂e are e
 
 The baseline year for the modelling is 2019, with emissions calculated from energy consumption by source — electricity, natural gas, diesel, and other fuels — across households, services, and local industry. Reduction impacts are estimated per measure, drawing on Croatia's Long-Term Renovation Strategy (2020), the Sustainable Energy and Climate Action Plan (SECAP) for Zagreb, studies by the Croatian Energy Institute, data and plans from HEP Toplinarstvo, geothermal potential mapping, district heating planning documents, and outputs from EU-funded projects such as D2Heat. Costs are estimated per tonne of CO₂ equivalent reduced, including both capital and operational expenditures.
 
-1
-Climate Neutrality
-Action Plan
-2
 
 # Detailed overview of measures
 
@@ -1862,8 +1445,6 @@ Technology and assets – Early adoptions (1-2 years)
 |  Field of action | Systemic leaver | Action | Adresses (mitigation/adaptation/both) | Direct impacts | Indirect impacts  |
 |  Built environment | Technology /Innovation | Phasing-out the natural gas (gradually) | Mitigation | Decrease of GHG emissions | Better quality of life, better health prospects  |
 |   |   |  Energy/Comprehensive renovation and reconstruction of existing buildings | Both | Decrease of GHG emissions, increase of adaptive capacity, increased resilience of buildings and infrastructure, introduction of principles for sustainable buildings and circular management of space and buildings | Better quality of life, better health prospects  |
-Climate Neutrality
-Action Plan
 
 |   | District heating system as a primary source of heat - shift from individual gas boilers to district heating system | Mitigation | Decrease of GHG emissions | Better quality of life, better health prospects  |
 | --- | --- | --- | --- | --- |
@@ -1875,10 +1456,7 @@ Action Plan
 
 Implementing early adoptions in the built environment, focusing on technology and innovation, is crucial for mainstreaming climate action and achieving long-term sustainability and resilience. These measures include phasing out natural gas, energy/comprehensive renovation and reconstruction of buildings (applying the principles of sustainability and circular management, when possible), transitioning to district heating systems, increasing renewable energy production, deploying heat pumps, and modernising public lighting. Each action directly reduces greenhouse gas emissions and enhances energy efficiency while indirectly improving air quality, health outcomes, and urban liveability. By integrating these
 
-3
-Climate Neutrality
 
-Action Plan
 
 climate mitigation and adaptation strategies into city planning and operations, these initiatives lay a strong foundation for a sustainable and resilient urban environment, benefiting both the community and the environment.
 
@@ -1889,8 +1467,6 @@ Technology and assets – Later adoptions (3 + years)
 |  Field of action | Systemic leaver | Action | Adresses (mitigation/adaptation/both) | Direct impacts | Indirect impacts  |
 |  Built environment | Technology/innovation | Phasing-out the natural gas - gradual - continuation | Mitigation | Decrease of GHG emissions | Better quality of life, better health prospects  |
 |   |   |  Energy/Comprehensive renovation and reconstruction of existing buildings-continuation | Both | Decrease of GHG emissions, increase of adaptive capacity, increased resilience of buildings and infrastructure, Introduction of principles for sustainable buildings and circular management of space and buildings | Better quality of life, better health prospects  |
-Climate Neutrality
-Action Plan
 
 |   |  | District heating system as a primary source of heat - shift from individual gas boilers to district heating system | Mitigation | Decrease of GHG emissions | Better quality of life, better health prospects  |
 | --- | --- | --- | --- | --- | --- |
@@ -1902,12 +1478,8 @@ Explanation:
 
 Continuing the integration of advanced technology and innovation in the built environment is essential for maintaining momentum in mainstreaming climate action over the long term. Measures such as phasing out natural gas, energy/comprehensive renovation of buildings, and the expansion of district heating systems significantly reduce greenhouse gas emissions and enhance energy efficiency. Introducing geothermal and solar energy for district heating, alongside developing storage capacities for renewable energy sources, ensures a stable and sustainable energy supply. Additionally, implementing district cooling systems provides efficient cooling solutions that mitigate heatwave impacts and improve urban resilience.
 
-5
-Climate Neutrality
 
-Action Plan
 
-C
 
 These initiatives collectively enhance the built environment's sustainability, contributing to better air quality, improved health outcomes, and a higher quality of life for residents while ensuring the city's infrastructure is robust and adaptable to future climate challenges.
 
@@ -1921,8 +1493,6 @@ Governance and policy – Early adoptions (1-2 years)
 |  Water supply sector | Governance and policy | Promote water conservation and reuse practices | Both | Reduced demand on water resources, lower energy use | Decreased water treatment costs, increased public awareness  |
 |   |   |  Improved water usage regulation | Both | Reduced water consumption, enhanced resource management | Promotes sustainable water use behaviors, reduces overexploitation  |
 |   |   |  Implementation of the actions from the Strategy for green urban development | Both | Increased adoption of green solutions, reduced stormwater runoff | Enhanced urban aesthetics, increased biodiversity  |
-Climate Neutrality
-Action Plan
 
 |   | Public Awareness Campaigns | Both | Increased public knowledge and engagement | Encourages community involvement and support for water management initiatives  |
 | --- | --- | --- | --- | --- |
@@ -1931,10 +1501,6 @@ Action Plan
 
 Continuing the integration of advanced technology and innovation in the water sector is essential for maintaining momentum in the long-term mainstreaming of climate action. Measures such as phasing out inefficient water practices, comprehensive water infrastructure refurbishments, and the expansion of water reuse systems significantly reduce water waste and enhance water efficiency. Introducing advanced wastewater treatment technologies and rainwater harvesting, alongside developing storage capacities for reused water, ensures a stable and sustainable water supply. Additionally, implementing smart water management systems provides efficient solutions that mitigate the impacts of droughts and water scarcity, improving urban resilience. These initiatives collectively enhance water sustainability, contributing to better water quality, improved health outcomes, and a higher quality of life for residents while ensuring the city's water infrastructure is robust and adaptable to future climate challenges.
 
-7
-Climate Neutrality
-Action Plan
-8
 
 # Technology and assets – Early adoptions (1-2 years)
 
@@ -1949,15 +1515,10 @@ Action Plan
 # Explanation:
 
 Continuing to integrate advanced technology and innovation in the water sector is essential for maintaining momentum in mainstreaming climate action over the long term. Measures such as upgrading high-efficiency pumps and motors, installing renewable energy systems like solar PV, revitalising comprehensive water supply systems, and implementing nature-
-Climate Neutrality
-Action Plan
 
 based solutions for runoff water management significantly reduce water waste and enhance energy efficiency. Introducing advanced technologies and infrastructure improvements ensures a stable and sustainable water supply while reducing greenhouse gas emissions. Additionally, implementing smart water management systems provides efficient solutions that mitigate the impacts of droughts and water scarcity, improving urban resilience. These initiatives collectively enhance water sustainability, contributing to better water quality, improved health outcomes, and a higher quality of life for residents while ensuring the city's water infrastructure is robust and adaptable to future climate challenges.
 
-9
-Climate Neutrality Action Plan
 
-0
 
 # 3.1.2 Transport Sector – impact pathways
 
@@ -1973,9 +1534,7 @@ Green transit corridors and priority bus lanes, improving speed and reliability 
 Shared mobility platforms integrated with public transport ticketing;
 Smart multimodal hubs at key interchange points;
 Municipal fleet electrification, including vans, waste collection, and utility vehicles.
-Climate Neutrality Action Plan
 
-O
 
 Private fleet decarbonisation remains the largest structural challenge. While the city cannot directly mandate vehicle turnover, it creates enabling conditions for rapid electrification: restricting parking in central zones, expanding charging infrastructure, integrating shared e-mobility services, and advocating for stronger national EV incentives. The strategy anticipates 300,000–400,000 private EVs in circulation by 2030, supported by compact urban development and stronger alternatives to car use.
 
@@ -1994,10 +1553,6 @@ Civil society and NGOs ensure inclusiveness and community participation.
 
 The transition is designed to be socially just: electrification programmes prioritise underserved areas, free public transport is secured for youth and the elderly, and tiered pricing protects affordability. Green jobs are created across maintenance, smart mobility, and infrastructure, while participatory budgeting ensures investments match community needs.
 
-1
-Climate Neutrality
-Action Plan
-2
 
 milestone. By 2030, transport emissions are reduced by ~1.01 MtCO₂e, leaving ~102 kt of residuals. Through the residuals strategy, these are neutralised, delivering net zero transport two decades ahead of EU-wide targets. By 2040 residuals are halved, and by 2050 transport is fully decarbonised.
 
@@ -2014,8 +1569,6 @@ Full measures decarbonization contributions are given in the table below
 |  Dynamic Road Pricing | Policy | 13.500  |
 |  Urban Logistics Zones | Technical/Policy | 9.000  |
 |  Electrification of Bus Fleet | Technical | 135.000  |
-Climate Neutrality
-Action Plan
 
 |  Deployment of Energy-Efficient Trams | Technical | 85.500  |
 | --- | --- | --- |
@@ -2033,8 +1586,6 @@ The transport emissions reduction pathway developed by the City of Zagreb is bui
 
 At the heart of the model is the transition to an electrified and modernised public transport fleet, a process already well underway in Zagreb. The bus fleet electrification scenario is directly based on ZET's procurement pipeline, which includes 70 electric buses currently being acquired, supported by the EU's Recovery and Resilience Facility. The model assumes
 
-3
-Climate Neutrality Action Plan
 
 a phased deployment of up to 500 e-buses, aligning with operational projections and city fleet planning. Emissions savings per vehicle are estimated using published values from the IEA Global EV Outlook and urban fleet case studies, assuming average operational hours, energy efficiency improvements, and Zagreb's electricity grid decarbonisation trajectory.
 
@@ -2046,8 +1597,6 @@ Beyond fleet and infrastructure, the model integrates a set of policy and spatia
 
 The integration of smart city mobility systems, including adaptive traffic signals, AI-based traffic routing, and city-wide sensor networks, is modeled based on assumptions in the European Commission's Smart Mobility 2030 Strategy. Emissions reductions are calculated
 
-4
-Climate Neutrality Action Plan
 
 by estimating improvements in traffic flow efficiency, reduced idling time, and lower stop-start frequency, particularly during peak congestion periods.
 
@@ -2059,10 +1608,6 @@ Further assumptions address emerging areas of urban transport transformation. Th
 
 The single largest source of modeled reductions is the decarbonisation of the private vehicle fleet, an area not directly controlled by the city but critically important to its climate goals. The model estimates the transition of approximately 292,500 vehicles to electric powertrains by 2050, referencing IEA's Global EV Outlook 2023 and national projections for EV adoption. Emissions reductions are calculated using fleet turnover rates, average emissions factors for conventional vehicles, and Zagreb's urban driving profile. While the city does not set
 
-5
-Climate Neutrality
-Action Plan
-C
 
 national standards or subsidies, this measure is included to represent the importance of enabling infrastructure, behavioural incentives, and advocacy for national support.
 
@@ -2082,9 +1627,6 @@ NOTE: Zagreb airport, eventhough it is called Zagreb airport, is not situated in
 
 Governance and Policy – Early adoptions (1-2 years)
 
-6
-Climate Neutrality
-Action Plan
 
 Early adoptions (1-2 years)
 
@@ -2095,16 +1637,10 @@ Early adoptions (1-2 years)
 |   |   |  Enforcement of green procurement policies for city fleets | Mitigation | Reduced GHG emissions from municipal vehicles | Leadership in sustainability, economic savings, setting a community example  |
 |   |   |  Strategy for City owned company public transport company transformation | Both | Reduced GHG emissions from municipal vehicles | Leadership in sustainability, economic savings, setting a community example  |
 |   |   |  |   |   |   |
-Climate Neutrality
-Action Plan
-8
 
 # Explanation:
 
 These early adoption policy actions in the transport sector focus on regulation and planning to integrate climate change mitigation and adaptation into transportation planning and operations. Each policy initiative is designed to reduce greenhouse gas emissions, improve air quality, and enhance the resilience of the city's transport infrastructure. By implementing these policies, the city can create a more sustainable, efficient, and health-promoting transportation system, benefiting both the environment and the community.
-Climate Neutrality
-Action Plan
-9
 
 # Governance and Policy – Late adoptions (3+ years)
 
@@ -2116,8 +1652,6 @@ Action Plan
 |   |   |  Introduction of green corridors and dedicated lanes for public transit | Mitigation | Increased public transport usage, reduced private vehicle emissions | Enhanced public transport reliability, reduced travel times  |
 |   |   |  Mandate for all new city vehicles to be electric or hybrid | Mitigation | Significant reduction in GHG emissions from municipal operations | Leadership in clean transport, setting a precedent for private sector adoption  |
 |   |   |  Development and enforcement of sustainable urban mobility plans (SUMPs) | Both | Integrated transport planning, reduced emissions, increased resilience | Improved urban mobility, better coordination between transport modes  |
-Climate Neutrality
-Action Plan
 
 |   | Establishment of comprehensive bike-sharing and e-scooter programs | Both | Reduced dependence on private vehicles, lower emissions | Increased active transport options, improved public health, reduced urban congestion  |
 | --- | --- | --- | --- | --- |
@@ -2129,12 +1663,8 @@ Action Plan
 
 These mid-term policy and governance interventions focus on further embedding climate change mitigation and adaptation into the transport sector's framework. They aim to expand existing initiatives and introduce new strategies to enhance the sustainability and resilience of urban transportation systems. By broadening the scope and impact of low-emission zones, integrating smart technologies, and promoting sustainable urban mobility plans these actions will lead to significant reductions in greenhouse gas emissions and improvements in air quality. Additionally, initiatives like transit-oriented development and support for telecommuting will contribute to a more efficient, resilient, and livable urban environment.
 
-0
-Climate Neutrality
 
-Action Plan
 
-#
 
 # Technology and assets – Early adoptions transport sector (1-2 years)
 
@@ -2146,8 +1676,6 @@ Early adoptions transport sector (1-2 years)
 |   |   |  Deployment of Energy-Efficient Trams | Both | Reduced energy consumption, lower operational costs | Enhanced reliability of public transport, longer lifespan of assets  |
 |   |   |  Installation of Solar Panels on Bus and Tram Depots | Both | Generation of renewable energy, reduced operational costs | Reduced carbon footprint of public transport facilities, demonstration of renewable energy use  |
 |   |   |  Implementation of Real-Time Passenger Information Systems | Both | Improved efficiency of public transport, better passenger experience | Increased public transport usage, reduced waiting times, enhanced commuter satisfaction  |
-Climate Neutrality
-Action Plan
 
 |   | Introduction of Contactless Payment Systems | Both | Increased convenience for passengers, faster boarding times | Reduced fare evasion, increased revenue, improved passenger data collection  |
 | --- | --- | --- | --- | --- |
@@ -2157,9 +1685,6 @@ Action Plan
 |   |  Establishment of Maintenance Programs for Energy Efficiency | Both | Improved energy efficiency of transport assets, reduced operational costs | Longer lifespan of vehicles, improved reliability of public transport services  |
 |   | Modernisation of Energy Network Supplying Trams | Both | Increased energy efficiency, reduced transmission losses | Enhanced reliability and resilience of tram network, reduced operational costs  |
 
-2
-Climate Neutrality
-Action Plan
 
 Increase the climate hazards resilience of the network
 Adaptation
@@ -2176,9 +1701,6 @@ Technology and assets – Late adoptions (3 + years)
 | --- | --- | --- | --- | --- | --- |
 |  Field of action | Systemic leaver | Action | Addresses (Mitigation/ Adaptation/ Both) | Direct Impacts | Indirect Impacts  |
 |  Transport | Technology and assets | Expansion of Electrified Public Transport Fleet | Mitigation | Further reduction in GHG emissions, | Improved air quality, reduced noise pollution,  |
-Climate Neutrality
-Action Plan
-4
 
 |   |  |  | improved air quality | better health outcomes  |
 | --- | --- | --- | --- | --- |
@@ -2186,16 +1708,12 @@ Action Plan
 |   | Implementation of Integrated Ticketing Systems | Both | Enhanced efficiency and convenience for passengers, increased public transport usage | Reduced traffic congestion, lower emissions, better public transport accessibility  |
 |   | Upgrade and Expansion of Public Transport Infrastructure | Both | Increased public transport capacity, reduced travel times, decreased GHG emissions | Enhanced urban mobility, economic growth through improved transport links, increased property values along transit corridors  |
 |   | Adoption of Autonomous Electric Public Transport Vehicles | Both | Reduced operational costs, enhanced safety, | Improved public transport efficiency, innovative urban transport solutions,  |
-Climate Neutrality
-Action Plan
-5
 
 |   |  |  |  | reduced GHG emissions | attraction of tech investments  |
 | --- | --- | --- | --- | --- | --- |
 |   |  | Resilient Transport Infrastructure Projects | Adaptation | Increased resilience to extreme weather events, reduced infrastructure damage | Enhanced safety and reliability, lower long-term maintenance costs, continuity of service during climate events  |
 |   |  | Deployment of Smart Grids and Energy Management Systems | Both | Optimised energy consumption, reduced operational costs, lower emissions | Improved grid stability, enhanced integration of renewable energy, demonstration of advanced energy technologies  |
 |   |  | Promotion of Low-Emission Zones and Green Corridors | Both | Reduced traffic emissions, enhanced air quality, increased public transport and active transport use | Improved urban livability, better public health outcomes, increased green space  |
-Climate Neutrality Action Plan
 
 # Explanation:
 
@@ -2203,10 +1721,7 @@ Implementing these mid-term measures in the transport sector focuses on leveragi
 
 As part of Zagreb's commitment to reducing greenhouse gas (GHG) emissions and promoting sustainable urban mobility, the Climate City Contract outlines a comprehensive strategy to transform the transport sector. Through a combination of regulatory measures, infrastructure investments, technological innovation, and public engagement, these initiatives will create a modern, low-carbon, and resilient transportation system.
 
-6
-Climate Neutrality Action Plan
 
-7
 
 ## 3.1.3 Waste – From Liability to Circular Asset
 
@@ -2221,9 +1736,6 @@ Without intervention, these emissions would persist, as methane generation from 
 ## Future Integration of Waste Sector Emissions
 
 While the waste sector is currently treated separately from Zagreb's official baseline and target, the city recognises the importance of ensuring consistency across all emitting sectors. In future iterations of the Climate City Contract, waste-sector emissions will be fully
-Climate Neutrality
-Action Plan
-8
 
 embedded in the baseline inventory and treated on equal footing with buildings, transport, and industry. This will strengthen transparency, improve comparability, and ensure that waste-related reductions directly contribute to Zagreb's overall climate neutrality pathway.
 
@@ -2245,9 +1757,7 @@ Material/energy recovery credits: ~5,000–20,000 tCO₂e/year from recycling an
 Net impact: 50,000–70,000 tCO₂e/year avoided, reducing waste-sector emissions by ~70%.
 
 By 2030, waste-sector residual emissions are projected at ~20,000–35,000 tCO₂e, mostly coming from wastewater CH₄/N₂O and minor fugitives from composting. These residuals are integrated into Zagreb's Residual Emissions and Removals Strategy, neutralised through blue-green infrastructure, soil carbon enhancement, and certified removals if required.
-Climate Neutrality Action Plan
 
-O
 
 Climate proofing is embedded in the preparation of waste and wastewater treatment projects, ensuring long term service continuity and environmental protection under future extreme weather conditions.
 
@@ -2265,7 +1775,6 @@ Operational footprint: CGO electricity and logistics estimated at ~2,000 tCO₂e
 ## Governance and planning integration
 
 The Zagreb Waste Management Center is coordinated as a joint recovery and recycling facility of the City of Zagreb and Zagreb County, as required by the National Waste Management Plan adopted by the Government of the Republic of Croatia. Both City of Zagreb and Zagreb County will implement behavioural and awareness campaigns promoting waste reduction, proper separation and recycling, circular economy practices, and active citizen participation in sustainable waste management.
-Climate Neutrality Action Plan
 
 The CGO Zagreb is embedded in the Green General Urban Plan (GUP) as strategic infrastructure and integrated with peri-urban green belts, wetlands, and agro-ecological corridors, ensuring coherence between waste management and land-based neutralisation. Its development is being conducted transparently, with a public hearing (2025) and formal EIA procedures.
 
@@ -2284,8 +1793,6 @@ Certified EU Removals: Utilized only as a last resort for emissions that cannot 
 
 2040: Waste residuals decline below ~15,000 tCO₂e, through wastewater upgrades and further recycling. However, the significance of the sector extends beyond emissions reductions as waste management is increasingly recognized as a lever for circular economy innovation, resource efficiency, and green job creation.
 
-0
-Climate Neutrality Action Plan
 
 Zagreb's strategic approach will align its waste policies with EU and SDG frameworks, transforming waste flows into value chains through innovation in sorting, recovery, and bio-based material cycles.
 
@@ -2304,9 +1811,6 @@ In 2019, industrial emissions accounted for an estimated ~330,000 tCO₂e, of wh
 Regulatory and corporate foundations
 
 Zagreb's industrial pathway builds on strong regulatory foundations: the EU ETS and the Industrial Emissions Directive (IED) create a carbon pricing and BAT framework, while Croatia's NECP and circular economy strategies provide additional incentives. However, corporate climate strategies are increasingly the driving force of change. Teva,
-Climate Neutrality
-Action Plan
-C
 
 Končar, Dalekovod, and MOL/INA have all adopted science-based targets, ESG reporting, and decarbonisation roadmaps, which are directly shaping investment decisions in Zagreb. These companies are not just reducing their own emissions but also delivering low-carbon solutions to other sectors: trams, smart grids, renewables, and circular products.
 
@@ -2329,9 +1833,7 @@ Circular material flows: packaging recovery, industrial symbiosis, and green che
 District heating support: harvesting waste heat from industrial processes.
 Clean logistics: adoption of electric delivery fleets and participation in urban low-emission zones.
 Green manufacturing: Končar's electrification systems and Dalekovod's renewable integration projects.
-Climate Neutrality Action Plan
 
-#
 
 These actions show that industry is not only a source of emissions but a provider of solutions for Zagreb's climate neutrality.
 
@@ -2355,7 +1857,6 @@ In sum, Zagreb's industrial pathway combines national law, corporate ambition, m
 ## Industrial Emissions and Credibility of the Pathway
 
 In 2019, Zagreb's industrial sector emitted approximately 330 ktCO₂e, stemming mainly from large installations covered by the EU ETS (refining and petrochemicals, pharmaceuticals, electrical equipment, and heavy manufacturing), which account for the
-Climate Neutrality Action Plan
 
 majority of emissions. A further 20–25% arises from medium and small facilities outside ETS, primarily food processing, light manufacturing, and logistics, while a smaller share (&lt;10%) is linked to industrial processes and product use (IPPU) such as solvents, chemicals, and refrigerants. This mix highlights the need to clarify whether the city's industrial accounting covers only stationary energy emissions or also includes IPPU and F-gases, as this materially affects the baseline and targets.
 
@@ -2363,10 +1864,7 @@ The projected -85% reduction by 2030 is considered credible because most reducti
 
 By 2030, residual industrial emissions are expected to fall to around $50\mathrm{ktCO}_{2}\mathrm{e}$, mainly from non-ETS facilities and slower-turnover processes. These are explicitly integrated into the Residual Emissions and Removals Strategy, where they will be neutralised through forestry and soils, blue-green infrastructure, bio-based materials, and certified EU removals as a last resort. Taken together, these elements provide a coherent, credible, and achievable pathway for Zagreb's industry to reach net zero by 2030, while positioning the sector as a driver of green jobs, innovation, and competitiveness.
 
-4
-Climate Neutrality Action Plan
 
-#
 
 # 3.1.5 Agriculture
 
@@ -2381,9 +1879,7 @@ By 2030, agricultural emissions are expected to remain at ~12 ktCO₂e, reflecti
 Agricultural emissions are governed primarily by Croatia's Law on Climate Change and Protection of the Ozone Layer (2025), the National Energy and Climate Plan (NECP 2021-2030), and the Sustainable Agriculture Strategy (2020-2030). These are complemented by the CAP Strategic Plan, which links subsidies and eco-schemes to climate performance.
 
 Within this framework, the City of Zagreb plays an enabling role. Through the Green General Urban Development Plan (GUP), the city protects peri-urban farmland and green belts from urban encroachment, conserving soil carbon sinks and maintaining ecological corridors in areas such as Brezovica, Sesvete, and the Sava corridor. Land-use planning is used to safeguard carbon-rich agricultural areas and integrate them with the city's broader green-blue infrastructure strategy.
-Climate Neutrality Action Plan
 
-#
 
 # Enabling practices and partnerships
 
@@ -2409,18 +1905,12 @@ Soil carbon sequestration (cover crops, organic amendments, carbon farming);
 Agroforestry and peri-urban tree planting integrated with farmland;
 Wetland restoration and blue-green infrastructure;
 EU carbon farming schemes providing financial support and MRV systems.
-Climate Neutrality
-Action Plan
-7
 
 This dual role, as both a source of residuals and a provider of removals, makes agriculture strategically significant. By 2040, residuals are projected to decline to ~8 kt, and by 2050 the sector balances its emissions fully, becoming a net sink.
 
 ## Outlook
 
 Agriculture's contribution is therefore not measured in tonnes alone but in its ability to link urban and rural systems, provide land-based neutralisation, and reinforce resilience and food security. By aligning with national legislation, leveraging CAP eco-schemes, protecting farmland through spatial planning, and promoting carbon farming, Zagreb ensures that agriculture supports both residual management and the city's broader net-zero commitment by 2030.
-Climate Neutrality
-Action Plan
-8
 
 # 3.1.6 Residual emissions and removals outline – A structural component of Zagreb’s climate pathway
 
@@ -2437,8 +1927,6 @@ The revision of the General Urban Development Plan (GUP) is a cornerstone of the
 Designating green belts, agroforestry zones, and peri-urban corridors as verified carbon sinks. These areas serve both as buffers against urban sprawl and as active carbon-absorbing landscapes.
 Embedding nature-based solutions (green roofs, permeable pavements, retention basins, wetland restoration) directly into land-use rules, so that every new development contributes to carbon sequestration and resilience.
 Reserving space for bio-based industries and materials banks, linking industrial land use with carbon storage in construction materials.
-Climate Neutrality
-Action Plan
 
 Integrating soil carbon management into zoning for peri-urban agriculture, ensuring that CAP eco-schemes and carbon farming projects are spatially aligned with the city plan.
 
@@ -2461,8 +1949,6 @@ Residuals are governed through the city's Climate Cockpit. Residuals are not out
 
 Annual residual emissions inventories by sector (built environment, transport, industry, agriculture, waste).
 MRV protocols for removals aligned with the forthcoming EU Carbon Removal Certification Framework.
-Climate Neutrality
-Action Plan
 
 Cross-departmental ownership: spatial planning, utilities, waste operator, environment, and finance all share accountability.
 Public transparency: residuals and removals tracked on a public dashboard alongside emissions reductions.
@@ -2488,8 +1974,6 @@ Jobs: forestry, agroforestry, regenerative farming, timber construction, waste-t
 Resilience: green corridors, wetlands, and permeable surfaces reduce flood and heat risks.
 Equity: peri-urban farmers gain new income streams from carbon farming; communities benefit from reduced landfill impacts and modern waste services.
 
-0
-Climate Neutrality Action Plan
 
 Urban quality: new green infrastructure improves health, biodiversity, and provides recreational opportunities.
 
@@ -2503,10 +1987,6 @@ The City of Zagreb acknowledges that the Residual Emissions and Removals Strateg
 
 This ensures that neutrality is not only achieved in 2030 but sustained long-term, with residuals managed in a way that is spatially anchored, socially just, and institutionally credible.
 
-1
-Climate Neutrality
-Action Plan
-2
 
 |  Sector | 2019 baseline | 2030 gross reductions (tCO2e) | 2030 residuals (tCO2e) | Neutralization lever applied  |
 | --- | --- | --- | --- | --- |
@@ -2516,16 +1996,10 @@ Action Plan
 |  Agriculture | 11,200 | 0 (hard to abate) | 12,000 | Soil carbon sequestration; agroforestry; blue-green infrastructure  |
 |  Waste – outside of emissions baseline | 85,000 | 60,000 | 25,000 | Waste diversion (CGO Resnik); compost & SRF; blue-green infrastructure; circular economy; certified EU removals (if needed)  |
 |  Total (without waste) | 2,930,204 | 2,637,752 | 293,000 |   |
-Climate Neutrality
-Action Plan
-3
 
 |  Sector | 2019 baseline | 2030 gross reductions (tCO2e) | 2030 residuals (tCO2e) | Neutralization lever applied  |
 | --- | --- | --- | --- | --- |
 |  Total (with waste) | 3,011,211 | 2,693,759 | 318,000 |   |
-Climate Neutrality
-Action Plan
-4
 
 # 3.2 Module B-2 Climate Neutrality Portfolio Design
 
@@ -2543,9 +2017,6 @@ The City of Zagreb recognises that several actions in this Climate City Contract
 |  Training and Capacity Building | Provide training for urban planners and developers on the new standards and their implementation  |
 |  Pilot Projects | Implement pilot projects to demonstrate the benefits of the revised standards and gather feedback for improvement  |
 |  Monitoring and Evaluation | Establish mechanisms to monitor and evaluate the effectiveness of the revised urban development plan in achieving emission reductions and increased adaptive capacity  |
-Climate Neutrality
-Action Plan
-5
 
 B) Introduction of Building Standards Above National Level for Renovation, Reconstruction of Existing Buildings, and Construction of New Buildings
 
@@ -2572,8 +2043,6 @@ C) Developed and Implemented Green Deal Guidance for Building and Reconstruction
 |  Programme Components  |   |   |
 |  Guidance Development | • Formulate detailed guidelines documents based on the principles of the EU Green Deal as well as the EU Framework for sustainable buildings
 • Focus on sustainability, energy efficiency, and resilience  |   |
-Climate Neutrality
-Action Plan
 
 |  Stakeholder Collaboration | • Work with industry expert, policymakers, professionals from the construction sector (architects, engineers, designers, etc.) and community representatives
 | • Ensure that guidelines are comprehensive and practical  |
@@ -2603,9 +2072,6 @@ D) Developed and Implemented Climate-Proofing Methodology for Infrastructure Pro
 |  Monitoring and Evaluation | • Develop KPIs to measure resilience and compliance.
 • Regularly review and adjust the methodology based on outcomes.  |
 
-6
-Climate Neutrality
-Action Plan
 
 Timeline
 Year 1: Develop methodology, start capacity building, and integrate it into planning
@@ -2631,10 +2097,7 @@ A) City Budget - Climate Monetised and Climate Proofed
 |  Pilot Projects | Demonstrate the benefits of climate-proofing the budget through pilot projects.
 • Select a few city projects to apply climate-proofing guidelines
 • Monitor and evaluate the financial and environmental outcomes  |
-Climate Neutrality
-Action Plan
 
-8
 
 Monitoring and Evaluation
 Track the effectiveness of the climate-proofed budgeting process.
@@ -2664,8 +2127,6 @@ B) Redesigned City Development Strategy - Full Mainstreaming Achieved
 |  Pilot Projects | Demonstrate the benefits of the revised development strategy through pilot projects.
 • Select a few development projects to apply the revised strategy
 • Monitor and evaluate the outcomes  |
-Climate Neutrality
-Action Plan
 
 |  Monitoring and Evaluation | Track the effectiveness of the revised development strategy.
 • Develop key performance indicators (KPIs) to measure GHG savings, resilience, and mainstreaming success
@@ -2692,8 +2153,6 @@ Activities:
 Activities:
 • Develop technical regulations to limit new natural gas connections
 • Introduce incentives for switching to alternative energy sources, focusing on electrification and renewable energy systems  |
-Climate Neutrality
-Action Plan
 
 |  Infrastructure Development | **Objective:** Prepare the infrastructure for alternative energy sources
 **Activities:**
@@ -2717,8 +2176,6 @@ B) Energy/Comprehensive Renovation and/or Reconstruction of Existing Buildings
 |  Objective | Improve energy efficiency and resilience of buildings through energy/comprehensive renovation and/or reconstruction while applying principles of sustainability and circular management when possible  |
 | --- | --- |
 |  Programme Components |   |
-Climate Neutrality
-Action Plan
 
 |  Asset Management System Improvements and Building Analyses | **Objective:** Assess current energy performance and condition of buildings in general and identify improvement opportunities
 
@@ -2741,9 +2198,6 @@ Action Plan
 • Develop detailed technical guidelines and support resources, including installation manuals and online training modules
 • Preparation and drawing up of design and technical documentation  |
 
-1
-Climate Neutrality
-Action Plan
 
 |  Implementation of Renovations | Objective: Carry out the recommended renovations
 Activities:
@@ -2769,8 +2223,6 @@ Activities:
 |  Stakeholder Engagement | Objective: Secure buy-in from key stakeholders
 Activities:
 • Engage local government, utility companies, and residents through consultations and information sessions, presenting technical data and case studies  |
-Climate Neutrality
-Action Plan
 
 |  Policy and Incentives | Objective: Support the transition to district heating
 Activities:
@@ -2796,8 +2248,6 @@ D) Increased Production of Electrical Energy from RES - Photovoltaics Primarily
 |  Site Identification and Assessment | Objective: Identify suitable sites for photovoltaic installations
 Activities:
 • Conduct site assessments using GIS mapping and solar potential analysis for rooftops, public buildings, and open spaces - usage of the tool developed in cooperation with the GDi company  |
-Climate Neutrality
-Action Plan
 
 |  Regulatory Framework | **Objective:** Develop regulations to support renewable energy production
 **Activities:**
@@ -2824,8 +2274,6 @@ E) Heat Pumps Installations Programme Deployment
 |  Objective | Deploy heat pumps to improve energy efficiency and reduce GHG emissions in heating and cooling systems of public buildings, as a part of the energy/comprehensive renovation of buildings  |
 | --- | --- |
 |  Programme Components |   |
-Climate Neutrality
-Action Plan
 
 |  Feasibility Study | **Objective:** Assess the feasibility and benefits of heat pump installations as a secondary solution, after the district heating usage
 
@@ -2856,9 +2304,6 @@ F) Continuation of Public Lighting Modernisation
 | --- | --- |
 |  Programme Components |   |
 
-5
-Climate Neutrality
-Action Plan
 
 |  Audit and Assessment | **Objective:** Assess current public lighting systems and identify improvement opportunities
 
@@ -2889,10 +2334,6 @@ Action Plan
 |  Timeline | **Year 1:** Conduct audit, develop policies, select technologies
 **Year 2:** Begin implementation, monitor and evaluate performance  |
 
-6
-Climate Neutrality
-Action Plan
-7
 
 # 3.2.2.2 Technology and assets – Later adoptions (3+ years)
 
@@ -2914,8 +2355,6 @@ Activities:
 • Create cooperation agreement with the concession rights owner and district heating system operator for existing wells and fields, engage in talks with the National Hydrocarbon Agency for additional geothermal investigation plots, drill new wells, and build heat exchangers and supporting infrastructure
 • Install solar thermal collectors and integrate them into the district heating network
 • Upgrade existing distribution networks to accommodate new energy sources  |
-Climate Neutrality
-Action Plan
 
 |  Technical Support and Training | Objective: Equip stakeholders with the necessary skills and knowledge
 Activities:
@@ -2942,8 +2381,6 @@ Activities:
 Activities:
 • Create policies that mandate or incentivise the installation of energy storage systems
 • Streamline permitting processes for renewable energy storage projects  |
-Climate Neutrality
-Action Plan
 
 |  Financial Incentives and Support | Objective: Encourage investment in renewable energy storage
 Activities:
@@ -2968,8 +2405,6 @@ Activities:
 |  Policy and Incentives | Objective: Develop supportive policies and incentives for district cooling systems
 Activities:
 • Create regulations promoting the adoption of district cooling systems in urban areas  |
-Climate Neutrality
-Action Plan
 
 |  Infrastructure Development | **Objective:** Build and upgrade infrastructure to support district cooling systems
 
@@ -2996,8 +2431,6 @@ A) Promote Water Conservation and Re-Use Practices
 |  Objective | Encourage efficient water use and the adoption of water reuse practices to conserve water resources and enhance sustainability  |
 | --- | --- |
 |  Programme Components |   |
-Climate Neutrality
-Action Plan
 
 |  Needs Assessment and Feasibility Study | **Objective:** Conduct a thorough assessment to identify current water usage patterns, infrastructure gaps, and feasibility of implementing conservation and reuse practices
 
@@ -3019,9 +2452,6 @@ Action Plan
 • Implement predictive analytics and demand response systems to optimise water usage, reduce peak demands, and improve system stability
 • Establish communication networks and data analytics platforms to enable remote monitoring, proactive maintenance, and rapid response to water supply disruptions  |
 
-1
-Climate Neutrality
-Action Plan
 
 |  Safety and Regulatory Compliance | **Objective:** Ensure compliance with safety standards and regulatory requirements during the implementation of water conservation and reuse practices
 
@@ -3043,9 +2473,6 @@ Action Plan
 • Conduct regular audits, performance assessments, and water usage audits to track progress towards goals and identify areas for further optimisation
 • Solicit feedback from water utility operators, residents, and stakeholders to assess satisfaction levels and gather insights for continuous improvement of water conservation and reuse practices  |
 
-2
-Climate Neutrality
-Action Plan
 
 |  Public Awareness and Stakeholder Engagement | **Objective:** Engage stakeholders and raise awareness about the benefits of water conservation and reuse practices
 
@@ -3072,9 +2499,6 @@ B) Improved Water Usage Regulation
 • Analyse current regulatory frameworks and identify areas for improvement
 • Assess technological advancements and best practices in water regulation and management from other regions  |
 
-3
-Climate Neutrality
-Action Plan
 
 |  Regulatory Framework Development | **Objective:** Develop a comprehensive regulatory framework to promote efficient and sustainable water usage
 
@@ -3102,9 +2526,6 @@ Action Plan
 • Organise community workshops, forums, and training sessions to explain the benefits and requirements of the new regulations
 • Establish a feedback mechanism to gather input from residents, businesses, and other stakeholders on the effectiveness of the regulations  |
 
-4
-Climate Neutrality
-Action Plan
 
 |  Performance Monitoring and Evaluation | **Objective:** Track the impact of new regulations on water usage and make necessary adjustments
 
@@ -3130,8 +2551,6 @@ Action Plan
 |  Objective | Improve water and energy efficiency in the water supply system by upgrading to high-efficiency pumps and motors  |
 | --- | --- |
 |  Programme Components |   |
-Climate Neutrality
-Action Plan
 
 |  Needs Assessment and Feasibility Study | **Objective:** Assess current pump and motor systems to identify inefficiencies and feasibility of upgrades
 
@@ -3159,9 +2578,6 @@ Action Plan
 • Analyse data to identify opportunities for further efficiency improvements and operational optimisations
 • Implement preventive maintenance schedules and predictive maintenance techniques to minimise downtime and extend equipment lifespan  |
 
-6
-Climate Neutrality
-Action Plan
 
 |  Training and Capacity Building | Objective: Provide training for operational staff on the use, maintenance, and troubleshooting of high-efficiency pumps and motors
 Activities:
@@ -3183,8 +2599,6 @@ B) Installation of Renewable Energy Systems - Solar PV
 |  Objective | Integrate solar photovoltaic (PV) systems to generate clean energy for sustainable operations  |
 | --- | --- |
 |  Programme Components  |   |
-Climate Neutrality
-Action Plan
 
 |  Feasibility Assessment | **Objective:** Evaluate the suitability and potential benefits of solar PV installation
 
@@ -3212,9 +2626,6 @@ Action Plan
 • Install meters and monitoring systems for real-time energy production and consumption tracking
 • Ensure compliance with grid connection standards and safety regulations  |
 
-8
-Climate Neutrality
-Action Plan
 
 |  Commissioning and Testing | **Objective:** Validate the functionality and performance of the solar PV system
 **Activities:**
@@ -3238,9 +2649,6 @@ Action Plan
 • Share success stories and case studies through newsletters, social media, and community events
 • Collaborate with local organisations and schools to educate the community on renewable energy  |
 
-9
-Climate Neutrality
-Action Plan
 
 Timeline
 Year 1: Conduct feasibility assessment, system design, and procurement
@@ -3264,9 +2672,6 @@ Activities:
 • Modernise water treatment facilities to meet current regulatory standards and increase treatment capacity
 • Implement advanced technologies for leak detection, pressure management, and remote monitoring  |
 
-0
-Climate Neutrality
-Action Plan
 
 |  Integration of Smart Water Management Systems | **Objective:** Implement smart technologies for enhanced water management and operational efficiency
 
@@ -3290,9 +2695,6 @@ Action Plan
 • Establish partnerships with local communities, schools, and businesses to promote sustainable water practices
 • Solicit feedback from residents and stakeholders to ensure transparency and accountability in water management initiatives  |
 
-1
-Climate Neutrality
-Action Plan
 
 |  Capacity Building and Training | **Objective:** Build institutional capacity and train personnel for effective water system management
 
@@ -3323,9 +2725,6 @@ Action Plan
 • Evaluate potential sites for implementing nature-based solutions based on ecological suitability and community needs
 • Engage with local stakeholders, including residents and businesses, to gather input and support for the program  |
 
-2
-Climate Neutrality
-Action Plan
 
 |  Design and Implementation of Nature-Based Solutions | **Objective:** Design and implement green infrastructure projects to manage runoff water effectively
 
@@ -3348,9 +2747,6 @@ Action Plan
 • Collect data on flood mitigation, reduction in pollutant loads, and improvement in local ecosystem health
 • Conduct regular assessments and evaluations to measure the success of implemented projects and identify areas for improvement  |
 
-3
-Climate Neutrality
-Action Plan
 
 |  Policy Integration and Institutional Support | **Objective:** Integrate nature-based solutions into local policies and secure institutional support for sustainable water management
 
@@ -3375,9 +2771,6 @@ E) Demarcation of Rainwater Sewage System from Canalisation (Sanitary) Sewage Sy
 | --- | --- |
 |  Programme Components |   |
 
-4
-Climate Neutrality
-Action Plan
 
 |  Hydrological Assessment and Mapping | **Objective:** Assess the existing sewer infrastructure and map out separate systems for rainwater and sanitary sewage
 
@@ -3405,9 +2798,6 @@ Action Plan
 • Comply with environmental regulations and standards related to water quality, stormwater management, and pollution control
 • Conduct environmental impact assessments and address any potential ecological concerns or community impacts  |
 
-5
-Climate Neutrality
-Action Plan
 
 |  Monitoring and Maintenance | **Objective:** Establish monitoring protocols and maintenance procedures for the separated sewage systems
 
@@ -3435,8 +2825,6 @@ A) Subsidies and Incentives for Electric Vehicle (EV) Purchases
 |  Objective | Promote the adoption of electric vehicles (EVs) to reduce greenhouse gas emissions, improve air quality, and support sustainable urban mobility  |
 | --- | --- |
 |  Programme Components  |   |
-Climate Neutrality
-Action Plan
 
 |  Infrastructure Development | **Objective:** Build and upgrade the necessary infrastructure to support EV adoption
 
@@ -3467,9 +2855,6 @@ Action Plan
 • Evaluate the impact of EV adoption on greenhouse gas emissions, air quality, and overall urban mobility
 • Adjust and refine subsidy programs and incentives based on feedback and data collected  |
 
-7
-Climate Neutrality
-Action Plan
 
 Timeline
 Year 1: Begin infrastructure planning and start public awareness campaigns
@@ -3491,9 +2876,6 @@ Activities:
 • Ensure the inclusion of accessible routes and facilities for people with disabilities
 • Plan for future expansion and scalability of the transportation network  |
 
-8
-Climate Neutrality
-Action Plan
 
 |  Infrastructure Development | **Objective:** Build and upgrade infrastructure to support the integrated transportation plan
 
@@ -3515,11 +2897,7 @@ Action Plan
 • Develop educational campaigns to inform the public about the benefits and usage of the integrated transportation system
 • Engage with schools, businesses, and community groups to promote public transportation use  |
 
-9
-Climate Neutrality
-Action Plan
 
-0
 
 |  Funding and Financing | **Objective:** Secure funding for the development and maintenance of the integrated transportation system
 
@@ -3543,8 +2921,6 @@ C) Establishment of Policies to Promote Active Transport (Cycling and Walking)
 |  Objective | Encourage active transport modes such as cycling and walking to reduce traffic congestion, lower greenhouse gas emissions, improve public health, and enhance urban liveability  |
 | --- | --- |
 |  Programme Components |   |
-Climate Neutrality
-Action Plan
 
 |  Infrastructure Development | **Objective:** Build and upgrade infrastructure to support cycling and walking
 **Activities:**
@@ -3568,9 +2944,6 @@ Action Plan
 • Implement reward programs for frequent cyclists and pedestrians, such as discounts at local businesses
 • Provide free or subsidised bike repair services to encourage regular bike maintenance and usage  |
 
-1
-Climate Neutrality
-Action Plan
 
 |  Integration with Public Transportation | **Objective:** Integrate active transport modes with public transportation systems
 
@@ -3594,8 +2967,6 @@ Action Plan
 |  Objective | Implement green procurement policies to ensure that city fleets are environmentally friendly, reducing greenhouse gas emissions and promoting sustainability in urban transportation  |
 | --- | --- |
 |  Programme Components |   |
-Climate Neutrality
-Action Plan
 
 |  Policy Development and Implementation | **Objective:** Create and enforce green procurement policies for city fleets
 **Activities:**
@@ -3618,9 +2989,6 @@ Action Plan
 • Develop workshops and courses on vehicle maintenance, safety, and energy-efficient driving practices
 • Provide resources and guidelines on best practices for managing a green fleet  |
 
-3
-Climate Neutrality
-Action Plan
 
 |  Monitoring and Evaluation | **Objective:** Track the performance and environmental impact of green city fleets
 
@@ -3645,9 +3013,6 @@ E) Strategy for City Owned Public Transport Company Transformation
 | --- | --- |
 |  Programme Components  |   |
 
-4
-Climate Neutrality
-Action Plan
 
 |  Governance and Organisational Restructuring | **Objective:** Modernise the governance structure and operational model of the public transport company
 
@@ -3675,9 +3040,6 @@ Action Plan
 • Explore alternative revenue sources, such as advertising, partnerships, and government grants
 • Implement dynamic pricing models and fare optimisation strategies to maximise revenue without compromising accessibility  |
 
-5
-Climate Neutrality
-Action Plan
 
 |  Technology and Innovation | **Objective:** Leverage technology and innovation to enhance operational efficiency and customer experience
 
@@ -3705,9 +3067,6 @@ Action Plan
 • Conduct regular reviews and audits to ensure compliance with standards and identify areas for improvement
 • Use feedback from customers and stakeholders to inform ongoing adjustments and enhancements to the strategy  |
 
-6
-Climate Neutrality
-Action Plan
 
 Timeline
 Year 1: Develop and finalise the transformation strategy, initiate governance restructuring, and begin stakeholder engagement
@@ -3732,9 +3091,6 @@ Activities:
 • Develop enforcement mechanisms, including the use of cameras and sensors to monitor compliance
 • Implement legal and administrative processes to manage fines and penalties for non-compliance  |
 
-7
-Climate Neutrality
-Action Plan
 
 |  Infrastructure Development | **Objective:** Build and upgrade infrastructure to support the expanded LEZs
 **Activities:**
@@ -3758,9 +3114,6 @@ Action Plan
 • Evaluate the impact on public health, traffic congestion, and local economy through regular assessments
 • Use feedback and data to make necessary adjustments and improvements to the LEZ policies and infrastructure  |
 
-8
-Climate Neutrality
-Action Plan
 
 Timeline
 Year 1: Conduct feasibility study, develop policy framework, and start public engagement
@@ -3784,9 +3137,6 @@ Public Awareness Campaign
 Launch a comprehensive public information campaign to inform residents and businesses about the LEZ expansion
 Provide resources and support for transitioning to low-emission transportation options
 
-9
-Climate Neutrality
-Action Plan
 
 Implementation and Enforcement
 Begin enforcing the new LEZ regulations, monitoring compliance, and issuing fines for violations
@@ -3808,9 +3158,6 @@ Develop a unified platform for collecting, storing, and analysing data from vari
 Integrate real-time data feeds from sensors, cameras, and GPS devices to monitor traffic flow, vehicle locations, and passenger demand
 Ensure data security and privacy protocols are in place to protect sensitive information  |
 
-0
-Climate Neutrality
-Action Plan
 
 |  Intelligent Transportation Systems (ITS) | **Objective:** Deploy ITS technologies to optimise traffic management and improve transport efficiency
 
@@ -3837,9 +3184,6 @@ Action Plan
 • Upgrade bus and rail fleets with smart technologies for real-time tracking, automated fare collection, and passenger information systems
 • Integrate multimodal transportation options, including bike-sharing programs and last-mile connectivity solutions  |
 
-1
-Climate Neutrality
-Action Plan
 
 |   | • Implement mobile ticketing apps and digital payment platforms to streamline the passenger experience  |
 | --- | --- |
@@ -3867,9 +3211,6 @@ Action Plan
 • Establish key performance indicators (KPIs) to track system efficiency, safety, sustainability, and user satisfaction
 • Conduct regular audits and reviews to assess compliance with regulatory requirements and achievement of goals  |
 
-2
-Climate Neutrality
-Action Plan
 
 |   | • Use data analytics and feedback mechanisms to continuously improve and optimise smart transportation services  |
 | --- | --- |
@@ -3892,8 +3233,6 @@ Activities:
 • Construct dedicated lanes for buses, trams, or other forms of public transit to prioritise transit vehicles and reduce congestion
 • Designate green corridors with enhanced pedestrian amenities, bike lanes, and landscaping to promote sustainable transportation options
 • Implement traffic management systems, signal prioritisation, and smart technologies to optimise transit flow and reduce travel times  |
-Climate Neutrality
-Action Plan
 
 |  Policy and Regulatory Support | **Objective:** Establish supportive policies and regulations to facilitate the implementation of green corridors and dedicated transit lanes
 
@@ -3921,9 +3260,6 @@ Action Plan
 • Promote active transportation options such as walking and cycling through dedicated lanes and safe pedestrian crossings
 • Monitor and evaluate the impact of green corridors on carbon emissions, air pollution, and public health outcomes  |
 
-4
-Climate Neutrality
-Action Plan
 
 Monitoring and Evaluation
 Objective: Track the performance and effectiveness of green corridors and dedicated transit lanes
@@ -3957,9 +3293,6 @@ Activities:
 Conduct an inventory of existing city vehicles, including their age, type, and emissions profiles
 Evaluate infrastructure readiness for electric vehicle charging stations and maintenance facilities
 
-5
-Climate Neutrality
-Action Plan
 
 |   | • Develop a procurement strategy that includes timelines, budget allocations, and supplier partnerships for acquiring electric and hybrid vehicles  |
 | --- | --- |
@@ -3979,9 +3312,6 @@ Action Plan
 • Provide ongoing education and certification opportunities to ensure staff proficiency and competence in managing electric and hybrid fleets
 • Foster a culture of sustainability and environmental stewardship among city employees through awareness campaigns and recognition programs  |
 
-6
-Climate Neutrality
-Action Plan
 
 |  Public Outreach and Communication | Objective: Engage residents, businesses, and community stakeholders to build support and awareness for the electric and hybrid vehicle mandate
 Activities:
@@ -4002,9 +3332,6 @@ Public Outreach: Engage the community, build support, and promote the benefits o
 
 K) Development and Enforcement of Sustainable Urban Mobility Plans (SUMPs)
 
-7
-Climate Neutrality
-Action Plan
 
 |  Objective | Implement sustainable urban mobility plans (SUMPs) to improve transportation efficiency, reduce environmental impact, enhance accessibility, and promote sustainable development in urban areas  |
 | --- | --- |
@@ -4028,9 +3355,6 @@ Action Plan
 • Design multimodal hubs and transfer points to facilitate smooth transitions between different transport modes
 • Implement policies and infrastructure improvements to prioritise pedestrian safety and accessibility  |
 
-8
-Climate Neutrality
-Action Plan
 
 |  Promotion of Sustainable Transport Options | **Objective:** Promote the use of sustainable transport modes, such as public transit, cycling, and walking
 
@@ -4052,9 +3376,6 @@ Action Plan
 • Establish regulations for emissions standards, vehicle access restrictions, and parking management to reduce environmental impact – also described in other measures
 • Monitor progress towards SUMP objectives through performance indicators, data analytics, and regular evaluations  |
 
-9
-Climate Neutrality
-Action Plan
 
 |  Financial Planning and Resource Allocation | Objective: Secure funding and allocate resources to support the implementation of SUMPs
 Activities:
@@ -4076,8 +3397,6 @@ L) Introduction of Dynamic Road Pricing Based on Real Time Congestion Data
 |  Objective | Implement dynamic road pricing to manage congestion, reduce traffic emissions, optimise road capacity, and encourage sustainable transportation choices, in line with other suggested policies and infrastructure developments  |
 | --- | --- |
 |  Programme Components  |   |
-Climate Neutrality
-Action Plan
 
 |  Feasibility Study and Data Analysis | **Objective:** Conduct a feasibility study to assess the implementation of dynamic road pricing based on real-time congestion data
 
@@ -4105,9 +3424,6 @@ Action Plan
 • Address concerns related to equity, affordability, and potential impacts on different socioeconomic groups
 • Collaborate with local businesses, community organisations, and transportation agencies to gather feedback and input  |
 
-1
-Climate Neutrality
-Action Plan
 
 |  Monitoring and Evaluation | **Objective:** Monitor the performance and evaluate the impact of dynamic road pricing on congestion reduction and transportation efficiency
 
@@ -4133,9 +3449,6 @@ Technology Deployment: Install tolling infrastructure and backend systems for da
 Public Engagement: Educate stakeholders, gather feedback, and address concerns through consultation
 Monitoring and Evaluation: Monitor traffic conditions, evaluate effectiveness, and adjust pricing strategies as necessary  |
 
-2
-Climate Neutrality
-Action Plan
 Financial Planning: Plan for revenue management and allocation to support sustainable transportation initiatives
 
 M) Creation of Urban Logistics Zones for Efficient, Low-Emission Goods Delivery
@@ -4153,8 +3466,6 @@ Activities:
 • Construct loading/unloading bays, consolidation centres, and distribution facilities optimised for efficient goods handling and reduced traffic congestion
 • Install charging stations for electric delivery vehicles (EVs), as well as facilities for managing low-emission vehicle fleets
 • Implement smart technologies for real-time tracking, scheduling, and optimisation of logistics operations  |
-Climate Neutrality
-Action Plan
 
 |  Regulatory and Policy Framework | **Objective:** Establish regulations and policies to govern operations within urban logistics zones and promote sustainable practices
 
@@ -4176,9 +3487,6 @@ Action Plan
 • Conduct regular audits and assessments of logistics operations, vehicle emissions, and compliance with sustainability standards
 • Use data analytics and feedback mechanisms to continuously optimise logistics processes and infrastructure within the zones  |
 
-4
-Climate Neutrality
-Action Plan
 
 |  Public Engagement and Awareness | **Objective:** Engage residents, businesses, and stakeholders to build support and awareness for urban logistics zones
 
@@ -4203,19 +3511,13 @@ N) Promotion of Transit-Oriented Development (TOD)
 | --- | --- |
 |  Programme Components |   |
 
-5
-Climate Neutrality
 
-Action Plan
 
-#
 
 |  Planning and Zoning Policies | Objective: Develop and implement land-use policies that encourage compact, mixed-use development around transit stations, especially on the level of detailed urbanistic plans of development Activities: • Conduct land-use assessments and transit accessibility analyses to identify suitable sites for TOD • Update zoning regulations to allow for higher densities, diverse housing options, and commercial amenities within walking distance of transit nodes • Integrate TOD principles into comprehensive urban development plans and neighbourhood designs  |
 | --- | --- |
 |  Infrastructure Investment | Objective: Invest in transportation infrastructure to enhance connectivity and accessibility within TOD areas – it is assessed through other measures Activities: • Upgrade and expand public transit networks with new routes, increased frequency, and improved reliability to serve TOD zones effectively • Develop pedestrian and cycling infrastructure, including sidewalks, bike lanes, and shared paths, to promote active transportation options – combined with other measures • Implement streetscape improvements, public spaces, and green infrastructure to create attractive, pedestrian-friendly environments  |
 |  Mixed-Use Development | Objective: Encourage a mix of residential, commercial, retail, and recreational facilities within TOD zones to support diverse community needs Activities: • Facilitate partnerships between developers, investors, and local authorities to incentivise mixed-use projects near transit stations • Provide density bonuses or tax incentives for developers who incorporate affordable housing, green building standards, and sustainable design practices • Foster a vibrant street-level environment with shops, restaurants, and cultural amenities that enhance the quality of life for residents and visitors  |
-Climate Neutrality
-Action Plan
 
 |  Affordable Housing and Equity | **Objective:** Ensure equitable access to affordable housing and amenities in TOD areas, minimising displacement and supporting inclusive development
 
@@ -4237,14 +3539,9 @@ Action Plan
 • Establish transit-oriented development districts (TODDs) with streamlined permitting processes and regulatory flexibility for developers
 • Leverage public-private partnerships and innovative financing mechanisms to fund TOD infrastructure improvements and community amenities  |
 
-7
-#
 
-Climate Neutrality
 
-Action Plan
 
-#
 
 |  Monitoring and Evaluation | Objective: Monitor progress and evaluate the outcomes of TOD initiatives to ensure alignment with sustainability and liveability goalsActivities:Establish performance metrics, such as transit ridership, mode share, and greenhouse gas emissions reductions, to measure the impact of TODConduct periodic assessments and reviews to track development patterns, affordability metrics, and community satisfaction with TOD outcomesUse data-driven insights to refine TOD strategies, adapt policies, and optimise future investments in transit-oriented development  |
 | --- | --- |
@@ -4258,8 +3555,6 @@ Action Plan
 | --- | --- |
 |  Programme Components  |   |
 |  Feasibility Assessment and Planning | Objective: Conduct a feasibility study to assess the transition to electric buses and develop a strategic electrification plan – already in progress via the EIB technical assistanceActivities:Analyse the current bus fleet composition, routes, and operational needs to determine suitable electrification optionsEvaluate the technical feasibility, economic viability, and environmental benefits of electric buses compared to conventional diesel, gasoline and LPG busesDevelop a roadmap with milestones and timelines for phased implementation of electrification across the bus fleet  |
-Climate Neutrality
-Action Plan
 
 |  Procurement and Fleet Expansion | **Objective:** Procure electric buses and expand the fleet with zero-emission vehicles
 
@@ -4282,9 +3577,6 @@ Action Plan
 • Equip depots with necessary tools, diagnostic equipment, and spare parts for servicing electric buses
 • Establish partnerships with educational institutions and industry experts to facilitate ongoing skills development and knowledge sharing in EV technology  |
 
-9
-Climate Neutrality
-Action Plan
 
 |  Public Awareness and Stakeholder Engagement | **Objective:** Engage stakeholders, including residents, businesses, and transit users, to build support for electrification of the bus fleet
 
@@ -4308,10 +3600,6 @@ Action Plan
 **Year 2:** Procure electric buses, deploy charging infrastructure, and commence driver training programs
 **Year 3-4:** Expand electric bus fleet, monitor performance metrics, and evaluate impact on air quality and operational efficiency  |
 
-0
-Climate Neutrality
-Action Plan
-1
 
 # B) Deployment of Energy-Efficient Trams
 
@@ -4335,8 +3623,6 @@ Action Plan
 • Retrofit tram depots and stations with modern infrastructure, including overhead charging systems or on-board battery charging facilities
 • Install renewable energy sources, such as solar panels, to power tram charging stations and reduce carbon footprint – up to the level of feasibility – use of virtual power plants
 • Implement smart grid technologies to optimise energy use and manage tram fleet charging schedules efficiently  |
-Climate Neutrality
-Action Plan
 
 |  Training and Capacity Building | **Objective:** Train personnel and build institutional capacity to operate and maintain energy-efficient trams
 
@@ -4358,9 +3644,6 @@ Action Plan
 • Conduct regular inspections and data analysis to track tram fleet performance, reliability of charging infrastructure, and adherence to sustainability targets
 • Use feedback from tram operators, maintenance teams, and passengers to identify opportunities for improvement and optimise energy-efficient tram operations  |
 
-2
-Climate Neutrality
-Action Plan
 
 |  Policy Support and Funding | Objective: Advocate for policies and secure funding to support the deployment of energy-efficient trams
 Activities:
@@ -4382,8 +3665,6 @@ Activities:
 • Evaluate the energy consumption and peak demand of bus and tram depots to determine the optimal size and capacity of solar panel systems
 • Conduct site assessments to identify suitable locations for solar panel installation based on roof space availability, orientation, and shading factors
 • Analyse the economic viability, return on investment (ROI), and environmental benefits of solar energy compared to conventional energy sources  |
-Climate Neutrality
-Action Plan
 
 |  Design and Engineering | **Objective:** Design solar panel systems tailored to the specific energy needs and structural characteristics of bus and tram depots
 
@@ -4404,9 +3685,6 @@ Install inverters, energy storage solutions (if applicable), and grid connection
 Implement demand response strategies and peak shaving techniques to reduce electricity costs and enhance energy efficiency
 Configure monitoring and control systems for real-time performance tracking, fault detection, and remote maintenance of solar panel arrays  |
 
-4
-Climate Neutrality
-Action Plan
 
 |  Training and Capacity Building | **Objective:** Train depot staff on solar panel operation, maintenance practices, and safety protocols
 
@@ -4428,9 +3706,6 @@ Action Plan
 • Conduct regular inspections, data analysis, and performance audits to ensure optimal functioning and reliability of solar energy systems
 • Use feedback from depot managers, energy analysts, and environmental consultants to identify opportunities for system optimisation, efficiency improvements, and future expansion  |
 
-5
-Climate Neutrality
-Action Plan
 
 |  Policy Support and Funding | Objective: Advocate for policies and secure funding to support the installation of solar panels on bus and tram depots
 Activities:
@@ -4453,9 +3728,6 @@ Activities:
 • Assess integration requirements with existing transit infrastructure, fleet management systems, and communication networks
 • Develop a phased implementation strategy with milestones, timelines, and budget estimates for deploying real-time passenger information systems across the transit network  |
 
-6
-Climate Neutrality
-Action Plan
 
 |  System Procurement and Deployment | **Objective:** Procure necessary equipment and deploy real-time passenger information systems across transit vehicles and stations
 
@@ -4476,9 +3748,6 @@ Develop mobile applications, websites, and digital displays that provide intuiti
 Incorporate features such as multilingual support, audio announcements, and text-to-speech functionalities to enhance accessibility for diverse user groups
 Conduct usability testing and gather feedback from passengers to optimise interface design and functionality based on user preferences and needs  |
 
-7
-Climate Neutrality
-Action Plan
 
 |  Training and Capacity Building | **Objective:** Tram and bus, cable car transit operators, maintenance staff, and customer service personnel on the use and management of real-time passenger information systems
 
@@ -4500,9 +3769,6 @@ Action Plan
 • Conduct regular audits, surveys, and usability tests to gather quantitative and qualitative data on passenger experiences and preferences
 • Use feedback and data analytics to make improvements, optimise system functionality, and address operational challenges in real-time information delivery  |
 
-8
-Climate Neutrality
-Action Plan
 
 |  Policy Support and Funding | **Objective:** Advocate for policies and secure funding to support the implementation and sustainability of real-time passenger information systems
 
@@ -4521,9 +3787,6 @@ E) Introduction of Contactless Payment Systems
 | --- | --- |
 |  Programme Components |   |
 
-9
-Climate Neutrality
-Action Plan
 
 |  Feasibility Assessment and Planning | **Objective:** Conduct a feasibility study to assess the introduction of contactless payment systems
 
@@ -4545,9 +3808,6 @@ Action Plan
 • Ensure interoperability with multiple payment methods, including bank cards, mobile wallets, and digital transit passes
 • Implement secure payment protocols and encryption standards to protect passenger data and prevent fraud during transactions  |
 
-0
-Climate Neutrality
-Action Plan
 
 |  User Education and Adoption | **Objective:** Educate passengers on how to use contactless payment systems and promote adoption across diverse user groups
 
@@ -4569,9 +3829,6 @@ Action Plan
 • Engage with financial institutions, payment providers, and technology partners to establish partnerships and secure funding for system deployment and infrastructure upgrades
 • Participate in industry forums, policy discussions, and public consultations to address concerns, gather feedback, and build consensus on digital payment innovations in public transportation  |
 
-1
-Climate Neutrality
-Action Plan
 
 # Timeline
 
@@ -4586,8 +3843,6 @@ Year 3-4: Expand system coverage, enhance user interfaces, monitor performance m
 |  Programme Components  |   |
 |  Feasibility Assessment and Planning | Objective: Conduct a feasibility study to assess the installation of energy storage systems at tram stations Activities: • Evaluate tram station energy consumption patterns, peak demand periods, and grid connection capacity to determine the optimal size and type of energy storage system • Analyse the potential benefits of energy storage, including load balancing, peak shaving, and integration of renewable energy sources • Develop a detailed implementation plan with technical specifications, cost estimates, and timelines for deploying energy storage systems at tram stations  |
 |  Technology Selection and Procurement | Objective: Select appropriate energy storage technology and procure necessary equipment for installation Activities: • Assess available energy storage technologies, such as lithium-ion batteries, flow batteries, or supercapacitors, based on performance, lifecycle costs, and compatibility with tram station infrastructure • Issue requests for proposals (RFPs) or bids to energy storage providers and technology vendors for system procurement • Collaborate with suppliers to finalise design specifications, installation requirements, and integration with existing tram station infrastructure  |
-Climate Neutrality
-Action Plan
 
 |  Installation and Integration | **Objective:** Install energy storage systems and integrate them with tram station operations and electrical systems
 
@@ -4609,9 +3864,6 @@ Action Plan
 • Conduct routine inspections, preventive maintenance, and battery testing to extend operational lifespan and ensure system reliability
 • Implement contingency plans and emergency protocols for rapid response to system failures, grid disruptions, or unforeseen operational challenges  |
 
-3
-Climate Neutrality
-Action Plan
 
 |  Public Awareness and Stakeholder Engagement | **Objective:** Engage stakeholders, including tram passengers, local communities, and regulatory bodies, to promote awareness and acceptance of energy storage systems
 
@@ -4636,9 +3888,6 @@ G) Implementation of Smart Traffic Signal Priority for Buses and Trams
 | --- | --- |
 |  Programme Components |   |
 
-4
-Climate Neutrality
-Action Plan
 
 |  Feasibility Assessment and Planning | **Objective:** Conduct a feasibility study to assess the implementation of smart traffic signal priority systems
 
@@ -4660,9 +3909,6 @@ Action Plan
 • Deploy signal priority equipment, such as detectors, transmitters, and communication devices, at selected intersections and transit priority corridors
 • Integrate smart traffic signal systems with traffic management centres, transit dispatch systems, and onboard vehicle equipment to enable real-time data exchange and coordination  |
 
-5
-Climate Neutrality
-Action Plan
 
 |  Testing and Optimisation | **Objective:** Conduct testing, optimisation, and performance evaluation of smart traffic signal priority systems
 
@@ -4684,9 +3930,6 @@ Action Plan
 • Collaborate with transportation advocacy groups, business associations, and civic organisations to advocate for smart mobility solutions and sustainable transportation practices
 • Solicit feedback from transit users, residents, and businesses to address concerns, gather input on priority corridors, and prioritise future signal optimisation efforts  |
 
-6
-Climate Neutrality
-Action Plan
 
 Policy Support and Funding
 Objective: Advocate for policies and secure funding to support the implementation and expansion of smart traffic signal priority systems
@@ -4714,9 +3957,6 @@ Evaluate existing bus routes, fleet operations, and energy consumption patterns 
 Analyse technological options, such as overhead charging (pantograph), plug-in charging stations, and depot-based charging solutions
 Develop a comprehensive implementation plan with cost estimates, timelines, and performance metrics for deploying electric charging infrastructure across bus routes and depots
 
-7
-Climate Neutrality
-Action Plan
 
 |  Technology Selection and Procurement | **Objective:** Select appropriate charging technology and procure necessary equipment for electric buses
 
@@ -4739,9 +3979,6 @@ Action Plan
 • Monitor energy consumption, charging times, and battery health metrics to optimise charging protocols and maximise operational uptime for electric buses
 • Implement predictive maintenance strategies, remote monitoring capabilities, and real-time data analytics to proactively manage charging infrastructure and minimise downtime  |
 
-8
-Climate Neutrality
-Action Plan
 
 |  Training and Capacity Building | **Objective:** Train bus operators, maintenance staff, and depot personnel on the use and management of electric charging infrastructure
 
@@ -4763,9 +4000,6 @@ Action Plan
 • Collaborate with government agencies, ministries, transit authorities, and energy regulators to align policy frameworks, permitting processes, and funding priorities with electric bus deployment goals
 • Participate in policy dialogues, stakeholder consultations, and legislative advocacy efforts to influence transportation policies and accelerate the adoption of zero-emission vehicles in public transit  |
 
-9
-Climate Neutrality
-Action Plan
 
 # I) Modernisation of Energy Network Supplying Trams
 
@@ -4786,9 +4020,6 @@ Action Plan
 • Implement voltage optimisation technologies and power quality improvements to reduce energy losses and improve system efficiency
 • Integrate renewable energy sources, such as solar or wind power, into the tram energy network to reduce carbon footprint and enhance sustainability  |
 
-0
-Climate Neutrality
-Action Plan
 
 |  Deployment of Smart Grid Technologies | **Objective:** Implement smart grid technologies for efficient energy management and operational optimisation
 
@@ -4810,9 +4041,6 @@ Action Plan
 • Implement remote monitoring and diagnostic capabilities to enhance fleet management, scheduling efficiency, and predictive maintenance of tram vehicles
 • Integrate energy management systems with tram dispatching software and passenger information systems to optimise tram routes, energy consumption, and service reliability  |
 
-1
-Climate Neutrality
-Action Plan
 
 |  Performance Monitoring and Evaluation | **Objective:** Monitor performance metrics and evaluate the impact of energy network modernisation on tram operations
 
@@ -4834,8 +4062,6 @@ Action Plan
 J) Increase the climate hazards resilience of the network – mitigation meets adaptation!
 
 All parts of the traffic infrastructure need to be climate proofed to make them resilient to climate change effects.
-Climate Neutrality
-Action Plan
 
 To increase the climate hazards resilience of a network, whether it's transportation, energy, or another critical infrastructure, several key strategies and components can be implemented:
 
@@ -4851,8 +4077,6 @@ To increase the climate hazards resilience of a network, whether it's transporta
 | • Integrate weather forecasting technologies and climate monitoring systems into network operations and decision-making processes  |
 |  Natural Infrastructure and Green Solutions | • Incorporate natural infrastructure and green solutions into network resilience strategies, such as green roofs, urban green spaces, and permeable pavements to mitigate flood risks and heat island effects to the traffic related infrastructure
 • Restore and protect natural buffers like wetlands and forests that can provide natural resilience against climate impacts  |
-Climate Neutrality
-Action Plan
 
 |  Community Engagement and Awareness | • Engage with local communities and stakeholders to raise awareness about climate hazards and resilience measures
 | • Foster community involvement in resilience planning, emergency preparedness, and response efforts  |
@@ -4873,8 +4097,6 @@ Further expansion of an electrified public transport fleet involves several key 
 |  Needs Assessment and Planning | • Conduct a comprehensive assessment of current public transport demand, routes, and fleet conditions to determine the scope and scale of electrification needed – will be assessed in the spatial planning documents as well as in the study of modernisation of public transport of the City of Zagreb, currently supported by the EIB
 | • Develop a strategic plan outlining goals, targets, and timelines for expanding the electrified fleet  |
 | --- | --- |
-Climate Neutrality
-Action Plan
 
 |  Technology Selection and Procurement | - Evaluate available EV technologies as well as hydrogen ones, including buses and trams, based on performance, range, charging infrastructure compatibility, and operational requirements
 | Procure electric and/or hydrogen vehicles through competitive bidding processes or partnerships with manufacturers, ensuring compliance with local regulations and emission standards  |
@@ -4890,9 +4112,6 @@ Action Plan
 |  Public Awareness and Stakeholder Engagement | - Engage with stakeholders, including transit riders, local communities, and environmental groups, to build support for alternative fuels powered public transport
 Educate the public about the benefits of electric and hydrogen vehicles, such as reduced emissions, improved air quality, and noise reduction  |
 
-5
-Climate Neutrality
-Action Plan
 
 |  Scaling Up and Expansion | - Plan for future expansion of the electrified and hydrogen fleet based on demand growth projections and technological advancements
 | Continuously assess and update fleet decarbonisation strategies to incorporate new innovations and best practices in sustainable transportation  |
@@ -4913,9 +4132,6 @@ Analyse existing ticketing systems across different modes of public transport (b
 Identify user needs, such as ticket types, fare structures, and payment preferences
 Develop a roadmap and implementation strategy outlining goals, timelines, and budget considerations  |
 
-6
-Climate Neutrality
-Action Plan
 
 |  Technology Selection and Procurement | **Objective:** Select appropriate technology solutions for the integrated ticketing system
 
@@ -4943,9 +4159,6 @@ Action Plan
 • Comply with data protection regulations (e.g., GDPR) and industry standards for payment card security (PCI DSS)
 • Conduct regular security audits and vulnerability assessments to identify and mitigate potential risks  |
 
-7
-Climate Neutrality
-Action Plan
 
 |  User Training and Support | **Objective:** Provide comprehensive training and support for passengers and transport staff
 
@@ -4973,9 +4186,6 @@ Action Plan
 
 M) Adoption of autonomous electric public transport vehicles
 
-8
-Climate Neutrality
-Action Plan
 
 |  Objective | Introduce autonomous electric vehicles (AEVs) into the public transport system to enhance efficiency, reduce emissions, and promote sustainable urban mobility  |
 | --- | --- |
@@ -4999,9 +4209,6 @@ Action Plan
 • Upgrade communication networks and sensors to support autonomous navigation and vehicle-to-infrastructure (V2I) communication
 • Retrofit existing public transport facilities to accommodate AEV maintenance and charging needs  |
 
-9
-Climate Neutrality
-Action Plan
 
 |  Regulatory and Safety Compliance | **Objective:** Ensure compliance with regulatory frameworks and safety standards for AEV deployment
 
@@ -5023,9 +4230,6 @@ Action Plan
 • Conduct regular audits and assessments to track AEV performance against benchmarks and KPIs
 • Collect feedback from passengers and stakeholders to identify areas for improvement and optimise AEV operations  |
 
-0
-Climate Neutrality
-Action Plan
 
 |  Public Awareness and Stakeholder Engagement | **Objective:** Raise awareness and engage stakeholders in the benefits of AEV adoption in public transport
 
@@ -5043,8 +4247,6 @@ Action Plan
 
 The performance will be tracked through a robust set of indicators for Monitoring, Evaluation, and Learning (MEL) in our Climate City Contract. That is essential for several reasons. Firstly, these indicators provide a systematic way to track progress towards climate goals, ensuring that the city remains on course to meet its commitments to greenhouse gas reduction, energy efficiency, and renewable energy adoption, as well as to increase resilience. Secondly, they enable the identification of gaps and areas for improvement, allowing for timely interventions and adjustments to strategies and policies, as the CCC is a "living" type of document. Thirdly, by monitoring adaptation efforts, the indicators help the city enhance its resilience to climate impacts, protecting both infrastructure and vulnerable communities. Moreover, governance and community engagement indicators ensure that climate action is inclusive, transparent, and backed by strong institutional support and public participation. Lastly, the continuous monitoring and reporting facilitated by these indicators
 
-1
-Climate Neutrality Action Plan
 
 foster a culture of accountability and learning, helping the city to document successes, share best practices, and scale up effective solutions. In essence, these indicators are vital for turning climate commitments into tangible actions and measurable outcomes, driving sustained progress towards a sustainable and climate-resilient future.
 
@@ -5054,14 +4256,9 @@ The actions and measures outlined in the CCC are aggregated into short-term and 
 
 In future iterations, the city will continue to enhance these elements by associating each impact pathway with detailed, measurable indicators to track both early and late outcomes. The city will also define target values for each indicator, integrating the direct and indirect impacts more effectively into the monitoring and evaluation framework. The timelines for achieving these targets will be refined to allow for more precise tracking and accountability of the city's progress towards its climate goals.
 
-2
-图
 
-Climate Neutrality
 
-Action Plan
 
-#
 
 Indicators for Monitoring, Evaluation, and Learning (MEL), the data behind the ICAI
 
@@ -5089,9 +4286,6 @@ Indicators for Monitoring, Evaluation, and Learning (MEL), the data behind the I
 |   |  Uptake of public transport | Active users  |
 |   |  Use of personal motorised vehicles | Vehicles/capita  |
 |   |  Number of public EV charging stations | EV stations  |
-Climate Neutrality
-Action Plan
-4
 
 # 2. Adaptation Indicators
 
@@ -5124,9 +4318,6 @@ Action Plan
 |  Reporting | Frequency of reporting | Qualitative  |
 |   |  Number of stakeholder engagement sessions | Number  |
 |   |  Number of stakeholders consulted | Number  |
-Climate Neutrality
-Action Plan
-C
 
 Implementing the Indicators:
 
@@ -5143,14 +4334,10 @@ Adjustments: The results of the monitoring and evaluation process will be used t
 These indicators provide a comprehensive framework for tracking progress, evaluating outcomes, and facilitating continuous learning and improvement in implementing a Climate City Contract.
 
 Integrated Climate Action Index - ICAI
-5
 IC AI
 
-Climate Neutrality
 
-Action Plan
 
-#
 
 The essence of our approach is the mainstreaming effect, so we will develop The Integrated Climate Action Index (ICAI) that should provide a comprehensive measure of how well climate change considerations are mainstreamed into city governance and practices. By assessing policy integration, budget allocation, institutional capacity, project implementation, public engagement, and monitoring and reporting, the ICAI should capture the multifaceted nature of mainstreaming climate action. This indicator will help us to identify strengths and areas for improvement, promoting a holistic approach to building climate resilience and reducing emissions.
 
@@ -5163,7 +4350,6 @@ The Integrated Climate Action Index (ICAI) measures the extent to which climate 
 The city of Zagreb is advancing a bold transformation toward climate neutrality, but the pathway to 2050 cannot be defined solely by infrastructure and emissions figures. It must also be supported by a governance architecture that embeds climate action across all city functions. This recognition lies at the heart of the Integrated Climate Action Index (ICAI), a framework developed to measure, monitor, and drive the mainstreaming of climate mitigation and adaptation into the city's operational core.
 
 Unlike conventional metrics focused solely on project outcomes or emissions inventories, the ICAI is designed to answer a more structural question: to what extent is climate action integrated into the everyday machinery of city planning, policy, finance, and public engagement? The ICAI captures this by tracking performance across six dimensions: policy integration, budget allocation, institutional capacity, project implementation, public
-Climate Neutrality Action Plan
 
 engagement, and monitoring and reporting. Together, they provide a comprehensive picture of how climate considerations are operationalised, not just adopted, within the governance system.
 
@@ -5179,14 +4365,10 @@ Zagreb has committed to ensuring that climate action is no longer treated as a s
 
 Financial governance and budget Alignment: EU Taxonomy in Practice
 
-7
 ICAI
 
-Climate Neutrality
 
-Action Plan
 
-O
 
 One of the ICAI's most strategic functions is to connect climate action with municipal finance. As public investments grow in size and ambition, especially under the EU Green Deal and Mission framework, Zagreb is using the ICAI to track the share of city budgets dedicated to climate-related priorities, and whether they are aligned with the principles of the EU Taxonomy for Sustainable Activities. It is going to be in focus from 2026 – 2028 to fully test it in cooperation with Ministry of finance.
 
@@ -5200,8 +4382,6 @@ Zagreb's commitment to mainstreaming climate governance is further strengthened 
 
 The ICAI reflects this by measuring not only the presence of climate teams within city departments, as well as the transition team, but also the frequency of interdepartmental coordination, the presence of climate focal points, and the number of staff receiving climate-related training. These are key institutional conditions for delivering integrated climate
 
-8
-Climate Neutrality Action Plan
 
 action, and the basis for participating meaningfully in national and EU platforms like NECPlatform.
 
@@ -5218,9 +4398,6 @@ From governance gaps to institutional strength: A mainstreaming diagnostic tool
 Ultimately, the Integrated Climate Action Index serves as both a diagnostic tool and a learning system. It enables Zagreb to assess where climate action is strong, where it is still siloed, and where deeper integration is required. Its indicators provide actionable feedback on how climate goals are embedded into the planning, budgeting, staffing, and public engagement practices of the municipality.
 
 More than a compliance mechanism, the ICAI supports a governance transformation, one that aligns climate ambition with institutional practice. Through its connection to EU Taxonomy finance rules, INPLAN's spatial integration guidelines, and NECPlatform's multi-
-Climate Neutrality
-Action Plan
-C
 
 level policy coherence, the ICAI ensures that Zagreb's climate governance is not only well-intentioned, but also operational, scalable, and verifiable.
 
@@ -5239,9 +4416,7 @@ By building this governance infrastructure for climate mainstreaming, Zagreb is 
 |   |  Level of public awareness and participation in climate initiatives that address both mitigation and adaptation  |
 |  Monitoring and Reporting | Frequency and comprehensiveness of integrated climate action reports  |
 |   |  Number of performance reviews that assess the effectiveness of combined mitigation and adaptation strategies  |
-Climate Neutrality Action Plan
 
-O
 
 These indicators provide a comprehensive framework for tracking progress, evaluating outcomes, and facilitating continuous learning and improvement in the implementation of a Climate City Contract.
 
@@ -5256,7 +4431,6 @@ Mainstreaming mitigation and adaptation activities into our governance processes
 We will create a supporting Climate Action Core group: a dedicated climate action task force within the municipal government structure that will have a role to support sectorial departments in their responsibility for climate initiatives and will ensure coherent and coordinated action across departments. These Core groups will oversee the development and implementation of climate policies, coordinate interdepartmental collaboration, and provide technical expertise and support to all departments. However, climate change mitigation and adaptation are the responsibility of all sectorial heads of departments, and the ultimate responsibility lies with the mayor.
 
 Climate Impact Assessments and climate proofing: Integrating climate impact assessments into the decision-making processes of city departments ensures that climate considerations are systematically evaluated and incorporated into policy development and project planning. By assessing the potential climate risks and opportunities associated with proposed actions, we will make sure that we can make informed decisions that enhance resilience and reduce vulnerability.
-Climate Neutrality Action Plan
 
 # Policy Integration
 
@@ -5271,7 +4445,6 @@ Climate Budgeting: Allocating dedicated funding streams for climate mitigation a
 # Innovation in finance
 
 Financing climate action in cities is a critical challenge that requires innovative approaches to acquire the necessary resources for mitigation and adaptation initiatives. Traditional
-Climate Neutrality Action Plan
 
 funding mechanisms will not be sufficient to meet the scale of investment needed to effectively address climate change. We will have to undertake innovative financing mechanisms that will enable us to finance climate action projects, accelerate implementation, and achieve our sustainability and resilience goals.
 
@@ -5286,7 +4459,6 @@ Funds of Investment and Development Banks: As we are in the process of developin
 Green Municipal Bonds: Issuing green municipal bonds will allow us to raise capital specifically earmarked for financing climate-related projects, such as renewable energy infrastructure, energy-efficient buildings, and public transportation systems, as well as adaptation projects. We believe that these bonds will attract socially responsible investors seeking opportunities to support sustainable development and climate mitigation efforts. We already have strong signals for that, as we are preparing for the first tranche.
 
 Climate Bonds: Climate bonds as fixed-income financial instruments will help us fund projects that contribute to climate mitigation or adaptation objectives. Certified by
-Climate Neutrality Action Plan
 
 independent standards such as the Climate Bonds Initiative, these bonds provide transparency and assurance to investors regarding the environmental integrity of the financed projects, thus mobilising capital for climate-resilient infrastructure. Creating a portfolio of certified projects is the first step. Therefore, we are working on a methodology to label our projects as climate-friendly and resilient.
 
@@ -5303,7 +4475,6 @@ Green Revolving Funds: We plan to set up a Green revolving fund that will enable
 Innovative Financing Platforms – bringing citizens on board
 
 Crowdfunding Platforms: We will offer certain projects through the Crowdfunding platforms that will enable us to raise capital from a large number of individual donors or investors to finance specific climate projects or initiatives, for example, for the photovoltaics projects on public buildings, which will also be covered through the mechanism we call the solar bonds.
-Climate Neutrality Action Plan
 
 By tapping into community support and social networks, it is our idea to mobilise financial resources and engage citizens in the co-financing and co-creation of climate solutions.
 
@@ -5336,7 +4507,6 @@ By maintaining this continuous dialogue and collaboration, the CCC fosters accou
 We have added a description of one of the processes, the revision of the General Urbanistic plan (so called Green General Urbanistic plan), one of the cornerstones of our approach in horizontal measures on the page 73, in the section on explanation. We could do this for each measure and each action of the CCC AP, but the approach is always the same.
 
 As an add on to the CCC development, City has parallelly been working on the development of the legally binding Plan for GHG emissions reduction, adaptation to climate change and ozone layer protection. This plan and the CCC are in the core the same, when it comes to measures, stakeholders and governance, with the main difference that CCC is much more ambitious in the level of decarbonization. The afore mentioned Plan has undergone
-Climate Neutrality Action Plan
 
 significant stakeholders consultation processes, including the public hearing and public consultations and was approved by the competent Ministry in charge for climate that also strengthens the position of the CCC.
 
@@ -5349,8 +4519,6 @@ Participatory Budgeting Sessions: Through our e-service platform, we conduct reg
 Expert and Stakeholder Conferences: Annual conferences, such as the 2024 energy transition and 2025 conference on green infrastructure, serve as key moments for reflection and co-creation. These conferences synthesize inputs from ongoing workshops and forums, ensuring that our action plans remain relevant and effective.
 Community Workshops and Forums: We hold workshops and forums across the city districts on a regular basis. These events are designed to capture a wide range of community inputs over time, ensuring that the voices of all community members, including underrepresented groups, are heard and considered in an ongoing manner.
 
-8
-Climate Neutrality Action Plan
 
 Surveys and Public Consultations: We deploy surveys and public consultations periodically to gauge shifting public opinion and gather new suggestions on specific elements of the climate action plan. The continuous feedback received through these channels allows us to adapt and refine our strategies to meet emerging challenges and opportunities.
 
@@ -5362,10 +4530,7 @@ The essence of transformation!
 
 In the face of escalating climate change impacts, Zagreb has recognised the increasing and urgent need for transformative action to mitigate greenhouse gas emissions and enhance resilience. A holistic approach to climate action involves systemic transformation, addressing interlinked social, economic, and environmental challenges through integrated strategies. We have recognised that the creation of a Climate City Contract, a collaborative agreement between local governments, stakeholders, and citizens to pursue ambitious climate goals, is an effective mechanism to drive such a transformation.
 
-9
-Climate Neutrality Action Plan
 
-O
 
 # Understanding the Transformation!
 
@@ -5384,7 +4549,6 @@ We believe that effective governance structures are essential for driving system
 # 3. Integrated Planning and Implementation:
 
 Systemic transformation requires integrated approaches to urban planning, policy-making, and infrastructure development. The vision of our Climate City Contract is to integrate
-Climate Neutrality Action Plan
 
 climate-related considerations into all aspects of city planning and decision-making, from land use and transportation to energy and waste management. We don't want to create more separate processes, our idea is to mainstream all aspects related to climate into all processes, thus breaking down the silos and fostering cross-sectorial collaboration that should enable synergies and co-benefits across different areas of action.
 
@@ -5398,10 +4562,6 @@ Systemic transformation must prioritise equity and social justice to ensure that
 
 Active engagement with citizens and civil society organisations in the decision-making process regarding laws, regulations, policies, and strategic documents is facilitated through public consultation. Citizens can submit their proposals and feedback on draft regulations and strategic documents via online forms, thereby facilitating open dialogue and ensuring accountability. Coordinators for Consultation with the Interested Public oversee this process, ensuring effective communication between the government and the public.
 
-1
-Climate Neutrality
-Action Plan
-2
 
 Moreover, applications such as the Energy Atlas of the City of Zagreb²³ and the Energy Info Centre of the City of Zagreb²⁴ make significant contributions to the city's social innovation landscape. The Energy atlas focuses on promoting energy efficiency by providing information about natural gas, electricity, district heating, and water expenditure per year in the city districts. Similarly, the Energy Info Center of the City of Zagreb advocates for widespread solar panel installation, enabling citizens to easily evaluate the potential energy production from rooftop solar panels. This aids citizens in determining whether to proceed with installing solar panels on their rooftops, making the decision process faster and getting things done quicker.
 
@@ -5409,7 +4569,6 @@ In conclusion, the social innovation landscape in Zagreb showcases a dynamic int
 
 ²³ Energy Atlas of the City of Zagreb
 ²⁴ Energy Information Center of the City of Zagreb
-Climate Neutrality Action Plan
 
 # 5 An overview of catalytic Systemic Transformation Core Activities
 
@@ -5432,9 +4591,7 @@ Climate Neutrality Action Plan
 **Why?** – One of the key messages that came out as a result of the discussions within the NECPlatform for dialogue was that Croatia would have a significant gap in financing the energy transition and climate change adaptation and that that could have significant repercussions on the treasury in the years to come.
 
 **Systemic transformation contribution** – Setup by the Decision of the National Government under the Ministry of Finance, with the support of the North-West Croatia Regional Energy and Climate Agency, the platform operates in a way that connects the stakeholders that are in need to finance their projects in the energy transition and climate change adaptation with the private capital institutions, development and commercial banks, investment funds, etc.
-Climate Neutrality
 
-Action Plan
 
 It is a place for cooperation and building of trust. It also connects other relevant ministries so the horizontal cooperation necessary for systemic transformation is present.
 
@@ -5451,9 +4608,7 @@ Stakeholders – Coordinated by the Ministry of Finance in cooperation with Nort
 Why? – Spatial plans are a tool in the hands of local and regional governance that is a driving force for the energy transition and climate change adaptation.
 
 Systemic transformation contribution – In the ecosystem in which national-level standards for energy transition and climate change adaptation are not as ambitious as needed, cities are using the improvements in spatial plans. They are executive-level documents that can impose the above national-level standards, thus allowing and enabling decarbonisation and resilience build-up. Spatial plans can, for example, ban the usage of natural gas in certain areas – an actual thing that happened in one district in Zagreb. That is a game changer with an enormous impact on GHG emissions removal. When appropriately paired with regulation for construction and reconstruction, the impact is significant, as it creates enabling conditions and removes barriers.
-Climate Neutrality Action Plan
 
-#
 
 ![img-24.jpeg](img-24.jpeg)
 
@@ -5468,9 +4623,6 @@ Stakeholders - City of Zagreb, expert developers, academia, business sector, NGO
 Why? – We needed a systemic approach to building refurbishment through the setup of a functional OSS.
 
 Systemic transformation contribution – we have developed the so-called “Green Deal Guidance” for building refurbishment and new buildings. The guidance is a follow-up on the work done through the interventions in spatial plan development. The guidance incorporates all EU standards and is aligned with the New Green Deal stipulations. It has financing and climate-proofing criteria built in. On top of the New Green Deal guidelines in the technical part, we are developing the buildings registry and feasibility studies, in the financial part we are aggregating projects and bringing in the innovation in financing through blending and usage of financial instruments. Innovation is developed in the public procurement domain as well, and green procurement will be the choice.
-Climate Neutrality
-Action Plan
-C
 
 Impact – Possible significant impact and huge scale-up potential. The above national level standards are introduced, upgrade mechanisms are built, as well as financing criteria and climate proofing of projects – first in Croatia. The direct impact of the project is above 50 million EUR of investments, and indirectly, through the scaling-up process, the potential impact rises significantly.
 
@@ -5488,12 +4640,8 @@ Impact – The direct impact of the project is above 85 million EUR of investmen
 
 Stakeholders – City, developers, companies, financial institutions, academia, and various experts.
 
-6
-Climate Neutrality
 
-Action Plan
 
-#
 
 # 5.1.3.4 The digital Energy atlas of the City of Zagreb - where digitalisation meets energy transition
 
@@ -5512,9 +4660,7 @@ Stakeholders – City, developers, companies, academia, various experts, and dev
 ![img-28.jpeg](img-28.jpeg)
 
 Why? – A couple of years back, the amount of energy produced by RES on public buildings was almost insignificant. There were different obstacles, ranging from legal barriers and administrative issues to undeveloped markets and a lack of capacities on all levels.
-Climate Neutrality Action Plan
 
-#
 
 Systemic transformation contribution – It is an EIB ELENA project that tackles all issues of the significant PV power plant programme development, namely, technical, legal, procurement, and market-related ones. The approach has systemically transformed the process, and the rate of PV power plant installations on public buildings in Zagreb is growing significantly. It led to the setting up of an SPV owned by the City, with the only task of deploying as many PV power plants as possible.
 
@@ -5531,9 +4677,7 @@ Systemic transformation contribution – Involving a wide range of stakeholders 
 Impact – Expand the green system and carbon sink capacity in the city, improve the quality of life in areas with a pronounced heat island effect, and strengthen participatory approaches to climate activities.
 
 Stakeholders – City, academia, various experts, business sector, development agencies, and citizens.
-Climate Neutrality Action Plan
 
-9
 
 # 5.1.3.7 Climate proofing of infrastructure projects
 
@@ -5544,7 +4688,6 @@ Systemic transformation contribution – We have developed a methodology for cli
 Impact – Direct impact will be seen through the increase of the resilience of the infrastructure and indirect impacts via the avoided losses and damage.
 
 Stakeholders – City, developers, companies, academia, various experts, and development agencies.
-Climate Neutrality Action Plan
 
 # 6 Outlook and next steps
 
@@ -5559,7 +4702,6 @@ As Zagreb commits to a sustainable and resilient future, our vision extends beyo
 **Innovation and Technology:** Zagreb is committed to embracing innovative solutions and technologies to drive climate action. From smart city initiatives to green infrastructure, the city will continue to explore new ways to improve energy efficiency and promote sustainable urban mobility.
 
 **Social Equity and Inclusion:** Ensuring a just transition is at the heart of Zagreb's climate strategy, as signatory of the Paris charter. We aim to create opportunities for all residents,
-Climate Neutrality Action Plan
 
 especially vulnerable and marginalized groups, by focusing on inclusive policies that promote social equity and economic resilience.
 
@@ -5578,7 +4720,6 @@ To effectively integrate climate action into city processes, Zagreb will underta
 Integration into Urban Planning and Zoning: Climate resilience and sustainability principles will be embedded into all aspects of urban planning, including zoning regulations, land use planning, and building codes. This will ensure that future developments are aligned with our climate goals, such as prioritizing low-carbon transport, energy-efficient buildings, and green spaces.
 
 Climate-Oriented Public Procurement: The city will revise procurement policies to prioritize climate-friendly goods and services. This includes adopting criteria that favor low-emission vehicles, renewable energy solutions, and sustainable construction materials in all municipal contracts.
-Climate Neutrality Action Plan
 
 Mandating Green Building Standards: Updates to building codes will mandate energy efficiency, renewable energy integration, and climate resilience measures in new constructions and major renovations. Incentives for retrofitting existing buildings to meet these standards will also be introduced.
 Incorporating Climate Risk into City Budgeting: Mainstreaming climate action will require integrating climate risk assessments into the city's budgeting and financial planning processes. This will ensure that investments are resilient to climate impacts and aligned with our emissions reduction targets.
@@ -5589,9 +4730,7 @@ Enhanced Cooperation with National Ministries, Private Sector, and Citizens:
 
 Collaboration with National Ministries: Zagreb will work closely with national ministries, such as the Ministry of Green Transition, Ministry of Economy, Ministry of Finance, Ministry of Construction, Ministry of Regional Development and EU Funds, and Ministry of Transport, to ensure alignment of local actions with national climate policies and to leverage national resources and expertise. This cooperation will include joint initiatives, sharing of data and best practices, and aligning regulatory frameworks to create a cohesive approach to climate action. This will build upon the national platform for dialogue on the National Energy and Climate Plan.
 Engagement with the Private Sector: The private sector plays a crucial role in successfully implementing climate strategies. Zagreb will actively engage with businesses to promote investment in green technologies, sustainable
-Climate Neutrality Action Plan
 
-O
 
 business practices, and innovative solutions. Incentives for green investments, partnerships for technology development, and creating platforms for knowledge exchange will be key elements of this collaboration.
 
@@ -5603,7 +4742,6 @@ Resilience and Adaptation Measures: Implementing specific adaptation measures wi
 
 As Zagreb moves forward, the city remains committed to continuous improvement and learning. By adapting our strategies based on new data and emerging best practices, we will ensure that Zagreb not only meets its climate goals but also serves as a model for sustainable urban development in the region and spills over in the country to other non-mission cities!
 
-3
 NET ZERO CITIES
 
 EU MISSION PLATFORM | CLIMATE NEUTRAL AND SMART CITIES
@@ -5615,7 +4753,6 @@ The City of Zagreb
 ![img-29.jpeg](img-29.jpeg)
 Climate-Neutrality Commitments – City of Zagreb
 
-O
 
 # Disclaimer
 
@@ -5623,15 +4760,13 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of contents
 
-Introduction...1
-Goal: Climate neutrality by 2030 ...6
-Key priorities and strategic interventions...8
-Principles and process...10
-Signatory on behalf of the City of Zagreb...12
-Contract with signatures...13
-Climate-Neutrality Commitments – City of Zagreb
-
-1
+- Introduction
+- Goal: Climate neutrality by 2030
+- Key priorities and strategic interventions
+- Principles and process
+- Signatory on behalf of the City of Zagreb
+- Contract with signatures
+- Climate-Neutrality Commitments – City of Zagreb
 
 # 1 Introduction
 
@@ -5715,7 +4850,6 @@ Social Equity: Our climate action plans and other policies are designed to be in
 In summary, Zagreb's goal for 2030 is to achieve climate neutrality across the entire city, in line with the stringent criteria set by the Cities Mission. This comprehensive approach not only positions Zagreb as a leader in climate action but also ensures that our transition to a sustainable future brings about widespread and lasting benefits for all residents, fostering a healthier, more sustainable, and economically vibrant city.
 Climate-Neutrality Commitments - City of Zagreb
 
-8
 
 # 3 Key priorities and strategic interventions
 
@@ -5740,7 +4874,6 @@ Increased production of energy from RES;
 Decarbonization of the public transport.
 Climate-Neutrality Commitments - City of Zagreb
 
-0
 
 # 4 Principles and process
 
@@ -5753,7 +4886,6 @@ In the co-design of our portfolio, we have meticulously integrated existing poli
 For learning and reflecting, we have established robust monitoring and review processes within the CCC framework. These processes are designed to measure the effectiveness of our actions, facilitate regular updates, and ensure that our strategies remain responsive to emerging challenges and opportunities. One that must be
 Climate-Neutrality Commitments - City of Zagreb
 
-1
 
 highlighted is the ICAI - The essence of our approach is the mainstreaming effect, so we will develop The Integrated Climate Action Index (ICAI) that should provide a comprehensive measure of how well climate change considerations are mainstreamed into city governance and practices, as described in the CCC AP. By assessing policy integration, budget allocation, institutional capacity, project implementation, public engagement, and monitoring and reporting, the ICAI should capture the multifaceted nature of mainstreaming climate action. This indicator will help us to identify strengths and areas for improvement, promoting a holistic approach to building climate resilience and reducing emissions.
 
@@ -5805,7 +4937,6 @@ Climate-Neutrality Commitments - City of Zagreb
 |  Croatian Employer's Association | Business | Association | Irena Webber | Managing director  |
 |  Institute of Physical Planning of the City of Zagreb | Spatial planning | Institute | Nikša Božić | Managing director  |
 
-4
 Climate-Neutrality Commitments - City of Zagreb
 
 |  Teaching Institute of Public Health Andrija Štampar | Public health | Institute | Prof.prim.dr.sc. Branko Kolarić, dr.med. | Managing director  |
@@ -5821,7 +4952,6 @@ Climate-Neutrality Commitments - City of Zagreb
 |  Zagrebački sunčani krovovi, d.o.o. | Energy/PV | Business | Velimir Šegon | Director  |
 |  MI-Maris | Engineering/RES | Business | Tomislav Magić | CEO  |
 
-5
 Climate-Neutrality Commitments - City of Zagreb
 
 |  Solaris Pons d.o.o. | Engineering/PV/Energy storage | Business | Jurica Gorup | CEO  |
@@ -5830,4 +4960,3 @@ Climate-Neutrality Commitments - City of Zagreb
 |  Zagreb ZOO | Nature | Nature conservation institution | Ivan Cizelj | Managing director  |
 |  Zagreb City Nature – Public Institution for management of natural values of the City of Zagreb | Nature protection/Biodiversity | Institution | Nika Dolenc | Managing director  |
 
-6

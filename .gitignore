@@ -18,9 +18,15 @@ htmlcov/
 .env
 .venv
 
+# Benchmark run outputs (dated reports at repo root)
+/gold_benchmark_report_*.md
+
 # Run artifacts
 output/
 .chroma/
+.chroma_*/
+tmp_pdf_extract/
+skills-lock.json
 
 # Cursor
 #  Cursor is an AI-powered code editor. `.cursorignore` specifies files/directories to
@@ -29,6 +35,7 @@ output/
 .cursorignore
 .cursorindexingignore
 .codex-scratch/
+.agents/
 .cursor/*
 !.cursor/skills/
 !.cursor/skills/**
@@ -36,6 +43,8 @@ output/
 frontend/.next
 frontend/node_modules
 .vscode/settings.json
+.idea/
 
 # Planing
 implementation-plan.md
+.tmp-backend

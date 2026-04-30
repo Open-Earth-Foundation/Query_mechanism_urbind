@@ -8,15 +8,14 @@ Antwerpen voor Klimaat
 
 # CONTENTS
 
-Contents ... 1
-Executive summary ... 2
-Objective ... 2
-The Left Bank in a nutshell ... 0
-The Action Plan as a package of measures for closing the gap ... 3
-The Investment Plan: funding clarified ... 5
-A mission for the city together with its partners ... 5
-Process: how did this city climate contract come about? ... 7
-Structure of the Climate Contract Left Bank 2030 and reading guide ... page n/a
+- Executive summary
+- Objective
+- The Left Bank in a nutshell
+- The Action Plan as a package of measures for closing the gap
+- The Investment Plan: funding clarified
+- A mission for the city together with its partners
+- Process: how did this city climate contract come about?
+- Structure of the Climate Contract Left Bank 2030 and reading guide
 # EXECUTIVE SUMMARY
 
 ## Objective

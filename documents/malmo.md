@@ -23,28 +23,25 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of Contents
 
-Table of Contents...2
-Introduction...5
-Work Process...11
-Part A – Current State of Climate Action...14
-Module A-1 Greenhouse Gas Emissions Baseline Inventory...14
-Module A-2 Current Policies and Strategies Assessment...27
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality...35
-Part B – Pathways towards Climate Neutrality by 2030...Error! Bookmark not defined.
-Module B-1 Climate Neutrality Scenarios and Impact Pathways...Error! Bookmark not defined.
-Module B-2 Climate Neutrality Portfolio Design...Error! Bookmark not defined.
-Module B-3 Indicators for Monitoring, Evaluation and Learning...Error! Bookmark not defined.
-Part C – Enabling Climate Neutrality by 2030...Error! Bookmark not defined.
-Module C-1 Organisational and Governance Innovation Interventions...Error! Bookmark not defined.
-Module C-2 Social and Other Innovation Interventions...Error! Bookmark not defined.
-Module C-3 Financing of Action Portfolio...Error! Bookmark not defined.
-Outlook and next steps...Error! Bookmark not defined.
-Annexes...Error! Bookmark not defined.
-Malmö stad
-
-Climate Neutrality Action Plan
-
-C
+- Introduction
+- Work Process
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030...Error! Bookmark not defined
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways...Error! Bookmark not defined
+- Module B-2 Climate Neutrality Portfolio Design...Error! Bookmark not defined
+- Module B-3 Indicators for Monitoring, Evaluation and Learning...Error! Bookmark not defined
+- Part C – Enabling Climate Neutrality by 2030...Error! Bookmark not defined
+- Module C-1 Organisational and Governance Innovation Interventions...Error! Bookmark not defined
+- Module C-2 Social and Other Innovation Interventions...Error! Bookmark not defined
+- Module C-3 Financing of Action Portfolio...Error! Bookmark not defined
+- Outlook and next steps...Error! Bookmark not defined
+- Annexes...Error! Bookmark not defined
+- Malmö stad
+- Climate Neutrality Action Plan
+- C
 
 # Summary
 
@@ -2927,19 +2924,17 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of contents
 
-Introduction ... 1
-Goal: Climate neutrality by 2030 ... 2
-Key priorities and strategic interventions ... 4
-Principles and process ... 5
-Signatories ... 7
-Contract with signatures ... 11
-Appendix: Individual Signatory Commitments ... 12
-City of Malmö
-
-Climate-Neutrality Commitments
-
-NET ZERO CITIES
-an economic environment, economic structure, and global climate
+- Introduction
+- Goal: Climate neutrality by 2030
+- Key priorities and strategic interventions
+- Principles and process
+- Signatories
+- Contract with signatures
+- Appendix: Individual Signatory Commitments
+- City of Malmö
+- Climate-Neutrality Commitments
+- NET ZERO CITIES
+- an economic environment, economic structure, and global climate
 
 # 1 Introduction
 

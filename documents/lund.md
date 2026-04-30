@@ -18,30 +18,27 @@ Climate Neutrality Action Plan
 
 # Table of Contents
 
-Table of Contents ... 6
-Summary ... 7
-List of figures ... 8
-List of tables ... 9
-Abbreviations and acronyms ... 9
-Introduction ... 11
-Part A – Current State of Climate Action ... 18
-Module A-1 Greenhouse Gas Emissions Baseline Inventory ... 18
-Module A-2 Current Policies and Strategies Assessment ... 34
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality ... 43
-Part B – Pathways towards Climate Neutrality by 2030 ... 53
-Module B-1 Climate Neutrality Scenarios and Impact Pathways ... 53
-Module B-2 Climate Neutrality Portfolio Design ... 63
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 102
-Part C – Enabling Climate Neutrality by 2030 ... 115
-Module C-1 Governance Innovation Interventions ... 115
-Module C-2 Social Innovation Interventions ... 126
-Outlook and next steps ... 131
-Annexes ... 133
-CITY OF LUND
-
-Climate Neutrality Action Plan
-
-#
+- Summary
+- List of figures
+- List of tables
+- Abbreviations and acronyms
+- Introduction
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Governance Innovation Interventions
+- Module C-2 Social Innovation Interventions
+- Outlook and next steps
+- Annexes
+- CITY OF LUND
+- Climate Neutrality Action Plan
+- #
 
 # Summary
 
@@ -3582,20 +3579,16 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of contents
 
-Table of contents ... 2
-Introduction ... 3
-Goal: Climate neutrality by 2030 ... 6
-Strategic priorities ... 7
-Process and underlying principles ... 10
-Signatories ... 12
-Sample contract with signatures ... 13
-
-Appendix 1: Individual / Cluster Signatory Commitments (to be added before submitting the Climate City Contract) ... 14
-CITY OF LUND
-
-Climate-Neutrality Commitments
-
-C
+- Introduction
+- Goal: Climate neutrality by 2030
+- Strategic priorities
+- Process and underlying principles
+- Signatories
+- Sample contract with signatures
+- Appendix 1: Individual / Cluster Signatory Commitments (to be added before submitting the Climate City Contract)
+- CITY OF LUND
+- Climate-Neutrality Commitments
+- C
 
 # 1 Introduction
 

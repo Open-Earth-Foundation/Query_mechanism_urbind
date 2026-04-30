@@ -22,32 +22,26 @@ The content of this document reflects only the author's point of view. The Europ
 
 # Table of Contents
 
-Table of Contents ... 3
-Abstract ... 4
-List of figures ... 4
-List of tables ... 5
-Abbreviations and acronyms ... 5
-Introduction ... 8
-Part A - Current status of climate action ... 22
-Module A-1 Baseline greenhouse gas emissions inventory ... 26
-Module A-2 Evaluation of current policies and strategies ... 34
-Module A-3 Systemic barriers and opportunities for achieving climate neutrality in 2030 ... 51
-Part B – Pathways to achieve climate neutrality by 2030 ... 68
-Module B-1 Climate neutrality scenarios and impact pathways ... 68
-Module B-2 Designing a climate neutral portfolio ... 71
-Module B-3 Monitoring, evaluation and learning indicators ... 112
-Part C - Enabling climate neutrality by 2030 ... 138
-Module C-1 Innovation interventions in terms of organisation and management ... 138
-Module C-2 Social innovation interventions ... 142
-Prospects and following steps ... 146
-Appendices ... 149
-5
-
-Warsaw
-
-Action plan for climate neutrality by 2030.
-
-O
+- Abstract
+- List of figures
+- List of tables
+- Abbreviations and acronyms
+- Introduction
+- Part A - Current status of climate action
+- Module A-1 Baseline greenhouse gas emissions inventory
+- Module A-2 Evaluation of current policies and strategies
+- Module A-3 Systemic barriers and opportunities for achieving climate neutrality in 2030
+- Part B – Pathways to achieve climate neutrality by 2030
+- Module B-1 Climate neutrality scenarios and impact pathways
+- Module B-2 Designing a climate neutral portfolio
+- Module B-3 Monitoring, evaluation and learning indicators
+- Part C - Enabling climate neutrality by 2030
+- Module C-1 Innovation interventions in terms of organisation and management
+- Module C-2 Social innovation interventions
+- Prospects and following steps
+- Appendices
+- Warsaw
+- Action plan for climate neutrality by 2030
 
 # Abstract
 
@@ -3531,22 +3525,16 @@ O
 
 # Table of Contents
 
-Introduction ... 3
-Goal: Climate neutrality by 2030 ... 7
-Strategic priorities ... 12
-Process and principles ... 17
-Signatories ... 23
-Signatures ... 27
-
-Annex 1: Individual/Group Commitments of Signatories ... 28
-Annex 2: Templates of letters of intent signed by stakeholders ... 29
-3
-
-Warsaw
-
-Commitments to climate neutrality by 2030
-
-O
+- Introduction
+- Goal: Climate neutrality by 2030
+- Strategic priorities
+- Process and principles
+- Signatories
+- Signatures
+- Annex 1: Individual/Group Commitments of Signatories
+- Annex 2: Templates of letters of intent signed by stakeholders
+- Warsaw
+- Commitments to climate neutrality by 2030
 
 # 1 Introduction
 

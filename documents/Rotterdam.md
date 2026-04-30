@@ -18,96 +18,97 @@ NetZeroCities has received funding from the H2020 Research and Innovation Progra
 
 # Contents
 
-List of figures...4
-List of tables...4
-Abbreviations and acronyms...5
+- List of figures...4
+- List of tables...4
+- Abbreviations and acronyms...5
 
-Summary...6
+- Summary...6
 
-Introduction...8
-The Rotterdam City Climate Contract...11
-Prior steps...11
-Current situation: from start-up to scale-up...12
-Fulfilling of the CCC-requirements...13
-Reading guide...16
+- Introduction...8
+- The Rotterdam City Climate Contract...11
+- Prior steps...11
+- Current situation: from start-up to scale-up...12
+- Fulfilling of the CCC-requirements...13
+- Reading guide...16
 
-Part A – Current State of Climate Action...17
-Module A-1 Greenhouse Gas Emissions Baseline Inventory...17
-A-1.1. Methodology...17
-A-1.2. Analysis of current and historic emissions...18
+- Part A – Current State of Climate Action...17
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory...17
+- A-1.1. Methodology...17
+- A-1.2. Analysis of current and historic emissions...18
 
-Module A-2 Current Policies and Strategies Assessment...28
-Relation between EU, National, Regional and local policies...28
-A-2.1. European policies...31
-A-2.2. National Policies...34
-A-2.3. Regional Policies...37
-A-2.4. Municipal Policies...38
-A-2.5. Forecast 2030...40
+- Module A-2 Current Policies and Strategies Assessment...28
+- Relation between EU, National, Regional and local policies...28
+- A-2.1. European policies...31
+- A-2.2. National Policies...34
+- A-2.3. Regional Policies...37
+- A-2.4. Municipal Policies...38
+- A-2.5. Forecast 2030...40
 
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality...43
-A-3.1. City development...43
-A-3.2. Governance and Policy...56
-A-3.3. Social innovation, democracy and participation...57
-A-3.4. Finance and Funding...57
-A-3.6. Learning capabilities...57
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality...43
+- A-3.1. City development...43
+- A-3.2. Governance and Policy...56
+- A-3.3. Social innovation, democracy and participation...57
+- A-3.4. Finance and Funding...57
+- A-3.6. Learning capabilities...57
 
-Part B – Pathways towards Climate Neutrality by 2030...60
-B-1 Climate Neutrality Scenarios, Impact Pathways...60
-B-2 Climate Neutrality Portfolio Design...65
-B-3 Indicators for Monitoring, Evaluation and Learning...66
+- Part B – Pathways towards Climate Neutrality by 2030...60
+- B-1 Climate Neutrality Scenarios, Impact Pathways...60
+- B-2 Climate Neutrality Portfolio Design...65
+- B-3 Indicators for Monitoring, Evaluation and Learning...66
 
-Part C – Enabling Climate Neutrality by 2030...69
-Module C-1 Governance Innovation Interventions...69
-Module C-2 Social Innovation Interventions...70
+- Part C – Enabling Climate Neutrality by 2030...69
+- Module C-1 Governance Innovation Interventions...69
+- Module C-2 Social Innovation Interventions...70
 
-Outlook and next steps...71
+- Outlook and next steps...71
 
-Appendix...73
-Climate Action Plan Rotterdam...73
-Current portfolio of actions...73
+- Appendix...73
+- Climate Action Plan Rotterdam...73
+- Current portfolio of actions...73
 3
 
 # List of figures
 
-Figure 1 Rotterdam territory...8
-Figure 2 Emissions for the urban part of Rotterdam compared to the 2025 target...19
-Figure 3 Share for urban sectors, built environment and mobility, by scope...19
-Figure 4. Trend scope 1 CO2 emissions Rotterdam...20
-Figure 5. CO2 emissions of different sectors in Rotterdam: Port &amp; Industry, Energy sector, Built environment, Mobility and Agriculture...21
-Figure 6 Trend in CO2 emissions scope 1 for the subsectors in the built environment: Wastewater (AWZI), Construction (bouwnijverheid), Public services, commercial services, residential)...22
-Figure 7 CO2 emissions trend for subsectors in the built environment (scope 2)...23
-Figure 8 Trend for the different modes of mobility...24
-Figure 9 Industry emissions by sector: other industry, Refineries, Chemical, Waste Incineration...26
-Figure 10 Trend CO2-for the different components within the energy sector (hydroelectric power (WKK), gas &amp; coal)...27
-Figure 11 Objectives of the Climate Agreement (2019) for all emission domains...29
-Figure 12 Effect climate actions Rotterdam on CO2 emission...41
-Figure 13 Development of energy mix in Rotterdam...44
-Figure 14 Overview of the energy transition and Rotterdam energy system...46
-Figure 15 multi-level decision-making process concerning the energy system, illustrates the coherence between different sectors, spatial planning and investment...56
-Figure 16 Business transition pathways + actions...61
-Figure 17 Energysystem transition pathways + actions...62
-Figure 18 Built environment transition pathways + actions...63
-Figure 19 Mobility transition pathways + (potential) actions...64
-Figure 20: Governance structure Rotterdam...70
+- Figure 1 Rotterdam territory...8
+- Figure 2 Emissions for the urban part of Rotterdam compared to the 2025 target...19
+- Figure 3 Share for urban sectors, built environment and mobility, by scope...19
+- Figure 4. Trend scope 1 CO2 emissions Rotterdam...20
+- Figure 5. CO2 emissions of different sectors in Rotterdam: Port &amp; Industry, Energy sector, Built environment, Mobility and Agriculture...21
+- Figure 6 Trend in CO2 emissions scope 1 for the subsectors in the built environment: Wastewater (AWZI), Construction (bouwnijverheid), Public services, commercial services, residential)...22
+- Figure 7 CO2 emissions trend for subsectors in the built environment (scope 2)...23
+- Figure 8 Trend for the different modes of mobility...24
+- Figure 9 Industry emissions by sector: other industry, Refineries, Chemical, Waste Incineration...26
+- Figure 10 Trend CO2-for the different components within the energy sector (hydroelectric power (WKK), gas &amp; coal)...27
+- Figure 11 Objectives of the Climate Agreement (2019) for all emission domains...29
+- Figure 12 Effect climate actions Rotterdam on CO2 emission...41
+- Figure 13 Development of energy mix in Rotterdam...44
+- Figure 14 Overview of the energy transition and Rotterdam energy system...46
+- Figure 15 multi-level decision-making process concerning the energy system, illustrates the coherence between different sectors, spatial planning and investment...56
+- Figure 16 Business transition pathways + actions...61
+- Figure 17 Energysystem transition pathways + actions...62
+- Figure 18 Built environment transition pathways + actions...63
+- Figure 19 Mobility transition pathways + (potential) actions...64
+- Figure 20: Governance structure Rotterdam...70
 
 # List of tables
 
-Table 1 CO2 emissions by sector in 2023 compared to 2022...20
-Table 2 Built environment emissions 2023 by subsector, scope 1 (direct emissions) and scope 2 (indirect emissions)...22
-Table 3 Mobility emissions in 2023 by mode, scope 1...24
-Table 4 Industry emissions by subsector in 2023...25
-Table 5 Energy sector emissions by subsector...26
-Table 6 Overview of relevant European policies...31
-Table 7 Overview of relevant national policies...34
-Table 8 Overview of relevant regional policies...37
-Table 9 Overview of relevant local policies...38
-Table 10 CO2 emissions in kton and estimated results for 2025 and 2030. Source: 'Effect Klimaataanpak Rotterdam 2023' (DCMR)...40
-Table 11 Indicators Energy system...66
-Table 12 Indicators Built Environment...66
-Table 13 Indicator Mobility...66
-Table 14 Indicator own business operations...66
-Table 15 Metadata...67
-Abbreviations and acronyms
+- Table 1 CO2 emissions by sector in 2023 compared to 2022...20
+- Table 2 Built environment emissions 2023 by subsector, scope 1 (direct emissions) and scope 2 (indirect emissions)...22
+- Table 3 Mobility emissions in 2023 by mode, scope 1...24
+- Table 4 Industry emissions by subsector in 2023...25
+- Table 5 Energy sector emissions by subsector...26
+- Table 6 Overview of relevant European policies...31
+- Table 7 Overview of relevant national policies...34
+- Table 8 Overview of relevant regional policies...37
+- Table 9 Overview of relevant local policies...38
+- Table 10 CO2 emissions in kton and estimated results for 2025 and 2030. Source: 'Effect Klimaataanpak Rotterdam 2023' (DCMR)...40
+- Table 11 Indicators Energy system...66
+- Table 12 Indicators Built Environment...66
+- Table 13 Indicator Mobility...66
+- Table 14 Indicator own business operations...66
+- Table 15 Metadata...67
+
+# Abbreviations and acronyms
 
 |  Abbreviations and acronyms | Definition  |
 | --- | --- |
@@ -189,22 +190,22 @@ We will first give an overview of the steps taken prior to creating this CCC, ou
 
 In 2018, at the start of the new administrative period when the new City Council was installed, the following actions were taken:
 
-Scenarios and pathways: We did our first **backcasting** of possible pathways towards climate neutrality (**Nieuwe Energie voor Rotterdam**, Drift). Giving us insight towards which pathways and actions should and/or could be established.
-Investments: Our first assessment was made (Meerjarenperspectief Energietransitie) of the necessary investments and expenditures until 2030 (see Investment Plan).
-Budget and funding: an Energy Transition Budget (ETB) was set up to finance the necessary actions and an Energy Transition Fund (ETF) was set-up for providing low-interest loans.
-Goals: The newly installed City Council officially adopted the goal of reaching **climate neutrality** in 2050 and reducing the emissions within its boundaries in 2030 by 49%. This was agreed upon with the Council Agreement on Energy Transition (Raadsakkoord Energietransitie, 2019). It identified 5 ‘**transition pathways**’ to succeed in towards climate neutrality (Port &amp; Industry, Built Environment, Mobility, Energy-production, and the Economic transition).
-Commitments: We established our first **Rotterdam Climate Agreement (RKA)** in 2019 were local stakeholders endorsed the overall climate goals and agreed upon 49 climate deals to reach those goals. An important part was also to implement the tasks set out in the National Climate agreement (2019). More than 50 meetings were held with the participation of more than 100 companies and organisations and over 1000 citizens. The climate deals touched on a variety of issues, big and small, not limited to CO2-reduction but also on for example consumption/circularity and the labour market. So called ‘Climate tables’ were established for the various emission domains to monitor progress and inspire new actions.
-Monitoring and Forecasting: Besides keeping track of our CO2-emissions, we started with forecasting annually the CO2-impact of our actions, so to be able to track progress and identify the **emission-gap** to be targeted with new measures and actions. The first forecast showed we were (and still do) not on track and had an emission-gap in 2030 based on the city-wide goal of -49%. In addition, we classified the status of our actions in **degrees of certainty**, reflecting the progress of actions and giving us insight into additional actions needed to assure more certainty.
-Governance: the Department of Sustainability was set up to coordinate and instigate sustainability in the centre of our municipal organisation.
+- Scenarios and pathways: We did our first **backcasting** of possible pathways towards climate neutrality (**Nieuwe Energie voor Rotterdam**, Drift). Giving us insight towards which pathways and actions should and/or could be established.
+- Investments: Our first assessment was made (Meerjarenperspectief Energietransitie) of the necessary investments and expenditures until 2030 (see Investment Plan).
+- Budget and funding: an Energy Transition Budget (ETB) was set up to finance the necessary actions and an Energy Transition Fund (ETF) was set-up for providing low-interest loans.
+- Goals: The newly installed City Council officially adopted the goal of reaching **climate neutrality** in 2050 and reducing the emissions within its boundaries in 2030 by 49%. This was agreed upon with the Council Agreement on Energy Transition (Raadsakkoord Energietransitie, 2019). It identified 5 ‘**transition pathways**’ to succeed in towards climate neutrality (Port &amp; Industry, Built Environment, Mobility, Energy-production, and the Economic transition).
+- Commitments: We established our first **Rotterdam Climate Agreement (RKA)** in 2019 were local stakeholders endorsed the overall climate goals and agreed upon 49 climate deals to reach those goals. An important part was also to implement the tasks set out in the National Climate agreement (2019). More than 50 meetings were held with the participation of more than 100 companies and organisations and over 1000 citizens. The climate deals touched on a variety of issues, big and small, not limited to CO2-reduction but also on for example consumption/circularity and the labour market. So called ‘Climate tables’ were established for the various emission domains to monitor progress and inspire new actions.
+- Monitoring and Forecasting: Besides keeping track of our CO2-emissions, we started with forecasting annually the CO2-impact of our actions, so to be able to track progress and identify the **emission-gap** to be targeted with new measures and actions. The first forecast showed we were (and still do) not on track and had an emission-gap in 2030 based on the city-wide goal of -49%. In addition, we classified the status of our actions in **degrees of certainty**, reflecting the progress of actions and giving us insight into additional actions needed to assure more certainty.
+- Governance: the Department of Sustainability was set up to coordinate and instigate sustainability in the centre of our municipal organisation.
 
 In 2022, when the current administrative period started, the following changes have since occurred:
 
-Scenario's, and investments: An analysis was performed of the available (policy) options and cost to reduce the 'emission gap', with a baseline of -55% in 2030 (see investment plan)
-Goals: The new administration adopted a goal of -55% CO2 (scope 1) in 2030 as well as setting a more specific goal for the urban area (excluding the port) because based on the analysis there the municipality has (more) ways for action. Concretely this was set at -25% (scope 1+2) in 2026, which marks the end of the current administrative period.
-Commitments: the set-up of the governance of the Rotterdam Climate Agreement with five 'Climatetables' was changed. This was because many collaborations with local stakeholders had evolved into more sector-specific agreements and action plans and business-as-usual practises (see Commitments). We followed-up with installing 'Climateboosters' (Klimaataanjagers), local persons who's task is to build upon the networks established since the RKA, focussing on those areas were we perceived a gap and chances for strengthening stakeholder collaboration.
-Budget and Funding: the ETB was followed up by the Sustainability Transition Budget (DTB) to allow more actions to be funded than those focussed solely on the energy transition.
-Democracy and participation: to get our citizens more involved into the decision-making processes on climate action, the step was taken to assemble a Citizens Council on Climate (Burgerberaad Klimaat) which consist of randomly selected citizens who reflect the Rotterdam population. After working half a year, their advice on further climate action is now ready to be debated by the City Council. In addition, 37 Neighbourhood Councils were established so to involve our citizens on a more local scale in matters which are a concern to them, including climate action.
-Pathways and actions: we started working on our first Climate Action Plan (Klimaatactieplan Rotterdam, KAR) which was adopted (by the City Council in April 2023. Our focus was first of all to create a digital, user-friendly tool to monitor our overall progress towards climate neutrality and assess and discuss with our City Council and local stakeholders, further actions needed to reach our goals as well as the related barriers. It created the first comprehensive overview of all the goals, pathways, progress, and barriers from the different policies contributing to climate action.
+- Scenario's, and investments: An analysis was performed of the available (policy) options and cost to reduce the 'emission gap', with a baseline of -55% in 2030 (see investment plan)
+- Goals: The new administration adopted a goal of -55% CO2 (scope 1) in 2030 as well as setting a more specific goal for the urban area (excluding the port) because based on the analysis there the municipality has (more) ways for action. Concretely this was set at -25% (scope 1+2) in 2026, which marks the end of the current administrative period.
+- Commitments: the set-up of the governance of the Rotterdam Climate Agreement with five 'Climatetables' was changed. This was because many collaborations with local stakeholders had evolved into more sector-specific agreements and action plans and business-as-usual practises (see Commitments). We followed-up with installing 'Climateboosters' (Klimaataanjagers), local persons who's task is to build upon the networks established since the RKA, focussing on those areas were we perceived a gap and chances for strengthening stakeholder collaboration.
+- Budget and Funding: the ETB was followed up by the Sustainability Transition Budget (DTB) to allow more actions to be funded than those focussed solely on the energy transition.
+- Democracy and participation: to get our citizens more involved into the decision-making processes on climate action, the step was taken to assemble a Citizens Council on Climate (Burgerberaad Klimaat) which consist of randomly selected citizens who reflect the Rotterdam population. After working half a year, their advice on further climate action is now ready to be debated by the City Council. In addition, 37 Neighbourhood Councils were established so to involve our citizens on a more local scale in matters which are a concern to them, including climate action.
+- Pathways and actions: we started working on our first Climate Action Plan (Klimaatactieplan Rotterdam, KAR) which was adopted (by the City Council in April 2023. Our focus was first of all to create a digital, user-friendly tool to monitor our overall progress towards climate neutrality and assess and discuss with our City Council and local stakeholders, further actions needed to reach our goals as well as the related barriers. It created the first comprehensive overview of all the goals, pathways, progress, and barriers from the different policies contributing to climate action.
 
 ## Current situation: from start-up to scale-up
 
@@ -212,13 +213,9 @@ We are experiencing the transition from the start-up to a scale-up phase in vari
 
 The most pressing barriers on the short and intermediate term are:
 
-Grid congestion: due to the quicker than expected electrification due to the gas crisis, the capacity of the electricity grid is insufficient to allow new users, in first instance big electricity users. Due to the time it takes to upgrade it, this problem will not be solved before 2030, while congestion management and other measures can only partly compensate.
-District Heating: the current two private owned compagnies who are responsible for the district heating network in Rotterdam have stopped investing because the
-
-1
-national government has eventually decided that district heating (or other collective heating systems) must (eventually) be exploited by publicly owned compagnies. This had not only led to a delay in the planned expansion of district heating but also prevents us from discussing and preparing with them new ambitious plans. Since the law is still not decided upon by the parliament, there is currently a lot of uncertainty about how exactly to proceed with our current plans for expanding the network.
-
-Labour shortages: while scaling up measures and actions, increasingly we are observing at our stakeholders they are having problems in finding at time the right specialized staff. When we are trying to scale-up our ambitions and actions, we expect this to be an increasing bottleneck for drawing up and executing plans.
+- Grid congestion: due to the quicker than expected electrification due to the gas crisis, the capacity of the electricity grid is insufficient to allow new users, in first instance big electricity users. Due to the time it takes to upgrade it, this problem will not be solved before 2030, while congestion management and other measures can only partly compensate.
+- District Heating: the current two private owned compagnies who are responsible for the district heating network in Rotterdam have stopped investing because the national government has eventually decided that district heating (or other collective heating systems) must (eventually) be exploited by publicly owned compagnies. This had not only led to a delay in the planned expansion of district heating but also prevents us from discussing and preparing with them new ambitious plans. Since the law is still not decided upon by the parliament, there is currently a lot of uncertainty about how exactly to proceed with our current plans for expanding the network.
+- Labour shortages: while scaling up measures and actions, increasingly we are observing at our stakeholders they are having problems in finding at time the right specialized staff. When we are trying to scale-up our ambitions and actions, we expect this to be an increasing bottleneck for drawing up and executing plans.
 
 The short conclusion is that we are forced to reassess and adapt our current plans and actions, since these barriers affect almost all the planning of actions in our current portfolio which depend on the energy system.
 
@@ -251,21 +248,18 @@ Elections: all of our citizens have the right to periodically express their poli
 
 The content of the previous sections has led us to make the following considerations and choices for the purpose of this CCC:
 
-Scope: we decided to focus in the CCC on the energy transition in the city, excluding targeting the emissions of the Port of Rotterdam area where the industry and the (fossil) energy sector is present. Observing the progress so far and being conscious of the limited influence of the municipality compared to the leading role of the national government and role of the EU, it's questionable whether the mission in its current approach and set-up is the right vehicle for change. We also do not include circular (scope3), biodiversity or climate adaptation goals and policies, unless in relationship with the energy transition. While they are of utmost importance, we are choosing to go for coherence instead of being overly complete for the purpose of this CCC and the mission in general. This can
+- Scope: we decided to focus in the CCC on the energy transition in the city, excluding targeting the emissions of the Port of Rotterdam area where the industry and the (fossil) energy sector is present. Observing the progress so far and being conscious of the limited influence of the municipality compared to the leading role of the national government and role of the EU, it's questionable whether the mission in its current approach and set-up is the right vehicle for change. We also do not include circular (scope3), biodiversity or climate adaptation goals and policies, unless in relationship with the energy transition. While they are of utmost importance, we are choosing to go for coherence instead of being overly complete for the purpose of this CCC and the mission in general. This can change in the future in relationship to the establishment and/or progress of other missions.
 
-3
-change in the future in relationship to the establishment and/or progress of other missions.
-
-Goals: for 2030 no intermediate goal has yet been set specific for the city, besides the overall -55% for the whole city. Regarding climate neutrality, these has been one set for mobility for 2040 and for the rest, mainly the Built environment in 2050. The moment of submitting this CCC coincides with
-a) the preparation of the incoming administration in 2026
-b) the preparation of new national measures by the national government to (still) reach the national goal in 2030, as well establishing a goal for 2035 as obligated to do by the national Climate Law, and
-c) the negotiations on the proposed EU target of -90% in 2040.
+- Goals: for 2030 no intermediate goal has yet been set specific for the city, besides the overall -55% for the whole city. Regarding climate neutrality, these has been one set for mobility for 2040 and for the rest, mainly the Built environment in 2050. The moment of submitting this CCC coincides with
+  - a) the preparation of the incoming administration in 2026
+  - b) the preparation of new national measures by the national government to (still) reach the national goal in 2030, as well establishing a goal for 2035 as obligated to do by the national Climate Law, and
+  - c) the negotiations on the proposed EU target of -90% in 2040.
 This al has led us to the conclusion it is prudent to use the CCC as a starting point of preparation for the new administration, giving them the opportunity to establish an ambitious but feasible target with the further support this mission offers. To prepare, it's in our situation of utmost importance we can take these multilevel developments into consideration when we strategies what is wise. As we did in preparation for the current and previous administration, we are starting now to prepare new scenario's, policy options and an estimate of the needed investments. For this CCC, we still maintain the -55% as a benchmark to define the 'emission gap'.
 In addition, many of the current policies and associated action plans are set to contribute towards a target set for 2030, while some even stop in 2026. As a consequence, policies targeting the emissions beyond, for a big part are in the middle in the process of being updated, which are essential in complementing our portfolio of actions for the periods beyond. The earlier mentioned barriers on the short term also forces us to reevaluate and update certain policies.
 
-Pathways: Since the admission of the CCC is for a part meant as an evaluation moment, an analysis has taken place to identify which pathways were not addressed in our KAR (as shown in section B). We performed a 'gap analysis', identifying the consistency between our policies, identified pathways and actions. On basis of the results, we have realigned our current pathways and added new ones as input for the policy shaping process. This will guide us further into updating our KAR (with new pathways, establishing intermediate and end goals, actions, stakeholder engagement and investments) in preparation for the incoming administration.
+- Pathways: Since the admission of the CCC is for a part meant as an evaluation moment, an analysis has taken place to identify which pathways were not addressed in our KAR (as shown in section B). We performed a 'gap analysis', identifying the consistency between our policies, identified pathways and actions. On basis of the results, we have realigned our current pathways and added new ones as input for the policy shaping process. This will guide us further into updating our KAR (with new pathways, establishing intermediate and end goals, actions, stakeholder engagement and investments) in preparation for the incoming administration.
 
-Portfolio of actions: our current portfolio of actions is part of the baseline. Therefore, we did not (yet) classify them in terms of levers of change and represent them in B-2, but as part of our current Climate Action Plan Rotterdam (KAR, Annex 1). As stated earlier, we are still dealing with a gap in 2030 based on the effect of our current portfolio of actions. We did not present a portfolio of actions capable of targeting this gap, since the only available options concerns scaling up current ones, where barriers prevent them now.
+- Portfolio of actions: our current portfolio of actions is part of the baseline. Therefore, we did not (yet) classify them in terms of levers of change and represent them in B-2, but as part of our current Climate Action Plan Rotterdam (KAR, Annex 1). As stated earlier, we are still dealing with a gap in 2030 based on the effect of our current portfolio of actions. We did not present a portfolio of actions capable of targeting this gap, since the only available options concerns scaling up current ones, where barriers prevent them now.
 
 Based on the gap analysis we did encounter established pathways without established actions, which need further exploring before they can be established as part of our portfolio of actions, as listed the KAR.
 
@@ -273,9 +267,9 @@ For the purpose of giving insight on how we determined our effect in 2030, we pr
 
 To summarise, this means this version Climate Neutrality Action Plan now consist of an:
 
-Evaluation of our current KAR and ways to improve its monitoring of current pathways
-Supplementing the missing information not included in the KAR such as the forecast, policies and barriers.
-The beginning of a process to create a comprehensive portfolio of actions which addresses the remaining city's urban emissions in preparation for the next administration, starting next year.
+- Evaluation of our current KAR and ways to improve its monitoring of current pathways
+- Supplementing the missing information not included in the KAR such as the forecast, policies and barriers.
+- The beginning of a process to create a comprehensive portfolio of actions which addresses the remaining city's urban emissions in preparation for the next administration, starting next year.
 
 4
 For the Investment Plan this means that no extensive portfolio of new actions in this version can be provided to build upon which are directed towards CO2-impact.
@@ -286,22 +280,22 @@ Lastly, we would very much want to explore ways to make the process of CCC more 
 
 In part A we present
 
-An overview and assessment of the current and historic development of our emissions, which have been monitored since 2007. It covers the emissions of the whole city (scope 1) and is specific for the urban area (scope 1+2). It will provide insight into the sphere of influence we as a city have related to the need for multi-level cooperation and action.
-An overview of our current Climate (mitigating) policies and their relationship with the policies and actions of European, national and regional governments. We first of all use this part to provide insight into which local pathways and actions were established and instigated by others, and which are a result of engagement locally, in addition and/or needed for an effective implementation. Second, we sum up the main upcoming changes and updates of multilevel policies which will impact or upon which we are dependent for updating our current policies.
-An overview and analyses of the impact and therefore changes the transition towards a climate neutral city demands from various sectors/functions/systems which are part of our city. We will highlight the most perceived opportunities and barriers. To conclude with mentioning the enablers for climate action and the perceived opportunities and barriers.
-The forecast of the projected impact of our current policies and actions on the emission in 2030.
+- An overview and assessment of the current and historic development of our emissions, which have been monitored since 2007. It covers the emissions of the whole city (scope 1) and is specific for the urban area (scope 1+2). It will provide insight into the sphere of influence we as a city have related to the need for multi-level cooperation and action.
+- An overview of our current Climate (mitigating) policies and their relationship with the policies and actions of European, national and regional governments. We first of all use this part to provide insight into which local pathways and actions were established and instigated by others, and which are a result of engagement locally, in addition and/or needed for an effective implementation. Second, we sum up the main upcoming changes and updates of multilevel policies which will impact or upon which we are dependent for updating our current policies.
+- An overview and analyses of the impact and therefore changes the transition towards a climate neutral city demands from various sectors/functions/systems which are part of our city. We will highlight the most perceived opportunities and barriers. To conclude with mentioning the enablers for climate action and the perceived opportunities and barriers.
+- The forecast of the projected impact of our current policies and actions on the emission in 2030.
 
 In part B we provide:
 
-) An analysis and overview of our current established pathways and related actions as part of our KAR and Budget's Planning &amp; Control cycle.
-) The current key indicators used to measure progress
+- An analysis and overview of our current established pathways and related actions as part of our KAR and Budget's Planning &amp; Control cycle.
+- The current key indicators used to measure progress
 
 In part C we:
 
-Explain how cities and the national government are innovating in their collaboration.
+- Explain how cities and the national government are innovating in their collaboration.
 
 5
-Part A – Current State of Climate Action
+# Part A – Current State of Climate Action
 
 Part A “Current State of Climate Action” describes our current point of departure towards climate neutrality, and how with local stakeholders we progressed so far, which informs the subsequent modules and the outlined pathways to accelerated climate action.
 
@@ -309,9 +303,9 @@ We will first touch on our current CO2-emissions and offer an analysis of the fa
 
 [these are also regularly updated and reported via the C40/CDP network and in order to annually update the Climate Action Plan, but not with the extensive analysis.]
 
-Module A-1 Greenhouse Gas Emissions Baseline Inventory
+# Module A-1 Greenhouse Gas Emissions Baseline Inventory
 
-A-1.1. Methodology
+## A-1.1. Methodology
 
 Scopes and approach
 
@@ -323,8 +317,8 @@ Rotterdam wants more focus on the urban environment in reducing CO2 emissions. T
 
 The two goals set by Rotterdam require different approaches:
 
-The source approach for the target for total city and port emissions. The source approach is similar to scope 1. It includes emissions from fossil combustion from all sources within the municipal boundaries, such as gas consumption in a home or business, or gasoline use from a car.
-The user approach for the mayors target, which covers only the urban part of the municipality. The user approach includes scope 1 and scope 2. Scope 2 refers to the use of delivered electricity or heat in this area. The CO2 emissions associated with the production and use of that electricity and heat are allocated to the user. Examples include an office using the heat grid, or electricity use by the subway or an electric car.
+- The source approach for the target for total city and port emissions. The source approach is similar to scope 1. It includes emissions from fossil combustion from all sources within the municipal boundaries, such as gas consumption in a home or business, or gasoline use from a car.
+- The user approach for the mayors target, which covers only the urban part of the municipality. The user approach includes scope 1 and scope 2. Scope 2 refers to the use of delivered electricity or heat in this area. The CO2 emissions associated with the production and use of that electricity and heat are allocated to the user. Examples include an office using the heat grid, or electricity use by the subway or an electric car.
 
 Classification into sectors
 
@@ -442,8 +436,8 @@ Road traffic figures come from the various road authorities (state, province and
 
 The figures for rail traffic and mobile machinery are from the RKM; the most recent are for 2022. The figures for shipping and aviation are from the ER. The most recent figures for these sources are also for 2022. For shipping and aviation, these have been translated to 2023 by extrapolation based on respectively:
 
-the number of seagoing and inland vessels in 2023 (Source: HbR 'Nautical Annual Figures Rotterdam Port 2023')
-the growth of the number of so-called overland movements at Rotterdam- The Hague Airport in 2023 (source: CBS).
+- the number of seagoing and inland vessels in 2023 (Source: HbR 'Nautical Annual Figures Rotterdam Port 2023')
+- the growth of the number of so-called overland movements at Rotterdam- The Hague Airport in 2023 (source: CBS).
 
 For rail traffic and mobile equipment, emissions in 2023 are the same as in 2022. NOTE. For rail traffic, only emissions from diesel locomotives at the port are concerned.
 
@@ -554,9 +548,9 @@ Figure 11 Objectives of the Climate Agreement (2019) for all emission domains
 
 In sum the municipalities agreed in the Climate Agreement (2019) upon performing the following main actions:
 
-Energy: Create a Regional Energy Strategy with neighbouring municipalities (for Rotterdam this coincided with the Metropolitan Area Rotterdam-The Hague, MRDH) with concrete plans for more clean energy production so to contribute to the national goal of 35 terawatt-hour (TWh);
-Mobility: create regional mobility plans, participate in the 'national agenda for charging infrastructure' (NAL), and the largest cities agreed into creating a Zero-emission zone for commercial transport;
-Built environment: establish a Vision on the Heath Transition (Transitievisie Warmte/TvW, link leads to English abstract), and decide on which neighbourhoods are selected to become natural-gas-free and/or insulated before 2030 and a pathway beyond towards 2050.
+- Energy: Create a Regional Energy Strategy with neighbouring municipalities (for Rotterdam this coincided with the Metropolitan Area Rotterdam-The Hague, MRDH) with concrete plans for more clean energy production so to contribute to the national goal of 35 terawatt-hour (TWh);
+- Mobility: create regional mobility plans, participate in the 'national agenda for charging infrastructure' (NAL), and the largest cities agreed into creating a Zero-emission zone for commercial transport;
+- Built environment: establish a Vision on the Heath Transition (Transitievisie Warmte/TvW, link leads to English abstract), and decide on which neighbourhoods are selected to become natural-gas-free and/or insulated before 2030 and a pathway beyond towards 2050.
 
 These were the most important ones besides more tradition well established task such as providing information and advice and enforcing certain national laws and regulations which also were included in the Climate Agreement (For us as a municipality it's very relevant whether we have an official task, because it's makes us eligible for national funding and sufficient regulatory power.)
 
@@ -837,16 +831,15 @@ Rotterdam opts for good growth. Growth that contributes to the inhabitants, to a
 
 This results in five main choices for the long-term development of our city:
 
-Rotterdam is committed to pleasant living in the delta. We make Rotterdam a healthy, green and attractive city to live, work and recreate. Our rivers - the Maas, the Schie and the Rotte are our most important green-blue connections. We are creating new parks and greening our boulevards, such as Blaak and Westblaak. We connect green structures for attractive routes and to increase biodiversity. At the same time, by adding greenery we are working to reducing heat stress and collecting water during heavy during heavy rainfall. We make it attractive and easy to exercise outdoors. The car takes a step back and we offer more space to cyclists and pedestrians.
+- Rotterdam is committed to pleasant living in the delta. We make Rotterdam a healthy, green and attractive city to live, work and recreate. Our rivers - the Maas, the Schie and the Rotte are our most important green-blue connections. We are creating new parks and greening our boulevards, such as Blaak and Westblaak. We connect green structures for attractive routes and to increase biodiversity. At the same time, by adding greenery we are working to reducing heat stress and collecting water during heavy during heavy rainfall. We make it attractive and easy to exercise outdoors. The car takes a step back and we offer more space to cyclists and pedestrians.
 
-Rotterdam is going to urbanize &amp; connect. We are urbanizing within the existing city to strengthen the city. We do this mainly at and around existing or new high-quality public transport. This is the most sustainable way of urbanization. That is why we invest with our partners in, among other things, a new riverbank connection, new stations and more trains on the railroad between Leiden and Dordrecht (Old Line). By adding housing creates a larger support base for amenities. With higher densities, more people live in the close proximity to various amenities. People can reach all their daily amenities on foot or by bike: the city around the corner. By developing a network of complementary urban centers, we make sure that our top locations strengthen each other.
+- Rotterdam is going to urbanize &amp; connect. We are urbanizing within the existing city to strengthen the city. We do this mainly at and around existing or new high-quality public transport. This is the most sustainable way of urbanization. That is why we invest with our partners in, among other things, a new riverbank connection, new stations and more trains on the railroad between Leiden and Dordrecht (Old Line). By adding housing creates a larger support base for amenities. With higher densities, more people live in the close proximity to various amenities. People can reach all their daily amenities on foot or by bike: the city around the corner. By developing a network of complementary urban centers, we make sure that our top locations strengthen each other.
 
-Rotterdam is committed to vital neighbourhoods. It should not matter where you grow up to have the same chance of getting a good education a good home and suitable work. In our neighbourhoods a lot many challenges come together: energy transition, climate adaptive and socio-economic challenges. We are tackling these in together to make the neighbourhoods future-proof. In all neighbourhoods we focus on a diverse range of living and working space and the public space is in order. Social facilities grow with the city and are used more intensively.
+- Rotterdam is committed to vital neighbourhoods. It should not matter where you grow up to have the same chance of getting a good education a good home and suitable work. In our neighbourhoods a lot many challenges come together: energy transition, climate adaptive and socio-economic challenges. We are tackling these in together to make the neighbourhoods future-proof. In all neighbourhoods we focus on a diverse range of living and working space and the public space is in order. Social facilities grow with the city and are used more intensively.
 
-Rotterdam is putting its shoulders to the wheel for the energy and resource transition. In the coming years we will generate energy differently and cleaner, distribute it differently and reduce demand. We will also close material cycles. In the port-industrial complex this means electrification of processes and use of hydrogen as an energy carrier. We use residual heat to provide the urban area with heat and we are making our housing stock. We are also making urban mobility and transport to and in the port.
+- Rotterdam is putting its shoulders to the wheel for the energy and resource transition. In the coming years we will generate energy differently and cleaner, distribute it differently and reduce demand. We will also close material cycles. In the port-industrial complex this means electrification of processes and use of hydrogen as an energy carrier. We use residual heat to provide the urban area with heat and we are making our housing stock. We are also making urban mobility and transport to and in the port.
 
-9
-Rotterdam renews its earning capacity. Rotterdam has a strong economic starting position, a world port, an airport, a strong logistics sector and growing manufacturing industry. These sectors will continue to be important for future employment and earning capacity, but they will have to undergo coming years. At the same time, due in part to its excellent (international) accessibility, Rotterdam is a centre of innovation and knowledge-intensive services. We welcome new business models, such as start-ups in the circular economy. Companies that cause nuisance and therefore fall into a high environmental category, we concentrate as much as possible at a few locations. Through good networking and interaction creates innovation in the existing and new economy; precisely that is the economic strength of our city.
+- Rotterdam renews its earning capacity. Rotterdam has a strong economic starting position, a world port, an airport, a strong logistics sector and growing manufacturing industry. These sectors will continue to be important for future employment and earning capacity, but they will have to undergo coming years. At the same time, due in part to its excellent (international) accessibility, Rotterdam is a centre of innovation and knowledge-intensive services. We welcome new business models, such as start-ups in the circular economy. Companies that cause nuisance and therefore fall into a high environmental category, we concentrate as much as possible at a few locations. Through good networking and interaction creates innovation in the existing and new economy; precisely that is the economic strength of our city.
 
 While acting upon these five main choices, continued attention to environmental quality and living environment is needed. Our environmental impact assessment makes clear that, among other things, the combination of densification within the existing city and the effort focusing on the transition of the economy leads to challenges regarding environmental and health issues. By including these issues in the development at an early stage, risks can be limited and negative effects avoided.
 
@@ -890,22 +883,19 @@ In total, over three billion euros are needed in Rotterdam to future-proof some 
 
 The energy transition in the built environment is a complex and multifaceted challenge that requires systemic solutions and collaborative efforts. Rotterdam will need financial investments, (new) policy frameworks and action across all levels of government and society to address the following barriers:
 
-Limited feasibility of district heating: financial viability is currently a significant challenge. High infrastructure costs combined with current energy prices and insecurity about future energy prices, often render these projects economically unfeasible. This in return affects the public acceptance of district heating and households will turn to heat pumps instead. This in return creates a problem on the electricity network. On top, the government has decided to make private heath compagnies public again. This results in an investment stop from the two major suppliers of district heating in Rotterdam. We have to find a solution for this impasse to reach our current goals in 2030.
-Multiple challenges in homes: households face challenges beyond energy efficiency; maintenance, affordability of basic needs, language barriers and dependence on their landlord when wanting to take measures. Competing priorities complicate efforts to focus on energy transition measures.
-Insulation requirements: a large portion of the housing stock in Rotterdam requires substantial insulation upgrades to meet energy efficiency standards. The associated costs are an obstacle for both homeowners and housing associations. Furthermore, it is difficult for tenants to insulate as they are often dependent on the (private) landlord.
-Limited resident capacity for action: a fair amount of residents lacks financial resources and mental bandwidth to take action. Organizing home improvements, applying for subsidies, and understanding technical options can be overwhelming, particularly for vulnerable populations.
-Energy poverty: Energy poverty is a significant barrier to equitable progress. Households with limited financial means are disproportionately affected by rising energy costs and are often unable to invest in energy-saving measures.
-Inactive Houseowners Association (VvE's): many of them not active, have saved insufficiently and are complicated for taking joint investment decisions.
+- Limited feasibility of district heating: financial viability is currently a significant challenge. High infrastructure costs combined with current energy prices and insecurity about future energy prices, often render these projects economically unfeasible. This in return affects the public acceptance of district heating and households will turn to heat pumps instead. This in return creates a problem on the electricity network. On top, the government has decided to make private heath compagnies public again. This results in an investment stop from the two major suppliers of district heating in Rotterdam. We have to find a solution for this impasse to reach our current goals in 2030.
+- Multiple challenges in homes: households face challenges beyond energy efficiency; maintenance, affordability of basic needs, language barriers and dependence on their landlord when wanting to take measures. Competing priorities complicate efforts to focus on energy transition measures.
+- Insulation requirements: a large portion of the housing stock in Rotterdam requires substantial insulation upgrades to meet energy efficiency standards. The associated costs are an obstacle for both homeowners and housing associations. Furthermore, it is difficult for tenants to insulate as they are often dependent on the (private) landlord.
+- Limited resident capacity for action: a fair amount of residents lacks financial resources and mental bandwidth to take action. Organizing home improvements, applying for subsidies, and understanding technical options can be overwhelming, particularly for vulnerable populations.
+- Energy poverty: Energy poverty is a significant barrier to equitable progress. Households with limited financial means are disproportionately affected by rising energy costs and are often unable to invest in energy-saving measures.
+- Inactive Houseowners Association (VvE's): many of them not active, have saved insufficiently and are complicated for taking joint investment decisions.
 
 ## New Buildings
 
-Rotterdam must build 55,000 new homes by 2030 to solve the housing shortage. It is very important that these new homes be sustainable and energy efficient, which is not only comfortable for the residents but also beneficial for the climate. The material use and construction process of the homes are also important, as they have a significant impact on the environment. With current traditional construction methods, CO2 emissions are about 340 kilograms per square meter. To meet the goals of the Paris Agreement, we must drastically
+Rotterdam must build 55,000 new homes by 2030 to solve the housing shortage. It is very important that these new homes be sustainable and energy efficient, which is not only comfortable for the residents but also beneficial for the climate. The material use and construction process of the homes are also important, as they have a significant impact on the environment. With current traditional construction methods, CO2 emissions are about 340 kilograms per square meter. To meet the goals of the Paris Agreement, we must drastically reduce these emissions. For "Paris-proof" construction, CO2 emissions would have to be reduced to:
 
-2
-reduce these emissions. For "Paris-proof" construction, CO2 emissions would have to be reduced to:
-
-200 kilograms of CO2 per square meter for a single-family home;
-220 kilograms of CO2 per square meter for a multi-family dwelling.
+- 200 kilograms of CO2 per square meter for a single-family home;
+- 220 kilograms of CO2 per square meter for a multi-family dwelling.
 
 The municipality will continue to share knowledge and provide advice. It is expected that legal requirements for new construction plans on sustainability will be further tightened in the coming years. Nationally, the scope for municipalities to set and require sustainability performance is drastically reduced. Since the statutory sustainability requirements are lower than our sustainability ambitions, we must engage with the government to preserve this space or to be able to co-decide on how and where this space could be limited, so that Rotterdam can continue to build future-proof and we maintain perspective to achieve our climate-neutral ambitions for 2030 and 2050. It is becoming increasingly difficult to include sustainable measures in affordable housing given the high cost of construction.
 
@@ -919,15 +909,11 @@ Enforcement is difficult because the DCMR gets no insight from the grid operator
 
 The energy transition in the mobility sector is essential for achieving Rotterdam's sustainability goals and reducing greenhouse gas emissions. However, the implementation of sustainable mobility solutions faces numerous structural and systemic barriers that must be addressed to accelerate progress. Below, we outline barriers:
 
-Insufficient Structural Financing for Zero-Emission Zones: while establishing zero-emission zones is a critical component of the city's energy transition strategy, funding for their development and enforcement is not structurally secured. This lack of consistent financial support jeopardizes long-term planning and the successful implementation of these zones.
-Uncertainty in Electric Vehicle Availability: the transition to electric mobility is hindered by uncertainties in the availability of electric vehicles (EVs), especially for heavy-duty transport and specialized vehicles.
-Insufficient Financing for Charging Infrastructure: the deployment of charging infrastructure, including public and private charging points, lacks adequate structural funding. This financial gap slows the expansion of a reliable charging network, which is essential for supporting the growing number of EVs.
-Grid Capacity Constraints: the energy grid's capacity is not always sufficient to meet the increasing demand for electricity from charging infrastructure. Delays in grid
-
-3
-upgrades and the complexity of connecting charging stations to the grid pose significant barriers.
-
-Urban Space Constraints: Rotterdam's dense urban environment poses logistical challenges for the installation of charging stations and the accommodation of EVs.
+- Insufficient Structural Financing for Zero-Emission Zones: while establishing zero-emission zones is a critical component of the city's energy transition strategy, funding for their development and enforcement is not structurally secured. This lack of consistent financial support jeopardizes long-term planning and the successful implementation of these zones.
+- Uncertainty in Electric Vehicle Availability: the transition to electric mobility is hindered by uncertainties in the availability of electric vehicles (EVs), especially for heavy-duty transport and specialized vehicles.
+- Insufficient Financing for Charging Infrastructure: the deployment of charging infrastructure, including public and private charging points, lacks adequate structural funding. This financial gap slows the expansion of a reliable charging network, which is essential for supporting the growing number of EVs.
+- Grid Capacity Constraints: the energy grid's capacity is not always sufficient to meet the increasing demand for electricity from charging infrastructure. Delays in grid upgrades and the complexity of connecting charging stations to the grid pose significant barriers.
+- Urban Space Constraints: Rotterdam's dense urban environment poses logistical challenges for the installation of charging stations and the accommodation of EVs.
 
 ## Labour Market
 
@@ -939,9 +925,9 @@ At the same time, there was a large unused labour potential: 27,000 people could
 
 The City of Rotterdam, educational institutions in the region and businesses are therefore not only focusing on 'from school to work', but also on 'from work to work' and 'at work'. Projects focus on increasing the influx towards the technical sector and solving the current and future mismatch in the labor market.
 
-Infrastructure: There are opportunities for employment in building, reinforcing and maintaining the necessary infrastructure, such as the heat and power grid.
-Home modifications: Insulating and ventilating buildings creates many jobs. TNO expects the insulation task in Rotterdam to lead to about 900 jobs by 2030. New forms of electricity generation and storage and electrification of mobility also create changes in and around the home.
-Port: There are also many changes in employment in the port-industrial complex. For example, jobs will disappear due to the closure of coal-fired power plants and the phasing out of fossil activities, while at the same time developments around hydrogen will create new jobs. CE Delft has calculated that hydrogen in the Netherlands could generate a demand for labor of 6-17 thousand FTEs in 2030 and 16-92 thousand FTEs in 2050.18 A large part of this is in the import, trade and transit of hydrogen. The Port of Rotterdam expects to play a major role in this. The offshore wind sector will also grow to about 12 thousand FTE in 2030. From the Just Transition Fund there is a firm commitment to creating a healthy labor market to support the energy transition in the port and at the same time fully commit to retraining and upskilling the current workforce.
+- Infrastructure: There are opportunities for employment in building, reinforcing and maintaining the necessary infrastructure, such as the heat and power grid.
+- Home modifications: Insulating and ventilating buildings creates many jobs. TNO expects the insulation task in Rotterdam to lead to about 900 jobs by 2030. New forms of electricity generation and storage and electrification of mobility also create changes in and around the home.
+- Port: There are also many changes in employment in the port-industrial complex. For example, jobs will disappear due to the closure of coal-fired power plants and the phasing out of fossil activities, while at the same time developments around hydrogen will create new jobs. CE Delft has calculated that hydrogen in the Netherlands could generate a demand for labor of 6-17 thousand FTEs in 2030 and 16-92 thousand FTEs in 2050.18 A large part of this is in the import, trade and transit of hydrogen. The Port of Rotterdam expects to play a major role in this. The offshore wind sector will also grow to about 12 thousand FTE in 2030. From the Just Transition Fund there is a firm commitment to creating a healthy labor market to support the energy transition in the port and at the same time fully commit to retraining and upskilling the current workforce.
 
 4
 # A-3.2. Governance and Policy
@@ -1045,7 +1031,7 @@ Although based in Delft, TU Delft collaborates heavily with Rotterdam on researc
 Comité of the Regions, Eurocities, Global Parliament of Mayors (GPM), U20, C40, Connecting Delta Cities, Global Covenant of Mayors for Climate &amp; Energy, Global Resilient Cities Network (GRCN), ICLEI, ISWA International Solid Waste Association, Polis, Walk21, The Global Walking Network, Transport Decarbonization Alliance (TDA), WHO European Healthy Cities Network.
 
 8
-Part B – Pathways towards Climate Neutrality by 2030
+# Part B – Pathways towards Climate Neutrality by 2030
 
 As shown in the previous sections, the municipality of Rotterdam on its own has the biggest influence on the built environment, mobility, the local energy system and local businesses. In the Climate Action Plan Rotterdam (KAR, appendix 1) detailed information is shared on targets, sub-targets, actions and projects that were/are/will be undertaken.
 
@@ -1055,21 +1041,20 @@ The European consortium Net Zero Cities has developed a logic: the theory of cha
 
 We concluded that the current reporting, as we were already sensing, has a couple of shortcomings:
 
-Pathways are not for every demission domain clearly established. As a result, its monitoring contains a mixture of input, output and outcome indicators. For some domains, the reason is due to not having established a clear 'end' goal in our current policies and/or other multilevel stakeholders. We are concretely referring to the level of insulation, which is also linked to the temperature level of district heating (see section A-3), and second the goal for renewable energy, which is part of a regional multi-stakeholder process to determine. So, as we show in B-1, we started working on a new outline for multiple pathways that we see for every domain.
-The list of actions or projects which are presented in the annual Budget, KAR, and the calculations on CO2-emmissions do not correspond always, due to separate administrative procedures, we are currently digitalizing in a common data environment, so we don't have to separately report and increase coherency.
+- Pathways are not for every demission domain clearly established. As a result, its monitoring contains a mixture of input, output and outcome indicators. For some domains, the reason is due to not having established a clear 'end' goal in our current policies and/or other multilevel stakeholders. We are concretely referring to the level of insulation, which is also linked to the temperature level of district heating (see section A-3), and second the goal for renewable energy, which is part of a regional multi-stakeholder process to determine. So, as we show in B-1, we started working on a new outline for multiple pathways that we see for every domain.
+- The list of actions or projects which are presented in the annual Budget, KAR, and the calculations on CO2-emmissions do not correspond always, due to separate administrative procedures, we are currently digitalizing in a common data environment, so we don't have to separately report and increase coherency.
 
-B-1 Climate Neutrality Scenarios, Impact Pathways
+# B-1 Climate Neutrality Scenarios, Impact Pathways
 
 We have arranged all existing relevant policies so that we can show the impact pathways in a structured manner. These overviews (maps) provide insight in the coherence of the issues we work on and at the same time expose gaps. This will guide us further into updating our action plan in preparation for the incoming administration.
 
 Our current main goals are a climate neutral Rotterdam in 2050 and a 55% reduction of GHG emissions by people and organisations in 2030 compared to 1990. This translates into four domains of focus (excluding the Rotterdam harbour):
 
-In 2030, Businesses have more sustainable processes and GHG emissions are reduced.
-In 2030, Rotterdam will have a sustainable, safe, fair and reliable energy system that contributes to lower GHG emissions.
-In 2030, buildings in Rotterdam will emit less GHG's.
-In 2040, the urban mobility system by road and water will no longer emit GHG's.
+- In 2030, Businesses have more sustainable processes and GHG emissions are reduced.
+- In 2030, Rotterdam will have a sustainable, safe, fair and reliable energy system that contributes to lower GHG emissions.
+- In 2030, buildings in Rotterdam will emit less GHG's.
+- In 2040, the urban mobility system by road and water will no longer emit GHG's.
 
-9
 The domains are outlined across 17 transition pathways, each accompanied by corresponding actions. A portion of these actions has been already translated into specific projects, which are detailed in the Climate Action Plan Rotterdam. The coherence between the transition paths and their respective actions is illustrated below. In the accompanying figures, black text represents existing policy, while red text highlights identified policy gaps that we intend to address.
 
 ![img-17.jpeg](img-17.jpeg)
@@ -1080,7 +1065,6 @@ Figure 17 Energysystem transition pathways + actions.
 Figure 18 Built environment transition pathways + actions.
 ![img-20.jpeg](img-20.jpeg)
 Figure 19 Mobility transition pathways + (potential) actions.
-4
 
 # B-2 Climate Neutrality Portfolio Design
 
@@ -1139,11 +1123,11 @@ Table 15 Metadata
 |  Is the data source local or regional/national? | Local | Local | N/A | N/A | N/A | Local | Local | National | Local | Local  |
 |  Expected availability | Available | Available | Available | Available | Available | Available | Available | Available | Available | Available  |
 |  Suggested collection interval | Annual | Annual | Twice a year | Twice a year | Twice a year | Twice a year | Annually | Annually | Continuously | Annually  |
-Part C – Enabling Climate Neutrality by 2030
+# Part C – Enabling Climate Neutrality by 2030
 
 In this section, Part C “Enabling Climate Neutrality by 2030” we aim to outline any enabling interventions, i.e., regarding organizational setting or collaborative governance models or related to social innovations –to support the climate action portfolios (Module B-2) as well as aiming to achieve co-benefits outlined in the impact pathway (Module B-1). These interventions also address the identified opportunities, gaps and barriers identified Module A-2 and A-3.
 
-## Module C-1 Governance Innovation Interventions
+# Module C-1 Governance Innovation Interventions
 
 As stated, to address all the barriers and opportunities, strengthening multi-level cooperation, between layers of government, cities, and actors within cities is needed. The joint effort of all European cities in the mission clarifies what the barriers to acceleration are and what solutions are needed for this at the European, national and local levels.
 
@@ -1161,18 +1145,16 @@ So to accelerate and make this all possible, sharing the right data and informat
 
 So, to move forward, we intend working within the NSS to reflect on all the data, including all the parts contained in the CCC, so to agree how we are progressing towards digitalisation of our data. From our experience, this on itself will result in a flywheel to more standardisation and development of the preconditions that are necessary for data driven action, covering aspects like organisation, policy goals and indicators, finance and governance structures. This will have to be a joint effort to be helpful and successful. Rotterdam has a lot of experience and invested on this issue. So, we think, utilising all the strengths and differences between the relevant stakeholders, towards this we have much to contribute. We would be very happy if the European Commission also joint this endeavour regarding the next iterations on the CCC.
 
-8
 ![img-21.jpeg](img-21.jpeg)
 Figure 20: Governance structure Rotterdam.
 
-# Municipal
+## Municipal
 
 We have recently created a more programmatic governance structure for the energy transition and other cross-departmental issues. This will enhance the capabilities for this mission (which is lead by the department of Sustainability) to more effectively cooperate on this mission. Also we have created a WHAT and HOW tables when issues arise addressing multiple programmes, on policy (what) and implementation and execution (how) to foster more holistic and integral approach towards multiple linked issues. So it will be easier to collaborate on our long-term strategy for the development of our city.
 
 # Module C-2 Social Innovation Interventions
 
 In A.3.3 we have listed the social innovation interventions that are currently being executed in Rotterdam. In 2026 a new administration will be elected. We will evaluate which social innovation interventions the new administration can deploy. But as been pointed out to us, our current set-up of our KAR, a user friendly digital and easy to understand monitoring of our progress and actions can bee judged as quite an innovation. We would encourage the reader not (only) to look at the paper version here in the annex 2 as part of the CCC but to experience it's look and feel about how we inform and engage with our citizens this way and frequently update about progress and new actions, to foster further collaborative action.
-0
 
 # Outlook and next steps
 
@@ -1180,33 +1162,28 @@ This section should draw any necessary conclusions on the CCC Action Plan above 
 
 We have made the following considerations and choices for the purpose of this CCC:
 
-Scope: we decided to focus in the CCC on the energy transition in the city, excluding targeting the emissions of the Port of Rotterdam area where the industry and the (fossil) energy sector is present. Observing the progress so far and being conscious of the limited influence of the municipality compared to the leading role of the national government and role of the EU, it's questionable whether the mission in its current approach and set-up is the right vehicle for change. We also do not include circular (scope3), biodiversity or climate adaptation goals and policies, unless in relationship with the energy transition. While they are of utmost importance, we are choosing to go for coherence instead of being overly complete for the purpose of this CCC and the mission in general. This can change in the future in relationship to the establishment and/or progress of other missions.
+- Scope: we decided to focus in the CCC on the energy transition in the city, excluding targeting the emissions of the Port of Rotterdam area where the industry and the (fossil) energy sector is present. Observing the progress so far and being conscious of the limited influence of the municipality compared to the leading role of the national government and role of the EU, it's questionable whether the mission in its current approach and set-up is the right vehicle for change. We also do not include circular (scope3), biodiversity or climate adaptation goals and policies, unless in relationship with the energy transition. While they are of utmost importance, we are choosing to go for coherence instead of being overly complete for the purpose of this CCC and the mission in general. This can change in the future in relationship to the establishment and/or progress of other missions.
 
-Goals: for 2030 no intermediate goal has yet been set specifically for the city, besides the overall -55% for the whole city. Regarding climate neutrality, there are goals set for mobility for 2040 and for the rest, mainly the Built environment in 2050. The moment of submitting this CCC coincides with
-
-a) the preparation of the incoming administration in 2026
-b) the preparation of new national measures by the national government to (still) reach the national goal in 2030, as well establishing a goal for 2035 as obligated to do by the national Climate Law, and
-c) the negotiations on the proposed EU target of -90% in 2040.
+- Goals: for 2030 no intermediate goal has yet been set specifically for the city, besides the overall -55% for the whole city. Regarding climate neutrality, there are goals set for mobility for 2040 and for the rest, mainly the Built environment in 2050. The moment of submitting this CCC coincides with
+  - a) the preparation of the incoming administration in 2026
+  - b) the preparation of new national measures by the national government to (still) reach the national goal in 2030, as well establishing a goal for 2035 as obligated to do by the national Climate Law, and
+  - c) the negotiations on the proposed EU target of -90% in 2040.
 
 This al has led us to the conclusion it is prudent to use the CCC as a starting point of preparation for the new administration, giving them the opportunity to establish an ambitious but feasible target with the further support this mission offers. To prepare, it's in our situation of utmost importance we can take these multilevel developments into consideration when we strategize what is wise. As we did in preparation for the current and previous administration, we are starting now to prepare new scenario's, policy options and an estimate of the needed investments.
 
 In addition, many of the current policies and associated action plans are set to contribute towards a target set for 2030, while some even stop in 2026. As a consequence, policies targeting the emissions beyond, for a big part are in the middle in the process of being updated, which are essential in complementing our portfolio of actions for the periods beyond. The earlier mentioned barrier on the short term also forces us to reevaluate and update certain policies. When the new administration announces their plans, we can update the CCC accordingly.
 
-Pathways: Since the admission of the CCC is for a part meant as an evaluation moment, an analysis has taken place to identify which pathways were not addressed in our KAR (as shown in section B). We performed a 'gap analysis', identifying the consistency between our policies, identified pathways and actions. On basis of the results, we have realigned our current pathways and added new ones as input for the policy shaping process. This will guide us further into updating our KAR (with new pathways, establishing intermediate and end goals, actions, stakeholder engagement and investments) in preparation for the incoming administration. Based on the choices the new administration makes; we will adjust the CCC.
+- Pathways: Since the admission of the CCC is for a part meant as an evaluation moment, an analysis has taken place to identify which pathways were not addressed in our KAR (as shown in section B). We performed a 'gap analysis', identifying the consistency between our policies, identified pathways and actions. On basis of the results, we have realigned our current pathways and added new ones as input for the policy shaping process. This will guide us further into updating our KAR (with new pathways, establishing intermediate and end goals, actions, stakeholder engagement and investments) in preparation for the incoming administration. Based on the choices the new administration makes; we will adjust the CCC.
 
-Portfolio of actions: our current portfolio of actions is part of the baseline. Therefore, we did not (yet) classify them in terms of levers of change and represent them in B-2, but as part of our current Climate Action Plan Rotterdam (KAR, Annex 1). As stated
-earlier, we are still dealing with a gap in 2030 based on the effect of our current portfolio of actions. We did not present a portfolio of actions capable of targeting this gap, since the only available options concerns scaling up current ones, where barriers prevent them now.
+- Portfolio of actions: our current portfolio of actions is part of the baseline. Therefore, we did not (yet) classify them in terms of levers of change and represent them in B-2, but as part of our current Climate Action Plan Rotterdam (KAR, Annex 1). As stated earlier, we are still dealing with a gap in 2030 based on the effect of our current portfolio of actions. We did not present a portfolio of actions capable of targeting this gap, since the only available options concerns scaling up current ones, where barriers prevent them now.
 
 Based on the gap analysis we did encounter established pathways without established actions, which need further exploring before they can be established as part of our portfolio of actions, as listed the KAR. In our next CCC we will add the actions that we have added to our portfolio of actions.
 
-1
-2
-
 # Appendix
 
-Climate Action Plan Rotterdam
-Current portfolio of actions
-The Rotterdam Climate Action Plan
+- Climate Action Plan Rotterdam
+- Current portfolio of actions
+- The Rotterdam Climate Action Plan
 
 ![img-22.jpeg](img-22.jpeg)
 

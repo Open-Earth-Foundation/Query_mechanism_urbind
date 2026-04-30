@@ -7,10 +7,14 @@ import pytest
 
 from backend.modules.writer import agent as writer_agent
 from backend.modules.writer.models import WriterOutput
+from backend.modules.writer.utils.markdown_helpers import (
+    extract_cited_ref_ids,
+    normalize_reference_citations,
+)
 from backend.modules.writer.utils.multi_pass import build_writer_context_bundle
 from backend.services.run_logger import RunLogger
-from backend.utils.paths import create_run_paths
 from backend.utils.config import AppConfig
+from backend.utils.paths import create_run_paths
 from tests.support import build_test_app_config
 
 
@@ -38,7 +42,28 @@ def _build_test_config(tmp_path: Path) -> AppConfig:
     return build_test_app_config(
         runs_dir=tmp_path / "output",
         markdown_dir=tmp_path / "documents",
-        enable_sql=False,
+    )
+
+
+def test_normalize_reference_citations_canonicalizes_compact_tokens() -> None:
+    content = "Munich [ref1] Berlin [ ref2 ] Keep [note] Invalid [ref_0]"
+
+    normalized = normalize_reference_citations(content)
+
+    assert normalized == "Munich [ref_1] Berlin [ref_2] Keep [note] Invalid [ref_0]"
+    assert extract_cited_ref_ids(normalized) == {"ref_1", "ref_2"}
+
+
+def test_normalize_reference_citations_logs_warning_for_rewrites(
+    caplog: pytest.LogCaptureFixture,
+) -> None:
+    caplog.set_level(logging.WARNING, logger="backend.modules.writer.utils.markdown_helpers")
+
+    normalized = normalize_reference_citations("Munich [ref1] Berlin [ref2]")
+
+    assert normalized == "Munich [ref_1] Berlin [ref_2]"
+    assert any(
+        "Normalized compact reference citations" in record.message for record in caplog.records
     )
 
 
@@ -128,62 +153,6 @@ def test_writer_logs_warning_when_unknown_ref_is_used(
     assert any("unknown reference ids: ref_99" in message for message in messages)
 
 
-def test_build_writer_context_bundle_keeps_only_writer_relevant_markdown_fields() -> None:
-    context_bundle: dict[str, object] = {
-        "sql": None,
-        "research_question": "Refined question",
-        "analysis_mode": "aggregate",
-        "final": "output/final.md",
-        "markdown": {
-            "status": "success",
-            "analysis_mode": "aggregate",
-            "excerpt_count": 2,
-            "accepted_chunk_ids": ["chunk-1"],
-            "rejected_chunk_ids": ["chunk-2"],
-            "unresolved_chunk_ids": ["chunk-3"],
-            "batch_failures": [{"city_name": "Munich"}],
-            "decision_audit": {"ok": True},
-            "error": {"code": "PARTIAL"},
-            "selected_city_names": ["Munich", "Berlin"],
-            "inspected_city_names": ["Munich", "Berlin"],
-            "selected_cities": ["munich", "berlin"],
-            "inspected_cities": ["munich", "berlin"],
-            "excerpts": [
-                {
-                    "ref_id": "ref_1",
-                    "city_name": "Munich",
-                    "quote": "Munich evidence.",
-                    "partial_answer": "Munich evidence.",
-                }
-            ],
-        },
-    }
-
-    markdown_payload = context_bundle["markdown"]
-    assert isinstance(markdown_payload, dict)
-    excerpts = markdown_payload["excerpts"]
-    assert isinstance(excerpts, list)
-    writer_bundle = build_writer_context_bundle(
-        context_bundle=context_bundle,
-        excerpts=excerpts,
-        city_names=["Munich", "Berlin"],
-    )
-
-    assert writer_bundle["research_question"] == "Refined question"
-    assert "final" not in writer_bundle
-    markdown_bundle = writer_bundle["markdown"]
-    assert isinstance(markdown_bundle, dict)
-    assert markdown_bundle["status"] == "success"
-    assert markdown_bundle["excerpt_count"] == 1
-    assert markdown_bundle["selected_city_names"] == ["Munich", "Berlin"]
-    assert "accepted_chunk_ids" not in markdown_bundle
-    assert "rejected_chunk_ids" not in markdown_bundle
-    assert "unresolved_chunk_ids" not in markdown_bundle
-    assert "batch_failures" not in markdown_bundle
-    assert "decision_audit" not in markdown_bundle
-    assert "error" not in markdown_bundle
-
-
 def test_writer_retries_when_city_citation_coverage_is_missing(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
@@ -260,7 +229,7 @@ def test_writer_retries_when_city_citation_coverage_is_missing(
     )
 
 
-def test_writer_returns_partial_coverage_metadata_after_retry_exhaustion(
+def test_writer_normalizes_compact_reference_tokens_before_coverage_checks(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
     caplog: pytest.LogCaptureFixture,
@@ -287,24 +256,21 @@ def test_writer_returns_partial_coverage_metadata_after_retry_exhaustion(
         }
     }
 
-    responses = [
-        WriterOutput(content="Munich update [ref_1]"),
-        WriterOutput(content="Munich update [ref_1]"),
-    ]
-
+    captured_inputs: list[dict[str, object]] = []
     monkeypatch.setattr(writer_agent, "build_writer_agent", lambda *_args, **_kwargs: object())
 
     def _fake_run_agent_sync(
         _agent: object,
-        _input_text: str,
+        input_text: str,
         log_llm_payload: bool,
         **_kwargs: object,
     ) -> _FakeRunResult:
         del log_llm_payload
-        return _FakeRunResult(responses.pop(0))
+        captured_inputs.append(json.loads(input_text))
+        return _FakeRunResult(WriterOutput(content="Munich update [ref1]\nBerlin update [ref2]"))
 
     monkeypatch.setattr(writer_agent, "run_agent_sync", _fake_run_agent_sync)
-    caplog.set_level(logging.WARNING, logger=writer_agent.__name__)
+    caplog.set_level(logging.INFO)
 
     output = writer_agent.write_markdown(
         question="Summarize city charging evidence.",
@@ -312,16 +278,75 @@ def test_writer_returns_partial_coverage_metadata_after_retry_exhaustion(
         config=config,
         api_key="test-key",
         log_llm_payload=False,
-        run_id="run-writer-partial",
+        run_id="run-writer-compact-refs",
     )
 
-    assert output.citation_coverage is not None
-    assert output.citation_coverage.status == "partial"
-    assert output.citation_coverage.coverage_ratio == "1/2"
-    assert output.citation_coverage.missing_cities == ["Berlin"]
+    assert len(captured_inputs) == 1
+    assert "[ref_1]" in output.content
+    assert "[ref_2]" in output.content
+    assert "[ref1]" not in output.content
+    assert "[ref2]" not in output.content
     coverage_payloads = _extract_coverage_payloads(caplog.records)
     assert any(
-        payload.get("status") == "exhausted" and payload.get("coverage_ratio") == "1/2"
+        payload.get("status") == "confirmed" and payload.get("coverage_ratio") == "2/2"
+        for payload in coverage_payloads
+    )
+
+
+def test_writer_treats_city_name_aliases_as_one_city_for_coverage(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+    caplog: pytest.LogCaptureFixture,
+) -> None:
+    """Coverage should not split the same city across hyphen and underscore aliases."""
+    config = _build_test_config(tmp_path)
+    context_bundle: dict[str, object] = {
+        "markdown": {
+            "excerpt_count": 1,
+            "selected_city_names": ["Vitoria-Gasteiz", "Vitoria_Gasteiz"],
+            "excerpts": [
+                {
+                    "ref_id": "ref_1",
+                    "city_name": "Vitoria_Gasteiz",
+                    "city_key": "vitoria-gasteiz",
+                    "quote": "Vitoria evidence.",
+                    "partial_answer": "Vitoria evidence.",
+                }
+            ],
+        }
+    }
+
+    captured_inputs: list[dict[str, object]] = []
+    monkeypatch.setattr(writer_agent, "build_writer_agent", lambda *_args, **_kwargs: object())
+
+    def _fake_run_agent_sync(
+        _agent: object,
+        input_text: str,
+        log_llm_payload: bool,
+        **_kwargs: object,
+    ) -> _FakeRunResult:
+        del log_llm_payload
+        captured_inputs.append(json.loads(input_text))
+        return _FakeRunResult(WriterOutput(content="Vitoria summary [ref_1]"))
+
+    monkeypatch.setattr(writer_agent, "run_agent_sync", _fake_run_agent_sync)
+    caplog.set_level(logging.INFO, logger=writer_agent.__name__)
+
+    output = writer_agent.write_markdown(
+        question="Summarize Vitoria evidence.",
+        context_bundle=context_bundle,
+        config=config,
+        api_key="test-key",
+        log_llm_payload=False,
+        run_id="run-vitoria-alias",
+    )
+
+    assert len(captured_inputs) == 1
+    assert "reconsideration" not in captured_inputs[0]
+    assert "Vitoria summary [ref_1]" in output.content
+    coverage_payloads = _extract_coverage_payloads(caplog.records)
+    assert any(
+        payload.get("status") == "confirmed" and payload.get("coverage_ratio") == "1/1"
         for payload in coverage_payloads
     )
 
@@ -639,6 +664,128 @@ def test_writer_replaces_existing_model_footer_with_canonical_footer(
     assert "## Cities considered" in output.content
     assert "- Munich [ref_1]" not in output.content
     assert "- Berlin [ref_2]" not in output.content
+
+
+def test_build_writer_context_bundle_keeps_only_writer_relevant_markdown_fields() -> None:
+    context_bundle: dict[str, object] = {
+        "sql": None,
+        "research_question": "Refined question",
+        "analysis_mode": "aggregate",
+        "final": "output/final.md",
+        "markdown": {
+            "status": "success",
+            "analysis_mode": "aggregate",
+            "excerpt_count": 2,
+            "accepted_chunk_ids": ["chunk-1"],
+            "rejected_chunk_ids": ["chunk-2"],
+            "unresolved_chunk_ids": ["chunk-3"],
+            "batch_failures": [{"city_name": "Munich"}],
+            "decision_audit": {"ok": True},
+            "error": {"code": "PARTIAL"},
+            "selected_city_names": ["Munich", "Berlin"],
+            "inspected_city_names": ["Munich", "Berlin"],
+            "selected_cities": ["munich", "berlin"],
+            "inspected_cities": ["munich", "berlin"],
+            "excerpts": [
+                {
+                    "ref_id": "ref_1",
+                    "city_name": "Munich",
+                    "quote": "Munich evidence.",
+                    "partial_answer": "Munich evidence.",
+                }
+            ],
+        },
+    }
+
+    markdown_payload = context_bundle["markdown"]
+    assert isinstance(markdown_payload, dict)
+    excerpts = markdown_payload["excerpts"]
+    assert isinstance(excerpts, list)
+    writer_bundle = build_writer_context_bundle(
+        context_bundle=context_bundle,
+        excerpts=excerpts,
+        city_names=["Munich", "Berlin"],
+    )
+
+    assert writer_bundle["research_question"] == "Refined question"
+    assert "final" not in writer_bundle
+    markdown_bundle = writer_bundle["markdown"]
+    assert isinstance(markdown_bundle, dict)
+    assert markdown_bundle["status"] == "success"
+    assert markdown_bundle["excerpt_count"] == 1
+    assert markdown_bundle["selected_city_names"] == ["Munich", "Berlin"]
+    assert "accepted_chunk_ids" not in markdown_bundle
+    assert "rejected_chunk_ids" not in markdown_bundle
+    assert "unresolved_chunk_ids" not in markdown_bundle
+    assert "batch_failures" not in markdown_bundle
+    assert "decision_audit" not in markdown_bundle
+    assert "error" not in markdown_bundle
+
+
+def test_writer_returns_partial_coverage_metadata_after_retry_exhaustion(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+    caplog: pytest.LogCaptureFixture,
+) -> None:
+    config = _build_test_config(tmp_path)
+    context_bundle: dict[str, object] = {
+        "markdown": {
+            "excerpt_count": 2,
+            "selected_city_names": ["Munich", "Berlin"],
+            "excerpts": [
+                {
+                    "ref_id": "ref_1",
+                    "city_name": "Munich",
+                    "quote": "Munich charging evidence.",
+                    "partial_answer": "Munich charging evidence.",
+                },
+                {
+                    "ref_id": "ref_2",
+                    "city_name": "Berlin",
+                    "quote": "Berlin charging evidence.",
+                    "partial_answer": "Berlin charging evidence.",
+                },
+            ],
+        }
+    }
+
+    responses = [
+        WriterOutput(content="Munich update [ref_1]"),
+        WriterOutput(content="Munich update [ref_1]"),
+    ]
+
+    monkeypatch.setattr(writer_agent, "build_writer_agent", lambda *_args, **_kwargs: object())
+
+    def _fake_run_agent_sync(
+        _agent: object,
+        _input_text: str,
+        log_llm_payload: bool,
+        **_kwargs: object,
+    ) -> _FakeRunResult:
+        del log_llm_payload
+        return _FakeRunResult(responses.pop(0))
+
+    monkeypatch.setattr(writer_agent, "run_agent_sync", _fake_run_agent_sync)
+    caplog.set_level(logging.WARNING, logger=writer_agent.__name__)
+
+    output = writer_agent.write_markdown(
+        question="Summarize city charging evidence.",
+        context_bundle=context_bundle,
+        config=config,
+        api_key="test-key",
+        log_llm_payload=False,
+        run_id="run-writer-partial",
+    )
+
+    assert output.citation_coverage is not None
+    assert output.citation_coverage.status == "partial"
+    assert output.citation_coverage.coverage_ratio == "1/2"
+    assert output.citation_coverage.missing_cities == ["Berlin"]
+    coverage_payloads = _extract_coverage_payloads(caplog.records)
+    assert any(
+        payload.get("status") == "exhausted" and payload.get("coverage_ratio") == "1/2"
+        for payload in coverage_payloads
+    )
 
 
 def test_writer_uses_multi_pass_batches_and_combines_them(

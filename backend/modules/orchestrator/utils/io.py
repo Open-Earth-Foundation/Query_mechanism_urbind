@@ -5,7 +5,6 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from backend.api.services.context_prompt_cache import compute_prompt_context_cache, write_prompt_context_cache
 from backend.services.run_logger import RunLogger
 from backend.utils.config import AppConfig
 from backend.utils.paths import RunPaths
@@ -45,21 +44,24 @@ def write_final_output(
     paths: RunPaths,
     run_logger: RunLogger,
     config: AppConfig,
-    finish_reason: str = "completed",
 ) -> None:
     """
-    Write the final output file.
+    Write the final output file without run-metadata footers.
 
     Args:
         question: Original user question
         content: Generated content
         paths: Run paths for output
         run_logger: Logger for recording artifacts
-        finish_reason: Finish reason for the output
+        config: Application configuration used for prompt-context caching
     """
+    from backend.api.services.context_prompt_cache import (
+        compute_prompt_context_cache,
+        write_prompt_context_cache,
+    )
+
     question_header = f"# Question\n{question}\n\n"
-    finish_note = f"\n\n---\nFinish reason: {finish_reason}\n"
-    rendered_content = f"{question_header}{content}{finish_note}"
+    rendered_content = f"{question_header}{content}"
     final_path = paths.final_output
     final_path.write_text(rendered_content, encoding="utf-8")
     run_logger.record_artifact("final_output", final_path)

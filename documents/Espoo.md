@@ -26,28 +26,25 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of Contents
 
-Table of Contents ... 2
-Introduction ... 4
-Work Process ... 6
-Part A – Current State of Climate Action ... 7
-Module A-1 Greenhouse Gas Emissions Baseline Inventory ... 7
-Module A-2 Current Policies and Strategies Assessment ... 18
-Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality ... 29
-Part B – Pathways towards Climate Neutrality by 2030 ... 39
-Module B-1 Climate Neutrality Scenarios and Impact Pathways ... 39
-Module B-2 Climate Neutrality Portfolio Design ... 60
-Module B-3 Indicators for Monitoring, Evaluation and Learning ... 97
-Part C – Enabling Climate Neutrality by 2030 ... 117
-Module C-1 Organisational and Governance Innovation Interventions ... 117
-Module C-2 Social and Other Innovation Interventions ... 128
-Module C-3 Financing of Action Portfolio ... 138
-Outlook and next steps ... 143
-Annexes ... 144
-ESPOO ESBO
-
-Climate Neutrality Action Plan
-
-C
+- Introduction
+- Work Process
+- Part A – Current State of Climate Action
+- Module A-1 Greenhouse Gas Emissions Baseline Inventory
+- Module A-2 Current Policies and Strategies Assessment
+- Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
+- Part B – Pathways towards Climate Neutrality by 2030
+- Module B-1 Climate Neutrality Scenarios and Impact Pathways
+- Module B-2 Climate Neutrality Portfolio Design
+- Module B-3 Indicators for Monitoring, Evaluation and Learning
+- Part C – Enabling Climate Neutrality by 2030
+- Module C-1 Organisational and Governance Innovation Interventions
+- Module C-2 Social and Other Innovation Interventions
+- Module C-3 Financing of Action Portfolio
+- Outlook and next steps
+- Annexes
+- ESPOO ESBO
+- Climate Neutrality Action Plan
+- C
 
 # Summary
 
@@ -3456,42 +3453,26 @@ The content of this document reflects only the author's view. The European Commi
 
 # Table of contents
 
-Introduction ... 1
-Goal: Climate neutrality by 2030 ... 2
-Key priorities and strategic interventions ... 3
-Principles and process ... 4
-Signatories ... 8
-Contract with signatures ... 10
-
-Appendix: Individual Signatory Commitments
-1
-
-ESPOO ESBO
-
-Climate-Neutrality Commitments
-
-Introduction
-
-As one of the leading European smart and sustainable cities, the City of Espoo is strongly committed to climate neutrality by 2030. In 2019, we prepared Sustainable Energy and Climate Action Plan (SECAP) as a key instrument for its implementation. In 2021, our ambitious climate target was further emphasized when selected by the Espoo City Council as one of the seven key strategic goals of our city strategy, the Espoo Story.
-
-Our aim for the 100 Smart and Climate-Neutral Cities Mission is ecosystem-driven co-creation. Espoo is looking for the most impactful ways to cut emissions in cooperation with universities, research institutes, businesses, national and regional authorities, and citizens. As the largest innovation ecosystem in Northern Europe, Espoo is already an experimentation and innovation hub where smart, digital, and sustainable solutions of the future are being developed. Together with our partners we have created a strong overall vision and commitment to systemic change and are finding business-driven climate solutions that will create a positive carbon handprint and promote green growth both locally and globally.
-
-In the past, Espoo has ranked number one in two sustainability benchmark studies of 145 European cities conducted by Tilburg University in 2016 and 2017. Our goal is to keep the growth sustainable also in the future. As the winner of the Intelligent Community of the Year award in 2018 and the Energy Globe World Award in 2019 and as a finalist in the European Capital of Innovation Awards in 2019, 2020 and 2022, we have been recognized as a global forerunner in smart city development and sustainability. We are actively sharing our knowledge and learning together with the European community through city networks such as Eurocities, ICLEI and URBACT and initiatives such as the Covenant of Mayors, Circular Cities Declaration and Local Green Deal.
-
-Espoo and its partners are finding the most impactful ways to cut CO2 emissions at a rapid pace. The climate solutions in Espoo focus on emissions from energy, transport, land use, and construction. Highlights of our journey include carbon-neutral district heating for 250,000 end-users that will be produced during the 2020s and coal completely abandoned already by 2025. In addition, major investments have been made to new metro and tram connections to keep the city growth sustainable. An electric charging infrastructure is well under way to help to solve the challenge of cutting down private car emissions in a network city with five urban centres with relatively long distances. All new buses and vehicles in the city fleet are low emission models. City bike system brings co-benefits of cleaner air, health, and well-being. However, new solutions to bring down emissions particularly from transport and logistics, are still needed to reach the city-wide goal of climate-neutrality.
-
-We are committed to building a city that is both sustainable and inclusive. Espoo hosts strategic cross-sectoral programmes that allow dialogue and co-creation between political leaders, city officials, research and innovation actors, citizen forums and NGOs. We are co-creating human-centric solutions that are ecologically, economically and socially sustainable and benefit diverse groups of citizens ensuring that no one is left behind. A thousand staff members, citizens and partners were engaged in reviewing Espoo's progress towards a sustainable future in our UN Agenda 2030 Voluntary Local Review in 2020. We are strongly committed to delivering the Cities Mission in an equally inclusive and participatory manner bringing the policy close to people.
-2
-
-ESPOO ESBO
-
-Climate-Neutrality Commitments
-
-#
-
-Participating in the Mission is a way for us to accelerate local collaboration and action towards rapid decarbonization as well as to strengthen our role as an interesting piloting and innovation hub for low-carbon solutions in Europe. We are eager to learn and share our successes with others, together building the path for climate neutrality. As one of the Mission cities, we will focus on experimentation, co-creation and tangible results – together with the entire community.
-
-In this commitment we outline and declare the fruitful collaboration with our partners towards climate-neutrality. City of Espoo has a unique way to develop together with different stakeholders: companies, civil society, and citizens. We see this Commitment and the Mission as an important tool to further tighten and strengthen this collaboration.
+- Introduction
+- Goal: Climate neutrality by 2030
+- Key priorities and strategic interventions
+- Principles and process
+- Signatories
+- Contract with signatures
+- Appendix: Individual Signatory Commitments
+- ESPOO ESBO
+- Climate-Neutrality Commitments
+- Introduction
+- As one of the leading European smart and sustainable cities, the City of Espoo is strongly committed to climate neutrality by 2030. In 2019, we prepared Sustainable Energy and Climate Action Plan (SECAP) as a key instrument for its implementation. In 2021, our ambitious climate target was further emphasized when selected by the Espoo City Council as one of the seven key strategic goals of our city strategy, the Espoo Story
+- Our aim for the 100 Smart and Climate-Neutral Cities Mission is ecosystem-driven co-creation. Espoo is looking for the most impactful ways to cut emissions in cooperation with universities, research institutes, businesses, national and regional authorities, and citizens. As the largest innovation ecosystem in Northern Europe, Espoo is already an experimentation and innovation hub where smart, digital, and sustainable solutions of the future are being developed. Together with our partners we have created a strong overall vision and commitment to systemic change and are finding business-driven climate solutions that will create a positive carbon handprint and promote green growth both locally and globally
+- In the past, Espoo has ranked number one in two sustainability benchmark studies of 145 European cities conducted by Tilburg University in 2016 and 2017. Our goal is to keep the growth sustainable also in the future. As the winner of the Intelligent Community of the Year award in 2018 and the Energy Globe World Award in 2019 and as a finalist in the European Capital of Innovation Awards in 2019, 2020 and 2022, we have been recognized as a global forerunner in smart city development and sustainability. We are actively sharing our knowledge and learning together with the European community through city networks such as Eurocities, ICLEI and URBACT and initiatives such as the Covenant of Mayors, Circular Cities Declaration and Local Green Deal
+- Espoo and its partners are finding the most impactful ways to cut CO2 emissions at a rapid pace. The climate solutions in Espoo focus on emissions from energy, transport, land use, and construction. Highlights of our journey include carbon-neutral district heating for 250,000 end-users that will be produced during the 2020s and coal completely abandoned already by 2025. In addition, major investments have been made to new metro and tram connections to keep the city growth sustainable. An electric charging infrastructure is well under way to help to solve the challenge of cutting down private car emissions in a network city with five urban centres with relatively long distances. All new buses and vehicles in the city fleet are low emission models. City bike system brings co-benefits of cleaner air, health, and well-being. However, new solutions to bring down emissions particularly from transport and logistics, are still needed to reach the city-wide goal of climate-neutrality
+- We are committed to building a city that is both sustainable and inclusive. Espoo hosts strategic cross-sectoral programmes that allow dialogue and co-creation between political leaders, city officials, research and innovation actors, citizen forums and NGOs. We are co-creating human-centric solutions that are ecologically, economically and socially sustainable and benefit diverse groups of citizens ensuring that no one is left behind. A thousand staff members, citizens and partners were engaged in reviewing Espoo's progress towards a sustainable future in our UN Agenda 2030 Voluntary Local Review in 2020. We are strongly committed to delivering the Cities Mission in an equally inclusive and participatory manner bringing the policy close to people
+- ESPOO ESBO
+- Climate-Neutrality Commitments
+- #
+- Participating in the Mission is a way for us to accelerate local collaboration and action towards rapid decarbonization as well as to strengthen our role as an interesting piloting and innovation hub for low-carbon solutions in Europe. We are eager to learn and share our successes with others, together building the path for climate neutrality. As one of the Mission cities, we will focus on experimentation, co-creation and tangible results – together with the entire community
+- In this commitment we outline and declare the fruitful collaboration with our partners towards climate-neutrality. City of Espoo has a unique way to develop together with different stakeholders: companies, civil society, and citizens. We see this Commitment and the Mission as an important tool to further tighten and strengthen this collaboration
 
 # 2 Goal: Climate neutrality by 2030
 
