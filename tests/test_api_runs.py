@@ -1172,6 +1172,7 @@ def test_api_list_runs_search_numeric_fragment_matches_run_id_or_question_only(
 def test_api_run_diagnostics_returns_warning_and_error_artifacts(
     tmp_path: Path,
 ) -> None:
+    """Diagnostics should expose run-local artifact labels plus parsed failure details."""
     runs_dir = tmp_path / "output"
     markdown_dir = tmp_path / "documents"
     markdown_dir.mkdir(parents=True, exist_ok=True)
@@ -1278,11 +1279,66 @@ def test_api_run_diagnostics_returns_warning_and_error_artifacts(
         assert payload["error_log_text"].startswith(
             "2026-01-01 00:00:01 worker.py:11 - ERROR - writer crashed"
         )
-        assert payload["artifacts"]["run_summary"] == str(paths.run_summary)
-        assert payload["artifacts"]["error_log"] == str(paths.error_log)
-        assert payload["artifacts"]["run_log"] == str(paths.base_dir / "run.log")
+        assert payload["artifacts"]["run_summary"] == "run_summary.txt"
+        assert payload["artifacts"]["error_log"] == "error_log.txt"
+        assert payload["artifacts"]["run_log"] == "run.log"
         assert payload["retry_summary"]["total_events"] == 1
         assert payload["llm_usage"]["calls"] == 2
+
+
+def test_api_run_diagnostics_ignores_foreign_artifact_paths(tmp_path: Path) -> None:
+    """Diagnostics should ignore foreign artifact paths and stay inside the run folder."""
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    paths = _write_run_listing_artifacts(
+        question="Failed run",
+        run_id="run-foreign-artifacts",
+        status="failed",
+        config=config,
+        finish_reason="writer_unexpected_error",
+        error={"code": "RUN_EXECUTION_ERROR", "message": "Max turns (5) exceeded"},
+    )
+
+    foreign_dir = tmp_path / "foreign-artifacts"
+    foreign_dir.mkdir(parents=True, exist_ok=True)
+    foreign_summary = foreign_dir / "run_summary.txt"
+    foreign_error_log = foreign_dir / "error_log.txt"
+    foreign_summary.write_text("FOREIGN SUMMARY", encoding="utf-8")
+    foreign_error_log.write_text("FOREIGN SECRET", encoding="utf-8")
+
+    run_payload = json.loads(paths.run_log.read_text(encoding="utf-8"))
+    run_payload["artifacts"] = {
+        "run_summary": str(foreign_summary),
+        "error_log": str(foreign_error_log),
+    }
+    paths.run_log.write_text(
+        json.dumps(run_payload, ensure_ascii=True, indent=2),
+        encoding="utf-8",
+    )
+    paths.run_summary.write_text("LOCAL SUMMARY", encoding="utf-8")
+    paths.error_log.write_text("LOCAL ERROR", encoding="utf-8")
+    (paths.base_dir / "run.log").write_text(
+        "\n".join(
+            [
+                "2026-01-01 00:00:00 worker.py:10 - INFO - setup",
+                "2026-01-01 00:00:01 worker.py:11 - ERROR - local failure",
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get("/api/v1/runs/run-foreign-artifacts/diagnostics")
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["artifacts"]["run_summary"] == "run_summary.txt"
+        assert payload["artifacts"]["error_log"] == "error_log.txt"
+        assert payload["artifacts"]["run_log"] == "run.log"
+        assert payload["error_log_text"] == "LOCAL ERROR"
+        assert "FOREIGN SECRET" not in payload["error_log_text"]
 
 
 def test_api_output_and_context_resolve_stale_container_artifact_paths(

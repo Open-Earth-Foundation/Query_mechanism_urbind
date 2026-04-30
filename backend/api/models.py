@@ -91,7 +91,7 @@ class RunStatusResponse(BaseModel):
 
 
 class RunDiagnosticsArtifactPaths(BaseModel):
-    """Resolved artifact paths available for one run diagnostics view."""
+    """Run-local artifact labels available for one diagnostics view."""
 
     run_log: str | None = None
     run_summary: str | None = None

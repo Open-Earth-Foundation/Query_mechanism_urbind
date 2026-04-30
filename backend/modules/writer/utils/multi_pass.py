@@ -67,6 +67,7 @@ def plan_writer_multi_pass(
     selected_city_names: list[str],
     threshold_tokens: int,
     chunk_tokens: int,
+    max_input_tokens: int | None = None,
 ) -> tuple[WriterMultiPassPlan | None, list[WriterBatch]]:
     """Split oversized writer context into city-scoped batches when needed."""
     base_payload = build_writer_payload(
@@ -77,6 +78,12 @@ def plan_writer_multi_pass(
     )
     payload_tokens = count_writer_payload_tokens(base_payload)
     effective_chunk_tokens = max(chunk_tokens, 1)
+    if max_input_tokens is not None and payload_tokens > max_input_tokens and payload_tokens <= threshold_tokens:
+        raise ValueError(
+            "Writer payload exceeds the configured LLM input token limit before multi-pass "
+            f"can trigger: payload_tokens={payload_tokens}, limit={max_input_tokens}, "
+            f"threshold={threshold_tokens}."
+        )
     if payload_tokens <= threshold_tokens:
         return None, []
 
@@ -98,6 +105,18 @@ def plan_writer_multi_pass(
         chunk_tokens=effective_chunk_tokens,
         units=expanded_units,
     )
+    if max_input_tokens is not None:
+        largest_batch_tokens = max(
+            (batch.payload_tokens for batch in batches),
+            default=payload_tokens,
+        )
+        if largest_batch_tokens > max_input_tokens:
+            raise ValueError(
+                "Writer payload remains above the configured LLM input token limit after "
+                f"batching: largest_batch_tokens={largest_batch_tokens}, limit={max_input_tokens}, "
+                f"threshold={threshold_tokens}, chunk_target={effective_chunk_tokens}, "
+                f"batch_count={len(batches)}."
+            )
     if len(batches) <= 1:
         return None, []
 

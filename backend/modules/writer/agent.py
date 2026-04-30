@@ -45,6 +45,7 @@ from backend.utils.json_io import write_json
 from backend.utils.paths import RunPaths
 from backend.utils.prompts import load_prompt
 from openai import APIConnectionError, APIStatusError, APITimeoutError
+from backend.utils.tokenization import get_max_input_tokens
 
 from backend.utils.retry import (
     RetrySettings,
@@ -157,6 +158,15 @@ def _is_retryable_writer_error(exc: Exception) -> bool:
     if isinstance(exc, APIStatusError):
         return exc.status_code in {408, 429, 500, 502, 503, 504}
     return False
+
+
+def _build_writer_api_retry_settings(config: AppConfig) -> RetrySettings:
+    """Return shared retry settings for writer provider calls."""
+    return RetrySettings.bounded(
+        max_attempts=config.retry.max_attempts,
+        backoff_base_seconds=config.retry.backoff_base_seconds,
+        backoff_max_seconds=config.retry.backoff_max_seconds,
+    )
 
 
 def _build_citation_coverage(
@@ -283,11 +293,7 @@ def _write_markdown_single_bundle(
         backoff_max_seconds=config.retry.backoff_max_seconds,
     )
 
-    api_retry_settings = RetrySettings.bounded(
-        max_attempts=config.retry.max_attempts,
-        backoff_base_seconds=config.retry.backoff_base_seconds,
-        backoff_max_seconds=config.retry.backoff_max_seconds,
-    )
+    api_retry_settings = _build_writer_api_retry_settings(config)
 
     previous_answer = ""
     missing_city_keys: list[str] = []
@@ -449,6 +455,7 @@ def _combine_writer_drafts(
     config: AppConfig,
     api_key: str,
     log_llm_payload: bool,
+    run_id: str | None,
 ) -> str:
     """Combine multiple batch drafts into one cited final answer."""
     combine_agent = build_writer_combine_agent(config, api_key)
@@ -468,11 +475,17 @@ def _combine_writer_drafts(
         "selected_cities": selected_city_names,
         "draft_answers": draft_answers,
     }
-    combined_output = _run_writer_once(
-        agent=combine_agent,
-        payload=payload,
-        max_turns=config.writer.max_turns,
-        log_llm_payload=log_llm_payload,
+    combined_output = call_with_retries(
+        lambda: _run_writer_once(
+            agent=combine_agent,
+            payload=payload,
+            max_turns=config.writer.max_turns,
+            log_llm_payload=log_llm_payload,
+        ),
+        operation="writer.combine_llm_call",
+        retry_settings=_build_writer_api_retry_settings(config),
+        should_retry=_is_retryable_writer_error,
+        run_id=run_id,
     )
     return combined_output.content
 
@@ -532,6 +545,12 @@ def write_markdown(
         excerpts=extract_markdown_excerpts(markdown_bundle),
         city_names=selected_city_names,
     )
+    writer_max_input_tokens = get_max_input_tokens(
+        config.writer.context_window_tokens,
+        config.writer.max_output_tokens,
+        config.writer.input_token_reserve,
+        config.writer.max_input_tokens,
+    )
     plan, batches = plan_writer_multi_pass(
         question=question,
         context_bundle=writer_context_bundle,
@@ -539,6 +558,7 @@ def write_markdown(
         selected_city_names=selected_city_names,
         threshold_tokens=config.writer.multi_pass_threshold_tokens,
         chunk_tokens=config.writer.multi_pass_chunk_tokens,
+        max_input_tokens=writer_max_input_tokens,
     )
     if plan is None:
         return _write_markdown_single_bundle(
@@ -582,6 +602,7 @@ def write_markdown(
         config=config,
         api_key=api_key,
         log_llm_payload=log_llm_payload,
+        run_id=run_id,
     )
     (
         content,

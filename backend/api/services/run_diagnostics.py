@@ -65,9 +65,9 @@ def build_run_diagnostics(
         finish_reason=record.finish_reason,
         error=record.error,
         artifacts=RunDiagnosticsArtifactPaths(
-            run_log=str(run_log_path) if run_log_path is not None else None,
-            run_summary=str(run_summary_path) if run_summary_path is not None else None,
-            error_log=str(error_log_path) if error_log_path is not None else None,
+            run_log=_build_artifact_label(run_log_path, run_dir),
+            run_summary=_build_artifact_label(run_summary_path, run_dir),
+            error_log=_build_artifact_label(error_log_path, run_dir),
         ),
         writer_citation_coverage=_read_writer_citation_coverage(
             run_log_payload,
@@ -98,17 +98,66 @@ def _resolve_artifact_path(
     run_dir: Path,
     fallback_name: str,
 ) -> Path | None:
-    """Resolve one artifact path from run.json or the local run folder."""
+    """Resolve one artifact path from run.json while constraining it to ``run_dir``."""
+    run_dir_resolved = run_dir.resolve(strict=False)
     candidates: list[Path] = []
     if isinstance(raw_value, str) and raw_value.strip():
-        configured_path = Path(raw_value)
-        candidates.append(configured_path)
-        candidates.append(run_dir / configured_path.name)
-    candidates.append(run_dir / fallback_name)
+        configured_path = Path(raw_value.strip())
+        relative_candidate = _coerce_run_relative_path(
+            configured_path,
+            run_dir_resolved=run_dir_resolved,
+        )
+        if relative_candidate is not None:
+            candidates.append(run_dir / relative_candidate)
+        basename_candidate = _coerce_simple_relative_path(Path(configured_path.name))
+        if basename_candidate is not None:
+            candidates.append(run_dir / basename_candidate)
+    fallback_candidate = _coerce_simple_relative_path(Path(fallback_name))
+    if fallback_candidate is not None:
+        candidates.append(run_dir / fallback_candidate)
     for candidate in candidates:
-        if candidate.exists():
+        if _is_run_local_path(candidate, run_dir_resolved) and candidate.exists():
             return candidate
     return None
+
+
+def _build_artifact_label(path: Path | None, run_dir: Path) -> str | None:
+    """Return a run-local artifact label instead of exposing a host filesystem path."""
+    if path is None:
+        return None
+    return path.relative_to(run_dir).as_posix()
+
+
+def _coerce_run_relative_path(
+    candidate: Path,
+    *,
+    run_dir_resolved: Path,
+) -> Path | None:
+    """Convert one configured artifact path into a safe path relative to ``run_dir``."""
+    if candidate.is_absolute():
+        try:
+            return candidate.resolve(strict=False).relative_to(run_dir_resolved)
+        except ValueError:
+            return None
+    return _coerce_simple_relative_path(candidate)
+
+
+def _coerce_simple_relative_path(candidate: Path) -> Path | None:
+    """Return a relative path only when it stays inside the run directory."""
+    if candidate.is_absolute() or candidate.drive or candidate.anchor or not candidate.parts:
+        return None
+    if any(part == ".." for part in candidate.parts):
+        return None
+    return candidate
+
+
+def _is_run_local_path(candidate: Path, run_dir_resolved: Path) -> bool:
+    """Return True when one candidate resolves inside the current run directory."""
+    try:
+        candidate.resolve(strict=False).relative_to(run_dir_resolved)
+    except ValueError:
+        return False
+    return True
 
 
 def _read_warning_entries(run_log_path: Path | None) -> list[str]:

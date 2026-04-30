@@ -892,6 +892,152 @@ def test_writer_uses_multi_pass_batches_and_combines_them(
     assert artifact_path.exists()
 
 
+def test_writer_retries_transient_error_while_combining_multi_pass_drafts(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+    caplog: pytest.LogCaptureFixture,
+) -> None:
+    """Multi-pass combine should retry transient provider failures before surfacing an error."""
+    config = _build_test_config(tmp_path)
+    config.writer.multi_pass_threshold_tokens = 200
+    config.writer.multi_pass_chunk_tokens = 200
+    config.retry.backoff_base_seconds = 0.0
+    config.retry.backoff_max_seconds = 0.0
+    question = "Summarize retrofit evidence across selected cities."
+    context_bundle: dict[str, object] = {
+        "analysis_mode": "aggregate",
+        "markdown": {
+            "excerpt_count": 2,
+            "selected_city_names": ["Munich", "Berlin"],
+            "excerpts": [
+                {
+                    "ref_id": "ref_1",
+                    "city_name": "Munich",
+                    "quote": "Munich retrofit evidence. " * 80,
+                    "partial_answer": "Munich retrofit evidence. " * 80,
+                },
+                {
+                    "ref_id": "ref_2",
+                    "city_name": "Berlin",
+                    "quote": "Berlin retrofit evidence. " * 80,
+                    "partial_answer": "Berlin retrofit evidence. " * 80,
+                },
+            ],
+        },
+    }
+
+    monkeypatch.setattr(writer_agent, "build_writer_agent", lambda *_args, **_kwargs: object())
+    monkeypatch.setattr(
+        writer_agent,
+        "build_writer_combine_agent",
+        lambda *_args, **_kwargs: object(),
+    )
+
+    combine_attempts = {"count": 0}
+
+    def _fake_run_agent_sync(
+        _agent: object,
+        input_text: str,
+        log_llm_payload: bool,
+        **_kwargs: object,
+    ) -> _FakeRunResult:
+        del log_llm_payload
+        payload = json.loads(input_text)
+        if "draft_answers" in payload:
+            combine_attempts["count"] += 1
+            if combine_attempts["count"] == 1:
+                raise json.JSONDecodeError("temporary combine failure", "{}", 0)
+            return _FakeRunResult(
+                WriterOutput(
+                    content=(
+                        "## Group synthesis\n"
+                        "Munich scales deep retrofit delivery. [ref_1]\n"
+                        "Berlin focuses on existing-building upgrades. [ref_2]"
+                    )
+                )
+            )
+        selected_cities = payload.get("selected_cities")
+        if selected_cities == ["Munich"]:
+            return _FakeRunResult(
+                WriterOutput(content="Munich scales deep retrofit delivery. [ref_1]")
+            )
+        if selected_cities == ["Berlin"]:
+            return _FakeRunResult(
+                WriterOutput(content="Berlin focuses on existing-building upgrades. [ref_2]")
+            )
+        raise AssertionError(f"Unexpected payload: {payload}")
+
+    monkeypatch.setattr(writer_agent, "run_agent_sync", _fake_run_agent_sync)
+    caplog.set_level(logging.WARNING)
+
+    output = writer_agent.write_markdown(
+        question=question,
+        context_bundle=context_bundle,
+        config=config,
+        api_key="test-key",
+        log_llm_payload=False,
+        run_id="run-writer-combine-retry",
+    )
+
+    assert combine_attempts["count"] == 2
+    assert output.citation_coverage is not None
+    assert output.citation_coverage.status == "confirmed"
+    assert any(
+        "RETRY_EVENT operation=writer.combine_llm_call" in record.message
+        for record in caplog.records
+    )
+
+
+def test_writer_errors_when_post_batch_payload_still_exceeds_llm_input_limit(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Writer should fail closed when one remaining batch still exceeds the LLM input budget."""
+    config = _build_test_config(tmp_path)
+    config.writer.multi_pass_threshold_tokens = 100
+    config.writer.multi_pass_chunk_tokens = 100
+    config.writer.max_input_tokens = 120
+    question = "Summarize retrofit evidence across selected cities."
+    context_bundle: dict[str, object] = {
+        "analysis_mode": "aggregate",
+        "markdown": {
+            "excerpt_count": 1,
+            "selected_city_names": ["Munich"],
+            "excerpts": [
+                {
+                    "ref_id": "ref_1",
+                    "city_name": "Munich",
+                    "quote": "Munich retrofit evidence. " * 120,
+                    "partial_answer": "Munich retrofit evidence. " * 120,
+                }
+            ],
+        },
+    }
+
+    build_writer_agent_called = {"value": False}
+
+    def _unexpected_agent(*_args: object, **_kwargs: object) -> object:
+        build_writer_agent_called["value"] = True
+        return object()
+
+    monkeypatch.setattr(writer_agent, "build_writer_agent", _unexpected_agent)
+
+    with pytest.raises(
+        ValueError,
+        match="Writer payload remains above the configured LLM input token limit after batching",
+    ):
+        writer_agent.write_markdown(
+            question=question,
+            context_bundle=context_bundle,
+            config=config,
+            api_key="test-key",
+            log_llm_payload=False,
+            run_id="run-writer-oversize-batch",
+        )
+
+    assert build_writer_agent_called["value"] is False
+
+
 def test_writer_multi_pass_diagnostics_can_be_persisted_without_paths(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,

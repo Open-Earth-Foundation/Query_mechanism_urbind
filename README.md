@@ -372,7 +372,7 @@ What each stage does:
 - Context bundle is updated with extracted evidence for downstream writing.
 - Orchestrator hands the prepared context bundle directly to the writer.
 - Writer builds a writer-specific minimal bundle from the accepted markdown excerpts and selected-city metadata before prompting the model; markdown audit fields such as accepted/rejected chunk id lists are not sent to the writer.
-- When the writer bundle exceeds `writer.multi_pass_threshold_tokens`, the writer splits accepted evidence into multiple batches, writes batch drafts, and then combines those drafts into one final answer.
+- When the writer bundle exceeds `writer.multi_pass_threshold_tokens`, the writer splits accepted evidence into multiple batches, writes batch drafts, and then combines those drafts into one final answer. If a post-batching payload still exceeds the configured writer input budget, the run now fails explicitly instead of silently reverting to one-shot writing.
 - Writer writes final output text to `output/<run_id>/final.md`. The response starts with an evidence preface (based on `excerpt_count`); when `excerpt_count=0`, it returns a "no evidence found" response.
 
 ## End-to-end batch queries
@@ -538,7 +538,7 @@ Core endpoints:
 - `POST /api/v1/runs`
 - `GET /api/v1/runs` (list discovered runs as `run_id` + `question` + `status` + `picker_timestamp`; returns successful runs by default, accepts `include_all=true` for dev/debug views that also include queued, running, failed, and stopped runs, and supports optional `search` across run ids, compact picker dates/times, question text, and selected city names, refreshed from `RUNS_DIR/*/run.json` artifact folders on each request, plus currently queued/running in-memory runs)
 - `GET /api/v1/runs/{run_id}/status`
-- `GET /api/v1/runs/{run_id}/diagnostics` (developer-focused run warnings, retry summaries, writer citation coverage, and artifact pointers)
+- `GET /api/v1/runs/{run_id}/diagnostics` (developer-focused run warnings, retry summaries, writer citation coverage, and run-local artifact labels without exposing host filesystem paths)
 - `GET /api/v1/runs/{run_id}/output`
 - `GET /api/v1/runs/{run_id}/export/docx` (Word export of `final.md`; inline `[ref_n]` citation tags are omitted from the exported document)
 - `GET /api/v1/runs/{run_id}/context`
