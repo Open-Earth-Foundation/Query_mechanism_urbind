@@ -160,12 +160,27 @@ def _build_system_prompt(config: AppConfig) -> str:
         "    street layout, and local parking policy. Per-capita proxy is misleading.\n\n"
         "WRONG: collapsing all of the above into a single field like\n"
         "'charging_infrastructure_targets'. Always decompose.\n\n"
+        "FIELD SCOPE (apply once per field — drives aggregation safety):\n"
+        "Pick exactly one scope per field.  The writer refuses to sum fields\n"
+        "with different scopes; it presents per-scope subtotals instead.\n"
+        '- "municipal" — costs/assets borne by the city government itself.\n'
+        '- "public_transport" — public transit operators (bus, tram, metro, rail).\n'
+        '- "private" — households, private companies, private vehicle owners.\n'
+        '- "mixed" — explicit cross-scope aggregate; reserve for deliberate\n'
+        "  cross-cuts, do NOT use as a default.\n"
+        '- "unscoped" — only when truly ambiguous.\n\n'
         "PER-CITY GAP DETECTION:\n"
         "- For each city in the context, check every estimable/derivable field.\n"
-        "- A field is blank if the context contains no concrete numeric value for it.\n"
-        f"- A field is stale if the data is older than {freshness_days} days, or uses\n"
-        "  aspirational language (\"plans to\", \"targets\") without concrete numbers.\n"
-        "- search_priority: high = MISSING_ENTIRELY, medium = stale/partial, low = minor gap.\n\n"
+        "- A field is **blank** if the context contains no concrete numeric value for it.\n"
+        f"- A field is **stale** if the data is older than {freshness_days} days, or uses\n"
+        '  aspirational language ("plans to", "targets") without concrete numbers.\n'
+        "- A field is **bundled** if the city reports an aggregate / parent value that\n"
+        "  contains the requested field, but does NOT report the disaggregated line.\n"
+        '  Example: question asks for "per-vehicle CAPEX" but the CCC only states\n'
+        '  "total fleet CAPEX = €100M". The total is bundled; the per-unit line is missing.\n'
+        "  Put such fields in ``bundled_fields`` (NOT ``blank_fields``) so the\n"
+        "  estimator can derive the line via peer per-unit ratios.\n"
+        "- search_priority: high = MISSING_ENTIRELY, medium = stale/bundled/partial, low = minor gap.\n\n"
         "RULES:\n"
         f"- Maximum {max_fields} fields per query.\n"
         "- Field classification is per-query, not per-city (consistency).\n"
@@ -175,11 +190,12 @@ def _build_system_prompt(config: AppConfig) -> str:
         "{\n"
         '  "query_fields": [\n'
         '    {"field": "...", "classification": "estimable_numerical|derivable_from_ratio|non_estimable",\n'
-        '     "searchable": true|false, "rationale": "..."}\n'
+        '     "searchable": true|false, "rationale": "...",\n'
+        '     "scope": "municipal|public_transport|private|mixed|unscoped"}\n'
         "  ],\n"
         '  "city_gaps": [\n'
         '    {"city": "...", "blank_fields": ["..."], "stale_flags": ["..."],\n'
-        '     "search_priority": "high|medium|low"}\n'
+        '     "bundled_fields": ["..."], "search_priority": "high|medium|low"}\n'
         "  ],\n"
         '  "non_estimable_fields": ["..."]\n'
         "}\n"
@@ -289,29 +305,46 @@ def _build_decompose_system_prompt(config: AppConfig) -> str:
         "   quantities that depend heavily on local context (housing stock\n"
         "   mix, street layout, local parking policy) where a per-capita or\n"
         "   peer-city proxy would be misleading.\n\n"
+        "FIELD SCOPE (apply once per field — drives aggregation safety):\n"
+        "Pick exactly one scope per field.  The writer refuses to sum fields\n"
+        "with different scopes; it presents per-scope subtotals instead.\n"
+        '- "municipal" — costs/assets borne by the city government itself:\n'
+        "  municipal fleet (cars, trucks, waste vehicles), city-owned buildings,\n"
+        "  city-run programmes, city-funded infrastructure.\n"
+        '- "public_transport" — public transit operators (buses, trams, metro,\n'
+        "  light rail) regardless of legal ownership; commuter rail.\n"
+        '- "private" — households, private companies, private vehicle owners,\n'
+        "  privately-financed infrastructure.\n"
+        '- "mixed" — the field is *deliberately* an aggregate across scopes\n'
+        "  (e.g. total charging points city-wide, regardless of operator).\n"
+        "  Reserve for explicit cross-cuts; do NOT use as a default.\n"
+        '- "unscoped" — not applicable, or you cannot decide.\n\n'
         "WORKED EXAMPLE:\n"
         "Question: 'What charging infrastructure volume targets by 2030 are in\n"
         "the CCCs — public charging points (AC vs DC), depot charging, bus\n"
         "charging depots, fast corridors, residential on-street?'\n\n"
-        "Correct field decomposition & classification:\n"
-        "  depot_charger_count — derivable_from_ratio\n"
-        "  bus_charging_depot_count — derivable_from_ratio\n"
-        "  fast_charging_corridor_points — estimable_numerical\n"
-        "  public_ac_charger_count — estimable_numerical\n"
-        "  public_dc_charger_count — estimable_numerical\n"
-        "  residential_onstreet_charging — non_estimable\n\n"
+        "Correct field decomposition, classification, and scope:\n"
+        "  depot_charger_count — derivable_from_ratio — municipal\n"
+        "  bus_charging_depot_count — derivable_from_ratio — public_transport\n"
+        "  fast_charging_corridor_points — estimable_numerical — mixed\n"
+        "  public_ac_charger_count — estimable_numerical — mixed\n"
+        "  public_dc_charger_count — estimable_numerical — mixed\n"
+        "  residential_onstreet_charging — non_estimable — private\n\n"
         "RULES:\n"
         f"- Maximum {max_fields} fields per query.\n"
         "- Set ``searchable: true`` for any field that could plausibly be\n"
         "  found in public web sources.  Set ``false`` only for highly\n"
         "  internal/proprietary fields.\n"
+        "- Always include ``scope`` (default to ``unscoped`` only if truly\n"
+        "  ambiguous — prefer making a call).\n"
         "- Return valid JSON matching the schema below. No extra keys.\n\n"
         "OUTPUT JSON SCHEMA:\n"
         "```json\n"
         "{\n"
         '  "query_fields": [\n'
         '    {"field": "...", "classification": "estimable_numerical|derivable_from_ratio|non_estimable",\n'
-        '     "searchable": true|false, "rationale": "..."}\n'
+        '     "searchable": true|false, "rationale": "...",\n'
+        '     "scope": "municipal|public_transport|private|mixed|unscoped"}\n'
         "  ],\n"
         '  "non_estimable_fields": ["..."]\n'
         "}\n"
@@ -414,13 +447,19 @@ def _build_detect_system_prompt(config: AppConfig) -> str:
         "PER-CITY GAP DETECTION:\n"
         "- For each city in the context, check every estimable/derivable\n"
         "  field given to you.\n"
-        "- A field is blank if the context contains no concrete numeric\n"
+        "- A field is **blank** if the context contains no concrete numeric\n"
         "  value for it (across markdown excerpts, structured lookups, or\n"
         "  benchmark excerpts).\n"
-        f"- A field is stale if the data is older than {freshness_days} days,\n"
-        "  or uses aspirational language (\"plans to\", \"targets\") without\n"
+        f"- A field is **stale** if the data is older than {freshness_days} days,\n"
+        '  or uses aspirational language ("plans to", "targets") without\n'
         "  concrete numbers.\n"
-        "- search_priority: high = MISSING_ENTIRELY, medium = stale/partial,\n"
+        "- A field is **bundled** if the city reports an aggregate / parent\n"
+        "  value containing the requested field but no disaggregated line.\n"
+        '  Example: question asks for "per-vehicle CAPEX" but the CCC only\n'
+        '  states "total fleet CAPEX = €100M". Put it in ``bundled_fields``\n'
+        "  (NOT ``blank_fields``) so the estimator derives the line via\n"
+        "  peer per-unit ratios.\n"
+        "- search_priority: high = MISSING_ENTIRELY, medium = stale/bundled/partial,\n"
         "  low = minor gap.\n"
         "- Skip fields classified as non_estimable; they don't appear in city_gaps.\n\n"
         "RULES:\n"
@@ -432,7 +471,7 @@ def _build_detect_system_prompt(config: AppConfig) -> str:
         "{\n"
         '  "city_gaps": [\n'
         '    {"city": "...", "blank_fields": ["..."], "stale_flags": ["..."],\n'
-        '     "search_priority": "high|medium|low"}\n'
+        '     "bundled_fields": ["..."], "search_priority": "high|medium|low"}\n'
         "  ]\n"
         "}\n"
         "```\n"

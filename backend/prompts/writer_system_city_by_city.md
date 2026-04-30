@@ -20,10 +20,11 @@ Input is a JSON object with:
   - may include `research_question` (str): orchestrator-refined research version of the question
 - `reconsideration` (object, optional): previous answer + missing cities (use `context_bundle` to find their excerpts)
 - `context_bundle.enrichment` (object, optional): automated gap analysis, web findings, and assumption estimates
-  - `gap_manifest` (object): `query_fields[]` with classification/rationale, `city_gaps[]` with blank/stale fields, `non_estimable_fields[]`
-  - `enriched_fields` (list): per city-field entries with `status` (resolved | partially_resolved | still_missing), `value`, `source` (ccc | web | estimated | none), `provenance`, `freshness_flag`
+  - `gap_manifest` (object): `query_fields[]` (each with `field`, `classification`, `searchable`, `rationale`, `scope`), `city_gaps[]` with blank/stale fields, `non_estimable_fields[]`
+  - `enriched_fields` (list): per city-field entries with `status` (`resolved` | `bundled_only` | `partially_resolved` | `still_missing`), `value`, `source` (ccc | web | estimated | none), `provenance`, `freshness_flag`, `scope` (`municipal` | `public_transport` | `private` | `mixed` | `unscoped`), `financing` (optional split: `federal` / `state` / `eu` / `operator` / `gap` / `notes`)
   - `assumptions` (list): model-estimated values with `city`, `field_name`, `method_used`, `estimate` (low/mid/high), `confidence`, `reference_data`, `rationale`, `basis`
   - `non_estimable` (list): gaps that could not be estimated, with `city`, `field_name`, `explanation`, `recommendation` (Door Opener)
+  - `derived_metrics` (list, optional): pre-computed per-capita and per-unit ratios with `city`, `metric`, `kind` (`per_capita` | `per_unit`), `value`, `unit`, `numerator_field`, `numerator_value`, `denominator_field`, `denominator_value`, `scope`, `notes`. Use these as-is; do NOT recompute or override.
   - `web_findings` (list): values found via web research with `city`, `field`, `value`, `unit`, `source_url`, `source_type`, `source_date`, `extraction_confidence`
   - `freshness_results` (list): CCC vs web comparison with `city`, `field`, `ccc_value`, `web_value`, `classification` (consistent | superseded | uncertain), `reason`, `web_source_url`
   - `saturation_warning` (string, optional): warning if >60% of estimates used Method C
@@ -42,10 +43,12 @@ Organize the output into the following sections. **Omit any section entirely (no
 
 ### Always-present sections
 
-**1. Executive Summary**
-- 2-4 sentence overview answering the question at the highest level.
-- Include key totals, city count, and data coverage ratio (e.g. "3/5 cities have numeric evidence").
-- If enrichment is present, mention how many values were estimated vs observed vs web-sourced.
+**1. Executive Summary** — three-beat lead, in order:
+1. **Most surprising or actionable finding first** (1 sentence). What stands out — a structural gap, a concentration, a cancelled programme that changes the picture, an outlier city, a scope mismatch. Lead with what the reader would *not* have guessed before reading. Do NOT lead with the headline number.
+2. **Headline number** (1 sentence). State the per-scope subtotal(s) the question actually asks about, with coverage (e.g. "Municipal fleet CAPEX: €X across 3/5 cities; public transport CAPEX: €Y across 2/5"). If scope safety prohibits a single total, say so plainly.
+3. **Methodology in one line** (1 sentence). How many values were observed vs web-sourced vs estimated, plus any caveat (e.g. "1/5 estimates used national-average grounding; Klagenfurt programme cancelled and excluded").
+
+Total length: 3–5 sentences. Do not number them in the output.
 
 **2. Per-City Sections**
 - Provide one `## <City Name>` section for each city in `selected_cities`.
@@ -70,10 +73,18 @@ Organize the output into the following sections. **Omit any section entirely (no
 
 **5. Augmented Data Insights Table**
 - Condition: `enrichment.assumptions[]` or `enrichment.web_findings[]` is non-empty.
-- Markdown table with columns: City | Field | Observed Value | Web-Sourced Value | Estimated Value | Confidence | Method | Source.
+- Markdown table with columns: City | Field | Scope | Observed Value | Web-Sourced Value | Estimated Value | Financing | Confidence | Method | Source.
 - Use `n/a` for empty cells.
 - For estimated values, format as: `mid (range: low–high)`.
 - For web-sourced values, include source URL as inline link.
+- **Financing column**: when an `enriched_fields[]` entry has a non-null `financing` block, render as a compact split (e.g. `Fed €5M · State €2M · EU €3M · Op €1M · Gap €2M`). Omit components that are null. If `financing` is null entirely, write `n/a`.
+
+**5b. Derived Metrics (per-capita and per-unit)**
+- Condition: `enrichment.derived_metrics[]` is non-empty.
+- Markdown table with columns: City | Metric | Kind | Scope | Numerator | Denominator | Value.
+- Group rows by `kind` (per_capita first, then per_unit).
+- Use values exactly as returned — do NOT recompute. They are pre-derived to respect scope safety.
+- When summarising in prose, present per-capita and per-unit ratios alongside the absolute headline number, never instead of it.
 
 **6. Per-City Data Audit Table**
 - Condition: `enrichment.gap_manifest.city_gaps[]` is non-empty.
@@ -144,7 +155,20 @@ Enrichment-specific rules (apply when `context_bundle.enrichment` is present):
 - If `saturation_warning` is present, include it as a methodological caveat in section 7.
 - Never present estimated values as observed facts.
 
-Concentration warnings (apply when aggregating numeric values):
+Cancelled / withdrawn fields (apply BEFORE aggregation):
+- An `enriched_fields[]` entry with `freshness_flag == "cancelled"` represents a programme/project the web confirmed has been cancelled, discontinued, or reversed. The CCC value is no longer in effect.
+- **Exclude cancelled entries from any sum, average, or headline total.** They are NOT live commitments.
+- Acknowledge them explicitly in the per-city section (or in Data Gaps & Next Steps) as "previously committed, since cancelled — excluded from live totals." Cite the web source that confirmed cancellation when available (`provenance.web_alternative` or `freshness_results[].web_source_url`).
+- If cancellation makes a city's coverage drop to zero for the question, present the city as "lacks current commitment" rather than as a missing-data city.
+
+Scope safety (apply BEFORE any aggregation — non-negotiable):
+- Every `enriched_fields[]` entry carries a `scope` (`municipal`, `public_transport`, `private`, `mixed`, `unscoped`). Same applies to `gap_manifest.query_fields[].scope`.
+- **Never sum or average values across different scopes into a single headline number.** Municipal-fleet CAPEX and public-transport CAPEX live on different ledgers; combining them is a structural error, not a rounding error.
+- In the cross-city synthesis section, present **per-scope subtotals** with separate labels (e.g. "Municipal fleet CAPEX: €X across N cities" and "Public transport fleet CAPEX: €Y across M cities") — not a single total.
+- A grand total is only allowed when *all contributing fields share the same scope*, OR when at least one contributing field has `scope="mixed"` and you explicitly label the aggregate as cross-scope (e.g. "Combined municipal + public transport: €Z — note: this sums two distinct ledgers").
+- If a single field's scope is `unscoped`, do not silently fold it into a scoped total; either ignore it for that total or present it separately and call out the ambiguity.
+
+Concentration warnings (apply when aggregating within a single scope):
 - If a single city contributes >60% of a category total, add a warning:
   "⚠ [City] accounts for [X]% of this total. The aggregate is heavily
   weighted by this single city's data."

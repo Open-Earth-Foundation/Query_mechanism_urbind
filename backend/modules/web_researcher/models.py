@@ -17,8 +17,30 @@ EstimationMethod = Literal[
     "expert_heuristic_scaling",
     "structured_lookup",
 ]
-FieldStatus = Literal["resolved", "partially_resolved", "still_missing"]
+FieldStatus = Literal[
+    "resolved",
+    # ``bundled_only`` — the city reports an aggregate / bundled value but
+    # the question asks for a disaggregated line that's not present (e.g. the
+    # CCC says "total fleet CAPEX = €100M" but we asked about per-vehicle
+    # CAPEX).  The bundled total is recorded in ``provenance.bundled_value``
+    # so the estimator can compute the disaggregated line via per-unit
+    # cost ratios from peers.
+    "bundled_only",
+    "partially_resolved",
+    "still_missing",
+]
 FreshnessClassification = Literal["consistent", "superseded", "uncertain", "cancelled"]
+# Scope classifies *what kind of actor or asset* a field measures.  Two fields
+# with different scopes must not be summed into a headline total — e.g.
+# municipal-fleet CAPEX and public-transport CAPEX live on different ledgers.
+# The writer enforces per-scope subtotals based on this tag.
+Scope = Literal[
+    "municipal",
+    "public_transport",
+    "private",
+    "mixed",
+    "unscoped",
+]
 # (SourceTier defined below alongside WebFinding so it stays close to its consumer.)
 
 # ---------------------------------------------------------------------------
@@ -31,12 +53,19 @@ class FieldClassification(BaseModel):
     classification: GapClassification
     searchable: bool
     rationale: str
+    scope: Scope = "unscoped"
 
 
 class CityGap(BaseModel):
     city: str
     blank_fields: list[str]
     stale_flags: list[str]
+    # Fields where the city reports a parent / aggregate value (e.g. "total
+    # fleet CAPEX") but the requested disaggregated line (e.g. per-vehicle
+    # CAPEX) is not present.  These flow into the estimator as
+    # ``status="bundled_only"`` and use peer per-unit ratios to derive the
+    # missing line rather than being treated as fully resolved.
+    bundled_fields: list[str] = Field(default_factory=list)
     search_priority: Literal["high", "medium", "low"]
 
 
@@ -154,6 +183,23 @@ class FreshnessResult(BaseModel):
 # ---------------------------------------------------------------------------
 
 
+class FinancingBlock(BaseModel):
+    """Optional split of a value across funding sources.
+
+    Each component is a numeric share *of the same unit as the parent value*
+    (typically currency).  Components left as ``None`` mean the source is
+    not separately disclosed; ``gap`` is the unfunded remainder when known.
+    The writer surfaces this as a column in the augmented data table.
+    """
+
+    federal: float | None = None
+    state: float | None = None
+    eu: float | None = None
+    operator: float | None = None
+    gap: float | None = None
+    notes: str | None = None
+
+
 class EnrichedField(BaseModel):
     city: str
     field: str
@@ -169,6 +215,13 @@ class EnrichedField(BaseModel):
     source_tier: SourceTier | None = None
     provenance: dict[str, object] = Field(default_factory=dict)
     freshness_flag: str | None = None
+    # Copied from the matching FieldClassification at merge time.  Used by
+    # the writer to enforce per-scope subtotals (no cross-scope summing).
+    scope: Scope = "unscoped"
+    # Optional funding-source split (federal / state / EU / operator / gap).
+    # Surfaced by the writer as a "Financing" column in the augmented data
+    # table when at least one component is populated.
+    financing: FinancingBlock | None = None
 
 
 # ---------------------------------------------------------------------------
@@ -209,6 +262,31 @@ class NonEstimableRecord(BaseModel):
 # ---------------------------------------------------------------------------
 
 
+class DerivedMetric(BaseModel):
+    """A ratio computed once from the resolved dataset.
+
+    Two flavors today:
+    - ``per_capita`` — value / city population (city-proper, from URBAN AUDIT).
+    - ``per_unit`` — numerator / denominator within the same city + scope
+      (e.g. total_capex / vehicle_count → per-vehicle CAPEX).
+
+    Scope safety: the metric carries the parent field's ``scope``.  The
+    writer must NOT aggregate derived metrics across different scopes.
+    """
+
+    city: str
+    metric: str  # human-readable label, e.g. "per_capita_capex" or "per_vehicle_capex"
+    kind: Literal["per_capita", "per_unit"]
+    value: float
+    unit: str | None = None
+    numerator_field: str
+    numerator_value: float
+    denominator_field: str  # e.g. "city_population" or "vehicle_count"
+    denominator_value: float
+    scope: Scope = "unscoped"
+    notes: str | None = None
+
+
 class EnrichmentMeta(BaseModel):
     created_at: datetime
     gap_analyst_model: str
@@ -227,6 +305,7 @@ class EnrichmentBundle(BaseModel):
     freshness_results: list[FreshnessResult] = Field(default_factory=list)
     assumptions: list[AssumptionRecord] = Field(default_factory=list)
     non_estimable: list[NonEstimableRecord] = Field(default_factory=list)
+    derived_metrics: list[DerivedMetric] = Field(default_factory=list)
     saturation_warning: str | None = None
     meta: EnrichmentMeta
 
@@ -261,6 +340,7 @@ __all__ = [
     "EstimationMethod",
     "FieldStatus",
     "FreshnessClassification",
+    "Scope",
     "FieldClassification",
     "CityGap",
     "GapManifest",
@@ -272,9 +352,11 @@ __all__ = [
     "SearchBatch",
     "FreshnessResult",
     "EnrichedField",
+    "FinancingBlock",
     "EstimateRange",
     "AssumptionRecord",
     "NonEstimableRecord",
+    "DerivedMetric",
     "EnrichmentMeta",
     "EnrichmentBundle",
     "_GapManifestEnvelope",

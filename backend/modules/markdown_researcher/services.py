@@ -92,8 +92,9 @@ def load_markdown_documents(
     """Load and chunk markdown files for the researcher input payload.
 
     Behavior:
-    - Discovers top-level ``*.md`` files under ``markdown_dir`` without scanning
-      document subfolders.
+    - Discovers ``*.md`` files under ``markdown_dir`` recursively, so
+      additional documents under ``documents/additional/...`` are picked
+      up alongside top-level CCC files.
     - Optionally filters files by ``selected_cities`` (matched against ``Path.stem``,
       case-insensitive).
     - Assigns ``city_name`` from ``Path.stem`` intentionally.

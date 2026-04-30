@@ -24,6 +24,7 @@ from backend.modules.web_researcher.gap_analysis import (
     detect_city_gaps,
     run_gap_analysis,
 )
+from backend.modules.web_researcher.models import Phase1Artefacts
 from backend.modules.web_researcher.phase1_fanout import (
     merge_phase1_into_bundle,
     run_phase1_fanout,
@@ -35,6 +36,61 @@ from backend.services.run_logger import RunLogger
 from backend.utils.config import AppConfig
 
 logger = logging.getLogger(__name__)
+
+
+def _emit_phase1_progress(
+    progress: ProgressTracker, artefacts: Phase1Artefacts
+) -> None:
+    """Emit detailed local_lookups items for the UI."""
+    # Structured-lookup matches: one item per (city, field) hit.
+    for r in artefacts.structured_lookups:
+        if r.value is None:
+            continue
+        value_str = f"{r.value} {r.unit}" if r.unit else str(r.value)
+        progress.add_item(
+            "local_lookups",
+            f"{r.source_id}: {r.city} / {r.field} → {value_str}",
+            item_type="lookup",
+            title=f"{r.city} / {r.field}",
+            metadata={
+                "source_id": r.source_id,
+                "ingestion_id": r.ingestion_id,
+                "value": value_str,
+                "asof": r.asof,
+            },
+        )
+
+    # Benchmark excerpts grouped by document so the UI shows one row per doc.
+    bench_by_doc: dict[str, list] = {}
+    for ex in artefacts.benchmark_excerpts:
+        bench_by_doc.setdefault(ex.doc_slug, []).append(ex)
+    for doc_slug, excerpts in bench_by_doc.items():
+        best = min(excerpts, key=lambda e: e.distance)
+        progress.add_item(
+            "local_lookups",
+            f"{doc_slug}: {len(excerpts)} excerpts (tier {best.tier})",
+            item_type="benchmark_excerpt",
+            title=doc_slug,
+            count=len(excerpts),
+            metadata={
+                "tier": best.tier,
+                "source_id": best.source_id,
+                "best_distance": round(best.distance, 3),
+                "heading_path": best.heading_path,
+            },
+        )
+
+    n_lookups = sum(1 for r in artefacts.structured_lookups if r.value is not None)
+    n_bench = len(artefacts.benchmark_excerpts)
+    if n_lookups == 0 and n_bench == 0:
+        progress.add_item("local_lookups", "No matches in local sources")
+        progress.complete_step("local_lookups", status="skipped")
+    else:
+        progress.add_item(
+            "local_lookups",
+            f"{n_lookups} structured matches · {n_bench} benchmark excerpts",
+        )
+        progress.complete_step("local_lookups")
 
 
 def run_enrichment_pipeline(
@@ -68,16 +124,20 @@ def run_enrichment_pipeline(
                     "gap_analysis",
                     f"{len(decomposition.query_fields)} fields decomposed",
                 )
-            # Phase 1: gather local structured + benchmark data.
+
+            # Phase 1: gather local structured + benchmark data
+            # (separate progress step so the UI can show what we found).
+            if progress:
+                progress.start_step("local_lookups", "Looking up local sources")
+                progress.add_item(
+                    "local_lookups",
+                    "Querying structured datasets and benchmark documents...",
+                )
             phase1_artefacts = run_phase1_fanout(decomposition, context_bundle)
             context_bundle = merge_phase1_into_bundle(context_bundle, phase1_artefacts)
             if progress:
-                progress.add_item(
-                    "gap_analysis",
-                    "Phase 1 local data: "
-                    f"{len(phase1_artefacts.structured_lookups)} lookup results, "
-                    f"{len(phase1_artefacts.benchmark_excerpts)} benchmark excerpts",
-                )
+                _emit_phase1_progress(progress, phase1_artefacts)
+
             # Phase 2: per-city gap detection against the enriched bundle.
             gap_manifest = detect_city_gaps(
                 question, decomposition, context_bundle, config, api_key

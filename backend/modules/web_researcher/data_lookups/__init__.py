@@ -18,10 +18,17 @@ from backend.modules.web_researcher.data_lookups.bnetza import (
     SOURCE_NAME as BNETZA_SOURCE_NAME,
     chargers_in_city,
 )
+from backend.modules.web_researcher.data_lookups.population import (
+    CityPopulation,
+    SOURCE_NAME as POPULATION_SOURCE_NAME,
+    population_for_city,
+)
 from backend.modules.web_researcher.models import (
     FieldDecomposition,
     StructuredLookupResult,
 )
+
+POPULATION_LOOKUP_ID = "urban_audit_population"
 
 
 # Mapping bnetza fields → ChargerStats accessor functions.
@@ -97,6 +104,17 @@ def find_matching_structured_lookups(
             )
             continue
 
+        if ingestion.id == POPULATION_LOOKUP_ID:
+            out.extend(
+                _population_results(
+                    source_id=source.id,
+                    ingestion_id=ingestion.id,
+                    cities=cities,
+                    fields=field_names,
+                )
+            )
+            continue
+
         # Unknown structured-lookup ingestion — skip rather than fail the run.
         # When a new ingestion is added, register a dispatch branch here.
 
@@ -146,9 +164,50 @@ def _bnetza_results(
     return out
 
 
+_POPULATION_FIELDS = {"city_population", "population"}
+
+
+def _population_results(
+    *,
+    source_id: str,
+    ingestion_id: str,
+    cities: Iterable[str],
+    fields: Iterable[str],
+) -> list[StructuredLookupResult]:
+    fields_to_emit = [f for f in fields if f.casefold() in _POPULATION_FIELDS]
+    if not fields_to_emit:
+        return []
+
+    out: list[StructuredLookupResult] = []
+    for city in cities:
+        result = population_for_city(city)
+        if result.is_empty:
+            continue
+        for field in fields_to_emit:
+            out.append(
+                StructuredLookupResult(
+                    source_id=source_id,
+                    ingestion_id=ingestion_id,
+                    city=city,
+                    field=field,
+                    value=result.population,
+                    unit="inhabitants",
+                    asof=str(result.year) if result.year else None,
+                    extra={
+                        "matched_key": result.matched_key,
+                        "source_name": POPULATION_SOURCE_NAME,
+                    },
+                )
+            )
+    return out
+
+
 __all__ = [
     "BNETZA_LOOKUP_ID",
+    "POPULATION_LOOKUP_ID",
     "ChargerStats",
+    "CityPopulation",
     "chargers_in_city",
     "find_matching_structured_lookups",
+    "population_for_city",
 ]

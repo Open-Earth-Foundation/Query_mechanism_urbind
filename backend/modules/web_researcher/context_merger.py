@@ -11,8 +11,10 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from backend.modules.web_researcher.derived_metrics import compute_derived_metrics
 from backend.modules.web_researcher.models import (
     AssumptionRecord,
+    DerivedMetric,
     EnrichedField,
     EnrichmentBundle,
     EnrichmentMeta,
@@ -122,11 +124,21 @@ def compute_field_statuses(
     # writer can attribute by name without re-resolving ids itself.
     source_name_index = _build_source_name_index()
 
+    # Field → scope index from the gap manifest.  Scope is the single source
+    # of truth on FieldClassification; we propagate it onto each EnrichedField
+    # at the end so the writer can enforce per-scope subtotals without joining.
+    scope_by_field: dict[str, str] = {
+        fc.field.lower(): fc.scope for fc in gap_manifest.query_fields
+    }
+
     enriched_fields: list[EnrichedField] = []
 
     for city_gap in gap_manifest.city_gaps:
         city = city_gap.city
-        all_gap_fields = set(city_gap.blank_fields) | set(city_gap.stale_flags)
+        bundled_set = set(city_gap.bundled_fields)
+        all_gap_fields = (
+            set(city_gap.blank_fields) | set(city_gap.stale_flags) | bundled_set
+        )
 
         for field in all_gap_fields:
             key = (city.lower(), field.lower())
@@ -234,6 +246,27 @@ def compute_field_statuses(
                         freshness_flag="stale_no_update",
                     )
                 )
+            elif field in bundled_set:
+                # Bundled-only: the CCC has a parent / aggregate value but
+                # the requested disaggregated line is missing.  Route to the
+                # estimator with bundled provenance so the LLM can apply
+                # peer per-unit ratios rather than treating it as resolved.
+                enriched_fields.append(
+                    EnrichedField(
+                        city=city,
+                        field=field,
+                        status="bundled_only",
+                        source="ccc",
+                        freshness_flag="bundled_only",
+                        provenance={
+                            "note": (
+                                "Aggregate / bundled value present in CCC; "
+                                "disaggregated line not reported. Estimator "
+                                "should derive via peer per-unit ratios."
+                            )
+                        },
+                    )
+                )
             else:
                 # Nothing found
                 enriched_fields.append(
@@ -245,7 +278,14 @@ def compute_field_statuses(
                     )
                 )
 
-    return enriched_fields
+    # Propagate scope from gap_manifest to enriched_fields in one place so
+    # the per-branch constructors above stay focused on status/value logic.
+    return [
+        ef.model_copy(
+            update={"scope": scope_by_field.get(ef.field.lower(), "unscoped")}
+        )
+        for ef in enriched_fields
+    ]
 
 
 def merge_enrichment_into_context(
@@ -289,6 +329,15 @@ def merge_enrichment_into_context(
         gap_manifest, web_findings, freshness_results, context_bundle
     )
 
+    # Derived metrics (per-capita, per-unit) — computed once from the
+    # resolved dataset.  Skipped silently on any failure so a bad metric
+    # doesn't take down the whole enrichment bundle.
+    derived_metrics: list[DerivedMetric] = []
+    try:
+        derived_metrics = compute_derived_metrics(enriched_fields)
+    except Exception:  # noqa: BLE001
+        logger.warning("derived_metrics: failed; continuing without", exc_info=True)
+
     bundle = EnrichmentBundle(
         gap_manifest=gap_manifest,
         enriched_fields=enriched_fields,
@@ -296,6 +345,7 @@ def merge_enrichment_into_context(
         freshness_results=freshness_results,
         assumptions=assumptions,
         non_estimable=non_estimable,
+        derived_metrics=derived_metrics,
         saturation_warning=saturation_warning,
         meta=meta,
     )

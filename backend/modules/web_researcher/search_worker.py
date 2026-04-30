@@ -330,6 +330,16 @@ def execute_search_batches(
     # Map batch_id → batch for progress reporting
     batch_by_id = {b.batch_id: b for b in batches}
 
+    # Resolve tier-1 source_id → display name for progress items so the UI
+    # can attribute findings to a curated source rather than a bare URL.
+    name_by_source_id: dict[str, str] = {}
+    if config.enrichment.tier1_first_search:
+        allowlist = _load_tier1_allowlist_safe()
+        if allowlist is not None:
+            for s in allowlist.sources:
+                if s.id and s.name:
+                    name_by_source_id[s.id] = s.name
+
     with ThreadPoolExecutor(max_workers=max_workers) as pool:
         futures = {
             pool.submit(
@@ -366,6 +376,14 @@ def execute_search_batches(
                     for f in findings:
                         val = f"{f.value} {f.unit}" if f.unit else str(f.value)
                         parsed_domain = urlparse(f.source_url).netloc.lower()
+                        meta: dict[str, object] = {}
+                        if f.source_tier:
+                            meta["source_tier"] = f.source_tier
+                        if f.source_id:
+                            meta["source_id"] = f.source_id
+                            name = name_by_source_id.get(f.source_id)
+                            if name:
+                                meta["source_name"] = name
                         progress.add_item(
                             "web_research",
                             f"  Found: {f.city} / {f.field} = {val} — {f.source_url}",
@@ -373,6 +391,7 @@ def execute_search_batches(
                             title=f"{f.city} / {f.field} = {val}",
                             domain=parsed_domain,
                             url=f.source_url,
+                            metadata=meta or None,
                         )
             except Exception:
                 logger.warning(

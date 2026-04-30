@@ -84,6 +84,13 @@ enrichment:
   reasoning_effort: "medium"
   enabled: false
   web_research_enabled: false
+  # Two-phase gap analyst (Phase 0 decompose → Phase 1 local fan-out → Phase 2 detect)
+  # so structured lookups + benchmark excerpts inform per-city gap detection.
+  use_split_gap_flow: true
+  # Search worker checks the curated tier-1 web allowlist (site:domain) before
+  # falling through to open Serper.
+  tier1_first_search: true
+  tier1_confidence_threshold: 0.6
   max_workers: 6
   max_queries_per_batch: 25
   max_total_queries_per_run: 100
@@ -97,7 +104,11 @@ benchmark_fact_judge:
   temperature: 0.0
   reasoning_effort: "high"
 vector_store:
-  enabled: true
+  # Disabled until the markdown_chunks collection is populated. With this off,
+  # the orchestrator reads markdown directly from disk via load_markdown_documents
+  # (which now recursively picks up documents/additional/<city>_<slug>/<city>.md
+  # after the rglob fix in backend/utils/markdown_files.py).
+  enabled: false
   chroma_persist_path: ".chroma"
   chroma_collection_name: "markdown_chunks"
   embedding_model: "text-embedding-3-large"

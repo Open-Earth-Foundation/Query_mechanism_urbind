@@ -130,3 +130,27 @@ sources:
         consumed_by: web_researcher.tier1_probe
         # No structured coverage block here — coverage lives per-entry in
         # the generated allowlist yaml.
+
+  # ─── Eurostat URBAN AUDIT — city population (committed local seed) ─────
+  # The seed JSON ships in the repo because the data is small, public, and
+  # rarely changes.  Refresh by re-pulling from Eurostat urb_cpop1 and
+  # extending the JSON; the handler converts to parquet.
+  - id: eurostat_urban_audit
+    name: Eurostat URBAN AUDIT (city statistics)
+    provider: local
+    license: Eurostat-EU-Statistical-Use
+    ingestions:
+      - id: urban_audit_population
+        kind: structured_lookup
+        inputs:
+          paths: [backend/data/sources/urban_audit/city_population.json]
+          formats: [json]
+        output:
+          path: data/lookups/urban_audit_population.parquet
+        handler: ingest.urban_audit_population_etl
+        consumed_by: web_researcher.data_lookups.population
+        coverage:
+          # Quoted to avoid YAML 1.1 parsing "NO" as boolean false.
+          countries: ["EU_27", "EFTA", "UK", "IS", "NO", "CH"]
+          fields:
+            - city_population

@@ -177,10 +177,13 @@ def run_assumptions_estimator(
     Returns (assumptions, non_estimable_records, saturation_warning).
     On failure returns empty lists.
     """
-    # Determine which fields still need estimation
+    # Determine which fields still need estimation.
+    # ``bundled_only`` joins this set: the city has an aggregate value, but
+    # the question wants a disaggregated line — peer per-unit ratios apply.
     still_missing = [f for f in enriched_fields if f.status == "still_missing"]
     partially_resolved = [f for f in enriched_fields if f.status == "partially_resolved"]
-    fields_to_estimate = still_missing + partially_resolved
+    bundled_only = [f for f in enriched_fields if f.status == "bundled_only"]
+    fields_to_estimate = still_missing + partially_resolved + bundled_only
 
     if not fields_to_estimate:
         logger.info("Assumptions estimator: no gaps to estimate.")
@@ -261,6 +264,8 @@ def run_assumptions_estimator(
                     "method": a.method_used,
                     "confidence": a.confidence,
                     "mid": str(a.estimate.mid),
+                    "source_name": a.reference_data.split(":", 1)[0].strip() or None,
+                    "is_observed": True,
                 },
             )
 

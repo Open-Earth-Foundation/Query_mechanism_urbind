@@ -82,6 +82,7 @@ from backend.modules.sources.handlers import pdf_to_markdown as _pdf_to_markdown
 from backend.modules.sources.handlers import bnetza_etl as _bnetza_etl  # noqa: E402,F401
 from backend.modules.sources.handlers import pdf_to_vector as _pdf_to_vector  # noqa: E402,F401
 from backend.modules.sources.handlers import extract_web_allowlist as _extract_web_allowlist  # noqa: E402,F401
+from backend.modules.sources.handlers import urban_audit_population_etl as _urban_audit_population_etl  # noqa: E402,F401
 
 
 __all__ = [
