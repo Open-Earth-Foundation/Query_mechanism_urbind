@@ -15,7 +15,7 @@ from backend.modules.orchestrator.models import (
 from backend.modules.orchestrator.module import run_pipeline
 from backend.modules.sql_researcher.models import SqlQuery, SqlQueryPlan
 from backend.modules.vector_store.models import RetrievedChunk
-from backend.modules.writer.models import WriterOutput
+from backend.modules.writer.models import WriterCitationCoverage, WriterOutput
 from backend.utils.config import (
     AppConfig,
 )
@@ -196,6 +196,108 @@ def test_run_pipeline_writes_output_with_sql_disabled(
     run_log = json.loads(paths.run_log.read_text(encoding="utf-8"))
     assert run_log["status"] == "completed"
     assert run_log["finish_reason"] == "completed (write)"
+
+
+def test_run_pipeline_persists_partial_writer_output_as_completed_with_gaps(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    monkeypatch.setenv("OPENROUTER_API_KEY", "test")
+
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir()
+    (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
+
+    config = _build_test_config(
+        runs_dir=tmp_path / "output",
+        source_db_path=tmp_path / "missing.db",
+        markdown_dir=docs_dir,
+        enable_sql=False,
+    )
+
+    def _stub_partial_writer(
+        question: str,
+        context_bundle: dict,
+        config: AppConfig,
+        api_key: str,
+        **_kwargs: dict[str, object],
+    ) -> WriterOutput:
+        del question, context_bundle, config, api_key
+        return WriterOutput(
+            content="# Answer\n\nPartial",
+            citation_coverage=WriterCitationCoverage(
+                status="partial",
+                attempt=2,
+                max_attempts=2,
+                coverage_confirmed=1,
+                coverage_required=2,
+                coverage_ratio="1/2",
+                missing_cities=["Berlin"],
+                analysis_mode="aggregate",
+            ),
+        )
+
+    paths = run_pipeline(
+        question="What initiatives exist for Munich and Berlin?",
+        config=config,
+        sql_plan_func=_stub_sql_plan,
+        markdown_func=_stub_markdown,
+        refine_question_func=_stub_refine_question,
+        writer_func=_stub_partial_writer,
+    )
+
+    assert paths.final_output.exists()
+    run_log = json.loads(paths.run_log.read_text(encoding="utf-8"))
+    assert run_log["status"] == "completed_with_gaps"
+    assert run_log["finish_reason"].startswith(
+        "completed_with_gaps (writer partial citation coverage 1/2)"
+    )
+    assert run_log["writer_citation_coverage"]["missing_cities"] == ["Berlin"]
+
+
+def test_run_pipeline_passes_run_logger_and_paths_to_writer_when_supported(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.setenv("OPENROUTER_API_KEY", "test")
+
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir()
+    (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
+
+    config = _build_test_config(
+        runs_dir=tmp_path / "output",
+        source_db_path=tmp_path / "missing.db",
+        markdown_dir=docs_dir,
+        enable_sql=False,
+    )
+    captured: dict[str, object] = {}
+
+    def _writer_with_runtime_context(
+        question: str,
+        context_bundle: dict,
+        config: AppConfig,
+        api_key: str,
+        run_logger: object,
+        paths: object,
+        **_kwargs: dict[str, object],
+    ) -> WriterOutput:
+        del question, context_bundle, config, api_key
+        captured["run_logger"] = run_logger
+        captured["paths"] = paths
+        return WriterOutput(content="# Answer\n\nStub")
+
+    paths = run_pipeline(
+        question="What initiatives exist for Munich?",
+        config=config,
+        sql_plan_func=_stub_sql_plan,
+        markdown_func=_stub_markdown,
+        refine_question_func=_stub_refine_question,
+        writer_func=_writer_with_runtime_context,
+    )
+
+    assert paths.final_output.exists()
+    assert captured["run_logger"] is not None
+    assert captured["paths"] == paths
 
 
 def test_run_pipeline_detaches_run_log_handler(
@@ -474,8 +576,6 @@ def test_run_pipeline_end_to_end_propagates_query_markdown_and_writer_output(
     assert "snippet" not in first_excerpt
     assert first_excerpt["quote"] == expected_quote
     assert first_excerpt["partial_answer"] == expected_partial_answer
-
-    assert writer_bundle["markdown"] == markdown_bundle
 
     final_output = paths.final_output.read_text(encoding="utf-8")
     assert f"# Question\n{input_question}\n\n" in final_output

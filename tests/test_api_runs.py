@@ -61,6 +61,35 @@ def _write_success_artifacts(question: str, run_id: str, config: AppConfig) -> R
     return paths
 
 
+def _write_run_listing_artifacts(
+    *,
+    question: str,
+    run_id: str,
+    status: str,
+    config: AppConfig,
+    finish_reason: str | None = None,
+    error: dict[str, str] | None = None,
+) -> RunPaths:
+    """Write minimal run artifacts for list and diagnostics route tests."""
+    paths = create_run_paths(config.runs_dir, run_id, config.orchestrator.context_bundle_name)
+    paths.base_dir.mkdir(parents=True, exist_ok=True)
+    run_log = {
+        "run_id": run_id,
+        "question": question,
+        "status": status,
+        "started_at": datetime.now(timezone.utc).isoformat(),
+        "completed_at": datetime.now(timezone.utc).isoformat(),
+        "finish_reason": finish_reason,
+        "error": error,
+        "artifacts": {},
+    }
+    paths.run_log.write_text(
+        json.dumps(run_log, ensure_ascii=True, indent=2),
+        encoding="utf-8",
+    )
+    return paths
+
+
 def _write_config_file(path: Path, config: AppConfig) -> None:
     """Persist one test config as JSON-compatible YAML."""
     path.write_text(
@@ -784,6 +813,194 @@ def test_api_list_runs_reads_question_from_inputs_when_root_question_missing(
             payload["runs"][0]["question"]
             == "Question sourced from inputs.initial_question"
         )
+
+
+def test_api_list_runs_hides_failed_runs_by_default(
+    tmp_path: Path,
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    _write_run_listing_artifacts(
+        question="Completed run",
+        run_id="run-completed",
+        status="completed",
+        config=config,
+        finish_reason="completed (write)",
+    )
+    _write_run_listing_artifacts(
+        question="Failed run",
+        run_id="run-failed",
+        status="failed",
+        config=config,
+        finish_reason="writer_unexpected_error",
+        error={"code": "RUN_EXECUTION_ERROR", "message": "Max turns (5) exceeded"},
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get("/api/v1/runs")
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["total"] == 1
+        assert [item["run_id"] for item in payload["runs"]] == ["run-completed"]
+        assert payload["runs"][0]["status"] == "completed"
+
+
+def test_api_list_runs_include_all_returns_failed_runs_for_dev_mode(
+    tmp_path: Path,
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    _write_run_listing_artifacts(
+        question="Completed run",
+        run_id="run-completed",
+        status="completed",
+        config=config,
+        finish_reason="completed (write)",
+    )
+    _write_run_listing_artifacts(
+        question="Failed run",
+        run_id="run-failed",
+        status="failed",
+        config=config,
+        finish_reason="writer_unexpected_error",
+        error={"code": "RUN_EXECUTION_ERROR", "message": "Max turns (5) exceeded"},
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get("/api/v1/runs?include_all=true")
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["total"] == 2
+        assert {item["run_id"] for item in payload["runs"]} == {
+            "run-completed",
+            "run-failed",
+        }
+        failed_item = next(
+            item for item in payload["runs"] if item["run_id"] == "run-failed"
+        )
+        assert failed_item["status"] == "failed"
+
+
+def test_api_run_diagnostics_returns_warning_and_error_artifacts(
+    tmp_path: Path,
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    paths = _write_run_listing_artifacts(
+        question="Failed run",
+        run_id="run-failed",
+        status="failed",
+        config=config,
+        finish_reason="writer_unexpected_error",
+        error={"code": "RUN_EXECUTION_ERROR", "message": "Max turns (5) exceeded"},
+    )
+    run_payload = json.loads(paths.run_log.read_text(encoding="utf-8"))
+    run_payload["artifacts"] = {
+        "run_summary": str(paths.run_summary),
+        "error_log": str(paths.error_log),
+    }
+    run_payload["llm_usage"] = {"calls": 2, "totals": {"total_tokens": 123}}
+    run_payload["retry_summary"] = {"total_events": 1, "by_operation": {"writer": 1}}
+    run_payload["writer_multi_pass"] = {
+        "strategy": "split_by_city",
+        "combine_strategy": "draft_merge",
+        "analysis_mode": "aggregate",
+        "payload_tokens": 350083,
+        "threshold_tokens": 200000,
+        "batch_count": 2,
+        "batches": [
+            {
+                "batch_index": 1,
+                "city_names": ["Aachen", "Amsterdam"],
+                "excerpt_count": 1300,
+                "payload_tokens": 175040,
+            },
+            {
+                "batch_index": 2,
+                "city_names": ["Antwerp", "Athens"],
+                "excerpt_count": 1274,
+                "payload_tokens": 174980,
+            },
+        ],
+    }
+    paths.run_log.write_text(
+        json.dumps(run_payload, ensure_ascii=True, indent=2),
+        encoding="utf-8",
+    )
+    paths.error_log.write_text(
+        "\n".join(
+            [
+                "2026-01-01 00:00:01 worker.py:11 - ERROR - writer crashed",
+                "Traceback line",
+            ]
+        ),
+        encoding="utf-8",
+    )
+    paths.run_summary.write_text("RUN SUMMARY\nStatus: failed", encoding="utf-8")
+    (paths.base_dir / "run.log").write_text(
+        "\n".join(
+            [
+                "2026-01-01 00:00:00 worker.py:10 - INFO - setup",
+                (
+                    '2026-01-01 00:00:00 worker.py:10 - WARNING - WRITER_CITATION_COVERAGE '
+                    '{"run_id":"run-failed","attempt":2,"max_attempts":2,"status":"exhausted",'
+                    '"coverage_confirmed":57,"coverage_required":101,"coverage_ratio":"57/101",'
+                    '"missing_cities":["Antwerp","Bergamo"],"analysis_mode":"aggregate"}'
+                ),
+                "2026-01-01 00:00:01 worker.py:11 - WARNING - writer nearing max turns",
+                "2026-01-01 00:00:02 worker.py:12 - ERROR - writer crashed",
+                "Traceback line",
+                "2026-01-01 00:00:03 worker.py:13 - INFO - done",
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get("/api/v1/runs/run-failed/diagnostics")
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["run_id"] == "run-failed"
+        assert payload["status"] == "failed"
+        assert payload["error"]["code"] == "RUN_EXECUTION_ERROR"
+        assert payload["writer_citation_coverage"]["status"] == "exhausted"
+        assert payload["writer_citation_coverage"]["coverage_ratio"] == "57/101"
+        assert payload["writer_citation_coverage"]["missing_cities"] == [
+            "Antwerp",
+            "Bergamo",
+        ]
+        assert payload["writer_multi_pass"]["batch_count"] == 2
+        assert payload["writer_multi_pass"]["threshold_tokens"] == 200000
+        assert payload["writer_multi_pass"]["batches"][0]["city_names"] == [
+            "Aachen",
+            "Amsterdam",
+        ]
+        assert payload["warning_entries"] == [
+            (
+                '2026-01-01 00:00:00 worker.py:10 - WARNING - WRITER_CITATION_COVERAGE '
+                '{"run_id":"run-failed","attempt":2,"max_attempts":2,"status":"exhausted",'
+                '"coverage_confirmed":57,"coverage_required":101,"coverage_ratio":"57/101",'
+                '"missing_cities":["Antwerp","Bergamo"],"analysis_mode":"aggregate"}'
+            ),
+            "2026-01-01 00:00:01 worker.py:11 - WARNING - writer nearing max turns",
+        ]
+        assert payload["error_log_text"].startswith(
+            "2026-01-01 00:00:01 worker.py:11 - ERROR - writer crashed"
+        )
+        assert payload["artifacts"]["run_summary"] == str(paths.run_summary)
+        assert payload["artifacts"]["error_log"] == str(paths.error_log)
+        assert payload["artifacts"]["run_log"] == str(paths.base_dir / "run.log")
+        assert payload["retry_summary"]["total_events"] == 1
+        assert payload["llm_usage"]["calls"] == 2
 
 
 def test_api_output_and_context_resolve_stale_container_artifact_paths(

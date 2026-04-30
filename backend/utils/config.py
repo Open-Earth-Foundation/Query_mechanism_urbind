@@ -65,6 +65,8 @@ class WriterConfig(AgentConfig):
     """Configuration for the writer agent."""
 
     max_coverage_attempts: int = 2
+    multi_pass_threshold_tokens: int = 200_000
+    multi_pass_chunk_tokens: int = 200_000
 
 
 class AssumptionsReviewerConfig(AgentConfig):

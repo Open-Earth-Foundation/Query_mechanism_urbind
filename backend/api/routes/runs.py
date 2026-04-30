@@ -11,6 +11,7 @@ from fastapi import APIRouter, Header, HTTPException, Query, Request, status
 from backend.api.models import (
     CreateRunRequest,
     CreateRunResponse,
+    RunDiagnosticsResponse,
     RunReferenceItem,
     RunReferenceListResponse,
     RunReferenceResponse,
@@ -21,6 +22,7 @@ from backend.api.models import (
     RunStatusResponse,
     SourceChunkListResponse,
 )
+from backend.api.services.run_diagnostics import build_run_diagnostics
 from backend.api.services.reference_artifacts import (
     build_reference_item,
     load_reference_records,
@@ -175,14 +177,23 @@ def create_run(
 
 
 @router.get("/runs", response_model=RunListResponse)
-def list_runs(request: Request) -> RunListResponse:
-    """List runs with run_id and original question."""
+def list_runs(
+    request: Request,
+    include_all: bool = Query(
+        default=False,
+        description="When true, include failed, stopped, queued, and running runs.",
+    ),
+) -> RunListResponse:
+    """List runs for the picker, hiding non-success runs by default."""
     run_store = _get_run_store(request)
     records = run_store.list_runs()
+    if not include_all:
+        records = [record for record in records if record.status in SUCCESS_STATUSES]
     runs = [
         RunSummary(
             run_id=record.run_id,
             question=record.question,
+            status=record.status,
         )
         for record in records
     ]
@@ -212,6 +223,23 @@ def get_run_status(run_id: str, request: Request) -> RunStatusResponse:
         finish_reason=record.finish_reason,
         error=record.error,
     )
+
+
+@router.get(
+    "/runs/{run_id}/diagnostics",
+    name="get_run_diagnostics",
+    response_model=RunDiagnosticsResponse,
+)
+def get_run_diagnostics(run_id: str, request: Request) -> RunDiagnosticsResponse:
+    """Return developer-facing warning and failure diagnostics for one run."""
+    run_store = _get_run_store(request)
+    record = run_store.get_run(run_id)
+    if record is None:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Run `{run_id}` was not found.",
+        )
+    return build_run_diagnostics(record, runs_dir=run_store.runs_dir)
 
 
 @router.get(

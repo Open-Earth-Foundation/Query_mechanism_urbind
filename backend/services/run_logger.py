@@ -340,6 +340,11 @@ class RunLogger:
         retry_summary = self.run_log.get("retry_summary")
         if retry_summary:
             lines.append(f"Retry Summary: {json.dumps(retry_summary, ensure_ascii=False)}")
+        writer_multi_pass = self.run_log.get("writer_multi_pass")
+        if writer_multi_pass:
+            lines.append(
+                f"Writer multi-pass: {json.dumps(writer_multi_pass, ensure_ascii=False)}"
+            )
         lines.append("")
 
         lines.append("ARTIFACTS")
@@ -416,6 +421,16 @@ class RunLogger:
 
     def record_artifact(self, name: str, path: Path) -> None:
         self.run_log["artifacts"][name] = str(path)
+        self.write_run_log()
+
+    def record_writer_citation_coverage(self, coverage: dict[str, Any]) -> None:
+        """Persist final writer citation-coverage diagnostics for API consumers."""
+        self.run_log["writer_citation_coverage"] = coverage
+        self.write_run_log()
+
+    def record_writer_multi_pass(self, payload: dict[str, Any]) -> None:
+        """Persist writer multi-pass diagnostics for API consumers."""
+        self.run_log["writer_multi_pass"] = payload
         self.write_run_log()
 
     def update_sql_bundle(self, sql_payload: dict[str, Any]) -> None:
