@@ -11,7 +11,7 @@ from backend.modules.markdown_researcher.models import (
 )
 from backend.modules.orchestrator.models import ResearchQuestionRefinement
 from backend.modules.orchestrator.module import _build_retrieval_queries, run_pipeline
-from backend.modules.writer.models import WriterOutput
+from backend.modules.writer.models import WriterCitationCoverage, WriterOutput
 from backend.utils.config import AppConfig
 from backend.utils.logging_config import setup_logger
 from tests.support import build_test_app_config
@@ -122,6 +122,103 @@ def test_run_pipeline_creates_artifacts(
     assert run_log["status"] == "completed"
     assert Path(run_log["artifacts"]["final_output"]).exists()
     assert "Finish reason:" not in final_output
+
+
+def test_run_pipeline_persists_partial_writer_output_as_completed_with_gaps(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.setenv("OPENROUTER_API_KEY", "test")
+
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir()
+    (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
+
+    config = _build_test_config(
+        runs_dir=tmp_path / "output",
+        markdown_dir=docs_dir,
+    )
+
+    def _stub_partial_writer(
+        question: str,
+        context_bundle: dict,
+        config: AppConfig,
+        api_key: str,
+        **_kwargs: dict[str, object],
+    ) -> WriterOutput:
+        del question, context_bundle, config, api_key
+        return WriterOutput(
+            content="# Answer\n\nPartial",
+            citation_coverage=WriterCitationCoverage(
+                status="partial",
+                attempt=2,
+                max_attempts=2,
+                coverage_confirmed=1,
+                coverage_required=2,
+                coverage_ratio="1/2",
+                missing_cities=["Berlin"],
+                analysis_mode="aggregate",
+            ),
+        )
+
+    paths = run_pipeline(
+        question="What initiatives exist for Munich and Berlin?",
+        config=config,
+        markdown_func=_stub_markdown,
+        refine_question_func=_stub_refine_question,
+        writer_func=_stub_partial_writer,
+    )
+
+    assert paths.final_output.exists()
+    run_log = json.loads(paths.run_log.read_text(encoding="utf-8"))
+    assert run_log["status"] == "completed_with_gaps"
+    assert run_log["finish_reason"].startswith(
+        "completed_with_gaps (writer partial citation coverage 1/2)"
+    )
+    assert run_log["writer_citation_coverage"]["missing_cities"] == ["Berlin"]
+
+
+def test_run_pipeline_passes_run_logger_and_paths_to_writer_when_supported(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.setenv("OPENROUTER_API_KEY", "test")
+
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir()
+    (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
+
+    config = _build_test_config(
+        runs_dir=tmp_path / "output",
+        markdown_dir=docs_dir,
+    )
+    captured: dict[str, object] = {}
+
+    def _writer_with_runtime_context(
+        question: str,
+        context_bundle: dict,
+        config: AppConfig,
+        api_key: str,
+        run_logger: object,
+        paths: object,
+        **_kwargs: dict[str, object],
+    ) -> WriterOutput:
+        del question, context_bundle, config, api_key
+        captured["run_logger"] = run_logger
+        captured["paths"] = paths
+        return WriterOutput(content="# Answer\n\nStub")
+
+    paths = run_pipeline(
+        question="What initiatives exist for Munich?",
+        config=config,
+        markdown_func=_stub_markdown,
+        refine_question_func=_stub_refine_question,
+        writer_func=_writer_with_runtime_context,
+    )
+
+    assert paths.final_output.exists()
+    assert captured["run_logger"] is not None
+    assert captured["paths"] == paths
 
 
 def test_run_pipeline_detaches_run_log_handler(

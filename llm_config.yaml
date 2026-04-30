@@ -57,6 +57,8 @@ writer:
   input_token_reserve: 20000
   max_turns: 5
   max_coverage_attempts: 2
+  multi_pass_threshold_tokens: 200000
+  multi_pass_chunk_tokens: 200000
 chat:
   model: "openai/gpt-5.4-mini"
   temperature: 0.0

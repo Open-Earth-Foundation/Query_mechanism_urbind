@@ -92,14 +92,6 @@ class RunRecord:
         if isinstance(completed_at_raw, str):
             completed_at = _parse_datetime(completed_at_raw)
 
-        error_raw = payload.get("error")
-        error_payload: RunError | None = None
-        if isinstance(error_raw, dict):
-            code = error_raw.get("code")
-            message = error_raw.get("message")
-            if isinstance(code, str) and isinstance(message, str):
-                error_payload = RunError(code=code, message=message)
-
         return cls(
             run_id=run_id,
             question=question,
@@ -109,7 +101,7 @@ class RunRecord:
             finish_reason=payload.get("finish_reason")
             if isinstance(payload.get("finish_reason"), str)
             else None,
-            error=error_payload,
+            error=_parse_error_payload(payload.get("error")),
             final_output_path=Path(payload["final_output_path"])
             if isinstance(payload.get("final_output_path"), str)
             else None,
@@ -143,6 +135,17 @@ def _coerce_status(value: str | None) -> RunStatus | None:
     if value in VALID_RUN_STATUSES:
         return value
     return None
+
+
+def _parse_error_payload(raw_value: object) -> RunError | None:
+    """Return a structured run error when persisted payload fields are valid."""
+    if not isinstance(raw_value, dict):
+        return None
+    code = raw_value.get("code")
+    message = raw_value.get("message")
+    if not isinstance(code, str) or not isinstance(message, str):
+        return None
+    return RunError(code=code, message=message)
 
 
 def _extract_question_from_run_log(run_log: dict[str, Any]) -> str:
@@ -406,7 +409,7 @@ class RunStore:
             started_at=started_at,
             completed_at=completed_at,
             finish_reason=finish_reason,
-            error=None,
+            error=_parse_error_payload(run_log.get("error")),
             final_output_path=final_output_path,
             context_bundle_path=context_bundle_path,
             run_log_path=run_log_path,
@@ -533,7 +536,7 @@ class RunStore:
             started_at=started_at,
             completed_at=completed_at,
             finish_reason=finish_reason_value,
-            error=None,
+            error=_parse_error_payload(run_log.get("error")),
             final_output_path=final_output_path,
             context_bundle_path=context_bundle_path,
             run_log_path=run_log_path,

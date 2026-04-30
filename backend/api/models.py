@@ -90,6 +90,68 @@ class RunStatusResponse(BaseModel):
     steps: list[PipelineStep] | None = None
 
 
+class RunDiagnosticsArtifactPaths(BaseModel):
+    """Run-local artifact labels available for one diagnostics view."""
+
+    run_log: str | None = None
+    run_summary: str | None = None
+    error_log: str | None = None
+
+
+class RunWriterCitationCoverage(BaseModel):
+    """Writer citation-coverage diagnostics exposed to developer tooling."""
+
+    status: Literal["confirmed", "partial", "retrying", "exhausted"]
+    attempt: int | None = None
+    max_attempts: int | None = None
+    coverage_confirmed: int
+    coverage_required: int
+    coverage_ratio: str
+    missing_cities: list[str] = Field(default_factory=list)
+    analysis_mode: str | None = None
+
+
+class RunWriterMultiPassBatch(BaseModel):
+    """One writer batch used by the writer multi-pass fallback."""
+
+    batch_index: int
+    city_names: list[str] = Field(default_factory=list)
+    excerpt_count: int
+    payload_tokens: int
+
+
+class RunWriterMultiPass(BaseModel):
+    """Writer multi-pass diagnostics exposed to developer tooling."""
+
+    strategy: Literal["split_by_city"]
+    combine_strategy: Literal["draft_merge"]
+    analysis_mode: str
+    payload_tokens: int
+    threshold_tokens: int
+    batch_count: int
+    batches: list[RunWriterMultiPassBatch] = Field(default_factory=list)
+
+
+class RunDiagnosticsResponse(BaseModel):
+    """Response body for developer-facing run diagnostics."""
+
+    run_id: str
+    question: str
+    status: RunStatus
+    started_at: datetime
+    completed_at: datetime | None = None
+    finish_reason: str | None = None
+    error: RunError | None = None
+    artifacts: RunDiagnosticsArtifactPaths
+    writer_citation_coverage: RunWriterCitationCoverage | None = None
+    writer_multi_pass: RunWriterMultiPass | None = None
+    llm_usage: dict[str, object] | None = None
+    retry_summary: dict[str, object] | None = None
+    warning_entries: list[str] = Field(default_factory=list)
+    log_tail: list[str] = Field(default_factory=list)
+    error_log_text: str | None = None
+
+
 class RunOutputResponse(BaseModel):
     """Response body for final markdown output retrieval."""
 
@@ -163,6 +225,7 @@ class RunSummary(BaseModel):
 
     run_id: str
     question: str
+    status: RunStatus
     picker_timestamp: str
 
 
@@ -439,6 +502,11 @@ __all__ = [
     "CreateRunRequest",
     "CreateRunResponse",
     "RunStatusResponse",
+    "RunDiagnosticsArtifactPaths",
+    "RunWriterCitationCoverage",
+    "RunWriterMultiPassBatch",
+    "RunWriterMultiPass",
+    "RunDiagnosticsResponse",
     "RunOutputResponse",
     "RunContextResponse",
     "RunReferenceResponse",
