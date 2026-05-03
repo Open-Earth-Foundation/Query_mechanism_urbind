@@ -24,7 +24,10 @@ from backend.modules.tef_mapper.models import (
     TefTransitionMappingRecord,
     TefTransitionMatch,
 )
-from backend.modules.tef_mapper.numeric_rollup import write_numeric_rollup_artifacts
+from backend.modules.tef_mapper.numeric_rollup import (
+    build_numeric_unit_classifier,
+    write_numeric_rollup_artifacts,
+)
 from backend.modules.tef_mapper.rendering import (
     initiative_payload,
     json_input,
@@ -924,6 +927,8 @@ def _write_run_artifacts(
     results: list[TefInitiativeMappingResult],
     config: AppConfig,
     catalog: TefCatalog,
+    api_key: str,
+    log_llm_payload: bool,
 ) -> None:
     """Persist all TEF mapping artifacts for a run."""
     sector_records = [
@@ -961,6 +966,7 @@ def _write_run_artifacts(
         "mapper_version": MAPPER_VERSION,
         "model": config.tef_mapper.model,
         "review_confidence_threshold": config.tef_mapper.review_confidence_threshold,
+        "numeric_unit_classifier_enabled": config.tef_mapper.numeric_unit_classifier_enabled,
     }
     summary = {
         "run_id": run_id,
@@ -980,12 +986,22 @@ def _write_run_artifacts(
     )
     _write_jsonl(run_dir / "05_final_mappings" / "final_mappings.jsonl", final_mappings)
     _write_jsonl(run_dir / "06_review" / "review_items.jsonl", review_items)
+    unit_classifier = (
+        build_numeric_unit_classifier(
+            config=config,
+            api_key=api_key,
+            log_llm_payload=log_llm_payload,
+        )
+        if config.tef_mapper.numeric_unit_classifier_enabled
+        else None
+    )
     write_numeric_rollup_artifacts(
         run_dir=run_dir,
         run_id=run_id,
         extraction_run_id=extraction_run_id,
         initiative_records=input_records,
         final_mappings=final_mappings,
+        unit_classifier=unit_classifier,
     )
     write_json(run_dir / "summary.json", summary, ensure_ascii=False)
     (run_dir / "README.md").write_text(
@@ -1002,7 +1018,7 @@ def _write_run_artifacts(
                 "- `04_transition_mappings/transition_mappings.jsonl`: Transition Element mapper outputs.",
                 "- `05_final_mappings/final_mappings.jsonl`: durable final mappings with copied source quotes.",
                 "- `06_review/review_items.jsonl`: manual-review flags.",
-                "- `07_numeric_facts/initiative_numeric_facts.jsonl`: clean v1 initiative numbers joined to TEF mappings with copied source quotes.",
+                "- `07_numeric_facts/initiative_numeric_facts.jsonl`: clean v1 initiative numbers joined to TEF mappings, with copied source quotes and numeric unit classification metadata.",
                 "- `08_tef_groups/tef_grouped_initiatives.jsonl`: initiatives grouped by TEF target with copied source quotes.",
                 "- `08_tef_groups/tef_metric_rollups.json`: additive metric rollups by TEF target.",
                 "- `summary.json`: run counts.",
@@ -1076,6 +1092,8 @@ def map_initiatives_to_tef(
         results=results,
         config=config,
         catalog=catalog,
+        api_key=api_key,
+        log_llm_payload=log_llm_payload,
     )
     final_mappings_count = sum(len(result.final_mappings) for result in results)
     review_items_count = sum(len(result.review_items) for result in results)

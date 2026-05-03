@@ -7,6 +7,8 @@ export interface FrontendDevFeatureFlags {
   showAssumptionsEntry: boolean;
   showChatTokenMetrics: boolean;
   showContextManager: boolean;
+  showIncompleteRuns: boolean;
+  showRunDiagnostics: boolean;
   showPipelineProgress: boolean;
   showRunId: boolean;
 }
@@ -48,6 +50,8 @@ export function getDevFeatureFlags(mode: FrontendMode): FrontendDevFeatureFlags 
     showAssumptionsEntry: enabled,
     showChatTokenMetrics: enabled,
     showContextManager: enabled,
+    showIncompleteRuns: enabled,
+    showRunDiagnostics: enabled,
     showPipelineProgress: enabled,
     showRunId: enabled,
   };

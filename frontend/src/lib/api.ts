@@ -76,6 +76,58 @@ export interface RunStatusResponse {
   steps?: PipelineStep[] | null;
 }
 
+export interface RunDiagnosticsArtifactPaths {
+  run_log?: string | null;
+  run_summary?: string | null;
+  error_log?: string | null;
+}
+
+export interface RunWriterCitationCoverage {
+  status: "confirmed" | "partial" | "retrying" | "exhausted";
+  attempt?: number | null;
+  max_attempts?: number | null;
+  coverage_confirmed: number;
+  coverage_required: number;
+  coverage_ratio: string;
+  missing_cities: string[];
+  analysis_mode?: string | null;
+}
+
+export interface RunWriterMultiPassBatch {
+  batch_index: number;
+  city_names: string[];
+  excerpt_count: number;
+  payload_tokens: number;
+}
+
+export interface RunWriterMultiPass {
+  strategy: "split_by_city";
+  combine_strategy: "draft_merge";
+  analysis_mode: string;
+  payload_tokens: number;
+  threshold_tokens: number;
+  batch_count: number;
+  batches: RunWriterMultiPassBatch[];
+}
+
+export interface RunDiagnosticsResponse {
+  run_id: string;
+  question: string;
+  status: RunStatus;
+  started_at: string;
+  completed_at?: string | null;
+  finish_reason?: string | null;
+  error?: RunError | null;
+  artifacts: RunDiagnosticsArtifactPaths;
+  writer_citation_coverage?: RunWriterCitationCoverage | null;
+  writer_multi_pass?: RunWriterMultiPass | null;
+  llm_usage?: Record<string, unknown> | null;
+  retry_summary?: Record<string, unknown> | null;
+  warning_entries: string[];
+  log_tail: string[];
+  error_log_text?: string | null;
+}
+
 export interface RunOutputResponse {
   run_id: string;
   status: RunStatus;
@@ -134,6 +186,7 @@ export interface RunSummary {
   run_id: string;
   question: string;
   picker_timestamp: string;
+  status: RunStatus;
 }
 
 export interface RunListResponse {
@@ -490,9 +543,13 @@ async function requestBlob(
 
 export async function fetchRuns(options?: {
   signal?: AbortSignal;
+  includeAll?: boolean;
   search?: string;
 }): Promise<RunListResponse> {
   const params = new URLSearchParams();
+  if (options?.includeAll) {
+    params.set("include_all", "true");
+  }
   const search = options?.search?.trim();
   if (search) {
     params.set("search", search);
@@ -533,6 +590,12 @@ export async function fetchRunStatus(
     { signal: options?.signal },
     false,
     STATUS_REQUEST_TIMEOUT_MS,
+  );
+}
+
+export async function fetchRunDiagnostics(runId: string): Promise<RunDiagnosticsResponse> {
+  return requestJson<RunDiagnosticsResponse>(
+    `/api/v1/runs/${encodeURIComponent(runId)}/diagnostics`,
   );
 }
 

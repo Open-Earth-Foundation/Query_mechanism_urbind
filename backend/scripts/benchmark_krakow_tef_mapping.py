@@ -4,7 +4,8 @@ Brief: Run the Krakow TEF mapping benchmark against curated CCC source truth.
 Inputs:
 - CLI args:
   - `--source-truth`: Mapped Krakow source-truth JSON file with an `initiatives` list;
-    default `assets/tef_mapping/all_correct_initiatives_mapped_to_tef.json`.
+    default
+    `backend/benchmarks/tef_mapping/krakow_source_truth/all_correct_initiatives_mapped_to_tef.json`.
   - `--tef-catalog-dir`: Local TEF catalog directory; default `tef_mapping`.
   - `--output-dir`: Benchmark output root; default
     `output/tef_benchmarks/krakow_tef_mapping`.

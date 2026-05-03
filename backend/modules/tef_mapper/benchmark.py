@@ -22,8 +22,9 @@ from backend.utils.json_io import read_json_object, write_json
 
 logger = logging.getLogger(__name__)
 
-DEFAULT_KRAKOW_TEF_SOURCE_TRUTH = Path(
-    "assets/tef_mapping/all_correct_initiatives_mapped_to_tef.json"
+KRAKOW_SOURCE_TRUTH_DIR = Path("backend/benchmarks/tef_mapping/krakow_source_truth")
+DEFAULT_KRAKOW_TEF_SOURCE_TRUTH = (
+    KRAKOW_SOURCE_TRUTH_DIR / "all_correct_initiatives_mapped_to_tef.json"
 )
 DEFAULT_KRAKOW_BENCHMARK_OUTPUT_ROOT = Path(
     "output/tef_benchmarks/krakow_tef_mapping"

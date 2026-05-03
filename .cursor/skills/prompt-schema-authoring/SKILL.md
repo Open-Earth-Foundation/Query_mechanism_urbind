@@ -1,16 +1,11 @@
 ---
 name: prompt-schema-authoring
-description: Mandatory when creating or updating prompt files in this repository. Use it to enforce the required role/task/input/output block structure, require tools blocks for tool-capable prompts, and run prompt-contract drift checks against runtime schemas, payload builders, tool registration, and tests.
+description: Create or update any LLM-related prompt file in this repository using the required `<role>`, `<task>`, `<input>`, and `<output>` structure, with optional `<tools>` when tool policy is needed, and explicit model-aligned field contracts. Use for prompts stored in markdown, Python prompt templates, YAML/JSON config prompts, and any other runtime prompt definitions for large language models (LLMs).
 ---
 
 # prompt-schema-authoring
 
 Use this skill to keep prompts explicit, contract-driven, and context-efficient.
-
-## Triggering rule
-
-- Trigger this skill whenever you create or edit a prompt under `*/prompts/`.
-- If the skill is already active for the current turn, do not re-trigger it; just keep following it.
 
 ## Workflow
 
@@ -23,12 +18,7 @@ Use this skill to keep prompts explicit, contract-driven, and context-efficient.
 
 2. Run a contract parity check before treating the prompt edit as complete.
 
-- Compare prompt `<input>` fields against the payload actually passed in code.
-- Compare prompt `<output>` fields against the runtime model, parser, or tool contract.
-- Check whether fallback, partial-success, or error-shaped output described in the prompt is still accepted by runtime code.
-- If prompt, runtime schema, and tests do not agree, warn the user explicitly and treat the mismatch as required follow-up work, not as a silent prompt-only cleanup.
-
-3. Write prompt sections in this order.
+2. Write prompt sections in this order.
 
 - `<role>`
 - `<task>`
@@ -37,7 +27,7 @@ Use this skill to keep prompts explicit, contract-driven, and context-efficient.
 - `<output>`
 - Add `<example_output>` whenever possible.
 
-4. Define `<input>` from real runtime payload only.
+3. Define `<input>` from real runtime payload only.
 
 - List only fields actually passed in code.
 - Add type and short purpose for each field.

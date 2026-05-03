@@ -14,7 +14,7 @@ Inputs:
 - Env vars: none.
 
 Outputs:
-- `07_numeric_facts/initiative_numeric_facts.jsonl`
+- `07_numeric_facts/initiative_numeric_facts.jsonl` with metric/unit classification metadata
 - `08_tef_groups/tef_grouped_initiatives.jsonl`
 - `08_tef_groups/tef_metric_rollups.json`
 - Logs a short count summary.

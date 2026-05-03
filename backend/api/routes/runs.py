@@ -12,6 +12,7 @@ from fastapi.responses import Response
 from backend.api.models import (
     CreateRunRequest,
     CreateRunResponse,
+    RunDiagnosticsResponse,
     PipelineStep,
     PipelineStepItem,
     RunReferenceItem,
@@ -24,6 +25,7 @@ from backend.api.models import (
     RunStatusResponse,
     SourceChunkListResponse,
 )
+from backend.api.services.run_diagnostics import build_run_diagnostics
 from backend.api.services.document_export import DOCX_MIME_TYPE, markdown_to_docx_bytes
 from backend.api.services.final_output import strip_legacy_finish_reason_footer
 from backend.api.services.reference_artifacts import (
@@ -190,6 +192,10 @@ def create_run(
 @router.get("/runs", response_model=RunListResponse)
 def list_runs(
     request: Request,
+    include_all: bool = Query(
+        default=False,
+        description="When true, include failed, stopped, queued, and running runs.",
+    ),
     search: str | None = Query(
         default=None,
         description=(
@@ -198,14 +204,17 @@ def list_runs(
         ),
     ),
 ) -> RunListResponse:
-    """List runs for the picker with compact timestamps and optional search."""
+    """List runs for the picker with search, compact timestamps, and status filtering."""
     run_store = _get_run_store(request)
     records = run_store.list_runs()
+    if not include_all:
+        records = [record for record in records if record.status in SUCCESS_STATUSES]
     entries = list_run_picker_entries(records, search=search)
     runs = [
         RunSummary(
             run_id=entry.run_id,
             question=entry.question,
+            status=entry.status,
             picker_timestamp=entry.picker_timestamp,
         )
         for entry in entries
@@ -276,6 +285,23 @@ def get_run_status(run_id: str, request: Request) -> RunStatusResponse:
         error=record.error,
         steps=steps,
     )
+
+
+@router.get(
+    "/runs/{run_id}/diagnostics",
+    name="get_run_diagnostics",
+    response_model=RunDiagnosticsResponse,
+)
+def get_run_diagnostics(run_id: str, request: Request) -> RunDiagnosticsResponse:
+    """Return developer-facing warning and failure diagnostics for one run."""
+    run_store = _get_run_store(request)
+    record = run_store.get_run(run_id)
+    if record is None:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Run `{run_id}` was not found.",
+        )
+    return build_run_diagnostics(record, runs_dir=run_store.runs_dir)
 
 
 @router.get(

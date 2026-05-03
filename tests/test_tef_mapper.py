@@ -19,12 +19,19 @@ from backend.modules.tef_mapper.models import (
     TefSubsectorRoute,
     TefTransitionMapping,
 )
-from backend.modules.tef_mapper.numeric_rollup import build_numeric_facts
+from backend.modules.tef_mapper.numeric_rollup import (
+    NUMERIC_UNIT_CLASSIFIER_PROMPT,
+    NumericUnitClassification,
+    NumericUnitClassificationInput,
+    build_numeric_facts,
+    classify_numeric_unit_with_rules,
+)
 from tests.support import build_test_app_config
 
-KRAKOW_SOURCE_TRUTH_PATH = Path("assets/tef_mapping/all_correct_initiatives.json")
-KRAKOW_TEF_SOURCE_TRUTH_PATH = Path(
-    "assets/tef_mapping/all_correct_initiatives_mapped_to_tef.json"
+KRAKOW_SOURCE_TRUTH_DIR = Path("backend/benchmarks/tef_mapping/krakow_source_truth")
+KRAKOW_SOURCE_TRUTH_PATH = KRAKOW_SOURCE_TRUTH_DIR / "all_correct_initiatives.json"
+KRAKOW_TEF_SOURCE_TRUTH_PATH = (
+    KRAKOW_SOURCE_TRUTH_DIR / "all_correct_initiatives_mapped_to_tef.json"
 )
 
 
@@ -646,6 +653,90 @@ def test_transition_mapping_rejects_multiple_primary_matches() -> None:
         )
 
 
+def test_numeric_unit_classification_rejects_invalid_unit_combo() -> None:
+    """Numeric unit classification should reject invented metric/unit pairings."""
+    with pytest.raises(ValidationError):
+        NumericUnitClassification(
+            metric_type="time",
+            normalized_unit="MW",
+            unit_raw="mw",
+            aggregation_method="sum",
+            confidence=0.9,
+            needs_review=False,
+            rationale="Invalid time/capacity pairing.",
+        )
+
+
+def test_numeric_unit_classification_requires_known_raw_unit_pairing() -> None:
+    """Known normalized units should require their exact raw unit value."""
+    with pytest.raises(ValidationError):
+        NumericUnitClassification(
+            metric_type="capacity",
+            normalized_unit="MW",
+            unit_raw=None,
+            aggregation_method="sum",
+            confidence=0.9,
+            needs_review=False,
+            rationale="Missing raw unit should not pass validation.",
+        )
+
+
+def test_numeric_rollup_accepts_pydantic_unit_classifier() -> None:
+    """Numeric facts should use the injected Pydantic unit classifier when provided."""
+    record = _record()
+    mapping = TefFinalMappingRecord(
+        initiative_record_id=record.record_id,
+        city=record.initiative.city,
+        source_document=record.source_document,
+        document_local_code=record.document_local_code,
+        initiative_name=record.initiative.initiative_name,
+        source_quote=record.source_quote,
+        target_type="transition_element",
+        target_id="district_heating_heat_pumps",
+        target_path="5-energy/5a-energy-supply/5a2-heat",
+        confidence=0.91,
+        is_primary=True,
+        needs_review=False,
+        rationale="Heat pump capacity maps to district heating heat pumps.",
+        sector_route={},
+        subsector_routes=[],
+        mapper_version="test",
+        tef_source_version="test",
+        extraction_run_id="extract_test",
+    )
+    seen_payloads: list[NumericUnitClassificationInput] = []
+
+    def classify(payload: NumericUnitClassificationInput) -> NumericUnitClassification:
+        seen_payloads.append(payload)
+        if payload.number_key_raw == "capacity_mw":
+            return NumericUnitClassification(
+                metric_type="capacity",
+                normalized_unit="MW",
+                unit_raw="mw",
+                aggregation_method="sum",
+                confidence=0.94,
+                needs_review=False,
+                rationale="LLM classified the key as capacity in MW.",
+            )
+        return classify_numeric_unit_with_rules(payload).model_copy(update={"method": "llm"})
+
+    facts = build_numeric_facts(
+        run_id="tef_test",
+        extraction_run_id="extract_test",
+        initiative_records=[record],
+        final_mappings=[mapping],
+        unit_classifier=classify,
+    )
+
+    capacity_fact = next(fact for fact in facts if fact.number_key_raw == "capacity_mw")
+    assert capacity_fact.metric_type == "capacity"
+    assert capacity_fact.normalized_unit == "MW"
+    assert capacity_fact.unit_classification_method == "llm"
+    assert capacity_fact.unit_classification_confidence == 0.94
+    assert capacity_fact.unit_classification_rationale == "LLM classified the key as capacity in MW."
+    assert seen_payloads[0].source_quote == "Approximately 1 MW heat-pump-based capacity."
+
+
 def test_mapper_loads_only_stage_scoped_payloads_and_maps_heat_pump(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
@@ -653,9 +744,38 @@ def test_mapper_loads_only_stage_scoped_payloads_and_maps_heat_pump(
     """Pipeline should use scoped pass payloads and map Krakow heat pumps to a TE."""
     calls: list[tuple[str, dict[str, object]]] = []
     _patch_fake_agents(monkeypatch, calls)
+    numeric_unit_payloads: list[NumericUnitClassificationInput] = []
+
+    def build_fake_numeric_unit_classifier(**_kwargs: object):
+        def classify(payload: NumericUnitClassificationInput) -> NumericUnitClassification:
+            numeric_unit_payloads.append(payload)
+            if payload.number_key_raw == "capacity_mw":
+                return NumericUnitClassification(
+                    metric_type="capacity",
+                    normalized_unit="MW",
+                    unit_raw="mw",
+                    aggregation_method="sum",
+                    confidence=0.95,
+                    needs_review=False,
+                    rationale="Fake LLM classified heat-pump capacity as MW.",
+                )
+            return classify_numeric_unit_with_rules(payload).model_copy(update={"method": "llm"})
+
+        return classify
+
+    monkeypatch.setattr(
+        tef_agent,
+        "build_numeric_unit_classifier",
+        build_fake_numeric_unit_classifier,
+    )
     initiatives_path = tmp_path / "initiatives.jsonl"
     _write_initiatives(initiatives_path, [_record()])
-    config = build_test_app_config(tef_mapper_overrides={"max_workers": 1})
+    config = build_test_app_config(
+        tef_mapper_overrides={
+            "max_workers": 1,
+            "numeric_unit_classifier_enabled": True,
+        }
+    )
 
     result = tef_agent.map_initiatives_to_tef(
         config=config,
@@ -704,6 +824,10 @@ def test_mapper_loads_only_stage_scoped_payloads_and_maps_heat_pump(
     assert input_rows[0]["source_quote"] == "Approximately 1 MW heat-pump-based capacity."
     assert final_rows[0]["source_quote"] == "Approximately 1 MW heat-pump-based capacity."
     assert numeric_rows[0]["source_quote"] == "Approximately 1 MW heat-pump-based capacity."
+    capacity_numeric_row = next(row for row in numeric_rows if row["number_key_raw"] == "capacity_mw")
+    assert capacity_numeric_row["unit_classification_method"] == "llm"
+    assert capacity_numeric_row["unit_classification_confidence"] == 0.95
+    assert numeric_unit_payloads[0].number_key_raw == "capacity_mw"
     assert grouped_rows[0]["initiatives"][0]["source_quote"] == (
         "Approximately 1 MW heat-pump-based capacity."
     )
@@ -1144,6 +1268,38 @@ def test_prompt_contracts_match_stage_models() -> None:
     assert "`shift_to_composting_of_organic_waste`" in transition_prompt
 
 
+def test_numeric_unit_classifier_prompt_matches_model() -> None:
+    """Numeric unit prompt should expose only the constrained Pydantic output fields."""
+    prompt = NUMERIC_UNIT_CLASSIFIER_PROMPT.read_text(encoding="utf-8")
+
+    for section in ("<role>", "<task>", "<input>", "<output>", "<example_output>"):
+        assert section in prompt
+    assert "submit_numeric_unit_classification" in prompt
+    for field_name in NumericUnitClassificationInput.model_fields:
+        assert f"`{field_name}`" in prompt
+    for field_name in NumericUnitClassification.model_fields:
+        if field_name == "method":
+            continue
+        assert f"`{field_name}`" in prompt
+    for allowed_value in (
+        "emissions",
+        "capacity",
+        "energy",
+        "cost",
+        "rate",
+        "time",
+        "count",
+        "other",
+        "tCO2e/year",
+        "MW",
+        "MWh",
+        "EUR",
+        "PLN",
+        "percent_or_fraction",
+    ):
+        assert f"`{allowed_value}`" in prompt
+
+
 def test_tef_user_prompt_templates_use_required_schema_sections() -> None:
     """Catalog prompt templates should keep the same schema sections as runtime prompts."""
     prompt_specs = [
@@ -1151,7 +1307,7 @@ def test_tef_user_prompt_templates_use_required_schema_sections() -> None:
             Path("tef_mapping/prompts/sector_router_user_template.md"),
             TefSectorRoute,
             "submit_tef_sector_route",
-            ["{{initiative_toon}}", "{{sector_cards_toon}}"],
+            ["{{initiative_json}}", "{{sector_cards_json}}"],
             {"selected_path"},
         ),
         (
@@ -1159,9 +1315,9 @@ def test_tef_user_prompt_templates_use_required_schema_sections() -> None:
             TefSubsectorRoute,
             "submit_tef_subsector_route",
             [
-                "{{initiative_toon}}",
-                "{{selected_category_toon}}",
-                "{{candidate_subcategories_toon}}",
+                "{{initiative_json}}",
+                "{{selected_category_json}}",
+                "{{candidate_subcategories_json}}",
             ],
             set(),
         ),
@@ -1170,9 +1326,9 @@ def test_tef_user_prompt_templates_use_required_schema_sections() -> None:
             TefTransitionMapping,
             "submit_tef_transition_mapping",
             [
-                "{{initiative_toon}}",
-                "{{selected_category_toon}}",
-                "{{candidate_transition_elements_toon}}",
+                "{{initiative_json}}",
+                "{{selected_category_json}}",
+                "{{candidate_transition_elements_json}}",
             ],
             set(),
         ),
@@ -1189,3 +1345,12 @@ def test_tef_user_prompt_templates_use_required_schema_sections() -> None:
         for field_name in output_model.model_fields:
             if field_name not in excluded_fields:
                 assert f"`{field_name}`" in content
+
+
+def test_tef_catalog_prompts_use_json_payloads() -> None:
+    """Catalog prompt templates should describe JSON payloads, not obsolete compact payloads."""
+    legacy_payload_format = "TO" + "ON"
+    for prompt_path in Path("tef_mapping/prompts").glob("*.md"):
+        content = prompt_path.read_text(encoding="utf-8")
+        assert legacy_payload_format not in content
+        assert legacy_payload_format.lower() not in content

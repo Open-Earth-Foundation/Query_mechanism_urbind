@@ -41,7 +41,8 @@ Outputs:
   - `04_transition_mappings/transition_mappings.jsonl`
   - `05_final_mappings/final_mappings.jsonl` with copied `source_quote` values
   - `06_review/review_items.jsonl`
-  - `07_numeric_facts/initiative_numeric_facts.jsonl` with copied `source_quote` values
+  - `07_numeric_facts/initiative_numeric_facts.jsonl` with copied `source_quote`
+    values and metric/unit classification metadata
   - `08_tef_groups/tef_grouped_initiatives.jsonl` with copied `source_quote` values
   - `08_tef_groups/tef_metric_rollups.json`
   - `summary.json`

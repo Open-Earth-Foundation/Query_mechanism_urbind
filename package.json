@@ -1,0 +1,24 @@
+{
+  "name": "query_mechanism_urbind",
+  "version": "1.0.0",
+  "description": "Multi-agent document builder that answers user questions by combining SQL data (optional; disabled by default) and Markdown sources. It orchestrates a SQL Researcher, Markdown Researcher, and Writer with OpenAI Agents, and logs every run artifact for inspection.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Open-Earth-Foundation/Query_mechanism_urbind.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Open-Earth-Foundation/Query_mechanism_urbind/issues"
+  },
+  "homepage": "https://github.com/Open-Earth-Foundation/Query_mechanism_urbind#readme"
+}

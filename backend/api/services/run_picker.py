@@ -23,6 +23,7 @@ class RunPickerEntry:
 
     run_id: str
     question: str
+    status: str
     picker_timestamp: str
 
 
@@ -72,6 +73,7 @@ def list_run_picker_entries(
         RunPickerEntry(
             run_id=document.record.run_id,
             question=document.question,
+            status=document.record.status,
             picker_timestamp=document.picker_timestamp,
         )
         for document in documents

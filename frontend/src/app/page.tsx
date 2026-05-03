@@ -30,6 +30,7 @@ import { DevModeToggle } from "@/components/dev-mode-toggle";
 import { DevToolsPanel } from "@/components/dev-tools-panel";
 import { DocumentExportControls } from "@/components/document-export-controls";
 import { MarkdownWithReferences } from "@/components/markdown-with-references";
+import { RunDiagnosticsPanel } from "@/components/run-diagnostics-panel";
 import { SearchableCityPicker } from "@/components/searchable-city-picker";
 import { SearchableRunPicker } from "@/components/searchable-run-picker";
 import { WriterDocumentRail } from "@/components/writer-document-rail";
@@ -102,8 +103,12 @@ function formatRunOptionLabel(run: RunSummary): string {
   const compactQuestion = run.question.replace(/\s+/g, " ").trim();
   const preview =
     compactQuestion.length > 56 ? `${compactQuestion.slice(0, 53)}...` : compactQuestion;
+  const statusPrefix =
+    run.status === "completed" || run.status === "completed_with_gaps"
+      ? ""
+      : `[${run.status}] `;
   const pickerLabel = run.picker_timestamp || run.run_id;
-  return `${pickerLabel} | ${preview || "No question"}`;
+  return `${statusPrefix}${pickerLabel} | ${preview || "No question"}`;
 }
 
 function normalizeCitySelectionKey(value: string): string {
@@ -429,7 +434,7 @@ export default function Home() {
   }, []);
 
   const refreshRunList = useCallback(
-    async (preferredRunId?: string): Promise<void> => {
+    async (preferredRunId?: string): Promise<RunSummary[] | null> => {
       runListAbortControllerRef.current?.abort();
       const controller = new AbortController();
       runListAbortControllerRef.current = controller;
@@ -437,11 +442,12 @@ export default function Home() {
       setRunsError(null);
       try {
         const payload = await fetchRuns({
+          includeAll: devFeatures.showIncompleteRuns,
           search: deferredRunSearchQuery,
           signal: controller.signal,
         });
         if (runListAbortControllerRef.current !== controller) {
-          return;
+          return null;
         }
         setKnownRunsById((current) => {
           const next = { ...current };
@@ -461,18 +467,20 @@ export default function Home() {
           }
           return "";
         });
+        return payload.runs;
       } catch (error) {
         if (controller.signal.aborted) {
-          return;
+          return null;
         }
         setRunsError(error instanceof Error ? error.message : "Failed to load runs.");
+        return null;
       } finally {
         if (runListAbortControllerRef.current === controller) {
           setIsLoadingRuns(false);
         }
       }
     },
-    [deferredRunSearchQuery],
+    [deferredRunSearchQuery, devFeatures.showIncompleteRuns],
   );
 
   async function handleLoadExistingRun(): Promise<void> {
@@ -495,37 +503,53 @@ export default function Home() {
   }
 
   useEffect(() => {
-    void refreshRunList();
-  }, [refreshRunList]);
+    if (!hasHydratedFrontendMode) {
+      return;
+    }
+    let cancelled = false;
+    const storedRunId = (window.localStorage.getItem(LAST_RUN_ID_STORAGE_KEY) ?? "").trim();
+    if (!storedRunId) {
+      void refreshRunList();
+      return () => {
+        cancelled = true;
+      };
+    }
+
+    const loadInitialRunState = async (): Promise<void> => {
+      const runs = await refreshRunList(storedRunId || undefined);
+      if (cancelled || !storedRunId) {
+        return;
+      }
+      const canHydrateStoredRun = runs?.some((run) => run.run_id === storedRunId) ?? false;
+      if (!canHydrateStoredRun) {
+        window.localStorage.removeItem(LAST_RUN_ID_STORAGE_KEY);
+        return;
+      }
+
+      setSelectedExistingRunId(storedRunId);
+      setIsLoadingSelectedRun(true);
+      try {
+        await hydrateRunById(storedRunId);
+      } catch {
+        // Ignore stale stored run ids on startup; user can load another run manually.
+      } finally {
+        if (!cancelled) {
+          setIsLoadingSelectedRun(false);
+        }
+      }
+    };
+
+    void loadInitialRunState();
+    return () => {
+      cancelled = true;
+    };
+  }, [hasHydratedFrontendMode, refreshRunList, hydrateRunById]);
 
   useEffect(() => {
     return () => {
       runListAbortControllerRef.current?.abort();
     };
   }, []);
-
-  useEffect(() => {
-    const storedRunId = (window.localStorage.getItem(LAST_RUN_ID_STORAGE_KEY) ?? "").trim();
-    if (!storedRunId) {
-      return;
-    }
-    setSelectedExistingRunId(storedRunId);
-    let cancelled = false;
-    setIsLoadingSelectedRun(true);
-    void refreshRunList(storedRunId);
-    hydrateRunById(storedRunId)
-      .catch(() => {
-        // Ignore stale run ids on startup; user can load another run manually.
-      })
-      .finally(() => {
-        if (!cancelled) {
-          setIsLoadingSelectedRun(false);
-        }
-      });
-    return () => {
-      cancelled = true;
-    };
-  }, [refreshRunList, hydrateRunById]);
 
   useEffect(() => {
     let cancelled = false;
@@ -909,6 +933,16 @@ export default function Home() {
 
   const isTerminal = !!statusValue && TERMINAL_STATUSES.includes(statusValue);
   const isLongWait = !!statusValue && ["queued", "running"].includes(statusValue);
+  const runFailureMessage =
+    runStatus?.error == null
+      ? null
+      : devFeatures.showRunDiagnostics
+        ? `${runStatus.error.code}: ${runStatus.error.message}`
+        : "This run did not complete, so no document is available.";
+  const runPartialCoverageMessage =
+    runStatus?.status === "completed_with_gaps"
+      ? "This answer was returned with partial coverage."
+      : null;
   const hasValidScope =
     scopeMode === "all" ||
     (scopeMode === "group"
@@ -1155,7 +1189,9 @@ export default function Home() {
                 <p className="text-xs text-slate-500">
                   {runSearchQuery.trim()
                     ? `${visibleRunOptions.length} matching runs.`
-                    : `${availableRuns.length} runs discovered in backend storage.`}
+                    : devFeatures.showIncompleteRuns
+                      ? `${availableRuns.length} runs visible in dev mode, including failed and in-progress runs.`
+                      : `${availableRuns.length} completed runs available to load.`}
                 </p>
                 {selectedExistingRunSummary ? (
                   <p className="text-xs text-slate-600">
@@ -1179,6 +1215,11 @@ export default function Home() {
                 <p className="text-xs text-slate-500">
                   Load a previous answer without re-running the full pipeline.
                 </p>
+                {devFeatures.showIncompleteRuns ? (
+                  <p className="text-xs text-slate-500">
+                    Dev mode keeps failed and incomplete runs in the picker for inspection.
+                  </p>
+                ) : null}
               </div>
 
               <div className="space-y-3">
@@ -1393,14 +1434,13 @@ export default function Home() {
                         <CheckCircle2 className="h-4 w-4 text-teal-700" />
                       ) : (
                         <AlertTriangle className="h-4 w-4 text-red-600" />
-                      )}
-                      Terminal status: {statusValue}
-                    </div>
-                    {runStatus?.error ? (
-                      <p className="text-xs text-red-700">
-                        {runStatus.error.code}: {runStatus.error.message}
-                      </p>
+                    )}
+                    Terminal status: {statusValue}
+                  </div>
+                    {runPartialCoverageMessage ? (
+                      <p className="text-xs text-amber-700">{runPartialCoverageMessage}</p>
                     ) : null}
+                    {runFailureMessage ? <p className="text-xs text-red-700">{runFailureMessage}</p> : null}
                     {hasApiKeyIssue ? (
                       <p className="mt-1 text-xs text-amber-700">
                         API key issue detected. Verify backend OpenRouter credentials and retry the run.
@@ -1409,6 +1449,9 @@ export default function Home() {
                   </div>
                 ) : null}
                 {runError ? <p className="text-sm text-red-600">{runError}</p> : null}
+                {devFeatures.showRunDiagnostics && runId ? (
+                  <RunDiagnosticsPanel runId={runId} runStatus={runStatus} />
+                ) : null}
                 {devFeatures.showPipelineProgress && isTerminal && runStatus?.steps ? (
                   <PipelineProgress steps={runStatus.steps} compact />
                 ) : null}
