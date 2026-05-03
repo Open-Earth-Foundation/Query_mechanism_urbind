@@ -23,6 +23,16 @@ def test_writer_city_by_city_prompt_mentions_per_city_requirements() -> None:
     assert "Provide one clear section per city first." in content
 
 
+def test_writer_combine_prompt_uses_required_schema_sections() -> None:
+    prompt_path = Path("backend/prompts/writer_system_combine.md")
+    content = prompt_path.read_text(encoding="utf-8")
+    for section in ("<role>", "<task>", "<input>", "<tools>", "<output>", "<example_output>"):
+        assert section in content
+    assert "submit_writer_output" in content
+    assert "`draft_answers`" in content
+    assert "citation_coverage" not in content
+
+
 def test_chat_followup_router_prompt_uses_required_schema_sections() -> None:
     prompt_path = Path("backend/prompts/chat_followup_router_system.md")
     content = prompt_path.read_text(encoding="utf-8")

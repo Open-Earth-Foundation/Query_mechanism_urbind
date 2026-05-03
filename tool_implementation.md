@@ -47,8 +47,11 @@ sources:
     source_type: mobility_plan
     verticals: [mobility]
     tef_sectors: [transport]
-    tef_transitions: [charging_infrastructure, public_transport]
 ```
+
+For MVP, these TEF sector tags are populated by the current TEF mapping
+pipeline at document level. We do not require hand-authored per-initiative TEF
+tagging in this search layer.
 
 No manual `path` field is required for MVP. The loader resolves a file by
 searching under `external_docs/` for `<source_id>.md`. If duplicate stems exist,
@@ -99,7 +102,7 @@ Tools available:
 
 What the agent does:
 - call `get_tag_options` to see the valid cities, verticals, source types, and
-  TEF tags
+  TEF sectors
 - call `list_candidate_sources` to narrow the file set
 - avoid searching the whole corpus unless the backend explicitly allows it
 
@@ -114,6 +117,8 @@ Goal:
   evidence
 
 What the agent does:
+- draft source-language synonyms or equivalent search terms with the LLM before
+  building the first bounded search pattern
 - call `regex_search` with a narrow pattern
 - request modest snippet context first
 - inspect the returned hit list rather than immediately expanding everything
@@ -223,9 +228,9 @@ Assume CCC does not provide a usable answer for
    `mark_no_evidence_found`.
 2. It calls `get_tag_options` and then `list_candidate_sources` with filters
    such as `cities=["Krakow"]`, `verticals=["mobility"]`, and optional TEF
-   tags.
-3. It runs `regex_search` over the selected `source_ids` with a narrow pattern
-   around charging targets and 2030.
+   sector filters.
+3. It runs `regex_search` over the narrowed metadata-scoped candidate set with a
+   narrow pattern around charging targets and 2030.
 4. Once the first search returns hit IDs, the agent also gets access to
    `expand_hits` and `add_evidence_candidates`.
 5. If the search returns many hits, the agent ignores weak ones, saves obvious
@@ -264,8 +269,7 @@ Returns distinct values derived from `sources.yaml`:
   "publication_years": [2021, 2024],
   "source_types": ["city_cap", "mobility_plan"],
   "verticals": ["mobility", "energy"],
-  "tef_sectors": ["transport"],
-  "tef_transitions": ["charging_infrastructure", "public_transport"]
+  "tef_sectors": ["transport"]
 }
 ```
 
@@ -277,7 +281,6 @@ def list_candidate_sources(
     countries: list[str] | None = None,
     verticals: list[str] | None = None,
     tef_sectors: list[str] | None = None,
-    tef_transitions: list[str] | None = None,
     source_types: list[str] | None = None,
     publication_year_min: int | None = None,
     publication_year_max: int | None = None,
@@ -305,7 +308,6 @@ Example source summary:
   "source_type": "mobility_plan",
   "verticals": ["mobility"],
   "tef_sectors": ["transport"],
-  "tef_transitions": ["charging_infrastructure", "public_transport"],
   "description": "City electromobility strategy covering public charging infrastructure."
 }
 ```
@@ -315,12 +317,10 @@ Example source summary:
 ```python
 def regex_search(
     pattern: str,
-    source_ids: list[str] | None = None,
     cities: list[str] | None = None,
     countries: list[str] | None = None,
     verticals: list[str] | None = None,
     tef_sectors: list[str] | None = None,
-    tef_transitions: list[str] | None = None,
     source_types: list[str] | None = None,
     case_sensitive: bool = False,
     context_words: int = 80,
@@ -331,8 +331,11 @@ def regex_search(
 
 Search scope rules:
 
-- Require either `source_ids` or at least one metadata filter.
-- If `source_ids` are supplied, intersect them with any metadata filters.
+- Require at least one metadata filter, unless the current run already has a
+  candidate set from `list_candidate_sources`.
+- When the current run already has a candidate set, intersect it with any
+  additional metadata filters instead of exposing explicit `source_ids` in the
+  public tool contract.
 - Refuse a search that would scan every source without filters.
 - Cap `max_matches`, `context_words`, and `context_lines`.
 - Return snippets directly; do not require a separate read tool.
@@ -392,7 +395,8 @@ def add_evidence_candidates(
 ```
 
 This stores one or more selected hits into a per-run evidence basket. It should
-not mutate the source Markdown file.
+not mutate the source Markdown file. Every stored evidence candidate should
+carry the exact matched text and the exact quote that justified selection.
 
 Validation:
 
@@ -410,7 +414,8 @@ def list_evidence_candidates() -> list[EvidenceCandidate]: ...
 ```
 
 Returns evidence already selected in the current run/session. Keep this concise:
-candidate ID, source ID, field, line range, confidence, and reason.
+candidate ID, source ID, field, line range, matched text, short quote preview,
+confidence, and reason.
 
 ### 7. `mark_no_evidence_found`
 
@@ -731,7 +736,7 @@ Every tool call should be logged with enough metadata for debugging:
 {
   "tool": "regex_search",
   "run_id": "run_123",
-  "source_ids": ["krakow_electromobility_strategy_2030"],
+  "resolved_source_ids": ["krakow_electromobility_strategy_2030"],
   "filters": {
     "cities": ["Krakow"],
     "verticals": ["mobility"]
@@ -743,8 +748,11 @@ Every tool call should be logged with enough metadata for debugging:
 }
 ```
 
-Avoid logging full document text. Logging matched snippets can be optional and
-should follow the same artifact/privacy policy as existing run artifacts.
+Do not log full document text. Persist bounded per-run logs that include search
+queries, filters, selected source IDs, hit counts, elapsed time, candidate IDs,
+matched text, quote previews, and resolver outcomes. Full snippets should stay
+inside normal evidence artifacts and follow the same artifact/privacy policy as
+existing run artifacts.
 
 ## Practical MVP Cut
 

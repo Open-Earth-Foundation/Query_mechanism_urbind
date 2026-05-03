@@ -12,7 +12,8 @@ For Krakow, what 2030 public EV charging infrastructure target is stated, and
 how does it affect the city's mobility transition planning?
 ```
 
-Assume the CCC extraction finds no useful Krakow evidence:
+Assume this run has tagged Krakow external sources available and the CCC
+extraction finds no useful Krakow evidence:
 
 ```json
 {
@@ -23,8 +24,9 @@ Assume the CCC extraction finds no useful Krakow evidence:
 }
 ```
 
-Because CCC evidence is missing, the pipeline triggers the external tagged
-Markdown search stage before the assumptions estimator.
+Because tagged Krakow external sources exist, the pipeline runs the external
+tagged Markdown search stage by default before the assumptions estimator. It
+does not wait for an explicit user request to search external sources.
 
 ## Example Tagged File
 
@@ -51,7 +53,6 @@ sources:
     publisher: City of Krakow
     verticals: [mobility]
     tef_sectors: [transport]
-    tef_transitions: [charging_infrastructure, public_transport, vehicle_electrification]
     source_url: https://example.krakow.pl/electromobility-strategy-2030
 ```
 
@@ -77,17 +78,17 @@ The loader resolves this metadata to
    }
    ```
 
-2. Gap analysis triggers external search
+2. External search starts by default when tagged Krakow sources exist
 
-   The enrichment stage sees that the field is missing and prepares an external
-   search task:
+   The enrichment stage sees that tagged Krakow sources exist, notes that the
+   field is unresolved in CCC, and starts external search before assumptions:
 
    ```json
    {
      "city": "Krakow",
      "country": "Poland",
      "verticals": ["mobility"],
-     "tef_transitions": ["charging_infrastructure"],
+     "tef_sectors": ["transport"],
      "field": "public_ev_chargers_2030_target"
    }
    ```
@@ -108,13 +109,12 @@ The loader resolves this metadata to
      "countries": ["Austria", "Germany", "Poland"],
      "source_types": ["city_cap", "mobility_plan", "national_dataset"],
      "verticals": ["mobility", "energy", "built_environment"],
-     "tef_sectors": ["transport", "energy", "buildings"],
-     "tef_transitions": ["charging_infrastructure", "public_transport", "vehicle_electrification"]
+     "tef_sectors": ["transport", "energy", "buildings"]
    }
    ```
 
-   The agent learns that Krakow, Poland, mobility, transport, and charging
-   infrastructure are valid filters.
+   The agent learns that Krakow, Poland, mobility, and transport are valid
+   filters.
 
 4. The agent lists candidate sources
 
@@ -125,7 +125,7 @@ The loader resolves this metadata to
        cities=["Krakow"],
        countries=["Poland"],
        verticals=["mobility"],
-       tef_transitions=["charging_infrastructure"],
+       tef_sectors=["transport"],
    )
    ```
 
@@ -141,23 +141,28 @@ The loader resolves this metadata to
        "publication_year": 2024,
        "source_type": "mobility_plan",
        "verticals": ["mobility"],
-       "tef_transitions": ["charging_infrastructure", "public_transport", "vehicle_electrification"]
+       "tef_sectors": ["transport"]
      }
    ]
    ```
 
    The agent now has one relevant file to search.
 
-5. The agent starts with a proximity search
+5. The agent generates source-language synonyms and starts with bounded search
+
+   Before searching, the agent drafts source-language variants with the LLM,
+   such as `charging points`, `charging infrastructure`, `punkty ladowania`,
+   `infrastruktura ladowania`, `2030`, `target`, and `cel`.
 
    Tool call:
 
    ```python
-   proximity_search(
-       terms=["charging", "chargers", "charging points", "charging infrastructure"],
-       near_terms=["2030", "target", "planned", "goal"],
-       source_ids=["krakow_electromobility_strategy_2030"],
-       max_distance_words=50,
+   regex_search(
+       pattern="(?i)(charging points|charging infrastructure|punkty ladowania|infrastruktura ladowania).{0,120}(2030|target|goal|cel)",
+       cities=["Krakow"],
+       countries=["Poland"],
+       verticals=["mobility"],
+       tef_sectors=["transport"],
        context_words=90,
        context_lines=3,
        max_matches=20,
@@ -235,6 +240,8 @@ The loader resolves this metadata to
      "field": "public_ev_chargers_2030_target",
      "line_start": 136,
      "line_end": 158,
+     "matched_text": "1,200 public charging points",
+     "quote": "By 2030, Krakow plans to expand public charging infrastructure to 1,200 public charging points, prioritising park-and-ride sites, municipal car parks, and transport interchanges.",
      "confidence": 0.9,
      "reason": "Contains a concrete 2030 city-level target for public charging points."
    }

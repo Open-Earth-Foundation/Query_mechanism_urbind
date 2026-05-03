@@ -4,27 +4,26 @@
 
 We want to improve coverage for Net Zero Cities (NZC) questions by using external data sources that complement the existing CCC-derived Markdown corpus.
 
-The current CCC search and extraction path is already working and should remain the primary evidence path. The new work should not replace, weaken, or destabilize that path. Instead, it should add a governed enrichment layer that can consult approved external Markdown documents when CCC evidence is missing, stale, or needs confirmation.
+The current CCC search and extraction path is already working and should remain the primary evidence path. The new work must not replace, weaken, or destabilize that path. Instead, it must add a governed enrichment layer that runs approved external Markdown search by default whenever tagged external sources exist for the selected city or scope. The resolver then decides whether that external evidence confirms CCC evidence, fills a CCC gap, challenges stale CCC evidence, or leaves the field unresolved.
 
 External documents may include city Climate Action Plans (CAPs), updated CCC/NZC documents, mobility plans, energy plans, built environment plans, national datasets rendered as Markdown, EU programme docs, and other curated sources.
 
 ## Decision
 
-Keep the existing CCC search unchanged and add a separate agentic search layer over tagged external Markdown files.
+Keep the existing CCC search unchanged and add a separate default-on agentic search layer over tagged external Markdown files whenever tagged external sources exist for the selected city or scope.
 
 The agentic layer should behave like a shell-style research harness, but it should not run arbitrary shell commands in production. Instead, the model should use controlled search tools that support literal search, proximity search, and validated regex search over a scoped set of tagged Markdown files.
 
-The new stage should produce structured evidence records, not directly rewrite final answers or mutate the primary context. A resolver should decide whether external evidence fills a CCC gap, confirms CCC evidence, supersedes stale CCC evidence, creates a conflict requiring review, or still leaves the field unresolved.
+The new stage should produce structured evidence records with exact quotes and line references, not directly rewrite final answers or mutate the primary context. A resolver should decide whether external evidence confirms CCC evidence, fills a CCC gap, challenges stale CCC evidence, creates a surfaced conflict, or still leaves the field unresolved.
 
 Recommended pipeline position:
 
 ```text
 question refinement
 -> existing CCC markdown retrieval and extraction
--> gap/staleness detection
--> agentic search over tagged external Markdown
--> evidence resolver
--> assumptions estimator for unresolved gaps only
+-> tagged external Markdown search (default when matching tagged sources exist)
+-> evidence resolver (confirm, fill, conflict, or unresolved)
+-> assumptions estimator for fields still unresolved after CCC plus external evidence
 -> writer
 ```
 
@@ -42,7 +41,7 @@ The chosen approach is a hybrid of RAG-style governance and agentic search flexi
 
 - CCC remains the primary source of truth.
 - Tagged external Markdown gives us scalable source onboarding by adding files plus metadata.
-- Agentic search gives the model the ability to iterate like a human researcher: search synonyms, inspect snippets, search for numbers near units, then extract claims.
+- Agentic search gives the model the ability to iterate like a human researcher: generate source-language synonyms with the LLM, inspect snippets, search for numbers near units, then extract claims.
 - Controlled tools give us production safety, reproducibility, and auditability.
 - Regex support gives the model useful expressiveness without giving it raw shell access.
 
@@ -82,7 +81,6 @@ sources:
     publisher: City of Vienna
     verticals: [mobility, energy, built_environment]
     tef_sectors: [transport, energy, buildings]
-    tef_transitions: [charging_infrastructure, public_transport, building_renovation]
     source_url: https://...
 ```
 
@@ -98,19 +96,19 @@ MVP required tags:
 - `source_type`: city_cap, mobility_plan, energy_plan, national_dataset, eu_dataset, operator_report, think_tank_report, news, etc.
 - `verticals`: mobility, energy, built_environment, waste, adaptation, finance, governance, etc.
 - `tef_sectors`: broad TEF sector-level hints for filtering.
-- `tef_transitions`: broad document-level transition hints for filtering.
 
-Optional but useful tags:
+Non-MVP but useful tags for later enrichment:
 
 - `publisher`: useful for citations and credibility review.
 - `source_url`: original URL when available.
 - `data_years`: years for observed data contained in the document.
 - `target_years`: future years referenced by targets or plans.
 
-No per-initiative tags are required for MVP. They are too narrow and hard to
-maintain when a document contains many initiatives. TEF tags should be broad,
-document-level hints only; initiative-level TEF classification can happen later
-through the existing TEF mapping flow.
+For MVP, we do not hand-author TEF sector tags for most external documents. We run the
+current TEF mapping pipeline over each converted document and persist broad
+document-level `tef_sectors` back into catalogue and runtime metadata. No
+per-initiative tags are required for MVP. Initiative-level TEF classification
+stays in the existing TEF mapping flow after document qualification.
 
 No `path` field is needed in MVP because the loader can map `source_id` to the
 Markdown filename stem under the external docs folder. If we later need multiple
@@ -151,7 +149,7 @@ Catalogue responsibilities:
 - list every upstream source we plan to convert or reference;
 - record which target cities, countries, and verticals each source can apply to;
 - store enough metadata for `get_tag_options()` and `list_candidate_sources()`;
-- avoid using source ranking or authority logic in the MVP.
+- do not use source ranking or authority logic in MVP.
 
 For broad sources, `city` may be empty or omitted. Instead, the catalogue should
 use coverage fields such as `countries`, `target_cities`, and `geographic_scope`
@@ -172,8 +170,26 @@ source_type: national_dataset
 publisher: Bundesnetzagentur
 verticals: [mobility]
 tef_sectors: [transport]
-tef_transitions: [charging_infrastructure]
 ```
+
+## Benchmark First
+
+Before implementation starts, create a small benchmark set with 2 to 3 tagged
+documents and a golden set of facts that the pipeline should extract from them.
+
+Minimum benchmark contents:
+
+- one tagged document with a clear city-level target value;
+- one tagged document with supportive context but no extractable target value;
+- one conflict or freshness example where CCC and external evidence disagree or
+  differ by publication timing.
+
+Benchmark requirements:
+
+- keep benchmark fixtures in version control;
+- run the benchmark during implementation, not only after it;
+- use the benchmark to compare search and extraction changes before and after
+  each meaningful update.
 
 ## Controlled Search Tools
 
@@ -188,8 +204,8 @@ Agreed MVP tools:
    ```
 
    Returns the available metadata values the agent can choose from, such as cities,
-   countries, publication years, source types, verticals, TEF sectors, and TEF
-   transitions. This keeps the agent from inventing filters.
+   countries, publication years, source types, verticals, and TEF sectors. This
+   keeps the agent from inventing filters.
 
 2. `list_candidate_sources`
 
@@ -199,7 +215,6 @@ Agreed MVP tools:
        countries: list[str] | None = None,
        verticals: list[str] | None = None,
        tef_sectors: list[str] | None = None,
-       tef_transitions: list[str] | None = None,
        source_types: list[str] | None = None,
        publication_year_min: int | None = None,
        publication_year_max: int | None = None,
@@ -208,20 +223,18 @@ Agreed MVP tools:
    ```
 
    Scans source metadata and returns candidate files before text search starts. The
-   agent should use this to narrow the search scope by city, country, vertical,
-   source type, year, and optional TEF tags.
+   agent must use this to narrow the search scope by city, country, vertical,
+   source type, year, and TEF sectors when they are present in metadata.
 
 3. `regex_search`
 
    ```python
    regex_search(
        pattern: str,
-       source_ids: list[str] | None = None,
        cities: list[str] | None = None,
        countries: list[str] | None = None,
        verticals: list[str] | None = None,
        tef_sectors: list[str] | None = None,
-       tef_transitions: list[str] | None = None,
        source_types: list[str] | None = None,
        case_sensitive: bool = False,
        context_words: int = 80,
@@ -230,9 +243,11 @@ Agreed MVP tools:
    ) -> list[SearchHit]
    ```
 
-   Runs a validated regex over either explicit `source_ids` or a scoped metadata
-   filter. Each `SearchHit` must include the snippet directly, using
-   `context_words` and `context_lines`, plus line references and heading metadata.
+   Runs a validated regex over a scoped metadata filter. Each `SearchHit` must
+   include the snippet directly, using `context_words` and `context_lines`,
+   plus line references and heading metadata. The backend may internally narrow
+   the search to the most recent candidate set from `list_candidate_sources`,
+   but that source list is not part of the public tool surface.
 
 4. `expand_hit`
 
@@ -270,7 +285,7 @@ Agreed MVP tools:
    list_evidence_candidates() -> list[EvidenceCandidate]
    ```
 
-   Lets the agent review selected evidence and avoid duplicate or contradictory
+   Lets the agent review selected evidence and reject duplicate or contradictory
    candidate snippets.
 
 7. `mark_no_evidence_found`
@@ -296,12 +311,10 @@ LLM-recommended tool, but not yet agreed for MVP:
    proximity_search(
        terms: list[str],
        near_terms: list[str],
-       source_ids: list[str] | None = None,
        cities: list[str] | None = None,
        countries: list[str] | None = None,
        verticals: list[str] | None = None,
        tef_sectors: list[str] | None = None,
-       tef_transitions: list[str] | None = None,
        source_types: list[str] | None = None,
        max_distance_words: int = 40,
        context_words: int = 80,
@@ -357,7 +370,7 @@ Guardrails:
 - Cap pattern length.
 - Validate regex before execution.
 - Reject expensive patterns such as nested quantifiers.
-- Avoid backreferences unless there is a concrete need.
+- Do not allow backreferences in MVP.
 - Use timeouts for regex execution.
 - Search only files selected by tags.
 - Cap scanned files, scanned bytes, matches, and context lines.
@@ -405,15 +418,36 @@ Required fields:
 
 The quote and line references are important because they make the result inspectable and debuggable. The source file path can be resolved internally from `source_id`; it does not need to be manually tagged.
 
+## Audit and Logging Requirements
+
+Persist verbose per-run artifacts so the search stage is auditable and easy to
+debug without reopening every source document.
+
+Required logging and artifacts:
+
+- every search call must record the tool name, pattern or query terms, filters,
+  backend-resolved source IDs, hit count, truncation flags, and elapsed time;
+- every saved evidence candidate must record `candidate_id`, `hit_id`,
+  `source_id`, `field`, `matched_text`, exact `quote`, line range, confidence,
+  and selection reason;
+- every resolver decision must record the CCC claim state, external claim state,
+  final action (`confirm`, `fill`, `conflict_review_required`, or `unresolved`),
+  and a short rationale;
+- every no-evidence record must store the backend-resolved searched source IDs
+  plus a summary of what patterns were tried;
+- do not log full document text in normal run artifacts.
+
 ## Resolver Rules
 
 The resolver should determine how CCC and external evidence interact.
 
 Initial policy:
 
+- If tagged external sources exist for the selected city or scope, external
+  search runs by default. It is not gated by an explicit user request.
 - If CCC has a current value and external evidence agrees, keep CCC primary and record external confirmation.
 - If CCC is missing a field and external evidence comes from a tagged candidate source, use external evidence to fill the gap when confidence is high enough.
-- If sources materially conflict, preserve both and flag `conflict_review_required`.
+- If sources materially conflict, preserve both, flag `conflict_review_required`, and surface the disagreement in the writer output instead of silently choosing one value.
 - Source-tier based automatic conflict resolution is out of MVP scope and should be treated as a future expansion.
 - If nothing reliable is found, pass the field to the assumptions estimator.
 
@@ -427,32 +461,36 @@ assumptions = last resort
 
 ## MVP Scope
 
-1. Define the external source metadata schema.
-2. Add a small curated set of tagged Markdown files.
-3. Build controlled literal/proximity/regex search over those files.
-4. Add a simple agent loop that searches for missing fields and returns evidence claims.
-5. Add resolver rules for fill, confirm, supersede, conflict, and unresolved.
-6. Wire the resolved evidence into the enrichment stage before assumptions.
-7. Persist artifacts for audit and debugging.
-8. Add tests for filtering, regex validation, claim extraction, and resolver behavior.
+1. Create the benchmark set and golden facts before implementation work starts.
+2. Define the external source metadata schema.
+3. Add a small curated set of tagged Markdown files.
+4. Run the current TEF mapping pipeline to qualify each converted document with broad document-level TEF sectors.
+5. Build controlled search over those files.
+6. Add a simple agent loop that searches for unresolved fields and returns evidence claims with exact quotes.
+7. Add resolver rules for confirm, fill, conflict, and unresolved.
+8. Wire the resolved evidence into the enrichment stage before assumptions.
+9. Persist verbose artifacts for audit and debugging.
+10. Add tests for filtering, search validation, claim extraction, and resolver behavior.
 
-## Open Questions
+## Remaining Open Questions
 
 - What is the first vertical for the MVP: mobility, energy, or built environment?
-- Should external tagged Markdown search run only when CCC is missing/stale, or also when CCC already has data so external sources can confirm or challenge it?
-- When CCC and external sources materially conflict, should MVP always preserve both for review, or can a newer source be preferred in some cases?
 - If we later introduce source tiers, which tiers can supersede CCC automatically?
-- Should conflicts block writer output or appear as flagged caveats?
 - How much search trace should be exposed in the frontend?
-- Do we want multilingual synonym expansion in the first version?
-- Should `proximity_search` be included in MVP, or should we start with regex search plus hit expansion and add proximity search only if needed?
+
+## Planned After MVP
+
+- Add multilingual synonym expansion using LLM-generated source-language search
+  terms when the benchmark shows it improves recall.
+- Evaluate `proximity_search` only after the benchmark baseline is in place.
+  MVP starts with bounded regex-style search and hit expansion.
 
 ## Success Criteria
 
 - Existing CCC search behavior remains unchanged.
-- External sources are only considered when selected city and source tags match.
-- The model can iteratively search tagged Markdown using bounded regex tools, with proximity search treated as an optional extension.
-- Every accepted external fact has source provenance and line references.
-- Conflicts are explicit, not silently resolved by the model.
+- External tagged search runs by default whenever matching tagged sources exist for the selected city or scope.
+- The model can iteratively search tagged Markdown using bounded search tools while keeping every query and resolver action auditable.
+- Every accepted external fact has source provenance, line references, and an exact quote.
+- Conflicts are explicit and surfaced, not silently resolved by the model.
 - Assumptions are generated only after CCC and tagged external evidence cannot resolve a field.
 - Adding a new external source usually requires adding Markdown plus metadata, not changing code.
