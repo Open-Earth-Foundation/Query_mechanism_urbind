@@ -22,13 +22,20 @@ Input is a JSON object with:
   - `content` (str): cited Markdown draft answer
 </input>
 
+<tools>
+Available tools:
+- `submit_writer_output`: use exactly once to return the completed merged answer after you have finished combining the provided `draft_answers`.
+- Do not call `submit_writer_output` for intermediate reasoning, partial drafts, status updates, or validation notes.
+- Do not call any tool other than `submit_writer_output`.
+- Do not emit plain text before or after the tool call.
+</tools>
+
 <output>
 You must call tool `submit_writer_output` and pass a JSON object (not a JSON string).
 Return only that tool call.
 
 The tool argument must match `WriterOutput`:
 - `content` (str): one merged final Markdown answer
-- `citation_coverage` (`null`): always set this to `null`; runtime computes coverage separately
 
 Content requirements:
 - Start directly with the user-facing answer body.
@@ -43,7 +50,6 @@ Content requirements:
 
 <example_output>
 {
-  "content": "## Group synthesis\nAcross the selected cities, retrofit delivery depends on financing, building pipeline development, and municipal coordination. [ref_1][ref_4]\n\nCities considered:\n- Munich\n- Berlin",
-  "citation_coverage": null
+  "content": "## Group synthesis\nAcross the selected cities, retrofit delivery depends on financing, building pipeline development, and municipal coordination. [ref_1][ref_4]\n\nCities considered:\n- Munich\n- Berlin"
 }
 </example_output>
