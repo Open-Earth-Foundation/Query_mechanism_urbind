@@ -45,8 +45,8 @@ Folder-level metadata entry in `external_docs/sources.yaml`:
 sources:
   - source_id: krakow_electromobility_strategy_2030
     title: Krakow Electromobility Strategy 2030
-    city: Krakow
-    country: Poland
+    city: [Krakow]
+    country: [Poland]
     publication_year: 2024
     description: City electromobility strategy covering public charging infrastructure, zero-emission buses, municipal fleet electrification, and low-emission transport zones.
     source_type: mobility_plan

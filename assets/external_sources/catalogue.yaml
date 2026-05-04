@@ -1,4 +1,4 @@
-catalogue_source:
+﻿catalogue_source:
   upstream_repo: https://github.com/Open-Earth-Foundation/urbind-additional-documentation
   captured_at: 2026-04-27
   notes: >
@@ -26,8 +26,8 @@ groups:
       - source_id: aachen_strategie_elektromobilitat
         title: Aachen Strategie Elektromobilitat
         geographic_scope: city
-        target_cities: [Aachen]
-        countries: [Germany]
+        city: [Aachen]
+        country: [Germany]
         publication_year: null
         description: Aachen city electromobility strategy.
         source_type: city_plan
@@ -38,8 +38,8 @@ groups:
       - source_id: aachen_klimastadtvertrag_action_plan
         title: Aachen Klimastadtvertrag Action Plan
         geographic_scope: city
-        target_cities: [Aachen]
-        countries: [Germany]
+        city: [Aachen]
+        country: [Germany]
         publication_year: null
         description: Aachen climate city contract action plan.
         source_type: city_cap
@@ -50,8 +50,8 @@ groups:
       - source_id: dresden_integriertes_energie_klimaschutzkonzept
         title: Dresden Integriertes Energie- und Klimaschutzkonzept
         geographic_scope: city
-        target_cities: [Dresden]
-        countries: [Germany]
+        city: [Dresden]
+        country: [Germany]
         publication_year: null
         description: Dresden integrated energy and climate protection concept.
         source_type: city_cap
@@ -62,8 +62,8 @@ groups:
       - source_id: dresden_potenzialstudie_elektromobilitat
         title: Dresden Potenzialstudie Elektromobilitat
         geographic_scope: city
-        target_cities: [Dresden]
-        countries: [Germany]
+        city: [Dresden]
+        country: [Germany]
         publication_year: null
         description: Dresden electromobility potential study.
         source_type: city_plan
@@ -74,8 +74,8 @@ groups:
       - source_id: klagenfurt_smart_city_klimastrategie_v72
         title: Klagenfurt Smart City Klimastrategie v7.2
         geographic_scope: city
-        target_cities: [Klagenfurt]
-        countries: [Austria]
+        city: [Klagenfurt]
+        country: [Austria]
         publication_year: null
         description: Klagenfurt smart city climate strategy.
         source_type: city_cap
@@ -86,8 +86,8 @@ groups:
       - source_id: leipzig_energie_klimaschutzprogramm_2030
         title: Leipzig Energie- und Klimaschutzprogramm 2030
         geographic_scope: city
-        target_cities: [Leipzig]
-        countries: [Germany]
+        city: [Leipzig]
+        country: [Germany]
         publication_year: null
         description: Leipzig energy and climate protection programme through 2030.
         source_type: city_cap
@@ -98,8 +98,8 @@ groups:
       - source_id: munich_mobilitatsstrategie_2035
         title: Munich Mobilitatsstrategie 2035
         geographic_scope: city
-        target_cities: [Munich]
-        countries: [Germany]
+        city: [Munich]
+        country: [Germany]
         publication_year: null
         description: Munich mobility strategy through 2035.
         source_type: mobility_plan
@@ -110,8 +110,8 @@ groups:
       - source_id: munich_muenchen_elektrisiert_ffe_studie
         title: Munchen elektrisiert FFE-Studie
         geographic_scope: city
-        target_cities: [Munich]
-        countries: [Germany]
+        city: [Munich]
+        country: [Germany]
         publication_year: null
         description: Munich-focused electrification study.
         source_type: city_study
@@ -126,8 +126,8 @@ groups:
       - source_id: kba_elektromobilitat_in_deutschland
         title: KBA Elektromobilitat in Deutschland
         geographic_scope: national
-        target_cities: [Aachen, Dresden, Heidelberg, Leipzig, Mannheim, Munich, Munster]
-        countries: [Germany]
+        city: [Aachen, Dresden, Heidelberg, Leipzig, Mannheim, Munich, Munster]
+        country: [Germany]
         publication_year: null
         description: Vehicle registration analysis for electromobility in Germany.
         source_type: national_dataset
@@ -138,8 +138,8 @@ groups:
       - source_id: bafa_umweltbonus_zwischenbilanz
         title: BAFA Umweltbonus Zwischenbilanz
         geographic_scope: national
-        target_cities: [Aachen, Dresden, Heidelberg, Leipzig, Mannheim, Munich, Munster]
-        countries: [Germany]
+        city: [Aachen, Dresden, Heidelberg, Leipzig, Mannheim, Munich, Munster]
+        country: [Germany]
         publication_year: null
         description: EV subsidy programme statistics for Germany.
         source_type: national_dataset
@@ -150,8 +150,8 @@ groups:
       - source_id: bundesnetzagentur_ladesaeulenregister
         title: Bundesnetzagentur Ladesaeulenregister
         geographic_scope: national
-        target_cities: [Aachen, Dresden, Heidelberg, Leipzig, Mannheim, Munich, Munster]
-        countries: [Germany]
+        city: [Aachen, Dresden, Heidelberg, Leipzig, Mannheim, Munich, Munster]
+        country: [Germany]
         publication_year: null
         description: German public charging point registry.
         source_type: national_dataset
@@ -162,8 +162,8 @@ groups:
       - source_id: masterplan_ladeinfrastruktur_ii
         title: Masterplan Ladeinfrastruktur II
         geographic_scope: national
-        target_cities: [Aachen, Dresden, Heidelberg, Leipzig, Mannheim, Munich, Munster]
-        countries: [Germany]
+        city: [Aachen, Dresden, Heidelberg, Leipzig, Mannheim, Munich, Munster]
+        country: [Germany]
         publication_year: null
         description: Federal charging infrastructure targets.
         source_type: national_policy
@@ -174,8 +174,8 @@ groups:
       - source_id: now_gmbh_ladeinfrastruktur_studie_2024
         title: NOW GmbH Ladeinfrastruktur-Studie 2024
         geographic_scope: national
-        target_cities: [Aachen, Dresden, Heidelberg, Leipzig, Mannheim, Munich, Munster]
-        countries: [Germany]
+        city: [Aachen, Dresden, Heidelberg, Leipzig, Mannheim, Munich, Munster]
+        country: [Germany]
         publication_year: 2024
         description: Charging infrastructure demand projections.
         source_type: national_study
@@ -190,8 +190,8 @@ groups:
       - source_id: icct_ev_uptake_european_cities
         title: ICCT EV Uptake in European Cities
         geographic_scope: european
-        target_cities: []
-        countries: []
+        city: []
+        country: []
         publication_year: null
         description: City-level EV uptake data for European metro regions.
         source_type: european_database
@@ -202,8 +202,8 @@ groups:
       - source_id: icct_zero_emission_zones
         title: ICCT Planning and Implementation of Zero-Emission Zones
         geographic_scope: european
-        target_cities: []
-        countries: []
+        city: []
+        country: []
         publication_year: null
         description: Planning and implementation data for zero-emission zones.
         source_type: european_study
@@ -214,8 +214,8 @@ groups:
       - source_id: acea_charging_ahead
         title: ACEA Charging Ahead
         geographic_scope: european
-        target_cities: []
-        countries: []
+        city: []
+        country: []
         publication_year: null
         description: EU charging infrastructure rollout analysis.
         source_type: european_study
@@ -226,8 +226,8 @@ groups:
       - source_id: rmi_x_change_cars
         title: RMI X-Change Cars
         geographic_scope: global
-        target_cities: []
-        countries: []
+        city: []
+        country: []
         publication_year: null
         description: Global S-curve EV adoption modelling.
         source_type: global_study
@@ -242,8 +242,8 @@ groups:
       - source_id: agora_stadt_land_ladefluss
         title: Agora Verkehrswende Stadt Land Ladefluss
         geographic_scope: national
-        target_cities: [Aachen, Dresden, Heidelberg, Leipzig, Mannheim, Munich, Munster]
-        countries: [Germany]
+        city: [Aachen, Dresden, Heidelberg, Leipzig, Mannheim, Munich, Munster]
+        country: [Germany]
         publication_year: null
         description: Municipal charging guidance.
         source_type: think_tank_report
@@ -254,8 +254,8 @@ groups:
       - source_id: oko_institut_transport_electrification_reports
         title: Oko-Institut transport electrification reports
         geographic_scope: national
-        target_cities: [Aachen, Dresden, Heidelberg, Leipzig, Mannheim, Munich, Munster]
-        countries: [Germany]
+        city: [Aachen, Dresden, Heidelberg, Leipzig, Mannheim, Munich, Munster]
+        country: [Germany]
         publication_year: null
         description: Truck electrification, charging scenarios, and electric truck operations reports.
         source_type: think_tank_report
@@ -266,8 +266,8 @@ groups:
       - source_id: wri_transport_climate_reports
         title: WRI transport climate reports
         geographic_scope: global
-        target_cities: []
-        countries: []
+        city: []
+        country: []
         publication_year: null
         description: Electric bus, ride-hailing, LEZ, delivery zone, pole-mounted charging, and transport climate action reports.
         source_type: think_tank_report
@@ -282,8 +282,8 @@ groups:
       - source_id: eu_mission_programme_documents
         title: EU Mission programme documents
         geographic_scope: european
-        target_cities: [Aachen, Dresden, Heidelberg, Leipzig, Mannheim, Munich, Munster, Klagenfurt]
-        countries: [Germany, Austria]
+        city: [Aachen, Dresden, Heidelberg, Leipzig, Mannheim, Munich, Munster, Klagenfurt]
+        country: [Germany, Austria]
         publication_year: null
         description: EU Mission implementation plan, info kit, and full mission document.
         source_type: eu_programme
@@ -294,8 +294,8 @@ groups:
       - source_id: global_covenant_of_cities_handbook
         title: Global Covenant of Cities Handbook
         geographic_scope: global
-        target_cities: []
-        countries: []
+        city: []
+        country: []
         publication_year: null
         description: Handbook reference for city climate action.
         source_type: programme_handbook
@@ -303,3 +303,4 @@ groups:
         verticals: [governance]
         tef_sectors: []
         tef_transitions: []
+

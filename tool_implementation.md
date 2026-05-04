@@ -40,8 +40,8 @@ sources:
   - source_id: krakow_electromobility_strategy_2030
     title: Krakow Electromobility Strategy 2030
     upstream_group: tier_1_city_plans
-    city: Krakow
-    country: Poland
+    city: [Krakow]
+    country: [Poland]
     publication_year: 2024
     description: City electromobility strategy covering public charging infrastructure.
     source_type: mobility_plan

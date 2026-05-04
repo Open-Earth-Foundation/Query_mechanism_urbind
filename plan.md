@@ -73,8 +73,8 @@ Example:
 sources:
   - source_id: vienna_cap_2024
     title: Vienna Climate Action Plan 2024
-    city: Vienna
-    country: Austria
+    city: [Vienna]
+    country: [Austria]
     publication_year: 2024
     description: City climate action plan covering mobility, energy, and buildings targets.
     source_type: city_cap
@@ -89,8 +89,8 @@ MVP required tags:
 - `source_id`: stable source identifier.
 - `title`: human-readable source title.
 - `upstream_group`: source group from the copied additional-docs catalogue.
-- `city`: city the document is about.
-- `country`: source jurisdiction.
+- `city`: list of cities the document is about or can apply to.
+- `country`: list of source jurisdictions.
 - `publication_year`: publication year, not necessarily the data year or target year.
 - `description`: short summary of what the document covers.
 - `source_type`: city_cap, mobility_plan, energy_plan, national_dataset, eu_dataset, operator_report, think_tank_report, news, etc.
@@ -103,6 +103,7 @@ Non-MVP but useful tags for later enrichment:
 - `source_url`: original URL when available.
 - `data_years`: years for observed data contained in the document.
 - `target_years`: future years referenced by targets or plans.
+- `tags`: free-form discovery labels for quick lookup, such as `krakow`.
 
 For MVP, we do not hand-author TEF sector tags for most external documents. We run the
 current TEF mapping pipeline over each converted document and persist broad
@@ -151,9 +152,9 @@ Catalogue responsibilities:
 - store enough metadata for `get_tag_options()` and `list_candidate_sources()`;
 - do not use source ranking or authority logic in MVP.
 
-For broad sources, `city` may be empty or omitted. Instead, the catalogue should
-use coverage fields such as `countries`, `target_cities`, and `geographic_scope`
-so national and European sources can still be considered for selected cities.
+For broad sources, `city` can be an empty list or a list of target cities. The
+catalogue should also use `geographic_scope` so national, European, and global
+sources can still be considered for selected cities.
 
 Recommended catalogue fields:
 
@@ -162,8 +163,8 @@ source_id: bundesnetzagentur_ladesaeulenregister
 title: Bundesnetzagentur Ladesaeulenregister
 upstream_group: tier_2_national_datasets
 geographic_scope: national
-target_cities: [Aachen, Dresden, Heidelberg, Leipzig, Mannheim, Munich, Munster]
-countries: [Germany]
+city: [Aachen, Dresden, Heidelberg, Leipzig, Mannheim, Munich, Munster]
+country: [Germany]
 publication_year: null
 description: Public charging point registry for Germany.
 source_type: national_dataset
