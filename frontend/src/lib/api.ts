@@ -607,6 +607,10 @@ export async function downloadRunWordExport(runId: string): Promise<Blob> {
   return requestBlob(`/api/v1/runs/${encodeURIComponent(runId)}/export/docx`);
 }
 
+export async function downloadRunWriterContextExport(runId: string): Promise<Blob> {
+  return requestBlob(`/api/v1/runs/${encodeURIComponent(runId)}/export/writer-context`);
+}
+
 export async function fetchRunContext(runId: string): Promise<RunContextResponse> {
   return requestJson<RunContextResponse>(`/api/v1/runs/${encodeURIComponent(runId)}/context`);
 }
