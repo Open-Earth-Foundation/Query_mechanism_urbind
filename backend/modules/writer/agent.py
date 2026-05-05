@@ -212,6 +212,7 @@ def _prepare_writer_content(
         content=normalized_content,
         markdown_bundle=markdown_bundle,
         selected_city_names=selected_city_names,
+        context_bundle=context_bundle,
     )
     confirmed_city_count = len(required_city_keys) - len(missing_coverage_keys)
     required_city_count = len(required_city_keys)

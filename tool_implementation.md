@@ -208,7 +208,7 @@ The agent should only see the tools that are useful for the current stage.
 1. Before any search:
    show `get_tag_options`, `list_candidate_sources`, `regex_search`,
    `list_evidence_candidates`, and `mark_no_evidence_found`
-2. After at least one `regex_search` returned hits in the current run:
+2. After at least one `regex_search` returned hits for the current city-field task:
    add `expand_hits` and `add_evidence_candidates`
 3. After evidence has been saved:
    keep `list_evidence_candidates` visible so the agent can avoid duplicates
@@ -380,11 +380,10 @@ Validation:
 - duplicate hit IDs in the same request should be rejected.
 - return hits in the same order they were requested.
 
-The agent should only see or be allowed to call this tool after tool 3
-(`regex_search`) has returned at least one hit in the current run/session. This
-keeps the initial tool surface smaller, limits context use, and prevents the LLM
-from trying to browse documents before a bounded search has established a
-specific hit anchor.
+The agent should only see this tool after tool 3 (`regex_search`) has returned
+at least one hit for the current city-field task. This keeps the initial tool
+surface smaller, limits context use, and prevents the LLM from trying to browse
+documents before a bounded search has established a specific hit anchor.
 
 ### 5. `add_evidence_candidates`
 

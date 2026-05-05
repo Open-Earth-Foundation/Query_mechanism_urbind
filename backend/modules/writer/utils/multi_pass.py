@@ -352,7 +352,7 @@ def build_writer_context_bundle(
     )
     analysis_mode = context_bundle.get("analysis_mode")
 
-    return {
+    writer_context: dict[str, object] = {
         "sql": context_bundle.get("sql"),
         "research_question": context_bundle.get("research_question"),
         "analysis_mode": analysis_mode,
@@ -372,6 +372,10 @@ def build_writer_context_bundle(
             "inspected_cities": normalized_city_keys,
         },
     }
+    enrichment = context_bundle.get("enrichment")
+    if isinstance(enrichment, dict):
+        writer_context["enrichment"] = enrichment
+    return writer_context
 
 
 def _flatten_unit_city_names(units: list[_CityExcerptUnit]) -> list[str]:

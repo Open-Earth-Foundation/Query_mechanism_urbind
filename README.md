@@ -77,6 +77,8 @@ Environment variables (`.env`):
 - `ANONYMIZED_TELEMETRY` (optional, default `FALSE`): disables Chroma anonymized telemetry when set to `FALSE`.
 - `CHROMA_PERSIST_PATH` (optional, default `.chroma`): local Chroma persistence directory.
 - `CHROMA_COLLECTION_NAME` (optional, default `markdown_chunks`): Chroma collection used for markdown chunks.
+- `EXTERNAL_SOURCE_SEARCH_ENABLED` (optional, default `true`): enables governed external Markdown library enrichment when `sources.yaml` is available.
+- `EXTERNAL_SOURCE_DIR` (optional, default `documents/source_library`): directory containing `sources.yaml` and Markdown files whose stems match `source_id`.
 
 Chat prompt sizing, follow-up router history and excerpt caps, retry backoff, provider timeouts, and vector-store retrieval tuning all come from `llm_config.yaml`.
 CLI flags override `.env` values for a given run (for example `--markdown-path`).
@@ -291,6 +293,20 @@ against source truth. Outputs are written under
 `00_inputs/initiatives.jsonl`, the standard `01_tef_mapping/` mapper artifacts,
 `02_comparison/tef_benchmark_issues.json`, `02_comparison/tef_benchmark_report.md`,
 and `benchmark_summary.json`. Use `--limit N` for a smoke check before a full run.
+
+Run the governed external-source benchmark and writer scenario for Krakow:
+
+```
+python -m backend.scripts.benchmark_external_source_pipeline --run-id krakow_external_smoke
+```
+
+The benchmark reads `backend/benchmarks/external_sources/krakow_external_source_benchmark.json`,
+loads `documents/source_library/sources.yaml`, runs the external-source researcher with controlled
+Markdown search tools, resolves external evidence into the enrichment bundle, and optionally runs
+the writer. Outputs are written under
+`output/external_source_benchmarks/krakow/<run_id>/`, including `benchmark_summary.json`,
+`context_bundle.json`, `writer_answer.md`, and `external_sources/external_evidence.json`.
+Use `--skip-writer` for extraction-only validation.
 
 ### Krakow TEF source-of-truth assets
 

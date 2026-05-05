@@ -1,0 +1,49 @@
+{
+  "scenario": {
+    "city": "Krakow",
+    "question": "How can Krakow's governed external source library enhance a writer answer when CCC evidence is missing or stale for climate targets and transport investment context?",
+    "writer_question": "For Krakow, summarize what the external source library adds beyond CCC excerpts for climate target interpretation and transport-related investment context."
+  },
+  "cases": [
+    {
+      "field": "secap_local_co2_reduction_2030_target",
+      "field_status": "blank",
+      "expected": {
+        "must_find": true,
+        "source_id": "krakow-secap-2025",
+        "value_terms": ["30"],
+        "quote_terms": ["2030", "CO2"]
+      }
+    },
+    {
+      "field": "climate_city_contract_ghg_reduction_2030_target",
+      "field_status": "stale",
+      "expected": {
+        "must_find": true,
+        "source_id": "krakow-climate-city-contract-2024-action-plan",
+        "value_terms": ["80"],
+        "quote_terms": ["2030", "2018"]
+      }
+    },
+    {
+      "field": "transport_climate_investment_2023_eur",
+      "field_status": "blank",
+      "expected": {
+        "must_find": true,
+        "source_id": "krakow-climate-city-contract-2024-investment-plan",
+        "value_terms": ["448"],
+        "quote_terms": ["Transport", "EUR"]
+      }
+    },
+    {
+      "field": "public_ev_chargers_2030_target",
+      "field_status": "blank",
+      "expected": {
+        "must_find": true,
+        "source_id": "krakow-climate-city-contract-2024-action-plan",
+        "value_terms": ["150"],
+        "quote_terms": ["150", "stacji", "programu"]
+      }
+    }
+  ]
+}

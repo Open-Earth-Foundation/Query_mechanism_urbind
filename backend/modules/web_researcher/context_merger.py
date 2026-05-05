@@ -16,8 +16,11 @@ from backend.modules.web_researcher.models import (
     EnrichedField,
     EnrichmentBundle,
     EnrichmentMeta,
+    ExternalEvidenceClaim,
+    ExternalEvidenceResolution,
     FreshnessResult,
     GapManifest,
+    NoEvidenceRecord,
     NonEstimableRecord,
     WebFinding,
 )
@@ -39,6 +42,7 @@ def compute_field_statuses(
     web_findings: list[WebFinding],
     freshness_results: list[FreshnessResult],
     context_bundle: dict[str, Any],
+    external_resolutions: list[ExternalEvidenceResolution] | None = None,
 ) -> list[EnrichedField]:
     """Determine the status of each city x field combination after web research.
 
@@ -162,7 +166,83 @@ def compute_field_statuses(
                     )
                 )
 
-    return enriched_fields
+    return _apply_external_resolutions(enriched_fields, external_resolutions or [])
+
+
+def _apply_external_resolutions(
+    enriched_fields: list[EnrichedField],
+    external_resolutions: list[ExternalEvidenceResolution],
+) -> list[EnrichedField]:
+    """Overlay external Markdown resolver decisions on enriched field statuses."""
+    if not external_resolutions:
+        return enriched_fields
+
+    by_key = {
+        (field.city.lower(), field.field.lower()): index
+        for index, field in enumerate(enriched_fields)
+    }
+    merged = list(enriched_fields)
+    for resolution in external_resolutions:
+        key = (resolution.city.lower(), resolution.field.lower())
+        current = merged[by_key[key]] if key in by_key else None
+        if resolution.action == "unresolved" and current is not None and current.status == "resolved":
+            continue
+        field = _field_from_external_resolution(resolution, current)
+        if key in by_key:
+            merged[by_key[key]] = field
+        else:
+            by_key[key] = len(merged)
+            merged.append(field)
+    return merged
+
+
+def _field_from_external_resolution(
+    resolution: ExternalEvidenceResolution,
+    current: EnrichedField | None,
+) -> EnrichedField:
+    """Build an enriched field from one external resolver decision."""
+    if resolution.action == "unresolved":
+        return EnrichedField(
+            city=resolution.city,
+            field=resolution.field,
+            status="still_missing",
+            source="none",
+            provenance={"external_resolution": resolution.rationale},
+        )
+
+    provenance = {
+        "external_resolution_action": resolution.action,
+        "source_id": resolution.source_id,
+        "line_start": resolution.line_start,
+        "line_end": resolution.line_end,
+        "quote": resolution.quote,
+        "confidence": resolution.confidence,
+        "rationale": resolution.rationale,
+    }
+    if resolution.action == "conflict_review_required":
+        return EnrichedField(
+            city=resolution.city,
+            field=resolution.field,
+            status="partially_resolved",
+            value=resolution.external_value,
+            source="external_markdown",
+            provenance={**provenance, "ccc_value": resolution.ccc_value},
+            freshness_flag="conflict_review_required",
+        )
+
+    source = "ccc" if resolution.action == "confirm" else "external_markdown"
+    value = resolution.ccc_value if resolution.action == "confirm" else resolution.external_value
+    if value is None and current is not None:
+        value = current.value
+    return EnrichedField(
+        city=resolution.city,
+        field=resolution.field,
+        status="resolved",
+        value=value,
+        source=source,
+        provenance=provenance,
+        freshness_flag=resolution.action,
+    )
 
 
 def merge_enrichment_into_context(
@@ -176,6 +256,9 @@ def merge_enrichment_into_context(
     config_model: str,
     assumptions_model: str,
     elapsed_seconds: float,
+    external_evidence: list[ExternalEvidenceClaim] | None = None,
+    external_resolutions: list[ExternalEvidenceResolution] | None = None,
+    external_no_evidence: list[NoEvidenceRecord] | None = None,
 ) -> dict[str, Any]:
     """Create a new context bundle with enrichment data merged in.
 
@@ -198,18 +281,26 @@ def merge_enrichment_into_context(
         estimable_count=max(0, estimable_count),
         non_estimable_count=non_estimable_count,
         web_findings_count=len(web_findings),
+        external_evidence_count=len(external_evidence or []),
         elapsed_seconds=elapsed_seconds,
     )
 
     # Compute enriched field statuses
     enriched_fields = compute_field_statuses(
-        gap_manifest, web_findings, freshness_results, context_bundle
+        gap_manifest,
+        web_findings,
+        freshness_results,
+        context_bundle,
+        external_resolutions=external_resolutions,
     )
 
     bundle = EnrichmentBundle(
         gap_manifest=gap_manifest,
         enriched_fields=enriched_fields,
         web_findings=web_findings,
+        external_evidence=external_evidence or [],
+        external_resolutions=external_resolutions or [],
+        external_no_evidence=external_no_evidence or [],
         freshness_results=freshness_results,
         assumptions=assumptions,
         non_estimable=non_estimable,
@@ -245,6 +336,18 @@ def serialize_enrichment_artifacts(
     web_findings = enrichment_data.get("web_findings", [])
     if web_findings:
         artifact_map["web_findings"] = web_findings
+
+    external_evidence = enrichment_data.get("external_evidence", [])
+    if external_evidence:
+        artifact_map["external_evidence"] = external_evidence
+
+    external_resolutions = enrichment_data.get("external_resolutions", [])
+    if external_resolutions:
+        artifact_map["external_resolutions"] = external_resolutions
+
+    external_no_evidence = enrichment_data.get("external_no_evidence", [])
+    if external_no_evidence:
+        artifact_map["external_no_evidence"] = external_no_evidence
 
     freshness_results = enrichment_data.get("freshness_results", [])
     if freshness_results:

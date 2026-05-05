@@ -666,6 +666,42 @@ def test_writer_replaces_existing_model_footer_with_canonical_footer(
     assert "- Berlin [ref_2]" not in output.content
 
 
+def test_writer_footer_does_not_mark_external_evidence_city_as_no_evidence() -> None:
+    context_bundle: dict[str, object] = {
+        "selected_cities": ["Krakow"],
+        "markdown": {
+            "excerpt_count": 0,
+            "selected_city_names": ["Krakow"],
+            "excerpts": [],
+        },
+        "enrichment": {
+            "external_evidence": [
+                {
+                    "city": "Krakow",
+                    "field": "transport_climate_investment_2023_eur",
+                    "value": 448039290,
+                    "source_id": "krakow-investment",
+                    "line_start": 341,
+                    "line_end": 361,
+                }
+            ],
+        },
+    }
+
+    content, *_ = writer_agent._prepare_writer_content(
+        content=(
+            "## Executive Summary\n"
+            "Krakow is covered by external evidence (krakow-investment:L341-L361)."
+        ),
+        context_bundle=context_bundle,
+        selected_city_names=["Krakow"],
+    )
+
+    assert "## Cities with no important evidence found" not in content
+    assert "## Cities considered" in content
+    assert "- Krakow" in content
+
+
 def test_build_writer_context_bundle_keeps_only_writer_relevant_markdown_fields() -> None:
     context_bundle: dict[str, object] = {
         "sql": None,
