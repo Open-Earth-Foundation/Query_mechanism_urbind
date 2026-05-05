@@ -6,9 +6,9 @@ Two entry points:
   backward compatibility with existing callers and integration tests.
 - ``decompose_fields`` (Phase 0) + ``detect_city_gaps`` (Phase 2) — the
   split flow used by the new orchestrator.  Decomposition runs against
-  the question alone; per-city gap detection runs against an enriched
-  context bundle that already contains tier-1 local data (markdown
-  excerpts, structured lookups, benchmark excerpts).
+  the question alone; per-city gap detection runs against the current
+  context bundle. A future external-source stage sits between those steps
+  but is a no-op in this cleanup.
 """
 
 from __future__ import annotations
@@ -228,13 +228,6 @@ def _slim_context_for_gap_analysis(context_bundle: dict[str, Any]) -> dict[str, 
                 slim_md[keep_key] = markdown[keep_key]
         slim["markdown"] = slim_md
 
-    # Phase 1 fan-out: pass through structured lookups + benchmark excerpts
-    # so the per-city gap detector can see resolved values + reference data
-    # before deciding what's missing.
-    phase1 = context_bundle.get("phase1")
-    if isinstance(phase1, dict):
-        slim["phase1"] = phase1
-
     return slim
 
 
@@ -448,8 +441,7 @@ def _build_detect_system_prompt(config: AppConfig) -> str:
         "- For each city in the context, check every estimable/derivable\n"
         "  field given to you.\n"
         "- A field is **blank** if the context contains no concrete numeric\n"
-        "  value for it (across markdown excerpts, structured lookups, or\n"
-        "  benchmark excerpts).\n"
+        "  value for it in the available markdown excerpts or metadata.\n"
         f"- A field is **stale** if the data is older than {freshness_days} days,\n"
         '  or uses aspirational language ("plans to", "targets") without\n'
         "  concrete numbers.\n"
@@ -498,7 +490,7 @@ def _build_detect_user_prompt(
         "```json\n"
         f"{fields_json}\n"
         "```\n\n"
-        "Context bundle (markdown excerpts, structured lookups, benchmarks):\n"
+        "Context bundle (markdown excerpts and metadata):\n"
         "```json\n"
         f"{context_json}\n"
         "```\n\n"
@@ -514,14 +506,12 @@ def detect_city_gaps(
     config: AppConfig,
     api_key: str,
 ) -> GapManifest:
-    """Phase 2: detect per-city blank/stale gaps against an enriched bundle.
+    """Phase 2: detect per-city blank/stale gaps against the context bundle.
 
     Takes the field decomposition produced by ``decompose_fields`` and the
-    context bundle as enriched by Phase 1 fan-out (markdown researcher,
-    structured lookups, vector benchmarks).  Returns a full GapManifest by
-    combining the upstream decomposition with per-city gaps from this pass.
-    On any failure, returns a manifest with empty city_gaps so the pipeline
-    can continue.
+    current context bundle. Returns a full GapManifest by combining the
+    upstream decomposition with per-city gaps from this pass. On any failure,
+    returns a manifest with empty city_gaps so the pipeline can continue.
     """
     if not decomposition.query_fields:
         return GapManifest(

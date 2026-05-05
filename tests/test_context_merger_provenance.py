@@ -23,6 +23,7 @@ def _gap_manifest_one_blank() -> GapManifest:
                 classification="estimable_numerical",
                 searchable=True,
                 rationale="x",
+                scope="municipal",
             ),
         ],
         city_gaps=[
@@ -112,6 +113,7 @@ def test_tier1_finding_carries_source_id_and_resolved_name() -> None:
     assert ef.source_tier == "tier1"
     assert ef.provenance.get("source_name") == "Bundesnetzagentur Ladesäulenkarte"
     assert ef.provenance.get("source_url") == "https://bundesnetzagentur.de/dresden"
+    assert ef.scope == "municipal"
 
 
 def test_open_finding_keeps_open_tier_and_no_source_name() -> None:

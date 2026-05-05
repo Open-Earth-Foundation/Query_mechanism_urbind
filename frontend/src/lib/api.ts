@@ -45,9 +45,7 @@ export type PipelineItemType =
   | "field"
   | "estimate"
   | "gap"
-  | "batch_summary"
-  | "lookup"
-  | "benchmark_excerpt";
+  | "batch_summary";
 
 export interface PipelineStepItem {
   text: string;

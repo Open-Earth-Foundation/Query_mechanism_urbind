@@ -82,26 +82,25 @@ def test_city_markdown_endpoint_matches_normalized_city_names(tmp_path: Path) ->
         assert payload["content"] == "# Vitoria Gasteiz\n\nContent"
 
 
-def test_city_markdown_endpoint_merges_nested_additional_files(
+def test_city_markdown_endpoint_ignores_nested_markdown_artifacts(
     tmp_path: Path,
 ) -> None:
     runs_dir = tmp_path / "output"
     markdown_dir = tmp_path / "documents"
-    additional_dir = markdown_dir / "additional" / "munich_eksp-2030"
-    additional_dir.mkdir(parents=True, exist_ok=True)
+    nested_dir = markdown_dir / "tef_mapping"
+    nested_dir.mkdir(parents=True, exist_ok=True)
     primary_path = markdown_dir / "Munich.md"
-    additional_path = additional_dir / "munich.md"
+    nested_path = nested_dir / "Munich.md"
     primary_path.write_text("# Primary\n\nOne", encoding="utf-8")
-    additional_path.write_text("# Additional plan\n\nTwo", encoding="utf-8")
+    nested_path.write_text("# Nested artifact\n\nShould be ignored", encoding="utf-8")
 
     app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
     with TestClient(app) as client:
         response = client.get("/api/v1/cities/Munich/markdown")
         assert response.status_code == 200
         payload = response.json()
-        # Top-level file sorts first (by depth), additional file appended.
-        assert payload["content"] == "# Primary\n\nOne\n\n# Additional plan\n\nTwo"
-        assert payload["source_paths"] == [str(primary_path), str(additional_path)]
+        assert payload["content"] == "# Primary\n\nOne"
+        assert payload["source_paths"] == [str(primary_path)]
 
 
 def test_city_markdown_endpoint_returns_404_for_missing_city(tmp_path: Path) -> None:

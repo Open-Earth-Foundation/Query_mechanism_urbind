@@ -1,7 +1,4 @@
-"""Context Merger (Agent 5) + Output Assembler (Agent 7).
-
-Merges enrichment results into the context bundle and serializes artifacts.
-"""
+"""Context Merger (Agent 5) and Output Assembler (Agent 7)."""
 
 from __future__ import annotations
 
@@ -11,10 +8,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from backend.modules.web_researcher.derived_metrics import compute_derived_metrics
 from backend.modules.web_researcher.models import (
     AssumptionRecord,
-    DerivedMetric,
     EnrichedField,
     EnrichmentBundle,
     EnrichmentMeta,
@@ -29,55 +24,37 @@ from backend.utils.json_io import write_json
 logger = logging.getLogger(__name__)
 
 
-def _ensure_resolved_has_value(ef: EnrichedField) -> EnrichedField:
-    """Invariant: 'resolved' requires a non-null value."""
-    if ef.status == "resolved" and ef.value is None:
-        return ef.model_copy(update={"status": "partially_resolved"})
-    return ef
+def _ensure_resolved_has_value(enriched: EnrichedField) -> EnrichedField:
+    """Downgrade resolved fields that have no value."""
+    if enriched.status == "resolved" and enriched.value is None:
+        return enriched.model_copy(update={"status": "partially_resolved"})
+    return enriched
 
 
 def _build_source_name_index() -> dict[str, str]:
-    """Map ``source_id`` → human-readable name from the manifest + allowlist.
-
-    Best-effort: returns an empty dict when neither file is present yet so
-    runs without any ingestion still work.  The lookup is small and is
-    rebuilt per ``compute_field_statuses`` call (not hot enough to cache).
-    """
-    name_index: dict[str, str] = {}
-
-    try:  # noqa: SIM105 — keep failures isolated to each loader
+    """Map tier-1 ``source_id`` values to human-readable names."""
+    try:
         from backend.modules.web_researcher.tier1_web import (
             load_tier1_web_allowlist,
         )
 
         allowlist = load_tier1_web_allowlist()
     except Exception:  # noqa: BLE001
-        allowlist = None
+        return {}
 
-    if allowlist is not None:
-        for source in allowlist.sources:
-            if source.id and source.name:
-                name_index[source.id] = source.name
-
-    try:
-        from backend.modules.sources.manifest import load_manifest
-
-        manifest = load_manifest()
-    except Exception:  # noqa: BLE001
-        manifest = None
-
-    if manifest is not None:
-        for source in manifest.sources:
-            if source.id and source.name and source.id not in name_index:
-                name_index[source.id] = source.name
-
-    return name_index
+    return {
+        source.id: source.name
+        for source in allowlist.sources
+        if source.id and source.name
+    }
 
 
 def _attach_source_name(
-    provenance: dict[str, object], source_id: str | None, name_index: dict[str, str]
+    provenance: dict[str, object],
+    source_id: str | None,
+    name_index: dict[str, str],
 ) -> dict[str, object]:
-    """Return a new provenance dict with ``source_name`` populated when known."""
+    """Return provenance with ``source_name`` when the tier-1 id is known."""
     if not source_id:
         return provenance
     name = name_index.get(source_id)
@@ -94,149 +71,68 @@ def compute_field_statuses(
     freshness_results: list[FreshnessResult],
     context_bundle: dict[str, Any],
 ) -> list[EnrichedField]:
-    """Determine the status of each city x field combination after web research.
-
-    Merger logic:
-    - Web superseded → web value primary, status=resolved
-    - Web consistent → CCC confirmed, status=resolved
-    - Web uncertain → CCC primary, flagged, status=partially_resolved
-    - No web + CCC exists → CCC stands, status=resolved
-    - Web found + no CCC → web fills blank, status=resolved
-    - Has peer reference data → status=partially_resolved
-    - Nothing → status=still_missing
-    """
-    # Index web findings by (city, field)
+    """Determine city-field statuses after web research."""
     web_index: dict[tuple[str, str], WebFinding] = {}
-    for wf in web_findings:
-        key = (wf.city.lower(), wf.field.lower())
-        # Keep highest confidence finding per city+field
+    for finding in web_findings:
+        key = (finding.city.lower(), finding.field.lower())
         existing = web_index.get(key)
-        if existing is None or wf.extraction_confidence > existing.extraction_confidence:
-            web_index[key] = wf
+        if existing is None or finding.extraction_confidence > existing.extraction_confidence:
+            web_index[key] = finding
 
-    # Index freshness results by (city, field)
     freshness_index: dict[tuple[str, str], FreshnessResult] = {}
-    for fr in freshness_results:
-        freshness_index[(fr.city.lower(), fr.field.lower())] = fr
+    for result in freshness_results:
+        freshness_index[(result.city.lower(), result.field.lower())] = result
 
-    # Source-id → human-readable name lookup, populated from the manifest +
-    # tier-1 allowlist when present.  Used to enrich provenance so the
-    # writer can attribute by name without re-resolving ids itself.
     source_name_index = _build_source_name_index()
-
-    # Field → scope index from the gap manifest.  Scope is the single source
-    # of truth on FieldClassification; we propagate it onto each EnrichedField
-    # at the end so the writer can enforce per-scope subtotals without joining.
-    scope_by_field: dict[str, str] = {
-        fc.field.lower(): fc.scope for fc in gap_manifest.query_fields
-    }
-
+    scope_by_field = {field.field.lower(): field.scope for field in gap_manifest.query_fields}
     enriched_fields: list[EnrichedField] = []
 
     for city_gap in gap_manifest.city_gaps:
         city = city_gap.city
         bundled_set = set(city_gap.bundled_fields)
-        all_gap_fields = (
-            set(city_gap.blank_fields) | set(city_gap.stale_flags) | bundled_set
-        )
+        all_gap_fields = set(city_gap.blank_fields) | set(city_gap.stale_flags) | bundled_set
 
         for field in all_gap_fields:
             key = (city.lower(), field.lower())
-            wf = web_index.get(key)
-            fr = freshness_index.get(key)
+            finding = web_index.get(key)
+            freshness = freshness_index.get(key)
 
-            if wf and fr:
-                # Both web finding and freshness check exist
-                if fr.classification == "cancelled":
-                    ef = EnrichedField(
-                        city=city,
-                        field=field,
-                        status="still_missing",
-                        source="none",
-                        freshness_flag="cancelled",
-                    )
-                elif fr.classification == "superseded":
-                    ef = EnrichedField(
-                        city=city,
-                        field=field,
-                        status="resolved",
-                        value=wf.value,
-                        source="web",
-                        source_id=wf.source_id,
-                        source_tier=wf.source_tier,
-                        provenance=_attach_source_name(
-                            {
-                                "source_url": wf.source_url,
-                                "source_type": wf.source_type,
-                                "source_date": wf.source_date,
-                                "extraction_confidence": wf.extraction_confidence,
-                            },
-                            wf.source_id,
+            if finding and freshness:
+                enriched_fields.append(
+                    _ensure_resolved_has_value(
+                        _field_from_freshness(
+                            city,
+                            field,
+                            finding,
+                            freshness,
                             source_name_index,
-                        ),
-                        freshness_flag="superseded",
+                        )
                     )
-                elif fr.classification == "consistent":
-                    ef = EnrichedField(
-                        city=city,
-                        field=field,
-                        status="resolved",
-                        value=fr.ccc_value or wf.value,
-                        source="ccc",
-                        source_id=wf.source_id,
-                        source_tier=wf.source_tier,
-                        provenance=_attach_source_name(
-                            {"confirmed_by_web": wf.source_url},
-                            wf.source_id,
-                            source_name_index,
-                        ),
-                        freshness_flag="consistent",
-                    )
-                else:  # uncertain
-                    ef = EnrichedField(
-                        city=city,
-                        field=field,
-                        status="partially_resolved",
-                        value=fr.ccc_value,
-                        source="ccc",
-                        source_id=wf.source_id,
-                        source_tier=wf.source_tier,
-                        provenance=_attach_source_name(
-                            {
-                                "web_alternative": wf.source_url,
-                                "web_value": (
-                                    str(wf.value) if wf.value is not None else None
-                                ),
-                            },
-                            wf.source_id,
-                            source_name_index,
-                        ),
-                        freshness_flag="uncertain",
-                    )
-                enriched_fields.append(_ensure_resolved_has_value(ef))
-            elif wf and not fr:
-                # Web finding exists but no freshness check (no CCC value to compare)
-                ef = EnrichedField(
-                    city=city,
-                    field=field,
-                    status="resolved",
-                    value=wf.value,
-                    source="web",
-                    source_id=wf.source_id,
-                    source_tier=wf.source_tier,
-                    provenance=_attach_source_name(
-                        {
-                            "source_url": wf.source_url,
-                            "source_type": wf.source_type,
-                            "extraction_confidence": wf.extraction_confidence,
-                        },
-                        wf.source_id,
-                        source_name_index,
-                    ),
                 )
-                enriched_fields.append(_ensure_resolved_has_value(ef))
+            elif finding:
+                enriched_fields.append(
+                    _ensure_resolved_has_value(
+                        EnrichedField(
+                            city=city,
+                            field=field,
+                            status="resolved",
+                            value=finding.value,
+                            source="web",
+                            source_id=finding.source_id,
+                            source_tier=finding.source_tier,
+                            provenance=_attach_source_name(
+                                {
+                                    "source_url": finding.source_url,
+                                    "source_type": finding.source_type,
+                                    "extraction_confidence": finding.extraction_confidence,
+                                },
+                                finding.source_id,
+                                source_name_index,
+                            ),
+                        )
+                    )
+                )
             elif field in city_gap.stale_flags and field not in city_gap.blank_fields:
-                # Stale but present in CCC, no web update found
                 enriched_fields.append(
                     EnrichedField(
                         city=city,
@@ -247,10 +143,6 @@ def compute_field_statuses(
                     )
                 )
             elif field in bundled_set:
-                # Bundled-only: the CCC has a parent / aggregate value but
-                # the requested disaggregated line is missing.  Route to the
-                # estimator with bundled provenance so the LLM can apply
-                # peer per-unit ratios rather than treating it as resolved.
                 enriched_fields.append(
                     EnrichedField(
                         city=city,
@@ -260,15 +152,13 @@ def compute_field_statuses(
                         freshness_flag="bundled_only",
                         provenance={
                             "note": (
-                                "Aggregate / bundled value present in CCC; "
-                                "disaggregated line not reported. Estimator "
-                                "should derive via peer per-unit ratios."
+                                "Aggregate value present in CCC; requested "
+                                "disaggregated line not reported."
                             )
                         },
                     )
                 )
             else:
-                # Nothing found
                 enriched_fields.append(
                     EnrichedField(
                         city=city,
@@ -278,14 +168,88 @@ def compute_field_statuses(
                     )
                 )
 
-    # Propagate scope from gap_manifest to enriched_fields in one place so
-    # the per-branch constructors above stay focused on status/value logic.
     return [
-        ef.model_copy(
-            update={"scope": scope_by_field.get(ef.field.lower(), "unscoped")}
+        enriched.model_copy(
+            update={"scope": scope_by_field.get(enriched.field.lower(), "unscoped")}
         )
-        for ef in enriched_fields
+        for enriched in enriched_fields
     ]
+
+
+def _field_from_freshness(
+    city: str,
+    field: str,
+    finding: WebFinding,
+    freshness: FreshnessResult,
+    source_name_index: dict[str, str],
+) -> EnrichedField:
+    """Build an enriched field when both web finding and freshness result exist."""
+    if freshness.classification == "cancelled":
+        return EnrichedField(
+            city=city,
+            field=field,
+            status="still_missing",
+            source="none",
+            freshness_flag="cancelled",
+        )
+
+    if freshness.classification == "superseded":
+        return EnrichedField(
+            city=city,
+            field=field,
+            status="resolved",
+            value=finding.value,
+            source="web",
+            source_id=finding.source_id,
+            source_tier=finding.source_tier,
+            provenance=_attach_source_name(
+                {
+                    "source_url": finding.source_url,
+                    "source_type": finding.source_type,
+                    "source_date": finding.source_date,
+                    "extraction_confidence": finding.extraction_confidence,
+                },
+                finding.source_id,
+                source_name_index,
+            ),
+            freshness_flag="superseded",
+        )
+
+    if freshness.classification == "consistent":
+        return EnrichedField(
+            city=city,
+            field=field,
+            status="resolved",
+            value=freshness.ccc_value or finding.value,
+            source="ccc",
+            source_id=finding.source_id,
+            source_tier=finding.source_tier,
+            provenance=_attach_source_name(
+                {"confirmed_by_web": finding.source_url},
+                finding.source_id,
+                source_name_index,
+            ),
+            freshness_flag="consistent",
+        )
+
+    return EnrichedField(
+        city=city,
+        field=field,
+        status="partially_resolved",
+        value=freshness.ccc_value,
+        source="ccc",
+        source_id=finding.source_id,
+        source_tier=finding.source_tier,
+        provenance=_attach_source_name(
+            {
+                "web_alternative": finding.source_url,
+                "web_value": str(finding.value) if finding.value is not None else None,
+            },
+            finding.source_id,
+            source_name_index,
+        ),
+        freshness_flag="uncertain",
+    )
 
 
 def merge_enrichment_into_context(
@@ -300,43 +264,27 @@ def merge_enrichment_into_context(
     assumptions_model: str,
     elapsed_seconds: float,
 ) -> dict[str, Any]:
-    """Create a new context bundle with enrichment data merged in.
-
-    Never mutates the original context_bundle.
-    """
+    """Create a new context bundle with enrichment data merged in."""
     enriched = deepcopy(context_bundle)
 
-    # Count gaps
     total_gaps = sum(
-        len(cg.blank_fields) + len(cg.stale_flags) for cg in gap_manifest.city_gaps
+        len(gap.blank_fields) + len(gap.stale_flags) + len(gap.bundled_fields)
+        for gap in gap_manifest.city_gaps
     )
-    estimable_count = total_gaps - len(gap_manifest.non_estimable_fields)
-    non_estimable_count = len(gap_manifest.non_estimable_fields)
-
     meta = EnrichmentMeta(
         created_at=datetime.now(timezone.utc),
         gap_analyst_model=config_model,
         assumptions_estimator_model=assumptions_model,
         total_gaps=total_gaps,
-        estimable_count=max(0, estimable_count),
-        non_estimable_count=non_estimable_count,
+        estimable_count=max(0, total_gaps - len(gap_manifest.non_estimable_fields)),
+        non_estimable_count=len(gap_manifest.non_estimable_fields),
         web_findings_count=len(web_findings),
         elapsed_seconds=elapsed_seconds,
     )
 
-    # Compute enriched field statuses
     enriched_fields = compute_field_statuses(
         gap_manifest, web_findings, freshness_results, context_bundle
     )
-
-    # Derived metrics (per-capita, per-unit) — computed once from the
-    # resolved dataset.  Skipped silently on any failure so a bad metric
-    # doesn't take down the whole enrichment bundle.
-    derived_metrics: list[DerivedMetric] = []
-    try:
-        derived_metrics = compute_derived_metrics(enriched_fields)
-    except Exception:  # noqa: BLE001
-        logger.warning("derived_metrics: failed; continuing without", exc_info=True)
 
     bundle = EnrichmentBundle(
         gap_manifest=gap_manifest,
@@ -345,7 +293,6 @@ def merge_enrichment_into_context(
         freshness_results=freshness_results,
         assumptions=assumptions,
         non_estimable=non_estimable,
-        derived_metrics=derived_metrics,
         saturation_warning=saturation_warning,
         meta=meta,
     )
@@ -374,7 +321,6 @@ def serialize_enrichment_artifacts(
         "enrichment_bundle": enrichment_data,
     }
 
-    # Only write web artifacts if they contain data
     web_findings = enrichment_data.get("web_findings", [])
     if web_findings:
         artifact_map["web_findings"] = web_findings

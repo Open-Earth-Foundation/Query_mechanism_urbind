@@ -2,11 +2,9 @@
 
 import { useMemo, useState } from "react";
 import {
-  BookOpen,
   CheckCircle2,
   ChevronDown,
   CircleDashed,
-  Database,
   ExternalLink,
   Loader2,
   MinusCircle,
@@ -163,88 +161,20 @@ function SearchResultRow({ item }: { item: PipelineStepItem }) {
   );
 }
 
-function LookupRow({ item }: { item: PipelineStepItem }) {
-  const sourceId = item.metadata?.source_id as string | undefined;
-  const value = item.metadata?.value as string | undefined;
-  return (
-    <div className="flex items-center gap-3 px-4 py-2.5">
-      <Database className="h-4 w-4 shrink-0 text-blue-500" />
-      <span className="min-w-0 flex-1 truncate text-sm text-slate-800">
-        {item.title ?? item.text}
-        {value ? (
-          <span className="ml-1.5 font-medium text-slate-900">{value}</span>
-        ) : null}
-      </span>
-      {sourceId ? (
-        <Badge
-          variant="outline"
-          className="shrink-0 rounded-full border-blue-300 bg-blue-50 px-2.5 py-0.5 text-xs font-normal text-blue-700"
-        >
-          {sourceId}
-        </Badge>
-      ) : null}
-    </div>
-  );
-}
-
-function BenchmarkExcerptRow({ item }: { item: PipelineStepItem }) {
-  const tier = item.metadata?.tier as string | undefined;
-  return (
-    <div className="flex items-center gap-3 px-4 py-2.5">
-      <BookOpen className="h-4 w-4 shrink-0 text-violet-500" />
-      <span className="min-w-0 flex-1 truncate text-sm text-slate-800">
-        {item.title ?? item.text}
-      </span>
-      <div className="flex shrink-0 items-center gap-2">
-        {item.count != null ? (
-          <Badge
-            variant="outline"
-            className="rounded-full border-slate-200 bg-slate-50 px-2.5 py-0.5 text-xs font-normal text-slate-600"
-          >
-            {item.count} excerpts
-          </Badge>
-        ) : null}
-        {tier ? (
-          <Badge
-            variant="outline"
-            className="rounded-full border-violet-300 bg-violet-50 px-2.5 py-0.5 text-xs font-normal text-violet-700"
-          >
-            {tier}
-          </Badge>
-        ) : null}
-      </div>
-    </div>
-  );
-}
-
 function EstimateRow({ item }: { item: PipelineStepItem }) {
   const method = item.metadata?.method as string | undefined;
   const confidence = item.metadata?.confidence as string | undefined;
   const mid = item.metadata?.mid as string | undefined;
-  const isObserved = method === "structured_lookup";
-  const sourceName = item.metadata?.source_name as string | undefined;
   return (
     <div className="flex items-center justify-between gap-3 px-4 py-2.5">
-      <div className="flex min-w-0 items-center gap-2">
-        {isObserved ? (
-          <Database className="h-4 w-4 shrink-0 text-blue-500" />
+      <span className="min-w-0 truncate text-sm text-slate-800">
+        {item.title ?? item.text}
+        {mid ? (
+          <span className="ml-1.5 font-medium text-slate-900">{mid}</span>
         ) : null}
-        <span className="min-w-0 truncate text-sm text-slate-800">
-          {item.title ?? item.text}
-          {mid ? (
-            <span className="ml-1.5 font-medium text-slate-900">{mid}</span>
-          ) : null}
-        </span>
-      </div>
+      </span>
       <div className="flex shrink-0 items-center gap-2">
-        {isObserved ? (
-          <Badge
-            variant="outline"
-            className="rounded-full border-blue-300 bg-blue-50 px-2.5 py-0.5 text-xs font-normal text-blue-700"
-          >
-            {sourceName ?? "lookup"}
-          </Badge>
-        ) : method ? (
+        {method ? (
           <Badge
             variant="outline"
             className="rounded-full border-slate-200 bg-slate-50 px-2.5 py-0.5 text-xs font-normal text-slate-600"
@@ -315,9 +245,7 @@ interface ItemGroup {
     | "field_box"
     | "gap_box"
     | "batch_section"
-    | "estimate_box"
-    | "lookup_box"
-    | "benchmark_box";
+    | "estimate_box";
   items: PipelineStepItem[];
   header?: PipelineStepItem;
 }
@@ -333,8 +261,6 @@ function groupItems(items: PipelineStepItem[]): ItemGroup[] {
   let currentGaps: PipelineStepItem[] = [];
   let currentEstimates: PipelineStepItem[] = [];
   let currentResults: PipelineStepItem[] = [];
-  let currentLookups: PipelineStepItem[] = [];
-  let currentBenchmarks: PipelineStepItem[] = [];
   let currentBatchHeader: PipelineStepItem | undefined;
 
   const flushFields = () => {
@@ -355,18 +281,6 @@ function groupItems(items: PipelineStepItem[]): ItemGroup[] {
       currentEstimates = [];
     }
   };
-  const flushLookups = () => {
-    if (currentLookups.length > 0) {
-      groups.push({ kind: "lookup_box", items: [...currentLookups] });
-      currentLookups = [];
-    }
-  };
-  const flushBenchmarks = () => {
-    if (currentBenchmarks.length > 0) {
-      groups.push({ kind: "benchmark_box", items: [...currentBenchmarks] });
-      currentBenchmarks = [];
-    }
-  };
   const flushBatch = () => {
     if (currentResults.length > 0 || currentBatchHeader) {
       groups.push({
@@ -383,8 +297,6 @@ function groupItems(items: PipelineStepItem[]): ItemGroup[] {
     if (keep !== "gaps") flushGaps();
     if (keep !== "estimates") flushEstimates();
     if (keep !== "results") flushBatch();
-    if (keep !== "lookups") flushLookups();
-    if (keep !== "benchmarks") flushBenchmarks();
   };
 
   for (const item of items) {
@@ -402,16 +314,6 @@ function groupItems(items: PipelineStepItem[]): ItemGroup[] {
       case "estimate": {
         flushAllExcept("estimates");
         currentEstimates.push(item);
-        break;
-      }
-      case "lookup": {
-        flushAllExcept("lookups");
-        currentLookups.push(item);
-        break;
-      }
-      case "benchmark_excerpt": {
-        flushAllExcept("benchmarks");
-        currentBenchmarks.push(item);
         break;
       }
       case "batch_summary": {
@@ -510,22 +412,6 @@ function StepPanel({ step }: { step: PipelineStep }) {
                     key={gIdx}
                     items={group.items}
                     renderer={(item) => <EstimateRow item={item} />}
-                  />
-                );
-              case "lookup_box":
-                return (
-                  <GroupedBox
-                    key={gIdx}
-                    items={group.items}
-                    renderer={(item) => <LookupRow item={item} />}
-                  />
-                );
-              case "benchmark_box":
-                return (
-                  <GroupedBox
-                    key={gIdx}
-                    items={group.items}
-                    renderer={(item) => <BenchmarkExcerptRow item={item} />}
                   />
                 );
               case "batch_section":

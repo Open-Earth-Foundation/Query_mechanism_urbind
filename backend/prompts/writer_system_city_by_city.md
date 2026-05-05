@@ -21,10 +21,9 @@ Input is a JSON object with:
 - `reconsideration` (object, optional): previous answer + missing cities (use `context_bundle` to find their excerpts)
 - `context_bundle.enrichment` (object, optional): automated gap analysis, web findings, and assumption estimates
   - `gap_manifest` (object): `query_fields[]` (each with `field`, `classification`, `searchable`, `rationale`, `scope`), `city_gaps[]` with blank/stale fields, `non_estimable_fields[]`
-  - `enriched_fields` (list): per city-field entries with `status` (`resolved` | `bundled_only` | `partially_resolved` | `still_missing`), `value`, `source` (ccc | web | estimated | none), `provenance`, `freshness_flag`, `scope` (`municipal` | `public_transport` | `private` | `mixed` | `unscoped`), `financing` (optional split: `federal` / `state` / `eu` / `operator` / `gap` / `notes`)
+  - `enriched_fields` (list): per city-field entries with `status` (`resolved` | `bundled_only` | `partially_resolved` | `still_missing`), `value`, `source` (ccc | web | estimated | none), `source_id` (tier-1 web allowlist id when known), `source_tier` (`tier1` | `open` | null), `provenance` (may include `source_name`), `freshness_flag`, `scope` (`municipal` | `public_transport` | `private` | `mixed` | `unscoped`)
   - `assumptions` (list): model-estimated values with `city`, `field_name`, `method_used`, `estimate` (low/mid/high), `confidence`, `reference_data`, `rationale`, `basis`
   - `non_estimable` (list): gaps that could not be estimated, with `city`, `field_name`, `explanation`, `recommendation` (Door Opener)
-  - `derived_metrics` (list, optional): pre-computed per-capita and per-unit ratios with `city`, `metric`, `kind` (`per_capita` | `per_unit`), `value`, `unit`, `numerator_field`, `numerator_value`, `denominator_field`, `denominator_value`, `scope`, `notes`. Use these as-is; do NOT recompute or override.
   - `web_findings` (list): values found via web research with `city`, `field`, `value`, `unit`, `source_url`, `source_type`, `source_date`, `extraction_confidence`
   - `freshness_results` (list): CCC vs web comparison with `city`, `field`, `ccc_value`, `web_value`, `classification` (consistent | superseded | uncertain), `reason`, `web_source_url`
   - `saturation_warning` (string, optional): warning if >60% of estimates used Method C
@@ -73,18 +72,10 @@ Total length: 3–5 sentences. Do not number them in the output.
 
 **5. Augmented Data Insights Table**
 - Condition: `enrichment.assumptions[]` or `enrichment.web_findings[]` is non-empty.
-- Markdown table with columns: City | Field | Scope | Observed Value | Web-Sourced Value | Estimated Value | Financing | Confidence | Method | Source.
+- Markdown table with columns: City | Field | Scope | Observed Value | Web-Sourced Value | Estimated Value | Confidence | Method | Source.
 - Use `n/a` for empty cells.
 - For estimated values, format as: `mid (range: low–high)`.
 - For web-sourced values, include source URL as inline link.
-- **Financing column**: when an `enriched_fields[]` entry has a non-null `financing` block, render as a compact split (e.g. `Fed €5M · State €2M · EU €3M · Op €1M · Gap €2M`). Omit components that are null. If `financing` is null entirely, write `n/a`.
-
-**5b. Derived Metrics (per-capita and per-unit)**
-- Condition: `enrichment.derived_metrics[]` is non-empty.
-- Markdown table with columns: City | Metric | Kind | Scope | Numerator | Denominator | Value.
-- Group rows by `kind` (per_capita first, then per_unit).
-- Use values exactly as returned — do NOT recompute. They are pre-derived to respect scope safety.
-- When summarising in prose, present per-capita and per-unit ratios alongside the absolute headline number, never instead of it.
 
 **6. Per-City Data Audit Table**
 - Condition: `enrichment.gap_manifest.city_gaps[]` is non-empty.
@@ -120,9 +111,9 @@ Total length: 3–5 sentences. Do not number them in the output.
 - Condition: `enrichment` is present.
 - Comprehensive list of all sources used, tagged by type:
   - `[CCC]` — from `markdown.excerpts[].ref_id`
-  - `[Tier-1]` — from `enriched_fields[]` whose `source_tier == "tier1"` or `assumptions[]` whose `method_used == "structured_lookup"`. Use `provenance.source_name` (or `extra.source_name` for assumptions) as the display label.
+  - `[Tier-1]` — from `enriched_fields[]` whose `source_tier == "tier1"`. Use `provenance.source_name` as the display label when present.
   - `[Web]` — from `web_findings[].source_url` whose `source_tier == "open"` (or null)
-  - `[Estimate]` — from `assumptions[].reference_data` whose `method_used != "structured_lookup"`
+  - `[Estimate]` — from `assumptions[].reference_data`
 - Format: `[Tag] name or URL — brief description`
 
 **12. Cities considered:** *(system-generated — do NOT produce this section)*
@@ -144,7 +135,6 @@ Content quality requirements:
 
 Attribution rules:
 - When an `enriched_fields[]` entry has `source_tier == "tier1"` or its `provenance.source_name` is set, attribute the value inline by name on first mention (e.g. "159 DC chargers (per Bundesnetzagentur Ladesäulenkarte)"). Do not invent a name when only `source_id` is known and `provenance.source_name` is absent.
-- When an `assumptions[]` record has `method_used == "structured_lookup"`, present its value as observed (not estimated) and attribute by `reference_data` or `extra.source_name`.
 
 Enrichment-specific rules (apply when `context_bundle.enrichment` is present):
 - Label each assumption with: `(estimated; method: <method_used>, confidence: <confidence>, range: <low>–<high>)`.

@@ -96,7 +96,7 @@ class EnrichmentConfig(AgentConfig):
     """Config for web research enrichment and assumptions modelling layer."""
 
     enabled: bool = False
-    # Use the two-phase gap analyst (decompose → Phase 1 fan-out → detect)
+    # Use the two-phase gap analyst (decompose -> external-source hook -> detect)
     # instead of the legacy single-pass run_gap_analysis.  Disabled by
     # default so existing pipelines keep their current behaviour until
     # opted in.

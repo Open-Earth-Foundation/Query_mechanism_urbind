@@ -88,23 +88,18 @@ def test_load_markdown_documents_adds_stable_chunk_ids(tmp_path: Path) -> None:
     ]
 
 
-def test_load_markdown_documents_recurses_into_subfolders(tmp_path: Path) -> None:
-    """Discovery now recurses so additional/<city>_<slug>/<city>.md is picked up."""
-    additional = tmp_path / "additional" / "munich_eksp-2030"
-    additional.mkdir(parents=True)
+def test_load_markdown_documents_ignores_subfolders(tmp_path: Path) -> None:
+    """Runtime markdown discovery should not scan document artifact subfolders."""
+    nested_dir = tmp_path / "tef_mapping"
+    nested_dir.mkdir()
     (tmp_path / "Munich.md").write_text("# Munich\n\nText", encoding="utf-8")
-    (additional / "munich.md").write_text("# Munich plan\n\nMore", encoding="utf-8")
+    (nested_dir / "Nested.md").write_text("# Nested\n\nIgnore me", encoding="utf-8")
     config = _build_markdown_config()
 
     docs = load_markdown_documents(tmp_path, config)
 
     assert docs
-    # Both files are bucketed under city 'munich' via stem normalization.
-    city_keys = {doc["city_key"] for doc in docs}
-    assert city_keys == {"munich"}
-    paths = {doc["path"] for doc in docs}
-    assert any("Munich.md" in p for p in paths)
-    assert any("munich.md" in p and "additional" in p for p in paths)
+    assert {doc["city_name"] for doc in docs} == {"Munich"}
 
 
 def test_resolve_chunk_tokens_uses_safe_fallback_without_model_limits() -> None:
