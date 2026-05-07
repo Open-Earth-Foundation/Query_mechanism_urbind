@@ -1080,6 +1080,7 @@ export default function Home() {
                     content={runOutput.content}
                     question={activeRunQuestion}
                     statusLabel={statusValue}
+                    showWriterContextExport={devFeatures.showRunDiagnostics}
                     onOpenFullDocument={openDocumentWorkspace}
                   />
                 ) : workspaceUsesDocumentRail && workspaceRailMode === "ccc" ? (
@@ -1525,6 +1526,7 @@ export default function Home() {
                           <DocumentExportControls
                             runId={runId}
                             content={runOutput.content}
+                            showWriterContextExport={devFeatures.showRunDiagnostics}
                           />
                         ) : null}
                         <div className="flex flex-wrap gap-2">

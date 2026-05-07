@@ -1,0 +1,206 @@
+version: 1
+sources:
+- id: bnetza_ladekarte
+  name: Bundesnetzagentur Ladesäulenkarte
+  domain: bundesnetzagentur.de
+  urls:
+  - https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/E-Mobilitaet/Ladesaeulenkarte/
+  access: site_search
+  coverage:
+    countries:
+    - DE
+    fields:
+    - public_ac_charger_count
+    - public_dc_charger_count
+    - public_charger_count
+    scope:
+    - ev_charging
+  notes: Live UI for the public-charger registry. The static XLSX export is already
+    loaded into the bnetza_chargers structured lookup; this entry is for prose/news
+    context.
+- id: standorttool
+  name: StandortTOOL Ladeinfrastruktur
+  domain: standorttool.de
+  urls:
+  - https://www.standorttool.de/strom/
+  access: site_search
+  coverage:
+    countries:
+    - DE
+    fields:
+    - charger_demand_projection
+    - public_charger_count
+    scope:
+    - ev_charging
+  notes: Federal demand projections for public charging infrastructure.
+- id: mobilithek
+  name: Mobilithek
+  domain: mobilithek.info
+  urls:
+  - https://mobilithek.info/
+  access: site_search
+  coverage:
+    countries:
+    - DE
+    scope:
+    - transport_data
+    - mobility
+  notes: German national mobility data platform.
+- id: eafo
+  name: European Alternative Fuels Observatory
+  domain: alternative-fuels-observatory.ec.europa.eu
+  urls:
+  - https://alternative-fuels-observatory.ec.europa.eu/
+  access: api
+  coverage:
+    countries:
+    - EU_27
+    fields:
+    - public_charger_count
+    - public_ac_charger_count
+    - public_dc_charger_count
+    - ev_registrations
+    - ev_share
+    scope:
+    - ev_charging
+    - ev_registrations
+  notes: EU-wide alternative-fuel infrastructure stats. Has an API.
+- id: iea_ev_explorer
+  name: IEA Global EV Data Explorer
+  domain: iea.org
+  urls:
+  - https://www.iea.org/data-and-statistics/data-tools/global-ev-data-explorer
+  access: site_search
+  coverage:
+    countries:
+    - EU_27
+    - global
+    fields:
+    - ev_registrations
+    - ev_share
+    - public_charger_count
+    scope:
+    - ev_registrations
+    - ev_charging
+  notes: Global EV adoption + infrastructure dashboard.
+- id: eurostat_transport
+  name: Eurostat Transport Database
+  domain: ec.europa.eu
+  urls:
+  - https://ec.europa.eu/eurostat/web/transport/database
+  access: site_search
+  coverage:
+    countries:
+    - EU_27
+    scope:
+    - transport_data
+    - modal_split
+  notes: EU statistical office's transport database.
+- id: systems_change_lab_transport
+  name: Systems Change Lab Transport Dashboard
+  domain: systemschangelab.org
+  urls:
+  - https://systemschangelab.org/transport
+  access: site_search
+  coverage:
+    countries:
+    - global
+    scope:
+    - transport_data
+    - decarbonization
+  notes: Global transport-decarbonisation indicators.
+- id: klimadashboard_munster
+  name: Klimadashboard Münster
+  domain: klimadashboard.ms
+  urls:
+  - https://www.klimadashboard.ms/
+  access: site_search
+  coverage:
+    cities:
+    - munster
+    - muenster
+    scope:
+    - climate_indicators
+  notes: Münster city climate dashboard.
+- id: netzerocities_public
+  name: NetZeroCities (public pages)
+  domain: netzerocities.eu
+  urls:
+  - https://netzerocities.eu/
+  - https://netzerocities.eu/climate-city-contract/
+  - https://netzerocities.eu/mission-cities/
+  access: site_search
+  coverage:
+    scope:
+    - ccc_summary
+    - mission_status
+    - eu_programme
+  excluded_paths:
+  - /app/
+  - /knowledge-ccc/
+  notes: Authenticated app paths are excluded — they're behind login.
+- id: netzerocities_app
+  name: NetZeroCities App
+  domain: netzerocities.app
+  urls:
+  - https://netzerocities.app/
+  access: auth_required
+  coverage:
+    scope:
+    - ccc_documents
+  notes: Auth-walled. Listed for visibility but not searchable by us.
+- id: eu_sump_database
+  name: EU SUMP Database
+  domain: transport.ec.europa.eu
+  urls:
+  - https://urban-mobility-observatory.transport.ec.europa.eu/sustainable-urban-mobility-plans/eu-city-database-sumps_en
+  access: site_search
+  coverage:
+    countries:
+    - EU_27
+    scope:
+    - urban_mobility_plan
+  notes: European Commission database of Sustainable Urban Mobility Plans.
+- id: mobidata_bw
+  name: MobiData BW
+  domain: mobidata-bw.de
+  urls:
+  - https://mobidata-bw.de/
+  access: api
+  coverage:
+    cities:
+    - heidelberg
+    - mannheim
+    countries:
+    - DE
+    scope:
+    - transport_data
+    - mobility
+  notes: Open mobility data for Baden-Württemberg (covers Heidelberg, Mannheim).
+- id: open_data_sachsen
+  name: Open Data Sachsen
+  domain: opendata.sachsen.de
+  urls:
+  - https://www.opendata.sachsen.de/
+  access: site_search
+  coverage:
+    cities:
+    - dresden
+    - leipzig
+    countries:
+    - DE
+    scope:
+    - open_data
+  notes: Saxony state open data — relevant for Dresden + Leipzig.
+- id: govdata
+  name: GovData
+  domain: govdata.de
+  urls:
+  - https://www.govdata.de/
+  access: site_search
+  coverage:
+    countries:
+    - DE
+    scope:
+    - open_data
+  notes: Germany's central open data portal (federal + state + municipal).

@@ -9,6 +9,7 @@ import {
   Loader2,
   MinusCircle,
   Search,
+  ShieldCheck,
   XCircle,
 } from "lucide-react";
 
@@ -122,13 +123,27 @@ function GapRow({ item }: { item: PipelineStepItem }) {
 }
 
 function SearchResultRow({ item }: { item: PipelineStepItem }) {
+  const sourceTier = item.metadata?.source_tier as string | undefined;
+  const sourceName = item.metadata?.source_name as string | undefined;
+  const isTier1 = sourceTier === "tier1";
   return (
     <div className="flex items-center gap-3 px-4 py-2.5">
-      <Search className="h-4 w-4 shrink-0 text-slate-400" />
+      {isTier1 ? (
+        <ShieldCheck className="h-4 w-4 shrink-0 text-teal-600" />
+      ) : (
+        <Search className="h-4 w-4 shrink-0 text-slate-400" />
+      )}
       <span className="min-w-0 flex-1 truncate text-sm text-slate-800">
         {item.title ?? item.text}
       </span>
-      {item.domain ? (
+      {isTier1 ? (
+        <Badge
+          variant="outline"
+          className="shrink-0 rounded-full border-teal-300 bg-teal-50 px-2.5 py-0.5 text-xs font-normal text-teal-700"
+        >
+          {sourceName ?? "tier-1"}
+        </Badge>
+      ) : item.domain ? (
         <span className="shrink-0 text-xs text-slate-400">{item.domain}</span>
       ) : null}
       {item.url ? (
@@ -225,7 +240,12 @@ function BatchHeader({ item }: { item: PipelineStepItem }) {
 /* ------------------------------------------------------------------ */
 
 interface ItemGroup {
-  kind: "plain" | "field_box" | "gap_box" | "batch_section" | "estimate_box";
+  kind:
+    | "plain"
+    | "field_box"
+    | "gap_box"
+    | "batch_section"
+    | "estimate_box";
   items: PipelineStepItem[];
   header?: PipelineStepItem;
 }
@@ -272,52 +292,45 @@ function groupItems(items: PipelineStepItem[]): ItemGroup[] {
       currentBatchHeader = undefined;
     }
   };
+  const flushAllExcept = (keep: string) => {
+    if (keep !== "fields") flushFields();
+    if (keep !== "gaps") flushGaps();
+    if (keep !== "estimates") flushEstimates();
+    if (keep !== "results") flushBatch();
+  };
 
   for (const item of items) {
     switch (item.item_type) {
       case "field": {
-        flushGaps();
-        flushBatch();
-        flushEstimates();
+        flushAllExcept("fields");
         currentFields.push(item);
         break;
       }
       case "gap": {
-        flushFields();
-        flushBatch();
-        flushEstimates();
+        flushAllExcept("gaps");
         currentGaps.push(item);
         break;
       }
       case "estimate": {
-        flushFields();
-        flushGaps();
-        flushBatch();
+        flushAllExcept("estimates");
         currentEstimates.push(item);
         break;
       }
       case "batch_summary": {
-        // Flush any previous batch section
+        flushAllExcept("results");
+        // batch headers replace any currently-pending header
         flushBatch();
-        flushFields();
-        flushGaps();
-        flushEstimates();
         currentBatchHeader = item;
         break;
       }
       case "search_result": {
-        flushFields();
-        flushGaps();
-        flushEstimates();
+        flushAllExcept("results");
         currentResults.push(item);
         break;
       }
       default: {
         // Plain text — flush all typed groups first
-        flushFields();
-        flushGaps();
-        flushBatch();
-        flushEstimates();
+        flushAllExcept("none");
         groups.push({ kind: "plain", items: [item] });
         break;
       }
@@ -325,10 +338,7 @@ function groupItems(items: PipelineStepItem[]): ItemGroup[] {
   }
 
   // Final flush
-  flushFields();
-  flushGaps();
-  flushBatch();
-  flushEstimates();
+  flushAllExcept("none");
 
   return groups;
 }

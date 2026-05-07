@@ -179,3 +179,36 @@ class TestNormalFlowUnchanged:
         result = compute_field_statuses(gm, [], [], {})
         assert len(result) == 1
         assert result[0].status == "still_missing"
+
+    def test_bundled_field_routes_to_bundled_only_with_scope(self) -> None:
+        """Bundled CCC values stay estimable while preserving field scope."""
+        gm = GapManifest(
+            query_fields=[
+                FieldClassification(
+                    field="fleet_capex",
+                    classification="estimable_numerical",
+                    searchable=True,
+                    rationale="Requested as a disaggregated fleet capital cost.",
+                    scope="public_transport",
+                )
+            ],
+            city_gaps=[
+                CityGap(
+                    city="Dresden",
+                    blank_fields=[],
+                    stale_flags=[],
+                    bundled_fields=["fleet_capex"],
+                    search_priority="medium",
+                )
+            ],
+            non_estimable_fields=[],
+        )
+
+        result = compute_field_statuses(gm, [], [], {})
+
+        assert len(result) == 1
+        ef = result[0]
+        assert ef.status == "bundled_only"
+        assert ef.source == "ccc"
+        assert ef.freshness_flag == "bundled_only"
+        assert ef.scope == "public_transport"

@@ -13,6 +13,7 @@ interface WriterDocumentRailProps {
   content: string;
   question?: string | null;
   statusLabel?: string | null;
+  showWriterContextExport?: boolean;
   onOpenFullDocument: () => void;
 }
 
@@ -21,6 +22,7 @@ export function WriterDocumentRail({
   content,
   question,
   statusLabel,
+  showWriterContextExport = false,
   onOpenFullDocument,
 }: WriterDocumentRailProps) {
   return (
@@ -44,7 +46,11 @@ export function WriterDocumentRail({
         <div className="mt-4 flex flex-wrap items-center justify-between gap-2">
           <Badge variant="secondary">Run {runId.slice(0, 8)}</Badge>
           <div className="flex flex-wrap items-center justify-end gap-2">
-            <DocumentExportControls runId={runId} content={content} />
+            <DocumentExportControls
+              runId={runId}
+              content={content}
+              showWriterContextExport={showWriterContextExport}
+            />
             <Button type="button" size="sm" variant="outline" onClick={onOpenFullDocument}>
               <Maximize2 className="h-4 w-4" />
               Open Full View

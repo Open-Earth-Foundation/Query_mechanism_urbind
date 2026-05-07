@@ -229,7 +229,7 @@ class TestSystemPromptMethodB:
     def test_method_b_has_example(self):
         prompt = _build_system_prompt("generate")
         assert "Munich (pop 1.5M)" in prompt
-        assert "280 × (250K/1.5M)" in prompt
+        assert "280 * (250K/1.5M)" in prompt
 
     def test_must_attempt_method_b_rule(self):
         prompt = _build_system_prompt("generate")

@@ -29,6 +29,8 @@ output/
 .chroma_*/
 tmp_pdf_extract/
 skills-lock.json
+backend-dev*.log
+frontend-dev*.log
 
 # Cursor
 #  Cursor is an AI-powered code editor. `.cursorignore` specifies files/directories to
@@ -49,4 +51,5 @@ frontend/node_modules
 
 # Planing
 implementation-plan.md
-.tmp-backend
+.tmp-backend/
+.pytest_tmp_external_sources/

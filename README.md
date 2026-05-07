@@ -387,7 +387,7 @@ What each stage does:
 - `markdown_chunk_count` tracks how many chunk inputs were processed; `excerpt_count` (also logged as `markdown_excerpt_count` in run metadata) tracks how many evidence snippets were extracted from those chunks.
 - Context bundle is updated with extracted evidence for downstream writing.
 - Orchestrator hands the prepared context bundle directly to the writer.
-- Writer builds a writer-specific minimal bundle from the accepted markdown excerpts and selected-city metadata before prompting the model; markdown audit fields such as accepted/rejected chunk id lists are not sent to the writer.
+- Writer builds a writer-specific minimal bundle from the accepted markdown excerpts, selected-city metadata, and writer-visible enrichment artifacts before prompting the model; markdown audit fields and non-writer enrichment bookkeeping such as generic status or notes are not sent to the writer.
 - When the writer bundle exceeds `writer.multi_pass_threshold_tokens`, the writer splits accepted evidence into multiple batches, writes batch drafts, and then combines those drafts into one final answer. If a post-batching payload still exceeds the configured writer input budget, the run now fails explicitly instead of silently reverting to one-shot writing.
 - Writer writes final output text to `output/<run_id>/final.md`. The response starts with an evidence preface (based on `excerpt_count`); when `excerpt_count=0`, it returns a "no evidence found" response.
 
@@ -557,6 +557,8 @@ Core endpoints:
 - `GET /api/v1/runs/{run_id}/diagnostics` (developer-focused run warnings, retry summaries, writer citation coverage, and run-local artifact labels without exposing host filesystem paths)
 - `GET /api/v1/runs/{run_id}/output`
 - `GET /api/v1/runs/{run_id}/export/docx` (Word export of `final.md`; inline `[ref_n]` citation tags are omitted from the exported document)
+- `GET /api/v1/runs/{run_id}/export/writer-context` (developer-focused JSON download of the exact writer-safe context bundle, including the accepted excerpts used by the writer)
+- `GET /api/v1/runs/{run_id}/export/writer-context.md` (Markdown variant of the writer-safe context export)
 - `GET /api/v1/runs/{run_id}/context`
 - `GET /api/v1/runs/{run_id}/references` (canonical citation endpoint; supports optional query params `ref_id` and `include_quote`)
 - `GET /api/v1/runs/{run_id}/references/{ref_id}` (compatibility alias for one reference with quote payload)

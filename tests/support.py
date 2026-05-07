@@ -70,6 +70,12 @@ def build_test_app_config(
         config.assumptions_reviewer,
         assumptions_reviewer_overrides,
     )
+    # Default the new split-flow / tier-1-first flags off in tests so existing
+    # test mocks (built for the legacy single-pass flow) keep working.  Tests
+    # exercising the new flow can opt in via enrichment_overrides.
+    config.enrichment = config.enrichment.model_copy(
+        update={"use_split_gap_flow": False, "tier1_first_search": False}
+    )
     config.enrichment = _apply_overrides(config.enrichment, enrichment_overrides)
     if (
         not enrichment_overrides

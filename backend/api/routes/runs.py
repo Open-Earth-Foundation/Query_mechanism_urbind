@@ -28,6 +28,11 @@ from backend.api.models import (
 from backend.api.services.run_diagnostics import build_run_diagnostics
 from backend.api.services.document_export import DOCX_MIME_TYPE, markdown_to_docx_bytes
 from backend.api.services.final_output import strip_legacy_finish_reason_footer
+from backend.api.services.run_context import (
+    build_writer_export_context,
+    load_run_context_bundle,
+    render_writer_export_markdown,
+)
 from backend.api.services.reference_artifacts import (
     build_reference_item,
     load_reference_records,
@@ -351,6 +356,44 @@ def export_run_output_docx(run_id: str, request: Request) -> Response:
 
 
 @router.get(
+    "/runs/{run_id}/export/writer-context",
+    name="export_run_writer_context",
+)
+def export_run_writer_context(run_id: str, request: Request) -> Response:
+    """Return the exact writer context bundle as a JSON download."""
+    context_bundle = _load_writer_export_context(run_id, request)
+    payload = json.dumps(
+        build_writer_export_context(context_bundle),
+        ensure_ascii=False,
+        indent=2,
+    )
+    filename = f"{run_id}_writer_context.json"
+    headers = {"Content-Disposition": f'attachment; filename="{filename}"'}
+    return Response(
+        content=payload + "\n",
+        media_type="application/json",
+        headers=headers,
+    )
+
+
+@router.get(
+    "/runs/{run_id}/export/writer-context.md",
+    name="export_run_writer_context_markdown",
+)
+def export_run_writer_context_markdown(run_id: str, request: Request) -> Response:
+    """Return the exact writer context bundle as a Markdown download."""
+    context_bundle = _load_writer_export_context(run_id, request)
+    payload = render_writer_export_markdown(context_bundle)
+    filename = f"{run_id}_writer_context.md"
+    headers = {"Content-Disposition": f'attachment; filename="{filename}"'}
+    return Response(
+        content=payload,
+        media_type="text/markdown",
+        headers=headers,
+    )
+
+
+@router.get(
     "/runs/{run_id}/context",
     name="get_run_context",
     response_model=RunContextResponse,
@@ -368,19 +411,7 @@ def get_run_context(run_id: str, request: Request) -> RunContextResponse:
             detail=f"Context bundle is missing for run `{run_id}`.",
         )
 
-    try:
-        context_bundle = json.loads(context_path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError) as exc:
-        raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail=f"Failed to read context bundle for run `{run_id}`: {exc}",
-        ) from exc
-
-    if not isinstance(context_bundle, dict):
-        raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail=f"Context bundle for run `{run_id}` is not a JSON object.",
-        )
+    context_bundle = load_run_context_bundle(context_path, run_id)
 
     return RunContextResponse(
         run_id=record.run_id,
@@ -573,6 +604,23 @@ def _resolve_context_path(path: Path | None, runs_dir: Path, run_id: str) -> Pat
         if candidate.exists():
             return candidate
     return None
+
+
+def _load_writer_export_context(run_id: str, request: Request) -> dict[str, object]:
+    """Load the persisted context bundle used by writer export endpoints."""
+    run_store, record = _require_completed_run(run_id, request)
+    context_path = _resolve_context_path(
+        record.context_bundle_path,
+        run_store.runs_dir,
+        run_id,
+    )
+    if context_path is None or not context_path.exists():
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Context bundle is missing for run `{run_id}`.",
+        )
+
+    return load_run_context_bundle(context_path, run_id)
 
 
 def _resolve_run_dir(record: RunRecord, runs_dir: Path, run_id: str) -> Path:

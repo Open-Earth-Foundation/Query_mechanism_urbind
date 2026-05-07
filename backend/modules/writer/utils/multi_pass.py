@@ -14,6 +14,20 @@ from backend.modules.writer.utils.markdown_helpers import (
 )
 from backend.utils.tokenization import count_tokens
 
+_WRITER_ENRICHMENT_KEYS = (
+    "gap_manifest",
+    "enriched_fields",
+    "external_evidence",
+    "external_resolutions",
+    "external_no_evidence",
+    "assumptions",
+    "non_estimable",
+    "web_findings",
+    "freshness_results",
+    "saturation_warning",
+    "meta",
+)
+
 
 @dataclass(frozen=True)
 class WriterBatch:
@@ -374,8 +388,19 @@ def build_writer_context_bundle(
     }
     enrichment = context_bundle.get("enrichment")
     if isinstance(enrichment, dict):
-        writer_context["enrichment"] = enrichment
+        writer_enrichment = _build_writer_enrichment(enrichment)
+        if writer_enrichment:
+            writer_context["enrichment"] = writer_enrichment
     return writer_context
+
+
+def _build_writer_enrichment(enrichment: dict[str, object]) -> dict[str, object]:
+    """Return only enrichment fields that the writer prompts consume."""
+    return {
+        key: enrichment[key]
+        for key in _WRITER_ENRICHMENT_KEYS
+        if key in enrichment and enrichment[key] is not None
+    }
 
 
 def _flatten_unit_city_names(units: list[_CityExcerptUnit]) -> list[str]:
