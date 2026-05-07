@@ -6,13 +6,18 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
 import { Button } from "@/components/ui/button";
-import { downloadRunWordExport } from "@/lib/api";
+import {
+  downloadRunWordExport,
+  downloadRunWriterContextExport,
+  downloadRunWriterContextMarkdownExport,
+} from "@/lib/api";
 import { cn } from "@/lib/utils";
 
 interface DocumentExportControlsProps {
   runId: string;
   content: string;
   className?: string;
+  showWriterContextExport?: boolean;
 }
 
 const EXPORT_FEEDBACK_RESET_MS = 2200;
@@ -127,11 +132,14 @@ export function DocumentExportControls({
   runId,
   content,
   className,
+  showWriterContextExport = false,
 }: DocumentExportControlsProps) {
   const exportContent = stripExportReferences(content);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [feedback, setFeedback] = useState<string | null>(null);
-  const [activeAction, setActiveAction] = useState<"word" | "notion" | null>(null);
+  const [activeAction, setActiveAction] = useState<
+    "contextJson" | "contextMarkdown" | "word" | "notion" | null
+  >(null);
   const menuRef = useRef<HTMLDivElement | null>(null);
   const richSnapshotRef = useRef<HTMLElement | null>(null);
 
@@ -220,6 +228,34 @@ export function DocumentExportControls({
     }
   }
 
+  async function handleDownloadWriterContext(): Promise<void> {
+    setActiveAction("contextJson");
+    try {
+      const blob = await downloadRunWriterContextExport(runId);
+      triggerBlobDownload(blob, `${runId}_writer_context.json`);
+      setFeedback("Writer context JSON ready");
+      setIsMenuOpen(false);
+    } catch (error) {
+      setFeedback(error instanceof Error ? error.message : "Download failed.");
+    } finally {
+      setActiveAction(null);
+    }
+  }
+
+  async function handleDownloadWriterContextMarkdown(): Promise<void> {
+    setActiveAction("contextMarkdown");
+    try {
+      const blob = await downloadRunWriterContextMarkdownExport(runId);
+      triggerBlobDownload(blob, `${runId}_writer_context.md`);
+      setFeedback("Writer context markdown ready");
+      setIsMenuOpen(false);
+    } catch (error) {
+      setFeedback(error instanceof Error ? error.message : "Download failed.");
+    } finally {
+      setActiveAction(null);
+    }
+  }
+
   return (
     <div className={cn("flex flex-wrap items-center justify-end gap-2", className)}>
       <div ref={menuRef} className="relative">
@@ -241,6 +277,36 @@ export function DocumentExportControls({
         </Button>
         {isMenuOpen ? (
           <div className="absolute right-0 top-full z-30 mt-2 w-56 rounded-xl border border-slate-200 bg-white p-1.5 shadow-lg">
+            {showWriterContextExport ? (
+              <button
+                type="button"
+                className="flex w-full items-center gap-2 rounded-lg px-3 py-2 text-left text-sm text-slate-700 transition hover:bg-slate-100"
+                onClick={() => void handleDownloadWriterContext()}
+                disabled={activeAction === "contextJson"}
+              >
+                <Download className="h-4 w-4" />
+                <span>
+                  {activeAction === "contextJson"
+                    ? "Preparing JSON..."
+                    : "Download writer context (.json)"}
+                </span>
+              </button>
+            ) : null}
+            {showWriterContextExport ? (
+              <button
+                type="button"
+                className="flex w-full items-center gap-2 rounded-lg px-3 py-2 text-left text-sm text-slate-700 transition hover:bg-slate-100"
+                onClick={() => void handleDownloadWriterContextMarkdown()}
+                disabled={activeAction === "contextMarkdown"}
+              >
+                <Download className="h-4 w-4" />
+                <span>
+                  {activeAction === "contextMarkdown"
+                    ? "Preparing Markdown..."
+                    : "Download writer context (.md)"}
+                </span>
+              </button>
+            ) : null}
             <button
               type="button"
               className="flex w-full items-center gap-2 rounded-lg px-3 py-2 text-left text-sm text-slate-700 transition hover:bg-slate-100"

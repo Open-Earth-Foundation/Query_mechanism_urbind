@@ -12,6 +12,7 @@ from fastapi.responses import Response
 from backend.api.models import (
     CreateRunRequest,
     CreateRunResponse,
+    RunDiagnosticsResponse,
     PipelineStep,
     PipelineStepItem,
     RunReferenceItem,
@@ -24,8 +25,14 @@ from backend.api.models import (
     RunStatusResponse,
     SourceChunkListResponse,
 )
+from backend.api.services.run_diagnostics import build_run_diagnostics
 from backend.api.services.document_export import DOCX_MIME_TYPE, markdown_to_docx_bytes
 from backend.api.services.final_output import strip_legacy_finish_reason_footer
+from backend.api.services.run_context import (
+    build_writer_export_context,
+    load_run_context_bundle,
+    render_writer_export_markdown,
+)
 from backend.api.services.reference_artifacts import (
     build_reference_item,
     load_reference_records,
@@ -190,6 +197,10 @@ def create_run(
 @router.get("/runs", response_model=RunListResponse)
 def list_runs(
     request: Request,
+    include_all: bool = Query(
+        default=False,
+        description="When true, include failed, stopped, queued, and running runs.",
+    ),
     search: str | None = Query(
         default=None,
         description=(
@@ -198,14 +209,17 @@ def list_runs(
         ),
     ),
 ) -> RunListResponse:
-    """List runs for the picker with compact timestamps and optional search."""
+    """List runs for the picker with search, compact timestamps, and status filtering."""
     run_store = _get_run_store(request)
     records = run_store.list_runs()
+    if not include_all:
+        records = [record for record in records if record.status in SUCCESS_STATUSES]
     entries = list_run_picker_entries(records, search=search)
     runs = [
         RunSummary(
             run_id=entry.run_id,
             question=entry.question,
+            status=entry.status,
             picker_timestamp=entry.picker_timestamp,
         )
         for entry in entries
@@ -279,6 +293,23 @@ def get_run_status(run_id: str, request: Request) -> RunStatusResponse:
 
 
 @router.get(
+    "/runs/{run_id}/diagnostics",
+    name="get_run_diagnostics",
+    response_model=RunDiagnosticsResponse,
+)
+def get_run_diagnostics(run_id: str, request: Request) -> RunDiagnosticsResponse:
+    """Return developer-facing warning and failure diagnostics for one run."""
+    run_store = _get_run_store(request)
+    record = run_store.get_run(run_id)
+    if record is None:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Run `{run_id}` was not found.",
+        )
+    return build_run_diagnostics(record, runs_dir=run_store.runs_dir)
+
+
+@router.get(
     "/runs/{run_id}/output",
     name="get_run_output",
     response_model=RunOutputResponse,
@@ -325,6 +356,44 @@ def export_run_output_docx(run_id: str, request: Request) -> Response:
 
 
 @router.get(
+    "/runs/{run_id}/export/writer-context",
+    name="export_run_writer_context",
+)
+def export_run_writer_context(run_id: str, request: Request) -> Response:
+    """Return the exact writer context bundle as a JSON download."""
+    context_bundle = _load_writer_export_context(run_id, request)
+    payload = json.dumps(
+        build_writer_export_context(context_bundle),
+        ensure_ascii=False,
+        indent=2,
+    )
+    filename = f"{run_id}_writer_context.json"
+    headers = {"Content-Disposition": f'attachment; filename="{filename}"'}
+    return Response(
+        content=payload + "\n",
+        media_type="application/json",
+        headers=headers,
+    )
+
+
+@router.get(
+    "/runs/{run_id}/export/writer-context.md",
+    name="export_run_writer_context_markdown",
+)
+def export_run_writer_context_markdown(run_id: str, request: Request) -> Response:
+    """Return the exact writer context bundle as a Markdown download."""
+    context_bundle = _load_writer_export_context(run_id, request)
+    payload = render_writer_export_markdown(context_bundle)
+    filename = f"{run_id}_writer_context.md"
+    headers = {"Content-Disposition": f'attachment; filename="{filename}"'}
+    return Response(
+        content=payload,
+        media_type="text/markdown",
+        headers=headers,
+    )
+
+
+@router.get(
     "/runs/{run_id}/context",
     name="get_run_context",
     response_model=RunContextResponse,
@@ -342,19 +411,7 @@ def get_run_context(run_id: str, request: Request) -> RunContextResponse:
             detail=f"Context bundle is missing for run `{run_id}`.",
         )
 
-    try:
-        context_bundle = json.loads(context_path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError) as exc:
-        raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail=f"Failed to read context bundle for run `{run_id}`: {exc}",
-        ) from exc
-
-    if not isinstance(context_bundle, dict):
-        raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail=f"Context bundle for run `{run_id}` is not a JSON object.",
-        )
+    context_bundle = load_run_context_bundle(context_path, run_id)
 
     return RunContextResponse(
         run_id=record.run_id,
@@ -547,6 +604,23 @@ def _resolve_context_path(path: Path | None, runs_dir: Path, run_id: str) -> Pat
         if candidate.exists():
             return candidate
     return None
+
+
+def _load_writer_export_context(run_id: str, request: Request) -> dict[str, object]:
+    """Load the persisted context bundle used by writer export endpoints."""
+    run_store, record = _require_completed_run(run_id, request)
+    context_path = _resolve_context_path(
+        record.context_bundle_path,
+        run_store.runs_dir,
+        run_id,
+    )
+    if context_path is None or not context_path.exists():
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Context bundle is missing for run `{run_id}`.",
+        )
+
+    return load_run_context_bundle(context_path, run_id)
 
 
 def _resolve_run_dir(record: RunRecord, runs_dir: Path, run_id: str) -> Path:

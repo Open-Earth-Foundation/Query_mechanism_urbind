@@ -1,13 +1,14 @@
 """Enrichment pipeline orchestrator.
 
 Top-level entry point called from the main pipeline orchestrator to run
-gap analysis, web research (Phase 2), and assumptions estimation.
+gap analysis, web research, and assumptions estimation.
 """
 
 from __future__ import annotations
 
 import logging
 import time
+from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Any
@@ -18,8 +19,13 @@ from backend.modules.web_researcher.context_merger import (
     merge_enrichment_into_context,
     serialize_enrichment_artifacts,
 )
+from backend.modules.web_researcher.external_sources import run_external_source_stage
 from backend.modules.web_researcher.freshness import check_freshness
-from backend.modules.web_researcher.gap_analysis import run_gap_analysis
+from backend.modules.web_researcher.gap_analysis import (
+    decompose_fields,
+    detect_city_gaps,
+    run_gap_analysis,
+)
 from backend.modules.web_researcher.search_planner import plan_searches
 from backend.modules.web_researcher.search_worker import execute_search_batches
 from backend.services.progress_tracker import ProgressTracker
@@ -38,7 +44,7 @@ def run_enrichment_pipeline(
     api_key: str,
     progress: ProgressTracker | None = None,
 ) -> dict[str, Any]:
-    """Run the enrichment pipeline: gap analysis → (web research) → assumptions.
+    """Run the enrichment pipeline: gap analysis -> web research -> assumptions.
 
     On any failure, returns the original ``context_bundle`` unmodified so the
     pipeline can continue gracefully.
@@ -46,15 +52,27 @@ def run_enrichment_pipeline(
     start_time = time.monotonic()
 
     try:
-        # Step 5: Gap Analysis
         if progress:
             progress.start_step("gap_analysis", "Analyzing data gaps")
             progress.add_item("gap_analysis", "Classifying fields and detecting gaps...")
         logger.info("Enrichment pipeline: starting gap analysis.")
-        gap_manifest = run_gap_analysis(question, context_bundle, config, api_key)
+
+        if config.enrichment.use_split_gap_flow:
+            decomposition = decompose_fields(question, config, api_key)
+            if progress:
+                progress.add_item(
+                    "gap_analysis",
+                    f"{len(decomposition.query_fields)} fields decomposed",
+                )
+
+            run_external_source_stage(decomposition, context_bundle)
+            gap_manifest = detect_city_gaps(
+                question, decomposition, context_bundle, config, api_key
+            )
+        else:
+            gap_manifest = run_gap_analysis(question, context_bundle, config, api_key)
 
         if progress:
-            # Show each field with its classification
             n_fields = len(gap_manifest.query_fields)
             for qf in gap_manifest.query_fields:
                 progress.add_item(
@@ -62,28 +80,38 @@ def run_enrichment_pipeline(
                     f"Field: {qf.field} ({qf.classification})",
                     item_type="field",
                     title=qf.field,
-                    metadata={"classification": qf.classification},
+                    metadata={
+                        "classification": qf.classification,
+                        "scope": qf.scope,
+                    },
                 )
             field_word = "field" if n_fields == 1 else "fields"
             progress.add_item("gap_analysis", f"{n_fields} {field_word} classified")
 
-            # Show per-city gap summary with blank field counts
             for cg in gap_manifest.city_gaps:
                 n_blank = len(cg.blank_fields)
                 n_stale = len(cg.stale_flags)
+                n_bundled = len(cg.bundled_fields)
                 parts = []
                 if n_blank:
                     parts.append(f"{n_blank} blank")
                 if n_stale:
                     parts.append(f"{n_stale} stale")
+                if n_bundled:
+                    parts.append(f"{n_bundled} bundled")
                 detail = ", ".join(parts) if parts else "gap detected"
                 progress.add_item(
                     "gap_analysis",
                     f"{cg.city}: {detail} [{cg.search_priority}]",
                     item_type="gap",
                     title=cg.city,
-                    count=n_blank + n_stale,
-                    metadata={"priority": cg.search_priority, "blank": n_blank, "stale": n_stale},
+                    count=n_blank + n_stale + n_bundled,
+                    metadata={
+                        "priority": cg.search_priority,
+                        "blank": n_blank,
+                        "stale": n_stale,
+                        "bundled": n_bundled,
+                    },
                 )
             n_gaps = len(gap_manifest.city_gaps)
             gap_word = "city" if n_gaps == 1 else "cities"
@@ -99,11 +127,13 @@ def run_enrichment_pipeline(
                 progress.start_step("assumptions", "Estimating assumptions")
                 progress.add_item("assumptions", "Skipped (no gaps)")
                 progress.complete_step("assumptions", status="skipped")
-            run_logger.record_decision({
-                "step": "enrichment",
-                "status": "skipped",
-                "reason": "no_gaps_found",
-            })
+            run_logger.record_decision(
+                {
+                    "step": "enrichment",
+                    "status": "skipped",
+                    "reason": "no_gaps_found",
+                }
+            )
             return context_bundle
 
         web_findings = []
@@ -111,13 +141,12 @@ def run_enrichment_pipeline(
         national_findings = []
         comparative_findings = []
 
-        # Steps 6-8: Web Research (only if enabled AND gaps found)
         if config.enrichment.web_research_enabled and gap_manifest.city_gaps:
             if progress:
                 progress.start_step("web_research", "Running web research")
                 progress.add_item("web_research", "Planning search queries...")
             logger.info("Enrichment pipeline: starting web research.")
-            # Step 6: Search Planner → formulate queries
+
             search_batches = plan_searches(gap_manifest, config, api_key, question=question)
             if progress:
                 total_queries = sum(len(b.queries) for b in search_batches)
@@ -126,14 +155,18 @@ def run_enrichment_pipeline(
                     f"{len(search_batches)} batches, {total_queries} queries planned",
                 )
                 progress.add_item("web_research", "Executing searches...")
-            # Split city-specific vs national vs comparative benchmark batches
-            city_batches = [b for b in search_batches if b.search_type not in ("national_benchmark", "comparative_benchmark")]
-            national_batches = [b for b in search_batches if b.search_type == "national_benchmark"]
-            comparative_batches = [b for b in search_batches if b.search_type == "comparative_benchmark"]
 
-            # Step 6 cont: Search Workers → execute all batch types in parallel
-            national_findings = []
-            comparative_findings = []
+            city_batches = [
+                b
+                for b in search_batches
+                if b.search_type not in ("national_benchmark", "comparative_benchmark")
+            ]
+            national_batches = [
+                b for b in search_batches if b.search_type == "national_benchmark"
+            ]
+            comparative_batches = [
+                b for b in search_batches if b.search_type == "comparative_benchmark"
+            ]
 
             batch_groups = {}
             if city_batches:
@@ -147,7 +180,11 @@ def run_enrichment_pipeline(
                 with ThreadPoolExecutor(max_workers=len(batch_groups)) as pool:
                     futures = {
                         pool.submit(
-                            execute_search_batches, batches, config, api_key, progress,
+                            execute_search_batches,
+                            batches,
+                            config,
+                            api_key,
+                            progress,
                         ): label
                         for label, batches in batch_groups.items()
                     }
@@ -157,7 +194,9 @@ def run_enrichment_pipeline(
                             findings = future.result()
                         except Exception:
                             logger.warning(
-                                "Batch group %s failed.", label, exc_info=True,
+                                "Batch group %s failed.",
+                                label,
+                                exc_info=True,
                             )
                             continue
                         if label == "city":
@@ -177,26 +216,23 @@ def run_enrichment_pipeline(
                                     f"{len(comparative_findings)} comparative benchmark findings",
                                 )
 
-            if search_batches:
-                # Step 7: Freshness Checker → compare web vs CCC
-                # (national findings skip freshness — they're reference data)
-                if web_findings:
-                    if progress:
-                        progress.add_item("web_research", "Checking freshness vs CCC data...")
-                    freshness_results = check_freshness(
-                        web_findings, context_bundle, config, api_key
+            if search_batches and web_findings:
+                if progress:
+                    progress.add_item("web_research", "Checking freshness vs CCC data...")
+                freshness_results = check_freshness(
+                    web_findings, context_bundle, config, api_key
+                )
+                if progress and freshness_results:
+                    n_superseded = sum(
+                        1 for r in freshness_results if r.classification == "superseded"
                     )
-                    if progress and freshness_results:
-                        n_superseded = sum(
-                            1 for r in freshness_results if r.classification == "superseded"
-                        )
-                        n_consistent = sum(
-                            1 for r in freshness_results if r.classification == "consistent"
-                        )
-                        progress.add_item(
-                            "web_research",
-                            f"Freshness: {n_consistent} consistent, {n_superseded} superseded",
-                        )
+                    n_consistent = sum(
+                        1 for r in freshness_results if r.classification == "consistent"
+                    )
+                    progress.add_item(
+                        "web_research",
+                        f"Freshness: {n_consistent} consistent, {n_superseded} superseded",
+                    )
             if progress:
                 progress.add_item("web_research", f"{len(web_findings)} total findings")
                 progress.complete_step("web_research")
@@ -212,12 +248,10 @@ def run_enrichment_pipeline(
                 progress.add_item("web_research", "Skipped (disabled or no gaps)")
                 progress.complete_step("web_research", status="skipped")
 
-        # Determine enriched field statuses (which are still_missing after web research)
         enriched_fields = compute_field_statuses(
             gap_manifest, web_findings, freshness_results, context_bundle
         )
 
-        # Step 9: Assumptions Model on remaining blanks
         if progress:
             progress.start_step("assumptions", "Estimating assumptions")
         assumptions_model = (
@@ -236,9 +270,7 @@ def run_enrichment_pipeline(
         )
 
         if progress:
-            # Method breakdown summary
             if assumptions:
-                from collections import Counter
                 method_counts = Counter(a.method_used for a in assumptions)
                 method_parts = [f"{m}: {c}" for m, c in method_counts.most_common()]
                 progress.add_item(
@@ -253,7 +285,6 @@ def run_enrichment_pipeline(
 
         elapsed = time.monotonic() - start_time
 
-        # Merge everything into enriched context bundle
         enriched = merge_enrichment_into_context(
             context_bundle=context_bundle,
             gap_manifest=gap_manifest,
@@ -267,18 +298,19 @@ def run_enrichment_pipeline(
             elapsed_seconds=elapsed,
         )
 
-        # Serialize artifacts to disk
         serialize_enrichment_artifacts(enriched, base_dir, run_logger)
 
-        run_logger.record_decision({
-            "step": "enrichment",
-            "status": "completed",
-            "total_gaps": len(gap_manifest.city_gaps),
-            "web_findings": len(web_findings),
-            "assumptions_produced": len(assumptions),
-            "non_estimable_flagged": len(non_estimable),
-            "elapsed_seconds": round(elapsed, 2),
-        })
+        run_logger.record_decision(
+            {
+                "step": "enrichment",
+                "status": "completed",
+                "total_gaps": len(gap_manifest.city_gaps),
+                "web_findings": len(web_findings),
+                "assumptions_produced": len(assumptions),
+                "non_estimable_flagged": len(non_estimable),
+                "elapsed_seconds": round(elapsed, 2),
+            }
+        )
 
         logger.info(
             "Enrichment pipeline completed in %.1fs: gaps=%d assumptions=%d non_estimable=%d",
@@ -297,13 +329,15 @@ def run_enrichment_pipeline(
             exc,
             exc_info=True,
         )
-        run_logger.record_decision({
-            "step": "enrichment",
-            "status": "fallback",
-            "reason": str(exc),
-            "elapsed_seconds": round(elapsed, 2),
-        })
-        return context_bundle  # Original, unmodified
+        run_logger.record_decision(
+            {
+                "step": "enrichment",
+                "status": "fallback",
+                "reason": str(exc),
+                "elapsed_seconds": round(elapsed, 2),
+            }
+        )
+        return context_bundle
 
 
 __all__ = ["run_enrichment_pipeline"]

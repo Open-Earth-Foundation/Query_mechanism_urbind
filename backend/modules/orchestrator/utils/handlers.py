@@ -16,6 +16,43 @@ from backend.services.run_logger import RunLogger
 from backend.utils.config import AppConfig
 from backend.utils.paths import RunPaths
 
+
+def _resolve_writer_completion_state(
+    writer_output: WriterOutput,
+) -> tuple[str, str]:
+    """Return terminal status and finish reason for one writer result."""
+    coverage = writer_output.citation_coverage
+    if coverage is None or coverage.status == "confirmed":
+        return "completed", "completed (write)"
+    return (
+        "completed_with_gaps",
+        f"completed_with_gaps (writer partial citation coverage {coverage.coverage_ratio})",
+    )
+
+
+def _record_writer_diagnostics(
+    run_logger: RunLogger,
+    paths: RunPaths,
+    writer_output: WriterOutput,
+) -> None:
+    """Persist writer coverage metadata when the final draft is partial."""
+    coverage = writer_output.citation_coverage
+    if coverage is None:
+        return
+    coverage_payload = coverage.model_dump()
+    run_logger.record_writer_citation_coverage(coverage_payload)
+    if coverage.status == "confirmed":
+        return
+    run_logger.record_decision(
+        {
+            "status": "success",
+            "run_id": paths.base_dir.name,
+            "reason": "Writer returned a partial draft because citation coverage remained incomplete.",
+            "writer_citation_coverage": coverage_payload,
+        }
+    )
+
+
 def handle_write_decision(
     question: str,
     context_bundle: dict,
@@ -49,6 +86,10 @@ def handle_write_decision(
         writer_signature = inspect.signature(writer_func)
         if "run_id" in writer_signature.parameters:
             writer_kwargs["run_id"] = paths.base_dir.name
+        if "run_logger" in writer_signature.parameters:
+            writer_kwargs["run_logger"] = run_logger
+        if "paths" in writer_signature.parameters:
+            writer_kwargs["paths"] = paths
         writer_output = writer_func(
             question,
             context_bundle,
@@ -56,6 +97,8 @@ def handle_write_decision(
             api_key,
             **writer_kwargs,
         )
+        terminal_status, finish_reason = _resolve_writer_completion_state(writer_output)
+        _record_writer_diagnostics(run_logger, paths, writer_output)
         write_final_output(
             question,
             writer_output.content,
@@ -64,9 +107,9 @@ def handle_write_decision(
             config,
         )
         run_logger.finalize(
-            "completed",
+            terminal_status,
             final_output_path=paths.final_output,
-            finish_reason="completed (write)",
+            finish_reason=finish_reason,
         )
         detach_run_file_logger(run_log_handler)
         return paths

@@ -12,6 +12,7 @@ from backend.api.models import (
     ChatContextSummary,
     ChatFollowupBundleSummary,
     ChatFollowupReferenceListResponse,
+    ChatJobStatusResponse,
     ChatSessionContextsResponse,
     ChatSessionListResponse,
     ChatSessionResponse,
@@ -232,7 +233,7 @@ def get_chat_job_status(
     conversation_id: str,
     job_id: str,
     request: Request,
-):
+) -> ChatJobStatusResponse:
     """Return persisted status for one queued split-mode chat job."""
     _require_chat_ready_run(run_id, request)
     store = _get_chat_job_store(request)

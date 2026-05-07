@@ -41,6 +41,33 @@ class MarkdownResearcherConfig(AgentConfig):
     strict_decision_audit: bool = False
 
 
+class InitiativeExtractorConfig(AgentConfig):
+    """Configuration for full-document initiative extraction."""
+
+    max_files: int = 200
+    max_file_bytes: int = 5_000_000
+    max_segment_tokens: int = 20_000
+    segment_overlap_lines: int = 4
+    max_workers: int = 4
+    prior_initiatives_max_tokens: int = 10_000
+    semantic_dedupe_enabled: bool = True
+    semantic_dedupe_max_records_per_batch: int = 120
+    semantic_dedupe_max_input_tokens: int = 80_000
+    semantic_dedupe_confidence_threshold: float = 0.78
+    action_heavy_initiative_threshold: int = 3
+    action_heavy_max_followup_calls: int = 6
+
+
+class TefMapperConfig(AgentConfig):
+    """Configuration for JSON-only staged TEF mapping."""
+
+    max_workers: int = 4
+    review_confidence_threshold: float = 0.80
+    close_alternative_delta: float = 0.10
+    min_transition_confidence: float = 0.60
+    numeric_unit_classifier_enabled: bool = True
+
+
 class ChatConfig(AgentConfig):
     max_history_messages: int = 12
     max_context_total_tokens: int = 220_000
@@ -59,6 +86,8 @@ class WriterConfig(AgentConfig):
     """Configuration for the writer agent."""
 
     max_coverage_attempts: int = 2
+    multi_pass_threshold_tokens: int = 200_000
+    multi_pass_chunk_tokens: int = 200_000
 
 
 class AssumptionsReviewerConfig(AgentConfig):
@@ -69,6 +98,18 @@ class EnrichmentConfig(AgentConfig):
     """Config for web research enrichment and assumptions modelling layer."""
 
     enabled: bool = False
+    # Use the two-phase gap analyst (decompose -> external-source hook -> detect)
+    # instead of the legacy single-pass run_gap_analysis.  Disabled by
+    # default so existing pipelines keep their current behaviour until
+    # opted in.
+    use_split_gap_flow: bool = False
+    # Have the search worker run site:<domain> queries against the curated
+    # tier-1 web allowlist before falling through to open Serper.  Off by
+    # default so existing pipelines keep current behaviour.
+    tier1_first_search: bool = False
+    # Confidence threshold above which a tier-1 finding is treated as
+    # "good enough" to skip the open Serper pass for that (city, field).
+    tier1_confidence_threshold: float = 0.6
     # Web research sub-config
     web_research_enabled: bool = False
     max_workers: int = 6
@@ -131,6 +172,12 @@ class AppConfig(BaseModel):
 
     orchestrator: OrchestratorConfig
     markdown_researcher: MarkdownResearcherConfig
+    initiative_extractor: InitiativeExtractorConfig = Field(
+        default_factory=lambda: InitiativeExtractorConfig(model="openai/gpt-5.4-mini")
+    )
+    tef_mapper: TefMapperConfig = Field(
+        default_factory=lambda: TefMapperConfig(model="openai/gpt-5.4-mini")
+    )
     writer: WriterConfig
     chat: ChatConfig = Field(
         default_factory=lambda: ChatConfig(model="openai/gpt-5.4-mini")
@@ -290,6 +337,8 @@ __all__ = [
     "AgentConfig",
     "OrchestratorConfig",
     "MarkdownResearcherConfig",
+    "InitiativeExtractorConfig",
+    "TefMapperConfig",
     "ChatConfig",
     "WriterConfig",
     "AssumptionsReviewerConfig",

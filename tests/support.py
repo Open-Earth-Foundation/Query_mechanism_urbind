@@ -37,6 +37,8 @@ def build_test_app_config(
     vector_store_overrides: dict[str, object] | None = None,
     orchestrator_overrides: dict[str, object] | None = None,
     markdown_researcher_overrides: dict[str, object] | None = None,
+    initiative_extractor_overrides: dict[str, object] | None = None,
+    tef_mapper_overrides: dict[str, object] | None = None,
     writer_overrides: dict[str, object] | None = None,
     chat_overrides: dict[str, object] | None = None,
     assumptions_reviewer_overrides: dict[str, object] | None = None,
@@ -50,11 +52,29 @@ def build_test_app_config(
         config.markdown_researcher,
         markdown_researcher_overrides,
     )
+    config.initiative_extractor = _apply_overrides(
+        config.initiative_extractor,
+        initiative_extractor_overrides,
+    )
+    config.tef_mapper = _apply_overrides(config.tef_mapper, tef_mapper_overrides)
+    if (
+        not tef_mapper_overrides
+        or "numeric_unit_classifier_enabled" not in tef_mapper_overrides
+    ):
+        config.tef_mapper = config.tef_mapper.model_copy(
+            update={"numeric_unit_classifier_enabled": False}
+        )
     config.writer = _apply_overrides(config.writer, writer_overrides)
     config.chat = _apply_overrides(config.chat, chat_overrides)
     config.assumptions_reviewer = _apply_overrides(
         config.assumptions_reviewer,
         assumptions_reviewer_overrides,
+    )
+    # Default the new split-flow / tier-1-first flags off in tests so existing
+    # test mocks (built for the legacy single-pass flow) keep working.  Tests
+    # exercising the new flow can opt in via enrichment_overrides.
+    config.enrichment = config.enrichment.model_copy(
+        update={"use_split_gap_flow": False, "tier1_first_search": False}
     )
     config.enrichment = _apply_overrides(config.enrichment, enrichment_overrides)
     config.retry = _apply_overrides(config.retry, retry_overrides)

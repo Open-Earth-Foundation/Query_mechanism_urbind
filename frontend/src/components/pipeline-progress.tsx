@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect, useMemo } from "react";
+import { useMemo, useState } from "react";
 import {
   CheckCircle2,
   ChevronDown,
@@ -9,6 +9,7 @@ import {
   Loader2,
   MinusCircle,
   Search,
+  ShieldCheck,
   XCircle,
 } from "lucide-react";
 
@@ -122,13 +123,27 @@ function GapRow({ item }: { item: PipelineStepItem }) {
 }
 
 function SearchResultRow({ item }: { item: PipelineStepItem }) {
+  const sourceTier = item.metadata?.source_tier as string | undefined;
+  const sourceName = item.metadata?.source_name as string | undefined;
+  const isTier1 = sourceTier === "tier1";
   return (
     <div className="flex items-center gap-3 px-4 py-2.5">
-      <Search className="h-4 w-4 shrink-0 text-slate-400" />
+      {isTier1 ? (
+        <ShieldCheck className="h-4 w-4 shrink-0 text-teal-600" />
+      ) : (
+        <Search className="h-4 w-4 shrink-0 text-slate-400" />
+      )}
       <span className="min-w-0 flex-1 truncate text-sm text-slate-800">
         {item.title ?? item.text}
       </span>
-      {item.domain ? (
+      {isTier1 ? (
+        <Badge
+          variant="outline"
+          className="shrink-0 rounded-full border-teal-300 bg-teal-50 px-2.5 py-0.5 text-xs font-normal text-teal-700"
+        >
+          {sourceName ?? "tier-1"}
+        </Badge>
+      ) : item.domain ? (
         <span className="shrink-0 text-xs text-slate-400">{item.domain}</span>
       ) : null}
       {item.url ? (
@@ -225,9 +240,19 @@ function BatchHeader({ item }: { item: PipelineStepItem }) {
 /* ------------------------------------------------------------------ */
 
 interface ItemGroup {
-  kind: "plain" | "field_box" | "gap_box" | "batch_section" | "estimate_box";
+  kind:
+    | "plain"
+    | "field_box"
+    | "gap_box"
+    | "batch_section"
+    | "estimate_box";
   items: PipelineStepItem[];
   header?: PipelineStepItem;
+}
+
+interface ManualStepToggle {
+  isOpen: boolean;
+  status: PipelineStep["status"];
 }
 
 function groupItems(items: PipelineStepItem[]): ItemGroup[] {
@@ -267,52 +292,45 @@ function groupItems(items: PipelineStepItem[]): ItemGroup[] {
       currentBatchHeader = undefined;
     }
   };
+  const flushAllExcept = (keep: string) => {
+    if (keep !== "fields") flushFields();
+    if (keep !== "gaps") flushGaps();
+    if (keep !== "estimates") flushEstimates();
+    if (keep !== "results") flushBatch();
+  };
 
   for (const item of items) {
     switch (item.item_type) {
       case "field": {
-        flushGaps();
-        flushBatch();
-        flushEstimates();
+        flushAllExcept("fields");
         currentFields.push(item);
         break;
       }
       case "gap": {
-        flushFields();
-        flushBatch();
-        flushEstimates();
+        flushAllExcept("gaps");
         currentGaps.push(item);
         break;
       }
       case "estimate": {
-        flushFields();
-        flushGaps();
-        flushBatch();
+        flushAllExcept("estimates");
         currentEstimates.push(item);
         break;
       }
       case "batch_summary": {
-        // Flush any previous batch section
+        flushAllExcept("results");
+        // batch headers replace any currently-pending header
         flushBatch();
-        flushFields();
-        flushGaps();
-        flushEstimates();
         currentBatchHeader = item;
         break;
       }
       case "search_result": {
-        flushFields();
-        flushGaps();
-        flushEstimates();
+        flushAllExcept("results");
         currentResults.push(item);
         break;
       }
       default: {
         // Plain text — flush all typed groups first
-        flushFields();
-        flushGaps();
-        flushBatch();
-        flushEstimates();
+        flushAllExcept("none");
         groups.push({ kind: "plain", items: [item] });
         break;
       }
@@ -320,10 +338,7 @@ function groupItems(items: PipelineStepItem[]): ItemGroup[] {
   }
 
   // Final flush
-  flushFields();
-  flushGaps();
-  flushBatch();
-  flushEstimates();
+  flushAllExcept("none");
 
   return groups;
 }
@@ -333,18 +348,13 @@ function groupItems(items: PipelineStepItem[]): ItemGroup[] {
 /* ------------------------------------------------------------------ */
 
 function StepPanel({ step }: { step: PipelineStep }) {
-  const [manualToggle, setManualToggle] = useState<boolean | null>(null);
-  const prevStatusRef = useRef(step.status);
-
-  useEffect(() => {
-    if (prevStatusRef.current !== "running" && step.status === "running") {
-      setManualToggle(null);
-    }
-    prevStatusRef.current = step.status;
-  }, [step.status]);
+  const [manualToggle, setManualToggle] = useState<ManualStepToggle | null>(null);
 
   const autoExpanded = step.status === "running";
-  const isOpen = manualToggle ?? autoExpanded;
+  const manualToggleApplies =
+    manualToggle !== null &&
+    !(step.status === "running" && manualToggle.status !== "running");
+  const isOpen = manualToggleApplies ? manualToggle.isOpen : autoExpanded;
 
   const itemGroups = useMemo(() => groupItems(step.items), [step.items]);
 
@@ -354,7 +364,7 @@ function StepPanel({ step }: { step: PipelineStep }) {
       <div className="absolute left-[9px] top-0 h-full w-px bg-slate-200" />
       <button
         type="button"
-        onClick={() => setManualToggle((prev) => !(prev ?? autoExpanded))}
+        onClick={() => setManualToggle({ isOpen: !isOpen, status: step.status })}
         className="group flex w-full items-center gap-2.5 rounded-md px-2 py-2 text-left transition hover:bg-slate-50"
       >
         <StepIcon status={step.status} />

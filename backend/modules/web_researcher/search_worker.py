@@ -14,12 +14,124 @@ from backend.modules.web_researcher.post_extraction_validator import validate_fi
 from backend.modules.web_researcher.relevance import check_relevance_batch
 from backend.modules.web_researcher.scraper import FirecrawlScraper
 from backend.modules.web_researcher.search import SerperSearchClient
+from backend.modules.web_researcher.tier1_web import (
+    Tier1WebAllowlist,
+    Tier1WebSource,
+    load_tier1_web_allowlist,
+)
 from backend.services.progress_tracker import ProgressTracker
 from backend.utils.config import AppConfig
 
 logger = logging.getLogger(__name__)
 
 _MAX_URLS_PER_DOMAIN_PER_BATCH = 3
+
+
+def _load_tier1_allowlist_safe() -> Tier1WebAllowlist | None:
+    """Load the tier-1 allowlist, returning None when not yet generated."""
+    try:
+        return load_tier1_web_allowlist()
+    except FileNotFoundError:
+        logger.info(
+            "search_worker: tier-1 allowlist not present; skipping tier-1 pre-pass."
+        )
+        return None
+    except Exception:  # noqa: BLE001
+        logger.warning("search_worker: failed to load tier-1 allowlist", exc_info=True)
+        return None
+
+
+def _matching_tier1_sources(
+    allowlist: Tier1WebAllowlist | None,
+    batch: SearchBatch,
+) -> list[Tier1WebSource]:
+    """Return tier-1 sources whose coverage overlaps the batch's target fields/cities."""
+    if allowlist is None:
+        return []
+    matches = allowlist.matching(
+        cities=batch.cities,
+        fields=batch.target_fields,
+    )
+    # Drop auth-walled sources — we can't site-search them.
+    return [s for s in matches if s.access != "auth_required"]
+
+
+def _process_results_for_query(
+    *,
+    query: str,
+    results: list,
+    batch: SearchBatch,
+    scraper: FirecrawlScraper,
+    config: AppConfig,
+    api_key: str,
+    scraped_urls: set[str],
+    domain_url_counts: dict[str, int],
+    bypass_domain_cap: bool,
+    tag_source_id: str | None,
+    tag_source_tier: str | None,
+    excluded_paths: list[str] | None = None,
+) -> list[WebFinding]:
+    """Run relevance → scrape → extract for one query's results.
+
+    ``bypass_domain_cap`` is True for tier-1 site: queries because the cap
+    was designed for diversifying open results, not for limiting how many
+    pages we read off a single trusted domain.
+    """
+    if not results:
+        return []
+
+    # Relevance check (skip for national/comparative benchmarks — they
+    # don't target specific cities so entity disambiguation would
+    # incorrectly reject them).
+    if batch.search_type in ("national_benchmark", "comparative_benchmark"):
+        checked = [(r, True) for r in results]
+    else:
+        checked = check_relevance_batch(
+            results, batch.target_fields, batch.cities, config, api_key
+        )
+
+    out: list[WebFinding] = []
+    for result, is_relevant in checked:
+        if not is_relevant:
+            continue
+        if result.url in scraped_urls:
+            continue
+        if excluded_paths and any(p and p in result.url for p in excluded_paths):
+            continue
+
+        domain = urlparse(result.url).netloc.lower()
+        if not bypass_domain_cap:
+            if domain_url_counts.get(domain, 0) >= _MAX_URLS_PER_DOMAIN_PER_BATCH:
+                continue
+
+        scrape_result = scraper.scrape(result.url)
+        if not scrape_result.success:
+            continue
+
+        scraped_urls.add(result.url)
+        domain_url_counts[domain] = domain_url_counts.get(domain, 0) + 1
+
+        findings = extract_fields_from_content(
+            content=scrape_result.content,
+            source_url=result.url,
+            target_fields=batch.target_fields,
+            cities=batch.cities,
+            config=config,
+            api_key=api_key,
+        )
+        findings = validate_findings(findings, batch.cities)
+        for finding in findings:
+            if tag_source_id is not None:
+                finding.source_id = tag_source_id
+            if tag_source_tier is not None:
+                finding.source_tier = tag_source_tier
+        out.extend(findings)
+
+    return out
+
+
+def _coverage_set_from_findings(findings: list[WebFinding]) -> set[tuple[str, str]]:
+    return {(f.city.lower(), f.field.lower()) for f in findings}
 
 
 def execute_search_batch(
@@ -32,68 +144,98 @@ def execute_search_batch(
 ) -> list[WebFinding]:
     """Execute a single search batch: search → filter → scrape → extract.
 
-    Per-worker flow:
-    1. Run each query through Google CSE
-    2. Relevance-check results
-    3. Scrape relevant URLs via Firecrawl
-    4. Extract target fields from scraped content
-    5. If gaps remain and retries available, reformulate
-    6. If promising domains found and deep dive allowed, crawl deeper
+    When ``config.enrichment.tier1_first_search`` is true, each query runs
+    a ``site:<domain>`` pre-pass against curated tier-1 web sources whose
+    coverage matches the batch.  If tier-1 fully resolves a (city, field)
+    pair (with extraction confidence ≥ ``tier1_confidence_threshold``),
+    the open Serper pass is skipped for that query.
 
-    Returns all ``WebFinding`` objects extracted from this batch.
+    Returns all ``WebFinding`` objects extracted from this batch.  Each
+    finding from the tier-1 pre-pass is tagged with
+    ``source_id = <allowlist_entry_id>`` and ``source_tier = "tier1"``;
+    findings from the open pass carry ``source_tier = "open"``.
     """
     all_findings: list[WebFinding] = []
     domain_url_counts: dict[str, int] = {}
     scraped_urls: set[str] = set()
     max_retries = config.enrichment.max_retries_per_worker
 
+    use_tier1 = bool(config.enrichment.tier1_first_search)
+    confidence_threshold = float(config.enrichment.tier1_confidence_threshold)
+    tier1_allowlist = _load_tier1_allowlist_safe() if use_tier1 else None
+    tier1_sources = (
+        _matching_tier1_sources(tier1_allowlist, batch) if use_tier1 else []
+    )
+    if use_tier1:
+        logger.info(
+            "search_worker: batch %s tier1 pre-pass — %d matching sources: %s",
+            batch.batch_id,
+            len(tier1_sources),
+            ", ".join(s.id for s in tier1_sources) or "(none)",
+        )
+
     for attempt in range(max_retries + 1):
         for query in batch.queries:
-            # Step 1: Search
-            results = search_client.search(query)
-            if not results:
-                continue
+            tier1_findings: list[WebFinding] = []
+            tier1_resolved: set[tuple[str, str]] = set()
 
-            # Step 2: Relevance check (skip for national/comparative benchmarks —
-            # they don't target specific cities so entity disambiguation
-            # would incorrectly reject them)
-            if batch.search_type in ("national_benchmark", "comparative_benchmark"):
-                checked = [(r, True) for r in results]
-            else:
-                checked = check_relevance_batch(
-                    results, batch.target_fields, batch.cities, config, api_key
-                )
-
-            # Step 3: Scrape relevant results
-            for result, is_relevant in checked:
-                if not is_relevant:
+            # Tier-1 pre-pass.
+            for source in tier1_sources:
+                scoped_query = f"site:{source.domain} {query}"
+                results = search_client.search(scoped_query)
+                if not results:
                     continue
-                if result.url in scraped_urls:
-                    continue
-
-                # Domain diversity: max 3 URLs per domain per batch
-                domain = urlparse(result.url).netloc.lower()
-                if domain_url_counts.get(domain, 0) >= _MAX_URLS_PER_DOMAIN_PER_BATCH:
-                    continue
-
-                scrape_result = scraper.scrape(result.url)
-                if not scrape_result.success:
-                    continue
-
-                scraped_urls.add(result.url)
-                domain_url_counts[domain] = domain_url_counts.get(domain, 0) + 1
-
-                # Step 4: Extract fields
-                findings = extract_fields_from_content(
-                    content=scrape_result.content,
-                    source_url=result.url,
-                    target_fields=batch.target_fields,
-                    cities=batch.cities,
+                source_findings = _process_results_for_query(
+                    query=scoped_query,
+                    results=results,
+                    batch=batch,
+                    scraper=scraper,
                     config=config,
                     api_key=api_key,
+                    scraped_urls=scraped_urls,
+                    domain_url_counts=domain_url_counts,
+                    bypass_domain_cap=True,
+                    tag_source_id=source.id,
+                    tag_source_tier="tier1",
+                    excluded_paths=source.excluded_paths,
                 )
-                findings = validate_findings(findings, batch.cities)
-                all_findings.extend(findings)
+                tier1_findings.extend(source_findings)
+                # Only count high-confidence findings as "resolving" the gap.
+                for f in source_findings:
+                    if f.extraction_confidence >= confidence_threshold:
+                        tier1_resolved.add((f.city.lower(), f.field.lower()))
+
+            all_findings.extend(tier1_findings)
+
+            # Decide whether to also run the open Serper pass for this query.
+            needed_for_query = {
+                (city.lower(), field.lower())
+                for city in batch.cities
+                for field in batch.target_fields
+            }
+            if use_tier1 and tier1_resolved >= needed_for_query:
+                logger.info(
+                    "search_worker: tier-1 fully covered query %r; skipping open pass.",
+                    query,
+                )
+                continue
+
+            # Open pass — same path as before, but findings are tagged.
+            results = search_client.search(query)
+            open_findings = _process_results_for_query(
+                query=query,
+                results=results,
+                batch=batch,
+                scraper=scraper,
+                config=config,
+                api_key=api_key,
+                scraped_urls=scraped_urls,
+                domain_url_counts=domain_url_counts,
+                bypass_domain_cap=False,
+                tag_source_id=None,
+                tag_source_tier="open" if use_tier1 else None,
+            )
+            all_findings.extend(open_findings)
 
         # Evaluate coverage
         covered_fields = {(f.city.lower(), f.field.lower()) for f in all_findings}
@@ -188,6 +330,16 @@ def execute_search_batches(
     # Map batch_id → batch for progress reporting
     batch_by_id = {b.batch_id: b for b in batches}
 
+    # Resolve tier-1 source_id → display name for progress items so the UI
+    # can attribute findings to a curated source rather than a bare URL.
+    name_by_source_id: dict[str, str] = {}
+    if config.enrichment.tier1_first_search:
+        allowlist = _load_tier1_allowlist_safe()
+        if allowlist is not None:
+            for s in allowlist.sources:
+                if s.id and s.name:
+                    name_by_source_id[s.id] = s.name
+
     with ThreadPoolExecutor(max_workers=max_workers) as pool:
         futures = {
             pool.submit(
@@ -224,6 +376,14 @@ def execute_search_batches(
                     for f in findings:
                         val = f"{f.value} {f.unit}" if f.unit else str(f.value)
                         parsed_domain = urlparse(f.source_url).netloc.lower()
+                        meta: dict[str, object] = {}
+                        if f.source_tier:
+                            meta["source_tier"] = f.source_tier
+                        if f.source_id:
+                            meta["source_id"] = f.source_id
+                            name = name_by_source_id.get(f.source_id)
+                            if name:
+                                meta["source_name"] = name
                         progress.add_item(
                             "web_research",
                             f"  Found: {f.city} / {f.field} = {val} — {f.source_url}",
@@ -231,6 +391,7 @@ def execute_search_batches(
                             title=f"{f.city} / {f.field} = {val}",
                             domain=parsed_domain,
                             url=f.source_url,
+                            metadata=meta or None,
                         )
             except Exception:
                 logger.warning(

@@ -61,6 +61,35 @@ def _write_success_artifacts(question: str, run_id: str, config: AppConfig) -> R
     return paths
 
 
+def _write_run_listing_artifacts(
+    *,
+    question: str,
+    run_id: str,
+    status: str,
+    config: AppConfig,
+    finish_reason: str | None = None,
+    error: dict[str, str] | None = None,
+) -> RunPaths:
+    """Write minimal run artifacts for list and diagnostics route tests."""
+    paths = create_run_paths(config.runs_dir, run_id, config.orchestrator.context_bundle_name)
+    paths.base_dir.mkdir(parents=True, exist_ok=True)
+    run_log = {
+        "run_id": run_id,
+        "question": question,
+        "status": status,
+        "started_at": datetime.now(timezone.utc).isoformat(),
+        "completed_at": datetime.now(timezone.utc).isoformat(),
+        "finish_reason": finish_reason,
+        "error": error,
+        "artifacts": {},
+    }
+    paths.run_log.write_text(
+        json.dumps(run_log, ensure_ascii=True, indent=2),
+        encoding="utf-8",
+    )
+    return paths
+
+
 def _write_run_listing_artifact(
     runs_dir: Path,
     *,
@@ -944,16 +973,46 @@ def test_api_list_runs_reads_question_from_legacy_inputs_when_root_question_miss
             == "Question sourced from inputs.initial_question"
         )
 
+def test_api_list_runs_hides_failed_runs_by_default(tmp_path: Path) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    _write_run_listing_artifacts(
+        question="Completed run",
+        run_id="run-completed",
+        status="completed",
+        config=config,
+        finish_reason="completed (write)",
+    )
+    _write_run_listing_artifacts(
+        question="Failed run",
+        run_id="run-failed",
+        status="failed",
+        config=config,
+        finish_reason="writer_unexpected_error",
+        error={"code": "RUN_EXECUTION_ERROR", "message": "Max turns (5) exceeded"},
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get("/api/v1/runs")
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["total"] == 1
+        assert [item["run_id"] for item in payload["runs"]] == ["run-completed"]
+        assert payload["runs"][0]["status"] == "completed"
+        assert "picker_timestamp" in payload["runs"][0]
+
 
 def test_api_list_runs_returns_picker_timestamp(tmp_path: Path) -> None:
     runs_dir = tmp_path / "output"
     markdown_dir = tmp_path / "documents"
     markdown_dir.mkdir(parents=True, exist_ok=True)
-    started_at = datetime(2026, 3, 12, 19, 54, tzinfo=timezone.utc)
     _write_run_listing_artifact(
         runs_dir,
         run_id="run-picker-time",
-        started_at=started_at,
+        started_at=datetime(2026, 3, 12, 19, 54, tzinfo=timezone.utc),
         question="Timestamped picker run",
     )
 
@@ -964,6 +1023,46 @@ def test_api_list_runs_returns_picker_timestamp(tmp_path: Path) -> None:
         payload = response.json()
         assert payload["total"] == 1
         assert payload["runs"][0]["picker_timestamp"] == "0312-1954"
+        assert payload["runs"][0]["status"] == "completed"
+
+
+def test_api_list_runs_include_all_returns_failed_runs_for_dev_mode(
+    tmp_path: Path,
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    _write_run_listing_artifacts(
+        question="Completed run",
+        run_id="run-completed",
+        status="completed",
+        config=config,
+        finish_reason="completed (write)",
+    )
+    _write_run_listing_artifacts(
+        question="Failed run",
+        run_id="run-failed",
+        status="failed",
+        config=config,
+        finish_reason="writer_unexpected_error",
+        error={"code": "RUN_EXECUTION_ERROR", "message": "Max turns (5) exceeded"},
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get("/api/v1/runs?include_all=true")
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["total"] == 2
+        assert {item["run_id"] for item in payload["runs"]} == {
+            "run-completed",
+            "run-failed",
+        }
+        failed_item = next(
+            item for item in payload["runs"] if item["run_id"] == "run-failed"
+        )
+        assert failed_item["status"] == "failed"
 
 
 def test_api_list_runs_search_matches_selected_city_with_typo_tolerance(
@@ -1070,6 +1169,178 @@ def test_api_list_runs_search_numeric_fragment_matches_run_id_or_question_only(
         ]
 
 
+def test_api_run_diagnostics_returns_warning_and_error_artifacts(
+    tmp_path: Path,
+) -> None:
+    """Diagnostics should expose run-local artifact labels plus parsed failure details."""
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    paths = _write_run_listing_artifacts(
+        question="Failed run",
+        run_id="run-failed",
+        status="failed",
+        config=config,
+        finish_reason="writer_unexpected_error",
+        error={"code": "RUN_EXECUTION_ERROR", "message": "Max turns (5) exceeded"},
+    )
+    run_payload = json.loads(paths.run_log.read_text(encoding="utf-8"))
+    run_payload["artifacts"] = {
+        "run_summary": str(paths.run_summary),
+        "error_log": str(paths.error_log),
+    }
+    run_payload["llm_usage"] = {"calls": 2, "totals": {"total_tokens": 123}}
+    run_payload["retry_summary"] = {"total_events": 1, "by_operation": {"writer": 1}}
+    run_payload["writer_multi_pass"] = {
+        "strategy": "split_by_city",
+        "combine_strategy": "draft_merge",
+        "analysis_mode": "aggregate",
+        "payload_tokens": 350083,
+        "threshold_tokens": 200000,
+        "batch_count": 2,
+        "batches": [
+            {
+                "batch_index": 1,
+                "city_names": ["Aachen", "Amsterdam"],
+                "excerpt_count": 1300,
+                "payload_tokens": 175040,
+            },
+            {
+                "batch_index": 2,
+                "city_names": ["Antwerp", "Athens"],
+                "excerpt_count": 1274,
+                "payload_tokens": 174980,
+            },
+        ],
+    }
+    paths.run_log.write_text(
+        json.dumps(run_payload, ensure_ascii=True, indent=2),
+        encoding="utf-8",
+    )
+    paths.error_log.write_text(
+        "\n".join(
+            [
+                "2026-01-01 00:00:01 worker.py:11 - ERROR - writer crashed",
+                "Traceback line",
+            ]
+        ),
+        encoding="utf-8",
+    )
+    paths.run_summary.write_text("RUN SUMMARY\nStatus: failed", encoding="utf-8")
+    (paths.base_dir / "run.log").write_text(
+        "\n".join(
+            [
+                "2026-01-01 00:00:00 worker.py:10 - INFO - setup",
+                (
+                    '2026-01-01 00:00:00 worker.py:10 - WARNING - WRITER_CITATION_COVERAGE '
+                    '{"run_id":"run-failed","attempt":2,"max_attempts":2,"status":"exhausted",'
+                    '"coverage_confirmed":57,"coverage_required":101,"coverage_ratio":"57/101",'
+                    '"missing_cities":["Antwerp","Bergamo"],"analysis_mode":"aggregate"}'
+                ),
+                "2026-01-01 00:00:01 worker.py:11 - WARNING - writer nearing max turns",
+                "2026-01-01 00:00:02 worker.py:12 - ERROR - writer crashed",
+                "Traceback line",
+                "2026-01-01 00:00:03 worker.py:13 - INFO - done",
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get("/api/v1/runs/run-failed/diagnostics")
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["run_id"] == "run-failed"
+        assert payload["status"] == "failed"
+        assert payload["error"]["code"] == "RUN_EXECUTION_ERROR"
+        assert payload["writer_citation_coverage"]["status"] == "exhausted"
+        assert payload["writer_citation_coverage"]["coverage_ratio"] == "57/101"
+        assert payload["writer_citation_coverage"]["missing_cities"] == [
+            "Antwerp",
+            "Bergamo",
+        ]
+        assert payload["writer_multi_pass"]["batch_count"] == 2
+        assert payload["writer_multi_pass"]["threshold_tokens"] == 200000
+        assert payload["writer_multi_pass"]["batches"][0]["city_names"] == [
+            "Aachen",
+            "Amsterdam",
+        ]
+        assert payload["warning_entries"] == [
+            (
+                '2026-01-01 00:00:00 worker.py:10 - WARNING - WRITER_CITATION_COVERAGE '
+                '{"run_id":"run-failed","attempt":2,"max_attempts":2,"status":"exhausted",'
+                '"coverage_confirmed":57,"coverage_required":101,"coverage_ratio":"57/101",'
+                '"missing_cities":["Antwerp","Bergamo"],"analysis_mode":"aggregate"}'
+            ),
+            "2026-01-01 00:00:01 worker.py:11 - WARNING - writer nearing max turns",
+        ]
+        assert payload["error_log_text"].startswith(
+            "2026-01-01 00:00:01 worker.py:11 - ERROR - writer crashed"
+        )
+        assert payload["artifacts"]["run_summary"] == "run_summary.txt"
+        assert payload["artifacts"]["error_log"] == "error_log.txt"
+        assert payload["artifacts"]["run_log"] == "run.log"
+        assert payload["retry_summary"]["total_events"] == 1
+        assert payload["llm_usage"]["calls"] == 2
+
+
+def test_api_run_diagnostics_ignores_foreign_artifact_paths(tmp_path: Path) -> None:
+    """Diagnostics should ignore foreign artifact paths and stay inside the run folder."""
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    paths = _write_run_listing_artifacts(
+        question="Failed run",
+        run_id="run-foreign-artifacts",
+        status="failed",
+        config=config,
+        finish_reason="writer_unexpected_error",
+        error={"code": "RUN_EXECUTION_ERROR", "message": "Max turns (5) exceeded"},
+    )
+
+    foreign_dir = tmp_path / "foreign-artifacts"
+    foreign_dir.mkdir(parents=True, exist_ok=True)
+    foreign_summary = foreign_dir / "run_summary.txt"
+    foreign_error_log = foreign_dir / "error_log.txt"
+    foreign_summary.write_text("FOREIGN SUMMARY", encoding="utf-8")
+    foreign_error_log.write_text("FOREIGN SECRET", encoding="utf-8")
+
+    run_payload = json.loads(paths.run_log.read_text(encoding="utf-8"))
+    run_payload["artifacts"] = {
+        "run_summary": str(foreign_summary),
+        "error_log": str(foreign_error_log),
+    }
+    paths.run_log.write_text(
+        json.dumps(run_payload, ensure_ascii=True, indent=2),
+        encoding="utf-8",
+    )
+    paths.run_summary.write_text("LOCAL SUMMARY", encoding="utf-8")
+    paths.error_log.write_text("LOCAL ERROR", encoding="utf-8")
+    (paths.base_dir / "run.log").write_text(
+        "\n".join(
+            [
+                "2026-01-01 00:00:00 worker.py:10 - INFO - setup",
+                "2026-01-01 00:00:01 worker.py:11 - ERROR - local failure",
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get("/api/v1/runs/run-foreign-artifacts/diagnostics")
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["artifacts"]["run_summary"] == "run_summary.txt"
+        assert payload["artifacts"]["error_log"] == "error_log.txt"
+        assert payload["artifacts"]["run_log"] == "run.log"
+        assert payload["error_log_text"] == "LOCAL ERROR"
+        assert "FOREIGN SECRET" not in payload["error_log_text"]
+
+
 def test_api_output_and_context_resolve_stale_container_artifact_paths(
     tmp_path: Path,
 ) -> None:
@@ -1138,6 +1409,151 @@ def test_api_docx_export_returns_word_document(tmp_path: Path) -> None:
     assert len(document.tables) == 1
     assert document.tables[0].rows[1].cells[0].text == "Munich"
     assert document.tables[0].rows[1].cells[1].text == "Google Doc review"
+
+
+def test_api_writer_context_export_returns_writer_safe_json_bundle(tmp_path: Path) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    run_id = "run-writer-context-export"
+    paths = _write_success_artifacts(
+        question="Writer context export run",
+        run_id=run_id,
+        config=config,
+    )
+    context_bundle = {
+        "sql": {"status": "success", "rows": [{"city": "Munich"}]},
+        "research_question": "What retrofit evidence was selected?",
+        "analysis_mode": "aggregate",
+        "selected_cities": ["munich", "leipzig"],
+        "enrichment": {"status": "success", "notes": ["not sent to writer"]},
+        "final": str(paths.final_output),
+        "markdown": {
+            "status": "success",
+            "analysis_mode": "aggregate",
+            "selected_city_names": ["Munich", "Leipzig"],
+            "inspected_city_names": ["Munich", "Leipzig"],
+            "selected_cities": ["munich", "leipzig"],
+            "inspected_cities": ["munich", "leipzig"],
+            "accepted_chunk_ids": ["chunk_munich_1", "chunk_leipzig_1"],
+            "rejected_chunk_ids": ["chunk_munich_9"],
+            "decision_audit": {"accepted_total": 2, "rejected_total": 1},
+            "excerpt_count": 2,
+            "excerpts": [
+                {
+                    "ref_id": "ref_1",
+                    "city_name": "Munich",
+                    "city_key": "munich",
+                    "quote": "Munich is retrofitting schools.",
+                    "partial_answer": "Munich is retrofitting schools.",
+                    "source_chunk_ids": ["chunk_munich_1"],
+                },
+                {
+                    "ref_id": "ref_2",
+                    "city_name": "Leipzig",
+                    "city_key": "leipzig",
+                    "quote": "Leipzig expanded district heating.",
+                    "partial_answer": "Leipzig expanded district heating.",
+                    "source_chunk_ids": ["chunk_leipzig_1"],
+                },
+            ],
+        },
+    }
+    paths.context_bundle.write_text(
+        json.dumps(context_bundle, ensure_ascii=True, indent=2),
+        encoding="utf-8",
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get(f"/api/v1/runs/{run_id}/export/writer-context")
+        assert response.status_code == 200
+        assert response.headers["content-type"].startswith("application/json")
+        assert (
+            f'filename="{run_id}_writer_context.json"'
+            in response.headers["content-disposition"]
+        )
+        payload = response.json()
+
+    assert payload["research_question"] == "What retrofit evidence was selected?"
+    assert payload["analysis_mode"] == "aggregate"
+    assert payload["selected_cities"] == ["Munich", "Leipzig"]
+    assert payload["sql"] == {"status": "success", "rows": [{"city": "Munich"}]}
+    markdown_payload = payload["markdown"]
+    assert markdown_payload["excerpt_count"] == 2
+    assert markdown_payload["excerpts"][0]["ref_id"] == "ref_1"
+    assert markdown_payload["excerpts"][0]["source_chunk_ids"] == ["chunk_munich_1"]
+    assert "enrichment" not in payload
+    assert "accepted_chunk_ids" not in markdown_payload
+    assert "decision_audit" not in markdown_payload
+
+
+def test_api_writer_context_markdown_export_remains_available(tmp_path: Path) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    run_id = "run-writer-context-markdown-export"
+    paths = _write_success_artifacts(
+        question="Writer context markdown export run",
+        run_id=run_id,
+        config=config,
+    )
+    context_bundle = {
+        "sql": {"status": "success", "rows": [{"city": "Munich"}]},
+        "research_question": "What retrofit evidence was selected?",
+        "analysis_mode": "aggregate",
+        "selected_cities": ["munich", "leipzig"],
+        "enrichment": {"status": "success", "notes": ["not sent to writer"]},
+        "final": str(paths.final_output),
+        "markdown": {
+            "status": "success",
+            "analysis_mode": "aggregate",
+            "selected_city_names": ["Munich", "Leipzig"],
+            "inspected_city_names": ["Munich", "Leipzig"],
+            "selected_cities": ["munich", "leipzig"],
+            "inspected_cities": ["munich", "leipzig"],
+            "accepted_chunk_ids": ["chunk_munich_1", "chunk_leipzig_1"],
+            "decision_audit": {"accepted_total": 2, "rejected_total": 1},
+            "excerpt_count": 1,
+            "excerpts": [
+                {
+                    "ref_id": "ref_1",
+                    "city_name": "Munich",
+                    "city_key": "munich",
+                    "quote": "Munich is retrofitting schools.",
+                    "partial_answer": "Munich is retrofitting schools.",
+                    "source_chunk_ids": ["chunk_munich_1"],
+                },
+            ],
+        },
+    }
+    paths.context_bundle.write_text(
+        json.dumps(context_bundle, ensure_ascii=True, indent=2),
+        encoding="utf-8",
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get(f"/api/v1/runs/{run_id}/export/writer-context.md")
+        assert response.status_code == 200
+        assert response.headers["content-type"].startswith("text/markdown")
+        assert (
+            f'filename="{run_id}_writer_context.md"'
+            in response.headers["content-disposition"]
+        )
+        payload = response.text
+
+    assert "# Writer Context Export" in payload
+    assert "- Research question: What retrofit evidence was selected?" in payload
+    assert "- Selected cities: Munich, Leipzig" in payload
+    assert "## SQL Context" in payload
+    assert "## Excerpt 1 - Munich (`ref_1`)" in payload
+    assert "> Munich is retrofitting schools." in payload
+    assert "not sent to writer" not in payload
+    assert "accepted_chunk_ids" not in payload
+    assert "decision_audit" not in payload
 
 
 def test_api_output_hides_legacy_finish_reason_footer(tmp_path: Path) -> None:

@@ -1,4 +1,4 @@
-"""Pydantic models for the web research enrichment and assumptions modelling layer."""
+"""Pydantic models for the web research enrichment and assumptions layer."""
 
 from __future__ import annotations
 
@@ -7,17 +7,31 @@ from typing import Literal
 
 from pydantic import BaseModel, Field
 
-# ---------------------------------------------------------------------------
-# Type literals
-# ---------------------------------------------------------------------------
-GapClassification = Literal["estimable_numerical", "derivable_from_ratio", "non_estimable"]
-EstimationMethod = Literal["national_regional_average", "peer_city_proxy", "expert_heuristic_scaling"]
-FieldStatus = Literal["resolved", "partially_resolved", "still_missing"]
+GapClassification = Literal[
+    "estimable_numerical",
+    "derivable_from_ratio",
+    "non_estimable",
+]
+EstimationMethod = Literal[
+    "national_regional_average",
+    "peer_city_proxy",
+    "expert_heuristic_scaling",
+]
+FieldStatus = Literal[
+    "resolved",
+    "bundled_only",
+    "partially_resolved",
+    "still_missing",
+]
 FreshnessClassification = Literal["consistent", "superseded", "uncertain", "cancelled"]
-
-# ---------------------------------------------------------------------------
-# Gap Analysis models (Agent 1 output)
-# ---------------------------------------------------------------------------
+Scope = Literal[
+    "municipal",
+    "public_transport",
+    "private",
+    "mixed",
+    "unscoped",
+]
+SourceTier = Literal["tier1", "open"]
 
 
 class FieldClassification(BaseModel):
@@ -25,12 +39,14 @@ class FieldClassification(BaseModel):
     classification: GapClassification
     searchable: bool
     rationale: str
+    scope: Scope = "unscoped"
 
 
 class CityGap(BaseModel):
     city: str
     blank_fields: list[str]
     stale_flags: list[str]
+    bundled_fields: list[str] = Field(default_factory=list)
     search_priority: Literal["high", "medium", "low"]
 
 
@@ -40,9 +56,11 @@ class GapManifest(BaseModel):
     non_estimable_fields: list[str]
 
 
-# ---------------------------------------------------------------------------
-# Web Research models (Agent 3 output — Phase 2)
-# ---------------------------------------------------------------------------
+class FieldDecomposition(BaseModel):
+    """Output of Phase 0: field classification without per-city detection."""
+
+    query_fields: list[FieldClassification]
+    non_estimable_fields: list[str]
 
 
 class WebFinding(BaseModel):
@@ -51,9 +69,11 @@ class WebFinding(BaseModel):
     value: str | float | int | None
     unit: str | None = None
     source_url: str
-    source_type: str  # e.g. "operator_press_release", "government_report"
+    source_type: str
     source_date: str | None = None
     extraction_confidence: float
+    source_id: str | None = None
+    source_tier: SourceTier | None = None
 
 
 class SearchBatch(BaseModel):
@@ -66,11 +86,6 @@ class SearchBatch(BaseModel):
     priority: str
 
 
-# ---------------------------------------------------------------------------
-# Freshness models (Agent 4 output — Phase 2)
-# ---------------------------------------------------------------------------
-
-
 class FreshnessResult(BaseModel):
     city: str
     field: str
@@ -81,24 +96,17 @@ class FreshnessResult(BaseModel):
     web_source_url: str | None = None
 
 
-# ---------------------------------------------------------------------------
-# Enriched field (Agent 5 output)
-# ---------------------------------------------------------------------------
-
-
 class EnrichedField(BaseModel):
     city: str
     field: str
     status: FieldStatus
     value: str | float | int | None = None
     source: Literal["ccc", "web", "estimated", "none"] = "none"
+    source_id: str | None = None
+    source_tier: SourceTier | None = None
     provenance: dict[str, object] = Field(default_factory=dict)
     freshness_flag: str | None = None
-
-
-# ---------------------------------------------------------------------------
-# Assumptions models (Agent 6 output)
-# ---------------------------------------------------------------------------
+    scope: Scope = "unscoped"
 
 
 class EstimateRange(BaseModel):
@@ -126,12 +134,7 @@ class NonEstimableRecord(BaseModel):
     gap_description: str
     status: str = "NON_ESTIMABLE"
     explanation: str
-    recommendation: str  # Door Opener recommendation
-
-
-# ---------------------------------------------------------------------------
-# Enrichment bundle (Agent 7 output)
-# ---------------------------------------------------------------------------
+    recommendation: str
 
 
 class EnrichmentMeta(BaseModel):
@@ -156,15 +159,19 @@ class EnrichmentBundle(BaseModel):
     meta: EnrichmentMeta
 
 
-# ---------------------------------------------------------------------------
-# LLM response envelopes (parsing only)
-# ---------------------------------------------------------------------------
-
-
 class _GapManifestEnvelope(BaseModel):
     query_fields: list[FieldClassification] = Field(default_factory=list)
     city_gaps: list[CityGap] = Field(default_factory=list)
     non_estimable_fields: list[str] = Field(default_factory=list)
+
+
+class _FieldDecompositionEnvelope(BaseModel):
+    query_fields: list[FieldClassification] = Field(default_factory=list)
+    non_estimable_fields: list[str] = Field(default_factory=list)
+
+
+class _CityGapsEnvelope(BaseModel):
+    city_gaps: list[CityGap] = Field(default_factory=list)
 
 
 class _AssumptionsEnvelope(BaseModel):
@@ -177,9 +184,12 @@ __all__ = [
     "EstimationMethod",
     "FieldStatus",
     "FreshnessClassification",
+    "Scope",
+    "SourceTier",
     "FieldClassification",
     "CityGap",
     "GapManifest",
+    "FieldDecomposition",
     "WebFinding",
     "SearchBatch",
     "FreshnessResult",
@@ -190,5 +200,7 @@ __all__ = [
     "EnrichmentMeta",
     "EnrichmentBundle",
     "_GapManifestEnvelope",
+    "_FieldDecompositionEnvelope",
+    "_CityGapsEnvelope",
     "_AssumptionsEnvelope",
 ]

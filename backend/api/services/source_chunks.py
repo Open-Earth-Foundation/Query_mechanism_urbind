@@ -10,6 +10,7 @@ from backend.api.models import SourceChunkItem
 from backend.modules.markdown_researcher.services import build_markdown_chunks_for_file
 from backend.modules.vector_store.chroma_store import ChromaStore
 from backend.utils.config import AppConfig
+from backend.utils.markdown_files import list_markdown_files
 
 logger = logging.getLogger(__name__)
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
@@ -108,7 +109,7 @@ def _load_markdown_chunks(
     config: AppConfig,
     chunk_ids: list[str],
 ) -> dict[str, SourceChunkItem]:
-    """Rebuild chunks from source markdown files using run-local path hints when available."""
+    """Rebuild chunks from hinted paths, falling back to top-level markdown files."""
     chunk_paths = _load_chunk_path_hints(run_dir)
     resolved_candidate_paths = (
         _resolve_candidate_path(chunk_paths.get(chunk_id), markdown_dir)
@@ -120,7 +121,7 @@ def _load_markdown_chunks(
         if path is not None
     ]
     if not candidate_paths:
-        candidate_paths = sorted(markdown_dir.rglob("*.md"))
+        candidate_paths = list_markdown_files(markdown_dir)
 
     resolved: dict[str, SourceChunkItem] = {}
     remaining_ids = set(chunk_ids)
