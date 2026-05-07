@@ -86,6 +86,13 @@ enrichment:
   reasoning_effort: "medium"
   enabled: false
   web_research_enabled: false
+  # Two-phase gap analyst: decompose fields first, then detect per-city gaps.
+  # A future external-source stage sits between those steps but is a no-op for now.
+  use_split_gap_flow: true
+  # Search worker checks the curated tier-1 web allowlist (site:domain) before
+  # falling through to open Serper.
+  tier1_first_search: true
+  tier1_confidence_threshold: 0.6
   max_workers: 6
   max_queries_per_batch: 25
   max_total_queries_per_run: 100

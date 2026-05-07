@@ -40,9 +40,11 @@ class TestFieldClassification:
             classification="estimable_numerical",
             searchable=True,
             rationale="Concrete quantity",
+            scope="municipal",
         )
         assert fc.classification == "estimable_numerical"
         assert fc.searchable is True
+        assert fc.scope == "municipal"
 
     def test_valid_derivable(self) -> None:
         fc = FieldClassification(
@@ -71,6 +73,17 @@ class TestFieldClassification:
                 rationale="test",
             )
 
+    def test_invalid_scope_rejected(self) -> None:
+        """Field scopes are limited to writer-safe aggregation buckets."""
+        with pytest.raises(ValidationError):
+            FieldClassification(
+                field="x",
+                classification="estimable_numerical",
+                searchable=True,
+                rationale="test",
+                scope="regional",  # type: ignore[arg-type]
+            )
+
 
 # ---------------------------------------------------------------------------
 # CityGap
@@ -83,10 +96,12 @@ class TestCityGap:
             city="Dresden",
             blank_fields=["total_capex", "vehicle_count"],
             stale_flags=["timeline"],
+            bundled_fields=["fleet_capex"],
             search_priority="high",
         )
         assert cg.city == "Dresden"
         assert len(cg.blank_fields) == 2
+        assert cg.bundled_fields == ["fleet_capex"]
         assert cg.search_priority == "high"
 
     def test_invalid_priority_rejected(self) -> None:
@@ -200,7 +215,12 @@ class TestEnrichedField:
         assert ef.freshness_flag is None
 
     def test_all_statuses(self) -> None:
-        for status in ("resolved", "partially_resolved", "still_missing"):
+        for status in (
+            "resolved",
+            "bundled_only",
+            "partially_resolved",
+            "still_missing",
+        ):
             ef = EnrichedField(city="X", field="f", status=status)  # type: ignore[arg-type]
             assert ef.status == status
 
@@ -230,6 +250,22 @@ class TestAssumptionRecord:
     def test_string_ranges_allowed(self) -> None:
         er = EstimateRange(low="40M", mid="50M", high="60M")
         assert er.mid == "50M"
+
+    def test_removed_lookup_method_rejected(self) -> None:
+        """Removed source-library lookup is not a valid estimation method."""
+        removed_method = "structured" + "_lookup"
+        with pytest.raises(ValidationError):
+            AssumptionRecord(
+                city="Dresden",
+                field_name="total_capex",
+                gap_description="Missing total CAPEX for Dresden",
+                method_used=removed_method,  # type: ignore[arg-type]
+                estimate=EstimateRange(low=40_000_000, mid=50_000_000, high=60_000_000),
+                confidence="MEDIUM",
+                reference_data="Structured city lookup",
+                rationale="Removed source-library behavior",
+                basis="Structured lookup",
+            )
 
 
 # ---------------------------------------------------------------------------

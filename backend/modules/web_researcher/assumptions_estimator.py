@@ -44,35 +44,34 @@ def run_assumptions_estimator(
     national_benchmarks: list[WebFinding] | None = None,
     comparative_data: list[WebFinding] | None = None,
 ) -> tuple[list[AssumptionRecord], list[NonEstimableRecord], str | None]:
-    """Estimate values for remaining data gaps using a priority ladder.
-
-    Returns (assumptions, non_estimable_records, saturation_warning).
-    On failure returns empty lists.
-    """
-    # Determine which fields still need estimation
+    """Estimate remaining gaps with the LLM priority ladder."""
     still_missing = [f for f in enriched_fields if f.status == "still_missing"]
     partially_resolved = [f for f in enriched_fields if f.status == "partially_resolved"]
-    fields_to_estimate = still_missing + partially_resolved
+    bundled_only = [f for f in enriched_fields if f.status == "bundled_only"]
+    fields_to_estimate = still_missing + partially_resolved + bundled_only
 
     if not fields_to_estimate:
         logger.info("Assumptions estimator: no gaps to estimate.")
         return [], [], None
 
     if progress:
-        for f in fields_to_estimate:
+        for field in fields_to_estimate:
             progress.add_item(
                 "assumptions",
-                f"Gap: {f.city} / {f.field} ({f.status})",
+                f"Gap: {field.city} / {field.field} ({field.status})",
                 item_type="gap",
-                title=f"{f.city} / {f.field}",
-                metadata={"city": f.city, "field": f.field, "status": f.status},
+                title=f"{field.city} / {field.field}",
+                metadata={
+                    "city": field.city,
+                    "field": field.field,
+                    "status": field.status,
+                },
             )
         progress.add_item(
             "assumptions",
             f"{len(fields_to_estimate)} fields to estimate",
         )
 
-    # Separate non-estimable fields immediately (no LLM needed)
     non_estimable_field_names = set(gap_manifest.non_estimable_fields)
     non_estimable_records: list[NonEstimableRecord] = []
     estimable_fields: list[EnrichedField] = []
@@ -99,12 +98,12 @@ def run_assumptions_estimator(
             estimable_fields.append(field)
 
     if progress and non_estimable_records:
-        for nr in non_estimable_records:
+        for record in non_estimable_records:
             progress.add_item(
                 "assumptions",
-                f"{nr.city}: {nr.field_name} — non-estimable",
+                f"{record.city}: {record.field_name} - non-estimable",
                 item_type="field",
-                title=f"{nr.city}: {nr.field_name}",
+                title=f"{record.city}: {record.field_name}",
                 metadata={"status": "non_estimable"},
             )
 
@@ -115,38 +114,30 @@ def run_assumptions_estimator(
         )
         return [], non_estimable_records, None
 
-    # Build peer reference once — used for anchor check and both LLM passes
     peer_reference = _build_peer_reference_table(enriched_fields, estimable_fields)
-
-    # Anchor sufficiency: fields with too few peer values can't use Method B
-    # and are unlikely to produce reliable estimates.
     estimable_fields, insufficient_records = _check_anchor_sufficiency(
-        peer_reference, estimable_fields,
+        peer_reference, estimable_fields
     )
     non_estimable_records.extend(insufficient_records)
 
     if progress and insufficient_records:
-        # Group by field so progress doesn't list every city×field pair
-        _insuf_by_field: dict[str, list[str]] = defaultdict(list)
-        for nr in insufficient_records:
-            _insuf_by_field[nr.field_name].append(nr.city)
-        for field_name, cities in _insuf_by_field.items():
+        records_by_field: dict[str, list[str]] = defaultdict(list)
+        for record in insufficient_records:
+            records_by_field[record.field_name].append(record.city)
+        for field_name, cities in records_by_field.items():
             city_list = ", ".join(cities)
             progress.add_item(
                 "assumptions",
-                f"{field_name} — insufficient anchors ({len(cities)} cities: {city_list})",
+                f"{field_name} - insufficient anchors ({len(cities)} cities: {city_list})",
                 item_type="field",
                 title=field_name,
                 metadata={"status": "insufficient_anchors", "cities": cities},
             )
 
     if not estimable_fields:
-        logger.info(
-            "Assumptions estimator: all remaining gaps have insufficient anchors.",
-        )
+        logger.info("Assumptions estimator: all remaining gaps lack anchors.")
         return [], non_estimable_records, None
 
-    # Pass 1: generate estimates
     if progress:
         progress.add_item(
             "assumptions",
@@ -167,36 +158,26 @@ def run_assumptions_estimator(
     )
 
     if progress and assumptions:
-        for a in assumptions:
-            mid = a.estimate.mid if hasattr(a.estimate, "mid") else (
-                a.estimate.get("mid", "?") if isinstance(a.estimate, dict) else "?"
-            )
-            low = a.estimate.low if hasattr(a.estimate, "low") else (
-                a.estimate.get("low", "?") if isinstance(a.estimate, dict) else "?"
-            )
-            high = a.estimate.high if hasattr(a.estimate, "high") else (
-                a.estimate.get("high", "?") if isinstance(a.estimate, dict) else "?"
-            )
+        for record in assumptions:
+            mid = _estimate_value(record, "mid")
+            low = _estimate_value(record, "low")
+            high = _estimate_value(record, "high")
             progress.add_item(
                 "assumptions",
-                f"{a.city} / {a.field_name}: {mid} ({low}–{high}) "
-                f"[{a.method_used}, {a.confidence}]",
+                f"{record.city} / {record.field_name}: {mid} ({low}-{high}) "
+                f"[{record.method_used}, {record.confidence}]",
                 item_type="estimate",
-                title=f"{a.city} / {a.field_name}",
+                title=f"{record.city} / {record.field_name}",
                 metadata={
-                    "method": a.method_used,
-                    "confidence": a.confidence,
+                    "method": record.method_used,
+                    "confidence": record.confidence,
                     "mid": str(mid),
                     "low": str(low),
                     "high": str(high),
                 },
             )
-        progress.add_item(
-            "assumptions",
-            f"Pass 1 done: {len(assumptions)} estimates",
-        )
+        progress.add_item("assumptions", f"Pass 1 done: {len(assumptions)} estimates")
 
-    # Pass 2: critique and revise (capped at 1 cycle)
     if assumptions:
         if progress:
             progress.add_item("assumptions", "Reviewing estimates (critique pass)...")
@@ -217,18 +198,17 @@ def run_assumptions_estimator(
         if revised:
             assumptions = revised
             if progress:
-                for a in assumptions:
-                    mid = a.estimate.mid if hasattr(a.estimate, "mid") else (
-                        a.estimate.get("mid", "?") if isinstance(a.estimate, dict) else "?"
-                    )
+                for record in assumptions:
+                    mid = _estimate_value(record, "mid")
                     progress.add_item(
                         "assumptions",
-                        f"Revised: {a.city} / {a.field_name}: {mid} [{a.method_used}, {a.confidence}]",
+                        f"Revised: {record.city} / {record.field_name}: {mid} "
+                        f"[{record.method_used}, {record.confidence}]",
                         item_type="estimate",
-                        title=f"{a.city} / {a.field_name}",
+                        title=f"{record.city} / {record.field_name}",
                         metadata={
-                            "method": a.method_used,
-                            "confidence": a.confidence,
+                            "method": record.method_used,
+                            "confidence": record.confidence,
                             "mid": str(mid),
                             "revised": True,
                         },
@@ -238,9 +218,7 @@ def run_assumptions_estimator(
                     f"Pass 2 done: {len(assumptions)} revised estimates",
                 )
 
-    # Check for saturation warning
     saturation_warning = _check_saturation(assumptions)
-
     logger.info(
         "Assumptions estimator completed: assumptions=%d non_estimable=%d saturation=%s",
         len(assumptions),
@@ -248,6 +226,15 @@ def run_assumptions_estimator(
         saturation_warning is not None,
     )
     return assumptions, non_estimable_records, saturation_warning
+
+
+def _estimate_value(record: AssumptionRecord, key: str) -> object:
+    """Return an estimate value from either a model or dict-shaped estimate."""
+    if hasattr(record.estimate, key):
+        return getattr(record.estimate, key)
+    if isinstance(record.estimate, dict):
+        return record.estimate.get(key, "?")
+    return "?"
 
 
 def _call_estimator(
@@ -323,10 +310,11 @@ def _call_estimator(
 
 
 def _build_system_prompt(pass_name: str) -> str:
+    """Build the estimator system prompt for generation or critique."""
     base = (
         "You are an assumptions estimator for urban climate action data.\n"
         "You produce model-estimated values for missing data fields using a strict priority ladder.\n\n"
-        "PRIORITY LADDER (apply in order — use the first method that applies):\n"
+        "PRIORITY LADDER (apply in order; use the first method that applies):\n"
         "Method A (national_regional_average): City has the quantity but missing unit cost.\n"
         "  Use national/regional benchmarks from the 'National/regional benchmarks' section\n"
         "  when available. These are retrieved from real web searches, not training data.\n"
@@ -336,18 +324,18 @@ def _build_system_prompt(pass_name: str) -> str:
         "  PREFER this over Method C when the \"Peer reference data\" section contains\n"
         "  2+ resolved peer values for the target field.\n"
         "  Example: If Munich (pop 1.5M) has 280 municipal vehicles and target city\n"
-        "  has pop 250K, estimate ≈ 280 × (250K/1.5M) = ~47, adjusted for local context.\n"
+        "  has pop 250K, estimate about 280 * (250K/1.5M) = 47, adjusted for local context.\n"
         "  Confidence: MEDIUM, range: +/-25-35%.\n"
         "Method C (expert_heuristic_scaling): Use comparable same-country/region peer cities.\n"
         "  Use cross-country comparative data from the 'Cross-country comparative data' section\n"
         "  when available. These are retrieved from real web searches.\n"
         "  Minimum 3 same-country peers; if fewer, widen to same-GDP-tier (+/-30%).\n"
         "  Confidence: LOW, range: +/-40-50%.\n"
-        "If none apply → mark as non-estimable (skip, do not estimate).\n\n"
+        "If none apply, mark as non-estimable (skip, do not estimate).\n\n"
         "RULES:\n"
         "- When Peer reference data is provided, you MUST attempt Method B before falling\n"
         "  back to Method C. Cite specific peer city values and scaling ratios used.\n"
-        "- Never average across different asset types (separate reference pools).\n"
+        "- Never average across different asset types or scopes.\n"
         "- Zero-data cities get a single summary record tagged VERY_LOW.\n"
         "- Every estimate MUST be a range (low/mid/high), never a point estimate.\n"
         "- is_replaceable is always true.\n"
@@ -400,19 +388,13 @@ def _build_system_prompt(pass_name: str) -> str:
 
 
 def _build_context_summary(context_bundle: dict[str, Any]) -> dict[str, Any]:
-    """Extract a lightweight data summary from the context bundle for estimation.
-
-    The full context bundle can be 100K+ tokens (all markdown excerpts, SQL
-    results, retrieval metadata).  The estimator only needs a small fraction
-    of that — mainly data values and city metadata.
-    """
+    """Extract a lightweight data summary from the context bundle for estimation."""
     summary: dict[str, Any] = {}
 
     for key in ("research_question", "original_question", "analysis_mode", "query_mode"):
         if key in context_bundle:
             summary[key] = context_bundle[key]
 
-    # Markdown: city list + excerpt count — never the full excerpt text
     markdown = context_bundle.get("markdown")
     if isinstance(markdown, dict):
         summary["cities_inspected"] = markdown.get("inspected_city_names", [])
@@ -425,79 +407,61 @@ def _build_context_summary(context_bundle: dict[str, Any]) -> dict[str, Any]:
 def _format_national_benchmarks(
     national_benchmarks: list[WebFinding] | None,
 ) -> str:
-    """Format national/regional benchmark findings into a prompt section.
-
-    Returns an empty string if no benchmarks are available.
-    """
+    """Format national/regional benchmark findings into a prompt section."""
     if not national_benchmarks:
         return ""
 
     lines = ["National/regional benchmarks (retrieved from web search):"]
     for finding in national_benchmarks:
-        val = f"{finding.value} {finding.unit}" if finding.unit else str(finding.value)
+        value = f"{finding.value} {finding.unit}" if finding.unit else str(finding.value)
         date_part = f", {finding.source_date}" if finding.source_date else ""
-        conf = finding.extraction_confidence
         lines.append(
-            f"- {finding.field}: {finding.city} avg = {val} "
-            f"({finding.source_type}{date_part}) [conf: {conf}]"
+            f"- {finding.field}: {finding.city} avg = {value} "
+            f"({finding.source_type}{date_part}) [conf: {finding.extraction_confidence}]"
         )
 
-    lines.append("")
-    lines.append(
-        "USE for Method A when:\n"
-        "- The city reports a quantity (e.g. fleet size) but is missing the unit cost\n"
-        "- Example: Dresden has 120 electric buses (CCC) but no procurement cost\n"
-        "  → Estimate: 120 × benchmark unit cost = total (±15-20%, HIGH confidence)"
+    lines.extend(
+        [
+            "",
+            "USE for Method A when:",
+            "- The city reports a quantity but is missing the unit cost.",
+            "- Prefer exact peer-city values over national averages when available.",
+            "DO NOT use when:",
+            "- The field is qualitative or city-specific.",
+            "- Peer reference data has exact same-field values; use Method B first.",
+        ]
     )
-    lines.append("")
-    lines.append(
-        "DO NOT use when:\n"
-        "- The field is qualitative or city-specific (operator names, policy terms)\n"
-        "- The city has unusual local conditions that make national averages misleading\n"
-        "  (e.g. island logistics, extreme climate adaptation costs)\n"
-        "- Better peer city data exists in the 'Peer reference data' section\n"
-        "  (prefer Method B with exact peer values over Method A with averages)"
-    )
-
     return "\n".join(lines) + "\n"
 
 
 def _format_comparative_data(
     comparative_data: list[WebFinding] | None,
 ) -> str:
-    """Format cross-country comparative findings into a prompt section.
-
-    Returns an empty string if no comparative data is available.
-    """
+    """Format cross-country comparative findings into a prompt section."""
     if not comparative_data:
         return ""
 
     lines = ["Cross-country comparative data (retrieved from web search):"]
     for finding in comparative_data:
-        val = f"{finding.value} {finding.unit}" if finding.unit else str(finding.value)
+        value = f"{finding.value} {finding.unit}" if finding.unit else str(finding.value)
         date_part = f", {finding.source_date}" if finding.source_date else ""
-        conf = finding.extraction_confidence
         lines.append(
-            f"- {finding.field}: {finding.city} = {val} "
-            f"({finding.source_type}{date_part}) [conf: {conf}]"
+            f"- {finding.field}: {finding.city} = {value} "
+            f"({finding.source_type}{date_part}) [conf: {finding.extraction_confidence}]"
         )
 
-    lines.append("")
-    lines.append(
-        "USE for Method C when:\n"
-        "- Fewer than 3 same-country peers available, need cross-border comparison\n"
-        "- Scaling by per-capita or per-fleet-size ratios from international benchmarks\n"
-        "- Cite the specific report and normalized figure used"
+    lines.extend(
+        [
+            "",
+            "USE for Method C when:",
+            "- Fewer than 3 same-country peers are available.",
+            "- Scaling by per-capita or per-fleet-size ratios is meaningful.",
+            "DO NOT use when:",
+            "- The field requires cross-border comparison without comparable context.",
+            "- You can prefer Method B with direct peer city values.",
+            "- You can prefer Method A with a national or regional benchmark.",
+        ]
     )
-    lines.append("")
-    lines.append(
-        "DO NOT use when:\n"
-        "- Same-country peer data is available (prefer Method B)\n"
-        "- National benchmarks apply (prefer Method A)\n"
-        "- The field is not meaningfully comparable across countries\n"
-        "  (e.g. regulatory-specific costs, local subsidy structures)"
-    )
-
     return "\n".join(lines) + "\n"
 
 
@@ -512,11 +476,12 @@ def _build_user_prompt(
     national_benchmarks: list[WebFinding] | None = None,
     comparative_data: list[WebFinding] | None = None,
 ) -> str:
+    """Build the estimator user prompt from the current gap state."""
     summary = _build_context_summary(context_bundle)
     summary_json = json.dumps(summary, ensure_ascii=False, indent=2, default=str)
     gap_json = json.dumps(gap_manifest.model_dump(mode="json"), indent=2, default=str)
     fields_json = json.dumps(
-        [f.model_dump(mode="json") for f in estimable_fields],
+        [field.model_dump(mode="json") for field in estimable_fields],
         indent=2,
         default=str,
     )
@@ -527,31 +492,29 @@ def _build_user_prompt(
         f"Fields needing estimation ({len(estimable_fields)}):\n```json\n{fields_json}\n```\n",
     ]
 
-    # Insert peer reference data prominently before the context summary
     if peer_reference:
         lines = [
             "Peer reference data (resolved values from other cities for each target field):"
         ]
         for field_name, peers in peer_reference.items():
-            peer_strs = [
-                f"  {p['city']}: {p['value']} ({p['source']})" for p in peers
-            ]
             lines.append(f"- {field_name}:")
-            lines.extend(peer_strs)
-        lines.append("")
-        lines.append(
-            "Use these as peer benchmarks for Method B (peer_city_proxy). "
-            "Ratio-scale by city population or municipal fleet size rather than "
-            "using flat benchmarks."
+            lines.extend(
+                f"  {peer['city']}: {peer['value']} ({peer['source']})"
+                for peer in peers
+            )
+        lines.extend(
+            [
+                "",
+                "Use these as peer benchmarks for Method B (peer_city_proxy).",
+                "Ratio-scale by city population or municipal fleet size rather than using flat benchmarks.",
+            ]
         )
         parts.append("\n".join(lines) + "\n")
 
-    # Insert national/regional benchmarks (between peer reference and data summary)
     benchmarks_section = _format_national_benchmarks(national_benchmarks)
     if benchmarks_section:
         parts.append(benchmarks_section)
 
-    # Insert cross-country comparative data (between national benchmarks and data summary)
     comparative_section = _format_comparative_data(comparative_data)
     if comparative_section:
         parts.append(comparative_section)
@@ -560,7 +523,7 @@ def _build_user_prompt(
 
     if pass_name == "critique" and prior_estimates:
         prior_json = json.dumps(
-            [e.model_dump(mode="json") for e in prior_estimates],
+            [estimate.model_dump(mode="json") for estimate in prior_estimates],
             indent=2,
             default=str,
         )
@@ -583,14 +546,7 @@ def _check_anchor_sufficiency(
     peer_reference: dict[str, list[dict[str, object]]],
     estimable_fields: list[EnrichedField],
 ) -> tuple[list[EnrichedField], list[NonEstimableRecord]]:
-    """Split fields into estimable vs insufficient-anchor.
-
-    A field passes if it has ``_MIN_PEER_ANCHORS_METHOD_B`` (2) peers,
-    or at least one authoritative CCC-sourced peer with confidence
-    >= ``_MIN_AUTHORITATIVE_CONFIDENCE``.  Fields below that threshold
-    are routed to non-estimable with a recommendation to find additional
-    anchor data.
-    """
+    """Split fields into estimable and insufficient-anchor groups."""
     sufficient: list[EnrichedField] = []
     insufficient_records: list[NonEstimableRecord] = []
 
@@ -600,12 +556,11 @@ def _check_anchor_sufficiency(
             sufficient.append(field)
             continue
 
-        # Below Method B threshold — allow through only if at least one
-        # authoritative CCC-sourced peer has high confidence.
         authoritative_peers = [
-            p for p in peers
-            if str(p.get("source", "")).lower() == "ccc"
-            and float(p.get("confidence", 0)) >= _MIN_AUTHORITATIVE_CONFIDENCE
+            peer
+            for peer in peers
+            if str(peer.get("source", "")).lower() == "ccc"
+            and float(peer.get("confidence", 0)) >= _MIN_AUTHORITATIVE_CONFIDENCE
         ]
         if authoritative_peers:
             sufficient.append(field)
@@ -618,10 +573,9 @@ def _check_anchor_sufficiency(
                 gap_description=f"Insufficient peer anchors for {field.field}",
                 explanation=(
                     f"Only {len(peers)} peer value(s) available; "
-                    f"minimum {_MIN_PEER_ANCHORS_METHOD_B} needed for Method B "
-                    f"(peer proxy), {_MIN_PEER_ANCHORS_METHOD_C} for Method C "
-                    "(heuristic scaling), or at least 1 authoritative "
-                    f"CCC-sourced anchor with confidence >= "
+                    f"minimum {_MIN_PEER_ANCHORS_METHOD_B} needed for Method B, "
+                    f"{_MIN_PEER_ANCHORS_METHOD_C} for Method C, or at least "
+                    f"1 authoritative CCC-sourced anchor with confidence >= "
                     f"{_MIN_AUTHORITATIVE_CONFIDENCE}."
                 ),
                 recommendation=(
@@ -645,41 +599,39 @@ def _build_peer_reference_table(
     all_enriched: list[EnrichedField],
     estimable_fields: list[EnrichedField],
 ) -> dict[str, list[dict[str, object]]]:
-    """Extract resolved peer values for each field needing estimation.
-
-    Only includes peers whose extraction confidence meets
-    ``_MIN_PEER_CONFIDENCE``.  CCC-sourced data defaults to 1.0
-    confidence; web-sourced data defaults to 0.5 unless provenance
-    carries an explicit ``extraction_confidence``.
-    """
-    fields_needing_estimation = {f.field for f in estimable_fields}
+    """Extract resolved peer values for each field needing estimation."""
+    fields_needing_estimation = {field.field for field in estimable_fields}
 
     table: dict[str, list[dict[str, object]]] = {}
-    for ef in all_enriched:
+    for enriched in all_enriched:
         if (
-            ef.field in fields_needing_estimation
-            and ef.status == "resolved"
-            and ef.value is not None
+            enriched.field in fields_needing_estimation
+            and enriched.status == "resolved"
+            and enriched.value is not None
         ):
-            default_conf = 1.0 if ef.source == "ccc" else 0.5
-            confidence = float(ef.provenance.get("extraction_confidence", default_conf))
+            default_confidence = 1.0 if enriched.source == "ccc" else 0.5
+            confidence = float(
+                enriched.provenance.get("extraction_confidence", default_confidence)
+            )
             if confidence < _MIN_PEER_CONFIDENCE:
                 continue
-            table.setdefault(ef.field, []).append({
-                "city": ef.city,
-                "value": ef.value,
-                "source": ef.source,
-                "confidence": confidence,
-            })
+            table.setdefault(enriched.field, []).append(
+                {
+                    "city": enriched.city,
+                    "value": enriched.value,
+                    "source": enriched.source,
+                    "confidence": confidence,
+                }
+            )
     return table
 
 
 def _check_saturation(assumptions: list[AssumptionRecord]) -> str | None:
-    """Return a warning if >60% of estimates use Method C (expert heuristic)."""
+    """Return a warning if more than 60% of estimates use Method C."""
     if not assumptions:
         return None
     method_c_count = sum(
-        1 for a in assumptions if a.method_used == "expert_heuristic_scaling"
+        1 for record in assumptions if record.method_used == "expert_heuristic_scaling"
     )
     ratio = method_c_count / len(assumptions)
     if ratio > _METHOD_C_SATURATION_THRESHOLD:
