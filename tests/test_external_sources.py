@@ -462,7 +462,14 @@ def test_writer_context_preserves_enrichment() -> None:
     context_bundle = {
         "analysis_mode": "city_by_city",
         "markdown": {"status": "success", "excerpts": [], "excerpt_count": 0},
-        "enrichment": {"external_evidence": [{"source_id": "krakow-target"}]},
+        "enrichment": {
+            "field_manifest": {
+                "query_fields": [{"field": "target_2030", "scope": "municipal"}],
+                "non_estimable_fields": [],
+            },
+            "gap_manifest": {"city_gaps": []},
+            "external_evidence": [{"source_id": "krakow-target"}],
+        },
     }
 
     writer_context = build_writer_context_bundle(
@@ -470,6 +477,8 @@ def test_writer_context_preserves_enrichment() -> None:
         excerpts=[],
         city_names=["Krakow"],
     )
+    assert "field_manifest" in writer_context["enrichment"]
+    assert writer_context["enrichment"]["gap_manifest"] == {"city_gaps": []}
     assert writer_context["enrichment"]["external_evidence"][0]["source_id"] == "krakow-target"
 
 

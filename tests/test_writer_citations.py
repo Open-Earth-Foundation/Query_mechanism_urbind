@@ -707,6 +707,14 @@ def test_build_writer_context_bundle_keeps_only_writer_relevant_markdown_fields(
         "research_question": "Refined question",
         "analysis_mode": "aggregate",
         "final": "output/final.md",
+        "enrichment": {
+            "field_manifest": {
+                "query_fields": [{"field": "capex", "scope": "municipal"}],
+                "non_estimable_fields": [],
+            },
+            "gap_manifest": {"city_gaps": []},
+            "status": "internal bookkeeping",
+        },
         "markdown": {
             "status": "success",
             "analysis_mode": "aggregate",
@@ -745,6 +753,11 @@ def test_build_writer_context_bundle_keeps_only_writer_relevant_markdown_fields(
     assert writer_bundle["research_question"] == "Refined question"
     assert "sql" not in writer_bundle
     assert "final" not in writer_bundle
+    enrichment = writer_bundle["enrichment"]
+    assert isinstance(enrichment, dict)
+    assert enrichment["field_manifest"]["query_fields"][0]["field"] == "capex"
+    assert enrichment["gap_manifest"] == {"city_gaps": []}
+    assert "status" not in enrichment
     markdown_bundle = writer_bundle["markdown"]
     assert isinstance(markdown_bundle, dict)
     assert markdown_bundle["status"] == "success"

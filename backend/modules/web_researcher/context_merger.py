@@ -404,8 +404,23 @@ def merge_enrichment_into_context(
         meta=meta,
     )
 
-    enriched["enrichment"] = bundle.model_dump(mode="json")
+    enriched["enrichment"] = _serialize_enrichment_bundle(bundle)
     return enriched
+
+
+def _serialize_enrichment_bundle(bundle: EnrichmentBundle) -> dict[str, Any]:
+    """Return persisted enrichment payload with field metadata outside gaps."""
+    payload = bundle.model_dump(mode="json")
+    gap_payload = payload.pop("gap_manifest")
+    field_manifest = {
+        "query_fields": gap_payload.pop("query_fields", []),
+        "non_estimable_fields": gap_payload.pop("non_estimable_fields", []),
+    }
+    return {
+        "field_manifest": field_manifest,
+        "gap_manifest": gap_payload,
+        **payload,
+    }
 
 
 def serialize_enrichment_artifacts(
@@ -422,6 +437,7 @@ def serialize_enrichment_artifacts(
     enrichment_dir.mkdir(parents=True, exist_ok=True)
 
     artifact_map = {
+        "field_manifest": enrichment_data.get("field_manifest"),
         "gap_manifest": enrichment_data.get("gap_manifest"),
         "assumptions": enrichment_data.get("assumptions"),
         "non_estimable": enrichment_data.get("non_estimable"),

@@ -20,7 +20,8 @@ Input is a JSON object with:
   - may include `research_question` (str): orchestrator-refined research version of the question
 - `reconsideration` (object, optional): previous answer + missing cities (use `context_bundle` to find their excerpts)
 - `context_bundle.enrichment` (object, optional): automated gap analysis, external Markdown evidence, tier-1/open web findings, and assumption estimates
-  - `gap_manifest` (object): `query_fields[]` (each with `field`, `classification`, `searchable`, `rationale`, `scope`), `city_gaps[]` with blank/stale/bundled fields, `non_estimable_fields[]`
+  - `field_manifest` (object): field-level decomposition with `query_fields[]` (each with `field`, `classification`, `searchable`, `rationale`, `scope`) and `non_estimable_fields[]`
+  - `gap_manifest` (object): per-city gap state with `city_gaps[]` containing blank/stale/bundled fields
   - `enriched_fields` (list): per city-field entries with `status` (`resolved` | `bundled_only` | `partially_resolved` | `still_missing`), `value`, `source` (ccc | web | external_markdown | estimated | none), `source_id` (tier-1 web allowlist id when known), `source_tier` (`tier1` | `open` | null), `provenance` (may include `source_name` or external `source_id` and line range), `freshness_flag`, `scope` (`municipal` | `public_transport` | `private` | `mixed` | `unscoped`)
   - `external_evidence` (list): governed external Markdown claims with `city`, `field`, `value`, `unit`, `source_id`, `source_type`, `publication_year`, `line_start`, `line_end`, `quote`, `confidence`, `claim_role`, `source_url`
   - `external_resolutions` (list): resolver decisions with `city`, `field`, `action` (confirm | fill | conflict_review_required | unresolved), `ccc_value`, `external_value`, `source_id`, line range, quote, confidence, and rationale
@@ -162,7 +163,7 @@ Cancelled / withdrawn fields (apply BEFORE aggregation):
 - If cancellation makes a city's coverage drop to zero for the question, present the city as "lacks current commitment" rather than as a missing-data city.
 
 Scope safety (apply BEFORE any aggregation — non-negotiable):
-- Every `enriched_fields[]` entry carries a `scope` (`municipal`, `public_transport`, `private`, `mixed`, `unscoped`). Same applies to `gap_manifest.query_fields[].scope`.
+- Every `enriched_fields[]` entry carries a `scope` (`municipal`, `public_transport`, `private`, `mixed`, `unscoped`). Same applies to `field_manifest.query_fields[].scope`.
 - **Never sum or average values across different scopes into a single headline number.** Municipal-fleet CAPEX and public-transport CAPEX live on different ledgers; combining them is a structural error, not a rounding error.
 - In the cross-city synthesis section, present **per-scope subtotals** with separate labels (e.g. "Municipal fleet CAPEX: €X across N cities" and "Public transport fleet CAPEX: €Y across M cities") — not a single total.
 - A grand total is only allowed when *all contributing fields share the same scope*, OR when at least one contributing field has `scope="mixed"` and you explicitly label the aggregate as cross-scope (e.g. "Combined municipal + public transport: €Z — note: this sums two distinct ledgers").

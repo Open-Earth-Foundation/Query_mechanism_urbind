@@ -15,6 +15,7 @@ from backend.modules.writer.utils.markdown_helpers import (
 from backend.utils.tokenization import count_tokens
 
 _WRITER_ENRICHMENT_KEYS = (
+    "field_manifest",
     "gap_manifest",
     "enriched_fields",
     "external_evidence",
