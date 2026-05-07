@@ -186,7 +186,7 @@ def _extract_ccc_evidence(context_bundle: dict[str, Any]) -> dict[str, list[str]
     to ``_MAX_EXCERPT_CHARS`` and each city keeps at most
     ``_MAX_EXCERPTS_PER_CITY`` snippets so the downstream LLM prompt stays
     bounded. CCC values in this pipeline live only in markdown prose; there
-    is no structured tabular source after the SQL layer was removed.
+    is no structured tabular source in the context bundle.
     """
     evidence: dict[str, list[str]] = {}
 

@@ -367,7 +367,6 @@ def build_writer_context_bundle(
     analysis_mode = context_bundle.get("analysis_mode")
 
     writer_context: dict[str, object] = {
-        "sql": context_bundle.get("sql"),
         "research_question": context_bundle.get("research_question"),
         "analysis_mode": analysis_mode,
         "selected_cities": selected_city_names,

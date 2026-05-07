@@ -77,19 +77,6 @@ def render_writer_export_markdown(context_bundle: Mapping[str, object]) -> str:
         "",
     ]
 
-    sql_payload = writer_context_bundle.get("sql")
-    if sql_payload is not None:
-        lines.extend(
-            [
-                "## SQL Context",
-                "",
-                "```json",
-                json.dumps(sql_payload, ensure_ascii=False, indent=2),
-                "```",
-                "",
-            ]
-        )
-
     if not excerpts:
         lines.extend(
             [

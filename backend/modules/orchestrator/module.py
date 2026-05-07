@@ -658,7 +658,7 @@ def run_pipeline(
     progress.start_step("context_bundle", "Assembling context bundle")
     context_bundle = run_logger.context_bundle
     context_bundle["analysis_mode"] = analysis_mode
-    progress.add_item("context_bundle", "SQL + markdown evidence merged")
+    progress.add_item("context_bundle", "Markdown evidence merged")
     progress.complete_step("context_bundle")
 
     # --- Enrichment layer (gap analysis + web research + assumptions modelling) ---

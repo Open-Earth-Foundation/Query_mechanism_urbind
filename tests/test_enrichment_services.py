@@ -202,7 +202,7 @@ class TestComputeFieldStatuses:
 
 class TestMergeEnrichmentIntoContext:
     def test_does_not_mutate_original(self) -> None:
-        original = {"sql": None, "markdown": None}
+        original = {"markdown": None}
         manifest = _make_gap_manifest()
         enriched = merge_enrichment_into_context(
             context_bundle=original,
@@ -229,7 +229,7 @@ class TestMergeEnrichmentIntoContext:
             }]
         )
         enriched = merge_enrichment_into_context(
-            context_bundle={"sql": None},
+            context_bundle={},
             gap_manifest=manifest,
             web_findings=[],
             freshness_results=[],
@@ -271,7 +271,7 @@ class TestSerializeEnrichmentArtifacts:
             }]
         )
         enriched = merge_enrichment_into_context(
-            context_bundle={"sql": None},
+            context_bundle={},
             gap_manifest=manifest,
             web_findings=[],
             freshness_results=[],
@@ -299,7 +299,7 @@ class TestSerializeEnrichmentArtifacts:
         base_dir = run_paths.base_dir
         run_logger = RunLogger(run_paths, "test question")
 
-        serialize_enrichment_artifacts({"sql": None}, base_dir, run_logger)
+        serialize_enrichment_artifacts({}, base_dir, run_logger)
 
         enrichment_dir = base_dir / "enrichment"
         assert not enrichment_dir.exists()

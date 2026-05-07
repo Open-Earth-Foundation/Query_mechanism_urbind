@@ -24,8 +24,8 @@ class ProgressTracker:
     """Tracks pipeline step progress and flushes to disk.
 
     All public methods silently swallow exceptions so the tracker never
-    breaks the pipeline.  A threading lock protects concurrent access from
-    the SQL / markdown parallel threads.
+    breaks the pipeline. A threading lock protects concurrent access from
+    concurrent pipeline updates.
     """
 
     def __init__(self, run_dir: Path) -> None:

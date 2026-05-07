@@ -1423,7 +1423,6 @@ def test_api_writer_context_export_returns_writer_safe_json_bundle(tmp_path: Pat
         config=config,
     )
     context_bundle = {
-        "sql": {"status": "success", "rows": [{"city": "Munich"}]},
         "research_question": "What retrofit evidence was selected?",
         "analysis_mode": "aggregate",
         "selected_cities": ["munich", "leipzig"],
@@ -1479,7 +1478,7 @@ def test_api_writer_context_export_returns_writer_safe_json_bundle(tmp_path: Pat
     assert payload["research_question"] == "What retrofit evidence was selected?"
     assert payload["analysis_mode"] == "aggregate"
     assert payload["selected_cities"] == ["Munich", "Leipzig"]
-    assert payload["sql"] == {"status": "success", "rows": [{"city": "Munich"}]}
+    assert "sql" not in payload
     markdown_payload = payload["markdown"]
     assert markdown_payload["excerpt_count"] == 2
     assert markdown_payload["excerpts"][0]["ref_id"] == "ref_1"
@@ -1501,7 +1500,6 @@ def test_api_writer_context_markdown_export_remains_available(tmp_path: Path) ->
         config=config,
     )
     context_bundle = {
-        "sql": {"status": "success", "rows": [{"city": "Munich"}]},
         "research_question": "What retrofit evidence was selected?",
         "analysis_mode": "aggregate",
         "selected_cities": ["munich", "leipzig"],
@@ -1548,7 +1546,7 @@ def test_api_writer_context_markdown_export_remains_available(tmp_path: Path) ->
     assert "# Writer Context Export" in payload
     assert "- Research question: What retrofit evidence was selected?" in payload
     assert "- Selected cities: Munich, Leipzig" in payload
-    assert "## SQL Context" in payload
+    assert "## SQL Context" not in payload
     assert "## Excerpt 1 - Munich (`ref_1`)" in payload
     assert "> Munich is retrofitting schools." in payload
     assert "not sent to writer" not in payload

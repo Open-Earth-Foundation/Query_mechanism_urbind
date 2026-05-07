@@ -704,7 +704,6 @@ def test_writer_footer_does_not_mark_external_evidence_city_as_no_evidence() -> 
 
 def test_build_writer_context_bundle_keeps_only_writer_relevant_markdown_fields() -> None:
     context_bundle: dict[str, object] = {
-        "sql": None,
         "research_question": "Refined question",
         "analysis_mode": "aggregate",
         "final": "output/final.md",
@@ -744,6 +743,7 @@ def test_build_writer_context_bundle_keeps_only_writer_relevant_markdown_fields(
     )
 
     assert writer_bundle["research_question"] == "Refined question"
+    assert "sql" not in writer_bundle
     assert "final" not in writer_bundle
     markdown_bundle = writer_bundle["markdown"]
     assert isinstance(markdown_bundle, dict)
