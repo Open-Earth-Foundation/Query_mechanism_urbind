@@ -8,9 +8,11 @@ from pathlib import Path
 
 import pytest
 
+from backend.scripts.benchmark_external_source_pipeline import _score_case
 from backend.modules.web_researcher.context_merger import compute_field_statuses
 from backend.modules.web_researcher.external_agent import (
     _claim_contains_field_requirements,
+    _extract_external_ccc_values,
     build_external_source_research_agent,
 )
 from backend.modules.web_researcher.external_resolver import resolve_external_evidence
@@ -25,7 +27,11 @@ from backend.modules.web_researcher.models import (
     EvidenceCandidateInput,
     ExternalEvidenceClaim,
     ExternalEvidenceResolution,
+    FieldClassification,
+    FreshnessResult,
+    GapManifest,
     NoEvidenceRecord,
+    WebFinding,
 )
 from backend.modules.writer.utils.multi_pass import build_writer_context_bundle
 from tests.support import build_test_app_config
@@ -419,6 +425,43 @@ def test_external_resolver_covers_fill_conflict_and_unresolved() -> None:
     }
 
 
+def test_external_resolver_threads_structured_ccc_values_into_confirmations() -> None:
+    """Resolver confirmations should carry the structured CCC value when available."""
+    city_gaps = [
+        CityGap(
+            city="Krakow",
+            blank_fields=[],
+            stale_flags=["target_2030"],
+            search_priority="high",
+        )
+    ]
+    claims = [
+        ExternalEvidenceClaim(
+            city="Krakow",
+            field="target_2030",
+            value=30,
+            unit="%",
+            source_id="krakow-target",
+            source_type="city_cap",
+            line_start=2,
+            line_end=3,
+            quote="Krakow sets a local CO2 reduction target of 30% by 2030.",
+            confidence=0.9,
+            claim_role="confirms_ccc",
+        )
+    ]
+
+    resolutions = resolve_external_evidence(
+        city_gaps,
+        claims,
+        [],
+        ccc_values={("krakow", "target_2030"): "30"},
+    )
+
+    assert resolutions[0].action == "confirm"
+    assert resolutions[0].ccc_value == "30"
+
+
 def test_context_merger_overlays_external_resolutions() -> None:
     """External fill decisions become writer-visible enriched fields."""
     manifest_gap = CityGap(
@@ -455,6 +498,190 @@ def test_context_merger_overlays_external_resolutions() -> None:
     assert result[0].status == "resolved"
     assert result[0].source == "external_markdown"
     assert result[0].provenance["source_id"] == "krakow-target"
+
+
+def test_context_merger_keeps_superseded_web_value_when_external_confirm_has_no_ccc_value() -> None:
+    """External CCC confirmation must not relabel a newer web value as CCC."""
+    manifest = GapManifest(
+        query_fields=[
+            FieldClassification(
+                field="target_2030",
+                classification="estimable_numerical",
+                searchable=True,
+                rationale="Benchmark field.",
+            )
+        ],
+        city_gaps=[
+            CityGap(
+                city="Krakow",
+                blank_fields=[],
+                stale_flags=["target_2030"],
+                search_priority="high",
+            )
+        ],
+        non_estimable_fields=[],
+    )
+    web_findings = [
+        WebFinding(
+            city="Krakow",
+            field="target_2030",
+            value="55",
+            unit="%",
+            source_id="web-source",
+            source_name="Web Source",
+            source_tier="open",
+            source_type="report",
+            source_url="https://example.com/target",
+            rationale="Newer public report.",
+            extraction_confidence=0.9,
+        )
+    ]
+    freshness_results = [
+        FreshnessResult(
+            city="Krakow",
+            field="target_2030",
+            ccc_value="30",
+            web_value="55",
+            classification="superseded",
+            reason="Newer web source.",
+            web_source_url="https://example.com/target",
+        )
+    ]
+    external_resolutions = [
+        ExternalEvidenceResolution(
+            city="Krakow",
+            field="target_2030",
+            action="confirm",
+            ccc_value=None,
+            external_value="30",
+            unit="%",
+            source_id="krakow-target",
+            line_start=2,
+            line_end=3,
+            quote="Krakow sets a local CO2 reduction target of 30% by 2030.",
+            confidence=0.9,
+            rationale="External evidence confirms the CCC target.",
+        )
+    ]
+
+    result = compute_field_statuses(
+        manifest,
+        web_findings,
+        freshness_results,
+        {},
+        external_resolutions=external_resolutions,
+    )
+
+    assert result[0].status == "resolved"
+    assert result[0].value == "55"
+    assert result[0].source == "web"
+    assert result[0].freshness_flag == "superseded"
+
+
+def test_context_merger_keeps_partial_web_evidence_when_external_search_is_unresolved() -> None:
+    """No-evidence external results must not erase partially resolved freshness output."""
+    manifest = GapManifest(
+        query_fields=[
+            FieldClassification(
+                field="target_2030",
+                classification="estimable_numerical",
+                searchable=True,
+                rationale="Benchmark field.",
+            )
+        ],
+        city_gaps=[
+            CityGap(
+                city="Krakow",
+                blank_fields=[],
+                stale_flags=["target_2030"],
+                search_priority="high",
+            )
+        ],
+        non_estimable_fields=[],
+    )
+    web_findings = [
+        WebFinding(
+            city="Krakow",
+            field="target_2030",
+            value="55",
+            unit="%",
+            source_id="web-source",
+            source_name="Web Source",
+            source_tier="open",
+            source_type="report",
+            source_url="https://example.com/target",
+            rationale="Newer public report.",
+            extraction_confidence=0.9,
+        )
+    ]
+    freshness_results = [
+        FreshnessResult(
+            city="Krakow",
+            field="target_2030",
+            ccc_value="30",
+            web_value="55",
+            classification="uncertain",
+            reason="CCC phrasing is qualitative.",
+            web_source_url="https://example.com/target",
+        )
+    ]
+    external_resolutions = [
+        ExternalEvidenceResolution(
+            city="Krakow",
+            field="target_2030",
+            action="unresolved",
+            ccc_value=None,
+            external_value=None,
+            unit=None,
+            source_id=None,
+            line_start=None,
+            line_end=None,
+            quote=None,
+            confidence=None,
+            rationale="Tagged external sources were searched but no usable evidence was found.",
+        )
+    ]
+
+    result = compute_field_statuses(
+        manifest,
+        web_findings,
+        freshness_results,
+        {},
+        external_resolutions=external_resolutions,
+    )
+
+    assert result[0].status == "partially_resolved"
+    assert result[0].value == "30"
+    assert result[0].source == "ccc"
+    assert result[0].freshness_flag == "uncertain"
+
+
+def test_extract_external_ccc_values_reads_structured_context_records() -> None:
+    """Structured CCC values in enrichment context should reach the resolver."""
+    context_bundle = {
+        "enrichment": {
+            "external_ccc_context": [
+                {
+                    "city": "Krakow",
+                    "field": "target_2030",
+                    "context": "CCC target context",
+                    "ccc_value": "30",
+                }
+            ],
+            "freshness_results": [
+                {
+                    "city": "Dresden",
+                    "field": "capex",
+                    "ccc_value": "45000000",
+                }
+            ],
+        }
+    }
+
+    assert _extract_external_ccc_values(context_bundle) == {
+        ("krakow", "target_2030"): "30",
+        ("dresden", "capex"): "45000000",
+    }
 
 
 def test_writer_context_preserves_enrichment() -> None:
@@ -520,3 +747,51 @@ def test_external_claim_validation_requires_year_for_reduction_targets() -> None
     )
 
     assert _claim_contains_field_requirements(claim) is False
+
+
+def test_benchmark_score_case_uses_best_matching_claim_not_first_claim() -> None:
+    """Benchmark scoring should pass when a later claim is the correct one."""
+    case = {
+        "field": "target_2030",
+        "expected": {
+            "source_id": "right-source",
+            "value_terms": ["30"],
+            "quote_terms": ["2030"],
+        },
+    }
+    claims = [
+        ExternalEvidenceClaim(
+            city="Krakow",
+            field="target_2030",
+            value="25",
+            unit="%",
+            source_id="wrong-source",
+            source_type="city_cap",
+            line_start=1,
+            line_end=1,
+            quote="25% by 2030",
+            confidence=0.6,
+            claim_role="fills_missing",
+        ),
+        ExternalEvidenceClaim(
+            city="Krakow",
+            field="target_2030",
+            value="30",
+            unit="%",
+            source_id="right-source",
+            source_type="city_cap",
+            line_start=2,
+            line_end=2,
+            quote="30% by 2030",
+            confidence=0.9,
+            claim_role="fills_missing",
+        ),
+    ]
+
+    result = _score_case(case, claims, [])
+
+    assert result["passed"] is True
+    assert result["source_ok"] is True
+    assert result["value_ok"] is True
+    assert result["quote_ok"] is True
+    assert result["best_claim"]["source_id"] == "right-source"

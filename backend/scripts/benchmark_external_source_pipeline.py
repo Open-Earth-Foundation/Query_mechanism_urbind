@@ -290,16 +290,7 @@ def _score_case(
             "no_evidence_recorded": no_evidence_found,
         }
 
-    best_claim = field_claims[0] if field_claims else None
-    source_ok = best_claim is not None and best_claim.source_id == expected.get("source_id")
-    value_ok = best_claim is not None and _terms_present(
-        expected.get("value_terms", []),
-        f"{best_claim.value} {best_claim.unit or ''}",
-    )
-    quote_ok = best_claim is not None and _terms_present(
-        expected.get("quote_terms", []),
-        best_claim.quote,
-    )
+    best_claim, source_ok, value_ok, quote_ok = _best_claim_match(field_claims, expected)
     return {
         "field": field,
         "passed": bool(source_ok and value_ok and quote_ok),
@@ -309,6 +300,29 @@ def _score_case(
         "quote_ok": quote_ok,
         "best_claim": best_claim.model_dump(mode="json") if best_claim else None,
     }
+
+
+def _best_claim_match(
+    claims: list[ExternalEvidenceClaim],
+    expected: dict[str, Any],
+) -> tuple[ExternalEvidenceClaim | None, bool, bool, bool]:
+    """Return the claim that best matches the expected benchmark evidence."""
+    best_claim: ExternalEvidenceClaim | None = None
+    best_checks = (False, False, False)
+    best_score = (-1, -1.0)
+    for claim in claims:
+        source_ok = claim.source_id == expected.get("source_id")
+        value_ok = _terms_present(
+            expected.get("value_terms", []),
+            f"{claim.value} {claim.unit or ''}",
+        )
+        quote_ok = _terms_present(expected.get("quote_terms", []), claim.quote)
+        score = (sum((source_ok, value_ok, quote_ok)), float(claim.confidence))
+        if score > best_score:
+            best_claim = claim
+            best_checks = (source_ok, value_ok, quote_ok)
+            best_score = score
+    return best_claim, *best_checks
 
 
 def _terms_present(terms: list[str], text: str) -> bool:

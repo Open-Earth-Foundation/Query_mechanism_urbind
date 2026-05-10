@@ -200,7 +200,7 @@ def _apply_external_resolutions(
     for resolution in external_resolutions:
         key = (resolution.city.lower(), resolution.field.lower())
         current = merged[by_key[key]] if key in by_key else None
-        if resolution.action == "unresolved" and current is not None and current.status == "resolved":
+        if _should_keep_current_field(current, resolution):
             continue
         field = _field_from_external_resolution(resolution, current)
         if key in by_key:
@@ -209,6 +209,28 @@ def _apply_external_resolutions(
             by_key[key] = len(merged)
             merged.append(field)
     return merged
+
+
+def _should_keep_current_field(
+    current: EnrichedField | None,
+    resolution: ExternalEvidenceResolution,
+) -> bool:
+    """Return True when an external resolution should not replace current evidence."""
+    if current is None:
+        return False
+
+    if resolution.action == "unresolved":
+        return current.status != "still_missing"
+
+    if resolution.action != "confirm":
+        return False
+
+    if current.source == "web" or current.freshness_flag == "superseded":
+        return True
+
+    return resolution.ccc_value is None and not (
+        current.source == "ccc" and current.value is not None
+    )
 
 
 def _field_from_external_resolution(

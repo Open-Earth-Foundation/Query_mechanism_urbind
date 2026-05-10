@@ -139,10 +139,12 @@ def run_external_source_enrichment(
         if record.record_id not in existing_no_evidence_ids
     )
     deduped_claims = _dedupe_claims(all_claims)
+    ccc_values = _extract_external_ccc_values(context_bundle)
     resolutions = resolve_external_evidence(
         gap_manifest.city_gaps,
         deduped_claims,
         all_no_evidence,
+        ccc_values=ccc_values,
     )
     return deduped_claims, resolutions, all_no_evidence, session.tool_call_log()
 
@@ -513,6 +515,55 @@ def _extract_external_ccc_context(
         if city and field and context:
             indexed[(city.casefold(), field.casefold())] = context
     return indexed
+
+
+def _extract_external_ccc_values(
+    context_bundle: dict[str, Any],
+) -> dict[tuple[str, str], str | float | int | None]:
+    """Extract any structured CCC values available to the external resolver."""
+    enrichment = context_bundle.get("enrichment")
+    if not isinstance(enrichment, dict):
+        return {}
+
+    indexed: dict[tuple[str, str], str | float | int | None] = {}
+    for item in _iter_context_records(enrichment.get("external_ccc_context")):
+        ccc_value = _extract_ccc_value(item)
+        if ccc_value is not None:
+            _index_ccc_value(indexed, item, ccc_value)
+
+    for item in _iter_context_records(enrichment.get("freshness_results")):
+        ccc_value = item.get("ccc_value")
+        if ccc_value is not None:
+            _index_ccc_value(indexed, item, ccc_value)
+    return indexed
+
+
+def _iter_context_records(value: object) -> list[dict[str, Any]]:
+    """Return dictionary records from a list-like context payload."""
+    if not isinstance(value, list):
+        return []
+    return [item for item in value if isinstance(item, dict)]
+
+
+def _extract_ccc_value(item: dict[str, Any]) -> str | float | int | None:
+    """Read the first structured CCC value field present in a context record."""
+    for key in ("ccc_value", "value", "ccc_value_extracted", "known_value"):
+        value = item.get(key)
+        if value is not None:
+            return value
+    return None
+
+
+def _index_ccc_value(
+    indexed: dict[tuple[str, str], str | float | int | None],
+    item: dict[str, Any],
+    ccc_value: str | float | int | None,
+) -> None:
+    """Store a structured CCC value when the record has a city-field key."""
+    city = str(item.get("city", "")).strip()
+    field = str(item.get("field", "")).strip()
+    if city and field:
+        indexed[(city.casefold(), field.casefold())] = ccc_value
 
 
 def _validated_claims(
