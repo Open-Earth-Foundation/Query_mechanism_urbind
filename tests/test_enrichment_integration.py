@@ -57,8 +57,6 @@ class TestEnrichmentConfig:
             "\n".join([
                 "orchestrator:",
                 "  model: test-model",
-                "sql_researcher:",
-                "  model: test-model",
                 "markdown_researcher:",
                 "  model: test-model",
                 "  chunk_overlap_tokens: 2000",
@@ -97,8 +95,6 @@ class TestEnrichmentConfig:
         config_path.write_text(
             "\n".join([
                 "orchestrator:",
-                "  model: test-model",
-                "sql_researcher:",
                 "  model: test-model",
                 "markdown_researcher:",
                 "  model: test-model",
@@ -203,7 +199,6 @@ class TestEnrichmentPipeline:
         run_paths = create_run_paths(tmp_path, "run_test", "context_bundle.json")
         run_logger = RunLogger(run_paths, "What is the total CAPEX for Dresden?")
         context_bundle = {
-            "sql": None,
             "markdown": {"status": "success", "excerpts": []},
             "research_question": "What is the total CAPEX for Dresden?",
         }
@@ -276,7 +271,7 @@ class TestEnrichmentPipeline:
         )
         run_paths = create_run_paths(tmp_path, "run_fallback", "context_bundle.json")
         run_logger = RunLogger(run_paths, "test question")
-        context_bundle = {"sql": None, "markdown": None, "marker": "original"}
+        context_bundle = {"markdown": None, "marker": "original"}
 
         with patch("backend.modules.web_researcher.gap_analysis.OpenAI") as mock_cls:
             mock_client = MagicMock()
@@ -303,7 +298,7 @@ class TestEnrichmentPipeline:
         )
         run_paths = create_run_paths(tmp_path, "run_no_gaps", "context_bundle.json")
         run_logger = RunLogger(run_paths, "test question")
-        context_bundle = {"sql": None, "markdown": None}
+        context_bundle = {"markdown": None}
 
         empty_manifest = {
             "query_fields": [],

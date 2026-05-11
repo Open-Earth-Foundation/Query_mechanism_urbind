@@ -19,7 +19,7 @@ from backend.modules.web_researcher.context_merger import (
     merge_enrichment_into_context,
     serialize_enrichment_artifacts,
 )
-from backend.modules.web_researcher.external_sources import run_external_source_stage
+from backend.modules.web_researcher.external_agent import run_external_source_enrichment
 from backend.modules.web_researcher.freshness import check_freshness
 from backend.modules.web_researcher.gap_analysis import (
     decompose_fields,
@@ -65,7 +65,6 @@ def run_enrichment_pipeline(
                     f"{len(decomposition.query_fields)} fields decomposed",
                 )
 
-            run_external_source_stage(decomposition, context_bundle)
             gap_manifest = detect_city_gaps(
                 question, decomposition, context_bundle, config, api_key
             )
@@ -140,6 +139,43 @@ def run_enrichment_pipeline(
         freshness_results = []
         national_findings = []
         comparative_findings = []
+        external_evidence = []
+        external_resolutions = []
+        external_no_evidence = []
+
+        # Governed external Markdown search runs by default when tagged sources exist.
+        if config.enrichment.external_source_search_enabled and gap_manifest.city_gaps:
+            if progress:
+                progress.start_step("external_sources", "Searching tagged external sources")
+                progress.add_item("external_sources", "Running governed Markdown search...")
+            external_evidence, external_resolutions, external_no_evidence, _tool_calls = (
+                run_external_source_enrichment(
+                    question=question,
+                    context_bundle=context_bundle,
+                    gap_manifest=gap_manifest,
+                    base_dir=base_dir,
+                    config=config,
+                    api_key=api_key,
+                    run_id=base_dir.name,
+                )
+            )
+            if progress:
+                progress.add_item(
+                    "external_sources",
+                    f"{len(external_evidence)} external evidence claims",
+                )
+                if external_no_evidence:
+                    progress.add_item(
+                        "external_sources",
+                        f"{len(external_no_evidence)} no-evidence records",
+                    )
+                progress.complete_step("external_sources")
+            logger.info(
+                "External source search complete: claims=%d resolutions=%d no_evidence=%d",
+                len(external_evidence),
+                len(external_resolutions),
+                len(external_no_evidence),
+            )
 
         if config.enrichment.web_research_enabled and gap_manifest.city_gaps:
             if progress:
@@ -249,7 +285,11 @@ def run_enrichment_pipeline(
                 progress.complete_step("web_research", status="skipped")
 
         enriched_fields = compute_field_statuses(
-            gap_manifest, web_findings, freshness_results, context_bundle
+            gap_manifest,
+            web_findings,
+            freshness_results,
+            context_bundle,
+            external_resolutions=external_resolutions,
         )
 
         if progress:
@@ -290,6 +330,9 @@ def run_enrichment_pipeline(
             gap_manifest=gap_manifest,
             web_findings=web_findings,
             freshness_results=freshness_results,
+            external_evidence=external_evidence,
+            external_resolutions=external_resolutions,
+            external_no_evidence=external_no_evidence,
             assumptions=assumptions,
             non_estimable=non_estimable,
             saturation_warning=saturation_warning,
@@ -306,6 +349,7 @@ def run_enrichment_pipeline(
                 "status": "completed",
                 "total_gaps": len(gap_manifest.city_gaps),
                 "web_findings": len(web_findings),
+                "external_evidence": len(external_evidence),
                 "assumptions_produced": len(assumptions),
                 "non_estimable_flagged": len(non_estimable),
                 "elapsed_seconds": round(elapsed, 2),

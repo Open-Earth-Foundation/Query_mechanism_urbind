@@ -58,8 +58,8 @@ flags of `uncertain` for 7/8 cities (Munich is the only
 `consistent/uncertain mix`). Web findings are not being classified as
 `consistent` or `superseded` very often.
 
-**Status.** Expected, not a bug. After the SQL layer was removed, CCC
-values live only in markdown prose. When the freshness LLM reads a
+**Status.** Expected, not a bug. CCC values live only in markdown prose.
+When the freshness LLM reads a
 qualitative sentence like *"Dresden includes city council vehicles, city
 logistics, bicycle couriers, buses, taxis, and delivery vehicles in its
 electrification-oriented mobility measures"*, there is no numeric anchor to

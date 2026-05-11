@@ -13,8 +13,11 @@ from backend.modules.web_researcher.models import (
     EnrichedField,
     EnrichmentBundle,
     EnrichmentMeta,
+    ExternalEvidenceClaim,
+    ExternalEvidenceResolution,
     FreshnessResult,
     GapManifest,
+    NoEvidenceRecord,
     NonEstimableRecord,
     WebFinding,
 )
@@ -70,6 +73,7 @@ def compute_field_statuses(
     web_findings: list[WebFinding],
     freshness_results: list[FreshnessResult],
     context_bundle: dict[str, Any],
+    external_resolutions: list[ExternalEvidenceResolution] | None = None,
 ) -> list[EnrichedField]:
     """Determine city-field statuses after web research."""
     web_index: dict[tuple[str, str], WebFinding] = {}
@@ -84,7 +88,10 @@ def compute_field_statuses(
         freshness_index[(result.city.lower(), result.field.lower())] = result
 
     source_name_index = _build_source_name_index()
-    scope_by_field = {field.field.lower(): field.scope for field in gap_manifest.query_fields}
+    scope_by_field = {
+        field.field.lower(): field.scope
+        for field in getattr(gap_manifest, "query_fields", [])
+    }
     enriched_fields: list[EnrichedField] = []
 
     for city_gap in gap_manifest.city_gaps:
@@ -168,12 +175,123 @@ def compute_field_statuses(
                     )
                 )
 
-    return [
+    scoped_fields = [
         enriched.model_copy(
             update={"scope": scope_by_field.get(enriched.field.lower(), "unscoped")}
         )
         for enriched in enriched_fields
     ]
+    return _apply_external_resolutions(scoped_fields, external_resolutions or [])
+
+
+def _apply_external_resolutions(
+    enriched_fields: list[EnrichedField],
+    external_resolutions: list[ExternalEvidenceResolution],
+) -> list[EnrichedField]:
+    """Overlay external Markdown resolver decisions on enriched field statuses."""
+    if not external_resolutions:
+        return enriched_fields
+
+    by_key = {
+        (field.city.lower(), field.field.lower()): index
+        for index, field in enumerate(enriched_fields)
+    }
+    merged = list(enriched_fields)
+    for resolution in external_resolutions:
+        key = (resolution.city.lower(), resolution.field.lower())
+        current = merged[by_key[key]] if key in by_key else None
+        if _should_keep_current_field(current, resolution):
+            continue
+        field = _field_from_external_resolution(resolution, current)
+        if key in by_key:
+            merged[by_key[key]] = field
+        else:
+            by_key[key] = len(merged)
+            merged.append(field)
+    return merged
+
+
+def _should_keep_current_field(
+    current: EnrichedField | None,
+    resolution: ExternalEvidenceResolution,
+) -> bool:
+    """Return True when an external resolution should not replace current evidence."""
+    if current is None:
+        return False
+
+    if resolution.action == "unresolved":
+        return current.status != "still_missing"
+
+    if resolution.action != "confirm":
+        return False
+
+    if current.source == "web" or current.freshness_flag == "superseded":
+        return True
+
+    return resolution.ccc_value is None and not (
+        current.source == "ccc" and current.value is not None
+    )
+
+
+def _field_from_external_resolution(
+    resolution: ExternalEvidenceResolution,
+    current: EnrichedField | None,
+) -> EnrichedField:
+    """Build an enriched field from one external resolver decision."""
+    if resolution.action == "unresolved":
+        scope = current.scope if current is not None else "unscoped"
+        return EnrichedField(
+            city=resolution.city,
+            field=resolution.field,
+            status="still_missing",
+            source="none",
+            provenance={"external_resolution": resolution.rationale},
+            scope=scope,
+        )
+
+    scope = current.scope if current is not None else "unscoped"
+    provenance = {
+        "external_resolution_action": resolution.action,
+        "source_id": resolution.source_id,
+        "line_start": resolution.line_start,
+        "line_end": resolution.line_end,
+        "quote": resolution.quote,
+        "confidence": resolution.confidence,
+        "rationale": resolution.rationale,
+    }
+    if resolution.action == "conflict_review_required":
+        return EnrichedField(
+            city=resolution.city,
+            field=resolution.field,
+            status="partially_resolved",
+            value=resolution.external_value,
+            source="external_markdown",
+            provenance={**provenance, "ccc_value": resolution.ccc_value},
+            freshness_flag="conflict_review_required",
+            scope=scope,
+        )
+
+    source = "ccc" if resolution.action == "confirm" else "external_markdown"
+    if resolution.action == "confirm":
+        value = resolution.ccc_value
+        if value is None and current is not None:
+            value = current.value
+        if value is None:
+            value = resolution.external_value
+    else:
+        value = resolution.external_value
+    if value is None and current is not None:
+        value = current.value
+    return EnrichedField(
+        city=resolution.city,
+        field=resolution.field,
+        status="resolved",
+        value=value,
+        source=source,
+        provenance=provenance,
+        freshness_flag=resolution.action,
+        scope=scope,
+    )
 
 
 def _field_from_freshness(
@@ -263,6 +381,9 @@ def merge_enrichment_into_context(
     config_model: str,
     assumptions_model: str,
     elapsed_seconds: float,
+    external_evidence: list[ExternalEvidenceClaim] | None = None,
+    external_resolutions: list[ExternalEvidenceResolution] | None = None,
+    external_no_evidence: list[NoEvidenceRecord] | None = None,
 ) -> dict[str, Any]:
     """Create a new context bundle with enrichment data merged in."""
     enriched = deepcopy(context_bundle)
@@ -279,17 +400,25 @@ def merge_enrichment_into_context(
         estimable_count=max(0, total_gaps - len(gap_manifest.non_estimable_fields)),
         non_estimable_count=len(gap_manifest.non_estimable_fields),
         web_findings_count=len(web_findings),
+        external_evidence_count=len(external_evidence or []),
         elapsed_seconds=elapsed_seconds,
     )
 
     enriched_fields = compute_field_statuses(
-        gap_manifest, web_findings, freshness_results, context_bundle
+        gap_manifest,
+        web_findings,
+        freshness_results,
+        context_bundle,
+        external_resolutions=external_resolutions,
     )
 
     bundle = EnrichmentBundle(
         gap_manifest=gap_manifest,
         enriched_fields=enriched_fields,
         web_findings=web_findings,
+        external_evidence=external_evidence or [],
+        external_resolutions=external_resolutions or [],
+        external_no_evidence=external_no_evidence or [],
         freshness_results=freshness_results,
         assumptions=assumptions,
         non_estimable=non_estimable,
@@ -297,8 +426,23 @@ def merge_enrichment_into_context(
         meta=meta,
     )
 
-    enriched["enrichment"] = bundle.model_dump(mode="json")
+    enriched["enrichment"] = _serialize_enrichment_bundle(bundle)
     return enriched
+
+
+def _serialize_enrichment_bundle(bundle: EnrichmentBundle) -> dict[str, Any]:
+    """Return persisted enrichment payload with field metadata outside gaps."""
+    payload = bundle.model_dump(mode="json")
+    gap_payload = payload.pop("gap_manifest")
+    field_manifest = {
+        "query_fields": gap_payload.pop("query_fields", []),
+        "non_estimable_fields": gap_payload.pop("non_estimable_fields", []),
+    }
+    return {
+        "field_manifest": field_manifest,
+        "gap_manifest": gap_payload,
+        **payload,
+    }
 
 
 def serialize_enrichment_artifacts(
@@ -315,6 +459,7 @@ def serialize_enrichment_artifacts(
     enrichment_dir.mkdir(parents=True, exist_ok=True)
 
     artifact_map = {
+        "field_manifest": enrichment_data.get("field_manifest"),
         "gap_manifest": enrichment_data.get("gap_manifest"),
         "assumptions": enrichment_data.get("assumptions"),
         "non_estimable": enrichment_data.get("non_estimable"),
@@ -324,6 +469,18 @@ def serialize_enrichment_artifacts(
     web_findings = enrichment_data.get("web_findings", [])
     if web_findings:
         artifact_map["web_findings"] = web_findings
+
+    external_evidence = enrichment_data.get("external_evidence", [])
+    if external_evidence:
+        artifact_map["external_evidence"] = external_evidence
+
+    external_resolutions = enrichment_data.get("external_resolutions", [])
+    if external_resolutions:
+        artifact_map["external_resolutions"] = external_resolutions
+
+    external_no_evidence = enrichment_data.get("external_no_evidence", [])
+    if external_no_evidence:
+        artifact_map["external_no_evidence"] = external_no_evidence
 
     freshness_results = enrichment_data.get("freshness_results", [])
     if freshness_results:

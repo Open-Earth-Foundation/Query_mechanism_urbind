@@ -98,6 +98,8 @@ class EnrichmentConfig(AgentConfig):
     """Config for web research enrichment and assumptions modelling layer."""
 
     enabled: bool = False
+    external_source_search_enabled: bool = True
+    external_source_dir: Path = Field(default_factory=lambda: Path("documents/source_library"))
     # Use the two-phase gap analyst (decompose -> external-source hook -> detect)
     # instead of the legacy single-pass run_gap_analysis.  Disabled by
     # default so existing pipelines keep their current behaviour until
@@ -120,6 +122,16 @@ class EnrichmentConfig(AgentConfig):
     max_pages_per_deep_dive: int = 10
     freshness_threshold_days: int = 730
     max_fields_per_query: int = 20
+    max_external_sources_per_search: int = 50
+    max_external_matches_per_search: int = 100
+    max_external_regex_searches_per_field: int = 5
+    external_default_context_words: int = 80
+    external_max_context_words: int = 250
+    external_default_context_lines: int = 2
+    external_max_context_lines: int = 10
+    external_max_expand_hits_per_call: int = 3
+    external_max_snippet_chars: int = 4000
+    external_max_pattern_chars: int = 300
     # Assumptions estimator sub-config
     assumptions_estimator_model: str = ""  # empty = same as self.model
     assumptions_estimator_temperature: float = 0.0
@@ -233,6 +245,8 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
     openrouter_base_url = os.getenv("OPENROUTER_BASE_URL")
     enrichment_enabled = os.getenv("ENRICHMENT_ENABLED")
     web_research_enabled = os.getenv("WEB_RESEARCH_ENABLED")
+    external_source_search_enabled = os.getenv("EXTERNAL_SOURCE_SEARCH_ENABLED")
+    external_source_dir = os.getenv("EXTERNAL_SOURCE_DIR")
     vector_store_enabled = os.getenv("VECTOR_STORE_ENABLED")
     chroma_persist_path = os.getenv("CHROMA_PERSIST_PATH")
     chroma_collection_name = os.getenv("CHROMA_COLLECTION_NAME")
@@ -251,6 +265,12 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
         parsed = _parse_env_bool(web_research_enabled)
         if parsed is not None:
             config.enrichment.web_research_enabled = parsed
+    if external_source_search_enabled is not None:
+        parsed = _parse_env_bool(external_source_search_enabled)
+        if parsed is not None:
+            config.enrichment.external_source_search_enabled = parsed
+    if external_source_dir:
+        config.enrichment.external_source_dir = Path(external_source_dir)
     if vector_store_enabled is not None:
         parsed = _parse_env_bool(vector_store_enabled)
         if parsed is not None:

@@ -202,7 +202,7 @@ class TestComputeFieldStatuses:
 
 class TestMergeEnrichmentIntoContext:
     def test_does_not_mutate_original(self) -> None:
-        original = {"sql": None, "markdown": None}
+        original = {"markdown": None}
         manifest = _make_gap_manifest()
         enriched = merge_enrichment_into_context(
             context_bundle=original,
@@ -229,7 +229,7 @@ class TestMergeEnrichmentIntoContext:
             }]
         )
         enriched = merge_enrichment_into_context(
-            context_bundle={"sql": None},
+            context_bundle={},
             gap_manifest=manifest,
             web_findings=[],
             freshness_results=[],
@@ -242,9 +242,15 @@ class TestMergeEnrichmentIntoContext:
         )
         e = enriched["enrichment"]
         assert "gap_manifest" in e
+        assert "field_manifest" in e
         assert "enriched_fields" in e
         assert "assumptions" in e
         assert "non_estimable" in e
+        assert "query_fields" in e["field_manifest"]
+        assert "non_estimable_fields" in e["field_manifest"]
+        assert "query_fields" not in e["gap_manifest"]
+        assert "non_estimable_fields" not in e["gap_manifest"]
+        assert list(e["gap_manifest"]) == ["city_gaps"]
         assert "meta" in e
         assert e["meta"]["gap_analyst_model"] == "test-model"
         assert e["meta"]["elapsed_seconds"] == 2.5
@@ -271,7 +277,7 @@ class TestSerializeEnrichmentArtifacts:
             }]
         )
         enriched = merge_enrichment_into_context(
-            context_bundle={"sql": None},
+            context_bundle={},
             gap_manifest=manifest,
             web_findings=[],
             freshness_results=[],
@@ -287,6 +293,7 @@ class TestSerializeEnrichmentArtifacts:
 
         enrichment_dir = base_dir / "enrichment"
         assert enrichment_dir.exists()
+        assert (enrichment_dir / "field_manifest.json").exists()
         assert (enrichment_dir / "gap_manifest.json").exists()
         assert (enrichment_dir / "assumptions.json").exists()
         assert (enrichment_dir / "non_estimable.json").exists()
@@ -299,7 +306,7 @@ class TestSerializeEnrichmentArtifacts:
         base_dir = run_paths.base_dir
         run_logger = RunLogger(run_paths, "test question")
 
-        serialize_enrichment_artifacts({"sql": None}, base_dir, run_logger)
+        serialize_enrichment_artifacts({}, base_dir, run_logger)
 
         enrichment_dir = base_dir / "enrichment"
         assert not enrichment_dir.exists()

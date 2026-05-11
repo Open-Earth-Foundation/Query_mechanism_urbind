@@ -77,6 +77,13 @@ def build_test_app_config(
         update={"use_split_gap_flow": False, "tier1_first_search": False}
     )
     config.enrichment = _apply_overrides(config.enrichment, enrichment_overrides)
+    if (
+        not enrichment_overrides
+        or "external_source_search_enabled" not in enrichment_overrides
+    ):
+        config.enrichment = config.enrichment.model_copy(
+            update={"external_source_search_enabled": False}
+        )
     config.retry = _apply_overrides(config.retry, retry_overrides)
     config.vector_store = _apply_overrides(config.vector_store, vector_store_overrides)
     if vector_store is not None:

@@ -1,0 +1,685 @@
+﻿sources:
+  - source_id: klimastadtvertrag-action-plan
+    title: Aachen Klimastadtvertrag Action Plan
+    upstream_group: tier_1_city_plans
+    geographic_scope: city
+    city: [Aachen]
+    country: [Germany]
+    publication_year: 2024
+    description: Aachen Climate City Contract action plan covering climate-neutral city measures, governance, mobility, energy, and built environment actions.
+    source_type: city_cap
+    publisher: City of Aachen
+    verticals: [mobility, energy, built_environment, governance]
+    tef_sectors: [transport, energy, buildings]
+    tef_transitions: []
+
+  - source_id: strategie-elektromobilitaet
+    title: Aachen Strategie Elektromobilitaet
+    upstream_group: tier_1_city_plans
+    geographic_scope: city
+    city: [Aachen]
+    country: [Germany]
+    publication_year: null
+    description: Aachen electromobility strategy focused on local electric mobility, charging infrastructure, and transport transition planning.
+    source_type: mobility_plan
+    publisher: City of Aachen
+    verticals: [mobility]
+    tef_sectors: [transport]
+    tef_transitions: [vehicle_electrification, charging_infrastructure]
+
+  - source_id: integriertes-energie-klimaschutzkonzept
+    title: Dresden Integriertes Energie- und Klimaschutzkonzept
+    upstream_group: tier_1_city_plans
+    geographic_scope: city
+    city: [Dresden]
+    country: [Germany]
+    publication_year: 2024
+    description: Dresden integrated energy and climate protection concept with city climate, energy, buildings, and transport measures.
+    source_type: city_cap
+    publisher: Landeshauptstadt Dresden
+    verticals: [energy, mobility, built_environment, governance]
+    tef_sectors: [energy, transport, buildings]
+    tef_transitions: []
+
+  - source_id: potenzialstudie-elektromobilitaet
+    title: Dresden Potenzialstudie Elektromobilitaet
+    upstream_group: tier_1_city_plans
+    geographic_scope: city
+    city: [Dresden]
+    country: [Germany]
+    publication_year: null
+    description: Dresden electromobility potential study covering EV uptake, charging infrastructure, and local mobility transition potential.
+    source_type: city_study
+    publisher: Landeshauptstadt Dresden
+    verticals: [mobility]
+    tef_sectors: [transport]
+    tef_transitions: [vehicle_electrification, charging_infrastructure]
+
+  - source_id: smart-city-klimastrategie
+    title: Klagenfurt Smart City Klimastrategie
+    upstream_group: tier_1_city_plans
+    geographic_scope: city
+    city: [Klagenfurt]
+    country: [Austria]
+    publication_year: 2025
+    description: Klagenfurt smart city climate strategy covering climate neutrality, mobility, energy, buildings, adaptation, and governance measures.
+    source_type: city_cap
+    publisher: City of Klagenfurt
+    verticals: [mobility, energy, built_environment, adaptation, governance]
+    tef_sectors: [transport, energy, buildings]
+    tef_transitions: []
+
+  - source_id: eksp-2030
+    title: Leipzig Energie- und Klimaschutzprogramm 2030
+    upstream_group: tier_1_city_plans
+    geographic_scope: city
+    city: [Leipzig]
+    country: [Germany]
+    publication_year: null
+    description: Leipzig energy and climate protection programme through 2030 covering city energy, climate, buildings, and transport actions.
+    source_type: city_cap
+    publisher: City of Leipzig
+    verticals: [energy, mobility, built_environment, governance]
+    tef_sectors: [energy, transport, buildings]
+    tef_transitions: []
+
+  - source_id: mobilitaetsstrategie-2035
+    title: Munich Mobilitaetsstrategie 2035
+    upstream_group: tier_1_city_plans
+    geographic_scope: city
+    city: [Munich]
+    country: [Germany]
+    publication_year: null
+    description: Munich mobility strategy through 2035 covering modal shift, public transport, active mobility, low-emission travel, and climate-neutral transport.
+    source_type: mobility_plan
+    publisher: City of Munich
+    verticals: [mobility]
+    tef_sectors: [transport]
+    tef_transitions: [public_transport, modal_shift, vehicle_electrification, charging_infrastructure]
+
+  - source_id: muenchen-elektrisiert-ffe-studie
+    title: Muenchen elektrisiert FfE Studie
+    upstream_group: tier_1_city_plans
+    geographic_scope: city
+    city: [Munich]
+    country: [Germany]
+    publication_year: null
+    description: Munich-focused electrification study covering electric mobility charging behavior, grid impacts, and charging infrastructure planning.
+    source_type: city_study
+    publisher: FfE
+    verticals: [mobility, energy]
+    tef_sectors: [transport, energy]
+    tef_transitions: [vehicle_electrification, charging_infrastructure]
+
+  - source_id: bafa-umweltbonus-zwischenbilanz
+    title: BAFA Umweltbonus Zwischenbilanz
+    upstream_group: tier_2_national_datasets
+    geographic_scope: national
+    city: [Aachen, Dresden, Heidelberg, Leipzig, Mannheim, Munich, Munster]
+    country: [Germany]
+    publication_year: null
+    description: German EV subsidy programme statistics and interim balances for electric vehicle uptake.
+    source_type: national_dataset
+    publisher: BAFA
+    verticals: [mobility, finance]
+    tef_sectors: [transport]
+    tef_transitions: [vehicle_electrification]
+
+  - source_id: kba-elektromobilitaet-in-deutschland
+    title: KBA Elektromobilitaet in Deutschland
+    upstream_group: tier_2_national_datasets
+    geographic_scope: national
+    city: [Aachen, Dresden, Heidelberg, Leipzig, Mannheim, Munich, Munster]
+    country: [Germany]
+    publication_year: null
+    description: German vehicle registration analysis for electric mobility and regional EV market development.
+    source_type: national_dataset
+    publisher: KBA
+    verticals: [mobility]
+    tef_sectors: [transport]
+    tef_transitions: [vehicle_electrification]
+
+  - source_id: masterplan-ladeinfrastruktur-II
+    title: Masterplan Ladeinfrastruktur II
+    upstream_group: tier_2_national_datasets
+    geographic_scope: national
+    city: [Aachen, Dresden, Heidelberg, Leipzig, Mannheim, Munich, Munster]
+    country: [Germany]
+    publication_year: 2022
+    description: German federal charging infrastructure masterplan covering public charging rollout, regulatory actions, grid coordination, and 2030 charging goals.
+    source_type: national_policy
+    publisher: German Federal Government
+    verticals: [mobility, energy]
+    tef_sectors: [transport, energy]
+    tef_transitions: [charging_infrastructure, vehicle_electrification]
+
+  - source_id: now-ladeinfrastruktur-studie-2024
+    title: NOW GmbH Ladeinfrastruktur Studie 2024
+    upstream_group: tier_2_national_datasets
+    geographic_scope: national
+    city: [Aachen, Dresden, Heidelberg, Leipzig, Mannheim, Munich, Munster]
+    country: [Germany]
+    publication_year: 2024
+    description: German charging infrastructure study with post-2025 and 2030 market ramp-up scenarios and charging demand projections.
+    source_type: national_study
+    publisher: NOW GmbH
+    verticals: [mobility, energy]
+    tef_sectors: [transport, energy]
+    tef_transitions: [charging_infrastructure]
+
+  - source_id: acea-charging-ahead-2024
+    title: ACEA Charging Ahead 2024
+    upstream_group: tier_3_european_databases
+    geographic_scope: european
+    city: []
+    country: []
+    publication_year: 2024
+    description: European charging infrastructure rollout analysis covering public charging availability, AFIR needs, and EV market context.
+    source_type: european_study
+    publisher: ACEA
+    verticals: [mobility]
+    tef_sectors: [transport]
+    tef_transitions: [charging_infrastructure, vehicle_electrification]
+
+  - source_id: icct-ev-uptake-eu-cities-2021
+    title: ICCT EV Uptake in European Cities 2021
+    upstream_group: tier_3_european_databases
+    geographic_scope: european
+    city: []
+    country: []
+    publication_year: 2021
+    description: ICCT city-level analysis of electric vehicle uptake in European metropolitan regions.
+    source_type: european_database
+    publisher: ICCT
+    verticals: [mobility]
+    tef_sectors: [transport]
+    tef_transitions: [vehicle_electrification]
+
+  - source_id: icct-planning-zezs-2023
+    title: ICCT Planning and Implementation of Zero-Emission Zones 2023
+    upstream_group: tier_3_european_databases
+    geographic_scope: european
+    city: []
+    country: []
+    publication_year: 2023
+    description: ICCT study on city low-emission and zero-emission zone planning, implementation choices, and policy design.
+    source_type: european_study
+    publisher: ICCT
+    verticals: [mobility, governance]
+    tef_sectors: [transport]
+    tef_transitions: [zero_emission_zones]
+
+  - source_id: rmi-x-change-cars-2023
+    title: RMI X-Change Cars 2023
+    upstream_group: tier_3_european_databases
+    geographic_scope: global
+    city: []
+    country: []
+    publication_year: 2023
+    description: Global S-curve analysis of electric vehicle adoption, internal combustion vehicle decline, and passenger car transition dynamics.
+    source_type: global_study
+    publisher: RMI
+    verticals: [mobility]
+    tef_sectors: [transport]
+    tef_transitions: [vehicle_electrification]
+
+  - source_id: agora-stadt-land-ladefluss-2023
+    title: Agora Verkehrswende Stadt Land Ladefluss 2023
+    upstream_group: tier_4_think_tanks
+    geographic_scope: national
+    city: [Aachen, Dresden, Heidelberg, Leipzig, Mannheim, Munich, Munster]
+    country: [Germany]
+    publication_year: 2023
+    description: Think-tank guidance on municipal and regional charging infrastructure rollout in Germany.
+    source_type: think_tank_report
+    publisher: Agora Verkehrswende
+    verticals: [mobility]
+    tef_sectors: [transport]
+    tef_transitions: [charging_infrastructure]
+
+  - source_id: oeko-institut-elv-live-elektrifizierung-lkw
+    title: Oeko-Institut ELV-LIVE Elektrifizierung Lkw
+    upstream_group: tier_4_think_tanks
+    geographic_scope: national
+    city: [Aachen, Dresden, Heidelberg, Leipzig, Mannheim, Munich, Munster]
+    country: [Germany]
+    publication_year: null
+    description: Oeko-Institut report on heavy truck electrification and charging infrastructure development perspectives.
+    source_type: think_tank_report
+    publisher: Oeko-Institut
+    verticals: [mobility]
+    tef_sectors: [transport]
+    tef_transitions: [freight_electrification, charging_infrastructure]
+
+  - source_id: oeko-institut-ensure-ii-ladeinfrastruktur
+    title: Oeko-Institut ENSURE II Ladeinfrastruktur
+    upstream_group: tier_4_think_tanks
+    geographic_scope: national
+    city: [Aachen, Dresden, Heidelberg, Leipzig, Mannheim, Munich, Munster]
+    country: [Germany]
+    publication_year: null
+    description: Oeko-Institut report on charging infrastructure scenarios and regulatory challenges for electric cars and trucks.
+    source_type: think_tank_report
+    publisher: Oeko-Institut
+    verticals: [mobility, energy]
+    tef_sectors: [transport, energy]
+    tef_transitions: [charging_infrastructure, vehicle_electrification, freight_electrification]
+
+  - source_id: oeko-institut-strates-truck-electrification-2023
+    title: Oeko-Institut StratES Truck Electrification 2023
+    upstream_group: tier_4_think_tanks
+    geographic_scope: national
+    city: [Aachen, Dresden, Heidelberg, Leipzig, Mannheim, Munich, Munster]
+    country: [Germany]
+    publication_year: 2023
+    description: Oeko-Institut StratES scenarios for electrifying road freight transport and heavy-duty charging infrastructure.
+    source_type: think_tank_report
+    publisher: Oeko-Institut
+    verticals: [mobility]
+    tef_sectors: [transport]
+    tef_transitions: [freight_electrification, charging_infrastructure]
+
+  - source_id: state-of-climate-action-2023
+    title: State of Climate Action 2023
+    upstream_group: tier_4_think_tanks
+    geographic_scope: global
+    city: []
+    country: []
+    publication_year: 2023
+    description: Global State of Climate Action report tracking sectoral climate transition progress across transport, energy, buildings, industry, land, and food systems.
+    source_type: think_tank_report
+    publisher: World Resources Institute
+    verticals: [mobility, energy, built_environment, waste, finance, governance]
+    tef_sectors: [transport, energy, buildings, industry, afolu, waste]
+    tef_transitions: []
+
+  - source_id: state-of-climate-action-2025
+    title: State of Climate Action 2025
+    upstream_group: tier_4_think_tanks
+    geographic_scope: global
+    city: []
+    country: []
+    publication_year: 2025
+    description: Global State of Climate Action report tracking updated sectoral climate transition progress and gaps toward 2030 and 2050 goals.
+    source_type: think_tank_report
+    publisher: World Resources Institute
+    verticals: [mobility, energy, built_environment, waste, finance, governance]
+    tef_sectors: [transport, energy, buildings, industry, afolu, waste]
+    tef_transitions: []
+
+  - source_id: wri-barriers-electric-buses
+    title: WRI Barriers to Adopting Electric Buses
+    upstream_group: tier_4_think_tanks
+    geographic_scope: global
+    city: []
+    country: []
+    publication_year: null
+    description: WRI report on barriers to city electric bus adoption and implementation considerations for public transport electrification.
+    source_type: think_tank_report
+    publisher: World Resources Institute
+    verticals: [mobility]
+    tef_sectors: [transport]
+    tef_transitions: [public_transport, vehicle_electrification]
+
+  - source_id: wri-completing-the-trip-transport
+    title: WRI Completing the Trip Transport
+    upstream_group: tier_4_think_tanks
+    geographic_scope: global
+    city: []
+    country: []
+    publication_year: null
+    description: WRI transport decarbonization report covering quantified global climate goals and subsector strategies for transport.
+    source_type: think_tank_report
+    publisher: World Resources Institute
+    verticals: [mobility]
+    tef_sectors: [transport]
+    tef_transitions: [public_transport, modal_shift, vehicle_electrification, freight_electrification]
+
+  - source_id: wri-electric-bus-adoption-cities
+    title: WRI How to Enable Electric Bus Adoption in Cities Worldwide
+    upstream_group: tier_4_think_tanks
+    geographic_scope: global
+    city: []
+    country: []
+    publication_year: null
+    description: WRI guide for enabling electric bus adoption in cities, including planning, procurement, operations, and institutional needs.
+    source_type: think_tank_report
+    publisher: World Resources Institute
+    verticals: [mobility]
+    tef_sectors: [transport]
+    tef_transitions: [public_transport, vehicle_electrification]
+
+  - source_id: wri-electrifying-ride-hailing
+    title: WRI Electrifying Ride-Hailing
+    upstream_group: tier_4_think_tanks
+    geographic_scope: global
+    city: []
+    country: []
+    publication_year: null
+    description: WRI working paper on enabling ride-hailing drivers in the United States, Europe, and Canada to switch to electric vehicles.
+    source_type: think_tank_report
+    publisher: World Resources Institute
+    verticals: [mobility]
+    tef_sectors: [transport]
+    tef_transitions: [vehicle_electrification]
+
+  - source_id: wri-financing-electric-buses
+    title: WRI Financing Electric and Hybrid-Electric Buses
+    upstream_group: tier_4_think_tanks
+    geographic_scope: global
+    city: []
+    country: []
+    publication_year: null
+    description: WRI guide for city decision-makers on electric and hybrid-electric bus financing, costs, benefits, and procurement questions.
+    source_type: think_tank_report
+    publisher: World Resources Institute
+    verticals: [mobility, finance]
+    tef_sectors: [transport]
+    tef_transitions: [public_transport, vehicle_electrification]
+
+  - source_id: wri-lez-congestion-charging-study
+    title: WRI Study on International Practices for Low Emission Zone and Congestion Charging
+    upstream_group: tier_4_think_tanks
+    geographic_scope: global
+    city: []
+    country: []
+    publication_year: 2016
+    description: WRI working paper on international low-emission zone and congestion charging practices.
+    source_type: think_tank_report
+    publisher: World Resources Institute
+    verticals: [mobility, governance]
+    tef_sectors: [transport]
+    tef_transitions: [zero_emission_zones, modal_shift]
+
+  - source_id: wri-lez-public-communication-cases
+    title: WRI International Case Studies on Public Communication and Consultation for Low Emission Zones
+    upstream_group: tier_4_think_tanks
+    geographic_scope: global
+    city: []
+    country: []
+    publication_year: 2017
+    description: WRI case studies on public communication and consultation strategies for low-emission zones and congestion charging schemes.
+    source_type: think_tank_report
+    publisher: World Resources Institute
+    verticals: [mobility, governance]
+    tef_sectors: [transport]
+    tef_transitions: [zero_emission_zones, modal_shift]
+
+  - source_id: wri-pole-mounted-ev-charging
+    title: WRI Pole-Mounted Electric Vehicle Charging
+    upstream_group: tier_4_think_tanks
+    geographic_scope: global
+    city: []
+    country: []
+    publication_year: null
+    description: WRI preliminary guidance on pole-mounted public EV charging as a low-cost and more accessible charging solution.
+    source_type: think_tank_report
+    publisher: World Resources Institute
+    verticals: [mobility, energy]
+    tef_sectors: [transport, energy]
+    tef_transitions: [charging_infrastructure, vehicle_electrification]
+
+  - source_id: wri-zero-emission-delivery-zones
+    title: WRI Zero-Emission Delivery Zones
+    upstream_group: tier_4_think_tanks
+    geographic_scope: global
+    city: []
+    country: []
+    publication_year: null
+    description: WRI working paper on zero-emission delivery zones for decarbonizing urban freight and goods delivery.
+    source_type: think_tank_report
+    publisher: World Resources Institute
+    verticals: [mobility]
+    tef_sectors: [transport]
+    tef_transitions: [freight_electrification, zero_emission_zones]
+
+  - source_id: cities-mission-implementation-plan
+    title: EU Cities Mission Implementation Plan
+    upstream_group: tier_5_eu_programmes
+    geographic_scope: european
+    city: [Aachen, Dresden, Heidelberg, Leipzig, Mannheim, Munich, Munster, Klagenfurt]
+    country: [Germany, Austria]
+    publication_year: 2021
+    description: European Commission implementation plan for 100 climate-neutral and smart cities by 2030, covering mission design, governance, finance, and implementation pathways.
+    source_type: eu_programme
+    publisher: European Commission
+    verticals: [governance, finance, mobility, energy, built_environment]
+    tef_sectors: [transport, energy, buildings]
+    tef_transitions: []
+
+  - source_id: eu-mission-100-climate-neutral-cities-2030
+    title: EU Mission 100 Climate-Neutral Cities 2030
+    upstream_group: tier_5_eu_programmes
+    geographic_scope: european
+    city: [Aachen, Dresden, Heidelberg, Leipzig, Mannheim, Munich, Munster, Klagenfurt]
+    country: [Germany, Austria]
+    publication_year: 2021
+    description: European Commission local green deals and climate-neutral cities reference document with examples, governance guidance, finance, and city implementation practices.
+    source_type: eu_programme
+    publisher: European Commission
+    verticals: [governance, finance, mobility, energy, built_environment]
+    tef_sectors: [transport, energy, buildings]
+    tef_transitions: []
+
+  - source_id: eu-mission-climate-neutral-cities-infokit
+    title: EU Mission Climate-Neutral Cities Infokit
+    upstream_group: tier_5_eu_programmes
+    geographic_scope: european
+    city: [Aachen, Dresden, Heidelberg, Leipzig, Mannheim, Munich, Munster, Klagenfurt]
+    country: [Germany, Austria]
+    publication_year: null
+    description: European Missions information kit for cities interested in the climate-neutral and smart cities call for expression of interest.
+    source_type: eu_programme
+    publisher: European Commission
+    verticals: [governance, finance, mobility, energy, built_environment]
+    tef_sectors: [transport, energy, buildings]
+    tef_transitions: []
+
+  - source_id: gcc-handbook
+    title: Global Covenant of Cities Handbook
+    upstream_group: tier_5_eu_programmes
+    geographic_scope: global
+    city: []
+    country: []
+    publication_year: null
+    description: Handbook for measuring, reporting, and verification of urban low-emission development through the GreenClimateCities approach.
+    source_type: programme_handbook
+    publisher: Global Covenant of Mayors
+    verticals: [governance]
+    tef_sectors: []
+    tef_transitions: []
+
+  - source_id: web-platforms-index
+    title: EU Programmes Web Platforms Index
+    upstream_group: tier_5_eu_programmes
+    geographic_scope: european
+    city: [Aachen, Dresden, Heidelberg, Leipzig, Mannheim, Munich, Munster, Klagenfurt]
+    country: [Germany, Austria]
+    publication_year: 2026
+    description: Curated index of NetZeroCities, EU city database, open data, and related web platforms for climate city contract and external source discovery.
+    source_type: web_index
+    publisher: NetZeroCities
+    verticals: [governance, mobility, energy, built_environment]
+    tef_sectors: [transport, energy, buildings]
+    tef_transitions: []
+
+  - source_id: krakow-secap-2025
+    title: Krakow SECAP - Plan dzialan na rzecz zrownowazonej energii i klimatu
+    upstream_group: tier_1_city_plans
+    geographic_scope: city
+    city: [Krakow]
+    country: [Poland]
+    tags: [krakow, krakow_city_source]
+    publication_year: 2025
+    data_years: [2018, 2022]
+    target_years: [2030, 2040]
+    description: Krakow SECAP covering the 2018 baseline and 2022 monitoring emissions inventories, 2030 and 2040 CO2-reduction targets, mitigation, adaptation, energy poverty, stakeholder engagement, and actions across buildings, energy, lighting, industry, transport, water, wastewater, and waste.
+    source_type: city_cap
+    publisher: City of Krakow
+    verticals: [mobility, energy, built_environment, adaptation, governance, finance]
+    tef_sectors: [transport, energy, buildings]
+    tef_transitions: []
+    source_url: https://bip.krakow.pl/zarzadzenia/2025/2431/X19UUF9fOTA3MTY%3D/2431_zarz_PMK__Krakow_SECAP_wersja_2.17.pdf
+
+  - source_id: krakow-climate-city-contract-2024-commitments
+    title: Krakow Climate City Contract 2024 - Commitments
+    upstream_group: tier_1_city_plans
+    geographic_scope: city
+    city: [Krakow]
+    country: [Poland]
+    tags: [krakow, krakow_city_source]
+    publication_year: 2024
+    data_years: [2018]
+    target_years: [2030]
+    description: Krakow Climate City Contract commitments document covering climate-neutrality commitments to 2030, local governance, mission participation, signatories, and the strategic link to Krakow 2030 city-development goals.
+    source_type: city_cap
+    publisher: City of Krakow
+    verticals: [governance, finance, mobility, energy, built_environment]
+    tef_sectors: [transport, energy, buildings]
+    tef_transitions: []
+    source_url: https://plikimpi.krakow.pl/zalacznik/493134
+
+  - source_id: krakow-climate-city-contract-2024-action-plan
+    title: Krakow Climate City Contract 2024 - Action Plan
+    upstream_group: tier_1_city_plans
+    geographic_scope: city
+    city: [Krakow]
+    country: [Poland]
+    tags: [krakow, krakow_city_source]
+    publication_year: 2024
+    data_years: [2018]
+    target_years: [2030]
+    description: Krakow Climate City Contract action plan for climate neutrality by 2030, using 2018 as the baseline year and covering an 80 percent GHG-reduction target, additional emissions-reduction actions, stakeholder mapping, transport, energy, buildings, heating, waste, water, implementation, and monitoring.
+    source_type: city_cap
+    publisher: City of Krakow
+    verticals: [mobility, energy, built_environment, governance, finance]
+    tef_sectors: [transport, energy, buildings]
+    tef_transitions: []
+    source_url: https://plikimpi.krakow.pl/zalacznik/493135
+
+  - source_id: krakow-climate-city-contract-2024-investment-plan
+    title: Krakow Climate City Contract 2024 - Investment Plan
+    upstream_group: tier_1_city_plans
+    geographic_scope: city
+    city: [Krakow]
+    country: [Poland]
+    tags: [krakow, krakow_city_source]
+    publication_year: 2024
+    data_years: [2018]
+    target_years: [2030]
+    description: Krakow Climate City Contract investment plan for the 2030 climate-neutrality pathway, covering financing needs, capital planning, funding sources, investment barriers, risk, and sector assumptions for transport, energy, buildings, heating, water, and adaptation measures.
+    source_type: city_cap
+    publisher: City of Krakow
+    verticals: [finance, mobility, energy, built_environment, governance]
+    tef_sectors: [transport, energy, buildings]
+    tef_transitions: []
+    source_url: https://plikimpi.krakow.pl/zalacznik/493136
+
+  - source_id: krakow-energy-supply-plan-2023-2038
+    title: Krakow Heat, Electricity, and Gas Supply Plan 2023-2038
+    upstream_group: tier_1_city_plans
+    geographic_scope: city
+    city: [Krakow]
+    country: [Poland]
+    tags: [krakow, krakow_city_source]
+    publication_year: 2023
+    data_years: []
+    target_years: [2023, 2038]
+    description: Krakow city energy-supply assumptions for 2023-2038, covering heat, electricity, gas, demand forecasts, district heating, energy infrastructure, renewables, cogeneration, energy efficiency, decarbonisation, supply security, and annual monitoring obligations.
+    source_type: energy_plan
+    publisher: Krakow City Council
+    verticals: [energy, built_environment, governance]
+    tef_sectors: [energy, buildings]
+    tef_transitions: []
+    source_url: https://www.bip.krakow.pl/_inc/rada/uchwaly/show_pdf.php?id=134226
+
+  - source_id: krakow-adaptation-plan-2030
+    title: Krakow Adaptation Plan to Climate Change 2030
+    upstream_group: tier_1_city_plans
+    geographic_scope: city
+    city: [Krakow]
+    country: [Poland]
+    tags: [krakow, krakow_city_source]
+    publication_year: 2019
+    data_years: []
+    target_years: [2030]
+    description: Krakow climate adaptation plan to 2030 covering diagnostic context, main climate hazards, city vulnerability, adaptation actions, monitoring, financing, stakeholder engagement, water management, heat risk, flooding, green-blue infrastructure, transport, and urban resilience.
+    source_type: adaptation_plan
+    publisher: City of Krakow
+    verticals: [adaptation, built_environment, governance, water]
+    tef_sectors: [transport, buildings]
+    tef_transitions: []
+    source_url: https://www.bip.krakow.pl/plik.php?mode=shw&new=t&wer=0&zid=248569
+
+  - source_id: krakow-adaptation-plan-2030-annex-1-stakeholders
+    title: Krakow Adaptation Plan 2030 - Annex 1 Stakeholders
+    upstream_group: tier_1_city_plans
+    geographic_scope: city
+    city: [Krakow]
+    country: [Poland]
+    tags: [krakow, krakow_city_source]
+    publication_year: 2019
+    data_years: []
+    target_years: [2030]
+    description: Core annex to the Krakow adaptation plan listing institutions, public bodies, and academic stakeholders involved in the adaptation planning and strategic environmental assessment process.
+    source_type: adaptation_plan_annex
+    publisher: City of Krakow
+    verticals: [adaptation, governance]
+    tef_sectors: []
+    tef_transitions: []
+    source_url: https://www.bip.krakow.pl/plik.php?zid=248570&wer=0&new=t&mode=shw
+
+  - source_id: krakow-adaptation-plan-2030-annex-2-hazards
+    title: Krakow Adaptation Plan 2030 - Annex 2 Climate Hazards
+    upstream_group: tier_1_city_plans
+    geographic_scope: city
+    city: [Krakow]
+    country: [Poland]
+    tags: [krakow, krakow_city_source]
+    publication_year: 2019
+    data_years: []
+    target_years: [2030, 2050]
+    description: Core annex to the Krakow adaptation plan describing heat, rainfall, drought, flooding, wind, air-pollution, and related climate hazards, including EURO-CORDEX/RCP climate projections and vulnerability context for the city.
+    source_type: adaptation_plan_annex
+    publisher: City of Krakow
+    verticals: [adaptation, built_environment, water]
+    tef_sectors: [buildings]
+    tef_transitions: []
+    source_url: https://www.bip.krakow.pl/plik.php?zid=248571&wer=0&new=t&mode=shw
+
+  - source_id: krakow-adaptation-plan-2030-annex-3-graphic-materials
+    title: Krakow Adaptation Plan 2030 - Annex 3 Graphic Materials
+    upstream_group: tier_1_city_plans
+    geographic_scope: city
+    city: [Krakow]
+    country: [Poland]
+    tags: [krakow, krakow_city_source]
+    publication_year: 2019
+    data_years: []
+    target_years: [2030]
+    description: Core graphic annex to the Krakow adaptation plan documenting map layers for physical geography, surface and groundwater, vulnerability areas, population density, age structure, biologically active areas, sealed surfaces, building intensity, and related spatial adaptation context.
+    source_type: adaptation_plan_annex
+    publisher: City of Krakow
+    verticals: [adaptation, built_environment, water]
+    tef_sectors: [buildings]
+    tef_transitions: []
+    source_url: https://www.bip.krakow.pl/plik.php?zid=248572&wer=0&new=t&mode=shw
+
+  - source_id: krakow-metropolis-climate-strategy-2024-2030
+    title: Krakow Metropolis Climate Strategy 2024-2030
+    upstream_group: tier_1_city_plans
+    geographic_scope: metropolitan
+    city: [Krakow]
+    country: [Poland]
+    tags: [krakow, krakow_metropolitan_source]
+    publication_year: 2024
+    data_years: []
+    target_years: [2024, 2030]
+    description: Krakow Metropolis climate strategy and implementation document for 2024-2030, covering diagnosis, barriers, retention and drainage, water and wastewater, blue-green infrastructure, emissions, energy, actions, indicators, delivery, and evaluation.
+    source_type: climate_strategy
+    publisher: Stowarzyszenie Metropolia Krakowska
+    verticals: [adaptation, energy, built_environment, governance, water]
+    tef_sectors: [energy, buildings]
+    tef_transitions: []
+    source_url: https://www.metropoliakrakowska.pl/brepo/panel_repo/2024/03/04/eqsxpn/pkt-6-strategia-klimatyczna-mk-2024-2030.pdf
+

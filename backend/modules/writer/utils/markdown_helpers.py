@@ -252,10 +252,12 @@ def extract_city_coverage_sets(
     content: str,
     markdown_bundle: dict[str, object],
     selected_city_names: list[str],
+    context_bundle: dict[str, object] | None = None,
 ) -> tuple[list[str], list[str], list[str], dict[str, str]]:
     """Return required, missing, and no-evidence city keys plus display-name mapping."""
     ref_to_city_key, city_display_by_key = extract_ref_city_mapping(markdown_bundle)
     excerpt_city_keys = set(city_display_by_key.keys())
+    enrichment_city_keys = _extract_enrichment_evidence_city_keys(context_bundle or {})
     selected_city_keys: set[str] = set()
     for city_name in selected_city_names:
         resolved_key = city_key(city_name)
@@ -273,8 +275,46 @@ def extract_city_coverage_sets(
         if ref_id in ref_to_city_key
     }
     missing_coverage_keys = [key for key in required_city_keys if key not in covered_city_keys]
-    no_evidence_keys = sorted(selected_city_keys - excerpt_city_keys)
+    no_evidence_keys = sorted(selected_city_keys - excerpt_city_keys - enrichment_city_keys)
     return required_city_keys, missing_coverage_keys, no_evidence_keys, city_display_by_key
+
+
+def _extract_enrichment_evidence_city_keys(context_bundle: dict[str, object]) -> set[str]:
+    """Return city keys that have writer-visible non-CCC enrichment evidence."""
+    enrichment = context_bundle.get("enrichment")
+    if not isinstance(enrichment, dict):
+        return set()
+
+    city_keys: set[str] = set()
+    for key in ("external_evidence", "web_findings", "assumptions"):
+        city_keys.update(_extract_city_keys_from_records(enrichment.get(key)))
+
+    for record in _iter_record_dicts(enrichment.get("enriched_fields")):
+        status = str(record.get("status", "")).strip().lower()
+        source = str(record.get("source", "")).strip().lower()
+        if status == "still_missing" or source in {"", "none"}:
+            continue
+        resolved_key = city_key(str(record.get("city", "")))
+        if resolved_key:
+            city_keys.add(resolved_key)
+    return city_keys
+
+
+def _extract_city_keys_from_records(value: object) -> set[str]:
+    """Return normalized city keys from list records that expose a city field."""
+    city_keys: set[str] = set()
+    for record in _iter_record_dicts(value):
+        resolved_key = city_key(str(record.get("city", "")))
+        if resolved_key:
+            city_keys.add(resolved_key)
+    return city_keys
+
+
+def _iter_record_dicts(value: object) -> list[dict[str, object]]:
+    """Return dictionary records from a list-like payload."""
+    if not isinstance(value, list):
+        return []
+    return [record for record in value if isinstance(record, dict)]
 
 
 def extract_missing_coverage(

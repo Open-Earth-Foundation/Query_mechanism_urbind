@@ -77,6 +77,8 @@ Environment variables (`.env`):
 - `ANONYMIZED_TELEMETRY` (optional, default `FALSE`): disables Chroma anonymized telemetry when set to `FALSE`.
 - `CHROMA_PERSIST_PATH` (optional, default `.chroma`): local Chroma persistence directory.
 - `CHROMA_COLLECTION_NAME` (optional, default `markdown_chunks`): Chroma collection used for markdown chunks.
+- `EXTERNAL_SOURCE_SEARCH_ENABLED` (optional, default `true`): enables governed external Markdown library enrichment when `sources.yaml` is available.
+- `EXTERNAL_SOURCE_DIR` (optional, default `documents/source_library`): directory containing `sources.yaml` and Markdown files whose stems match `source_id`.
 
 Chat prompt sizing, follow-up router history and excerpt caps, retry backoff, provider timeouts, and vector-store retrieval tuning all come from `llm_config.yaml`.
 CLI flags override `.env` values for a given run (for example `--markdown-path`).
@@ -292,6 +294,20 @@ against source truth. Outputs are written under
 `02_comparison/tef_benchmark_issues.json`, `02_comparison/tef_benchmark_report.md`,
 and `benchmark_summary.json`. Use `--limit N` for a smoke check before a full run.
 
+Run the governed external-source benchmark and writer scenario for Krakow:
+
+```
+python -m backend.scripts.benchmark_external_source_pipeline --run-id krakow_external_smoke
+```
+
+The benchmark reads `backend/benchmarks/external_sources/krakow_external_source_benchmark.json`,
+loads `documents/source_library/sources.yaml`, runs the external-source researcher with controlled
+Markdown search tools, resolves external evidence into the enrichment bundle, and optionally runs
+the writer. Outputs are written under
+`output/external_source_benchmarks/krakow/<run_id>/`, including `benchmark_summary.json`,
+`context_bundle.json`, `writer_answer.md`, and `external_sources/external_evidence.json`.
+Use `--skip-writer` for extraction-only validation.
+
 ### Krakow TEF source-of-truth assets
 
 The curated source-of-truth files for the Krakow CCC manual-scan baseline live in
@@ -371,7 +387,7 @@ What each stage does:
 - `markdown_chunk_count` tracks how many chunk inputs were processed; `excerpt_count` (also logged as `markdown_excerpt_count` in run metadata) tracks how many evidence snippets were extracted from those chunks.
 - Context bundle is updated with extracted evidence for downstream writing.
 - Orchestrator hands the prepared context bundle directly to the writer.
-- Writer builds a writer-specific minimal bundle from the accepted markdown excerpts and selected-city metadata before prompting the model; markdown audit fields such as accepted/rejected chunk id lists are not sent to the writer.
+- Writer builds a writer-specific minimal bundle from the accepted markdown excerpts, selected-city metadata, and writer-visible enrichment artifacts before prompting the model; markdown audit fields and non-writer enrichment bookkeeping such as generic status or notes are not sent to the writer.
 - When the writer bundle exceeds `writer.multi_pass_threshold_tokens`, the writer splits accepted evidence into multiple batches, writes batch drafts, and then combines those drafts into one final answer. If a post-batching payload still exceeds the configured writer input budget, the run now fails explicitly instead of silently reverting to one-shot writing.
 - Writer writes final output text to `output/<run_id>/final.md`. The response starts with an evidence preface (based on `excerpt_count`); when `excerpt_count=0`, it returns a "no evidence found" response.
 
@@ -921,7 +937,7 @@ Artifacts are written under `output/<run_id>/`:
 - `run.log`: detailed runtime logs, including per-agent `LLM_USAGE` lines, chat prompt-window diagnostics (`Context chat reply plan`, `Context chat direct request`, with fitted source ids and token-component counts), retry reason lines (`RETRY_EVENT`/`RETRY_EXHAUSTED` with plain-text fields such as `reason`, `http_status`, `rate_limited`, and markdown split lineage when applicable), and writer city-citation coverage checkpoints (`WRITER_CITATION_COVERAGE`, with `coverage_ratio` such as `33/33`).
 - `error_log.txt`: extracted error-focused log view from `run.log` (`ERROR`, `CRITICAL`, and exhausted retry events).
 - `run_summary.txt`: human-readable consolidated report. Header includes `Started`, `Completed`, and explicit `Total runtime` in seconds, plus `LLM Usage` totals/per-agent. It also captures an input snapshot (`original question`, `query mode`, `canonical research query`, `retrieval query 1..3`, `selected cities` planned/found, markdown dir/file/chunk/excerpt counts) and a `MARKDOWN_FAILURE_SUMMARY` aggregated from batch failures.
-- `context_bundle.json`: payload passed between agents (`markdown`, `original_question`, `research_question`, `query_mode`, `retrieval_queries`, `analysis_mode`, final path).
+- `context_bundle.json`: payload passed between agents (`markdown`, `original_question`, `research_question`, `query_mode`, `retrieval_queries`, `analysis_mode`, final path). When enrichment runs, `enrichment.field_manifest` carries field classifications and non-estimable fields, while `enrichment.gap_manifest` carries only per-city gaps.
 - `research_question.json`: run query metadata payload. Includes:
   - `original_question`: raw user question.
   - `query_mode`: `standard` or `dev`.

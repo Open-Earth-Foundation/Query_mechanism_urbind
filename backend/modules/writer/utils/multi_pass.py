@@ -14,6 +14,21 @@ from backend.modules.writer.utils.markdown_helpers import (
 )
 from backend.utils.tokenization import count_tokens
 
+_WRITER_ENRICHMENT_KEYS = (
+    "field_manifest",
+    "gap_manifest",
+    "enriched_fields",
+    "external_evidence",
+    "external_resolutions",
+    "external_no_evidence",
+    "assumptions",
+    "non_estimable",
+    "web_findings",
+    "freshness_results",
+    "saturation_warning",
+    "meta",
+)
+
 
 @dataclass(frozen=True)
 class WriterBatch:
@@ -352,8 +367,7 @@ def build_writer_context_bundle(
     )
     analysis_mode = context_bundle.get("analysis_mode")
 
-    return {
-        "sql": context_bundle.get("sql"),
+    writer_context: dict[str, object] = {
         "research_question": context_bundle.get("research_question"),
         "analysis_mode": analysis_mode,
         "selected_cities": selected_city_names,
@@ -371,6 +385,21 @@ def build_writer_context_bundle(
             "selected_cities": normalized_city_keys,
             "inspected_cities": normalized_city_keys,
         },
+    }
+    enrichment = context_bundle.get("enrichment")
+    if isinstance(enrichment, dict):
+        writer_enrichment = _build_writer_enrichment(enrichment)
+        if writer_enrichment:
+            writer_context["enrichment"] = writer_enrichment
+    return writer_context
+
+
+def _build_writer_enrichment(enrichment: dict[str, object]) -> dict[str, object]:
+    """Return only enrichment fields that the writer prompts consume."""
+    return {
+        key: enrichment[key]
+        for key in _WRITER_ENRICHMENT_KEYS
+        if key in enrichment and enrichment[key] is not None
     }
 
 

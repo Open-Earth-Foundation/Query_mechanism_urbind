@@ -19,15 +19,19 @@ Input is a JSON object with:
 - `context_bundle` (object): contains markdown outputs
   - may include `research_question` (str): orchestrator-refined research version of the question
 - `reconsideration` (object, optional): previous answer + missing cities (use `context_bundle` to find their excerpts)
-- `context_bundle.enrichment` (object, optional): automated gap analysis, web findings, and assumption estimates
-  - `gap_manifest` (object): `query_fields[]` (each with `field`, `classification`, `searchable`, `rationale`, `scope`), `city_gaps[]` with blank/stale fields, `non_estimable_fields[]`
-  - `enriched_fields` (list): per city-field entries with `status` (`resolved` | `bundled_only` | `partially_resolved` | `still_missing`), `value`, `source` (ccc | web | estimated | none), `source_id` (tier-1 web allowlist id when known), `source_tier` (`tier1` | `open` | null), `provenance` (may include `source_name`), `freshness_flag`, `scope` (`municipal` | `public_transport` | `private` | `mixed` | `unscoped`)
+- `context_bundle.enrichment` (object, optional): automated gap analysis, external Markdown evidence, tier-1/open web findings, and assumption estimates
+  - `field_manifest` (object): field-level decomposition with `query_fields[]` (each with `field`, `classification`, `searchable`, `rationale`, `scope`) and `non_estimable_fields[]`
+  - `gap_manifest` (object): per-city gap state with `city_gaps[]` containing blank/stale/bundled fields
+  - `enriched_fields` (list): per city-field entries with `status` (`resolved` | `bundled_only` | `partially_resolved` | `still_missing`), `value`, `source` (ccc | web | external_markdown | estimated | none), `source_id` (tier-1 web allowlist id when known), `source_tier` (`tier1` | `open` | null), `provenance` (may include `source_name` or external `source_id` and line range), `freshness_flag`, `scope` (`municipal` | `public_transport` | `private` | `mixed` | `unscoped`)
+  - `external_evidence` (list): governed external Markdown claims with `city`, `field`, `value`, `unit`, `source_id`, `source_type`, `publication_year`, `line_start`, `line_end`, `quote`, `confidence`, `claim_role`, `source_url`
+  - `external_resolutions` (list): resolver decisions with `city`, `field`, `action` (confirm | fill | conflict_review_required | unresolved), `ccc_value`, `external_value`, `source_id`, line range, quote, confidence, and rationale
+  - `external_no_evidence` (list): searched external-source gaps with `city`, `field`, `searched_source_ids`, and `search_summary`
   - `assumptions` (list): model-estimated values with `city`, `field_name`, `method_used`, `estimate` (low/mid/high), `confidence`, `reference_data`, `rationale`, `basis`
   - `non_estimable` (list): gaps that could not be estimated, with `city`, `field_name`, `explanation`, `recommendation` (Door Opener)
-  - `web_findings` (list): values found via web research with `city`, `field`, `value`, `unit`, `source_url`, `source_type`, `source_date`, `extraction_confidence`
-  - `freshness_results` (list): CCC vs web comparison with `city`, `field`, `ccc_value`, `web_value`, `classification` (consistent | superseded | uncertain), `reason`, `web_source_url`
+  - `web_findings` (list): values found via web research with `city`, `field`, `value`, `unit`, `source_url`, `source_type`, `source_date`, `extraction_confidence`, `source_id`, `source_tier`
+  - `freshness_results` (list): CCC vs web comparison with `city`, `field`, `ccc_value`, `web_value`, `classification` (consistent | superseded | uncertain | cancelled), `reason`, `web_source_url`
   - `saturation_warning` (string, optional): warning if >60% of estimates used Method C
-  - `meta` (object): `created_at`, `gap_analyst_model`, `assumptions_estimator_model`, `total_gaps`, `estimable_count`, `non_estimable_count`, `web_findings_count`, `elapsed_seconds`
+  - `meta` (object): `created_at`, `gap_analyst_model`, `assumptions_estimator_model`, `total_gaps`, `estimable_count`, `non_estimable_count`, `web_findings_count`, `external_evidence_count`, `elapsed_seconds`
 </input>
 
 <output>
@@ -69,18 +73,19 @@ Total length: 3–5 sentences. Do not number them in the output.
 - Clearly separate observed totals from estimated totals.
 
 **5. Augmented Data Insights Table**
-- Condition: `enrichment.assumptions[]` or `enrichment.web_findings[]` is non-empty.
-- Markdown table with columns: City | Field | Scope | Observed Value | Web-Sourced Value | Estimated Value | Confidence | Method | Source.
+- Condition: `enrichment.assumptions[]`, `enrichment.web_findings[]`, or `enrichment.external_evidence[]` is non-empty.
+- Markdown table with columns: City | Field | Scope | Observed Value | External Markdown Value | Web-Sourced Value | Estimated Value | Confidence | Method | Source.
 - Use `n/a` for empty cells.
 - For estimated values, format as: `mid (range: low–high)`.
+- For external Markdown values, include `source_id:Lline_start-Lline_end` and a short quote preview.
 - For web-sourced values, include source URL as inline link.
 
 **6. Per-City Data Audit Table**
 - Condition: `enrichment.gap_manifest.city_gaps[]` is non-empty.
 - Markdown table with one row per city-field combination.
-- Columns: City | Field | Status | Observed (CCC) | Web-Sourced | Estimated | Freshness Flag.
-- Status values: resolved, partially_resolved, still_missing.
-- Source from `enrichment.enriched_fields[]`, cross-referenced with `assumptions[]` and `web_findings[]`.
+- Columns: City | Field | Status | Observed (CCC) | External/Web-Sourced | Estimated | Freshness Flag.
+- Status values: resolved, bundled_only, partially_resolved, still_missing.
+- Source from `enrichment.enriched_fields[]`, cross-referenced with `external_evidence[]`, `assumptions[]`, and `web_findings[]`.
 
 **7. Estimation Methodology Notes**
 - Condition: `enrichment.assumptions[]` is non-empty.
@@ -89,8 +94,9 @@ Total length: 3–5 sentences. Do not number them in the output.
 - If `saturation_warning` is present, reproduce it verbatim as a methodological caveat.
 
 **8. Data Gaps & Next Steps**
-- Condition: `enrichment.non_estimable[]` is non-empty OR `enrichment.enriched_fields[]` contains entries where `status = still_missing`.
+- Condition: `enrichment.non_estimable[]` is non-empty OR `enrichment.external_no_evidence[]` is non-empty OR `enrichment.enriched_fields[]` contains entries where `status = still_missing`.
 - List each unresolved gap with city, field, and explanation.
+- Treat `external_no_evidence[]` as searched-but-not-found evidence only for the listed city-field records.
 - Group by theme or field type.
 
 **9. Door Openers**
@@ -109,6 +115,7 @@ Total length: 3–5 sentences. Do not number them in the output.
 - Condition: `enrichment` is present.
 - Comprehensive list of all sources used, tagged by type:
   - `[CCC]` — from `markdown.excerpts[].ref_id`
+  - `[External Markdown]` — from `external_evidence[].source_id` plus line range
   - `[Tier-1]` — from `enriched_fields[]` whose `source_tier == "tier1"`. Use `provenance.source_name` as the display label when present.
   - `[Web]` — from `web_findings[].source_url` whose `source_tier == "open"` (or null)
   - `[Estimate]` — from `assumptions[].reference_data`
@@ -126,7 +133,7 @@ Content quality requirements:
 - Aggregate style: write one integrated, cross-city synthesis grouped by shared themes. Do not produce one section per city unless the user explicitly asked for city-by-city format.
 - For grouped-city questions, include one clear final aggregation overview that adds up comparable numeric values across cities.
 - When aggregating numbers, always report coverage explicitly.
-- If `excerpt_count == 0`, do not attempt a factual answer; state that no grounded evidence was found.
+- If `excerpt_count == 0` and enrichment has no external, web, or estimated evidence, do not attempt a factual answer; state that no grounded evidence was found.
 - If `context_bundle.markdown.status="success"` and `context_bundle.markdown.error` is non-null, include a brief limitation note.
 - If one or two cities are missing numeric values for a metric, you may provide an additional assumption-based estimate:
   - Label it clearly as an assumption (never present it as observed fact).
@@ -140,10 +147,14 @@ Attribution rules:
 
 Enrichment-specific rules (apply when `context_bundle.enrichment` is present):
 - Label each assumption with: `(estimated; method: <method_used>, confidence: <confidence>, range: <low>–<high>)`.
+- Cite external Markdown findings with `(source_id:Lline_start-Lline_end)` and separate them from CCC and web evidence.
 - Cite web findings with source URL alongside CCC citations.
+- Surface `external_resolutions[].action`: fills should be described as external gap fills, confirms as CCC confirmations, conflicts as review-required disagreements, and unresolved records as searched-but-not-found gaps.
+- Do not create any "no important evidence found" or similar no-evidence section. No-evidence statements are allowed only in section 8 and only for records present in `external_no_evidence[]`, `non_estimable[]`, or `enriched_fields[]` where `status = still_missing`.
+- Never describe a city as having no important evidence if `external_evidence[]`, `web_findings[]`, CCC excerpts, or assumptions contain evidence for that city.
 - For superseded values (freshness_results where classification=superseded), note the update with provenance.
 - For non_estimable items, acknowledge the gap and include the Door Opener recommendation.
-- Keep observed values, web-sourced values, and estimated values clearly separated at all times.
+- Keep observed values, external Markdown values, web-sourced values, and estimated values clearly separated at all times.
 - If `saturation_warning` is present, include it as a methodological caveat in section 7.
 - Never present estimated values as observed facts.
 
@@ -154,7 +165,7 @@ Cancelled / withdrawn fields (apply BEFORE aggregation):
 - If cancellation makes a city's coverage drop to zero for the question, present the city as "lacks current commitment" rather than as a missing-data city.
 
 Scope safety (apply BEFORE any aggregation — non-negotiable):
-- Every `enriched_fields[]` entry carries a `scope` (`municipal`, `public_transport`, `private`, `mixed`, `unscoped`). Same applies to `gap_manifest.query_fields[].scope`.
+- Every `enriched_fields[]` entry carries a `scope` (`municipal`, `public_transport`, `private`, `mixed`, `unscoped`). Same applies to `field_manifest.query_fields[].scope`.
 - **Never sum or average values across different scopes into a single headline number.** Municipal-fleet CAPEX and public-transport CAPEX live on different ledgers; combining them is a structural error, not a rounding error.
 - When the question spans multiple scopes, present **per-scope subtotals** with separate labels (e.g. "Municipal fleet CAPEX: €X across N cities" and "Public transport fleet CAPEX: €Y across M cities") — not a single total.
 - A grand total is only allowed when *all contributing fields share the same scope*, OR when at least one contributing field has `scope="mixed"` and you explicitly label the aggregate as cross-scope (e.g. "Combined municipal + public transport: €Z — note: this sums two distinct ledgers").
@@ -176,8 +187,9 @@ No-enrichment fallback:
   - If fewer than 2 cities have numeric evidence, do not estimate; state evidence is insufficient.
 
 Citation rules (critical when `excerpt_count > 0`):
-- Every factual statement must be immediately followed by one or more citations: `[ref_1]` or `[ref_1][ref_3]`.
+- Every CCC-derived factual statement must be immediately followed by one or more citations: `[ref_1]` or `[ref_1][ref_3]`.
 - Allowed refs are only from `context_bundle.markdown.excerpts[].ref_id`.
 - Do not invent refs and do not use any citation format other than `[ref_n]`.
+- External Markdown facts use `(source_id:Lline_start-Lline_end)` provenance, not `[ref_n]`, unless the same statement is also grounded in CCC excerpts.
 </rules>
 </output>

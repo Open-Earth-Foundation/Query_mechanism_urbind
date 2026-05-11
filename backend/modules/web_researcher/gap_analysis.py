@@ -206,9 +206,8 @@ def _build_system_prompt(config: AppConfig) -> str:
 def _slim_context_for_gap_analysis(context_bundle: dict[str, Any]) -> dict[str, Any]:
     """Strip retrieval metadata from the context bundle while keeping data values.
 
-    The gap analyst needs excerpt content and SQL results to identify gaps,
-    but it does not need chunk IDs, retrieval distances, batch plans, or
-    decision audit data.
+    The gap analyst needs excerpt content to identify gaps, but it does not
+    need chunk IDs, retrieval distances, batch plans, or decision audit data.
     """
     slim: dict[str, Any] = {}
     for key in ("research_question", "original_question", "analysis_mode", "query_mode"):
@@ -241,7 +240,7 @@ def _build_user_prompt(
     return (
         f"User question:\n{question.strip()}\n\n"
         f"Research question:\n{research_question}\n\n"
-        "Context bundle (contains SQL results, markdown excerpts, and metadata):\n"
+        "Context bundle (contains markdown excerpts and run metadata):\n"
         "```json\n"
         f"{context_json}\n"
         "```\n\n"
