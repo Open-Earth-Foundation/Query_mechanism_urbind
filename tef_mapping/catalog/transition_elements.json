@@ -2487,6 +2487,36 @@
     "tef_source_path": "models/1-transport/1a-mobility/1a1-road/1a1c-buses/1a1c-te-04-improved_vehicle_technology_buses.yaml"
   },
   {
+    "tef_id": "shift_to_electric_buses",
+    "title": "T-1A1C-TE-5 - Shift to electric busses",
+    "sector": "transport",
+    "path": "1-transport/1a-mobility/1a1-road/1a1c-buses",
+    "path_code": "1a1c",
+    "path_labels": [
+      "Transport",
+      "Mobility",
+      "Road",
+      "Buses"
+    ],
+    "type": "shift",
+    "unit_of_measure": null,
+    "sustainability": null,
+    "description": "Shift from diesel buses, petrol buses, and LPG buses to electric buses.",
+    "long_name": "Shift from diesel, petrol, and LPG buses to electric buses.",
+    "short_name": "Electric buses",
+    "shift_from": [
+      "diesel_buses",
+      "petrol_buses",
+      "lpg_buses"
+    ],
+    "shift_to": [
+      "electric_bus"
+    ],
+    "carbon_causal_chains": [],
+    "ipcc_mitigation_method": null,
+    "tef_source_path": "tef_hiap_urbind_export_2026-02-23/transition_elements.csv#shift_to_electric_buses"
+  },
+  {
     "tef_id": "improved_vehicle_technology_heavy_trucks",
     "title": "T-1B1b-TE-7 - Improved heavy truck engine technology",
     "sector": "transport",
@@ -4257,6 +4287,255 @@
     "carbon_causal_chains": [],
     "ipcc_mitigation_method": "1a-12-electric-technologies",
     "tef_source_path": "models/1-transport/1a-mobility/1a1-road/1a1a-light-duty-vehicles/1a1a-te-01-shift_to_electric_vehicles.yaml"
+  },
+  {
+    "tef_id": "shift_to_biogas_energy_in_magnesium_industries",
+    "title": "T-2C4-TE-2 - Shift to biogas energy in magnesium industries",
+    "sector": "industry",
+    "path": "2-industry/2c-metals/2c4-magnesium",
+    "path_code": "2c4",
+    "path_labels": [
+      "Industry",
+      "Metals",
+      "Magnesium"
+    ],
+    "type": "shift",
+    "unit_of_measure": null,
+    "sustainability": null,
+    "description": "IPCC WG3 definition: {{ ipcc_mitigation_link() }}.",
+    "long_name": "Shift to biogas energy in magnesium industries.",
+    "short_name": "Biogas energy in magnesium",
+    "shift_from": [
+      "natural_gas_usage_within_magnesium_industries"
+    ],
+    "shift_to": [
+      "biogas_usage_within_magnesium_industries"
+    ],
+    "carbon_causal_chains": [],
+    "ipcc_mitigation_method": null,
+    "tef_source_path": "tef_hiap_urbind_export_2026-02-23/transition_elements.csv#shift_to_biogas_energy_in_magnesium_industries"
+  },
+  {
+    "tef_id": "shift_to_biomass_energy_in_magnesium_industries",
+    "title": "T-2C4-TE-3 - Shift to biomass energy in magnesium industries",
+    "sector": "industry",
+    "path": "2-industry/2c-metals/2c4-magnesium",
+    "path_code": "2c4",
+    "path_labels": [
+      "Industry",
+      "Metals",
+      "Magnesium"
+    ],
+    "type": "shift",
+    "unit_of_measure": null,
+    "sustainability": null,
+    "description": "IPCC WG3 definition: {{ ipcc_mitigation_link() }}.",
+    "long_name": "Shift to biomass energy in magnesium industries.",
+    "short_name": "Biomass energy in magnesium",
+    "shift_from": [
+      "coal_usage_within_magnesium_industries"
+    ],
+    "shift_to": [
+      "biomass_usage_within_magnesium_industries"
+    ],
+    "carbon_causal_chains": [],
+    "ipcc_mitigation_method": null,
+    "tef_source_path": "tef_hiap_urbind_export_2026-02-23/transition_elements.csv#shift_to_biomass_energy_in_magnesium_industries"
+  },
+  {
+    "tef_id": "shift_to_electricity_in_magnesium_industries",
+    "title": "T-2C4-TE-1 - Shift to electricity in magnesium industries",
+    "sector": "industry",
+    "path": "2-industry/2c-metals/2c4-magnesium",
+    "path_code": "2c4",
+    "path_labels": [
+      "Industry",
+      "Metals",
+      "Magnesium"
+    ],
+    "type": "shift",
+    "unit_of_measure": null,
+    "sustainability": null,
+    "description": "IPCC WG3 definition: {{ ipcc_mitigation_link() }}.",
+    "long_name": "Shift to electricity in magnesium industries.",
+    "short_name": "Electricity in magnesium",
+    "shift_from": [
+      "coal_usage_within_magnesium_industries",
+      "oil_usage_within_magnesium_industries",
+      "natural_gas_usage_within_magnesium_industries"
+    ],
+    "shift_to": [
+      "electricity_usage_within_magnesium_industries"
+    ],
+    "carbon_causal_chains": [],
+    "ipcc_mitigation_method": null,
+    "tef_source_path": "tef_hiap_urbind_export_2026-02-23/transition_elements.csv#shift_to_electricity_in_magnesium_industries"
+  },
+  {
+    "tef_id": "shift_to_biogas_energy_in_lead_industries",
+    "title": "T-2C5-TE-1 - Shift to biogas energy in lead industries",
+    "sector": "industry",
+    "path": "2-industry/2c-metals/2c5-lead",
+    "path_code": "2c5",
+    "path_labels": [
+      "Industry",
+      "Metals",
+      "Lead"
+    ],
+    "type": "shift",
+    "unit_of_measure": null,
+    "sustainability": null,
+    "description": "IPCC WG3 definition: {{ ipcc_mitigation_link() }}.",
+    "long_name": "Shift to biogas energy in lead industries.",
+    "short_name": "Biogas energy in lead",
+    "shift_from": [
+      "natural_gas_usage_within_lead_industries"
+    ],
+    "shift_to": [
+      "biogas_usage_within_lead_industries"
+    ],
+    "carbon_causal_chains": [],
+    "ipcc_mitigation_method": null,
+    "tef_source_path": "tef_hiap_urbind_export_2026-02-23/transition_elements.csv#shift_to_biogas_energy_in_lead_industries"
+  },
+  {
+    "tef_id": "shift_to_biomass_energy_in_lead_industries",
+    "title": "T-2C5-TE-2 - Shift to biomass energy in lead industries",
+    "sector": "industry",
+    "path": "2-industry/2c-metals/2c5-lead",
+    "path_code": "2c5",
+    "path_labels": [
+      "Industry",
+      "Metals",
+      "Lead"
+    ],
+    "type": "shift",
+    "unit_of_measure": null,
+    "sustainability": null,
+    "description": "IPCC WG3 definition: {{ ipcc_mitigation_link() }}.",
+    "long_name": "Shift to biomass energy in lead industries.",
+    "short_name": "Biomass energy in lead",
+    "shift_from": [
+      "coal_usage_within_lead_industries"
+    ],
+    "shift_to": [
+      "biomass_usage_within_lead_industries"
+    ],
+    "carbon_causal_chains": [],
+    "ipcc_mitigation_method": null,
+    "tef_source_path": "tef_hiap_urbind_export_2026-02-23/transition_elements.csv#shift_to_biomass_energy_in_lead_industries"
+  },
+  {
+    "tef_id": "shift_to_electricity_in_lead_industries",
+    "title": "T-2C5-TE-3 - Shift to electricity in lead industries",
+    "sector": "industry",
+    "path": "2-industry/2c-metals/2c5-lead",
+    "path_code": "2c5",
+    "path_labels": [
+      "Industry",
+      "Metals",
+      "Lead"
+    ],
+    "type": "shift",
+    "unit_of_measure": null,
+    "sustainability": null,
+    "description": "IPCC WG3 definition: {{ ipcc_mitigation_link() }}.",
+    "long_name": "Shift to electricity in lead industries.",
+    "short_name": "Electricity in lead",
+    "shift_from": [
+      "coal_usage_within_lead_industries",
+      "oil_usage_within_lead_industries",
+      "natural_gas_usage_within_lead_industries"
+    ],
+    "shift_to": [
+      "electricity_usage_within_lead_industries"
+    ],
+    "carbon_causal_chains": [],
+    "ipcc_mitigation_method": null,
+    "tef_source_path": "tef_hiap_urbind_export_2026-02-23/transition_elements.csv#shift_to_electricity_in_lead_industries"
+  },
+  {
+    "tef_id": "shift_to_biogas_energy_in_other_industries",
+    "title": "T-2D5-TE-2 - Shift to biogas energy in other industries",
+    "sector": "industry",
+    "path": "2-industry/2d-other/2d5-other",
+    "path_code": "2d5",
+    "path_labels": [
+      "Industry",
+      "Other",
+      "Other"
+    ],
+    "type": "shift",
+    "unit_of_measure": null,
+    "sustainability": null,
+    "description": "IPCC WG3 definition: {{ ipcc_mitigation_link() }}.",
+    "long_name": "Shift to biogas energy in other industries.",
+    "short_name": "Biogas energy in other industries",
+    "shift_from": [
+      "industrial_unregulated_gas_use"
+    ],
+    "shift_to": [
+      "industrial_unregulated_biogas_use"
+    ],
+    "carbon_causal_chains": [],
+    "ipcc_mitigation_method": null,
+    "tef_source_path": "tef_hiap_urbind_export_2026-02-23/transition_elements.csv#shift_to_biogas_energy_in_other_industries"
+  },
+  {
+    "tef_id": "shift_to_biomass_energy_in_other_industries",
+    "title": "T-2D5-TE-1 - Shift to biomass energy in other industries",
+    "sector": "industry",
+    "path": "2-industry/2d-other/2d5-other",
+    "path_code": "2d5",
+    "path_labels": [
+      "Industry",
+      "Other",
+      "Other"
+    ],
+    "type": "shift",
+    "unit_of_measure": null,
+    "sustainability": null,
+    "description": "IPCC WG3 definition: {{ ipcc_mitigation_link() }}.",
+    "long_name": "Shift to biomass energy in other industries.",
+    "short_name": "Biomass energy in other industries",
+    "shift_from": [
+      "industrial_unregulated_coal_use"
+    ],
+    "shift_to": [
+      "industrial_unregulated_biomass_use"
+    ],
+    "carbon_causal_chains": [],
+    "ipcc_mitigation_method": null,
+    "tef_source_path": "tef_hiap_urbind_export_2026-02-23/transition_elements.csv#shift_to_biomass_energy_in_other_industries"
+  },
+  {
+    "tef_id": "shift_to_electricity_in_other_industries",
+    "title": "T-2D5-TE-3 - Shift to electricity in other industries",
+    "sector": "industry",
+    "path": "2-industry/2d-other/2d5-other",
+    "path_code": "2d5",
+    "path_labels": [
+      "Industry",
+      "Other",
+      "Other"
+    ],
+    "type": "shift",
+    "unit_of_measure": null,
+    "sustainability": null,
+    "description": "IPCC WG3 definition: {{ ipcc_mitigation_link() }}.",
+    "long_name": "Shift to electricity in other industries.",
+    "short_name": "Electricity in other industries",
+    "shift_from": [
+      "industrial_unregulated_coal_use",
+      "industrial_unregulated_oil_use",
+      "industrial_unregulated_gas_use"
+    ],
+    "shift_to": [
+      "industrial_unregulated_electricity_use"
+    ],
+    "carbon_causal_chains": [],
+    "ipcc_mitigation_method": null,
+    "tef_source_path": "tef_hiap_urbind_export_2026-02-23/transition_elements.csv#shift_to_electricity_in_other_industries"
   },
   {
     "tef_id": "shift_to_electricity_in_chemical_industries",
