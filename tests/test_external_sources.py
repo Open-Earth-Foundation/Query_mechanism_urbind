@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import logging
 import uuid
 from pathlib import Path
 
@@ -21,6 +22,7 @@ from backend.modules.web_researcher.external_sources import (
     ExternalSourceToolError,
     SourceRegistry,
     build_external_search_limits,
+    try_load_external_source_registry,
 )
 from backend.modules.web_researcher.models import (
     CityGap,
@@ -129,6 +131,33 @@ def test_registry_filters_sources_by_tags() -> None:
     assert exc.value.code == "INVALID_FILTER"
 
 
+def test_invalid_source_registry_skips_only_external_sources(
+    caplog: pytest.LogCaptureFixture,
+) -> None:
+    """Invalid source mappings fail soft so the wider enrichment pipeline can continue."""
+    source_root = _test_workspace("invalid_registry") / "source_library"
+    source_root.mkdir(parents=True)
+    (source_root / "sources.yaml").write_text(
+        "\n".join(
+            [
+                "sources:",
+                "  - source_id: missing-markdown",
+                "    title: Missing Markdown",
+                "    upstream_group: tier_1_city_plans",
+                "    description: Metadata points to a file that is absent.",
+                "    source_type: city_cap",
+            ]
+        ),
+        encoding="utf-8",
+    )
+    caplog.set_level(logging.WARNING, logger="backend.modules.web_researcher.external_sources")
+
+    registry = try_load_external_source_registry(source_root)
+
+    assert registry is None
+    assert any("invalid sources.yaml" in record.message for record in caplog.records)
+
+
 def test_regex_search_expand_and_evidence_persistence() -> None:
     """Search tools return line-grounded hits and persist selected evidence."""
     workspace = _test_workspace("session")
@@ -143,6 +172,7 @@ def test_regex_search_expand_and_evidence_persistence() -> None:
         limits=build_external_search_limits(config),
         artifact_dir=workspace / "artifacts",
     )
+    session.set_active_task("Krakow", "secap_local_co2_reduction_2030_target")
 
     with pytest.raises(ExternalSourceToolError) as exc:
         session.regex_search(pattern="2030")
@@ -178,6 +208,53 @@ def test_regex_search_expand_and_evidence_persistence() -> None:
         (workspace / "artifacts" / "external_evidence.json").read_text(encoding="utf-8")
     )
     assert payload["candidates"][0]["candidate_id"] == "e1"
+
+
+def test_set_active_task_clears_prior_candidate_scope() -> None:
+    """A new city-field task cannot reuse the previous task's candidate source list."""
+    workspace = _test_workspace("task_scope_reset")
+    source_root = workspace / "source_library"
+    _write_source_library(source_root)
+    session = _build_external_session(workspace, source_root)
+    session.set_active_task("Krakow", "secap_local_co2_reduction_2030_target")
+    session.list_candidate_sources(cities=["Krakow"])
+    assert session.regex_search(pattern="30%")
+
+    session.set_active_task("Krakow", "public_ev_chargers_2030_target")
+
+    with pytest.raises(ExternalSourceToolError) as exc:
+        session.regex_search(pattern="30%")
+    assert exc.value.code == "SOURCE_SCOPE_REQUIRED"
+
+
+def test_expand_and_save_reject_hits_from_previous_active_task() -> None:
+    """Hit expansion and evidence saving are scoped to the current active task."""
+    workspace = _test_workspace("task_hit_scope")
+    source_root = workspace / "source_library"
+    _write_source_library(source_root)
+    session = _build_external_session(workspace, source_root)
+    session.set_active_task("Krakow", "secap_local_co2_reduction_2030_target")
+    session.regex_search(pattern="30%", cities=["Krakow"])
+
+    session.set_active_task("Krakow", "public_ev_chargers_2030_target")
+
+    with pytest.raises(ExternalSourceToolError) as expand_exc:
+        session.expand_hits(["h1"])
+    assert expand_exc.value.code == "HIT_NOT_FOUND"
+
+    with pytest.raises(ExternalSourceToolError) as save_exc:
+        session.add_evidence_candidates(
+            [
+                EvidenceCandidateInput(
+                    hit_id="h1",
+                    city="Krakow",
+                    field="public_ev_chargers_2030_target",
+                    reason="Old hit should not be reusable.",
+                    confidence=0.7,
+                )
+            ]
+        )
+    assert save_exc.value.code == "HIT_NOT_FOUND"
 
 
 def test_visibility_starts_with_base_tools_before_active_task_hits() -> None:
@@ -695,7 +772,7 @@ def test_writer_context_preserves_enrichment() -> None:
                 "non_estimable_fields": [],
             },
             "gap_manifest": {"city_gaps": []},
-            "external_evidence": [{"source_id": "krakow-target"}],
+            "external_evidence": [{"city": "Krakow", "source_id": "krakow-target"}],
         },
     }
 
