@@ -461,10 +461,18 @@ def test_catalog_loader_finds_sector_and_heat_transitions() -> None:
     assert len(catalog.sectors) == 6
     assert len(catalog.subcategories) == 19
     assert len(catalog.subsubcategories) == 95
+    assert len(catalog.transition_records) == 197
     assert catalog.sector_path("energy") == "5-energy"
 
     industry_children = catalog.child_subsectors("2-industry")
     assert {child.path for child in industry_children} >= {"2-industry/2a-minerals"}
+    industry_child_counts = {
+        child.path: child.total_transition_count for child in industry_children
+    }
+    assert industry_child_counts["2-industry/2a-minerals"] == 6
+    assert industry_child_counts["2-industry/2c-metals"] == 12
+    assert industry_child_counts["2-industry/2d-other"] == 10
+
     mineral_children = catalog.child_subsectors("2-industry/2a-minerals")
     assert {child.path for child in mineral_children} >= {
         "2-industry/2a-minerals/2a1-cement",
@@ -482,6 +490,61 @@ def test_catalog_loader_finds_sector_and_heat_transitions() -> None:
     assert {child.path for child in road_children} >= {
         "1-transport/1a-mobility/1a1-road/1a1a-light-duty-vehicles"
     }
+    road_child_counts = {
+        child.path: child.total_transition_count for child in road_children
+    }
+    assert road_child_counts["1-transport/1a-mobility/1a1-road/1a1c-buses"] == 5
+
+    bus_candidates = catalog.transition_elements(
+        "1-transport/1a-mobility/1a1-road/1a1c-buses"
+    )
+    electric_buses = next(
+        item for item in bus_candidates if item.tef_id == "shift_to_electric_buses"
+    )
+    assert electric_buses.title == "T-1A1C-TE-5 - Shift to electric busses"
+    assert electric_buses.shift_from == ["diesel_buses", "petrol_buses", "lpg_buses"]
+    assert electric_buses.shift_to == ["electric_bus"]
+
+    light_duty_card = catalog.category_payload(
+        "1-transport/1a-mobility/1a1-road/1a1a-light-duty-vehicles"
+    )["card_text"]
+    assert "electric-bus modal shift" in light_duty_card
+    assert "hydrogen-bus modal shift" in light_duty_card
+    assert "bus fleet electrification" in light_duty_card
+
+    afolu_card = catalog.category_payload("3-afolu")["card_text"]
+    assert "sparse AFOLU Transition Element coverage" in afolu_card
+    assert "shift_to_sustainable_healthy_diet" in afolu_card
+    assert (
+        "energy_efficient_other_agriculture_forestry_fishing_electric_appliances"
+        in afolu_card
+    )
+
+    magnesium_candidates = catalog.transition_elements(
+        "2-industry/2c-metals/2c4-magnesium"
+    )
+    assert {item.tef_id for item in magnesium_candidates} == {
+        "shift_to_biogas_energy_in_magnesium_industries",
+        "shift_to_biomass_energy_in_magnesium_industries",
+        "shift_to_electricity_in_magnesium_industries",
+    }
+
+    lead_candidates = catalog.transition_elements("2-industry/2c-metals/2c5-lead")
+    assert {item.tef_id for item in lead_candidates} == {
+        "shift_to_biogas_energy_in_lead_industries",
+        "shift_to_biomass_energy_in_lead_industries",
+        "shift_to_electricity_in_lead_industries",
+    }
+
+    industry_other_candidates = catalog.transition_elements(
+        "2-industry/2d-other/2d5-other"
+    )
+    assert {item.tef_id for item in industry_other_candidates} == {
+        "shift_to_biogas_energy_in_other_industries",
+        "shift_to_biomass_energy_in_other_industries",
+        "shift_to_electricity_in_other_industries",
+    }
+
     heat_candidates = catalog.transition_elements("5-energy/5a-energy-supply/5a2-heat")
     assert {item.tef_id for item in heat_candidates} >= {"district_heating_heat_pumps"}
 

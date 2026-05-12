@@ -71,8 +71,14 @@ Environment variables (`.env`):
 - `RUNS_DIR` (optional, default `output`): base directory for run artifacts.
 - `LOG_LEVEL` (optional, default `INFO`): logging verbosity (`DEBUG`, `INFO`, `WARNING`, `ERROR`).
 - `OPENROUTER_BASE_URL` (optional, default `https://openrouter.ai/api/v1`): override for OpenRouter-compatible backends.
+- `API_CORS_ORIGINS` (optional): comma-separated allowed frontend origins for the API. When omitted, the API allows wildcard CORS without credentials.
+- `API_CHAT_JOB_WORKERS` (optional, default `1`): number of background workers for split-mode chat jobs.
 - `LLM_CONFIG_PATH` (optional, default `llm_config.yaml`): API config file path.
 - `CITY_GROUPS_PATH` (optional, default `backend/api/assets/city_groups.json`): city groups catalog JSON path.
+- `ENRICHMENT_ENABLED` (optional, default `false`): enables gap analysis and assumptions enrichment.
+- `WEB_RESEARCH_ENABLED` (optional, default `false`): enables web research when enrichment is enabled and the required API keys are present.
+- `SERPER_API_KEY` (optional, required when web research is enabled): Serper.dev key for web search.
+- `FIRECRAWL_API_KEY` (optional, required when web research is enabled): Firecrawl key for rendered-page scraping.
 - `VECTOR_STORE_ENABLED` (optional, default `false`): enables local Chroma markdown indexing flows.
 - `ANONYMIZED_TELEMETRY` (optional, default `FALSE`): disables Chroma anonymized telemetry when set to `FALSE`.
 - `CHROMA_PERSIST_PATH` (optional, default `.chroma`): local Chroma persistence directory.
@@ -906,8 +912,35 @@ After startup:
 
 ## Manual EKS deployment
 
-For manual GHCR + EKS deployment without GitHub Actions, use `urbind-query-mechanism.md`.
-It includes exact build/push commands and `kubectl` apply steps for the manifests in `k8s/`.
+For manual GHCR + EKS deployment without GitHub Actions, use the checked-in manifests in `k8s/`.
+The manifests currently expect these image names:
+
+- Backend: `ghcr.io/open-earth-foundation/query_mechanism_urbind-backend:dev`
+- Frontend: `ghcr.io/open-earth-foundation/query_mechanism_urbind-frontend:dev`
+
+Build, push, create the backend secret, then apply the manifests:
+
+```bash
+docker build -f backend/Dockerfile -t ghcr.io/open-earth-foundation/query_mechanism_urbind-backend:dev .
+docker build -f frontend/Dockerfile \
+  --build-arg NEXT_PUBLIC_API_BASE_URL=https://urbind-query-mechanism-api.openearth.dev \
+  -t ghcr.io/open-earth-foundation/query_mechanism_urbind-frontend:dev ./frontend
+docker push ghcr.io/open-earth-foundation/query_mechanism_urbind-backend:dev
+docker push ghcr.io/open-earth-foundation/query_mechanism_urbind-frontend:dev
+
+kubectl create secret generic urbind-query-mechanism-backend-secrets \
+  --from-literal=OPENROUTER_API_KEY=<openrouter-key> \
+  --dry-run=client -o yaml | kubectl apply -f -
+
+kubectl apply -f k8s/backend-pvc.yml
+kubectl apply -f k8s/backend-configmap.yml
+kubectl apply -f k8s/backend-deployment.yml
+kubectl apply -f k8s/backend-service.yml
+kubectl apply -f k8s/frontend-deployment.yml
+kubectl apply -f k8s/frontend-service.yml
+```
+
+Add `SERPER_API_KEY` and `FIRECRAWL_API_KEY` to the secret only when web research is enabled.
 
 ## GitHub Actions deployment
 
