@@ -1,11 +1,11 @@
 from __future__ import annotations
 
-import json
 from pathlib import Path
 from typing import TYPE_CHECKING
 
 from backend.benchmarks.gold_recall.models import FactJudgeDecision
 from backend.utils.config import AppConfig
+from backend.utils.llm_serialization import serialize_for_llm
 from backend.utils.prompts import load_prompt
 
 if TYPE_CHECKING:
@@ -79,7 +79,7 @@ def judge_fact_presence(
     }
     result = run_agent_sync(
         agent,
-        json.dumps(payload, ensure_ascii=False),
+        serialize_for_llm(payload),
         max_turns=config.retry.max_attempts,
         log_llm_payload=log_llm_payload,
     )

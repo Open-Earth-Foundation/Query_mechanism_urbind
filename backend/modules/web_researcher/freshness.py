@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import json
 import logging
 from typing import Any
 
@@ -15,6 +14,7 @@ from backend.modules.web_researcher.utils.json_helpers import (
 )
 from backend.utils.city_normalization import normalize_city_key
 from backend.utils.config import AppConfig
+from backend.utils.llm_serialization import render_toon_block
 
 logger = logging.getLogger(__name__)
 
@@ -110,7 +110,7 @@ def check_freshness(
 
     user_prompt = (
         "Classify each web finding against the paired CCC markdown excerpts:\n"
-        f"```json\n{json.dumps(comparison_items, indent=2)}\n```\n"
+        f"{render_toon_block('Comparison items TOON', comparison_items)}\n"
     )
 
     try:

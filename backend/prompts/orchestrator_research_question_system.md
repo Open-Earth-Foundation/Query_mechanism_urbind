@@ -16,12 +16,20 @@ Use one pass and keep semantic alignment:
 </task>
 
 <input>
-Input is a JSON object with:
+Input is a TOON-serialized object with:
 - `question` (str): original user question
 - `selected_cities` (list[str]): optional user-selected city filter already enforced by pipeline
 - `context_window_tokens` (optional int): informational only
 - `max_input_tokens` (optional int): informational only
 </input>
+
+<tools>
+Available tools:
+- `submit_research_question`: use exactly once to return the completed structured research-question refinement after applying the task rules.
+- Do not call `submit_research_question` for intermediate reasoning, drafts, validation notes, or status updates.
+- Do not call any tool other than `submit_research_question`.
+- Do not emit plain text before or after the tool call.
+</tools>
 
 <output>
 You must call tool `submit_research_question` and pass a JSON object (not a JSON string).

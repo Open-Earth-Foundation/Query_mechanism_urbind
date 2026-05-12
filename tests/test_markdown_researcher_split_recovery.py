@@ -1,4 +1,3 @@
-import json
 import logging
 
 from agents.exceptions import MaxTurnsExceeded, ModelBehaviorError
@@ -7,6 +6,7 @@ from pytest import MonkeyPatch
 from backend.modules.markdown_researcher import agent as markdown_agent
 from backend.modules.markdown_researcher.agent import extract_markdown_excerpts
 from backend.modules.markdown_researcher.models import MarkdownExcerpt, MarkdownResearchResult
+from backend.utils.llm_serialization import parse_llm_serialized
 from tests.support import build_test_app_config
 
 
@@ -66,7 +66,7 @@ def test_markdown_split_recovery_preserves_successful_child_results(
     )
 
     def _fake_run_agent_sync(_agent: object, input_data: str, **_kwargs: object) -> _FakeRunResult:
-        payload = json.loads(input_data)
+        payload = parse_llm_serialized(input_data)
         chunk_ids = tuple(str(chunk["chunk_id"]) for chunk in payload["chunks"])
         call_counts[chunk_ids] = call_counts.get(chunk_ids, 0) + 1
 
@@ -139,7 +139,7 @@ def test_markdown_split_children_get_one_attempt_each(
     )
 
     def _fake_run_agent_sync(_agent: object, input_data: str, **_kwargs: object) -> _FakeRunResult:
-        payload = json.loads(input_data)
+        payload = parse_llm_serialized(input_data)
         chunk_ids = tuple(str(chunk["chunk_id"]) for chunk in payload["chunks"])
         call_counts[chunk_ids] = call_counts.get(chunk_ids, 0) + 1
 
@@ -183,7 +183,7 @@ def test_markdown_splits_after_parent_max_turns_are_exhausted(
     )
 
     def _fake_run_agent_sync(_agent: object, input_data: str, **_kwargs: object) -> _FakeRunResult:
-        payload = json.loads(input_data)
+        payload = parse_llm_serialized(input_data)
         chunk_ids = tuple(str(chunk["chunk_id"]) for chunk in payload["chunks"])
         call_counts[chunk_ids] = call_counts.get(chunk_ids, 0) + 1
 
@@ -227,7 +227,7 @@ def test_markdown_non_retryable_failures_do_not_split(
     )
 
     def _fake_run_agent_sync(_agent: object, input_data: str, **_kwargs: object) -> _FakeRunResult:
-        payload = json.loads(input_data)
+        payload = parse_llm_serialized(input_data)
         chunk_ids = tuple(str(chunk["chunk_id"]) for chunk in payload["chunks"])
         call_counts[chunk_ids] = call_counts.get(chunk_ids, 0) + 1
         raise RuntimeError("boom")
@@ -260,7 +260,7 @@ def test_markdown_logs_failure_points_for_split_recovery(
     )
 
     def _fake_run_agent_sync(_agent: object, input_data: str, **_kwargs: object) -> _FakeRunResult:
-        payload = json.loads(input_data)
+        payload = parse_llm_serialized(input_data)
         chunk_ids = tuple(str(chunk["chunk_id"]) for chunk in payload["chunks"])
         if chunk_ids == ("c1", "c2", "c3", "c4"):
             raise ModelBehaviorError("parent failure")

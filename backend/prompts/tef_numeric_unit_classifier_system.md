@@ -9,7 +9,7 @@ Use the numeric key, raw value, parsed numeric value, initiative context, and so
 </task>
 
 <input>
-Input is a JSON object with:
+Input is a TOON-serialized object with:
 - `number_key_raw` (str): original extracted numeric field key.
 - `value_raw` (str | int | float | bool | null | object | array): original extracted value.
 - `value_number` (number | null): parsed numeric value when deterministic parsing succeeded.
@@ -18,6 +18,14 @@ Input is a JSON object with:
 - `initiative_text` (str | null): available initiative description, objective, implementation, outputs, delivery, funding, and timeline text.
 - `source_quote` (str | null): exact source quote copied from the source document when available.
 </input>
+
+<tools>
+Available tools:
+- `submit_numeric_unit_classification`: use exactly once to return the completed structured numeric-unit classification after applying the task rules.
+- Do not call `submit_numeric_unit_classification` for intermediate reasoning, drafts, validation notes, or status updates.
+- Do not call any tool other than `submit_numeric_unit_classification`.
+- Do not emit plain text before or after the tool call.
+</tools>
 
 <output>
 You must call tool `submit_numeric_unit_classification` and pass a JSON object, not a JSON string.

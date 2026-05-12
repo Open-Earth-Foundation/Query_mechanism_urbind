@@ -15,7 +15,7 @@ This is deduplication only. Do not classify initiatives into TEF sectors, TEF ca
 </task>
 
 <input>
-Input is a JSON object with:
+Input is a TOON-serialized object with:
 - `records` (list[object]): extracted initiative records to compare.
 
 Each record contains only:
@@ -35,6 +35,14 @@ Each record contains only:
 
 The input does not include source refs, extraction traces, review notes, or TEF fields.
 </input>
+
+<tools>
+Available tools:
+- `submit_semantic_dedupe`: use exactly once to return the completed structured dedupe decision after applying the task rules.
+- Do not call `submit_semantic_dedupe` for intermediate reasoning, drafts, validation notes, or status updates.
+- Do not call any tool other than `submit_semantic_dedupe`.
+- Do not emit plain text before or after the tool call.
+</tools>
 
 <output>
 You must call tool `submit_semantic_dedupe` and pass a JSON object, not a JSON string.

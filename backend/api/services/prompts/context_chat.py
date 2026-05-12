@@ -2,12 +2,12 @@
 
 from __future__ import annotations
 
-import json
 from functools import lru_cache
 from pathlib import Path
 from string import Template
 
 from backend.api.services.models import ChatContextSource
+from backend.utils.llm_serialization import render_toon_block
 from backend.utils.prompts import load_prompt
 
 _PROMPTS_DIR = Path(__file__).resolve().parents[3] / "prompts"
@@ -161,13 +161,6 @@ def serialize_all_contexts(contexts: list[ChatContextSource]) -> str:
 
 def serialize_context(index: int, context: ChatContextSource) -> str:
     """Serialize one context source for the fallback prompt path."""
-    serialized_bundle = json.dumps(
-        context.context_bundle,
-        ensure_ascii=True,
-        default=str,
-        separators=(",", ":"),
-        sort_keys=True,
-    )
     return (
         f"### Source {index} [run:{context.run_id}]\n"
         f"Run question: {context.question or '(not provided)'}\n\n"
@@ -175,10 +168,7 @@ def serialize_context(index: int, context: ChatContextSource) -> str:
         "```markdown\n"
         f"{context.final_document.strip()}\n"
         "```\n\n"
-        "Context bundle JSON:\n"
-        "```json\n"
-        f"{serialized_bundle}\n"
-        "```"
+        f"{render_toon_block('Context bundle TOON', context.context_bundle)}"
     )
 
 

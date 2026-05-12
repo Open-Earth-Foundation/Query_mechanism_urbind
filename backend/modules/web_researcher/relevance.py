@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import json
 import logging
 from typing import Any
 
@@ -15,6 +14,7 @@ from backend.modules.web_researcher.utils.json_helpers import (
     extract_message_text,
 )
 from backend.utils.config import AppConfig
+from backend.utils.llm_serialization import render_toon_block
 
 logger = logging.getLogger(__name__)
 
@@ -109,7 +109,7 @@ def check_relevance_batch(
         f"Target fields: {', '.join(target_fields)}\n"
         f"{entity_block}\n"
         "Search results:\n"
-        f"```json\n{json.dumps(result_summaries, indent=2)}\n```\n"
+        f"{render_toon_block('Search results TOON', result_summaries)}\n"
     )
 
     try:

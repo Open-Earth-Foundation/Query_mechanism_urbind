@@ -20,7 +20,7 @@ Routing policy:
 </task>
 
 <input>
-Input is a JSON object with:
+Input is a TOON-serialized object with:
 - `user_message` (str): the new chat message to route.
 - `original_question` (str): the original run question that created the parent context.
 - `history` (list[object]): recent chat messages; each item has `role` and `content`.
@@ -32,6 +32,14 @@ Input is a JSON object with:
   - `excerpt_count` (int): number of excerpts in the source.
   - `excerpts` (list[object]): excerpt summaries with `city_name`, `quote`, and `partial_answer`.
 </input>
+
+<tools>
+Available tools:
+- `submit_chat_followup_decision`: use exactly once to return the completed structured routing decision after applying the task rules.
+- Do not call `submit_chat_followup_decision` for intermediate reasoning, drafts, validation notes, or status updates.
+- Do not call any tool other than `submit_chat_followup_decision`.
+- Do not emit plain text before or after the tool call.
+</tools>
 
 <output>
 You must call tool `submit_chat_followup_decision` and pass a JSON object (not a JSON string).

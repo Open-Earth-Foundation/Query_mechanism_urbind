@@ -17,7 +17,7 @@ Never include reasoning text outside the tool call.
 </task>
 
 <input>
-Input is a JSON object with:
+Input is a TOON-serialized object with:
 - `question` (str)
 - `city_name` (str): current city for this batch
 - `chunks` (list[object]): markdown chunks for this call. Each object contains:
@@ -28,6 +28,14 @@ Input is a JSON object with:
   - `distance` (str): optional retrieval distance metadata
   - `content` (str): markdown chunk content
 </input>
+
+<tools>
+Available tools:
+- `submit_markdown_excerpts`: use exactly once to return the completed structured markdown research result after applying the task rules.
+- Do not call `submit_markdown_excerpts` for intermediate reasoning, drafts, validation notes, or status updates.
+- Do not call any tool other than `submit_markdown_excerpts`.
+- Do not emit plain text before or after the tool call.
+</tools>
 
 <output>
 You must call tool `submit_markdown_excerpts` and pass a JSON object (not a JSON string).

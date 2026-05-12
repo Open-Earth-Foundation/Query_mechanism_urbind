@@ -19,6 +19,7 @@ from backend.api.services.run_store import RunRecord, RunStore
 from backend.modules.writer.agent import write_markdown
 from backend.utils.config import AppConfig, get_openrouter_api_key
 from backend.utils.json_io import read_json, write_json
+from backend.utils.llm_serialization import render_toon_block
 
 logger = logging.getLogger(__name__)
 
@@ -356,12 +357,10 @@ def _build_discovery_messages(
     """Build prompt messages for extraction/verification passes."""
     if pass_name not in {"extract", "verify"}:
         raise ValueError(f"Unsupported pass_name `{pass_name}`.")
-    context_bundle_json = json.dumps(context_bundle, ensure_ascii=True, indent=2, default=str)
-    existing_items_json = json.dumps(
+    context_bundle_block = render_toon_block("Context bundle TOON", context_bundle)
+    existing_items_block = render_toon_block(
+        "Existing pass-1 items TOON",
         [item.model_dump() for item in existing_items],
-        ensure_ascii=True,
-        indent=2,
-        default=str,
     )
     system_prompt = (
         "You are a strict structured-data extractor.\n"
@@ -382,28 +381,19 @@ def _build_discovery_messages(
             "```markdown\n"
             f"{final_document.strip()}\n"
             "```\n\n"
-            "Context bundle:\n"
-            "```json\n"
-            f"{context_bundle_json}\n"
-            "```\n"
+            f"{context_bundle_block}\n"
         )
     else:
         user_prompt = (
             "Pass 2: Verify pass-1 coverage.\n"
             "Return only additional missing items not already present.\n\n"
             f"Question:\n{question.strip()}\n\n"
-            "Existing pass-1 items:\n"
-            "```json\n"
-            f"{existing_items_json}\n"
-            "```\n\n"
+            f"{existing_items_block}\n\n"
             "Final document:\n"
             "```markdown\n"
             f"{final_document.strip()}\n"
             "```\n\n"
-            "Context bundle:\n"
-            "```json\n"
-            f"{context_bundle_json}\n"
-            "```\n"
+            f"{context_bundle_block}\n"
         )
     return [
         {"role": "system", "content": system_prompt},
@@ -416,10 +406,9 @@ def _build_rewrite_question(
     assumptions_payload: AssumptionsPayload,
 ) -> str:
     """Build writer question including assumptions and regeneration rules."""
-    assumptions_json = json.dumps(
+    assumptions_block = render_toon_block(
+        "Approved assumptions TOON",
         [item.model_dump() for item in assumptions_payload.items],
-        ensure_ascii=True,
-        indent=2,
     )
     instructions = (
         assumptions_payload.rewrite_instructions.strip()
@@ -434,10 +423,7 @@ def _build_rewrite_question(
         "3. Use provided assumptions consistently in recommendations.\n"
         "4. Keep uncertain assumptions clearly labeled as assumptions.\n\n"
         f"User rewrite instructions:\n{instructions}\n\n"
-        "Approved assumptions:\n"
-        "```json\n"
-        f"{assumptions_json}\n"
-        "```\n"
+        f"{assumptions_block}\n"
     )
 
 

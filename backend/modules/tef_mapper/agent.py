@@ -30,7 +30,7 @@ from backend.modules.tef_mapper.numeric_rollup import (
 )
 from backend.modules.tef_mapper.rendering import (
     initiative_payload,
-    json_input,
+    llm_input,
     transition_candidate_payload,
 )
 from backend.utils.city_normalization import normalize_city_key, normalize_city_keys
@@ -316,7 +316,7 @@ def _run_stage(
     def call() -> TefSectorRoute | TefSubsectorRoute | TefTransitionMapping:
         result = run_agent_sync(
             agent,
-            json_input(payload),
+            llm_input(payload),
             max_turns=max(config.tef_mapper.max_turns, 1),
             log_llm_payload=log_llm_payload,
         )

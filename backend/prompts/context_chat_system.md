@@ -12,7 +12,6 @@ Answer the latest follow-up question using only the supplied context sources.
 - If a citation evidence catalog is provided, cite factual claims using only `[ref_n]` tokens present in that catalog.
 - Do not invent references and do not use any citation format other than `[ref_n]`.
 - If no citation evidence catalog entries are available, explain that you cannot provide a fully grounded cited answer.
-- If arithmetic is needed and calculator tools are available, use them instead of mental math.
 $retry_note_block
 </task>
 
@@ -20,10 +19,15 @@ $retry_note_block
 Input is assembled from:
 - `original_question` (string): source run question.
 - `history` (list[object]): recent `user` and `assistant` turns.
-- `latest_user_message` (string): follow-up question to answer now.
+- `latest_user_message` (string): follow-up question to answer.
 - `context_sources` (string): serialized contexts or citation catalog for this turn.
 - `retry_missing_citation` (bool): whether the prior response must be rewritten for missing citations.
 </input>
+
+<tools>
+Available calculator tools: `sum_numbers`, `subtract_numbers`, `multiply_numbers`, `divide_numbers`.
+Use them only for arithmetic.
+</tools>
 
 <output>
 Return only the final user-facing markdown answer.

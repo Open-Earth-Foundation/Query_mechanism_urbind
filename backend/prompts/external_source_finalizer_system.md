@@ -30,7 +30,7 @@ the quantity and unit only from the candidate quote.
 </task>
 
 <input>
-Input is a JSON object with:
+Input is a TOON-serialized object with:
 - `task`: the original city-field research task.
   - `city` (str): selected city.
   - `field` (str): target field.

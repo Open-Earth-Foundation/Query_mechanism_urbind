@@ -50,10 +50,11 @@ The `uv.lock` file is committed to ensure reproducible builds.
   candidate records so initiatives are merged when they describe the same real-world action.
 - TEF mapping knobs are configured in `llm_config.yaml` under `tef_mapper`
   (`max_workers`, `review_confidence_threshold`, `close_alternative_delta`,
-  `min_transition_confidence`, `numeric_unit_classifier_enabled`). The mapper is JSON-only: it
+  `min_transition_confidence`, `numeric_unit_classifier_enabled`). The mapper is artifact-first: it
   reads initiative extraction artifacts, runs sector, category, Transition Element, and optional
-  numeric-unit classification passes with stage-scoped prompts and four catalog JSON files, and
-  writes mapping artifacts without database writes or an LLM review pass. TEF sector,
+  numeric-unit classification passes with stage-scoped prompts and four catalog JSON files, sends
+  structured LLM inputs as TOON, and writes mapping artifacts without database writes or an LLM
+  review pass. TEF sector,
   subcategory, and subsubcategory catalog cards include prompt-ready routing definitions,
   positive use signals, and avoid rules so the category router can compare sibling branches.
 - Retry policy is centralized in top-level `retry` in `llm_config.yaml` (`max_attempts`, `backoff_base_seconds`, `backoff_max_seconds`) and is shared across retry/backoff behavior for LLM calls and related operations.
@@ -224,7 +225,7 @@ python -m backend.scripts.extract_initiatives --markdown-path documents --city K
 The extractor writes to `output/initiative_extraction/<run_id>/` with source manifests, line-aware
 segments, raw per-segment extractions, candidate records, semantic duplicate groups, final
 deduplicated initiatives, review items, and a summary. `03_deduped/initiatives.jsonl` contains only
-the agreed canonical v1 initiative shape from `plan.md`; generated ids and quote-only audit
+the agreed canonical v1 initiative shape from `docs/plan.md`; generated ids and quote-only audit
 citations are kept separately in `03_deduped/initiative_records.jsonl` for downstream mapping. Use
 `--run-id`, `--output-dir`, `--max-workers`, and `--log-llm-payload` to override run naming,
 artifact location, concurrency, and
@@ -307,6 +308,8 @@ the writer. Outputs are written under
 `output/external_source_benchmarks/krakow/<run_id>/`, including `benchmark_summary.json`,
 `context_bundle.json`, `writer_answer.md`, and `external_sources/external_evidence.json`.
 Use `--skip-writer` for extraction-only validation.
+Design notes and example workflows for this stage live in `docs/plan.md`,
+`docs/example.md`, and `docs/tool_implementation.md`.
 
 ### Krakow TEF source-of-truth assets
 

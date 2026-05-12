@@ -42,6 +42,7 @@ from backend.services.run_logger import RunLogger
 from backend.utils.city_normalization import format_city_display_name
 from backend.utils.config import AppConfig
 from backend.utils.json_io import write_json
+from backend.utils.llm_serialization import serialize_for_llm
 from backend.utils.paths import RunPaths
 from backend.utils.prompts import load_prompt
 from openai import APIConnectionError, APIStatusError, APITimeoutError
@@ -139,7 +140,7 @@ def _run_writer_once(
     """Run writer once and return structured output."""
     result = run_agent_sync(
         agent,
-        json.dumps(payload, ensure_ascii=False),
+        serialize_for_llm(payload),
         max_turns=max_turns,
         log_llm_payload=log_llm_payload,
     )

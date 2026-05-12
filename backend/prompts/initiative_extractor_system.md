@@ -27,7 +27,7 @@ Tables are first-class source material. Preserve facts from table rows, includin
 </task>
 
 <input>
-Input is a JSON object with:
+Input is a TOON-serialized object with:
 - `city_name` (str): city inferred from the markdown file name.
 - `source_document` (str): source document file name.
 - `source_path` (str): source path relative to the repository when available.
@@ -40,6 +40,15 @@ Input is a JSON object with:
 - `already_extracted_scope` (str): `run` when prior initiatives are rolling context from earlier segments, or `current_segment` when prior initiatives are only from this same dense segment.
 - `already_extracted_initiatives` (list[`InitiativeExtraction`]): token-capped list of canonical initiatives already extracted. This list contains only the agreed v1 initiative schema fields from `plan.md`; it does not include evidence, source refs, review traces, extraction notes, or TEF fields.
 </input>
+
+<tools>
+Available tools:
+- `submit_initiative_extractions`: use exactly once when returning zero or more initiative candidates from the current segment.
+- `stop_initiative_extraction`: use exactly once only when `extraction_mode` is `dense_followup` and no additional distinct initiatives remain.
+- Do not call both tools in the same response.
+- Do not call either tool for intermediate reasoning, drafts, validation notes, or status updates.
+- Do not emit plain text before or after the tool call.
+</tools>
 
 <output>
 You must call exactly one tool and pass a JSON object, not a JSON string.

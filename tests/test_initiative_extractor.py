@@ -17,6 +17,7 @@ from backend.modules.initiative_extractor.models import (
     InitiativeSourceRef,
 )
 from backend.modules.initiative_extractor.segmentation import build_document_segments
+from backend.utils.llm_serialization import parse_llm_serialized
 from tests.support import build_test_app_config
 
 
@@ -767,7 +768,7 @@ def test_extraction_pipeline_writes_artifacts_with_fake_llm(
     monkeypatch.setattr(extractor_agent, "build_initiative_extractor_agent", lambda *_args: object())
 
     def _fake_run_agent_sync(_agent: object, input_data: str, **_kwargs: object) -> _FakeRunResult:
-        payload = json.loads(input_data)
+        payload = parse_llm_serialized(input_data)
         segment_id = payload["segment_id"]
         return _FakeRunResult(
             InitiativeSegmentExtraction(

@@ -1,14 +1,14 @@
 from __future__ import annotations
 
-import json
 from typing import Any
 
 from backend.modules.initiative_extractor.models import InitiativeExtractionRecord
 from backend.modules.tef_mapper.models import TefTransitionElement
+from backend.utils.llm_serialization import serialize_for_llm
 
 
 def initiative_payload(record: InitiativeExtractionRecord) -> dict[str, Any]:
-    """Render one extracted initiative as a compact JSON payload."""
+    """Render one extracted initiative as a compact structured payload."""
     return {
         "record_id": record.record_id,
         "source_document": record.source_document,
@@ -47,9 +47,9 @@ def transition_candidate_payload(
     ]
 
 
-def json_input(payload: dict[str, Any]) -> str:
-    """Serialize a stage payload as readable JSON for the LLM input."""
-    return json.dumps(payload, ensure_ascii=False, indent=2)
+def llm_input(payload: dict[str, Any]) -> str:
+    """Serialize a TEF stage payload as TOON for the LLM input."""
+    return serialize_for_llm(payload)
 
 
-__all__ = ["initiative_payload", "json_input", "transition_candidate_payload"]
+__all__ = ["initiative_payload", "llm_input", "transition_candidate_payload"]

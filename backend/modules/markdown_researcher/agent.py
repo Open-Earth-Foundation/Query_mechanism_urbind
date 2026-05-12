@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import json
 import logging
 import threading
 import time
@@ -36,6 +35,7 @@ from backend.services.agents import (
     run_agent_sync,
 )
 from backend.utils.config import AppConfig
+from backend.utils.llm_serialization import serialize_for_llm
 from backend.utils.prompts import load_prompt
 from backend.utils.retry import (
     RetrySettings,
@@ -322,7 +322,7 @@ def extract_markdown_excerpts(
                 agent = _get_thread_agent()
                 run_result = run_agent_sync(
                     agent,
-                    json.dumps(payload, ensure_ascii=False),
+                    serialize_for_llm(payload),
                     max_turns=markdown_max_turns,
                     log_llm_payload=log_llm_payload,
                 )

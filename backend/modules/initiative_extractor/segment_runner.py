@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import json
 import logging
 import time
 
@@ -25,12 +24,15 @@ from backend.modules.initiative_extractor.segmentation import (
     detect_source_quality_flags,
 )
 from backend.utils.config import AppConfig
+from backend.utils.llm_serialization import (
+    count_serialized_tokens_for_llm,
+    serialize_for_llm,
+)
 from backend.utils.retry import (
     RetrySettings,
     compute_retry_delay_seconds,
     log_retry_event,
 )
-from backend.utils.tokenization import count_tokens
 
 logger = logging.getLogger(__name__)
 RETRYABLE_ERROR_NAMES = {
@@ -76,7 +78,7 @@ def _build_prior_initiatives_context(
     selected_tokens = 0
     for candidate in reversed(prior_initiatives):
         item = candidate.initiative.model_dump(mode="json")
-        item_tokens = count_tokens(json.dumps(item, ensure_ascii=False))
+        item_tokens = count_serialized_tokens_for_llm(item)
         if selected and selected_tokens + item_tokens > max_tokens:
             break
         selected.append(item)
@@ -125,15 +127,14 @@ def _run_segment_once(
     agent = _get_thread_agent(config, api_key)
     result = run_agent_sync(
         agent,
-        json.dumps(
+        serialize_for_llm(
             _segment_payload(
                 segment,
                 prior_initiatives,
                 config,
                 extraction_mode=extraction_mode,
                 already_extracted_scope=already_extracted_scope,
-            ),
-            ensure_ascii=False,
+            )
         ),
         max_turns=max(config.initiative_extractor.max_turns, 1),
         log_llm_payload=log_llm_payload,

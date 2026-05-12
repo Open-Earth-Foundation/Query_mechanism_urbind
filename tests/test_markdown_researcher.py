@@ -1,5 +1,3 @@
-import json
-
 from agents.exceptions import MaxTurnsExceeded
 from pytest import MonkeyPatch
 
@@ -7,6 +5,7 @@ from backend.modules.markdown_researcher import agent as markdown_agent
 from backend.modules.markdown_researcher.agent import extract_markdown_excerpts
 from backend.modules.markdown_researcher.models import MarkdownExcerpt, MarkdownResearchResult
 from backend.utils.config import AppConfig
+from backend.utils.llm_serialization import parse_llm_serialized
 from tests.support import build_test_app_config
 
 
@@ -49,7 +48,7 @@ def test_markdown_returns_partial_success_with_city_failure_markers(
     monkeypatch.setattr(markdown_agent, "build_markdown_agent", lambda *_args, **_kwargs: object())
 
     def _fake_run_agent_sync(_agent: object, input_data: str, **_kwargs: object) -> _FakeRunResult:
-        payload = json.loads(input_data)
+        payload = parse_llm_serialized(input_data)
         city_name = payload["city_name"]
         if str(city_name).casefold() == "a":
             return _FakeRunResult(
@@ -148,7 +147,7 @@ def test_markdown_payload_batches_keep_city_chunk_integrity(
     monkeypatch.setattr(markdown_agent, "build_markdown_agent", lambda *_args, **_kwargs: object())
 
     def _fake_run_agent_sync(_agent: object, input_data: str, **_kwargs: object) -> _FakeRunResult:
-        payload = json.loads(input_data)
+        payload = parse_llm_serialized(input_data)
         captured_payloads.append(payload)
         return _FakeRunResult(
             MarkdownResearchResult(

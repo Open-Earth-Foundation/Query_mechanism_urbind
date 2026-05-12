@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import json
 import logging
 from collections import defaultdict
 from typing import Any
@@ -23,6 +22,7 @@ from backend.modules.web_researcher.utils.json_helpers import (
 )
 from backend.services.progress_tracker import ProgressTracker
 from backend.utils.config import AppConfig
+from backend.utils.llm_serialization import render_toon_block
 
 logger = logging.getLogger(__name__)
 
@@ -478,18 +478,16 @@ def _build_user_prompt(
 ) -> str:
     """Build the estimator user prompt from the current gap state."""
     summary = _build_context_summary(context_bundle)
-    summary_json = json.dumps(summary, ensure_ascii=False, indent=2, default=str)
-    gap_json = json.dumps(gap_manifest.model_dump(mode="json"), indent=2, default=str)
-    fields_json = json.dumps(
-        [field.model_dump(mode="json") for field in estimable_fields],
-        indent=2,
-        default=str,
-    )
 
     parts = [
         f"User question:\n{question.strip()}\n",
-        f"Gap manifest:\n```json\n{gap_json}\n```\n",
-        f"Fields needing estimation ({len(estimable_fields)}):\n```json\n{fields_json}\n```\n",
+        f"{render_toon_block('Gap manifest TOON', gap_manifest.model_dump(mode='json'))}\n",
+        (
+            f"{render_toon_block(
+                f'Fields needing estimation TOON ({len(estimable_fields)})',
+                [field.model_dump(mode='json') for field in estimable_fields],
+            )}\n"
+        ),
     ]
 
     if peer_reference:
@@ -519,16 +517,11 @@ def _build_user_prompt(
     if comparative_section:
         parts.append(comparative_section)
 
-    parts.append(f"Data summary:\n```json\n{summary_json}\n```\n")
+    parts.append(f"{render_toon_block('Data summary TOON', summary)}\n")
 
     if pass_name == "critique" and prior_estimates:
-        prior_json = json.dumps(
-            [estimate.model_dump(mode="json") for estimate in prior_estimates],
-            indent=2,
-            default=str,
-        )
         parts.append(
-            f"Prior estimates to critique and revise:\n```json\n{prior_json}\n```\n"
+            f"{render_toon_block('Prior estimates to critique and revise TOON', [estimate.model_dump(mode='json') for estimate in prior_estimates])}\n"
         )
         parts.append(
             "Review each estimate, correct any issues, and return the complete revised list.\n"

@@ -14,6 +14,7 @@ from backend.modules.writer.utils.markdown_helpers import (
 from backend.modules.writer.utils.multi_pass import build_writer_context_bundle
 from backend.services.run_logger import RunLogger
 from backend.utils.config import AppConfig
+from backend.utils.llm_serialization import parse_llm_serialized
 from backend.utils.paths import create_run_paths
 from tests.support import build_test_app_config
 
@@ -195,7 +196,7 @@ def test_writer_retries_when_city_citation_coverage_is_missing(
         **_kwargs: object,
     ) -> _FakeRunResult:
         del log_llm_payload
-        captured_inputs.append(json.loads(input_text))
+        captured_inputs.append(parse_llm_serialized(input_text))
         output = responses.pop(0)
         return _FakeRunResult(output)
 
@@ -266,7 +267,7 @@ def test_writer_normalizes_compact_reference_tokens_before_coverage_checks(
         **_kwargs: object,
     ) -> _FakeRunResult:
         del log_llm_payload
-        captured_inputs.append(json.loads(input_text))
+        captured_inputs.append(parse_llm_serialized(input_text))
         return _FakeRunResult(WriterOutput(content="Munich update [ref1]\nBerlin update [ref2]"))
 
     monkeypatch.setattr(writer_agent, "run_agent_sync", _fake_run_agent_sync)
@@ -326,7 +327,7 @@ def test_writer_treats_city_name_aliases_as_one_city_for_coverage(
         **_kwargs: object,
     ) -> _FakeRunResult:
         del log_llm_payload
-        captured_inputs.append(json.loads(input_text))
+        captured_inputs.append(parse_llm_serialized(input_text))
         return _FakeRunResult(WriterOutput(content="Vitoria summary [ref_1]"))
 
     monkeypatch.setattr(writer_agent, "run_agent_sync", _fake_run_agent_sync)
@@ -450,7 +451,7 @@ def test_writer_does_not_retry_for_layout_when_city_coverage_is_complete(
         **_kwargs: object,
     ) -> _FakeRunResult:
         del log_llm_payload
-        captured_inputs.append(json.loads(input_text))
+        captured_inputs.append(parse_llm_serialized(input_text))
         return _FakeRunResult(responses.pop(0))
 
     monkeypatch.setattr(writer_agent, "run_agent_sync", _fake_run_agent_sync)
@@ -586,7 +587,7 @@ def test_writer_does_not_retry_for_plain_city_prefixed_lines_when_covered(
         **_kwargs: object,
     ) -> _FakeRunResult:
         del log_llm_payload
-        captured_inputs.append(json.loads(input_text))
+        captured_inputs.append(parse_llm_serialized(input_text))
         return _FakeRunResult(responses.pop(0))
 
     monkeypatch.setattr(writer_agent, "run_agent_sync", _fake_run_agent_sync)
@@ -702,6 +703,36 @@ def test_writer_footer_does_not_mark_external_evidence_city_as_no_evidence() -> 
     assert "- Krakow" in content
 
 
+def test_writer_footer_marks_ccc_only_enrichment_as_no_evidence() -> None:
+    context_bundle: dict[str, object] = {
+        "selected_cities": ["Krakow"],
+        "markdown": {
+            "excerpt_count": 0,
+            "selected_city_names": ["Krakow"],
+            "excerpts": [],
+        },
+        "enrichment": {
+            "enriched_fields": [
+                {
+                    "city": "Krakow",
+                    "field": "secap_local_co2_reduction_2030_target",
+                    "status": "resolved",
+                    "source": "ccc",
+                }
+            ],
+        },
+    }
+
+    content, *_ = writer_agent._prepare_writer_content(
+        content="## Executive Summary\nKrakow has only CCC status metadata.",
+        context_bundle=context_bundle,
+        selected_city_names=["Krakow"],
+    )
+
+    assert "## Cities with no important evidence found" in content
+    assert "- Krakow: no important evidence was found in the provided excerpts." in content
+
+
 def test_build_writer_context_bundle_keeps_only_writer_relevant_markdown_fields() -> None:
     context_bundle: dict[str, object] = {
         "research_question": "Refined question",
@@ -769,6 +800,89 @@ def test_build_writer_context_bundle_keeps_only_writer_relevant_markdown_fields(
     assert "batch_failures" not in markdown_bundle
     assert "decision_audit" not in markdown_bundle
     assert "error" not in markdown_bundle
+
+
+def test_build_writer_context_bundle_filters_enrichment_to_batch_cities() -> None:
+    context_bundle: dict[str, object] = {
+        "research_question": "Refined question",
+        "analysis_mode": "city_by_city",
+        "enrichment": {
+            "field_manifest": {
+                "query_fields": [{"field": "capex", "scope": "municipal"}],
+                "non_estimable_fields": [],
+            },
+            "gap_manifest": {
+                "city_gaps": [
+                    {"city": "Munich", "blank_fields": ["capex"]},
+                    {"city": "Berlin", "blank_fields": ["capex"]},
+                ]
+            },
+            "enriched_fields": [
+                {"city": "Munich", "field": "capex"},
+                {"city": "Berlin", "field": "capex"},
+            ],
+            "external_evidence": [
+                {"city": "Munich", "field": "capex"},
+                {"city": "Berlin", "field": "capex"},
+            ],
+            "external_resolutions": [
+                {"city": "Munich", "field": "capex"},
+                {"city": "Berlin", "field": "capex"},
+            ],
+            "external_no_evidence": [
+                {"city": "Munich", "field": "capex"},
+                {"city": "Berlin", "field": "capex"},
+            ],
+            "assumptions": [
+                {"city": "Munich", "field_name": "capex"},
+                {"city": "Berlin", "field_name": "capex"},
+            ],
+            "non_estimable": [
+                {"city": "Munich", "field_name": "capex"},
+                {"city": "Berlin", "field_name": "capex"},
+            ],
+            "web_findings": [
+                {"city": "Munich", "field": "capex"},
+                {"city": "Berlin", "field": "capex"},
+            ],
+            "freshness_results": [
+                {"city": "Munich", "field": "capex"},
+                {"city": "Berlin", "field": "capex"},
+            ],
+            "meta": {"total_gaps": 2},
+        },
+        "markdown": {
+            "status": "success",
+            "analysis_mode": "city_by_city",
+            "excerpt_count": 0,
+            "excerpts": [],
+        },
+    }
+
+    writer_bundle = build_writer_context_bundle(
+        context_bundle=context_bundle,
+        excerpts=[],
+        city_names=["Munich"],
+    )
+
+    enrichment = writer_bundle["enrichment"]
+    assert isinstance(enrichment, dict)
+    assert enrichment["field_manifest"]["query_fields"][0]["field"] == "capex"
+    assert enrichment["meta"] == {"total_gaps": 2}
+    assert enrichment["gap_manifest"]["city_gaps"] == [
+        {"city": "Munich", "blank_fields": ["capex"]}
+    ]
+    for key in (
+        "enriched_fields",
+        "external_evidence",
+        "external_resolutions",
+        "external_no_evidence",
+        "assumptions",
+        "non_estimable",
+        "web_findings",
+        "freshness_results",
+    ):
+        assert [record["city"] for record in enrichment[key]] == ["Munich"]
 
 
 def test_writer_returns_partial_coverage_metadata_after_retry_exhaustion(
@@ -889,7 +1003,7 @@ def test_writer_uses_multi_pass_batches_and_combines_them(
         **_kwargs: object,
     ) -> _FakeRunResult:
         del log_llm_payload
-        payload = json.loads(input_text)
+        payload = parse_llm_serialized(input_text)
         captured_payloads.append(payload)
         if "draft_answers" in payload:
             return _FakeRunResult(
@@ -991,7 +1105,7 @@ def test_writer_retries_transient_error_while_combining_multi_pass_drafts(
         **_kwargs: object,
     ) -> _FakeRunResult:
         del log_llm_payload
-        payload = json.loads(input_text)
+        payload = parse_llm_serialized(input_text)
         if "draft_answers" in payload:
             combine_attempts["count"] += 1
             if combine_attempts["count"] == 1:
@@ -1131,7 +1245,7 @@ def test_writer_multi_pass_diagnostics_can_be_persisted_without_paths(
         **_kwargs: object,
     ) -> _FakeRunResult:
         del log_llm_payload
-        payload = json.loads(input_text)
+        payload = parse_llm_serialized(input_text)
         if "draft_answers" in payload:
             return _FakeRunResult(
                 WriterOutput(

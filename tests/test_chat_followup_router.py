@@ -1,4 +1,3 @@
-import json
 from pathlib import Path
 
 import pytest
@@ -7,6 +6,7 @@ from backend.api.services.chat_reply_helpers import build_router_payload
 from backend.api.services.models import LoadedChatSource
 from backend.modules.orchestrator import agent as orchestrator_agent
 from backend.modules.orchestrator.models import ChatFollowupDecision
+from backend.utils.llm_serialization import parse_llm_serialized
 from backend.utils.config import (
     AssumptionsReviewerConfig,
     AppConfig,
@@ -129,7 +129,7 @@ def test_route_chat_followup_returns_structured_decision(
         assert agent is sentinel_agent
         assert max_turns == config.retry.max_attempts
         assert not log_llm_payload
-        captured_input.update(json.loads(input_text))
+        captured_input.update(parse_llm_serialized(input_text))
         return _FakeRunResult(decision)
 
     monkeypatch.setattr(orchestrator_agent, "run_agent_sync", _fake_run_agent_sync)

@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import json
 from pathlib import Path
 
 from agents import Agent, function_tool
@@ -16,6 +15,7 @@ from backend.services.agents import (
     run_agent_sync,
 )
 from backend.utils.config import AppConfig
+from backend.utils.llm_serialization import serialize_for_llm
 from backend.utils.prompts import load_prompt
 from backend.utils.tokenization import get_max_input_tokens
 
@@ -149,7 +149,7 @@ def decide_next_action(
     }
     result = run_agent_sync(
         agent,
-        json.dumps(payload, ensure_ascii=False),
+        serialize_for_llm(payload),
         max_turns=config.retry.max_attempts,
         log_llm_payload=log_llm_payload,
     )
@@ -169,7 +169,7 @@ def route_chat_followup(
     agent = build_chat_followup_router_agent(config, api_key)
     result = run_agent_sync(
         agent,
-        json.dumps(payload, ensure_ascii=False),
+        serialize_for_llm(payload),
         max_turns=config.retry.max_attempts,
         log_llm_payload=log_llm_payload,
     )
@@ -201,7 +201,7 @@ def refine_research_question(
     }
     result = run_agent_sync(
         agent,
-        json.dumps(payload, ensure_ascii=False),
+        serialize_for_llm(payload),
         max_turns=config.retry.max_attempts,
         log_llm_payload=log_llm_payload,
     )

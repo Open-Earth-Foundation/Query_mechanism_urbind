@@ -26,6 +26,7 @@ from backend.modules.tef_mapper.numeric_rollup import (
     build_numeric_facts,
     classify_numeric_unit_with_rules,
 )
+from backend.utils.llm_serialization import parse_llm_serialized
 from tests.support import build_test_app_config
 
 KRAKOW_SOURCE_TRUTH_DIR = Path("backend/benchmarks/tef_mapping/krakow_source_truth")
@@ -208,7 +209,7 @@ def _patch_source_truth_agents(
         input_data: str,
         **_kwargs: object,
     ) -> _FakeRunResult:
-        payload = json.loads(input_data)
+        payload = parse_llm_serialized(input_data)
         record_id = payload["initiative"]["record_id"]
         expected = expected_by_record[record_id]
         primary_mapping = expected["primary_tef_mapping"]
@@ -306,7 +307,7 @@ def _patch_fake_agents(
     )
 
     def fake_run_agent_sync(agent: _FakeAgent, input_data: str, **_kwargs: object) -> _FakeRunResult:
-        payload = json.loads(input_data)
+        payload = parse_llm_serialized(input_data)
         calls.append((agent.stage, payload))
         if agent.stage == "sector":
             if single_family_hvac_branch:

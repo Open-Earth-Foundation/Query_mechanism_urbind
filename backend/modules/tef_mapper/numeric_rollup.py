@@ -15,6 +15,7 @@ from backend.modules.initiative_extractor.models import InitiativeExtractionReco
 from backend.modules.tef_mapper.models import TefFinalMappingRecord, TefTargetType
 from backend.utils.config import AppConfig
 from backend.utils.json_io import read_json_object, write_json
+from backend.utils.llm_serialization import serialize_for_llm
 from backend.utils.prompts import load_prompt
 
 NumericFactBucket = Literal["current", "planned"]
@@ -422,7 +423,7 @@ def _llm_numeric_unit_classifier(
     def classify(payload: NumericUnitClassificationInput) -> NumericUnitClassification:
         result = run_agent_sync(
             agent,
-            json.dumps(payload.model_dump(mode="json"), ensure_ascii=False, indent=2),
+            serialize_for_llm(payload),
             max_turns=max(config.tef_mapper.max_turns, 1),
             log_llm_payload=log_llm_payload,
         )

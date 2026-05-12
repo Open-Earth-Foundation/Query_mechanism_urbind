@@ -15,12 +15,20 @@ Judging rules:
 </task>
 
 <input>
-Input is a JSON object with:
+Input is a TOON-serialized object with:
 - `question` (string): the original benchmark question.
 - `stage_label` (string): stage being evaluated, such as `stage_b` or `stage_c`.
 - `fact` (string): one gold fact to verify.
 - `candidate_text` (string): the text being judged for presence of the fact.
 </input>
+
+<tools>
+Available tools:
+- `submit_fact_judgement`: use exactly once to return the completed structured fact judgement after applying the task rules.
+- Do not call `submit_fact_judgement` for intermediate reasoning, drafts, validation notes, or status updates.
+- Do not call any tool other than `submit_fact_judgement`.
+- Do not emit plain text before or after the tool call.
+</tools>
 
 <output>
 You must call tool `submit_fact_judgement` and pass a JSON object (not a JSON string). Return only that tool call.

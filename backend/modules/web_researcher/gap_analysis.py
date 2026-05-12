@@ -33,6 +33,7 @@ from backend.modules.web_researcher.utils.json_helpers import (
     extract_message_text,
 )
 from backend.utils.config import AppConfig
+from backend.utils.llm_serialization import render_toon_block
 
 logger = logging.getLogger(__name__)
 
@@ -235,15 +236,11 @@ def _build_user_prompt(
     context_bundle: dict[str, Any],
 ) -> str:
     slim = _slim_context_for_gap_analysis(context_bundle)
-    context_json = json.dumps(slim, ensure_ascii=False, indent=2, default=str)
     research_question = context_bundle.get("research_question", question)
     return (
         f"User question:\n{question.strip()}\n\n"
         f"Research question:\n{research_question}\n\n"
-        "Context bundle (contains markdown excerpts and run metadata):\n"
-        "```json\n"
-        f"{context_json}\n"
-        "```\n\n"
+        f"{render_toon_block('Context bundle TOON (contains markdown excerpts and run metadata)', slim)}\n\n"
         "Decompose the question into granular fields, classify each, then list per-city gaps.\n"
         "Return only the JSON object described in your instructions.\n"
     )
@@ -475,24 +472,16 @@ def _build_detect_user_prompt(
     context_bundle: dict[str, Any],
 ) -> str:
     slim = _slim_context_for_gap_analysis(context_bundle)
-    context_json = json.dumps(slim, ensure_ascii=False, indent=2, default=str)
-    fields_json = json.dumps(
+    fields_block = render_toon_block(
+        "Pre-decomposed query fields TOON (DO NOT re-classify)",
         [field.model_dump() for field in decomposition.query_fields],
-        ensure_ascii=False,
-        indent=2,
     )
     research_question = context_bundle.get("research_question", question)
     return (
         f"User question:\n{question.strip()}\n\n"
         f"Research question:\n{research_question}\n\n"
-        "Pre-decomposed query fields (DO NOT re-classify):\n"
-        "```json\n"
-        f"{fields_json}\n"
-        "```\n\n"
-        "Context bundle (markdown excerpts and metadata):\n"
-        "```json\n"
-        f"{context_json}\n"
-        "```\n\n"
+        f"{fields_block}\n\n"
+        f"{render_toon_block('Context bundle TOON (markdown excerpts and metadata)', slim)}\n\n"
         "Detect per-city gaps for the estimable / derivable fields.\n"
         "Return only the JSON object described in your instructions.\n"
     )

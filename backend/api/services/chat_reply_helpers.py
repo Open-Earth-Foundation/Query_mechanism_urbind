@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import json
 import logging
 import re
 import time
@@ -25,13 +24,13 @@ from backend.api.services.models import (
 from backend.modules.orchestrator.utils.references import is_valid_ref_id
 from backend.utils.city_normalization import format_city_stem
 from backend.utils.config import AppConfig
+from backend.utils.llm_serialization import count_serialized_tokens_for_llm
 from backend.utils.retry import (
     RetrySettings,
     compute_retry_delay_seconds,
     log_retry_event,
     log_retry_exhausted,
 )
-from backend.utils.tokenization import count_tokens
 from backend.modules.writer.utils.markdown_helpers import (
     extract_markdown_bundle,
     extract_markdown_excerpts as extract_bundle_excerpts,
@@ -323,14 +322,14 @@ def log_chat_router_preflight(
     router_payload: dict[str, object],
 ) -> None:
     """Log router payload sizing before the follow-up routing model runs."""
-    router_payload_tokens = count_tokens(json.dumps(router_payload, ensure_ascii=False))
+    router_payload_tokens = count_serialized_tokens_for_llm(router_payload)
     context_summaries: list[dict[str, object]] = []
     raw_contexts = router_payload.get("contexts")
     if isinstance(raw_contexts, list):
         for item in raw_contexts:
             if not isinstance(item, dict):
                 continue
-            rendered_tokens = count_tokens(json.dumps(item, ensure_ascii=False))
+            rendered_tokens = count_serialized_tokens_for_llm(item)
             context_summaries.append(
                 {
                     "source_type": item.get("source_type"),

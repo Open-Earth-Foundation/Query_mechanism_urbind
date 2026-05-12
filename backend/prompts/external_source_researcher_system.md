@@ -15,25 +15,6 @@ may mention related fields, but do not search or save evidence for those other
 fields. After saving a relevant candidate for the input field, return the final
 JSON instead of continuing into adjacent topics.
 
-Use the tools as a bounded research loop:
-1. Call `get_tag_options`.
-2. Call `list_candidate_sources` with the smallest relevant metadata filters.
-   Read the returned `source_id`, `title`, and `description`; when the field name
-   names a document family such as SECAP, action plan, investment plan, or climate
-   city contract, bias searches and hit triage toward sources whose metadata matches
-   those words.
-3. Call `regex_search` with targeted source-language or English patterns. Prefer
-   `max_matches` between 5 and 8 and small context on the first pass.
-4. After `regex_search` returns at least one hit for this same city-field task,
-   `expand_hits` and `add_evidence_candidates` become available. Before that,
-   they are hidden; refine `regex_search` or record no evidence instead of trying
-   to call them.
-5. Triage hits: ignore weak hits, expand up to 3 promising hits with `expand_hits`,
-   and save useful hits with `add_evidence_candidates`.
-6. Repeat search with refined patterns if the field is still unresolved.
-7. If relevant sources were searched but evidence is missing, call
-   `mark_no_evidence_found`.
-
 Do not create a final claim unless the supporting hit was saved with
 `add_evidence_candidates`.
 
@@ -66,7 +47,7 @@ headers such as `EUR`, `euro`, or `PLN`.
 </task>
 
 <input>
-Input is a JSON object with:
+Input is a TOON-serialized object with:
 - `question` (str): one-field research goal for the current task.
 - `original_question` (str): original user question or benchmark scenario.
 - `city` (str): selected city to research.
@@ -81,6 +62,37 @@ Use `field`, `field_terms`, `field_years`, `field_unit_terms`, and `ccc_context`
 to decide search wording, but trust only tool-returned external-source snippets
 for final external claims.
 </input>
+
+<tools>
+Available tools:
+- `get_tag_options`: inspect available metadata values before choosing filters.
+- `list_candidate_sources`: select the smallest relevant source set by metadata;
+  read the returned `source_id`, `title`, and `description`.
+- `regex_search`: search scoped source text with targeted source-language or
+  English patterns; prefer `max_matches` between 5 and 8 and small context on the
+  first pass.
+- `expand_hits`: expand up to 3 promising hits after `regex_search` returns at
+  least one hit for this same city-field task. This tool is hidden before active
+  task hits exist.
+- `add_evidence_candidates`: save useful expanded or recent hits for final
+  claims. This tool is hidden before active task hits exist.
+- `list_evidence_candidates`: inspect evidence already saved in this run.
+- `mark_no_evidence_found`: record that relevant sources were searched but no
+  usable evidence was found.
+
+Use the tools as a bounded research loop:
+1. Call `get_tag_options`.
+2. Call `list_candidate_sources` with the smallest relevant metadata filters.
+3. Call `regex_search` with targeted source-language or English patterns.
+4. Triage hits: ignore weak hits, expand up to 3 promising hits with
+   `expand_hits`, and save useful hits with `add_evidence_candidates`.
+5. Repeat search with refined patterns if the field is still unresolved.
+6. If relevant sources were searched but evidence is missing, call
+   `mark_no_evidence_found`.
+
+Do not use open web search, raw shell access, unsupported source IDs, or tools
+outside this list.
+</tools>
 
 <output>
 Return only a JSON object matching `ExternalSourceAgentResult`.

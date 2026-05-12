@@ -277,7 +277,8 @@ def test_system_prompt_header_avoids_inline_allowed_ref_list() -> None:
     )
     assert "Allowed references for this turn:" not in header
     assert "present in that catalog" in header
-    assert "calculator tools are available" in header
+    assert "<tools>" in header
+    assert "sum_numbers" in header
 
 
 def test_chat_tool_definitions_include_all_calculator_tools() -> None:

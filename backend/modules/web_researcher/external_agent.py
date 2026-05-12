@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import json
 import logging
 import re
 from pathlib import Path
@@ -33,6 +32,7 @@ from backend.services.agents import (
     run_agent_sync,
 )
 from backend.utils.config import AppConfig
+from backend.utils.llm_serialization import serialize_for_llm
 from backend.utils.prompts import load_prompt
 
 logger = logging.getLogger(__name__)
@@ -79,7 +79,7 @@ def run_external_source_enrichment(
         try:
             result = run_agent_sync(
                 agent,
-                json.dumps(task, ensure_ascii=False),
+                serialize_for_llm(task),
                 max_turns=config.enrichment.max_turns,
             )
             if isinstance(result.final_output, ExternalSourceAgentResult):
@@ -345,7 +345,7 @@ def _finalize_from_expanded_hits(
     try:
         result = run_agent_sync(
             finalizer,
-            json.dumps(payload, ensure_ascii=False),
+            serialize_for_llm(payload),
             max_turns=2,
         )
     except Exception:

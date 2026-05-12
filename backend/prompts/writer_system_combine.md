@@ -12,7 +12,7 @@ Never output free text outside tool calls.
 </task>
 
 <input>
-Input is a JSON object with:
+Input is a TOON-serialized object with:
 - `question` (str): original user question
 - `analysis_mode` (`aggregate` | `city_by_city`): output layout to preserve
 - `selected_cities` (list[str]): cities that must appear in the final footer

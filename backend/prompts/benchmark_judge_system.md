@@ -24,13 +24,21 @@ Judging rules:
 </task>
 
 <input>
-Input is a JSON object with:
+Input is a TOON-serialized object with:
 - `question` (string): the original benchmark question.
 - `left_label` (string): identifier for left candidate.
 - `right_label` (string): identifier for right candidate.
 - `left_text` (string): full markdown output for the left candidate.
 - `right_text` (string): full markdown output for the right candidate.
 </input>
+
+<tools>
+Available tools:
+- `submit_benchmark_judgement`: use exactly once to return the completed structured benchmark evaluation after applying the task rules.
+- Do not call `submit_benchmark_judgement` for intermediate reasoning, drafts, validation notes, or status updates.
+- Do not call any tool other than `submit_benchmark_judgement`.
+- Do not emit plain text before or after the tool call.
+</tools>
 
 <output>
 You must call tool `submit_benchmark_judgement` and pass a JSON object (not a JSON string). Return only that tool call.

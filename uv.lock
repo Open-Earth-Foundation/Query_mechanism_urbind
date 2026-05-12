@@ -2016,6 +2016,7 @@ dependencies = [
     { name = "python-dotenv" },
     { name = "pyyaml" },
     { name = "tiktoken" },
+    { name = "toon-format" },
     { name = "uvicorn" },
 ]
 
@@ -2037,6 +2038,7 @@ requires-dist = [
     { name = "python-dotenv", specifier = "==1.2.2" },
     { name = "pyyaml", specifier = "==6.0.3" },
     { name = "tiktoken", specifier = "==0.12.0" },
+    { name = "toon-format", git = "https://github.com/toon-format/toon-python.git?rev=90861444e5bf7d6408e91bd95e58dba41dd99be8" },
     { name = "uvicorn", specifier = "==0.38.0" },
 ]
 
@@ -2461,6 +2463,11 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/65/71/0670843133a43d43070abeb1949abfdef12a86d490bea9cd9e18e37c5ff7/tokenizers-0.22.2-cp39-abi3-win_amd64.whl", hash = "sha256:c9ea31edff2968b44a88f97d784c2f16dc0729b8b143ed004699ebca91f05c48", size = 2747786, upload-time = "2026-01-05T10:45:18.411Z" },
     { url = "https://files.pythonhosted.org/packages/72/f4/0de46cfa12cdcbcd464cc59fde36912af405696f687e53a091fb432f694c/tokenizers-0.22.2-cp39-abi3-win_arm64.whl", hash = "sha256:9ce725d22864a1e965217204946f830c37876eee3b2ba6fc6255e8e903d5fcbc", size = 2612133, upload-time = "2026-01-05T10:45:17.232Z" },
 ]
+
+[[package]]
+name = "toon-format"
+version = "0.9.0b1"
+source = { git = "https://github.com/toon-format/toon-python.git?rev=90861444e5bf7d6408e91bd95e58dba41dd99be8#90861444e5bf7d6408e91bd95e58dba41dd99be8" }
 
 [[package]]
 name = "tqdm"

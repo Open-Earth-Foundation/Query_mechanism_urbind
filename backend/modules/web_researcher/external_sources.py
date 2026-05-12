@@ -12,6 +12,7 @@ from pathlib import Path
 from typing import Any
 
 import yaml
+from pydantic import ValidationError
 
 from backend.modules.web_researcher.models import (
     EvidenceCandidate,
@@ -268,6 +269,7 @@ class ExternalSearchSession:
         """Start a field-scoped research budget while preserving run-level IDs."""
         self._active_city = city
         self._active_field = field
+        self._last_candidate_source_ids = []
         self._field_regex_search_count = 0
         self._hit_ids_by_task.setdefault(self._active_task_key(), [])
         self._expanded_hit_ids_by_task.setdefault(self._active_task_key(), [])
@@ -470,9 +472,7 @@ class ExternalSearchSession:
         expanded: list[SearchHit] = []
         source_ids: list[str] = []
         for hit_id in hit_ids:
-            record = self._hit_records.get(hit_id)
-            if record is None:
-                raise ExternalSourceToolError("HIT_NOT_FOUND", f"Unknown hit_id: {hit_id}")
+            record = self._get_active_task_hit_record(hit_id)
             index = self.registry.get_index(record.source_id)
             source_ids.append(record.source_id)
             self._remember_expanded_hit(record.hit_id)
@@ -537,12 +537,7 @@ class ExternalSearchSession:
         start = time.monotonic()
         saved: list[EvidenceCandidate] = []
         for candidate_input in candidates:
-            record = self._hit_records.get(candidate_input.hit_id)
-            if record is None:
-                raise ExternalSourceToolError(
-                    "HIT_NOT_FOUND",
-                    f"Unknown hit_id: {candidate_input.hit_id}",
-                )
+            record = self._get_active_task_hit_record(candidate_input.hit_id)
             hit = _build_search_hit_from_record(
                 record,
                 index=self.registry.get_index(record.source_id),
@@ -682,6 +677,18 @@ class ExternalSearchSession:
 
         return self._last_candidate_source_ids[: self.limits.max_files_per_search]
 
+    def _get_active_task_hit_record(self, hit_id: str) -> HitRecord:
+        """Return a hit only when it belongs to the current active city-field task."""
+        record = self._hit_records.get(hit_id)
+        if record is None:
+            raise ExternalSourceToolError("HIT_NOT_FOUND", f"Unknown hit_id: {hit_id}")
+        if hit_id not in self._hit_ids_by_task.get(self._active_task_key(), []):
+            raise ExternalSourceToolError(
+                "HIT_NOT_FOUND",
+                f"hit_id does not belong to the active city-field task: {hit_id}",
+            )
+        return record
+
     def _record_tool_call(
         self,
         tool: str,
@@ -736,11 +743,19 @@ class ExternalSearchSession:
 
 
 def try_load_external_source_registry(root_dir: Path) -> SourceRegistry | None:
-    """Load the source registry when a source library is present."""
+    """Load the source registry, returning None when it is missing or invalid."""
     try:
         registry = SourceRegistry.load(root_dir)
     except FileNotFoundError:
         logger.info("External source library skipped; sources.yaml not found under %s", root_dir)
+        return None
+    except (ExternalSourceToolError, ValidationError, yaml.YAMLError) as exc:
+        logger.warning(
+            "External source library skipped; invalid sources.yaml under %s: %s",
+            root_dir,
+            exc,
+            exc_info=True,
+        )
         return None
     if not registry.has_sources():
         logger.info("External source library skipped; no sources found under %s", root_dir)

@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import json
 import logging
 
 from backend.modules.initiative_extractor.models import (
@@ -14,7 +13,10 @@ from backend.modules.initiative_extractor.models import (
 from backend.modules.initiative_extractor.records import _apply_semantic_dedupe_groups
 from backend.utils.city_normalization import normalize_city_key
 from backend.utils.config import AppConfig
-from backend.utils.tokenization import count_tokens
+from backend.utils.llm_serialization import (
+    count_serialized_tokens_for_llm,
+    serialize_for_llm,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -76,7 +78,7 @@ def _build_semantic_dedupe_batches(
                 "record_id": record.record_id,
                 **record.initiative.model_dump(mode="json"),
             }
-            item_tokens = count_tokens(json.dumps(payload, ensure_ascii=False))
+            item_tokens = count_serialized_tokens_for_llm(payload)
             should_flush = current and (
                 len(current) >= max_records or current_tokens + item_tokens > max_tokens
             )
@@ -102,7 +104,7 @@ def _run_semantic_dedupe_batch(
     agent = _get_thread_semantic_dedupe_agent(config, api_key)
     result = run_agent_sync(
         agent,
-        json.dumps(_semantic_dedupe_payload(records), ensure_ascii=False),
+        serialize_for_llm(_semantic_dedupe_payload(records)),
         max_turns=max(config.initiative_extractor.max_turns, 1),
         log_llm_payload=log_llm_payload,
     )

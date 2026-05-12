@@ -292,7 +292,7 @@ def _extract_enrichment_evidence_city_keys(context_bundle: dict[str, object]) ->
     for record in _iter_record_dicts(enrichment.get("enriched_fields")):
         status = str(record.get("status", "")).strip().lower()
         source = str(record.get("source", "")).strip().lower()
-        if status == "still_missing" or source in {"", "none"}:
+        if status == "still_missing" or source in {"", "none", "ccc"}:
             continue
         resolved_key = city_key(str(record.get("city", "")))
         if resolved_key:

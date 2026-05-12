@@ -12,7 +12,7 @@ Never output free text outside tool calls.
 </task>
 
 <input>
-Input is a JSON object with:
+Input is a TOON-serialized object with:
 - `question` (str)
 - `analysis_mode` (`aggregate` | `city_by_city`)
 - `selected_cities` (list[str]): cities selected for this run, which you must explicitly cover
@@ -33,6 +33,16 @@ Input is a JSON object with:
   - `saturation_warning` (string, optional): warning if >60% of estimates used Method C
   - `meta` (object): `created_at`, `gap_analyst_model`, `assumptions_estimator_model`, `total_gaps`, `estimable_count`, `non_estimable_count`, `web_findings_count`, `external_evidence_count`, `elapsed_seconds`
 </input>
+
+<tools>
+Available tools:
+- `submit_writer_output`: use exactly once to return the completed final answer
+  after synthesizing the provided `context_bundle`.
+- Do not call `submit_writer_output` for intermediate reasoning, drafts,
+  validation notes, or status updates.
+- Do not call any tool other than `submit_writer_output`.
+- Do not emit plain text before or after the tool call.
+</tools>
 
 <output>
 You must call tool `submit_writer_output` and pass a JSON object (not a JSON string).
