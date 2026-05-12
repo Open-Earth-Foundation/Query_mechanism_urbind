@@ -29,6 +29,17 @@ _WRITER_ENRICHMENT_KEYS = (
     "meta",
 )
 
+_CITY_SCOPED_ENRICHMENT_LIST_KEYS = {
+    "enriched_fields",
+    "external_evidence",
+    "external_resolutions",
+    "external_no_evidence",
+    "assumptions",
+    "non_estimable",
+    "web_findings",
+    "freshness_results",
+}
+
 
 @dataclass(frozen=True)
 class WriterBatch:
@@ -388,19 +399,71 @@ def build_writer_context_bundle(
     }
     enrichment = context_bundle.get("enrichment")
     if isinstance(enrichment, dict):
-        writer_enrichment = _build_writer_enrichment(enrichment)
+        writer_enrichment = _build_writer_enrichment(enrichment, selected_city_names)
         if writer_enrichment:
             writer_context["enrichment"] = writer_enrichment
     return writer_context
 
 
-def _build_writer_enrichment(enrichment: dict[str, object]) -> dict[str, object]:
+def _build_writer_enrichment(
+    enrichment: dict[str, object],
+    city_names: list[str],
+) -> dict[str, object]:
     """Return only enrichment fields that the writer prompts consume."""
+    city_keys: set[str] = set()
+    for name in city_names:
+        resolved_key = city_key(name)
+        if resolved_key:
+            city_keys.add(resolved_key)
     return {
-        key: enrichment[key]
+        key: _filter_writer_enrichment_value(key, enrichment[key], city_keys)
         for key in _WRITER_ENRICHMENT_KEYS
         if key in enrichment and enrichment[key] is not None
     }
+
+
+def _filter_writer_enrichment_value(
+    key: str,
+    value: object,
+    selected_city_keys: set[str],
+) -> object:
+    """Filter city-scoped enrichment payloads to the current writer batch."""
+    if not selected_city_keys:
+        return value
+    if key == "gap_manifest":
+        return _filter_gap_manifest(value, selected_city_keys)
+    if key in _CITY_SCOPED_ENRICHMENT_LIST_KEYS:
+        return _filter_city_records(value, selected_city_keys)
+    return value
+
+
+def _filter_gap_manifest(value: object, selected_city_keys: set[str]) -> object:
+    """Filter `gap_manifest.city_gaps` to the current writer batch."""
+    if not isinstance(value, dict):
+        return value
+    filtered_manifest = dict(value)
+    city_gaps = filtered_manifest.get("city_gaps")
+    if isinstance(city_gaps, list):
+        filtered_manifest["city_gaps"] = _filter_city_records(city_gaps, selected_city_keys)
+    return filtered_manifest
+
+
+def _filter_city_records(value: object, selected_city_keys: set[str]) -> object:
+    """Filter list records with a `city` field to selected city keys."""
+    if not isinstance(value, list):
+        return value
+    return [
+        record
+        for record in value
+        if _record_city_key(record) in selected_city_keys
+    ]
+
+
+def _record_city_key(record: object) -> str:
+    """Return a normalized city key from a dictionary or object record."""
+    if isinstance(record, dict):
+        return city_key(str(record.get("city", "")))
+    return city_key(str(getattr(record, "city", "")))
 
 
 def _flatten_unit_city_names(units: list[_CityExcerptUnit]) -> list[str]:

@@ -702,6 +702,36 @@ def test_writer_footer_does_not_mark_external_evidence_city_as_no_evidence() -> 
     assert "- Krakow" in content
 
 
+def test_writer_footer_marks_ccc_only_enrichment_as_no_evidence() -> None:
+    context_bundle: dict[str, object] = {
+        "selected_cities": ["Krakow"],
+        "markdown": {
+            "excerpt_count": 0,
+            "selected_city_names": ["Krakow"],
+            "excerpts": [],
+        },
+        "enrichment": {
+            "enriched_fields": [
+                {
+                    "city": "Krakow",
+                    "field": "secap_local_co2_reduction_2030_target",
+                    "status": "resolved",
+                    "source": "ccc",
+                }
+            ],
+        },
+    }
+
+    content, *_ = writer_agent._prepare_writer_content(
+        content="## Executive Summary\nKrakow has only CCC status metadata.",
+        context_bundle=context_bundle,
+        selected_city_names=["Krakow"],
+    )
+
+    assert "## Cities with no important evidence found" in content
+    assert "- Krakow: no important evidence was found in the provided excerpts." in content
+
+
 def test_build_writer_context_bundle_keeps_only_writer_relevant_markdown_fields() -> None:
     context_bundle: dict[str, object] = {
         "research_question": "Refined question",
@@ -769,6 +799,89 @@ def test_build_writer_context_bundle_keeps_only_writer_relevant_markdown_fields(
     assert "batch_failures" not in markdown_bundle
     assert "decision_audit" not in markdown_bundle
     assert "error" not in markdown_bundle
+
+
+def test_build_writer_context_bundle_filters_enrichment_to_batch_cities() -> None:
+    context_bundle: dict[str, object] = {
+        "research_question": "Refined question",
+        "analysis_mode": "city_by_city",
+        "enrichment": {
+            "field_manifest": {
+                "query_fields": [{"field": "capex", "scope": "municipal"}],
+                "non_estimable_fields": [],
+            },
+            "gap_manifest": {
+                "city_gaps": [
+                    {"city": "Munich", "blank_fields": ["capex"]},
+                    {"city": "Berlin", "blank_fields": ["capex"]},
+                ]
+            },
+            "enriched_fields": [
+                {"city": "Munich", "field": "capex"},
+                {"city": "Berlin", "field": "capex"},
+            ],
+            "external_evidence": [
+                {"city": "Munich", "field": "capex"},
+                {"city": "Berlin", "field": "capex"},
+            ],
+            "external_resolutions": [
+                {"city": "Munich", "field": "capex"},
+                {"city": "Berlin", "field": "capex"},
+            ],
+            "external_no_evidence": [
+                {"city": "Munich", "field": "capex"},
+                {"city": "Berlin", "field": "capex"},
+            ],
+            "assumptions": [
+                {"city": "Munich", "field_name": "capex"},
+                {"city": "Berlin", "field_name": "capex"},
+            ],
+            "non_estimable": [
+                {"city": "Munich", "field_name": "capex"},
+                {"city": "Berlin", "field_name": "capex"},
+            ],
+            "web_findings": [
+                {"city": "Munich", "field": "capex"},
+                {"city": "Berlin", "field": "capex"},
+            ],
+            "freshness_results": [
+                {"city": "Munich", "field": "capex"},
+                {"city": "Berlin", "field": "capex"},
+            ],
+            "meta": {"total_gaps": 2},
+        },
+        "markdown": {
+            "status": "success",
+            "analysis_mode": "city_by_city",
+            "excerpt_count": 0,
+            "excerpts": [],
+        },
+    }
+
+    writer_bundle = build_writer_context_bundle(
+        context_bundle=context_bundle,
+        excerpts=[],
+        city_names=["Munich"],
+    )
+
+    enrichment = writer_bundle["enrichment"]
+    assert isinstance(enrichment, dict)
+    assert enrichment["field_manifest"]["query_fields"][0]["field"] == "capex"
+    assert enrichment["meta"] == {"total_gaps": 2}
+    assert enrichment["gap_manifest"]["city_gaps"] == [
+        {"city": "Munich", "blank_fields": ["capex"]}
+    ]
+    for key in (
+        "enriched_fields",
+        "external_evidence",
+        "external_resolutions",
+        "external_no_evidence",
+        "assumptions",
+        "non_estimable",
+        "web_findings",
+        "freshness_results",
+    ):
+        assert [record["city"] for record in enrichment[key]] == ["Munich"]
 
 
 def test_writer_returns_partial_coverage_metadata_after_retry_exhaustion(

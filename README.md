@@ -224,7 +224,7 @@ python -m backend.scripts.extract_initiatives --markdown-path documents --city K
 The extractor writes to `output/initiative_extraction/<run_id>/` with source manifests, line-aware
 segments, raw per-segment extractions, candidate records, semantic duplicate groups, final
 deduplicated initiatives, review items, and a summary. `03_deduped/initiatives.jsonl` contains only
-the agreed canonical v1 initiative shape from `plan.md`; generated ids and quote-only audit
+the agreed canonical v1 initiative shape from `docs/plan.md`; generated ids and quote-only audit
 citations are kept separately in `03_deduped/initiative_records.jsonl` for downstream mapping. Use
 `--run-id`, `--output-dir`, `--max-workers`, and `--log-llm-payload` to override run naming,
 artifact location, concurrency, and
@@ -307,6 +307,9 @@ the writer. Outputs are written under
 `output/external_source_benchmarks/krakow/<run_id>/`, including `benchmark_summary.json`,
 `context_bundle.json`, `writer_answer.md`, and `external_sources/external_evidence.json`.
 Use `--skip-writer` for extraction-only validation.
+
+Design notes and example workflows for this stage live in `docs/plan.md`,
+`docs/example.md`, and `docs/tool_implementation.md`.
 
 ### Krakow TEF source-of-truth assets
 
