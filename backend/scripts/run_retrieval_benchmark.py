@@ -23,7 +23,7 @@ Inputs:
   - --markdown-option: Markdown benchmark option in format `<batch_max_chunks>:<max_workers>`; repeatable.
     Default options are `16:8`, `32:4`, `32:8`.
   - --use-query-overrides/--no-use-query-overrides: Enable/disable fixed retrieval queries for benchmark stability (default: enabled).
-  - --query-overrides: JSON file mapping benchmark question -> canonical query + retrieval queries (default: backend/benchmarks/prompts/retrieval_query_overrides.json).
+  - --query-overrides: JSON file mapping benchmark question -> compatibility canonical query plus optional retrieval queries used as question 2 and 3 (default: backend/benchmarks/prompts/retrieval_query_overrides.json).
   - --log-llm-payload/--no-log-llm-payload: Enable/disable full LLM payload logging (default: off).
 - Files/paths:
   - Env files use dotenv KEY=VALUE format.
@@ -132,7 +132,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--query-overrides",
         default=str(DEFAULT_QUERY_OVERRIDES_FILE),
-        help="JSON file mapping question -> canonical query + retrieval queries.",
+        help=(
+            "JSON file mapping question -> compatibility canonical query plus "
+            "optional retrieval queries."
+        ),
     )
     parser.add_argument(
         "--log-llm-payload",

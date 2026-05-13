@@ -2,9 +2,7 @@ from __future__ import annotations
 
 import inspect
 import logging
-from typing import Callable, Literal, NoReturn
-
-from agents.exceptions import MaxTurnsExceeded
+from typing import Callable, Literal
 
 from backend.modules.markdown_researcher.agent import extract_markdown_excerpts
 from backend.modules.markdown_researcher.models import MarkdownResearchResult
@@ -13,10 +11,6 @@ from backend.modules.markdown_researcher.services import (
     load_markdown_documents,
     resolve_batch_input_token_limit,
     split_documents_by_city,
-)
-from backend.modules.orchestrator.agent import refine_research_question
-from backend.modules.orchestrator.models import (
-    ResearchQuestionRefinement,
 )
 from backend.modules.orchestrator.utils import (
     attach_run_file_logger,
@@ -224,15 +218,12 @@ def run_pipeline(
     query_3: str | None = None,
     api_key_override: str | None = None,
     markdown_func: Callable[..., MarkdownResearchResult] = extract_markdown_excerpts,
-    refine_question_func: Callable[
-        ..., ResearchQuestionRefinement
-    ] = refine_research_question,
     writer_func: Callable[..., WriterOutput] = write_markdown,
 ) -> RunPaths:
     """
     Run the multi-agent document builder pipeline.
 
-    Orchestrates research-question refinement, markdown extraction, and final writing.
+    Orchestrates retrieval-query preparation, markdown extraction, and final writing.
 
     Args:
         question: User question to answer
@@ -241,25 +232,21 @@ def run_pipeline(
         log_llm_payload: Whether to log full LLM request/response payloads
         selected_cities: Optional list of city names to limit markdown document loading
         analysis_mode: Writer synthesis mode ("aggregate" | "city_by_city")
-        query_mode: Retrieval query mode ("standard" uses refinement, "dev" uses direct inputs)
-        query_2: Optional second direct retrieval query used in dev mode
-        query_3: Optional third direct retrieval query used in dev mode
+        query_mode: Retrieval query mode label persisted for run diagnostics
+        query_2: Optional second direct retrieval query
+        query_3: Optional third direct retrieval query
         api_key_override: Optional per-run API key override
         markdown_func: Markdown extraction function (default: extract_markdown_excerpts)
-        refine_question_func: Question refinement function (default: refine_research_question)
         writer_func: Document writing function (default: write_markdown)
 
     Returns:
         Run paths containing output artifacts
 
     Raises:
-        ValueError: When standard-mode research-question refinement raises
-            ``MaxTurnsExceeded`` or ``ValueError``, or returns an empty
-            research question.
-        Exception: Any unexpected exception from research-question refinement or the
-            write phase is re-raised after ``run_logger.finalize("failed")`` and
-            log handler teardown have run, so that ``error_log.txt`` and
-            ``run.json`` are always written on failure.
+        Exception: Any unexpected exception from the write phase is re-raised after
+            ``run_logger.finalize("failed")`` and log handler teardown have run,
+            so that ``error_log.txt`` and ``run.json`` are always written on
+            failure.
     """
     api_key = (
         api_key_override.strip()
@@ -276,93 +263,19 @@ def run_pipeline(
     run_log_handler = attach_run_file_logger(paths.base_dir)
     progress = ProgressTracker(paths.base_dir)
 
-    def _fail_research_question_refinement(
-        message: str,
-        exc: Exception | None = None,
-    ) -> NoReturn:
-        """Finalize the run and raise a user-facing refinement failure."""
-        run_logger.record_decision(
-            {
-                "status": "error",
-                "run_id": run_id_value,
-                "reason": "Research question refinement failed",
-                "error": {
-                    "code": "RESEARCH_QUESTION_REFINEMENT_ERROR",
-                    "message": message,
-                },
-            }
-        )
-        run_logger.finalize("failed", finish_reason="research_question_refinement_failed")
-        detach_run_file_logger(run_log_handler)
-        if exc is None:
-            raise ValueError(message)
-        raise ValueError(message) from exc
-
-    progress.start_step("question_refinement", "Refining research question")
+    progress.start_step("question_refinement", "Preparing retrieval queries")
     canonical_research_query = question.strip() or question
-    retrieval_queries: list[str]
-    if query_mode == "dev":
-        retrieval_queries = _build_retrieval_queries(
-            canonical_research_query,
-            query_2,
-            query_3,
-        ) or [canonical_research_query]
-        logger.info(
-            "Using direct retrieval queries for run_id=%s query_count=%d",
-            run_id_value,
-            len(retrieval_queries),
-        )
-    else:
-        # Standard mode keeps the current research-question refinement flow.
-        # We decided to fail fast and surface a user-facing message for now
-        # because we are not aligned yet on whether falling back is correct.
-        refinement_failure_message = (
-            "Could not prepare the research query for this request. Please try again."
-        )
-        retrieval_queries = [canonical_research_query]
-        try:
-            refinement = refine_question_func(
-                question,
-                config,
-                api_key,
-                selected_cities=selected_cities,
-                log_llm_payload=log_llm_payload,
-            )
-        except (MaxTurnsExceeded, ValueError) as exc:
-            _fail_research_question_refinement(refinement_failure_message, exc)
-        except Exception as exc:
-            logger.exception(
-                "Unexpected error during research question refinement for run_id=%s",
-                run_id_value,
-            )
-            run_logger.record_decision(
-                {
-                    "status": "error",
-                    "run_id": run_id_value,
-                    "reason": "Unexpected research question refinement error",
-                    "error": {
-                        "code": "RESEARCH_QUESTION_REFINEMENT_UNEXPECTED_ERROR",
-                        "message": str(exc) or exc.__class__.__name__,
-                    },
-                }
-            )
-            run_logger.finalize(
-                "failed",
-                finish_reason="research_question_refinement_unexpected_error",
-            )
-            detach_run_file_logger(run_log_handler)
-            raise
-
-        candidate = refinement.research_question.strip()
-        if candidate:
-            canonical_research_query = candidate
-        else:
-            _fail_research_question_refinement(refinement_failure_message)
-
-        retrieval_queries = _build_retrieval_queries(
-            canonical_research_query,
-            *refinement.retrieval_queries,
-        ) or [canonical_research_query]
+    retrieval_queries = _build_retrieval_queries(
+        canonical_research_query,
+        query_2,
+        query_3,
+    ) or [canonical_research_query]
+    logger.info(
+        "Using verbatim retrieval queries for run_id=%s query_mode=%s query_count=%d",
+        run_id_value,
+        query_mode,
+        len(retrieval_queries),
+    )
 
     run_logger.update_query_inputs(
         original_question=question,

@@ -1,6 +1,6 @@
 # Query Mechanism Urbind
 
-Multi-agent document builder that answers user questions from Markdown sources. It orchestrates research-question refinement, markdown extraction, and writing with OpenAI Agents, and logs every run artifact for inspection.
+Multi-agent document builder that answers user questions from Markdown sources. It orchestrates retrieval-query preparation, markdown extraction, and writing with OpenAI Agents, and logs every run artifact for inspection.
 
 ## Requirements
 
@@ -96,7 +96,7 @@ Default output directory is `output/` (unless overridden by `RUNS_DIR`).
 
 ### Vector retrieval sizing and thresholds
 
-When vector retrieval is enabled, retrieval runs per city and per query (original + refined variants), then merges and expands context.
+When vector retrieval is enabled, retrieval runs per city and per user-provided query (required question plus optional question 2 and 3), then merges and expands context.
 
 - For each (city x query), the retriever:
   - fetches up to `vector_store.retrieval_max_chunks_per_city_query` candidates from Chroma (ranked by increasing distance);
@@ -433,18 +433,18 @@ Useful flags:
 - `--markdown-option 16:8 --markdown-option 32:4 --markdown-option 32:8` — run explicit markdown benchmark options (`batch_max_chunks:max_workers`).
 - The benchmark runs every question in the questions file; `--repetitions N` runs each question N times per mode and markdown option (total runs = questions × repetitions × modes × markdown_options).
 
-**Vector-only reproducibility (same query and same retrieval queries):** To run the vector strategy multiple times with the exact same question, canonical research query, and retrieval queries (e.g. to check outcome stability):
+**Vector-only reproducibility (same query and same optional retrieval queries):** To run the vector strategy multiple times with the exact same question and optional retrieval queries (e.g. to check outcome stability):
 
 1. Run the pipeline once to get a run with the desired question and cities, e.g. `python -m backend.scripts.run_pipeline --question "What does Aachen do for PV rooftop?" --city Aachen --markdown-path documents`. Note the run id and open `output/<run_id>/research_question.json`.
 2. Create a one-line questions file (e.g. `my_questions.txt`) containing exactly the `original_question` from that run.
-3. Create a query-overrides JSON (e.g. `my_overrides.json`) with one key: the same `original_question` string; value: `{"canonical_research_query": "<from research_question.json>", "retrieval_queries": [<from research_question.json>]}`. You can copy these fields from `research_question.json`.
+3. Create a query-overrides JSON (e.g. `my_overrides.json`) with one key: the same `original_question` string; value: `{"canonical_research_query": "<same as original_question>", "retrieval_queries": ["<optional query 2>", "<optional query 3>"]}`. The canonical field is retained for compatibility; initial runs use `original_question` verbatim as query 1.
 4. Run the benchmark in vector-only mode with fixed queries and several repetitions:
 
    ```
    python -m backend.scripts.run_retrieval_benchmark --questions-file my_questions.txt --query-overrides my_overrides.json --mode vector_store --repetitions 5 --city Aachen
    ```
 
-   Each run will use the same canonical research query and retrieval queries; only retrieval, extraction, and writing are re-executed. Compare `output/benchmarks/<benchmark_id>/runs/vector_store/*/final.md` (and optionally `retrieval.json`, `excerpts.json`) across repetitions.
+   Each run will use the same verbatim question plus optional retrieval queries; only retrieval, extraction, and writing are re-executed. Compare `output/benchmarks/<benchmark_id>/runs/vector_store/*/final.md` (and optionally `retrieval.json`, `excerpts.json`) across repetitions.
 
 Benchmark behavior notes:
 
@@ -974,7 +974,7 @@ Artifacts are written under `output/<run_id>/`:
 - `research_question.json`: run query metadata payload. Includes:
   - `original_question`: raw user question.
   - `query_mode`: `standard` or `dev`.
-  - `canonical_research_query`: canonical research query used downstream.
+  - `canonical_research_query`: primary research query used downstream. For initial build runs this is the trimmed `original_question`, without an LLM rewrite.
   - `retrieval_queries`: retrieval-ready query list where index `0` is always `canonical_research_query`.
   - `retrieval_query_1` / `retrieval_query_2` / `retrieval_query_3`: explicit query slots written for easier inspection and reproducibility.
 - `markdown/excerpts.json`: markdown researcher evidence bundle. Includes `excerpts` (items with `quote`, `city_name`, `partial_answer`, `source_chunk_ids`), explicit decision fields (`accepted_chunk_ids`, `rejected_chunk_ids`, `unresolved_chunk_ids`, `batch_failures`), `inspected_cities` (normalized backend city keys present in inspected markdown inputs), and `excerpt_count` (count of extracted excerpts). When split recovery is triggered, successful child-batch evidence and decisions are kept, and only final failed leaf chunks remain unresolved. Stage B extraction recall uses the union of `excerpts[].source_chunk_ids`.

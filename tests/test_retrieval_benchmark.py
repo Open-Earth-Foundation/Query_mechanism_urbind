@@ -8,8 +8,10 @@ from backend.benchmarks.runner import (
     BenchmarkMarkdownConfig,
     BenchmarkModeConfig,
     _collect_llm_issue_counts,
+    _optional_queries_from_override,
     run_retrieval_strategy_benchmark,
 )
+from backend.modules.orchestrator.models import ResearchQuestionRefinement
 from backend.scripts.run_retrieval_benchmark import _build_markdown_configs
 
 
@@ -74,6 +76,23 @@ def test_collect_llm_issue_counts_uses_max_turns_fallback(tmp_path: Path) -> Non
     counts = _collect_llm_issue_counts(run_log)
     assert counts["max_turns_count"] == 1
     assert counts["not_working_count"] == 1
+
+
+def test_optional_queries_from_override_skips_primary_queries() -> None:
+    override = ResearchQuestionRefinement(
+        research_question="Canonical rewritten query",
+        retrieval_queries=[
+            "Canonical rewritten query",
+            "EV charging policy terms",
+            "EV charging numeric targets",
+            "Extra ignored query",
+        ],
+    )
+
+    assert _optional_queries_from_override("Original user question", override) == [
+        "EV charging policy terms",
+        "EV charging numeric targets",
+    ]
 
 
 def test_collect_llm_issue_counts_parses_plain_text_retry_payloads(tmp_path: Path) -> None:

@@ -352,6 +352,58 @@ def test_api_run_lifecycle_dev_mode_ignores_blank_optional_queries(
         assert terminal["status"] == "completed"
 
 
+def test_api_run_lifecycle_standard_mode_passes_optional_queries(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Standard API runs should pass only user-provided optional queries."""
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+
+    def _stub_load_config(_path: Path | None = None) -> AppConfig:
+        return _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+
+    def _stub_run_pipeline(
+        question: str,
+        config: AppConfig,
+        run_id: str | None = None,
+        log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        query_2: str | None = None,
+        query_3: str | None = None,
+        api_key_override: str | None = None,
+        selected_cities: list[str] | None = None,
+    ) -> RunPaths:
+        assert question == "Compare public EV charging targets exactly as entered."
+        assert run_id is not None
+        assert isinstance(log_llm_payload, bool)
+        assert analysis_mode == "aggregate"
+        assert query_2 == "charging rollout milestones"
+        assert query_3 is None
+        assert api_key_override is None
+        assert selected_cities is None
+        return _write_success_artifacts(question=question, run_id=run_id, config=config)
+
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+
+    app = create_app(runs_dir=runs_dir, max_workers=2)
+    with TestClient(app) as client:
+        start = client.post(
+            "/api/v1/runs",
+            json={
+                "question": "Compare public EV charging targets exactly as entered.",
+                "run_id": "run-standard-optional-query",
+                "query_2": "  charging rollout milestones  ",
+                "query_3": "",
+            },
+        )
+        assert start.status_code == 202
+        terminal = _poll_until_terminal(client, "run-standard-optional-query")
+        assert terminal["status"] == "completed"
+
+
 def test_api_get_run_reference_returns_record_from_references_artifact(
     tmp_path: Path,
 ) -> None:
