@@ -146,6 +146,15 @@ class BenchmarkFactJudgeConfig(BaseModel):
     reasoning_effort: ReasoningEffort | None = "high"
 
 
+class BenchmarkNumberExtractorConfig(BaseModel):
+    """LLM extractor settings for writer numeric benchmark value extraction."""
+
+    model: str
+    temperature: float = 0.0
+    max_output_tokens: int = 900
+    reasoning_effort: ReasoningEffort | None = "high"
+
+
 class VectorStoreConfig(BaseModel):
     enabled: bool = False
     chroma_persist_path: Path = Field(default_factory=lambda: Path(".chroma"))
@@ -202,6 +211,9 @@ class AppConfig(BaseModel):
     )
     benchmark_fact_judge: BenchmarkFactJudgeConfig = Field(
         default_factory=lambda: BenchmarkFactJudgeConfig(model="openai/gpt-5.4-mini")
+    )
+    benchmark_number_extractor: BenchmarkNumberExtractorConfig = Field(
+        default_factory=lambda: BenchmarkNumberExtractorConfig(model="openai/gpt-5.4-mini")
     )
     retry: RetryConfig = Field(default_factory=RetryConfig)
     vector_store: VectorStoreConfig = Field(default_factory=VectorStoreConfig)
@@ -364,6 +376,7 @@ __all__ = [
     "AssumptionsReviewerConfig",
     "EnrichmentConfig",
     "BenchmarkFactJudgeConfig",
+    "BenchmarkNumberExtractorConfig",
     "RetryConfig",
     "VectorStoreConfig",
     "AppConfig",

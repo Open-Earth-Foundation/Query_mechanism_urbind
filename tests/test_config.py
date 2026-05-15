@@ -28,6 +28,8 @@ def _base_config_lines() -> list[str]:
         "  model: openai/gpt-5.4-mini",
         "benchmark_fact_judge:",
         "  model: openai/gpt-5.4-mini",
+        "benchmark_number_extractor:",
+        "  model: openai/gpt-5.4-mini",
         "retry:",
         "  backoff_base_seconds: 1.0",
         "  backoff_max_seconds: 30.0",
@@ -259,6 +261,8 @@ def test_load_config_applies_chat_and_assumptions_defaults_when_sections_missing
     assert config.assumptions_reviewer.model == "openai/gpt-5.4-mini"
     assert config.benchmark_fact_judge.model == "openai/gpt-5.4-mini"
     assert config.benchmark_fact_judge.max_output_tokens == 600
+    assert config.benchmark_number_extractor.model == "openai/gpt-5.4-mini"
+    assert config.benchmark_number_extractor.max_output_tokens == 900
 
 
 def test_load_config_applies_retry_defaults_when_section_missing(tmp_path: Path) -> None:
@@ -307,3 +311,22 @@ def test_load_config_reads_central_retry_settings_from_yaml(tmp_path: Path) -> N
     assert config.retry.max_attempts == 7
     assert config.retry.backoff_base_seconds == 0.25
     assert config.retry.backoff_max_seconds == 3.5
+
+
+def test_load_config_reads_benchmark_number_extractor_from_yaml(tmp_path: Path) -> None:
+    """Benchmark number extractor settings are loaded from llm_config.yaml."""
+    config_path = _write_config(
+        tmp_path,
+        [
+            "benchmark_number_extractor:",
+            "  model: openai/gpt-5.4-mini",
+            "  max_output_tokens: 750",
+            "  reasoning_effort: medium",
+        ],
+    )
+
+    config = load_config(config_path)
+
+    assert config.benchmark_number_extractor.model == "openai/gpt-5.4-mini"
+    assert config.benchmark_number_extractor.max_output_tokens == 750
+    assert config.benchmark_number_extractor.reasoning_effort == "medium"

@@ -1,0 +1,751 @@
+{
+  "version": 1,
+  "default_mode": "ccc_only",
+  "cases": [
+    {
+      "case_id": "krakow_transport_electrification_numbers",
+      "question": "For Krakow, what does the corpus say about transport electrification infrastructure? Start with a short table that lists the relevant transport electrification numbers and what each number refers to. Then end with a section titled Numeric summary using these exact metric labels on separate lines: public_charging_stations_first_five_years, electric_bus_pantograph_station_count, electric_bus_charging_action_cost_pln.",
+      "selected_cities": [
+        "Krakow"
+      ],
+      "baseline_metrics": [
+        {
+          "metric_id": "public_charging_stations_first_five_years",
+          "label": "Public charging stations planned in the first five years of Krakow's programme",
+          "unit": "stations",
+          "expected_value": 150,
+          "components": [
+            {
+              "label": "Krakow first-five-years public charging stations",
+              "value": 150,
+              "source_note": "documents/Krakow.md states installation of at least 150 new public charging stations in the first five years of the programme."
+            }
+          ]
+        },
+        {
+          "metric_id": "electric_bus_pantograph_station_count",
+          "label": "Pantograph stations for charging electric buses in Krakow action TR-8",
+          "unit": "stations",
+          "expected_value": 5,
+          "components": [
+            {
+              "label": "Luzycka Street pantograph stations",
+              "value": 2,
+              "source_note": "documents/Krakow.md action TR-8 lists 2 pantograph stations on Luzycka Street."
+            },
+            {
+              "label": "Stojalowskiego Street pantograph stations",
+              "value": 2,
+              "source_note": "documents/Krakow.md action TR-8 lists 2 pantograph stations on Stojalowskiego Street."
+            },
+            {
+              "label": "Rydgiera Street pantograph stations",
+              "value": 1,
+              "source_note": "documents/Krakow.md action TR-8 lists 1 pantograph station on Rydgiera Street."
+            }
+          ]
+        },
+        {
+          "metric_id": "electric_bus_charging_action_cost_pln",
+          "label": "Estimated cost of Krakow action TR-8 for new electric bus charging stations",
+          "unit": "PLN",
+          "expected_value": 6500000,
+          "components": [
+            {
+              "label": "TR-8 total estimated cost",
+              "value": 6500000,
+              "source_note": "documents/Krakow.md action TR-8 lists estimated costs of PLN 6 500 000."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "poland_public_charging_rollup",
+      "question": "Across the Poland group, which cities explicitly quantify public EV charging rollout in the corpus, and what is the combined scale? Start with a table listing only the cities that give an explicit public charging figure, the number, and what the number refers to. Then end with a section titled Numeric summary using these exact metric labels on separate lines: coverage_count, combined_public_charging_total, largest_public_charging_value.",
+      "selected_cities": [
+        "Krakow",
+        "Lodz",
+        "Rzeszow",
+        "Warszawa",
+        "Wroclaw"
+      ],
+      "baseline_metrics": [
+        {
+          "metric_id": "coverage_count",
+          "label": "Number of Poland-group cities with an explicit public charging figure",
+          "unit": "cities",
+          "expected_value": 3,
+          "components": [
+            {
+              "label": "Krakow has an explicit public charging station figure",
+              "value": 1,
+              "source_note": "documents/Krakow.md states 150 new public charging stations in the first five years."
+            },
+            {
+              "label": "Lodz has an explicit public charging station figure",
+              "value": 1,
+              "source_note": "documents/Lodz.md states at least 100 charging stations with 200 charging points."
+            },
+            {
+              "label": "Rzeszow has an explicit public charging station figure",
+              "value": 1,
+              "source_note": "documents/Rzeszow.md states at least 100 publicly accessible charging stations."
+            }
+          ]
+        },
+        {
+          "metric_id": "combined_public_charging_total",
+          "label": "Combined public charging station total across Poland-group cities with explicit figures",
+          "unit": "stations",
+          "expected_value": 350,
+          "components": [
+            {
+              "label": "Krakow public charging stations",
+              "value": 150,
+              "source_note": "documents/Krakow.md states 150 new public charging stations in the first five years."
+            },
+            {
+              "label": "Lodz public charging stations",
+              "value": 100,
+              "source_note": "documents/Lodz.md states at least 100 charging stations."
+            },
+            {
+              "label": "Rzeszow public charging stations",
+              "value": 100,
+              "source_note": "documents/Rzeszow.md states at least 100 publicly accessible charging stations."
+            }
+          ]
+        },
+        {
+          "metric_id": "largest_public_charging_value",
+          "label": "Largest public charging station figure across qualifying Poland-group cities",
+          "unit": "stations",
+          "expected_value": 150,
+          "components": [
+            {
+              "label": "Krakow public charging stations",
+              "value": 150,
+              "source_note": "documents/Krakow.md states 150 new public charging stations in the first five years."
+            },
+            {
+              "label": "Lodz public charging stations",
+              "value": 100,
+              "source_note": "documents/Lodz.md states at least 100 charging stations."
+            },
+            {
+              "label": "Rzeszow public charging stations",
+              "value": 100,
+              "source_note": "documents/Rzeszow.md states at least 100 publicly accessible charging stations."
+            }
+          ],
+          "display_metadata": {
+            "selected_city": "Krakow"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "all_cities_bus_electrification_rollup",
+      "question": "Across the frozen 102-city corpus, which city files explicitly state a city-level electric or zero-emission bus count in narrative or action-plan text? Start with a table listing only those cities, the count, and what the count refers to. Prefer direct city-level fleet or procurement figures, exclude percentages, ranges, indicator-table-only values, and clearly regional figures outside the city scope. Then end with a section titled Numeric summary using these exact metric labels on separate lines: coverage_count, combined_zero_emission_bus_total, largest_zero_emission_bus_value.",
+      "selected_cities": [
+        "Aachen",
+        "Aarhus",
+        "amsterdam",
+        "angers",
+        "antwerp",
+        "athens",
+        "barcelona",
+        "bergamo",
+        "bologna",
+        "bordeaux",
+        "Bratislava",
+        "bristol",
+        "bucharest",
+        "budapest",
+        "Cluj_Napoca",
+        "copenhagen",
+        "cork",
+        "differdange",
+        "dijon",
+        "Dresden",
+        "Dublin",
+        "dunkirk",
+        "eilat",
+        "eindhoven",
+        "Espoo",
+        "florence",
+        "gabrovo",
+        "gavle",
+        "glasgow",
+        "gothenburg",
+        "grenoble",
+        "groningen",
+        "Guimaraes",
+        "Heidelberg",
+        "helsingborg",
+        "helsinki",
+        "ioannina",
+        "istanbul",
+        "izmir",
+        "kalamata",
+        "klagenfurt",
+        "kosice",
+        "kozani",
+        "Krakow",
+        "Kranj",
+        "Lahti",
+        "lappeenranta",
+        "Leipzig",
+        "leuven",
+        "liberec",
+        "liepaja",
+        "limassol",
+        "Lisbon",
+        "ljubljana",
+        "Lodz",
+        "lund",
+        "lyon",
+        "madrid",
+        "malmo",
+        "Mannheim",
+        "marseille",
+        "milan",
+        "miskolc",
+        "Munich",
+        "Munster",
+        "Nantes",
+        "Oslo",
+        "padova",
+        "paris",
+        "parma",
+        "pecs",
+        "Porto",
+        "prato",
+        "reykjavik",
+        "riga",
+        "Rome",
+        "Rotterdam",
+        "Rzeszow",
+        "Seville",
+        "sofia",
+        "sonderborg",
+        "Stavanger",
+        "stockholm",
+        "suceava",
+        "Tampere",
+        "taurage",
+        "the_hague",
+        "thessaloniki",
+        "trikala",
+        "trondheim",
+        "Turin",
+        "turku",
+        "Umea",
+        "valencia",
+        "valladolid",
+        "Velenje",
+        "Vilnius",
+        "Vitoria_Gasteiz",
+        "Warszawa",
+        "Wroclaw",
+        "zagreb",
+        "Zaragoza"
+      ],
+      "baseline_metrics": [
+        {
+          "metric_id": "coverage_count",
+          "label": "Number of city files with an explicit city-level electric or zero-emission bus count",
+          "unit": "cities",
+          "expected_value": 31,
+          "components": [
+            {
+              "label": "Aachen",
+              "value": 1,
+              "source_note": "documents/Aachen.md states that ASEAG has procured 14 electric buses."
+            },
+            {
+              "label": "angers",
+              "value": 1,
+              "source_note": "documents/angers.md states that Angers plans to acquire 91 electric buses up to 2034."
+            },
+            {
+              "label": "athens",
+              "value": 1,
+              "source_note": "documents/athens.md action A.T.9 specifies municipal public transport with 10 electric buses."
+            },
+            {
+              "label": "barcelona",
+              "value": 1,
+              "source_note": "documents/barcelona.md states that Barcelona aims to have 100 electric-powered buses by 2024."
+            },
+            {
+              "label": "bergamo",
+              "value": 1,
+              "source_note": "documents/bergamo.md says 52 of 131 new buses in the turnover plan will be electric."
+            },
+            {
+              "label": "bucharest",
+              "value": 1,
+              "source_note": "documents/bucharest.md states that 100 electric buses have been purchased."
+            },
+            {
+              "label": "budapest",
+              "value": 1,
+              "source_note": "documents/budapest.md notes that a service procurement contract for 90 electric buses was launched in 2024."
+            },
+            {
+              "label": "Cluj_Napoca",
+              "value": 1,
+              "source_note": "documents/Cluj_Napoca.md states that the purchase of 41 new electric buses reduced emissions by over 2,000 tons per year."
+            },
+            {
+              "label": "grenoble",
+              "value": 1,
+              "source_note": "documents/grenoble.md states that the operator currently has 7 electric buses in its fleet."
+            },
+            {
+              "label": "Guimaraes",
+              "value": 1,
+              "source_note": "documents/Guimaraes.md states that the Guimabus fleet has 26 electric buses."
+            },
+            {
+              "label": "izmir",
+              "value": 1,
+              "source_note": "documents/izmir.md states that 20 e-buses have already been purchased from a local producer."
+            },
+            {
+              "label": "kosice",
+              "value": 1,
+              "source_note": "documents/kosice.md states that there are currently 23 electric buses in the fleet."
+            },
+            {
+              "label": "Kranj",
+              "value": 1,
+              "source_note": "documents/Kranj.md lists 18 e-buses for public transport."
+            },
+            {
+              "label": "Lodz",
+              "value": 1,
+              "source_note": "documents/Lodz.md states that 17 new electric buses were operating in 2022."
+            },
+            {
+              "label": "miskolc",
+              "value": 1,
+              "source_note": "documents/miskolc.md states that 10 electric buses joined the public transport fleet."
+            },
+            {
+              "label": "Munster",
+              "value": 1,
+              "source_note": "documents/Munster.md states that 97 e-buses are expected to be on the road by the end of 2025."
+            },
+            {
+              "label": "Porto",
+              "value": 1,
+              "source_note": "documents/Porto.md states that STCP intends to acquire 171 electric buses over five years."
+            },
+            {
+              "label": "prato",
+              "value": 1,
+              "source_note": "documents/prato.md states financing covers 9 electric buses by 31 December 2025."
+            },
+            {
+              "label": "Rome",
+              "value": 1,
+              "source_note": "documents/Rome.md states that the city plans include the purchase of 411 electric buses."
+            },
+            {
+              "label": "Rzeszow",
+              "value": 1,
+              "source_note": "documents/Rzeszow.md action description specifies 20 zero-emission buses powered by hydrogen fuel cells."
+            },
+            {
+              "label": "sofia",
+              "value": 1,
+              "source_note": "documents/sofia.md lists procurement of 25 electric buses with special equipment for the disabled."
+            },
+            {
+              "label": "suceava",
+              "value": 1,
+              "source_note": "documents/suceava.md states a 100 percent electric metropolitan fleet with purchase of 65 electric buses."
+            },
+            {
+              "label": "Tampere",
+              "value": 1,
+              "source_note": "documents/Tampere.md states that some 40 electric buses will be purchased for TKL."
+            },
+            {
+              "label": "Velenje",
+              "value": 1,
+              "source_note": "documents/Velenje.md states that the plan is to replace the existing fleet with six green hydrogen fuel cell buses."
+            },
+            {
+              "label": "Vilnius",
+              "value": 1,
+              "source_note": "documents/Vilnius.md states that Vilnius plans to have 367 electric buses by 2030."
+            },
+            {
+              "label": "Vitoria_Gasteiz",
+              "value": 1,
+              "source_note": "documents/Vitoria_Gasteiz.md states that 13 electric buses have been brought in via the Intelligent Electric Bus project."
+            },
+            {
+              "label": "Warszawa",
+              "value": 1,
+              "source_note": "documents/Warszawa.md states that there will be 202 electric buses in the citywide fleet by 2025."
+            },
+            {
+              "label": "Wroclaw",
+              "value": 1,
+              "source_note": "documents/Wroclaw.md states that the fleet plan includes at least 96 electric buses."
+            },
+            {
+              "label": "zagreb",
+              "value": 1,
+              "source_note": "documents/zagreb.md states that 70 electric buses are currently being acquired."
+            },
+            {
+              "label": "Zaragoza",
+              "value": 1,
+              "source_note": "documents/Zaragoza.md states that the city is planning to acquire 202 electric buses by 2030."
+            },
+            {
+              "label": "valladolid",
+              "value": 1,
+              "source_note": "documents/valladolid.md states that a framework agreement covers the purchase of 30 electric articulated buses."
+            }
+          ]
+        },
+        {
+          "metric_id": "combined_zero_emission_bus_total",
+          "label": "Combined electric or zero-emission bus total across qualifying city files",
+          "unit": "buses",
+          "expected_value": 2443,
+          "components": [
+            {
+              "label": "Aachen",
+              "value": 14,
+              "source_note": "documents/Aachen.md states that ASEAG has procured 14 electric buses."
+            },
+            {
+              "label": "angers",
+              "value": 91,
+              "source_note": "documents/angers.md states that Angers plans to acquire 91 electric buses up to 2034."
+            },
+            {
+              "label": "athens",
+              "value": 10,
+              "source_note": "documents/athens.md action A.T.9 specifies municipal public transport with 10 electric buses."
+            },
+            {
+              "label": "barcelona",
+              "value": 100,
+              "source_note": "documents/barcelona.md states that Barcelona aims to have 100 electric-powered buses by 2024."
+            },
+            {
+              "label": "bergamo",
+              "value": 52,
+              "source_note": "documents/bergamo.md says 52 of 131 new buses in the turnover plan will be electric."
+            },
+            {
+              "label": "bucharest",
+              "value": 100,
+              "source_note": "documents/bucharest.md states that 100 electric buses have been purchased."
+            },
+            {
+              "label": "budapest",
+              "value": 90,
+              "source_note": "documents/budapest.md notes that a service procurement contract for 90 electric buses was launched in 2024."
+            },
+            {
+              "label": "Cluj_Napoca",
+              "value": 41,
+              "source_note": "documents/Cluj_Napoca.md states that the purchase of 41 new electric buses reduced emissions by over 2,000 tons per year."
+            },
+            {
+              "label": "grenoble",
+              "value": 7,
+              "source_note": "documents/grenoble.md states that the operator currently has 7 electric buses in its fleet."
+            },
+            {
+              "label": "Guimaraes",
+              "value": 26,
+              "source_note": "documents/Guimaraes.md states that the Guimabus fleet has 26 electric buses."
+            },
+            {
+              "label": "izmir",
+              "value": 20,
+              "source_note": "documents/izmir.md states that 20 e-buses have already been purchased from a local producer."
+            },
+            {
+              "label": "kosice",
+              "value": 23,
+              "source_note": "documents/kosice.md states that there are currently 23 electric buses in the fleet."
+            },
+            {
+              "label": "Kranj",
+              "value": 18,
+              "source_note": "documents/Kranj.md lists 18 e-buses for public transport."
+            },
+            {
+              "label": "Lodz",
+              "value": 17,
+              "source_note": "documents/Lodz.md states that 17 new electric buses were operating in 2022."
+            },
+            {
+              "label": "miskolc",
+              "value": 10,
+              "source_note": "documents/miskolc.md states that 10 electric buses joined the public transport fleet."
+            },
+            {
+              "label": "Munster",
+              "value": 97,
+              "source_note": "documents/Munster.md states that 97 e-buses are expected to be on the road by the end of 2025."
+            },
+            {
+              "label": "Porto",
+              "value": 171,
+              "source_note": "documents/Porto.md states that STCP intends to acquire 171 electric buses over five years."
+            },
+            {
+              "label": "prato",
+              "value": 9,
+              "source_note": "documents/prato.md states financing covers 9 electric buses by 31 December 2025."
+            },
+            {
+              "label": "Rome",
+              "value": 411,
+              "source_note": "documents/Rome.md states that the city plans include the purchase of 411 electric buses."
+            },
+            {
+              "label": "Rzeszow",
+              "value": 20,
+              "source_note": "documents/Rzeszow.md action description specifies 20 zero-emission buses powered by hydrogen fuel cells."
+            },
+            {
+              "label": "sofia",
+              "value": 25,
+              "source_note": "documents/sofia.md lists procurement of 25 electric buses with special equipment for the disabled."
+            },
+            {
+              "label": "suceava",
+              "value": 65,
+              "source_note": "documents/suceava.md states a 100 percent electric metropolitan fleet with purchase of 65 electric buses."
+            },
+            {
+              "label": "Tampere",
+              "value": 40,
+              "source_note": "documents/Tampere.md states that some 40 electric buses will be purchased for TKL."
+            },
+            {
+              "label": "Velenje",
+              "value": 6,
+              "source_note": "documents/Velenje.md states that the plan is to replace the existing fleet with six green hydrogen fuel cell buses."
+            },
+            {
+              "label": "Vilnius",
+              "value": 367,
+              "source_note": "documents/Vilnius.md states that Vilnius plans to have 367 electric buses by 2030."
+            },
+            {
+              "label": "Vitoria_Gasteiz",
+              "value": 13,
+              "source_note": "documents/Vitoria_Gasteiz.md states that 13 electric buses have been brought in via the Intelligent Electric Bus project."
+            },
+            {
+              "label": "Warszawa",
+              "value": 202,
+              "source_note": "documents/Warszawa.md states that there will be 202 electric buses in the citywide fleet by 2025."
+            },
+            {
+              "label": "Wroclaw",
+              "value": 96,
+              "source_note": "documents/Wroclaw.md states that the fleet plan includes at least 96 electric buses."
+            },
+            {
+              "label": "zagreb",
+              "value": 70,
+              "source_note": "documents/zagreb.md states that 70 electric buses are currently being acquired."
+            },
+            {
+              "label": "Zaragoza",
+              "value": 202,
+              "source_note": "documents/Zaragoza.md states that the city is planning to acquire 202 electric buses by 2030."
+            },
+            {
+              "label": "valladolid",
+              "value": 30,
+              "source_note": "documents/valladolid.md states that a framework agreement covers the purchase of 30 electric articulated buses."
+            }
+          ]
+        },
+        {
+          "metric_id": "largest_zero_emission_bus_value",
+          "label": "Largest city-level electric or zero-emission bus figure across qualifying city files",
+          "unit": "buses",
+          "expected_value": 411,
+          "components": [
+            {
+              "label": "Aachen",
+              "value": 14,
+              "source_note": "documents/Aachen.md states that ASEAG has procured 14 electric buses."
+            },
+            {
+              "label": "angers",
+              "value": 91,
+              "source_note": "documents/angers.md states that Angers plans to acquire 91 electric buses up to 2034."
+            },
+            {
+              "label": "athens",
+              "value": 10,
+              "source_note": "documents/athens.md action A.T.9 specifies municipal public transport with 10 electric buses."
+            },
+            {
+              "label": "barcelona",
+              "value": 100,
+              "source_note": "documents/barcelona.md states that Barcelona aims to have 100 electric-powered buses by 2024."
+            },
+            {
+              "label": "bergamo",
+              "value": 52,
+              "source_note": "documents/bergamo.md says 52 of 131 new buses in the turnover plan will be electric."
+            },
+            {
+              "label": "bucharest",
+              "value": 100,
+              "source_note": "documents/bucharest.md states that 100 electric buses have been purchased."
+            },
+            {
+              "label": "budapest",
+              "value": 90,
+              "source_note": "documents/budapest.md notes that a service procurement contract for 90 electric buses was launched in 2024."
+            },
+            {
+              "label": "Cluj_Napoca",
+              "value": 41,
+              "source_note": "documents/Cluj_Napoca.md states that the purchase of 41 new electric buses reduced emissions by over 2,000 tons per year."
+            },
+            {
+              "label": "grenoble",
+              "value": 7,
+              "source_note": "documents/grenoble.md states that the operator currently has 7 electric buses in its fleet."
+            },
+            {
+              "label": "Guimaraes",
+              "value": 26,
+              "source_note": "documents/Guimaraes.md states that the Guimabus fleet has 26 electric buses."
+            },
+            {
+              "label": "izmir",
+              "value": 20,
+              "source_note": "documents/izmir.md states that 20 e-buses have already been purchased from a local producer."
+            },
+            {
+              "label": "kosice",
+              "value": 23,
+              "source_note": "documents/kosice.md states that there are currently 23 electric buses in the fleet."
+            },
+            {
+              "label": "Kranj",
+              "value": 18,
+              "source_note": "documents/Kranj.md lists 18 e-buses for public transport."
+            },
+            {
+              "label": "Lodz",
+              "value": 17,
+              "source_note": "documents/Lodz.md states that 17 new electric buses were operating in 2022."
+            },
+            {
+              "label": "miskolc",
+              "value": 10,
+              "source_note": "documents/miskolc.md states that 10 electric buses joined the public transport fleet."
+            },
+            {
+              "label": "Munster",
+              "value": 97,
+              "source_note": "documents/Munster.md states that 97 e-buses are expected to be on the road by the end of 2025."
+            },
+            {
+              "label": "Porto",
+              "value": 171,
+              "source_note": "documents/Porto.md states that STCP intends to acquire 171 electric buses over five years."
+            },
+            {
+              "label": "prato",
+              "value": 9,
+              "source_note": "documents/prato.md states financing covers 9 electric buses by 31 December 2025."
+            },
+            {
+              "label": "Rome",
+              "value": 411,
+              "source_note": "documents/Rome.md states that the city plans include the purchase of 411 electric buses."
+            },
+            {
+              "label": "Rzeszow",
+              "value": 20,
+              "source_note": "documents/Rzeszow.md action description specifies 20 zero-emission buses powered by hydrogen fuel cells."
+            },
+            {
+              "label": "sofia",
+              "value": 25,
+              "source_note": "documents/sofia.md lists procurement of 25 electric buses with special equipment for the disabled."
+            },
+            {
+              "label": "suceava",
+              "value": 65,
+              "source_note": "documents/suceava.md states a 100 percent electric metropolitan fleet with purchase of 65 electric buses."
+            },
+            {
+              "label": "Tampere",
+              "value": 40,
+              "source_note": "documents/Tampere.md states that some 40 electric buses will be purchased for TKL."
+            },
+            {
+              "label": "Velenje",
+              "value": 6,
+              "source_note": "documents/Velenje.md states that the plan is to replace the existing fleet with six green hydrogen fuel cell buses."
+            },
+            {
+              "label": "Vilnius",
+              "value": 367,
+              "source_note": "documents/Vilnius.md states that Vilnius plans to have 367 electric buses by 2030."
+            },
+            {
+              "label": "Vitoria_Gasteiz",
+              "value": 13,
+              "source_note": "documents/Vitoria_Gasteiz.md states that 13 electric buses have been brought in via the Intelligent Electric Bus project."
+            },
+            {
+              "label": "Warszawa",
+              "value": 202,
+              "source_note": "documents/Warszawa.md states that there will be 202 electric buses in the citywide fleet by 2025."
+            },
+            {
+              "label": "Wroclaw",
+              "value": 96,
+              "source_note": "documents/Wroclaw.md states that the fleet plan includes at least 96 electric buses."
+            },
+            {
+              "label": "zagreb",
+              "value": 70,
+              "source_note": "documents/zagreb.md states that 70 electric buses are currently being acquired."
+            },
+            {
+              "label": "Zaragoza",
+              "value": 202,
+              "source_note": "documents/Zaragoza.md states that the city is planning to acquire 202 electric buses by 2030."
+            },
+            {
+              "label": "valladolid",
+              "value": 30,
+              "source_note": "documents/valladolid.md states that a framework agreement covers the purchase of 30 electric articulated buses."
+            }
+          ],
+          "display_metadata": {
+            "selected_city": "Rome"
+          }
+        }
+      ]
+    }
+  ]
+}

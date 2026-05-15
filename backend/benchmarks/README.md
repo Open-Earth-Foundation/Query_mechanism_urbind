@@ -88,3 +88,33 @@ Outputs are written under `output/benchmarks/recall/<benchmark_id>/`:
 - `benchmark_report.json`
 - `benchmark_report.md`
 - `runs/<case_id>/...` for each benchmark case
+
+## Writer numeric benchmark
+
+Use `python -m backend.scripts.benchmark_writer_numbers` to compare final writer
+numbers against a frozen manual baseline for Krakow, the Poland group, and the
+current all-cities corpus snapshot.
+
+- The fixture lives at
+  `backend/benchmarks/writer_numeric/writer_numeric_benchmark.json` and uses the
+  versioned schema `{"version": 1, "default_mode": "...", "cases": [...]}`.
+- Every case freezes `selected_cities` explicitly, including the all-cities
+  case. Dynamic placeholders such as `all_cities` or group tokens are rejected
+  by the loader.
+- Every `baseline_metrics[]` entry stores the benchmarked `metric_id`, label,
+  unit, `expected_value`, and manual `components[]` used to justify the
+  baseline.
+- Default execution mode is `ccc_only`. Use `--mode full_pipeline` to force the
+  enrichment stack on, or `--mode both` to run each case in both modes.
+- The numeric extractor is configured separately from the fact judge under
+  `benchmark_number_extractor` in `llm_config.yaml`.
+
+Outputs are written under `output/benchmarks/writer_numeric/<benchmark_id>/`:
+
+- `benchmark_summary.json`: full persisted report payload with case-level
+  comparisons.
+- `benchmark_report.md`: human-readable diff report that shows baseline value,
+  extracted value, status, and writer snippet per metric.
+- `runs/<case_id>__<mode>/final.md`: live writer output for each run.
+- `runs/<case_id>__<mode>/context_bundle.json`: live writer context bundle.
+- `runs/<case_id>__<mode>/extracted_numbers.json`: structured extractor output.
