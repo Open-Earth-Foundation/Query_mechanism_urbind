@@ -66,6 +66,13 @@ jobs:
   frontend_checks:
     name: Verify frontend build
     runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: pk_test_ci_placeholder
+      NEXT_PUBLIC_CLERK_SIGN_IN_URL: /sign-in
+      NEXT_PUBLIC_CLERK_SIGN_UP_URL: /sign-up
+      NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL: /
+      NEXT_PUBLIC_CLERK_SIGN_UP_FALLBACK_REDIRECT_URL: /
+      CLERK_SECRET_KEY: sk_test_ci_placeholder
     defaults:
       run:
         working-directory: frontend
@@ -154,6 +161,12 @@ jobs:
             API_BASE="https://urbind-query-mechanism-api.openearth.dev"
           fi
           echo "frontend_api_base_url=$API_BASE" >> $GITHUB_OUTPUT
+          CLERK_PUBLISHABLE_KEY="${{ vars.CLERK_PUBLISHABLE_KEY }}"
+          if [ -z "$CLERK_PUBLISHABLE_KEY" ]; then
+            echo "Missing required GitHub variable: CLERK_PUBLISHABLE_KEY" >&2
+            exit 1
+          fi
+          echo "clerk_publishable_key=$CLERK_PUBLISHABLE_KEY" >> $GITHUB_OUTPUT
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
@@ -173,6 +186,11 @@ jobs:
           push: true
           build-args: |
             NEXT_PUBLIC_API_BASE_URL=${{ steps.vars.outputs.frontend_api_base_url }}
+            NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=${{ steps.vars.outputs.clerk_publishable_key }}
+            NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+            NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+            NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL=/
+            NEXT_PUBLIC_CLERK_SIGN_UP_FALLBACK_REDIRECT_URL=/
           tags: |
             ${{ env.REGISTRY }}/${{ env.REPOSITORY }}:${{ steps.vars.outputs.commit_hash }}
             ${{ env.REGISTRY }}/${{ env.REPOSITORY }}:dev
@@ -212,6 +230,15 @@ jobs:
             --from-literal=OPENROUTER_API_KEY="${{ secrets.OPENROUTER_API_KEY }}" \
             --from-literal=SERPER_API_KEY="${{ secrets.SERPER_API_KEY }}" \
             --from-literal=FIRECRAWL_API_KEY="${{ secrets.FIRECRAWL_API_KEY }}" \
+            --dry-run=client -o yaml | kubectl apply -f -
+
+      - name: Create or update Clerk secret
+        run: |
+          kubectl -n default create secret generic urbind-query-mechanism-clerk-secrets \
+            --from-literal=CLERK_SECRET_KEY="${{ secrets.CLERK_SECRET_KEY }}" \
+            --from-literal=CLERK_PUBLISHABLE_KEY="${{ vars.CLERK_PUBLISHABLE_KEY }}" \
+            --from-literal=NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY="${{ vars.CLERK_PUBLISHABLE_KEY }}" \
+            --from-literal=CLERK_JWT_KEY="${{ secrets.CLERK_JWT_KEY }}" \
             --dry-run=client -o yaml | kubectl apply -f -
 
       - name: Apply Kubernetes manifests

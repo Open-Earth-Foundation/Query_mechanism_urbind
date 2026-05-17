@@ -375,8 +375,14 @@ const DEFAULT_REQUEST_TIMEOUT_MS = 120_000;
 const CHAT_SEND_REQUEST_TIMEOUT_MS = 300_000;
 const RUN_LIST_REQUEST_TIMEOUT_MS = 12_000;
 const STATUS_REQUEST_TIMEOUT_MS = 10_000;
+const SESSION_TOKEN_PROVIDER_WAIT_TIMEOUT_MS = 3_000;
+const SESSION_TOKEN_RETRY_DELAY_MS = 150;
 
 let userApiKey: string | null = null;
+let sessionTokenProvider: (() => Promise<string | null>) | null = null;
+let sessionTokenProviderWaiters: Array<
+  (provider: (() => Promise<string | null>) | null) => void
+> = [];
 
 export function setUserApiKey(key: string | null): void {
   const cleaned = key?.trim() ?? "";
@@ -387,13 +393,82 @@ export function getUserApiKey(): string | null {
   return userApiKey;
 }
 
-function buildHeaders(includeJsonContentType: boolean): HeadersInit {
-  const headers: Record<string, string> = {};
-  if (includeJsonContentType) {
-    headers["Content-Type"] = "application/json";
+export function registerSessionTokenProvider(
+  provider: (() => Promise<string | null>) | null,
+): void {
+  sessionTokenProvider = provider;
+  if (provider) {
+    const waiters = sessionTokenProviderWaiters;
+    sessionTokenProviderWaiters = [];
+    waiters.forEach((resolve) => resolve(provider));
   }
-  if (userApiKey) {
-    headers["X-OpenRouter-Api-Key"] = userApiKey;
+}
+
+function sleep(delayMs: number): Promise<void> {
+  return new Promise((resolve) => {
+    setTimeout(resolve, delayMs);
+  });
+}
+
+async function waitForSessionTokenProvider(): Promise<
+  (() => Promise<string | null>) | null
+> {
+  if (sessionTokenProvider || typeof window === "undefined") {
+    return sessionTokenProvider;
+  }
+
+  return await new Promise((resolve) => {
+    let settled = false;
+
+    const resolveOnce = (provider: (() => Promise<string | null>) | null): void => {
+      if (settled) {
+        return;
+      }
+      settled = true;
+      sessionTokenProviderWaiters = sessionTokenProviderWaiters.filter(
+        (waiter) => waiter !== resolveOnce,
+      );
+      clearTimeout(timeoutHandle);
+      resolve(provider);
+    };
+
+    const timeoutHandle = setTimeout(() => {
+      resolveOnce(sessionTokenProvider);
+    }, SESSION_TOKEN_PROVIDER_WAIT_TIMEOUT_MS);
+
+    sessionTokenProviderWaiters.push(resolveOnce);
+  });
+}
+
+async function resolveSessionToken(): Promise<string | null> {
+  const provider = sessionTokenProvider ?? (await waitForSessionTokenProvider());
+  if (!provider) {
+    return null;
+  }
+
+  const initialToken = await provider();
+  if (initialToken) {
+    return initialToken;
+  }
+
+  await sleep(SESSION_TOKEN_RETRY_DELAY_MS);
+  return await provider();
+}
+
+async function buildHeaders(
+  initHeaders: HeadersInit | undefined,
+  includeJsonContentType: boolean,
+): Promise<Headers> {
+  const headers = new Headers(initHeaders);
+  if (includeJsonContentType && !headers.has("Content-Type")) {
+    headers.set("Content-Type", "application/json");
+  }
+  if (userApiKey && !headers.has("X-OpenRouter-Api-Key")) {
+    headers.set("X-OpenRouter-Api-Key", userApiKey);
+  }
+  const sessionToken = await resolveSessionToken();
+  if (sessionToken && !headers.has("Authorization")) {
+    headers.set("Authorization", `Bearer ${sessionToken}`);
   }
   return headers;
 }
@@ -436,13 +511,11 @@ async function requestResponse(
   }, timeoutMs);
   let response: Response;
   try {
+    const headers = await buildHeaders(init?.headers, includeJsonContentType);
     response = await fetch(`${getApiBaseUrl()}${path}`, {
       ...init,
       signal: timeoutController.signal,
-      headers: {
-        ...buildHeaders(includeJsonContentType),
-        ...(init?.headers ?? {}),
-      },
+      headers,
     });
   } catch (error) {
     if (error instanceof DOMException && error.name === "AbortError") {

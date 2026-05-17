@@ -27,6 +27,12 @@ Create `.env.local` or use `.env.example`:
 NEXT_PUBLIC_API_BASE_URL=http://127.0.0.1:8000
 NEXT_PUBLIC_LOCAL_API_PORT=8000
 NEXT_PUBLIC_FRONTEND_MODE=standard
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_your_key_here
+CLERK_SECRET_KEY=sk_test_your_key_here
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL=/
+NEXT_PUBLIC_CLERK_SIGN_UP_FALLBACK_REDIRECT_URL=/
 ```
 
 `NEXT_PUBLIC_API_BASE_URL` should be set in deployed environments.
@@ -35,6 +41,21 @@ When it is omitted, the frontend falls back to a local backend URL built from
 
 `NEXT_PUBLIC_FRONTEND_MODE` sets the default surface (`standard` or `dev`).
 The page header always shows a persistent browser toggle that lets users switch between modes without reloading or changing routes.
+`NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` and `CLERK_SECRET_KEY` are required because the full app is protected by Clerk.
+
+## Clerk setup
+
+Configure both the Clerk development instance and the Clerk production instance the same way:
+
+1. Enable Google social sign-in.
+2. Enable restricted mode.
+3. Invite users manually from the Clerk dashboard.
+
+Notes:
+
+- Development and production Clerk instances have separate user and invitation lists.
+- Production Google OAuth credentials are stored in the Clerk dashboard, not in repo env files.
+- The frontend exposes `/healthz` publicly for readiness checks; the app UI itself is protected.
 
 ## Dev mode
 

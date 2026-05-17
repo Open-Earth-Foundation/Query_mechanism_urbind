@@ -9,9 +9,14 @@ from pathlib import Path
 from typing import AsyncIterator
 
 from dotenv import load_dotenv
-from fastapi import FastAPI
+from fastapi import APIRouter, Depends, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from backend.api.auth import (
+    attach_clerk_auth_settings,
+    load_clerk_auth_settings,
+    require_clerk_session,
+)
 from backend.api.routes import (
     assumptions_router,
     chat_router,
@@ -93,6 +98,7 @@ def create_app(
     """Create FastAPI app instance."""
     load_dotenv()
     setup_logger()
+    clerk_auth_settings = load_clerk_auth_settings()
     resolved_runs_dir = _resolve_runs_dir(runs_dir)
     resolved_workers = _resolve_worker_count(max_workers)
     resolved_chat_job_workers = _resolve_chat_job_worker_count()
@@ -166,6 +172,7 @@ def create_app(
         version="0.1.0",
         lifespan=lifespan,
     )
+    attach_clerk_auth_settings(app, clerk_auth_settings)
     app.add_middleware(
         CORSMiddleware,
         allow_origins=allowed_origins,
@@ -174,14 +181,20 @@ def create_app(
         allow_headers=["*"],
     )
     logger.info(
-        "CORS allow_origins=%s allow_credentials=%s",
+        "CORS allow_origins=%s allow_credentials=%s clerk_authorized_parties=%s",
         allowed_origins,
         not using_wildcard,
+        clerk_auth_settings.authorized_parties,
     )
-    app.include_router(runs_router, prefix="/api/v1", tags=["runs"])
-    app.include_router(cities_router, prefix="/api/v1", tags=["cities"])
-    app.include_router(chat_router, prefix="/api/v1", tags=["chat"])
-    app.include_router(assumptions_router, prefix="/api/v1", tags=["assumptions"])
+    protected_api = APIRouter(
+        prefix="/api/v1",
+        dependencies=[Depends(require_clerk_session)],
+    )
+    protected_api.include_router(runs_router, tags=["runs"])
+    protected_api.include_router(cities_router, tags=["cities"])
+    protected_api.include_router(chat_router, tags=["chat"])
+    protected_api.include_router(assumptions_router, tags=["assumptions"])
+    app.include_router(protected_api)
 
     @app.get("/")
     def root() -> dict[str, str]:

@@ -66,6 +66,9 @@ The `uv.lock` file is committed to ensure reproducible builds.
 Environment variables (`.env`):
 
 - `OPENROUTER_API_KEY` (required): API key used for all LLM calls via OpenRouter.
+- `CLERK_SECRET_KEY` (required): Clerk secret key used by the backend API and Next.js server runtime.
+- `CLERK_PUBLISHABLE_KEY` (required): Clerk publishable key used to keep backend and frontend on the same Clerk instance.
+- `CLERK_JWT_KEY` (required): Clerk JWT verification key in PEM format. Store it as one line with escaped newlines, for example `-----BEGIN PUBLIC KEY-----\n...\n-----END PUBLIC KEY-----`.
 - `MARKDOWN_DIR` (optional, default `documents`): default directory scanned for top-level city markdown files. Runtime markdown discovery ignores subfolders under this directory.
 - `RUNS_DIR` (optional, default `output`): base directory for run artifacts.
 - `LOG_LEVEL` (optional, default `INFO`): logging verbosity (`DEBUG`, `INFO`, `WARNING`, `ERROR`).
@@ -128,6 +131,26 @@ Recommended tuning workflow:
 2. Run and inspect `output/<run_id>/markdown/retrieval.json` for returned distances and counts.
 3. Set/tighten `vector_store.retrieval_max_distance` based on observed distance distribution.
 4. Add `vector_store.retrieval_max_chunks_per_city` only if latency/cost grows too much.
+
+## Clerk auth setup (required)
+
+The frontend and backend now require Clerk:
+
+- Google social sign-in enabled
+- Restricted mode enabled
+- Manual invitations only
+
+Configure both your Clerk development instance and your Clerk production instance the same way:
+
+1. Enable Google under `SSO connections`.
+2. Turn on `Restricted mode`.
+3. Invite users manually from the Clerk dashboard.
+
+Important notes:
+
+- Development and production Clerk instances have separate users and invitation lists.
+- Production Google OAuth credentials live in the Clerk dashboard, not in `.env`.
+- Backend `/api/v1/*` routes require a Clerk session token; backend `/` and `/healthz` stay public for probes.
 
 ## API key setup (important)
 
@@ -815,10 +838,18 @@ Optional frontend env:
 NEXT_PUBLIC_API_BASE_URL=http://127.0.0.1:8000
 NEXT_PUBLIC_LOCAL_API_PORT=8000
 NEXT_PUBLIC_FRONTEND_MODE=standard
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_your_key_here
+CLERK_SECRET_KEY=sk_test_your_key_here
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL=/
+NEXT_PUBLIC_CLERK_SIGN_UP_FALLBACK_REDIRECT_URL=/
 ```
 
 `NEXT_PUBLIC_API_BASE_URL` should be set for deployed environments.
 If it is omitted, the frontend falls back to a local backend URL built from `NEXT_PUBLIC_LOCAL_API_PORT`.
+`NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` and `CLERK_SECRET_KEY` are required for `npm run dev`.
+The sign-in and sign-up URL vars default to `/sign-in` and `/sign-up`, but keeping them explicit in `.env.local` matches Docker and deployment behavior.
 
 Frontend supports three city scope modes in the build form: all cities, predefined group, and manual selection.
 Frontend also supports two answer modes: `Aggregate Mode` and `City-by-City Mode` (sent as `analysis_mode` in run requests).
@@ -851,8 +882,10 @@ Run frontend in Docker:
 ```
 docker build -f frontend/Dockerfile \
   --build-arg NEXT_PUBLIC_API_BASE_URL=https://query-mechanism-api.openearth.dev \
+  --build-arg NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_your_key_here \
   -t query-mechanism-frontend ./frontend
 docker run -it --rm -p 3000:3000 \
+  -e CLERK_SECRET_KEY=sk_test_your_key_here \
   query-mechanism-frontend
 ```
 
@@ -877,6 +910,11 @@ After startup:
 - Frontend: `http://localhost:3000`
 - Backend API docs: `http://localhost:8000/docs`
 
+Local config split:
+
+- root `.env`: backend settings, including `OPENROUTER_API_KEY`, `CLERK_SECRET_KEY`, `CLERK_PUBLISHABLE_KEY`, and `CLERK_JWT_KEY`
+- `frontend/.env.local`: frontend-only `NEXT_PUBLIC_*` Clerk values for `npm run dev`
+
 ## Manual EKS deployment
 
 For manual GHCR + EKS deployment without GitHub Actions, use `urbind-query-mechanism.md`.
@@ -887,13 +925,14 @@ It includes exact build/push commands and `kubectl` apply steps for the manifest
 Automated development workflow is available at `.github/workflows/develop.yml`.
 It runs tests for PRs targeting `main` and for pushes to `main`; image build and EKS deploy run only on `main` branch runs (push/manual dispatch).
 
-TODO: production CORS hardening
+CORS and auth notes
 
 - Restrict `API_CORS_ORIGINS` in `k8s/backend-configmap.yml` to the deployed frontend origin(s) only, for example `https://urbind-query-mechanism.openearth.dev`.
 - Remove local-only origins such as `http://localhost:3000`, `http://127.0.0.1:3000`, and private LAN hosts from the production ConfigMap.
-- Update `backend/api/main.py` so a missing or empty `API_CORS_ORIGINS` fails closed in deployed environments instead of falling back to `["*"]`.
-- Keep wildcard or localhost-friendly CORS settings only in local Docker/dev configuration.
+- Backend startup now fails closed when Clerk auth is enabled without explicit `API_CORS_ORIGINS`.
+- Keep localhost-friendly CORS settings only in local Docker/dev configuration.
 - Ensure the deployed frontend sets `NEXT_PUBLIC_API_BASE_URL` explicitly so backend host mismatches are not confused with CORS failures.
+- `API_CORS_ORIGINS` also acts as the Clerk `authorized_parties` allowlist for API token verification.
 
 Required repository secrets:
 
@@ -901,11 +940,14 @@ Required repository secrets:
 - `AWS_SECRET_ACCESS_KEY_EKS_DEV_USER`
 - `EKS_DEV_NAME`
 - `OPENROUTER_API_KEY`
+- `CLERK_SECRET_KEY`
+- `CLERK_JWT_KEY`
 
 Optional repository variables:
 
 - `EKS_DEV_REGION` (default `us-east-1`)
 - `FRONTEND_API_BASE_URL` (default `https://urbind-query-mechanism-api.openearth.dev`)
+- `CLERK_PUBLISHABLE_KEY`
 
 Artifacts are written under `output/<run_id>/`:
 

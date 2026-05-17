@@ -51,6 +51,21 @@ spec:
                   name: urbind-query-mechanism-backend-secrets
                   key: FIRECRAWL_API_KEY
                   optional: true
+            - name: CLERK_SECRET_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: urbind-query-mechanism-clerk-secrets
+                  key: CLERK_SECRET_KEY
+            - name: CLERK_PUBLISHABLE_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: urbind-query-mechanism-clerk-secrets
+                  key: CLERK_PUBLISHABLE_KEY
+            - name: CLERK_JWT_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: urbind-query-mechanism-clerk-secrets
+                  key: CLERK_JWT_KEY
           volumeMounts:
             - name: output-volume
               mountPath: /data

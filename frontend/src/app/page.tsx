@@ -1,5 +1,6 @@
 "use client";
 
+import { UserButton } from "@clerk/nextjs";
 import {
   type CSSProperties,
   type PointerEvent as ReactPointerEvent,
@@ -941,7 +942,10 @@ export default function Home() {
                 context chat workspace.
               </p>
             </div>
-            <DevModeToggle mode={frontendMode} onModeChange={setFrontendMode} />
+            <div className="flex items-center gap-3 self-start md:self-auto">
+              <DevModeToggle mode={frontendMode} onModeChange={setFrontendMode} />
+              <UserButton />
+            </div>
           </div>
         </header>
 
