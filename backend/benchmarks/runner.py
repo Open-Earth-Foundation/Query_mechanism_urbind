@@ -17,7 +17,7 @@ from dotenv import dotenv_values
 from backend.benchmarks.judge import judge_final_outputs
 from backend.benchmarks.models import BenchmarkJudgeEvaluation
 from backend.modules.orchestrator.module import run_pipeline
-from backend.modules.orchestrator.models import ResearchQuestionRefinement
+from backend.modules.orchestrator.models import RetrievalQueryOverride
 from backend.utils.config import AppConfig, get_openrouter_api_key, load_config
 
 logger = logging.getLogger(__name__)
@@ -153,32 +153,39 @@ def _load_questions(questions_file: Path) -> list[str]:
 
 def _load_query_overrides(
     path: Path,
-) -> dict[str, ResearchQuestionRefinement]:
+) -> dict[str, RetrievalQueryOverride]:
     """Load benchmark-stable optional retrieval queries from a JSON mapping file."""
     if not path.exists():
         raise FileNotFoundError(f"Query overrides file not found: {path}")
     payload = json.loads(path.read_text(encoding="utf-8"))
     if not isinstance(payload, dict):
         raise ValueError(f"Query overrides must be a JSON object at {path}")
-    overrides: dict[str, ResearchQuestionRefinement] = {}
+    overrides: dict[str, RetrievalQueryOverride] = {}
     for question, value in payload.items():
         if not isinstance(question, str) or not question.strip():
             continue
         if not isinstance(value, dict):
             continue
-        canonical = str(value.get("canonical_research_query", "")).strip()
+        primary_query = str(value.get("canonical_research_query", "")).strip()
         raw_queries = value.get("retrieval_queries", [])
         retrieval_queries: list[str] = []
         if isinstance(raw_queries, list):
             retrieval_queries = [
                 str(item).strip() for item in raw_queries if str(item).strip()
             ]
-        if not canonical:
-            raise ValueError(f"Missing canonical_research_query for question={question!r}")
+        if not primary_query:
+            raise ValueError(
+                f"Missing canonical_research_query for question={question!r}"
+            )
+        if primary_query.casefold() != question.strip().casefold():
+            raise ValueError(
+                "canonical_research_query must match the question text "
+                f"for question={question!r}"
+            )
         if not retrieval_queries:
             raise ValueError(f"Missing retrieval_queries for question={question!r}")
-        overrides[question] = ResearchQuestionRefinement(
-            research_question=canonical,
+        overrides[question] = RetrievalQueryOverride(
+            primary_query=primary_query,
             retrieval_queries=retrieval_queries,
         )
     if not overrides:
@@ -188,12 +195,12 @@ def _load_query_overrides(
 
 def _optional_queries_from_override(
     question: str,
-    override: ResearchQuestionRefinement,
+    override: RetrievalQueryOverride,
 ) -> list[str]:
     """Return up to two non-primary retrieval queries from one benchmark override."""
     primary_keys = {
         question.strip().casefold(),
-        override.research_question.strip().casefold(),
+        override.primary_query.strip().casefold(),
     }
     optional_queries: list[str] = []
     seen: set[str] = set(primary_keys)
@@ -424,7 +431,7 @@ def _run_mode_question(
     selected_cities: list[str],
     log_llm_payload: bool,
     env_overrides: dict[str, str],
-    query_override: ResearchQuestionRefinement | None,
+    query_override: RetrievalQueryOverride | None,
 ) -> BenchmarkQuestionResult:
     """Run one benchmark question for one mode and collect metrics."""
     with _temporary_env(env_overrides):
@@ -893,7 +900,7 @@ def run_retrieval_strategy_benchmark(
         raise ValueError("At least one markdown benchmark config is required.")
 
     questions = _load_questions(questions_file)
-    query_overrides: dict[str, ResearchQuestionRefinement] | None = None
+    query_overrides: dict[str, RetrievalQueryOverride] | None = None
     if use_query_overrides:
         if query_overrides_path is None:
             raise ValueError("query_overrides_path must be set when use_query_overrides=true")

@@ -965,7 +965,7 @@ def test_api_list_runs_reads_question_from_original_question_when_root_question_
         "run_id": "run-inputs-question",
         "inputs": {
             "original_question": "Question sourced from inputs.original_question",
-            "canonical_research_query": "Canonical fallback question",
+            "canonical_research_query": "Primary fallback question",
         },
         "status": "completed",
         "started_at": datetime.now(timezone.utc).isoformat(),
@@ -1002,7 +1002,6 @@ def test_api_list_runs_reads_question_from_legacy_inputs_when_root_question_miss
         "run_id": "run-legacy-inputs-question",
         "inputs": {
             "initial_question": "Question sourced from inputs.initial_question",
-            "refined_question": "Refined fallback question",
         },
         "status": "completed",
         "started_at": datetime.now(timezone.utc).isoformat(),
@@ -1763,8 +1762,8 @@ def test_api_failed_run_uses_persisted_decision_error(
     runs_dir = tmp_path / "output"
     markdown_dir = tmp_path / "documents"
     markdown_dir.mkdir(parents=True, exist_ok=True)
-    finish_reason = "research_question_refinement_failed"
-    error_code = "RESEARCH_QUESTION_REFINEMENT_ERROR"
+    finish_reason = "query_preparation_failed"
+    error_code = "QUERY_PREPARATION_ERROR"
     error_message = (
         "Could not prepare the research query for this request. Please try again."
     )
@@ -1804,7 +1803,10 @@ def test_api_failed_run_uses_persisted_decision_error(
     with TestClient(app) as client:
         start = client.post(
             "/api/v1/runs",
-            json={"question": "Refinement failed", "run_id": "run-persisted-failure"},
+            json={
+                "question": "Query preparation failed",
+                "run_id": "run-persisted-failure",
+            },
         )
         assert start.status_code == 202
         terminal = _poll_until_terminal(client, "run-persisted-failure")
@@ -1821,8 +1823,8 @@ def test_api_failed_run_preserves_persisted_failure_details_after_exception(
     runs_dir = tmp_path / "output"
     markdown_dir = tmp_path / "documents"
     markdown_dir.mkdir(parents=True, exist_ok=True)
-    finish_reason = "research_question_refinement_failed"
-    error_code = "RESEARCH_QUESTION_REFINEMENT_ERROR"
+    finish_reason = "query_preparation_failed"
+    error_code = "QUERY_PREPARATION_ERROR"
     error_message = (
         "Could not prepare the research query for this request. Please try again."
     )
@@ -1864,7 +1866,7 @@ def test_api_failed_run_preserves_persisted_failure_details_after_exception(
         start = client.post(
             "/api/v1/runs",
             json={
-                "question": "Refinement failed with exception",
+                "question": "Query preparation failed with exception",
                 "run_id": "run-preserved-failure",
             },
         )

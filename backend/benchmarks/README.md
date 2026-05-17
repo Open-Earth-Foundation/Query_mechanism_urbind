@@ -5,7 +5,7 @@ This folder contains benchmark-only setup, separate from normal runtime settings
 ## Files
 
 - `prompts/retrieval_questions.txt`: benchmark questions.
-- `prompts/retrieval_query_overrides.json`: fixed optional retrieval queries per question (optional, recommended for stable chunk counts). The canonical field is retained for compatibility; the benchmark uses the benchmark question itself as query 1.
+- `prompts/retrieval_query_overrides.json`: fixed optional retrieval queries per question (optional, recommended for stable chunk counts). The legacy `canonical_research_query` field must mirror the benchmark question; the benchmark uses the question itself as query 1.
 - `config/base.env`: shared settings applied to both benchmark modes.
 - `config/mode_standard.env`: overrides for standard chunking runs.
 - `config/mode_vector.env`: overrides for vector-store runs.

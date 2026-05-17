@@ -263,7 +263,7 @@ def run_pipeline(
     run_log_handler = attach_run_file_logger(paths.base_dir)
     progress = ProgressTracker(paths.base_dir)
 
-    progress.start_step("question_refinement", "Preparing retrieval queries")
+    progress.start_step("query_preparation", "Preparing retrieval queries")
     canonical_research_query = question.strip() or question
     retrieval_queries = _build_retrieval_queries(
         canonical_research_query,
@@ -296,10 +296,10 @@ def run_pipeline(
         },
     )
     run_logger.record_artifact("research_question", paths.research_question)
-    progress.add_item("question_refinement", f"Research query: {canonical_research_query}")
+    progress.add_item("query_preparation", f"Primary retrieval query: {canonical_research_query}")
     for i, rq in enumerate(retrieval_queries, 1):
-        progress.add_item("question_refinement", f"Retrieval query {i}: {rq}")
-    progress.complete_step("question_refinement")
+        progress.add_item("query_preparation", f"Retrieval query {i}: {rq}")
+    progress.complete_step("query_preparation")
 
     def _run_initial_markdown() -> dict[str, object]:
         markdown_source_mode = "standard_chunking"

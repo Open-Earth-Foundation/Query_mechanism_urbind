@@ -14,7 +14,6 @@ representation in retrieval.
 
 ## Relevant Code Paths
 
-- [`backend/prompts/orchestrator_research_question_system.md`](../prompts/orchestrator_research_question_system.md)
 - [`backend/modules/orchestrator/module.py`](../modules/orchestrator/module.py)
 - [`backend/modules/vector_store/retriever.py`](../modules/vector_store/retriever.py)
 - [`backend/modules/vector_store/chunk_packer.py`](../modules/vector_store/chunk_packer.py)
@@ -23,12 +22,12 @@ representation in retrieval.
 
 ## What Is Broken
 
-### Query generation is too narrow
+### Query coverage is too narrow
 
-The query refiner is forced to produce only 2 extra retrieval variants, and the
-pipeline caps total retrieval queries at 3. In practice these queries are
-usually semantic near-duplicates of the original question, not orthogonal
-evidence probes.
+The pipeline uses the original question plus up to 2 optional retrieval queries,
+and caps total retrieval queries at 3. In practice, manually supplied optional
+queries can still be semantic near-duplicates of the original question rather
+than orthogonal evidence probes.
 
 ### Multi-query fusion is too primitive
 
@@ -53,12 +52,11 @@ funding, and implementation sections.
 
 ### 1. Expand retrieval from 3 queries to 5 or 6 fixed evidence families
 
-The prompt in
-[`orchestrator_research_question_system.md`](../prompts/orchestrator_research_question_system.md)
-should move away from "one keyword-heavy + one evidence-oriented" variants and
-instead emit fixed retrieval families such as:
+The retrieval-query preparation path in
+[`module.py`](../modules/orchestrator/module.py) should move from two optional
+queries toward fixed retrieval families such as:
 
-- canonical question
+- original question
 - measure/program family:
   `initiative action measure program project package funding scheme policy`
 - quantitative family:

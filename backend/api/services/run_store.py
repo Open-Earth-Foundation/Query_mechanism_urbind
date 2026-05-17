@@ -168,10 +168,6 @@ def _extract_question_from_run_log(run_log: dict[str, Any]) -> str:
             and canonical_research_query.strip()
         ):
             return canonical_research_query.strip()
-        refined_question = inputs_raw.get("refined_question")
-        if isinstance(refined_question, str) and refined_question.strip():
-            return refined_question.strip()
-
     return ""
 
 

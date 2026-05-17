@@ -15,8 +15,8 @@ class OrchestratorDecision(BaseModel):
     error: ErrorInfo | None = None
 
 
-class ResearchQuestionRefinement(BaseModel):
-    research_question: str
+class RetrievalQueryOverride(BaseModel):
+    primary_query: str
     retrieval_queries: list[str] = Field(default_factory=list)
 
 
@@ -36,5 +36,5 @@ class ChatFollowupDecision(BaseModel):
 __all__ = [
     "ChatFollowupDecision",
     "OrchestratorDecision",
-    "ResearchQuestionRefinement",
+    "RetrievalQueryOverride",
 ]

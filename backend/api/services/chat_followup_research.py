@@ -16,7 +16,6 @@ from backend.api.services.context_prompt_cache import (
 )
 from backend.modules.markdown_researcher.agent import extract_markdown_excerpts
 from backend.modules.markdown_researcher.services import load_markdown_documents
-from backend.modules.orchestrator.agent import refine_research_question
 from backend.modules.orchestrator.utils.references import build_markdown_references
 from backend.modules.vector_store.retriever import (
     as_markdown_documents,
@@ -81,20 +80,11 @@ def run_chat_followup_search(
         conversation_id=conversation_id,
         bundle_id=bundle_id,
     )
+    retrieval_queries = _dedupe_queries([question])
+    research_question = retrieval_queries[0]
 
     try:
         _ensure_target_city_available(city_name, config)
-        refinement = refine_research_question(
-            question=question,
-            config=config,
-            api_key=api_key,
-            selected_cities=[city_name],
-            log_llm_payload=log_llm_payload,
-        )
-        research_question = refinement.research_question.strip() or question.strip()
-        retrieval_queries = _dedupe_queries(
-            [research_question, *refinement.retrieval_queries]
-        )
         documents, retrieval_payload, source_mode = _load_followup_documents(
             research_question=research_question,
             retrieval_queries=retrieval_queries,
@@ -151,8 +141,8 @@ def run_chat_followup_search(
             config=config,
             created_at=created_at,
             target_city=city_name,
-            research_question=question.strip(),
-            retrieval_queries=[question.strip()],
+            research_question=research_question,
+            retrieval_queries=retrieval_queries,
             source_mode="error",
             retrieval_payload=None,
             markdown_payload=error_payload,

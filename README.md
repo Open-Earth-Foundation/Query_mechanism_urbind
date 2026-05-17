@@ -375,7 +375,7 @@ High-level flow from user input to final output text:
 ```mermaid
 flowchart TD
     A[User question + CLI/config input] --> B[run_pipeline in orchestrator module]
-    B --> C[Refine question into research_question]
+    B --> C[Prepare retrieval queries]
     C --> D[Load markdown documents]
     D --> E[Markdown extractor: extract_markdown_excerpts]
     E --> F[Store markdown bundle in context_bundle.json<br/>(excerpts + excerpt_count)]
@@ -437,7 +437,7 @@ Useful flags:
 
 1. Run the pipeline once to get a run with the desired question and cities, e.g. `python -m backend.scripts.run_pipeline --question "What does Aachen do for PV rooftop?" --city Aachen --markdown-path documents`. Note the run id and open `output/<run_id>/research_question.json`.
 2. Create a one-line questions file (e.g. `my_questions.txt`) containing exactly the `original_question` from that run.
-3. Create a query-overrides JSON (e.g. `my_overrides.json`) with one key: the same `original_question` string; value: `{"canonical_research_query": "<same as original_question>", "retrieval_queries": ["<optional query 2>", "<optional query 3>"]}`. The canonical field is retained for compatibility; initial runs use `original_question` verbatim as query 1.
+3. Create a query-overrides JSON (e.g. `my_overrides.json`) with one key: the same `original_question` string; value: `{"canonical_research_query": "<original_question>", "retrieval_queries": ["<optional query 2>", "<optional query 3>"]}`. The override format still uses the legacy `canonical_research_query` key, but it must mirror `original_question`; do not provide a rewritten query there.
 4. Run the benchmark in vector-only mode with fixed queries and several repetitions:
 
    ```
@@ -969,13 +969,13 @@ Artifacts are written under `output/<run_id>/`:
 - `run.json`: machine-readable run metadata (status, timestamps, artifacts, decisions), including `inputs.analysis_mode`, `artifacts.error_log` when available, and `writer_citation_coverage` when the writer confirms or partially misses city coverage.
 - `run.log`: detailed runtime logs, including per-agent `LLM_USAGE` lines, chat prompt-window diagnostics (`Context chat reply plan`, `Context chat direct request`, with fitted source ids and token-component counts), retry reason lines (`RETRY_EVENT`/`RETRY_EXHAUSTED` with plain-text fields such as `reason`, `http_status`, `rate_limited`, and markdown split lineage when applicable), and writer city-citation coverage checkpoints (`WRITER_CITATION_COVERAGE`, with `coverage_ratio` such as `33/33`).
 - `error_log.txt`: extracted error-focused log view from `run.log` (`ERROR`, `CRITICAL`, and exhausted retry events).
-- `run_summary.txt`: human-readable consolidated report. Header includes `Started`, `Completed`, and explicit `Total runtime` in seconds, plus `LLM Usage` totals/per-agent. It also captures an input snapshot (`original question`, `query mode`, `canonical research query`, `retrieval query 1..3`, `selected cities` planned/found, markdown dir/file/chunk/excerpt counts) and a `MARKDOWN_FAILURE_SUMMARY` aggregated from batch failures.
+- `run_summary.txt`: human-readable consolidated report. Header includes `Started`, `Completed`, and explicit `Total runtime` in seconds, plus `LLM Usage` totals/per-agent. It also captures an input snapshot (`original question`, `query mode`, `retrieval query 1..3`, `selected cities` planned/found, markdown dir/file/chunk/excerpt counts) and a `MARKDOWN_FAILURE_SUMMARY` aggregated from batch failures.
 - `context_bundle.json`: payload passed between agents (`markdown`, `original_question`, `research_question`, `query_mode`, `retrieval_queries`, `analysis_mode`, final path). When enrichment runs, `enrichment.field_manifest` carries field classifications and non-estimable fields, while `enrichment.gap_manifest` carries only per-city gaps.
 - `research_question.json`: run query metadata payload. Includes:
   - `original_question`: raw user question.
   - `query_mode`: `standard` or `dev`.
-  - `canonical_research_query`: primary research query used downstream. For initial build runs this is the trimmed `original_question`, without an LLM rewrite.
-  - `retrieval_queries`: retrieval-ready query list where index `0` is always `canonical_research_query`.
+  - `canonical_research_query`: legacy field that mirrors the trimmed `original_question`.
+  - `retrieval_queries`: retrieval-ready query list where index `0` is always the trimmed `original_question`.
   - `retrieval_query_1` / `retrieval_query_2` / `retrieval_query_3`: explicit query slots written for easier inspection and reproducibility.
 - `markdown/excerpts.json`: markdown researcher evidence bundle. Includes `excerpts` (items with `quote`, `city_name`, `partial_answer`, `source_chunk_ids`), explicit decision fields (`accepted_chunk_ids`, `rejected_chunk_ids`, `unresolved_chunk_ids`, `batch_failures`), `inspected_cities` (normalized backend city keys present in inspected markdown inputs), and `excerpt_count` (count of extracted excerpts). When split recovery is triggered, successful child-batch evidence and decisions are kept, and only final failed leaf chunks remain unresolved. Stage B extraction recall uses the union of `excerpts[].source_chunk_ids`.
 - `markdown/accepted_excerpts.json`: IDs-only positive decision artifact with accepted chunk IDs and accepted-per-city grouping.
