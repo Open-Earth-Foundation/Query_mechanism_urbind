@@ -308,9 +308,8 @@ class RunLogger:
                 or inputs.get("initial_question")
                 or "(missing)"
             )
-            canonical_research_query = (
+            primary_retrieval_query = (
                 inputs.get("canonical_research_query")
-                or inputs.get("refined_question")
                 or self.context_bundle.get("research_question")
                 or "(missing)"
             )
@@ -320,7 +319,7 @@ class RunLogger:
             )
             lines.append(f"Original question: {original_question}")
             lines.append(f"Query mode: {query_mode}")
-            lines.append(f"Canonical research query: {canonical_research_query}")
+            lines.append(f"Primary retrieval query: {primary_retrieval_query}")
             for index in range(1, 4):
                 lines.append(
                     f"Retrieval query {index}: "

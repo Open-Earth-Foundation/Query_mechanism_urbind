@@ -4,9 +4,8 @@ flowchart TD
   FE --> API[Backend API]
   API --> ORCH[Orchestrator run pipeline]
 
-  ORCH -->|optional| QR[Query Refiner]
-  QR --> RET[Retriever]
-  ORCH -->|without query refiner| RET
+  ORCH --> QP[Retrieval Query Preparation]
+  QP --> RET[Retriever]
 
   RET -->|top k markdown chunks| MR[Markdown Researcher]
   MR --> EX[Structured Excerpts]

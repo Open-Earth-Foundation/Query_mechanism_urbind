@@ -734,7 +734,7 @@ def test_writer_footer_marks_ccc_only_enrichment_as_no_evidence() -> None:
 
 def test_build_writer_context_bundle_keeps_only_writer_relevant_markdown_fields() -> None:
     context_bundle: dict[str, object] = {
-        "research_question": "Refined question",
+        "research_question": "Primary question",
         "analysis_mode": "aggregate",
         "final": "output/final.md",
         "enrichment": {
@@ -780,7 +780,7 @@ def test_build_writer_context_bundle_keeps_only_writer_relevant_markdown_fields(
         city_names=["Munich", "Berlin"],
     )
 
-    assert writer_bundle["research_question"] == "Refined question"
+    assert writer_bundle["research_question"] == "Primary question"
     assert "sql" not in writer_bundle
     assert "final" not in writer_bundle
     enrichment = writer_bundle["enrichment"]

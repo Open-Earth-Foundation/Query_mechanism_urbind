@@ -236,7 +236,7 @@ export default function Home() {
   const canFetchArtifacts = statusValue === "completed" || statusValue === "completed_with_gaps";
   const documentReady = !!runOutput?.content && canFetchArtifacts;
   const devFeatures = useMemo(() => getDevFeatureFlags(frontendMode), [frontendMode]);
-  const showDirectQueryControls = frontendMode === "dev";
+  const isDevMode = frontendMode === "dev";
   const workspaceUsesDocumentRail = documentReady && (chatOpen || assumptionsOpen);
   const isWriterRailResizable =
     workspaceUsesDocumentRail &&
@@ -908,9 +908,9 @@ export default function Home() {
     try {
       const payload = await startRun({
         question: trimmed,
-        query_mode: showDirectQueryControls ? "dev" : "standard",
-        query_2: showDirectQueryControls ? query2 : undefined,
-        query_3: showDirectQueryControls ? query3 : undefined,
+        query_mode: isDevMode ? "dev" : "standard",
+        query_2: query2,
+        query_3: query3,
         cities: scopeMode === "all" ? undefined : scopedCities,
         analysis_mode: analysisMode,
         enrichment_enabled: enrichmentEnabled,
@@ -1097,56 +1097,57 @@ export default function Home() {
                   />
                 ) : (
                   <div className="space-y-5">
-              <div className="space-y-2">
-                <Label htmlFor="question">Question</Label>
-                <Textarea
-                  id="question"
-                  placeholder="Example: Build a concise report for selected cities on main climate initiatives and progress."
-                  value={question}
-                  onChange={(event) => setQuestion(event.target.value)}
-                  className="min-h-32"
-                />
-              </div>
-
-              {showDirectQueryControls ? (
-                <div className="space-y-3 rounded-md border border-slate-200 bg-slate-50 p-3">
-                  <div className="space-y-1">
-                    <div className="flex items-center justify-between">
-                      <Label className="text-sm font-medium text-slate-800">
-                        Direct retrieval queries
-                      </Label>
-                      <Badge variant="outline">Dev Mode</Badge>
+                    <div className="space-y-2">
+                      <Label htmlFor="question">Question 1 (required)</Label>
+                      <Textarea
+                        id="question"
+                        placeholder="Example: Compare public EV charging targets and current charger counts across the selected cities, with source-backed numbers and gaps."
+                        value={question}
+                        onChange={(event) => setQuestion(event.target.value)}
+                        className="min-h-32"
+                      />
+                      <p className="text-xs text-slate-600">
+                        This exact question is used as the primary retrieval query. Include the
+                        topic, metric, city scope, and evidence you want in the answer.
+                      </p>
                     </div>
-                    <p className="text-xs text-slate-600">
-                      Optional inputs for the retriever. Leave either field blank to ignore it.
-                      In dev mode these can be any useful retrieval phrasings, not just keyword or
-                      metrics-only queries.
-                    </p>
-                  </div>
 
-                  <div className="space-y-2">
-                    <Label htmlFor="query-2">Retrieval query 2 (optional)</Label>
-                    <Textarea
-                      id="query-2"
-                      placeholder="Example: a narrower or complementary phrasing of the main question"
-                      value={query2}
-                      onChange={(event) => setQuery2(event.target.value)}
-                      className="min-h-20"
-                    />
-                  </div>
+                    <div className="space-y-3 rounded-md border border-slate-200 bg-slate-50 p-3">
+                      <div className="space-y-1">
+                        <div className="flex items-center justify-between">
+                          <Label className="text-sm font-medium text-slate-800">
+                            Additional retrieval questions
+                          </Label>
+                          {isDevMode ? <Badge variant="outline">Dev Mode</Badge> : null}
+                        </div>
+                        <p className="text-xs text-slate-600">
+                          Questions 2 and 3 are optional. Blank fields are ignored and no
+                          generated replacements are added.
+                        </p>
+                      </div>
 
-                  <div className="space-y-2">
-                    <Label htmlFor="query-3">Retrieval query 3 (optional)</Label>
-                    <Textarea
-                      id="query-3"
-                      placeholder="Example: another retrieval angle you want to test directly"
-                      value={query3}
-                      onChange={(event) => setQuery3(event.target.value)}
-                      className="min-h-20"
-                    />
-                  </div>
-                </div>
-              ) : null}
+                      <div className="space-y-2">
+                        <Label htmlFor="query-2">Question 2 (optional)</Label>
+                        <Textarea
+                          id="query-2"
+                          placeholder="Example: Evidence on planned charger rollout milestones, deadlines, and responsible owners."
+                          value={query2}
+                          onChange={(event) => setQuery2(event.target.value)}
+                          className="min-h-20"
+                        />
+                      </div>
+
+                      <div className="space-y-2">
+                        <Label htmlFor="query-3">Question 3 (optional)</Label>
+                        <Textarea
+                          id="query-3"
+                          placeholder="Example: Tables or numeric references for existing public chargers, 2030 targets, and budget commitments."
+                          value={query3}
+                          onChange={(event) => setQuery3(event.target.value)}
+                          className="min-h-20"
+                        />
+                      </div>
+                    </div>
 
               <div className="space-y-2">
                 <div className="flex items-center justify-between">

@@ -10,14 +10,14 @@ from contextlib import contextmanager
 from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Callable, Iterator
+from typing import Iterator
 
 from dotenv import dotenv_values
 
 from backend.benchmarks.judge import judge_final_outputs
 from backend.benchmarks.models import BenchmarkJudgeEvaluation
 from backend.modules.orchestrator.module import run_pipeline
-from backend.modules.orchestrator.models import ResearchQuestionRefinement
+from backend.modules.orchestrator.models import RetrievalQueryOverride
 from backend.utils.config import AppConfig, get_openrouter_api_key, load_config
 
 logger = logging.getLogger(__name__)
@@ -153,32 +153,39 @@ def _load_questions(questions_file: Path) -> list[str]:
 
 def _load_query_overrides(
     path: Path,
-) -> dict[str, ResearchQuestionRefinement]:
-    """Load benchmark-stable refinement outputs from a JSON mapping file."""
+) -> dict[str, RetrievalQueryOverride]:
+    """Load benchmark-stable optional retrieval queries from a JSON mapping file."""
     if not path.exists():
         raise FileNotFoundError(f"Query overrides file not found: {path}")
     payload = json.loads(path.read_text(encoding="utf-8"))
     if not isinstance(payload, dict):
         raise ValueError(f"Query overrides must be a JSON object at {path}")
-    overrides: dict[str, ResearchQuestionRefinement] = {}
+    overrides: dict[str, RetrievalQueryOverride] = {}
     for question, value in payload.items():
         if not isinstance(question, str) or not question.strip():
             continue
         if not isinstance(value, dict):
             continue
-        canonical = str(value.get("canonical_research_query", "")).strip()
+        primary_query = str(value.get("canonical_research_query", "")).strip()
         raw_queries = value.get("retrieval_queries", [])
         retrieval_queries: list[str] = []
         if isinstance(raw_queries, list):
             retrieval_queries = [
                 str(item).strip() for item in raw_queries if str(item).strip()
             ]
-        if not canonical:
-            raise ValueError(f"Missing canonical_research_query for question={question!r}")
+        if not primary_query:
+            raise ValueError(
+                f"Missing canonical_research_query for question={question!r}"
+            )
+        if primary_query.casefold() != question.strip().casefold():
+            raise ValueError(
+                "canonical_research_query must match the question text "
+                f"for question={question!r}"
+            )
         if not retrieval_queries:
             raise ValueError(f"Missing retrieval_queries for question={question!r}")
-        overrides[question] = ResearchQuestionRefinement(
-            research_question=canonical,
+        overrides[question] = RetrievalQueryOverride(
+            primary_query=primary_query,
             retrieval_queries=retrieval_queries,
         )
     if not overrides:
@@ -186,32 +193,27 @@ def _load_query_overrides(
     return overrides
 
 
-def _build_fixed_refiner(
-    overrides: dict[str, ResearchQuestionRefinement],
-) -> Callable[..., ResearchQuestionRefinement]:
-    """Create a refinement function that returns stable, cached queries."""
-
-    def _refine(
-        question: str,
-        config: AppConfig,
-        api_key: str,
-        selected_cities: list[str] | None = None,
-        log_llm_payload: bool = True,
-    ) -> ResearchQuestionRefinement:
-        del config, api_key, selected_cities, log_llm_payload
-        key = str(question).strip()
-        if key not in overrides:
-            raise KeyError(
-                "No fixed query overrides found for benchmark question: "
-                f"{question!r}"
-            )
-        refinement = overrides[key]
-        return ResearchQuestionRefinement(
-            research_question=refinement.research_question,
-            retrieval_queries=list(refinement.retrieval_queries),
-        )
-
-    return _refine
+def _optional_queries_from_override(
+    question: str,
+    override: RetrievalQueryOverride,
+) -> list[str]:
+    """Return up to two non-primary retrieval queries from one benchmark override."""
+    primary_keys = {
+        question.strip().casefold(),
+        override.primary_query.strip().casefold(),
+    }
+    optional_queries: list[str] = []
+    seen: set[str] = set(primary_keys)
+    for query in override.retrieval_queries:
+        cleaned = query.strip()
+        key = cleaned.casefold()
+        if not cleaned or key in seen:
+            continue
+        seen.add(key)
+        optional_queries.append(cleaned)
+        if len(optional_queries) >= 2:
+            break
+    return optional_queries
 
 
 def _timestamp_slug() -> str:
@@ -429,7 +431,7 @@ def _run_mode_question(
     selected_cities: list[str],
     log_llm_payload: bool,
     env_overrides: dict[str, str],
-    refine_question_func: Callable[..., ResearchQuestionRefinement] | None,
+    query_override: RetrievalQueryOverride | None,
 ) -> BenchmarkQuestionResult:
     """Run one benchmark question for one mode and collect metrics."""
     with _temporary_env(env_overrides):
@@ -448,8 +450,12 @@ def _run_mode_question(
             "log_llm_payload": log_llm_payload,
             "selected_cities": selected_cities,
         }
-        if refine_question_func is not None:
-            pipeline_kwargs["refine_question_func"] = refine_question_func
+        if query_override is not None:
+            optional_queries = _optional_queries_from_override(question, query_override)
+            if len(optional_queries) >= 1:
+                pipeline_kwargs["query_2"] = optional_queries[0]
+            if len(optional_queries) >= 2:
+                pipeline_kwargs["query_3"] = optional_queries[1]
         run_paths = run_pipeline(**pipeline_kwargs)  # type: ignore[arg-type]
     run_log = json.loads(run_paths.run_log.read_text(encoding="utf-8"))
     usage = run_log.get("llm_usage", {})
@@ -894,8 +900,7 @@ def run_retrieval_strategy_benchmark(
         raise ValueError("At least one markdown benchmark config is required.")
 
     questions = _load_questions(questions_file)
-    query_overrides: dict[str, ResearchQuestionRefinement] | None = None
-    fixed_refiner: Callable[..., ResearchQuestionRefinement] | None = None
+    query_overrides: dict[str, RetrievalQueryOverride] | None = None
     if use_query_overrides:
         if query_overrides_path is None:
             raise ValueError("query_overrides_path must be set when use_query_overrides=true")
@@ -906,7 +911,6 @@ def run_retrieval_strategy_benchmark(
                 "Query overrides are missing entries for benchmark questions: "
                 + "; ".join(missing)
             )
-        fixed_refiner = _build_fixed_refiner(query_overrides)
 
     benchmark_root = output_dir / benchmark_id
     benchmark_root.mkdir(parents=True, exist_ok=True)
@@ -950,7 +954,9 @@ def run_retrieval_strategy_benchmark(
                             selected_cities=selected_cities,
                             log_llm_payload=log_llm_payload,
                             env_overrides=env_overrides,
-                            refine_question_func=fixed_refiner,
+                            query_override=query_overrides.get(question)
+                            if query_overrides is not None
+                            else None,
                         )
                     except Exception as exc:  # noqa: BLE001
                         logger.exception(

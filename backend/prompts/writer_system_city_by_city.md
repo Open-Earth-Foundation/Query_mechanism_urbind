@@ -17,7 +17,7 @@ Input is a JSON object with:
 - `analysis_mode` (`aggregate` | `city_by_city`)
 - `selected_cities` (list[str]): cities selected for this run, which you must explicitly cover
 - `context_bundle` (object): contains markdown outputs
-  - may include `research_question` (str): orchestrator-refined research version of the question
+  - may include `research_question` (str): primary retrieval query used downstream; for initial build runs this is the user's first question verbatim after trimming
 - `reconsideration` (object, optional): previous answer + missing cities (use `context_bundle` to find their excerpts)
 - `context_bundle.enrichment` (object, optional): automated gap analysis, external Markdown evidence, tier-1/open web findings, and assumption estimates
   - `field_manifest` (object): field-level decomposition with `query_fields[]` (each with `field`, `classification`, `searchable`, `rationale`, `scope`) and `non_estimable_fields[]`

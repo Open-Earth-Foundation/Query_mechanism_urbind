@@ -32,10 +32,10 @@ around. It had to improve the final fact set, not only Stage A recall.
 
 ### What we changed
 
-We temporarily expanded retrieval from the standard canonical question plus
-refined variants to a deterministic evidence-family set:
+We temporarily expanded retrieval from the original question plus optional
+variants to a deterministic evidence-family set:
 
-- canonical question
+- original question
 - measure/program family
 - quantitative family
 - scenario/projection family

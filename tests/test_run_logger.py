@@ -58,9 +58,9 @@ def test_run_logger_persists_query_inputs_in_log_context_and_summary(tmp_path: P
 
     logger.update_query_inputs(
         original_question="Original question",
-        canonical_research_query="Canonical research query",
+        canonical_research_query="Original question",
         retrieval_queries=[
-            "Canonical research query",
+            "Original question",
             "Complementary retrieval query",
         ],
         query_mode="dev",
@@ -72,24 +72,24 @@ def test_run_logger_persists_query_inputs_in_log_context_and_summary(tmp_path: P
     run_summary = paths.run_summary.read_text(encoding="utf-8")
 
     assert run_payload["inputs"]["original_question"] == "Original question"
-    assert run_payload["inputs"]["canonical_research_query"] == "Canonical research query"
+    assert run_payload["inputs"]["canonical_research_query"] == "Original question"
     assert run_payload["inputs"]["query_mode"] == "dev"
-    assert run_payload["inputs"]["retrieval_query_1"] == "Canonical research query"
+    assert run_payload["inputs"]["retrieval_query_1"] == "Original question"
     assert run_payload["inputs"]["retrieval_query_2"] == "Complementary retrieval query"
     assert run_payload["inputs"]["retrieval_query_3"] is None
 
     assert context_payload["original_question"] == "Original question"
-    assert context_payload["research_question"] == "Canonical research query"
+    assert context_payload["research_question"] == "Original question"
     assert context_payload["query_mode"] == "dev"
     assert context_payload["retrieval_queries"] == [
-        "Canonical research query",
+        "Original question",
         "Complementary retrieval query",
     ]
 
     assert "Original question: Original question" in run_summary
     assert "Query mode: dev" in run_summary
-    assert "Canonical research query: Canonical research query" in run_summary
-    assert "Retrieval query 1: Canonical research query" in run_summary
+    assert "Primary retrieval query: Original question" in run_summary
+    assert "Retrieval query 1: Original question" in run_summary
     assert "Retrieval query 2: Complementary retrieval query" in run_summary
     assert "Retrieval query 3: (none)" in run_summary
 

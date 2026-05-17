@@ -8,7 +8,6 @@ from backend.modules.markdown_researcher.models import (
     MarkdownExcerpt,
     MarkdownResearchResult,
 )
-from backend.modules.orchestrator.models import ResearchQuestionRefinement
 from backend.modules.vector_store.models import RetrievedChunk
 from backend.utils.config import (
     AppConfig,
@@ -67,15 +66,6 @@ def test_run_chat_followup_search_uses_vector_store_retrieval_and_persists_artif
         metadata={"city_key": "munich"},
     )
 
-    monkeypatch.setattr(
-        chat_followup_research,
-        "refine_research_question",
-        lambda **kwargs: ResearchQuestionRefinement(
-            research_question="What does Munich report about rooftop solar?",
-            retrieval_queries=["Munich rooftop solar", "Munich solar targets"],
-        ),
-    )
-
     def _fake_retrieve_chunks_for_queries(
         *,
         queries: list[str],
@@ -84,9 +74,7 @@ def test_run_chat_followup_search_uses_vector_store_retrieval_and_persists_artif
         selected_cities: list[str],
     ) -> tuple[list[RetrievedChunk], dict[str, object]]:
         assert queries == [
-            "What does Munich report about rooftop solar?",
-            "Munich rooftop solar",
-            "Munich solar targets",
+            "Tell me more about Munich solar.",
         ]
         assert docs_dir == config.markdown_dir
         assert selected_cities == ["Munich"]
@@ -155,11 +143,9 @@ def test_run_chat_followup_search_uses_vector_store_retrieval_and_persists_artif
     assert context_bundle["parent_run_id"] == "run-vector"
     assert context_bundle["conversation_id"] == "conversation-1"
     assert context_bundle["target_city"] == "Munich"
-    assert context_bundle["research_question"] == "What does Munich report about rooftop solar?"
+    assert context_bundle["research_question"] == "Tell me more about Munich solar."
     assert context_bundle["retrieval_queries"] == [
-        "What does Munich report about rooftop solar?",
-        "Munich rooftop solar",
-        "Munich solar targets",
+        "Tell me more about Munich solar.",
     ]
     assert context_bundle["markdown"]["source_mode"] == "vector_store_retrieval"
     assert context_bundle["markdown"]["selected_city_names"] == ["Munich"]
@@ -182,14 +168,6 @@ def test_run_chat_followup_search_falls_back_to_standard_markdown_loading(
     config = _build_test_config(tmp_path, vector_store_enabled=False)
     loaded = {"called": False}
 
-    monkeypatch.setattr(
-        chat_followup_research,
-        "refine_research_question",
-        lambda **kwargs: ResearchQuestionRefinement(
-            research_question="What does Munich report?",
-            retrieval_queries=["Munich report"],
-        ),
-    )
     monkeypatch.setattr(
         chat_followup_research,
         "retrieve_chunks_for_queries",
@@ -259,14 +237,6 @@ def test_run_chat_followup_search_persists_empty_successful_bundle(
 
     monkeypatch.setattr(
         chat_followup_research,
-        "refine_research_question",
-        lambda **kwargs: ResearchQuestionRefinement(
-            research_question="What does Munich report?",
-            retrieval_queries=[],
-        ),
-    )
-    monkeypatch.setattr(
-        chat_followup_research,
         "load_markdown_documents",
         lambda *args, **kwargs: [{"city_name": "Munich", "content": "No answer here"}],
     )
@@ -310,15 +280,6 @@ def test_run_chat_followup_search_persists_error_bundle_for_invalid_city(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     config = _build_test_config(tmp_path, vector_store_enabled=False)
-
-    monkeypatch.setattr(
-        chat_followup_research,
-        "refine_research_question",
-        lambda **kwargs: ResearchQuestionRefinement(
-            research_question="What does Atlantis report?",
-            retrieval_queries=["Atlantis report"],
-        ),
-    )
 
     def _failing_load_markdown_documents(*args: object, **kwargs: object) -> list[dict[str, object]]:
         raise ValueError("Selected city is not available in markdown documents.")
@@ -372,14 +333,6 @@ def test_run_chat_followup_search_fails_fast_for_unindexed_vector_store_city(
         "list_indexed_city_names",
         lambda _config: ["Munich"],
     )
-    monkeypatch.setattr(
-        chat_followup_research,
-        "refine_research_question",
-        lambda **kwargs: (_ for _ in ()).throw(
-            AssertionError("Question refinement should not run for unavailable cities.")
-        ),
-    )
-
     result = chat_followup_research.run_chat_followup_search(
         runs_dir=config.runs_dir,
         run_id="run-vector-error",

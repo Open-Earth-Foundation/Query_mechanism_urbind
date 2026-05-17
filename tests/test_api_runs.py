@@ -352,6 +352,58 @@ def test_api_run_lifecycle_dev_mode_ignores_blank_optional_queries(
         assert terminal["status"] == "completed"
 
 
+def test_api_run_lifecycle_standard_mode_passes_optional_queries(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Standard API runs should pass only user-provided optional queries."""
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+
+    def _stub_load_config(_path: Path | None = None) -> AppConfig:
+        return _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+
+    def _stub_run_pipeline(
+        question: str,
+        config: AppConfig,
+        run_id: str | None = None,
+        log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        query_2: str | None = None,
+        query_3: str | None = None,
+        api_key_override: str | None = None,
+        selected_cities: list[str] | None = None,
+    ) -> RunPaths:
+        assert question == "Compare public EV charging targets exactly as entered."
+        assert run_id is not None
+        assert isinstance(log_llm_payload, bool)
+        assert analysis_mode == "aggregate"
+        assert query_2 == "charging rollout milestones"
+        assert query_3 is None
+        assert api_key_override is None
+        assert selected_cities is None
+        return _write_success_artifacts(question=question, run_id=run_id, config=config)
+
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+
+    app = create_app(runs_dir=runs_dir, max_workers=2)
+    with TestClient(app) as client:
+        start = client.post(
+            "/api/v1/runs",
+            json={
+                "question": "Compare public EV charging targets exactly as entered.",
+                "run_id": "run-standard-optional-query",
+                "query_2": "  charging rollout milestones  ",
+                "query_3": "",
+            },
+        )
+        assert start.status_code == 202
+        terminal = _poll_until_terminal(client, "run-standard-optional-query")
+        assert terminal["status"] == "completed"
+
+
 def test_api_get_run_reference_returns_record_from_references_artifact(
     tmp_path: Path,
 ) -> None:
@@ -913,7 +965,7 @@ def test_api_list_runs_reads_question_from_original_question_when_root_question_
         "run_id": "run-inputs-question",
         "inputs": {
             "original_question": "Question sourced from inputs.original_question",
-            "canonical_research_query": "Canonical fallback question",
+            "canonical_research_query": "Primary fallback question",
         },
         "status": "completed",
         "started_at": datetime.now(timezone.utc).isoformat(),
@@ -950,7 +1002,6 @@ def test_api_list_runs_reads_question_from_legacy_inputs_when_root_question_miss
         "run_id": "run-legacy-inputs-question",
         "inputs": {
             "initial_question": "Question sourced from inputs.initial_question",
-            "refined_question": "Refined fallback question",
         },
         "status": "completed",
         "started_at": datetime.now(timezone.utc).isoformat(),
@@ -1711,8 +1762,8 @@ def test_api_failed_run_uses_persisted_decision_error(
     runs_dir = tmp_path / "output"
     markdown_dir = tmp_path / "documents"
     markdown_dir.mkdir(parents=True, exist_ok=True)
-    finish_reason = "research_question_refinement_failed"
-    error_code = "RESEARCH_QUESTION_REFINEMENT_ERROR"
+    finish_reason = "query_preparation_failed"
+    error_code = "QUERY_PREPARATION_ERROR"
     error_message = (
         "Could not prepare the research query for this request. Please try again."
     )
@@ -1752,7 +1803,10 @@ def test_api_failed_run_uses_persisted_decision_error(
     with TestClient(app) as client:
         start = client.post(
             "/api/v1/runs",
-            json={"question": "Refinement failed", "run_id": "run-persisted-failure"},
+            json={
+                "question": "Query preparation failed",
+                "run_id": "run-persisted-failure",
+            },
         )
         assert start.status_code == 202
         terminal = _poll_until_terminal(client, "run-persisted-failure")
@@ -1769,8 +1823,8 @@ def test_api_failed_run_preserves_persisted_failure_details_after_exception(
     runs_dir = tmp_path / "output"
     markdown_dir = tmp_path / "documents"
     markdown_dir.mkdir(parents=True, exist_ok=True)
-    finish_reason = "research_question_refinement_failed"
-    error_code = "RESEARCH_QUESTION_REFINEMENT_ERROR"
+    finish_reason = "query_preparation_failed"
+    error_code = "QUERY_PREPARATION_ERROR"
     error_message = (
         "Could not prepare the research query for this request. Please try again."
     )
@@ -1812,7 +1866,7 @@ def test_api_failed_run_preserves_persisted_failure_details_after_exception(
         start = client.post(
             "/api/v1/runs",
             json={
-                "question": "Refinement failed with exception",
+                "question": "Query preparation failed with exception",
                 "run_id": "run-preserved-failure",
             },
         )

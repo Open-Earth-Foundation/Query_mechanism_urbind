@@ -8,8 +8,11 @@ from backend.benchmarks.runner import (
     BenchmarkMarkdownConfig,
     BenchmarkModeConfig,
     _collect_llm_issue_counts,
+    _load_query_overrides,
+    _optional_queries_from_override,
     run_retrieval_strategy_benchmark,
 )
+from backend.modules.orchestrator.models import RetrievalQueryOverride
 from backend.scripts.run_retrieval_benchmark import _build_markdown_configs
 
 
@@ -74,6 +77,39 @@ def test_collect_llm_issue_counts_uses_max_turns_fallback(tmp_path: Path) -> Non
     counts = _collect_llm_issue_counts(run_log)
     assert counts["max_turns_count"] == 1
     assert counts["not_working_count"] == 1
+
+
+def test_optional_queries_from_override_skips_primary_queries() -> None:
+    override = RetrievalQueryOverride(
+        primary_query="Original user question",
+        retrieval_queries=[
+            "Original user question",
+            "EV charging policy terms",
+            "EV charging numeric targets",
+            "Extra ignored query",
+        ],
+    )
+
+    assert _optional_queries_from_override("Original user question", override) == [
+        "EV charging policy terms",
+        "EV charging numeric targets",
+    ]
+
+
+def test_load_query_overrides_requires_primary_query_to_match_question(tmp_path: Path) -> None:
+    overrides_path = tmp_path / "query_overrides.json"
+    overrides_path.write_text(
+        (
+            '{"Original user question": {'
+            '"canonical_research_query": "Different rewritten query", '
+            '"retrieval_queries": ["Different rewritten query"]'
+            "}}"
+        ),
+        encoding="utf-8",
+    )
+
+    with pytest.raises(ValueError, match="must match the question text"):
+        _load_query_overrides(overrides_path)
 
 
 def test_collect_llm_issue_counts_parses_plain_text_retry_payloads(tmp_path: Path) -> None:

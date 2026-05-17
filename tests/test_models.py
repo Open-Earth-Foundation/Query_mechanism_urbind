@@ -9,7 +9,7 @@ from backend.modules.markdown_researcher.models import (
 from backend.modules.orchestrator.models import (
     ChatFollowupDecision,
     OrchestratorDecision,
-    ResearchQuestionRefinement,
+    RetrievalQueryOverride,
 )
 from backend.modules.writer.models import WriterOutput
 
@@ -23,8 +23,8 @@ def test_model_validation() -> None:
     md_result = MarkdownResearchResult(excerpts=[excerpt])
 
     decision = OrchestratorDecision(action="write", reason="Enough data")
-    refinement = ResearchQuestionRefinement(
-        research_question="For Munich, list documented initiatives with evidence."
+    query_override = RetrievalQueryOverride(
+        primary_query="For Munich, list documented initiatives with evidence."
     )
     followup_decision = ChatFollowupDecision(
         action="search_single_city",
@@ -37,7 +37,7 @@ def test_model_validation() -> None:
 
     assert md_result.excerpts[0].city_name == "Munich"
     assert decision.action == "write"
-    assert refinement.research_question.startswith("For Munich")
+    assert query_override.primary_query.startswith("For Munich")
     assert followup_decision.target_city == "Munich"
     assert writer.content.startswith("#")
 
