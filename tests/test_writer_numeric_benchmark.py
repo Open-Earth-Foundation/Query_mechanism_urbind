@@ -15,6 +15,7 @@ from backend.benchmarks.writer_numeric.runner import (
     normalize_metric_value,
     resolve_requested_modes,
     run_writer_numeric_benchmark,
+    select_benchmark_cases,
 )
 from backend.utils.config import load_config
 from backend.utils.json_io import write_json
@@ -141,6 +142,25 @@ def test_writer_numeric_dataset_rejects_empty_baseline_metrics() -> None:
 
     with pytest.raises(ValueError, match="baseline_metrics"):
         WriterNumericBenchmarkDataset.model_validate(payload)
+
+
+def test_select_benchmark_cases_excludes_optional_cases_by_default() -> None:
+    """Optional fixture cases should require an explicit include flag."""
+    payload = _sample_dataset_payload()
+    optional_case = json.loads(json.dumps(payload["cases"][0]))
+    optional_case["case_id"] = "optional_case"
+    optional_case["requires_explicit_include"] = True
+    payload["notes"] = [
+        "Optional all-cities cases can take a long time and consume many tokens."
+    ]
+    payload["cases"].append(optional_case)
+    dataset = WriterNumericBenchmarkDataset.model_validate(payload)
+
+    default_cases = select_benchmark_cases(dataset, include_optional_cases=False)
+    all_cases = select_benchmark_cases(dataset, include_optional_cases=True)
+
+    assert [case.case_id for case in default_cases] == ["sample_case"]
+    assert [case.case_id for case in all_cases] == ["sample_case", "optional_case"]
 
 
 def test_resolve_requested_modes_and_apply_pipeline_mode(tmp_path: Path) -> None:

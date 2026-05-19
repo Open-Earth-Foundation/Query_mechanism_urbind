@@ -53,6 +53,17 @@ def resolve_requested_modes(mode: RequestedMode) -> list[PipelineMode]:
     return [mode]
 
 
+def select_benchmark_cases(
+    dataset: WriterNumericBenchmarkDataset,
+    *,
+    include_optional_cases: bool,
+) -> list[WriterNumericBenchmarkCase]:
+    """Return the benchmark cases that should run for one invocation."""
+    if include_optional_cases:
+        return dataset.cases
+    return [case for case in dataset.cases if not case.requires_explicit_include]
+
+
 def apply_pipeline_mode(config: AppConfig, mode: PipelineMode, runs_dir: Path) -> AppConfig:
     """Clone config and force the enrichment flags for one benchmark mode."""
     mode_config = config.model_copy(deep=True)
@@ -151,6 +162,7 @@ def run_writer_numeric_benchmark(
     requested_mode: RequestedMode,
     config: AppConfig,
     api_key: str,
+    include_optional_cases: bool = False,
     pipeline_runner: PipelineRunner = run_pipeline,
     extractor: MetricExtractor = extract_writer_numbers,
     log_llm_payload: bool = False,
@@ -158,6 +170,12 @@ def run_writer_numeric_benchmark(
     """Run the writer numeric benchmark and persist report artifacts."""
     dataset = load_writer_numeric_benchmark_dataset(benchmark_file)
     executed_modes = resolve_requested_modes(requested_mode)
+    selected_cases = select_benchmark_cases(
+        dataset,
+        include_optional_cases=include_optional_cases,
+    )
+    if not selected_cases:
+        raise ValueError("No writer numeric benchmark cases selected for execution.")
     benchmark_root = output_dir / benchmark_id
     benchmark_root.mkdir(parents=True, exist_ok=True)
     runs_dir = benchmark_root / "runs"
@@ -166,7 +184,7 @@ def run_writer_numeric_benchmark(
     results: list[WriterNumericCaseResult] = []
     for mode in executed_modes:
         mode_config = apply_pipeline_mode(config, mode, runs_dir)
-        for case in dataset.cases:
+        for case in selected_cases:
             result = _run_case(
                 case=case,
                 mode=mode,
@@ -374,4 +392,5 @@ __all__ = [
     "normalize_metric_value",
     "resolve_requested_modes",
     "run_writer_numeric_benchmark",
+    "select_benchmark_cases",
 ]

@@ -47,7 +47,14 @@ BuildChatSourcesFn = Callable[
 ]
 BuildCitationCatalogFn = Callable[[list[LoadedChatSource]], list[ChatCitationEntry]]
 EstimateContextWindowFn = Callable[
-    [str, list[dict[str, Any]], AppConfig, int, list[dict[str, str]] | None],
+    [
+        str,
+        list[dict[str, Any]],
+        AppConfig,
+        int,
+        list[dict[str, str]] | None,
+        list[int] | None,
+    ],
     ContextWindowEstimate,
 ]
 
@@ -379,6 +386,17 @@ def as_session_prompt_context_cache(
     ]
     if cached_context_run_ids != context_run_ids or cached_followup_bundle_ids != followup_bundle_ids:
         return None
+    if raw_ref_ids is None and raw_prefix_tokens is None:
+        return SessionPromptContextCache(
+            context_run_ids=cached_context_run_ids,
+            followup_bundle_ids=cached_followup_bundle_ids,
+            mode=raw_mode,
+            prompt_context_tokens=raw_prompt_context_tokens,
+            prompt_context_kind=raw_prompt_context_kind,
+            citation_catalog_entry_count=raw_citation_catalog_entry_count,
+            citation_ref_ids_in_order=None,
+            citation_prefix_tokens=None,
+        )
     if not isinstance(raw_ref_ids, list) or not isinstance(raw_prefix_tokens, list):
         return None
     ref_ids = [value for value in raw_ref_ids if isinstance(value, str) and value.strip()]
@@ -427,8 +445,13 @@ def build_session_prompt_context_cache(
     token_cap: int,
     build_citation_catalog_fn: BuildCitationCatalogFn,
     estimate_context_window_fn: EstimateContextWindowFn,
+    include_citation_prefix_tokens: bool = False,
 ) -> SessionPromptContextCache:
-    """Compute the combined prompt-context cache for the active session sources."""
+    """Compute exact prompt-context metrics for the active session sources.
+
+    Prefix-token arrays are optional so bootstrap can persist an exact combined
+    prompt estimate without paying the cost of full prefix materialization.
+    """
     citation_entries = build_citation_catalog_fn(sources)
     llm_citation_catalog = [
         {
@@ -439,7 +462,9 @@ def build_session_prompt_context_cache(
         }
         for entry in citation_entries
     ]
-    citation_token_cache = build_citation_catalog_token_cache(llm_citation_catalog)
+    citation_token_cache = None
+    if include_citation_prefix_tokens:
+        citation_token_cache = build_citation_catalog_token_cache(llm_citation_catalog)
     context_models = [
         {
             "run_id": source.source_id,
@@ -455,6 +480,7 @@ def build_session_prompt_context_cache(
         config,
         token_cap,
         llm_citation_catalog,
+        citation_token_cache.prefix_tokens if citation_token_cache is not None else None,
     )
     prompt_context_kind = normalize_prompt_context_kind(prompt_estimate.context_window_kind)
     if prompt_context_kind is None:
@@ -468,8 +494,12 @@ def build_session_prompt_context_cache(
         prompt_context_tokens=prompt_estimate.context_window_tokens or 0,
         prompt_context_kind=prompt_context_kind,
         citation_catalog_entry_count=len(llm_citation_catalog),
-        citation_ref_ids_in_order=citation_token_cache.ordered_ref_ids,
-        citation_prefix_tokens=citation_token_cache.prefix_tokens,
+        citation_ref_ids_in_order=(
+            citation_token_cache.ordered_ref_ids if citation_token_cache is not None else None
+        ),
+        citation_prefix_tokens=(
+            citation_token_cache.prefix_tokens if citation_token_cache is not None else None
+        ),
     )
 
 
@@ -487,6 +517,7 @@ def get_or_build_session_prompt_context_cache(
     token_cap: int,
     build_citation_catalog_fn: BuildCitationCatalogFn,
     estimate_context_window_fn: EstimateContextWindowFn,
+    include_citation_prefix_tokens: bool = False,
 ) -> tuple[dict[str, object], SessionPromptContextCache]:
     """Return cached session prompt metrics or compute and persist them once."""
     cached = as_session_prompt_context_cache(
@@ -495,6 +526,33 @@ def get_or_build_session_prompt_context_cache(
         followup_bundle_ids=followup_bundle_ids,
     )
     if cached is not None:
+        if include_citation_prefix_tokens and cached.citation_prefix_tokens is None:
+            cache = build_session_prompt_context_cache(
+                original_question=original_question,
+                sources=sources,
+                context_run_ids=context_run_ids,
+                followup_bundle_ids=followup_bundle_ids,
+                config=config,
+                token_cap=token_cap,
+                build_citation_catalog_fn=build_citation_catalog_fn,
+                estimate_context_window_fn=estimate_context_window_fn,
+                include_citation_prefix_tokens=True,
+            )
+            session = store.update_prompt_context_cache(
+                run_id=run_id,
+                conversation_id=conversation_id,
+                prompt_context_cache=session_prompt_context_cache_payload(cache),
+            )
+            logger.info(
+                "Session prompt cache hydrated run_id=%s conversation_id=%s contexts=%s followup_bundles=%s prompt_context_tokens=%d prompt_context_kind=%s",
+                run_id,
+                conversation_id,
+                context_run_ids,
+                followup_bundle_ids,
+                cache.prompt_context_tokens,
+                cache.prompt_context_kind,
+            )
+            return session, cache
         logger.info(
             "Session prompt cache hit run_id=%s conversation_id=%s contexts=%s followup_bundles=%s prompt_context_tokens=%d prompt_context_kind=%s",
             run_id,
@@ -515,6 +573,7 @@ def get_or_build_session_prompt_context_cache(
         token_cap=token_cap,
         build_citation_catalog_fn=build_citation_catalog_fn,
         estimate_context_window_fn=estimate_context_window_fn,
+        include_citation_prefix_tokens=include_citation_prefix_tokens,
     )
     session = store.update_prompt_context_cache(
         run_id=run_id,

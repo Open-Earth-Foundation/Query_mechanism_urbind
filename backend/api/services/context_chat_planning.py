@@ -78,8 +78,9 @@ def estimate_context_window(
     config: AppConfig,
     token_cap: int = 0,
     citation_catalog: list[dict[str, str]] | None = None,
+    citation_prefix_tokens: list[int] | None = None,
 ) -> ContextWindowEstimate:
-    """Estimate the context-window size for one context-chat request."""
+    """Estimate the exact context-window size for one context-chat request."""
     prepared = _prepare_context_chat_request(
         original_question=original_question,
         contexts=contexts,
@@ -88,7 +89,7 @@ def estimate_context_window(
         config=config,
         token_cap=token_cap,
         citation_catalog=citation_catalog,
-        citation_prefix_tokens=None,
+        citation_prefix_tokens=citation_prefix_tokens,
         retry_missing_citation=False,
     )
     return ContextWindowEstimate(
@@ -96,11 +97,7 @@ def estimate_context_window(
         resolved_token_cap=prepared.resolved_cap,
         effective_token_cap=prepared.effective_token_cap,
         context_window_kind=prepared.context_window_kind,
-        context_window_tokens=_estimate_full_context_window_tokens(
-            normalized_contexts=prepared.normalized_contexts,
-            normalized_citations=prepared.normalized_citations,
-            context_window_kind=prepared.context_window_kind,
-        ),
+        context_window_tokens=prepared.full_context_window_tokens,
         fitted_context_window_tokens=prepared.context_block_tokens,
         estimated_prompt_tokens=prepared.estimated_prompt_tokens,
         citation_catalog_entry_count=prepared.citation_catalog_entry_count,
@@ -157,13 +154,11 @@ def build_citation_catalog_token_cache(
         return CitationCatalogTokenCache(
             ordered_ref_ids=[],
             prefix_tokens=[],
-            total_tokens=count_tokens(context_chat_prompts.render_citation_catalog_block([])),
+            total_tokens=_count_citation_catalog_tokens([]),
         )
     prefix_tokens: list[int] = []
     for index in range(1, len(normalized_catalog) + 1):
-        prefix_tokens.append(
-            count_tokens(context_chat_prompts.render_citation_catalog_block(normalized_catalog[:index]))
-        )
+        prefix_tokens.append(_count_citation_catalog_tokens(normalized_catalog[:index]))
     return CitationCatalogTokenCache(
         ordered_ref_ids=[item["ref_id"] for item in normalized_catalog],
         prefix_tokens=prefix_tokens,
@@ -211,7 +206,11 @@ def _prepare_context_chat_request(
     bounded_history_tokens = _estimate_messages_tokens(bounded_history)
 
     if normalized_citations:
-        fitted_citations = _fit_citation_catalog_to_budget(
+        full_catalog_block = context_chat_prompts.render_citation_catalog_block(
+            normalized_citations
+        )
+        full_catalog_tokens = count_tokens(full_catalog_block)
+        fitted_citations, fitted_catalog_tokens = _fit_citation_catalog_to_budget(
             citation_catalog=normalized_citations,
             prompt_header=prompt_header,
             history=bounded_history,
@@ -219,11 +218,9 @@ def _prepare_context_chat_request(
             token_cap=effective_token_cap,
             prompt_token_buffer=config.chat.prompt_token_buffer,
             citation_prefix_tokens=citation_prefix_tokens,
+            full_catalog_tokens=full_catalog_tokens,
         )
         fitted_ref_ids = [item["ref_id"] for item in fitted_citations]
-        fitted_catalog_tokens = count_tokens(
-            context_chat_prompts.render_citation_catalog_block(fitted_citations)
-        )
         if len(fitted_citations) < len(normalized_citations):
             return PreparedContextChatRequest(
                 prompt_header=prompt_header,
@@ -240,6 +237,7 @@ def _prepare_context_chat_request(
                     "overflow map-reduce."
                 ),
                 context_window_kind="citation_catalog",
+                full_context_window_tokens=full_catalog_tokens,
                 context_block_tokens=fitted_catalog_tokens,
                 prompt_header_tokens=prompt_header_tokens,
                 history_tokens=bounded_history_tokens,
@@ -250,9 +248,7 @@ def _prepare_context_chat_request(
             )
         return _prepare_direct_prompt_request(
             prompt_header=prompt_header,
-            context_block=context_chat_prompts.render_citation_catalog_block(
-                fitted_citations
-            ),
+            context_block=full_catalog_block,
             normalized_contexts=normalized_contexts,
             normalized_citations=normalized_citations,
             bounded_history=bounded_history,
@@ -262,6 +258,7 @@ def _prepare_context_chat_request(
             context_ids=context_ids,
             overflow_reason_prefix="Chat context exceeds token budget after trimming",
             context_window_kind="citation_catalog",
+            full_context_window_tokens=full_catalog_tokens,
             context_block_tokens=fitted_catalog_tokens,
             prompt_header_tokens=prompt_header_tokens,
             user_tokens=user_tokens,
@@ -289,6 +286,7 @@ def _prepare_context_chat_request(
                 "overflow map-reduce."
             ),
             context_window_kind="serialized_contexts",
+            full_context_window_tokens=context_tokens,
             context_block_tokens=context_tokens,
             prompt_header_tokens=prompt_header_tokens,
             history_tokens=bounded_history_tokens,
@@ -307,6 +305,7 @@ def _prepare_context_chat_request(
         context_tokens=context_tokens,
         overflow_reason_prefix="Chat context exceeds token budget after trimming history",
         context_window_kind="serialized_contexts",
+        full_context_window_tokens=context_tokens,
         context_block_tokens=context_tokens,
         prompt_header_tokens=prompt_header_tokens,
         user_tokens=user_tokens,
@@ -327,6 +326,7 @@ def _prepare_direct_prompt_request(
     overflow_reason_prefix: str,
     context_tokens: int | None = None,
     context_window_kind: Literal["citation_catalog", "serialized_contexts"],
+    full_context_window_tokens: int,
     context_block_tokens: int,
     prompt_header_tokens: int,
     user_tokens: int,
@@ -360,6 +360,7 @@ def _prepare_direct_prompt_request(
                 "Reduce selected contexts or shorten history/messages."
             ),
             context_window_kind=context_window_kind,
+            full_context_window_tokens=full_context_window_tokens,
             context_block_tokens=context_block_tokens,
             prompt_header_tokens=prompt_header_tokens,
             history_tokens=history_tokens,
@@ -383,6 +384,7 @@ def _prepare_direct_prompt_request(
         estimated_prompt_tokens=estimated_prompt_tokens,
         context_tokens=context_tokens,
         context_window_kind=context_window_kind,
+        full_context_window_tokens=full_context_window_tokens,
         context_block_tokens=context_block_tokens,
         prompt_header_tokens=prompt_header_tokens,
         history_tokens=history_tokens,
@@ -480,13 +482,18 @@ def _fit_citation_catalog_to_budget(
     token_cap: int,
     prompt_token_buffer: int,
     citation_prefix_tokens: list[int] | None = None,
-) -> list[dict[str, str]]:
-    """Keep only citation entries that fit the strict prompt budget."""
+    full_catalog_tokens: int | None = None,
+) -> tuple[list[dict[str, str]], int]:
+    """Return the largest fitting citation prefix and its exact token count."""
+    def _empty_catalog_result() -> tuple[list[dict[str, str]], int]:
+        """Return the canonical empty-catalog fit and its exact token count."""
+        return [], _count_citation_catalog_tokens([])
+
     fixed_messages = [{"role": "user", "content": user_content}] + history
     fixed_tokens = _estimate_messages_tokens(fixed_messages)
     strict_budget = token_cap - fixed_tokens - count_tokens(prompt_header) - prompt_token_buffer
     if strict_budget <= 0:
-        return []
+        return _empty_catalog_result()
 
     normalized_prefix_tokens = _normalize_citation_prefix_tokens(
         citation_prefix_tokens,
@@ -494,18 +501,37 @@ def _fit_citation_catalog_to_budget(
     )
     if normalized_prefix_tokens is not None:
         fitted_count = bisect_right(normalized_prefix_tokens, strict_budget)
-        return citation_catalog[:fitted_count]
+        if fitted_count <= 0:
+            return _empty_catalog_result()
+        return citation_catalog[:fitted_count], normalized_prefix_tokens[fitted_count - 1]
 
-    fitted: list[dict[str, str]] = []
-    for item in citation_catalog:
-        candidate = fitted + [item]
-        if (
-            count_tokens(context_chat_prompts.render_citation_catalog_block(candidate))
-            > strict_budget
-        ):
-            break
-        fitted = candidate
-    return fitted
+    prefix_token_counts: dict[int, int] = {}
+    full_count = len(citation_catalog)
+    if full_count == 0:
+        return _empty_catalog_result()
+    if full_catalog_tokens is None:
+        full_catalog_tokens = _count_citation_catalog_tokens(citation_catalog)
+    prefix_token_counts[full_count] = full_catalog_tokens
+    if full_catalog_tokens <= strict_budget:
+        return citation_catalog, full_catalog_tokens
+
+    low = 0
+    high = full_count
+    best_count = 0
+    best_tokens = _empty_catalog_result()[1]
+    while low < high:
+        midpoint = (low + high + 1) // 2
+        midpoint_tokens = prefix_token_counts.get(midpoint)
+        if midpoint_tokens is None:
+            midpoint_tokens = _count_citation_catalog_tokens(citation_catalog[:midpoint])
+            prefix_token_counts[midpoint] = midpoint_tokens
+        if midpoint_tokens <= strict_budget:
+            best_count = midpoint
+            best_tokens = midpoint_tokens
+            low = midpoint
+        else:
+            high = midpoint - 1
+    return citation_catalog[:best_count], best_tokens
 
 
 def _normalize_citation_prefix_tokens(
@@ -528,20 +554,9 @@ def _normalize_citation_prefix_tokens(
     return normalized
 
 
-def _estimate_full_context_window_tokens(
-    *,
-    normalized_contexts: list[ChatContextSource],
-    normalized_citations: list[dict[str, str]],
-    context_window_kind: Literal["citation_catalog", "serialized_contexts"] | None,
-) -> int | None:
-    """Count full context-window tokens before any budget fitting or trimming."""
-    if context_window_kind == "citation_catalog":
-        return count_tokens(
-            context_chat_prompts.render_citation_catalog_block(normalized_citations)
-        )
-    if context_window_kind == "serialized_contexts":
-        return count_tokens(context_chat_prompts.serialize_all_contexts(normalized_contexts))
-    return None
+def _count_citation_catalog_tokens(citation_catalog: list[dict[str, str]]) -> int:
+    """Return exact tokens for one rendered citation-catalog block."""
+    return count_tokens(context_chat_prompts.render_citation_catalog_block(citation_catalog))
 
 
 __all__ = [

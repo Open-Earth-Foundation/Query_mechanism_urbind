@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 from pathlib import Path
 
 import pytest
@@ -287,3 +288,113 @@ def test_chat_retries_once_when_first_reply_has_no_valid_citations(
         assert payload["assistant_message"]["citations"][0]["ref_id"] == "ref_1"
 
     assert call_log == [False, True]
+
+
+def test_chat_send_works_with_partial_session_prompt_cache(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    captured_prefix_tokens: list[int] | None = [999]
+
+    def _stub_load_config(_path: Path | None = None) -> AppConfig:
+        return build_config(
+            runs_dir=runs_dir,
+            markdown_dir=markdown_dir,
+            followup_search_enabled=False,
+        )
+
+    def _stub_run_pipeline(
+        question: str,
+        config: AppConfig,
+        run_id: str | None = None,
+        log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
+        selected_cities: list[str] | None = None,
+    ) -> RunPaths:
+        assert run_id is not None
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
+        assert selected_cities is None
+        excerpts = [
+            {
+                "ref_id": "ref_1",
+                "city_name": "porto",
+                "quote": "Porto expects 35% electric and hybrid by 2030.",
+                "partial_answer": "Porto expects 35% electric and hybrid by 2030.",
+                "source_chunk_ids": ["chunk_hidden_2"],
+            }
+        ]
+        return write_success_artifacts(question, run_id, config, excerpts=excerpts)
+
+    def _stub_generate_reply(
+        original_question: str,
+        contexts: list[dict[str, object]],
+        history: list[dict[str, str]],
+        user_content: str,
+        config: AppConfig,
+        token_cap: int = 0,
+        citation_catalog: list[dict[str, str]] | None = None,
+        citation_prefix_tokens: list[int] | None = None,
+        retry_missing_citation: bool = False,
+        run_id: str | None = None,
+    ) -> str:
+        nonlocal captured_prefix_tokens
+        assert isinstance(original_question, str)
+        assert isinstance(contexts, list) and contexts
+        assert isinstance(history, list)
+        assert isinstance(citation_catalog, list) and citation_catalog
+        assert not retry_missing_citation
+        assert run_id == "run-chat-partial-cache"
+        captured_prefix_tokens = citation_prefix_tokens
+        return "Porto targets 35% by 2030. [ref_1]"
+
+    patch_api_config_loaders(monkeypatch, _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+    monkeypatch.setattr("backend.api.services.chat_reply_helpers.generate_context_chat_reply", _stub_generate_reply)
+    monkeypatch.setattr(
+        "backend.api.services.chat_session_helpers.build_citation_catalog_token_cache",
+        lambda *_args, **_kwargs: (_ for _ in ()).throw(
+            AssertionError("Direct send should tolerate partial session prompt caches.")
+        ),
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        start = client.post(
+            "/api/v1/runs",
+            json={"question": "Build doc", "run_id": "run-chat-partial-cache"},
+        )
+        assert start.status_code == 202
+        poll_until_completed(client, "run-chat-partial-cache")
+
+        create_session = client.post("/api/v1/runs/run-chat-partial-cache/chat/sessions", json={})
+        assert create_session.status_code == 201
+        conversation_id = create_session.json()["conversation_id"]
+
+        bootstrap_contexts = client.get(
+            f"/api/v1/runs/run-chat-partial-cache/chat/sessions/{conversation_id}/contexts"
+        )
+        assert bootstrap_contexts.status_code == 200
+
+        session_payload = json.loads(
+            (runs_dir / "run-chat-partial-cache" / "chat" / f"{conversation_id}.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        assert session_payload["prompt_context_cache"]["citation_ref_ids_in_order"] is None
+        assert session_payload["prompt_context_cache"]["citation_prefix_tokens"] is None
+
+        send_message = client.post(
+            f"/api/v1/runs/run-chat-partial-cache/chat/sessions/{conversation_id}/messages",
+            json={"content": "Show demand."},
+        )
+        assert send_message.status_code == 200
+        payload = send_message.json()
+        assert payload["assistant_message"]["content"] == "Porto targets 35% by 2030. [ref_1]"
+        assert payload["assistant_message"]["citations"][0]["ref_id"] == "ref_1"
+
+    assert captured_prefix_tokens is None

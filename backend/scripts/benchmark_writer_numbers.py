@@ -1,5 +1,5 @@
 """
-Brief: Run the writer numeric benchmark against frozen Krakow, Poland, and all-cities cases.
+Brief: Run the writer numeric benchmark against frozen Krakow, Poland, and optional all-cities cases.
 
 Inputs:
 - CLI args:
@@ -11,6 +11,9 @@ Inputs:
   - `--run-id`: Optional stable benchmark ID. Defaults to a UTC timestamp slug.
   - `--mode`: `ccc_only`, `full_pipeline`, or `both`. Defaults to the fixture's
     `default_mode`, which is `ccc_only`.
+  - `--include-optional-cases`: Include fixture cases marked as optional. The
+    frozen 102-city all-cities case is optional by default because it can take
+    a long time and consume a large number of LLM tokens.
 - Files/paths: expects the live markdown corpus under `documents/` and a valid LLM config.
 - Env vars: `OPENROUTER_API_KEY` is required for the live pipeline and numeric extractor.
 
@@ -23,6 +26,7 @@ Outputs:
 
 Usage (from project root):
 - python -m backend.scripts.benchmark_writer_numbers
+- python -m backend.scripts.benchmark_writer_numbers --include-optional-cases
 - python -m backend.scripts.benchmark_writer_numbers --mode both --run-id writer_numeric_smoke
 """
 
@@ -38,6 +42,7 @@ from backend.benchmarks.writer_numeric.runner import (
     DEFAULT_OUTPUT_DIR,
     load_writer_numeric_benchmark_dataset,
     run_writer_numeric_benchmark,
+    select_benchmark_cases,
 )
 from backend.utils.config import get_openrouter_api_key, load_config
 from backend.utils.logging_config import setup_logger
@@ -79,6 +84,14 @@ def parse_args() -> argparse.Namespace:
         default=None,
         help="Pipeline mode to benchmark. Defaults to the fixture default_mode.",
     )
+    parser.add_argument(
+        "--include-optional-cases",
+        action="store_true",
+        help=(
+            "Include fixture cases marked as optional, such as the expensive "
+            "all-cities run."
+        ),
+    )
     return parser.parse_args()
 
 
@@ -87,6 +100,10 @@ def main() -> None:
     args = parse_args()
     dataset = load_writer_numeric_benchmark_dataset(args.benchmark_file)
     requested_mode = args.mode or dataset.default_mode
+    selected_cases = select_benchmark_cases(
+        dataset,
+        include_optional_cases=args.include_optional_cases,
+    )
     benchmark_id = args.run_id or datetime.now(timezone.utc).strftime(
         "writer_numeric_%Y%m%dT%H%M%SZ"
     )
@@ -96,7 +113,7 @@ def main() -> None:
         "Starting writer numeric benchmark benchmark_id=%s mode=%s cases=%d",
         benchmark_id,
         requested_mode,
-        len(dataset.cases),
+        len(selected_cases),
     )
     report = run_writer_numeric_benchmark(
         benchmark_file=args.benchmark_file,
@@ -105,6 +122,7 @@ def main() -> None:
         requested_mode=requested_mode,
         config=config,
         api_key=api_key,
+        include_optional_cases=args.include_optional_cases,
     )
     logger.info(
         "Writer numeric benchmark completed benchmark_id=%s outputs=%d mismatches=%d missing=%d",

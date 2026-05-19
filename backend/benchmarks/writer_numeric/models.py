@@ -52,6 +52,7 @@ class WriterNumericBenchmarkCase(BaseModel):
     question: str = Field(min_length=1)
     selected_cities: list[str] = Field(min_length=1)
     baseline_metrics: list[BaselineMetric] = Field(min_length=1)
+    requires_explicit_include: bool = False
 
     @model_validator(mode="after")
     def _validate_case(self) -> "WriterNumericBenchmarkCase":
@@ -77,6 +78,7 @@ class WriterNumericBenchmarkDataset(BaseModel):
 
     version: int
     default_mode: PipelineMode
+    notes: list[str] = Field(default_factory=list)
     cases: list[WriterNumericBenchmarkCase] = Field(min_length=1)
 
     @model_validator(mode="after")

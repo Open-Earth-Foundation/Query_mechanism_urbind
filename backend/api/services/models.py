@@ -90,6 +90,7 @@ class PreparedContextChatRequest:
     context_tokens: int | None = None
     split_reason: str | None = None
     context_window_kind: PromptContextKind | None = None
+    full_context_window_tokens: int | None = None
     context_block_tokens: int | None = None
     prompt_header_tokens: int | None = None
     history_tokens: int | None = None
@@ -124,7 +125,11 @@ class ChatCitationEntry:
 
 @dataclass(frozen=True)
 class SessionPromptContextCache:
-    """Combined prompt-context cache for one exact session source selection."""
+    """Combined prompt-context cache for one exact session source selection.
+
+    Prefix-token arrays may be omitted when only the exact combined prompt
+    estimate is needed.
+    """
 
     context_run_ids: list[str]
     followup_bundle_ids: list[str]
@@ -132,8 +137,8 @@ class SessionPromptContextCache:
     prompt_context_tokens: int
     prompt_context_kind: PromptContextKind
     citation_catalog_entry_count: int
-    citation_ref_ids_in_order: list[str]
-    citation_prefix_tokens: list[int]
+    citation_ref_ids_in_order: list[str] | None
+    citation_prefix_tokens: list[int] | None
 
 
 @dataclass(frozen=True)

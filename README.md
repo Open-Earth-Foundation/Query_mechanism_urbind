@@ -549,7 +549,7 @@ Outputs are written to `output/benchmarks/recall/<benchmark_id>/`:
 ### Writer numeric benchmark
 
 Use this benchmark to check whether the final writer output preserves specific
-manual baseline numbers for Krakow, the Poland group, and the frozen
+manual baseline numbers for Krakow, the Poland group, and the optional frozen
 102-city corpus snapshot.
 
 Command example:
@@ -562,6 +562,8 @@ Useful flags:
 
 - `--mode ccc_only|full_pipeline|both`: benchmark the CCC-only pipeline, the
   full enrichment pipeline, or both. The fixture default is `ccc_only`.
+- `--include-optional-cases`: include fixture cases marked optional, including
+  the expensive all-cities run.
 - `--run-id <benchmark_id>`: override the default UTC timestamp benchmark id.
 - `--output-dir output/benchmarks/writer_numeric`: change the benchmark output
   root.
@@ -573,6 +575,10 @@ Behavior notes:
 - The fixture schema is `{"version": 1, "default_mode": "...", "cases": [...]}`.
 - Every case stores an explicit `selected_cities` list. The all-cities case is
   frozen in the fixture and is not resolved dynamically at runtime.
+- Cases can be marked optional in the fixture and require
+  `--include-optional-cases` to run.
+- The all-cities case is optional by default because it can take a long time
+  and consume a large number of LLM tokens.
 - Every baseline metric stores manual `components[]` so the benchmark remains
   baseline-driven instead of recomputing the totals from the corpus at runtime.
 - The benchmark is report-only: mismatches do not fail the run; they are

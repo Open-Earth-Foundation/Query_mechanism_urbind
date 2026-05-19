@@ -1,6 +1,10 @@
 {
   "version": 1,
   "default_mode": "ccc_only",
+  "notes": [
+    "The all-cities case is optional by default. Use --include-optional-cases to run it.",
+    "The all-cities case can take a long time and consume a large number of LLM tokens."
+  ],
   "cases": [
     {
       "case_id": "krakow_transport_electrification_numbers",
@@ -75,7 +79,7 @@
           "metric_id": "coverage_count",
           "label": "Number of Poland-group cities with an explicit public charging figure",
           "unit": "cities",
-          "expected_value": 3,
+          "expected_value": 4,
           "components": [
             {
               "label": "Krakow has an explicit public charging station figure",
@@ -91,14 +95,19 @@
               "label": "Rzeszow has an explicit public charging station figure",
               "value": 1,
               "source_note": "documents/Rzeszow.md states at least 100 publicly accessible charging stations."
+            },
+            {
+              "label": "Warszawa has an explicit public charging point figure",
+              "value": 1,
+              "source_note": "documents/Warszawa.md states that 44 charging points are planned for Praga-Południe and 50 for Ursynów, for a combined 94 charging points."
             }
           ]
         },
         {
           "metric_id": "combined_public_charging_total",
-          "label": "Combined public charging station total across Poland-group cities with explicit figures",
-          "unit": "stations",
-          "expected_value": 350,
+          "label": "Combined public charging figure total across Poland-group cities with explicit figures",
+          "unit": "units",
+          "expected_value": 444,
           "components": [
             {
               "label": "Krakow public charging stations",
@@ -114,13 +123,18 @@
               "label": "Rzeszow public charging stations",
               "value": 100,
               "source_note": "documents/Rzeszow.md states at least 100 publicly accessible charging stations."
+            },
+            {
+              "label": "Warszawa public charging points",
+              "value": 94,
+              "source_note": "documents/Warszawa.md states that 44 charging points are planned for Praga-Południe and 50 for Ursynów, for a combined 94 charging points."
             }
           ]
         },
         {
           "metric_id": "largest_public_charging_value",
-          "label": "Largest public charging station figure across qualifying Poland-group cities",
-          "unit": "stations",
+          "label": "Largest public charging figure across qualifying Poland-group cities",
+          "unit": "units",
           "expected_value": 150,
           "components": [
             {
@@ -137,6 +151,11 @@
               "label": "Rzeszow public charging stations",
               "value": 100,
               "source_note": "documents/Rzeszow.md states at least 100 publicly accessible charging stations."
+            },
+            {
+              "label": "Warszawa public charging points",
+              "value": 94,
+              "source_note": "documents/Warszawa.md states that 44 charging points are planned for Praga-Południe and 50 for Ursynów, for a combined 94 charging points."
             }
           ],
           "display_metadata": {
@@ -147,6 +166,7 @@
     },
     {
       "case_id": "all_cities_bus_electrification_rollup",
+      "requires_explicit_include": true,
       "question": "Across the frozen 102-city corpus, which city files explicitly state a city-level electric or zero-emission bus count in narrative or action-plan text? Start with a table listing only those cities, the count, and what the count refers to. Prefer direct city-level fleet or procurement figures, exclude percentages, ranges, indicator-table-only values, and clearly regional figures outside the city scope. Then end with a section titled Numeric summary using these exact metric labels on separate lines: coverage_count, combined_zero_emission_bus_total, largest_zero_emission_bus_value.",
       "selected_cities": [
         "Aachen",

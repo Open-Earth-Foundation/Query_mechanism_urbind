@@ -93,7 +93,7 @@ Outputs are written under `output/benchmarks/recall/<benchmark_id>/`:
 
 Use `python -m backend.scripts.benchmark_writer_numbers` to compare final writer
 numbers against a frozen manual baseline for Krakow, the Poland group, and the
-current all-cities corpus snapshot.
+optional all-cities corpus snapshot.
 
 - The fixture lives at
   `backend/benchmarks/writer_numeric/writer_numeric_benchmark.json` and uses the
@@ -101,11 +101,17 @@ current all-cities corpus snapshot.
 - Every case freezes `selected_cities` explicitly, including the all-cities
   case. Dynamic placeholders such as `all_cities` or group tokens are rejected
   by the loader.
+- Cases can be marked with `requires_explicit_include=true`. Those cases are
+  skipped unless `--include-optional-cases` is passed.
+- The frozen all-cities case is marked optional because it can take a long time
+  and consume a large number of LLM tokens.
 - Every `baseline_metrics[]` entry stores the benchmarked `metric_id`, label,
   unit, `expected_value`, and manual `components[]` used to justify the
   baseline.
 - Default execution mode is `ccc_only`. Use `--mode full_pipeline` to force the
   enrichment stack on, or `--mode both` to run each case in both modes.
+- Use `--include-optional-cases` when you intentionally want to run the
+  expensive all-cities case.
 - The numeric extractor is configured separately from the fact judge under
   `benchmark_number_extractor` in `llm_config.yaml`.
 
