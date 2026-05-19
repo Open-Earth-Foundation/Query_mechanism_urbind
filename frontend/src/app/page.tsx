@@ -1,6 +1,5 @@
 "use client";
 
-import { UserButton } from "@clerk/nextjs";
 import {
   type CSSProperties,
   type PointerEvent as ReactPointerEvent,
@@ -34,6 +33,7 @@ import { MarkdownWithReferences } from "@/components/markdown-with-references";
 import { SearchableCityPicker } from "@/components/searchable-city-picker";
 import { SearchableRunPicker } from "@/components/searchable-run-picker";
 import { WriterDocumentRail } from "@/components/writer-document-rail";
+import { LogoutButton } from "@/components/logout-button";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -944,7 +944,7 @@ export default function Home() {
             </div>
             <div className="flex items-center gap-3 self-start md:self-auto">
               <DevModeToggle mode={frontendMode} onModeChange={setFrontendMode} />
-              <UserButton />
+              <LogoutButton />
             </div>
           </div>
         </header>

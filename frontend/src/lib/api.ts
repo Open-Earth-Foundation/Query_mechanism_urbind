@@ -375,14 +375,9 @@ const DEFAULT_REQUEST_TIMEOUT_MS = 120_000;
 const CHAT_SEND_REQUEST_TIMEOUT_MS = 300_000;
 const RUN_LIST_REQUEST_TIMEOUT_MS = 12_000;
 const STATUS_REQUEST_TIMEOUT_MS = 10_000;
-const SESSION_TOKEN_PROVIDER_WAIT_TIMEOUT_MS = 3_000;
-const SESSION_TOKEN_RETRY_DELAY_MS = 150;
 
 let userApiKey: string | null = null;
-let sessionTokenProvider: (() => Promise<string | null>) | null = null;
-let sessionTokenProviderWaiters: Array<
-  (provider: (() => Promise<string | null>) | null) => void
-> = [];
+let isRedirectingToLogin = false;
 
 export function setUserApiKey(key: string | null): void {
   const cleaned = key?.trim() ?? "";
@@ -393,66 +388,17 @@ export function getUserApiKey(): string | null {
   return userApiKey;
 }
 
-export function registerSessionTokenProvider(
-  provider: (() => Promise<string | null>) | null,
-): void {
-  sessionTokenProvider = provider;
-  if (provider) {
-    const waiters = sessionTokenProviderWaiters;
-    sessionTokenProviderWaiters = [];
-    waiters.forEach((resolve) => resolve(provider));
+function redirectToLogin(): void {
+  if (typeof window === "undefined" || isRedirectingToLogin) {
+    return;
   }
-}
-
-function sleep(delayMs: number): Promise<void> {
-  return new Promise((resolve) => {
-    setTimeout(resolve, delayMs);
-  });
-}
-
-async function waitForSessionTokenProvider(): Promise<
-  (() => Promise<string | null>) | null
-> {
-  if (sessionTokenProvider || typeof window === "undefined") {
-    return sessionTokenProvider;
+  isRedirectingToLogin = true;
+  const nextPath = `${window.location.pathname}${window.location.search}`;
+  const loginUrl = new URL("/login", window.location.origin);
+  if (nextPath && nextPath !== "/") {
+    loginUrl.searchParams.set("next", nextPath);
   }
-
-  return await new Promise((resolve) => {
-    let settled = false;
-
-    const resolveOnce = (provider: (() => Promise<string | null>) | null): void => {
-      if (settled) {
-        return;
-      }
-      settled = true;
-      sessionTokenProviderWaiters = sessionTokenProviderWaiters.filter(
-        (waiter) => waiter !== resolveOnce,
-      );
-      clearTimeout(timeoutHandle);
-      resolve(provider);
-    };
-
-    const timeoutHandle = setTimeout(() => {
-      resolveOnce(sessionTokenProvider);
-    }, SESSION_TOKEN_PROVIDER_WAIT_TIMEOUT_MS);
-
-    sessionTokenProviderWaiters.push(resolveOnce);
-  });
-}
-
-async function resolveSessionToken(): Promise<string | null> {
-  const provider = sessionTokenProvider ?? (await waitForSessionTokenProvider());
-  if (!provider) {
-    return null;
-  }
-
-  const initialToken = await provider();
-  if (initialToken) {
-    return initialToken;
-  }
-
-  await sleep(SESSION_TOKEN_RETRY_DELAY_MS);
-  return await provider();
+  window.location.assign(loginUrl.toString());
 }
 
 async function buildHeaders(
@@ -465,10 +411,6 @@ async function buildHeaders(
   }
   if (userApiKey && !headers.has("X-OpenRouter-Api-Key")) {
     headers.set("X-OpenRouter-Api-Key", userApiKey);
-  }
-  const sessionToken = await resolveSessionToken();
-  if (sessionToken && !headers.has("Authorization")) {
-    headers.set("Authorization", `Bearer ${sessionToken}`);
   }
   return headers;
 }
@@ -514,6 +456,7 @@ async function requestResponse(
     const headers = await buildHeaders(init?.headers, includeJsonContentType);
     response = await fetch(`${getApiBaseUrl()}${path}`, {
       ...init,
+      credentials: "include",
       signal: timeoutController.signal,
       headers,
     });
@@ -531,14 +474,26 @@ async function requestResponse(
   }
 
   if (!response.ok) {
-    let message = `Request failed (${response.status})`;
+    let detailMessage: string | null = null;
     try {
-      const payload = (await response.json()) as { detail?: unknown };
+      const payload = (await response.clone().json()) as { detail?: unknown };
       if (typeof payload.detail === "string" && payload.detail.trim().length > 0) {
-        message = payload.detail;
+        detailMessage = payload.detail;
       }
     } catch {
-      // ignore JSON parse errors for non-JSON responses
+      detailMessage = null;
+    }
+
+    if (
+      response.status === 401 &&
+      detailMessage?.toLowerCase().includes("authentication is required")
+    ) {
+      redirectToLogin();
+    }
+
+    let message = `Request failed (${response.status})`;
+    if (detailMessage) {
+      message = detailMessage;
     }
     throw new Error(message);
   }

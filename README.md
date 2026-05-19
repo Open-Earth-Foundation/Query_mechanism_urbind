@@ -66,9 +66,8 @@ The `uv.lock` file is committed to ensure reproducible builds.
 Environment variables (`.env`):
 
 - `OPENROUTER_API_KEY` (required): API key used for all LLM calls via OpenRouter.
-- `CLERK_SECRET_KEY` (required): Clerk secret key used by the backend API and Next.js server runtime.
-- `CLERK_PUBLISHABLE_KEY` (required): Clerk publishable key used to keep backend and frontend on the same Clerk instance.
-- `CLERK_JWT_KEY` (required): Clerk JWT verification key in PEM format. Store it as one line with escaped newlines, for example `-----BEGIN PUBLIC KEY-----\n...\n-----END PUBLIC KEY-----`.
+- `APP_SHARED_PASSWORD` (required for Docker Compose and deployed frontend runtime): shared password used by the login page.
+- `APP_SESSION_SECRET` (required): shared HMAC secret used to sign and verify the `urbind_session` cookie. Use the same value in backend `.env`, frontend runtime env, Docker, and Kubernetes.
 - `MARKDOWN_DIR` (optional, default `documents`): default directory scanned for top-level city markdown files. Runtime markdown discovery ignores subfolders under this directory.
 - `RUNS_DIR` (optional, default `output`): base directory for run artifacts.
 - `LOG_LEVEL` (optional, default `INFO`): logging verbosity (`DEBUG`, `INFO`, `WARNING`, `ERROR`).
@@ -132,25 +131,41 @@ Recommended tuning workflow:
 3. Set/tighten `vector_store.retrieval_max_distance` based on observed distance distribution.
 4. Add `vector_store.retrieval_max_chunks_per_city` only if latency/cost grows too much.
 
-## Clerk auth setup (required)
+## Shared password gate (required)
 
-The frontend and backend now require Clerk:
+The frontend and backend now use one shared password gate with a signed `urbind_session` cookie:
 
-- Google social sign-in enabled
-- Restricted mode enabled
-- Manual invitations only
+- one shared password for the entire app
+- one shared session secret used to sign and verify the cookie
+- no separate users, OAuth providers, or third-party auth service
 
-Configure both your Clerk development instance and your Clerk production instance the same way:
+Configure it like this:
 
-1. Enable Google under `SSO connections`.
-2. Turn on `Restricted mode`.
-3. Invite users manually from the Clerk dashboard.
+1. For local no-Docker runs, set backend values in the root `.env` and frontend values in `frontend/.env.local`. This duplicate local setup is only needed because FastAPI and Next.js are started as separate processes from separate directories.
+2. For Docker Compose, the root `.env` is enough; Compose passes the shared auth values into both containers.
+3. For deployed dev/prod, do not use repo `.env` files. Set `APP_SHARED_PASSWORD` and `APP_SESSION_SECRET` through GitHub Secrets/Kubernetes secrets.
+4. Leave `APP_SESSION_COOKIE_DOMAIN` unset locally. Set it to `.openearth.dev` in production so the cookie reaches both frontend and backend subdomains.
+5. Keep `API_CORS_ORIGINS` explicit. Backend `/api/v1/*` requires the shared session cookie; backend `/` and `/healthz` stay public for probes.
 
-Important notes:
+Use `APP_SHARED_PASSWORD` as the password people type into the login page. Generate `APP_SESSION_SECRET`; users never type this value. It only signs and verifies the session cookie. The secret must be at least 32 characters; use a 64-character hex value from the commands below.
 
-- Development and production Clerk instances have separate users and invitation lists.
-- Production Google OAuth credentials live in the Clerk dashboard, not in `.env`.
-- Backend `/api/v1/*` routes require a Clerk session token; backend `/` and `/healthz` stay public for probes.
+Generate a session secret on Windows PowerShell:
+
+```powershell
+-join ((1..64) | ForEach-Object { "{0:x}" -f (Get-Random -Maximum 16) })
+```
+
+Generate a session secret on macOS/Linux:
+
+```bash
+openssl rand -hex 32
+```
+
+Rotating `APP_SESSION_SECRET` logs out all active browser sessions.
+
+For cookie-authenticated unsafe API methods (`POST`, `PUT`, `PATCH`, and `DELETE`), the backend also requires the browser `Origin` or `Referer` to match `API_CORS_ORIGINS`. This prevents sibling subdomains or unrelated sites from using the shared cookie for state-changing requests.
+
+The frontend applies a basic in-memory failed-login throttle per client address and per frontend pod. It also keeps a fixed global failed-login bucket of 50 attempts per window so spoofed forwarding headers cannot fully bypass the app-level throttle. For production, keep an ingress or WAF rate limit on `/api/auth/login` as the durable control.
 
 ## API key setup (important)
 
@@ -835,21 +850,21 @@ npm run dev
 Optional frontend env:
 
 ```
-NEXT_PUBLIC_API_BASE_URL=http://127.0.0.1:8000
+NEXT_PUBLIC_API_BASE_URL=http://localhost:8000
 NEXT_PUBLIC_LOCAL_API_PORT=8000
 NEXT_PUBLIC_FRONTEND_MODE=standard
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_your_key_here
-CLERK_SECRET_KEY=sk_test_your_key_here
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
-NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL=/
-NEXT_PUBLIC_CLERK_SIGN_UP_FALLBACK_REDIRECT_URL=/
+APP_SHARED_PASSWORD=change_me_to_the_shared_password
+APP_SESSION_SECRET=change_me_to_a_32_char_min_random_secret
+APP_SESSION_COOKIE_DOMAIN=
+APP_SESSION_TTL_SECONDS=604800
+APP_LOGIN_RATE_LIMIT_MAX_ATTEMPTS=5
+APP_LOGIN_RATE_LIMIT_WINDOW_SECONDS=900
 ```
 
 `NEXT_PUBLIC_API_BASE_URL` should be set for deployed environments.
 If it is omitted, the frontend falls back to a local backend URL built from `NEXT_PUBLIC_LOCAL_API_PORT`.
-`NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` and `CLERK_SECRET_KEY` are required for `npm run dev`.
-The sign-in and sign-up URL vars default to `/sign-in` and `/sign-up`, but keeping them explicit in `.env.local` matches Docker and deployment behavior.
+`APP_SHARED_PASSWORD` and `APP_SESSION_SECRET` are required for `npm run dev`.
+Keep frontend and backend on the same host label locally: `localhost` with `localhost`, or `127.0.0.1` with `127.0.0.1`.
 
 Frontend supports three city scope modes in the build form: all cities, predefined group, and manual selection.
 Frontend also supports two answer modes: `Aggregate Mode` and `City-by-City Mode` (sent as `analysis_mode` in run requests).
@@ -881,11 +896,11 @@ Run frontend in Docker:
 
 ```
 docker build -f frontend/Dockerfile \
-  --build-arg NEXT_PUBLIC_API_BASE_URL=https://query-mechanism-api.openearth.dev \
-  --build-arg NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_your_key_here \
+  --build-arg NEXT_PUBLIC_API_BASE_URL=https://urbind-query-mechanism-api.openearth.dev \
   -t query-mechanism-frontend ./frontend
 docker run -it --rm -p 3000:3000 \
-  -e CLERK_SECRET_KEY=sk_test_your_key_here \
+  -e APP_SHARED_PASSWORD=change_me \
+  -e APP_SESSION_SECRET=change_me_to_a_32_char_min_secret \
   query-mechanism-frontend
 ```
 
@@ -910,10 +925,17 @@ After startup:
 - Frontend: `http://localhost:3000`
 - Backend API docs: `http://localhost:8000/docs`
 
-Local config split:
+Local no-Docker config split:
 
-- root `.env`: backend settings, including `OPENROUTER_API_KEY`, `CLERK_SECRET_KEY`, `CLERK_PUBLISHABLE_KEY`, and `CLERK_JWT_KEY`
-- `frontend/.env.local`: frontend-only `NEXT_PUBLIC_*` Clerk values for `npm run dev`
+- root `.env`: backend settings, including `OPENROUTER_API_KEY`, `APP_SESSION_SECRET`, and explicit `API_CORS_ORIGINS`
+- `frontend/.env.local`: frontend runtime settings, including `APP_SHARED_PASSWORD`, the same `APP_SESSION_SECRET`, and `NEXT_PUBLIC_*`
+
+This split is only for local no-Docker runs. Docker Compose reads the root `.env` and injects values into both containers. Deployed dev/prod uses GitHub Secrets and Kubernetes secrets instead of repo `.env` files.
+
+Supported modes:
+
+- Local: frontend at `http://localhost:3000`, backend at `http://localhost:8000`, `APP_SESSION_COOKIE_DOMAIN` unset.
+- Dev deployment: frontend at `https://urbind-query-mechanism.openearth.dev`, backend at `https://urbind-query-mechanism-api.openearth.dev`, `APP_SESSION_COOKIE_DOMAIN=.openearth.dev`.
 
 ## Manual EKS deployment
 
@@ -929,10 +951,10 @@ CORS and auth notes
 
 - Restrict `API_CORS_ORIGINS` in `k8s/backend-configmap.yml` to the deployed frontend origin(s) only, for example `https://urbind-query-mechanism.openearth.dev`.
 - Remove local-only origins such as `http://localhost:3000`, `http://127.0.0.1:3000`, and private LAN hosts from the production ConfigMap.
-- Backend startup now fails closed when Clerk auth is enabled without explicit `API_CORS_ORIGINS`.
+- Backend startup now fails closed when shared-cookie auth is enabled without explicit `API_CORS_ORIGINS`.
 - Keep localhost-friendly CORS settings only in local Docker/dev configuration.
 - Ensure the deployed frontend sets `NEXT_PUBLIC_API_BASE_URL` explicitly so backend host mismatches are not confused with CORS failures.
-- `API_CORS_ORIGINS` also acts as the Clerk `authorized_parties` allowlist for API token verification.
+- In local development, keep frontend and backend on the same host label (`localhost` with `localhost`, or `127.0.0.1` with `127.0.0.1`) so the host-scoped cookie reaches both services.
 
 Required repository secrets:
 
@@ -940,14 +962,13 @@ Required repository secrets:
 - `AWS_SECRET_ACCESS_KEY_EKS_DEV_USER`
 - `EKS_DEV_NAME`
 - `OPENROUTER_API_KEY`
-- `CLERK_SECRET_KEY`
-- `CLERK_JWT_KEY`
+- `APP_SHARED_PASSWORD`
+- `APP_SESSION_SECRET`
 
 Optional repository variables:
 
 - `EKS_DEV_REGION` (default `us-east-1`)
 - `FRONTEND_API_BASE_URL` (default `https://urbind-query-mechanism-api.openearth.dev`)
-- `CLERK_PUBLISHABLE_KEY`
 
 Artifacts are written under `output/<run_id>/`:
 
