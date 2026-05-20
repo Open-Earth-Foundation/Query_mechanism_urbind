@@ -121,6 +121,12 @@ Outputs are written under `output/benchmarks/writer_numeric/<benchmark_id>/`:
   comparisons.
 - `benchmark_report.md`: human-readable diff report that shows baseline value,
   extracted value, status, and writer snippet per metric.
+- Some cases now opt into row-level audits for the writer's city/count table.
+  Those reports include per-city match, mismatch, missing, and extra rows for
+  the configured combined-total metric.
+- The optional all-cities bus case now also emits a heuristic retrieval audit
+  that compares source documents with numeric bus-count language against the set
+  of cities that actually surfaced in accepted excerpts.
 - `runs/<case_id>__<mode>/final.md`: live writer output for each run.
 - `runs/<case_id>__<mode>/context_bundle.json`: live writer context bundle.
 - `runs/<case_id>__<mode>/extracted_numbers.json`: structured extractor output.

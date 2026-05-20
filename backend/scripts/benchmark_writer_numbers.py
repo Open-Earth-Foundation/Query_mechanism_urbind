@@ -1,5 +1,5 @@
 """
-Brief: Run the writer numeric benchmark against frozen Krakow, Poland, and optional all-cities cases.
+Brief: Run the writer numeric benchmark against frozen Krakow, Poland, Balkans, and optional all-cities cases.
 
 Inputs:
 - CLI args:

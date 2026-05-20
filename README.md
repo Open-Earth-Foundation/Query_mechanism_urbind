@@ -549,8 +549,8 @@ Outputs are written to `output/benchmarks/recall/<benchmark_id>/`:
 ### Writer numeric benchmark
 
 Use this benchmark to check whether the final writer output preserves specific
-manual baseline numbers for Krakow, the Poland group, and the optional frozen
-102-city corpus snapshot.
+manual baseline numbers for Krakow, the Poland group, the Balkans & Eastern
+Mediterranean group, and the optional frozen 102-city corpus snapshot.
 
 Command example:
 

@@ -8,6 +8,8 @@ from pydantic import BaseModel, ConfigDict, Field, model_validator
 PipelineMode = Literal["ccc_only", "full_pipeline"]
 RequestedMode = Literal["ccc_only", "full_pipeline", "both"]
 ComparisonStatus = Literal["match", "mismatch", "missing"]
+ComponentRowStatus = Literal["match", "mismatch", "missing", "extra"]
+DiagnosticPreset = Literal["electric_bus_numeric_mentions"]
 
 _DYNAMIC_SCOPE_TOKENS = {"*", "all", "all_cities", "poland"}
 
@@ -53,6 +55,7 @@ class WriterNumericBenchmarkCase(BaseModel):
     selected_cities: list[str] = Field(min_length=1)
     baseline_metrics: list[BaselineMetric] = Field(min_length=1)
     requires_explicit_include: bool = False
+    retrieval_audit_preset: DiagnosticPreset | None = None
 
     @model_validator(mode="after")
     def _validate_case(self) -> "WriterNumericBenchmarkCase":
@@ -154,6 +157,50 @@ class MetricComparison(BaseModel):
     notes: str = ""
 
 
+class ComponentRowComparison(BaseModel):
+    """Comparison between one expected table row and one writer table row."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    label: str = Field(min_length=1)
+    expected_value: int | float | str | None = None
+    expected_normalized: str | None = None
+    extracted_value: int | float | str | None = None
+    extracted_normalized: str | None = None
+    status: ComponentRowStatus
+    raw_row: str | None = None
+    notes: str = ""
+
+
+class MetricComponentAudit(BaseModel):
+    """Row-level audit for one metric whose components define expected table rows."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    metric_id: str = Field(min_length=1)
+    label: str = Field(min_length=1)
+    unit: str = Field(min_length=1)
+    expected_row_count: int = Field(ge=0)
+    extracted_row_count: int = Field(ge=0)
+    match_count: int = Field(ge=0)
+    mismatch_count: int = Field(ge=0)
+    missing_count: int = Field(ge=0)
+    extra_count: int = Field(ge=0)
+    row_results: list[ComponentRowComparison] = Field(default_factory=list)
+
+
+class RetrievalCandidateAudit(BaseModel):
+    """Heuristic recall audit between source documents and accepted excerpts."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    preset: DiagnosticPreset
+    candidate_city_count: int = Field(ge=0)
+    excerpt_city_count: int = Field(ge=0)
+    candidate_only_cities: list[str] = Field(default_factory=list)
+    excerpt_only_cities: list[str] = Field(default_factory=list)
+
+
 class WriterNumericCaseResult(BaseModel):
     """Persisted result for one case and one pipeline mode."""
 
@@ -169,6 +216,8 @@ class WriterNumericCaseResult(BaseModel):
     context_bundle_path: str = Field(min_length=1)
     extracted_numbers_path: str = Field(min_length=1)
     metric_results: list[MetricComparison] = Field(min_length=1)
+    component_audits: list[MetricComponentAudit] = Field(default_factory=list)
+    retrieval_audit: RetrievalCandidateAudit | None = None
     match_count: int = Field(ge=0)
     mismatch_count: int = Field(ge=0)
     missing_count: int = Field(ge=0)
@@ -185,6 +234,17 @@ class WriterNumericBenchmarkSummary(BaseModel):
     match_count: int = Field(ge=0)
     mismatch_count: int = Field(ge=0)
     missing_count: int = Field(ge=0)
+    component_audit_count: int = Field(ge=0)
+    component_row_count: int = Field(ge=0)
+    component_row_match_count: int = Field(ge=0)
+    component_row_mismatch_count: int = Field(ge=0)
+    component_row_missing_count: int = Field(ge=0)
+    component_row_extra_count: int = Field(ge=0)
+    retrieval_audit_count: int = Field(ge=0)
+    retrieval_candidate_city_count: int = Field(ge=0)
+    retrieval_excerpt_city_count: int = Field(ge=0)
+    retrieval_candidate_only_count: int = Field(ge=0)
+    retrieval_excerpt_only_count: int = Field(ge=0)
 
 
 class WriterNumericBenchmarkReport(BaseModel):
@@ -205,9 +265,14 @@ class WriterNumericBenchmarkReport(BaseModel):
 __all__ = [
     "BaselineMetric",
     "ComparisonStatus",
+    "ComponentRowComparison",
+    "ComponentRowStatus",
+    "DiagnosticPreset",
     "MetricComparison",
+    "MetricComponentAudit",
     "MetricComponent",
     "PipelineMode",
+    "RetrievalCandidateAudit",
     "RequestedMode",
     "WriterMetricExtraction",
     "WriterNumberExtraction",

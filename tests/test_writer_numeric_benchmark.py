@@ -6,11 +6,14 @@ from pathlib import Path
 import pytest
 
 from backend.benchmarks.writer_numeric.models import (
+    WriterNumericBenchmarkCase,
     WriterMetricExtraction,
     WriterNumberExtraction,
     WriterNumericBenchmarkDataset,
 )
 from backend.benchmarks.writer_numeric.runner import (
+    _build_component_audits,
+    _build_retrieval_audit,
     apply_pipeline_mode,
     normalize_metric_value,
     resolve_requested_modes,
@@ -291,6 +294,8 @@ def test_run_writer_numeric_benchmark_writes_report_only_artifacts(tmp_path: Pat
     assert report.summary.match_count == 2
     assert report.summary.mismatch_count == 2
     assert report.summary.missing_count == 2
+    assert report.summary.component_audit_count == 0
+    assert report.summary.retrieval_audit_count == 0
     assert (benchmark_root / "benchmark_summary.json").exists()
     assert (benchmark_root / "benchmark_report.md").exists()
     assert (
@@ -299,3 +304,118 @@ def test_run_writer_numeric_benchmark_writes_report_only_artifacts(tmp_path: Pat
     assert (
         benchmark_root / "runs" / "sample_case__full_pipeline" / "extracted_numbers.json"
     ).exists()
+
+
+def test_component_audit_compares_writer_city_rows() -> None:
+    """Metrics can opt into row-level city/value comparison against the writer table."""
+    case = WriterNumericBenchmarkCase.model_validate(
+        {
+            "case_id": "row_audit_case",
+            "question": "List the city counts in a table and end with Numeric summary.",
+            "selected_cities": ["Krakow", "Lodz"],
+            "baseline_metrics": [
+                {
+                    "metric_id": "combined_public_charging_total",
+                    "label": "Combined public charging total",
+                    "unit": "stations",
+                    "expected_value": 250,
+                    "components": [
+                        {
+                            "label": "Krakow",
+                            "value": 150,
+                            "source_note": "Manual component.",
+                        },
+                        {
+                            "label": "Lodz",
+                            "value": 100,
+                            "source_note": "Manual component.",
+                        },
+                    ],
+                    "display_metadata": {"compare_components_as_rows": True},
+                }
+            ],
+        }
+    )
+
+    audits = _build_component_audits(
+        case,
+        (
+            "| City | Count | What the count refers to |\n"
+            "| --- | ---: | --- |\n"
+            "| Krakow | 150 | public charging stations |\n"
+            "| Wroclaw | 90 | extra writer row |\n"
+        ),
+    )
+
+    assert len(audits) == 1
+    audit = audits[0]
+    assert audit.match_count == 1
+    assert audit.missing_count == 1
+    assert audit.extra_count == 1
+    assert [row.status for row in audit.row_results] == ["match", "missing", "extra"]
+
+
+def test_retrieval_audit_reports_candidate_and_excerpt_gaps(tmp_path: Path) -> None:
+    """Heuristic retrieval audit surfaces candidate city docs missing from excerpts."""
+    documents_dir = tmp_path / "documents"
+    documents_dir.mkdir()
+    (documents_dir / "Alpha.md").write_text(
+        "The plan procures 10 electric buses by 2028.",
+        encoding="utf-8",
+    )
+    (documents_dir / "Beta.md").write_text(
+        "The city will add 20 zero-emission buses in the next phase.",
+        encoding="utf-8",
+    )
+    (documents_dir / "Gamma.md").write_text(
+        "This file mentions charging stations only.",
+        encoding="utf-8",
+    )
+    context_bundle_path = tmp_path / "context_bundle.json"
+    write_json(
+        context_bundle_path,
+        {
+            "markdown": {
+                "excerpts": [
+                    {"city_key": "alpha", "quote": "10 electric buses"},
+                    {"city_key": "delta", "quote": "5 electric buses"},
+                ]
+            }
+        },
+        ensure_ascii=False,
+    )
+    case = WriterNumericBenchmarkCase.model_validate(
+        {
+            "case_id": "retrieval_audit_case",
+            "question": "Find future electric-bus counts.",
+            "selected_cities": ["Alpha", "Beta", "Delta"],
+            "retrieval_audit_preset": "electric_bus_numeric_mentions",
+            "baseline_metrics": [
+                {
+                    "metric_id": "coverage_count",
+                    "label": "Coverage count",
+                    "unit": "cities",
+                    "expected_value": 2,
+                    "components": [
+                        {
+                            "label": "Alpha",
+                            "value": 1,
+                            "source_note": "Manual component.",
+                        }
+                    ],
+                }
+            ],
+        }
+    )
+
+    audit = _build_retrieval_audit(
+        case=case,
+        context_bundle_path=context_bundle_path,
+        documents_dir=documents_dir,
+    )
+
+    assert audit is not None
+    assert audit.candidate_city_count == 2
+    assert audit.excerpt_city_count == 2
+    assert audit.candidate_only_cities == ["Beta"]
+    assert audit.excerpt_only_cities == ["delta"]
