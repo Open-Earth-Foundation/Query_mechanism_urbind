@@ -51,6 +51,11 @@ spec:
                   name: urbind-query-mechanism-backend-secrets
                   key: FIRECRAWL_API_KEY
                   optional: true
+            - name: APP_SESSION_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: urbind-query-mechanism-app-auth-secrets
+                  key: APP_SESSION_SECRET
           volumeMounts:
             - name: output-volume
               mountPath: /data

@@ -9,9 +9,15 @@ from pathlib import Path
 from typing import AsyncIterator
 
 from dotenv import load_dotenv
-from fastapi import FastAPI
+from fastapi import APIRouter, Depends, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from backend.api.auth import (
+    SESSION_COOKIE_NAME,
+    attach_shared_session_settings,
+    load_shared_session_settings,
+    require_shared_session,
+)
 from backend.api.routes import (
     assumptions_router,
     chat_router,
@@ -30,6 +36,17 @@ logger = logging.getLogger(__name__)
 # this is responsible for how many runs we can run per instance
 DEFAULT_API_RUN_WORKERS = 2
 DEFAULT_API_CHAT_JOB_WORKERS = 1
+
+
+def _resolve_allowed_origins() -> list[str]:
+    """Parse explicit frontend origins for credentialed browser requests."""
+    raw_origins = os.getenv("API_CORS_ORIGINS", "").strip()
+    allowed_origins = [value.strip() for value in raw_origins.split(",") if value.strip()]
+    if not allowed_origins or "*" in allowed_origins:
+        raise RuntimeError(
+            "API_CORS_ORIGINS must list explicit frontend origins when shared auth is enabled."
+        )
+    return allowed_origins
 
 
 def _resolve_runs_dir(runs_dir: Path | None) -> Path:
@@ -93,6 +110,8 @@ def create_app(
     """Create FastAPI app instance."""
     load_dotenv()
     setup_logger()
+    allowed_origins = _resolve_allowed_origins()
+    shared_session_settings = load_shared_session_settings(allowed_origins)
     resolved_runs_dir = _resolve_runs_dir(runs_dir)
     resolved_workers = _resolve_worker_count(max_workers)
     resolved_chat_job_workers = _resolve_chat_job_worker_count()
@@ -153,35 +172,34 @@ def create_app(
         run_executor.shutdown(wait=True)
         logger.info("API shutdown complete")
 
-    cors_origins_raw = os.getenv("API_CORS_ORIGINS", "")
-    allowed_origins = [o.strip() for o in cors_origins_raw.split(",") if o.strip()]
-    # Wildcard origin cannot be combined with allow_credentials=True (CORS spec).
-    # When explicit origins are configured, credentials are permitted.
-    using_wildcard = not allowed_origins or "*" in allowed_origins
-    if using_wildcard:
-        allowed_origins = ["*"]
-
     app = FastAPI(
         title="Query Mechanism Backend API",
         version="0.1.0",
         lifespan=lifespan,
     )
+    attach_shared_session_settings(app, shared_session_settings)
     app.add_middleware(
         CORSMiddleware,
         allow_origins=allowed_origins,
-        allow_credentials=not using_wildcard,
+        allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],
     )
     logger.info(
-        "CORS allow_origins=%s allow_credentials=%s",
+        "CORS allow_origins=%s allow_credentials=%s shared_cookie_name=%s",
         allowed_origins,
-        not using_wildcard,
+        True,
+        SESSION_COOKIE_NAME,
     )
-    app.include_router(runs_router, prefix="/api/v1", tags=["runs"])
-    app.include_router(cities_router, prefix="/api/v1", tags=["cities"])
-    app.include_router(chat_router, prefix="/api/v1", tags=["chat"])
-    app.include_router(assumptions_router, prefix="/api/v1", tags=["assumptions"])
+    protected_api = APIRouter(
+        prefix="/api/v1",
+        dependencies=[Depends(require_shared_session)],
+    )
+    protected_api.include_router(runs_router, tags=["runs"])
+    protected_api.include_router(cities_router, tags=["cities"])
+    protected_api.include_router(chat_router, tags=["chat"])
+    protected_api.include_router(assumptions_router, tags=["assumptions"])
+    app.include_router(protected_api)
 
     @app.get("/")
     def root() -> dict[str, str]:

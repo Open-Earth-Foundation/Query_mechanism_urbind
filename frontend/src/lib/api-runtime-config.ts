@@ -11,7 +11,10 @@ function resolveLocalFallbackApiBaseUrl(): string {
   }
   const protocol = window.location.protocol === "https:" ? "https:" : "http:";
   const hostname = window.location.hostname || "127.0.0.1";
-  if (hostname === "localhost" || hostname === "127.0.0.1") {
+  if (hostname === "localhost") {
+    return `http://localhost:${localApiPort}`;
+  }
+  if (hostname === "127.0.0.1") {
     return `http://127.0.0.1:${localApiPort}`;
   }
   return `${protocol}//${hostname}:${localApiPort}`;

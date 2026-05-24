@@ -34,6 +34,7 @@ import { RunDiagnosticsPanel } from "@/components/run-diagnostics-panel";
 import { SearchableCityPicker } from "@/components/searchable-city-picker";
 import { SearchableRunPicker } from "@/components/searchable-run-picker";
 import { WriterDocumentRail } from "@/components/writer-document-rail";
+import { LogoutButton } from "@/components/logout-button";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -975,7 +976,10 @@ export default function Home() {
                 context chat workspace.
               </p>
             </div>
-            <DevModeToggle mode={frontendMode} onModeChange={setFrontendMode} />
+            <div className="flex items-center gap-3 self-start md:self-auto">
+              <DevModeToggle mode={frontendMode} onModeChange={setFrontendMode} />
+              <LogoutButton />
+            </div>
           </div>
         </header>
 

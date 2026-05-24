@@ -430,6 +430,7 @@ const RUN_LIST_REQUEST_TIMEOUT_MS = 12_000;
 const STATUS_REQUEST_TIMEOUT_MS = 10_000;
 
 let userApiKey: string | null = null;
+let isRedirectingToLogin = false;
 
 export function setUserApiKey(key: string | null): void {
   const cleaned = key?.trim() ?? "";
@@ -440,13 +441,29 @@ export function getUserApiKey(): string | null {
   return userApiKey;
 }
 
-function buildHeaders(includeJsonContentType: boolean): HeadersInit {
-  const headers: Record<string, string> = {};
-  if (includeJsonContentType) {
-    headers["Content-Type"] = "application/json";
+function redirectToLogin(): void {
+  if (typeof window === "undefined" || isRedirectingToLogin) {
+    return;
   }
-  if (userApiKey) {
-    headers["X-OpenRouter-Api-Key"] = userApiKey;
+  isRedirectingToLogin = true;
+  const nextPath = `${window.location.pathname}${window.location.search}`;
+  const loginUrl = new URL("/login", window.location.origin);
+  if (nextPath && nextPath !== "/") {
+    loginUrl.searchParams.set("next", nextPath);
+  }
+  window.location.assign(loginUrl.toString());
+}
+
+async function buildHeaders(
+  initHeaders: HeadersInit | undefined,
+  includeJsonContentType: boolean,
+): Promise<Headers> {
+  const headers = new Headers(initHeaders);
+  if (includeJsonContentType && !headers.has("Content-Type")) {
+    headers.set("Content-Type", "application/json");
+  }
+  if (userApiKey && !headers.has("X-OpenRouter-Api-Key")) {
+    headers.set("X-OpenRouter-Api-Key", userApiKey);
   }
   return headers;
 }
@@ -489,13 +506,12 @@ async function requestResponse(
   }, timeoutMs);
   let response: Response;
   try {
+    const headers = await buildHeaders(init?.headers, includeJsonContentType);
     response = await fetch(`${getApiBaseUrl()}${path}`, {
       ...init,
+      credentials: "include",
       signal: timeoutController.signal,
-      headers: {
-        ...buildHeaders(includeJsonContentType),
-        ...(init?.headers ?? {}),
-      },
+      headers,
     });
   } catch (error) {
     if (error instanceof DOMException && error.name === "AbortError") {
@@ -511,14 +527,26 @@ async function requestResponse(
   }
 
   if (!response.ok) {
-    let message = `Request failed (${response.status})`;
+    let detailMessage: string | null = null;
     try {
-      const payload = (await response.json()) as { detail?: unknown };
+      const payload = (await response.clone().json()) as { detail?: unknown };
       if (typeof payload.detail === "string" && payload.detail.trim().length > 0) {
-        message = payload.detail;
+        detailMessage = payload.detail;
       }
     } catch {
-      // ignore JSON parse errors for non-JSON responses
+      detailMessage = null;
+    }
+
+    if (
+      response.status === 401 &&
+      detailMessage?.toLowerCase().includes("authentication is required")
+    ) {
+      redirectToLogin();
+    }
+
+    let message = `Request failed (${response.status})`;
+    if (detailMessage) {
+      message = detailMessage;
     }
     throw new Error(message);
   }
