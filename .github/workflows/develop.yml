@@ -218,10 +218,13 @@ jobs:
             --dry-run=client -o yaml | kubectl apply -f -
 
       - name: Create or update shared auth secret
+        env:
+          APP_SHARED_PASSWORD_HASH: ${{ secrets.APP_SHARED_PASSWORD_HASH }}
+          APP_SESSION_SECRET: ${{ secrets.APP_SESSION_SECRET }}
         run: |
           kubectl -n default create secret generic urbind-query-mechanism-app-auth-secrets \
-            --from-literal=APP_SHARED_PASSWORD_HASH="${{ secrets.APP_SHARED_PASSWORD_HASH }}" \
-            --from-literal=APP_SESSION_SECRET="${{ secrets.APP_SESSION_SECRET }}" \
+            --from-literal=APP_SHARED_PASSWORD_HASH="${APP_SHARED_PASSWORD_HASH}" \
+            --from-literal=APP_SESSION_SECRET="${APP_SESSION_SECRET}" \
             --dry-run=client -o yaml | kubectl apply -f -
 
       - name: Apply Kubernetes manifests
