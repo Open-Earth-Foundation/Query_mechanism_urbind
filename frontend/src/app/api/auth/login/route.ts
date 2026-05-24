@@ -1,14 +1,14 @@
+import { compare } from "bcryptjs";
 import { NextRequest, NextResponse } from "next/server";
 
 import {
   SESSION_COOKIE_NAME,
   buildSessionCookieOptions,
   clearFailedLoginAttempts,
-  constantTimeEqualStrings,
   createSessionToken,
   getClientAddress,
   getSessionSecret,
-  getSharedPassword,
+  getSharedPasswordHash,
   getSessionTtlSeconds,
   isTrustedSameOriginRequest,
   isLoginRateLimited,
@@ -38,8 +38,8 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
   }
 
   const sessionSecret = getSessionSecret();
-  const sharedPassword = getSharedPassword();
-  if (!sessionSecret || !sharedPassword) {
+  const sharedPasswordHash = getSharedPasswordHash();
+  if (!sessionSecret || !sharedPasswordHash) {
     return NextResponse.json(
       { detail: "Application auth is not configured." },
       { status: 500 },
@@ -66,7 +66,8 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     return NextResponse.json({ detail: "Password is required." }, { status: 400 });
   }
 
-  if (!constantTimeEqualStrings(password, sharedPassword)) {
+  const isValidPassword = await compare(password, sharedPasswordHash);
+  if (!isValidPassword) {
     registerFailedLoginAttempt(clientAddress);
     return NextResponse.json({ detail: "Incorrect password." }, { status: 401 });
   }

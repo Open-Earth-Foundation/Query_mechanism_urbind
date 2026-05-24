@@ -67,7 +67,7 @@ jobs:
     name: Verify frontend build
     runs-on: ubuntu-latest
     env:
-      APP_SHARED_PASSWORD: ci_password_placeholder
+      APP_SHARED_PASSWORD_HASH: ci_password_hash_placeholder
       APP_SESSION_SECRET: ci_session_secret_placeholder_32_chars
     defaults:
       run:
@@ -220,7 +220,7 @@ jobs:
       - name: Create or update shared auth secret
         run: |
           kubectl -n default create secret generic urbind-query-mechanism-app-auth-secrets \
-            --from-literal=APP_SHARED_PASSWORD="${{ secrets.APP_SHARED_PASSWORD }}" \
+            --from-literal=APP_SHARED_PASSWORD_HASH="${{ secrets.APP_SHARED_PASSWORD_HASH }}" \
             --from-literal=APP_SESSION_SECRET="${{ secrets.APP_SESSION_SECRET }}" \
             --dry-run=client -o yaml | kubectl apply -f -
 

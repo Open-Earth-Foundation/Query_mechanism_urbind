@@ -66,7 +66,7 @@ The `uv.lock` file is committed to ensure reproducible builds.
 Environment variables (`.env`):
 
 - `OPENROUTER_API_KEY` (required): API key used for all LLM calls via OpenRouter.
-- `APP_SHARED_PASSWORD` (required for Docker Compose and deployed frontend runtime): shared password used by the login page.
+- `APP_SHARED_PASSWORD_HASH` (required for Docker Compose and deployed frontend runtime): bcrypt hash of the shared login password used by the login page.
 - `APP_SESSION_SECRET` (required): shared HMAC secret used to sign and verify the `urbind_session` cookie. Use the same value in backend `.env`, frontend runtime env, Docker, and Kubernetes.
 - `MARKDOWN_DIR` (optional, default `documents`): default directory scanned for top-level city markdown files. Runtime markdown discovery ignores subfolders under this directory.
 - `RUNS_DIR` (optional, default `output`): base directory for run artifacts.
@@ -143,11 +143,19 @@ Configure it like this:
 
 1. For local no-Docker runs, set backend values in the root `.env` and frontend values in `frontend/.env.local`. This duplicate local setup is only needed because FastAPI and Next.js are started as separate processes from separate directories.
 2. For Docker Compose, the root `.env` is enough; Compose passes the shared auth values into both containers.
-3. For deployed dev/prod, do not use repo `.env` files. Set `APP_SHARED_PASSWORD` and `APP_SESSION_SECRET` through GitHub Secrets/Kubernetes secrets.
+3. For deployed dev/prod, do not use repo `.env` files. Set `APP_SHARED_PASSWORD_HASH` and `APP_SESSION_SECRET` through GitHub Secrets/Kubernetes secrets.
 4. Leave `APP_SESSION_COOKIE_DOMAIN` unset locally. Set it to `.openearth.dev` in production so the cookie reaches both frontend and backend subdomains.
 5. Keep `API_CORS_ORIGINS` explicit. Backend `/api/v1/*` requires the shared session cookie; backend `/` and `/healthz` stay public for probes.
 
-Use `APP_SHARED_PASSWORD` as the password people type into the login page. Generate `APP_SESSION_SECRET`; users never type this value. It only signs and verifies the session cookie. The secret must be at least 32 characters; use a 64-character hex value from the commands below.
+Users type the shared password into the login page, but the runtime stores only its bcrypt hash in `APP_SHARED_PASSWORD_HASH`. Generate `APP_SESSION_SECRET`; users never type this value. It only signs and verifies the session cookie. The secret must be at least 32 characters; use a 64-character hex value from the commands below.
+
+Generate a bcrypt hash from `frontend/` after `npm install`:
+
+```bash
+node -e "const bcrypt = require('bcryptjs'); bcrypt.hash(process.argv[1], 10).then((hash) => console.log(hash));" "your-shared-password"
+```
+
+If you paste that hash into `frontend/.env.local` or another dotenv-loaded file, escape each `$` as `\$`. GitHub Secrets and Kubernetes secrets should store the raw hash.
 
 Generate a session secret on Windows PowerShell:
 
@@ -853,7 +861,7 @@ Optional frontend env:
 NEXT_PUBLIC_API_BASE_URL=http://localhost:8000
 NEXT_PUBLIC_LOCAL_API_PORT=8000
 NEXT_PUBLIC_FRONTEND_MODE=standard
-APP_SHARED_PASSWORD=change_me_to_the_shared_password
+APP_SHARED_PASSWORD_HASH=replace_with_bcrypt_hash_of_shared_password
 APP_SESSION_SECRET=change_me_to_a_32_char_min_random_secret
 APP_SESSION_COOKIE_DOMAIN=
 APP_SESSION_TTL_SECONDS=604800
@@ -863,7 +871,7 @@ APP_LOGIN_RATE_LIMIT_WINDOW_SECONDS=900
 
 `NEXT_PUBLIC_API_BASE_URL` should be set for deployed environments.
 If it is omitted, the frontend falls back to a local backend URL built from `NEXT_PUBLIC_LOCAL_API_PORT`.
-`APP_SHARED_PASSWORD` and `APP_SESSION_SECRET` are required for `npm run dev`.
+`APP_SHARED_PASSWORD_HASH` and `APP_SESSION_SECRET` are required for `npm run dev`.
 Keep frontend and backend on the same host label locally: `localhost` with `localhost`, or `127.0.0.1` with `127.0.0.1`.
 
 Frontend supports three city scope modes in the build form: all cities, predefined group, and manual selection.
@@ -899,7 +907,7 @@ docker build -f frontend/Dockerfile \
   --build-arg NEXT_PUBLIC_API_BASE_URL=https://urbind-query-mechanism-api.openearth.dev \
   -t query-mechanism-frontend ./frontend
 docker run -it --rm -p 3000:3000 \
-  -e APP_SHARED_PASSWORD=change_me \
+  -e APP_SHARED_PASSWORD_HASH=replace_with_bcrypt_hash \
   -e APP_SESSION_SECRET=change_me_to_a_32_char_min_secret \
   query-mechanism-frontend
 ```
@@ -927,8 +935,8 @@ After startup:
 
 Local no-Docker config split:
 
-- root `.env`: backend settings, including `OPENROUTER_API_KEY`, `APP_SESSION_SECRET`, and explicit `API_CORS_ORIGINS`
-- `frontend/.env.local`: frontend runtime settings, including `APP_SHARED_PASSWORD`, the same `APP_SESSION_SECRET`, and `NEXT_PUBLIC_*`
+- root `.env`: backend settings, including `OPENROUTER_API_KEY`, `APP_SESSION_SECRET`, `APP_SHARED_PASSWORD_HASH`, and explicit `API_CORS_ORIGINS`
+- `frontend/.env.local`: frontend runtime settings, including `APP_SHARED_PASSWORD_HASH`, the same `APP_SESSION_SECRET`, and `NEXT_PUBLIC_*`
 
 This split is only for local no-Docker runs. Docker Compose reads the root `.env` and injects values into both containers. Deployed dev/prod uses GitHub Secrets and Kubernetes secrets instead of repo `.env` files.
 
@@ -962,7 +970,7 @@ Required repository secrets:
 - `AWS_SECRET_ACCESS_KEY_EKS_DEV_USER`
 - `EKS_DEV_NAME`
 - `OPENROUTER_API_KEY`
-- `APP_SHARED_PASSWORD`
+- `APP_SHARED_PASSWORD_HASH`
 - `APP_SESSION_SECRET`
 
 Optional repository variables:

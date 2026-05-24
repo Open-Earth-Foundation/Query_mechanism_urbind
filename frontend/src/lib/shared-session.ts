@@ -4,6 +4,7 @@ export const DEFAULT_LOGIN_RATE_LIMIT_MAX_ATTEMPTS = 5;
 export const DEFAULT_LOGIN_RATE_LIMIT_WINDOW_SECONDS = 900;
 export const MIN_SESSION_SECRET_LENGTH = 32;
 
+const BCRYPT_HASH_PATTERN = /^\$2[aby]\$\d{2}\$.{53}$/;
 const SESSION_SUBJECT = "shared-gate";
 const SESSION_VERSION = 1;
 const LOGIN_RATE_LIMIT_GLOBAL_MAX_ATTEMPTS = 50;
@@ -145,8 +146,9 @@ export function getSessionSecret(): string | null {
   return secret;
 }
 
-export function getSharedPassword(): string | null {
-  return readNonEmptyEnv("APP_SHARED_PASSWORD");
+export function getSharedPasswordHash(): string | null {
+  const hash = readNonEmptyEnv("APP_SHARED_PASSWORD_HASH");
+  return hash && BCRYPT_HASH_PATTERN.test(hash) ? hash : null;
 }
 
 export function getSessionCookieDomain(): string | undefined {
@@ -378,8 +380,4 @@ export function registerFailedLoginAttempt(clientAddress: string, nowMs = Date.n
 
 export function clearFailedLoginAttempts(clientAddress: string): void {
   failedLoginAttempts.delete(clientAddress);
-}
-
-export function constantTimeEqualStrings(left: string, right: string): boolean {
-  return constantTimeEqual(textEncoder.encode(left), textEncoder.encode(right));
 }

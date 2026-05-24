@@ -23,11 +23,11 @@ spec:
           env:
             - name: PORT
               value: "3000"
-            - name: APP_SHARED_PASSWORD
+            - name: APP_SHARED_PASSWORD_HASH
               valueFrom:
                 secretKeyRef:
                   name: urbind-query-mechanism-app-auth-secrets
-                  key: APP_SHARED_PASSWORD
+                  key: APP_SHARED_PASSWORD_HASH
             - name: APP_SESSION_SECRET
               valueFrom:
                 secretKeyRef:
