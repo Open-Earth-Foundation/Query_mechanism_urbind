@@ -595,6 +595,57 @@ Outputs are written to `output/benchmarks/recall/<benchmark_id>/`:
 - `benchmark_report.md`: concise human-readable summary.
 - `runs/<case_id>/...`: live pipeline artifacts for each benchmark case.
 
+### Writer numeric benchmark
+
+Use this benchmark to check whether the final writer output preserves specific
+manual baseline numbers for Krakow, the Poland group, the Balkans & Eastern
+Mediterranean group, and the optional frozen 102-city corpus snapshot.
+
+Command example:
+
+```
+python -m backend.scripts.benchmark_writer_numbers
+```
+
+Useful flags:
+
+- `--mode ccc_only|full_pipeline|both`: benchmark the CCC-only pipeline, the
+  full enrichment pipeline, or both. The fixture default is `ccc_only`.
+- `--include-optional-cases`: include fixture cases marked optional, including
+  the expensive all-cities run.
+- `--run-id <benchmark_id>`: override the default UTC timestamp benchmark id.
+- `--output-dir output/benchmarks/writer_numeric`: change the benchmark output
+  root.
+- `--benchmark-file backend/benchmarks/writer_numeric/writer_numeric_benchmark.json`:
+  use a different frozen benchmark fixture.
+
+Behavior notes:
+
+- The fixture schema is `{"version": 1, "default_mode": "...", "cases": [...]}`.
+- Every case stores an explicit `selected_cities` list. The all-cities case is
+  frozen in the fixture and is not resolved dynamically at runtime.
+- Cases can be marked optional in the fixture and require
+  `--include-optional-cases` to run.
+- The all-cities case is optional by default because it can take a long time
+  and consume a large number of LLM tokens.
+- Every baseline metric stores manual `components[]` so the benchmark remains
+  baseline-driven instead of recomputing the totals from the corpus at runtime.
+- The benchmark is report-only: mismatches do not fail the run; they are
+  surfaced in the report.
+- Numeric extraction from `final.md` is driven by the separate
+  `benchmark_number_extractor` config block in `llm_config.yaml`. The
+  extractor receives metric ids, labels, and units, while baseline expected
+  values are used only by the deterministic comparison step after extraction.
+
+Outputs are written to `output/benchmarks/writer_numeric/<benchmark_id>/`:
+
+- `benchmark_summary.json`: machine-readable benchmark report with per-metric
+  comparisons.
+- `benchmark_report.md`: concise human-readable diff report.
+- `runs/<case_id>__<mode>/final.md`
+- `runs/<case_id>__<mode>/context_bundle.json`
+- `runs/<case_id>__<mode>/extracted_numbers.json`
+
 ## Run API (local)
 
 Start FastAPI backend:

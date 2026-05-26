@@ -98,7 +98,7 @@ def test_fit_citation_catalog_to_budget_prunes_refs() -> None:
         + first_entry_budget
     )
 
-    fitted = context_chat_planning._fit_citation_catalog_to_budget(
+    fitted, fitted_tokens = context_chat_planning._fit_citation_catalog_to_budget(
         citation_catalog=citation_catalog,
         prompt_header=prompt_header,
         history=[],
@@ -108,6 +108,9 @@ def test_fit_citation_catalog_to_budget_prunes_refs() -> None:
     )
 
     assert [item["ref_id"] for item in fitted] == ["ref_1"]
+    assert fitted_tokens == count_tokens(
+        context_chat_prompts.render_citation_catalog_block(fitted)
+    )
 
 
 def test_fit_citation_catalog_to_budget_uses_cached_prefix_tokens(
@@ -141,7 +144,7 @@ def test_fit_citation_catalog_to_budget_uses_cached_prefix_tokens(
         ),
     )
 
-    fitted = context_chat_planning._fit_citation_catalog_to_budget(
+    fitted, fitted_tokens = context_chat_planning._fit_citation_catalog_to_budget(
         citation_catalog=citation_catalog,
         prompt_header=prompt_header,
         history=[],
@@ -152,6 +155,129 @@ def test_fit_citation_catalog_to_budget_uses_cached_prefix_tokens(
     )
 
     assert [item["ref_id"] for item in fitted] == ["ref_1"]
+    assert fitted_tokens == token_cache.prefix_tokens[0]
+
+
+def test_estimate_context_window_keeps_exact_direct_fit_without_prefix_cache() -> None:
+    citation_catalog = [_catalog_entry(f"ref_{index}", 8) for index in range(1, 19)]
+    config = _app_config(
+        chat=_chat_config(
+            max_context_total_tokens=8_000,
+            min_prompt_token_cap=0,
+            prompt_token_buffer=0,
+        ),
+    )
+
+    estimate = context_chat.estimate_context_window(
+        original_question="What is the policy status?",
+        contexts=[
+            {
+                "run_id": "run-1",
+                "question": "Question",
+                "final_document": "# Final",
+                "context_bundle": {"markdown": {"status": "success", "excerpts": []}},
+            }
+        ],
+        config=config,
+        token_cap=config.chat.max_context_total_tokens,
+        citation_catalog=citation_catalog,
+    )
+
+    full_catalog_tokens = count_tokens(
+        context_chat_prompts.render_citation_catalog_block(citation_catalog)
+    )
+    assert estimate.mode == "direct"
+    assert estimate.context_window_kind == "citation_catalog"
+    assert estimate.context_window_tokens == full_catalog_tokens
+    assert estimate.fitted_context_window_tokens == full_catalog_tokens
+    assert estimate.citation_catalog_entry_count == len(citation_catalog)
+    assert estimate.fitted_citation_entry_count == len(citation_catalog)
+
+
+def test_estimate_context_window_keeps_exact_split_fit_without_prefix_cache() -> None:
+    citation_catalog = [
+        _catalog_entry("ref_1", 8),
+        _catalog_entry("ref_2", 180),
+        _catalog_entry("ref_3", 12),
+        _catalog_entry("ref_4", 12),
+        _catalog_entry("ref_5", 12),
+    ]
+    config = _app_config(
+        chat=_chat_config(
+            max_context_total_tokens=320,
+            min_prompt_token_cap=0,
+            prompt_token_buffer=0,
+        ),
+    )
+
+    estimate = context_chat.estimate_context_window(
+        original_question="What is the policy status?",
+        contexts=[
+            {
+                "run_id": "run-1",
+                "question": "Question",
+                "final_document": "# Final",
+                "context_bundle": {"markdown": {"status": "success", "excerpts": []}},
+            }
+        ],
+        config=config,
+        token_cap=config.chat.max_context_total_tokens,
+        citation_catalog=citation_catalog,
+    )
+
+    full_catalog_tokens = count_tokens(
+        context_chat_prompts.render_citation_catalog_block(citation_catalog)
+    )
+    fitted_catalog = citation_catalog[: estimate.fitted_citation_entry_count or 0]
+    fitted_catalog_tokens = count_tokens(
+        context_chat_prompts.render_citation_catalog_block(fitted_catalog)
+    )
+    assert estimate.mode == "split"
+    assert estimate.context_window_kind == "citation_catalog"
+    assert estimate.context_window_tokens == full_catalog_tokens
+    assert estimate.fitted_context_window_tokens == fitted_catalog_tokens
+    assert estimate.fitted_citation_entry_count is not None
+    assert 0 <= estimate.fitted_citation_entry_count < len(citation_catalog)
+
+
+def test_estimate_context_window_matches_cached_and_uncached_prefix_fits() -> None:
+    citation_catalog = [
+        _catalog_entry("ref_1", 8),
+        _catalog_entry("ref_2", 180),
+        _catalog_entry("ref_3", 12),
+        _catalog_entry("ref_4", 12),
+        _catalog_entry("ref_5", 12),
+    ]
+    config = _app_config(
+        chat=_chat_config(
+            max_context_total_tokens=320,
+            min_prompt_token_cap=0,
+            prompt_token_buffer=0,
+        ),
+    )
+    token_cache = context_chat.build_citation_catalog_token_cache(citation_catalog)
+    base_kwargs = {
+        "original_question": "What is the policy status?",
+        "contexts": [
+            {
+                "run_id": "run-1",
+                "question": "Question",
+                "final_document": "# Final",
+                "context_bundle": {"markdown": {"status": "success", "excerpts": []}},
+            }
+        ],
+        "config": config,
+        "token_cap": config.chat.max_context_total_tokens,
+        "citation_catalog": citation_catalog,
+    }
+
+    uncached_estimate = context_chat.estimate_context_window(**base_kwargs)
+    cached_estimate = context_chat.estimate_context_window(
+        **base_kwargs,
+        citation_prefix_tokens=token_cache.prefix_tokens,
+    )
+
+    assert cached_estimate == uncached_estimate
 
 
 def test_render_citation_catalog_block_for_empty_entries() -> None:

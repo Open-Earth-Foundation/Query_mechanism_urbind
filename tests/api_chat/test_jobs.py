@@ -298,6 +298,18 @@ def test_chat_overflow_uses_evidence_map_reduce_and_reuses_cache(
         )
         conversation_id = create_session.json()["conversation_id"]
 
+        session_contexts = client.get(
+            f"/api/v1/runs/run-chat-overflow/chat/sessions/{conversation_id}/contexts"
+        )
+        assert session_contexts.status_code == 200
+        bootstrap_payload = json.loads(
+            (runs_dir / "run-chat-overflow" / "chat" / f"{conversation_id}.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        assert bootstrap_payload["prompt_context_cache"]["citation_ref_ids_in_order"] is None
+        assert bootstrap_payload["prompt_context_cache"]["citation_prefix_tokens"] is None
+
         first_send = client.post(
             f"/api/v1/runs/run-chat-overflow/chat/sessions/{conversation_id}/messages",
             json={"content": "Compare the evidence."},

@@ -358,6 +358,12 @@ def test_chat_contexts_lazy_backfill_bundle_cache_and_reuse_session_cache(
 
     patch_api_config_loaders(monkeypatch, _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+    monkeypatch.setattr(
+        "backend.api.services.chat_session_helpers.build_citation_catalog_token_cache",
+        lambda *_args, **_kwargs: (_ for _ in ()).throw(
+            AssertionError("Session bootstrap should not eagerly build prefix-token caches.")
+        ),
+    )
 
     app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
     with TestClient(app) as client:
@@ -399,7 +405,8 @@ def test_chat_contexts_lazy_backfill_bundle_cache_and_reuse_session_cache(
         assert markdown_excerpts["prompt_context_kind"] == "citation_catalog"
         assert markdown_excerpts["prompt_context_tokens"] == context_bundle["prompt_context_tokens"]
         assert session_payload["prompt_context_cache"]["prompt_context_tokens"] == first_payload["prompt_context_tokens"]
-        assert session_payload["prompt_context_cache"]["citation_prefix_tokens"]
+        assert session_payload["prompt_context_cache"]["citation_ref_ids_in_order"] is None
+        assert session_payload["prompt_context_cache"]["citation_prefix_tokens"] is None
 
         monkeypatch.setattr(
             "backend.api.services.chat_session_helpers.build_session_prompt_context_cache",
