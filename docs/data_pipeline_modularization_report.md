@@ -180,15 +180,6 @@ reader benefit at much lower cost:
 That would make the system easier to understand without immediately forcing the
 project to duplicate or abstract the shared layer in awkward ways.
 
-## Stage Readiness Matrix
-
-| Stage | Current code home | Contract quality | Logging | Artifacts | Benchmarks | Assessment for now |
-| --- | --- | --- | --- | --- | --- | --- |
-| Read/process/extract CCC data | `backend/modules/markdown_researcher/`, `backend/modules/vector_store/`, orchestrator glue | Partial to strong. `MarkdownResearchResult`, `MarkdownExcerpt`, chunk dicts, and retrieval artifact shape are defined, but chunk inputs are still plain dicts. | Strong enough. Uses module loggers, run log, run summary, progress tracker. | Strong. `markdown/*.json`, `context_bundle.json`, `run.json`, `run.log`, `run_summary.txt`. | Strongest of all stages. Retrieval benchmark, recall benchmark, chunking benchmark, unit tests. | Mature enough behaviorally. Better naming and contracts would help, but a package move is not the best first step. |
-| Read/process/extract 3rd party data | `documents/source_library/`, `backend/modules/web_researcher/external_sources.py`, `external_agent.py`, `external_resolver.py` | Strong. `SourceMetadata`, `SearchHit`, `EvidenceCandidate`, `ExternalEvidenceClaim`, `ExternalEvidenceResolution`, `NoEvidenceRecord`. | Good. Tool calls and agent failures are logged. | Medium to strong. `external_sources/external_evidence.json` and `enrichment/external_*.json`, but normal run registration of the tool audit is weak. | Medium. Dedicated Krakow external-source benchmark with 4 cases plus unit tests. | Good candidate for future extraction, but the current need is better artifact registration and documentation of boundaries. |
-| Search/process/extract web data | `backend/modules/web_researcher/search_planner.py`, `search_worker.py`, `search.py`, `scraper.py`, `extractor.py`, `freshness.py`, `tier1_web.py` | Medium. `SearchBatch`, `WebFinding`, `FreshnessResult`, and tier-1 models exist. | Good. Search, scrape, relevance, tier-1, worker, and freshness paths log. | Weak to medium. Final `web_findings.json` and `freshness_results.json` exist only when non-empty; search plans and raw web decisions are not persisted. | Weak. Unit tests exist, but no dedicated live websearch benchmark. | The main problem is not folder placement. It is missing artifacts and benchmark discipline. Fix those before considering a module split. |
-| Generate/review/apply assumptions | `backend/modules/web_researcher/assumptions_estimator.py`, `backend/api/services/assumptions_review.py`, `backend/api/routes/assumptions.py` | Medium. Automatic assumptions use `AssumptionRecord` and `NonEstimableRecord`; review flow uses API models `MissingDataItem`, `AssumptionsPayload`, `RegenerationResult`. | Medium. Service and estimator log key LLM calls and skip/failure paths. | Medium. Automatic assumptions are persisted through enrichment artifacts; review artifacts persist only with `persist_artifacts=true`. | Weak. Unit/API tests exist, but no assumptions benchmark. | The bigger issue is contract fragmentation, not folder count. Unify the writer-facing contract before restructuring code homes. |
-
 ## 1. Read, Process, And Extract CCC Data
 
 ### What already looks modular
@@ -216,57 +207,8 @@ The vector path is also separated in `backend/modules/vector_store/`. When
 `build_retrieval_artifact()`, and converts retrieved chunks back into markdown
 researcher input shape with `as_markdown_documents()`.
 
-Current input contract:
-
-- User question and up to 3 retrieval queries.
-- Optional selected city filter.
-- `MARKDOWN_DIR`, default `documents`.
-- Converted CCC Markdown handed off from the PDF-to-Markdown process.
-- `MarkdownResearcherConfig` and optional `VectorStoreConfig`.
-- Markdown chunk dicts containing at least `path`, `city_name`, `city_key`,
-  `content`, `chunk_id`, and `chunk_index`.
-
-Current output contract:
-
-- `MarkdownResearchResult`
-- `MarkdownExcerpt`
-- `MarkdownBatchFailure`
-- Run-level `context_bundle["markdown"]`
-- Citation references in `markdown/references.json`
-
-Artifacts already written:
-
-- `research_question.json`
-- `markdown/batches.json`
-- `markdown/excerpts.json`
-- `markdown/accepted_excerpts.json`
-- `markdown/rejected_excerpts.json`
-- `markdown/decision_audit.json`
-- `markdown/references.json`
-- `markdown/retrieval.json` when vector retrieval is enabled
-- `context_bundle.json`
-- `run.json`
-- `run.log`
-- `run_summary.txt`
-
-Benchmarks already present:
-
-- Retrieval strategy benchmark: `backend/scripts/run_retrieval_benchmark.py`
-- Retrieval benchmark fixtures/config: `backend/benchmarks/prompts/`,
-  `backend/benchmarks/config/`
-- Gold recall benchmark: `backend/scripts/benchmark_recall.py`,
-  `backend/benchmarks/gold_recall/`
-- Chunking benchmark: `backend/scripts/benchmark_chunking_strategy.py`,
-  `backend/modules/vector_store/benchmarking.py`
-- Tests: `tests/test_markdown_researcher.py`,
-  `tests/test_markdown_services.py`, `tests/test_retrieval_benchmark.py`,
-  `tests/test_benchmark_recall.py`, `tests/test_chunking_benchmark.py`,
-  vector-store tests
-
 ### Findings and limitations
 
-- The code is named `markdown_researcher`, not `ccc_reader`. That is accurate
-  technically, but less reusable as a domain stage.
 - PDF-to-Markdown is not represented as an explicit handoff/input contract in
   this repo yet.
 - The orchestrator owns important CCC artifact assembly: batches,
@@ -277,6 +219,9 @@ Benchmarks already present:
 - There is no source manifest for top-level CCC markdown files comparable to
   `documents/source_library/sources.yaml`. The CCC runtime still depends
   heavily on filename stem as city identity.
+- Proposed solution: add a dedicated CCC discovery script that scans the
+  top-level markdown set and writes a simple manifest or index artifact, so CCC
+  source discovery is explicit rather than only inferred from filename stems.
 
 ### Why this does not justify an immediate package split
 
@@ -313,24 +258,6 @@ That should be treated as a deferred option, not the current recommendation.
 
 ### What already looks modular
 
-Current main homes:
-
-- `documents/source_library/sources.yaml`
-- `documents/source_library/**/*.md`
-- `backend/modules/web_researcher/external_sources.py`
-- `backend/modules/web_researcher/external_agent.py`
-- `backend/modules/web_researcher/external_resolver.py`
-- `backend/prompts/external_source_researcher_system.md`
-- `backend/prompts/external_source_finalizer_system.md`
-
-Current source inventory:
-
-- `documents/source_library/sources.yaml`: 46 entries
-- `documents/source_library/**/*.md`: 46 Markdown files
-- Covered cities currently include Aachen, Dresden, Heidelberg, Klagenfurt,
-  Krakow, Leipzig, Mannheim, Munich, and Munster
-- Covered countries currently include Austria, Germany, and Poland
-
 This is the strongest contract design in the enrichment area.
 `SourceRegistry.load()` reads `sources.yaml`, resolves every `source_id` to
 exactly one Markdown filename stem, and exposes controlled metadata search plus
@@ -341,55 +268,6 @@ repository's PDF-to-Markdown flow when 3rd party sources begin as PDFs or
 documents. This repo should consume the converted source library as given, run
 controlled source selection and search, extract facts, resolve them against CCC
 evidence, and persist the audit trail.
-
-Current input contract:
-
-- `GapManifest` from gap analysis
-- `context_bundle` from CCC extraction
-- `documents/source_library/sources.yaml`
-- Markdown files whose stems match `source_id`
-- Converted 3rd party Markdown handed off from the PDF-to-Markdown process
-  when source files begin as PDFs
-- `EnrichmentConfig.external_source_*` limits
-
-Current controlled tool contract:
-
-- `get_tag_options`
-- `list_candidate_sources`
-- `regex_search`
-- `expand_hits`
-- `add_evidence_candidates`
-- `list_evidence_candidates`
-- `mark_no_evidence_found`
-
-Current output contract:
-
-- `ExternalEvidenceClaim`
-- `ExternalEvidenceResolution`
-- `NoEvidenceRecord`
-- Session tool-call audit records
-
-Artifacts already written:
-
-- `external_sources/external_evidence.json`: run-local tool state with
-  candidates, no-evidence records, and tool calls
-- `enrichment/external_evidence.json`
-- `enrichment/external_resolutions.json`
-- `enrichment/external_no_evidence.json`
-- `enrichment/enrichment_bundle.json`
-- `context_bundle.json` with `enrichment.external_*` fields
-
-Benchmarks already present:
-
-- Fixture:
-  `backend/benchmarks/external_sources/krakow_external_source_benchmark.json`
-- Runner: `backend/scripts/benchmark_external_source_pipeline.py`
-- Output root: `output/external_source_benchmarks/krakow/<run_id>/`
-- Expected benchmark artifacts: `benchmark_summary.json`,
-  `context_bundle.json`, optional `writer_answer.md`, and
-  `external_sources/external_evidence.json`
-- Tests: `tests/test_external_sources.py`, `tests/test_writer_citations.py`,
-  external-source portions of `tests/test_enrichment_integration.py`
 
 ### Findings and limitations
 
@@ -446,24 +324,6 @@ That remains a future extraction path, not the primary recommendation.
 
 ### What already looks modular
 
-Current main homes:
-
-- `backend/modules/web_researcher/search_planner.py`
-- `backend/modules/web_researcher/search_worker.py`
-- `backend/modules/web_researcher/search.py`
-- `backend/modules/web_researcher/scraper.py`
-- `backend/modules/web_researcher/extractor.py`
-- `backend/modules/web_researcher/relevance.py`
-- `backend/modules/web_researcher/deep_diver.py`
-- `backend/modules/web_researcher/freshness.py`
-- `backend/modules/web_researcher/tier1_web.py`
-- `backend/data/tier1_web_sources.yaml`
-
-Current tier-1 web allowlist:
-
-- 14 sources
-- 11 `site_search`, 2 `api`, 1 `auth_required`
-
 The websearch logic has a reasonable functional split:
 
 - `search_planner.py` turns a `GapManifest` into `SearchBatch` objects
@@ -475,35 +335,6 @@ The websearch logic has a reasonable functional split:
 - `search_worker.py` coordinates tier-1 pre-pass, open web pass, deep dive,
   extraction, and deduplication
 - `freshness.py` compares web findings against CCC evidence
-
-Current input contract:
-
-- `GapManifest`
-- `SearchBatch`
-- `AppConfig.enrichment`
-- `SERPER_API_KEY`
-- `FIRECRAWL_API_KEY`
-- Optional tier-1 allowlist at `backend/data/tier1_web_sources.yaml`
-
-Current output contract:
-
-- `WebFinding`
-- `FreshnessResult`
-- Final `EnrichedField` statuses after context merger
-
-Artifacts currently written:
-
-- `enrichment/web_findings.json` only when findings exist
-- `enrichment/freshness_results.json` only when freshness results exist
-- `enrichment/enrichment_bundle.json`
-- Progress items in the frontend/run progress flow
-
-Tests already present:
-
-- `tests/test_search_planner.py`
-- `tests/test_search_worker_tier1.py`
-- `tests/test_freshness.py`
-- Web and freshness portions of context merger and enrichment tests
 
 ### Findings and limitations
 
@@ -571,7 +402,15 @@ Current main homes:
 - Enrichment models: `AssumptionRecord`, `NonEstimableRecord`,
   `EstimateRange` in `backend/modules/web_researcher/models.py`
 
-There are two related but separate assumptions workflows:
+There are two related but separate assumptions workflows, and they correspond
+to two different ways assumptions enter the system:
+
+- automatic assumptions generated inside the enrichment pipeline
+- manual assumptions entered by a user through the assumptions review UI and
+  submitted through the assumptions API
+
+Those are not just two implementation details. They are two distinct input
+paths with different payload shapes and different persistence behavior.
 
 1. Automatic enrichment estimator:
    - Runs inside `run_enrichment_pipeline()`.
@@ -583,27 +422,13 @@ There are two related but separate assumptions workflows:
      `enrichment/non_estimable.json`, and `enrichment/enrichment_bundle.json`.
 
 2. Post-run review and regenerate:
-   - Runs through `/api/v1/runs/{run_id}/assumptions/discover` and
+   - User input starts in the frontend assumptions review workspace, then flows
+     through `/api/v1/runs/{run_id}/assumptions/discover` and
      `/api/v1/runs/{run_id}/assumptions/apply`.
    - Inputs a completed run, final document, context bundle, and user-edited
      assumptions.
    - Outputs revised content and optional persisted artifacts.
    - Persists only when `persist_artifacts=true`.
-
-Post-run assumptions artifacts when persistence is enabled:
-
-- `assumptions/discovered.json`
-- `assumptions/edited.json`
-- `assumptions/revised_context_bundle.json`
-- `assumptions/final_with_assumptions.md`
-
-Tests already present:
-
-- `tests/test_assumptions_estimator.py`
-- `tests/test_api_assumptions.py`
-- Assumptions portions of `tests/test_enrichment_integration.py`,
-  `tests/test_enrichment_models.py`, and
-  `tests/test_enrichment_services.py`
 
 ### Findings and limitations
 
@@ -658,7 +483,7 @@ surface that would have to remain coherent.
 | `AppConfig` and `llm_config.yaml` | `backend/utils/config.py` | Orchestrator, CCC reader, vector store, external sources, websearch, assumptions, writer, benchmarks | Models, token budgets, feature flags, source dirs, websearch toggles, vector settings | Centralization is useful today. Splitting modules does not remove the need to keep this aligned. |
 | `RunPaths` | `backend/utils/paths.py` | Orchestrator, run logger, API services, tests | Canonical per-run paths for `run.json`, `context_bundle.json`, `markdown/*`, `final.md` | A reorg still needs one shared artifact path contract. |
 | `RunLogger` | `backend/services/run_logger.py` | Orchestrator, enrichment serializer, API diagnostics | Structured run log, context bundle, artifact registry, run summary, LLM usage summary | Logging and artifact registration are part of the operational surface that would need coordinated changes. |
-| `context_bundle` | Runtime dict built by `RunLogger` and modules | CCC, external sources, websearch, assumptions, writer, API, benchmarks | Cross-stage payload with `markdown`, `enrichment`, final output path, queries, selected cities | This is the biggest implicit contract in the system. Documenting it clearly is more urgent than moving files. |
+| `context_bundle` | Runtime dict built by `RunLogger` and modules | CCC, external sources, websearch, assumptions, writer, API, benchmarks | Cross-stage payload with `markdown`, `enrichment`, final output path, queries, selected cities | This is the biggest shared contract in the system. The main concern is preserving one coherent contract as the code evolves, not adding more structural separation around it. |
 | Enrichment Pydantic models | `backend/modules/web_researcher/models.py` | Gap analysis, external sources, websearch, freshness, assumptions, writer tests | `GapManifest`, `WebFinding`, `ExternalEvidenceClaim`, `EnrichedField`, `AssumptionRecord`, and related models | The modeling is useful, but it is still a shared seam. A split without a careful contract plan creates drift risk. |
 | JSON artifact helpers | `backend/utils/json_io.py`, `backend/modules/orchestrator/utils/io.py` | Scripts, orchestrator, API assumptions, enrichment | JSON read and write helpers and artifact serialization | There are already two writer locations. Multiplying module-specific writers without a documentation and ownership plan would add complexity. |
 | Agent runtime wrappers | `backend/services/agents.py` | Markdown researcher, external-source agents, writer, other LLM flows | OpenRouter model construction, model settings, sync agent calls | Runtime execution is already centralized. That is usually a feature, not a defect. |
@@ -671,23 +496,105 @@ surface that would have to remain coherent.
 | Benchmark infrastructure | `backend/benchmarks/`, `backend/scripts/*benchmark*.py` | Retrieval, recall, external sources, TEF, chunking | Fixtures, reports, run matrices, benchmark artifacts | Benchmark harnesses are shared operational assets, not isolated stage internals. |
 | Writer context builder | `backend/modules/writer/utils/multi_pass.py`, `backend/api/services/run_context.py` | Writer, API exports, tests | Writer-safe context subset and rendered context export | This is where upstream stages meet final output expectations. It is a shared contract seam. |
 
-## Artifact Coverage By Stage
+## Deferred Target Structure If Modularization Is Ever Required
 
-| Stage | Strong artifacts today | Missing or weak artifacts | Practical implication |
-| --- | --- | --- | --- |
-| CCC read/process/extract | `markdown/excerpts.json`, `accepted_excerpts.json`, `rejected_excerpts.json`, `decision_audit.json`, `references.json`, `batches.json`, optional `retrieval.json` | Typed CCC source manifest, standalone CCC reader summary artifact, explicit PDF-to-Markdown handoff artifact | Good enough for operations. Documentation should state this contract clearly. |
-| 3rd party read/process/extract | `external_sources/external_evidence.json`, `enrichment/external_evidence.json`, `external_resolutions.json`, `external_no_evidence.json` | Tool audit not clearly registered in normal `run.json`, benchmark is city-specific, explicit PDF-to-Markdown handoff artifact | Improve artifact registration and document the audit trail before moving code. |
-| Web search/process/extract | `enrichment/web_findings.json`, `enrichment/freshness_results.json`, progress items | Search plan, raw results, relevance decisions, scrape attempts, extraction attempts, rejected findings, deep-dive trace | This is a real gap, but it is an artifact problem first and a packaging problem second. |
-| Assumptions | `enrichment/assumptions.json`, `enrichment/non_estimable.json`, optional `assumptions/*.json`, optional `final_with_assumptions.md` | No always-on assumptions audit, no automatic assumptions benchmark report, edited assumptions use a different context location | Document and normalize the contract first. |
+This is not the recommended path right now. The current stages still have too
+much overlap in shared runtime, contracts, logging, artifact handling, and
+writer-facing context shape for a clean split to pay off yet.
 
-## Benchmark Coverage By Stage
+If modularization later becomes a real requirement despite that overlap, the
+existing findings still support a staged target like:
 
-| Stage | Existing benchmark coverage | Gap | Practical implication |
-| --- | --- | --- | --- |
-| CCC read/process/extract | Retrieval strategy benchmark, gold recall benchmark, chunking benchmark, TEF source-truth benchmark for initiative extraction | CCC reader itself could be named and formalized better and should include PDF-to-Markdown handoff cases | Strong enough that documentation can carry a lot of the clarity burden. |
-| 3rd party read/process/extract | Governed external-source Krakow benchmark with 4 cases | Broaden beyond Krakow, add no-evidence and conflict cases, add PDF-to-Markdown handoff cases, and make benchmark result model reusable | Worth expanding, but not a reason by itself to restructure folders. |
-| Web search/process/extract | Unit tests for planner, tier-1 worker, freshness | Needs a live or mocked benchmark harness with fixed search and scrape fixtures and artifact scoring | This is the highest operational gap in the pipeline. |
-| Assumptions | Unit and API tests | Needs benchmark cases for estimate quality, anchor selection, confidence calibration, and non-estimable decisions | Contract and quality work matter more here than physical extraction. |
+```text
+backend/modules/
+  ccc_reader/
+    models.py
+    services.py
+    retrieval.py
+    artifacts.py
+    benchmarks/
+
+  external_sources/
+    models.py
+    registry.py
+    tools.py
+    agent.py
+    resolver.py
+    artifacts.py
+    benchmarks/
+
+  web_search/
+    models.py
+    planner.py
+    clients.py
+    relevance.py
+    extractor.py
+    freshness.py
+    artifacts.py
+    benchmarks/
+
+  assumptions/
+    models.py
+    estimator.py
+    reviewer.py
+    artifacts.py
+    api_adapter.py
+    benchmarks/
+
+  enrichment/
+    models.py
+    gap_analysis.py
+    context_merger.py
+    pipeline.py
+```
+
+## Reuse In Another Project: Rewrite Cost And Alignment Surface
+
+If the real goal is to reuse these capabilities in another repository as four
+clean modules, this repository should still be treated as donor code and
+behavioral reference, not as a package that must be fully modularized first.
+
+The main reason is that the implementation is split between stage-local logic
+and shared runtime contracts. Copying the visible module files is not enough.
+Any target project also needs to align on:
+
+- config loading
+- model execution
+- artifact writing
+- path conventions
+- shared models
+- the shape of `context_bundle`
+- logging and storage behavior
+
+The main reuse surfaces in the current repository are:
+
+| Capability to reuse | What it currently includes | Rewrite cost in a new project |
+| --- | --- | --- |
+| CCC read/process/extract | `markdown_researcher`, vector retrieval and indexing, benchmark runners, key tests | High. Strong behavior exists, but it is still tied to orchestrator assembly, current retrieval flow, and current document assumptions. |
+| 3rd party external sources | governed source registry, tool loop, resolver, prompts, benchmark runner, key tests | Medium. This is the cleanest transplant candidate, but it still depends on current enrichment config, gap contracts, agent runtime, and artifact conventions. |
+| Web search/process/extract | planner, worker, scraper and search clients, extraction, relevance, validation, freshness, key tests | Medium to high. Functional split is decent, but host-project alignment is heavy because search flow depends on current configs, models, and logging and artifact expectations. |
+| Assumptions | automatic estimator, API review flow, route layer, key tests | Medium to high. The estimator and review path are split across runtime and API code, so this is not a copy-paste module today. |
+| Shared alignment surface | orchestrator, enrichment pipeline shell, shared models, context merger, run logger, config, paths | Mandatory partial rewrite or adapter layer in every target project. This is the main hidden cost. |
+
+Two important observations follow:
+
+1. The four stage areas are not self-contained in practice. They come with
+   prompts, tests, fixtures, manifests, and contract assumptions.
+2. Reusing them as a coherent system still pulls in a shared runtime layer.
+   That shared layer is where most hidden coupling currently lives.
+
+This means another project should not assume a simple copy of four folders.
+Even if the target project wants the same behavior, it still needs decisions
+about:
+
+- whether to preserve `context_bundle` or replace it with explicit typed result
+  models between stages
+- whether to preserve current run-artifact conventions or map them to the new
+  project's logging and storage model
+- whether to preserve OpenRouter agent wrappers, prompt loading, and retry
+  conventions or swap them for the new project's execution layer
+- whether CCC Markdown, governed source-library Markdown, and web or tier-1
+  source definitions live in the same places and use the same manifests
 
 ## What Already Matches The Goal
 
@@ -748,206 +655,9 @@ small hardening.
 
 1. Add explicit result models for stage outputs where tuple or loose-dict
    contracts are doing too much work.
-2. Register missing artifacts more consistently through the shared run logger.
-3. Add missing benchmarks where operational quality gaps are largest, starting
+2. Add missing benchmarks where operational quality gaps are largest, starting
    with web search and assumptions.
-4. Clarify the writer-facing assumptions contract.
+3. Clarify the writer-facing assumptions contract.
 
 These changes improve clarity and maintainability without forcing the shared
 runtime to fragment.
-
-## Deferred Target Structure If Modularization Is Ever Required
-
-If modularization later becomes a real requirement, the existing findings still
-support a staged target like:
-
-```text
-backend/modules/
-  ccc_reader/
-    models.py
-    services.py
-    retrieval.py
-    artifacts.py
-    benchmarks/
-
-  external_sources/
-    models.py
-    registry.py
-    tools.py
-    agent.py
-    resolver.py
-    artifacts.py
-    benchmarks/
-
-  web_search/
-    models.py
-    planner.py
-    clients.py
-    relevance.py
-    extractor.py
-    freshness.py
-    artifacts.py
-    benchmarks/
-
-  assumptions/
-    models.py
-    estimator.py
-    reviewer.py
-    artifacts.py
-    api_adapter.py
-    benchmarks/
-
-  enrichment/
-    models.py
-    gap_analysis.py
-    context_merger.py
-    pipeline.py
-```
-
-This is still a reasonable end state if the repository later needs:
-
-- independent ownership of stages
-- transportable capability packages
-- stronger standalone benchmark harnesses
-- clearer per-stage release and change boundaries
-
-It is just not the best current priority.
-
-## If A Refactor Is Forced Later, Suggested Order
-
-If reuse pressure or team ownership eventually makes a structural split
-necessary, the current findings still support this order:
-
-1. Define explicit result models for each stage.
-   - `CCCReadResult`
-   - `ExternalSourceRunResult`
-   - `WebSearchRunResult`
-   - `AssumptionsRunResult`
-2. Add module-level artifact writers and register them consistently through
-   `RunLogger.record_artifact()`.
-3. Move or wrap external-source code first, because it is the cleanest current
-   transplant candidate.
-4. Split websearch next, but only together with persisted search-plan and raw
-   decision artifacts.
-5. Unify assumptions into one writer-facing contract before or during any move.
-6. Formalize `context_bundle` with a versioned schema or typed model.
-7. Add missing benchmarks before treating the new structure as stable.
-
-This should be read as a contingency plan, not as the current recommendation.
-
-## Reuse In Another Project: Rewrite Cost And Alignment Surface
-
-If the real goal is to reuse these capabilities in another repository as four
-clean modules, this repository should still be treated as donor code and
-behavioral reference, not as a package that must be fully modularized first.
-
-The main reason is that the implementation is split between stage-local logic
-and shared runtime contracts. Copying the visible module files is not enough.
-Any target project also needs to align on:
-
-- config loading
-- model execution
-- artifact writing
-- path conventions
-- shared models
-- the shape of `context_bundle`
-- logging and storage behavior
-
-Approximate implementation surface measured from the current repository tree:
-
-| Capability to reuse | Approximate line count in current repo | What those lines currently include | Rewrite cost in a new project |
-| --- | ---: | --- | --- |
-| CCC read/process/extract | ~4,100 | `markdown_researcher`, vector retrieval/indexing, benchmark runners, key tests | High. Strong behavior exists, but it is still tied to orchestrator assembly, current retrieval flow, and current document assumptions. |
-| 3rd party external sources | ~3,100 | governed source registry, tool loop, resolver, prompts, benchmark runner, key tests | Medium. This is the cleanest transplant candidate, but it still depends on current enrichment config, gap contracts, agent runtime, and artifact conventions. |
-| Web search/process/extract | ~3,200 | planner, worker, scraper and search clients, extraction, relevance, validation, freshness, key tests | Medium to high. Functional split is decent, but host-project alignment is heavy because search flow depends on current configs, models, and logging and artifact expectations. |
-| Assumptions | ~2,200 | automatic estimator, API review flow, route layer, key tests | Medium to high. The estimator and review path are split across runtime and API code, so this is not a copy-paste module today. |
-| Shared alignment surface | ~3,100 | orchestrator, enrichment pipeline shell, shared models, context merger, run logger, config, paths | Mandatory partial rewrite or adapter layer in every target project. This is the main hidden cost. |
-
-Two important observations follow from these counts:
-
-1. The four stage areas alone represent about 12,600 lines of implementation
-   surface before counting data files, manifests, YAML source inventories,
-   benchmark fixtures, and prompt and schema alignment work.
-2. Reusing them as a coherent system also pulls in about 3,100 additional
-   lines of shared runtime surface. That shared layer is where most hidden
-   coupling currently lives.
-
-This means another project should not assume a simple copy of four folders.
-Even if the target project wants the same behavior, it still needs decisions
-about:
-
-- whether to preserve `context_bundle` or replace it with explicit typed result
-  models between stages
-- whether to preserve current run-artifact conventions or map them to the new
-  project's logging and storage model
-- whether to preserve OpenRouter agent wrappers, prompt loading, and retry
-  conventions or swap them for the new project's execution layer
-- whether CCC Markdown, governed source-library Markdown, and web or tier-1
-  source definitions live in the same places and use the same manifests
-
-### Practical cost framing
-
-For a new project, the main cost is not typing the code again. The main cost is
-alignment work.
-
-- Low-cost path: reuse one capability at a time behind a new clean interface.
-  The best first candidate is external sources.
-- Medium-cost path: reuse two or three capabilities, but replace the shared
-  runtime with the new project's own config, logging, and artifact layer.
-- Highest-cost path: attempt a near-lift-and-shift of all four modules plus the
-  shared orchestration assumptions. This carries the most donor-repo baggage
-  and is the least attractive option.
-
-### Recommended reuse strategy
-
-If another repository wants these four capabilities, the better plan is:
-
-1. Define clean target contracts in the new repository first.
-2. Map this repository's behavior, prompts, artifacts, and tests onto those
-   contracts.
-3. Copy only cohesive internals that already match the new contract.
-4. Rewrite the orchestration and shared runtime layer in the new repository
-   instead of importing this repository's orchestration structure wholesale.
-
-In practice, that means:
-
-- `external_sources` is the best first transplant candidate
-- `web_search` is the next best candidate, but it needs stronger target-side
-  artifact and client abstractions
-- `assumptions` should likely be reassembled in the new project from the
-  estimator and review flows rather than copied as-is
-- `ccc_reader` should be treated as a selective extraction effort, not a simple
-  folder move, because the current behavior spans markdown loading, retrieval,
-  and orchestrator-owned artifact assembly
-
-## Bottom Line
-
-The project is already close to the desired pipeline at the behavior level.
-The most important gap is clarity, not absence of logic.
-
-The current findings still show real weaknesses:
-
-- `web_researcher` is overloaded
-- web artifacting is thin
-- assumptions are split
-- some contracts are implicit
-- some benchmarks are missing
-
-But those findings do not require an immediate repo-wide structural split.
-
-The better near-term recommendation is:
-
-- keep the current shared runtime centralized
-- document the stage boundaries and shared contracts clearly
-- improve the weakest artifact and benchmark gaps
-- defer full physical modularization unless reuse, ownership, or operational
-  pressure makes it worth the added synchronization cost
-
-That keeps the real findings in view while avoiding a refactor whose main
-effect would be to spread logging, artifact, config, and context-ordering
-responsibility across more places than the repository currently needs.
-
-Separately, PDF-to-Markdown conversion should be treated as a different system
-concern. It should become a standalone API, but that work is outside the scope
-of this repository. This repo should consume the converted Markdown through a
-clear handoff contract rather than owning the conversion implementation.
