@@ -584,7 +584,9 @@ Behavior notes:
 - The benchmark is report-only: mismatches do not fail the run; they are
   surfaced in the report.
 - Numeric extraction from `final.md` is driven by the separate
-  `benchmark_number_extractor` config block in `llm_config.yaml`.
+  `benchmark_number_extractor` config block in `llm_config.yaml`. The
+  extractor receives metric ids, labels, and units, while baseline expected
+  values are used only by the deterministic comparison step after extraction.
 
 Outputs are written to `output/benchmarks/writer_numeric/<benchmark_id>/`:
 

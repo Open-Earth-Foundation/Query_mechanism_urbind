@@ -66,7 +66,7 @@ def extract_writer_numbers(
     api_key: str,
     log_llm_payload: bool = False,
 ) -> WriterNumberExtraction:
-    """Extract one structured numeric decision per expected benchmark metric."""
+    """Extract one structured numeric decision without exposing baseline answers."""
     agent = build_writer_number_extractor_agent(config, api_key)
     payload = {
         "case_id": case.case_id,
@@ -77,7 +77,6 @@ def extract_writer_numbers(
                 "metric_id": metric.metric_id,
                 "label": metric.label,
                 "unit": metric.unit,
-                "expected_value": metric.expected_value,
                 "display_metadata": metric.display_metadata,
             }
             for metric in case.baseline_metrics

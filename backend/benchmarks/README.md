@@ -113,7 +113,9 @@ optional all-cities corpus snapshot.
 - Use `--include-optional-cases` when you intentionally want to run the
   expensive all-cities case.
 - The numeric extractor is configured separately from the fact judge under
-  `benchmark_number_extractor` in `llm_config.yaml`.
+  `benchmark_number_extractor` in `llm_config.yaml`. It receives metric ids,
+  labels, and units, while baseline expected values are used only by the
+  deterministic comparison step after extraction.
 
 Outputs are written under `output/benchmarks/writer_numeric/<benchmark_id>/`:
 
@@ -125,8 +127,8 @@ Outputs are written under `output/benchmarks/writer_numeric/<benchmark_id>/`:
   Those reports include per-city match, mismatch, missing, and extra rows for
   the configured combined-total metric.
 - The optional all-cities bus case now also emits a heuristic retrieval audit
-  that compares source documents with numeric bus-count language against the set
-  of cities that actually surfaced in accepted excerpts.
+  that compares selected source documents with numeric bus-count language
+  against the set of cities that actually surfaced in accepted excerpts.
 - `runs/<case_id>__<mode>/final.md`: live writer output for each run.
 - `runs/<case_id>__<mode>/context_bundle.json`: live writer context bundle.
 - `runs/<case_id>__<mode>/extracted_numbers.json`: structured extractor output.

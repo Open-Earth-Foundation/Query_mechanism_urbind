@@ -2,9 +2,11 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+from types import SimpleNamespace
 
 import pytest
 
+from backend.benchmarks.writer_numeric import extractor as writer_number_extractor
 from backend.benchmarks.writer_numeric.models import (
     WriterNumericBenchmarkCase,
     WriterMetricExtraction,
@@ -306,6 +308,93 @@ def test_run_writer_numeric_benchmark_writes_report_only_artifacts(tmp_path: Pat
     ).exists()
 
 
+def test_extract_writer_numbers_excludes_expected_values_from_llm_payload(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Extractor prompts describe targets without exposing baseline answers."""
+    config = load_config(_write_config(tmp_path))
+    case = WriterNumericBenchmarkCase.model_validate(
+        {
+            "case_id": "extractor_payload_case",
+            "question": "Report the coverage count.",
+            "selected_cities": ["Krakow"],
+            "baseline_metrics": [
+                {
+                    "metric_id": "coverage_count",
+                    "label": "Coverage count",
+                    "unit": "cities",
+                    "expected_value": 1,
+                    "components": [
+                        {
+                            "label": "Krakow",
+                            "value": 1,
+                            "source_note": "Manual component.",
+                        }
+                    ],
+                    "display_metadata": {"selected_city": "Krakow"},
+                }
+            ],
+        }
+    )
+    captured_payload: dict[str, object] = {}
+
+    def fake_build_writer_number_extractor_agent(
+        config: object,
+        api_key: str,
+    ) -> object:
+        """Return a placeholder agent for the payload-only extractor test."""
+        return object()
+
+    monkeypatch.setattr(
+        writer_number_extractor,
+        "build_writer_number_extractor_agent",
+        fake_build_writer_number_extractor_agent,
+    )
+
+    def fake_run_agent_sync(
+        agent: object,
+        payload: str,
+        **kwargs: object,
+    ) -> SimpleNamespace:
+        """Capture the LLM payload and return one structured extractor result."""
+        captured_payload.update(json.loads(payload))
+        return SimpleNamespace(
+            final_output=WriterNumberExtraction(
+                metrics=[
+                    WriterMetricExtraction(
+                        metric_id="coverage_count",
+                        found=True,
+                        raw_snippet="coverage_count: 1",
+                        normalized_value=1,
+                        unit="cities",
+                    )
+                ]
+            )
+        )
+
+    monkeypatch.setattr(writer_number_extractor, "run_agent_sync", fake_run_agent_sync)
+
+    writer_number_extractor.extract_writer_numbers(
+        case=case,
+        candidate_text="coverage_count: 1",
+        config=config,
+        api_key="test-api-key",
+    )
+
+    metrics = captured_payload["metrics"]
+    assert isinstance(metrics, list)
+    assert metrics == [
+        {
+            "metric_id": "coverage_count",
+            "label": "Coverage count",
+            "unit": "cities",
+            "display_metadata": {"selected_city": "Krakow"},
+        }
+    ]
+    assert "expected_value" not in metrics[0]
+
+
 def test_component_audit_compares_writer_city_rows() -> None:
     """Metrics can opt into row-level city/value comparison against the writer table."""
     case = WriterNumericBenchmarkCase.model_validate(
@@ -356,7 +445,7 @@ def test_component_audit_compares_writer_city_rows() -> None:
 
 
 def test_retrieval_audit_reports_candidate_and_excerpt_gaps(tmp_path: Path) -> None:
-    """Heuristic retrieval audit surfaces candidate city docs missing from excerpts."""
+    """Heuristic retrieval audit scans only the selected city documents."""
     documents_dir = tmp_path / "documents"
     documents_dir.mkdir()
     (documents_dir / "Alpha.md").write_text(
@@ -369,6 +458,10 @@ def test_retrieval_audit_reports_candidate_and_excerpt_gaps(tmp_path: Path) -> N
     )
     (documents_dir / "Gamma.md").write_text(
         "This file mentions charging stations only.",
+        encoding="utf-8",
+    )
+    (documents_dir / "Omega.md").write_text(
+        "This unrelated city procures 30 electric buses.",
         encoding="utf-8",
     )
     context_bundle_path = tmp_path / "context_bundle.json"

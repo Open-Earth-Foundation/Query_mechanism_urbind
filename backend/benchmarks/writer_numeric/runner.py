@@ -553,6 +553,7 @@ def _build_retrieval_audit(
     candidate_cities = _scan_document_candidates(
         documents_dir=documents_dir,
         preset=case.retrieval_audit_preset,
+        selected_cities=case.selected_cities,
     )
     excerpt_set = {city.lower(): city for city in excerpt_cities}
     candidate_set = {city.lower(): city for city in candidate_cities}
@@ -588,12 +589,29 @@ def _load_excerpt_city_keys(context_bundle_path: Path) -> list[str]:
     return sorted(seen.values(), key=str.lower)
 
 
-def _scan_document_candidates(*, documents_dir: Path, preset: str) -> list[str]:
-    """Heuristically scan city documents for candidate numeric evidence."""
+def _scan_document_candidates(
+    *,
+    documents_dir: Path,
+    preset: str,
+    selected_cities: list[str],
+) -> list[str]:
+    """Heuristically scan selected city documents for candidate numeric evidence."""
     if preset != "electric_bus_numeric_mentions":
         raise ValueError(f"Unsupported retrieval audit preset: {preset}")
+    paths_by_city = {
+        _normalize_row_label(path.stem): path
+        for path in sorted(documents_dir.glob("*.md"))
+    }
     matches: list[str] = []
-    for path in sorted(documents_dir.glob("*.md")):
+    seen_city_keys: set[str] = set()
+    for city in selected_cities:
+        city_key = _normalize_row_label(city)
+        if not city_key or city_key in seen_city_keys:
+            continue
+        seen_city_keys.add(city_key)
+        path = paths_by_city.get(city_key)
+        if path is None:
+            continue
         text = path.read_text(encoding="utf-8", errors="ignore")
         if any(pattern.search(text) for pattern in _CITY_NUMERIC_PATTERNS):
             matches.append(path.stem)
