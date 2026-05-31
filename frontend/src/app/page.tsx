@@ -187,6 +187,7 @@ export default function Home() {
   const [analysisMode, setAnalysisMode] = useState<AnalysisMode>("aggregate");
   const [enrichmentEnabled, setEnrichmentEnabled] = useState(true);
   const [webResearchEnabled, setWebResearchEnabled] = useState(true);
+  const [writerResearchEnabled, setWriterResearchEnabled] = useState(true);
   const [cities, setCities] = useState<string[]>([]);
   const [selectedCities, setSelectedCities] = useState<string[]>([]);
   const [cityGroups, setCityGroups] = useState<CityGroup[]>([]);
@@ -916,6 +917,7 @@ export default function Home() {
         analysis_mode: analysisMode,
         enrichment_enabled: enrichmentEnabled,
         web_research_enabled: enrichmentEnabled && webResearchEnabled,
+        ...(isDevMode ? { writer_research_enabled: writerResearchEnabled } : {}),
       });
       setRunResponse(payload);
       setSelectedExistingRunId(payload.run_id);
@@ -1401,6 +1403,28 @@ export default function Home() {
                     : "CCC excerpts only — no gap analysis, web research, or assumption estimates."}
                 </p>
               </div>
+
+              {isDevMode ? (
+                <div className="space-y-3 rounded-md border border-slate-200 p-3">
+                  <div className="flex items-center justify-between">
+                    <Label>Writer research curator</Label>
+                    <Badge variant={writerResearchEnabled ? "secondary" : "outline"}>
+                      {writerResearchEnabled ? "On" : "Off"}
+                    </Badge>
+                  </div>
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="text-sm text-slate-700">Evidence prep before chapters</span>
+                    <Button
+                      type="button"
+                      size="sm"
+                      variant={writerResearchEnabled ? "default" : "outline"}
+                      onClick={() => setWriterResearchEnabled((value) => !value)}
+                    >
+                      {writerResearchEnabled ? "Disable" : "Enable"}
+                    </Button>
+                  </div>
+                </div>
+              ) : null}
 
               <Button
                 onClick={handleBuildDocument}

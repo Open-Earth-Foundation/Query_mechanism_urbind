@@ -13,6 +13,11 @@ from backend.api.models import (
     RunWriterCitationCoverage,
     RunWriterMultiPass,
     RunWriterMultiPassBatch,
+    RunWriterMissingEvidenceRecord,
+    RunWriterSectionPlan,
+    RunWriterSectionPlanSection,
+    RunWriterSavedEvidence,
+    RunWriterSavedEvidenceItem,
 )
 from backend.api.services.run_store import RunRecord
 from backend.utils.json_io import read_json_object
@@ -74,6 +79,8 @@ def build_run_diagnostics(
             run_log_path,
         ),
         writer_multi_pass=_read_writer_multi_pass(run_log_payload, run_log_path),
+        writer_section_plan=_read_writer_section_plan(run_log_payload, run_log_path),
+        writer_saved_evidence=_read_writer_saved_evidence(run_log_payload, run_dir),
         llm_usage=llm_usage,
         retry_summary=retry_summary,
         warning_entries=_read_warning_entries(run_log_path),
@@ -230,6 +237,31 @@ def _read_writer_multi_pass(
     return last_payload
 
 
+def _read_writer_section_plan(
+    run_log_payload: dict[str, object],
+    run_log_path: Path | None,
+) -> RunWriterSectionPlan | None:
+    """Read persisted section-first writer diagnostics or infer from ``run.log``."""
+    payload = _normalize_writer_section_plan(run_log_payload.get("writer_section_plan"))
+    if payload is not None:
+        return payload
+    if run_log_path is None or not run_log_path.exists():
+        return None
+    last_payload: RunWriterSectionPlan | None = None
+    try:
+        with run_log_path.open("r", encoding="utf-8", errors="replace") as handle:
+            for line in handle:
+                if "WRITER_SECTION_PLAN " not in line:
+                    continue
+                payload_raw = line.split("WRITER_SECTION_PLAN ", 1)[1].strip()
+                normalized = _normalize_writer_section_plan_from_json(payload_raw)
+                if normalized is not None:
+                    last_payload = normalized
+    except OSError:
+        return None
+    return last_payload
+
+
 def _normalize_writer_citation_coverage(raw_value: object) -> RunWriterCitationCoverage | None:
     """Validate writer coverage payload loaded from structured artifacts."""
     if not isinstance(raw_value, dict):
@@ -261,6 +293,19 @@ def _normalize_writer_multi_pass_from_json(
     if not isinstance(payload, dict):
         return None
     return _normalize_writer_multi_pass(payload)
+
+
+def _normalize_writer_section_plan_from_json(
+    payload_raw: str,
+) -> RunWriterSectionPlan | None:
+    """Parse one JSON-formatted section-first writer log line."""
+    try:
+        payload = json.loads(payload_raw)
+    except json.JSONDecodeError:
+        return None
+    if not isinstance(payload, dict):
+        return None
+    return _normalize_writer_section_plan(payload)
 
 
 def _build_writer_citation_coverage(
@@ -357,6 +402,203 @@ def _normalize_writer_multi_pass(raw_value: object) -> RunWriterMultiPass | None
         threshold_tokens=threshold_tokens,
         batch_count=batch_count,
         batches=batches,
+    )
+
+
+def _normalize_writer_section_plan(raw_value: object) -> RunWriterSectionPlan | None:
+    """Validate section-first writer diagnostics loaded from artifacts."""
+    if not isinstance(raw_value, dict):
+        return None
+
+    strategy = raw_value.get("strategy")
+    analysis_mode = raw_value.get("analysis_mode")
+    planner_input_tokens = raw_value.get("planner_input_tokens")
+    catalog_truncated = raw_value.get("catalog_truncated")
+    section_count = raw_value.get("section_count")
+    sections_raw = raw_value.get("sections")
+    if (
+        strategy != "section_first"
+        or not isinstance(analysis_mode, str)
+        or not isinstance(planner_input_tokens, int)
+        or not isinstance(catalog_truncated, bool)
+        or not isinstance(section_count, int)
+        or not isinstance(sections_raw, list)
+    ):
+        return None
+
+    sections: list[RunWriterSectionPlanSection] = []
+    for entry in sections_raw:
+        section = _normalize_writer_section_plan_section(entry)
+        if section is None:
+            return None
+        sections.append(section)
+
+    return RunWriterSectionPlan(
+        strategy="section_first",
+        analysis_mode=analysis_mode,
+        planner_input_tokens=planner_input_tokens,
+        catalog_truncated=catalog_truncated,
+        section_count=section_count,
+        sections=sections,
+    )
+
+
+def _read_writer_saved_evidence(
+    run_log_payload: dict[str, object],
+    run_dir: Path,
+) -> RunWriterSavedEvidence | None:
+    """Read persisted writer research-curator diagnostics."""
+    payload = _normalize_writer_saved_evidence(run_log_payload.get("writer_saved_evidence"))
+    if payload is not None:
+        return payload
+    artifact_payload = read_json_object(run_dir / "writer" / "saved_evidence.json")
+    if artifact_payload is None:
+        return None
+    return _normalize_writer_saved_evidence(artifact_payload)
+
+
+def _normalize_writer_saved_evidence(raw_value: object) -> RunWriterSavedEvidence | None:
+    """Validate writer saved-evidence diagnostics loaded from artifacts."""
+    if not isinstance(raw_value, dict):
+        return None
+    saved_count = raw_value.get("saved_count")
+    if not isinstance(saved_count, int):
+        return None
+    covered_cities_raw = raw_value.get("covered_cities")
+    source_kind_counts_raw = raw_value.get("source_kind_counts")
+    missing_records_raw = raw_value.get("missing_records")
+    saved_evidence_raw = raw_value.get("saved_evidence")
+    return RunWriterSavedEvidence(
+        curator_status=raw_value.get("curator_status")
+        if isinstance(raw_value.get("curator_status"), str)
+        else None,
+        saved_count=saved_count,
+        covered_cities=[
+            city for city in covered_cities_raw if isinstance(city, str)
+        ]
+        if isinstance(covered_cities_raw, list)
+        else [],
+        source_kind_counts={
+            key: value
+            for key, value in source_kind_counts_raw.items()
+            if isinstance(key, str) and isinstance(value, int)
+        }
+        if isinstance(source_kind_counts_raw, dict)
+        else {},
+        missing_records=_normalize_writer_missing_records(missing_records_raw),
+        saved_evidence=_normalize_writer_saved_evidence_items(saved_evidence_raw),
+    )
+
+
+def _normalize_writer_missing_records(
+    raw_value: object,
+) -> list[RunWriterMissingEvidenceRecord]:
+    """Coerce missing writer evidence records for diagnostics."""
+    if not isinstance(raw_value, list):
+        return []
+    records: list[RunWriterMissingEvidenceRecord] = []
+    for entry in raw_value:
+        if not isinstance(entry, dict):
+            continue
+        missing_id = entry.get("missing_id")
+        reason = entry.get("reason")
+        if not isinstance(missing_id, str) or not isinstance(reason, str):
+            continue
+        searched_patterns_raw = entry.get("searched_patterns")
+        records.append(
+            RunWriterMissingEvidenceRecord(
+                missing_id=missing_id,
+                city_name=entry.get("city_name") if isinstance(entry.get("city_name"), str) else "",
+                source_kind=entry.get("source_kind")
+                if isinstance(entry.get("source_kind"), str)
+                else None,
+                field=entry.get("field") if isinstance(entry.get("field"), str) else "",
+                reason=reason,
+                searched_patterns=[
+                    pattern
+                    for pattern in searched_patterns_raw
+                    if isinstance(pattern, str)
+                ]
+                if isinstance(searched_patterns_raw, list)
+                else [],
+            )
+        )
+    return records
+
+
+def _normalize_writer_saved_evidence_items(
+    raw_value: object,
+) -> list[RunWriterSavedEvidenceItem]:
+    """Coerce saved writer evidence records for diagnostics."""
+    if not isinstance(raw_value, list):
+        return []
+    items: list[RunWriterSavedEvidenceItem] = []
+    for entry in raw_value:
+        if not isinstance(entry, dict):
+            continue
+        saved_id = entry.get("saved_id")
+        ref_id = entry.get("ref_id")
+        item_id = entry.get("item_id")
+        source_kind = entry.get("source_kind")
+        if not all(isinstance(value, str) for value in (saved_id, ref_id, item_id, source_kind)):
+            continue
+        items.append(
+            RunWriterSavedEvidenceItem(
+                saved_id=saved_id,
+                ref_id=ref_id,
+                item_id=item_id,
+                source_kind=source_kind,
+                city_name=entry.get("city_name") if isinstance(entry.get("city_name"), str) else "",
+                source_id=entry.get("source_id") if isinstance(entry.get("source_id"), str) else "",
+                field=entry.get("field") if isinstance(entry.get("field"), str) else "",
+                reason=entry.get("reason") if isinstance(entry.get("reason"), str) else "",
+            )
+        )
+    return items
+
+
+def _normalize_writer_section_plan_section(
+    raw_value: object,
+) -> RunWriterSectionPlanSection | None:
+    """Coerce one section-first diagnostic section."""
+    if not isinstance(raw_value, dict):
+        return None
+    section_id = raw_value.get("section_id")
+    title = raw_value.get("title")
+    section_type = raw_value.get("section_type")
+    purpose = raw_value.get("purpose")
+    writing_instructions = raw_value.get("writing_instructions")
+    required_ref_ids_raw = raw_value.get("required_ref_ids")
+    city_names_raw = raw_value.get("city_names")
+    if (
+        not isinstance(section_id, str)
+        or not isinstance(title, str)
+        or not isinstance(section_type, str)
+        or not isinstance(purpose, str)
+        or not isinstance(writing_instructions, str)
+        or not isinstance(required_ref_ids_raw, list)
+        or not isinstance(city_names_raw, list)
+    ):
+        return None
+
+    payload_tokens = raw_value.get("payload_tokens")
+    draft_length_chars = raw_value.get("draft_length_chars")
+    batch_count = raw_value.get("batch_count")
+    return RunWriterSectionPlanSection(
+        section_id=section_id,
+        title=title,
+        section_type=section_type,
+        purpose=purpose,
+        required_ref_ids=[
+            ref_id for ref_id in required_ref_ids_raw if isinstance(ref_id, str)
+        ],
+        city_names=[city for city in city_names_raw if isinstance(city, str)],
+        writing_instructions=writing_instructions,
+        payload_tokens=payload_tokens if isinstance(payload_tokens, int) else None,
+        draft_length_chars=draft_length_chars
+        if isinstance(draft_length_chars, int)
+        else None,
+        batch_count=batch_count if isinstance(batch_count, int) else None,
     )
 
 

@@ -18,6 +18,7 @@ Input is a JSON object with:
 - `selected_cities` (list[str]): cities selected for this run, which you must explicitly cover
 - `context_bundle` (object): contains markdown outputs
   - may include `research_question` (str): primary retrieval query used downstream; for initial build runs this is the user's first question verbatim after trimming
+  - `markdown.excerpts[]` may include saved evidence selected by the optional writer research curator; saved external, web, assumption, source-chunk, and enrichment records are citation-compatible when they carry `ref_id`
 - `reconsideration` (object, optional): previous answer + missing cities (use `context_bundle` to find their excerpts)
 - `context_bundle.enrichment` (object, optional): automated gap analysis, external Markdown evidence, tier-1/open web findings, and assumption estimates
   - `field_manifest` (object): field-level decomposition with `query_fields[]` (each with `field`, `classification`, `searchable`, `rationale`, `scope`) and `non_estimable_fields[]`
@@ -190,6 +191,7 @@ Citation rules (critical when `excerpt_count > 0`):
 - Every CCC-derived factual statement must be immediately followed by one or more citations: `[ref_1]` or `[ref_1][ref_3]`.
 - Allowed refs are only from `context_bundle.markdown.excerpts[].ref_id`.
 - Do not invent refs and do not use any citation format other than `[ref_n]`.
-- External Markdown facts use `(source_id:Lline_start-Lline_end)` provenance, not `[ref_n]`, unless the same statement is also grounded in CCC excerpts.
+- External Markdown, web, assumption, source-chunk, or enrichment facts saved into `context_bundle.markdown.excerpts[]` use their assigned `[ref_n]`.
+- External Markdown facts that remain only in raw enrichment records use `(source_id:Lline_start-Lline_end)` provenance, unless the same statement is also grounded in `markdown.excerpts[]`.
 </rules>
 </output>

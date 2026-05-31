@@ -29,6 +29,7 @@ export interface CreateRunRequest {
   log_llm_payload?: boolean;
   enrichment_enabled?: boolean;
   web_research_enabled?: boolean;
+  writer_research_enabled?: boolean;
 }
 
 export interface CreateRunResponse {
@@ -110,6 +111,35 @@ export interface RunWriterMultiPass {
   batches: RunWriterMultiPassBatch[];
 }
 
+export interface RunWriterSavedEvidenceItem {
+  saved_id: string;
+  ref_id: string;
+  item_id: string;
+  source_kind: string;
+  city_name: string;
+  source_id: string;
+  field: string;
+  reason: string;
+}
+
+export interface RunWriterMissingEvidenceRecord {
+  missing_id: string;
+  city_name: string;
+  source_kind?: string | null;
+  field: string;
+  reason: string;
+  searched_patterns: string[];
+}
+
+export interface RunWriterSavedEvidence {
+  curator_status?: string | null;
+  saved_count: number;
+  covered_cities: string[];
+  source_kind_counts: Record<string, number>;
+  missing_records: RunWriterMissingEvidenceRecord[];
+  saved_evidence: RunWriterSavedEvidenceItem[];
+}
+
 export interface RunDiagnosticsResponse {
   run_id: string;
   question: string;
@@ -121,6 +151,7 @@ export interface RunDiagnosticsResponse {
   artifacts: RunDiagnosticsArtifactPaths;
   writer_citation_coverage?: RunWriterCitationCoverage | null;
   writer_multi_pass?: RunWriterMultiPass | null;
+  writer_saved_evidence?: RunWriterSavedEvidence | null;
   llm_usage?: Record<string, unknown> | null;
   retry_summary?: Record<string, unknown> | null;
   warning_entries: string[];

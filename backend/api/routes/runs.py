@@ -173,6 +173,7 @@ def create_run(
                 analysis_mode=payload.analysis_mode,
                 enrichment_enabled=payload.enrichment_enabled,
                 web_research_enabled=payload.web_research_enabled,
+                writer_research_enabled=payload.writer_research_enabled,
             )
         )
     except DuplicateRunIdError as exc:

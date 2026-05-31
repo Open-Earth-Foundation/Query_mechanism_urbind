@@ -298,6 +298,54 @@ def test_api_run_lifecycle_success(tmp_path: Path, monkeypatch: pytest.MonkeyPat
         assert isinstance(context_payload["context_bundle"], dict)
 
 
+def test_api_run_accepts_writer_research_opt_out(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Per-run writer research opt-out should override the config default."""
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+
+    def _stub_load_config(_path: Path | None = None) -> AppConfig:
+        config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+        config.writer.evidence_curator_enabled = True
+        return config
+
+    def _stub_run_pipeline(
+        question: str,
+        config: AppConfig,
+        run_id: str | None = None,
+        log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
+        selected_cities: list[str] | None = None,
+    ) -> RunPaths:
+        assert run_id is not None
+        assert config.writer.evidence_curator_enabled is False
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
+        assert selected_cities is None
+        return _write_success_artifacts(question=question, run_id=run_id, config=config)
+
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+
+    app = create_app(runs_dir=runs_dir, max_workers=2)
+    with TestClient(app) as client:
+        start = client.post(
+            "/api/v1/runs",
+            json={
+                "question": "What are the key initiatives?",
+                "run_id": "run-writer-research-off",
+                "writer_research_enabled": False,
+            },
+        )
+        assert start.status_code == 202
+        terminal = _poll_until_terminal(client, "run-writer-research-off")
+        assert terminal["status"] == "completed"
+
+
 def test_api_run_lifecycle_dev_mode_ignores_blank_optional_queries(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
@@ -1265,6 +1313,55 @@ def test_api_run_diagnostics_returns_warning_and_error_artifacts(
             },
         ],
     }
+    run_payload["writer_section_plan"] = {
+        "strategy": "section_first",
+        "analysis_mode": "aggregate",
+        "planner_input_tokens": 2400,
+        "catalog_truncated": False,
+        "section_count": 1,
+        "sections": [
+            {
+                "section_id": "retrofit_investment",
+                "title": "Retrofit Investment Evidence",
+                "section_type": "numeric_analysis",
+                "purpose": "Compare retrofit investment evidence.",
+                "required_ref_ids": ["ref_1", "ref_2"],
+                "city_names": ["Aachen", "Amsterdam"],
+                "writing_instructions": "Compare the assigned evidence.",
+                "payload_tokens": 1800,
+                "draft_length_chars": 420,
+                "batch_count": 1,
+            }
+        ],
+    }
+    run_payload["writer_saved_evidence"] = {
+        "curator_status": "saved_evidence",
+        "saved_count": 1,
+        "covered_cities": ["Aachen"],
+        "source_kind_counts": {"external_markdown_claim": 1},
+        "missing_records": [
+            {
+                "missing_id": "wm_1",
+                "city_name": "Amsterdam",
+                "source_kind": "web_finding",
+                "field": "charger target",
+                "reason": "No writer-visible web finding matched.",
+                "searched_patterns": ["charger target"],
+            }
+        ],
+        "saved_evidence": [
+            {
+                "saved_id": "ws_1",
+                "ref_id": "ref_3",
+                "item_id": "external_markdown_claim:1",
+                "source_kind": "external_markdown_claim",
+                "city_name": "Aachen",
+                "source_id": "external_plan",
+                "field": "charger target",
+                "reason": "External plan provides the target.",
+            }
+        ],
+    }
     paths.run_log.write_text(
         json.dumps(run_payload, ensure_ascii=True, indent=2),
         encoding="utf-8",
@@ -1318,6 +1415,14 @@ def test_api_run_diagnostics_returns_warning_and_error_artifacts(
             "Aachen",
             "Amsterdam",
         ]
+        assert payload["writer_section_plan"]["strategy"] == "section_first"
+        assert payload["writer_section_plan"]["section_count"] == 1
+        assert payload["writer_section_plan"]["sections"][0]["section_id"] == (
+            "retrofit_investment"
+        )
+        assert payload["writer_saved_evidence"]["saved_count"] == 1
+        assert payload["writer_saved_evidence"]["covered_cities"] == ["Aachen"]
+        assert payload["writer_saved_evidence"]["missing_records"][0]["missing_id"] == "wm_1"
         assert payload["warning_entries"] == [
             (
                 '2026-01-01 00:00:00 worker.py:10 - WARNING - WRITER_CITATION_COVERAGE '

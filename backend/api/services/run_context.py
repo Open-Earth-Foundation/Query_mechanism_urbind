@@ -15,6 +15,8 @@ from backend.modules.writer.utils.markdown_helpers import (
     extract_selected_city_names,
 )
 from backend.modules.writer.utils.multi_pass import build_writer_context_bundle
+from backend.modules.writer.models import WriterSavedEvidence
+from backend.modules.writer.utils.research_context import apply_saved_evidence_to_context
 
 
 def load_run_context_bundle(context_path: Path, run_id: str) -> dict[str, object]:
@@ -46,11 +48,21 @@ def build_writer_export_context(
         normalized_context_bundle,
         markdown_bundle,
     )
-    return build_writer_context_bundle(
+    writer_context = build_writer_context_bundle(
         context_bundle=normalized_context_bundle,
         excerpts=excerpts,
         city_names=selected_city_names,
     )
+    saved_evidence = _read_saved_writer_evidence(normalized_context_bundle)
+    if saved_evidence:
+        writer_context = apply_saved_evidence_to_context(
+            context_bundle=writer_context,
+            saved_evidence=saved_evidence,
+        )
+        writer_context["writer_saved_evidence"] = normalized_context_bundle[
+            "writer_saved_evidence"
+        ]
+    return writer_context
 
 
 def render_writer_export_markdown(context_bundle: Mapping[str, object]) -> str:
@@ -113,6 +125,27 @@ def _read_string(value: object) -> str:
     if not isinstance(value, str):
         return ""
     return value.strip()
+
+
+def _read_saved_writer_evidence(
+    context_bundle: Mapping[str, object],
+) -> list[WriterSavedEvidence]:
+    """Read persisted writer saved evidence from a run context bundle."""
+    payload = context_bundle.get("writer_saved_evidence")
+    if not isinstance(payload, dict):
+        return []
+    records = payload.get("saved_evidence")
+    if not isinstance(records, list):
+        return []
+    saved: list[WriterSavedEvidence] = []
+    for record in records:
+        if not isinstance(record, dict):
+            continue
+        try:
+            saved.append(WriterSavedEvidence.model_validate(record))
+        except ValueError:
+            continue
+    return saved
 
 
 def _read_string_list(value: object) -> list[str]:

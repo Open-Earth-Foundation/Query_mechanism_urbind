@@ -74,6 +74,7 @@ export function RunDiagnosticsPanel({
   const errorLogText = diagnostics?.error_log_text ?? null;
   const writerCoverage = diagnostics?.writer_citation_coverage ?? null;
   const writerMultiPass = diagnostics?.writer_multi_pass ?? null;
+  const writerSavedEvidence = diagnostics?.writer_saved_evidence ?? null;
   const missingCities = writerCoverage?.missing_cities ?? [];
 
   return (
@@ -223,6 +224,60 @@ export function RunDiagnosticsPanel({
                       .join("\n\n")}
                   </pre>
                 </div>
+              </div>
+            </details>
+          ) : null}
+
+          {writerSavedEvidence ? (
+            <details className="rounded-md border border-slate-200 bg-white" open>
+              <summary className="cursor-pointer px-3 py-2 text-sm font-medium text-slate-900">
+                Writer saved evidence ({writerSavedEvidence.saved_count} saved)
+              </summary>
+              <div className="space-y-2 border-t border-slate-200 px-3 py-2 text-xs text-slate-700">
+                <p>
+                  <span className="font-medium text-slate-900">Curator status:</span>{" "}
+                  {writerSavedEvidence.curator_status ?? "n/a"}
+                </p>
+                <p>
+                  <span className="font-medium text-slate-900">Covered cities:</span>{" "}
+                  {writerSavedEvidence.covered_cities.length > 0
+                    ? writerSavedEvidence.covered_cities.join(", ")
+                    : "none"}
+                </p>
+                <div>
+                  <p className="font-medium text-slate-900">Source kinds</p>
+                  <pre className="max-h-32 overflow-auto whitespace-pre-wrap text-xs text-slate-700">
+                    {formatJsonBlock(writerSavedEvidence.source_kind_counts)}
+                  </pre>
+                </div>
+                {writerSavedEvidence.saved_evidence.length > 0 ? (
+                  <div>
+                    <p className="font-medium text-slate-900">Saved evidence</p>
+                    <pre className="max-h-56 overflow-auto whitespace-pre-wrap text-xs text-slate-700">
+                      {writerSavedEvidence.saved_evidence
+                        .map(
+                          (item) =>
+                            `${item.saved_id} ${item.ref_id} ${item.source_kind} ${item.city_name || "n/a"} ${item.field || ""}\n${item.reason}`,
+                        )
+                        .join("\n\n")}
+                    </pre>
+                  </div>
+                ) : null}
+                {writerSavedEvidence.missing_records.length > 0 ? (
+                  <div>
+                    <p className="font-medium text-slate-900">
+                      Missing records ({writerSavedEvidence.missing_records.length})
+                    </p>
+                    <pre className="max-h-48 overflow-auto whitespace-pre-wrap text-xs text-slate-700">
+                      {writerSavedEvidence.missing_records
+                        .map(
+                          (item) =>
+                            `${item.missing_id} ${item.city_name || "n/a"} ${item.field || ""}\n${item.reason}`,
+                        )
+                        .join("\n\n")}
+                    </pre>
+                  </div>
+                ) : null}
               </div>
             </details>
           ) : null}

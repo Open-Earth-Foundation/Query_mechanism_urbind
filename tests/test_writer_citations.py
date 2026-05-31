@@ -6,12 +6,16 @@ import re
 import pytest
 
 from backend.modules.writer import agent as writer_agent
-from backend.modules.writer.models import WriterOutput
+from backend.modules.writer.models import WriterOutput, WriterSectionPlan, WriterSectionSpec
 from backend.modules.writer.utils.markdown_helpers import (
     extract_cited_ref_ids,
     normalize_reference_citations,
 )
 from backend.modules.writer.utils.multi_pass import build_writer_context_bundle
+from backend.modules.writer.utils.section_first import (
+    build_section_context_bundle,
+    sanitize_writer_section_plan,
+)
 from backend.services.run_logger import RunLogger
 from backend.utils.config import AppConfig
 from backend.utils.paths import create_run_paths
@@ -42,6 +46,10 @@ def _build_test_config(tmp_path: Path) -> AppConfig:
     return build_test_app_config(
         runs_dir=tmp_path / "output",
         markdown_dir=tmp_path / "documents",
+        writer_overrides={
+            "section_first_aggregate_enabled": False,
+            "evidence_curator_enabled": False,
+        },
     )
 
 
@@ -948,6 +956,458 @@ def test_writer_returns_partial_coverage_metadata_after_retry_exhaustion(
         payload.get("status") == "exhausted" and payload.get("coverage_ratio") == "1/2"
         for payload in coverage_payloads
     )
+
+
+def test_writer_section_first_plans_writes_and_composes_aggregate_answer(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    config = build_test_app_config(
+        runs_dir=tmp_path / "output",
+        markdown_dir=tmp_path / "documents",
+        writer_overrides={
+            "section_first_aggregate_enabled": True,
+            "evidence_curator_enabled": False,
+            "section_max_workers": 1,
+        },
+    )
+    question = "Compare retrofit investment evidence across selected cities."
+    context_bundle: dict[str, object] = {
+        "analysis_mode": "aggregate",
+        "markdown": {
+            "excerpt_count": 2,
+            "selected_city_names": ["Munich", "Berlin"],
+            "excerpts": [
+                {
+                    "ref_id": "ref_1",
+                    "city_name": "Munich",
+                    "quote": "Munich retrofit investment evidence.",
+                    "partial_answer": "Munich retrofit investment evidence.",
+                },
+                {
+                    "ref_id": "ref_2",
+                    "city_name": "Berlin",
+                    "quote": "Berlin retrofit investment evidence.",
+                    "partial_answer": "Berlin retrofit investment evidence.",
+                },
+            ],
+        },
+    }
+    paths = create_run_paths(
+        config.runs_dir,
+        "run-writer-section-first",
+        config.orchestrator.context_bundle_name,
+    )
+    run_logger = RunLogger(paths, question)
+    call_order: list[str] = []
+
+    monkeypatch.setattr(
+        writer_agent,
+        "build_writer_section_planner_agent",
+        lambda *_args, **_kwargs: object(),
+    )
+    monkeypatch.setattr(
+        writer_agent,
+        "build_writer_section_agent",
+        lambda *_args, **_kwargs: object(),
+    )
+    monkeypatch.setattr(
+        writer_agent,
+        "build_writer_section_composer_agent",
+        lambda *_args, **_kwargs: object(),
+    )
+
+    def _fake_run_agent_sync(
+        _agent: object,
+        input_text: str,
+        log_llm_payload: bool,
+        **_kwargs: object,
+    ) -> _FakeRunResult:
+        del log_llm_payload
+        payload = json.loads(input_text)
+        if "evidence_catalog" in payload:
+            call_order.append("planner")
+            return _FakeRunResult(
+                WriterSectionPlan(
+                    sections=[
+                        WriterSectionSpec(
+                            section_id="retrofit_investment_scope",
+                            title="Retrofit Investment Evidence Across Cities",
+                            section_type="numeric_analysis",
+                            purpose="Compare the assigned retrofit investment evidence.",
+                            required_ref_ids=["ref_1", "ref_2"],
+                            city_names=["Munich", "Berlin"],
+                            writing_instructions="Compare the assigned city evidence.",
+                        )
+                    ]
+                )
+            )
+        if "section" in payload:
+            call_order.append("section")
+            return _FakeRunResult(
+                WriterOutput(
+                    content=(
+                        "## Retrofit Investment Evidence Across Cities\n\n"
+                        "Munich and Berlin both have retrofit investment evidence. [ref_1][ref_2]"
+                    )
+                )
+            )
+        if "section_drafts" in payload:
+            call_order.append("composer")
+            return _FakeRunResult(
+                WriterOutput(
+                    content=(
+                        "## Executive Summary\n\n"
+                        "Munich and Berlin both have retrofit investment evidence. [ref_1][ref_2]\n\n"
+                        "## Retrofit Investment Evidence Across Cities\n\n"
+                        "Munich and Berlin both have retrofit investment evidence. [ref_1][ref_2]"
+                    )
+                )
+            )
+        raise AssertionError(f"Unexpected payload: {payload}")
+
+    monkeypatch.setattr(writer_agent, "run_agent_sync", _fake_run_agent_sync)
+
+    output = writer_agent.write_markdown(
+        question=question,
+        context_bundle=context_bundle,
+        config=config,
+        api_key="test-key",
+        log_llm_payload=False,
+        run_id="run-writer-section-first",
+        run_logger=run_logger,
+        paths=paths,
+    )
+
+    assert call_order == ["planner", "section", "composer"]
+    assert output.citation_coverage is not None
+    assert output.citation_coverage.status == "confirmed"
+    assert run_logger.run_log["writer_section_plan"]["section_count"] == 1
+    assert "writer_section_plan" in run_logger.run_log["artifacts"]
+    artifact_path = Path(run_logger.run_log["artifacts"]["writer_section_plan"])
+    assert artifact_path.exists()
+
+
+def test_writer_section_plan_guardrails_normalize_generic_titles_and_refs() -> None:
+    context_bundle: dict[str, object] = {
+        "markdown": {
+            "excerpt_count": 2,
+            "selected_city_names": ["Munich", "Berlin"],
+            "excerpts": [
+                {
+                    "ref_id": "ref_1",
+                    "city_name": "Munich",
+                    "quote": "Munich charging evidence.",
+                    "partial_answer": "Munich charging evidence.",
+                },
+                {
+                    "ref_id": "ref_2",
+                    "city_name": "Berlin",
+                    "quote": "Berlin charging evidence.",
+                    "partial_answer": "Berlin charging evidence.",
+                },
+            ],
+        }
+    }
+    raw_plan = WriterSectionPlan(
+        sections=[
+            WriterSectionSpec(
+                section_id="",
+                title="Key Findings",
+                section_type="charging_comparison",
+                purpose="",
+                required_ref_ids=["ref_1", "ref_99"],
+                city_names=[],
+                writing_instructions="",
+            ),
+            WriterSectionSpec(
+                section_id="empty",
+                title="Analysis",
+                section_type="analysis",
+                purpose="",
+                required_ref_ids=[],
+                city_names=[],
+                writing_instructions="",
+            ),
+        ]
+    )
+
+    plan = sanitize_writer_section_plan(
+        plan=raw_plan,
+        question="Compare charging infrastructure evidence.",
+        context_bundle=context_bundle,
+        selected_city_names=["Munich", "Berlin"],
+    )
+
+    assert len(plan.sections) == 1
+    section = plan.sections[0]
+    assert section.title != "Key Findings"
+    assert "charging" in section.title.lower()
+    assert section.required_ref_ids == ["ref_1", "ref_2"]
+    assert section.city_names == ["Munich", "Berlin"]
+
+
+def test_writer_section_context_contains_only_assigned_refs() -> None:
+    context_bundle: dict[str, object] = {
+        "markdown": {
+            "excerpt_count": 2,
+            "selected_city_names": ["Munich", "Berlin"],
+            "excerpts": [
+                {
+                    "ref_id": "ref_1",
+                    "city_name": "Munich",
+                    "quote": "Munich charging evidence.",
+                    "partial_answer": "Munich charging evidence.",
+                },
+                {
+                    "ref_id": "ref_2",
+                    "city_name": "Berlin",
+                    "quote": "Berlin charging evidence.",
+                    "partial_answer": "Berlin charging evidence.",
+                },
+            ],
+        }
+    }
+    section = WriterSectionSpec(
+        section_id="berlin_charging",
+        title="Berlin Charging Evidence",
+        section_type="city_focus",
+        purpose="Use only Berlin evidence.",
+        required_ref_ids=["ref_2"],
+        city_names=["Berlin"],
+        writing_instructions="Summarize Berlin evidence.",
+    )
+
+    section_context = build_section_context_bundle(
+        context_bundle=context_bundle,
+        section=section,
+    )
+
+    excerpts = section_context["markdown"]["excerpts"]
+    assert [excerpt["ref_id"] for excerpt in excerpts] == ["ref_2"]
+    assert section_context["markdown"]["selected_city_names"] == ["Berlin"]
+
+
+def test_writer_section_first_retries_composer_for_full_citation_coverage(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    config = build_test_app_config(
+        runs_dir=tmp_path / "output",
+        markdown_dir=tmp_path / "documents",
+        writer_overrides={
+            "section_first_aggregate_enabled": True,
+            "evidence_curator_enabled": False,
+            "section_max_workers": 1,
+        },
+        retry_overrides={"backoff_base_seconds": 0.0, "backoff_max_seconds": 0.0},
+    )
+    context_bundle: dict[str, object] = {
+        "analysis_mode": "aggregate",
+        "markdown": {
+            "excerpt_count": 2,
+            "selected_city_names": ["Munich", "Berlin"],
+            "excerpts": [
+                {
+                    "ref_id": "ref_1",
+                    "city_name": "Munich",
+                    "quote": "Munich charging evidence.",
+                    "partial_answer": "Munich charging evidence.",
+                },
+                {
+                    "ref_id": "ref_2",
+                    "city_name": "Berlin",
+                    "quote": "Berlin charging evidence.",
+                    "partial_answer": "Berlin charging evidence.",
+                },
+            ],
+        },
+    }
+    composer_payloads: list[dict[str, object]] = []
+
+    monkeypatch.setattr(
+        writer_agent,
+        "build_writer_section_planner_agent",
+        lambda *_args, **_kwargs: object(),
+    )
+    monkeypatch.setattr(
+        writer_agent,
+        "build_writer_section_agent",
+        lambda *_args, **_kwargs: object(),
+    )
+    monkeypatch.setattr(
+        writer_agent,
+        "build_writer_section_composer_agent",
+        lambda *_args, **_kwargs: object(),
+    )
+
+    def _fake_run_agent_sync(
+        _agent: object,
+        input_text: str,
+        log_llm_payload: bool,
+        **_kwargs: object,
+    ) -> _FakeRunResult:
+        del log_llm_payload
+        payload = json.loads(input_text)
+        if "evidence_catalog" in payload:
+            return _FakeRunResult(
+                WriterSectionPlan(
+                    sections=[
+                        WriterSectionSpec(
+                            section_id="charging_comparison",
+                            title="Charging Evidence Comparison",
+                            section_type="comparison",
+                            purpose="Compare charging evidence.",
+                            required_ref_ids=["ref_1", "ref_2"],
+                            city_names=["Munich", "Berlin"],
+                            writing_instructions="Cover both cities.",
+                        )
+                    ]
+                )
+            )
+        if "section" in payload:
+            return _FakeRunResult(
+                WriterOutput(
+                    content=(
+                        "## Charging Evidence Comparison\n\n"
+                        "Munich charging evidence. [ref_1]\n"
+                        "Berlin charging evidence. [ref_2]"
+                    )
+                )
+            )
+        if "section_drafts" in payload:
+            composer_payloads.append(payload)
+            if len(composer_payloads) == 1:
+                return _FakeRunResult(WriterOutput(content="Munich charging evidence. [ref_1]"))
+            return _FakeRunResult(
+                WriterOutput(
+                    content="Munich and Berlin charging evidence. [ref_1][ref_2]"
+                )
+            )
+        raise AssertionError(f"Unexpected payload: {payload}")
+
+    monkeypatch.setattr(writer_agent, "run_agent_sync", _fake_run_agent_sync)
+
+    output = writer_agent.write_markdown(
+        question="Compare charging infrastructure evidence.",
+        context_bundle=context_bundle,
+        config=config,
+        api_key="test-key",
+        log_llm_payload=False,
+        run_id="run-section-composer-retry",
+    )
+
+    assert len(composer_payloads) == 2
+    assert composer_payloads[1]["reconsideration"]["missing_cities"] == ["Berlin"]
+    assert output.citation_coverage is not None
+    assert output.citation_coverage.status == "confirmed"
+
+
+def test_writer_section_first_batches_oversized_section_payloads(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    config = build_test_app_config(
+        runs_dir=tmp_path / "output",
+        markdown_dir=tmp_path / "documents",
+        writer_overrides={
+            "section_first_aggregate_enabled": True,
+            "evidence_curator_enabled": False,
+            "section_max_workers": 1,
+            "multi_pass_chunk_tokens": 220,
+        },
+    )
+    context_bundle: dict[str, object] = {
+        "analysis_mode": "aggregate",
+        "markdown": {
+            "excerpt_count": 2,
+            "selected_city_names": ["Munich", "Berlin"],
+            "excerpts": [
+                {
+                    "ref_id": "ref_1",
+                    "city_name": "Munich",
+                    "quote": "Munich retrofit evidence. " * 90,
+                    "partial_answer": "Munich retrofit evidence. " * 90,
+                },
+                {
+                    "ref_id": "ref_2",
+                    "city_name": "Berlin",
+                    "quote": "Berlin retrofit evidence. " * 90,
+                    "partial_answer": "Berlin retrofit evidence. " * 90,
+                },
+            ],
+        },
+    }
+    section_selected_cities: list[list[str]] = []
+
+    monkeypatch.setattr(
+        writer_agent,
+        "build_writer_section_planner_agent",
+        lambda *_args, **_kwargs: object(),
+    )
+    monkeypatch.setattr(
+        writer_agent,
+        "build_writer_section_agent",
+        lambda *_args, **_kwargs: object(),
+    )
+    monkeypatch.setattr(
+        writer_agent,
+        "build_writer_section_composer_agent",
+        lambda *_args, **_kwargs: object(),
+    )
+
+    def _fake_run_agent_sync(
+        _agent: object,
+        input_text: str,
+        log_llm_payload: bool,
+        **_kwargs: object,
+    ) -> _FakeRunResult:
+        del log_llm_payload
+        payload = json.loads(input_text)
+        if "evidence_catalog" in payload:
+            return _FakeRunResult(
+                WriterSectionPlan(
+                    sections=[
+                        WriterSectionSpec(
+                            section_id="retrofit_comparison",
+                            title="Retrofit Evidence Comparison",
+                            section_type="comparison",
+                            purpose="Compare the assigned retrofit evidence.",
+                            required_ref_ids=["ref_1", "ref_2"],
+                            city_names=["Munich", "Berlin"],
+                            writing_instructions="Cover both cities.",
+                        )
+                    ]
+                )
+            )
+        if "section" in payload:
+            selected = list(payload["selected_cities"])
+            section_selected_cities.append(selected)
+            if selected == ["Munich"]:
+                return _FakeRunResult(WriterOutput(content="Munich retrofit evidence. [ref_1]"))
+            if selected == ["Berlin"]:
+                return _FakeRunResult(WriterOutput(content="Berlin retrofit evidence. [ref_2]"))
+            raise AssertionError(f"Unexpected section selected_cities: {selected}")
+        if "section_drafts" in payload:
+            return _FakeRunResult(
+                WriterOutput(content="Munich and Berlin retrofit evidence. [ref_1][ref_2]")
+            )
+        raise AssertionError(f"Unexpected payload: {payload}")
+
+    monkeypatch.setattr(writer_agent, "run_agent_sync", _fake_run_agent_sync)
+
+    output = writer_agent.write_markdown(
+        question="Compare retrofit evidence.",
+        context_bundle=context_bundle,
+        config=config,
+        api_key="test-key",
+        log_llm_payload=False,
+        run_id="run-section-batch",
+    )
+
+    assert section_selected_cities == [["Munich"], ["Berlin"]]
+    assert output.citation_coverage is not None
+    assert output.citation_coverage.status == "confirmed"
 
 
 def test_writer_uses_multi_pass_batches_and_combines_them(

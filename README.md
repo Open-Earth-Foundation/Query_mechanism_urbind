@@ -228,7 +228,18 @@ What each key controls:
 - `markdown_researcher.batch_max_input_tokens`: Optional explicit token budget per markdown researcher request batch.
 - `markdown_researcher.batch_overhead_tokens`: Reserved prompt/payload overhead used when adaptive markdown batch token budget is calculated.
 - `markdown_researcher.reasoning_effort`: Optional reasoning effort hint for Grok-compatible models (for example `none`, `low`, `medium`, `high`); avoid setting this for models/providers that do not support reasoning controls.
-- `writer.multi_pass_threshold_tokens`: token threshold where writer switches from one-shot writing to multi-pass batching over accepted evidence excerpts.
+- `writer.section_first_aggregate_enabled`: enables the aggregate writer path that plans question-specific sections, writes each section from scoped evidence, then composes the final answer.
+- `writer.section_planner_max_input_tokens`: token cap for the compact evidence catalog sent to the section planner.
+- `writer.section_max_workers`: max concurrent section-writer calls for section-first aggregate writing.
+- `writer.evidence_curator_enabled`: enables the optional writer research curator before planning/writing. When disabled, failed, or empty, the writer uses the current accepted-excerpt flow.
+- `writer.evidence_curator_max_turns`: max LLM turns for the curator.
+- `writer.evidence_curator_max_saved_items`: maximum saved evidence records converted into writer refs.
+- `writer.evidence_curator_max_regex_searches`: maximum regex searches over writer-visible context.
+- `writer.evidence_curator_max_matches_per_search`: maximum context hits returned by one curator regex search.
+- `writer.evidence_curator_default_context_words` / `writer.evidence_curator_max_context_words`: snippet window defaults and caps for curator search hit expansion.
+- `writer.evidence_curator_max_snippet_chars` / `writer.evidence_curator_max_pattern_chars`: hard caps for persisted snippets and regex patterns.
+- `writer.evidence_curator_use_source_chunks`: eagerly resolves accepted CCC `source_chunk_ids` into searchable writer context when possible.
+- `writer.multi_pass_threshold_tokens`: token threshold where non-section-first writer paths switch from one-shot writing to multi-pass batching over accepted evidence excerpts.
 - `writer.multi_pass_chunk_tokens`: target token cap per writer batch when multi-pass batching is used.
 
 How this influences runtime behavior:
@@ -443,7 +454,9 @@ What each stage does:
 - Context bundle is updated with extracted evidence for downstream writing.
 - Orchestrator hands the prepared context bundle directly to the writer.
 - Writer builds a writer-specific minimal bundle from the accepted markdown excerpts, selected-city metadata, and writer-visible enrichment artifacts before prompting the model; markdown audit fields and non-writer enrichment bookkeeping such as generic status or notes are not sent to the writer.
-- When the writer bundle exceeds `writer.multi_pass_threshold_tokens`, the writer splits accepted evidence into multiple batches, writes batch drafts, and then combines those drafts into one final answer. If a post-batching payload still exceeds the configured writer input budget, the run now fails explicitly instead of silently reverting to one-shot writing.
+- When enabled, the optional writer research curator searches that writer-safe context, saves useful evidence, and converts saved non-CCC records into run-local `[ref_n]` entries. The curator never writes final prose.
+- Aggregate writer runs with evidence use section-first writing: a planner receives a compact evidence catalog, creates question-specific analytical sections, section writers draft scoped sections, and a final composer merges them without adding new facts. The saved-evidence catalog is preferred when present; accepted excerpts remain the fallback baseline.
+- City-by-city writer runs keep the legacy writing path, optionally fed by the same curated evidence. When that path or an oversized section exceeds its token threshold, the writer splits accepted evidence into multiple batches, writes batch drafts, and then combines those drafts into one final answer. If a post-batching payload still exceeds the configured writer input budget, the run fails explicitly instead of silently reverting to one-shot writing.
 - Writer writes final output text to `output/<run_id>/final.md`. The response starts with an evidence preface (based on `excerpt_count`); when `excerpt_count=0`, it returns a "no evidence found" response.
 
 ## End-to-end batch queries
@@ -660,10 +673,10 @@ Core endpoints:
 - `POST /api/v1/runs`
 - `GET /api/v1/runs` (list discovered runs as `run_id` + `question` + `status` + `picker_timestamp`; returns successful runs by default, accepts `include_all=true` for dev/debug views that also include queued, running, failed, and stopped runs, and supports optional `search` across run ids, compact picker dates/times, question text, and selected city names, refreshed from `RUNS_DIR/*/run.json` artifact folders on each request, plus currently queued/running in-memory runs)
 - `GET /api/v1/runs/{run_id}/status`
-- `GET /api/v1/runs/{run_id}/diagnostics` (developer-focused run warnings, retry summaries, writer citation coverage, and run-local artifact labels without exposing host filesystem paths)
+- `GET /api/v1/runs/{run_id}/diagnostics` (developer-focused run warnings, retry summaries, writer saved-evidence, section-plan/citation diagnostics, and run-local artifact labels without exposing host filesystem paths)
 - `GET /api/v1/runs/{run_id}/output`
 - `GET /api/v1/runs/{run_id}/export/docx` (Word export of `final.md`; inline `[ref_n]` citation tags are omitted from the exported document)
-- `GET /api/v1/runs/{run_id}/export/writer-context` (developer-focused JSON download of the exact writer-safe context bundle, including the accepted excerpts used by the writer)
+- `GET /api/v1/runs/{run_id}/export/writer-context` (developer-focused JSON download of the exact writer-safe context bundle, including accepted excerpts and saved writer evidence used by the writer)
 - `GET /api/v1/runs/{run_id}/export/writer-context.md` (Markdown variant of the writer-safe context export)
 - `GET /api/v1/runs/{run_id}/context`
 - `GET /api/v1/runs/{run_id}/references` (canonical citation endpoint; supports optional query params `ref_id` and `include_quote`)
@@ -689,7 +702,8 @@ Core endpoints:
 {
   "question": "Build a report for selected cities",
   "cities": ["Munich", "Berlin"],
-  "analysis_mode": "aggregate"
+  "analysis_mode": "aggregate",
+  "writer_research_enabled": true
 }
 ```
 
@@ -697,6 +711,8 @@ Core endpoints:
 
 - `aggregate` (default): one integrated synthesis across selected cities.
 - `city_by_city`: one city section at a time with similarities/comparison at the end.
+
+`writer_research_enabled` is optional. Omit it to use `writer.evidence_curator_enabled` from config; set it to `false` for the current excerpt-only writer flow on a single run.
 
 Optional header for user-owned key (without backend default key):
 
@@ -960,6 +976,7 @@ Keep frontend and backend on the same host label locally: `localhost` with `loca
 
 Frontend supports three city scope modes in the build form: all cities, predefined group, and manual selection.
 Frontend also supports two answer modes: `Aggregate Mode` and `City-by-City Mode` (sent as `analysis_mode` in run requests).
+In dev mode, the build form exposes a `Writer research curator` toggle that sends `writer_research_enabled` for per-run opt-out testing.
 Clicking `Chat About the Answer` opens a dedicated chat workspace and keeps the generated writer document available in the left rail for cross-reference.
 When the rail is in `Writer Doc` mode on desktop, a drag handle between the rail and the main workspace lets users resize the document view without leaving chat.
 Document and chat citations render as compact city labels; clicking a label loads and shows only the source quote.
@@ -1091,11 +1108,15 @@ Optional repository variables:
 
 Artifacts are written under `output/<run_id>/`:
 
-- `run.json`: machine-readable run metadata (status, timestamps, artifacts, decisions), including `inputs.analysis_mode`, `artifacts.error_log` when available, and `writer_citation_coverage` when the writer confirms or partially misses city coverage.
-- `run.log`: detailed runtime logs, including per-agent `LLM_USAGE` lines, chat prompt-window diagnostics (`Context chat reply plan`, `Context chat direct request`, with fitted source ids and token-component counts), retry reason lines (`RETRY_EVENT`/`RETRY_EXHAUSTED` with plain-text fields such as `reason`, `http_status`, `rate_limited`, and markdown split lineage when applicable), and writer city-citation coverage checkpoints (`WRITER_CITATION_COVERAGE`, with `coverage_ratio` such as `33/33`).
+- `run.json`: machine-readable run metadata (status, timestamps, artifacts, decisions), including `inputs.analysis_mode`, `artifacts.error_log` when available, `writer_saved_evidence` when the optional curator runs, `writer_section_plan` for section-first aggregate runs, and `writer_citation_coverage` when the writer confirms or partially misses city coverage.
+- `run.log`: detailed runtime logs, including per-agent `LLM_USAGE` lines, chat prompt-window diagnostics (`Context chat reply plan`, `Context chat direct request`, with fitted source ids and token-component counts), retry reason lines (`RETRY_EVENT`/`RETRY_EXHAUSTED` with plain-text fields such as `reason`, `http_status`, `rate_limited`, and markdown split lineage when applicable), writer section-first checkpoints (`WRITER_SECTION_PLAN`), and writer city-citation coverage checkpoints (`WRITER_CITATION_COVERAGE`, with `coverage_ratio` such as `33/33`).
 - `error_log.txt`: extracted error-focused log view from `run.log` (`ERROR`, `CRITICAL`, and exhausted retry events).
 - `run_summary.txt`: human-readable consolidated report. Header includes `Started`, `Completed`, and explicit `Total runtime` in seconds, plus `LLM Usage` totals/per-agent. It also captures an input snapshot (`original question`, `query mode`, `retrieval query 1..3`, `selected cities` planned/found, markdown dir/file/chunk/excerpt counts) and a `MARKDOWN_FAILURE_SUMMARY` aggregated from batch failures.
-- `context_bundle.json`: payload passed between agents (`markdown`, `original_question`, `research_question`, `query_mode`, `retrieval_queries`, `analysis_mode`, final path). When enrichment runs, `enrichment.field_manifest` carries field classifications and non-estimable fields, while `enrichment.gap_manifest` carries only per-city gaps.
+- `writer/section_first.json`: section-first aggregate writer diagnostics when that path runs, including planner input size, sanitized sections, section refs, token counts, and draft lengths.
+- `writer/evidence_workspace.json`: optional writer research-curator diagnostics, including indexed source counts, search/save limits, tool calls, and missing-evidence records.
+- `writer/saved_evidence.json`: optional saved writer evidence, covered cities, source-kind counts, missing records, and curator status.
+- `writer/references.json`: writer-level citation records for saved evidence. Existing CCC excerpt refs are preserved; saved source chunks, external Markdown, web, assumption, and enrichment records receive new `ref_n` ids.
+- `context_bundle.json`: payload passed between agents (`markdown`, `original_question`, `research_question`, `query_mode`, `retrieval_queries`, `analysis_mode`, final path, and optional `writer_saved_evidence`). When enrichment runs, `enrichment.field_manifest` carries field classifications and non-estimable fields, while `enrichment.gap_manifest` carries only per-city gaps.
 - `research_question.json`: run query metadata payload. Includes:
   - `original_question`: raw user question.
   - `query_mode`: `standard` or `dev`.

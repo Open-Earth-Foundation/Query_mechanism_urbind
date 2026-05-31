@@ -356,6 +356,17 @@ class RunLogger:
             lines.append(
                 f"Writer multi-pass: {json.dumps(writer_multi_pass, ensure_ascii=False)}"
             )
+        writer_section_plan = self.run_log.get("writer_section_plan")
+        if writer_section_plan:
+            lines.append(
+                f"Writer section plan: {json.dumps(writer_section_plan, ensure_ascii=False)}"
+            )
+        writer_saved_evidence = self.run_log.get("writer_saved_evidence")
+        if writer_saved_evidence:
+            lines.append(
+                "Writer saved evidence: "
+                f"{json.dumps(writer_saved_evidence, ensure_ascii=False)}"
+            )
         lines.append("")
 
         lines.append("ARTIFACTS")
@@ -408,6 +419,18 @@ class RunLogger:
         """Persist writer multi-pass diagnostics for API consumers."""
         self.run_log["writer_multi_pass"] = payload
         self.write_run_log()
+
+    def record_writer_section_plan(self, payload: dict[str, Any]) -> None:
+        """Persist section-first writer diagnostics for API consumers."""
+        self.run_log["writer_section_plan"] = payload
+        self.write_run_log()
+
+    def record_writer_saved_evidence(self, payload: dict[str, Any]) -> None:
+        """Persist writer research-curator evidence diagnostics for API consumers."""
+        self.run_log["writer_saved_evidence"] = payload
+        self.context_bundle["writer_saved_evidence"] = payload
+        self.write_run_log()
+        self.write_context_bundle()
 
     def update_enrichment_bundle(self, enrichment_payload: dict[str, Any]) -> None:
         """Persist the enrichment context bundle section."""

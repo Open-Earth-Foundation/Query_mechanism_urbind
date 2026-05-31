@@ -55,17 +55,21 @@ def build_reference_item(record: dict[str, object], include_quote: bool) -> RunR
 def load_reference_records(artifact_dir: Path, source_id: str) -> list[dict[str, object]]:
     """Load reference records from persisted references or excerpt artifacts."""
     references_path = artifact_dir / "markdown" / "references.json"
+    writer_references_path = artifact_dir / "writer" / "references.json"
     if references_path.exists():
         payload = _load_json_object(references_path)
         if payload is not None:
             records = coerce_reference_records(payload.get("references"))
             if records:
-                return records
+                return _merge_reference_records(
+                    records,
+                    _load_reference_records_from_path(writer_references_path),
+                )
 
     excerpts_path = artifact_dir / "markdown" / "excerpts.json"
     payload = _load_json_object(excerpts_path)
     if payload is None:
-        return []
+        return _load_reference_records_from_path(writer_references_path)
     excerpt_records = coerce_reference_records(payload.get("excerpts"))
     if not excerpt_records:
         return []
@@ -73,7 +77,10 @@ def load_reference_records(artifact_dir: Path, source_id: str) -> list[dict[str,
         run_id=source_id,
         excerpts=excerpt_records,
     )
-    return coerce_reference_records(references_payload.get("references"))
+    return _merge_reference_records(
+        coerce_reference_records(references_payload.get("references")),
+        _load_reference_records_from_path(writer_references_path),
+    )
 
 
 def coerce_reference_records(value: object) -> list[dict[str, object]]:
@@ -95,6 +102,30 @@ def _load_json_object(path: Path) -> dict[str, object] | None:
     if isinstance(payload, dict):
         return payload
     return None
+
+
+def _load_reference_records_from_path(path: Path) -> list[dict[str, object]]:
+    """Load reference records from one optional references artifact."""
+    payload = _load_json_object(path)
+    if payload is None:
+        return []
+    return coerce_reference_records(payload.get("references"))
+
+
+def _merge_reference_records(
+    primary: list[dict[str, object]],
+    additional: list[dict[str, object]],
+) -> list[dict[str, object]]:
+    """Merge reference records while preserving the first record per ref id."""
+    records: list[dict[str, object]] = []
+    seen: set[str] = set()
+    for record in [*primary, *additional]:
+        ref_id = str(record.get("ref_id", "")).strip()
+        if not ref_id or ref_id in seen:
+            continue
+        seen.add(ref_id)
+        records.append(record)
+    return records
 
 
 __all__ = [

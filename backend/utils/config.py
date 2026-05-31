@@ -88,6 +88,19 @@ class WriterConfig(AgentConfig):
     max_coverage_attempts: int = 2
     multi_pass_threshold_tokens: int = 200_000
     multi_pass_chunk_tokens: int = 200_000
+    section_first_aggregate_enabled: bool = True
+    section_planner_max_input_tokens: int = 80_000
+    section_max_workers: int = 3
+    evidence_curator_enabled: bool = True
+    evidence_curator_max_turns: int = 6
+    evidence_curator_max_saved_items: int = 80
+    evidence_curator_max_regex_searches: int = 12
+    evidence_curator_max_matches_per_search: int = 100
+    evidence_curator_default_context_words: int = 80
+    evidence_curator_max_context_words: int = 250
+    evidence_curator_max_snippet_chars: int = 4000
+    evidence_curator_max_pattern_chars: int = 300
+    evidence_curator_use_source_chunks: bool = True
 
 
 class AssumptionsReviewerConfig(AgentConfig):
