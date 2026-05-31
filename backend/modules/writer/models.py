@@ -27,6 +27,26 @@ class WriterOutput(BaseModel):
     citation_coverage: WriterCitationCoverage | None = None
 
 
+class WriterSectionSpec(BaseModel):
+    """One question-specific section planned for aggregate writing."""
+
+    section_id: str
+    title: str
+    section_type: str
+    purpose: str
+    required_ref_ids: list[str] = Field(default_factory=list)
+    city_names: list[str] = Field(default_factory=list)
+    writing_instructions: str
+
+
+class WriterSectionPlan(BaseModel):
+    """Structured section-first plan emitted by the aggregate writer planner."""
+
+    strategy: Literal["section_first"] = "section_first"
+    analysis_mode: Literal["aggregate"] = "aggregate"
+    sections: list[WriterSectionSpec] = Field(default_factory=list)
+
+
 class WriterMultiPassBatch(BaseModel):
     """One writer batch emitted by the multi-pass fallback planner."""
 
@@ -54,4 +74,6 @@ __all__ = [
     "WriterMultiPassBatch",
     "WriterMultiPassPlan",
     "WriterOutput",
+    "WriterSectionPlan",
+    "WriterSectionSpec",
 ]

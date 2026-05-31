@@ -88,6 +88,9 @@ class WriterConfig(AgentConfig):
     max_coverage_attempts: int = 2
     multi_pass_threshold_tokens: int = 200_000
     multi_pass_chunk_tokens: int = 200_000
+    section_first_aggregate_enabled: bool = True
+    section_planner_max_input_tokens: int = 80_000
+    section_max_workers: int = 3
 
 
 class AssumptionsReviewerConfig(AgentConfig):

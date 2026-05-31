@@ -1265,6 +1265,27 @@ def test_api_run_diagnostics_returns_warning_and_error_artifacts(
             },
         ],
     }
+    run_payload["writer_section_plan"] = {
+        "strategy": "section_first",
+        "analysis_mode": "aggregate",
+        "planner_input_tokens": 2400,
+        "catalog_truncated": False,
+        "section_count": 1,
+        "sections": [
+            {
+                "section_id": "retrofit_investment",
+                "title": "Retrofit Investment Evidence",
+                "section_type": "numeric_analysis",
+                "purpose": "Compare retrofit investment evidence.",
+                "required_ref_ids": ["ref_1", "ref_2"],
+                "city_names": ["Aachen", "Amsterdam"],
+                "writing_instructions": "Compare the assigned evidence.",
+                "payload_tokens": 1800,
+                "draft_length_chars": 420,
+                "batch_count": 1,
+            }
+        ],
+    }
     paths.run_log.write_text(
         json.dumps(run_payload, ensure_ascii=True, indent=2),
         encoding="utf-8",
@@ -1318,6 +1339,11 @@ def test_api_run_diagnostics_returns_warning_and_error_artifacts(
             "Aachen",
             "Amsterdam",
         ]
+        assert payload["writer_section_plan"]["strategy"] == "section_first"
+        assert payload["writer_section_plan"]["section_count"] == 1
+        assert payload["writer_section_plan"]["sections"][0]["section_id"] == (
+            "retrofit_investment"
+        )
         assert payload["warning_entries"] == [
             (
                 '2026-01-01 00:00:00 worker.py:10 - WARNING - WRITER_CITATION_COVERAGE '

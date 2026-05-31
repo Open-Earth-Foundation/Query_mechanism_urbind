@@ -132,6 +132,32 @@ class RunWriterMultiPass(BaseModel):
     batches: list[RunWriterMultiPassBatch] = Field(default_factory=list)
 
 
+class RunWriterSectionPlanSection(BaseModel):
+    """One section-first writer diagnostic section."""
+
+    section_id: str
+    title: str
+    section_type: str
+    purpose: str
+    required_ref_ids: list[str] = Field(default_factory=list)
+    city_names: list[str] = Field(default_factory=list)
+    writing_instructions: str
+    payload_tokens: int | None = None
+    draft_length_chars: int | None = None
+    batch_count: int | None = None
+
+
+class RunWriterSectionPlan(BaseModel):
+    """Section-first writer diagnostics exposed to developer tooling."""
+
+    strategy: Literal["section_first"]
+    analysis_mode: str
+    planner_input_tokens: int
+    catalog_truncated: bool
+    section_count: int
+    sections: list[RunWriterSectionPlanSection] = Field(default_factory=list)
+
+
 class RunDiagnosticsResponse(BaseModel):
     """Response body for developer-facing run diagnostics."""
 
@@ -145,6 +171,7 @@ class RunDiagnosticsResponse(BaseModel):
     artifacts: RunDiagnosticsArtifactPaths
     writer_citation_coverage: RunWriterCitationCoverage | None = None
     writer_multi_pass: RunWriterMultiPass | None = None
+    writer_section_plan: RunWriterSectionPlan | None = None
     llm_usage: dict[str, object] | None = None
     retry_summary: dict[str, object] | None = None
     warning_entries: list[str] = Field(default_factory=list)
@@ -506,6 +533,8 @@ __all__ = [
     "RunWriterCitationCoverage",
     "RunWriterMultiPassBatch",
     "RunWriterMultiPass",
+    "RunWriterSectionPlan",
+    "RunWriterSectionPlanSection",
     "RunDiagnosticsResponse",
     "RunOutputResponse",
     "RunContextResponse",
