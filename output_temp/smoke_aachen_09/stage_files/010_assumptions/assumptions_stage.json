@@ -1,0 +1,47 @@
+{
+  "status": "completed",
+  "flags": {
+    "assumptions_enabled": true,
+    "assumptions_executed": true,
+    "assumptions_model": "openai/gpt-5.4-mini"
+  },
+  "outputs": {
+    "assumptions": [],
+    "non_estimable": [
+      {
+        "city": "Aachen",
+        "field_name": "municipal_rooftop_pv_capacity_target",
+        "gap_description": "Insufficient peer anchors for municipal_rooftop_pv_capacity_target",
+        "status": "NON_ESTIMABLE",
+        "explanation": "Only 0 peer value(s) available; minimum 2 needed for Method B, 3 for Method C, or at least 1 authoritative CCC-sourced anchor with confidence >= 0.8.",
+        "recommendation": "Search for operator fleet registries or municipal procurement records to establish additional anchors."
+      },
+      {
+        "city": "Aachen",
+        "field_name": "private_rooftop_pv_capacity_target",
+        "gap_description": "Insufficient peer anchors for private_rooftop_pv_capacity_target",
+        "status": "NON_ESTIMABLE",
+        "explanation": "Only 0 peer value(s) available; minimum 2 needed for Method B, 3 for Method C, or at least 1 authoritative CCC-sourced anchor with confidence >= 0.8.",
+        "recommendation": "Search for operator fleet registries or municipal procurement records to establish additional anchors."
+      }
+    ],
+    "saturation_warning": null,
+    "added_city_fields": [],
+    "non_estimable_city_fields": [
+      {
+        "city": "Aachen",
+        "field": "municipal_rooftop_pv_capacity_target"
+      },
+      {
+        "city": "Aachen",
+        "field": "private_rooftop_pv_capacity_target"
+      }
+    ]
+  },
+  "metrics": {
+    "assumption_count": 0,
+    "non_estimable_output_count": 2,
+    "added_city_field_count": 0,
+    "non_estimable_city_field_count": 2
+  }
+}

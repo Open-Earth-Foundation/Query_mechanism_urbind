@@ -1,0 +1,14 @@
+{
+  "city_gaps": [
+    {
+      "city": "Aachen",
+      "blank_fields": [],
+      "stale_flags": [
+        "municipal_rooftop_pv_capacity_target",
+        "private_rooftop_pv_capacity_target"
+      ],
+      "bundled_fields": [],
+      "search_priority": "medium"
+    }
+  ]
+}

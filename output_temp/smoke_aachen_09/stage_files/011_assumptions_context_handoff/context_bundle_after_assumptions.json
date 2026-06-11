@@ -1,0 +1,450 @@
+{
+  "markdown": {
+    "status": "success",
+    "excerpts": [
+      {
+        "quote": "Photovoltaic systems will be mandatory for new buildings in future Where possible, rooftop PV is realised in combination with green roofs The PV potential on roofs and open spaces is maximised as much as possible ... Solar on all suitable roof surfaces",
+        "city_name": "aachen",
+        "partial_answer": "Aachen plans to require photovoltaic systems on new buildings, combine rooftop PV with green roofs where possible, and use all suitable roof surfaces for solar.",
+        "source_chunk_ids": [
+          "chunk_b710a602c42b29d5d1912a93"
+        ],
+        "ref_id": "ref_1",
+        "city_key": "aachen"
+      },
+      {
+        "quote": "The City of Aachen is already actively involved in the expansion of renewable electricity generation through wind power as well as ground-mounted and rooftop PV. As part of the determination of energy-related refurbishment requirements, suitable roof areas for PV expansion have already been identified and prioritised for municipal properties in order to increase the proportion of self-generated renewable electricity in the future.",
+        "city_name": "aachen",
+        "partial_answer": "Aachen has already identified and prioritised suitable roof areas on municipal properties for PV expansion to increase self-generated renewable electricity.",
+        "source_chunk_ids": [
+          "chunk_29242ed469b33c96c85add57"
+        ],
+        "ref_id": "ref_2",
+        "city_key": "aachen"
+      },
+      {
+        "quote": "With the help of advisory services, building owners are to be supported in the realisation of PV systems on roof surfaces.",
+        "city_name": "aachen",
+        "partial_answer": "Aachen supports building owners with advice to help them install PV systems on roof surfaces.",
+        "source_chunk_ids": [
+          "chunk_75bd73cb29f7901e078845ca"
+        ],
+        "ref_id": "ref_3",
+        "city_key": "aachen"
+      },
+      {
+        "quote": "In addition, the topic of sustainable construction ... for example by generating solar power using photovoltaics on the building roofs.",
+        "city_name": "aachen",
+        "partial_answer": "Aachen treats rooftop photovoltaics as a way to generate solar power on building roofs in new, more energy-positive buildings.",
+        "source_chunk_ids": [
+          "chunk_499a4a91adff634ee1e0a028"
+        ],
+        "ref_id": "ref_4",
+        "city_key": "aachen"
+      },
+      {
+        "quote": "As part of the determination of energy-related refurbishment requirements, suitable roof areas for PV expansion have already been identified and prioritised for municipal properties in order to increase the proportion of self-generated renewable electricity in the future.",
+        "city_name": "aachen",
+        "partial_answer": "Aachen has identified and prioritised suitable roof areas on municipal properties for PV expansion to increase self-generated renewable electricity.",
+        "source_chunk_ids": [
+          "chunk_498057cc1a9c46ee15977a80"
+        ],
+        "ref_id": "ref_5",
+        "city_key": "aachen"
+      },
+      {
+        "quote": "The electricity should be sourced entirely from renewable energy sources, ideally in part from the city's own rooftop photovoltaic systems.",
+        "city_name": "aachen",
+        "partial_answer": "Aachen aims to source electricity entirely from renewable energy sources, ideally including the city’s own rooftop photovoltaic systems.",
+        "source_chunk_ids": [
+          "chunk_498057cc1a9c46ee15977a80"
+        ],
+        "ref_id": "ref_6",
+        "city_key": "aachen"
+      },
+      {
+        "quote": "With the help of advisory services, building owners are to be supported in the realisation of PV systems on roof surfaces.",
+        "city_name": "aachen",
+        "partial_answer": "Aachen supports building owners with advisory services to help them install PV systems on roof surfaces.",
+        "source_chunk_ids": [
+          "chunk_5eddeaa4574df9e6e95222a2"
+        ],
+        "ref_id": "ref_7",
+        "city_key": "aachen"
+      },
+      {
+        "quote": "In order to promote the expansion of PV systems on roof surfaces, an activation campaign should be designed and implemented in addition to the funding.",
+        "city_name": "aachen",
+        "partial_answer": "Aachen runs funding and an activation campaign to promote more PV systems on roof surfaces.",
+        "source_chunk_ids": [
+          "chunk_5eddeaa4574df9e6e95222a2"
+        ],
+        "ref_id": "ref_8",
+        "city_key": "aachen"
+      },
+      {
+        "quote": "By May 2023, almost 1,600 solar installations had been subsidised since the start of the funding programme in September 2020, with a funding volume of €1.6 million in 2023 alone.",
+        "city_name": "aachen",
+        "partial_answer": "Aachen's solar funding programme had subsidised almost 1,600 solar installations by May 2023.",
+        "source_chunk_ids": [
+          "chunk_5eddeaa4574df9e6e95222a2"
+        ],
+        "ref_id": "ref_9",
+        "city_key": "aachen"
+      },
+      {
+        "quote": "This applies not only to rooftop PV but also to the installation of heat pumps.",
+        "city_name": "aachen",
+        "partial_answer": "In Aachen's historic centre of Kornelimünster, rooftop PV is subject to heritage approval requirements.",
+        "source_chunk_ids": [
+          "chunk_63631e88427e3d4e375a31ef"
+        ],
+        "ref_id": "ref_10",
+        "city_key": "aachen"
+      },
+      {
+        "quote": "The city of Aachen has a solar roof register and identified enormous potential for solar installations.",
+        "city_name": "aachen",
+        "partial_answer": "Aachen created a solar roof register and identified significant potential for solar installations.",
+        "source_chunk_ids": [
+          "chunk_fbbf4f0cef06a37c9a6330e1"
+        ],
+        "ref_id": "ref_11",
+        "city_key": "aachen"
+      },
+      {
+        "quote": "PV systems are to be installed with immediate effect in all new municipal buildings and major renovations (especially roof refurbishments).",
+        "city_name": "aachen",
+        "partial_answer": "Aachen requires PV systems in new municipal buildings and major renovations, especially roof refurbishments.",
+        "source_chunk_ids": [
+          "chunk_1d45d2dcb04e5134f047c9aa"
+        ],
+        "ref_id": "ref_12",
+        "city_key": "aachen"
+      },
+      {
+        "quote": "The use of renewable heat (versus district heating connection) and renewable electricity (installation of PV systems) will also be examined.",
+        "city_name": "aachen",
+        "partial_answer": "Aachen examines the use of PV systems when refurbishing its municipal housing stock.",
+        "source_chunk_ids": [
+          "chunk_346c5d37ee1de016c494f0ac"
+        ],
+        "ref_id": "ref_13",
+        "city_key": "aachen"
+      }
+    ],
+    "accepted_chunk_ids": [
+      "chunk_b710a602c42b29d5d1912a93",
+      "chunk_29242ed469b33c96c85add57",
+      "chunk_75bd73cb29f7901e078845ca",
+      "chunk_499a4a91adff634ee1e0a028",
+      "chunk_498057cc1a9c46ee15977a80",
+      "chunk_5eddeaa4574df9e6e95222a2",
+      "chunk_63631e88427e3d4e375a31ef",
+      "chunk_fbbf4f0cef06a37c9a6330e1",
+      "chunk_1d45d2dcb04e5134f047c9aa",
+      "chunk_346c5d37ee1de016c494f0ac"
+    ],
+    "rejected_chunk_ids": [
+      "chunk_e13993d7953c04e11678a5ae",
+      "chunk_62724effd7a43a54d6ca4f19",
+      "chunk_666a0c26cfe9cd23ab7adcbc",
+      "chunk_2b9518735c4457b306f2ef0c",
+      "chunk_16d12b5518efdf9dc4027a59",
+      "chunk_6397e208f88fb13177ad8b0b",
+      "chunk_5e98454c4bc8137ca17a3c10",
+      "chunk_821adb9a3559774ea1b5e60b",
+      "chunk_dc46c165022e30a44f5e2523",
+      "chunk_3dddb45b9e5f22c0bf1c9583",
+      "chunk_0d6a296a5ea0b52ef6d21ac1",
+      "chunk_56b34ef7170f4eaabee5c431",
+      "chunk_e8d5393a95684dace01ed52c",
+      "chunk_3f2bebf8ed73a0ad0542ffa9",
+      "chunk_3abd305013eec9377a9d09d1",
+      "chunk_9374fc6b27dcc2fb7b120f4c",
+      "chunk_f985cf839d136db9d6e30a6a",
+      "chunk_e01e263011e6c395ae4154be",
+      "chunk_730b022bf83db74b02864a8e",
+      "chunk_391550b6e45f53dce2a6d208",
+      "chunk_f5f9fc0ec2108cbce1f31d08",
+      "chunk_f996f0f5cd44b8a994cd7fce",
+      "chunk_abb97f05d51f016c10f2adf2",
+      "chunk_712391b18a64f0d719bbc3bc",
+      "chunk_b95eafaeb62158f094416303",
+      "chunk_12c844ca5c1fc9c15a3dca01",
+      "chunk_693da2dcf2969473a9010805",
+      "chunk_d6cd8ebb38cce53f49218fee",
+      "chunk_5a1fa562b765d096419f0521",
+      "chunk_73734d1f294d4e5ccd2a69fe",
+      "chunk_9b305def230880f09c85e098",
+      "chunk_cd599077e3ed1f0694acfe51",
+      "chunk_c9d7001860ff26ffeb3bd185",
+      "chunk_ee0b9471bcda32b55efd12f7",
+      "chunk_2d8f13a7f0cdccc1885e648c",
+      "chunk_61857d6e32ce8180a2670756",
+      "chunk_4f9993a79e6e6bec3c419868",
+      "chunk_2a2303574caadb8b4080c4dc",
+      "chunk_35a7661106baf746b115f6f2",
+      "chunk_b42c996817c850e678705532",
+      "chunk_64de4f5db63848d52982775a",
+      "chunk_e3e9eb599147a8b579fd89b7",
+      "chunk_e1597a6f597ce1305f7211c4",
+      "chunk_4e6a381a4077618709b3fb73",
+      "chunk_62091c77a1eadf1e2bc2bd5c",
+      "chunk_6888adb3beafde532984f006",
+      "chunk_9628d7aa6eff550dccf099b2",
+      "chunk_d5ef63197834f0153c2c3fb5",
+      "chunk_711a89342c7d2e05c330ca1d",
+      "chunk_fb0a6fba4d5564474cb49220",
+      "chunk_71de607a2dea767da35ce400",
+      "chunk_206dee6a06110534da577918",
+      "chunk_6ddbca89cd89969b4ad49580"
+    ],
+    "unresolved_chunk_ids": [],
+    "batch_failures": [],
+    "error": null,
+    "decision_audit": {
+      "accepted_total": 10,
+      "rejected_total": 53,
+      "unresolved_total": 0,
+      "invariant_ok": true,
+      "status": "complete"
+    },
+    "excerpt_count": 13
+  },
+  "original_question": "What does Aachen do for rooftop solar?",
+  "research_question": "What does Aachen do for rooftop solar?",
+  "query_mode": "standard",
+  "retrieval_queries": [
+    "What does Aachen do for rooftop solar?"
+  ],
+  "city_scope_mode": "selected_cities",
+  "selected_cities": [
+    "aachen"
+  ],
+  "selected_city_names": [
+    "Aachen"
+  ],
+  "inspected_cities": [
+    "aachen"
+  ],
+  "inspected_city_names": [
+    "Aachen"
+  ],
+  "final": null,
+  "analysis_mode": "aggregate",
+  "enrichment": {
+    "field_manifest": {
+      "query_fields": [
+        {
+          "field": "municipal_rooftop_pv_capacity_target",
+          "classification": "estimable_numerical",
+          "searchable": true,
+          "rationale": "A concrete MW/kW target for PV on city-owned roofs can be estimated from peer-city plans or municipal targets.",
+          "scope": "municipal"
+        },
+        {
+          "field": "private_rooftop_pv_capacity_target",
+          "classification": "estimable_numerical",
+          "searchable": true,
+          "rationale": "A rooftop PV deployment target for private buildings is a numeric quantity that can be estimated from comparable city policies.",
+          "scope": "private"
+        },
+        {
+          "field": "solar_requirement_new_buildings",
+          "classification": "non_estimable",
+          "searchable": true,
+          "rationale": "Whether Aachen mandates solar on new buildings is a legal/policy detail that is city-specific rather than a generic numeric quantity.",
+          "scope": "private"
+        },
+        {
+          "field": "solar_requirement_major_renovations",
+          "classification": "non_estimable",
+          "searchable": true,
+          "rationale": "Whether solar is required on major roof renovations depends on the exact local legal text and exemptions, not a peer-derived proxy.",
+          "scope": "private"
+        },
+        {
+          "field": "rooftop_solar_subsidy_program",
+          "classification": "non_estimable",
+          "searchable": true,
+          "rationale": "The existence and design of a city subsidy or grant program is qualitative and city-specific.",
+          "scope": "municipal"
+        },
+        {
+          "field": "rooftop_solar_advisory_program",
+          "classification": "non_estimable",
+          "searchable": true,
+          "rationale": "City-run advice, outreach, or technical support programs are policy descriptions rather than estimable quantities.",
+          "scope": "municipal"
+        },
+        {
+          "field": "rooftop_solar_permitting_streamlining",
+          "classification": "non_estimable",
+          "searchable": true,
+          "rationale": "Permit-process changes, expedited review, or administrative simplification are procedural and legally specific, not numerical.",
+          "scope": "private"
+        }
+      ],
+      "non_estimable_fields": [
+        "solar_requirement_new_buildings",
+        "solar_requirement_major_renovations",
+        "rooftop_solar_subsidy_program",
+        "rooftop_solar_advisory_program",
+        "rooftop_solar_permitting_streamlining"
+      ]
+    },
+    "gap_manifest": {
+      "city_gaps": [
+        {
+          "city": "Aachen",
+          "blank_fields": [],
+          "stale_flags": [
+            "municipal_rooftop_pv_capacity_target",
+            "private_rooftop_pv_capacity_target"
+          ],
+          "bundled_fields": [],
+          "search_priority": "medium"
+        }
+      ]
+    },
+    "enriched_fields": [
+      {
+        "city": "Aachen",
+        "field": "municipal_rooftop_pv_capacity_target",
+        "status": "partially_resolved",
+        "value": "PV-Anlagen auf kommunalen Gebäuden",
+        "source": "external_markdown",
+        "source_id": null,
+        "source_tier": null,
+        "provenance": {
+          "external_resolution_action": "conflict_review_required",
+          "source_id": "klimastadtvertrag-action-plan",
+          "line_start": 1462,
+          "line_end": 1482,
+          "quote": "|   |   |   |   |  BH 04 | Abwärmenutzung | x | x  |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  BH 05 | Wärmeplanung | x | x  |   |   |   |   |   |   |   |   |   |\n|   |  Gebäude (städtische, private, industrielle, Wohn- und Nichtwohngebäuden) |   |   | BH 06 | Energieeffekte Sanierung von städtischen Wohngebäuden | x | x  |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  BH 07 | Energieeffekte Sanierung von städtelichen Wohngebäuden | x | x  |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  BH 08 | Energieeffekte Sanierung von privaten Wohngebäuden | x | x  |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  BH 09 | Sanierungs-Modellgebiet: Östliche Innenstadt | x | x  |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  BH 10 | Energieenergien mit Gebäuden | x | x  |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  BH 11 | Klimaneutrale Neubauten | x | x  |   |   |   |   |   |   |   |   |   |\n|  BH 12 |   | Energie in Borgenland - Energiegewässerschaft | x | x  |   |   |   |   |   |   |   |   |   |   |   |   |\n|  Gesamt Gebäude & Wärme |   | 613 | 38,9 |  |   |   |   | 548 | -89 % | 111,51 | 7,1 | 438,50 | 92,9 | 65 | 20,8 | 4,1  |\n|  Stromversorgung | PV | 644 | 40,8 | EE 01 | PV-Anlagen auf kommunalen Gebäuden zur Stromergebnisersendung | x | x | 515 | -80 % | 201,48 | 12,8 | 313,52 | 83,2 | 129 | 41,2 | 8,2  |\n|   |   |   |   |  EE 02 | Austaus Solarenergienutzung, Einrichtung Fördereprogramm | x | x  |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  EE 03 | PV-Preiflichtenerlagen | x | x  |   |   |   |   |   |   |   |   |   |\n|   |  Windkraft | 63,94 | Einkaufbare Anteil aus Windenergie sichern und ausbauen | x | x |  |  |  |  |  |  |  |  |  |   |   |\n|  Gesamt Stromversorgung |   | 644 | 40,8 |  |   |   |   | 515 | -80 % | 201,48 | 12,8 | 313,52 | 83,2 | 129 | 41,2 | 8,2  |\n|  Verkehr | öffentlicher Verkehr | 276 | 17,5 | TA 01 | Beschäftigungsbestellung 6 Busse der ASEAG | x |  | 10 | -62 % | 20,76 | 1,3 | 149,24 | 98,7 | 106 | 33,9 | 6,8  |\n|   |   |   |   |  TA 02 | Beschäftigung von SE 0, und Wasserstoffbusse | x |   |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  TA 03 | Schaltung \"starter Kohlen\" im Busverkehr | x |   |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  TA 04 | 30 % Mehrkühlung der ASEAG | x |   |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  TA 05 | Wetter Ausbau: Schraffausangebote | x |   |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  TA 06 | Regal/Train (Städte/Stahl)-Aachen-Baaseeber) | x |   |   |   |   |   |   |   |   |   |   |",
+          "confidence": 0.72,
+          "rationale": "The saved table row explicitly identifies Aachen's municipal PV-on-buildings measure. It does not state a standalone capacity figure, but it is the closest governed external evidence for the municipal rooftop PV target.",
+          "ccc_value": null
+        },
+        "freshness_flag": "conflict_review_required",
+        "scope": "municipal"
+      },
+      {
+        "city": "Aachen",
+        "field": "private_rooftop_pv_capacity_target",
+        "status": "partially_resolved",
+        "value": null,
+        "source": "ccc",
+        "source_id": null,
+        "source_tier": null,
+        "provenance": {},
+        "freshness_flag": "stale_no_update",
+        "scope": "private"
+      }
+    ],
+    "web_findings": [],
+    "external_evidence": [
+      {
+        "city": "Aachen",
+        "field": "municipal_rooftop_pv_capacity_target",
+        "value": "PV-Anlagen auf kommunalen Gebäuden",
+        "unit": null,
+        "source_id": "klimastadtvertrag-action-plan",
+        "source_type": "city_cap",
+        "publication_year": 2024,
+        "line_start": 1462,
+        "line_end": 1482,
+        "quote": "|   |   |   |   |  BH 04 | Abwärmenutzung | x | x  |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  BH 05 | Wärmeplanung | x | x  |   |   |   |   |   |   |   |   |   |\n|   |  Gebäude (städtische, private, industrielle, Wohn- und Nichtwohngebäuden) |   |   | BH 06 | Energieeffekte Sanierung von städtischen Wohngebäuden | x | x  |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  BH 07 | Energieeffekte Sanierung von städtelichen Wohngebäuden | x | x  |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  BH 08 | Energieeffekte Sanierung von privaten Wohngebäuden | x | x  |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  BH 09 | Sanierungs-Modellgebiet: Östliche Innenstadt | x | x  |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  BH 10 | Energieenergien mit Gebäuden | x | x  |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  BH 11 | Klimaneutrale Neubauten | x | x  |   |   |   |   |   |   |   |   |   |\n|  BH 12 |   | Energie in Borgenland - Energiegewässerschaft | x | x  |   |   |   |   |   |   |   |   |   |   |   |   |\n|  Gesamt Gebäude & Wärme |   | 613 | 38,9 |  |   |   |   | 548 | -89 % | 111,51 | 7,1 | 438,50 | 92,9 | 65 | 20,8 | 4,1  |\n|  Stromversorgung | PV | 644 | 40,8 | EE 01 | PV-Anlagen auf kommunalen Gebäuden zur Stromergebnisersendung | x | x | 515 | -80 % | 201,48 | 12,8 | 313,52 | 83,2 | 129 | 41,2 | 8,2  |\n|   |   |   |   |  EE 02 | Austaus Solarenergienutzung, Einrichtung Fördereprogramm | x | x  |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  EE 03 | PV-Preiflichtenerlagen | x | x  |   |   |   |   |   |   |   |   |   |\n|   |  Windkraft | 63,94 | Einkaufbare Anteil aus Windenergie sichern und ausbauen | x | x |  |  |  |  |  |  |  |  |  |   |   |\n|  Gesamt Stromversorgung |   | 644 | 40,8 |  |   |   |   | 515 | -80 % | 201,48 | 12,8 | 313,52 | 83,2 | 129 | 41,2 | 8,2  |\n|  Verkehr | öffentlicher Verkehr | 276 | 17,5 | TA 01 | Beschäftigungsbestellung 6 Busse der ASEAG | x |  | 10 | -62 % | 20,76 | 1,3 | 149,24 | 98,7 | 106 | 33,9 | 6,8  |\n|   |   |   |   |  TA 02 | Beschäftigung von SE 0, und Wasserstoffbusse | x |   |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  TA 03 | Schaltung \"starter Kohlen\" im Busverkehr | x |   |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  TA 04 | 30 % Mehrkühlung der ASEAG | x |   |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  TA 05 | Wetter Ausbau: Schraffausangebote | x |   |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  TA 06 | Regal/Train (Städte/Stahl)-Aachen-Baaseeber) | x |   |   |   |   |   |   |   |   |   |   |",
+        "confidence": 0.72,
+        "claim_role": "fills_missing",
+        "candidate_id": "e1",
+        "source_url": null,
+        "rationale": "The saved table row explicitly identifies Aachen's municipal PV-on-buildings measure. It does not state a standalone capacity figure, but it is the closest governed external evidence for the municipal rooftop PV target."
+      }
+    ],
+    "external_resolutions": [
+      {
+        "city": "Aachen",
+        "field": "municipal_rooftop_pv_capacity_target",
+        "action": "conflict_review_required",
+        "ccc_value": null,
+        "external_value": "PV-Anlagen auf kommunalen Gebäuden",
+        "unit": null,
+        "source_id": "klimastadtvertrag-action-plan",
+        "line_start": 1462,
+        "line_end": 1482,
+        "quote": "|   |   |   |   |  BH 04 | Abwärmenutzung | x | x  |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  BH 05 | Wärmeplanung | x | x  |   |   |   |   |   |   |   |   |   |\n|   |  Gebäude (städtische, private, industrielle, Wohn- und Nichtwohngebäuden) |   |   | BH 06 | Energieeffekte Sanierung von städtischen Wohngebäuden | x | x  |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  BH 07 | Energieeffekte Sanierung von städtelichen Wohngebäuden | x | x  |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  BH 08 | Energieeffekte Sanierung von privaten Wohngebäuden | x | x  |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  BH 09 | Sanierungs-Modellgebiet: Östliche Innenstadt | x | x  |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  BH 10 | Energieenergien mit Gebäuden | x | x  |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  BH 11 | Klimaneutrale Neubauten | x | x  |   |   |   |   |   |   |   |   |   |\n|  BH 12 |   | Energie in Borgenland - Energiegewässerschaft | x | x  |   |   |   |   |   |   |   |   |   |   |   |   |\n|  Gesamt Gebäude & Wärme |   | 613 | 38,9 |  |   |   |   | 548 | -89 % | 111,51 | 7,1 | 438,50 | 92,9 | 65 | 20,8 | 4,1  |\n|  Stromversorgung | PV | 644 | 40,8 | EE 01 | PV-Anlagen auf kommunalen Gebäuden zur Stromergebnisersendung | x | x | 515 | -80 % | 201,48 | 12,8 | 313,52 | 83,2 | 129 | 41,2 | 8,2  |\n|   |   |   |   |  EE 02 | Austaus Solarenergienutzung, Einrichtung Fördereprogramm | x | x  |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  EE 03 | PV-Preiflichtenerlagen | x | x  |   |   |   |   |   |   |   |   |   |\n|   |  Windkraft | 63,94 | Einkaufbare Anteil aus Windenergie sichern und ausbauen | x | x |  |  |  |  |  |  |  |  |  |   |   |\n|  Gesamt Stromversorgung |   | 644 | 40,8 |  |   |   |   | 515 | -80 % | 201,48 | 12,8 | 313,52 | 83,2 | 129 | 41,2 | 8,2  |\n|  Verkehr | öffentlicher Verkehr | 276 | 17,5 | TA 01 | Beschäftigungsbestellung 6 Busse der ASEAG | x |  | 10 | -62 % | 20,76 | 1,3 | 149,24 | 98,7 | 106 | 33,9 | 6,8  |\n|   |   |   |   |  TA 02 | Beschäftigung von SE 0, und Wasserstoffbusse | x |   |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  TA 03 | Schaltung \"starter Kohlen\" im Busverkehr | x |   |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  TA 04 | 30 % Mehrkühlung der ASEAG | x |   |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  TA 05 | Wetter Ausbau: Schraffausangebote | x |   |   |   |   |   |   |   |   |   |   |\n|   |   |   |   |  TA 06 | Regal/Train (Städte/Stahl)-Aachen-Baaseeber) | x |   |   |   |   |   |   |   |   |   |   |",
+        "confidence": 0.72,
+        "rationale": "The saved table row explicitly identifies Aachen's municipal PV-on-buildings measure. It does not state a standalone capacity figure, but it is the closest governed external evidence for the municipal rooftop PV target."
+      },
+      {
+        "city": "Aachen",
+        "field": "private_rooftop_pv_capacity_target",
+        "action": "unresolved",
+        "ccc_value": null,
+        "external_value": null,
+        "unit": null,
+        "source_id": null,
+        "line_start": null,
+        "line_end": null,
+        "quote": null,
+        "confidence": null,
+        "rationale": "Tagged external sources were searched, but no usable evidence was found for this city-field gap."
+      }
+    ],
+    "external_no_evidence": [
+      {
+        "record_id": "n1",
+        "city": "Aachen",
+        "field": "private_rooftop_pv_capacity_target",
+        "searched_source_ids": [
+          "klimastadtvertrag-action-plan"
+        ],
+        "search_summary": "Searched Aachen Climate City Contract action plan for private rooftop PV / Dachflächen / PV capacity terms. Found qualitative actions such as 'PV auf Dachflächen von kommunalen, gewerblichen und privaten Gebäuden' and 'PV-Anlagen auf allen geeigneten Dachflächen', but no concrete capacity target (MWp/kWp/GWp) for private rooftop PV."
+      }
+    ],
+    "freshness_results": [],
+    "meta": {
+      "created_at": "2026-06-11T12:06:57.135300Z",
+      "gap_analyst_model": "openai/gpt-5.4-mini",
+      "total_gaps": 2,
+      "estimable_count": 0,
+      "non_estimable_count": 0,
+      "classified_non_estimable_field_count": 5,
+      "non_estimable_output_count": 0,
+      "web_findings_count": 0,
+      "external_evidence_count": 1,
+      "elapsed_seconds": 198.0309999999954
+    }
+  },
+  "assumptions": {
+    "assumptions": [],
+    "non_estimable": [
+      {
+        "city": "Aachen",
+        "field_name": "municipal_rooftop_pv_capacity_target",
+        "gap_description": "Insufficient peer anchors for municipal_rooftop_pv_capacity_target",
+        "status": "NON_ESTIMABLE",
+        "explanation": "Only 0 peer value(s) available; minimum 2 needed for Method B, 3 for Method C, or at least 1 authoritative CCC-sourced anchor with confidence >= 0.8.",
+        "recommendation": "Search for operator fleet registries or municipal procurement records to establish additional anchors."
+      },
+      {
+        "city": "Aachen",
+        "field_name": "private_rooftop_pv_capacity_target",
+        "gap_description": "Insufficient peer anchors for private_rooftop_pv_capacity_target",
+        "status": "NON_ESTIMABLE",
+        "explanation": "Only 0 peer value(s) available; minimum 2 needed for Method B, 3 for Method C, or at least 1 authoritative CCC-sourced anchor with confidence >= 0.8.",
+        "recommendation": "Search for operator fleet registries or municipal procurement records to establish additional anchors."
+      }
+    ],
+    "saturation_warning": null,
+    "meta": {
+      "created_at": "2026-06-11T12:06:57.474112+00:00",
+      "assumptions_estimator_model": "openai/gpt-5.4-mini",
+      "assumption_count": 0,
+      "non_estimable_output_count": 2,
+      "elapsed_seconds": 198.35899999999674
+    }
+  }
+}

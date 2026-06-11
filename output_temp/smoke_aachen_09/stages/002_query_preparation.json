@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "event_index": 2,
+  "event_type": "stage_completed",
+  "run_id": "smoke_aachen_09",
+  "step_name": "query_preparation",
+  "created_at": "2026-06-11T12:02:23.715340+00:00",
+  "inputs": {
+    "original_question": "What does Aachen do for rooftop solar?",
+    "query_mode": "standard"
+  },
+  "outputs": {
+    "canonical_research_query": "What does Aachen do for rooftop solar?",
+    "retrieval_queries": [
+      "What does Aachen do for rooftop solar?"
+    ]
+  },
+  "metrics": {
+    "retrieval_query_count": 1
+  },
+  "stage_number": 2
+}

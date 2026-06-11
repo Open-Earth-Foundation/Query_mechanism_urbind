@@ -1,0 +1,28 @@
+{
+  "status": "skipped",
+  "skip_reason": "disabled_or_no_gaps",
+  "flags": {
+    "web_research_enabled": false,
+    "web_research_executed": false,
+    "freshness_check_executed": false
+  },
+  "outputs": {
+    "search_batches": [],
+    "web_findings": [],
+    "freshness_results": [],
+    "national_findings": [],
+    "comparative_findings": [],
+    "added_city_fields": [],
+    "freshness_touched_city_fields": []
+  },
+  "metrics": {
+    "search_batch_count": 0,
+    "search_query_count": 0,
+    "web_finding_count": 0,
+    "freshness_result_count": 0,
+    "national_finding_count": 0,
+    "comparative_finding_count": 0,
+    "added_city_field_count": 0,
+    "freshness_touched_city_field_count": 0
+  }
+}

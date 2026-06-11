@@ -1,0 +1,403 @@
+{
+  "batch_max_chunks": 32,
+  "batch_max_input_tokens": 26200,
+  "cities": [
+    "aachen"
+  ],
+  "batches": [
+    {
+      "city_name": "aachen",
+      "batch_index": 1,
+      "chunk_count": 32,
+      "estimated_tokens": 19599,
+      "chunks": [
+        {
+          "chunk_id": "chunk_d6cd8ebb38cce53f49218fee",
+          "path": "documents/Aachen.md",
+          "chunk_index": 8,
+          "distance": "0.897897"
+        },
+        {
+          "chunk_id": "chunk_5a1fa562b765d096419f0521",
+          "path": "documents/Aachen.md",
+          "chunk_index": 11,
+          "distance": "0.891559"
+        },
+        {
+          "chunk_id": "chunk_73734d1f294d4e5ccd2a69fe",
+          "path": "documents/Aachen.md",
+          "chunk_index": 12,
+          "distance": "0.899935"
+        },
+        {
+          "chunk_id": "chunk_fbbf4f0cef06a37c9a6330e1",
+          "path": "documents/Aachen.md",
+          "chunk_index": 15,
+          "distance": "0.855705"
+        },
+        {
+          "chunk_id": "chunk_9b305def230880f09c85e098",
+          "path": "documents/Aachen.md",
+          "chunk_index": 21,
+          "distance": "0.912365"
+        },
+        {
+          "chunk_id": "chunk_cd599077e3ed1f0694acfe51",
+          "path": "documents/Aachen.md",
+          "chunk_index": 61,
+          "distance": "0.888926"
+        },
+        {
+          "chunk_id": "chunk_63631e88427e3d4e375a31ef",
+          "path": "documents/Aachen.md",
+          "chunk_index": 111,
+          "distance": "0.815158"
+        },
+        {
+          "chunk_id": "chunk_c9d7001860ff26ffeb3bd185",
+          "path": "documents/Aachen.md",
+          "chunk_index": 158,
+          "distance": "0.923429"
+        },
+        {
+          "chunk_id": "chunk_498057cc1a9c46ee15977a80",
+          "path": "documents/Aachen.md",
+          "chunk_index": 164,
+          "distance": "0.831776"
+        },
+        {
+          "chunk_id": "chunk_fb0a6fba4d5564474cb49220",
+          "path": "documents/Aachen.md",
+          "chunk_index": 175,
+          "distance": "0.855781"
+        },
+        {
+          "chunk_id": "chunk_346c5d37ee1de016c494f0ac",
+          "path": "documents/Aachen.md",
+          "chunk_index": 177,
+          "distance": "0.894313"
+        },
+        {
+          "chunk_id": "chunk_ee0b9471bcda32b55efd12f7",
+          "path": "documents/Aachen.md",
+          "chunk_index": 184,
+          "distance": "0.869320"
+        },
+        {
+          "chunk_id": "chunk_1d45d2dcb04e5134f047c9aa",
+          "path": "documents/Aachen.md",
+          "chunk_index": 197,
+          "distance": "0.918385"
+        },
+        {
+          "chunk_id": "chunk_71de607a2dea767da35ce400",
+          "path": "documents/Aachen.md",
+          "chunk_index": 199,
+          "distance": "0.727000"
+        },
+        {
+          "chunk_id": "chunk_206dee6a06110534da577918",
+          "path": "documents/Aachen.md",
+          "chunk_index": 200,
+          "distance": "0.857421"
+        },
+        {
+          "chunk_id": "chunk_2d8f13a7f0cdccc1885e648c",
+          "path": "documents/Aachen.md",
+          "chunk_index": 201,
+          "distance": "0.857421"
+        },
+        {
+          "chunk_id": "chunk_61857d6e32ce8180a2670756",
+          "path": "documents/Aachen.md",
+          "chunk_index": 203,
+          "distance": "0.928976"
+        },
+        {
+          "chunk_id": "chunk_4f9993a79e6e6bec3c419868",
+          "path": "documents/Aachen.md",
+          "chunk_index": 204,
+          "distance": "0.928976"
+        },
+        {
+          "chunk_id": "chunk_5eddeaa4574df9e6e95222a2",
+          "path": "documents/Aachen.md",
+          "chunk_index": 205,
+          "distance": "0.825790"
+        },
+        {
+          "chunk_id": "chunk_2a2303574caadb8b4080c4dc",
+          "path": "documents/Aachen.md",
+          "chunk_index": 273,
+          "distance": "0.820524"
+        },
+        {
+          "chunk_id": "chunk_35a7661106baf746b115f6f2",
+          "path": "documents/Aachen.md",
+          "chunk_index": 274,
+          "distance": "0.860497"
+        },
+        {
+          "chunk_id": "chunk_6ddbca89cd89969b4ad49580",
+          "path": "documents/Aachen.md",
+          "chunk_index": 282,
+          "distance": "0.951219"
+        },
+        {
+          "chunk_id": "chunk_b42c996817c850e678705532",
+          "path": "documents/Aachen.md",
+          "chunk_index": 301,
+          "distance": "0.836512"
+        },
+        {
+          "chunk_id": "chunk_64de4f5db63848d52982775a",
+          "path": "documents/Aachen.md",
+          "chunk_index": 302,
+          "distance": "0.907477"
+        },
+        {
+          "chunk_id": "chunk_e3e9eb599147a8b579fd89b7",
+          "path": "documents/Aachen.md",
+          "chunk_index": 305,
+          "distance": "0.929672"
+        },
+        {
+          "chunk_id": "chunk_e1597a6f597ce1305f7211c4",
+          "path": "documents/Aachen.md",
+          "chunk_index": 320,
+          "distance": "0.904519"
+        },
+        {
+          "chunk_id": "chunk_4e6a381a4077618709b3fb73",
+          "path": "documents/Aachen.md",
+          "chunk_index": 321,
+          "distance": "0.754733"
+        },
+        {
+          "chunk_id": "chunk_62091c77a1eadf1e2bc2bd5c",
+          "path": "documents/Aachen.md",
+          "chunk_index": 382,
+          "distance": "0.951117"
+        },
+        {
+          "chunk_id": "chunk_6888adb3beafde532984f006",
+          "path": "documents/Aachen.md",
+          "chunk_index": 383,
+          "distance": "0.946791"
+        },
+        {
+          "chunk_id": "chunk_9628d7aa6eff550dccf099b2",
+          "path": "documents/Aachen.md",
+          "chunk_index": 384,
+          "distance": "0.716476"
+        },
+        {
+          "chunk_id": "chunk_d5ef63197834f0153c2c3fb5",
+          "path": "documents/Aachen.md",
+          "chunk_index": 385,
+          "distance": "0.851221"
+        },
+        {
+          "chunk_id": "chunk_711a89342c7d2e05c330ca1d",
+          "path": "documents/Aachen.md",
+          "chunk_index": 386,
+          "distance": "0.911048"
+        }
+      ]
+    },
+    {
+      "city_name": "aachen",
+      "batch_index": 2,
+      "chunk_count": 31,
+      "estimated_tokens": 17295,
+      "chunks": [
+        {
+          "chunk_id": "chunk_e13993d7953c04e11678a5ae",
+          "path": "documents/Aachen.md",
+          "chunk_index": 387,
+          "distance": "0.913263"
+        },
+        {
+          "chunk_id": "chunk_62724effd7a43a54d6ca4f19",
+          "path": "documents/Aachen.md",
+          "chunk_index": 388,
+          "distance": "0.899331"
+        },
+        {
+          "chunk_id": "chunk_666a0c26cfe9cd23ab7adcbc",
+          "path": "documents/Aachen.md",
+          "chunk_index": 389,
+          "distance": "0.949175"
+        },
+        {
+          "chunk_id": "chunk_b710a602c42b29d5d1912a93",
+          "path": "documents/Aachen.md",
+          "chunk_index": 393,
+          "distance": "0.879749"
+        },
+        {
+          "chunk_id": "chunk_2b9518735c4457b306f2ef0c",
+          "path": "documents/Aachen.md",
+          "chunk_index": 397,
+          "distance": "0.870412"
+        },
+        {
+          "chunk_id": "chunk_16d12b5518efdf9dc4027a59",
+          "path": "documents/Aachen.md",
+          "chunk_index": 398,
+          "distance": "0.938613"
+        },
+        {
+          "chunk_id": "chunk_6397e208f88fb13177ad8b0b",
+          "path": "documents/Aachen.md",
+          "chunk_index": 400,
+          "distance": "0.908944"
+        },
+        {
+          "chunk_id": "chunk_499a4a91adff634ee1e0a028",
+          "path": "documents/Aachen.md",
+          "chunk_index": 403,
+          "distance": "0.883262"
+        },
+        {
+          "chunk_id": "chunk_5e98454c4bc8137ca17a3c10",
+          "path": "documents/Aachen.md",
+          "chunk_index": 432,
+          "distance": "0.926948"
+        },
+        {
+          "chunk_id": "chunk_821adb9a3559774ea1b5e60b",
+          "path": "documents/Aachen.md",
+          "chunk_index": 470,
+          "distance": "0.946023"
+        },
+        {
+          "chunk_id": "chunk_dc46c165022e30a44f5e2523",
+          "path": "documents/Aachen.md",
+          "chunk_index": 611,
+          "distance": "0.925167"
+        },
+        {
+          "chunk_id": "chunk_29242ed469b33c96c85add57",
+          "path": "documents/Aachen.md",
+          "chunk_index": 619,
+          "distance": "0.783722"
+        },
+        {
+          "chunk_id": "chunk_3dddb45b9e5f22c0bf1c9583",
+          "path": "documents/Aachen.md",
+          "chunk_index": 620,
+          "distance": "0.889065"
+        },
+        {
+          "chunk_id": "chunk_0d6a296a5ea0b52ef6d21ac1",
+          "path": "documents/Aachen.md",
+          "chunk_index": 622,
+          "distance": "0.822665"
+        },
+        {
+          "chunk_id": "chunk_56b34ef7170f4eaabee5c431",
+          "path": "documents/Aachen.md",
+          "chunk_index": 628,
+          "distance": "0.928431"
+        },
+        {
+          "chunk_id": "chunk_75bd73cb29f7901e078845ca",
+          "path": "documents/Aachen.md",
+          "chunk_index": 640,
+          "distance": "0.831271"
+        },
+        {
+          "chunk_id": "chunk_e8d5393a95684dace01ed52c",
+          "path": "documents/Aachen.md",
+          "chunk_index": 642,
+          "distance": "0.752603"
+        },
+        {
+          "chunk_id": "chunk_3f2bebf8ed73a0ad0542ffa9",
+          "path": "documents/Aachen.md",
+          "chunk_index": 646,
+          "distance": "0.923889"
+        },
+        {
+          "chunk_id": "chunk_3abd305013eec9377a9d09d1",
+          "path": "documents/Aachen.md",
+          "chunk_index": 647,
+          "distance": "0.923889"
+        },
+        {
+          "chunk_id": "chunk_9374fc6b27dcc2fb7b120f4c",
+          "path": "documents/Aachen.md",
+          "chunk_index": 648,
+          "distance": "0.858436"
+        },
+        {
+          "chunk_id": "chunk_f985cf839d136db9d6e30a6a",
+          "path": "documents/Aachen.md",
+          "chunk_index": 657,
+          "distance": "0.932528"
+        },
+        {
+          "chunk_id": "chunk_e01e263011e6c395ae4154be",
+          "path": "documents/Aachen.md",
+          "chunk_index": 660,
+          "distance": "0.802088"
+        },
+        {
+          "chunk_id": "chunk_730b022bf83db74b02864a8e",
+          "path": "documents/Aachen.md",
+          "chunk_index": 667,
+          "distance": "0.862955"
+        },
+        {
+          "chunk_id": "chunk_391550b6e45f53dce2a6d208",
+          "path": "documents/Aachen.md",
+          "chunk_index": 853,
+          "distance": "0.780152"
+        },
+        {
+          "chunk_id": "chunk_f5f9fc0ec2108cbce1f31d08",
+          "path": "documents/Aachen.md",
+          "chunk_index": 854,
+          "distance": "0.941159"
+        },
+        {
+          "chunk_id": "chunk_f996f0f5cd44b8a994cd7fce",
+          "path": "documents/Aachen.md",
+          "chunk_index": 904,
+          "distance": "0.932561"
+        },
+        {
+          "chunk_id": "chunk_abb97f05d51f016c10f2adf2",
+          "path": "documents/Aachen.md",
+          "chunk_index": 905,
+          "distance": "0.698856"
+        },
+        {
+          "chunk_id": "chunk_712391b18a64f0d719bbc3bc",
+          "path": "documents/Aachen.md",
+          "chunk_index": 907,
+          "distance": "0.814002"
+        },
+        {
+          "chunk_id": "chunk_693da2dcf2969473a9010805",
+          "path": "documents/Aachen.md",
+          "chunk_index": 908,
+          "distance": "0.871778"
+        },
+        {
+          "chunk_id": "chunk_b95eafaeb62158f094416303",
+          "path": "documents/Aachen.md",
+          "chunk_index": 923,
+          "distance": "0.868876"
+        },
+        {
+          "chunk_id": "chunk_12c844ca5c1fc9c15a3dca01",
+          "path": "documents/Aachen.md",
+          "chunk_index": 934,
+          "distance": "0.866883"
+        }
+      ]
+    }
+  ]
+}
