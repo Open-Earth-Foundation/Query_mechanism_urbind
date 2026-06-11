@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import json
 import logging
 import re
 import threading
@@ -12,6 +11,7 @@ from pathlib import Path
 from typing import Any
 
 from backend.api.models import RunError, RunStatus
+from backend.utils.artifact_manifest import resolve_manifest_alias
 from backend.utils.json_io import read_json_object, write_json
 from backend.utils.paths import build_run_id
 
@@ -47,7 +47,7 @@ class RunRecord:
     error: RunError | None = None
     final_output_path: Path | None = None
     context_bundle_path: Path | None = None
-    run_log_path: Path | None = None
+    api_state_path: Path | None = None
 
     def to_payload(self) -> dict[str, Any]:
         """Serialize record to JSON-friendly payload."""
@@ -59,11 +59,6 @@ class RunRecord:
             "completed_at": self.completed_at.isoformat() if self.completed_at else None,
             "finish_reason": self.finish_reason,
             "error": self.error.model_dump() if self.error else None,
-            "final_output_path": str(self.final_output_path) if self.final_output_path else None,
-            "context_bundle_path": str(self.context_bundle_path)
-            if self.context_bundle_path
-            else None,
-            "run_log_path": str(self.run_log_path) if self.run_log_path else None,
         }
 
     @classmethod
@@ -102,15 +97,6 @@ class RunRecord:
             if isinstance(payload.get("finish_reason"), str)
             else None,
             error=_parse_error_payload(payload.get("error")),
-            final_output_path=Path(payload["final_output_path"])
-            if isinstance(payload.get("final_output_path"), str)
-            else None,
-            context_bundle_path=Path(payload["context_bundle_path"])
-            if isinstance(payload.get("context_bundle_path"), str)
-            else None,
-            run_log_path=Path(payload["run_log_path"])
-            if isinstance(payload.get("run_log_path"), str)
-            else None,
         )
 
 
@@ -148,13 +134,13 @@ def _parse_error_payload(raw_value: object) -> RunError | None:
     return RunError(code=code, message=message)
 
 
-def _extract_question_from_run_log(run_log: dict[str, Any]) -> str:
-    """Extract display question from run log using modern and legacy fields."""
-    question_raw = run_log.get("question")
+def _extract_question_from_api_state(api_state: dict[str, Any]) -> str:
+    """Extract display question from API state using modern and legacy fields."""
+    question_raw = api_state.get("question")
     if isinstance(question_raw, str) and question_raw.strip():
         return question_raw.strip()
 
-    inputs_raw = run_log.get("inputs")
+    inputs_raw = api_state.get("inputs")
     if isinstance(inputs_raw, dict):
         original_question = inputs_raw.get("original_question")
         if isinstance(original_question, str) and original_question.strip():
@@ -197,7 +183,7 @@ class RunStore:
                 question=cleaned_question,
                 status="queued",
                 started_at=_utc_now(),
-                run_log_path=self._runs_dir / run_id / "run.json",
+                api_state_path=self._runs_dir / run_id / "api_state.json",
             )
             self._records[run_id] = record
             self._persist_record_locked(record)
@@ -224,7 +210,7 @@ class RunStore:
                 error=None,
                 final_output_path=record.final_output_path,
                 context_bundle_path=record.context_bundle_path,
-                run_log_path=record.run_log_path,
+                api_state_path=record.api_state_path,
             )
             self._records[run_id] = updated
             self._persist_record_locked(updated)
@@ -239,7 +225,7 @@ class RunStore:
         error: RunError | None = None,
         final_output_path: Path | None = None,
         context_bundle_path: Path | None = None,
-        run_log_path: Path | None = None,
+        api_state_path: Path | None = None,
     ) -> RunRecord:
         """Set final run state and persist terminal metadata."""
         if status not in TERMINAL_STATUSES:
@@ -260,7 +246,7 @@ class RunStore:
                 error=error,
                 final_output_path=final_output_path or record.final_output_path,
                 context_bundle_path=context_bundle_path or record.context_bundle_path,
-                run_log_path=run_log_path or record.run_log_path,
+                api_state_path=api_state_path or record.api_state_path,
             )
             self._records[run_id] = updated
             self._persist_record_locked(updated)
@@ -301,18 +287,18 @@ class RunStore:
         for run_id, record in self._records.items():
             if record.status in IN_PROGRESS_STATUSES:
                 continue
-            if self._resolve_existing_run_log_path(record) is not None:
+            if self._resolve_existing_api_state_path(record) is not None:
                 continue
             stale_run_ids.append(run_id)
 
         for run_id in stale_run_ids:
             self._records.pop(run_id, None)
 
-    def _resolve_existing_run_log_path(self, record: RunRecord) -> Path | None:
-        """Resolve existing run.json path for a record, if present on disk."""
-        if record.run_log_path is not None and record.run_log_path.exists():
-            return record.run_log_path
-        fallback = self._runs_dir / record.run_id / "run.json"
+    def _resolve_existing_api_state_path(self, record: RunRecord) -> Path | None:
+        """Resolve existing api_state.json path for a record, if present on disk."""
+        if record.api_state_path is not None and record.api_state_path.exists():
+            return record.api_state_path
+        fallback = self._runs_dir / record.run_id / "api_state.json"
         if fallback.exists():
             return fallback
         return None
@@ -323,9 +309,9 @@ class RunStore:
         """Drop known alias ids from legacy `_01` artifact naming collisions."""
         folder_owner: dict[str, str] = {}
         for record in records:
-            if record.run_log_path is None:
+            if record.api_state_path is None:
                 continue
-            folder_name = record.run_log_path.parent.name
+            folder_name = record.api_state_path.parent.name
             existing_owner = folder_owner.get(folder_name)
             if existing_owner is None:
                 folder_owner[folder_name] = record.run_id
@@ -344,59 +330,55 @@ class RunStore:
 
     def _load_runs_from_artifact_dirs_locked(self) -> None:
         """Hydrate runs directly from artifact folders when state snapshots are missing."""
-        for run_log_path in self._runs_dir.glob("*/run.json"):
-            self._hydrate_from_run_log_locked(run_log_path)
+        for api_state_path in self._runs_dir.glob("*/api_state.json"):
+            self._hydrate_from_api_state_locked(api_state_path)
 
-    def _hydrate_from_run_log_locked(self, run_log_path: Path) -> RunRecord | None:
-        """Create a run record from a run.json artifact when possible."""
-        if not run_log_path.exists():
+    def _hydrate_from_api_state_locked(self, api_state_path: Path) -> RunRecord | None:
+        """Create a run record from an api_state.json artifact when possible."""
+        if not api_state_path.exists():
             return None
-        if self._has_record_for_run_folder_locked(run_log_path.parent.name):
-            return None
-
-        run_log = read_json_object(run_log_path)
-        if run_log is None:
+        if self._has_record_for_run_folder_locked(api_state_path.parent.name):
             return None
 
-        run_id_raw = run_log.get("run_id")
+        api_state = read_json_object(api_state_path)
+        if api_state is None:
+            return None
+
+        run_id_raw = api_state.get("run_id")
         run_id = (
             run_id_raw.strip()
             if isinstance(run_id_raw, str) and run_id_raw.strip()
-            else run_log_path.parent.name
+            else api_state_path.parent.name
         )
         if run_id in self._records:
             return self._records[run_id]
 
-        status = _coerce_status(run_log.get("status")) or "failed"
-        started_at = _parse_datetime(str(run_log.get("started_at"))) or _utc_now()
+        status = _coerce_status(api_state.get("status")) or "failed"
+        started_at = _parse_datetime(str(api_state.get("started_at"))) or _utc_now()
         completed_at: datetime | None = None
-        completed_raw = run_log.get("completed_at")
+        completed_raw = api_state.get("completed_at")
         if isinstance(completed_raw, str):
             completed_at = _parse_datetime(completed_raw)
 
-        finish_reason_raw = run_log.get("finish_reason")
+        finish_reason_raw = api_state.get("finish_reason")
         finish_reason = finish_reason_raw if isinstance(finish_reason_raw, str) else None
 
-        artifacts = run_log.get("artifacts")
-        final_output_path: Path | None = None
-        context_bundle_path: Path | None = None
-        if isinstance(artifacts, dict):
-            final_output_path = self._resolve_artifact_path_from_log(
-                artifacts.get("final_output"), run_log_path.parent
-            )
-            context_bundle_path = self._resolve_artifact_path_from_log(
-                artifacts.get("context_bundle"), run_log_path.parent
-            )
+        final_output_path: Path | None = resolve_manifest_alias(
+            api_state_path.parent, "final_output"
+        )
+        context_bundle_path: Path | None = resolve_manifest_alias(
+            api_state_path.parent, "context_bundle"
+        )
         if final_output_path is None:
-            fallback_final = run_log_path.parent / "final.md"
+            fallback_final = api_state_path.parent / "final.md"
             if fallback_final.exists():
                 final_output_path = fallback_final
         if context_bundle_path is None:
-            fallback_context = run_log_path.parent / "context_bundle.json"
+            fallback_context = api_state_path.parent / "context_bundle.json"
             if fallback_context.exists():
                 context_bundle_path = fallback_context
 
-        question = _extract_question_from_run_log(run_log)
+        question = _extract_question_from_api_state(api_state)
 
         record = RunRecord(
             run_id=run_id,
@@ -405,10 +387,10 @@ class RunStore:
             started_at=started_at,
             completed_at=completed_at,
             finish_reason=finish_reason,
-            error=_parse_error_payload(run_log.get("error")),
+            error=_parse_error_payload(api_state.get("error")),
             final_output_path=final_output_path,
             context_bundle_path=context_bundle_path,
-            run_log_path=run_log_path,
+            api_state_path=api_state_path,
         )
         self._records[run_id] = record
         self._persist_record_locked(record)
@@ -417,33 +399,11 @@ class RunStore:
     def _has_record_for_run_folder_locked(self, folder_name: str) -> bool:
         """Return True when a record already points to the same artifact folder."""
         for record in self._records.values():
-            if record.run_log_path is None:
+            if record.api_state_path is None:
                 continue
-            if record.run_log_path.parent.name == folder_name:
+            if record.api_state_path.parent.name == folder_name:
                 return True
         return False
-
-    def _resolve_artifact_path_from_log(
-        self, raw_path: object, run_dir: Path
-    ) -> Path | None:
-        """Resolve artifact path from run.json and fallback to local run folder."""
-        if not isinstance(raw_path, str) or not raw_path.strip():
-            return None
-        candidate = Path(raw_path)
-        if not candidate.is_absolute():
-            local_candidate = run_dir / candidate
-            if local_candidate.exists():
-                return local_candidate
-            name_fallback = run_dir / candidate.name
-            if name_fallback.exists():
-                return name_fallback
-            return local_candidate
-        if candidate.exists():
-            return candidate
-        fallback = run_dir / candidate.name
-        if fallback.exists():
-            return fallback
-        return candidate
 
     def _normalize_run_id(self, run_id: str) -> str:
         """Validate and normalize candidate run id."""
@@ -489,33 +449,27 @@ class RunStore:
         if existing is not None:
             return existing
 
-        run_log_path = self._runs_dir / run_id / "run.json"
-        run_log = read_json_object(run_log_path)
-        if run_log is None:
+        api_state_path = self._runs_dir / run_id / "api_state.json"
+        api_state = read_json_object(api_state_path)
+        if api_state is None:
             return None
 
-        status = _coerce_status(run_log.get("status")) or "failed"
-        started_at = _parse_datetime(str(run_log.get("started_at"))) or _utc_now()
+        status = _coerce_status(api_state.get("status")) or "failed"
+        started_at = _parse_datetime(str(api_state.get("started_at"))) or _utc_now()
         completed_at = None
-        completed_raw = run_log.get("completed_at")
+        completed_raw = api_state.get("completed_at")
         if isinstance(completed_raw, str):
             completed_at = _parse_datetime(completed_raw)
 
-        finish_reason = run_log.get("finish_reason")
+        finish_reason = api_state.get("finish_reason")
         finish_reason_value = finish_reason if isinstance(finish_reason, str) else None
 
-        artifacts = run_log.get("artifacts")
-        final_output_path: Path | None = None
-        context_bundle_path: Path | None = None
-        if isinstance(artifacts, dict):
-            final_raw = artifacts.get("final_output")
-            context_raw = artifacts.get("context_bundle")
-            final_output_path = self._resolve_artifact_path_from_log(
-                final_raw, run_log_path.parent
-            )
-            context_bundle_path = self._resolve_artifact_path_from_log(
-                context_raw, run_log_path.parent
-            )
+        final_output_path: Path | None = resolve_manifest_alias(
+            api_state_path.parent, "final_output"
+        )
+        context_bundle_path: Path | None = resolve_manifest_alias(
+            api_state_path.parent, "context_bundle"
+        )
         if final_output_path is None:
             fallback_final = self._runs_dir / run_id / "final.md"
             if fallback_final.exists():
@@ -527,15 +481,15 @@ class RunStore:
 
         record = RunRecord(
             run_id=run_id,
-            question=_extract_question_from_run_log(run_log),
+            question=_extract_question_from_api_state(api_state),
             status=status,
             started_at=started_at,
             completed_at=completed_at,
             finish_reason=finish_reason_value,
-            error=_parse_error_payload(run_log.get("error")),
+            error=_parse_error_payload(api_state.get("error")),
             final_output_path=final_output_path,
             context_bundle_path=context_bundle_path,
-            run_log_path=run_log_path,
+            api_state_path=api_state_path,
         )
         self._records[run_id] = record
         self._persist_record_locked(record)
@@ -543,12 +497,18 @@ class RunStore:
 
     def _persist_record_locked(self, record: RunRecord) -> None:
         """Persist run record to run-local state file when run directory exists."""
-        payload = record.to_payload()
-
         run_dir = self._runs_dir / record.run_id
         if run_dir.exists():
             try:
-                write_json(run_dir / "api_state.json", payload, default=str)
+                api_state_path = run_dir / "api_state.json"
+                existing_payload = read_json_object(api_state_path)
+                payload = (
+                    dict(existing_payload)
+                    if isinstance(existing_payload, dict)
+                    else {}
+                )
+                payload.update(record.to_payload())
+                write_json(api_state_path, payload, default=str)
             except OSError:
                 logger.exception(
                     "Failed to persist run-local API state for run_id=%s", record.run_id

@@ -11,6 +11,8 @@ import pytest
 from fastapi.testclient import TestClient
 
 from backend.api.services.chat_followup_research import followup_bundle_dir
+from backend.modules.orchestrator.utils.references import build_markdown_references
+from backend.utils.artifact_writer import ArtifactWriter
 from backend.utils.config import AppConfig
 from backend.utils.paths import RunPaths, create_run_paths
 from tests.support import build_test_app_config
@@ -87,10 +89,31 @@ def write_success_artifacts(
             "final_output": str(paths.final_output),
         },
     }
-    paths.run_log.write_text(
+    paths.api_state.write_text(
         json.dumps(run_log, ensure_ascii=True, indent=2),
         encoding="utf-8",
     )
+    writer = ArtifactWriter(paths.base_dir, run_id)
+    writer.register_file("context_bundle", paths.context_bundle)
+    writer.register_file("final_output", paths.final_output)
+    if excerpts:
+        normalized_excerpts, references_payload = build_markdown_references(
+            run_id=run_id,
+            excerpts=excerpts,
+        )
+        writer.write_stage_file(
+            "markdown_extraction",
+            "excerpts.json",
+            {"excerpts": normalized_excerpts},
+            alias="markdown_excerpts",
+        )
+        writer.write_stage_file(
+            "markdown_extraction",
+            "references.json",
+            references_payload,
+            alias="references",
+        )
+    writer.write_manifest({"status": "completed"})
     return paths
 
 
@@ -150,7 +173,7 @@ def write_followup_bundle(
     quote: str,
     partial_answer: str,
 ) -> None:
-    """Write a synthetic follow-up bundle and its markdown artifacts."""
+    """Write a synthetic follow-up bundle and its canonical stage artifacts."""
     bundle_dir = followup_bundle_dir(
         runs_dir=runs_dir,
         run_id=run_id,
@@ -169,10 +192,13 @@ def write_followup_bundle(
         "retrieval_queries": [f"{target_city} question"],
         "final": None,
         "analysis_mode": "aggregate",
+        "city_scope_mode": "selected_cities",
+        "selected_cities": [target_city.casefold()],
+        "selected_city_names": [target_city],
+        "inspected_cities": [target_city.casefold()],
+        "inspected_city_names": [target_city],
         "markdown": {
             "status": "success",
-            "selected_city_names": [target_city],
-            "inspected_city_names": [target_city],
             "excerpt_count": 1,
             "excerpts": [
                 {
@@ -189,35 +215,32 @@ def write_followup_bundle(
         json.dumps(context_bundle, ensure_ascii=True, indent=2),
         encoding="utf-8",
     )
-    markdown_dir = bundle_dir / "markdown"
-    markdown_dir.mkdir(parents=True, exist_ok=True)
-    (markdown_dir / "excerpts.json").write_text(
-        json.dumps(
-            {"excerpts": context_bundle["markdown"]["excerpts"]},
-            ensure_ascii=True,
-            indent=2,
-        ),
-        encoding="utf-8",
+    writer = ArtifactWriter(bundle_dir, bundle_id)
+    writer.register_file("context_bundle", bundle_dir / "context_bundle.json")
+    writer.write_stage_file(
+        "markdown_extraction",
+        "excerpts.json",
+        {"excerpts": context_bundle["markdown"]["excerpts"]},
+        alias="markdown_excerpts",
     )
-    (markdown_dir / "references.json").write_text(
-        json.dumps(
-            {
-                "references": [
-                    {
-                        "ref_id": "ref_1",
-                        "excerpt_index": 0,
-                        "city_name": target_city,
-                        "quote": quote,
-                        "partial_answer": partial_answer,
-                        "source_chunk_ids": ["chunk-followup-1"],
-                    }
-                ]
-            },
-            ensure_ascii=True,
-            indent=2,
-        ),
-        encoding="utf-8",
+    writer.write_stage_file(
+        "markdown_extraction",
+        "references.json",
+        {
+            "references": [
+                {
+                    "ref_id": "ref_1",
+                    "excerpt_index": 0,
+                    "city_name": target_city,
+                    "quote": quote,
+                    "partial_answer": partial_answer,
+                    "source_chunk_ids": ["chunk-followup-1"],
+                }
+            ]
+        },
+        alias="references",
     )
+    writer.write_manifest({"status": "completed", "source": "chat_followup"})
 
 
 __all__ = [

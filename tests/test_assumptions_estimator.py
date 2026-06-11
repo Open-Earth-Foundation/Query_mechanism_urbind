@@ -7,6 +7,7 @@ from backend.modules.web_researcher.assumptions_estimator import (
     _MIN_PEER_ANCHORS_METHOD_B,
     _MIN_PEER_ANCHORS_METHOD_C,
     _MIN_PEER_CONFIDENCE,
+    _build_context_summary,
     _build_peer_reference_table,
     _build_system_prompt,
     _build_user_prompt,
@@ -48,6 +49,25 @@ def _minimal_gap_manifest(fields: list[str]) -> GapManifest:
         city_gaps=[],
         non_estimable_fields=[],
     )
+
+
+def test_build_context_summary_reads_root_city_scope() -> None:
+    summary = _build_context_summary(
+        {
+            "research_question": "What does Aachen do?",
+            "selected_city_names": ["Aachen"],
+            "inspected_city_names": ["Aachen"],
+            "markdown": {
+                "selected_city_names": ["Legacy"],
+                "inspected_city_names": ["Legacy"],
+                "excerpt_count": 4,
+            },
+        }
+    )
+
+    assert summary["cities_selected"] == ["Aachen"]
+    assert summary["cities_inspected"] == ["Aachen"]
+    assert summary["excerpt_count"] == 4
 
 
 # ---------------------------------------------------------------------------

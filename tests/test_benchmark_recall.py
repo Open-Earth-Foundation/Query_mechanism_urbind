@@ -13,6 +13,7 @@ from backend.benchmarks.gold_recall.runner import (
     load_gold_benchmark_dataset,
     run_recall_benchmark,
 )
+from backend.utils.artifact_writer import ArtifactWriter
 
 
 FIXTURES_DIR = Path(__file__).resolve().parent / "fixtures"
@@ -294,12 +295,29 @@ def _write_gold_file(
 
 def _write_sample_run_artifacts(run_dir: Path) -> None:
     """Write the minimal artifact set required by the recall benchmark."""
-    markdown_dir = run_dir / "markdown"
-    markdown_dir.mkdir(parents=True, exist_ok=True)
-    _write_json(markdown_dir / "retrieval.json", SAMPLE_RETRIEVAL_PAYLOAD)
-    _write_json(markdown_dir / "excerpts.json", SAMPLE_EXCERPTS_PAYLOAD)
-    _write_json(markdown_dir / "references.json", SAMPLE_REFERENCES_PAYLOAD)
+    run_dir.mkdir(parents=True, exist_ok=True)
+    writer = ArtifactWriter(run_dir, run_dir.name)
+    writer.write_stage_file(
+        "retrieval",
+        "retrieval.json",
+        SAMPLE_RETRIEVAL_PAYLOAD,
+        alias="retrieval",
+    )
+    writer.write_stage_file(
+        "markdown_extraction",
+        "excerpts.json",
+        SAMPLE_EXCERPTS_PAYLOAD,
+        alias="markdown_excerpts",
+    )
+    writer.write_stage_file(
+        "markdown_extraction",
+        "references.json",
+        SAMPLE_REFERENCES_PAYLOAD,
+        alias="references",
+    )
     (run_dir / "final.md").write_text(SAMPLE_FINAL_TEXT, encoding="utf-8")
+    writer.register_file("final_output", run_dir / "final.md")
+    writer.write_manifest()
 
 
 def _make_sample_run_pipeline():

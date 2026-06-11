@@ -226,7 +226,6 @@ def test_run_writer_numeric_benchmark_writes_report_only_artifacts(tmp_path: Pat
             runner_config.orchestrator.context_bundle_name,
         )
         paths.base_dir.mkdir(parents=True, exist_ok=True)
-        paths.markdown_dir.mkdir(parents=True, exist_ok=True)
         paths.final_output.write_text(
             (
                 "| Metric | Value |\n"

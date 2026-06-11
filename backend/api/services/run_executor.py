@@ -17,6 +17,7 @@ from backend.api.services.city_catalog import build_city_subset
 from backend.api.services.run_store import RunRecord, RunStore, TERMINAL_STATUSES
 from backend.modules.orchestrator.module import run_pipeline
 from backend.services.error_log_artifact import write_error_log_artifact
+from backend.utils.artifact_manifest import resolve_manifest_alias
 from backend.utils.city_normalization import dedupe_city_labels
 from backend.utils.config import load_config
 from backend.utils.paths import RunPaths
@@ -171,11 +172,13 @@ class RunExecutor:
             if command.api_key is not None:
                 pipeline_kwargs["api_key_override"] = command.api_key
             pipeline_kwargs["analysis_mode"] = command.analysis_mode
+            if command.config_path is not None:
+                pipeline_kwargs["config_path"] = Path(command.config_path)
             run_paths = run_pipeline(**pipeline_kwargs)
             logger.info(
-                "Run pipeline finished run_id=%s run_log=%s",
+                "Run pipeline finished run_id=%s api_state=%s",
                 run_id,
-                run_paths.run_log,
+                run_paths.api_state,
             )
             terminal = _build_terminal_update(run_id, run_paths)
             self._run_store.mark_terminal(
@@ -185,7 +188,7 @@ class RunExecutor:
                 error=terminal.error,
                 final_output_path=terminal.final_output_path,
                 context_bundle_path=terminal.context_bundle_path,
-                run_log_path=terminal.run_log_path,
+                api_state_path=terminal.api_state_path,
             )
             logger.info(
                 "Run execution completed run_id=%s status=%s finish_reason=%s",
@@ -217,7 +220,7 @@ class RunExecutor:
                     finish_reason,
                     error_code,
                 )
-            run_log_path = _persist_executor_failure_artifacts(
+            api_state_path = _persist_executor_failure_artifacts(
                 runs_dir=self._run_store.runs_dir,
                 run_id=run_id,
                 error_code=error_code,
@@ -229,7 +232,7 @@ class RunExecutor:
                 status="failed",
                 finish_reason=finish_reason,
                 error=RunError(code=error_code, message=normalized_message),
-                run_log_path=run_log_path,
+                api_state_path=api_state_path,
             )
 
 
@@ -259,13 +262,13 @@ def _coerce_run_error(value: object) -> RunError | None:
     )
 
 
-def _extract_run_log_error(run_log_payload: dict[str, object]) -> RunError | None:
-    """Return the most specific persisted error stored in ``run.json``."""
-    persisted_error = _coerce_run_error(run_log_payload.get("error"))
+def _extract_api_state_error(api_state_payload: dict[str, object]) -> RunError | None:
+    """Return the most specific persisted error stored in ``api_state.json``."""
+    persisted_error = _coerce_run_error(api_state_payload.get("error"))
     if persisted_error is not None:
         return persisted_error
 
-    decisions = run_log_payload.get("decisions")
+    decisions = api_state_payload.get("decisions")
     if not isinstance(decisions, list):
         return None
     for decision in reversed(decisions):
@@ -281,18 +284,18 @@ def _load_persisted_failure_details(
     runs_dir: Path,
     run_id: str,
 ) -> tuple[str | None, RunError | None]:
-    """Load persisted failure details from ``run.json`` when already finalized."""
-    run_log_payload = _read_run_log_payload(runs_dir / run_id / "run.json")
-    if run_log_payload is None or run_log_payload.get("status") != "failed":
+    """Load persisted failure details from ``api_state.json`` when already finalized."""
+    api_state_payload = _read_api_state_payload(runs_dir / run_id / "api_state.json")
+    if api_state_payload is None or api_state_payload.get("status") != "failed":
         return None, None
 
-    finish_reason = run_log_payload.get("finish_reason")
+    finish_reason = api_state_payload.get("finish_reason")
     normalized_finish_reason = (
         finish_reason.strip()
         if isinstance(finish_reason, str) and finish_reason.strip()
         else None
     )
-    return normalized_finish_reason, _extract_run_log_error(run_log_payload)
+    return normalized_finish_reason, _extract_api_state_error(api_state_payload)
 
 
 def _looks_like_api_key_error(message: str) -> bool:
@@ -319,24 +322,26 @@ class TerminalUpdate:
     error: RunError | None
     final_output_path: Path | None
     context_bundle_path: Path | None
-    run_log_path: Path | None
+    api_state_path: Path | None
 
 
 def _build_terminal_update(run_id: str, run_paths: RunPaths) -> TerminalUpdate:
     """Build terminal state from run artifacts produced by pipeline."""
-    run_log_path = run_paths.run_log if run_paths.run_log.exists() else None
-    final_output_path = run_paths.final_output if run_paths.final_output.exists() else None
-    context_bundle_path = (
-        run_paths.context_bundle if run_paths.context_bundle.exists() else None
-    )
+    api_state_path = run_paths.api_state if run_paths.api_state.exists() else None
+    final_output_path = resolve_manifest_alias(run_paths.base_dir, "final_output")
+    if final_output_path is None and run_paths.final_output.exists():
+        final_output_path = run_paths.final_output
+    context_bundle_path = resolve_manifest_alias(run_paths.base_dir, "context_bundle")
+    if context_bundle_path is None and run_paths.context_bundle.exists():
+        context_bundle_path = run_paths.context_bundle
     status: RunStatus = "completed"
     finish_reason: str | None = None
     error_payload: RunError | None = None
 
-    if run_log_path is not None:
-        run_log_payload = _read_run_log_payload(run_log_path)
-        if run_log_payload:
-            parsed_status = run_log_payload.get("status")
+    if api_state_path is not None:
+        api_state_payload = _read_api_state_payload(api_state_path)
+        if api_state_payload:
+            parsed_status = api_state_payload.get("status")
             if isinstance(parsed_status, str) and parsed_status in TERMINAL_STATUSES:
                 status = parsed_status
             elif isinstance(parsed_status, str):
@@ -347,19 +352,11 @@ def _build_terminal_update(run_id: str, run_paths: RunPaths) -> TerminalUpdate:
                 )
                 status = "failed"
 
-            finish_value = run_log_payload.get("finish_reason")
+            finish_value = api_state_payload.get("finish_reason")
             if isinstance(finish_value, str):
                 finish_reason = finish_value
 
-            error_payload = _extract_run_log_error(run_log_payload)
-            artifacts = run_log_payload.get("artifacts")
-            if isinstance(artifacts, dict):
-                final_output_path = _resolve_artifact_path(
-                    artifacts.get("final_output"), final_output_path
-                )
-                context_bundle_path = _resolve_artifact_path(
-                    artifacts.get("context_bundle"), context_bundle_path
-                )
+            error_payload = _extract_api_state_error(api_state_payload)
             if status == "failed" and error_payload is not None:
                 logger.info(
                     "Run failure details loaded run_id=%s finish_reason=%s error_code=%s",
@@ -380,30 +377,20 @@ def _build_terminal_update(run_id: str, run_paths: RunPaths) -> TerminalUpdate:
         error=error_payload,
         final_output_path=final_output_path,
         context_bundle_path=context_bundle_path,
-        run_log_path=run_log_path,
+        api_state_path=api_state_path,
     )
 
 
-def _read_run_log_payload(path: Path) -> dict[str, object] | None:
-    """Read run log JSON payload from file."""
+def _read_api_state_payload(path: Path) -> dict[str, object] | None:
+    """Read api_state.json payload from file."""
     try:
         raw = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError):
-        logger.exception("Failed to parse run log at %s", path)
+        logger.exception("Failed to parse API state at %s", path)
         return None
     if isinstance(raw, dict):
         return raw
     return None
-
-
-def _resolve_artifact_path(raw_value: object, fallback: Path | None) -> Path | None:
-    """Resolve artifact path from run log or fallback path."""
-    if isinstance(raw_value, str) and raw_value.strip():
-        candidate = Path(raw_value)
-        if not candidate.is_absolute():
-            candidate = Path.cwd() / candidate
-        return candidate
-    return fallback
 
 
 def _prepare_selected_markdown_dir(runs_dir: Path, run_id: str) -> Path:
@@ -425,14 +412,14 @@ def _persist_executor_failure_artifacts(
 ) -> Path | None:
     """Backfill failure metadata when pipeline exits before run finalization."""
     run_dir = runs_dir / run_id
-    run_log_path = run_dir / "run.json"
+    api_state_path = run_dir / "api_state.json"
     if not run_dir.exists():
         return None
 
     error_log_path = write_error_log_artifact(
         run_dir / "run.log", run_dir / "error_log.txt"
     )
-    run_payload = _read_run_log_payload(run_log_path)
+    run_payload = _read_api_state_payload(api_state_path)
     if run_payload is None:
         run_payload = {
             "run_id": run_id,
@@ -440,7 +427,6 @@ def _persist_executor_failure_artifacts(
             "started_at": datetime.now(timezone.utc).isoformat(),
             "completed_at": None,
             "decisions": [],
-            "artifacts": {},
         }
 
     run_payload["status"] = "failed"
@@ -448,23 +434,16 @@ def _persist_executor_failure_artifacts(
     run_payload["finish_reason"] = finish_reason
     run_payload["error"] = {"code": error_code, "message": error_message}
 
-    artifacts = run_payload.get("artifacts")
-    if not isinstance(artifacts, dict):
-        artifacts = {}
-    if error_log_path is not None:
-        artifacts["error_log"] = str(error_log_path)
-    run_payload["artifacts"] = artifacts
-
     try:
-        run_log_path.parent.mkdir(parents=True, exist_ok=True)
-        run_log_path.write_text(
+        api_state_path.parent.mkdir(parents=True, exist_ok=True)
+        api_state_path.write_text(
             json.dumps(run_payload, indent=2, ensure_ascii=False, default=str),
             encoding="utf-8",
         )
     except OSError:
-        logger.exception("Failed to persist fallback run.json for run_id=%s", run_id)
+        logger.exception("Failed to persist fallback api_state.json for run_id=%s", run_id)
         return None
-    return run_log_path
+    return api_state_path
 
 
 __all__ = ["RunExecutor", "StartRunCommand"]

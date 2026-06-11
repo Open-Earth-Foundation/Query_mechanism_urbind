@@ -75,7 +75,7 @@ class BenchmarkQuestionResult:
     markdown_source_mode: str
     final_output_path: str
     run_summary_path: str
-    run_log_path: str
+    api_state_path: str
 
 
 @dataclass(frozen=True)
@@ -332,8 +332,8 @@ def _collect_llm_issue_counts(run_text_log: Path) -> dict[str, int]:
     return counts
 
 
-def _load_run_log_json(path: Path) -> dict[str, object]:
-    """Load run.json payload when present, otherwise return an empty mapping."""
+def _load_api_state_json(path: Path) -> dict[str, object]:
+    """Load api_state.json payload when present, otherwise return an empty mapping."""
     if not path.exists():
         return {}
     try:
@@ -356,18 +356,18 @@ def _build_failed_result(
     error: Exception,
 ) -> BenchmarkQuestionResult:
     """Build a benchmark result row for a failed run and retain issue counters."""
-    run_log_json_path = run_dir / "run.json"
+    api_state_json_path = run_dir / "api_state.json"
     run_text_log_path = run_dir / "run.log"
     run_summary_path = run_dir / "run_summary.txt"
     final_output_path = run_dir / "final.md"
 
-    run_log = _load_run_log_json(run_log_json_path)
-    usage = run_log.get("llm_usage", {})
+    api_state = _load_api_state_json(api_state_json_path)
+    usage = api_state.get("llm_usage", {})
     totals = usage.get("totals", {})
-    inputs = run_log.get("inputs", {})
+    inputs = api_state.get("inputs", {})
     runtime_seconds = _compute_runtime_seconds(
-        str(run_log.get("started_at", "")),
-        str(run_log.get("completed_at", "")),
+        str(api_state.get("started_at", "")),
+        str(api_state.get("completed_at", "")),
     )
     total_tokens = int(totals.get("total_tokens", 0))
     tokens_per_second = (float(total_tokens) / runtime_seconds) if runtime_seconds > 0 else 0.0
@@ -392,7 +392,7 @@ def _build_failed_result(
         max_workers=int(markdown_config.max_workers),
         repetition=repetition,
         question=question,
-        run_id=str(run_log.get("run_id", run_id)),
+        run_id=str(api_state.get("run_id", run_id)),
         success=False,
         error_type=type(error).__name__,
         error_message=str(error),
@@ -414,7 +414,7 @@ def _build_failed_result(
         markdown_source_mode=str(inputs.get("markdown_source_mode", "unknown")),
         final_output_path=str(final_output_path),
         run_summary_path=str(run_summary_path),
-        run_log_path=str(run_log_json_path),
+        api_state_path=str(api_state_json_path),
     )
 
 
@@ -449,6 +449,7 @@ def _run_mode_question(
             "run_id": run_id,
             "log_llm_payload": log_llm_payload,
             "selected_cities": selected_cities,
+            "config_path": config_path,
         }
         if query_override is not None:
             optional_queries = _optional_queries_from_override(question, query_override)
@@ -457,18 +458,18 @@ def _run_mode_question(
             if len(optional_queries) >= 2:
                 pipeline_kwargs["query_3"] = optional_queries[1]
         run_paths = run_pipeline(**pipeline_kwargs)  # type: ignore[arg-type]
-    run_log = json.loads(run_paths.run_log.read_text(encoding="utf-8"))
-    usage = run_log.get("llm_usage", {})
+    api_state = json.loads(run_paths.api_state.read_text(encoding="utf-8"))
+    usage = api_state.get("llm_usage", {})
     totals = usage.get("totals", {})
-    inputs = run_log.get("inputs", {})
+    inputs = api_state.get("inputs", {})
     runtime_seconds = _compute_runtime_seconds(
-        str(run_log.get("started_at", "")),
-        str(run_log.get("completed_at", "")),
+        str(api_state.get("started_at", "")),
+        str(api_state.get("completed_at", "")),
     )
     total_tokens = int(totals.get("total_tokens", 0))
     tokens_per_second = (float(total_tokens) / runtime_seconds) if runtime_seconds > 0 else 0.0
 
-    run_text_log = run_paths.run_log.parent / "run.log"
+    run_text_log = run_paths.api_state.parent / "run.log"
     issue_counts = _collect_llm_issue_counts(run_text_log)
     rate_limit_count = int(issue_counts["rate_limit_count"])
     not_working_count = int(issue_counts["not_working_count"])
@@ -480,7 +481,7 @@ def _run_mode_question(
         max_workers=int(markdown_config.max_workers),
         repetition=repetition,
         question=question,
-        run_id=run_log.get("run_id", run_id),
+        run_id=api_state.get("run_id", run_id),
         success=True,
         error_type="",
         error_message="",
@@ -502,7 +503,7 @@ def _run_mode_question(
         markdown_source_mode=str(inputs.get("markdown_source_mode", "unknown")),
         final_output_path=str(run_paths.final_output),
         run_summary_path=str(run_paths.run_summary),
-        run_log_path=str(run_paths.run_log),
+        api_state_path=str(run_paths.api_state),
     )
 
 

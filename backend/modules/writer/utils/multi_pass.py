@@ -21,11 +21,8 @@ _WRITER_ENRICHMENT_KEYS = (
     "external_evidence",
     "external_resolutions",
     "external_no_evidence",
-    "assumptions",
-    "non_estimable",
     "web_findings",
     "freshness_results",
-    "saturation_warning",
     "meta",
 )
 
@@ -34,10 +31,20 @@ _CITY_SCOPED_ENRICHMENT_LIST_KEYS = {
     "external_evidence",
     "external_resolutions",
     "external_no_evidence",
-    "assumptions",
-    "non_estimable",
     "web_findings",
     "freshness_results",
+}
+
+_WRITER_ASSUMPTIONS_KEYS = (
+    "assumptions",
+    "non_estimable",
+    "saturation_warning",
+    "meta",
+)
+
+_CITY_SCOPED_ASSUMPTIONS_LIST_KEYS = {
+    "assumptions",
+    "non_estimable",
 }
 
 
@@ -381,7 +388,11 @@ def build_writer_context_bundle(
     writer_context: dict[str, object] = {
         "research_question": context_bundle.get("research_question"),
         "analysis_mode": analysis_mode,
-        "selected_cities": selected_city_names,
+        "city_scope_mode": "selected_cities" if normalized_city_keys else "all_cities",
+        "selected_cities": normalized_city_keys,
+        "selected_city_names": selected_city_names,
+        "inspected_cities": normalized_city_keys,
+        "inspected_city_names": selected_city_names,
         "markdown": {
             "status": markdown_bundle.get("status", "success")
             if isinstance(markdown_bundle, dict)
@@ -391,10 +402,6 @@ def build_writer_context_bundle(
             else analysis_mode,
             "excerpt_count": len(excerpts),
             "excerpts": excerpts,
-            "selected_city_names": selected_city_names,
-            "inspected_city_names": selected_city_names,
-            "selected_cities": normalized_city_keys,
-            "inspected_cities": normalized_city_keys,
         },
     }
     enrichment = context_bundle.get("enrichment")
@@ -402,6 +409,11 @@ def build_writer_context_bundle(
         writer_enrichment = _build_writer_enrichment(enrichment, selected_city_names)
         if writer_enrichment:
             writer_context["enrichment"] = writer_enrichment
+    assumptions = context_bundle.get("assumptions")
+    if isinstance(assumptions, dict):
+        writer_assumptions = _build_writer_assumptions(assumptions, selected_city_names)
+        if writer_assumptions:
+            writer_context["assumptions"] = writer_assumptions
     return writer_context
 
 
@@ -433,6 +445,36 @@ def _filter_writer_enrichment_value(
     if key == "gap_manifest":
         return _filter_gap_manifest(value, selected_city_keys)
     if key in _CITY_SCOPED_ENRICHMENT_LIST_KEYS:
+        return _filter_city_records(value, selected_city_keys)
+    return value
+
+
+def _build_writer_assumptions(
+    assumptions: dict[str, object],
+    city_names: list[str],
+) -> dict[str, object]:
+    """Return only assumptions fields that the writer prompts consume."""
+    city_keys: set[str] = set()
+    for name in city_names:
+        resolved_key = city_key(name)
+        if resolved_key:
+            city_keys.add(resolved_key)
+    return {
+        key: _filter_writer_assumptions_value(key, assumptions[key], city_keys)
+        for key in _WRITER_ASSUMPTIONS_KEYS
+        if key in assumptions and assumptions[key] is not None
+    }
+
+
+def _filter_writer_assumptions_value(
+    key: str,
+    value: object,
+    selected_city_keys: set[str],
+) -> object:
+    """Filter city-scoped assumptions payloads to the current writer batch."""
+    if not selected_city_keys:
+        return value
+    if key in _CITY_SCOPED_ASSUMPTIONS_LIST_KEYS:
         return _filter_city_records(value, selected_city_keys)
     return value
 

@@ -116,10 +116,10 @@ available even before any peer city is resolved.
 `backend/prompts/writer_system_city_by_city.md` (equivalent sections).
 
 **Status.** Fine today, but worth watching. The writer assumes
-`enrichment.enriched_fields[]`, `enrichment.assumptions[]`,
-`enrichment.web_findings[]`, `enrichment.freshness_results[]`,
-`enrichment.non_estimable[]`, and `enrichment.saturation_warning` are
-present when enrichment is enabled. Several tables in the prompt
+`enrichment.enriched_fields[]`, `enrichment.web_findings[]`,
+`enrichment.freshness_results[]`, and top-level
+`assumptions.assumptions[]` / `assumptions.non_estimable[]` are present
+when those stages run. Several tables in the prompt
 (per-city audit, augmented-data-insights) are only useful when web
 findings and assumption estimates agree or clearly disagree. When most
 freshness flags are `uncertain` (see issue 3), those tables end up thin

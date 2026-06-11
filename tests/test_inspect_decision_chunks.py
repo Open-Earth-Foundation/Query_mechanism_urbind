@@ -45,7 +45,7 @@ def test_default_output_path_targets_markdown_report_file(tmp_path: Path) -> Non
 
     output_path = _default_output_path(run_dir)
 
-    assert output_path == run_dir / "markdown" / "decision_chunks_report.md"
+    assert output_path == run_dir / "stage_files" / "006_markdown_extraction" / "decision_chunks_report.md"
 
 
 def test_collect_rows_without_limit_returns_all_rows() -> None:

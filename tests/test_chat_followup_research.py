@@ -135,9 +135,25 @@ def test_run_chat_followup_search_uses_vector_store_retrieval_and_persists_artif
         bundle_id=result.bundle_id,
     )
     context_bundle = json.loads((bundle_dir / "context_bundle.json").read_text(encoding="utf-8"))
-    excerpts_payload = json.loads((bundle_dir / "markdown" / "excerpts.json").read_text(encoding="utf-8"))
-    references = json.loads((bundle_dir / "markdown" / "references.json").read_text(encoding="utf-8"))
-    retrieval = json.loads((bundle_dir / "markdown" / "retrieval.json").read_text(encoding="utf-8"))
+    excerpts_payload = json.loads(
+        (
+            bundle_dir / "stage_files" / "006_markdown_extraction" / "excerpts.json"
+        ).read_text(
+            encoding="utf-8"
+        )
+    )
+    references = json.loads(
+        (
+            bundle_dir / "stage_files" / "006_markdown_extraction" / "references.json"
+        ).read_text(
+            encoding="utf-8"
+        )
+    )
+    retrieval = json.loads(
+        (bundle_dir / "stage_files" / "003_retrieval" / "retrieval.json").read_text(
+            encoding="utf-8"
+        )
+    )
 
     assert context_bundle["source"] == "chat_followup"
     assert context_bundle["parent_run_id"] == "run-vector"
@@ -147,9 +163,12 @@ def test_run_chat_followup_search_uses_vector_store_retrieval_and_persists_artif
     assert context_bundle["retrieval_queries"] == [
         "Tell me more about Munich solar.",
     ]
+    assert context_bundle["city_scope_mode"] == "selected_cities"
+    assert context_bundle["selected_cities"] == ["munich"]
+    assert context_bundle["selected_city_names"] == ["Munich"]
+    assert context_bundle["inspected_cities"] == ["munich"]
+    assert context_bundle["inspected_city_names"] == ["Munich"]
     assert context_bundle["markdown"]["source_mode"] == "vector_store_retrieval"
-    assert context_bundle["markdown"]["selected_city_names"] == ["Munich"]
-    assert context_bundle["markdown"]["inspected_city_names"] == ["Munich"]
     assert context_bundle["markdown"]["excerpts"][0]["ref_id"] == "ref_1"
     assert context_bundle["prompt_context_kind"] == "citation_catalog"
     assert context_bundle["prompt_context_tokens"] > 0
@@ -226,7 +245,10 @@ def test_run_chat_followup_search_falls_back_to_standard_markdown_loading(
     )
     context_bundle = json.loads((bundle_dir / "context_bundle.json").read_text(encoding="utf-8"))
     assert context_bundle["markdown"]["source_mode"] == "standard_chunking"
-    assert not (bundle_dir / "markdown" / "retrieval.json").exists()
+    assert context_bundle["selected_city_names"] == ["Munich"]
+    assert not (
+        bundle_dir / "stage_files" / "003_retrieval" / "retrieval.json"
+    ).exists()
 
 
 def test_run_chat_followup_search_persists_empty_successful_bundle(
@@ -268,10 +290,16 @@ def test_run_chat_followup_search_persists_empty_successful_bundle(
         bundle_id=result.bundle_id,
     )
     context_bundle = json.loads((bundle_dir / "context_bundle.json").read_text(encoding="utf-8"))
-    references = json.loads((bundle_dir / "markdown" / "references.json").read_text(encoding="utf-8"))
+    references = json.loads(
+        (
+            bundle_dir / "stage_files" / "006_markdown_extraction" / "references.json"
+        ).read_text(
+            encoding="utf-8"
+        )
+    )
     assert context_bundle["markdown"]["excerpts"] == []
     assert context_bundle["markdown"]["excerpt_count"] == 0
-    assert context_bundle["markdown"]["inspected_city_names"] == []
+    assert context_bundle["inspected_city_names"] == []
     assert references["references"] == []
 
 

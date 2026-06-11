@@ -26,11 +26,25 @@ from backend.benchmarks.gold_recall.models import (
     StageCWriterMetrics,
 )
 from backend.modules.writer.utils.markdown_helpers import extract_cited_ref_ids
+from backend.utils.artifact_manifest import resolve_manifest_alias
 from backend.utils.config import AppConfig, get_openrouter_api_key, load_config
 from backend.utils.json_io import read_json_object, write_json
 from backend.utils.paths import RunPaths
 
 logger = logging.getLogger(__name__)
+
+
+def _resolve_run_artifact(run_dir: Path, alias: str) -> Path:
+    """Resolve one benchmark artifact through the manifest and canonical fallback."""
+    if alias == "retrieval":
+        fallback = "stage_files/003_retrieval/retrieval.json"
+    elif alias == "markdown_excerpts":
+        fallback = "stage_files/006_markdown_extraction/excerpts.json"
+    elif alias == "references":
+        fallback = "stage_files/006_markdown_extraction/references.json"
+    else:
+        raise ValueError(f"Unsupported run artifact alias: {alias}")
+    return resolve_manifest_alias(run_dir, alias) or run_dir / fallback
 
 
 def _safe_ratio(numerator: int, denominator: int) -> float:
@@ -647,9 +661,9 @@ def _build_case_result(
         gold_city=list(case.gold_city),
         selected_cities=case.resolved_selected_cities(),
         run_dir=str(run_dir),
-        retrieval_path=str(run_dir / "markdown" / "retrieval.json"),
-        excerpts_path=str(run_dir / "markdown" / "excerpts.json"),
-        references_path=str(run_dir / "markdown" / "references.json"),
+        retrieval_path=str(_resolve_run_artifact(run_dir, "retrieval")),
+        excerpts_path=str(_resolve_run_artifact(run_dir, "markdown_excerpts")),
+        references_path=str(_resolve_run_artifact(run_dir, "references")),
         final_output_path=str(run_dir / "final.md"),
         stage_a=stage_a,
         stage_b=stage_b,
@@ -803,11 +817,11 @@ def run_recall_benchmark(
         )
         run_dir = run_paths.base_dir
 
-        retrieval_payload = _require_json_object(run_dir / "markdown" / "retrieval.json")
-        excerpts_payload = _require_json_object(run_dir / "markdown" / "excerpts.json")
-        references_payload = _require_json_object(
-            run_dir / "markdown" / "references.json"
+        retrieval_payload = _require_json_object(_resolve_run_artifact(run_dir, "retrieval"))
+        excerpts_payload = _require_json_object(
+            _resolve_run_artifact(run_dir, "markdown_excerpts")
         )
+        references_payload = _require_json_object(_resolve_run_artifact(run_dir, "references"))
         final_text = _require_text(run_dir / "final.md")
         results.append(
             _build_case_result(

@@ -138,14 +138,15 @@ function extractRunContextCityNames(runContext: RunContextResponse | null): stri
   if (!runContext) {
     return [];
   }
-  const markdownBundle = runContext.context_bundle.markdown;
-  if (!isObjectRecord(markdownBundle)) {
-    return [];
-  }
+  const rootBundle = isObjectRecord(runContext.context_bundle)
+    ? runContext.context_bundle
+    : null;
 
   const orderedCandidates = [
-    ...readStringArray(markdownBundle.selected_city_names),
-    ...readStringArray(markdownBundle.inspected_city_names),
+    ...readStringArray(rootBundle?.selected_city_names),
+    ...readStringArray(rootBundle?.inspected_city_names),
+    ...readStringArray(rootBundle?.selected_cities),
+    ...readStringArray(rootBundle?.inspected_cities),
   ];
   const uniqueCityNames: string[] = [];
   const seen = new Set<string>();

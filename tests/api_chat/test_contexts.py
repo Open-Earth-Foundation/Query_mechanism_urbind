@@ -390,7 +390,13 @@ def test_chat_contexts_lazy_backfill_bundle_cache_and_reuse_session_cache(
             (runs_dir / "run-chat-cache" / "context_bundle.json").read_text(encoding="utf-8")
         )
         markdown_excerpts = json.loads(
-            (runs_dir / "run-chat-cache" / "markdown" / "excerpts.json").read_text(
+            (
+                runs_dir
+                / "run-chat-cache"
+                / "stage_files"
+                / "006_markdown_extraction"
+                / "excerpts.json"
+            ).read_text(
                 encoding="utf-8"
             )
         )

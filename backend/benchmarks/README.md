@@ -73,8 +73,9 @@ schema `{"version": 1, "cases": [...]}` with `case_id`, `question`,
   storing both `chunk_id` and `chunk_text` in the fixture JSON.
 
 Every benchmark case executes the live pipeline and is then scored from the
-freshly produced `markdown/retrieval.json`, `markdown/excerpts.json`,
-`markdown/references.json`, and `final.md` artifacts.
+freshly produced `stage_files/003_retrieval/retrieval.json`,
+`stage_files/006_markdown_extraction/excerpts.json`,
+`stage_files/006_markdown_extraction/references.json`, and `final.md` artifacts.
 
 Per-case `benchmark_report.json` chunk diagnostics keep the canonical gold
 `chunk_id` and, when different, the `matched_chunk_id` that actually satisfied

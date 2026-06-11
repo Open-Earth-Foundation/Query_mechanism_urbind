@@ -515,7 +515,6 @@ def _persist_writer_multi_pass(
     if paths is None:
         return
 
-    artifact_path = paths.base_dir / "writer" / "multi_pass.json"
     artifact_payload = {
         "plan": plan.model_dump(),
         "drafts": build_writer_batch_drafts_payload(
@@ -523,8 +522,12 @@ def _persist_writer_multi_pass(
             drafts=[output.content for output in batch_outputs],
         ),
     }
-    write_json(artifact_path, artifact_payload, ensure_ascii=False)
-    run_logger.record_artifact("writer_multi_pass", artifact_path)
+    run_logger.write_stage_file(
+        "writer",
+        "multi_pass.json",
+        artifact_payload,
+        alias="writer_multi_pass",
+    )
 
 
 def write_markdown(

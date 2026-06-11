@@ -14,6 +14,7 @@ from backend.api.services.assumptions_review import (
 )
 from backend.api.services.run_store import RunStore
 from backend.modules.writer.models import WriterOutput
+from backend.utils.artifact_writer import ArtifactWriter
 from backend.utils.config import (
     WriterConfig,
     AppConfig,
@@ -79,10 +80,14 @@ def _write_success_artifacts(question: str, run_id: str, config: AppConfig) -> R
             "final_output": str(paths.final_output),
         },
     }
-    paths.run_log.write_text(
+    paths.api_state.write_text(
         json.dumps(run_log, ensure_ascii=True, indent=2),
         encoding="utf-8",
     )
+    writer = ArtifactWriter(paths.base_dir, run_id)
+    writer.register_file("context_bundle", paths.context_bundle)
+    writer.register_file("final_output", paths.final_output)
+    writer.write_manifest({"status": "completed"})
     return paths
 
 
@@ -100,7 +105,7 @@ def _create_completed_run(
         finish_reason="completed (write)",
         final_output_path=paths.final_output,
         context_bundle_path=paths.context_bundle,
-        run_log_path=paths.run_log,
+        api_state_path=paths.api_state,
     )
 
 
@@ -203,9 +208,11 @@ def test_assumptions_apply_regeneration_returns_payload(
             "backend.api.routes.assumptions.apply_assumptions_and_regenerate",
             lambda **_: RegenerationResult(
                 run_id="run-assumptions",
-                revised_output_path="output/run-assumptions/assumptions/final_with_assumptions.md",
+                revised_output_path=(
+                    "output/run-assumptions/stage_files/010_assumptions/final_with_assumptions.md"
+                ),
                 revised_content="# Revised",
-                assumptions_path="output/run-assumptions/assumptions/edited.json",
+                assumptions_path="output/run-assumptions/stage_files/010_assumptions/edited.json",
             ),
         )
         response = client.post(
@@ -246,9 +253,11 @@ def test_assumptions_apply_accepts_free_form_value(
             "backend.api.routes.assumptions.apply_assumptions_and_regenerate",
             lambda **_: RegenerationResult(
                 run_id="run-assumptions",
-                revised_output_path="output/run-assumptions/assumptions/final_with_assumptions.md",
+                revised_output_path=(
+                    "output/run-assumptions/stage_files/010_assumptions/final_with_assumptions.md"
+                ),
                 revised_content="# Revised",
-                assumptions_path="output/run-assumptions/assumptions/edited.json",
+                assumptions_path="output/run-assumptions/stage_files/010_assumptions/edited.json",
             ),
         )
         response = client.post(
@@ -311,7 +320,7 @@ def test_apply_assumptions_does_not_persist_by_default(
     assert result.revised_output_path is None
     assert result.assumptions_path is None
     assert "# Revised body" in result.revised_content
-    assert not (runs_dir / "run-assumptions" / "assumptions").exists()
+    assert not (runs_dir / "run-assumptions" / "stage_files" / "assumptions").exists()
 
 
 def test_discover_missing_data_runs_two_pass_merge(

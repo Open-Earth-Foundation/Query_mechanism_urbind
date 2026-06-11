@@ -9,10 +9,14 @@ from backend.services.progress_tracker import ProgressTracker
 class TestProgressTrackerAddItem:
     def test_text_only_item(self, tmp_path: Path):
         tracker = ProgressTracker(tmp_path)
-        tracker.start_step("s1", "Step 1")
-        tracker.add_item("s1", "hello")
+        tracker.start_step("markdown_research", "Markdown extraction")
+        tracker.add_item("markdown_research", "hello")
 
         data = json.loads((tmp_path / "progress.json").read_text())
+        step = data["steps"][0]
+        assert step["id"] == "markdown_research"
+        assert step["stage_name"] == "markdown_extraction"
+        assert step["stage_number"] == 6
         items = data["steps"][0]["items"]
         assert len(items) == 1
         assert items[0] == {"text": "hello"}

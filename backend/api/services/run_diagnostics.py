@@ -15,6 +15,7 @@ from backend.api.models import (
     RunWriterMultiPassBatch,
 )
 from backend.api.services.run_store import RunRecord
+from backend.utils.artifact_manifest import resolve_manifest_alias
 from backend.utils.json_io import read_json_object
 
 _WARNING_MARKERS = (" - WARNING - ", "RETRY_EVENT ", "RETRY_EXHAUSTED ")
@@ -30,29 +31,24 @@ def build_run_diagnostics(
 ) -> RunDiagnosticsResponse:
     """Build one diagnostics payload from persisted run artifacts."""
     run_dir = resolve_run_dir(record, runs_dir)
-    run_log_payload = read_json_object(run_dir / "run.json") or {}
-    artifacts_payload = (
-        run_log_payload.get("artifacts")
-        if isinstance(run_log_payload.get("artifacts"), dict)
-        else {}
-    )
+    api_state_payload = read_json_object(run_dir / "api_state.json") or {}
     run_log_path = _resolve_artifact_path(None, run_dir, "run.log")
-    run_summary_path = _resolve_artifact_path(
-        artifacts_payload.get("run_summary"),
+    run_summary_path = resolve_manifest_alias(run_dir, "run_summary") or _resolve_artifact_path(
+        None,
         run_dir,
         "run_summary.txt",
     )
-    error_log_path = _resolve_artifact_path(
-        artifacts_payload.get("error_log"),
+    error_log_path = resolve_manifest_alias(run_dir, "error_log") or _resolve_artifact_path(
+        None,
         run_dir,
         "error_log.txt",
     )
 
-    llm_usage = run_log_payload.get("llm_usage")
+    llm_usage = api_state_payload.get("llm_usage")
     if not isinstance(llm_usage, dict):
         llm_usage = None
 
-    retry_summary = run_log_payload.get("retry_summary")
+    retry_summary = api_state_payload.get("retry_summary")
     if not isinstance(retry_summary, dict):
         retry_summary = None
 
@@ -70,10 +66,10 @@ def build_run_diagnostics(
             error_log=_build_artifact_label(error_log_path, run_dir),
         ),
         writer_citation_coverage=_read_writer_citation_coverage(
-            run_log_payload,
+            api_state_payload,
             run_log_path,
         ),
-        writer_multi_pass=_read_writer_multi_pass(run_log_payload, run_log_path),
+        writer_multi_pass=_read_writer_multi_pass(api_state_payload, run_log_path),
         llm_usage=llm_usage,
         retry_summary=retry_summary,
         warning_entries=_read_warning_entries(run_log_path),
@@ -84,8 +80,8 @@ def build_run_diagnostics(
 
 def resolve_run_dir(record: RunRecord, runs_dir: Path) -> Path:
     """Resolve the artifact directory for one run record."""
-    if record.run_log_path is not None:
-        return record.run_log_path.parent
+    if record.api_state_path is not None:
+        return record.api_state_path.parent
     if record.context_bundle_path is not None:
         return record.context_bundle_path.parent
     if record.final_output_path is not None:
@@ -98,7 +94,7 @@ def _resolve_artifact_path(
     run_dir: Path,
     fallback_name: str,
 ) -> Path | None:
-    """Resolve one artifact path from run.json while constraining it to ``run_dir``."""
+    """Resolve one artifact path from persisted metadata while constraining it to ``run_dir``."""
     run_dir_resolved = run_dir.resolve(strict=False)
     candidates: list[Path] = []
     if isinstance(raw_value, str) and raw_value.strip():
@@ -179,12 +175,12 @@ def _read_warning_entries(run_log_path: Path | None) -> list[str]:
 
 
 def _read_writer_citation_coverage(
-    run_log_payload: dict[str, object],
+    api_state_payload: dict[str, object],
     run_log_path: Path | None,
 ) -> RunWriterCitationCoverage | None:
     """Read persisted writer coverage metadata or infer it from ``run.log``."""
     payload = _normalize_writer_citation_coverage(
-        run_log_payload.get("writer_citation_coverage")
+        api_state_payload.get("writer_citation_coverage")
     )
     if payload is not None:
         return payload
@@ -206,11 +202,11 @@ def _read_writer_citation_coverage(
 
 
 def _read_writer_multi_pass(
-    run_log_payload: dict[str, object],
+    api_state_payload: dict[str, object],
     run_log_path: Path | None,
 ) -> RunWriterMultiPass | None:
     """Read persisted writer multi-pass payload or infer it from ``run.log``."""
-    payload = _normalize_writer_multi_pass(run_log_payload.get("writer_multi_pass"))
+    payload = _normalize_writer_multi_pass(api_state_payload.get("writer_multi_pass"))
     if payload is not None:
         return payload
     if run_log_path is None or not run_log_path.exists():

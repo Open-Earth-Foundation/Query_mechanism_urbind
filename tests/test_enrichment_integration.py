@@ -11,6 +11,7 @@ import pytest
 
 from backend.modules.web_researcher.module import run_enrichment_pipeline
 from backend.services.run_logger import RunLogger
+from backend.utils.artifact_writer import stage_file_dir_name
 from backend.utils.config import EnrichmentConfig, load_config
 from backend.utils.paths import create_run_paths
 from tests.support import build_test_app_config
@@ -243,14 +244,18 @@ class TestEnrichmentPipeline:
         assert "enrichment" in result
         enrichment = result["enrichment"]
         assert "gap_manifest" in enrichment
-        assert "assumptions" in enrichment
+        assert "assumptions" not in enrichment
+        assert "non_estimable" not in enrichment
+        assert "assumptions" in result
+        assumptions_payload = result["assumptions"]
+        assert isinstance(assumptions_payload, dict)
         assert "meta" in enrichment
         assert enrichment["meta"]["gap_analyst_model"] == "test-model"
 
         # Single-city query with no peer data: the anchor sufficiency check
         # correctly routes the field to non-estimable (insufficient anchors).
-        assert len(enrichment["assumptions"]) == 0
-        non_est = enrichment["non_estimable"]
+        assert len(assumptions_payload["assumptions"]) == 0
+        non_est = assumptions_payload["non_estimable"]
         assert len(non_est) >= 1
         anchor_records = [
             r for r in non_est
@@ -260,9 +265,56 @@ class TestEnrichmentPipeline:
         assert len(anchor_records) >= 1
 
         # Artifacts should be on disk
-        enrichment_dir = run_paths.base_dir / "enrichment"
+        enrichment_dir = run_paths.base_dir / "stage_files" / stage_file_dir_name(
+            "enrichment"
+        )
         assert enrichment_dir.exists()
         assert (enrichment_dir / "gap_manifest.json").exists()
+        assert (enrichment_dir / "external_source_search_stage.json").exists()
+        assert (enrichment_dir / "web_research_stage.json").exists()
+        assert not (enrichment_dir / "assumptions_stage.json").exists()
+        assumptions_dir = run_paths.base_dir / "stage_files" / stage_file_dir_name(
+            "assumptions"
+        )
+        enrichment_handoff_dir = (
+            run_paths.base_dir
+            / "stage_files"
+            / stage_file_dir_name("enrichment_context_handoff")
+        )
+        assumptions_handoff_dir = (
+            run_paths.base_dir
+            / "stage_files"
+            / stage_file_dir_name("assumptions_context_handoff")
+        )
+        assert (assumptions_dir / "assumptions_stage.json").exists()
+        assert (
+            enrichment_handoff_dir / "context_bundle_after_enrichment.json"
+        ).exists()
+        assert (
+            assumptions_handoff_dir / "context_bundle_after_assumptions.json"
+        ).exists()
+        assert (run_paths.base_dir / "stages" / "008_enrichment.json").exists()
+        assert (
+            run_paths.base_dir / "stages" / "009_enrichment_context_handoff.json"
+        ).exists()
+        assert (run_paths.base_dir / "stages" / "010_assumptions.json").exists()
+        assert (
+            run_paths.base_dir / "stages" / "011_assumptions_context_handoff.json"
+        ).exists()
+
+        enrichment_snapshot = json.loads(
+            (
+                enrichment_handoff_dir / "context_bundle_after_enrichment.json"
+            ).read_text(encoding="utf-8")
+        )
+        assumptions_snapshot = json.loads(
+            (
+                assumptions_handoff_dir / "context_bundle_after_assumptions.json"
+            ).read_text(encoding="utf-8")
+        )
+        assert "enrichment" in enrichment_snapshot
+        assert "assumptions" not in enrichment_snapshot
+        assert "assumptions" in assumptions_snapshot
 
     def test_pipeline_fallback_on_error(self, tmp_path: Path) -> None:
         """Pipeline returns original context_bundle on failure."""

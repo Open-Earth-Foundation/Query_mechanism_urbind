@@ -17,8 +17,10 @@ from backend.api.models import AssumptionsPayload, MissingDataItem, Regeneration
 from backend.api.services.context_chat import load_context_bundle, load_final_document
 from backend.api.services.run_store import RunRecord, RunStore
 from backend.modules.writer.agent import write_markdown
+from backend.utils.artifact_manifest import resolve_manifest_alias
+from backend.utils.artifact_writer import ArtifactWriter
 from backend.utils.config import AppConfig, get_openrouter_api_key
-from backend.utils.json_io import read_json, write_json
+from backend.utils.json_io import read_json
 
 logger = logging.getLogger(__name__)
 
@@ -110,9 +112,7 @@ def discover_missing_data_for_run(
     grouped = group_missing_data_by_city(final_items)
 
     if persist_artifacts:
-        assumptions_dir = _assumptions_dir(run_store, run_record.run_id)
-        assumptions_dir.mkdir(parents=True, exist_ok=True)
-        discovered_path = assumptions_dir / "discovered.json"
+        writer = ArtifactWriter(run_store.runs_dir / run_record.run_id, run_record.run_id)
         persisted = {
             "run_id": run_record.run_id,
             **discovery_payload,
@@ -121,11 +121,21 @@ def discover_missing_data_for_run(
                 for city, city_items in grouped.items()
             },
         }
-        write_json(discovered_path, persisted, default=str)
-        _update_run_log_artifacts(
-            run_store.runs_dir / run_record.run_id / "run.json",
-            {"assumptions_discovered": str(discovered_path)},
+        writer.write_stage_file(
+            "assumptions",
+            "discovered.json",
+            persisted,
+            alias="assumptions_discovered",
         )
+        writer.write_step_detail(
+            "assumptions_discovery",
+            {
+                "inputs": {"run_id": run_record.run_id},
+                "outputs": {"grouped_city_count": len(grouped)},
+                "metrics": {"item_count": len(final_items)},
+            },
+        )
+        writer.write_manifest()
 
     return {
         "run_id": run_record.run_id,
@@ -202,35 +212,52 @@ def apply_assumptions_and_regenerate(
     revised_output_path: str | None = None
     assumptions_path: str | None = None
     if persist_artifacts:
-        assumptions_dir = _assumptions_dir(run_store, run_record.run_id)
-        assumptions_dir.mkdir(parents=True, exist_ok=True)
+        run_dir = run_store.runs_dir / run_record.run_id
+        writer = ArtifactWriter(run_dir, run_record.run_id)
 
-        edited_path = assumptions_dir / "edited.json"
-        write_json(
-            edited_path,
+        edited_path = writer.write_stage_file(
+            "assumptions",
+            "edited.json",
             {
                 "run_id": run_record.run_id,
                 "edited_at": datetime.now(timezone.utc).isoformat(),
                 **payload.model_dump(),
             },
-            default=str,
+            alias="assumptions_edited",
         )
-        revised_context_path = assumptions_dir / "revised_context_bundle.json"
-        write_json(revised_context_path, revised_context_bundle, default=str)
+        revised_context_path = writer.write_stage_file(
+            "assumptions",
+            "revised_context_bundle.json",
+            revised_context_bundle,
+            alias="assumptions_revised_context_bundle",
+        )
 
-        revised_output_file_path = assumptions_dir / "final_with_assumptions.md"
+        revised_output_file_path = writer.stage_file_path(
+            "assumptions",
+            "final_with_assumptions.md",
+        )
+        revised_output_file_path.parent.mkdir(parents=True, exist_ok=True)
         revised_output_file_path.write_text(rendered, encoding="utf-8")
-        revised_output_path = str(revised_output_file_path)
-        assumptions_path = str(edited_path)
-
-        _update_run_log_artifacts(
-            run_store.runs_dir / run_record.run_id / "run.json",
+        writer.register_file(
+            "assumptions_final_output",
+            revised_output_file_path,
+            artifact_type="stage_file",
+        )
+        writer.write_step_detail(
+            "assumptions_apply",
             {
-                "assumptions_edited": assumptions_path,
-                "assumptions_revised_context_bundle": str(revised_context_path),
-                "assumptions_final_output": revised_output_path,
+                "inputs": {"item_count": len(payload.items)},
+                "outputs": {
+                    "edited": edited_path.relative_to(run_dir).as_posix(),
+                    "revised_context_bundle": revised_context_path.relative_to(run_dir).as_posix(),
+                    "final_output": revised_output_file_path.relative_to(run_dir).as_posix(),
+                },
+                "metrics": {"revised_output_chars": len(rendered)},
             },
         )
+        writer.write_manifest()
+        revised_output_path = str(revised_output_file_path)
+        assumptions_path = str(edited_path)
 
     return RegenerationResult(
         run_id=run_record.run_id,
@@ -265,11 +292,19 @@ def rewrite_document_with_assumptions(
 
 def load_latest_assumptions_payload(run_store: RunStore, run_id: str) -> dict[str, object]:
     """Load most recent assumptions artifacts for a run when available."""
-    assumptions_dir = _assumptions_dir(run_store, run_id)
-    discovered_path = assumptions_dir / "discovered.json"
-    edited_path = assumptions_dir / "edited.json"
-    revised_output_path = assumptions_dir / "final_with_assumptions.md"
-    revised_context_path = assumptions_dir / "revised_context_bundle.json"
+    run_dir = run_store.runs_dir / run_id
+    discovered_path = resolve_manifest_alias(run_dir, "assumptions_discovered") or (
+        run_dir / "stage_files" / "assumptions" / "discovered.json"
+    )
+    edited_path = resolve_manifest_alias(run_dir, "assumptions_edited") or (
+        run_dir / "stage_files" / "assumptions" / "edited.json"
+    )
+    revised_output_path = resolve_manifest_alias(run_dir, "assumptions_final_output") or (
+        run_dir / "stage_files" / "assumptions" / "final_with_assumptions.md"
+    )
+    revised_context_path = resolve_manifest_alias(
+        run_dir, "assumptions_revised_context_bundle"
+    ) or (run_dir / "stage_files" / "assumptions" / "revised_context_bundle.json")
 
     payload: dict[str, object] = {"run_id": run_id}
     if discovered_path.exists():
@@ -542,29 +577,6 @@ def _resolve_context_bundle_path(
         if candidate.exists():
             return candidate
     raise ValueError(f"Context bundle is missing for run `{run_id}`.")
-
-
-def _assumptions_dir(run_store: RunStore, run_id: str) -> Path:
-    """Return assumptions artifact directory for a run."""
-    return run_store.runs_dir / run_id / "assumptions"
-
-
-def _update_run_log_artifacts(run_log_path: Path, updates: dict[str, str]) -> None:
-    """Update run log artifact mapping with additional assumptions artifacts."""
-    if not run_log_path.exists():
-        return
-    payload = read_json(run_log_path)
-    if not isinstance(payload, dict):
-        return
-    artifacts = payload.get("artifacts")
-    if not isinstance(artifacts, dict):
-        artifacts = {}
-        payload["artifacts"] = artifacts
-    for key, value in updates.items():
-        artifacts[key] = value
-    write_json(run_log_path, payload, default=str)
-
-
 __all__ = [
     "apply_assumptions_and_regenerate",
     "apply_assumptions_to_context",

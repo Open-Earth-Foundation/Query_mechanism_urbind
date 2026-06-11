@@ -15,9 +15,24 @@ import time
 from pathlib import Path
 from typing import Any
 
+from backend.utils.artifact_writer import resolve_stage_number
+
 logger = logging.getLogger(__name__)
 
 _VERSION = 1
+_PROGRESS_STAGE_ALIASES = {
+    "external_sources": "enrichment",
+    "gap_analysis": "enrichment",
+    "markdown_research": "markdown_extraction",
+    "assumptions": "assumptions",
+    "web_research": "enrichment",
+    "writer": "writer",
+}
+
+
+def _canonical_stage_name(step_id: str) -> str:
+    """Return the artifact-stage name associated with one progress step."""
+    return _PROGRESS_STAGE_ALIASES.get(step_id, step_id)
 
 
 class ProgressTracker:
@@ -41,9 +56,12 @@ class ProgressTracker:
     def start_step(self, step_id: str, label: str) -> None:
         """Mark *step_id* as ``running`` and flush to disk."""
         try:
+            stage_name = _canonical_stage_name(step_id)
             with self._lock:
                 entry: dict[str, Any] = {
                     "id": step_id,
+                    "stage_name": stage_name,
+                    "stage_number": resolve_stage_number(stage_name),
                     "label": label,
                     "status": "running",
                     "started_at": self._now(),

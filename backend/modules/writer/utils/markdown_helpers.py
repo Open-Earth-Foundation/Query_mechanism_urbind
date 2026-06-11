@@ -103,9 +103,9 @@ def extract_selected_city_names(
     context_bundle: dict[str, object],
     markdown_bundle: dict[str, object],
 ) -> list[str]:
-    """Resolve selected city names from bundle metadata or excerpts."""
+    """Resolve selected city names from root bundle metadata or excerpts."""
     for key in ("selected_city_names", "inspected_city_names"):
-        raw = markdown_bundle.get(key)
+        raw = context_bundle.get(key)
         if isinstance(raw, list):
             values = [str(item) for item in raw if isinstance(item, str)]
             resolved = dedupe_city_names(values)
@@ -113,7 +113,7 @@ def extract_selected_city_names(
                 return resolved
 
     for key in ("selected_cities", "inspected_cities"):
-        raw = markdown_bundle.get(key)
+        raw = context_bundle.get(key)
         if isinstance(raw, list):
             values = [str(item) for item in raw if isinstance(item, str)]
             resolved = dedupe_city_names(values)
@@ -129,13 +129,6 @@ def extract_selected_city_names(
     resolved_from_excerpts = dedupe_city_names(excerpt_city_names)
     if resolved_from_excerpts:
         return resolved_from_excerpts
-
-    fallback_context = context_bundle.get("selected_cities")
-    if isinstance(fallback_context, list):
-        fallback_values = [str(item) for item in fallback_context if isinstance(item, str)]
-        resolved = dedupe_city_names(fallback_values)
-        if resolved:
-            return resolved
     return []
 
 
@@ -286,7 +279,7 @@ def _extract_enrichment_evidence_city_keys(context_bundle: dict[str, object]) ->
         return set()
 
     city_keys: set[str] = set()
-    for key in ("external_evidence", "web_findings", "assumptions"):
+    for key in ("external_evidence", "web_findings"):
         city_keys.update(_extract_city_keys_from_records(enrichment.get(key)))
 
     for record in _iter_record_dicts(enrichment.get("enriched_fields")):
@@ -297,6 +290,10 @@ def _extract_enrichment_evidence_city_keys(context_bundle: dict[str, object]) ->
         resolved_key = city_key(str(record.get("city", "")))
         if resolved_key:
             city_keys.add(resolved_key)
+    assumptions = context_bundle.get("assumptions")
+    if isinstance(assumptions, dict):
+        for key in ("assumptions", "non_estimable"):
+            city_keys.update(_extract_city_keys_from_records(assumptions.get(key)))
     return city_keys
 
 

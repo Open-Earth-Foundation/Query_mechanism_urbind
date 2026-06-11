@@ -22,6 +22,7 @@ from backend.modules.writer.utils.markdown_helpers import (
     extract_markdown_bundle,
     extract_markdown_excerpts as extract_bundle_excerpts,
 )
+from backend.utils.artifact_manifest import resolve_manifest_alias
 from backend.utils.config import AppConfig
 from backend.utils.tokenization import count_tokens
 from backend.api.services.chat_followup_research import followup_bundle_dir
@@ -74,7 +75,9 @@ def load_context_for_record(
     )
     final_document = load_final_document(final_path)
     context_bundle = load_context_bundle(context_path)
-    markdown_excerpts_path = context_path.parent / "markdown" / "excerpts.json"
+    markdown_excerpts_path = resolve_manifest_alias(
+        context_path.parent, "markdown_excerpts"
+    )
     context_bundle, prompt_context_tokens, prompt_context_kind, cache_status = (
         ensure_prompt_context_cache(
             context_bundle_path=context_path,
@@ -256,7 +259,7 @@ def load_followup_bundle(
     if not context_bundle_path.exists():
         raise ValueError(f"Follow-up bundle `{bundle_id}` is missing context_bundle.json.")
     context_bundle = load_context_bundle(context_bundle_path)
-    markdown_excerpts_path = bundle_dir / "markdown" / "excerpts.json"
+    markdown_excerpts_path = resolve_manifest_alias(bundle_dir, "markdown_excerpts")
     context_bundle, prompt_context_tokens, prompt_context_kind, cache_status = (
         ensure_prompt_context_cache(
             context_bundle_path=context_bundle_path,

@@ -14,12 +14,18 @@ from pathlib import Path
 from typing import Any
 
 from backend.modules.web_researcher.assumptions_estimator import run_assumptions_estimator
+from backend.modules.web_researcher.assumptions_context import (
+    build_assumptions_payload,
+    city_field_pairs,
+    serialize_assumptions_artifacts,
+)
 from backend.modules.web_researcher.context_merger import (
     compute_field_statuses,
-    merge_enrichment_into_context,
+    merge_enrichment_evidence_into_context,
     serialize_enrichment_artifacts,
 )
 from backend.modules.web_researcher.external_agent import run_external_source_enrichment
+from backend.modules.web_researcher.external_sources import EXTERNAL_SOURCE_SEARCH_AUDIT_FILENAME
 from backend.modules.web_researcher.freshness import check_freshness
 from backend.modules.web_researcher.gap_analysis import (
     decompose_fields,
@@ -33,6 +39,239 @@ from backend.services.run_logger import RunLogger
 from backend.utils.config import AppConfig
 
 logger = logging.getLogger(__name__)
+
+
+def _build_enrichment_stage_flags(
+    *,
+    config: AppConfig,
+    gap_manifest: Any,
+) -> dict[str, Any]:
+    """Build the stable flag payload for enrichment logging."""
+    return {
+        "enrichment_enabled": bool(config.enrichment.enabled),
+        "use_split_gap_flow": bool(config.enrichment.use_split_gap_flow),
+        "web_research_enabled": bool(config.enrichment.web_research_enabled),
+        "external_source_search_enabled": bool(
+            config.enrichment.external_source_search_enabled
+        ),
+        "gap_analysis_executed": True,
+        "web_research_executed": bool(
+            config.enrichment.web_research_enabled and gap_manifest.city_gaps
+        ),
+        "external_source_search_executed": bool(
+            config.enrichment.external_source_search_enabled and gap_manifest.city_gaps
+        ),
+        "enrichment_model": config.enrichment.model,
+    }
+
+
+def _build_gap_analysis_artifact(
+    *,
+    question: str,
+    context_bundle: dict[str, Any],
+    gap_manifest: Any,
+    config: AppConfig,
+) -> dict[str, Any]:
+    """Build the gap-analysis enrichment sub-artifact."""
+    city_gap_payloads = [gap.model_dump(mode="json") for gap in gap_manifest.city_gaps]
+    query_field_payloads = [field.model_dump(mode="json") for field in gap_manifest.query_fields]
+    blank_field_count = sum(len(gap.blank_fields) for gap in gap_manifest.city_gaps)
+    stale_field_count = sum(len(gap.stale_flags) for gap in gap_manifest.city_gaps)
+    bundled_field_count = sum(len(gap.bundled_fields) for gap in gap_manifest.city_gaps)
+    gap_field_count = blank_field_count + stale_field_count + bundled_field_count
+    return {
+        "status": "completed",
+        "flags": {
+            "use_split_gap_flow": bool(config.enrichment.use_split_gap_flow),
+        },
+        "inputs": {
+            "question": question,
+            "has_markdown_context": isinstance(context_bundle.get("markdown"), dict),
+        },
+        "outputs": {
+            "query_fields": query_field_payloads,
+            "city_gaps": city_gap_payloads,
+            "non_estimable_fields": list(gap_manifest.non_estimable_fields),
+        },
+        "metrics": {
+            "query_field_count": len(query_field_payloads),
+            "city_gap_count": len(city_gap_payloads),
+            "gap_field_count": gap_field_count,
+            "blank_field_count": blank_field_count,
+            "stale_field_count": stale_field_count,
+            "bundled_field_count": bundled_field_count,
+            "non_estimable_field_count": len(gap_manifest.non_estimable_fields),
+        },
+    }
+
+
+def _build_external_sources_artifact(
+    *,
+    enabled: bool,
+    executed: bool,
+    external_evidence: list[dict[str, Any]],
+    external_resolutions: list[dict[str, Any]],
+    external_no_evidence: list[dict[str, Any]],
+    tool_calls: list[dict[str, object]],
+    search_audit: dict[str, Any] | None = None,
+    search_audit_path: str | None = None,
+) -> dict[str, Any]:
+    """Build the external-sources enrichment sub-artifact."""
+    filled_city_fields = city_field_pairs(
+        [
+            record
+            for record in external_resolutions
+            if str(record.get("action", "")).strip().casefold() == "fill"
+        ]
+    )
+    unresolved_city_fields = city_field_pairs(
+        [
+            record
+            for record in external_resolutions
+            if str(record.get("action", "")).strip().casefold() == "unresolved"
+        ]
+    )
+    no_evidence_city_fields = city_field_pairs(external_no_evidence)
+    audit_payload = search_audit if isinstance(search_audit, dict) else {}
+    metrics_payload = audit_payload.get("metrics")
+    audit_metrics = metrics_payload if isinstance(metrics_payload, dict) else {}
+    return {
+        "status": "completed" if executed else "skipped",
+        "skip_reason": None if executed else "disabled_or_no_gaps",
+        "flags": {
+            "external_source_search_enabled": enabled,
+            "external_source_search_executed": executed,
+        },
+        "outputs": {
+            "external_source_validated_claims": external_evidence,
+            "external_source_resolutions": external_resolutions,
+            "external_source_no_evidence": external_no_evidence,
+            "tool_calls": tool_calls,
+            "filled_city_fields": filled_city_fields,
+            "unresolved_city_fields": unresolved_city_fields,
+            "no_evidence_city_fields": no_evidence_city_fields,
+            "searched_city_fields": audit_payload.get("searched_city_fields", []),
+            "rejected_claims": audit_payload.get("rejected_claims", []),
+            "unused_candidates": audit_payload.get("unused_candidates", []),
+            "unresolved_searched_city_fields": audit_payload.get(
+                "unresolved_searched_city_fields", []
+            ),
+            "search_audit_artifact": search_audit_path,
+        },
+        "metrics": {
+            "external_evidence_count": len(external_evidence),
+            "external_resolution_count": len(external_resolutions),
+            "external_no_evidence_count": len(external_no_evidence),
+            "tool_call_count": len(tool_calls),
+            "filled_city_field_count": len(filled_city_fields),
+            "unresolved_city_field_count": len(unresolved_city_fields),
+            "no_evidence_city_field_count": len(no_evidence_city_fields),
+            "searched_city_field_count": audit_metrics.get("searched_city_field_count"),
+            "candidate_count": audit_metrics.get("candidate_count"),
+            "validated_claim_count": audit_metrics.get("validated_claim_count"),
+            "rejected_claim_count": audit_metrics.get("rejected_claim_count"),
+            "unused_candidate_count": audit_metrics.get("unused_candidate_count"),
+            "unresolved_searched_city_field_count": audit_metrics.get(
+                "unresolved_searched_city_field_count"
+            ),
+            "max_turn_exceeded_count": audit_metrics.get("max_turn_exceeded_count"),
+            "fallback_finalization_count": audit_metrics.get(
+                "fallback_finalization_count"
+            ),
+        },
+    }
+
+
+def _build_web_research_artifact(
+    *,
+    enabled: bool,
+    executed: bool,
+    search_batches: list[dict[str, Any]],
+    web_findings: list[dict[str, Any]],
+    freshness_results: list[dict[str, Any]],
+    national_findings: list[dict[str, Any]],
+    comparative_findings: list[dict[str, Any]],
+) -> dict[str, Any]:
+    """Build the web-research enrichment sub-artifact."""
+    added_city_fields = city_field_pairs(web_findings)
+    freshness_city_fields = city_field_pairs(freshness_results)
+    return {
+        "status": "completed" if executed else "skipped",
+        "skip_reason": None if executed else "disabled_or_no_gaps",
+        "flags": {
+            "web_research_enabled": enabled,
+            "web_research_executed": executed,
+            "freshness_check_executed": bool(freshness_results),
+        },
+        "outputs": {
+            "search_batches": search_batches,
+            "web_findings": web_findings,
+            "freshness_results": freshness_results,
+            "national_findings": national_findings,
+            "comparative_findings": comparative_findings,
+            "added_city_fields": added_city_fields,
+            "freshness_touched_city_fields": freshness_city_fields,
+        },
+        "metrics": {
+            "search_batch_count": len(search_batches),
+            "search_query_count": sum(
+                len(batch.get("queries", []))
+                for batch in search_batches
+                if isinstance(batch.get("queries"), list)
+            ),
+            "web_finding_count": len(web_findings),
+            "freshness_result_count": len(freshness_results),
+            "national_finding_count": len(national_findings),
+            "comparative_finding_count": len(comparative_findings),
+            "added_city_field_count": len(added_city_fields),
+            "freshness_touched_city_field_count": len(freshness_city_fields),
+        },
+    }
+
+
+def _write_context_handoff_stage(
+    *,
+    run_logger: RunLogger,
+    progress: ProgressTracker | None,
+    stage_name: str,
+    snapshot_filename: str,
+    payload_filename: str,
+    payload_key: str,
+    payload: dict[str, Any] | None,
+    progress_label: str,
+    metrics: dict[str, Any],
+) -> None:
+    """Write a context handoff stage from inside the enrichment pipeline."""
+    if progress:
+        progress.start_step(stage_name, f"Freezing {stage_name.replace('_', ' ')}")
+    context_snapshot_path = run_logger.write_stage_file(
+        stage_name,
+        snapshot_filename,
+        run_logger.context_bundle,
+        alias=f"{stage_name}_context_snapshot",
+    )
+    outputs = {
+        "context_bundle_snapshot": run_logger.artifact_label(context_snapshot_path),
+    }
+    if isinstance(payload, dict):
+        payload_path = run_logger.write_stage_file(
+            stage_name,
+            payload_filename,
+            payload,
+            alias=f"{stage_name}_{payload_key}",
+        )
+        outputs[payload_key] = run_logger.artifact_label(payload_path)
+    if progress:
+        progress.add_item(stage_name, progress_label)
+        progress.complete_step(stage_name)
+    run_logger.write_stage_detail(
+        stage_name,
+        {
+            "inputs": {f"has_{payload_key}": isinstance(payload, dict)},
+            "outputs": outputs,
+            "metrics": metrics,
+        },
+    )
 
 
 def run_enrichment_pipeline(
@@ -142,13 +381,22 @@ def run_enrichment_pipeline(
         external_evidence = []
         external_resolutions = []
         external_no_evidence = []
+        external_tool_calls: list[dict[str, object]] = []
+        external_search_audit: dict[str, Any] = {}
+        search_batches = []
 
         # Governed external Markdown search runs by default when tagged sources exist.
         if config.enrichment.external_source_search_enabled and gap_manifest.city_gaps:
             if progress:
                 progress.start_step("external_sources", "Searching tagged external sources")
                 progress.add_item("external_sources", "Running governed Markdown search...")
-            external_evidence, external_resolutions, external_no_evidence, _tool_calls = (
+            (
+                external_evidence,
+                external_resolutions,
+                external_no_evidence,
+                external_tool_calls,
+                external_search_audit,
+            ) = (
                 run_external_source_enrichment(
                     question=question,
                     context_bundle=context_bundle,
@@ -176,6 +424,16 @@ def run_enrichment_pipeline(
                 len(external_resolutions),
                 len(external_no_evidence),
             )
+
+        external_search_audit_path: str | None = None
+        if external_search_audit:
+            audit_path = run_logger.write_stage_file(
+                "enrichment",
+                EXTERNAL_SOURCE_SEARCH_AUDIT_FILENAME,
+                external_search_audit,
+                alias="enrichment_external_source_search_audit",
+            )
+            external_search_audit_path = run_logger.artifact_label(audit_path)
 
         if config.enrichment.web_research_enabled and gap_manifest.city_gaps:
             if progress:
@@ -292,14 +550,123 @@ def run_enrichment_pipeline(
             external_resolutions=external_resolutions,
         )
 
-        if progress:
-            progress.start_step("assumptions", "Estimating assumptions")
         assumptions_model = (
             config.enrichment.assumptions_estimator_model or config.enrichment.model
         )
+        enrichment_elapsed = time.monotonic() - start_time
+        stage_flags = _build_enrichment_stage_flags(
+            config=config,
+            gap_manifest=gap_manifest,
+        )
+        substage_artifacts = {
+            "gap_analysis": _build_gap_analysis_artifact(
+                question=question,
+                context_bundle=context_bundle,
+                gap_manifest=gap_manifest,
+                config=config,
+            ),
+            "external_sources": _build_external_sources_artifact(
+                enabled=bool(config.enrichment.external_source_search_enabled),
+                executed=bool(
+                    config.enrichment.external_source_search_enabled
+                    and gap_manifest.city_gaps
+                ),
+                external_evidence=[
+                    record.model_dump(mode="json") for record in external_evidence
+                ],
+                external_resolutions=[
+                    record.model_dump(mode="json") for record in external_resolutions
+                ],
+                external_no_evidence=[
+                    record.model_dump(mode="json") for record in external_no_evidence
+                ],
+                tool_calls=external_tool_calls,
+                search_audit=external_search_audit,
+                search_audit_path=external_search_audit_path,
+            ),
+            "web_research": _build_web_research_artifact(
+                enabled=bool(config.enrichment.web_research_enabled),
+                executed=bool(
+                    config.enrichment.web_research_enabled and gap_manifest.city_gaps
+                ),
+                search_batches=[
+                    batch.model_dump(mode="json") for batch in search_batches
+                ],
+                web_findings=[
+                    record.model_dump(mode="json") for record in web_findings
+                ],
+                freshness_results=[
+                    record.model_dump(mode="json") for record in freshness_results
+                ],
+                national_findings=[
+                    record.model_dump(mode="json") for record in national_findings
+                ],
+                comparative_findings=[
+                    record.model_dump(mode="json") for record in comparative_findings
+                ],
+            ),
+        }
+
+        enriched = merge_enrichment_evidence_into_context(
+            context_bundle=context_bundle,
+            gap_manifest=gap_manifest,
+            web_findings=web_findings,
+            freshness_results=freshness_results,
+            external_evidence=external_evidence,
+            external_resolutions=external_resolutions,
+            external_no_evidence=external_no_evidence,
+            config_model=config.enrichment.model,
+            elapsed_seconds=enrichment_elapsed,
+        )
+
+        serialize_enrichment_artifacts(
+            enriched,
+            base_dir,
+            run_logger,
+            stage_flags=stage_flags,
+            substage_artifacts=substage_artifacts,
+        )
+        run_logger.context_bundle = enriched
+        run_logger.write_context_bundle()
+        enrichment_payload = enriched.get("enrichment")
+        _write_context_handoff_stage(
+            run_logger=run_logger,
+            progress=progress,
+            stage_name="enrichment_context_handoff",
+            snapshot_filename="context_bundle_after_enrichment.json",
+            payload_filename="enrichment_context_payload.json",
+            payload_key="enrichment_context_payload",
+            payload=enrichment_payload if isinstance(enrichment_payload, dict) else None,
+            progress_label="Enrichment context snapshot written",
+            metrics={
+                "context_bundle_top_level_keys": len(enriched),
+                "enriched_field_count": len(enriched_fields),
+                "web_finding_count": len(web_findings),
+                "external_evidence_count": len(external_evidence),
+            },
+        )
+
+        gap_field_count = sum(
+            len(gap.blank_fields) + len(gap.stale_flags) + len(gap.bundled_fields)
+            for gap in gap_manifest.city_gaps
+        )
+        run_logger.record_decision(
+            {
+                "step": "enrichment",
+                "status": "completed",
+                "city_gap_count": len(gap_manifest.city_gaps),
+                "gap_field_count": gap_field_count,
+                "web_findings": len(web_findings),
+                "external_evidence": len(external_evidence),
+                "elapsed_seconds": round(enrichment_elapsed, 2),
+            }
+        )
+
+        if progress:
+            progress.start_step("assumptions", "Estimating assumptions")
         assumptions, non_estimable, saturation_warning = run_assumptions_estimator(
             question=question,
-            context_bundle=context_bundle,
+            context_bundle=enriched,
             gap_manifest=gap_manifest,
             enriched_fields=enriched_fields,
             config=config,
@@ -324,32 +691,36 @@ def run_enrichment_pipeline(
             progress.complete_step("assumptions")
 
         elapsed = time.monotonic() - start_time
-
-        enriched = merge_enrichment_into_context(
-            context_bundle=context_bundle,
-            gap_manifest=gap_manifest,
-            web_findings=web_findings,
-            freshness_results=freshness_results,
-            external_evidence=external_evidence,
-            external_resolutions=external_resolutions,
-            external_no_evidence=external_no_evidence,
+        assumptions_payload = build_assumptions_payload(
+            assumptions_model=assumptions_model,
             assumptions=assumptions,
             non_estimable=non_estimable,
             saturation_warning=saturation_warning,
-            config_model=config.enrichment.model,
-            assumptions_model=assumptions_model,
             elapsed_seconds=elapsed,
         )
-
-        serialize_enrichment_artifacts(enriched, base_dir, run_logger)
-
+        enriched["assumptions"] = assumptions_payload
+        serialize_assumptions_artifacts(assumptions_payload, base_dir, run_logger)
+        run_logger.context_bundle = enriched
+        run_logger.write_context_bundle()
+        _write_context_handoff_stage(
+            run_logger=run_logger,
+            progress=progress,
+            stage_name="assumptions_context_handoff",
+            snapshot_filename="context_bundle_after_assumptions.json",
+            payload_filename="assumptions_context_payload.json",
+            payload_key="assumptions_context_payload",
+            payload=assumptions_payload,
+            progress_label="Assumptions context snapshot written",
+            metrics={
+                "context_bundle_top_level_keys": len(enriched),
+                "assumption_count": len(assumptions),
+                "non_estimable_output_count": len(non_estimable),
+            },
+        )
         run_logger.record_decision(
             {
-                "step": "enrichment",
+                "step": "assumptions",
                 "status": "completed",
-                "total_gaps": len(gap_manifest.city_gaps),
-                "web_findings": len(web_findings),
-                "external_evidence": len(external_evidence),
                 "assumptions_produced": len(assumptions),
                 "non_estimable_flagged": len(non_estimable),
                 "elapsed_seconds": round(elapsed, 2),

@@ -58,7 +58,9 @@ def render_writer_export_markdown(context_bundle: Mapping[str, object]) -> str:
     writer_context_bundle = build_writer_export_context(context_bundle)
     markdown_bundle = extract_markdown_bundle(writer_context_bundle)
     excerpts = extract_markdown_excerpts(markdown_bundle)
-    selected_cities = _read_string_list(writer_context_bundle.get("selected_cities"))
+    selected_cities = _read_string_list(writer_context_bundle.get("selected_city_names"))
+    if not selected_cities:
+        selected_cities = _read_string_list(writer_context_bundle.get("selected_cities"))
     research_question = _read_string(writer_context_bundle.get("research_question"))
     analysis_mode = _read_string(writer_context_bundle.get("analysis_mode")) or "aggregate"
 

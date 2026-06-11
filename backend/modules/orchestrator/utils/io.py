@@ -3,24 +3,11 @@
 from __future__ import annotations
 
 import json
-from pathlib import Path
 
 from backend.services.run_logger import RunLogger
 from backend.utils.config import AppConfig
+from backend.utils.json_io import write_json
 from backend.utils.paths import RunPaths
-
-def write_json(path: Path, payload: object) -> None:
-    """
-    Write payload as formatted JSON to file.
-
-    Args:
-        path: Target file path
-        payload: Object to serialize as JSON
-    """
-    path.write_text(
-        json.dumps(payload, indent=2, ensure_ascii=False, default=str),
-        encoding="utf-8",
-    )
 
 
 def load_context_bundle(paths: RunPaths) -> dict:
@@ -73,7 +60,7 @@ def write_final_output(
     )
     run_logger.context_bundle = write_prompt_context_cache(
         context_bundle_path=paths.context_bundle,
-        markdown_excerpts_path=paths.markdown_excerpts,
+        markdown_excerpts_path=run_logger.artifact_path("markdown_excerpts"),
         context_bundle=run_logger.context_bundle,
         prompt_context_tokens=prompt_context_tokens,
         prompt_context_kind=prompt_context_kind,

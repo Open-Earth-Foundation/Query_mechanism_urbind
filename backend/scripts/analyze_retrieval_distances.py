@@ -3,13 +3,13 @@ Brief: Summarize Chroma retrieval distance distributions from previous runs.
 
 Inputs:
 - CLI args:
-  - --runs-dir: Directory containing run folders with `markdown/retrieval.json` (default: output).
+  - --runs-dir: Directory containing run folders with `stage_files/003_retrieval/retrieval.json` (default: output).
   - --city: Optional city filter; repeatable.
   - --limit-runs: Optional max number of runs to scan (newest-first).
   - --thresholds: Optional comma-separated list of distance thresholds to tabulate (e.g. "0.5,1.0,2.0").
   - --show-per-run: If set, prints one-line per-run distance summary.
 - Files:
-  - `<runs-dir>/<run_id>/markdown/retrieval.json` (produced when VECTOR_STORE_ENABLED=true).
+  - `<runs-dir>/<run_id>/stage_files/003_retrieval/retrieval.json` (produced when VECTOR_STORE_ENABLED=true).
 
 Outputs:
 - Logs overall distance percentiles (min/p50/p90/p95/p99/max) and per-city summaries.
@@ -132,15 +132,12 @@ def _read_distance(value: object) -> float | None:
 
 def _iter_retrieval_paths(runs_dir: Path) -> list[Path]:
     """Find retrieval.json files, handling both parent dir and specific run dir."""
-    # Check if runs_dir itself contains markdown/retrieval.json (specific run folder)
-    direct_path = runs_dir / "markdown" / "retrieval.json"
+    direct_path = runs_dir / "stage_files" / "003_retrieval" / "retrieval.json"
     if direct_path.exists():
         return [direct_path]
-    
-    # Otherwise, search for */markdown/retrieval.json (parent directory)
-    candidates = list(runs_dir.glob("*/markdown/retrieval.json"))
-    # newest-first by run folder mtime
-    candidates.sort(key=lambda p: p.parent.parent.stat().st_mtime, reverse=True)
+
+    candidates = list(runs_dir.glob("*/stage_files/003_retrieval/retrieval.json"))
+    candidates.sort(key=lambda path: path.parents[2].stat().st_mtime, reverse=True)
     return candidates
 
 
@@ -193,7 +190,7 @@ def main() -> None:
         if not isinstance(chunks, list):
             continue
 
-        run_id = path.parent.parent.name
+        run_id = path.parents[2].name
         run_distances: list[float] = []
         for chunk in chunks:
             if not isinstance(chunk, dict):

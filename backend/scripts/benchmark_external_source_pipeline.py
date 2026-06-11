@@ -17,7 +17,8 @@ Outputs:
 - `benchmark_summary.json`: case-level extraction/resolution scores and tool-call counts.
 - `context_bundle.json`: writer-ready enrichment context assembled from external evidence.
 - `writer_answer.md`: generated writer answer when `--skip-writer` is not set.
-- `external_sources/external_evidence.json`: per-run controlled tool audit artifact.
+- `stage_files/008_enrichment/external_source_search_audit.json`: per-run controlled
+  tool audit artifact with candidates, validated claims, rejected claims, and tool calls.
 
 Usage (from project root):
 - python -m backend.scripts.benchmark_external_source_pipeline
@@ -35,6 +36,9 @@ from typing import Any
 
 from backend.modules.web_researcher.context_merger import merge_enrichment_into_context
 from backend.modules.web_researcher.external_agent import run_external_source_enrichment
+from backend.modules.web_researcher.external_sources import (
+    EXTERNAL_SOURCE_SEARCH_AUDIT_FILENAME,
+)
 from backend.modules.web_researcher.models import (
     CityGap,
     ExternalEvidenceClaim,
@@ -45,6 +49,7 @@ from backend.modules.writer.agent import write_markdown
 from backend.utils.config import load_config, resolve_openrouter_api_key
 from backend.utils.json_io import write_json
 from backend.utils.logging_config import setup_logger
+from backend.utils.artifact_writer import stage_file_dir_name
 
 logger = logging.getLogger(__name__)
 
@@ -118,7 +123,7 @@ def main() -> None:
 
     context_bundle = _build_context_bundle(city, question)
     gap_manifest = _build_gap_manifest(city, cases)
-    claims, resolutions, no_evidence, tool_calls = run_external_source_enrichment(
+    claims, resolutions, no_evidence, tool_calls, search_audit = run_external_source_enrichment(
         question=question,
         context_bundle=context_bundle,
         gap_manifest=gap_manifest,
@@ -126,6 +131,13 @@ def main() -> None:
         config=config,
         api_key=api_key,
         run_id=run_id,
+    )
+    audit_dir = output_dir / "stage_files" / stage_file_dir_name("enrichment")
+    audit_dir.mkdir(parents=True, exist_ok=True)
+    write_json(
+        audit_dir / EXTERNAL_SOURCE_SEARCH_AUDIT_FILENAME,
+        search_audit,
+        ensure_ascii=False,
     )
     enriched_context = merge_enrichment_into_context(
         context_bundle=context_bundle,
