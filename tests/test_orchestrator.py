@@ -415,9 +415,11 @@ def test_run_pipeline_refreshes_vector_store_snapshot_after_auto_update(
         "backend.modules.orchestrator.module.build_vector_store_snapshot",
         _fake_build_vector_store_snapshot,
     )
-    monkeypatch.setattr(
-        "backend.modules.orchestrator.module.update_markdown_index",
-        lambda **_: IndexStats(
+    update_calls: list[dict[str, object]] = []
+
+    def _fake_update_markdown_index(**kwargs: object) -> IndexStats:
+        update_calls.append(kwargs)
+        return IndexStats(
             files_indexed=1,
             files_changed=1,
             files_unchanged=0,
@@ -437,7 +439,11 @@ def test_run_pipeline_refreshes_vector_store_snapshot_after_auto_update(
                     "removed_previous_chunk_count": 1,
                 }
             ],
-        ),
+        )
+
+    monkeypatch.setattr(
+        "backend.modules.orchestrator.module.update_markdown_index",
+        _fake_update_markdown_index,
     )
     monkeypatch.setattr(
         "backend.modules.orchestrator.module.retrieve_chunks_for_queries",
@@ -447,6 +453,8 @@ def test_run_pipeline_refreshes_vector_store_snapshot_after_auto_update(
     paths = run_pipeline(
         question="What initiatives exist for Munich?",
         config=config,
+        selected_cities=["Munich"],
+        vector_update_docs_dir=docs_dir,
         markdown_func=_stub_markdown,
         writer_func=_stub_writer,
     )
@@ -469,6 +477,8 @@ def test_run_pipeline_refreshes_vector_store_snapshot_after_auto_update(
     assert auto_update["ran"] is True
     assert auto_update["update_mode"] == "incremental_update"
     assert auto_update["stats"]["files_changed"] == 1
+    assert update_calls[0]["docs_dir"] == docs_dir
+    assert update_calls[0]["selected_cities"] == ["Munich"]
     assert auto_update["stats"]["changed_files"] == [
         {
             "source_path": "documents/Munich.md",

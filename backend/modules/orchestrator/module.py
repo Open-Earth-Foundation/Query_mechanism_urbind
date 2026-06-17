@@ -380,6 +380,7 @@ def run_pipeline(
     writer_func: Callable[..., WriterOutput] = write_markdown,
     config_path: Path | None = None,
     invocation_command: str | None = None,
+    vector_update_docs_dir: Path | None = None,
 ) -> RunPaths:
     """
     Run the multi-agent document builder pipeline.
@@ -401,6 +402,9 @@ def run_pipeline(
         writer_func: Document writing function (default: write_markdown)
         config_path: Optional path to the resolved config file for snapshot logging
         invocation_command: Optional human-readable command string for reruns
+        vector_update_docs_dir: Optional canonical markdown directory used for vector
+            index auto-updates. This can differ from ``config.markdown_dir`` when a
+            run uses a selected-city copy for extraction.
 
     Returns:
         Run paths containing output artifacts
@@ -500,9 +504,10 @@ def run_pipeline(
         if config.vector_store.enabled:
             markdown_source_mode = "vector_store_retrieval"
             if config.vector_store.auto_update_on_run:
+                update_docs_dir = vector_update_docs_dir or config.markdown_dir
                 update_stats = update_markdown_index(
                     config=config,
-                    docs_dir=config.markdown_dir,
+                    docs_dir=update_docs_dir,
                     selected_cities=selected_cities,
                     dry_run=False,
                 )

@@ -174,6 +174,7 @@ class RunExecutor:
             pipeline_kwargs["analysis_mode"] = command.analysis_mode
             if command.config_path is not None:
                 pipeline_kwargs["config_path"] = Path(command.config_path)
+            pipeline_kwargs["vector_update_docs_dir"] = base_markdown_dir
             run_paths = run_pipeline(**pipeline_kwargs)
             logger.info(
                 "Run pipeline finished run_id=%s api_state=%s",

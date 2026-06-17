@@ -264,12 +264,14 @@ def test_api_run_lifecycle_success(tmp_path: Path, monkeypatch: pytest.MonkeyPat
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert isinstance(log_llm_payload, bool)
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         return _write_success_artifacts(question=question, run_id=run_id, config=config)
 
     monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
@@ -373,6 +375,7 @@ def test_api_run_lifecycle_dev_mode_ignores_blank_optional_queries(
         query_3: str | None = None,
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert isinstance(log_llm_payload, bool)
@@ -382,6 +385,7 @@ def test_api_run_lifecycle_dev_mode_ignores_blank_optional_queries(
         assert query_3 is None
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         return _write_success_artifacts(question=question, run_id=run_id, config=config)
 
     monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
@@ -426,6 +430,7 @@ def test_api_run_lifecycle_standard_mode_passes_optional_queries(
         query_3: str | None = None,
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert question == "Compare public EV charging targets exactly as entered."
         assert run_id is not None
@@ -435,6 +440,7 @@ def test_api_run_lifecycle_standard_mode_passes_optional_queries(
         assert query_3 is None
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         return _write_success_artifacts(question=question, run_id=run_id, config=config)
 
     monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
@@ -885,11 +891,13 @@ def test_api_duplicate_run_id_returns_conflict(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         return _write_success_artifacts(question=question, run_id=run_id, config=config)
 
     monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
@@ -944,11 +952,13 @@ def test_api_run_id_is_not_blocked_by_stale_api_state_snapshot(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         return _write_success_artifacts(question=question, run_id=run_id, config=config)
 
     monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
@@ -1721,11 +1731,13 @@ def test_api_output_returns_conflict_while_running(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         started.set()
         release.wait(timeout=2)
         return _write_success_artifacts(question=question, run_id=run_id, config=config)
@@ -1766,10 +1778,12 @@ def test_api_failed_run(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         raise RuntimeError("simulated pipeline failure")
 
     monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
@@ -1820,12 +1834,14 @@ def test_api_failed_run_uses_persisted_decision_error(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert isinstance(log_llm_payload, bool)
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         return _write_failed_artifacts_with_decision_error(
             question=question,
             run_id=run_id,
@@ -1881,12 +1897,14 @@ def test_api_failed_run_preserves_persisted_failure_details_after_exception(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert isinstance(log_llm_payload, bool)
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         _write_failed_artifacts_with_decision_error(
             question=question,
             run_id=run_id,
@@ -1944,11 +1962,13 @@ def test_api_failed_run_writes_error_log_snapshot_for_executor_failures(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         _write_started_artifacts_with_error_log_input(
             question=question,
             run_id=run_id,
@@ -2009,11 +2029,14 @@ def test_api_run_filters_markdown_by_selected_cities(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities == ["Berlin"]
+        assert vector_update_docs_dir == markdown_dir
+        assert config.markdown_dir != vector_update_docs_dir
         captured_files.extend(
             sorted(path.name for path in config.markdown_dir.rglob("*.md"))
         )
@@ -2062,12 +2085,14 @@ def test_api_run_preserves_display_city_names_while_deduping_aliases(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert isinstance(log_llm_payload, bool)
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities == ["Istanbul"]
+        assert vector_update_docs_dir == markdown_dir
         return _write_success_artifacts(question=question, run_id=run_id, config=config)
 
     monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
@@ -2107,10 +2132,12 @@ def test_api_run_analysis_mode_defaults_and_passes_explicit_value(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert selected_cities is None
         assert api_key_override is None
+        assert vector_update_docs_dir == markdown_dir
         captured_modes.append(analysis_mode)
         return _write_success_artifacts(question=question, run_id=run_id, config=config)
 
@@ -2231,10 +2258,12 @@ def test_api_run_supports_header_api_key_override(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         captured_api_key["value"] = api_key_override
         return _write_success_artifacts(question=question, run_id=run_id, config=config)
 
@@ -2273,10 +2302,12 @@ def test_api_key_error_is_reported_with_sanitized_message(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         raise RuntimeError(
             "Incorrect API key provided: sk-or-v1-abcdefghijklmnopqrstuv0123456789"
         )
