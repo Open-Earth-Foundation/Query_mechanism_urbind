@@ -1063,6 +1063,8 @@ kubectl apply -f k8s/frontend-service.yml
 
 Add `SERPER_API_KEY` and `FIRECRAWL_API_KEY` to the secret only when web research is enabled.
 
+The backend ConfigMap sets `VECTOR_STORE_ENABLED=true` and `VECTOR_STORE_AUTO_UPDATE_ON_RUN=true` for the single-replica dev deployment. Change those keys in `k8s/backend-configmap.yml` to disable vector retrieval or startup/run auto-refresh without rebuilding the image.
+
 ## GitHub Actions deployment
 
 Automated development workflow is available at `.github/workflows/develop.yml`.
