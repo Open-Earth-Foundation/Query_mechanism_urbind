@@ -58,30 +58,19 @@ def _write_context_handoff(
     run_logger: RunLogger,
     stage_name: str,
     snapshot_filename: str,
-    payload_filename: str,
-    payload_key: str,
-    payload: dict[str, Any] | None,
     progress: ProgressTracker,
     progress_label: str,
 ) -> dict[str, str]:
-    """Persist one immutable context handoff snapshot plus the stage payload."""
+    """Persist one immutable full-context handoff snapshot."""
     context_snapshot_path = run_logger.write_stage_file(
         stage_name,
         snapshot_filename,
         deepcopy(run_logger.context_bundle),
         alias=f"{stage_name}_context_snapshot",
     )
-    outputs = {
+    outputs: dict[str, str] = {
         "context_bundle_snapshot": run_logger.artifact_label(context_snapshot_path),
     }
-    if isinstance(payload, dict):
-        payload_path = run_logger.write_stage_file(
-            stage_name,
-            payload_filename,
-            deepcopy(payload),
-            alias=f"{stage_name}_{payload_key}",
-        )
-        outputs[payload_key] = run_logger.artifact_label(payload_path)
     progress.add_item(stage_name, progress_label)
     progress.complete_step(stage_name)
     return outputs
@@ -126,8 +115,8 @@ def _build_retrieval_queries(
 def _collect_markdown_decision_artifacts(
     markdown_chunks: list[dict[str, object]],
     markdown_result: MarkdownResearchResult,
-) -> tuple[dict[str, object], dict[str, object], dict[str, object]]:
-    """Build accepted/rejected id artifacts and a run-level decision audit."""
+) -> tuple[dict[str, object], dict[str, object]]:
+    """Build rejected chunk decisions and a run-level decision audit."""
 
     batch_failures_payload = [
         failure.model_dump() for failure in markdown_result.batch_failures
@@ -197,11 +186,6 @@ def _collect_markdown_decision_artifacts(
             city_key = normalize_city_key(city_name) if city_name else ""
         city_by_chunk_id[chunk_id] = city_key or "unknown"
 
-    accepted_by_city: dict[str, list[str]] = {}
-    for chunk_id in accepted_ids:
-        city_key = city_by_chunk_id.get(chunk_id, "unknown")
-        accepted_by_city.setdefault(city_key, []).append(chunk_id)
-
     rejected_by_city: dict[str, list[str]] = {}
     for chunk_id in rejected_ids:
         city_key = city_by_chunk_id.get(chunk_id, "unknown")
@@ -219,14 +203,6 @@ def _collect_markdown_decision_artifacts(
         else "partial"
     )
 
-    accepted_artifact = {
-        "status": artifact_status,
-        "accepted_chunk_ids": accepted_ids,
-        "accepted_by_city": accepted_by_city,
-        "counts": {
-            "accepted": len(accepted_ids),
-        },
-    }
     rejected_artifact = {
         "status": artifact_status,
         "rejected_chunk_ids": rejected_ids,
@@ -236,6 +212,7 @@ def _collect_markdown_decision_artifacts(
         },
     }
     audit_artifact = {
+        "status": artifact_status,
         "retrieved_total": len(retrieved_ids),
         "accepted_total": len(accepted_ids),
         "rejected_total": len(rejected_ids),
@@ -247,7 +224,7 @@ def _collect_markdown_decision_artifacts(
         "overlap_decision_ids": sorted(overlap_decision_ids),
         "batch_failures": batch_failures_payload,
     }
-    return accepted_artifact, rejected_artifact, audit_artifact
+    return rejected_artifact, audit_artifact
 
 
 def _write_input_snapshots(
@@ -259,7 +236,7 @@ def _write_input_snapshots(
     resolved_run_id: str,
     invocation_command: str | None,
     selected_cities: list[str] | None,
-) -> None:
+) -> tuple[dict[str, object], dict[str, str]]:
     """Persist stage-001 reproducibility snapshots and the compact overview."""
     repo_root = Path(__file__).resolve().parents[3]
     execution_snapshot = build_execution_snapshot(
@@ -306,45 +283,86 @@ def _write_input_snapshots(
         alias="documents_snapshot",
     )
 
+    snapshot_summary: dict[str, object] = {
+        "execution": {
+            "invocation_command": execution_snapshot.get("invocation_command"),
+            "config_path": execution_snapshot.get("config_path"),
+            "requested_run_id": requested_run_id,
+            "resolved_run_id": resolved_run_id,
+        },
+        "code": {
+            "git_commit": code_snapshot.get("git_commit"),
+            "git_branch": code_snapshot.get("git_branch"),
+            "git_dirty": code_snapshot.get("git_dirty"),
+            "changed_file_count": len(code_snapshot.get("changed_files", [])),
+        },
+        "config": {
+            "config_file_hash": config_snapshot.get("config_file_hash"),
+            "snapshot_hash": config_snapshot.get("snapshot_hash"),
+        },
+        "vector_store": {
+            "enabled": vector_store_snapshot.get("enabled"),
+            "collection_name": vector_store_snapshot.get("collection_name"),
+            "index_manifest_hash": vector_store_snapshot.get("index_manifest_hash"),
+            "manifest_summary": vector_store_snapshot.get("manifest_summary"),
+        },
+        "documents": {
+            "markdown_dir": documents_snapshot.get("markdown_dir"),
+            "file_count": documents_snapshot.get("file_count"),
+            "summary": documents_snapshot.get("summary"),
+            "snapshot_hash": documents_snapshot.get("snapshot_hash"),
+        },
+    }
+    snapshot_artifacts = {
+        "execution_snapshot": run_logger.artifact_label(execution_path),
+        "code_snapshot": run_logger.artifact_label(code_path),
+        "config_snapshot": run_logger.artifact_label(config_snapshot_path),
+        "vector_store_snapshot": run_logger.artifact_label(vector_store_path),
+        "documents_snapshot": run_logger.artifact_label(documents_path),
+    }
     run_logger.write_input_snapshot_stage(
-        snapshot_summary={
-            "execution": {
-                "invocation_command": execution_snapshot.get("invocation_command"),
-                "config_path": execution_snapshot.get("config_path"),
-                "requested_run_id": requested_run_id,
-                "resolved_run_id": resolved_run_id,
-            },
-            "code": {
-                "git_commit": code_snapshot.get("git_commit"),
-                "git_branch": code_snapshot.get("git_branch"),
-                "git_dirty": code_snapshot.get("git_dirty"),
-                "changed_file_count": len(code_snapshot.get("changed_files", [])),
-            },
-            "config": {
-                "config_file_hash": config_snapshot.get("config_file_hash"),
-                "snapshot_hash": config_snapshot.get("snapshot_hash"),
-            },
-            "vector_store": {
-                "enabled": vector_store_snapshot.get("enabled"),
-                "collection_name": vector_store_snapshot.get("collection_name"),
-                "index_manifest_hash": vector_store_snapshot.get("index_manifest_hash"),
-                "manifest_summary": vector_store_snapshot.get("manifest_summary"),
-            },
-            "documents": {
-                "markdown_dir": documents_snapshot.get("markdown_dir"),
-                "file_count": documents_snapshot.get("file_count"),
-                "summary": documents_snapshot.get("summary"),
-                "snapshot_hash": documents_snapshot.get("snapshot_hash"),
-            },
-        },
-        snapshot_artifacts={
-            "execution_snapshot": run_logger.artifact_label(execution_path),
-            "code_snapshot": run_logger.artifact_label(code_path),
-            "config_snapshot": run_logger.artifact_label(config_snapshot_path),
-            "vector_store_snapshot": run_logger.artifact_label(vector_store_path),
-            "documents_snapshot": run_logger.artifact_label(documents_path),
-        },
+        snapshot_summary=snapshot_summary,
+        snapshot_artifacts=snapshot_artifacts,
     )
+    return snapshot_summary, snapshot_artifacts
+
+
+def _refresh_vector_store_snapshot(
+    *,
+    run_logger: RunLogger,
+    config: AppConfig,
+    snapshot_summary: dict[str, object],
+    snapshot_artifacts: dict[str, str],
+    update_stats: object | None = None,
+    selected_cities: list[str] | None = None,
+) -> tuple[dict[str, object], dict[str, str]]:
+    """Refresh the vector-store snapshot after an index update changes its manifest."""
+    vector_store_snapshot = build_vector_store_snapshot(
+        config,
+        update_stats=update_stats,
+        selected_cities=selected_cities,
+    )
+    vector_store_path = run_logger.write_stage_file(
+        "input_snapshot",
+        "vector_store_snapshot.json",
+        vector_store_snapshot,
+        alias="vector_store_snapshot",
+    )
+    updated_summary = dict(snapshot_summary)
+    updated_summary["vector_store"] = {
+        "enabled": vector_store_snapshot.get("enabled"),
+        "collection_name": vector_store_snapshot.get("collection_name"),
+        "index_manifest_hash": vector_store_snapshot.get("index_manifest_hash"),
+        "manifest_summary": vector_store_snapshot.get("manifest_summary"),
+        "auto_update": vector_store_snapshot.get("auto_update"),
+    }
+    updated_artifacts = dict(snapshot_artifacts)
+    updated_artifacts["vector_store_snapshot"] = run_logger.artifact_label(vector_store_path)
+    run_logger.write_input_snapshot_stage(
+        snapshot_summary=updated_summary,
+        snapshot_artifacts=updated_artifacts,
+    )
+    return updated_summary, updated_artifacts
 
 
 def run_pipeline(
@@ -432,7 +450,7 @@ def run_pipeline(
         query_mode=query_mode,
         write_stage_detail=False,
     )
-    _write_input_snapshots(
+    snapshot_summary, snapshot_artifacts = _write_input_snapshots(
         run_logger=run_logger,
         config=config,
         config_path=config_path or Path("llm_config.yaml"),
@@ -482,11 +500,29 @@ def run_pipeline(
         if config.vector_store.enabled:
             markdown_source_mode = "vector_store_retrieval"
             if config.vector_store.auto_update_on_run:
-                update_markdown_index(
+                update_stats = update_markdown_index(
                     config=config,
                     docs_dir=config.markdown_dir,
                     selected_cities=selected_cities,
                     dry_run=False,
+                )
+                logger.info(
+                    "Vector index auto-update finished run_id=%s changed=%d unchanged=%d "
+                    "deleted=%d chunks=%d",
+                    run_id_value,
+                    update_stats.files_changed,
+                    update_stats.files_unchanged,
+                    update_stats.files_deleted,
+                    update_stats.chunks_created,
+                )
+                nonlocal snapshot_summary, snapshot_artifacts
+                snapshot_summary, snapshot_artifacts = _refresh_vector_store_snapshot(
+                    run_logger=run_logger,
+                    config=config,
+                    snapshot_summary=snapshot_summary,
+                    snapshot_artifacts=snapshot_artifacts,
+                    update_stats=update_stats,
+                    selected_cities=selected_cities,
                 )
             retrieval_kwargs: dict[str, object] = {
                 "queries": retrieval_queries,
@@ -656,22 +692,14 @@ def run_pipeline(
     markdown_result = markdown_payload["result"]
     if isinstance(markdown_result, MarkdownResearchResult):
         markdown_bundle = markdown_result.model_dump()
-        (
-            accepted_artifact,
-            rejected_artifact,
-            decision_audit_artifact,
-        ) = _collect_markdown_decision_artifacts(markdown_chunks, markdown_result)
-        accepted_excerpts_path = run_logger.write_stage_file(
-            "markdown_extraction",
-            "accepted_excerpts.json",
-            accepted_artifact,
-            alias="markdown_accepted_excerpts",
+        rejected_artifact, decision_audit_artifact = (
+            _collect_markdown_decision_artifacts(markdown_chunks, markdown_result)
         )
-        rejected_excerpts_path = run_logger.write_stage_file(
+        rejected_chunks_path = run_logger.write_stage_file(
             "markdown_extraction",
-            "rejected_excerpts.json",
+            "rejected_chunks.json",
             rejected_artifact,
-            alias="markdown_rejected_excerpts",
+            alias="markdown_rejected_chunks",
         )
         decision_audit_path = run_logger.write_stage_file(
             "markdown_extraction",
@@ -691,7 +719,7 @@ def run_pipeline(
             "rejected_total": decision_audit_artifact["rejected_total"],
             "unresolved_total": decision_audit_artifact["unresolved_total"],
             "invariant_ok": decision_audit_artifact["invariant_ok"],
-            "status": accepted_artifact["status"],
+            "status": decision_audit_artifact["status"],
         }
         source_mode = str(
             markdown_payload.get("markdown_source_mode", "standard_chunking")
@@ -743,26 +771,24 @@ def run_pipeline(
             excerpt_entries = [
                 excerpt for excerpt in excerpts if isinstance(excerpt, dict)
             ]
-            enriched_excerpts, references_payload = build_markdown_references(
+            enriched_excerpts, _references_payload = build_markdown_references(
                 run_id=run_id_value,
                 excerpts=excerpt_entries,
             )
             markdown_bundle["excerpts"] = enriched_excerpts
             markdown_bundle["excerpt_count"] = len(enriched_excerpts)
-            references_path = run_logger.write_stage_file(
-                "markdown_extraction",
-                "references.json",
-                references_payload,
-                alias="references",
-            )
         else:
             markdown_bundle["excerpts"] = []
             markdown_bundle["excerpt_count"] = 0
 
+        accepted_excerpts_payload = {
+            "excerpts": markdown_bundle["excerpts"],
+            "excerpt_count": markdown_bundle["excerpt_count"],
+        }
         markdown_excerpts_path = run_logger.write_stage_file(
             "markdown_extraction",
-            "excerpts.json",
-            markdown_bundle,
+            "accepted_excerpts.json",
+            accepted_excerpts_payload,
             alias="markdown_excerpts",
         )
         run_logger.update_markdown_bundle(markdown_bundle)
@@ -781,18 +807,13 @@ def run_pipeline(
                         markdown_excerpts_path
                     ),
                     "accepted_excerpts": run_logger.artifact_label(
-                        accepted_excerpts_path
+                        markdown_excerpts_path
                     ),
-                    "rejected_excerpts": run_logger.artifact_label(
-                        rejected_excerpts_path
+                    "rejected_chunks": run_logger.artifact_label(
+                        rejected_chunks_path
                     ),
                     "decision_audit": run_logger.artifact_label(
                         decision_audit_path
-                    ),
-                    "references": (
-                        run_logger.artifact_label(references_path)
-                        if "references_path" in locals()
-                        else None
                     ),
                     "selected_cities": context_bundle.get("selected_cities", []),
                     "selected_city_names": context_bundle.get("selected_city_names", []),
@@ -805,7 +826,6 @@ def run_pipeline(
                 "metrics": build_markdown_metrics(
                     markdown_chunks=markdown_chunks,
                     markdown_bundle=markdown_bundle,
-                    accepted_artifact=accepted_artifact,
                     rejected_artifact=rejected_artifact,
                     decision_audit_artifact=decision_audit_artifact,
                 ),
@@ -859,9 +879,6 @@ def run_pipeline(
         run_logger=run_logger,
         stage_name="markdown_context_handoff",
         snapshot_filename="context_bundle_after_markdown.json",
-        payload_filename="markdown_context_payload.json",
-        payload_key="markdown_context_payload",
-        payload=markdown_payload,
         progress=progress,
         progress_label="Markdown context snapshot written",
     )

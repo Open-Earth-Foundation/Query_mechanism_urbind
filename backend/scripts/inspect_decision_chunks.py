@@ -14,7 +14,7 @@ Inputs:
   - --config: Path to llm config used to open Chroma store (default: `llm_config.yaml`).
 - Files/paths:
   - `<run-dir>/stage_files/006_markdown_extraction/accepted_excerpts.json`
-  - `<run-dir>/stage_files/006_markdown_extraction/rejected_excerpts.json`
+  - `<run-dir>/stage_files/006_markdown_extraction/rejected_chunks.json`
   - `<run-dir>/stage_files/003_retrieval/retrieval.json`
   - Chroma collection configured in `llm_config.yaml` (`vector_store.*`).
 - Env vars:
@@ -121,8 +121,18 @@ def _read_json(path: Path) -> dict[str, Any]:
 
 def _decision_ids(payload: dict[str, Any], decision: DecisionKind) -> list[str]:
     """Extract ordered decision ids from accepted/rejected artifact payload."""
-    key = "accepted_chunk_ids" if decision == "accepted" else "rejected_chunk_ids"
-    raw = payload.get(key, [])
+    if decision == "accepted":
+        excerpts = payload.get("excerpts", [])
+        raw = []
+        if isinstance(excerpts, list):
+            for excerpt in excerpts:
+                if not isinstance(excerpt, dict):
+                    continue
+                source_chunk_ids = excerpt.get("source_chunk_ids", [])
+                if isinstance(source_chunk_ids, list):
+                    raw.extend(source_chunk_ids)
+    else:
+        raw = payload.get("rejected_chunk_ids", [])
     if not isinstance(raw, list):
         return []
     output: list[str] = []
@@ -284,7 +294,7 @@ def main() -> None:
     retrieval_path = run_dir / "stage_files" / "003_retrieval" / "retrieval.json"
     markdown_dir = run_dir / "stage_files" / "006_markdown_extraction"
     accepted_path = markdown_dir / "accepted_excerpts.json"
-    rejected_path = markdown_dir / "rejected_excerpts.json"
+    rejected_path = markdown_dir / "rejected_chunks.json"
 
     retrieval_payload = _read_json(retrieval_path)
     accepted_payload = _read_json(accepted_path)

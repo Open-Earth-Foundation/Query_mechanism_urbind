@@ -237,9 +237,8 @@ def _persist_followup_result(
     excerpt_records = _coerce_excerpt_records(markdown_payload.get("excerpts"))
     excerpt_count = len(excerpt_records)
     enriched_excerpts = excerpt_records
-    references_payload: dict[str, object] = {"references": []}
     if excerpt_records:
-        enriched_excerpts, references_payload = build_markdown_references(
+        enriched_excerpts, _references_payload = build_markdown_references(
             run_id=bundle_id,
             excerpts=excerpt_records,
         )
@@ -285,15 +284,9 @@ def _persist_followup_result(
     )
     markdown_excerpts_path = artifact_writer.write_stage_file(
         "markdown_extraction",
-        "excerpts.json",
-        {"excerpts": enriched_excerpts},
+        "accepted_excerpts.json",
+        {"excerpts": enriched_excerpts, "excerpt_count": excerpt_count},
         alias="markdown_excerpts",
-    )
-    references_path = artifact_writer.write_stage_file(
-        "markdown_extraction",
-        "references.json",
-        references_payload,
-        alias="references",
     )
     if retrieval_payload is not None:
         retrieval_path = artifact_writer.write_stage_file(
@@ -319,7 +312,6 @@ def _persist_followup_result(
             "inputs": {"source_mode": source_mode, "target_city": target_city},
             "outputs": {
                 "markdown_excerpts": markdown_excerpts_path.relative_to(bundle_dir).as_posix(),
-                "references": references_path.relative_to(bundle_dir).as_posix(),
             },
             "metrics": {"excerpt_count": excerpt_count},
         },

@@ -185,8 +185,8 @@ project to duplicate or abstract the shared layer in awkward ways.
 | Stage | Current code home | Contract quality | Logging | Artifacts | Benchmarks | Assessment for now |
 | --- | --- | --- | --- | --- | --- | --- |
 | Read/process/extract CCC data | `backend/modules/markdown_researcher/`, `backend/modules/vector_store/`, orchestrator glue | Partial to strong. `MarkdownResearchResult`, `MarkdownExcerpt`, chunk dicts, and retrieval artifact shape are defined, but chunk inputs are still plain dicts. | Strong enough. Uses module loggers, run log, run summary, progress tracker. | Strong. `markdown/*.json`, `context_bundle.json`, `run.json`, `run.log`, `run_summary.txt`. | Strongest of all stages. Retrieval benchmark, recall benchmark, chunking benchmark, unit tests. | Mature enough behaviorally. Better naming and contracts would help, but a package move is not the best first step. |
-| Read/process/extract 3rd party data | `documents/source_library/`, `backend/modules/web_researcher/external_sources.py`, `external_agent.py`, `external_resolver.py` | Strong. `SourceMetadata`, `SearchHit`, `EvidenceCandidate`, `ExternalEvidenceClaim`, `ExternalEvidenceResolution`, `NoEvidenceRecord`. | Good. Tool calls and agent failures are logged. | Medium to strong. `stage_files/008_enrichment/external_source_search_audit.json` plus clearly named enrichment-stage output files, but the runtime-versus-artifact split still needs documentation. | Medium. Dedicated Krakow external-source benchmark with 4 cases plus unit tests. | Good candidate for future extraction, but the current need is better artifact registration and documentation of boundaries. |
-| Search/process/extract web data | `backend/modules/web_researcher/search_planner.py`, `search_worker.py`, `search.py`, `scraper.py`, `extractor.py`, `freshness.py`, `tier1_web.py` | Medium. `SearchBatch`, `WebFinding`, `FreshnessResult`, and tier-1 models exist. | Good. Search, scrape, relevance, tier-1, worker, and freshness paths log. | Weak to medium. Final `web_findings.json` and `freshness_results.json` exist only when non-empty; search plans and raw web decisions are not persisted. | Weak. Unit tests exist, but no dedicated live websearch benchmark. | The main problem is not folder placement. It is missing artifacts and benchmark discipline. Fix those before considering a module split. |
+| Read/process/extract 3rd party data | `documents/source_library/`, `backend/modules/web_researcher/external_sources.py`, `external_agent.py`, `external_resolver.py` | Strong. `SourceMetadata`, `SearchHit`, `EvidenceCandidate`, `ExternalEvidenceClaim`, `ExternalEvidenceResolution`, `NoEvidenceRecord`. | Good. Tool calls and agent failures are logged. | Medium to strong. `stage_files/008_enrichment/external_source_search_audit.json` keeps the search trace, while accepted external outputs live in the canonical enrichment bundle. | Medium. Dedicated Krakow external-source benchmark with 4 cases plus unit tests. | Good candidate for future extraction, but the current need is better artifact registration and documentation of boundaries. |
+| Search/process/extract web data | `backend/modules/web_researcher/search_planner.py`, `search_worker.py`, `search.py`, `scraper.py`, `extractor.py`, `freshness.py`, `tier1_web.py` | Medium. `SearchBatch`, `WebFinding`, `FreshnessResult`, and tier-1 models exist. | Good. Search, scrape, relevance, tier-1, worker, and freshness paths log. | Medium. Canonical web/freshness outputs live in `stage_files/008_enrichment/enrichment_bundle.json`; `web_research_audit.json` is written only when non-bundle trace data exists. | Weak. Unit tests exist, but no dedicated live websearch benchmark. | The main problem is not folder placement. It is missing artifacts and benchmark discipline. Fix those before considering a module split. |
 | Generate/review/apply assumptions | `backend/modules/web_researcher/assumptions_estimator.py`, `backend/api/services/assumptions_review.py`, `backend/api/routes/assumptions.py` | Medium. Automatic assumptions use `AssumptionRecord` and `NonEstimableRecord`; review flow uses API models `MissingDataItem`, `AssumptionsPayload`, `RegenerationResult`. | Medium. Service and estimator log key LLM calls and skip/failure paths. | Medium. Automatic assumptions are persisted through enrichment artifacts; review artifacts persist only with `persist_artifacts=true`. | Weak. Unit/API tests exist, but no assumptions benchmark. | The bigger issue is contract fragmentation, not folder count. Unify the writer-facing contract before restructuring code homes. |
 
 ## 1. Read, Process, And Extract CCC Data
@@ -232,17 +232,15 @@ Current output contract:
 - `MarkdownExcerpt`
 - `MarkdownBatchFailure`
 - Run-level `context_bundle["markdown"]`
-- Citation references in `stage_files/006_markdown_extraction/references.json`
+- Citation references derived from `stage_files/006_markdown_extraction/accepted_excerpts.json`
 
 Artifacts already written:
 
 - `stage_files/002_query_preparation/research_question.json`
 - `stage_files/005_markdown_batching/batches.json`
-- `stage_files/006_markdown_extraction/excerpts.json`
 - `stage_files/006_markdown_extraction/accepted_excerpts.json`
-- `stage_files/006_markdown_extraction/rejected_excerpts.json`
+- `stage_files/006_markdown_extraction/rejected_chunks.json`
 - `stage_files/006_markdown_extraction/decision_audit.json`
-- `stage_files/006_markdown_extraction/references.json`
 - `stage_files/003_retrieval/retrieval.json` when vector retrieval is enabled
 - `context_bundle.json`
 - `run.json`
@@ -374,10 +372,8 @@ Artifacts already written:
 - `stage_files/008_enrichment/external_source_search_audit.json`: run-local
   tool state with searched city-fields, candidates, validated claims, rejected
   claims, no-evidence records, resolutions, and tool calls
-- `stage_files/008_enrichment/external_source_validated_claims.json`
-- `stage_files/008_enrichment/external_source_resolutions.json`
-- `stage_files/008_enrichment/external_source_no_evidence.json`
-- `enrichment/enrichment_bundle.json`
+- `stage_files/008_enrichment/enrichment_bundle.json` with
+  `external_evidence`, `external_resolutions`, and `external_no_evidence`
 - `context_bundle.json` with `enrichment.external_*` fields
 
 Benchmarks already present:
@@ -493,9 +489,10 @@ Current output contract:
 
 Artifacts currently written:
 
-- `enrichment/web_findings.json` only when findings exist
-- `enrichment/freshness_results.json` only when freshness results exist
-- `enrichment/enrichment_bundle.json`
+- `stage_files/008_enrichment/enrichment_bundle.json` with web findings and
+  freshness results
+- `stage_files/008_enrichment/web_research_audit.json` only when web research
+  has trace data beyond the canonical bundle
 - Progress items in the frontend/run progress flow
 
 Tests already present:
@@ -676,9 +673,9 @@ surface that would have to remain coherent.
 
 | Stage | Strong artifacts today | Missing or weak artifacts | Practical implication |
 | --- | --- | --- | --- |
-| CCC read/process/extract | `stage_files/006_markdown_extraction/excerpts.json`, `accepted_excerpts.json`, `rejected_excerpts.json`, `decision_audit.json`, `references.json`, `stage_files/005_markdown_batching/batches.json`, optional `stage_files/003_retrieval/retrieval.json` | Typed CCC source manifest, standalone CCC reader summary artifact, explicit PDF-to-Markdown handoff artifact | Good enough for operations. Documentation should state this contract clearly. |
-| 3rd party read/process/extract | `stage_files/008_enrichment/external_source_search_audit.json`, `external_source_validated_claims.json`, `external_source_resolutions.json`, `external_source_no_evidence.json` | Benchmark is city-specific, explicit PDF-to-Markdown handoff artifact, runtime-versus-artifact split still needs clearer documentation | Improve artifact documentation and audit trail before moving code. |
-| Web search/process/extract | `enrichment/web_findings.json`, `enrichment/freshness_results.json`, progress items | Search plan, raw results, relevance decisions, scrape attempts, extraction attempts, rejected findings, deep-dive trace | This is a real gap, but it is an artifact problem first and a packaging problem second. |
+| CCC read/process/extract | `stage_files/006_markdown_extraction/accepted_excerpts.json`, `rejected_chunks.json`, `decision_audit.json`, `stage_files/005_markdown_batching/batches.json`, optional `stage_files/003_retrieval/retrieval.json` | Typed CCC source manifest, standalone CCC reader summary artifact, explicit PDF-to-Markdown handoff artifact | Good enough for operations. Documentation should state this contract clearly. |
+| 3rd party read/process/extract | `stage_files/008_enrichment/external_source_search_audit.json`, `stage_files/008_enrichment/enrichment_bundle.json` external fields | Benchmark is city-specific, explicit PDF-to-Markdown handoff artifact | Improve artifact documentation and audit trail before moving code. |
+| Web search/process/extract | `stage_files/008_enrichment/enrichment_bundle.json`, optional `stage_files/008_enrichment/web_research_audit.json`, progress items | Relevance decisions, scrape attempts, extraction attempts, rejected findings, deeper live-web trace | This is a real gap, but it is an artifact problem first and a packaging problem second. |
 | Assumptions | `stage_files/010_assumptions/assumptions.json`, `stage_files/010_assumptions/non_estimable.json`, `stage_files/010_assumptions/assumptions_stage.json`, optional review/apply artifacts | No automatic assumptions benchmark report | Contract is now normalized at top-level `context_bundle["assumptions"]`; benchmark coverage is the remaining gap. |
 
 ## Benchmark Coverage By Stage

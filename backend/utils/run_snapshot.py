@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 import json
 import subprocess
+from dataclasses import asdict, is_dataclass
 from pathlib import Path
 from typing import Any
 
@@ -115,7 +116,25 @@ def build_config_snapshot(config: AppConfig, config_path: Path) -> dict[str, obj
     return snapshot
 
 
-def build_vector_store_snapshot(config: AppConfig) -> dict[str, object]:
+def _serialize_update_stats(update_stats: object | None) -> dict[str, object] | None:
+    """Return JSON-safe vector-store update stats when an update ran."""
+    if update_stats is None:
+        return None
+    if is_dataclass(update_stats) and not isinstance(update_stats, type):
+        payload = asdict(update_stats)
+    elif isinstance(update_stats, dict):
+        payload = dict(update_stats)
+    else:
+        return None
+    return json.loads(json.dumps(payload, default=str))
+
+
+def build_vector_store_snapshot(
+    config: AppConfig,
+    *,
+    update_stats: object | None = None,
+    selected_cities: list[str] | None = None,
+) -> dict[str, object]:
     """Capture vector-store state that can affect retrieval reproducibility."""
     manifest_path = config.vector_store.index_manifest_path
     manifest: dict[str, Any] = {}
@@ -142,6 +161,7 @@ def build_vector_store_snapshot(config: AppConfig) -> dict[str, object]:
         ),
         "file_count": len(files),
         "chunk_count": chunk_count,
+        "index_settings_signature": manifest.get("index_settings_signature") if manifest else None,
     }
     snapshot = {
         "enabled": config.vector_store.enabled,
@@ -151,8 +171,18 @@ def build_vector_store_snapshot(config: AppConfig) -> dict[str, object]:
         "index_manifest_exists": manifest_path.exists(),
         "index_manifest_hash": _file_hash(manifest_path),
         "resolved_settings": config.vector_store.model_dump(mode="json"),
+        "index_settings": manifest.get("index_settings") if manifest else {},
         "manifest_summary": manifest_summary,
     }
+    update_payload = _serialize_update_stats(update_stats)
+    if update_payload is not None:
+        snapshot["auto_update"] = {
+            "ran": True,
+            "reason": update_payload.get("update_reason"),
+            "trigger": "auto_update_on_run",
+            "selected_cities": selected_cities or [],
+            "stats": update_payload,
+        }
     snapshot["snapshot_hash"] = _json_hash(snapshot)
     return snapshot
 

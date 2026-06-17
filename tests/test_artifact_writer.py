@@ -76,3 +76,25 @@ def test_resolve_manifest_alias_returns_run_local_path(tmp_path: Path) -> None:
 
     assert resolve_manifest_alias(tmp_path, "source_chunk_index") == expected
     assert resolve_manifest_alias(tmp_path, "missing") is None
+
+
+def test_resolve_manifest_alias_rejects_parent_traversal(tmp_path: Path) -> None:
+    outside_path = tmp_path.parent / "outside.json"
+    outside_path.write_text("{}", encoding="utf-8")
+    (tmp_path / "manifest.json").write_text(
+        json.dumps({"aliases": {"outside": {"path": "../outside.json"}}}),
+        encoding="utf-8",
+    )
+
+    assert resolve_manifest_alias(tmp_path, "outside") is None
+
+
+def test_resolve_manifest_alias_rejects_absolute_paths_outside_run_dir(tmp_path: Path) -> None:
+    outside_path = tmp_path.parent / "outside.json"
+    outside_path.write_text("{}", encoding="utf-8")
+    (tmp_path / "manifest.json").write_text(
+        json.dumps({"aliases": {"outside": {"path": str(outside_path)}}}),
+        encoding="utf-8",
+    )
+
+    assert resolve_manifest_alias(tmp_path, "outside") is None

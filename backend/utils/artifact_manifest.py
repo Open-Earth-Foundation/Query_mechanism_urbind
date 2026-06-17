@@ -27,10 +27,15 @@ def resolve_manifest_alias(run_dir: Path, alias: str) -> Path | None:
     raw_path: Any = alias_payload.get("path")
     if not isinstance(raw_path, str) or not raw_path.strip():
         return None
+    resolved_run_dir = run_dir.resolve()
     candidate = Path(raw_path)
-    if candidate.is_absolute():
-        return candidate if candidate.exists() else None
-    resolved = run_dir / candidate
+    resolved = (
+        candidate.resolve(strict=False)
+        if candidate.is_absolute()
+        else (resolved_run_dir / candidate).resolve(strict=False)
+    )
+    if resolved_run_dir not in resolved.parents and resolved != resolved_run_dir:
+        return None
     return resolved if resolved.exists() else None
 
 __all__ = ["read_artifact_manifest", "resolve_manifest_alias"]

@@ -204,17 +204,14 @@ def _write_markdown_reference_artifacts(
     excerpts_payload: dict[str, object] | None = None,
 ) -> None:
     writer = ArtifactWriter(paths.base_dir, paths.base_dir.name)
-    if references_payload is not None:
-        writer.write_stage_file(
-            "markdown_extraction",
-            "references.json",
-            references_payload,
-            alias="references",
-        )
+    if excerpts_payload is None and references_payload is not None:
+        excerpts_payload = {
+            "excerpts": references_payload.get("references", []),
+        }
     if excerpts_payload is not None:
         writer.write_stage_file(
             "markdown_extraction",
-            "excerpts.json",
+            "accepted_excerpts.json",
             excerpts_payload,
             alias="markdown_excerpts",
         )
@@ -278,7 +275,11 @@ def test_api_run_lifecycle_success(tmp_path: Path, monkeypatch: pytest.MonkeyPat
     monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
 
-    app = create_app(runs_dir=runs_dir, max_workers=2)
+    app = create_app(
+        runs_dir=runs_dir,
+        max_workers=2,
+        config_path=tmp_path / "missing-test-config.yaml",
+    )
     with TestClient(app) as client:
         start = client.post(
             "/api/v1/runs",
@@ -302,6 +303,50 @@ def test_api_run_lifecycle_success(tmp_path: Path, monkeypatch: pytest.MonkeyPat
         context_payload = context_response.json()
         assert context_payload["status"] == "completed"
         assert isinstance(context_payload["context_bundle"], dict)
+
+
+def test_api_vector_store_status_reports_startup_warmup_state(tmp_path: Path) -> None:
+    """Expose vector-store warm-up state for the frontend banner."""
+    app = create_app(
+        runs_dir=tmp_path / "output",
+        max_workers=1,
+        config_path=tmp_path / "missing-test-config.yaml",
+    )
+
+    with TestClient(app) as client:
+        response = client.get("/api/v1/system/vector-store")
+
+    assert response.status_code == 200
+    payload = response.json()
+    assert payload["status"] in {"skipped", "running", "completed", "failed", "pending"}
+    assert isinstance(payload["enabled"], bool)
+    assert isinstance(payload["auto_update_on_run"], bool)
+    assert isinstance(payload["message"], str)
+
+
+def test_api_create_run_rejects_while_vector_store_warmup_running(
+    tmp_path: Path,
+) -> None:
+    """Prevent new runs while startup vector-store refresh is in progress."""
+    app = create_app(
+        runs_dir=tmp_path / "output",
+        max_workers=1,
+        config_path=tmp_path / "missing-test-config.yaml",
+    )
+
+    with TestClient(app) as client:
+        warmup = client.app.state.vector_store_warmup
+        with warmup._lock:
+            warmup._status = "running"
+            warmup._message = "Refreshing vector store before accepting new runs."
+
+        response = client.post(
+            "/api/v1/runs",
+            json={"question": "What are the key initiatives?", "run_id": "blocked"},
+        )
+
+    assert response.status_code == 409
+    assert "vector store update in progress" in response.json()["detail"].lower()
 
 
 def test_api_run_lifecycle_dev_mode_ignores_blank_optional_queries(
@@ -410,7 +455,7 @@ def test_api_run_lifecycle_standard_mode_passes_optional_queries(
         assert terminal["status"] == "completed"
 
 
-def test_api_get_run_reference_returns_record_from_references_artifact(
+def test_api_get_run_reference_returns_record_from_accepted_excerpts(
     tmp_path: Path,
 ) -> None:
     runs_dir = tmp_path / "output"
@@ -584,7 +629,7 @@ def test_api_get_run_reference_returns_not_found_for_unknown_ref(
         assert response.status_code == 404
 
 
-def test_api_get_run_reference_falls_back_to_excerpts_when_references_missing(
+def test_api_get_run_reference_derives_records_from_accepted_excerpts(
     tmp_path: Path,
 ) -> None:
     runs_dir = tmp_path / "output"

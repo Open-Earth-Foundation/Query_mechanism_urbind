@@ -25,6 +25,7 @@ from backend.benchmarks.gold_recall.models import (
     StageBExtractionMetrics,
     StageCWriterMetrics,
 )
+from backend.modules.orchestrator.utils.references import build_markdown_references
 from backend.modules.writer.utils.markdown_helpers import extract_cited_ref_ids
 from backend.utils.artifact_manifest import resolve_manifest_alias
 from backend.utils.config import AppConfig, get_openrouter_api_key, load_config
@@ -39,9 +40,7 @@ def _resolve_run_artifact(run_dir: Path, alias: str) -> Path:
     if alias == "retrieval":
         fallback = "stage_files/003_retrieval/retrieval.json"
     elif alias == "markdown_excerpts":
-        fallback = "stage_files/006_markdown_extraction/excerpts.json"
-    elif alias == "references":
-        fallback = "stage_files/006_markdown_extraction/references.json"
+        fallback = "stage_files/006_markdown_extraction/accepted_excerpts.json"
     else:
         raise ValueError(f"Unsupported run artifact alias: {alias}")
     return resolve_manifest_alias(run_dir, alias) or run_dir / fallback
@@ -150,8 +149,15 @@ def _build_chunk_index(chunks: list[dict[str, Any]]) -> dict[str, dict[str, Any]
 
 
 def _build_reference_index(payload: dict[str, Any]) -> dict[str, dict[str, Any]]:
-    """Index persisted reference entries by ref id."""
-    references = payload.get("references", [])
+    """Index reference entries derived from accepted excerpts by ref id."""
+    excerpts = payload.get("excerpts", [])
+    if not isinstance(excerpts, list):
+        return {}
+    _enriched_excerpts, references_payload = build_markdown_references(
+        run_id="benchmark",
+        excerpts=[excerpt for excerpt in excerpts if isinstance(excerpt, dict)],
+    )
+    references = references_payload.get("references", [])
     index: dict[str, dict[str, Any]] = {}
     if not isinstance(references, list):
         return index
@@ -459,7 +465,6 @@ def _build_case_result(
     run_dir: Path,
     retrieval_payload: dict[str, Any],
     excerpts_payload: dict[str, Any],
-    references_payload: dict[str, Any],
     final_text: str,
     config: AppConfig,
     api_key: str,
@@ -477,7 +482,7 @@ def _build_case_result(
 
     delivery_chunk_ids_for_text = set(delivery_index.keys())
     excerpt_source_ids = _collect_excerpt_source_ids(excerpts_payload)
-    reference_index = _build_reference_index(references_payload)
+    reference_index = _build_reference_index(excerpts_payload)
     cited_ref_ids = extract_cited_ref_ids(final_text)
     cited_source_chunk_ids: set[str] = set()
     for ref_id in cited_ref_ids:
@@ -663,7 +668,6 @@ def _build_case_result(
         run_dir=str(run_dir),
         retrieval_path=str(_resolve_run_artifact(run_dir, "retrieval")),
         excerpts_path=str(_resolve_run_artifact(run_dir, "markdown_excerpts")),
-        references_path=str(_resolve_run_artifact(run_dir, "references")),
         final_output_path=str(run_dir / "final.md"),
         stage_a=stage_a,
         stage_b=stage_b,
@@ -821,7 +825,6 @@ def run_recall_benchmark(
         excerpts_payload = _require_json_object(
             _resolve_run_artifact(run_dir, "markdown_excerpts")
         )
-        references_payload = _require_json_object(_resolve_run_artifact(run_dir, "references"))
         final_text = _require_text(run_dir / "final.md")
         results.append(
             _build_case_result(
@@ -829,7 +832,6 @@ def run_recall_benchmark(
                 run_dir=run_dir,
                 retrieval_payload=retrieval_payload,
                 excerpts_payload=excerpts_payload,
-                references_payload=references_payload,
                 final_text=final_text,
                 config=config,
                 api_key=api_key,

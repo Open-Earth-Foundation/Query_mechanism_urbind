@@ -137,14 +137,7 @@ def test_run_chat_followup_search_uses_vector_store_retrieval_and_persists_artif
     context_bundle = json.loads((bundle_dir / "context_bundle.json").read_text(encoding="utf-8"))
     excerpts_payload = json.loads(
         (
-            bundle_dir / "stage_files" / "006_markdown_extraction" / "excerpts.json"
-        ).read_text(
-            encoding="utf-8"
-        )
-    )
-    references = json.loads(
-        (
-            bundle_dir / "stage_files" / "006_markdown_extraction" / "references.json"
+            bundle_dir / "stage_files" / "006_markdown_extraction" / "accepted_excerpts.json"
         ).read_text(
             encoding="utf-8"
         )
@@ -174,8 +167,8 @@ def test_run_chat_followup_search_uses_vector_store_retrieval_and_persists_artif
     assert context_bundle["prompt_context_tokens"] > 0
     assert excerpts_payload["prompt_context_kind"] == "citation_catalog"
     assert excerpts_payload["prompt_context_tokens"] == context_bundle["prompt_context_tokens"]
-    assert references["references"][0]["ref_id"] == "ref_1"
-    assert references["references"][0]["source_chunk_ids"] == ["chunk-1"]
+    assert excerpts_payload["excerpts"][0]["ref_id"] == "ref_1"
+    assert excerpts_payload["excerpts"][0]["source_chunk_ids"] == ["chunk-1"]
     assert retrieval["selected_cities"] == ["Munich"]
     assert retrieval["chunks"][0]["chunk_id"] == "chunk-1"
 
@@ -290,9 +283,9 @@ def test_run_chat_followup_search_persists_empty_successful_bundle(
         bundle_id=result.bundle_id,
     )
     context_bundle = json.loads((bundle_dir / "context_bundle.json").read_text(encoding="utf-8"))
-    references = json.loads(
+    excerpts_payload = json.loads(
         (
-            bundle_dir / "stage_files" / "006_markdown_extraction" / "references.json"
+            bundle_dir / "stage_files" / "006_markdown_extraction" / "accepted_excerpts.json"
         ).read_text(
             encoding="utf-8"
         )
@@ -300,7 +293,7 @@ def test_run_chat_followup_search_persists_empty_successful_bundle(
     assert context_bundle["markdown"]["excerpts"] == []
     assert context_bundle["markdown"]["excerpt_count"] == 0
     assert context_bundle["inspected_city_names"] == []
-    assert references["references"] == []
+    assert excerpts_payload["excerpts"] == []
 
 
 def test_run_chat_followup_search_persists_error_bundle_for_invalid_city(

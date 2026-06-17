@@ -59,6 +59,7 @@ import {
   RunSummary,
   RunStatus,
   RunStatusResponse,
+  VectorStoreWarmupResponse,
   fetchCities,
   fetchCityMarkdown,
   fetchCityGroups,
@@ -66,6 +67,7 @@ import {
   fetchRunContext,
   fetchRunOutput,
   fetchRunStatus,
+  fetchVectorStoreStatus,
   getApiBaseUrl,
   startRun,
 } from "@/lib/api";
@@ -211,6 +213,11 @@ export default function Home() {
   const [isLoadingRuns, setIsLoadingRuns] = useState(false);
   const [runsError, setRunsError] = useState<string | null>(null);
   const [isLoadingSelectedRun, setIsLoadingSelectedRun] = useState(false);
+  const [vectorStoreStatus, setVectorStoreStatus] =
+    useState<VectorStoreWarmupResponse | null>(null);
+  const [vectorStoreStatusError, setVectorStoreStatusError] = useState<string | null>(
+    null,
+  );
 
   const [chatOpen, setChatOpen] = useState(false);
   const [assumptionsOpen, setAssumptionsOpen] = useState(false);
@@ -364,6 +371,39 @@ export default function Home() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  useEffect(() => {
+    const controller = new AbortController();
+    let intervalId: number | null = null;
+
+    async function refreshVectorStoreStatus(): Promise<void> {
+      try {
+        const status = await fetchVectorStoreStatus({ signal: controller.signal });
+        setVectorStoreStatus(status);
+        setVectorStoreStatusError(null);
+      } catch (error) {
+        if (!controller.signal.aborted) {
+          setVectorStoreStatusError(
+            error instanceof Error
+              ? error.message
+              : "Could not load vector store status.",
+          );
+        }
+      }
+    }
+
+    void refreshVectorStoreStatus();
+    intervalId = window.setInterval(() => {
+      void refreshVectorStoreStatus();
+    }, vectorStoreStatus?.status === "running" ? 3000 : 15000);
+
+    return () => {
+      controller.abort();
+      if (intervalId !== null) {
+        window.clearInterval(intervalId);
+      }
+    };
+  }, [vectorStoreStatus?.status]);
 
   useEffect(() => {
     if (!isWriterRailResizing) {
@@ -888,6 +928,10 @@ export default function Home() {
     if (!trimmed || isSubmitting) {
       return;
     }
+    if (vectorStoreStatus?.status === "running") {
+      setRunError("Vector store update in progress. Please retry after it completes.");
+      return;
+    }
     const scopedCities =
       scopeMode === "group" ? (selectedGroup?.cities ?? []) : selectedCities;
     if (scopeMode === "group" && scopedCities.length === 0) {
@@ -950,6 +994,16 @@ export default function Home() {
     (scopeMode === "group"
       ? (selectedGroup?.cities.length ?? 0) > 0
       : selectedCities.length > 0);
+  const isVectorStoreUpdating = vectorStoreStatus?.status === "running";
+  const showVectorStoreBanner =
+    isVectorStoreUpdating ||
+    vectorStoreStatus?.status === "failed" ||
+    vectorStoreStatusError !== null;
+  const vectorStoreBannerText = isVectorStoreUpdating
+    ? "Vector store update in progress. Report generation is paused until the index is ready."
+    : vectorStoreStatus?.status === "failed"
+      ? vectorStoreStatus.error || "Vector store startup update failed. Runs may retry the update when started."
+      : vectorStoreStatusError;
   const hasApiKeyIssue =
     /api key|authentication|unauthorized|401|403/i.test(runError ?? "") ||
     /api key|authentication|unauthorized|401|403/i.test(
@@ -1102,6 +1156,30 @@ export default function Home() {
                   />
                 ) : (
                   <div className="space-y-5">
+                    {showVectorStoreBanner ? (
+                      <div
+                        className={`flex items-start gap-3 rounded-md border p-3 text-sm ${
+                          isVectorStoreUpdating
+                            ? "border-sky-200 bg-sky-50 text-sky-900"
+                            : "border-amber-200 bg-amber-50 text-amber-900"
+                        }`}
+                      >
+                        {isVectorStoreUpdating ? (
+                          <Loader2 className="mt-0.5 h-4 w-4 shrink-0 animate-spin" />
+                        ) : (
+                          <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0" />
+                        )}
+                        <div className="min-w-0 space-y-1">
+                          <p className="font-medium">
+                            {isVectorStoreUpdating
+                              ? "Preparing vector search"
+                              : "Vector store status needs attention"}
+                          </p>
+                          <p>{vectorStoreBannerText}</p>
+                        </div>
+                      </div>
+                    ) : null}
+
                     <div className="space-y-2">
                       <Label htmlFor="question">Question 1 (required)</Label>
                       <Textarea
@@ -1109,6 +1187,7 @@ export default function Home() {
                         placeholder="Example: Compare public EV charging targets and current charger counts across the selected cities, with source-backed numbers and gaps."
                         value={question}
                         onChange={(event) => setQuestion(event.target.value)}
+                        disabled={isVectorStoreUpdating}
                         className="min-h-32"
                       />
                       <p className="text-xs text-slate-600">
@@ -1135,22 +1214,24 @@ export default function Home() {
                         <Label htmlFor="query-2">Question 2 (optional)</Label>
                         <Textarea
                           id="query-2"
-                          placeholder="Example: Evidence on planned charger rollout milestones, deadlines, and responsible owners."
-                          value={query2}
-                          onChange={(event) => setQuery2(event.target.value)}
-                          className="min-h-20"
-                        />
+                        placeholder="Example: Evidence on planned charger rollout milestones, deadlines, and responsible owners."
+                        value={query2}
+                        onChange={(event) => setQuery2(event.target.value)}
+                        disabled={isVectorStoreUpdating}
+                        className="min-h-20"
+                      />
                       </div>
 
                       <div className="space-y-2">
                         <Label htmlFor="query-3">Question 3 (optional)</Label>
                         <Textarea
                           id="query-3"
-                          placeholder="Example: Tables or numeric references for existing public chargers, 2030 targets, and budget commitments."
-                          value={query3}
-                          onChange={(event) => setQuery3(event.target.value)}
-                          className="min-h-20"
-                        />
+                        placeholder="Example: Tables or numeric references for existing public chargers, 2030 targets, and budget commitments."
+                        value={query3}
+                        onChange={(event) => setQuery3(event.target.value)}
+                        disabled={isVectorStoreUpdating}
+                        className="min-h-20"
+                      />
                       </div>
                     </div>
 
@@ -1405,7 +1486,7 @@ export default function Home() {
 
               <Button
                 onClick={handleBuildDocument}
-                disabled={isSubmitting || !question.trim() || !hasValidScope}
+                disabled={isSubmitting || isVectorStoreUpdating || !question.trim() || !hasValidScope}
                 className="w-full"
               >
                 {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" /> : <Sparkles className="h-4 w-4" />}

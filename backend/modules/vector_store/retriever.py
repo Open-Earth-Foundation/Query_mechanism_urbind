@@ -505,6 +505,7 @@ def serialize_retrieved_chunk(chunk: RetrievedChunk) -> dict[str, object]:
     """Serialize one retrieved chunk for persisted retrieval artifacts."""
     return {
         "chunk_id": chunk.chunk_id,
+        "chunk_text": chunk.raw_text,
         "city_name": chunk.city_name,
         "city_key": str(chunk.metadata.get("city_key", "")),
         "source_path": chunk.source_path,

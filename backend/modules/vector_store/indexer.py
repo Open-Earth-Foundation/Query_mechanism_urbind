@@ -1,8 +1,9 @@
 from __future__ import annotations
 
+import hashlib
 import logging
 import os
-from dataclasses import dataclass
+from dataclasses import dataclass, field, replace
 from datetime import datetime, timezone
 from pathlib import Path
 import json
@@ -29,6 +30,7 @@ from backend.utils.retry import RetrySettings, call_with_retries
 from backend.utils.tokenization import chunk_text, count_tokens
 
 logger = logging.getLogger(__name__)
+INDEX_SETTINGS_VERSION = 1
 
 
 @dataclass(frozen=True)
@@ -43,6 +45,9 @@ class IndexStats:
     avg_tokens: float
     max_tokens: int
     dry_run: bool
+    update_reason: str = "incremental_update"
+    changed_files: list[dict[str, object]] = field(default_factory=list)
+    deleted_files: list[dict[str, object]] = field(default_factory=list)
 
 
 class EmbeddingIndexingError(RuntimeError):
@@ -375,6 +380,48 @@ def _source_city_key(source_path: str) -> str:
     return normalize_city_key(Path(str(source_path)).stem)
 
 
+def _index_settings_payload(settings: VectorStoreSettings) -> dict[str, object]:
+    """Return the persisted index settings that shape stored chunks and vectors."""
+    return {
+        "version": INDEX_SETTINGS_VERSION,
+        "embedding_model": settings.embedding_model,
+        "embedding_max_input_tokens": settings.embedding_max_input_tokens,
+        "chunk_tokens": settings.chunk_tokens,
+        "chunk_overlap_tokens": settings.chunk_overlap_tokens,
+        "table_row_group_max_rows": settings.table_row_group_max_rows,
+    }
+
+
+def _index_settings_signature(payload: dict[str, object]) -> str:
+    """Return a stable hash for persisted index-shaping settings."""
+    serialized = json.dumps(payload, sort_keys=True, separators=(",", ":"))
+    return hashlib.sha256(serialized.encode("utf-8")).hexdigest()
+
+
+def _apply_manifest_index_settings(
+    manifest: dict[str, object],
+    settings_payload: dict[str, object],
+) -> None:
+    """Persist current index-shaping settings on the manifest."""
+    manifest["index_settings"] = settings_payload
+    manifest["index_settings_signature"] = _index_settings_signature(settings_payload)
+
+
+def _requires_full_rebuild(
+    manifest: dict[str, object],
+    settings_payload: dict[str, object],
+) -> bool:
+    """Return true when manifest metadata cannot prove the current index is still valid."""
+    current_signature = _index_settings_signature(settings_payload)
+    manifest_signature = manifest.get("index_settings_signature")
+    if isinstance(manifest_signature, str) and manifest_signature == current_signature:
+        return False
+    manifest_settings = manifest.get("index_settings")
+    if isinstance(manifest_settings, dict) and manifest_settings == settings_payload:
+        return False
+    return True
+
+
 def build_markdown_index(
     config: AppConfig,
     docs_dir: Path,
@@ -384,6 +431,7 @@ def build_markdown_index(
 ) -> IndexStats:
     """Build a full markdown index from scratch."""
     settings = get_vector_store_settings(config)
+    settings_payload = _index_settings_payload(settings)
     project_root = Path.cwd()
     files = _iter_markdown_files(docs_dir, selected_cities=selected_cities)
     total_files = len(files)
@@ -401,19 +449,33 @@ def build_markdown_index(
         embedding_chunk_tokens=settings.chunk_tokens,
         embedding_chunk_overlap_tokens=settings.chunk_overlap_tokens,
     )
+    _apply_manifest_index_settings(manifest, settings_payload)
     all_chunks: list[IndexedChunk] = []
+    changed_files: list[dict[str, object]] = []
     files_indexed = 0
 
     for index, file_path in enumerate(files, start=1):
         file_hash, chunks = _build_indexed_chunks_for_file(file_path, settings, project_root)
         source_path = _source_path(file_path, project_root)
+        chunk_ids = [chunk.chunk_id for chunk in chunks]
         _apply_manifest_file_entry(
             manifest=manifest,
             source_path=source_path,
             file_hash=file_hash,
-            chunk_ids=[chunk.chunk_id for chunk in chunks],
+            chunk_ids=chunk_ids,
         )
         all_chunks.extend(chunks)
+        changed_files.append(
+            {
+                "source_path": source_path,
+                "status": "indexed",
+                "previous_file_hash": None,
+                "current_file_hash": file_hash,
+                "previous_chunk_count": 0,
+                "current_chunk_count": len(chunk_ids),
+                "removed_previous_chunk_count": 0,
+            }
+        )
         files_indexed += 1
         logger.info(
             "Index build progress documents=%d/%d source=%s chunks=%d",
@@ -490,6 +552,8 @@ def build_markdown_index(
         avg_tokens=avg_tokens,
         max_tokens=max_tokens,
         dry_run=dry_run,
+        update_reason="full_rebuild",
+        changed_files=changed_files,
     )
 
 
@@ -501,14 +565,33 @@ def update_markdown_index(
 ) -> IndexStats:
     """Incrementally update markdown index from manifest state."""
     settings = get_vector_store_settings(config)
+    settings_payload = _index_settings_payload(settings)
     project_root = Path.cwd()
     manifest = load_manifest(settings.manifest_path)
+    if _requires_full_rebuild(manifest, settings_payload):
+        logger.warning(
+            "Index settings changed or are missing from manifest; forcing full rebuild "
+            "docs_dir=%s selected_cities=%s manifest_path=%s",
+            docs_dir,
+            selected_cities,
+            settings.manifest_path,
+        )
+        stats = build_markdown_index(
+            config=config,
+            docs_dir=docs_dir,
+            selected_cities=None,
+            dry_run=dry_run,
+        )
+        if isinstance(stats, IndexStats):
+            return replace(stats, update_reason="index_settings_changed_or_missing")
+        return stats
     mark_manifest_updated(
         manifest,
         embedding_model=settings.embedding_model,
         embedding_chunk_tokens=settings.chunk_tokens,
         embedding_chunk_overlap_tokens=settings.chunk_overlap_tokens,
     )
+    _apply_manifest_index_settings(manifest, settings_payload)
     files_section: dict[str, dict] = manifest.setdefault("files", {})
 
     current_files = _iter_markdown_files(docs_dir, selected_cities=selected_cities)
@@ -527,6 +610,7 @@ def update_markdown_index(
     files_deleted = 0
     changed_entries: dict[str, tuple[str, list[str]]] = {}
     previous_ids_by_source: dict[str, list[str]] = {}
+    changed_files: list[dict[str, object]] = []
 
     for index, (source_path, file_path) in enumerate(current_source_map.items(), start=1):
         content = file_path.read_text(encoding="utf-8")
@@ -549,7 +633,20 @@ def update_markdown_index(
         file_hash, chunks = _build_indexed_chunks_for_file(file_path, settings, project_root)
         chunk_ids = [chunk.chunk_id for chunk in chunks]
         changed_entries[source_path] = (file_hash, chunk_ids)
-        previous_ids_by_source[source_path] = [str(chunk_id) for chunk_id in previous_chunk_ids]
+        previous_chunk_id_list = [str(chunk_id) for chunk_id in previous_chunk_ids]
+        previous_ids_by_source[source_path] = previous_chunk_id_list
+        removed_previous_chunk_count = len(set(previous_chunk_id_list) - set(chunk_ids))
+        changed_files.append(
+            {
+                "source_path": source_path,
+                "status": "modified" if previous else "added",
+                "previous_file_hash": previous.get("file_hash") if isinstance(previous, dict) else None,
+                "current_file_hash": file_hash,
+                "previous_chunk_count": len(previous_chunk_id_list),
+                "current_chunk_count": len(chunk_ids),
+                "removed_previous_chunk_count": removed_previous_chunk_count,
+            }
+        )
         changed_chunks.extend(chunks)
         files_changed += 1
         logger.info(
@@ -582,6 +679,14 @@ def update_markdown_index(
         ]
         for source_path in removed_sources
     }
+    deleted_files = [
+        {
+            "source_path": source_path,
+            "status": "deleted",
+            "previous_chunk_count": len(chunk_ids),
+        }
+        for source_path, chunk_ids in removed_ids_by_source.items()
+    ]
     files_deleted = len(removed_sources)
 
     embedded_changed_chunks: list[IndexedChunk] = []
@@ -638,6 +743,9 @@ def update_markdown_index(
         avg_tokens=avg_tokens,
         max_tokens=max_tokens,
         dry_run=dry_run,
+        update_reason="incremental_update",
+        changed_files=changed_files,
+        deleted_files=deleted_files,
     )
 
 

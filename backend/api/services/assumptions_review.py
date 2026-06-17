@@ -18,7 +18,7 @@ from backend.api.services.context_chat import load_context_bundle, load_final_do
 from backend.api.services.run_store import RunRecord, RunStore
 from backend.modules.writer.agent import write_markdown
 from backend.utils.artifact_manifest import resolve_manifest_alias
-from backend.utils.artifact_writer import ArtifactWriter
+from backend.utils.artifact_writer import ArtifactWriter, stage_file_dir_name
 from backend.utils.config import AppConfig, get_openrouter_api_key
 from backend.utils.json_io import read_json
 
@@ -293,18 +293,19 @@ def rewrite_document_with_assumptions(
 def load_latest_assumptions_payload(run_store: RunStore, run_id: str) -> dict[str, object]:
     """Load most recent assumptions artifacts for a run when available."""
     run_dir = run_store.runs_dir / run_id
+    assumptions_stage_dir = run_dir / "stage_files" / stage_file_dir_name("assumptions")
     discovered_path = resolve_manifest_alias(run_dir, "assumptions_discovered") or (
-        run_dir / "stage_files" / "assumptions" / "discovered.json"
+        assumptions_stage_dir / "discovered.json"
     )
     edited_path = resolve_manifest_alias(run_dir, "assumptions_edited") or (
-        run_dir / "stage_files" / "assumptions" / "edited.json"
+        assumptions_stage_dir / "edited.json"
     )
     revised_output_path = resolve_manifest_alias(run_dir, "assumptions_final_output") or (
-        run_dir / "stage_files" / "assumptions" / "final_with_assumptions.md"
+        assumptions_stage_dir / "final_with_assumptions.md"
     )
     revised_context_path = resolve_manifest_alias(
         run_dir, "assumptions_revised_context_bundle"
-    ) or (run_dir / "stage_files" / "assumptions" / "revised_context_bundle.json")
+    ) or (assumptions_stage_dir / "revised_context_bundle.json")
 
     payload: dict[str, object] = {"run_id": run_id}
     if discovered_path.exists():

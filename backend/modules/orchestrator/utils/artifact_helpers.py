@@ -84,7 +84,6 @@ def build_markdown_metrics(
     *,
     markdown_chunks: list[dict[str, object]],
     markdown_bundle: dict[str, Any],
-    accepted_artifact: dict[str, object],
     rejected_artifact: dict[str, object],
     decision_audit_artifact: dict[str, object],
 ) -> dict[str, object]:
@@ -102,7 +101,7 @@ def build_markdown_metrics(
         ),
         "markdown_excerpt_count": markdown_bundle.get("excerpt_count", 0),
         "markdown_decision_invariant_ok": decision_audit_artifact.get("invariant_ok"),
-        "accepted_status": accepted_artifact.get("status"),
+        "accepted_status": decision_audit_artifact.get("status"),
         "rejected_status": rejected_artifact.get("status"),
     }
 

@@ -11,10 +11,11 @@ from backend.api.services import assumptions_review
 from backend.api.services.assumptions_review import (
     apply_assumptions_and_regenerate,
     discover_missing_data,
+    load_latest_assumptions_payload,
 )
 from backend.api.services.run_store import RunStore
 from backend.modules.writer.models import WriterOutput
-from backend.utils.artifact_writer import ArtifactWriter
+from backend.utils.artifact_writer import ArtifactWriter, stage_file_dir_name
 from backend.utils.config import (
     WriterConfig,
     AppConfig,
@@ -321,6 +322,33 @@ def test_apply_assumptions_does_not_persist_by_default(
     assert result.assumptions_path is None
     assert "# Revised body" in result.revised_content
     assert not (runs_dir / "run-assumptions" / "stage_files" / "assumptions").exists()
+
+
+def test_load_latest_assumptions_payload_uses_numbered_stage_fallback(tmp_path: Path) -> None:
+    runs_dir = tmp_path / "output"
+    run_store = RunStore(runs_dir)
+    run_id = "run-assumptions"
+    run_dir = runs_dir / run_id
+    assumptions_dir = run_dir / "stage_files" / stage_file_dir_name("assumptions")
+    assumptions_dir.mkdir(parents=True, exist_ok=True)
+
+    discovered_path = assumptions_dir / "discovered.json"
+    edited_path = assumptions_dir / "edited.json"
+    revised_context_path = assumptions_dir / "revised_context_bundle.json"
+    revised_output_path = assumptions_dir / "final_with_assumptions.md"
+    discovered_path.write_text(json.dumps({"items": []}), encoding="utf-8")
+    edited_path.write_text(json.dumps({"items": [{"city": "Aachen"}]}), encoding="utf-8")
+    revised_context_path.write_text(json.dumps({"assumptions": {}}), encoding="utf-8")
+    revised_output_path.write_text("# Revised", encoding="utf-8")
+
+    payload = load_latest_assumptions_payload(run_store, run_id)
+
+    assert payload["run_id"] == run_id
+    assert payload["discovered_path"] == str(discovered_path)
+    assert payload["assumptions_path"] == str(edited_path)
+    assert payload["revised_context_bundle_path"] == str(revised_context_path)
+    assert payload["revised_output_path"] == str(revised_output_path)
+    assert payload["revised_content"] == "# Revised"
 
 
 def test_discover_missing_data_runs_two_pass_merge(

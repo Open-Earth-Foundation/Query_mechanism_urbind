@@ -329,10 +329,13 @@ class TestSerializeEnrichmentArtifacts:
                     "metrics": {"external_evidence_count": 0},
                 },
                 "web_research": {
-                    "status": "skipped",
-                    "flags": {"web_research_enabled": False},
-                    "outputs": {"added_city_fields": []},
-                    "metrics": {"web_finding_count": 0},
+                    "status": "completed",
+                    "flags": {"web_research_enabled": True},
+                    "outputs": {
+                        "search_batches": [{"queries": ["capex Dresden"]}],
+                        "added_city_fields": [],
+                    },
+                    "metrics": {"web_finding_count": 0, "search_batch_count": 1},
                 },
             },
         )
@@ -343,22 +346,33 @@ class TestSerializeEnrichmentArtifacts:
         enrichment_dir = base_dir / "stage_files" / stage_file_dir_name("enrichment")
         assumptions_dir = base_dir / "stage_files" / stage_file_dir_name("assumptions")
         assert enrichment_dir.exists()
-        assert (enrichment_dir / "field_manifest.json").exists()
-        assert (enrichment_dir / "gap_manifest.json").exists()
         assert (enrichment_dir / "enrichment_bundle.json").exists()
-        assert (enrichment_dir / "gap_analysis_stage.json").exists()
-        assert (enrichment_dir / "external_source_search_stage.json").exists()
-        assert (enrichment_dir / "web_research_stage.json").exists()
+        assert not (enrichment_dir / "field_manifest.json").exists()
+        assert not (enrichment_dir / "gap_manifest.json").exists()
+        assert not (enrichment_dir / "gap_analysis_stage.json").exists()
+        assert not (enrichment_dir / "external_source_search_stage.json").exists()
+        assert not (enrichment_dir / "web_research_stage.json").exists()
+        assert (enrichment_dir / "web_research_audit.json").exists()
         assert not (enrichment_dir / "assumptions.json").exists()
         assert not (enrichment_dir / "non_estimable.json").exists()
         assert not (enrichment_dir / "assumptions_stage.json").exists()
         assert (assumptions_dir / "assumptions.json").exists()
         assert (assumptions_dir / "non_estimable.json").exists()
         assert (assumptions_dir / "assumptions_stage.json").exists()
-        # web_findings.json should NOT exist when empty
+        # Projection files should not exist; the bundle is the canonical payload.
         assert not (enrichment_dir / "web_findings.json").exists()
+        assert not (enrichment_dir / "freshness_results.json").exists()
         enrichment_stage = json.loads(
             (base_dir / "stages" / "008_enrichment.json").read_text(encoding="utf-8")
+        )
+        assert enrichment_stage["outputs"]["enrichment_bundle"].endswith(
+            "enrichment_bundle.json"
+        )
+        assert "field_manifest" not in enrichment_stage["outputs"]
+        assert "gap_manifest" not in enrichment_stage["outputs"]
+        assert "substages" in enrichment_stage["outputs"]
+        assert enrichment_stage["outputs"]["web_research_audit"].endswith(
+            "web_research_audit.json"
         )
         assert enrichment_stage["metrics"]["city_gap_count"] == 1
         assert enrichment_stage["metrics"]["gap_field_count"] == 1

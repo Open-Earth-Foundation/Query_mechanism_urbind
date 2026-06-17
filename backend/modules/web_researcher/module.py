@@ -235,13 +235,10 @@ def _write_context_handoff_stage(
     progress: ProgressTracker | None,
     stage_name: str,
     snapshot_filename: str,
-    payload_filename: str,
-    payload_key: str,
-    payload: dict[str, Any] | None,
     progress_label: str,
     metrics: dict[str, Any],
 ) -> None:
-    """Write a context handoff stage from inside the enrichment pipeline."""
+    """Write one full-context handoff stage from inside the enrichment pipeline."""
     if progress:
         progress.start_step(stage_name, f"Freezing {stage_name.replace('_', ' ')}")
     context_snapshot_path = run_logger.write_stage_file(
@@ -253,21 +250,13 @@ def _write_context_handoff_stage(
     outputs = {
         "context_bundle_snapshot": run_logger.artifact_label(context_snapshot_path),
     }
-    if isinstance(payload, dict):
-        payload_path = run_logger.write_stage_file(
-            stage_name,
-            payload_filename,
-            payload,
-            alias=f"{stage_name}_{payload_key}",
-        )
-        outputs[payload_key] = run_logger.artifact_label(payload_path)
     if progress:
         progress.add_item(stage_name, progress_label)
         progress.complete_step(stage_name)
     run_logger.write_stage_detail(
         stage_name,
         {
-            "inputs": {f"has_{payload_key}": isinstance(payload, dict)},
+            "inputs": {},
             "outputs": outputs,
             "metrics": metrics,
         },
@@ -628,15 +617,11 @@ def run_enrichment_pipeline(
         )
         run_logger.context_bundle = enriched
         run_logger.write_context_bundle()
-        enrichment_payload = enriched.get("enrichment")
         _write_context_handoff_stage(
             run_logger=run_logger,
             progress=progress,
             stage_name="enrichment_context_handoff",
             snapshot_filename="context_bundle_after_enrichment.json",
-            payload_filename="enrichment_context_payload.json",
-            payload_key="enrichment_context_payload",
-            payload=enrichment_payload if isinstance(enrichment_payload, dict) else None,
             progress_label="Enrichment context snapshot written",
             metrics={
                 "context_bundle_top_level_keys": len(enriched),
@@ -707,9 +692,6 @@ def run_enrichment_pipeline(
             progress=progress,
             stage_name="assumptions_context_handoff",
             snapshot_filename="context_bundle_after_assumptions.json",
-            payload_filename="assumptions_context_payload.json",
-            payload_key="assumptions_context_payload",
-            payload=assumptions_payload,
             progress_label="Assumptions context snapshot written",
             metrics={
                 "context_bundle_top_level_keys": len(enriched),

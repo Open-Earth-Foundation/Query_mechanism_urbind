@@ -260,6 +260,7 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
     external_source_search_enabled = os.getenv("EXTERNAL_SOURCE_SEARCH_ENABLED")
     external_source_dir = os.getenv("EXTERNAL_SOURCE_DIR")
     vector_store_enabled = os.getenv("VECTOR_STORE_ENABLED")
+    vector_store_auto_update_on_run = os.getenv("VECTOR_STORE_AUTO_UPDATE_ON_RUN")
     chroma_persist_path = os.getenv("CHROMA_PERSIST_PATH")
     chroma_collection_name = os.getenv("CHROMA_COLLECTION_NAME")
 
@@ -287,6 +288,10 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
         parsed = _parse_env_bool(vector_store_enabled)
         if parsed is not None:
             config.vector_store.enabled = parsed
+    if vector_store_auto_update_on_run is not None:
+        parsed = _parse_env_bool(vector_store_auto_update_on_run)
+        if parsed is not None:
+            config.vector_store.auto_update_on_run = parsed
     if chroma_persist_path:
         manifest_default = Path(".chroma/index_manifest.json")
         config.vector_store.chroma_persist_path = Path(chroma_persist_path)

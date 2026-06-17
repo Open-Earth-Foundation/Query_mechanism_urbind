@@ -546,7 +546,7 @@ class RunLogger:
         lines.append("")
         lines.append("FULL PAYLOADS")
         lines.append("- context_bundle: context_bundle.json")
-        lines.append("- markdown_excerpts: stage_files/006_markdown_extraction/excerpts.json")
+        lines.append("- markdown_excerpts: stage_files/006_markdown_extraction/accepted_excerpts.json")
         lines.append("- final_output: final.md")
 
         self.run_paths.run_summary.write_text("\n".join(lines), encoding="utf-8")

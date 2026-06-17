@@ -97,21 +97,15 @@ def write_success_artifacts(
     writer.register_file("context_bundle", paths.context_bundle)
     writer.register_file("final_output", paths.final_output)
     if excerpts:
-        normalized_excerpts, references_payload = build_markdown_references(
+        normalized_excerpts, _references_payload = build_markdown_references(
             run_id=run_id,
             excerpts=excerpts,
         )
         writer.write_stage_file(
             "markdown_extraction",
-            "excerpts.json",
+            "accepted_excerpts.json",
             {"excerpts": normalized_excerpts},
             alias="markdown_excerpts",
-        )
-        writer.write_stage_file(
-            "markdown_extraction",
-            "references.json",
-            references_payload,
-            alias="references",
         )
     writer.write_manifest({"status": "completed"})
     return paths
@@ -219,26 +213,9 @@ def write_followup_bundle(
     writer.register_file("context_bundle", bundle_dir / "context_bundle.json")
     writer.write_stage_file(
         "markdown_extraction",
-        "excerpts.json",
+        "accepted_excerpts.json",
         {"excerpts": context_bundle["markdown"]["excerpts"]},
         alias="markdown_excerpts",
-    )
-    writer.write_stage_file(
-        "markdown_extraction",
-        "references.json",
-        {
-            "references": [
-                {
-                    "ref_id": "ref_1",
-                    "excerpt_index": 0,
-                    "city_name": target_city,
-                    "quote": quote,
-                    "partial_answer": partial_answer,
-                    "source_chunk_ids": ["chunk-followup-1"],
-                }
-            ]
-        },
-        alias="references",
     )
     writer.write_manifest({"status": "completed", "source": "chat_followup"})
 

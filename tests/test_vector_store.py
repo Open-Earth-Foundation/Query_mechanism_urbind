@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 from pathlib import Path
 
 import pytest
@@ -7,6 +8,7 @@ import pytest
 from backend.modules.vector_store import chroma_store as chroma_store_module
 from backend.modules.vector_store.chroma_store import ChromaStore
 from backend.modules.vector_store.indexer import (
+    IndexStats,
     OpenAIEmbeddingProvider,
     build_markdown_index,
     update_markdown_index,
@@ -22,6 +24,7 @@ from backend.utils.config import (
     AppConfig,
     VectorStoreConfig,
 )
+from backend.utils.run_snapshot import build_vector_store_snapshot
 from tests.support import build_test_app_config
 
 
@@ -39,6 +42,18 @@ def _build_config(tmp_path: Path) -> AppConfig:
             index_manifest_path=tmp_path / ".chroma" / "index_manifest.json",
         ),
     )
+
+
+def _matching_index_settings_payload(config: AppConfig) -> dict[str, object]:
+    """Return manifest index-settings metadata matching the test config."""
+    return {
+        "version": 1,
+        "embedding_model": config.vector_store.embedding_model,
+        "embedding_max_input_tokens": config.vector_store.embedding_max_input_tokens,
+        "chunk_tokens": config.vector_store.embedding_chunk_tokens,
+        "chunk_overlap_tokens": config.vector_store.embedding_chunk_overlap_tokens,
+        "table_row_group_max_rows": config.vector_store.table_row_group_max_rows,
+    }
 
 
 def test_parse_markdown_blocks_tracks_heading_path() -> None:
@@ -158,6 +173,9 @@ def test_manifest_update_skips_unchanged_and_updates_changed(
             self.persist_path = persist_path
             self.collection_name = collection_name
 
+        def reset_collection(self) -> None:
+            return None
+
         def delete(self, ids: list[str]) -> None:
             self.delete_calls.append(len(ids))
 
@@ -204,6 +222,130 @@ def test_manifest_update_skips_unchanged_and_updates_changed(
     third_stats = update_markdown_index(config=config, docs_dir=docs_dir, dry_run=False)
     assert third_stats.files_changed == 1
     assert third_stats.chunks_created > 0
+    assert third_stats.changed_files == [
+        {
+            "source_path": file_path.as_posix(),
+            "status": "modified",
+            "previous_file_hash": first_stats.changed_files[0]["current_file_hash"],
+            "current_file_hash": third_stats.changed_files[0]["current_file_hash"],
+            "previous_chunk_count": first_stats.chunks_created,
+            "current_chunk_count": third_stats.chunks_created,
+            "removed_previous_chunk_count": first_stats.chunks_created,
+        }
+    ]
+
+
+def test_vector_store_snapshot_includes_auto_update_diagnostics(tmp_path: Path) -> None:
+    """Vector-store snapshots persist the update reason and changed-file details."""
+    config = _build_config(tmp_path)
+    update_stats = IndexStats(
+        files_indexed=1,
+        files_changed=1,
+        files_unchanged=0,
+        files_deleted=0,
+        chunks_created=3,
+        table_chunks=1,
+        min_tokens=10,
+        avg_tokens=20.0,
+        max_tokens=30,
+        dry_run=False,
+        changed_files=[
+            {
+                "source_path": "documents/Munich.md",
+                "status": "modified",
+                "previous_chunk_count": 2,
+                "current_chunk_count": 3,
+                "removed_previous_chunk_count": 1,
+            }
+        ],
+    )
+
+    snapshot = build_vector_store_snapshot(
+        config,
+        update_stats=update_stats,
+        selected_cities=["Munich"],
+    )
+
+    assert snapshot["auto_update"] == {
+        "ran": True,
+        "reason": "incremental_update",
+        "trigger": "auto_update_on_run",
+        "selected_cities": ["Munich"],
+        "stats": {
+            "files_indexed": 1,
+            "files_changed": 1,
+            "files_unchanged": 0,
+            "files_deleted": 0,
+            "chunks_created": 3,
+            "table_chunks": 1,
+            "min_tokens": 10,
+            "avg_tokens": 20.0,
+            "max_tokens": 30,
+            "dry_run": False,
+            "update_reason": "incremental_update",
+            "changed_files": [
+                {
+                    "source_path": "documents/Munich.md",
+                    "status": "modified",
+                    "previous_chunk_count": 2,
+                    "current_chunk_count": 3,
+                    "removed_previous_chunk_count": 1,
+                }
+            ],
+            "deleted_files": [],
+        },
+    }
+
+
+def test_update_markdown_index_rebuilds_when_index_settings_change(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir(parents=True)
+    (docs_dir / "Munich.md").write_text("# Munich\n\nInitial content.", encoding="utf-8")
+    config = _build_config(tmp_path)
+    config.vector_store.index_manifest_path.parent.mkdir(parents=True, exist_ok=True)
+    config.vector_store.index_manifest_path.write_text(
+        """
+{
+  "index_settings": {
+    "version": 1,
+    "embedding_model": "test-embedding",
+    "embedding_max_input_tokens": 8000,
+    "chunk_tokens": 999,
+    "chunk_overlap_tokens": 8,
+    "table_row_group_max_rows": 2
+  },
+  "index_settings_signature": "stale",
+  "files": {}
+}
+""",
+        encoding="utf-8",
+    )
+    captured: dict[str, object] = {}
+
+    def _fake_build_markdown_index(**kwargs) -> object:
+        captured.update(kwargs)
+        return "rebuilt"
+
+    monkeypatch.setattr(
+        "backend.modules.vector_store.indexer.build_markdown_index",
+        _fake_build_markdown_index,
+    )
+
+    result = update_markdown_index(
+        config=config,
+        docs_dir=docs_dir,
+        selected_cities=["Munich"],
+        dry_run=False,
+    )
+
+    assert result == "rebuilt"
+    assert captured["config"] == config
+    assert captured["docs_dir"] == docs_dir
+    assert captured["selected_cities"] is None
+    assert captured["dry_run"] is False
 
 
 def test_pack_blocks_keeps_tables_as_table_chunks() -> None:
@@ -350,13 +492,18 @@ def test_update_markdown_index_filtered_city_does_not_delete_other_manifest_entr
     config.vector_store.index_manifest_path.write_text(
         """
 {
+  "index_settings": %s,
   "files": {
     "%s": {"file_hash": "old-munich", "chunk_ids": ["old-m-1"]},
     "%s": {"file_hash": "old-berlin", "chunk_ids": ["old-b-1"]}
   }
 }
 """
-        % (munich_path.as_posix(), berlin_path.as_posix()),
+        % (
+            json.dumps(_matching_index_settings_payload(config)),
+            munich_path.as_posix(),
+            berlin_path.as_posix(),
+        ),
         encoding="utf-8",
     )
 
@@ -429,6 +576,7 @@ def test_update_markdown_index_embedding_failure_aborts_before_delete_and_manife
 
     manifest_text = (
         "{\n"
+        f'  "index_settings": {json.dumps(_matching_index_settings_payload(config))},\n'
         '  "files": {\n'
         f'    "{munich_path.as_posix()}": '
         '{"file_hash": "old-munich-hash", "chunk_ids": ["old-munich-1"]}\n'
@@ -581,12 +729,16 @@ def test_update_markdown_index_upserts_before_deleting_old_chunks(
     config.vector_store.index_manifest_path.write_text(
         """
 {
+  "index_settings": %s,
   "files": {
     "%s": {"file_hash": "outdated", "chunk_ids": ["old-chunk-1"]}
   }
 }
 """
-        % munich_path.as_posix(),
+        % (
+            json.dumps(_matching_index_settings_payload(config)),
+            munich_path.as_posix(),
+        ),
         encoding="utf-8",
     )
 
@@ -660,12 +812,16 @@ def test_update_markdown_index_deletes_only_stale_old_ids_when_chunks_overlap(
     config.vector_store.index_manifest_path.write_text(
         """
 {
+  "index_settings": %s,
   "files": {
     "%s": {"file_hash": "outdated", "chunk_ids": ["chunk_keep", "chunk_old_only"]}
   }
 }
 """
-        % munich_path.as_posix(),
+        % (
+            json.dumps(_matching_index_settings_payload(config)),
+            munich_path.as_posix(),
+        ),
         encoding="utf-8",
     )
 

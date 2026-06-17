@@ -78,17 +78,17 @@ The enrichment result is represented in several overlapping places:
 
 - `context_bundle.json` contains the final `enrichment` block
 - `stage_files/008_enrichment/enrichment_bundle.json` contains the full enrichment bundle in new runs
-- `stage_files/008_enrichment/*` contains split enrichment artifacts in new runs
+- `stages/008_enrichment.json` contains compact flags, outputs, and metrics
 - in older runs, `external_sources/external_evidence.json` duplicated enrichment-stage evidence artifacts
 
 Current model:
 
 - the top-level `external_sources/` copy is gone
 - the raw external-source audit now lives under `stage_files/008_enrichment/external_source_search_audit.json`
-- final accepted outputs are split into clearly named files such as:
-  - `external_source_validated_claims.json`
-  - `external_source_resolutions.json`
-  - `external_source_no_evidence.json`
+- final accepted external outputs live inside `enrichment_bundle.json` under
+  `external_evidence`, `external_resolutions`, and `external_no_evidence`
+- web trace data that is not part of the canonical bundle is written only when
+  present as `stage_files/008_enrichment/web_research_audit.json`
 - runtime `context_bundle.json` still contains the final enrichment block, but that is intentional because it is the downstream-ready canonical context output rather than a logging artifact
 
 This makes it harder to know which file is the canonical source for enrichment evidence.
@@ -182,13 +182,14 @@ Implemented model:
   - `external_source_search_executed`
   - `assumptions_enabled`
   - `assumptions_executed`
-- write dedicated substage artifacts under `stage_files/008_enrichment/`:
-  - `gap_analysis_stage.json`
-  - `external_source_search_stage.json`
-  - `web_research_stage.json`
-  - `assumptions_stage.json`
+- write enrichment data once as the canonical bundle:
+  - `enrichment_bundle.json`
+- keep compact gap/web/external substage status, flags, inputs, and metrics in
+  `stages/008_enrichment.json`
 - keep the raw external-source search audit in the same numbered stage folder:
   - `external_source_search_audit.json`
+- keep a web-research audit only when it adds trace data beyond the bundle:
+  - `web_research_audit.json`
 - log the narrowing funnel for the external-source stage:
   - searched city-fields
   - candidates
@@ -530,7 +531,7 @@ Implemented model for future runs:
   - `stage_files/002_query_preparation/research_question.json`
   - `stage_files/003_retrieval/retrieval.json`
   - `stage_files/005_markdown_batching/batches.json`
-  - `stage_files/006_markdown_extraction/excerpts.json`
+  - `stage_files/006_markdown_extraction/accepted_excerpts.json`
   - `stage_files/008_enrichment/enrichment_bundle.json`
 - markdown batching artifacts are now grouped under `005_markdown_batching`, while markdown extraction decisions and excerpts remain under `006_markdown_extraction`
 - README, benchmark docs, and script docstrings now use the numbered paths

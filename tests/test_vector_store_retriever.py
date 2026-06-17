@@ -4,6 +4,7 @@ from backend.modules.vector_store.models import RetrievedChunk
 from backend.modules.vector_store import retriever as retriever_module
 from backend.modules.vector_store.retriever import (
     as_markdown_documents,
+    build_retrieval_artifact,
     retrieve_chunks_for_queries,
 )
 from backend.modules.vector_store.manifest import save_manifest
@@ -38,6 +39,48 @@ def test_as_markdown_documents_maps_required_fields() -> None:
             "heading_path": "Mobility > Charging",
             "block_type": "table",
             "chunk_index": None,
+        }
+    ]
+
+
+def test_build_retrieval_artifact_includes_chunk_text() -> None:
+    chunk = RetrievedChunk(
+        city_name="Munich",
+        raw_text="## Initiative\nEvidence block",
+        source_path="documents/Munich.md",
+        heading_path="Mobility > Charging",
+        block_type="table",
+        distance=0.231234,
+        chunk_id="munich-1",
+        chunk_index=3,
+        metadata={"city_key": "munich"},
+    )
+
+    artifact = build_retrieval_artifact(
+        queries=["original question"],
+        selected_cities=["Munich"],
+        final_chunks=[chunk],
+        retrieval_meta={},
+    )
+
+    assert artifact["chunks"] == [
+        {
+            "chunk_id": "munich-1",
+            "chunk_text": "## Initiative\nEvidence block",
+            "city_name": "Munich",
+            "city_key": "munich",
+            "source_path": "documents/Munich.md",
+            "heading_path": "Mobility > Charging",
+            "block_type": "table",
+            "distance": 0.231234,
+            "chunk_index": 3,
+            "provenance": {
+                "origin": "seed",
+                "selection_mode": "distance_qualified",
+                "seed_rank": None,
+                "seed_query_ids": [],
+                "expanded_from_chunk_ids": [],
+            },
         }
     ]
 

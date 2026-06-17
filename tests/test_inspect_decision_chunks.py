@@ -11,7 +11,9 @@ from backend.scripts.inspect_decision_chunks import (
 
 def test_decision_ids_dedupes_and_skips_empty() -> None:
     payload = {
-        "accepted_chunk_ids": ["chunk-1", "chunk-1", "", " chunk-2 "],
+        "excerpts": [
+            {"source_chunk_ids": ["chunk-1", "chunk-1", "", " chunk-2 "]},
+        ],
     }
 
     result = _decision_ids(payload, "accepted")

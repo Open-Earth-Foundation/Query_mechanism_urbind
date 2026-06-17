@@ -221,36 +221,6 @@ SAMPLE_EXCERPTS_PAYLOAD: dict[str, Any] = {
     "selected_city_names": ["Sample City"],
     "excerpt_count": 2,
 }
-SAMPLE_REFERENCES_PAYLOAD: dict[str, Any] = {
-    "run_id": "sample_case",
-    "reference_count": 3,
-    "references": [
-        {
-            "ref_id": "ref_1",
-            "excerpt_index": 0,
-            "city_name": "Sample City",
-            "quote": "Sample City plans 500 rooftop solar installations by 2030.",
-            "partial_answer": "Sample City plans 500 rooftop solar installations by 2030.",
-            "source_chunk_ids": ["chunk-seed-1"],
-        },
-        {
-            "ref_id": "ref_2",
-            "excerpt_index": 1,
-            "city_name": "Sample City",
-            "quote": "Retrofit grants total EUR 2 million.",
-            "partial_answer": "Sample City allocated EUR 2 million for retrofit grants.",
-            "source_chunk_ids": ["chunk-fallback-1"],
-        },
-        {
-            "ref_id": "ref_3",
-            "excerpt_index": 2,
-            "city_name": "Sample City",
-            "quote": "District heating will reach 12,000 households.",
-            "partial_answer": "Sample City will expand district heating to 12,000 households.",
-            "source_chunk_ids": ["chunk-neighbor-1"],
-        },
-    ],
-}
 SAMPLE_FINAL_TEXT = """## Summary
 
 Sample City plans 500 rooftop solar installations by 2030. [ref_1]
@@ -305,15 +275,9 @@ def _write_sample_run_artifacts(run_dir: Path) -> None:
     )
     writer.write_stage_file(
         "markdown_extraction",
-        "excerpts.json",
+        "accepted_excerpts.json",
         SAMPLE_EXCERPTS_PAYLOAD,
         alias="markdown_excerpts",
-    )
-    writer.write_stage_file(
-        "markdown_extraction",
-        "references.json",
-        SAMPLE_REFERENCES_PAYLOAD,
-        alias="references",
     )
     (run_dir / "final.md").write_text(SAMPLE_FINAL_TEXT, encoding="utf-8")
     writer.register_file("final_output", run_dir / "final.md")

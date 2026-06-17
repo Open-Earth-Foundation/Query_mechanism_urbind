@@ -269,9 +269,10 @@ class TestEnrichmentPipeline:
             "enrichment"
         )
         assert enrichment_dir.exists()
-        assert (enrichment_dir / "gap_manifest.json").exists()
-        assert (enrichment_dir / "external_source_search_stage.json").exists()
-        assert (enrichment_dir / "web_research_stage.json").exists()
+        assert (enrichment_dir / "enrichment_bundle.json").exists()
+        assert not (enrichment_dir / "gap_manifest.json").exists()
+        assert not (enrichment_dir / "external_source_search_stage.json").exists()
+        assert not (enrichment_dir / "web_research_stage.json").exists()
         assert not (enrichment_dir / "assumptions_stage.json").exists()
         assumptions_dir = run_paths.base_dir / "stage_files" / stage_file_dir_name(
             "assumptions"

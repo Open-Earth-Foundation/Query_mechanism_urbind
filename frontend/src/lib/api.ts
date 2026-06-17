@@ -39,6 +39,24 @@ export interface CreateRunResponse {
   context_url: string;
 }
 
+export type VectorStoreWarmupStatus =
+  | "pending"
+  | "skipped"
+  | "running"
+  | "completed"
+  | "failed";
+
+export interface VectorStoreWarmupResponse {
+  status: VectorStoreWarmupStatus;
+  enabled: boolean;
+  auto_update_on_run: boolean;
+  started_at?: string | null;
+  completed_at?: string | null;
+  message: string;
+  error?: string | null;
+  stats?: Record<string, number> | null;
+}
+
 export type PipelineItemType =
   | "query_group"
   | "search_result"
@@ -588,6 +606,17 @@ export async function fetchRuns(options?: {
     { signal: options?.signal },
     false,
     RUN_LIST_REQUEST_TIMEOUT_MS,
+  );
+}
+
+export async function fetchVectorStoreStatus(options?: {
+  signal?: AbortSignal;
+}): Promise<VectorStoreWarmupResponse> {
+  return requestJson<VectorStoreWarmupResponse>(
+    "/api/v1/system/vector-store",
+    { signal: options?.signal },
+    false,
+    STATUS_REQUEST_TIMEOUT_MS,
   );
 }
 
