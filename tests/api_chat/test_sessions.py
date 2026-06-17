@@ -38,11 +38,13 @@ def test_chat_session_lifecycle(tmp_path: Path, monkeypatch: pytest.MonkeyPatch)
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         return write_success_artifacts(question, run_id, config)
 
     def _stub_generate_reply(

@@ -42,10 +42,12 @@ def test_chat_supports_header_api_key_override(
         log_llm_payload: bool = True,
         analysis_mode: str = "aggregate",
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         return write_success_artifacts(question, run_id, config)
 
     def _stub_generate_reply(
@@ -122,11 +124,13 @@ def test_chat_builds_prompt_safe_citation_catalog_and_persists_mapping(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         excerpts = [
             {
                 "ref_id": "ref_7",
@@ -225,11 +229,13 @@ def test_chat_retries_once_when_first_reply_has_no_valid_citations(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         excerpts = [
             {
                 "ref_id": "ref_1",
@@ -314,11 +320,13 @@ def test_chat_send_works_with_partial_session_prompt_cache(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         excerpts = [
             {
                 "ref_id": "ref_1",
