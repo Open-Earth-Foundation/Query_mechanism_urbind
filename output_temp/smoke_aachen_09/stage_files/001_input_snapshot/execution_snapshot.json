@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "C:\\Users\\mirco\\Projects\\Query_mechanism_urbind\\backend\\scripts\\run_pipeline.py",
+    "--question",
+    "What does Aachen do for rooftop solar?",
+    "--run-id",
+    "smoke_aachen",
+    "--city",
+    "aachen"
+  ],
+  "cwd": "C:\\Users\\mirco\\Projects\\Query_mechanism_urbind",
+  "config_path": "llm_config.yaml",
+  "requested_run_id": "smoke_aachen",
+  "resolved_run_id": "smoke_aachen_09",
+  "invocation_command": "python -m backend.scripts.run_pipeline --question \"What does Aachen do for rooftop solar?\" --run-id smoke_aachen --city aachen",
+  "snapshot_hash": "d45bac17f855c3b2e947c266b6f441f83e659b5c4ba5bb1724656ce5611403b6"
+}

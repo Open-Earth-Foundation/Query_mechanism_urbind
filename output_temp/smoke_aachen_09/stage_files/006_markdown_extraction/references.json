@@ -1,0 +1,136 @@
+{
+  "run_id": "smoke_aachen_09",
+  "reference_count": 13,
+  "references": [
+    {
+      "ref_id": "ref_1",
+      "excerpt_index": 0,
+      "city_name": "Aachen",
+      "quote": "Photovoltaic systems will be mandatory for new buildings in future Where possible, rooftop PV is realised in combination with green roofs The PV potential on roofs and open spaces is maximised as much as possible ... Solar on all suitable roof surfaces",
+      "partial_answer": "Aachen plans to require photovoltaic systems on new buildings, combine rooftop PV with green roofs where possible, and use all suitable roof surfaces for solar.",
+      "source_chunk_ids": [
+        "chunk_b710a602c42b29d5d1912a93"
+      ]
+    },
+    {
+      "ref_id": "ref_2",
+      "excerpt_index": 1,
+      "city_name": "Aachen",
+      "quote": "The City of Aachen is already actively involved in the expansion of renewable electricity generation through wind power as well as ground-mounted and rooftop PV. As part of the determination of energy-related refurbishment requirements, suitable roof areas for PV expansion have already been identified and prioritised for municipal properties in order to increase the proportion of self-generated renewable electricity in the future.",
+      "partial_answer": "Aachen has already identified and prioritised suitable roof areas on municipal properties for PV expansion to increase self-generated renewable electricity.",
+      "source_chunk_ids": [
+        "chunk_29242ed469b33c96c85add57"
+      ]
+    },
+    {
+      "ref_id": "ref_3",
+      "excerpt_index": 2,
+      "city_name": "Aachen",
+      "quote": "With the help of advisory services, building owners are to be supported in the realisation of PV systems on roof surfaces.",
+      "partial_answer": "Aachen supports building owners with advice to help them install PV systems on roof surfaces.",
+      "source_chunk_ids": [
+        "chunk_75bd73cb29f7901e078845ca"
+      ]
+    },
+    {
+      "ref_id": "ref_4",
+      "excerpt_index": 3,
+      "city_name": "Aachen",
+      "quote": "In addition, the topic of sustainable construction ... for example by generating solar power using photovoltaics on the building roofs.",
+      "partial_answer": "Aachen treats rooftop photovoltaics as a way to generate solar power on building roofs in new, more energy-positive buildings.",
+      "source_chunk_ids": [
+        "chunk_499a4a91adff634ee1e0a028"
+      ]
+    },
+    {
+      "ref_id": "ref_5",
+      "excerpt_index": 4,
+      "city_name": "Aachen",
+      "quote": "As part of the determination of energy-related refurbishment requirements, suitable roof areas for PV expansion have already been identified and prioritised for municipal properties in order to increase the proportion of self-generated renewable electricity in the future.",
+      "partial_answer": "Aachen has identified and prioritised suitable roof areas on municipal properties for PV expansion to increase self-generated renewable electricity.",
+      "source_chunk_ids": [
+        "chunk_498057cc1a9c46ee15977a80"
+      ]
+    },
+    {
+      "ref_id": "ref_6",
+      "excerpt_index": 5,
+      "city_name": "Aachen",
+      "quote": "The electricity should be sourced entirely from renewable energy sources, ideally in part from the city's own rooftop photovoltaic systems.",
+      "partial_answer": "Aachen aims to source electricity entirely from renewable energy sources, ideally including the city’s own rooftop photovoltaic systems.",
+      "source_chunk_ids": [
+        "chunk_498057cc1a9c46ee15977a80"
+      ]
+    },
+    {
+      "ref_id": "ref_7",
+      "excerpt_index": 6,
+      "city_name": "Aachen",
+      "quote": "With the help of advisory services, building owners are to be supported in the realisation of PV systems on roof surfaces.",
+      "partial_answer": "Aachen supports building owners with advisory services to help them install PV systems on roof surfaces.",
+      "source_chunk_ids": [
+        "chunk_5eddeaa4574df9e6e95222a2"
+      ]
+    },
+    {
+      "ref_id": "ref_8",
+      "excerpt_index": 7,
+      "city_name": "Aachen",
+      "quote": "In order to promote the expansion of PV systems on roof surfaces, an activation campaign should be designed and implemented in addition to the funding.",
+      "partial_answer": "Aachen runs funding and an activation campaign to promote more PV systems on roof surfaces.",
+      "source_chunk_ids": [
+        "chunk_5eddeaa4574df9e6e95222a2"
+      ]
+    },
+    {
+      "ref_id": "ref_9",
+      "excerpt_index": 8,
+      "city_name": "Aachen",
+      "quote": "By May 2023, almost 1,600 solar installations had been subsidised since the start of the funding programme in September 2020, with a funding volume of €1.6 million in 2023 alone.",
+      "partial_answer": "Aachen's solar funding programme had subsidised almost 1,600 solar installations by May 2023.",
+      "source_chunk_ids": [
+        "chunk_5eddeaa4574df9e6e95222a2"
+      ]
+    },
+    {
+      "ref_id": "ref_10",
+      "excerpt_index": 9,
+      "city_name": "Aachen",
+      "quote": "This applies not only to rooftop PV but also to the installation of heat pumps.",
+      "partial_answer": "In Aachen's historic centre of Kornelimünster, rooftop PV is subject to heritage approval requirements.",
+      "source_chunk_ids": [
+        "chunk_63631e88427e3d4e375a31ef"
+      ]
+    },
+    {
+      "ref_id": "ref_11",
+      "excerpt_index": 10,
+      "city_name": "Aachen",
+      "quote": "The city of Aachen has a solar roof register and identified enormous potential for solar installations.",
+      "partial_answer": "Aachen created a solar roof register and identified significant potential for solar installations.",
+      "source_chunk_ids": [
+        "chunk_fbbf4f0cef06a37c9a6330e1"
+      ]
+    },
+    {
+      "ref_id": "ref_12",
+      "excerpt_index": 11,
+      "city_name": "Aachen",
+      "quote": "PV systems are to be installed with immediate effect in all new municipal buildings and major renovations (especially roof refurbishments).",
+      "partial_answer": "Aachen requires PV systems in new municipal buildings and major renovations, especially roof refurbishments.",
+      "source_chunk_ids": [
+        "chunk_1d45d2dcb04e5134f047c9aa"
+      ]
+    },
+    {
+      "ref_id": "ref_13",
+      "excerpt_index": 12,
+      "city_name": "Aachen",
+      "quote": "The use of renewable heat (versus district heating connection) and renewable electricity (installation of PV systems) will also be examined.",
+      "partial_answer": "Aachen examines the use of PV systems when refurbishing its municipal housing stock.",
+      "source_chunk_ids": [
+        "chunk_346c5d37ee1de016c494f0ac"
+      ]
+    }
+  ]
+}

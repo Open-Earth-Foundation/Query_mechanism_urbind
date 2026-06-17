@@ -13,6 +13,7 @@ from agents.exceptions import MaxTurnsExceeded
 
 from backend.modules.web_researcher.external_resolver import resolve_external_evidence
 from backend.modules.web_researcher.external_sources import (
+    EXTERNAL_SOURCE_SEARCH_AUDIT_FILENAME,
     ExternalSearchSession,
     ExternalSourceToolError,
     build_external_search_limits,
@@ -32,6 +33,7 @@ from backend.services.agents import (
     build_openrouter_model,
     run_agent_sync,
 )
+from backend.utils.artifact_writer import stage_file_dir_name
 from backend.utils.config import AppConfig
 from backend.utils.prompts import load_prompt
 
@@ -52,30 +54,35 @@ def run_external_source_enrichment(
     list[ExternalEvidenceResolution],
     list[NoEvidenceRecord],
     list[dict[str, object]],
+    dict[str, object],
 ]:
     """Run the external-source LLM tool loop and resolve evidence decisions."""
     if not config.enrichment.external_source_search_enabled:
-        return [], [], [], []
+        return [], [], [], [], {}
 
     registry = try_load_external_source_registry(config.enrichment.external_source_dir)
     if registry is None or not gap_manifest.city_gaps:
-        return [], [], [], []
+        return [], [], [], [], {}
 
     session = ExternalSearchSession(
         run_id=run_id or base_dir.name,
         registry=registry,
         limits=build_external_search_limits(config),
-        artifact_dir=base_dir / "external_sources",
+        artifact_dir=base_dir / "stage_files" / stage_file_dir_name("enrichment"),
     )
     agent = build_external_source_research_agent(config, api_key, session)
     finalizer = build_external_source_finalizer_agent(config, api_key)
     all_claims: list[ExternalEvidenceClaim] = []
+    all_rejected_claims: list[dict[str, object]] = []
     all_no_evidence: list[NoEvidenceRecord] = []
     candidate_index: dict[str, EvidenceCandidate] = {}
+    max_turn_exceeded_count = 0
+    fallback_finalization_count = 0
 
     for task in _iter_external_research_tasks(gap_manifest, context_bundle, question):
         session.set_active_task(str(task["city"]), str(task["field"]))
         agent_output: ExternalSourceAgentResult | None = None
+        fallback_attempted = False
         try:
             result = run_agent_sync(
                 agent,
@@ -91,12 +98,15 @@ def run_external_source_enrichment(
                     task["field"],
                 )
         except MaxTurnsExceeded:
+            max_turn_exceeded_count += 1
             logger.warning(
                 "External source research exceeded max turns for city=%s field=%s; "
                 "trying expanded-hit finalization.",
                 task["city"],
                 task["field"],
             )
+            fallback_finalization_count += 1
+            fallback_attempted = True
             agent_output = _finalize_from_expanded_hits(
                 task=task,
                 session=session,
@@ -109,6 +119,8 @@ def run_external_source_enrichment(
                 task["field"],
                 exc_info=True,
             )
+            fallback_finalization_count += 1
+            fallback_attempted = True
             agent_output = _finalize_from_expanded_hits(
                 task=task,
                 session=session,
@@ -117,7 +129,8 @@ def run_external_source_enrichment(
 
         if agent_output is None:
             continue
-        if not agent_output.claims:
+        if not agent_output.claims and not fallback_attempted:
+            fallback_finalization_count += 1
             fallback_output = _finalize_from_expanded_hits(
                 task=task,
                 session=session,
@@ -129,7 +142,12 @@ def run_external_source_enrichment(
         candidate_index.update(
             {candidate.candidate_id: candidate for candidate in session.evidence_candidates()}
         )
-        all_claims.extend(_validated_claims(agent_output.claims, candidate_index))
+        task_validated_claims, task_rejected_claims = _validated_claims(
+            agent_output.claims,
+            candidate_index,
+        )
+        all_claims.extend(task_validated_claims)
+        all_rejected_claims.extend(task_rejected_claims)
         all_no_evidence.extend(agent_output.no_evidence)
 
     existing_no_evidence_ids = {record.record_id for record in all_no_evidence}
@@ -138,7 +156,10 @@ def run_external_source_enrichment(
         for record in session.no_evidence_records()
         if record.record_id not in existing_no_evidence_ids
     )
-    deduped_claims = _dedupe_claims(all_claims)
+    validated_claims, rejected_claims = _validated_claims(all_claims, candidate_index)
+    rejected_claims = [*all_rejected_claims, *rejected_claims]
+    deduped_claims, duplicate_claims = _dedupe_claims(validated_claims)
+    rejected_claims.extend(duplicate_claims)
     ccc_values = _extract_external_ccc_values(context_bundle)
     resolutions = resolve_external_evidence(
         gap_manifest.city_gaps,
@@ -146,7 +167,16 @@ def run_external_source_enrichment(
         all_no_evidence,
         ccc_values=ccc_values,
     )
-    return deduped_claims, resolutions, all_no_evidence, session.tool_call_log()
+    audit_payload = _build_external_search_audit_payload(
+        session=session,
+        gap_manifest=gap_manifest,
+        validated_claims=deduped_claims,
+        resolutions=resolutions,
+        rejected_claims=rejected_claims,
+        max_turn_exceeded_count=max_turn_exceeded_count,
+        fallback_finalization_count=fallback_finalization_count,
+    )
+    return deduped_claims, resolutions, all_no_evidence, session.tool_call_log(), audit_payload
 
 
 def build_external_source_research_agent(
@@ -569,18 +599,37 @@ def _index_ccc_value(
 def _validated_claims(
     claims: list[ExternalEvidenceClaim],
     candidates: dict[str, EvidenceCandidate],
-) -> list[ExternalEvidenceClaim]:
+) -> tuple[list[ExternalEvidenceClaim], list[dict[str, object]]]:
     """Keep only claims backed by saved evidence candidates."""
     validated: list[ExternalEvidenceClaim] = []
+    rejected: list[dict[str, object]] = []
     for claim in claims:
         if not claim.candidate_id:
             logger.warning("External claim skipped because candidate_id is missing.")
+            rejected.append(
+                {
+                    "city": claim.city,
+                    "field": claim.field,
+                    "candidate_id": None,
+                    "rejection_reason": "missing_candidate_id",
+                    "claim": claim.model_dump(mode="json"),
+                }
+            )
             continue
         candidate = candidates.get(claim.candidate_id)
         if candidate is None:
             logger.warning(
                 "External claim skipped because candidate_id=%s is unknown.",
                 claim.candidate_id,
+            )
+            rejected.append(
+                {
+                    "city": claim.city,
+                    "field": claim.field,
+                    "candidate_id": claim.candidate_id,
+                    "rejection_reason": "unknown_candidate_id",
+                    "claim": claim.model_dump(mode="json"),
+                }
             )
             continue
         if candidate.city.casefold() != claim.city.casefold() or (
@@ -593,6 +642,16 @@ def _validated_claims(
                 candidate.field,
                 claim.city,
                 claim.field,
+            )
+            rejected.append(
+                {
+                    "city": claim.city,
+                    "field": claim.field,
+                    "candidate_id": claim.candidate_id,
+                    "rejection_reason": "candidate_city_field_mismatch",
+                    "claim": claim.model_dump(mode="json"),
+                    "candidate": candidate.model_dump(mode="json"),
+                }
             )
             continue
         updated_claim = claim.model_copy(
@@ -613,9 +672,19 @@ def _validated_claims(
                 claim.field,
                 claim.candidate_id,
             )
+            rejected.append(
+                {
+                    "city": claim.city,
+                    "field": claim.field,
+                    "candidate_id": claim.candidate_id,
+                    "rejection_reason": "field_requirements_not_satisfied",
+                    "claim": updated_claim.model_dump(mode="json"),
+                    "candidate": candidate.model_dump(mode="json"),
+                }
+            )
             continue
         validated.append(updated_claim)
-    return validated
+    return validated, rejected
 
 
 def _claim_contains_field_requirements(claim: ExternalEvidenceClaim) -> bool:
@@ -654,9 +723,12 @@ def _allows_implicit_infrastructure_target_year(field_terms: list[str], haystack
     return has_quantity and has_program_timing
 
 
-def _dedupe_claims(claims: list[ExternalEvidenceClaim]) -> list[ExternalEvidenceClaim]:
+def _dedupe_claims(
+    claims: list[ExternalEvidenceClaim],
+) -> tuple[list[ExternalEvidenceClaim], list[dict[str, object]]]:
     """Keep the highest-confidence claim per city-field-source-line tuple."""
     indexed: dict[tuple[str, str, str, int, int], ExternalEvidenceClaim] = {}
+    duplicates: list[dict[str, object]] = []
     for claim in claims:
         key = (
             claim.city.casefold(),
@@ -666,9 +738,104 @@ def _dedupe_claims(claims: list[ExternalEvidenceClaim]) -> list[ExternalEvidence
             claim.line_end,
         )
         existing = indexed.get(key)
-        if existing is None or claim.confidence > existing.confidence:
+        if existing is None:
             indexed[key] = claim
-    return list(indexed.values())
+            continue
+        if claim.confidence > existing.confidence:
+            duplicates.append(
+                {
+                    "city": existing.city,
+                    "field": existing.field,
+                    "candidate_id": existing.candidate_id,
+                    "rejection_reason": "lower_confidence_duplicate",
+                    "claim": existing.model_dump(mode="json"),
+                }
+            )
+            indexed[key] = claim
+            continue
+        duplicates.append(
+            {
+                "city": claim.city,
+                "field": claim.field,
+                "candidate_id": claim.candidate_id,
+                "rejection_reason": "lower_confidence_duplicate",
+                "claim": claim.model_dump(mode="json"),
+            }
+        )
+    return list(indexed.values()), duplicates
+
+
+def _build_external_search_audit_payload(
+    *,
+    session: ExternalSearchSession,
+    gap_manifest: GapManifest,
+    validated_claims: list[ExternalEvidenceClaim],
+    resolutions: list[ExternalEvidenceResolution],
+    rejected_claims: list[dict[str, object]],
+    max_turn_exceeded_count: int,
+    fallback_finalization_count: int,
+) -> dict[str, object]:
+    """Build the final external-source search audit payload."""
+    candidates = session.evidence_candidates()
+    tool_calls = session.tool_call_log()
+    no_evidence = session.no_evidence_records()
+    searched_city_fields = _gap_city_fields(gap_manifest)
+    resolved_keys = {
+        (resolution.city.casefold(), resolution.field.casefold()) for resolution in resolutions
+    }
+    used_candidate_ids = {
+        claim.candidate_id for claim in validated_claims if isinstance(claim.candidate_id, str)
+    }
+    unused_candidates = [
+        candidate.model_dump(mode="json")
+        for candidate in candidates
+        if candidate.candidate_id not in used_candidate_ids
+    ]
+    unresolved_searched_city_fields = [
+        item
+        for item in searched_city_fields
+        if (str(item["city"]).casefold(), str(item["field"]).casefold()) not in resolved_keys
+    ]
+    return {
+        "run_id": session.run_id,
+        "audit_file": EXTERNAL_SOURCE_SEARCH_AUDIT_FILENAME,
+        "searched_city_fields": searched_city_fields,
+        "candidates": [candidate.model_dump(mode="json") for candidate in candidates],
+        "validated_claims": [claim.model_dump(mode="json") for claim in validated_claims],
+        "rejected_claims": rejected_claims,
+        "unused_candidates": unused_candidates,
+        "no_evidence": [record.model_dump(mode="json") for record in no_evidence],
+        "resolutions": [resolution.model_dump(mode="json") for resolution in resolutions],
+        "tool_calls": tool_calls,
+        "unresolved_searched_city_fields": unresolved_searched_city_fields,
+        "metrics": {
+            "searched_city_field_count": len(searched_city_fields),
+            "candidate_count": len(candidates),
+            "validated_claim_count": len(validated_claims),
+            "rejected_claim_count": len(rejected_claims),
+            "unused_candidate_count": len(unused_candidates),
+            "no_evidence_count": len(no_evidence),
+            "resolution_count": len(resolutions),
+            "tool_call_count": len(tool_calls),
+            "unresolved_searched_city_field_count": len(unresolved_searched_city_fields),
+            "max_turn_exceeded_count": max_turn_exceeded_count,
+            "fallback_finalization_count": fallback_finalization_count,
+        },
+    }
+
+
+def _gap_city_fields(gap_manifest: GapManifest) -> list[dict[str, str]]:
+    """Return unique city-field pairs searched by the external-source stage."""
+    pairs: list[dict[str, str]] = []
+    seen: set[tuple[str, str]] = set()
+    for city_gap in gap_manifest.city_gaps:
+        for field in [*city_gap.blank_fields, *city_gap.stale_flags]:
+            key = (city_gap.city.casefold(), field.casefold())
+            if key in seen:
+                continue
+            seen.add(key)
+            pairs.append({"city": city_gap.city, "field": field})
+    return pairs
 
 
 __all__ = [

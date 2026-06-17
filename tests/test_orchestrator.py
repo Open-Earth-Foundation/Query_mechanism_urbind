@@ -8,11 +8,32 @@ from backend.modules.markdown_researcher.models import (
     MarkdownExcerpt,
     MarkdownResearchResult,
 )
-from backend.modules.orchestrator.module import _build_retrieval_queries, run_pipeline
+from backend.modules.orchestrator.module import (
+    _build_retrieval_queries,
+    _collect_markdown_decision_artifacts,
+    run_pipeline,
+)
+from backend.modules.vector_store.indexer import IndexStats
 from backend.modules.writer.models import WriterCitationCoverage, WriterOutput
 from backend.utils.config import AppConfig
 from backend.utils.logging_config import setup_logger
+from backend.utils.paths import RunPaths
 from tests.support import build_test_app_config
+
+
+def _research_question_path(paths: RunPaths) -> Path:
+    """Return the canonical research-question artifact path for one run."""
+    return (
+        paths.base_dir
+        / "stage_files"
+        / "002_query_preparation"
+        / "research_question.json"
+    )
+
+
+def _stage_file_path(paths: RunPaths, folder: str, filename: str) -> Path:
+    """Return one stage-file path under the numbered stage folder."""
+    return paths.base_dir / "stage_files" / folder / filename
 
 
 def _build_test_config(*, runs_dir: Path, markdown_dir: Path) -> AppConfig:
@@ -77,6 +98,54 @@ def test_build_retrieval_queries_trims_dedupes_case_insensitively_and_caps() -> 
     ]
 
 
+def test_collect_markdown_decision_artifacts_keeps_rejected_chunks_lightweight() -> None:
+    markdown_chunks = [
+        {
+            "chunk_id": "chunk-1",
+            "content": "Accepted chunk content",
+            "city_name": "Munich",
+            "city_key": "munich",
+            "path": "documents/Munich.md",
+            "heading_path": "Mobility > Charging",
+            "block_type": "paragraph",
+            "distance": "0.123",
+            "chunk_index": 1,
+        },
+        {
+            "chunk_id": "chunk-2",
+            "content": "Rejected chunk content",
+            "city_name": "Leipzig",
+            "city_key": "leipzig",
+            "path": "documents/Leipzig.md",
+            "heading_path": "Buildings > Retrofit",
+            "block_type": "table",
+            "distance": "0.456",
+            "chunk_index": 2,
+        },
+    ]
+    markdown_result = MarkdownResearchResult(
+        excerpts=[
+            MarkdownExcerpt(
+                quote="Accepted quote",
+                city_name="Munich",
+                partial_answer="Accepted answer",
+                source_chunk_ids=["chunk-1"],
+            )
+        ],
+        accepted_chunk_ids=["chunk-1"],
+        rejected_chunk_ids=["chunk-2"],
+    )
+
+    rejected_artifact, audit_artifact = (
+        _collect_markdown_decision_artifacts(markdown_chunks, markdown_result)
+    )
+
+    assert rejected_artifact["rejected_chunk_ids"] == ["chunk-2"]
+    assert rejected_artifact["rejected_by_city"] == {"leipzig": ["chunk-2"]}
+    assert "rejected_chunks" not in rejected_artifact
+    assert audit_artifact["status"] == "complete"
+
+
 def test_run_pipeline_creates_artifacts(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
@@ -101,10 +170,144 @@ def test_run_pipeline_creates_artifacts(
 
     assert paths.final_output.exists()
     final_output = paths.final_output.read_text(encoding="utf-8")
-    run_log = json.loads(paths.run_log.read_text(encoding="utf-8"))
+    run_log = json.loads(paths.api_state.read_text(encoding="utf-8"))
     assert run_log["status"] == "completed"
-    assert Path(run_log["artifacts"]["final_output"]).exists()
     assert "Finish reason:" not in final_output
+    assert _stage_file_path(
+        paths,
+        "007_markdown_context_handoff",
+        "context_bundle_after_markdown.json",
+    ).exists()
+    stage_paths = {path.name for path in paths.stages_dir.iterdir() if path.is_file()}
+    assert "007_markdown_context_handoff.json" in stage_paths
+    summary_events = [
+        json.loads(line)
+        for line in paths.summary_events.read_text(encoding="utf-8").splitlines()
+        if line.strip()
+    ]
+    stage_events = [
+        event
+        for event in summary_events
+        if event.get("event_type") == "stage_completed"
+    ]
+    assert stage_events[0]["payload"]["step"] == "input_snapshot"
+    assert stage_events[0]["stage_number"] == 1
+    assert stage_events[1]["payload"]["step"] == "query_preparation"
+    assert stage_events[1]["stage_number"] == 2
+
+
+def test_run_pipeline_keeps_city_scope_on_root_context_not_markdown_payload(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.setenv("OPENROUTER_API_KEY", "test")
+
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir()
+    (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
+
+    config = _build_test_config(
+        runs_dir=tmp_path / "output",
+        markdown_dir=docs_dir,
+    )
+
+    paths = run_pipeline(
+        question="What initiatives exist for Munich?",
+        config=config,
+        markdown_func=_stub_markdown,
+        writer_func=_stub_writer,
+        selected_cities=["Munich"],
+    )
+
+    context_bundle = json.loads(paths.context_bundle.read_text(encoding="utf-8"))
+    markdown_snapshot = json.loads(
+        _stage_file_path(
+            paths,
+            "007_markdown_context_handoff",
+            "context_bundle_after_markdown.json",
+        ).read_text(encoding="utf-8")
+    )
+
+    assert context_bundle["selected_cities"] == ["munich"]
+    assert context_bundle["selected_city_names"] == ["Munich"]
+    assert context_bundle["inspected_cities"] == ["munich"]
+    assert context_bundle["inspected_city_names"] == ["Munich"]
+    assert context_bundle["city_scope_mode"] == "selected_cities"
+    assert markdown_snapshot["selected_cities"] == ["munich"]
+    assert markdown_snapshot["selected_city_names"] == ["Munich"]
+    assert markdown_snapshot["inspected_cities"] == ["munich"]
+    assert markdown_snapshot["inspected_city_names"] == ["Munich"]
+    assert markdown_snapshot["city_scope_mode"] == "selected_cities"
+    assert isinstance(markdown_snapshot.get("markdown"), dict)
+
+
+def test_run_pipeline_writes_enrichment_context_handoff_when_enrichment_runs(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.setenv("OPENROUTER_API_KEY", "test")
+
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir()
+    (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
+
+    config = build_test_app_config(
+        runs_dir=tmp_path / "output",
+        markdown_dir=docs_dir,
+        vector_store_overrides={"enabled": False},
+        enrichment_overrides={"enabled": True},
+    )
+
+    def _stub_enrichment(
+        question: str,
+        context_bundle: dict[str, object],
+        **_kwargs: dict[str, object],
+    ) -> dict[str, object]:
+        del question
+        updated = dict(context_bundle)
+        updated["enrichment"] = {
+            "field_manifest": {"query_fields": [], "non_estimable_fields": []},
+            "gap_manifest": {"city_gaps": []},
+            "enriched_fields": [],
+            "web_findings": [],
+            "external_evidence": [],
+            "external_resolutions": [],
+            "external_no_evidence": [],
+            "freshness_results": [],
+            "meta": {
+                "created_at": "2026-01-01T00:00:00Z",
+                "gap_analyst_model": "test-model",
+                "total_gaps": 0,
+                "estimable_count": 0,
+                "non_estimable_count": 0,
+                "web_findings_count": 0,
+                "external_evidence_count": 0,
+                "elapsed_seconds": 0.0,
+            },
+        }
+        updated["assumptions"] = {
+            "assumptions": [],
+            "non_estimable": [],
+            "saturation_warning": None,
+            "meta": {"assumption_count": 0},
+        }
+        return updated
+
+    monkeypatch.setattr(
+        "backend.modules.orchestrator.module.run_enrichment_pipeline",
+        _stub_enrichment,
+    )
+
+    paths = run_pipeline(
+        question="What initiatives exist for Munich?",
+        config=config,
+        markdown_func=_stub_markdown,
+        writer_func=_stub_writer,
+    )
+
+    context_bundle = json.loads(paths.context_bundle.read_text(encoding="utf-8"))
+    assert "assumptions" in context_bundle
+    assert "assumptions" not in context_bundle["enrichment"]
 
 
 def test_run_pipeline_persists_partial_writer_output_as_completed_with_gaps(
@@ -152,12 +355,140 @@ def test_run_pipeline_persists_partial_writer_output_as_completed_with_gaps(
     )
 
     assert paths.final_output.exists()
-    run_log = json.loads(paths.run_log.read_text(encoding="utf-8"))
+    run_log = json.loads(paths.api_state.read_text(encoding="utf-8"))
     assert run_log["status"] == "completed_with_gaps"
     assert run_log["finish_reason"].startswith(
         "completed_with_gaps (writer partial citation coverage 1/2)"
     )
     assert run_log["writer_citation_coverage"]["missing_cities"] == ["Berlin"]
+
+
+def test_run_pipeline_refreshes_vector_store_snapshot_after_auto_update(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.setenv("OPENROUTER_API_KEY", "test")
+
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir()
+    (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
+
+    config = build_test_app_config(
+        runs_dir=tmp_path / "output",
+        markdown_dir=docs_dir,
+        vector_store_overrides={"enabled": True, "auto_update_on_run": True},
+    )
+
+    snapshot_hashes = iter(["before-update", "after-update"])
+
+    def _fake_build_vector_store_snapshot(
+        _config: AppConfig,
+        *,
+        update_stats: object | None = None,
+        selected_cities: list[str] | None = None,
+    ) -> dict[str, object]:
+        auto_update = None
+        if update_stats is not None:
+            auto_update = {
+                "ran": True,
+                "update_mode": update_stats.update_mode,
+                "trigger": "auto_update_on_run",
+                "selected_cities": selected_cities or [],
+                "stats": {
+                    "files_changed": update_stats.files_changed,
+                    "files_unchanged": update_stats.files_unchanged,
+                    "files_deleted": update_stats.files_deleted,
+                    "chunks_created": update_stats.chunks_created,
+                    "changed_files": update_stats.changed_files,
+                    "deleted_files": update_stats.deleted_files,
+                },
+            }
+        return {
+            "enabled": True,
+            "collection_name": "test_chunks",
+            "index_manifest_hash": next(snapshot_hashes),
+            "manifest_summary": {"chunk_count": 1},
+            "auto_update": auto_update,
+        }
+
+    monkeypatch.setattr(
+        "backend.modules.orchestrator.module.build_vector_store_snapshot",
+        _fake_build_vector_store_snapshot,
+    )
+    update_calls: list[dict[str, object]] = []
+
+    def _fake_update_markdown_index(**kwargs: object) -> IndexStats:
+        update_calls.append(kwargs)
+        return IndexStats(
+            files_indexed=1,
+            files_changed=1,
+            files_unchanged=0,
+            files_deleted=0,
+            chunks_created=1,
+            table_chunks=0,
+            min_tokens=0,
+            avg_tokens=0.0,
+            max_tokens=0,
+            dry_run=False,
+            changed_files=[
+                {
+                    "source_path": "documents/Munich.md",
+                    "status": "modified",
+                    "previous_chunk_count": 1,
+                    "current_chunk_count": 2,
+                    "removed_previous_chunk_count": 1,
+                }
+            ],
+        )
+
+    monkeypatch.setattr(
+        "backend.modules.orchestrator.module.update_markdown_index",
+        _fake_update_markdown_index,
+    )
+    monkeypatch.setattr(
+        "backend.modules.orchestrator.module.retrieve_chunks_for_queries",
+        lambda **_: ([], {"seed_chunks": []}),
+    )
+
+    paths = run_pipeline(
+        question="What initiatives exist for Munich?",
+        config=config,
+        selected_cities=["Munich"],
+        vector_update_docs_dir=docs_dir,
+        markdown_func=_stub_markdown,
+        writer_func=_stub_writer,
+    )
+
+    vector_snapshot = json.loads(
+        _stage_file_path(
+            paths,
+            "001_input_snapshot",
+            "vector_store_snapshot.json",
+        ).read_text(encoding="utf-8")
+    )
+    input_snapshot = json.loads((paths.stages_dir / "001_input_snapshot.json").read_text(encoding="utf-8"))
+
+    assert vector_snapshot["index_manifest_hash"] == "after-update"
+    assert (
+        input_snapshot["snapshot_summary"]["vector_store"]["index_manifest_hash"]
+        == "after-update"
+    )
+    auto_update = vector_snapshot["auto_update"]
+    assert auto_update["ran"] is True
+    assert auto_update["update_mode"] == "incremental_update"
+    assert auto_update["stats"]["files_changed"] == 1
+    assert update_calls[0]["docs_dir"] == docs_dir
+    assert update_calls[0]["selected_cities"] == ["Munich"]
+    assert auto_update["stats"]["changed_files"] == [
+        {
+            "source_path": "documents/Munich.md",
+            "status": "modified",
+            "previous_chunk_count": 1,
+            "current_chunk_count": 2,
+            "removed_previous_chunk_count": 1,
+        }
+    ]
+    assert input_snapshot["snapshot_summary"]["vector_store"]["auto_update"] == auto_update
 
 
 def test_run_pipeline_passes_run_logger_and_paths_to_writer_when_supported(
@@ -294,7 +625,7 @@ def test_run_pipeline_standard_mode_uses_verbatim_question_before_markdown(
     assert captured["question"] == "What initiatives exist for Munich as typed?"
     context_bundle = json.loads(paths.context_bundle.read_text(encoding="utf-8"))
     assert context_bundle["research_question"] == "What initiatives exist for Munich as typed?"
-    research_payload = json.loads(paths.research_question.read_text(encoding="utf-8"))
+    research_payload = json.loads(_research_question_path(paths).read_text(encoding="utf-8"))
     assert research_payload["retrieval_queries"] == [
         "What initiatives exist for Munich as typed?"
     ]
@@ -343,7 +674,7 @@ def test_run_pipeline_standard_mode_uses_optional_queries_when_provided(
     )
 
     assert captured["question"] == "Compare Munich and Leipzig initiatives as written."
-    research_payload = json.loads(paths.research_question.read_text(encoding="utf-8"))
+    research_payload = json.loads(_research_question_path(paths).read_text(encoding="utf-8"))
     assert research_payload["query_mode"] == "standard"
     assert research_payload["retrieval_queries"] == [
         "Compare Munich and Leipzig initiatives as written.",
@@ -392,10 +723,49 @@ def test_run_pipeline_dev_mode_uses_direct_queries(
 
     assert paths.final_output.exists()
     assert captured["question"] == "Main direct query"
-    research_payload = json.loads(paths.research_question.read_text(encoding="utf-8"))
+    research_payload = json.loads(_research_question_path(paths).read_text(encoding="utf-8"))
     assert research_payload["query_mode"] == "dev"
     assert research_payload["retrieval_queries"] == [
         "Main direct query",
         "Second direct query",
         "Third direct query",
     ]
+
+
+def test_run_pipeline_logs_resolved_run_id_when_requested_id_is_suffixed(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.setenv("OPENROUTER_API_KEY", "test")
+
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir()
+    (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
+
+    config = _build_test_config(
+        runs_dir=tmp_path / "output",
+        markdown_dir=docs_dir,
+    )
+
+    first_paths = run_pipeline(
+        question="What initiatives exist for Munich?",
+        config=config,
+        run_id="duplicate-run",
+        markdown_func=_stub_markdown,
+        writer_func=_stub_writer,
+    )
+    second_paths = run_pipeline(
+        question="What initiatives exist for Munich?",
+        config=config,
+        run_id="duplicate-run",
+        markdown_func=_stub_markdown,
+        writer_func=_stub_writer,
+    )
+
+    assert first_paths.base_dir.name == "duplicate-run"
+    assert second_paths.base_dir.name == "duplicate-run_01"
+
+    second_run_log = (second_paths.base_dir / "run.log").read_text(encoding="utf-8")
+    assert "run_id=duplicate-run_01 query_mode=standard query_count=1" in second_run_log
+    assert "run_id=duplicate-run_01 markdown_source_mode=standard_chunking" in second_run_log
+    assert "run_id=duplicate-run query_mode=standard query_count=1" not in second_run_log

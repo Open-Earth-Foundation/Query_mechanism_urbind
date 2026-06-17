@@ -11,7 +11,9 @@ from backend.scripts.inspect_decision_chunks import (
 
 def test_decision_ids_dedupes_and_skips_empty() -> None:
     payload = {
-        "accepted_chunk_ids": ["chunk-1", "chunk-1", "", " chunk-2 "],
+        "excerpts": [
+            {"source_chunk_ids": ["chunk-1", "chunk-1", "", " chunk-2 "]},
+        ],
     }
 
     result = _decision_ids(payload, "accepted")
@@ -45,7 +47,7 @@ def test_default_output_path_targets_markdown_report_file(tmp_path: Path) -> Non
 
     output_path = _default_output_path(run_dir)
 
-    assert output_path == run_dir / "markdown" / "decision_chunks_report.md"
+    assert output_path == run_dir / "stage_files" / "006_markdown_extraction" / "decision_chunks_report.md"
 
 
 def test_collect_rows_without_limit_returns_all_rows() -> None:

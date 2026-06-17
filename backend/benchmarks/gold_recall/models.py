@@ -256,7 +256,6 @@ class RecallBenchmarkCaseResult(BaseModel):
     run_dir: str
     retrieval_path: str
     excerpts_path: str
-    references_path: str
     final_output_path: str
     stage_a: StageARetrievalMetrics
     stage_b: StageBExtractionMetrics

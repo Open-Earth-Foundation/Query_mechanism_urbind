@@ -10,14 +10,17 @@ from pathlib import Path
 import pytest
 
 from backend.scripts.benchmark_external_source_pipeline import _score_case
+import backend.modules.web_researcher.external_agent as external_agent_module
 from backend.modules.web_researcher.context_merger import compute_field_statuses
 from backend.modules.web_researcher.external_agent import (
     _claim_contains_field_requirements,
     _extract_external_ccc_values,
     build_external_source_research_agent,
+    run_external_source_enrichment,
 )
 from backend.modules.web_researcher.external_resolver import resolve_external_evidence
 from backend.modules.web_researcher.external_sources import (
+    EXTERNAL_SOURCE_SEARCH_AUDIT_FILENAME,
     ExternalSearchSession,
     ExternalSourceToolError,
     SourceRegistry,
@@ -28,6 +31,7 @@ from backend.modules.web_researcher.models import (
     CityGap,
     EvidenceCandidateInput,
     ExternalEvidenceClaim,
+    ExternalSourceAgentResult,
     ExternalEvidenceResolution,
     FieldClassification,
     FreshnessResult,
@@ -205,7 +209,9 @@ def test_regex_search_expand_and_evidence_persistence() -> None:
     )
     assert saved[0].candidate_id == "e1"
     payload = json.loads(
-        (workspace / "artifacts" / "external_evidence.json").read_text(encoding="utf-8")
+        (workspace / "artifacts" / EXTERNAL_SOURCE_SEARCH_AUDIT_FILENAME).read_text(
+            encoding="utf-8"
+        )
     )
     assert payload["candidates"][0]["candidate_id"] == "e1"
 
@@ -425,6 +431,140 @@ def test_recent_hit_fallback_stages_candidates_without_expansion() -> None:
     assert saved[0].field == "secap_local_co2_reduction_2030_target"
     assert saved[0].hit_id == "h1"
     assert "30%" in saved[0].quote
+
+
+def test_run_external_source_enrichment_collects_validated_claims_without_nesting(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Validated claims from each task should aggregate as claims, not nested lists."""
+    workspace = _test_workspace("benchmark_runner")
+    source_root = workspace / "source_library"
+    _write_source_library(source_root)
+    config = build_test_app_config(
+        enrichment_overrides={
+            "external_source_search_enabled": True,
+            "external_source_dir": source_root,
+        }
+    )
+    base_dir = workspace / "run"
+    base_dir.mkdir(parents=True, exist_ok=True)
+    context_bundle = {
+        "analysis_mode": "city_by_city",
+        "selected_cities": ["Krakow"],
+        "markdown": {"status": "success", "excerpts": [], "excerpt_count": 0},
+        "enrichment": {},
+    }
+    gap_manifest = GapManifest(
+        query_fields=[
+            FieldClassification(
+                field="secap_local_co2_reduction_2030_target",
+                classification="estimable_numerical",
+                searchable=True,
+                rationale="Benchmark field.",
+            )
+        ],
+        city_gaps=[
+            CityGap(
+                city="Krakow",
+                blank_fields=["secap_local_co2_reduction_2030_target"],
+                stale_flags=[],
+                search_priority="high",
+            )
+        ],
+        non_estimable_fields=[],
+    )
+
+    class _DummyAgent:
+        def __init__(self, session: ExternalSearchSession | None = None) -> None:
+            self.session = session
+
+    def _fake_build_research_agent(
+        config: object,
+        api_key: str,
+        session: ExternalSearchSession,
+    ) -> _DummyAgent:
+        return _DummyAgent(session)
+
+    def _fake_run_agent_sync(
+        agent: _DummyAgent,
+        prompt: str,
+        max_turns: int,
+    ) -> object:
+        task = json.loads(prompt)
+        hits = agent.session.regex_search(
+            pattern=r"30%.{0,80}2030",
+            cities=[task["city"]],
+            max_matches=5,
+        )
+        assert hits
+        saved = agent.session.add_evidence_candidates(
+            [
+                EvidenceCandidateInput(
+                    hit_id=hits[0].hit_id,
+                    city=task["city"],
+                    field=task["field"],
+                    reason="Contains the requested target.",
+                    confidence=0.95,
+                )
+            ]
+        )
+        final_output = ExternalSourceAgentResult(
+            claims=[
+                ExternalEvidenceClaim(
+                    city=task["city"],
+                    field=task["field"],
+                    value=30,
+                    unit="%",
+                    source_id="placeholder-source",
+                    source_type="city_cap",
+                    line_start=1,
+                    line_end=1,
+                    quote="30% by 2030",
+                    confidence=0.95,
+                    claim_role="fills_missing",
+                    candidate_id=saved[0].candidate_id,
+                )
+            ],
+            no_evidence=[],
+            notes=[],
+        )
+        return type("_Result", (), {"final_output": final_output})()
+
+    monkeypatch.setattr(
+        external_agent_module,
+        "build_external_source_research_agent",
+        _fake_build_research_agent,
+    )
+    monkeypatch.setattr(
+        external_agent_module,
+        "build_external_source_finalizer_agent",
+        lambda config, api_key: _DummyAgent(),
+    )
+    monkeypatch.setattr(external_agent_module, "run_agent_sync", _fake_run_agent_sync)
+
+    claims, resolutions, no_evidence, tool_calls, audit_payload = (
+        run_external_source_enrichment(
+            question="What is Krakow's local CO2 reduction target?",
+            context_bundle=context_bundle,
+            gap_manifest=gap_manifest,
+            base_dir=base_dir,
+            config=config,
+            api_key="test-api-key",
+            run_id="test_run",
+        )
+    )
+
+    assert len(claims) == 1
+    assert claims[0].candidate_id == "e1"
+    assert claims[0].source_id == "krakow-target"
+    assert len(resolutions) == 1
+    assert resolutions[0].action == "fill"
+    assert no_evidence == []
+    assert tool_calls
+    assert audit_payload["metrics"]["validated_claim_count"] == 1
+    assert audit_payload["metrics"]["rejected_claim_count"] == 0
+    assert audit_payload["metrics"]["max_turn_exceeded_count"] == 0
+    assert audit_payload["metrics"]["fallback_finalization_count"] == 0
 
 
 def test_regex_safety_rejects_unsafe_patterns() -> None:

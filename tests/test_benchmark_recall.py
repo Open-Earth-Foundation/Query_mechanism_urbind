@@ -13,6 +13,7 @@ from backend.benchmarks.gold_recall.runner import (
     load_gold_benchmark_dataset,
     run_recall_benchmark,
 )
+from backend.utils.artifact_writer import ArtifactWriter
 
 
 FIXTURES_DIR = Path(__file__).resolve().parent / "fixtures"
@@ -220,36 +221,6 @@ SAMPLE_EXCERPTS_PAYLOAD: dict[str, Any] = {
     "selected_city_names": ["Sample City"],
     "excerpt_count": 2,
 }
-SAMPLE_REFERENCES_PAYLOAD: dict[str, Any] = {
-    "run_id": "sample_case",
-    "reference_count": 3,
-    "references": [
-        {
-            "ref_id": "ref_1",
-            "excerpt_index": 0,
-            "city_name": "Sample City",
-            "quote": "Sample City plans 500 rooftop solar installations by 2030.",
-            "partial_answer": "Sample City plans 500 rooftop solar installations by 2030.",
-            "source_chunk_ids": ["chunk-seed-1"],
-        },
-        {
-            "ref_id": "ref_2",
-            "excerpt_index": 1,
-            "city_name": "Sample City",
-            "quote": "Retrofit grants total EUR 2 million.",
-            "partial_answer": "Sample City allocated EUR 2 million for retrofit grants.",
-            "source_chunk_ids": ["chunk-fallback-1"],
-        },
-        {
-            "ref_id": "ref_3",
-            "excerpt_index": 2,
-            "city_name": "Sample City",
-            "quote": "District heating will reach 12,000 households.",
-            "partial_answer": "Sample City will expand district heating to 12,000 households.",
-            "source_chunk_ids": ["chunk-neighbor-1"],
-        },
-    ],
-}
 SAMPLE_FINAL_TEXT = """## Summary
 
 Sample City plans 500 rooftop solar installations by 2030. [ref_1]
@@ -294,12 +265,23 @@ def _write_gold_file(
 
 def _write_sample_run_artifacts(run_dir: Path) -> None:
     """Write the minimal artifact set required by the recall benchmark."""
-    markdown_dir = run_dir / "markdown"
-    markdown_dir.mkdir(parents=True, exist_ok=True)
-    _write_json(markdown_dir / "retrieval.json", SAMPLE_RETRIEVAL_PAYLOAD)
-    _write_json(markdown_dir / "excerpts.json", SAMPLE_EXCERPTS_PAYLOAD)
-    _write_json(markdown_dir / "references.json", SAMPLE_REFERENCES_PAYLOAD)
+    run_dir.mkdir(parents=True, exist_ok=True)
+    writer = ArtifactWriter(run_dir, run_dir.name)
+    writer.write_stage_file(
+        "retrieval",
+        "retrieval.json",
+        SAMPLE_RETRIEVAL_PAYLOAD,
+        alias="retrieval",
+    )
+    writer.write_stage_file(
+        "markdown_extraction",
+        "accepted_excerpts.json",
+        SAMPLE_EXCERPTS_PAYLOAD,
+        alias="markdown_excerpts",
+    )
     (run_dir / "final.md").write_text(SAMPLE_FINAL_TEXT, encoding="utf-8")
+    writer.register_file("final_output", run_dir / "final.md")
+    writer.write_manifest()
 
 
 def _make_sample_run_pipeline():

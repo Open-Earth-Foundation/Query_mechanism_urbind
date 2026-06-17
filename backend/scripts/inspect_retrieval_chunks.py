@@ -16,8 +16,8 @@ Outputs:
 - Printed chunk details including metadata, distance, and optionally raw_text content.
 
 Usage (from project root):
-- python -m backend.scripts.inspect_retrieval_chunks --retrieval-json output/20260220_1111/markdown/retrieval.json --chunk-id chunk_2808f03666bfdb9772abd5de
-- python -m backend.scripts.inspect_retrieval_chunks --retrieval-json output/20260220_1111/markdown/retrieval.json --max-distance 0.80 --limit 5
+- python -m backend.scripts.inspect_retrieval_chunks --retrieval-json output/20260220_1111/stage_files/003_retrieval/retrieval.json --chunk-id chunk_2808f03666bfdb9772abd5de
+- python -m backend.scripts.inspect_retrieval_chunks --retrieval-json output/20260220_1111/stage_files/003_retrieval/retrieval.json --max-distance 0.80 --limit 5
 """
 
 from __future__ import annotations

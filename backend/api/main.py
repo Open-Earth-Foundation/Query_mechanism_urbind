@@ -23,11 +23,13 @@ from backend.api.routes import (
     chat_router,
     cities_router,
     runs_router,
+    system_router,
 )
 from backend.api.services.chat_jobs import ChatJobExecutor, ChatJobStore
 from backend.api.services.chat_memory import ChatMemoryStore
 from backend.api.services.run_executor import RunExecutor
 from backend.api.services.run_store import RunStore
+from backend.api.services.vector_store_warmup import VectorStoreWarmup
 from backend.api.services.chat_split_flow import build_chat_job_processor
 from backend.utils.config import load_config
 from backend.utils.logging_config import setup_logger
@@ -131,6 +133,7 @@ def create_app(
     @asynccontextmanager
     async def lifespan(app: FastAPI) -> AsyncIterator[None]:
         logger.info("API startup: initializing run store and worker pools")
+        vector_store_warmup = VectorStoreWarmup()
         if resolved_config_path.exists():
             try:
                 startup_config = load_config(resolved_config_path)
@@ -140,6 +143,10 @@ def create_app(
                     else "standard_chunking"
                 )
                 logger.info("API startup: markdown_source_mode=%s", mode)
+                vector_store_warmup.start(
+                    config=startup_config,
+                    docs_dir=resolved_markdown_dir,
+                )
             except Exception as e:  # noqa: BLE001
                 logger.warning("API startup: could not load config for mode log: %s", e)
         run_store = RunStore(resolved_runs_dir)
@@ -162,6 +169,7 @@ def create_app(
         app.state.chat_job_store = chat_job_store
         app.state.run_executor = run_executor
         app.state.chat_job_executor = chat_job_executor
+        app.state.vector_store_warmup = vector_store_warmup
         app.state.markdown_dir = resolved_markdown_dir
         app.state.config_path = resolved_config_path
         app.state.city_groups_path = resolved_city_groups_path
@@ -170,6 +178,7 @@ def create_app(
         logger.info("API shutdown: stopping worker pools")
         chat_job_executor.shutdown(wait=True)
         run_executor.shutdown(wait=True)
+        vector_store_warmup.shutdown(wait=False)
         logger.info("API shutdown complete")
 
     app = FastAPI(
@@ -199,6 +208,7 @@ def create_app(
     protected_api.include_router(cities_router, tags=["cities"])
     protected_api.include_router(chat_router, tags=["chat"])
     protected_api.include_router(assumptions_router, tags=["assumptions"])
+    protected_api.include_router(system_router, tags=["system"])
     app.include_router(protected_api)
 
     @app.get("/")

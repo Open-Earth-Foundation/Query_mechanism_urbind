@@ -607,9 +607,9 @@ Recommended artifact shape:
 Use atomic writes:
 
 ```text
-write output/<run_id>/external_evidence.tmp
+write output/<run_id>/stage_files/008_enrichment/external_source_search_audit.tmp
 fsync if needed
-rename to output/<run_id>/external_evidence.json
+rename to output/<run_id>/stage_files/008_enrichment/external_source_search_audit.json
 ```
 
 In Python, use `Path.write_text` to a temporary file and `Path.replace` for the

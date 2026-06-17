@@ -82,6 +82,7 @@ Environment variables (`.env`):
 - `SERPER_API_KEY` (optional, required when web research is enabled): Serper.dev key for web search.
 - `FIRECRAWL_API_KEY` (optional, required when web research is enabled): Firecrawl key for rendered-page scraping.
 - `VECTOR_STORE_ENABLED` (optional, default `false`): enables local Chroma markdown indexing flows.
+- `VECTOR_STORE_AUTO_UPDATE_ON_RUN` (optional, default from `llm_config.yaml`): refreshes the vector index during API startup warm-up and before vector-backed pipeline runs when set to `true`.
 - `ANONYMIZED_TELEMETRY` (optional, default `FALSE`): disables Chroma anonymized telemetry when set to `FALSE`.
 - `CHROMA_PERSIST_PATH` (optional, default `.chroma`): local Chroma persistence directory.
 - `CHROMA_COLLECTION_NAME` (optional, default `markdown_chunks`): Chroma collection used for markdown chunks.
@@ -92,7 +93,7 @@ Chat prompt sizing, follow-up router history and excerpt caps, retry backoff, pr
 CLI flags override `.env` values for a given run (for example `--markdown-path`).
 Use `--city` (repeatable) to load markdown only for selected city files. City filters are normalized case-insensitively to backend `city_key` values (for example `Munich`, `MUNICH`, and `munich` all resolve to `munich`).
 
-Example `.env.example` is provided. Use `llm_config.yaml` as the source of truth for vector-store and markdown batching tuning.
+Example `.env.example` is provided. Use `llm_config.yaml` as the source of truth for vector-store and markdown batching tuning; deployment env vars may override operational toggles such as `VECTOR_STORE_ENABLED` and `VECTOR_STORE_AUTO_UPDATE_ON_RUN`.
 
 Default output directory is `output/` (unless overridden by `RUNS_DIR`).
 
@@ -136,7 +137,7 @@ Recommended tuning workflow:
 1. Start recall-friendly:
    - leave `vector_store.retrieval_max_distance` empty, or set a permissive value;
    - set `vector_store.retrieval_fallback_min_chunks_per_city_query` to a meaningful fallback (for example 20-40).
-2. Run and inspect `output/<run_id>/markdown/retrieval.json` for returned distances and counts.
+2. Run and inspect `output/<run_id>/stage_files/003_retrieval/retrieval.json` for returned distances and counts.
 3. Set/tighten `vector_store.retrieval_max_distance` based on observed distance distribution.
 4. Add `vector_store.retrieval_max_chunks_per_city` only if latency/cost grows too much.
 
@@ -164,7 +165,7 @@ Generate a bcrypt hash from `frontend/` after `npm install`:
 node -e "const bcrypt = require('bcryptjs'); bcrypt.hash(process.argv[1], 10).then((hash) => console.log(hash));" "your-shared-password"
 ```
 
-If you paste that hash into `frontend/.env.local` or another dotenv-loaded file, escape each `$` as `\$`. GitHub Secrets and Kubernetes secrets should store the raw hash.
+In the root `.env` used by Docker Compose, escape each `$` in the bcrypt hash as `$$` (for example `$$2b$$12$$...`). For `frontend/.env.local`, escape each `$` as `\$` instead. GitHub Secrets and Kubernetes secrets should store the raw hash.
 
 Generate a session secret on Windows PowerShell:
 
@@ -357,7 +358,8 @@ loads `documents/source_library/sources.yaml`, runs the external-source research
 Markdown search tools, resolves external evidence into the enrichment bundle, and optionally runs
 the writer. Outputs are written under
 `output/external_source_benchmarks/krakow/<run_id>/`, including `benchmark_summary.json`,
-`context_bundle.json`, `writer_answer.md`, and `external_sources/external_evidence.json`.
+`context_bundle.json`, `writer_answer.md`, and
+`stage_files/008_enrichment/external_source_search_audit.json`.
 Use `--skip-writer` for extraction-only validation.
 
 Design notes and example workflows for this stage live in `docs/plan.md`,
@@ -484,7 +486,7 @@ Useful flags:
 
 **Vector-only reproducibility (same query and same optional retrieval queries):** To run the vector strategy multiple times with the exact same question and optional retrieval queries (e.g. to check outcome stability):
 
-1. Run the pipeline once to get a run with the desired question and cities, e.g. `python -m backend.scripts.run_pipeline --question "What does Aachen do for PV rooftop?" --city Aachen --markdown-path documents`. Note the run id and open `output/<run_id>/research_question.json`.
+1. Run the pipeline once to get a run with the desired question and cities, e.g. `python -m backend.scripts.run_pipeline --question "What does Aachen do for PV rooftop?" --city Aachen --markdown-path documents`. Note the run id and open `output/<run_id>/stage_files/002_query_preparation/research_question.json`.
 2. Create a one-line questions file (e.g. `my_questions.txt`) containing exactly the `original_question` from that run.
 3. Create a query-overrides JSON (e.g. `my_overrides.json`) with one key: the same `original_question` string; value: `{"canonical_research_query": "<original_question>", "retrieval_queries": ["<optional query 2>", "<optional query 3>"]}`. The override format still uses the legacy `canonical_research_query` key, but it must mirror `original_question`; do not provide a rewritten query there.
 4. Run the benchmark in vector-only mode with fixed queries and several repetitions:
@@ -493,7 +495,7 @@ Useful flags:
    python -m backend.scripts.run_retrieval_benchmark --questions-file my_questions.txt --query-overrides my_overrides.json --mode vector_store --repetitions 5 --city Aachen
    ```
 
-   Each run will use the same verbatim question plus optional retrieval queries; only retrieval, extraction, and writing are re-executed. Compare `output/benchmarks/<benchmark_id>/runs/vector_store/*/final.md` (and optionally `retrieval.json`, `excerpts.json`) across repetitions.
+   Each run will use the same verbatim question plus optional retrieval queries; only retrieval, extraction, and writing are re-executed. Compare `output/benchmarks/<benchmark_id>/runs/vector_store/*/final.md` (and optionally `retrieval.json`, `accepted_excerpts.json`) across repetitions.
 
 Benchmark behavior notes:
 
@@ -658,7 +660,7 @@ Core endpoints:
 
 - `GET /` (root health endpoint)
 - `POST /api/v1/runs`
-- `GET /api/v1/runs` (list discovered runs as `run_id` + `question` + `status` + `picker_timestamp`; returns successful runs by default, accepts `include_all=true` for dev/debug views that also include queued, running, failed, and stopped runs, and supports optional `search` across run ids, compact picker dates/times, question text, and selected city names, refreshed from `RUNS_DIR/*/run.json` artifact folders on each request, plus currently queued/running in-memory runs)
+- `GET /api/v1/runs` (list discovered runs as `run_id` + `question` + `status` + `picker_timestamp`; returns successful runs by default, accepts `include_all=true` for dev/debug views that also include queued, running, failed, and stopped runs, and supports optional `search` across run ids, compact picker dates/times, question text, and selected city names, refreshed from `RUNS_DIR/*/api_state.json` artifact folders on each request, plus currently queued/running in-memory runs)
 - `GET /api/v1/runs/{run_id}/status`
 - `GET /api/v1/runs/{run_id}/diagnostics` (developer-focused run warnings, retry summaries, writer citation coverage, and run-local artifact labels without exposing host filesystem paths)
 - `GET /api/v1/runs/{run_id}/output`
@@ -1091,45 +1093,57 @@ Optional repository variables:
 
 Artifacts are written under `output/<run_id>/`:
 
-- `run.json`: machine-readable run metadata (status, timestamps, artifacts, decisions), including `inputs.analysis_mode`, `artifacts.error_log` when available, and `writer_citation_coverage` when the writer confirms or partially misses city coverage.
+- `api_state.json`: machine-readable run metadata used for run discovery, terminal-state hydration, diagnostics, and benchmarks. It keeps status, timestamps, inputs, decisions, and compact metrics, while `manifest.json` remains the canonical artifact registry and the only artifact locator.
+- `summary.jsonl`: append-only stage timeline. Each JSON line has an `event_index`, `event_type`, run id, timestamp, stable `stage_number`, and compact payload for one completed stage checkpoint. Fresh runs write `001_input_snapshot` before later numbered stage events. Detailed decisions are stored in `api_state.json` and, when they belong to an existing stage, in that stage's `stages/NNN_*.json` detail file.
+- `manifest.json`: canonical run artifact registry. It records generated files and stable aliases such as `context_bundle`, `final_output`, `retrieval`, `markdown_excerpts`, `source_chunk_index`, `run_summary`, and `error_log`.
+- `stages/NNN_<stage>.json`: numbered stage-detail artifacts with structured `inputs`, `outputs`, and `metrics` for query preparation, retrieval, markdown batching/extraction, enrichment, assumptions, context handoffs, writer, and finalize checkpoints.
+- `stage_files/<numbered_stage>/...`: larger or reusable stage files. For example, `stage_files/005_markdown_batching/source_chunk_index.json` provides chunk id to source-path hints for downstream source lookup.
+- `stage_files/001_input_snapshot/`: reproducibility snapshots for reruns and benchmark comparisons. Includes `execution_snapshot.json` (argv, cwd, config path, requested vs resolved run id, human-readable invocation command when available), `code_snapshot.json` (git commit, branch, dirty flag, changed files), `config_snapshot.json` (resolved full config plus file hash), `vector_store_snapshot.json` (resolved vector-store settings plus manifest summary/hash and, when auto-update runs, `auto_update` diagnostics with trigger, counts, changed files, deleted files, and chunk impacts), and `documents_snapshot.json` (compact corpus summary, full markdown file manifest, and stable snapshot hash).
 - `run.log`: detailed runtime logs, including per-agent `LLM_USAGE` lines, chat prompt-window diagnostics (`Context chat reply plan`, `Context chat direct request`, with fitted source ids and token-component counts), retry reason lines (`RETRY_EVENT`/`RETRY_EXHAUSTED` with plain-text fields such as `reason`, `http_status`, `rate_limited`, and markdown split lineage when applicable), and writer city-citation coverage checkpoints (`WRITER_CITATION_COVERAGE`, with `coverage_ratio` such as `33/33`).
 - `error_log.txt`: extracted error-focused log view from `run.log` (`ERROR`, `CRITICAL`, and exhausted retry events).
-- `run_summary.txt`: human-readable consolidated report. Header includes `Started`, `Completed`, and explicit `Total runtime` in seconds, plus `LLM Usage` totals/per-agent. It also captures an input snapshot (`original question`, `query mode`, `retrieval query 1..3`, `selected cities` planned/found, markdown dir/file/chunk/excerpt counts) and a `MARKDOWN_FAILURE_SUMMARY` aggregated from batch failures.
-- `context_bundle.json`: payload passed between agents (`markdown`, `original_question`, `research_question`, `query_mode`, `retrieval_queries`, `analysis_mode`, final path). When enrichment runs, `enrichment.field_manifest` carries field classifications and non-estimable fields, while `enrichment.gap_manifest` carries only per-city gaps.
-- `research_question.json`: run query metadata payload. Includes:
+- `progress.json`: live progress state for API polling and frontend display. Steps keep user-facing labels, but also include canonical `stage_name` and `stage_number` fields so progress entries can be matched to `stages/NNN_<stage>.json`.
+- `run_summary.txt`: compact human-readable run index. Header includes `Started`, `Completed`, and explicit `Total runtime` in seconds, plus `LLM Usage` totals/per-agent. It captures the input summary, artifact links, decisions, and a `MARKDOWN_FAILURE_SUMMARY` (`none` when no markdown failures occurred); large payloads stay in their canonical JSON/Markdown artifacts instead of being duplicated here.
+- `context_bundle.json`: payload passed between agents (`markdown`, `original_question`, `research_question`, `query_mode`, `retrieval_queries`, `analysis_mode`, final path). When enrichment runs, `enrichment` carries evidence augmentation (`field_manifest`, `gap_manifest`, `enriched_fields`, external/web/freshness evidence), while top-level `assumptions` carries model estimates, non-estimable outputs, saturation warnings, and assumptions metadata.
+- `stage_files/002_query_preparation/research_question.json`: run query metadata payload. Includes:
   - `original_question`: raw user question.
   - `query_mode`: `standard` or `dev`.
   - `canonical_research_query`: legacy field that mirrors the trimmed `original_question`.
   - `retrieval_queries`: retrieval-ready query list where index `0` is always the trimmed `original_question`.
   - `retrieval_query_1` / `retrieval_query_2` / `retrieval_query_3`: explicit query slots written for easier inspection and reproducibility.
-- `markdown/excerpts.json`: markdown researcher evidence bundle. Includes `excerpts` (items with `quote`, `city_name`, `partial_answer`, `source_chunk_ids`), explicit decision fields (`accepted_chunk_ids`, `rejected_chunk_ids`, `unresolved_chunk_ids`, `batch_failures`), `inspected_cities` (normalized backend city keys present in inspected markdown inputs), and `excerpt_count` (count of extracted excerpts). When split recovery is triggered, successful child-batch evidence and decisions are kept, and only final failed leaf chunks remain unresolved. Stage B extraction recall uses the union of `excerpts[].source_chunk_ids`.
-- `markdown/accepted_excerpts.json`: IDs-only positive decision artifact with accepted chunk IDs and accepted-per-city grouping.
-- `markdown/rejected_excerpts.json`: IDs-only negative decision artifact with rejected chunk IDs and rejected-per-city grouping.
-- `markdown/decision_audit.json`: run-level reconciliation counters and diagnostics (`retrieved_total`, accepted/rejected/unresolved totals, invariant status, and mismatch details).
-- `markdown/references.json`: run-local citation map generated from markdown excerpts. Includes sequential `ref_n` entries with `excerpt_index`, `city_name`, `quote`, `partial_answer`, and `source_chunk_ids`. Stage C citation coverage maps cited `ref_id` values in `final.md` back through these `source_chunk_ids`.
-- `markdown/retrieval.json` (when `VECTOR_STORE_ENABLED=true`): vector retrieval inputs and results summary. Includes the final retrieval query list, optional city filter, retrieval tuning metadata (cutoffs/caps), strict direct-hit `seed_chunks[]`, final delivered `chunks[]`, `meta.seed_retrieved_total_chunks`, `meta.neighbor_expanded_total_chunks`, and per-chunk summaries (`chunk_id`, `chunk_index`, `city_name`, `city_key`, `source_path`, `heading_path`, `block_type`, `distance`, `provenance`).
-- `markdown/batches.json`: markdown batching plan used for the markdown researcher calls. Includes per-city batch indices, estimated tokens, and chunk ordering fields (`path`, `chunk_index`, `chunk_id`), making it easy to inspect how chunks were grouped into LLM requests.
+- `system/vector_store_warmup/latest.json`: latest API startup vector-store warm-up diagnostics, written outside user run folders under `output/system/`. It records trigger, status, timing, compact stats, changed/deleted file details, and the post-update vector-store snapshot; timestamped history is kept beside it as `system/vector_store_warmup/<timestamp>.json`.
+- `stage_files/006_markdown_extraction/accepted_excerpts.json`: accepted markdown evidence bundle. Includes `excerpts` (items with `ref_id`, `quote`, `city_name`, `city_key`, `partial_answer`, and `source_chunk_ids`) and `excerpt_count` (count of accepted excerpts). Run-level city scope lives on the root `context_bundle.json` and in stage inputs/outputs instead of inside the markdown-only payload. Stage B extraction recall uses the union of `excerpts[].source_chunk_ids`, and `/references` API responses are derived from this artifact.
+- `stage_files/006_markdown_extraction/rejected_chunks.json`: rejected markdown decision artifact with rejected chunk IDs, rejected-per-city grouping, status, and counts. Full chunk text for rejected IDs is available in `stage_files/003_retrieval/retrieval.json` when vector retrieval is enabled.
+- `stage_files/006_markdown_extraction/decision_audit.json`: run-level reconciliation counters and diagnostics (`retrieved_total`, accepted/rejected/unresolved totals, invariant status, and mismatch details).
+- `stage_files/003_retrieval/retrieval.json` (when `VECTOR_STORE_ENABLED=true`): vector retrieval inputs and results summary. Includes the final retrieval query list, optional city filter, retrieval tuning metadata (cutoffs/caps), strict direct-hit `seed_chunks[]`, final delivered `chunks[]`, `meta.seed_retrieved_total_chunks`, `meta.neighbor_expanded_total_chunks`, and per-chunk summaries (`chunk_id`, `chunk_text`, `chunk_index`, `city_name`, `city_key`, `source_path`, `heading_path`, `block_type`, `distance`, `provenance`).
+- `stage_files/005_markdown_batching/batches.json`: markdown batching plan used for the markdown researcher calls. Includes per-city batch indices, estimated tokens, and chunk ordering fields (`path`, `chunk_index`, `chunk_id`), making it easy to inspect how chunks were grouped into LLM requests.
+- `stage_files/007_markdown_context_handoff/context_bundle_after_markdown.json`: immutable full context snapshot after the markdown pipeline finishes.
+- `stage_files/008_enrichment/enrichment_bundle.json`: canonical full enrichment payload. Includes `field_manifest`, `gap_manifest`, `enriched_fields`, web/external/freshness evidence, and enrichment metadata. Duplicate projection files such as standalone field/gap manifests are not written.
+- `stage_files/008_enrichment/external_source_search_audit.json` (when external source search runs): source-search trace with searched city-fields, candidates, validated/rejected claims, no-evidence records, resolutions, tool calls, and metrics.
+- `stage_files/008_enrichment/web_research_audit.json` (when web research has trace outputs): web-search trace fields that are not already represented as canonical enrichment payload data, such as search batches and benchmark findings.
+- `stage_files/009_enrichment_context_handoff/context_bundle_after_enrichment.json`: immutable full context snapshot after enrichment completes.
+- `stage_files/010_assumptions/assumptions_bundle.json`: assumptions-only payload with model estimates, non-estimable records, saturation warning, and assumptions metadata.
+- `stage_files/010_assumptions/assumptions_stage.json`: assumptions stage detail support artifact with flags, outputs, and metrics.
+- `stage_files/011_assumptions_context_handoff/context_bundle_after_assumptions.json`: immutable full context snapshot after assumptions complete.
 - `final.md`: final delivered markdown output. Content format is:
   1. `# Question` heading with the original user question,
   2. generated markdown answer body from the writer.
 
-`markdown/excerpts.json` excerpt entries include:
+`stage_files/006_markdown_extraction/accepted_excerpts.json` excerpt entries include:
 
 - `quote`: verbatim extracted supporting text from markdown.
 - `city_name`: city identifier for the excerpt.
+- `city_key`: normalized backend city key for the excerpt.
 - `partial_answer`: concise fact grounded in the quote.
 - `source_chunk_ids`: chunk ids backing the excerpt, used for Stage B extraction recall and citation tracing.
 - `ref_id`: sequential run-local citation id (`ref_1`, `ref_2`, ...), used by writer output and frontend reference lookups.
-- `inspected_cities` (bundle-level): normalized backend city keys inspected by markdown extraction.
-- `excerpt_count` (bundle-level): number of extracted excerpts included in the bundle.
-- `accepted_chunk_ids` / `rejected_chunk_ids` / `unresolved_chunk_ids` (bundle-level): explicit three-state chunk decision outputs from markdown extraction.
-- `batch_failures` (bundle-level): structured per-batch failure entries for unresolved final leaf decisions. Exhausting the original parent batch does not appear here by itself if split children recover the evidence. Entries may include `split_path` to show which recursive child branch failed.
+- `excerpt_count` (bundle-level): number of accepted excerpts included in the bundle.
+- Decision bookkeeping such as accepted/rejected/unresolved totals, invariant status, and `batch_failures` lives in `decision_audit.json`.
 
 - `chat/<conversation_id>.json` (created when context chat sessions are used)
-- `assumptions/discovered.json` (two-pass extraction output; only when `persist_artifacts=true`)
-- `assumptions/edited.json` (user-edited assumptions payload; only when `persist_artifacts=true`)
-- `assumptions/revised_context_bundle.json` (context + assumptions merge; only when `persist_artifacts=true`)
-- `assumptions/final_with_assumptions.md` (regenerated document; only when `persist_artifacts=true`)
+- `stage_files/assumptions/discovered.json` (two-pass extraction output; only when `persist_artifacts=true`)
+- `stage_files/assumptions/edited.json` (user-edited assumptions payload; only when `persist_artifacts=true`)
+- `stage_files/assumptions/revised_context_bundle.json` (context + assumptions merge; only when `persist_artifacts=true`)
+- `stage_files/assumptions/final_with_assumptions.md` (regenerated document; only when `persist_artifacts=true`)
 
 Count semantics:
 
@@ -1237,6 +1251,32 @@ python -m backend.scripts.update_markdown_index --docs-dir documents
 ```
 
 The update now fails fast on embedding failures and exits non-zero before any delete/upsert/manifest-write commit.
+It also forces a full rebuild when index-shaping vector-store settings change, so `auto_update_on_run=true` does not silently keep vectors built with stale chunking or embedding settings.
+Set `vector_store.auto_update_on_run: true` in `llm_config.yaml` or override it for deployment with `VECTOR_STORE_AUTO_UPDATE_ON_RUN=true`.
+
+What triggers an incremental refresh:
+
+- A top-level markdown file under `documents/*.md` is added.
+- A top-level markdown file under `documents/*.md` is removed.
+- The SHA-256 file hash of a top-level markdown file changes, for example because you edited text or changed a number in the file.
+
+What triggers a full rebuild instead of an incremental refresh:
+
+- The manifest is missing the persisted index-settings metadata needed to prove the current vectors are still compatible.
+- `vector_store.embedding_model` changes.
+- `vector_store.embedding_max_input_tokens` changes.
+- `vector_store.embedding_chunk_tokens` changes.
+- `vector_store.embedding_chunk_overlap_tokens` changes.
+- `vector_store.table_row_group_max_rows` changes.
+
+Auto-refresh caveats:
+
+- It only scans top-level `documents/*.md` files.
+- Any content edit causes the entire changed file to be rechunked and re-embedded.
+- Config-driven rebuild detection covers index-shaping settings such as embedding model, embedding input limit, chunk size, chunk overlap, and table row grouping. Pure code changes in the chunking/indexing implementation still require an intentional rebuild if the manifest metadata alone cannot detect them.
+- In API mode, auto-refresh starts once in the background during startup. While that startup warm-up is running, new run submissions are blocked and the frontend shows a compact vector-store update banner. `/healthz` still reports the pod as healthy. Startup diagnostics are persisted under `output/system/vector_store_warmup/` as both `latest.json` and timestamped history files.
+- Each vector-backed pipeline run still checks the index before retrieval, so Markdown changes after startup are picked up inside the run.
+- Single-pod deployments can enable `VECTOR_STORE_AUTO_UPDATE_ON_RUN=true` to keep the index fresh at startup and before each run. Multi-pod deployments should avoid concurrent writers to the same Chroma path; use one updater/job or add locking before enabling this on multiple replicas.
 
 Check manifest and Chroma DB status:
 

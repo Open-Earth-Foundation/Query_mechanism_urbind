@@ -152,9 +152,9 @@ def test_build_router_payload_bounds_history_and_omits_internal_ids() -> None:
         question="Build doc",
         final_document="",
         context_bundle={
+            "selected_city_names": ["Munich"],
+            "inspected_city_names": ["Munich"],
             "markdown": {
-                "selected_city_names": ["Munich"],
-                "inspected_city_names": ["Munich"],
                 "excerpts": [
                     {
                         "city_name": "Munich",

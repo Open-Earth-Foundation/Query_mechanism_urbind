@@ -111,13 +111,13 @@ def _build_search_document(record: RunRecord) -> _RunSearchDocument:
 
 
 def _load_city_labels(record: RunRecord) -> tuple[str, ...]:
-    """Load display-friendly city labels from ``run.json`` when available."""
-    if record.run_log_path is None:
+    """Load display-friendly city labels from ``api_state.json`` when available."""
+    if record.api_state_path is None:
         return ()
-    run_log = read_json_object(record.run_log_path)
-    if not isinstance(run_log, dict):
+    api_state = read_json_object(record.api_state_path)
+    if not isinstance(api_state, dict):
         return ()
-    inputs = run_log.get("inputs")
+    inputs = api_state.get("inputs")
     if not isinstance(inputs, dict):
         return ()
 
@@ -127,7 +127,7 @@ def _load_city_labels(record: RunRecord) -> tuple[str, ...]:
         labels,
         seen,
         inputs.get("selected_cities_planned"),
-        transform_display=False,
+        transform_display=True,
     )
     _append_city_labels(
         labels,
@@ -145,7 +145,7 @@ def _append_city_labels(
     *,
     transform_display: bool,
 ) -> None:
-    """Append de-duplicated city labels from one run-log field."""
+    """Append de-duplicated city labels from one persisted input field."""
     if not isinstance(raw_values, list):
         return
     for value in raw_values:

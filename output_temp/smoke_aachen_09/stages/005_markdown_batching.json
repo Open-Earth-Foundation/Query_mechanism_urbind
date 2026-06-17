@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "event_index": 5,
+  "event_type": "stage_completed",
+  "run_id": "smoke_aachen_09",
+  "step_name": "markdown_batching",
+  "created_at": "2026-06-11T12:02:33.283657+00:00",
+  "inputs": {
+    "batch_max_chunks": 32,
+    "batch_max_input_tokens": 26200,
+    "markdown_source_mode": "vector_store_retrieval"
+  },
+  "outputs": {
+    "batches": "stage_files/005_markdown_batching/batches.json",
+    "source_chunk_index": "stage_files/005_markdown_batching/source_chunk_index.json",
+    "cities": [
+      "aachen"
+    ]
+  },
+  "metrics": {
+    "batch_count": 2,
+    "source_chunk_count": 63
+  },
+  "stage_number": 5
+}

@@ -110,6 +110,25 @@ def test_load_config_reads_vector_store_settings_from_yaml(tmp_path: Path) -> No
     assert config.vector_store.retrieval_max_chunks_per_city_query == 42
 
 
+def test_load_config_applies_vector_store_auto_update_env_override(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    """VECTOR_STORE_AUTO_UPDATE_ON_RUN overrides the YAML default."""
+    config_path = _write_config(
+        tmp_path,
+        [
+            "vector_store:",
+            "  auto_update_on_run: false",
+        ],
+    )
+    monkeypatch.setenv("VECTOR_STORE_AUTO_UPDATE_ON_RUN", "true")
+
+    config = load_config(config_path)
+
+    assert config.vector_store.auto_update_on_run is True
+
+
 def test_load_config_reads_markdown_reasoning_effort_from_yaml(tmp_path: Path) -> None:
     """Markdown reasoning effort is loaded when configured."""
     config_path = _write_config(

@@ -1,0 +1,94 @@
+{
+  "run_id": "smoke_aachen_09",
+  "question": "What does Aachen do for rooftop solar?",
+  "status": "completed",
+  "started_at": "2026-06-11T12:02:23.322978+00:00",
+  "completed_at": "2026-06-11T12:10:01.753214+00:00",
+  "finish_reason": "completed (write)",
+  "error": null,
+  "inputs": {
+    "original_question": "What does Aachen do for rooftop solar?",
+    "canonical_research_query": "What does Aachen do for rooftop solar?",
+    "query_mode": "standard",
+    "retrieval_queries": [
+      "What does Aachen do for rooftop solar?"
+    ],
+    "retrieval_query_count": 1,
+    "retrieval_query_1": "What does Aachen do for rooftop solar?",
+    "retrieval_query_2": null,
+    "retrieval_query_3": null,
+    "city_scope_mode": "selected_cities",
+    "selected_cities_planned": [
+      "aachen"
+    ],
+    "selected_cities_found": [
+      "aachen"
+    ],
+    "markdown_dir": "documents",
+    "markdown_file_count": 1,
+    "markdown_chunk_count": 63,
+    "markdown_excerpt_count": 13,
+    "markdown_source_mode": "vector_store_retrieval",
+    "analysis_mode": "aggregate"
+  },
+  "decisions": [
+    {
+      "step": "enrichment",
+      "status": "completed",
+      "city_gap_count": 1,
+      "gap_field_count": 2,
+      "web_findings": 0,
+      "external_evidence": 1,
+      "elapsed_seconds": 198.03
+    },
+    {
+      "step": "assumptions",
+      "status": "completed",
+      "assumptions_produced": 0,
+      "non_estimable_flagged": 2,
+      "elapsed_seconds": 198.36
+    }
+  ],
+  "llm_usage": {
+    "calls": 24,
+    "totals": {
+      "total_tokens": 351944,
+      "input_tokens": 331158,
+      "output_tokens": 20786
+    },
+    "per_agent": {
+      "Markdown Researcher": {
+        "total_tokens": 49101,
+        "input_tokens": 46584,
+        "output_tokens": 2517
+      },
+      "External Source Researcher": {
+        "total_tokens": 275562,
+        "input_tokens": 270842,
+        "output_tokens": 4720
+      },
+      "External Source Finalizer": {
+        "total_tokens": 3050,
+        "input_tokens": 2794,
+        "output_tokens": 256
+      },
+      "Writer": {
+        "total_tokens": 24231,
+        "input_tokens": 10938,
+        "output_tokens": 13293
+      }
+    }
+  },
+  "retry_summary": null,
+  "writer_citation_coverage": {
+    "status": "confirmed",
+    "attempt": 1,
+    "max_attempts": 2,
+    "coverage_confirmed": 1,
+    "coverage_required": 1,
+    "coverage_ratio": "1/1",
+    "missing_cities": [],
+    "analysis_mode": "aggregate"
+  },
+  "writer_multi_pass": null
+}

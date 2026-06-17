@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "event_index": 10,
+  "event_type": "stage_completed",
+  "run_id": "smoke_aachen_09",
+  "step_name": "assumptions",
+  "created_at": "2026-06-11T12:06:57.504050+00:00",
+  "inputs": {
+    "assumptions_enabled": true,
+    "assumptions_executed": true,
+    "assumptions_model": "openai/gpt-5.4-mini"
+  },
+  "outputs": {
+    "assumptions_bundle": "stage_files/010_assumptions/assumptions_bundle.json",
+    "assumptions_stage": "stage_files/010_assumptions/assumptions_stage.json"
+  },
+  "metrics": {
+    "assumption_count": 0,
+    "non_estimable_output_count": 2,
+    "added_city_field_count": 0,
+    "non_estimable_city_field_count": 2
+  },
+  "stage_number": 10,
+  "decisions": [
+    {
+      "step": "assumptions",
+      "status": "completed",
+      "assumptions_produced": 0,
+      "non_estimable_flagged": 2,
+      "elapsed_seconds": 198.36
+    }
+  ]
+}

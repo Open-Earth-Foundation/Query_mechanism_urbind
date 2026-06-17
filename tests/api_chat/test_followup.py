@@ -50,11 +50,13 @@ def test_chat_followup_search_attaches_bundle_and_exposes_references(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         return write_success_artifacts(question, run_id, config, excerpts=[])
 
     def _stub_route_chat_followup(
@@ -200,11 +202,13 @@ def test_chat_followup_router_returns_out_of_scope_message(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         return write_success_artifacts(question, run_id, config, excerpts=[])
 
     patch_api_config_loaders(monkeypatch, _stub_load_config)
@@ -267,11 +271,13 @@ def test_chat_followup_router_requests_city_clarification(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         return write_success_artifacts(question, run_id, config, excerpts=[])
 
     def _unexpected_reply(**_kwargs: object) -> str:
@@ -339,11 +345,13 @@ def test_chat_followup_search_failure_returns_grounded_limitation(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         return write_success_artifacts(question, run_id, config, excerpts=[])
 
     def _unexpected_reply(**_kwargs: object) -> str:
@@ -431,11 +439,13 @@ def test_chat_unavailable_followup_city_returns_city_choice_trigger(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         return write_success_artifacts(question, run_id, config, excerpts=[])
 
     def _unexpected_reply(**_kwargs: object) -> str:
@@ -530,11 +540,13 @@ def test_chat_clarification_city_selection_triggers_direct_followup_search(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         return write_success_artifacts(question, run_id, config, excerpts=[])
 
     def _stub_route_chat_followup(
@@ -681,11 +693,13 @@ def test_chat_followup_bundles_are_pruned_to_configured_maximum(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         return write_success_artifacts(question, run_id, config, excerpts=[])
 
     def _stub_route_chat_followup(
@@ -835,11 +849,13 @@ def test_chat_followup_same_city_search_replaces_previous_bundle(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         return write_success_artifacts(question, run_id, config, excerpts=[])
 
     def _stub_run_chat_followup_search(

@@ -266,7 +266,7 @@ def _build_router_context_payload(
     markdown_bundle = extract_markdown_bundle(source.context_bundle)
     excerpts = extract_bundle_excerpts(markdown_bundle)
     selected_city_names = extract_selected_city_names(source.context_bundle, markdown_bundle)
-    inspected_raw = markdown_bundle.get("inspected_city_names")
+    inspected_raw = source.context_bundle.get("inspected_city_names")
     inspected_city_names = selected_city_names
     if isinstance(inspected_raw, list):
         normalized = [str(item).strip() for item in inspected_raw if isinstance(item, str)]

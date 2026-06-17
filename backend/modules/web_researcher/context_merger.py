@@ -21,8 +21,9 @@ from backend.modules.web_researcher.models import (
     NonEstimableRecord,
     WebFinding,
 )
+from backend.modules.web_researcher.assumptions_context import build_assumptions_payload
 from backend.services.run_logger import RunLogger
-from backend.utils.json_io import write_json
+from backend.utils.artifact_writer import stage_file_dir_name
 
 logger = logging.getLogger(__name__)
 
@@ -386,6 +387,39 @@ def merge_enrichment_into_context(
     external_no_evidence: list[NoEvidenceRecord] | None = None,
 ) -> dict[str, Any]:
     """Create a new context bundle with enrichment data merged in."""
+    enriched = merge_enrichment_evidence_into_context(
+        context_bundle=context_bundle,
+        gap_manifest=gap_manifest,
+        web_findings=web_findings,
+        freshness_results=freshness_results,
+        config_model=config_model,
+        elapsed_seconds=elapsed_seconds,
+        external_evidence=external_evidence,
+        external_resolutions=external_resolutions,
+        external_no_evidence=external_no_evidence,
+    )
+    enriched["assumptions"] = build_assumptions_payload(
+        assumptions_model=assumptions_model,
+        assumptions=assumptions,
+        non_estimable=non_estimable,
+        saturation_warning=saturation_warning,
+        elapsed_seconds=elapsed_seconds,
+    )
+    return enriched
+
+
+def merge_enrichment_evidence_into_context(
+    context_bundle: dict[str, Any],
+    gap_manifest: GapManifest,
+    web_findings: list[WebFinding],
+    freshness_results: list[FreshnessResult],
+    config_model: str,
+    elapsed_seconds: float,
+    external_evidence: list[ExternalEvidenceClaim] | None = None,
+    external_resolutions: list[ExternalEvidenceResolution] | None = None,
+    external_no_evidence: list[NoEvidenceRecord] | None = None,
+) -> dict[str, Any]:
+    """Create a new context bundle with evidence-only enrichment data merged in."""
     enriched = deepcopy(context_bundle)
 
     total_gaps = sum(
@@ -395,10 +429,11 @@ def merge_enrichment_into_context(
     meta = EnrichmentMeta(
         created_at=datetime.now(timezone.utc),
         gap_analyst_model=config_model,
-        assumptions_estimator_model=assumptions_model,
         total_gaps=total_gaps,
         estimable_count=max(0, total_gaps - len(gap_manifest.non_estimable_fields)),
-        non_estimable_count=len(gap_manifest.non_estimable_fields),
+        non_estimable_count=0,
+        classified_non_estimable_field_count=len(gap_manifest.non_estimable_fields),
+        non_estimable_output_count=0,
         web_findings_count=len(web_findings),
         external_evidence_count=len(external_evidence or []),
         elapsed_seconds=elapsed_seconds,
@@ -420,9 +455,9 @@ def merge_enrichment_into_context(
         external_resolutions=external_resolutions or [],
         external_no_evidence=external_no_evidence or [],
         freshness_results=freshness_results,
-        assumptions=assumptions,
-        non_estimable=non_estimable,
-        saturation_warning=saturation_warning,
+        assumptions=[],
+        non_estimable=[],
+        saturation_warning=None,
         meta=meta,
     )
 
@@ -434,6 +469,9 @@ def _serialize_enrichment_bundle(bundle: EnrichmentBundle) -> dict[str, Any]:
     """Return persisted enrichment payload with field metadata outside gaps."""
     payload = bundle.model_dump(mode="json")
     gap_payload = payload.pop("gap_manifest")
+    payload.pop("assumptions", None)
+    payload.pop("non_estimable", None)
+    payload.pop("saturation_warning", None)
     field_manifest = {
         "query_fields": gap_payload.pop("query_fields", []),
         "non_estimable_fields": gap_payload.pop("non_estimable_fields", []),
@@ -445,59 +483,222 @@ def _serialize_enrichment_bundle(bundle: EnrichmentBundle) -> dict[str, Any]:
     }
 
 
+def _path_for_stage_file(stage_name: str, filename: str) -> str:
+    """Return the canonical run-local path label for one stage file."""
+    return f"stage_files/{stage_file_dir_name(stage_name)}/{filename}"
+
+
 def serialize_enrichment_artifacts(
     enriched_context: dict[str, Any],
     base_dir: Path,
     run_logger: RunLogger,
+    *,
+    stage_flags: dict[str, Any] | None = None,
+    substage_artifacts: dict[str, dict[str, Any]] | None = None,
 ) -> None:
     """Write enrichment artifacts to disk and register them in the run log."""
     enrichment_data = enriched_context.get("enrichment")
     if not isinstance(enrichment_data, dict):
         return
 
-    enrichment_dir = base_dir / "enrichment"
-    enrichment_dir.mkdir(parents=True, exist_ok=True)
+    run_logger.write_stage_file(
+        "enrichment",
+        "enrichment_bundle.json",
+        enrichment_data,
+        alias="enrichment_bundle",
+    )
 
-    artifact_map = {
-        "field_manifest": enrichment_data.get("field_manifest"),
-        "gap_manifest": enrichment_data.get("gap_manifest"),
-        "assumptions": enrichment_data.get("assumptions"),
-        "non_estimable": enrichment_data.get("non_estimable"),
-        "enrichment_bundle": enrichment_data,
+    substage_payloads = dict(substage_artifacts or {})
+    outputs: dict[str, Any] = {
+        "enrichment_bundle": _path_for_stage_file("enrichment", "enrichment_bundle.json"),
     }
 
-    web_findings = enrichment_data.get("web_findings", [])
-    if web_findings:
-        artifact_map["web_findings"] = web_findings
+    web_research_stage = substage_payloads.get("web_research")
+    if isinstance(web_research_stage, dict):
+        web_research_audit = _build_web_research_audit(web_research_stage)
+        if web_research_audit:
+            audit_path = run_logger.write_stage_file(
+                "enrichment",
+                "web_research_audit.json",
+                web_research_audit,
+                alias="enrichment_web_research_audit",
+            )
+            outputs["web_research_audit"] = run_logger.artifact_label(audit_path)
 
-    external_evidence = enrichment_data.get("external_evidence", [])
-    if external_evidence:
-        artifact_map["external_evidence"] = external_evidence
+    field_manifest_payload = (
+        enrichment_data.get("field_manifest")
+        if isinstance(enrichment_data.get("field_manifest"), dict)
+        else {}
+    )
+    gap_manifest_payload = (
+        enrichment_data.get("gap_manifest")
+        if isinstance(enrichment_data.get("gap_manifest"), dict)
+        else {}
+    )
+    gap_metrics = _build_gap_metrics(field_manifest_payload, gap_manifest_payload)
+    external_stage = substage_payloads.get("external_sources", {})
+    external_stage_metrics = (
+        external_stage.get("metrics") if isinstance(external_stage, dict) else {}
+    )
+    if not isinstance(external_stage_metrics, dict):
+        external_stage_metrics = {}
+    external_stage_outputs = (
+        external_stage.get("outputs") if isinstance(external_stage, dict) else {}
+    )
+    if not isinstance(external_stage_outputs, dict):
+        external_stage_outputs = {}
+    search_audit_artifact = external_stage_outputs.get("search_audit_artifact")
+    if search_audit_artifact:
+        outputs["external_source_search_audit"] = search_audit_artifact
 
-    external_resolutions = enrichment_data.get("external_resolutions", [])
-    if external_resolutions:
-        artifact_map["external_resolutions"] = external_resolutions
+    flags = dict(stage_flags or {})
+    substage_summaries = _build_substage_summaries(substage_payloads)
+    if substage_summaries:
+        outputs["substages"] = substage_summaries
 
-    external_no_evidence = enrichment_data.get("external_no_evidence", [])
-    if external_no_evidence:
-        artifact_map["external_no_evidence"] = external_no_evidence
+    run_logger.write_stage_detail(
+        "enrichment",
+        {
+            "inputs": {
+                "has_markdown_context": isinstance(
+                    enriched_context.get("markdown"), dict
+                ),
+                **flags,
+            },
+            "outputs": outputs,
+            "metrics": {
+                **gap_metrics,
+                "web_finding_count": len(enrichment_data.get("web_findings") or []),
+                "external_evidence_count": len(
+                    enrichment_data.get("external_evidence") or []
+                ),
+                "external_resolution_count": len(
+                    enrichment_data.get("external_resolutions") or []
+                ),
+                "external_no_evidence_count": len(
+                    enrichment_data.get("external_no_evidence") or []
+                ),
+                "unresolved_external_source_field_count": (
+                    external_stage_metrics.get("unresolved_searched_city_field_count")
+                ),
+                "max_turn_exceeded_count": external_stage_metrics.get(
+                    "max_turn_exceeded_count"
+                ),
+                "fallback_finalization_count": external_stage_metrics.get(
+                    "fallback_finalization_count"
+                ),
+                "external_source_token_count": run_logger.llm_token_count_for_agents(
+                    {"External Source Researcher", "External Source Finalizer"}
+                ),
+                "freshness_result_count": len(
+                    enrichment_data.get("freshness_results") or []
+                ),
+                "web_research_executed": bool(flags.get("web_research_executed")),
+                "external_source_search_executed": bool(
+                    flags.get("external_source_search_executed")
+                ),
+            },
+        },
+    )
 
-    freshness_results = enrichment_data.get("freshness_results", [])
-    if freshness_results:
-        artifact_map["freshness_results"] = freshness_results
+    logger.info(
+        "Enrichment artifacts written to stage_files/%s",
+        stage_file_dir_name("enrichment"),
+    )
 
-    for name, payload in artifact_map.items():
-        if payload is None:
+
+def _build_gap_metrics(
+    field_manifest: dict[str, Any],
+    gap_manifest: dict[str, Any],
+) -> dict[str, int]:
+    """Build compact gap-analysis metrics from the canonical enrichment bundle."""
+    query_fields = field_manifest.get("query_fields")
+    non_estimable_fields = field_manifest.get("non_estimable_fields")
+    city_gaps = gap_manifest.get("city_gaps")
+    city_gap_entries = (
+        [item for item in city_gaps if isinstance(item, dict)]
+        if isinstance(city_gaps, list)
+        else []
+    )
+    blank_field_count = sum(
+        len(item.get("blank_fields", []))
+        for item in city_gap_entries
+        if isinstance(item.get("blank_fields"), list)
+    )
+    stale_field_count = sum(
+        len(item.get("stale_flags", []))
+        for item in city_gap_entries
+        if isinstance(item.get("stale_flags"), list)
+    )
+    bundled_field_count = sum(
+        len(item.get("bundled_fields", []))
+        for item in city_gap_entries
+        if isinstance(item.get("bundled_fields"), list)
+    )
+    return {
+        "query_field_count": len(query_fields) if isinstance(query_fields, list) else 0,
+        "city_gap_count": len(city_gap_entries),
+        "gap_field_count": blank_field_count + stale_field_count + bundled_field_count,
+        "blank_field_count": blank_field_count,
+        "stale_field_count": stale_field_count,
+        "bundled_field_count": bundled_field_count,
+        "classified_non_estimable_field_count": (
+            len(non_estimable_fields) if isinstance(non_estimable_fields, list) else 0
+        ),
+    }
+
+
+def _build_substage_summaries(
+    substage_payloads: dict[str, dict[str, Any]],
+) -> dict[str, dict[str, Any]]:
+    """Return compact substage status/flag/metric summaries for stage detail."""
+    summaries: dict[str, dict[str, Any]] = {}
+    for name, payload in substage_payloads.items():
+        if not isinstance(payload, dict):
             continue
-        artifact_path = enrichment_dir / f"{name}.json"
-        write_json(artifact_path, payload, default=str)
-        run_logger.record_artifact(f"enrichment_{name}", artifact_path)
+        summary: dict[str, Any] = {}
+        for key in ("status", "skip_reason", "flags", "inputs", "metrics"):
+            value = payload.get(key)
+            if value is not None:
+                summary[key] = value
+        if summary:
+            summaries[name] = summary
+    return summaries
 
-    logger.info("Enrichment artifacts written to %s", enrichment_dir)
+
+def _build_web_research_audit(stage_payload: dict[str, Any]) -> dict[str, Any] | None:
+    """Build the web-research trace artifact from non-bundle stage outputs."""
+    outputs = stage_payload.get("outputs")
+    if not isinstance(outputs, dict):
+        return None
+
+    trace_keys = (
+        "search_batches",
+        "national_findings",
+        "comparative_findings",
+        "added_city_fields",
+        "freshness_touched_city_fields",
+    )
+    trace_outputs = {
+        key: outputs.get(key)
+        for key in trace_keys
+        if outputs.get(key) not in (None, [], {})
+    }
+    if not trace_outputs:
+        return None
+
+    return {
+        "status": stage_payload.get("status"),
+        "skip_reason": stage_payload.get("skip_reason"),
+        "flags": stage_payload.get("flags", {}),
+        "outputs": trace_outputs,
+        "metrics": stage_payload.get("metrics", {}),
+    }
 
 
 __all__ = [
     "compute_field_statuses",
+    "merge_enrichment_evidence_into_context",
     "merge_enrichment_into_context",
     "serialize_enrichment_artifacts",
 ]

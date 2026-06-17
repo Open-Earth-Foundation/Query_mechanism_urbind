@@ -42,11 +42,13 @@ def test_chat_context_metrics_expose_prompt_context_tokens_for_excerpt_runs(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         return write_success_artifacts(
             question,
             run_id,
@@ -125,11 +127,13 @@ def test_chat_context_update_rejects_unknown_context_run(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         return write_success_artifacts(question, run_id, config)
 
     patch_api_config_loaders(monkeypatch, _stub_load_config)
@@ -178,11 +182,13 @@ def test_chat_update_contexts_keeps_parent_run_pinned(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         return write_success_artifacts(question, run_id, config)
 
     patch_api_config_loaders(monkeypatch, _stub_load_config)
@@ -238,11 +244,13 @@ def test_chat_session_contexts_allow_extra_runs_when_selection_exceeds_direct_ca
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         return write_success_artifacts(question, run_id, config)
 
     patch_api_config_loaders(monkeypatch, _stub_load_config)
@@ -336,11 +344,13 @@ def test_chat_contexts_lazy_backfill_bundle_cache_and_reuse_session_cache(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         return write_success_artifacts(
             question,
             run_id,
@@ -390,7 +400,13 @@ def test_chat_contexts_lazy_backfill_bundle_cache_and_reuse_session_cache(
             (runs_dir / "run-chat-cache" / "context_bundle.json").read_text(encoding="utf-8")
         )
         markdown_excerpts = json.loads(
-            (runs_dir / "run-chat-cache" / "markdown" / "excerpts.json").read_text(
+            (
+                runs_dir
+                / "run-chat-cache"
+                / "stage_files"
+                / "006_markdown_extraction"
+                / "accepted_excerpts.json"
+            ).read_text(
                 encoding="utf-8"
             )
         )

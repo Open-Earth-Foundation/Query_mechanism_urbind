@@ -3,19 +3,19 @@ Brief: Inspect accepted/rejected markdown decision chunk content for one run.
 
 Inputs:
 - CLI args:
-  - --run-dir: Run artifact directory containing `markdown/` files (for example `output/20260306_1034`).
+  - --run-dir: Run artifact directory containing `stage_files/006_markdown_extraction/` files (for example `output/20260306_1034`).
   - --decision: Which decision set to inspect: `accepted`, `rejected`, or `both` (default: `both`).
   - --limit: Optional maximum rows per decision set after filtering. Omit to dump all rows.
   - --city: Optional city filter (case-insensitive city key or name).
   - --show-content / --no-content: Include or hide chunk content text (default: show content).
   - --max-content-chars: Maximum characters shown for content preview per chunk (default: 800).
-  - --output-file: Optional report file path. Defaults to `<run-dir>/markdown/decision_chunks_report.md`.
+  - --output-file: Optional report file path. Defaults to `<run-dir>/stage_files/006_markdown_extraction/decision_chunks_report.md`.
   - --stdout: Also print the report text to stdout.
   - --config: Path to llm config used to open Chroma store (default: `llm_config.yaml`).
 - Files/paths:
-  - `<run-dir>/markdown/accepted_excerpts.json`
-  - `<run-dir>/markdown/rejected_excerpts.json`
-  - `<run-dir>/markdown/retrieval.json`
+  - `<run-dir>/stage_files/006_markdown_extraction/accepted_excerpts.json`
+  - `<run-dir>/stage_files/006_markdown_extraction/rejected_chunks.json`
+  - `<run-dir>/stage_files/003_retrieval/retrieval.json`
   - Chroma collection configured in `llm_config.yaml` (`vector_store.*`).
 - Env vars:
   - Optional `.env` values consumed by `load_config` (for example `CHROMA_PERSIST_PATH`).
@@ -93,7 +93,7 @@ def parse_args() -> argparse.Namespace:
         "--output-file",
         help=(
             "Optional output report file path. "
-            "Defaults to <run-dir>/markdown/decision_chunks_report.md."
+            "Defaults to <run-dir>/stage_files/006_markdown_extraction/decision_chunks_report.md."
         ),
     )
     parser.add_argument(
@@ -121,8 +121,18 @@ def _read_json(path: Path) -> dict[str, Any]:
 
 def _decision_ids(payload: dict[str, Any], decision: DecisionKind) -> list[str]:
     """Extract ordered decision ids from accepted/rejected artifact payload."""
-    key = "accepted_chunk_ids" if decision == "accepted" else "rejected_chunk_ids"
-    raw = payload.get(key, [])
+    if decision == "accepted":
+        excerpts = payload.get("excerpts", [])
+        raw = []
+        if isinstance(excerpts, list):
+            for excerpt in excerpts:
+                if not isinstance(excerpt, dict):
+                    continue
+                source_chunk_ids = excerpt.get("source_chunk_ids", [])
+                if isinstance(source_chunk_ids, list):
+                    raw.extend(source_chunk_ids)
+    else:
+        raw = payload.get("rejected_chunk_ids", [])
     if not isinstance(raw, list):
         return []
     output: list[str] = []
@@ -173,7 +183,12 @@ def _truncate(value: str, max_chars: int) -> str:
 
 def _default_output_path(run_dir: Path) -> Path:
     """Return default report path for a run directory."""
-    return run_dir / "markdown" / "decision_chunks_report.md"
+    return (
+        run_dir
+        / "stage_files"
+        / "006_markdown_extraction"
+        / "decision_chunks_report.md"
+    )
 
 
 def _chunk_content(store: ChromaStore, chunk_id: str) -> str:
@@ -276,10 +291,10 @@ def main() -> None:
     setup_logger()
 
     run_dir = Path(args.run_dir)
-    markdown_dir = run_dir / "markdown"
-    retrieval_path = markdown_dir / "retrieval.json"
+    retrieval_path = run_dir / "stage_files" / "003_retrieval" / "retrieval.json"
+    markdown_dir = run_dir / "stage_files" / "006_markdown_extraction"
     accepted_path = markdown_dir / "accepted_excerpts.json"
-    rejected_path = markdown_dir / "rejected_excerpts.json"
+    rejected_path = markdown_dir / "rejected_chunks.json"
 
     retrieval_payload = _read_json(retrieval_path)
     accepted_payload = _read_json(accepted_path)

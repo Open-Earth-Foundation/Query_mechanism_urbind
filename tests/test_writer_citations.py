@@ -9,6 +9,7 @@ from backend.modules.writer import agent as writer_agent
 from backend.modules.writer.models import WriterOutput
 from backend.modules.writer.utils.markdown_helpers import (
     extract_cited_ref_ids,
+    extract_selected_city_names,
     normalize_reference_citations,
 )
 from backend.modules.writer.utils.multi_pass import build_writer_context_bundle
@@ -357,9 +358,10 @@ def test_writer_appends_no_evidence_section_for_selected_city_without_excerpts(
 ) -> None:
     config = _build_test_config(tmp_path)
     context_bundle: dict[str, object] = {
+        "selected_city_names": ["Munich", "Berlin"],
+        "inspected_city_names": ["Munich"],
         "markdown": {
             "excerpt_count": 1,
-            "selected_city_names": ["Munich", "Berlin"],
             "excerpts": [
                 {
                     "ref_id": "ref_1",
@@ -792,13 +794,40 @@ def test_build_writer_context_bundle_keeps_only_writer_relevant_markdown_fields(
     assert isinstance(markdown_bundle, dict)
     assert markdown_bundle["status"] == "success"
     assert markdown_bundle["excerpt_count"] == 1
-    assert markdown_bundle["selected_city_names"] == ["Munich", "Berlin"]
+    assert writer_bundle["city_scope_mode"] == "selected_cities"
+    assert writer_bundle["selected_cities"] == ["munich", "berlin"]
+    assert writer_bundle["selected_city_names"] == ["Munich", "Berlin"]
+    assert writer_bundle["inspected_cities"] == ["munich", "berlin"]
+    assert writer_bundle["inspected_city_names"] == ["Munich", "Berlin"]
+    assert "selected_city_names" not in markdown_bundle
+    assert "inspected_city_names" not in markdown_bundle
+    assert "selected_cities" not in markdown_bundle
+    assert "inspected_cities" not in markdown_bundle
     assert "accepted_chunk_ids" not in markdown_bundle
     assert "rejected_chunk_ids" not in markdown_bundle
     assert "unresolved_chunk_ids" not in markdown_bundle
     assert "batch_failures" not in markdown_bundle
     assert "decision_audit" not in markdown_bundle
     assert "error" not in markdown_bundle
+
+
+def test_extract_selected_city_names_prefers_root_context_scope() -> None:
+    context_bundle: dict[str, object] = {
+        "selected_city_names": ["Munich", "Berlin"],
+        "markdown": {
+            "selected_city_names": ["Legacy City"],
+            "inspected_city_names": ["Legacy City"],
+            "excerpts": [],
+        },
+    }
+
+    markdown_bundle = context_bundle["markdown"]
+    assert isinstance(markdown_bundle, dict)
+
+    assert extract_selected_city_names(context_bundle, markdown_bundle) == [
+        "Munich",
+        "Berlin",
+    ]
 
 
 def test_build_writer_context_bundle_filters_enrichment_to_batch_cities() -> None:
@@ -832,14 +861,6 @@ def test_build_writer_context_bundle_filters_enrichment_to_batch_cities() -> Non
                 {"city": "Munich", "field": "capex"},
                 {"city": "Berlin", "field": "capex"},
             ],
-            "assumptions": [
-                {"city": "Munich", "field_name": "capex"},
-                {"city": "Berlin", "field_name": "capex"},
-            ],
-            "non_estimable": [
-                {"city": "Munich", "field_name": "capex"},
-                {"city": "Berlin", "field_name": "capex"},
-            ],
             "web_findings": [
                 {"city": "Munich", "field": "capex"},
                 {"city": "Berlin", "field": "capex"},
@@ -849,6 +870,18 @@ def test_build_writer_context_bundle_filters_enrichment_to_batch_cities() -> Non
                 {"city": "Berlin", "field": "capex"},
             ],
             "meta": {"total_gaps": 2},
+        },
+        "assumptions": {
+            "assumptions": [
+                {"city": "Munich", "field_name": "capex"},
+                {"city": "Berlin", "field_name": "capex"},
+            ],
+            "non_estimable": [
+                {"city": "Munich", "field_name": "capex"},
+                {"city": "Berlin", "field_name": "capex"},
+            ],
+            "saturation_warning": None,
+            "meta": {"assumption_count": 2},
         },
         "markdown": {
             "status": "success",
@@ -876,12 +909,15 @@ def test_build_writer_context_bundle_filters_enrichment_to_batch_cities() -> Non
         "external_evidence",
         "external_resolutions",
         "external_no_evidence",
-        "assumptions",
-        "non_estimable",
         "web_findings",
         "freshness_results",
     ):
         assert [record["city"] for record in enrichment[key]] == ["Munich"]
+    assumptions = writer_bundle["assumptions"]
+    assert isinstance(assumptions, dict)
+    assert assumptions["meta"] == {"assumption_count": 2}
+    assert [record["city"] for record in assumptions["assumptions"]] == ["Munich"]
+    assert [record["city"] for record in assumptions["non_estimable"]] == ["Munich"]
 
 
 def test_writer_returns_partial_coverage_metadata_after_retry_exhaustion(
@@ -1048,9 +1084,9 @@ def test_writer_uses_multi_pass_batches_and_combines_them(
     assert "## Cities considered" in output.content
     assert "- Munich" in output.content
     assert "- Berlin" in output.content
-    assert run_logger.run_log["writer_multi_pass"]["batch_count"] == 2
-    assert "writer_multi_pass" in run_logger.run_log["artifacts"]
-    artifact_path = Path(run_logger.run_log["artifacts"]["writer_multi_pass"])
+    assert run_logger.run_state["writer_multi_pass"]["batch_count"] == 2
+    assert "writer_multi_pass" in run_logger.run_state["artifacts"]
+    artifact_path = Path(run_logger.run_state["artifacts"]["writer_multi_pass"])
     assert artifact_path.exists()
 
 

@@ -9,17 +9,36 @@ from typing import Any
 from collections.abc import Mapping
 
 from backend.services.error_log_artifact import write_error_log_artifact
+from backend.utils.artifact_writer import ArtifactWriter, resolve_stage_number
 from backend.utils.city_normalization import normalize_city_key
+from backend.utils.json_io import write_json
 from backend.utils.paths import RunPaths
 
 logger = logging.getLogger(__name__)
+
+
+def _collect_city_keys(values: list[str] | None) -> list[str]:
+    """Normalize city labels into stable keys while preserving first-seen order."""
+    if not values:
+        return []
+    keys: list[str] = []
+    seen: set[str] = set()
+    for value in values:
+        if not isinstance(value, str):
+            continue
+        key = normalize_city_key(value.strip())
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        keys.append(key)
+    return keys
 
 
 class RunLogger:
     def __init__(self, run_paths: RunPaths, question: str) -> None:
         """Initialize run-scoped structured and text artifacts."""
         self.run_paths = run_paths
-        self.run_log: dict[str, Any] = {
+        self.run_state: dict[str, Any] = {
             "run_id": run_paths.base_dir.name,
             "inputs": {
                 "original_question": question,
@@ -30,6 +49,7 @@ class RunLogger:
                 "retrieval_query_1": question,
                 "retrieval_query_2": None,
                 "retrieval_query_3": None,
+                "city_scope_mode": "all_cities",
                 "selected_cities_planned": [],
                 "selected_cities_found": [],
                 "markdown_dir": None,
@@ -43,7 +63,10 @@ class RunLogger:
             "started_at": datetime.now(timezone.utc).isoformat(),
             "completed_at": None,
             "decisions": [],
-            "artifacts": {},
+            "artifacts": {
+                "manifest": str(run_paths.manifest),
+                "summary_events": str(run_paths.summary_events),
+            },
         }
         self.context_bundle: dict[str, Any] = {
             "markdown": None,
@@ -51,32 +74,146 @@ class RunLogger:
             "research_question": question,
             "query_mode": "standard",
             "retrieval_queries": [question],
+            "city_scope_mode": "all_cities",
+            "selected_cities": [],
+            "selected_city_names": [],
+            "inspected_cities": [],
+            "inspected_city_names": [],
             "final": None,
             "analysis_mode": "aggregate",
         }
+        self.artifacts = ArtifactWriter(run_paths.base_dir, run_paths.base_dir.name)
+        self._stage_event_indices: dict[str, int] = {}
 
         self._ensure_dirs()
         self.write_context_bundle()
-        self.write_run_log()
+        self.write_api_state()
+        self.record_artifact("manifest", self.run_paths.manifest)
+        self.record_artifact("summary_events", self.run_paths.summary_events)
 
     def _ensure_dirs(self) -> None:
         """Create the per-run artifact directories."""
         self.run_paths.base_dir.mkdir(parents=True, exist_ok=True)
-        self.run_paths.markdown_dir.mkdir(parents=True, exist_ok=True)
+        self.run_paths.stages_dir.mkdir(parents=True, exist_ok=True)
+        self.run_paths.stage_files_dir.mkdir(parents=True, exist_ok=True)
 
-    def write_run_log(self) -> None:
-        """Persist the structured run log JSON."""
-        self.run_paths.run_log.write_text(
-            json.dumps(self.run_log, indent=2, ensure_ascii=False, default=str),
+    def write_input_snapshot_stage(
+        self,
+        *,
+        snapshot_summary: Mapping[str, object] | None = None,
+        snapshot_artifacts: Mapping[str, str] | None = None,
+    ) -> None:
+        """Persist the structured stage-001 overview after input snapshots are ready."""
+        payload: dict[str, object] = {
+            "inputs": self._build_input_snapshot_inputs(),
+            "outputs": {
+                "context_bundle": self._relative_path(self.run_paths.context_bundle),
+                "api_state": self._relative_path(self.run_paths.api_state),
+            },
+            "metrics": {
+                "retrieval_query_count": self.run_state["inputs"].get(
+                    "retrieval_query_count", 0
+                ),
+                "selected_city_count": len(
+                    self.run_state["inputs"].get("selected_cities_planned", []) or []
+                ),
+            },
+        }
+        if snapshot_summary:
+            payload["snapshot_summary"] = dict(snapshot_summary)
+        if snapshot_artifacts:
+            payload["snapshots"] = dict(snapshot_artifacts)
+        self.write_stage_detail(
+            "input_snapshot",
+            payload,
+            event_type="stage_completed",
+            reuse_existing_event=True,
+        )
+
+    def _build_input_snapshot_inputs(self) -> dict[str, object]:
+        """Return the stage-001 input view without later discovery/extraction fields."""
+        inputs = self.run_state.get("inputs", {})
+        if not isinstance(inputs, dict):
+            return {}
+        keys = [
+            "original_question",
+            "canonical_research_query",
+            "query_mode",
+            "retrieval_queries",
+            "retrieval_query_count",
+            "retrieval_query_1",
+            "retrieval_query_2",
+            "retrieval_query_3",
+            "city_scope_mode",
+            "selected_cities_planned",
+            "analysis_mode",
+        ]
+        return {key: inputs.get(key) for key in keys}
+
+    def _relative_path(self, path: Path) -> str:
+        """Return a run-local path label when possible."""
+        try:
+            return path.resolve(strict=False).relative_to(
+                self.run_paths.base_dir.resolve(strict=False)
+            ).as_posix()
+        except ValueError:
+            return str(path)
+
+    def artifact_label(self, path: Path) -> str:
+        """Return the stable run-local label for an artifact path."""
+        return self._relative_path(path)
+
+    def artifact_path(self, alias: str) -> Path | None:
+        """Return the concrete path for one registered artifact alias."""
+        return self.artifacts.resolve_alias_path(alias)
+
+    def write_api_state(self) -> None:
+        """Persist the structured API state JSON."""
+        self.run_paths.api_state.write_text(
+            json.dumps(
+                self._build_serialized_api_state(),
+                indent=2,
+                ensure_ascii=False,
+                default=str,
+            ),
             encoding="utf-8",
         )
+
+    def _build_serialized_api_state(self) -> dict[str, Any]:
+        """Return the persisted api_state.json payload for API and benchmark use."""
+        payload: dict[str, Any] = {
+            "run_id": self.run_state.get("run_id"),
+            "question": self.run_state.get("inputs", {}).get("original_question")
+            if isinstance(self.run_state.get("inputs"), dict)
+            else None,
+            "status": self.run_state.get("status"),
+            "started_at": self.run_state.get("started_at"),
+            "completed_at": self.run_state.get("completed_at"),
+            "finish_reason": self.run_state.get("finish_reason"),
+            "error": self.run_state.get("error"),
+            "inputs": self.run_state.get("inputs"),
+            "decisions": self.run_state.get("decisions"),
+            "llm_usage": self.run_state.get("llm_usage"),
+            "retry_summary": self.run_state.get("retry_summary"),
+            "writer_citation_coverage": self.run_state.get("writer_citation_coverage"),
+            "writer_multi_pass": self.run_state.get("writer_multi_pass"),
+        }
+        return payload
 
     def write_context_bundle(self) -> None:
         """Persist the current context bundle JSON."""
-        self.run_paths.context_bundle.write_text(
-            json.dumps(self.context_bundle, indent=2, ensure_ascii=False, default=str),
-            encoding="utf-8",
+        write_json(
+            self.run_paths.context_bundle,
+            self.context_bundle,
+            ensure_ascii=False,
+            default=str,
         )
+        if hasattr(self, "artifacts"):
+            self.artifacts.register_file(
+                "context_bundle",
+                self.run_paths.context_bundle,
+                artifact_type="runtime_state",
+            )
 
     def _read_json_file(self, path: Path) -> object | None:
         if not path.exists():
@@ -131,6 +268,32 @@ class RunLogger:
             "by_city": dict(sorted(by_city.items())),
         }
 
+    def write_query_preparation_stage(
+        self,
+        *,
+        original_question: str,
+        canonical_research_query: str,
+        retrieval_queries: list[str],
+        query_mode: str,
+    ) -> None:
+        """Persist the query-preparation stage detail."""
+        self.write_stage_detail(
+            "query_preparation",
+            {
+                "inputs": {
+                    "original_question": original_question,
+                    "query_mode": query_mode,
+                },
+                "outputs": {
+                    "canonical_research_query": canonical_research_query,
+                    "retrieval_queries": retrieval_queries,
+                },
+                "metrics": {
+                    "retrieval_query_count": len(retrieval_queries),
+                },
+            },
+        )
+
     def _read_text_file(self, path: Path, max_bytes: int = 200_000) -> str:
         if not path.exists():
             return "(missing)"
@@ -174,8 +337,8 @@ class RunLogger:
 
     def _format_total_runtime(self) -> str:
         """Return elapsed runtime in seconds from run start/end timestamps."""
-        started_raw = self.run_log.get("started_at")
-        completed_raw = self.run_log.get("completed_at")
+        started_raw = self.run_state.get("started_at")
+        completed_raw = self.run_state.get("completed_at")
         if not isinstance(started_raw, str) or not isinstance(completed_raw, str):
             return "n/a"
         try:
@@ -300,8 +463,8 @@ class RunLogger:
         """Write the human-readable run summary artifact."""
         lines: list[str] = []
         lines.append("RUN SUMMARY")
-        lines.append(f"Run ID: {self.run_log.get('run_id')}")
-        inputs = self.run_log.get("inputs", {})
+        lines.append(f"Run ID: {self.run_state.get('run_id')}")
+        inputs = self.run_state.get("inputs", {})
         if isinstance(inputs, dict):
             original_question = (
                 inputs.get("original_question")
@@ -340,18 +503,18 @@ class RunLogger:
             lines.append(
                 f"Markdown source mode: {inputs.get('markdown_source_mode', 'standard_chunking')}"
             )
-        lines.append(f"Status: {self.run_log.get('status')}")
-        lines.append(f"Finish reason: {self.run_log.get('finish_reason', 'n/a')}")
-        lines.append(f"Started: {self.run_log.get('started_at')}")
-        lines.append(f"Completed: {self.run_log.get('completed_at')}")
+        lines.append(f"Status: {self.run_state.get('status')}")
+        lines.append(f"Finish reason: {self.run_state.get('finish_reason', 'n/a')}")
+        lines.append(f"Started: {self.run_state.get('started_at')}")
+        lines.append(f"Completed: {self.run_state.get('completed_at')}")
         lines.append(f"Total runtime: {self._format_total_runtime()}")
-        llm_usage = self.run_log.get("llm_usage")
+        llm_usage = self.run_state.get("llm_usage")
         if llm_usage:
             lines.append(f"LLM Usage: {json.dumps(llm_usage, ensure_ascii=False)}")
-        retry_summary = self.run_log.get("retry_summary")
+        retry_summary = self.run_state.get("retry_summary")
         if retry_summary:
             lines.append(f"Retry Summary: {json.dumps(retry_summary, ensure_ascii=False)}")
-        writer_multi_pass = self.run_log.get("writer_multi_pass")
+        writer_multi_pass = self.run_state.get("writer_multi_pass")
         if writer_multi_pass:
             lines.append(
                 f"Writer multi-pass: {json.dumps(writer_multi_pass, ensure_ascii=False)}"
@@ -359,55 +522,177 @@ class RunLogger:
         lines.append("")
 
         lines.append("ARTIFACTS")
-        for key, value in self.run_log.get("artifacts", {}).items():
+        for key, value in self.run_state.get("artifacts", {}).items():
             lines.append(f"- {key}: {value}")
         lines.append("")
 
         lines.append("DECISIONS (LLM)")
-        lines.append(self._format_json(self.run_log.get("decisions")))
+        lines.append(self._format_json(self.run_state.get("decisions")))
         lines.append("")
 
-        lines.append("CONTEXT_BUNDLE (LLM)")
-        lines.append(self._format_json(self.context_bundle))
-        lines.append("")
-
-        markdown_payload = self._read_json_file(self.run_paths.markdown_excerpts)
-        lines.append("MARKDOWN_EXCERPTS (LLM)")
-        lines.append(self._format_json(markdown_payload))
-        lines.append("")
+        markdown_excerpts_path = self.artifact_path("markdown_excerpts")
+        markdown_payload = (
+            self._read_json_file(markdown_excerpts_path)
+            if markdown_excerpts_path is not None
+            else None
+        )
         lines.append("MARKDOWN_FAILURE_SUMMARY")
-        lines.append(self._format_json(self._summarize_markdown_failures(markdown_payload)))
+        markdown_failure_summary = self._summarize_markdown_failures(markdown_payload)
+        lines.append(
+            self._format_json(markdown_failure_summary)
+            if markdown_failure_summary is not None
+            else "none"
+        )
         lines.append("")
-
-        final_output = self.run_log.get("artifacts", {}).get("final_output")
-        lines.append("FINAL_OUTPUT (LLM)")
-        if final_output:
-            lines.append(self._read_text_file(Path(final_output)))
-        else:
-            lines.append("(none)")
-        lines.append("")
+        lines.append("FULL PAYLOADS")
+        lines.append("- context_bundle: context_bundle.json")
+        lines.append("- markdown_excerpts: stage_files/006_markdown_extraction/accepted_excerpts.json")
+        lines.append("- final_output: final.md")
 
         self.run_paths.run_summary.write_text("\n".join(lines), encoding="utf-8")
 
+    def llm_token_count_for_agents(self, agent_names: set[str]) -> int | None:
+        """Return total LLM tokens for selected agents from run.log."""
+        usage = self._summarize_llm_usage()
+        if not isinstance(usage, dict):
+            return None
+        per_agent = usage.get("per_agent")
+        if not isinstance(per_agent, dict):
+            return None
+        total = 0
+        matched = False
+        for agent_name in agent_names:
+            payload = per_agent.get(agent_name)
+            if not isinstance(payload, dict):
+                continue
+            total_tokens = payload.get("total_tokens")
+            if not isinstance(total_tokens, int):
+                continue
+            total += total_tokens
+            matched = True
+        return total if matched else None
+
     def record_decision(self, decision: dict[str, Any]) -> None:
-        """Append one structured decision payload to the run log."""
-        self.run_log["decisions"].append(decision)
-        self.write_run_log()
+        """Append one structured decision payload to run and stage state."""
+        self.run_state["decisions"].append(decision)
+        step_name = str(decision.get("step", "")).strip() or None
+        self._append_decision_to_stage_detail(step_name, decision)
+        self.write_api_state()
+
+    def _append_decision_to_stage_detail(
+        self,
+        step_name: str | None,
+        decision: dict[str, Any],
+    ) -> None:
+        """Attach a decision to its stage detail when that stage already exists."""
+        stage_number = resolve_stage_number(step_name)
+        if step_name is None or stage_number is None:
+            return
+
+        stage_path = self.run_paths.stages_dir / f"{stage_number:03d}_{step_name}.json"
+        payload = self._read_json_file(stage_path)
+        if not isinstance(payload, dict):
+            return
+
+        decisions = payload.get("decisions")
+        if not isinstance(decisions, list):
+            decisions = []
+        decisions.append(decision)
+        payload["decisions"] = decisions
+        write_json(stage_path, payload, ensure_ascii=False, default=str)
 
     def record_artifact(self, name: str, path: Path) -> None:
-        """Register one artifact path in the structured run log."""
-        self.run_log["artifacts"][name] = str(path)
-        self.write_run_log()
+        """Register one artifact path in the structured run state."""
+        self.run_state["artifacts"][name] = str(path)
+        self.artifacts.register_file(name, path)
+        self.write_api_state()
+
+    def write_stage_detail(
+        self,
+        step_name: str,
+        payload: dict[str, Any],
+        *,
+        event_type: str = "stage_completed",
+        reuse_existing_event: bool = False,
+    ) -> Path:
+        """Write a standardized stage detail artifact."""
+        event_payload = {
+            "step": step_name,
+            "metrics": payload.get("metrics", {}),
+            "outputs": payload.get("outputs", {}),
+        }
+        stage_number = resolve_stage_number(step_name)
+        event_index = self._stage_event_indices.get(step_name)
+        if event_index is None or not reuse_existing_event:
+            event_index = self.artifacts.write_event(
+                event_type,
+                event_payload,
+                stage_name=step_name,
+                stage_number=stage_number,
+            )
+            self._stage_event_indices[step_name] = event_index
+        path = self.artifacts.write_step_detail(
+            step_name,
+            payload,
+            event_index=event_index,
+            event_type=event_type,
+            stage_number=stage_number,
+        )
+        self.write_api_state()
+        return path
+
+    def write_stage_file(
+        self,
+        stage_name: str,
+        filename: str,
+        payload: object,
+        *,
+        alias: str | None = None,
+    ) -> Path:
+        """Write a run-local JSON stage file through the artifact writer."""
+        path = self.artifacts.write_stage_file(
+            stage_name,
+            filename,
+            payload,
+            alias=alias,
+        )
+        if alias:
+            self.run_state["artifacts"][alias] = str(path)
+            self.write_api_state()
+        return path
 
     def record_writer_citation_coverage(self, coverage: dict[str, Any]) -> None:
         """Persist final writer citation-coverage diagnostics for API consumers."""
-        self.run_log["writer_citation_coverage"] = coverage
-        self.write_run_log()
+        self.run_state["writer_citation_coverage"] = coverage
+        self.write_stage_detail(
+            "writer_citation_coverage",
+            {
+                "inputs": {},
+                "outputs": {"writer_citation_coverage": coverage},
+                "metrics": {
+                    "citation_coverage_ratio": coverage.get("coverage_ratio"),
+                    "confirmed_city_count": coverage.get("coverage_confirmed"),
+                    "required_city_count": coverage.get("coverage_required"),
+                },
+            },
+        )
+        self.write_api_state()
 
     def record_writer_multi_pass(self, payload: dict[str, Any]) -> None:
         """Persist writer multi-pass diagnostics for API consumers."""
-        self.run_log["writer_multi_pass"] = payload
-        self.write_run_log()
+        self.run_state["writer_multi_pass"] = payload
+        self.write_stage_detail(
+            "writer_multi_pass",
+            {
+                "inputs": {},
+                "outputs": {"writer_multi_pass": payload},
+                "metrics": {
+                    "batch_count": payload.get("batch_count"),
+                    "input_tokens": payload.get("input_tokens"),
+                },
+            },
+        )
+        self.write_api_state()
 
     def update_enrichment_bundle(self, enrichment_payload: dict[str, Any]) -> None:
         """Persist the enrichment context bundle section."""
@@ -419,11 +704,11 @@ class RunLogger:
         self.context_bundle["markdown"] = markdown_payload
         excerpt_count = markdown_payload.get("excerpt_count", 0)
         normalized_excerpt_count = excerpt_count if isinstance(excerpt_count, int) else 0
-        inputs = self.run_log.get("inputs")
+        inputs = self.run_state.get("inputs")
         if isinstance(inputs, dict):
             inputs["markdown_excerpt_count"] = normalized_excerpt_count
-            self.run_log["inputs"] = inputs
-            self.write_run_log()
+            self.run_state["inputs"] = inputs
+            self.write_api_state()
         self.write_context_bundle()
 
     def update_query_inputs(
@@ -433,8 +718,9 @@ class RunLogger:
         canonical_research_query: str,
         retrieval_queries: list[str],
         query_mode: str,
+        write_stage_detail: bool = True,
     ) -> None:
-        """Persist query-mode metadata in both run log inputs and context bundle."""
+        """Persist query-mode metadata in both run-state inputs and context bundle."""
         normalized_original_question = original_question.strip() or original_question
         normalized_canonical_query = (
             canonical_research_query.strip() or normalized_original_question
@@ -453,7 +739,7 @@ class RunLogger:
         self.context_bundle["query_mode"] = resolved_query_mode
         self.context_bundle["retrieval_queries"] = normalized_retrieval_queries
 
-        inputs = self.run_log.get("inputs")
+        inputs = self.run_state.get("inputs")
         if not isinstance(inputs, dict):
             inputs = {}
         inputs["original_question"] = normalized_original_question
@@ -476,20 +762,46 @@ class RunLogger:
             if len(normalized_retrieval_queries) >= 3
             else None
         )
-        self.run_log["inputs"] = inputs
-        self.write_run_log()
+        self.run_state["inputs"] = inputs
+        self.write_api_state()
         self.write_context_bundle()
+        if write_stage_detail:
+            self.write_query_preparation_stage(
+                original_question=normalized_original_question,
+                canonical_research_query=normalized_canonical_query,
+                retrieval_queries=normalized_retrieval_queries,
+                query_mode=resolved_query_mode,
+            )
 
     def update_analysis_mode(self, analysis_mode: str) -> None:
-        """Persist selected analysis mode in run log and context bundle."""
+        """Persist selected analysis mode in run-state inputs and context bundle."""
         normalized = analysis_mode.strip() if isinstance(analysis_mode, str) else ""
         resolved = normalized if normalized else "aggregate"
-        inputs = self.run_log.get("inputs")
+        inputs = self.run_state.get("inputs")
         if isinstance(inputs, dict):
             inputs["analysis_mode"] = resolved
-            self.run_log["inputs"] = inputs
-            self.write_run_log()
+            self.run_state["inputs"] = inputs
+            self.write_api_state()
         self.context_bundle["analysis_mode"] = resolved
+        self.write_context_bundle()
+
+    def update_requested_city_scope(
+        self,
+        selected_cities: list[str] | None,
+    ) -> None:
+        """Persist the requested city scope before markdown discovery starts."""
+        planned_keys = _collect_city_keys(selected_cities)
+        scope_mode = "selected_cities" if planned_keys else "all_cities"
+        inputs = self.run_state.get("inputs")
+        if not isinstance(inputs, dict):
+            inputs = {}
+        inputs["city_scope_mode"] = scope_mode
+        inputs["selected_cities_planned"] = planned_keys
+        self.run_state["inputs"] = inputs
+        self.context_bundle["city_scope_mode"] = scope_mode
+        self.context_bundle["selected_cities"] = planned_keys
+        self.context_bundle["selected_city_names"] = planned_keys
+        self.write_api_state()
         self.write_context_bundle()
 
     def record_markdown_inputs(
@@ -506,19 +818,13 @@ class RunLogger:
         ``markdown_source_mode`` identifies whether chunks came from standard
         file chunking or vector store retrieval.
         """
-        planned = sorted(
-            {
-                city.strip()
-                for city in (selected_cities_planned or [])
-                if isinstance(city, str) and city.strip()
-            }
-        )
-        found = sorted(
-            {
-                normalize_city_key(str(doc.get("city_key", "")).strip())
+        planned_keys = _collect_city_keys(selected_cities_planned)
+        scope_mode = "selected_cities" if planned_keys else "all_cities"
+        found_keys = _collect_city_keys(
+            [
+                str(doc.get("city_name", "")).strip() or str(doc.get("city_key", "")).strip()
                 for doc in markdown_chunks
-                if normalize_city_key(str(doc.get("city_key", "")).strip())
-            }
+            ]
         )
         file_count = len(
             {
@@ -527,19 +833,46 @@ class RunLogger:
                 if str(doc.get("path", "")).strip()
             }
         )
-        inputs = self.run_log.get("inputs")
+        inputs = self.run_state.get("inputs")
         if not isinstance(inputs, dict):
             inputs = {}
-        inputs["selected_cities_planned"] = planned
-        inputs["selected_cities_found"] = found
+        inputs["city_scope_mode"] = scope_mode
+        inputs["selected_cities_planned"] = planned_keys
+        inputs["selected_cities_found"] = found_keys
         inputs["markdown_dir"] = str(markdown_dir)
         inputs["markdown_file_count"] = file_count
         inputs["markdown_chunk_count"] = len(markdown_chunks)
         inputs["markdown_excerpt_count"] = 0
         inputs["markdown_source_mode"] = markdown_source_mode
         inputs["analysis_mode"] = analysis_mode
-        self.run_log["inputs"] = inputs
-        self.write_run_log()
+        self.run_state["inputs"] = inputs
+        self.write_api_state()
+        planned_set = set(planned_keys)
+        found_set = set(found_keys)
+        missing_keys = sorted(planned_set - found_set)
+        self.write_stage_detail(
+            "markdown_inputs",
+            {
+                "inputs": {
+                    "markdown_dir": str(markdown_dir),
+                    "city_scope_mode": scope_mode,
+                    "selected_cities_planned": planned_keys,
+                    "markdown_source_mode": markdown_source_mode,
+                    "analysis_mode": analysis_mode,
+                },
+                "outputs": {
+                    "selected_cities_found": found_keys,
+                    "missing_selected_cities": missing_keys,
+                },
+                "metrics": {
+                    "markdown_file_count": file_count,
+                    "markdown_chunk_count": len(markdown_chunks),
+                    "selected_city_count": len(planned_keys),
+                    "found_city_count": len(found_keys),
+                    "missing_selected_city_count": len(missing_keys),
+                },
+            },
+        )
 
     def finalize(
         self,
@@ -547,28 +880,83 @@ class RunLogger:
         final_output_path: Path | None = None,
         finish_reason: str | None = None,
     ) -> None:
-        self.run_log["status"] = status
-        self.run_log["completed_at"] = datetime.now(timezone.utc).isoformat()
+        self.run_state["status"] = status
+        self.run_state["completed_at"] = datetime.now(timezone.utc).isoformat()
         if finish_reason:
-            self.run_log["finish_reason"] = finish_reason
+            self.run_state["finish_reason"] = finish_reason
         usage_summary = self._summarize_llm_usage()
         if usage_summary:
-            self.run_log["llm_usage"] = usage_summary
+            self.run_state["llm_usage"] = usage_summary
             logger.info("LLM_USAGE_SUMMARY %s", json.dumps(usage_summary, ensure_ascii=False))
         retry_summary = self._summarize_retry_events()
         if retry_summary:
-            self.run_log["retry_summary"] = retry_summary
+            self.run_state["retry_summary"] = retry_summary
             logger.info("RETRY_SUMMARY %s", json.dumps(retry_summary, ensure_ascii=False))
-        self.run_log["artifacts"]["run_summary"] = str(self.run_paths.run_summary)
+        self.run_state["artifacts"]["run_summary"] = str(self.run_paths.run_summary)
         error_log_path = self._write_error_log_artifact()
         if error_log_path is not None:
-            self.run_log["artifacts"]["error_log"] = str(error_log_path)
+            self.run_state["artifacts"]["error_log"] = str(error_log_path)
+            self.artifacts.register_file("error_log", error_log_path)
         if final_output_path:
-            self.run_log["artifacts"]["final_output"] = str(final_output_path)
+            self.run_state["artifacts"]["final_output"] = str(final_output_path)
+            self.artifacts.register_file(
+                "final_output",
+                final_output_path,
+                artifact_type="runtime_state",
+            )
             self.context_bundle["final"] = str(final_output_path)
             self.write_context_bundle()
-        self.write_run_log()
+        self.write_api_state()
         self.write_text_log()
+        self.record_artifact("run_summary", self.run_paths.run_summary)
+        self.write_stage_detail(
+            "finalize",
+            {
+                "inputs": {},
+                "outputs": {
+                    "status": self.run_state.get("status"),
+                    "finish_reason": self.run_state.get("finish_reason"),
+                    "final_output": (
+                        self._relative_path(final_output_path)
+                        if final_output_path is not None
+                        else None
+                    ),
+                    "run_summary": self._relative_path(self.run_paths.run_summary),
+                    "error_log": (
+                        self._relative_path(error_log_path)
+                        if error_log_path is not None
+                        else None
+                    ),
+                },
+                "metrics": {
+                    "llm_calls": (
+                        usage_summary.get("calls")
+                        if isinstance(usage_summary, dict)
+                        else None
+                    ),
+                    "retry_events": (
+                        retry_summary.get("total_events")
+                        if isinstance(retry_summary, dict)
+                        else None
+                    ),
+                    "retry_exhausted_events": (
+                        retry_summary.get("exhausted_events")
+                        if isinstance(retry_summary, dict)
+                        else None
+                    ),
+                },
+            },
+        )
+        manifest_path = self.artifacts.write_manifest(
+            {
+                "status": self.run_state.get("status"),
+                "finish_reason": self.run_state.get("finish_reason"),
+                "llm_usage": self.run_state.get("llm_usage"),
+                "retry_summary": self.run_state.get("retry_summary"),
+            }
+        )
+        self.run_state["artifacts"]["manifest"] = str(manifest_path)
+        self.write_api_state()
 
 
 __all__ = ["RunLogger"]

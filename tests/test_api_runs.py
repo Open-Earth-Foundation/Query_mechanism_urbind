@@ -14,6 +14,7 @@ from fastapi.testclient import TestClient
 from backend.api.main import create_app
 from backend.api.services.run_store import TERMINAL_STATUSES
 from backend.modules.markdown_researcher.services import build_markdown_chunks_for_file
+from backend.utils.artifact_writer import ArtifactWriter
 from backend.utils.config import AppConfig
 from backend.utils.paths import RunPaths, create_run_paths
 from tests.support import build_test_app_config
@@ -50,14 +51,14 @@ def _write_success_artifacts(question: str, run_id: str, config: AppConfig) -> R
         "started_at": datetime.now(timezone.utc).isoformat(),
         "completed_at": datetime.now(timezone.utc).isoformat(),
         "finish_reason": "completed (write)",
-        "artifacts": {
-            "context_bundle": str(paths.context_bundle),
-            "final_output": str(paths.final_output),
-        },
     }
-    paths.run_log.write_text(
+    paths.api_state.write_text(
         json.dumps(run_log, ensure_ascii=True, indent=2), encoding="utf-8"
     )
+    writer = ArtifactWriter(paths.base_dir, run_id)
+    writer.register_file("context_bundle", paths.context_bundle)
+    writer.register_file("final_output", paths.final_output)
+    writer.write_manifest({"status": "completed"})
     return paths
 
 
@@ -81,9 +82,8 @@ def _write_run_listing_artifacts(
         "completed_at": datetime.now(timezone.utc).isoformat(),
         "finish_reason": finish_reason,
         "error": error,
-        "artifacts": {},
     }
-    paths.run_log.write_text(
+    paths.api_state.write_text(
         json.dumps(run_log, ensure_ascii=True, indent=2),
         encoding="utf-8",
     )
@@ -98,7 +98,7 @@ def _write_run_listing_artifact(
     question: str | None,
     inputs: dict[str, object] | None = None,
 ) -> None:
-    """Persist the minimal run.json payload needed by run-list endpoint tests."""
+    """Persist the minimal api_state.json payload needed by run-list endpoint tests."""
     run_dir = runs_dir / run_id
     run_dir.mkdir(parents=True, exist_ok=True)
     payload: dict[str, object] = {
@@ -111,7 +111,7 @@ def _write_run_listing_artifact(
         payload["question"] = question
     if inputs is not None:
         payload["inputs"] = inputs
-    (run_dir / "run.json").write_text(
+    (run_dir / "api_state.json").write_text(
         json.dumps(payload, ensure_ascii=True, indent=2),
         encoding="utf-8",
     )
@@ -139,9 +139,8 @@ def _write_started_artifacts_with_error_log_input(
         "started_at": datetime.now(timezone.utc).isoformat(),
         "completed_at": None,
         "decisions": [],
-        "artifacts": {},
     }
-    paths.run_log.write_text(
+    paths.api_state.write_text(
         json.dumps(run_log_payload, ensure_ascii=True, indent=2),
         encoding="utf-8",
     )
@@ -167,7 +166,7 @@ def _write_failed_artifacts_with_decision_error(
     error_code: str,
     error_message: str,
 ) -> RunPaths:
-    """Persist a failed run.json with a structured decision error."""
+    """Persist a failed api_state.json with a structured decision error."""
     paths = create_run_paths(config.runs_dir, run_id, config.orchestrator.context_bundle_name)
     paths.base_dir.mkdir(parents=True, exist_ok=True)
     run_log_payload = {
@@ -187,9 +186,8 @@ def _write_failed_artifacts_with_decision_error(
                 },
             }
         ],
-        "artifacts": {},
     }
-    paths.run_log.write_text(
+    paths.api_state.write_text(
         json.dumps(run_log_payload, ensure_ascii=True, indent=2),
         encoding="utf-8",
     )
@@ -205,26 +203,31 @@ def _write_markdown_reference_artifacts(
     references_payload: dict[str, object] | None = None,
     excerpts_payload: dict[str, object] | None = None,
 ) -> None:
-    paths.markdown_dir.mkdir(parents=True, exist_ok=True)
-    if references_payload is not None:
-        paths.markdown_references.write_text(
-            json.dumps(references_payload, ensure_ascii=True, indent=2),
-            encoding="utf-8",
-        )
+    writer = ArtifactWriter(paths.base_dir, paths.base_dir.name)
+    if excerpts_payload is None and references_payload is not None:
+        excerpts_payload = {
+            "excerpts": references_payload.get("references", []),
+        }
     if excerpts_payload is not None:
-        paths.markdown_excerpts.write_text(
-            json.dumps(excerpts_payload, ensure_ascii=True, indent=2),
-            encoding="utf-8",
+        writer.write_stage_file(
+            "markdown_extraction",
+            "accepted_excerpts.json",
+            excerpts_payload,
+            alias="markdown_excerpts",
         )
+    writer.write_manifest()
 
 
 def _write_markdown_batches_artifact(paths: RunPaths, payload: dict[str, object]) -> None:
     """Persist markdown batch metadata for chunk-to-path lookup tests."""
-    paths.markdown_dir.mkdir(parents=True, exist_ok=True)
-    (paths.markdown_dir / "batches.json").write_text(
-        json.dumps(payload, ensure_ascii=True, indent=2),
-        encoding="utf-8",
+    writer = ArtifactWriter(paths.base_dir, paths.base_dir.name)
+    writer.write_stage_file(
+        "markdown_extraction",
+        "batches.json",
+        payload,
+        alias="markdown_batches",
     )
+    writer.write_manifest()
 
 
 def _poll_until_terminal(
@@ -261,18 +264,24 @@ def test_api_run_lifecycle_success(tmp_path: Path, monkeypatch: pytest.MonkeyPat
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert isinstance(log_llm_payload, bool)
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         return _write_success_artifacts(question=question, run_id=run_id, config=config)
 
     monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
 
-    app = create_app(runs_dir=runs_dir, max_workers=2)
+    app = create_app(
+        runs_dir=runs_dir,
+        max_workers=2,
+        config_path=tmp_path / "missing-test-config.yaml",
+    )
     with TestClient(app) as client:
         start = client.post(
             "/api/v1/runs",
@@ -298,6 +307,51 @@ def test_api_run_lifecycle_success(tmp_path: Path, monkeypatch: pytest.MonkeyPat
         assert isinstance(context_payload["context_bundle"], dict)
 
 
+def test_api_vector_store_status_reports_startup_warmup_state(tmp_path: Path) -> None:
+    """Expose vector-store warm-up state for the frontend banner."""
+    app = create_app(
+        runs_dir=tmp_path / "output",
+        max_workers=1,
+        config_path=tmp_path / "missing-test-config.yaml",
+    )
+
+    with TestClient(app) as client:
+        response = client.get("/api/v1/system/vector-store")
+
+    assert response.status_code == 200
+    payload = response.json()
+    assert payload["status"] in {"skipped", "running", "completed", "failed", "pending"}
+    assert isinstance(payload["enabled"], bool)
+    assert isinstance(payload["auto_update_on_run"], bool)
+    assert isinstance(payload["message"], str)
+    assert "latest_artifact" in payload
+
+
+def test_api_create_run_rejects_while_vector_store_warmup_running(
+    tmp_path: Path,
+) -> None:
+    """Prevent new runs while startup vector-store refresh is in progress."""
+    app = create_app(
+        runs_dir=tmp_path / "output",
+        max_workers=1,
+        config_path=tmp_path / "missing-test-config.yaml",
+    )
+
+    with TestClient(app) as client:
+        warmup = client.app.state.vector_store_warmup
+        with warmup._lock:
+            warmup._status = "running"
+            warmup._message = "Refreshing vector store before accepting new runs."
+
+        response = client.post(
+            "/api/v1/runs",
+            json={"question": "What are the key initiatives?", "run_id": "blocked"},
+        )
+
+    assert response.status_code == 409
+    assert "vector store update in progress" in response.json()["detail"].lower()
+
+
 def test_api_run_lifecycle_dev_mode_ignores_blank_optional_queries(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
@@ -321,6 +375,7 @@ def test_api_run_lifecycle_dev_mode_ignores_blank_optional_queries(
         query_3: str | None = None,
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert isinstance(log_llm_payload, bool)
@@ -330,6 +385,7 @@ def test_api_run_lifecycle_dev_mode_ignores_blank_optional_queries(
         assert query_3 is None
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         return _write_success_artifacts(question=question, run_id=run_id, config=config)
 
     monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
@@ -374,6 +430,7 @@ def test_api_run_lifecycle_standard_mode_passes_optional_queries(
         query_3: str | None = None,
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert question == "Compare public EV charging targets exactly as entered."
         assert run_id is not None
@@ -383,6 +440,7 @@ def test_api_run_lifecycle_standard_mode_passes_optional_queries(
         assert query_3 is None
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         return _write_success_artifacts(question=question, run_id=run_id, config=config)
 
     monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
@@ -404,7 +462,7 @@ def test_api_run_lifecycle_standard_mode_passes_optional_queries(
         assert terminal["status"] == "completed"
 
 
-def test_api_get_run_reference_returns_record_from_references_artifact(
+def test_api_get_run_reference_returns_record_from_accepted_excerpts(
     tmp_path: Path,
 ) -> None:
     runs_dir = tmp_path / "output"
@@ -578,7 +636,7 @@ def test_api_get_run_reference_returns_not_found_for_unknown_ref(
         assert response.status_code == 404
 
 
-def test_api_get_run_reference_falls_back_to_excerpts_when_references_missing(
+def test_api_get_run_reference_derives_records_from_accepted_excerpts(
     tmp_path: Path,
 ) -> None:
     runs_dir = tmp_path / "output"
@@ -833,11 +891,13 @@ def test_api_duplicate_run_id_returns_conflict(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         return _write_success_artifacts(question=question, run_id=run_id, config=config)
 
     monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
@@ -866,7 +926,7 @@ def test_api_run_id_is_not_blocked_by_stale_api_state_snapshot(
     markdown_dir.mkdir(parents=True, exist_ok=True)
     state_dir = runs_dir / "_api_state"
     state_dir.mkdir(parents=True, exist_ok=True)
-    (state_dir / "stale-run.json").write_text(
+    (state_dir / "stale-api_state.json").write_text(
         json.dumps(
             {
                 "run_id": "stale-run",
@@ -892,11 +952,13 @@ def test_api_run_id_is_not_blocked_by_stale_api_state_snapshot(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         return _write_success_artifacts(question=question, run_id=run_id, config=config)
 
     monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
@@ -971,7 +1033,7 @@ def test_api_list_runs_reads_question_from_original_question_when_root_question_
         "started_at": datetime.now(timezone.utc).isoformat(),
         "completed_at": datetime.now(timezone.utc).isoformat(),
     }
-    (run_dir / "run.json").write_text(
+    (run_dir / "api_state.json").write_text(
         json.dumps(run_payload, ensure_ascii=True, indent=2),
         encoding="utf-8",
     )
@@ -1007,7 +1069,7 @@ def test_api_list_runs_reads_question_from_legacy_inputs_when_root_question_miss
         "started_at": datetime.now(timezone.utc).isoformat(),
         "completed_at": datetime.now(timezone.utc).isoformat(),
     }
-    (run_dir / "run.json").write_text(
+    (run_dir / "api_state.json").write_text(
         json.dumps(run_payload, ensure_ascii=True, indent=2),
         encoding="utf-8",
     )
@@ -1236,11 +1298,7 @@ def test_api_run_diagnostics_returns_warning_and_error_artifacts(
         finish_reason="writer_unexpected_error",
         error={"code": "RUN_EXECUTION_ERROR", "message": "Max turns (5) exceeded"},
     )
-    run_payload = json.loads(paths.run_log.read_text(encoding="utf-8"))
-    run_payload["artifacts"] = {
-        "run_summary": str(paths.run_summary),
-        "error_log": str(paths.error_log),
-    }
+    run_payload = json.loads(paths.api_state.read_text(encoding="utf-8"))
     run_payload["llm_usage"] = {"calls": 2, "totals": {"total_tokens": 123}}
     run_payload["retry_summary"] = {"total_events": 1, "by_operation": {"writer": 1}}
     run_payload["writer_multi_pass"] = {
@@ -1265,7 +1323,7 @@ def test_api_run_diagnostics_returns_warning_and_error_artifacts(
             },
         ],
     }
-    paths.run_log.write_text(
+    paths.api_state.write_text(
         json.dumps(run_payload, ensure_ascii=True, indent=2),
         encoding="utf-8",
     )
@@ -1359,12 +1417,8 @@ def test_api_run_diagnostics_ignores_foreign_artifact_paths(tmp_path: Path) -> N
     foreign_summary.write_text("FOREIGN SUMMARY", encoding="utf-8")
     foreign_error_log.write_text("FOREIGN SECRET", encoding="utf-8")
 
-    run_payload = json.loads(paths.run_log.read_text(encoding="utf-8"))
-    run_payload["artifacts"] = {
-        "run_summary": str(foreign_summary),
-        "error_log": str(foreign_error_log),
-    }
-    paths.run_log.write_text(
+    run_payload = json.loads(paths.api_state.read_text(encoding="utf-8"))
+    paths.api_state.write_text(
         json.dumps(run_payload, ensure_ascii=True, indent=2),
         encoding="utf-8",
     )
@@ -1405,10 +1459,8 @@ def test_api_output_and_context_resolve_stale_container_artifact_paths(
         run_id=run_id,
         config=config,
     )
-    run_payload = json.loads(paths.run_log.read_text(encoding="utf-8"))
-    run_payload["artifacts"]["final_output"] = f"/data/output/{run_id}/final.md"
-    run_payload["artifacts"]["context_bundle"] = f"/data/output/{run_id}/context_bundle.json"
-    paths.run_log.write_text(
+    run_payload = json.loads(paths.api_state.read_text(encoding="utf-8"))
+    paths.api_state.write_text(
         json.dumps(run_payload, ensure_ascii=True, indent=2),
         encoding="utf-8",
     )
@@ -1477,15 +1529,14 @@ def test_api_writer_context_export_returns_writer_safe_json_bundle(tmp_path: Pat
         "research_question": "What retrofit evidence was selected?",
         "analysis_mode": "aggregate",
         "selected_cities": ["munich", "leipzig"],
+        "selected_city_names": ["Munich", "Leipzig"],
+        "inspected_cities": ["munich", "leipzig"],
+        "inspected_city_names": ["Munich", "Leipzig"],
         "enrichment": {"status": "success", "notes": ["not sent to writer"]},
         "final": str(paths.final_output),
         "markdown": {
             "status": "success",
             "analysis_mode": "aggregate",
-            "selected_city_names": ["Munich", "Leipzig"],
-            "inspected_city_names": ["Munich", "Leipzig"],
-            "selected_cities": ["munich", "leipzig"],
-            "inspected_cities": ["munich", "leipzig"],
             "accepted_chunk_ids": ["chunk_munich_1", "chunk_leipzig_1"],
             "rejected_chunk_ids": ["chunk_munich_9"],
             "decision_audit": {"accepted_total": 2, "rejected_total": 1},
@@ -1528,7 +1579,8 @@ def test_api_writer_context_export_returns_writer_safe_json_bundle(tmp_path: Pat
 
     assert payload["research_question"] == "What retrofit evidence was selected?"
     assert payload["analysis_mode"] == "aggregate"
-    assert payload["selected_cities"] == ["Munich", "Leipzig"]
+    assert payload["selected_cities"] == ["munich", "leipzig"]
+    assert payload["selected_city_names"] == ["Munich", "Leipzig"]
     assert "sql" not in payload
     markdown_payload = payload["markdown"]
     assert markdown_payload["excerpt_count"] == 2
@@ -1554,15 +1606,14 @@ def test_api_writer_context_markdown_export_remains_available(tmp_path: Path) ->
         "research_question": "What retrofit evidence was selected?",
         "analysis_mode": "aggregate",
         "selected_cities": ["munich", "leipzig"],
+        "selected_city_names": ["Munich", "Leipzig"],
+        "inspected_cities": ["munich", "leipzig"],
+        "inspected_city_names": ["Munich", "Leipzig"],
         "enrichment": {"status": "success", "notes": ["not sent to writer"]},
         "final": str(paths.final_output),
         "markdown": {
             "status": "success",
             "analysis_mode": "aggregate",
-            "selected_city_names": ["Munich", "Leipzig"],
-            "inspected_city_names": ["Munich", "Leipzig"],
-            "selected_cities": ["munich", "leipzig"],
-            "inspected_cities": ["munich", "leipzig"],
             "accepted_chunk_ids": ["chunk_munich_1", "chunk_leipzig_1"],
             "decision_audit": {"accepted_total": 2, "rejected_total": 1},
             "excerpt_count": 1,
@@ -1680,11 +1731,13 @@ def test_api_output_returns_conflict_while_running(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         started.set()
         release.wait(timeout=2)
         return _write_success_artifacts(question=question, run_id=run_id, config=config)
@@ -1725,10 +1778,12 @@ def test_api_failed_run(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         raise RuntimeError("simulated pipeline failure")
 
     monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
@@ -1779,12 +1834,14 @@ def test_api_failed_run_uses_persisted_decision_error(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert isinstance(log_llm_payload, bool)
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         return _write_failed_artifacts_with_decision_error(
             question=question,
             run_id=run_id,
@@ -1840,12 +1897,14 @@ def test_api_failed_run_preserves_persisted_failure_details_after_exception(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert isinstance(log_llm_payload, bool)
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         _write_failed_artifacts_with_decision_error(
             question=question,
             run_id=run_id,
@@ -1878,7 +1937,7 @@ def test_api_failed_run_preserves_persisted_failure_details_after_exception(
         assert terminal["error"]["message"] == error_message
 
     run_log_payload = json.loads(
-        (runs_dir / "run-preserved-failure" / "run.json").read_text(encoding="utf-8")
+        (runs_dir / "run-preserved-failure" / "api_state.json").read_text(encoding="utf-8")
     )
     assert run_log_payload["finish_reason"] == finish_reason
     assert run_log_payload["error"]["code"] == error_code
@@ -1903,11 +1962,13 @@ def test_api_failed_run_writes_error_log_snapshot_for_executor_failures(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         _write_started_artifacts_with_error_log_input(
             question=question,
             run_id=run_id,
@@ -1941,11 +2002,10 @@ def test_api_failed_run_writes_error_log_snapshot_for_executor_failures(
     assert " - ERROR - writer crashed" in error_lines
     assert " - CRITICAL - aborting run" in error_lines
 
-    run_log_payload = json.loads((run_dir / "run.json").read_text(encoding="utf-8"))
+    run_log_payload = json.loads((run_dir / "api_state.json").read_text(encoding="utf-8"))
     assert run_log_payload["status"] == "failed"
     assert run_log_payload["finish_reason"] == "run_execution_error"
     assert run_log_payload["error"]["code"] == "RUN_EXECUTION_ERROR"
-    assert run_log_payload["artifacts"]["error_log"] == str(error_log_path)
 
 
 def test_api_run_filters_markdown_by_selected_cities(
@@ -1969,11 +2029,14 @@ def test_api_run_filters_markdown_by_selected_cities(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities == ["Berlin"]
+        assert vector_update_docs_dir == markdown_dir
+        assert config.markdown_dir != vector_update_docs_dir
         captured_files.extend(
             sorted(path.name for path in config.markdown_dir.rglob("*.md"))
         )
@@ -2022,12 +2085,14 @@ def test_api_run_preserves_display_city_names_while_deduping_aliases(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert isinstance(log_llm_payload, bool)
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities == ["Istanbul"]
+        assert vector_update_docs_dir == markdown_dir
         return _write_success_artifacts(question=question, run_id=run_id, config=config)
 
     monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
@@ -2067,10 +2132,12 @@ def test_api_run_analysis_mode_defaults_and_passes_explicit_value(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert selected_cities is None
         assert api_key_override is None
+        assert vector_update_docs_dir == markdown_dir
         captured_modes.append(analysis_mode)
         return _write_success_artifacts(question=question, run_id=run_id, config=config)
 
@@ -2123,11 +2190,11 @@ def test_api_list_runs_ignores_stale_api_state_and_uses_artifact_folder(tmp_path
     state_dir.mkdir(parents=True, exist_ok=True)
     legacy_run_dir = runs_dir / "legacy-run_01"
     legacy_run_dir.mkdir(parents=True, exist_ok=True)
-    run_log_path = legacy_run_dir / "run.json"
+    api_state_path = legacy_run_dir / "api_state.json"
     started_at = datetime.now(timezone.utc).isoformat()
     completed_at = datetime.now(timezone.utc).isoformat()
 
-    run_log_path.write_text(
+    api_state_path.write_text(
         json.dumps(
             {
                 "run_id": "legacy-run_01",
@@ -2136,10 +2203,6 @@ def test_api_list_runs_ignores_stale_api_state_and_uses_artifact_folder(tmp_path
                 "started_at": started_at,
                 "completed_at": completed_at,
                 "finish_reason": "completed (write)",
-                "artifacts": {
-                    "context_bundle": str(legacy_run_dir / "context_bundle.json"),
-                    "final_output": str(legacy_run_dir / "final.md"),
-                },
             },
             ensure_ascii=True,
             indent=2,
@@ -2154,12 +2217,9 @@ def test_api_list_runs_ignores_stale_api_state_and_uses_artifact_folder(tmp_path
         "completed_at": completed_at,
         "finish_reason": "completed (write)",
         "error": None,
-        "final_output_path": str(legacy_run_dir / "final.md"),
-        "context_bundle_path": str(legacy_run_dir / "context_bundle.json"),
-        "run_log_path": str(run_log_path),
     }
     # Stale API-state alias should be ignored in favor of artifact folder discovery.
-    (state_dir / "legacy-run.json").write_text(
+    (state_dir / "legacy-api_state.json").write_text(
         json.dumps({"run_id": "legacy-run", **shared_payload}, ensure_ascii=True, indent=2),
         encoding="utf-8",
     )
@@ -2198,10 +2258,12 @@ def test_api_run_supports_header_api_key_override(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert run_id is not None
         assert analysis_mode == "aggregate"
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         captured_api_key["value"] = api_key_override
         return _write_success_artifacts(question=question, run_id=run_id, config=config)
 
@@ -2240,10 +2302,12 @@ def test_api_key_error_is_reported_with_sanitized_message(
         analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
+        vector_update_docs_dir: Path | None = None,
     ) -> RunPaths:
         assert analysis_mode == "aggregate"
         assert api_key_override is None
         assert selected_cities is None
+        assert vector_update_docs_dir == markdown_dir
         raise RuntimeError(
             "Incorrect API key provided: sk-or-v1-abcdefghijklmnopqrstuv0123456789"
         )

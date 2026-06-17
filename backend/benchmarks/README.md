@@ -58,7 +58,7 @@ to measure information loss across retrieval, markdown extraction, and final wri
 - Stage B uses `excerpts[].source_chunk_ids` for extraction recall and an LLM
   fact judge for fact extraction rate.
 - Stage C uses an LLM fact judge on `final.md` plus citation coverage derived
-  from cited `ref_id` values mapped through `references.json`.
+  from cited `ref_id` values mapped through `accepted_excerpts.json`.
 
 Gold fixtures live in `tests/fixtures/benchmark_gold.json` and use the versioned
 schema `{"version": 1, "cases": [...]}` with `case_id`, `question`,
@@ -73,8 +73,9 @@ schema `{"version": 1, "cases": [...]}` with `case_id`, `question`,
   storing both `chunk_id` and `chunk_text` in the fixture JSON.
 
 Every benchmark case executes the live pipeline and is then scored from the
-freshly produced `markdown/retrieval.json`, `markdown/excerpts.json`,
-`markdown/references.json`, and `final.md` artifacts.
+freshly produced `stage_files/003_retrieval/retrieval.json`,
+`stage_files/006_markdown_extraction/accepted_excerpts.json`, and `final.md`
+artifacts.
 
 Per-case `benchmark_report.json` chunk diagnostics keep the canonical gold
 `chunk_id` and, when different, the `matched_chunk_id` that actually satisfied

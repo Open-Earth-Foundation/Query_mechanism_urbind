@@ -113,6 +113,7 @@ def main() -> None:
             config=config,
             log_llm_payload=args.log_llm_payload,
             selected_cities=args.city,
+            config_path=Path(args.config),
         )
         elapsed = time.perf_counter() - start
         logger.info("Completed question in %.2f seconds", elapsed)

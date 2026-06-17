@@ -26,37 +26,30 @@ def ensure_run_dir(runs_dir: Path, run_id: str) -> Path:
 @dataclass(frozen=True)
 class RunPaths:
     base_dir: Path
-    run_log: Path
+    api_state: Path
+    manifest: Path
+    summary_events: Path
+    stages_dir: Path
+    stage_files_dir: Path
     run_summary: Path
     error_log: Path
     context_bundle: Path
-    research_question: Path
-    markdown_dir: Path
-    markdown_excerpts: Path
-    markdown_accepted_excerpts: Path
-    markdown_rejected_excerpts: Path
-    markdown_decision_audit: Path
-    markdown_references: Path
     final_output: Path
 
 
 def create_run_paths(runs_dir: Path, run_id: str, context_bundle_name: str) -> RunPaths:
     base_dir = ensure_run_dir(runs_dir, run_id)
-    markdown_dir = base_dir / "markdown"
 
     return RunPaths(
         base_dir=base_dir,
-        run_log=base_dir / "run.json",
+        api_state=base_dir / "api_state.json",
+        manifest=base_dir / "manifest.json",
+        summary_events=base_dir / "summary.jsonl",
+        stages_dir=base_dir / "stages",
+        stage_files_dir=base_dir / "stage_files",
         run_summary=base_dir / "run_summary.txt",
         error_log=base_dir / "error_log.txt",
         context_bundle=base_dir / context_bundle_name,
-        research_question=base_dir / "research_question.json",
-        markdown_dir=markdown_dir,
-        markdown_excerpts=markdown_dir / "excerpts.json",
-        markdown_accepted_excerpts=markdown_dir / "accepted_excerpts.json",
-        markdown_rejected_excerpts=markdown_dir / "rejected_excerpts.json",
-        markdown_decision_audit=markdown_dir / "decision_audit.json",
-        markdown_references=markdown_dir / "references.json",
         final_output=base_dir / "final.md",
     )
 

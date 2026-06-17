@@ -1,4 +1,4 @@
-"""Helpers for loading persisted markdown reference artifacts."""
+"""Helpers for deriving markdown reference records from accepted excerpts."""
 
 from __future__ import annotations
 
@@ -8,6 +8,7 @@ from pathlib import Path
 
 from backend.api.models import RunReferenceItem
 from backend.modules.orchestrator.utils.references import build_markdown_references
+from backend.utils.artifact_manifest import resolve_manifest_alias
 
 logger = logging.getLogger(__name__)
 
@@ -53,16 +54,14 @@ def build_reference_item(record: dict[str, object], include_quote: bool) -> RunR
 
 
 def load_reference_records(artifact_dir: Path, source_id: str) -> list[dict[str, object]]:
-    """Load reference records from persisted references or excerpt artifacts."""
-    references_path = artifact_dir / "markdown" / "references.json"
-    if references_path.exists():
-        payload = _load_json_object(references_path)
-        if payload is not None:
-            records = coerce_reference_records(payload.get("references"))
-            if records:
-                return records
-
-    excerpts_path = artifact_dir / "markdown" / "excerpts.json"
+    """Derive reference records from the accepted markdown excerpt artifact."""
+    excerpts_path = (
+        resolve_manifest_alias(artifact_dir, "markdown_excerpts")
+        or artifact_dir
+        / "stage_files"
+        / "006_markdown_extraction"
+        / "accepted_excerpts.json"
+    )
     payload = _load_json_object(excerpts_path)
     if payload is None:
         return []

@@ -295,10 +295,11 @@ class NonEstimableRecord(BaseModel):
 class EnrichmentMeta(BaseModel):
     created_at: datetime
     gap_analyst_model: str
-    assumptions_estimator_model: str
     total_gaps: int
     estimable_count: int
     non_estimable_count: int
+    classified_non_estimable_field_count: int = 0
+    non_estimable_output_count: int = 0
     web_findings_count: int = 0
     external_evidence_count: int = 0
     elapsed_seconds: float

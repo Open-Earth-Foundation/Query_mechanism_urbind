@@ -12,7 +12,7 @@ Inputs:
 - OPENROUTER_API_KEY (env var)
 
 Outputs:
-- output/<run_id>/run.json and artifact files
+- output/<run_id>/api_state.json and artifact files
 - output/<run_id>/final.md
 
 Usage (from project root):
@@ -25,6 +25,7 @@ from __future__ import annotations
 
 import argparse
 import logging
+import subprocess
 from pathlib import Path
 
 from backend.modules.orchestrator.module import run_pipeline
@@ -32,6 +33,28 @@ from backend.utils.config import load_config
 from backend.utils.logging_config import setup_logger
 
 logger = logging.getLogger(__name__)
+
+
+def _build_invocation_command(args: argparse.Namespace) -> str:
+    """Render the direct CLI invocation in a stable rerunnable form."""
+    command = [
+        "python",
+        "-m",
+        "backend.scripts.run_pipeline",
+        "--question",
+        args.question,
+    ]
+    if args.run_id:
+        command.extend(["--run-id", args.run_id])
+    if args.config != "llm_config.yaml":
+        command.extend(["--config", args.config])
+    if args.markdown_path:
+        command.extend(["--markdown-path", args.markdown_path])
+    for city in args.city or []:
+        command.extend(["--city", city])
+    if args.log_llm_payload:
+        command.append("--log-llm-payload")
+    return subprocess.list2cmdline(command)
 
 
 def parse_args() -> argparse.Namespace:
@@ -74,6 +97,8 @@ def main() -> None:
         run_id=args.run_id,
         log_llm_payload=args.log_llm_payload,
         selected_cities=args.city,
+        config_path=Path(args.config),
+        invocation_command=_build_invocation_command(args),
     )
 
 

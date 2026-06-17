@@ -26,6 +26,7 @@ from backend.modules.web_researcher.models import (
 from backend.utils.config import AppConfig
 
 logger = logging.getLogger(__name__)
+EXTERNAL_SOURCE_SEARCH_AUDIT_FILENAME = "external_source_search_audit.json"
 
 
 class ExternalSourceToolError(ValueError):
@@ -736,8 +737,8 @@ class ExternalSearchSession:
             "no_evidence": [record.model_dump(mode="json") for record in self._no_evidence],
             "tool_calls": self._tool_calls,
         }
-        target = self.artifact_dir / "external_evidence.json"
-        tmp = self.artifact_dir / "external_evidence.tmp"
+        target = self.artifact_dir / EXTERNAL_SOURCE_SEARCH_AUDIT_FILENAME
+        tmp = self.artifact_dir / "external_source_search_audit.tmp"
         tmp.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
         tmp.replace(target)
 
@@ -1209,6 +1210,7 @@ def _sorted_distinct(values: Any) -> list[str]:
 
 
 __all__ = [
+    "EXTERNAL_SOURCE_SEARCH_AUDIT_FILENAME",
     "ExternalSearchLimits",
     "ExternalSearchSession",
     "ExternalSourceToolError",

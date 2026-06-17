@@ -140,7 +140,7 @@ vector_store:
   retrieval_max_chunks_per_city: 300
   context_window_chunks: 0
   table_context_window_chunks: 1
-  auto_update_on_run: false
+  auto_update_on_run: true
   index_manifest_path: ".chroma/index_manifest.json"
 retry:
   max_attempts: 3

@@ -12,6 +12,7 @@ from backend.modules.orchestrator.utils.error_handlers import (
 )
 from backend.modules.orchestrator.utils.io import write_final_output
 from backend.modules.writer.models import WriterOutput
+from backend.services.progress_tracker import ProgressTracker
 from backend.services.run_logger import RunLogger
 from backend.utils.config import AppConfig
 from backend.utils.paths import RunPaths
@@ -63,6 +64,7 @@ def handle_write_decision(
     config: AppConfig,
     api_key: str,
     log_llm_payload: bool = False,
+    progress: ProgressTracker | None = None,
 ) -> RunPaths | None:
     """
     Execute write decision to generate final output.
@@ -99,12 +101,55 @@ def handle_write_decision(
         )
         terminal_status, finish_reason = _resolve_writer_completion_state(writer_output)
         _record_writer_diagnostics(run_logger, paths, writer_output)
+        coverage = writer_output.citation_coverage
+        if coverage is not None and progress is not None:
+            progress.start_step(
+                "writer_citation_coverage",
+                "Recording writer citation coverage",
+            )
+            progress.add_item(
+                "writer_citation_coverage",
+                f"Citation coverage: {coverage.coverage_ratio}",
+                metadata={
+                    "status": coverage.status,
+                    "confirmed_city_count": coverage.coverage_confirmed,
+                    "required_city_count": coverage.coverage_required,
+                },
+            )
+            progress.complete_step("writer_citation_coverage")
         write_final_output(
             question,
             writer_output.content,
             paths,
             run_logger,
             config,
+        )
+        run_logger.write_stage_detail(
+            "writer",
+            {
+                "inputs": {
+                    "question": question,
+                    "analysis_mode": context_bundle.get("analysis_mode"),
+                },
+                "outputs": {
+                    "final_output": run_logger.artifact_label(paths.final_output),
+                    "citation_coverage": (
+                        coverage.model_dump() if coverage is not None else None
+                    ),
+                },
+                "metrics": {
+                    "final_output_chars": len(writer_output.content),
+                    "citation_coverage_ratio": (
+                        coverage.coverage_ratio if coverage is not None else None
+                    ),
+                    "confirmed_city_count": (
+                        coverage.coverage_confirmed if coverage is not None else None
+                    ),
+                    "required_city_count": (
+                        coverage.coverage_required if coverage is not None else None
+                    ),
+                },
+            },
         )
         run_logger.finalize(
             terminal_status,

@@ -17,6 +17,7 @@ RunStatus = Literal[
 ]
 AnalysisMode = Literal["aggregate", "city_by_city"]
 QueryMode = Literal["standard", "dev"]
+VectorStoreWarmupStatus = Literal["pending", "skipped", "running", "completed", "failed"]
 
 
 class RunError(BaseModel):
@@ -53,6 +54,20 @@ class CreateRunResponse(BaseModel):
     status_url: str
     output_url: str
     context_url: str
+
+
+class VectorStoreWarmupResponse(BaseModel):
+    """Status payload for the API startup vector-store warm-up."""
+
+    status: VectorStoreWarmupStatus
+    enabled: bool
+    auto_update_on_run: bool
+    started_at: datetime | None = None
+    completed_at: datetime | None = None
+    message: str
+    error: str | None = None
+    stats: dict[str, object] | None = None
+    latest_artifact: str | None = None
 
 
 class PipelineStepItem(BaseModel):

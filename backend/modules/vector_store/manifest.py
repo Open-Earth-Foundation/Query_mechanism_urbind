@@ -39,6 +39,8 @@ def default_manifest() -> dict[str, Any]:
         "embedding_model": "",
         "embedding_chunk_tokens": 0,
         "embedding_chunk_overlap_tokens": 0,
+        "index_settings": {},
+        "index_settings_signature": "",
         "files": {},
     }
 

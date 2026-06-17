@@ -47,6 +47,7 @@ from backend.api.services.run_store import (
     SUCCESS_STATUSES,
 )
 from backend.api.services.source_chunks import load_source_chunks, normalize_chunk_ids
+from backend.api.services.vector_store_warmup import VectorStoreWarmup
 from backend.modules.orchestrator.utils.references import is_valid_ref_id
 from backend.utils.config import AppConfig, load_cached_config, load_config
 
@@ -95,6 +96,12 @@ def _get_markdown_dir(request: Request) -> Path:
             detail="Markdown directory is not initialized.",
         )
     return markdown_dir
+
+
+def _get_vector_store_warmup(request: Request) -> VectorStoreWarmup | None:
+    """Return optional vector-store warm-up service from FastAPI app state."""
+    warmup = getattr(request.app.state, "vector_store_warmup", None)
+    return warmup if isinstance(warmup, VectorStoreWarmup) else None
 
 
 def _load_request_config(request: Request) -> AppConfig:
@@ -155,6 +162,12 @@ def create_run(
         sum(1 for query in (payload.query_2, payload.query_3) if query and query.strip()),
         x_openrouter_api_key is not None,
     )
+    warmup = _get_vector_store_warmup(request)
+    if warmup is not None and warmup.is_blocking_runs():
+        raise HTTPException(
+            status_code=status.HTTP_409_CONFLICT,
+            detail="Vector store update in progress. Please retry after it completes.",
+        )
     run_executor = _get_run_executor(request)
     api_key_override = _resolve_api_key_override(x_openrouter_api_key)
     try:
@@ -625,8 +638,8 @@ def _load_writer_export_context(run_id: str, request: Request) -> dict[str, obje
 
 def _resolve_run_dir(record: RunRecord, runs_dir: Path, run_id: str) -> Path:
     """Resolve run artifact directory from available run record paths."""
-    if record.run_log_path is not None:
-        return record.run_log_path.parent
+    if record.api_state_path is not None:
+        return record.api_state_path.parent
     if record.context_bundle_path is not None:
         return record.context_bundle_path.parent
     if record.final_output_path is not None:

@@ -210,19 +210,25 @@ def _slim_context_for_gap_analysis(context_bundle: dict[str, Any]) -> dict[str, 
     need chunk IDs, retrieval distances, batch plans, or decision audit data.
     """
     slim: dict[str, Any] = {}
-    for key in ("research_question", "original_question", "analysis_mode", "query_mode"):
+    for key in (
+        "research_question",
+        "original_question",
+        "analysis_mode",
+        "query_mode",
+        "city_scope_mode",
+        "selected_cities",
+        "selected_city_names",
+        "inspected_cities",
+        "inspected_city_names",
+    ):
         if key in context_bundle:
             slim[key] = context_bundle[key]
 
-    # Markdown: keep excerpts and city lists, drop chunk-level metadata
+    # Markdown: keep excerpts only, drop run-level city scope metadata.
     markdown = context_bundle.get("markdown")
     if isinstance(markdown, dict):
         slim_md: dict[str, Any] = {}
-        for keep_key in (
-            "excerpts", "excerpt_count", "inspected_cities",
-            "inspected_city_names", "selected_cities", "selected_city_names",
-            "analysis_mode",
-        ):
+        for keep_key in ("excerpts", "excerpt_count", "analysis_mode"):
             if keep_key in markdown:
                 slim_md[keep_key] = markdown[keep_key]
         slim["markdown"] = slim_md

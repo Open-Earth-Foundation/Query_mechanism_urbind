@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "event_index": 7,
+  "event_type": "stage_completed",
+  "run_id": "smoke_aachen_09",
+  "step_name": "markdown_context_handoff",
+  "created_at": "2026-06-11T12:03:39.097978+00:00",
+  "inputs": {
+    "analysis_mode": "aggregate"
+  },
+  "outputs": {
+    "context_bundle_snapshot": "stage_files/007_markdown_context_handoff/context_bundle_after_markdown.json",
+    "markdown_context_payload": "stage_files/007_markdown_context_handoff/markdown_context_payload.json"
+  },
+  "metrics": {
+    "markdown_excerpt_count": 13,
+    "context_bundle_top_level_keys": 12
+  },
+  "stage_number": 7
+}

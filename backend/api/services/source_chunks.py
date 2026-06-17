@@ -9,6 +9,7 @@ from pathlib import Path
 from backend.api.models import SourceChunkItem
 from backend.modules.markdown_researcher.services import build_markdown_chunks_for_file
 from backend.modules.vector_store.chroma_store import ChromaStore
+from backend.utils.artifact_manifest import resolve_manifest_alias
 from backend.utils.config import AppConfig
 from backend.utils.markdown_files import list_markdown_files
 
@@ -152,8 +153,17 @@ def _load_markdown_chunks(
 
 
 def _load_chunk_path_hints(run_dir: Path) -> dict[str, Path]:
-    """Read chunk-to-path hints from run-local markdown batch artifacts."""
-    batches_path = run_dir / "markdown" / "batches.json"
+    """Read chunk-to-path hints from run-local source index or batch artifacts."""
+    source_index_path = resolve_manifest_alias(run_dir, "source_chunk_index")
+    if source_index_path is not None:
+        indexed_paths = _load_chunk_path_hints_from_source_index(source_index_path)
+        if indexed_paths:
+            return indexed_paths
+
+    batches_path = (
+        resolve_manifest_alias(run_dir, "markdown_batches")
+        or run_dir / "stage_files" / "005_markdown_batching" / "batches.json"
+    )
     if not batches_path.exists():
         return {}
 
@@ -185,6 +195,31 @@ def _load_chunk_path_hints(run_dir: Path) -> dict[str, Path]:
             candidate = raw_path.strip()
             if not candidate:
                 continue
+            chunk_paths[chunk_id] = Path(candidate)
+    return chunk_paths
+
+
+def _load_chunk_path_hints_from_source_index(source_index_path: Path) -> dict[str, Path]:
+    """Read chunk-to-path hints from the standardized source chunk index."""
+    try:
+        payload = json.loads(source_index_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    if not isinstance(payload, dict):
+        return {}
+    source_chunks = payload.get("source_chunks")
+    if not isinstance(source_chunks, list):
+        return {}
+    chunk_paths: dict[str, Path] = {}
+    for chunk in source_chunks:
+        if not isinstance(chunk, dict):
+            continue
+        chunk_id = chunk.get("chunk_id")
+        raw_path = chunk.get("path")
+        if not isinstance(chunk_id, str) or not isinstance(raw_path, str):
+            continue
+        candidate = raw_path.strip()
+        if candidate:
             chunk_paths[chunk_id] = Path(candidate)
     return chunk_paths
 

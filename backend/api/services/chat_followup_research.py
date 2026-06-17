@@ -23,9 +23,9 @@ from backend.modules.vector_store.retriever import (
     list_indexed_city_names,
     retrieve_chunks_for_queries,
 )
+from backend.utils.artifact_writer import ArtifactWriter
 from backend.utils.city_normalization import format_city_display_name, normalize_city_key
 from backend.utils.config import AppConfig
-from backend.utils.json_io import write_json
 from backend.utils.tokenization import count_tokens
 
 logger = logging.getLogger(__name__)
@@ -125,8 +125,6 @@ def run_chat_followup_search(
             "status": "error",
             "excerpts": [],
             "excerpt_count": 0,
-            "selected_city_names": [city_name],
-            "inspected_city_names": [],
             "source_mode": "error",
             "error": {
                 "code": _classify_followup_error(exc),
@@ -239,9 +237,8 @@ def _persist_followup_result(
     excerpt_records = _coerce_excerpt_records(markdown_payload.get("excerpts"))
     excerpt_count = len(excerpt_records)
     enriched_excerpts = excerpt_records
-    references_payload: dict[str, object] = {"references": []}
     if excerpt_records:
-        enriched_excerpts, references_payload = build_markdown_references(
+        enriched_excerpts, _references_payload = build_markdown_references(
             run_id=bundle_id,
             excerpts=excerpt_records,
         )
@@ -249,9 +246,12 @@ def _persist_followup_result(
     markdown_bundle = dict(markdown_payload)
     markdown_bundle["excerpts"] = enriched_excerpts
     markdown_bundle["excerpt_count"] = excerpt_count
-    markdown_bundle["selected_city_names"] = [target_city]
-    markdown_bundle["inspected_city_names"] = [target_city] if excerpt_count > 0 else []
     markdown_bundle["source_mode"] = source_mode
+    artifact_writer = ArtifactWriter(bundle_dir, bundle_id)
+    target_city_key = normalize_city_key(target_city)
+    selected_city_keys = [target_city_key] if target_city_key else []
+    inspected_city_keys = [target_city_key] if excerpt_count > 0 and target_city_key else []
+    inspected_city_names = [target_city] if excerpt_count > 0 else []
 
     context_bundle = {
         "bundle_id": bundle_id,
@@ -264,31 +264,58 @@ def _persist_followup_result(
         "retrieval_queries": retrieval_queries,
         "final": None,
         "analysis_mode": "aggregate",
+        "city_scope_mode": "selected_cities",
+        "selected_cities": selected_city_keys,
+        "selected_city_names": [target_city],
+        "inspected_cities": inspected_city_keys,
+        "inspected_city_names": inspected_city_names,
         "markdown": markdown_bundle,
     }
 
     context_bundle_path = bundle_dir / "context_bundle.json"
-    markdown_excerpts_path = bundle_dir / "markdown" / "excerpts.json"
-    write_json(context_bundle_path, context_bundle, ensure_ascii=False, default=str)
-    write_json(
-        markdown_excerpts_path,
-        {"excerpts": enriched_excerpts},
-        ensure_ascii=False,
-        default=str,
+    artifact_writer.register_file("context_bundle", context_bundle_path, artifact_type="runtime_state")
+    artifact_writer.write_step_detail(
+        "query_preparation",
+        {
+            "inputs": {"question": research_question, "target_city": target_city},
+            "outputs": {"retrieval_queries": retrieval_queries},
+            "metrics": {"retrieval_query_count": len(retrieval_queries)},
+        },
     )
-    write_json(
-        bundle_dir / "markdown" / "references.json",
-        references_payload,
-        ensure_ascii=False,
-        default=str,
+    markdown_excerpts_path = artifact_writer.write_stage_file(
+        "markdown_extraction",
+        "accepted_excerpts.json",
+        {"excerpts": enriched_excerpts, "excerpt_count": excerpt_count},
+        alias="markdown_excerpts",
     )
     if retrieval_payload is not None:
-        write_json(
-            bundle_dir / "markdown" / "retrieval.json",
+        retrieval_path = artifact_writer.write_stage_file(
+            "retrieval",
+            "retrieval.json",
             retrieval_payload,
-            ensure_ascii=False,
-            default=str,
+            alias="retrieval",
         )
+        artifact_writer.write_step_detail(
+            "retrieval",
+            {
+                "inputs": {"retrieval_queries": retrieval_queries, "target_city": target_city},
+                "outputs": {"retrieval": retrieval_path.relative_to(bundle_dir).as_posix()},
+                "metrics": {
+                    "retrieved_count": retrieval_payload.get("retrieved_count"),
+                },
+            },
+        )
+
+    artifact_writer.write_step_detail(
+        "markdown_extraction",
+        {
+            "inputs": {"source_mode": source_mode, "target_city": target_city},
+            "outputs": {
+                "markdown_excerpts": markdown_excerpts_path.relative_to(bundle_dir).as_posix(),
+            },
+            "metrics": {"excerpt_count": excerpt_count},
+        },
+    )
 
     prompt_context_tokens, prompt_context_kind = compute_prompt_context_cache(
         question=research_question,
@@ -302,6 +329,13 @@ def _persist_followup_result(
         context_bundle=context_bundle,
         prompt_context_tokens=prompt_context_tokens,
         prompt_context_kind=prompt_context_kind,
+    )
+    artifact_writer.write_manifest(
+        {
+            "status": markdown_payload.get("status"),
+            "source": "chat_followup",
+            "target_city": target_city,
+        }
     )
     bundle_text = json.dumps(context_bundle, ensure_ascii=False, default=str)
     error_code = _extract_error_code(markdown_bundle.get("error"))

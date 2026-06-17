@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "event_index": 13,
+  "event_type": "stage_completed",
+  "run_id": "smoke_aachen_09",
+  "step_name": "writer",
+  "created_at": "2026-06-11T12:10:01.745093+00:00",
+  "inputs": {
+    "question": "What does Aachen do for rooftop solar?",
+    "analysis_mode": "aggregate"
+  },
+  "outputs": {
+    "final_output": "final.md",
+    "citation_coverage": {
+      "status": "confirmed",
+      "attempt": 1,
+      "max_attempts": 2,
+      "coverage_confirmed": 1,
+      "coverage_required": 1,
+      "coverage_ratio": "1/1",
+      "missing_cities": [],
+      "analysis_mode": "aggregate"
+    }
+  },
+  "metrics": {
+    "final_output_chars": 10504,
+    "citation_coverage_ratio": "1/1",
+    "confirmed_city_count": 1,
+    "required_city_count": 1
+  },
+  "stage_number": 14
+}

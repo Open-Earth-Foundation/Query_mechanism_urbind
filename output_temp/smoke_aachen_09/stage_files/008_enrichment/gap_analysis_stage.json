@@ -1,0 +1,91 @@
+{
+  "status": "completed",
+  "flags": {
+    "use_split_gap_flow": true
+  },
+  "inputs": {
+    "question": "What does Aachen do for rooftop solar?",
+    "has_markdown_context": true
+  },
+  "outputs": {
+    "query_fields": [
+      {
+        "field": "municipal_rooftop_pv_capacity_target",
+        "classification": "estimable_numerical",
+        "searchable": true,
+        "rationale": "A concrete MW/kW target for PV on city-owned roofs can be estimated from peer-city plans or municipal targets.",
+        "scope": "municipal"
+      },
+      {
+        "field": "private_rooftop_pv_capacity_target",
+        "classification": "estimable_numerical",
+        "searchable": true,
+        "rationale": "A rooftop PV deployment target for private buildings is a numeric quantity that can be estimated from comparable city policies.",
+        "scope": "private"
+      },
+      {
+        "field": "solar_requirement_new_buildings",
+        "classification": "non_estimable",
+        "searchable": true,
+        "rationale": "Whether Aachen mandates solar on new buildings is a legal/policy detail that is city-specific rather than a generic numeric quantity.",
+        "scope": "private"
+      },
+      {
+        "field": "solar_requirement_major_renovations",
+        "classification": "non_estimable",
+        "searchable": true,
+        "rationale": "Whether solar is required on major roof renovations depends on the exact local legal text and exemptions, not a peer-derived proxy.",
+        "scope": "private"
+      },
+      {
+        "field": "rooftop_solar_subsidy_program",
+        "classification": "non_estimable",
+        "searchable": true,
+        "rationale": "The existence and design of a city subsidy or grant program is qualitative and city-specific.",
+        "scope": "municipal"
+      },
+      {
+        "field": "rooftop_solar_advisory_program",
+        "classification": "non_estimable",
+        "searchable": true,
+        "rationale": "City-run advice, outreach, or technical support programs are policy descriptions rather than estimable quantities.",
+        "scope": "municipal"
+      },
+      {
+        "field": "rooftop_solar_permitting_streamlining",
+        "classification": "non_estimable",
+        "searchable": true,
+        "rationale": "Permit-process changes, expedited review, or administrative simplification are procedural and legally specific, not numerical.",
+        "scope": "private"
+      }
+    ],
+    "city_gaps": [
+      {
+        "city": "Aachen",
+        "blank_fields": [],
+        "stale_flags": [
+          "municipal_rooftop_pv_capacity_target",
+          "private_rooftop_pv_capacity_target"
+        ],
+        "bundled_fields": [],
+        "search_priority": "medium"
+      }
+    ],
+    "non_estimable_fields": [
+      "solar_requirement_new_buildings",
+      "solar_requirement_major_renovations",
+      "rooftop_solar_subsidy_program",
+      "rooftop_solar_advisory_program",
+      "rooftop_solar_permitting_streamlining"
+    ]
+  },
+  "metrics": {
+    "query_field_count": 7,
+    "city_gap_count": 1,
+    "gap_field_count": 2,
+    "blank_field_count": 0,
+    "stale_field_count": 2,
+    "bundled_field_count": 0,
+    "non_estimable_field_count": 5
+  }
+}

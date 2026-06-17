@@ -395,10 +395,11 @@ def _build_context_summary(context_bundle: dict[str, Any]) -> dict[str, Any]:
         if key in context_bundle:
             summary[key] = context_bundle[key]
 
+    summary["cities_inspected"] = context_bundle.get("inspected_city_names", [])
+    summary["cities_selected"] = context_bundle.get("selected_city_names", [])
+
     markdown = context_bundle.get("markdown")
     if isinstance(markdown, dict):
-        summary["cities_inspected"] = markdown.get("inspected_city_names", [])
-        summary["cities_selected"] = markdown.get("selected_city_names", [])
         summary["excerpt_count"] = markdown.get("excerpt_count", 0)
 
     return summary
