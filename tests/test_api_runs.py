@@ -322,6 +322,7 @@ def test_api_vector_store_status_reports_startup_warmup_state(tmp_path: Path) ->
     assert isinstance(payload["enabled"], bool)
     assert isinstance(payload["auto_update_on_run"], bool)
     assert isinstance(payload["message"], str)
+    assert "latest_artifact" in payload
 
 
 def test_api_create_run_rejects_while_vector_store_warmup_running(

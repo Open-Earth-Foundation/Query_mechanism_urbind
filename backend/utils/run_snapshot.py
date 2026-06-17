@@ -124,6 +124,8 @@ def _serialize_update_stats(update_stats: object | None) -> dict[str, object] | 
         payload = asdict(update_stats)
     elif isinstance(update_stats, dict):
         payload = dict(update_stats)
+    elif hasattr(update_stats, "__dict__"):
+        payload = dict(vars(update_stats))
     else:
         return None
     return json.loads(json.dumps(payload, default=str))

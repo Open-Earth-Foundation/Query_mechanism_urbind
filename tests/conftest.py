@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import os
 from collections.abc import Iterator
 from pathlib import Path
 
@@ -11,6 +12,12 @@ import pytest
 from tests.support import build_test_app_config
 
 TEST_SESSION_SECRET = "0123456789abcdef0123456789abcdef"
+TEST_API_CORS_ORIGINS = "http://127.0.0.1:3000,http://localhost:3000"
+
+# backend.api.main creates a module-level FastAPI app during import. These
+# defaults must exist before API test modules are collected in clean CI shells.
+os.environ.setdefault("APP_SESSION_SECRET", TEST_SESSION_SECRET)
+os.environ.setdefault("API_CORS_ORIGINS", TEST_API_CORS_ORIGINS)
 
 
 def _allow_shared_session() -> dict[str, int | str]:
@@ -31,10 +38,7 @@ def shared_session_test_auth(
 ) -> Iterator[None]:
     """Bypass auth and isolate default API startup config for integration tests."""
     monkeypatch.setenv("APP_SESSION_SECRET", TEST_SESSION_SECRET)
-    monkeypatch.setenv(
-        "API_CORS_ORIGINS",
-        "http://127.0.0.1:3000,http://localhost:3000",
-    )
+    monkeypatch.setenv("API_CORS_ORIGINS", TEST_API_CORS_ORIGINS)
     config = build_test_app_config(
         runs_dir=tmp_path / "output",
         markdown_dir=tmp_path / "documents",

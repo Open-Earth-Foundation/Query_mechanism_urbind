@@ -66,7 +66,8 @@ class VectorStoreWarmupResponse(BaseModel):
     completed_at: datetime | None = None
     message: str
     error: str | None = None
-    stats: dict[str, int] | None = None
+    stats: dict[str, object] | None = None
+    latest_artifact: str | None = None
 
 
 class PipelineStepItem(BaseModel):

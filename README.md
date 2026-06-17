@@ -1110,6 +1110,7 @@ Artifacts are written under `output/<run_id>/`:
   - `canonical_research_query`: legacy field that mirrors the trimmed `original_question`.
   - `retrieval_queries`: retrieval-ready query list where index `0` is always the trimmed `original_question`.
   - `retrieval_query_1` / `retrieval_query_2` / `retrieval_query_3`: explicit query slots written for easier inspection and reproducibility.
+- `system/vector_store_warmup/latest.json`: latest API startup vector-store warm-up diagnostics, written outside user run folders under `output/system/`. It records trigger, status, timing, compact stats, changed/deleted file details, and the post-update vector-store snapshot; timestamped history is kept beside it as `system/vector_store_warmup/<timestamp>.json`.
 - `stage_files/006_markdown_extraction/accepted_excerpts.json`: accepted markdown evidence bundle. Includes `excerpts` (items with `ref_id`, `quote`, `city_name`, `city_key`, `partial_answer`, and `source_chunk_ids`) and `excerpt_count` (count of accepted excerpts). Run-level city scope lives on the root `context_bundle.json` and in stage inputs/outputs instead of inside the markdown-only payload. Stage B extraction recall uses the union of `excerpts[].source_chunk_ids`, and `/references` API responses are derived from this artifact.
 - `stage_files/006_markdown_extraction/rejected_chunks.json`: rejected markdown decision artifact with rejected chunk IDs, rejected-per-city grouping, status, and counts. Full chunk text for rejected IDs is available in `stage_files/003_retrieval/retrieval.json` when vector retrieval is enabled.
 - `stage_files/006_markdown_extraction/decision_audit.json`: run-level reconciliation counters and diagnostics (`retrieved_total`, accepted/rejected/unresolved totals, invariant status, and mismatch details).
@@ -1273,7 +1274,7 @@ Auto-refresh caveats:
 - It only scans top-level `documents/*.md` files.
 - Any content edit causes the entire changed file to be rechunked and re-embedded.
 - Config-driven rebuild detection covers index-shaping settings such as embedding model, embedding input limit, chunk size, chunk overlap, and table row grouping. Pure code changes in the chunking/indexing implementation still require an intentional rebuild if the manifest metadata alone cannot detect them.
-- In API mode, auto-refresh starts once in the background during startup. While that startup warm-up is running, new run submissions are blocked and the frontend shows a compact vector-store update banner. `/healthz` still reports the pod as healthy.
+- In API mode, auto-refresh starts once in the background during startup. While that startup warm-up is running, new run submissions are blocked and the frontend shows a compact vector-store update banner. `/healthz` still reports the pod as healthy. Startup diagnostics are persisted under `output/system/vector_store_warmup/` as both `latest.json` and timestamped history files.
 - Each vector-backed pipeline run still checks the index before retrieval, so Markdown changes after startup are picked up inside the run.
 - Single-pod deployments can enable `VECTOR_STORE_AUTO_UPDATE_ON_RUN=true` to keep the index fresh at startup and before each run. Multi-pod deployments should avoid concurrent writers to the same Chroma path; use one updater/job or add locking before enabling this on multiple replicas.
 
