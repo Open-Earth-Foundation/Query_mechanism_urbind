@@ -268,7 +268,7 @@ def test_vector_store_snapshot_includes_auto_update_diagnostics(tmp_path: Path) 
 
     assert snapshot["auto_update"] == {
         "ran": True,
-        "reason": "incremental_update",
+        "update_mode": "incremental_update",
         "trigger": "auto_update_on_run",
         "selected_cities": ["Munich"],
         "stats": {
@@ -282,7 +282,7 @@ def test_vector_store_snapshot_includes_auto_update_diagnostics(tmp_path: Path) 
             "avg_tokens": 20.0,
             "max_tokens": 30,
             "dry_run": False,
-            "update_reason": "incremental_update",
+            "update_mode": "incremental_update",
             "changed_files": [
                 {
                     "source_path": "documents/Munich.md",

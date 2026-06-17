@@ -178,7 +178,7 @@ def build_vector_store_snapshot(
     if update_payload is not None:
         snapshot["auto_update"] = {
             "ran": True,
-            "reason": update_payload.get("update_reason"),
+            "update_mode": update_payload.get("update_mode"),
             "trigger": "auto_update_on_run",
             "selected_cities": selected_cities or [],
             "stats": update_payload,

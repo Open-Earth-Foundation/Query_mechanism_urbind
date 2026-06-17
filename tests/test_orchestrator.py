@@ -391,7 +391,7 @@ def test_run_pipeline_refreshes_vector_store_snapshot_after_auto_update(
         if update_stats is not None:
             auto_update = {
                 "ran": True,
-                "reason": update_stats.update_reason,
+                "update_mode": update_stats.update_mode,
                 "trigger": "auto_update_on_run",
                 "selected_cities": selected_cities or [],
                 "stats": {
@@ -467,7 +467,7 @@ def test_run_pipeline_refreshes_vector_store_snapshot_after_auto_update(
     )
     auto_update = vector_snapshot["auto_update"]
     assert auto_update["ran"] is True
-    assert auto_update["reason"] == "incremental_update"
+    assert auto_update["update_mode"] == "incremental_update"
     assert auto_update["stats"]["files_changed"] == 1
     assert auto_update["stats"]["changed_files"] == [
         {

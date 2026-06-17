@@ -45,7 +45,7 @@ class IndexStats:
     avg_tokens: float
     max_tokens: int
     dry_run: bool
-    update_reason: str = "incremental_update"
+    update_mode: str = "incremental_update"
     changed_files: list[dict[str, object]] = field(default_factory=list)
     deleted_files: list[dict[str, object]] = field(default_factory=list)
 
@@ -552,7 +552,7 @@ def build_markdown_index(
         avg_tokens=avg_tokens,
         max_tokens=max_tokens,
         dry_run=dry_run,
-        update_reason="full_rebuild",
+        update_mode="full_rebuild",
         changed_files=changed_files,
     )
 
@@ -583,7 +583,7 @@ def update_markdown_index(
             dry_run=dry_run,
         )
         if isinstance(stats, IndexStats):
-            return replace(stats, update_reason="index_settings_changed_or_missing")
+            return replace(stats, update_mode="index_settings_changed_or_missing")
         return stats
     mark_manifest_updated(
         manifest,
@@ -743,7 +743,7 @@ def update_markdown_index(
         avg_tokens=avg_tokens,
         max_tokens=max_tokens,
         dry_run=dry_run,
-        update_reason="incremental_update",
+        update_mode="incremental_update",
         changed_files=changed_files,
         deleted_files=deleted_files,
     )
