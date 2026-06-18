@@ -129,6 +129,31 @@ def test_load_config_applies_vector_store_auto_update_env_override(
     assert config.vector_store.auto_update_on_run is True
 
 
+def test_load_config_applies_vector_store_update_mode_env_override(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """VECTOR_STORE_UPDATE_MODE selects local or Kubernetes updater orchestration."""
+    config_path = tmp_path / "llm_config.yaml"
+    config_path.write_text(
+        "\n".join(
+            [
+                "orchestrator: {model: openai/gpt-5.4-mini}",
+                "markdown_researcher: {model: openai/gpt-5.4-mini}",
+                "writer: {model: openai/gpt-5.4-mini}",
+                "vector_store:",
+                "  update_mode: local_process",
+            ]
+        ),
+        encoding="utf-8",
+    )
+    monkeypatch.setenv("VECTOR_STORE_UPDATE_MODE", "kubernetes_job")
+
+    config = load_config(config_path)
+
+    assert config.vector_store.update_mode == "kubernetes_job"
+
+
 def test_load_config_reads_markdown_reasoning_effort_from_yaml(tmp_path: Path) -> None:
     """Markdown reasoning effort is loaded when configured."""
     config_path = _write_config(

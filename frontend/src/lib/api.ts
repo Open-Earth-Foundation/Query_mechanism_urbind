@@ -42,6 +42,8 @@ export interface CreateRunResponse {
 export type VectorStoreWarmupStatus =
   | "pending"
   | "skipped"
+  | "checking"
+  | "stale"
   | "running"
   | "completed"
   | "failed";
@@ -50,11 +52,13 @@ export interface VectorStoreWarmupResponse {
   status: VectorStoreWarmupStatus;
   enabled: boolean;
   auto_update_on_run: boolean;
+  update_mode: string;
   started_at?: string | null;
   completed_at?: string | null;
   message: string;
   error?: string | null;
-  stats?: Record<string, number> | null;
+  stats?: Record<string, unknown> | null;
+  job_name?: string | null;
 }
 
 export type PipelineItemType =

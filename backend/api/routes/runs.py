@@ -168,6 +168,17 @@ def create_run(
             status_code=status.HTTP_409_CONFLICT,
             detail="Vector store update in progress. Please retry after it completes.",
         )
+    config_path = getattr(request.app.state, "config_path", Path("llm_config.yaml"))
+    if warmup is not None and Path(config_path).exists():
+        blocking_reason = warmup.ensure_ready_for_run(
+            config=_load_request_config(request),
+            docs_dir=_get_markdown_dir(request),
+        )
+        if blocking_reason is not None:
+            raise HTTPException(
+                status_code=status.HTTP_409_CONFLICT,
+                detail=blocking_reason,
+            )
     run_executor = _get_run_executor(request)
     api_key_override = _resolve_api_key_override(x_openrouter_api_key)
     try:

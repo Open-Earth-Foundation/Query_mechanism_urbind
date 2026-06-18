@@ -320,9 +320,18 @@ def test_api_vector_store_status_reports_startup_warmup_state(tmp_path: Path) ->
 
     assert response.status_code == 200
     payload = response.json()
-    assert payload["status"] in {"skipped", "running", "completed", "failed", "pending"}
+    assert payload["status"] in {
+        "skipped",
+        "checking",
+        "stale",
+        "running",
+        "completed",
+        "failed",
+        "pending",
+    }
     assert isinstance(payload["enabled"], bool)
     assert isinstance(payload["auto_update_on_run"], bool)
+    assert isinstance(payload["update_mode"], str)
     assert isinstance(payload["message"], str)
     assert "latest_artifact" in payload
 

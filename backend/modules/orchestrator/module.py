@@ -503,7 +503,10 @@ def run_pipeline(
         markdown_chunks: list[dict[str, object]]
         if config.vector_store.enabled:
             markdown_source_mode = "vector_store_retrieval"
-            if config.vector_store.auto_update_on_run:
+            if (
+                config.vector_store.auto_update_on_run
+                and config.vector_store.update_mode == "local_process"
+            ):
                 update_docs_dir = vector_update_docs_dir or config.markdown_dir
                 update_stats = update_markdown_index(
                     config=config,
@@ -528,6 +531,12 @@ def run_pipeline(
                     snapshot_artifacts=snapshot_artifacts,
                     update_stats=update_stats,
                     selected_cities=selected_cities,
+                )
+            elif config.vector_store.auto_update_on_run:
+                logger.info(
+                    "Vector index auto-update is delegated to update_mode=%s run_id=%s",
+                    config.vector_store.update_mode,
+                    run_id_value,
                 )
             retrieval_kwargs: dict[str, object] = {
                 "queries": retrieval_queries,
