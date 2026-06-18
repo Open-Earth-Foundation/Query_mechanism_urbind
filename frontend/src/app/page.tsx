@@ -1020,6 +1020,13 @@ export default function Home() {
         : vectorStoreStatus?.status === "failed"
           ? vectorStoreStatus.error || "Vector store update failed. Admin action required."
           : vectorStoreStatusError);
+  const vectorStoreBannerTitle = isVectorStoreUpdating
+    ? "Preparing vector search"
+    : vectorStoreStatus?.status === "stale"
+      ? "Manual vector-store update required"
+      : vectorStoreStatus?.status === "failed"
+        ? "Vector store update failed"
+        : "Vector store status needs attention";
   const hasApiKeyIssue =
     /api key|authentication|unauthorized|401|403/i.test(runError ?? "") ||
     /api key|authentication|unauthorized|401|403/i.test(
@@ -1202,9 +1209,7 @@ export default function Home() {
                         )}
                         <div className="min-w-0 space-y-1">
                           <p className="font-medium">
-                            {isVectorStoreUpdating
-                              ? "Preparing vector search"
-                              : "Vector store status needs attention"}
+                            {vectorStoreBannerTitle}
                           </p>
                           <p>{vectorStoreBannerText}</p>
                         </div>

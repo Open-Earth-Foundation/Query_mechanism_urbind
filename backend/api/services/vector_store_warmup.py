@@ -47,15 +47,11 @@ class VectorStoreWarmup:
         self._status_path: Path | None = None
 
     def start(self, *, config: AppConfig, docs_dir: Path) -> None:
-        """Start one startup freshness check when vector auto-update is enabled."""
+        """Start one startup freshness check when vector retrieval is enabled."""
         self._configure(config)
         with self._lock:
             if not config.vector_store.enabled:
                 self._skip_locked("Vector store is disabled.")
-                self._write_skipped_status(config=config, trigger="startup")
-                return
-            if not config.vector_store.auto_update_on_run:
-                self._skip_locked("Vector auto-update is disabled.")
                 self._write_skipped_status(config=config, trigger="startup")
                 return
             if self._thread is not None:
@@ -67,6 +63,7 @@ class VectorStoreWarmup:
                     "config": config,
                     "docs_dir": docs_dir,
                     "trigger": "startup",
+                    "allow_updates": config.vector_store.auto_update_on_run,
                 },
                 name="vector-store-update-coordinator",
                 daemon=True,
@@ -76,16 +73,23 @@ class VectorStoreWarmup:
     def ensure_ready_for_run(self, *, config: AppConfig, docs_dir: Path) -> str | None:
         """Return a blocking reason after starting an update if the index is stale."""
         self._configure(config)
-        if not config.vector_store.enabled or not config.vector_store.auto_update_on_run:
+        if not config.vector_store.enabled:
             return None
 
         with self._lock:
             self._sync_from_status_file_locked()
-            if self._status in {"checking", "running", "stale", "failed"}:
+            if self._status in {"checking", "running"}:
+                return self._message
+            if not config.vector_store.auto_update_on_run and self._status in {"stale", "failed"}:
                 return self._message
             self._mark_checking_locked("api_run")
 
-        self._run_for_trigger(config=config, docs_dir=docs_dir, trigger="run")
+        self._run_for_trigger(
+            config=config,
+            docs_dir=docs_dir,
+            trigger="run",
+            allow_updates=config.vector_store.auto_update_on_run,
+        )
         with self._lock:
             if self._status in {"checking", "running", "stale", "failed"}:
                 return self._message
@@ -147,6 +151,7 @@ class VectorStoreWarmup:
         config: AppConfig,
         docs_dir: Path,
         trigger: str,
+        allow_updates: bool,
     ) -> None:
         """Check freshness and either update locally or start a Kubernetes Job."""
         logger.info(
@@ -203,13 +208,14 @@ class VectorStoreWarmup:
 
         logger.info(
             "Vector store refresh check result trigger=%s stale=true added=%d "
-            "changed=%d deleted=%d unchanged=%d update_mode=%s",
+            "changed=%d deleted=%d unchanged=%d update_mode=%s auto_update_on_run=%s",
             trigger,
             len(added_files),
             len(modified_files),
             len(deleted_files),
             int(dry_run_payload.get("files_unchanged", 0)),
             str(dry_run_payload.get("update_mode")),
+            allow_updates,
         )
         logger.info(
             "Vector store affected files trigger=%s added=%s changed=%s deleted=%s",
@@ -218,6 +224,15 @@ class VectorStoreWarmup:
             modified_files,
             deleted_files,
         )
+        if not allow_updates:
+            self._mark_manual_maintenance_required(
+                config=config,
+                docs_dir=docs_dir,
+                trigger=trigger,
+                started_at=started_at,
+                stats_payload=dry_run_payload,
+            )
+            return
         if config.vector_store.update_mode == "kubernetes_job":
             self._start_kubernetes_update(
                 config=config,
@@ -297,7 +312,7 @@ class VectorStoreWarmup:
             completed_at=datetime.now(timezone.utc),
             message="Vector store is up to date.",
             stats=stats,
-        )
+            )
 
     def _start_kubernetes_update(
         self,
@@ -360,6 +375,52 @@ class VectorStoreWarmup:
                 stats_payload=stats_payload,
                 job_name=job_name,
             )
+
+    def _mark_manual_maintenance_required(
+        self,
+        *,
+        config: AppConfig,
+        docs_dir: Path,
+        trigger: str,
+        started_at: datetime,
+        stats_payload: dict[str, object],
+    ) -> None:
+        """Persist a stale status that instructs operators to run the maintenance workflow."""
+        completed_at = datetime.now(timezone.utc)
+        message = (
+            "Vector store is stale. Run `bash scripts/update_vector_store_maintenance.sh` "
+            "and retry."
+        )
+        write_update_status(
+            get_update_status_path(config),
+            status="stale",
+            trigger=trigger,
+            update_mode=config.vector_store.update_mode,
+            message=message,
+            started_at=started_at.isoformat(),
+            completed_at=completed_at.isoformat(),
+            stats=stats_payload,
+        )
+        latest_artifact = self._write_artifact(
+            config=config,
+            docs_dir=docs_dir,
+            status="stale",
+            trigger=trigger,
+            started_at=started_at,
+            completed_at=completed_at,
+            message=message,
+            error=None,
+            stats_payload=stats_payload,
+            job_name=None,
+        )
+        with self._lock:
+            self._status = "stale"
+            self._completed_at = completed_at
+            self._message = message
+            self._error = None
+            self._stats = stats_payload
+            self._job_name = None
+            self._latest_artifact = latest_artifact
 
     def _complete(
         self,

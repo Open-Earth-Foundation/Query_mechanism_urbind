@@ -10,10 +10,10 @@ from backend.api.services.vector_store_warmup import VectorStoreWarmup
 from tests.support import build_test_app_config
 
 
-def test_vector_store_warmup_skips_when_auto_update_disabled(tmp_path: Path) -> None:
-    """Warm-up should not run unless vector auto-update is enabled."""
+def test_vector_store_warmup_skips_when_vector_store_disabled(tmp_path: Path) -> None:
+    """Warm-up should skip all work when vector retrieval is disabled entirely."""
     config = build_test_app_config(runs_dir=tmp_path / "runs", markdown_dir=tmp_path)
-    config.vector_store.enabled = True
+    config.vector_store.enabled = False
     config.vector_store.auto_update_on_run = False
     config.vector_store.chroma_persist_path = tmp_path / "chroma"
     config.vector_store.index_manifest_path = tmp_path / "chroma" / "index_manifest.json"
@@ -23,13 +23,72 @@ def test_vector_store_warmup_skips_when_auto_update_disabled(tmp_path: Path) -> 
 
     snapshot = warmup.snapshot()
     assert snapshot["status"] == "skipped"
-    assert snapshot["enabled"] is True
+    assert snapshot["enabled"] is False
     assert snapshot["auto_update_on_run"] is False
     assert warmup.is_blocking_runs() is False
     status_path = config.vector_store.chroma_persist_path / "update_status.json"
     payload = json.loads(status_path.read_text(encoding="utf-8"))
     assert payload["status"] == "skipped"
     assert payload["update_mode"] == "local_process"
+
+
+def test_vector_store_warmup_reports_manual_maintenance_when_auto_update_disabled(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Warm-up should still detect stale indexes and instruct manual maintenance."""
+    config = build_test_app_config(runs_dir=tmp_path / "runs", markdown_dir=tmp_path)
+    config.vector_store.enabled = True
+    config.vector_store.auto_update_on_run = False
+    config.vector_store.chroma_persist_path = tmp_path / "chroma"
+    config.vector_store.index_manifest_path = tmp_path / "chroma" / "index_manifest.json"
+
+    def _fake_update_markdown_index(**kwargs):
+        assert kwargs["dry_run"] is True
+        return SimpleNamespace(
+            files_indexed=1,
+            files_changed=1,
+            files_unchanged=0,
+            files_deleted=0,
+            chunks_created=4,
+            table_chunks=0,
+            min_tokens=1,
+            avg_tokens=1.0,
+            max_tokens=1,
+            dry_run=True,
+            update_mode="incremental_update",
+            changed_files=[
+                {
+                    "source_path": "documents/Aachen.md",
+                    "status": "modified",
+                    "previous_chunk_count": 3,
+                    "current_chunk_count": 4,
+                    "removed_previous_chunk_count": 3,
+                }
+            ],
+            deleted_files=[],
+        )
+
+    monkeypatch.setattr(
+        warmup_module,
+        "update_markdown_index",
+        _fake_update_markdown_index,
+    )
+    warmup = VectorStoreWarmup()
+
+    warmup.start(config=config, docs_dir=tmp_path)
+    warmup.shutdown(wait=True)
+
+    snapshot = warmup.snapshot()
+    assert snapshot["status"] == "stale"
+    assert (
+        snapshot["message"]
+        == "Vector store is stale. Run `bash scripts/update_vector_store_maintenance.sh` and retry."
+    )
+    assert warmup.is_blocking_runs() is True
+    status_path = config.vector_store.chroma_persist_path / "update_status.json"
+    payload = json.loads(status_path.read_text(encoding="utf-8"))
+    assert payload["status"] == "stale"
 
 
 def test_vector_store_warmup_records_successful_update(
@@ -224,6 +283,51 @@ def test_vector_store_warmup_kubernetes_mode_creates_job_when_stale(
     assert snapshot["status"] == "running"
     assert snapshot["update_mode"] == "kubernetes_job"
     assert snapshot["job_name"] == "vector-update-job"
+
+
+def test_vector_store_warmup_blocks_run_with_manual_maintenance_message_when_stale(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Run submission should be blocked with a maintenance instruction when auto-update is off."""
+    config = build_test_app_config(runs_dir=tmp_path / "runs", markdown_dir=tmp_path)
+    config.vector_store.enabled = True
+    config.vector_store.auto_update_on_run = False
+
+    def _fake_update_markdown_index(**kwargs):
+        assert kwargs["dry_run"] is True
+        return SimpleNamespace(
+            files_indexed=1,
+            files_changed=1,
+            files_unchanged=0,
+            files_deleted=0,
+            chunks_created=2,
+            table_chunks=0,
+            min_tokens=1,
+            avg_tokens=1.0,
+            max_tokens=1,
+            dry_run=True,
+            update_mode="incremental_update",
+            changed_files=[],
+            deleted_files=[],
+        )
+
+    monkeypatch.setattr(
+        warmup_module,
+        "update_markdown_index",
+        _fake_update_markdown_index,
+    )
+    warmup = VectorStoreWarmup()
+
+    blocking_reason = warmup.ensure_ready_for_run(config=config, docs_dir=tmp_path)
+
+    assert (
+        blocking_reason
+        == "Vector store is stale. Run `bash scripts/update_vector_store_maintenance.sh` and retry."
+    )
+    snapshot = warmup.snapshot()
+    assert snapshot["status"] == "stale"
+    assert warmup.is_blocking_runs() is True
 
 
 def test_vector_store_warmup_marks_stale_running_status_as_failed(
