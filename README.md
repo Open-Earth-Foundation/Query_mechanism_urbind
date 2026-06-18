@@ -91,6 +91,7 @@ Environment variables (`.env`):
 - `EXTERNAL_SOURCE_DIR` (optional, default `documents/source_library`): directory containing `sources.yaml` and Markdown files whose stems match `source_id`.
 
 Chat prompt sizing, follow-up router history and excerpt caps, retry backoff, provider timeouts, and vector-store retrieval tuning all come from `llm_config.yaml`.
+When a run requests provider-backed features, the API now validates them before queueing work: missing `OPENROUTER_API_KEY` blocks the run immediately, and web-research runs fail fast if `SERPER_API_KEY` or `FIRECRAWL_API_KEY` is missing or rejected by the upstream provider.
 CLI flags override `.env` values for a given run (for example `--markdown-path`).
 Use `--city` (repeatable) to load markdown only for selected city files. City filters are normalized case-insensitively to backend `city_key` values (for example `Munich`, `MUNICH`, and `munich` all resolve to `munich`).
 

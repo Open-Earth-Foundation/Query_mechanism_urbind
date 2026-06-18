@@ -15,6 +15,8 @@ def test_vector_store_warmup_skips_when_auto_update_disabled(tmp_path: Path) -> 
     config = build_test_app_config(runs_dir=tmp_path / "runs", markdown_dir=tmp_path)
     config.vector_store.enabled = True
     config.vector_store.auto_update_on_run = False
+    config.vector_store.chroma_persist_path = tmp_path / "chroma"
+    config.vector_store.index_manifest_path = tmp_path / "chroma" / "index_manifest.json"
     warmup = VectorStoreWarmup()
 
     warmup.start(config=config, docs_dir=tmp_path)
@@ -24,6 +26,10 @@ def test_vector_store_warmup_skips_when_auto_update_disabled(tmp_path: Path) -> 
     assert snapshot["enabled"] is True
     assert snapshot["auto_update_on_run"] is False
     assert warmup.is_blocking_runs() is False
+    status_path = config.vector_store.chroma_persist_path / "update_status.json"
+    payload = json.loads(status_path.read_text(encoding="utf-8"))
+    assert payload["status"] == "skipped"
+    assert payload["update_mode"] == "local_process"
 
 
 def test_vector_store_warmup_records_successful_update(
@@ -253,3 +259,37 @@ def test_vector_store_warmup_marks_stale_running_status_as_failed(
 
     assert snapshot["status"] == "failed"
     assert snapshot["error"] == "Vector store updater Job timed out."
+
+
+def test_vector_store_warmup_ignores_stale_status_file_from_other_update_mode(
+    tmp_path: Path,
+) -> None:
+    """A persisted status from another update mode should not block the current runtime."""
+    config = build_test_app_config(runs_dir=tmp_path / "runs", markdown_dir=tmp_path)
+    config.vector_store.enabled = True
+    config.vector_store.auto_update_on_run = True
+    config.vector_store.update_mode = "local_process"
+    config.vector_store.chroma_persist_path = tmp_path / "chroma"
+    config.vector_store.index_manifest_path = tmp_path / "chroma" / "index_manifest.json"
+    status_path = config.vector_store.chroma_persist_path / "update_status.json"
+    status_path.parent.mkdir(parents=True, exist_ok=True)
+    status_path.write_text(
+        json.dumps(
+            {
+                "status": "running",
+                "update_mode": "kubernetes_job",
+                "message": "Vector store is stale; updater Job is running.",
+                "started_at": datetime.now(timezone.utc).isoformat(),
+                "job_name": "old-job",
+            }
+        ),
+        encoding="utf-8",
+    )
+    warmup = VectorStoreWarmup()
+    warmup._configure(config)
+
+    snapshot = warmup.snapshot()
+
+    assert snapshot["status"] == "pending"
+    assert snapshot["job_name"] is None
+    assert snapshot["message"] == "Vector store warm-up has not started."

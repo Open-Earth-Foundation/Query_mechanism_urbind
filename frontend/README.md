@@ -47,7 +47,7 @@ The page header always shows a persistent browser toggle that lets users switch 
 
 Supported modes:
 
-- Local: `NEXT_PUBLIC_API_BASE_URL=http://localhost:8000` and `APP_SESSION_COOKIE_DOMAIN` unset.
+- Local: `NEXT_PUBLIC_API_BASE_URL=http://localhost:8000` and `APP_SESSION_COOKIE_DOMAIN` unset. The frontend now auto-aligns `localhost` and `127.0.0.1` for local API calls so the shared session cookie is still sent if your browser uses the other loopback hostname.
 - Dev deployment: `NEXT_PUBLIC_API_BASE_URL=https://urbind-query-mechanism-api.openearth.dev` and `APP_SESSION_COOKIE_DOMAIN=.openearth.dev`.
 
 ## Shared password gate

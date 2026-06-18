@@ -12,6 +12,7 @@ from docx import Document
 from fastapi.testclient import TestClient
 
 from backend.api.main import create_app
+from backend.api.services.feature_readiness import ProviderCheckResult
 from backend.api.services.run_store import TERMINAL_STATUSES
 from backend.modules.markdown_researcher.services import build_markdown_chunks_for_file
 from backend.utils.artifact_writer import ArtifactWriter
@@ -252,6 +253,7 @@ def test_api_run_lifecycle_success(tmp_path: Path, monkeypatch: pytest.MonkeyPat
     runs_dir = tmp_path / "output"
     markdown_dir = tmp_path / "documents"
     markdown_dir.mkdir(parents=True, exist_ok=True)
+    config_path = tmp_path / "llm_config.yaml"
 
     def _stub_load_config(_path: Path | None = None) -> AppConfig:
         return _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
@@ -276,11 +278,12 @@ def test_api_run_lifecycle_success(tmp_path: Path, monkeypatch: pytest.MonkeyPat
 
     monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+    _write_config_file(config_path, _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir))
 
     app = create_app(
         runs_dir=runs_dir,
         max_workers=2,
-        config_path=tmp_path / "missing-test-config.yaml",
+        config_path=config_path,
     )
     with TestClient(app) as client:
         start = client.post(
@@ -309,10 +312,12 @@ def test_api_run_lifecycle_success(tmp_path: Path, monkeypatch: pytest.MonkeyPat
 
 def test_api_vector_store_status_reports_startup_warmup_state(tmp_path: Path) -> None:
     """Expose vector-store warm-up state for the frontend banner."""
+    config_path = tmp_path / "llm_config.yaml"
+    _write_config_file(config_path, _build_config(runs_dir=tmp_path / "output", markdown_dir=tmp_path / "documents"))
     app = create_app(
         runs_dir=tmp_path / "output",
         max_workers=1,
-        config_path=tmp_path / "missing-test-config.yaml",
+        config_path=config_path,
     )
 
     with TestClient(app) as client:
@@ -340,10 +345,12 @@ def test_api_create_run_rejects_while_vector_store_warmup_running(
     tmp_path: Path,
 ) -> None:
     """Prevent new runs while startup vector-store refresh is in progress."""
+    config_path = tmp_path / "llm_config.yaml"
+    _write_config_file(config_path, _build_config(runs_dir=tmp_path / "output", markdown_dir=tmp_path / "documents"))
     app = create_app(
         runs_dir=tmp_path / "output",
         max_workers=1,
-        config_path=tmp_path / "missing-test-config.yaml",
+        config_path=config_path,
     )
 
     with TestClient(app) as client:
@@ -359,6 +366,112 @@ def test_api_create_run_rejects_while_vector_store_warmup_running(
 
     assert response.status_code == 409
     assert "vector store update in progress" in response.json()["detail"].lower()
+
+
+def test_api_create_run_rejects_without_openrouter_api_key(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Fail fast when no OpenRouter key is available for the requested run."""
+    monkeypatch.setenv("OPENROUTER_API_KEY", "")
+    app = create_app(
+        runs_dir=tmp_path / "output",
+        max_workers=1,
+    )
+
+    with TestClient(app) as client:
+        response = client.post(
+            "/api/v1/runs",
+            json={"question": "What are the key initiatives?", "run_id": "missing-key"},
+        )
+
+    assert response.status_code == 503
+    assert "openrouter api key" in response.json()["detail"].lower()
+
+
+def test_api_create_run_rejects_when_serper_is_unavailable(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Fail fast when web research is requested but Serper rejects the key."""
+    monkeypatch.setenv("OPENROUTER_API_KEY", "sk-or-v1-test-key")
+    monkeypatch.setenv("SERPER_API_KEY", "serper-test-key")
+    monkeypatch.setenv("FIRECRAWL_API_KEY", "firecrawl-test-key")
+    app = create_app(
+        runs_dir=tmp_path / "output",
+        max_workers=1,
+    )
+
+    with TestClient(app) as client:
+        readiness = client.app.state.feature_readiness
+        monkeypatch.setattr(
+            readiness,
+            "_probe_serper_api_key",
+            lambda _key: ProviderCheckResult(
+                ready=False,
+                message="Web research is unavailable because Serper rejected the key.",
+                checked_at=datetime.now(timezone.utc),
+            ),
+        )
+        response = client.post(
+            "/api/v1/runs",
+            json={
+                "question": "What are the key initiatives?",
+                "run_id": "serper-blocked",
+                "enrichment_enabled": True,
+                "web_research_enabled": True,
+            },
+        )
+
+    assert response.status_code == 503
+    assert "serper rejected the key" in response.json()["detail"].lower()
+
+
+def test_api_create_run_rejects_when_firecrawl_is_unavailable(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Fail fast when web research is requested but Firecrawl rejects the key."""
+    monkeypatch.setenv("OPENROUTER_API_KEY", "sk-or-v1-test-key")
+    monkeypatch.setenv("SERPER_API_KEY", "serper-test-key")
+    monkeypatch.setenv("FIRECRAWL_API_KEY", "firecrawl-test-key")
+    app = create_app(
+        runs_dir=tmp_path / "output",
+        max_workers=1,
+    )
+
+    with TestClient(app) as client:
+        readiness = client.app.state.feature_readiness
+        monkeypatch.setattr(
+            readiness,
+            "_probe_serper_api_key",
+            lambda _key: ProviderCheckResult(
+                ready=True,
+                message="Serper is reachable.",
+                checked_at=datetime.now(timezone.utc),
+            ),
+        )
+        monkeypatch.setattr(
+            readiness,
+            "_probe_firecrawl_api_key",
+            lambda _key: ProviderCheckResult(
+                ready=False,
+                message="Web research is unavailable because Firecrawl rejected the key.",
+                checked_at=datetime.now(timezone.utc),
+            ),
+        )
+        response = client.post(
+            "/api/v1/runs",
+            json={
+                "question": "What are the key initiatives?",
+                "run_id": "firecrawl-blocked",
+                "enrichment_enabled": True,
+                "web_research_enabled": True,
+            },
+        )
+
+    assert response.status_code == 503
+    assert "firecrawl rejected the key" in response.json()["detail"].lower()
 
 
 def test_api_run_lifecycle_dev_mode_ignores_blank_optional_queries(

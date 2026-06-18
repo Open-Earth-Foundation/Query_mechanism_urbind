@@ -17,7 +17,6 @@ from backend.modules.vector_store.indexer import update_markdown_index
 from backend.modules.vector_store.update_status import (
     VectorStoreUpdateStatus,
     get_update_status_path,
-    now_iso,
     read_update_status,
     write_update_status,
 )
@@ -53,9 +52,11 @@ class VectorStoreWarmup:
         with self._lock:
             if not config.vector_store.enabled:
                 self._skip_locked("Vector store is disabled.")
+                self._write_skipped_status(config=config, trigger="startup")
                 return
             if not config.vector_store.auto_update_on_run:
                 self._skip_locked("Vector auto-update is disabled.")
+                self._write_skipped_status(config=config, trigger="startup")
                 return
             if self._thread is not None:
                 return
@@ -108,6 +109,17 @@ class VectorStoreWarmup:
         self._job_name = None
         self._latest_artifact = None
 
+    def _write_skipped_status(self, *, config: AppConfig, trigger: str) -> None:
+        """Persist the canonical skipped status for disabled startup flows."""
+        write_update_status(
+            get_update_status_path(config),
+            status="skipped",
+            trigger=trigger,
+            update_mode=config.vector_store.update_mode,
+            message=self._message,
+            completed_at=datetime.now(timezone.utc).isoformat(),
+        )
+
     def _mark_checking_locked(self, trigger: str) -> None:
         """Mark this coordinator as checking freshness."""
         self._status = "checking"
@@ -137,7 +149,7 @@ class VectorStoreWarmup:
     ) -> None:
         """Check freshness and either update locally or start a Kubernetes Job."""
         logger.info(
-            "Vector store freshness check started trigger=%s mode=%s docs_dir=%s",
+            "Vector store refresh check started trigger=%s mode=%s docs_dir=%s",
             trigger,
             config.vector_store.update_mode,
             docs_dir,
@@ -163,7 +175,19 @@ class VectorStoreWarmup:
             return
 
         dry_run_payload = self._stats_payload(dry_run_stats)
+        added_files = self._changed_files_by_status(dry_run_payload, "added")
+        modified_files = self._changed_files_by_status(dry_run_payload, "modified")
+        deleted_files = self._deleted_file_sources(dry_run_payload)
         if not self._needs_update(dry_run_stats):
+            logger.info(
+                "Vector store refresh check result trigger=%s stale=false added=%d "
+                "changed=%d deleted=%d unchanged=%d",
+                trigger,
+                len(added_files),
+                len(modified_files),
+                len(deleted_files),
+                int(dry_run_payload.get("files_unchanged", 0)),
+            )
             completed_at = datetime.now(timezone.utc)
             self._complete(
                 config=config,
@@ -176,6 +200,23 @@ class VectorStoreWarmup:
             )
             return
 
+        logger.info(
+            "Vector store refresh check result trigger=%s stale=true added=%d "
+            "changed=%d deleted=%d unchanged=%d update_mode=%s",
+            trigger,
+            len(added_files),
+            len(modified_files),
+            len(deleted_files),
+            int(dry_run_payload.get("files_unchanged", 0)),
+            str(dry_run_payload.get("update_mode")),
+        )
+        logger.info(
+            "Vector store affected files trigger=%s added=%s changed=%s deleted=%s",
+            trigger,
+            added_files,
+            modified_files,
+            deleted_files,
+        )
         if config.vector_store.update_mode == "kubernetes_job":
             self._start_kubernetes_update(
                 config=config,
@@ -214,6 +255,11 @@ class VectorStoreWarmup:
         with self._lock:
             self._status = "running"
             self._message = "Refreshing vector store in the API process."
+        logger.info(
+            "Vector store local refresh started trigger=%s docs_dir=%s",
+            trigger,
+            docs_dir,
+        )
         try:
             stats = update_markdown_index(
                 config=config,
@@ -232,6 +278,16 @@ class VectorStoreWarmup:
                 error=str(exc),
             )
             return
+        logger.info(
+            "Vector store refresh completed trigger=%s status=completed added=%d "
+            "changed=%d deleted=%d unchanged=%d chunks=%d",
+            trigger,
+            self._count_changed_files_by_status(stats, "added"),
+            self._count_changed_files_by_status(stats, "modified"),
+            stats.files_deleted,
+            stats.files_unchanged,
+            stats.chunks_created,
+        )
         self._complete(
             config=config,
             docs_dir=docs_dir,
@@ -266,6 +322,14 @@ class VectorStoreWarmup:
                 error=str(exc),
             )
             return
+        logger.info(
+            "Vector store updater Job started trigger=%s job_name=%s added=%d changed=%d deleted=%d",
+            trigger,
+            job_name,
+            len(self._changed_files_by_status(stats_payload, "added")),
+            len(self._changed_files_by_status(stats_payload, "modified")),
+            len(self._deleted_file_sources(stats_payload)),
+        )
 
         write_update_status(
             status_path,
@@ -410,6 +474,45 @@ class VectorStoreWarmup:
             "deleted_files": list(getattr(stats, "deleted_files", [])),
         }
 
+    def _changed_files_by_status(
+        self,
+        stats_payload: dict[str, object],
+        status: str,
+    ) -> list[str]:
+        """Return changed-file source paths for one status label."""
+        changed_files = stats_payload.get("changed_files")
+        if not isinstance(changed_files, list):
+            return []
+        return [
+            str(item.get("source_path"))
+            for item in changed_files
+            if isinstance(item, dict)
+            and str(item.get("status")) == status
+            and str(item.get("source_path", "")).strip()
+        ]
+
+    def _deleted_file_sources(self, stats_payload: dict[str, object]) -> list[str]:
+        """Return deleted-file source paths from one stats payload."""
+        deleted_files = stats_payload.get("deleted_files")
+        if not isinstance(deleted_files, list):
+            return []
+        return [
+            str(item.get("source_path"))
+            for item in deleted_files
+            if isinstance(item, dict) and str(item.get("source_path", "")).strip()
+        ]
+
+    def _count_changed_files_by_status(self, stats: object, status: str) -> int:
+        """Return the number of changed files with one status on index stats."""
+        changed_files = getattr(stats, "changed_files", [])
+        if not isinstance(changed_files, list):
+            return 0
+        return sum(
+            1
+            for item in changed_files
+            if isinstance(item, dict) and str(item.get("status")) == status
+        )
+
     def _write_artifact(
         self,
         *,
@@ -488,6 +591,11 @@ class VectorStoreWarmup:
         elapsed_seconds = (datetime.now(timezone.utc) - started_at).total_seconds()
         return elapsed_seconds > max(timeout_seconds, 1)
 
+    def _is_compatible_file_status(self, payload: dict[str, object]) -> bool:
+        """Return true when the persisted status file matches the active update mode."""
+        file_update_mode = str(payload.get("update_mode", "")).strip()
+        return not file_update_mode or file_update_mode == self._update_mode
+
     def snapshot(self) -> dict[str, object]:
         """Return a thread-safe status payload for API responses."""
         file_status = self._status_from_file()
@@ -505,7 +613,12 @@ class VectorStoreWarmup:
                 "job_name": self._job_name,
                 "latest_artifact": self._latest_artifact,
             }
-        if self._enabled and self._auto_update_on_run and isinstance(file_status, dict):
+        if (
+            self._enabled
+            and self._auto_update_on_run
+            and isinstance(file_status, dict)
+            and self._is_compatible_file_status(file_status)
+        ):
             file_state = str(file_status.get("status", "")).strip()
             if file_state in {
                 "checking",

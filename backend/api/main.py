@@ -27,6 +27,7 @@ from backend.api.routes import (
 )
 from backend.api.services.chat_jobs import ChatJobExecutor, ChatJobStore
 from backend.api.services.chat_memory import ChatMemoryStore
+from backend.api.services.feature_readiness import FeatureReadinessService
 from backend.api.services.run_executor import RunExecutor
 from backend.api.services.run_store import RunStore
 from backend.api.services.vector_store_warmup import VectorStoreWarmup
@@ -134,6 +135,7 @@ def create_app(
     async def lifespan(app: FastAPI) -> AsyncIterator[None]:
         logger.info("API startup: initializing run store and worker pools")
         vector_store_warmup = VectorStoreWarmup()
+        feature_readiness = FeatureReadinessService()
         if resolved_config_path.exists():
             try:
                 startup_config = load_config(resolved_config_path)
@@ -170,6 +172,7 @@ def create_app(
         app.state.run_executor = run_executor
         app.state.chat_job_executor = chat_job_executor
         app.state.vector_store_warmup = vector_store_warmup
+        app.state.feature_readiness = feature_readiness
         app.state.markdown_dir = resolved_markdown_dir
         app.state.config_path = resolved_config_path
         app.state.city_groups_path = resolved_city_groups_path

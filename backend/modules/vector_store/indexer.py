@@ -597,12 +597,18 @@ def update_markdown_index(
     current_files = _iter_markdown_files(docs_dir, selected_cities=selected_cities)
     current_source_map = {_source_path(path, project_root): path for path in current_files}
     total_files = len(current_source_map)
-    logger.info(
-        "Index update started docs_total=%d docs_dir=%s dry_run=%s",
-        total_files,
-        docs_dir,
-        dry_run,
-    )
+    if dry_run:
+        logger.debug(
+            "Index update dry-run started docs_total=%d docs_dir=%s",
+            total_files,
+            docs_dir,
+        )
+    else:
+        logger.info(
+            "Index update started docs_total=%d docs_dir=%s",
+            total_files,
+            docs_dir,
+        )
 
     changed_chunks: list[IndexedChunk] = []
     files_changed = 0
@@ -618,12 +624,6 @@ def update_markdown_index(
         previous = files_section.get(source_path)
         if previous and previous.get("file_hash") == current_hash:
             files_unchanged += 1
-            logger.info(
-                "Index update progress documents=%d/%d source=%s status=unchanged",
-                index,
-                total_files,
-                source_path,
-            )
             continue
 
         previous_chunk_ids = (
@@ -649,13 +649,15 @@ def update_markdown_index(
         )
         changed_chunks.extend(chunks)
         files_changed += 1
-        logger.info(
-            "Index update progress documents=%d/%d source=%s status=changed chunks=%d",
-            index,
-            total_files,
-            source_path,
-            len(chunks),
-        )
+        if not dry_run:
+            logger.info(
+                "Index update applying documents=%d/%d source=%s status=%s chunks=%d",
+                index,
+                total_files,
+                source_path,
+                "modified" if previous else "added",
+                len(chunks),
+            )
 
     current_source_keys = set(current_source_map.keys())
     if selected_cities:
@@ -688,6 +690,12 @@ def update_markdown_index(
         for source_path, chunk_ids in removed_ids_by_source.items()
     ]
     files_deleted = len(removed_sources)
+    if files_deleted:
+        logger.info(
+            "Index update detected removed manifest files deleted=%d sample=%s",
+            files_deleted,
+            removed_sources[:5],
+        )
 
     embedded_changed_chunks: list[IndexedChunk] = []
     if changed_chunks and not dry_run:
@@ -727,6 +735,25 @@ def update_markdown_index(
                 store.delete(chunk_ids)
             files_section.pop(source_path, None)
         save_manifest(settings.manifest_path, manifest)
+        logger.info(
+            "Index update persist finished manifest_path=%s changed=%d unchanged=%d "
+            "deleted=%d chunks=%d",
+            settings.manifest_path,
+            files_changed,
+            files_unchanged,
+            files_deleted,
+            len(changed_chunks),
+        )
+    else:
+        logger.debug(
+            "Index update dry-run summary docs_total=%d changed=%d unchanged=%d "
+            "deleted=%d chunks=%d",
+            len(current_files),
+            files_changed,
+            files_unchanged,
+            files_deleted,
+            len(changed_chunks),
+        )
 
     min_tokens, avg_tokens, max_tokens = _collect_token_stats(changed_chunks)
     table_chunks = len(
