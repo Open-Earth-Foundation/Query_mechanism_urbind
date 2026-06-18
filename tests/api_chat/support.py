@@ -152,6 +152,7 @@ def patch_api_config_loaders(
     stub_load_config: object,
 ) -> None:
     """Patch config loaders used by the API chat execution paths."""
+    monkeypatch.setattr("backend.api.routes.runs.load_config", stub_load_config)
     monkeypatch.setattr("backend.api.services.run_executor.load_config", stub_load_config)
     monkeypatch.setattr("backend.api.routes.chat.load_config", stub_load_config)
     monkeypatch.setattr("backend.api.services.chat_split_flow.load_config", stub_load_config)
