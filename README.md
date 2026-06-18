@@ -1252,7 +1252,7 @@ python -m backend.scripts.build_markdown_index --docs-dir documents --dry-run --
 Incrementally update existing index:
 
 ```
-python -m backend.scripts.update_markdown_index --docs-dir documents
+python -m backend.scripts.update_vector_store --docs-dir documents
 ```
 
 The update now fails fast on embedding failures and exits non-zero before any delete/upsert/manifest-write commit.
