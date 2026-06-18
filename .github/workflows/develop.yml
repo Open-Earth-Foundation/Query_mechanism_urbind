@@ -16,6 +16,7 @@ on:
       - "backend/Dockerfile"
       - "frontend/Dockerfile"
       - ".github/workflows/develop.yml"
+      - "uv.lock"
   pull_request:
     branches:
       - main
@@ -27,6 +28,7 @@ on:
       - "backend/Dockerfile"
       - "frontend/Dockerfile"
       - ".github/workflows/develop.yml"
+      - "uv.lock"
     types: [opened, synchronize, reopened]
 
 concurrency:
