@@ -48,9 +48,10 @@ What it does:
 1. scales `deployment/urbind-query-mechanism-backend` to `0`
 2. deletes any previous `urbind-query-mechanism-build-vector-index` Job
 3. applies `k8s/backend-build-vector-index-job.yml`
-4. waits for the Job to complete
-5. scales the backend back to `1`
-6. waits for rollout readiness
+4. prints live Job/Pod status while waiting, and fails early when the Job pod is stuck in `Pending` / `ContainerCreating`
+5. surfaces `FailedAttachVolume` clearly when the PVC is still mounted elsewhere
+6. scales the backend back to `1`
+7. waits for rollout readiness
 
 ## UI / API behavior
 

@@ -1300,7 +1300,13 @@ For the maintenance flow, you can use the one-off helper script from the repo ro
 bash scripts/update_vector_store_maintenance.sh
 ```
 
-The script scales `deployment/urbind-query-mechanism-backend` to `0`, deletes any previous `urbind-query-mechanism-build-vector-index` Job, applies `k8s/backend-build-vector-index-job.yml`, waits for Job completion, then scales the backend back to `1` and waits for rollout readiness. Override namespace, deployment, job name, replicas, or timeouts with flags such as `--namespace`, `--deployment`, `--job-name`, `--replicas`, `--job-timeout`, and `--rollout-timeout`.
+You can also run it from inside the `scripts/` directory with:
+
+```bash
+bash update_vector_store_maintenance.sh
+```
+
+The script resolves the repo root automatically, scales `deployment/urbind-query-mechanism-backend` to `0`, deletes any previous `urbind-query-mechanism-build-vector-index` Job, applies `k8s/backend-build-vector-index-job.yml`, prints live Job/Pod status while waiting, fails early on stuck `Pending` / `ContainerCreating` pods, surfaces `FailedAttachVolume` clearly, then scales the backend back to `1` and waits for rollout readiness. Override namespace, deployment, job name, replicas, polling, or timeouts with flags such as `--namespace`, `--deployment`, `--job-name`, `--replicas`, `--status-poll`, `--pending-timeout`, `--job-timeout`, and `--rollout-timeout`.
 
 Inspect indexed chunks:
 
