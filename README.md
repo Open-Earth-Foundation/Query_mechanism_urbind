@@ -1069,6 +1069,7 @@ The backend ConfigMap sets `VECTOR_STORE_ENABLED=true` and `VECTOR_STORE_AUTO_UP
 
 Automated development workflow is available at `.github/workflows/develop.yml`.
 It runs tests for PRs targeting `main` and for pushes to `main`; image build and EKS deploy run only on `main` branch runs (push/manual dispatch).
+Dependency lockfile changes to `uv.lock` also trigger the test workflow so Dependabot lockfile PRs are verified.
 
 CORS and auth notes
 
