@@ -1055,7 +1055,6 @@ kubectl create secret generic urbind-query-mechanism-backend-secrets \
   --from-literal=OPENROUTER_API_KEY=<openrouter-key> \
   --dry-run=client -o yaml | kubectl apply -f -
 
-kubectl apply -f k8s/backend-vector-store-rbac.yml
 kubectl apply -f k8s/backend-pvc.yml
 kubectl apply -f k8s/backend-configmap.yml
 kubectl apply -f k8s/backend-deployment.yml
@@ -1065,6 +1064,8 @@ kubectl apply -f k8s/frontend-service.yml
 ```
 
 Add `SERPER_API_KEY` and `FIRECRAWL_API_KEY` to the secret only when web research is enabled.
+
+Apply `k8s/backend-vector-store-rbac.yml` separately with a cluster identity that is allowed to manage `ServiceAccount`, `Role`, and `RoleBinding` resources. This RBAC manifest is a cluster bootstrap prerequisite for Kubernetes-job vector updates, not part of the normal app rollout done by the GitHub Actions deploy user.
 
 The backend ConfigMap sets `VECTOR_STORE_ENABLED=true`, `VECTOR_STORE_AUTO_UPDATE_ON_RUN=true`, and `VECTOR_STORE_UPDATE_MODE=kubernetes_job` for the single-replica dev deployment. The API performs cheap freshness checks, writes shared vector-store status, and creates a one-off updater Job when the index is stale. Change those keys in `k8s/backend-configmap.yml` to disable vector retrieval or auto-refresh without rebuilding the image.
 
@@ -1294,7 +1295,7 @@ python -m backend.scripts.check_vector_index
 python -m backend.scripts.check_vector_index --no-show-files
 ```
 
-**Updating the vector index on Kubernetes:** The backend and one-off updater Jobs share the same PVC mounted once at `/data` (no subPath). Both use the same `securityContext` (runAsUser 0, DAC_READ_SEARCH) so the Job can write `/data/chroma` and the backend can read it. Apply the backend RBAC before enabling Kubernetes-job mode:
+**Updating the vector index on Kubernetes:** The backend and one-off updater Jobs share the same PVC mounted once at `/data` (no subPath). Both use the same `securityContext` (runAsUser 0, DAC_READ_SEARCH) so the Job can write `/data/chroma` and the backend can read it. Apply the backend RBAC once with an admin-capable cluster identity before enabling Kubernetes-job mode:
 
 ```bash
 kubectl apply -f k8s/backend-vector-store-rbac.yml
@@ -1302,7 +1303,7 @@ kubectl apply -f k8s/backend-configmap.yml
 kubectl apply -f k8s/backend-deployment.yml
 ```
 
-The checked-in dev ConfigMap sets `VECTOR_STORE_UPDATE_JOB_IMAGE` to `ghcr.io/open-earth-foundation/query_mechanism_urbind-backend:dev`, matching the checked-in backend Deployment image. In GitHub Actions deploys, the workflow overrides the backend pod env so runtime-created updater Jobs use the exact commit-hash backend image that was just deployed. The API creates updater Jobs with higher memory requests/limits from the Kubernetes ConfigMap values `VECTOR_STORE_UPDATE_JOB_MEMORY_REQUEST` and `VECTOR_STORE_UPDATE_JOB_MEMORY_LIMIT` (currently `16Gi` request / `20Gi` limit). If a Job is killed before it writes completion status, the API treats a `running` status older than `VECTOR_STORE_UPDATE_JOB_TIMEOUT_SECONDS` (default 7200) as failed so the UI does not wait forever. Paths on the PVC are `/data/output` (run artifacts), `/data/chroma` (vector index and manifest), and `/data/chroma/update_status.json` (shared update status).
+The checked-in dev ConfigMap sets `VECTOR_STORE_UPDATE_JOB_IMAGE` to `ghcr.io/open-earth-foundation/query_mechanism_urbind-backend:dev`, matching the checked-in backend Deployment image. In GitHub Actions deploys, the workflow overrides the backend pod env so runtime-created updater Jobs use the exact commit-hash backend image that was just deployed. The API creates updater Jobs with higher memory requests/limits from the Kubernetes ConfigMap values `VECTOR_STORE_UPDATE_JOB_MEMORY_REQUEST` and `VECTOR_STORE_UPDATE_JOB_MEMORY_LIMIT` (currently `16Gi` request / `20Gi` limit). If a Job is killed before it writes completion status, the API treats a `running` status older than `VECTOR_STORE_UPDATE_JOB_TIMEOUT_SECONDS` (default 7200) as failed so the UI does not wait forever. Paths on the PVC are `/data/output` (run artifacts), `/data/chroma` (vector index and manifest), and `/data/chroma/update_status.json` (shared update status). The regular GitHub Actions deploy step does not apply the RBAC bootstrap manifest because the deploy user typically cannot manage RBAC resources in the cluster.
 
 For a manual rebuild or recovery run, apply `k8s/backend-build-vector-index-job.yml`. That Job runs the same `python -m backend.scripts.update_vector_store` entrypoint used by API-triggered Jobs. The checked-in manifest is pinned to `:dev`; if you want exact parity with the currently deployed backend image, replace that image tag before applying the Job.
 

@@ -231,7 +231,6 @@ jobs:
 
       - name: Apply Kubernetes manifests
         run: |
-          kubectl -n default apply -f k8s/backend-vector-store-rbac.yml
           kubectl -n default apply -f k8s/backend-configmap.yml
           kubectl -n default apply -f k8s/backend-pvc.yml
           kubectl -n default apply -f k8s/backend-deployment.yml
