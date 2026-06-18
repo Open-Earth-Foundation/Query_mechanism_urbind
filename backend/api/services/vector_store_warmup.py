@@ -80,6 +80,7 @@ class VectorStoreWarmup:
             return None
 
         with self._lock:
+            self._sync_from_status_file_locked()
             if self._status in {"checking", "running", "stale", "failed"}:
                 return self._message
             self._mark_checking_locked("api_run")
@@ -595,6 +596,31 @@ class VectorStoreWarmup:
         """Return true when the persisted status file matches the active update mode."""
         file_update_mode = str(payload.get("update_mode", "")).strip()
         return not file_update_mode or file_update_mode == self._update_mode
+
+    def _sync_from_status_file_locked(self) -> None:
+        """Refresh in-memory status from the shared status file while holding the lock."""
+        file_status = self._status_from_file()
+        if not isinstance(file_status, dict) or not self._is_compatible_file_status(file_status):
+            return
+        file_state = str(file_status.get("status", "")).strip()
+        if file_state not in {
+            "checking",
+            "stale",
+            "running",
+            "completed",
+            "failed",
+        }:
+            return
+        if self._has_running_status_timed_out(file_status):
+            self._status = "failed"
+            self._message = "Vector store updater Job timed out before writing a completion status."
+            self._error = "Vector store updater Job timed out."
+            return
+        self._status = file_state
+        self._message = str(file_status.get("message") or self._message)
+        self._error = str(file_status.get("error")) if file_status.get("error") else None
+        self._stats = file_status.get("stats") if isinstance(file_status.get("stats"), dict) else None
+        self._job_name = str(file_status.get("job_name")) if file_status.get("job_name") else None
 
     def snapshot(self) -> dict[str, object]:
         """Return a thread-safe status payload for API responses."""

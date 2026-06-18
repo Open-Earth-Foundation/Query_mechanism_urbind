@@ -293,3 +293,64 @@ def test_vector_store_warmup_ignores_stale_status_file_from_other_update_mode(
     assert snapshot["status"] == "pending"
     assert snapshot["job_name"] is None
     assert snapshot["message"] == "Vector store warm-up has not started."
+
+
+def test_vector_store_warmup_reconciles_completed_job_before_blocking_runs(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """A completed external updater Job should clear stale in-memory running state."""
+    config = build_test_app_config(runs_dir=tmp_path / "runs", markdown_dir=tmp_path)
+    config.vector_store.enabled = True
+    config.vector_store.auto_update_on_run = True
+    config.vector_store.update_mode = "kubernetes_job"
+    config.vector_store.chroma_persist_path = tmp_path / "chroma"
+    config.vector_store.index_manifest_path = tmp_path / "chroma" / "index_manifest.json"
+    status_path = config.vector_store.chroma_persist_path / "update_status.json"
+    status_path.parent.mkdir(parents=True, exist_ok=True)
+    status_path.write_text(
+        json.dumps(
+            {
+                "status": "completed",
+                "update_mode": "kubernetes_job",
+                "message": "Vector store is up to date.",
+                "completed_at": datetime.now(timezone.utc).isoformat(),
+            }
+        ),
+        encoding="utf-8",
+    )
+
+    def _fake_update_markdown_index(**kwargs):
+        assert kwargs["dry_run"] is True
+        return SimpleNamespace(
+            files_indexed=1,
+            files_changed=0,
+            files_unchanged=1,
+            files_deleted=0,
+            chunks_created=0,
+            table_chunks=0,
+            min_tokens=1,
+            avg_tokens=1.0,
+            max_tokens=1,
+            dry_run=True,
+            update_mode="incremental_update",
+            changed_files=[],
+            deleted_files=[],
+        )
+
+    monkeypatch.setattr(
+        warmup_module,
+        "update_markdown_index",
+        _fake_update_markdown_index,
+    )
+    warmup = VectorStoreWarmup()
+    warmup._configure(config)
+    warmup._status = "running"
+    warmup._message = "Vector store is stale; updater Job is running."
+
+    blocking_reason = warmup.ensure_ready_for_run(config=config, docs_dir=tmp_path)
+
+    assert blocking_reason is None
+    snapshot = warmup.snapshot()
+    assert snapshot["status"] == "completed"
+    assert snapshot["message"] == "Vector store is up to date."
