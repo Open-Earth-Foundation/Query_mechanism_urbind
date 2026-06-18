@@ -231,6 +231,7 @@ jobs:
 
       - name: Apply Kubernetes manifests
         run: |
+          kubectl -n default apply -f k8s/backend-vector-store-rbac.yml
           kubectl -n default apply -f k8s/backend-configmap.yml
           kubectl -n default apply -f k8s/backend-pvc.yml
           kubectl -n default apply -f k8s/backend-deployment.yml
@@ -242,6 +243,7 @@ jobs:
         run: |
           kubectl -n default set image deployment/urbind-query-mechanism-backend backend="${BACKEND_IMAGE}"
           kubectl -n default set image deployment/urbind-query-mechanism-frontend frontend="${FRONTEND_IMAGE}"
+          kubectl -n default set env deployment/urbind-query-mechanism-backend VECTOR_STORE_UPDATE_JOB_IMAGE="${BACKEND_IMAGE}"
 
       - name: Wait for rollout
         run: |

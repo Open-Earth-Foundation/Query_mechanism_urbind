@@ -13,11 +13,13 @@ from tests.support import build_test_app_config
 
 TEST_SESSION_SECRET = "0123456789abcdef0123456789abcdef"
 TEST_API_CORS_ORIGINS = "http://127.0.0.1:3000,http://localhost:3000"
+TEST_OPENROUTER_API_KEY = "sk-or-v1-test-openrouter-key"
 
 # backend.api.main creates a module-level FastAPI app during import. These
 # defaults must exist before API test modules are collected in clean CI shells.
 os.environ.setdefault("APP_SESSION_SECRET", TEST_SESSION_SECRET)
 os.environ.setdefault("API_CORS_ORIGINS", TEST_API_CORS_ORIGINS)
+os.environ.setdefault("OPENROUTER_API_KEY", TEST_OPENROUTER_API_KEY)
 
 
 def _allow_shared_session() -> dict[str, int | str]:
@@ -39,6 +41,7 @@ def shared_session_test_auth(
     """Bypass auth and isolate default API startup config for integration tests."""
     monkeypatch.setenv("APP_SESSION_SECRET", TEST_SESSION_SECRET)
     monkeypatch.setenv("API_CORS_ORIGINS", TEST_API_CORS_ORIGINS)
+    monkeypatch.setenv("OPENROUTER_API_KEY", TEST_OPENROUTER_API_KEY)
     config = build_test_app_config(
         runs_dir=tmp_path / "output",
         markdown_dir=tmp_path / "documents",

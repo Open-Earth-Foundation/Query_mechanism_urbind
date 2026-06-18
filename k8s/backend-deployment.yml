@@ -15,6 +15,7 @@ spec:
       labels:
         app: urbind-query-mechanism-backend
     spec:
+      serviceAccountName: urbind-query-mechanism-backend
       containers:
         - name: backend
           image: ghcr.io/open-earth-foundation/query_mechanism_urbind-backend:dev

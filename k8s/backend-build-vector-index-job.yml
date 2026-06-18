@@ -1,9 +1,9 @@
-# One-off Job: build the markdown vector index into the backend PVC at /data/chroma.
+# One-off Job: refresh the markdown vector index into the backend PVC at /data/chroma.
 #
 # Setup:
 #   - PVC is mounted once at /data (no subPath), same as the backend deployment.
 #   - Job creates /data/chroma and /data/output if missing (umask 022) then runs
-#     python -m backend.scripts.build_markdown_index (venv from PATH, PYTHONPATH=/app).
+#     python -m backend.scripts.update_vector_store (venv from PATH, PYTHONPATH=/app).
 #   - securityContext: runAsUser 0, runAsGroup 0, allowPrivilegeEscalation false,
 #     DAC_READ_SEARCH so the Job can read/write /data. The backend deployment uses
 #     the same securityContext so both pods see the same ownership for /data/chroma.
@@ -16,9 +16,11 @@
 #
 # When to run (avoid concurrent use of the vector store):
 #
-#   The Job does a full rebuild (reset + bulk write). The backend must not read from
-#   the same Chroma path while the Job is writing, or you can get lock errors or
-#   inconsistent state. Prefer one of these approaches:
+#   The Job runs the same update logic as the API-managed updater: it performs an
+#   incremental refresh when possible and falls back to a full rebuild when the
+#   manifest/settings require it. The backend should not read from the same Chroma
+#   path while the Job is writing, or you can get lock errors or inconsistent state.
+#   Prefer one of these approaches:
 #
 #   - Scale the backend to 0, run the Job, then scale back up:
 #       kubectl scale deployment urbind-query-mechanism-backend --replicas=0
@@ -36,6 +38,8 @@
 #
 #   1. Apply the Job (creates the Job in the cluster):
 #
+#        # Optional: replace the checked-in :dev image with the exact deployed
+#        # backend image tag first if you want strict image parity.
 #        kubectl apply -f k8s/backend-build-vector-index-job.yml
 #
 #   2. Watch until it completes (or fails):
@@ -132,8 +136,11 @@ spec:
               umask 022
               mkdir -p /data/chroma /data/output
 
-              echo "[job] build index"
-              python -m backend.scripts.build_markdown_index --docs-dir /app/documents
+              echo "[job] update index"
+              python -m backend.scripts.update_vector_store \
+                --trigger manual \
+                --docs-dir "${MARKDOWN_DIR:-/app/documents}" \
+                --config "${LLM_CONFIG_PATH:-/app/llm_config.yaml}"
 
               echo "[job] verify manifest"
               ls -la /data/chroma | head -200 || true
@@ -146,10 +153,10 @@ spec:
           resources:
             requests:
               cpu: "250m"
-              memory: "8Gi"
+              memory: "16Gi"
             limits:
               cpu: "500m"
-              memory: "12Gi"
+              memory: "20Gi"
       volumes:
         - name: output-volume
           persistentVolumeClaim:

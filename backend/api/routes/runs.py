@@ -27,6 +27,7 @@ from backend.api.models import (
 )
 from backend.api.services.run_diagnostics import build_run_diagnostics
 from backend.api.services.document_export import DOCX_MIME_TYPE, markdown_to_docx_bytes
+from backend.api.services.feature_readiness import FeatureReadinessService
 from backend.api.services.final_output import strip_legacy_finish_reason_footer
 from backend.api.services.run_context import (
     build_writer_export_context,
@@ -104,6 +105,17 @@ def _get_vector_store_warmup(request: Request) -> VectorStoreWarmup | None:
     return warmup if isinstance(warmup, VectorStoreWarmup) else None
 
 
+def _get_feature_readiness(request: Request) -> FeatureReadinessService:
+    """Return feature-readiness service from FastAPI app state."""
+    readiness = getattr(request.app.state, "feature_readiness", None)
+    if not isinstance(readiness, FeatureReadinessService):
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Feature readiness service is not initialized.",
+        )
+    return readiness
+
+
 def _load_request_config(request: Request) -> AppConfig:
     """Load the active app config and reuse a cached copy until the file changes."""
     config_path = getattr(request.app.state, "config_path", Path("llm_config.yaml"))
@@ -112,6 +124,29 @@ def _load_request_config(request: Request) -> AppConfig:
         cache_owner=request.app.state,
         loader=load_config,
     )
+
+
+def _load_effective_request_config(
+    request: Request,
+    config_path_override: str | None,
+) -> AppConfig:
+    """Load the config that will actually back this run request."""
+    if config_path_override is not None:
+        return load_config(Path(config_path_override))
+    return _load_request_config(request)
+
+
+def _apply_run_feature_overrides(
+    config: AppConfig,
+    payload: CreateRunRequest,
+) -> AppConfig:
+    """Apply request-level feature toggles to a copied config."""
+    effective_config = config.model_copy(deep=True)
+    if payload.enrichment_enabled is not None:
+        effective_config.enrichment.enabled = payload.enrichment_enabled
+    if payload.web_research_enabled is not None:
+        effective_config.enrichment.web_research_enabled = payload.web_research_enabled
+    return effective_config
 
 
 def _require_completed_run(
@@ -168,8 +203,29 @@ def create_run(
             status_code=status.HTTP_409_CONFLICT,
             detail="Vector store update in progress. Please retry after it completes.",
         )
+    request_config = _load_effective_request_config(request, payload.config_path)
+    effective_config = _apply_run_feature_overrides(request_config, payload)
+    if warmup is not None:
+        blocking_reason = warmup.ensure_ready_for_run(
+            config=effective_config,
+            docs_dir=_get_markdown_dir(request),
+        )
+        if blocking_reason is not None:
+            raise HTTPException(
+                status_code=status.HTTP_409_CONFLICT,
+                detail=blocking_reason,
+            )
     run_executor = _get_run_executor(request)
     api_key_override = _resolve_api_key_override(x_openrouter_api_key)
+    readiness_errors = _get_feature_readiness(request).validate_run_request(
+        config=effective_config,
+        api_key_override=api_key_override,
+    )
+    if readiness_errors:
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail=" ".join(readiness_errors),
+        )
     try:
         record = run_executor.submit(
             StartRunCommand(

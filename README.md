@@ -83,6 +83,7 @@ Environment variables (`.env`):
 - `FIRECRAWL_API_KEY` (optional, required when web research is enabled): Firecrawl key for rendered-page scraping.
 - `VECTOR_STORE_ENABLED` (optional, default `false`): enables local Chroma markdown indexing flows.
 - `VECTOR_STORE_AUTO_UPDATE_ON_RUN` (optional, default from `llm_config.yaml`): refreshes the vector index during API startup warm-up and before vector-backed pipeline runs when set to `true`.
+- `VECTOR_STORE_UPDATE_MODE` (optional, default `local_process`): `local_process` updates inside the API process for local development; `kubernetes_job` makes the API trigger a one-off updater Job instead.
 - `ANONYMIZED_TELEMETRY` (optional, default `FALSE`): disables Chroma anonymized telemetry when set to `FALSE`.
 - `CHROMA_PERSIST_PATH` (optional, default `.chroma`): local Chroma persistence directory.
 - `CHROMA_COLLECTION_NAME` (optional, default `markdown_chunks`): Chroma collection used for markdown chunks.
@@ -90,10 +91,11 @@ Environment variables (`.env`):
 - `EXTERNAL_SOURCE_DIR` (optional, default `documents/source_library`): directory containing `sources.yaml` and Markdown files whose stems match `source_id`.
 
 Chat prompt sizing, follow-up router history and excerpt caps, retry backoff, provider timeouts, and vector-store retrieval tuning all come from `llm_config.yaml`.
+When a run requests provider-backed features, the API now validates them before queueing work: missing `OPENROUTER_API_KEY` blocks the run immediately, and web-research runs fail fast if `SERPER_API_KEY` or `FIRECRAWL_API_KEY` is missing or rejected by the upstream provider.
 CLI flags override `.env` values for a given run (for example `--markdown-path`).
 Use `--city` (repeatable) to load markdown only for selected city files. City filters are normalized case-insensitively to backend `city_key` values (for example `Munich`, `MUNICH`, and `munich` all resolve to `munich`).
 
-Example `.env.example` is provided. Use `llm_config.yaml` as the source of truth for vector-store and markdown batching tuning; deployment env vars may override operational toggles such as `VECTOR_STORE_ENABLED` and `VECTOR_STORE_AUTO_UPDATE_ON_RUN`.
+Example `.env.example` is provided. Use `llm_config.yaml` as the source of truth for vector-store and markdown batching tuning; deployment env vars may override operational toggles such as `VECTOR_STORE_ENABLED`, `VECTOR_STORE_AUTO_UPDATE_ON_RUN`, and `VECTOR_STORE_UPDATE_MODE`.
 
 Default output directory is `output/` (unless overridden by `RUNS_DIR`).
 
@@ -1053,6 +1055,7 @@ kubectl create secret generic urbind-query-mechanism-backend-secrets \
   --from-literal=OPENROUTER_API_KEY=<openrouter-key> \
   --dry-run=client -o yaml | kubectl apply -f -
 
+kubectl apply -f k8s/backend-vector-store-rbac.yml
 kubectl apply -f k8s/backend-pvc.yml
 kubectl apply -f k8s/backend-configmap.yml
 kubectl apply -f k8s/backend-deployment.yml
@@ -1063,7 +1066,7 @@ kubectl apply -f k8s/frontend-service.yml
 
 Add `SERPER_API_KEY` and `FIRECRAWL_API_KEY` to the secret only when web research is enabled.
 
-The backend ConfigMap sets `VECTOR_STORE_ENABLED=true` and `VECTOR_STORE_AUTO_UPDATE_ON_RUN=true` for the single-replica dev deployment. Change those keys in `k8s/backend-configmap.yml` to disable vector retrieval or startup/run auto-refresh without rebuilding the image.
+The backend ConfigMap sets `VECTOR_STORE_ENABLED=true`, `VECTOR_STORE_AUTO_UPDATE_ON_RUN=true`, and `VECTOR_STORE_UPDATE_MODE=kubernetes_job` for the single-replica dev deployment. The API performs cheap freshness checks, writes shared vector-store status, and creates a one-off updater Job when the index is stale. Change those keys in `k8s/backend-configmap.yml` to disable vector retrieval or auto-refresh without rebuilding the image.
 
 ## GitHub Actions deployment
 
@@ -1272,14 +1275,17 @@ What triggers a full rebuild instead of an incremental refresh:
 - `vector_store.embedding_chunk_overlap_tokens` changes.
 - `vector_store.table_row_group_max_rows` changes.
 
-Auto-refresh caveats:
+Auto-refresh behavior:
 
 - It only scans top-level `documents/*.md` files.
 - Any content edit causes the entire changed file to be rechunked and re-embedded.
 - Config-driven rebuild detection covers index-shaping settings such as embedding model, embedding input limit, chunk size, chunk overlap, and table row grouping. Pure code changes in the chunking/indexing implementation still require an intentional rebuild if the manifest metadata alone cannot detect them.
-- In API mode, auto-refresh starts once in the background during startup. While that startup warm-up is running, new run submissions are blocked and the frontend shows a compact vector-store update banner. `/healthz` still reports the pod as healthy. Startup diagnostics are persisted under `output/system/vector_store_warmup/` as both `latest.json` and timestamped history files.
-- Each vector-backed pipeline run still checks the index before retrieval, so Markdown changes after startup are picked up inside the run.
-- Single-pod deployments can enable `VECTOR_STORE_AUTO_UPDATE_ON_RUN=true` to keep the index fresh at startup and before each run. Multi-pod deployments should avoid concurrent writers to the same Chroma path; use one updater/job or add locking before enabling this on multiple replicas.
+- With `VECTOR_STORE_UPDATE_MODE=local_process`, the API performs the update in-process. This is the default for local development.
+- With `VECTOR_STORE_UPDATE_MODE=kubernetes_job`, the API only checks freshness and creates a one-off updater Job when the index is stale. This keeps the normal backend pod at its lower memory limit while the Job uses higher temporary memory.
+- API startup performs one freshness check when `VECTOR_STORE_AUTO_UPDATE_ON_RUN=true`. Each vector-backed run submission checks again, so Markdown changes after startup are picked up before a report starts.
+- While the index is `checking`, `stale`, `running`, or `failed`, new run submissions are blocked and the frontend shows a compact vector-store banner. `/healthz` still reports the pod as healthy.
+- Shared status is written next to the vector index as `update_status.json`. Startup/run diagnostics are also persisted under `output/system/vector_store_warmup/` as both `latest.json` and timestamped history files.
+- Kubernetes deployments should keep a single backend replica or add a stronger distributed lock before multiple replicas can create updater Jobs for the same Chroma path.
 
 Check manifest and Chroma DB status:
 
@@ -1288,18 +1294,17 @@ python -m backend.scripts.check_vector_index
 python -m backend.scripts.check_vector_index --no-show-files
 ```
 
-**Building the vector index on Kubernetes:** The backend and the one-off build Job share the same PVC mounted once at `/data` (no subPath). Both use the same `securityContext` (runAsUser 0, DAC_READ_SEARCH) so the Job can write `/data/chroma` and the backend can read it. Apply the Job from the repo root (see `k8s/backend-build-vector-index-job.yml` header for full steps):
+**Updating the vector index on Kubernetes:** The backend and one-off updater Jobs share the same PVC mounted once at `/data` (no subPath). Both use the same `securityContext` (runAsUser 0, DAC_READ_SEARCH) so the Job can write `/data/chroma` and the backend can read it. Apply the backend RBAC before enabling Kubernetes-job mode:
 
 ```bash
-kubectl scale deployment urbind-query-mechanism-backend --replicas=0
-kubectl apply -f k8s/backend-build-vector-index-job.yml
-kubectl logs job/urbind-query-mechanism-build-vector-index -f
-kubectl scale deployment urbind-query-mechanism-backend --replicas=1
+kubectl apply -f k8s/backend-vector-store-rbac.yml
+kubectl apply -f k8s/backend-configmap.yml
+kubectl apply -f k8s/backend-deployment.yml
 ```
 
-Scaling down the backend to 0 ensures no concurrent reads/writes to the vector index.
-Paths on the PVC are `/data/output` (run artifacts) and `/data/chroma` (vector index and manifest). Restart the backend after the Job completes so it picks up the new index.
-The Job manifest includes disruption resilience for long runs (`karpenter.sh/do-not-disrupt: "true"`, `backoffLimit: 3`, and `podFailurePolicy` that ignores `DisruptionTarget` pod failures).
+The checked-in dev ConfigMap sets `VECTOR_STORE_UPDATE_JOB_IMAGE` to `ghcr.io/open-earth-foundation/query_mechanism_urbind-backend:dev`, matching the checked-in backend Deployment image. In GitHub Actions deploys, the workflow overrides the backend pod env so runtime-created updater Jobs use the exact commit-hash backend image that was just deployed. The API creates updater Jobs with higher memory requests/limits from the Kubernetes ConfigMap values `VECTOR_STORE_UPDATE_JOB_MEMORY_REQUEST` and `VECTOR_STORE_UPDATE_JOB_MEMORY_LIMIT` (currently `16Gi` request / `20Gi` limit). If a Job is killed before it writes completion status, the API treats a `running` status older than `VECTOR_STORE_UPDATE_JOB_TIMEOUT_SECONDS` (default 7200) as failed so the UI does not wait forever. Paths on the PVC are `/data/output` (run artifacts), `/data/chroma` (vector index and manifest), and `/data/chroma/update_status.json` (shared update status).
+
+For a manual rebuild or recovery run, apply `k8s/backend-build-vector-index-job.yml`. That Job runs the same `python -m backend.scripts.update_vector_store` entrypoint used by API-triggered Jobs. The checked-in manifest is pinned to `:dev`; if you want exact parity with the currently deployed backend image, replace that image tag before applying the Job.
 
 Inspect indexed chunks:
 

@@ -375,6 +375,10 @@ export default function Home() {
   useEffect(() => {
     const controller = new AbortController();
     let intervalId: number | null = null;
+    const isVectorStoreTransitional = ["checking", "stale", "running"].includes(
+      vectorStoreStatus?.status ?? "",
+    );
+    const shouldPollContinuously = isSubmitting || isVectorStoreTransitional;
 
     async function refreshVectorStoreStatus(): Promise<void> {
       try {
@@ -393,9 +397,11 @@ export default function Home() {
     }
 
     void refreshVectorStoreStatus();
-    intervalId = window.setInterval(() => {
-      void refreshVectorStoreStatus();
-    }, vectorStoreStatus?.status === "running" ? 3000 : 15000);
+    if (shouldPollContinuously) {
+      intervalId = window.setInterval(() => {
+        void refreshVectorStoreStatus();
+      }, isSubmitting ? 1000 : 3000);
+    }
 
     return () => {
       controller.abort();
@@ -403,7 +409,7 @@ export default function Home() {
         window.clearInterval(intervalId);
       }
     };
-  }, [vectorStoreStatus?.status]);
+  }, [isSubmitting, vectorStoreStatus?.status]);
 
   useEffect(() => {
     if (!isWriterRailResizing) {
@@ -928,8 +934,11 @@ export default function Home() {
     if (!trimmed || isSubmitting) {
       return;
     }
-    if (vectorStoreStatus?.status === "running") {
-      setRunError("Vector store update in progress. Please retry after it completes.");
+    if (["checking", "stale", "running", "failed"].includes(vectorStoreStatus?.status ?? "")) {
+      setRunError(
+        vectorStoreStatus?.message ||
+          "Vector store is not ready. Please retry after the update completes.",
+      );
       return;
     }
     const scopedCities =
@@ -994,24 +1003,46 @@ export default function Home() {
     (scopeMode === "group"
       ? (selectedGroup?.cities.length ?? 0) > 0
       : selectedCities.length > 0);
-  const isVectorStoreUpdating = vectorStoreStatus?.status === "running";
+  const isVectorStoreUpdating = ["checking", "running"].includes(
+    vectorStoreStatus?.status ?? "",
+  );
+  const isVectorStoreBlocked = ["checking", "stale", "running", "failed"].includes(
+    vectorStoreStatus?.status ?? "",
+  );
   const showVectorStoreBanner =
-    isVectorStoreUpdating ||
-    vectorStoreStatus?.status === "failed" ||
-    vectorStoreStatusError !== null;
-  const vectorStoreBannerText = isVectorStoreUpdating
-    ? "Vector store update in progress. Report generation is paused until the index is ready."
-    : vectorStoreStatus?.status === "failed"
-      ? vectorStoreStatus.error || "Vector store startup update failed. Runs may retry the update when started."
-      : vectorStoreStatusError;
+    isVectorStoreBlocked || vectorStoreStatusError !== null;
+  const vectorStoreBannerText =
+    vectorStoreStatus?.message ||
+    (isVectorStoreUpdating
+      ? "Vector store update in progress. Report generation is paused until the index is ready."
+      : vectorStoreStatus?.status === "stale"
+        ? "Vector store is stale and needs an update before reports can run."
+        : vectorStoreStatus?.status === "failed"
+          ? vectorStoreStatus.error || "Vector store update failed. Admin action required."
+          : vectorStoreStatusError);
   const hasApiKeyIssue =
     /api key|authentication|unauthorized|401|403/i.test(runError ?? "") ||
     /api key|authentication|unauthorized|401|403/i.test(
       runStatus?.error?.message ?? "",
     );
+  const hasProviderReadinessIssue =
+    /serper|firecrawl|openrouter|web research is unavailable|cannot start because no openrouter api key/i.test(
+      runError ?? "",
+    );
   const activeCccDocument = selectedCccCityKey
     ? cccDocumentCache[selectedCccCityKey] ?? null
     : null;
+  const buildDisabledReason = isSubmitting
+    ? "Report generation is already in progress."
+    : isVectorStoreBlocked
+      ? vectorStoreBannerText || "Vector store is not ready yet."
+      : !question.trim()
+        ? "Enter a question to generate a report."
+        : !hasValidScope
+          ? scopeMode === "group"
+            ? "Select a predefined city group before generating the report."
+            : "Select at least one city before generating the report."
+          : null;
 
   return (
     <div className="min-h-screen bg-[radial-gradient(circle_at_20%_20%,#f8edd6_0%,#f2f6f6_45%,#eef2ff_100%)] px-4 py-8 md:px-8">
@@ -1187,7 +1218,7 @@ export default function Home() {
                         placeholder="Example: Compare public EV charging targets and current charger counts across the selected cities, with source-backed numbers and gaps."
                         value={question}
                         onChange={(event) => setQuestion(event.target.value)}
-                        disabled={isVectorStoreUpdating}
+                        disabled={isVectorStoreBlocked}
                         className="min-h-32"
                       />
                       <p className="text-xs text-slate-600">
@@ -1217,7 +1248,7 @@ export default function Home() {
                         placeholder="Example: Evidence on planned charger rollout milestones, deadlines, and responsible owners."
                         value={query2}
                         onChange={(event) => setQuery2(event.target.value)}
-                        disabled={isVectorStoreUpdating}
+                        disabled={isVectorStoreBlocked}
                         className="min-h-20"
                       />
                       </div>
@@ -1229,7 +1260,7 @@ export default function Home() {
                         placeholder="Example: Tables or numeric references for existing public chargers, 2030 targets, and budget commitments."
                         value={query3}
                         onChange={(event) => setQuery3(event.target.value)}
-                        disabled={isVectorStoreUpdating}
+                        disabled={isVectorStoreBlocked}
                         className="min-h-20"
                       />
                       </div>
@@ -1486,12 +1517,15 @@ export default function Home() {
 
               <Button
                 onClick={handleBuildDocument}
-                disabled={isSubmitting || isVectorStoreUpdating || !question.trim() || !hasValidScope}
+                disabled={isSubmitting || isVectorStoreBlocked || !question.trim() || !hasValidScope}
                 className="w-full"
               >
                 {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" /> : <Sparkles className="h-4 w-4" />}
                 Generate Report
               </Button>
+              {buildDisabledReason ? (
+                <p className="text-xs text-slate-500">{buildDisabledReason}</p>
+              ) : null}
 
               <Separator />
 
@@ -1537,6 +1571,12 @@ export default function Home() {
                   </div>
                 ) : null}
                 {runError ? <p className="text-sm text-red-600">{runError}</p> : null}
+                {hasProviderReadinessIssue ? (
+                  <p className="text-xs text-amber-700">
+                    Provider readiness check failed before the run was queued. Verify the
+                    configured provider keys or disable the affected feature and retry.
+                  </p>
+                ) : null}
                 {devFeatures.showRunDiagnostics && runId ? (
                   <RunDiagnosticsPanel runId={runId} runStatus={runStatus} />
                 ) : null}

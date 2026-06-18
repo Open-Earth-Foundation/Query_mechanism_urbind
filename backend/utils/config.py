@@ -10,6 +10,7 @@ from dotenv import load_dotenv
 from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 ReasoningEffort = Literal["none", "minimal", "low", "medium", "high", "xhigh"]
+VectorStoreUpdateMode = Literal["local_process", "kubernetes_job"]
 
 
 class AgentConfig(BaseModel):
@@ -172,6 +173,7 @@ class VectorStoreConfig(BaseModel):
     context_window_chunks: int = 0
     table_context_window_chunks: int = 1
     auto_update_on_run: bool = False
+    update_mode: VectorStoreUpdateMode = "local_process"
     index_manifest_path: Path = Field(
         default_factory=lambda: Path(".chroma/index_manifest.json")
     )
@@ -261,6 +263,7 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
     external_source_dir = os.getenv("EXTERNAL_SOURCE_DIR")
     vector_store_enabled = os.getenv("VECTOR_STORE_ENABLED")
     vector_store_auto_update_on_run = os.getenv("VECTOR_STORE_AUTO_UPDATE_ON_RUN")
+    vector_store_update_mode = os.getenv("VECTOR_STORE_UPDATE_MODE")
     chroma_persist_path = os.getenv("CHROMA_PERSIST_PATH")
     chroma_collection_name = os.getenv("CHROMA_COLLECTION_NAME")
 
@@ -292,6 +295,10 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
         parsed = _parse_env_bool(vector_store_auto_update_on_run)
         if parsed is not None:
             config.vector_store.auto_update_on_run = parsed
+    if vector_store_update_mode:
+        normalized_mode = vector_store_update_mode.strip().lower()
+        if normalized_mode in {"local_process", "kubernetes_job"}:
+            config.vector_store.update_mode = normalized_mode
     if chroma_persist_path:
         manifest_default = Path(".chroma/index_manifest.json")
         config.vector_store.chroma_persist_path = Path(chroma_persist_path)
@@ -384,6 +391,7 @@ __all__ = [
     "BenchmarkNumberExtractorConfig",
     "RetryConfig",
     "VectorStoreConfig",
+    "VectorStoreUpdateMode",
     "AppConfig",
     "load_config",
     "load_cached_config",

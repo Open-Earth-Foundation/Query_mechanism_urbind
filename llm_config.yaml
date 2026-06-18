@@ -141,6 +141,7 @@ vector_store:
   context_window_chunks: 0
   table_context_window_chunks: 1
   auto_update_on_run: true
+  update_mode: "local_process"
   index_manifest_path: ".chroma/index_manifest.json"
 retry:
   max_attempts: 3

@@ -17,7 +17,15 @@ RunStatus = Literal[
 ]
 AnalysisMode = Literal["aggregate", "city_by_city"]
 QueryMode = Literal["standard", "dev"]
-VectorStoreWarmupStatus = Literal["pending", "skipped", "running", "completed", "failed"]
+VectorStoreWarmupStatus = Literal[
+    "pending",
+    "skipped",
+    "checking",
+    "stale",
+    "running",
+    "completed",
+    "failed",
+]
 
 
 class RunError(BaseModel):
@@ -62,11 +70,13 @@ class VectorStoreWarmupResponse(BaseModel):
     status: VectorStoreWarmupStatus
     enabled: bool
     auto_update_on_run: bool
+    update_mode: str
     started_at: datetime | None = None
     completed_at: datetime | None = None
     message: str
     error: str | None = None
     stats: dict[str, object] | None = None
+    job_name: str | None = None
     latest_artifact: str | None = None
 
 
