@@ -505,8 +505,14 @@ def test_run_pipeline_refreshes_vector_store_snapshot_after_auto_update(
                 chunks_created = update_stats.chunks_created
                 changed_files = update_stats.changed_files
                 deleted_files = update_stats.deleted_files
+            was_dry_run = bool(
+                update_stats["dry_run"] if isinstance(update_stats, dict) else update_stats.dry_run
+            )
             auto_update = {
-                "ran": True,
+                "checked": True,
+                "ran": update_mode is not None and not was_dry_run,
+                "applied": update_mode is not None and not was_dry_run,
+                "dry_run": was_dry_run,
                 "update_mode": update_mode,
                 "trigger": "auto_update_on_run",
                 "selected_cities": selected_cities or [],

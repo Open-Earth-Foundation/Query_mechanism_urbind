@@ -267,7 +267,10 @@ def test_vector_store_snapshot_includes_auto_update_diagnostics(tmp_path: Path) 
     )
 
     assert snapshot["auto_update"] == {
+        "checked": True,
         "ran": True,
+        "applied": True,
+        "dry_run": False,
         "update_mode": "incremental_update",
         "trigger": "auto_update_on_run",
         "selected_cities": ["Munich"],
