@@ -1,6 +1,7 @@
 """Orchestrator utilities and helpers."""
 
 from backend.modules.orchestrator.utils.artifact_helpers import (
+    build_markdown_city_summary,
     build_markdown_metrics,
     build_retrieval_metrics,
     build_source_chunk_index,
@@ -20,6 +21,7 @@ from backend.modules.orchestrator.utils.references import (
 )
 
 __all__ = [
+    "build_markdown_city_summary",
     "build_markdown_metrics",
     "build_retrieval_metrics",
     "build_source_chunk_index",

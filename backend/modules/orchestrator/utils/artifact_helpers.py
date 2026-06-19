@@ -4,6 +4,32 @@ from __future__ import annotations
 
 from typing import Any
 
+from backend.utils.city_normalization import format_city_stem, normalize_city_key
+
+
+def _default_city_summary_entry(city_name: str) -> dict[str, object]:
+    """Return the default summary shape for one city."""
+    return {
+        "city_name": city_name,
+        "batch_count": 0,
+        "chunk_count": 0,
+        "accepted_chunk_count": 0,
+        "rejected_chunk_count": 0,
+        "unresolved_chunk_count": 0,
+        "excerpt_count": 0,
+        "status": "success",
+        "error": None,
+    }
+
+
+def _get_city_summary_entry(
+    city_meta: dict[str, dict[str, object]],
+    city_key: str,
+    city_name: str,
+) -> dict[str, object]:
+    """Return one mutable city summary entry, creating it when needed."""
+    return city_meta.setdefault(city_key, _default_city_summary_entry(city_name))
+
 
 def percentile(values: list[float], percentile_rank: float) -> float | None:
     """Return a simple nearest-rank percentile for artifact metrics."""
@@ -85,6 +111,7 @@ def build_markdown_metrics(
     markdown_chunks: list[dict[str, object]],
     markdown_bundle: dict[str, Any],
     rejected_artifact: dict[str, object],
+    city_summary_artifact: dict[str, object],
     decision_audit_artifact: dict[str, object],
 ) -> dict[str, object]:
     """Summarize markdown extraction quality and mismatch signals."""
@@ -103,10 +130,175 @@ def build_markdown_metrics(
         "markdown_decision_invariant_ok": decision_audit_artifact.get("invariant_ok"),
         "accepted_status": decision_audit_artifact.get("status"),
         "rejected_status": rejected_artifact.get("status"),
+        "markdown_city_count": len(city_summary_artifact.get("cities", []) or []),
+        "markdown_cities_with_excerpts_count": len(
+            city_summary_artifact.get("cities_with_excerpts", []) or []
+        ),
+        "markdown_cities_without_excerpts_count": len(
+            city_summary_artifact.get("cities_without_excerpts", []) or []
+        ),
+        "markdown_cities_with_failures_count": len(
+            city_summary_artifact.get("cities_with_failures", []) or []
+        ),
+    }
+
+
+def build_markdown_city_summary(
+    *,
+    markdown_chunks: list[dict[str, object]],
+    markdown_bundle: dict[str, Any],
+    decision_audit_artifact: dict[str, object],
+    batches_payload: dict[str, object] | None = None,
+) -> dict[str, object]:
+    """Build one city-level markdown extraction summary artifact."""
+    city_meta: dict[str, dict[str, object]] = {}
+    chunk_city_by_id: dict[str, str] = {}
+
+    for chunk in markdown_chunks:
+        chunk_id = str(chunk.get("chunk_id", "")).strip()
+        raw_city_key = str(chunk.get("city_key", "")).strip()
+        raw_city_name = str(chunk.get("city_name", "")).strip()
+        city_key = normalize_city_key(raw_city_key or raw_city_name)
+        if not city_key:
+            city_key = "unknown"
+        city_name = format_city_stem(raw_city_name or city_key)
+        city_entry = _get_city_summary_entry(city_meta, city_key, city_name)
+        city_entry["chunk_count"] = int(city_entry["chunk_count"]) + 1
+        if raw_city_name and not str(city_entry["city_name"]).strip():
+            city_entry["city_name"] = format_city_stem(raw_city_name)
+        if chunk_id:
+            chunk_city_by_id[chunk_id] = city_key
+
+    batch_entries = (
+        batches_payload.get("batches") if isinstance(batches_payload, dict) else None
+    )
+    if isinstance(batch_entries, list):
+        for batch in batch_entries:
+            if not isinstance(batch, dict):
+                continue
+            city_key = normalize_city_key(str(batch.get("city_name", "")).strip())
+            if not city_key:
+                continue
+            city_entry = _get_city_summary_entry(
+                city_meta, city_key, format_city_stem(city_key)
+            )
+            city_entry["batch_count"] = int(city_entry["batch_count"]) + 1
+
+    for chunk_id in markdown_bundle.get("accepted_chunk_ids", []) or []:
+        if not isinstance(chunk_id, str):
+            continue
+        city_key = chunk_city_by_id.get(chunk_id.strip())
+        if city_key is None:
+            continue
+        city_meta[city_key]["accepted_chunk_count"] = (
+            int(city_meta[city_key]["accepted_chunk_count"]) + 1
+        )
+
+    for chunk_id in markdown_bundle.get("rejected_chunk_ids", []) or []:
+        if not isinstance(chunk_id, str):
+            continue
+        city_key = chunk_city_by_id.get(chunk_id.strip())
+        if city_key is None:
+            continue
+        city_meta[city_key]["rejected_chunk_count"] = (
+            int(city_meta[city_key]["rejected_chunk_count"]) + 1
+        )
+
+    for chunk_id in decision_audit_artifact.get("missing_chunk_ids", []) or []:
+        if not isinstance(chunk_id, str):
+            continue
+        city_key = chunk_city_by_id.get(chunk_id.strip())
+        if city_key is None:
+            continue
+        city_meta[city_key]["unresolved_chunk_count"] = (
+            int(city_meta[city_key]["unresolved_chunk_count"]) + 1
+        )
+
+    for chunk_id in markdown_bundle.get("unresolved_chunk_ids", []) or []:
+        if not isinstance(chunk_id, str):
+            continue
+        city_key = chunk_city_by_id.get(chunk_id.strip())
+        if city_key is None:
+            continue
+        city_meta[city_key]["unresolved_chunk_count"] = (
+            int(city_meta[city_key]["unresolved_chunk_count"]) + 1
+        )
+
+    for excerpt in markdown_bundle.get("excerpts", []) or []:
+        if not isinstance(excerpt, dict):
+            continue
+        city_key = normalize_city_key(str(excerpt.get("city_key", "")).strip())
+        if not city_key:
+            city_key = normalize_city_key(str(excerpt.get("city_name", "")).strip())
+        if not city_key:
+            continue
+        city_entry = _get_city_summary_entry(
+            city_meta,
+            city_key,
+            format_city_stem(str(excerpt.get("city_name", "")).strip() or city_key),
+        )
+        city_entry["excerpt_count"] = int(city_entry["excerpt_count"]) + 1
+
+    for failure in decision_audit_artifact.get("batch_failures", []) or []:
+        if not isinstance(failure, dict):
+            continue
+        city_key = normalize_city_key(str(failure.get("city_name", "")).strip())
+        if not city_key:
+            city_key = "unknown"
+        city_entry = _get_city_summary_entry(
+            city_meta,
+            city_key,
+            format_city_stem(str(failure.get("city_name", "")).strip() or city_key),
+        )
+        city_entry["status"] = "partial"
+        error_payload = city_entry.get("error")
+        reasons = (
+            []
+            if not isinstance(error_payload, dict)
+            else list(error_payload.get("reasons", []) or [])
+        )
+        reason = str(failure.get("reason", "")).strip()
+        if reason and reason not in reasons:
+            reasons.append(reason)
+        unresolved_chunk_ids = failure.get("unresolved_chunk_ids")
+        if isinstance(unresolved_chunk_ids, list):
+            city_entry["unresolved_chunk_count"] = (
+                int(city_entry["unresolved_chunk_count"])
+                + len(
+                    [
+                        chunk_id
+                        for chunk_id in unresolved_chunk_ids
+                        if isinstance(chunk_id, str)
+                    ]
+                )
+            )
+        city_entry["error"] = {"reasons": reasons}
+
+    cities = []
+    for city_key in sorted(city_meta.keys()):
+        city_entry = dict(city_meta[city_key])
+        city_entry["city_key"] = city_key
+        cities.append(city_entry)
+
+    cities_with_excerpts = [
+        city["city_key"] for city in cities if int(city.get("excerpt_count") or 0) > 0
+    ]
+    cities_without_excerpts = [
+        city["city_key"] for city in cities if int(city.get("excerpt_count") or 0) == 0
+    ]
+    cities_with_failures = [
+        city["city_key"] for city in cities if str(city.get("status", "")) != "success"
+    ]
+    return {
+        "cities": cities,
+        "cities_with_excerpts": cities_with_excerpts,
+        "cities_without_excerpts": cities_without_excerpts,
+        "cities_with_failures": cities_with_failures,
     }
 
 
 __all__ = [
+    "build_markdown_city_summary",
     "build_markdown_metrics",
     "build_retrieval_metrics",
     "build_source_chunk_index",

@@ -1,10 +1,13 @@
 from __future__ import annotations
 
 import hashlib
+import logging
 import json
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+
+logger = logging.getLogger(__name__)
 
 
 def now_iso() -> str:
@@ -58,6 +61,23 @@ def load_manifest(path: Path) -> dict[str, Any]:
 
 def save_manifest(path: Path, manifest: dict[str, Any]) -> None:
     """Write manifest JSON to disk."""
+    files_payload = manifest.get("files", {})
+    files = files_payload if isinstance(files_payload, dict) else {}
+    chunk_count = 0
+    for payload in files.values():
+        if isinstance(payload, dict):
+            chunk_ids = payload.get("chunk_ids")
+            if isinstance(chunk_ids, list):
+                chunk_count += len(chunk_ids)
+
+    log_fn = logger.warning if not files else logger.info
+    log_fn(
+        "Saving vector-store manifest path=%s file_count=%d chunk_count=%d updated_at=%s",
+        path,
+        len(files),
+        chunk_count,
+        manifest.get("updated_at"),
+    )
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
 
