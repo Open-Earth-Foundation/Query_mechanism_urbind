@@ -56,6 +56,11 @@ def _matching_index_settings_payload(config: AppConfig) -> dict[str, object]:
     }
 
 
+def _test_source_path(filename: str) -> str:
+    """Return the stable manifest key used for one test markdown file."""
+    return f"documents/{filename}"
+
+
 def test_parse_markdown_blocks_tracks_heading_path() -> None:
     """Parser preserves heading stacks in child blocks."""
     text = "\n".join(
@@ -224,7 +229,7 @@ def test_manifest_update_skips_unchanged_and_updates_changed(
     assert third_stats.chunks_created > 0
     assert third_stats.changed_files == [
         {
-            "source_path": file_path.as_posix(),
+            "source_path": "documents/Munich.md",
             "status": "modified",
             "previous_file_hash": first_stats.changed_files[0]["current_file_hash"],
             "current_file_hash": third_stats.changed_files[0]["current_file_hash"],
@@ -233,6 +238,88 @@ def test_manifest_update_skips_unchanged_and_updates_changed(
             "removed_previous_chunk_count": first_stats.chunks_created,
         }
     ]
+
+
+def test_manifest_update_keeps_documents_relative_keys_across_mount_paths(
+    tmp_path: Path,
+    monkeypatch,
+) -> None:
+    """Legacy mount-specific manifest keys should normalize to `documents/...`."""
+    docs_dir = tmp_path / "mounted" / "documents"
+    docs_dir.mkdir(parents=True)
+    file_path = docs_dir / "Munich.md"
+    file_path.write_text("# Munich\n\nInitial content.", encoding="utf-8")
+    config = _build_config(tmp_path)
+
+    class FakeStore:
+        def __init__(self, persist_path: Path, collection_name: str) -> None:
+            self.persist_path = persist_path
+            self.collection_name = collection_name
+
+        def reset_collection(self) -> None:
+            return None
+
+        def delete(self, ids: list[str]) -> None:
+            del ids
+
+        def upsert(self, chunks) -> None:
+            del chunks
+
+    monkeypatch.setattr("backend.modules.vector_store.indexer.ChromaStore", FakeStore)
+
+    class FakeEmbeddingProvider:
+        def __init__(
+            self,
+            model: str,
+            base_url: str | None = None,
+            batch_size: int = 100,
+            max_retries: int = 3,
+            retry_base_seconds: float = 0.8,
+            retry_max_seconds: float = 8.0,
+            max_input_tokens: int | None = None,
+        ) -> None:
+            self.model = model
+            self.base_url = base_url
+            self.batch_size = batch_size
+            self.max_retries = max_retries
+            self.retry_base_seconds = retry_base_seconds
+            self.retry_max_seconds = retry_max_seconds
+            self.max_input_tokens = max_input_tokens
+
+        def embed_texts(self, texts: list[str]) -> list[list[float] | None]:
+            return [[0.1, 0.2, 0.3] for _ in texts]
+
+    monkeypatch.setattr(
+        "backend.modules.vector_store.indexer.OpenAIEmbeddingProvider",
+        FakeEmbeddingProvider,
+    )
+
+    applied_stats = update_markdown_index(config=config, docs_dir=docs_dir, dry_run=False)
+    assert applied_stats.files_changed == 1
+    assert applied_stats.changed_files[0]["source_path"] == "documents/Munich.md"
+
+    config.vector_store.index_manifest_path.write_text(
+        json.dumps(
+            {
+                "index_settings": _matching_index_settings_payload(config),
+                "files": {
+                    "/data/documents/Munich.md": {
+                        "file_hash": load_manifest(config.vector_store.index_manifest_path)["files"][
+                            "documents/Munich.md"
+                        ]["file_hash"],
+                        "chunk_ids": ["chunk-1"],
+                    }
+                },
+            },
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
+
+    dry_run_stats = update_markdown_index(config=config, docs_dir=docs_dir, dry_run=True)
+    assert dry_run_stats.files_changed == 0
+    assert dry_run_stats.files_deleted == 0
+    assert dry_run_stats.files_unchanged == 1
 
 
 def test_vector_store_snapshot_includes_auto_update_diagnostics(tmp_path: Path) -> None:
@@ -267,7 +354,10 @@ def test_vector_store_snapshot_includes_auto_update_diagnostics(tmp_path: Path) 
     )
 
     assert snapshot["auto_update"] == {
+        "checked": True,
         "ran": True,
+        "applied": True,
+        "dry_run": False,
         "update_mode": "incremental_update",
         "trigger": "auto_update_on_run",
         "selected_cities": ["Munich"],
@@ -499,13 +589,13 @@ def test_update_markdown_index_filtered_city_does_not_delete_other_manifest_entr
   }
 }
 """
-        % (
-            json.dumps(_matching_index_settings_payload(config)),
-            munich_path.as_posix(),
-            berlin_path.as_posix(),
-        ),
-        encoding="utf-8",
-    )
+            % (
+                json.dumps(_matching_index_settings_payload(config)),
+                _test_source_path("Munich.md"),
+                _test_source_path("Berlin.md"),
+            ),
+            encoding="utf-8",
+        )
 
     class FakeStore:
         delete_calls: list[list[str]] = []
@@ -560,7 +650,7 @@ def test_update_markdown_index_filtered_city_does_not_delete_other_manifest_entr
     assert ["old-b-1"] not in FakeStore.delete_calls
     manifest = load_manifest(config.vector_store.index_manifest_path)
     files = manifest.get("files", {})
-    assert berlin_path.as_posix() in files
+    assert _test_source_path("Berlin.md") in files
 
 
 def test_update_markdown_index_embedding_failure_aborts_before_delete_and_manifest_write(
@@ -578,7 +668,7 @@ def test_update_markdown_index_embedding_failure_aborts_before_delete_and_manife
         "{\n"
         f'  "index_settings": {json.dumps(_matching_index_settings_payload(config))},\n'
         '  "files": {\n'
-        f'    "{munich_path.as_posix()}": '
+        f'    "{_test_source_path("Munich.md")}": '
         '{"file_hash": "old-munich-hash", "chunk_ids": ["old-munich-1"]}\n'
         "  }\n"
         "}\n"
@@ -737,7 +827,7 @@ def test_update_markdown_index_upserts_before_deleting_old_chunks(
 """
         % (
             json.dumps(_matching_index_settings_payload(config)),
-            munich_path.as_posix(),
+            _test_source_path("Munich.md"),
         ),
         encoding="utf-8",
     )
@@ -820,7 +910,7 @@ def test_update_markdown_index_deletes_only_stale_old_ids_when_chunks_overlap(
 """
         % (
             json.dumps(_matching_index_settings_payload(config)),
-            munich_path.as_posix(),
+            _test_source_path("Munich.md"),
         ),
         encoding="utf-8",
     )
@@ -868,12 +958,12 @@ def test_update_markdown_index_deletes_only_stale_old_ids_when_chunks_overlap(
                 IndexedChunk(
                     chunk_id="chunk_keep",
                     document="new content keep",
-                    metadata={"source_path": munich_path.as_posix()},
+                    metadata={"source_path": _test_source_path("Munich.md")},
                 ),
                 IndexedChunk(
                     chunk_id="chunk_new_only",
                     document="new content only",
-                    metadata={"source_path": munich_path.as_posix()},
+                    metadata={"source_path": _test_source_path("Munich.md")},
                 ),
             ],
         )
@@ -899,7 +989,10 @@ def test_update_markdown_index_deletes_only_stale_old_ids_when_chunks_overlap(
     assert FakeStore.delete_calls == [["chunk_old_only"]]
     manifest = load_manifest(config.vector_store.index_manifest_path)
     files = manifest.get("files", {})
-    assert files[munich_path.as_posix()]["chunk_ids"] == ["chunk_keep", "chunk_new_only"]
+    assert files[_test_source_path("Munich.md")]["chunk_ids"] == [
+        "chunk_keep",
+        "chunk_new_only",
+    ]
 
 
 def test_openai_embedding_provider_retries_empty_batch_response(

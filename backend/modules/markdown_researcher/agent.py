@@ -43,6 +43,7 @@ from backend.utils.retry import (
     log_retry_event,
     log_retry_exhausted,
 )
+from backend.utils.tokenization import count_tokens
 
 logger = logging.getLogger(__name__)
 
@@ -579,6 +580,22 @@ def extract_markdown_excerpts(
         split_path: tuple[int, ...] = (),
     ) -> _BatchExecutionResult:
         """Process one city batch and optionally recover by recursively halving it."""
+        split_label = _render_split_path(split_path) or "root"
+        estimated_tokens = sum(
+            max(count_tokens(str(document.get("content", ""))), 0) for document in batch
+        )
+        logger.info(
+            (
+                "run_id=%s city=%s batch=%s split=%s markdown batch started "
+                "chunk_count=%d estimated_tokens=%d"
+            ),
+            run_id,
+            city_name,
+            batch_index,
+            split_label,
+            len(batch),
+            estimated_tokens,
+        )
         attempt_result = _run_batch_attempts(
             city_name,
             batch_index,
@@ -587,6 +604,19 @@ def extract_markdown_excerpts(
             split_path=split_path,
         )
         if attempt_result.success:
+            logger.info(
+                (
+                    "run_id=%s city=%s batch=%s split=%s markdown batch completed "
+                    "accepted=%d rejected=%d excerpts=%d"
+                ),
+                run_id,
+                city_name,
+                batch_index,
+                split_label,
+                len(attempt_result.accepted_chunk_ids),
+                len(attempt_result.rejected_chunk_ids),
+                len(attempt_result.excerpts),
+            )
             return _BatchExecutionResult(
                 excerpts=list(attempt_result.excerpts),
                 accepted_chunk_ids=list(attempt_result.accepted_chunk_ids),
@@ -594,7 +624,6 @@ def extract_markdown_excerpts(
                 any_success=True,
             )
 
-        split_label = _render_split_path(split_path) or "root"
         logger.warning(
             (
                 "run_id=%s city=%s batch=%s split=%s markdown batch failed "
@@ -614,6 +643,17 @@ def extract_markdown_excerpts(
             and split_depth < MARKDOWN_SPLIT_MAX_DEPTH
         )
         if not can_split:
+            logger.warning(
+                (
+                    "run_id=%s city=%s batch=%s split=%s markdown batch finalized "
+                    "status=failed unresolved=%d"
+                ),
+                run_id,
+                city_name,
+                batch_index,
+                split_label,
+                len(attempt_result.unresolved_chunk_ids),
+            )
             return _finalize_failed_batch(
                 city_name,
                 batch_index,
@@ -667,6 +707,21 @@ def extract_markdown_excerpts(
             )
             if aggregate.error is None and child_result.error is not None:
                 aggregate.error = child_result.error
+        logger.info(
+            (
+                "run_id=%s city=%s batch=%s split=%s markdown batch completed "
+                "accepted=%d rejected=%d unresolved=%d excerpts=%d recovered_by_split=%s"
+            ),
+            run_id,
+            city_name,
+            batch_index,
+            split_label,
+            len(aggregate.accepted_chunk_ids),
+            len(aggregate.rejected_chunk_ids),
+            len(aggregate.unresolved_chunk_ids),
+            len(aggregate.excerpts),
+            aggregate.any_success,
+        )
         return aggregate
 
     batch_max_chunks = max(config.markdown_researcher.batch_max_chunks, 1)

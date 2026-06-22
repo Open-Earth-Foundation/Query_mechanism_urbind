@@ -168,15 +168,24 @@ def test_markdown_payload_batches_keep_city_chunk_integrity(
     assert len(captured_payloads) == 3
 
     seen_chunk_ids: list[str] = []
+    batch_chunk_ids: list[list[str]] = []
     for payload in captured_payloads:
         city_name = payload["city_name"]
         chunks = payload["chunks"]
         assert 1 <= len(chunks) <= 2
+        payload_chunk_ids: list[str] = []
         for chunk in chunks:
             if str(city_name).casefold() == "a":
                 assert chunk["chunk_id"].startswith("a")
             if str(city_name).casefold() == "b":
                 assert chunk["chunk_id"].startswith("b")
+            payload_chunk_ids.append(chunk["chunk_id"])
             seen_chunk_ids.append(chunk["chunk_id"])
+        batch_chunk_ids.append(payload_chunk_ids)
 
-    assert seen_chunk_ids == ["a1", "a2", "a3", "b1"]
+    assert sorted(seen_chunk_ids) == ["a1", "a2", "a3", "b1"]
+    assert sorted(batch_chunk_ids, key=lambda chunk_ids: chunk_ids[0]) == [
+        ["a1", "a2"],
+        ["a3"],
+        ["b1"],
+    ]

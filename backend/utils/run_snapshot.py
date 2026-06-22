@@ -178,8 +178,12 @@ def build_vector_store_snapshot(
     }
     update_payload = _serialize_update_stats(update_stats)
     if update_payload is not None:
+        was_dry_run = bool(update_payload.get("dry_run"))
         snapshot["auto_update"] = {
-            "ran": True,
+            "checked": True,
+            "ran": not was_dry_run,
+            "applied": not was_dry_run,
+            "dry_run": was_dry_run,
             "update_mode": update_payload.get("update_mode"),
             "trigger": "auto_update_on_run",
             "selected_cities": selected_cities or [],

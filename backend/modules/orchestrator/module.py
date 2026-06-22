@@ -7,6 +7,7 @@ from copy import deepcopy
 from pathlib import Path
 from typing import Any, Callable, Literal
 
+from backend.api.services.vector_store_warmup import VectorStoreWarmup
 from backend.modules.markdown_researcher.agent import extract_markdown_excerpts
 from backend.modules.markdown_researcher.models import MarkdownResearchResult
 from backend.modules.markdown_researcher.services import (
@@ -17,6 +18,7 @@ from backend.modules.markdown_researcher.services import (
 )
 from backend.modules.orchestrator.utils import (
     attach_run_file_logger,
+    build_markdown_city_summary,
     build_markdown_metrics,
     build_markdown_references,
     build_retrieval_metrics,
@@ -28,7 +30,6 @@ from backend.modules.orchestrator.utils.error_handlers import (
     detach_run_file_logger,
 )
 from backend.modules.web_researcher.module import run_enrichment_pipeline
-from backend.modules.vector_store.indexer import update_markdown_index
 from backend.modules.vector_store.retriever import (
     as_markdown_documents,
     build_retrieval_artifact,
@@ -503,41 +504,36 @@ def run_pipeline(
         markdown_chunks: list[dict[str, object]]
         if config.vector_store.enabled:
             markdown_source_mode = "vector_store_retrieval"
-            if (
-                config.vector_store.auto_update_on_run
-                and config.vector_store.update_mode == "local_process"
+            update_docs_dir = vector_update_docs_dir or config.markdown_dir
+            warmup = VectorStoreWarmup()
+            blocking_reason = warmup.ensure_ready_for_run(
+                config=config,
+                docs_dir=update_docs_dir,
+            )
+            warmup_snapshot = warmup.snapshot()
+            if blocking_reason:
+                logger.error(
+                    "Vector store readiness blocked run_id=%s status=%s reason=%s",
+                    run_id_value,
+                    warmup_snapshot.get("status"),
+                    blocking_reason,
+                )
+                raise RuntimeError(blocking_reason)
+
+            update_stats = warmup_snapshot.get("stats")
+            if not (
+                isinstance(update_stats, dict) and bool(update_stats.get("dry_run")) is False
             ):
-                update_docs_dir = vector_update_docs_dir or config.markdown_dir
-                update_stats = update_markdown_index(
-                    config=config,
-                    docs_dir=update_docs_dir,
-                    selected_cities=selected_cities,
-                    dry_run=False,
-                )
-                logger.info(
-                    "Vector index auto-update finished run_id=%s changed=%d unchanged=%d "
-                    "deleted=%d chunks=%d",
-                    run_id_value,
-                    update_stats.files_changed,
-                    update_stats.files_unchanged,
-                    update_stats.files_deleted,
-                    update_stats.chunks_created,
-                )
-                nonlocal snapshot_summary, snapshot_artifacts
-                snapshot_summary, snapshot_artifacts = _refresh_vector_store_snapshot(
-                    run_logger=run_logger,
-                    config=config,
-                    snapshot_summary=snapshot_summary,
-                    snapshot_artifacts=snapshot_artifacts,
-                    update_stats=update_stats,
-                    selected_cities=selected_cities,
-                )
-            elif config.vector_store.auto_update_on_run:
-                logger.info(
-                    "Vector index auto-update is delegated to update_mode=%s run_id=%s",
-                    config.vector_store.update_mode,
-                    run_id_value,
-                )
+                update_stats = None
+            nonlocal snapshot_summary, snapshot_artifacts
+            snapshot_summary, snapshot_artifacts = _refresh_vector_store_snapshot(
+                run_logger=run_logger,
+                config=config,
+                snapshot_summary=snapshot_summary,
+                snapshot_artifacts=snapshot_artifacts,
+                update_stats=update_stats,
+                selected_cities=None,
+            )
             retrieval_kwargs: dict[str, object] = {
                 "queries": retrieval_queries,
                 "config": config,
@@ -683,6 +679,7 @@ def run_pipeline(
             **markdown_kwargs,
         )
         return {
+            "batches_payload": batches_payload,
             "markdown_chunks": markdown_chunks,
             "result": markdown_result,
             "retrieval_queries": retrieval_queries,
@@ -702,6 +699,7 @@ def run_pipeline(
         return paths
 
     # Process and log initial markdown results
+    batches_payload = markdown_payload.get("batches_payload")
     markdown_chunks = markdown_payload["markdown_chunks"]
     markdown_result = markdown_payload["result"]
     if isinstance(markdown_result, MarkdownResearchResult):
@@ -805,6 +803,18 @@ def run_pipeline(
             accepted_excerpts_payload,
             alias="markdown_excerpts",
         )
+        city_summary_artifact = build_markdown_city_summary(
+            markdown_chunks=markdown_chunks,
+            markdown_bundle=markdown_bundle,
+            decision_audit_artifact=decision_audit_artifact,
+            batches_payload=batches_payload if isinstance(batches_payload, dict) else None,
+        )
+        city_summary_path = run_logger.write_stage_file(
+            "markdown_extraction",
+            "city_summary.json",
+            city_summary_artifact,
+            alias="markdown_city_summary",
+        )
         run_logger.update_markdown_bundle(markdown_bundle)
         run_logger.write_stage_detail(
             "markdown_extraction",
@@ -823,11 +833,21 @@ def run_pipeline(
                     "accepted_excerpts": run_logger.artifact_label(
                         markdown_excerpts_path
                     ),
+                    "city_summary": run_logger.artifact_label(city_summary_path),
                     "rejected_chunks": run_logger.artifact_label(
                         rejected_chunks_path
                     ),
                     "decision_audit": run_logger.artifact_label(
                         decision_audit_path
+                    ),
+                    "cities_with_excerpts": city_summary_artifact.get(
+                        "cities_with_excerpts", []
+                    ),
+                    "cities_without_excerpts": city_summary_artifact.get(
+                        "cities_without_excerpts", []
+                    ),
+                    "cities_with_failures": city_summary_artifact.get(
+                        "cities_with_failures", []
                     ),
                     "selected_cities": context_bundle.get("selected_cities", []),
                     "selected_city_names": context_bundle.get("selected_city_names", []),
@@ -841,6 +861,7 @@ def run_pipeline(
                     markdown_chunks=markdown_chunks,
                     markdown_bundle=markdown_bundle,
                     rejected_artifact=rejected_artifact,
+                    city_summary_artifact=city_summary_artifact,
                     decision_audit_artifact=decision_audit_artifact,
                 ),
             },

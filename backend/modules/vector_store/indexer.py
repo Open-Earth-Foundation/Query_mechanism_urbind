@@ -7,6 +7,7 @@ from dataclasses import dataclass, field, replace
 from datetime import datetime, timezone
 from pathlib import Path
 import json
+from pathlib import PurePosixPath
 
 from openai import OpenAI
 
@@ -227,16 +228,47 @@ def _iter_markdown_files(
     return [path for path in files if normalize_city_key(path.stem) in selected]
 
 
-def _source_path(path: Path, project_root: Path) -> str:
-    """Render project-relative source path for metadata."""
+def _source_path(path: Path, docs_dir: Path, project_root: Path) -> str:
+    """Render one stable source path for manifest keys and chunk metadata."""
+    try:
+        docs_relative_path = path.relative_to(docs_dir)
+    except ValueError:
+        docs_relative_path = None
+    if docs_relative_path is not None:
+        return (Path(docs_dir.name) / docs_relative_path).as_posix()
     try:
         return path.relative_to(project_root).as_posix()
     except ValueError:
         return path.as_posix()
 
 
+def _normalize_manifest_source_path(source_path: str, docs_dir: Path) -> str:
+    """Map legacy absolute manifest keys back to one docs-relative source path."""
+    normalized_path = source_path.replace("\\", "/")
+    parts = PurePosixPath(normalized_path).parts
+    try:
+        docs_index = max(
+            index for index, part in enumerate(parts) if part == docs_dir.name
+        )
+    except ValueError:
+        return normalized_path
+    return Path(*parts[docs_index:]).as_posix()
+
+
+def _normalize_manifest_files_section(
+    files_section: dict[str, dict],
+    docs_dir: Path,
+) -> dict[str, dict]:
+    """Return manifest files keyed by stable docs-relative paths."""
+    normalized_files: dict[str, dict] = {}
+    for source_path, payload in files_section.items():
+        normalized_files[_normalize_manifest_source_path(source_path, docs_dir)] = payload
+    return normalized_files
+
+
 def _build_indexed_chunks_for_file(
     file_path: Path,
+    docs_dir: Path,
     settings: VectorStoreSettings,
     project_root: Path,
 ) -> tuple[str, list[IndexedChunk]]:
@@ -250,7 +282,7 @@ def _build_indexed_chunks_for_file(
         overlap_tokens=settings.chunk_overlap_tokens,
         table_row_group_max_rows=settings.table_row_group_max_rows,
     )
-    source_path = _source_path(file_path, project_root)
+    source_path = _source_path(file_path, docs_dir, project_root)
     city_name = format_city_stem(file_path.stem)
     city_key = normalize_city_key(city_name)
     timestamp = _now_iso()
@@ -455,8 +487,13 @@ def build_markdown_index(
     files_indexed = 0
 
     for index, file_path in enumerate(files, start=1):
-        file_hash, chunks = _build_indexed_chunks_for_file(file_path, settings, project_root)
-        source_path = _source_path(file_path, project_root)
+        file_hash, chunks = _build_indexed_chunks_for_file(
+            file_path,
+            docs_dir,
+            settings,
+            project_root,
+        )
+        source_path = _source_path(file_path, docs_dir, project_root)
         chunk_ids = [chunk.chunk_id for chunk in chunks]
         _apply_manifest_file_entry(
             manifest=manifest,
@@ -592,10 +629,15 @@ def update_markdown_index(
         embedding_chunk_overlap_tokens=settings.chunk_overlap_tokens,
     )
     _apply_manifest_index_settings(manifest, settings_payload)
-    files_section: dict[str, dict] = manifest.setdefault("files", {})
+    files_payload = manifest.setdefault("files", {})
+    files_section = _normalize_manifest_files_section(
+        files_payload if isinstance(files_payload, dict) else {},
+        docs_dir,
+    )
+    manifest["files"] = files_section
 
     current_files = _iter_markdown_files(docs_dir, selected_cities=selected_cities)
-    current_source_map = {_source_path(path, project_root): path for path in current_files}
+    current_source_map = {_source_path(path, docs_dir, project_root): path for path in current_files}
     total_files = len(current_source_map)
     if dry_run:
         logger.debug(
@@ -630,7 +672,12 @@ def update_markdown_index(
             previous.get("chunk_ids", []) if isinstance(previous, dict) else []
         )
 
-        file_hash, chunks = _build_indexed_chunks_for_file(file_path, settings, project_root)
+        file_hash, chunks = _build_indexed_chunks_for_file(
+            file_path,
+            docs_dir,
+            settings,
+            project_root,
+        )
         chunk_ids = [chunk.chunk_id for chunk in chunks]
         changed_entries[source_path] = (file_hash, chunk_ids)
         previous_chunk_id_list = [str(chunk_id) for chunk_id in previous_chunk_ids]
