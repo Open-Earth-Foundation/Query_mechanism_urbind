@@ -153,6 +153,25 @@ def build_markdown_city_summary(
     """Build one city-level markdown extraction summary artifact."""
     city_meta: dict[str, dict[str, object]] = {}
     chunk_city_by_id: dict[str, str] = {}
+    unresolved_ids_by_city: dict[str, set[str]] = {}
+
+    def add_unresolved_chunk_ids(chunk_ids: object) -> None:
+        """Count unresolved chunk ids once per city across all artifact sources."""
+        if not isinstance(chunk_ids, list):
+            return
+        for chunk_id in chunk_ids:
+            if not isinstance(chunk_id, str):
+                continue
+            city_key = chunk_city_by_id.get(chunk_id.strip())
+            if city_key is None:
+                continue
+            city_unresolved_ids = unresolved_ids_by_city.setdefault(city_key, set())
+            if chunk_id in city_unresolved_ids:
+                continue
+            city_unresolved_ids.add(chunk_id)
+            city_meta[city_key]["unresolved_chunk_count"] = (
+                int(city_meta[city_key]["unresolved_chunk_count"]) + 1
+            )
 
     for chunk in markdown_chunks:
         chunk_id = str(chunk.get("chunk_id", "")).strip()
@@ -204,25 +223,8 @@ def build_markdown_city_summary(
             int(city_meta[city_key]["rejected_chunk_count"]) + 1
         )
 
-    for chunk_id in decision_audit_artifact.get("missing_chunk_ids", []) or []:
-        if not isinstance(chunk_id, str):
-            continue
-        city_key = chunk_city_by_id.get(chunk_id.strip())
-        if city_key is None:
-            continue
-        city_meta[city_key]["unresolved_chunk_count"] = (
-            int(city_meta[city_key]["unresolved_chunk_count"]) + 1
-        )
-
-    for chunk_id in markdown_bundle.get("unresolved_chunk_ids", []) or []:
-        if not isinstance(chunk_id, str):
-            continue
-        city_key = chunk_city_by_id.get(chunk_id.strip())
-        if city_key is None:
-            continue
-        city_meta[city_key]["unresolved_chunk_count"] = (
-            int(city_meta[city_key]["unresolved_chunk_count"]) + 1
-        )
+    add_unresolved_chunk_ids(decision_audit_artifact.get("missing_chunk_ids", []) or [])
+    add_unresolved_chunk_ids(markdown_bundle.get("unresolved_chunk_ids", []) or [])
 
     for excerpt in markdown_bundle.get("excerpts", []) or []:
         if not isinstance(excerpt, dict):
@@ -260,18 +262,7 @@ def build_markdown_city_summary(
         reason = str(failure.get("reason", "")).strip()
         if reason and reason not in reasons:
             reasons.append(reason)
-        unresolved_chunk_ids = failure.get("unresolved_chunk_ids")
-        if isinstance(unresolved_chunk_ids, list):
-            city_entry["unresolved_chunk_count"] = (
-                int(city_entry["unresolved_chunk_count"])
-                + len(
-                    [
-                        chunk_id
-                        for chunk_id in unresolved_chunk_ids
-                        if isinstance(chunk_id, str)
-                    ]
-                )
-            )
+        add_unresolved_chunk_ids(failure.get("unresolved_chunk_ids"))
         city_entry["error"] = {"reasons": reasons}
 
     cities = []

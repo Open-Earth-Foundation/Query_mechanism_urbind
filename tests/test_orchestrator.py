@@ -232,6 +232,55 @@ def test_build_markdown_city_summary_rolls_up_city_coverage() -> None:
     ]
 
 
+def test_build_markdown_city_summary_dedupes_failed_batch_unresolved_chunks() -> None:
+    """Avoid double-counting unresolved chunks repeated in batch failures."""
+    markdown_chunks = [
+        {
+            "chunk_id": "chunk-1",
+            "city_name": "Leipzig",
+            "city_key": "leipzig",
+        }
+    ]
+    markdown_bundle = {
+        "accepted_chunk_ids": [],
+        "rejected_chunk_ids": ["chunk-1"],
+        "unresolved_chunk_ids": ["chunk-1"],
+        "excerpts": [],
+    }
+    decision_audit_artifact = {
+        "missing_chunk_ids": [],
+        "batch_failures": [
+            {
+                "city_name": "Leipzig",
+                "batch_index": 1,
+                "reason": "MARKDOWN_BATCH_FAILURE",
+                "unresolved_chunk_ids": ["chunk-1"],
+            }
+        ],
+    }
+
+    summary = build_markdown_city_summary(
+        markdown_chunks=markdown_chunks,
+        markdown_bundle=markdown_bundle,
+        decision_audit_artifact=decision_audit_artifact,
+    )
+
+    assert summary["cities"] == [
+        {
+            "city_name": "Leipzig",
+            "batch_count": 0,
+            "chunk_count": 1,
+            "accepted_chunk_count": 0,
+            "rejected_chunk_count": 1,
+            "unresolved_chunk_count": 1,
+            "excerpt_count": 0,
+            "status": "partial",
+            "error": {"reasons": ["MARKDOWN_BATCH_FAILURE"]},
+            "city_key": "leipzig",
+        }
+    ]
+
+
 def test_run_pipeline_creates_artifacts(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
