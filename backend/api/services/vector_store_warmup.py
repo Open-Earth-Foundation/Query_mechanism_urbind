@@ -295,9 +295,10 @@ class VectorStoreWarmup:
             )
             return
         logger.info(
-            "Vector store refresh completed trigger=%s status=completed added=%d "
-            "changed=%d deleted=%d unchanged=%d chunks=%d",
+            "Vector store refresh completed trigger=%s status=completed indexed=%d "
+            "added=%d changed=%d deleted=%d unchanged=%d chunks=%d",
             trigger,
+            self._count_changed_files_by_status(stats, "indexed"),
             self._count_changed_files_by_status(stats, "added"),
             self._count_changed_files_by_status(stats, "modified"),
             stats.files_deleted,

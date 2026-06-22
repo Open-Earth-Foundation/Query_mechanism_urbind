@@ -193,6 +193,53 @@ def test_vector_store_warmup_records_successful_update(
     assert warmup.is_blocking_runs() is False
 
 
+def test_vector_store_warmup_logs_indexed_count_for_full_rebuild(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+    caplog: pytest.LogCaptureFixture,
+) -> None:
+    """Warm-up completion log should surface full-rebuild indexed file counts."""
+    config = build_test_app_config(runs_dir=tmp_path / "runs", markdown_dir=tmp_path)
+    config.vector_store.enabled = True
+    config.vector_store.auto_update_on_run = True
+    calls: list[bool] = []
+
+    def _fake_update_markdown_index(**kwargs):
+        calls.append(bool(kwargs["dry_run"]))
+        return SimpleNamespace(
+            files_indexed=2,
+            files_changed=2,
+            files_unchanged=0,
+            files_deleted=0,
+            chunks_created=8,
+            table_chunks=0,
+            min_tokens=1,
+            avg_tokens=1.0,
+            max_tokens=1,
+            dry_run=bool(kwargs["dry_run"]),
+            update_mode="index_settings_changed_or_missing",
+            changed_files=[
+                {"source_path": "documents/Aachen.md", "status": "indexed"},
+                {"source_path": "documents/Berlin.md", "status": "indexed"},
+            ],
+            deleted_files=[],
+        )
+
+    monkeypatch.setattr(
+        warmup_module,
+        "update_markdown_index",
+        _fake_update_markdown_index,
+    )
+    warmup = VectorStoreWarmup()
+
+    with caplog.at_level("INFO"):
+        warmup.start(config=config, docs_dir=tmp_path)
+        warmup.shutdown(wait=True)
+
+    assert calls == [True, False]
+    assert "indexed=2 added=0 changed=0 deleted=0 unchanged=0 chunks=8" in caplog.text
+
+
 def test_vector_store_warmup_records_failed_update_artifact(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
