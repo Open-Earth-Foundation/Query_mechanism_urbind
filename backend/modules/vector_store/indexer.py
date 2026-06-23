@@ -479,13 +479,14 @@ def _resolve_index_scope(
     return None
 
 
-def _guard_against_empty_rebuild_wipe(
+def _guard_against_empty_manifest_wipe(
     *,
     manifest_path: Path,
     discovered_files: list[Path],
     dry_run: bool,
+    operation_label: str,
 ) -> None:
-    """Abort a real full rebuild when zero discovered files would wipe persisted state."""
+    """Abort a real write when zero discovered files would wipe persisted state."""
     if dry_run or discovered_files:
         return
     existing_manifest = load_manifest(manifest_path)
@@ -494,7 +495,7 @@ def _guard_against_empty_rebuild_wipe(
     if existing_file_count == 0:
         return
     raise RuntimeError(
-        "Refusing to rebuild vector store with zero discovered markdown files because "
+        f"Refusing to {operation_label} vector store with zero discovered markdown files because "
         f"the existing manifest at {manifest_path} still tracks {existing_file_count} files. "
         "Check docs_dir or city filters before rebuilding."
     )
@@ -524,10 +525,11 @@ def build_markdown_index(
         docs_dir,
         dry_run,
     )
-    _guard_against_empty_rebuild_wipe(
+    _guard_against_empty_manifest_wipe(
         manifest_path=settings.manifest_path,
         discovered_files=files,
         dry_run=dry_run,
+        operation_label="rebuild",
     )
 
     manifest = {"files": {}}
@@ -698,6 +700,12 @@ def update_markdown_index(
     manifest["files"] = files_section
 
     current_files = _iter_markdown_files(docs_dir, selected_cities=effective_selected_cities)
+    _guard_against_empty_manifest_wipe(
+        manifest_path=settings.manifest_path,
+        discovered_files=current_files,
+        dry_run=dry_run,
+        operation_label="update",
+    )
     current_source_map = {_source_path(path, docs_dir, project_root): path for path in current_files}
     total_files = len(current_source_map)
     if dry_run:
