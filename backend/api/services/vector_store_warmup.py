@@ -633,9 +633,9 @@ class VectorStoreWarmup:
             return None
         return read_update_status(path)
 
-    def _has_running_status_timed_out(self, payload: dict[str, object]) -> bool:
-        """Return true when a running Job status has exceeded its timeout window."""
-        if payload.get("status") != "running":
+    def _has_active_status_timed_out(self, payload: dict[str, object]) -> bool:
+        """Return true when a checking/running status has exceeded its timeout window."""
+        if payload.get("status") not in {"checking", "running"}:
             return False
         raw_started_at = payload.get("started_at") or payload.get("updated_at")
         if not isinstance(raw_started_at, str) or not raw_started_at.strip():
@@ -659,8 +659,16 @@ class VectorStoreWarmup:
         file_update_mode = str(payload.get("update_mode", "")).strip()
         return not file_update_mode or file_update_mode == self._update_mode
 
-    def _timed_out_running_status_message(self) -> tuple[str, str]:
-        """Return user-facing message and error for one timed-out running status."""
+    def _timed_out_active_status_message(
+        self,
+        payload: dict[str, object],
+    ) -> tuple[str, str]:
+        """Return user-facing message and error for one timed-out active status."""
+        if payload.get("status") == "checking":
+            return (
+                "Vector store freshness check timed out before completing.",
+                "Vector store freshness check timed out.",
+            )
         if self._update_mode == "local_process":
             return (
                 "Vector store local update timed out before writing a completion status.",
@@ -675,8 +683,8 @@ class VectorStoreWarmup:
         self,
         payload: dict[str, object],
     ) -> dict[str, object]:
-        """Persist a failed status when a stale running status has timed out."""
-        message, error = self._timed_out_running_status_message()
+        """Persist a failed status when a stale active status has timed out."""
+        message, error = self._timed_out_active_status_message(payload)
         status_path = self._status_path
         if status_path is None:
             updated_payload = dict(payload)
@@ -715,9 +723,9 @@ class VectorStoreWarmup:
             "failed",
         }:
             return
-        if self._has_running_status_timed_out(file_status):
+        if self._has_active_status_timed_out(file_status):
             file_status = self._reconcile_timed_out_file_status(file_status)
-            message, error = self._timed_out_running_status_message()
+            message, error = self._timed_out_active_status_message(file_status)
             self._status = "failed"
             self._message = message
             self._error = error
@@ -740,7 +748,7 @@ class VectorStoreWarmup:
         if (
             isinstance(file_status, dict)
             and self._is_compatible_file_status(file_status)
-            and self._has_running_status_timed_out(file_status)
+            and self._has_active_status_timed_out(file_status)
         ):
             file_status = self._reconcile_timed_out_file_status(file_status)
         with self._lock:
