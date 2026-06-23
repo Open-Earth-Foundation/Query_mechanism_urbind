@@ -14,7 +14,7 @@ from backend.modules.vector_store.indexer import (
     update_markdown_index,
 )
 from backend.modules.vector_store.manifest import load_manifest
-from backend.modules.vector_store.manifest import build_chunk_id
+from backend.modules.vector_store.manifest import build_chunk_id, save_manifest
 from backend.modules.vector_store.markdown_blocks import parse_markdown_blocks
 from backend.modules.vector_store.models import IndexedChunk
 from backend.modules.vector_store.chunk_packer import pack_blocks
@@ -800,7 +800,7 @@ def test_build_markdown_index_refuses_to_wipe_non_empty_manifest_when_no_files_f
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     """Full rebuild aborts before reset when discovery returns zero markdown files."""
-    docs_dir = tmp_path / "documents"
+    docs_dir = tmp_path / "empty-documents"
     docs_dir.mkdir(parents=True)
     config = _build_config(tmp_path)
     config.vector_store.index_manifest_path.parent.mkdir(parents=True, exist_ok=True)
@@ -838,7 +838,7 @@ def test_build_markdown_index_refuses_to_wipe_non_empty_manifest_when_no_files_f
     with pytest.raises(RuntimeError, match="Refusing to rebuild vector store with zero"):
         build_markdown_index(
             config=config,
-            docs_dir=tmp_path / "missing-documents",
+            docs_dir=docs_dir,
             dry_run=False,
         )
 
@@ -857,7 +857,7 @@ def test_update_markdown_index_refuses_to_wipe_non_empty_manifest_when_no_files_
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     """Incremental update aborts before deletes when discovery returns zero markdown files."""
-    docs_dir = tmp_path / "documents"
+    docs_dir = tmp_path / "empty-documents"
     docs_dir.mkdir(parents=True)
     config = _build_config(tmp_path)
     config.vector_store.index_manifest_path.parent.mkdir(parents=True, exist_ok=True)
@@ -896,7 +896,7 @@ def test_update_markdown_index_refuses_to_wipe_non_empty_manifest_when_no_files_
     with pytest.raises(RuntimeError, match="Refusing to update vector store with zero"):
         update_markdown_index(
             config=config,
-            docs_dir=tmp_path / "missing-documents",
+            docs_dir=docs_dir,
             dry_run=False,
         )
 
@@ -909,6 +909,56 @@ def test_update_markdown_index_refuses_to_wipe_non_empty_manifest_when_no_files_
             "chunk_ids": ["existing-chunk-id"],
         }
     }
+
+
+def test_update_markdown_index_raises_for_missing_markdown_directory(
+    tmp_path: Path,
+) -> None:
+    """Incremental update fails loudly when docs_dir does not exist."""
+    config = _build_config(tmp_path)
+
+    with pytest.raises(FileNotFoundError, match="Markdown directory does not exist"):
+        update_markdown_index(
+            config=config,
+            docs_dir=tmp_path / "missing-documents",
+            dry_run=True,
+        )
+
+
+def test_save_manifest_writes_audit_artifact(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Manifest writes should leave a small system artifact explaining the writer."""
+    runs_dir = tmp_path / "output"
+    monkeypatch.setenv("RUNS_DIR", str(runs_dir))
+    manifest_path = tmp_path / ".chroma" / "index_manifest.json"
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir(parents=True)
+
+    save_manifest(
+        manifest_path,
+        {
+            "updated_at": "2026-06-23T18:00:00+00:00",
+            "files": {
+                _test_source_path("Munich.md"): {
+                    "file_hash": "hash",
+                    "chunk_ids": ["chunk-1", "chunk-2"],
+                }
+            },
+        },
+        reason="test_save_manifest",
+        docs_dir=docs_dir,
+        metadata={"trigger": "unit_test"},
+    )
+
+    latest_audit_path = runs_dir / "system" / "vector_store_manifest_writes" / "latest.json"
+    latest_payload = json.loads(latest_audit_path.read_text(encoding="utf-8"))
+    assert latest_payload["reason"] == "test_save_manifest"
+    assert latest_payload["docs_dir"] == str(docs_dir)
+    assert latest_payload["file_count"] == 1
+    assert latest_payload["chunk_count"] == 2
+    assert latest_payload["metadata"] == {"trigger": "unit_test"}
 
 
 def test_build_markdown_index_ignores_selected_city_scope_for_persisted_writes(
