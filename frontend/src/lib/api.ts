@@ -98,6 +98,63 @@ export interface RunStatusResponse {
   steps?: PipelineStep[] | null;
 }
 
+export type ArtifactFieldStatus = "estimated" | "non_estimable" | "unresolved";
+
+export interface ArtifactFieldSource {
+  source_id?: string | null;
+  title?: string | null;
+  quote?: string | null;
+  has_evidence: boolean;
+}
+
+export interface ArtifactFieldEstimate {
+  low?: number | string | null;
+  mid?: number | string | null;
+  high?: number | string | null;
+  method?: string | null;
+  confidence?: string | null;
+  basis?: string | null;
+}
+
+export interface ArtifactField {
+  city: string;
+  field: string;
+  type?: string | null;
+  scope?: string | null;
+  status: ArtifactFieldStatus;
+  explanation?: string | null;
+  gap_description?: string | null;
+  recommendation?: string | null;
+  estimate?: ArtifactFieldEstimate | null;
+  sources: ArtifactFieldSource[];
+  reason?: string | null;
+  reason_label?: string | null;
+}
+
+export interface ArtifactStage {
+  stage_number?: number | null;
+  name: string;
+  status: string;
+  metrics: Record<string, unknown>;
+  inputs: Record<string, unknown>;
+}
+
+export interface EnrichmentStep {
+  key: string;
+  label: string;
+  summary: string;
+  metrics: Record<string, unknown>;
+  warn?: string | null;
+}
+
+export interface RunArtifactsResponse {
+  run_id: string;
+  status: RunStatus;
+  fields: ArtifactField[];
+  stages: ArtifactStage[];
+  enrichment_steps: EnrichmentStep[];
+}
+
 export interface RunDiagnosticsArtifactPaths {
   run_log?: string | null;
   run_summary?: string | null;
@@ -678,6 +735,16 @@ export async function downloadRunWriterContextMarkdownExport(runId: string): Pro
 
 export async function fetchRunContext(runId: string): Promise<RunContextResponse> {
   return requestJson<RunContextResponse>(`/api/v1/runs/${encodeURIComponent(runId)}/context`);
+}
+
+export async function fetchRunArtifacts(
+  runId: string,
+  options?: { signal?: AbortSignal },
+): Promise<RunArtifactsResponse> {
+  return requestJson<RunArtifactsResponse>(
+    `/api/v1/runs/${encodeURIComponent(runId)}/artifacts`,
+    { signal: options?.signal },
+  );
 }
 
 export async function fetchRunReference(

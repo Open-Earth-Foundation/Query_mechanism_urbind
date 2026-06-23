@@ -478,6 +478,27 @@ body {
   table-layout: auto;
 }
 
+.field-card-enter {
+  animation: field-card-enter 0.42s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes field-card-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .field-card-enter {
+    animation: none;
+  }
+}
+
 .chat-thinking-dots {
   display: inline-flex;
   align-items: center;
