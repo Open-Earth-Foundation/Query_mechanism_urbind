@@ -188,7 +188,6 @@ def _build_accepted_excerpts_artifact(
                     continue
                 retrieval_sources.append(
                     {
-                        "chunk_id": chunk_id.strip(),
                         **diagnostics,
                     }
                 )
@@ -368,7 +367,9 @@ def _collect_markdown_decision_artifacts(
         if chunk_id not in rejected_set:
             continue
         rejected_chunk_payload = {
+            "content": str(chunk.get("content", "")).strip(),
             "chunk_id": chunk_id,
+            "source_chunk_ids": [chunk_id],
             "city_name": str(chunk.get("city_name", "")).strip(),
             "city_key": str(chunk.get("city_key", "")).strip(),
             "path": str(chunk.get("path", "")).strip(),
@@ -378,7 +379,9 @@ def _collect_markdown_decision_artifacts(
         }
         diagnostics = retrieval_by_chunk_id.get(chunk_id)
         if diagnostics is not None:
-            rejected_chunk_payload["retrieval"] = diagnostics
+            rejected_chunk_payload["retrieval"] = {
+                "source_chunks": [diagnostics],
+            }
         rejected_artifact["rejected_chunks"].append(rejected_chunk_payload)
     audit_artifact = {
         "status": artifact_status,

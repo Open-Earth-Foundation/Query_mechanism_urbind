@@ -151,7 +151,9 @@ def test_collect_markdown_decision_artifacts_adds_retrieval_diagnostics() -> Non
     assert rejected_artifact["distance_metric"] == "cosine_distance"
     assert rejected_artifact["rejected_chunks"] == [
         {
+            "content": "Rejected chunk content",
             "chunk_id": "chunk-2",
+            "source_chunk_ids": ["chunk-2"],
             "city_name": "Leipzig",
             "city_key": "leipzig",
             "path": "documents/Leipzig.md",
@@ -159,10 +161,14 @@ def test_collect_markdown_decision_artifacts_adds_retrieval_diagnostics() -> Non
             "block_type": "table",
             "chunk_index": 2,
             "retrieval": {
-                "distance_metric": "cosine_distance",
-                "distance": 0.456,
-                "selection_mode": "fallback_top_up",
-                "seed_rank": 3,
+                "source_chunks": [
+                    {
+                        "distance_metric": "cosine_distance",
+                        "distance": 0.456,
+                        "selection_mode": "fallback_top_up",
+                        "seed_rank": 3,
+                    }
+                ]
             },
         }
     ]
@@ -509,7 +515,6 @@ def test_run_pipeline_keeps_retrieval_diagnostics_out_of_context_bundle(
     assert accepted_artifact["excerpts"][0]["retrieval"] == {
         "source_chunks": [
             {
-                "chunk_id": "chunk-1",
                 "distance_metric": "cosine_distance",
                 "distance": 0.111,
                 "selection_mode": "distance_qualified",
