@@ -86,6 +86,7 @@ Environment variables (`.env`):
 - `VECTOR_STORE_UPDATE_MODE` (optional, default `local_process`): used only when automatic updates are enabled. Keep `local_process` for local development; the deployed maintenance workflow does not rely on automatic updater Jobs.
 - `ANONYMIZED_TELEMETRY` (optional, default `FALSE`): disables Chroma anonymized telemetry when set to `FALSE`.
 - `CHROMA_PERSIST_PATH` (optional, default `.chroma`): local Chroma persistence directory.
+- `CHROMA_HOST_PATH` (optional, default `.chroma`): local Docker Compose host folder mounted into backend container path `/data/chroma`. This is local-only and does not affect Kubernetes or direct Python runs.
 - `CHROMA_COLLECTION_NAME` (optional, default `markdown_chunks`): Chroma collection used for markdown chunks.
 - `EXTERNAL_SOURCE_SEARCH_ENABLED` (optional, default `true`): enables governed external Markdown library enrichment when `sources.yaml` is available.
 - `EXTERNAL_SOURCE_DIR` (optional, default `documents/source_library`): directory containing `sources.yaml` and Markdown files whose stems match `source_id`.
@@ -96,6 +97,65 @@ CLI flags override `.env` values for a given run (for example `--markdown-path`)
 Use `--city` (repeatable) to load markdown only for selected city files. City filters are normalized case-insensitively to backend `city_key` values (for example `Munich`, `MUNICH`, and `munich` all resolve to `munich`).
 
 Example `.env.example` is provided. Use `llm_config.yaml` as the source of truth for vector-store and markdown batching tuning; deployment env vars may override operational toggles such as `VECTOR_STORE_ENABLED`, `VECTOR_STORE_AUTO_UPDATE_ON_RUN`, and `VECTOR_STORE_UPDATE_MODE`.
+
+### Local dual vector stores
+
+For local development we currently support two side-by-side vector stores:
+
+- `.chroma`: default L2 store used by `main`
+- `.chroma_cosine`: local cosine-distance store used only when testing the retrieval-improvement branch
+
+Keep these rules in mind:
+
+- Direct `python -m ...` runs use `CHROMA_PERSIST_PATH`.
+- Docker Compose keeps reading `/data/chroma` inside the backend container, but the host folder behind that path is selected by `CHROMA_HOST_PATH`.
+- If you point a branch at the wrong local store, the backend can trigger a full rebuild check because the persisted index settings do not match that branch's expected vector-store settings.
+- This split is local-only. Kubernetes and deployed environments continue using `/data/chroma`.
+
+Default local settings for `main`:
+
+```dotenv
+CHROMA_PERSIST_PATH=.chroma
+CHROMA_HOST_PATH=.chroma
+```
+
+Local settings when testing the cosine branch:
+
+```dotenv
+CHROMA_PERSIST_PATH=.chroma_cosine
+CHROMA_HOST_PATH=.chroma_cosine
+```
+
+One-time local migration from the current cosine store:
+
+1. Stop local Python processes and Docker Compose containers that may be using `.chroma`.
+2. Rename the current cosine store directory:
+
+```powershell
+Move-Item -LiteralPath .chroma -Destination .chroma_cosine
+```
+
+3. Set local defaults back to the L2 store in `.env`:
+
+```dotenv
+CHROMA_PERSIST_PATH=.chroma
+CHROMA_HOST_PATH=.chroma
+```
+
+4. Recreate Docker Compose containers if you use Compose:
+
+```powershell
+docker compose down
+docker compose up -d
+```
+
+5. Build or warm up a fresh L2 store into `.chroma` while on `main`:
+
+```powershell
+python -m backend.scripts.update_vector_store --trigger manual --docs-dir documents
+```
+
+6. When switching to the cosine branch for local testing, update `.env` to `.chroma_cosine` values and restart the relevant process. Docker Compose does not need an image rebuild, but it does need container recreation after the `.env` change.
 
 Default output directory is `output/` (unless overridden by `RUNS_DIR`).
 
@@ -1028,6 +1088,13 @@ Local no-Docker config split:
 
 This split is only for local no-Docker runs. Docker Compose reads the root `.env` and injects values into both containers. Deployed dev/prod uses GitHub Secrets and Kubernetes secrets instead of repo `.env` files.
 
+Docker Compose vector-store note:
+
+- Backend container path stays `/data/chroma`.
+- Host folder comes from `CHROMA_HOST_PATH` in the root `.env`.
+- Changing `CHROMA_HOST_PATH` requires recreating the Compose containers to pick up the new mount.
+- Changing `CHROMA_HOST_PATH` does not require rebuilding the Docker image.
+
 Supported modes:
 
 - Local: frontend at `http://localhost:3000`, backend at `http://localhost:8000`, `APP_SESSION_COOKIE_DOMAIN` unset.
@@ -1284,6 +1351,7 @@ Vector-store freshness behavior:
 - With `VECTOR_STORE_AUTO_UPDATE_ON_RUN=false`, the API and local pipeline runs still perform dry-run freshness checks before vector-backed runs. If the index is stale, new runs are blocked and the frontend shows a compact maintenance banner with the manual refresh command. `/healthz` still reports the pod as healthy.
 - Shared status is written next to the vector index as `update_status.json`. Startup/run diagnostics are also persisted under `output/system/vector_store_warmup/` as both `latest.json` and timestamped history files.
 - Kubernetes deployments should keep a single backend replica or add a stronger distributed lock before multiple replicas can check or rebuild the same Chroma path.
+- Branch-local vector-store formats can diverge. If a local run suddenly forces a full rebuild check after switching branches, verify that `.env` points to the intended local store (`.chroma` for L2 on `main`, `.chroma_cosine` for cosine branch testing) before rebuilding.
 
 Check manifest and Chroma DB status:
 

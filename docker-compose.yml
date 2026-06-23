@@ -19,7 +19,7 @@ services:
     volumes:
       - ./documents:/data/documents
       - ./output:/data/output
-      - ./.chroma:/data/chroma
+      - ${CHROMA_HOST_PATH:-./.chroma}:/data/chroma
       - ./llm_config.yaml:/data/config/llm_config.yaml:ro
       - ./backend/api/assets/city_groups.json:/data/config/city_groups.json:ro
     ports:
