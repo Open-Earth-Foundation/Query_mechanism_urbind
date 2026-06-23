@@ -57,6 +57,7 @@ import {
   CityGroup,
   CityMarkdownResponse,
   CreateRunResponse,
+  RunArtifactsResponse,
   RunContextResponse,
   RunOutputResponse,
   RunSummary,
@@ -67,6 +68,7 @@ import {
   fetchCityMarkdown,
   fetchCityGroups,
   fetchRuns,
+  fetchRunArtifacts,
   fetchRunContext,
   fetchRunOutput,
   fetchRunStatus,
@@ -191,6 +193,7 @@ export default function Home() {
   const [runStatus, setRunStatus] = useState<RunStatusResponse | null>(null);
   const [runOutput, setRunOutput] = useState<RunOutputResponse | null>(null);
   const [runContext, setRunContext] = useState<RunContextResponse | null>(null);
+  const [liveArtifacts, setLiveArtifacts] = useState<RunArtifactsResponse | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isPolling, setIsPolling] = useState(false);
   const [runError, setRunError] = useState<string | null>(null);
@@ -695,6 +698,49 @@ export default function Home() {
       }
       activeController?.abort();
       setIsPolling(false);
+    };
+  }, [runId, statusValue]);
+
+  // While building, also poll the (partial) artifacts so the live timeline can
+  // stream each stage's detail (gap rationale, evidence) as it lands.
+  useEffect(() => {
+    if (!runId || !statusValue || !["queued", "running"].includes(statusValue)) {
+      setLiveArtifacts(null);
+      return;
+    }
+    let cancelled = false;
+    let handle: ReturnType<typeof setTimeout> | null = null;
+    let controller: AbortController | null = null;
+
+    const pollOnce = (): void => {
+      if (cancelled) {
+        return;
+      }
+      controller = new AbortController();
+      fetchRunArtifacts(runId, { signal: controller.signal })
+        .then((payload) => {
+          if (!cancelled) {
+            setLiveArtifacts(payload);
+          }
+        })
+        .catch(() => {
+          // Partial/early reads can fail transiently; ignore and retry.
+        })
+        .finally(() => {
+          controller = null;
+          if (!cancelled) {
+            handle = setTimeout(pollOnce, 3000);
+          }
+        });
+    };
+    pollOnce();
+
+    return () => {
+      cancelled = true;
+      if (handle) {
+        clearTimeout(handle);
+      }
+      controller?.abort();
     };
   }, [runId, statusValue]);
 
@@ -1452,7 +1498,11 @@ export default function Home() {
                 )}
               </>
             ) : isLongWait ? (
-              <LiveBuildTimeline steps={runStatus?.steps} runStatus={statusValue} />
+              <LiveBuildTimeline
+                steps={runStatus?.steps}
+                runStatus={statusValue}
+                artifacts={liveArtifacts}
+              />
             ) : (
               <Card className="border-slate-300">
                 <CardHeader className="pb-4">

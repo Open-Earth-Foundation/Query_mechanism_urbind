@@ -10,9 +10,22 @@ import {
   XCircle,
 } from "lucide-react";
 
-import type { PipelineStep, PipelineStepItem } from "@/lib/api";
+import type {
+  PipelineStep,
+  PipelineStepItem,
+  RunArtifactsResponse,
+} from "@/lib/api";
+import { humanizeField } from "@/components/pipeline/status-style";
+import { formatCityLabel } from "@/lib/utils";
 
 const TERMINAL_STEP_STATUSES = new Set(["completed", "skipped", "error"]);
+
+const REASON_LABEL: Record<string, { label: string; dot: string }> = {
+  shape_mismatch: { label: "different shape", dot: "bg-amber-500" },
+  found_not_validated: { label: "found, not validated", dot: "bg-rose-400" },
+  no_source_data: { label: "no source data", dot: "bg-slate-400" },
+  too_few_peers: { label: "too few peers", dot: "bg-sky-400" },
+};
 
 function StepIcon({ status }: { status: string }) {
   switch (status) {
@@ -29,38 +42,28 @@ function StepIcon({ status }: { status: string }) {
   }
 }
 
-/** Map a streamed item to a status-colored badge, matching the audit colors. */
 function itemBadge(item: PipelineStepItem): { text: string; cls: string } | null {
   const meta = item.metadata ?? {};
   const classification = meta.classification as string | undefined;
   const status = meta.status as string | undefined;
   const priority = meta.priority as string | undefined;
   const confidence = meta.confidence as string | undefined;
-
   const red = "border-rose-200 bg-rose-50 text-rose-700";
   const amber = "border-amber-200 bg-amber-50 text-amber-700";
   const blue = "border-sky-200 bg-sky-50 text-sky-700";
   const neutral = "border-slate-200 bg-slate-50 text-slate-600";
-
-  if (item.item_type === "estimate") {
-    return { text: confidence ?? "estimated", cls: blue };
-  }
-  if (classification === "non_estimable" || status === "NON_ESTIMABLE") {
+  if (item.item_type === "estimate") return { text: confidence ?? "estimated", cls: blue };
+  if (classification === "non_estimable" || status === "NON_ESTIMABLE")
     return { text: "non-estimable", cls: red };
-  }
-  if (status === "insufficient_anchors" || status === "still_missing") {
+  if (status === "insufficient_anchors" || status === "still_missing")
     return { text: status.replace(/_/g, " "), cls: amber };
-  }
-  if (classification) {
-    return { text: classification.replace(/_/g, " "), cls: blue };
-  }
+  if (classification) return { text: classification.replace(/_/g, " "), cls: blue };
   if (priority === "high") return { text: "high", cls: red };
   if (priority === "medium") return { text: "medium", cls: amber };
   if (priority) return { text: priority, cls: neutral };
   return null;
 }
 
-/** Items worth surfacing as cards (vs. plain status lines). */
 function isBlockItem(item: PipelineStepItem): boolean {
   return (
     item.item_type === "field" ||
@@ -70,6 +73,7 @@ function isBlockItem(item: PipelineStepItem): boolean {
   );
 }
 
+/** Streaming items (web findings, classifications) as chips. */
 function BlockCards({ items }: { items: PipelineStepItem[] }) {
   const blocks = items.filter(isBlockItem);
   if (blocks.length === 0) return null;
@@ -77,6 +81,10 @@ function BlockCards({ items }: { items: PipelineStepItem[] }) {
     <div className="flex flex-wrap gap-1.5">
       {blocks.map((item, index) => {
         const badge = itemBadge(item);
+        const domain =
+          item.item_type === "search_result"
+            ? (item.metadata?.source_name as string | undefined) ?? item.domain
+            : undefined;
         return (
           <span
             key={`${item.title ?? item.text}-${index}`}
@@ -86,6 +94,7 @@ function BlockCards({ items }: { items: PipelineStepItem[] }) {
             <span className="truncate font-medium text-slate-700">
               {item.title ?? item.text}
             </span>
+            {domain ? <span className="shrink-0 text-[10px] text-slate-400">{domain}</span> : null}
             {badge ? (
               <span
                 className={`shrink-0 rounded-full border px-1.5 py-0.5 text-[10px] font-medium ${badge.cls}`}
@@ -100,10 +109,8 @@ function BlockCards({ items }: { items: PipelineStepItem[] }) {
   );
 }
 
-/** A short status line from the step's plain-text items (e.g. "14 excerpts"). */
 function stepSummaryLine(step: PipelineStep): string | null {
   const plain = step.items.filter((i) => !i.item_type && i.text);
-  // Prefer concise count-like lines.
   const concise = plain.find((i) => /\d/.test(i.text) && i.text.length < 48);
   return (concise ?? plain[plain.length - 1])?.text ?? null;
 }
@@ -111,14 +118,21 @@ function stepSummaryLine(step: PipelineStep): string | null {
 export interface LiveBuildTimelineProps {
   steps: PipelineStep[] | null | undefined;
   runStatus?: string | null;
+  /** Partial artifacts polled during the build (per-stage detail as it lands). */
+  artifacts?: RunArtifactsResponse | null;
 }
 
 /**
- * The build-time view: a progress header plus a timeline where each stage's
- * building blocks (classified fields, gaps, estimates) appear as cards and
- * accumulate as the run progresses — a live preview of the Enrichment Process.
+ * Build-time view: a progress header + timeline. The current (or just-finished)
+ * stage auto-reveals its detail — gap rationale, validated/unused evidence,
+ * assumption outcomes — streamed from the partial artifacts; earlier stages
+ * stay compact.
  */
-export function LiveBuildTimeline({ steps, runStatus }: LiveBuildTimelineProps) {
+export function LiveBuildTimeline({
+  steps,
+  runStatus,
+  artifacts,
+}: LiveBuildTimelineProps) {
   const { done, total, activeLabel } = useMemo(() => {
     const list = steps ?? [];
     return {
@@ -128,8 +142,158 @@ export function LiveBuildTimeline({ steps, runStatus }: LiveBuildTimelineProps) 
     };
   }, [steps]);
 
+  // Focus the latest stage that has detail to show. A running stage hasn't
+  // written its artifacts yet, so this surfaces the freshest landed finding
+  // (e.g. gap rationale while external search is still running).
+  const focusStepId = useMemo(() => {
+    const list = steps ?? [];
+    const hasDetail = (step: PipelineStep): boolean => {
+      if (step.id === "gap_analysis") {
+        return (artifacts?.gap_analysis?.fields.length ?? 0) > 0;
+      }
+      if (step.id === "external_sources") {
+        const e = artifacts?.external_search;
+        return (
+          !!e && (e.validated.length > 0 || e.unused_total > 0 || e.no_evidence.length > 0)
+        );
+      }
+      if (step.id === "assumptions") {
+        const asm = artifacts?.enrichment_steps?.find((s) => s.key === "assumptions");
+        const b = (asm?.metrics?.reason_breakdown ?? {}) as Record<string, number>;
+        return Object.values(b).some((n) => n > 0);
+      }
+      return step.items.some(isBlockItem);
+    };
+    for (let i = list.length - 1; i >= 0; i -= 1) {
+      if (hasDetail(list[i])) return list[i].id;
+    }
+    const running = list.find((s) => s.status === "running");
+    if (running) return running.id;
+    for (let i = list.length - 1; i >= 0; i -= 1) {
+      if (TERMINAL_STEP_STATUSES.has(list[i].status)) return list[i].id;
+    }
+    return null;
+  }, [steps, artifacts]);
+
   const isComplete = runStatus === "completed" || runStatus === "completed_with_gaps";
   const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+
+  function renderFocusDetail(step: PipelineStep) {
+    // Gap analysis: classified fields + rationale + per-city priority.
+    if (step.id === "gap_analysis" && (artifacts?.gap_analysis?.fields.length ?? 0) > 0) {
+      const g = artifacts!.gap_analysis!;
+      return (
+        <div className="space-y-2">
+          <div className="grid gap-1.5 sm:grid-cols-2">
+            {g.fields.slice(0, 6).map((f) => (
+              <div key={f.field} className="field-card-enter rounded-md border border-slate-200 bg-white p-2">
+                <div className="flex items-center justify-between gap-2">
+                  <span className="truncate text-xs font-semibold text-slate-700">
+                    {humanizeField(f.field)}
+                  </span>
+                  {f.classification ? (
+                    <span className="shrink-0 rounded-full border border-sky-200 bg-sky-50 px-1.5 py-0.5 text-[10px] font-medium text-sky-700">
+                      {f.classification.replace(/_/g, " ")}
+                    </span>
+                  ) : null}
+                </div>
+                {f.rationale ? (
+                  <p className="mt-1 line-clamp-2 text-[11px] leading-snug text-slate-500">
+                    {f.rationale}
+                  </p>
+                ) : null}
+              </div>
+            ))}
+          </div>
+          {g.city_gaps.length > 0 ? (
+            <div className="flex flex-wrap gap-1">
+              {g.city_gaps.map((c) => {
+                const dot =
+                  c.priority === "high"
+                    ? "bg-rose-500"
+                    : c.priority === "medium"
+                      ? "bg-amber-500"
+                      : "bg-slate-400";
+                return (
+                  <span
+                    key={c.city}
+                    className="inline-flex items-center gap-1 rounded-full border border-slate-200 bg-white px-2 py-0.5 text-[11px] text-slate-600"
+                  >
+                    <span className={`h-1.5 w-1.5 rounded-full ${dot}`} />
+                    {formatCityLabel(c.city)}
+                  </span>
+                );
+              })}
+            </div>
+          ) : null}
+        </div>
+      );
+    }
+
+    // External + governed search: validated anchors + found/no-evidence counts.
+    if (step.id === "external_sources" && artifacts?.external_search) {
+      const e = artifacts.external_search;
+      if (e.validated.length > 0 || e.unused_total > 0 || e.no_evidence.length > 0) {
+        return (
+          <div className="space-y-1.5">
+            {e.validated.slice(0, 3).map((v, i) => (
+              <div
+                key={`${v.city}-${i}`}
+                className="field-card-enter flex flex-wrap items-center gap-1.5 rounded-md border border-teal-200 border-l-[3px] border-l-teal-500 bg-teal-50/40 p-2 text-xs"
+              >
+                <span className="rounded bg-white/80 px-1.5 py-0.5 font-semibold text-slate-800 ring-1 ring-inset ring-teal-200">
+                  {v.value}
+                  {v.unit ? ` ${v.unit}` : ""}
+                </span>
+                <span className="font-medium text-slate-700">
+                  {formatCityLabel(v.city)} · {humanizeField(v.field)}
+                </span>
+                {v.source_id ? (
+                  <span className="text-[10px] text-slate-400">{v.source_id}</span>
+                ) : null}
+              </div>
+            ))}
+            <p className="text-[11px] text-slate-500">
+              <span className="font-medium text-slate-600">{e.validated.length}</span>{" "}
+              validated ·{" "}
+              <span className="font-medium text-slate-600">{e.unused_total}</span> found,
+              not validated ·{" "}
+              <span className="font-medium text-slate-600">{e.no_evidence.length}</span> no
+              evidence
+            </p>
+          </div>
+        );
+      }
+    }
+
+    // Assumptions: live reason rollup.
+    if (step.id === "assumptions") {
+      const asm = artifacts?.enrichment_steps?.find((s) => s.key === "assumptions");
+      const breakdown = (asm?.metrics?.reason_breakdown ?? {}) as Record<string, number>;
+      const entries = Object.entries(breakdown).filter(([, n]) => n > 0);
+      if (entries.length > 0) {
+        return (
+          <div className="flex flex-wrap gap-1">
+            {entries.map(([code, n]) => {
+              const meta = REASON_LABEL[code] ?? { label: code, dot: "bg-slate-400" };
+              return (
+                <span
+                  key={code}
+                  className="inline-flex items-center gap-1 rounded-full border border-slate-200 bg-white px-2 py-0.5 text-[11px] text-slate-600"
+                >
+                  <span className={`h-1.5 w-1.5 rounded-full ${meta.dot}`} />
+                  <span className="font-semibold text-slate-700">{n}</span> {meta.label}
+                </span>
+              );
+            })}
+          </div>
+        );
+      }
+    }
+
+    // Default: whatever blocks the step streamed (e.g. web-research findings).
+    return <BlockCards items={step.items} />;
+  }
 
   return (
     <div className="space-y-4 rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
@@ -168,9 +332,9 @@ export function LiveBuildTimeline({ steps, runStatus }: LiveBuildTimelineProps) 
       {steps && steps.length > 0 ? (
         <div className="space-y-1">
           {steps.map((step) => {
-            const blocks = step.items.filter(isBlockItem);
             const summary = stepSummaryLine(step);
             const isActive = step.status === "running";
+            const isFocus = step.id === focusStepId;
             return (
               <div key={step.id} className="relative pl-6">
                 <div className="absolute left-[7px] top-0 h-full w-px bg-slate-200" />
@@ -189,7 +353,7 @@ export function LiveBuildTimeline({ steps, runStatus }: LiveBuildTimelineProps) 
                   >
                     {step.label}
                   </span>
-                  {summary && !blocks.length ? (
+                  {summary ? (
                     <span
                       className="hidden min-w-0 flex-1 truncate text-right text-xs text-slate-400 sm:block"
                       title={summary}
@@ -198,10 +362,8 @@ export function LiveBuildTimeline({ steps, runStatus }: LiveBuildTimelineProps) 
                     </span>
                   ) : null}
                 </div>
-                {blocks.length > 0 ? (
-                  <div className="pb-2.5 pl-2">
-                    <BlockCards items={step.items} />
-                  </div>
+                {isFocus ? (
+                  <div className="pb-2.5 pl-2">{renderFocusDetail(step)}</div>
                 ) : null}
               </div>
             );

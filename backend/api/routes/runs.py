@@ -386,8 +386,18 @@ def get_run_diagnostics(run_id: str, request: Request) -> RunDiagnosticsResponse
     response_model=RunArtifactsResponse,
 )
 def get_run_artifacts(run_id: str, request: Request) -> RunArtifactsResponse:
-    """Return normalized per-stage / per-field artifacts for the audit view."""
-    run_store, record = _require_completed_run(run_id, request)
+    """Return normalized per-stage / per-field artifacts for the audit view.
+
+    Works for in-progress runs too: the assembler tolerates missing stage files,
+    so the live build view can stream each stage's detail as it lands.
+    """
+    run_store = _get_run_store(request)
+    record = run_store.get_run(run_id)
+    if record is None:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Run `{run_id}` was not found.",
+        )
     run_dir = _resolve_run_dir(record, run_store.runs_dir, run_id)
     payload = build_run_artifacts(run_dir)
     return RunArtifactsResponse(
