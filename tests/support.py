@@ -46,6 +46,7 @@ def build_test_app_config(
     retry_overrides: dict[str, object] | None = None,
 ) -> AppConfig:
     """Build a test AppConfig seeded from the repository llm_config.yaml."""
+    test_chroma_path = runs_dir / "_test_chroma"
     config = load_repo_test_config().model_copy(deep=True)
     config.orchestrator = _apply_overrides(config.orchestrator, orchestrator_overrides)
     config.markdown_researcher = _apply_overrides(
@@ -85,6 +86,14 @@ def build_test_app_config(
             update={"external_source_search_enabled": False}
         )
     config.retry = _apply_overrides(config.retry, retry_overrides)
+    config.vector_store = config.vector_store.model_copy(
+        update={
+            "enabled": False,
+            "auto_update_on_run": False,
+            "chroma_persist_path": test_chroma_path,
+            "index_manifest_path": test_chroma_path / "index_manifest.json",
+        }
+    )
     config.vector_store = _apply_overrides(config.vector_store, vector_store_overrides)
     if vector_store is not None:
         config.vector_store = vector_store
