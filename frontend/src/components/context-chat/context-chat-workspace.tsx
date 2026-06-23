@@ -29,7 +29,7 @@ import { Input } from "@/components/ui/input";
 interface ContextChatWorkspaceProps {
   runId: string;
   enabled: boolean;
-  onClose: () => void;
+  onClose?: () => void;
   showContextManager: boolean;
   showDevDiagnostics: boolean;
   showTokenMetrics: boolean;
@@ -360,10 +360,12 @@ export function ContextChatWorkspace({
                     Manage Contexts
                   </Button>
                 ) : null}
-                <Button type="button" size="sm" variant="outline" onClick={onClose}>
-                  <ArrowLeft className="h-4 w-4" />
-                  Open Full Document
-                </Button>
+                {onClose ? (
+                  <Button type="button" size="sm" variant="outline" onClick={onClose}>
+                    <ArrowLeft className="h-4 w-4" />
+                    Open Full Document
+                  </Button>
+                ) : null}
               </div>
             </div>
           </div>

@@ -32,12 +32,12 @@ export function WriterDocumentRail({
           <div className="space-y-2">
             <div className="inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500">
               <ScrollText className="h-3.5 w-3.5" />
-              Writer Document
+              Report
             </div>
             <p className="text-sm leading-relaxed text-slate-700">
               {question?.trim()
                 ? question.trim()
-                : "Keep the generated answer visible here while you question it in chat."}
+                : "Keep the report visible here while you question it in chat."}
             </p>
           </div>
           {statusLabel ? <Badge variant="outline">{statusLabel}</Badge> : null}

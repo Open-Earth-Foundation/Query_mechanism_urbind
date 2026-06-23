@@ -1,8 +1,6 @@
 "use client";
 
 import {
-  type CSSProperties,
-  type PointerEvent as ReactPointerEvent,
   useCallback,
   useDeferredValue,
   useEffect,
@@ -12,16 +10,22 @@ import {
 } from "react";
 import {
   AlertTriangle,
+  BookOpen,
   CheckCircle2,
   CircleDashed,
+  FileText,
   Loader2,
   MessageSquareText,
+  ChevronDown,
   PanelLeftClose,
   PanelLeftOpen,
   RefreshCw,
+  ScanSearch,
+  Settings2,
   Sparkles,
 } from "lucide-react";
 
+import { EnrichmentProcessWorkspace } from "@/components/enrichment-process-workspace";
 import { AssumptionsWorkspace } from "@/components/assumptions-workspace";
 import { CccDocumentRail } from "@/components/ccc-document-rail";
 import { LiveBuildTimeline } from "@/components/pipeline/live-build-timeline";
@@ -33,7 +37,6 @@ import { MarkdownWithReferences } from "@/components/markdown-with-references";
 import { RunDiagnosticsPanel } from "@/components/run-diagnostics-panel";
 import { SearchableCityPicker } from "@/components/searchable-city-picker";
 import { SearchableRunPicker } from "@/components/searchable-run-picker";
-import { WriterDocumentRail } from "@/components/writer-document-rail";
 import { LogoutButton } from "@/components/logout-button";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -82,25 +85,10 @@ const RUN_STATUS_POLL_INTERVAL_MS = 2500;
 
 type CityScopeMode = "all" | "group" | "manual";
 type AnalysisMode = "aggregate" | "city_by_city";
-type WorkspaceRailMode = "controls" | "document" | "ccc";
+type TabKey = "document" | "enrichment" | "chat" | "ccc" | "assumptions";
 const LAST_RUN_ID_STORAGE_KEY = "last_run_id";
 const LAST_CCC_CITY_STORAGE_KEY = "last_ccc_city";
 const CONTROLS_COLLAPSED_STORAGE_KEY = "build_controls_collapsed";
-const DEFAULT_WRITER_RAIL_WIDTH_PX = 416;
-const MIN_WRITER_RAIL_WIDTH_PX = 320;
-const MAX_WRITER_RAIL_WIDTH_PX = 760;
-const MIN_WORKSPACE_CONTENT_WIDTH_PX = 480;
-
-function clampWriterRailWidth(width: number, viewportWidth: number): number {
-  const maxWidth = Math.min(
-    MAX_WRITER_RAIL_WIDTH_PX,
-    Math.max(
-      MIN_WRITER_RAIL_WIDTH_PX,
-      viewportWidth - MIN_WORKSPACE_CONTENT_WIDTH_PX - 96,
-    ),
-  );
-  return Math.min(Math.max(width, MIN_WRITER_RAIL_WIDTH_PX), maxWidth);
-}
 
 function formatRunOptionLabel(run: RunSummary): string {
   const compactQuestion = run.question.replace(/\s+/g, " ").trim();
@@ -189,7 +177,7 @@ export default function Home() {
   const [scopeMode, setScopeMode] = useState<CityScopeMode>("all");
   const [analysisMode, setAnalysisMode] = useState<AnalysisMode>("aggregate");
   const [enrichmentEnabled, setEnrichmentEnabled] = useState(true);
-  const [webResearchEnabled, setWebResearchEnabled] = useState(true);
+  const [webResearchEnabled, setWebResearchEnabled] = useState(false);
   const [cities, setCities] = useState<string[]>([]);
   const [selectedCities, setSelectedCities] = useState<string[]>([]);
   const [cityGroups, setCityGroups] = useState<CityGroup[]>([]);
@@ -219,24 +207,17 @@ export default function Home() {
     null,
   );
 
-  const [chatOpen, setChatOpen] = useState(false);
-  const [assumptionsOpen, setAssumptionsOpen] = useState(false);
+  const [activeTab, setActiveTab] = useState<TabKey>("document");
+  const [showAdvanced, setShowAdvanced] = useState(false);
   const [isControlsCollapsed, setIsControlsCollapsed] = useState(false);
-  const [workspaceRailMode, setWorkspaceRailMode] =
-    useState<WorkspaceRailMode>("controls");
   const [selectedCccCity, setSelectedCccCity] = useState<string | null>(null);
   const [cccDocumentCache, setCccDocumentCache] = useState<
     Record<string, CityMarkdownResponse>
   >({});
   const [isLoadingCccDocument, setIsLoadingCccDocument] = useState(false);
   const [cccDocumentError, setCccDocumentError] = useState<string | null>(null);
-  const [writerRailWidth, setWriterRailWidth] = useState(DEFAULT_WRITER_RAIL_WIDTH_PX);
-  const [isWriterRailResizing, setIsWriterRailResizing] = useState(false);
   const [frontendMode, setFrontendMode] = useState<FrontendMode>(getDefaultFrontendMode());
   const [hasHydratedFrontendMode, setHasHydratedFrontendMode] = useState(false);
-  const writerRailResizeRef = useRef<{ startX: number; startWidth: number } | null>(
-    null,
-  );
   const cccRunDefaultRef = useRef<string | null>(null);
   const runListAbortControllerRef = useRef<AbortController | null>(null);
 
@@ -246,26 +227,12 @@ export default function Home() {
   const documentReady = !!runOutput?.content && canFetchArtifacts;
   const devFeatures = useMemo(() => getDevFeatureFlags(frontendMode), [frontendMode]);
   const isDevMode = frontendMode === "dev";
-  const workspaceUsesDocumentRail = documentReady && (chatOpen || assumptionsOpen);
-  const isWriterRailResizable =
-    workspaceUsesDocumentRail &&
-    workspaceRailMode !== "controls" &&
-    !isControlsCollapsed;
-  const writerRailStyle = useMemo<CSSProperties | undefined>(() => {
-    if (!isWriterRailResizable) {
-      return undefined;
-    }
-    return {
-      "--workspace-rail-width": `${writerRailWidth}px`,
-    } as CSSProperties;
-  }, [isWriterRailResizable, writerRailWidth]);
-
-  const activeRunSummary = useMemo(() => {
-    if (!runId) {
-      return null;
-    }
-    return knownRunsById[runId] ?? availableRuns.find((run) => run.run_id === runId) ?? null;
-  }, [availableRuns, knownRunsById, runId]);
+  const advancedExpanded = isDevMode || showAdvanced;
+  // Right-panel tab is the single source of truth for which view is shown.
+  const chatOpen = activeTab === "chat";
+  const auditOpen = activeTab === "enrichment";
+  const assumptionsOpen = activeTab === "assumptions";
+  const cccTabActive = activeTab === "ccc";
 
   const selectedExistingRunSummary = useMemo(() => {
     if (!selectedExistingRunId) {
@@ -277,18 +244,6 @@ export default function Home() {
       null
     );
   }, [availableRuns, knownRunsById, selectedExistingRunId]);
-
-  const activeRunQuestion = useMemo(() => {
-    const summaryQuestion = activeRunSummary?.question?.trim();
-    if (summaryQuestion) {
-      return summaryQuestion;
-    }
-    const draftQuestion = question.trim();
-    if (draftQuestion && runId === runResponse?.run_id) {
-      return draftQuestion;
-    }
-    return null;
-  }, [activeRunSummary, question, runId, runResponse?.run_id]);
 
   const runContextCityNames = useMemo(
     () => extractRunContextCityNames(runContext),
@@ -307,25 +262,7 @@ export default function Home() {
     [availableRuns, runSearchQuery],
   );
 
-  const workspaceRailTitle =
-    workspaceUsesDocumentRail && workspaceRailMode === "document"
-      ? "Writer Document"
-      : workspaceUsesDocumentRail && workspaceRailMode === "ccc"
-        ? "CCC Source"
-        : "Build Controls";
-  const workspaceRailDescription =
-    workspaceUsesDocumentRail && workspaceRailMode === "document"
-      ? "Keep the generated report open while you chat or review assumptions."
-      : workspaceUsesDocumentRail && workspaceRailMode === "ccc"
-        ? "Browse raw Climate City Contracts without dropping the active workspace."
-        : "Select scope, trigger a build, or load a previous answer.";
-  const railToggleLabel = workspaceUsesDocumentRail
-    ? isControlsCollapsed
-      ? "Show Rail"
-      : "Hide Rail"
-    : isControlsCollapsed
-      ? "Show Controls"
-      : "Hide Controls";
+  const railToggleLabel = isControlsCollapsed ? "Show controls" : "Hide controls";
 
   useEffect(() => {
     const storedMode = readStoredFrontendMode();
@@ -353,24 +290,6 @@ export default function Home() {
       isControlsCollapsed ? "1" : "0",
     );
   }, [isControlsCollapsed]);
-
-  useEffect(() => {
-    setWriterRailWidth(
-      clampWriterRailWidth(DEFAULT_WRITER_RAIL_WIDTH_PX, window.innerWidth),
-    );
-  }, []);
-
-  useEffect(() => {
-    const handleResize = (): void => {
-      setWriterRailWidth((current) =>
-        clampWriterRailWidth(current, window.innerWidth),
-      );
-    };
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -410,44 +329,6 @@ export default function Home() {
       }
     };
   }, [isSubmitting, vectorStoreStatus?.status]);
-
-  useEffect(() => {
-    if (!isWriterRailResizing) {
-      return;
-    }
-
-    document.body.style.cursor = "col-resize";
-    document.body.style.userSelect = "none";
-
-    const handlePointerMove = (event: PointerEvent): void => {
-      const origin = writerRailResizeRef.current;
-      if (!origin) {
-        return;
-      }
-      const nextWidth = origin.startWidth + event.clientX - origin.startX;
-      setWriterRailWidth(
-        clampWriterRailWidth(nextWidth, window.innerWidth),
-      );
-    };
-
-    const stopResizing = (): void => {
-      writerRailResizeRef.current = null;
-      setIsWriterRailResizing(false);
-      document.body.style.cursor = "";
-      document.body.style.userSelect = "";
-    };
-
-    window.addEventListener("pointermove", handlePointerMove);
-    window.addEventListener("pointerup", stopResizing);
-    window.addEventListener("pointercancel", stopResizing);
-    return () => {
-      window.removeEventListener("pointermove", handlePointerMove);
-      window.removeEventListener("pointerup", stopResizing);
-      window.removeEventListener("pointercancel", stopResizing);
-      document.body.style.cursor = "";
-      document.body.style.userSelect = "";
-    };
-  }, [isWriterRailResizing]);
 
   const hydrateRunById = useCallback(async (targetRunId: string): Promise<void> => {
     const trimmedRunId = targetRunId.trim();
@@ -538,7 +419,7 @@ export default function Home() {
     }
     setIsLoadingSelectedRun(true);
     setRunError(null);
-    openDocumentWorkspace();
+    setActiveTab("document");
     try {
       await hydrateRunById(trimmed);
     } catch (error) {
@@ -702,12 +583,7 @@ export default function Home() {
   }, [preferredRunCccCity, runId]);
 
   useEffect(() => {
-    if (
-      !documentReady ||
-      !workspaceUsesDocumentRail ||
-      workspaceRailMode !== "ccc" ||
-      !selectedCccCity
-    ) {
+    if (!documentReady || !cccTabActive || !selectedCccCity) {
       return;
     }
 
@@ -765,8 +641,7 @@ export default function Home() {
     documentReady,
     selectedCccCity,
     selectedCccCityKey,
-    workspaceRailMode,
-    workspaceUsesDocumentRail,
+    cccTabActive,
   ]);
 
   useEffect(() => {
@@ -887,48 +762,6 @@ export default function Home() {
     setCccDocumentError(null);
   }
 
-  function openDocumentWorkspace(): void {
-    setChatOpen(false);
-    setAssumptionsOpen(false);
-    setWorkspaceRailMode("controls");
-    setIsWriterRailResizing(false);
-    writerRailResizeRef.current = null;
-  }
-
-  function openChatWorkspace(): void {
-    setAssumptionsOpen(false);
-    setChatOpen(true);
-    setWorkspaceRailMode("document");
-    setIsControlsCollapsed(false);
-  }
-
-  function openAssumptionsWorkspace(): void {
-    setChatOpen(false);
-    setAssumptionsOpen(true);
-    setWorkspaceRailMode("document");
-    setIsControlsCollapsed(false);
-  }
-
-  function startWriterRailResize(
-    event: ReactPointerEvent<HTMLButtonElement>,
-  ): void {
-    if (!isWriterRailResizable) {
-      return;
-    }
-    event.preventDefault();
-    writerRailResizeRef.current = {
-      startX: event.clientX,
-      startWidth: writerRailWidth,
-    };
-    setIsWriterRailResizing(true);
-  }
-
-  function resetWriterRailWidth(): void {
-    setWriterRailWidth(
-      clampWriterRailWidth(DEFAULT_WRITER_RAIL_WIDTH_PX, window.innerWidth),
-    );
-  }
-
   async function handleBuildDocument(): Promise<void> {
     const trimmed = question.trim();
     if (!trimmed || isSubmitting) {
@@ -958,7 +791,7 @@ export default function Home() {
     setRunContext(null);
     setRunResponse(null);
     setRunStatus(null);
-    openDocumentWorkspace();
+    setActiveTab("document");
 
     try {
       const payload = await startRun({
@@ -1058,15 +891,15 @@ export default function Home() {
           <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <div>
               <p className="mb-1 text-xs font-semibold uppercase tracking-[0.18em] text-amber-700">
-                Document Builder
+                Query Engine
               </p>
               <h1 className="text-3xl font-semibold text-slate-900 md:text-4xl">
-                Build the answer as a report, then explore it.
+                Query demand signals from city plans &amp; public commitments.
               </h1>
               <p className="mt-2 max-w-3xl text-sm text-slate-600 md:text-base">
-                This flow is document-first. You submit a build run, wait for
-                completion, review the generated document, then switch into
-                context chat workspace.
+                Ask a question and the engine reads the cities&apos; climate
+                contracts, fills data gaps, and builds a sourced report you can
+                explore, audit, and chat with.
               </p>
             </div>
             <div className="flex items-center gap-3 self-start md:self-auto">
@@ -1081,7 +914,7 @@ export default function Home() {
           variant="outline"
           size="sm"
           onClick={() => setIsControlsCollapsed((current) => !current)}
-          aria-label={isControlsCollapsed ? `Show ${workspaceRailTitle.toLowerCase()}` : `Hide ${workspaceRailTitle.toLowerCase()}`}
+          aria-label={isControlsCollapsed ? "Show query controls" : "Hide query controls"}
           className="group fixed left-0 top-1/2 z-40 h-10 w-10 -translate-y-1/2 justify-start gap-2 overflow-hidden rounded-l-none rounded-r-full border border-slate-300 bg-white/90 px-3 text-slate-700 shadow-sm backdrop-blur-sm transition-all duration-300 ease-out hover:w-40 focus-visible:w-40"
         >
           <span className="shrink-0">
@@ -1097,103 +930,23 @@ export default function Home() {
         </Button>
 
         <main
-          className={`flex flex-col gap-6 lg:flex-row ${
-            isWriterRailResizing ? "lg:select-none" : ""
-          }`}
+          className="flex flex-col gap-6 lg:flex-row"
         >
           <div
-            style={writerRailStyle}
-            className={`overflow-hidden lg:shrink-0 ${
-              isWriterRailResizing
-                ? "lg:transition-none"
-                : "transition-[width,opacity,transform] duration-300 ease-in-out"
-            } ${
+            className={`overflow-hidden lg:shrink-0 transition-[width,opacity,transform] duration-300 ease-in-out ${
               isControlsCollapsed
                 ? "lg:w-0 lg:-translate-x-4 lg:opacity-0 lg:pointer-events-none"
-                : isWriterRailResizable
-                  ? "lg:w-[var(--workspace-rail-width)] lg:translate-x-0 lg:opacity-100"
-                  : "lg:w-[26rem] lg:translate-x-0 lg:opacity-100"
+                : "lg:w-[26rem] lg:translate-x-0 lg:opacity-100"
             }`}
           >
             <Card className="h-fit border-slate-300">
               <CardHeader>
-                <div className="flex flex-col gap-3">
-                  <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
-                    <div>
-                      <CardTitle>{workspaceRailTitle}</CardTitle>
-                      <CardDescription>{workspaceRailDescription}</CardDescription>
-                    </div>
-                    {workspaceUsesDocumentRail ? (
-                      <div className="inline-flex rounded-full border border-slate-200 bg-slate-100 p-1">
-                        <button
-                          type="button"
-                          onClick={() => setWorkspaceRailMode("document")}
-                          className={`rounded-full px-3 py-1 text-xs font-medium transition ${
-                            workspaceRailMode === "document"
-                              ? "bg-white text-slate-900 shadow-sm"
-                              : "text-slate-600 hover:text-slate-900"
-                          }`}
-                        >
-                          Writer Doc
-                        </button>
-                        <button
-                          type="button"
-                          onClick={() => setWorkspaceRailMode("ccc")}
-                          className={`rounded-full px-3 py-1 text-xs font-medium transition ${
-                            workspaceRailMode === "ccc"
-                              ? "bg-white text-slate-900 shadow-sm"
-                              : "text-slate-600 hover:text-slate-900"
-                          }`}
-                        >
-                          CCC
-                        </button>
-                        <button
-                          type="button"
-                          onClick={() => setWorkspaceRailMode("controls")}
-                          className={`rounded-full px-3 py-1 text-xs font-medium transition ${
-                            workspaceRailMode === "controls"
-                              ? "bg-white text-slate-900 shadow-sm"
-                              : "text-slate-600 hover:text-slate-900"
-                          }`}
-                        >
-                          Controls
-                        </button>
-                      </div>
-                    ) : null}
-                  </div>
-                  {workspaceUsesDocumentRail && workspaceRailMode !== "ccc" ? (
-                    <p className="text-xs text-slate-500">
-                      {workspaceRailMode === "document"
-                        ? "Switch the rail without dropping the chat session, then drag the divider to resize the writer view."
-                        : "Switch the rail between the generated answer, source CCCs, and build inputs without dropping the chat session."}
-                    </p>
-                  ) : null}
-                </div>
+                <CardTitle>Query Controls</CardTitle>
+                <CardDescription>
+                  Set your query, pick cities, and run — or load a previous answer.
+                </CardDescription>
               </CardHeader>
-              <CardContent className="space-y-4">
-                {workspaceUsesDocumentRail && workspaceRailMode === "document" && runOutput && runId ? (
-                  <WriterDocumentRail
-                    runId={runId}
-                    content={runOutput.content}
-                    question={activeRunQuestion}
-                    statusLabel={statusValue}
-                    showWriterContextExport={devFeatures.showRunDiagnostics}
-                    onOpenFullDocument={openDocumentWorkspace}
-                  />
-                ) : workspaceUsesDocumentRail && workspaceRailMode === "ccc" ? (
-                  <CccDocumentRail
-                    cities={cities}
-                    selectedCity={selectedCccCity}
-                    onSelectCity={selectCccCity}
-                    content={activeCccDocument?.content ?? null}
-                    sourcePaths={activeCccDocument?.source_paths ?? []}
-                    isLoadingCities={isLoadingCities}
-                    citiesError={citiesError}
-                    isLoadingContent={isLoadingCccDocument}
-                    contentError={cccDocumentError}
-                  />
-                ) : (
-                  <div className="space-y-5">
+              <CardContent className="space-y-5">
                     {showVectorStoreBanner ? (
                       <div
                         className={`flex items-start gap-3 rounded-md border p-3 text-sm ${
@@ -1217,58 +970,22 @@ export default function Home() {
                     ) : null}
 
                     <div className="space-y-2">
-                      <Label htmlFor="question">Question 1 (required)</Label>
+                      <Label htmlFor="question">
+                        What demand signal or target are you looking for?
+                      </Label>
                       <Textarea
                         id="question"
-                        placeholder="Example: Compare public EV charging targets and current charger counts across the selected cities, with source-backed numbers and gaps."
+                        placeholder="e.g. What are Aachen's rooftop-solar capacity targets and the public commitments behind them? (You can paste a longer, structured prompt too.)"
                         value={question}
                         onChange={(event) => setQuestion(event.target.value)}
                         disabled={isVectorStoreBlocked}
                         className="min-h-32"
                       />
                       <p className="text-xs text-slate-600">
-                        This exact question is used as the primary retrieval query. Include the
-                        topic, metric, city scope, and evidence you want in the answer.
+                        This is the primary query against the city climate contracts. Be
+                        specific about the metric, target, or commitment you want — you can
+                        paste a long, LLM-prepared prompt as well.
                       </p>
-                    </div>
-
-                    <div className="space-y-3 rounded-md border border-slate-200 bg-slate-50 p-3">
-                      <div className="space-y-1">
-                        <div className="flex items-center justify-between">
-                          <Label className="text-sm font-medium text-slate-800">
-                            Additional retrieval questions
-                          </Label>
-                          {isDevMode ? <Badge variant="outline">Dev Mode</Badge> : null}
-                        </div>
-                        <p className="text-xs text-slate-600">
-                          Questions 2 and 3 are optional. Blank fields are ignored and no
-                          generated replacements are added.
-                        </p>
-                      </div>
-
-                      <div className="space-y-2">
-                        <Label htmlFor="query-2">Question 2 (optional)</Label>
-                        <Textarea
-                          id="query-2"
-                        placeholder="Example: Evidence on planned charger rollout milestones, deadlines, and responsible owners."
-                        value={query2}
-                        onChange={(event) => setQuery2(event.target.value)}
-                        disabled={isVectorStoreBlocked}
-                        className="min-h-20"
-                      />
-                      </div>
-
-                      <div className="space-y-2">
-                        <Label htmlFor="query-3">Question 3 (optional)</Label>
-                        <Textarea
-                          id="query-3"
-                        placeholder="Example: Tables or numeric references for existing public chargers, 2030 targets, and budget commitments."
-                        value={query3}
-                        onChange={(event) => setQuery3(event.target.value)}
-                        disabled={isVectorStoreBlocked}
-                        className="min-h-20"
-                      />
-                      </div>
                     </div>
 
               <div className="space-y-2">
@@ -1445,6 +1162,62 @@ export default function Home() {
                 ) : null}
               </div>
 
+              {!isDevMode ? (
+                <button
+                  type="button"
+                  onClick={() => setShowAdvanced((v) => !v)}
+                  aria-expanded={showAdvanced}
+                  className="flex w-full items-center justify-between rounded-md border border-slate-200 bg-slate-50 px-3 py-2.5 text-sm font-medium text-slate-700 transition hover:bg-slate-100"
+                >
+                  <span className="flex items-center gap-2">
+                    <Settings2 className="h-4 w-4 text-slate-400" />
+                    Advanced options
+                  </span>
+                  <ChevronDown
+                    className={`h-4 w-4 text-slate-400 transition-transform ${showAdvanced ? "rotate-180" : ""}`}
+                  />
+                </button>
+              ) : null}
+
+              {advancedExpanded ? (
+                <div className="space-y-4">
+                  <div className="space-y-3 rounded-md border border-slate-200 bg-slate-50 p-3">
+                    <div className="space-y-1">
+                      <div className="flex items-center justify-between">
+                        <Label className="text-sm font-medium text-slate-800">
+                          Follow-up retrieval queries
+                        </Label>
+                        {isDevMode ? <Badge variant="outline">Dev Mode</Badge> : null}
+                      </div>
+                      <p className="text-xs text-slate-600">
+                        Optional extra queries run alongside your main question to pull more
+                        evidence. Blank fields are ignored.
+                      </p>
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="query-2">Follow-up query 2 (optional)</Label>
+                      <Textarea
+                        id="query-2"
+                        placeholder="e.g. Planned rollout milestones, deadlines, and responsible owners."
+                        value={query2}
+                        onChange={(event) => setQuery2(event.target.value)}
+                        disabled={isVectorStoreBlocked}
+                        className="min-h-20"
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="query-3">Follow-up query 3 (optional)</Label>
+                      <Textarea
+                        id="query-3"
+                        placeholder="e.g. Tables or numeric references for current values, 2030 targets, and budget commitments."
+                        value={query3}
+                        onChange={(event) => setQuery3(event.target.value)}
+                        disabled={isVectorStoreBlocked}
+                        className="min-h-20"
+                      />
+                    </div>
+                  </div>
+
               <div className="space-y-3 rounded-md border border-slate-200 p-3">
                 <div className="flex items-center justify-between">
                   <Label>Answer mode</Label>
@@ -1519,6 +1292,8 @@ export default function Home() {
                     : "CCC excerpts only — no gap analysis, web research, or assumption estimates."}
                 </p>
               </div>
+                </div>
+              ) : null}
 
               <Button
                 onClick={handleBuildDocument}
@@ -1526,7 +1301,7 @@ export default function Home() {
                 className="w-full"
               >
                 {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" /> : <Sparkles className="h-4 w-4" />}
-                Generate Report
+                Run query
               </Button>
               {buildDisabledReason ? (
                 <p className="text-xs text-slate-500">{buildDisabledReason}</p>
@@ -1590,121 +1365,111 @@ export default function Home() {
                   <DevToolsPanel apiKeyIssue={hasApiKeyIssue} runId={runId} />
                 </>
               ) : null}
-                  </div>
-                )}
               </CardContent>
             </Card>
           </div>
 
-          {isWriterRailResizable ? (
-            <div className="hidden lg:flex lg:w-4 lg:shrink-0 lg:items-stretch lg:justify-center">
-              <button
-                type="button"
-                aria-label="Resize writer document panel"
-                onPointerDown={startWriterRailResize}
-                onDoubleClick={resetWriterRailWidth}
-                className="group flex h-full w-4 cursor-col-resize items-center justify-center bg-transparent"
-              >
-                <span
-                  className={`h-full w-px rounded-full bg-slate-300 transition-colors ${
-                    isWriterRailResizing
-                      ? "bg-amber-500"
-                      : "group-hover:bg-slate-400"
-                  }`}
-                />
-              </button>
-            </div>
-          ) : null}
+          <div className="min-w-0 flex-1 space-y-4">
+            {documentReady && runId ? (
+              <>
+                <div className="inline-flex flex-wrap gap-1 rounded-full border border-slate-200 bg-slate-100 p-1">
+                  {(
+                    [
+                      { key: "document", label: "Document", icon: FileText, show: true },
+                      { key: "enrichment", label: "Enrichment Process", icon: ScanSearch, show: true },
+                      { key: "chat", label: "Chat", icon: MessageSquareText, show: true },
+                      { key: "ccc", label: "CCC", icon: BookOpen, show: isDevMode },
+                      { key: "assumptions", label: "Assumptions", icon: Sparkles, show: devFeatures.showAssumptionsEntry },
+                    ] as { key: TabKey; label: string; icon: typeof FileText; show: boolean }[]
+                  )
+                    .filter((tab) => tab.show)
+                    .map((tab) => {
+                      const Icon = tab.icon;
+                      return (
+                        <button
+                          key={tab.key}
+                          type="button"
+                          onClick={() => setActiveTab(tab.key)}
+                          className={`inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-sm font-medium transition ${
+                            activeTab === tab.key
+                              ? "bg-white text-slate-900 shadow-sm"
+                              : "text-slate-600 hover:text-slate-900"
+                          }`}
+                        >
+                          <Icon className="h-4 w-4" />
+                          {tab.label}
+                        </button>
+                      );
+                    })}
+                </div>
 
-          <div className="min-w-0 flex-1">
-            {devFeatures.showAssumptionsEntry && assumptionsOpen && documentReady && runId ? (
-              <AssumptionsWorkspace
-                runId={runId}
-                enabled={documentReady}
-                onClose={openDocumentWorkspace}
-              />
-            ) : chatOpen && documentReady && runId ? (
-              <ContextChatWorkspace
-                runId={runId}
-                enabled={documentReady}
-                onClose={openDocumentWorkspace}
-                showContextManager={devFeatures.showContextManager}
-                showDevDiagnostics={frontendMode === "dev"}
-                showTokenMetrics={devFeatures.showChatTokenMetrics}
-              />
+                {auditOpen ? (
+                  <EnrichmentProcessWorkspace runId={runId} />
+                ) : chatOpen ? (
+                  <ContextChatWorkspace
+                    runId={runId}
+                    enabled={documentReady}
+                    showContextManager={devFeatures.showContextManager}
+                    showDevDiagnostics={frontendMode === "dev"}
+                    showTokenMetrics={devFeatures.showChatTokenMetrics}
+                  />
+                ) : cccTabActive ? (
+                  <Card className="border-slate-300">
+                    <CardContent className="pt-6">
+                      <CccDocumentRail
+                        cities={cities}
+                        selectedCity={selectedCccCity}
+                        onSelectCity={selectCccCity}
+                        content={activeCccDocument?.content ?? null}
+                        sourcePaths={activeCccDocument?.source_paths ?? []}
+                        isLoadingCities={isLoadingCities}
+                        citiesError={citiesError}
+                        isLoadingContent={isLoadingCccDocument}
+                        contentError={cccDocumentError}
+                      />
+                    </CardContent>
+                  </Card>
+                ) : assumptionsOpen ? (
+                  <AssumptionsWorkspace runId={runId} enabled={documentReady} />
+                ) : (
+                  <Card className="border-slate-300">
+                    <CardContent className="space-y-3 pt-6">
+                      <DocumentExportControls
+                        runId={runId}
+                        content={runOutput.content}
+                        showWriterContextExport={devFeatures.showRunDiagnostics}
+                      />
+                      <article className="document-markdown rounded-md border border-slate-200 bg-white p-5 shadow-inner">
+                        <MarkdownWithReferences content={runOutput.content} runId={runId} />
+                      </article>
+                      {runContext ? (
+                        <p className="text-xs text-slate-500">
+                          Context bundle loaded from: {runContext.context_bundle_path}
+                        </p>
+                      ) : null}
+                    </CardContent>
+                  </Card>
+                )}
+              </>
+            ) : isLongWait ? (
+              <LiveBuildTimeline steps={runStatus?.steps} runStatus={statusValue} />
             ) : (
               <Card className="border-slate-300">
                 <CardHeader className="pb-4">
-                  <div>
-                    <div>
-                      <CardTitle>Generated Document</CardTitle>
-                      <CardDescription>
-                        The main answer is rendered as a report. Context chat keeps this report docked in the workspace rail.
-                      </CardDescription>
-                    </div>
-                  </div>
+                  <CardTitle>Report</CardTitle>
+                  <CardDescription>
+                    Your answer, written as a sourced report. Audit the data behind it or chat to dig deeper.
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  {documentReady ? (
-                    <>
-                      <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
-                        {runId ? (
-                          <DocumentExportControls
-                            runId={runId}
-                            content={runOutput.content}
-                            showWriterContextExport={devFeatures.showRunDiagnostics}
-                          />
-                        ) : null}
-                        <div className="flex flex-wrap gap-2">
-                          {devFeatures.showAssumptionsEntry ? (
-                            <Button
-                              type="button"
-                              variant="outline"
-                              onClick={openAssumptionsWorkspace}
-                              disabled={!runId}
-                            >
-                              <Sparkles className="h-4 w-4" />
-                              Assumptions Review
-                            </Button>
-                          ) : null}
-                          <Button
-                            type="button"
-                            onClick={openChatWorkspace}
-                            disabled={!runId}
-                          >
-                            <MessageSquareText className="h-4 w-4" />
-                            Chat About the Answer
-                          </Button>
-                        </div>
-                      </div>
-                      <article className="document-markdown rounded-md border border-slate-200 bg-white p-5 shadow-inner">
-                        <MarkdownWithReferences
-                          content={runOutput.content}
-                          runId={runId}
-                        />
-                      </article>
-                    </>
-                  ) : isLongWait ? (
-                    <LiveBuildTimeline
-                      steps={runStatus?.steps}
-                      runStatus={statusValue}
-                    />
-                  ) : (
-                    <div className="rounded-md border border-dashed border-slate-300 bg-white p-8 text-center text-slate-600">
-                      <p className="text-base font-medium">Document output will appear here.</p>
-                      <p className="mt-1 text-sm">
-                        {isControlsCollapsed
-                          ? "Open Build Controls to start a run."
-                          : "Submit a run from the left panel to start building."}
-                      </p>
-                    </div>
-                  )}
-
-                  {runContext ? (
-                    <p className="mt-4 text-xs text-slate-500">
-                      Context bundle loaded from: {runContext.context_bundle_path}
+                  <div className="rounded-md border border-dashed border-slate-300 bg-white p-8 text-center text-slate-600">
+                    <p className="text-base font-medium">Your report will appear here.</p>
+                    <p className="mt-1 text-sm">
+                      {isControlsCollapsed
+                        ? "Open Query Controls to run a query."
+                        : "Write a query on the left and hit Run query to start."}
                     </p>
-                  ) : null}
+                  </div>
                 </CardContent>
               </Card>
             )}
