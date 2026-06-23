@@ -14,6 +14,9 @@ from tests.support import build_test_app_config
 TEST_SESSION_SECRET = "0123456789abcdef0123456789abcdef"
 TEST_API_CORS_ORIGINS = "http://127.0.0.1:3000,http://localhost:3000"
 TEST_OPENROUTER_API_KEY = "sk-or-v1-test-openrouter-key"
+TEST_CITY_GROUPS_PATH = (
+    Path(__file__).resolve().parents[1] / "backend" / "api" / "assets" / "city_groups.json"
+)
 
 # backend.api.main creates a module-level FastAPI app during import. These
 # defaults must exist before API test modules are collected in clean CI shells.
@@ -43,6 +46,7 @@ def shared_session_test_auth(
     monkeypatch.setenv("API_CORS_ORIGINS", TEST_API_CORS_ORIGINS)
     monkeypatch.setenv("OPENROUTER_API_KEY", TEST_OPENROUTER_API_KEY)
     monkeypatch.setenv("VECTOR_STORE_MANIFEST_WRITE_AUDIT_ENABLED", "false")
+    monkeypatch.setenv("CITY_GROUPS_PATH", str(TEST_CITY_GROUPS_PATH))
     test_chroma_path = tmp_path / "chroma"
     config = build_test_app_config(
         runs_dir=tmp_path / "output",
