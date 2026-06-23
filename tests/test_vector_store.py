@@ -925,6 +925,7 @@ def test_save_manifest_writes_audit_artifact(
     """Manifest writes should leave a small system artifact explaining the writer."""
     runs_dir = tmp_path / "output"
     monkeypatch.setenv("RUNS_DIR", str(runs_dir))
+    monkeypatch.setenv("VECTOR_STORE_MANIFEST_WRITE_AUDIT_ENABLED", "true")
     manifest_path = tmp_path / ".chroma" / "index_manifest.json"
     docs_dir = tmp_path / "documents"
     docs_dir.mkdir(parents=True)

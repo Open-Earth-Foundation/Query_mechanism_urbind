@@ -60,6 +60,18 @@ def load_manifest(path: Path) -> dict[str, Any]:
     return payload
 
 
+def _manifest_write_audit_enabled() -> bool:
+    """Return true when manifest-write audit artifacts should be persisted."""
+    raw_value = os.getenv("VECTOR_STORE_MANIFEST_WRITE_AUDIT_ENABLED")
+    if raw_value is not None:
+        normalized = raw_value.strip().lower()
+        if normalized in {"1", "true", "yes", "y", "on"}:
+            return True
+        if normalized in {"0", "false", "no", "n", "off"}:
+            return False
+    return "PYTEST_CURRENT_TEST" not in os.environ
+
+
 def _append_manifest_write_audit(
     *,
     path: Path,
@@ -71,6 +83,8 @@ def _append_manifest_write_audit(
     metadata: dict[str, Any] | None,
 ) -> None:
     """Append one manifest-write audit record under output/system artifacts."""
+    if not _manifest_write_audit_enabled():
+        return
     runs_dir = Path(os.getenv("RUNS_DIR", "output"))
     audit_dir = runs_dir / "system" / "vector_store_manifest_writes"
     audit_dir.mkdir(parents=True, exist_ok=True)

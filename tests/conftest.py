@@ -42,6 +42,7 @@ def shared_session_test_auth(
     monkeypatch.setenv("APP_SESSION_SECRET", TEST_SESSION_SECRET)
     monkeypatch.setenv("API_CORS_ORIGINS", TEST_API_CORS_ORIGINS)
     monkeypatch.setenv("OPENROUTER_API_KEY", TEST_OPENROUTER_API_KEY)
+    monkeypatch.setenv("VECTOR_STORE_MANIFEST_WRITE_AUDIT_ENABLED", "false")
     test_chroma_path = tmp_path / "chroma"
     config = build_test_app_config(
         runs_dir=tmp_path / "output",
