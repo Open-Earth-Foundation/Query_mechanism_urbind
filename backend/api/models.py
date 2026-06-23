@@ -195,6 +195,73 @@ class RunContextResponse(BaseModel):
     context_bundle_path: str
 
 
+class ArtifactFieldSource(BaseModel):
+    """One evidence/source record backing (or failing to back) a field."""
+
+    source_id: str | None = None
+    title: str | None = None
+    quote: str | None = None
+    has_evidence: bool = False
+
+
+class ArtifactFieldEstimate(BaseModel):
+    """Estimate range + method metadata for an estimated field."""
+
+    low: float | str | None = None
+    mid: float | str | None = None
+    high: float | str | None = None
+    method: str | None = None
+    confidence: str | None = None
+    basis: str | None = None
+
+
+class ArtifactField(BaseModel):
+    """Normalized per-(city, field) audit record for the artifact card grid."""
+
+    city: str
+    field: str
+    type: str | None = None
+    scope: str | None = None
+    status: Literal["estimated", "non_estimable", "unresolved"]
+    explanation: str | None = None
+    gap_description: str | None = None
+    recommendation: str | None = None
+    estimate: ArtifactFieldEstimate | None = None
+    sources: list[ArtifactFieldSource] = Field(default_factory=list)
+    reason: str | None = None
+    reason_label: str | None = None
+
+
+class ArtifactStage(BaseModel):
+    """Lightweight per-stage summary from the unified stage records."""
+
+    stage_number: int | None = None
+    name: str
+    status: str = "completed"
+    metrics: dict[str, object] = Field(default_factory=dict)
+    inputs: dict[str, object] = Field(default_factory=dict)
+
+
+class EnrichmentStep(BaseModel):
+    """One enrichment sub-step summary (gap analysis / external+web / assumptions)."""
+
+    key: str
+    label: str
+    summary: str
+    metrics: dict[str, object] = Field(default_factory=dict)
+    warn: str | None = None
+
+
+class RunArtifactsResponse(BaseModel):
+    """Response body for the per-step / per-field enrichment audit view."""
+
+    run_id: str
+    status: RunStatus
+    fields: list[ArtifactField] = Field(default_factory=list)
+    stages: list[ArtifactStage] = Field(default_factory=list)
+    enrichment_steps: list[EnrichmentStep] = Field(default_factory=list)
+
+
 class RunReferenceResponse(BaseModel):
     """Response body for one run-scoped markdown reference lookup."""
 

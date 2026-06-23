@@ -12,6 +12,7 @@ from fastapi.responses import Response
 from backend.api.models import (
     CreateRunRequest,
     CreateRunResponse,
+    RunArtifactsResponse,
     RunDiagnosticsResponse,
     PipelineStep,
     PipelineStepItem,
@@ -25,6 +26,7 @@ from backend.api.models import (
     RunStatusResponse,
     SourceChunkListResponse,
 )
+from backend.api.services.run_artifacts import build_run_artifacts
 from backend.api.services.run_diagnostics import build_run_diagnostics
 from backend.api.services.document_export import DOCX_MIME_TYPE, markdown_to_docx_bytes
 from backend.api.services.feature_readiness import FeatureReadinessService
@@ -376,6 +378,25 @@ def get_run_diagnostics(run_id: str, request: Request) -> RunDiagnosticsResponse
             detail=f"Run `{run_id}` was not found.",
         )
     return build_run_diagnostics(record, runs_dir=run_store.runs_dir)
+
+
+@router.get(
+    "/runs/{run_id}/artifacts",
+    name="get_run_artifacts",
+    response_model=RunArtifactsResponse,
+)
+def get_run_artifacts(run_id: str, request: Request) -> RunArtifactsResponse:
+    """Return normalized per-stage / per-field artifacts for the audit view."""
+    run_store, record = _require_completed_run(run_id, request)
+    run_dir = _resolve_run_dir(record, run_store.runs_dir, run_id)
+    payload = build_run_artifacts(run_dir)
+    return RunArtifactsResponse(
+        run_id=record.run_id,
+        status=record.status,
+        fields=payload["fields"],
+        stages=payload["stages"],
+        enrichment_steps=payload["enrichment_steps"],
+    )
 
 
 @router.get(
