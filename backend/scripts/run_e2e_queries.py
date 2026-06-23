@@ -30,7 +30,7 @@ import time
 from pathlib import Path
 
 from backend.modules.orchestrator.module import run_pipeline
-from backend.utils.config import load_config
+from backend.utils.config import load_config, resolve_path_relative_to_config
 from backend.utils.logging_config import setup_logger
 
 logger = logging.getLogger(__name__)
@@ -94,9 +94,13 @@ def main() -> None:
     args = parse_args()
     setup_logger()
 
-    config = load_config(Path(args.config))
+    config_path = Path(args.config)
+    config = load_config(config_path)
     if args.markdown_path:
-        config.markdown_dir = Path(args.markdown_path)
+        config.markdown_dir = resolve_path_relative_to_config(
+            config_path,
+            Path(args.markdown_path),
+        )
 
     questions = load_questions(Path(args.questions_file), args.question)
     if not questions:
@@ -113,7 +117,7 @@ def main() -> None:
             config=config,
             log_llm_payload=args.log_llm_payload,
             selected_cities=args.city,
-            config_path=Path(args.config),
+            config_path=config_path,
         )
         elapsed = time.perf_counter() - start
         logger.info("Completed question in %.2f seconds", elapsed)

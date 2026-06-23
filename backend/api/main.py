@@ -32,7 +32,7 @@ from backend.api.services.run_executor import RunExecutor
 from backend.api.services.run_store import RunStore
 from backend.api.services.vector_store_warmup import VectorStoreWarmup
 from backend.api.services.chat_split_flow import build_chat_job_processor
-from backend.utils.config import load_config
+from backend.utils.config import AppConfig, load_config, resolve_path_relative_to_config
 from backend.utils.logging_config import setup_logger
 
 logger = logging.getLogger(__name__)
@@ -52,11 +52,16 @@ def _resolve_allowed_origins() -> list[str]:
     return allowed_origins
 
 
-def _resolve_runs_dir(runs_dir: Path | None) -> Path:
-    """Resolve runs directory from explicit argument or environment."""
+def _resolve_runs_dir(
+    runs_dir: Path | None,
+    *,
+    config_path: Path,
+    config: AppConfig,
+) -> Path:
+    """Resolve runs directory from explicit argument or loaded config."""
     if runs_dir is not None:
-        return runs_dir
-    return Path(os.getenv("RUNS_DIR", "output"))
+        return resolve_path_relative_to_config(config_path, runs_dir)
+    return config.runs_dir
 
 
 def _resolve_worker_count(max_workers: int | None) -> int:
@@ -79,27 +84,32 @@ def _resolve_chat_job_worker_count() -> int:
     return DEFAULT_API_CHAT_JOB_WORKERS
 
 
-def _resolve_markdown_dir(markdown_dir: Path | None) -> Path:
-    """Resolve markdown directory from explicit argument or environment."""
+def _resolve_markdown_dir(
+    markdown_dir: Path | None,
+    *,
+    config_path: Path,
+    config: AppConfig,
+) -> Path:
+    """Resolve markdown directory from explicit argument or loaded config."""
     if markdown_dir is not None:
-        return markdown_dir
-    return Path(os.getenv("MARKDOWN_DIR", "documents"))
+        return resolve_path_relative_to_config(config_path, markdown_dir)
+    return config.markdown_dir
 
 
 def _resolve_config_path(config_path: Path | None) -> Path:
     """Resolve config path from explicit argument or environment."""
     if config_path is not None:
-        return config_path
-    return Path(os.getenv("LLM_CONFIG_PATH", "llm_config.yaml"))
+        return config_path.expanduser().resolve()
+    return Path(os.getenv("LLM_CONFIG_PATH", "llm_config.yaml")).expanduser().resolve()
 
 
-def _resolve_city_groups_path(city_groups_path: Path | None) -> Path:
+def _resolve_city_groups_path(city_groups_path: Path | None, *, config_path: Path) -> Path:
     """Resolve city groups JSON path."""
     if city_groups_path is not None:
-        return city_groups_path
+        return resolve_path_relative_to_config(config_path, city_groups_path)
     env_path = os.getenv("CITY_GROUPS_PATH")
     if env_path:
-        return Path(env_path)
+        return resolve_path_relative_to_config(config_path, Path(env_path))
     return Path(__file__).resolve().parent / "assets" / "city_groups.json"
 
 
@@ -115,12 +125,24 @@ def create_app(
     setup_logger()
     allowed_origins = _resolve_allowed_origins()
     shared_session_settings = load_shared_session_settings(allowed_origins)
-    resolved_runs_dir = _resolve_runs_dir(runs_dir)
+    resolved_config_path = _resolve_config_path(config_path)
+    startup_config = load_config(resolved_config_path)
+    resolved_runs_dir = _resolve_runs_dir(
+        runs_dir,
+        config_path=resolved_config_path,
+        config=startup_config,
+    )
     resolved_workers = _resolve_worker_count(max_workers)
     resolved_chat_job_workers = _resolve_chat_job_worker_count()
-    resolved_markdown_dir = _resolve_markdown_dir(markdown_dir)
-    resolved_config_path = _resolve_config_path(config_path)
-    resolved_city_groups_path = _resolve_city_groups_path(city_groups_path)
+    resolved_markdown_dir = _resolve_markdown_dir(
+        markdown_dir,
+        config_path=resolved_config_path,
+        config=startup_config,
+    )
+    resolved_city_groups_path = _resolve_city_groups_path(
+        city_groups_path,
+        config_path=resolved_config_path,
+    )
     logger.info(
         "Initializing API app runs_dir=%s workers=%d chat_job_workers=%d markdown_dir=%s config_path=%s city_groups_path=%s",
         resolved_runs_dir,
@@ -136,21 +158,19 @@ def create_app(
         logger.info("API startup: initializing run store and worker pools")
         vector_store_warmup = VectorStoreWarmup()
         feature_readiness = FeatureReadinessService()
-        if resolved_config_path.exists():
-            try:
-                startup_config = load_config(resolved_config_path)
-                mode = (
-                    "vector_store_retrieval"
-                    if startup_config.vector_store.enabled
-                    else "standard_chunking"
-                )
-                logger.info("API startup: markdown_source_mode=%s", mode)
-                vector_store_warmup.start(
-                    config=startup_config,
-                    docs_dir=resolved_markdown_dir,
-                )
-            except Exception as e:  # noqa: BLE001
-                logger.warning("API startup: could not load config for mode log: %s", e)
+        try:
+            mode = (
+                "vector_store_retrieval"
+                if startup_config.vector_store.enabled
+                else "standard_chunking"
+            )
+            logger.info("API startup: markdown_source_mode=%s", mode)
+            vector_store_warmup.start(
+                config=startup_config,
+                docs_dir=resolved_markdown_dir,
+            )
+        except Exception as e:  # noqa: BLE001
+            logger.warning("API startup: could not load config for mode log: %s", e)
         run_store = RunStore(resolved_runs_dir)
         chat_memory_store = ChatMemoryStore(resolved_runs_dir)
         chat_job_store = ChatJobStore(resolved_runs_dir)

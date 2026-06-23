@@ -94,6 +94,12 @@ Environment variables (`.env`):
 
 Chat prompt sizing, follow-up router history and excerpt caps, retry backoff, provider timeouts, and vector-store retrieval tuning all come from `llm_config.yaml`.
 When a run requests provider-backed features, the API now validates them before queueing work: missing `OPENROUTER_API_KEY` blocks the run immediately, and web-research runs fail fast if `SERPER_API_KEY` or `FIRECRAWL_API_KEY` is missing or rejected by the upstream provider.
+
+Path resolution:
+
+- Relative runtime paths from `llm_config.yaml` and matching env overrides such as `MARKDOWN_DIR`, `RUNS_DIR`, `CHROMA_PERSIST_PATH`, and `EXTERNAL_SOURCE_DIR` are resolved relative to the directory containing `llm_config.yaml`.
+- Direct Python scripts that omit `--docs-dir` now use the resolved `markdown_dir` from config instead of a separate hardcoded `documents` default.
+- Docker Compose and Kubernetes already use absolute in-container paths (`/data/documents`, `/app/documents`, `/data/chroma`), so they are not sensitive to the host working directory.
 CLI flags override `.env` values for a given run (for example `--markdown-path`).
 Use `--city` (repeatable) to load markdown only for selected city files. City filters are normalized case-insensitively to backend `city_key` values (for example `Munich`, `MUNICH`, and `munich` all resolve to `munich`).
 
@@ -153,7 +159,7 @@ docker compose up -d
 5. Build or warm up a fresh L2 store into `.chroma` while on `main`:
 
 ```powershell
-python -m backend.scripts.update_vector_store --trigger manual --docs-dir documents
+python -m backend.scripts.update_vector_store --trigger manual
 ```
 
 6. When switching to the cosine branch for local testing, update `.env` to `.chroma_cosine` values and restart the relevant process. Docker Compose does not need an image rebuild, but it does need container recreation after the `.env` change.
