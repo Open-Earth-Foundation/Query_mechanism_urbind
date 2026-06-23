@@ -3,6 +3,7 @@ from __future__ import annotations
 import inspect
 import logging
 import sys
+from collections import Counter
 from copy import deepcopy
 from pathlib import Path
 from typing import Any, Callable, Literal
@@ -29,6 +30,7 @@ from backend.modules.orchestrator.utils import (
 from backend.modules.orchestrator.utils.error_handlers import (
     detach_run_file_logger,
 )
+from backend.modules.orchestrator.utils.io import write_final_output
 from backend.modules.web_researcher.module import run_enrichment_pipeline
 from backend.modules.vector_store.retriever import (
     as_markdown_documents,
@@ -52,6 +54,22 @@ from backend.utils.run_snapshot import (
 from backend.utils.tokenization import count_tokens
 
 logger = logging.getLogger(__name__)
+COSINE_DISTANCE_METRIC = "cosine_distance"
+
+
+def _build_writer_skipped_output(
+    *,
+    question: str,
+    excerpt_count: int,
+) -> str:
+    """Return a lightweight final output when writer execution is disabled."""
+    return (
+        "## Writer Skipped\n\n"
+        "Writer execution was skipped because `WRITER_ENABLED=false`.\n\n"
+        f"- Question preserved for inspection: {question}\n"
+        f"- Accepted excerpts available: {excerpt_count}\n"
+        "- Use the retrieval and markdown artifacts in this run folder to inspect evidence."
+    )
 
 
 def _write_context_handoff(
@@ -90,6 +108,102 @@ def _dedupe_preserve_order(values: list[str]) -> list[str]:
     return deduped
 
 
+def _distance_percentiles(values: list[float]) -> dict[str, float | None]:
+    """Return compact nearest-rank distance percentiles for artifact summaries."""
+    if not values:
+        return {
+            "distance_min": None,
+            "distance_p50": None,
+            "distance_p95": None,
+            "distance_max": None,
+        }
+    ordered = sorted(values)
+
+    def nearest_rank(rank: float) -> float:
+        index = min(
+            max(round((len(ordered) - 1) * rank), 0),
+            len(ordered) - 1,
+        )
+        return ordered[index]
+
+    return {
+        "distance_min": ordered[0],
+        "distance_p50": nearest_rank(0.50),
+        "distance_p95": nearest_rank(0.95),
+        "distance_max": ordered[-1],
+    }
+
+
+def _chunk_retrieval_diagnostics(chunk: dict[str, object]) -> dict[str, object] | None:
+    """Extract the lean retrieval diagnostics we want to expose in stage artifacts."""
+    distance_value = chunk.get("distance")
+    selection_mode = chunk.get("selection_mode")
+    seed_rank = chunk.get("seed_rank")
+    if not isinstance(distance_value, str) and not isinstance(distance_value, (int, float)):
+        return None
+    diagnostics: dict[str, object] = {
+        "distance_metric": str(chunk.get("distance_metric", COSINE_DISTANCE_METRIC)).strip()
+        or COSINE_DISTANCE_METRIC,
+        "distance": float(distance_value),
+    }
+    if isinstance(selection_mode, str) and selection_mode.strip():
+        diagnostics["selection_mode"] = selection_mode.strip()
+    if isinstance(seed_rank, int):
+        diagnostics["seed_rank"] = seed_rank
+    return diagnostics
+
+
+def _build_retrieval_diagnostics_index(
+    markdown_chunks: list[dict[str, object]],
+) -> dict[str, dict[str, object]]:
+    """Index lean retrieval diagnostics by chunk id for markdown-stage artifacts."""
+    indexed: dict[str, dict[str, object]] = {}
+    for chunk in markdown_chunks:
+        chunk_id = str(chunk.get("chunk_id", "")).strip()
+        if not chunk_id:
+            continue
+        diagnostics = _chunk_retrieval_diagnostics(chunk)
+        if diagnostics is None:
+            continue
+        indexed[chunk_id] = diagnostics
+    return indexed
+
+
+def _build_accepted_excerpts_artifact(
+    excerpts: list[dict[str, object]],
+    retrieval_by_chunk_id: dict[str, dict[str, object]],
+) -> dict[str, object]:
+    """Attach lean retrieval diagnostics to accepted excerpts for stage inspection."""
+    artifact_excerpts: list[dict[str, object]] = []
+    for excerpt in excerpts:
+        excerpt_payload = dict(excerpt)
+        source_chunk_ids = excerpt.get("source_chunk_ids")
+        retrieval_sources: list[dict[str, object]] = []
+        if isinstance(source_chunk_ids, list):
+            for chunk_id in source_chunk_ids:
+                if not isinstance(chunk_id, str):
+                    continue
+                diagnostics = retrieval_by_chunk_id.get(chunk_id.strip())
+                if diagnostics is None:
+                    continue
+                retrieval_sources.append(
+                    {
+                        "chunk_id": chunk_id.strip(),
+                        **diagnostics,
+                    }
+                )
+        if retrieval_sources:
+            excerpt_payload["retrieval"] = {
+                "source_chunks": retrieval_sources,
+            }
+        artifact_excerpts.append(excerpt_payload)
+    return {
+        "distance_metric": COSINE_DISTANCE_METRIC,
+        "excerpt_count": len(artifact_excerpts),
+        "excerpts": artifact_excerpts,
+    }
+
+
 def _build_retrieval_queries(
     *queries: str | None,
     limit: int = 3,
@@ -122,6 +236,7 @@ def _collect_markdown_decision_artifacts(
     batch_failures_payload = [
         failure.model_dump() for failure in markdown_result.batch_failures
     ]
+    retrieval_by_chunk_id = _build_retrieval_diagnostics_index(markdown_chunks)
 
     retrieved_ids = _dedupe_preserve_order(
         [str(document.get("chunk_id", "")).strip() for document in markdown_chunks]
@@ -203,22 +318,77 @@ def _collect_markdown_decision_artifacts(
         if invariant_ok and not markdown_result.batch_failures and not unresolved_ids
         else "partial"
     )
+    accepted_selection_modes = Counter(
+        str(diagnostics.get("selection_mode", "")).strip() or "unknown"
+        for chunk_id, diagnostics in retrieval_by_chunk_id.items()
+        if chunk_id in accepted_set
+    )
+    rejected_selection_modes = Counter(
+        str(diagnostics.get("selection_mode", "")).strip() or "unknown"
+        for chunk_id, diagnostics in retrieval_by_chunk_id.items()
+        if chunk_id in rejected_set
+    )
 
     rejected_artifact = {
         "status": artifact_status,
+        "distance_metric": COSINE_DISTANCE_METRIC,
         "rejected_chunk_ids": rejected_ids,
         "rejected_by_city": rejected_by_city,
         "counts": {
             "rejected": len(rejected_ids),
         },
+        "rejected_chunks": [],
     }
+    retrieval_summary = {
+        "accepted": {
+            "count": len(accepted_ids),
+            "selection_mode_counts": dict(accepted_selection_modes),
+            **_distance_percentiles(
+                [
+                    float(diagnostics["distance"])
+                    for chunk_id, diagnostics in retrieval_by_chunk_id.items()
+                    if chunk_id in accepted_set
+                ]
+            ),
+        },
+        "rejected": {
+            "count": len(rejected_ids),
+            "selection_mode_counts": dict(rejected_selection_modes),
+            **_distance_percentiles(
+                [
+                    float(diagnostics["distance"])
+                    for chunk_id, diagnostics in retrieval_by_chunk_id.items()
+                    if chunk_id in rejected_set
+                ]
+            ),
+        },
+    }
+    for chunk in markdown_chunks:
+        chunk_id = str(chunk.get("chunk_id", "")).strip()
+        if chunk_id not in rejected_set:
+            continue
+        rejected_chunk_payload = {
+            "chunk_id": chunk_id,
+            "city_name": str(chunk.get("city_name", "")).strip(),
+            "city_key": str(chunk.get("city_key", "")).strip(),
+            "path": str(chunk.get("path", "")).strip(),
+            "heading_path": str(chunk.get("heading_path", "")).strip(),
+            "block_type": str(chunk.get("block_type", "")).strip(),
+            "chunk_index": chunk.get("chunk_index"),
+        }
+        diagnostics = retrieval_by_chunk_id.get(chunk_id)
+        if diagnostics is not None:
+            rejected_chunk_payload["retrieval"] = diagnostics
+        rejected_artifact["rejected_chunks"].append(rejected_chunk_payload)
     audit_artifact = {
         "status": artifact_status,
+        "distance_metric": COSINE_DISTANCE_METRIC,
         "retrieved_total": len(retrieved_ids),
         "accepted_total": len(accepted_ids),
         "rejected_total": len(rejected_ids),
         "unresolved_total": len(unresolved_ids),
         "invariant_ok": invariant_ok,
+        "retrieval_summary": retrieval_summary,
         "missing_chunk_ids": missing_chunk_ids,
         "unknown_decision_ids": unknown_decision_ids,
         "unknown_excerpt_source_ids": unknown_excerpt_source_ids,
@@ -793,10 +963,14 @@ def run_pipeline(
             markdown_bundle["excerpts"] = []
             markdown_bundle["excerpt_count"] = 0
 
-        accepted_excerpts_payload = {
-            "excerpts": markdown_bundle["excerpts"],
-            "excerpt_count": markdown_bundle["excerpt_count"],
-        }
+        accepted_excerpts_payload = _build_accepted_excerpts_artifact(
+            [
+                excerpt
+                for excerpt in markdown_bundle["excerpts"]
+                if isinstance(excerpt, dict)
+            ],
+            _build_retrieval_diagnostics_index(markdown_chunks),
+        )
         markdown_excerpts_path = run_logger.write_stage_file(
             "markdown_extraction",
             "accepted_excerpts.json",
@@ -947,6 +1121,53 @@ def run_pipeline(
     # --- END enrichment ---
 
     progress.start_step("writer", "Generating final document")
+    if not config.writer.enabled:
+        excerpt_count = 0
+        markdown_payload = context_bundle.get("markdown")
+        if isinstance(markdown_payload, dict):
+            raw_excerpt_count = markdown_payload.get("excerpt_count", 0)
+            excerpt_count = (
+                raw_excerpt_count if isinstance(raw_excerpt_count, int) else 0
+            )
+        skipped_output = _build_writer_skipped_output(
+            question=question,
+            excerpt_count=excerpt_count,
+        )
+        write_final_output(
+            question=question,
+            content=skipped_output,
+            paths=paths,
+            run_logger=run_logger,
+            config=config,
+        )
+        run_logger.write_stage_detail(
+            "writer",
+            {
+                "inputs": {
+                    "writer_enabled": False,
+                    "analysis_mode": analysis_mode,
+                },
+                "outputs": {
+                    "status": "skipped",
+                    "skip_reason": "WRITER_ENABLED=false",
+                    "final_output": run_logger.artifact_label(paths.final_output),
+                },
+                "metrics": {
+                    "markdown_excerpt_count": excerpt_count,
+                    "final_output_chars": len(skipped_output),
+                },
+            },
+        )
+        progress.add_item("writer", "Skipped because WRITER_ENABLED=false")
+        progress.complete_step("writer", status="skipped")
+        run_logger.finalize(
+            "completed",
+            final_output_path=paths.final_output,
+            finish_reason="writer_skipped_disabled",
+        )
+        detach_run_file_logger(run_log_handler)
+        return paths
+
     try:
         result = handle_write_decision(
             question,

@@ -64,6 +64,7 @@ def build_test_app_config(
         config.tef_mapper = config.tef_mapper.model_copy(
             update={"numeric_unit_classifier_enabled": False}
         )
+    config.writer = config.writer.model_copy(update={"enabled": True})
     config.writer = _apply_overrides(config.writer, writer_overrides)
     config.chat = _apply_overrides(config.chat, chat_overrides)
     config.assumptions_reviewer = _apply_overrides(

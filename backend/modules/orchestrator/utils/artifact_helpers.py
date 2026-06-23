@@ -62,15 +62,24 @@ def build_retrieval_metrics(retrieval_payload: dict[str, object]) -> dict[str, o
         if isinstance(item.get("distance"), (int, float))
     ]
     meta_payload = meta if isinstance(meta, dict) else {}
+    distance_metric = str(meta_payload.get("distance_metric", "distance")).strip() or "distance"
     return {
+        "retrieval_distance_metric": distance_metric,
         "retrieval_total_chunks": len(chunk_entries),
         "retrieval_seed_chunks": len(seed_entries),
-        "retrieval_neighbor_chunks": meta_payload.get("neighbor_expanded_total_chunks"),
-        "retrieval_fallback_chunks": meta_payload.get("fallback_top_up_total_chunks"),
-        "retrieval_distance_min": min(distances) if distances else None,
-        "retrieval_distance_p50": percentile(distances, 0.50),
-        "retrieval_distance_p95": percentile(distances, 0.95),
-        "retrieval_distance_max": max(distances) if distances else None,
+        "retrieval_distance_qualified_chunks": meta_payload.get(
+            "distance_qualified_total_chunks"
+        ),
+        "retrieval_fallback_top_up_chunks": meta_payload.get(
+            "fallback_top_up_total_chunks"
+        ),
+        "retrieval_neighbor_context_chunks": meta_payload.get(
+            "neighbor_expanded_total_chunks"
+        ),
+        "retrieval_cosine_distance_min": min(distances) if distances else None,
+        "retrieval_cosine_distance_p50": percentile(distances, 0.50),
+        "retrieval_cosine_distance_p95": percentile(distances, 0.95),
+        "retrieval_cosine_distance_max": max(distances) if distances else None,
         "selected_city_count": len(retrieval_payload.get("selected_cities", []) or []),
         "retrieval_query_count": len(retrieval_payload.get("queries", []) or []),
     }
@@ -118,6 +127,21 @@ def build_markdown_metrics(
     accepted_total = int(decision_audit_artifact.get("accepted_total") or 0)
     rejected_total = int(decision_audit_artifact.get("rejected_total") or 0)
     total_decisions = accepted_total + rejected_total
+    retrieval_summary = decision_audit_artifact.get("retrieval_summary")
+    accepted_retrieval = (
+        retrieval_summary.get("accepted")
+        if isinstance(retrieval_summary, dict)
+        else None
+    )
+    rejected_retrieval = (
+        retrieval_summary.get("rejected")
+        if isinstance(retrieval_summary, dict)
+        else None
+    )
+    distance_metric = (
+        str(decision_audit_artifact.get("distance_metric", "distance")).strip()
+        or "distance"
+    )
     return {
         "markdown_chunk_count": len(markdown_chunks),
         "markdown_accepted_count": accepted_total,
@@ -125,6 +149,47 @@ def build_markdown_metrics(
         "markdown_unresolved_count": decision_audit_artifact.get("unresolved_total"),
         "markdown_acceptance_ratio": (
             accepted_total / total_decisions if total_decisions else None
+        ),
+        "markdown_distance_metric": distance_metric,
+        "markdown_accepted_cosine_distance_min": (
+            accepted_retrieval.get("distance_min")
+            if isinstance(accepted_retrieval, dict)
+            else None
+        ),
+        "markdown_accepted_cosine_distance_p50": (
+            accepted_retrieval.get("distance_p50")
+            if isinstance(accepted_retrieval, dict)
+            else None
+        ),
+        "markdown_accepted_cosine_distance_p95": (
+            accepted_retrieval.get("distance_p95")
+            if isinstance(accepted_retrieval, dict)
+            else None
+        ),
+        "markdown_accepted_cosine_distance_max": (
+            accepted_retrieval.get("distance_max")
+            if isinstance(accepted_retrieval, dict)
+            else None
+        ),
+        "markdown_rejected_cosine_distance_min": (
+            rejected_retrieval.get("distance_min")
+            if isinstance(rejected_retrieval, dict)
+            else None
+        ),
+        "markdown_rejected_cosine_distance_p50": (
+            rejected_retrieval.get("distance_p50")
+            if isinstance(rejected_retrieval, dict)
+            else None
+        ),
+        "markdown_rejected_cosine_distance_p95": (
+            rejected_retrieval.get("distance_p95")
+            if isinstance(rejected_retrieval, dict)
+            else None
+        ),
+        "markdown_rejected_cosine_distance_max": (
+            rejected_retrieval.get("distance_max")
+            if isinstance(rejected_retrieval, dict)
+            else None
         ),
         "markdown_excerpt_count": markdown_bundle.get("excerpt_count", 0),
         "markdown_decision_invariant_ok": decision_audit_artifact.get("invariant_ok"),

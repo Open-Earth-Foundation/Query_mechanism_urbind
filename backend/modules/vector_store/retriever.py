@@ -19,6 +19,8 @@ from backend.utils.city_normalization import (
 from backend.utils.config import AppConfig
 from backend.utils.retry import RetrySettings, call_with_retries
 
+COSINE_DISTANCE_METRIC = "cosine_distance"
+
 
 def _normalize_queries(queries: list[str]) -> list[str]:
     """Normalize and de-duplicate retrieval queries while preserving order."""
@@ -278,7 +280,7 @@ def _retrieve_for_city_query(
     max_distance: float | None,
     retry_settings: RetrySettings,
     run_id: str | None = None,
-) -> list[dict[str, Any]]:
+) -> tuple[list[dict[str, Any]], dict[str, object]]:
     """Retrieve rows for one city and one query with distance-first + top-up."""
     candidate_n_results = max(max_chunks_per_city_query, 1)
     payload = call_with_retries(
@@ -298,10 +300,6 @@ def _retrieve_for_city_query(
         },
     )
     rows = _extract_query_rows(payload)
-    query_ranks_by_chunk_id = {
-        str(row["chunk_id"]): query_rank
-        for query_rank, row in enumerate(rows, start=1)
-    }
     passing = [
         _build_seed_row(
             row,
@@ -313,7 +311,11 @@ def _retrieve_for_city_query(
     ]
     min_n = max(fallback_min_chunks_per_city_query, 1)
     if len(passing) >= min_n:
-        return passing
+        return passing, {
+            "distance_qualified_chunks": len(passing),
+            "fallback_top_up_chunks": 0,
+            "seed_chunks_selected": len(passing),
+        }
 
     selected: list[dict[str, Any]] = list(passing)
     selected_ids = {str(row["chunk_id"]) for row in selected}
@@ -331,7 +333,11 @@ def _retrieve_for_city_query(
                 selection_mode="fallback_top_up",
             )
         )
-    return selected
+    return selected, {
+        "distance_qualified_chunks": len(passing),
+        "fallback_top_up_chunks": max(len(selected) - len(passing), 0),
+        "seed_chunks_selected": len(selected),
+    }
 
 
 def _merge_rows_best_distance(
@@ -600,7 +606,7 @@ def retrieve_chunks_for_queries(
         query_stats: list[dict[str, Any]] = []
         for index, query_text in enumerate(normalized_queries, start=1):
             query_id = f"q{index}"
-            rows = _retrieve_for_city_query(
+            rows, query_stats_payload = _retrieve_for_city_query(
                 store=store,
                 query_embedding=query_embeddings[query_text],
                 city_key=city_key,
@@ -616,7 +622,15 @@ def retrieve_chunks_for_queries(
                 {
                     "query_id": query_id,
                     "query": query_text,
-                    "qualified_chunks": len(rows),
+                    "distance_qualified_chunks": int(
+                        query_stats_payload["distance_qualified_chunks"]
+                    ),
+                    "fallback_top_up_chunks": int(
+                        query_stats_payload["fallback_top_up_chunks"]
+                    ),
+                    "seed_chunks_selected": int(
+                        query_stats_payload["seed_chunks_selected"]
+                    ),
                 }
             )
         _merge_rows_best_distance(
@@ -674,6 +688,7 @@ def retrieve_chunks_for_queries(
             "queries": normalized_queries,
             "cities": city_keys,
             "per_city": per_city_stats,
+            "distance_metric": COSINE_DISTANCE_METRIC,
             "max_distance": config.vector_store.retrieval_max_distance,
             "fallback_min_chunks_per_city_query": fallback_min_chunks_per_city_query,
             "max_chunks_per_city_query": max_chunks_per_city_query,
@@ -681,6 +696,16 @@ def retrieve_chunks_for_queries(
             "context_window_chunks": config.vector_store.context_window_chunks,
             "table_context_window_chunks": config.vector_store.table_context_window_chunks,
             "seed_retrieved_total_chunks": len(seed_chunks),
+            "distance_qualified_total_chunks": sum(
+                1
+                for chunk in seed_chunks
+                if chunk.provenance.selection_mode == "distance_qualified"
+            ),
+            "fallback_top_up_total_chunks": sum(
+                1
+                for chunk in seed_chunks
+                if chunk.provenance.selection_mode == "fallback_top_up"
+            ),
             "neighbor_expanded_total_chunks": sum(
                 1 for chunk in chunks if chunk.provenance.origin == "neighbor"
             ),
@@ -713,8 +738,11 @@ def as_markdown_documents(chunks: list[RetrievedChunk]) -> list[dict[str, object
                 "content": chunk.raw_text,
                 "chunk_id": chunk.chunk_id,
                 "distance": f"{chunk.distance:.6f}",
+                "distance_metric": COSINE_DISTANCE_METRIC,
                 "heading_path": chunk.heading_path,
                 "block_type": chunk.block_type,
+                "selection_mode": chunk.provenance.selection_mode,
+                "seed_rank": chunk.provenance.seed_rank,
                 "chunk_index": (
                     chunk.chunk_index
                     if chunk.chunk_index is not None

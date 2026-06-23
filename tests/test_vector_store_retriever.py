@@ -36,8 +36,11 @@ def test_as_markdown_documents_maps_required_fields() -> None:
             "content": "## Initiative\nEvidence block",
             "chunk_id": "munich-1",
             "distance": "0.231234",
+            "distance_metric": "cosine_distance",
             "heading_path": "Mobility > Charging",
             "block_type": "table",
+            "selection_mode": "distance_qualified",
+            "seed_rank": None,
             "chunk_index": None,
         }
     ]
@@ -60,9 +63,10 @@ def test_build_retrieval_artifact_includes_chunk_text() -> None:
         queries=["original question"],
         selected_cities=["Munich"],
         final_chunks=[chunk],
-        retrieval_meta={},
+        retrieval_meta={"distance_metric": "cosine_distance"},
     )
 
+    assert artifact["meta"]["distance_metric"] == "cosine_distance"
     assert artifact["chunks"] == [
         {
             "chunk_id": "munich-1",
@@ -214,7 +218,10 @@ def test_retrieve_chunks_for_queries_applies_distance_floor_and_neighbor_expansi
     assert "chunk-9" in chunk_ids  # pulled in by neighbor expansion
     assert "chunk-12" not in chunk_ids  # filtered out by distance threshold
     assert meta["min_chunks_per_city"] == 2
+    assert meta["distance_metric"] == "cosine_distance"
     assert meta["seed_retrieved_total_chunks"] == 2
+    assert meta["distance_qualified_total_chunks"] == 2
+    assert meta["fallback_top_up_total_chunks"] == 0
     assert meta["neighbor_expanded_total_chunks"] == 1
 
     seed_chunks = {chunk.chunk_id: chunk for chunk in meta["seed_chunks"]}
@@ -365,7 +372,7 @@ def test_retrieve_chunks_for_queries_tops_up_when_too_few_chunks_pass_distance(
         lambda persist_path, collection_name: _FakeStore(),  # noqa: ARG005
     )
 
-    chunks, _meta = retrieve_chunks_for_queries(
+    chunks, meta = retrieve_chunks_for_queries(
         queries=["original question"],
         config=config,
         docs_dir=tmp_path / "documents",
@@ -378,6 +385,17 @@ def test_retrieve_chunks_for_queries_tops_up_when_too_few_chunks_pass_distance(
     assert chunk_index["chunk-10"].provenance.seed_rank == 1
     assert chunk_index["chunk-11"].provenance.selection_mode == "fallback_top_up"
     assert chunk_index["chunk-11"].provenance.seed_rank == 2
+    assert meta["distance_qualified_total_chunks"] == 1
+    assert meta["fallback_top_up_total_chunks"] == 1
+    assert meta["per_city"][0]["query_stats"] == [
+        {
+            "query_id": "q1",
+            "query": "original question",
+            "distance_qualified_chunks": 1,
+            "fallback_top_up_chunks": 1,
+            "seed_chunks_selected": 2,
+        }
+    ]
 
 
 def test_retrieve_chunks_for_queries_uses_manifest_cities_when_not_selected(

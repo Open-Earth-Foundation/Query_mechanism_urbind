@@ -14,6 +14,7 @@ data:
   VECTOR_STORE_UPDATE_MODE: "local_process"
   LLM_CONFIG_PATH: "/app/llm_config.yaml"
   CITY_GROUPS_PATH: "/app/backend/api/assets/city_groups.json"
+  WRITER_ENABLED: "true"
   OPENROUTER_BASE_URL: "https://openrouter.ai/api/v1"
   CHAT_PROMPT_TOKEN_CAP: "250000"
   CHAT_PROVIDER_TIMEOUT_SECONDS: "50"

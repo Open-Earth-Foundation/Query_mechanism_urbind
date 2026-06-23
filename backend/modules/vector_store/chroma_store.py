@@ -13,6 +13,8 @@ MAX_UPSERT_BATCH_SIZE = 5000
 
 from backend.modules.vector_store.models import IndexedChunk
 
+COSINE_COLLECTION_CONFIGURATION = {"hnsw": {"space": "cosine"}}
+
 
 def _resolve_collection_not_found_error_types() -> tuple[type[BaseException], ...]:
     """Resolve Chroma error types that represent a missing collection."""
@@ -55,6 +57,23 @@ def get_client(persist_path: Path):
     return chromadb.PersistentClient(path=str(persist_path))
 
 
+def _read_collection_space(collection: Collection) -> str | None:
+    """Best-effort extraction of the configured Chroma distance space."""
+    configuration = getattr(collection, "configuration", None)
+    if isinstance(configuration, dict):
+        hnsw_config = configuration.get("hnsw")
+        if isinstance(hnsw_config, dict):
+            space = hnsw_config.get("space")
+            if isinstance(space, str) and space.strip():
+                return space.strip().lower()
+    hnsw_config = getattr(configuration, "hnsw", None)
+    if hnsw_config is not None:
+        space = getattr(hnsw_config, "space", None)
+        if isinstance(space, str) and space.strip():
+            return space.strip().lower()
+    return None
+
+
 class ChromaStore:
     """Thin wrapper around Chroma collection operations."""
 
@@ -62,9 +81,29 @@ class ChromaStore:
         self._client = get_client(persist_path)
         self._collection_name = collection_name
 
+    def _get_or_create_collection(self) -> Collection:
+        """Get or create the configured collection using cosine distance space."""
+        return self._client.get_or_create_collection(
+            name=self._collection_name,
+            configuration=COSINE_COLLECTION_CONFIGURATION,
+        )
+
+    def _validate_collection_distance_metric(self, collection: Collection) -> None:
+        """Fail fast when a persisted collection still uses the wrong distance space."""
+        configured_space = _read_collection_space(collection)
+        if configured_space is None or configured_space == "cosine":
+            return
+        raise RuntimeError(
+            "Vector store collection uses the wrong distance metric. "
+            f"Expected cosine space but found {configured_space!r} for collection "
+            f"{self._collection_name!r}. Rebuild the vector store to recreate it."
+        )
+
     def get_collection(self) -> Collection:
         """Get or create underlying Chroma collection."""
-        return self._client.get_or_create_collection(name=self._collection_name)
+        collection = self._get_or_create_collection()
+        self._validate_collection_distance_metric(collection)
+        return collection
 
     def reset_collection(self) -> None:
         """Delete and recreate collection for full rebuild."""
@@ -73,7 +112,8 @@ class ChromaStore:
         except Exception as exc:  # noqa: BLE001
             if not _is_collection_not_found_error(exc):
                 raise
-        self._client.get_or_create_collection(name=self._collection_name)
+        collection = self._get_or_create_collection()
+        self._validate_collection_distance_metric(collection)
 
     def upsert(self, chunks: list[IndexedChunk]) -> None:
         """Upsert indexed chunks into Chroma collection in safe batches."""

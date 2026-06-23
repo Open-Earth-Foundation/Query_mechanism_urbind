@@ -78,6 +78,7 @@ Environment variables (`.env`):
 - `LLM_CONFIG_PATH` (optional, default `llm_config.yaml`): API config file path.
 - `CITY_GROUPS_PATH` (optional, default `backend/api/assets/city_groups.json`): city groups catalog JSON path.
 - `ENRICHMENT_ENABLED` (optional, default `false`): enables gap analysis and assumptions enrichment.
+- `WRITER_ENABLED` (optional, default `true`): enables the final writer stage. When `false`, the pipeline still runs retrieval and markdown extraction, writes run artifacts, and emits a lightweight `final.md` noting that the writer was skipped.
 - `WEB_RESEARCH_ENABLED` (optional, default `false`): enables web research when enrichment is enabled and the required API keys are present.
 - `SERPER_API_KEY` (optional, required when web research is enabled): Serper.dev key for web search.
 - `FIRECRAWL_API_KEY` (optional, required when web research is enabled): Firecrawl key for rendered-page scraping.
@@ -95,7 +96,7 @@ When a run requests provider-backed features, the API now validates them before 
 CLI flags override `.env` values for a given run (for example `--markdown-path`).
 Use `--city` (repeatable) to load markdown only for selected city files. City filters are normalized case-insensitively to backend `city_key` values (for example `Munich`, `MUNICH`, and `munich` all resolve to `munich`).
 
-Example `.env.example` is provided. Use `llm_config.yaml` as the source of truth for vector-store and markdown batching tuning; deployment env vars may override operational toggles such as `VECTOR_STORE_ENABLED`, `VECTOR_STORE_AUTO_UPDATE_ON_RUN`, and `VECTOR_STORE_UPDATE_MODE`.
+Example `.env.example` is provided. Use `llm_config.yaml` as the source of truth for vector-store and markdown batching tuning; deployment env vars may override operational toggles such as `WRITER_ENABLED`, `VECTOR_STORE_ENABLED`, `VECTOR_STORE_AUTO_UPDATE_ON_RUN`, and `VECTOR_STORE_UPDATE_MODE`. For local retrieval-only testing, set `WRITER_ENABLED=false` in your local `.env`.
 
 Default output directory is `output/` (unless overridden by `RUNS_DIR`).
 
@@ -117,6 +118,8 @@ When vector retrieval is enabled, retrieval runs per city and per user-provided 
 - Strict Stage A benchmark metrics must use `seed_chunks[]`, not `chunks[]`.
 - Every serialized retrieval chunk now includes `chunk_index` plus `provenance`
   (`origin`, `selection_mode`, `seed_rank`, `seed_query_ids`, `expanded_from_chunk_ids`).
+- Retrieval artifacts now label the active distance metric explicitly as `cosine_distance`.
+- Per-query retrieval stats are split truthfully into `distance_qualified_chunks`, `fallback_top_up_chunks`, and `seed_chunks_selected`; run-level retrieval metrics use the same naming.
 - `vector_store.retrieval_max_distance` is the strictness control:
   - smaller value = stricter matching, fewer chunks;
   - larger value = higher recall, more chunks.
@@ -130,6 +133,7 @@ Important distinction between the "max" knobs:
 
 Distance scale note:
 
+- The shared Chroma collection now uses cosine distance (`1 - cosine similarity`), not the old default L2 metric.
 - Do not assume distance is always in `[0, 1]`. It depends on collection metric and embedding characteristics.
 - `0` means identical vectors; values above `0` are increasingly dissimilar.
 - A cutoff of `0` is the strictest setting and usually returns very few (often zero) chunks, not all chunks.
@@ -1065,7 +1069,7 @@ kubectl apply -f k8s/frontend-service.yml
 
 Add `SERPER_API_KEY` and `FIRECRAWL_API_KEY` to the secret only when web research is enabled.
 
-The backend ConfigMap sets `VECTOR_STORE_ENABLED=true`, `VECTOR_STORE_AUTO_UPDATE_ON_RUN=false`, and `VECTOR_STORE_UPDATE_MODE=local_process` for the deployed environment. The backend still checks whether the vector store is stale, but it does not try to update it automatically in Kubernetes. When the store is stale, runs are blocked and the UI instructs the operator to run the maintenance workflow documented below.
+The backend ConfigMap sets `WRITER_ENABLED=true`, `VECTOR_STORE_ENABLED=true`, `VECTOR_STORE_AUTO_UPDATE_ON_RUN=false`, and `VECTOR_STORE_UPDATE_MODE=local_process` for the deployed environment. The backend still checks whether the vector store is stale, but it does not try to update it automatically in Kubernetes. When the store is stale, runs are blocked and the UI instructs the operator to run the maintenance workflow documented below.
 
 ## GitHub Actions deployment
 
@@ -1116,10 +1120,10 @@ Artifacts are written under `output/<run_id>/`:
   - `retrieval_queries`: retrieval-ready query list where index `0` is always the trimmed `original_question`.
   - `retrieval_query_1` / `retrieval_query_2` / `retrieval_query_3`: explicit query slots written for easier inspection and reproducibility.
 - `system/vector_store_warmup/latest.json`: latest API startup vector-store warm-up diagnostics, written outside user run folders under `output/system/`. It records trigger, status, timing, compact stats, changed/deleted file details, and the post-update vector-store snapshot; timestamped history is kept beside it as `system/vector_store_warmup/<timestamp>.json`.
-- `stage_files/006_markdown_extraction/accepted_excerpts.json`: accepted markdown evidence bundle. Includes `excerpts` (items with `ref_id`, `quote`, `city_name`, `city_key`, `partial_answer`, and `source_chunk_ids`) and `excerpt_count` (count of accepted excerpts). Run-level city scope lives on the root `context_bundle.json` and in stage inputs/outputs instead of inside the markdown-only payload. Stage B extraction recall uses the union of `excerpts[].source_chunk_ids`, and `/references` API responses are derived from this artifact.
+- `stage_files/006_markdown_extraction/accepted_excerpts.json`: accepted markdown evidence bundle. Includes `excerpts` (items with `ref_id`, `quote`, `city_name`, `city_key`, `partial_answer`, and `source_chunk_ids`) and `excerpt_count` (count of accepted excerpts). Accepted excerpt entries may also include a stage-only `retrieval` block with source-chunk cosine-distance diagnostics; these diagnostics are intentionally not persisted into `context_bundle.json`. Run-level city scope lives on the root `context_bundle.json` and in stage inputs/outputs instead of inside the markdown-only payload. Stage B extraction recall uses the union of `excerpts[].source_chunk_ids`, and `/references` API responses are derived from this artifact.
 - `stage_files/006_markdown_extraction/city_summary.json`: city-level extraction observability artifact. Includes per-city batch counts, chunk decision counts, excerpt counts, status/error rollups, and top-level `cities_with_excerpts` / `cities_without_excerpts` / `cities_with_failures` lists for quick verification.
-- `stage_files/006_markdown_extraction/rejected_chunks.json`: rejected markdown decision artifact with rejected chunk IDs, rejected-per-city grouping, status, and counts. Full chunk text for rejected IDs is available in `stage_files/003_retrieval/retrieval.json` when vector retrieval is enabled.
-- `stage_files/006_markdown_extraction/decision_audit.json`: run-level reconciliation counters and diagnostics (`retrieved_total`, accepted/rejected/unresolved totals, invariant status, and mismatch details).
+- `stage_files/006_markdown_extraction/rejected_chunks.json`: rejected markdown decision artifact with rejected chunk IDs, rejected-per-city grouping, status, counts, and lean per-chunk retrieval diagnostics (`distance`, `selection_mode`, optional `seed_rank`). Full chunk text for rejected IDs is still available in `stage_files/003_retrieval/retrieval.json` when vector retrieval is enabled.
+- `stage_files/006_markdown_extraction/decision_audit.json`: run-level reconciliation counters and diagnostics (`retrieved_total`, accepted/rejected/unresolved totals, invariant status, mismatch details, and accepted-vs-rejected retrieval summaries such as cosine-distance distributions and selection-mode counts).
 - `stage_files/003_retrieval/retrieval.json` (when `VECTOR_STORE_ENABLED=true`): vector retrieval inputs and results summary. Includes the final retrieval query list, optional city filter, retrieval tuning metadata (cutoffs/caps), strict direct-hit `seed_chunks[]`, final delivered `chunks[]`, `meta.seed_retrieved_total_chunks`, `meta.neighbor_expanded_total_chunks`, and per-chunk summaries (`chunk_id`, `chunk_text`, `chunk_index`, `city_name`, `city_key`, `source_path`, `heading_path`, `block_type`, `distance`, `provenance`).
 - `stage_files/005_markdown_batching/batches.json`: markdown batching plan used for the markdown researcher calls. Includes per-city batch indices, estimated tokens, and chunk ordering fields (`path`, `chunk_index`, `chunk_id`), making it easy to inspect how chunks were grouped into LLM requests.
 - `stage_files/007_markdown_context_handoff/context_bundle_after_markdown.json`: immutable full context snapshot after the markdown pipeline finishes.

@@ -86,6 +86,7 @@ class ChatConfig(AgentConfig):
 class WriterConfig(AgentConfig):
     """Configuration for the writer agent."""
 
+    enabled: bool = True
     max_coverage_attempts: int = 2
     multi_pass_threshold_tokens: int = 200_000
     multi_pass_chunk_tokens: int = 200_000
@@ -258,6 +259,7 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
     markdown_dir = os.getenv("MARKDOWN_DIR")
     openrouter_base_url = os.getenv("OPENROUTER_BASE_URL")
     enrichment_enabled = os.getenv("ENRICHMENT_ENABLED")
+    writer_enabled = os.getenv("WRITER_ENABLED")
     web_research_enabled = os.getenv("WEB_RESEARCH_ENABLED")
     external_source_search_enabled = os.getenv("EXTERNAL_SOURCE_SEARCH_ENABLED")
     external_source_dir = os.getenv("EXTERNAL_SOURCE_DIR")
@@ -277,6 +279,10 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
         parsed = _parse_env_bool(enrichment_enabled)
         if parsed is not None:
             config.enrichment.enabled = parsed
+    if writer_enabled is not None:
+        parsed = _parse_env_bool(writer_enabled)
+        if parsed is not None:
+            config.writer.enabled = parsed
     if web_research_enabled is not None:
         parsed = _parse_env_bool(web_research_enabled)
         if parsed is not None:

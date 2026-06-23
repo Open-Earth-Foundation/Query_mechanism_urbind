@@ -6,7 +6,7 @@ Inputs:
   - --docs-dir: Directory containing markdown files to index (default: documents).
   - --persist-path: Chroma persistence directory override.
   - --collection: Chroma collection name override.
-  - --city: Optional city stem filter; repeatable.
+  - --city: Optional city stem filter. Dry runs inspect only those cities; persisted builds ignore the filter and rebuild the full shared index.
   - --dry-run: Parse/chunk only, do not embed or persist to Chroma/manifest.
   - --write-chunks-json: Optional path to write raw chunk payloads as JSON (works with or without --dry-run).
   - --config: Path to llm_config.yaml (default: llm_config.yaml).
@@ -56,7 +56,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--city",
         action="append",
-        help="Optional city stem filter (repeatable).",
+        help=(
+            "Optional city stem filter. Dry runs inspect only those cities; "
+            "persisted builds ignore the filter."
+        ),
     )
     parser.add_argument(
         "--dry-run",

@@ -98,7 +98,7 @@ def test_build_retrieval_queries_trims_dedupes_case_insensitively_and_caps() -> 
     ]
 
 
-def test_collect_markdown_decision_artifacts_keeps_rejected_chunks_lightweight() -> None:
+def test_collect_markdown_decision_artifacts_adds_retrieval_diagnostics() -> None:
     markdown_chunks = [
         {
             "chunk_id": "chunk-1",
@@ -109,6 +109,9 @@ def test_collect_markdown_decision_artifacts_keeps_rejected_chunks_lightweight()
             "heading_path": "Mobility > Charging",
             "block_type": "paragraph",
             "distance": "0.123",
+            "distance_metric": "cosine_distance",
+            "selection_mode": "distance_qualified",
+            "seed_rank": 1,
             "chunk_index": 1,
         },
         {
@@ -120,6 +123,9 @@ def test_collect_markdown_decision_artifacts_keeps_rejected_chunks_lightweight()
             "heading_path": "Buildings > Retrofit",
             "block_type": "table",
             "distance": "0.456",
+            "distance_metric": "cosine_distance",
+            "selection_mode": "fallback_top_up",
+            "seed_rank": 3,
             "chunk_index": 2,
         },
     ]
@@ -142,7 +148,42 @@ def test_collect_markdown_decision_artifacts_keeps_rejected_chunks_lightweight()
 
     assert rejected_artifact["rejected_chunk_ids"] == ["chunk-2"]
     assert rejected_artifact["rejected_by_city"] == {"leipzig": ["chunk-2"]}
-    assert "rejected_chunks" not in rejected_artifact
+    assert rejected_artifact["distance_metric"] == "cosine_distance"
+    assert rejected_artifact["rejected_chunks"] == [
+        {
+            "chunk_id": "chunk-2",
+            "city_name": "Leipzig",
+            "city_key": "leipzig",
+            "path": "documents/Leipzig.md",
+            "heading_path": "Buildings > Retrofit",
+            "block_type": "table",
+            "chunk_index": 2,
+            "retrieval": {
+                "distance_metric": "cosine_distance",
+                "distance": 0.456,
+                "selection_mode": "fallback_top_up",
+                "seed_rank": 3,
+            },
+        }
+    ]
+    assert "retrieval_summary" not in rejected_artifact
+    assert audit_artifact["distance_metric"] == "cosine_distance"
+    assert audit_artifact["retrieval_summary"]["accepted"] == {
+        "count": 1,
+        "selection_mode_counts": {"distance_qualified": 1},
+        "distance_min": 0.123,
+        "distance_p50": 0.123,
+        "distance_p95": 0.123,
+        "distance_max": 0.123,
+    }
+    assert audit_artifact["retrieval_summary"]["rejected"] == {
+        "count": 1,
+        "selection_mode_counts": {"fallback_top_up": 1},
+        "distance_min": 0.456,
+        "distance_p50": 0.456,
+        "distance_p95": 0.456,
+        "distance_max": 0.456,
+    }
     assert audit_artifact["status"] == "complete"
 
 
@@ -389,6 +430,95 @@ def test_run_pipeline_keeps_city_scope_on_root_context_not_markdown_payload(
     assert isinstance(markdown_snapshot.get("markdown"), dict)
 
 
+def test_run_pipeline_keeps_retrieval_diagnostics_out_of_context_bundle(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.setenv("OPENROUTER_API_KEY", "test")
+
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir()
+    (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
+
+    config = _build_test_config(
+        runs_dir=tmp_path / "output",
+        markdown_dir=docs_dir,
+    )
+
+    def _stub_markdown_with_source_ids(
+        question: str,
+        documents: list[dict[str, str]],
+        config: AppConfig,
+        api_key: str,
+        **_kwargs: dict[str, object],
+    ) -> MarkdownResearchResult:
+        del question, config, api_key
+        assert documents[0]["distance_metric"] == "cosine_distance"
+        excerpt = MarkdownExcerpt(
+            quote="Munich evidence.",
+            city_name="Munich",
+            partial_answer="Munich evidence.",
+            source_chunk_ids=["chunk-1"],
+        )
+        return MarkdownResearchResult(
+            excerpts=[excerpt],
+            accepted_chunk_ids=["chunk-1"],
+        )
+
+    def _stub_load_markdown_documents(*_args: object, **_kwargs: object) -> list[dict[str, object]]:
+        return [
+            {
+                "path": "documents/Munich.md",
+                "city_name": "Munich",
+                "city_key": "munich",
+                "content": "Munich source text",
+                "chunk_id": "chunk-1",
+                "distance": "0.111000",
+                "distance_metric": "cosine_distance",
+                "heading_path": "Mobility",
+                "block_type": "paragraph",
+                "selection_mode": "distance_qualified",
+                "seed_rank": 1,
+                "chunk_index": 0,
+            }
+        ]
+
+    monkeypatch.setattr(
+        "backend.modules.orchestrator.module.load_markdown_documents",
+        _stub_load_markdown_documents,
+    )
+
+    paths = run_pipeline(
+        question="What initiatives exist for Munich?",
+        config=config,
+        markdown_func=_stub_markdown_with_source_ids,
+        writer_func=_stub_writer,
+    )
+
+    context_bundle = json.loads(paths.context_bundle.read_text(encoding="utf-8"))
+    accepted_artifact = json.loads(
+        _stage_file_path(
+            paths,
+            "006_markdown_extraction",
+            "accepted_excerpts.json",
+        ).read_text(encoding="utf-8")
+    )
+
+    assert "retrieval" not in context_bundle["markdown"]["excerpts"][0]
+    assert accepted_artifact["distance_metric"] == "cosine_distance"
+    assert accepted_artifact["excerpts"][0]["retrieval"] == {
+        "source_chunks": [
+            {
+                "chunk_id": "chunk-1",
+                "distance_metric": "cosine_distance",
+                "distance": 0.111,
+                "selection_mode": "distance_qualified",
+                "seed_rank": 1,
+            }
+        ]
+    }
+
+
 def test_run_pipeline_writes_enrichment_context_handoff_when_enrichment_runs(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
@@ -509,6 +639,58 @@ def test_run_pipeline_persists_partial_writer_output_as_completed_with_gaps(
         "completed_with_gaps (writer partial citation coverage 1/2)"
     )
     assert run_log["writer_citation_coverage"]["missing_cities"] == ["Berlin"]
+
+
+def test_run_pipeline_skips_writer_when_disabled(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Writer-disabled runs should finalize successfully without calling the writer."""
+    monkeypatch.setenv("OPENROUTER_API_KEY", "test")
+
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir()
+    (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
+
+    config = build_test_app_config(
+        runs_dir=tmp_path / "output",
+        markdown_dir=docs_dir,
+        vector_store_overrides={"enabled": False},
+        writer_overrides={"enabled": False},
+    )
+    writer_called = False
+
+    def _failing_writer(
+        question: str,
+        context_bundle: dict,
+        config: AppConfig,
+        api_key: str,
+        **_kwargs: dict[str, object],
+    ) -> WriterOutput:
+        del question, context_bundle, config, api_key
+        nonlocal writer_called
+        writer_called = True
+        raise AssertionError("writer should not be called when disabled")
+
+    paths = run_pipeline(
+        question="What initiatives exist for Munich?",
+        config=config,
+        markdown_func=_stub_markdown,
+        writer_func=_failing_writer,
+    )
+
+    api_state = json.loads(paths.api_state.read_text(encoding="utf-8"))
+    final_output = paths.final_output.read_text(encoding="utf-8")
+    writer_stage_paths = sorted(paths.stages_dir.glob("*_writer.json"))
+    assert writer_stage_paths
+    writer_stage = json.loads(writer_stage_paths[0].read_text(encoding="utf-8"))
+
+    assert writer_called is False
+    assert api_state["status"] == "completed"
+    assert api_state["finish_reason"] == "writer_skipped_disabled"
+    assert "Writer execution was skipped because `WRITER_ENABLED=false`." in final_output
+    assert writer_stage["outputs"]["status"] == "skipped"
+    assert writer_stage["outputs"]["skip_reason"] == "WRITER_ENABLED=false"
 
 
 def test_run_pipeline_refreshes_vector_store_snapshot_after_auto_update(

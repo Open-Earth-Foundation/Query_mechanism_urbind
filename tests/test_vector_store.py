@@ -48,6 +48,7 @@ def _matching_index_settings_payload(config: AppConfig) -> dict[str, object]:
     """Return manifest index-settings metadata matching the test config."""
     return {
         "version": 1,
+        "distance_metric": "cosine_distance",
         "embedding_model": config.vector_store.embedding_model,
         "embedding_max_input_tokens": config.vector_store.embedding_max_input_tokens,
         "chunk_tokens": config.vector_store.embedding_chunk_tokens,
@@ -428,14 +429,14 @@ def test_update_markdown_index_rebuilds_when_index_settings_change(
         config=config,
         docs_dir=docs_dir,
         selected_cities=["Munich"],
-        dry_run=False,
+        dry_run=True,
     )
 
     assert result == "rebuilt"
     assert captured["config"] == config
     assert captured["docs_dir"] == docs_dir
     assert captured["selected_cities"] is None
-    assert captured["dry_run"] is False
+    assert captured["dry_run"] is True
 
 
 def test_pack_blocks_keeps_tables_as_table_chunks() -> None:
@@ -525,10 +526,15 @@ def test_reset_collection_ignores_collection_not_found_error(monkeypatch) -> Non
             del name
             raise FakeCollectionNotFoundError("Collection not found")
 
-        def get_or_create_collection(self, name: str) -> dict[str, str]:
+        def get_or_create_collection(
+            self,
+            name: str,
+            configuration: dict[str, object] | None = None,
+        ) -> dict[str, object]:
             del name
+            assert configuration == {"hnsw": {"space": "cosine"}}
             self.recreated = True
-            return {}
+            return {"configuration": configuration}
 
     monkeypatch.setattr(
         chroma_store_module,
@@ -552,9 +558,13 @@ def test_reset_collection_reraises_unexpected_delete_errors(monkeypatch) -> None
             del name
             raise RuntimeError("Permission denied")
 
-        def get_or_create_collection(self, name: str) -> dict[str, str]:
+        def get_or_create_collection(
+            self,
+            name: str,
+            configuration: dict[str, object] | None = None,
+        ) -> dict[str, object]:
             del name
-            return {}
+            return {"configuration": configuration}
 
     monkeypatch.setattr(chroma_store_module, "COLLECTION_NOT_FOUND_ERROR_TYPES", ())
     store = ChromaStore.__new__(ChromaStore)
@@ -565,48 +575,30 @@ def test_reset_collection_reraises_unexpected_delete_errors(monkeypatch) -> None
         store.reset_collection()
 
 
-def test_update_markdown_index_filtered_city_does_not_delete_other_manifest_entries(
+def test_update_markdown_index_ignores_selected_city_scope_for_persisted_writes(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    """Filtered update only deletes removed files within the selected city scope."""
+    """Persisted index updates should still refresh the full documents corpus."""
     docs_dir = tmp_path / "documents"
     docs_dir.mkdir(parents=True)
-    munich_path = docs_dir / "Munich.md"
-    berlin_path = docs_dir / "Berlin.md"
-    munich_path.write_text("# Munich\n\nCurrent content.", encoding="utf-8")
+    (docs_dir / "Munich.md").write_text("# Munich\n\nCurrent content.", encoding="utf-8")
+    (docs_dir / "Berlin.md").write_text("# Berlin\n\nCurrent content.", encoding="utf-8")
     config = _build_config(tmp_path)
 
-    # Seed manifest with one selected-city entry and one unrelated-city entry.
-    config.vector_store.index_manifest_path.parent.mkdir(parents=True, exist_ok=True)
-    config.vector_store.index_manifest_path.write_text(
-        """
-{
-  "index_settings": %s,
-  "files": {
-    "%s": {"file_hash": "old-munich", "chunk_ids": ["old-m-1"]},
-    "%s": {"file_hash": "old-berlin", "chunk_ids": ["old-b-1"]}
-  }
-}
-"""
-            % (
-                json.dumps(_matching_index_settings_payload(config)),
-                _test_source_path("Munich.md"),
-                _test_source_path("Berlin.md"),
-            ),
-            encoding="utf-8",
-        )
-
     class FakeStore:
-        delete_calls: list[list[str]] = []
         upsert_calls: list[int] = []
+        reset_calls = 0
 
         def __init__(self, persist_path: Path, collection_name: str) -> None:
             self.persist_path = persist_path
             self.collection_name = collection_name
 
+        def reset_collection(self) -> None:
+            self.__class__.reset_calls += 1
+
         def delete(self, ids: list[str]) -> None:
-            self.delete_calls.append(ids)
+            del ids
 
         def upsert(self, chunks) -> None:
             self.upsert_calls.append(len(chunks))
@@ -646,11 +638,14 @@ def test_update_markdown_index_filtered_city_does_not_delete_other_manifest_entr
         dry_run=False,
     )
 
-    assert stats.files_deleted == 0
-    assert ["old-b-1"] not in FakeStore.delete_calls
+    assert stats.files_indexed == 2
+    assert stats.files_changed == 2
+    assert FakeStore.reset_calls == 1
     manifest = load_manifest(config.vector_store.index_manifest_path)
-    files = manifest.get("files", {})
-    assert _test_source_path("Berlin.md") in files
+    assert sorted(manifest["files"].keys()) == [
+        _test_source_path("Berlin.md"),
+        _test_source_path("Munich.md"),
+    ]
 
 
 def test_update_markdown_index_embedding_failure_aborts_before_delete_and_manifest_write(
@@ -719,12 +714,7 @@ def test_update_markdown_index_embedding_failure_aborts_before_delete_and_manife
     )
 
     with pytest.raises(RuntimeError, match="Index update aborted due to embedding failures"):
-        update_markdown_index(
-            config=config,
-            docs_dir=docs_dir,
-            selected_cities=["Munich"],
-            dry_run=False,
-        )
+        update_markdown_index(config=config, docs_dir=docs_dir, dry_run=False)
 
     assert FakeStore.upsert_calls == []
     assert FakeStore.delete_calls == []
@@ -804,6 +794,132 @@ def test_build_markdown_index_embedding_failure_aborts_before_reset_and_manifest
     )
 
 
+def test_build_markdown_index_refuses_to_wipe_non_empty_manifest_when_no_files_found(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Full rebuild aborts before reset when discovery returns zero markdown files."""
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir(parents=True)
+    config = _build_config(tmp_path)
+    config.vector_store.index_manifest_path.parent.mkdir(parents=True, exist_ok=True)
+    config.vector_store.index_manifest_path.write_text(
+        json.dumps(
+            {
+                "index_settings": _matching_index_settings_payload(config),
+                "files": {
+                    _test_source_path("Munich.md"): {
+                        "file_hash": "existing-file-hash",
+                        "chunk_ids": ["existing-chunk-id"],
+                    }
+                },
+            },
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
+
+    class FakeStore:
+        reset_calls = 0
+
+        def __init__(self, persist_path: Path, collection_name: str) -> None:
+            self.persist_path = persist_path
+            self.collection_name = collection_name
+
+        def reset_collection(self) -> None:
+            self.__class__.reset_calls += 1
+
+        def upsert(self, chunks) -> None:
+            del chunks
+
+    monkeypatch.setattr("backend.modules.vector_store.indexer.ChromaStore", FakeStore)
+
+    with pytest.raises(RuntimeError, match="Refusing to rebuild vector store with zero"):
+        build_markdown_index(
+            config=config,
+            docs_dir=tmp_path / "missing-documents",
+            dry_run=False,
+        )
+
+    assert FakeStore.reset_calls == 0
+    manifest = load_manifest(config.vector_store.index_manifest_path)
+    assert manifest["files"] == {
+        _test_source_path("Munich.md"): {
+            "file_hash": "existing-file-hash",
+            "chunk_ids": ["existing-chunk-id"],
+        }
+    }
+
+
+def test_build_markdown_index_ignores_selected_city_scope_for_persisted_writes(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Persisted full builds should still rebuild the full shared index."""
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir(parents=True)
+    (docs_dir / "Munich.md").write_text("# Munich\n\nBuild content.", encoding="utf-8")
+    (docs_dir / "Berlin.md").write_text("# Berlin\n\nBuild content.", encoding="utf-8")
+    config = _build_config(tmp_path)
+
+    class FakeStore:
+        reset_calls = 0
+        upsert_calls: list[int] = []
+
+        def __init__(self, persist_path: Path, collection_name: str) -> None:
+            self.persist_path = persist_path
+            self.collection_name = collection_name
+
+        def reset_collection(self) -> None:
+            self.__class__.reset_calls += 1
+
+        def upsert(self, chunks) -> None:
+            self.upsert_calls.append(len(chunks))
+
+    class FakeEmbeddingProvider:
+        def __init__(
+            self,
+            model: str,
+            base_url: str | None = None,
+            batch_size: int = 100,
+            max_retries: int = 3,
+            retry_base_seconds: float = 0.8,
+            retry_max_seconds: float = 8.0,
+            max_input_tokens: int | None = None,
+        ) -> None:
+            self.model = model
+            self.base_url = base_url
+            self.batch_size = batch_size
+            self.max_retries = max_retries
+            self.retry_base_seconds = retry_base_seconds
+            self.retry_max_seconds = retry_max_seconds
+            self.max_input_tokens = max_input_tokens
+
+        def embed_texts(self, texts: list[str]) -> list[list[float] | None]:
+            return [[0.1, 0.2, 0.3] for _ in texts]
+
+    monkeypatch.setattr("backend.modules.vector_store.indexer.ChromaStore", FakeStore)
+    monkeypatch.setattr(
+        "backend.modules.vector_store.indexer.OpenAIEmbeddingProvider",
+        FakeEmbeddingProvider,
+    )
+
+    stats = build_markdown_index(
+        config=config,
+        docs_dir=docs_dir,
+        selected_cities=["Munich"],
+        dry_run=False,
+    )
+
+    assert stats.files_indexed == 2
+    assert FakeStore.reset_calls == 1
+    manifest = load_manifest(config.vector_store.index_manifest_path)
+    assert sorted(manifest["files"].keys()) == [
+        _test_source_path("Berlin.md"),
+        _test_source_path("Munich.md"),
+    ]
+
+
 def test_update_markdown_index_upserts_before_deleting_old_chunks(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
@@ -875,12 +991,7 @@ def test_update_markdown_index_upserts_before_deleting_old_chunks(
         FakeEmbeddingProvider,
     )
 
-    update_markdown_index(
-        config=config,
-        docs_dir=docs_dir,
-        selected_cities=["Munich"],
-        dry_run=False,
-    )
+    update_markdown_index(config=config, docs_dir=docs_dir, dry_run=False)
 
     assert "upsert" in FakeStore.operations
     assert "delete" in FakeStore.operations
@@ -978,12 +1089,7 @@ def test_update_markdown_index_deletes_only_stale_old_ids_when_chunks_overlap(
         _fake_build_indexed_chunks_for_file,
     )
 
-    update_markdown_index(
-        config=config,
-        docs_dir=docs_dir,
-        selected_cities=["Munich"],
-        dry_run=False,
-    )
+    update_markdown_index(config=config, docs_dir=docs_dir, dry_run=False)
 
     assert FakeStore.upsert_chunk_ids == [["chunk_keep", "chunk_new_only"]]
     assert FakeStore.delete_calls == [["chunk_old_only"]]

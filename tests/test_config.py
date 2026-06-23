@@ -129,6 +129,19 @@ def test_load_config_applies_vector_store_auto_update_env_override(
     assert config.vector_store.auto_update_on_run is True
 
 
+def test_load_config_applies_writer_enabled_env_override(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    """WRITER_ENABLED overrides the YAML/default writer toggle."""
+    config_path = _write_config(tmp_path)
+    monkeypatch.setenv("WRITER_ENABLED", "true")
+
+    config = load_config(config_path)
+
+    assert config.writer.enabled is True
+
+
 def test_load_config_applies_vector_store_update_mode_env_override(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
