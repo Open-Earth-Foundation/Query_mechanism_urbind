@@ -525,10 +525,16 @@ def test_reset_collection_ignores_collection_not_found_error(monkeypatch) -> Non
             del name
             raise FakeCollectionNotFoundError("Collection not found")
 
-        def get_or_create_collection(self, name: str) -> dict[str, str]:
+        def get_or_create_collection(
+            self,
+            name: str,
+            configuration: dict[str, object] | None = None,
+        ) -> dict[str, object]:
             del name
+            assert isinstance(configuration, dict)
+            assert configuration.get("hnsw") == {"space": "cosine"}
             self.recreated = True
-            return {}
+            return {"configuration": configuration}
 
     monkeypatch.setattr(
         chroma_store_module,
