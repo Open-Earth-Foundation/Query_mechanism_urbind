@@ -3,7 +3,11 @@ from pathlib import Path
 import pytest
 from pydantic import ValidationError
 
-from backend.utils.config import MarkdownResearcherConfig, load_config
+from backend.utils.config import (
+    MarkdownResearcherConfig,
+    load_config,
+    resolve_path_relative_to_config,
+)
 
 
 def _base_config_lines() -> list[str]:
@@ -89,6 +93,83 @@ def test_load_config_applies_chroma_persist_path_env_and_derives_manifest_path(
 
     assert config.vector_store.chroma_persist_path == chroma_path
     assert config.vector_store.index_manifest_path == chroma_path / "index_manifest.json"
+
+
+def test_load_config_resolves_relative_runtime_paths_against_config_directory(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    """Relative YAML runtime paths should anchor to the config file directory."""
+    monkeypatch.setenv("RUNS_DIR", "")
+    monkeypatch.setenv("MARKDOWN_DIR", "")
+    monkeypatch.setenv("CHROMA_PERSIST_PATH", "")
+    monkeypatch.setenv("EXTERNAL_SOURCE_DIR", "")
+    config_dir = tmp_path / "nested" / "config"
+    config_dir.mkdir(parents=True)
+    config_path = config_dir / "llm_config.yaml"
+    config_path.write_text(
+        "\n".join(
+            [
+                "orchestrator:",
+                "  model: test-model",
+                "markdown_researcher:",
+                "  model: test-model",
+                "  chunk_overlap_tokens: 2000",
+                "  batch_max_chunks: 32",
+                "writer:",
+                "  model: test-model",
+                "runs_dir: output-data",
+                "markdown_dir: docs-data",
+                "enrichment:",
+                "  model: openai/gpt-5.4-mini",
+                "  external_source_dir: docs-data/source_library",
+                "vector_store:",
+                "  chroma_persist_path: local-chroma",
+                "  index_manifest_path: local-chroma/index_manifest.json",
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    config = load_config(config_path)
+
+    assert config.runs_dir == (config_dir / "output-data").resolve()
+    assert config.markdown_dir == (config_dir / "docs-data").resolve()
+    assert config.enrichment.external_source_dir == (
+        config_dir / "docs-data" / "source_library"
+    ).resolve()
+    assert config.vector_store.chroma_persist_path == (config_dir / "local-chroma").resolve()
+    assert config.vector_store.index_manifest_path == (
+        config_dir / "local-chroma" / "index_manifest.json"
+    ).resolve()
+
+
+def test_load_config_resolves_relative_markdown_env_override_against_config_directory(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    """Relative MARKDOWN_DIR env overrides should anchor to the config file directory."""
+    config_dir = tmp_path / "nested" / "config"
+    config_dir.mkdir(parents=True)
+    config_path = _write_config(config_dir)
+    monkeypatch.setenv("MARKDOWN_DIR", "docs-env")
+
+    config = load_config(config_path)
+
+    assert config.markdown_dir == (config_dir / "docs-env").resolve()
+
+
+def test_resolve_path_relative_to_config_anchors_relative_paths(
+    tmp_path: Path,
+) -> None:
+    """CLI path overrides should resolve relative to the config file directory."""
+    config_dir = tmp_path / "nested" / "config"
+    config_dir.mkdir(parents=True)
+    config_path = _write_config(config_dir)
+
+    resolved = resolve_path_relative_to_config(config_path, Path("documents"))
+
+    assert resolved == (config_dir / "documents").resolve()
 
 
 def test_load_config_reads_vector_store_settings_from_yaml(tmp_path: Path) -> None:
