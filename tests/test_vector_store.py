@@ -852,6 +852,65 @@ def test_build_markdown_index_refuses_to_wipe_non_empty_manifest_when_no_files_f
     }
 
 
+def test_update_markdown_index_refuses_to_wipe_non_empty_manifest_when_no_files_found(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Incremental update aborts before deletes when discovery returns zero markdown files."""
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir(parents=True)
+    config = _build_config(tmp_path)
+    config.vector_store.index_manifest_path.parent.mkdir(parents=True, exist_ok=True)
+    config.vector_store.index_manifest_path.write_text(
+        json.dumps(
+            {
+                "index_settings": _matching_index_settings_payload(config),
+                "files": {
+                    _test_source_path("Munich.md"): {
+                        "file_hash": "existing-file-hash",
+                        "chunk_ids": ["existing-chunk-id"],
+                    }
+                },
+            },
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
+
+    class FakeStore:
+        delete_calls: list[list[str]] = []
+        upsert_calls: list[int] = []
+
+        def __init__(self, persist_path: Path, collection_name: str) -> None:
+            self.persist_path = persist_path
+            self.collection_name = collection_name
+
+        def delete(self, ids: list[str]) -> None:
+            self.delete_calls.append(ids)
+
+        def upsert(self, chunks) -> None:
+            self.upsert_calls.append(len(chunks))
+
+    monkeypatch.setattr("backend.modules.vector_store.indexer.ChromaStore", FakeStore)
+
+    with pytest.raises(RuntimeError, match="Refusing to update vector store with zero"):
+        update_markdown_index(
+            config=config,
+            docs_dir=tmp_path / "missing-documents",
+            dry_run=False,
+        )
+
+    assert FakeStore.delete_calls == []
+    assert FakeStore.upsert_calls == []
+    manifest = load_manifest(config.vector_store.index_manifest_path)
+    assert manifest["files"] == {
+        _test_source_path("Munich.md"): {
+            "file_hash": "existing-file-hash",
+            "chunk_ids": ["existing-chunk-id"],
+        }
+    }
+
+
 def test_build_markdown_index_ignores_selected_city_scope_for_persisted_writes(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
