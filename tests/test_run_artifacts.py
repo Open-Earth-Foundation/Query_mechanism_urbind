@@ -110,3 +110,21 @@ def test_reason_classification_and_break_warning(tmp_path: Path) -> None:
     breakdown = steps["assumptions"]["metrics"]["reason_breakdown"]
     assert breakdown["shape_mismatch"] == 1
     assert breakdown["no_source_data"] == 1
+
+
+def test_gap_and_external_detail(tmp_path: Path) -> None:
+    payload = build_run_artifacts(_make_run_dir(tmp_path))
+
+    gap = payload["gap_analysis"]
+    fields = {f["field"]: f for f in gap["fields"]}
+    assert "public_ac_charger_count" in fields
+    assert fields["public_ac_charger_count"]["rationale"]  # rationale surfaced
+
+    ext = payload["external_search"]
+    # The one candidate (found, not validated) is surfaced as unused.
+    assert ext["unused_total"] == 1
+    assert ext["unused"][0]["title"] == "EV report"
+    # And the no-evidence record is carried through.
+    assert {(n["city"], n["field"]) for n in ext["no_evidence"]} == {
+        ("Aachen", "secret_unrelated_metric")
+    }

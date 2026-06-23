@@ -457,6 +457,96 @@ def _build_enrichment_steps(
     ]
 
 
+# Cap the unused-candidate list the API returns; the UI shows a subset + count.
+_MAX_UNUSED_CANDIDATES = 40
+
+
+def _build_gap_analysis(run_dir: Path) -> dict[str, Any]:
+    """Per-field classification + rationale and per-city gap priorities."""
+    enrichment = _load_json(
+        _find_stage_file(run_dir, "*enrichment*", "enrichment_bundle.json")
+    )
+    fields: list[dict[str, Any]] = []
+    city_gaps: list[dict[str, Any]] = []
+    if not isinstance(enrichment, dict):
+        return {"fields": fields, "city_gaps": city_gaps}
+
+    manifest = enrichment.get("field_manifest")
+    query_fields = manifest.get("query_fields") if isinstance(manifest, dict) else None
+    for entry in query_fields or []:
+        if not isinstance(entry, dict) or not entry.get("field"):
+            continue
+        fields.append(
+            {
+                "field": entry.get("field"),
+                "classification": entry.get("classification"),
+                "scope": entry.get("scope"),
+                "rationale": entry.get("rationale"),
+            }
+        )
+
+    gap_manifest = enrichment.get("gap_manifest")
+    raw_city_gaps = gap_manifest.get("city_gaps") if isinstance(gap_manifest, dict) else None
+    for entry in raw_city_gaps or []:
+        if not isinstance(entry, dict) or not entry.get("city"):
+            continue
+        city_gaps.append(
+            {"city": entry.get("city"), "priority": entry.get("search_priority")}
+        )
+    return {"fields": fields, "city_gaps": city_gaps}
+
+
+def _build_external_search(run_dir: Path) -> dict[str, Any]:
+    """Validated anchors, found-but-unused candidates, and no-evidence records."""
+    data = _load_json(
+        _find_stage_file(run_dir, "*enrichment*", "external_source_search_audit.json")
+    )
+    if not isinstance(data, dict):
+        return {"validated": [], "unused": [], "unused_total": 0, "no_evidence": []}
+
+    validated = [
+        {
+            "city": r.get("city"),
+            "field": r.get("field"),
+            "value": r.get("value"),
+            "unit": r.get("unit"),
+            "source_id": r.get("source_id"),
+            "source_type": r.get("source_type"),
+            "publication_year": r.get("publication_year"),
+            "quote": _clip_quote(r.get("quote")),
+        }
+        for r in (data.get("validated_claims") or [])
+        if isinstance(r, dict) and r.get("city") and r.get("field")
+    ]
+
+    unused_source = data.get("unused_candidates") or data.get("candidates") or []
+    unused = [
+        {
+            "city": r.get("city"),
+            "field": r.get("field"),
+            "source_id": r.get("source_id"),
+            "title": r.get("title"),
+            "matched_text": r.get("matched_text"),
+            "quote": _clip_quote(r.get("quote")),
+        }
+        for r in unused_source[:_MAX_UNUSED_CANDIDATES]
+        if isinstance(r, dict) and r.get("city") and r.get("field")
+    ]
+
+    no_evidence = [
+        {"city": r.get("city"), "field": r.get("field")}
+        for r in (data.get("no_evidence") or [])
+        if isinstance(r, dict) and r.get("city") and r.get("field")
+    ]
+
+    return {
+        "validated": validated,
+        "unused": unused,
+        "unused_total": len(unused_source),
+        "no_evidence": no_evidence,
+    }
+
+
 def build_run_artifacts(run_dir: Path) -> dict[str, Any]:
     """Assemble the normalized artifact payload for one run directory."""
     fields = _build_fields(run_dir)
@@ -469,6 +559,8 @@ def build_run_artifacts(run_dir: Path) -> dict[str, Any]:
         "fields": fields,
         "stages": _build_stages(run_dir),
         "enrichment_steps": _build_enrichment_steps(run_dir, reason_breakdown),
+        "gap_analysis": _build_gap_analysis(run_dir),
+        "external_search": _build_external_search(run_dir),
     }
 
 

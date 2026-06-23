@@ -252,6 +252,69 @@ class EnrichmentStep(BaseModel):
     warn: str | None = None
 
 
+class GapAnalysisField(BaseModel):
+    """A classified query field with its rationale."""
+
+    field: str
+    classification: str | None = None
+    scope: str | None = None
+    rationale: str | None = None
+
+
+class CityGap(BaseModel):
+    """A per-city gap with its search priority."""
+
+    city: str
+    priority: str | None = None
+
+
+class GapAnalysisDetail(BaseModel):
+    """Gap-analysis step detail: classified fields + per-city gaps."""
+
+    fields: list[GapAnalysisField] = Field(default_factory=list)
+    city_gaps: list[CityGap] = Field(default_factory=list)
+
+
+class ExternalEvidenceItem(BaseModel):
+    """A validated external/web claim that became an anchor."""
+
+    city: str
+    field: str
+    value: float | int | str | None = None
+    unit: str | None = None
+    source_id: str | None = None
+    source_type: str | None = None
+    publication_year: int | None = None
+    quote: str | None = None
+
+
+class ExternalCandidateItem(BaseModel):
+    """A found-but-unused external/web candidate."""
+
+    city: str
+    field: str
+    source_id: str | None = None
+    title: str | None = None
+    matched_text: str | None = None
+    quote: str | None = None
+
+
+class NoEvidenceItem(BaseModel):
+    """A (city, field) for which external/web search found nothing."""
+
+    city: str
+    field: str
+
+
+class ExternalSearchDetail(BaseModel):
+    """External + web search step detail."""
+
+    validated: list[ExternalEvidenceItem] = Field(default_factory=list)
+    unused: list[ExternalCandidateItem] = Field(default_factory=list)
+    unused_total: int = 0
+    no_evidence: list[NoEvidenceItem] = Field(default_factory=list)
+
+
 class RunArtifactsResponse(BaseModel):
     """Response body for the per-step / per-field enrichment audit view."""
 
@@ -260,6 +323,8 @@ class RunArtifactsResponse(BaseModel):
     fields: list[ArtifactField] = Field(default_factory=list)
     stages: list[ArtifactStage] = Field(default_factory=list)
     enrichment_steps: list[EnrichmentStep] = Field(default_factory=list)
+    gap_analysis: GapAnalysisDetail | None = None
+    external_search: ExternalSearchDetail | None = None
 
 
 class RunReferenceResponse(BaseModel):

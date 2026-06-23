@@ -21,6 +21,9 @@ import { FieldCard } from "@/components/pipeline/field-card";
 import { fieldStatusStyle, humanizeField } from "@/components/pipeline/status-style";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { formatCityLabel } from "@/lib/utils";
+
+const UNUSED_PREVIEW_COUNT = 6;
 
 interface EnrichmentProcessWorkspaceProps {
   runId: string;
@@ -64,6 +67,7 @@ export function EnrichmentProcessWorkspace({
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [openSteps, setOpenSteps] = useState<Record<string, boolean>>({});
+  const [showAllUnused, setShowAllUnused] = useState(false);
 
   const load = useCallback(
     async (signal?: AbortSignal) => {
@@ -136,50 +140,196 @@ export function EnrichmentProcessWorkspace({
 
   function renderStepBody(step: EnrichmentStep) {
     if (step.key === "gap_analysis") {
-      return (
-        <div className="flex flex-wrap gap-1.5">
-          {distinctClassifications.map((entry) => (
-            <span
-              key={entry.field}
-              className="inline-flex items-center gap-1.5 rounded-md border border-slate-200 bg-white px-2 py-1 text-xs text-slate-600"
-            >
-              <span className="font-medium text-slate-700">
-                {humanizeField(entry.field)}
+      const gapFields = data?.gap_analysis?.fields ?? [];
+      const cityGaps = data?.gap_analysis?.city_gaps ?? [];
+      if (gapFields.length === 0) {
+        return (
+          <div className="flex flex-wrap gap-1.5">
+            {distinctClassifications.map((entry) => (
+              <span
+                key={entry.field}
+                className="inline-flex items-center gap-1.5 rounded-md border border-slate-200 bg-white px-2 py-1 text-xs text-slate-600"
+              >
+                <span className="font-medium text-slate-700">
+                  {humanizeField(entry.field)}
+                </span>
+                {entry.type ? (
+                  <span className="text-slate-400">{entry.type.replace(/_/g, " ")}</span>
+                ) : null}
               </span>
-              {entry.type ? (
-                <span className="text-slate-400">{entry.type.replace(/_/g, " ")}</span>
-              ) : null}
-            </span>
-          ))}
+            ))}
+          </div>
+        );
+      }
+      return (
+        <div className="space-y-3">
+          <div className="grid gap-2 md:grid-cols-2">
+            {gapFields.map((f) => (
+              <div
+                key={f.field}
+                className="rounded-lg border border-slate-200 bg-white p-3"
+              >
+                <div className="flex items-start justify-between gap-2">
+                  <p className="text-sm font-semibold text-slate-800">
+                    {humanizeField(f.field)}
+                  </p>
+                  {f.classification ? (
+                    <span className="shrink-0 rounded-full border border-slate-200 bg-slate-50 px-2 py-0.5 text-[10px] font-medium text-slate-600">
+                      {f.classification.replace(/_/g, " ")}
+                    </span>
+                  ) : null}
+                </div>
+                {f.scope ? (
+                  <p className="mt-0.5 text-xs text-slate-400">scope: {f.scope}</p>
+                ) : null}
+                {f.rationale ? (
+                  <p className="mt-1.5 text-xs leading-relaxed text-slate-600">
+                    {f.rationale}
+                  </p>
+                ) : null}
+              </div>
+            ))}
+          </div>
+          {cityGaps.length > 0 ? (
+            <div className="space-y-1.5">
+              <p className="text-xs font-medium text-slate-500">
+                Per-city gap priority
+              </p>
+              <div className="flex flex-wrap gap-1.5">
+                {cityGaps.map((g) => {
+                  const dot =
+                    g.priority === "high"
+                      ? "bg-rose-500"
+                      : g.priority === "medium"
+                        ? "bg-amber-500"
+                        : "bg-slate-400";
+                  return (
+                    <span
+                      key={g.city}
+                      className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-2.5 py-0.5 text-xs text-slate-600"
+                    >
+                      <span className={`h-1.5 w-1.5 rounded-full ${dot}`} />
+                      {formatCityLabel(g.city)}
+                      {g.priority ? (
+                        <span className="text-slate-400">· {g.priority}</span>
+                      ) : null}
+                    </span>
+                  );
+                })}
+              </div>
+            </div>
+          ) : null}
         </div>
       );
     }
 
     if (step.key === "external_web") {
-      const found = Number(step.metrics.web_findings ?? 0);
-      const validated = Number(step.metrics.validated_evidence ?? 0);
+      const detail = data?.external_search;
+      const validated = detail?.validated ?? [];
+      const unused = detail?.unused ?? [];
+      const noEvidence = detail?.no_evidence ?? [];
+      const unusedTotal = detail?.unused_total ?? unused.length;
+      const shownUnused = showAllUnused ? unused : unused.slice(0, UNUSED_PREVIEW_COUNT);
       return (
-        <div className="space-y-2 text-sm text-slate-600">
+        <div className="space-y-4 text-sm text-slate-600">
           {step.warn ? (
             <div className="flex items-start gap-2 rounded-md border border-amber-200 bg-amber-50 p-3 text-amber-900">
               <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0" />
               <p>
-                <span className="font-medium">{found}</span> web finding
-                {found === 1 ? "" : "s"} returned, but{" "}
-                <span className="font-medium">{validated}</span> validated into a usable
-                anchor — so the assumptions step had nothing to estimate from. This is the
-                point in the chain to investigate.
+                Search returned findings, but only{" "}
+                <span className="font-medium">{validated.length}</span> validated into a
+                usable anchor — so the assumptions step had little to estimate from. This is
+                the point in the chain to investigate.
               </p>
             </div>
-          ) : (
-            <p>
-              {found} finding{found === 1 ? "" : "s"} returned, {validated} validated into
-              anchors.
+          ) : null}
+
+          {validated.length > 0 ? (
+            <div className="space-y-2">
+              <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">
+                Validated into anchors ({validated.length})
+              </p>
+              {validated.map((v, i) => (
+                <div
+                  key={`${v.city}-${v.field}-${i}`}
+                  className="rounded-lg border border-teal-200 border-l-[3px] border-l-teal-500 bg-teal-50/40 p-3"
+                >
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="rounded-md bg-white/80 px-2 py-1 text-xs font-semibold text-slate-800 ring-1 ring-inset ring-teal-200">
+                      {v.value}
+                      {v.unit ? ` ${v.unit}` : ""}
+                    </span>
+                    <span className="text-xs font-medium text-slate-700">
+                      {formatCityLabel(v.city)} · {humanizeField(v.field)}
+                    </span>
+                    {v.source_id ? (
+                      <span className="text-xs text-slate-400">
+                        {v.source_id}
+                        {v.publication_year ? ` (${v.publication_year})` : ""}
+                      </span>
+                    ) : null}
+                  </div>
+                  {v.quote ? (
+                    <p className="mt-1.5 text-xs italic leading-relaxed text-slate-500">
+                      “{v.quote}”
+                    </p>
+                  ) : null}
+                </div>
+              ))}
+            </div>
+          ) : null}
+
+          {unused.length > 0 ? (
+            <div className="space-y-2">
+              <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">
+                Found, not validated ({unusedTotal})
+              </p>
+              {shownUnused.map((u, i) => (
+                <div
+                  key={`${u.city}-${u.source_id ?? "src"}-${i}`}
+                  className="rounded-lg border border-slate-200 bg-white p-3"
+                >
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="text-xs font-medium text-slate-700">
+                      {formatCityLabel(u.city)} · {humanizeField(u.field)}
+                    </span>
+                    {u.title ? (
+                      <span className="text-xs text-slate-400">{u.title}</span>
+                    ) : null}
+                  </div>
+                  {u.quote ? (
+                    <p className="mt-1.5 line-clamp-2 text-xs italic leading-relaxed text-slate-500">
+                      “{u.quote}”
+                    </p>
+                  ) : null}
+                </div>
+              ))}
+              {unused.length > UNUSED_PREVIEW_COUNT ? (
+                <button
+                  type="button"
+                  onClick={() => setShowAllUnused((v) => !v)}
+                  className="text-xs font-medium text-slate-500 underline-offset-2 hover:text-slate-700 hover:underline"
+                >
+                  {showAllUnused
+                    ? "Show fewer"
+                    : `Show ${unused.length - UNUSED_PREVIEW_COUNT} more`}
+                </button>
+              ) : null}
+            </div>
+          ) : null}
+
+          {noEvidence.length > 0 ? (
+            <p className="text-xs text-slate-500">
+              <span className="font-medium text-slate-600">{noEvidence.length}</span>{" "}
+              field{noEvidence.length === 1 ? "" : "s"} searched with no evidence found.
             </p>
-          )}
-          <p className="text-xs text-slate-500">
-            Per-field evidence quotes are shown inside each field card below.
-          </p>
+          ) : null}
+
+          {validated.length === 0 && unused.length === 0 && noEvidence.length === 0 ? (
+            <p className="text-xs text-slate-500">
+              No external or web search ran for this run.
+            </p>
+          ) : null}
         </div>
       );
     }

@@ -147,12 +147,63 @@ export interface EnrichmentStep {
   warn?: string | null;
 }
 
+export interface GapAnalysisField {
+  field: string;
+  classification?: string | null;
+  scope?: string | null;
+  rationale?: string | null;
+}
+
+export interface CityGap {
+  city: string;
+  priority?: string | null;
+}
+
+export interface GapAnalysisDetail {
+  fields: GapAnalysisField[];
+  city_gaps: CityGap[];
+}
+
+export interface ExternalEvidenceItem {
+  city: string;
+  field: string;
+  value?: number | string | null;
+  unit?: string | null;
+  source_id?: string | null;
+  source_type?: string | null;
+  publication_year?: number | null;
+  quote?: string | null;
+}
+
+export interface ExternalCandidateItem {
+  city: string;
+  field: string;
+  source_id?: string | null;
+  title?: string | null;
+  matched_text?: string | null;
+  quote?: string | null;
+}
+
+export interface NoEvidenceItem {
+  city: string;
+  field: string;
+}
+
+export interface ExternalSearchDetail {
+  validated: ExternalEvidenceItem[];
+  unused: ExternalCandidateItem[];
+  unused_total: number;
+  no_evidence: NoEvidenceItem[];
+}
+
 export interface RunArtifactsResponse {
   run_id: string;
   status: RunStatus;
   fields: ArtifactField[];
   stages: ArtifactStage[];
   enrichment_steps: EnrichmentStep[];
+  gap_analysis?: GapAnalysisDetail | null;
+  external_search?: ExternalSearchDetail | null;
 }
 
 export interface RunDiagnosticsArtifactPaths {
