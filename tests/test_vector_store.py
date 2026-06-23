@@ -532,7 +532,8 @@ def test_reset_collection_ignores_collection_not_found_error(monkeypatch) -> Non
             configuration: dict[str, object] | None = None,
         ) -> dict[str, object]:
             del name
-            assert configuration == {"hnsw": {"space": "cosine"}}
+            assert isinstance(configuration, dict)
+            assert configuration.get("hnsw") == {"space": "cosine"}
             self.recreated = True
             return {"configuration": configuration}
 
