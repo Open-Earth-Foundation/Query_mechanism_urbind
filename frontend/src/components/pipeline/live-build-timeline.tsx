@@ -179,7 +179,7 @@ export function LiveBuildTimeline({ steps, runStatus }: LiveBuildTimelineProps) 
                     <StepIcon status={step.status} />
                   </span>
                   <span
-                    className={`flex-1 text-sm font-medium ${
+                    className={`shrink-0 whitespace-nowrap text-sm font-medium ${
                       isActive
                         ? "text-amber-800"
                         : step.status === "skipped"
@@ -190,7 +190,12 @@ export function LiveBuildTimeline({ steps, runStatus }: LiveBuildTimelineProps) 
                     {step.label}
                   </span>
                   {summary && !blocks.length ? (
-                    <span className="text-xs text-slate-400">{summary}</span>
+                    <span
+                      className="hidden min-w-0 flex-1 truncate text-right text-xs text-slate-400 sm:block"
+                      title={summary}
+                    >
+                      {summary}
+                    </span>
                   ) : null}
                 </div>
                 {blocks.length > 0 ? (
