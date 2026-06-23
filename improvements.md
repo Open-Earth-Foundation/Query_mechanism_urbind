@@ -1,10 +1,11 @@
 # Retrieval Improvement Notes
 
-## Changes Already Made On This Branch
+## Changes Already Landed
 
-This branch already made several vector-store and artifact-observability changes before the remaining retrieval-quality analysis below.
+The vector-store stability and rebuild-semantics work below has been split out and moved to `main`.
+This branch still contains the cosine-distance and retrieval-observability changes listed below, plus the remaining retrieval-quality analysis and follow-up plan.
 
-### Vector Store Stability And Rebuild Semantics
+### Vector Store Stability And Rebuild Semantics Now On `main`
 
 - Normalized vector-store manifest source paths to stable `documents/<city>.md` style paths so local, Docker / Docker Compose, and Kubernetes mount paths do not cause false staleness.
 - Kept selected-city runs from changing persisted vector-store update scope. Selected cities now scope retrieval, not the shared full-corpus vector-store freshness check or persisted update.
