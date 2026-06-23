@@ -44,9 +44,15 @@ body {
   color: #3b5a8f;
 }
 
+.document-markdown .document-question-block {
+  margin-bottom: 1rem;
+}
+
+/* The whole question sits in one box, preserving the user's line breaks. */
+.document-markdown .document-question-text,
 .document-markdown .document-question-heading + p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   border: 1px solid #d7e0f1;
   border-left: 4px solid #3b5a8f;
   border-radius: 0.65rem;
@@ -54,6 +60,8 @@ body {
   padding: 0.75rem 0.85rem;
   font-size: 1.01rem;
   line-height: 1.58;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
 }
 
 .document-markdown p,
@@ -78,6 +86,7 @@ body {
   font-size: 1.02rem;
 }
 
+.document-markdown-rail .document-question-text,
 .document-markdown-rail .document-question-heading + p {
   font-size: 0.93rem;
 }
