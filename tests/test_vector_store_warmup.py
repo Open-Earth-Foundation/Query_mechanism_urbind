@@ -459,6 +459,47 @@ def test_vector_store_warmup_marks_timed_out_local_process_status_as_failed(
     assert payload["update_mode"] == "local_process"
 
 
+def test_vector_store_warmup_marks_timed_out_checking_status_as_failed(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """An interrupted freshness check should not leave the UI stuck in checking forever."""
+    config = build_test_app_config(runs_dir=tmp_path / "runs", markdown_dir=tmp_path)
+    config.vector_store.enabled = True
+    config.vector_store.auto_update_on_run = True
+    config.vector_store.update_mode = "local_process"
+    config.vector_store.chroma_persist_path = tmp_path / "chroma"
+    config.vector_store.index_manifest_path = tmp_path / "chroma" / "index_manifest.json"
+    old_started_at = (datetime.now(timezone.utc) - timedelta(seconds=10)).isoformat()
+    status_path = config.vector_store.chroma_persist_path / "update_status.json"
+    status_path.parent.mkdir(parents=True, exist_ok=True)
+    status_path.write_text(
+        json.dumps(
+            {
+                "status": "checking",
+                "trigger": "run",
+                "update_mode": "local_process",
+                "message": "Checking vector store freshness.",
+                "started_at": old_started_at,
+            }
+        ),
+        encoding="utf-8",
+    )
+    monkeypatch.setenv("VECTOR_STORE_UPDATE_JOB_TIMEOUT_SECONDS", "1")
+    warmup = VectorStoreWarmup()
+    warmup._configure(config)
+
+    snapshot = warmup.snapshot()
+
+    assert snapshot["status"] == "failed"
+    assert snapshot["error"] == "Vector store freshness check timed out."
+    payload = json.loads(status_path.read_text(encoding="utf-8"))
+    assert payload["status"] == "failed"
+    assert payload["message"] == "Vector store freshness check timed out before completing."
+    assert payload["error"] == "Vector store freshness check timed out."
+    assert payload["update_mode"] == "local_process"
+
+
 def test_vector_store_warmup_ignores_stale_status_file_from_other_update_mode(
     tmp_path: Path,
 ) -> None:
