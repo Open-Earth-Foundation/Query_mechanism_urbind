@@ -24,7 +24,7 @@ import {
 
 import { AssumptionsWorkspace } from "@/components/assumptions-workspace";
 import { CccDocumentRail } from "@/components/ccc-document-rail";
-import { PipelineProgress } from "@/components/pipeline-progress";
+import { LiveBuildTimeline } from "@/components/pipeline/live-build-timeline";
 import { ContextChatWorkspace } from "@/components/context-chat/context-chat-workspace";
 import { DevModeToggle } from "@/components/dev-mode-toggle";
 import { DevToolsPanel } from "@/components/dev-tools-panel";
@@ -1542,17 +1542,14 @@ export default function Home() {
                 {!runId ? (
                   <p className="text-sm text-slate-500">No run submitted yet.</p>
                 ) : isLongWait ? (
-                  <div className="space-y-3">
-                    <div className="rounded-md border border-amber-200 bg-amber-50 p-3 text-sm text-amber-900">
-                      <div className="mb-2 flex items-center gap-2 font-medium">
-                        <CircleDashed className="h-4 w-4 animate-spin" />
-                        Build in progress
-                      </div>
-                      <p>Leave this page open. Document generation may take several minutes for broad questions.</p>
+                  <div className="rounded-md border border-amber-200 bg-amber-50 p-3 text-sm text-amber-900">
+                    <div className="flex items-center gap-2 font-medium">
+                      <CircleDashed className="h-4 w-4 animate-spin" />
+                      Build in progress
                     </div>
-                    {devFeatures.showPipelineProgress && runStatus?.steps ? (
-                      <PipelineProgress steps={runStatus.steps} compact />
-                    ) : null}
+                    <p className="mt-1 text-xs text-amber-800/80">
+                      Live stage-by-stage progress is shown in the document panel.
+                    </p>
                   </div>
                 ) : isTerminal ? (
                   <div className="rounded-md border border-slate-200 bg-slate-50 p-3 text-sm text-slate-700">
@@ -1584,9 +1581,6 @@ export default function Home() {
                 ) : null}
                 {devFeatures.showRunDiagnostics && runId ? (
                   <RunDiagnosticsPanel runId={runId} runStatus={runStatus} />
-                ) : null}
-                {devFeatures.showPipelineProgress && isTerminal && runStatus?.steps ? (
-                  <PipelineProgress steps={runStatus.steps} compact />
                 ) : null}
               </div>
 
@@ -1691,22 +1685,10 @@ export default function Home() {
                       </article>
                     </>
                   ) : isLongWait ? (
-                    <div className="space-y-3 rounded-md border border-slate-200 bg-white p-6">
-                      <div className="flex items-center gap-2 text-slate-700">
-                        <Loader2 className="h-4 w-4 animate-spin" />
-                        Generating document...
-                      </div>
-                      {devFeatures.showPipelineProgress && runStatus?.steps ? (
-                        <PipelineProgress steps={runStatus.steps} />
-                      ) : (
-                        <div className="space-y-2">
-                          <div className="h-2 animate-pulse rounded bg-slate-200" />
-                          <div className="h-2 w-11/12 animate-pulse rounded bg-slate-200" />
-                          <div className="h-2 w-10/12 animate-pulse rounded bg-slate-200" />
-                          <div className="h-2 w-8/12 animate-pulse rounded bg-slate-200" />
-                        </div>
-                      )}
-                    </div>
+                    <LiveBuildTimeline
+                      steps={runStatus?.steps}
+                      runStatus={statusValue}
+                    />
                   ) : (
                     <div className="rounded-md border border-dashed border-slate-300 bg-white p-8 text-center text-slate-600">
                       <p className="text-base font-medium">Document output will appear here.</p>
