@@ -218,6 +218,13 @@ def _iter_markdown_files(
 ) -> list[Path]:
     """List top-level markdown files optionally filtered by city stem."""
     files = list_markdown_files(docs_dir)
+    logger.info(
+        "Markdown discovery docs_dir=%s resolved=%s selected_cities=%s file_count=%d",
+        docs_dir,
+        docs_dir.resolve(),
+        selected_cities or [],
+        len(files),
+    )
     if not selected_cities:
         return files
     selected = {
@@ -626,7 +633,21 @@ def build_markdown_index(
         store.reset_collection()
         if embedded_chunks:
             store.upsert(embedded_chunks)
-        save_manifest(settings.manifest_path, manifest)
+        save_manifest(
+            settings.manifest_path,
+            manifest,
+            reason="build_markdown_index",
+            docs_dir=docs_dir,
+            metadata={
+                "dry_run": dry_run,
+                "files_indexed": files_indexed,
+                "selected_cities_requested": selected_cities or [],
+                "selected_cities_effective": effective_selected_cities or [],
+                "persist_path": str(settings.persist_path),
+                "collection_name": settings.collection_name,
+                "update_mode": "full_rebuild",
+            },
+        )
         logger.info(
             "Index build persist finished manifest_path=%s",
             settings.manifest_path,
@@ -850,7 +871,23 @@ def update_markdown_index(
             if chunk_ids:
                 store.delete(chunk_ids)
             files_section.pop(source_path, None)
-        save_manifest(settings.manifest_path, manifest)
+        save_manifest(
+            settings.manifest_path,
+            manifest,
+            reason="update_markdown_index",
+            docs_dir=docs_dir,
+            metadata={
+                "dry_run": dry_run,
+                "files_indexed": len(current_files),
+                "files_changed": files_changed,
+                "files_deleted": files_deleted,
+                "selected_cities_requested": selected_cities or [],
+                "selected_cities_effective": effective_selected_cities or [],
+                "persist_path": str(settings.persist_path),
+                "collection_name": settings.collection_name,
+                "update_mode": "incremental_update",
+            },
+        )
         logger.info(
             "Index update persist finished manifest_path=%s changed=%d unchanged=%d "
             "deleted=%d chunks=%d",

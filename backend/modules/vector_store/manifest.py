@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 import logging
 import json
+import os
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -59,7 +60,49 @@ def load_manifest(path: Path) -> dict[str, Any]:
     return payload
 
 
-def save_manifest(path: Path, manifest: dict[str, Any]) -> None:
+def _append_manifest_write_audit(
+    *,
+    path: Path,
+    manifest: dict[str, Any],
+    file_count: int,
+    chunk_count: int,
+    reason: str | None,
+    docs_dir: Path | None,
+    metadata: dict[str, Any] | None,
+) -> None:
+    """Append one manifest-write audit record under output/system artifacts."""
+    runs_dir = Path(os.getenv("RUNS_DIR", "output"))
+    audit_dir = runs_dir / "system" / "vector_store_manifest_writes"
+    audit_dir.mkdir(parents=True, exist_ok=True)
+    timestamp = now_iso()
+    payload = {
+        "timestamp": timestamp,
+        "manifest_path": str(path),
+        "manifest_resolved_path": str(path.resolve()),
+        "file_count": file_count,
+        "chunk_count": chunk_count,
+        "updated_at": manifest.get("updated_at"),
+        "reason": reason,
+        "docs_dir": str(docs_dir) if docs_dir is not None else None,
+        "docs_dir_resolved": str(docs_dir.resolve()) if docs_dir is not None else None,
+        "cwd": str(Path.cwd()),
+        "metadata": metadata or {},
+    }
+    latest_path = audit_dir / "latest.json"
+    history_path = audit_dir / "history.jsonl"
+    latest_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    with history_path.open("a", encoding="utf-8") as handle:
+        handle.write(json.dumps(payload, ensure_ascii=True) + "\n")
+
+
+def save_manifest(
+    path: Path,
+    manifest: dict[str, Any],
+    *,
+    reason: str | None = None,
+    docs_dir: Path | None = None,
+    metadata: dict[str, Any] | None = None,
+) -> None:
     """Write manifest JSON to disk."""
     files_payload = manifest.get("files", {})
     files = files_payload if isinstance(files_payload, dict) else {}
@@ -72,14 +115,27 @@ def save_manifest(path: Path, manifest: dict[str, Any]) -> None:
 
     log_fn = logger.warning if not files else logger.info
     log_fn(
-        "Saving vector-store manifest path=%s file_count=%d chunk_count=%d updated_at=%s",
+        "Saving vector-store manifest path=%s file_count=%d chunk_count=%d updated_at=%s "
+        "reason=%s docs_dir=%s metadata=%s",
         path,
         len(files),
         chunk_count,
         manifest.get("updated_at"),
+        reason,
+        docs_dir,
+        metadata or {},
     )
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+    _append_manifest_write_audit(
+        path=path,
+        manifest=manifest,
+        file_count=len(files),
+        chunk_count=chunk_count,
+        reason=reason,
+        docs_dir=docs_dir,
+        metadata=metadata,
+    )
 
 
 def mark_manifest_updated(
