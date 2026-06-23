@@ -51,7 +51,6 @@ import {
   persistFrontendMode,
   readStoredFrontendMode,
 } from "@/lib/frontend-mode";
-import { filterImmediateRunMatches } from "@/lib/run-picker-search";
 import { formatCityLabel } from "@/lib/utils";
 import {
   CityGroup,
@@ -260,10 +259,6 @@ export default function Home() {
     ? normalizeCitySelectionKey(selectedCccCity)
     : "";
   const deferredRunSearchQuery = useDeferredValue(runSearchQuery);
-  const visibleRunOptions = useMemo(
-    () => filterImmediateRunMatches(availableRuns, runSearchQuery),
-    [availableRuns, runSearchQuery],
-  );
 
   const railToggleLabel = isControlsCollapsed ? "Show controls" : "Hide controls";
 
@@ -989,7 +984,7 @@ export default function Home() {
               <CardHeader>
                 <CardTitle>Query Controls</CardTitle>
                 <CardDescription>
-                  Set your query, pick cities, and run — or load a previous answer.
+                  Set your query, pick the cities, and run.
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-5">
@@ -1033,81 +1028,6 @@ export default function Home() {
                         paste a long, LLM-prepared prompt as well.
                       </p>
                     </div>
-
-              <div className="space-y-2">
-                <div className="flex items-center justify-between">
-                  <Label htmlFor="existing-run">Load Previous Answer</Label>
-                  <Button
-                    type="button"
-                    variant="ghost"
-                    size="sm"
-                    onClick={() => void refreshRunList(selectedExistingRunId)}
-                    disabled={isLoadingRuns}
-                    className="h-7 px-2 text-xs"
-                  >
-                    {isLoadingRuns ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : null}
-                    Refresh
-                  </Button>
-                </div>
-                <div className="flex items-start gap-2">
-                  <SearchableRunPicker
-                    id="existing-run"
-                    runs={availableRuns}
-                    selectedRun={selectedExistingRunSummary}
-                    selectedRunId={selectedExistingRunId}
-                    searchQuery={runSearchQuery}
-                    onSearchQueryChange={setRunSearchQuery}
-                    onSelectRun={setSelectedExistingRunId}
-                    formatRunLabel={formatRunOptionLabel}
-                    isLoading={isLoadingRuns}
-                    popupClassName="w-[calc(100%+5.5rem)]"
-                  />
-                  <Button
-                    type="button"
-                    variant="outline"
-                    className="h-11 w-20 shrink-0"
-                    onClick={() => void handleLoadExistingRun()}
-                    disabled={isLoadingSelectedRun || !selectedExistingRunId.trim()}
-                  >
-                    {isLoadingSelectedRun ? <Loader2 className="h-4 w-4 animate-spin" /> : null}
-                    Load
-                  </Button>
-                </div>
-                <p className="text-xs text-slate-500">
-                  {runSearchQuery.trim()
-                    ? `${visibleRunOptions.length} matching runs.`
-                    : devFeatures.showIncompleteRuns
-                      ? `${availableRuns.length} runs visible in dev mode, including failed and in-progress runs.`
-                      : `${availableRuns.length} completed runs available to load.`}
-                </p>
-                {selectedExistingRunSummary ? (
-                  <p className="text-xs text-slate-600">
-                    Selected run:{" "}
-                    <span className="font-medium text-slate-800">
-                      {formatRunOptionLabel(selectedExistingRunSummary)}
-                    </span>
-                    {runSearchQuery.trim() &&
-                    !visibleRunOptions.some(
-                      (run) => run.run_id === selectedExistingRunSummary.run_id,
-                    )
-                      ? " (kept selected while search is filtered)"
-                      : ""}
-                  </p>
-                ) : null}
-                {runsError ? <p className="text-xs text-red-600">{runsError}</p> : null}
-                <p className="text-xs text-slate-500">
-                  Open the list to search by question, date, run ID, or city. Minor city typos
-                  are tolerated.
-                </p>
-                <p className="text-xs text-slate-500">
-                  Load a previous answer without re-running the full pipeline.
-                </p>
-                {devFeatures.showIncompleteRuns ? (
-                  <p className="text-xs text-slate-500">
-                    Dev mode keeps failed and incomplete runs in the picker for inspection.
-                  </p>
-                ) : null}
-              </div>
 
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
@@ -1352,6 +1272,59 @@ export default function Home() {
               {buildDisabledReason ? (
                 <p className="text-xs text-slate-500">{buildDisabledReason}</p>
               ) : null}
+
+              <Separator />
+
+              <div className="space-y-2">
+                <div className="flex items-center justify-between">
+                  <Label htmlFor="existing-run">Open a previous run</Label>
+                  <Button
+                    type="button"
+                    variant="ghost"
+                    size="sm"
+                    onClick={() => void refreshRunList(selectedExistingRunId)}
+                    disabled={isLoadingRuns}
+                    className="h-7 px-2 text-xs"
+                  >
+                    {isLoadingRuns ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : null}
+                    Refresh
+                  </Button>
+                </div>
+                <div className="flex items-start gap-2">
+                  <SearchableRunPicker
+                    id="existing-run"
+                    runs={availableRuns}
+                    selectedRun={selectedExistingRunSummary}
+                    selectedRunId={selectedExistingRunId}
+                    searchQuery={runSearchQuery}
+                    onSearchQueryChange={setRunSearchQuery}
+                    onSelectRun={setSelectedExistingRunId}
+                    formatRunLabel={formatRunOptionLabel}
+                    isLoading={isLoadingRuns}
+                    popupClassName="w-[calc(100%+5.5rem)]"
+                  />
+                  <Button
+                    type="button"
+                    variant="outline"
+                    className="h-11 w-20 shrink-0"
+                    onClick={() => void handleLoadExistingRun()}
+                    disabled={isLoadingSelectedRun || !selectedExistingRunId.trim()}
+                  >
+                    {isLoadingSelectedRun ? <Loader2 className="h-4 w-4 animate-spin" /> : null}
+                    Open
+                  </Button>
+                </div>
+                <p className="text-xs text-slate-500">
+                  View a past answer without re-running — search the list by question, date,
+                  run ID, or city (minor typos are tolerated).
+                </p>
+                {runsError ? <p className="text-xs text-red-600">{runsError}</p> : null}
+                {devFeatures.showIncompleteRuns ? (
+                  <p className="text-xs text-slate-500">
+                    Dev mode keeps failed and in-progress runs in the picker.
+                  </p>
+                ) : null}
+              </div>
 
               <Separator />
 
