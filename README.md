@@ -1169,7 +1169,9 @@ Optional repository variables:
 - `EKS_DEV_REGION` (default `us-east-1`)
 - `FRONTEND_API_BASE_URL` (default `https://urbind-query-mechanism-api.openearth.dev`)
 
-Artifacts are written under `output/<run_id>/`:
+Artifacts are written under `output/<run_id>/`. For the proposed MLflow upload
+policy and a concise file-by-file artifact overview, see
+[`docs/mlflow_artifacts_overview.md`](docs/mlflow_artifacts_overview.md).
 
 - `api_state.json`: machine-readable run metadata used for run discovery, terminal-state hydration, diagnostics, and benchmarks. It keeps status, timestamps, inputs, decisions, and compact metrics, while `manifest.json` remains the canonical artifact registry and the only artifact locator.
 - `summary.jsonl`: append-only stage timeline. Each JSON line has an `event_index`, `event_type`, run id, timestamp, stable `stage_number`, and compact payload for one completed stage checkpoint. Fresh runs write `001_input_snapshot` before later numbered stage events. Detailed decisions are stored in `api_state.json` and, when they belong to an existing stage, in that stage's `stages/NNN_*.json` detail file.
