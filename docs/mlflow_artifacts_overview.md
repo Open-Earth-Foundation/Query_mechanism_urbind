@@ -23,7 +23,7 @@ Do not upload these artifacts by default:
 | `run_summary.txt` | No | Human-readable wrapper around data that should be captured by uploaded artifacts and MLflow tags/metrics. |
 | `stages/*.json` | No | Stage summary files duplicate the detailed payloads in `stage_files/**`. |
 | `run.log` | No | Full logs can contain large payloads and verbose request details. Use `error_log.txt` for the default error view. |
-| Raw LLM request/response payloads | No | These can be large and may include sensitive or user-provided content. |
+| Raw LLM request/response payloads | No | These can be large and may include sensitive or user-provided content. Chat traces should be logged as one consolidated trace artifact instead. |
 
 Log these values as MLflow tags or metrics instead of uploading the wrapper files:
 
@@ -134,18 +134,6 @@ These files stay in the local run directory by default. Their most useful fields
 | `chat/<conversation_id>.json` | Context-chat session history when follow-up chat is used. |
 | `chat_jobs/<conversation_id>/<job_id>.json` | Split-mode chat job state when long follow-up chat is processed asynchronously. |
 | `chat_cache/evidence_chunks.json` | Lazy compact evidence cache for overflowed chat prompts. |
-
-## Where Run Errors Live
-
-Run errors are stored in several places locally:
-
-| Location | Error Shape |
-| --- | --- |
-| `error_log.txt` | Filtered error, critical, exhausted retry, and traceback lines. This is the default MLflow error artifact. |
-| `api_state.json` | Structured terminal error fields: `status`, `finish_reason`, and `error`. These are not uploaded as a file by default, but should become MLflow tags. |
-| `run.log` | Full raw log context. Not uploaded by default. |
-| `manifest.json` | Registers `error_log` when an error log artifact is produced. Not uploaded by default. |
-| Relevant `stage_files/**` entries | Stage-specific structured failure payloads when the failing stage wrote them. |
 
 ## What This Avoids Duplicating
 
