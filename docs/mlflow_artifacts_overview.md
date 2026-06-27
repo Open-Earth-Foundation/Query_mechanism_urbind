@@ -1,31 +1,30 @@
 # MLflow Artifact Overview
 
-This document describes the run artifacts produced under `output/<run_id>/` and the proposed subset that should be uploaded to MLflow for the `URBIND` experiment.
+This document describes the run artifacts produced under `output/<run_id>/` and the implemented MLflow upload and tracing policy for the `URBIND` experiment.
 
-## Proposed MLflow Artifact Policy
+## MLflow Artifact Policy
 
-Upload these artifacts by default:
+MLflow is optional and disabled by default. When `MLFLOW_ENABLED=true`, the backend uploads every finalized run artifact by default. MLflow mirrors the full `output/<run_id>/` directory so local inspection and MLflow inspection show the same evidence, wrappers, logs, document snapshots, generated outputs, and raw LLM call records.
 
 | Artifact | Upload | Purpose |
 | --- | --- | --- |
+| `**/*` | Yes | Complete run mirror, including all payloads, wrappers, logs, snapshots, and generated outputs. |
 | `stage_files/**` | Yes | Detailed stage payloads for snapshots, retrieval, batching, evidence extraction, enrichment, assumptions, and context handoffs. |
+| `stages/*.json` | Yes | Compact stage summaries with inputs, outputs, metrics, and stage-local decisions. |
+| `manifest.json` | Yes | Canonical artifact registry and alias map for local and MLflow artifact discovery. |
+| `api_state.json` | Yes | Machine-readable status, timestamps, inputs, decisions, metrics, LLM usage summary, retry summary, writer coverage, and API state. |
+| `summary.jsonl` | Yes | Append-only event timeline for stage checkpoints and run diagnostics. |
+| `run_summary.txt` | Yes | Human-readable run index for quick review. |
+| `run.log` | Yes | Full runtime log, including LLM usage, retries, warnings, diagnostics, and tracebacks. |
 | `context_bundle.json` | Yes | Final assembled writer/runtime context for the run. |
 | `final.md` | Yes | Final user-facing markdown output. |
 | `error_log.txt` | Yes, when present | Filtered error and traceback-focused log artifact. |
+| `llm_calls/index.jsonl` | Yes, when present | Run-level ordered index of recorded LLM calls. |
+| `stage_files/**/llm_calls/*.json` | Yes, when present | Full prompt/request, response/output, provider metadata, token usage, timestamps, status, error, and stage tags for each recorded LLM call. |
 
-Do not upload these artifacts by default:
+Do not exclude artifacts only because they duplicate another artifact or were previously treated as local-only/untracked. Duplication is acceptable because this policy optimizes for complete auditability and reproducibility. If redaction is required, perform it before local artifact creation or through an explicit redacted export mode; the default MLflow mirror does not silently drop files.
 
-| Artifact | Upload | Why Not By Default |
-| --- | --- | --- |
-| `manifest.json` | No | Mostly repeats artifact paths and aliases that are useful locally but less useful once MLflow stores files directly. |
-| `api_state.json` | No | Repeats status, timestamps, metrics, and error fields that should be logged as MLflow tags or metrics. |
-| `summary.jsonl` | No | Repeats compact stage timeline information that is already visible through `stage_files/**` plus MLflow run metadata. |
-| `run_summary.txt` | No | Human-readable wrapper around data that should be captured by uploaded artifacts and MLflow tags/metrics. |
-| `stages/*.json` | No | Stage summary files duplicate the detailed payloads in `stage_files/**`. |
-| `run.log` | No | Full logs can contain large payloads and verbose request details. Use `error_log.txt` for the default error view. |
-| Raw LLM request/response payloads | No | These can be large and may include sensitive or user-provided content. Chat traces should be logged as one consolidated trace artifact instead. |
-
-Log these values as MLflow tags or metrics instead of uploading the wrapper files:
+Log these values as MLflow tags or metrics in addition to uploading the wrapper files:
 
 - `run_id`
 - `status`
@@ -43,6 +42,78 @@ Log these values as MLflow tags or metrics instead of uploading the wrapper file
 - exhausted retry count
 - run duration
 - error code and error type when available
+
+Runtime controls:
+
+- `MLFLOW_ENABLED=false`
+- `MLFLOW_TRACKING_URI`
+- `MLFLOW_EXPERIMENT_NAME=URBIND`
+- `MLFLOW_ARTIFACT_PATH=run_artifacts`
+- `MLFLOW_TRACE_MODE=consolidated`
+- `MLFLOW_FAIL_ON_ERROR=false`
+
+MLflow failures are best-effort warnings by default. Set `MLFLOW_FAIL_ON_ERROR=true` only when pipeline success should depend on MLflow upload/tracing success.
+
+## MLflow Run And Trace Policy
+
+Create one MLflow run for each pipeline `run_id`. All uploaded artifacts, metrics, tags, and traces for that pipeline execution belong under that single MLflow run.
+
+Preferred trace layout:
+
+- Record one consolidated MLflow trace for the whole pipeline execution.
+- Include markdown researcher calls and assumptions calls in that same trace.
+- Use child spans, tags, or attributes so each LLM/tool call is easy to distinguish.
+- Tag each call with at least `run_id`, `stage_number`, `stage_name`, `stage_family`, `agent`, `call_kind`, `provider`, `model`, and token counts when available.
+- Use `stage_family=markdown` and `agent=markdown_researcher` for markdown extraction calls.
+- Use `stage_family=assumptions` and agent values such as `assumptions_estimator`, `assumptions_reviewer`, or `assumptions_apply` for assumptions calls.
+- Preserve call order so the MLflow trace reads in the same sequence as the pipeline run.
+
+Fallback trace layout when one consolidated trace cannot represent both flows cleanly:
+
+- Keep one MLflow run for the pipeline `run_id`.
+- Record a markdown-agent trace first with `trace_family=markdown` and `agent=markdown_researcher`.
+- Record one assumptions trace for all assumptions-related calls with `trace_family=assumptions`.
+- Tag both traces with the same `run_id` and `trace_group=<run_id>` so they can be found together from the MLflow run.
+- Upload the full raw LLM call artifacts for both flows even when traces are split.
+
+MLflow sync metadata is persisted back into local artifacts:
+
+- `api_state.json["mlflow"]`
+- `manifest.json["metadata"]["mlflow"]`
+
+The metadata includes MLflow enabled state, sync status, MLflow run id when available, experiment name, artifact path, trace ids when available, fallback status, and any best-effort sync error payload.
+
+## Raw LLM Call Artifacts
+
+The run-local LLM recorder writes one JSON file per recorded provider call plus one run-level index. Recording is enabled automatically for MLflow-enabled runs and does not depend on verbose `run.log` payload logging.
+
+Per-call files live under the owning stage:
+
+- markdown extraction: `stage_files/006_markdown_extraction/llm_calls/`
+- enrichment calls: `stage_files/008_enrichment/llm_calls/`
+- assumptions estimation: `stage_files/010_assumptions/llm_calls/`
+- writer calls: `stage_files/014_writer/llm_calls/`
+- assumptions review/apply API flows: `stage_files/101_assumptions_discovery/llm_calls/` and `stage_files/102_assumptions_apply/llm_calls/`
+
+Each call record includes:
+
+- `run_id`
+- `call_index`
+- `stage_number`
+- `stage_name`
+- `stage_family`
+- `agent`
+- `call_kind`
+- `provider`
+- `model`
+- `started_at` and `ended_at`
+- `status`
+- `metadata`
+- `request`
+- `response`
+- `error`
+
+The run-level `llm_calls/index.jsonl` stores the same ordering and points to each per-call JSON file.
 
 ## Uploaded Artifact Details
 
@@ -116,11 +187,11 @@ Filtered error view extracted from `run.log`. It contains:
 - continuation lines after selected log records, including tracebacks
 - a no-error placeholder when no matching error entries exist
 
-This is uploaded by default because it preserves useful failure context without uploading the full verbose `run.log`.
+This is uploaded by default because it preserves a quick failure-focused view alongside the full `run.log`.
 
-## Local-Only Artifact Details
+## Additional Artifact Details
 
-These files stay in the local run directory by default. Their most useful fields should be mirrored into MLflow tags or metrics.
+These files are uploaded by default even when they duplicate data in more detailed artifacts. Their most useful fields should also be mirrored into MLflow tags or metrics.
 
 | Path | Contents |
 | --- | --- |
@@ -129,18 +200,20 @@ These files stay in the local run directory by default. Their most useful fields
 | `summary.jsonl` | Append-only stage timeline. Each line has event index, event type, run id, timestamp, stage number, and compact stage payload. |
 | `stages/NNN_<stage>.json` | Stage detail summaries with structured `inputs`, `outputs`, `metrics`, and stage-local decisions. |
 | `run_summary.txt` | Human-readable run overview: question, query mode, selected cities, markdown counts, status, runtime, LLM usage, retry summary, artifact list, decisions, and markdown failure summary. |
-| `run.log` | Full runtime log, including `LLM_USAGE`, retry events, provider diagnostics, warnings, and full exception traces. Not uploaded by default because it is verbose and can include sensitive or large payload context. |
+| `run.log` | Full runtime log, including `LLM_USAGE`, retry events, provider diagnostics, warnings, and full exception traces. |
 | `progress.json` | Live progress state for API polling and frontend display. Includes step labels plus canonical stage names and stage numbers. |
 | `chat/<conversation_id>.json` | Context-chat session history when follow-up chat is used. |
 | `chat_jobs/<conversation_id>/<job_id>.json` | Split-mode chat job state when long follow-up chat is processed asynchronously. |
 | `chat_cache/evidence_chunks.json` | Lazy compact evidence cache for overflowed chat prompts. |
 
-## What This Avoids Duplicating
+## Duplication And Trace Organization
 
-The proposed MLflow artifact subset intentionally avoids uploading wrapper files that repeat the same content in different forms:
+The MLflow policy intentionally accepts duplication so each run is complete and inspectable from MLflow alone:
 
-- `stage_files/**` keeps the detailed payloads, so `stages/*.json` summaries are not uploaded.
-- `final.md` keeps the user-facing answer, so `run_summary.txt` does not need to repeat it.
-- MLflow tags/metrics keep status, timing, token, retry, and error summaries, so `api_state.json` is not uploaded by default.
-- MLflow's file list plus the known policy makes `manifest.json` less necessary in MLflow.
-- `error_log.txt` keeps the useful failure slice, so full `run.log` stays local by default.
+- `stage_files/**` keeps the detailed payloads, and `stages/*.json` keeps compact stage summaries.
+- `final.md` keeps the user-facing answer, and `run_summary.txt` keeps the quick human-readable index.
+- MLflow tags/metrics keep status, timing, token, retry, and error summaries, and `api_state.json` remains uploaded as the machine-readable API view.
+- `manifest.json` remains uploaded as the artifact alias source of truth.
+- `error_log.txt` keeps the useful failure slice, and `run.log` remains uploaded for full diagnostics.
+- Raw LLM call artifacts remain uploaded for exact prompt/response replay and audit.
+- MLflow traces provide the navigable execution view, with markdown and assumptions calls distinguished by tags even when they share one consolidated trace.

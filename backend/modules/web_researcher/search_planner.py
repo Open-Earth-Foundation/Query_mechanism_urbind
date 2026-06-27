@@ -17,6 +17,11 @@ from backend.modules.web_researcher.utils.json_helpers import (
     extract_json_candidate,
     extract_message_text,
 )
+from backend.services.llm_observability import (
+    LlmCallContext,
+    LlmCallRecorder,
+    record_openai_chat_completion,
+)
 from backend.utils.config import AppConfig
 
 logger = logging.getLogger(__name__)
@@ -106,6 +111,7 @@ def plan_searches(
     config: AppConfig,
     api_key: str,
     question: str = "",
+    llm_recorder: LlmCallRecorder | None = None,
 ) -> list[SearchBatch]:
     """Formulate batched search queries from the gap manifest.
 
@@ -195,6 +201,7 @@ def plan_searches(
                     config=config,
                     api_key=api_key,
                     question_context=question,
+                    llm_recorder=llm_recorder,
                 )
                 for spec in city_batch_specs
             ]
@@ -249,6 +256,7 @@ def plan_searches(
                 config=config,
                 api_key=api_key,
                 remaining_budget=national_budget,
+                llm_recorder=llm_recorder,
             )
             comp_future = pool.submit(
                 _plan_comparative_batches,
@@ -257,6 +265,7 @@ def plan_searches(
                 config=config,
                 api_key=api_key,
                 remaining_budget=comparative_budget,
+                llm_recorder=llm_recorder,
             )
             national_batches, national_query_count = nat_future.result()
             comparative_batches, comparative_query_count = comp_future.result()
@@ -327,6 +336,7 @@ def _formulate_queries(
     config: AppConfig,
     api_key: str,
     question_context: str = "",
+    llm_recorder: LlmCallRecorder | None = None,
 ) -> list[str]:
     """Use LLM to formulate targeted search queries."""
     max_queries = budget.get("max_queries", 5)
@@ -407,7 +417,25 @@ def _formulate_queries(
         if config.enrichment.reasoning_effort is not None:
             request_kwargs["reasoning_effort"] = config.enrichment.reasoning_effort
 
-        response = client.chat.completions.create(**request_kwargs)
+        response = record_openai_chat_completion(
+            client,
+            request_kwargs,
+            context=LlmCallContext(
+                stage_name="enrichment",
+                stage_family="enrichment",
+                agent="search_planner",
+                call_kind="city_query_formulation",
+                model=config.enrichment.model,
+                metadata={
+                    "region": region,
+                    "city_count": len(cities),
+                    "target_field_count": len(target_fields),
+                    "priority": priority,
+                    "max_queries": max_queries,
+                },
+            ),
+            recorder=llm_recorder,
+        )
         if not response.choices:
             return []
 
@@ -454,6 +482,7 @@ def _plan_national_benchmark_batches(
     config: AppConfig,
     api_key: str,
     remaining_budget: int,
+    llm_recorder: LlmCallRecorder | None = None,
 ) -> tuple[list[SearchBatch], int]:
     """Generate national/regional benchmark search batches for Method A grounding.
 
@@ -503,6 +532,7 @@ def _plan_national_benchmark_batches(
                     target_fields=estimable_fields,
                     config=config,
                     api_key=api_key,
+                    llm_recorder=llm_recorder,
                 )
                 for spec in region_specs
             ]
@@ -543,6 +573,7 @@ def _formulate_national_benchmark_queries(
     target_fields: list[str],
     config: AppConfig,
     api_key: str,
+    llm_recorder: LlmCallRecorder | None = None,
 ) -> list[str]:
     """Use LLM to generate concise Google queries for national/regional benchmarks.
 
@@ -588,7 +619,23 @@ def _formulate_national_benchmark_queries(
         if config.enrichment.reasoning_effort is not None:
             request_kwargs["reasoning_effort"] = config.enrichment.reasoning_effort
 
-        response = client.chat.completions.create(**request_kwargs)
+        response = record_openai_chat_completion(
+            client,
+            request_kwargs,
+            context=LlmCallContext(
+                stage_name="enrichment",
+                stage_family="enrichment",
+                agent="search_planner",
+                call_kind="national_benchmark_query_formulation",
+                model=config.enrichment.model,
+                metadata={
+                    "region": region,
+                    "region_city_count": len(region_cities),
+                    "target_field_count": len(target_fields),
+                },
+            ),
+            recorder=llm_recorder,
+        )
         if not response.choices:
             return []
 
@@ -613,6 +660,7 @@ def _plan_comparative_batches(
     config: AppConfig,
     api_key: str,
     remaining_budget: int,
+    llm_recorder: LlmCallRecorder | None = None,
 ) -> tuple[list[SearchBatch], int]:
     """Generate cross-country comparative search batches for Method C grounding.
 
@@ -654,6 +702,7 @@ def _plan_comparative_batches(
                     regions=all_regions,
                     config=config,
                     api_key=api_key,
+                    llm_recorder=llm_recorder,
                 )
                 for spec in category_specs
             ]
@@ -694,6 +743,7 @@ def _formulate_comparative_queries(
     regions: list[str],
     config: AppConfig,
     api_key: str,
+    llm_recorder: LlmCallRecorder | None = None,
 ) -> list[str]:
     """Use LLM to generate queries for cross-country comparison reports.
 
@@ -738,7 +788,23 @@ def _formulate_comparative_queries(
         if config.enrichment.reasoning_effort is not None:
             request_kwargs["reasoning_effort"] = config.enrichment.reasoning_effort
 
-        response = client.chat.completions.create(**request_kwargs)
+        response = record_openai_chat_completion(
+            client,
+            request_kwargs,
+            context=LlmCallContext(
+                stage_name="enrichment",
+                stage_family="enrichment",
+                agent="search_planner",
+                call_kind="comparative_query_formulation",
+                model=config.enrichment.model,
+                metadata={
+                    "category": category,
+                    "target_field_count": len(target_fields),
+                    "region_count": len(regions),
+                },
+            ),
+            recorder=llm_recorder,
+        )
         if not response.choices:
             return []
 

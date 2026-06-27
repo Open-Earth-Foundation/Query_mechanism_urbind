@@ -34,6 +34,7 @@ from backend.modules.web_researcher.gap_analysis import (
 )
 from backend.modules.web_researcher.search_planner import plan_searches
 from backend.modules.web_researcher.search_worker import execute_search_batches
+from backend.services.llm_observability import LlmCallRecorder
 from backend.services.progress_tracker import ProgressTracker
 from backend.services.run_logger import RunLogger
 from backend.utils.config import AppConfig
@@ -271,6 +272,7 @@ def run_enrichment_pipeline(
     config: AppConfig,
     api_key: str,
     progress: ProgressTracker | None = None,
+    llm_recorder: LlmCallRecorder | None = None,
 ) -> dict[str, Any]:
     """Run the enrichment pipeline: gap analysis -> web research -> assumptions.
 
@@ -286,7 +288,12 @@ def run_enrichment_pipeline(
         logger.info("Enrichment pipeline: starting gap analysis.")
 
         if config.enrichment.use_split_gap_flow:
-            decomposition = decompose_fields(question, config, api_key)
+            decomposition = decompose_fields(
+                question,
+                config,
+                api_key,
+                llm_recorder=llm_recorder,
+            )
             if progress:
                 progress.add_item(
                     "gap_analysis",
@@ -294,10 +301,21 @@ def run_enrichment_pipeline(
                 )
 
             gap_manifest = detect_city_gaps(
-                question, decomposition, context_bundle, config, api_key
+                question,
+                decomposition,
+                context_bundle,
+                config,
+                api_key,
+                llm_recorder=llm_recorder,
             )
         else:
-            gap_manifest = run_gap_analysis(question, context_bundle, config, api_key)
+            gap_manifest = run_gap_analysis(
+                question,
+                context_bundle,
+                config,
+                api_key,
+                llm_recorder=llm_recorder,
+            )
 
         if progress:
             n_fields = len(gap_manifest.query_fields)
@@ -394,6 +412,7 @@ def run_enrichment_pipeline(
                     config=config,
                     api_key=api_key,
                     run_id=base_dir.name,
+                    llm_recorder=llm_recorder,
                 )
             )
             if progress:
@@ -430,7 +449,13 @@ def run_enrichment_pipeline(
                 progress.add_item("web_research", "Planning search queries...")
             logger.info("Enrichment pipeline: starting web research.")
 
-            search_batches = plan_searches(gap_manifest, config, api_key, question=question)
+            search_batches = plan_searches(
+                gap_manifest,
+                config,
+                api_key,
+                question=question,
+                llm_recorder=llm_recorder,
+            )
             if progress:
                 total_queries = sum(len(b.queries) for b in search_batches)
                 progress.add_item(
@@ -468,6 +493,7 @@ def run_enrichment_pipeline(
                             config,
                             api_key,
                             progress,
+                            llm_recorder,
                         ): label
                         for label, batches in batch_groups.items()
                     }
@@ -503,7 +529,11 @@ def run_enrichment_pipeline(
                 if progress:
                     progress.add_item("web_research", "Checking freshness vs CCC data...")
                 freshness_results = check_freshness(
-                    web_findings, context_bundle, config, api_key
+                    web_findings,
+                    context_bundle,
+                    config,
+                    api_key,
+                    llm_recorder=llm_recorder,
                 )
                 if progress and freshness_results:
                     n_superseded = sum(
@@ -659,6 +689,7 @@ def run_enrichment_pipeline(
             progress=progress,
             national_benchmarks=national_findings or None,
             comparative_data=comparative_findings or None,
+            llm_recorder=llm_recorder,
         )
 
         if progress:

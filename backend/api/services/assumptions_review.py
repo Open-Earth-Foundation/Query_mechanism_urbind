@@ -17,6 +17,11 @@ from backend.api.models import AssumptionsPayload, MissingDataItem, Regeneration
 from backend.api.services.context_chat import load_context_bundle, load_final_document
 from backend.api.services.run_store import RunRecord, RunStore
 from backend.modules.writer.agent import write_markdown
+from backend.services.llm_observability import (
+    LlmCallContext,
+    LlmCallRecorder,
+    record_openai_chat_completion,
+)
 from backend.utils.artifact_manifest import resolve_manifest_alias
 from backend.utils.artifact_writer import ArtifactWriter, stage_file_dir_name
 from backend.utils.config import AppConfig, get_openrouter_api_key
@@ -40,9 +45,10 @@ def discover_missing_data(
     context_bundle: dict[str, Any],
     config: AppConfig,
     api_key_override: str | None = None,
+    llm_recorder: LlmCallRecorder | None = None,
 ) -> dict[str, object]:
     """Run two LLM passes to extract and verify missing-data assumptions."""
-    pass_one_items = _run_discovery_pass(
+    pass_one_items = _run_discovery_pass_optional_recorder(
         pass_name="extract",
         question=question,
         final_document=final_document,
@@ -50,9 +56,10 @@ def discover_missing_data(
         existing_items=[],
         config=config,
         api_key_override=api_key_override,
+        llm_recorder=llm_recorder,
     )
     pass_one_deduped = dedupe_missing_data_items(pass_one_items)
-    pass_two_items = _run_discovery_pass(
+    pass_two_items = _run_discovery_pass_optional_recorder(
         pass_name="verify",
         question=question,
         final_document=final_document,
@@ -60,6 +67,7 @@ def discover_missing_data(
         existing_items=pass_one_deduped,
         config=config,
         api_key_override=api_key_override,
+        llm_recorder=llm_recorder,
     )
     merged_items = dedupe_missing_data_items(pass_one_deduped + pass_two_items)
     verification_summary = {
@@ -74,6 +82,32 @@ def discover_missing_data(
         "items": [item.model_dump() for item in merged_items],
         "verification_summary": verification_summary,
     }
+
+
+def _run_discovery_pass_optional_recorder(
+    *,
+    pass_name: str,
+    question: str,
+    final_document: str,
+    context_bundle: dict[str, Any],
+    existing_items: list[MissingDataItem],
+    config: AppConfig,
+    api_key_override: str | None,
+    llm_recorder: LlmCallRecorder | None,
+) -> list[MissingDataItem]:
+    """Call the discovery pass while preserving compatibility with test doubles."""
+    kwargs: dict[str, object] = {
+        "pass_name": pass_name,
+        "question": question,
+        "final_document": final_document,
+        "context_bundle": context_bundle,
+        "existing_items": existing_items,
+        "config": config,
+        "api_key_override": api_key_override,
+    }
+    if llm_recorder is not None:
+        kwargs["llm_recorder"] = llm_recorder
+    return _run_discovery_pass(**kwargs)
 
 
 def discover_missing_data_for_run(
@@ -96,6 +130,11 @@ def discover_missing_data_for_run(
     )
     final_document = load_final_document(final_output_path)
     context_bundle = load_context_bundle(context_bundle_path)
+    llm_recorder = (
+        LlmCallRecorder(run_store.runs_dir / run_record.run_id, run_record.run_id)
+        if config.mlflow.enabled
+        else None
+    )
 
     discovery_payload = discover_missing_data(
         question=run_record.question,
@@ -103,6 +142,7 @@ def discover_missing_data_for_run(
         context_bundle=context_bundle,
         config=config,
         api_key_override=api_key_override,
+        llm_recorder=llm_recorder,
     )
     final_items = [
         MissingDataItem.model_validate(item)
@@ -135,6 +175,12 @@ def discover_missing_data_for_run(
                 "metrics": {"item_count": len(final_items)},
             },
         )
+        if llm_recorder is not None and llm_recorder.index_path.exists():
+            writer.register_file(
+                "llm_calls_index",
+                llm_recorder.index_path,
+                artifact_type="runtime_state",
+            )
         writer.write_manifest()
 
     return {
@@ -199,6 +245,11 @@ def apply_assumptions_and_regenerate(
     )
     context_bundle = load_context_bundle(context_bundle_path)
     revised_context_bundle = apply_assumptions_to_context(context_bundle, payload)
+    llm_recorder = (
+        LlmCallRecorder(run_store.runs_dir / run_record.run_id, run_record.run_id)
+        if config.mlflow.enabled
+        else None
+    )
 
     revised_document = rewrite_document_with_assumptions(
         original_question=run_record.question,
@@ -206,6 +257,8 @@ def apply_assumptions_and_regenerate(
         revised_context_bundle=revised_context_bundle,
         config=config,
         api_key_override=api_key_override,
+        run_id=run_record.run_id,
+        llm_recorder=llm_recorder,
     )
     rendered = f"# Question\n{run_record.question.strip()}\n\n{revised_document.strip()}\n"
 
@@ -255,6 +308,12 @@ def apply_assumptions_and_regenerate(
                 "metrics": {"revised_output_chars": len(rendered)},
             },
         )
+        if llm_recorder is not None and llm_recorder.index_path.exists():
+            writer.register_file(
+                "llm_calls_index",
+                llm_recorder.index_path,
+                artifact_type="runtime_state",
+            )
         writer.write_manifest()
         revised_output_path = str(revised_output_file_path)
         assumptions_path = str(edited_path)
@@ -273,6 +332,8 @@ def rewrite_document_with_assumptions(
     revised_context_bundle: dict[str, object],
     config: AppConfig,
     api_key_override: str | None = None,
+    run_id: str | None = None,
+    llm_recorder: LlmCallRecorder | None = None,
 ) -> str:
     """Generate revised document content grounded in user-edited assumptions."""
     api_key = _resolve_api_key(api_key_override)
@@ -286,6 +347,12 @@ def rewrite_document_with_assumptions(
         config=config,
         api_key=api_key,
         log_llm_payload=False,
+        run_id=run_id,
+        llm_recorder=llm_recorder,
+        llm_stage_name="assumptions_apply",
+        llm_stage_family="assumptions",
+        llm_agent_name="assumptions_apply_writer",
+        llm_call_kind="apply_assumptions",
     )
     return writer_output.content.strip()
 
@@ -347,6 +414,7 @@ def _run_discovery_pass(
     existing_items: list[MissingDataItem],
     config: AppConfig,
     api_key_override: str | None = None,
+    llm_recorder: LlmCallRecorder | None = None,
 ) -> list[MissingDataItem]:
     """Run one missing-data extraction pass and validate structured output."""
     api_key = _resolve_api_key(api_key_override)
@@ -374,7 +442,23 @@ def _run_discovery_pass(
         config.assumptions_reviewer.model,
         len(existing_items),
     )
-    response = client.chat.completions.create(**request_kwargs)
+    response = record_openai_chat_completion(
+        client,
+        request_kwargs,
+        context=LlmCallContext(
+            stage_name="assumptions_discovery",
+            stage_family="assumptions",
+            agent="assumptions_reviewer",
+            call_kind=f"{pass_name}_missing_data_review",
+            model=config.assumptions_reviewer.model,
+            metadata={
+                "pass_name": pass_name,
+                "existing_item_count": len(existing_items),
+                "final_document_chars": len(final_document),
+            },
+        ),
+        recorder=llm_recorder,
+    )
     if not response.choices:
         raise ValueError("Assumptions reviewer returned no choices.")
     content = _extract_message_text(response.choices[0].message.content)

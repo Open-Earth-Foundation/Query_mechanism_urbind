@@ -35,6 +35,7 @@ from backend.services.agents import (
     build_openrouter_model,
     run_agent_sync,
 )
+from backend.services.llm_observability import LlmCallContext, LlmCallRecorder
 from backend.utils.config import AppConfig
 from backend.utils.prompts import load_prompt
 from backend.utils.retry import (
@@ -183,6 +184,7 @@ def extract_markdown_excerpts(
     api_key: str,
     log_llm_payload: bool = False,
     run_id: str | None = None,
+    llm_recorder: LlmCallRecorder | None = None,
 ) -> MarkdownResearchResult:
     """Extract markdown excerpts relevant to the question with graceful partial-failure handling."""
     _thread_local = threading.local()
@@ -326,6 +328,21 @@ def extract_markdown_excerpts(
                     json.dumps(payload, ensure_ascii=False),
                     max_turns=markdown_max_turns,
                     log_llm_payload=log_llm_payload,
+                    llm_recorder=llm_recorder,
+                    llm_call_context=LlmCallContext(
+                        stage_name="markdown_extraction",
+                        stage_family="markdown",
+                        agent="markdown_researcher",
+                        call_kind="batch_extraction",
+                        model=config.markdown_researcher.model,
+                        metadata={
+                            "city_name": city_name,
+                            "batch_index": batch_index,
+                            "split_path": split_display,
+                            "attempt": attempt,
+                            "max_attempts": max_attempts,
+                        },
+                    ),
                 )
 
                 # Get the final output - handle all format variations

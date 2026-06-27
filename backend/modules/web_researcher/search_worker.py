@@ -19,6 +19,7 @@ from backend.modules.web_researcher.tier1_web import (
     Tier1WebSource,
     load_tier1_web_allowlist,
 )
+from backend.services.llm_observability import LlmCallRecorder
 from backend.services.progress_tracker import ProgressTracker
 from backend.utils.config import AppConfig
 
@@ -70,6 +71,7 @@ def _process_results_for_query(
     tag_source_id: str | None,
     tag_source_tier: str | None,
     excluded_paths: list[str] | None = None,
+    llm_recorder: LlmCallRecorder | None = None,
 ) -> list[WebFinding]:
     """Run relevance → scrape → extract for one query's results.
 
@@ -87,7 +89,12 @@ def _process_results_for_query(
         checked = [(r, True) for r in results]
     else:
         checked = check_relevance_batch(
-            results, batch.target_fields, batch.cities, config, api_key
+            results,
+            batch.target_fields,
+            batch.cities,
+            config,
+            api_key,
+            llm_recorder=llm_recorder,
         )
 
     out: list[WebFinding] = []
@@ -118,6 +125,7 @@ def _process_results_for_query(
             cities=batch.cities,
             config=config,
             api_key=api_key,
+            llm_recorder=llm_recorder,
         )
         findings = validate_findings(findings, batch.cities)
         for finding in findings:
@@ -141,6 +149,7 @@ def execute_search_batch(
     deep_diver: DeepDiver,
     config: AppConfig,
     api_key: str,
+    llm_recorder: LlmCallRecorder | None = None,
 ) -> list[WebFinding]:
     """Execute a single search batch: search → filter → scrape → extract.
 
@@ -198,6 +207,7 @@ def execute_search_batch(
                     tag_source_id=source.id,
                     tag_source_tier="tier1",
                     excluded_paths=source.excluded_paths,
+                    llm_recorder=llm_recorder,
                 )
                 tier1_findings.extend(source_findings)
                 # Only count high-confidence findings as "resolving" the gap.
@@ -234,6 +244,7 @@ def execute_search_batch(
                 bypass_domain_cap=False,
                 tag_source_id=None,
                 tag_source_tier="open" if use_tier1 else None,
+                llm_recorder=llm_recorder,
             )
             all_findings.extend(open_findings)
 
@@ -289,6 +300,7 @@ def execute_search_batch(
                     cities=batch.cities,
                     config=config,
                     api_key=api_key,
+                    llm_recorder=llm_recorder,
                 )
                 findings = validate_findings(findings, batch.cities)
                 all_findings.extend(findings)
@@ -307,6 +319,7 @@ def execute_search_batches(
     config: AppConfig,
     api_key: str,
     progress: ProgressTracker | None = None,
+    llm_recorder: LlmCallRecorder | None = None,
 ) -> list[WebFinding]:
     """Execute all search batches through a bounded thread pool.
 
@@ -350,6 +363,7 @@ def execute_search_batches(
                 deep_diver,
                 config,
                 api_key,
+                llm_recorder,
             ): batch.batch_id
             for batch in batches
         }

@@ -13,6 +13,11 @@ from backend.modules.web_researcher.utils.json_helpers import (
     extract_json_candidate,
     extract_message_text,
 )
+from backend.services.llm_observability import (
+    LlmCallContext,
+    LlmCallRecorder,
+    record_openai_chat_completion,
+)
 from backend.utils.config import AppConfig
 
 logger = logging.getLogger(__name__)
@@ -25,6 +30,7 @@ def extract_fields_from_content(
     cities: list[str],
     config: AppConfig,
     api_key: str,
+    llm_recorder: LlmCallRecorder | None = None,
 ) -> list[WebFinding]:
     """Extract specific URBIND fields from scraped page content.
 
@@ -92,7 +98,24 @@ def extract_fields_from_content(
             "temperature": 0.0,
         }
 
-        response = client.chat.completions.create(**request_kwargs)
+        response = record_openai_chat_completion(
+            client,
+            request_kwargs,
+            context=LlmCallContext(
+                stage_name="enrichment",
+                stage_family="enrichment",
+                agent="web_extractor",
+                call_kind="field_extraction",
+                model=config.enrichment.model,
+                metadata={
+                    "source_url": source_url,
+                    "city_count": len(cities),
+                    "target_field_count": len(target_fields),
+                    "content_chars": len(content),
+                },
+            ),
+            recorder=llm_recorder,
+        )
         if not response.choices:
             return []
 

@@ -67,6 +67,7 @@ class RunLogger:
                 "manifest": str(run_paths.manifest),
                 "summary_events": str(run_paths.summary_events),
             },
+            "mlflow": None,
         }
         self.context_bundle: dict[str, Any] = {
             "markdown": None,
@@ -197,6 +198,7 @@ class RunLogger:
             "retry_summary": self.run_state.get("retry_summary"),
             "writer_citation_coverage": self.run_state.get("writer_citation_coverage"),
             "writer_multi_pass": self.run_state.get("writer_multi_pass"),
+            "mlflow": self.run_state.get("mlflow"),
         }
         return payload
 
@@ -607,6 +609,27 @@ class RunLogger:
         self.artifacts.register_file(name, path)
         self.write_api_state()
 
+    def _build_manifest_metadata(self) -> dict[str, Any]:
+        """Return metadata persisted in the final artifact manifest."""
+        metadata = {
+            "status": self.run_state.get("status"),
+            "finish_reason": self.run_state.get("finish_reason"),
+            "llm_usage": self.run_state.get("llm_usage"),
+            "retry_summary": self.run_state.get("retry_summary"),
+        }
+        mlflow_payload = self.run_state.get("mlflow")
+        if mlflow_payload:
+            metadata["mlflow"] = mlflow_payload
+        return metadata
+
+    def record_mlflow_metadata(self, metadata: dict[str, Any]) -> None:
+        """Persist MLflow sync metadata into API state and manifest files."""
+        self.run_state["mlflow"] = metadata
+        self.write_api_state()
+        manifest_path = self.artifacts.write_manifest(self._build_manifest_metadata())
+        self.run_state["artifacts"]["manifest"] = str(manifest_path)
+        self.write_api_state()
+
     def write_stage_detail(
         self,
         step_name: str,
@@ -947,14 +970,7 @@ class RunLogger:
                 },
             },
         )
-        manifest_path = self.artifacts.write_manifest(
-            {
-                "status": self.run_state.get("status"),
-                "finish_reason": self.run_state.get("finish_reason"),
-                "llm_usage": self.run_state.get("llm_usage"),
-                "retry_summary": self.run_state.get("retry_summary"),
-            }
-        )
+        manifest_path = self.artifacts.write_manifest(self._build_manifest_metadata())
         self.run_state["artifacts"]["manifest"] = str(manifest_path)
         self.write_api_state()
 

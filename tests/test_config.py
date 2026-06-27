@@ -455,3 +455,51 @@ def test_load_config_reads_benchmark_number_extractor_from_yaml(tmp_path: Path) 
     assert config.benchmark_number_extractor.model == "openai/gpt-5.4-mini"
     assert config.benchmark_number_extractor.max_output_tokens == 750
     assert config.benchmark_number_extractor.reasoning_effort == "medium"
+
+
+def test_load_config_applies_mlflow_defaults(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    """MLflow observability is optional and disabled by default."""
+    for key in (
+        "MLFLOW_ENABLED",
+        "MLFLOW_TRACKING_URI",
+        "MLFLOW_EXPERIMENT_NAME",
+        "MLFLOW_ARTIFACT_PATH",
+        "MLFLOW_TRACE_MODE",
+        "MLFLOW_FAIL_ON_ERROR",
+    ):
+        monkeypatch.delenv(key, raising=False)
+
+    config = load_config(_write_config(tmp_path))
+
+    assert config.mlflow.enabled is False
+    assert config.mlflow.tracking_uri is None
+    assert config.mlflow.experiment_name == "URBIND"
+    assert config.mlflow.artifact_path == "run_artifacts"
+    assert config.mlflow.trace_mode == "consolidated"
+    assert config.mlflow.fail_on_error is False
+
+
+def test_load_config_applies_mlflow_env_overrides(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    """All MLFLOW_* env vars override YAML/default settings."""
+    config_path = _write_config(tmp_path)
+    monkeypatch.setenv("MLFLOW_ENABLED", "true")
+    monkeypatch.setenv("MLFLOW_TRACKING_URI", "file:///tmp/mlruns")
+    monkeypatch.setenv("MLFLOW_EXPERIMENT_NAME", "Test Experiment")
+    monkeypatch.setenv("MLFLOW_ARTIFACT_PATH", "full_run")
+    monkeypatch.setenv("MLFLOW_TRACE_MODE", "consolidated")
+    monkeypatch.setenv("MLFLOW_FAIL_ON_ERROR", "true")
+
+    config = load_config(config_path)
+
+    assert config.mlflow.enabled is True
+    assert config.mlflow.tracking_uri == "file:///tmp/mlruns"
+    assert config.mlflow.experiment_name == "Test Experiment"
+    assert config.mlflow.artifact_path == "full_run"
+    assert config.mlflow.trace_mode == "consolidated"
+    assert config.mlflow.fail_on_error is True

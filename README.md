@@ -71,6 +71,12 @@ Environment variables (`.env`):
 - `APP_SESSION_SECRET` (required): shared HMAC secret used to sign and verify the `urbind_session` cookie. Use the same value in backend `.env`, frontend runtime env, Docker, and Kubernetes.
 - `MARKDOWN_DIR` (optional, default `documents`): default directory scanned for top-level city markdown files. Runtime markdown discovery ignores subfolders under this directory.
 - `RUNS_DIR` (optional, default `output`): base directory for run artifacts.
+- `MLFLOW_ENABLED` (optional, default `false`): enables best-effort MLflow observability for finalized pipeline runs.
+- `MLFLOW_TRACKING_URI` (optional): MLflow tracking URI. Leave empty to use MLflow's local/default tracking configuration.
+- `MLFLOW_EXPERIMENT_NAME` (optional, default `URBIND`): MLflow experiment used for mirrored runs.
+- `MLFLOW_ARTIFACT_PATH` (optional, default `run_artifacts`): artifact path under each MLflow run where the full `output/<run_id>/` directory is uploaded.
+- `MLFLOW_TRACE_MODE` (optional, default `consolidated`): trace mode. The backend creates one consolidated pipeline trace and falls back to split markdown/assumptions traces if needed.
+- `MLFLOW_FAIL_ON_ERROR` (optional, default `false`): when `false`, MLflow upload or tracing errors are recorded as warnings and local artifacts remain the source of truth.
 - `LOG_LEVEL` (optional, default `INFO`): logging verbosity (`DEBUG`, `INFO`, `WARNING`, `ERROR`).
 - `OPENROUTER_BASE_URL` (optional, default `https://openrouter.ai/api/v1`): override for OpenRouter-compatible backends.
 - `API_CORS_ORIGINS` (optional): comma-separated allowed frontend origins for the API. When omitted, the API allows wildcard CORS without credentials.
@@ -164,6 +170,27 @@ python -m backend.scripts.update_vector_store --trigger manual
 6. When switching to the cosine branch for local testing, update `.env` to `.chroma_cosine` values and restart the relevant process. Docker Compose does not need an image rebuild, but it does need container recreation after the `.env` change.
 
 Default output directory is `output/` (unless overridden by `RUNS_DIR`).
+
+### MLflow Observability
+
+MLflow is optional and disabled by default. When `MLFLOW_ENABLED=true`, each
+finalized pipeline run creates one MLflow run named after the local `run_id`.
+The backend uploads the complete `output/<run_id>/` directory with
+`mlflow.log_artifacts(...)`, not only files listed in `manifest.json`.
+
+MLflow-enabled runs also record raw LLM call artifacts locally:
+
+- per-call JSON files under the owning stage, such as
+  `stage_files/006_markdown_extraction/llm_calls/`
+- a run-level `llm_calls/index.jsonl` with call order, stage, family, agent,
+  model, status, timestamps, and artifact path
+
+The trace policy prefers one consolidated trace tagged with
+`trace_family=pipeline` and `trace_group=<run_id>`, with child spans for each
+recorded LLM call. If consolidated trace creation fails, the backend falls
+back to separate `markdown` and `assumptions` traces under the same
+`trace_group`. MLflow sync metadata is written back to both `api_state.json`
+and `manifest.json["metadata"]["mlflow"]`.
 
 ### Vector retrieval sizing and thresholds
 

@@ -37,6 +37,8 @@ from backend.modules.vector_store.retriever import (
 )
 from backend.modules.writer.agent import write_markdown
 from backend.modules.writer.models import WriterOutput
+from backend.services.llm_observability import LlmCallRecorder
+from backend.services.mlflow_observability import sync_run_to_mlflow
 from backend.services.progress_tracker import ProgressTracker
 from backend.services.run_logger import RunLogger
 from backend.utils.config import AppConfig, get_openrouter_api_key
@@ -432,6 +434,19 @@ def run_pipeline(
     run_logger.record_artifact("context_bundle", paths.context_bundle)
     run_log_handler = attach_run_file_logger(paths.base_dir)
     progress = ProgressTracker(paths.base_dir)
+    llm_recorder = (
+        LlmCallRecorder(paths.base_dir, run_id_value) if config.mlflow.enabled else None
+    )
+
+    def _sync_finalized_run(result_paths: RunPaths) -> RunPaths:
+        if llm_recorder is not None and llm_recorder.index_path.exists():
+            run_logger.record_artifact("llm_calls_index", llm_recorder.index_path)
+        sync_run_to_mlflow(
+            run_logger=run_logger,
+            config=config.mlflow,
+            recorder=llm_recorder,
+        )
+        return result_paths
 
     progress.start_step("input_snapshot", "Capturing run inputs")
     progress.start_step("query_preparation", "Preparing retrieval queries")
@@ -669,8 +684,17 @@ def run_pipeline(
             "log_llm_payload": log_llm_payload,
         }
         markdown_signature = inspect.signature(markdown_func)
-        if "run_id" in markdown_signature.parameters:
+        markdown_accepts_extra_kwargs = any(
+            parameter.kind == inspect.Parameter.VAR_KEYWORD
+            for parameter in markdown_signature.parameters.values()
+        )
+        if "run_id" in markdown_signature.parameters or markdown_accepts_extra_kwargs:
             markdown_kwargs["run_id"] = run_id_value
+        if (
+            "llm_recorder" in markdown_signature.parameters
+            or markdown_accepts_extra_kwargs
+        ):
+            markdown_kwargs["llm_recorder"] = llm_recorder
         markdown_result = markdown_func(
             canonical_research_query,
             markdown_chunks,
@@ -691,12 +715,13 @@ def run_pipeline(
     try:
         markdown_payload = _run_initial_markdown()
     except (ValueError, RuntimeError, OSError, KeyError) as exc:
-        return handle_task_error("markdown", exc, run_logger, run_log_handler, paths)
+        result = handle_task_error("markdown", exc, run_logger, run_log_handler, paths)
+        return _sync_finalized_run(result)
 
     if not markdown_payload:
         run_logger.finalize("failed", finish_reason="markdown_extraction_failed")
         detach_run_file_logger(run_log_handler)
-        return paths
+        return _sync_finalized_run(paths)
 
     # Process and log initial markdown results
     batches_payload = markdown_payload.get("batches_payload")
@@ -889,16 +914,16 @@ def run_pipeline(
                 "failed", finish_reason="markdown_decision_audit_failed"
             )
             detach_run_file_logger(run_log_handler)
-            return paths
+            return _sync_finalized_run(paths)
         if markdown_result.status == "error":
             run_logger.record_decision(markdown_result.model_dump())
             run_logger.finalize("failed", finish_reason="markdown_result_error")
             detach_run_file_logger(run_log_handler)
-            return paths
+            return _sync_finalized_run(paths)
     else:
         run_logger.finalize("failed", finish_reason="markdown_extraction_failed")
         detach_run_file_logger(run_log_handler)
-        return paths
+        return _sync_finalized_run(paths)
 
     # Freeze the full runtime context after the markdown pipeline completes.
     progress.start_step("markdown_context_handoff", "Freezing markdown context handoff")
@@ -941,6 +966,7 @@ def run_pipeline(
             config=config,
             api_key=api_key,
             progress=progress,
+            llm_recorder=llm_recorder,
         )
         run_logger.context_bundle = context_bundle
         run_logger.write_context_bundle()
@@ -959,10 +985,11 @@ def run_pipeline(
             log_llm_payload=log_llm_payload,
             writer_func=writer_func,
             progress=progress,
+            llm_recorder=llm_recorder,
         )
         progress.add_item("writer", "Document written")
         progress.complete_step("writer")
-        return result if result is not None else paths
+        return _sync_finalized_run(result if result is not None else paths)
     except Exception:
         logger.exception(
             "Unexpected error during write decision for run_id=%s", run_id_value
@@ -970,6 +997,7 @@ def run_pipeline(
         progress.complete_step("writer", status="error")
         run_logger.finalize("failed", finish_reason="writer_unexpected_error")
         detach_run_file_logger(run_log_handler)
+        _sync_finalized_run(paths)
         raise
 
 

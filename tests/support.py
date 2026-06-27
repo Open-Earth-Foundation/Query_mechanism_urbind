@@ -44,6 +44,7 @@ def build_test_app_config(
     assumptions_reviewer_overrides: dict[str, object] | None = None,
     enrichment_overrides: dict[str, object] | None = None,
     retry_overrides: dict[str, object] | None = None,
+    mlflow_overrides: dict[str, object] | None = None,
 ) -> AppConfig:
     """Build a test AppConfig seeded from the repository llm_config.yaml."""
     test_chroma_path = runs_dir / "_test_chroma"
@@ -86,6 +87,7 @@ def build_test_app_config(
             update={"external_source_search_enabled": False}
         )
     config.retry = _apply_overrides(config.retry, retry_overrides)
+    config.mlflow = _apply_overrides(config.mlflow, mlflow_overrides)
     config.vector_store = config.vector_store.model_copy(
         update={
             "enabled": False,
