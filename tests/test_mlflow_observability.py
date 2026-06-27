@@ -1,7 +1,9 @@
 from __future__ import annotations
 
 import asyncio
+import io
 import json
+import sys
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from typing import Any
@@ -29,11 +31,13 @@ from tests.support import build_test_app_config
 
 
 class _FakeMlflowRunInfo:
-    run_id = "mlflow-run-id"
+    def __init__(self, run_id: str = "mlflow-run-id") -> None:
+        self.run_id = run_id
 
 
 class _FakeMlflowRun:
-    info = _FakeMlflowRunInfo()
+    def __init__(self, run_id: str = "mlflow-run-id") -> None:
+        self.info = _FakeMlflowRunInfo(run_id)
 
     def __enter__(self) -> "_FakeMlflowRun":
         return self
@@ -66,6 +70,8 @@ class _FakeMlflow:
     def __init__(self, *, fail_pipeline_trace: bool = False, fail_log_artifacts: bool = False) -> None:
         self.fail_pipeline_trace = fail_pipeline_trace
         self.fail_log_artifacts = fail_log_artifacts
+        self.started_run_id: str | None = None
+        self.run_name: str | None = None
         self.tracking_uri: str | None = None
         self.experiment_name: str | None = None
         self.tags: dict[str, str] = {}
@@ -81,9 +87,14 @@ class _FakeMlflow:
     def set_experiment(self, name: str) -> None:
         self.experiment_name = name
 
-    def start_run(self, run_name: str) -> _FakeMlflowRun:
+    def start_run(
+        self,
+        run_name: str | None = None,
+        run_id: str | None = None,
+    ) -> _FakeMlflowRun:
         self.run_name = run_name
-        return _FakeMlflowRun()
+        self.started_run_id = run_id
+        return _FakeMlflowRun(run_id or "mlflow-run-id")
 
     def set_tags(self, tags: dict[str, str]) -> None:
         self.tags.update(tags)
@@ -340,6 +351,79 @@ def test_mlflow_sync_logs_full_run_dir_and_consolidated_trace(tmp_path: Path) ->
     manifest = json.loads(run_logger.run_paths.manifest.read_text(encoding="utf-8"))
     assert api_state["mlflow"]["mlflow_run_id"] == "mlflow-run-id"
     assert manifest["metadata"]["mlflow"]["sync_status"] == "completed"
+
+
+def test_mlflow_sync_reconfigures_charmap_stdout_for_mlflow_output(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    run_logger = _finalized_run_logger(tmp_path)
+    config = build_test_app_config(
+        runs_dir=tmp_path,
+        mlflow_overrides={"enabled": True},
+    ).mlflow
+
+    class _EmojiMlflow(_FakeMlflow):
+        def start_run(
+            self,
+            run_name: str | None = None,
+            run_id: str | None = None,
+        ) -> _FakeMlflowRun:
+            print("\U0001f3c3 View run")
+            return super().start_run(run_name=run_name, run_id=run_id)
+
+    stream = io.TextIOWrapper(io.BytesIO(), encoding="cp1252", errors="strict")
+    monkeypatch.setattr(sys, "stdout", stream)
+
+    metadata = sync_run_to_mlflow(
+        run_logger=run_logger,
+        config=config,
+        recorder=None,
+        mlflow_module=_EmojiMlflow(),
+    )
+
+    assert metadata["sync_status"] == "completed"
+
+
+def test_mlflow_sync_reuses_failed_run_and_trace_on_retry(tmp_path: Path) -> None:
+    run_logger = _finalized_run_logger(tmp_path)
+    existing_metadata = {
+        "enabled": True,
+        "sync_status": "failed",
+        "run_id": run_logger.run_paths.base_dir.name,
+        "experiment_name": "URBIND_TEST",
+        "artifact_path": "run_artifacts",
+        "mlflow_run_id": "existing-mlflow-run",
+        "traces": {
+            "mode": "consolidated",
+            "trace_ids": ["trace-existing"],
+            "fallback_used": False,
+        },
+        "error": {"type": "UnicodeEncodeError", "message": "console encoding"},
+    }
+    run_logger.record_mlflow_metadata(existing_metadata)
+    config = build_test_app_config(
+        runs_dir=tmp_path,
+        mlflow_overrides={
+            "enabled": True,
+            "experiment_name": "URBIND_TEST",
+            "artifact_path": "run_artifacts",
+        },
+    ).mlflow
+    fake_mlflow = _FakeMlflow()
+
+    metadata = sync_run_to_mlflow(
+        run_logger=run_logger,
+        config=config,
+        recorder=None,
+        mlflow_module=fake_mlflow,
+    )
+
+    assert metadata["sync_status"] == "completed"
+    assert metadata["mlflow_run_id"] == "existing-mlflow-run"
+    assert metadata["traces"] == existing_metadata["traces"]
+    assert fake_mlflow.started_run_id == "existing-mlflow-run"
+    assert fake_mlflow.spans == []
 
 
 def test_mlflow_sync_falls_back_to_markdown_and_assumptions_traces(

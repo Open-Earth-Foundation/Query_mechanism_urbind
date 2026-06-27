@@ -4,12 +4,25 @@ from __future__ import annotations
 
 import json
 import logging
+import sys
 from pathlib import Path
 from typing import Any
 
 from backend.services.llm_observability import LlmCallRecorder, safe_serialize
 
 logger = logging.getLogger(__name__)
+
+
+def _ensure_utf8_console_streams() -> None:
+    """Avoid Windows console encoding failures from MLflow status output."""
+    for stream in (sys.stdout, sys.stderr):
+        reconfigure = getattr(stream, "reconfigure", None)
+        encoding = getattr(stream, "encoding", None)
+        if callable(reconfigure) and encoding and encoding.lower() != "utf-8":
+            try:
+                reconfigure(encoding="utf-8")
+            except (OSError, ValueError):
+                continue
 
 
 def _read_json(path: Path) -> dict[str, Any]:
@@ -262,6 +275,7 @@ def sync_run_to_mlflow(
     }
 
     try:
+        _ensure_utf8_console_streams()
         if mlflow_module is None:
             import mlflow as mlflow_module  # type: ignore[no-redef]
 
@@ -271,18 +285,35 @@ def sync_run_to_mlflow(
         mlflow_module.set_experiment(experiment_name)
 
         api_state = _read_json(run_logger.run_paths.api_state)
+        existing_mlflow = api_state.get("mlflow")
+        if not isinstance(existing_mlflow, dict):
+            existing_mlflow = {}
+        existing_run_id = str(existing_mlflow.get("mlflow_run_id") or "")
+        if existing_run_id and existing_mlflow.get("sync_status") == "completed":
+            return existing_mlflow
+        if existing_run_id:
+            metadata["mlflow_run_id"] = existing_run_id
+
         calls = recorder.read_call_records() if recorder is not None else []
-        with mlflow_module.start_run(run_name=run_id) as active_run:
+        start_run_kwargs = (
+            {"run_id": existing_run_id} if existing_run_id else {"run_name": run_id}
+        )
+        with mlflow_module.start_run(**start_run_kwargs) as active_run:
             mlflow_run_id = str(getattr(active_run.info, "run_id", ""))
             metadata["mlflow_run_id"] = mlflow_run_id
             mlflow_module.set_tags(_build_tags(api_state, experiment_name))
             mlflow_module.log_metrics(_build_metrics(api_state, len(calls)))
-            trace_payload = _create_traces(
-                mlflow_module,
-                config=config,
-                run_id=run_id,
-                calls=calls,
-                api_state=api_state,
+            existing_traces = existing_mlflow.get("traces")
+            trace_payload = (
+                existing_traces
+                if isinstance(existing_traces, dict) and existing_traces.get("trace_ids")
+                else _create_traces(
+                    mlflow_module,
+                    config=config,
+                    run_id=run_id,
+                    calls=calls,
+                    api_state=api_state,
+                )
             )
             metadata["traces"] = trace_payload
             metadata["sync_status"] = "uploading"

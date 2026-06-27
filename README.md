@@ -192,6 +192,12 @@ back to separate `markdown` and `assumptions` traces under the same
 `trace_group`. MLflow sync metadata is written back to both `api_state.json`
 and `manifest.json["metadata"]["mlflow"]`.
 
+MLflow sync is retry-safe for one local run directory. If a previous sync
+created an MLflow run or trace but failed before artifact upload completed,
+the next sync reuses the stored MLflow run id and trace metadata instead of
+creating duplicates. During sync, the backend also switches console streams to
+UTF-8 when possible so MLflow status output does not fail on Windows consoles.
+
 ### Vector retrieval sizing and thresholds
 
 When vector retrieval is enabled, retrieval runs per city and per user-provided query (required question plus optional question 2 and 3), then merges and expands context.

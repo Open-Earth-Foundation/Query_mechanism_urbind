@@ -54,6 +54,12 @@ Runtime controls:
 
 MLflow failures are best-effort warnings by default. Set `MLFLOW_FAIL_ON_ERROR=true` only when pipeline success should depend on MLflow upload/tracing success.
 
+Sync hardening:
+
+- Before MLflow calls run, the backend switches process console streams to UTF-8 when Python supports stream reconfiguration. This prevents Windows console encoding errors from MLflow status output from failing an otherwise successful sync.
+- MLflow sync is idempotent for a completed local run directory. If `api_state.json["mlflow"]` already records a completed sync with an MLflow run id, a later sync returns that metadata instead of opening a new MLflow run.
+- If a previous sync recorded an MLflow run id or trace ids but failed before artifact upload completed, the retry reuses the stored run id and trace metadata, then uploads artifacts into the same MLflow run instead of creating duplicate runs or traces.
+
 ## MLflow Run And Trace Policy
 
 Create one MLflow run for each pipeline `run_id`. All uploaded artifacts, metrics, tags, and traces for that pipeline execution belong under that single MLflow run.
