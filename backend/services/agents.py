@@ -484,6 +484,22 @@ class LlmCallRecordingHooks(RunHooksBase[Any, Agent[Any]]):
             ended_at=datetime.now(timezone.utc).isoformat(),
         )
 
+    def record_error(self, error: BaseException) -> None:
+        """Persist pending LLM requests when the SDK raises before ``on_llm_end``."""
+        ended_at = datetime.now(timezone.utc).isoformat()
+        for turn in sorted(self._pending):
+            pending = self._pending[turn]
+            request = pending.get("request", {})
+            started_at = pending.get("started_at")
+            self._recorder.record_call(
+                self._context,
+                request=request,
+                error=error,
+                started_at=started_at if isinstance(started_at, str) else None,
+                ended_at=ended_at,
+            )
+        self._pending.clear()
+
 
 def build_model_settings(
     temperature: float | None,
@@ -538,10 +554,12 @@ def run_agent_sync(
         MaxTurnsExceeded: The run exceeded the configured turn budget.
     """
     hooks_list: list[RunHooksBase[Any, Agent[Any]]] = [LlmUsageLoggingHooks()]
+    recording_hook: LlmCallRecordingHooks | None = None
     if log_llm_payload:
         hooks_list.append(LlmPayloadLoggingHooks())
     if llm_recorder is not None and llm_call_context is not None:
-        hooks_list.append(LlmCallRecordingHooks(llm_recorder, llm_call_context))
+        recording_hook = LlmCallRecordingHooks(llm_recorder, llm_call_context)
+        hooks_list.append(recording_hook)
     hooks: RunHooksBase[Any, Agent[Any]] | None = CompositeRunHooks(hooks_list)
 
     loop = getattr(_thread_local, "loop", None)
@@ -555,6 +573,8 @@ def run_agent_sync(
             Runner.run(agent, input_data, max_turns=max_turns, hooks=hooks)
         )
     except MaxTurnsExceeded as exc:
+        if recording_hook is not None:
+            recording_hook.record_error(exc)
         diagnostics = _build_max_turns_diagnostics(
             exc,
             fallback_agent_name=agent.name,
@@ -565,6 +585,10 @@ def run_agent_sync(
             "Agent exceeded max turns (%d). Gracefully stopping with partial results.",
             max_turns,
         )
+        raise
+    except Exception as exc:
+        if recording_hook is not None:
+            recording_hook.record_error(exc)
         raise
 
 

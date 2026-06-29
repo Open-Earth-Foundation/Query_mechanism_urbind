@@ -22,7 +22,7 @@ from backend.modules.web_researcher.models import (
     GapManifest,
 )
 from backend.modules.writer.models import WriterOutput
-from backend.services.agents import LlmCallRecordingHooks
+from backend.services.agents import LlmCallRecordingHooks, run_agent_sync
 from backend.services.llm_observability import LlmCallContext, LlmCallRecorder
 from backend.services.mlflow_observability import sync_run_to_mlflow
 from backend.services.run_logger import RunLogger
@@ -216,6 +216,55 @@ def test_agents_sdk_hook_records_fake_model_response(tmp_path: Path) -> None:
     assert records[0]["stage_family"] == "writer"
     assert records[0]["request"]["system_prompt"] == "system"
     assert records[0]["response"]["response_id"] == "resp-1"
+
+
+def test_run_agent_sync_records_pending_llm_error(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    recorder = LlmCallRecorder(tmp_path, "run-error")
+    agent = type("Agent", (), {"name": "Writer"})()
+
+    async def _raise_after_llm_start(
+        agent: object,
+        input_data: str,
+        *,
+        max_turns: int,
+        hooks: object,
+    ) -> object:
+        del input_data, max_turns
+        await hooks.on_llm_start(
+            None,
+            agent,
+            "system",
+            [{"role": "user", "content": "hi"}],
+        )
+        raise RuntimeError("provider down")
+
+    monkeypatch.setattr(
+        "backend.services.agents.Runner.run",
+        _raise_after_llm_start,
+    )
+
+    with pytest.raises(RuntimeError, match="provider down"):
+        run_agent_sync(
+            agent,
+            "input",
+            llm_recorder=recorder,
+            llm_call_context=LlmCallContext(
+                stage_name="writer",
+                stage_family="writer",
+                agent="writer",
+                call_kind="write_markdown",
+                model="test-model",
+            ),
+        )
+
+    records = recorder.read_call_records()
+    assert len(records) == 1
+    assert records[0]["status"] == "error"
+    assert records[0]["error"]["type"] == "RuntimeError"
+    assert records[0]["request"]["system_prompt"] == "system"
 
 
 def test_assumptions_estimator_direct_openai_call_is_recorded(

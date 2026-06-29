@@ -22,10 +22,12 @@ from backend.services.llm_observability import (
     LlmCallRecorder,
     record_openai_chat_completion,
 )
+from backend.services.mlflow_observability import sync_run_to_mlflow
 from backend.utils.artifact_manifest import resolve_manifest_alias
 from backend.utils.artifact_writer import ArtifactWriter, stage_file_dir_name
 from backend.utils.config import AppConfig, get_openrouter_api_key
-from backend.utils.json_io import read_json
+from backend.utils.json_io import read_json, read_json_object, write_json
+from backend.utils.paths import RunPaths
 
 logger = logging.getLogger(__name__)
 
@@ -37,6 +39,107 @@ class _MissingDataEnvelope(BaseModel):
     """LLM-facing envelope for structured missing-data extraction."""
 
     items: list[MissingDataItem] = Field(default_factory=list)
+
+
+class _ExistingRunMlflowLogger:
+    """Small adapter for syncing artifacts added after pipeline finalization."""
+
+    def __init__(self, run_paths: RunPaths) -> None:
+        self.run_paths = run_paths
+        self._artifacts = ArtifactWriter(run_paths.base_dir, run_paths.base_dir.name)
+
+    def register_llm_calls_index(self, index_path: Path) -> None:
+        """Add the LLM call index to the manifest before a forced MLflow sync."""
+        self._artifacts.register_file(
+            "llm_calls_index",
+            index_path,
+            artifact_type="runtime_state",
+        )
+        self._artifacts.write_manifest(_build_existing_manifest_metadata(self.run_paths))
+
+    def record_mlflow_metadata(self, metadata: dict[str, Any]) -> None:
+        """Persist MLflow sync metadata into an existing run's API state."""
+        api_state = read_json_object(self.run_paths.api_state) or {}
+        api_state["mlflow"] = metadata
+        write_json(self.run_paths.api_state, api_state, ensure_ascii=False, default=str)
+        self._artifacts.write_manifest(
+            _build_existing_manifest_metadata(self.run_paths, mlflow_metadata=metadata)
+        )
+
+
+def _build_existing_run_paths(
+    *,
+    run_store: RunStore,
+    run_record: RunRecord,
+    config: AppConfig,
+) -> RunPaths:
+    """Return canonical paths for an existing finalized run directory."""
+    run_dir = run_store.runs_dir / run_record.run_id
+    return RunPaths(
+        base_dir=run_dir,
+        api_state=run_dir / "api_state.json",
+        manifest=run_dir / "manifest.json",
+        summary_events=run_dir / "summary.jsonl",
+        stages_dir=run_dir / "stages",
+        stage_files_dir=run_dir / "stage_files",
+        run_summary=run_dir / "run_summary.txt",
+        error_log=run_dir / "error_log.txt",
+        context_bundle=run_record.context_bundle_path
+        or run_dir / config.orchestrator.context_bundle_name,
+        final_output=run_record.final_output_path or run_dir / "final.md",
+    )
+
+
+def _build_existing_manifest_metadata(
+    run_paths: RunPaths,
+    *,
+    mlflow_metadata: dict[str, Any] | None = None,
+) -> dict[str, Any]:
+    """Preserve existing manifest metadata and refresh values from API state."""
+    manifest = read_json_object(run_paths.manifest) or {}
+    raw_metadata = manifest.get("metadata")
+    metadata = dict(raw_metadata) if isinstance(raw_metadata, dict) else {}
+    api_state = read_json_object(run_paths.api_state) or {}
+    for key in (
+        "status",
+        "finish_reason",
+        "llm_usage",
+        "retry_summary",
+        "writer_citation_coverage",
+        "writer_multi_pass",
+    ):
+        value = api_state.get(key)
+        if value is not None:
+            metadata[key] = value
+    if mlflow_metadata is not None:
+        metadata["mlflow"] = mlflow_metadata
+    return metadata
+
+
+def _sync_assumptions_run_to_mlflow(
+    *,
+    run_store: RunStore,
+    run_record: RunRecord,
+    config: AppConfig,
+    llm_recorder: LlmCallRecorder | None,
+) -> None:
+    """Upload post-finalization assumptions artifacts into the existing MLflow run."""
+    if not config.mlflow.enabled:
+        return
+    run_paths = _build_existing_run_paths(
+        run_store=run_store,
+        run_record=run_record,
+        config=config,
+    )
+    mlflow_logger = _ExistingRunMlflowLogger(run_paths)
+    if llm_recorder is not None and llm_recorder.index_path.exists():
+        mlflow_logger.register_llm_calls_index(llm_recorder.index_path)
+    sync_run_to_mlflow(
+        run_logger=mlflow_logger,
+        config=config.mlflow,
+        recorder=llm_recorder,
+        force=True,
+    )
 
 
 def discover_missing_data(
@@ -136,14 +239,23 @@ def discover_missing_data_for_run(
         else None
     )
 
-    discovery_payload = discover_missing_data(
-        question=run_record.question,
-        final_document=final_document,
-        context_bundle=context_bundle,
-        config=config,
-        api_key_override=api_key_override,
-        llm_recorder=llm_recorder,
-    )
+    try:
+        discovery_payload = discover_missing_data(
+            question=run_record.question,
+            final_document=final_document,
+            context_bundle=context_bundle,
+            config=config,
+            api_key_override=api_key_override,
+            llm_recorder=llm_recorder,
+        )
+    except Exception:
+        _sync_assumptions_run_to_mlflow(
+            run_store=run_store,
+            run_record=run_record,
+            config=config,
+            llm_recorder=llm_recorder,
+        )
+        raise
     final_items = [
         MissingDataItem.model_validate(item)
         for item in discovery_payload.get("items", [])
@@ -182,6 +294,12 @@ def discover_missing_data_for_run(
                 artifact_type="runtime_state",
             )
         writer.write_manifest()
+    _sync_assumptions_run_to_mlflow(
+        run_store=run_store,
+        run_record=run_record,
+        config=config,
+        llm_recorder=llm_recorder,
+    )
 
     return {
         "run_id": run_record.run_id,
@@ -251,15 +369,24 @@ def apply_assumptions_and_regenerate(
         else None
     )
 
-    revised_document = rewrite_document_with_assumptions(
-        original_question=run_record.question,
-        assumptions_payload=payload,
-        revised_context_bundle=revised_context_bundle,
-        config=config,
-        api_key_override=api_key_override,
-        run_id=run_record.run_id,
-        llm_recorder=llm_recorder,
-    )
+    try:
+        revised_document = rewrite_document_with_assumptions(
+            original_question=run_record.question,
+            assumptions_payload=payload,
+            revised_context_bundle=revised_context_bundle,
+            config=config,
+            api_key_override=api_key_override,
+            run_id=run_record.run_id,
+            llm_recorder=llm_recorder,
+        )
+    except Exception:
+        _sync_assumptions_run_to_mlflow(
+            run_store=run_store,
+            run_record=run_record,
+            config=config,
+            llm_recorder=llm_recorder,
+        )
+        raise
     rendered = f"# Question\n{run_record.question.strip()}\n\n{revised_document.strip()}\n"
 
     revised_output_path: str | None = None
@@ -317,6 +444,12 @@ def apply_assumptions_and_regenerate(
         writer.write_manifest()
         revised_output_path = str(revised_output_file_path)
         assumptions_path = str(edited_path)
+    _sync_assumptions_run_to_mlflow(
+        run_store=run_store,
+        run_record=run_record,
+        config=config,
+        llm_recorder=llm_recorder,
+    )
 
     return RegenerationResult(
         run_id=run_record.run_id,

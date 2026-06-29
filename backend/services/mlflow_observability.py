@@ -257,8 +257,13 @@ def sync_run_to_mlflow(
     config: Any,
     recorder: LlmCallRecorder | None,
     mlflow_module: Any | None = None,
+    force: bool = False,
 ) -> dict[str, object]:
-    """Mirror a finalized run directory to MLflow when enabled."""
+    """Mirror a finalized run directory to MLflow when enabled.
+
+    Set ``force`` when post-finalization artifacts were added after a completed
+    sync and the existing MLflow run should be updated in place.
+    """
     if not bool(getattr(config, "enabled", False)):
         return {"enabled": False, "sync_status": "disabled"}
 
@@ -289,7 +294,11 @@ def sync_run_to_mlflow(
         if not isinstance(existing_mlflow, dict):
             existing_mlflow = {}
         existing_run_id = str(existing_mlflow.get("mlflow_run_id") or "")
-        if existing_run_id and existing_mlflow.get("sync_status") == "completed":
+        if (
+            existing_run_id
+            and existing_mlflow.get("sync_status") == "completed"
+            and not force
+        ):
             return existing_mlflow
         if existing_run_id:
             metadata["mlflow_run_id"] = existing_run_id

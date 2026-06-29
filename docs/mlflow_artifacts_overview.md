@@ -59,6 +59,7 @@ Sync hardening:
 - Before MLflow calls run, the backend switches process console streams to UTF-8 when Python supports stream reconfiguration. This prevents Windows console encoding errors from MLflow status output from failing an otherwise successful sync.
 - MLflow sync is idempotent for a completed local run directory. If `api_state.json["mlflow"]` already records a completed sync with an MLflow run id, a later sync returns that metadata instead of opening a new MLflow run.
 - If a previous sync recorded an MLflow run id or trace ids but failed before artifact upload completed, the retry reuses the stored run id and trace metadata, then uploads artifacts into the same MLflow run instead of creating duplicate runs or traces.
+- Assumption review/apply API artifacts created after pipeline finalization force a re-sync into the existing MLflow run for the same local `run_id`, so post-run `stage_files/101_assumptions_discovery/**`, `stage_files/102_assumptions_apply/**`, and raw LLM call records are mirrored as well.
 
 ## MLflow Run And Trace Policy
 
