@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronDown, FileText, Quote } from "lucide-react";
+import { ChevronDown, FileSearch, FileText, Quote } from "lucide-react";
 
 import type { ArtifactField } from "@/lib/api";
 import { formatCityLabel } from "@/lib/utils";
@@ -10,6 +10,54 @@ import {
   fieldStatusStyle,
   humanizeField,
 } from "@/components/pipeline/status-style";
+
+/**
+ * Soft, non-authoritative "possible extraction gap" badge. The field couldn't be
+ * sourced, yet the corpus mentions its topic near a figure — so the data may
+ * exist in a form extraction missed. On hover it reveals the matched snippets so
+ * an auditor can judge whether the match is real. Internal troubleshooting only.
+ */
+function ExtractionGapHint({
+  label,
+  evidence,
+}: {
+  label: string;
+  evidence: string[];
+}) {
+  return (
+    <span className="group/hint relative inline-flex">
+      <span
+        tabIndex={0}
+        className="inline-flex cursor-help items-center gap-1.5 rounded-md bg-amber-50 px-2 py-1 text-[11px] font-medium text-amber-700 ring-1 ring-inset ring-amber-200 outline-none transition-colors hover:bg-amber-100 focus-visible:ring-2 focus-visible:ring-amber-400"
+      >
+        <FileSearch className="h-3 w-3" />
+        {label}
+      </span>
+      <span
+        role="tooltip"
+        className="pointer-events-none absolute left-0 top-full z-20 mt-1.5 hidden w-72 rounded-lg border border-slate-200 bg-white p-3 text-left shadow-lg group-hover/hint:block group-focus-within/hint:block"
+      >
+        <span className="block text-[11px] leading-relaxed text-slate-600">
+          This field wasn’t sourced, but the documents mention this topic near a
+          figure — it may exist in a form extraction missed.
+        </span>
+        {evidence.length > 0 ? (
+          <span className="mt-2 block space-y-1.5">
+            {evidence.map((snippet, i) => (
+              <span
+                key={i}
+                className="flex gap-1.5 rounded-md bg-amber-50/60 p-2 text-[11px] italic leading-relaxed text-slate-600 ring-1 ring-inset ring-amber-100"
+              >
+                <Quote className="mt-0.5 h-3 w-3 shrink-0 text-amber-300" />
+                <span>{snippet}</span>
+              </span>
+            ))}
+          </span>
+        ) : null}
+      </span>
+    </span>
+  );
+}
 
 function formatEstimate(estimate: NonNullable<ArtifactField["estimate"]>): string {
   const parts = [estimate.low, estimate.mid, estimate.high].filter(
@@ -40,7 +88,9 @@ export function FieldCard({ field, index = 0 }: FieldCardProps) {
 
   return (
     <div
-      className={`field-card-enter group rounded-xl border border-slate-200 border-l-[3px] ${style.border} ${style.tint} p-3.5 shadow-sm transition-shadow hover:shadow-md`}
+      // relative + hover:z lift the whole card (and its hint popover) above the
+      // sibling cards painted after it, so the popover never hides under them.
+      className={`field-card-enter group relative z-0 hover:z-30 rounded-xl border border-slate-200 border-l-[3px] ${style.border} ${style.tint} p-3.5 shadow-sm transition-shadow hover:shadow-md`}
       style={{ animationDelay: `${Math.min(index, 12) * 45}ms` }}
     >
       <button
@@ -86,14 +136,21 @@ export function FieldCard({ field, index = 0 }: FieldCardProps) {
         </div>
       </button>
 
-      {field.status === "non_estimable" && field.reason_label ? (
-        <div className="mt-2 inline-flex items-center gap-1.5 rounded-md bg-white/70 px-2 py-1 text-[11px] font-medium text-slate-600 ring-1 ring-inset ring-slate-200">
-          <span
-            className={`h-1.5 w-1.5 rounded-full ${
-              field.reason === "shape_mismatch" ? "bg-amber-500" : "bg-slate-400"
-            }`}
-          />
-          {field.reason_label}
+      {field.status === "non_estimable" &&
+      (field.reason_label || field.reason_hint) ? (
+        <div className="mt-2 flex flex-wrap items-center gap-1.5">
+          {field.reason_label ? (
+            <span className="inline-flex items-center gap-1.5 rounded-md bg-white/70 px-2 py-1 text-[11px] font-medium text-slate-600 ring-1 ring-inset ring-slate-200">
+              <span className="h-1.5 w-1.5 rounded-full bg-slate-400" />
+              {field.reason_label}
+            </span>
+          ) : null}
+          {field.reason_hint ? (
+            <ExtractionGapHint
+              label={field.reason_hint}
+              evidence={field.reason_hint_evidence ?? []}
+            />
+          ) : null}
         </div>
       ) : null}
 

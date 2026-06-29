@@ -91,14 +91,23 @@ const LAST_RUN_ID_STORAGE_KEY = "last_run_id";
 const LAST_CCC_CITY_STORAGE_KEY = "last_ccc_city";
 const CONTROLS_COLLAPSED_STORAGE_KEY = "build_controls_collapsed";
 
+// Statuses the standard-mode picker shows: completed answers + active builds
+// (queued/running, surfaced in italics so you can open and watch them stream).
+// Failed/stopped stay dev-mode-only.
+const STANDARD_PICKER_STATUSES = new Set([
+  "completed",
+  "completed_with_gaps",
+  "queued",
+  "running",
+]);
+
 function formatRunOptionLabel(run: RunSummary): string {
   const compactQuestion = run.question.replace(/\s+/g, " ").trim();
   const preview =
     compactQuestion.length > 56 ? `${compactQuestion.slice(0, 53)}...` : compactQuestion;
-  const statusPrefix =
-    run.status === "completed" || run.status === "completed_with_gaps"
-      ? ""
-      : `[${run.status}] `;
+  // Active + completed runs carry no bracket prefix — active ones get a "building…"
+  // tag from the picker instead. Failed/stopped (dev mode) keep the [status] tag.
+  const statusPrefix = STANDARD_PICKER_STATUSES.has(run.status) ? "" : `[${run.status}] `;
   const pickerLabel = run.picker_timestamp || run.run_id;
   return `${statusPrefix}${pickerLabel} | ${preview || "No question"}`;
 }
@@ -178,7 +187,10 @@ export default function Home() {
   const [scopeMode, setScopeMode] = useState<CityScopeMode>("all");
   const [analysisMode, setAnalysisMode] = useState<AnalysisMode>("aggregate");
   const [enrichmentEnabled, setEnrichmentEnabled] = useState(true);
-  const [webResearchEnabled, setWebResearchEnabled] = useState(false);
+  // Web research is on by default (matching the pipeline's standard behavior).
+  // Turning it off is an opt-out under Advanced; defaulting it off would quietly
+  // weaken answers and leave the external-search/audit surfaces empty.
+  const [webResearchEnabled, setWebResearchEnabled] = useState(true);
   const [cities, setCities] = useState<string[]>([]);
   const [selectedCities, setSelectedCities] = useState<string[]>([]);
   const [cityGroups, setCityGroups] = useState<CityGroup[]>([]);
@@ -368,33 +380,39 @@ export default function Home() {
       setIsLoadingRuns(true);
       setRunsError(null);
       try {
+        // Always pull in-progress runs from the backend; standard mode then
+        // keeps completed answers + active builds (queued/running) and drops
+        // failed/stopped. Dev mode shows everything.
         const payload = await fetchRuns({
-          includeAll: devFeatures.showIncompleteRuns,
+          includeAll: true,
           search: deferredRunSearchQuery,
           signal: controller.signal,
         });
         if (runListAbortControllerRef.current !== controller) {
           return null;
         }
+        const runs = devFeatures.showIncompleteRuns
+          ? payload.runs
+          : payload.runs.filter((run) => STANDARD_PICKER_STATUSES.has(run.status));
         setKnownRunsById((current) => {
           const next = { ...current };
-          payload.runs.forEach((run) => {
+          runs.forEach((run) => {
             next[run.run_id] = run;
           });
           return next;
         });
-        setAvailableRuns(payload.runs);
+        setAvailableRuns(runs);
         setSelectedExistingRunId((current) => {
           const preferred = (preferredRunId ?? current).trim();
           if (preferred) {
             return preferred;
           }
-          if (payload.runs.length > 0) {
-            return payload.runs[0].run_id;
+          if (runs.length > 0) {
+            return runs[0].run_id;
           }
           return "";
         });
-        return payload.runs;
+        return runs;
       } catch (error) {
         if (controller.signal.aborted) {
           return null;
@@ -1316,12 +1334,13 @@ export default function Home() {
                 </div>
                 <p className="text-xs text-slate-500">
                   View a past answer without re-running — search the list by question, date,
-                  run ID, or city (minor typos are tolerated).
+                  run ID, or city (minor typos are tolerated). Runs still building show in
+                  italics — open one to watch it stream.
                 </p>
                 {runsError ? <p className="text-xs text-red-600">{runsError}</p> : null}
                 {devFeatures.showIncompleteRuns ? (
                   <p className="text-xs text-slate-500">
-                    Dev mode keeps failed and in-progress runs in the picker.
+                    Dev mode also keeps failed and stopped runs in the picker.
                   </p>
                 ) : null}
               </div>

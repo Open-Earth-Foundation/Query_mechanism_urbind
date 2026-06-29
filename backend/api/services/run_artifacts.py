@@ -10,14 +10,24 @@ the live ``steps[]`` timeline does not expose:
 It also returns a lightweight per-stage summary (number, name, metrics) read
 from Mirco's unified ``stages/*.json`` records so the UI can show how data
 flowed through each stage.
+
+Artifacts are resolved through the run ``manifest.json`` aliases first (the same
+contract the other API readers rely on) and only fall back to the historical
+``stage_files/<stage>/<file>`` glob when no alias is present. Reads are
+best-effort but tracked: a missing artifact (normal when a stage is disabled)
+is distinguished from one that exists but could not be parsed, so consumers can
+tell "no data" apart from "artifact bundle could not be read."
 """
 
 from __future__ import annotations
 
 import json
 import logging
+import re
 from pathlib import Path
 from typing import Any
+
+from backend.utils.artifact_manifest import resolve_manifest_alias
 
 logger = logging.getLogger(__name__)
 
@@ -27,33 +37,41 @@ STATUS_ESTIMATED = "estimated"
 STATUS_NON_ESTIMABLE = "non_estimable"
 STATUS_UNRESOLVED = "unresolved"
 
+# Per-artifact read outcome surfaced via ``artifact_health``.
+HEALTH_OK = "ok"
+HEALTH_MISSING = "missing"
+HEALTH_UNREADABLE = "unreadable"
+
 # External-source quotes are raw markdown chunks (can be many KB). The audit UI
 # only needs a readable preview, so cap length and number per field.
 _MAX_QUOTE_CHARS = 240
 _MAX_SOURCES_PER_FIELD = 4
 
-
-def _clip_quote(value: Any) -> str | None:
-    """Collapse whitespace and clip an evidence quote to a readable preview."""
-    if not isinstance(value, str):
-        return None
-    cleaned = " ".join(value.split())
-    if not cleaned:
-        return None
-    if len(cleaned) <= _MAX_QUOTE_CHARS:
-        return cleaned
-    return cleaned[:_MAX_QUOTE_CHARS].rstrip() + "…"
-
-
-def _load_json(path: Path) -> Any | None:
-    """Best-effort JSON read; returns ``None`` on any failure."""
-    try:
-        if not path.exists():
-            return None
-        return json.loads(path.read_text(encoding="utf-8"))
-    except Exception:  # noqa: BLE001 - artifacts are advisory, never fatal
-        logger.debug("run_artifacts: could not read %s", path, exc_info=True)
-        return None
+# Logical artifact key -> (manifest alias, stage glob, filename). The alias is
+# the authoritative resolver; the glob is the legacy fallback for older runs (or
+# runs written before the alias existed).
+_ARTIFACT_SPECS: dict[str, tuple[str, str, str]] = {
+    "enrichment_bundle": (
+        "enrichment_enrichment_bundle",
+        "*enrichment*",
+        "enrichment_bundle.json",
+    ),
+    "external_audit": (
+        "enrichment_external_source_search_audit",
+        "*enrichment*",
+        "external_source_search_audit.json",
+    ),
+    "assumptions_bundle": (
+        "assumptions_assumptions_bundle",
+        "*assumptions*",
+        "assumptions_bundle.json",
+    ),
+    "accepted_excerpts": (
+        "markdown_accepted_excerpts",
+        "*markdown_extraction*",
+        "accepted_excerpts.json",
+    ),
+}
 
 
 def _find_stage_file(run_dir: Path, stage_glob: str, filename: str) -> Path | None:
@@ -68,10 +86,62 @@ def _find_stage_file(run_dir: Path, stage_glob: str, filename: str) -> Path | No
     return None
 
 
-def _build_classification_index(run_dir: Path) -> dict[str, dict[str, Any]]:
+class _ArtifactStore:
+    """Resolve + cache the audit artifacts and record how each read fared.
+
+    Resolution prefers the manifest alias (robust to stage-folder renames or
+    additional similarly named stages) and only globs ``stage_files`` when the
+    manifest has no entry. Each logical artifact is read at most once and its
+    outcome recorded in :attr:`health` (``ok`` / ``missing`` / ``unreadable``).
+    """
+
+    def __init__(self, run_dir: Path) -> None:
+        self.run_dir = run_dir
+        self._cache: dict[str, Any] = {}
+        self.health: dict[str, str] = {}
+
+    def _resolve(self, key: str) -> Path | None:
+        alias, stage_glob, filename = _ARTIFACT_SPECS[key]
+        return resolve_manifest_alias(self.run_dir, alias) or _find_stage_file(
+            self.run_dir, stage_glob, filename
+        )
+
+    def get(self, key: str) -> Any | None:
+        """Return the parsed artifact (or ``None``), recording read health."""
+        if key in self._cache:
+            return self._cache[key]
+        path = self._resolve(key)
+        data: Any | None = None
+        if path is None or not path.exists():
+            # Absent is expected when a stage was disabled — not a failure.
+            self.health[key] = HEALTH_MISSING
+        else:
+            try:
+                data = json.loads(path.read_text(encoding="utf-8"))
+                self.health[key] = HEALTH_OK
+            except Exception:  # noqa: BLE001 - artifacts are advisory, never fatal
+                # Present but unparseable: a real degradation worth surfacing.
+                logger.warning("run_artifacts: could not parse %s", path, exc_info=True)
+                self.health[key] = HEALTH_UNREADABLE
+        self._cache[key] = data
+        return data
+
+
+def _clip_quote(value: Any) -> str | None:
+    """Collapse whitespace and clip an evidence quote to a readable preview."""
+    if not isinstance(value, str):
+        return None
+    cleaned = " ".join(value.split())
+    if not cleaned:
+        return None
+    if len(cleaned) <= _MAX_QUOTE_CHARS:
+        return cleaned
+    return cleaned[:_MAX_QUOTE_CHARS].rstrip() + "…"
+
+
+def _build_classification_index(store: _ArtifactStore) -> dict[str, dict[str, Any]]:
     """Map field name -> {type, scope, rationale} from the enrichment manifest."""
-    path = _find_stage_file(run_dir, "*enrichment*", "enrichment_bundle.json")
-    data = _load_json(path) if path else None
+    data = store.get("enrichment_bundle")
     index: dict[str, dict[str, Any]] = {}
     if not isinstance(data, dict):
         return index
@@ -93,10 +163,9 @@ def _build_classification_index(run_dir: Path) -> dict[str, dict[str, Any]]:
     return index
 
 
-def _build_sources_index(run_dir: Path) -> dict[tuple[str, str], list[dict[str, Any]]]:
+def _build_sources_index(store: _ArtifactStore) -> dict[tuple[str, str], list[dict[str, Any]]]:
     """Map (city, field) -> list of source/evidence dicts from the external audit."""
-    path = _find_stage_file(run_dir, "*enrichment*", "external_source_search_audit.json")
-    data = _load_json(path) if path else None
+    data = store.get("external_audit")
     index: dict[tuple[str, str], list[dict[str, Any]]] = {}
     if not isinstance(data, dict):
         return index
@@ -136,13 +205,26 @@ def _build_sources_index(run_dir: Path) -> dict[tuple[str, str], list[dict[str, 
     return index
 
 
-# Why a field ended up non-estimable, derived from the upstream signals.
+# Why a field ended up non-estimable, derived from hard upstream signals only.
+# (A weaker "the corpus may hold this in a different shape" signal is surfaced
+# separately as a non-authoritative hint, never as one of these reason codes.)
 REASON_LABELS = {
     "too_few_peers": "Too few comparable cities",
     "found_not_validated": "Found, but not validated",
-    "shape_mismatch": "Source has related data, in a different shape",
     "no_source_data": "No source data found",
 }
+
+# Non-authoritative hint shown only on no-source-data fields: the corpus still
+# mentions this field's subject near a number, so the data may exist in a form
+# the extractor did not capture (a possible extraction gap, not a true absence).
+# This rests on a broad stem-overlap heuristic, so it is presented as a soft
+# "maybe" — always alongside the raw matched snippet so an auditor can judge it.
+SHAPE_HINT_LABEL = "Possible extraction gap"
+
+# How many corpus snippets to keep per topic stem / per field hint, and how long
+# each snippet may be before clipping.
+_MAX_HINT_EVIDENCE = 3
+_MAX_SNIPPET_CHARS = 160
 
 # Structural / generic tokens that don't identify a field's subject matter.
 _TOPIC_STOPWORDS = {
@@ -151,11 +233,9 @@ _TOPIC_STOPWORDS = {
 }
 
 
-def _build_evidence_counts(run_dir: Path) -> dict[tuple[str, str], dict[str, int]]:
+def _build_evidence_counts(store: _ArtifactStore) -> dict[tuple[str, str], dict[str, int]]:
     """Per (city, field): how many external candidates were found vs validated."""
-    data = _load_json(
-        _find_stage_file(run_dir, "*enrichment*", "external_source_search_audit.json")
-    )
+    data = store.get("external_audit")
     counts: dict[tuple[str, str], dict[str, int]] = {}
     if not isinstance(data, dict):
         return counts
@@ -180,18 +260,28 @@ def _build_evidence_counts(run_dir: Path) -> dict[tuple[str, str], dict[str, int
     return counts
 
 
-def _build_numeric_topics(run_dir: Path) -> set[str]:
-    """5-char stems of words that appear near a number in the CCC excerpts.
+def _clip_snippet(text: str, start: int, end: int) -> str | None:
+    """Return a readable corpus fragment around a matched word."""
+    lo = max(0, start - 80)
+    hi = min(len(text), end + 80)
+    fragment = " ".join(text[lo:hi].split())
+    if not fragment:
+        return None
+    fragment = f"{'…' if lo > 0 else ''}{fragment}{'…' if hi < len(text) else ''}"
+    if len(fragment) > _MAX_SNIPPET_CHARS:
+        fragment = fragment[:_MAX_SNIPPET_CHARS].rstrip() + "…"
+    return fragment
 
-    Used to flag "the corpus has this topic, just in a different shape" — e.g.
-    excerpts say "400 new charging stations" so `charg` is a numeric topic even
-    though no `public_ac_charger_count` value exists.
+
+def _build_numeric_context(store: _ArtifactStore) -> dict[str, list[str]]:
+    """Map topic stem -> example corpus snippets where it sits near a number.
+
+    Powers the soft "possible extraction gap" hint *and* its hover evidence —
+    e.g. excerpts say "400 new charging stations" so ``charg`` maps to that
+    sentence. Deliberately broad, which is why it only ever feeds a
+    non-authoritative hint shown with the raw snippet attached.
     """
-    import re
-
-    data = _load_json(
-        _find_stage_file(run_dir, "*markdown_extraction*", "accepted_excerpts.json")
-    )
+    data = store.get("accepted_excerpts")
     blobs: list[str] = []
 
     def _walk(value: Any) -> None:
@@ -205,13 +295,21 @@ def _build_numeric_topics(run_dir: Path) -> set[str]:
                 _walk(item)
 
     _walk(data)
-    text = " ".join(blobs).lower()
-    topics: set[str] = set()
-    for match in re.finditer(r"[a-z]{4,}", text):
-        window = text[max(0, match.start() - 40) : match.end() + 40]
-        if any(ch.isdigit() for ch in window):
-            topics.add(match.group()[:5])
-    return topics
+    context: dict[str, list[str]] = {}
+    for blob in blobs:
+        # Lowercasing preserves length, so match indices map back onto ``blob``.
+        lowered = blob.lower()
+        for match in re.finditer(r"[a-z]{4,}", lowered):
+            window = lowered[max(0, match.start() - 40) : match.end() + 40]
+            if not any(ch.isdigit() for ch in window):
+                continue
+            bucket = context.setdefault(match.group()[:5], [])
+            if len(bucket) >= _MAX_HINT_EVIDENCE:
+                continue
+            snippet = _clip_snippet(blob, match.start(), match.end())
+            if snippet and snippet not in bucket:
+                bucket.append(snippet)
+    return context
 
 
 def _field_topic_stems(field_name: str) -> set[str]:
@@ -223,21 +321,41 @@ def _field_topic_stems(field_name: str) -> set[str]:
     }
 
 
-def _classify_reason(
-    field_name: str,
-    counts: dict[str, int],
-    numeric_topics: set[str],
-) -> tuple[str, str]:
-    """Pick the most informative reason a field could not be estimated."""
+def _classify_reason(counts: dict[str, int]) -> tuple[str, str]:
+    """Pick the authoritative reason a field could not be estimated.
+
+    Based on hard evidence-count signals only. The "data exists in a different
+    shape" intuition is intentionally excluded here and surfaced as a soft hint.
+    """
     if counts.get("validated", 0) > 0:
         code = "too_few_peers"
-    elif _field_topic_stems(field_name) & numeric_topics:
-        code = "shape_mismatch"
     elif counts.get("found", 0) > 0:
         code = "found_not_validated"
     else:
         code = "no_source_data"
     return code, REASON_LABELS[code]
+
+
+def _shape_evidence(
+    field_name: str, numeric_context: dict[str, list[str]]
+) -> list[str]:
+    """Corpus snippets suggesting the field's topic appears near a figure.
+
+    Non-empty only when the field's subject stems overlap the numeric-context
+    map — these are the raw fragments shown on hover so an auditor can decide
+    whether the match is a real extraction gap or heuristic noise.
+    """
+    snippets: list[str] = []
+    seen: set[str] = set()
+    for stem in sorted(_field_topic_stems(field_name)):
+        for snippet in numeric_context.get(stem, []):
+            if snippet in seen:
+                continue
+            seen.add(snippet)
+            snippets.append(snippet)
+            if len(snippets) >= _MAX_HINT_EVIDENCE:
+                return snippets
+    return snippets
 
 
 def _normalized_field(
@@ -253,6 +371,8 @@ def _normalized_field(
     estimate: dict[str, Any] | None = None,
     reason: str | None = None,
     reason_label: str | None = None,
+    reason_hint: str | None = None,
+    reason_hint_evidence: list[str] | None = None,
 ) -> dict[str, Any]:
     """Shape one card record."""
     return {
@@ -268,20 +388,21 @@ def _normalized_field(
         "sources": sources,
         "reason": reason,
         "reason_label": reason_label,
+        "reason_hint": reason_hint,
+        "reason_hint_evidence": reason_hint_evidence or [],
     }
 
 
-def _build_fields(run_dir: Path) -> list[dict[str, Any]]:
+def _build_fields(store: _ArtifactStore) -> list[dict[str, Any]]:
     """Merge assumptions + non-estimable records into normalized card records."""
-    path = _find_stage_file(run_dir, "*assumptions*", "assumptions_bundle.json")
-    bundle = _load_json(path) if path else None
+    bundle = store.get("assumptions_bundle")
     if not isinstance(bundle, dict):
         return []
 
-    classifications = _build_classification_index(run_dir)
-    sources_index = _build_sources_index(run_dir)
-    evidence_counts = _build_evidence_counts(run_dir)
-    numeric_topics = _build_numeric_topics(run_dir)
+    classifications = _build_classification_index(store)
+    sources_index = _build_sources_index(store)
+    evidence_counts = _build_evidence_counts(store)
+    numeric_context = _build_numeric_context(store)
     fields: list[dict[str, Any]] = []
 
     for record in bundle.get("assumptions", []) or []:
@@ -323,9 +444,16 @@ def _build_fields(run_dir: Path) -> list[dict[str, Any]]:
         if not city or not field_name:
             continue
         reason_code, reason_label = _classify_reason(
-            field_name,
-            evidence_counts.get((city, field_name), {}),
-            numeric_topics,
+            evidence_counts.get((city, field_name), {})
+        )
+        # The extraction-gap hint is only meaningful (and non-redundant) when we
+        # found NO source data at all yet the corpus still mentions the topic
+        # near a figure. For found/validated fields it would just restate what we
+        # already know, so scope it to no_source_data.
+        hint_evidence = (
+            _shape_evidence(field_name, numeric_context)
+            if reason_code == "no_source_data"
+            else []
         )
         fields.append(
             _normalized_field(
@@ -339,6 +467,8 @@ def _build_fields(run_dir: Path) -> list[dict[str, Any]]:
                 recommendation=record.get("recommendation"),
                 reason=reason_code,
                 reason_label=reason_label,
+                reason_hint=SHAPE_HINT_LABEL if hint_evidence else None,
+                reason_hint_evidence=hint_evidence,
             )
         )
 
@@ -353,7 +483,11 @@ def _build_stages(run_dir: Path) -> list[dict[str, Any]]:
         return []
     stages: list[dict[str, Any]] = []
     for stage_path in sorted(stages_dir.glob("*.json")):
-        data = _load_json(stage_path)
+        try:
+            data = json.loads(stage_path.read_text(encoding="utf-8"))
+        except Exception:  # noqa: BLE001 - one bad stage record never blocks the rest
+            logger.debug("run_artifacts: could not read %s", stage_path, exc_info=True)
+            continue
         if not isinstance(data, dict):
             continue
         decisions = data.get("decisions")
@@ -379,17 +513,13 @@ def _as_int(value: Any) -> int:
 
 
 def _build_enrichment_steps(
-    run_dir: Path,
+    store: _ArtifactStore,
     reason_breakdown: dict[str, int] | None = None,
 ) -> list[dict[str, Any]]:
     """Summarize the three enrichment sub-steps so the audit shows where the
     chain breaks (e.g. web findings that never validate into anchors)."""
-    enrichment = _load_json(
-        _find_stage_file(run_dir, "*enrichment*", "enrichment_bundle.json")
-    )
-    assumptions = _load_json(
-        _find_stage_file(run_dir, "*assumptions*", "assumptions_bundle.json")
-    )
+    enrichment = store.get("enrichment_bundle")
+    assumptions = store.get("assumptions_bundle")
     meta = enrichment.get("meta", {}) if isinstance(enrichment, dict) else {}
     no_evidence = (
         enrichment.get("external_no_evidence", []) if isinstance(enrichment, dict) else []
@@ -432,7 +562,10 @@ def _build_enrichment_steps(
                 "validated_evidence": validated,
                 "no_evidence": no_evidence_count,
             },
-            # The classic break: lots of hits, none usable as anchors.
+            # The classic break: lots of hits, none usable as anchors. This is a
+            # scoped statement about the external/web step only — it does NOT
+            # claim the downstream assumptions step failed, which can still
+            # estimate from peer/national data.
             "warn": (
                 "Found evidence but none validated into usable anchors."
                 if web_findings > 0 and validated == 0
@@ -461,11 +594,14 @@ def _build_enrichment_steps(
 _MAX_UNUSED_CANDIDATES = 40
 
 
-def _build_gap_analysis(run_dir: Path) -> dict[str, Any]:
-    """Per-field classification + rationale and per-city gap priorities."""
-    enrichment = _load_json(
-        _find_stage_file(run_dir, "*enrichment*", "enrichment_bundle.json")
-    )
+def _build_gap_analysis(store: _ArtifactStore) -> dict[str, Any]:
+    """Per-field classification + rationale and per-city gap priorities.
+
+    Sourced from the enrichment ``field_manifest`` (the full classified set),
+    independent of which fields later survived into assumptions — so a field
+    dropped before the assumptions stage still shows here.
+    """
+    enrichment = store.get("enrichment_bundle")
     fields: list[dict[str, Any]] = []
     city_gaps: list[dict[str, Any]] = []
     if not isinstance(enrichment, dict):
@@ -496,11 +632,9 @@ def _build_gap_analysis(run_dir: Path) -> dict[str, Any]:
     return {"fields": fields, "city_gaps": city_gaps}
 
 
-def _build_external_search(run_dir: Path) -> dict[str, Any]:
+def _build_external_search(store: _ArtifactStore) -> dict[str, Any]:
     """Validated anchors, found-but-unused candidates, and no-evidence records."""
-    data = _load_json(
-        _find_stage_file(run_dir, "*enrichment*", "external_source_search_audit.json")
-    )
+    data = store.get("external_audit")
     if not isinstance(data, dict):
         return {"validated": [], "unused": [], "unused_total": 0, "no_evidence": []}
 
@@ -549,18 +683,28 @@ def _build_external_search(run_dir: Path) -> dict[str, Any]:
 
 def build_run_artifacts(run_dir: Path) -> dict[str, Any]:
     """Assemble the normalized artifact payload for one run directory."""
-    fields = _build_fields(run_dir)
+    store = _ArtifactStore(run_dir)
+    fields = _build_fields(store)
     reason_breakdown: dict[str, int] = {}
     for field in fields:
         code = field.get("reason")
         if code:
             reason_breakdown[code] = reason_breakdown.get(code, 0) + 1
+    # Touch the remaining artifacts so their health is recorded too.
+    gap_analysis = _build_gap_analysis(store)
+    external_search = _build_external_search(store)
+    enrichment_steps = _build_enrichment_steps(store, reason_breakdown)
+    artifact_health = {key: store.health.get(key, HEALTH_MISSING) for key in _ARTIFACT_SPECS}
     return {
         "fields": fields,
         "stages": _build_stages(run_dir),
-        "enrichment_steps": _build_enrichment_steps(run_dir, reason_breakdown),
-        "gap_analysis": _build_gap_analysis(run_dir),
-        "external_search": _build_external_search(run_dir),
+        "enrichment_steps": enrichment_steps,
+        "gap_analysis": gap_analysis,
+        "external_search": external_search,
+        "artifact_health": artifact_health,
+        # ``degraded`` means an artifact existed but could not be parsed — a real
+        # read regression, distinct from a stage simply being absent/disabled.
+        "degraded": any(v == HEALTH_UNREADABLE for v in artifact_health.values()),
     }
 
 

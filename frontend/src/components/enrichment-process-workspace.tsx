@@ -37,15 +37,17 @@ const STEP_NUMBER: Record<string, number> = {
   assumptions: 3,
 };
 
-const REASON_META: Record<string, { label: string; dot: string }> = {
-  shape_mismatch: {
-    label: "source has related data, in a different shape",
-    dot: "bg-amber-500",
-  },
-  found_not_validated: { label: "found, but not validated", dot: "bg-rose-400" },
-  no_source_data: { label: "no source data found", dot: "bg-slate-400" },
-  too_few_peers: { label: "too few comparable cities", dot: "bg-sky-400" },
+// Visual styling only — the human label is owned by the backend (reason_label)
+// and read off the field records so the rollup never diverges from the cards.
+const REASON_DOT: Record<string, string> = {
+  found_not_validated: "bg-rose-400",
+  no_source_data: "bg-slate-400",
+  too_few_peers: "bg-sky-400",
 };
+
+function humanizeReasonCode(code: string): string {
+  return code.replace(/_/g, " ");
+}
 
 function WarnBadge({ text }: { text: string }) {
   return (
@@ -114,15 +116,16 @@ export function EnrichmentProcessWorkspace({
     return groups;
   }, [data]);
 
-  // One representative classification per distinct field name, for gap analysis.
-  const distinctClassifications = useMemo(() => {
-    const seen = new Map<string, { field: string; type: string | null }>();
+  // Map reason code -> the backend's label, read off the field records so the
+  // rollup chips always match the individual cards (single source of truth).
+  const reasonLabelByCode = useMemo(() => {
+    const map = new Map<string, string>();
     for (const field of data?.fields ?? []) {
-      if (!seen.has(field.field)) {
-        seen.set(field.field, { field: field.field, type: field.type ?? null });
+      if (field.reason && field.reason_label && !map.has(field.reason)) {
+        map.set(field.reason, field.reason_label);
       }
     }
-    return [...seen.values()];
+    return map;
   }, [data]);
 
   const statusCounts = useMemo(
@@ -140,25 +143,16 @@ export function EnrichmentProcessWorkspace({
 
   function renderStepBody(step: EnrichmentStep) {
     if (step.key === "gap_analysis") {
+      // Sourced from the enrichment field_manifest (the full classified set),
+      // not reconstructed from the assumptions-derived `fields` — so a field
+      // dropped before the assumptions stage still appears here.
       const gapFields = data?.gap_analysis?.fields ?? [];
       const cityGaps = data?.gap_analysis?.city_gaps ?? [];
       if (gapFields.length === 0) {
         return (
-          <div className="flex flex-wrap gap-1.5">
-            {distinctClassifications.map((entry) => (
-              <span
-                key={entry.field}
-                className="inline-flex items-center gap-1.5 rounded-md border border-slate-200 bg-white px-2 py-1 text-xs text-slate-600"
-              >
-                <span className="font-medium text-slate-700">
-                  {humanizeField(entry.field)}
-                </span>
-                {entry.type ? (
-                  <span className="text-slate-400">{entry.type.replace(/_/g, " ")}</span>
-                ) : null}
-              </span>
-            ))}
-          </div>
+          <p className="text-xs text-slate-500">
+            Field-classification detail isn’t available for this run.
+          </p>
         );
       }
       return (
@@ -235,12 +229,11 @@ export function EnrichmentProcessWorkspace({
           {step.warn ? (
             <div className="flex items-start gap-2 rounded-md border border-amber-200 bg-amber-50 p-3 text-amber-900">
               <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0" />
-              <p>
-                Search returned findings, but only{" "}
-                <span className="font-medium">{validated.length}</span> validated into a
-                usable anchor — so the assumptions step had little to estimate from. This is
-                the point in the chain to investigate.
-              </p>
+              {/* Render the backend's scoped warning verbatim. It describes the
+                  external/web step only — the downstream assumptions step can
+                  still estimate from peer/national data, so we don't claim the
+                  whole chain failed here. */}
+              <p>{step.warn}</p>
             </div>
           ) : null}
 
@@ -346,15 +339,17 @@ export function EnrichmentProcessWorkspace({
             <p className="text-xs font-medium text-slate-500">Why fields broke</p>
             <div className="flex flex-wrap gap-1.5">
               {breakdownEntries.map(([code, count]) => {
-                const meta = REASON_META[code] ?? { label: code, dot: "bg-slate-400" };
+                const label =
+                  reasonLabelByCode.get(code) ?? humanizeReasonCode(code);
+                const dot = REASON_DOT[code] ?? "bg-slate-400";
                 return (
                   <span
                     key={code}
                     className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-2.5 py-0.5 text-xs text-slate-600"
                   >
-                    <span className={`h-1.5 w-1.5 rounded-full ${meta.dot}`} />
+                    <span className={`h-1.5 w-1.5 rounded-full ${dot}`} />
                     <span className="font-semibold text-slate-700">{count}</span>{" "}
-                    {meta.label}
+                    {label.toLowerCase()}
                   </span>
                 );
               })}
@@ -459,9 +454,22 @@ export function EnrichmentProcessWorkspace({
           </div>
         ) : null}
 
+        {data?.degraded ? (
+          <div className="flex items-start gap-2 rounded-md border border-amber-300 bg-amber-50 p-3 text-sm text-amber-900">
+            <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0" />
+            <p>
+              Some run artifacts exist but couldn’t be read, so this view may be
+              incomplete. This is an artifact-read problem, not necessarily a
+              pipeline failure.
+            </p>
+          </div>
+        ) : null}
+
         {data && data.enrichment_steps.length === 0 ? (
           <div className="rounded-md border border-dashed border-slate-300 bg-white p-8 text-center text-sm text-slate-600">
-            No enrichment ran for this run (it may have been disabled).
+            {data.degraded
+              ? "Enrichment artifacts couldn’t be read for this run."
+              : "No enrichment ran for this run (it may have been disabled)."}
           </div>
         ) : null}
 
@@ -470,13 +478,15 @@ export function EnrichmentProcessWorkspace({
           return (
             <section
               key={step.key}
-              className="overflow-hidden rounded-xl border border-slate-200"
+              // No overflow-hidden: a field card's hover popover needs to escape
+              // this box. Corners are rounded on the header/body instead.
+              className="rounded-xl border border-slate-200"
             >
               <button
                 type="button"
                 onClick={() => toggleStep(step.key)}
                 aria-expanded={open}
-                className="flex w-full items-center gap-3 px-4 py-3 text-left transition hover:bg-slate-50"
+                className={`flex w-full items-center gap-3 px-4 py-3 text-left transition hover:bg-slate-50 rounded-t-xl ${open ? "" : "rounded-b-xl"}`}
               >
                 <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-100 text-xs font-semibold text-slate-600">
                   {STEP_NUMBER[step.key] ?? "•"}
@@ -491,7 +501,7 @@ export function EnrichmentProcessWorkspace({
                 />
               </button>
               {open ? (
-                <div className="border-t border-slate-100 bg-slate-50/40 px-4 py-3.5">
+                <div className="border-t border-slate-100 bg-slate-50/40 px-4 py-3.5 rounded-b-xl">
                   {renderStepBody(step)}
                 </div>
               ) : null}

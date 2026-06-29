@@ -230,6 +230,11 @@ class ArtifactField(BaseModel):
     sources: list[ArtifactFieldSource] = Field(default_factory=list)
     reason: str | None = None
     reason_label: str | None = None
+    # Non-authoritative "possible extraction gap" hint (shown only on
+    # no-source-data fields), kept distinct from the reason code because it rests
+    # on a broad heuristic. The matched corpus snippets back it on hover.
+    reason_hint: str | None = None
+    reason_hint_evidence: list[str] = Field(default_factory=list)
 
 
 class ArtifactStage(BaseModel):
@@ -325,6 +330,12 @@ class RunArtifactsResponse(BaseModel):
     enrichment_steps: list[EnrichmentStep] = Field(default_factory=list)
     gap_analysis: GapAnalysisDetail | None = None
     external_search: ExternalSearchDetail | None = None
+    # Per-artifact read outcome ("ok" / "missing" / "unreadable") so consumers
+    # can tell "no data" apart from "artifact bundle could not be read".
+    artifact_health: dict[str, str] = Field(default_factory=dict)
+    # True when an artifact existed but could not be parsed (a read regression),
+    # distinct from a stage simply being absent/disabled.
+    degraded: bool = False
 
 
 class RunReferenceResponse(BaseModel):

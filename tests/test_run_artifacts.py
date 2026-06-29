@@ -37,6 +37,12 @@ def _make_run_dir(tmp_path: Path) -> Path:
                         "scope": "mixed",
                         "rationale": "n/a",
                     },
+                    {
+                        "field": "tram_line_length",
+                        "classification": "estimable_numerical",
+                        "scope": "mixed",
+                        "rationale": "Tram length is numeric.",
+                    },
                 ]
             },
             "external_no_evidence": [{"city": "Aachen", "field": "secret_unrelated_metric"}],
@@ -61,13 +67,19 @@ def _make_run_dir(tmp_path: Path) -> Path:
         },
     )
 
-    # Excerpts mention "charging" near a number -> shape-mismatch topic.
+    # Excerpts mention "charging" and "tram" near numbers -> numeric topics that
+    # power the soft extraction-gap hint (the tram one drives a no-source field).
     _write(
         extraction / "accepted_excerpts.json",
-        {"excerpts": [{"text": "The city will deploy 400 new charging stations by 2030."}]},
+        {
+            "excerpts": [
+                {"text": "The city will deploy 400 new charging stations by 2030."},
+                {"text": "Plans add 12 km of new tram line across the centre."},
+            ]
+        },
     )
 
-    # Assumptions: both fields non-estimable.
+    # Assumptions: all three fields non-estimable.
     _write(
         assumptions / "assumptions_bundle.json",
         {
@@ -85,6 +97,12 @@ def _make_run_dir(tmp_path: Path) -> Path:
                     "explanation": "Only 0 peer values available.",
                     "recommendation": "n/a",
                 },
+                {
+                    "city": "Aachen",
+                    "field_name": "tram_line_length",
+                    "explanation": "Only 0 peer values available.",
+                    "recommendation": "Check transit plan.",
+                },
             ],
         },
     )
@@ -96,20 +114,39 @@ def test_reason_classification_and_break_warning(tmp_path: Path) -> None:
 
     by_field = {f["field"]: f for f in payload["fields"]}
     assert by_field["public_ac_charger_count"]["status"] == "non_estimable"
-    # Corpus has "charging" + a number, so this is a shape mismatch, not no-data.
-    assert by_field["public_ac_charger_count"]["reason"] == "shape_mismatch"
-    # No candidates and no matching corpus topic -> genuinely no source data.
+    # One candidate was found (not validated) -> authoritative reason is
+    # found_not_validated. The extraction-gap hint is scoped to no_source_data,
+    # so even though the corpus mentions "charging" it does NOT show here.
+    assert by_field["public_ac_charger_count"]["reason"] == "found_not_validated"
+    assert by_field["public_ac_charger_count"]["reason_hint"] is None
+    assert by_field["public_ac_charger_count"]["reason_hint_evidence"] == []
+    # No candidates and no matching corpus topic -> genuinely no source data,
+    # and no hint (nothing in the corpus to point at).
     assert by_field["secret_unrelated_metric"]["reason"] == "no_source_data"
+    assert by_field["secret_unrelated_metric"]["reason_hint"] is None
+    # No source data AND the corpus mentions "tram" near a figure -> the soft
+    # extraction-gap hint fires, carrying the matched snippet as evidence.
+    tram = by_field["tram_line_length"]
+    assert tram["reason"] == "no_source_data"
+    assert tram["reason_hint"] == "Possible extraction gap"
+    assert tram["reason_hint_evidence"]
+    assert any("tram" in snippet.lower() for snippet in tram["reason_hint_evidence"])
 
     steps = {s["key"]: s for s in payload["enrichment_steps"]}
     # Found web evidence but nothing validated -> the chain breaks here.
     assert steps["external_web"]["warn"]
     assert steps["external_web"]["metrics"]["web_findings"] == 5
     assert steps["external_web"]["metrics"]["validated_evidence"] == 0
-    # Rollup counts the reasons.
+    # Rollup counts the authoritative reason codes (shape_mismatch is gone).
     breakdown = steps["assumptions"]["metrics"]["reason_breakdown"]
-    assert breakdown["shape_mismatch"] == 1
-    assert breakdown["no_source_data"] == 1
+    assert breakdown["found_not_validated"] == 1
+    assert breakdown["no_source_data"] == 2
+    assert "shape_mismatch" not in breakdown
+
+    # Both artifacts read cleanly -> healthy, not degraded.
+    assert payload["artifact_health"]["enrichment_bundle"] == "ok"
+    assert payload["artifact_health"]["assumptions_bundle"] == "ok"
+    assert payload["degraded"] is False
 
 
 def test_gap_and_external_detail(tmp_path: Path) -> None:
@@ -128,3 +165,55 @@ def test_gap_and_external_detail(tmp_path: Path) -> None:
     assert {(n["city"], n["field"]) for n in ext["no_evidence"]} == {
         ("Aachen", "secret_unrelated_metric")
     }
+
+
+def test_manifest_alias_takes_precedence_over_glob(tmp_path: Path) -> None:
+    run = tmp_path / "aliased_run"
+    # Write the assumptions bundle in a NON-conventional location that the
+    # stage-glob fallback would never find, and point the manifest alias at it.
+    relocated = run / "relocated" / "assumptions_bundle.json"
+    _write(
+        relocated,
+        {
+            "assumptions": [],
+            "non_estimable": [
+                {"city": "Aachen", "field_name": "aliased_field", "explanation": "x"}
+            ],
+        },
+    )
+    _write(
+        run / "manifest.json",
+        {"aliases": {"assumptions_assumptions_bundle": {"path": "relocated/assumptions_bundle.json"}}},
+    )
+
+    payload = build_run_artifacts(run)
+
+    # Resolved purely via the manifest alias — no stage_files/*assumptions* dir.
+    assert payload["artifact_health"]["assumptions_bundle"] == "ok"
+    assert {f["field"] for f in payload["fields"]} == {"aliased_field"}
+
+
+def test_unreadable_artifact_marks_degraded(tmp_path: Path) -> None:
+    run = _make_run_dir(tmp_path)
+    # Corrupt the assumptions bundle: present on disk but not valid JSON.
+    bundle = run / "stage_files" / "010_assumptions" / "assumptions_bundle.json"
+    bundle.write_text("{ not json", encoding="utf-8")
+
+    payload = build_run_artifacts(run)
+
+    # A parse failure is surfaced as "unreadable" (not "missing") and flips the
+    # top-level degraded flag, so consumers can distinguish it from a disabled
+    # stage that simply never wrote the file.
+    assert payload["artifact_health"]["assumptions_bundle"] == "unreadable"
+    assert payload["degraded"] is True
+    # Other artifacts still read fine.
+    assert payload["artifact_health"]["enrichment_bundle"] == "ok"
+
+
+def test_missing_artifact_is_not_degraded(tmp_path: Path) -> None:
+    # An empty run dir (no stage files at all) is "missing" everywhere, which is
+    # the normal disabled-stage case — not a degradation.
+    payload = build_run_artifacts(tmp_path / "empty_run")
+
+    assert set(payload["artifact_health"].values()) == {"missing"}
+    assert payload["degraded"] is False

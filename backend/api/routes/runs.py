@@ -408,6 +408,8 @@ def get_run_artifacts(run_id: str, request: Request) -> RunArtifactsResponse:
         enrichment_steps=payload["enrichment_steps"],
         gap_analysis=payload["gap_analysis"],
         external_search=payload["external_search"],
+        artifact_health=payload["artifact_health"],
+        degraded=payload["degraded"],
     )
 
 

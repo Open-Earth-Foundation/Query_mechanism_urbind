@@ -129,6 +129,10 @@ export interface ArtifactField {
   sources: ArtifactFieldSource[];
   reason?: string | null;
   reason_label?: string | null;
+  // Non-authoritative "possible extraction gap" hint + the matched corpus
+  // snippets that back it (shown on hover).
+  reason_hint?: string | null;
+  reason_hint_evidence?: string[] | null;
 }
 
 export interface ArtifactStage {
@@ -204,6 +208,10 @@ export interface RunArtifactsResponse {
   enrichment_steps: EnrichmentStep[];
   gap_analysis?: GapAnalysisDetail | null;
   external_search?: ExternalSearchDetail | null;
+  // Per-artifact read outcome ("ok" / "missing" / "unreadable").
+  artifact_health?: Record<string, string> | null;
+  // True when an artifact existed but could not be parsed (a read regression).
+  degraded?: boolean | null;
 }
 
 export interface RunDiagnosticsArtifactPaths {

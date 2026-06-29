@@ -20,11 +20,12 @@ import { formatCityLabel } from "@/lib/utils";
 
 const TERMINAL_STEP_STATUSES = new Set(["completed", "skipped", "error"]);
 
-const REASON_LABEL: Record<string, { label: string; dot: string }> = {
-  shape_mismatch: { label: "different shape", dot: "bg-amber-500" },
-  found_not_validated: { label: "found, not validated", dot: "bg-rose-400" },
-  no_source_data: { label: "no source data", dot: "bg-slate-400" },
-  too_few_peers: { label: "too few peers", dot: "bg-sky-400" },
+// Visual styling only — the human label is owned by the backend (reason_label)
+// and read off the field records so this chip never drifts from the cards.
+const REASON_DOT: Record<string, string> = {
+  found_not_validated: "bg-rose-400",
+  no_source_data: "bg-slate-400",
+  too_few_peers: "bg-sky-400",
 };
 
 function StepIcon({ status }: { status: string }) {
@@ -272,17 +273,27 @@ export function LiveBuildTimeline({
       const breakdown = (asm?.metrics?.reason_breakdown ?? {}) as Record<string, number>;
       const entries = Object.entries(breakdown).filter(([, n]) => n > 0);
       if (entries.length > 0) {
+        // Labels come from the backend reason_label on the field records, so
+        // this rollup always matches the per-field cards and the audit view.
+        const labelByCode = new Map<string, string>();
+        for (const f of artifacts?.fields ?? []) {
+          if (f.reason && f.reason_label && !labelByCode.has(f.reason)) {
+            labelByCode.set(f.reason, f.reason_label);
+          }
+        }
         return (
           <div className="flex flex-wrap gap-1">
             {entries.map(([code, n]) => {
-              const meta = REASON_LABEL[code] ?? { label: code, dot: "bg-slate-400" };
+              const label = labelByCode.get(code) ?? code.replace(/_/g, " ");
+              const dot = REASON_DOT[code] ?? "bg-slate-400";
               return (
                 <span
                   key={code}
                   className="inline-flex items-center gap-1 rounded-full border border-slate-200 bg-white px-2 py-0.5 text-[11px] text-slate-600"
                 >
-                  <span className={`h-1.5 w-1.5 rounded-full ${meta.dot}`} />
-                  <span className="font-semibold text-slate-700">{n}</span> {meta.label}
+                  <span className={`h-1.5 w-1.5 rounded-full ${dot}`} />
+                  <span className="font-semibold text-slate-700">{n}</span>{" "}
+                  {label.toLowerCase()}
                 </span>
               );
             })}

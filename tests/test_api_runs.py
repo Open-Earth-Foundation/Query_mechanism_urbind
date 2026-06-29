@@ -1691,6 +1691,8 @@ def test_api_run_artifacts_returns_serialized_artifact_contract(tmp_path: Path) 
             ],
             "reason": None,
             "reason_label": None,
+            "reason_hint": None,
+            "reason_hint_evidence": [],
         }
     ]
     assert payload["stages"] == [
@@ -1738,7 +1740,12 @@ def test_api_run_artifacts_returns_serialized_artifact_contract(tmp_path: Path) 
     ]
 
 
-def test_api_run_artifacts_returns_conflict_while_running(tmp_path: Path) -> None:
+def test_api_run_artifacts_serves_in_progress_runs(tmp_path: Path) -> None:
+    # The artifacts endpoint intentionally serves in-progress runs (200, not
+    # 409): the live-build view polls it during a run to stream each stage's
+    # detail as the files land. The assembler tolerates missing stage files, so
+    # a still-running run returns the contract shape with whatever exists so far
+    # (here: empty, since no stage_files were written yet).
     runs_dir = tmp_path / "output"
     markdown_dir = tmp_path / "documents"
     markdown_dir.mkdir(parents=True, exist_ok=True)
@@ -1753,8 +1760,16 @@ def test_api_run_artifacts_returns_conflict_while_running(tmp_path: Path) -> Non
     app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
     with TestClient(app) as client:
         response = client.get("/api/v1/runs/run-artifacts-running/artifacts")
-        assert response.status_code == 409
-        assert response.json()["detail"] == "Run `run-artifacts-running` is still running."
+        assert response.status_code == 200
+        payload = response.json()
+
+    assert payload["run_id"] == "run-artifacts-running"
+    assert payload["status"] == "running"
+    assert payload["fields"] == []
+    # No artifacts written yet -> every tracked artifact is "missing" (a normal
+    # in-progress state), which must NOT flip the degraded flag.
+    assert set(payload["artifact_health"].values()) == {"missing"}
+    assert payload["degraded"] is False
 
 
 def test_api_output_and_context_resolve_stale_container_artifact_paths(
