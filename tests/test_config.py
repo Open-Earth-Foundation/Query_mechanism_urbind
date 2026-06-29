@@ -462,6 +462,7 @@ def test_load_config_applies_mlflow_defaults(
     tmp_path: Path,
 ) -> None:
     """MLflow observability is optional and disabled by default."""
+    monkeypatch.setenv("PYTHON_DOTENV_DISABLED", "true")
     for key in (
         "MLFLOW_ENABLED",
         "MLFLOW_TRACKING_URI",

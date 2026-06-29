@@ -488,6 +488,7 @@ def test_run_external_source_enrichment_collects_validated_claims_without_nestin
         agent: _DummyAgent,
         prompt: str,
         max_turns: int,
+        **_kwargs: object,
     ) -> object:
         task = json.loads(prompt)
         hits = agent.session.regex_search(
