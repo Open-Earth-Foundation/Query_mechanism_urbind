@@ -175,6 +175,9 @@ Default output directory is `output/` (unless overridden by `RUNS_DIR`).
 
 MLflow is optional and disabled by default. When `MLFLOW_ENABLED=true`, each
 finalized pipeline run creates one MLflow run named after the local `run_id`.
+The app uses the `mlflow-skinny` client package for tracking and tracing APIs
+instead of the full MLflow distribution, avoiding model/data/serving
+dependencies in runtime images.
 The backend uploads the complete `output/<run_id>/` directory with
 `mlflow.log_artifacts(...)`, not only files listed in `manifest.json`.
 
