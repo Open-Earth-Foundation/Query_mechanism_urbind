@@ -12,6 +12,8 @@ from backend.services.llm_observability import LlmCallRecorder, safe_serialize
 
 logger = logging.getLogger(__name__)
 
+_POST_RUN_ASSUMPTION_STAGES = {"assumptions_discovery", "assumptions_apply"}
+
 
 def _ensure_utf8_console_streams() -> None:
     """Avoid Windows console encoding failures from MLflow status output."""
@@ -251,6 +253,90 @@ def _create_traces(
     return trace_result
 
 
+def _trace_ids_from_payload(trace_payload: object, key: str = "trace_ids") -> list[str]:
+    """Return non-empty trace ids from a persisted trace payload."""
+    if not isinstance(trace_payload, dict):
+        return []
+    trace_ids = trace_payload.get(key)
+    if not isinstance(trace_ids, list):
+        return []
+    return [str(trace_id) for trace_id in trace_ids if str(trace_id).strip()]
+
+
+def _call_index(call: dict[str, Any]) -> int:
+    """Return a numeric call index for incremental trace sync decisions."""
+    value = call.get("call_index")
+    if isinstance(value, int):
+        return value
+    if isinstance(value, str) and value.isdecimal():
+        return int(value)
+    return 0
+
+
+def _post_run_assumption_calls(calls: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Return assumption review/apply calls added after pipeline finalization."""
+    return [
+        call
+        for call in calls
+        if call.get("stage_name") in _POST_RUN_ASSUMPTION_STAGES
+        or call.get("stage_number") in {101, 102}
+    ]
+
+
+def _create_forced_post_run_trace(
+    mlflow_module: Any,
+    *,
+    run_id: str,
+    calls: list[dict[str, Any]],
+    api_state: dict[str, Any],
+    existing_traces: dict[str, Any],
+) -> dict[str, Any]:
+    """Create a supplemental trace for post-run assumption calls during force sync."""
+    trace_payload = dict(existing_traces)
+    existing_trace_ids = _trace_ids_from_payload(trace_payload)
+    last_synced_index = trace_payload.get("post_run_trace_max_call_index")
+    if not isinstance(last_synced_index, int):
+        last_synced_index = 0
+
+    post_run_calls = _post_run_assumption_calls(calls)
+    calls_to_trace = [
+        call for call in post_run_calls if _call_index(call) > last_synced_index
+    ]
+    if not calls_to_trace:
+        return trace_payload
+
+    try:
+        trace_id = _create_trace(
+            mlflow_module,
+            run_id=run_id,
+            trace_family="post_run_assumptions",
+            calls=calls_to_trace,
+            api_state=api_state,
+        )
+    except Exception as exc:  # noqa: BLE001
+        logger.warning("Post-run assumptions MLflow trace failed. error=%s", exc)
+        return trace_payload
+
+    if not trace_id:
+        return trace_payload
+
+    supplemental_trace_ids = _trace_ids_from_payload(
+        trace_payload,
+        "supplemental_trace_ids",
+    )
+    if trace_id not in existing_trace_ids:
+        existing_trace_ids.append(trace_id)
+    if trace_id not in supplemental_trace_ids:
+        supplemental_trace_ids.append(trace_id)
+    trace_payload["trace_ids"] = existing_trace_ids
+    trace_payload["supplemental_trace_ids"] = supplemental_trace_ids
+    trace_payload["post_run_trace_max_call_index"] = max(
+        _call_index(call) for call in calls_to_trace
+    )
+    trace_payload["post_run_trace_call_count"] = len(post_run_calls)
+    return trace_payload
+
+
 def sync_run_to_mlflow(
     *,
     run_logger: Any,
@@ -313,17 +399,28 @@ def sync_run_to_mlflow(
             mlflow_module.set_tags(_build_tags(api_state, experiment_name))
             mlflow_module.log_metrics(_build_metrics(api_state, len(calls)))
             existing_traces = existing_mlflow.get("traces")
-            trace_payload = (
+            if isinstance(existing_traces, dict) and _trace_ids_from_payload(
                 existing_traces
-                if isinstance(existing_traces, dict) and existing_traces.get("trace_ids")
-                else _create_traces(
+            ):
+                trace_payload = (
+                    _create_forced_post_run_trace(
+                        mlflow_module,
+                        run_id=run_id,
+                        calls=calls,
+                        api_state=api_state,
+                        existing_traces=existing_traces,
+                    )
+                    if force
+                    else existing_traces
+                )
+            else:
+                trace_payload = _create_traces(
                     mlflow_module,
                     config=config,
                     run_id=run_id,
                     calls=calls,
                     api_state=api_state,
                 )
-            )
             metadata["traces"] = trace_payload
             metadata["sync_status"] = "uploading"
             run_logger.record_mlflow_metadata(metadata)

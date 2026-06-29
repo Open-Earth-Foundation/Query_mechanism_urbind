@@ -60,6 +60,7 @@ Sync hardening:
 - MLflow sync is idempotent for a completed local run directory. If `api_state.json["mlflow"]` already records a completed sync with an MLflow run id, a later sync returns that metadata instead of opening a new MLflow run.
 - If a previous sync recorded an MLflow run id or trace ids but failed before artifact upload completed, the retry reuses the stored run id and trace metadata, then uploads artifacts into the same MLflow run instead of creating duplicate runs or traces.
 - Assumption review/apply API artifacts created after pipeline finalization force a re-sync into the existing MLflow run for the same local `run_id`, so post-run `stage_files/101_assumptions_discovery/**`, `stage_files/102_assumptions_apply/**`, and raw LLM call records are mirrored as well.
+  When the original run already has trace metadata, post-run assumption calls are recorded in a supplemental `post_run_assumptions` trace instead of recreating the original pipeline trace.
 
 ## MLflow Run And Trace Policy
 
@@ -88,7 +89,8 @@ MLflow sync metadata is persisted back into local artifacts:
 - `api_state.json["mlflow"]`
 - `manifest.json["metadata"]["mlflow"]`
 
-The metadata includes MLflow enabled state, sync status, MLflow run id when available, experiment name, artifact path, trace ids when available, fallback status, and any best-effort sync error payload.
+The metadata includes MLflow enabled state, sync status, MLflow run id when available, experiment name, artifact path, trace ids when available, fallback status,
+supplemental post-run trace ids when applicable, the highest post-run LLM call index already traced, and any best-effort sync error payload.
 
 ## Raw LLM Call Artifacts
 

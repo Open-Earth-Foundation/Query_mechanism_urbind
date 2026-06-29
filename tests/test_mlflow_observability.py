@@ -475,6 +475,79 @@ def test_mlflow_sync_reuses_failed_run_and_trace_on_retry(tmp_path: Path) -> Non
     assert fake_mlflow.spans == []
 
 
+def test_force_mlflow_sync_creates_post_run_assumptions_trace(tmp_path: Path) -> None:
+    run_logger = _finalized_run_logger(tmp_path)
+    existing_metadata = {
+        "enabled": True,
+        "sync_status": "completed",
+        "run_id": run_logger.run_paths.base_dir.name,
+        "experiment_name": "URBIND_TEST",
+        "artifact_path": "run_artifacts",
+        "mlflow_run_id": "existing-mlflow-run",
+        "traces": {
+            "mode": "consolidated",
+            "trace_ids": ["trace-existing"],
+            "fallback_used": False,
+        },
+    }
+    run_logger.record_mlflow_metadata(existing_metadata)
+    recorder = LlmCallRecorder(
+        run_logger.run_paths.base_dir,
+        run_logger.run_paths.base_dir.name,
+    )
+    recorder.record_call(
+        LlmCallContext(
+            stage_name="assumptions_apply",
+            stage_family="assumptions",
+            agent="assumptions_apply_writer",
+            call_kind="apply_assumptions",
+            model="test-model",
+        ),
+        request={"messages": []},
+        response={"usage": {"total_tokens": 1}},
+    )
+    config = build_test_app_config(
+        runs_dir=tmp_path,
+        mlflow_overrides={"enabled": True},
+    ).mlflow
+    fake_mlflow = _FakeMlflow()
+
+    metadata = sync_run_to_mlflow(
+        run_logger=run_logger,
+        config=config,
+        recorder=recorder,
+        mlflow_module=fake_mlflow,
+        force=True,
+    )
+
+    supplemental_trace_id = (
+        f"trace-{run_logger.run_paths.base_dir.name}:post_run_assumptions"
+    )
+    traces = metadata["traces"]
+    assert isinstance(traces, dict)
+    assert traces["trace_ids"] == ["trace-existing", supplemental_trace_id]
+    assert traces["supplemental_trace_ids"] == [supplemental_trace_id]
+    assert traces["post_run_trace_max_call_index"] == 1
+    assert traces["post_run_trace_call_count"] == 1
+    assert fake_mlflow.started_run_id == "existing-mlflow-run"
+    assert any(
+        span["name"].endswith(":post_run_assumptions")
+        for span in fake_mlflow.spans
+    )
+
+    second_fake_mlflow = _FakeMlflow()
+    second_metadata = sync_run_to_mlflow(
+        run_logger=run_logger,
+        config=config,
+        recorder=recorder,
+        mlflow_module=second_fake_mlflow,
+        force=True,
+    )
+
+    assert second_metadata["traces"] == traces
+    assert second_fake_mlflow.spans == []
+
+
 def test_mlflow_sync_falls_back_to_markdown_and_assumptions_traces(
     tmp_path: Path,
 ) -> None:

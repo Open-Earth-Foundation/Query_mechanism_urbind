@@ -201,7 +201,9 @@ the next sync reuses the stored MLflow run id and trace metadata instead of
 creating duplicates. During sync, the backend also switches console streams to
 UTF-8 when possible so MLflow status output does not fail on Windows consoles.
 Assumption review/apply artifacts created after pipeline finalization are
-re-uploaded into the existing MLflow run for the same local `run_id`.
+re-uploaded into the existing MLflow run for the same local `run_id`; when the
+original run already has trace metadata, those post-run calls are recorded in a
+supplemental `post_run_assumptions` trace.
 
 ### Vector retrieval sizing and thresholds
 
