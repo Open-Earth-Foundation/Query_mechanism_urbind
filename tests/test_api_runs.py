@@ -231,6 +231,80 @@ def _write_markdown_batches_artifact(paths: RunPaths, payload: dict[str, object]
     writer.write_manifest()
 
 
+def _write_run_artifacts_payload(paths: RunPaths) -> None:
+    """Persist enrichment/assumptions artifacts for run-artifacts route tests."""
+    writer = ArtifactWriter(paths.base_dir, paths.base_dir.name)
+    writer.write_stage_file(
+        "enrichment",
+        "enrichment_bundle.json",
+        {
+            "field_manifest": {
+                "query_fields": [
+                    {
+                        "field": "public_ac_charger_count",
+                        "classification": "estimable_numerical",
+                        "scope": "mixed",
+                        "rationale": "Charger counts are numeric.",
+                    }
+                ]
+            },
+            "external_no_evidence": [],
+            "meta": {
+                "estimable_count": 1,
+                "non_estimable_count": 0,
+                "web_findings_count": 2,
+                "external_evidence_count": 1,
+            },
+        },
+        alias="enrichment_bundle",
+    )
+    writer.write_stage_file(
+        "enrichment",
+        "external_source_search_audit.json",
+        {
+            "candidates": [],
+            "validated_claims": [
+                {
+                    "city": "Aachen",
+                    "field": "public_ac_charger_count",
+                    "source_id": "ev-report",
+                    "title": "EV report",
+                    "quote": "Aachen reports 320 public AC chargers.",
+                }
+            ],
+        },
+        alias="enrichment_external_source_search_audit",
+    )
+    writer.write_stage_file(
+        "assumptions",
+        "assumptions_bundle.json",
+        {
+            "assumptions": [
+                {
+                    "city": "Aachen",
+                    "field_name": "public_ac_charger_count",
+                    "gap_description": "Missing charger count",
+                    "method_used": "peer_city_proxy",
+                    "estimate": {"low": 280, "mid": 320, "high": 360},
+                    "confidence": "MEDIUM",
+                    "basis": "Peer city average",
+                    "rationale": "Based on comparable cities.",
+                }
+            ],
+            "non_estimable": [],
+        },
+        alias="assumptions_assumptions_bundle",
+    )
+    writer.write_step_detail(
+        "enrichment",
+        {
+            "inputs": {"has_markdown_context": True},
+            "metrics": {"external_evidence_count": 1},
+        },
+    )
+    writer.write_manifest({"status": "completed"})
+
+
 def _poll_until_terminal(
     client: TestClient,
     run_id: str,
@@ -1566,6 +1640,121 @@ def test_api_run_diagnostics_ignores_foreign_artifact_paths(tmp_path: Path) -> N
         assert payload["artifacts"]["run_log"] == "run.log"
         assert payload["error_log_text"] == "LOCAL ERROR"
         assert "FOREIGN SECRET" not in payload["error_log_text"]
+
+
+def test_api_run_artifacts_returns_serialized_artifact_contract(tmp_path: Path) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    run_id = "run-artifacts"
+    paths = _write_success_artifacts(
+        question="Artifacts run",
+        run_id=run_id,
+        config=config,
+    )
+    _write_run_artifacts_payload(paths)
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get(f"/api/v1/runs/{run_id}/artifacts")
+        assert response.status_code == 200
+        payload = response.json()
+
+    assert payload["run_id"] == run_id
+    assert payload["status"] == "completed"
+    assert payload["fields"] == [
+        {
+            "city": "Aachen",
+            "field": "public_ac_charger_count",
+            "type": "estimable_numerical",
+            "scope": "mixed",
+            "status": "estimated",
+            "explanation": "Based on comparable cities.",
+            "gap_description": "Missing charger count",
+            "recommendation": None,
+            "estimate": {
+                "low": 280.0,
+                "mid": 320.0,
+                "high": 360.0,
+                "method": "peer_city_proxy",
+                "confidence": "MEDIUM",
+                "basis": "Peer city average",
+            },
+            "sources": [
+                {
+                    "source_id": "ev-report",
+                    "title": "EV report",
+                    "quote": "Aachen reports 320 public AC chargers.",
+                    "has_evidence": True,
+                }
+            ],
+            "reason": None,
+            "reason_label": None,
+        }
+    ]
+    assert payload["stages"] == [
+        {
+            "stage_number": 8,
+            "name": "enrichment",
+            "status": "completed",
+            "metrics": {"external_evidence_count": 1},
+            "inputs": {"has_markdown_context": True},
+        }
+    ]
+    assert payload["enrichment_steps"] == [
+        {
+            "key": "gap_analysis",
+            "label": "Gap analysis",
+            "summary": "1 fields classified",
+            "metrics": {
+                "classified_estimable": 1,
+                "classified_non_estimable": 0,
+            },
+            "warn": None,
+        },
+        {
+            "key": "external_web",
+            "label": "External + web search",
+            "summary": "2 found · 1 validated",
+            "metrics": {
+                "web_findings": 2,
+                "validated_evidence": 1,
+                "no_evidence": 0,
+            },
+            "warn": None,
+        },
+        {
+            "key": "assumptions",
+            "label": "Assumptions",
+            "summary": "1 estimated · 0 non-estimable",
+            "metrics": {
+                "estimated": 1,
+                "non_estimable": 0,
+                "reason_breakdown": {},
+            },
+            "warn": None,
+        },
+    ]
+
+
+def test_api_run_artifacts_returns_conflict_while_running(tmp_path: Path) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    _write_run_listing_artifacts(
+        question="Running artifacts run",
+        run_id="run-artifacts-running",
+        status="running",
+        config=config,
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get("/api/v1/runs/run-artifacts-running/artifacts")
+        assert response.status_code == 409
+        assert response.json()["detail"] == "Run `run-artifacts-running` is still running."
 
 
 def test_api_output_and_context_resolve_stale_container_artifact_paths(
