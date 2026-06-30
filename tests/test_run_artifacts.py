@@ -193,6 +193,104 @@ def test_manifest_alias_takes_precedence_over_glob(tmp_path: Path) -> None:
     assert {f["field"] for f in payload["fields"]} == {"aliased_field"}
 
 
+def test_manifest_alias_resolves_enrichment_bundle_without_glob(tmp_path: Path) -> None:
+    run = tmp_path / "aliased_enrichment_run"
+    relocated = run / "relocated" / "enrichment_bundle.json"
+    _write(
+        relocated,
+        {
+            "field_manifest": {
+                "query_fields": [
+                    {
+                        "field": "aliased_energy_target",
+                        "classification": "estimable_numerical",
+                        "scope": "city",
+                        "rationale": "Energy target is numeric.",
+                    }
+                ]
+            },
+            "meta": {"estimable_count": 1, "non_estimable_count": 0},
+        },
+    )
+    _write(
+        run / "manifest.json",
+        {
+            "aliases": {
+                "enrichment_bundle": {"path": "relocated/enrichment_bundle.json"}
+            }
+        },
+    )
+
+    payload = build_run_artifacts(run)
+
+    assert payload["artifact_health"]["enrichment_bundle"] == "ok"
+    assert payload["gap_analysis"]["fields"] == [
+        {
+            "field": "aliased_energy_target",
+            "classification": "estimable_numerical",
+            "scope": "city",
+            "rationale": "Energy target is numeric.",
+        }
+    ]
+
+
+def test_manifest_alias_resolves_accepted_excerpts_without_glob(tmp_path: Path) -> None:
+    run = tmp_path / "aliased_excerpts_run"
+    _write(
+        run / "relocated" / "assumptions_bundle.json",
+        {
+            "assumptions": [],
+            "non_estimable": [
+                {
+                    "city": "Aachen",
+                    "field_name": "tram_line_length",
+                    "explanation": "No direct source found.",
+                }
+            ],
+        },
+    )
+    _write(
+        run / "relocated" / "accepted_excerpts.json",
+        {
+            "excerpts": [
+                {"text": "Plans add 12 km of new tram line across the centre."}
+            ]
+        },
+    )
+    _write(
+        run / "manifest.json",
+        {
+            "aliases": {
+                "assumptions_assumptions_bundle": {
+                    "path": "relocated/assumptions_bundle.json"
+                },
+                "markdown_excerpts": {"path": "relocated/accepted_excerpts.json"},
+            }
+        },
+    )
+
+    payload = build_run_artifacts(run)
+    field = payload["fields"][0]
+
+    assert payload["artifact_health"]["accepted_excerpts"] == "ok"
+    assert field["reason"] == "no_source_data"
+    assert field["reason_hint"] == "Possible extraction gap"
+    assert any("tram" in snippet.lower() for snippet in field["reason_hint_evidence"])
+
+
+def test_manifest_present_missing_alias_does_not_use_glob_fallback(
+    tmp_path: Path,
+) -> None:
+    run = _make_run_dir(tmp_path)
+    _write(run / "manifest.json", {"aliases": {}})
+
+    payload = build_run_artifacts(run)
+
+    assert set(payload["artifact_health"].values()) == {"missing"}
+    assert payload["fields"] == []
+    assert payload["gap_analysis"]["fields"] == []
+
+
 def test_unreadable_artifact_marks_degraded(tmp_path: Path) -> None:
     run = _make_run_dir(tmp_path)
     # Corrupt the assumptions bundle: present on disk but not valid JSON.

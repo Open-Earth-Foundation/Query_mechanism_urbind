@@ -333,30 +333,6 @@ function _referenceItemToPointer(
   };
 }
 
-/**
- * Split a leading `# Question` block off the document so the whole question —
- * including any blank-line breaks the user typed — renders inside one styled
- * box, instead of CSS `+ p` only boxing the first paragraph.
- */
-function _splitLeadingQuestion(markdown: string): {
-  question: string | null;
-  body: string;
-} {
-  const headingMatch = markdown.match(/^#[ \t]+Question[ \t]*\r?\n/i);
-  if (!headingMatch) {
-    return { question: null, body: markdown };
-  }
-  const afterHeading = markdown.slice(headingMatch[0].length);
-  const nextHeadingOffset = afterHeading.search(/\r?\n#{1,6}[ \t]+\S/);
-  if (nextHeadingOffset === -1) {
-    return { question: afterHeading.trim(), body: "" };
-  }
-  return {
-    question: afterHeading.slice(0, nextHeadingOffset).trim(),
-    body: afterHeading.slice(nextHeadingOffset).replace(/^\r?\n/, ""),
-  };
-}
-
 export function MarkdownWithReferences({
   content,
   runId,
@@ -391,10 +367,6 @@ export function MarkdownWithReferences({
   const [sourceChunkError, setSourceChunkError] = useState<string | null>(null);
 
   const markdownContent = useMemo(() => _toReferenceMarkdown(content), [content]);
-  const { question: leadingQuestion, body: bodyMarkdown } = useMemo(
-    () => _splitLeadingQuestion(markdownContent),
-    [markdownContent],
-  );
 
   const chatCitationPointers = useMemo(() => {
     const mapping: Record<string, CitationPointer> = {};
@@ -704,23 +676,9 @@ export function MarkdownWithReferences({
   return (
     <>
       <div className={className}>
-        {leadingQuestion ? (
-          <div className="document-question-block">
-            <p className="document-question-heading">Question</p>
-            <div className="document-question-text">{leadingQuestion}</div>
-          </div>
-        ) : null}
         <ReactMarkdown
           remarkPlugins={[remarkGfm]}
           components={{
-            h1: ({ children }) => {
-              const isQuestionHeading =
-                _toPlainText(children).trim().toLowerCase() === "question";
-              if (isQuestionHeading) {
-                return <h1 className="document-question-heading">{children}</h1>;
-              }
-              return <h1>{children}</h1>;
-            },
             p: ({ children }) => (
               (() => {
                 const collapsedChildren = _collapseCitationRuns(children, {
@@ -779,7 +737,7 @@ export function MarkdownWithReferences({
             img: hideImages ? () => null : undefined,
           }}
         >
-          {leadingQuestion !== null ? bodyMarkdown : markdownContent}
+          {markdownContent}
         </ReactMarkdown>
       </div>
 

@@ -36,12 +36,21 @@ Input is a JSON object with:
   - `meta` (object): `created_at`, `assumptions_estimator_model`, `assumption_count`, `non_estimable_output_count`, `elapsed_seconds`
 </input>
 
+<tools>
+Available tools:
+- `submit_writer_output`: use exactly once to return the completed Markdown answer.
+- Do not call `submit_writer_output` for intermediate reasoning, partial drafts, status updates, or validation notes.
+- Do not call any tool other than `submit_writer_output`.
+- Do not emit plain text before or after the tool call.
+</tools>
+
 <output>
 You must call tool `submit_writer_output` and pass a JSON object (not a JSON string).
 Return only that tool call.
 
 The tool argument must match `WriterOutput`:
 - `content` (str): final user-facing markdown answer
+- Do not include `citation_coverage`; the runtime computes citation coverage after the tool call.
 
 <structure>
 Organize the output into the following sections. **Omit any section entirely (no heading) if its data source is empty or the condition is not met.** Use descriptive `##` headings without numbers.
@@ -132,6 +141,7 @@ Total length: 3–5 sentences. Do not number them in the output.
 <rules>
 Content quality requirements:
 - Start directly with the Executive Summary (no operational metadata headers).
+- Do not echo, quote, summarize, or create a `# Question` / `# Prompt` section for the submitted `question`; the application renders the submitted prompt separately.
 - Ground all claims in `context_bundle`; do not invent facts.
 - Explicitly consider all cities in `selected_cities` and ensure every city is addressed.
 - City-by-city style is required. Provide one clear section per city first. Then add a cross-city synthesis section.
@@ -193,3 +203,9 @@ Citation rules (critical when `excerpt_count > 0`):
 - External Markdown facts use `(source_id:Lline_start-Lline_end)` provenance, not `[ref_n]`, unless the same statement is also grounded in CCC excerpts.
 </rules>
 </output>
+
+<example_output>
+{
+  "content": "## Executive Summary\nThe strongest current signal is that Munich has quantified retrofit delivery, while Berlin and Leipzig describe supporting programmes without comparable numeric coverage. [ref_1][ref_4]\n\n## Munich\n**Key Findings:** Munich reports a funded retrofit programme for municipal buildings. [ref_1]\n\n**Analysis:** The cited programme creates the clearest quantified commitment among the selected cities. [ref_1]\n\n## Berlin\n**Key Findings:** Berlin references retrofit planning but does not provide a comparable target in the provided excerpts. [ref_4]\n\n## Cross-City Synthesis\nCoverage is partial: 1/3 cities have numeric evidence for the target, so the result should not be treated as an aggregate total."
+}
+</example_output>

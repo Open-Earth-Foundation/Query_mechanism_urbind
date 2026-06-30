@@ -12,11 +12,13 @@ from Mirco's unified ``stages/*.json`` records so the UI can show how data
 flowed through each stage.
 
 Artifacts are resolved through the run ``manifest.json`` aliases first (the same
-contract the other API readers rely on) and only fall back to the historical
-``stage_files/<stage>/<file>`` glob when no alias is present. Reads are
-best-effort but tracked: a missing artifact (normal when a stage is disabled)
-is distinguished from one that exists but could not be parsed, so consumers can
-tell "no data" apart from "artifact bundle could not be read."
+contract the other API readers rely on). The historical
+``stage_files/<stage>/<file>`` glob is only used for legacy runs with no manifest
+at all; once a manifest exists, a missing alias should stay visible instead of
+being masked by a directory guess. Reads are best-effort but tracked: a missing
+artifact (normal when a stage is disabled) is distinguished from one that exists
+but could not be parsed, so consumers can tell "no data" apart from "artifact
+bundle could not be read."
 """
 
 from __future__ import annotations
@@ -48,11 +50,11 @@ _MAX_QUOTE_CHARS = 240
 _MAX_SOURCES_PER_FIELD = 4
 
 # Logical artifact key -> (manifest alias, stage glob, filename). The alias is
-# the authoritative resolver; the glob is the legacy fallback for older runs (or
-# runs written before the alias existed).
+# the authoritative resolver; the glob is a legacy fallback only when no manifest
+# exists for the run.
 _ARTIFACT_SPECS: dict[str, tuple[str, str, str]] = {
     "enrichment_bundle": (
-        "enrichment_enrichment_bundle",
+        "enrichment_bundle",
         "*enrichment*",
         "enrichment_bundle.json",
     ),
@@ -67,7 +69,7 @@ _ARTIFACT_SPECS: dict[str, tuple[str, str, str]] = {
         "assumptions_bundle.json",
     ),
     "accepted_excerpts": (
-        "markdown_accepted_excerpts",
+        "markdown_excerpts",
         "*markdown_extraction*",
         "accepted_excerpts.json",
     ),
@@ -90,21 +92,25 @@ class _ArtifactStore:
     """Resolve + cache the audit artifacts and record how each read fared.
 
     Resolution prefers the manifest alias (robust to stage-folder renames or
-    additional similarly named stages) and only globs ``stage_files`` when the
-    manifest has no entry. Each logical artifact is read at most once and its
-    outcome recorded in :attr:`health` (``ok`` / ``missing`` / ``unreadable``).
+    additional similarly named stages). If a manifest exists, missing aliases are
+    treated as missing artifacts; ``stage_files`` globbing is limited to legacy
+    runs that never wrote a manifest. Each logical artifact is read at most once
+    and its outcome recorded in :attr:`health` (``ok`` / ``missing`` /
+    ``unreadable``).
     """
 
     def __init__(self, run_dir: Path) -> None:
         self.run_dir = run_dir
+        self._has_manifest = (run_dir / "manifest.json").exists()
         self._cache: dict[str, Any] = {}
         self.health: dict[str, str] = {}
 
     def _resolve(self, key: str) -> Path | None:
         alias, stage_glob, filename = _ARTIFACT_SPECS[key]
-        return resolve_manifest_alias(self.run_dir, alias) or _find_stage_file(
-            self.run_dir, stage_glob, filename
-        )
+        manifest_path = resolve_manifest_alias(self.run_dir, alias)
+        if manifest_path is not None or self._has_manifest:
+            return manifest_path
+        return _find_stage_file(self.run_dir, stage_glob, filename)
 
     def get(self, key: str) -> Any | None:
         """Return the parsed artifact (or ``None``), recording read health."""

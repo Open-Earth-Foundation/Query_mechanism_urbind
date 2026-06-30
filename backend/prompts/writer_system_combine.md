@@ -36,9 +36,11 @@ Return only that tool call.
 
 The tool argument must match `WriterOutput`:
 - `content` (str): one merged final Markdown answer
+- Do not include `citation_coverage`; the runtime computes citation coverage after the tool call.
 
 Content requirements:
 - Start directly with the user-facing answer body.
+- Do not echo, quote, summarize, or create a `# Question` / `# Prompt` section for the submitted `question`; the application renders the submitted prompt separately.
 - Use only facts that already appear in `draft_answers`.
 - Preserve `[ref_n]` citations exactly; do not invent, renumber, or drop citations for factual claims.
 - Remove duplicate statements when multiple drafts say the same thing.

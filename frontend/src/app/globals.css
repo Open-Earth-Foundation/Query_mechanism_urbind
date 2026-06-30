@@ -34,7 +34,7 @@ body {
   color: #111c2c;
 }
 
-.document-markdown .document-question-heading {
+.document-markdown .document-prompt-heading {
   margin-top: 0;
   margin-bottom: 0.45rem;
   font-size: 0.78rem;
@@ -44,13 +44,12 @@ body {
   color: #3b5a8f;
 }
 
-.document-markdown .document-question-block {
+.document-markdown .document-prompt-block {
   margin-bottom: 1rem;
 }
 
-/* The whole question sits in one box, preserving the user's line breaks. */
-.document-markdown .document-question-text,
-.document-markdown .document-question-heading + p {
+/* The submitted prompt is UI metadata, separate from generated report markdown. */
+.document-markdown .document-prompt-text {
   margin-top: 0;
   margin-bottom: 0;
   border: 1px solid #d7e0f1;
@@ -86,8 +85,7 @@ body {
   font-size: 1.02rem;
 }
 
-.document-markdown-rail .document-question-text,
-.document-markdown-rail .document-question-heading + p {
+.document-markdown-rail .document-prompt-text {
   font-size: 0.93rem;
 }
 

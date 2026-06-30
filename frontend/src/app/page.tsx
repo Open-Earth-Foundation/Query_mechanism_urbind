@@ -34,6 +34,7 @@ import { DevModeToggle } from "@/components/dev-mode-toggle";
 import { DevToolsPanel } from "@/components/dev-tools-panel";
 import { DocumentExportControls } from "@/components/document-export-controls";
 import { MarkdownWithReferences } from "@/components/markdown-with-references";
+import { PromptBlock } from "@/components/prompt-block";
 import { RunDiagnosticsPanel } from "@/components/run-diagnostics-panel";
 import { SearchableCityPicker } from "@/components/searchable-city-picker";
 import { SearchableRunPicker } from "@/components/searchable-run-picker";
@@ -258,6 +259,7 @@ export default function Home() {
       null
     );
   }, [availableRuns, knownRunsById, selectedExistingRunId]);
+  const documentQuestion = selectedExistingRunSummary?.question.trim() || question.trim();
 
   const runContextCityNames = useMemo(
     () => extractRunContextCityNames(runContext),
@@ -1478,6 +1480,7 @@ export default function Home() {
                         showWriterContextExport={devFeatures.showRunDiagnostics}
                       />
                       <article className="document-markdown rounded-md border border-slate-200 bg-white p-5 shadow-inner">
+                        <PromptBlock prompt={documentQuestion} />
                         <MarkdownWithReferences content={runOutput.content} runId={runId} />
                       </article>
                       {runContext ? (
