@@ -12,6 +12,7 @@ from backend.modules.orchestrator.utils.error_handlers import (
 )
 from backend.modules.orchestrator.utils.io import write_final_output
 from backend.modules.writer.models import WriterOutput
+from backend.services.llm_observability import LlmCallRecorder
 from backend.services.progress_tracker import ProgressTracker
 from backend.services.run_logger import RunLogger
 from backend.utils.config import AppConfig
@@ -65,6 +66,7 @@ def handle_write_decision(
     api_key: str,
     log_llm_payload: bool = False,
     progress: ProgressTracker | None = None,
+    llm_recorder: LlmCallRecorder | None = None,
 ) -> RunPaths | None:
     """
     Execute write decision to generate final output.
@@ -79,6 +81,7 @@ def handle_write_decision(
         config: Application configuration
         api_key: API key for external services
         log_llm_payload: Whether to log full LLM request/response payloads
+        llm_recorder: Optional recorder for run-local LLM call artifacts
 
     Returns:
         Run paths if successful, None to continue iteration
@@ -86,12 +89,18 @@ def handle_write_decision(
     try:
         writer_kwargs: dict[str, object] = {"log_llm_payload": log_llm_payload}
         writer_signature = inspect.signature(writer_func)
-        if "run_id" in writer_signature.parameters:
+        writer_accepts_extra_kwargs = any(
+            parameter.kind == inspect.Parameter.VAR_KEYWORD
+            for parameter in writer_signature.parameters.values()
+        )
+        if "run_id" in writer_signature.parameters or writer_accepts_extra_kwargs:
             writer_kwargs["run_id"] = paths.base_dir.name
-        if "run_logger" in writer_signature.parameters:
+        if "run_logger" in writer_signature.parameters or writer_accepts_extra_kwargs:
             writer_kwargs["run_logger"] = run_logger
-        if "paths" in writer_signature.parameters:
+        if "paths" in writer_signature.parameters or writer_accepts_extra_kwargs:
             writer_kwargs["paths"] = paths
+        if "llm_recorder" in writer_signature.parameters or writer_accepts_extra_kwargs:
+            writer_kwargs["llm_recorder"] = llm_recorder
         writer_output = writer_func(
             question,
             context_bundle,

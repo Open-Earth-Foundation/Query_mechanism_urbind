@@ -14,6 +14,11 @@ from backend.modules.web_researcher.utils.json_helpers import (
     extract_json_candidate,
     extract_message_text,
 )
+from backend.services.llm_observability import (
+    LlmCallContext,
+    LlmCallRecorder,
+    record_openai_chat_completion,
+)
 from backend.utils.config import AppConfig
 
 logger = logging.getLogger(__name__)
@@ -52,6 +57,7 @@ def check_relevance_batch(
     cities: list[str],
     config: AppConfig,
     api_key: str,
+    llm_recorder: LlmCallRecorder | None = None,
 ) -> list[tuple[SearchResult, bool]]:
     """Check relevance of search results against target fields and cities.
 
@@ -122,7 +128,23 @@ def check_relevance_batch(
             "temperature": 0.0,
         }
 
-        response = client.chat.completions.create(**request_kwargs)
+        response = record_openai_chat_completion(
+            client,
+            request_kwargs,
+            context=LlmCallContext(
+                stage_name="enrichment",
+                stage_family="enrichment",
+                agent="relevance_checker",
+                call_kind="relevance_check",
+                model=config.enrichment.model,
+                metadata={
+                    "result_count": len(results),
+                    "city_count": len(cities),
+                    "target_field_count": len(target_fields),
+                },
+            ),
+            recorder=llm_recorder,
+        )
         if not response.choices:
             return [(r, True) for r in results]
 

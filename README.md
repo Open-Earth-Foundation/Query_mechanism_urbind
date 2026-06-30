@@ -71,6 +71,13 @@ Environment variables (`.env`):
 - `APP_SESSION_SECRET` (required): shared HMAC secret used to sign and verify the `urbind_session` cookie. Use the same value in backend `.env`, frontend runtime env, Docker, and Kubernetes.
 - `MARKDOWN_DIR` (optional, default `documents`): default directory scanned for top-level city markdown files. Runtime markdown discovery ignores subfolders under this directory.
 - `RUNS_DIR` (optional, default `output`): base directory for run artifacts.
+- `MLFLOW_ENABLED` (optional, default `false`): enables best-effort MLflow observability for finalized pipeline runs.
+- `MLFLOW_TRACKING_URI` (optional): MLflow tracking URI. Leave empty to use MLflow's local/default tracking configuration.
+- `MLFLOW_EXPERIMENT_NAME` (optional, default `URBIND`): MLflow experiment used for mirrored runs.
+- `MLFLOW_ENVIRONMENT` (optional): environment tag added to mirrored MLflow runs, for example `local` or `production`.
+- `MLFLOW_ARTIFACT_PATH` (optional, default `run_artifacts`): artifact path under each MLflow run where the full `output/<run_id>/` directory is uploaded.
+- `MLFLOW_TRACE_MODE` (optional, default `consolidated`): trace mode. The backend creates one consolidated pipeline trace and falls back to split markdown/assumptions traces if needed.
+- `MLFLOW_FAIL_ON_ERROR` (optional, default `false`): when `false`, MLflow upload or tracing errors are recorded as warnings and local artifacts remain the source of truth.
 - `LOG_LEVEL` (optional, default `INFO`): logging verbosity (`DEBUG`, `INFO`, `WARNING`, `ERROR`).
 - `OPENROUTER_BASE_URL` (optional, default `https://openrouter.ai/api/v1`): override for OpenRouter-compatible backends.
 - `API_CORS_ORIGINS` (optional): comma-separated allowed frontend origins for the API. When omitted, the API allows wildcard CORS without credentials.
@@ -164,6 +171,47 @@ python -m backend.scripts.update_vector_store --trigger manual
 6. When switching to the cosine branch for local testing, update `.env` to `.chroma_cosine` values and restart the relevant process. Docker Compose does not need an image rebuild, but it does need container recreation after the `.env` change.
 
 Default output directory is `output/` (unless overridden by `RUNS_DIR`).
+
+### MLflow Observability
+
+MLflow is optional and disabled by default. When `MLFLOW_ENABLED=true`, each
+finalized pipeline run creates one MLflow run named after the local `run_id`.
+The app uses the `mlflow-skinny` client package for tracking and tracing APIs
+instead of the full MLflow distribution, avoiding model/data/serving
+dependencies in runtime images.
+The backend uploads the complete `output/<run_id>/` directory with
+`mlflow.log_artifacts(...)`, not only files listed in `manifest.json`.
+When `MLFLOW_ENVIRONMENT` is set, its value is stored as the MLflow
+`environment` tag and in the local MLflow sync metadata.
+
+MLflow-enabled runs also record raw LLM call artifacts locally:
+
+- per-call JSON files under the owning stage, such as
+  `stage_files/006_markdown_extraction/llm_calls/`
+- a run-level `llm_calls/index.jsonl` with call order, stage, family, agent,
+  model, status, timestamps, and artifact path
+
+The trace policy prefers one consolidated trace tagged with
+`trace_family=pipeline` and `trace_group=<run_id>`, with child spans for each
+recorded LLM call. If consolidated trace creation fails, the backend falls
+back to separate `markdown` and `assumptions` traces under the same
+`trace_group`. To keep the MLflow trace detail view lossless for large
+requests and responses, recorded Agents SDK inputs are normalized to a
+standard top-level `messages` array before being sent to MLflow, matching the
+OpenAI chat trace shape that MLflow renders as expandable System/User message
+blocks. The raw per-call JSON artifacts keep the original unsplit request and
+response. MLflow sync metadata is written back to both `api_state.json` and
+`manifest.json["metadata"]["mlflow"]`.
+
+MLflow sync is retry-safe for one local run directory. If a previous sync
+created an MLflow run or trace but failed before artifact upload completed,
+the next sync reuses the stored MLflow run id and trace metadata instead of
+creating duplicates. During sync, the backend also switches console streams to
+UTF-8 when possible so MLflow status output does not fail on Windows consoles.
+Assumption review/apply artifacts created after pipeline finalization are
+re-uploaded into the existing MLflow run for the same local `run_id`; when the
+original run already has trace metadata, those post-run calls are recorded in a
+supplemental `post_run_assumptions` trace.
 
 ### Vector retrieval sizing and thresholds
 
@@ -1126,6 +1174,7 @@ docker push ghcr.io/open-earth-foundation/query_mechanism_urbind-frontend:dev
 
 kubectl create secret generic urbind-query-mechanism-backend-secrets \
   --from-literal=OPENROUTER_API_KEY=<openrouter-key> \
+  --from-literal=MLFLOW_TRACKING_URI=<mlflow-tracking-uri> \
   --dry-run=client -o yaml | kubectl apply -f -
 
 kubectl apply -f k8s/backend-pvc.yml
@@ -1138,7 +1187,7 @@ kubectl apply -f k8s/frontend-service.yml
 
 Add `SERPER_API_KEY` and `FIRECRAWL_API_KEY` to the secret only when web research is enabled.
 
-The backend ConfigMap sets `VECTOR_STORE_ENABLED=true`, `VECTOR_STORE_AUTO_UPDATE_ON_RUN=false`, and `VECTOR_STORE_UPDATE_MODE=local_process` for the deployed environment. The backend still checks whether the vector store is stale, but it does not try to update it automatically in Kubernetes. When the store is stale, runs are blocked and the UI instructs the operator to run the maintenance workflow documented below.
+The backend ConfigMap sets `VECTOR_STORE_ENABLED=true`, `VECTOR_STORE_AUTO_UPDATE_ON_RUN=false`, and `VECTOR_STORE_UPDATE_MODE=local_process` for the deployed environment. It also enables MLflow with `MLFLOW_ENABLED=true`, `MLFLOW_EXPERIMENT_NAME=URBIND`, `MLFLOW_ENVIRONMENT=production`, `MLFLOW_ARTIFACT_PATH=run_artifacts`, `MLFLOW_TRACE_MODE=consolidated`, and `MLFLOW_FAIL_ON_ERROR=false`; the actual tracking URI comes from the `MLFLOW_TRACKING_URI` Kubernetes secret populated by GitHub Actions. The backend still checks whether the vector store is stale, but it does not try to update it automatically in Kubernetes. When the store is stale, runs are blocked and the UI instructs the operator to run the maintenance workflow documented below.
 
 ## GitHub Actions deployment
 
@@ -1161,6 +1210,7 @@ Required repository secrets:
 - `AWS_SECRET_ACCESS_KEY_EKS_DEV_USER`
 - `EKS_DEV_NAME`
 - `OPENROUTER_API_KEY`
+- `MLFLOW_TRACKING_URI`
 - `APP_SHARED_PASSWORD_HASH`
 - `APP_SESSION_SECRET`
 
@@ -1169,7 +1219,9 @@ Optional repository variables:
 - `EKS_DEV_REGION` (default `us-east-1`)
 - `FRONTEND_API_BASE_URL` (default `https://urbind-query-mechanism-api.openearth.dev`)
 
-Artifacts are written under `output/<run_id>/`:
+Artifacts are written under `output/<run_id>/`. For the proposed MLflow upload
+policy and a concise file-by-file artifact overview, see
+[`docs/mlflow_artifacts_overview.md`](docs/mlflow_artifacts_overview.md).
 
 - `api_state.json`: machine-readable run metadata used for run discovery, terminal-state hydration, diagnostics, and benchmarks. It keeps status, timestamps, inputs, decisions, and compact metrics, while `manifest.json` remains the canonical artifact registry and the only artifact locator.
 - `summary.jsonl`: append-only stage timeline. Each JSON line has an `event_index`, `event_type`, run id, timestamp, stable `stage_number`, and compact payload for one completed stage checkpoint. Fresh runs write `001_input_snapshot` before later numbered stage events. Detailed decisions are stored in `api_state.json` and, when they belong to an existing stage, in that stage's `stages/NNN_*.json` detail file.

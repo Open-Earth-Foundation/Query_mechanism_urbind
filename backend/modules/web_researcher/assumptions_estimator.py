@@ -21,6 +21,11 @@ from backend.modules.web_researcher.utils.json_helpers import (
     extract_json_candidate,
     extract_message_text,
 )
+from backend.services.llm_observability import (
+    LlmCallContext,
+    LlmCallRecorder,
+    record_openai_chat_completion,
+)
 from backend.services.progress_tracker import ProgressTracker
 from backend.utils.config import AppConfig
 
@@ -43,6 +48,7 @@ def run_assumptions_estimator(
     progress: ProgressTracker | None = None,
     national_benchmarks: list[WebFinding] | None = None,
     comparative_data: list[WebFinding] | None = None,
+    llm_recorder: LlmCallRecorder | None = None,
 ) -> tuple[list[AssumptionRecord], list[NonEstimableRecord], str | None]:
     """Estimate remaining gaps with the LLM priority ladder."""
     still_missing = [f for f in enriched_fields if f.status == "still_missing"]
@@ -155,6 +161,7 @@ def run_assumptions_estimator(
         peer_reference=peer_reference,
         national_benchmarks=national_benchmarks,
         comparative_data=comparative_data,
+        llm_recorder=llm_recorder,
     )
 
     if progress and assumptions:
@@ -194,6 +201,7 @@ def run_assumptions_estimator(
             peer_reference=peer_reference,
             national_benchmarks=national_benchmarks,
             comparative_data=comparative_data,
+            llm_recorder=llm_recorder,
         )
         if revised:
             assumptions = revised
@@ -250,6 +258,7 @@ def _call_estimator(
     peer_reference: dict[str, list[dict[str, object]]] | None = None,
     national_benchmarks: list[WebFinding] | None = None,
     comparative_data: list[WebFinding] | None = None,
+    llm_recorder: LlmCallRecorder | None = None,
 ) -> list[AssumptionRecord]:
     """Make a single LLM call for estimation or critique."""
     model = config.enrichment.assumptions_estimator_model or config.enrichment.model
@@ -290,7 +299,25 @@ def _call_estimator(
             model,
             len(estimable_fields),
         )
-        response = client.chat.completions.create(**request_kwargs)
+        response = record_openai_chat_completion(
+            client,
+            request_kwargs,
+            context=LlmCallContext(
+                stage_name="assumptions",
+                stage_family="assumptions",
+                agent="assumptions_estimator",
+                call_kind=f"{pass_name}_estimates",
+                model=model,
+                metadata={
+                    "pass_name": pass_name,
+                    "field_count": len(estimable_fields),
+                    "prior_estimate_count": len(prior_estimates or []),
+                    "national_benchmark_count": len(national_benchmarks or []),
+                    "comparative_data_count": len(comparative_data or []),
+                },
+            ),
+            recorder=llm_recorder,
+        )
         if not response.choices:
             raise ValueError("Assumptions estimator returned no choices.")
 

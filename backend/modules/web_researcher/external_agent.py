@@ -33,6 +33,7 @@ from backend.services.agents import (
     build_openrouter_model,
     run_agent_sync,
 )
+from backend.services.llm_observability import LlmCallContext, LlmCallRecorder
 from backend.utils.artifact_writer import stage_file_dir_name
 from backend.utils.config import AppConfig
 from backend.utils.prompts import load_prompt
@@ -49,6 +50,7 @@ def run_external_source_enrichment(
     config: AppConfig,
     api_key: str,
     run_id: str | None = None,
+    llm_recorder: LlmCallRecorder | None = None,
 ) -> tuple[
     list[ExternalEvidenceClaim],
     list[ExternalEvidenceResolution],
@@ -88,6 +90,18 @@ def run_external_source_enrichment(
                 agent,
                 json.dumps(task, ensure_ascii=False),
                 max_turns=config.enrichment.max_turns,
+                llm_recorder=llm_recorder,
+                llm_call_context=LlmCallContext(
+                    stage_name="enrichment",
+                    stage_family="enrichment",
+                    agent="external_source_researcher",
+                    call_kind="external_source_research",
+                    model=config.enrichment.model,
+                    metadata={
+                        "city": task.get("city"),
+                        "field": task.get("field"),
+                    },
+                ),
             )
             if isinstance(result.final_output, ExternalSourceAgentResult):
                 agent_output = result.final_output
@@ -111,6 +125,8 @@ def run_external_source_enrichment(
                 task=task,
                 session=session,
                 finalizer=finalizer,
+                llm_recorder=llm_recorder,
+                model=config.enrichment.model,
             )
         except Exception:
             logger.warning(
@@ -125,6 +141,8 @@ def run_external_source_enrichment(
                 task=task,
                 session=session,
                 finalizer=finalizer,
+                llm_recorder=llm_recorder,
+                model=config.enrichment.model,
             )
 
         if agent_output is None:
@@ -135,6 +153,8 @@ def run_external_source_enrichment(
                 task=task,
                 session=session,
                 finalizer=finalizer,
+                llm_recorder=llm_recorder,
+                model=config.enrichment.model,
             )
             if fallback_output is not None and fallback_output.claims:
                 agent_output = fallback_output
@@ -360,6 +380,8 @@ def _finalize_from_expanded_hits(
     task: dict[str, object],
     session: ExternalSearchSession,
     finalizer: Agent,
+    llm_recorder: LlmCallRecorder | None = None,
+    model: str | None = None,
 ) -> ExternalSourceAgentResult | None:
     """Ask a compact finalizer to extract claims from already-expanded hits."""
     session.stage_expanded_hits_for_active_task()
@@ -377,6 +399,19 @@ def _finalize_from_expanded_hits(
             finalizer,
             json.dumps(payload, ensure_ascii=False),
             max_turns=2,
+            llm_recorder=llm_recorder,
+            llm_call_context=LlmCallContext(
+                stage_name="enrichment",
+                stage_family="enrichment",
+                agent="external_source_finalizer",
+                call_kind="external_source_finalization",
+                model=model,
+                metadata={
+                    "city": task.get("city"),
+                    "field": task.get("field"),
+                    "candidate_count": len(candidates),
+                },
+            ),
         )
     except Exception:
         logger.warning(

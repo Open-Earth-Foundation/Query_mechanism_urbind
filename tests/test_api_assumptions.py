@@ -11,10 +11,12 @@ from backend.api.services import assumptions_review
 from backend.api.services.assumptions_review import (
     apply_assumptions_and_regenerate,
     discover_missing_data,
+    discover_missing_data_for_run,
     load_latest_assumptions_payload,
 )
-from backend.api.services.run_store import RunStore
+from backend.api.services.run_store import RunRecord, RunStore
 from backend.modules.writer.models import WriterOutput
+from backend.services.llm_observability import LlmCallContext, LlmCallRecorder
 from backend.utils.artifact_writer import ArtifactWriter, stage_file_dir_name
 from backend.utils.config import (
     WriterConfig,
@@ -107,6 +109,57 @@ def _create_completed_run(
         final_output_path=paths.final_output,
         context_bundle_path=paths.context_bundle,
         api_state_path=paths.api_state,
+    )
+
+
+def _create_completed_mlflow_run(
+    tmp_path: Path,
+) -> tuple[Path, AppConfig, RunStore, RunRecord]:
+    """Create a completed run with MLflow enabled for post-run sync tests."""
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    config.mlflow.enabled = True
+    run_store = RunStore(runs_dir)
+    _create_completed_run(
+        run_store=run_store,
+        config=config,
+        run_id="run-assumptions",
+        question="Build assumptions run",
+    )
+    run_record = run_store.get_run("run-assumptions")
+    assert run_record is not None
+    return runs_dir, config, run_store, run_record
+
+
+def _capture_assumptions_mlflow_sync(
+    monkeypatch: pytest.MonkeyPatch,
+    captured_sync: dict[str, object],
+) -> None:
+    """Install a fake MLflow sync that persists metadata through the adapter."""
+
+    def _fake_sync(
+        *,
+        run_logger: object,
+        config: object,
+        recorder: object,
+        force: bool = False,
+    ) -> dict[str, object]:
+        del config
+        metadata = {
+            "enabled": True,
+            "sync_status": "completed",
+            "mlflow_run_id": "assumptions-run",
+        }
+        captured_sync["force"] = force
+        captured_sync["recorder"] = recorder
+        run_logger.record_mlflow_metadata(metadata)
+        return metadata
+
+    monkeypatch.setattr(
+        "backend.api.services.assumptions_review.sync_run_to_mlflow",
+        _fake_sync,
     )
 
 
@@ -322,6 +375,120 @@ def test_apply_assumptions_does_not_persist_by_default(
     assert result.assumptions_path is None
     assert "# Revised body" in result.revised_content
     assert not (runs_dir / "run-assumptions" / "stage_files" / "assumptions").exists()
+
+
+def test_discover_assumptions_syncs_post_run_mlflow_artifacts(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    runs_dir, config, run_store, run_record = _create_completed_mlflow_run(tmp_path)
+    captured_sync: dict[str, object] = {}
+
+    def _stub_run_pass(
+        pass_name: str,
+        question: str,
+        final_document: str,
+        context_bundle: dict[str, object],
+        existing_items: list[MissingDataItem],
+        config: AppConfig,
+        api_key_override: str | None = None,
+        llm_recorder: LlmCallRecorder | None = None,
+    ) -> list[MissingDataItem]:
+        del question, final_document, context_bundle, existing_items, config
+        del api_key_override
+        if llm_recorder is not None:
+            llm_recorder.record_call(
+                LlmCallContext(
+                    stage_name="assumptions_discovery",
+                    stage_family="assumptions",
+                    agent="assumptions_reviewer",
+                    call_kind=f"{pass_name}_missing_data_review",
+                    model="test-model",
+                ),
+                request={"pass_name": pass_name},
+                response={"items": []},
+            )
+        return []
+
+    monkeypatch.setattr(
+        "backend.api.services.assumptions_review._run_discovery_pass",
+        _stub_run_pass,
+    )
+    _capture_assumptions_mlflow_sync(monkeypatch, captured_sync)
+
+    discover_missing_data_for_run(
+        run_store=run_store,
+        run_record=run_record,
+        config=config,
+        persist_artifacts=True,
+        api_key_override="sk-or-v1-test-key",
+    )
+
+    run_dir = runs_dir / "run-assumptions"
+    api_state = json.loads((run_dir / "api_state.json").read_text(encoding="utf-8"))
+    manifest = json.loads((run_dir / "manifest.json").read_text(encoding="utf-8"))
+    assert captured_sync["force"] is True
+    assert isinstance(captured_sync["recorder"], LlmCallRecorder)
+    assert api_state["mlflow"]["mlflow_run_id"] == "assumptions-run"
+    assert manifest["metadata"]["mlflow"]["sync_status"] == "completed"
+    assert manifest["aliases"]["llm_calls_index"]["path"] == "llm_calls/index.jsonl"
+
+
+def test_apply_assumptions_syncs_post_run_mlflow_artifacts(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    runs_dir, config, run_store, run_record = _create_completed_mlflow_run(tmp_path)
+    captured_sync: dict[str, object] = {}
+
+    def _stub_write_markdown(**kwargs: object) -> WriterOutput:
+        recorder = kwargs.get("llm_recorder")
+        if isinstance(recorder, LlmCallRecorder):
+            recorder.record_call(
+                LlmCallContext(
+                    stage_name="assumptions_apply",
+                    stage_family="assumptions",
+                    agent="assumptions_apply_writer",
+                    call_kind="apply_assumptions",
+                    model="test-model",
+                ),
+                request={"question": kwargs.get("question")},
+                response={"content": "# Revised body"},
+            )
+        return WriterOutput(content="# Revised body")
+
+    monkeypatch.setattr(
+        "backend.api.services.assumptions_review.write_markdown",
+        _stub_write_markdown,
+    )
+    _capture_assumptions_mlflow_sync(monkeypatch, captured_sync)
+
+    apply_assumptions_and_regenerate(
+        run_store=run_store,
+        run_record=run_record,
+        payload=AssumptionsPayload(
+            items=[
+                MissingDataItem(
+                    city="Aachen",
+                    missing_description="Missing share value",
+                    proposed_number="about 90%",
+                )
+            ],
+            persist_artifacts=True,
+        ),
+        config=config,
+        persist_artifacts=True,
+        api_key_override="sk-or-v1-test-key",
+    )
+
+    run_dir = runs_dir / "run-assumptions"
+    api_state = json.loads((run_dir / "api_state.json").read_text(encoding="utf-8"))
+    manifest = json.loads((run_dir / "manifest.json").read_text(encoding="utf-8"))
+    assert captured_sync["force"] is True
+    assert isinstance(captured_sync["recorder"], LlmCallRecorder)
+    assert api_state["mlflow"]["mlflow_run_id"] == "assumptions-run"
+    assert manifest["metadata"]["mlflow"]["sync_status"] == "completed"
+    assert manifest["aliases"]["llm_calls_index"]["path"] == "llm_calls/index.jsonl"
 
 
 def test_load_latest_assumptions_payload_uses_numbered_stage_fallback(tmp_path: Path) -> None:
