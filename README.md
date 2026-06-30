@@ -74,6 +74,7 @@ Environment variables (`.env`):
 - `MLFLOW_ENABLED` (optional, default `false`): enables best-effort MLflow observability for finalized pipeline runs.
 - `MLFLOW_TRACKING_URI` (optional): MLflow tracking URI. Leave empty to use MLflow's local/default tracking configuration.
 - `MLFLOW_EXPERIMENT_NAME` (optional, default `URBIND`): MLflow experiment used for mirrored runs.
+- `MLFLOW_ENVIRONMENT` (optional): environment tag added to mirrored MLflow runs, for example `local` or `production`.
 - `MLFLOW_ARTIFACT_PATH` (optional, default `run_artifacts`): artifact path under each MLflow run where the full `output/<run_id>/` directory is uploaded.
 - `MLFLOW_TRACE_MODE` (optional, default `consolidated`): trace mode. The backend creates one consolidated pipeline trace and falls back to split markdown/assumptions traces if needed.
 - `MLFLOW_FAIL_ON_ERROR` (optional, default `false`): when `false`, MLflow upload or tracing errors are recorded as warnings and local artifacts remain the source of truth.
@@ -180,6 +181,8 @@ instead of the full MLflow distribution, avoiding model/data/serving
 dependencies in runtime images.
 The backend uploads the complete `output/<run_id>/` directory with
 `mlflow.log_artifacts(...)`, not only files listed in `manifest.json`.
+When `MLFLOW_ENVIRONMENT` is set, its value is stored as the MLflow
+`environment` tag and in the local MLflow sync metadata.
 
 MLflow-enabled runs also record raw LLM call artifacts locally:
 
@@ -192,8 +195,13 @@ The trace policy prefers one consolidated trace tagged with
 `trace_family=pipeline` and `trace_group=<run_id>`, with child spans for each
 recorded LLM call. If consolidated trace creation fails, the backend falls
 back to separate `markdown` and `assumptions` traces under the same
-`trace_group`. MLflow sync metadata is written back to both `api_state.json`
-and `manifest.json["metadata"]["mlflow"]`.
+`trace_group`. To keep the MLflow trace detail view lossless for large
+requests and responses, recorded Agents SDK inputs are normalized to a
+standard top-level `messages` array before being sent to MLflow, matching the
+OpenAI chat trace shape that MLflow renders as expandable System/User message
+blocks. The raw per-call JSON artifacts keep the original unsplit request and
+response. MLflow sync metadata is written back to both `api_state.json` and
+`manifest.json["metadata"]["mlflow"]`.
 
 MLflow sync is retry-safe for one local run directory. If a previous sync
 created an MLflow run or trace but failed before artifact upload completed,
@@ -1166,6 +1174,7 @@ docker push ghcr.io/open-earth-foundation/query_mechanism_urbind-frontend:dev
 
 kubectl create secret generic urbind-query-mechanism-backend-secrets \
   --from-literal=OPENROUTER_API_KEY=<openrouter-key> \
+  --from-literal=MLFLOW_TRACKING_URI=<mlflow-tracking-uri> \
   --dry-run=client -o yaml | kubectl apply -f -
 
 kubectl apply -f k8s/backend-pvc.yml
@@ -1178,7 +1187,7 @@ kubectl apply -f k8s/frontend-service.yml
 
 Add `SERPER_API_KEY` and `FIRECRAWL_API_KEY` to the secret only when web research is enabled.
 
-The backend ConfigMap sets `VECTOR_STORE_ENABLED=true`, `VECTOR_STORE_AUTO_UPDATE_ON_RUN=false`, and `VECTOR_STORE_UPDATE_MODE=local_process` for the deployed environment. The backend still checks whether the vector store is stale, but it does not try to update it automatically in Kubernetes. When the store is stale, runs are blocked and the UI instructs the operator to run the maintenance workflow documented below.
+The backend ConfigMap sets `VECTOR_STORE_ENABLED=true`, `VECTOR_STORE_AUTO_UPDATE_ON_RUN=false`, and `VECTOR_STORE_UPDATE_MODE=local_process` for the deployed environment. It also enables MLflow with `MLFLOW_ENABLED=true`, `MLFLOW_EXPERIMENT_NAME=URBIND`, `MLFLOW_ENVIRONMENT=production`, `MLFLOW_ARTIFACT_PATH=run_artifacts`, `MLFLOW_TRACE_MODE=consolidated`, and `MLFLOW_FAIL_ON_ERROR=false`; the actual tracking URI comes from the `MLFLOW_TRACKING_URI` Kubernetes secret populated by GitHub Actions. The backend still checks whether the vector store is stale, but it does not try to update it automatically in Kubernetes. When the store is stale, runs are blocked and the UI instructs the operator to run the maintenance workflow documented below.
 
 ## GitHub Actions deployment
 
@@ -1201,6 +1210,7 @@ Required repository secrets:
 - `AWS_SECRET_ACCESS_KEY_EKS_DEV_USER`
 - `EKS_DEV_NAME`
 - `OPENROUTER_API_KEY`
+- `MLFLOW_TRACKING_URI`
 - `APP_SHARED_PASSWORD_HASH`
 - `APP_SESSION_SECRET`
 

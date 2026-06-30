@@ -45,7 +45,12 @@ def _metric_value(value: object) -> float | None:
     return None
 
 
-def _build_tags(api_state: dict[str, Any], experiment_name: str) -> dict[str, str]:
+def _build_tags(
+    api_state: dict[str, Any],
+    *,
+    experiment_name: str,
+    environment: str | None,
+) -> dict[str, str]:
     """Build stable MLflow tags from api_state.json."""
     inputs = api_state.get("inputs")
     if not isinstance(inputs, dict):
@@ -55,6 +60,7 @@ def _build_tags(api_state: dict[str, Any], experiment_name: str) -> dict[str, st
         "status": str(api_state.get("status") or ""),
         "finish_reason": str(api_state.get("finish_reason") or ""),
         "experiment": experiment_name,
+        "environment": environment or "",
         "query_mode": str(inputs.get("query_mode") or ""),
         "analysis_mode": str(inputs.get("analysis_mode") or ""),
         "city_scope_mode": str(inputs.get("city_scope_mode") or ""),
@@ -134,12 +140,45 @@ def _span_attributes(call: dict[str, Any]) -> dict[str, object]:
 
 def _set_span_payload(span: Any, *, inputs: object, outputs: object) -> None:
     """Set span inputs and outputs when supported by the MLflow version."""
+    serialized_inputs = safe_serialize(inputs)
     set_inputs = getattr(span, "set_inputs", None)
     if callable(set_inputs):
-        set_inputs(safe_serialize(inputs))
+        set_inputs(_format_span_inputs_for_mlflow_display(serialized_inputs))
     set_outputs = getattr(span, "set_outputs", None)
     if callable(set_outputs):
         set_outputs(safe_serialize(outputs))
+
+
+def _format_span_inputs_for_mlflow_display(inputs: Any) -> Any:
+    """Return chat-style span inputs so MLflow renders full message blocks."""
+    if not isinstance(inputs, dict):
+        return inputs
+    system_prompt = inputs.get("system_prompt")
+    input_items = inputs.get("input_items")
+    if not isinstance(input_items, list):
+        return inputs
+
+    messages: list[dict[str, object]] = []
+    if isinstance(system_prompt, str) and system_prompt:
+        messages.append({"role": "system", "content": system_prompt})
+    for item in input_items:
+        if not isinstance(item, dict):
+            continue
+        role = item.get("role")
+        content = item.get("content")
+        if isinstance(role, str) and isinstance(content, str):
+            messages.append({"role": role, "content": content})
+
+    if not messages:
+        return inputs
+
+    formatted = {
+        key: value
+        for key, value in inputs.items()
+        if key not in {"system_prompt", "input_items"}
+    }
+    formatted["messages"] = messages
+    return formatted
 
 
 def _create_trace(
@@ -356,6 +395,7 @@ def sync_run_to_mlflow(
     run_dir = run_logger.run_paths.base_dir
     run_id = run_dir.name
     experiment_name = str(getattr(config, "experiment_name", "URBIND"))
+    environment = getattr(config, "environment", None)
     artifact_path = str(getattr(config, "artifact_path", "run_artifacts"))
     metadata: dict[str, object] = {
         "enabled": True,
@@ -364,6 +404,8 @@ def sync_run_to_mlflow(
         "experiment_name": experiment_name,
         "artifact_path": artifact_path,
     }
+    if environment:
+        metadata["environment"] = str(environment)
 
     try:
         _ensure_utf8_console_streams()
@@ -396,7 +438,13 @@ def sync_run_to_mlflow(
         with mlflow_module.start_run(**start_run_kwargs) as active_run:
             mlflow_run_id = str(getattr(active_run.info, "run_id", ""))
             metadata["mlflow_run_id"] = mlflow_run_id
-            mlflow_module.set_tags(_build_tags(api_state, experiment_name))
+            mlflow_module.set_tags(
+                _build_tags(
+                    api_state,
+                    experiment_name=experiment_name,
+                    environment=str(environment) if environment else None,
+                )
+            )
             mlflow_module.log_metrics(_build_metrics(api_state, len(calls)))
             existing_traces = existing_mlflow.get("traces")
             if isinstance(existing_traces, dict) and _trace_ids_from_payload(

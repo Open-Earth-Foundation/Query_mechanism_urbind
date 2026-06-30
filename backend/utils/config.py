@@ -186,6 +186,7 @@ class MlflowConfig(BaseModel):
     enabled: bool = False
     tracking_uri: str | None = None
     experiment_name: str = "URBIND"
+    environment: str | None = None
     artifact_path: str = "run_artifacts"
     trace_mode: MlflowTraceMode = "consolidated"
     fail_on_error: bool = False
@@ -315,6 +316,7 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
     mlflow_enabled = os.getenv("MLFLOW_ENABLED")
     mlflow_tracking_uri = os.getenv("MLFLOW_TRACKING_URI")
     mlflow_experiment_name = os.getenv("MLFLOW_EXPERIMENT_NAME")
+    mlflow_environment = os.getenv("MLFLOW_ENVIRONMENT")
     mlflow_artifact_path = os.getenv("MLFLOW_ARTIFACT_PATH")
     mlflow_trace_mode = os.getenv("MLFLOW_TRACE_MODE")
     mlflow_fail_on_error = os.getenv("MLFLOW_FAIL_ON_ERROR")
@@ -368,6 +370,8 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
         config.mlflow.tracking_uri = mlflow_tracking_uri
     if mlflow_experiment_name:
         config.mlflow.experiment_name = mlflow_experiment_name
+    if mlflow_environment:
+        config.mlflow.environment = mlflow_environment
     if mlflow_artifact_path:
         config.mlflow.artifact_path = mlflow_artifact_path
     if mlflow_trace_mode:

@@ -467,6 +467,7 @@ def test_load_config_applies_mlflow_defaults(
         "MLFLOW_ENABLED",
         "MLFLOW_TRACKING_URI",
         "MLFLOW_EXPERIMENT_NAME",
+        "MLFLOW_ENVIRONMENT",
         "MLFLOW_ARTIFACT_PATH",
         "MLFLOW_TRACE_MODE",
         "MLFLOW_FAIL_ON_ERROR",
@@ -478,6 +479,7 @@ def test_load_config_applies_mlflow_defaults(
     assert config.mlflow.enabled is False
     assert config.mlflow.tracking_uri is None
     assert config.mlflow.experiment_name == "URBIND"
+    assert config.mlflow.environment is None
     assert config.mlflow.artifact_path == "run_artifacts"
     assert config.mlflow.trace_mode == "consolidated"
     assert config.mlflow.fail_on_error is False
@@ -492,6 +494,7 @@ def test_load_config_applies_mlflow_env_overrides(
     monkeypatch.setenv("MLFLOW_ENABLED", "true")
     monkeypatch.setenv("MLFLOW_TRACKING_URI", "file:///tmp/mlruns")
     monkeypatch.setenv("MLFLOW_EXPERIMENT_NAME", "Test Experiment")
+    monkeypatch.setenv("MLFLOW_ENVIRONMENT", "production")
     monkeypatch.setenv("MLFLOW_ARTIFACT_PATH", "full_run")
     monkeypatch.setenv("MLFLOW_TRACE_MODE", "consolidated")
     monkeypatch.setenv("MLFLOW_FAIL_ON_ERROR", "true")
@@ -501,6 +504,7 @@ def test_load_config_applies_mlflow_env_overrides(
     assert config.mlflow.enabled is True
     assert config.mlflow.tracking_uri == "file:///tmp/mlruns"
     assert config.mlflow.experiment_name == "Test Experiment"
+    assert config.mlflow.environment == "production"
     assert config.mlflow.artifact_path == "full_run"
     assert config.mlflow.trace_mode == "consolidated"
     assert config.mlflow.fail_on_error is True

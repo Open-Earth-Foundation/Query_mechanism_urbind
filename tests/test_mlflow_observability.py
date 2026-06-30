@@ -79,6 +79,7 @@ class _FakeMlflow:
         self.logged_artifacts: list[tuple[str, str | None]] = []
         self.logged_artifact_files: list[tuple[str, str | None]] = []
         self.spans: list[dict[str, object]] = []
+        self.span_objects: list[_FakeSpan] = []
         self.trace_tags: list[dict[str, str]] = []
 
     def set_tracking_uri(self, uri: str) -> None:
@@ -126,7 +127,9 @@ class _FakeMlflow:
                 "attributes": attributes,
             }
         )
-        return _FakeSpan(name)
+        span = _FakeSpan(name)
+        self.span_objects.append(span)
+        return span
 
     def update_current_trace(self, *, tags: dict[str, str]) -> None:
         self.trace_tags.append(tags)
@@ -377,6 +380,7 @@ def test_mlflow_sync_logs_full_run_dir_and_consolidated_trace(tmp_path: Path) ->
             "enabled": True,
             "tracking_uri": "file:///tmp/mlruns",
             "experiment_name": "URBIND_TEST",
+            "environment": "test",
             "artifact_path": "run_artifacts",
         },
     ).mlflow
@@ -394,12 +398,86 @@ def test_mlflow_sync_logs_full_run_dir_and_consolidated_trace(tmp_path: Path) ->
         (str(run_logger.run_paths.base_dir), "run_artifacts")
     ]
     assert fake_mlflow.tags["run_id"] == run_logger.run_paths.base_dir.name
+    assert fake_mlflow.tags["environment"] == "test"
     assert fake_mlflow.metrics["llm_call_artifact_count"] == 1.0
     assert any(span["name"].endswith(":pipeline") for span in fake_mlflow.spans)
     api_state = json.loads(run_logger.run_paths.api_state.read_text(encoding="utf-8"))
     manifest = json.loads(run_logger.run_paths.manifest.read_text(encoding="utf-8"))
     assert api_state["mlflow"]["mlflow_run_id"] == "mlflow-run-id"
+    assert api_state["mlflow"]["environment"] == "test"
     assert manifest["metadata"]["mlflow"]["sync_status"] == "completed"
+
+
+def test_mlflow_sync_formats_agents_input_as_chat_messages_for_trace_view(
+    tmp_path: Path,
+) -> None:
+    run_logger = _finalized_run_logger(tmp_path)
+    recorder = LlmCallRecorder(
+        run_logger.run_paths.base_dir,
+        run_logger.run_paths.base_dir.name,
+    )
+    system_prompt = "System instructions " * 220
+    long_request = "request content " * 220
+    long_response = "response content " * 220
+    request_json = json.dumps(
+        {
+            "question": "How much solar storage?",
+            "chunks": [
+                {
+                    "path": "documents/Lodz.md",
+                    "content": long_request,
+                }
+            ],
+        }
+    )
+    recorder.record_call(
+        LlmCallContext(
+            stage_name="markdown_extraction",
+            stage_family="markdown",
+            agent="markdown_researcher",
+            call_kind="batch_extraction",
+            model="test-model",
+        ),
+        request={
+            "system_prompt": system_prompt,
+            "input_items": [{"role": "user", "content": request_json}],
+            "agent": "Markdown Researcher",
+        },
+        response={"output": [{"type": "text", "text": long_response}]},
+    )
+    config = build_test_app_config(
+        runs_dir=tmp_path,
+        mlflow_overrides={"enabled": True},
+    ).mlflow
+    fake_mlflow = _FakeMlflow()
+
+    metadata = sync_run_to_mlflow(
+        run_logger=run_logger,
+        config=config,
+        recorder=recorder,
+        mlflow_module=fake_mlflow,
+    )
+
+    assert metadata["sync_status"] == "completed"
+    llm_span = next(
+        span for span in fake_mlflow.span_objects if span.name.startswith("1:markdown")
+    )
+    assert isinstance(llm_span.inputs, dict)
+    assert "input_items" not in llm_span.inputs
+    assert "system_prompt" not in llm_span.inputs
+    assert llm_span.inputs["agent"] == "Markdown Researcher"
+    messages = llm_span.inputs["messages"]
+    assert isinstance(messages, list)
+    assert messages == [
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": request_json},
+    ]
+    assert isinstance(llm_span.outputs, dict)
+    output = llm_span.outputs["output"]
+    assert isinstance(output, list)
+    first_output = output[0]
+    assert isinstance(first_output, dict)
+    assert first_output["text"] == long_response
 
 
 def test_mlflow_sync_reconfigures_charmap_stdout_for_mlflow_output(

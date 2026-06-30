@@ -48,6 +48,7 @@ Runtime controls:
 - `MLFLOW_ENABLED=false`
 - `MLFLOW_TRACKING_URI`
 - `MLFLOW_EXPERIMENT_NAME=URBIND`
+- `MLFLOW_ENVIRONMENT`
 - `MLFLOW_ARTIFACT_PATH=run_artifacts`
 - `MLFLOW_TRACE_MODE=consolidated`
 - `MLFLOW_FAIL_ON_ERROR=false`
@@ -123,6 +124,13 @@ Each call record includes:
 - `error`
 
 The run-level `llm_calls/index.jsonl` stores the same ordering and points to each per-call JSON file.
+
+MLflow span inputs and outputs are derived from these call records. To avoid
+MLflow's detail view treating Agents SDK payloads as generic nested JSON, the
+sync step normalizes recorded Agents SDK inputs to a standard top-level
+`messages` array before sending them to MLflow. This matches the OpenAI chat
+trace shape rendered by MLflow as expandable System/User message blocks. The
+per-call JSON artifacts retain the original unsplit `request` and `response`.
 
 ## Uploaded Artifact Details
 

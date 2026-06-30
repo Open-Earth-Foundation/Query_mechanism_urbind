@@ -52,6 +52,11 @@ spec:
                   name: urbind-query-mechanism-backend-secrets
                   key: FIRECRAWL_API_KEY
                   optional: true
+            - name: MLFLOW_TRACKING_URI
+              valueFrom:
+                secretKeyRef:
+                  name: urbind-query-mechanism-backend-secrets
+                  key: MLFLOW_TRACKING_URI
             - name: APP_SESSION_SECRET
               valueFrom:
                 secretKeyRef:
