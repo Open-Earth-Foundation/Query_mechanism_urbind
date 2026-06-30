@@ -195,13 +195,14 @@ The trace policy prefers one consolidated trace tagged with
 `trace_family=pipeline` and `trace_group=<run_id>`, with child spans for each
 recorded LLM call. If consolidated trace creation fails, the backend falls
 back to separate `markdown` and `assumptions` traces under the same
-`trace_group`. To keep the MLflow trace detail view lossless for large
-requests and responses, recorded Agents SDK inputs are normalized to a
-standard top-level `messages` array before being sent to MLflow, matching the
-OpenAI chat trace shape that MLflow renders as expandable System/User message
-blocks. The raw per-call JSON artifacts keep the original unsplit request and
-response. MLflow sync metadata is written back to both `api_state.json` and
-`manifest.json["metadata"]["mlflow"]`.
+`trace_group`. To keep the MLflow trace detail view usable for large requests
+and responses, recorded Agents SDK inputs are normalized to a top-level
+`messages` array before being sent to MLflow. JSON-looking message content is
+parsed into nested fields and large text values are split into trace-only
+`content_parts` so the details panel can expand them instead of truncating one
+escaped string. The raw per-call JSON artifacts keep the original unsplit
+request and response. MLflow sync metadata is written back to both
+`api_state.json` and `manifest.json["metadata"]["mlflow"]`.
 
 MLflow sync is retry-safe for one local run directory. If a previous sync
 created an MLflow run or trace but failed before artifact upload completed,

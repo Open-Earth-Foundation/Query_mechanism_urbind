@@ -126,11 +126,12 @@ Each call record includes:
 The run-level `llm_calls/index.jsonl` stores the same ordering and points to each per-call JSON file.
 
 MLflow span inputs and outputs are derived from these call records. To avoid
-MLflow's detail view treating Agents SDK payloads as generic nested JSON, the
-sync step normalizes recorded Agents SDK inputs to a standard top-level
-`messages` array before sending them to MLflow. This matches the OpenAI chat
-trace shape rendered by MLflow as expandable System/User message blocks. The
-per-call JSON artifacts retain the original unsplit `request` and `response`.
+MLflow's detail view treating Agents SDK payloads as one escaped prompt blob,
+the sync step normalizes recorded Agents SDK inputs to a top-level `messages`
+array before sending them to MLflow. JSON-looking message content is parsed
+into nested fields, and large text values are split into trace-only
+`content_parts` so the MLflow details panel can expand them. The per-call JSON
+artifacts retain the original unsplit `request` and `response`.
 
 ## Uploaded Artifact Details
 
