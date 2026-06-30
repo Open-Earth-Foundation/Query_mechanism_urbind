@@ -135,20 +135,6 @@ class _FakeMlflow:
         self.trace_tags.append(tags)
 
 
-def _join_content_parts(value: object) -> str:
-    """Join trace-only content parts produced for MLflow display."""
-    assert isinstance(value, dict)
-    content_parts = value["content_parts"]
-    assert isinstance(content_parts, list)
-    joined = []
-    for part in content_parts:
-        assert isinstance(part, dict)
-        text = part["text"]
-        assert isinstance(text, str)
-        joined.append(text)
-    return "".join(joined)
-
-
 def _finalized_run_logger(tmp_path: Path) -> RunLogger:
     paths = create_run_paths(tmp_path, "mlflow-test-run", "context_bundle.json")
     run_logger = RunLogger(paths, "Question?")
@@ -422,7 +408,7 @@ def test_mlflow_sync_logs_full_run_dir_and_consolidated_trace(tmp_path: Path) ->
     assert manifest["metadata"]["mlflow"]["sync_status"] == "completed"
 
 
-def test_mlflow_sync_formats_agents_payloads_for_trace_view(
+def test_mlflow_sync_formats_agents_input_as_chat_messages_for_trace_view(
     tmp_path: Path,
 ) -> None:
     run_logger = _finalized_run_logger(tmp_path)
@@ -444,7 +430,7 @@ def test_mlflow_sync_formats_agents_payloads_for_trace_view(
             ],
         }
     )
-    call_path = recorder.record_call(
+    recorder.record_call(
         LlmCallContext(
             stage_name="markdown_extraction",
             stage_family="markdown",
@@ -482,29 +468,17 @@ def test_mlflow_sync_formats_agents_payloads_for_trace_view(
     assert llm_span.inputs["agent"] == "Markdown Researcher"
     messages = llm_span.inputs["messages"]
     assert isinstance(messages, list)
-    assert messages[0]["role"] == "system"
-    assert _join_content_parts(messages[0]["content"]) == system_prompt
-    assert messages[1]["role"] == "user"
-    user_content = messages[1]["content"]
-    assert isinstance(user_content, dict)
-    assert user_content["question"] == "How much solar storage?"
-    chunks = user_content["chunks"]
-    assert isinstance(chunks, list)
-    first_chunk = chunks[0]
-    assert isinstance(first_chunk, dict)
-    assert first_chunk["path"] == "documents/Lodz.md"
-    assert _join_content_parts(first_chunk["content"]) == long_request
+    assert messages == [
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": request_json},
+    ]
 
     assert isinstance(llm_span.outputs, dict)
     output = llm_span.outputs["output"]
     assert isinstance(output, list)
     first_output = output[0]
     assert isinstance(first_output, dict)
-    assert _join_content_parts(first_output["text"]) == long_response
-
-    raw_call = json.loads(call_path.read_text(encoding="utf-8"))
-    assert raw_call["request"]["input_items"][0]["content"] == request_json
-    assert raw_call["response"]["output"][0]["text"] == long_response
+    assert first_output["text"] == long_response
 
 
 def test_mlflow_sync_reconfigures_charmap_stdout_for_mlflow_output(

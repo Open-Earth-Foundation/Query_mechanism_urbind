@@ -13,7 +13,6 @@ from backend.services.llm_observability import LlmCallRecorder, safe_serialize
 logger = logging.getLogger(__name__)
 
 _POST_RUN_ASSUMPTION_STAGES = {"assumptions_discovery", "assumptions_apply"}
-_TRACE_TEXT_PART_LENGTH = 2000
 
 
 def _ensure_utf8_console_streams() -> None:
@@ -147,95 +146,39 @@ def _set_span_payload(span: Any, *, inputs: object, outputs: object) -> None:
         set_inputs(_format_span_inputs_for_mlflow_display(serialized_inputs))
     set_outputs = getattr(span, "set_outputs", None)
     if callable(set_outputs):
-        set_outputs(_format_span_payload_for_mlflow_display(safe_serialize(outputs)))
+        set_outputs(safe_serialize(outputs))
 
 
 def _format_span_inputs_for_mlflow_display(inputs: Any) -> Any:
-    """Return trace-only inputs shaped for MLflow's detail view."""
+    """Return chat-style span inputs so MLflow renders full message blocks."""
     if not isinstance(inputs, dict):
-        return _format_span_payload_for_mlflow_display(inputs)
+        return inputs
     system_prompt = inputs.get("system_prompt")
     input_items = inputs.get("input_items")
     if not isinstance(input_items, list):
-        return _format_span_payload_for_mlflow_display(inputs)
+        return inputs
 
     messages: list[dict[str, object]] = []
     if isinstance(system_prompt, str) and system_prompt:
-        messages.append(
-            {
-                "role": "system",
-                "content": _format_span_payload_for_mlflow_display(system_prompt),
-            }
-        )
+        messages.append({"role": "system", "content": system_prompt})
     for item in input_items:
         if not isinstance(item, dict):
             continue
         role = item.get("role")
-        if not isinstance(role, str):
-            continue
-        message: dict[str, object] = {"role": role}
-        for key, value in item.items():
-            if key != "role":
-                message[key] = _format_span_payload_for_mlflow_display(value)
-        messages.append(message)
+        content = item.get("content")
+        if isinstance(role, str) and isinstance(content, str):
+            messages.append({"role": role, "content": content})
 
     if not messages:
-        return _format_span_payload_for_mlflow_display(inputs)
+        return inputs
 
     formatted = {
-        key: _format_span_payload_for_mlflow_display(value)
+        key: value
         for key, value in inputs.items()
         if key not in {"system_prompt", "input_items"}
     }
     formatted["messages"] = messages
     return formatted
-
-
-def _format_span_payload_for_mlflow_display(value: Any) -> Any:
-    """Return JSON-like payloads with parseable strings and large text expanded."""
-    if isinstance(value, str):
-        return _format_text_for_mlflow_display(value)
-    if isinstance(value, list):
-        return [_format_span_payload_for_mlflow_display(item) for item in value]
-    if isinstance(value, dict):
-        return {
-            key: _format_span_payload_for_mlflow_display(item)
-            for key, item in value.items()
-        }
-    return value
-
-
-def _format_text_for_mlflow_display(value: str) -> object:
-    """Parse JSON object strings and split long text for nested MLflow rendering."""
-    parsed = _parse_json_object_or_list(value)
-    if parsed is not None:
-        return _format_span_payload_for_mlflow_display(parsed)
-    if len(value) <= _TRACE_TEXT_PART_LENGTH:
-        return value
-    content_parts = []
-    for start in range(0, len(value), _TRACE_TEXT_PART_LENGTH):
-        content_parts.append(
-            {
-                "index": len(content_parts) + 1,
-                "text": value[start : start + _TRACE_TEXT_PART_LENGTH],
-            }
-        )
-    return {
-        "text_length": len(value),
-        "content_parts": content_parts,
-    }
-
-
-def _parse_json_object_or_list(value: str) -> object | None:
-    """Return parsed JSON for object/list strings, otherwise None."""
-    stripped = value.strip()
-    if not stripped or stripped[0] not in {"{", "["}:
-        return None
-    try:
-        parsed = json.loads(stripped)
-    except json.JSONDecodeError:
-        return None
-    return parsed if isinstance(parsed, (dict, list)) else None
 
 
 def _create_trace(
