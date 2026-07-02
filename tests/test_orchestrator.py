@@ -328,6 +328,18 @@ def test_run_pipeline_creates_artifacts(
     )
     assert markdown_stage["outputs"]["cities_with_excerpts"] == ["munich"]
     assert markdown_stage["outputs"]["cities_without_excerpts"] == []
+    progress_payload = json.loads(
+        (paths.base_dir / "progress.json").read_text(encoding="utf-8")
+    )
+    progress_by_id = {step["id"]: step for step in progress_payload["steps"]}
+    assert progress_by_id["retrieval"]["status"] == "skipped"
+    assert progress_by_id["retrieval"]["stage_number"] == 3
+    assert progress_by_id["markdown_inputs"]["status"] == "completed"
+    assert progress_by_id["markdown_inputs"]["stage_number"] == 4
+    assert progress_by_id["markdown_batching"]["status"] == "completed"
+    assert progress_by_id["markdown_batching"]["stage_number"] == 5
+    assert progress_by_id["markdown_research"]["status"] == "completed"
+    assert progress_by_id["markdown_research"]["stage_number"] == 6
     summary_events = [
         json.loads(line)
         for line in paths.summary_events.read_text(encoding="utf-8").splitlines()

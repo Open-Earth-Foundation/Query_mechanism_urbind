@@ -399,6 +399,90 @@ class TestFreshnessChecker:
         assert "dresden" in evidence
         assert evidence["dresden"][0].startswith("Dresden allocated 50M EUR")
 
+    def test_parses_json_array_classification_response(self) -> None:
+        config = _make_config()
+        findings = [
+            WebFinding(
+                city="Dresden",
+                field="capex",
+                value=50,
+                source_url="https://x.com",
+                source_type="report",
+                extraction_confidence=0.9,
+            )
+        ]
+        context = {
+            "markdown": {
+                "excerpts": [
+                    {
+                        "city_key": "Dresden",
+                        "partial_answer": "Dresden allocated 50M EUR to climate capex.",
+                    },
+                ]
+            }
+        }
+        mock_resp = _mock_openai_response(
+            '[{"index": 0, "classification": "consistent", '
+            '"ccc_value_extracted": "50M EUR", "reason": "Values match."}]'
+        )
+
+        with patch(
+            "backend.modules.web_researcher.freshness.record_openai_chat_completion",
+            return_value=mock_resp,
+        ):
+            result = check_freshness(findings, context, config, "key")
+
+        assert len(result) == 1
+        assert result[0].classification == "consistent"
+        assert result[0].ccc_value == "50M EUR"
+
+    def test_recovers_adjacent_object_classification_response(self) -> None:
+        config = _make_config()
+        findings = [
+            WebFinding(
+                city="Dresden",
+                field="capex",
+                value=50,
+                source_url="https://x.com/one",
+                source_type="report",
+                extraction_confidence=0.9,
+            ),
+            WebFinding(
+                city="Dresden",
+                field="opex",
+                value=12,
+                source_url="https://x.com/two",
+                source_type="report",
+                extraction_confidence=0.9,
+            ),
+        ]
+        context = {
+            "markdown": {
+                "excerpts": [
+                    {
+                        "city_key": "Dresden",
+                        "partial_answer": "Dresden allocated 50M EUR capex and 12M EUR opex.",
+                    },
+                ]
+            }
+        }
+        mock_resp = _mock_openai_response(
+            '{"index": 0, "classification": "consistent", '
+            '"ccc_value_extracted": "50M EUR", "reason": "Capex matches."},'
+            '{"index": 1, "classification": "uncertain", '
+            '"ccc_value_extracted": null, "reason": "No comparable CCC value."}'
+        )
+
+        with patch(
+            "backend.modules.web_researcher.freshness.record_openai_chat_completion",
+            return_value=mock_resp,
+        ):
+            result = check_freshness(findings, context, config, "key")
+
+        assert [item.classification for item in result] == ["consistent", "uncertain"]
+        assert result[0].reason == "Capex matches."
+        assert result[1].reason == "No comparable CCC value."
+
 
 # ---------------------------------------------------------------------------
 # Search Worker (integration-level with mocks)

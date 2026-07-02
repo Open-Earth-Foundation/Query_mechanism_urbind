@@ -10,8 +10,8 @@ from openai import OpenAI
 
 from backend.modules.web_researcher.models import FreshnessResult, WebFinding
 from backend.modules.web_researcher.utils.json_helpers import (
-    extract_json_candidate,
     extract_message_text,
+    parse_json_array_candidate,
 )
 from backend.services.llm_observability import (
     LlmCallContext,
@@ -148,21 +148,19 @@ def check_freshness(
             return _fallback_uncertain(findings_to_check)
 
         content = extract_message_text(response.choices[0].message.content)
-        candidate = extract_json_candidate(content)
-        parsed = json.loads(candidate)
+        parsed = parse_json_array_candidate(content)
 
         classification_map: dict[int, tuple[str, str, str | None]] = {}
-        if isinstance(parsed, list):
-            for item in parsed:
-                if not isinstance(item, dict):
-                    continue
-                idx = item.get("index")
-                cls = item.get("classification", "uncertain")
-                reason = item.get("reason", "")
-                ccc_extracted = item.get("ccc_value_extracted")
-                if isinstance(idx, int) and cls in ("consistent", "superseded", "uncertain", "cancelled"):
-                    ccc_val = str(ccc_extracted) if ccc_extracted not in (None, "") else None
-                    classification_map[idx] = (cls, reason, ccc_val)
+        for item in parsed:
+            if not isinstance(item, dict):
+                continue
+            idx = item.get("index")
+            cls = item.get("classification", "uncertain")
+            reason = item.get("reason", "")
+            ccc_extracted = item.get("ccc_value_extracted")
+            if isinstance(idx, int) and cls in ("consistent", "superseded", "uncertain", "cancelled"):
+                ccc_val = str(ccc_extracted) if ccc_extracted not in (None, "") else None
+                classification_map[idx] = (cls, reason, ccc_val)
 
         results: list[FreshnessResult] = []
         for i, (wf, _excerpts) in enumerate(findings_to_check):

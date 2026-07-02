@@ -571,6 +571,7 @@ def run_pipeline(
             retriever_signature = inspect.signature(retrieve_chunks_for_queries)
             if "run_id" in retriever_signature.parameters:
                 retrieval_kwargs["run_id"] = run_id_value
+            progress.start_step("retrieval", "Retrieving markdown context")
             retrieved_chunks, retrieval_meta = retrieve_chunks_for_queries(
                 **retrieval_kwargs
             )
@@ -607,7 +608,20 @@ def run_pipeline(
                     "metrics": build_retrieval_metrics(retrieval_payload),
                 },
             )
+            progress.add_item(
+                "retrieval",
+                f"{len(retrieved_chunks)} chunks retrieved",
+                count=len(retrieved_chunks),
+            )
+            progress.complete_step("retrieval")
         else:
+            progress.start_step("retrieval", "Retrieving markdown context")
+            progress.add_item(
+                "retrieval",
+                "Vector store retrieval disabled; using markdown files",
+                metadata={"source_mode": markdown_source_mode},
+            )
+            progress.complete_step("retrieval", status="skipped")
             markdown_chunks = load_markdown_documents(
                 config.markdown_dir,
                 config.markdown_researcher,
@@ -618,6 +632,7 @@ def run_pipeline(
             run_id_value,
             markdown_source_mode,
         )
+        progress.start_step("markdown_inputs", "Resolving markdown inputs")
         run_logger.record_markdown_inputs(
             markdown_dir=config.markdown_dir,
             selected_cities_planned=selected_cities,
@@ -625,6 +640,14 @@ def run_pipeline(
             markdown_source_mode=markdown_source_mode,
             analysis_mode=analysis_mode,
         )
+        progress.add_item(
+            "markdown_inputs",
+            f"{len(markdown_chunks)} markdown chunks resolved",
+            count=len(markdown_chunks),
+            metadata={"source_mode": markdown_source_mode},
+        )
+        progress.complete_step("markdown_inputs")
+        progress.start_step("markdown_batching", "Batching markdown context")
         documents_by_city = split_documents_by_city(markdown_chunks)
         batch_max_chunks = int(max(config.markdown_researcher.batch_max_chunks, 1))
         batch_token_limit = int(resolve_batch_input_token_limit(config))
@@ -693,6 +716,13 @@ def run_pipeline(
                 },
             },
         )
+        progress.add_item(
+            "markdown_batching",
+            f"{len(batch_plan)} batches prepared",
+            count=len(batch_plan),
+            metadata={"cities": sorted(documents_by_city.keys())},
+        )
+        progress.complete_step("markdown_batching")
         markdown_kwargs: dict[str, object] = {
             "log_llm_payload": log_llm_payload,
         }
@@ -708,6 +738,7 @@ def run_pipeline(
             or markdown_accepts_extra_kwargs
         ):
             markdown_kwargs["llm_recorder"] = llm_recorder
+        progress.start_step("markdown_research", "Searching markdown documents")
         markdown_result = markdown_func(
             canonical_research_query,
             markdown_chunks,
@@ -722,8 +753,6 @@ def run_pipeline(
             "retrieval_queries": retrieval_queries,
             "markdown_source_mode": markdown_source_mode,
         }
-
-    progress.start_step("markdown_research", "Searching markdown documents")
 
     try:
         markdown_payload = _run_initial_markdown()
