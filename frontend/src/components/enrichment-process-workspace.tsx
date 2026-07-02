@@ -65,6 +65,14 @@ function HintChip({
   );
 }
 
+function StatusChip({ label }: { label: string }) {
+  return (
+    <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] font-medium text-slate-500">
+      {label}
+    </span>
+  );
+}
+
 function describeFreshnessClassification(name: string): string {
   switch (name.toLowerCase()) {
     case "consistent":
@@ -246,7 +254,14 @@ export function EnrichmentProcessWorkspace({
       const unusedTotal = externalSources?.unused_count ?? detail?.unused_total ?? unused.length;
       const shownUnused = showAllUnused ? unused : unused.slice(0, UNUSED_PREVIEW_COUNT);
       const webExecuted = Boolean(webResearch?.executed);
-      const externalExecuted = Boolean(externalSources?.executed);
+      const externalAvailable = Boolean(externalSources ?? detail);
+      const externalExecuted = externalSources?.executed ?? Boolean(detail);
+      const freshnessStatus =
+        freshness && !freshness.executed
+          ? webExecuted && webResearch?.web_finding_count === 0
+            ? "not needed"
+            : "pending"
+          : null;
       return (
         <div className="space-y-4 text-sm text-slate-600">
           {step.warn ? (
@@ -260,50 +275,180 @@ export function EnrichmentProcessWorkspace({
             </div>
           ) : null}
 
+          {externalAvailable ? (
+            <div className="space-y-3 rounded-md border border-slate-200 bg-white p-3">
+              <div className="flex flex-wrap items-center gap-2">
+                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">
+                  External sources
+                </p>
+                {externalExecuted ? (
+                  <>
+                    <HintChip
+                      title="External-source claims accepted into governed anchors."
+                      className="rounded-full bg-teal-50 px-2 py-0.5 text-[11px] font-medium text-teal-700"
+                    >
+                      {validated.length} validated
+                    </HintChip>
+                    <HintChip
+                      title="External-source candidates found but not validated into anchors."
+                      className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] text-slate-600"
+                    >
+                      {unusedTotal} found not validated
+                    </HintChip>
+                    <HintChip
+                      title="Fields checked against external sources with no evidence found."
+                      className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] text-slate-600"
+                    >
+                      {noEvidence.length} no evidence
+                    </HintChip>
+                  </>
+                ) : (
+                  <StatusChip label="pending" />
+                )}
+              </div>
+
+              {externalExecuted && validated.length > 0 ? (
+                <div className="space-y-2">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">
+                    Validated into anchors ({validated.length})
+                  </p>
+                  {validated.map((v, i) => (
+                    <div
+                      key={`${v.city}-${v.field}-${i}`}
+                      className="rounded-lg border border-teal-200 border-l-[3px] border-l-teal-500 bg-teal-50/40 p-3"
+                    >
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span className="rounded-md bg-white/80 px-2 py-1 text-xs font-semibold text-slate-800 ring-1 ring-inset ring-teal-200">
+                          {v.value}
+                          {v.unit ? ` ${v.unit}` : ""}
+                        </span>
+                        <span className="text-xs font-medium text-slate-700">
+                          {formatCityLabel(v.city)} · {humanizeField(v.field)}
+                        </span>
+                        {v.source_id ? (
+                          <span className="text-xs text-slate-400">
+                            {v.source_id}
+                            {v.publication_year ? ` (${v.publication_year})` : ""}
+                          </span>
+                        ) : null}
+                      </div>
+                      {v.quote ? (
+                        <p className="mt-1.5 text-xs italic leading-relaxed text-slate-500">
+                          &quot;{v.quote}&quot;
+                        </p>
+                      ) : null}
+                    </div>
+                  ))}
+                </div>
+              ) : null}
+
+              {externalExecuted && unused.length > 0 ? (
+                <div className="space-y-2">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">
+                    Found, not validated ({unusedTotal})
+                  </p>
+                  {shownUnused.map((u, i) => (
+                    <div
+                      key={`${u.city}-${u.source_id ?? "src"}-${i}`}
+                      className="rounded-lg border border-slate-200 bg-white p-3"
+                    >
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span className="text-xs font-medium text-slate-700">
+                          {formatCityLabel(u.city)} · {humanizeField(u.field)}
+                        </span>
+                        {u.title ? (
+                          <span className="text-xs text-slate-400">{u.title}</span>
+                        ) : null}
+                      </div>
+                      {u.quote ? (
+                        <p className="mt-1.5 line-clamp-2 text-xs italic leading-relaxed text-slate-500">
+                          &quot;{u.quote}&quot;
+                        </p>
+                      ) : null}
+                    </div>
+                  ))}
+                  {unused.length > UNUSED_PREVIEW_COUNT ? (
+                    <button
+                      type="button"
+                      onClick={() => setShowAllUnused((v) => !v)}
+                      className="text-xs font-medium text-slate-500 underline-offset-2 hover:text-slate-700 hover:underline"
+                    >
+                      {showAllUnused
+                        ? "Show fewer"
+                        : `Show ${unused.length - UNUSED_PREVIEW_COUNT} more`}
+                    </button>
+                  ) : null}
+                </div>
+              ) : null}
+
+              {externalExecuted && noEvidence.length > 0 ? (
+                <p className="text-xs text-slate-500">
+                  <span className="font-medium text-slate-600">{noEvidence.length}</span>{" "}
+                  field{noEvidence.length === 1 ? "" : "s"} searched with no evidence found.
+                </p>
+              ) : null}
+
+              {externalExecuted &&
+              validated.length === 0 &&
+              unused.length === 0 &&
+              noEvidence.length === 0 ? (
+                <p className="text-xs text-slate-500">
+                  External-source validation ran, but no governed claims were validated.
+                </p>
+              ) : null}
+            </div>
+          ) : null}
+
           {webResearch ? (
             <div className="space-y-2 rounded-md border border-slate-200 bg-white p-3">
               <div className="flex flex-wrap items-center gap-2">
                 <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">
                   Web research
                 </p>
-                <HintChip
-                  title="How many related search groups the web-research stage ran."
-                  className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] text-slate-600"
-                >
-                  {webResearch.search_batch_count} batches
-                </HintChip>
-                <HintChip
-                  title="How many searches the planner prepared before execution."
-                  className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] text-slate-600"
-                >
-                  {webResearch.planned_search_query_count} planned searches
-                </HintChip>
-                <HintChip
-                  title="How many web-search requests actually ran for this step."
-                  className="rounded-full bg-sky-50 px-2 py-0.5 text-[11px] font-medium text-sky-700"
-                >
-                  {webResearch.actual_serper_call_count} searches
-                </HintChip>
-                <HintChip
-                  title="Searches limited to the curated tier-1 source list."
-                  className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] text-slate-600"
-                >
-                  {webResearch.tier1_site_call_count} tier-1
-                </HintChip>
-                <HintChip
-                  title="Broader web searches outside the curated tier-1 source list."
-                  className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] text-slate-600"
-                >
-                  {webResearch.open_call_count} open-web
-                </HintChip>
-                <HintChip
-                  title="Web findings captured for possible enrichment."
-                  className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] text-slate-600"
-                >
-                  {webResearch.web_finding_count} findings
-                </HintChip>
+                {webExecuted ? (
+                  <>
+                    <HintChip
+                      title="How many related search groups the web-research stage ran."
+                      className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] text-slate-600"
+                    >
+                      {webResearch.search_batch_count} batches
+                    </HintChip>
+                    <HintChip
+                      title="How many searches the planner prepared before execution."
+                      className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] text-slate-600"
+                    >
+                      {webResearch.planned_search_query_count} planned searches
+                    </HintChip>
+                    <HintChip
+                      title="How many web-search requests actually ran for this step."
+                      className="rounded-full bg-sky-50 px-2 py-0.5 text-[11px] font-medium text-sky-700"
+                    >
+                      {webResearch.actual_serper_call_count} searches
+                    </HintChip>
+                    <HintChip
+                      title="Searches limited to the curated tier-1 source list."
+                      className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] text-slate-600"
+                    >
+                      {webResearch.tier1_site_call_count} tier-1
+                    </HintChip>
+                    <HintChip
+                      title="Broader web searches outside the curated tier-1 source list."
+                      className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] text-slate-600"
+                    >
+                      {webResearch.open_call_count} open-web
+                    </HintChip>
+                    <HintChip
+                      title="Web findings captured for possible enrichment."
+                      className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] text-slate-600"
+                    >
+                      {webResearch.web_finding_count} findings
+                    </HintChip>
+                  </>
+                ) : (
+                  <StatusChip label="pending" />
+                )}
               </div>
-              {webResearch.findings.length > 0 ? (
+              {webExecuted && webResearch.findings.length > 0 ? (
                 <div className="space-y-1.5">
                   {webResearch.findings.slice(0, 5).map((finding, i) => (
                     <div
@@ -336,7 +481,7 @@ export function EnrichmentProcessWorkspace({
               ) : webExecuted ? (
                 <p className="text-xs text-slate-500">Web research ran, but no findings were captured.</p>
               ) : (
-                <p className="text-xs text-slate-500">No web research artifact is available for this run.</p>
+                <p className="text-xs text-slate-500">Waiting for the web research artifact.</p>
               )}
             </div>
           ) : null}
@@ -347,115 +492,31 @@ export function EnrichmentProcessWorkspace({
                 <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">
                   Freshness review
                 </p>
-                <HintChip
-                  title="Checks comparing captured web values against the current CCC values."
-                  className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] text-slate-600"
-                >
-                  {freshness.freshness_result_count} comparisons
-                </HintChip>
-                {Object.entries(freshness.classification_counts).map(([name, count]) => (
-                  <HintChip
-                    key={name}
-                    title={describeFreshnessClassification(name)}
-                    className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] text-slate-600"
-                  >
-                    {count} {name}
-                  </HintChip>
-                ))}
+                {freshness.executed ? (
+                  <>
+                    <HintChip
+                      title="Checks comparing captured web values against the current CCC values."
+                      className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] text-slate-600"
+                    >
+                      {freshness.freshness_result_count} comparisons
+                    </HintChip>
+                    {Object.entries(freshness.classification_counts).map(([name, count]) => (
+                      <HintChip
+                        key={name}
+                        title={describeFreshnessClassification(name)}
+                        className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] text-slate-600"
+                      >
+                        {count} {name}
+                      </HintChip>
+                    ))}
+                  </>
+                ) : (
+                  <StatusChip label={freshnessStatus ?? "pending"} />
+                )}
               </div>
             </div>
           ) : null}
 
-          {validated.length > 0 ? (
-            <div className="space-y-2">
-              <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">
-                Validated into anchors ({validated.length})
-              </p>
-              {validated.map((v, i) => (
-                <div
-                  key={`${v.city}-${v.field}-${i}`}
-                  className="rounded-lg border border-teal-200 border-l-[3px] border-l-teal-500 bg-teal-50/40 p-3"
-                >
-                  <div className="flex flex-wrap items-center gap-2">
-                    <span className="rounded-md bg-white/80 px-2 py-1 text-xs font-semibold text-slate-800 ring-1 ring-inset ring-teal-200">
-                      {v.value}
-                      {v.unit ? ` ${v.unit}` : ""}
-                    </span>
-                    <span className="text-xs font-medium text-slate-700">
-                      {formatCityLabel(v.city)} · {humanizeField(v.field)}
-                    </span>
-                    {v.source_id ? (
-                      <span className="text-xs text-slate-400">
-                        {v.source_id}
-                        {v.publication_year ? ` (${v.publication_year})` : ""}
-                      </span>
-                    ) : null}
-                  </div>
-                  {v.quote ? (
-                    <p className="mt-1.5 text-xs italic leading-relaxed text-slate-500">
-                      “{v.quote}”
-                    </p>
-                  ) : null}
-                </div>
-              ))}
-            </div>
-          ) : null}
-
-          {unused.length > 0 ? (
-            <div className="space-y-2">
-              <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">
-                Found, not validated ({unusedTotal})
-              </p>
-              {shownUnused.map((u, i) => (
-                <div
-                  key={`${u.city}-${u.source_id ?? "src"}-${i}`}
-                  className="rounded-lg border border-slate-200 bg-white p-3"
-                >
-                  <div className="flex flex-wrap items-center gap-2">
-                    <span className="text-xs font-medium text-slate-700">
-                      {formatCityLabel(u.city)} · {humanizeField(u.field)}
-                    </span>
-                    {u.title ? (
-                      <span className="text-xs text-slate-400">{u.title}</span>
-                    ) : null}
-                  </div>
-                  {u.quote ? (
-                    <p className="mt-1.5 line-clamp-2 text-xs italic leading-relaxed text-slate-500">
-                      “{u.quote}”
-                    </p>
-                  ) : null}
-                </div>
-              ))}
-              {unused.length > UNUSED_PREVIEW_COUNT ? (
-                <button
-                  type="button"
-                  onClick={() => setShowAllUnused((v) => !v)}
-                  className="text-xs font-medium text-slate-500 underline-offset-2 hover:text-slate-700 hover:underline"
-                >
-                  {showAllUnused
-                    ? "Show fewer"
-                    : `Show ${unused.length - UNUSED_PREVIEW_COUNT} more`}
-                </button>
-              ) : null}
-            </div>
-          ) : null}
-
-          {noEvidence.length > 0 ? (
-            <p className="text-xs text-slate-500">
-              <span className="font-medium text-slate-600">{noEvidence.length}</span>{" "}
-              field{noEvidence.length === 1 ? "" : "s"} searched with no evidence found.
-            </p>
-          ) : null}
-
-          {validated.length === 0 && unused.length === 0 && noEvidence.length === 0 ? (
-            <p className="text-xs text-slate-500">
-              {webExecuted
-                ? externalExecuted
-                  ? "Web research ran, but no governed external claims were validated."
-                  : "Web research ran; no governed external-source validation artifact is available for this run."
-                : "No external-source validation or web research artifact is available for this run."}
-            </p>
-          ) : null}
         </div>
       );
     }

@@ -89,6 +89,14 @@ function describeFreshnessClassification(name: string): string {
   }
 }
 
+function StatusPill({ label }: { label: string }) {
+  return (
+    <span className="rounded-full bg-slate-100 px-1.5 py-0.5 text-[10px] font-medium text-slate-500">
+      {label}
+    </span>
+  );
+}
+
 /** Streaming items (web findings, classifications) as chips. */
 function BlockCards({ items }: { items: PipelineStepItem[] }) {
   const blocks = items.filter(isBlockItem);
@@ -306,26 +314,54 @@ export function LiveBuildTimeline({
       const web = detail.web_research;
       const freshness = detail.freshness;
       const external = detail.external_sources;
+      const freshnessStatus =
+        freshness && !freshness.executed
+          ? web?.executed && web.web_finding_count === 0
+            ? "not needed"
+            : "pending"
+          : null;
       return (
         <div className="space-y-2 text-xs text-slate-600">
+          {external ? (
+            <div className="rounded-md border border-slate-200 bg-white p-2">
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="font-semibold text-slate-700">External sources</span>
+                {external.executed ? (
+                  <>
+                    <span>{external.validated_count} validated</span>
+                    <span>{external.unused_count} found not validated</span>
+                    <span>{external.no_evidence_count} no evidence</span>
+                  </>
+                ) : (
+                  <StatusPill label="pending" />
+                )}
+              </div>
+            </div>
+          ) : null}
           {web ? (
             <div className="rounded-md border border-slate-200 bg-white p-2">
               <div className="flex flex-wrap items-center gap-2">
                 <span className="font-semibold text-slate-700">Web research</span>
-                <span title="How many related search groups the web-research stage ran.">
-                  {web.search_batch_count} batches
-                </span>
-                <span title="How many searches the planner prepared before execution.">
-                  {web.planned_search_query_count} planned searches
-                </span>
-                <span title="How many web-search requests actually ran for this step.">
-                  {web.actual_serper_call_count} searches
-                </span>
-                <span title="Web findings captured for possible enrichment.">
-                  {web.web_finding_count} findings
-                </span>
+                {web.executed ? (
+                  <>
+                    <span title="How many related search groups the web-research stage ran.">
+                      {web.search_batch_count} batches
+                    </span>
+                    <span title="How many searches the planner prepared before execution.">
+                      {web.planned_search_query_count} planned searches
+                    </span>
+                    <span title="How many web-search requests actually ran for this step.">
+                      {web.actual_serper_call_count} searches
+                    </span>
+                    <span title="Web findings captured for possible enrichment.">
+                      {web.web_finding_count} findings
+                    </span>
+                  </>
+                ) : (
+                  <StatusPill label="pending" />
+                )}
               </div>
-              {web.findings.length > 0 ? (
+              {web.executed && web.findings.length > 0 ? (
                 <div className="mt-1.5 space-y-1">
                   {web.findings.slice(0, 3).map((finding, i) => (
                     <WebFindingPreview
@@ -341,28 +377,24 @@ export function LiveBuildTimeline({
             <div className="rounded-md border border-slate-200 bg-white p-2">
               <div className="flex flex-wrap items-center gap-2">
                 <span className="font-semibold text-slate-700">Freshness</span>
-                <span title="Checks comparing captured web values against the current CCC values.">
-                  {freshness.freshness_result_count} comparisons
-                </span>
-                {Object.entries(freshness.classification_counts).map(([name, count]) => (
-                  <span
-                    key={name}
-                    title={describeFreshnessClassification(name)}
-                    className="rounded-full bg-slate-100 px-1.5 py-0.5 text-[10px]"
-                  >
-                    {count} {name}
-                  </span>
-                ))}
-              </div>
-            </div>
-          ) : null}
-          {external ? (
-            <div className="rounded-md border border-slate-200 bg-white p-2">
-              <div className="flex flex-wrap items-center gap-2">
-                <span className="font-semibold text-slate-700">External sources</span>
-                <span>{external.validated_count} validated</span>
-                <span>{external.unused_count} found not validated</span>
-                <span>{external.no_evidence_count} no evidence</span>
+                {freshness.executed ? (
+                  <>
+                    <span title="Checks comparing captured web values against the current CCC values.">
+                      {freshness.freshness_result_count} comparisons
+                    </span>
+                    {Object.entries(freshness.classification_counts).map(([name, count]) => (
+                      <span
+                        key={name}
+                        title={describeFreshnessClassification(name)}
+                        className="rounded-full bg-slate-100 px-1.5 py-0.5 text-[10px]"
+                      >
+                        {count} {name}
+                      </span>
+                    ))}
+                  </>
+                ) : (
+                  <StatusPill label={freshnessStatus ?? "pending"} />
+                )}
               </div>
             </div>
           ) : null}
