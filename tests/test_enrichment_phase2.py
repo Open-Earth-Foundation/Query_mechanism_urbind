@@ -106,6 +106,19 @@ class TestSerperSearchClient:
 
 
 class TestFirecrawlScraper:
+    def test_api_key_is_trimmed_from_environment(self) -> None:
+        with patch.dict(
+            "os.environ",
+            {"FIRECRAWL_API_KEY": " key-with-newline\n"},
+            clear=False,
+        ):
+            scraper = FirecrawlScraper()
+            assert scraper.api_key == "key-with-newline"
+
+    def test_explicit_api_key_is_trimmed(self) -> None:
+        scraper = FirecrawlScraper(api_key=" key-with-newline\n")
+        assert scraper.api_key == "key-with-newline"
+
     def test_no_api_key_returns_failure(self) -> None:
         with patch.dict("os.environ", {"FIRECRAWL_API_KEY": ""}, clear=False):
             scraper = FirecrawlScraper(api_key="")

@@ -56,10 +56,11 @@ class FirecrawlScraper:
     """Firecrawl-based web scraper with concurrency limiting."""
 
     def __init__(self, api_key: str | None = None) -> None:
-        """Initialize the scraper with an explicit key or the environment key."""
-        self.api_key = (
+        """Initialize the scraper with a trimmed explicit or environment key."""
+        raw_api_key = (
             api_key if api_key is not None else os.getenv("FIRECRAWL_API_KEY", "")
         )
+        self.api_key = raw_api_key.strip()
         self._semaphore = threading.Semaphore(_CONCURRENT_SCRAPE_LIMIT)
         self._failure_lock = threading.Lock()
         self._failures: list[dict[str, Any]] = []
