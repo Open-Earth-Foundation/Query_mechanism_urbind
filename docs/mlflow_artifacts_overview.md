@@ -48,6 +48,27 @@ Runtime controls:
 - `MLFLOW_ENABLED=false`
 - `MLFLOW_TRACKING_URI`
 - `MLFLOW_EXPERIMENT_NAME=URBIND`
+
+## Download Artifacts From MLflow
+
+From the project root, download every artifact for one URBIND run on the dev
+tracking server (preferred; no venv activation needed — the script uses
+`uv run` internally):
+
+```bash
+bash scripts/download_mlflow_artifacts.sh bcebd2f925264a90a0c7f2fa7ab7fb91
+```
+
+Run `uv sync` once if the project environment is not installed yet.
+
+The script is hardcoded to:
+
+- tracking URI: `https://mlflow-dev.openearth.dev`
+- experiment: `URBIND`
+
+Artifacts are written to `output/remote_artifact_downloads/<RUN_ID>/` unless
+`DEST_DIR` is set.
+The run must belong to the URBIND experiment or the script exits with an error.
 - `MLFLOW_ENVIRONMENT`
 - `MLFLOW_ARTIFACT_PATH=run_artifacts`
 - `MLFLOW_TRACE_MODE=consolidated`
