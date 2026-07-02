@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from datetime import datetime
-from typing import Literal
+from typing import Any, Literal
 
 from pydantic import BaseModel, ConfigDict, Field
 
@@ -98,6 +98,11 @@ class PipelineStep(BaseModel):
     id: str
     label: str
     status: str
+    stage_name: str | None = None
+    stage_number: int | None = None
+    planned_order: int | None = None
+    enabled: bool | None = None
+    artifact_aliases: list[str] = Field(default_factory=list)
     started_at: str | None = None
     completed_at: str | None = None
     items: list[PipelineStepItem] = Field(default_factory=list)
@@ -193,6 +198,150 @@ class RunContextResponse(BaseModel):
     status: RunStatus
     context_bundle: dict[str, object]
     context_bundle_path: str
+
+
+class ArtifactFieldSource(BaseModel):
+    """One evidence/source record backing (or failing to back) a field."""
+
+    source_id: str | None = None
+    title: str | None = None
+    quote: str | None = None
+    has_evidence: bool = False
+
+
+class ArtifactFieldEstimate(BaseModel):
+    """Estimate range + method metadata for an estimated field."""
+
+    low: float | str | None = None
+    mid: float | str | None = None
+    high: float | str | None = None
+    method: str | None = None
+    confidence: str | None = None
+    basis: str | None = None
+
+
+class ArtifactField(BaseModel):
+    """Normalized per-(city, field) audit record for the artifact card grid."""
+
+    city: str
+    field: str
+    type: str | None = None
+    scope: str | None = None
+    status: Literal["estimated", "non_estimable", "unresolved"]
+    explanation: str | None = None
+    gap_description: str | None = None
+    recommendation: str | None = None
+    estimate: ArtifactFieldEstimate | None = None
+    sources: list[ArtifactFieldSource] = Field(default_factory=list)
+    reason: str | None = None
+    reason_label: str | None = None
+    # Non-authoritative "possible extraction gap" hint (shown only on
+    # no-source-data fields), kept distinct from the reason code because it rests
+    # on a broad heuristic. The matched corpus snippets back it on hover.
+    reason_hint: str | None = None
+    reason_hint_evidence: list[str] = Field(default_factory=list)
+
+
+class ArtifactStage(BaseModel):
+    """Lightweight per-stage summary from the unified stage records."""
+
+    stage_number: int | None = None
+    name: str
+    status: str = "completed"
+    metrics: dict[str, object] = Field(default_factory=dict)
+    inputs: dict[str, object] = Field(default_factory=dict)
+
+
+class EnrichmentStep(BaseModel):
+    """One enrichment sub-step summary (gap analysis / external+web / assumptions)."""
+
+    key: str
+    label: str
+    summary: str
+    metrics: dict[str, object] = Field(default_factory=dict)
+    warn: str | None = None
+
+
+class GapAnalysisField(BaseModel):
+    """A classified query field with its rationale."""
+
+    field: str
+    classification: str | None = None
+    scope: str | None = None
+    rationale: str | None = None
+
+
+class CityGap(BaseModel):
+    """A per-city gap with its search priority."""
+
+    city: str
+    priority: str | None = None
+
+
+class GapAnalysisDetail(BaseModel):
+    """Gap-analysis step detail: classified fields + per-city gaps."""
+
+    fields: list[GapAnalysisField] = Field(default_factory=list)
+    city_gaps: list[CityGap] = Field(default_factory=list)
+
+
+class ExternalEvidenceItem(BaseModel):
+    """A validated external/web claim that became an anchor."""
+
+    city: str
+    field: str
+    value: float | int | str | None = None
+    unit: str | None = None
+    source_id: str | None = None
+    source_type: str | None = None
+    publication_year: int | None = None
+    quote: str | None = None
+
+
+class ExternalCandidateItem(BaseModel):
+    """A found-but-unused external/web candidate."""
+
+    city: str
+    field: str
+    source_id: str | None = None
+    title: str | None = None
+    matched_text: str | None = None
+    quote: str | None = None
+
+
+class NoEvidenceItem(BaseModel):
+    """A (city, field) for which external/web search found nothing."""
+
+    city: str
+    field: str
+
+
+class ExternalSearchDetail(BaseModel):
+    """External + web search step detail."""
+
+    validated: list[ExternalEvidenceItem] = Field(default_factory=list)
+    unused: list[ExternalCandidateItem] = Field(default_factory=list)
+    unused_total: int = 0
+    no_evidence: list[NoEvidenceItem] = Field(default_factory=list)
+
+
+class RunArtifactsResponse(BaseModel):
+    """Response body for the per-step / per-field enrichment audit view."""
+
+    run_id: str
+    status: RunStatus
+    fields: list[ArtifactField] = Field(default_factory=list)
+    stages: list[ArtifactStage] = Field(default_factory=list)
+    enrichment_steps: list[EnrichmentStep] = Field(default_factory=list)
+    gap_analysis: GapAnalysisDetail | None = None
+    external_search: ExternalSearchDetail | None = None
+    stage_details: dict[str, Any] = Field(default_factory=dict)
+    # Per-artifact read outcome ("ok" / "missing" / "unreadable") so consumers
+    # can tell "no data" apart from "artifact bundle could not be read".
+    artifact_health: dict[str, str] = Field(default_factory=dict)
+    # True when an artifact existed but could not be parsed (a read regression),
+    # distinct from a stage simply being absent/disabled.
+    degraded: bool = False
 
 
 class RunReferenceResponse(BaseModel):
@@ -516,57 +665,3 @@ class ChatFollowupReferenceListResponse(BaseModel):
     bundle_id: str
     reference_count: int
     references: list[RunReferenceItem]
-
-
-__all__ = [
-    "RunStatus",
-    "AnalysisMode",
-    "RunError",
-    "PipelineStepItem",
-    "PipelineStep",
-    "CreateRunRequest",
-    "CreateRunResponse",
-    "RunStatusResponse",
-    "RunDiagnosticsArtifactPaths",
-    "RunWriterCitationCoverage",
-    "RunWriterMultiPassBatch",
-    "RunWriterMultiPass",
-    "RunDiagnosticsResponse",
-    "RunOutputResponse",
-    "RunContextResponse",
-    "RunReferenceResponse",
-    "RunReferenceItem",
-    "RunReferenceListResponse",
-    "SourceChunkItem",
-    "SourceChunkListResponse",
-    "RunSummary",
-    "RunListResponse",
-    "MissingDataItem",
-    "AssumptionsPayload",
-    "RegenerationResult",
-    "CityListResponse",
-    "CityGroup",
-    "CityGroupListResponse",
-    "ChatRole",
-    "ChatJobStatus",
-    "ChatFollowupAction",
-    "ChatCitationSourceType",
-    "ChatCitation",
-    "ChatRoutingMetadata",
-    "ChatMessage",
-    "CreateChatSessionRequest",
-    "ChatJobHandle",
-    "ChatSessionResponse",
-    "ChatSessionListResponse",
-    "ChatContextSummary",
-    "ChatFollowupBundleSummary",
-    "ChatContextCatalogResponse",
-    "UpdateChatContextsRequest",
-    "ChatSessionContextsResponse",
-    "SendChatMessageRequest",
-    "SendChatMessageCompletedResponse",
-    "ChatMessageJobAcceptedResponse",
-    "SendChatMessageResponse",
-    "ChatJobStatusResponse",
-    "ChatFollowupReferenceListResponse",
-]

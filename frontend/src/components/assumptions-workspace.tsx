@@ -22,7 +22,7 @@ import { formatCityLabel } from "@/lib/utils";
 interface AssumptionsWorkspaceProps {
   runId: string;
   enabled: boolean;
-  onClose: () => void;
+  onClose?: () => void;
 }
 
 interface EditableMissingDataItem {
@@ -172,10 +172,12 @@ export function AssumptionsWorkspace({
             </CardDescription>
           </div>
           <div className="flex flex-wrap items-center gap-2">
-            <Button type="button" size="sm" variant="outline" onClick={onClose}>
-              <ArrowLeft className="h-4 w-4" />
-              Open Full Document
-            </Button>
+            {onClose ? (
+              <Button type="button" size="sm" variant="outline" onClick={onClose}>
+                <ArrowLeft className="h-4 w-4" />
+                Open Full Document
+              </Button>
+            ) : null}
             <Button
               type="button"
               size="sm"

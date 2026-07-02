@@ -25,6 +25,7 @@ from backend.modules.web_researcher.models import (
 from backend.modules.web_researcher.utils.json_helpers import (
     extract_json_candidate,
     extract_message_text,
+    parse_json_array_candidate,
 )
 
 
@@ -394,6 +395,13 @@ class TestExtractJsonCandidate:
         raw = "Result: [1, 2, 3] end"
         assert extract_json_candidate(raw) == "[1, 2, 3]"
 
+    def test_array_of_objects_keeps_outer_array(self) -> None:
+        raw = (
+            'Result: [{"index": 0, "classification": "consistent"}, '
+            '{"index": 1, "classification": "uncertain"}] end'
+        )
+        assert extract_json_candidate(raw).startswith("[")
+
     def test_raw_fallback(self) -> None:
         raw = "just plain text"
         assert extract_json_candidate(raw) == "just plain text"
@@ -401,3 +409,29 @@ class TestExtractJsonCandidate:
     def test_fenced_takes_priority_over_braces(self) -> None:
         raw = '{"outer": 1}\n```json\n{"inner": 2}\n```'
         assert extract_json_candidate(raw) == '{"inner": 2}'
+
+
+class TestParseJsonArrayCandidate:
+    def test_parses_array_of_objects(self) -> None:
+        raw = (
+            'Result: [{"index": 0, "classification": "consistent"}, '
+            '{"index": 1, "classification": "uncertain"}] end'
+        )
+        parsed = parse_json_array_candidate(raw)
+        assert [item["index"] for item in parsed] == [0, 1]
+
+    def test_recovers_adjacent_objects(self) -> None:
+        raw = (
+            '{"index": 0, "classification": "consistent"},\n'
+            '{"index": 1, "classification": "uncertain"}'
+        )
+        parsed = parse_json_array_candidate(raw)
+        assert [item["classification"] for item in parsed] == [
+            "consistent",
+            "uncertain",
+        ]
+
+    def test_wraps_single_object(self) -> None:
+        raw = '{"index": 0, "classification": "consistent"}'
+        parsed = parse_json_array_candidate(raw)
+        assert parsed == [{"index": 0, "classification": "consistent"}]

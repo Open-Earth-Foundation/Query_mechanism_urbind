@@ -6,6 +6,7 @@ import json
 from typing import Any
 from unittest.mock import MagicMock, patch
 
+import httpx
 import pytest
 
 from backend.modules.web_researcher.deep_diver import (
@@ -96,6 +97,7 @@ class TestSerperSearchClient:
             assert results[0].title == "Test"
             assert results[0].url == "https://example.com"
             assert client.query_count == 1
+            assert client.successful_query_count == 1
 
 
 # ---------------------------------------------------------------------------
@@ -135,6 +137,39 @@ class TestFirecrawlScraper:
             assert result.success is True
             assert len(result.content) < 200  # truncated + notice
             assert "[...content truncated...]" in result.content
+
+    def test_timeout_records_structured_failure(self) -> None:
+        scraper = FirecrawlScraper(api_key="key")
+
+        with patch("backend.modules.web_researcher.scraper.httpx.Client") as mock_httpx:
+            mock_httpx_instance = MagicMock()
+            mock_httpx_instance.__enter__ = MagicMock(return_value=mock_httpx_instance)
+            mock_httpx_instance.__exit__ = MagicMock(return_value=False)
+            mock_httpx_instance.post.side_effect = httpx.ReadTimeout(
+                "The read operation timed out"
+            )
+            mock_httpx.return_value = mock_httpx_instance
+
+            result = scraper.scrape(
+                "https://www.researchgate.net/publication/test",
+                query="Aachen geothermal permit",
+                batch_id="batch_001",
+            )
+
+        assert result.success is False
+        failures = scraper.scrape_failures
+        assert failures == [
+            {
+                "url": "https://www.researchgate.net/publication/test",
+                "domain": "www.researchgate.net",
+                "provider": "firecrawl",
+                "batch_id": "batch_001",
+                "query": "Aachen geothermal permit",
+                "error_type": "ReadTimeout",
+                "error": "The read operation timed out",
+                "severity": "warning",
+            }
+        ]
 
 
 # ---------------------------------------------------------------------------
@@ -363,6 +398,90 @@ class TestFreshnessChecker:
         evidence = _extract_ccc_evidence(context)
         assert "dresden" in evidence
         assert evidence["dresden"][0].startswith("Dresden allocated 50M EUR")
+
+    def test_parses_json_array_classification_response(self) -> None:
+        config = _make_config()
+        findings = [
+            WebFinding(
+                city="Dresden",
+                field="capex",
+                value=50,
+                source_url="https://x.com",
+                source_type="report",
+                extraction_confidence=0.9,
+            )
+        ]
+        context = {
+            "markdown": {
+                "excerpts": [
+                    {
+                        "city_key": "Dresden",
+                        "partial_answer": "Dresden allocated 50M EUR to climate capex.",
+                    },
+                ]
+            }
+        }
+        mock_resp = _mock_openai_response(
+            '[{"index": 0, "classification": "consistent", '
+            '"ccc_value_extracted": "50M EUR", "reason": "Values match."}]'
+        )
+
+        with patch(
+            "backend.modules.web_researcher.freshness.record_openai_chat_completion",
+            return_value=mock_resp,
+        ):
+            result = check_freshness(findings, context, config, "key")
+
+        assert len(result) == 1
+        assert result[0].classification == "consistent"
+        assert result[0].ccc_value == "50M EUR"
+
+    def test_recovers_adjacent_object_classification_response(self) -> None:
+        config = _make_config()
+        findings = [
+            WebFinding(
+                city="Dresden",
+                field="capex",
+                value=50,
+                source_url="https://x.com/one",
+                source_type="report",
+                extraction_confidence=0.9,
+            ),
+            WebFinding(
+                city="Dresden",
+                field="opex",
+                value=12,
+                source_url="https://x.com/two",
+                source_type="report",
+                extraction_confidence=0.9,
+            ),
+        ]
+        context = {
+            "markdown": {
+                "excerpts": [
+                    {
+                        "city_key": "Dresden",
+                        "partial_answer": "Dresden allocated 50M EUR capex and 12M EUR opex.",
+                    },
+                ]
+            }
+        }
+        mock_resp = _mock_openai_response(
+            '{"index": 0, "classification": "consistent", '
+            '"ccc_value_extracted": "50M EUR", "reason": "Capex matches."},'
+            '{"index": 1, "classification": "uncertain", '
+            '"ccc_value_extracted": null, "reason": "No comparable CCC value."}'
+        )
+
+        with patch(
+            "backend.modules.web_researcher.freshness.record_openai_chat_completion",
+            return_value=mock_resp,
+        ):
+            result = check_freshness(findings, context, config, "key")
+
+        assert [item.classification for item in result] == ["consistent", "uncertain"]
+        assert result[0].reason == "Capex matches."
+        assert result[1].reason == "No comparable CCC value."
 
 
 # ---------------------------------------------------------------------------

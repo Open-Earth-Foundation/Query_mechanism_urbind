@@ -36,12 +36,21 @@ Input is a JSON object with:
   - `meta` (object): `created_at`, `assumptions_estimator_model`, `assumption_count`, `non_estimable_output_count`, `elapsed_seconds`
 </input>
 
+<tools>
+Available tools:
+- `submit_writer_output`: use exactly once to return the completed Markdown answer.
+- Do not call `submit_writer_output` for intermediate reasoning, partial drafts, status updates, or validation notes.
+- Do not call any tool other than `submit_writer_output`.
+- Do not emit plain text before or after the tool call.
+</tools>
+
 <output>
 You must call tool `submit_writer_output` and pass a JSON object (not a JSON string).
 Return only that tool call.
 
 The tool argument must match `WriterOutput`:
 - `content` (str): final user-facing markdown answer
+- Do not include `citation_coverage`; the runtime computes citation coverage after the tool call.
 
 <structure>
 Organize the output into the following sections. **Omit any section entirely (no heading) if its data source is empty or the condition is not met.** Use descriptive `##` headings without numbers.
@@ -130,6 +139,7 @@ Total length: 3–5 sentences. Do not number them in the output.
 <rules>
 Content quality requirements:
 - Start directly with the Executive Summary (no operational metadata headers).
+- Do not echo, quote, summarize, or create a `# Question` / `# Prompt` section for the submitted `question`; the application renders the submitted prompt separately.
 - Ground all claims in `context_bundle`; do not invent facts.
 - Explicitly consider all cities in `selected_cities` and ensure every city is addressed.
 - Aggregate style: write one integrated, cross-city synthesis grouped by shared themes. Do not produce one section per city unless the user explicitly asked for city-by-city format.
@@ -195,3 +205,9 @@ Citation rules (critical when `excerpt_count > 0`):
 - External Markdown facts use `(source_id:Lline_start-Lline_end)` provenance, not `[ref_n]`, unless the same statement is also grounded in CCC excerpts.
 </rules>
 </output>
+
+<example_output>
+{
+  "content": "## Executive Summary\nRetrofitting appears in every selected city's planning documents, but only two cities provide quantified delivery targets. [ref_1][ref_3]\n\n## CCC Document Key Findings\nBuilding retrofit commitments cluster around public-building upgrades and neighborhood heat planning. [ref_1][ref_2]\n\n## Cross-City Thematic Synthesis\nMunich and Berlin provide numeric retrofit targets, while Leipzig describes enabling measures without a comparable count. [ref_1][ref_3]"
+}
+</example_output>

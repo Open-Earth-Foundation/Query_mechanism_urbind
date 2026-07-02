@@ -10,7 +10,10 @@ import yaml
 
 from backend.modules.web_researcher.models import SearchBatch, WebFinding
 from backend.modules.web_researcher.search import SearchResult
-from backend.modules.web_researcher.search_worker import execute_search_batch
+from backend.modules.web_researcher.search_worker import (
+    execute_search_batch,
+    execute_search_batches,
+)
 from tests.support import build_test_app_config
 
 
@@ -167,8 +170,15 @@ def test_tier1_skips_open_pass_when_high_confidence_match(
         "backend.modules.web_researcher.search_worker.validate_findings",
         side_effect=lambda findings, cities: findings,
     ):
+        search_stats: dict[str, object] = {}
         findings = execute_search_batch(
-            batch, search_client, scraper, MagicMock(), config, api_key="k"
+            batch,
+            search_client,
+            scraper,
+            MagicMock(),
+            config,
+            api_key="k",
+            search_stats=search_stats,
         )
 
     queries_called = [c.args[0] for c in search_client.search.call_args_list]
@@ -179,6 +189,12 @@ def test_tier1_skips_open_pass_when_high_confidence_match(
     assert len(findings) == 1
     assert findings[0].source_tier == "tier1"
     assert findings[0].source_id == "bnetza_ladekarte"
+    assert search_stats["planned_query_count"] == 1
+    assert search_stats["matching_tier1_source_count"] == 1
+    assert search_stats["tier1_site_query_count"] == 1
+    assert search_stats["open_query_count"] == 0
+    assert search_stats["open_query_skipped_count"] == 1
+    assert search_stats["estimated_max_serper_query_count"] == 2
 
 
 def test_tier1_falls_through_when_no_findings(allowlist_yaml: Path) -> None:
@@ -315,3 +331,50 @@ def test_tier1_only_runs_for_matching_coverage(allowlist_yaml: Path) -> None:
     assert not any(q.startswith("site:") for q in queries_called)
     # Open query still ran.
     assert "unrelated query" in queries_called
+
+
+def test_execute_search_batches_populates_search_execution_summary(
+    allowlist_yaml: Path,
+) -> None:
+    """The batch runner exposes planned, open, tier-1, and estimated search counts."""
+    config = _config(tier1=False)
+    batch = _batch()
+    search_client = MagicMock()
+    search_client.search.return_value = [
+        SearchResult(title="t", url="https://example.com/x", snippet="s")
+    ]
+    search_client.query_count = 1
+    scraper = MagicMock()
+    scraper.scrape.return_value = _scrape_success()
+    scraper.scrape_count = 1
+    scraper.scrape_failures = []
+    search_execution_summary: dict[str, object] = {}
+
+    with patch(
+        "backend.modules.web_researcher.search_worker.SerperSearchClient",
+        return_value=search_client,
+    ), patch(
+        "backend.modules.web_researcher.search_worker.FirecrawlScraper",
+        return_value=scraper,
+    ), _patch_relevance_pass_through(), patch(
+        "backend.modules.web_researcher.search_worker.extract_fields_from_content",
+        return_value=[_make_finding(100.0)],
+    ), patch(
+        "backend.modules.web_researcher.search_worker.validate_findings",
+        side_effect=lambda findings, cities: findings,
+    ):
+        findings = execute_search_batches(
+            [batch],
+            config,
+            api_key="k",
+            search_execution_summary=search_execution_summary,
+        )
+
+    assert len(findings) == 1
+    metrics = search_execution_summary["metrics"]
+    assert metrics["planned_query_count"] == 1
+    assert metrics["actual_serper_query_count"] == 1
+    assert metrics["successful_serper_query_count"] == 1
+    assert metrics["tier1_site_query_count"] == 0
+    assert metrics["open_query_count"] == 1
+    assert metrics["estimated_max_serper_query_count"] == 1

@@ -14,6 +14,7 @@ from backend.api.services.kubernetes_vector_job import (
     create_vector_store_update_job,
 )
 from backend.modules.vector_store.indexer import update_markdown_index
+from backend.modules.vector_store.update_lock import VectorStoreUpdateLockError
 from backend.modules.vector_store.update_status import (
     VectorStoreUpdateStatus,
     get_update_status_path,
@@ -181,6 +182,11 @@ class VectorStoreWarmup:
             return
 
         dry_run_payload = self._stats_payload(dry_run_stats)
+        pre_update_snapshot = build_vector_store_snapshot(
+            config,
+            update_stats=None,
+            selected_cities=None,
+        )
         added_files = self._changed_files_by_status(dry_run_payload, "added")
         modified_files = self._changed_files_by_status(dry_run_payload, "modified")
         deleted_files = self._deleted_file_sources(dry_run_payload)
@@ -203,6 +209,7 @@ class VectorStoreWarmup:
                 completed_at=completed_at,
                 message="Vector store is up to date.",
                 stats=dry_run_stats,
+                pre_update_snapshot=pre_update_snapshot,
             )
             return
 
@@ -231,6 +238,7 @@ class VectorStoreWarmup:
                 trigger=trigger,
                 started_at=started_at,
                 stats_payload=dry_run_payload,
+                pre_update_snapshot=pre_update_snapshot,
             )
             return
         if config.vector_store.update_mode == "kubernetes_job":
@@ -240,6 +248,7 @@ class VectorStoreWarmup:
                 trigger=trigger,
                 started_at=started_at,
                 stats_payload=dry_run_payload,
+                pre_update_snapshot=pre_update_snapshot,
             )
             return
 
@@ -248,6 +257,7 @@ class VectorStoreWarmup:
             docs_dir=docs_dir,
             trigger=trigger,
             started_at=started_at,
+            pre_update_snapshot=pre_update_snapshot,
         )
 
     def _run_local_update(
@@ -257,6 +267,7 @@ class VectorStoreWarmup:
         docs_dir: Path,
         trigger: str,
         started_at: datetime,
+        pre_update_snapshot: dict[str, object] | None,
     ) -> None:
         """Run the actual vector update inside this process for local development."""
         status_path = get_update_status_path(config)
@@ -283,6 +294,18 @@ class VectorStoreWarmup:
                 selected_cities=None,
                 dry_run=False,
             )
+        except VectorStoreUpdateLockError as exc:
+            self._mark_external_update_running(
+                config=config,
+                docs_dir=docs_dir,
+                trigger=trigger,
+                started_at=started_at,
+                message=str(exc),
+                lock_error=exc,
+                pre_update_snapshot=pre_update_snapshot,
+            )
+            logger.info("Vector store local update deferred because lock is already held: %s", exc)
+            return
         except Exception as exc:  # noqa: BLE001
             logger.exception("Vector store local update failed")
             self._fail(
@@ -313,7 +336,8 @@ class VectorStoreWarmup:
             completed_at=datetime.now(timezone.utc),
             message="Vector store is up to date.",
             stats=stats,
-            )
+            pre_update_snapshot=pre_update_snapshot,
+        )
 
     def _start_kubernetes_update(
         self,
@@ -323,6 +347,7 @@ class VectorStoreWarmup:
         trigger: str,
         started_at: datetime,
         stats_payload: dict[str, object],
+        pre_update_snapshot: dict[str, object] | None,
     ) -> None:
         """Create a Kubernetes updater Job and keep runs blocked until it completes."""
         status_path = get_update_status_path(config)
@@ -375,7 +400,51 @@ class VectorStoreWarmup:
                 error=None,
                 stats_payload=stats_payload,
                 job_name=job_name,
+                pre_update_snapshot=pre_update_snapshot,
             )
+
+    def _mark_external_update_running(
+        self,
+        *,
+        config: AppConfig,
+        docs_dir: Path,
+        trigger: str,
+        started_at: datetime,
+        message: str,
+        lock_error: VectorStoreUpdateLockError,
+        pre_update_snapshot: dict[str, object] | None,
+    ) -> None:
+        """Persist a running state when another process already owns the update lock."""
+        status_path = get_update_status_path(config)
+        write_update_status(
+            status_path,
+            status="running",
+            trigger=trigger,
+            update_mode=config.vector_store.update_mode,
+            message=message,
+            started_at=started_at.isoformat(),
+        )
+        latest_artifact = self._write_artifact(
+            config=config,
+            docs_dir=docs_dir,
+            status="running",
+            trigger=trigger,
+            started_at=started_at,
+            completed_at=datetime.now(timezone.utc),
+            message=message,
+            error=None,
+            stats_payload=None,
+            job_name=None,
+            pre_update_snapshot=pre_update_snapshot,
+            lock_details=self._lock_details_from_error(lock_error),
+        )
+        with self._lock:
+            self._status = "running"
+            self._message = message
+            self._error = None
+            self._stats = None
+            self._job_name = None
+            self._latest_artifact = latest_artifact
 
     def _mark_manual_maintenance_required(
         self,
@@ -385,6 +454,7 @@ class VectorStoreWarmup:
         trigger: str,
         started_at: datetime,
         stats_payload: dict[str, object],
+        pre_update_snapshot: dict[str, object] | None,
     ) -> None:
         """Persist a stale status that instructs operators to run the maintenance workflow."""
         completed_at = datetime.now(timezone.utc)
@@ -413,6 +483,7 @@ class VectorStoreWarmup:
             error=None,
             stats_payload=stats_payload,
             job_name=None,
+            pre_update_snapshot=pre_update_snapshot,
         )
         with self._lock:
             self._status = "stale"
@@ -433,6 +504,7 @@ class VectorStoreWarmup:
         completed_at: datetime,
         message: str,
         stats: object,
+        pre_update_snapshot: dict[str, object] | None,
     ) -> None:
         """Mark the vector update coordinator as completed."""
         stats_payload = self._stats_payload(stats)
@@ -458,6 +530,7 @@ class VectorStoreWarmup:
             stats_payload=stats_payload,
             update_stats=stats,
             job_name=None,
+            pre_update_snapshot=pre_update_snapshot,
         )
         with self._lock:
             self._status = "completed"
@@ -535,6 +608,7 @@ class VectorStoreWarmup:
             "update_mode": getattr(stats, "update_mode", None),
             "changed_files": list(getattr(stats, "changed_files", [])),
             "deleted_files": list(getattr(stats, "deleted_files", [])),
+            "lock_details": dict(getattr(stats, "lock_details", {}) or {}),
         }
 
     def _changed_files_by_status(
@@ -576,6 +650,131 @@ class VectorStoreWarmup:
             if isinstance(item, dict) and str(item.get("status")) == status
         )
 
+    def _manifest_audit_dir(self, config: AppConfig) -> Path:
+        """Return the shared manifest-write audit directory for this config."""
+        return config.runs_dir / "system" / "vector_store_manifest_writes"
+
+    def _read_latest_manifest_audit(self, config: AppConfig) -> dict[str, object] | None:
+        """Read the latest manifest-write audit payload when available."""
+        latest_path = self._manifest_audit_dir(config) / "latest.json"
+        if not latest_path.exists():
+            return None
+        try:
+            payload = json.loads(latest_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            return None
+        return payload if isinstance(payload, dict) else None
+
+    def _manifest_summary_from_snapshot(
+        self,
+        snapshot: dict[str, object] | None,
+    ) -> dict[str, object] | None:
+        """Extract the manifest-specific summary from one vector-store snapshot."""
+        if not isinstance(snapshot, dict):
+            return None
+        manifest_summary = snapshot.get("manifest_summary")
+        if not isinstance(manifest_summary, dict):
+            return None
+        return {
+            "index_manifest_exists": snapshot.get("index_manifest_exists"),
+            "index_manifest_hash": snapshot.get("index_manifest_hash"),
+            **manifest_summary,
+        }
+
+    def _build_update_interpretation(
+        self,
+        *,
+        status: VectorStoreUpdateStatus,
+        message: str,
+        pre_update_snapshot: dict[str, object] | None,
+        post_update_snapshot: dict[str, object] | None,
+        update_stats: object | None,
+    ) -> str | None:
+        """Return a concise explanation label for one warm-up outcome."""
+        if status == "running" and "already in progress" in message:
+            return "another_writer_in_progress"
+        if status != "completed" or update_stats is None:
+            return None
+        was_dry_run = bool(getattr(update_stats, "dry_run", False))
+        files_changed = int(getattr(update_stats, "files_changed", 0))
+        files_deleted = int(getattr(update_stats, "files_deleted", 0))
+        update_mode = str(getattr(update_stats, "update_mode", "") or "")
+        if was_dry_run and files_changed == 0 and files_deleted == 0:
+            return "no_changes"
+        pre_manifest = self._manifest_summary_from_snapshot(pre_update_snapshot) or {}
+        post_manifest = self._manifest_summary_from_snapshot(post_update_snapshot) or {}
+        pre_exists = bool(pre_manifest.get("index_manifest_exists"))
+        pre_file_count = int(pre_manifest.get("file_count", 0) or 0)
+        post_file_count = int(post_manifest.get("file_count", 0) or 0)
+        if update_mode == "index_settings_changed_or_missing":
+            return "full_rebuild_due_to_settings"
+        if post_file_count > 0 and pre_exists and pre_file_count == 0:
+            return "manifest_empty_recovery"
+        if post_file_count > 0 and not pre_exists:
+            return "manifest_missing_recovery"
+        if files_changed > 0 or files_deleted > 0:
+            return "incremental_changes"
+        return "no_changes"
+
+    def _manifest_write_occurred(self, update_stats: object | None) -> bool:
+        """Return true when this warm-up run actually wrote the manifest."""
+        if update_stats is None:
+            return False
+        return not bool(getattr(update_stats, "dry_run", False))
+
+    def _lock_details_from_error(
+        self,
+        lock_error: VectorStoreUpdateLockError,
+    ) -> dict[str, object]:
+        """Return JSON-safe details about an existing vector-store writer lock."""
+        return {
+            "lock_path": str(lock_error.lock_path),
+            "waited_for_holder": True,
+            "holder": dict(lock_error.holder or {}),
+        }
+
+    def _manifest_write_audit_applies_to_run(
+        self,
+        *,
+        config: AppConfig,
+        started_at: datetime,
+        update_stats: object | None,
+        post_update_snapshot: dict[str, object] | None,
+        manifest_audit_payload: dict[str, object] | None,
+    ) -> bool:
+        """Return true when the embedded audit record matches this specific run."""
+        if not self._manifest_write_occurred(update_stats):
+            return False
+        if not isinstance(post_update_snapshot, dict) or not isinstance(
+            manifest_audit_payload, dict
+        ):
+            return False
+        post_manifest = self._manifest_summary_from_snapshot(post_update_snapshot) or {}
+        audit_timestamp = manifest_audit_payload.get("timestamp")
+        audit_updated_at = manifest_audit_payload.get("updated_at")
+        manifest_path = str(config.vector_store.index_manifest_path)
+        if str(manifest_audit_payload.get("manifest_path")) != manifest_path:
+            return False
+        if audit_updated_at != post_manifest.get("updated_at"):
+            return False
+        if int(manifest_audit_payload.get("file_count", -1)) != int(
+            post_manifest.get("file_count", -2)
+        ):
+            return False
+        if int(manifest_audit_payload.get("chunk_count", -1)) != int(
+            post_manifest.get("chunk_count", -2)
+        ):
+            return False
+        if not isinstance(audit_timestamp, str):
+            return False
+        try:
+            parsed_timestamp = datetime.fromisoformat(audit_timestamp)
+        except ValueError:
+            return False
+        if parsed_timestamp.tzinfo is None:
+            parsed_timestamp = parsed_timestamp.replace(tzinfo=timezone.utc)
+        return parsed_timestamp >= started_at
+
     def _write_artifact(
         self,
         *,
@@ -590,6 +789,8 @@ class VectorStoreWarmup:
         stats_payload: dict[str, object] | None,
         update_stats: object | None = None,
         job_name: str | None = None,
+        pre_update_snapshot: dict[str, object] | None = None,
+        lock_details: dict[str, object] | None = None,
     ) -> str:
         """Persist vector update diagnostics outside any user run directory."""
         artifact_dir = config.runs_dir / "system" / "vector_store_warmup"
@@ -598,6 +799,12 @@ class VectorStoreWarmup:
         timestamped_path = artifact_dir / f"{timestamp}.json"
         latest_path = artifact_dir / "latest.json"
         latest_label = Path("system") / "vector_store_warmup" / "latest.json"
+        post_update_snapshot = build_vector_store_snapshot(
+            config,
+            update_stats=update_stats,
+            selected_cities=None,
+        )
+        manifest_audit_payload = self._read_latest_manifest_audit(config)
         payload = {
             "event_type": "vector_store_update",
             "trigger": trigger,
@@ -610,11 +817,43 @@ class VectorStoreWarmup:
             "error": error,
             "docs_dir": str(docs_dir),
             "stats": stats_payload,
-            "vector_store_snapshot": build_vector_store_snapshot(
-                config,
+            "update_interpretation": self._build_update_interpretation(
+                status=status,
+                message=message,
+                pre_update_snapshot=pre_update_snapshot,
+                post_update_snapshot=post_update_snapshot,
                 update_stats=update_stats,
-                selected_cities=None,
             ),
+            "pre_manifest_summary": self._manifest_summary_from_snapshot(
+                pre_update_snapshot
+            ),
+            "post_manifest_summary": self._manifest_summary_from_snapshot(
+                post_update_snapshot
+            ),
+            "lock_details": (
+                lock_details
+                if lock_details is not None
+                else (
+                    dict(getattr(update_stats, "lock_details", {}) or {})
+                    if update_stats is not None
+                    else None
+                )
+            ),
+            "manifest_write_occurred": self._manifest_write_occurred(update_stats),
+            "manifest_write_audit_latest_path": (
+                Path("system") / "vector_store_manifest_writes" / "latest.json"
+            ).as_posix(),
+            "manifest_write_audit_applies_to_this_run": (
+                self._manifest_write_audit_applies_to_run(
+                    config=config,
+                    started_at=started_at,
+                    update_stats=update_stats,
+                    post_update_snapshot=post_update_snapshot,
+                    manifest_audit_payload=manifest_audit_payload,
+                )
+            ),
+            "manifest_write_audit": manifest_audit_payload,
+            "vector_store_snapshot": post_update_snapshot,
         }
         timestamped_path.write_text(
             json.dumps(payload, indent=2, ensure_ascii=True, default=str),

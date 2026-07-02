@@ -13,10 +13,17 @@ from backend.modules.vector_store.indexer import (
     build_markdown_index,
     update_markdown_index,
 )
-from backend.modules.vector_store.manifest import load_manifest
-from backend.modules.vector_store.manifest import build_chunk_id, save_manifest
+from backend.modules.vector_store.manifest import (
+    build_chunk_id,
+    load_manifest,
+    save_manifest,
+)
 from backend.modules.vector_store.markdown_blocks import parse_markdown_blocks
 from backend.modules.vector_store.models import IndexedChunk
+from backend.modules.vector_store.update_lock import (
+    VectorStoreUpdateLockError,
+    acquire_vector_store_update_lock,
+)
 from backend.modules.vector_store.chunk_packer import pack_blocks
 from backend.modules.vector_store.table_utils import split_markdown_table_by_row_groups
 from backend.utils.tokenization import count_tokens
@@ -157,6 +164,49 @@ def test_build_chunk_id_is_deterministic() -> None:
     chunk_id_3 = build_chunk_id("documents/Munich.md", 3, "abc123")
     assert chunk_id_1 == chunk_id_2
     assert chunk_id_1 != chunk_id_3
+
+
+def test_save_manifest_skips_audit_files_during_pytest(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Manifest writes under pytest should not create audit artifacts."""
+    monkeypatch.chdir(tmp_path)
+    manifest_path = tmp_path / ".chroma" / "index_manifest.json"
+    latest_audit_path = tmp_path / "output" / "system" / "vector_store_manifest_writes" / "latest.json"
+    save_manifest(
+        manifest_path,
+        {
+            "updated_at": "2026-07-01T00:00:00+00:00",
+            "files": {
+                "documents/Munich.md": {
+                    "file_hash": "hash-1",
+                    "chunk_ids": ["chunk-1", "chunk-2"],
+                }
+            },
+        },
+        reason="unit_test_manifest_write",
+        metadata={"dry_run": False, "files_indexed": 1},
+    )
+
+    assert manifest_path.exists()
+    assert not latest_audit_path.exists()
+    assert not list(manifest_path.parent.glob("*.tmp"))
+
+
+def test_update_markdown_index_rejects_overlapping_writer_lock(tmp_path: Path) -> None:
+    """Non-dry-run updates should fail fast when another process holds the write lock."""
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir(parents=True)
+    (docs_dir / "Munich.md").write_text("# Munich\n\nLatest content.", encoding="utf-8")
+    config = _build_config(tmp_path)
+
+    with acquire_vector_store_update_lock(
+        config.vector_store.chroma_persist_path,
+        operation="other_process_update",
+    ):
+        with pytest.raises(VectorStoreUpdateLockError, match="operation=other_process_update"):
+            update_markdown_index(config=config, docs_dir=docs_dir, dry_run=False)
 
 
 def test_manifest_update_skips_unchanged_and_updates_changed(
@@ -383,6 +433,7 @@ def test_vector_store_snapshot_includes_auto_update_diagnostics(tmp_path: Path) 
                 }
             ],
             "deleted_files": [],
+            "lock_details": {},
         },
     }
 
@@ -420,7 +471,7 @@ def test_update_markdown_index_rebuilds_when_index_settings_change(
         return "rebuilt"
 
     monkeypatch.setattr(
-        "backend.modules.vector_store.indexer.build_markdown_index",
+        "backend.modules.vector_store.indexer._build_markdown_index_impl",
         _fake_build_markdown_index,
     )
 
@@ -918,14 +969,13 @@ def test_update_markdown_index_raises_for_missing_markdown_directory(
         )
 
 
-def test_save_manifest_writes_audit_artifact(
+def test_save_manifest_does_not_write_audit_artifact_under_pytest(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    """Manifest writes should leave a small system artifact explaining the writer."""
+    """Pytest manifest writes should not create system audit artifacts."""
     runs_dir = tmp_path / "output"
     monkeypatch.setenv("RUNS_DIR", str(runs_dir))
-    monkeypatch.setenv("VECTOR_STORE_MANIFEST_WRITE_AUDIT_ENABLED", "true")
     manifest_path = tmp_path / ".chroma" / "index_manifest.json"
     docs_dir = tmp_path / "documents"
     docs_dir.mkdir(parents=True)
@@ -947,12 +997,8 @@ def test_save_manifest_writes_audit_artifact(
     )
 
     latest_audit_path = runs_dir / "system" / "vector_store_manifest_writes" / "latest.json"
-    latest_payload = json.loads(latest_audit_path.read_text(encoding="utf-8"))
-    assert latest_payload["reason"] == "test_save_manifest"
-    assert latest_payload["docs_dir"] == str(docs_dir)
-    assert latest_payload["file_count"] == 1
-    assert latest_payload["chunk_count"] == 2
-    assert latest_payload["metadata"] == {"trigger": "unit_test"}
+    assert manifest_path.exists()
+    assert not latest_audit_path.exists()
 
 
 def test_build_markdown_index_ignores_selected_city_scope_for_persisted_writes(

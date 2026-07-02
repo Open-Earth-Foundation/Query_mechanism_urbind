@@ -1,9 +1,22 @@
 from pathlib import Path
 
 
+REQUIRED_PROMPT_SECTIONS = (
+    "<role>",
+    "<task>",
+    "<input>",
+    "<tools>",
+    "<output>",
+    "<example_output>",
+)
+
+
 def test_writer_aggregate_prompt_mentions_grouped_requirements() -> None:
     prompt_path = Path("backend/prompts/writer_system_aggregate.md")
     content = prompt_path.read_text(encoding="utf-8")
+    for section in REQUIRED_PROMPT_SECTIONS:
+        assert section in content
+    assert "submit_writer_output" in content
     assert "`analysis_mode` (`aggregate` | `city_by_city`)" in content
     assert "explicitly mention all numeric parts used in that calculation" in content
     assert "show the addition for the user" in content
@@ -12,27 +25,35 @@ def test_writer_aggregate_prompt_mentions_grouped_requirements() -> None:
     assert "final aggregation overview" in content
     assert "assumption-based estimate" in content
     assert "first question verbatim" in content
+    assert "Do not include `citation_coverage`" in content
+    assert "the application renders the submitted prompt separately" in content
 
 
 def test_writer_city_by_city_prompt_mentions_per_city_requirements() -> None:
     prompt_path = Path("backend/prompts/writer_system_city_by_city.md")
     content = prompt_path.read_text(encoding="utf-8")
+    for section in REQUIRED_PROMPT_SECTIONS:
+        assert section in content
+    assert "submit_writer_output" in content
     assert "`analysis_mode` (`aggregate` | `city_by_city`)" in content
     assert "explicitly mention all numeric parts used in that calculation" in content
     assert "show the addition for the user" in content
     assert "Cities considered:" in content
     assert "Provide one clear section per city first." in content
     assert "first question verbatim" in content
+    assert "Do not include `citation_coverage`" in content
+    assert "the application renders the submitted prompt separately" in content
 
 
 def test_writer_combine_prompt_uses_required_schema_sections() -> None:
     prompt_path = Path("backend/prompts/writer_system_combine.md")
     content = prompt_path.read_text(encoding="utf-8")
-    for section in ("<role>", "<task>", "<input>", "<tools>", "<output>", "<example_output>"):
+    for section in REQUIRED_PROMPT_SECTIONS:
         assert section in content
     assert "submit_writer_output" in content
     assert "`draft_answers`" in content
-    assert "citation_coverage" not in content
+    assert "Do not include `citation_coverage`" in content
+    assert "the application renders the submitted prompt separately" in content
 
 
 def test_chat_followup_router_prompt_uses_required_schema_sections() -> None:

@@ -173,6 +173,10 @@ export function SearchableRunPicker({
               <div className="grid gap-1">
                 {visibleRuns.map((run) => {
                   const isSelected = run.run_id === selectedRunId;
+                  // Active builds: italicize + flag as streamable so it's clear
+                  // clicking opens the live view, not a finished answer.
+                  const isActive =
+                    run.status === "running" || run.status === "queued";
                   return (
                     <Button
                       key={run.run_id}
@@ -189,8 +193,27 @@ export function SearchableRunPicker({
                         setIsOpen(false);
                       }}
                     >
-                      <span className="flex-1 truncate" title={formatRunLabel(run)}>
-                        {formatRunLabel(run)}
+                      <span className="flex min-w-0 flex-1 items-center gap-1.5">
+                        {isActive ? (
+                          <span
+                            className="h-1.5 w-1.5 shrink-0 animate-pulse rounded-full bg-amber-500"
+                            aria-hidden
+                          />
+                        ) : null}
+                        <span
+                          className={cn(
+                            "truncate",
+                            isActive && "italic text-slate-600",
+                          )}
+                          title={formatRunLabel(run)}
+                        >
+                          {formatRunLabel(run)}
+                        </span>
+                        {isActive ? (
+                          <span className="shrink-0 rounded-full bg-amber-100 px-1.5 py-0.5 text-[10px] font-medium text-amber-700">
+                            building…
+                          </span>
+                        ) : null}
                       </span>
                       {isSelected ? <Check className="h-4 w-4 shrink-0 text-slate-600" /> : null}
                     </Button>

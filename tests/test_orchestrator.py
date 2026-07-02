@@ -328,6 +328,18 @@ def test_run_pipeline_creates_artifacts(
     )
     assert markdown_stage["outputs"]["cities_with_excerpts"] == ["munich"]
     assert markdown_stage["outputs"]["cities_without_excerpts"] == []
+    progress_payload = json.loads(
+        (paths.base_dir / "progress.json").read_text(encoding="utf-8")
+    )
+    progress_by_id = {step["id"]: step for step in progress_payload["steps"]}
+    assert progress_by_id["retrieval"]["status"] == "skipped"
+    assert progress_by_id["retrieval"]["stage_number"] == 3
+    assert progress_by_id["markdown_inputs"]["status"] == "completed"
+    assert progress_by_id["markdown_inputs"]["stage_number"] == 4
+    assert progress_by_id["markdown_batching"]["status"] == "completed"
+    assert progress_by_id["markdown_batching"]["stage_number"] == 5
+    assert progress_by_id["markdown_research"]["status"] == "completed"
+    assert progress_by_id["markdown_research"]["stage_number"] == 6
     summary_events = [
         json.loads(line)
         for line in paths.summary_events.read_text(encoding="utf-8").splitlines()
@@ -646,9 +658,18 @@ def test_run_pipeline_refreshes_vector_store_snapshot_after_auto_update(
             "vector_store_snapshot.json",
         ).read_text(encoding="utf-8")
     )
+    planned_stages = json.loads(
+        _stage_file_path(
+            paths,
+            "001_input_snapshot",
+            "planned_stages.json",
+        ).read_text(encoding="utf-8")
+    )
     input_snapshot = json.loads((paths.stages_dir / "001_input_snapshot.json").read_text(encoding="utf-8"))
 
     assert vector_snapshot["index_manifest_hash"] == "after-update"
+    assert planned_stages["schema_version"] == "1.0"
+    assert any(stage["id"] == "enrichment" for stage in planned_stages["stages"])
     assert (
         input_snapshot["snapshot_summary"]["vector_store"]["index_manifest_hash"]
         == "after-update"

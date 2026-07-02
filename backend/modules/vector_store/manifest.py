@@ -1,9 +1,11 @@
 from __future__ import annotations
 
 import hashlib
+import inspect
 import logging
 import json
 import os
+import uuid
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -56,20 +58,72 @@ def load_manifest(path: Path) -> dict[str, Any]:
     payload = json.loads(path.read_text(encoding="utf-8"))
     if not isinstance(payload, dict):
         return default_manifest()
-    payload.setdefault("files", {})
+    files_payload = payload.setdefault("files", {})
+    if isinstance(files_payload, dict) and not files_payload:
+        metadata_keys = {
+            key
+            for key in (
+                "created_at",
+                "updated_at",
+                "embedding_model",
+                "embedding_chunk_tokens",
+                "embedding_chunk_overlap_tokens",
+                "index_settings",
+                "index_settings_signature",
+            )
+            if payload.get(key)
+        }
+        if metadata_keys:
+            logger.warning(
+                "Loaded vector-store manifest with empty files payload path=%s metadata_keys=%s",
+                path,
+                sorted(metadata_keys),
+            )
     return payload
 
 
+def _caller_metadata() -> dict[str, object]:
+    """Return the first external caller frame outside this module."""
+    module_path = Path(__file__).resolve()
+    cwd = Path.cwd().resolve()
+    for frame in inspect.stack()[1:]:
+        frame_path = Path(frame.filename).resolve()
+        if frame_path == module_path:
+            continue
+        try:
+            caller_path = frame_path.relative_to(cwd).as_posix()
+        except ValueError:
+            caller_path = str(frame_path)
+        return {
+            "caller_file": caller_path,
+            "caller_function": frame.function,
+            "caller_line": frame.lineno,
+        }
+    return {
+        "caller_file": str(module_path),
+        "caller_function": "unknown",
+        "caller_line": 0,
+    }
+
+
 def _manifest_write_audit_enabled() -> bool:
-    """Return true when manifest-write audit artifacts should be persisted."""
-    raw_value = os.getenv("VECTOR_STORE_MANIFEST_WRITE_AUDIT_ENABLED")
-    if raw_value is not None:
-        normalized = raw_value.strip().lower()
-        if normalized in {"1", "true", "yes", "y", "on"}:
-            return True
-        if normalized in {"0", "false", "no", "n", "off"}:
-            return False
+    """Return true for runtime audit artifacts and false under pytest."""
     return "PYTEST_CURRENT_TEST" not in os.environ
+
+
+def _write_json_atomic(path: Path, payload: dict[str, Any]) -> None:
+    """Atomically replace one JSON file to avoid partially readable manifests."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temp_path = path.with_name(f".{path.name}.{os.getpid()}.{uuid.uuid4().hex}.tmp")
+    try:
+        temp_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+        temp_path.replace(path)
+    except Exception:
+        try:
+            temp_path.unlink()
+        except FileNotFoundError:
+            pass
+        raise
 
 
 def _append_manifest_write_audit(
@@ -78,35 +132,52 @@ def _append_manifest_write_audit(
     manifest: dict[str, Any],
     file_count: int,
     chunk_count: int,
-    reason: str | None,
+    reason: str,
     docs_dir: Path | None,
     metadata: dict[str, Any] | None,
-) -> None:
-    """Append one manifest-write audit record under output/system artifacts."""
+) -> dict[str, Any] | None:
+    """Append one structured manifest-write audit record under output/system."""
     if not _manifest_write_audit_enabled():
-        return
-    runs_dir = Path(os.getenv("RUNS_DIR", "output"))
-    audit_dir = runs_dir / "system" / "vector_store_manifest_writes"
-    audit_dir.mkdir(parents=True, exist_ok=True)
-    timestamp = now_iso()
+        return None
+    cwd = Path.cwd()
+    resolved_audit_dir = (
+        Path(os.getenv("RUNS_DIR", "output")) / "system" / "vector_store_manifest_writes"
+    )
+    resolved_audit_dir.mkdir(parents=True, exist_ok=True)
+    try:
+        manifest_resolved_path = str(path.resolve(strict=False))
+    except OSError:
+        manifest_resolved_path = str(path)
+    try:
+        docs_dir_resolved = str(docs_dir.resolve(strict=False)) if docs_dir is not None else None
+    except OSError:
+        docs_dir_resolved = str(docs_dir) if docs_dir is not None else None
+    caller = _caller_metadata()
     payload = {
-        "timestamp": timestamp,
+        "timestamp": now_iso(),
         "manifest_path": str(path),
-        "manifest_resolved_path": str(path.resolve()),
+        "manifest_resolved_path": manifest_resolved_path,
         "file_count": file_count,
         "chunk_count": chunk_count,
         "updated_at": manifest.get("updated_at"),
         "reason": reason,
         "docs_dir": str(docs_dir) if docs_dir is not None else None,
-        "docs_dir_resolved": str(docs_dir.resolve()) if docs_dir is not None else None,
-        "cwd": str(Path.cwd()),
+        "docs_dir_resolved": docs_dir_resolved,
+        "cwd": str(cwd),
+        "pid": os.getpid(),
+        "audit_dir": str(resolved_audit_dir),
+        **caller,
         "metadata": metadata or {},
     }
-    latest_path = audit_dir / "latest.json"
-    history_path = audit_dir / "history.jsonl"
-    latest_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
-    with history_path.open("a", encoding="utf-8") as handle:
-        handle.write(json.dumps(payload, ensure_ascii=True) + "\n")
+    history_path = resolved_audit_dir / "history.jsonl"
+    latest_path = resolved_audit_dir / "latest.json"
+    with history_path.open("a", encoding="utf-8") as history_file:
+        history_file.write(json.dumps(payload, ensure_ascii=True, default=str) + "\n")
+    latest_path.write_text(
+        json.dumps(payload, indent=2, ensure_ascii=True, default=str),
+        encoding="utf-8",
+    )
+    return payload
 
 
 def save_manifest(
@@ -117,7 +188,7 @@ def save_manifest(
     docs_dir: Path | None = None,
     metadata: dict[str, Any] | None = None,
 ) -> None:
-    """Write manifest JSON to disk."""
+    """Write manifest JSON to disk and audit who triggered the write."""
     files_payload = manifest.get("files", {})
     files = files_payload if isinstance(files_payload, dict) else {}
     chunk_count = 0
@@ -126,27 +197,30 @@ def save_manifest(
             chunk_ids = payload.get("chunk_ids")
             if isinstance(chunk_ids, list):
                 chunk_count += len(chunk_ids)
+    caller = _caller_metadata()
+    write_reason = reason or str(caller.get("caller_function") or "unknown")
 
     log_fn = logger.warning if not files else logger.info
     log_fn(
-        "Saving vector-store manifest path=%s file_count=%d chunk_count=%d updated_at=%s "
-        "reason=%s docs_dir=%s metadata=%s",
+        "Saving vector-store manifest path=%s file_count=%d chunk_count=%d "
+        "updated_at=%s reason=%s docs_dir=%s caller=%s:%s metadata=%s",
         path,
         len(files),
         chunk_count,
         manifest.get("updated_at"),
-        reason,
+        write_reason,
         docs_dir,
+        caller.get("caller_file"),
+        caller.get("caller_line"),
         metadata or {},
     )
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+    _write_json_atomic(path, manifest)
     _append_manifest_write_audit(
         path=path,
         manifest=manifest,
         file_count=len(files),
         chunk_count=chunk_count,
-        reason=reason,
+        reason=write_reason,
         docs_dir=docs_dir,
         metadata=metadata,
     )

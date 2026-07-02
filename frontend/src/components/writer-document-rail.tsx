@@ -7,6 +7,7 @@ import { MarkdownWithReferences } from "@/components/markdown-with-references";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { reportContentForDisplay } from "@/lib/report-content";
 
 interface WriterDocumentRailProps {
   runId: string;
@@ -25,6 +26,8 @@ export function WriterDocumentRail({
   showWriterContextExport = false,
   onOpenFullDocument,
 }: WriterDocumentRailProps) {
+  const displayContent = reportContentForDisplay(content, question);
+
   return (
     <div className="space-y-4">
       <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
@@ -32,12 +35,12 @@ export function WriterDocumentRail({
           <div className="space-y-2">
             <div className="inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500">
               <ScrollText className="h-3.5 w-3.5" />
-              Writer Document
+              Report
             </div>
             <p className="text-sm leading-relaxed text-slate-700">
               {question?.trim()
                 ? question.trim()
-                : "Keep the generated answer visible here while you question it in chat."}
+                : "Keep the report visible here while you question it in chat."}
             </p>
           </div>
           {statusLabel ? <Badge variant="outline">{statusLabel}</Badge> : null}
@@ -61,7 +64,7 @@ export function WriterDocumentRail({
 
       <ScrollArea className="h-[62vh] rounded-xl border border-slate-200 bg-white">
         <article className="document-markdown document-markdown-rail p-4">
-          <MarkdownWithReferences content={content} runId={runId} />
+          <MarkdownWithReferences content={displayContent} runId={runId} />
         </article>
       </ScrollArea>
     </div>

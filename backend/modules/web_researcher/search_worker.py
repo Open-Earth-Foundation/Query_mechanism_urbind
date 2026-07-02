@@ -111,7 +111,11 @@ def _process_results_for_query(
             if domain_url_counts.get(domain, 0) >= _MAX_URLS_PER_DOMAIN_PER_BATCH:
                 continue
 
-        scrape_result = scraper.scrape(result.url)
+        scrape_result = scraper.scrape(
+            result.url,
+            query=query,
+            batch_id=batch.batch_id,
+        )
         if not scrape_result.success:
             continue
 
@@ -142,6 +146,88 @@ def _coverage_set_from_findings(findings: list[WebFinding]) -> set[tuple[str, st
     return {(f.city.lower(), f.field.lower()) for f in findings}
 
 
+def _empty_batch_search_stats(batch: SearchBatch, max_retries: int) -> dict[str, Any]:
+    """Build the per-batch search execution stats skeleton."""
+    return {
+        "batch_id": batch.batch_id,
+        "search_type": batch.search_type,
+        "cities": batch.cities,
+        "target_fields": batch.target_fields,
+        "planned_query_count": len(batch.queries),
+        "max_attempts": max_retries + 1,
+        "matching_tier1_source_count": 0,
+        "matching_tier1_source_ids": [],
+        "estimated_max_serper_query_count": 0,
+        "actual_serper_query_count": 0,
+        "serper_call_count": 0,
+        "tier1_site_query_count": 0,
+        "open_query_count": 0,
+        "open_query_skipped_count": 0,
+    }
+
+
+def _record_serper_call(batch_stats: dict[str, Any]) -> None:
+    """Count one search call that should send a request to Serper."""
+    batch_stats["actual_serper_query_count"] += 1
+    batch_stats["serper_call_count"] += 1
+
+
+def _successful_serper_count(search_client: SerperSearchClient) -> int:
+    """Return successful Serper calls, falling back for older test doubles."""
+    value = getattr(search_client, "successful_query_count", None)
+    if isinstance(value, int):
+        return value
+    return int(search_client.query_count)
+
+
+def _merge_search_execution_stats(
+    *,
+    batches: list[SearchBatch],
+    config: AppConfig,
+    batch_stats: list[dict[str, Any]],
+    actual_serper_query_count: int,
+    successful_serper_query_count: int,
+) -> dict[str, Any]:
+    """Aggregate per-batch search execution stats for the audit artifact."""
+    return {
+        "config": {
+            "tier1_first_search": bool(config.enrichment.tier1_first_search),
+            "tier1_confidence_threshold": float(
+                config.enrichment.tier1_confidence_threshold
+            ),
+            "max_total_queries_per_run": int(
+                config.enrichment.max_total_queries_per_run
+            ),
+            "max_queries_per_batch": int(config.enrichment.max_queries_per_batch),
+            "max_retries_per_worker": int(config.enrichment.max_retries_per_worker),
+            "max_workers": int(config.enrichment.max_workers),
+        },
+        "metrics": {
+            "search_batch_count": len(batch_stats),
+            "planned_query_count": sum(len(batch.queries) for batch in batches),
+            "actual_serper_query_count": actual_serper_query_count,
+            "serper_call_count": actual_serper_query_count,
+            "successful_serper_query_count": successful_serper_query_count,
+            "tier1_site_query_count": sum(
+                int(item.get("tier1_site_query_count") or 0)
+                for item in batch_stats
+            ),
+            "open_query_count": sum(
+                int(item.get("open_query_count") or 0) for item in batch_stats
+            ),
+            "open_query_skipped_count": sum(
+                int(item.get("open_query_skipped_count") or 0)
+                for item in batch_stats
+            ),
+            "estimated_max_serper_query_count": sum(
+                int(item.get("estimated_max_serper_query_count") or 0)
+                for item in batch_stats
+            ),
+        },
+        "batches": batch_stats,
+    }
+
+
 def execute_search_batch(
     batch: SearchBatch,
     search_client: SerperSearchClient,
@@ -149,6 +235,7 @@ def execute_search_batch(
     deep_diver: DeepDiver,
     config: AppConfig,
     api_key: str,
+    search_stats: dict[str, Any] | None = None,
     llm_recorder: LlmCallRecorder | None = None,
 ) -> list[WebFinding]:
     """Execute a single search batch: search → filter → scrape → extract.
@@ -168,12 +255,18 @@ def execute_search_batch(
     domain_url_counts: dict[str, int] = {}
     scraped_urls: set[str] = set()
     max_retries = config.enrichment.max_retries_per_worker
+    batch_stats = _empty_batch_search_stats(batch, max_retries)
 
     use_tier1 = bool(config.enrichment.tier1_first_search)
     confidence_threshold = float(config.enrichment.tier1_confidence_threshold)
     tier1_allowlist = _load_tier1_allowlist_safe() if use_tier1 else None
     tier1_sources = (
         _matching_tier1_sources(tier1_allowlist, batch) if use_tier1 else []
+    )
+    batch_stats["matching_tier1_source_count"] = len(tier1_sources)
+    batch_stats["matching_tier1_source_ids"] = [source.id for source in tier1_sources]
+    batch_stats["estimated_max_serper_query_count"] = (
+        len(batch.queries) * (len(tier1_sources) + 1) * (max_retries + 1)
     )
     if use_tier1:
         logger.info(
@@ -191,6 +284,9 @@ def execute_search_batch(
             # Tier-1 pre-pass.
             for source in tier1_sources:
                 scoped_query = f"site:{source.domain} {query}"
+                if search_client.can_search:
+                    batch_stats["tier1_site_query_count"] += 1
+                    _record_serper_call(batch_stats)
                 results = search_client.search(scoped_query)
                 if not results:
                     continue
@@ -224,6 +320,7 @@ def execute_search_batch(
                 for field in batch.target_fields
             }
             if use_tier1 and tier1_resolved >= needed_for_query:
+                batch_stats["open_query_skipped_count"] += 1
                 logger.info(
                     "search_worker: tier-1 fully covered query %r; skipping open pass.",
                     query,
@@ -231,6 +328,9 @@ def execute_search_batch(
                 continue
 
             # Open pass — same path as before, but findings are tagged.
+            if search_client.can_search:
+                batch_stats["open_query_count"] += 1
+                _record_serper_call(batch_stats)
             results = search_client.search(query)
             open_findings = _process_results_for_query(
                 query=query,
@@ -306,11 +406,21 @@ def execute_search_batch(
                 all_findings.extend(findings)
 
     logger.info(
-        "Search batch %s completed: %d findings from %d scraped URLs.",
+        "Search batch %s completed: planned_queries=%d serper_calls=%d "
+        "tier1_site_calls=%d open_calls=%d skipped_open_calls=%d "
+        "estimated_max_serper_calls=%d findings=%d scraped_urls=%d.",
         batch.batch_id,
+        len(batch.queries),
+        int(batch_stats["actual_serper_query_count"]),
+        int(batch_stats["tier1_site_query_count"]),
+        int(batch_stats["open_query_count"]),
+        int(batch_stats["open_query_skipped_count"]),
+        int(batch_stats["estimated_max_serper_query_count"]),
         len(all_findings),
         len(scraped_urls),
     )
+    if search_stats is not None:
+        search_stats.update(batch_stats)
     return all_findings
 
 
@@ -319,12 +429,16 @@ def execute_search_batches(
     config: AppConfig,
     api_key: str,
     progress: ProgressTracker | None = None,
+    scrape_failures: list[dict[str, Any]] | None = None,
+    scrape_stats: dict[str, int] | None = None,
+    search_execution_summary: dict[str, Any] | None = None,
     llm_recorder: LlmCallRecorder | None = None,
 ) -> list[WebFinding]:
     """Execute all search batches through a bounded thread pool.
 
     Shares a single GoogleSearchClient, FirecrawlScraper, and DeepDiver
-    across workers for global quota tracking.
+    across workers for global quota tracking. Optional collectors receive
+    structured scrape failures and compact scrape counters for artifacts.
     """
     if not batches:
         return []
@@ -354,8 +468,11 @@ def execute_search_batches(
                     name_by_source_id[s.id] = s.name
 
     with ThreadPoolExecutor(max_workers=max_workers) as pool:
-        futures = {
-            pool.submit(
+        futures = {}
+        search_stats_by_future: dict[Any, dict[str, Any]] = {}
+        for batch in batches:
+            batch_search_stats: dict[str, Any] = {}
+            future = pool.submit(
                 execute_search_batch,
                 batch,
                 search_client,
@@ -363,17 +480,20 @@ def execute_search_batches(
                 deep_diver,
                 config,
                 api_key,
-                llm_recorder,
-            ): batch.batch_id
-            for batch in batches
-        }
+                search_stats=batch_search_stats,
+                llm_recorder=llm_recorder,
+            )
+            futures[future] = batch.batch_id
+            search_stats_by_future[future] = batch_search_stats
 
         completed_count = 0
+        batch_search_stats: list[dict[str, Any]] = []
         for future in as_completed(futures):
             batch_id = futures[future]
             completed_count += 1
             try:
                 findings = future.result()
+                batch_search_stats.append(search_stats_by_future.get(future, {}))
                 all_findings.extend(findings)
                 if progress:
                     batch = batch_by_id.get(batch_id)
@@ -428,14 +548,31 @@ def execute_search_batches(
             seen.add(key)
             deduped.append(f)
 
+    successful_serper_query_count = _successful_serper_count(search_client)
     logger.info(
-        "All search batches complete: %d findings (%d after dedup), "
-        "%d total queries, %d total scrapes.",
+        "All search batches complete: findings=%d deduped_findings=%d "
+        "actual_serper_calls=%d successful_serper_calls=%d total_scrapes=%d.",
         len(all_findings),
         len(deduped),
         search_client.query_count,
+        successful_serper_query_count,
         scraper.scrape_count,
     )
+    if scrape_failures is not None:
+        scrape_failures.extend(scraper.scrape_failures)
+    if scrape_stats is not None:
+        scrape_stats["scrape_success_count"] = scraper.scrape_count
+        scrape_stats["scrape_failure_count"] = len(scraper.scrape_failures)
+    if search_execution_summary is not None:
+        search_execution_summary.update(
+            _merge_search_execution_stats(
+                batches=batches,
+                config=config,
+                batch_stats=batch_search_stats,
+                actual_serper_query_count=search_client.query_count,
+                successful_serper_query_count=successful_serper_query_count,
+            )
+        )
     return deduped
 
 

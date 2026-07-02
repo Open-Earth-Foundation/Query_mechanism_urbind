@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import logging
 import os
+from threading import Lock
 from typing import Any
 
 import httpx
@@ -36,20 +37,49 @@ class SerperSearchClient:
     """
 
     def __init__(self, api_key: str | None = None) -> None:
-        self.api_key = api_key or os.getenv("SERPER_API_KEY", "")
+        """Initialize the client with an explicit key or the environment key."""
+        self.api_key = (
+            api_key if api_key is not None else os.getenv("SERPER_API_KEY", "")
+        )
         self._query_count = 0
+        self._successful_query_count = 0
         # Circuit breaker: once Serper reports the account is out of credits
         # we stop calling it for the rest of this client's lifetime.  Otherwise
         # one credit-exhausted run hammers the API with hundreds of failures.
         self._credits_exhausted = False
+        self._lock = Lock()
 
     @property
     def query_count(self) -> int:
+        """Number of HTTP requests sent to Serper."""
         return self._query_count
 
     @property
+    def successful_query_count(self) -> int:
+        """Number of Serper HTTP requests that returned a successful response."""
+        return self._successful_query_count
+
+    @property
     def credits_exhausted(self) -> bool:
+        """Whether Serper reported exhausted credits for this client."""
         return self._credits_exhausted
+
+    @property
+    def can_search(self) -> bool:
+        """Return whether a call would currently send an HTTP request."""
+        return bool(self.api_key and not self._credits_exhausted)
+
+    def _increment_query_count(self) -> int:
+        """Increment the actual Serper HTTP request counter."""
+        with self._lock:
+            self._query_count += 1
+            return self._query_count
+
+    def _increment_successful_query_count(self) -> int:
+        """Increment the successful Serper HTTP request counter."""
+        with self._lock:
+            self._successful_query_count += 1
+            return self._successful_query_count
 
     def search(
         self,
@@ -76,11 +106,12 @@ class SerperSearchClient:
         }
 
         try:
+            request_number = self._increment_query_count()
             with httpx.Client(timeout=15.0) as client:
                 resp = client.post(_SERPER_ENDPOINT, headers=headers, json=payload)
                 resp.raise_for_status()
 
-            self._query_count += 1
+            successful_count = self._increment_successful_query_count()
             data = resp.json()
             organic = data.get("organic", [])
 
@@ -93,10 +124,11 @@ class SerperSearchClient:
                 ))
 
             logger.info(
-                "Serper query=%r results=%d total_queries=%d",
+                "Serper query=%r results=%d actual_serper_calls=%d successful_serper_calls=%d",
                 query,
                 len(results),
-                self._query_count,
+                request_number,
+                successful_count,
             )
             return results
 

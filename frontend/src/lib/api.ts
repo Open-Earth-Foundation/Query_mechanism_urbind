@@ -83,6 +83,11 @@ export interface PipelineStep {
   id: string;
   label: string;
   status: string;
+  stage_name?: string | null;
+  stage_number?: number | null;
+  planned_order?: number | null;
+  enabled?: boolean | null;
+  artifact_aliases?: string[] | null;
   started_at?: string | null;
   completed_at?: string | null;
   items: PipelineStepItem[];
@@ -96,6 +101,197 @@ export interface RunStatusResponse {
   finish_reason?: string | null;
   error?: RunError | null;
   steps?: PipelineStep[] | null;
+}
+
+export type ArtifactFieldStatus = "estimated" | "non_estimable" | "unresolved";
+
+export interface ArtifactFieldSource {
+  source_id?: string | null;
+  title?: string | null;
+  quote?: string | null;
+  has_evidence: boolean;
+}
+
+export interface ArtifactFieldEstimate {
+  low?: number | string | null;
+  mid?: number | string | null;
+  high?: number | string | null;
+  method?: string | null;
+  confidence?: string | null;
+  basis?: string | null;
+}
+
+export interface ArtifactField {
+  city: string;
+  field: string;
+  type?: string | null;
+  scope?: string | null;
+  status: ArtifactFieldStatus;
+  explanation?: string | null;
+  gap_description?: string | null;
+  recommendation?: string | null;
+  estimate?: ArtifactFieldEstimate | null;
+  sources: ArtifactFieldSource[];
+  reason?: string | null;
+  reason_label?: string | null;
+  // Non-authoritative "possible extraction gap" hint + the matched corpus
+  // snippets that back it (shown on hover).
+  reason_hint?: string | null;
+  reason_hint_evidence?: string[] | null;
+}
+
+export interface ArtifactStage {
+  stage_number?: number | null;
+  name: string;
+  status: string;
+  metrics: Record<string, unknown>;
+  inputs: Record<string, unknown>;
+}
+
+export interface EnrichmentStep {
+  key: string;
+  label: string;
+  summary: string;
+  metrics: Record<string, unknown>;
+  warn?: string | null;
+}
+
+export interface GapAnalysisField {
+  field: string;
+  classification?: string | null;
+  scope?: string | null;
+  rationale?: string | null;
+}
+
+export interface CityGap {
+  city: string;
+  priority?: string | null;
+}
+
+export interface GapAnalysisDetail {
+  fields: GapAnalysisField[];
+  city_gaps: CityGap[];
+}
+
+export interface ExternalEvidenceItem {
+  city: string;
+  field: string;
+  value?: number | string | null;
+  unit?: string | null;
+  source_id?: string | null;
+  source_type?: string | null;
+  publication_year?: number | null;
+  quote?: string | null;
+}
+
+export interface ExternalCandidateItem {
+  city: string;
+  field: string;
+  source_id?: string | null;
+  title?: string | null;
+  matched_text?: string | null;
+  quote?: string | null;
+}
+
+export interface NoEvidenceItem {
+  city: string;
+  field: string;
+}
+
+export interface ExternalSearchDetail {
+  validated: ExternalEvidenceItem[];
+  unused: ExternalCandidateItem[];
+  unused_total: number;
+  no_evidence: NoEvidenceItem[];
+}
+
+export interface WebResearchFindingPreview {
+  city?: string | null;
+  field?: string | null;
+  value?: number | string | null;
+  unit?: string | null;
+  source_url?: string | null;
+  source_type?: string | null;
+  source_tier?: string | null;
+}
+
+export interface FreshnessResultPreview {
+  city?: string | null;
+  field?: string | null;
+  ccc_value?: number | string | null;
+  web_value?: number | string | null;
+  classification?: string | null;
+  reason?: string | null;
+  web_source_url?: string | null;
+}
+
+export interface EnrichmentStageDetail {
+  gap_analysis?: GapAnalysisDetail | null;
+  external_sources?: {
+    executed: boolean;
+    validated_count: number;
+    resolution_count: number;
+    unused_count: number;
+    no_evidence_count: number;
+    validated: ExternalEvidenceItem[];
+    unused: ExternalCandidateItem[];
+    no_evidence: NoEvidenceItem[];
+  } | null;
+  web_research?: {
+    executed: boolean;
+    search_batch_count: number;
+    search_query_count: number;
+    planned_search_query_count: number;
+    actual_serper_call_count: number;
+    successful_serper_call_count: number;
+    tier1_site_call_count: number;
+    open_call_count: number;
+    skipped_open_call_count: number;
+    estimated_max_serper_call_count: number;
+    web_finding_count: number;
+    national_finding_count: number;
+    comparative_finding_count: number;
+    tier1_finding_count: number;
+    open_finding_count: number;
+    findings: WebResearchFindingPreview[];
+    national_findings: WebResearchFindingPreview[];
+    comparative_findings: WebResearchFindingPreview[];
+  } | null;
+  freshness?: {
+    executed: boolean;
+    freshness_result_count: number;
+    classification_counts: Record<string, number>;
+    results: FreshnessResultPreview[];
+  } | null;
+}
+
+export interface AssumptionsStageDetail {
+  executed: boolean;
+  assumption_count: number;
+  non_estimable_count: number;
+  reason_breakdown: Record<string, number>;
+  assumptions: Record<string, unknown>[];
+  non_estimable: Record<string, unknown>[];
+}
+
+export interface StageDetails {
+  enrichment?: EnrichmentStageDetail | null;
+  assumptions?: AssumptionsStageDetail | null;
+}
+
+export interface RunArtifactsResponse {
+  run_id: string;
+  status: RunStatus;
+  fields: ArtifactField[];
+  stages: ArtifactStage[];
+  enrichment_steps: EnrichmentStep[];
+  gap_analysis?: GapAnalysisDetail | null;
+  external_search?: ExternalSearchDetail | null;
+  stage_details?: StageDetails | null;
+  // Per-artifact read outcome ("ok" / "missing" / "unreadable").
+  artifact_health?: Record<string, string> | null;
+  // True when an artifact existed but could not be parsed (a read regression).
+  degraded?: boolean | null;
 }
 
 export interface RunDiagnosticsArtifactPaths {
@@ -678,6 +874,16 @@ export async function downloadRunWriterContextMarkdownExport(runId: string): Pro
 
 export async function fetchRunContext(runId: string): Promise<RunContextResponse> {
   return requestJson<RunContextResponse>(`/api/v1/runs/${encodeURIComponent(runId)}/context`);
+}
+
+export async function fetchRunArtifacts(
+  runId: string,
+  options?: { signal?: AbortSignal },
+): Promise<RunArtifactsResponse> {
+  return requestJson<RunArtifactsResponse>(
+    `/api/v1/runs/${encodeURIComponent(runId)}/artifacts`,
+    { signal: options?.signal },
+  );
 }
 
 export async function fetchRunReference(

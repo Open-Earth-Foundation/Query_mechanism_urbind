@@ -41,6 +41,37 @@ def read_update_status(path: Path) -> dict[str, object] | None:
     return payload if isinstance(payload, dict) else None
 
 
+def compact_update_stats(
+    stats: dict[str, object] | None,
+    *,
+    sample_limit: int = 5,
+) -> dict[str, object] | None:
+    """Return a compact status-friendly summary of update stats."""
+    if not isinstance(stats, dict):
+        return None
+    changed_files = stats.get("changed_files")
+    changed_list = changed_files if isinstance(changed_files, list) else []
+    deleted_files = stats.get("deleted_files")
+    deleted_list = deleted_files if isinstance(deleted_files, list) else []
+    return {
+        "files_indexed": stats.get("files_indexed", 0),
+        "files_changed": stats.get("files_changed", 0),
+        "files_unchanged": stats.get("files_unchanged", 0),
+        "files_deleted": stats.get("files_deleted", 0),
+        "chunks_created": stats.get("chunks_created", 0),
+        "table_chunks": stats.get("table_chunks", 0),
+        "min_tokens": stats.get("min_tokens", 0),
+        "avg_tokens": stats.get("avg_tokens", 0.0),
+        "max_tokens": stats.get("max_tokens", 0),
+        "dry_run": stats.get("dry_run", False),
+        "update_mode": stats.get("update_mode"),
+        "changed_file_entries": len(changed_list),
+        "deleted_file_entries": len(deleted_list),
+        "changed_files_sample": changed_list[:sample_limit],
+        "deleted_files_sample": deleted_list[:sample_limit],
+    }
+
+
 def write_update_status(
     path: Path,
     *,
@@ -65,7 +96,7 @@ def write_update_status(
         "completed_at": completed_at,
         "updated_at": timestamp,
         "error": error,
-        "stats": stats,
+        "stats": compact_update_stats(stats),
         "job_name": job_name,
     }
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -77,6 +108,7 @@ def write_update_status(
 
 
 __all__ = [
+    "compact_update_stats",
     "VectorStoreUpdateStatus",
     "get_update_status_path",
     "now_iso",

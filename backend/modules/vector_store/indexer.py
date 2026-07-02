@@ -24,6 +24,7 @@ from backend.modules.vector_store.manifest import (
 )
 from backend.modules.vector_store.markdown_blocks import parse_markdown_blocks
 from backend.modules.vector_store.models import EmbeddingProvider, IndexedChunk
+from backend.modules.vector_store.update_lock import acquire_vector_store_update_lock
 from backend.utils.city_normalization import format_city_stem, normalize_city_key
 from backend.utils.config import AppConfig, load_config
 from backend.utils.markdown_files import list_markdown_files
@@ -49,6 +50,7 @@ class IndexStats:
     update_mode: str = "incremental_update"
     changed_files: list[dict[str, object]] = field(default_factory=list)
     deleted_files: list[dict[str, object]] = field(default_factory=list)
+    lock_details: dict[str, object] = field(default_factory=dict)
 
 
 class EmbeddingIndexingError(RuntimeError):
@@ -419,6 +421,13 @@ def _source_city_key(source_path: str) -> str:
     return normalize_city_key(Path(str(source_path)).stem)
 
 
+def _selected_city_metadata(selected_cities: list[str] | None) -> list[str]:
+    """Return a JSON-safe copy of requested city filters."""
+    if not selected_cities:
+        return []
+    return [str(city) for city in selected_cities if str(city).strip()]
+
+
 def _index_settings_payload(settings: VectorStoreSettings) -> dict[str, object]:
     """Return the persisted index settings that shape stored chunks and vectors."""
     return {
@@ -517,6 +526,46 @@ def build_markdown_index(
 ) -> IndexStats:
     """Build the persisted markdown index from the full documents corpus."""
     settings = get_vector_store_settings(config)
+    if dry_run:
+        return _build_markdown_index_impl(
+            config=config,
+            docs_dir=docs_dir,
+            selected_cities=selected_cities,
+            dry_run=dry_run,
+            chunks_dump_path=chunks_dump_path,
+            settings=settings,
+        )
+    with acquire_vector_store_update_lock(
+        settings.persist_path,
+        operation="build_markdown_index",
+    ) as lock_handle:
+        return _build_markdown_index_impl(
+            config=config,
+            docs_dir=docs_dir,
+            selected_cities=selected_cities,
+            dry_run=dry_run,
+            chunks_dump_path=chunks_dump_path,
+            settings=settings,
+            lock_details={
+                "lock_path": str(lock_handle.path),
+                "operation": lock_handle.operation,
+                "acquired_after_seconds": lock_handle.acquired_after_seconds,
+                "waited_for_holder": lock_handle.waited_for_holder,
+            },
+        )
+
+
+def _build_markdown_index_impl(
+    *,
+    config: AppConfig,
+    docs_dir: Path,
+    selected_cities: list[str] | None,
+    dry_run: bool,
+    chunks_dump_path: Path | None,
+    settings: VectorStoreSettings,
+    lock_details: dict[str, object] | None = None,
+) -> IndexStats:
+    """Build a full markdown index from scratch after any required lock is held."""
     settings_payload = _index_settings_payload(settings)
     project_root = Path.cwd()
     effective_selected_cities = _resolve_index_scope(
@@ -641,8 +690,10 @@ def build_markdown_index(
             metadata={
                 "dry_run": dry_run,
                 "files_indexed": files_indexed,
-                "selected_cities_requested": selected_cities or [],
+                "selected_cities_requested": _selected_city_metadata(selected_cities),
                 "selected_cities_effective": effective_selected_cities or [],
+                "docs_dir": str(docs_dir),
+                "docs_dir_resolved": str(docs_dir.resolve(strict=False)),
                 "persist_path": str(settings.persist_path),
                 "collection_name": settings.collection_name,
                 "update_mode": "full_rebuild",
@@ -670,6 +721,7 @@ def build_markdown_index(
         dry_run=dry_run,
         update_mode="full_rebuild",
         changed_files=changed_files,
+        lock_details=lock_details or {},
     )
 
 
@@ -680,14 +732,51 @@ def update_markdown_index(
     dry_run: bool = False,
 ) -> IndexStats:
     """Incrementally update the persisted full-corpus markdown index."""
+    settings = get_vector_store_settings(config)
+    if dry_run:
+        return _update_markdown_index_impl(
+            config=config,
+            docs_dir=docs_dir,
+            selected_cities=selected_cities,
+            dry_run=dry_run,
+            settings=settings,
+        )
+    with acquire_vector_store_update_lock(
+        settings.persist_path,
+        operation="update_markdown_index",
+    ) as lock_handle:
+        return _update_markdown_index_impl(
+            config=config,
+            docs_dir=docs_dir,
+            selected_cities=selected_cities,
+            dry_run=dry_run,
+            settings=settings,
+            lock_details={
+                "lock_path": str(lock_handle.path),
+                "operation": lock_handle.operation,
+                "acquired_after_seconds": lock_handle.acquired_after_seconds,
+                "waited_for_holder": lock_handle.waited_for_holder,
+            },
+        )
+
+
+def _update_markdown_index_impl(
+    *,
+    config: AppConfig,
+    docs_dir: Path,
+    selected_cities: list[str] | None,
+    dry_run: bool,
+    settings: VectorStoreSettings,
+    lock_details: dict[str, object] | None = None,
+) -> IndexStats:
+    """Incrementally update markdown index after any required lock is held."""
+    settings_payload = _index_settings_payload(settings)
+    project_root = Path.cwd()
     effective_selected_cities = _resolve_index_scope(
         selected_cities=selected_cities,
         dry_run=dry_run,
         operation_name="Index update",
     )
-    settings = get_vector_store_settings(config)
-    settings_payload = _index_settings_payload(settings)
-    project_root = Path.cwd()
     manifest = load_manifest(settings.manifest_path)
     if _requires_full_rebuild(manifest, settings_payload):
         logger.warning(
@@ -697,11 +786,14 @@ def update_markdown_index(
             selected_cities,
             settings.manifest_path,
         )
-        stats = build_markdown_index(
+        stats = _build_markdown_index_impl(
             config=config,
             docs_dir=docs_dir,
             selected_cities=None,
             dry_run=dry_run,
+            chunks_dump_path=None,
+            settings=settings,
+            lock_details=lock_details,
         )
         if isinstance(stats, IndexStats):
             return replace(stats, update_mode="index_settings_changed_or_missing")
@@ -881,8 +973,10 @@ def update_markdown_index(
                 "files_indexed": len(current_files),
                 "files_changed": files_changed,
                 "files_deleted": files_deleted,
-                "selected_cities_requested": selected_cities or [],
+                "selected_cities_requested": _selected_city_metadata(selected_cities),
                 "selected_cities_effective": effective_selected_cities or [],
+                "docs_dir": str(docs_dir),
+                "docs_dir_resolved": str(docs_dir.resolve(strict=False)),
                 "persist_path": str(settings.persist_path),
                 "collection_name": settings.collection_name,
                 "update_mode": "incremental_update",
@@ -926,6 +1020,7 @@ def update_markdown_index(
         update_mode="incremental_update",
         changed_files=changed_files,
         deleted_files=deleted_files,
+        lock_details=lock_details or {},
     )
 
 

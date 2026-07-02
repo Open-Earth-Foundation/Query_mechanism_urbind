@@ -547,6 +547,13 @@ def serialize_enrichment_artifacts(
     )
     if not isinstance(external_stage_outputs, dict):
         external_stage_outputs = {}
+    web_research_stage_metrics = (
+        web_research_stage.get("metrics")
+        if isinstance(web_research_stage, dict)
+        else {}
+    )
+    if not isinstance(web_research_stage_metrics, dict):
+        web_research_stage_metrics = {}
     search_audit_artifact = external_stage_outputs.get("search_audit_artifact")
     if search_audit_artifact:
         outputs["external_source_search_audit"] = search_audit_artifact
@@ -592,6 +599,57 @@ def serialize_enrichment_artifacts(
                 ),
                 "freshness_result_count": len(
                     enrichment_data.get("freshness_results") or []
+                ),
+                "scrape_attempt_count": web_research_stage_metrics.get(
+                    "scrape_attempt_count"
+                ),
+                "scrape_success_count": web_research_stage_metrics.get(
+                    "scrape_success_count"
+                ),
+                "scrape_failure_count": web_research_stage_metrics.get(
+                    "scrape_failure_count"
+                ),
+                "scrape_warning_count": web_research_stage_metrics.get(
+                    "scrape_warning_count"
+                ),
+                "actual_serper_query_count": web_research_stage_metrics.get(
+                    "actual_serper_query_count"
+                ),
+                "actual_serper_call_count": web_research_stage_metrics.get(
+                    "actual_serper_call_count"
+                ),
+                "serper_call_count": web_research_stage_metrics.get(
+                    "serper_call_count"
+                ),
+                "successful_serper_query_count": web_research_stage_metrics.get(
+                    "successful_serper_query_count"
+                ),
+                "successful_serper_call_count": web_research_stage_metrics.get(
+                    "successful_serper_call_count"
+                ),
+                "tier1_site_query_count": web_research_stage_metrics.get(
+                    "tier1_site_query_count"
+                ),
+                "tier1_site_call_count": web_research_stage_metrics.get(
+                    "tier1_site_call_count"
+                ),
+                "open_query_count": web_research_stage_metrics.get(
+                    "open_query_count"
+                ),
+                "open_call_count": web_research_stage_metrics.get(
+                    "open_call_count"
+                ),
+                "open_query_skipped_count": web_research_stage_metrics.get(
+                    "open_query_skipped_count"
+                ),
+                "skipped_open_call_count": web_research_stage_metrics.get(
+                    "skipped_open_call_count"
+                ),
+                "estimated_max_serper_query_count": web_research_stage_metrics.get(
+                    "estimated_max_serper_query_count"
+                ),
+                "estimated_max_serper_call_count": web_research_stage_metrics.get(
+                    "estimated_max_serper_call_count"
                 ),
                 "web_research_executed": bool(flags.get("web_research_executed")),
                 "external_source_search_executed": bool(
@@ -678,6 +736,11 @@ def _build_web_research_audit(stage_payload: dict[str, Any]) -> dict[str, Any] |
         "comparative_findings",
         "added_city_fields",
         "freshness_touched_city_fields",
+        "scrape_failures",
+        "scrape_failure_summary",
+        "search_execution_summary",
+        "failed_batch_groups",
+        "serper_billing_summary",
     )
     trace_outputs = {
         key: outputs.get(key)

@@ -12,6 +12,7 @@ from fastapi.responses import Response
 from backend.api.models import (
     CreateRunRequest,
     CreateRunResponse,
+    RunArtifactsResponse,
     RunDiagnosticsResponse,
     PipelineStep,
     PipelineStepItem,
@@ -25,6 +26,7 @@ from backend.api.models import (
     RunStatusResponse,
     SourceChunkListResponse,
 )
+from backend.api.services.run_artifacts import build_run_artifacts
 from backend.api.services.run_diagnostics import build_run_diagnostics
 from backend.api.services.document_export import DOCX_MIME_TYPE, markdown_to_docx_bytes
 from backend.api.services.feature_readiness import FeatureReadinessService
@@ -51,6 +53,10 @@ from backend.api.services.source_chunks import load_source_chunks, normalize_chu
 from backend.api.services.vector_store_warmup import VectorStoreWarmup
 from backend.modules.orchestrator.utils.references import is_valid_ref_id
 from backend.utils.config import AppConfig, load_cached_config, load_config
+from backend.utils.planned_stages import (
+    merge_progress_into_planned_stages,
+    planned_stages_path,
+)
 
 router = APIRouter()
 logger = logging.getLogger(__name__)
@@ -296,8 +302,8 @@ def list_runs(
     return RunListResponse(runs=runs, total=len(runs))
 
 
-def _read_progress_steps(runs_dir: Path, run_id: str) -> list[PipelineStep] | None:
-    """Best-effort read of progress.json for a run directory."""
+def _read_progress_entries(runs_dir: Path, run_id: str) -> list[dict[str, object]] | None:
+    """Best-effort read of raw progress entries for a run directory."""
     try:
         progress_path = runs_dir / run_id / "progress.json"
         if not progress_path.exists():
@@ -306,32 +312,132 @@ def _read_progress_steps(runs_dir: Path, run_id: str) -> list[PipelineStep] | No
         raw_steps = data.get("steps")
         if not isinstance(raw_steps, list):
             return None
-        return [
-            PipelineStep(
-                id=step["id"],
-                label=step["label"],
-                status=step.get("status", "running"),
-                started_at=step.get("started_at"),
-                completed_at=step.get("completed_at"),
-                items=[
-                    PipelineStepItem(
-                        text=item["text"],
-                        item_type=item.get("item_type"),
-                        title=item.get("title"),
-                        domain=item.get("domain"),
-                        url=item.get("url"),
-                        count=item.get("count"),
-                        metadata=item.get("metadata"),
-                    )
-                    for item in step.get("items", [])
-                    if isinstance(item, dict) and "text" in item
-                ],
-            )
-            for step in raw_steps
-            if isinstance(step, dict) and "id" in step and "label" in step
-        ]
+        return [step for step in raw_steps if isinstance(step, dict)]
     except Exception:
         return None
+
+
+def _pipeline_step_from_dict(step: dict[str, object]) -> PipelineStep | None:
+    """Build one API step model from persisted progress/planned-stage data."""
+    if "id" not in step or "label" not in step:
+        return None
+    items = step.get("items")
+    artifact_aliases = step.get("artifact_aliases")
+    return PipelineStep(
+        id=str(step["id"]),
+        label=str(step["label"]),
+        status=str(step.get("status", "running")),
+        stage_name=(
+            str(step["stage_name"])
+            if isinstance(step.get("stage_name"), str)
+            else None
+        ),
+        stage_number=(
+            int(step["stage_number"])
+            if isinstance(step.get("stage_number"), int)
+            else None
+        ),
+        planned_order=(
+            int(step["planned_order"])
+            if isinstance(step.get("planned_order"), int)
+            else None
+        ),
+        enabled=(
+            bool(step["enabled"])
+            if isinstance(step.get("enabled"), bool)
+            else None
+        ),
+        artifact_aliases=[
+            alias for alias in (artifact_aliases or []) if isinstance(alias, str)
+        ],
+        started_at=(
+            str(step["started_at"])
+            if isinstance(step.get("started_at"), str)
+            else None
+        ),
+        completed_at=(
+            str(step["completed_at"])
+            if isinstance(step.get("completed_at"), str)
+            else None
+        ),
+        items=[
+            PipelineStepItem(
+                text=str(item["text"]),
+                item_type=item.get("item_type") if isinstance(item.get("item_type"), str) else None,
+                title=item.get("title") if isinstance(item.get("title"), str) else None,
+                domain=item.get("domain") if isinstance(item.get("domain"), str) else None,
+                url=item.get("url") if isinstance(item.get("url"), str) else None,
+                count=item.get("count") if isinstance(item.get("count"), int) else None,
+                metadata=item.get("metadata") if isinstance(item.get("metadata"), dict) else None,
+            )
+            for item in (items or [])
+            if isinstance(item, dict) and "text" in item
+        ],
+    )
+
+
+def _read_progress_steps(runs_dir: Path, run_id: str) -> list[PipelineStep] | None:
+    """Read live progress, using planned stages only when the run persisted them."""
+    raw_progress = _read_progress_entries(runs_dir, run_id) or []
+    run_dir = runs_dir / run_id
+    planned_path = planned_stages_path(run_dir)
+    if planned_path.exists():
+        try:
+            planned_payload = json.loads(planned_path.read_text(encoding="utf-8"))
+            merged = merge_progress_into_planned_stages(planned_payload, raw_progress)
+            _apply_stage_detail_statuses(run_dir, merged)
+            return [
+                step
+                for step in (_pipeline_step_from_dict(raw) for raw in merged)
+                if step is not None
+            ]
+        except Exception:
+            logger.debug("Failed to read planned stages for run_id=%s", run_id, exc_info=True)
+            if raw_progress:
+                return [
+                    step
+                    for step in (_pipeline_step_from_dict(raw) for raw in raw_progress)
+                    if step is not None
+                ]
+            return None
+    if not raw_progress:
+        return None
+    return [
+        step
+        for step in (_pipeline_step_from_dict(raw) for raw in raw_progress)
+        if step is not None
+    ]
+
+
+def _apply_stage_detail_statuses(run_dir: Path, stages: list[dict[str, object]]) -> None:
+    """Align planned-stage status with landed backend stage detail artifacts."""
+    stages_dir = run_dir / "stages"
+    for stage in stages:
+        if stage.get("status") == "disabled":
+            continue
+        stage_name = stage.get("stage_name")
+        stage_number = stage.get("stage_number")
+        if not isinstance(stage_name, str) or not isinstance(stage_number, int):
+            continue
+        detail_path = stages_dir / f"{stage_number:03d}_{stage_name}.json"
+        if detail_path.exists():
+            detail_status = _read_stage_detail_status(detail_path)
+            if detail_status is not None:
+                stage["status"] = detail_status
+            continue
+        if stage.get("started_at") is not None or stage.get("items"):
+            stage["status"] = "running"
+
+
+def _read_stage_detail_status(detail_path: Path) -> str | None:
+    """Return an explicit persisted stage status, or ``None`` when unavailable."""
+    try:
+        payload = json.loads(detail_path.read_text(encoding="utf-8"))
+    except Exception:
+        logger.debug("Failed to read stage detail status from %s", detail_path, exc_info=True)
+        return None
+    status_value = payload.get("status") if isinstance(payload, dict) else None
+    return str(status_value) if isinstance(status_value, str) and status_value else None
 
 
 @router.get(
@@ -376,6 +482,40 @@ def get_run_diagnostics(run_id: str, request: Request) -> RunDiagnosticsResponse
             detail=f"Run `{run_id}` was not found.",
         )
     return build_run_diagnostics(record, runs_dir=run_store.runs_dir)
+
+
+@router.get(
+    "/runs/{run_id}/artifacts",
+    name="get_run_artifacts",
+    response_model=RunArtifactsResponse,
+)
+def get_run_artifacts(run_id: str, request: Request) -> RunArtifactsResponse:
+    """Return normalized per-stage / per-field artifacts for the audit view.
+
+    Works for in-progress runs too: the assembler tolerates missing stage files,
+    so the live build view can stream each stage's detail as it lands.
+    """
+    run_store = _get_run_store(request)
+    record = run_store.get_run(run_id)
+    if record is None:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Run `{run_id}` was not found.",
+        )
+    run_dir = _resolve_run_dir(record, run_store.runs_dir, run_id)
+    payload = build_run_artifacts(run_dir)
+    return RunArtifactsResponse(
+        run_id=record.run_id,
+        status=record.status,
+        fields=payload["fields"],
+        stages=payload["stages"],
+        enrichment_steps=payload["enrichment_steps"],
+        gap_analysis=payload["gap_analysis"],
+        external_search=payload["external_search"],
+        stage_details=payload["stage_details"],
+        artifact_health=payload["artifact_health"],
+        degraded=payload["degraded"],
+    )
 
 
 @router.get(

@@ -679,14 +679,6 @@ export function MarkdownWithReferences({
         <ReactMarkdown
           remarkPlugins={[remarkGfm]}
           components={{
-            h1: ({ children }) => {
-              const isQuestionHeading =
-                _toPlainText(children).trim().toLowerCase() === "question";
-              if (isQuestionHeading) {
-                return <h1 className="document-question-heading">{children}</h1>;
-              }
-              return <h1>{children}</h1>;
-            },
             p: ({ children }) => (
               (() => {
                 const collapsedChildren = _collapseCitationRuns(children, {
