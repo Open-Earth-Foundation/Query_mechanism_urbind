@@ -38,6 +38,7 @@ from backend.services.agents import (
     build_openrouter_model,
     run_agent_sync,
 )
+from backend.services.llm_observability import LlmCallContext, LlmCallRecorder
 from backend.services.run_logger import RunLogger
 from backend.utils.city_normalization import format_city_display_name
 from backend.utils.config import AppConfig
@@ -135,6 +136,8 @@ def _run_writer_once(
     payload: dict[str, object],
     max_turns: int,
     log_llm_payload: bool,
+    llm_recorder: LlmCallRecorder | None,
+    llm_call_context: LlmCallContext | None,
 ) -> WriterOutput:
     """Run writer once and return structured output."""
     result = run_agent_sync(
@@ -142,6 +145,8 @@ def _run_writer_once(
         json.dumps(payload, ensure_ascii=False),
         max_turns=max_turns,
         log_llm_payload=log_llm_payload,
+        llm_recorder=llm_recorder,
+        llm_call_context=llm_call_context,
     )
     output = result.final_output
     if isinstance(output, WriterOutput):
@@ -283,6 +288,11 @@ def _write_markdown_single_bundle(
     selected_city_names: list[str],
     log_llm_payload: bool,
     run_id: str | None,
+    llm_recorder: LlmCallRecorder | None,
+    llm_stage_name: str,
+    llm_stage_family: str,
+    llm_agent_name: str,
+    llm_call_kind: str,
 ) -> WriterOutput:
     """Write one markdown bundle with citation-coverage reconsideration."""
     markdown_bundle = extract_markdown_bundle(context_bundle)
@@ -323,6 +333,19 @@ def _write_markdown_single_bundle(
                 payload=payload,
                 max_turns=config.writer.max_turns,
                 log_llm_payload=log_llm_payload,
+                llm_recorder=llm_recorder,
+                llm_call_context=LlmCallContext(
+                    stage_name=llm_stage_name,
+                    stage_family=llm_stage_family,
+                    agent=llm_agent_name,
+                    call_kind=llm_call_kind,
+                    model=config.writer.model,
+                    metadata={
+                        "attempt": attempt,
+                        "max_attempts": max_attempts,
+                        "analysis_mode": analysis_mode,
+                    },
+                ),
             ),
             operation="writer.llm_call",
             retry_settings=api_retry_settings,
@@ -457,6 +480,11 @@ def _combine_writer_drafts(
     api_key: str,
     log_llm_payload: bool,
     run_id: str | None,
+    llm_recorder: LlmCallRecorder | None,
+    llm_stage_name: str,
+    llm_stage_family: str,
+    llm_agent_name: str,
+    llm_call_kind: str,
 ) -> str:
     """Combine multiple batch drafts into one cited final answer."""
     combine_agent = build_writer_combine_agent(config, api_key)
@@ -482,6 +510,26 @@ def _combine_writer_drafts(
             payload=payload,
             max_turns=config.writer.max_turns,
             log_llm_payload=log_llm_payload,
+            llm_recorder=llm_recorder,
+            llm_call_context=LlmCallContext(
+                stage_name=llm_stage_name,
+                stage_family=llm_stage_family,
+                agent=(
+                    "writer_combine"
+                    if llm_agent_name == "writer"
+                    else f"{llm_agent_name}_combine"
+                ),
+                call_kind=(
+                    "combine_drafts"
+                    if llm_call_kind == "write_markdown"
+                    else f"{llm_call_kind}_combine"
+                ),
+                model=config.writer.model,
+                metadata={
+                    "batch_count": len(batches),
+                    "analysis_mode": analysis_mode,
+                },
+            ),
         ),
         operation="writer.combine_llm_call",
         retry_settings=_build_writer_api_retry_settings(config),
@@ -539,6 +587,11 @@ def write_markdown(
     run_id: str | None = None,
     run_logger: RunLogger | None = None,
     paths: RunPaths | None = None,
+    llm_recorder: LlmCallRecorder | None = None,
+    llm_stage_name: str = "writer",
+    llm_stage_family: str = "writer",
+    llm_agent_name: str = "writer",
+    llm_call_kind: str = "write_markdown",
 ) -> WriterOutput:
     """Generate the final markdown answer with coverage and multi-pass guardrails."""
     markdown_bundle = extract_markdown_bundle(context_bundle)
@@ -574,6 +627,11 @@ def write_markdown(
             selected_city_names=selected_city_names,
             log_llm_payload=log_llm_payload,
             run_id=run_id,
+            llm_recorder=llm_recorder,
+            llm_stage_name=llm_stage_name,
+            llm_stage_family=llm_stage_family,
+            llm_agent_name=llm_agent_name,
+            llm_call_kind=llm_call_kind,
         )
 
     batch_outputs: list[WriterOutput] = []
@@ -587,6 +645,11 @@ def write_markdown(
             selected_city_names=batch.city_names,
             log_llm_payload=log_llm_payload,
             run_id=run_id,
+            llm_recorder=llm_recorder,
+            llm_stage_name=llm_stage_name,
+            llm_stage_family=llm_stage_family,
+            llm_agent_name=llm_agent_name,
+            llm_call_kind=llm_call_kind,
         )
         batch_outputs.append(batch_output)
 
@@ -607,6 +670,11 @@ def write_markdown(
         api_key=api_key,
         log_llm_payload=log_llm_payload,
         run_id=run_id,
+        llm_recorder=llm_recorder,
+        llm_stage_name=llm_stage_name,
+        llm_stage_family=llm_stage_family,
+        llm_agent_name=llm_agent_name,
+        llm_call_kind=llm_call_kind,
     )
     (
         content,

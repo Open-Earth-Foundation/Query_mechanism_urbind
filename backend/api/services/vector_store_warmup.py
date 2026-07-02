@@ -301,6 +301,7 @@ class VectorStoreWarmup:
                 trigger=trigger,
                 started_at=started_at,
                 message=str(exc),
+                lock_error=exc,
                 pre_update_snapshot=pre_update_snapshot,
             )
             logger.info("Vector store local update deferred because lock is already held: %s", exc)
@@ -410,6 +411,7 @@ class VectorStoreWarmup:
         trigger: str,
         started_at: datetime,
         message: str,
+        lock_error: VectorStoreUpdateLockError,
         pre_update_snapshot: dict[str, object] | None,
     ) -> None:
         """Persist a running state when another process already owns the update lock."""
@@ -434,6 +436,7 @@ class VectorStoreWarmup:
             stats_payload=None,
             job_name=None,
             pre_update_snapshot=pre_update_snapshot,
+            lock_details=self._lock_details_from_error(lock_error),
         )
         with self._lock:
             self._status = "running"
@@ -719,6 +722,17 @@ class VectorStoreWarmup:
             return False
         return not bool(getattr(update_stats, "dry_run", False))
 
+    def _lock_details_from_error(
+        self,
+        lock_error: VectorStoreUpdateLockError,
+    ) -> dict[str, object]:
+        """Return JSON-safe details about an existing vector-store writer lock."""
+        return {
+            "lock_path": str(lock_error.lock_path),
+            "waited_for_holder": True,
+            "holder": dict(lock_error.holder or {}),
+        }
+
     def _manifest_write_audit_applies_to_run(
         self,
         *,
@@ -776,6 +790,7 @@ class VectorStoreWarmup:
         update_stats: object | None = None,
         job_name: str | None = None,
         pre_update_snapshot: dict[str, object] | None = None,
+        lock_details: dict[str, object] | None = None,
     ) -> str:
         """Persist vector update diagnostics outside any user run directory."""
         artifact_dir = config.runs_dir / "system" / "vector_store_warmup"
@@ -816,9 +831,13 @@ class VectorStoreWarmup:
                 post_update_snapshot
             ),
             "lock_details": (
-                dict(getattr(update_stats, "lock_details", {}) or {})
-                if update_stats is not None
-                else None
+                lock_details
+                if lock_details is not None
+                else (
+                    dict(getattr(update_stats, "lock_details", {}) or {})
+                    if update_stats is not None
+                    else None
+                )
             ),
             "manifest_write_occurred": self._manifest_write_occurred(update_stats),
             "manifest_write_audit_latest_path": (
@@ -853,9 +872,9 @@ class VectorStoreWarmup:
             return None
         return read_update_status(path)
 
-    def _has_running_status_timed_out(self, payload: dict[str, object]) -> bool:
-        """Return true when a running Job status has exceeded its timeout window."""
-        if payload.get("status") != "running":
+    def _has_active_status_timed_out(self, payload: dict[str, object]) -> bool:
+        """Return true when a checking/running status has exceeded its timeout window."""
+        if payload.get("status") not in {"checking", "running"}:
             return False
         raw_started_at = payload.get("started_at") or payload.get("updated_at")
         if not isinstance(raw_started_at, str) or not raw_started_at.strip():
@@ -879,6 +898,56 @@ class VectorStoreWarmup:
         file_update_mode = str(payload.get("update_mode", "")).strip()
         return not file_update_mode or file_update_mode == self._update_mode
 
+    def _timed_out_active_status_message(
+        self,
+        payload: dict[str, object],
+    ) -> tuple[str, str]:
+        """Return user-facing message and error for one timed-out active status."""
+        if payload.get("status") == "checking":
+            return (
+                "Vector store freshness check timed out before completing.",
+                "Vector store freshness check timed out.",
+            )
+        if self._update_mode == "local_process":
+            return (
+                "Vector store local update timed out before writing a completion status.",
+                "Vector store local update timed out.",
+            )
+        return (
+            "Vector store updater Job timed out before writing a completion status.",
+            "Vector store updater Job timed out.",
+        )
+
+    def _reconcile_timed_out_file_status(
+        self,
+        payload: dict[str, object],
+    ) -> dict[str, object]:
+        """Persist a failed status when a stale active status has timed out."""
+        message, error = self._timed_out_active_status_message(payload)
+        status_path = self._status_path
+        if status_path is None:
+            updated_payload = dict(payload)
+            updated_payload.update(
+                {
+                    "status": "failed",
+                    "message": message,
+                    "error": error,
+                }
+            )
+            return updated_payload
+        return write_update_status(
+            status_path,
+            status="failed",
+            trigger=str(payload.get("trigger") or "unknown"),
+            update_mode=self._update_mode,
+            message=message,
+            started_at=str(payload.get("started_at")) if payload.get("started_at") else None,
+            completed_at=datetime.now(timezone.utc).isoformat(),
+            error=error,
+            stats=payload.get("stats") if isinstance(payload.get("stats"), dict) else None,
+            job_name=str(payload.get("job_name")) if payload.get("job_name") else None,
+        )
+
     def _sync_from_status_file_locked(self) -> None:
         """Refresh in-memory status from the shared status file while holding the lock."""
         file_status = self._status_from_file()
@@ -893,10 +962,18 @@ class VectorStoreWarmup:
             "failed",
         }:
             return
-        if self._has_running_status_timed_out(file_status):
+        if self._has_active_status_timed_out(file_status):
+            file_status = self._reconcile_timed_out_file_status(file_status)
+            message, error = self._timed_out_active_status_message(file_status)
             self._status = "failed"
-            self._message = "Vector store updater Job timed out before writing a completion status."
-            self._error = "Vector store updater Job timed out."
+            self._message = message
+            self._error = error
+            self._stats = (
+                file_status.get("stats")
+                if isinstance(file_status.get("stats"), dict)
+                else None
+            )
+            self._job_name = str(file_status.get("job_name")) if file_status.get("job_name") else None
             return
         self._status = file_state
         self._message = str(file_status.get("message") or self._message)
@@ -907,6 +984,12 @@ class VectorStoreWarmup:
     def snapshot(self) -> dict[str, object]:
         """Return a thread-safe status payload for API responses."""
         file_status = self._status_from_file()
+        if (
+            isinstance(file_status, dict)
+            and self._is_compatible_file_status(file_status)
+            and self._has_active_status_timed_out(file_status)
+        ):
+            file_status = self._reconcile_timed_out_file_status(file_status)
         with self._lock:
             payload = {
                 "status": self._status,
@@ -944,17 +1027,6 @@ class VectorStoreWarmup:
                         "job_name": file_status.get("job_name"),
                     }
                 )
-                if self._has_running_status_timed_out(file_status):
-                    payload.update(
-                        {
-                            "status": "failed",
-                            "message": (
-                                "Vector store updater Job timed out before writing "
-                                "a completion status."
-                            ),
-                            "error": "Vector store updater Job timed out.",
-                        }
-                    )
         return payload
 
     def is_blocking_runs(self) -> bool:

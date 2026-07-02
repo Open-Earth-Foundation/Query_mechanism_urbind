@@ -4,7 +4,8 @@ Brief: Refresh the markdown vector store and write shared update status.
 Inputs:
 - CLI args:
   - --trigger: Reason for this update (`startup`, `run`, or `manual`).
-  - --docs-dir: Directory containing markdown files to index (default: documents).
+  - --docs-dir: Optional markdown directory override. Defaults to the resolved
+    `markdown_dir` from `llm_config.yaml` / `MARKDOWN_DIR`.
   - --config: Path to llm_config.yaml (default: llm_config.yaml).
 - Env vars:
   - OPENAI_API_KEY or OPENROUTER_API_KEY: key for embeddings.
@@ -17,7 +18,8 @@ Outputs:
 - Logs compact update statistics to stdout/stderr.
 
 Usage (from project root):
-- python -m backend.scripts.update_vector_store --trigger startup --docs-dir documents
+- python -m backend.scripts.update_vector_store --trigger startup
+- python -m backend.scripts.update_vector_store --trigger manual --docs-dir documents
 """
 
 from __future__ import annotations
@@ -33,7 +35,7 @@ from backend.modules.vector_store.update_status import (
     now_iso,
     write_update_status,
 )
-from backend.utils.config import load_config
+from backend.utils.config import load_config, resolve_path_relative_to_config
 from backend.utils.logging_config import setup_logger
 
 logger = logging.getLogger(__name__)
@@ -48,7 +50,7 @@ def parse_args() -> argparse.Namespace:
         default="manual",
         help="Reason this vector-store update was started.",
     )
-    parser.add_argument("--docs-dir", default="documents", help="Markdown docs directory.")
+    parser.add_argument("--docs-dir", help="Markdown docs directory override.")
     parser.add_argument("--config", default="llm_config.yaml", help="Path to llm config.")
     return parser.parse_args()
 
@@ -57,8 +59,13 @@ def main() -> None:
     """Script entry point."""
     args = parse_args()
     setup_logger()
-    config = load_config(Path(args.config))
-    docs_dir = Path(args.docs_dir)
+    config_path = Path(args.config)
+    config = load_config(config_path)
+    docs_dir = (
+        resolve_path_relative_to_config(config_path, Path(args.docs_dir))
+        if args.docs_dir
+        else config.markdown_dir
+    )
     status_path = get_update_status_path(config)
     started_at = now_iso()
     write_update_status(

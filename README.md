@@ -71,6 +71,13 @@ Environment variables (`.env`):
 - `APP_SESSION_SECRET` (required): shared HMAC secret used to sign and verify the `urbind_session` cookie. Use the same value in backend `.env`, frontend runtime env, Docker, and Kubernetes.
 - `MARKDOWN_DIR` (optional, default `documents`): default directory scanned for top-level city markdown files. Runtime markdown discovery ignores subfolders under this directory.
 - `RUNS_DIR` (optional, default `output`): base directory for run artifacts.
+- `MLFLOW_ENABLED` (optional, default `false`): enables best-effort MLflow observability for finalized pipeline runs.
+- `MLFLOW_TRACKING_URI` (optional): MLflow tracking URI. Leave empty to use MLflow's local/default tracking configuration.
+- `MLFLOW_EXPERIMENT_NAME` (optional, default `URBIND`): MLflow experiment used for mirrored runs.
+- `MLFLOW_ENVIRONMENT` (optional): environment tag added to mirrored MLflow runs, for example `local` or `production`.
+- `MLFLOW_ARTIFACT_PATH` (optional, default `run_artifacts`): artifact path under each MLflow run where the full `output/<run_id>/` directory is uploaded.
+- `MLFLOW_TRACE_MODE` (optional, default `consolidated`): trace mode. The backend creates one consolidated pipeline trace and falls back to split markdown/assumptions traces if needed.
+- `MLFLOW_FAIL_ON_ERROR` (optional, default `false`): when `false`, MLflow upload or tracing errors are recorded as warnings and local artifacts remain the source of truth.
 - `LOG_LEVEL` (optional, default `INFO`): logging verbosity (`DEBUG`, `INFO`, `WARNING`, `ERROR`).
 - `OPENROUTER_BASE_URL` (optional, default `https://openrouter.ai/api/v1`): override for OpenRouter-compatible backends.
 - `API_CORS_ORIGINS` (optional): comma-separated allowed frontend origins for the API. When omitted, the API allows wildcard CORS without credentials.
@@ -86,18 +93,125 @@ Environment variables (`.env`):
 - `VECTOR_STORE_UPDATE_MODE` (optional, default `local_process`): used only when automatic updates are enabled. Keep `local_process` for local development; the deployed maintenance workflow does not rely on automatic updater Jobs.
 - `ANONYMIZED_TELEMETRY` (optional, default `FALSE`): disables Chroma anonymized telemetry when set to `FALSE`.
 - `CHROMA_PERSIST_PATH` (optional, default `.chroma`): local Chroma persistence directory.
+- `CHROMA_HOST_PATH` (optional, default `.chroma`): local Docker Compose host folder mounted into backend container path `/data/chroma`. This is local-only and does not affect Kubernetes or direct Python runs.
 - `CHROMA_COLLECTION_NAME` (optional, default `markdown_chunks`): Chroma collection used for markdown chunks.
 - `EXTERNAL_SOURCE_SEARCH_ENABLED` (optional, default `true`): enables governed external Markdown library enrichment when `sources.yaml` is available.
 - `EXTERNAL_SOURCE_DIR` (optional, default `documents/source_library`): directory containing `sources.yaml` and Markdown files whose stems match `source_id`.
 
 Chat prompt sizing, follow-up router history and excerpt caps, retry backoff, provider timeouts, and vector-store retrieval tuning all come from `llm_config.yaml`.
 When a run requests provider-backed features, the API now validates them before queueing work: missing `OPENROUTER_API_KEY` blocks the run immediately, and web-research runs fail fast if `SERPER_API_KEY` or `FIRECRAWL_API_KEY` is missing or rejected by the upstream provider.
+
+Path resolution:
+
+- Relative runtime paths from `llm_config.yaml` and matching env overrides such as `MARKDOWN_DIR`, `RUNS_DIR`, `CHROMA_PERSIST_PATH`, and `EXTERNAL_SOURCE_DIR` are resolved relative to the directory containing `llm_config.yaml`.
+- Direct Python scripts that omit `--docs-dir` now use the resolved `markdown_dir` from config instead of a separate hardcoded `documents` default.
+- Docker Compose and Kubernetes already use absolute in-container paths (`/data/documents`, `/app/documents`, `/data/chroma`), so they are not sensitive to the host working directory.
 CLI flags override `.env` values for a given run (for example `--markdown-path`).
 Use `--city` (repeatable) to load markdown only for selected city files. City filters are normalized case-insensitively to backend `city_key` values (for example `Munich`, `MUNICH`, and `munich` all resolve to `munich`).
 
 Example `.env.example` is provided. Use `llm_config.yaml` as the source of truth for vector-store and markdown batching tuning; deployment env vars may override operational toggles such as `VECTOR_STORE_ENABLED`, `VECTOR_STORE_AUTO_UPDATE_ON_RUN`, and `VECTOR_STORE_UPDATE_MODE`.
 
+### Local dual vector stores
+
+For local development we currently support two side-by-side vector stores:
+
+- `.chroma`: default L2 store used by `main`
+- `.chroma_cosine`: local cosine-distance store used only when testing the retrieval-improvement branch
+
+Keep these rules in mind:
+
+- Direct `python -m ...` runs use `CHROMA_PERSIST_PATH`.
+- Docker Compose keeps reading `/data/chroma` inside the backend container, but the host folder behind that path is selected by `CHROMA_HOST_PATH`.
+- If you point a branch at the wrong local store, the backend can trigger a full rebuild check because the persisted index settings do not match that branch's expected vector-store settings.
+- This split is local-only. Kubernetes and deployed environments continue using `/data/chroma`.
+
+Default local settings for `main`:
+
+```dotenv
+CHROMA_PERSIST_PATH=.chroma
+CHROMA_HOST_PATH=.chroma
+```
+
+Local settings when testing the cosine branch:
+
+```dotenv
+CHROMA_PERSIST_PATH=.chroma_cosine
+CHROMA_HOST_PATH=.chroma_cosine
+```
+
+One-time local migration from the current cosine store:
+
+1. Stop local Python processes and Docker Compose containers that may be using `.chroma`.
+2. Rename the current cosine store directory:
+
+```powershell
+Move-Item -LiteralPath .chroma -Destination .chroma_cosine
+```
+
+3. Set local defaults back to the L2 store in `.env`:
+
+```dotenv
+CHROMA_PERSIST_PATH=.chroma
+CHROMA_HOST_PATH=.chroma
+```
+
+4. Recreate Docker Compose containers if you use Compose:
+
+```powershell
+docker compose down
+docker compose up -d
+```
+
+5. Build or warm up a fresh L2 store into `.chroma` while on `main`:
+
+```powershell
+python -m backend.scripts.update_vector_store --trigger manual
+```
+
+6. When switching to the cosine branch for local testing, update `.env` to `.chroma_cosine` values and restart the relevant process. Docker Compose does not need an image rebuild, but it does need container recreation after the `.env` change.
+
 Default output directory is `output/` (unless overridden by `RUNS_DIR`).
+
+### MLflow Observability
+
+MLflow is optional and disabled by default. When `MLFLOW_ENABLED=true`, each
+finalized pipeline run creates one MLflow run named after the local `run_id`.
+The app uses the `mlflow-skinny` client package for tracking and tracing APIs
+instead of the full MLflow distribution, avoiding model/data/serving
+dependencies in runtime images.
+The backend uploads the complete `output/<run_id>/` directory with
+`mlflow.log_artifacts(...)`, not only files listed in `manifest.json`.
+When `MLFLOW_ENVIRONMENT` is set, its value is stored as the MLflow
+`environment` tag and in the local MLflow sync metadata.
+
+MLflow-enabled runs also record raw LLM call artifacts locally:
+
+- per-call JSON files under the owning stage, such as
+  `stage_files/006_markdown_extraction/llm_calls/`
+- a run-level `llm_calls/index.jsonl` with call order, stage, family, agent,
+  model, status, timestamps, and artifact path
+
+The trace policy prefers one consolidated trace tagged with
+`trace_family=pipeline` and `trace_group=<run_id>`, with child spans for each
+recorded LLM call. If consolidated trace creation fails, the backend falls
+back to separate `markdown` and `assumptions` traces under the same
+`trace_group`. To keep the MLflow trace detail view lossless for large
+requests and responses, recorded Agents SDK inputs are normalized to a
+standard top-level `messages` array before being sent to MLflow, matching the
+OpenAI chat trace shape that MLflow renders as expandable System/User message
+blocks. The raw per-call JSON artifacts keep the original unsplit request and
+response. MLflow sync metadata is written back to both `api_state.json` and
+`manifest.json["metadata"]["mlflow"]`.
+
+MLflow sync is retry-safe for one local run directory. If a previous sync
+created an MLflow run or trace but failed before artifact upload completed,
+the next sync reuses the stored MLflow run id and trace metadata instead of
+creating duplicates. During sync, the backend also switches console streams to
+UTF-8 when possible so MLflow status output does not fail on Windows consoles.
+Assumption review/apply artifacts created after pipeline finalization are
+re-uploaded into the existing MLflow run for the same local `run_id`; when the
+original run already has trace metadata, those post-run calls are recorded in a
+supplemental `post_run_assumptions` trace.
 
 ### Vector retrieval sizing and thresholds
 
@@ -1029,6 +1143,13 @@ Local no-Docker config split:
 
 This split is only for local no-Docker runs. Docker Compose reads the root `.env` and injects values into both containers. Deployed dev/prod uses GitHub Secrets and Kubernetes secrets instead of repo `.env` files.
 
+Docker Compose vector-store note:
+
+- Backend container path stays `/data/chroma`.
+- Host folder comes from `CHROMA_HOST_PATH` in the root `.env`.
+- Changing `CHROMA_HOST_PATH` requires recreating the Compose containers to pick up the new mount.
+- Changing `CHROMA_HOST_PATH` does not require rebuilding the Docker image.
+
 Supported modes:
 
 - Local: frontend at `http://localhost:3000`, backend at `http://localhost:8000`, `APP_SESSION_COOKIE_DOMAIN` unset.
@@ -1054,6 +1175,7 @@ docker push ghcr.io/open-earth-foundation/query_mechanism_urbind-frontend:dev
 
 kubectl create secret generic urbind-query-mechanism-backend-secrets \
   --from-literal=OPENROUTER_API_KEY=<openrouter-key> \
+  --from-literal=MLFLOW_TRACKING_URI=<mlflow-tracking-uri> \
   --dry-run=client -o yaml | kubectl apply -f -
 
 kubectl apply -f k8s/backend-pvc.yml
@@ -1066,7 +1188,7 @@ kubectl apply -f k8s/frontend-service.yml
 
 Add `SERPER_API_KEY` and `FIRECRAWL_API_KEY` to the secret only when web research is enabled.
 
-The backend ConfigMap sets `VECTOR_STORE_ENABLED=true`, `VECTOR_STORE_AUTO_UPDATE_ON_RUN=false`, and `VECTOR_STORE_UPDATE_MODE=local_process` for the deployed environment. The backend still checks whether the vector store is stale, but it does not try to update it automatically in Kubernetes. When the store is stale, runs are blocked and the UI instructs the operator to run the maintenance workflow documented below.
+The backend ConfigMap sets `VECTOR_STORE_ENABLED=true`, `VECTOR_STORE_AUTO_UPDATE_ON_RUN=false`, and `VECTOR_STORE_UPDATE_MODE=local_process` for the deployed environment. It also enables MLflow with `MLFLOW_ENABLED=true`, `MLFLOW_EXPERIMENT_NAME=URBIND`, `MLFLOW_ENVIRONMENT=production`, `MLFLOW_ARTIFACT_PATH=run_artifacts`, `MLFLOW_TRACE_MODE=consolidated`, and `MLFLOW_FAIL_ON_ERROR=false`; the actual tracking URI comes from the `MLFLOW_TRACKING_URI` Kubernetes secret populated by GitHub Actions. The backend still checks whether the vector store is stale, but it does not try to update it automatically in Kubernetes. When the store is stale, runs are blocked and the UI instructs the operator to run the maintenance workflow documented below.
 
 ## GitHub Actions deployment
 
@@ -1089,6 +1211,7 @@ Required repository secrets:
 - `AWS_SECRET_ACCESS_KEY_EKS_DEV_USER`
 - `EKS_DEV_NAME`
 - `OPENROUTER_API_KEY`
+- `MLFLOW_TRACKING_URI`
 - `APP_SHARED_PASSWORD_HASH`
 - `APP_SESSION_SECRET`
 
@@ -1097,7 +1220,9 @@ Optional repository variables:
 - `EKS_DEV_REGION` (default `us-east-1`)
 - `FRONTEND_API_BASE_URL` (default `https://urbind-query-mechanism-api.openearth.dev`)
 
-Artifacts are written under `output/<run_id>/`:
+Artifacts are written under `output/<run_id>/`. For the proposed MLflow upload
+policy and a concise file-by-file artifact overview, see
+[`docs/mlflow_artifacts_overview.md`](docs/mlflow_artifacts_overview.md).
 
 - `api_state.json`: machine-readable run metadata used for run discovery, terminal-state hydration, diagnostics, and benchmarks. It keeps status, timestamps, inputs, decisions, and compact metrics, while `manifest.json` remains the canonical artifact registry and the only artifact locator.
 - `summary.jsonl`: append-only stage timeline. Each JSON line has an `event_index`, `event_type`, run id, timestamp, stable `stage_number`, and compact payload for one completed stage checkpoint. Fresh runs write `001_input_snapshot` before later numbered stage events. Detailed decisions are stored in `api_state.json` and, when they belong to an existing stage, in that stage's `stages/NNN_*.json` detail file.
@@ -1290,6 +1415,7 @@ Vector-store freshness behavior:
 - Shared status is written next to the vector index as `update_status.json`. It now stores a compact summary plus small samples, while full changed/deleted file lists remain in `output/system/vector_store_warmup/`. Startup/run diagnostics are persisted under `output/system/vector_store_warmup/` as both `latest.json` and timestamped history files, including pre/post manifest summaries, an `update_interpretation`, lock details, `manifest_write_occurred`, and `manifest_write_audit_applies_to_this_run` so it is clear whether the embedded manifest-write audit belongs to the current run or is only the latest historical write. Manifest writes are audited separately under `output/system/vector_store_manifest_writes/`.
 - Non-dry-run vector-store writes also coordinate through `.chroma/vector_store_update.lock` so startup, run-time, and manual rebuild/update processes do not overlap on the same local Chroma directory.
 - Kubernetes deployments should keep a single backend replica or add a stronger distributed lock before multiple replicas can check or rebuild the same Chroma path.
+- Branch-local vector-store formats can diverge. If a local run suddenly forces a full rebuild check after switching branches, verify that `.env` points to the intended local store (`.chroma` for L2 on `main`, `.chroma_cosine` for cosine branch testing) before rebuilding.
 
 Check manifest and Chroma DB status:
 

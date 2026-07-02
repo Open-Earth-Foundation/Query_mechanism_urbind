@@ -19,7 +19,7 @@ from backend.modules.orchestrator.module import run_pipeline
 from backend.services.error_log_artifact import write_error_log_artifact
 from backend.utils.artifact_manifest import resolve_manifest_alias
 from backend.utils.city_normalization import dedupe_city_labels
-from backend.utils.config import load_config
+from backend.utils.config import load_config, resolve_path_relative_to_config
 from backend.utils.paths import RunPaths
 
 logger = logging.getLogger(__name__)
@@ -112,9 +112,12 @@ class RunExecutor:
         self._run_store.mark_running(run_id)
         try:
             logger.info("Run execution started run_id=%s", run_id)
-            config = load_config(Path(command.config_path) if command.config_path else None)
+            config_path = Path(command.config_path) if command.config_path else Path("llm_config.yaml")
+            config = load_config(config_path)
             base_markdown_dir = (
-                Path(command.markdown_path) if command.markdown_path else config.markdown_dir
+                resolve_path_relative_to_config(config_path, Path(command.markdown_path))
+                if command.markdown_path
+                else config.markdown_dir
             )
             logger.info(
                 "Run config resolved run_id=%s runs_dir=%s markdown_dir=%s",
@@ -173,7 +176,7 @@ class RunExecutor:
                 pipeline_kwargs["api_key_override"] = command.api_key
             pipeline_kwargs["analysis_mode"] = command.analysis_mode
             if command.config_path is not None:
-                pipeline_kwargs["config_path"] = Path(command.config_path)
+                pipeline_kwargs["config_path"] = config_path
             pipeline_kwargs["vector_update_docs_dir"] = base_markdown_dir
             run_paths = run_pipeline(**pipeline_kwargs)
             logger.info(

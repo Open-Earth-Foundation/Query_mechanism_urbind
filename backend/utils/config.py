@@ -11,6 +11,7 @@ from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 ReasoningEffort = Literal["none", "minimal", "low", "medium", "high", "xhigh"]
 VectorStoreUpdateMode = Literal["local_process", "kubernetes_job"]
+MlflowTraceMode = Literal["consolidated"]
 
 
 class AgentConfig(BaseModel):
@@ -179,6 +180,18 @@ class VectorStoreConfig(BaseModel):
     )
 
 
+class MlflowConfig(BaseModel):
+    """Optional MLflow artifact mirroring and trace settings."""
+
+    enabled: bool = False
+    tracking_uri: str | None = None
+    experiment_name: str = "URBIND"
+    environment: str | None = None
+    artifact_path: str = "run_artifacts"
+    trace_mode: MlflowTraceMode = "consolidated"
+    fail_on_error: bool = False
+
+
 class RetryConfig(BaseModel):
     """Shared retry policy for LLM and retrieval operations.
 
@@ -219,6 +232,7 @@ class AppConfig(BaseModel):
     )
     retry: RetryConfig = Field(default_factory=RetryConfig)
     vector_store: VectorStoreConfig = Field(default_factory=VectorStoreConfig)
+    mlflow: MlflowConfig = Field(default_factory=MlflowConfig)
     openrouter_base_url: str = "https://openrouter.ai/api/v1"
     runs_dir: Path = Field(default_factory=lambda: Path("output"))
     markdown_dir: Path = Field(default_factory=lambda: Path("documents"))
@@ -244,10 +258,43 @@ def _parse_env_bool(value: str | None) -> bool | None:
     return None
 
 
+def _resolve_runtime_path(path_value: Path, *, base_dir: Path) -> Path:
+    """Resolve one runtime path against the config directory when relative."""
+    expanded = path_value.expanduser()
+    if expanded.is_absolute():
+        return expanded.resolve()
+    return (base_dir / expanded).resolve()
+
+
+def _resolve_config_relative_paths(config: AppConfig, *, base_dir: Path) -> AppConfig:
+    """Resolve config runtime paths against the directory containing llm_config.yaml."""
+    config.runs_dir = _resolve_runtime_path(config.runs_dir, base_dir=base_dir)
+    config.markdown_dir = _resolve_runtime_path(config.markdown_dir, base_dir=base_dir)
+    config.enrichment.external_source_dir = _resolve_runtime_path(
+        config.enrichment.external_source_dir,
+        base_dir=base_dir,
+    )
+    config.vector_store.chroma_persist_path = _resolve_runtime_path(
+        config.vector_store.chroma_persist_path,
+        base_dir=base_dir,
+    )
+    config.vector_store.index_manifest_path = _resolve_runtime_path(
+        config.vector_store.index_manifest_path,
+        base_dir=base_dir,
+    )
+    return config
+
+
+def resolve_path_relative_to_config(config_path: Path, path_value: Path) -> Path:
+    """Resolve one CLI or env path relative to the config file directory when needed."""
+    resolved_config_path = config_path.expanduser().resolve()
+    return _resolve_runtime_path(path_value, base_dir=resolved_config_path.parent)
+
+
 def load_config(config_path: Optional[Path] = None) -> AppConfig:
     """Load config from YAML and apply supported environment overrides."""
     load_dotenv()
-    path = config_path or Path("llm_config.yaml")
+    path = (config_path or Path("llm_config.yaml")).expanduser().resolve()
     if not path.exists():
         raise FileNotFoundError(f"Config file not found: {path}")
 
@@ -266,6 +313,13 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
     vector_store_update_mode = os.getenv("VECTOR_STORE_UPDATE_MODE")
     chroma_persist_path = os.getenv("CHROMA_PERSIST_PATH")
     chroma_collection_name = os.getenv("CHROMA_COLLECTION_NAME")
+    mlflow_enabled = os.getenv("MLFLOW_ENABLED")
+    mlflow_tracking_uri = os.getenv("MLFLOW_TRACKING_URI")
+    mlflow_experiment_name = os.getenv("MLFLOW_EXPERIMENT_NAME")
+    mlflow_environment = os.getenv("MLFLOW_ENVIRONMENT")
+    mlflow_artifact_path = os.getenv("MLFLOW_ARTIFACT_PATH")
+    mlflow_trace_mode = os.getenv("MLFLOW_TRACE_MODE")
+    mlflow_fail_on_error = os.getenv("MLFLOW_FAIL_ON_ERROR")
 
     if runs_dir:
         config.runs_dir = Path(runs_dir)
@@ -308,8 +362,28 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
             )
     if chroma_collection_name:
         config.vector_store.chroma_collection_name = chroma_collection_name
+    if mlflow_enabled is not None:
+        parsed = _parse_env_bool(mlflow_enabled)
+        if parsed is not None:
+            config.mlflow.enabled = parsed
+    if mlflow_tracking_uri:
+        config.mlflow.tracking_uri = mlflow_tracking_uri
+    if mlflow_experiment_name:
+        config.mlflow.experiment_name = mlflow_experiment_name
+    if mlflow_environment:
+        config.mlflow.environment = mlflow_environment
+    if mlflow_artifact_path:
+        config.mlflow.artifact_path = mlflow_artifact_path
+    if mlflow_trace_mode:
+        normalized_trace_mode = mlflow_trace_mode.strip().lower()
+        if normalized_trace_mode == "consolidated":
+            config.mlflow.trace_mode = "consolidated"
+    if mlflow_fail_on_error is not None:
+        parsed = _parse_env_bool(mlflow_fail_on_error)
+        if parsed is not None:
+            config.mlflow.fail_on_error = parsed
 
-    return config
+    return _resolve_config_relative_paths(config, base_dir=path.parent)
 
 
 def load_cached_config(
@@ -392,9 +466,12 @@ __all__ = [
     "RetryConfig",
     "VectorStoreConfig",
     "VectorStoreUpdateMode",
+    "MlflowConfig",
+    "MlflowTraceMode",
     "AppConfig",
     "load_config",
     "load_cached_config",
+    "resolve_path_relative_to_config",
     "resolve_openrouter_api_key",
     "get_openrouter_api_key",
 ]

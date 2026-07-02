@@ -32,6 +32,11 @@ from backend.modules.web_researcher.utils.json_helpers import (
     extract_json_candidate,
     extract_message_text,
 )
+from backend.services.llm_observability import (
+    LlmCallContext,
+    LlmCallRecorder,
+    record_openai_chat_completion,
+)
 from backend.utils.config import AppConfig
 
 logger = logging.getLogger(__name__)
@@ -44,6 +49,7 @@ def run_gap_analysis(
     context_bundle: dict[str, Any],
     config: AppConfig,
     api_key: str,
+    llm_recorder: LlmCallRecorder | None = None,
 ) -> GapManifest:
     """Analyse the context bundle for data gaps and classify each query field.
 
@@ -73,7 +79,19 @@ def run_gap_analysis(
                 attempt + 1,
                 config.enrichment.model,
             )
-            response = client.chat.completions.create(**request_kwargs)
+            response = record_openai_chat_completion(
+                client,
+                request_kwargs,
+                context=LlmCallContext(
+                    stage_name="enrichment",
+                    stage_family="enrichment",
+                    agent="gap_analysis",
+                    call_kind="gap_analysis",
+                    model=config.enrichment.model,
+                    metadata={"attempt": attempt + 1},
+                ),
+                recorder=llm_recorder,
+            )
             if not response.choices:
                 raise ValueError("Gap analyst returned no choices.")
 
@@ -362,6 +380,7 @@ def decompose_fields(
     question: str,
     config: AppConfig,
     api_key: str,
+    llm_recorder: LlmCallRecorder | None = None,
 ) -> FieldDecomposition:
     """Phase 0: decompose the question into granular classified fields.
 
@@ -392,7 +411,19 @@ def decompose_fields(
                 attempt + 1,
                 config.enrichment.model,
             )
-            response = client.chat.completions.create(**request_kwargs)
+            response = record_openai_chat_completion(
+                client,
+                request_kwargs,
+                context=LlmCallContext(
+                    stage_name="enrichment",
+                    stage_family="enrichment",
+                    agent="gap_analysis",
+                    call_kind="field_decomposition",
+                    model=config.enrichment.model,
+                    metadata={"attempt": attempt + 1},
+                ),
+                recorder=llm_recorder,
+            )
             if not response.choices:
                 raise ValueError("Decomposer returned no choices.")
 
@@ -510,6 +541,7 @@ def detect_city_gaps(
     context_bundle: dict[str, Any],
     config: AppConfig,
     api_key: str,
+    llm_recorder: LlmCallRecorder | None = None,
 ) -> GapManifest:
     """Phase 2: detect per-city blank/stale gaps against the context bundle.
 
@@ -547,7 +579,22 @@ def detect_city_gaps(
                 attempt + 1,
                 config.enrichment.model,
             )
-            response = client.chat.completions.create(**request_kwargs)
+            response = record_openai_chat_completion(
+                client,
+                request_kwargs,
+                context=LlmCallContext(
+                    stage_name="enrichment",
+                    stage_family="enrichment",
+                    agent="gap_analysis",
+                    call_kind="city_gap_detection",
+                    model=config.enrichment.model,
+                    metadata={
+                        "attempt": attempt + 1,
+                        "query_field_count": len(decomposition.query_fields),
+                    },
+                ),
+                recorder=llm_recorder,
+            )
             if not response.choices:
                 raise ValueError("Detector returned no choices.")
 

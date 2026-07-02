@@ -442,6 +442,7 @@ class TestEnrichmentPipeline:
             scrape_failures: list[dict[str, Any]] | None = None,
             scrape_stats: dict[str, int] | None = None,
             search_execution_summary: dict[str, Any] | None = None,
+            llm_recorder: Any = None,
         ) -> list[Any]:
             batch = batches[0]
             if search_execution_summary is not None:

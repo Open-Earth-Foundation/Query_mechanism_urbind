@@ -3,10 +3,11 @@ Brief: Build a full Chroma markdown vector index from scratch.
 
 Inputs:
 - CLI args:
-  - --docs-dir: Directory containing markdown files to index (default: documents).
+  - --docs-dir: Optional markdown directory override. Defaults to the resolved
+    `markdown_dir` from `llm_config.yaml` / `MARKDOWN_DIR`.
   - --persist-path: Chroma persistence directory override.
   - --collection: Chroma collection name override.
-  - --city: Optional city stem filter; repeatable.
+  - --city: Optional city stem filter. Dry runs inspect only those cities; persisted builds ignore the filter and rebuild the full shared index.
   - --dry-run: Parse/chunk only, do not embed or persist to Chroma/manifest.
   - --write-chunks-json: Optional path to write raw chunk payloads as JSON (works with or without --dry-run).
   - --config: Path to llm_config.yaml (default: llm_config.yaml).
@@ -25,6 +26,7 @@ Outputs:
 - Non-zero exit on embedding failures; no collection reset or manifest write is committed.
 
 Usage (from project root):
+- python -m backend.scripts.build_markdown_index
 - python -m backend.scripts.build_markdown_index --docs-dir documents
 """
 
@@ -35,7 +37,7 @@ import logging
 from pathlib import Path
 
 from backend.modules.vector_store.indexer import build_markdown_index
-from backend.utils.config import load_config
+from backend.utils.config import load_config, resolve_path_relative_to_config
 from backend.utils.logging_config import setup_logger
 
 logger = logging.getLogger(__name__)
@@ -44,7 +46,7 @@ logger = logging.getLogger(__name__)
 def parse_args() -> argparse.Namespace:
     """Parse CLI args."""
     parser = argparse.ArgumentParser(description="Build markdown vector index.")
-    parser.add_argument("--docs-dir", default="documents", help="Markdown docs directory.")
+    parser.add_argument("--docs-dir", help="Markdown docs directory override.")
     parser.add_argument(
         "--persist-path",
         help="Override vector store persistence path.",
@@ -56,7 +58,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--city",
         action="append",
-        help="Optional city stem filter (repeatable).",
+        help=(
+            "Optional city stem filter. Dry runs inspect only those cities; "
+            "persisted builds ignore the filter."
+        ),
     )
     parser.add_argument(
         "--dry-run",
@@ -78,10 +83,14 @@ def main() -> None:
     """Script entry point."""
     args = parse_args()
     setup_logger()
-    config = load_config(Path(args.config))
+    config_path = Path(args.config)
+    config = load_config(config_path)
     if args.persist_path:
-        manifest_default = Path(".chroma/index_manifest.json")
-        config.vector_store.chroma_persist_path = Path(args.persist_path)
+        manifest_default = config.vector_store.chroma_persist_path / "index_manifest.json"
+        config.vector_store.chroma_persist_path = resolve_path_relative_to_config(
+            config_path,
+            Path(args.persist_path),
+        )
         if config.vector_store.index_manifest_path == manifest_default:
             config.vector_store.index_manifest_path = (
                 config.vector_store.chroma_persist_path / "index_manifest.json"
@@ -91,7 +100,11 @@ def main() -> None:
     chunks_dump_path = Path(args.write_chunks_json) if args.write_chunks_json else None
     stats = build_markdown_index(
         config=config,
-        docs_dir=Path(args.docs_dir),
+        docs_dir=(
+            resolve_path_relative_to_config(config_path, Path(args.docs_dir))
+            if args.docs_dir
+            else config.markdown_dir
+        ),
         selected_cities=args.city,
         dry_run=args.dry_run,
         chunks_dump_path=chunks_dump_path,

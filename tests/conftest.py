@@ -14,6 +14,9 @@ from tests.support import build_test_app_config
 TEST_SESSION_SECRET = "0123456789abcdef0123456789abcdef"
 TEST_API_CORS_ORIGINS = "http://127.0.0.1:3000,http://localhost:3000"
 TEST_OPENROUTER_API_KEY = "sk-or-v1-test-openrouter-key"
+TEST_CITY_GROUPS_PATH = (
+    Path(__file__).resolve().parents[1] / "backend" / "api" / "assets" / "city_groups.json"
+)
 
 # backend.api.main creates a module-level FastAPI app during import. These
 # defaults must exist before API test modules are collected in clean CI shells.
@@ -42,10 +45,17 @@ def shared_session_test_auth(
     monkeypatch.setenv("APP_SESSION_SECRET", TEST_SESSION_SECRET)
     monkeypatch.setenv("API_CORS_ORIGINS", TEST_API_CORS_ORIGINS)
     monkeypatch.setenv("OPENROUTER_API_KEY", TEST_OPENROUTER_API_KEY)
+    monkeypatch.setenv("CITY_GROUPS_PATH", str(TEST_CITY_GROUPS_PATH))
+    test_chroma_path = tmp_path / "chroma"
     config = build_test_app_config(
         runs_dir=tmp_path / "output",
         markdown_dir=tmp_path / "documents",
-        vector_store_overrides={"enabled": False, "auto_update_on_run": False},
+        vector_store_overrides={
+            "enabled": False,
+            "auto_update_on_run": False,
+            "chroma_persist_path": test_chroma_path,
+            "index_manifest_path": test_chroma_path / "index_manifest.json",
+        },
     )
     config_path = tmp_path / "llm_config.yaml"
     config_path.write_text(
@@ -55,6 +65,8 @@ def shared_session_test_auth(
     monkeypatch.setenv("LLM_CONFIG_PATH", str(config_path))
     monkeypatch.setenv("VECTOR_STORE_ENABLED", "false")
     monkeypatch.setenv("VECTOR_STORE_AUTO_UPDATE_ON_RUN", "false")
+    monkeypatch.setenv("CHROMA_PERSIST_PATH", str(test_chroma_path))
+    monkeypatch.setenv("CHROMA_HOST_PATH", str(test_chroma_path))
     if "test_api_auth.py" not in request.node.nodeid:
         monkeypatch.setattr("backend.api.main.require_shared_session", _allow_shared_session)
     yield

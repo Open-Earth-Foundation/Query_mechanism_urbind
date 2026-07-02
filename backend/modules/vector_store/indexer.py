@@ -220,6 +220,13 @@ def _iter_markdown_files(
 ) -> list[Path]:
     """List top-level markdown files optionally filtered by city stem."""
     files = list_markdown_files(docs_dir)
+    logger.info(
+        "Markdown discovery docs_dir=%s resolved=%s selected_cities=%s file_count=%d",
+        docs_dir,
+        docs_dir.resolve(),
+        selected_cities or [],
+        len(files),
+    )
     if not selected_cities:
         return files
     selected = {
@@ -463,6 +470,53 @@ def _requires_full_rebuild(
     return True
 
 
+def _resolve_index_scope(
+    *,
+    selected_cities: list[str] | None,
+    dry_run: bool,
+    operation_name: str,
+) -> list[str] | None:
+    """Resolve city scope for one index operation.
+
+    The shared vector store and manifest always represent the full corpus.
+    Persisted writes therefore ignore city filters and rebuild/check the full
+    documents set. Dry-run full builds may still use a selected-city subset for
+    inspection.
+    """
+    if not selected_cities:
+        return None
+    if dry_run and operation_name == "Index build":
+        return selected_cities
+    logger.info(
+        "%s ignoring selected_cities for shared vector-store scope selected_city_count=%d",
+        operation_name,
+        len(selected_cities),
+    )
+    return None
+
+
+def _guard_against_empty_manifest_wipe(
+    *,
+    manifest_path: Path,
+    discovered_files: list[Path],
+    dry_run: bool,
+    operation_label: str,
+) -> None:
+    """Abort a real write when zero discovered files would wipe persisted state."""
+    if dry_run or discovered_files:
+        return
+    existing_manifest = load_manifest(manifest_path)
+    existing_files = existing_manifest.get("files", {})
+    existing_file_count = len(existing_files) if isinstance(existing_files, dict) else 0
+    if existing_file_count == 0:
+        return
+    raise RuntimeError(
+        f"Refusing to {operation_label} vector store with zero discovered markdown files because "
+        f"the existing manifest at {manifest_path} still tracks {existing_file_count} files. "
+        "Check docs_dir or city filters before rebuilding."
+    )
+
+
 def build_markdown_index(
     config: AppConfig,
     docs_dir: Path,
@@ -470,7 +524,7 @@ def build_markdown_index(
     dry_run: bool = False,
     chunks_dump_path: Path | None = None,
 ) -> IndexStats:
-    """Build a full markdown index from scratch."""
+    """Build the persisted markdown index from the full documents corpus."""
     settings = get_vector_store_settings(config)
     if dry_run:
         return _build_markdown_index_impl(
@@ -514,13 +568,24 @@ def _build_markdown_index_impl(
     """Build a full markdown index from scratch after any required lock is held."""
     settings_payload = _index_settings_payload(settings)
     project_root = Path.cwd()
-    files = _iter_markdown_files(docs_dir, selected_cities=selected_cities)
+    effective_selected_cities = _resolve_index_scope(
+        selected_cities=selected_cities,
+        dry_run=dry_run,
+        operation_name="Index build",
+    )
+    files = _iter_markdown_files(docs_dir, selected_cities=effective_selected_cities)
     total_files = len(files)
     logger.info(
         "Index build started docs_total=%d docs_dir=%s dry_run=%s",
         total_files,
         docs_dir,
         dry_run,
+    )
+    _guard_against_empty_manifest_wipe(
+        manifest_path=settings.manifest_path,
+        discovered_files=files,
+        dry_run=dry_run,
+        operation_label="rebuild",
     )
 
     manifest = {"files": {}}
@@ -621,11 +686,12 @@ def _build_markdown_index_impl(
             settings.manifest_path,
             manifest,
             reason="build_markdown_index",
-            audit_dir=config.runs_dir / "system" / "vector_store_manifest_writes",
+            docs_dir=docs_dir,
             metadata={
                 "dry_run": dry_run,
                 "files_indexed": files_indexed,
                 "selected_cities_requested": _selected_city_metadata(selected_cities),
+                "selected_cities_effective": effective_selected_cities or [],
                 "docs_dir": str(docs_dir),
                 "docs_dir_resolved": str(docs_dir.resolve(strict=False)),
                 "persist_path": str(settings.persist_path),
@@ -665,7 +731,7 @@ def update_markdown_index(
     selected_cities: list[str] | None = None,
     dry_run: bool = False,
 ) -> IndexStats:
-    """Incrementally update markdown index from manifest state."""
+    """Incrementally update the persisted full-corpus markdown index."""
     settings = get_vector_store_settings(config)
     if dry_run:
         return _update_markdown_index_impl(
@@ -706,6 +772,11 @@ def _update_markdown_index_impl(
     """Incrementally update markdown index after any required lock is held."""
     settings_payload = _index_settings_payload(settings)
     project_root = Path.cwd()
+    effective_selected_cities = _resolve_index_scope(
+        selected_cities=selected_cities,
+        dry_run=dry_run,
+        operation_name="Index update",
+    )
     manifest = load_manifest(settings.manifest_path)
     if _requires_full_rebuild(manifest, settings_payload):
         logger.warning(
@@ -741,7 +812,13 @@ def _update_markdown_index_impl(
     )
     manifest["files"] = files_section
 
-    current_files = _iter_markdown_files(docs_dir, selected_cities=selected_cities)
+    current_files = _iter_markdown_files(docs_dir, selected_cities=effective_selected_cities)
+    _guard_against_empty_manifest_wipe(
+        manifest_path=settings.manifest_path,
+        discovered_files=current_files,
+        dry_run=dry_run,
+        operation_label="update",
+    )
     current_source_map = {_source_path(path, docs_dir, project_root): path for path in current_files}
     total_files = len(current_source_map)
     if dry_run:
@@ -812,10 +889,10 @@ def _update_markdown_index_impl(
             )
 
     current_source_keys = set(current_source_map.keys())
-    if selected_cities:
+    if effective_selected_cities:
         selected_city_keys = {
             normalize_city_key(city)
-            for city in selected_cities
+            for city in effective_selected_cities
             if isinstance(city, str) and city.strip()
         }
         manifest_sources_in_scope = {
@@ -890,13 +967,14 @@ def _update_markdown_index_impl(
             settings.manifest_path,
             manifest,
             reason="update_markdown_index",
-            audit_dir=config.runs_dir / "system" / "vector_store_manifest_writes",
+            docs_dir=docs_dir,
             metadata={
                 "dry_run": dry_run,
                 "files_indexed": len(current_files),
                 "files_changed": files_changed,
                 "files_deleted": files_deleted,
                 "selected_cities_requested": _selected_city_metadata(selected_cities),
+                "selected_cities_effective": effective_selected_cities or [],
                 "docs_dir": str(docs_dir),
                 "docs_dir_resolved": str(docs_dir.resolve(strict=False)),
                 "persist_path": str(settings.persist_path),

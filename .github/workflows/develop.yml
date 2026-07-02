@@ -212,11 +212,19 @@ jobs:
         run: aws eks update-kubeconfig --name "${EKS_CLUSTER_NAME}" --region "${AWS_REGION}"
 
       - name: Create or update backend secret
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+          MLFLOW_TRACKING_URI: ${{ secrets.MLFLOW_TRACKING_URI }}
         run: |
+          : "${OPENROUTER_API_KEY:?Set GitHub secret OPENROUTER_API_KEY}"
+          : "${MLFLOW_TRACKING_URI:?Set GitHub secret MLFLOW_TRACKING_URI}"
           kubectl -n default create secret generic urbind-query-mechanism-backend-secrets \
-            --from-literal=OPENROUTER_API_KEY="${{ secrets.OPENROUTER_API_KEY }}" \
-            --from-literal=SERPER_API_KEY="${{ secrets.SERPER_API_KEY }}" \
-            --from-literal=FIRECRAWL_API_KEY="${{ secrets.FIRECRAWL_API_KEY }}" \
+            --from-literal=OPENROUTER_API_KEY="${OPENROUTER_API_KEY}" \
+            --from-literal=SERPER_API_KEY="${SERPER_API_KEY}" \
+            --from-literal=FIRECRAWL_API_KEY="${FIRECRAWL_API_KEY}" \
+            --from-literal=MLFLOW_TRACKING_URI="${MLFLOW_TRACKING_URI}" \
             --dry-run=client -o yaml | kubectl apply -f -
 
       - name: Create or update shared auth secret

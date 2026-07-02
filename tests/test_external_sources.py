@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import logging
+import tempfile
 import uuid
 from pathlib import Path
 
@@ -44,10 +45,8 @@ from tests.support import build_test_app_config
 
 
 def _test_workspace(name: str) -> Path:
-    """Create a repo-local test workspace without relying on system temp dirs."""
-    path = Path(".pytest_tmp_external_sources") / f"{name}_{uuid.uuid4().hex}"
-    path.mkdir(parents=True, exist_ok=True)
-    return path
+    """Create an isolated temp workspace for external-source tests."""
+    return Path(tempfile.mkdtemp(prefix=f"external_sources_{name}_{uuid.uuid4().hex}_"))
 
 
 def _write_source_library(root: Path) -> None:
@@ -489,6 +488,7 @@ def test_run_external_source_enrichment_collects_validated_claims_without_nestin
         agent: _DummyAgent,
         prompt: str,
         max_turns: int,
+        **_kwargs: object,
     ) -> object:
         task = json.loads(prompt)
         hits = agent.session.regex_search(

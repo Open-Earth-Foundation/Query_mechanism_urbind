@@ -124,6 +124,11 @@ spec:
                 secretKeyRef:
                   name: urbind-query-mechanism-backend-secrets
                   key: OPENROUTER_API_KEY
+            - name: MLFLOW_TRACKING_URI
+              valueFrom:
+                secretKeyRef:
+                  name: urbind-query-mechanism-backend-secrets
+                  key: MLFLOW_TRACKING_URI
           workingDir: /app
           command:
             - sh

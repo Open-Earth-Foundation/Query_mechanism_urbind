@@ -6,6 +6,7 @@ import json
 import logging
 import sys
 import threading
+from datetime import datetime, timezone
 from collections.abc import Mapping, Sequence
 from typing import Any, Literal
 
@@ -19,6 +20,8 @@ from agents.result import RunResult
 from agents.run_context import RunContextWrapper
 from agents.tool import Tool
 from openai import AsyncOpenAI, DefaultAsyncHttpxClient
+
+from backend.services.llm_observability import LlmCallContext, LlmCallRecorder
 
 
 logger = logging.getLogger(__name__)
@@ -438,6 +441,66 @@ class LlmPayloadLoggingHooks(RunHooksBase[Any, Agent[Any]]):
         self._log_payload(payload)
 
 
+class LlmCallRecordingHooks(RunHooksBase[Any, Agent[Any]]):
+    """Records full LLM request/response payloads as run artifacts."""
+
+    def __init__(self, recorder: LlmCallRecorder, context: LlmCallContext) -> None:
+        self._recorder = recorder
+        self._context = context
+        self._turn = 0
+        self._pending: dict[int, dict[str, object]] = {}
+
+    async def on_llm_start(
+        self,
+        context: RunContextWrapper[Any],
+        agent: Agent[Any],
+        system_prompt: str | None,
+        input_items: list[TResponseInputItem],
+    ) -> None:
+        self._turn += 1
+        self._pending[self._turn] = {
+            "started_at": datetime.now(timezone.utc).isoformat(),
+            "request": {
+                "system_prompt": system_prompt,
+                "input_items": input_items,
+                "agent": agent.name,
+            },
+        }
+
+    async def on_llm_end(
+        self,
+        context: RunContextWrapper[Any],
+        agent: Agent[Any],
+        response: ModelResponse,
+    ) -> None:
+        pending = self._pending.pop(self._turn, {})
+        request = pending.get("request", {})
+        started_at = pending.get("started_at")
+        self._recorder.record_call(
+            self._context,
+            request=request,
+            response=response,
+            started_at=started_at if isinstance(started_at, str) else None,
+            ended_at=datetime.now(timezone.utc).isoformat(),
+        )
+
+    def record_error(self, error: BaseException) -> None:
+        """Persist pending LLM requests when the SDK raises before ``on_llm_end``."""
+        ended_at = datetime.now(timezone.utc).isoformat()
+        for turn in sorted(self._pending):
+            pending = self._pending[turn]
+            request = pending.get("request", {})
+            started_at = pending.get("started_at")
+            self._recorder.record_call(
+                self._context,
+                request=request,
+                error=error,
+                started_at=started_at if isinstance(started_at, str) else None,
+                ended_at=ended_at,
+            )
+        self._pending.clear()
+
+
 def build_model_settings(
     temperature: float | None,
     max_output_tokens: int | None,
@@ -471,6 +534,8 @@ def run_agent_sync(
     input_data: str,
     max_turns: int = 10,
     log_llm_payload: bool = False,
+    llm_recorder: LlmCallRecorder | None = None,
+    llm_call_context: LlmCallContext | None = None,
 ) -> RunResult:
     """Run an agent synchronously with optional max_turns limit.
 
@@ -479,6 +544,8 @@ def run_agent_sync(
         input_data: The input data as a JSON string
         max_turns: Maximum number of turns before gracefully stopping
         log_llm_payload: Whether to log full LLM request/response payloads
+        llm_recorder: Optional run-local recorder for raw LLM artifacts
+        llm_call_context: Stage and agent metadata for the recorded call
 
     Returns:
         The agent's final output
@@ -487,8 +554,12 @@ def run_agent_sync(
         MaxTurnsExceeded: The run exceeded the configured turn budget.
     """
     hooks_list: list[RunHooksBase[Any, Agent[Any]]] = [LlmUsageLoggingHooks()]
+    recording_hook: LlmCallRecordingHooks | None = None
     if log_llm_payload:
         hooks_list.append(LlmPayloadLoggingHooks())
+    if llm_recorder is not None and llm_call_context is not None:
+        recording_hook = LlmCallRecordingHooks(llm_recorder, llm_call_context)
+        hooks_list.append(recording_hook)
     hooks: RunHooksBase[Any, Agent[Any]] | None = CompositeRunHooks(hooks_list)
 
     loop = getattr(_thread_local, "loop", None)
@@ -502,6 +573,8 @@ def run_agent_sync(
             Runner.run(agent, input_data, max_turns=max_turns, hooks=hooks)
         )
     except MaxTurnsExceeded as exc:
+        if recording_hook is not None:
+            recording_hook.record_error(exc)
         diagnostics = _build_max_turns_diagnostics(
             exc,
             fallback_agent_name=agent.name,
@@ -512,6 +585,10 @@ def run_agent_sync(
             "Agent exceeded max turns (%d). Gracefully stopping with partial results.",
             max_turns,
         )
+        raise
+    except Exception as exc:
+        if recording_hook is not None:
+            recording_hook.record_error(exc)
         raise
 
 

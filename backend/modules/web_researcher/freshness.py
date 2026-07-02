@@ -13,6 +13,11 @@ from backend.modules.web_researcher.utils.json_helpers import (
     extract_json_candidate,
     extract_message_text,
 )
+from backend.services.llm_observability import (
+    LlmCallContext,
+    LlmCallRecorder,
+    record_openai_chat_completion,
+)
 from backend.utils.city_normalization import normalize_city_key
 from backend.utils.config import AppConfig
 
@@ -29,6 +34,7 @@ def check_freshness(
     context_bundle: dict[str, Any],
     config: AppConfig,
     api_key: str,
+    llm_recorder: LlmCallRecorder | None = None,
 ) -> list[FreshnessResult]:
     """Compare web findings against existing CCC data in the context bundle.
 
@@ -125,7 +131,19 @@ def check_freshness(
         if config.enrichment.reasoning_effort is not None:
             request_kwargs["reasoning_effort"] = config.enrichment.reasoning_effort
 
-        response = client.chat.completions.create(**request_kwargs)
+        response = record_openai_chat_completion(
+            client,
+            request_kwargs,
+            context=LlmCallContext(
+                stage_name="enrichment",
+                stage_family="enrichment",
+                agent="freshness_checker",
+                call_kind="freshness_check",
+                model=config.enrichment.model,
+                metadata={"comparison_count": len(comparison_items)},
+            ),
+            recorder=llm_recorder,
+        )
         if not response.choices:
             return _fallback_uncertain(findings_to_check)
 
